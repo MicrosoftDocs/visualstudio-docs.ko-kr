@@ -26,7 +26,7 @@ ms.openlocfilehash: 34a07f9f63fe22d3101cc748e9dde978385a71ab
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="getutchours-method-date-javascript"></a>getUTCHours 메서드(Date)(JavaScript)
 시간 값을 가져옵니다는 `Date` utc (협정 세계시)를 사용 하 여 개체입니다.  
