@@ -68,13 +68,13 @@ ms.lasthandoff: 10/27/2017
  `get` 접근자가 정의되어 있지 않고 속성 값에 액세스하려고 하면 `undefined` 값이 반환됩니다. `set` 접근자가 정의되어 있지 않고 접근자 속성에 값을 할당하려고 하면 아무 동작도 발생하지 않습니다.  
   
 ### <a name="property-modifications"></a>속성 수정  
- 개체에 이미 이름이 지정된 속성이 있으면 속성 특성이 수정됩니다. 속성을 수정하는 경우 설명자에 지정되지 않은 특성이 동일한 상태로 남아 있습니다.  
+ 개체에 이미 이름이 지정된 속성이 있으면 그 속성의 특성이 수정됩니다. 속성을 수정하는 경우 설명자에 지정되지 않은 기존의 특성이 그대로 유지됩니다.  
   
  기존 속성의 `configurable` 특성이 `false`이면 `writable` 특성을 `true`에서 `false`로 변경하는 수정 작업만 허용됩니다.  
   
- 접근자 속성의 데이터 속성 또는 그 반대로 변경할 수 있습니다. 이 작업을 수행하면 설명자에 지정되지 않은 `configurable` 및 `enumerable` 특성이 속성에 유지됩니다. 설명자에 지정되지 않은 기타 특성은 기본값으로 설정됩니다.  
+ 접근자 속성을 데이터 속성 또는 그 반대로 변경할 수 있습니다. 이 작업을 수행하면 설명자에 지정되지 않은 `configurable` 및 `enumerable` 특성이 속성에 유지됩니다. 설명자에 지정되지 않은 기타 특성은 기본값으로 설정됩니다.  
   
- `Object.defineProperty` 함수를 여러 번 호출하여 구성 가능한 접근자 속성을 증분식으로 정의할 수 있습니다. 예를 들어 하나의 `Object.defineProperty` 호출을 통해 하나의 `get` 접근자만 정의할 수 있습니다. 동일한 속성 이름을 나중에 호출하면 `set` 접근자를 정의할 수 있습니다. 그러면 속성에 `get` 접근자와 `set` 접근자가 모두 포함됩니다.  
+ `Object.defineProperty` 함수를 여러 번 호출하여 구성 가능한 접근자 속성을 점진적으로 정의할 수 있습니다. 예를 들어 하나의 `Object.defineProperty` 호출을 통해 하나의 `get` 접근자만 정의했다면, 이후 동일한 속성 이름을 호출해 `set` 접근자를 정의할 수 있습니다. 그러면 속성에 `get` 접근자와 `set` 접근자가 모두 포함됩니다.  
   
  기존 속성에 적용되는 설명자 개체를 가져오려면 [Object.getOwnPropertyDescriptor 함수](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)를 사용할 수 있습니다.  
   
