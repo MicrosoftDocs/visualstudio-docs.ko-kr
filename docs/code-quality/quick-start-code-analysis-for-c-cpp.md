@@ -6,21 +6,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445641"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272324"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>빠른 시작: C/C++용 코드 분석
+# <a name="quickstart-code-analysis-for-cc"></a>C/C++ 코드 분석 바로 시작하기
 
-C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 애플리케이션의 품질을 향상시킬 수 있습니다. 이 테스트를 통해 발견 하기 어려운 결함 또는 프로그래밍 관행의 위반의 일반적인 문제를 찾을 수 있습니다. 코드 분석은 유효하지만 해당 코드를 사용하는 당사자나 다른 사용자에게 계속 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로, 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다.
+C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 응용 프로그램의 품질을 향상시킬 수 있습니다. 이 테스트를 통해 발견 하기 어려운 결함 또는 프로그래밍 관행의 위반의 일반적인 문제를 찾을 수 있습니다. 코드 분석은 유효하지만 해당 코드를 사용하는 당사자나 다른 사용자에게 계속 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로, 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다.
 
 ## <a name="configure-rule-sets-for-a-project"></a>프로젝트에 대한 규칙 집합 구성
 
@@ -36,7 +36,7 @@ C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 애�
 
 Visual Studio에는 네이티브 코드에 대한 두 가지 표준 규칙 집합이 포함되어 있습니다.
 
-|규칙 집합|설명|
+|규칙 집합|Description|
 |--------------|-----------------|
 |Microsoft 네이티브 최소 권장 규칙|이러한 규칙은 잠재적 보안 허점 및 애플리케이션 충돌을 포함하여 네이티브 코드의 가장 중요한 문제 설정에 중점을 둡니다. 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.|
 |Microsoft 네이티브 권장 규칙|이 규칙 집합에서는 다양한 문제를 다룹니다. Microsoft 기본 최소 권장 규칙의 모든 규칙을 포함합니다.|
@@ -107,6 +107,6 @@ Visual Studio에는 네이티브 코드에 대한 두 가지 표준 규칙 집�
 
 - **심각도 별로 경고를 필터링 하려면**: 기본적으로 코드 분석 메시지에는 **경고**의 심각도가 할당 됩니다. 사용자 지정 규칙 집합에서 하나 이상의 메시지 심각도를 **오류로** 할당할 수 있습니다. **오류 목록**의 **심각도** 열에서 드롭다운 화살표를 선택한 다음 필터 아이콘을 선택 합니다. 각 심각도가 할당 된 메시지만 표시 하려면 **경고** 또는 **오류** 를 선택 합니다. 모든 메시지를 표시 하려면 **모두 선택** 을 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [C/에 대 한 코드 분석C++](../code-quality/code-analysis-for-c-cpp-overview.md)

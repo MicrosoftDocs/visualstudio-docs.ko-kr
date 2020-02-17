@@ -7,17 +7,17 @@ helpviewer_keywords:
 - SAL annotations
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 506e8516c7a7bbc0ccc610b843763017ae90f547
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4d227ca8c88770548a1d53a4f40eb1ce62d5919c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807067"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271743"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용
 SAL은 Microsoft 소스 코드 주석 언어입니다. 소스 코드 주석을 사용 하 여 코드의 의도를 명시적으로 만들 수 있습니다. 또한 이러한 주석을 사용 하면 자동화 된 정적 분석 도구를 통해 코드를 보다 정확 하 게 분석할 수 있습니다.
@@ -56,8 +56,8 @@ SAL은 Microsoft 소스 코드 주석 언어입니다. 소스 코드 주석을 �
 
      SAL 주석을 사용 하는 방법을 보여 주는 예제를 제공 합니다. 일반적인 문제에 대해서도 설명 합니다.
 
-## <a name="related-resources"></a>관련 참고 자료
+## <a name="related-resources"></a>관련 리소스
 [코드 분석 팀 블로그](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
 [Windows 드라이버에 대 한 SAL 2.0 주석](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)

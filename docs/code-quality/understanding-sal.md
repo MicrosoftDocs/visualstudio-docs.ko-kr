@@ -3,17 +3,17 @@ title: SAL 이해
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807093"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271827"
 ---
 # <a name="understanding-sal"></a>SAL 이해
 
@@ -49,7 +49,7 @@ void * memcpy(
 
 - 대상 버퍼는 최소한 원본 버퍼 만큼 커야 합니다.
 
-그러나 컴파일러는 설명서 나 비공식 주석을 읽을 수 없습니다. 이는 두 버퍼와 `count` 간에 관계가 있는지 확인 하지 않으며 관계를 효과적으로 추측할 수 없습니다. SAL은 다음과 같이 함수의 속성 및 구현에 대해 더 명확 하 게 제공할 수 있습니다.
+그러나 컴파일러는 설명서 나 비공식 주석을 읽을 수 없습니다. 이는 두 버퍼와 `count`간에 관계가 있는지 확인 하지 않으며 관계를 효과적으로 추측할 수 없습니다. SAL은 다음과 같이 함수의 속성 및 구현에 대해 더 명확 하 게 제공할 수 있습니다.
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-이러한 주석은 MSDN 설명서의 정보와 유사 하지만 더 간결 하 고 의미 체계 패턴을 따릅니다. 이 코드를 읽으면이 함수의 속성과 버퍼 오버런 보안 문제를 방지 하는 방법을 신속 하 게 이해할 수 있습니다. SAL이 제공 하는 의미 체계 패턴은 잠재적 버그를 조기에 검색할 때 자동화 된 코드 분석 도구의 효율성과 효율성을 향상 시킬 수 있습니다. 누군가가 다음과 같은 `wmemcpy` 버그가 있는 구현을 작성 한다고 가정 합니다.
+이러한 주석은 MSDN 설명서의 정보와 유사 하지만 더 간결 하 고 의미 체계 패턴을 따릅니다. 이 코드를 읽으면이 함수의 속성과 버퍼 오버런 보안 문제를 방지 하는 방법을 신속 하 게 이해할 수 있습니다. SAL이 제공 하는 의미 체계 패턴은 잠재적 버그를 조기에 검색할 때 자동화 된 코드 분석 도구의 효율성과 효율성을 향상 시킬 수 있습니다. 누군가가 다음과 같은 `wmemcpy`버그가 있는 구현을 작성 한다고 가정 합니다.
 
 ```cpp
 
@@ -82,7 +82,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL 기본
 SAL은 사용 패턴으로 분류 되는 네 가지 기본 종류의 매개 변수를 정의 합니다.
 
-|범주|매개 변수 주석|설명|
+|Category|매개 변수 주석|Description|
 |--------------|--------------------------|-----------------|
 |**호출 되는 함수에 대 한 입력**|`_In_`|데이터는 호출 된 함수에 전달 되 고 읽기 전용으로 처리 됩니다.|
 |**호출 되는 함수에 대 한 입력 및 호출자에 게 출력**|`_Inout_`|사용 가능한 데이터는 함수로 전달 되 고 잠재적으로 수정 됩니다.|
@@ -400,11 +400,11 @@ Microsoft public 헤더에 이미 주석이 추가 되었습니다. 따라서 �
 
 또는 모든 매개 변수에 주석을 추가 하 여 의도 하지 않은 전체를 확인 하 고 주석이 완료 되었는지 쉽게 확인할 수 있습니다.
 
-## <a name="related-resources"></a>관련 참고 자료
+## <a name="related-resources"></a>관련 리소스
 
 [코드 분석 팀 블로그](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [함수 매개 변수 및 반환 값에 주석 지정](../code-quality/annotating-function-parameters-and-return-values.md)

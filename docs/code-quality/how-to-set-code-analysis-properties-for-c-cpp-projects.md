@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis properties
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1c517674bb3aba58caa865a02b384e9d90af8a10
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448908"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271700"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>방법: C/C++ 프로젝트의 코드 분석 속성 설정
 
@@ -47,7 +47,7 @@ ms.locfileid: "72448908"
 
 CMake 프로젝트에서 `enableMicrosoftCodeAnalysis` 값을 변경 하 고 `CMakeSettings.json` 내에서 키를 `enableClangTidyCodeAnalysis` 하 여 코드 분석을 활성화 하거나 비활성화 합니다. 자세한 내용은 [Visual Studio에서 Clang 사용](../code-quality/clang-tidy.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)
 - [C/C++용 코드 분석 경고](../code-quality/code-analysis-for-c-cpp-warnings.md)
