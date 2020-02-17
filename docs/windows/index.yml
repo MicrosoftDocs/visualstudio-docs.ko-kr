@@ -31,7 +31,7 @@ highlightedContent:
     itemType: learn
     url: /learn/
 conceptualContent:
-  title: 시작하기
+  title: 시작
   items:
   - title: Visual Studio를 사용하는 방법 알아보기
     links:
@@ -136,7 +136,7 @@ additionalContent:
     - title: 테스트
       summary: 프로젝트에서 테스트를 실행합니다.
       url: ../test/improve-code-quality.md
-    - title: 배포
+    - title: '배포:'
       summary: 웹 배포, InstallShield, NuGet, 연속 통합 등을 사용하여 앱과 코드를 공유합니다.
       url: ../deployment/index.yml
     - title: 버전 제어
@@ -160,7 +160,7 @@ additionalContent:
     - title: Docker 컨테이너를 사용하여 개발
       summary: Docker 컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.
       url: ../containers/index.yml
-  - title: 워크로드
+  - title: 작업
     items:
     - title: 웹 및 클라우드
       links:
