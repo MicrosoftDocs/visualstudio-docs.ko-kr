@@ -1,6 +1,6 @@
 # [Visual Studio 구독](index.yml)
 # [새로운 기능](whats-new-in-subscriptions.md)
-# Subscriptions
+# 알림 신청
 ## 구독 구입
 ### [정품](https://visualstudio.microsoft.com/vs/pricing)
 ### 클라우드 
@@ -42,9 +42,9 @@
 ### 전문적인 개발
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
-#### [LinkedIn Learning](vs-linkedin-learning.md)
+#### [LinkedIn 학습](vs-linkedin-learning.md)
 #### [Pluralsight](vs-pluralsight.md)
-### 지원 
+### 고객 지원팀 
 #### [Azure 커뮤니티](vs-azure-community.md)
 #### [Concierge 지원](vs-concierge-chat.md)
 #### [기술 지원](vs-tech-support.md)
