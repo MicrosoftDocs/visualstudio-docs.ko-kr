@@ -1,5 +1,5 @@
 ---
-title: '연습: C/C++ 코드의 오류 분석'
+title: '연습: C/C++ 코드 오류 분석'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 74a878b8c64955927357e45c668c4d100007d373
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75401014"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271818"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드의 오류 분석
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드 오류 분석
 
 이 연습에서는 C/C++ 코드에 대 한 코드 분석 도구를 사용 하 여 C/C++ 코드에 잠재적 코드 오류를 분석 하는 방법을 보여 줍니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "75401014"
 - 경고를 오류로 처리 합니다.
 - 코드 오류 분석을 향상 시키기 위해 소스 코드에 주석을 추가 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - [데모 샘플](../code-quality/demo-sample.md)의 복사본입니다.
 - C/C++의 기본적인 이해 해야 합니다.
@@ -51,7 +51,7 @@ ms.locfileid: "75401014"
 
 5. **코드 분석**을 클릭합니다.
 
-6. 클릭는 **C/C++ 빌드에 코드 분석 사용** 확인란 합니다.
+6. **C/C++ 빌드에 대 한 코드 분석 사용** 확인란을 클릭 합니다.
 
 7. CodeDefects 있는 프로젝트를 다시 빌드합니다.
 
@@ -95,7 +95,7 @@ ms.locfileid: "75401014"
 
 2. CodeDefects 있는 프로젝트를 다시 빌드합니다.
 
-     에 **오류 목록**, C6001이 초기화를 오류로 표시 합니다.
+     **오류 목록**에서 이제 C6001이 오류로 나타납니다.
 
 3. `i`를 초기화 하 여 **오류 목록** 에서 남은 두 C6001 오류를 수정 하 고 `j` 0으로 수정 합니다.
 
@@ -113,7 +113,7 @@ ms.locfileid: "75401014"
 
 3. **코드 분석**을 클릭합니다.
 
-4. 선택 된 **C/C++ 빌드에 코드 분석 사용** 확인란 합니다.
+4. **C/C++ 빌드 시 코드 분석 사용** 확인란을 선택 합니다.
 
 5. 주석 프로젝트를 다시 빌드합니다.
 
@@ -169,7 +169,7 @@ ms.locfileid: "75401014"
 
      이제 프로젝트는 경고 또는 오류 없이 빌드됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[연습: 코드 오류에 대 한 관리되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/C++ 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
+[연습: 코드 오류에 대 한 관리 코드 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[C/C++ 에 대 한 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)

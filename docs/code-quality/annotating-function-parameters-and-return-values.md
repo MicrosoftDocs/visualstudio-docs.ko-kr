@@ -123,17 +123,17 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 18de1a42a72172d137215d27d9af3a9a409e9086
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879271"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271083"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 이 문서에서는 간단한 함수 매개 변수 (스칼라) 및 구조체와 클래스에 대 한 포인터, 대부분의 버퍼에 대 한 주석의 일반적인 사용에 대해 설명 합니다.  또한이 문서에서는 주석의 일반적인 사용 패턴을 보여 줍니다. 함수와 관련 된 추가 주석은 [함수 동작에 주석](../code-quality/annotating-function-behavior.md)추가를 참조 하세요.
@@ -220,7 +220,7 @@ ms.locfileid: "74879271"
 
      `s` 요소의 배열에 대 한 포인터입니다.  요소는 사전 상태에서 유효 하지 않아도 됩니다.  사후 상태에서 `c`번째 요소 까지의 요소가 유효 해야 합니다.  크기를 요소 수가 아닌 바이트 단위로 알고 있는 경우 `_bytes_` variant를 사용할 수 있습니다.
      
-     예를 들면 다음과 같습니다.:
+     다음은 그 예입니다.
 
      ```cpp
      void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
@@ -251,7 +251,7 @@ ms.locfileid: "74879271"
 
      `p - _Curr_` (`p` 빼기 `_Curr_`)가 유효한 식인 배열에 대 한 포인터입니다.  `p` 이전 요소는 사전 상태에서 유효 해야 합니다.
 
-    예를 들어
+    예를 들면 다음과 같습니다.
     ```cpp
     int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
     ```
@@ -442,7 +442,7 @@ ms.locfileid: "74879271"
 
 - `_Printf_format_string_` 매개 변수가 `printf` 식에 사용할 형식 문자열 임을 나타냅니다.
 
-     **예**
+     **예제**
 
     ```cpp
     int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
@@ -457,7 +457,7 @@ ms.locfileid: "74879271"
 
 - `_Scanf_format_string_` 매개 변수가 `scanf` 식에 사용할 형식 문자열 임을 나타냅니다.
 
-     **예**
+     **예제**
 
     ```cpp
     int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
@@ -472,7 +472,7 @@ ms.locfileid: "74879271"
 
 - `_Scanf_s_format_string_` 매개 변수가 `scanf_s` 식에 사용할 형식 문자열 임을 나타냅니다.
 
-     **예**
+     **예제**
 
     ```cpp
     int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
@@ -516,7 +516,7 @@ ms.locfileid: "74879271"
 
 - `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.:
+     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  다음은 그 예입니다.
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -524,11 +524,11 @@ ms.locfileid: "74879271"
 
      `min(pM->nSize, sizeof(MyStruct))`
 
-## <a name="related-resources"></a>관련 참고 자료
+## <a name="related-resources"></a>관련 리소스
 
 [코드 분석 팀 블로그](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

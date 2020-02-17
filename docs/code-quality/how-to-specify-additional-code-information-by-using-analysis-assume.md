@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - _Analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 9933a013ed4f2df0978fb66e3aff87b4cdc024f9
-ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
+ms.openlocfilehash: 1fec348108afdfe3cdac3325e0a1750b55332db4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73925956"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271648"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>방법: _Analysis_assume를 사용 하 여 추가 코드 정보 지정
 
@@ -57,6 +57,6 @@ void test()
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [__assume](/cpp/intrinsics/assume)

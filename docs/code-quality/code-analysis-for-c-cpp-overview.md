@@ -16,31 +16,31 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4991a72b2761e96e143bfa33e0b55f9a4e9467c6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806315"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271218"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++용 코드 분석 개요
 
-C/C++ 코드 분석 도구는 c/C++ 소스 코드에서 가능한 오류에 대 한 정보를 제공 합니다. 이 도구를 통해 보고되는 일반적인 코딩 오류에는 버퍼 오버런, 초기화되지 않은 메모리, null 포인터 역참조, 메모리 및 리소스 누수 등이 포함됩니다. 이 도구는 [ C++ 핵심 지침](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)에 대해 검사를 실행할 수도 있습니다.
+C/C++ 코드 분석 도구는 C 및 C++로 작성된 소스 코드에서 발생할 수 있는 결함에 대한 정보를 제공합니다. 이 도구를 통해 보고되는 일반적인 코딩 오류에는 버퍼 오버런, 초기화되지 않은 메모리, null 포인터 역참조, 메모리 및 리소스 누수 등이 포함됩니다. 이 도구는 [ C++ 핵심 지침](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)에 대해 검사를 실행할 수도 있습니다.
 
-## <a name="ide-integrated-development-environment-integration"></a>IDE (통합 개발 환경) 통합
+## <a name="ide-integrated-development-environment-integration"></a>IDE(통합 개발 환경) 통합
 
-코드 분석 도구는 Visual Studio IDE 내에서 완벽 하 게 통합 됩니다.
+코드 분석 도구는 Visual Studio IDE와 완전히 통합되어 있어 사용하기에 편리합니다.
 
 빌드 프로세스 중 소스 코드에 대해 생성된 모든 경고가 오류 목록에 표시됩니다. 경고를 유발한 소스 코드로 이동할 수 있으며, 문제의 원인과 가능한 해결책에 대한 추가 정보를 볼 수 있습니다.
 
 ## <a name="command-line-support"></a>명령줄 지원
 
-다음 예제와 같이 명령줄에서 분석 도구를 사용할 수도 있습니다.
+다음과 같이 명령줄에서 분석 도구를 실행할 수도 있습니다.
 
 ```cmd
 C:\>cl /analyze Sample.cpp
@@ -64,7 +64,7 @@ C:\>cl /analyze Sample.cpp
 
 빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 단계로 코드 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빠른 시작: C/에 대 한 코드 분석C++](quick-start-code-analysis-for-c-cpp.md)
 - [연습: 오류에 대C++ 한 C/코드 분석](walkthrough-analyzing-c-cpp-code-for-defects.md)
