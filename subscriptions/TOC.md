@@ -1,6 +1,6 @@
 # [Visual Studio 구독](index.yml)
 # [새로운 기능](whats-new-in-subscriptions.md)
-# 알림 신청
+# Subscriptions
 ## 구독 구입
 ### [정품](https://visualstudio.microsoft.com/vs/pricing)
 ### 클라우드 
@@ -27,7 +27,7 @@
 ### 도구
 #### [Azure DevTest 개별 크레딧](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Azure Pay-As-You-Go](vs-azure-payg.md)
+#### [Azure DevTest 종량제](vs-azure-payg.md)
 #### [CAST 하이라이트](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
@@ -42,9 +42,9 @@
 ### 전문적인 개발
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
-#### [LinkedIn 학습](vs-linkedin-learning.md)
+#### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [Pluralsight](vs-pluralsight.md)
-### 고객 지원팀 
+### 지원 
 #### [Azure 커뮤니티](vs-azure-community.md)
 #### [Concierge 지원](vs-concierge-chat.md)
 #### [기술 지원](vs-tech-support.md)
@@ -84,7 +84,7 @@
 ### [초과 할당](handle-overclaimed-license.md)
 ### [최대 사용량](maximum-usage.md)
 ### [만료된 구독](handle-expired-license.md)
-### [별칭을 사용하는 구독자](aliasing.md)
+### [구독자 로그인 시나리오 ](aliasing.md)
 ### [개인 전자 메일 로그인을 사용하는 구독자](personal-email-sign-ins.md)
 ### [GitHub Enterprise가 포함된 Visual Studio 관리](assign-github.md)
 # 리소스
