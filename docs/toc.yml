@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio 구독: 관리자 개요'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 참조
+        - name: 참고
           items:
             - name: Visual Studio 워크로드 및 구성 요소 ID
               items:
@@ -146,9 +146,9 @@
       href: ide/quickstart-nodejs.md
     - name: 'F#: 웹 서비스 만들기'
       href: ide/quickstart-fsharp.md
-    - name: 'C#: 웹앱 만들기'
+    - name: 'C#:  웹앱 만들기'
       href: ide/quickstart-aspnet-core.md
-    - name: 'C#: 콘솔 앱 만들기'
+    - name: 'C#:  콘솔 앱 만들기'
       href: ide/quickstart-csharp-console.md
     - name: 'Visual Basic: 콘솔 앱 만들기'
       href: ide/quickstart-visual-basic-console.md
@@ -299,7 +299,7 @@
                   href: ide/reference/generate-xml-documentation-comments.md
                 - name: 코드 감싸기 코드 조각 사용
                   href: ide/how-to-use-surround-with-code-snippets.md
-                - name: 모범 사례
+                - name: 최선의 구현 방법
                   href: ide/best-practices-for-using-code-snippets.md
                 - name: 코드 조각 만들기
                   items:
@@ -597,7 +597,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: Windows Forms 디자이너에 대한 DPI 인식 사용 안 함
               href: designers/disable-dpi-awareness.md
-            - name: 참조
+            - name: 참고
               items:
                 - name: System.Windows.Forms API >>
                   href: /dotnet/api/system.windows.forms
@@ -912,7 +912,7 @@
           href: ide/filtered-solutions.md
         - name: 팁과 요령
           href: ide/visual-studio-performance-tips-and-tricks.md
-- name: 접근성
+- name: 액세스 가능성
   items:
     - name: 내게 필요한 옵션 기능 관리
       href: ide/reference/accessibility-features-of-visual-studio.md
@@ -922,7 +922,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참조
+- name: 참고
   items:
     - name: 바로 가기 키
       items:
@@ -934,7 +934,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio 명령
       items:
-        - name: 참조
+        - name: 참고
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: 명령 별칭
@@ -1036,7 +1036,7 @@
           items:
             - name: 옵션 대화 상자
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: Environment
+            - name: 환경
               items:
                 - name: 일반
                   href: ide/reference/general-environment-options-dialog-box.md
@@ -1060,11 +1060,11 @@
                   href: ide/reference/keyboard-environment-options-dialog-box.md
                 - name: 미리 보기 기능
                   href: ide/reference/environment-preview-features-options.md
-                - name: 공지
+                - name: 알림
                   href: ide/reference/notifications-environment-options-dialog-box.md
                 - name: 빠른 실행
                   href: ide/reference/quick-launch-environment-options-dialog-box.md
-                - name: 시작
+                - name: Startup 클래스
                   href: ide/reference/startup-environment-options-dialog-box.md
                 - name: 탭 및 창
                   href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
@@ -1124,9 +1124,9 @@
                       href: ide/reference/options-text-editor-c-cpp-advanced.md
                     - name: 실험적
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
-                    - name: 서식 지정
+                    - name: 서식
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: 보기
+                    - name: View
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: 'F#'
                   items:
@@ -1140,7 +1140,7 @@
                       href: ide/reference/options-text-editor-fsharp-intellisense.md
                 - name: HTML(Web Forms)
                   items:
-                    - name: 서식 지정
+                    - name: 서식
                       href: ide/reference/options-text-editor-html-formatting.md
                     - name: 기타
                       href: ide/reference/options-text-editor-html-miscellaneous.md
@@ -1150,29 +1150,29 @@
                   items:
                     - name: 코드 유효성 검사
                       href: ide/reference/options-text-editor-javascript-code-validation.md
-                    - name: 서식 지정
+                    - name: 서식
                       href: ide/reference/options-text-editor-javascript-formatting.md
                     - name: IntelliSense
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: Lint
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: Project
+                    - name: 프로젝트
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
-                    - name: 서식 지정
+                    - name: 서식
                       href: ide/reference/options-text-editor-usql-formatting.md
                     - name: IntelliSense
                       href: ide/reference/options-text-editor-usql-intellisense.md
                 - name: XAML
                   items:
-                    - name: 서식 지정
+                    - name: 서식
                       href: ide/reference/options-text-editor-xaml-formatting.md
                     - name: 기타
                       href: ide/reference/options-text-editor-xaml-miscellaneous.md
                 - name: XML
                   items:
-                    - name: 서식 지정
+                    - name: 서식
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: 기타
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
@@ -1188,7 +1188,7 @@
           href: ide/reference/output-window.md
         - name: 프로젝트 속성
           items:
-            - name: 참조
+            - name: 참고
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: '애플리케이션 페이지, 프로젝트 디자이너(UWP)'
@@ -1259,7 +1259,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: 도구 상자
           items:
-            - name: 참조
+            - name: 참고
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: '도구 상자, 구성 요소 탭'
@@ -1270,7 +1270,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv 명령줄 스위치
       items:
-        - name: 참조
+        - name: 참고
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
@@ -1349,7 +1349,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: 도움말 뷰어 사용자 지정
           href: help-viewer/customize.md
-        - name: 접근성
+        - name: 액세스 가능성
           href: help-viewer/accessibility-features.md
         - name: 바로 가기 키
           href: help-viewer/shortcut-keys.md
