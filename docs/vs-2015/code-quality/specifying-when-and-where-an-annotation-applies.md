@@ -29,7 +29,7 @@ ms.locfileid: "77278458"
 ## <a name="structural-annotations"></a>구조적 주석  
  주석이 적용 되는 시기와 위치를 제어 하려면 다음 구조 주석을 사용 합니다.  
   
-|주석|Description|  
+|Annotation|설명|  
 |----------------|-----------------|  
 |`_At_(expr, anno-list)`|`expr`는 lvalue를 생성 하는 식입니다. `anno-list` 주석은 `expr`에 의해 이름이 지정 된 개체에 적용 됩니다. `expr` `anno-list`의 각 주석에 대해 주석이 사전 조건에서 해석 되는 경우 사전 조건으로 해석 되 고, 주석이 사후 조건에서 해석 되는 경우 사후 조건으로 해석 됩니다.|  
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr`는 lvalue를 생성 하는 식입니다. `anno-list` 주석은 `expr`에 의해 이름이 지정 된 개체에 적용 됩니다. `anno-list`의 각 주석에 대해 주석이 사전 조건에서 해석 되는 경우 사전 조건으로 해석 되 고 `expr`, 주석이 사후 조건에서 해석 되는 경우 사후 조건으로 해석 됩니다.<br /><br /> `iter`은 주석으로 범위가 지정 되는 변수의 이름입니다 (`anno-list`포함). `iter`에는 암시적 형식 `long`있습니다. 모든 바깥쪽 범위에서 이름이 같은 변수가 계산에서 숨겨집니다.<br /><br /> `elem-count`은 정수로 계산 되는 식입니다.|  

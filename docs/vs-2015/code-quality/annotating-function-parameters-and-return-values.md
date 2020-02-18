@@ -219,7 +219,7 @@ ms.locfileid: "77271622"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  다음은 그 예입니다.  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ ms.locfileid: "77271622"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  다음은 그 예입니다.  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ ms.locfileid: "77271622"
   
 - `_Struct_size_bytes_(size)`  
   
-     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  다음은 그 예입니다.  
+     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
