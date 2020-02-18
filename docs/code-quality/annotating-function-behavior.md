@@ -33,7 +33,7 @@ ms.locfileid: "77265174"
 ## <a name="function-annotations"></a>함수 주석
 다음 주석은 해당 함수 전체에 적용되며, 주석의 작동 방법 또는 예상 결과를 보여줍니다.
 
-|주석|Description|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Called_from_function_class_(name)`|독립 실행형으로 사용되지 않으며, 대신 `_When_` 주석과 함께 사용되는 조건자입니다. 자세한 내용은 [주석이 적용 되는 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)을 참조 하세요.<br /><br /> `name` 매개 변수는 일부 함수 선언에서 `_Function_class_` 주석에도 표시 되는 임의의 문자열입니다.  현재 분석 중인 함수에 `name`값이 같은 `_Function_class_`를 사용 하 여 주석이 지정 된 경우 `_Called_from_function_class_`은 0이 아닌 값으로 반환 됩니다. 그렇지 않으면 0을 반환 합니다.|
 |`_Check_return_`|반환 값을 주석 처리하고 호출자가 이를 조사하도록 지시합니다. 함수가 void 컨텍스트에서 호출되면 검사기가 오류를 보고합니다.|
@@ -46,7 +46,7 @@ ms.locfileid: "77265174"
 ## <a name="successfailure-annotations"></a>성공/실패 주석
 함수는 실패할 수 있으며, 실패할 경우에는 해당 결과가 완전하지 않거나 함수가 성공할 때의 결과와 다를 수 있습니다.  다음 목록에서 주석은 실패 동작을 표현하는 방법을 제공합니다.  이러한 주석을 사용하려면 성공을 확인할 수 있도록 설정해야 합니다. 따라서 `_Success_` 주석이 필요합니다.  `NTSTATUS` 및 `HRESULT`에는 이미 `_Success_` 주석이 기본 제공되어 있습니다. 하지만 `_Success_` 또는 `NTSTATUS`에 고유한 `HRESULT` 주석을 지정할 경우 기본 제공 주석을 재정의합니다.
 
-|주석|Description|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Always_(anno_list)`|`anno_list _On_failure_(anno_list)`와 동일합니다. 즉, 함수 성공 여부에 관계없이 `anno_list`의 주석이 적용됩니다.|
 |`_On_failure_(anno_list)`|함수에 주석을 달기 위해 `_Success_`가 사용될 경우에만 사용하려면 명시적으로 또는 typedef에서 `_Return_type_success_`를 통해 암시적으로 사용합니다 `_On_failure_` 주석이 함수 매개 변수 또는 반환 값에 제공되었으면, `anno_list`(anno)의 각 주석이 `_When_(!expr, anno)`로 코딩된 것처럼 작동합니다. 여기서 `expr`은 필요한 `_Success_` 주석에 대한 매개 변수입니다. 즉, 모든 사후 조건에 대한 `_Success_`의 암시적 적용이 `_On_failure_`에 대해 적용되지 않습니다.|

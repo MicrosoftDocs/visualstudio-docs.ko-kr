@@ -37,12 +37,12 @@ ms.locfileid: "77277655"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>사전 요구 사항
- 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 조건
+ 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]입니다.
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>SharePoint 프로젝트 만들기
  먼저 SharePoint 프로젝트를 만듭니다.
