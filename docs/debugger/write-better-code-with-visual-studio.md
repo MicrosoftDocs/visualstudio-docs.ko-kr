@@ -4,7 +4,7 @@ description: Visual Studio를 사용 하 여 예외를 수정 하 고, 오류를
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 01/24/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000166"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416414"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>더 나은 코드를 작성 하는 데 도움이 되는 디버깅 기술 및 도구
 
-코드에서 버그 및 오류를 수정 하는 작업은 시간이 오래 걸리고 때로는 매우 어려울 수 있습니다. 효과적으로 디버그 하는 방법을 배우는 데 시간이 걸리므로 Visual Studio와 같은 강력한 IDE를 사용 하면 작업을 훨씬 더 쉽게 만들 수 있습니다. IDE를 사용 하면 오류를 수정 하 고 코드를 더 신속 하 게 디버그할 수 있을 뿐만 아니라 더 빠른 코드를 작성 하는 데 도움이 됩니다. 이 문서의 목표는 "버그 수정" 프로세스에 대 한 전체적인 뷰를 제공 하는 것입니다. 따라서 코드 분석기를 사용 하는 시기, 디버거를 사용 하는 시기, 예외를 해결 하는 방법 및 의도를 코딩 하는 방법을 알 수 있습니다. 디버거를 사용 해야 하는 경우 [디버거 소개](../debugger/debugger-feature-tour.md) 먼저 참조하세요.
+코드에서 버그 및 오류를 수정 하는 작업은 시간이 오래 걸리고 때로는 매우 어려울 수 있습니다. 효과적으로 디버그 하는 방법을 배우는 데 시간이 걸리므로 Visual Studio와 같은 강력한 IDE를 사용 하면 작업을 훨씬 더 쉽게 만들 수 있습니다. IDE를 사용 하면 오류를 수정 하 고 코드를 더 신속 하 게 디버그할 수 있을 뿐만 아니라 더 빠른 코드를 작성 하는 데 도움이 됩니다. 이 문서의 목표는 "버그 수정" 프로세스에 대 한 전체적인 뷰를 제공 하는 것입니다. 따라서 코드 분석기를 사용 하는 시기, 디버거를 사용 하는 시기, 예외를 해결 하는 방법 및 의도를 코딩 하는 방법을 알 수 있습니다. 디버거를 사용 해야 하는 경우 디버거를 [먼저 확인](../debugger/debugger-feature-tour.md)을 참조 하세요.
 
 이 문서에서는 코딩 세션의 생산성을 높이기 위해 IDE를 활용 하는 방법에 대해 설명 합니다. 다음과 같은 몇 가지 작업을 수행 합니다.
 
@@ -40,16 +40,28 @@ ms.locfileid: "72000166"
 
 다음 코드에는 Visual Studio IDE를 사용하여 해결할 수 있는 몇 가지 버그가 있습니다. 여기에 있는 앱은 일부 작업에서 JSON 데이터 가져오기를 시뮬레이션하고, 데이터를 개체로 deserialize하고, 간단한 목록을 새 데이터로 업데이트하는 간단한 앱입니다.
 
-앱을 만들려면:
+앱을 만들려면 다음을 수행합니다.
 
-1. Visual Studio를 열고 **파일** > 새로 만들기 > **프로젝트**를 선택합니다. **시각적 개체 C#** 에서 **Windows 데스크톱** 또는 **.net Core**를 선택한 다음 가운데 창에서 **콘솔 앱**을 선택 합니다.
+1. 만들려는 앱 유형에 따라 Visual Studio를 설치 하 고 **.Net Core 플랫폼 간 개발** 또는 **.net 데스크톱 개발** 워크 로드를 설치 해야 합니다.
 
-    > [!NOTE]
-    > **콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. .**NET 데스크톱 개발** 또는 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)  페이지로 이동하여 체험용으로 설치합니다.
 
-2. **이름** 필드에 **Console_Parse_JSON**을 입력하고 **확인**을 클릭합니다. Visual Studio가 솔루션을 만듭니다.
+    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기**를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.Net Core 플랫폼 간 개발** 또는 **.net 데스크톱 개발** 워크 로드를 선택한 다음 **수정**을 선택 합니다.
 
-3. 프로젝트의 *Program.cs* 파일에 있는 기본 코드를 아래의 샘플 코드로 바꿉니다.
+1. Visual Studio를 엽니다.
+
+    ::: moniker range=">=vs-2019"
+    시작 창에서 **새 프로젝트 만들기**를 선택합니다. 검색 상자에 **console** 을 입력 한 다음 **콘솔 앱 (.net Core)** 또는 **콘솔 앱 (.NET Framework)** 을 선택 합니다. **다음**을 선택합니다. **Console_Parse_JSON** 와 같은 프로젝트 이름을 입력 하 고 **만들기**를 클릭 합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에 있는 **Visual C#** 에서 **콘솔 앱**을 선택한 다음 가운데 창에서 **콘솔 앱 (.net Core)** 또는 **콘솔 앱 (.NET Framework)** 을 선택 합니다. **Console_Parse_JSON** 와 같은 이름을 입력 하 고 **확인**을 클릭 합니다.
+    ::: moniker-end
+
+    **콘솔 앱 (.Net Core)** 또는 **콘솔 앱 (.NET Framework)** 프로젝트 템플릿이 표시 되지 않으면 **도구** > 도구 **및 기능 가져오기**로 이동 하 여 Visual Studio 설치 관리자를 엽니다. **.Net Core 플랫폼 간 개발** 또는 **.net 데스크톱 개발** 워크 로드를 선택한 다음 **수정**을 선택 합니다.
+
+    Visual Studio에서 콘솔 프로젝트를 만들고 오른쪽 창의 솔루션 탐색기에 나타납니다.
+
+1. 프로젝트의 *Program.cs* 파일에 있는 기본 코드를 아래의 샘플 코드로 바꿉니다.
 
 ```csharp
 using System;
@@ -174,7 +186,7 @@ namespace Console_Parse_JSON
 
 ## <a name="find-the-red-and-green-squiggles"></a>Red 및 green 물결선을 찾습니다.
 
-샘플 앱을 시작하고 디버거를 실행하기 전에 코드 편집기에서 red 및 green 물결선 코드를 확인합니다. 이는 IDE의 코드 분석기에서 식별하는 오류 및 경고를 나타냅니다. Red 물결선은 컴파일 시간 오류로, 코드를 실행하기 전에 수정해야 합니다. 녹색 물결선은 경고입니다. 경고를 수정하지 않고 응용 프로그램을 실행할 수 있지만, 버그의 원인이 될 수 있으며, 종종 이를 조사하여 시간과 문제를 줄일 수 있습니다. 이러한 경고 및 오류는 목록 보기를 선호하는 경우에도 **오류 목록** 창에 표시됩니다.
+샘플 앱을 시작하고 디버거를 실행하기 전에 코드 편집기에서 red 및 green 물결선 코드를 확인합니다. 이는 IDE의 코드 분석기에서 식별하는 오류 및 경고를 나타냅니다. Red 물결선은 컴파일 시간 오류로, 코드를 실행하기 전에 수정해야 합니다. 녹색 물결선은 경고입니다. 경고를 수정하지 않고 응용 프로그램을 실행할 수 있지만, 버그의 원인이 될 수 있으며, 종종 이를 조사하여 시간과 문제를 줄일 수 있습니다. 이러한 경고 및 오류는 목록 보기를 선호 하는 경우에도 **오류 목록** 창에 표시 됩니다.
 
 샘플 앱에는 수정해야 하는 몇 개의 빨간 물결선과 조사해야 하는 녹색 물결선 하나가 표시됩니다. 첫 번째 오류는 다음과 같습니다.
 
@@ -184,15 +196,15 @@ namespace Console_Parse_JSON
 
 ## <a name="check-the-light-bulb"></a>전구를 확인합니다.
 
-첫 번째 빨강 물결선은 컴파일 시간 오류를 나타냅니다. 위로 마우스를 가져가면 ```The name `Encoding` does not exist in the current context```메시지가 표시됩니다.
+첫 번째 빨강 물결선은 컴파일 시간 오류를 나타냅니다. 위로 마우스를 가져가면 ```The name `Encoding` does not exist in the current context```메시지가 표시 됩니다.
 
-이 오류가 발생하면 왼쪽 아래에 전구 아이콘이 표시됩니다. 스크루 드라이버 아이콘![스크루 드라이버 아이콘](../ide/media/screwdriver-icon.png)과 함께 전구 아이콘![전구 아이콘](../ide/media/light-bulb-icon.png)은 인라인으로 코드 수정 또는 리펙터링에 도움이 되는 빠른 동작을 나타냅니다. 전구는 해결해야 하는 문제를 나타냅니다. 드라이버는 해결하기 위해 선택할 수 있는 문제에 대한 것입니다. 왼쪽에 있는 **system.web 사용**을 클릭하여 이 오류를 해결하려면 첫 번째 권장 픽스를 사용합니다.
+이 오류가 발생하면 왼쪽 아래에 전구 아이콘이 표시됩니다. 드라이버 아이콘 ![드라이버 아이콘](../ide/media/screwdriver-icon.png), 전구 아이콘 ![전구 아이콘](../ide/media/light-bulb-icon.png) 코드 인라인을 수정 하거나 리팩터링 하는 데 도움이 되는 빠른 작업을 나타냅니다. 전구는 해결 *해야* 하는 문제를 나타냅니다. 드라이버는 해결하기 위해 선택할 수 있는 문제에 대한 것입니다. 왼쪽에 있는 **system.web 사용** 을 클릭 하 여이 오류를 해결 하려면 첫 번째 권장 픽스를 사용 합니다.
 
 ![전구를 사용 하 여 코드 수정](../debugger/media/write-better-code-missing-include.png)
 
-이 항목을 클릭 하면 Visual Studio 추가 합니다 `using System.Text` 맨 위에 있는 문을 합니다 *Program.cs* 파일과 빨간색 구부러진 곡선은 사라집니다. (제안된 수정 작업을 수행하는 것이 확실하지 않은 경우 수정 내용을 적용하기 전에 오른쪽의 **변경 내용 미리 보기** 링크를 선택합니다.)
+이 항목을 클릭 하면 Visual Studio에서 *Program.cs* 파일의 맨 위에 `using System.Text` 문을 추가 하 고 빨간색 물결선은 사라집니다. (제안 된 수정 작업을 수행 하는 것이 확실 하지 않은 경우 수정 내용을 적용 하기 전에 오른쪽의 **변경 내용 미리 보기** 링크를 선택 합니다.)
 
-위의 오류는 일반적으로 코드에 새 `using` 문을 추가하면 수정할 수 있는 일반적인 오류입니다. ```The type or namespace `Name` cannot be found.```와 같이 이 오류와 비슷한 몇 가지 일반적인 오류가 있습니다. 이러한 종류의 오류는 누락된 어셈블리 참조(프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **추가** > **참조**를 선택), 철자가 틀린 이름 또는 누락된 라이브러리를 추가해야 함(C#의 경우, 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **NuGet 패키지 관리**를 선택)을 나타낼 수 있습니다.
+앞의 오류는 일반적으로 코드에 새 `using` 문을 추가 하 여 수정 하는 일반적인 오류입니다. 이러한 종류의 오류는 어셈블리 참조가 누락 된 경우 (프로젝트를 마우스 오른쪽 단추로 클릭 하 고 > **참조** C# **추가** 선택), 철자가 잘못 된 이름 또는 추가 해야 하는 누락 된 라이브러리 (의 경우 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **NuGet 패키지 관리**선택)를 나타낼 수 ```The type or namespace `Name` cannot be found.```와 같은 일반적인 유사한 오류가 있습니다.
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>나머지 오류 및 경고 수정
 
@@ -209,7 +221,7 @@ namespace Console_Parse_JSON
 internal string points;
 ```
 
-아래와 같이 변환합니다.
+다음과 같이 변경합니다.
 
 ```csharp
 [DataMember]
@@ -241,7 +253,7 @@ item.totalpoints += users[i].points;
 
 모든 red 물결선을 수정 하 고 해결 한 경우 또는 최소한 조사--모든 녹색 물결선 하면 디버거를 시작 하 고 앱을 실행할 준비가 된 것입니다.
 
-디버그 도구 모음에서 **F5**(**디버그 > 디버깅 시작**) 또는 **디버깅 시작** 단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")를 누릅니다.
+디버그 도구 ![모음에서](../debugger/media/dbg-tour-start-debugging.png "디버그") **F5** 키 (**디버그 > 디버깅 시작**) **또는 디버깅 시작 단추를** 누릅니다.
 
 이 시점에서 샘플 앱은 `SerializationException` 예외 (런타임 오류)를 throw 합니다. 즉, 응용 프로그램은 serialize 하려고 하는 데이터에서 좁게 합니다. 디버그 모드에서 응용 프로그램을 시작 했으므로 (디버거 연결), 디버거의 예외 도우미가 예외를 throw 한 코드를 바로 사용 하 고 유용한 오류 메시지를 제공 합니다.
 
@@ -251,7 +263,7 @@ item.totalpoints += users[i].points;
 
 예외가 발생 하면 몇 가지 질문을 하 고 대답 해야 합니다.
 
-* 이 예외는 해결할 수 있는 버그 인가요? 또는,
+* 이 예외는 해결할 수 있는 버그 인가요? 또는
 
 * 이 예외는 사용자에 게 발생할 수 있는 것입니다.
 
@@ -261,7 +273,7 @@ item.totalpoints += users[i].points;
 users = ser.ReadObject(ms) as User[];
 ```
 
-이 코드로 바꿉니다.
+바꿉니다.
 
 ```csharp
 try
@@ -358,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-이 코드로 바꿉니다.
+바꿉니다.
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)

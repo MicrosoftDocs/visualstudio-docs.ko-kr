@@ -88,7 +88,7 @@ Visual Studio 설치 관리자에는 **C++를 사용한 모바일 개발** 워�
 
 1. Visual Studio를 엽니다.
 
-## <a name="install-tools-for-ios"></a>Install tools for iOS
+## <a name="install-tools-for-ios"></a>iOS용 도구 설치
 
 Visual Studio를 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있습니다. 그러나 라이선스 제한으로 인해 Mac에서는 원격으로 코드를 빌드해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트를 설치 및 구성해야 합니다. 자세한 설치 지침, 필수 조건 및 구성 옵션은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요. iOS용으로 빌드하지 않는 경우에는 이 단계를 건너뛸 수 있습니다.
 
