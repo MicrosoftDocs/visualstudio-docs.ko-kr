@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), FXC task
 - FXC task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 67958a1a1ebb2ff382d0896e2fbaec6105c0c785
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747331"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279288"
 ---
 # <a name="fxc-task"></a>FXC 작업
 
@@ -59,6 +59,6 @@ ms.locfileid: "72747331"
 |**TreatWarningAsError**|선택적 **bool** 매개 변수입니다.<br/><br/>모든 컴파일러 경고를 오류로 처리합니다.<br/><br/>새 프로젝트인 경우 모든 컴파일에서 `/WX`를 사용하는 것이 좋습니다. 모든 경고를 해결하면 찾기 어려운 코드 오류를 최소화할 수 있습니다.|
 |**VariableName**|선택적 **string** 매개 변수입니다.<br/><br/>헤더 파일의 변수 이름에 대한 이름을 지정합니다.<br/><br/>`/Vn [name]`을 사용하십시오.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [작업 참조](../msbuild/msbuild-task-reference.md)

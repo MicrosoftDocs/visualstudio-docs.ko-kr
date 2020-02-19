@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - Text Editor Options dialog box, advanced
 ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbdbadd93eec07c43aba99e40072cb6173e0e83d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747840"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275205"
 ---
 # <a name="options-text-editor-cc-advanced"></a>옵션, 텍스트 편집기, C/C++, 고급
 
@@ -182,7 +182,7 @@ IntelliSense 요청 시 활성으로 유지되는 최대 변환 단위 수입니
 
 멤버 목록에 적합한 경우 '.'을 '->'로 바꿉니다.
 
-## <a name="references"></a>참조
+## <a name="references"></a>참조 항목
 
 **확인 사용 안 함**
 
@@ -206,6 +206,6 @@ IntelliSense 요청 시 활성으로 유지되는 최대 변환 단위 수입니
 
 사용하도록 설정한 경우 텍스트 편집기에 '('를 입력하면 선택한 텍스트를 괄호로 둘러쌀 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md)

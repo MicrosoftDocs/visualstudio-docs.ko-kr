@@ -2,17 +2,17 @@
 title: IntelliSense에 대한 C++ 프로젝트 구성
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748588"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279317"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense에 대한 C++ 프로젝트 구성
 
@@ -120,6 +120,6 @@ Visual Studio to investigate.
 
 TRACEDESIGNTIME 환경 변수에 대한 자세한 내용은 [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) 및 [공통 프로젝트 시스템](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)을 참조하세요. 이러한 문서의 정보는 C++ 프로젝트와 관련이 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

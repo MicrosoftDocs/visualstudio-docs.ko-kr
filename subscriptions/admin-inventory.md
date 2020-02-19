@@ -3,15 +3,15 @@ title: 사전 프로덕션 환경의 인벤토리 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: 관리자의 사전 프로덕션 인벤토리 수행 책임에 대해 알아봅니다.
-ms.openlocfilehash: 8218b1802a6369aed00be63572c80cba7b5c29f3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0eacd177b0901d866bbb974aca81a0e77cdaf25d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849830"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439123"
 ---
 # <a name="inventory-of-pre-production-environment"></a>사전 프로덕션 환경의 파악
 Visual Studio 구독은 디바이스가 아닌 사용자를 계산하여 자산 관리를 간소화합니다.
@@ -35,3 +35,9 @@ Visual Studio 관리자는 **특정한 명명된 개인**에게 Visual Studio �
 - [대규모 팀 및 외부 계약업체 관리](manage-teams.md)
 - [사용자 할당 추적 및 주문 처리](assignments-orders.md)
 - [최대 사용량](maximum-usage.md)으로 구매 커밋 추적
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)

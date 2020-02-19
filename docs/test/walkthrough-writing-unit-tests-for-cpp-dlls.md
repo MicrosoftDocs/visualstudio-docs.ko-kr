@@ -2,17 +2,17 @@
 title: '방법: C++ DLL의 단위 테스트 작성'
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+author: corob-msft
+ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661904"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275432"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>방법: C++ DLL의 단위 테스트 작성
 
@@ -49,7 +49,7 @@ ms.locfileid: "68661904"
 
      ![TEST&#95;CLASS 및 TEST&#95;METHOD가 있는 테스트 프로젝트](../test/media/utecpp2.png)
 
-     다음 사항을 참고하세요.
+     다음에 유의합니다.
 
     - 각 테스트는 `TEST_METHOD(YourTestName){...}`를 사용하여 정의됩니다.
 
@@ -366,7 +366,7 @@ ms.locfileid: "68661904"
 
    또한 최소한의 코드 검사 수준을 강제로 지정할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [기존 C++ 애플리케이션에 단위 테스트 추가](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)

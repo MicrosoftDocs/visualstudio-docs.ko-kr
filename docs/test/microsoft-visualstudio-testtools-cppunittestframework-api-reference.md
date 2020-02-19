@@ -2,17 +2,17 @@
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
 ms.date: 09/27/2019
 ms.topic: reference
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - multiple
-author: mikeblome
-ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720507"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278653"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조
 
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a> 예제
+## <a name="example"></a> 예
 이 코드는 VSCppUnit 사용 예입니다. 여기에는 특성 메타데이터, 장치, 어셜션 포함 단위 테스트, 사용자 지정 로깅이 포함됩니다.
 
 ```cpp
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)
 - [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)

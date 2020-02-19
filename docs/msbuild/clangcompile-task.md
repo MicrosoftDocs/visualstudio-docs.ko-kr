@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), ClangCompile task
 - ClangCompile task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1526fbd3c2c0822781f0e011999ddcb9c679170
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747338"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275468"
 ---
 # <a name="clangcompile-task"></a>ClangCompile 작업
 
@@ -82,6 +82,6 @@ Microsoft C++ 컴파일러 도구 clang.exe를 래핑합니다.
 |**Verbose**|선택적 **bool** 매개 변수입니다.<br/><br/>실행할 명령을 표시하고 자세한 정보 표시 출력을 사용합니다.|
 |**WarningLevel**|선택적 **string** 매개 변수입니다.<br/><br/>컴파일러가 코드 오류를 처리하는 수준을 선택합니다. 다른 플래그는 **추가 옵션**에 직접 추가해야 합니다(`/w`, `/Weverything` 참조).<br/><br/>**TurnOffAllWarnings** - 모든 컴파일러 경고를 사용하지 않도록 설정합니다(`w` 사용).<br/>**EnableAllWarnings** - 기본적으로 사용하지 않도록 설정된 경고를 포함한 모든 경고를 사용하도록 설정합니다(`Wall` 사용).|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [작업 참조](../msbuild/msbuild-task-reference.md)

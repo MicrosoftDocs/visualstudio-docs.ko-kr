@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114398"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173082"
 ---
 # <a name="application-property-page-uwp-projects"></a>애플리케이션 속성 페이지(UWP 프로젝트)
 
@@ -38,7 +38,7 @@ ms.locfileid: "76114398"
 
 **어셈블리 정보**&mdash; 이 단추를 선택하면 [어셈블리 정보 대화 상자](../../ide/reference/assembly-information-dialog-box.md)가 표시됩니다.
 
-**패키지 매니페스트**&mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 **솔루션 탐색기**에서 _Package.appxmanifest_ 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)을 참조하세요.
+**패키지 매니페스트**&mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 **솔루션 탐색기**에서 _Package.appxmanifest_ 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/msix/package/packaging-uwp-apps#configure-your-project)을 참조하세요.
 
 ## <a name="targeting-section"></a>대상 지정 섹션
 

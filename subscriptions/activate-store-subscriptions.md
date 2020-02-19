@@ -3,15 +3,15 @@ title: Microsoft Store에서 구매한 Visual Studio 구독을 활성화하는 �
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: Microsoft Store에서 구매한 Visual Studio 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: d03b5137a904b68fc848e4058069c89252b94d38
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 8df8125280e17eba941e099d8d27b37a19de79b1
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377783"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439155"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Microsoft Store에서 구매한 구독을 활성화하려면 어떻게 해야 하나요?
 Microsoft Store를 통해 Visual Studio 구독을 구매한 경우 구매한 후 받은 “확인 페이지” 또는 “확인 전자 메일”에서 활성화 단계를 시작할 수 있습니다.
@@ -33,3 +33,9 @@ Microsoft Store를 통해 Visual Studio 구독을 구매한 경우 구매한 후
 
 ## <a name="next-steps"></a>다음 단계
 [혜택](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 페이지에서 구독에 포함된 모든 도구, 서비스, 교육 및 지원 혜택을 확인하세요.  시작하려면 [Visual Studio](vs-ide-benefit.md)와 [Azure DevOps](vs-azure-devops.md)를 설정하시기 바랍니다. 
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)

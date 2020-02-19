@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588118bf31c5d310e947b02fda476a63d0d9df7a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cd21d7da710a82d9396766971244aa5f7f9bbd4d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573449"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278796"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 요소(MSBuild)
 사용자 정의 [Item](../msbuild/item-element-msbuild.md) 요소 집합을 포함합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 사용되는 모든 항목은 `ItemGroup` 요소의 자식으로 지정해야 합니다.
@@ -33,7 +33,8 @@ ms.locfileid: "75573449"
 ## <a name="syntax"></a>구문
 
 ```xml
-<ItemGroup Condition="'String A' == 'String B'">
+<ItemGroup Condition="'String A' == 'String B'"
+           Label="Label">
     <Item1>... </Item1>
     <Item2>... </Item2>
 </ItemGroup>
@@ -47,6 +48,7 @@ ms.locfileid: "75573449"
 |특성|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다. 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
+|`Label`|선택적 특성입니다. `ItemGroup`를 식별합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
