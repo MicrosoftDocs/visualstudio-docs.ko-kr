@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: C++ 앱 디버그
       href: quickstart-debug-with-cplusplus.md
-    - name: ASP.NET 앱 디버그
+    - name: ASP.NET Core 앱 디버그
       href: quickstart-debug-aspnet.md
 - name: 자습서
   items:
