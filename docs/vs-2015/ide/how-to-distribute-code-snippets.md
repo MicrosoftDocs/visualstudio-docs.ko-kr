@@ -11,26 +11,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667959"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476981"
 ---
 # <a name="how-to-distribute-code-snippets"></a>방법: 코드 조각 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 친구에게 코드 조각을 제공하고 코드 조각 관리자를 사용하여 각자의 컴퓨터에 조각을 설치하도록 하면 됩니다. 그러나 배포할 조각이 여러 개이거나 조각을 더 광범위하게 배포하려는 경우 Visual Studio 사용자가 설치할 수 있는 Visual Studio 확장에 조각 파일을 포함합니다.
 
- Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다. Visual [studio 2015 다운로드](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)에서 visual studio 설치와 일치 하는 이상 버전을 찾습니다.
+ Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다. Visual [studio 2015 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/)에서 visual studio 설치와 일치 하는 이상 버전을 찾습니다.
 
 ## <a name="setting-up-the-extension"></a>확장명 설정
  이 절차에서는 [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)에서 만들어진 같은 Hello World 코드 조각을 사용합니다. .snippet text가 제공되므로 돌아가서 코드 조각을 만들 필요가 없습니다.
 
 1. **TestSnippet**이라는 새 VSIX 프로젝트를 만듭니다. (**파일/새로 만들기/프로젝트/Visual C#(또는 Visual Basic)/확장성**)
 
-2. **TestSnippet** 프로젝트에서 새 XML 파일을 추가하고 **VBCodeSnippet.snippet**을 호출합니다. 콘텐츠를 다음으로 바꿉니다.
+2. **TestSnippet** 프로젝트에서 새 XML 파일을 추가하고 **VBCodeSnippet.snippet**을 호출합니다. 파일의 내용을 다음으로 바꿉니다.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -102,5 +102,5 @@ ms.locfileid: "72667959"
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [코드 조각](../ide/code-snippets.md)
