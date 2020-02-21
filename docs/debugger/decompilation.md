@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144782"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506518"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>디버깅 하는 동안 .NET 어셈블리에서 소스 코드 생성
 
@@ -82,13 +82,13 @@ ms.locfileid: "77144782"
 - 지역 변수의 이름이 정확 하지 않을 수 있습니다.
 - 일부 변수는 평가할 수 없습니다.
 
-자세한 내용은 GitHub 문제에서 확인할 수 있습니다. [IChsarpCompiler. 디컴파일러 integration IN VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901)을 참조 하세요.
+자세한 내용은 GitHub 문제에서 확인할 수 있습니다. [ICSharpCode. 디컴파일러 integration IN VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901)을 참조 하세요.
 
 ### <a name="decompilation-reliability"></a>디컴파일을 안정성
 
 상대적으로 적은 수의 디컴파일을 시도로 인해 오류가 발생할 수 있습니다. 이는 ILSpy에서 시퀀스 지점 null 참조 오류가 발생 한 것입니다.  이러한 문제를 포착 하 고 디컴파일을 시도를 정상적으로 실패 하 여 오류를 완화 했습니다.
 
-자세한 내용은 GitHub 문제에서 확인할 수 있습니다. [IChsarpCompiler. 디컴파일러 integration IN VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901)을 참조 하세요.
+자세한 내용은 GitHub 문제에서 확인할 수 있습니다. [ICSharpCode. 디컴파일러 integration IN VS Debugger](https://github.com/icsharpcode/ILSpy/issues/1901)을 참조 하세요.
 
 ### <a name="limitations-with-async-code"></a>비동기 코드의 제한 사항
 

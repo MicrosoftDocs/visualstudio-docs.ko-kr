@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718707"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506403"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
 다음은 문제를 해결 하기 위한 VSPackage 및 팁과 함께 발생할 수 있는 일반적인 문제입니다.
@@ -46,7 +46,7 @@ ms.locfileid: "72718707"
 4. VSPackage를 로드 하지 못한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 인스턴스의 **출력** 창을 엽니다. VSPackage를 로드 하지 못하는 이유에 대 한 정보는 해당 창에 표시 될 수 있습니다.
 
    > [!NOTE]
-   > @No__t_1 IDE (통합 개발 환경)에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 실험 버전을 시작 하는 경우 두 버전의 **출력** 창을 검사 합니다.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 실험 버전을 시작 하는 경우 두 버전의 **출력** 창을 검사 합니다.
 
 5. 활동 로그를 검사 합니다.
 
@@ -60,13 +60,13 @@ ms.locfileid: "72718707"
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>표시 되지 않거나 명령을 클릭할 때 오류를 생성 하는 명령 문제를 해결 하려면
 
-1. @No__t_0 명령 프롬프트에서 다음을 입력 하 여 새 또는 변경 된 메뉴 명령과 IDE에 이미 있는 메뉴 명령을 병합 합니다. **devenv/rootsuffix Exp/setup**.
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령 프롬프트에서 다음을 입력 하 여 새 또는 변경 된 메뉴 명령과 IDE에 이미 있는 메뉴 명령을 병합 합니다. **devenv/rootsuffix Exp/setup**.
 
-2. @No__t_0에서 VSPackage에 대 한 UI .dll을 찾을 수 있는지 확인 합니다.
+2. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 VSPackage에 대 한 UI .dll을 찾을 수 있는지 확인 합니다.
 
    1. 레지스트리의 패키지 섹션에서 VSPackage의 CLSID를 찾습니다.
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<버전 >* \packages
 
    2. SatelliteDll 하위 키에 지정 된 경로가 올바른지 확인 합니다.
 
@@ -99,7 +99,7 @@ ms.locfileid: "72718707"
 
     2. 이 **기호 파일 (.pdb) 위치**를 추가 합니다.
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. 성능을 향상 시키려면 기호 캐시 폴더를 지정 합니다. 예를 들면 다음과 같습니다.
 
@@ -119,9 +119,9 @@ ms.locfileid: "72718707"
 
 2. 비관리 코드의 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 레지스트리 노드에서 VSPackage의 CLSID를 찾습니다.
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \clsid
+    HKLM\Software\Microsoft\Visual Studio\\ *\<버전 >* \clsid
 
    InprocServer32 항목에 VSPackage dll의 올바른 경로가 있는지 확인 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [VSPackage](../extensibility/internals/vspackages.md)
