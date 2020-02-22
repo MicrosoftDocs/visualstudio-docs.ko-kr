@@ -466,8 +466,6 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: 명령줄에서 프로파일러를 사용하여 독립 실행형 .NET Framework 구성 요소 계측 및 메모리 데이터 수집
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: '연습: 샘플링을 사용하여 명령줄 프로파일링'
-                  href: walkthrough-command-line-profiling-using-sampling.md
             - name: ASP.NET 웹 애플리케이션
               items:
                 - name: ASP.NET 웹 애플리케이션의 명령줄 프로파일링
