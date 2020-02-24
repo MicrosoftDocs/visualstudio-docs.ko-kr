@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: 메서드에 매개 변수 추가
                   href: ide/reference/add-parameter.md
+                - name: 생성자에서 전용 필드 생성
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: 재정의 생성
                   href: ide/reference/generate-override.md
                 - name: Equals 및 GetHashCode 메서드 재정의 생성
@@ -374,6 +376,8 @@
                   href: ide/reference/extract-interface.md
                 - name: 메서드 추출
                   href: ide/reference/extract-method.md
+                - name: 로컬 함수 추출
+                  href: ide/reference/extract-local-function.md
                 - name: 매개 변수 생성
                   href: ide/reference/generate-parameter.md
                 - name: 인라인 임시 변수
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: 정적 로컬 함수 리팩터링 옵션
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: 멤버를 정적으로 설정
+                  href: ide/reference/make-member-static.md
                 - name: 참조 근처로 선언 이동
                   href: ide/reference/move-declaration-near-reference.md
                 - name: 형식을 일치하는 파일로 이동
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: '사용되지 않은 값 할당, 변수 및 매개 변수'
                   href: ide/reference/unused-values-parameters.md
-                - name: 호출 체인 래핑 및 정렬
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: '래핑, 들여쓰기 및 매개 변수 정렬'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: '래핑, 들여쓰기 및 리팩터링 정렬'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: '연습: 사용법에서 코드 생성'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
