@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599287"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578774"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio에서 디버깅 작업 찾기
 
@@ -130,3 +130,7 @@ Native C++의 경우 [NatVis 프레임 워크](create-custom-views-of-native-obj
 ### <a name="debug-multithreaded-applications"></a>다중 스레드 애플리케이션 디버그
 
 [다중 스레드 응용 프로그램 디버그](debug-multithreaded-applications-in-visual-studio.md)를 참조 하세요.
+
+### <a name="fix-performance-issues"></a>성능 문제 해결
+
+[프로 파일링 도구](../profiling/profiling-feature-tour.md) 살펴보기 (영문)를 참조 하세요.
