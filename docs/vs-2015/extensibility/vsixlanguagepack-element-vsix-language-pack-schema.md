@@ -8,17 +8,17 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a429a97c25f9c0215f17b024d34fece20d1d8f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e2e1df362fddeab5be98ff90460a8a1a7d4b7876
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690700"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557996"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 요소 (VSIX 언어 팩 스키마)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-필수 요소. VSIX 언어 팩에 대 한 루트 요소를 제공합니다. VSIX 언어 팩 VSIX 패키지 지역화 된 설치 정보를 제공 합니다.  
+필수 사항입니다. VSIX 언어 팩의 루트 요소를 제공 합니다. VSIX 언어 팩은 VSIX 패키지에 대 한 지역화 된 설치 정보를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,41 +36,39 @@ ms.locfileid: "65690700"
   
 ### <a name="attributes"></a>특성  
   
-|특성|설명|  
+|attribute|Description|  
 |---------------|-----------------|  
 |`xmlns`|VSIX 언어 팩 스키마가 정의 된 XML 네임 스페이스입니다.|  
   
 ## <a name="xmlns-attribute"></a>xmlns 특성  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
-|`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|필수 요소. 언어 팩에 대 한 스키마를 정의 하는 파일의 위치입니다.|  
+|`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|필수 사항입니다. 언어 팩에 대 한 스키마를 정의 하는 파일의 위치입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
-|[LocalizedName 요소](../extensibility/localizedname-element-vsix-language-pack-schema.md)|필수 요소. 확장을 설치의 지역화 된 이름입니다.|  
-|[LocalizedDescription 요소](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|필수 요소. 확장을 설치의 지역화 된 설명입니다.|  
-|[MoreInfoURL 요소](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|선택 사항입니다. 링크 확장에 대 한 지역화 된 정보입니다.|  
-|[License 요소](../extensibility/license-element-vsix-language-pack-schema.md)|선택 사항입니다. 지역화 된 버전의 확장에 대 한 라이선스 파일의 경로입니다.|  
+|[LocalizedName 요소](../extensibility/localizedname-element-vsix-language-pack-schema.md)|필수 사항입니다. 설치할 확장의 지역화 된 이름입니다.|  
+|[LocalizedDescription 요소](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|필수 사항입니다. 설치할 확장에 대 한 지역화 된 설명입니다.|  
+|[MoreInfoURL 요소](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|(선택 사항) 확장에 대 한 지역화 된 정보에 대 한 링크입니다.|  
+|[License 요소](../extensibility/license-element-vsix-language-pack-schema.md)|(선택 사항) 확장에 대 한 라이선스 파일의 지역화 된 버전 경로입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
-|없음||  
+|None||  
   
 ## <a name="element-information"></a>요소 정보  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    네임스페이스    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
-|   스키마 이름   |                 VSIX 언어 팩 스키마                 |
+|    네임스페이스    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Schema Name   |                 VSIX 언어 팩 스키마                 |
 | 유효성 검사 파일 |                VSIXLanguagePackSchema.xsd                 |
-|  비워 둘 수 있습니다.   |                            아니요                             |
+|  비워 둘 수 있음   |                            예                             |
   
 ## <a name="see-also"></a>참고 항목  
- [VSX 언어 팩 스키마 참조](../extensibility/vsx-language-pack-schema-reference.md)   
- [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)   
- [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [VSX 언어 팩 스키마 참조](../extensibility/vsx-language-pack-schema-reference.md) [vsix 패키지 지역화](../extensibility/localizing-vsix-packages.md) [vsix 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))

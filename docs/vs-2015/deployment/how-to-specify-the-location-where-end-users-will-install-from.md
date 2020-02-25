@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476902"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557990"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>방법: 최종 사용자의 설치 원본 위치 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,9 @@ ms.locfileid: "77476902"
   
 1. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
   
-2. 
-          **게시** 탭을 클릭합니다.  
+2. **게시** 탭을 클릭합니다.  
   
-3. 설치 URL 필드에 형식 https://www.microsoft.com/ApplicationName를 사용 하 여 정규화 된 URL을 사용 하 여 설치 위치를 입력 하거나 \\\Server\ApplicationName. 형식을 사용 하 여 UNC 경로를 입력 합니다.  
+3. 설치 URL 필드에 형식 `https://www.contoso.com/ApplicationName`를 사용 하 여 정규화 된 URL을 사용 하 여 설치 위치를 입력 하거나 `\\Server\ApplicationName`형식을 사용 하 여 UNC 경로를 입력 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: Visual Studio의 파일 복사 위치 지정](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

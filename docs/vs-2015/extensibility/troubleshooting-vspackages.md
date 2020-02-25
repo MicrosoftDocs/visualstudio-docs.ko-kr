@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476999"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557978"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "77476999"
   
     1. 레지스트리의 패키지 섹션에서 VSPackage의 CLSID를 찾습니다.  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<버전 >* \packages  
+         HKLM\Software\Microsoft\Visual Studio\\ *\<버전 >* \packages  
   
     2. SatelliteDll 하위 키에 지정 된 경로가 올바른지 확인 합니다.  
   
@@ -101,13 +101,11 @@ ms.locfileid: "77476999"
   
     2. 이 **기호 파일 (.pdb) 위치**를 추가 합니다.  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. 성능을 향상 시키려면 기호 캐시 폴더를 지정 합니다. 예를 들면 다음과 같습니다.  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>누락 된 VSPackage 또는 해당 종속성 중 하나에 대 한 문제를 해결 하려면  
   
@@ -117,11 +115,11 @@ ms.locfileid: "77476999"
   
    2. **속성 페이지** 대화 상자에서 **참조** 탭을 선택 하 고 모든 경로가 올바른지 확인 합니다. 또는 **개체 브라우저** 를 사용 하 여 참조 된 개체를 찾을 수 있습니다.  
   
-        관리 코드의 경우 [fuslogvw.exe (어셈블리 바인딩 로그 뷰어)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) 를 사용 하 여 실패 한 어셈블리 로드에 대 한 세부 정보를 표시할 수 있습니다.  
+        관리 코드의 경우 [fuslogvw.exe (어셈블리 바인딩 로그 뷰어)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) 를 사용 하 여 실패 한 어셈블리 로드에 대 한 세부 정보를 표시할 수 있습니다.  
   
 2. 비관리 코드의 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 레지스트리 노드에서 VSPackage의 CLSID를 찾습니다.  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<버전 >* \clsid  
+    HKLM\Software\Microsoft\Visual Studio\\ *\<버전 >* \clsid  
   
    InprocServer32 항목에 VSPackage dll의 올바른 경로가 있는지 확인 합니다.  
   
