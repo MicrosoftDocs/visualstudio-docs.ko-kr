@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise 제품에서 구독 관리
-ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 524002b875375c22da67bbf98d98f4ebc149c14b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150144"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558144"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 관리
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
@@ -42,27 +42,27 @@ GitHub는 클라우드 기반 GitHub.com 또는 온-프레미스 GitHub Enterpri
 
 ### <a name="githubcom"></a>GitHub.com 
 GitHub.com 관리에 대한 자세한 내용은 [GitHub 도움말](https://help.github.com/en)에서 다음 항목을 체크 아웃하세요.
-- [도움말 항목의 전체 목록](https://help.github.com/en)
-- [조직의 멤버 자격 관리](https://help.github.com/en/articles/managing-membership-in-your-organization)
-> - [조직에 조인하도록 사용자 초대](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-> - [팀/조직에서 사용자 제거](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-> - [조직의 이전 멤버 복원](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
-- [역할을 사용하여 액세스 관리](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
-- [사용자를 팀으로 구성](https://help.github.com/en/articles/organizing-members-into-teams)
-- [조직의 리포지토리에 대한 액세스 관리](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
++ [도움말 항목의 전체 목록](https://help.github.com/en)
++ [조직의 멤버 자격 관리](https://help.github.com/en/articles/managing-membership-in-your-organization)
++ [조직에 조인하도록 사용자 초대](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
+    - [팀/조직에서 사용자 제거](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+    - [조직의 이전 멤버 복원](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
++ [역할을 사용하여 액세스 관리](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
++ [사용자를 팀으로 구성](https://help.github.com/en/articles/organizing-members-into-teams)
++ [조직의 리포지토리에 대한 액세스 관리](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise 서버
 GitHub 도움말은 질문에 답하고 조직의 GitHub Enterprise 서버 구현 관리에 대한 팁을 제공하는 다양한 관리자 가이드를 제공합니다.
 
-- [모든 관리자 가이드 보기](https://help.github.com/en/enterprise/2.16/admin)
-- [사용자 관리](https://help.github.com/en/enterprise/2.16/admin/user-management)
-> - [조직 및 팀](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-> > - [조직 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-> > - [팀 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-> > - [팀에 사용자 추가](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-> > - [팀 및 조직에서 사용자 제거](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-> - [사용자 보안](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
-- [GitHub Enterprise 서버 설치 및 구성](https://help.github.com/en/enterprise/2.16/admin/installation)
++ [모든 관리자 가이드 보기](https://help.github.com/en/enterprise/2.16/admin)
++ [사용자 관리](https://help.github.com/en/enterprise/2.16/admin/user-management)
+    - [조직 및 팀](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
+        - [조직 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+        - [팀 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
+        - [팀에 사용자 추가](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+        - [팀 및 조직에서 사용자 제거](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+    - [사용자 보안](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
++ [GitHub Enterprise 서버 설치 및 구성](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>지원 리소스
 - [GitHub 도움말](https://help.github.com/en)에서 다양한 GitHub 항목에 대한 질문의 답을 찾을 수 있습니다.
