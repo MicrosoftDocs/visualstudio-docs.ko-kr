@@ -3,15 +3,15 @@ title: 별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패할 수 있습니다.
-ms.openlocfilehash: 392b86699b1116f45ca75df3b611fff6a2aebc62
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378029"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77276626"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 로그인에 사용되는 계정 유형에 따라 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인할 때 사용 가능한 구독이 제대로 표시되지 않을 수 있습니다. 한 가지 원인은 구독이 할당된 로그인 ID 대신 “별칭” 또는 “이름”을 사용하기 때문일 수 있습니다. 이것을 “별칭 지정”이라고 합니다.
@@ -19,131 +19,94 @@ ms.locfileid: "68378029"
 ## <a name="what-is-aliasing"></a>별칭 지정이란 무엇인가요?
 “별칭 지정”이라는 용어는 사용자가 Windows(또는 Active Directory)에 로그인하고 전자 메일에 액세스하기 위해 서로 다른 ID를 사용하는 것을 나타냅니다.
 
-회사에 디렉터리 로그인용 Microsoft Online Service가 있지만(예: JohnD@contoso.com) 사용자가 별칭 또는 이름(예: John.Doe@contoso.com)을 사용하여 전자 메일 계정에 액세스할 경우 별칭 지정이 수행됩니다. VLSC(볼륨 라이선스 서비스 센터)를 통해 구독을 관리하는 많은 고객의 경우 제공된 전자 메일 주소(John.Doe@contoso.com)가 “회사 또는 학교 계정” 옵션을 통해 인증에 성공하는 데 필요한 디렉터리 주소(JohnD@contoso.com)와 일치하지 않을 때 이 별칭 지정으로 인해 로그인에 실패할 수 있습니다.
+회사에 디렉터리 로그인용 Microsoft Online Service가 있지만(예: olivia@contoso.com) 사용자가 별칭 또는 이름(예: OliviaG@contoso.com)을 사용하여 전자 메일 계정에 액세스할 경우 별칭 지정이 수행됩니다. 사용자가 https://manage.visualstudio.com 의 Visual Studio 구독 관리 포털에 나열된 “로그인 전자 메일 주소”로 로그인하여 구독에 액세스했는지 확인합니다.
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>관리자로서 어떤 옵션이 있나요?
-관리자는 구독자가 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 성공적으로 로그인했는지 확인하는 두 가지 옵션이 있습니다.
-- 첫 번째 옵션(권장)은 VLSC(볼륨 라이선스 서비스 센터)에서 디렉터리 계정을 할당된 주소로 활용하는 것입니다. 자세한 내용은 이 문서의 [디렉터리 계정에 구독자 할당](#assigning-subscribers-to-a-directory-account) 섹션을 참조하세요.
-- 두 번째 옵션(보안 수준 낮음)은 구독자가 “회사 또는 학교” 전자 메일 주소를 “개인” 계정(즉 Microsoft 계정 또는 MSA)에 연결하도록 허용하는 것입니다. 자세한 내용은 이 문서의 [회사 또는 학교 계정을 개인 계정으로 정의](#defining-a-work-or-school-account-as-a-personal-account) 섹션을 참조하세요.
 
-> [!NOTE]
-> 회사가 새 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com)로 마이그레이션되면 구독자 프로필의 일부로 디렉터리 및 전자 메일 주소를 제공할 수 있는 새 관리 환경을 활용할 수 있습니다. [마이그레이션](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)에 대해 자세히 알아보세요.
+구독자의 계정 유형에 따라 해당하는 솔루션을 아래에서 찾습니다.
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>디렉터리 계정에 구독자 할당
-모든 경우에 VLSC(볼륨 라이선스 서비스 센터) 내의 구독 관리자는 새 구독자의 디렉터리 주소를 사용하거나 “기존” 구독자의 전자 메일 주소를 업데이트해야 합니다. 디렉터리 주소를 사용하면 모든 새 구독자가 시작 전자 메일을 수신하지 않으므로 관리자가 구독이 할당되었음을 구독자에게 알려야 함을 의미합니다. 아래 단계를 수행한 후에는 부담 없이 전자 메일 [템플릿](#notifying-your-subscribers-with-directory-addresses)을 사용하여 구독자에게 알리고 로그인 프로세스를 통해 구독자를 도울 수 있습니다.
+### <a name="work-or-school-account-upn-mismatch-issue"></a>회사 또는 학교 계정 UPN 불일치 이슈
 
-### <a name="adding-new-subscribers"></a>새 구독자 추가
-다음 단계에 따라 디렉터리 계정으로 새 구독자를 추가합니다.
+UPN(사용자 계정 이름)이 기본 SMTP 주소와 동일하지 않은 회사에 Active Directory가 설정된 경우 UPN 불일치 이슈가 발생할 수 있습니다. 
 
-1. VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/default.aspx))를 방문하여 로그인합니다.
-2. VLSC 관리 페이지에서 **구독**, **Visual Studio 구독**을 차례로 클릭합니다.
+#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>사용자의 로그인 주소에 UPN 불일치가 있는지 탐지하는 방법
 
-    > [!div class="mx-imgBorder"]
-    > ![구독 메뉴](_img//vlsc/vlsc-subscriptions.png)
+사용자가 다음 단계를 완료하도록 합니다.
 
-3. Visual Studio 구독에 연결된 **계약 번호**를 클릭합니다.
+1. 구독 할당 전자 메일에 포함된 로그인 주소를 사용하여 https://my.visualstudio.com 에 로그인합니다.  
 
-    > [!div class="mx-imgBorder"]
-    > ![규약 선택](_img/vlsc/vlsc-agreement.png)
+    > [!NOTE]
+    > 구독 할당 전자 메일이 없는 경우 관리 포털 내에서 다시 보낼 수 있습니다.  
 
-4. **구독 할당**을 클릭합니다.
-5. 원하는 **구독 수준**을 선택합니다.
-6. 할당할 수 있는 구독이 있는지 확인하고 **다음**을 클릭합니다.
-7. [전자 메일 주소] 필드에 구독자 세부 정보 및 디렉터리 주소를 입력하고 **다음**을 클릭합니다.
-8. 구독자 정보를 확인하고 **마침**을 클릭합니다.
-9. 아래 [템플릿](#notifying-your-subscribers-with-directory-addresses)을 사용하여 해당 구독이 프로비전되었음을 구독자에게 알립니다.
+2. **구독** 탭을 클릭합니다.
+3. “로그인했습니다...”라고 표시된 오른쪽 상단의 전자 메일 주소가 구독 할당 전자 메일의 로그인 전자 메일 주소와 동일한지 확인합니다.  동일하지 않으면 구독 혜택에 액세스할 수 없게 됩니다. 
 
-### <a name="updating-an-existing-subscriber"></a>기존 구독자 업데이트
-아래 단계에 따라 디렉터리 계정으로 기존 구독자를 업데이트하세요.
+   > [!div class="mx-imgBorder"]
+   > ![구독 페이지](_img/aliasing/aliasing-subscriptions-page.png)
 
-1. VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/default.aspx))를 방문하여 로그인합니다.
-2. VLSC 관리 페이지에서 **구독**, **Visual Studio 구독**을 차례로 클릭합니다.
-3. Visual Studio 구독에 연결된 **계약 번호**를 클릭합니다.
-4. 검색 창에서 **아래쪽 화살표**를 클릭합니다.
-5. “전자 메일 주소” 필드를 사용하여 구독자를 검색합니다.
-6. 결과 목록에서 구독자의 **성**을 클릭합니다.
-7. **편집**을 클릭합니다.
-8. [전자 메일 주소] 필드를 원하는 디렉터리 주소로 변경하고 **저장**을 클릭합니다.
-9. 아래 전자 메일 템플릿을 사용하여 구독이 프로비전되었음을 구독자에게 알립니다.
+#### <a name="how-to-correct-the-upn-mismatch"></a>UPN 불일치를 해결하는 방법
 
-### <a name="notifying-your-subscribers-with-directory-addresses"></a>디렉터리 주소로 구독자에게 알림
-시작 전자 메일이 구독자에 성공적으로 도달하지 않으므로 아래 메시지를 복사하여 전자 메일에 붙여넣고 구독자에게 보냅니다. %WORD%를 각 구독자에 대한 적절한 정보로 바꿉니다.
+1. https://manage.visualstudio.com 의 Visual Studio 관리 관리 포털에 액세스 
 
-```
------------ Copy Below (Ctrl+C) -----------
+2. UPN 불일치 이슈가 있는 사용자를 찾습니다.  구독이 많은 경우 [필터](search-license.md) 기능을 사용하면 이 작업을 더욱 쉽게 수행할 수 있습니다. 
 
-Hello %SUBSCRIBER NAME%
+3. 로그인 전자 메일 주소를 사용자의 UPN으로 변경합니다.
 
-You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
+4. 변경 내용 저장 
 
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
+5. 사용자에게 구독자 포털에서 로그아웃하고 UPN을 사용하여 다시 로그인하도록 요청합니다.   
 
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
+### <a name="personal-account-aliasing-issue"></a>개인 계정 별칭 이슈
 
------------ End Copy -----------
-```
+별칭 이슈는 개인 계정에도 영향을 줄 수 있습니다. 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>회사 또는 학교 계정을 개인 계정으로 정의
-[디렉터리 계정에 구독자 할당](#assigning-subscribers-to-a-directory-account) 섹션에 설명된 지침을 활용하여 새 사용자를 추가하거나 VLSC(볼륨 라이선스 서비스 센터) 내에서 사용자의 전자 메일 주소를 업데이트하세요.  전자 메일 주소가 디렉터리에서 인식되지 않는 경우 사용자는 새 계정을 만들어 전자 메일 주소를 개인 계정으로 정의하는 프로세스 단계를 수행해야 합니다.  짧은 기간 동안 Visual Studio 구독 팀은 아래 정의된 ID 정책에서 예외를 확보했지만 이제 이 정책을 제거하는 데 필요한 기능에 투자하고 있습니다.
+#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>개인 계정에 별칭 이슈가 있는지 탐지하는 방법
 
-> [!WARNING]
-> Microsoft는 “회사 또는 학교” ID를 “개인” ID와 결합하는 것을 권장하지 않습니다.  이 작업으로 인해 조직은 계정의 소유권 및 제어를 상실하고 직원은 회사를 떠난 후에도 특정 제품 또는 서비스에 계속 액세스할 수 있습니다.  
+1. https://my.visualstudio.com 에 로그인합니다.
 
-### <a name="defining-an-email-address-as-a-personal-account"></a>이메일 주소를 개인 계정으로 정의
-구독자에게 구독이 할당된 후 구독 혜택을 활용하기 위해 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)을 방문하도록 요청하는 이메일이 제공됩니다.  로그인을 시도할 때 Visual Studio 구독 로그인에 실패하고 계정이 인식되지 않음을 나타내는 오류가 표시됩니다.  [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 환경에 로그인하기 전에 구독자에게 이러한 지침을 따르도록 요청하세요.  필요한 경우 구독을 할당한 후 이 [템플릿](#notifying-your-subscribers-using-personal-accounts)을 사용하여 구독자에게 알릴 수 있습니다.
+2. **구독** 탭을 클릭하고 로그인한 주소를 확인합니다. 
 
-1. [https://my.visualstudio.com](https://my.visualstudio.com ) 으로 이동하여 **새 Microsoft 계정 만들기**를 클릭합니다.
+3. 로그인한 전자 메일 주소가 웹 사이트에 액세스하는 데 사용된 전자 메일 주소와 동일하지 않으면 계정과 별칭이 충돌합니다. 
 
-2. 필드를 완료합니다.
-   - Someone@example.com 상자에 시작 전자 메일을 받은 전자 메일 주소를 입력합니다.
-   - 암호를 만듭니다.
-   - 프로모션 설정을 선택합니다.
-   - **다음**을 클릭합니다.
+#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>개인 계정 별칭 이슈를 해결하는 방법
 
-3. 유효성 검사 단계를 완료하고 **다음**을 클릭합니다.
+Visual Studio 구독 플랫폼은 기본 별칭의 우선 순위를 지정하여 구독 세부 정보를 표시합니다.  이 이슈를 해결하려면 로그인 시 다른 전자 메일 별칭을 기본 별칭으로 설정해야 합니다. 
 
-4. 새 사용자가 Visual Studio 프로필을 완료해야 할 수 있습니다.
+1. [Microsoft에 로그인하는 방법 관리](https://go.microsoft.com/fwlink/p/?linkid=842796)로 이동합니다.
+2. 메시지가 표시되면 Microsoft 계정에 로그인합니다. 
+3. 계정 별칭에서 구독을 할당하는 데 사용된 전자 메일 주소 옆에 있는 **기본 별칭으로 지정**을 선택합니다. 
+4. 계정 별칭에서 구독을 할당하는 데 사용된 전자 메일 주소 옆에 있는 기본 별칭으로 지정을 선택합니다. 
+5. Visual Studio 구독자 포털(https://my.visualstudio.com) 로그아웃 
+6. 새 기본 별칭을 사용하여 포털에 다시 액세스합니다. 
 
-5. 이제 구독 및 혜택이 표시됩니다.
+### <a name="ensure-a-successful-experience-for-your-users"></a>사용자에게 성공적인 환경 보장
 
-### <a name="notifying-your-subscribers-using-personal-accounts"></a>개인 계정을 사용하여 구독자에게 알림
-위에 설명된 시나리오에서 구독자는 “시작 전자 메일”을 받지만 별칭 지정으로 인해 로그인할 수 없습니다.  아래 텍스트를 사용하여 위 단계에 대해 구독자에게 알리고 필요한 경우 지원 옵션을 권장할 수 있습니다.  %WORD%를 각 구독자에 대한 적절한 정보로 바꿉니다.
+관리자는 구독자가 https://my.visualstudio.com 에 성공적으로 로그인했는지 확인하는 두 가지 옵션이 있습니다. 
 
-```
------------ Copy Below (Ctrl+C) -----------
+- 첫 번째 옵션(권장)은 https://manage.visualstudio.com 의 로그인 주소로 디렉터리 계정을 사용하는 것입니다.
+- 덜 안전한 두 번째 옵션은 구독자가 디렉터리 전자 메일 주소와 다른 전자 메일 주소를 사용하여 로그인할 수 있도록 하는 것입니다.
 
-Hello %SUBSCRIBER NAME%
+두 옵션은 모두 다음 단계를 완료하여 관리 포털에서 구성됩니다.
 
-You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
-1. Visit https://my.visualstudio.com
+1. https://manage.visualstudio.com 에 로그인 
 
-2. Click Create new Microsoft Account on the right hand side
+2. 단일 사용자를 변경하는 경우 테이블에서 해당 사용자를 선택하고 마우스 오른쪽 단추를 클릭하여 편집합니다. 그러면 로그인 전자 메일 주소를 수정할 수 있는 패널이 열립니다.  
 
-3. Complete the Form:
-   - Use your corporate email address in the someone@example.com box
-   - Enter a password
-   - Select your promotional preference
-   - Click Next
+3. 로그인 전자 메일 주소 필드에서 필요한 업데이트를 수행합니다. 
 
-4. Complete the account validation steps
+4. 저장을 클릭하면 변경 내용이 적용됩니다.  
+대규모 사용자에게 해당 변경을 수행해야 하는 경우 일괄 편집 기능을 사용하면 됩니다. 해당 프로세스에 대한 자세한 내용은 [구독 편집](edit-license.md) 문서의 **일괄 편집을 사용하여 여러 구독자 편집** 섹션을 참조하세요.  
 
-5. If necessary, complete the Visual Studio profile
+## <a name="next-steps"></a>다음 단계
+Visual Studio 구독 관리에 대해 자세히 알아보세요.
+- [개별 구독 할당](assign-license.md)
+- [여러 구독 할당](assign-license-bulk.md)
+- [구독 편집](edit-license.md)
+- [구독 삭제](delete-license.md)
+- [최대 사용량 확인](maximum-usage.md)
 
-6. You should now see your benefits
-
-Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
-
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
-
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
-
------------ End Copy -----------
-```
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
