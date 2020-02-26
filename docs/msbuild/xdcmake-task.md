@@ -14,17 +14,17 @@ helpviewer_keywords:
 - XDCMake task (MSBuild (C++))
 - MSBuild (C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1ae0fbbcdb36c13a8c0ee91011f2b7d6fba9f5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747155"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578125"
 ---
 # <a name="xdcmake-task"></a>XDCMake 작업
 XML 문서 주석( *.xdc*) 파일을 *.xml* 파일에 병합하는 XML 문서 도구(*xdcmake.exe*)를 래핑합니다.
@@ -49,5 +49,5 @@ XML 문서 주석( *.xdc*) 파일을 *.xml* 파일에 병합하는 XML 문서 �
 |**SuppressStartupBanner**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.<br /><br /> 자세한 내용은 [XDCMake 참조](/cpp/build/reference/xdcmake-reference)의 **/nologo** 옵션을 참조하세요.|
 |**TrackerLogDirectory**|선택적 **문자열** 매개 변수입니다.<br /><br /> 추적기 로그용 디렉터리를 지정합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)

@@ -1,7 +1,7 @@
 ---
 title: 완전 초보자를 위한 코드 디버깅
 description: 처음으로 디버깅하는 경우 Visual Studio를 사용하여 디버깅 모드에서 앱을 실행하는 데 도움이 되는 몇 가지 원칙을 알아봅니다.
-ms.date: 07/06/2018
+ms.date: 02/14/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5cfe112aff36910ca4b4861d3a65cc7ea61655
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679379"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416398"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
@@ -64,9 +64,9 @@ ms.locfileid: "65679379"
 
 *디버깅 모드*라고도 하는 디버거 내의 앱 실행은 디버거가 프로그램이 실행될 때 발생하는 모든 것을 적극적으로 모니터링하는 것을 의미합니다. 또한 해당 상태를 검사하기 위해 언제든지 앱을 일시 중지한 다음, 코드를 줄 단위로 단계별로 실행하여 발생하는 모든 세부 사항을 살펴볼 수 있습니다.
 
-Visual Studio에서 디버그 도구 모음의 **F5**(또는 **디버그** > **디버깅 시작** 메뉴 명령 또는 **디버깅 시작**  단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")를 사용하여 디버깅 모드로 전환합니다). 예외가 발생하는 경우 Visual Studio의 예외 도우미는 예외가 발생한 정확한 지점으로 안내하고 기타 유용한 정보를 제공합니다. 코드의 예외를 처리하는 방법에 대한 자세한 내용은 [디버깅 기법 및 도구](../debugger/write-better-code-with-visual-studio.md)를 참조하세요.
+Visual Studio에서 디버그 도구 모음의 **F5**(또는 **디버그** > **디버깅 시작** 메뉴 명령 또는 **디버깅 시작**  단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작"))를 사용하여 디버깅 모드로 전환합니다. 예외가 발생하는 경우 Visual Studio의 예외 도우미는 예외가 발생한 정확한 지점으로 안내하고 기타 유용한 정보를 제공합니다. 코드의 예외를 처리하는 방법에 대한 자세한 내용은 [디버깅 기법 및 도구](../debugger/write-better-code-with-visual-studio.md)를 참조하세요.
 
-예외가 발생하지 않은 경우 코드에서 문제를 찾을 수 있는 위치를 알고 있을 것입니다. 이는 코드를 더 신중하게 검사하는 기회를 제공하도록 디버거와 함께 ‘중단점’을 사용하는 위치입니다.  중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드가 실행되는 시퀀스를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
+예외가 발생하지 않은 경우 코드에서 문제를 찾을 수 있는 위치를 알고 있을 것입니다. 이는 코드를 더 신중하게 검사하는 기회를 제공하도록 디버거와 함께 ‘중단점’을 사용하는 위치입니다.  중단점은 신뢰할 수 있는 디버깅의 가장 기본적이고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드가 실행되는 시퀀스를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
 Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을 신속하게 설정할 수 있습니다. 또는 줄에 커서를 놓고 **F9** 키를 누릅니다.
 
@@ -85,13 +85,13 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 1. Visual Studio를 엽니다.
 
     ::: moniker range=">=vs-2019"
-    시작 창에서 **새 프로젝트 만들기**를 선택합니다. 검색 창에 **콘솔**을 입력한 다음, **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 을 선택합니다. **다음**을 선택합니다. **ConsoleApp-FirstApp**과 같은 프로젝트 이름을 입력하고 **만들기**를 클릭합니다.
+    시작 창에서 **새 프로젝트 만들기**를 선택합니다. 검색 창에 **콘솔**을 입력한 다음, **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **다음**을 선택합니다. **ConsoleApp-FirstApp**과 같은 프로젝트 이름을 입력하고 **만들기**를 클릭합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
     메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 을 선택합니다. **ConsoleApp-FirstApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
     ::: moniker-end
 
-    **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기**로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 워크로드 또는 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+    **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기**로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
     Visual Studio에서 콘솔 프로젝트를 만들고 오른쪽 창의 솔루션 탐색기에 나타납니다.
 

@@ -5,17 +5,17 @@ ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589970"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579355"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5단계: 양식에 컨트롤 추가
 

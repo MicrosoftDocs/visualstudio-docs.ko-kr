@@ -20,17 +20,17 @@ helpviewer_keywords:
 - MSBuild (C++), LIB task
 - LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748090"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578533"
 ---
 # <a name="lib-task"></a>LIB 작업
 Microsoft 32비트 라이브러리 관리자 도구인 *lib.exe*를 래핑합니다. 라이브러리 관리자는 COFF(공용 개체 파일 형식) 개체 파일의 라이브러리를 만들고 관리합니다. 또한 라이브러리 관리자를 사용하여 내보내기 파일을 만들고 내보낸 정의를 참조하는 라이브러리를 가져올 수 있습니다. 자세한 내용은 [LIB 참조](/cpp/build/reference/lib-reference) 및 [LIB 실행](/cpp/build/reference/running-lib)을 참조하세요.
@@ -65,5 +65,5 @@ Microsoft 32비트 라이브러리 관리자 도구인 *lib.exe*를 래핑합니
 |**UseUnicodeResponseFiles**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 프로젝트 시스템에 라이브러리가 생성할 때 UNICODE 응답 파일을 생성하도록 지시합니다. 프로젝트의 파일이 유니코드 경로를 갖고 있으면 `true`를 지정합니다.|
 |**Verbose**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 세션 진행에 대한 자세한 정보를 표시하며 추가하려는 *.obj* 파일의 이름이 포함됩니다. 이 정보는 표준 출력으로 보내지며 파일로 리디렉션될 수 있습니다.<br /><br /> 자세한 내용은 [LIB 실행](/cpp/build/reference/running-lib)의 **/VERBOSE** 옵션을 참조하세요.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)

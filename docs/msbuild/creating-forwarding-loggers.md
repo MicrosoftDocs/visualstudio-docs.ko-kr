@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63e71a3c904c6dad21f54269e336acd4291e7a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76dd68749fc38a53daa91269ecebfdb4c53b706e
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778188"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578787"
 ---
 # <a name="create-forwarding-loggers"></a>전달 로거 만들기
 전달 로거는 다중 프로세서 시스템에서 프로젝트를 빌드할 때 모니터링하려는 이벤트를 선택할 수 있도록 하여 로깅 효율성을 개선합니다. 전달 로거를 사용하여 원하지 않는 이벤트가 중앙 로거를 가득 채우고, 빌드 시간이 느려지고, 로그를 어지럽히지 않도록 방지할 수 있습니다.
@@ -38,7 +38,7 @@ ms.locfileid: "62778188"
 ## <a name="multi-processor-aware-loggers"></a>다중 프로세서 인식 로거
  다중 프로세서 시스템에서 프로젝트를 빌드할 때 각 프로세서의 빌드 메시지가 통합 시퀀스에서 자동으로 인터리브되지 않습니다. 대신 모든 메시지에 연결된 <xref:Microsoft.Build.Framework.BuildEventContext> 클래스를 사용하여 메시지 그룹화 우선 순위를 설정해야 합니다. 다중 프로세서 빌드에 대한 자세한 내용은 [다중 프로세서 환경의 로깅](../msbuild/logging-in-a-multi-processor-environment.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [빌드 로거](../msbuild/build-loggers.md)
 - [다중 프로세서 환경에서의 로그인](../msbuild/logging-in-a-multi-processor-environment.md)

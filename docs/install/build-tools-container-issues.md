@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a43c5dd9bec88ca7e972b4d681bc25c47a86bf0d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115207"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453384"
 ---
 # <a name="known-issues-for-containers"></a>컨테이너에 대한 알려진 문제
 
@@ -54,7 +54,11 @@ Visual Studio를 Docker 컨테이너에 설치하는 데 몇 가지 문제가 �
 
 * IntelliTrace는 컨테이너 내의 [일부 시나리오](https://github.com/Microsoft/vstest/issues/940)에서 작동하지 않을 수 있습니다.
 * 이전 버전의 Windows용 Docker에서는 기본 컨테이너 이미지가 20GB 뿐이므로 빌드 도구에 맞지 않습니다. [이미지 크기 변경 지침](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits)에 따라 127GB 이상으로 확장하세요.
-
+디스크 공간 문제를 확인하려면 로그 파일에서 자세한 내용을 확인하세요. 디스크 공간이 부족한 경우 `vslogs\dd_setup_<timestamp>_errors.log` 파일에 다음이 포함됩니다. 
+```
+Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
+Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
+```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참조

@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c35c0eccc4c6a4972774219dc07b606b72243c
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776018"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579373"
 ---
 # <a name="step-8-customize-the-quiz"></a>8단계: 퀴즈 사용자 지정
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, SignFile task
 - SignFile task [MSBuild]
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496017f386e731e553bfce237bd1d2eabea46f49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 397366a7dac601cd11dc1c70efc352edf303a92e
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976447"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579572"
 ---
 # <a name="signfile-task"></a>SignFile 작업
 
@@ -45,7 +45,7 @@ ms.locfileid: "62976447"
 |`TimestampUrl`|선택적 `String` 매개 변수입니다.<br /><br /> 타임스탬프 서버의 URL을 지정합니다.|
 |`TargetFrameworkVersion`|대상에 대해 사용되는 .NET Framework 버전입니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.
 
@@ -73,6 +73,6 @@ ms.locfileid: "62976447"
 > [!NOTE]
 > 인증서 지문은 인증서의 SHA-1 해시입니다. 자세한 내용은 [신뢰할 수 있는 루트 CA 인증서의 SHA-1 해시 얻기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))를 참조하세요. 인증서 세부 정보에서 지문을 복사하여 붙여넣는 경우 추가(3F) 보이지 않는 문자를 포함하지 마세요. 이로 인해 `SignFile`이 인증서를 찾지 못할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

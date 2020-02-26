@@ -12,20 +12,20 @@ helpviewer_keywords:
 - ResourcesGenerator task [WPF MSBuild]
 - ResourcesGenerator task [WPF MSBuild], parameters
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef54bdc3b3c692869b4883cf4f92293551a1958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996767"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579607"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 작업
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스(*.jpg*, *.ico*, *.bmp*, 이진 형식의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스( *.jpg*, *.ico*, *.bmp*, 이진 형식의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
@@ -52,7 +52,7 @@ ms.locfileid: "62996767"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)
 - [작업 참조](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

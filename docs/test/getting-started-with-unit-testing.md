@@ -1,6 +1,6 @@
 ---
 title: 유닛 테스트 시작
-ms.date: 04/01/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596478"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279322"
 ---
 # <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
@@ -26,16 +26,18 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
 1. Visual Studio에서 테스트할 프로젝트를 엽니다.
 
-   예제 단위 테스트를 보여 주기 위해 이 문서에서는 간단한 “Hello World” 프로젝트를 테스트합니다. 이러한 프로젝트의 샘플 코드는 다음과 같습니다.
+   예제 단위 테스트를 보여 주기 위해 이 문서에서는 **HelloWorldCore**라는 간단한 “Hello World” 프로젝트를 테스트합니다. 이러한 프로젝트의 샘플 코드는 다음과 같습니다.
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. **솔루션 탐색기**에서 솔루션 노드를 선택합니다. 그런 다음, 상단 메뉴 모음에서 **파일** > **추가** > **새 프로젝트**를 선택합니다.
@@ -70,14 +72,48 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
 1. 단위 테스트 메서드에 코드를 추가합니다.
 
-   ![Visual Studio에서 단위 테스트 메서드에 코드 추가](media/vs-2019/unit-test-method.png)
+   예를 들어 MSTest 또는 NUnit 테스트 프로젝트의 경우 다음 코드를 사용할 수 있습니다.
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
 > 단위 테스트 만들기에 대한 자세한 연습은 [관리 코드에 대한 단위 테스트 만들기 및 실행](walkthrough-creating-and-running-unit-tests-for-managed-code.md)를 참조하세요.
 
 ## <a name="run-unit-tests"></a>단위 테스트 실행
 
-1. 상단 메뉴 모음에서 **테스트** > **Windows** > **테스트 탐색기**를 선택하여 [테스트 탐색기](../test/run-unit-tests-with-test-explorer.md)를 엽니다.
+1. [테스트 탐색기](../test/run-unit-tests-with-test-explorer.md)를 엽니다.
+
+   ::: moniker range=">=vs-2019"
+   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **테스트 탐색기**를 선택합니다.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **Windows** > **테스트 탐색기**를 선택합니다.
+   ::: moniker-end
 
 1. **모두 실행**을 클릭하여 단위 테스트를 실행합니다.
 

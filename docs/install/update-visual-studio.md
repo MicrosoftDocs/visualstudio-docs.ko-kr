@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115082"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453397"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio를 최신 릴리스 버전으로 업데이트
 
@@ -166,7 +166,7 @@ Visual Studio는 Visual Studio 자체나 구성 요소에 사용 가능한 업�
 
 항상 최신 기능, 수정 사항 및 개선 사항을 사용할 수 있도록 Visual Studio 2019의 [최신 릴리스](/visualstudio/releases/2019/release-notes/)로 업데이트하는 것이 좋습니다.
 
-Visual Studio 2019를 아직 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다. 현재 다른 버전의 Visual Studio를 사용 중인 경우 [Visual Studio 버전을 나란히 설치](../install/install-visual-studio-versions-side-by-side.md)하거나 [이전 버전의 Visual Studio를 제거](../install/uninstall-visual-studio.md)할 수 있습니다.
 
 > [!IMPORTANT]
 > Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.

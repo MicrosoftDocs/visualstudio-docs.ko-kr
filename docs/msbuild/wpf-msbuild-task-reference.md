@@ -13,17 +13,17 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778328"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578182"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 작업 참조
 WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일하고 리소스를 처리하는 작업 등을 포함한 추가적인 빌드 작업 집합을 사용하여 Microsoft Build Engine(MSBuild)을 확장합니다.
@@ -55,7 +55,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 하나 이상의 리소스(*.jpg*, *.ico*, *.bmp*, 이진 형식의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
+ 하나 이상의 리소스( *.jpg*, *.ico*, *.bmp*, 이진 형식의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -63,7 +63,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 프로젝트를 빌드할 때 애플리케이션 매니페스트(*\<projectname.exe.manifest*)에 **\<hostInBrowser /&gt;** 요소를 추가하기 위해 실행합니다.
+ [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 프로젝트를 빌드할 때 애플리케이션 매니페스트( *\<projectname.exe.manifest*)에 **\<hostInBrowser /&gt;** 요소를 추가하기 위해 실행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild](../msbuild/msbuild.md)

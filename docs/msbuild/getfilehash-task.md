@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - GetFileHash task [MSBuild]
 - MSBuild, GetFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977505"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578656"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 작업
 
@@ -63,7 +63,7 @@ ms.locfileid: "62977505"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 

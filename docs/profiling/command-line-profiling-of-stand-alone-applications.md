@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c5fd11f12f368c266dd19577925db7cec1867e39
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74779560"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557859"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>독립 실행형 애플리케이션의 명령줄 프로파일링
 이 섹션에서는 명령줄에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 독립 실행형(클라이언트) 애플리케이션의 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.
@@ -31,7 +31,6 @@ ms.locfileid: "74779560"
 | **.NET 메모리 데이터 수집:** 샘플링 또는 계측을 사용하여 할당된 개체의 크기 및 개수를 보여주는 .NET 메모리 할당 데이터를 수집합니다. 또한 각 가비지 수집 세대에서 회수된 개체의 크기 및 수를 보여 주는 개체 수명 데이터를 수집할 수 있습니다. | -   [.NET Framework 메모리 데이터 수집](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md) |
 | **동시성 데이터 수집:** 동시성 방법을 사용하여 CPU 사용률, 스레드 경합, 스레드 마이그레이션, 동기화 지연, 겹친 I/O 영역 및 기타 시스템 이벤트를 보여주는 리소스 경합 데이터 및 스레드 작업 데이터를 수집할 수 있습니다. | -   [동시성 데이터 수집](../profiling/collecting-concurrency-data-for-stand-alone-applications.md) |
 | **계층 상호 작용 데이터 추가:** 애플리케이션에서 Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] 데이터베이스에 실행하는 동기 ADO.NET 호출에 대한 성능 데이터를 추가할 수 있습니다. 프로파일링 실행에 계층 상호 작용 데이터를 추가하려면 명령줄 프로파일링 도구를 사용해서 특정 절차를 수행해야 합니다. | -   [계층 상호 작용 데이터 수집](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
-| **사용해 보기:** 단계별 절차에 따라 샘플링 또는 계측 방법을 사용하여 샘플 클라이언트 애플리케이션을 프로파일링합니다. | -   [연습: 샘플링을 사용하여 명령줄 프로파일링](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [연습: 계측을 사용하여 명령줄 프로파일링](command-line-profiling-of-stand-alone-applications.md) |
 
 ## <a name="related-tasks"></a>관련 작업
 

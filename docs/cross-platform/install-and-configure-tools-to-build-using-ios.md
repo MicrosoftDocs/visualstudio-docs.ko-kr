@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 37ef83cc968276fb29ae5380544ee9c27ffd485d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846899"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272285"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS를 사용하여 빌드할 도구 설치 및 구성
 
@@ -62,9 +62,9 @@ iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Ma
 
    수동 서명을 수행하려면 앱에 대한 프로비저닝 프로필을 만들어야 합니다. 프로비저닝 프로필을 만드는 방법에 대한 자세한 내용은 [개발 프로비저닝 프로필 만들기](https://help.apple.com/developer-account/#/devf2eb157f8)를 참조하세요. 
 
-- [Node.js](https://nodejs.org/) 버전 8.11.3 및 npm 버전 5.6.0
+- [Node.js](https://nodejs.org/) 버전 12.14.1 및 npm 버전 6.13.4
 
-   Mac에 Node.js 버전 8.11.3을 설치합니다. Node.js 패키지를 설치하는 경우 npm 버전 5.6.0과 함께 제공되어야 합니다. 다른 버전의 Node.js 및 npm은 원격 에이전트 `vcremote`에 사용된 일부 모듈을 지원하지 않을 수 있으므로 `vcremote` 설치가 실패할 수 있습니다.
+   Mac에 Node.js 버전 12.14.1을 설치합니다. Node.js 패키지를 설치하는 경우 npm 버전 6.13.4와 함께 제공되어야 합니다. 다른 버전의 Node.js 및 npm은 원격 에이전트 `vcremote`에 사용된 일부 모듈을 지원하지 않을 수 있으므로 `vcremote` 설치가 실패할 수 있습니다. [노드 버전 관리자](https://nodejs.org/en/download/package-manager/#nvm)와 같은 패키지 관리자를 사용하여 Node.js를 설치하는 것이 좋습니다. `sudo`를 사용하는 경우 일부 모듈을 설치하지 못할 수 있으므로 `sudo` 명령을 사용하여 Node.js를 설치하지 마세요.
 
 ## <a name="Install"></a> iOS용 원격 에이전트 설치
 
@@ -74,11 +74,17 @@ C++를 사용한 모바일 개발 워크로드를 설치하면 Visual Studio는 
 
 ### <a name="DownloadInstall"></a> 원격 에이전트를 다운로드하여 설치하려면
 
-- Mac의 터미널 앱에서 다음 명령을 입력합니다.
+- Mac의 터미널 앱에서 현재 사용 중인 Node.js 버전이 필요한 12.14.1 버전인지 확인합니다. 버전을 확인하려면 다음 명령을 실행합니다.
 
-   `sudo npm install -g --unsafe-perm vcremote`
+  `node -v`
+  
+  올바른 버전이 아닌 경우 필수 조건에서 Node.js 설치 지침을 따라야 할 수 있습니다. 그런 다음, Node.js를 다시 시작합니다.
 
-   전역 설치( **-g**) 스위치는 사용하는 것이 좋지만 반드시 사용할 필요는 없습니다.
+- 필요한 Node.js를 사용 중인지 확인한 후 이 명령을 실행하여 해당 Node.js 버전에서 vcremote를 설치합니다.
+
+   `npm install -g --unsafe-perm vcremote`
+
+   전역 설치( **-g**) 스위치는 사용하는 것이 좋지만 반드시 사용할 필요는 없습니다. 전역 설치 스위치를 사용하지 않는 경우 vcremote는 터미널 앱의 현재 활성 경로 아래에 설치됩니다.
 
    설치하는 동안 `vcremote`가 설치되고 Mac에서 개발자 모드가 활성화됩니다. [Homebrew](https://brew.sh/)와 두 개의 npm 패키지(`vcremote-lib` 및 `vcremote-utils`)도 설치됩니다. 설치가 완료되면 건너뛴 선택적 종속성에 대한 경고를 무시해도 안전합니다.
 

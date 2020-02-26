@@ -10,19 +10,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
-ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70977460"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580094"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>자습서: Visual Studio 2019와 함께 Entity Framework를 사용하여 첫 번째 ASP.NET Core 앱 만들기
 
@@ -98,6 +98,6 @@ Visual Studio를 여러 종류의 개발에 사용할 수 있으며, 워크로�
 
 [자습서: 첫 번째 ASP.NET Core 웹앱 만들기](tutorial-aspnet-core-ef-step-02.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [자습서: C# 및 ASP.NET Core 시작](tutorial-aspnet-core.md) 동영상 연습이 없는 더 자세한 자습서

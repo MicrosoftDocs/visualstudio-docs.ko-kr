@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910353"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578338"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>디버거 없이 메모리 사용량 분석
 
 **메모리 사용량** 도구는 앱의 메모리 사용량을 모니터링합니다. 이 도구를 사용하여 Visual Studio에서 활발하게 개발 중인 시나리오의 실시간 메모리 효과를 학습할 수 있습니다. 앱의 메모리 상태에 대한 자세한 스냅샷을 만들고 스냅샷을 비교하여 메모리 문제의 근본 원인을 찾을 수 있습니다.
 
 **메모리 사용량** 도구는 디버거를 사용하거나 사용하지 않고 실행할 수 있습니다. 다음 지침은 Visual Studio **성능 프로파일러**에서 디버거 없이 **메모리 사용량** 도구를 사용하는 방법을 보여줍니다.
-
->[!NOTE]
->- .NET Core 앱의 메모리 사용량을 측정하려면 디버거와 함께 **메모리 사용량** 도구를 사용해야 합니다. 자세한 내용은 [Visual Studio에서 프로필 메모리 사용량](memory-usage.md)을 참조하세요.
->- JavaScript 또는 HTML UWP 앱에서 메모리 사용을 분석하려면 **성능 프로파일러**의 [JavaScript 메모리](../profiling/javascript-memory.md) 도구를 사용합니다.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>메모리 사용량 진단 세션
 
@@ -111,9 +107,9 @@ ms.locfileid: "72910353"
 
 - <a name="BKMK_Filter"></a> 형식 이름별로 트리를 필터링하려면 **필터** 상자에 이름을 입력합니다. 필터는 대/소문자를 구분하지 않고 형식 이름의 모든 부분에서 지정한 문자열을 인식합니다.
 
-- <a name="BKMK_Collapse_Small_Objects"></a> **필터** 드롭다운에서 **작은 개체 축소**를 선택하여 **크기(바이트)** 가 총 메모리의 0.5% 미만인 유형을 숨깁니다.
+- <a name="BKMK_Collapse_Small_Objects"></a>**필터** 드롭다운에서 **작은 개체 축소**를 선택하여 **크기(바이트)** 가 총 메모리의 0.5% 미만인 유형을 숨깁니다.
 
-- <a name="BKMK_Just_My_Code"></a> **필터** 드롭다운에서 **내 코드만** 필터를 선택하면 외부 코드로 생성된 대부분의 인스턴스를 숨깁니다. 외부 유형은 운영 체제 또는 프레임워크 구성 요소에 속하거나 컴파일러에서 생성합니다.
+- <a name="BKMK_Just_My_Code"></a>**필터** 드롭다운에서 **내 코드만** 필터를 선택하면 외부 코드로 생성된 대부분의 인스턴스를 숨깁니다. 외부 유형은 운영 체제 또는 프레임워크 구성 요소에 속하거나 컴파일러에서 생성합니다.
 
 ## <a name="snapshot-details-reports"></a>스냅샷 정보 보고서
 
@@ -214,7 +210,7 @@ ms.locfileid: "72910353"
 |**포함 크기 차이(바이트)**|유형의 경우 개체의 개체 크기를 비롯한 기본 스냅샷과 이전 스냅샷 간 모든 인스턴스 유형의 크기 차이입니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [JavaScript 메모리](../profiling/javascript-memory.md)
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

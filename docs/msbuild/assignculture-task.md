@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 393077d6391a5c1f5f4088773013538efbedc9f7
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823291"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578703"
 ---
 # <a name="assignculture-task"></a>AssignCulture 작업
 이 작업은 유효한 .NET 문화권 식별자 문자열이 포함되어 있는 항목의 목록을 파일 이름의 일부로 허용하고 해당 문화권 식별자가 포함된 `Culture`라는 메타데이터가 있는 항목을 생성합니다. 예를 들어 *Form1.fr-fr.resx*라는 파일 이름에 포함된 문화권 식별자 “fr-fr”이 있으므로 이 작업은 `fr-fr`와 같은 `Culture` 메타데이터를 포함하는 동일한 파일 이름을 가진 항목을 생성합니다. 태스크는 파일 이름에서 제거된 문화권을 포함하는 파일 이름의 목록도 생성합니다.
@@ -39,7 +39,7 @@ ms.locfileid: "62823291"
 |`CultureNeutralAssignedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 파일 이름에서 제거된 문화권을 제외하고 `AssignedFiles` 매개 변수에서 생성되는 동일한 항목 목록이 포함됩니다.<br /><br /> 작업이 유효한 문화권 식별자인 경우에만 파일 이름에서 문화권을 제거합니다.|
 |`Files`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 문화권을 할당할 문화권 이름이 포함된 파일 목록을 지정합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
@@ -77,6 +77,6 @@ ms.locfileid: "62823291"
 |`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx*(추가 메타데이터 없음)|
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx*(Culture="fr")<br /><br /> *MyResource2.XX.resx*(추가 메타데이터 없음)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

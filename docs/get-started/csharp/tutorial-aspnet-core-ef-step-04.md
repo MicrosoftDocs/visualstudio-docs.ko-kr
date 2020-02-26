@@ -2,7 +2,7 @@
 title: '4단계: ASP.NET Core 앱에서 웹 API 표시'
 description: 이 동영상 자습서 및 단계별 지침을 사용하여 ASP.NET Core 웹앱에 웹 API를 추가합니다.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 02/13/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d3887c7cf665f9fd8d2789d460cc1a595e2bff
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553882"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271496"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>4단계: ASP.NET Core 앱에서 웹 API 표시
 
@@ -187,7 +187,7 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 
 ## <a name="adding-swagger"></a>Swagger 추가
 
-Swagger는 서비스 및 미들웨어 세트로 ASP.NET Core 앱에 추가할 수 있는 API 문서 및 테스트 도구입니다. Swagger를 추가하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다. **찾아보기**를 클릭하고, `Swashbuckle.AspNetCore`를 검색한 다음, 해당 패키지를 설치합니다.
+Swagger는 서비스 및 미들웨어 세트로 ASP.NET Core 앱에 추가할 수 있는 API 문서 및 테스트 도구입니다. Swagger를 추가하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다. 그런 다음, **찾아보기**를 클릭하고 `Swashbuckle.AspNetCore`를 검색하여 4.0.1 버전을 설치합니다.
 
 ![Visual Studio 2019 NuGet에서 Swashbuckle 추가](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
@@ -228,7 +228,7 @@ Games 아래에서 엔드포인트를 클릭한 다음, `Try it out` 및 `Execut
 
 [5단계: Azure에 ASP.NET Core 앱 배포](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Swashbuckle 및 ASP.NET Core 시작](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
 - [Swagger/OpenAPI를 사용한 ASP.NET Core 웹 API 도움말 페이지](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706993"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192418"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -60,13 +60,13 @@ ms.locfileid: "74706993"
 |          GitHub Enterprise가 포함된 Visual Studio Enterprise          | VL  |   6개월    | 예<sup>2</sup> |
 |         Visual Studio Professional(표준)          | VL, Azure, 일반 정품 |   3개월    | 예<sup>2</sup> |
 |         GitHub Enterprise가 포함된 Visual Studio Professional          | VL  |   3개월    | 예<sup>2</sup> |
-|              Visual Studio Test Professional(표준)              |    VL, 일반 정품     |   3개월    | 예<sup>2</sup>  |
-|                      MSDN 플랫폼(표준)                       |    VL, 일반 정품     |   3개월    | 예<sup>2</sup>  |
+|              Visual Studio Test Professional(표준)              |    VL, 일반 정품     |   사용할 수 없음    | 해당 없음  |
+|                      MSDN 플랫폼(표준)                       |    VL, 일반 정품     |   사용할 수 없음    | 해당 없음  |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) |       Azure       | 사용할 수 없음 |       해당 없음       |
 |             Visual Studio Enterprise(NFR<sup>1</sup>)              |      프로그램      | 사용할 수 없음 |       해당 없음       |
 ||
 
-<sup>1</sup> 포함:  NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Services, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), FTE, Imagine
+<sup>1</sup>  *포함:* NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Services, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), FTE, Imagine
 
 <sup>2</sup>  *선택된 Visual Studio 구독의 Pluralsight 혜택은 구독이 갱신되면 갱신됩니다. 예를 들어 매년 갱신되는 연간 구독이 있는 경우 매년 갱신할 때마다 혜택이 제공됩니다. 다년간 구독이 있는 경우 구독 기간 중에 한 번 Pluralsight 혜택이 제공됩니다.  다년간 구독을 갱신하면 갱신 후 혜택이 다시 제공됩니다.*
 

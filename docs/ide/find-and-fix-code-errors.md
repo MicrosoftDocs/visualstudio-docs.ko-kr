@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588618"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476864"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio에서 코드를 작동하게 하기
 
@@ -78,7 +78,7 @@ Visual Studio에는 입력한 C# 및 Visual Basic 코드를 검사하는 기본 
 
 ### <a name="c-code-analysis"></a>C++ 코드 분석
 
-C++ 코드를 분석하려면 [고정 코드 분석](../code-quality/quick-start-code-analysis-for-c-cpp.md)을 실행합니다. 성공적인 빌드를 방해하는 명백한 오류를 정리하고 나면 항상 이 분석을 실행하고 시간을 할애하여 생성되는 경고도 해결합니다. 몇 가지 코드 스타일 기법을 익히고 잠재적인 문제를 줄일 수 있습니다.
+C++ 코드를 분석하려면 [고정 코드 분석](/cpp/code-quality/quick-start-code-analysis-for-c-cpp)을 실행합니다. 성공적인 빌드를 방해하는 명백한 오류를 정리하고 나면 항상 이 분석을 실행하고 시간을 할애하여 생성되는 경고도 해결합니다. 몇 가지 코드 스타일 기법을 익히고 잠재적인 문제를 줄일 수 있습니다.
 
 **Alt**+**F11**(또는 최상위 메뉴에서 **분석** > **솔루션에서 코드 분석 실행** 선택)을 눌러 고정 코드 분석을 시작합니다.
 

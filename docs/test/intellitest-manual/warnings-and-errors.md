@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112533"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275442"
 ---
 # <a name="warnings-and-errors"></a>경고 및 오류
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112533"
 * **제약 조건 해결**
   * [솔루션을 구체화할 수 없음](#cannot-concretize-solution)
 
-* **도메인**
+* **도메인 또는 런타임**
   * [개체를 생성하는 데 도움이 필요](#help-construct)
   * [형식을 찾는 데 도움이 필요](#help-types)
   * [사용 가능한 형식 추측](#usable-type-guessed)
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxConditions** 옵션을 편집할 수 있습니다. 예:
+[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxConditions** 옵션을 편집할 수 있습니다. 예를 들어:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]

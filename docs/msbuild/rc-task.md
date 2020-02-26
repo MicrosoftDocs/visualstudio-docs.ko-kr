@@ -17,17 +17,17 @@ helpviewer_keywords:
 - RC task (MSBuild (C++))
 - MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a0b19487551e7f132ea921eacdbcdb051104f9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912050"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578488"
 ---
 # <a name="rc-task"></a>RC 작업
 Microsoft Windows 리소스 컴파일러 도구, *rc.exe*를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스( *.res*) 파일로 컴파일합니다. 자세한 내용은 [리소스 컴파일러](/windows/desktop/menurc/resource-compiler)를 참조하세요.
@@ -50,5 +50,5 @@ Microsoft Windows 리소스 컴파일러 도구, *rc.exe*를 래핑합니다. **
 |**TrackerLogDirectory**|선택적 **문자열** 매개 변수입니다.<br /><br /> 추적기 로그 디렉터리를 지정합니다.|
 |**UndefinePreprocessorDefinitions**|전처리기 기호의 정의를 해제합니다.<br /><br /> 자세한 내용은 [RC 사용(RC 명령줄)](/windows/win32/menurc/using-rc-the-rc-command-line-)에서 **/u** 옵션을 참조하세요. 이 표의 **PreprocessorDefinitions**도 참조하세요.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)

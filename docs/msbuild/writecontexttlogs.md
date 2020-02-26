@@ -10,17 +10,17 @@ apitype: COM
 helpviewer_keywords:
 - WriteContextTLogs
 ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 722d8c42786a7aaa2daae293b96f7926abcc90ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5c0793cc6d9f11cd1074c5cd0091687b154c069
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777846"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579464"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 현재 컨텍스트에 대한 로그 파일을 작성합니다.
@@ -46,5 +46,5 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ## <a name="requirements"></a>요구 사항
  **헤더:** *FileTracker.h*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [WriteAllTLogs](../msbuild/writealltlogs.md)

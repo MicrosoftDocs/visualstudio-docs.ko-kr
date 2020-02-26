@@ -2,17 +2,17 @@
 title: C++ DLL의 단위 테스트 작성
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926662"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279277"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio에서 C++ DLL에 대한 단위 테스트 작성
 
@@ -64,7 +64,7 @@ ms.locfileid: "68926662"
 
       ::: moniker range="vs-2017"
 
-      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 선택합니다.
+      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 차례로 선택합니다.
 
       ::: moniker-end
 
@@ -96,7 +96,7 @@ ms.locfileid: "68926662"
 
       ::: moniker range="vs-2017"
 
-      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 선택합니다.
+      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 차례로 선택합니다.
 
       ::: moniker-end
 
@@ -141,7 +141,7 @@ ms.locfileid: "68926662"
 
 1. 각 단위 테스트 코드 파일에서 테스트 중인 프로젝트의 헤더에 대해 `#include` 문을 추가합니다.
 
-2. 테스트 클래스와 메서드를 단위 테스트 코드 파일에 추가합니다. 예:
+2. 테스트 클래스와 메서드를 단위 테스트 코드 파일에 추가합니다. 예를 들어:
 
     ```cpp
     #include "stdafx.h"
@@ -169,7 +169,7 @@ ms.locfileid: "68926662"
 
 1. **테스트 탐색기**에서 **모두 실행**을 선택하거나 실행하려는 특정 테스트를 선택합니다. 테스트를 마우스 오른쪽 단추로 클릭하면 중단점을 사용하는 디버그 모드에서 실행 등, 다른 옵션이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)
 - [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)

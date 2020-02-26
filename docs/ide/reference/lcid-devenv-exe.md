@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595529"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557938"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -53,13 +53,18 @@ IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. �
 |--------------|----------|
 |및|2052|
 |옵션 대신,|1028|
+|체코어|1029|
 |영어|1033|
 |프랑스어|1036|
 |독일어|1031|
 |이탈리아어|1040|
 |일본어|1041|
 |한국어|1042|
+|폴란드어|1045|
+|포르투갈어(브라질)|1046|
+|러시아어|1049|
 |스페인어|3082|
+|터키어|1055
 
 ## <a name="example"></a>예제
 

@@ -2,7 +2,7 @@
 title: CPU 사용량 현황 데이터 분석(C#, Visual Basic)
 description: CPU 사용량 진단 도구를 사용하여 C# 및 Visual Basic에서 앱 성능 측정
 ms.custom: mvc
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 92287c052282553a33222deb548609101d839291
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128190"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278671"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>빠른 시작: Visual Studio에서 CPU 사용량 현황 데이터 분석(C#, Visual Basic)
 
@@ -29,15 +29,32 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-1. Visual Studio에서 **파일** > **새 프로젝트**를 선택합니다.
+1. Visual Studio를 열고 프로젝트를 만듭니다.
 
-2. **Visual C#** 또는 **Visual Basic** 아래에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다.
+   ::: moniker range="vs-2017"
+   상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-    **콘솔 앱** 템플릿 프로젝트가 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+   **새 프로젝트** 대화 상자의 왼쪽 창에서 **C#** 또는 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음, 프로젝트 이름을 *MyProfilerApp*으로 지정합니다.
 
-3. **MyProfilerApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+   **콘솔 앱(.NET Core)** 템플릿 프로젝트가 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   시작 창이 열려 있지 않으면 **파일** > **시작 창**을 선택합니다.
 
-    Visual Studio가 프로젝트를 만듭니다.
+   시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+
+   **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔*을 입력합니다. 그런 다음, 언어 목록에서 **C#** 또는 **Visual Basic**을 선택한 후 플랫폼 목록에서 **Windows**를 선택합니다.
+
+   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음**을 선택합니다.
+
+   > [!NOTE]
+   > **콘솔 앱(.NET Core)** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다. 그런 다음, Visual Studio 설치 관리자에서 **.NET Core 플랫폼 간 개발** 워크로드를 선택합니다.
+
+   **새 프로젝트 구성** 창의 **프로젝트 이름** 상자에 *MyProfilerApp*을 입력합니다. 그런 다음, **만들기**를 선택합니다.
+
+   ::: moniker-end
+
+   Visual Studio에서 새 프로젝트를 엽니다.
 
 2. *Program.cs*를 열고 모든 코드를 다음 코드로 바꿉니다.
 
@@ -174,7 +191,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
 2. 다음으로 `Main` 함수 끝의 닫는 중괄호에서 두 번째 중단점을 설정합니다.
 
-     ![프로파일링용 중단점 설정](../profiling/media/quickstart-cpu-usage-breakpoints.png "프로파일링용 중단점 설정")
+     ![프로파일링을 위한 중단점 설정](../profiling/media/quickstart-cpu-usage-breakpoints.png "프로파일링을 위한 중단점 설정")
 
     > [!TIP]
     > 두 개의 중단점을 설정하여, 분석하려는 코드 부분으로 데이터 수집을 제한할 수 있습니다.
@@ -187,7 +204,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
 5. 디버거가 일시 중지되면 **CPU 프로필 기록**을 선택한 다음 **CPU 사용량** 탭을 열어 CPU 사용량 데이터 수집을 사용하도록 설정합니다.
 
-     ![진단 도구에서 CPU 프로파일링을 사용하도록 설정](../profiling/media/quickstart-cpu-usage-summary.png "진단 도구에서 CPU 프로파일링을 사용하도록 설정")
+     ![진단 도구에서 CPU 프로파일을 사용하도록 설정](../profiling/media/quickstart-cpu-usage-summary.png "진단 도구에서 CPU 프로파일을 사용하도록 설정")
 
      데이터 수집을 사용하는 경우 기록 단추에 빨간색 원이 표시됩니다.
 
@@ -218,7 +235,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
     함수를 두 번 클릭하면 **호출자/호출 수신자** 뷰가 왼쪽 창에 열립니다.
 
-    ![진단 도구 호출자 호출 수신자 뷰](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
+    ![진단 도구 호출자/호출 수신자 뷰](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
     이 뷰에서는 선택한 함수가 제목 및 **현재 함수** 상자에 표시됩니다(이 예제의 경우 `GetNumber`). 현재 함수를 호출한 함수는 **호출 함수** 아래 왼쪽에 표시되고, 현재 함수에 의해 호출된 함수는 오른쪽의 **호출된 함수** 상자에 표시됩니다. 두 상자 중 하나를 선택하여 현재 함수를 변경할 수 있습니다.
 
@@ -235,7 +252,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 - [CPU 사용량 분석](../profiling/cpu-usage.md)은 CPU 사용량 도구에 대한 더 상세한 정보를 제공합니다.
 - 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석합니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

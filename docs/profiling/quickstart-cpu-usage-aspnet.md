@@ -1,8 +1,8 @@
 ---
-title: CPU 사용량 데이터 분석(ASP.NET)
-description: CPU 사용량 진단 도구를 사용하여 ASP.NET 앱에서 앱 성능 측정
+title: CPU 사용량 데이터 분석(ASP.NET Core)
+description: CPU 사용량 진단 도구를 사용하여 ASP.NET Core 앱에서 앱 성능 측정
 ms.custom: mvc
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 367d789513e8ac220566cb4e451bcea015ec5a2a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128168"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275074"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터(ASP.NET) 분석
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(ASP.NET Core)
 
 Visual Studio는 애플리케이션에서 성능 문제를 분석할 수 있도록 여러 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다. 여기에서는 높은 CPU 사용량으로 인한 성능 병목 상태를 식별하는 도구를 살펴봅니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
 
@@ -29,17 +29,37 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-1. Visual Studio에서 **파일** > **새 프로젝트**를 선택합니다.
+1. Visual Studio를 열고 프로젝트를 만듭니다.
 
-1. **Visual C#** 에서 **웹**을 선택한 다음 가운데 창에서 **ASP.NET 웹 애플리케이션(.NET Framework)** 을 선택합니다.
+   ::: moniker range="vs-2017"
+   상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-    **ASP.NET 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
+   **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장한 다음, **웹**을 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션(.NET Core)** 을 선택합니다. 그런 다음, 프로젝트 이름을 *MyProfilingApp_MVC*로 지정합니다.
 
-1. **MyProfilingApp_MVC** 같은 이름을 입력하고 **확인**을 클릭합니다.
+   > [!NOTE]
+   > **ASP.NET 웹 애플리케이션(.NET Core)** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
-1. 표시되는 대화 상자의 가운데 창에서 **MVC**를 선택한 다음 **확인**을 클릭합니다.
+   표시되는 대화 상자의 가운데 창에서 **MVC**를 선택한 다음 **확인**을 클릭합니다.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   시작 창이 열려 있지 않으면 **파일** > **시작 창**을 선택합니다.
 
-    Visual Studio가 프로젝트를 만듭니다. 솔루션 탐색기(오른쪽 창)가 프로젝트 파일을 표시합니다.
+   시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+
+   **새 프로젝트 만들기** 창에서 검색 상자에 *asp.net*을 입력합니다. 그런 다음, 언어 목록에서 **C#** 을 선택한 다음, 플랫폼 목록에서 **Windows**를 선택합니다.
+
+   언어 및 플랫폼 필터를 적용하고 **ASP.NET 웹 애플리케이션(.NET Core)** 템플릿을 선택한 후 **다음**을 선택합니다.
+
+   > [!NOTE]
+   > **ASP.NET 웹 애플리케이션(.NET Core)** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다. 그런 다음, Visual Studio 설치 관리자에서 **ASP.NET 및 웹 개발** 워크로드를 선택합니다.
+
+   **새 프로젝트 구성** 창의 **프로젝트 이름** 상자에 *MyProfilingApp_MVC*를 입력합니다. 그런 다음, **만들기**를 선택합니다.
+
+   표시되는 창에서 **웹 애플리케이션(Model-View-Controller)** , **만들기**를 차례로 선택합니다.
+
+   ::: moniker-end
+
+   Visual Studio에서 새 프로젝트를 엽니다.
 
 1. 솔루션 탐색기에서 Models 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **클래스**를 선택합니다.
 
@@ -59,7 +79,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
     }
     ```
 
-    바꿉니다.
+    이 코드로 바꿉니다.
 
     ```csharp
     public class ServerClass
@@ -131,6 +151,8 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
 1. 솔루션 탐색기에서 *Controller/HomeControllers.cs*를 열고 다음 코드를
 
+   ::: moniker range="vs-2017"
+
     ```csharp
     public ActionResult About()
     {
@@ -140,7 +162,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
     }
     ```
 
-    바꿉니다.
+    이 코드로 바꿉니다.
 
     ```csharp
     public ActionResult About()
@@ -152,6 +174,30 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
         return View(s.GetData());
     }
     ```
+
+    ::: moniker-end
+    ::: moniker range="vs-2019"
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        return View();
+    }
+    ```
+
+    이 코드로 바꿉니다.
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        Models.Simple s = new Models.Simple();
+
+        return View(s.GetData());
+    }
+    ```
+
+    ::: moniker-end
+
 
 ## <a name="step-1-collect-profiling-data"></a>1단계: 프로파일링 데이터 수집
 
@@ -172,7 +218,14 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
 1. **디버그** > **디버깅 시작**을 클릭합니다(또는 도구 모음의 **시작** 또는 **F5** 키 누름).
 
-1. 앱 로드가 완료되면 앱 페이지 상단의 **About** 링크를 클릭하여 새 코드 실행을 시작합니다.
+1. 앱 로드가 완료되면 웹 페이지 상단의 해당 링크를 클릭하여 새 코드 실행을 시작합니다.
+
+   ::: moniker range="vs-2017"
+   Visual Studio 2017에서 코드를 실행하려면 **정보** 링크를 클릭합니다.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Visual Studio 2019에서 코드를 실행하려면 **개인 정보** 링크를 클릭합니다.
+   ::: moniker-end
 
 1. 진단 도구의 **요약** 보기가 표시되는 것을 확인합니다.
 
@@ -226,7 +279,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 - [CPU 사용량 분석](../profiling/cpu-usage.md)은 CPU 사용량 도구에 대한 더 상세한 정보를 제공합니다.
 - 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석합니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

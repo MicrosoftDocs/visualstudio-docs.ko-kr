@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585446"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278527"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -311,7 +311,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="diagnose-test-method-performance-issues"></a>테스트 메서드 성능 문제 진단
 
-테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 오른쪽 클릭 메뉴에서 **선택한 테스트 프로파일링**을 선택합니다. [성능 탐색기](../profiling/performance-explorer.md)를 참조하세요.
+테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 오른쪽 클릭 메뉴에서 **선택한 테스트 프로파일링**을 선택합니다. [계측 프로파일링 보고서](../profiling/understanding-instrumentation-data-values.md?view=vs-2017)를 참조하세요.
 
 ### <a name="analyze-unit-test-code-coverage"></a>단위 테스트 코드 검사 분석
 
