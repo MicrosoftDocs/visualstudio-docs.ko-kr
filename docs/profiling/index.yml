@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
-  ms.openlocfilehash: 4c5a2cfb7d3ef7a8ad71dd7591bc147932ff0535
-  ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+  ms.openlocfilehash: 668d0b5837bb13dd7bcf7367a2734a9ed019bd9c
+  ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 02/01/2020
-  ms.locfileid: "76923362"
+  ms.lasthandoff: 02/25/2020
+  ms.locfileid: "77578152"
 landingContent:
 - title: 프로파일링 정보
   linkLists:
@@ -48,6 +48,8 @@ landingContent:
     links:
     - text: 명령줄에서 CPU 사용량 측정
       url: profile-apps-from-command-line.md
+    - text: .NET 개체에 대한 메모리 사용 측정
+      url: dotnet-alloc-tool.md
     - text: PerfTips
       url: perftips.md
     - text: 리소스 사용 분석(XAML)

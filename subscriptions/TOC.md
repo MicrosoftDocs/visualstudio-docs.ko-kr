@@ -28,6 +28,7 @@
 #### [Azure DevTest 개별 크레딧](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest 종량제](vs-azure-payg.md)
+#### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST 하이라이트](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
