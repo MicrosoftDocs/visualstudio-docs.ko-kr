@@ -866,7 +866,7 @@
   href: deployment/index.yml
 - name: Visual Studio 확장 >>
   displayName: Visual Studio SDK
-  href: extensibility/visual-studio-sdk.md
+  href: extensibility/index.yml
 - name: 아키텍처 분석 및 모델링 >>
   href: modeling/analyze-and-model-your-architecture.md
 - name: Visual Studio 개인 설정

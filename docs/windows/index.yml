@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
-  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
+  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 02/15/2020
-  ms.locfileid: "77265562"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77904063"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -150,7 +150,7 @@ additionalContent:
       url: ../profiling/index.yml
     - title: 확장
       summary: 개발 환경을 개선하기 위해 Visual Studio IDE에 고유한 기능을 추가합니다.
-      url: ../extensibility/index.md
+      url: ../extensibility/index.yml
     - title: 데이터
       summary: 로컬, 클라우드 등 어디서나 모든 데이터베이스 또는 서비스와 연결하는 데이터 앱을 만듭니다.
       url: ../data-tools/accessing-data-in-visual-studio.md
@@ -202,7 +202,7 @@ additionalContent:
     - title: 기타 도구 집합
       links:
       - text: Visual Studio 확장 개발
-        url: ../extensibility/index.md
+        url: ../extensibility/index.yml
       - text: C++를 사용한 Linux 개발
         url: /cpp/linux/
       - text: .NET Core 플랫폼 간 개발
