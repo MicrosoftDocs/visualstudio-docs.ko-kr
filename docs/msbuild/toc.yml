@@ -1,6 +1,6 @@
 - name: MSBuild
   items:
-    - name: MsBuild
+    - name: MSBuild
       href: msbuild.md
     - name: MSBuild 16.0의 새로운 기능
       href: whats-new-msbuild-16-0.md
@@ -19,7 +19,7 @@
               href: how-to-use-environment-variables-in-a-build.md
             - name: 프로젝트 파일의 이름 또는 위치 참조
               href: how-to-reference-the-name-or-location-of-the-project-file.md
-            - name: 동일한 소스 파일을 다른 옵션을 사용하여 빌드
+            - name: 다른 옵션을 사용하여 동일한 원본 파일 빌드
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: 속성 함수
               href: property-functions.md
@@ -107,7 +107,7 @@
               href: how-to-extend-the-visual-studio-build-process.md
             - name: IDE에서 빌드 시작
               href: starting-a-build-from-within-the-ide.md
-            - name: .NET Framework 확장 등록
+            - name: .NET Framework 확장명 등록
               href: registering-extensions-of-the-dotnet-framework.md
         - name: 병렬로 여러 프로젝트 빌드
           items:
@@ -139,7 +139,7 @@
                   href: configuring-targets-and-tasks.md
                 - name: 대상 및 작업 구성
                   href: how-to-configure-targets-and-tasks.md
-            - name: .NET Framework 타기팅 오류 문제 해결
+            - name: .NET Framework 대상 지정 오류 문제 해결
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: 파일 추적
           items:
@@ -177,7 +177,7 @@
           href: obtaining-build-logs-with-msbuild.md
         - name: 빌드 로거
           href: build-loggers.md
-        - name: 다중 프로세서 환경에서의 로깅
+        - name: 다중 프로세서 환경에서의 로그인
           href: logging-in-a-multi-processor-environment.md
         - name: 다중 프로세서 인식 로거 작성
           href: writing-multi-processor-aware-loggers.md
@@ -217,11 +217,11 @@
               href: otherwise-element-msbuild.md
             - name: Output 요소
               href: output-element-msbuild.md
-            - name: Parameter 요소
+            - name: 매개 변수 요소
               href: parameter-element.md
             - name: ParameterGroup 요소
               href: parametergroup-element.md
-            - name: Project 요소
+            - name: 프로젝트 요소
               href: project-element-msbuild.md
             - name: ProjectExtensions 요소
               href: projectextensions-element-msbuild.md
@@ -244,7 +244,7 @@
         - name: 작업 참조
           items:
             - name: 개요
-              displayName: Task Reference
+              displayName: task reference
               href: msbuild-task-reference.md
             - name: C++ 관련 작업
               items:
@@ -293,7 +293,7 @@
                   href: xdcmake-task.md
                 - name: XSD 작업
                   href: xsd-task.md
-            - name: 작업 기본 클래스
+            - name: Task 기본 클래스
               href: task-base-class.md
             - name: TaskExtension 기본 클래스
               href: taskextension-base-class.md
@@ -333,7 +333,7 @@
               href: delete-task.md
             - name: DownloadFile 작업
               href: downloadfile-task.md
-            - name: 오류 작업
+            - name: Error 작업
               href: error-task.md
             - name: Exec 작업
               href: exec-task.md
@@ -371,7 +371,7 @@
               href: lc-task.md
             - name: MakeDir 작업
               href: makedir-task.md
-            - name: 메시지 작업
+            - name: Message 작업
               href: message-task.md
             - name: Move 작업
               href: move-task.md
@@ -407,7 +407,7 @@
               href: touch-task.md
             - name: UnregisterAssembly 작업
               href: unregisterassembly-task.md
-            - name: 작업 압축 풀기
+            - name: Unzip 작업
               href: unzip-task.md
             - name: UpdateManifest 작업
               href: updatemanifest-task.md
@@ -415,7 +415,7 @@
               href: vbc-task.md
             - name: VerifyFileHash 작업
               href: verifyfilehash-task.md
-            - name: 경고 작업
+            - name: Warning 작업
               href: warning-task.md
             - name: WriteCodeFragment 작업
               href: writecodefragment-task.md
@@ -443,21 +443,21 @@
           href: msbuild-command-line-reference.md
         - name: MSBuild .Targets 파일
           href: msbuild-dot-targets-files.md
-        - name: MSBuild 잘 알려인 항목 메타데이터
+        - name: MSBuild 잘 알려진 항목 메타데이터
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild 지시 파일
           href: msbuild-response-files.md
         - name: WPF 참조
           items:
             - name: 개요
-              displayName: WPF MSBuild Reference
+              displayName: WPF MSBuild reference
               href: wpf-msbuild-reference.md
-            - name: WPF .Targets 파일
+            - name: WPF .targets 파일
               href: wpf-dot-targets-files.md
             - name: WPF 작업 참조
               items:
                 - name: 개요
-                  displayName: WPF MSBuild Task Reference
+                  displayName: WPF MSBuild task reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier 작업
                   href: fileclassifier-task.md
@@ -482,7 +482,7 @@
     - name: 프로그래밍 방식으로 MSBuild 사용
       items:
         - name: 개요
-          displayName: Use MSBuild Programmatically
+          displayName: Use MSBuild programmatically
           href: msbuild-api.md
         - name: MSBuild 15로 업데이트
           href: updating-an-existing-application.md
