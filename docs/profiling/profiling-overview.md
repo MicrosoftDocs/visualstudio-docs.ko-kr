@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994924"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77577954"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio의 성능 측정을 위한 도구
 
@@ -26,3 +26,5 @@ ms.locfileid: "62994924"
 * [CPU 사용량 분석](../profiling/cpu-usage.md)은 CPU 사용량 도구에 대한 더 상세한 정보를 제공합니다.
 
 * [메모리 사용량 분석](../profiling/memory-usage.md)으로 성능 병목 상태를 확인합니다.
+
+* [.NET 개체 할당 도구를 사용하여 메모리 사용량 분석](../profiling/dotnet-alloc-tool.md)으로 .NET 앱의 성능 병목 현상을 식별합니다.

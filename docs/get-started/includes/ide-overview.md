@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632444"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590814"
 ---
 Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
@@ -383,7 +383,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 특정 줄에서 코드의 실행을 중지하는 *중단점*을 설정할 수 있습니다. 코드를 실행함에 따라 변수의 값이 변경되는 방법 등을 확인할 수 있습니다.
 
-중단점을 설정하여 프로그램이 "이동 중"일 때 `username` 변수의 값을 확인하겠습니다.
+중단점을 설정하여 프로그램이 “이동 중”일 때 `username` 변수의 값을 확인하겠습니다.
 
 1. `Console.WriteLine($"\nHello {username}!");`이라고 표시된 코드 줄을 찾습니다. 이 코드 줄에 중단점을 설정하려면, 즉 이 줄에서 프로그램이 실행을 일시 중지하도록 하려면 편집기의 맨 왼쪽 여백을 클릭합니다. 코드 줄의 아무 곳이나 클릭한 다음, **F9** 키를 누를 수도 있습니다.
 
@@ -413,7 +413,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 ::: moniker range="vs-2017"
 
-2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경하고 **확인**을 선택합니다.
+2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경한 다음 **확인**을 선택합니다.
 
    전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
 
@@ -423,7 +423,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 ::: moniker range=">=vs-2019"
 
-2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경하고 **확인**을 선택합니다.
+2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경한 다음 **확인**을 선택합니다.
 
    전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
 

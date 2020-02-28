@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75929248"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578087"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
 
@@ -52,13 +52,13 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 원하는 함수를 두 번 클릭하면 세 개의 창으로 구분된 세부 “나비” 뷰가 표시되고, 창의 가운데에는 선택된 함수, 왼쪽에는 호출 중인 함수, 오른쪽에는 호출된 함수가 표시됩니다. **함수 본문** 섹션에는 또한 호출 함수 및 호출된 함수에 사용된 시간을 제외하고 함수 본문에 사용된 총 시간(및 시간의 백분율)이 표시됩니다. 이 데이터를 사용하여 함수 자체에 성능 병목 현상이 있는지 여부를 평가할 수 있습니다.
 
-![진단 도구 호출자 수신자 "나비" 뷰](../profiling/media/prof-tour-cpu-usage-caller-callee.png "진단 도구 호출자 수신자 뷰")
+![진단 도구 호출자 수신자 “나비” 뷰](../profiling/media/prof-tour-cpu-usage-caller-callee.png "진단 도구 호출자 수신자 뷰")
 
 ## <a name="analyze-memory-usage"></a>메모리 사용량 분석
 
 또한 **진단 도구** 창을 사용하여 앱의 메모리 사용량을 평가할 수 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. 메모리 분석에 대한 자세한 지침은 [메모리 사용량 분석](../profiling/memory-usage.md)을 참조하세요.
 
-메모리 사용량을 분석하려면 디버그하는 동안 메모리 스냅샷을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅샷을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅샷의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다.
+디버그하는 동안 메모리 사용량을 분석하려면 메모리 스냅샷을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅샷을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅샷의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다.
 
 ![진단 도구에서 스냅샷 만들기](../profiling/media/prof-tour-take-snapshots.gif "스냅샷 수행 진단 도구")
 
@@ -81,21 +81,21 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ![프로파일링 둘러보기 PerfTips](../profiling/media/prof-tour-perf-tips.png "프로파일링 둘러보기 PerfTips")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI 성능 및 접근성 이벤트 검사(UWP)
-
-UWP 앱의 **진단 도구** 창에서 **UI 분석**을 사용하도록 설정할 수 있습니다. 이 도구는 디버그하는 동안 일반 성능 또는 접근성 문제를 검색하여 **이벤트** 뷰에 표시합니다. 이벤트 설명에는 문제를 해결하는 데 유용한 정보가 제공됩니다.
-
-![진단 도구의 UI 분석 이벤트 뷰](../profiling/media/prof-tour-ui-analysis.png "진단 도구 보기 UI 분석 이벤트")
-
 ## <a name="post_mortem"></a> 디버거 없이 릴리스 빌드 프로파일링
 
-CPU 사용량 및 메모리 사용량과 같은 프로파일링 도구를 디버거와 함께 사용하거나(이전 섹션 참조) 성능 프로파일러를 통해 프로파일링 도구 사후 분석을 실행하여 **릴리스** 빌드에 대한 분석을 제공할 수 있습니다. 성능 프로파일러에서 앱이 실행 중인 동안 진단 정보를 수집한 다음 앱이 중지된 이후에 수집된 정보를 검사할 수 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+CPU 사용량 및 메모리 사용량과 같은 프로파일링 도구를 디버거와 함께 사용하거나(이전 섹션 참조) 성능 프로파일러를 통해 프로파일링 도구 사후 분석을 실행하여 **릴리스** 빌드에 대한 분석을 제공할 수 있습니다. 성능 프로파일러에서 앱이 실행 중인 동안 진단 정보를 수집한 다음 앱이 중지된 이후에 수집된 정보를 검사할 수 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)와 같은 추가 도구는 성능 프로파일러에서도 사용할 수 있습니다.
 
 ![성능 프로파일러](../profiling/media/prof-tour-performance-profiler.png "성능 프로파일러")
 
 **디버그** > **성능 프로파일러**를 선택하여 성능 프로파일러를 엽니다.
 
-창에서 여러 프로파일링 도구를 선택할 수 있는 경우도 있습니다. CPU 사용량과 같은 도구는 분석에 유용한 보조 데이터를 제공할 수 있습니다.
+창에서 여러 프로파일링 도구를 선택할 수 있는 경우도 있습니다. CPU 사용량과 같은 도구는 분석에 유용한 보조 데이터를 제공할 수 있습니다. [명령줄 프로파일러](../profiling/profile-apps-from-command-line.md)를 사용하여 여러 프로파일링 도구를 포함하는 시나리오를 사용하도록 설정할 수도 있습니다.
+
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI 성능 및 접근성 이벤트 검사(UWP)
+
+UWP 앱의 **진단 도구** 창에서 **UI 분석**을 사용하도록 설정할 수 있습니다. 이 도구는 디버그하는 동안 일반 성능 또는 접근성 문제를 검색하여 **이벤트** 뷰에 표시합니다. 이벤트 설명에는 문제를 해결하는 데 유용한 정보가 제공됩니다.
+
+![진단 도구의 UI 분석 이벤트 뷰](../profiling/media/prof-tour-ui-analysis.png "진단 도구 보기 UI 분석 이벤트")
 
 ## <a name="analyze-resource-consumption-xaml"></a>리소스 사용 분석(XAML)
 
@@ -105,15 +105,15 @@ XAML 앱(예: Windows 데스크톱 WPF 앱 및 UWP 앱)에서 애플리케이션
 
 ![애플리케이션 타임라인 프로파일링 도구](../profiling/media/prof-tour-application-timeline.gif "애플리케이션 타임라인 프로파일링 둘러보기")
 
-타임라인 세부 정보 뷰에서 활동 유형 또는 포함된 UI 요소와 활동 기간 등과 같은 정보를 확인할 수 있습니다. 예를 들어 그림에서 표 형태 컨트롤에 대한 **레이아웃** 이벤트는 57.53ms 걸렸습니다.
+타임라인 세부 정보 뷰에서 작업 유형 또는 포함된 UI 요소와 작업 기간 등과 같은 정보를 확인할 수 있습니다. 예를 들어 그림에서 표 형태 컨트롤에 대한 **레이아웃** 이벤트는 57.53ms 걸렸습니다.
 
 자세한 내용은 [애플리케이션 타임라인](../profiling/application-timeline.md)을 참조하세요.
 
 ## <a name="analyze-gpu-usage-direct3d"></a>GPU 사용량 분석(Direct3D)
 
-Direct3D 앱(Direct3D 구성 요소가 C++에 있어야 함)에서 GPU에 대한 활동을 검사하고 성능 문제를 분석할 수 있습니다. 자세한 내용은 [GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)을 참조하세요. 이 도구를 사용하려면 성능 프로파일러에서 **GPU 사용량**을 선택한 다음 **시작**을 선택합니다. 앱에서 프로파일링에 관심 있는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
+Direct3D 앱(Direct3D 구성 요소가 C++에 있어야 함)에서 GPU에 대한 작업을 검사하고 성능 문제를 분석할 수 있습니다. 자세한 내용은 [GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)을 참조하세요. 이 도구를 사용하려면 성능 프로파일러에서 **GPU 사용량**을 선택한 다음 **시작**을 선택합니다. 앱에서 프로파일링에 관심 있는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
 
-그래프에서 기간을 선택하고 **자세히 보기**를 선택하면 상세 보기가 아래쪽 창에 나타납니다. 상세 보기에서 각 CPU 및 GPU에서 얼마나 많은 활동이 발생하는지를 확인할 수 있습니다. 맨 아래 창에서 이벤트를 선택하면 타임라인에 팝업이 표시됩니다. 예를 들어 **현재** 이벤트를 선택하면 **현재** 호출 팝업이 표시됩니다. 연한 회색 Vsync 세로줄을 참조로 사용하여 특정 **현재** 호출에 Vsync가 누락되었는지 여부를 확인할 수 있습니다. 앱이 60 FPS를 꾸준히 적중하려면 두 Vsyncs마다 하나의 **현재** 호출이 있어야 합니다.
+그래프에서 기간을 선택하고 **자세히 보기**를 선택하면 상세 보기가 아래쪽 창에 나타납니다. 상세 보기에서 각 CPU 및 GPU에서 얼마나 많은 작업이 발생하는지를 확인할 수 있습니다. 맨 아래 창에서 이벤트를 선택하면 타임라인에 팝업이 표시됩니다. 예를 들어 **현재** 이벤트를 선택하면 **현재** 호출 팝업이 표시됩니다. 연한 회색 Vsync 세로줄을 참조로 사용하여 특정 **현재** 호출에 Vsync가 누락되었는지 여부를 확인할 수 있습니다. 앱이 60 FPS를 꾸준히 적중하려면 두 Vsyncs마다 하나의 **현재** 호출이 있어야 합니다.
 
 ![GPU 사용량 프로파일링 도구](../profiling/media/prof-tour-gpu-usage.png "Diag GPU Usage")
 
@@ -149,7 +149,13 @@ UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행된 네트워크 작�
 
 ## <a name="analyze-performance-legacy-tools"></a>성능 분석(레거시 도구)
 
+::: moniker range="vs-2017"
 CPU 사용량 또는 메모리 사용량 도구에 현재 표시되지 않는 계측과 같은 기능이 필요하고 데스크톱 또는 ASP.NET 앱을 실행 중인 경우 성능 탐색기를 사용하여 프로파일링할 수 있습니다. (UWP 앱에서 지원되지 않음). 자세한 내용은 [성능 탐색기](../profiling/performance-explorer.md)를 참조하세요.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 같은 관련 프로파일링 도구가 성능 프로파일러로 중첩되었습니다. 이 프로파일러는 **디버그** > **성능 프로파일러**를 사용하여 열 수 있습니다. 성능 프로파일러에서 사용 가능한 진단 도구는 선택한 대상 및 현재 열려 있는 시작 프로젝트에 따라 달라집니다. CPU 사용량 도구는 이전에 성능 마법사에서 지원되었던 샘플링 기능을 제공합니다. 계측 도구는 성능 마법사에 있던 계측된 프로파일링 기능(정확한 호출 수 및 기간을 알 수 있는)을 제공합니다. 추가 메모리 도구가 성능 프로파일러에도 표시됩니다.
+::: moniker-end
 
 ![성능 탐색기 도구](../profiling/media/prof-tour-performance-explorer.png "성능 탐색기")
 
@@ -162,6 +168,7 @@ CPU 사용량 또는 메모리 사용량 도구에 현재 표시되지 않는 �
 |----------------------|---------------------|-------------|-------------|
 |[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
+|[.NET 개체 할당](../profiling/dotnet-alloc-tool.md)|예(.NET만 해당)|예|예|
 |[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|no|
 |[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|no|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|

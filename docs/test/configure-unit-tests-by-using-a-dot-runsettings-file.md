@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593254"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557954"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -66,7 +66,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
     </Project>
     ```
 
-- 솔루션의 루트에 ".runsettings"라는 실행 설정 파일을 배치합니다.
+- 솔루션의 루트에 “.runsettings”라는 실행 설정 파일을 배치합니다.
 
   실행 설정 파일의 자동 검색을 사용하도록 설정하면 이 파일의 설정이 모든 테스트 실행에 적용됩니다. runsettings 파일의 자동 검색은 다음 두 위치에서 켤 수 있습니다.
   
@@ -82,7 +82,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 
    ![Visual Studio 2019의 솔루션 전체의 runsettings 파일 선택 메뉴](media/vs-2019/select-solution-settings-file.png)
       
-   - 이 파일은 솔루션의 루트에서 ".runsettings" 파일(있는 경우)을 재정의하며 모든 테스트 실행에 적용됩니다.  
+   - 이 파일은 솔루션의 루트에서 “.runsettings” 파일(있는 경우)을 재정의하며 모든 테스트 실행에 적용됩니다.  
    - 이 파일 선택은 로컬에서만 지속됩니다. 
 
 ::: moniker-end
@@ -256,7 +256,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||TestAdapters가 있는 디렉터리에 대한 하나 이상의 경로|
-|**MaxCpuCount**|1|이 설정은 단위 테스트를 실행하는 경우 시스템에서 사용 가능한 코어를 사용하여 병렬 테스트 실행의 정도를 제어합니다. 테스트 실행 엔진이 사용 가능한 각 코어에서 별도의 프로세스로 시작되며, 실행할 테스트가 있는 컨테이너를 각 코어에 제공합니다. 컨테이너는 어셈블리, DLL 또는 관련 아티팩트일 수 있습니다. 테스트 컨테이너는 예약 단위입니다. 각 컨테이너에서 테스트는 테스트 프레임워크에 따라 실행됩니다. 많은 컨테이너가 있는 경우 프로세스가 컨테이너 내의 테스트 실행을 마치면 사용 가능한 다음 컨테이너가 제공됩니다.<br /><br />MaxCpuCount는 다음과 같을 수 있습니다.<br /><br />n, 여기서 1 <= n <= 코어 수이며, 최대 n개의 프로세스가 시작됩니다.<br /><br />n, 여기서 n = 다른 모든 값이 되며, 시작되는 프로세스의 수는 사용 가능한 최대 코어 수가 될 수 있습니다.|
+|**MaxCpuCount**|1|이 설정은 단위 테스트를 실행하는 경우 시스템에서 사용 가능한 코어를 사용하여 병렬 테스트 실행의 정도를 제어합니다. 테스트 실행 엔진이 사용 가능한 각 코어에서 별도의 프로세스로 시작되며, 실행할 테스트가 있는 컨테이너를 각 코어에 제공합니다. 컨테이너는 어셈블리, DLL 또는 관련 아티팩트일 수 있습니다. 테스트 컨테이너는 예약 단위입니다. 각 컨테이너에서 테스트는 테스트 프레임워크에 따라 실행됩니다. 많은 컨테이너가 있는 경우 프로세스가 컨테이너 내의 테스트 실행을 마치면 사용 가능한 다음 컨테이너가 제공됩니다.<br /><br />MaxCpuCount는 다음과 같을 수 있습니다.<br /><br />n, 여기서 1 <= n <= 코어 수이며, 최대 n개의 프로세스가 시작됩니다.<br /><br />n, 여기서 n = 다른 모든 값이 되며, 시작되는 프로세스의 수는 사용 가능한 최대 코어 수가 될 수 있습니다. 예를 들어 n=0을 설정하면 플랫폼에서는 환경을 기반으로 시작할 최적의 프로세스 수를 자동으로 결정할 수 있습니다.|
 |**TestSessionTimeout**||사용자가 지정된 시간 제한을 초과하는 테스트 세션을 종료할 수 있도록 합니다. 시간 제한을 설정하면 리소스가 효율적으로 사용되고 테스트 세션이 설정된 시간으로 제한됩니다. 이 설정은 **Visual Studio 2017 버전 15.5** 이상에서 사용할 수 있습니다.|
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>진단 데이터 어댑터(데이터 수집기)
@@ -307,7 +307,7 @@ public void HomePageTest()
 }
 ```
 
-TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 필드 및 공용 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 속성을 테스트 클래스에 추가합니다.
+TestRunParameters를 사용하려면 프라이빗 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 필드 및 공용 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 속성을 테스트 클래스에 추가합니다.
 
 ### <a name="mstest-run-settings"></a>MSTest 실행 설정
 

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], parameters
 - converting XAML projects to compiled binary format [WPF MSBuild]
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d72b0a63235de4cc93e97f6e85dc5728e5ebbf43
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979799"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579674"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 작업
 
@@ -47,7 +47,7 @@ ms.locfileid: "62979799"
 | `GeneratedLocalizationFiles` | 선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> 지역화할 수 있는 각 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일에 대해 생성된 지역화 파일의 목록을 포함합니다. |
 | `HostInBrowser` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 어셈블리가 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]인지 여부를 지정합니다. 유효한 옵션은 **true** 및 **false**입니다. **true**이면 브라우저 호스팅을 지원하기 위한 코드가 생성됩니다. |
 | `KnownReferencePaths` | 선택적 **String[]** 매개 변수입니다.<br /><br /> 빌드 프로세스 중에 변경되지 않는 어셈블리에 대한 참조를 지정합니다. [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)], [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] 설치 디렉터리 등에 있는 어셈블리를 포함합니다. |
-| `Language` | 필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#**, **VB**, **JScript** 및 **C++** 입니다. |
+| `Language` | 필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#** , **VB**, **JScript** 및 **C++** 입니다. |
 | `LanguageSourceExtension` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 관리되는 코드 파일의 확장에 추가되는 확장명을 지정합니다.<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** 매개 변수가 특정 값으로 설정되지 않으면 언어에 대한 기본 소스 파일 이름 확장명이 사용됩니다. 즉, [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)]의 경우 *.vb*이고, [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]의 경우 *.csharp*입니다. |
 | `LocalizationDirectivesToLocFile` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 각 소스 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일에 대한 지역화 정보를 생성하는 방법을 지정입니다. 유효한 옵션은 **None**, **CommentsOnly** 및 **All**입니다. |
 | `OutputPath` | 필수 **String** 매개 변수입니다.<br /><br /> 생성된 관리 코드 파일 및 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식 파일이 생성되는 디렉터리를 지정합니다. |
@@ -61,7 +61,7 @@ ms.locfileid: "62979799"
 | `UICulture` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식 파일이 포함되는 UI 문화권에 대한 위성 어셈블리를 지정합니다. **UICulture**가 설정되지 않은 경우 생성된 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식 파일은 주 어셈블리에 포함됩니다. |
 | `XAMLDebuggingInformation` | 선택적 **Boolean** 매개 변수입니다.<br /><br /> **true**이면 디버깅에 도움을 주기 위해 진단 정보가 생성되고 컴파일된 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]에 포함됩니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 작업은 일반적으로 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]를 이진 형식으로 컴파일한 후 코드 파일을 생성합니다. [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일에 같은 프로젝트에 정의된 형식에 대한 참조가 포함되면 이진 형식에 대한 컴파일이 **MarkupCompilePass1**에 의해 두 번째 태그 컴파일 패스(**MarkupCompilePass2**)로 연기됩니다. 이러한 파일은 참조된 로컬로 정의된 형식이 컴파일될 때까지 기다려야 하므로 컴파일이 연기되어야 합니다. 그러나 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일에 `x:Class` 특성이 있으면 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>은 언어별 코드 파일을 생성합니다.
 
@@ -119,7 +119,7 @@ ms.locfileid: "62979799"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)
 - [WPF MSBuild 작업 참조](../msbuild/wpf-msbuild-task-reference.md)

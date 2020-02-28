@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778728"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476896"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>방법: 명령줄에서 기호 파일 위치 지정
 함수 이름, 줄 번호 등의 기호 정보를 표시하려면 VSPerfReport 명령줄 도구가 프로파일링된 구성 요소 및 Windows 시스템 파일의 기호 파일(.*pdb*)에 액세스할 수 있어야 합니다. 기호 파일은 구성 요소가 컴파일될 때 만들어집니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요. VSPerfReport는 다음 위치에서 기호 파일을 자동으로 검색합니다.
@@ -46,18 +46,20 @@ ms.locfileid: "74778728"
 
 2. 다음 구문을 사용하여 **_NT_SYMBOL_PATH** 환경 변수 또는 VSPerfReport /SymbolPath 옵션을 설정합니다.
 
-    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
+    `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    여기서 *LocalStore*는 사용자가 만든 로컬 디렉터리의 경로입니다.
+    여기서 *<LocalStore>* 는 사용자가 만든 로컬 디렉터리의 경로입니다.
 
 ## <a name="specify-component-symbol-files"></a>구성 요소 기호 파일 지정
  프로파일링 도구는 프로파일링 데이터 파일이 포함된 폴더 또는 구성 요소에 저장된 원래 위치에서 프로파일링하려는 구성 요소의 .*pdb* 파일을 검색합니다. **_NT_SYMBOL_PATH** 또는 **/SymbolPath** 옵션에 하나 이상의 경로를 추가하여 검색할 다른 위치를 지정할 수 있습니다. 경로를 세미콜론으로 구분합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 명령줄은 **_NT_SYMBOL_PATH** 환경 변수를 Windows 기호 서버로 설정하고 로컬 디렉터리를 **C:\Symbols**로 설정합니다.
 
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
+ ```cmd
+  set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
+ ```
 
  다음 VSPerfReport 명령줄은 **/SymbolPath** 옵션을 사용하여 *C:\Projects\Symbols* 디렉터리를 검색 경로에 추가합니다.
 
- **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport** *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

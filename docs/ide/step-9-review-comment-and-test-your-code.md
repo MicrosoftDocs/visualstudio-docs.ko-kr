@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572475"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579749"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 
@@ -72,7 +72,7 @@ C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고,
 1. 애플리케이션을 실행하기 전에 다음 스크린샷과 유사하게 **모두 저장** 도구 모음 단추를 선택하여 앱을 저장합니다.
 
      ![모두 저장 도구 모음 단추](../ide/media/express_iconsaveall.png)<br>
-***모두 저장*** *단추*
+***모두 저장*** 단추 
 
      또는 앱을 저장하려면 메뉴 모음에서 **파일** > **모두 저장**을 선택하거나 **Ctrl**+**Shift**+**S**를 누릅니다. 프로그램은 초기에 자주 저장하는 것이 좋습니다.
 
@@ -99,7 +99,7 @@ C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고,
 
 - 이전 자습서 단계로 돌아가려면 [8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

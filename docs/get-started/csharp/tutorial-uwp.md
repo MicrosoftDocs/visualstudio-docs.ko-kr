@@ -7,19 +7,19 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186847"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580006"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>자습서: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 애플리케이션 만들기
 
@@ -78,7 +78,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 ## <a name="create-the-application"></a>애플리케이션 만들기
 
-개발을 시작할 때입니다. 단추 컨트롤을 추가하고 해당 단추에 작업을 추가한 다음, 모양을 확인하려면 "Hello World" 앱을 시작합니다.
+개발을 시작할 때입니다. 단추 컨트롤을 추가하고 해당 단추에 작업을 추가한 다음, 모양을 확인하려면 “Hello World” 앱을 시작합니다.
 
 ### <a name="add-a-button-to-the-design-canvas"></a>디자인 캔버스에 단추 추가
 
@@ -115,7 +115,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 ### <a name="add-a-label-to-the-button"></a>단추에 레이블 추가
 
-1. **XAML 편집기**에서 단추 콘텐츠 값을 "단추"에서 "Hello World"로 변경합니다!
+1. **XAML 편집기**에서 단추 콘텐츠 값을 “단추”에서 “Hello World”로 변경합니다!
 
    ![Hello World로 단추 콘텐츠 값 변경](media/uwp-change-button-text-in-xaml-code-window.png)
 
@@ -125,7 +125,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 ### <a name="add-an-event-handler"></a>이벤트 처리기 추가
 
-"이벤트 처리기"는 복잡해 보이지만 이벤트가 발생할 때 호출되는 코드에 대한 다른 이름에 지나지 않습니다. 이 경우 "Hello World"에 작업을 추가합니다! 단추를 선택합니다.
+“이벤트 처리기”는 복잡해 보이지만 이벤트가 발생할 때 호출되는 코드에 대한 다른 이름에 지나지 않습니다. 이 경우 “Hello World”에 작업을 추가합니다! 클릭합니다.
 
 1. 디자인 캔버스에서 단추 컨트롤을 두 번 클릭합니다.
 
@@ -160,7 +160,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 
 ::: moniker range="vs-2017"
-"Hello World" UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
+“Hello World” UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
 
 1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
 
@@ -170,17 +170,17 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 1. 시작 화면이 사라진 직후 나타나는 앱을 봅니다. 앱은 다음과 같아야 합니다.
 
-   ![UWP "Hello World" 앱](media/uwp-hello-world-app.png)
+   ![UWP “Hello World” 앱](media/uwp-hello-world-app.png)
 
 1. **Hello World** 단추를 클릭합니다.
 
-   Windows 10 디바이스는 말 그대로 "Hello, World!"라고 말합니다.
+   Windows 10 디바이스는 말 그대로 “Hello, World!”라고 말합니다.
 
 1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택하거나 Shift+F5를 누릅니다.)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-"Hello World" UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
+“Hello World” UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
 
 1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
 
@@ -190,11 +190,11 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 1. 시작 화면이 사라진 직후 나타나는 앱을 봅니다. 앱은 다음과 같아야 합니다.
 
-   ![UWP "Hello World" 앱](media/vs-2019/uwp-hello-world-app.png)
+   ![UWP “Hello World” 앱](media/vs-2019/uwp-hello-world-app.png)
 
 1. **Hello World** 단추를 클릭합니다.
 
-   Windows 10 디바이스는 말 그대로 "Hello, World!"라고 말합니다.
+   Windows 10 디바이스는 말 그대로 “Hello, World!”라고 말합니다.
 
 1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택하거나 Shift+F5를 누릅니다.)
 
@@ -207,7 +207,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 > [!div class="nextstepaction"]
 > [사용자 인터페이스 만들기](/windows/uwp/design/basics/xaml-basics-ui)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [UWP 개요](/windows/uwp/get-started/universal-application-platform-guide)
 - [UWP 앱 샘플 가져오기](/windows/uwp/get-started/get-uwp-app-samples)

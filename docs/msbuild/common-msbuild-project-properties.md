@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275496"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557877"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.
@@ -47,10 +47,10 @@ ms.locfileid: "77275496"
 | BaseOutputPath | 출력 파일의 기본 경로를 지정합니다. 설정된 경우 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 `OutputPath = $(BaseOutputPath)\$(Configuration)\`을 사용합니다. 구문 예: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BuildInParallel | Multi-Proc [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 사용될 때 프로젝트 참조를 병렬로 빌드 또는 정리할지 여부를 나타내는 부울 값입니다. 기본값은 `true`이며, 시스템에 다중 코어 또는 프로세서가 있을 경우 프로젝트가 병렬로 빌드됨을 나타냅니다. |
 | BuildProjectReferences | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 프로젝트 참조를 빌드할지 여부를 나타내는 부울 값입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)에서 프로젝트를 빌드하는 경우 자동으로 `false`로 설정되고, 그러지 않으면 `true`로 설정됩니다. 참조된 프로젝트가 최신 상태인지 확인할 필요가 없도록 명령줄에 `-p:BuildProjectReferences=false`를 지정할 수 있습니다. |
-| CleanFile | "정리 캐시"로 사용할 파일의 이름입니다. 정리 캐시는 생성 파일 중 정리 작업 시 삭제할 파일의 목록입니다. 이 파일은 빌드 프로세스에 의해 중간 출력 경로에 저장됩니다.<br /><br /> 이 속성은 경로 정보가 없는 파일 이름만 지정합니다. |
+| CleanFile | “정리 캐시”로 사용할 파일의 이름입니다. 정리 캐시는 생성 파일 중 정리 작업 시 삭제할 파일의 목록입니다. 이 파일은 빌드 프로세스에 의해 중간 출력 경로에 저장됩니다.<br /><br /> 이 속성은 경로 정보가 없는 파일 이름만 지정합니다. |
 | CodePage | 컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다. 이 속성은 `/codepage` 컴파일러 스위치와 동일합니다. |
 | CompilerResponseFile | 컴파일러 작업에 전달할 수 있는 선택적 지시 파일입니다. |
-| Configuration | 빌드하고 있는 구성으로, "디버그" 또는 "릴리스"입니다. |
+| Configuration | 빌드하고 있는 구성으로, “디버그” 또는 “릴리스”입니다. |
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 컴파일러인 *csc.exe*의 경로입니다. |
 | CustomBeforeMicrosoftCommonTargets | 공통 대상을 가져오기 전에 자동으로 가져올 프로젝트 파일 또는 대상 파일의 이름입니다. |
 | DebugSymbols | 빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **-p:DebugSymbols=false**를 설정하면 프로그램 데이터베이스( *.pdb*) 기호 파일이 생성되지 않습니다. |
@@ -63,11 +63,12 @@ ms.locfileid: "77275496"
 | DisabledWarnings | 지정한 경고를 표시하지 않습니다. 경고 식별자의 숫자 부분만 지정해야 합니다. 경고가 여러 개인 경우 세미콜론으로 구분할 수 있습니다. 이 매개 변수는 *vbc.exe* 컴파일러의 `/nowarn` 스위치에 해당합니다. |
 | DisableFastUpToDateCheck | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에만 적용되는 부울 값입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 관리자는 FastUpToDateCheck 프로세스를 사용하여 프로젝트를 최신 상태로 다시 빌드해야 하는지 여부를 확인합니다. 확인할 때 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 사용하는 것보다 이 프로세스가 더 빠릅니다. DisableFastUpToDateCheck 속성을 `true`로 설정하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 관리자를 사용하지 않고 대신 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 사용하여 프로젝트가 최신 상태인지 여부를 확인할 수 있습니다. |
 | DocumentationFile | XML 문서 파일로 생성된 파일의 이름입니다. 이 이름에는 파일 이름만 포함되고 경로 정보는 포함되지 않습니다. |
-| ErrorReport | 컴파일러 작업에서 내부 컴파일러 오류를 보고하는 방식을 지정합니다. 유효한 값은 "prompt", "send" 또는 "none"입니다. 이 속성은 `/errorreport` 컴파일러 스위치와 동일합니다. |
+| ErrorReport | 컴파일러 작업에서 내부 컴파일러 오류를 보고하는 방식을 지정합니다. 유효한 값은 “prompt”, “send” 또는 “none”입니다. 이 속성은 `/errorreport` 컴파일러 스위치와 동일합니다. |
 | ExcludeDeploymentUrl | [GenerateDeploymentManifest 작업](../msbuild/generatedeploymentmanifest-task.md)에서는 프로젝트 파일에 다음 요소가 하나라도 포함된 경우 배포 매니페스트에 deploymentProvider 태그를 추가합니다.<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 그러나 ExcludeDeploymentUrl을 사용하면 위의 URL이 지정되더라도 deploymentProvider 태그가 배포 매니페스트에 추가되지 않습니다. 이렇게 하려면 프로젝트 파일에 다음 속성을 추가합니다.<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**참고:**  ExcludeDeploymentUrl은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 노출되지 않으며 프로젝트 파일을 수동으로만 편집하여 설정할 수 있습니다. 이 속성을 설정해도 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 내의 게시에는 영향을 주지 않습니다. 즉, deploymentProvider 태그는 PublishUrl로 지정된 URL에 계속 추가됩니다. |
 | FileAlignment | 출력 파일의 섹션에 맞출 위치(바이트)를 지정합니다. 올바른 값은 512, 1024, 2048, 4096, 8192입니다. 이 속성은 `/filealignment` 컴파일러 스위치와 동일합니다. |
 | FrameworkPathOverride | *mscorlib.dll* 및 *microsoft.visualbasic.dll*의 위치를 지정합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 `/sdkpath` 스위치와 동일합니다. |
 | GenerateDocumentation | (C#, Visual Basic) 빌드 시 문서의 생성 여부를 나타내는 부울 매개 변수입니다. `true`이면 빌드 시 문서 정보를 생성하여 이 정보를 빌드 작업에서 만든 실행 파일이나 라이브러리의 이름과 함께 *.xml* 파일에 배치합니다. |
+| GenerateFullPaths | (C#) [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) 컴파일러 옵션을 사용하여 출력의 파일 이름에 대한 전체 경로를 생성합니다. |
 | GenerateSerializationAssemblies | *SGen.exe*에서 XML 직렬화 어셈블리를 생성할지 여부를 표시하며 on, auto 또는 off로 설정할 수 있습니다. 이 속성은 .NET Framework만을 대상으로 하는 어셈블리에 사용됩니다. .NET 표준 또는 .NET Core 어셈블리에 대한 XML 직렬화 어셈블리를 생성하려면 *Microsoft.XmlSerializer.Generator* NuGet 패키지를 참조하세요. |
 | IntermediateOutputPath | 경로가 지정되지 않은 경우 `BaseIntermediateOutputPath`에서 파생된 것과 같은 전체 중간 출력 경로입니다. 예를 들어 *\obj\debug\\* 입니다. |
 | KeyContainerName | 강력한 이름 키 컨테이너의 이름입니다. |
@@ -79,7 +80,7 @@ ms.locfileid: "77275496"
 | NoVBRuntimeReference | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 런타임(*Microsoft.VisualBasic.dll*)이 프로젝트에 참조로 포함되어야 하는지 여부를 나타내는 부울 값입니다. |
 | NoWin32Manifest | 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 나타내는 부울 값입니다. [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 요소가 무시됩니다. `False`(기본값)는 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 지정합니다. `True`는 UAC 매니페스트 정보가 포함되지 않음을 지정합니다.<br /><br /> 이 속성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 대상으로 하는 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 속성이 무시됩니다.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 애플리케이션의 실행 파일에 매니페스트 정보를 포함하지 않으려는 경우에만 NoWin32Manifest를 추가해야 합니다. 이 프로세스를 *가상화*라고 합니다. 가상화를 사용하려면 다음과 같이 `<ApplicationManifest>`와 `<NoWin32Manifest>`를 함께 설정합니다.<br /><br /> -   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트의 경우 `<ApplicationManifest>` 노드를 제거합니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에서는 `<ApplicationManifest>` 노드가 있으면 `<NoWin32Manifest>`가 무시됩니다.<br />-   [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트의 경우 `<ApplicationManifest>`를 `False`로, `<NoWin32Manifest>`를 `True`로 설정합니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트에서는 `<ApplicationManifest>`가 `<NoWin32Manifest>`를 재정의합니다.<br /> 이 속성은 *vbc.exe*의 `/nowin32manifest` 컴파일러 스위치와 동일합니다. |
 | Optimize | `true`로 설정하면 컴파일러 최적화를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optimize` 컴파일러 스위치와 동일합니다. |
-| OptionCompare | 문자열 비교 방법을 지정합니다. 유효한 값은 "binary" 또는 "text"입니다. 이 속성은 *vbc.exe*의 `/optioncompare` 컴파일러 스위치와 동일합니다. |
+| OptionCompare | 문자열 비교 방법을 지정합니다. 유효한 값은 “binary” 또는 “text”입니다. 이 속성은 *vbc.exe*의 `/optioncompare` 컴파일러 스위치와 동일합니다. |
 | OptionExplicit | `true`로 설정하면 소스 코드에서 변수를 명시적으로 선언해야 하는 부울 값입니다. 이 속성은 `/optionexplicit` 컴파일러 스위치와 동일합니다. |
 | OptionInfer | `true`로 설정하면 변수의 형식 유추를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optioninfer` 컴파일러 스위치와 동일합니다. |
 | OptionStrict | `true`로 설정하면 빌드 작업에서 엄격한 형식 의미를 적용하여 암시적 형식 변환을 제한하게 하는 부울 값입니다. 이 속성은 *vbc.exe* 컴파일러의 `/optionstrict` 스위치와 동일합니다. |
@@ -89,8 +90,8 @@ ms.locfileid: "77275496"
 | OverwriteReadOnlyFiles | 빌드에서 읽기 전용 파일을 덮어쓸지 아니면 오류를 트리거할지 여부를 나타내는 부울 값입니다. |
 | PathMap | 실제 경로를 컴파일러에서 출력되는 소스 경로 이름에 매핑하는 방법을 지정합니다. 이 속성은 *csc.exe* 컴파일러의 `/pathmap` 스위치와 동일합니다. |
 | PdbFile | 내보낼 *.pdb* 파일의 파일 이름입니다. 이 속성은 *csc.exe* 컴파일러의 `/pdb` 스위치와 동일합니다. |
-| 플랫폼 | 빌드하고 있는 운영 체제입니다. 유효한 값은 "Any CPU", "x86" 및 "x64"입니다. |
-| ProcessorArchitecture | 어셈블리 참조를 확인할 때 사용되는 프로세서 아키텍처입니다. 유효한 값은 "msil", "x86", "amd64" 또는 "ia64"입니다. |
+| 플랫폼 | 빌드하고 있는 운영 체제입니다. 유효한 값은 “Any CPU”, “x86” 및 “x64”입니다. |
+| ProcessorArchitecture | 어셈블리 참조를 확인할 때 사용되는 프로세서 아키텍처입니다. 유효한 값은 “msil”, “x86”, “amd64” 또는 “ia64”입니다. |
 | ProduceOnlyReferenceAssembly | 컴파일러에 컴파일된 코드가 아닌 참조 어셈블리만 내보내도록 지시하는 부울 값입니다. `ProduceReferenceAssembly`와 함께 사용할 수 없습니다.  이 속성은 *vbc.exe* 및 *csc.exe* 컴파일러의 `/refonly` 스위치에 해당합니다. |
 | ProduceReferenceAssembly | 부울 값으로, `true`로 설정하면 현재 어셈블리에 대한 [참조 어셈블리](/dotnet/standard/assembly/reference-assemblies)를 생성합니다. 이 기능을 사용할 경우 `Deterministic`이 `true`여야 합니다. 이 속성은 *vbc.exe* 및 *csc.exe* 컴파일러의 `/refout` 스위치에 해당합니다. |
 | RemoveIntegerChecks | 정수 오버플로 오류 검사를 비활성화할지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다. 이 속성은 *vbc.exe* 컴파일러의 `/removeintchecks` 스위치와 동일합니다. |
@@ -100,7 +101,7 @@ ms.locfileid: "77275496"
 | Satellite_CompanyName | 위성 어셈블리 생성 시 *AL.exe*에 전달할 회사 이름입니다. |
 | Satellite_Configuration | 위성 어셈블리 생성 시 *AL.exe*에 전달할 구성 이름입니다. |
 | Satellite_Description | 위성 어셈블리 생성 시 *AL.exe*에 전달할 설명 텍스트입니다. |
-| Satellite_EvidenceFile | 리소스 이름이 "Security.Evidence"인 위성 어셈블리에 지정된 파일을 포함합니다. |
+| Satellite_EvidenceFile | 리소스 이름이 “Security.Evidence”인 위성 어셈블리에 지정된 파일을 포함합니다. |
 | Satellite_FileVersion | 위성 어셈블리의 File Version 필드에 대한 문자열을 지정합니다. |
 | Satellite_Flags | 위성 어셈블리의 Flags 필드에 대한 값을 지정합니다. |
 | Satellite_GenerateFullPaths | 빌드 작업에서 오류 메시지에 보고되는 모든 파일에 절대 경로를 사용하도록 합니다. |
@@ -108,7 +109,7 @@ ms.locfileid: "77275496"
 | Satellite_MainEntryPoint | 위성 어셈블리 생성 시 모듈이 실행 파일로 변환될 때 진입점으로 사용할 메서드의 정규화된 이름(즉, class.method)을 지정합니다. |
 | Satellite_ProductName | 위성 어셈블리의 Product 필드에 대한 문자열을 지정합니다. |
 | Satellite_ProductVersion | 위성 어셈블리의 ProductVersion 필드에 대한 문자열을 지정합니다. |
-| Satellite_TargetType | 위성 어셈블리 출력 파일의 파일 형식을 "library", "exe" 또는 "win"으로 지정합니다. 기본값은 "library"입니다. |
+| Satellite_TargetType | 위성 어셈블리 출력 파일의 파일 형식을 “library”, “exe” 또는 “win”으로 지정합니다. 기본값은 “library”입니다. |
 | Satellite_Title | 위성 어셈블리의 Title 필드에 대한 문자열을 지정합니다. |
 | Satellite_Trademark | 위성 어셈블리의 Trademark 필드에 대한 문자열을 지정합니다. |
 | Satellite_Version | 위성 어셈블리의 버전 정보를 지정합니다. |

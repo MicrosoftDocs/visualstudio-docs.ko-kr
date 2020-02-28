@@ -1,6 +1,6 @@
 ---
 title: 프로젝트 및 솔루션 소개
-ms.date: 07/22/2019
+ms.date: 02/24/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c130f7f55409bd24520dd55e949d20e8d5bbb97
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567270"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579981"
 ---
 # <a name="learn-about-projects-and-solutions"></a>프로젝트 및 솔루션에 대한 자세한 정보
 
@@ -39,7 +39,7 @@ ms.locfileid: "75567270"
 
 ## <a name="solutions-and-projects"></a>솔루션 및 프로젝트
 
-이름과 달리 솔루션은 "답변"이 아닙니다. 솔루션은 Visual Studio에서 하나 이상의 관련 프로젝트를 구성하는 데 사용되는 간단한 컨테이너입니다. Visual Studio에서 솔루션을 열면 솔루션에 포함된 모든 프로젝트가 자동으로 로드됩니다.
+이름과 달리 솔루션은 “답변”이 아닙니다. 솔루션은 Visual Studio에서 하나 이상의 관련 프로젝트를 구성하는 데 사용되는 간단한 컨테이너입니다. Visual Studio에서 솔루션을 열면 솔루션에 포함된 모든 프로젝트가 자동으로 로드됩니다.
 
 ### <a name="create-a-solution"></a>솔루션 만들기
 
@@ -92,7 +92,7 @@ ms.locfileid: "75567270"
    QuickDate라는 프로젝트는 **솔루션 탐색기**의 솔루션 아래에 표시됩니다. 현재 *App.config*라는 단일 파일이 포함됩니다.
 
    > [!NOTE]
-   > 대화 상자의 왼쪽 창에서 **Visual C#** 이 표시되지 않으면 **.NET 데스크톱 개발** Visual Studio *워크로드*를 설치해야 합니다. Visual Studio에서는 워크로드 기반 설치를 사용하여 개발할 형식에 필요한 구성 요소만을 설치합니다. 새로운 워크로드를 설치하는 쉬운 방법은 **새 프로젝트 추가** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택하는 것입니다. Visual Studio 설치 관리자가 실행되면 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
+   > 대화 상자의 왼쪽 창에서 **Visual C#** 이 표시되지 않으면 **.NET 데스크톱 개발** Visual Studio 워크로드를 설치해야 합니다. Visual Studio에서는 워크로드 기반 설치를 사용하여 개발할 형식에 필요한 구성 요소만을 설치합니다. 새로운 워크로드를 설치하는 쉬운 방법은 **새 프로젝트 추가** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택하는 것입니다. Visual Studio 설치 관리자가 실행되면 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
    >
    > ![Visual Studio 설치 관리자 열기 링크](media/tutorial-projects-open-installer.png)
 
@@ -113,7 +113,7 @@ ms.locfileid: "75567270"
    QuickDate라는 프로젝트는 **솔루션 탐색기**의 솔루션 아래에 표시됩니다. 현재 *App.config*라는 단일 파일이 포함됩니다.
 
    > [!NOTE]
-   > **빈 프로젝트(.NET Framework)** 템플릿이 표시되지 않는 경우 **.NET 데스크톱 개발** Visual Studio *워크로드*를 설치해야 합니다. Visual Studio에서는 워크로드 기반 설치를 사용하여 개발할 형식에 필요한 구성 요소만을 설치합니다. 새 프로젝트를 만들 때 **원하는 내용을 찾을 수 없습니까?** 로 표시된 텍스트 아래에서 **추가 도구 및 기능 설치** 링크를 선택하면 새 워크로드를 간편히 설치할 수 있습니다. Visual Studio 설치 관리자가 실행되면 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
+   > **빈 프로젝트(.NET Framework)** 템플릿이 표시되지 않는 경우 **.NET 데스크톱 개발** Visual Studio 워크로드를 설치해야 합니다. Visual Studio에서는 워크로드 기반 설치를 사용하여 개발할 형식에 필요한 구성 요소만을 설치합니다. 새 프로젝트를 만들 때 **원하는 내용을 찾을 수 없습니까?** 로 표시된 텍스트 아래에서 **추가 도구 및 기능 설치** 링크를 선택하면 새 워크로드를 간편히 설치할 수 있습니다. Visual Studio 설치 관리자가 실행되면 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
    >
    > ![Visual Studio 설치 관리자 열기 링크](media/vs-2019/tutorial-projects-open-installer.png)
 
@@ -197,7 +197,7 @@ ms.locfileid: "75567270"
 
    **참조 관리자** 대화 상자가 열립니다.
 
-1. 왼쪽 창에서 **프로젝트**를 확장하고 **솔루션**을 선택합니다. 가운데 창에서 **QuickDate** 옆에 있는 확인란을 선택한 후 **확인을 선택합니다.
+1. 왼쪽 창에서 **프로젝트**를 확장하고 **솔루션**을 선택합니다. 가운데 창에서 **QuickDate** 옆에 있는 확인란을 선택한 후 **확인**을 선택합니다.
 
    **QuickDate** 프로젝트에 대한 참조가 추가됩니다.
 
@@ -245,7 +245,7 @@ ms.locfileid: "75567270"
 
 1. **솔루션 탐색기**에서 **QuickTest** 프로젝트를 선택합니다. 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **속성**을 선택하거나 **Alt**+**Enter** 키를 누릅니다.
 
-   프로젝트의 *속성 페이지*가 **애플리케이션** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 "QuickTest"입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll*에서 선택한 이름으로 변경됩니다.
+   프로젝트의 *속성 페이지*가 **애플리케이션** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 “QuickTest”입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll*에서 선택한 이름으로 변경됩니다.
 
    ![프로젝트 속성](media/tutorial-projects-netcore-properties.png)
 
@@ -257,8 +257,19 @@ ms.locfileid: "75567270"
 
 ![통과한 테스트를 보여주는 Visual Studio의 텍스트 탐색기](media/tutorial-projects-test-explorer.png)
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > **테스트 탐색기**가 자동으로 열리지 않는 경우 메뉴 모음에서 **테스트** > **Windows** > **테스트탐색기**를 선택하여 테스트 탐색기를 엽니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> **테스트 탐색기**가 자동으로 열리지 않는 경우 메뉴 모음에서 **테스트** > **테스트 탐색기**를 엽니다.
+
+::: moniker-end
 
 ## <a name="see-also"></a>참조
 

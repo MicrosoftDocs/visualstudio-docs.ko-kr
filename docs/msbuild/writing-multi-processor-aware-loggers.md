@@ -7,20 +7,20 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3611a98a55d25e1ac31b8c8e0370a68b858441c9
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443147"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579477"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서를 사용할 수 있기 때문에 프로젝트 빌드 시간을 줄일 수 있는 반면 이벤트 로깅 빌드 과정이 복잡해집니다. 단일 프로세서 환경에서 이벤트, 메시지, 경고 및 오류는 예측 가능하고 순차적인 방식으로 로거에 도착합니다. 그러나 다중 프로세서 환경에서 여러 원본의 이벤트는 동시에 또는 순서 없이 도착할 수 있습니다. 이러한 문제를 방지하기 위해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서 인식 로거와 새 로깅 모델이 제공되며, 사용자 지정 "전달 로거"를 만들 수 있습니다.
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서를 사용할 수 있기 때문에 프로젝트 빌드 시간을 줄일 수 있는 반면 이벤트 로깅 빌드 과정이 복잡해집니다. 단일 프로세서 환경에서 이벤트, 메시지, 경고 및 오류는 예측 가능하고 순차적인 방식으로 로거에 도착합니다. 그러나 다중 프로세서 환경에서 여러 원본의 이벤트는 동시에 또는 순서 없이 도착할 수 있습니다. 이러한 문제를 방지하기 위해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서 인식 로거와 새 로깅 모델이 제공되며, 사용자 지정 “전달 로거”를 만들 수 있습니다.
 
 ## <a name="multi-processor-logging-challenges"></a>다중 프로세서 로깅 문제
  다중 프로세서 또는 다중 핵심 프로세서에서 하나 이상의 프로젝트를 빌드하면 모든 프로젝트에 대한 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 빌드 이벤트가 동시에 생성됩니다. 따라서 많은 이벤트 메시지가 로거에 동시에 또는 순서 없이 도착할 수 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 로거는 이 상황을 처리하도록 설계되지 않았으므로 로거에 과부하가 걸리고 빌드 시간이 늘어나거나 로거 출력이 잘못되거나 심지어 빌드가 손상될 수 있습니다. 이러한 문제를 해결하기 위해 로거([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5부터 시작)를 사용하면 순서 없는 이벤트를 처리하고 이벤트와 해당 소스를 서로 연결할 수 있습니다.
@@ -35,7 +35,7 @@ ms.locfileid: "63443147"
 
  ![중앙 로거 모델](../msbuild/media/centralnode.png "CentralNode")
 
- 중앙 노드에 연결하는 다양한 종류의 로거는 "중앙 로거"라고 합니다. 각 로거 형식의 인스턴스 하나만 중앙 노드에 동시에 연결될 수 있습니다.
+ 중앙 노드에 연결하는 다양한 종류의 로거는 “중앙 로거”라고 합니다. 각 로거 형식의 인스턴스 하나만 중앙 노드에 동시에 연결될 수 있습니다.
 
  빌드가 발생하면 보조 노드는 해당 빌드 이벤트를 중앙 노드에 라우팅합니다. 중앙 노드는 모든 이벤트뿐 아니라 보조 노드를 하나 이상의 연결된 중앙 로거에 라우팅합니다. 그런 다음 로거는 들어오는 데이터를 기반으로 하는 로그 파일을 만듭니다.
 
@@ -111,5 +111,5 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|
 |SHOWCOMMANDLINE|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)

@@ -11,12 +11,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
+ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610885"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544548"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Visual Studio에서 누락 usings 추가
 
@@ -26,7 +26,7 @@ ms.locfileid: "72610885"
 
 **내용:** 필요한 가져오기 또는 복사하여 붙여넣은 코드의 [using 지시문](/dotnet/csharp/language-reference/keywords/using-directive)을 즉시 추가할 수 있습니다.
 
-**시기:** 프로젝트 또는 다른 소스의 서로 다른 위치에서 코드를 복사하여 새 코드에 붙여넣는 것이 일반적입니다. 이 빠른 작업은 복사하여 붙여넣은 코드의 누락된 imports 지시문을 찾은 다음, 추가하라는 메시지를 표시합니다.
+**시기:** 프로젝트 또는 다른 소스의 서로 다른 위치에서 코드를 복사하여 새 코드에 붙여넣는 것이 일반적입니다. 이 빠른 작업은 복사하여 붙여넣은 코드의 누락된 imports 지시문을 찾은 다음, 추가하라는 메시지를 표시합니다. 이 코드 수정은 프로젝트에서 프로젝트로 참조를 추가할 수도 있습니다.
 
 **이유:** 빠른 작업은 필요한 imports를 자동으로 추가하므로, 코드에 필요한 `using` 지시문을 수동으로 복사할 필요가 없습니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72610885"
 
     ![usings 결과 생성](media/generate-using-result.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)
