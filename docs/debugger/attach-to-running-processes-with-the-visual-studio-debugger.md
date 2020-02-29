@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a41667592b6965497f9b87514719f7d8a5a442
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
+ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75775968"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181124"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스를 실행 한 후 **디버그** > **프로세스에 연결** 을 선택 하거나 Visual Studio에서 **Ctrl**+**Alt**+**P** 를 누르고 **프로세스에 연결** 대화 상자를 사용 하 여 디버거를 프로세스에 연결 합니다.
@@ -153,6 +153,10 @@ IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하는 방법에 대 
 
 ::: moniker range=">= vs-2019"
 
+## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>SSH를 사용 하 여 Linux에서 실행 되는 .NET Core 프로세스에 연결
+
+자세한 내용은 [SSH를 사용 하 여 Linux에서 실행 되는 원격 디버그 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조 하세요.
+
 ## <a name="BKMK_Docker_Attach"></a>Linux Docker 컨테이너에서 실행 되는 프로세스에 연결
 
 **프로세스에 연결** 대화 상자를 사용 하 여 로컬 또는 원격 컴퓨터의 Linux .Net Core Docker 컨테이너에서 실행 되는 프로세스에 Visual Studio 디버거를 연결할 수 있습니다.
@@ -221,14 +225,15 @@ UWP (유니버설 Windows 앱) 앱과 같은 일부 앱 형식의 경우 프로�
 |시나리오|Debug 메서드|프로세스 이름|노트 및 링크|
 |-|-|-|-|
 |IIS 서버에서 원격 디버그 ASP.NET 4 또는 4.5|원격 도구를 사용 하 여 **프로세스에 연결**|*w3wp.exe*|원격 [IIS 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 을 참조 하세요.|
-|IIS 서버의 원격 디버그 ASP.NET Core|원격 도구를 사용 하 여 **프로세스에 연결**|*dotnet.exe*|앱 배포의 경우 [IIS에 게시](https://docs.asp.net/en/latest/publishing/iis.html)를 참조 하세요. 디버깅 [은 원격 IIS 컴퓨터의 원격 디버깅 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) 를 참조 하세요.|
+|IIS 서버의 원격 디버그 ASP.NET Core|원격 도구를 사용 하 여 **프로세스에 연결**|*dotnet* 또는 *appname .exe*|앱 배포의 경우 [IIS에 게시](https://docs.asp.net/en/latest/publishing/iis.html)를 참조 하세요. 디버깅 [은 원격 IIS 컴퓨터의 원격 디버깅 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) 를 참조 하세요.|
 |지원 되는 앱 형식에 대해 로컬 IIS 서버에서 클라이언트 쪽 스크립트 디버깅 |**프로세스에 연결** 사용|*chrome*, *MicrosoftEdgeCP*또는 *iexplore.exe*|스크립트 디버깅을 사용 하도록 설정 해야 합니다. Chrome의 경우 디버그 모드에서 Chrome을 실행 하 고 **연결 대상** 필드에서 **Webkit 코드** 를 선택 해야 합니다.|
 |로컬 컴퓨터 C#에서, Visual Basic 또는 C++ 앱 디버그|표준 디버깅 (**F5**) 또는 **프로세스에 연결을 사용 합니다** .|*\<appname>.exe*|대부분의 시나리오에서는 표준 디버깅을 사용 하 고 **프로세스에 연결**하지 않습니다.|
-|Windows 데스크톱 응용 프로그램 원격 디버그|원격 도구|해당 사항 없음| [원격 디버그 C# 또는 앱 Visual Basic](../debugger/remote-debugging-csharp.md) 또는 [앱 원격 디버그를 C++ ](../debugger/remote-debugging-cpp.md) 참조 하세요.|
+|Windows 데스크톱 응용 프로그램 원격 디버그|원격 도구|해당 없음| [원격 디버그 C# 또는 앱 Visual Basic](../debugger/remote-debugging-csharp.md) 또는 [앱 원격 디버그를 C++ ](../debugger/remote-debugging-cpp.md) 참조 하세요.|
+|Linux에서 .NET Core 디버그|**프로세스에 연결** 사용|*dotnet.exe*|SSH를 사용 하려면 [ssh를 사용 하 여 Linux에서 실행 되는 원격 디버그 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조 하세요. Linux Docker 컨테이너를 사용 하려면 [Linux docker 컨테이너에서 실행 되는 프로세스에 연결](#BKMK_Docker_Attach)을 참조 하세요.|
 |디버거를 사용 하지 않고 앱을 시작한 후 로컬 컴퓨터에서 ASP.NET 앱 디버그|**프로세스에 연결** 사용|*iiexpress.exe*|이렇게 하면 프로 파일링 하는 경우와 같이 앱을 더 빠르게 로드 하는 데 도움이 될 수 있습니다. |
 |서버 프로세스에서 지원 되는 다른 앱 유형 디버깅|서버가 원격 이면 원격 도구를 사용 하 여 **프로세스에 연결** 합니다.|*chrome*, *iexplore.exe*또는 기타 프로세스|필요한 경우 리소스 모니터를 사용 하 여 프로세스를 식별 하는 데 도움을 줍니다. [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.|
-|UWP (유니버설 Windows 앱), OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|해당 사항 없음|**프로세스에 연결을** 사용 하는 대신 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 를 참조 하세요.|
-|Visual Studio에서 시작 하지 않은 UWP (유니버설 Windows 앱), OneCore, HoloLens 또는 IoT 앱 디버그|설치된 앱 패키지 디버그|해당 사항 없음|**프로세스에 연결을** 사용 하는 대신 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 를 참조 하세요.|
+|UWP (유니버설 Windows 앱), OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|해당 없음|**프로세스에 연결을** 사용 하는 대신 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 를 참조 하세요.|
+|Visual Studio에서 시작 하지 않은 UWP (유니버설 Windows 앱), OneCore, HoloLens 또는 IoT 앱 디버그|설치된 앱 패키지 디버그|해당 없음|**프로세스에 연결을** 사용 하는 대신 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 를 참조 하세요.|
 
 ## <a name="use-debugger-features"></a>디버거 기능 사용
 
@@ -267,7 +272,7 @@ UWP (유니버설 Windows 앱) 앱과 같은 일부 앱 형식의 경우 프로�
 
     이렇게 하면 연결이 완전히 실패하고 자세한 오류 메시지가 나타납니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [여러 프로세스 디버그](../debugger/debug-multiple-processes.md)
 - [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)

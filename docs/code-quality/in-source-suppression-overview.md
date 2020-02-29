@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587448"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167626"
 ---
 # <a name="suppress-code-analysis-warnings"></a>코드 분석 경고 표시 안 함
 
@@ -78,7 +78,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **범위** -경고가 표시 되지 않는 대상입니다. 대상이 지정 되지 않은 경우 특성의 대상으로 설정 됩니다. 지원 되는 [범위](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) 는 다음과 같습니다.
 
-  - `module`-이 범위는 어셈블리에 대 한 경고를 표시 하지 않습니다. 전체 프로젝트에 적용 되는 전역 비 표시 제거입니다.
+  - [`module`](#module-suppression-scope) -이 범위는 어셈블리에 대 한 경고를 표시 하지 않습니다. 전체 프로젝트에 적용 되는 전역 비 표시 제거입니다.
 
   - `resource`-([레거시 FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) 만 해당)이 범위는 모듈 (어셈블리)의 일부인 리소스 파일에 기록 된 진단 정보의 경고를 표시 하지 않습니다. 이 범위는 원본 파일만 분석 하는 C#Roslyn analyzer 진단에 대 한/vb 컴파일러에서 읽고 적용 되지 않습니다.
 
@@ -174,9 +174,17 @@ public class Animal
 > [!NOTE]
 > `Target`에는 항상 정규화 된 항목 이름이 포함 됩니다.
 
-## <a name="global-suppression-file"></a>전역 비 표시 파일
+### <a name="global-suppression-file"></a>전역 비 표시 파일
 
 전역 비 표시 오류 (suppression) 파일은 대상을 지정 하지 않는 전역 수준 비 표시 오류 (suppression) 또는 비 표시 오류 (suppression)를 유지 합니다. 예를 들어 어셈블리 수준 위반에 대 한 비 표시 오류는이 파일에 저장 됩니다. 또한 일부 ASP.NET 비 표시 오류는이 파일에 저장 됩니다 .이 파일은 폼의 코드에 대해 프로젝트 수준 설정을 사용할 수 없기 때문입니다. **오류 목록** 창에 있는 **표시 안 함** 명령의 **Project 비 표시 오류 (suppression) 파일** 옵션을 처음으로 선택 하면 전역 비 표시 오류 (suppression) 파일이 생성 되어 프로젝트에 추가 됩니다.
+
+### <a name="module-suppression-scope"></a>모듈 비 표시 범위
+
+**모듈** 범위를 사용 하 여 전체 어셈블리에 대 한 코드 품질 위반을 억제할 수 있습니다.
+
+예를 들어 _Globalsuppressions_ 표시 프로젝트 파일의 다음 특성은 ASP.NET Core 프로젝트에 대 한 system.threading.tasks.task.configureawait 위반을 표시 하지 않습니다.
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
 
 ## <a name="see-also"></a>참고 항목
 

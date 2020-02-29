@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091784"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167756"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis 프레임 워크를 C++ 사용 하 여 디버거에서 개체의 사용자 지정 뷰 만들기
 
@@ -94,6 +94,30 @@ Visual Studio 디버거는 프로젝트 에서 C++ natvis 파일을 자동으로
 >[!NOTE]
 >*.Pdb* 에서 로드 되는 Natvis 규칙은 *.pdb* 가 참조 하는 모듈의 형식에만 적용 됩니다. 예를 들어 module1.vb *.pdb* 에 `Test`라는 형식에 대 한 Natvis 항목이 있는 경우에는 module1.vb의 `Test` 클래스에만 적용 *됩니다.* 다른 모듈 에서도 이름이 `Test`인 클래스를 정의 하는 경우에는 *Module1.vb Natvis 항목이* 적용 되지 않습니다.
 
+**VSIX 패키지를 통해 natvis 파일을 설치 하 고 등록 하려면 다음을 수행 *합니다* .**
+
+VSIX 패키지는 *natvis* 파일을 설치 하 고 등록할 수 있습니다. 설치 된 위치에 관계 없이 등록 된 모든 *natvis* 파일은 디버깅 중에 자동으로 선택 됩니다.
+
+1. VSIX 패키지에 *natvis* 파일을 포함 합니다. 예를 들어 다음 프로젝트 파일의 경우입니다.
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+     <ItemGroup>
+       <VSIXSourceItem Include="Visualizer.natvis" />
+     </ItemGroup>
+   </Project>
+   ```
+
+2. *Source.extension.vsixmanifest* 파일에 *natvis* 파일을 등록 합니다.
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+     <Assets>
+       <Asset Type="NativeVisualizer" Path="Visualizer.natvis"  />
+     </Assets>
+   </PackageManifest>
+   ```
+
 ### <a name="BKMK_natvis_location"></a>Natvis 파일 위치
 
 사용자 디렉터리 또는 시스템 디렉터리 (여러 프로젝트에 적용 하려는 경우)에 *natvis* 파일을 추가할 수 있습니다.
@@ -104,19 +128,21 @@ Visual Studio 디버거는 프로젝트 에서 C++ natvis 파일을 자동으로
 
 2. 로드 C++ 된 프로젝트 또는 최상위 솔루션에 있는 모든 natvis 파일 이 그룹에는 클래스 C++ 라이브러리를 비롯 하 여 로드 된 모든 프로젝트가 포함 되지만 다른 언어의 프로젝트는 포함 되지 않습니다.
 
+3. VSIX 패키지를 통해 설치 및 등록 된 모든 *natvis* 파일
+
 ::: moniker range="vs-2017"
 
-3. 사용자 고유의 Natvis 디렉터리 (예: *%USERPROFILE%\Documents\Visual Studio 2017 \ 시각화 도우미*).
+4. 사용자 고유의 Natvis 디렉터리 (예: *%USERPROFILE%\Documents\Visual Studio 2017 \ 시각화 도우미*).
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. 사용자 고유의 Natvis 디렉터리 (예: *%USERPROFILE%\Documents\Visual Studio 2019 \ 시각화 도우미*).
+4. 사용자 고유의 Natvis 디렉터리 (예: *%USERPROFILE%\Documents\Visual Studio 2019 \ 시각화 도우미*).
 
 ::: moniker-end
 
-4. 시스템 차원 Natvis 디렉터리( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). 이 디렉터리에는 Visual Studio와 함께 설치 되는 *natvis* 파일이 있습니다. 관리자 권한이 있는 경우이 디렉터리에 파일을 추가할 수 있습니다.
+5. 시스템 차원 Natvis 디렉터리( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). 이 디렉터리에는 Visual Studio와 함께 설치 되는 *natvis* 파일이 있습니다. 관리자 권한이 있는 경우이 디렉터리에 파일을 추가할 수 있습니다.
 
 ## <a name="modify-natvis-files-while-debugging"></a>디버깅 하는 동안 natvis 파일 수정
 
@@ -670,7 +696,7 @@ UIVisualizer 요소의 예는 다음과 같습니다.
 
 - `ServiceId` - `Id` 특성 쌍은 `UIVisualizer`를 식별 합니다. `ServiceId`는 시각화 도우미 패키지에서 노출 하는 서비스의 GUID입니다. `Id`는 서비스에서 두 개 이상 제공 하는 경우 시각화 도우미를 구분 하는 고유 식별자입니다. 위의 예에서는 동일한 시각화 도우미 서비스에서 두 개의 시각화 도우미를 제공 합니다.
 
-- `MenuName` 특성은 디버거의 돋보기 아이콘 옆에 있는 드롭다운에 표시 되는 시각화 도우미 이름을 정의 합니다. 예들 들어 다음과 같습니다.
+- `MenuName` 특성은 디버거의 돋보기 아이콘 옆에 있는 드롭다운에 표시 되는 시각화 도우미 이름을 정의 합니다. 다음은 그 예입니다.
 
   ![UIVisualizer 도우미 메뉴 바로 가기 메뉴](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 메뉴 바로 가기 메뉴")
 
@@ -682,7 +708,7 @@ UIVisualizer 요소의 예는 다음과 같습니다.
 </Type>
 ```
 
- 메모리 내 비트맵을 보는 데 사용 되는 [이미지 조사식](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017) 확장의 `UIVisualizer` 예를 볼 수 있습니다.
+ 메모리 내 비트맵을 보는 데 사용 되는 [이미지 조사식](https://marketplace.visualstudio.com/search?term=%22Image%20Watch%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) 확장의 `UIVisualizer` 예를 볼 수 있습니다.
 
 ### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer 요소
  `CustomVisualizer`는 Visual Studio code에서 시각화를 제어 하기 위해 작성 하는 VSIX 확장을 지정 하는 확장성 지점입니다. VSIX 확장을 작성 하는 방법에 대 한 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.

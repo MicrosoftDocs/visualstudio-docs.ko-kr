@@ -14,20 +14,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec257d67530692fc885d971e21136c10e7a271f6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587682"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167797"
 ---
 # <a name="design-warnings"></a>디자인 경고
 
-디자인 경고는 [.Net 디자인 지침](/dotnet/standard/design-guidelines/)을 준수 하도록 지원 합니다.
+디자인 경고는 [.NET Framework 디자인 지침](/dotnet/standard/design-guidelines/)을 준수 하도록 지원 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
-| 규칙 | 설명 |
+| 규칙 | Description |
 | - | - |
 | [CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마십시오.](../code-quality/ca1000.md) | 제네릭 형식의 정적 멤버를 호출할 때는 형식에 형식 인수를 지정해야 합니다. 유추를 지원하지 않는 제네릭 인스턴스 멤버를 호출할 때는 멤버에 형식 인수를 지정해야 합니다. 이 두 가지 경우에 형식 인수를 지정하기 위한 구문은 서로 다르며 혼동되기 쉽습니다. |
 | [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](../code-quality/ca1001.md) | 클래스는 system.string 형식이 고 클래스에서 IDisposable을 구현 하지 않는 인스턴스 필드를 선언 하 고 구현 합니다. IDisposable 필드를 선언하는 클래스는 관리되지 않는 리소스를 간접적으로 소유하며 IDisposable 인터페이스를 구현해야 합니다. |
