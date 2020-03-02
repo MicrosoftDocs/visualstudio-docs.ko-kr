@@ -1,0 +1,78 @@
+### YamlMime:Landing
+title: Visual Studio 확장성
+summary: Visual Studio 확장성에 대해 자세히 알아보세요.
+metadata:
+  title: Visual Studio 확장성
+  description: Visual Studio를 확장하는 방법을 확인하세요.
+  ms.topic: landing-page
+  ms.date: 02/24/2020
+  author: madskristensen
+  ms.author: madsk
+  manager: jillfra
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.openlocfilehash: e37a713b133d76bbd3d0e3fa4363238d58407ce4
+  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77910863"
+landingContent:
+- title: 시작
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Visual Studio SDK 설치
+      url: /visualstudio/extensibility/installing-the-visual-studio-sdk/
+  - linkListType: overview
+    links:
+    - text: Visual Studio 확장 쓰기
+      url: https://devblogs.microsoft.com/visualstudio/getting-started-writing-visual-studio-extensions
+  - linkListType: tutorial
+    links:
+    - text: '첫 번째 확장 만들기: Hello World'
+      url: /visualstudio/extensibility/extensibility-hello-world
+- title: 확장
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 메뉴 및 명령
+      url: /visualstudio/extensibility/extending-menus-and-commands
+    - text: 도구 창
+      url: /visualstudio/extensibility/extending-and-customizing-tool-windows
+    - text: 편집기 및 언어
+      url: /visualstudio/extensibility/editor-and-language-service-extensions
+    - text: 언어 서버 프로토콜
+      url: /visualstudio/extensibility/language-server-protocol
+    - text: 설정 및 옵션
+      url: /visualstudio/extensibility/extending-user-settings-and-options
+- title: 리소스
+  linkLists:
+  - linkListType: sample
+    links:
+    - text: Visual Studio 확장성 샘플
+      url: https://github.com/Microsoft/VSSDK-Extensibility-Samples
+  - linkListType: learn
+    links:
+    - text: ExtendVS Gitter 커뮤니티
+      url: https://gitter.im/Microsoft/extendvs
+    - text: Visual Studio 블로그의 확장성
+      url: https://devblogs.microsoft.com/visualstudio/tag/extensions/
+- title: 배송 확장
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 확장 게시
+      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension
+    - text: 명령줄 게시
+      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension-via-command-line
+    - text: 프라이빗 갤러리
+      url: https://devblogs.microsoft.com/visualstudio/create-a-private-gallery-for-self-hosted-visual-studio-extensions
+- title: 새로운 기능 검색
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Visual Studio 2019 SDK
+      url: /visualstudio/extensibility/whats-new-visual-studio-2019-sdk
+    - text: Visual Studio 2017 SDK
+      url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk

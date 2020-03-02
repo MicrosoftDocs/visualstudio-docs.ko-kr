@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: IIS 컴퓨터의 원격 디버그 ASP.NET
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Azure의 원격 디버그 ASP.NET
+        - name: Azure의 ASP.NET Core 원격 디버그
           href: remote-debugging-azure.md
         - name: 'C# 또는 Visual Basic 프로젝트 원격 디버그'
           href: remote-debugging-csharp.md
         - name: C++ 프로젝트 원격 디버그
           href: remote-debugging-cpp.md
+        - name: Linux의 .NET Core 원격 디버그
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: 원격 디버거 포트 할당
           href: remote-debugger-port-assignments.md
         - name: 원격 디버깅을 위해 Windows 방화벽 구성
