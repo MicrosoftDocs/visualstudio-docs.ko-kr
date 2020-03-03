@@ -590,8 +590,6 @@
                   items:
                     - name: COM 서버 및 컨테이너 디버깅
                       href: com-server-and-container-debugging.md
-                    - name: RPC 디버깅을 사용하여 COM 클라이언트 및 서버 디버그
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX 컨트롤
                   items:
                     - name: ActiveX 컨트롤 디버그
