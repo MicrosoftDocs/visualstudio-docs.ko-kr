@@ -20,7 +20,7 @@ ms.locfileid: "76114651"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전 side-by-side 설치
 
-이전 또는 이후 버전의 Visual Studio가 이미 설치된 컴퓨터에 Visual Studio를 설치할 수 있습니다.
+이미 예전 또는 보다 최신 버전의 Visual Studio가 설치된 컴퓨터에 Visual Studio를 설치할 수 있습니다.
 
 ::: moniker range="vs-2017"
 
