@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596348"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633891"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>방법: 대상 및 작업 구성
+
+선택된 MSBuild 작업은 개발 컴퓨터의 환경에 관계 없이 대상으로 지정된 환경에서 실행되도록 설정할 수 있습니다. 예를 들어 64비트 컴퓨터를 사용하여 32비트 아키텍처를 대상으로 하는 애플리케이션을 빌드할 경우 선택한 작업은 32비트 프로세스에서 실행됩니다.
 선택된 MSBuild 작업은 개발 컴퓨터의 환경에 관계 없이 대상으로 지정된 환경에서 실행되도록 설정할 수 있습니다. 예를 들어 64비트 컴퓨터를 사용하여 32비트 아키텍처를 대상으로 하는 애플리케이션을 빌드할 경우 선택한 작업은 32비트 프로세스에서 실행됩니다.
 
 > [!NOTE]
 > 빌드 작업이 Visual C# 또는 Visual Basic 같은 .NET 언어로 작성되고 네이티브 리소스 또는 도구를 사용하지 않는 경우 조정 없이도 모든 대상 컨텍스트에서 실행됩니다.
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask 특성 및 작업 매개 변수
+
 다음 `UsingTask` 특성은 특정 빌드 프로세스에서 작업의 모든 작동에 영향을 줍니다.
 
 - `Runtime` 특성(있는 경우)은 CLR(공용 언어 런타임) 버전을 설정하고 `CLR2`, `CLR4`, `CurrentRuntime` 또는 `*`(임의 런타임) 값 중 하나를 사용할 수 있습니다.
@@ -74,6 +77,7 @@ MSBuild가 작업을 실행하기 전에 동일한 대상 컨텍스트를 갖는
 ```
 
 ## <a name="task-factories"></a>작업 팩터리
+
 작업을 실행하기 전에 MSBuild는 작업이 현재 소프트웨어 컨텍스트에서 실행되도록 지정되어 있는지 여부를 확인합니다. 작업이 이렇게 지정된 경우 MSBuild는 작업을 현재 프로세스에서 실행하는 AssemblyTaskFactory로 전달하고, 그렇지 않으면 대상 컨텍스트와 일치하는 프로세스에서 작업을 실행하는 TaskHostFactory로 작업을 전달합니다. 현재 컨텍스트 및 대상 컨텍스트가 일치하더라도 `TaskFactory`를 `TaskHostFactory`로 설정하여 강제로 작업이 out-of-process로 실행되도록 할 수 있습니다(격리, 보안 또는 기타 이유로).
 
 ```xml
@@ -84,6 +88,7 @@ MSBuild가 작업을 실행하기 전에 동일한 대상 컨텍스트를 갖는
 ```
 
 ## <a name="phantom-task-parameters"></a>가상 작업 매개 변수
+
 다른 모든 작업 매개 변수와 마찬가지로 `MSBuildRuntime` 및 `MSBuildArchitecture`는 빌드 속성에서 설정할 수 있습니다.
 
 ```xml
@@ -108,4 +113,5 @@ MSBuild가 작업을 실행하기 전에 동일한 대상 컨텍스트를 갖는
 > 작업 매개 변수는 작업 호스트의 컨텍스트가 아니라 부모 노드의 컨텍스트에서 평가됩니다. 런타임 종속적 또는 아키텍처 종속적 환경 변수(예: *프로그램 파일* 위치)는 부모 노드와 일치하는 값으로 평가됩니다. 그러나 동일한 환경 변수를 작업에서 직접 읽을 경우 작업 호스트의 컨텍스트에서 올바르게 평가됩니다.
 
 ## <a name="see-also"></a>참조
+
 - [대상 및 작업 구성](../msbuild/configuring-targets-and-tasks.md)

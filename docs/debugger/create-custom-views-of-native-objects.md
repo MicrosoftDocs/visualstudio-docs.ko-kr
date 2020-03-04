@@ -1,7 +1,7 @@
 ---
 title: C++ 개체의 사용자 지정 뷰 만들기
 description: Natvis 프레임 워크를 사용 하 여 Visual Studio에서 디버거의 네이티브 형식이 표시 되는 방식 사용자 지정
-ms.date: 10/31/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 064761d87b9aa851e40cf906e7734a3578dcad1a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167756"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234971"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis 프레임 워크를 C++ 사용 하 여 디버거에서 개체의 사용자 지정 뷰 만들기
 
@@ -537,7 +537,10 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 `ValueNode` 비워 두거나 `this`를 사용 하 여 `LinkedListItems` 노드 자체를 참조할 수 있습니다.
 
 #### <a name="customlistitems-expansion"></a>CustomListItems 확장
+
 `CustomListItems` 확장을 사용하여 해시 테이블 같은 데이터 구조 전송에 대한 사용자 지정 논리를 작성할 수 있습니다. `CustomListItems`를 사용 하 여 평가 해야 하는 C++ 모든 항목에 대해 식을 사용할 수 있지만 `ArrayItems`, `IndexListItems`또는 `LinkedListItems`에 대 한 몰드에는 맞지 않는 데이터 구조를 시각화할 수 있습니다.
+
+`Exec`를 사용 하 여 확장에 정의 된 변수 및 개체를 사용 하 여 `CustomListItems` 확장 내에서 코드를 실행할 수 있습니다. `Exec`에서 논리 연산자, 산술 연산자 및 대입 연산자를 사용할 수 있습니다. 식 계산기에서 지원 되는 C++ [디버거 내장 함수](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) 를 제외 하 고 `Exec`를 사용 하 여 함수를 계산할 수 없습니다.
 
 `CAtlMap`에 대 한 다음 시각화 도우미는 `CustomListItems` 적합 한 좋은 예입니다.
 
@@ -569,24 +572,6 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
     </Expand>
 </Type>
 ```
-
-`Exec`를 사용 하 여 확장에 정의 된 변수 및 개체를 사용 하 여 `CustomListItems` 확장 내에서 코드를 실행할 수 있습니다. `Exec`에서 논리 연산자, 산술 연산자 및 대입 연산자를 사용할 수 있습니다. `Exec`를 사용 하 여 함수를 계산할 수 없습니다.
-
-`CustomListItems`는 다음과 같은 내장 함수를 지원 합니다.
-
-- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
-- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, `DynamicMemberLookup`, `DecodePointer`, `DynamicCast`
-- `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
-- `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)`
-- `ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `Stdext_HashMap_Int_OperatorBracket_idx`
-- `Std_UnorderedMap_Int_OperatorBracket_idx`
-- `TreeTraverse_Init // Initializes a new tree traversal`
-- `TreeTraverse_Next // Returns nodes in a tree`
-- `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> TreeItems 확장
  시각화된 형식이 트리를 나타내는 경우 디버거에서는 `TreeItems` 노드를 사용하여 트리를 단계별로 진행하면서 해당 자식을 표시할 수 있습니다. `TreeItems` 노드를 사용 하는 `std::map` 형식에 대 한 시각화는 다음과 같습니다.

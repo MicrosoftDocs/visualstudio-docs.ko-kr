@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576058"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633865"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>방법: 빌드에서 파일 제외
+
 프로젝트 파일에서 와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 빌드의 입력으로 포함할 수 있습니다. 그러나 해당 디렉터리 또는 중첩된 디렉터리 집합 중 하나의 디렉터리에 빌드의 입력으로 포함하지 않으려는 하나의 파일이 있을 수 있습니다. 입력 목록에서 해당 파일 또는 디렉터리를 명시적으로 제외할 수 있습니다. 특정 조건에서만 포함하려는 파일이 프로젝트에 있을 수도 있습니다. 파일을 빌드에 포함할 조건을 명시적으로 선언할 수 있습니다.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>빌드의 입력에서 파일 또는 디렉터리 제외
- 항목 목록은 빌드에 사용할 입력 파일입니다. 포함할 항목은 `Include` 특성을 사용하여 그룹으로 또는 개별적으로 선언됩니다. 예:
+
+ 항목 목록은 빌드에 사용할 입력 파일입니다. 포함할 항목은 `Include` 특성을 사용하여 그룹으로 또는 개별적으로 선언됩니다. 예를 들어:
 
 ```xml
 <CSFile Include="Form1.cs"/>
@@ -76,6 +78,7 @@ ms.locfileid: "75576058"
     > 두 특성의 경로를 모두 지정해야 합니다. `Include` 특성에서 파일 위치를 지정할 때 절대 경로를 사용하는 경우 `Exclude` 특성에서도 절대 경로를 사용해야 하고, `Include` 특성에서 상대 경로를 사용하는 경우 `Exclude` 특성에서도 상대 경로를 사용해야 합니다.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>조건을 사용하여 빌드의 입력에서 파일 또는 디렉터리 제외
+
  예를 들어 디버그 빌드에 포함하지만 릴리스 빌드에는 포함하지 않으려는 항목이 있는 경우 `Condition` 특성을 사용하여 항목을 포함할 조건을 지정할 수 있습니다.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>*Formula.vb* 파일을 릴리스 빌드에만 포함하려면
@@ -89,6 +92,7 @@ ms.locfileid: "75576058"
     ```
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 *Form2.cs*를 제외한 모든 *.cs* 파일을 디렉터리에 포함한 프로젝트를 빌드합니다.
 
 ```xml
@@ -123,6 +127,7 @@ ms.locfileid: "75576058"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [항목](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)

@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22be291184ebf02ae0455f5b4656b1dec976dc89
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578293"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631499"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 작업
+
 COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [RegisterAssembly 작업](../msbuild/registerassembly-task.md)의 역작업을 수행합니다.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 `UnregisterAssembly` 작업의 매개 변수에 대해 설명합니다.
 
 |매개 변수|설명|
@@ -38,11 +40,13 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
 |`TypeLibFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 지정된 어셈블리에서 지정된 형식 라이브러리의 등록을 취소합니다. **참고:**  이 매개 변수는 형식 라이브러리 파일 이름이 어셈블리 이름과 다른 경우에 필요합니다.|
 
 ## <a name="remarks"></a>설명
+
  이 작업이 성공하기 위해 이 어셈블리가 있어야 할 필요는 없습니다. 존재하지 않는 어셈블리의 등록을 취소하려고 하면 작업은 성공하지만 경고가 발생합니다. 이 작업의 해당 작업이 레지스트리에서 어셈블리 등록을 제거하는 것이기 때문입니다. 어셈블리가 없으면 레지스트리에 없으므로 작업은 성공합니다.
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:System.MarshalByRefObject> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 클래스의 매개 변수도 상속합니다. `MarshalByRefObject` 클래스는 <xref:Microsoft.Build.Utilities.Task> 클래스와 동일한 기능을 제공하지만 해당 애플리케이션 도메인에서 인스턴스화될 수 있습니다.
 
 ## <a name="example"></a>예제
+
  다음 예제에서는 `UnregisterAssembly` 작업을 사용하여 `OutputPath` 및 `FileName` 속성으로 지정된 경로에서 어셈블리(있는 경우)의 등록을 취소합니다.
 
 ```xml
@@ -61,6 +65,7 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
 ```
 
 ## <a name="see-also"></a>참조
+
 - [RegisterAssembly 작업](../msbuild/registerassembly-task.md)
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

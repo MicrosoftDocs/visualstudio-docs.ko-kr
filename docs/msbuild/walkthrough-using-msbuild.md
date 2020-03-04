@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567296"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631083"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 
@@ -192,6 +192,7 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
  위의 코드가 프로젝트 파일 뒷부분이나 프로젝트 파일에서 나중에 가져온 파일에 나오는 경우 TargetFrameworkVersion은 새 값인 "v3.5"를 사용합니다.
 
 ## <a name="examine-a-property-value"></a>속성 값 검사
+
  속성값을 가져오려면 다음 구문을 사용합니다. 여기서 PropertyName는 속성의 이름입니다.
 
 ```xml
@@ -411,6 +412,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>포함, 제외 및 와일드카드
+
  Include 특성에서 와일드카드 "*", "\*\*" 및 "?"를 사용하여 항목 종류에 항목을 추가할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```xml
@@ -486,6 +488,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
     ```
 
 ## <a name="item-metadata"></a>항목 메타데이터
+
  항목은 Include 및 Exclude 특성에서 수집된 정보 외에 메타데이터를 포함할 수 있습니다. 이 메타데이터는 항목 값뿐만이 아니라 항목에 대한 추가 정보를 필요로 하는 작업에서 사용할 수 있습니다.
 
  메타데이터의 이름을 항목 자식 요소로 사용하여 요소를 만드는 방법으로 프로젝트 파일에서 항목 메타데이터를 선언합니다. 항목은 메타데이터 값을 포함하지 않을 수도 있고 하나 이상 포함할 수도 있습니다. 예를 들어 다음 CSFile 항목에는 값이 "Fr"인 Culture 메타데이터가 있습니다.

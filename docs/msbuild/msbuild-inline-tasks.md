@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593657"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633319"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 인라인 작업
+
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
  .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 따라서 소스 코드를 추적하기 위해 더 쉽고 작업을 배포하기도 더 쉽습니다. 소스 코드는 스크립트에 통합됩니다.
 
  MSBuild 15.8에서 .NET Standard 플랫폼 간 인라인 작업을 만들 수 있도록 [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md)가 추가되었습니다.  .NET Core에서 인라인 작업을 사용하는 경우 RoslynCodeTaskFactory를 사용해야 합니다.
 ## <a name="the-structure-of-an-inline-task"></a>인라인 작업의 구조
+
  인라인 작업은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소에 의해 포함됩니다. 인라인 작업 및 이 작업을 포함하는 `UsingTask` 요소는 일반적으로 *.targets* 파일에 포함되며 필요할 때 다른 프로젝트 파일로 가져옵니다. 다음은 기본 인라인 작업입니다. 이 작업은 아무 것도 수행하지 않습니다.
 
 ```xml
@@ -68,6 +70,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 > `Task` 요소에 의해 포함된 요소는 작업 팩터리(이 경우 코드 작업 팩터리)마다 고유합니다.
 
 ### <a name="code-element"></a>Code 요소
+
  `Task` 요소 내에 마지막으로 나타나는 자식 요소는 `Code` 요소입니다. `Code` 요소는 작업으로 컴파일하려는 코드를 포함하거나 이러한 코드를 찾습니다. `Code` 요소에 포함하는 내용은 작업을 작성하려는 방법에 따라 다릅니다.
 
  `Language` 특성은 코드가 작성된 언어를 지정합니다. 허용되는 값은 C#의 경우 `cs`, Visual Basic의 경우 `vb`입니다.
@@ -88,6 +91,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 > 소스 파일에서 클래스 이름을 정의할 때 클래스 이름은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소의 `TaskName` 특성에 부합되어야 합니다.
 
 ## <a name="helloworld"></a>HelloWorld
+
  다음은 좀 더 강력한 인라인 작업입니다. HelloWorld 작업은 일반적으로 시스템 콘솔 또는 Visual Studio **출력** 창에 해당하는 기본 오류 로깅 디바이스에 "Hello, world!"를 표시합니다. 이 예제의 `Reference` 요소는 단지 설명을 위해 포함되었습니다.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>입력 및 출력 매개 변수
+
  인라인 작업 매개 변수는 `ParameterGroup` 요소의 자식 요소입니다. 모든 매개 변수는 해당 매개 변수를 정의하는 요소의 이름을 사용합니다. 다음 코드는 매개 변수 `Text`를 정의합니다.
 
 ```xml
@@ -162,6 +167,7 @@ Log.LogError("Hello, world!");
 `Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.
 
 ## <a name="example"></a>예제
+
  다음 인라인 작업은 지정된 파일에서 나오는 모든 토큰을 지정된 값으로 바꿉니다.
 
 ```xml
@@ -190,5 +196,6 @@ File.WriteAllText(Path, content);
 ```
 
 ## <a name="see-also"></a>참조
+
 - [작업](../msbuild/msbuild-tasks.md)
 - [연습: 인라인 작업 만들기](../msbuild/walkthrough-creating-an-inline-task.md)

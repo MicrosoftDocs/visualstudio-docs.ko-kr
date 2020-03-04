@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574329"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633774"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>방법: 프로젝트 파일에서 예약된 XML 문자 사용
+
 프로젝트 파일을 작성할 경우 속성 값이나 작업 매개 변수 값 등에서 예약된 XML 문자를 사용해야 합니다. 그러나 프로젝트 파일을 구문 분석할 수 있도록 일부 예약된 문자를 명명된 엔터티로 바꿔야 합니다.
 
 ## <a name="use-reserved-characters"></a>예약 문자 사용
+
  다음 표에서는 프로젝트 파일을 구문 분석할 수 있도록 해당 명명된 엔터티로 대체되어야 하는 예약된 XML 문자를 설명합니다.
 
 |예약된 문자|명명된 엔터티|
@@ -41,6 +43,7 @@ ms.locfileid: "75574329"
     ```
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 프로젝트 파일에서 출력된 메시지에서 파일 이름을 강조 표시할 때 큰따옴표가 사용됩니다.
 
 ```xml
@@ -71,5 +74,6 @@ ms.locfileid: "75574329"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

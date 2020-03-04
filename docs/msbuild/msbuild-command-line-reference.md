@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb95da599e6362ad32c0ef94dcf9c184269ddedf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278407"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633410"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 명령줄 참조
 
@@ -85,6 +85,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noConsoleLogger|-noconlog|기본 콘솔 로거를 사용하지 않도록 설정하고 콘솔에 이벤트를 로깅하지 않습니다.|
 
 ## <a name="example"></a>예제
+
  다음 예제에서는 *MyProject.proj* 프로젝트의 `rebuild` 대상을 빌드합니다.
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>예제
+
  *MSBuild.exe*를 사용하여 보다 복잡한 빌드를 수행할 수 있습니다. 예를 들어 이 프로그램을 사용하여 솔루션에 특정 프로젝트의 특정 대상을 빌드할 수 있습니다. 다음 예제에서는 `NotInSolutionFolder` 프로젝트를 다시 빌드하고, *NewFolder* 솔루션 폴더에 있는 `InSolutionFolder` 프로젝트를 정리합니다.
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>참조
+
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [일반적인 MSBuild 프로젝트 속성](../msbuild/common-msbuild-project-properties.md)

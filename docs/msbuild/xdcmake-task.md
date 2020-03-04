@@ -19,22 +19,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578125"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630654"
 ---
 # <a name="xdcmake-task"></a>XDCMake 작업
+
 XML 문서 주석( *.xdc*) 파일을 *.xml* 파일에 병합하는 XML 문서 도구(*xdcmake.exe*)를 래핑합니다.
 
  C++ 소스 코드에 문서 주석을 제공하고 [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) 컴파일러 옵션을 사용하여 컴파일할 때 *.xdc* 파일이 생성됩니다. 자세한 내용은 *xdcmake.exe*에 대한 [XDCMake 참조](/cpp/build/reference/xdcmake-reference), [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages) 및 명령줄 도움말 옵션( **/?** )을 참조하세요.
 
 ## <a name="remarks"></a>설명
+
  기본적으로 *xdcmake.exe* 도구는 몇 가지 명령줄 옵션을 지원합니다. **/old** 명령줄 옵션을 지정하면 추가 옵션이 지원됩니다.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 **XDCMake** 작업의 매개 변수에 대해 설명합니다.
 
 |매개 변수|설명|
@@ -50,4 +53,5 @@ XML 문서 주석( *.xdc*) 파일을 *.xml* 파일에 병합하는 XML 문서 �
 |**TrackerLogDirectory**|선택적 **문자열** 매개 변수입니다.<br /><br /> 추적기 로그용 디렉터리를 지정합니다.|
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

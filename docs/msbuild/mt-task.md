@@ -24,17 +24,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595032"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633059"
 ---
 # <a name="mt-task"></a>MT 작업
+
 Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 **MT** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.
 
 > [!NOTE]
@@ -69,4 +71,5 @@ Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용�
 |**VerboseOutput**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 자세한 디버깅 정보를 표시합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/verbose** 옵션을 참조하세요.|
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

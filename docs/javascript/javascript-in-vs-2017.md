@@ -12,13 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888656"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234958"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
@@ -261,7 +260,7 @@ VSDoc는 이제 더 쉽게 작성할 수 있고 JavaScript의 표준으로 승�
 새 언어 서비스는 실행 엔진이 아니라 정적 분석을 통해 구현되므로(차이점에 대한 정보는 [이 문제](https://github.com/Microsoft/TypeScript/issues/4789) 참조) 더 이상 감지되지 않는 JavaScript 패턴이 몇 가지 있습니다.
 가장 일반적인 패턴은 “expando” 패턴입니다.
 현재 언어 서비스에서는 선언 후에 추가된 속성이 있는 개체에서 IntelliSense를 제공할 수 없습니다.
-예:
+예를 들어:
 
 ```js
 var obj = {};

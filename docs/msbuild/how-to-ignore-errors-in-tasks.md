@@ -9,17 +9,19 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: be8b4a6845e8fd14a0649f4134bcc26d8e1ad08e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574953"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633826"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
+
 경우에 따라 빌드에서 특정 작업의 폴트 발생을 허용하고자 합니다. 중요하지 않은 작업이 실패할 경우 필요한 출력이 계속 생성될 수 있으므로 빌드를 계속 진행하고자 합니다. 예를 들어 각 구성 요소가 빌드된 후 프로젝트에서 `SendMail` 작업을 사용하여 전자 메일 메시지를 보낸다면 메일 서버를 사용할 수 없고 상태 메시지를 보낼 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다. 또는 예를 들어 일반적으로 빌드 중에 중간 파일이 삭제된다면 해당 파일을 삭제할 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다.
 
 ## <a name="use-the-continueonerror-attribute"></a>ContinueOnError 특성 사용
+
 `Task` 요소의 `ContinueOnError` 특성은 작업 실패가 발생할 경우 빌드를 중지하거나 계속할지 여부를 제어합니다. 이 특성은 빌드를 계속할 경우 오류를 오류 또는 경고로 처리할지 여부를 제어합니다.
 
 `ContinueOnError` 특성은 다음 값 중 하나를 포함할 수 있습니다.
@@ -36,13 +38,14 @@ ms.locfileid: "75574953"
 
 #### <a name="to-ignore-an-error-in-a-task"></a>작업의 오류를 무시하려면
 
-작업의 `ContinueOnError` 특성을 사용합니다. 예:
+작업의 `ContinueOnError` 특성을 사용합니다. 예를 들어:
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
 ```
 
 ## <a name="example"></a>예제
+
 다음 코드 예제에서는 `Delete` 작업이 실패하더라도 `Build` 대상이 계속 실행되고 빌드가 성공한 것으로 간주됨을 보여 줍니다.
 
 ```xml
@@ -62,6 +65,7 @@ ms.locfileid: "75574953"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [MSBuild](../msbuild/msbuild.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

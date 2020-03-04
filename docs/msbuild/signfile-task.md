@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397366a7dac601cd11dc1c70efc352edf303a92e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579572"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632292"
 ---
 # <a name="signfile-task"></a>SignFile 작업
 
@@ -74,5 +74,6 @@ ms.locfileid: "77579572"
 > 인증서 지문은 인증서의 SHA-1 해시입니다. 자세한 내용은 [신뢰할 수 있는 루트 CA 인증서의 SHA-1 해시 얻기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))를 참조하세요. 인증서 세부 정보에서 지문을 복사하여 붙여넣는 경우 추가(3F) 보이지 않는 문자를 포함하지 마세요. 이로 인해 `SignFile`이 인증서를 찾지 못할 수 있습니다.
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

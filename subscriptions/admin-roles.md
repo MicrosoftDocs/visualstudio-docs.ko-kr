@@ -3,15 +3,15 @@ title: 관리 포털의 슈퍼 관리자 및 관리자 역할
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: 슈퍼 관리자 및 관리자 역할과 관리자를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 1beda505008815b87a0de98ee597d7b5ec97693d
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000943"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234833"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio 구독 계약을 위한 슈퍼 관리자 및 관리자
 
@@ -39,6 +39,13 @@ ms.locfileid: "70000943"
 
 ## <a name="resources"></a>리소스
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>다음 단계
 - [구독을 할당](assign-license.md)하는 방법 알아보기

@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59523e3f6b12eb5921235efcf15d7937a14e7247
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c5df538e7eb86a20dfc06e6e6558bded577ba3d2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595100"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632383"
 ---
 # <a name="setenv-task"></a>SetEnv 작업
+
 지정된 환경 변수의 값을 설정하거나 삭제합니다.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 **SetEnv** 작업의 매개 변수에 대해 설명합니다.
 
 |매개 변수|설명|
@@ -41,4 +43,5 @@ ms.locfileid: "75595100"
 |**값**|선택적 **문자열** 매개 변수입니다.<br /><br /> **이름** 매개 변수에서 지정한 환경 변수에 할당된 값입니다. **값**이 비어 있고 해당 변수가 존재하면 변수가 삭제됩니다. 변수가 존재하지 않으면 작업을 수행할 수 없더라도 오류가 발생하지 않습니다.<br /><br /> 자세한 내용은 [Environment::SetEnvironmentVariable 메서드](xref:System.Environment.SetEnvironmentVariable%2A)를 참조하세요.|
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

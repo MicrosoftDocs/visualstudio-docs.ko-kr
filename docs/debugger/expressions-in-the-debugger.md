@@ -1,6 +1,6 @@
 ---
 title: 디버거의 식 | Microsoft Docs
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736210"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235005"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 식
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.
@@ -101,10 +101,10 @@ int main()
 |----------|-------------------------|
 |**문자열 길이**|strlen, wcslen, strnlen, wcsnlen|
 |**문자열 비교**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**문자열 검색**|strchr, wcschr, strstr, wcsstr|
-|**Win32**|GetLastError(), TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> 이러한 함수를 사용하려면 디버깅 중인 프로세스가 Windows 8에서 실행되어야 합니다. Windows 8 디바이스에서 생성된 덤프 파일을 디버깅하려면 Visual Studio 컴퓨터에서 Windows 8이 실행되어야 합니다. 그러나 Windows 8 디바이스를 원격으로 디버그하는 경우에는 Visual Studio 컴퓨터에서 Windows 7이 실행될 수 있습니다.|
-|**기타**|__log2<br /><br /> 가장 가까운 낮은 정수로 반올림된 밑이 2인 지정된 정수의 로그 값을 반환합니다.|
+|**문자열 검색**|strchr, wcschr, memchr, wmemchr, strchr, wmemchr|
+|**Win32**|GetLastError, TlsGetValue|
+|**Windows 8**|WindowsGetStringLen, WindowsGetStringRawBuffer<br /><br /> 이러한 함수를 사용하려면 디버깅 중인 프로세스가 Windows 8에서 실행되어야 합니다. Windows 8 디바이스에서 생성된 덤프 파일을 디버깅하려면 Visual Studio 컴퓨터에서 Windows 8이 실행되어야 합니다. 그러나 Windows 8 디바이스를 원격으로 디버그하는 경우에는 Visual Studio 컴퓨터에서 Windows 7이 실행될 수 있습니다.|
+|**기타**|__log2//지정 된 정수의 로그 밑 2를 가장 작은 정수로 반올림 하 여 반환 합니다.<br /><br />__findNonNull, DecodeHString, WindowsCompareStringOrdinal, RoInspectCapturedStackBackTrace, CoDecodeProxy, GetEnvBlockLength, DecodeWinRTRestrictedException, DynamicMemberLookup, DecodePointer, DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: array < >:: operator [index < >] 및 연산자 (인덱스 < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: array < >:: operator (int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: array < >:: operator [tiled_index < >] 및 연산자 (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: operator [index < >] 및 연산자 (인덱스 < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: operator (int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: operator [tiled_index < >] 및 연산자 (tiled_index < >)<br /><br />새 트리 순회를 TreeTraverse_Init//초기화 합니다.<br /><br />트리의 노드를 TreeTraverse_Next//반환 합니다.<br /><br />보류 중인 트리 순회에서 노드를 TreeTraverse_Skip//건너뜁니다. '|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 지원되지 않는 식
 
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - 지원되지 않는 식
 
 ### <a name="dynamic-objects"></a>동적 개체
-디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. @No__t_0를 구현 하는 개체가 조사식 창에서 계산 되 면 동적 뷰 노드가 추가 됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.
+디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. <xref:System.Dynamic.IDynamicMetaObjectProvider>를 구현 하는 개체가 조사식 창에서 계산 되 면 동적 뷰 노드가 추가 됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.
 
 동적 개체의 다음 기능은 지원되지 않습니다.
 
@@ -204,7 +204,7 @@ Import 별칭은 지원되지 않습니다.
 
 - `End Sub` 또는 `Module`과 같은 네임스페이스 또는 모듈 수준 키워드
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [C++의 형식 지정자](../debugger/format-specifiers-in-cpp.md)
 - [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)
 - [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)

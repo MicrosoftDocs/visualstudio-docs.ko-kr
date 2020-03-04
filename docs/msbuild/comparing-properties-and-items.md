@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596127"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634411"
 ---
 # <a name="compare-properties-and-items"></a>속성 및 항목 비교하기
+
 MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을 확인한 다음 프로젝트 파일 전체에서 참조할 수 있는 값을 저장하는 데 사용됩니다.
 
 - 속성은 이름-값 쌍입니다. 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
@@ -25,9 +26,11 @@ MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을
 - 항목은 일반적으로 파일을 나타내는 개체입니다. 항목 개체에는 연결된 메타데이터 컬렉션이 있을 수 있습니다. 메타데이터는 이름-값 쌍입니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.
 
 ## <a name="scalars-and-vectors"></a>스칼라 및 벡터
+
 MSBuild 속성은 문자열 값이 하나만 있는 이름-값 쌍이므로 보통 *스칼라*로 설명됩니다. MSBuild 항목 종류는 항목의 목록이므로 보통 *벡터*로 설명됩니다. 그러나 실제로 속성이 여러 값을 나타낼 수 있으며 항목 종류에는 0개 또는 1개의 항목이 있을 수 있습니다.
 
 ### <a name="target-dependency-injection"></a>대상 종속성 주입
+
 속성에서 여러 값을 나타낼 수 있는 방법을 알아보려면 빌드할 대상의 목록에 대상을 추가하기 위한 일반적인 사용 패턴을 고려해 보세요. 이 목록은 일반적으로 대상 이름이 세미콜론으로 구분된 속성 값으로 표시됩니다.
 
 ```xml
@@ -56,6 +59,7 @@ MSBuild 속성은 문자열 값이 하나만 있는 이름-값 쌍이므로 보�
 MSBuild 4.0부터는 대상 종속성 주입이 더 이상 사용되지 않습니다. 대신 `AfterTargets` 및 `BeforeTargets` 특성을 사용하세요. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.
 
 ### <a name="conversions-between-strings-and-item-lists"></a>문자열과 항목 목록 간의 변환
+
 MSBuild는 필요에 따라 항목 종류 및 문자열 값 간의 변환을 수행합니다. 항목 목록이 문자열 값이 되는 방법을 알아보려면 항목 종류가 MSBuild 속성의 값으로 사용되는 경우 발생하는 상황을 고려해야 합니다.
 
 ```xml
@@ -70,6 +74,7 @@ MSBuild는 필요에 따라 항목 종류 및 문자열 값 간의 변환을 수
 OutputDir 항목 종류에는 "KeyFiles\\;Certificates\\" 값을 가진 `Include` 특성이 있습니다. MSBuild는 이 문자열을 두 개의 항목인 KeyFiles\ 및 Certificates\\로 구문 분석합니다. OutputDir 항목 종류가 OutputDirList 속성의 값으로 사용되면 MSBuild에서 항목 종류를 세미콜론으로 구분된 문자열 "KeyFiles\\;Certificates\\"로 변환하거나 “평면화"합니다.
 
 ## <a name="properties-and-items-in-tasks"></a>작업의 속성 및 항목
+
 속성 및 항목은 MSBuild 작업의 입력 및 출력으로 사용됩니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
 속성은 특성으로 작업에 전달됩니다. 작업 내에서 MSBuild 속성은 값이 문자열 간에 변환될 수 있는 속성 형식으로 표시됩니다. 지원되는 속성 형식에는 `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` 및 <xref:System.Convert.ChangeType%2A>에서 처리할 수 있는 모든 형식이 포함되어 있습니다.
@@ -79,6 +84,7 @@ OutputDir 항목 종류에는 "KeyFiles\\;Certificates\\" 값을 가진 `Include
 항목 종류의 항목 목록은 `ITaskItem` 개체의 배열로 전달될 수 있습니다. .NET Framework 3.5부터는 `Remove` 특성을 사용하여 항목 목록에서 항목을 제거할 수 없습니다. 항목 목록에서 항목을 제거할 수 있으므로, 항목 종류의 항목이 0개일 수도 있습니다. 항목 목록이 작업에 전달되면 작업의 코드에서 이러한 가능성을 확인해야 합니다.
 
 ## <a name="property-and-item-evaluation-order"></a>속성 및 항목 평가 순서
+
 빌드의 평가 단계 중 가져온 파일은 표시되는 순서대로 빌드에 통합됩니다. 속성 및 항목이 다음과 같은 순서로 세 단계로 정의됩니다.
 
 - 속성이 표시되는 순서대로 정의되고 수정됩니다.
@@ -104,6 +110,7 @@ OutputDir 항목 종류에는 "KeyFiles\\;Certificates\\" 값을 가진 `Include
   - 대상 내에 정의된 속성 및 항목이 표시되는 순서대로 함께 평가됩니다. 속성 함수가 실행되며, 속성 값이 식 내에서 확장됩니다. 항목 값 및 항목 변환도 확장됩니다. 속성 값, 항목 종류 값 및 메타데이터 값은 확장된 식으로 설정됩니다.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>평가 순서의 미묘한 효과
+
 빌드의 평가 단계에서 속성 확인이 항목 확인 앞에 옵니다. 그럼에도 불구하고 속성은 항목 값에 따라 다르게 표시되는 값을 가질 수 있습니다. 다음 스크립트를 살펴보세요.
 
 ```xml
@@ -179,4 +186,5 @@ KeyFileVersion: 1.0.0.3
 ```
 
 ## <a name="see-also"></a>참조
+
 - [고급 개념](../msbuild/msbuild-advanced-concepts.md)

@@ -18,20 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b722604249b9c395f06bb038102d731fafe2efc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590074"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634333"
 ---
 # <a name="createitem-task"></a>CreateItem 작업
+
 항목 컬렉션을 입력 항목으로 채웁니다. 이를 통해 한 목록의 항목을 다른 목록으로 복사할 수 있습니다.
 
 > [!NOTE]
 > 이 작업은 더 이상 사용되지 않습니다. .NET Framework 3.5부터 항목 그룹은 [Target](../msbuild/target-element-msbuild.md) 요소 내에 배치될 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.
 
 ## <a name="attributes"></a>특성
+
  다음 표에서는 `CreateItem` 작업의 매개 변수에 대해 설명합니다.
 
 |매개 변수|설명|
@@ -42,9 +44,11 @@ ms.locfileid: "75590074"
 |`PreserveExistingMetadata`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `True`인 경우 추가 메타데이터만 적용합니다(아직 존재하지 않을 경우).|
 
 ## <a name="remarks"></a>설명
+
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 항목 컬렉션 `MySourceItems`에서 `MySourceItemsWithMetadata`라는 새 항목 컬렉션을 만듭니다. `CreateItem` 작업은 `MySourceItems` 항목에 있는 항목으로 새 항목 컬렉션을 채웁니다. 그런 다음 값이 `Hello`인 `MyMetadata`라는 추가 메타데이터 항목을 새 컬렉션의 각 항목에 추가합니다.
 
  작업이 실행된 후 `MySourceItemsWithMetadata` 항목 컬렉션에는 `MyMetadata`에 대한 메타데이터 항목을 포함하는 *file1.resx* 및 *file2.resx* 항목이 포함됩니다. `MySourceItems` 항목 컬렉션은 변경되지 않습니다.
@@ -77,5 +81,6 @@ ms.locfileid: "75590074"
 |`MySourceItemsWithMetadata`|*file1.resx*(`MyMetadata="Hello"`)<br /><br /> *file2.resx*(`MyMetadata="Hello"`)|
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

@@ -26,17 +26,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592154"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633475"
 ---
 # <a name="midl-task"></a>MIDL 작업
+
 MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*를 래핑합니다. 자세한 내용은 [MIDL 명령줄 참조](/windows/desktop/Midl/midl-command-line-reference)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
+
  다음에서는 **MIDL** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.
 
 - **AdditionalIncludeDirectories**
@@ -416,4 +418,5 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*�
      자세한 내용은 [MIDL 명령줄 참조](/windows/desktop/Midl/midl-command-line-reference)에서 **/W** 옵션을 참조하세요. 이 표의 **WarnAsError** 매개 변수도 참조하세요.
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

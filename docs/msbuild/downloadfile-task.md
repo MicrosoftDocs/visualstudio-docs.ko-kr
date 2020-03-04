@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590477"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634255"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 작업
+
 HTTP(Hypertext Transfer Protocol)를 사용하여 지정된 파일을 다운로드합니다.
 
 >[!NOTE]
 >DownloadFile 작업은 MSBuild 15.8 이상에서만 사용할 수 있습니다.
 
 ## <a name="parameters"></a>매개 변수
+
 다음 표에서는 `DownloadFile` 작업의 매개 변수에 대해 설명합니다.
 
 |매개 변수|설명|
@@ -49,9 +51,11 @@ HTTP(Hypertext Transfer Protocol)를 사용하여 지정된 파일을 다운로�
 |`SourceUrl`|필수 `String` 매개 변수입니다.<br /><br /> 다운로드할 URL을 지정합니다.|
 
 ## <a name="remarks"></a>설명
+
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
+
 다음 예제에서는 파일을 다운로드하고, 프로젝트를 빌드하기 전 `Content` 항목에 포함시킵니다.
 
 ```xml
@@ -73,5 +77,6 @@ HTTP(Hypertext Transfer Protocol)를 사용하여 지정된 파일을 다운로�
 ```
 
 ## <a name="see-also"></a>참조
+
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

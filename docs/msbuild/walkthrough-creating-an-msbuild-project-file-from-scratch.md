@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 891b0f1197ad178a705de5d64026beebc62615dd
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826499"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263138"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 MSBuild 프로젝트 파일 만들기
+
 .NET Framework를 대상으로 하는 프로그래밍 언어는 MSBuild 프로젝트 파일을 사용하여 애플리케이션 빌드 프로세스를 설명하고 제어합니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들 때 적절한 XML이 파일에 자동으로 추가됩니다. 그러나 XML이 구성되는 방식과 이러한 방식을 변경하여 빌드를 제어할 수 있는 방법을 이해하는 것이 좋습니다.
 
  C++ 프로젝트용 프로젝트 파일을 만드는 방법에 대한 자세한 내용은 [MSBuild(C++)](/cpp/build/msbuild-visual-cpp)를 참조하세요.
@@ -47,6 +48,7 @@ ms.locfileid: "76826499"
 연습을 완료하려면 .NET Framework(버전 2.0, 3.5, 4.0, 4.5 또는 그 이상)가 설치되어 있어야 합니다. .NET Framework에 연습에 필요한 MSBuild 및 Visual C# 컴파일러가 포함되어 있기 때문입니다.
 
 ## <a name="create-a-minimal-application"></a>최소 애플리케이션 만들기
+
  이 섹션에서는 텍스트 편집기를 사용하여 최소 C# 애플리케이션 소스 파일을 만드는 방법을 보여 줍니다.
 
 1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’).  
@@ -84,6 +86,7 @@ ms.locfileid: "76826499"
 8. 명령 프롬프트에서 **del helloworld.exe**를 입력하여 애플리케이션을 삭제합니다.
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>최소 MSBuild 프로젝트 파일 만들기
+
  최소 애플리케이션 소스 파일이 있으므로 이제 최소 프로젝트 파일을 만들어 애플리케이션을 빌드할 수 있습니다. 이 프로젝트 파일에는 다음 요소가 포함되어 있습니다.
 
 - 필수 루트 `Project` 노드
@@ -151,8 +154,6 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 > ```xml
 > <Compile Include="*.cs" />
 > ```
->
-> 그러나 소스 파일이 추가되거나 삭제될 경우 디버깅 및 선택적 대상화가 어려워지므로 와일드카드 문자는 사용하지 않는 것이 좋습니다.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>MSBuild를 포함하도록 경로 확장
 
@@ -165,6 +166,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 또는 Visual Studio가 설치되어 있는 경우 *MSBuild* 폴더를 포함하는 경로가 있는 **Visual Studio용 개발자 명령 프롬프트**를 사용할 수 있습니다.
 
 ## <a name="build-the-application"></a>애플리케이션 빌드
+
  이제 애플리케이션을 빌드하기 위해 방금 만든 프로젝트 파일을 사용합니다.
 
 1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.
@@ -181,6 +183,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 > **msbuild helloworld.csproj -t:Build -verbosity:detailed**
 
 ## <a name="add-build-properties"></a>빌드 속성 추가
+
  프로젝트 파일에 빌드 속성을 추가하여 빌드에 대한 제어를 강화할 수 있습니다. 이제 다음 속성을 추가합니다.
 
 - 애플리케이션의 이름을 지정하기 위한 `AssemblyName` 속성
@@ -250,6 +253,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 > `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>빌드 속성 테스트
+
  이제 출력 폴더 및 애플리케이션 이름을 지정하기 위해 빌드 속성을 사용한 프로젝트 파일을 사용하여 애플리케이션을 빌드할 수 있습니다.
 
 1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.
@@ -263,6 +267,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
      **Hello, world!** 메시지가 표시됩니다.
 
 ## <a name="add-build-targets"></a>빌드 대상 추가
+
  이제 다음과 같이 프로젝트 파일에 대상을 두 개 더 추가합니다.
 
 - 이전 파일을 삭제하는 Clean 대상
@@ -315,6 +320,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 ```
 
 ## <a name="test-the-build-targets"></a>빌드 대상 테스트
+
  새 빌드 대상을 실행하여 프로젝트 파일의 이러한 기능을 테스트할 수 있습니다.
 
 - 기본 빌드를 바인딩합니다.
@@ -354,6 +360,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
      *\Bin\\* 폴더에 *MSBuildSample* 애플리케이션이 포함되어 있는지 확인하려면 **dir Bin**을 입력합니다.
 
 ## <a name="build-incrementally"></a>증분 방식으로 빌드
+
  대상이 의존하는 소스 파일 또는 대상 파일이 변경된 경우에만 대상을 빌드하라고 MSBuild에 지시할 수 있습니다. MSBuild는 파일의 타임스탬프를 사용하여 파일이 변경되었는지 여부를 확인합니다.
 
 ### <a name="to-build-incrementally"></a>증분 방식으로 빌드하려면
@@ -466,6 +473,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 ```
 
 ## <a name="whats-next"></a>새로운 기능
+
  Visual Studio는 이 연습에 표시된 작업의 많은 부분을 자동으로 수행할 수 있습니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들고, 편집하고, 빌드하고, 테스트하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조

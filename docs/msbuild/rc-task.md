@@ -22,17 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578488"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632916"
 ---
 # <a name="rc-task"></a>RC 작업
+
 Microsoft Windows 리소스 컴파일러 도구, *rc.exe*를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스( *.res*) 파일로 컴파일합니다. 자세한 내용은 [리소스 컴파일러](/windows/desktop/menurc/resource-compiler)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 RC 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.
 
 |매개 변수|설명|
@@ -51,4 +53,5 @@ Microsoft Windows 리소스 컴파일러 도구, *rc.exe*를 래핑합니다. **
 |**UndefinePreprocessorDefinitions**|전처리기 기호의 정의를 해제합니다.<br /><br /> 자세한 내용은 [RC 사용(RC 명령줄)](/windows/win32/menurc/using-rc-the-rc-command-line-)에서 **/u** 옵션을 참조하세요. 이 표의 **PreprocessorDefinitions**도 참조하세요.|
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

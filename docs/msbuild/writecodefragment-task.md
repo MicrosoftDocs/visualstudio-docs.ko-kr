@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3745e1c2f300c860d281752a0bf81359806c5d5e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ab604b23a99ab2dd62adca6076168fe264ab1b4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567400"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630694"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 작업
+
 생성된 특정 코드 조각에서 임시 코드 파일을 생성합니다. 파일을 삭제하지는 않습니다.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 `WriteCodeFragment` 작업의 매개 변수에 대해 설명합니다.
 
 |매개 변수|설명|
@@ -37,8 +39,10 @@ ms.locfileid: "75567400"
 |`OutputFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 출력 매개 변수입니다.<br /><br /> 생성된 파일의 경로를 지정합니다. 이 매개 변수가 파일 이름을 사용하여 설정된 경우 대상 폴더는 파일 이름에 추가됩니다. 루트를 사용하여 설정된 경우 대상 폴더는 무시됩니다.<br /><br /> 이 매개 변수가 설정되지 않은 경우 출력 파일 이름은 지정된 언어에 대한 대상 폴더, 임의의 파일 이름 및 기본 파일 이름 확장명입니다.|
 
 ## <a name="remarks"></a>설명
+
  이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="see-also"></a>참조
+
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

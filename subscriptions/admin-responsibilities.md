@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: 구독 관리자의 책임에 대해 알아봅니다.
-ms.openlocfilehash: 05b1a66eb6589f1d0d9502a754f67d0f9c31424f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851884"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235160"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>관리자 책임의 개요
 관리자는 조직에 대한 구독을 관리할 수 있습니다.  또한 관리자 역할에는 사용 약관에 따라 구독이 관리되도록 해야 할 책임이 있습니다. 이 문서에서는 관리자 역할의 책임, 혜택 및 제한 사항에 대해 간략하게 설명합니다.
@@ -34,6 +34,12 @@ Visual Studio 구독을 사용하면 개발 팀 멤버가 다른 소프트웨어
 | 프로덕션 환경용이 아닙니다. | Visual Studio 구독 소프트웨어는 프로덕션 환경에 사용이 허가되지 않았습니다. 여기에는 승인 테스트 또는 피드백 이상을 위해 최종 사용자가 액세스하는 모든 환경과 프로덕션 데이터베이스에 연결되거나, 재해 복구 또는 프로덕션 백업을 지원하거나, 최대 작업 기간 동안 프로덕션에 사용되는 환경이 포함됩니다. 이에 대한 예외로는 특정 구독 수준을 위한 특정 혜택이 포함되며 [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)에 개략적으로 나와 있습니다.                                                                                            |
 | 라이선스 재할당                     | 사용자가 팀을 떠나거나 더이상 라이선스가 필요하지 않은 경우 90일이 경과한 후 라이선스를 다시 할당할 수 있습니다. 라이선스를 다시 할당하면 이미 사용되었던 모든 제품 키는 계속 사용할 수 있으며 바뀌지 않습니다. EA(기업 계약)가 있는 조직의 경우 원래 사용자가 사용한 모든 혜택(예: Pluralsight 교육)은 다시 설정됩니다.                                                                                                                                                                                                                                                 |
 | 최종 사용자에 대한 예외                  | 소프트웨어 개발 프로젝트의 마지막에, 최종 사용자는 일반적으로 애플리케이션을 검토하고 릴리스에 필요한 조건을 충족하는지 여부를 결정합니다. 이 프로세스를 UAT(사용자 승인 테스트)라고 합니다. 비즈니스 스폰서 또는 제품 관리자와 같은 팀 멤버는 최종 사용자에 대한 프록시와 같은 역할을 할 수 있습니다. 소프트웨어 사용이 다른 방법으로 모든 Visual Studio 사용 조건을 준수하는 경우, Visual Studio 구독이 없는 최종 사용자가 UAT용 소프트웨어에 액세스할 수도 있습니다. 기본 역할이 소프트웨어를 디자인하거나 개발하거나 테스트하는 사람이 “최종 사용자”로서 자격이 있는 경우는 거의 없습니다. |
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 관리자의 책임에 대해 자세히 알아봅니다.

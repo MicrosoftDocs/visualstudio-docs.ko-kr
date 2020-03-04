@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592128"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633449"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 고급 개념
+
 이 섹션의 문서에서는 MSBuild를 사용하여 실행되는 빌드를 개선하기 위해 고급 기술을 사용하는 방법에 대해 설명합니다.
 
 ## <a name="related-topics"></a>관련 항목
@@ -32,5 +33,6 @@ ms.locfileid: "75592128"
 |[모범 사례](../msbuild/msbuild-best-practices.md)|MSBuild 스크립트 작성에 대한 모범 사례를 권장합니다.|
 
 ## <a name="see-also"></a>참조
+
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 - [MSBuild의 로그인](../msbuild/logging-in-msbuild.md)

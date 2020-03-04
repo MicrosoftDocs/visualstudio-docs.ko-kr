@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578533"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633592"
 ---
 # <a name="lib-task"></a>LIB 작업
+
 Microsoft 32비트 라이브러리 관리자 도구인 *lib.exe*를 래핑합니다. 라이브러리 관리자는 COFF(공용 개체 파일 형식) 개체 파일의 라이브러리를 만들고 관리합니다. 또한 라이브러리 관리자를 사용하여 내보내기 파일을 만들고 내보낸 정의를 참조하는 라이브러리를 가져올 수 있습니다. 자세한 내용은 [LIB 참조](/cpp/build/reference/lib-reference) 및 [LIB 실행](/cpp/build/reference/running-lib)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 **LIB** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수는 명령줄 옵션에 해당합니다.
 
 |매개 변수|설명|
@@ -66,4 +68,5 @@ Microsoft 32비트 라이브러리 관리자 도구인 *lib.exe*를 래핑합니
 |**Verbose**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 세션 진행에 대한 자세한 정보를 표시하며 추가하려는 *.obj* 파일의 이름이 포함됩니다. 이 정보는 표준 출력으로 보내지며 파일로 리디렉션될 수 있습니다.<br /><br /> 자세한 내용은 [LIB 실행](/cpp/build/reference/running-lib)의 **/VERBOSE** 옵션을 참조하세요.|
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

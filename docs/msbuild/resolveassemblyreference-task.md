@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fcd289f5258fde7ae8f17a9e19a25427fe6885
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278348"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632760"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 작업
+
 두 번째 및 `n`번째 순서 종속성을 비롯하여 지정한 어셈블리에 종속되는 모든 어셈블리를 확인합니다.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 `ResolveAssemblyReference` 작업의 매개 변수에 대해 설명합니다.
 
 |매개 변수|설명|
@@ -78,6 +80,7 @@ ms.locfileid: "77278348"
 |`TargetProcessorArchitecture`|선택적 `String` 매개 변수입니다.<br /><br /> 기본 대상 프로세서 아키텍처입니다. GAC(전역 어셈블리 캐시) 참조를 확인하는 데 사용됩니다.<br /><br /> 이 매개 변수는 `x86`, `IA64` 또는 `AMD64` 값을 가질 수 있습니다.<br /><br /> 이 매개 변수가 없는 경우, 작업에서는 현재 실행 중인 프로세스의 아키텍처와 일치하는 어셈블리를 먼저 고려합니다. 어셈블리가 없는 경우 작업에서는 `ProcessorArchitecture` 의 `MSIL` 값이 있거나 `ProcessorArchitecture` 값이 없는 GAC에 있는 어셈블리를 고려합니다.|
 
 ## <a name="warnings"></a>경고
+
  다음 경고가 기록됩니다.
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -101,8 +104,10 @@ ms.locfileid: "77278348"
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>설명
+
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="see-also"></a>참조
+
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)
