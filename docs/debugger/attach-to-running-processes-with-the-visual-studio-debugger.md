@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: f2f00cde0c2ea3fad79c0f5ef75f3c33ad7afc22
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181124"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257191"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스를 실행 한 후 **디버그** > **프로세스에 연결** 을 선택 하거나 Visual Studio에서 **Ctrl**+**Alt**+**P** 를 누르고 **프로세스에 연결** 대화 상자를 사용 하 여 디버거를 프로세스에 연결 합니다.
@@ -229,7 +229,7 @@ UWP (유니버설 Windows 앱) 앱과 같은 일부 앱 형식의 경우 프로�
 |지원 되는 앱 형식에 대해 로컬 IIS 서버에서 클라이언트 쪽 스크립트 디버깅 |**프로세스에 연결** 사용|*chrome*, *MicrosoftEdgeCP*또는 *iexplore.exe*|스크립트 디버깅을 사용 하도록 설정 해야 합니다. Chrome의 경우 디버그 모드에서 Chrome을 실행 하 고 **연결 대상** 필드에서 **Webkit 코드** 를 선택 해야 합니다.|
 |로컬 컴퓨터 C#에서, Visual Basic 또는 C++ 앱 디버그|표준 디버깅 (**F5**) 또는 **프로세스에 연결을 사용 합니다** .|*\<appname>.exe*|대부분의 시나리오에서는 표준 디버깅을 사용 하 고 **프로세스에 연결**하지 않습니다.|
 |Windows 데스크톱 응용 프로그램 원격 디버그|원격 도구|해당 없음| [원격 디버그 C# 또는 앱 Visual Basic](../debugger/remote-debugging-csharp.md) 또는 [앱 원격 디버그를 C++ ](../debugger/remote-debugging-cpp.md) 참조 하세요.|
-|Linux에서 .NET Core 디버그|**프로세스에 연결** 사용|*dotnet.exe*|SSH를 사용 하려면 [ssh를 사용 하 여 Linux에서 실행 되는 원격 디버그 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조 하세요. Linux Docker 컨테이너를 사용 하려면 [Linux docker 컨테이너에서 실행 되는 프로세스에 연결](#BKMK_Docker_Attach)을 참조 하세요.|
+|Linux에서 .NET Core 디버그|**프로세스에 연결** 사용|*dotnet.exe*|SSH를 사용 하려면 [ssh를 사용 하 여 Linux에서 실행 되는 원격 디버그 .Net Core](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조 하세요. |
 |디버거를 사용 하지 않고 앱을 시작한 후 로컬 컴퓨터에서 ASP.NET 앱 디버그|**프로세스에 연결** 사용|*iiexpress.exe*|이렇게 하면 프로 파일링 하는 경우와 같이 앱을 더 빠르게 로드 하는 데 도움이 될 수 있습니다. |
 |서버 프로세스에서 지원 되는 다른 앱 유형 디버깅|서버가 원격 이면 원격 도구를 사용 하 여 **프로세스에 연결** 합니다.|*chrome*, *iexplore.exe*또는 기타 프로세스|필요한 경우 리소스 모니터를 사용 하 여 프로세스를 식별 하는 데 도움을 줍니다. [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.|
 |UWP (유니버설 Windows 앱), OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|해당 없음|**프로세스에 연결을** 사용 하는 대신 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 를 참조 하세요.|
