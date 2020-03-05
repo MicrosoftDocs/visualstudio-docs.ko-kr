@@ -233,9 +233,9 @@
               href: sdk-element-msbuild.md
             - name: Target 요소
               href: target-element-msbuild.md
-            - name: Task 요소
+            - name: 대상의 Task 요소
               href: task-element-msbuild.md
-            - name: TaskBody 요소
+            - name: UsingTask의 Task 요소
               href: taskbody-element-msbuild.md
             - name: UsingTask 요소
               href: usingtask-element-msbuild.md
