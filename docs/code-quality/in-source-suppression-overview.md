@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167626"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408719"
 ---
 # <a name="suppress-code-analysis-warnings"></a>코드 분석 경고 표시 안 함
 
@@ -92,6 +92,8 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **대상** -경고를 표시 하지 않을 대상을 지정 하는 데 사용 되는 식별자입니다. 정규화 된 항목 이름을 포함 해야 합니다.
 
+Visual Studio에서 경고가 표시 되 면 [전역 비 표시 오류 (suppression) 파일에 비](../code-quality/use-roslyn-analyzers.md#suppress-violations)표시를 추가 하 여 `SuppressMessage` 예제를 볼 수 있습니다. 비 표시 특성 및 필수 속성은 미리 보기 창에 표시 됩니다.
+
 ## <a name="suppressmessage-usage"></a>SuppressMessage 사용
 
 코드 분석 경고는 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 특성이 적용 되는 수준에서 표시 되지 않습니다. 예를 들어, 특성을 어셈블리, 모듈, 형식, 멤버 또는 매개 변수 수준에서 적용할 수 있습니다. 이는 위반이 발생 하는 코드에 비 표시 정보를 긴밀 하 게 두는 것입니다.
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>생성 된 코드
-
-관리 코드 컴파일러와 일부 타사 도구는 코드를 신속 하 게 개발 하는 코드를 생성 합니다. 소스 파일에 표시 되는 컴파일러 생성 코드는 일반적으로 `GeneratedCodeAttribute` 특성으로 표시 됩니다.
-
-생성 된 코드에 대 한 코드 분석 경고 및 오류를 표시 하지 않을 지 여부를 선택할 수 있습니다. 이러한 경고 및 오류를 표시 하지 않는 방법에 대 한 자세한 내용은 [How to: ](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)생성 된 코드에 대 한 경고를 표시 하지 않습니다.
-
-> [!NOTE]
-> 코드 분석은 전체 어셈블리나 단일 매개 변수에 적용 될 때 `GeneratedCodeAttribute`를 무시 합니다.
-
 ## <a name="global-level-suppressions"></a>전역 수준 비 표시 오류
 
 관리 코드 분석 도구는 어셈블리, 모듈, 형식, 멤버 또는 매개 변수 수준에서 적용 되는 `SuppressMessage` 특성을 검사 합니다. 리소스와 네임 스페이스에 대 한 위반도 발생 시킵니다. 이러한 위반은 전역 수준에서 적용 해야 하며 범위 지정 및 대상 지정이 가능 합니다. 예를 들어 다음 메시지는 네임 스페이스 위반을 억제 합니다.
@@ -185,6 +178,22 @@ public class Animal
 예를 들어 _Globalsuppressions_ 표시 프로젝트 파일의 다음 특성은 ASP.NET Core 프로젝트에 대 한 system.threading.tasks.task.configureawait 위반을 표시 하지 않습니다.
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>생성 된 코드
+
+관리 코드 컴파일러와 일부 타사 도구는 코드를 신속 하 게 개발 하는 코드를 생성 합니다. 소스 파일에 표시 되는 컴파일러 생성 코드는 일반적으로 `GeneratedCodeAttribute` 특성으로 표시 됩니다.
+
+소스 코드 분석 (FxCop 분석기)의 경우 프로젝트 또는 솔루션의 루트에 있는 [editorconfig](../code-quality/configure-fxcop-analyzers.md) 파일을 사용 하 여 생성 된 코드에서 메시지를 표시 하지 않을 수 있습니다. 생성 된 코드와 일치 하는 파일 패턴을 사용 합니다. 예를 들어 * *. designer.cs* 파일에서 CS1591 경고를 제외 하려면 구성 파일에서이 경고를 사용 합니다.
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+레거시 코드 분석의 경우 생성 된 코드에 대 한 코드 분석 경고 및 오류를 표시 하지 않을 지 여부를 선택할 수 있습니다. 이러한 경고 및 오류를 표시 하지 않는 방법에 대 한 자세한 내용은 [How to: ](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)생성 된 코드에 대 한 경고를 표시 하지 않습니다.
+
+> [!NOTE]
+> 코드 분석은 전체 어셈블리나 단일 매개 변수에 적용 될 때 `GeneratedCodeAttribute`를 무시 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
