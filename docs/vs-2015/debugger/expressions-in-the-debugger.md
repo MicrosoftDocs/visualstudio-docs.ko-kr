@@ -28,13 +28,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158491"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78406335"
 ---
-# <a name="expressions-in-the-debugger"></a>디버거에서 사용하는 식
+# <a name="expressions-in-the-debugger"></a>디버거의 식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.  

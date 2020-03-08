@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593501"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409011"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Visual Studio 2017의 디자인에 대한 새로운 기능
 
@@ -30,7 +30,7 @@ ms.locfileid: "75593501"
 
 종속성 유효성 검사를 더욱 쉽게 검색 하 고 더 쉽게 액세스할 수 있도록 제작 환경이 변경 되었습니다. "레이어 다이어그램"에서 "종속성 다이어그램"으로 용어가 변경 되었습니다.
 
-합니다 **아키텍처** 메뉴에는 이제 직접 종속성 다이어그램을 만드는 명령도 포함 됩니다.
+이제 **아키텍처** 메뉴에 종속성 다이어그램을 직접 만드는 명령이 있습니다.
 
 ![아키텍처 메뉴의 라이브 종속성 항목](media/dep-validation-whatsnew-02.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "75593501"
 
 다이어그램을 저장할 때마다 솔루션의 현재 코드에 대 한 분석 결과의 변경 내용에 대 한 영향이 즉시 표시 됩니다. **종속성 유효성 검사** 명령이 완료 될 때까지 기다릴 필요가 없습니다.
 
-자세한 내용은 참조 하세요. [이 블로그 게시물](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)합니다.
+자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)을 참조 하세요.
 
 ## <a name="uml-designers-have-been-removed"></a>UML 디자이너 제거 되었습니다.
 
@@ -61,17 +61,17 @@ UML 디자이너가 Visual Studio에서 제거 되었습니다.
 
 UML 디자이너의 중요 한 사용자 라면 UML 요구 사항에 맞게 대체 하는 도구를 결정 하는 동안 Visual Studio 2015 또는 이전 버전을 사용 하 여 계속 수 있습니다.
 
-자세한 내용은 참조 하세요. [이 블로그 게시물](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)합니다.
+자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)을 참조 하세요.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />아키텍처 및 모델링 도구에 대 한 버전 지원
+## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a>아키텍처 및 모델링 도구에 대 한 <a name="VersionSupport" />버전 지원
 
 Visual Studio는 여러 버전에서 사용할 수 있습니다. 이러한 일부 아키텍처 및 모델링 도구에 대 한 지원을 제공 합니다. 다음 표에서는 각 도구의 사용 가능 여부를 보여 줍니다.
 
-|**기능**|**Enterprise edition**|**Professional edition**|**Community edition**|
+|**기능**|**Enterprise edition**|**Professional 버전**|**Community edition**|
 |-|-|-|-|
 |**코드 맵**|예|만 코드 맵 읽기를 지원 필터링 코드 맵, 선택 항목에서 새 전송 그래프를 만들고 새 일반 노드를 추가 합니다.|-|
 |**종속성 다이어그램**|예|종속성 다이어그램 읽기 지원만 합니다.|종속성 다이어그램 읽기 지원만 합니다.|
-|**방향이 지정 된 그래프** (DGML 다이어그램)|예|예|예|
+|**방향이** 지정 된 그래프 (DGML 다이어그램)|예|예|예|
 |**코드 복제본**|예|-|-|
