@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568958"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409003"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
@@ -44,7 +44,7 @@ Visual Studio의 UI 요소에 색을 할당 하기 위한 몇 가지 옵션이 �
 
 UI 요소에 가장 적합 한 방법을 선택 합니다.
 
-| UI | 메서드 | 무엇 인가요? |
+| UI | 방법 | 무엇 인가요? |
 | --- | --- | --- |
 | 포함 되거나 독립 실행형 대화 상자가 있습니다. | **시스템 색** | 운영 체제에서 일반적인 대화 상자 컨트롤과 같은 UI 요소의 색과 모양을 정의할 수 있도록 하는 시스템 이름입니다. |
 | 전반적인 VS 환경과 일치 시키고 공유 토큰의 범주 및 의미 체계와 일치 하는 UI 요소를 포함 하는 사용자 지정 UI가 있습니다. | **공통 공유 색** | 특정 UI 요소에 대해 미리 정의 된 기존 색 토큰 이름 |
@@ -89,7 +89,7 @@ Visual Studio 소스 코드에는 토큰 이름 목록과 각 테마에 대 한 
 
 Visual Studio는 VSColor 서비스 또는 셸 색 서비스 라고도 하는 환경 색 서비스를 제공 합니다. 이 서비스를 사용 하면 UI 요소의 색 값을 각 테마에 대 한 색을 포함 하는 이름-값 색 집합에 바인딩할 수 있습니다. 모든 UI 요소에 대해 VSColor 서비스를 사용 하 여 현재 사용자가 선택한 테마를 반영 하도록 색을 자동으로 변경 하 고, 환경 색 서비스에 바인딩된 UI가 이후 버전의 Visual Studio에서 새 테마와 통합 되도록 합니다.
 
-### <a name="how-the-service-works"></a>서비스의 작동 원리
+### <a name="how-the-service-works"></a>서비스의 작동 방식
 
 환경 색 서비스는 UI 구성 요소에 대 한 .pkgdef에 정의 된 VSColors를 읽습니다. 이러한 VSColors는 XAML 태그 또는 코드에서 참조 되며 `IVsUIShell5.GetThemedColor` 또는 `DynamicResource` 매핑을 통해 로드 됩니다.
 
@@ -307,16 +307,16 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 
 대부분의 일반적인 UI 요소에는 고대비 색이 이미 정의 되어 있습니다. 사용자 고유의 시스템 색 이름을 선택할 때 이러한 사용 패턴을 참조 하 여 UI 요소가 유사한 구성 요소와 일치 하도록 할 수 있습니다.
 
-| 시스템 색 | 사용 현황 |
+| 시스템 색 | 사용 |
 | --- | --- |
 | ActiveCaption | -활성 IDE 및 rafted 창의 단추 문자 모양 가리키기 및 누르기<br />-IDE 및 rafted 창의 제목 표시줄 배경<br />-기본 상태 표시줄 배경 |
 | ActiveCaptionText | -제목 표시줄 전경 (텍스트 및 문자 모양)의 활성 IDE 및 rafted 창<br />-마우스로 가리키면 활성 창 단추의 배경색과 테두리 |
-| Control | -콤보 상자, 드롭다운 목록, 검색 컨트롤의 기본 및 비활성화 된 배경 (드롭다운 단추 포함)<br />-도킹 대상 단추 배경<br />-명령 모음 배경<br />-도구 창 배경 |
+| 제어 | -콤보 상자, 드롭다운 목록, 검색 컨트롤의 기본 및 비활성화 된 배경 (드롭다운 단추 포함)<br />-도킹 대상 단추 배경<br />-명령 모음 배경<br />-도구 창 배경 |
 | ControlDark | -IDE 배경<br />-메뉴 및 명령 모음 구분 기호<br />-명령 모음 테두리<br />-메뉴 그림자<br />-도구 창 탭 기본 및 가리키기 테두리 및 구분 기호<br />-문서 웰 오버플로 단추 배경<br />-도킹 대상 문자 모양 테두리 |
 | ControlDarkDark |-포커스가 없는, 선택한 문서 탭 창 |
-| 제어 라이트 |-자동 숨기기 탭 테두리<br />-콤보 상자 및 드롭다운 목록 테두리<br />-도킹 대상 배경 및 테두리 |
+| ControlLight |-자동 숨기기 탭 테두리<br />-콤보 상자 및 드롭다운 목록 테두리<br />-도킹 대상 배경 및 테두리 |
 | ControlLightLight | -선택, 포커스가 있는 provisional border |
-| 컨트롤 텍스트 | -콤보 상자 및 드롭다운 목록 문자 모양<br />-도구 창 선택 하지 않은 탭 텍스트 |
+| ControlText | -콤보 상자 및 드롭다운 목록 문자 모양<br />-도구 창 선택 하지 않은 탭 텍스트 |
 | GrayText |-콤보 상자 및 드롭다운 목록 사용 안 함 테두리, 드롭다운 문자 모양, 텍스트 및 메뉴 항목 텍스트<br />-사용 안 함 메뉴 텍스트<br />-검색 컨트롤 ' 검색 옵션 ' 헤더 텍스트<br />-검색 컨트롤 섹션 구분 기호 |
 | 하이라이트 | -콤보 상자 드롭다운 단추 배경 및 문서 웰 오버플로 단추 테두리를 제외 하 고 모든 마우스로 가리키고 누른 상태 배경 및 테두리<br />-선택한 항목 배경 |
 | HighlightText | -모든 가리키기 및 누름 foregrounds (텍스트 및 문자 모양)<br />-포커스가 있는 도구 창 및 문서 탭 창 컨트롤 전경<br />-포커스가 있는 도구 창 제목 표시줄 테두리<br />-포커스가 있는 provisional 탭 전경<br />-문서 웰 오버플로 단추 테두리 가리키기 및 누르기<br />-선택한 아이콘 테두리|
@@ -326,7 +326,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 | 메뉴 | -드롭다운 메뉴 배경<br />-검사 및 사용 안 함 확인 표시 배경 |
 | 확장 | -드롭다운 메뉴 테두리<br />-확인 표시<br />-메뉴 문자 모양<br />-드롭다운 메뉴 텍스트<br />-선택한 아이콘 테두리 |
 | 스크롤 막대 | -스크롤 막대 및 스크롤 막대 화살표 배경, 모든 상태 |
-| 창 | -자동 숨기기 탭 배경<br />-메뉴 모음 및 명령 선반 배경<br />-Open 및 provisional 탭 모두에 대해 포커스가 없는 또는 선택 하지 않은 문서 창 탭 배경 및 문서 테두리<br />-포커스가 없는 도구 창 제목 표시줄 배경<br />-도구 창 탭 배경, 선택 및 선택 취소 |
+| 시간 범위 | -자동 숨기기 탭 배경<br />-메뉴 모음 및 명령 선반 배경<br />-Open 및 provisional 탭 모두에 대해 포커스가 없는 또는 선택 하지 않은 문서 창 탭 배경 및 문서 테두리<br />-포커스가 없는 도구 창 제목 표시줄 배경<br />-도구 창 탭 배경, 선택 및 선택 취소 |
 | WindowFrame | -IDE 테두리 |
 | WindowText | -탭 전경 자동 숨기기<br />-선택한 도구 창 탭 전경<br />-포커스가 없는 document window tab and 포커스가 없는 또는 선택 하지 않은 provisional 탭 전경<br />-트리 뷰 기본 전경 및 선택 되지 않은 문자 모양 위로 가리키기<br />-도구 창 선택한 탭 테두리<br />-스크롤 막대 thumb 배경, 테두리 및 문자 모양 |
 
@@ -358,10 +358,10 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| name | Type | 데이터 | 설명 |
+| 속성 | Type | data | Description |
 | --- | --- | --- | --- |
-| 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
-| Package | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
+| Category | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
+| 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
 
  레지스트리에 지정 된 서비스는 해당 범주에 대해 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 구현을 제공 해야 합니다.
 
@@ -371,14 +371,14 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| name | Type | 데이터 | 설명 |
+| 속성 | Type | data | Description |
 |--- | --- | --- | --- |
-| 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
-| Package | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
+| Category | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
+| 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
 
 레지스트리에 지정 된 서비스는 해당 그룹에 대 한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 구현을 제공 해야 합니다.
 
-![IVsFontAndColorGroup의 구현](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />`IVsFontAndColorGroup`의 구현입니다.
+![IVsFontAndColorGroup의 구현](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />`IVsFontAndColorGroup` 구현
 
 ### <a name="to-implement-ide-support"></a>IDE 지원을 구현 하려면
 
