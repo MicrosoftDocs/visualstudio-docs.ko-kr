@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596647"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410239"
 ---
 # <a name="extend-dependency-diagrams"></a>종속성 다이어그램 확장
 
@@ -35,7 +35,7 @@ ms.locfileid: "75596647"
 
 레이어 확장을 실행 하려는 컴퓨터에 적합 한 버전의 Visual Studio가 설치 되어 있어야 합니다. 종속성 다이어그램을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)

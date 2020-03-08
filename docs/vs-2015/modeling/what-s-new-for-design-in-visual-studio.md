@@ -14,11 +14,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659238"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408363"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual studio의 Visual Studio에서 디자인의 새로운 기능 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,16 +66,16 @@ ms.locfileid: "72659238"
 
 ## <a name="VersionSupport"></a>아키텍처 및 모델링 도구에 대 한 버전 지원
 
-Visual Studio 2015는 여러 버전에서 사용할 수 있습니다. 이러한 모든 것이 아키텍처 및 모델링 도구에 대 한 지원을 제공 하는 것은 아닙니다. 다음 표에서는 각 도구의 사용 가능 여부를 보여 줍니다.
+Visual Studio 2015는 여러 버전에서 사용할 수 있습니다. 이러한 일부 아키텍처 및 모델링 도구에 대 한 지원을 제공 합니다. 다음 표에서는 각 도구의 사용 가능 여부를 보여 줍니다.
 
 |**기능**|**Enterprise**|**해**|**커뮤니티**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**코드 맵**|예|는 코드 맵 읽기 및 필터링, 새 제네릭 노드 추가 및 선택 영역에서 새 방향 그래프 만들기만 지원 합니다.|-|-|
-|**UML 클래스 다이어그램**|예|-|-|-|
-|**UML 시퀀스 다이어그램**|예|-|-|-|
-|**UML 사용 사례 다이어그램**|예|-|-|-|
-|**UML 동작 다이어그램**|예|-|-|-|
-|**UML 구성 요소 다이어그램**|예|-|-|-|
-|**레이어 다이어그램**|예|-|-|-|
-|**방향이** 지정 된 그래프 (DGML 다이어그램)|예|예|-|-|
-|**코드 복제본**|예|-|-|-|
+|**코드 맵**|yes|는 코드 맵 읽기 및 필터링, 새 제네릭 노드 추가 및 선택 영역에서 새 방향 그래프 만들기만 지원 합니다.|-|-|
+|**UML 클래스 다이어그램**|yes|-|-|-|
+|**UML 시퀀스 다이어그램**|yes|-|-|-|
+|**UML 사용 사례 다이어그램**|yes|-|-|-|
+|**UML 동작 다이어그램**|yes|-|-|-|
+|**UML 구성 요소 다이어그램**|yes|-|-|-|
+|**레이어 다이어그램**|yes|-|-|-|
+|**방향이** 지정 된 그래프 (DGML 다이어그램)|yes|yes|-|-|
+|**코드 복제본**|yes|-|-|-|

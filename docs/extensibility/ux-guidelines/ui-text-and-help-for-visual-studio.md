@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c0477a0e1994e9c3b94df13ace4c1f3b4df51039
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748964"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409115"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio에 대 한 UI 텍스트 및 도움말
 ## <a name="BKMK_UITextAndTerminology"></a>UI 텍스트 및 용어
@@ -68,7 +68,7 @@ ms.locfileid: "72748964"
 
  **Visual Studio의 추가 텍스트**
 
-#### <a name="infotips"></a>정보 팁
+#### <a name="infotips"></a>InfoTips
  종종 지침 텍스트가 너무 짧기 때문에 UI에서 배치 하지 못할 수도 있고 숙련 된 사용자에 게 혼란 처럼 새로운 사용자 에게만 유용할 수도 있습니다. 이 경우 지침/정보 텍스트는 정보 팁 아래에 도구 설명으로 배치 되어야 합니다.
 
  InfoTips은 관련 된 컨트롤 근처에 배치 해야 하며, 특정 정보 팁 아이콘을 사용 해야 합니다 .이는 눈에 띄지 않습니다.
@@ -130,7 +130,7 @@ ms.locfileid: "72748964"
 - 도움말 링크에 대 한 올바른 작성 스타일에 대 한 자세한 내용은 [Windows 바탕 화면 설명서](/windows/desktop/uxguide/winenv-help)를 참조 하십시오.
 
 #### <a name="hint-text"></a>힌트 텍스트
- 힌트 텍스트는 컨트롤이 나 컨트롤 아래에 워터 마크로 나타납니다. 올바른 형식이 `Environment.GrayText` 적절 한 VSColors 토큰을 사용 하 여 적용 됩니다.
+ 힌트 텍스트는 컨트롤이 나 컨트롤 아래에 워터 마크로 나타납니다. 올바른 형식이 `Environment.GrayText`적절 한 VSColors 토큰을 사용 하 여 적용 됩니다.
 
  다양 한 형식으로 표시 될 수 있습니다.
 
@@ -155,12 +155,12 @@ ms.locfileid: "72748964"
 
 ### <a name="common-terminology"></a>일반적인 용어
 
-|용어|설명|설명|
+|용어|설명|주석|
 |----------|-----------------|-------------|
 |로그인/로그 아웃|웹 속성에 대 한 인증을 나타내기 위해 웹에서 동의어 처럼 자주 사용 하는 동사입니다. 클라이언트 내에서이를 한 번 사용 하 여 다른 모든 연결에서 사용할 수 없는 로밍 및 라이선스와 같은 더 높은 수준의 기능을 제공 하는 최상위 id를 제공 하는 IDE 사용자 연결의 로그인 및 로그 아웃에 대 한 최상위 개념으로 사용 합니다.|IDE 사용자는 최상위 IDE 사용자를 나타내므로 로그인/로그 아웃 동사를 나타내야 하는 유일한 기능입니다.|
 |연결/연결 끊기|기능이 온라인 서비스에 대 한 단일 연결을 유지 하는 위치에서 사용 합니다.|한 번에 하나의 활성 Azure 연결만 가질 수 있는 서버 탐색기 연결/연결 끊기의 예입니다.|
 |추가/제거|비 소거식. 목록에서 항목을 추가 하거나 제거 하는 경우에 사용 합니다.|TFS 연결 관리자 서버 목록 대화 상자는 추가/제거의 예입니다.|
-|삭제|파괴적인. 제거 되는 요소가 디스크에서 영구적으로 삭제 되거나 삭제 될 때만를 사용 합니다.|일반적으로 "삭제"는 결과가 디스크에서 파일을 삭제 하는 경우 프롬프트가 필요 합니다.|
+|DELETE|파괴적인. 제거 되는 요소가 디스크에서 영구적으로 삭제 되거나 삭제 될 때만를 사용 합니다.|일반적으로 "삭제"는 결과가 디스크에서 파일을 삭제 하는 경우 프롬프트가 필요 합니다.|
 
 ## <a name="error-messages"></a>오류 메시지
 
@@ -253,9 +253,9 @@ ms.locfileid: "72748964"
 
 ### <a name="error-message-examples"></a>오류 메시지 예
 
-|양호|올바르지|
+|좋음|불량|
 |----------|---------|
-|"귀하의 전화 번호는 더 이상 서비스에 없습니다. 번호를 확인 한 후 다시 전화 거 나 운영자에 대해 0으로 전화를 걸기 하세요. "|-"오류 (449): 잘못 된 숫자"<br />-"이 처리 되지 않은 예외 오류는 작업이 성공적으로 완료 되었음을 나타냅니다."<br /><br /> ![Visual Studio의 잘못 된 오류 메시지](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog ")|
+|"귀하의 전화 번호는 더 이상 서비스에 없습니다. 번호를 확인 한 후 다시 전화 거 나 운영자에 대해 0으로 전화를 걸기 하세요. "|-"오류 (449): 잘못 된 숫자"<br />-"이 처리 되지 않은 예외 오류는 작업이 성공적으로 완료 되었음을 나타냅니다."<br /><br /> ![Visual Studio의 잘못 된 오류 메시지](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>도움말 액세스
 
@@ -272,12 +272,12 @@ ms.locfileid: "72748964"
 
 - **UI 도움말 단추** (사용 되지 않음) 관련 F1 도움말 항목에 대 한 액세스를 제공 하는 제목 표시줄에 표시 되는 표시기입니다.
 
-### <a name="text"></a>Text
+### <a name="text"></a>텍스트
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>대화 상자의 지침 및 보완 텍스트
  복잡 한 작업을 지 원하는 대화 상자에서 UI 내에 지침 텍스트를 제공 해야 하는 경우가 있을 수 있습니다. 스타일 작성에 대 한 자세한 내용은 [UI 텍스트 및 용어](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) 를 참조 하세요.
 
-#### <a name="infotips"></a>정보 팁
+#### <a name="infotips"></a>InfoTips
  종종 지침 텍스트가 너무 짧기 때문에 UI에서 배치 하지 못할 수도 있고 숙련 된 사용자에 게 혼란을 주는 것 처럼 새로운 사용자 에게만 유용할 수도 있습니다. 이 경우 지침/정보 텍스트는 정보 팁 아래에 도구 설명으로 배치 되어야 합니다.
 
  InfoTips은 관련 된 컨트롤 근처에 배치 해야 하며, 특정 정보 팁 아이콘을 사용 해야 합니다 .이는 눈에 띄지 않습니다.
@@ -302,7 +302,7 @@ ms.locfileid: "72748964"
 
  구체적으로, **Vbdialogboxparam** 함수는 ID가 **idhelp** (9) 또는 label이 **도움말** 또는 **& 도움말**인 단추의 대화 상자 템플릿을 찾습니다. 도움말 단추가 **있으면 해당 단추가** 숨겨지고 **WS_EX_CONTEXTHELP** 스타일이 대화 상자에 추가 됩니다. 단추를 클릭 합니다.
 
- 대화 상자를 만들 때 대화 상자 프로시저를 스택으로 푸시하고 **DialogPreProc**이라는 전처리 대화 상자를 사용 하 여 대화 상자를 호출 합니다. **?** 단추를 클릭 하면 대화 상자에 **SC_CONTEXTHELP** 의 **WM_SYSCOMMAND** 전송 됩니다. **DialogPreProc** 는이 명령을 캡처하여 원래 대화 상자 프로시저로 전달 되는 **WM_HELP** 메시지로 변경 합니다.
+ 대화 상자를 만들 때 대화 상자 프로시저를 스택으로 푸시하고 **DialogPreProc**이라는 전처리 대화 상자를 사용 하 여 대화 상자를 호출 합니다. **?** 단추를 클릭 하면 대화 상자에 **SC_CONTEXTHELP** **WM_SYSCOMMAND** 전송 됩니다. **DialogPreProc** 는이 명령을 캡처하여 원래 대화 상자 프로시저에 전달 되는 **WM_HELP** 메시지로 변경 합니다.
 
  대부분의 환경에서 만든 대화 상자에는 대화 상자에 대 한 도움말 단추가 있습니다. 대화 상자가 표시 되 면 도움말 단추가 자동으로 숨겨지고 **?** 단추가 작동 합니다. 그렇다면 Windows에서 단추가 제거 되거나 변경 된 경우이 솔루션을 사용 하면 원래 도움말 단추로 빠르게 다시 이동할 수 있습니다.
 
@@ -376,7 +376,7 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 ```
 
 ##### <a name="help-buttons-in-managed-code"></a>관리 코드의 도움말 단추
- 관리 코드에서는 창 제목 표시줄 도움말 단추의 기본 동작을 재정의 하는 것이 쉽습니다. 이 동작을 보여 주는 전체 데모 응용 프로그램은 다음과 같습니다. 기본적으로 **SC_CONTEXTHELP** 메시지를 가로챌 때 폼의 **WndProc** 메서드를 재정의 하 고 F1 도움말 요청을 실행 해야 합니다.
+ 관리 코드에서는 창 제목 표시줄 도움말 단추의 기본 동작을 재정의 하는 것이 쉽습니다. 이 동작을 보여 주는 전체 데모 응용 프로그램은 다음과 같습니다. 본질적으로는 폼의 **WndProc** 메서드를 재정의 한 다음 **SC_CONTEXTHELP** 메시지를 가로챌 때 F1 도움말 요청을 실행 해야 합니다.
 
 ```
 using System;
@@ -420,7 +420,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio의 글꼴 및 서식 지정](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Visual Studio의 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Visual Studio의 알림 및 진행률](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
