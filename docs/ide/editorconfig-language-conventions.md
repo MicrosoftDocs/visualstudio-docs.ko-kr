@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542661"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408460"
 ---
 # <a name="language-conventions"></a>언어 규칙
 

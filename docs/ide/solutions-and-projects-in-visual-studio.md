@@ -21,22 +21,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590087"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408841"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
-이 페이지에서는 Visual Studio의 ‘프로젝트’ 및 ‘솔루션’ 개념에 대해 설명합니다.   솔루션 탐색기 도구 창과 새 프로젝트를 만드는 방법에 대해서도 간략하게 설명합니다.
+이 페이지에서는 Visual Studio의 ‘프로젝트’ 및 ‘솔루션’ 개념에 대해 설명합니다. 솔루션 탐색기 도구 창과 새 프로젝트를 만드는 방법에 대해서도 간략하게 설명합니다.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 프로젝트 및 솔루션](/visualstudio/mac/projects-and-solutions)을 참조하세요.
+> 이 항목은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 프로젝트 및 솔루션](/visualstudio/mac/projects-and-solutions)을 참조하세요.
 
 ## <a name="projects"></a>프로젝트
 
-Visual Studio에서 앱이나 웹 사이트를 만드는 경우 ‘프로젝트’에서 시작합니다.  논리적인 측면에서 프로젝트에는 실행 파일, 라이브러리 또는 웹 사이트로 컴파일되는 모든 파일이 포함됩니다. 이러한 파일에는 소스 코드, 아이콘, 이미지, 데이터 파일 등이 포함될 수 있습니다. 프로젝트에도 프로그램이 통신하는 여러 서비스 또는 구성 요소에 필요할 수 있는 컴파일러 설정 및 기타 구성 파일이 포함되어 있습니다.
+Visual Studio에서 앱이나 웹 사이트를 만드는 경우 ‘프로젝트’에서 시작합니다. 논리적인 측면에서 프로젝트에는 실행 파일, 라이브러리 또는 웹 사이트로 컴파일되는 모든 파일이 포함됩니다. 이러한 파일에는 소스 코드, 아이콘, 이미지, 데이터 파일 등이 포함될 수 있습니다. 프로젝트에도 프로그램이 통신하는 여러 서비스 또는 구성 요소에 필요할 수 있는 컴파일러 설정 및 기타 구성 파일이 포함되어 있습니다.
 
 ### <a name="project-file"></a>프로젝트 파일
 
@@ -49,11 +49,11 @@ Visual Studio는 [MSBuild](../msbuild/msbuild.md)를 사용하여 솔루션의 �
 
 ## <a name="solutions"></a>솔루션
 
-프로젝트는 *솔루션*에 포함되어 있습니다. 이름과 달리 솔루션은 "정답"이 아닙니다. 이는 간단히 빌드 정보, Visual Studio 창 설정 및 특정 프로젝트와 관련이 없는 기타 파일과 함께 하나 이상의 관련된 프로젝트를 위한 컨테이너입니다. 솔루션은 고유한 형식을 가진 텍스트 파일( *.sln* 확장명)로 설명되고 직접 편집할 수 없습니다.
+프로젝트는 *솔루션*에 포함되어 있습니다. 이름과 달리 솔루션은 "답변"이 아닙니다. 이는 간단히 빌드 정보, Visual Studio 창 설정 및 특정 프로젝트와 관련이 없는 기타 파일과 함께 하나 이상의 관련된 프로젝트를 위한 컨테이너입니다. 솔루션은 고유한 형식을 가진 텍스트 파일( *.sln* 확장명)로 설명되고 직접 편집할 수 없습니다.
 
 Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하여 솔루션 관련 설정을 저장합니다.
 
-|확장명|이름|설명|
+|내선 번호|속성|Description|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 솔루션|솔루션에서 프로젝트, 프로젝트 항목 및 솔루션 항목을 구성합니다.|
 |.suo|솔루션 사용자 옵션|중단점과 같은 사용자 수준 설정 및 사용자 지정을 저장합니다.|
@@ -64,7 +64,7 @@ Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하
 
 대체로 프로젝트를 특정 방식으로 사용자 지정하는 경우에는 사용자 지정 프로젝트 템플릿을 만들어 새 프로젝트를 만드는 데 사용할 수 있습니다. 자세한 내용은 [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)를 참조하세요.
 
-새 프로젝트를 만들 때 기본적으로 *%USERPROFILE%\source\repos*에 저장됩니다. **도구** > **옵션** > **프로젝트 및 솔루션** > **위치** 아래의 **프로젝트 위치** 설정에서 이 위치를 변경할 수 있습니다. 자세한 내용은 [프로젝트 및 솔루션 페이지, 옵션 대화 상자](../ide/reference/projects-and-solutions-options-dialog-box.md)를 참조하세요.
+새 프로젝트를 만들 때 기본적으로 *%USERPROFILE%\source\repos*에 저장됩니다. **도구**옵션 > 프로젝트 및 솔루션 > 위치 >  아래의 **프로젝트 위치** 설정에서 이 위치를 변경할 수 있습니다. 자세한 내용은 [프로젝트 및 솔루션 페이지, 옵션 대화 상자](../ide/reference/projects-and-solutions-options-dialog-box.md)를 참조하세요.
 
 ## <a name="solution-explorer"></a>솔루션 탐색기
 
@@ -76,7 +76,7 @@ Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하
 
 ASP.NET Core 프로젝트의 경우에는 파일이 **솔루션 탐색기**에 중첩되는 방식을 사용자 지정할 수 있습니다. 자세한 내용은 [솔루션 탐색기에서 파일 중첩 사용자 지정](file-nesting-solution-explorer.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [프로젝트 및 솔루션(Mac용 Visual Studio)](/visualstudio/mac/projects-and-solutions)
