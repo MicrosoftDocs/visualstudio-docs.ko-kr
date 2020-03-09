@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254433"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408809"
 ---
 # <a name="build-actions"></a>빌드 작업
 
 Visual Studio 프로젝트의 모든 파일에는 빌드 작업이 있습니다. 빌드 작업은 프로젝트가 컴파일될 때 파일에 발생하는 작업을 제어합니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio의 경우 [Mac용 Visual Studio에서 빌드 작업](/visualstudio/mac/build-actions)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio의 경우 [Mac용 Visual Studio에서 빌드 작업](/visualstudio/mac/build-actions)을 참조하세요.
 
 ## <a name="set-a-build-action"></a>빌드 작업 설정
 
@@ -54,7 +54,7 @@ C# 및 Visual Basic 프로젝트 파일에 대한 좀 더 일반적인 빌드 �
 > [!NOTE]
 > 추가 빌드 작업은 특정 프로젝트 형식에 대해 정의할 수 있으므로 빌드 작업 목록은 프로젝트 형식에 따라 다르며, 이 목록에 없는 값이 표시될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
 - [Visual Basic 컴파일러 옵션](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)
