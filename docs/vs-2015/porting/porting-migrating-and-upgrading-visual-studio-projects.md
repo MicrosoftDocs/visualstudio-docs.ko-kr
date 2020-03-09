@@ -21,7 +21,7 @@ ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 3361b04900e549d037338abfba0911b232c9e1bd
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75919098"
@@ -53,7 +53,7 @@ Visual Studio 2013, Visual Studio 2012 또는 Visual Studio 2010 SP1과 함께 V
 |C#/Visual Basic Silverlight 4 애플리케이션 또는 클래스 라이브러리|Visual Studio에서 프로젝트를 자동으로 업데이트하도록 허용하면 Visual Studio 2013이나 Visual Studio 2012에서 프로젝트를 열 수 있습니다.|
 |C#/Visual Basic Webform 또는 Windows Form|Visual Studio 2013 및 Visual Studio 2012에서 프로젝트를 열 수 있습니다.|
 |Visual Basic 6 및 Visual C++ 6|Visual Studio 2012와 Visual Studio 2013에서는 Visual Basic 6 또는 Visual C++ 6로 빌드된 애플리케이션을 디버깅할 수 없습니다. 이 애플리케이션을 디버깅하려면 이전 버전의 Visual Studio를 사용하세요.|
-|코딩된 UI 테스트|Visual Studio에서 프로젝트를 자동으로 업데이트 하도록 허용하는 경우 Visual Studio 2013, Visual Studio 2012 그리고 Visual Studio 2010 SP1에서 프로젝트를 열 수 있습니다.|
+|코딩된 UI 테스트|Visual Studio에서 프로젝트를 자동으로 업데이트하도록 허용하는 경우 Visual Studio 2013, Visual Studio 2012 그리고 Visual Studio 2010 SP1에서 프로젝트를 열 수 있습니다.|
 |F#|Visual Studio 2010 SP1에서 만든 프로젝트를 Visual Studio에서 업그레이드하도록 허용하면 Visual Studio 2013 및 Visual Studio 2012에서 프로젝트를 열 수 있습니다. 하지만 이전 버전의 Visual Studio에서 만든 Silverlight 프로젝트를 Visual Studio 2013으로 업그레이드할 수는 없습니다. 대신 Visual Studio 2013에서 Silverlight 프로젝트를 만들어 여기에 코드를 복사해야 합니다. Visual Studio 2013에서 만든 Silverlight 프로젝트는 Silverlight 5를 대상으로 합니다.|
 |LightSwitch|Visual Studio에서 프로젝트를 자동으로 업그레이드하도록 허용하면 Visual Studio 2013에서만 프로젝트를 열 수 있습니다.|
 |로컬 데이터베이스 캐시|Visual Studio 2013에는 로컬 데이터베이스 캐시 템플릿과 **데이터 동기화 구성** 대화 상자가 포함되어 있지 않습니다. Microsoft Synchronization Services v1.0이 설치된 경우 Visual Studio 2013을 사용하여 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 만든 프로젝트를 열고 실행할 수 있지만 이 프로젝트를 Visual Studio 2013에서 업데이트하려면 코드에서 수동으로 변경해야 합니다. 또는 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 을 계속 사용하여 이 프로젝트를 유지하고 업데이트할 수 있습니다.  새로운 개발의 경우 Microsoft Sync Framework에서 제공하는 새로운 동기화 모델을 대상으로 합니다. 자세한 내용은 [Microsoft Sync Framework 개발자 센터](https://msdn.microsoft.com/sync/default)를 참조하세요.|
@@ -77,7 +77,7 @@ Visual Studio 2013, Visual Studio 2012 또는 Visual Studio 2010 SP1과 함께 V
 |Visual Studio 2010 Visual Database Tools|Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 이 프로젝트를 열 수 있습니다.|
 |Visual Studio Lab Management|[!INCLUDE[TCMext](../includes/tcmext-md.md)], Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1을 사용하여 이러한 버전에서 만든 환경을 열 수 있습니다. 그러나 환경을 만들기 전에 Microsoft Test Manager 버전이 Team Foundation Server 버전과 일치해야 합니다.|
 |Visual Studio 매크로|이 프로젝트는 해당 프로젝트 형식을 지원하지 않으므로 Visual Studio 2013에서 열 수 없습니다.|
-|Visual Studio SDK/VSIX|Visual Studio SDK 프로젝트를 Visual Studio 2013으로 업그레이드 한 후에는 Visual Studio 2012에서 열 수 없습니다. 자세한 내용은 [방법: Visual Studio 2015로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)을 참조하세요.|
+|Visual Studio SDK/VSIX|Visual Studio SDK 프로젝트를 Visual Studio 2013으로 업그레이드한 후에는 Visual Studio 2012에서 열 수 없습니다. 자세한 내용은 [방법: Visual Studio 2015로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)을 참조하세요.|
 |Visual Studio용 Microsoft Azure 도구|Visual Studio용 Microsoft Azure 도구 버전 2.1을 사용하는 경우 Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 프로젝트를 열 수 있습니다. 프로젝트 대상이 이전 버전일 경우 Visual Studio에서 프로젝트를 버전 2.1로 업그레이드하도록 허용하면 Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 프로젝트를 열 수 있습니다.|
 |Windows Communication Foundation, Windows Presentation Foundation|Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 이 프로젝트를 열 수 있습니다.|
 |Windows Mobile|이 프로젝트는 해당 프로젝트 형식을 지원하지 않으므로 Visual Studio 2013에서 열 수 없습니다.|

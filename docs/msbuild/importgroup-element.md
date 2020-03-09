@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826590"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633735"
 ---
 # <a name="importgroup-element"></a>ImportGroup 요소
+
   
 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.
 
@@ -42,6 +43,7 @@ ms.locfileid: "76826590"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
@@ -60,9 +62,10 @@ ms.locfileid: "76826590"
 
 | 요소 | 설명 |
 | - | - |
-| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
+| [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 `ImportGroup` 요소를 보여 줍니다.
 
 ```xml

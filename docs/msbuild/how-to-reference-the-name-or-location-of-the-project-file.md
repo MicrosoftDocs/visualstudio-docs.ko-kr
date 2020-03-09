@@ -16,22 +16,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574784"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633839"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>방법: 프로젝트 파일의 이름 또는 위치 참조
-자체 속성을 만들 필요 없이 프로젝트 파일 자체에 있는 프로젝트의 이름 또는 위치를 사용할 수 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 프로젝트 파일 이름 및 프로젝트와 관련된 기타 속성을 참조하는 예약된 속성을 제공합니다. 예약된 속성에 대한 자세한 내용은 [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 참조하세요.
+
+자체 속성을 만들 필요 없이 프로젝트 파일 자체에 있는 프로젝트의 이름 또는 위치를 사용할 수 있습니다. MSBuild는 프로젝트 파일 이름 및 프로젝트와 관련된 기타 속성을 참조하는 예약된 속성을 제공합니다. 예약된 속성에 대한 자세한 내용은 [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 참조하세요.
 
 ## <a name="use-the-project-properties"></a>프로젝트 속성 사용
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 매번 정의하지 않고 프로젝트 파일에서 사용할 수 있는 몇몇 예약된 속성을 제공합니다. 예를 들어 예약된 속성 `MSBuildProjectName`은 프로젝트 파일 이름에 대한 참조를 제공합니다. 예약된 속성 `MSBuildProjectDirectory`은 프로젝트 파일 위치에 대한 참조를 제공합니다.
+
+ MSBuild는 매번 정의하지 않고 프로젝트 파일에서 사용할 수 있는 몇몇 예약된 속성을 제공합니다. 예를 들어 예약된 속성 `MSBuildProjectName`은 프로젝트 파일 이름에 대한 참조를 제공합니다. 예약된 속성 `MSBuildProjectDirectory`은 프로젝트 파일 위치에 대한 참조를 제공합니다.
 
 #### <a name="to-use-the-project-properties"></a>프로젝트 속성을 사용하려면
 
-- 속성을 사용하는 것처럼 $() 표시를 사용하여 프로젝트 파일에서 속성을 참조합니다. 예:
+- 속성을 사용하는 것처럼 $() 표시를 사용하여 프로젝트 파일에서 속성을 참조합니다. 예를 들어:
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -47,6 +49,7 @@ ms.locfileid: "75574784"
 > 프로젝트 파일에서 예약된 속성을 다시 정의할 수 없습니다.
 
 ## <a name="example"></a>예제
+
  다음 예제 프로젝트 파일은 출력의 이름을 지정하기 위해 프로젝트 이름을 예약된 속성으로 참조합니다.
 
 ```xml
@@ -75,6 +78,7 @@ ms.locfileid: "75574784"
 ```
 
 ## <a name="example"></a>예제
+
  다음 예제 프로젝트 파일에서는 `MSBuildProjectDirectory` 예약된 속성을 사용하여 프로젝트 파일 위치에 파일에 대한 전체 경로를 만듭니다.
 
 ```xml
@@ -87,6 +91,9 @@ ms.locfileid: "75574784"
 </Project>
 ```
 
+이 예제에서는 [속성 함수](property-functions.md) 구문을 사용하여 정적 .NET Framework 메서드 <xref:System.IO.Path.Combine*?displayProperty=fullName>를 호출합니다.
+
 ## <a name="see-also"></a>참조
+
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)

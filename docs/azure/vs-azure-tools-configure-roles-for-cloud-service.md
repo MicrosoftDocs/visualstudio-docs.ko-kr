@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253593"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408703"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 역할 구성
 Azure 클라우드 서비스에는 하나 이상의 작업자 또는 웹 역할이 포함될 수 있습니다. 각 역할에 대해 해당 역할을 설정하는 방법을 정의하고 해당 역할을 실행하는 방법을 구성해야 합니다. 클라우드 서비스의 역할에 대한 자세한 내용은 [Azure Cloud Services 소개](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)를 참조하세요.
@@ -114,7 +114,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     - **Microsoft Azure Storage 에뮬레이터** - 이 옵션을 선택하면 Azure에만 적용되므로 대화 상자의 나머지 설정이 비활성화됩니다. **확인**을 선택합니다.
     - **구독** - 이 옵션을 선택하면 드롭다운 목록을 사용하여 Microsoft 계정을 선택하고 로그인하거나 Microsoft 계정을 추가합니다. Azure 구독 및 스토리지 계정을 선택합니다. **확인**을 선택합니다.
-    - **수동으로 입력한 자격 증명** - 스토리지 계정 이름과 기본 또는 보조 키를 입력합니다. **연결** 옵션을 선택합니다(대부분의 시나리오에 대해 HTTPS 권장). **확인**을 선택합니다.
+    - **수동으로 입력한 자격 증명** - 스토리지 계정 이름과 기본 또는 보조 키를 입력합니다. **연결** 에 대 한 옵션을 선택 합니다. 대부분의 시나리오에는 HTTPS를 권장 합니다. **확인을**선택 합니다.
 
 1. 연결 문자열을 삭제하려면 연결 문자열을 선택한 다음 **설정 제거**를 선택합니다.
 
@@ -254,7 +254,7 @@ using (FileStream writeStream = File.Create(filePath))
 
 이전 섹션의 코드로 만든 파일을 보려면 다음 단계를 수행합니다.
 
-1. Windows 알림 영역에서 Azure 아이콘을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서  **에뮬레이터 UI 표시**를 선택합니다.
+1. Windows 알림 영역에서 Azure 아이콘을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **컴퓨팅 에뮬레이터 UI 표시**를 선택합니다.
 
     ![Azure 컴퓨팅 에뮬레이터 표시](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 
@@ -262,7 +262,7 @@ using (FileStream writeStream = File.Create(filePath))
 
     ![Azure 컴퓨팅 에뮬레이터](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator.png)
 
-1. **Microsoft Azure 컴퓨팅 에뮬레이터** 메뉴에서 **도구** > **로컬 저장소 열기**를 선택합니다.
+1. **Microsoft Azure Compute 에뮬레이터** 메뉴에서 **도구** > **로컬 저장소 열기**를 선택합니다.
 
     ![로컬 저장소 메뉴 항목 열기](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 

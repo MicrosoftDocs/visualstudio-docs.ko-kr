@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1b0e774d70c5787a7221aa0dfa7b0834dac7e3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588293"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652796"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
@@ -188,6 +188,72 @@ MSBuild에서 솔루션 파일을 빌드할 때 먼저 프로젝트 파일로 �
  </Target>
 </Project>
 ```
+
+## <a name="customize-all-net-builds"></a>모든 .NET 빌드 사용자 지정
+
+빌드 서버를 유지 관리할 때는 서버에 있는 모든 빌드에 대해 MSBuild 설정을 전역적으로 구성해야 할 수 있습니다.  원칙적으로 전역 *Microsoft.Common.Targets* 또는 *Microsoft.Common.Props* 파일을 수정할 수 있지만 더 좋은 방법이 있습니다. 특정 MSBuild 속성을 사용하고 특정 사용자 지정 `.targets` 및 `.props` 파일을 추가하여 특정 프로젝트 형식(예: 모든 C# 프로젝트)의 모든 빌드에 영향을 줄 수 있습니다.
+
+MSBuild 또는 Visual Studio 설치가 관리하는 모든 C# 또는 Visual Basic 빌드에 영향을 주려면 *Microsoft.Common.targets* 파일 전이나 후에 실행될 대상과 함께 *Custom.Before.Microsoft.Common.Targets* 또는 *Custom.After.Microsoft.Common.Targets* 파일을 만들거나 *Microsoft.Common.props* 전이나 후에 처리될 속성과 함께 *Custom.Before.Microsoft.Common.Props* 또는 *Custom.After.Microsoft.Common.Props* 파일을 만듭니다.
+
+다음 MSBuild 속성을 사용하여 이러한 파일의 위치를 지정할 수 있습니다.
+
+- CustomBeforeMicrosoftCommonProps
+- CustomBeforeMicrosoftCommonTargets
+- CustomAfterMicrosoftCommonProps
+- CustomAfterMicrosoftCommonTargets
+- CustomBeforeMicrosoftCSharpProps
+- CustomBeforeMicrosoftVisualBasicProps
+- CustomAfterMicrosoftCSharpProps
+- CustomAfterMicrosoftVisualBasicProps
+- CustomBeforeMicrosoftCSharpTargets
+- CustomBeforeMicrosoftVisualBasicTargets
+- CustomAfterMicrosoftCSharpTargets
+- CustomAfterMicrosoftVisualBasicTargets
+
+이러한 속성의 *공통* 버전은 C# 프로젝트와 Visual Basic 프로젝트 모두에 영향을 줍니다. MSBuild 명령줄에서 이러한 속성을 설정할 수 있습니다.
+
+```cmd
+msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
+```
+
+가장 좋은 방법은 시나리오에 따라 달라집니다. 전용 빌드 서버가 있고 해당 서버에서 실행되는 적절한 프로젝트 형식의 모든 빌드에서 항상 특정 대상이 실행되도록 하려면 전역 사용자 지정 `.targets` 또는 `.props` 파일을 사용하는 것이 좋습니다.  특정 조건이 적용될 때만 사용자 지정 대상이 실행되도록 하려면 다른 파일 위치를 사용하고 필요한 경우에만 MSBuild 명령줄에서 적절한 MSBuild 속성을 설정하여 해당 파일의 경로를 설정합니다.
+
+> [!WARNING]
+> Visual Studio는 형식이 일치하는 프로젝트를 빌드할 때마다 MSBuild 폴더에서 사용자 지정 `.targets` 또는 `.props` 파일을 찾으면 이를 사용합니다. 이로 인해 의도하지 않은 결과가 발생할 수 있으며, 제대로 수행되지 않으면 컴퓨터에서 Visual Studio의 빌드 기능을 사용하지 못할 수 있습니다.
+
+## <a name="customize-all-c-builds"></a>모든 C++ 빌드 사용자 지정
+
+C++ 프로젝트에서는 앞에서 언급한 사용자 지정 `.targets` 및 `.props` 파일이 무시됩니다. C++ 프로젝트에서는 플랫폼마다 `.targets` 파일을 만들어 해당 플랫폼의 적절한 가져오기 폴더에 배치할 수 있습니다.
+
+Win32 플랫폼용 `.targets` 파일인 *Microsoft.Cpp.Win32.targets*에는 다음 `Import` 요소가 포함되어 있습니다.
+
+```xml
+<Import Project="$(VCTargetsPath)\Platforms\Win32\ImportBefore\*.targets"
+        Condition="Exists('$(VCTargetsPath)\Platforms\Win32\ImportBefore')"
+/>
+```
+
+같은 파일의 끝에는 비슷한 요소가 있습니다.
+
+```xml
+<Import Project="$(VCTargetsPath)\Platforms\Win32\ImportAfter\*.targets"
+        Condition="Exists('$(VCTargetsPath)\Platforms\Win32\ImportAfter')"
+/>
+```
+
+*%ProgramFiles32%\MSBuild\Microsoft.Cpp\v{version}\Platforms\*에는 다른 대상 플랫폼을 위한 비슷한 import 요소가 있습니다.
+
+플랫폼에 따라 적절한 폴더에 `.targets` 파일을 배치하면 MSBuild는 해당 플랫폼의 모든 C++ 빌드에 해당 파일을 가져옵니다. 필요한 경우, 여기에 여러 `.targets` 파일을 넣을 수 있습니다.
+
+### <a name="specify-a-custom-import-on-the-command-line"></a>명령줄에서 사용자 지정 가져오기 지정
+
+C++ 프로젝트의 특정 빌드에 포함하려는 사용자 지정 `.targets`의 경우 명령줄에서 `ForceImportBeforeCppTargets` 속성과 `ForceImportAfterCppTargets` 속성 중 하나 또는 둘 모두를 설정합니다.
+
+```cmd
+msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.Cpp.Targets" MyCppProject.vcxproj
+```
+
+(예를 들어 빌드 서버의 플랫폼에 대한 모든 C++ 빌드에 영향을 주기 위한) 전역 설정의 경우, 두 가지 방법이 있습니다. 첫째, 항상 설정되어 있는 시스템 환경 변수를 사용하여 이러한 속성을 설정할 수 있습니다. MSBuild는 항상 환경을 읽고 모든 환경 변수의 속성을 만들거나 재정의하기 때문에 이 방법은 효과적입니다.
 
 ## <a name="see-also"></a>참조
 

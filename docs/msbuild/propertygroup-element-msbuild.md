@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7497578b977b66c83a8b5f9f37f03743f864bcd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597375"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632929"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 요소(MSBuild)
-사용자 정의 [Property](../msbuild/property-element-msbuild.md) 요소 집합을 포함합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 사용되는 모든 `Property`요소는 `PropertyGroup` 요소의 자식이어야 합니다.
+
+사용자 정의 [Property](../msbuild/property-element-msbuild.md) 요소 집합을 포함합니다. MSBuild 프로젝트에서 사용되는 모든 `Property` 요소는 `PropertyGroup` 요소의 자식이어야 합니다.
 
  \<Project> \<PropertyGroup>
 
@@ -40,6 +41,7 @@ ms.locfileid: "75597375"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
@@ -58,9 +60,10 @@ ms.locfileid: "75597375"
 
 | 요소 | 설명 |
 | - | - |
-| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
+| [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 조건에 따라 속성을 설정하는 방법을 보여 줍니다. 이 예제에서 `CompileConfig` 속성값이 `DEBUG`이면 `PropertyGroup` 요소 내에서 `Optimization`, `Obfuscate` 및 `OutputPath` 속성이 설정됩니다.
 
 ```xml
@@ -72,5 +75,6 @@ ms.locfileid: "75597375"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild 속성](../msbuild/msbuild-properties.md)

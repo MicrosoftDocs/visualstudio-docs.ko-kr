@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a78add284a5cea966d1176645649eed19017addd
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579538"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631330"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 작업
-<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 작업은 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 프로젝트를 빌드할 때 애플리케이션 매니페스트( *\<projectname&gt;.exe.manifest*)에 **\<hostInBrowser /&gt;** 요소를 추가하기 위해 실행합니다.
+
+XAML Browser Application(XBAP) 프로젝트를 빌드할 때 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 작업이 실행되어 애플리케이션 매니페스트( *\<projectname>.exe.manifest*)에 **\<hostInBrowser />** 요소를 추가합니다.
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
@@ -36,7 +37,8 @@ ms.locfileid: "77579538"
 |`HostInBrowser`|필수 **Boolean** 매개 변수입니다.<br /><br /> **\<hostInBrowser /&gt;** 요소를 포함하도록 애플리케이션 매니페스트를 수정할지 여부를 지정합니다. **true**이면 새 **\<hostInBrowser />** 요소가 **\<entryPoint />** 요소에 포함됩니다. 포함된 요소는 누적됩니다. 즉, 기존 **\<hostInBrowser />** 요소를 제거하거나 덮어쓰지 않습니다. 대신 추가 **\<hostInBrowser />** 요소가 만들어집니다. **false**이면 애플리케이션 매니페스트가 수정되지 않습니다.|
 
 ## <a name="remarks"></a>설명
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)]는 [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] 배포를 통해 실행되므로 지원되는 배포 및 애플리케이션 매니페스트를 사용하여 게시되어야 합니다. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]는 [GenerateApplicationManifest](generateapplicationmanifest-task.md) 작업을 사용하여 애플리케이션 매니페스트를 생성합니다.
+
+ XBAP는 ClickOnce 배포를 통해 실행되므로 지원되는 배포 및 애플리케이션 매니페스트를 사용하여 게시되어야 합니다. MSBuild는 [GenerateApplicationManifest](generateapplicationmanifest-task.md) 작업을 사용하여 애플리케이션 매니페스트를 생성합니다.
 
  그러고 나서 다음 예제에서와 같이 브라우저에서 호스트되도록 애플리케이션을 구성하기 위해 추가적인 **\<hostInBrowser /&gt;** 요소를 애플리케이션 매니페스트에 추가해야 합니다.
 
@@ -54,9 +56,10 @@ ms.locfileid: "77579538"
 />
 ```
 
- [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)] 프로젝트를 빌드할 때 `<hostInBrowser />` 요소를 추가하기 위해 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 작업이 실행됩니다.
+ XBAP 프로젝트를 빌드할 때 `<hostInBrowser />` 요소를 추가하기 위해 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 작업이 실행됩니다.
 
 ## <a name="example"></a>예제
+
  다음 예제에서는 애플리케이션 매니페스트 파일에 `<hostInBrowser />` 요소를 포함하는 방법을 보여줍니다.
 
 ```xml
@@ -73,6 +76,7 @@ ms.locfileid: "77579538"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)
 - [작업 참조](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

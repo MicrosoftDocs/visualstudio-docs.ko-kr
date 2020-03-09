@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2f6c6434419ac25ef166b1ccc409527cf69e6674
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580018"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215426"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -98,13 +98,13 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
    >
    > ![Visual Studio Installer에서 .NET Core 플랫폼 간 개발 워크로드](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 “[프로젝트 만들기](#create-a-project)” 프로시저의 2단계로 돌아갑니다.
+   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
 1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *계산기*를 입력합니다. 그런 다음, **만들기**를 선택합니다.
 
    !['새 프로젝트 구성' 창에서 프로젝트의 이름을 '계산기'로 지정합니다.](./media/vs-2019/csharp-name-your-calculator-project.png)
 
-   Visual Studio는 기본 “Hello World” 코드를 포함하는 새 프로젝트를 엽니다.
+   Visual Studio는 기본 "Hello World" 코드를 포함하는 새 프로젝트를 엽니다.
    
 ::: moniker-end
 
@@ -116,7 +116,7 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
 
 C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
-1. 코드 편집기에서 기본 “Hello World” 코드를 삭제합니다.
+1. 코드 편집기에서 기본 "Hello World" 코드를 삭제합니다.
 
     ![새 계산기 앱에서 기본 Hello World 코드 삭제](./media/csharp-console-calculator-deletehelloworld.png)
 
@@ -278,7 +278,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 > [!TIP]
 > 디버거 및 디버거의 작동 방식에 대한 자세한 내용은 [먼저 Visual Studio 디버거 살펴보기](../../debugger/debugger-feature-tour.md) 페이지를 참조하세요.
 
-### <a name="fix-the-divide-by-zero-error"></a>“0으로 나누기” 오류 해결
+### <a name="fix-the-divide-by-zero-error"></a>"0으로 나누기" 오류 해결
 
 숫자를 0으로 나누려고 하면 콘솔 앱이 중지되고 코드 편집기에 잘못된 내용이 표시될 수 있습니다.
 
@@ -307,13 +307,13 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
    코드를 추가한 후 `switch` 문이 있는 섹션은 다음 스크린샷과 비슷하게 표시되어야 합니다.
 
-   ![Visual Studio 코드 편집기에서 수정된 “전환” 섹션](./media/csharp-console-calculator-switch-code.png)
+   ![Visual Studio 코드 편집기에서 수정된 "전환" 섹션](./media/csharp-console-calculator-switch-code.png)
 
 이제 숫자를 0으로 나누면 앱은 다른 숫자를 요구할 것입니다. 더 나은 기능: 0이 아닌 숫자를 입력할 때까지 요청이 중지되지 않습니다.
 
    ![Visual Studio 코드 편집기에서 0으로 나누기 오류가 표시됩니다.](./media/csharp-console-calculator-dividebyzero.png)
 
-### <a name="fix-the-format-error"></a>“format” 오류 해결
+### <a name="fix-the-format-error"></a>"format" 오류 해결
 
 앱이 숫자 문자가 필요할 때 알파 문자를 입력하면(또는 그 반대로) 콘솔 앱이 중지됩니다. 그런 다음, Visual Studio는 코드 편집기에서 무엇이 잘못되었는지 보여줍니다.
 
@@ -329,15 +329,15 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 이제 시작해 보겠습니다.
 
-1. 다음 코드 블록 *후* 모두 삭제합니다.
+1. `Calculator` 네임스페이스에서 여는 중괄호와 닫는 중괄호 사이에 있는 모든 항목을 삭제합니다.
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. 다음으로, 새 `Calculator` 클래스를 다음과 같이 추가합니다.

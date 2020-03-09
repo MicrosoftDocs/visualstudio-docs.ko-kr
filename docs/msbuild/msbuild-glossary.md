@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593670"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633345"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 용어
 
@@ -161,7 +161,7 @@ targets file\
 대상 파일은 빌드를 안내하는 대부분의 대상 및 작업을 포함하는 프로젝트 파일입니다. 규칙에 따라 대상 파일의 확장명은 *.targets*입니다. 일반적으로 관련 프로젝트 파일의 끝부분에서 대상 파일을 가져옵니다.
 
 task\
-작업은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다. 예를 들어, 작업은 입력 파일을 컴파일하거나 외부 도구를 실행할 수 있습니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
+작업은 MSBuild 프로젝트에서 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다. 예를 들어, 작업은 입력 파일을 컴파일하거나 외부 도구를 실행할 수 있습니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
 transform\
 변형은 항목 컬렉션 간의 일대일 변환입니다. 변형을 수행하면 프로젝트가 항목 컬렉션을 변환할 수 있을 뿐 아니라, 대상이 입력과 출력 간의 직접 매핑을 식별할 수 있습니다. 자세한 내용은 [변환](../msbuild/msbuild-transforms.md)을 참조하세요.

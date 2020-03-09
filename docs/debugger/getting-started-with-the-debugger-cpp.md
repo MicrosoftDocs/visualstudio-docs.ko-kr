@@ -25,7 +25,7 @@ ms.locfileid: "77091810"
 
 이 문서에서는 단계별 연습을 통해 Visual Studio 디버거의 기능을 소개합니다. 디버거 기능을 개략적으로 살펴보려면 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요. *애플리케이션을 디버그*하는 경우는 일반적으로 디버거가 연결된 상태에서 애플리케이션을 실행하고 있음을 의미합니다. 이렇게 하면 디버거가 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법이 제공됩니다. 코드를 단계별로 실행하고, 변수에 저장된 값을 살펴보고, 변수에 대한 조사식을 설정하여 값이 변경되는 경우를 확인하며, 코드의 실행 경로를 검사하고, 코드의 분기가 실행되는지 등을 확인할 수 있습니다. 코드를 처음으로 디버그하려고 하는 경우 이 문서를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
 
-데모 앱은 C코드이지만, 대부분의 기능은 C#, Visual Basic, F#, Python, JavaScript 및 Visual Studio에서 지원하는 다른 언어에 적용할 수 있습니다(F#은 Edit-and-continue를 지원하지 않습니다. F# 및 JavaScript는 **Autos** 창을 지원하지 않습니다). 스크린샷은 C++에 있습니다.
+데모 앱은 C++ 코드이지만, 대부분의 기능은 C#, Visual Basic, F#, Python, JavaScript 및 Visual Studio에서 지원하는 다른 언어에 적용할 수 있습니다(F#은 Edit-and-continue를 지원하지 않습니다. F# 및 JavaScript는 **Autos** 창을 지원하지 않습니다). 스크린샷은 C++에 해당합니다.
 
 이 자습서에서 다음을 수행합니다.
 

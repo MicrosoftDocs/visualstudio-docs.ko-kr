@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566425"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631980"
 ---
 # <a name="target-element-msbuild"></a>Target 요소(MSBuild)
-순차적으로 실행할 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]의 작업 집합을 포함합니다.
+
+MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 
  \<프로젝트> \<대상>
 
@@ -51,6 +52,7 @@ ms.locfileid: "75566425"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
@@ -72,7 +74,7 @@ ms.locfileid: "75566425"
 
 | 요소 | 설명 |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다. |
+| [Task](../msbuild/task-element-msbuild.md) | MSBuild 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 사용자 정의 `Property` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `PropertyGroup` 요소를 포함할 수 있습니다. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | 사용자 정의 `Item` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `ItemGroup` 요소를 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요. |
 | [OnError](../msbuild/onerror-element-msbuild.md) | 실패한 작업의 `ContinueOnError` 특성이 ErrorAndStop 또는 `false`인 경우 하나 이상의 대상이 실행되도록 합니다. 대상에는 `OnError` 요소가 없을 수도 있고 하나 이상 있을 수도 있습니다. `OnError` 요소는 있는 경우 `Target` 요소의 마지막 요소여야 합니다.<br /><br /> `ContinueOnError` 특성에 대한 자세한 내용은 [Task 요소(MSBuild)](../msbuild/task-element-msbuild.md)를 참조하세요. |
@@ -81,10 +83,11 @@ ms.locfileid: "75566425"
 
 | 요소 | 설명 |
 | - | - |
-| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
+| [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 
 ## <a name="remarks"></a>설명
- 실행할 첫 번째 대상은 런타임에 지정됩니다. 대상은 다른 대상에 대한 종속성을 포함할 수 있습니다. 예를 들어 배포용 대상은 컴파일용 대상에 종속됩니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 엔진은 종속성을 `DependsOnTargets` 특성에 나타나는 순서대로 왼쪽에서 오른쪽으로 실행합니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.
+
+ 실행할 첫 번째 대상은 런타임에 지정됩니다. 대상은 다른 대상에 대한 종속성을 포함할 수 있습니다. 예를 들어 배포용 대상은 컴파일용 대상에 종속됩니다. MSBuild 엔진은 종속성을 `DependsOnTargets` 특성에 나타나는 순서대로 왼쪽에서 오른쪽으로 실행합니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.
 
  MSBuild는 가져오기 순서에 종속되며, 특정 `Name` 특성을 가진 대상의 마지막 정의가 사용됩니다.
 
@@ -101,6 +104,7 @@ ms.locfileid: "75566425"
  MSBuild 4 이전 버전에서는 `Target`에 `Outputs`의 같은 항목에 대한 여러 참조가 포함되어 있는 경우 항상 중복 항목이 기록되었습니다. 중복 항목은 전혀 사용되지 않으므로 출력 수와 프로젝트 상호 종속성이 많은 대형 빌드에서는 이러한 방식으로 인해 많은 양의 메모리가 낭비됩니다. `KeepDuplicateOutputs` 특성을 `true`로 설정하면 이러한 중복 항목이 기록됩니다.
 
 ## <a name="example"></a>예제
+
  다음 코드 예제는 `Csc` 작업을 실행하는 `Target` 요소를 보여 줍니다.
 
 ```xml
@@ -118,5 +122,6 @@ ms.locfileid: "75566425"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [대상](../msbuild/msbuild-targets.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

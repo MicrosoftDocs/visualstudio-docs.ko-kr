@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416766"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904089"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>방법: 여러 구성 동시 빌드
 
@@ -24,11 +24,13 @@ ms.locfileid: "68416766"
 
 2. 모든 Visual Basic 프로젝트
 
+솔루션에 이러한 두 가지 프로젝트 형식의 프로젝트가 포함된 경우 해당 솔루션에 **일괄 빌드**를 사용할 수 없습니다. 이 경우 **빌드** 메뉴에 명령이 표시되지 않습니다.
+
    빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>여러 빌드 구성에서 프로젝트를 빌드하려면
 
-1. 메뉴 모음에서 **빌드** > **일괄 빌드**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **일괄 빌드**를 선택합니다. 또는 **Ctrl**+**Q**를 눌러 검색 상자를 열고 `Batch Build`를 검색합니다.
 
 2. **빌드** 열에서 프로젝트를 빌드할 구성에 대한 확인란을 선택합니다.
 
@@ -37,7 +39,7 @@ ms.locfileid: "68416766"
 
 3. **빌드** 또는 **다시 빌드** 단추를 선택하여 지정한 구성으로 프로젝트를 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)

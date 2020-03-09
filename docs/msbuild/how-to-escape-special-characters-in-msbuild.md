@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595009"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633878"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>방법: MSBuild의 이스케이프 특수 문자
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일에서 특정 문자는 특수한 의미로 사용됩니다. 이러한 문자의 예로는 세미콜론(`;`) 및 별표(`*`)를 들 수 있습니다. 이러한 특수 문자의 전체 목록을 보려면 [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md)를 참조하세요.
+MSBuild 프로젝트 파일에서 특정 문자는 특수한 의미로 사용됩니다. 이러한 문자의 예로는 세미콜론(`;`) 및 별표(`*`)를 들 수 있습니다. 이러한 특수 문자의 전체 목록을 보려면 [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md)를 참조하세요.
 
 프로젝트 파일에서 이러한 특수 문자를 리터럴로 사용하려면 `%<xx>` 구문을 사용하여 해당 문자를 지정해야 합니다. 여기서 `<xx>`는 문자의 ASCII 16진수 값을 나타냅니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "75595009"
 <Compile Include="MyFile.cs;MyClass.cs"/>
 ```
 
-이름에 세미콜론이 포함된 항목을 선언하려면 `%<xx>` 구문을 사용하여 세미콜론을 이스케이프하고 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 두 개의 개별 항목을 선언하지 않게 해야 합니다. 예를 들어 다음 항목은 세미콜론을 이스케이프하고 `MyFile.cs;MyClass.cs`라는 하나의 항목을 선언합니다.
+이름에 세미콜론이 포함된 항목을 선언하려면 `%<xx>` 구문을 사용하여 세미콜론을 이스케이프하고 MSBuild가 두 개의 개별 항목을 선언하지 않게 해야 합니다. 예를 들어 다음 항목은 세미콜론을 이스케이프하고 `MyFile.cs;MyClass.cs`라는 하나의 항목을 선언합니다.
 
 ```xml
 <Compile Include="MyFile.cs%3BMyClass.cs"/>
