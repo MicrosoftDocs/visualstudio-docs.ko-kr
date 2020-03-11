@@ -19,7 +19,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75565463"
 ---
-# <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
+# <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 리팩터링
 
 이 리팩터링은 다음에 적용됩니다.
 
