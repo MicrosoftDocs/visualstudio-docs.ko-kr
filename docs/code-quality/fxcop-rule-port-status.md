@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587591"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78946078"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -40,6 +40,7 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | ComVisible로 어셈블리 표시
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | AttributeUsageAttribute로 특성을 표시하세요.
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | 특성 인수의 접근자를 정의하세요.
+[CA1021](ca1021.md) | out 매개 변수를 사용하지 마세요.
 [CA1024](ca1024-use-properties-where-appropriate.md) | 적합한 속성을 사용하세요.
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | 열거형을 FlagsAttribute로 표시하세요.
 [CA1028](ca1028-enum-storage-should-be-int32.md) | Enum 저장소는 Int32 여야 합니다.
@@ -178,7 +179,7 @@ CA3061 | URL로 스키마를 추가 하지 않습니다.
 [CA3147](ca3147.md) | 위조 방지 토큰을 사용 하 여 동사 처리기 표시
 [CA5350](ca5350.md) | 취약한 암호화 알고리즘을 사용하지 마세요.
 [CA5351](ca5351.md) | 끊어진 암호화 알고리즘 사용 안 함
-CA5358 | 안전 하지 않은 암호화 모드 사용 안 함
+CA5358 | 안전하지 않은 암호화 모드를 사용하지 마세요.
 CA5359 | 인증서 유효성 검사를 사용 하지 않도록 설정 안 함
 CA5360 | Deserialization에서 위험한 메서드를 호출 하지 마십시오.
 CA5361 | 강력한 암호화의 SChannel 사용을 사용 하지 않도록 설정 안 함
@@ -344,6 +345,6 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [FxCopAnalyzers 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

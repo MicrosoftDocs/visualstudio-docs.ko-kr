@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517a583c859870b979c89c4fe2f55cd3bc0fc913
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d8e1df93fa9e865bb9b9136b9d0a0e07f1a485ea
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587617"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937509"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 및 FxCop 분석기에 대한 질문과 대답
 
@@ -31,11 +31,11 @@ FxCop 분석기는 .NET Compiler Platform("Roslyn")을 기반으로 합니다. �
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>코드 분석 실행 명령은 FxCop 분석기를 실행하나요?
 
-No. **분석** > **실행 코드 분석**을 선택 하면 레거시 분석이 실행 됩니다. **코드 분석 실행**은 Roslyn 기반 FxCop 분석기를 포함하여 Roslyn 기반 분석기에 적용되지 않습니다.
+아니요. **분석** > **실행 코드 분석**을 선택 하면 레거시 분석이 실행 됩니다. **코드 분석 실행**은 Roslyn 기반 FxCop 분석기를 포함하여 Roslyn 기반 분석기에 적용되지 않습니다.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 프로젝트 속성은 분석기를 실행하나요?
 
-No. 프로젝트 파일에서 **RunCodeAnalysis** 속성(예: *.csproj*)은 레거시 FxCop 실행에만 사용됩니다. **FxCopCmd.exe**를 호출하는 빌드 후 msbuild 작업을 실행합니다. 이는 Visual Studio에서 **분석** > **코드 분석 실행**을 선택하는 것과 같습니다.
+아니요. 프로젝트 파일에서 **RunCodeAnalysis** 속성(예: *.csproj*)은 레거시 FxCop 실행에만 사용됩니다. **FxCopCmd.exe**를 호출하는 빌드 후 msbuild 작업을 실행합니다. 이는 Visual Studio에서 **분석** > **코드 분석 실행**을 선택하는 것과 같습니다.
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>그러면 FxCop 분석기를 어떻게 실행하나요?
 
@@ -57,8 +57,8 @@ FxCop 분석기를 설치 했지만 경고가 계속 표시 되는 경우 **"" �
 
 프로젝트에서 빌드 옵션을 사용 하 여 경고를 오류로 처리 하는 경우 FxCop 분석기 경고가 오류로 나타날 수 있습니다. 코드 분석 경고가 오류로 처리 되지 않도록 하려면 [코드 분석 FAQ](../code-quality/analyzers-faq.md#treat-warnings-as-errors)의 단계를 따르세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
-- [분석기 시작](fxcop-analyzers.yml)
+- [FxCop 분석기로 마이그레이션](migrate-from-legacy-analysis-to-fxcop-analyzers.md)
 - [FxCop 분석기 설치](install-fxcop-analyzers.md)

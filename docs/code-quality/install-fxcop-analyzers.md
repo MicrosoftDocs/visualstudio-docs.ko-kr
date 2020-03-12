@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 78935673dbf57f75988d4c0a9e862b11e2fe855f
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587461"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937524"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio에서 FxCop 분석기 설치
 
@@ -72,7 +72,7 @@ Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속
 
 | Visual Studio 버전 | FxCop analyzer 패키지 버전 |
 | - | - |
-| Visual Studio 2019 (모든 버전)<br />Visual Studio 2017 버전 15.8 이상 | [latest](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (모든 버전)<br />Visual Studio 2017 버전 15.8 이상 | [마지막](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 버전 15.5에서 15.7로 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 버전 15.3에서 15.4로 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 버전 15.0에서 15.2로 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -152,8 +152,8 @@ Visual Studio 2017 버전 15.5 이상에서는 관리 되는 프로젝트에 대
 
 ::: moniker-end
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [Visual Studio에서 코드 분석기 사용](../code-quality/use-roslyn-analyzers.md)
-- [레거시 분석에서 코드 분석기로 마이그레이션](../code-quality/fxcop-analyzers.yml)
+- [레거시 분석에서 코드 분석기로 마이그레이션](../code-quality/migrate-from-legacy-analysis-to-fxcop-analyzers.md)
