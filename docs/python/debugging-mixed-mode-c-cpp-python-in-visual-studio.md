@@ -24,7 +24,7 @@ ms.locfileid: "75679002"
 Visual Studio에서는 Python 및 네이티브 C/C++에 대한 통합된 동시 혼합 모드 디버깅을 제공합니다. Visual Studio 설치 관리자에서 **Python 개발** 작업에 대해 **Python 네이티브 개발 도구** 옵션을 선택합니다.
 
 > [!Note]
-> 혼합 모드 디버깅은 Visual Studio 2015 및 이전 버전의 Visual Studio 1.x용 Python 도구에서 사용할 수 없습니다.
+> 혼합 모드 디버깅은 Visual Studio 2015 및 이전 버전의 Visual Studio용 Python 도구 1.x 에서 사용할 수 없습니다.
 
 이 문서에 설명된 대로 혼합 모드 디버깅 기능에는 다음 항목이 포함됩니다.
 
