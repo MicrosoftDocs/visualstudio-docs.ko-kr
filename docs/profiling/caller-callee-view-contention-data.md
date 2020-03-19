@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779742"
 ---
 # <a name="callercallee-view----contention-data"></a>호출자/호출 수신자 뷰 - 경합 데이터
@@ -48,7 +48,7 @@ ms.locfileid: "74779742"
 |**루트 함수 이름**|현재 함수의 이름입니다. [VSPerfReport](../profiling/vsperfreport.md) 명령줄 보고서에서만 사용됩니다.|
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)
 - [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)

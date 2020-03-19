@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957746"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>대화형 창에서 IPython 사용
@@ -80,7 +80,7 @@ IPython 모드의 Visual Studio **대화형** 창은 사용자에게 친숙한 �
 
 IPython에는 시스템 셸로 이스케이프, 변수 대체, 캡처 출력과 같은 다른 여러 유용한 기능이 있습니다. 자세한 내용은 [IPython 설명서](https://ipython.org/documentation.html)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - 설치하지 않고 쉽게 Jupyter를 사용하려면 노트북을 유지하고 다른 사용자와 공유할 수 있도록 해주는 무료 [Azure Notebook 호스티드 서비스](https://notebooks.azure.com/)를 시도해보세요.
 

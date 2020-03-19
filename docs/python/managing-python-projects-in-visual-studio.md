@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254211"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307150"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio의 Python 프로젝트
 
@@ -41,7 +41,7 @@ Visual Studio는 기존 폴더 트리에서 프로젝트를 만드는 템플릿�
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | [심층 분석: Python 프로젝트에서 소스 제어 사용](https://youtu.be/Aq8eqApnugM)(youtube.com, 8분 55초)도 시청하세요. |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | [심층 분석: Python 프로젝트에서 소스 제어 사용](https://youtu.be/Aq8eqApnugM)(youtube.com, 8분 55초)도 시청하세요. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>파일 추가. 시작 파일 할당. 환경 설정
 
@@ -131,7 +131,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 
 연결된 파일의 이름을 바꿀 수 없습니다.
 
-## <a name="references"></a>참조
+## <a name="references"></a>참조 항목
 
 Visual Studio 프로젝트는 프로젝트 및 확장에 참조 추가를 지원하며 이 내용은 **솔루션 탐색기**의 **참조** 노드 아래 나타납니다.
 

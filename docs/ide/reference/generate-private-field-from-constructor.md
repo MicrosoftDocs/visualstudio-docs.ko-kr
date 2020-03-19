@@ -1,26 +1,29 @@
 ---
-title: 생성자에서 프라이빗 필드 생성
-ms.date: 02/19/2020
+title: 생성자에서 전용 필드 생성
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef4188216b669b30b7af9bd725ec432bcd0a774
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529415"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094021"
 ---
-# <a name="generate-private-field-from-constructor"></a>생성자에서 프라이빗 필드 생성
+# <a name="generate-private-field-from-constructor"></a>생성자에서 전용 필드 생성
 
 이 리팩터링은 다음에 적용됩니다. 
 
 - C# 
+
+- Visual Basic
 
 **내용:** 생성자에서 프라이빗 필드를 생성합니다. 
 
@@ -36,7 +39,7 @@ ms.locfileid: "77529415"
    
 3. **필드 만들기 및 초기화** 옵션을 선택합니다.
 
-   ![생성자에서 프라이빗 필드 생성](media/generate-private-field-from-constructor.png)
+   ![생성자에서 전용 필드 생성](media/generate-private-field-from-constructor.png)
 
 ## <a name="see-also"></a>참조 
 

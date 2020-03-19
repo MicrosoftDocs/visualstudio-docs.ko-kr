@@ -1,19 +1,19 @@
 ---
 title: C/C++에 대한 단위 테스트 작성
 description: CTest, Boost.Test 및 Google Test를 비롯한 다양한 테스트 프레임워크를 사용하여 Visual Studio에서 C++ 유닛 테스트를 작성합니다.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755592"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78937547"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -41,7 +41,7 @@ C++ 단위 테스트 프로젝트는 [CodeLens](../ide/find-code-changes-and-oth
 
 - **Boost.Test**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **테스트 탐색기**와 통합되었지만 현재는 프로젝트 템플릿이 없습니다. 수동으로 구성해야 합니다. 자세한 내용은 [방법: Visual Studio에서 Boost.Test 사용](how-to-use-boost-test-for-cpp.md)을 참조하세요.
 
-- **CTest** 지원은 **C++를 사용한 데스크톱 개발** 워크로드의 일부인 **C++ CMake 도구** 구성 요소에 포함되어 있습니다. 그러나 CTest는 아직 **테스트 탐색기**와 완전히 통합되지 않았습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
+- **CTest** 지원은 **C++를 사용한 데스크톱 개발** 워크로드의 일부인 **C++ CMake 도구** 구성 요소에 포함되어 있습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
 
 **Visual Studio 2015 및 이전 버전**
 

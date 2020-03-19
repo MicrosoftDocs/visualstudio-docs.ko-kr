@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778052"
 ---
 # <a name="understand-sampling-data-values"></a>샘플링 데이터 값 이해
@@ -50,7 +50,7 @@ Visual Studio 프로파일링 도구의 ‘샘플링’ 프로파일링 방법�
 
 프로파일링 실행 내 전용 샘플 중 함수 또는 데이터 범위의 전용 샘플 총 수의 백분율입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)
 [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)

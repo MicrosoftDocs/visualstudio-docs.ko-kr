@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68740052"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>switch 문을 switch 식으로 변환
@@ -36,6 +36,6 @@ ms.locfileid: "68740052"
 
    ![switch 문을 switch 식으로 변환](media/convert-switch-statement-to-switch-expression.png) 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

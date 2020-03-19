@@ -10,15 +10,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661938"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307162"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
-Python ‘환경’은 Python 코드를 실행할 컨텍스트이며 전역, 가상 및 conda 환경을 포함합니다. 환경은 인터프리터, 라이브러리(일반적으로 Python 표준 라이브러리) 및 설치된 패키지 집합으로 구성됩니다. 이러한 모든 구성 요소에 따라, 어떤 언어로 구성되고 구문이 유효한지, 어떤 운영 체제 기능에 액세스할 수 있으며 어떤 패키지를 사용할 수 있는지가 결정됩니다.
+Python ‘환경’은 Python 코드를 실행할 컨텍스트이며 전역, 가상 및 conda 환경을 포함합니다.  환경은 인터프리터, 라이브러리(일반적으로 Python 표준 라이브러리) 및 설치된 패키지 집합으로 구성됩니다. 이러한 모든 구성 요소에 따라, 어떤 언어로 구성되고 구문이 유효한지, 어떤 운영 체제 기능에 액세스할 수 있으며 어떤 패키지를 사용할 수 있는지가 결정됩니다.
 
 Windows의 Visual Studio에서는 이 문서에 설명된 대로 **Python 환경** 창을 사용하여 여러 환경을 관리하고 새 프로젝트의 기본값으로 하나의 환경을 선택합니다. 환경의 기타 측면은 다음 문서를 참조하십시오.
 
@@ -160,7 +160,7 @@ Conda 환경은 `conda` 도구를 사용하거나 Visual Studio 버전 2017 15.7
     | 필드 | 설명 |
     | --- | --- |
     | 프로젝트 | 환경을 만들 프로젝트입니다(동일한 Visual Studio 솔루션에 여러 프로젝트가 있는 경우). |
-    | name | Conda 환경의 이름입니다. |
+    | 이름 | Conda 환경의 이름입니다. |
     | 다음의 패키지 추가 | 종속성을 설명하는 *environment.yml* 파일이 있으면 **환경 파일**을 선택합니다. 또는 **하나 이상의 Anaconda 패키지 이름**을 선택하여 아래 필드에 하나 이상의 Python 패키지 또는 Python 버전을 나열합니다. 패키지 목록은 Conda에 Python 환경을 만들도록 지시합니다. 최신 버전의 Python을 설치하려면 `python`을 사용하고, 특정 버전을 설치하려면 `python=3.7`에서 처럼 `python=,major>.<minor>`를 사용합니다. 패키지 단추를 사용하여 일련의 메뉴에서 Python 버전 및 공통 패키지를 선택할 수도 있습니다. |
     | 현재 환경으로 설정 | 환경이 만들어지면 선택한 프로젝트에서 새 환경을 활성화합니다. |
     | 새 프로젝트의 기본 환경으로 설정 | Visual Studio에서 만드는 모든 새 프로젝트에서 자동으로 Conda 환경을 설정하고 활성화합니다. 이 옵션은 **Python 환경** 창에서 **이 환경을 새 프로젝트의 기본 환경으로 설정**을 사용하는 것과 동일합니다. |
@@ -215,7 +215,7 @@ Visual Studio 2017 버전 15.6 이전의 Conda 환경을 포함하여 비표준 
 
 1. **설명** 필드에 환경에 대한 이름을 입력합니다.
 
-1. **접두사 경로** 필드에 인터프리터의 경로를 입력하거나 찾습니다(**...** 사용).
+1. **접두사 경로** 필드에 인터프리터의 경로를 입력하거나 찾습니다( **...** 사용).
 
 1. Visual Studio가 해당 위치(예: conda 환경에 대해 아래에 표시된 경로)에서 Python 인터프리터를 검색할 경우 **자동 검색** 명령을 사용할 수 있습니다. **자동 검색**을 선택하면 나머지 필드가 채워집니다. 해당 필드를 수동으로 완료할 수도 있습니다.
 
@@ -271,7 +271,7 @@ Visual Studio에서 환경에 대한 레지스트리 항목을 찾았지만 인�
     - 컴퓨터에 여전히 환경이 있는 경우 **ExecutablePath**의 값을 현재 위치로 변경합니다. 필요에 따라 **(기본값)** 및 **WindowedExecutablePath** 값을 수정합니다.
     - 환경이 컴퓨터에 더 이상 존재하지 않고 **Python 환경** 창에서 제거하려는 경우 위의 이미지에서 **3.6**과 같은 **InstallPath**의 부모 노드를 삭제합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Python 인터프리터 설치](installing-python-interpreters.md)
 - [프로젝트의 인터프리터 선택](selecting-a-python-environment-for-a-project.md)

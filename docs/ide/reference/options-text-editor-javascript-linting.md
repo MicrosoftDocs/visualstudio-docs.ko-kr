@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605962"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>옵션 대화 상자: 텍스트 편집기 \> JavaScript/TypeScript \> Linting
@@ -39,6 +39,6 @@ ms.locfileid: "68605962"
 
 이 옵션을 사용하여 전역 ESLint 구성 파일의 위치를 복사할 수 있습니다. 또한 이전에 위치를 변경한 경우 파일을 기본 위치로 다시 설정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

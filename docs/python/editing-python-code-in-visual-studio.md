@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73024730"
 ---
 # <a name="edit-python-code"></a>Python 코드 편집
@@ -225,7 +225,7 @@ Visual Studio의 Python 지원에서는 소스 코드를 사용할 수 있는 �
 
 ![모든 참조 찾기 결과](media/code-editing-find-all-references.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [서식](formatting-python-code.md)
 - [리팩터링](refactoring-python-code.md)

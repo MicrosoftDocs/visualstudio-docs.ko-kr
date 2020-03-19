@@ -2,7 +2,7 @@
 title: Visual Studio에 로그인
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 12/10/2018
+ms.date: 03/10/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c3ad98043947d9153c1fb9c406a60e5ae8839a
-ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77904128"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79132723"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 031fbe22ec61837d489df7a6af923ef0cd2454c7
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77519328"
 ---
 # <a name="extract-local-function-refactoring"></a>로컬 함수 추출 리팩터링

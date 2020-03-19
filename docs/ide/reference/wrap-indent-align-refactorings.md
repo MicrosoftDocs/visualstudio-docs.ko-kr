@@ -1,21 +1,22 @@
 ---
 title: 래핑, 들여쓰기 및 리팩터링 정렬
 description: 메서드 호출의 체인을 래핑하고 맞추는 방법에 대해 알아봅니다.
-ms.date: 02/19/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 349f2eeccfea4fea03967929b01114c0de1af155
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529421"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093881"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>래핑, 들여쓰기 및 리팩터링 정렬
 
@@ -24,6 +25,8 @@ ms.locfileid: "77529421"
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 **내용:** 메서드 호출의 체인을 래핑 및 맞출 수 있습니다.
 
@@ -67,6 +70,8 @@ ms.locfileid: "77529421"
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 **내용:** 이진 식을 래핑할 수 있습니다.
 

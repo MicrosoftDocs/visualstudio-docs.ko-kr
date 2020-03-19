@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68606000"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>옵션 대화 상자: 텍스트 편집기 \> JavaScript/TypeScript \> 코드 유효성 검사
@@ -39,6 +39,6 @@ ms.locfileid: "68606000"
 
 **True**로 설정하는 경우 JavaScript 오류가 오류 대신 경고로 **오류 목록**에 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

@@ -7,10 +7,10 @@ ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76542596"
 ---
 # <a name="container-tools-launch-settings"></a>컨테이너 도구 시작 설정

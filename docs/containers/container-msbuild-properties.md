@@ -7,10 +7,10 @@ ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71950693"
 ---
 # <a name="container-tools-build-properties"></a>컨테이너 도구 빌드 속성
@@ -52,7 +52,7 @@ MSBuild에서 프로젝트를 빌드하는 데 사용하는 속성을 설정하�
 
 MSBuild 속성에 대한 일반적인 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Docker Compose 빌드 속성](docker-compose-properties.md)
 

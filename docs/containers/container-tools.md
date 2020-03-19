@@ -7,10 +7,10 @@ ms.date: 01/24/2020
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 775abc2699bf3cef2dd360df701ab12b69a49496
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027312"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>빠른 시작: Visual Studio의 Docker

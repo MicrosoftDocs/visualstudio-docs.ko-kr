@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778091"
 ---
 # <a name="understand-performance-collection-methods"></a>성능 데이터 수집 방법 이해
@@ -130,7 +130,7 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 데 사
 
 [계층 상호 작용 뷰](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [방법: 웹 사이트에 대한 성능 데이터 수집](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [초보자를 위한 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)

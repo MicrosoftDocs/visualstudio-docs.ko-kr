@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 573a9e56d3aedd55bc571eaaa363b42a53019566
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74782344"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>모든 매개 변수에 대한 null 검사 추가 
@@ -40,6 +40,6 @@ ms.locfileid: "74782344"
 
    ![모든 항목에 대해 null 검사 추가](media/add-null-checks-for-all.png) 
 
-## <a name="see-also"></a>참고 항목 
+## <a name="see-also"></a>참조 
 
 - [리팩터링](../refactoring-in-visual-studio.md)

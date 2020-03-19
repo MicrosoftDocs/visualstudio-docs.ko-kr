@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 10b38ca4bfc0ea8a326f015228a4152779a41650
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633254"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild의 예약된 속성 및 잘 알려진 속성
@@ -34,14 +34,14 @@ MSBuild는 프로젝트 파일과 MSBuild 이진 파일에 대한 정보를 저�
 
 | 속성 | 예약됨 또는 잘 알려짐 | 설명 |
 |----------------------------------|------------------------| - |
-| `MSBuildBinPath` | 예약됨 | 현재 사용 중인 MSBuild 이진 파일이 있는 폴더의 절대 경로(예: *C:\Windows\Microsoft.Net\Framework\\\<versionNumber>*)입니다. 이 속성은 MSBuild 디렉터리에 있는 파일을 참조해야 할 경우에 유용합니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
+| `MSBuildBinPath` | 예약됨 | 현재 사용 중인 MSBuild 이진 파일이 있는 폴더의 절대 경로(예: *C:\Windows\Microsoft.Net\Framework\\\<versionNumber>* )입니다. 이 속성은 MSBuild 디렉터리에 있는 파일을 참조해야 할 경우에 유용합니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
 | `MSBuildExtensionsPath` | 잘 알려짐 | .NET Framework 4에서는 `MSBuildExtensionsPath`와 `MSBuildExtensionsPath32`의 기본값 사이에 차이가 없음을 정의했습니다. 이전 버전에서 `MSBUILDLEGACYEXTENSIONSPATH`의 기본값 동작을 사용으로 설정하려면 환경 변수 `MSBuildExtensionsPath`를 null이 아닌 값으로 설정하면 됩니다.<br /><br /> .NET Framework 3.5 이전에서는 `MSBuildExtensionsPath`의 기본값이 현재 프로세스의 비트에 따라 *\Program Files\\* 또는 *\Program Files (x86)* 폴더 아래 MSBuild 하위 폴더의 경로를 가리킵니다. 예를 들어, 64비트 컴퓨터에 32비트 프로세스인 경우 이 속성은 *\Program Files (x86)* 폴더를 가리킵니다. 64비트 컴퓨터에 64비트 프로세스인 경우 이 속성은 *\Program Files* 폴더를 가리킵니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요.<br /><br /> 이 위치는 사용자 지정 대상 파일을 넣는 데 유용합니다. 예를 들어, 대상 파일을 *\Program Files\MSBuild\MyFiles\Northwind.targets*에 설치한 다음, 이 XML 코드를 사용하여 프로젝트 파일로 가져옵니다.<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
 | `MSBuildExtensionsPath32` | 잘 알려짐 | *\Program Files* 또는 *\Program Files (x86)* 폴더 아래에 있는 MSBuild 하위 폴더의 경로입니다. 이 경로는 항상 32비트 머신의 32비트 *\Program Files(x86)* 폴더와 64비트 머신의 *\Program Files*를 가리킵니다. `MSBuildExtensionsPath` 및 `MSBuildExtensionsPath64`도 참조하세요.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
 | `MSBuildExtensionsPath64` | 잘 알려짐 | *\Program Files* 폴더 아래에 있는 MSBuild 하위 폴더의 경로입니다. 64비트 컴퓨터의 경우 이 경로는 항상 *\Program Files* 폴더를 가리킵니다. 32비트 컴퓨터에서는 이 경로가 비어 있습니다. `MSBuildExtensionsPath` 및 `MSBuildExtensionsPath32`도 참조하세요.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
 | `MSBuildInteractive` | 예약됨 | MSBuild가 대화형으로 실행되어 사용자 입력을 허용하는 경우 `true`입니다. 이 설정은 `-interactive` 명령줄 옵션에 의해 제어됩니다. |
 | `MSBuildLastTaskResult` | 예약됨 | 이전 작업이 오류 없이(경고가 있어도) 완료되면 `true`이고, 이전 작업에 오류가 있으면 `false`입니다. 일반적으로 작업에서 오류가 발생하면 오류는 해당 프로젝트에서 마지막으로 발생하는 항목입니다. 따라서 이 속성의 값은 `false`를 사용하지 않습니다. 단, 다음 시나리오에서는 제외됩니다.<br /><br /> - [Task 요소(MSBuild)](../msbuild/task-element-msbuild.md)의 `ContinueOnError` 특성이 `WarnAndContinue`(또는 `true`)나 `ErrorAndContinue`로 설정된 경우<br /><br /> - `Target`에 [OnError 요소(MSBuild)](../msbuild/onerror-element-msbuild.md)가 자식 요소로 포함되어 있는 경우 |
 | `MSBuildNodeCount` | 예약됨 | 작성 시 사용되는 동시 프로세스의 최대 수입니다. 이 값은 명령줄에서 **-maxcpucount**에 대해 지정한 값입니다. 값을 지정하지 않고 **/maxcpucount**를 지정한 경우 `MSBuildNodeCount`는 컴퓨터의 프로세서 수를 지정합니다. 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md) 및 [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)를 참조하세요. |
-| `MSBuildProgramFiles32` | 예약됨 | 32비트 프로그램 폴더의 위치(예: *C:\Program Files (x86)*)입니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
+| `MSBuildProgramFiles32` | 예약됨 | 32비트 프로그램 폴더의 위치(예: *C:\Program Files (x86)* )입니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
 | `MSBuildProjectDefaultTargets` | 예약됨 | `DefaultTargets` 요소의 `Project` 특성에 지정된 대상의 전체 목록입니다. 예를 들어, 다음 `Project` 요소의 `MSBuildDefaultTargets` 속성 값이 `A;B;C`입니다.<br /><br /> `<Project DefaultTargets="A;B;C" >` |
 | `MSBuildProjectDirectory` | 예약됨 | 프로젝트 파일이 있는 디렉터리의 절대 경로(예: *C:\MyCompany\MyProduct*)입니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
 | `MSBuildProjectDirectoryNoRoot` | 예약됨 | `MSBuildProjectDirectory` 속성 값입니다. 단, 루트 드라이브를 제외합니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |

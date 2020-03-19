@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957539"
 ---
 # <a name="format-python-code"></a>Python 코드 서식 지정
@@ -111,7 +111,7 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 
 **편집** > **고급** > **주석 단락 채우기**(**Ctrl**+**E** > **P**)는 주석 텍스트를 다시 배치하고, 해당 서식을 지정하며, 짧은 줄을 결합하고, 긴 줄을 분리합니다.
 
-예:
+예를 들어:
 
 ```python
 # foo
