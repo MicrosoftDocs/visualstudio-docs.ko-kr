@@ -11,10 +11,10 @@ helpviewer_keywords:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567504"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 개발자용 Visual Studio 생산성 가이드

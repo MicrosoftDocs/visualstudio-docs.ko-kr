@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62422087"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 설명서
 
 환영합니다. 이 리포지토리는 Visual Studio 기술 문서의 원본 파일을 포함합니다. 항목은 [docs.microsoft.com](https://docs.microsoft.com/visualstudio)에 게시됩니다.
 
-이 리포지토리는 2017년 6월 23일에 https://github.com/Microsoft/vsdocs에서 이동되었습니다. 이전 URL에 대한 트래픽이 여기로 리디렉션됩니다.
+이 리포지토리는 2017년 6월 23일에 https://github.com/Microsoft/vsdocs 에서 이동되었습니다. 이전 URL에 대한 트래픽이 여기로 리디렉션됩니다.
 
 Visual Basic 및 Visual C#에 대한 문서는 [dotnet docs 리포지토리](https://github.com/dotnet/docs/tree/master/docs)에 있고 Visual C++ 문서는 [C++ docs 리포지토리](http://github.com/MicrosoftDocs/cpp-docs)에 있습니다.
 

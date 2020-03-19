@@ -1,28 +1,31 @@
 ---
 title: usings 생성
-ms.date: 02/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544548"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094316"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Visual Studio에서 누락 usings 추가
 
 이 코드 생성은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 **내용:** 필요한 가져오기 또는 복사하여 붙여넣은 코드의 [using 지시문](/dotnet/csharp/language-reference/keywords/using-directive)을 즉시 추가할 수 있습니다.
 

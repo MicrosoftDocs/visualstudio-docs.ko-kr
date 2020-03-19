@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589333"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
@@ -134,7 +134,7 @@ Fakes 프레임워크는 동일한 키를 사용하여 생성된 모든 어셈�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-대체 키를 `KeyFile` 특성 값으로 *.fakes* 파일의 `Fakes`\\`Compilation` 요소에 포함하는 *.snk* 파일의 전체 경로를 지정하면 shim된 어셈블리에 대해 만든 키와 같은 다른 공용 키를 Fakes 어셈블리에 지정할 수 있습니다. 예:
+대체 키를 `KeyFile` 특성 값으로 *.fakes* 파일의 `Fakes`\\`Compilation` 요소에 포함하는 *.snk* 파일의 전체 경로를 지정하면 shim된 어셈블리에 대해 만든 키와 같은 다른 공용 키를 Fakes 어셈블리에 지정할 수 있습니다. 예를 들어:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->

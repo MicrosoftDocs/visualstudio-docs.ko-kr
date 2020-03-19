@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77652809"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0의 새로운 기능

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408487"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307300"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>옵션 대화 상자: 텍스트 편집기 \> C# \> 코드 스타일 \> 서식
 

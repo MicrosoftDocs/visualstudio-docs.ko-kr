@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784663"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows의 Azure App Service에 게시
@@ -30,7 +30,7 @@ Visual Studio는 Python 웹앱을 Windows의 Azure App Service에 직접 게시�
 > [!Note]
 > Visual Studio 2015와 Visual Studio 2017 이상 간 변경 사항에 대한 배경 정보는 블로그 게시물 [Visual Studio 2017에서 Azure에 게시](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/)를 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습에서는 Bottle, Flask 또는 Django 프레임워크를 기반으로 하는 웹앱 프로젝트가 필요합니다. 프로젝트가 아직 없거나 게시 프로세스를 사용해보려는 경우 다음과 같이 간단한 테스트 프로젝트를 만듭니다.
 

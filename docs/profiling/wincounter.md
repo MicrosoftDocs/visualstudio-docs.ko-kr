@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779846"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -37,21 +37,21 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>필수 옵션
  **WinCounter** 옵션은 **Start** 옵션에만 사용할 수 있습니다.
 
- **시작:** `Method` **Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화합니다.
+ **시작:** `Method`**Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화합니다.
 
 ## <a name="exclusive-options"></a>전용 옵션
  **AutoMark** 옵션은 **WinCounter** 옵션에만 사용할 수 있습니다.
 
  **AutoMark:** `Milliseconds` Windows 성능 카운터 데이터 수집 사이에 경과하는 시간(밀리초)을 지정합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 두 개의 Windows 성능 카운터가 1000밀리초 간격마다 수집되도록 지정됩니다.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)
