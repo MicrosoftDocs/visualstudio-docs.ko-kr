@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633020"
 ---
 # <a name="override-toolsversion-settings"></a>ToolsVersion 설정 재정의
@@ -30,7 +30,7 @@ ms.locfileid: "77633020"
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>명령줄 빌드에서 프로젝트 및 솔루션의 ToolsVersion 설정 재정의
 
- 일반적으로 Visual Studio 프로젝트는 프로젝트 파일에 지정된 ToolsVersion을 사용하여 빌드되지만 명령줄에서 `-ToolsVersion`(또는 `-tv`) 스위치를 사용하여 해당 값을 재정의하고 다른 도구 집합을 사용하여 모든 프로젝트 및 프로젝트 간 종속성을 빌드할 수 있습니다. 예를 들어:
+ 일반적으로 Visual Studio 프로젝트는 프로젝트 파일에 지정된 ToolsVersion을 사용하여 빌드되지만 명령줄에서 `-ToolsVersion`(또는 `-tv`) 스위치를 사용하여 해당 값을 재정의하고 다른 도구 집합을 사용하여 모든 프로젝트 및 프로젝트 간 종속성을 빌드할 수 있습니다. 다음은 그 예입니다.
 
 ```cmd
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
@@ -82,9 +82,9 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     msbuild projectA.proj -t:go -toolsversion:3.5
     ```
 
-4. 다음 출력이 표시됩니다. `projectA`의 경우 명령줄의 `-toolsversion:3.5` 설정이 `Project` 태그의 `ToolsVersion=12.0` 설정을 재정의합니다.
+4. 다음 출력이 표시됩니다. `projectA`의 경우 명령줄의 `-toolsversion:3.5` 설정이 `ToolsVersion=12.0` 태그의 `Project` 설정을 재정의합니다.
 
-     `ProjectB`는 `projectA`의 작업에 의해 호출됩니다. 해당 작업에는 `projectB`에 대한 다른 `ToolsVersion` 설정을 재정의하는 `ToolsVersion=2.0`이 있습니다.
+     `ProjectB`는 `projectA`의 작업에 의해 호출됩니다. 해당 작업에는 `ToolsVersion=2.0`에 대한 다른 `ToolsVersion` 설정을 재정의하는 `projectB`이 있습니다.
 
     ```
     Output:
@@ -111,7 +111,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
 5. 환경 변수 `MSBUILDLEGACYDEFAULTTOOLSVERSION`이 설정되거나 `ToolsVersion`이 설정되지 않은 경우에는 다음 단계가 사용됩니다.
 
-    1. 프로젝트 파일의 [Project](../msbuild/project-element-msbuild.md) 요소에 대한 `ToolsVersion` 특성. 이 특성이 없으면 현재 버전이라고 간주합니다.
+    1. 프로젝트 파일의 `ToolsVersion`Project[ 요소에 대한 ](../msbuild/project-element-msbuild.md) 특성. 이 특성이 없으면 현재 버전이라고 간주합니다.
 
     2. *MSBuild.exe.config* 파일의 기본 도구 버전.
 
@@ -121,13 +121,13 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. 환경 변수 `MSBUILDDEFAULTTOOLSVERSION`가 `ToolsVersion`으로 설정된 경우 이 값을 사용합니다.
 
-    2. *MSBuild.exe.config*에서 `DefaultOverrideToolsVersion`이 사용되는 경우 이 값을 사용합니다.
+    2. `DefaultOverrideToolsVersion`MSBuild.exe.config*에서* 이 사용되는 경우 이 값을 사용합니다.
 
     3. 레지스트리에서 `DefaultOverrideToolsVersion`이 설정된 경우 이 값을 사용합니다.
 
     4. 이외에는 현재 `ToolsVersion`을 사용합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591504"
 ---
 # <a name="options-dialog-box-visual-studio"></a>옵션 대화 상자(Visual Studio)
@@ -43,6 +43,6 @@ IDE 기능이 메모리에 로드될 때까지 해당 기능에 대한 옵션이
 
 **모든 설정 표시**를 선택하거나 선택 취소하면 **확인**을 클릭하지 않았더라도 **옵션** 대화 상자에서 적용한 모든 변경 내용이 적용됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [편집기 사용자 지정](../how-to-change-text-case-in-the-editor.md)

@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78169419"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307006"
 ---
 # <a name="exploration-bounds"></a>탐색 경계
 
@@ -166,7 +166,7 @@ IntelliTest가 탐색 중에 고려할 최대 고유 경로 수입니다.
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-IntelliTest가 내보내야 하는 테스트 형식을 나타냅니다. 가능한 값은 다음과 같습니다.
+IntelliTest가 내보내야 하는 테스트 형식을 나타냅니다. 사용 가능한 값은
 
 * **모두** - 가정 위반을 포함하여 모든 것에 대한 테스트를 내보냅니다.
 * **FailuresAndIncreasedBranchHits**(기본값) - 모든 실패에 대한 테스트를 내보내고 테스트 사례에서 [TestEmissionBranchHits](#testemissionbranchhits)에 의해 제어되는 검사가 증가할 때마다 테스트를 내보냅니다.
@@ -184,6 +184,6 @@ IntelliTest가 내보내야 하는 테스트 형식을 나타냅니다. 가능�
 
 이 옵션의 기본값은 **TestEmissionBranchHits=2**로서, 미래 재발 오류를 검색하는 데 더 적합한 더 표현적인 테스트 도구 모음을 생성합니다.
 
-## <a name="got-feedback"></a>피드백이 있으신가요?
+## <a name="got-feedback"></a>피드백이 있나요?
 
 아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

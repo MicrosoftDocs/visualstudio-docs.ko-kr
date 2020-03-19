@@ -1,5 +1,5 @@
 ---
-title: '방법: 작업의 오류 무시 | Microsoft Docs'
+title: '방법: 작업의 오류 무시 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,10 +10,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633826"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
@@ -22,7 +22,7 @@ ms.locfileid: "77633826"
 
 ## <a name="use-the-continueonerror-attribute"></a>ContinueOnError 특성 사용
 
-`Task` 요소의 `ContinueOnError` 특성은 작업 실패가 발생할 경우 빌드를 중지하거나 계속할지 여부를 제어합니다. 이 특성은 빌드를 계속할 경우 오류를 오류 또는 경고로 처리할지 여부를 제어합니다.
+`ContinueOnError` 요소의 `Task` 특성은 작업 실패가 발생할 경우 빌드를 중지하거나 계속할지 여부를 제어합니다. 이 특성은 빌드를 계속할 경우 오류를 오류 또는 경고로 처리할지 여부를 제어합니다.
 
 `ContinueOnError` 특성은 다음 값 중 하나를 포함할 수 있습니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "77633826"
 
 #### <a name="to-ignore-an-error-in-a-task"></a>작업의 오류를 무시하려면
 
-작업의 `ContinueOnError` 특성을 사용합니다. 예를 들어:
+작업의 `ContinueOnError` 특성을 사용합니다. 다음은 그 예입니다.
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
@@ -46,7 +46,7 @@ ms.locfileid: "77633826"
 
 ## <a name="example"></a>예제
 
-다음 코드 예제에서는 `Delete` 작업이 실패하더라도 `Build` 대상이 계속 실행되고 빌드가 성공한 것으로 간주됨을 보여 줍니다.
+다음 코드 예제에서는 `Build` 작업이 실패하더라도 `Delete` 대상이 계속 실행되고 빌드가 성공한 것으로 간주됨을 보여 줍니다.
 
 ```xml
 <Project DefaultTargets="FakeBuild"
@@ -64,7 +64,7 @@ ms.locfileid: "77633826"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild](../msbuild/msbuild.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

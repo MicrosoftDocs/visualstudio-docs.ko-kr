@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278653"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조
@@ -124,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-각 테스트 메서드를 실행하기 전에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+각 테스트 메서드를 실행하기 전에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_INITIALIZE`은 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)
@@ -133,7 +133,7 @@ TEST_METHOD_CLEANUP(methodName)
 }
 ```
 
-각 테스트 메서드를 실행한 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_CLEANUP`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+각 테스트 메서드를 실행한 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_CLEANUP`은 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 #### <a name="test_classes"></a> 테스트 클래스
 
@@ -144,7 +144,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
-각 테스트 클래스를 만들기 전에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_CLASS_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+각 테스트 클래스를 만들기 전에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_CLASS_INITIALIZE`은 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -164,7 +164,7 @@ TEST_MODULE_INITIALIZE(methodName)
 }
 ```
 
-모듈을 로드할 때 실행되는 메서드 *methodName*을 정의합니다. `TEST_MODULE_INITIALIZE`는 테스트 모듈에서 한 번만 정의할 수 있으며 네임스페이스 범위에서 선언해야 합니다.
+모듈을 로드할 때 실행되는 메서드 *methodName*을 정의합니다. `TEST_MODULE_INITIALIZE`은 테스트 모듈에서 한 번만 정의할 수 있으며 네임스페이스 범위에서 선언해야 합니다.
 
 ```cpp
 TEST_MODULE_CLEANUP(methodName)
@@ -221,31 +221,31 @@ END_TEST_MODULE_ATTRIBUTE()
 TEST_OWNER(ownerAlias)
 ```
 
-이름 `Owner` 및 특성 값 *ownerAlias*를 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `TEST_METHOD_ATTRIBUTE` 및 특성 값 `Owner`ownerAlias*를 사용하여* 를 정의합니다.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-이름 `Description` 및 특성 값 *description*을 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `TEST_METHOD_ATTRIBUTE` 및 특성 값 `Description`description*을 사용하여* 를 정의합니다.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-이름 `Priority` 및 특성 값 *priority*를 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `TEST_METHOD_ATTRIBUTE` 및 특성 값 `Priority`priority*를 사용하여* 를 정의합니다.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-이름 `WorkItem` 및 특성 값 *workItem*을 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `TEST_METHOD_ATTRIBUTE` 및 특성 값 `WorkItem`workItem*을 사용하여* 를 정의합니다.
 
 ```cpp
 TEST_IGNORE()
 ```
 
-이름 `Ignore` 및 특성 값 `true`를 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `TEST_METHOD_ATTRIBUTE` 및 특성 값 `Ignore`를 사용하여 `true`를 정의합니다.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a> 예
+## <a name="example"></a> 예제
 이 코드는 VSCppUnit 사용 예입니다. 여기에는 특성 메타데이터, 장치, 어셜션 포함 단위 테스트, 사용자 지정 로깅이 포함됩니다.
 
 ```cpp
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)
 - [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)

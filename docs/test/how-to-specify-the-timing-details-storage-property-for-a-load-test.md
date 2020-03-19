@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbd3b2a7d7e56870a994af288f5887f1d86256af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591647"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 타이밍 정보 스토리지 속성 지정
@@ -31,7 +31,7 @@ ms.locfileid: "75591647"
 
 - **없음:** 개별 타이밍 정보를 수집하지 않습니다. 그러나 이 경우에도 평균값은 사용할 수 있습니다.
 
-- **통계에만 해당:** 개별 타이밍 데이터를 백분위수 데이터로만 저장합니다. 따라서 공간 리소스가 절약됩니다.
+- **통계만:** 개별 타이밍 데이터를 백분위수 데이터로만 저장합니다. 따라서 공간 리소스가 절약됩니다.
 
   **타이밍 정보 스토리지 속성에 대한 고려 사항**
 
@@ -59,7 +59,7 @@ ms.locfileid: "75591647"
 
      **타이밍 정보 스토리지** 속성에 대해 **모든 개인 정보** 설정을 구성하면 부하 테스트를 실행하고 **가상 사용자 작업 차트**를 볼 수 있습니다. 자세한 내용은 [방법: 부하 테스트 중에 가상 사용자가 수행하는 작업 분석](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [세부 정보 뷰에서 가상 사용자 동작 분석](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [연습: 가상 사용자 작업 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

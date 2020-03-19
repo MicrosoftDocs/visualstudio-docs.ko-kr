@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b0a88815c4a2853270b539a3e012297b681af62e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114948"
 ---
 # <a name="advanced-example-for-containers"></a>컨테이너에 대한 고급 예제
@@ -169,7 +169,7 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 
 ::: moniker-end
 
-필요에 따라 `--build-arg` 명령줄 스위치를 사용하여 `FROM_IMAGE` 또는 `CHANNEL_URL` 인수 중 하나 또는 모두를 전달하여 고정된 이미지를 유지하도록 다른 기본 이미지 또는 내부 레이아웃의 위치를 지정합니다.
+필요에 따라 `FROM_IMAGE` 명령줄 스위치를 사용하여 `CHANNEL_URL` 또는 `--build-arg` 인수 중 하나 또는 모두를 전달하여 고정된 이미지를 유지하도록 다른 기본 이미지 또는 내부 레이아웃의 위치를 지정합니다.
 
 ## <a name="diagnosing-install-failures"></a>설치 오류 진단
 
@@ -211,8 +211,8 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Build Tools를 컨테이너에 설치](build-tools-container.md)
-* [알려진 컨테이너 관련 문제](build-tools-container-issues.md)
+* [컨테이너에 대한 알려진 문제](build-tools-container-issues.md)
 * [Visual Studio Build Tools 워크로드 및 구성 요소 ID](workload-component-id-vs-build-tools.md)

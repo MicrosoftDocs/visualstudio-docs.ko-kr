@@ -1,5 +1,5 @@
 ---
-title: 단어 줄 바꿈
+title: 자동 줄 바꿈
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569077"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508942"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>방법: 편집기에서 자동 줄 바꿈 관리
 
@@ -50,9 +50,8 @@ ms.locfileid: "75569077"
 Notepad++, Sublime Text 또는 Visual Studio Code에서 자동 줄 바꿈에 익숙한 경우 Visual Studio가 다른 편집기에 대해 다르게 동작하는 다음 문제에 유의하세요.
 
 * [세 번 클릭해도 전체 줄을 선택하지 않습니다.](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [Cut 명령이 전체 줄을 삭제하지 않습니다.](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
 * [End 키를 두 번 눌러서 커서를 줄 끝으로 이동하지 않습니다.](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 편집기의 기능](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77071949"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio의 유닛 테스트 JavaScript 및 TypeScript
@@ -75,7 +75,7 @@ describe('Test Suite 1', function() {
 ![테스트 탐색기](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> 테스트 탐색기는 TypeScript 파일에서 단위 테스트를 찾을 수 없으므로 *tsconfig.json*에서 `outdir` 또는 `outfile` 옵션을 사용하지 않습니다.
+> 테스트 탐색기는 TypeScript 파일에서 단위 테스트를 찾을 수 없으므로 `outdir`tsconfig.json`outfile`에서 *또는* 옵션을 사용하지 않습니다.
 
 ## <a name="run-tests"></a>테스트 실행
 
@@ -99,7 +99,7 @@ Visual Studio 2017 또는 명령줄에서 테스트를 실행할 수 있습니�
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-이 명령은 다음과 유사한 출력 결과를 표시합니다.
+이 명령은 다음과 유사한 출력을 표시합니다.
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0

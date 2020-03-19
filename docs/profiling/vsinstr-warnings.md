@@ -16,16 +16,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779950"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 경고
 다음 표에는 *VSInstr.exe* 도구에서 발생되는 경고가 나와 있습니다. 경고 번호와 NOWARN 옵션을 함께 사용하여 경고가 표시되지 않도록 할 수 있습니다.
 
-|경고 번호|설명|
+|경고 번호|Description|
 |--------------------|-----------------|
 |**VSP1026**|검사는 MSCorLib를 참조하지 않는 라이브러리에서 지원되지 않습니다. 대체로 이식 가능한 라이브러리의 경우가 여기에 해당합니다.<br /><br />.NET Core에는 [/EnableCodeCoverage](../test/vstest-console-options.md) 명령줄 옵션이 필요합니다.|
 |**VSP2000**|내부 오류입니다. 이 실행 파일에 대한 모듈 파일 이름을 가져올 수 없습니다.|

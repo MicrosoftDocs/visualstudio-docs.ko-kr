@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553047"
 ---
 # <a name="cores-view-zoom-tool"></a>코어 뷰 확대/축소 도구
@@ -26,7 +26,7 @@ ms.locfileid: "62553047"
 
 - 확대: 끌어서 타임라인 보기에서 영역을 선택합니다. 마우스 단추를 놓으면 시간 표시 막대 뷰에서 선택한 범위가 확대됩니다.
 
-- 확대 및 축소: 타임라인을 가리킨 다음, 마우스 휠을 움직이는 동안 **Ctrl** 키를 누릅니다.
+- 확대 및 축소: 타임라인을 가리킨 다음 마우스 휠을 움직이는 동안 **Ctrl** 키를 누릅니다.
 
 ## <a name="see-also"></a>참고 항목
 - [코어 뷰](../profiling/cores-view.md)

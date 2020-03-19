@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589229"
 ---
 # <a name="formatting-conventions"></a>서식 지정 규칙
@@ -34,7 +34,7 @@ Visual Studio의 EditorConfig에 대한 서식 지정 규칙은 다음의 범주
 
 `rule_name = value`
 
-대부분의 규칙에서, `value`에 대해 `true`(이 스타일 선호) 또는 `false`(이 스타일 선호 안 함)를 지정합니다. 다른 규칙의 경우 `flush_left`, `before_and_after` 등의 값을 지정하여 규칙을 적용할 시기 및 위치를 설명합니다. 심각도를 지정하지 않습니다.
+대부분의 규칙에서, `true`에 대해 `false`(이 스타일 선호) 또는 `value`(이 스타일 선호 안 함)를 지정합니다. 다른 규칙의 경우 `flush_left`, `before_and_after` 등의 값을 지정하여 규칙을 적용할 시기 및 위치를 설명합니다. 심각도를 지정하지 않습니다.
 
 ## <a name="net-formatting-settings"></a>.NET 서식 지정 설정
 
@@ -1210,7 +1210,7 @@ public int MyProperty
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [언어 규칙](editorconfig-language-conventions.md)
 - [명명 규칙](editorconfig-naming-conventions.md)

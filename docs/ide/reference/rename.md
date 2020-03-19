@@ -13,13 +13,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565463"
 ---
-# <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 리팩터링
+# <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
 
 이 리팩터링은 다음에 적용됩니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "75565463"
 
 - Visual Basic
 
-**내용:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
+**대상:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
 
 **시기:** 모든 인스턴스를 찾지 않고도 안전하게 이름을 바꾸고 새 이름을 복사하여 붙여넣으려고 합니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "75565463"
       ![이름 바꾸기 - VB](media/rename-rename-vb.png)
 
    > [!TIP]
-   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트할 뿐만 아니라, 편집기의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수도 있습니다.
+   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트할 뿐만 아니라, 편집기의 오른쪽 위에 표시되는 [이름 바꾸기](../../ide/preview-changes.md) 상자의 확인란을 사용하여 저장하기 전에 **변경 내용을 미리 볼** 수도 있습니다.
 
 4. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
 
@@ -80,7 +80,7 @@ ms.locfileid: "75565463"
 
 - 기호의 이름을 바꾸는 다른 방법은 편집기에서 해당 이름을 변경하는 것입니다. 그런 다음 커서를 기호 이름에 놓고 **Ctrl**+**을 누릅니다.** 또는 나타나는 전구 아이콘 메뉴를 확장한 후 **이름 바꾸기\<를 선택하여 이전 이름을 \<새 이름**으로 바꿉니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

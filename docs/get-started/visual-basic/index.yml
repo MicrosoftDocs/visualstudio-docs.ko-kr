@@ -13,55 +13,49 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-acquisition
   dev_langs:
-  - VB
-  ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
-  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
-  ms.translationtype: HT
-  ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/19/2019
-  ms.locfileid: "74188613"
+    - VB
 landingContent:
-- title: 시작
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Visual Studio 설치
-      url: ../../install/install-visual-studio.md
-  - linkListType: get-started
-    links:
-    - text: 둘러보기 시작
-      url: visual-studio-ide.md
-  - linkListType: quickstart
-    links:
-    - text: “Hello World” 콘솔 앱 만들기
-      url: ../../ide/quickstart-visual-basic-console.md
-- title: Visual Basic 앱 만들기
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: 콘솔 앱 만들기
-      url: tutorial-console.md
-    - text: Windows 데스크톱 앱 만들기
-      url: tutorial-wpf.md
-    - text: Windows Forms 앱 만들기
-      url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
-    - text: Visual Basic 언어에 대한 자세한 정보
-      url: /dotnet/visual-basic/developing-apps/programming/
-- title: Visual Studio 학습
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: 리포지토리에서 코드 열기
-      url: ../tutorial-open-project-from-repo.md
-    - text: 코드 작성 및 편집
-      url: tutorial-editor.md
-    - text: 컴파일 및 빌드
-      url: ../../ide/compiling-and-building-in-visual-studio.md
-    - text: 코드 디버그
-      url: ../csharp/tutorial-debugger.md
-    - text: 코드 테스트
-      url: ../../test/getting-started-with-unit-testing.md
-  - linkListType: how-to-guide
-    links:
-    - text: 데이터 액세스
-      url: ../../data-tools/create-a-sql-database-by-using-a-designer.md
+  - title: 시작하기
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Visual Studio 설치
+            url: ../../install/install-visual-studio.md
+      - linkListType: get-started
+        links:
+          - text: 둘러보기 시작
+            url: visual-studio-ide.md
+      - linkListType: quickstart
+        links:
+          - text: “Hello World” 콘솔 앱 만들기
+            url: ../../ide/quickstart-visual-basic-console.md
+  - title: Visual Basic 앱 만들기
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 콘솔 앱 만들기
+            url: tutorial-console.md
+          - text: Windows 데스크톱 앱 만들기
+            url: tutorial-wpf.md
+          - text: Windows Forms 앱 만들기
+            url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
+          - text: Visual Basic 언어에 대한 자세한 정보
+            url: /dotnet/visual-basic/developing-apps/programming/
+  - title: Visual Studio 학습
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: 리포지토리에서 코드 열기
+            url: ../tutorial-open-project-from-repo.md
+          - text: 코드 작성 및 편집
+            url: tutorial-editor.md
+          - text: 컴파일 및 빌드
+            url: ../../ide/compiling-and-building-in-visual-studio.md
+          - text: 코드 디버그
+            url: ../csharp/tutorial-debugger.md
+          - text: 코드 테스트
+            url: ../../test/getting-started-with-unit-testing.md
+      - linkListType: how-to-guide
+        links:
+          - text: 데이터 액세스
+            url: ../../data-tools/create-a-sql-database-by-using-a-designer.md

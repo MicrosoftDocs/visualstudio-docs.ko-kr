@@ -16,11 +16,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115381"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307318"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
@@ -37,7 +37,7 @@ ms.locfileid: "76115381"
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 세부 정보를 참조하세요.
+Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
 
 설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치하거나 유사합니다.
 
@@ -70,7 +70,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ## <a name="create-an-offline-installation-folder"></a>오프라인 설치 관리자 폴더 만들기
 
-이 단계를 완료하려면 인터넷 연결이 있어야 합니다. 모든 언어와 기능을 포함한 오프라인 설치를 만들려면 다음 예제의 명령 중 하나를 사용합니다.
+이 단계를 완료하려면 인터넷에 연결되어야 합니다. 모든 언어와 기능을 포함한 오프라인 설치를 만들려면 다음 예제의 명령 중 하나를 사용합니다.
 
    > [!IMPORTANT]
    > 전체 Visual Studio 레이아웃에는 최소 35GB의 디스크 공간이 필요하며 다운로드하는 데 약간의 시간이 걸릴 수 있습니다. 설치하려는 구성 요소만 포함하는 레이아웃을 만드는 방법은 [네트워크 레이아웃 사용자 지정](#customize-the-network-layout) 섹션을 참조하세요.
@@ -100,7 +100,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 
 ::: moniker range="vs-2017"
 
-예:
+예제:
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -284,7 +284,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 사용 가능한 다른 지원 옵션도 있습니다. 목록은 [피드백](../ide/feedback-options.md) 페이지를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 - [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568869"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>임시 변수 인라인 리팩터링
@@ -25,7 +25,7 @@ ms.locfileid: "75568869"
 
 - Visual Basic
 
-**내용:** 임시 변수를 제거하고 해당 값으로 바꿀 수 있습니다.
+**대상:** 임시 변수를 제거하고 해당 값으로 바꿀 수 있습니다.
 
 **시기:** 임시 변수를 사용하면 코드를 이해하기가 더 어렵습니다.
 
@@ -62,6 +62,6 @@ ms.locfileid: "75568869"
 
       ![인라인 결과 - Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)

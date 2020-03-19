@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589424"
 ---
 # <a name="how-to-model-3d-terrain"></a>방법: 3D 지형 모델 만들기
@@ -55,6 +55,6 @@ ms.locfileid: "75589424"
 
 이 지형 모델을 사용하여 [방법: 기하 도형 기반 그라데이션 셰이더 만들기](../designers/how-to-create-a-geometry-based-gradient-shader.md)에 설명된 그라데이션 셰이더의 효과를 표시할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [모델 편집기](../designers/model-editor.md)

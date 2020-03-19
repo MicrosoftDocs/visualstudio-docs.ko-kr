@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77453397"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio를 최신 릴리스 버전으로 업데이트
@@ -36,7 +36,7 @@ ms.locfileid: "77453397"
 > Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
 >
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>Visual Studio 2017 버전 15.6 이상 업데이트
 
@@ -172,7 +172,7 @@ Visual Studio는 Visual Studio 자체나 구성 요소에 사용 가능한 업�
 > Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
 >
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
 
 Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니다.
 
@@ -204,7 +204,7 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 업데이트를 확인한 다음, Visual Studio 2019의 메뉴 표시줄 또는 검색 상자를 사용하여 설치할 수 있습니다.
 
-### <a name="open-visual-studio"></a>Visual Studio를 엽니다.
+### <a name="open-visual-studio"></a>Visual Studio 열기
 
 1. Windows **시작** 메뉴에서 **Visual Studio 2019**를 선택합니다.
 
@@ -228,7 +228,7 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
    Visual Studio가 업데이트되고, 닫힌 다음, 다시 열립니다.
 
-### <a name="in-visual-studio"></a>Visual Studio
+### <a name="in-visual-studio"></a>Visual Studio에서
 
 1. 메뉴 모음에서 **도움말**을 선택한 다음, **업데이트 확인**을 선택합니다.
 
@@ -287,7 +287,7 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 버전 side-by-side 설치](install-visual-studio-versions-side-by-side.md)
 * [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)

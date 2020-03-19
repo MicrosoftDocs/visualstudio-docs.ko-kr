@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62815004"
 ---
 # <a name="work-with-the-r-interactive-window"></a>R 대화형 창 사용
@@ -50,20 +50,20 @@ REPL의 모든 이전 입력 및 출력은 읽기 전용이고 변경할 수 없
 
 도구 모음 명령은 다음과 같습니다. 대부분의 명령은 일치하는 키보드 키가 있고 **R 도구** > **세션** 및 **R 도구** > **작업 디렉터리** 메뉴에서(또는 언급된 대로) 사용할 수도 있습니다.
 
-| 단추 | 명령 | 키 조합 | 설명 |
+| 단추 | 명령 | 키 조합 | Description |
 | --- | --- | --- | --- |
-| ![다시 설정 단추](media/repl-toolbar-01-reset.png) | 다시 설정 | **Ctrl**+**Shift**+**F10** | 대화형 창 세션을 다시 시작하여 모든 변수 및 기록을 지웁니다. |
+| ![리셋 단추](media/repl-toolbar-01-reset.png) | 다시 설정 | **Ctrl**+**Shift**+**F10** | 대화형 창 세션을 다시 시작하여 모든 변수 및 기록을 지웁니다. |
 | ![지우기 단추](media/repl-toolbar-02-clear.png) | 지우기 | **Ctrl**+**L** | 대화형 창에 표시된 출력을 지웁니다. 세션 변수 또는 기록에 영향을 미치지 않습니다. |
 | ![기록 단추](media/repl-toolbar-03-history.png) | 이전 기록 명령<br/>다음 기록 명령 | **위쪽**, **아래쪽**<br/>**Alt**+**위쪽**, **Alt**+**아래쪽** | 여러 줄 코드 블록에 대한 특정 동작이 있는 기록을 스크롤합니다. [기록](#history)을 참조하세요. |
-| ![작업 영역 로드 단추](media/repl-toolbar-04-load-workspace.png) | 작업 영역 로드 | N/A | 이전에 저장된 작업 영역을 로드합니다([작업 영역 및 세션](#workspaces-and-sessions) 참조). |
-| ![다른 이름으로 작업 영역 저장 단추](media/repl-toolbar-05-save-workspace-as.png)| 다른 이름으로 작업 영역 저장 | N/A | 세션의 현재 상태를 작업 영역으로 저장합니다([작업 영역 및 세션](#workspaces-and-sessions) 참조). |
+| ![작업 영역 로드 단추](media/repl-toolbar-04-load-workspace.png) | 작업 영역 로드 | 해당 없음 | 이전에 저장된 작업 영역을 로드합니다([작업 영역 및 세션](#workspaces-and-sessions) 참조). |
+| ![다른 이름으로 작업 영역 저장 단추](media/repl-toolbar-05-save-workspace-as.png)| 다른 이름으로 작업 영역 저장 | 해당 없음 | 세션의 현재 상태를 작업 영역으로 저장합니다([작업 영역 및 세션](#workspaces-and-sessions) 참조). |
 | ![R 스크립트 원본 제공 단추](media/repl-toolbar-06-source-r-script.png) | R 스크립트 원본 제공 | **Ctrl**+**Shift**+**S** | 코드를 실행하는 Visual Studio 편집기에 현재 활성 R 스크립트가 있는 `source`를 호출합니다.  이 단추는 R 파일이 Visual Studio 편집기에서 열린 경우에만 나타납니다. |
 | ![에코를 통해 R 스크립트 원본 제공 단추](media/repl-toolbar-07-source-r-script-with-echo.png) | 에코를 통해 R 스크립트 원본 제공 | **Ctrl**+**Shift**+**Enter** | R 스크립트 원본 제공과 같지만 스크립트 콘텐츠를 대화형 창에 표시합니다. |
 | ![R 중단 단추](media/repl-toolbar-08-interrupt-r.png)| R 중단 | **Esc** | 대화형 창에서 실행 중인 코드(예: 이 섹션의 시작 부분에 있는 스크린샷의 `while` 루프)를 중지합니다. |
-| ![디버거 연결 단추](media/repl-toolbar-09b-attach-debugger.png)| 디버거 연결 | N/A | **디버그** > **R 대화형에 연결** 명령을 통해 사용할 수도 있습니다. |
+| ![디버거 연결 단추](media/repl-toolbar-09b-attach-debugger.png)| 디버거 연결 | 해당 없음 | **디버그** > **R 대화형에 연결** 명령을 통해 사용할 수도 있습니다. |
 | ![작업 디렉터리를 원본 파일 위치로 설정 단추](media/repl-toolbar-10-set-working-directory-source.png)| 작업 디렉터리를 원본 파일 위치로 설정 | **Ctrl**+**Shift**+**E** | 작업 디렉터리를 대화형 창에 로드된 가장 최근 원본 제공된 파일로 설정합니다(`source` 사용). [작업 디렉터리](#working-directory)를 참조하세요. |
 | ![작업 디렉터리를 프로젝트 위치로 설정 단추](media/repl-toolbar-11-set-working-directory-to-project.png) | 작업 디렉터리를 프로젝트 위치로 설정 | **Ctrl**+**Shift**+**P** | 작업 디렉터리를 Visual Studio에 현재 로드된 프로젝트의 루트로 설정합니다. [작업 디렉터리](#working-directory)를 참조하세요. |
-| (텍스트 필드) | 작업 디렉터리 선택 | N/A | 작업 디렉터리에 대한 직접 입력 필드입니다. [작업 디렉터리](#working-directory)를 참조하세요. |
+| (텍스트 필드) | 작업 디렉터리 선택 | 해당 없음 | 작업 디렉터리에 대한 직접 입력 필드입니다. [작업 디렉터리](#working-directory)를 참조하세요. |
 
 ## <a name="workspaces-and-sessions"></a>작업 영역 및 세션
 

@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596413"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
-명령 별칭을 통해 명령을 실행하려는 경우 더 적은 문자를 입력할 수 있습니다. **찾기/명령** 상자 또는 **명령** 창에 별칭을 입력합니다. 예를 들어 **열려 있는 파일** 대화 상자를 표시하는 `>File.OpenFile`을 입력하는 대신 미리 정의된 별칭인 `>of`를 사용할 수 있습니다.
+명령 별칭을 통해 명령을 실행하려는 경우 더 적은 문자를 입력할 수 있습니다. **찾기/명령** 상자 또는 **명령** 창에 별칭을 입력합니다. 예를 들어 `>File.OpenFile`열려 있는 파일**대화 상자를 표시하는**을 입력하는 대신 미리 정의된 별칭인 `>of`를 사용할 수 있습니다.
 
-**명령** 창에 `alias`를 입력하여 현재 별칭 및 해당 정의의 목록을 표시합니다. `>cls`를 입력하여 **명령** 창의 내용을 지웁니다. 특정 명령에 대한 별칭을 보려면 `alias <command name>`을 입력하십시오.
+`alias`명령**창에**를 입력하여 현재 별칭 및 해당 정의의 목록을 표시합니다. `>cls`를 입력하여 **명령** 창의 내용을 지웁니다. 특정 명령에 대한 별칭을 보려면 `alias <command name>`을 입력하십시오.
 
 인수 포함 여부에 관계없이 Visual Studio 명령 중 하나에 대한 사용자 고유 별칭을 쉽게 만들 수 있습니다. 예를 들어 `File.NewFile MyFile.txt`의 별칭을 만드는 구문은 `alias MyAlias File.NewFile MyFile.txt`입니다. 별칭은 `alias <alias name> /delete`를 사용하여 삭제할 수 있습니다.
 
@@ -44,12 +44,12 @@ ms.locfileid: "75596413"
 |중단점 설정/해제|bp|Debug.ToggleBreakPoint|
 |호출 스택 창|CallStack|디버그.호출스택|
 |책갈피 지우기|ClearBook|편집.책갈피지우기|
-|닫기|닫기|File.Close|
+|닫습니다|닫습니다|File.Close|
 |모든 문서 닫기|CloseAll|Window.CloseAllDocuments|
 |모두 지우기|cls|Edit.ClearAll|
 |명령 모드|cmd|보기.명령창|
 |코드 보기|코드|보기.코드보기|
-|[메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|일|Debug.ListMemory|
+|[메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
 |ANSI로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|da|Debug.ListMemory /Ansi|
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) One Byte 형식|db|Debug.ListMemory /Format:OneByte|
 |Four Byte 형식인 ANSI로 [메모리 명령 목록](../../ide/reference/list-memory-command.md)|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -63,8 +63,8 @@ ms.locfileid: "75596413"
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) Eight Byte 형식|dq|Debug.ListMemory /Format:EightBytes|
 |Unicode로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|du|Debug.ListMemory /Unicode|
 |[문 실행 명령](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|종료|종료|File.Exit|
-|선택 영역 서식|형식|편집.선택영역서식|
+|끝내기|끝내기|File.Exit|
+|선택 영역 서식|format|편집.선택영역서식|
 |전체 화면|전체 화면|보기.전체화면|
 |[시작 명령](../../ide/reference/start-command.md)|g|디버그.시작|
 |[이동 명령](../../ide/reference/go-to-command.md)|GotoLn|편집.이동|
@@ -98,8 +98,8 @@ ms.locfileid: "75596413"
 |이전 책갈피|PrevBook|편집.이전책갈피|
 |파일 인쇄|print|파일.인쇄|
 |속성 창|props|보기.속성창|
-|Stop|q|디버그.디버깅중지|
-|다시 실행|redo|편집.다시실행|
+|중지|q|디버그.디버깅중지|
+|다시 실행|다시 실행(redo)|편집.다시실행|
 |레지스터 창|레지스터|디버그.레지스터|
 |커서까지 실행|rtc|디버그.커서까지실행|
 |선택한 항목 저장|저장|파일.선택한항목저장|
@@ -125,7 +125,7 @@ ms.locfileid: "75596413"
 |프로세스 목록 표시|&#124;|Debug.ListProcesses|
 |[스레드 목록 표시 명령](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

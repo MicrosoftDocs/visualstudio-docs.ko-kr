@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169380"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>연습: 가상 사용자 작업 차트를 사용하여 문제 격리
@@ -38,7 +38,7 @@ ms.locfileid: "78169380"
 
 1. Visual Studio를 엽니다.
 
-2. *LoadTest1.loadtest*가 포함된 **ColorWebApp** 솔루션을 엽니다. 이 부하 테스트는 이 항목의 시작 부분에서 사전 요구 사항 단원에 나열된 세 가지 연습의 단계를 수행하면 나오는 결과입니다.
+2. **LoadTest1.loadtest**가 포함된 *ColorWebApp* 솔루션을 엽니다. 이 부하 테스트는 이 항목의 시작 부분에서 사전 요구 사항 단원에 나열된 세 가지 연습의 단계를 수행하면 나오는 결과입니다.
 
      이 연습의 나머지 단계에서는 ColorWebApp라는 웹 애플리케이션, *ColorWebAppTest.webtest*라는 웹 성능 테스트 및 *LoadTest1.loadtest*라는 부하 테스트가 있다고 가정합니다.
 
@@ -83,15 +83,15 @@ ms.locfileid: "78169380"
 
     - **시나리오**
 
-    - **테스트**
+    - **Test**
 
     - **결과**
 
     - **Network**
 
-    - **시작 시간**
+    - **Start Time**
 
-    - **기간**
+    - **Duration**
 
     - **에이전트**
 
@@ -103,10 +103,10 @@ ms.locfileid: "78169380"
 
      **정보 범례** 및 **필터 결과** 창의 다양한 설정을 사용하여 부하 테스트의 오류와 성능 문제를 쉽게 격리할 수 있습니다. 이러한 설정과 **특정 기간 확대** 도구를 사용하여 가상 사용자 데이터가 **가상 사용자 동작 차트**에 어떻게 나타나는지 확인합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [세부 정보 뷰에서 가상 사용자 동작 분석](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)
-- [방법: 분산 부하 테스트를 위한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [방법: 분산 부하 테스트에 대한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)

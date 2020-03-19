@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591309"
 ---
 # <a name="manage-project-and-solution-properties"></a>프로젝트 및 솔루션 속성 관리
@@ -25,7 +25,7 @@ ms.locfileid: "75591309"
 ![솔루션 탐색기 트리의 속성 노드](../ide/media/vs2015_props_se.png)
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)를 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)를 참조하세요.
 
 ## <a name="project-properties"></a>프로젝트 속성
 
@@ -40,7 +40,7 @@ C#, Visual Basic 및 F# 프로젝트에서는 속성이 **프로젝트 디자이
 **프로젝트 디자이너**의 각 속성 페이지에 대한 자세한 내용은 [프로젝트 속성 참조](../ide/reference/project-properties-reference.md)를 참조하세요.
 
 > [!TIP]
-> 솔루션에는 몇 가지 속성이 있으며 프로젝트 항목도 마찬가지입니다. 이러한 속성은 **프로젝트 디자이너**가 아니라 [속성 창](../ide/reference/properties-window.md)에서 액세스합니다.
+> 솔루션에는 몇 가지 속성이 있으며 프로젝트 항목도 마찬가지입니다. 이러한 속성은 [프로젝트 디자이너](../ide/reference/properties-window.md)가 아니라 **속성 창**에서 액세스합니다.
 
 ### <a name="c-and-javascript-projects"></a>C++ 및 JavaScript 프로젝트
 
@@ -54,7 +54,7 @@ C++ 프로젝트 속성에 대한 자세한 내용은 [프로젝트 속성 작�
 
 솔루션에 대한 속성에 액세스하려면 **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 대화 상자에서 **디버그** 또는 **릴리스** 빌드에 대한 프로젝트 구성을 설정하고, **F5** 키를 누를 때 시작 프로젝트여야 하는 프로젝트를 선택하고, 코드 분석 옵션을 설정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
 - [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)

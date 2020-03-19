@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408460"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306862"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
@@ -50,7 +50,7 @@ Visual Studio 내의 EditorConfig 언어 규칙은 2개 범주, 즉 Visual Basic
 
 언어 규칙 심각도는 해당 스타일을 적용할 수준을 지정합니다. 다음 표에서는 가능한 심각도 값 및 해당 효과를 나열합니다.
 
-심각도 | 효과
+심각도 | 영향
 :------- | ------
 `error` | 이 스타일 규칙을 위반하는 경우 컴파일러 오류가 표시됩니다.
 `warning` | 이 스타일 규칙을 위반하는 경우 컴파일러 경고가 표시됩니다.
@@ -119,7 +119,7 @@ Visual Studio 2019 버전 16.3부터, 스타일 위반이 발생한 후에 [빠�
 
 ### <a name="this-and-me"></a>"This." 그리고 "Me." 한정자
 
-이 스타일 규칙은 필드, 속성, 메서드 또는 이벤트에 적용할 수 있습니다. 값이 **true**이면 C#에서 `this.` 또는 Visual Basic에서 `Me.`를 코드 기호 앞에 추가하는 것이 좋습니다. 값이 **false**이면 `this.` 또는 `Me.`을 코드 요소 앞에 추가하지 _않는_ 것이 좋습니다.
+이 스타일 규칙은 필드, 속성, 메서드 또는 이벤트에 적용할 수 있습니다. 값이 **true**이면 C#에서 `this.` 또는 Visual Basic에서 `Me.`를 코드 기호 앞에 추가하는 것이 좋습니다. 값이 **false**이면 _또는_을 코드 요소 앞에 추가하지 `this.`않는`Me.` 것이 좋습니다.
 
 이러한 규칙은 *.editorconfig* 파일에서 다음과 같이 표시될 수 있습니다.
 
@@ -139,7 +139,7 @@ dotnet_style_qualification_for_event = false:suggestion
 | **규칙 이름** | dotnet_style_qualification_for_field |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 필드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 필드 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 필드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 필드 앞에 _또는_를 추가하지 ‘않음’`this.``Me.` |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -167,7 +167,7 @@ capacity = 0
 | **규칙 이름** | dotnet_style_qualification_for_property |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 속성 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 속성 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 속성 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 속성 앞에 _또는_를 추가하지 ‘않음’`this.``Me.` |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -195,7 +195,7 @@ ID = 0
 | **규칙 이름** | dotnet_style_qualification_for_method |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 메서드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 메서드 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 메서드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 메서드 앞에 _또는_를 추가하지 ‘않음’`this.``Me.` |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -223,7 +223,7 @@ Display()
 | **규칙 이름** | dotnet_style_qualification_for_event |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 이벤트 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 이벤트 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 이벤트 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 이벤트 앞에 _또는_를 추가하지 ‘않음’`this.``Me.` |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -246,7 +246,7 @@ AddHandler Elapsed, AddressOf Handler
 
 ### <a name="language-keywords"></a>형식 참조를 위한 프레임워크 형식 이름 대신 언어 키워드
 
-지역 변수, 메서드 매개 변수 및 클래스 멤버 또는 멤버 액세스 식을 입력할 별도 규칙으로 이 스타일 규칙을 적용할 수 있습니다. 값이 **true**인 경우 자신을 나타내는 키워드를 가진 형식에 형식 이름(예: `Int32`) 대신 언어 키워드(예: `int` 또는 `Integer`)를 사용하는 것이 좋습니다. 값이 **false**인 경우 언어 키워드 대신 형식 이름을 사용하는 것이 좋습니다.
+지역 변수, 메서드 매개 변수 및 클래스 멤버 또는 멤버 액세스 식을 입력할 별도 규칙으로 이 스타일 규칙을 적용할 수 있습니다. 값이 **true**인 경우 자신을 나타내는 키워드를 가진 형식에 형식 이름(예: `int`) 대신 언어 키워드(예: `Integer` 또는 `Int32`)를 사용하는 것이 좋습니다. 값이 **false**인 경우 언어 키워드 대신 형식 이름을 사용하는 것이 좋습니다.
 
 이러한 규칙은 *.editorconfig* 파일에서 다음과 같이 표시될 수 있습니다.
 
@@ -1118,7 +1118,7 @@ csharp_style_var_elsewhere = true:suggestion
 | **규칙 이름** | csharp_style_var_for_built_in_types |
 | **규칙 ID** | IDE0007 및 IDE0008 |
 | **해당 언어** | C#  |
-| **값** | `true` - `int` 등의 기본 제공 시스템 형식을 사용한 변수 선언에 `var`을 사용합니다.<br /><br />`false` - `int` 등의 기본 제공 시스템 형식을 사용한 변수 선언에 `var`보다 명시적 형식을 선호합니다. |
+| **값** | `true` - `var` 등의 기본 제공 시스템 형식을 사용한 변수 선언에 `int`을 사용합니다.<br /><br />`false` - `var` 등의 기본 제공 시스템 형식을 사용한 변수 선언에 `int`보다 명시적 형식을 선호합니다. |
 | **Visual Studio 기본값** | `true:silent` |
 
 코드 예제:
@@ -1472,7 +1472,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 | **규칙 이름** | csharp_prefer_simple_default_expression |
 | **규칙 ID** | IDE0034 |
 | **해당 언어** | C# 7.1+  |
-| **값** | `true` - `default(T)`보다 `default`를 선호합니다.<br /><br />`false` - `default`보다 `default(T)`를 선호합니다. |
+| **값** | `true` - `default`보다 `default(T)`를 선호합니다.<br /><br />`false` - `default(T)`보다 `default`를 선호합니다. |
 | **Visual Studio 기본값** | `true:suggestion` |
 
 코드 예제:
@@ -1487,7 +1487,7 @@ void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { 
 
 ### <a name="c-null-checking-preferences"></a>C# null 검사 기본 설정
 
-이러한 스타일 규칙은 `throw` 식 또는 `throw` 문 사용을 비롯한 `null` 검사 관련 구문 및 [람다 식](/dotnet/csharp/lambda-expressions)을 호출할 때를 null 검사를 수행하거나 조건부 병합 연산자(`?.`)를 사용할지에 대해 다룹니다.
+이러한 스타일 규칙은 `null` 식 또는 `throw` 문 사용을 비롯한 `throw` 검사 관련 구문 및 `?.`람다 식[을 호출할 때를 null 검사를 수행하거나 조건부 병합 연산자(](/dotnet/csharp/lambda-expressions))를 사용할지에 대해 다룹니다.
 
 예제 *.editorconfig* 파일:
 
@@ -1885,7 +1885,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [서식 지정 규칙](editorconfig-formatting-conventions.md)
 - [명명 규칙](editorconfig-naming-conventions.md)

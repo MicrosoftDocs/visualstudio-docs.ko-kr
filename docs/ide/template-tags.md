@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189514"
 ---
 # <a name="add-tags-to-project-templates"></a>프로젝트 템플릿에 태그 추가
@@ -56,12 +56,12 @@ ms.locfileid: "73189514"
 
 고급 사용자 시나리오에서 다음 선택적 특성을 사용할 수 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Package`|Visual Studio 패키지를 ID를 지정하는 GUID입니다.|
 |`ID`|Visual Studio 리소스 ID를 지정합니다.|
 
-구문:
+구문
 
 ```xml
 <LanguageTag Package="{PackageID}" ID="ResourceID" />
@@ -77,7 +77,7 @@ ms.locfileid: "73189514"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(필수) 템플릿을 분류하고 **새 프로젝트** 대화 상자 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
@@ -111,7 +111,7 @@ Visual Studio는 기본 제공되는 태그의 목록을 제공합니다. 기본
 | | | UWP(`uwp`) |
 | | | 웹(`web`) |
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제는 Visual C# 애플리케이션의 프로젝트 템플릿용 메타데이터를 보여 줍니다.
 

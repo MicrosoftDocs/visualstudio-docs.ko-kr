@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591602"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 개요
@@ -46,7 +46,7 @@ IntelliTest를 사용하면 초기에 버그를 찾을 수 있으므로 테스�
 
 ## <a name="the-hello-world-of-intellitest"></a>IntelliTest의 Hello World
 
-IntelliTest는 테스트된 프로그램과 관련된 입력을 찾습니다. 즉, IntelliTest를 사용하여 유명한 **Hello World!** 문자열을 생성할 수 있습니다. 이 경우 C# MSTest 기반 테스트 프로젝트를 만들고 **Microsoft.Pex.Framework**에 대한 참조를 추가했다고 가정합니다. 다른 테스트 프레임워크를 사용할 경우에는 C# 클래스 라이브러리를 만들고 프로젝트 설정 방법에 대한 테스트 프레임워크 설명서를 참조하세요.
+IntelliTest는 테스트된 프로그램과 관련된 입력을 찾습니다. 즉, IntelliTest를 사용하여 유명한 **Hello World!** string. 이 경우 C# MSTest 기반 테스트 프로젝트를 만들고 **Microsoft.Pex.Framework**에 대한 참조를 추가했다고 가정합니다. 다른 테스트 프레임워크를 사용할 경우에는 C# 클래스 라이브러리를 만들고 프로젝트 설정 방법에 대한 테스트 프레임워크 설명서를 참조하세요.
 
 다음 예제에서는 IntelliTest가 필요한 문자열을 생성하도록 **값** 매개 변수에 대한 두 가지 제약 조건을 만듭니다.
 
@@ -71,12 +71,12 @@ public partial class HelloWorldTest {
 
 1. ""
 2. "\0\0\0\0\0"
-3. "Hello"
+3. “hello”
 4. "\0\0\0\0\0\0"
 5. "Hello\0"
 6. "Hello\0\0"
 7. "Hello\0World!"
-8. "Hello World!"
+8. “Hello World!”
 
 > [!NOTE]
 > 빌드 문제가 발생할 경우 Microsoft.VisualStudio.TestPlatform.TestFramework 및 Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions 참조를 Microsoft.VisualStudio.QualityTools.UnitTestFramework 참조로 바꿔보세요.

@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596322"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정
@@ -39,10 +39,10 @@ ms.locfileid: "75596322"
 
 |작업|관련 항목|
 |-|-----------------------|
-|**부하 테스트에 대한 카운터 집합 관리:** 부하 테스트를 만든 후 부하 테스트 편집기에서 카운터 집합을 편집할 수 있습니다. 카운터 집합을 관리하려면 성능 데이터를 수집할 컴퓨터 집합을 선택하고 개별 컴퓨터에서 각각 수집할 카운터 집합을 할당합니다. 부하 테스트 편집기에서 카운터를 관리합니다.|-   [방법: 카운터 집합 관리](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**부하 테스트에 대한 카운터 집합 관리:** 부하 테스트를 만든 다음, 부하 테스트 편집기에서 카운터 집합을 편집할 수 있습니다. 카운터 집합을 관리하려면 성능 데이터를 수집할 컴퓨터 집합을 선택하고 개별 컴퓨터에서 각각 수집할 카운터 집합을 할당합니다. 부하 테스트 편집기에서 카운터를 관리합니다.|-   [방법: 카운터 집합 관리](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**부하 테스트에 카운터 집합 추가:** **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 카운터 집합을 추가합니다. 이때 부하 테스트에 사용할 미리 정의된 카운터 집합이 제공됩니다. 부하 테스트를 만든 후 부하 테스트 편집기를 사용하여 기존 카운터 집합에 새 카운터를 추가할 수 있습니다.|-   [방법: 카운터 집합에 카운터 추가](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [방법: 사용자 지정 카운터 집합 추가](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**부하 테스트에 대한 카운터를 사용하여 임계값 규칙 지정:** 임계값 규칙은 부하 테스트 도중 시스템 리소스 사용을 모니터링하기 위해 개별 성능 카운터에 설정되는 규칙입니다. 카운터 집합 정의에는 여러 가지 주요 성능 카운터에 대해 미리 정의된 임계값 규칙이 포함되어 있습니다. 부하 테스트에서 임계값 규칙을 통해 성능 카운터 값을 상수 값이나 다른 성능 카운터 값과 비교할 수 있습니다.|-   [방법: 임계값 규칙 추가](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**카운터 집합이 매핑되는 컴퓨터에 친숙한 이름 할당:** 컴퓨터에 쉽게 인식할 수 있는 이름을 적용할 수 있는 컴퓨터 태그를 추가할 수 있습니다. 이 태그는 부하 테스트 편집기의 트리에 있는 **카운터 집합 매핑** 노드에 표시됩니다. 더욱 중요한 것은 이 태그가 Excel 보고서에 표시된다는 점입니다. 따라서 관련자가 부하 테스트에서 컴퓨터에 할당된 역할(예: "lab2의 Web Server1" 또는 "피닉스 사무실의 SQL Server2")을 쉽게 확인할 수 있습니다.<br /><br /> 자세한 내용은 [테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고](../test/compare-load-test-results.md)를 참조하세요.||
+|**카운터 집합을 매핑할 컴퓨터에 이름 할당:** 컴퓨터에 인식하기 쉬운 이름을 적용할 수 있도록 컴퓨터 태그를 추가할 수 있습니다. 이 태그는 부하 테스트 편집기의 트리에 있는 **카운터 집합 매핑** 노드에 표시됩니다. 더욱 중요한 것은 이 태그가 Excel 보고서에 표시된다는 점입니다. 따라서 관련자가 부하 테스트에서 컴퓨터에 할당된 역할(예: "lab2의 Web Server1" 또는 "피닉스 사무실의 SQL Server2")을 쉽게 확인할 수 있습니다.<br /><br /> 자세한 내용은 [테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고](../test/compare-load-test-results.md)를 참조하세요.||
 
 ## <a name="use-counter-sets"></a>카운터 집합 사용
 
@@ -97,7 +97,7 @@ ms.locfileid: "75596322"
 
 **초과하면 경고** 속성을 **False**로 설정하면 임계값 밑으로 떨어질 때 경고가 표시됩니다. 예를 들어 **Requests/Sec**에 임계값 규칙이 설정된 경우 값이 50을 밑돌 때 경고를 표시하려면 **상수 비교** 규칙 형식을 사용하고 **중요 임계값**을 50으로 설정한 다음, **초과하면 경고**를 **False**로 설정합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 임계값 규칙 추가](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)

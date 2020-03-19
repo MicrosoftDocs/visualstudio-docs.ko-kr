@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630784"
 ---
 # <a name="xsd-task"></a>XSD 작업
@@ -32,7 +32,7 @@ ms.locfileid: "77630784"
 소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(*xsd.exe*)를 래핑합니다.
 
 > [!NOTE]
-> Visual Studio 2017부터 *xsd.exe*에 대한 C++ 프로젝트 지원이 사용되지 않습니다. *CppCodeProvider.dll*을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다.
+> Visual Studio 2017부터 *xsd.exe*에 대한 C++ 프로젝트 지원이 사용되지 않습니다. **CppCodeProvider.dll**을 수동으로 GAC에 추가하여 *Microsoft.VisualC.CppCodeProvider* API를 계속 사용할 수 있습니다.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -40,13 +40,13 @@ ms.locfileid: "77630784"
 
 - **AdditionalOptions**
 
-     선택적 **문자열** 매개 변수입니다.
+     선택적 **String** 매개 변수입니다.
 
      명령줄에 지정된 것처럼 옵션 목록입니다. 예: /\<option1> /\<option2> /\<option#>. 이 매개 변수를 사용하여 다른 **XSD** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.
 
 - **GenerateFromSchema**
 
-  선택적 **문자열** 매개 변수입니다.
+  선택적 **String** 매개 변수입니다.
 
   지정한 스키마에서 생성되는 유형을 지정합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "77630784"
 
 - **Namespace**
 
-     선택적 **문자열** 매개 변수입니다.
+     선택적 **String** 매개 변수입니다.
 
      생성된 형식에 대한 런타임 네임스페이스를 지정합니다.
 
@@ -84,10 +84,10 @@ ms.locfileid: "77630784"
 
 - **TrackerLogDirectory**
 
-     선택적 **문자열** 매개 변수입니다.
+     선택적 **String** 매개 변수입니다.
 
      추적기 로그용 디렉터리를 지정합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업 참조](../msbuild/msbuild-task-reference.md)

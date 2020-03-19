@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569025"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>단독으로 키보드를 사용하는 방법
@@ -97,7 +97,7 @@ Visual Studio 명령 바로 가기 키의 전체 목록은 [기본 바로 가기
 
    도구 창이 새 도킹 위치의 제자리에 맞춰집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [바로 가기 키 식별 및 사용자 지정](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [접근성 팁과 요령](../../ide/reference/accessibility-tips-and-tricks.md)

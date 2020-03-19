@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114526"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>테스트 조합을 편집하여 부하 테스트 시나리오의 웹 브라우저 형식 지정
@@ -81,6 +81,6 @@ ms.locfileid: "76114526"
 
 백분율 값을 직접 입력할 때는 모든 항목을 더한 값이 100%인지 확인해야 합니다. 목록을 저장할 때 합계가 100%가 아니면 현재 백분율을 그대로 사용할지 또는 이전 단계로 돌아가서 백분율 값을 조정할지 선택하라는 메시지가 표시됩니다. 현재 백분율을 그대로 사용하도록 선택하면 각 값이 100%를 기준으로 조정됩니다.  예를 들어 두 개의 항목이 있고 두 항목의 값을 80%와 40%로 직접 설정한 경우 첫 번째 항목은 80을 120으로 나눈 값인 66.67%로, 두 번째 항목은 40을 120으로 나눈 값인 33.33%로 설정됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)

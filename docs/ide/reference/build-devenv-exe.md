@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595763"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -35,23 +35,23 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
+  필수 사항입니다. 솔루션 파일의 전체 경로 및 이름입니다.
 
 - *SolnConfigName*
 
-  선택 사항입니다. *SolutionName*에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼을 지정해야 합니다(예: `Debug|Win32`). 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
+  (선택 사항) `Debug`SolutionName`Release`에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: *또는*). 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼을 지정해야 합니다(예: `Debug|Win32`). 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
 - `/Project` *ProjName*
 
-  선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. *SolutionName* 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.
+  (선택 사항) 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. *SolutionName* 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  선택 사항입니다. 명명된 프로젝트를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *SolnConfigName* 인수를 재정의합니다.
+  (선택 사항) 명명된 프로젝트를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *SolnConfigName* 인수를 재정의합니다.
 
 - `/Out` *OutputFilename*
 
-  선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
+  (선택 사항) 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -67,13 +67,13 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="example"></a>예제
 
-다음 명령은 `MySolution` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 빌드합니다.
+다음 명령은 `CSharpWinApp` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `MySolution` 프로젝트를 빌드합니다.
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 및 솔루션 빌드 및 정리](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)

@@ -10,10 +10,10 @@ ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75916527"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>로컬 Docker 컨테이너에서 앱 디버그
@@ -61,7 +61,7 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 
 1. Docker가 사용 중인 컨테이너 유형(Linux 또는 Windows)을 사용하도록 설정되어 있는지 확인합니다. 작업 표시줄에서 Docker 아이콘을 마우스 오른쪽 단추로 클릭하고 **Linux 컨테이너로 전환** 또는 **Windows 컨테이너로 전환**을 적절히 선택합니다.
 
-1. (.NET Core 3 이상에만 해당) 이 섹션에 설명된 대로 코드를 편집하고 실행 중인 사이트를 새로 고치는 기능은 .NET Core > = 3.0의 기본 템플릿에서 사용할 수 없습니다. 이 기능을 사용하도록 설정하려면 NuGet 패키지 [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)를 추가해야 합니다. *Startup.cs*에서 `ConfigureServices` 메서드의 코드에 `IMvcBuilder.AddRazorRuntimeCompilation` 확장 메서드에 대한 호출을 추가합니다. DEBUG 모드에서만 이 기능을 사용할 수 있으므로 다음과 같이 코딩하세요.
+1. (.NET Core 3 이상에만 해당) 이 섹션에 설명된 대로 코드를 편집하고 실행 중인 사이트를 새로 고치는 기능은 .NET Core > = 3.0의 기본 템플릿에서 사용할 수 없습니다. 이 기능을 사용하도록 설정하려면 NuGet 패키지 [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)를 추가해야 합니다. *Startup.cs*에서 `IMvcBuilder.AddRazorRuntimeCompilation` 메서드의 코드에 `ConfigureServices` 확장 메서드에 대한 호출을 추가합니다. DEBUG 모드에서만 이 기능을 사용할 수 있으므로 다음과 같이 코딩하세요.
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }

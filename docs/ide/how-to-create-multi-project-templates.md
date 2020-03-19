@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591088"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
@@ -24,9 +24,9 @@ ms.locfileid: "75591088"
 
 또한 다중 프로젝트 템플릿은 단일 프로젝트 템플릿 다르게 작동합니다. 다음과 같은 고유한 특징이 있습니다.
 
-- 다중 프로젝트 템플릿에 있는 개별 프로젝트는 템플릿을 사용하여 새 프로젝트를 만들 때 이름을 할당할 수 없습니다. 대신 *vstemplate* 파일에 있는 **ProjectTemplateLink** 요소의 **ProjectName** 특성을 사용하여 각 프로젝트의 이름을 지정합니다.
+- 다중 프로젝트 템플릿에 있는 개별 프로젝트는 템플릿을 사용하여 새 프로젝트를 만들 때 이름을 할당할 수 없습니다. 대신 **vstemplate** 파일에 있는 **ProjectTemplateLink** 요소의 *ProjectName* 특성을 사용하여 각 프로젝트의 이름을 지정합니다.
 
-- 다중 프로젝트 템플릿에는 다른 언어로 작성된 프로젝트가 포함될 수 있지만 전체 템플릿 자체는 하나의 범주에만 배치될 수 있습니다. *vstemplate* 파일에 있는 **ProjectType** 요소에서 템플릿 범주를 지정합니다.
+- 다중 프로젝트 템플릿에는 다른 언어로 작성된 프로젝트가 포함될 수 있지만 전체 템플릿 자체는 하나의 범주에만 배치될 수 있습니다. **vstemplate** 파일에 있는 *ProjectType* 요소에서 템플릿 범주를 지정합니다.
 
 다중 프로젝트 템플릿에는 *.zip* 파일로 압축된 다음, 항목이 포함되어야 합니다.
 
@@ -46,14 +46,14 @@ ms.locfileid: "75591088"
 
 다중 프로젝트 템플릿에 대한 루트 *vstemplate* 파일은 다음과 같은 점에서 단일 프로젝트 템플릿과 다릅니다.
 
-- **VSTemplate** 요소의 **Type** 특성에는 **Project** 대신 값 **ProjectGroup**이 있습니다. 예:
+- **VSTemplate** 요소의 **Type** 특성에는 **Project** 대신 값 **ProjectGroup**이 있습니다. 다음은 그 예입니다.
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- **TemplateContent** 요소에는 포함된 프로젝트의 *vstemplate* 파일에 대한 경로를 정의하는 **ProjectTemplateLink** 요소가 하나 이상 있는 **ProjectCollection** 요소가 포함됩니다. 예:
+- **TemplateContent** 요소에는 포함된 프로젝트의 **vstemplate** 파일에 대한 경로를 정의하는 **ProjectTemplateLink** 요소가 하나 이상 있는 *ProjectCollection* 요소가 포함됩니다. 다음은 그 예입니다.
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ ms.locfileid: "75591088"
     ```
 
 > [!TIP]
-> 다중 프로젝트 템플릿만 새 프로젝트 대화 상자에 표시하고 포함된 개별 프로젝트를 표시하지 않으려면 내부 템플릿을 [숨김](../extensibility/hidden-element-visual-studio-templates.md)으로 표시합니다. 예:
+> 다중 프로젝트 템플릿만 새 프로젝트 대화 상자에 표시하고 포함된 개별 프로젝트를 표시하지 않으려면 내부 템플릿을 [숨김](../extensibility/hidden-element-visual-studio-templates.md)으로 표시합니다. 다음은 그 예입니다.
 >
 > ```xml
 > <VSTemplate Type="Project" ... >
@@ -88,7 +88,7 @@ ms.locfileid: "75591088"
 2. 서식 파일에 내보낼 준비가 될 때까지 프로젝트를 사용자 지정합니다.
 
    > [!TIP]
-   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. 예: `$ext_safeprojectname$`. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true**로 설정합니다.
+   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. `$ext_safeprojectname$`)을 입력합니다. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true**로 설정합니다.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
@@ -186,7 +186,7 @@ ms.locfileid: "75591088"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596452"
 ---
 # <a name="toolbox"></a>도구 상자
@@ -61,7 +61,7 @@ ms.locfileid: "75596452"
 
 ## <a name="create-and-distribute-custom-toolbox-controls"></a>사용자 지정 도구 상자 컨트롤 만들기 및 배포
 
-[Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) 또는 [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md)를 기반으로 하는 프로젝트 템플릿으로 시작하는 사용자 지정 **도구 상자** 컨트롤을 만들 수 있습니다. 그런 후에 [도구 상자 컨트롤 설치 관리자](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)를 사용하여 사용자 지정 컨트롤을 팀원에게 배포하거나 웹에 게시할 수 있습니다.
+**Windows Presentation Foundation** 또는 [Windows Forms](../../extensibility/creating-a-wpf-toolbox-control.md)를 기반으로 하는 프로젝트 템플릿으로 시작하는 사용자 지정 [도구 상자](../../extensibility/creating-a-windows-forms-toolbox-control.md) 컨트롤을 만들 수 있습니다. 그런 후에 [도구 상자 컨트롤 설치 관리자](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)를 사용하여 사용자 지정 컨트롤을 팀원에게 배포하거나 웹에 게시할 수 있습니다.
 
 ## <a name="help-on-toolbox-tabs"></a>도구 상자 탭에 대한 도움말
 
@@ -71,6 +71,6 @@ ms.locfileid: "75596452"
 - [도구 상자, 구성 요소 탭](../../ide/reference/toolbox-components-tab.md)
 - [도구 상자, HTML 탭](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [도구 상자 항목 선택, WPF 구성 요소](choose-toolbox-items-wpf-components.md)

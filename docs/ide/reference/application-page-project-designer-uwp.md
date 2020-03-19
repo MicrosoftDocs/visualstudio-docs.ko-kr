@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77173082"
 ---
 # <a name="application-property-page-uwp-projects"></a>애플리케이션 속성 페이지(UWP 프로젝트)
@@ -30,15 +30,15 @@ ms.locfileid: "77173082"
 
 **어셈블리 이름**&mdash; 어셈블리 매니페스트를 보유할 출력 파일의 이름을 지정합니다.
 
-프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>를 참조하세요.
 
 **기본 네임스페이스**&mdash; 프로젝트에 추가된 파일에 대한 기본 네임스페이스를 지정합니다. 네임스페이스에 대한 자세한 내용은 [네임스페이스(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/namespaces/), [네임스페이스(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) 또는 [네임스페이스(C++)](/cpp/cpp/namespaces-cpp)를 참조하세요.
 
-프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>를 참조하세요.
 
 **어셈블리 정보**&mdash; 이 단추를 선택하면 [어셈블리 정보 대화 상자](../../ide/reference/assembly-information-dialog-box.md)가 표시됩니다.
 
-**패키지 매니페스트**&mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 **솔루션 탐색기**에서 _Package.appxmanifest_ 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/msix/package/packaging-uwp-apps#configure-your-project)을 참조하세요.
+**패키지 매니페스트**&mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 _솔루션 탐색기_에서 **Package.appxmanifest** 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/msix/package/packaging-uwp-apps#configure-your-project)을 참조하세요.
 
 ## <a name="targeting-section"></a>대상 지정 섹션
 
@@ -46,7 +46,7 @@ ms.locfileid: "77173082"
 
 Visual Studio의 플랫폼 대상 지정에 대한 자세한 내용은 [플랫폼 대상 지정](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [첫 번째 UWP 앱 만들기](/windows/uwp/get-started/your-first-app)
 - [UWP 버전 선택](/windows/uwp/updates-and-versions/choose-a-uwp-version)

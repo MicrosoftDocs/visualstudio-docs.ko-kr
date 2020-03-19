@@ -15,17 +15,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584493"
 ---
 # <a name="load-test-results-summary-overview"></a>부하 테스트 결과 요약 개요
 
 부하 테스트 실행이 끝나면 부하 테스트 요약을 통해 결과를 바로 확인할 수 있습니다. 부하 테스트 요약에는 핵심 결과가 간단하고 읽기 쉬운 형식으로 제공됩니다. 부하 테스트 요약은 인쇄가 가능하므로 이해 관계자에게 결과를 편리하게 전달할 수 있습니다. 또한 부하 테스트 요약은 이전에 실행한 부하 테스트의 부하 테스트 결과를 열 때 기본적으로 표시되는 뷰입니다. 자세한 내용은 [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)를 참조하세요.
 
-![요약 뷰](../test/media/ltest_summaryview.png)
+![요약 보기](../test/media/ltest_summaryview.png)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -136,7 +136,7 @@ ms.locfileid: "75584493"
 
 요약의 바로 가기 메뉴에서 **인쇄**를 선택하면 부하 테스트 요약을 인쇄할 수 있습니다. 또한 요약의 바로 가기 메뉴에서 **인쇄 미리 보기**를 선택하여 인쇄 내용을 미리 볼 수 있으며, 미리 보기 화면에서 바로 인쇄할 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

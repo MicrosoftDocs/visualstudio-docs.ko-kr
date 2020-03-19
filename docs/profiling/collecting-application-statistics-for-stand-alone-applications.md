@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de399bf493e328e583bdd2765822ca3a66144698
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779638"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 애플리케이션 통계 수집
@@ -27,9 +27,9 @@ ms.locfileid: "74779638"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
-|**프로파일링을 사용하여 애플리케이션 시작**|-   [방법: 독립 실행형 애플리케이션 시작 및 애플리케이션 통계 수집](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
+|**프로파일링을 사용하여 애플리케이션 시작**|-   [방법: 독립 실행형 애플리케이션을 시작하여 애플리케이션 통계 수집](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
 |**실행 중인 .NET Framework 애플리케이션에 프로파일러 연결**|-   [방법: .NET Framework 애플리케이션에 프로파일러 연결 및 애플리케이션 통계 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
 |**실행 중인 C/C++ 애플리케이션에 프로파일러 연결**|-   [방법: 네이티브 애플리케이션에 프로파일러 연결 및 애플리케이션 통계 수집](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|
 |**계층 상호 작용 데이터 추가**|-   [계층 상호 작용 데이터 수집](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
@@ -38,7 +38,7 @@ ms.locfileid: "74779638"
 
 ### <a name="profile-stand-alone-applications"></a>독립 실행형 애플리케이션 프로파일링
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**애플리케이션 계측**|-   [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**.NET 메모리 할당 및 가비지 수집 데이터**|-   [.NET Framework 메모리 데이터 수집](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
@@ -46,7 +46,7 @@ ms.locfileid: "74779638"
 
 ### <a name="profile-by-using-the-sampling-method"></a>샘플링 방법을 사용하여 프로파일링
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**ASP.NET 웹 애플리케이션 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**서비스 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md) 샘플링 방법을 사용하여 Windows 서비스에서 성능 통계를 수집하는 방법을 설명합니다.|

@@ -1,5 +1,5 @@
 ---
-title: '방법: 빌드에서 파일 제외 | Microsoft Docs'
+title: '방법: 빌드에서 파일 제외 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633865"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>방법: 빌드에서 파일 제외
@@ -25,7 +25,7 @@ ms.locfileid: "77633865"
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>빌드의 입력에서 파일 또는 디렉터리 제외
 
- 항목 목록은 빌드에 사용할 입력 파일입니다. 포함할 항목은 `Include` 특성을 사용하여 그룹으로 또는 개별적으로 선언됩니다. 예를 들어:
+ 항목 목록은 빌드에 사용할 입력 파일입니다. 포함할 항목은 `Include` 특성을 사용하여 그룹으로 또는 개별적으로 선언됩니다. 다음은 그 예입니다.
 
 ```xml
 <CSFile Include="Form1.cs"/>
@@ -126,8 +126,8 @@ ms.locfileid: "77633865"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-- [항목](../msbuild/msbuild-items.md)
+- [Items](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)

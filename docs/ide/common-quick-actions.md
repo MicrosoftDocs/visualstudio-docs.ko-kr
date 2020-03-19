@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585524"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
-이 항목의 섹션에는 C# 및 Visual Basic 코드 모두에 적용할 수 있는 일반적인 **빠른 작업** 중 일부가 나와 있습니다. 이러한 작업은 컴파일러 진단 또는 Visual Studio의 기본 제공 [.NET Compiler Platform 분석기](../code-quality/roslyn-analyzers-overview.md)에 대한 *코드 수정*입니다.
+이 항목의 섹션에는 C# 및 Visual Basic 코드 모두에 적용할 수 있는 일반적인 **빠른 작업** 중 일부가 나와 있습니다. 이러한 작업은 컴파일러 진단 또는 Visual Studio의 기본 제공 *.NET Compiler Platform 분석기*에 대한 [코드 수정](../code-quality/roslyn-analyzers-overview.md)입니다.
 
 ## <a name="actions-that-fix-errors"></a>오류를 수정하는 작업
 
@@ -30,7 +30,7 @@ ms.locfileid: "75585524"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>철자가 틀린 기호 또는 키워드 수정
 
-Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 해당 항목은 전구 메뉴에 **‘\<철자가 잘못된 단어>’를 ‘\<올바른 단어>’로 변경**으로 표시됩니다. 예:
+Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 해당 항목은 전구 메뉴에 **‘\<철자가 잘못된 단어>’를 ‘\<올바른 단어>’로 변경**으로 표시됩니다. 다음은 그 예입니다.
 
 ```csharp
 // Before
@@ -511,7 +511,7 @@ Dim c = New Customer() With {.Age = 21}
 
 ### <a name="use-collection-initializers"></a>컬렉션 이니셜라이저 사용
 
-이 빠른 작업을 사용하면 클래스의 `Add` 메서드를 여러 번 호출하는 대신 [컬렉션 이니셜라이저](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)를 사용할 수 있습니다.
+이 빠른 작업을 사용하면 클래스의 [ 메서드를 여러 번 호출하는 대신 ](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)컬렉션 이니셜라이저`Add`를 사용할 수 있습니다.
 
 ```csharp
 // Before
@@ -664,7 +664,7 @@ int fibonacci(int n)
 | ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Visual Studio 2017 버전 15.5 이상 |
 
-이 빠른 작업은 가능한 경우 ```ReferenceEquals``` 코딩 패턴보다는 [패턴 일치](/dotnet/csharp/pattern-matching)를 사용하도록 제안합니다.
+이 빠른 작업은 가능한 경우 [ 코딩 패턴보다는 ](/dotnet/csharp/pattern-matching)패턴 일치```ReferenceEquals```를 사용하도록 제안합니다.
 
 ```csharp
 // Before
@@ -686,7 +686,7 @@ if (value is null)
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0+ | Visual Studio 2017 버전 15. 이상 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 버전 15. 이상. |
 
 ### <a name="introduce-pattern-matching"></a>패턴 일치 소개
 
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# 및 Visual Basic | Visual Studio 2017 이상 |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빠른 작업](../ide/quick-actions.md)

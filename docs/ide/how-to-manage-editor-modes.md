@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591036"
 ---
 # <a name="how-to-manage-editor-modes"></a>방법: 편집기 모드 관리
@@ -46,7 +46,7 @@ Visual Studio 코드 편집기를 다양한 표시 모드로 표시할 수 있�
 
      -- 또는 --
 
-- **명령** 창에서 `View.Fullscreen` 명령을 실행합니다.
+- `View.Fullscreen`명령**창에서** 명령을 실행합니다.
 
 ## <a name="enable-virtual-space-mode"></a>가상 공간 모드 활성화
 
@@ -61,7 +61,7 @@ Visual Studio 코드 편집기를 다양한 표시 모드로 표시할 수 있�
     > [!NOTE]
     > **가상 공간**은 **열 선택** 모드에서 사용할 수 있습니다. **가상 공간** 모드가 사용하도록 설정되지 않으면 삽입 지점이 한 줄 끝에서 바로 다음 줄의 첫 번째 문자로 이동합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)
 - [글꼴 및 색, 환경, 옵션 대화 상자](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

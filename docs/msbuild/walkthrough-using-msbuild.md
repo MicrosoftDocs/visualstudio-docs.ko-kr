@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631083"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
@@ -40,12 +40,12 @@ Visual Studio 또는 **명령 창**에서 MSBuild를 실행할 수 있습니다.
     ::: moniker range=">=vs-2019"
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl+Q**를 입력하여 검색 상자를 열고, **winforms**를 입력한 다음, **새 Windows Forms 앱(.NET Framework) 만들기**를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
 
-    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션**, **솔루션 이름**(**BuildApp**) 및 **프레임워크**의 기본값을 적용합니다.
+    **이름** 상자에서 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션**, **솔루션 이름**(**BuildApp**) 및 **프레임워크**의 기본값을 적용합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
     메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#**  > **Windows Desktop**을 확장한 다음, **Windows Forms 앱(.NET Framework)** 을 선택합니다. 그런 다음, **확인**을 선택합니다.
 
-    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(**BuildApp**)을 적용합니다.
+    **이름** 상자에서 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(**BuildApp**)을 적용합니다.
     ::: moniker-end
 
 1. **확인** 또는 **만들기**를 클릭하여 프로젝트 파일을 만듭니다.
@@ -92,7 +92,7 @@ Visual Studio 또는 **명령 창**에서 MSBuild를 실행할 수 있습니다.
 가져온 파일은 참조될 때마다 프로젝트 파일에 실제로 삽입됩니다.
 
 > [!NOTE]
-> .NET Core 같은 일부 프로젝트 형식은 `ToolsVersion` 대신 `Sdk` 특성을 가진 단순화된 스키마를 사용합니다. 이러한 프로젝트는 암시적 가져오기 및 다른 기본 특성 값을 가지고 있습니다.
+> .NET Core 같은 일부 프로젝트 형식은 `Sdk` 대신 `ToolsVersion` 특성을 가진 단순화된 스키마를 사용합니다. 이러한 프로젝트는 암시적 가져오기 및 다른 기본 특성 값을 가지고 있습니다.
 
 MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되지 않음을 보장합니다.
 
@@ -138,7 +138,7 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 
    (Windows 10) 작업 표시줄의 검색 상자에 `dev` 또는 `developer command prompt`와 같은 도구 이름을 입력합니다. 그러면 검색 패턴과 일치하는 설치된 앱의 목록이 표시됩니다.
 
-   수동으로 찾아야 하는 경우 파일은 *<visualstudio 설치 폴더\>\<version>\Common7\Tools* 폴더의 *LaunchDevCmd.bat*입니다.
+   수동으로 찾아야 하는 경우 파일은 *<visualstudio 설치 폴더* *version>\Common7\Tools\> 폴더의 \<LaunchDevCmd.bat*입니다.
 
 2. 명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 *D:\BuildApp\BuildApp*)로 이동합니다.
 
@@ -183,7 +183,7 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 
  위의 코드는 TargetFrameworkVersion이라는 속성을 정의하고 해당 속성에 문자열 값 "v15.0"을 제공합니다.
 
- 빌드 속성은 언제든지 다시 정의할 수 있습니다. 조건
+ 빌드 속성은 언제든지 다시 정의할 수 있습니다. 다음과 같은 경우
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -220,7 +220,7 @@ $(PropertyName)
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 출력을 검사합니다. 다음과 같은 두 줄이 표시됩니다. 사용 중인 .NET Framework 버전은 이 줄과 다를 수 있습니다.
+4. 출력 내용 검사 다음과 같은 두 줄이 표시됩니다. 사용 중인 .NET Framework 버전은 이 줄과 다를 수 있습니다.
 
     ::: moniker range=">=vs-2019"
 
@@ -274,7 +274,7 @@ $(PropertyName)
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2. 출력을 검사합니다. 다음 줄이 표시됩니다.
+2. 출력 내용 검사 다음 줄이 표시됩니다.
 
     ```
     Configuration is Release.
@@ -304,7 +304,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 출력을 검사합니다. 다음 줄이 표시됩니다.
+4. 출력 내용 검사 다음 줄이 표시됩니다.
 
     ```
     $(Configuration) is "Debug"
@@ -325,7 +325,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 </ItemGroup>
 ```
 
- 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 컴파일에는 다음 두 가지 값이 있습니다. *Program.cs* 및 *Properties\AssemblyInfo.cs*.
+ 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 Compile에는 *Program.cs* 및 *Properties\AssemblyInfo.cs*의 두 값이 있습니다.
 
  다음 코드는 이 두 파일을 모두 세미콜론으로 구분하여 Include 특성 하나에 선언하는 방식으로 같은 항목 종류를 만듭니다.
 
@@ -368,7 +368,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 출력을 검사합니다. 다음과 같은 긴 줄이 표시됩니다.
+4. 출력 내용 검사 다음과 같은 긴 줄이 표시됩니다.
 
     ```
     Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
@@ -400,7 +400,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 출력을 검사합니다. 다음 줄이 표시됩니다.
+4. 출력 내용 검사 다음 줄이 표시됩니다.
 
     ```
     Compile item type contains Form1.cs
@@ -425,7 +425,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 <Photos Include="images\**\*.jpeg" />
 ```
 
- 위의 코드는 *images* 폴더 및 모든 하위 폴더에 있는 파일 확장명이 *.jpeg*인 모든 파일을 Photos 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.
+ 위의 코드는 *images* 폴더 및 모든 하위 폴더에 있는 파일 확장명이 *.jpeg*인 모든 파일을 Photos 항목 종류에 추가합니다. 더 많은 예제를 확인하려면 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.
 
  선언하는 항목은 항목 종류에 추가됩니다. 예를 들면 다음과 같습니다.
 
@@ -446,7 +446,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- 위의 코드는 이름에 *Designer*라는 문자열이 포함된 파일을 제외하고 파일 확장명이 *.cs*인 모든 파일을 Compile 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조하세요.
+ 위의 코드는 이름에 *Designer*라는 문자열이 포함된 파일을 제외하고 파일 확장명이 *.cs*인 모든 파일을 Compile 항목 종류에 추가합니다. 더 많은 예제를 확인하려면 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조하세요.
 
 Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목 요소에서 Include 특성에 의해 추가된 항목에만 영향을 줍니다. 예를 들면 다음과 같습니다.
 
@@ -481,7 +481,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-5. 출력을 검사합니다. 다음 줄이 표시됩니다.
+5. 출력 내용 검사 다음 줄이 표시됩니다.
 
     ```
     XFiles item type contains Form1.cs;Program.cs;Properties/Resources.resx
@@ -523,7 +523,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 출력을 검사합니다. 다음 줄이 표시됩니다.
+4. 출력 내용 검사 다음 줄이 표시됩니다.
 
     ```
     Compile.DependentUpon:
@@ -554,7 +554,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 출력을 검사합니다. 다음 줄이 표시됩니다.
+4. 출력 내용 검사 다음 줄이 표시됩니다.
 
     ```
     Compile Filename: Form1
@@ -593,7 +593,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. 출력을 검사합니다. 다음 줄이 표시됩니다.
+4. 출력 내용 검사 다음 줄이 표시됩니다.
 
     ```
     Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak
@@ -601,11 +601,11 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
 
 이 구문으로 표현되는 메타데이터로 인해 일괄 처리가 수행되지는 않습니다.
 
-## <a name="whats-next"></a>새로운 기능
+## <a name="whats-next"></a>다음 단계
 
- 간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.
+ 간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild 개요](../msbuild/msbuild.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

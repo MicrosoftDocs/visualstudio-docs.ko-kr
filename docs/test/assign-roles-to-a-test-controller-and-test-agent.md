@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591192"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>역할을 테스트 컨트롤러와 테스트 에이전트에 할당
@@ -111,6 +111,6 @@ ms.locfileid: "75591192"
 
      테스트 컨트롤러는 단위 테스트와 코딩된 UI 테스트를 처리할 때 테스트를 100개씩 여러 그룹으로 나눠 테스트 에이전트 컴퓨터로 보냅니다. 예를 들어 단위 테스트가 250개이고 테스트 에이전트가 3개일 경우 처음 100개의 단위 테스트는 agent1로 보내지고 다음 100개의 단위 테스트는 agent2로 보내지며 나머지 50개의 단위 테스트는 agent3으로 보내집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

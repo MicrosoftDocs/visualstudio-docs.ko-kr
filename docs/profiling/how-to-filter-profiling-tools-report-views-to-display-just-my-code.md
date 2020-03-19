@@ -9,13 +9,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: db43caeb00ef8348eb1a7dd584c1b0b52001bc3f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778962"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>방법: 내 코드만 표시하도록 프로파일링 도구 보고서 보기 필터링
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링
 
 Visual Studio는 사용자가 구현한 코드만 표시하도록 성능 보고서 필터링 기능을 제공합니다. 내 코드만이라는 이 기능은 기본적으로 사용하도록 설정됩니다. 이 기능은 **옵션** 대화 상자의 **내 코드만** 옵션을 통해 구성됩니다.
 

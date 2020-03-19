@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596517"
 ---
 # <a name="class-designer-errors"></a>클래스 디자이너 오류
@@ -46,6 +46,6 @@ ms.locfileid: "75596517"
 - [Visual C++ 코드 작업](working-with-visual-cpp-code.md)은 클래스 다이어그램에 C++를 표시하는 것과 관련된 문제 해결 정보를 포함합니다.
 - [Visual Studio 클래스 디자이너 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)은 **클래스 디자이너** 관련 질문을 위한 포럼을 제공합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)

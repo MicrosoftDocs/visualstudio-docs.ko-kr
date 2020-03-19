@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62419845"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>Visual Studio 설명서에 기여하기
@@ -14,7 +14,7 @@ ms.locfileid: "62419845"
 
 ## <a name="code-of-conduct"></a>사용 규정
 
-이 프로젝트는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 사용 규정)를 채택했습니다. 자세한 내용은 [사용 규정 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)를 참조하시고, 추가 질문이나 의견이 있는 경우 [opencode@microsoft.com](mailto:opencode@microsoft.com)으로 문의하세요.
+이 프로젝트는 [Microsoft 오픈 소스 준수 사항](https://opensource.microsoft.com/codeofconduct/)을 채택했습니다. 자세한 내용은 [사용 규정 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)를 참조하시고, 추가 질문이나 의견이 있는 경우 [opencode@microsoft.com](mailto:opencode@microsoft.com)으로 문의하세요.
 
 ## <a name="how-can-i-contribute"></a>기여하려면 어떻게 해야 하나요?
 

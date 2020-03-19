@@ -42,10 +42,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594749"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>옵션, 텍스트 편집기, 모든 언어, 탭
@@ -59,11 +59,11 @@ ms.locfileid: "75594749"
 
 ## <a name="indenting"></a>들여쓰기
 
-없음
+None
 
 이 옵션을 선택하면 새 줄이 들여쓰기되지 않습니다. 삽입 지점이 새 줄의 첫 번째 열에 배치됩니다.
 
-블록
+Block
 
 이 옵션을 선택하면 새 줄이 자동으로 들여쓰기됩니다. 삽입 지점은 이전 줄과 동일한 시작 지점에 배치됩니다.
 
@@ -77,11 +77,11 @@ ms.locfileid: "75594749"
 
 탭 크기
 
-탭 정지 간의 거리(공백 수)를 설정합니다. 기본값은 네 칸입니다.
+탭 정지 간의 거리를 공백 수로 설정합니다. 기본값은 공백 4개입니다.
 
 들여쓰기 크기
 
-자동 들여쓰기의 크기를 공백 수로 설정합니다. 기본값은 네 칸입니다. 탭 문자나 공백 문자가 삽입되거나 둘 다 삽입되어 지정된 크기를 채웁니다.
+자동 들여쓰기의 크기를 공백 수로 설정합니다. 기본값은 공백 4개입니다. 탭 문자나 공백 문자 또는 두 가지 문자 모두를 삽입하여 지정한 크기를 채웁니다.
 
 공백 삽입
 
@@ -91,7 +91,7 @@ ms.locfileid: "75594749"
 
 이 옵션을 선택하고 들여쓰기 작업을 수행하면 가능한 최대 개수만큼 탭 문자가 삽입됩니다. 각 탭 문자는 **탭 크기**에 지정된 공백 수만큼 채웁니다. **들여쓰기 크기**가 **탭 크기**의 짝수 배수가 아니면 공백 문자가 추가되어 차이를 메꿉니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [옵션, 텍스트 편집기, 모든 언어](../../ide/reference/options-text-editor-all-languages.md)
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

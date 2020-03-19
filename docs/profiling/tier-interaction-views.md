@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778130"
 ---
 # <a name="tier-interaction-views"></a>계층 상호 작용 뷰
@@ -23,6 +23,6 @@ ms.locfileid: "74778130"
 
 계층 상호 작용 뷰는 Visual Studio Enterprise에서만 사용할 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [계층 상호 작용 뷰](../profiling/tier-interactions-view.md)

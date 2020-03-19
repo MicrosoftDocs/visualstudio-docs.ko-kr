@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778481"
 ---
 # <a name="performance-explorer"></a>성능 탐색기
@@ -32,14 +32,14 @@ ms.locfileid: "74778481"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**Windows 8 이상에 대한 기술**|[Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
 |**프로파일링 개념 이해:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석하는 데 사용하는 개념 및 용어에 대해 알아봅니다.|[개요](../profiling/overviews-performance-tools.md)|
 |**시작 및 작업:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석할 때 사용하는 기본적인 절차에 대해 알아봅니다. 실전 연습을 수행해 보세요.|[시작](../profiling/getting-started-with-performance-tools.md)|
 |**프로파일링 세션 구성:** 프로파일링할 프로젝트 또는 이진 파일을 지정하고, 프로파일링 방법을 선택하고, 수집할 성능 데이터를 선택하고, 기타 프로파일링 세션 옵션을 설정하는 고급 방법을 알아봅니다.|[성능 세션 구성](../profiling/configuring-performance-sessions.md)|
 |**프로파일러가 수집하는 데이터 제어:** 성능 세션 속성 및 대화형 절차를 사용하여 프로파일링을 시작 및 중지하는 방법, 원하는 정보만 수집하는 성능 데이터를 제한하는 방법을 알아봅니다.|[데이터 수집 제어](../profiling/controlling-data-collection.md)|
-|**성능 문제 찾기:** 프로파일링 도구 보고서 보기 창에서 수집된 성능 데이터를 보고 분석하는 방법을 알아봅니다.|[성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)|
+|**성능 문제 찾기:** 프로파일링 도구 보고서 뷰 창에서 수집된 성능 데이터를 보고 분석하는 방법을 알아봅니다.|[성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)|
 |**성능 변경 분석:** 두 프로파일러 데이터 파일을 비교하여 성능 변경을 분석하는 방법을 알아봅니다.|[성능 데이터 파일 비교](../profiling/comparing-performance-data-files.md)|
 |**결과 저장 및 공유:** 보관 또는 공유를 위해 프로파일링 데이터를 저장하는 방법을 알아봅니다.|[성능 도구 데이터 저장 및 내보내기](../profiling/saving-and-exporting-performance-tools-data.md)|
 |**프로파일링 자동화:** 명령 프롬프트에서 프로파일링 도구를 사용하는 방법을 알아봅니다.|[명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)|

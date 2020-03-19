@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71693008"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 사용자 환경 개선 프로그램
@@ -65,7 +65,7 @@ VSCEIP는 기본적으로 켜져 있습니다. 다음 지침을 따라 이 기�
 - **1**은 옵트인된 것입니다(VSCEIP 켜기).
 
 > [!CAUTION]
-> 레지스트리를 잘못 편집하면 시스템이 심각하게 손상될 수 있습니다. 레지스트리를 변경하기 전에 컴퓨터의 중요한 데이터를 모두 백업해야 합니다. 변경 내용을 수동으로 적용한 후 문제가 발생할 경우 **마지막으로 성공한 구성** 시작 옵션을 사용할 수도 있습니다.
+> 레지스트리를 잘못 편집하면 시스템이 심각하게 손상될 수 있습니다. 따라서 레지스트리를 변경하기 전에 컴퓨터의 중요한 데이터를 백업해 두어야 합니다. 변경 내용을 수동으로 적용한 후 문제가 발생할 경우 **마지막으로 성공한 구성** 시작 옵션을 사용할 수도 있습니다.
 
 VSCEIP를 통해 수집, 처리 또는 전송되는 정보에 대한 자세한 내용은 [Microsoft 개인정보처리방침](https://privacy.microsoft.com/privacystatement)을 참조하세요.
 

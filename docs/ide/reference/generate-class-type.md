@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595633"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio에서 클래스 또는 형식 생성
@@ -27,7 +27,7 @@ ms.locfileid: "75595633"
 
 - Visual Basic
 
-**내용:** 클래스 또는 형식에 대한 코드를 즉시 생성할 수 있습니다.
+**대상:** 클래스 또는 형식에 대한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 새 클래스 또는 형식을 소개하고 자동으로 클래스 또는 형식을 제대로 선언하려고 합니다.
 
@@ -70,12 +70,12 @@ ms.locfileid: "75595633"
 
    ![형식 생성](media/class-newtype-cs.png)
 
-   선택 | 설명
+   선택 | Description
    --- | ---
-   액세스 | *기본*, *내부* 또는 *공용* 액세스 권한을 가지도록 형식을 설정합니다.
-   Kind | *클래스* 또는 *구조체*로 설정할 수 있습니다.
-   이름 | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
-   프로젝트 | 솔루션에 여러 프로젝트가 있는 경우 클래스/구조체를 활성화할 위치를 선택할 수 있습니다.
+   액세스 권한 | *기본*, *내부* 또는 *공용* 액세스 권한을 가지도록 형식을 설정합니다.
+   종류 | *클래스* 또는 *구조체*로 설정할 수 있습니다.
+   속성 | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
+   Project | 솔루션에 여러 프로젝트가 있는 경우 클래스/구조체를 활성화할 위치를 선택할 수 있습니다.
    파일 이름 | 새 파일을 만들거나 기존 파일에 형식을 추가할 수 있습니다.
 
 클래스 또는 구조체가 만들어집니다. C#의 경우 생성자도 만들어집니다.
@@ -88,7 +88,7 @@ ms.locfileid: "75595633"
 
    ![클래스 생성 결과 VB](media/class-result-vb.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

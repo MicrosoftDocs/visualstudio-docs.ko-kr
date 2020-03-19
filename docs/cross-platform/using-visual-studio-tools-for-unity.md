@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916576"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306958"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 사용
 
@@ -45,7 +45,7 @@ Intellisense 코드 완성을 사용하면 MonoBehaviour 스크립트에서 Unit
 
 3. 글자 “**ontri**”를 입력하면 IntelliSense 제안 목록이 나타납니다.
 
-   ![IntelliSense 사용](media/vstu_intellisense1.png)
+   ![Using IntelliSense](media/vstu_intellisense1.png)
 
 4. 세 가지 방법으로 목록의 선택 항목을 변경할 수 있습니다.
 
@@ -101,7 +101,7 @@ Visual Studio Tools for Unity를 통해 Visual Studio의 강력한 디버거를 
 
 ### <a name="debug-in-the-unity-editor"></a>Unity 편집기에서 디버그
 
-#### <a name="start-debugging"></a>디버깅 시작
+#### <a name="start-debugging"></a>디버그 시작
 
 1. **Unity에 연결** 레이블이 지정된 **재생** 단추를 클릭하여 Visual Studio를 Unity에 연결하거나, 바로 가기 키 **F5** 키를 사용합니다.
 

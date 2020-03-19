@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114476"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
@@ -33,7 +33,7 @@ Visual Studio 개발 서버 대신 IIS Express를 사용하려면 이 옵션을 
 
 이 옵션을 설정하면 오류 없이 컴파일되지 않을 때 웹 애플리케이션을 실행하려는 경우 경고가 표시됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [옵션 대화 상자, 프로젝트 및 솔루션](projects-and-solutions-options-dialog-box.md)
 - [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](options-dialog-box-projects-and-solutions-web-projects.md)

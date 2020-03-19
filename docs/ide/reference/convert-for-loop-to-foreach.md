@@ -1,20 +1,21 @@
 ---
 title: for 루프를 foreach 문으로 변환하는 코드 리팩터링
-ms.date: 05/10/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570247"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094600"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>for 루프와 foreach 문 사이를 변환하는 리팩터링
 
@@ -27,6 +28,8 @@ ms.locfileid: "75570247"
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 > [!NOTE]
 > **foreach로 변환** 빠른 작업 리팩터링은 세 가지 파트인 이니셜라이저, 조건 및 반복기가 모두 포함된 [for](/dotnet/csharp/language-reference/keywords/for) 루프에만 사용할 수 있습니다.
@@ -82,7 +85,7 @@ ms.locfileid: "75570247"
 > [!NOTE]
 > C#의 경우 이러한 리팩터링에서 생성된 코드는 컬렉션의 항목 형식에 대해 명시적 형식 또는 [var](/dotnet/csharp/language-reference/keywords/var)을 사용합니다. 생성된 코드가 명시적 또는 암시적 형식인지 여부는 범위에 있는 코드 스타일 설정에 따라 다릅니다. 이러한 특정 코드 스타일 설정은 **도구** > **옵션** > **텍스트 편집기** > **C#**  > **코드 스타일** > **일반** >  **\'var' 기본 설정** 아래 컴퓨터 수준 또는 [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) 파일의 솔루션 수준에서 구성됩니다. **옵션**에서 코드 스타일 설정을 변경하는 경우 변경 내용을 적용하려면 코드 파일을 다시 엽니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569714"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>필드 캡슐화 리팩터링
@@ -27,11 +27,11 @@ ms.locfileid: "75569714"
 
 - Visual Basic
 
-**내용:** 필드를 속성으로 변환하고 새로 만들어진 속성을 사용하도록 해당 필드의 모든 사용을 업데이트할 수 있습니다.
+**대상:** 필드를 속성으로 변환하고 새로 만들어진 속성을 사용하도록 해당 필드의 모든 사용을 업데이트할 수 있습니다.
 
 **시기:** 필드를 속성으로 이동하고 해당 필드에 대한 모든 참조를 업데이트하려고 합니다.
 
-**이유:** 다른 클래스에 필드에 대한 액세스 권한을 부여하지만 해당 클래스가 직접 액세스할 수 없게 하려고 합니다.  예를 들어 필드를 속성으로 래핑하면 할당되는 값을 확인하는 코드를 작성할 수 있습니다.
+**이유**: 다른 클래스에 필드에 대한 액세스 권한을 부여하지만 해당 클래스가 직접 액세스할 수 없게 하려고 합니다.  예를 들어 필드를 속성으로 래핑하면 할당되는 값을 확인하는 코드를 작성할 수 있습니다.
 
 ## <a name="how-to"></a>방법
 
@@ -54,7 +54,7 @@ ms.locfileid: "75569714"
       - **편집 > 리팩터링 > 필드 캡슐화**를 선택합니다.
       - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **필드 캡슐화** 항목을 선택합니다.
 
-   선택 | 설명
+   선택 | Description
    --------- | -----------
    **필드 캡슐화(및 속성 사용)** | 속성을 사용하여 필드를 캡슐화하고 생성된 속성을 사용하도록 필드의 모든 사용을 업데이트합니다.
    **필드 캡슐화(그러나 필드 계속 사용)** | 속성을 사용하여 필드를 캡슐화하지만 필드의 모든 사용을 그대로 유지합니다.
@@ -72,7 +72,7 @@ ms.locfileid: "75569714"
 
       ![속성 캡슐화 결과 - Visual Basic](media/encapsulate-result-vb.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

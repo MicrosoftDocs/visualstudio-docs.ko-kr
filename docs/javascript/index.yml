@@ -9,52 +9,46 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
-  ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
-  ms.translationtype: HT
-  ms.contentlocale: ko-KR
-  ms.lasthandoff: 01/06/2020
-  ms.locfileid: "75678950"
 landingContent:
-- title: 시작
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Visual Studio의 JavaScript 및 TypeScript
-      url: javascript-in-vs-2019.md
-  - linkListType: how-to-guide
-    links:
-    - text: Visual Studio 설치
-      url: ../install/install-visual-studio.md
-  - linkListType: get-started
-    links:
-    - text: 둘러보기 시작
-      url: quickstart-ide-orientation-js.md
-- title: JavaScript 및 TypeScript 앱 만들기
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Node.js 및 Express를 사용하여 웹앱 만들기
-      url: tutorial-nodejs.md
-    - text: Node.js 및 React를 사용하여 웹앱 만들기
-      url: tutorial-nodejs-with-react-and-jsx.md
-    - text: Node.js 및 Vue.js를 사용하여 웹앱 만들기
-      url: quickstart-vuejs-with-nodejs.md
-    - text: TypeScript를 사용하여 ASP.NET Core 앱 만들기
-      url: tutorial-aspnet-with-typescript.md
-- title: Visual Studio 학습
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 코드 작성 및 편집
-      url: write-and-edit-code.md
-    - text: npm 패키지 관리
-      url: npm-package-management.md
-    - text: Node.js 대화형 REPL 사용
-      url: nodejs-interactive-repl.md
-    - text: 코드 디버그
-      url: debug-nodejs.md
-    - text: 프로젝트 또는 솔루션 없이 코드 개발
-      url: develop-javascript-code-without-solutions-projects.md
-    - text: 단위 테스트 작성 및 실행
-      url: unit-testing-javascript-with-visual-studio.md
+  - title: 시작하기
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Visual Studio의 JavaScript 및 TypeScript
+            url: javascript-in-vs-2019.md
+      - linkListType: how-to-guide
+        links:
+          - text: Visual Studio 설치
+            url: ../install/install-visual-studio.md
+      - linkListType: get-started
+        links:
+          - text: 둘러보기 시작
+            url: quickstart-ide-orientation-js.md
+  - title: JavaScript 및 TypeScript 앱 만들기
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Node.js 및 Express를 사용하여 웹앱 만들기
+            url: tutorial-nodejs.md
+          - text: Node.js 및 React를 사용하여 웹앱 만들기
+            url: tutorial-nodejs-with-react-and-jsx.md
+          - text: Node.js 및 Vue.js를 사용하여 웹앱 만들기
+            url: quickstart-vuejs-with-nodejs.md
+          - text: TypeScript를 사용하여 ASP.NET Core 앱 만들기
+            url: tutorial-aspnet-with-typescript.md
+  - title: Visual Studio 학습
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: 코드 작성 및 편집
+            url: write-and-edit-code.md
+          - text: npm 패키지 관리
+            url: npm-package-management.md
+          - text: Node.js 대화형 REPL 사용
+            url: nodejs-interactive-repl.md
+          - text: 코드 디버그
+            url: debug-nodejs.md
+          - text: 프로젝트 또는 솔루션 없이 코드 개발
+            url: develop-javascript-code-without-solutions-projects.md
+          - text: 단위 테스트 작성 및 실행
+            url: unit-testing-javascript-with-visual-studio.md

@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778429"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구
@@ -64,7 +64,7 @@ Windows 8에서는 계측 방법을 사용한 프로파일링이 변경되지 �
 
 다음 두 명령줄 도구를 사용하여 Visual Studio가 설치되지 않은 디바이스를 비롯한 Windows 8 및 Windows Server 2012 디바이스에서 프로파일링 데이터를 수집합니다.
 
-|도구 이름|설명|
+|도구 이름|Description|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|UWP 앱에서 프로파일링 데이터를 수집하고, Windows 8 데스크톱 애플리케이션 및 Windows Server 2012 애플리케이션에서 샘플 프로파일링 데이터를 수집합니다.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에서 계측, 동시성 및 계층 상호 작용 프로파일링 데이터를 수집합니다. 이전 버전의 Windows에서 모든 유형의 프로파일링 데이터를 수집합니다.|
@@ -112,11 +112,11 @@ Visual Studio가 설치되지 않은 디바이스에서 애플리케이션을 �
 
 원격 머신에서 계층 상호 작용 데이터를 수집하려면 **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** 파일을 Visual Studio 머신의 *%VSInstallDir%\Team Tools\Performance Tools\Setups* 폴더에서 원격 컴퓨터로 복사하여 설치해야 합니다. [원격 디버깅](../debugger/remote-debugging.md) 다운로드 패키지의 프로파일링 도구는 사용할 수 없습니다.
 
-[VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)를 사용하여 프로파일링 데이터를 수집할 수 있습니다.
+[VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 를 사용하여 프로파일링 데이터를 수집할 수 있습니다.
 
 **TIP 보고서**
 
-계층 상호 작용 데이터는 Visual Studio Enterprise에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서는 사용할 수 없습니다.
+계층 상호 작용 데이터는 Visual Studio Enterprise에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서를 사용할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
 

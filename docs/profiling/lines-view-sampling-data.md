@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778585"
 ---
 # <a name="lines-view---sampling-data"></a>줄 뷰 - 샘플링 데이터
@@ -42,14 +42,14 @@ ms.locfileid: "74778585"
 
   정의에 따라 문은 다른 함수를 호출하지 않습니다. 따라서 전용 값만 나열됩니다.
 
-|Column|설명|
+|열|Description|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
 |**모듈 이름**|함수 줄이 포함된 모듈의 이름입니다.|
 |**모듈 경로**|함수 줄이 포함된 모듈의 경로입니다.|
-|**소스 파일**|함수 줄이 포함된 소스 파일입니다.|
-|**함수 이름**|함수의 이름.|
+|**원본 파일**|함수 줄이 포함된 소스 파일입니다.|
+|**함수 이름**|함수의 이름입니다.|
 |**함수 줄 번호**|소스 파일에서 이 함수가 시작되는 줄 번호입니다.|
 |**함수 주소**|함수의 시작 주소입니다.|
 |**소스 줄 시작**|소스 파일에서 이 샘플이 수집된 시작 줄 번호입니다.|

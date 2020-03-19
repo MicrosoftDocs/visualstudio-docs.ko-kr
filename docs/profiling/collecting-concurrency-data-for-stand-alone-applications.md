@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6180d2f2e3ed655f378900d3d41691daa98a0354
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773259"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 동시성 데이터 수집
@@ -24,7 +24,7 @@ ms.locfileid: "74773259"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**.NET Framework 애플리케이션 시작 및 동시성 데이터 프로파일링**|-   [방법: .NET Framework 애플리케이션을 시작하여 동시성 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
 |**C/C++ 애플리케이션 시작 및 동시성 데이터 프로파일링**|-   [방법: 네이티브 애플리케이션을 시작하여 동시성 데이터 수집](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
@@ -35,7 +35,7 @@ ms.locfileid: "74773259"
 
 ### <a name="profile-stand-alone-applications"></a>독립 실행형 애플리케이션 프로파일링
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**샘플링 방법을 사용하여 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**계측 방법을 사용하여 프로파일링**|-   [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
@@ -44,7 +44,7 @@ ms.locfileid: "74773259"
 
 ### <a name="profile-concurrency-issues"></a>동시성 문제 프로파일링
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**ASP.NET 애플리케이션 프로파일링**|-   [동시성 데이터 수집](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
 |**서비스 프로파일링**|-   [동시성 데이터 수집](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
@@ -52,7 +52,7 @@ ms.locfileid: "74773259"
 ### <a name="analyze-concurrency-data-views-and-reports"></a>동시성 데이터 뷰 및 보고서 분석
 - [리소스 경합 데이터 뷰](../profiling/resource-contention-data-views.md)
 
-- [동시성 시각화 도우미](../profiling/concurrency-visualizer.md)
+- [Concurrency 시각화 도우미](../profiling/concurrency-visualizer.md)
 
 ## <a name="reference"></a>참조
 - [명령줄 프로파일링 도구 참조](../profiling/command-line-profiling-tools-reference.md)

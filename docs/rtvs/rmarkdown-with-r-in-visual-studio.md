@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888566"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown 문서 만들기
@@ -24,7 +24,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
 ## <a name="using-r-markdown"></a>R Markdown 사용
 
 1. Visual Studio를 닫습니다.
-1. (한 번만 실행) [pandoc.org](https://pandoc.org/installing.html)에서 `pandoc`를 설치합니다.
+1. (한 번만 실행) `pandoc`pandoc.org[에서 ](https://pandoc.org/installing.html)를 설치합니다.
 1. Visual Studio를 다시 시작합니다(pandoc 설치를 선택해야 함).
 1. `knitr` 및 `rmarkdown` 패키지를 설치합니다([대화형 창](interactive-repl-for-r-in-visual-studio.md)에서 수행할 수 있음).
 

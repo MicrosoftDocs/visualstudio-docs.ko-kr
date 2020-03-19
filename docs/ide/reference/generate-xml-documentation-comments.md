@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77706398"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>방법: 문서 생성에 대한 XML 주석 삽입
@@ -30,7 +30,7 @@ Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식 및 멤버�
 
 1. 문서화할 요소(예: 메서드) 위에 텍스트 커서를 놓습니다.
 
-2. 다음 작업 중 하나를 수행합니다.
+2. 다음 중 하나를 수행합니다.
 
    - C#에서 `///` 또는 Visual Basic에서 `'''`를 입력
 
@@ -53,13 +53,13 @@ Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식 및 멤버�
    ![완료된 주석](media/doc-style-cs.png) 
 
 > [!NOTE]
-> C#에서 `///` 또는 Visual Basic에서 `'''`를 입력한 후 XML 문서 주석을 설정/해제하는 [옵션](../../ide/reference/options-text-editor-csharp-advanced.md)이 있습니다. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음, **텍스트 편집기** > **C#** 또는 **기본** > **고급**으로 이동합니다. **편집기 도움말** 섹션에서 **XML 문서 주석 생성** 옵션을 찾습니다.
+> C#에서 [ 또는 Visual Basic에서 ](../../ide/reference/options-text-editor-csharp-advanced.md)를 입력한 후 XML 문서 주석을 설정/해제하는 `///`옵션`'''`이 있습니다. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음, **텍스트 편집기** > **C#** 또는 **기본** > **고급**으로 이동합니다. **편집기 도움말** 섹션에서 **XML 문서 주석 생성** 옵션을 찾습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [XML 주석과 함께 코드 문서화(C# 가이드)](/dotnet/csharp/codedoc)
-- [방법: XML 문서 만들기(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [방법: 방법: XML 문서 만들기(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [C++ 주석](/cpp/cpp/comments-cpp)
 - [XML 문서(C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [코드 생성](../code-generation-in-visual-studio.md)

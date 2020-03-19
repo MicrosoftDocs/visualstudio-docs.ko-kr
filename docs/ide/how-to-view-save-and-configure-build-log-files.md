@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114473"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>방법: 빌드 로그 파일 보기, 저장 및 구성
@@ -46,17 +46,17 @@ MSBuild를 사용하여 모든 종류의 프로젝트를 빌드하는 경우 *.t
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>빌드 로그에 포함되는 정보의 양을 변경하려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
 2. **프로젝트 및 솔루션** 페이지에서 **빌드 및 실행** 페이지를 선택합니다.
 
 3. **MSBuild 프로젝트 빌드 출력 세부 정보 표시** 목록에서 다음 값 중 하나를 선택하고 **확인** 단추를 선택합니다.
 
-    |세부 정보 표시 수준|설명|
+    |세부 정보 표시 수준|Description|
     | - |-----------------|
     |**자동**|빌드의 요약만을 표시합니다.|
     |**최소**|매우 중요한 항목으로 분류된 빌드 및 오류, 경고 및 메시지의 요약을 표시합니다.|
-    |**표준**|매우 중요한 항목으로 분류된 빌드 및 오류, 경고 및 메시지의 요약, 빌드의 주요 단계를 표시합니다. 이 수준의 세부 정보를 가장 자주 사용합니다.|
+    |**보통**|매우 중요한 항목으로 분류된 빌드 및 오류, 경고 및 메시지의 요약, 빌드의 주요 단계를 표시합니다. 이 수준의 세부 정보를 가장 자주 사용합니다.|
     |**자세히**|매우 중요한 항목으로 분류된 빌드 및 오류, 경고 및 메시지의 요약, 빌드의 모든 단계, 보통 중요한 항목으로 분류된 메시지를 표시합니다.|
     |**진단**|빌드에 사용할 수 있는 모든 데이터를 표시합니다. 이 수준의 세부 정보를 사용하여 사용자 지정 빌드 스크립트 및 기타 빌드 문제를 포함한 문제를 디버깅할 수 있습니다.|
 
@@ -69,7 +69,7 @@ MSBuild를 사용하여 모든 종류의 프로젝트를 빌드하는 경우 *.t
 
 이진 로그는 .NET 프로젝트의 선택적 기능으로, 큰 로그에서 정보를 쉽게 찾을 수도 있는 풍부한 로그 탐색 환경을 제공합니다. 이진 로그를 사용하려면 [프로젝트 시스템 도구](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)를 설치합니다. 자세한 내용은 [https://msbuildlog.com](https://msbuildlog.com) 및 [이진 로그](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)

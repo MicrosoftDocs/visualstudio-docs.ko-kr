@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 51e16dcaa48a08ae97bc80be1d33163c6f3af875
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590451"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>테스트를 위해 UWP 컨트롤에 대한 고유 자동화 속성 설정
@@ -163,6 +163,6 @@ private void CreateCheckBox(string txt, StackPanel panel)
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코딩된 UI 테스트를 사용하여 UWP 앱 테스트](../test/test-uwp-app-with-coded-ui-test.md)

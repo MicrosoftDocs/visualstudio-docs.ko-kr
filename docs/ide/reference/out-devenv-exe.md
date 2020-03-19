@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568013"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -39,7 +39,7 @@ devenv /Out FileName
 
 - *FileName*
 
-  필수 요소. 실행 파일을 빌드할 때 출력을 수신할 파일의 경로 및 이름입니다.
+  필수 사항입니다. 실행 파일을 빌드할 때 출력을 수신할 파일의 경로 및 이름입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -55,7 +55,7 @@ devenv /Out FileName
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
 - [/Run(devenv.exe)](../../ide/reference/run-devenv-exe.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ab604b23a99ab2dd62adca6076168fe264ab1b4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630694"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 작업
@@ -31,7 +31,7 @@ ms.locfileid: "77630694"
 
  다음 표에서는 `WriteCodeFragment` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`AssemblyAttributes`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 작성할 특성의 설명입니다. 항목 `Include` 값은 특성의 전체 유형 이름입니다(예: "System.AssemblyVersionAttribute").<br /><br /> 각 메타데이터는 매개 변수의 이름 값 쌍이며 `String` 형식이어야 합니다. 일부 특성만 위치 생성자 인수를 허용합니다. 그러나 모든 특성에 이러한 인수를 사용할 수 있습니다. 위치 생성자 특성을 설정하려면 "_Parameter1", "_Parameter2" 등과 유사한 메타데이터 이름을 사용합니다.<br /><br /> 매개 변수 인덱스는 생략할 수 없습니다.|
 |`Language`|필수 `String` 매개 변수입니다.<br /><br /> 생성할 코드의 언어를 지정합니다.<br /><br /> `Language`는 CodeDom 공급자를 사용할 수 있는 언어일 수 있습니다(예: "C#" 또는 "VisualBasic"). 내보낸 파일은 해당 언어에 대한 기본 파일 이름 확장명을 갖습니다.|
@@ -40,9 +40,9 @@ ms.locfileid: "77630694"
 
 ## <a name="remarks"></a>설명
 
- 이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
+ 이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

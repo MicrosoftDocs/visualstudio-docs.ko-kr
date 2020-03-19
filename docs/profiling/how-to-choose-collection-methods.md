@@ -1,5 +1,5 @@
 ---
-title: '방법: 수집 방법 선택 | Microsoft Docs'
+title: '방법: 수집 방법 선택 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776347"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
@@ -31,7 +31,7 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 - 마법사의 첫 번째 페이지에서 다음 옵션 중 하나를 선택합니다.
 
-| 옵션 | 설명 |
+| 옵션 | Description |
 |----------------------------| - |
 | **CPU 샘플링** | 초기 분석 및 CPU 사용률 문제 분석에 유용한 애플리케이션 통계를 수집합니다. |
 | **계측** | 집중 분석 및 입/출력 성능 문제 분석에 유용한 자세한 타이밍 데이터를 수집합니다. |

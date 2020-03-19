@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44d6e3c77fee53b15ec8d18cb74fd7355ee101a8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633241"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307180"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 지시 파일
 
@@ -37,7 +37,7 @@ ms.locfileid: "77633241"
 
 버전 15.6 이상에서는 MSBuild가 프로젝트의 부모 디렉터리에서 *Directory.Build.rsp*라는 파일을 검색합니다.  이 기능은 소스 코드 리포지토리에서 명령줄 빌드 중에 기본 인수를 제공하는 데 도움이 될 수 있습니다.  또한 호스팅된 빌드의 명령줄 인수를 지정하는 데 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [명령줄 참조](../msbuild/msbuild-command-line-reference.md)

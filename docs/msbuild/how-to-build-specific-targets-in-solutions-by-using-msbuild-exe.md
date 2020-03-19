@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633930"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드
@@ -31,7 +31,7 @@ ms.locfileid: "77633930"
 
 ## <a name="example"></a>예제
 
- 다음 예제에서는 `NotInSlnFolder` 프로젝트의 `Rebuild` 대상을 실행한 다음, *NewFolder* 솔루션 폴더에 있는 `InSolutionFolder` 프로젝트의 `Clean` 대상을 실행합니다.
+ 다음 예제에서는 `Rebuild` 프로젝트의 `NotInSlnFolder` 대상을 실행한 다음, `Clean`NewFolder`InSolutionFolder` 솔루션 폴더에 있는 *프로젝트의* 대상을 실행합니다.
 
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
@@ -43,7 +43,7 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 이 내부 보기가 필요하지 않으면 이 환경 변수 설정을 사용하여 빌드하지 않습니다. 이 설정은 솔루션에서 프로젝트를 빌드하는 문제가 발생할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [명령줄 참조](../msbuild/msbuild-command-line-reference.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

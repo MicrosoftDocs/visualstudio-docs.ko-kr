@@ -1,20 +1,21 @@
 ---
 title: 접근할 수 없는 리팩터링 제거
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62002e78513ecb6ebaefd8130255471d6ba93d0c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565489"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093983"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>접근할 수 없는 리팩터링 제거
 
@@ -22,9 +23,11 @@ ms.locfileid: "75565489"
 
 - C#
 
-**내용:** 실행되지 않는 코드를 제거합니다.
+- Visual Basic
 
-**시기:** 프로그램에 코드 조각에 대한 경로가 없으므로 코드 조각이 불필요합니다.
+**대상:** 실행되지 않는 코드를 제거합니다.
+
+**시기:** 프로그램에 코드 조각 경로가 없어 코드 조각이 불필요합니다.
 
 **이유:** 불필요하고 실행되지 않을 코드를 제거하여 가독성 및 유지 관리 편의성을 개선합니다.
 
@@ -43,7 +46,7 @@ ms.locfileid: "75565489"
 
 1. 변경 내용에 만족할 경우 **Enter** 키를 누르거나 메뉴에서 수정을 클릭하면 변경 내용이 커밋됩니다.
 
-예:
+예제:
 
 ```csharp
 // Before
@@ -62,7 +65,7 @@ private void Method()
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

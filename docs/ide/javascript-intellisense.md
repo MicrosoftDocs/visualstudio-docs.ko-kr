@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593722"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -135,13 +135,13 @@ TypeScript 환경에서 가장 인기 있는 JavaScript 라이브러리에는 *.
 기본적으로 Salsa 언어 서비스는 어떤 JavaScript 라이브러리가 사용 중인지 검색하고, 더 다양한 IntelliSense를 제공하기 위해 라이브러리를 설명하는 해당 *.d.ts* 파일을 자동으로 다운로드하여 참조합니다. 파일은 *%LOCALAPPDATA%\Microsoft\TypeScript*의 사용자 폴더 아래에 있는 캐시에 다운로드됩니다.
 
 > [!NOTE]
-> *tsconfig.json* 구성 파일을 사용할 경우 이 기능은 기본적으로 **사용되지 않지만** 아래 추가로 설명된 대로 사용되도록 설정할 수 있습니다.
+> **tsconfig.json** 구성 파일을 사용할 경우 이 기능은 기본적으로 *사용되지 않지만* 아래 추가로 설명된 대로 사용되도록 설정할 수 있습니다.
 
 현재 자동 검색은 npm에서 다운로드된 종속성(*package.json* 파일 읽기 수행), Bower(*bower.json* 파일 읽기 수행) 및 대략 상위 400개의 가장 인기 있는 JavaScript 라이브러리 목록과 일치하는 프로젝트의 느슨한 파일에 적용됩니다. 예를 들어 프로젝트에 *jquery-1.10.min.js*가 있는 경우 더 나은 편집 환경을 제공하기 위해 *jquery.d.ts* 파일이 페치 및 다운로드됩니다. 이 *.d.ts* 파일은 프로젝트에 영향을 미치지 않습니다.
 
 자동 획득을 사용하지 않으려면 다음 설명대로 구성 파일을 추가하여 기능을 사용하지 않도록 설정합니다. 사용할 정의 파일을 직접 프로젝트 내에 수동으로 배치할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
 - [JavaScript 지원(Mac용 Visual Studio)](/visualstudio/mac/javascript)

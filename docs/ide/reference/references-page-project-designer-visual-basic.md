@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565606"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
@@ -28,7 +28,7 @@ ms.locfileid: "75565606"
 
 **참조** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. 프로젝트 디자이너가 나타나면 **참조** 탭을 클릭합니다.
 
-## <a name="uielement-list"></a>UI 요소 목록
+## <a name="uielement-list"></a>UIElement 목록
 
 다음 옵션을 사용하여 프로젝트에서 참조 및 가져온 네임스페이스를 선택하거나 제거할 수 있습니다.
 
@@ -88,7 +88,7 @@ ms.locfileid: "75565606"
 
 - XML 네임스페이스(예: `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트의 참조 관리](../../ide/managing-references-in-a-project.md)
 - [방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)

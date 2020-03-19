@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633722"
 ---
 # <a name="incremental-builds"></a>증분 빌드
@@ -46,13 +46,13 @@ MSBuild는 대상의 `Inputs` 및 `Outputs` 특성을 비교하여 대상을 실
 
 여기에는 세 가지 경우가 있습니다.
 
-- 대상에 `false`로 평가되는 `Condition` 특성이 있습니다. 이 경우 대상이 실행되지 않으며 빌드에는 아무 영향이 없습니다.
+- 대상에 `Condition`로 평가되는 `false` 특성이 있습니다. 이 경우 대상이 실행되지 않으며 빌드에는 아무 영향이 없습니다.
 
 - 대상에 오래된 출력이 있으며 최신 상태가 되도록 실행됩니다.
 
 - 대상에 오래된 출력이 없으며 건너뜁니다. MSBuild는 대상을 평가하고 대상이 실행된 것처럼 항목 및 속성에 변경 내용을 만듭니다.
 
-증분 컴파일을 지원하기 위해 작업은 모든 `Output` 요소의 `TaskParameter` 특성 값이 작업 입력 매개 변수와 동일한지 확인해야 합니다. 다음은 몇 가지 예입니다.
+증분 컴파일을 지원하기 위해 작업은 모든 `TaskParameter` 요소의 `Output` 특성 값이 작업 입력 매개 변수와 동일한지 확인해야 합니다. 예를 들어 다음과 같은 노래를 선택할 수 있다.
 
 ```xml
 <CreateProperty Value="123">
@@ -68,7 +68,7 @@ MSBuild 3.5 전에는 [CreateItem](../msbuild/createitem-task.md) 작업을 사�
 
 ## <a name="determine-whether-a-target-has-been-run"></a>대상이 실행되었는지 여부 결정
 
-출력 유추로 인해 대상에 `CreateProperty` 작업을 추가하여 대상이 실행되었는지 여부를 결정할 수 있도록 속성 및 항목을 검사해야 합니다. 대상에 `CreateProperty` 작업을 추가하고 `TaskParameter`가 "ValueSetByTask"인 `Output` 요소를 제공합니다.
+출력 유추로 인해 대상에 `CreateProperty` 작업을 추가하여 대상이 실행되었는지 여부를 결정할 수 있도록 속성 및 항목을 검사해야 합니다. 대상에 `CreateProperty` 작업을 추가하고 `Output`가 "ValueSetByTask"인 `TaskParameter` 요소를 제공합니다.
 
 ```xml
 <CreateProperty Value="true">
@@ -78,6 +78,6 @@ MSBuild 3.5 전에는 [CreateItem](../msbuild/createitem-task.md) 작업을 사�
 
 대상이 실행되는 경우에만 이 코드는 속성 CompileRan을 만들고 `true` 값을 제공합니다. 대상을 건너뛰는 경우 CompileRan은 생성되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [대상](../msbuild/msbuild-targets.md)

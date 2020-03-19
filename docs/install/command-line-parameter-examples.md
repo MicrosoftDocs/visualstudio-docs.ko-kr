@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275259"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 설치에 대한 명령줄 매개 변수 예
@@ -64,7 +64,7 @@ ms.locfileid: "77275259"
 
 ## <a name="using---wait"></a>--wait 사용
 
-* 배치 파일 또는 스크립트에서 다음 명령을 실행하기 전에 Visual Studio 설치 관리자가 완료될 때까지 기다리는 데 사용합니다. 일괄 처리 파일의 경우 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지에 나오는 대로 `%ERRORLEVEL%` 환경 변수가 명령의 반환 값을 포함합니다. 일부 명령 유틸리티는 추가 매개 변수가 있어야 완료될 때까지 기다리고 설치 관리자의 반환 값을 가져올 수 있습니다. 다음은 PowerShell 스크립트 명령 ‘Start-Process’와 함께 사용되는 추가 매개 변수에 대한 예제입니다.
+* 배치 파일 또는 스크립트에서 다음 명령을 실행하기 전에 Visual Studio 설치 관리자가 완료될 때까지 기다리는 데 사용합니다. 일괄 처리 파일의 경우 `%ERRORLEVEL%`명령줄 매개 변수를 사용하여 Visual Studio 설치[ 페이지에 나오는 대로 ](use-command-line-parameters-to-install-visual-studio.md) 환경 변수가 명령의 반환 값을 포함합니다. 일부 명령 유틸리티는 추가 매개 변수가 있어야 완료될 때까지 기다리고 설치 관리자의 반환 값을 가져올 수 있습니다. 다음은 PowerShell 스크립트 명령 ‘Start-Process’와 함께 사용되는 추가 매개 변수에 대한 예제입니다.
 
    ```cmd
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
@@ -221,7 +221,7 @@ ms.locfileid: "77275259"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)

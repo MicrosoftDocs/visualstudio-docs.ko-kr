@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569701"
 ---
 # <a name="extract-a-method-refactoring"></a>메서드 추출 리팩터링
@@ -28,7 +28,7 @@ ms.locfileid: "75569701"
 
 - Visual Basic
 
-**내용:** 코드 조각을 고유한 메서드로 변환할 수 있습니다.
+**대상:** 코드 조각을 고유한 메서드로 변환할 수 있습니다.
 
 **시기:** 다른 메서드에서 호출해야 하는 일부 메서드에 기존 코드 조각이 있습니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "75569701"
    메서드가 즉시 만들어집니다. 이제 여기에서 새 이름을 입력하여 간단히 메서드 이름을 바꿀 수 있습니다.
 
    > [!TIP]
-   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트할 뿐 아니라, IDE의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수 있습니다.
+   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트할 뿐 아니라, IDE의 오른쪽 위에 표시되는 [이름 바꾸기](../../ide/preview-changes.md) 상자의 확인란을 사용하여 저장하기 전에 **변경 내용을 미리 볼** 수 있습니다.
 
    - C#:
 
@@ -71,7 +71,7 @@ ms.locfileid: "75569701"
 
 3. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

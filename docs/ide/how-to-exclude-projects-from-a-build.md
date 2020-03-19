@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114809"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
@@ -67,7 +67,7 @@ ms.locfileid: "76114809"
 
 프로젝트를 건너뛴 이유를 확인하려면 활성 구성(이전 예시의 `Debug x86`)을 확인하고 **빌드** > **구성 관리자**를 선택합니다. 이 문서에서 설명한 대로 각 구성에 대해 건너뛰는 프로젝트를 보거나 변경할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)
 - [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)

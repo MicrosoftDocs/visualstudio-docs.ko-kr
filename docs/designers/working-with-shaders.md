@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7ccb4f838c702cb1843d5c0f44dd7f54219f27a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589775"
 ---
 # <a name="work-with-shaders"></a>셰이더 작업
@@ -35,7 +35,7 @@ DGSL은 DGML과 호환되므로 DGML 문서를 분석하여 DGSL 셰이더를 �
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[셰이더 디자이너](../designers/shader-designer.md)|Visual Studio 셰이더 디자이너를 사용하여 셰이더 작업을 수행하는 방법을 설명합니다.|
 |[셰이더 디자이너 노드](../designers/shader-designer-nodes.md)|그래픽 효과를 얻기 위해 사용할 수 있는 셰이더 디자이너 노드의 종류를 설명합니다.|

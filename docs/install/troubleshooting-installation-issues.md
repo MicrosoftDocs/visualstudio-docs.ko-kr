@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115002"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 설치 및 업그레이드 문제 해결
@@ -116,7 +116,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 다음은 [오프라인 설치](create-an-offline-installation-of-visual-studio.md)를 생성한 후 로컬 레이아웃에서 설치할 때 도움이 되는 알려진 문제 및 몇 가지 해결 방법의 표입니다.
 
-| 문제점       | 항목                   | 솔루션 |
+| 문제       | 항목                   | 해결 방법 |
 | ----------- | ---------------------- | -------- |
 | 사용자에게 파일에 액세스할 수 있는 권한이 없습니다. | 권한(ACL) | 오프라인 설치를 공유하기 *전에* 먼저 다른 사용자에게 읽기 액세스 권한을 부여하도록 권한(ACL)을 조정해야 합니다. |
 | 새 작업, 구성 요소 또는 언어가 설치되지 않습니다.  | `--layout`  | 부분 레이아웃에서 설치하고 해당 부분 레이아웃에서 이전에 다운로드하지 않은 워크로드, 구성 요소 또는 언어를 선택하는 경우 인터넷에 액세스할 수 있는지 확인합니다. |
@@ -134,7 +134,7 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및 .NET Framew
 1. [도구를 다운로드합니다](https://www.microsoft.com/download/details.aspx?id=12493).
 2. 관리자 명령 프롬프트를 엽니다.
 3. 도구를 저장한 디렉터리에서 `Collect.exe`를 실행합니다.
-4. `%TEMP%` 디렉터리에서 결과 `vslogs.zip` 파일을 찾습니다(예: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`).
+4. `vslogs.zip` 디렉터리에서 결과 `%TEMP%` 파일을 찾습니다(예: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`).
 
 > [!NOTE]
 > 이 도구는 실패한 설치가 실행되었던 동일한 사용자 계정으로 실행되어야 합니다. 다른 사용자 계정에서 이 도구를 실행하는 경우 `–user:<name>` 옵션을 설정하여 실패한 설치가 실행된 사용자 계정을 지정합니다. 추가 옵션 및 사용법 정보를 보려면 관리자 명령 프롬프트에서 `Collect.exe -?`를 실행합니다.
@@ -143,7 +143,7 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및 .NET Framew
 
 이 문제 해결 가이드에 나열된 솔루션이 Visual Studio를 성공적으로 설치하거나 업그레이드하는 데 도움이 되지 않는 경우 [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous) 지원 옵션(영어로만 제공)을 사용하여 추가 지원을 받으세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 제거](remove-visual-studio.md)
 * [방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)

@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279317"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense에 대한 C++ 프로젝트 구성
@@ -76,7 +76,7 @@ Visual Studio에서 이 문제는 다음 두 가지 방식으로 나타납니다
 
 IntelliSense 컴파일러가 포함 경로 및 전처리기 매크로를 포함하여 올바른 컴파일러 옵션을 사용하는지 확인하려면 **도구 > 옵션 > 텍스트 편집기 > C/C++ > 고급 > 진단 로깅**에서 IntelliSense 명령줄의 진단 로깅을 켭니다. **로깅 사용**을 True로 설정하고 **로깅 수준**을 5(가장 자세한 정보 로깅), **로깅 필터**를 8(IntelliSense 로깅)로 설정합니다.
 
-출력 창에는 이제 IntelliSense 컴파일러에 전달되는 명령줄이 표시됩니다. 다음은 샘플 출력입니다.
+출력 창에는 이제 IntelliSense 컴파일러에 전달되는 명령줄이 표시됩니다. 샘플 출력은 다음과 같습니다.
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32
@@ -120,6 +120,6 @@ Visual Studio to investigate.
 
 TRACEDESIGNTIME 환경 변수에 대한 자세한 내용은 [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) 및 [공통 프로젝트 시스템](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)을 참조하세요. 이러한 문서의 정보는 C++ 프로젝트와 관련이 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

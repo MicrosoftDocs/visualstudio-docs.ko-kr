@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588722"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>방법: 편집기에서 텍스트의 대/소문자 변경
@@ -36,6 +36,6 @@ ms.locfileid: "75588722"
 > [!TIP]
 > 변경하기 전에 이전 대/소문자 서식으로 되돌리려면 **편집** 메뉴에서 **실행 취소**를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793d730df3942608451e7dbc329819b98c451973
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113286"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>방법: MIP 수준 만들기 및 수정
@@ -23,7 +23,7 @@ ms.locfileid: "76113286"
 
 #### <a name="to-generate-mip-levels"></a>MIP 수준을 생성하려면
 
-1. [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)에서 설명된 대로 새 질감을 만듭니다. 최상의 결과를 얻으려면 너비와 높이가 2의 거듭제곱(예: 256, 512, 1024 등)인 질감을 지정합니다.
+1. [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)에서 설명한 대로 기본 질감으로 시작합니다. 최상의 결과를 얻으려면 너비와 높이가 2의 거듭제곱(예: 256, 512, 1024 등)인 질감을 지정합니다.
 
 2. MIP 수준을 생성합니다. **이미지 편집기 모드** 도구 모음에서 **고급** > **도구** > **Mip 생성**을 선택합니다.
 
@@ -41,6 +41,6 @@ ms.locfileid: "76113286"
 > [!NOTE]
 > 특정 효과를 얻기 위해 수행할 수 있는 것처럼 개별 MIP 수준의 콘텐츠를 수정할 필요가 없는 경우 빌드할 때 원본 질감에서 MIP 맵을 생성하는 것이 좋습니다. 이렇게 하면 MIP 수준 수정이 자동으로 다른 수준으로 전파되지 않으므로 MIP 수준이 원본 질감과 동기화되도록 할 수 있습니다. 빌드 시간에 밉 맵을 생성하는 방법에 대한 자세한 내용은 [방법: 밉 맵을 포함하는 질감 내보내기](../designers/how-to-export-a-texture-that-contains-mipmaps.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)

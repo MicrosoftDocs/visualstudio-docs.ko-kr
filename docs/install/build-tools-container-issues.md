@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77611135"
 ---
 # <a name="known-issues-for-containers"></a>컨테이너에 대한 알려진 문제
@@ -40,11 +40,11 @@ Visual Studio를 Docker 컨테이너에 설치하는 데 몇 가지 문제가 �
 * 명령줄에서 `--norestart`를 전달합니다. 이 문서 작성 당시, 컨테이너 내부에서 Windows 컨테이너를 다시 시작하려면 `ERROR_TOO_MANY_OPEN_FILES`가 호스트여야 합니다.
 * microsoft/windowsservercore에 이미지를 직접 베이스하는 경우 .NET Framework는 제대로 설치되지 않을 수 있으며 설치 오류가 표시되지 않습니다. 관리 코드는 설치가 완료된 후 실행되지 않을 수 있습니다. 대신, [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 이상에서 이미지를 베이스합니다. 예를 들어 다음과 유사한 MSBuild로 빌드할 때 오류가 표시될 수 있습니다.
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): 오류 MSB6003: 지정된 작업 실행 파일 "csc.exe"를 실행할 수 없습니다. 파일이나 어셈블리 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): 오류 MSB6003: 지정된 작업 실행 파일 "csc.exe"를 실행할 수 없습니다. 파일이나 어셈블리 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 시스템은 지정된 파일을 찾을 수 없습니다.
 
 ::: moniker range="vs-2017"
 
-* mcr.microsoft.com/windows/servercore:1809 이상에는 Visual Studio 2017 버전 15.8 또는 이전 버전(모든 제품)을 설치할 수 없습니다. 자세한 내용은 https://aka.ms/setup/containers/servercore1809 를 참조하세요.
+* mcr.microsoft.com/windows/servercore:1809 이상에는 Visual Studio 2017 버전 15.8 또는 이전 버전(모든 제품)을 설치할 수 없습니다. 자세한 내용은 https://aka.ms/setup/containers/servercore1809 을 참조하세요.
 
 ::: moniker-end
 
@@ -61,8 +61,8 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 ```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Build Tools를 컨테이너에 설치](build-tools-container.md)
-* [고급 컨테이너 예제](advanced-build-tools-container.md)
+* [컨테이너의 고급 예](advanced-build-tools-container.md)
 * [Visual Studio Build Tools 워크로드 및 구성 요소 ID](workload-component-id-vs-build-tools.md)

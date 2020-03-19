@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588800"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>옵션, 텍스트 편집기, 모든 언어, 스크롤 막대
@@ -53,7 +53,7 @@ ms.locfileid: "75588800"
 
 이 옵션을 선택하면 위아래로 스크롤하여 편집기의 보기 영역을 벗어나는 요소를 볼 수 있도록 세로 스크롤 막대가 표시됩니다. 세로 스크롤 막대를 사용할 수 없는 경우 Page Up, Page Down 및 커서 키를 사용하여 스크롤할 수 있습니다.
 
-## <a name="display"></a>표시
+## <a name="display"></a>디스플레이
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>세로 스크롤 막대 위에 주석 표시
 
@@ -86,6 +86,6 @@ ms.locfileid: "75588800"
 > [!TIP]
 > **소스 개요**를 **끔**으로 설정하여 지도 모드에서 축소 코드 보기를 끌 수 있습니다. **미리 보기 도구 설명 표시**를 선택한 경우에도 스크롤 막대를 포인터로 가리키면 해당 위치의 코드 미리 보기가 표시되며, 클릭하면 커서가 파일의 해당 위치로 이동합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 스크롤 막대 사용자 지정](../how-to-track-your-code-by-customizing-the-scrollbar.md)

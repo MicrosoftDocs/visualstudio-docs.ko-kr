@@ -1,5 +1,5 @@
 ---
-title: '방법: ETW(Windows용 이벤트 추적) 데이터 수집 | Microsoft Docs'
+title: '방법: ETW(Windows용 이벤트 추적) 데이터 수집 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,15 +15,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fa0547682351d1a7ba4efe4ce3b4350b906462c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779027"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>방법: ETW(Windows용 이벤트 추적) 데이터 수집
 
-ETW(Windows용 이벤트 추적)는 프로파일러 로그 커널 이벤트나 애플리케이션에서 거부된 이벤트를 사용하도록 설정하는 효율적인 커널 수준 추적 기능입니다. 이벤트 공급자에서 수집된 데이터를 보려면 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구의 /**Summary:ETW** 옵션을 사용해야 합니다. 이 보고서를 사용하여 애플리케이션에서 성능 문제가 발생하는 위치를 확인합니다.
+ETW(Windows용 이벤트 추적)는 프로파일러 로그 커널 이벤트나 애플리케이션에서 거부된 이벤트를 사용하도록 설정하는 효율적인 커널 수준 추적 기능입니다. 이벤트 공급자에서 수집된 데이터를 보려면 **VSPerfReport** 명령줄 도구의 /[Summary:ETW](../profiling/vsperfreport.md) 옵션을 사용해야 합니다. 이 보고서를 사용하여 애플리케이션에서 성능 문제가 발생하는 위치를 확인합니다.
 
 > [!NOTE]
 > Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.

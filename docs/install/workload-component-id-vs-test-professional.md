@@ -5,7 +5,7 @@ description: Visual Studio 작업 및 구성 요소 ID를 사용하여 테스터
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: c662732a4ba1cd05b1c9affa8fb86305f65b10a7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: ececc1815ebc578076d059b00ade1a5fde4552a4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114309"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437343"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 구성 요소 디렉터리
 
@@ -41,26 +41,26 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.TestProfessional
 
-**설명:** Test Professional은 다양한 작업을 수행하는 테스터를 대상으로 하는 통합 테스트 도구를 제공하여, 전체 수명 주기 테스트 전반에 걸쳐 테스트 요구 사항을 충족할 수 있도록 도와줍니다.
+**설명:** Test Professional은 테스터를 위한 통합된 테스트 도구를 제공하여 테스트 수명 주기 전반에 걸쳐 테스트 요구 사항에 맞게 작동합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | 이름 | 버전 | 종속성 유형
+구성 요소 ID | 속성 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | 필요한 공간
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | 필요한 공간
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | 필수
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | 필수
 
 ## <a name="unaffiliated-components"></a>독립적 구성 요소
 
 이러한 구성 요소는 작업에 포함되지 않지만 개별 구성 요소로 선택할 수 있습니다.
 
-구성 요소 ID | 이름 | 버전
+구성 요소 ID | 속성 | 버전
 --- | --- | ---
-N/A | N/A | N/A
+해당 없음 | 해당 없음 | 해당 없음
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

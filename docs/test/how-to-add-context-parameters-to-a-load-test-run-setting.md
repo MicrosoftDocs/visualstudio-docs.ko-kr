@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584480"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
@@ -36,9 +36,9 @@ ms.locfileid: "75584480"
 
 또한 다음과 같이 다른 부하 테스트 실행 설정에서 동일한 이름을 사용하는 컨텍스트 매개 변수에 다른 값을 할당하면 부하 테스트를 다른 환경에서 실행할 수 있습니다.
 
-- 기업 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
+- 회사 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
 
-- 기업 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
+- 회사 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
 
   **명령줄에서 실행 설정 변경**
 
@@ -70,6 +70,6 @@ ms.locfileid: "75584480"
 
 6. 활성 상태로 설정할 실행 설정을 선택합니다. 실행 설정에 대한 바로 가기 메뉴를 열고 **활성 상태로 설정**을 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915806"
 ---
 # <a name="installation"></a>설치
@@ -130,7 +130,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > 위의 명령은 기존 구형 또는 비공식(예: http://www.lfd.uci.edu/~gohlke/pythonlibs/ 에서 제공하는 Windows용 타사 패키지) NumPy 및 SciPy를 최신 공식 버전으로 업그레이드합니다.
 
-### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft CNTK(Cognitive Toolkit)
+### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive 도구 키트(CNTK)
 
 [Microsoft Cognitive Toolkit](https://cntk.ai)는 지시된 그래프를 통해 일련의 계산 단계로 신경망을 설명하는 통합 심층 학습 도구 키트입니다. CNTK은 Python 및 BrainScript 프로그래밍 언어를 모두 지원합니다.
 
@@ -156,7 +156,7 @@ CNTK Python 패키지를 설치하려면 [CNTK를 설치하는 방법](/cognitiv
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet(인큐베이팅)](https://mxnet.incubator.apache.org/)은 효율성과 유연성을 위해 설계된 심층 학습 프레임워크입니다. 이를 통해 [기호 및 명령적 프로그래밍](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)을 **혼합**하여 효율성과 생산성을 극대화할 수 있습니다.
+[Apache MXNet(인큐베이팅)](https://mxnet.incubator.apache.org/)은 효율성과 유연성을 위해 설계된 심층 학습 프레임워크입니다. 이를 통해 **기호 및 명령적 프로그래밍**을 [혼합](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)하여 효율성과 생산성을 극대화할 수 있습니다.
 
 MXNet을 설치하려면 터미널에서 다음 명령을 실행합니다.
 

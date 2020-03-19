@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754d2ceef776ab0dea2d8d51151d4170839173b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114704"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>방법: 구성 만들기 및 편집
@@ -31,7 +31,7 @@ ms.locfileid: "76114704"
 솔루션에 대한 여러 가지 빌드 구성을 만들 수 있습니다. 예를 들어 테스터가 문제를 찾고 해결하는 데 사용할 수 있는 디버그 빌드를 구성할 수 있고, 다른 고객에게 배포할 수 있는 다양한 종류의 빌드를 구성할 수 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 구성 만들기 및 편집](/visualstudio/mac/create-and-edit-configurations)을 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 구성 만들기 및 편집](/visualstudio/mac/create-and-edit-configurations)을 참조하세요.
 
 ## <a name="create-build-configurations"></a>빌드 구성 만들기
 
@@ -118,7 +118,7 @@ ms.locfileid: "76114704"
 
 3. **프로젝트 컨텍스트** 창에서 모든 프로젝트에 대해 원하는 **구성** 및 **플랫폼**을 선택하고 **빌드** 여부 및 **배포** 여부를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)
 - [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

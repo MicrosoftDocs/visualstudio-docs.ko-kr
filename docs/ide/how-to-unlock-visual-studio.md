@@ -12,15 +12,15 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027574"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>평가판 버전 확장 또는 라이선스 업데이트
 
-[Visual Studio Professional 또는 Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/)의 무료 평가판을 30일 동안 평가할 수 있습니다. 그리고 로그인하면 평가 기간을 90일로 연장할 수 있습니다. (Visual Studio Community는 평가 기간 없이 무료로 제공됩니다. 그러나 [라이선스를 최신](#update-a-stale-license)으로 유지하려면 정기적으로 [로그인](signing-in-to-visual-studio.md)해야 합니다.)
+[Visual Studio Professional 또는 Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/)의 무료 평가판을 30일 동안 평가할 수 있습니다. 그리고 로그인하면 평가 기간을 90일로 연장할 수 있습니다. (Visual Studio Community는 평가 기간 없이 무료로 제공됩니다. 그러나 [라이선스를 최신](signing-in-to-visual-studio.md)으로 유지하려면 정기적으로 [로그인](#update-a-stale-license)해야 합니다.)
 
 평가 기간이 종료한 후 Visual Studio를 계속 사용하려면 [온라인 구독](#use-an-online-subscription) 또는 [제품 키](#enter-a-product-key)를 사용하여 잠금을 해제합니다.
 
@@ -75,7 +75,7 @@ Visual Studio에 "라이선스가 만료될 예정이므로 업데이트해야 �
 * [문제 보고](how-to-report-a-problem-with-visual-studio.md) 도구를 사용하여 제품 문제를 보고합니다.
 * 구독, 계정 및 요금 청구 관련 질문에 대한 답변은 [구독 지원 FAQ](https://visualstudio.microsoft.com/subscriptions/support/)를 확인하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)
 * [Visual Studio 버전 비교](https://visualstudio.microsoft.com/vs/compare/)

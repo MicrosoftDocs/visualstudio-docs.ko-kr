@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633618"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 요소(MSBuild)
@@ -37,11 +37,11 @@ ms.locfileid: "77633618"
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
- 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 
@@ -51,9 +51,9 @@ ms.locfileid: "77633618"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[Item](../msbuild/item-element-msbuild.md)|빌드 프로세스에 대한 입력을 정의하는 사용자 정의 요소입니다.|
+|[항목](../msbuild/item-element-msbuild.md)|빌드 프로세스에 대한 입력을 정의하는 사용자 정의 요소입니다.|
 
 ## <a name="text-value"></a>텍스트 값
 
@@ -63,7 +63,7 @@ ms.locfileid: "77633618"
 
 ## <a name="example"></a>예제
 
- 다음 코드 예제에서는 `CSFile` 항목에 `fr` 값을 가진 `Culture` 메타데이터를 추가하는 방법을 보여 줍니다.
+ 다음 코드 예제에서는 `Culture` 항목에 `fr` 값을 가진 `CSFile` 메타데이터를 추가하는 방법을 보여 줍니다.
 
 ```xml
 <ItemGroup>
@@ -73,7 +73,7 @@ ms.locfileid: "77633618"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
-- [항목](../msbuild/msbuild-items.md)
+- [Items](../msbuild/msbuild-items.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633917"
 ---
 # <a name="how-to-clean-a-build"></a>방법: 빌드 정리
@@ -34,7 +34,7 @@ ms.locfileid: "77633917"
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. 디렉터리가 없는 경우 [MakeDir](../msbuild/makedir-task.md) 작업을 사용하여 디렉터리를 만듭니다. 예를 들어:
+2. 디렉터리가 없는 경우 [MakeDir](../msbuild/makedir-task.md) 작업을 사용하여 디렉터리를 만듭니다. 다음은 그 예입니다.
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -47,19 +47,19 @@ ms.locfileid: "77633917"
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>디렉터리에 포함된 디렉터리 및 모든 파일을 제거하려면
 
-- `RemoveDir` 작업을 사용하여 디렉터리를 제거합니다. 예를 들어:
+- `RemoveDir` 작업을 사용하여 디렉터리를 제거합니다. 다음은 그 예입니다.
 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>예제
 
- 다음 코드 예제 프로젝트는 `RemoveDir` 작업을 사용하여 디렉터리 및 모든 파일과 포함하는 디렉터리를 삭제하는 새 대상 `Clean`을 포함합니다. 또한 이 예제에서 `Compile` 대상은 빌드가 정리될 때 삭제된 출력 항목에 대한 별도 디렉터리를 만듭니다.
+ 다음 코드 예제 프로젝트는 `Clean` 작업을 사용하여 디렉터리 및 모든 파일과 포함하는 디렉터리를 삭제하는 새 대상 `RemoveDir`을 포함합니다. 또한 이 예제에서 `Compile` 대상은 빌드가 정리될 때 삭제된 출력 항목에 대한 별도 디렉터리를 만듭니다.
 
- `Compile`은 기본 대상으로 정의되므로 다른 대상 또는 대상을 지정하지 않으면 자동으로 사용됩니다. 명령줄 스위치 **-target**을 사용하여 다른 대상을 지정합니다. 예를 들어:
+ `Compile`은 기본 대상으로 정의되므로 다른 대상 또는 대상을 지정하지 않으면 자동으로 사용됩니다. 명령줄 스위치 **-target**을 사용하여 다른 대상을 지정합니다. 다음은 그 예입니다.
 
  `msbuild <file name>.proj -target:Clean`
 
- **-target** 스위치는 **-t**로 단축할 수 있으며 둘 이상의 대상을 지정할 수 있습니다. 예를 들어 대상 `Compile` 대신 `Clean` 대상을 사용하려면 다음을 입력합니다.
+ **-target** 스위치는 **-t**로 단축할 수 있으며 둘 이상의 대상을 지정할 수 있습니다. 예를 들어 대상 `Clean` 대신 `Compile` 대상을 사용하려면 다음을 입력합니다.
 
  `msbuild <file name>.proj -t:Clean;Compile`
 
@@ -103,7 +103,7 @@ ms.locfileid: "77633917"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MakeDir 작업](../msbuild/makedir-task.md)
 - [RemoveDir 작업](../msbuild/removedir-task.md)

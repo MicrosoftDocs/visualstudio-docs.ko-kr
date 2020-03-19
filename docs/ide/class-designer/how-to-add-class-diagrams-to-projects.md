@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588839"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>방법: 프로젝트에 클래스 다이어그램 추가
@@ -51,7 +51,7 @@ ms.locfileid: "75588839"
    > [!NOTE]
    > **클래스 다이어그램** 템플릿이 보이지 않으면 [단계를 따라](#install-the-class-designer-component) Visual Studio용 **클래스 디자이너** 구성 요소를 설치합니다.
 
-   클래스 디자이너에 클래스 다이어그램이 열립니다. 이 다이어그램은 **솔루션 탐색기**에 확장명이 *.cd*인 파일로 나타납니다. **도구 상자**에서 도형과 선을 다이어그램으로 끌어올 수 있습니다.
+   클래스 디자이너에 클래스 다이어그램이 열립니다. 이 다이어그램은 *솔루션 탐색기*에 확장명이 **.cd**인 파일로 나타납니다. **도구 상자**에서 도형과 선을 다이어그램으로 끌어올 수 있습니다.
 
 여러 클래스 다이어그램을 추가하려면 이 절차의 단계를 반복합니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "75588839"
 > [!NOTE]
 > .NET Core 프로젝트에서는 아직 클래스 디자이너를 사용할 수 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 클래스 디자이너를 사용하여 형식 만들기](how-to-create-types.md)
 - [방법: 기존 형식 보기](how-to-view-existing-types.md)

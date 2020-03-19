@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957710"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
@@ -38,13 +38,13 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 >
 > 아시다시피 Visual Studio는 프로젝트 파일을 직접 편집하는 수단을 제공합니다. 먼저 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택한 다음, 다시 마우스 오른쪽 단추로 클릭하고 **편집\<프로젝트 이름>** 을 선택하여 Visual Studio 편집기에서 프로젝트를 엽니다. 그런 다음, 편집을 하고 편집 내용을 저장하고 프로젝트를 한 번 더 마우스 오른쪽 단추로 클릭하고 **프로젝트 다시 로드**를 선택하며, 이때 편집기의 프로젝트 파일을 닫았는지 확인하라는 메시지도 나타납니다.
 >
-> 그러나 사용자 지정 명령을 개발할 때 이러한 모든 클릭은 지루할 수 있습니다. 더 효율적인 워크플로를 위해 Visual Studio에서 프로젝트를 로드하고 별도의 편집기에서 *.pyproj* 파일을 함께 엽니다(Visual Studio의 다른 인스턴스, Visual Studio Code, 메모장 등). 편집기에서 변경 내용을 저장하고 Visual Studio로 전환하면 Visual Studio가 변경 내용을 검색하고 프로젝트를 다시 로드할지 묻습니다.(**프로젝트\<이름>가 환경 외부에서 수정되었습니다.**) **다시 로드**를 선택하면 변경 내용이 한 단계 만에 즉시 적용됩니다.
+> 그러나 사용자 지정 명령을 개발할 때 이러한 모든 클릭은 지루할 수 있습니다. 더 효율적인 워크플로를 위해 Visual Studio에서 프로젝트를 로드하고 별도의 편집기에서 *.pyproj* 파일을 함께 엽니다(Visual Studio의 다른 인스턴스, Visual Studio Code, 메모장 등). 편집기에서 변경 내용을 저장하고 Visual Studio로 전환하면 Visual Studio가 변경 내용을 검색하고 프로젝트를 다시 로드할지 묻습니다.(**프로젝트\<이름>가 환경 외부에서 수정되었습니다.** ) **다시 로드**를 선택하면 변경 내용이 한 단계 만에 즉시 적용됩니다.
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>연습: 프로젝트 파일에 명령 추가
 
 사용자 지정 명령을 익히기 위해 이 섹션에서는 *python.exe*를 사용하여 프로젝트의 시작 파일을 실행하는 간단한 에제를 연습합니다. (그러한 명령은 **디버그** > **디버깅하지 않고 시작**을 사용하는 것과 같은 효과입니다.)
 
-1. **Python 애플리케이션** 템플릿을 사용하여 "Python-CustomCommands"라는 새 프로젝트를 만듭니다. ([빠른 시작: 프로세스를 아직 익히지 못한 경우 지침은 템플릿에서 Python 프로젝트 만들기](quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.)
+1. **Python 애플리케이션** 템플릿을 사용하여 "Python-CustomCommands"라는 새 프로젝트를 만듭니다. (프로세스를 아직 익히지 못한 경우 지침은 [빠른 시작: 템플릿에서 Python 프로젝트 만들기](quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.)
 
 1. *Python_CustomCommands.py*에서 `print("Hello custom commands")` 코드를 추가합니다.
 
@@ -60,9 +60,9 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
     </PropertyGroup>
     ```
 
-1. Visual Studio로 다시 전환하고 파일 변경에 관한 메시지가 표시될 때 **다시 로드**를 선택합니다. 그런 다음, 앞에서 추가한 줄은 PyLint 명령이 포함된 기본 `<PythonCommands>` 속성 그룹을 복제할 뿐이므로 **Python** 메뉴를 다시 확인하여 **PyLint 실행**이 여전히 거기에 표시된 유일한 항목인지 확인합니다. 
+1. Visual Studio로 다시 전환하고 파일 변경에 관한 메시지가 표시될 때 **다시 로드**를 선택합니다. 그런 다음, 앞에서 추가한 줄은 PyLint 명령이 포함된 기본 **속성 그룹을 복제할 뿐이므로**Python**메뉴를 다시 확인하여**PyLint 실행`<PythonCommands>`이 여전히 거기에 표시된 유일한 항목인지 확인합니다.
 
-1. 프로젝트 파일을 포함한 편집기로 전환하고 `<PropertyGroup>` 뒤에 다음 `<Target>` 정의를 추가합니다. 이 아티클의 뒷부분에서 설명하듯이, 이 `Target` 요소는 콘솔 창에서 *python.exe*를 사용하여 시작 파일("StartupFile" 속성에 의해 식별됨)을 실행하는 사용자 지정 명령을 정의합니다. 특성 `ExecuteIn="consolepause"`는 닫기 전에 키를 누르기를 기다리는 콘솔을 사용합니다.
+1. 프로젝트 파일을 포함한 편집기로 전환하고 `<Target>` 뒤에 다음 `<PropertyGroup>` 정의를 추가합니다. 이 아티클의 뒷부분에서 설명하듯이, 이 `Target` 요소는 콘솔 창에서 *python.exe*를 사용하여 시작 파일("StartupFile" 속성에 의해 식별됨)을 실행하는 사용자 지정 명령을 정의합니다. 특성 `ExecuteIn="consolepause"`는 닫기 전에 키를 누르기를 기다리는 콘솔을 사용합니다.
 
     ```xml
     <Target Name="Example_RunStartupFile" Label="Run startup file" Returns="@(Commands)">
@@ -131,26 +131,26 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 
 ### <a name="target-attributes"></a>대상 특성
 
-| 특성 | 필수 | 설명 |
+| attribute | 필수 | Description |
 | --- | --- | --- |
-| name | 예 | Visual Studio 프로젝트 내에서 명령에 대한 식별자입니다. 명렁을 Python 하위 메뉴에 표시하려면 이 이름을 명령에 대한 `<PythonCommands>` 속성 그룹에 추가해야 합니다. |
-| 레이블 | 예 | Python 하위 메뉴에 나타나는 UI 표시 이름입니다. |
-| 반환 값 | 예 | 대상을 명령으로 식별하는 `@(Commands)`를 포함해야 합니다. |
+| 속성 | yes | Visual Studio 프로젝트 내에서 명령에 대한 식별자입니다. 명렁을 Python 하위 메뉴에 표시하려면 이 이름을 명령에 대한 `<PythonCommands>` 속성 그룹에 추가해야 합니다. |
+| 레이블 | yes | Python 하위 메뉴에 나타나는 UI 표시 이름입니다. |
+| 반환 | yes | 대상을 명령으로 식별하는 `@(Commands)`를 포함해야 합니다. |
 
 ### <a name="createpythoncommanditem-attributes"></a>CreatePythonCommandItem 특성
 
 모든 특성 값은 대/소문자를 구분하지 않습니다.
 
-| 특성 | 필수 | 설명 |
+| attribute | 필수 | Description |
 | --- | --- | --- |
-| TargetType | 예 | 포함된 대상 특성 및 해당 특성이 Arguments 특성과 함께 사용되는 방법을 지정합니다.<ul><li>**실행 파일**: 대상에 이름이 지정된 실행 파일을 실행하여 인수의 값을 마치 명령줄에서 직접 입력한 것처럼 추가합니다. 값은 인수 없이 프로그램 이름만 포함해야 합니다.</li><li>**스크립트**: 대상에 파일 이름이 포함된 *python.exe*를 실행하면 인수의 값이 이어집니다.</li><li>**모듈**: `python -m` 뒤에 대상의 모듈 이름 및 그 뒤에 인수의 값을 실행합니다.</li><li>**코드**: 대상에 포함된 인라인 코드를 실행합니다. Arguments 값은 무시됩니다.</li><li>**pip**: 대상의 명령 및 그 뒤에 인수를 사용하여 `pip`를 실행합니다. ExecuteIn은 "output"으로 설정되지만 pip는 `install` 명령을 가정하고 대상을 패키지 이름으로 사용합니다.</li></ul> |
-| Target | 예 | TargetType에 따라 사용할 파일 이름, 모듈 이름, 코드 또는 pip 명령입니다. |
-| 인수 | Optional | 대상에 부여할 인수(있는 경우)의 문자열을 지정합니다. TargetType이 `script`이면 *python.exe*가 아닌 Python 프로그램에 인수가 지정됩니다. `code` TargetType에 대해서는 무시됩니다. |
-| ExecuteIn | 예 | 명령을 실행할 환경을 지정합니다.<ul><li>**콘솔**: (기본값) 대상 및 인수를 마치 명령줄에서 직접 입력한 것처럼 실행합니다. Target이 실행되는 동안 명령 창이 표시되었다가 자동으로 닫힙니다.</li><li>**consolepause**: 콘솔과 같지만 키 누르기를 기다렸다가 창을 닫습니다.</li><li>**출력**: 대상을 실행하고 그 결과를 Visual Studio의 **출력** 창에 표시합니다. TargetType이 "pip"인 경우 Visual Studio는 Target을 패키지 이름으로 사용하고 Arguments를 추가합니다.</li><li>**repl**: [Python 대화형](python-interactive-repl-in-visual-studio.md) 창에서 대상을 실행합니다. 창의 제목에 선택적 표시 이름이 사용됩니다.</li><li>**none**: console과 같이 동작합니다.</li></ul>|
-| 시작 위치 | Optional | 명령을 실행할 폴더입니다. |
-| ErrorRegex<br>WarningRegEx | Optional | ExecuteIn이 `output`인 경우에만 사용됩니다. 두 값 모두 Visual Studio가 명령 출력을 구문 분석하여 해당 **오류 목록** 창에 오류 및 경고를 표시하는 정규식을 지정합니다. 지정되지 않은 경우 이 명령은 **오류 목록** 창에 영향을 미치지 않습니다. Visual Studio에서 예상되는 내용에 대한 자세한 내용은 [명명된 캡처 그룹](#named-capture-groups-for-regular-expressions)을 참조하세요. |
-| RequiredPackages | Optional | [*requirements.txt*](https://pip.readthedocs.io/en/1.1/requirements.html)와 같은 형식을 사용하는 명령에 대한 패키지 요구 사항의 목록입니다(pip.readthedocs.io). 예를 들어 **PyLint 실행** 명령은 `pylint>=1.0.0`을 지정합니다. 명령을 실행하기 전에 Visual Studio은 목록의 모든 패키지가 설치되었는지 확인합니다. Visual Studio는 pip를 사용하여 누락된 패키지를 설치합니다. |
-| 환경 | Optional | 명령을 실행하기 전에 정의하는 환경 변수의 문자열입니다. 각 변수는 여러 변수를 세미콜론으로 구분하고 \<NAME>=\<VALUE> 양식을 사용합니다. 여러 값을 가진 변수는 'NAME=VALUE1;VALUE2'와 같이 홑따옴표 또는 따옴표로 둘러싸야 합니다. |
+| TargetType | yes | 포함된 대상 특성 및 해당 특성이 Arguments 특성과 함께 사용되는 방법을 지정합니다.<ul><li>**executable**: 대상에 이름 지정된 실행 파일을 실행하여 Arguments의 값을 마치 명령줄에서 직접 입력한 것처럼 추가합니다. 값은 인수 없이 프로그램 이름만 포함해야 합니다.</li><li>**script**: 대상에서 파일 이름이 포함된 *python.exe*를 실행하면 인수의 값이 이어집니다.</li><li>**module**: `python -m` 뒤에 Target의 모듈 이름 및 그 뒤에 Arguments의 값을 실행합니다.</li><li>**code**: Target에 포함된 인라인 코드를 실행합니다. Arguments 값은 무시됩니다.</li><li>**pip**: Target의 명령 및 그 뒤에 Arguments를 사용하여 `pip`를 실행합니다. ExecuteIn은 "output"으로 설정되지만 pip는 `install` 명령을 가정하고 Target을 패키지 이름으로 사용합니다.</li></ul> |
+| 대상 | yes | TargetType에 따라 사용할 파일 이름, 모듈 이름, 코드 또는 pip 명령입니다. |
+| 인수 | 옵션 | 대상에 부여할 인수(있는 경우)의 문자열을 지정합니다. TargetType이 `script`이면 *python.exe*가 아닌 Python 프로그램에 인수가 지정됩니다. `code` TargetType에 대해서는 무시됩니다. |
+| ExecuteIn | yes | 명령을 실행할 환경을 지정합니다.<ul><li>**console**: (기본값) Target 및 인수를 마치 명령줄에서 직접 입력한 것처럼 실행합니다. Target이 실행되는 동안 명령 창이 표시되었다가 자동으로 닫힙니다.</li><li>**consolepause**: 콘솔과 같지만 창을 닫기 전에 키를 누르기를 기다립니다.</li><li>**output**: 대상을 실행하고 그 결과를 Visual Studio의 **출력** 창에 표시합니다. TargetType이 "pip"인 경우 Visual Studio는 Target을 패키지 이름으로 사용하고 Arguments를 추가합니다.</li><li>**repl**: [Python 대화형](python-interactive-repl-in-visual-studio.md) 창에서 대상을 실행합니다. 창의 제목에 선택적 표시 이름이 사용됩니다.</li><li>**none**: console과 같이 동작합니다.</li></ul>|
+| WorkingDirectory | 옵션 | 명령을 실행할 폴더입니다. |
+| ErrorRegex<br>WarningRegEx | 옵션 | ExecuteIn이 `output`인 경우에만 사용됩니다. 두 값 모두 Visual Studio가 명령 출력을 구문 분석하여 해당 **오류 목록** 창에 오류 및 경고를 표시하는 정규식을 지정합니다. 지정되지 않은 경우 이 명령은 **오류 목록** 창에 영향을 미치지 않습니다. Visual Studio에서 예상되는 내용에 대한 자세한 내용은 [명명된 캡처 그룹](#named-capture-groups-for-regular-expressions)을 참조하세요. |
+| RequiredPackages | 옵션 | [*requirements.txt*](https://pip.readthedocs.io/en/1.1/requirements.html)와 같은 형식을 사용하는 명령에 대한 패키지 요구 사항의 목록입니다(pip.readthedocs.io). 예를 들어 **PyLint 실행** 명령은 `pylint>=1.0.0`을 지정합니다. 명령을 실행하기 전에 Visual Studio은 목록의 모든 패키지가 설치되었는지 확인합니다. Visual Studio는 pip를 사용하여 누락된 패키지를 설치합니다. |
+| Environment | 옵션 | 명령을 실행하기 전에 정의하는 환경 변수의 문자열입니다. 각 변수는 여러 변수를 세미콜론으로 구분하고 \<NAME>=\<VALUE> 양식을 사용합니다. 여러 값을 가진 변수는 'NAME=VALUE1;VALUE2'와 같이 홑따옴표 또는 따옴표로 둘러싸야 합니다. |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>정규식에 대해 이름 지정된 캡처 그룹
 
@@ -169,7 +169,7 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 C:  1, 0: Missing module docstring (missing-docstring)
 ```
 
-Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **오류 목록** 창에 표시하려면 **Pylint 실행** 명령에 대한 `WarningRegex` 값은 다음과 같습니다.
+Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **오류 목록** 창에 표시하려면 `WarningRegex`Pylint 실행**명령에 대한** 값은 다음과 같습니다.
 
 ```regex
 ^(?<filename>.+?)\((?<line>\d+),(?<column>\d+)\): warning (?<msg_id>.+?): (?<message>.+?)$]]
@@ -209,7 +209,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 > [!Note]
 > *.targets* 파일을 변경할 때마다 프로젝트 자체가 아닌 프로젝트를 포함한 *솔루션*을 다시 로드해야 합니다.
 
-## <a name="example-commands"></a>명령 예
+## <a name="example-commands"></a>예제 명령
 
 ### <a name="run-pylint-module-target"></a>PyLint 실행(모듈 대상)
 
@@ -240,7 +240,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 
 ### <a name="run-pip-install-with-a-specific-package-pip-target"></a>특정 패키지(pip 대상)를 사용하여 pip 설치 실행
 
-다음 명령은 **출력** 창에서 `pip install my-package`를 실행합니다. 패키지를 개발하고 설치를 테스트할 때 이런 명령을 사용할 수 있습니다. Target이 `install` 명령(`ExecuteIn="output"`을 사용할 때 가정됨) 대신 패키지 이름을 포함한다는 데 주목하십시오.
+다음 명령은 `pip install my-package`출력**창에서**를 실행합니다. 패키지를 개발하고 설치를 테스트할 때 이런 명령을 사용할 수 있습니다. Target이 `install` 명령(`ExecuteIn="output"`을 사용할 때 가정됨) 대신 패키지 이름을 포함한다는 데 주목하십시오.
 
 ```xml
 <PropertyGroup>
@@ -372,7 +372,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
   </Target>
 ```
 
-### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>메시지: "\<명령 이름>을 실행하는 동안 오류가 발생했습니다. 프로젝트에서 \<대상 이름> 명령을 가져오지 못했습니다.
+### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>메시지: \<명령 이름>을 실행하는 동안 오류가 발생했습니다. 프로젝트에서 \<대상 이름> 명령을 가져오지 못했습니다.
 
 `<Target>` 또는 `<CreatePythonCommandItem>` 요소의 내용이 잘못되었음을 나타냅니다. 가능한 이유:
 
@@ -380,7 +380,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 - 필수 `TargetType` 특성이 비어 있거나 인식되지 않는 값을 포함합니다.
 - 필수 `ExecuteIn` 특성이 비어 있거나 인식되지 않는 값을 포함합니다.
 - `ErrorRegex` 또는 `WarningRegex`는 설정 `ExecuteIn="output"` 없이 지정됩니다.
-- 요소에 인식되지 않는 특성이 존재합니다. `Arguments` 대신 `Argumnets`(철자 틀림)를 사용했을 수 있습니다.
+- 요소에 인식되지 않는 특성이 존재합니다. `Argumnets` 대신 `Arguments`(철자 틀림)를 사용했을 수 있습니다.
 
 정의되지 않은 특성을 참조하면 특성 값이 비어 있을 수 있습니다. 예를 들어 토큰 `$(StartupFile)`을 사용하지만 프로젝트에 시작 파일이 정의되어 있지 않으면 토큰이 빈 문자열로 확인됩니다. 그러한 경우 기본값을 정의하는 것이 좋습니다. 예를 들어 Bottle, Flask 및 Django 프로젝트 템플릿에 정의된 **Run server** 및 **Run debug server** 명령은 프로젝트 속성에 서버 시작 파일을 다른 방법으로 지정하지 않은 한 기본적으로 *manage.py*로 지정됩니다.
 

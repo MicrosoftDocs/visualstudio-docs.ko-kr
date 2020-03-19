@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272077"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터 문제 해결
@@ -27,7 +27,7 @@ ms.locfileid: "77272077"
 
  이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
 
-- [시작하기 전에](#BeforeYouStart)
+- [시작하기 전 주의 사항](#BeforeYouStart)
 
 - [에뮬레이터 설치 실패](#NoInstall)
 
@@ -61,7 +61,7 @@ ms.locfileid: "77272077"
 
 - [지원 리소스](#Support)
 
-## <a name="BeforeYouStart"></a> 시작하기 전에
+## <a name="BeforeYouStart"></a> 시작하기 전 주의 사항
  문제 해결을 시작하기 전에 다음 항목을 검토하는 것이 유용할 수 있습니다.
 
 - [Visual Studio Emulator for Android에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -175,7 +175,7 @@ ms.locfileid: "77272077"
 
      - 신뢰할 수 있는 실행 사용 안 함
 
-       자세한 내용은 이 문서를 참조하세요. Technet: Hyper-V: Hyper-V를 활성화하여 BIOS 오류를 해결하는 방법
+       자세한 내용은 다음 문서를 참조하세요. Technet: Hyper-V: Hyper-V를 사용하도록 설정하는 동안 BIOS 오류를 해결하는 방법
 
   5. 4GB 이상의 시스템 메모리가 있는지와 이 메모리가 다른 리소스 집약적 프로그램 및 프로세스에서 사용되고 있지 않은지 확인합니다.
 
@@ -193,7 +193,7 @@ ms.locfileid: "77272077"
 
    일반적으로 Windows 8 및 Hyper-V와 호환되도록 해당 소프트웨어를 업데이트하는 작업은 해당 제품 개발자가 진행해야 합니다.
 
-   다음 제품은 Windows 8 규정 준수를 위해 업그레이드가 필요할 수 있습니다. VirtualBox, Virtual PC 7, VMWare, 일부 VPN 클라이언트, 소프트웨어 방화벽, Cisco VPN 클라이언트 일부 버전 및 기타 가상화 시스템. 문제가 있을 수 있는 가상화 소프트웨어의 개발자에게 Windows 8 및 Hyper-V와 호환되도록 소프트웨어를 업그레이드하도록 권장하세요.
+   Windows 8 규정 준수를 위해 VirtualBox, Virtual PC 7, VMWare, 일부 VPN 클라이언트, 소프트웨어 방화벽, 일부 Cisco VPN 클라이언트 버전 및 기타 가상화 시스템의 업그레이드가 필요할 수 있습니다. 문제가 있을 수 있는 가상화 소프트웨어의 개발자에게 Windows 8 및 Hyper-V와 호환되도록 소프트웨어를 업그레이드하도록 권장하세요.
 
    *해결 방법*으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 애플리케이션을 사용하지 않도록 설정할 수 있습니다. 이러한 애플리케이션에는 다음이 포함될 수 있습니다.
 
@@ -239,7 +239,7 @@ ms.locfileid: "77272077"
 
      이 기법을 사용할 때의 단점은 새로운 타사 제품이 지원되지 않는 드라이버를 설치하거나, 에뮬레이터가 설치될 때마다 이러한 단계를 반복해야 한다는 것입니다.
 
-     타사 제품을 제거한 후 Windows Phone 에뮬레이터 내부 스위치를 복원해야 할 수 있습니다. 수행할 작업
+     타사 제품을 제거한 후 Windows Phone 에뮬레이터 내부 스위치를 복원해야 할 수 있습니다. 이러한 작업을 하려면 다음을 수행합니다.
 
   - Hyper-V를 열고 가상 스위치 관리자로 이동합니다. "Windows Phone 에뮬레이터 내부 스위치"라는 가상 스위치를 만들고 해당 연결 형식을 **내부 네트워크**로 설정합니다.
 
@@ -256,7 +256,7 @@ ms.locfileid: "77272077"
 
   이 문제를 해결하려면 마더보드의 BIOS 설정에서 USB3를 사용하지 않도록 설정하고 컴퓨터를 다시 부팅합니다. 그런 후 Gigabyte에서 이 마더보드의 BIOS에 대한 업데이트를 출시했는지 확인합니다.
 
-  자세한 내용은 다음 기술 자료 문서를 참조하세요. [Gigabyte 시스템에서 Hyper-V 역할을 설치한 후 부팅 오류](https://support.microsoft.com/en-us/kb/2693144).
+  자세한 내용은 기술 자료 문서 [Gigabyte 시스템에서 Hyper-V 역할을 설치한 후 부팅 오류 발생](https://support.microsoft.com/en-us/kb/2693144)을 참조하세요.
 
 ## <a name="ADB"></a> Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.
  에뮬레이터를 실행하고 있지만 ADB(Android 디버그 브리지)에 연결된 것으로 나타나지 않거나 ADB를 사용하는 Android 도구(예: Android Studio 또는 Eclipse)에 나타나지 않는 경우 에뮬레이터가 ADB를 찾는 위치를 조정해야 할 수 있습니다. 에뮬레이터는 레지스트리 키를 사용하여 Android SDK의 기본 위치를 식별하고 해당 디렉터리에서 \platform-tools\adb.exe 파일을 찾습니다. 에뮬레이터에서 사용하는 Android SDK 경로를 수정하려면
@@ -270,7 +270,7 @@ ms.locfileid: "77272077"
   에뮬레이터를 다시 시작하면 에뮬레이터가 ADB 및 관련 Android 도구에 연결되어 있는 것을 확인할 수 있어야 합니다.
 
 ## <a name="XamarinPlayer"></a> 에뮬레이터가 UDP 포트를 설정하지 못해서 중지됩니다.
- Xamarin Player와의 비호환성으로 인해 이 문제가 발생할 수 있습니다. 에뮬레이터가 응답하지 않거나 "에뮬레이터가 디바이스 운영 체제에 연결할 수 없음: UDP 포트를 설정할 수 없습니다.  일부 기능을 사용할 수 없습니다”와 같은 오류 메시지가 표시되는 경우 이 문제가 발생할 수 있습니다. 다음 단계를 수행합니다.
+ Xamarin Player와의 비호환성으로 인해 이 문제가 발생할 수 있습니다. 에뮬레이터가 응답하지 않거나 “에뮬레이터가 디바이스 운영 체제에 연결할 수 없음: UDP 포트를 설정할 수 없습니다.  일부 기능을 사용할 수 없습니다”와 같은 오류 메시지가 표시되는 경우 이 문제가 발생할 수 있습니다. 다음 단계를 수행합니다.
 
 1. Xamarin Player를 제거합니다.
 

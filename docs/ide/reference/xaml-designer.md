@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585615"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 디자이너 옵션 페이지
@@ -22,7 +22,7 @@ ms.locfileid: "75585615"
 **XAML 디자이너** 옵션 페이지를 사용하여 XAML 문서에서 요소와 특성의 서식을 설정하는 방법을 지정합니다. 이 페이지를 열려면 **도구** 메뉴를 선택한 다음 **옵션**을 선택합니다. **XAML 디자이너** 속성 페이지에 액세스하려면 **XAML 디자이너** 노드를 선택합니다. XAML 디자이너에 대한 설정은 문서를 열 때 적용됩니다. 따라서 설정을 변경하는 경우 변경 내용을 보려면 Visual Studio를 닫았다가 다시 열어야 합니다.
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [재설정 설정](../environment-settings.md#reset-settings)을 참조하세요.
+> 활성 설정 또는 버전에 따라 표시되는 대화 상자 및 메뉴 명령이 도움말에 설명된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [재설정 설정](../environment-settings.md#reset-settings)을 참조하세요.
 
 ## <a name="enable-xaml-designer"></a>XAML 디자이너 사용
 
@@ -48,7 +48,7 @@ ms.locfileid: "75585615"
 |-|-|
 |**세로**|XAML 뷰의 왼쪽에 XAML 소스가 나타나고 반대쪽에 XAML 디자이너가 나타납니다.|
 |**가로**|XAML 뷰의 맨 위에 XAML 디자이너가 나타나고 그 아래에 XAML 소스가 나타납니다.|
-|**기본**|XAML 문서에서 문서 프로젝트의 대상 플랫폼에 권장되는 분할 방향을 사용합니다. 대부분의 플랫폼에서는 **가로**에 해당합니다.|
+|**기본값**|XAML 문서에서 문서 프로젝트의 대상 플랫폼에 권장되는 분할 방향을 사용합니다. 대부분의 플랫폼에서는 **가로**에 해당합니다.|
 
 ## <a name="zoom-by-using"></a>다음을 사용하여 확대/축소
 
@@ -106,7 +106,7 @@ ms.locfileid: "75585615"
 |**효과 렌더링**|Blend를 통해 XAML 디자이너에서 XAML 파일을 편집할 때 효과가 렌더링되는지 여부를 지정합니다.|
 |**확대/축소 임계값**|**효과 렌더링** 확인란이 선택된 경우 효과가 렌더링되는 확대/축소 비율을 지정합니다. 이 설정을 초과하여 확대/축소하면 XAML 디자이너에서 효과가 더 이상 렌더링되지 않습니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [WPF의 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [연습: 내 첫 WPF 데스크톱 애플리케이션](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

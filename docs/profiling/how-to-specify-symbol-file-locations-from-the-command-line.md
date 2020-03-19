@@ -1,5 +1,5 @@
 ---
-title: '방법: 명령줄에서 기호 파일 위치 지정 | Microsoft Docs'
+title: '방법: 명령줄에서 기호 파일 위치 지정 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77476896"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>방법: 명령줄에서 기호 파일 위치 지정
@@ -60,6 +60,6 @@ ms.locfileid: "77476896"
   set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
  ```
 
- 다음 VSPerfReport 명령줄은 **/SymbolPath** 옵션을 사용하여 *C:\Projects\Symbols* 디렉터리를 검색 경로에 추가합니다.
+ 다음 VSPerfReport 명령줄은 */SymbolPath* 옵션을 사용하여 **C:\Projects\Symbols** 디렉터리를 검색 경로에 추가합니다.
 
  **VSPerfReport** *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

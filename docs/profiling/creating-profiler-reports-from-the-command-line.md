@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f28d7271fdf33822475a663debed269bb515959
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777779"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>명령줄에서 프로파일러 보고서 만들기
@@ -23,7 +23,7 @@ ms.locfileid: "74777779"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**기본 보고서를 만듭니다.** VSPerfReport 보고서 유형의 전체 또는 하위 집합을 만듭니다.|-   [기본 보고서 만들기](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|
 |**두 가지 프로파일링 데이터 파일을 비교합니다.** 두 가지 프로파일링 데이터 파일에서 성능 데이터를 비교하는 "diff" 보고서를 만듭니다.|-   [방법: 명령 프롬프트에서 프로파일러 비교 보고서 만들기](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|

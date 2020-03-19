@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279258"
 ---
 # <a name="parallelcustombuild-task"></a>ParallelCustomBuild 작업
@@ -32,13 +32,13 @@ ms.locfileid: "77279258"
 
 다음 표에서는 **ParallelCustomBuild** 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|선택적 **bool** 매개 변수입니다.|
 |**MaxItemsInBatch**|선택적 **int** 매개 변수입니다.|
 |**MaxProcesses**|선택적 **int** 매개 변수입니다.|
 |**Sources**|필수 **ITaskItem[]** 매개 변수입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [작업 참조](../msbuild/msbuild-task-reference.md)

@@ -23,10 +23,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113716"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio 제거
@@ -58,11 +58,11 @@ ms.locfileid: "76113716"
    ```
 
    > [!NOTE]
-   > 항상 `%ProgramFiles(x86)%\Microsoft Visual Studio`에 위치하는 Visual Studio 설치 관리자 디렉터리 아래에서 `InstallCleanup.exe`를 찾을 수 없는 경우 다음 단계를 수행합니다. 지침에 따라 [Visual Studio를 설치](install-visual-studio.md)합니다. 그런 다음 워크로드 선택 화면이 표시되면 창을 닫고 이 페이지의 단계를 다시 수행합니다.
+   > 항상 `InstallCleanup.exe`에 위치하는 Visual Studio 설치 관리자 디렉터리 아래에서 `%ProgramFiles(x86)%\Microsoft Visual Studio`를 찾을 수 없는 경우 다음 단계를 수행합니다. 지침에 따라 [Visual Studio를 설치](install-visual-studio.md)합니다. 그런 다음 워크로드 선택 화면이 표시되면 창을 닫고 이 페이지의 단계를 다시 수행합니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 설치](install-visual-studio.md)
 * [Visual Studio 업데이트](update-visual-studio.md)

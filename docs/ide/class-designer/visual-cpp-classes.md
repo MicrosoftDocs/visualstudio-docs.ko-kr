@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590737"
 ---
 # <a name="c-classes-in-class-designer"></a>클래스 디자이너의 C++ 클래스
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-클래스 B만 클래스 다이어그램으로 끌어 B에 대한 클래스 모양을 마우스 오른쪽 단추로 클릭한 다음 **기본 클래스 표시**를 클릭할 수도 있습니다. 그러면 기본 클래스가 다음으로 표시됩니다. 대답:
+클래스 B만 클래스 다이어그램으로 끌어 B에 대한 클래스 모양을 마우스 오른쪽 단추로 클릭한 다음 **기본 클래스 표시**를 클릭할 수도 있습니다. 그러면 기본 클래스가 A로 표시됩니다.
 
 ## <a name="multiple-inheritance"></a>다중 상속
 
@@ -93,7 +93,7 @@ class Swimmer
 
 이러한 선언을 클래스 다이어그램에 표시하면 클래스 이름 `Swimmer` 및 그 순수 가상 함수 `swim`은 **추상 클래스**라는 표기와 함께 가상 클래스 모양에 기울임꼴로 표시됩니다. 추상 클래스 형식 모양은 테두리가 점선인 점을 제외하고 일반 클래스와 동일합니다.
 
-추상 기본 클래스에서 파생 클래스는 기본 클래스의 각 순수 가상 함수를 재정의해야 합니다. 그렇지 않으면 파생 클래스를 인스턴스화할 수 없습니다. 따라서 예를 들어 `Swimmer` 클래스에서 `Fish` 클래스를 파생하면 `Fish`가 `swim` 메서드를 재정의해야 합니다.
+추상 기본 클래스에서 파생 클래스는 기본 클래스의 각 순수 가상 함수를 재정의해야 합니다. 그렇지 않으면 파생 클래스를 인스턴스화할 수 없습니다. 따라서 예를 들어 `Fish` 클래스에서 `Swimmer` 클래스를 파생하면 `Fish`가 `swim` 메서드를 재정의해야 합니다.
 
 ```cpp
 class Fish : public Swimmer
@@ -172,7 +172,7 @@ typedef struct
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 클래스<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 클래스<br /><br /> `C<T>`<br /><br /> 템플릿 클래스<br /><br /> `D`<br /><br /> 클래스<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [C++ 코드 사용](working-with-visual-cpp-code.md)
 - [클래스 및 구조체](/cpp/cpp/classes-and-structs-cpp)

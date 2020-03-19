@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: 데이터베이스 프로젝트에 대한 계층 상호 작용 측정값 수집 | Microsoft Docs'
+title: 'DA0030: 데이터베이스 프로젝트에 대한 계층 상호 작용 측정값 수집 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777478"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: 데이터베이스 개체의 계층 상호 작용 측정값 수집
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: 데이터베이스 프로젝트에 대한 계층 상호 작용 측정값 수집
 
 |||
 |-|-|
 |규칙 ID|DA0030|
-|범주|프로파일링 도구 사용|
+|Category|프로파일링 도구 사용|
 |프로파일링 방법|샘플링|
 |메시지|다계층 애플리케이션의 상호 작용 측정값을 수집하면 데이터베이스 사용 패턴과 주요 데이터 액세스 지연을 파악하는 데 도움이 됩니다. 계층 상호 작용 프로파일링 옵션을 사용하면서 애플리케이션을 다시 프로파일링해 보세요.|
 |규칙 유형|정보|

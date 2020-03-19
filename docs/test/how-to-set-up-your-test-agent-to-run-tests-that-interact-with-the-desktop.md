@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588969"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정
@@ -75,6 +75,6 @@ ms.locfileid: "75588969"
 
    이 테스트 에이전트에 대한 테스트 컨트롤러가 Team Foundation Server에 등록되어 있는 경우 대화형 프로세스로 실행되는 테스트 에이전트의 상태는 Microsoft Test Manager의 **랩 센터**에 있는 **컨트롤러** 뷰에 표시됩니다. 이 테스트 에이전트의 상태 앞에는 대화형 프로세스로 실행 중임을 나타내는 별표 기호가 추가됩니다. 이 테스트 에이전트를 다시 시작하려면 **컨트롤러** 보기가 아니라 컴퓨터에서 테스트 에이전트에 대해 실행되는 도구를 사용해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

@@ -1,5 +1,5 @@
 ---
-title: 'DA0001: 연결에 StringBuilder 사용 | Microsoft Docs'
+title: 'DA0001: 연결에 StringBuilder를 사용하십시오. | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,21 +15,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779508"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder 사용
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder를 사용하십시오.
 
 |||
 |-|-|
 |규칙 ID|DA0001|
-|범주|.NET Framework 사용|
+|Category|.NET Framework 사용|
 |프로파일링 방법|샘플링<br /><br /> 계측|
 |메시지|문자열 연결에 StringBuilder를 사용해 보세요.|
-|메시지 유형|경고|
+|메시지 유형|Warning|
 
 ## <a name="cause"></a>원인
  System.String.Concat 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 여러 세그먼트에서 문자열을 구성할 때 <xref:System.Text.StringBuilder> 클래스를 사용해 보세요.
@@ -42,4 +42,4 @@ ms.locfileid: "74779508"
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법
  **오류 목록** 창에서 메시지를 두 번 클릭하여 샘플링 프로필 데이터의 [함수 정보 뷰](../profiling/function-details-view.md)로 이동합니다. 문자열 연결을 가장 자주 사용하는 프로그램 섹션을 찾습니다. 빈번한 문자열 연결 작업을 포함하여 복잡한 문자열 조작에 StringBuilder 클래스를 사용합니다.
 
- 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](/previous-versions/msp-n-p/ff647790(v=pandp.10))의 [문자열 작업](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) 섹션을 참조하세요.
+ 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)의 [문자열 작업](/previous-versions/msp-n-p/ff647790(v=pandp.10)) 섹션을 참조하세요.

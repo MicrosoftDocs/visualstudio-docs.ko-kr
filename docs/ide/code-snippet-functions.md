@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594242"
 ---
 # <a name="code-snippet-functions"></a>코드 조각 함수
 
 세 가지 함수를 C# 코드 조각에 사용할 수 있습니다. 함수는 코드 조각의 [Function](../ide/code-snippets-schema-reference.md#function-element) 요소에 지정됩니다. 코드 조각을 만드는 방법에 대한 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.
 
-## <a name="functions"></a>함수
+## <a name="functions"></a>Functions
 
 다음 표에서는 코드 조각의 `Function` 요소에 사용할 수 있는 함수를 설명합니다.
 
-|기능|설명|언어|
+|함수|Description|언어|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|`EnumerationLiteral` 매개 변수로 지정된 열거형 멤버에 대한 switch 문과 case 문 집합을 생성합니다. `EnumerationLiteral` 매개 변수는 열거형 리터럴 또는 열거형 형식에 대한 참조여야 합니다.|C#|
 |`ClassName()`|삽입된 코드 조각을 포함하는 클래스의 이름을 반환합니다.|C#|
@@ -155,7 +155,7 @@ ms.locfileid: "75594242"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Function 요소](../ide/code-snippets-schema-reference.md#function-element)
 - [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)

@@ -13,16 +13,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590711"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094673"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
 이 문서에서는 관리 코드에 대한 Microsoft 단위 테스트 프레임워크 및 Visual Studio **테스트 탐색기**를 사용하여 일련의 단위 테스트를 생성, 실행 및 사용자 지정하는 방법을 안내합니다. 개발 중인 C# 프로젝트로 시작하여 해당 코드를 실행해 보는 테스트를 만들어 테스트를 실행하고 결과를 검사합니다. 그런 다음, 프로젝트 코드를 변경하고 테스트를 다시 실행합니다.
+
+
 
 ## <a name="create-a-project-to-test"></a>테스트할 프로젝트 만들기
 
@@ -41,7 +43,7 @@ ms.locfileid: "75590711"
    Bank 프로젝트가 만들어져 **솔루션 탐색기**에 표시되고 코드 편집기에 *Program.cs* 파일이 열립니다.
 
    > [!NOTE]
-   > *Program.cs*가 편집기에 열리지 않으면 **솔루션 탐색기**에서 *Program.cs* 파일을 두 번 클릭하여 엽니다.
+   > *Program.cs*가 편집기에 열리지 않으면 *솔루션 탐색기*에서 **Program.cs** 파일을 두 번 클릭하여 엽니다.
 
 ::: moniker-end
 
@@ -58,7 +60,7 @@ ms.locfileid: "75590711"
    Bank 프로젝트가 만들어져 **솔루션 탐색기**에 표시되고 코드 편집기에 *Program.cs* 파일이 열립니다.
 
    > [!NOTE]
-   > *Program.cs*가 편집기에 열리지 않으면 **솔루션 탐색기**에서 *Program.cs* 파일을 두 번 클릭하여 엽니다.
+   > *Program.cs*가 편집기에 열리지 않으면 *솔루션 탐색기*에서 **Program.cs** 파일을 두 번 클릭하여 엽니다.
 
 ::: moniker-end
 
@@ -132,7 +134,7 @@ ms.locfileid: "75590711"
    }
    ```
 
-6. **솔루션 탐색기**에서 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하여 파일의 이름을 *BankAccount.cs*로 바꿉니다.
+6. *솔루션 탐색기*에서 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하여 파일의 이름을 **BankAccount.cs**로 바꿉니다.
 
 7. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
@@ -311,7 +313,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 m_balance += amount;
 ```
 
-다음으로 바꿉니다.
+다음 구문으로 바꿉니다.
 
 ```csharp
 m_balance -= amount;
@@ -401,7 +403,7 @@ if (amount < 0)
 
 ### <a name="refactor-the-test-methods"></a>테스트 메서드 리팩터링
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>에 대한 호출을 제거하여 테스트 메서드를 리팩터링합니다. `try/catch` 블록에서 `Debit()`에 대한 호출을 래핑하고 예상되는 특정 예외를 catch한 다음, 연결된 메시지를 확인합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 메서드는 두 문자열을 비교하는 기능을 제공합니다.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>에 대한 호출을 제거하여 테스트 메서드를 리팩터링합니다. `Debit()` 블록에서 `try/catch`에 대한 호출을 래핑하고 예상되는 특정 예외를 catch한 다음, 연결된 메시지를 확인합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 메서드는 두 문자열을 비교하는 기능을 제공합니다.
 
 이제 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`는 다음과 같습니다.
 
@@ -433,7 +435,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 이것은 테스트 메서드의 버그입니다. 문제를 해결하려면 테스트 메서드 끝에 예외가 throw되지 않은 경우를 처리하도록 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션을 추가합니다.
 
-테스트를 다시 실행하여 올바른 예외가 catch되면 테스트가 *실패*한다는 점이 확인되었습니다. `catch` 블록은 예외를 catch하지만 메서드가 계속 실행되고 새로운 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션에서 실패합니다. 이 문제를 해결하려면 `catch` 블록에서 `StringAssert` 다음에 `return`문을 추가합니다. 테스트를 다시 실행하여 이 문제가 수정되었는지 확인합니다. `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`의 최종 버전은 다음과 같습니다.
+테스트를 다시 실행하여 올바른 예외가 catch되면 테스트가 *실패*한다는 점이 확인되었습니다. `catch` 블록은 예외를 catch하지만 메서드가 계속 실행되고 새로운 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션에서 실패합니다. 이 문제를 해결하려면 `return` 블록에서 `StringAssert` 다음에 `catch`문을 추가합니다. 테스트를 다시 실행하여 이 문제가 수정되었는지 확인합니다. `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`의 최종 버전은 다음과 같습니다.
 
 ```csharp
 [TestMethod]
@@ -467,6 +469,6 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 > [!TIP]
 > 이 연습에서는 관리 코드에 Microsoft 단위 테스트 프레임워크를 사용합니다. **테스트 탐색기**에서는 **테스트 탐색기**용 어댑터가 포함된 타사 단위 테스트 프레임워크의 테스트도 실행할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 명령줄에서 테스트를 실행하는 방법에 대한 자세한 내용은 [VSTest.Console.exe command-line 옵션](vstest-console-options.md)을 참조하세요.

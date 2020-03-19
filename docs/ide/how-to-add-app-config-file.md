@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593644"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>방법: C# 프로젝트에 애플리케이션 구성 파일 추가
@@ -39,7 +39,7 @@ C# 프로젝트에 애플리케이션 구성 파일(*app.config* 파일)을 추�
 
      *app.config*라는 파일을 프로젝트에 추가합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [애플리케이션 설정 관리(.NET)](../ide/managing-application-settings-dotnet.md)
 - [구성 파일 스키마(.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)

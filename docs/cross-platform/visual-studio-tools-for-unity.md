@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74797121"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -37,7 +37,7 @@ Unity 편집기는 게임 세계를 하나로 통합하는 데 탁월하지만, 
 
 ### <a name="intellisense-for-unity-messages"></a>Unity 메시지에 대한 IntelliSense
 
-IntelliSense 코드 완성을 사용하면 해당 매개 변수를 포함하여 `OnCollisionEnter`와 같은 [Unity API 메시지를 빠르고 쉽게 구현](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages)할 수 있습니다.
+IntelliSense 코드 완성을 사용하면 해당 매개 변수를 포함하여 [와 같은 ](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages)Unity API 메시지를 빠르고 쉽게 구현`OnCollisionEnter`할 수 있습니다.
 
 ### <a name="superior-debugging"></a>탁월한 디버깅
 

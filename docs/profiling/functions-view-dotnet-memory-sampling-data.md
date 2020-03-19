@@ -12,22 +12,22 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: cce13da0c2dfee61d70da8bc288d1f0ff4690deb
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74780041"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>함수 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집된 .NET 메모리 할당 프로파일링 데이터의 함수 뷰는 프로파일링 실행 중 메모리를 할당한 함수를 나열하고 할당의 크기와 수를 보고합니다.
 
-|Column|설명|
+|열|Description|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
 |**모듈 이름**|함수가 포함된 모듈의 이름입니다.|
 |**모듈 경로**|함수가 포함된 모듈의 경로입니다.|
-|**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|
+|**원본 파일**|이 함수의 정의가 포함된 소스 파일입니다.|
 |**함수 이름**|함수의 정규화된 이름입니다.|
 |**함수 줄 번호**|소스 파일에서 이 함수가 시작되는 줄 번호입니다.|
 |**함수 주소**|함수의 주소입니다.|

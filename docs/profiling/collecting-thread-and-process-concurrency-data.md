@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e8fda0300aad4a331366fac0a9ebd1b559cecc9d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779521"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>스레드 및 프로세스 동시성 데이터 수집
@@ -36,7 +36,7 @@ Visual Studio 프로파일링 도구의 동시성 프로파일링 방법을 사�
 
 다음 표의 작업에서는 동시성 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**일반** 페이지에서 생성된 프로파일링 데이터(.vsp) 파일에 대한 이름 지정 세부 정보를 지정합니다.|- [방법: 성능 데이터 파일 이름 옵션 설정](../profiling/how-to-set-performance-data-file-name-options.md)|
 |**시작** 페이지에서 코드 솔루션에.여러 .exe 프로젝트가 있는 경우 시작할 애플리케이션을 지정합니다.|- [방법: 시작할 이진 파일 지정](../profiling/how-to-specify-the-binary-to-start.md)|

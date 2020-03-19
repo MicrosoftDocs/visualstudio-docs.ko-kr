@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585719"
 ---
 # <a name="refactor-code"></a>코드 리팩터링
@@ -29,7 +29,7 @@ Visual Studio에서 다양한 프로그래밍 언어에 다양한 리팩터링 �
 - C++ 코드 리팩터링에 대한 자세한 내용은 [코드(C++) 작성 및 리팩터링](/cpp/ide/writing-and-refactoring-code-cpp)을 참조하세요.
 - F#에 대한 리팩터링 지원은 타사 Visual Studio 확장인 [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools)에서 제공됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빠른 작업](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

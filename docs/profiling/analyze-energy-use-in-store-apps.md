@@ -15,10 +15,10 @@ ms.workload:
 - uwp
 monikerRange: vs-2017
 ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73144738"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
@@ -96,7 +96,7 @@ if (performance && performance.mark) {
 2. **에너지 소비** 를 선택한 다음 **시작**을 선택합니다.
 
     > [!NOTE]
-    > **에너지 소비** 프로파일러를 시작하면 *VsEtwCollector.exe* 실행 권한을 요청하는 **사용자 계정 제어** 창이 나타날 수 있습니다. **예**를 선택합니다.
+    > **에너지 소비** 프로파일러를 시작하면 **VsEtwCollector.exe** 실행 권한을 요청하는 *사용자 계정 제어* 창이 나타날 수 있습니다. **예**를 선택합니다.
 
 3. 데이터를 수집하려면 앱을 실행합니다.
 
@@ -104,7 +104,7 @@ if (performance && performance.mark) {
 
      ![데이터 수집 중지](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
-     Visual Studio에서 수집된 데이터를 분석하고 결과를 표시합니다.
+     Visual Studio에서는 수집된 데이터를 분석하고 결과를 표시합니다.
 
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>설치된 에너지 프로파일 데이터 수집
  에너지 소비 도구는 Visual Studio 솔루션에서 시작하거나 Microsoft Store에서 설치하는 UWP 앱에서만 실행할 수 있습니다. 솔루션을 Visual Studio에서 열 경우 기본 대상은 **시작 프로젝트**입니다. 설치된 앱을 대상으로 하려면
@@ -150,7 +150,7 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>기타 리소스
 
-- [C#/VB/C++ 및 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\))의 **연결 상태 및 비용 관리** 섹션에서는 앱이 네트워크 트래픽 비용을 최소화하는 데 사용할 수 있는 네트워크 연결 정보를 제공하는 Windows API에 대해 설명합니다.
+- **C#/VB/C++ 및 XAML**의 [연결 상태 및 비용 관리](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 섹션에서는 앱이 네트워크 트래픽 비용을 최소화하는 데 사용할 수 있는 네트워크 연결 정보를 제공하는 Windows API에 대해 설명합니다.
 
    UWP 앱에 대한 Visual Studio 시뮬레이터를 사용하여 네트워크 정보 API의 데이터 연결 속성을 시뮬레이션할 수 있습니다. [시뮬레이터에서 UWP 앱 실행](../debugger/run-windows-store-apps-in-the-simulator.md)을 참조하세요.
 

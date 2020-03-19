@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596049"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306934"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE 시작 | Visual Basic
 
-Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
+Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio에서는 대부분의 IDE가 제공하는 표준 편집기 및 디버거를 능가하여 컴파일러, 코드 완성 도구, 그래픽 디자이너 및 소프트웨어 개발 프로세스를 간편하게 하는 많은 기능을 포함합니다.
 
 ::: moniker range="vs-2017"
 
@@ -44,11 +44,11 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드�
 
 - [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
-## <a name="editions"></a>버전
+## <a name="editions"></a>에디션
 
-Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2017에 중점을 둡니다.
+Visual Studio는 Windows 및 Mac에 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2017에 중점을 둡니다.
 
-세 가지 Visual Studio 2017 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+Visual Studio 2017에는 Community, Professional 및 Enterprise의 세 가지 버전이 있습니다. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ## <a name="popular-productivity-features"></a>주요 생산성 향상 기능
 
@@ -447,7 +447,7 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType>은 인쇄 후 줄 종결자를 추가하지 않는다는 점에서 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>과 약간 다릅니다. 즉, 출력으로 전송되는 다음 텍스트가 같은 줄에 인쇄됩니다. 코드에서 이러한 각 메서드 위로 마우스를 가져가면 설명을 볼 수 있습니다.
 
-7. 다음으로, 리팩터링을 다시 사용하여 코드를 좀 더 간결하게 만듭니다. `Dim now = Date.Now` 줄에서 변수 `now`를 클릭합니다.
+7. 다음으로, 리팩터링을 다시 사용하여 코드를 좀 더 간결하게 만듭니다. `now` 줄에서 변수 `Dim now = Date.Now`를 클릭합니다.
 
    해당 줄의 여백에 작은 스크루드라이버 아이콘이 나타납니다.
 
@@ -509,7 +509,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 추가 기능](../../ide/advanced-feature-overview.md)을 검색하세요.
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)을 방문하세요.

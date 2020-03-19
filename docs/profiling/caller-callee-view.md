@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bab816a0b71adef190a7d919b5ada7138a6a0e7c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779716"
 ---
 # <a name="callercallee-view"></a>호출자/호출 수신자 뷰
@@ -36,7 +36,7 @@ ms.locfileid: "74779716"
 
  뷰의 다른 두 부분에 나열되는 함수 중 하나를 두 번 클릭하여 다른 함수를 선택하면 보고서 뷰의 가운데 부분에 현재 함수가 표시되도록 할 수 있습니다. 보고서 뷰는 자동으로 업데이트되어 변경 내용을 반영합니다.
 
- 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.
+ 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 - [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)

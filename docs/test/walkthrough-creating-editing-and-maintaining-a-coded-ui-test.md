@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592063"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
@@ -123,7 +123,7 @@ ms.locfileid: "75592063"
 
 1. **UIMap – 코딩된 UI 테스트 빌더** 대화 상자에서 **기록 시작**을 선택합니다.
 
-     ![기록 시작](../test/media/cuit_builder_record.png)
+     ![녹화 시작](../test/media/cuit_builder_record.png)
 
      필요한 경우, 예를 들어 들어오는 메일을 처리해야 하는 경우 기록을 일시 중지할 수 있습니다.
 
@@ -192,7 +192,7 @@ ms.locfileid: "75592063"
 
 8. Microsoft Visual Studio 대화 상자가 표시됩니다. 메서드가 *UIMap.uitest* 파일에서 *UIMap.cs* 파일로 이동하며 더 이상 코딩된 UI 테스트 편집기를 사용하여 메서드를 편집할 수 없다는 경고가 나타납니다. **예**를 선택합니다.
 
-     테스트 메서드가 *UIMap.uitest* 파일에서 제거되고 더 이상 UI 작업 창에 표시되지 않습니다. 이동한 테스트 파일을 편집하려면 **솔루션 탐색기**에서 *UIMap.cs* 파일을 엽니다.
+     테스트 메서드가 *UIMap.uitest* 파일에서 제거되고 더 이상 UI 작업 창에 표시되지 않습니다. 이동한 테스트 파일을 편집하려면 *솔루션 탐색기*에서 **UIMap.cs** 파일을 엽니다.
 
 9. Visual Studio 도구 모음에서 **저장**을 선택합니다.
 
@@ -314,7 +314,7 @@ ms.locfileid: "75592063"
 
      이제 새로 매핑된 컨트롤을 사용하도록 코딩된 UI 테스트를 수정할 수 있습니다. 이전 프로시저에서 언급했듯이 코딩된 UI 테스트에서 메서드나 속성을 재정의하려는 경우에는 *UIMap.cs* 파일에서 재정의해야 합니다.
 
-12. *UIMap.cs* 파일에서 생성자를 추가하고 `"buttonA":` 값을 가진 `AutomationID` 속성을 사용하도록 `UIStartButton` 속성의 `SearchProperties` 속성을 지정합니다.
+12. *UIMap.cs* 파일에서 생성자를 추가하고 `SearchProperties` 값을 가진 `UIStartButton` 속성을 사용하도록 `AutomationID` 속성의 `"buttonA":` 속성을 지정합니다.
 
     ```csharp
     public UIMap()
@@ -329,7 +329,7 @@ ms.locfileid: "75592063"
 
      이번에는 코딩된 UI 테스트가 테스트의 모든 단계를 성공적으로 수행합니다. **테스트 결과** 창에서 **성공**의 상태가 표시됩니다.
 
-## <a name="videos"></a>비디오
+## <a name="videos"></a>동영상
 
 ![비디오 링크](../data-tools/media/playvideo.gif) [코딩된 UI 테스트 시작](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
@@ -337,7 +337,7 @@ ms.locfileid: "75592063"
 
 [코딩된 UI 테스트 FAQ](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

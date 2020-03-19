@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568908"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio에서 추상 클래스 구현
@@ -22,7 +22,7 @@ ms.locfileid: "75568908"
 
 - Visual Basic
 
-**내용:** 추상 클래스를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다.
+**대상:** 추상 클래스를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 추상 클래스에서 상속하려고 합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "75568908"
 
        ![클래스 구현 결과 VB](media/abstract-result-vb.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)
