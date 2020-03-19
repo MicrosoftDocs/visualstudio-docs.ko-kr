@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596465"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>방법: 분석을 위한 부하 테스트 결과 액세스
@@ -39,7 +39,7 @@ ms.locfileid: "75596465"
 
 3. **부하 테스트 결과를 찾을 컨트롤러 이름 입력**에서 컨트롤러를 선택합니다. **\<<로컬> – 컨트롤러 없음**을 선택하여 로컬로 저장된 결과에 액세스합니다.
 
-4. **다음 부하 테스트의 결과 표시**에서 해당 결과를 보려는 부하 테스트를 선택합니다. 모든 테스트의 결과를 보려면 **\<모든 테스트에 대한 결과 표시>** 를 선택합니다.
+4. **다음 부하 테스트의 결과 표시**에서 결과를 볼 부하 테스트를 선택합니다. 모든 테스트의 결과를 보려면 **\<모든 테스트에 대한 결과 표시>** 를 선택합니다.
 
      사용 가능한 부하 테스트 결과는 **부하 테스트 결과** 목록에 나타납니다. 여기에는 **시간**, **지속 시간**, **사용자**, **결과**, **테스트** 및 **설명** 열이 있습니다. **테스트**에는 테스트의 이름이 들어 있고 **설명**에는 테스트를 실행하기 전에 추가한 설명(선택 사항)이 들어 있습니다.
 
@@ -52,6 +52,6 @@ ms.locfileid: "75596465"
 
      **결과 열기 및 관리** 대화 상자에서 부하 테스트 결과 가져오기, 내보내기 및 제거를 비롯하여 부하 테스트 결과의 다양한 특성을 관리할 수 있습니다. 자세한 내용은 [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

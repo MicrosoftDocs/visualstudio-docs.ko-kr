@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589645"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
@@ -126,7 +126,7 @@ ms.locfileid: "75589645"
 
 16. 두 링크를 모두 시도합니다. "성공"이라는 메시지를 각각 표시해야 합니다. Dynamic querystring parameter was found."라는 메시지가 나타납니다.
 
-     ![웹 앱 실행](../test/media/web_test_dynamicparameter_runapp.png)
+     ![웹앱 실행](../test/media/web_test_dynamicparameter_runapp.png)
 
      ![성공&#33;](../test/media/web_test_dynamicparameter_runapp2.png)
 
@@ -158,7 +158,7 @@ ms.locfileid: "75589645"
 
 7. ASPQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 자동으로 검색되었습니다. 그러나 JScriptQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 검색되지 않습니다.
 
-     *Querystring.aspx*에 추출 규칙을 추가하려면 **확인**을 선택하고, ASPQuery 페이지에 바인딩합니다.
+     **Querystring.aspx**에 추출 규칙을 추가하려면 *확인*을 선택하고, ASPQuery 페이지에 바인딩합니다.
 
      ![검색된 동적 매개 변수 승격](../test/media/web_test_dynamicparameter_promotedialog.png)
 
@@ -237,7 +237,7 @@ ms.locfileid: "75589645"
 
      ![텍스트를 매개 변수로 대체](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     *JScriptQuery.aspx* 요청 아래의 QueryString 매개 변수는 새 컨텍스트 매개 변수:  CustomQueryString=jScriptQueryString___{{Param0}}을 사용하여 업데이트되어있습니다.
+     *JScriptQuery.aspx* 요청 아래의 QueryString 매개 변수는 새 컨텍스트 매개 변수인 CustomQueryString=jScriptQueryString___{{Param0}}을 사용하여 업데이트되어 있습니다.
 
      ![querystring에 적용된 매개 변수](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,7 +249,7 @@ ms.locfileid: "75589645"
 
 ## <a name="qa"></a>Q&A
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q: 내 웹앱이 수정되었다면 동적 매개 변수 검색을 다시 실행할 수 있습니까?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q: 웹 응용 프로그램이 수정되었다면 동적 매개 변수 디텍션을 다시 실행할 수 있습니까?
 
 **A:** 예, 다음 절차를 수행합니다.
 
@@ -263,6 +263,6 @@ ms.locfileid: "75589645"
 
 2. 자동으로 연관시킬 동적 매개 변수의 옆에 있는 확인란을 선택하거나 선택 취소합니다. 기본적으로 모든 동적 매개 변수가 선택됩니다.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q: 동적 매개 변수를 검색하려면 Visual Studio를 구성해야 하나요?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q: 동적 매개 변수를 검색하려면 Visual Studio를 구성해야 합니까?
 
 **A:** 기본 Visual Studio 구성에서는 웹 성능 테스트를 기록할 때 동적 매개 변수를 검색합니다. 하지만 Visual Studio 옵션에서 동적 매개 변수를 검색하지 않도록 구성했거나 테스트 중인 웹 애플리케이션이 추가 동적 매개 변수로 수정된 경우 웹 성능 테스트 편집기에서 동적 매개 변수 검색을 실행할 수 있습니다.

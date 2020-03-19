@@ -1,6 +1,6 @@
 ---
 title: R에 대한 도움말 창
-description: R에 대한 도움말은 ? 명령을 통해 Visual Studio의 대화형 창에 직접 통합됩니다.
+description: R에 대한 도움말은 ? 선택합니다.
 ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950558"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Visual Studio용 R 도구의 도움말
 
-R에 대한 도움말은 Visual Studio의 대화형 창에 직접 통합됩니다. `?mtcars` 등의 `?` 명령을 사용할 때마다 R 설명서의 도움말이 Visual Studio 창에 나타납니다.
+R에 대한 도움말은 Visual Studio의 대화형 창에 직접 통합됩니다. `?` 등의 `?mtcars` 명령을 사용할 때마다 R 설명서의 도움말이 Visual Studio 창에 나타납니다.
 
 ![Visual Studio의 도움말 창](media/help-window.png)
 
@@ -60,4 +60,4 @@ R 설명서를 검색할 뿐 아니라 개발자는 코드를 작성하는 동�
 
 ![F1 웹 검색 문자열 옵션 변경](media/options-dialog.png)
 
-브라우저에서 결과를 표시하려는 경우 [옵션](options-for-r-tools-in-visual-studio.md)에 설명된 대로 **F1 웹 브라우저** 옵션을 변경합니다.
+브라우저에서 결과를 표시하려는 경우 **옵션**에 설명된 대로 [F1 웹 브라우저](options-for-r-tools-in-visual-studio.md) 옵션을 변경합니다.

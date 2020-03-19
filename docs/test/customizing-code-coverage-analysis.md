@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918643"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
@@ -111,12 +111,12 @@ ms.locfileid: "75918643"
 | CompanyName | **회사** 특성으로 어셈블리를 찾습니다. |
 | PublicKeyToken | 퍼블릭 키 토큰으로 서명된 어셈블리를 찾습니다. |
 | 원본 | 요소가 정의된 소스 파일의 경로 이름으로 요소를 찾습니다. |
-| 특성 | 지정된 특성이 있는 요소를 찾습니다. 특성의 전체 이름을 지정합니다(예: `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 특성을 제외하면 `async`, `await`, `yield return` 및 자동 구현 속성과 같은 언어 기능을 사용하는 코드가 코드 검사 분석에서 제외됩니다. 실제로 생성된 코드를 제외하려면 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성만 제외합니다. |
-| 기능 | 매개 변수 목록을 포함하여 정규화된 이름으로 프로시저, 함수 또는 메서드를 찾습니다. [정규식](#regular-expressions)을 사용하여 이름의 일부를 찾을 수도 있습니다.<br/><br/>예:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);`(C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
+| attribute | 지정된 특성이 있는 요소를 찾습니다. 특성의 전체 이름을 지정합니다(예: `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 특성을 제외하면 `async`, `await`, `yield return` 및 자동 구현 속성과 같은 언어 기능을 사용하는 코드가 코드 검사 분석에서 제외됩니다. 실제로 생성된 코드를 제외하려면 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성만 제외합니다. |
+| 함수 | 매개 변수 목록을 포함하여 정규화된 이름으로 프로시저, 함수 또는 메서드를 찾습니다. [정규식](#regular-expressions)을 사용하여 이름의 일부를 찾을 수도 있습니다.<br/><br/>예제:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>정규식
 
-Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식을 사용합니다. 모든 일치 항목은 대소문자를 구분하지 않습니다. 몇 가지 예는 다음과 같습니다.
+Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식을 사용합니다. 모든 일치 항목은 대소문자를 구분하지 않습니다. 예는 다음과 같습니다.
 
 - **.\*** 은(는) 모든 문자의 문자열과 일치합니다.
 
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [실행 설정 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

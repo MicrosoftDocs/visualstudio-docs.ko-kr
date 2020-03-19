@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596725"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio에서 자주 사용되는 바로 가기 키
@@ -21,7 +21,7 @@ ms.locfileid: "75596725"
 ‘전역’ 컨텍스트는 Visual Studio의 모든 도구 창에서 바로 가기를 적용할 수 있음을 의미합니다. 
 
 > [!NOTE]
-> **옵션** 대화 상자를 열고 **환경** 노드를 확장한 다음 [키보드](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)를 선택하여 모든 명령의 **바로 가기를 확인**할 수 있습니다.
+> [옵션](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) 대화 상자를 열고 **환경** 노드를 확장한 다음 **키보드**를 선택하여 모든 명령의 **바로 가기를 확인**할 수 있습니다.
 
 ## <a name="build"></a>빌드
 
@@ -32,7 +32,7 @@ ms.locfileid: "75596725"
 |빌드.컴파일|**Ctrl+F7**[전역]|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**[전역]|
 
-## <a name="debug"></a>Debug
+## <a name="debug"></a>디버그
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------| - |
@@ -119,7 +119,7 @@ ms.locfileid: "75596725"
 |파일.선택한항목저장|**Ctrl+S**[전역]|
 |파일.브라우저에서보기|**Ctrl+Shift+W**[전역]|
 
-## <a name="project"></a>프로젝트
+## <a name="project"></a>Project
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------| - |
@@ -138,7 +138,7 @@ ms.locfileid: "75596725"
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**[전역]|
 
-## <a name="view"></a>View
+## <a name="view"></a>보기
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------| - |
@@ -159,7 +159,7 @@ ms.locfileid: "75596725"
 |보기.코드보기|**Enter**[클래스 다이어그램]<br /><br />또는 **F7**[설정 디자이너]|
 |보기.디자이너보기|**Shift+F7**[HTML 편집기 소스 뷰]|
 
-## <a name="window"></a>창
+## <a name="window"></a>시간 범위
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------| - |
@@ -169,7 +169,7 @@ ms.locfileid: "75596725"
 |창.다음문서창으로이동|**Ctrl+Tab**[전역]|
 |창.다음분할창|**F6**[전역]|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 바로 가기 키 확인 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Visual Studio의 모든 바로 가기 키](default-keyboard-shortcuts-in-visual-studio.md)

@@ -9,10 +9,10 @@ ms.technology: vs-azure
 ms.workload:
 - azure
 ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75916956"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
@@ -26,11 +26,11 @@ Visual Studio Kubernetes 도구는 Kubernetes를 대상으로 하는 컨테이�
 이 새로운 기능을 활용하려면 다음 조건을 충족해야 합니다.
 
 ::: moniker range="vs-2017"
-- *ASP.NET 및 웹 개발* 워크로드가 있는 최신 버전의 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+- [ASP.NET 및 웹 개발](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 워크로드가 있는 최신 버전의 *Visual Studio 2017*
 - 별도의 다운로드로 제공되는 [Kubernetes tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)
 ::: moniker-end
 ::: moniker range="vs-2019"
-- *ASP.NET 및 웹 개발* 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)입니다.
+- [ASP.NET 및 웹 개발](https://visualstudio.microsoft.com/downloads) 워크로드가 있는 *Visual Studio 2019*
 ::: moniker-end
 - Docker 이미지를 빌드하거나, 로컬에서 실행 중인 Docker 컨테이너를 디버그하거나, AKS에 게시하려는 경우 Visual Studio를 실행하는 개발 워크스테이션에 설치된 [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows). Azure Dev Spaces를 사용하여 AKS에서 Docker 컨테이너를 빌드하고 디버그하는 경우에는 Docker가 필요하지 ‘않습니다’. 
 ::: moniker range="vs-2017"
@@ -38,7 +38,7 @@ Visual Studio Kubernetes 도구는 Kubernetes를 대상으로 하는 컨테이�
 
     1. 별도의 다운로드로 제공되는 [AKS 게시 도구](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)
 
-    1. Azure Kubernetes Service 클러스터. 자세한 내용은 [AKS 클러스터 만들기](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster)를 참조하세요. 개발 워크스테이션에서 [클러스터에 연결](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)해야 합니다.
+    1. Azure Kubernetes Service 클러스터입니다. 자세한 내용은 [AKS 클러스터 만들기](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster)를 참조하세요. 개발 워크스테이션에서 [클러스터에 연결](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)해야 합니다.
 
     1. 개발 워크스테이션에 설치된 Helm CLI. 자세한 내용은 [Helm 설치](https://github.com/kubernetes/helm/blob/master/docs/install.md)를 참조하세요.
 
@@ -145,7 +145,7 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
    ![Azure AKS에 게시 메뉴 항목 스크린샷](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. 방금 만든 ACR 게시 프로필과 함께 해당 구독과 AKS 클러스터를 선택합니다. 그런 다음 **확인**을 클릭합니다.
+4. 방금 만든 ACR 게시 프로필과 함께 해당 구독과 AKS 클러스터를 선택합니다. 그런 후 **OK**를 클릭합니다.
 
    ![AKS에 게시 화면 스크린샷](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
@@ -165,7 +165,7 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
 ::: moniker-end
 
-지금까지 이제 모든 Kubernetes 앱 개발에서 Visual Studio의 전체 기능을 사용할 수 있습니다.
+축하합니다! 이제 모든 Kubernetes 앱 개발에서 Visual Studio의 전체 기능을 사용할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594762"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정
@@ -28,21 +28,21 @@ ms.locfileid: "75594762"
 
 - 테스트 컨트롤러: *QTController.exe.config*
 
-    |키 이름|설명|값|
+    |키 이름|Description|값|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|에이전트 ping 요청을 기다릴 시간(초)으로, 이후에는 연결이 끊어진 것으로 간주됩니다.|"n"초|
     |AgentSyncTimeoutInSeconds|동기화 테스트 실행을 시작할 때 모든 에이전트가 동기화되기를 기다릴 시간(초)으로, 이후에는 실행이 중단됩니다.|"n"초|
-    |AgentInitializeTimeout|테스트 실행 시작 시 모든 에이전트 및 해당 데이터 수집기가 초기화되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 중단됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분).|
-    |AgentCleanupTimeout|모든 에이전트 및 해당 데이터 수집기가 정리되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 완료됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분).|
+    |AgentInitializeTimeout|테스트 실행 시작 시 모든 에이전트 및 해당 데이터 수집기가 초기화되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 중단됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분)|
+    |AgentCleanupTimeout|모든 에이전트 및 해당 데이터 수집기가 정리되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 완료됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분)|
 
 - 테스트 에이전트: *QTAgentService.exe.config*
 
-    |키 이름|설명|값|
+    |키 이름|Description|값|
     |-|-----------------|-|
-    |ControllerConnectionPeriodInSeconds|컨트롤러에 연결을 시도할 간격을 나타내는 시간(초)입니다.|"n"초 기본값: "30"(30초).|
-    |RemotingTimeoutSeconds|원격 호출이 지속될 수 있는 최대 시간(초)입니다.|"n"초 기본값: "600"(10).|
-    |StopTestRunCallTimeoutInSeconds|호출을 통해 테스트 실행이 중지되기를 기다릴 시간(초)입니다.|"n"초 기본값: "120"(2분).|
-    |GetCollectorDataTimeout|데이터 수집기를 기다릴 시간(초)입니다.|"n"초 기본값: "300"(5분).|
+    |ControllerConnectionPeriodInSeconds|컨트롤러에 연결을 시도할 간격을 나타내는 시간(초)입니다.|"n"초 기본값: "30"(30초)|
+    |RemotingTimeoutSeconds|원격 호출이 지속될 수 있는 최대 시간(초)입니다.|"n"초 기본값: "600"(10분)|
+    |StopTestRunCallTimeoutInSeconds|호출을 통해 테스트 실행이 중지되기를 기다릴 시간(초)입니다.|"n"초 기본값: "120"(2분)|
+    |GetCollectorDataTimeout|데이터 수집기를 기다릴 시간(초)입니다.|"n"초 기본값: "300"(5분)|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>테스트 컨트롤러에 대한 에이전트 제한 시간 옵션을 지정하려면
 
@@ -112,7 +112,7 @@ ms.locfileid: "75594762"
     </appSettings>
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)
 - [부하 테스트 로깅 설정 수정](../test/modify-load-test-logging-settings.md)

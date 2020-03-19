@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75886763"
 ---
 # <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>.NET 개체 할당 도구를 사용하여 메모리 사용량 분석
@@ -22,7 +22,7 @@ ms.locfileid: "75886763"
 
 도구를 실행한 후에는 개체가 할당되는 함수 실행 경로를 확인하여 가장 많은 양의 메모리를 차지하는 호출 트리의 루트를 다시 추적할 수 있습니다.
 
-## <a name="setup"></a>설정
+## <a name="setup"></a>설치 프로그램
 
 1. Visual Studio에서 성능 프로파일러(**Alt + F2)** 를 엽니다.
 2.  **.NET 개체 할당 추적** 확인란을 선택합니다.
@@ -85,9 +85,9 @@ ms.locfileid: "75886763"
 - **실행 부하 과다 경로 확장** 단추는 메모리를 할당하는 많은 개체를 포함하는 함수 실행 경로를 강조 표시합니다. 이 알고리즘은 사용자가 선택한 노드에서 시작되며 대부분의 할당 경로를 강조 표시하여 조사에서 사용자를 안내합니다.
 - **실행 부하 과다 경로 표시** 단추는 **실행 부하 과다 경로**에 속하는 노드를 나타내는 불꽃 아이콘을 설정하거나 해제합니다.
 
-### <a name="functions"></a>함수
+### <a name="functions"></a>Functions
 
-![함수](../profiling/media/functions.png "함수")
+![함수](../profiling/media/functions.png "Functions")
 
 **함수** 뷰에서는 메모리를 할당하는 프로세스, 모듈 및 함수를 보여 줍니다.
 

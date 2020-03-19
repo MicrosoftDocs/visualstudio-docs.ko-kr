@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591712"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>코드 조각 사용에 대한 모범 사례
@@ -23,7 +23,7 @@ ms.locfileid: "75591712"
 
 ## <a name="handling-exceptions"></a>예외 처리
 
-일반적으로 코드 조각 Try...Catch 블록은 모든 예외를 catch 및 다시 throw합니다. 이는 프로젝트에 적합한 선택이 아닐 수 있습니다. 각 예외에 대한 여러 가지 응답 방법이 있습니다. 예제는 [방법: try/catch를 사용하여 예외 처리(C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) 및 [Try...Catch...Finally 문(Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)을 참조하세요.
+일반적으로 코드 조각 Try...Catch 블록은 모든 예외를 catch 및 다시 throw합니다. 이는 프로젝트에 적합한 선택이 아닐 수 있습니다. 각 예외에 대한 여러 가지 응답 방법이 있습니다. 예를 들어 [방법: try/catch를 사용하여 예외 처리(C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) 및 [Try...Catch...Finally 문(Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)을 참조하세요.
 
 ## <a name="file-locations"></a>파일 위치
 
@@ -45,7 +45,7 @@ ms.locfileid: "75591712"
 
 - 리소스 보호(예: 이벤트 로그, 레지스트리)
 
-- 암호 저장
+- 비밀 저장
 
 - 입력 확인
 
@@ -67,7 +67,7 @@ Visual Studio에 의해 설치된 IntelliSense 코드 조각 자체에는 보안
 
   - 시스템의 임의 위치에서 로드되고 프로젝트에 자동으로 추가된 참조가 조각에 포함되어 있을 수 있습니다. 이러한 참조가 조각을 다운로드한 위치에서 컴퓨터에 다운로드되었을 수 있습니다. 나중에 이 조각이 참조에서 악성 코드를 실행하는 메서드를 호출할 수 있습니다. 이러한 공격을 방지하려면 조각 파일의 Imports 및 References 블록을 검토합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Basic IntelliSense 코드 조각](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [애플리케이션 보안](../ide/securing-applications.md)

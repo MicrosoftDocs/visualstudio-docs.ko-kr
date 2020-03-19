@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591335"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
@@ -32,7 +32,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 - 바로 가기의 동작의 사용자 지정 여부
 
-- 바로 가기를 선택한 컨텍스트 위치. 예를 들어 **F2** 바로 가기는 **설정 디자이너**를 사용 중인 경우 `Edit.EditCell` 명령을 호출하고, **팀 탐색기**를 사용 중인 경우 `File.Rename` 명령을 호출합니다.
+- 바로 가기를 선택한 컨텍스트 위치. 예를 들어 **F2** 바로 가기는 `Edit.EditCell`설정 디자이너**를 사용 중인 경우**  명령을 호출하고, `File.Rename`팀 탐색기**를 사용 중인 경우**  명령을 호출합니다.
 
 설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. [인기 있는 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 가지 명령의 기본 바로 가기 키를 확인할 수도 있습니다. 모든 기본 바로 가기의 전체 목록(**일반 개발** 설정 기준)은 [모든 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 
@@ -43,7 +43,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 ## <a name="identify-a-keyboard-shortcut"></a>바로 가기 키 식별
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
 2. **환경**을 확장한 다음 **키보드**를 선택합니다.
 
@@ -63,7 +63,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 ## <a name="customize-a-keyboard-shortcut"></a>바로 가기 키 사용자 지정
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
 2. **환경**을 확장한 다음 **키보드**를 선택합니다.
 
@@ -147,6 +147,6 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
    ![사용자 지정 바로 가기 키만 가져옵니다.](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md)

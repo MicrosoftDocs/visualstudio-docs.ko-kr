@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 60789dece03487f3f3a6dfd71407ec03bab6700e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589879"
 ---
 # <a name="work-with-3d-models"></a>3D 모델 작업
@@ -29,7 +29,7 @@ Visual Studio에서 모델 편집기를 사용하여 3D 모델을 만들 수 있
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[모델 편집기](../designers/model-editor.md)|모델 편집기를 사용하여 3D 모델 작업을 수행하는 방법을 설명합니다.|
 |[모델 편집기 예제](../designers/how-to-create-a-basic-3-d-model.md)|모델 편집기를 사용하여 일반적인 3D 모델링 작업을 수행하는 방법을 보여주는 항목에 대한 링크를 제공합니다.|

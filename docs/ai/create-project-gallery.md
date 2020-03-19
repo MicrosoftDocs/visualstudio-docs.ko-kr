@@ -10,28 +10,28 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915894"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Visual Studio의 Azure Machine Learning 갤러리에서 AI 프로젝트 만들기
 
 Azure Machine Learning은 Visual Studio Tools for AI와 통합됩니다. Azure 가상 머신, Spark 클러스터 등과 같은 원격 컴퓨팅 대상에 기계 학습 작업을 제출할 수 있습니다. 
 
-[Visual Studio Tools for AI](installation.md)가 설치되면 Azure Machine Learning 샘플 갤러리에서 미리 만들어진 방법을 사용하여 새 Python 프로젝트를 쉽게 만들 수 있습니다.
+[Visual Studio Tools for AI](installation.md)를 설치한 후에는 Azure Machine Learning Sample Gallery에서 미리 제작된 방법을 사용하여 새 Python 프로젝트를 간편하게 만들 수 있습니다.
 
 > [!NOTE]
 > Azure Machine Learning Workbench가 설치되어 있어야 합니다. 설치하려면 [Azure Machine Learning 설치 빠른 시작](/azure/machine-learning/preview/quickstart-installation)을 참조하세요.
 
-1. Visual Studio를 실행합니다. **AI 도구** 메뉴를 열고 **클러스터 선택**을 선택하여 **서버 탐색기**를 엽니다.
+1. Visual Studio를 시작합니다. **AI 도구** 메뉴를 열고 **클러스터 선택**을 선택하여 **서버 탐색기**를 엽니다.
 
     ![클러스터 선택](media/create-project-gallery/select-cluster.png)
 
 2. 서버 탐색기에서 **Azure Machine Learning** 노드를 마우스 오른쪽 단추로 클릭하여 Azure Machine Learning 구독에 로그인한 다음 **로그인**을 선택하여 지시를 따릅니다.
 
-    ![login](media/create-project-gallery/azureml-login.png)
+    ![로그인](media/create-project-gallery/azureml-login.png)
 
 3. **AI 도구 > Azure Machine Learning 샘플 갤러리**를 차례로 선택합니다.
 
@@ -42,7 +42,7 @@ Azure Machine Learning은 Visual Studio Tools for AI와 통합됩니다. Azure �
    - **리소스 그룹**: 메타데이터가 저장될 Azure 리소스 그룹입니다.
    - **계정**: Azure Machine Learning 실험 계정입니다.
    - **작업 영역**: Azure Machine Learning 작업 영역입니다.
-   - **프로젝트 형식**: 기계 학습 프레임워크이며, 여기서는 **TensorFlow**를 선택합니다.
+   - **프로젝트 형식**: Machine Learning 프레임워크이며, 여기서는 **TensorFlow**를 선택합니다.
    - **솔루션에 추가**: 현재 Visual Studio 솔루션에 추가할지, 아니면 새 솔루션을 만들어 열지를 결정합니다.
    - **프로젝트 경로**: 코드를 저장할 위치입니다.
    - **프로젝트 이름**: **TensorFlowMNIST**를 입력합니다.

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75844312"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>단위 테스트 만들기 명령을 사용하여 단위 테스트 메서드 스텁 만들기
@@ -31,7 +31,7 @@ ms.locfileid: "75844312"
 
 **단위 테스트 만들기** 메뉴 명령은 확장 가능하며 MSTest, MSTest V2, NUnit 및 xUnit에 대한 테스트를 생성하는 데 사용할 수 있습니다.
 
-## <a name="get-started"></a>시작
+## <a name="get-started"></a>시작하기
 
 시작하려면 테스트할 프로젝트의 코드 편집기에서 메서드, 형식 또는 네임스페이스를 선택하고 마우스 오른쪽 단추로 클릭한 다음, **단위 테스트 만들기**를 선택합니다. 테스트를 생성하는 방법을 구성할 수 있는 **단위 테스트 만들기** 대화 상자가 열립니다.
 
@@ -56,7 +56,7 @@ NUnit 또는 xUnit에 대한 단위 테스트를 자동으로 생성하려면 Vi
 
 그러나 이 기능은 개발자가 일부 코드를 작성하여 시작한 다음, 이를 사용하여 단위 테스트를 부트스트랩하는 상황에도 동일하게 적용됩니다. 코딩 흐름 내에서 개발자는 특정 코드 조각에 대한 단위 테스트 메서드 스텁(적합한 테스트 클래스 및 적합한 테스트 프로젝트 사용)을 신속하게 만들 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Creating unit test method stubs with “Create Unit Tests”](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)(“유닛 테스트 만들기”를 사용하여 유닛 테스트 메서드 스텁 만들기)
 - [유닛 테스트 블로그 게시물](https://devblogs.microsoft.com/devops/?s=unit+testing)

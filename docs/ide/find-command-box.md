@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591530"
 ---
 # <a name="findcommand-box"></a>찾기/명령 상자
@@ -34,7 +34,7 @@ ms.locfileid: "75591530"
 
 ## <a name="entering-commands"></a>명령 입력
 
-**찾기/명령** 상자를 사용하여 텍스트 검색이 아닌 단일 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령이나 별칭을 실행하려면 해당 명령 앞에 보다 큼( **>** ) 기호를 배치합니다. 예:
+**찾기/명령** 상자를 사용하여 텍스트 검색이 아닌 단일 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령이나 별칭을 실행하려면 해당 명령 앞에 보다 큼( **>** ) 기호를 배치합니다. 다음은 그 예입니다.
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ ms.locfileid: "75591530"
 
 ## <a name="escape-characters"></a>이스케이프 문자
 
-명령의 캐럿( **^** ) 문자는 캐럿 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표( **"** ), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예:
+명령의 캐럿( **^** ) 문자는 캐럿 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표( **"** ), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 다음은 그 예입니다.
 
 ```
 >Edit.Find ^^t /regex
@@ -52,7 +52,7 @@ ms.locfileid: "75591530"
 
 캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [명령 창](../ide/reference/command-window.md)
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)

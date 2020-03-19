@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 570c3c1cfa4ee42b0b7262b92fba3c936297387c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440265"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64826680"
 ---
 # <a name="c-library-reference"></a>C 라이브러리 참조
 이 섹션에는 동시성 시각화 도우미 SDK에 대한 참조 정보가 포함되어 있습니다.

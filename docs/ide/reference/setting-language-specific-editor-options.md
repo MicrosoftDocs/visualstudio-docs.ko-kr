@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590841"
 ---
 # <a name="set-language-specific-editor-options"></a>언어별 편집기 옵션 설정
@@ -45,7 +45,7 @@ C# 코드에서 작업하는 동안 IntelliSense 완성 목록이 동작하는 �
 [옵션, 텍스트 편집기, XAML, 서식](../../ide/reference/options-text-editor-xaml-formatting.md)\
 XAML 문서의 요소 및 특성 배열을 위한 설정을 설명합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [편집기 사용자 지정](../how-to-change-text-case-in-the-editor.md)
 - [EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기](../../ide/create-portable-custom-editor-options.md)

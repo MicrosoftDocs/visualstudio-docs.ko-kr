@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594723"
 ---
 # <a name="how-to-create-item-templates"></a>방법: 항목 템플릿 만들기
@@ -72,7 +72,7 @@ ms.locfileid: "75594723"
 
 Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 유형에만 템플릿이 표시되도록 지정할 수 있습니다.
 
-1. *.vstemplate* 파일에서 항목 템플릿에 대한 `ProjectType` 요소를 찾습니다.
+1. `ProjectType`.vstemplate*파일에서 항목 템플릿에 대한* 요소를 찾습니다.
 
 1. [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소 바로 뒤에 `ProjectType` 요소를 추가합니다.
 
@@ -83,7 +83,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
     - 데이터베이스
     - 웹
 
-예를 들어 `<ProjectSubType>Database</ProjectSubType>`을 참조하십시오.
+예: `<ProjectSubType>Database</ProjectSubType>`
 
 다음 예제에서는 **Office** 프로젝트용 항목 템플릿을 보여 줍니다.
 
@@ -111,7 +111,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
 
 2. 템플릿으로 저장할 준비가 될 때까지 프로젝트 항목을 수정합니다.
 
-3. 해당되는 경우 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 매개 변수 대체에 대한 자세한 내용은 [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
+3. 해당되는 경우 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 매개 변수 대체에 대한 자세한 내용은 [방법: 템플릿에서 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
 
 4. XML 파일을 만들고 *.vstemplate* 파일 확장명을 사용하여 프로젝트 항목 파일과 같은 디렉터리에 저장합니다.
 
@@ -133,7 +133,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
 
 ::: moniker-end
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md)

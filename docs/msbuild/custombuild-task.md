@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595347"
 ---
 # <a name="custombuild-task"></a>CustomBuild 작업
@@ -32,12 +32,12 @@ Microsoft C++ 컴파일러 도구 cmd.exe를 래핑합니다. 이 클래스는 [
 
 다음 표에서는 **CustomBuild** 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |**BuildSuffix**|선택적 **string** 매개 변수입니다.|
 |**Sources**|필수 **ITaskItem[]** 매개 변수입니다.|
 |**TrackerLogDirectory**|선택적 **string** 매개 변수입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [작업 참조](../msbuild/msbuild-task-reference.md)

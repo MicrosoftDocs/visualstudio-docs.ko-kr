@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596894"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발
@@ -114,16 +114,16 @@ Visual Studio와 통합된 테스트 프레임워크와 함께 **관례에서 �
 3. 새로운 생성자를 생성하면 `DefaultAutomobileIsInitializedCorrectly`의 기본 생성자 호출 아래에 물결선이 표시됩니다. `Automobile` 클래스에 인수를 사용하지 않는 생성자가 없다는 오류 메시지가 나타납니다. 매개 변수가 없는 명시적 기본 생성자를 생성하려면 **빠른 작업** 오류 전구를 클릭한 다음, **'Automobile'에서 생성자 생성**을 클릭합니다.
 
 ### <a name="generate-a-stub-for-a-method"></a>메서드에 대한 스텁 생성
-`Model` 및 `TopSpeed` 속성이 기본값이 아닌 다른 값으로 설정된 경우 사양에 따라 새 `Automobile`을 `IsRunning` 상태로 전환할 수 있다고 가정합니다.
+`Automobile` 및 `IsRunning` 속성이 기본값이 아닌 다른 값으로 설정된 경우 사양에 따라 새 `Model`을 `TopSpeed` 상태로 전환할 수 있다고 가정합니다.
 
 1. `AutomobileWithModelNameCanStart` 메서드에 다음 줄을 추가합니다.
 
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. `myAuto.Start` 메서드 호출에 대한 **빠른 작업** 오류 전구를 클릭한 다음, **메서드 'Automobile.Start' 생성**을 클릭합니다.
+2. **메서드 호출에 대한**빠른 작업`myAuto.Start` 오류 전구를 클릭한 다음, **메서드 'Automobile.Start' 생성**을 클릭합니다.
 
-3. `IsRunning` 속성에 대한 **빠른 작업** 전구를 클릭한 다음, **속성 'Automobile.IsRunning' 생성**을 클릭합니다.
+3. **속성에 대한**빠른 작업`IsRunning` 전구를 클릭한 다음, **속성 'Automobile.IsRunning' 생성**을 클릭합니다.
 
      `Automobile` 클래스는 이제 `Start()`라는 메서드 및 `IsRunning`이라는 속성을 포함합니다.
 
@@ -159,7 +159,7 @@ Visual Studio와 통합된 테스트 프레임워크와 함께 **관례에서 �
 
      ![성공한 테스트 결과](../ide/media/testspassed.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [관례에서 생성](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)

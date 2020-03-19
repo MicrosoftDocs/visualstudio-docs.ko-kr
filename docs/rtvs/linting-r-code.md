@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970742"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Visual Studio에서 R 코드 Lint
@@ -25,11 +25,11 @@ RTVS(Visual Studio용 R 도구)는 R에 대해 이 문서에 설명된 다양한
 
 Lint는 기본적으로 비활성화되어 있습니다. Lint를 사용하도록 설정하려면 **전체** > **Lint 사용** 옵션을 **True**로 설정합니다.
 
-사용하도록 설정하면 입력 중에 Linter가 편집기에서 실행됩니다. 문제는 녹색 오류 표시선으로 표시됩니다. 예를 들어 다음 그래픽에서 RTVS는 할당에 `<-` 대신 `=` 사용, 함수 인수 앞뒤 공백 문제, 파스칼식 대/소문자 및 대문자 식별자 사용 및 세미콜론 사용을 비롯한 여섯 가지 Lint 문제를 식별합니다. 문제에 커서를 올리면 설명을 표시합니다.
+사용하도록 설정하면 입력 중에 Linter가 편집기에서 실행됩니다. 문제는 녹색 오류 표시선으로 표시됩니다. 예를 들어 다음 그래픽에서 RTVS는 할당에 `=` 대신 `<-` 사용, 함수 인수 앞뒤 공백 문제, 파스칼식 대/소문자 및 대문자 식별자 사용 및 세미콜론 사용을 비롯한 여섯 가지 Lint 문제를 식별합니다. 문제에 커서를 올리면 설명을 표시합니다.
 
 ![R 코드에 대한 Linter 출력의 예](media/linting-01.png)
 
-프로젝트 또는 파일의 필요에 따라 Linter 옵션을 변경할 수 있습니다. 예를 들어 온라인 과정의 샘플 코드는 파스칼식 대/소문자 식별자와 함께 `<-` 대신 `=`를 사용할 수 있습니다. 기본 Linter 옵션은 이러한 경우에 플래그를 지정하므로 해당 코드는 빈번한 Linter 경고를 표시합니다. 해당 코드로 작업하는 동안 각 인스턴스를 수정하는 데 시간을 보내는 대신 옵션을 사용하지 않도록 설정할 수 있습니다.
+프로젝트 또는 파일의 필요에 따라 Linter 옵션을 변경할 수 있습니다. 예를 들어 온라인 과정의 샘플 코드는 파스칼식 대/소문자 식별자와 함께 `=` 대신 `<-`를 사용할 수 있습니다. 기본 Linter 옵션은 이러한 경우에 플래그를 지정하므로 해당 코드는 빈번한 Linter 경고를 표시합니다. 해당 코드로 작업하는 동안 각 인스턴스를 수정하는 데 시간을 보내는 대신 옵션을 사용하지 않도록 설정할 수 있습니다.
 
 ## <a name="assignment-group"></a>할당 그룹
 

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579530"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 작업
@@ -32,7 +32,7 @@ ms.locfileid: "77579530"
 
  다음 표에서는 `VerifyFileHash` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`File`|필수 `String` 매개 변수입니다.<br /><br />해시되고 유효성이 검사된 파일입니다.|
 |`Hash`|필수 `String` 매개 변수입니다.<br /><br />파일의 예상 해시입니다.|
@@ -85,7 +85,7 @@ MSBuild 16.5 이상에서 제어 흐름의 조건으로 해시 비교를 사용�
   </Target>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

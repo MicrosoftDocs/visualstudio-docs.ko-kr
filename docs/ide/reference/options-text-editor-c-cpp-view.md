@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278686"
 ---
 # <a name="options-text-editor-cc-view"></a>옵션, 텍스트 편집기, C/C++, 보기
@@ -54,7 +54,7 @@ ms.locfileid: "77278686"
 
 - **명령문 블록 개요** - 명령문 블록 개요를 자동으로 지정합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md)
 - [C++에서의 리팩터링(VC 블로그)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
