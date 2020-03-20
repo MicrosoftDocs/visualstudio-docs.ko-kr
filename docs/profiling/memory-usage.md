@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75929241"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio에서 메모리 사용량 측정
@@ -33,7 +33,7 @@ ms.locfileid: "75929241"
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
-이 자습서에서 다음을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 메모리 스냅샷 생성
@@ -63,11 +63,11 @@ ms.locfileid: "75929241"
      ![진단 도구 요약 탭](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     > 메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅샷은 기본적으로 사용되지 않습니다. 네이티브 또는 혼합 모드 앱에서 스냅샷을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5**). **진단 도구** 창이 나타나면 **메모리 사용량** 탭을 선택한 다음, **힙 프로파일링**을 선택합니다.
+     > 메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅샷은 기본적으로 사용되지 않습니다. 네이티브 또는 혼합 모드 앱에서 스냅샷을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5** 키). **진단 도구** 창이 나타나면 **메모리 사용량** 탭을 선택한 다음, **힙 프로파일링**을 선택합니다.
      >
      >  ![스냅샷 사용](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  중지(바로 가기 키: **Shift**+**F5**) 및 디버깅을 다시 시작합니다.
+     >  디버깅을 중지(바로 가기 키: **Shift**+**F5**)하고 다시 시작합니다.
 
 6. 디버깅 세션의 시작 부분에 스냅샷을 만들려면 **메모리 사용량** 요약 도구 모음에서 **스냅샷 만들기**를 선택합니다. (이는 여기에 중단점을 설정하는 데도 도움이 될 수 있습니다.)
 

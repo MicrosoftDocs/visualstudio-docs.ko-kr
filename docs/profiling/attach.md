@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773741"
 ---
 # <a name="attach"></a>연결
@@ -49,7 +49,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>간격 옵션
  다음 샘플링 간격 옵션 중 하나를 Attach 명령줄에 지정할 수 있습니다. 기본 샘플링 간격은 10,000,000 프로세서 클록 주기입니다.
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] 샘플링 간격의 종류와 수를 지정합니다.
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] 샘플링 간격의 종류와 수를 지정합니다.
 
 - **Timer** - 모든 `Cycles` 프로세서 클록 주기를 샘플링합니다. `Cycles`를 지정하지 않은 경우 10,000,000 주기가 사용됩니다.
 
@@ -59,7 +59,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
 - **Counter** - `Name`에서 지정된 CPU 성능 카운터의 모든 `Reload` 수를 샘플링합니다. 필요에 따라 `FriendlyName`은 프로파일러 보고서의 열 헤더로 사용할 문자열을 지정할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 12345의 프로세스 ID로 애플리케이션의 실행 중인 인스턴스에 연결하는 방법을 보여 줍니다.
 
 ```cmd
@@ -67,7 +67,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Attach:12345
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

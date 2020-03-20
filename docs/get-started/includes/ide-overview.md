@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590814"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79081961"
 ---
 Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
@@ -47,7 +47,7 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드�
 
 Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2017에 중점을 둡니다.
 
-세 가지 Visual Studio 2017 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+세 가지 Visual Studio 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 버전 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2019와 동일한 기능이 많이 있으며 플랫폼 간 앱 및 모바일 앱 개발에 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2019에 중점을 둡니다.
 
-세 가지 Visual Studio 2019 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+세 가지 Visual Studio 2019 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 버전 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ::: moniker-end
 
@@ -383,7 +383,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 특정 줄에서 코드의 실행을 중지하는 *중단점*을 설정할 수 있습니다. 코드를 실행함에 따라 변수의 값이 변경되는 방법 등을 확인할 수 있습니다.
 
-중단점을 설정하여 프로그램이 “이동 중”일 때 `username` 변수의 값을 확인하겠습니다.
+중단점을 설정하여 프로그램이 "이동 중"일 때 `username` 변수의 값을 확인하겠습니다.
 
 1. `Console.WriteLine($"\nHello {username}!");`이라고 표시된 코드 줄을 찾습니다. 이 코드 줄에 중단점을 설정하려면, 즉 이 줄에서 프로그램이 실행을 일시 중지하도록 하려면 편집기의 맨 왼쪽 여백을 클릭합니다. 코드 줄의 아무 곳이나 클릭한 다음, **F9** 키를 누를 수도 있습니다.
 

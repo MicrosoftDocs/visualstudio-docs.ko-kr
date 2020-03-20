@@ -21,16 +21,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f22011c32378af0690c9aee226877faf903bd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634463"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865338"
 ---
 # <a name="cl-task"></a>CL 작업
 
-Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행( *.exe*) 파일, 동적 연결 라이브러리( *.dll*) 파일 또는 코드 모듈( *.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.
+Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행( *.exe*) 파일, 동적 연결 라이브러리( *.dll*) 파일 또는 코드 모듈( *.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 

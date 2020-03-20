@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 77dc73b0be050e5108f73d38dfbbaa763d236995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957616"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python 인터프리터에 대한 디버깅 기호 설치
@@ -35,7 +35,7 @@ Visual Studio는 기호가 필요한 경우(일반적으로 혼합 모드 디버
 
     ![디버그 기호를 포함한 Python 3.x 설치 관리자](media/mixed-mode-debugging-symbols-installer35.png)
 
-    기호 파일(*.pdb*)은 루트 설치 폴더에 있습니다(개별 모듈에 대한 기호 파일도 *DLLs* 폴더에 있음). 따라서 Visual Studio는 자동으로 해당 기호 파일을 찾으므로 추가 단계가 필요하지 않습니다.
+    기호 파일( *.pdb*)은 루트 설치 폴더에 있습니다(개별 모듈에 대한 기호 파일도 *DLLs* 폴더에 있음). 따라서 Visual Studio는 자동으로 해당 기호 파일을 찾으므로 추가 단계가 필요하지 않습니다.
 
 - Python 3.4.x 이전 버전: 기호는 [공식 배포](#official-distributions) 또는 [Enthought Canopy](#enthought-canopy)에서 다운로드 가능한 *.zip* 파일로 제공됩니다. 다운로드한 후에 로컬 폴더(예: Python 폴더 내의 *Symbols* 폴더)에 파일의 압축을 풀어 계속합니다.
 

@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68143535"
 ---
 
@@ -15,7 +15,7 @@ ms.locfileid: "68143535"
 
 3. **웹 배포 게시 구성** 대화 상자에서 설정을 검토합니다.
 
-4. **설정**을 클릭합니다.
+4. **설치**를 클릭합니다.
 
     **결과** 패널에서 출력은 지정된 사용자에게 액세스 권한을 부여했으며, *.publishsettings* 파일 확장명을 가진 파일을 대화 상자에 표시된 위치에 생성했음을 보여줍니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "68143535"
 
     Windows Server 및 IIS 구성에 따라 XML 파일에 다른 값이 표시됩니다. 표시되는 값의 몇 가지 세부 정보는 다음과 같습니다.
 
-   * `publishUrl` 특성에서 참조된 *msdeploy.axd* 파일은 웹 배포에 대해 동적으로 생성된 HTTP 처리기 파일입니다. (테스트 목적으로 `http://myhostname:8172`도 일반적으로 잘 작동합니다.)
+   * * 특성에서 참조된 *msdeploy.axd`publishUrl` 파일은 웹 배포에 대해 동적으로 생성된 HTTP 처리기 파일입니다. (테스트 목적으로 `http://myhostname:8172`도 일반적으로 잘 작동합니다.)
    * `publishUrl` 포트는 웹 배포에 대한 기본값인 포트 8172로 설정됩니다.
    * `destinationAppUrl` 포트는 IIS에 대한 기본값인 포트 80으로 설정됩니다.
    * 이후 단계에서 호스트 이름을 사용하여 Visual Studio에서 원격 호스트에 연결할 수 없는 경우 호스트 이름 대신 IP 주소를 테스트합니다.

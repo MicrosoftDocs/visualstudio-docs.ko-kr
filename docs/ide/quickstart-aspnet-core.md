@@ -15,29 +15,29 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579967"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
 이 5~10분 진행되는 Visual Studio를 사용하는 방법에 대한 소개에서 ASP.NET 프로젝트 템플릿과 C# 프로그래밍 언어를 사용하여 간단한 "Hello World" 웹앱을 만듭니다.
 
-## <a name="before-you-begin"></a>시작하기 전 주의 사항
+## <a name="before-you-begin"></a>시작하기 전에
 
 ### <a name="install-visual-studio"></a>Visual Studio 설치
 
 ::: moniker range="vs-2017"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ ms.locfileid: "77579967"
    >
    > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *HelloWorld*를 입력합니다. 그런 다음, **만들기**를 선택합니다.
+1. **새 프로젝트 구성** 창에서 *프로젝트 이름* 상자에 **HelloWorld**를 입력합니다. 그런 다음, **만들기**를 선택합니다.
 
    !['새 프로젝트 구성' 창에서 프로젝트의 이름을 'HelloWorld'로 지정합니다.](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
@@ -134,7 +134,7 @@ ms.locfileid: "77579967"
 
    ![Visual Studio 편집기의 추가 정보 영역에 대한 HTML 코드](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. “추가 정보” 텍스트를 “**Hello World!** ”로 변경합니다.
+1. “추가 정보” 텍스트를 “**Hello World!**”로 변경합니다.
 
    ![Visual Studio 편집기에서 추가 정보 영역의 기본 HTML 코드를 변경합니다.](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -146,7 +146,7 @@ ms.locfileid: "77579967"
 
    ![Visual Studio 편집기의 애플리케이션 설명 영역에 대한 C# 코드](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. “애플리케이션 설명” 메시지 텍스트를 “**내 메시지란?** ”으로 변경합니다.
+1. “애플리케이션 설명” 메시지 텍스트를 “**내 메시지란?**”으로 변경합니다.
 
    ![Visual Studio 편집기에서 애플리케이션 설명 영역의 기본 메시지 텍스트 변경](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
@@ -187,7 +187,7 @@ ms.locfileid: "77579967"
 
    ![Visual Studio 편집기의 홈 페이지에 대한 Index.cshtml 파일의 HTML 코드](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. "Welcome"이라는 텍스트를 "**Hello World!** "로 변경합니다.
+1. "Welcome"이라는 텍스트를 "**Hello World!**"로 변경합니다.
 
    ![Visual Studio 편집기에서 기본 HTML 코드를 Welcome이라고 말하는 대신 Hello World라고 말하도록 변경](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
@@ -208,11 +208,11 @@ ms.locfileid: "77579967"
 
 ## <a name="next-steps"></a>다음 단계
 
-자세히 알아보려면 계속 다음 자습서를 사용하세요.
+자세히 알아보려면 다음 자습서를 계속합니다.
 
 > [!div class="nextstepaction"]
 > [Visual Studio에서 C# 및 ASP.NET 시작](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [Visual Studio를 사용하여 Azure App Service에 웹앱 게시](../deployment/quickstart-deploy-to-azure.md)

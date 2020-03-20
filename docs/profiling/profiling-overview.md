@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77577954"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio의 성능 측정을 위한 도구

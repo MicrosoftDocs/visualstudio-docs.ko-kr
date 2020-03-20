@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d100b7ff37ea5a3cd224fd420f14e4cb23061903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62974145"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 함수
@@ -39,5 +39,5 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="requirements"></a>요구 사항
  **헤더:** *cvmarkers.h*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

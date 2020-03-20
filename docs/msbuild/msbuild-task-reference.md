@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633163"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865325"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 
@@ -37,15 +37,15 @@ ms.locfileid: "77633163"
 
 - [Task 기본 클래스](../msbuild/task-base-class.md)
 
- <xref:Microsoft.Build.Utilities.Task> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다.
+ <xref:Microsoft.Build.Utilities.Task> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 직접 사용할 수 없습니다.
 
 - [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다.
+ <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 직접 사용할 수 없습니다.
 
 - [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다.
+ <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 직접 사용할 수 없습니다.
 
 - [AL(어셈블리 링커) 작업](../msbuild/al-assembly-linker-task.md)
 

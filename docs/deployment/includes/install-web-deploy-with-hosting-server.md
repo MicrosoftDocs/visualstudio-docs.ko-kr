@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68143555"
 ---
 호스팅 서버용 웹 배포 3.6은 UI에서 게시 설정 파일을 만들 수 있는 추가 구성 기능을 제공합니다.
@@ -18,7 +18,7 @@ ms.locfileid: "68143555"
 
 3. 아직 **IIS 관리 스크립트 및 도구**를 설치하지 않은 경우 지금 설치합니다.
 
-    **서버 역할 선택** > **웹 서버(IIS)**  > **관리 도구**를 선택한 후, **IIS 관리 스크립트 및 도구** 역할을 선택하고 **다음**을 클릭한 다음, 해당 역할을 설치합니다.
+    **서버 역할 선택** > **웹 서버(IIS)** > **관리 도구**를 선택한 후, **IIS 관리 스크립트 및 도구** 역할을 선택하고 **다음**을 클릭한 다음, 해당 역할을 설치합니다.
 
     ![IIS 관리 스크립트 및 도구 설치](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 

@@ -30,16 +30,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633579"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865351"
 ---
 # <a name="link-task"></a>링크 작업
 
-Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.
+Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 

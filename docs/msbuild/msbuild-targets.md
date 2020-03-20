@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633189"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093602"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
 
@@ -42,7 +42,7 @@ ms.locfileid: "77633189"
 </Target>
 ```
 
- AfterBuild가 실행되는 경우 "두 번째 발생"만 표시됩니다.
+ `AfterBuild`가 실행되는 경우 `AfterBuild`의 두 번째 정의가 첫 번째 정의를 숨기기 때문에 "Second occurrence"만 표시됩니다.
 
  MSBuild는 가져오기 순서에 종속되며, 대상의 마지막 정의가 사용됩니다.
 

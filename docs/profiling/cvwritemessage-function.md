@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea9fd21c346a61939683ee05e3cb9ef3123cc03d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62936662"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 함수
@@ -113,5 +113,5 @@ HRESULT CvWriteMessageExVA(
 
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

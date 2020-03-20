@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775321"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>방법: 특정 함수로 계측 제한
@@ -66,7 +66,7 @@ ms.locfileid: "74775321"
    > [!NOTE]
    > 이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리([명령줄 도구 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md) 참조)에서 명령 프롬프트 창을 연 다음, **vsinstr /DumpFuncs**를 입력합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [데이터 수집 제어](../profiling/controlling-data-collection.md)
 - [방법: 계측을 특정 DLL로 제한](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)
 - [방법: 추가 계측 옵션 지정](../profiling/how-to-specify-additional-instrumentation-options.md)

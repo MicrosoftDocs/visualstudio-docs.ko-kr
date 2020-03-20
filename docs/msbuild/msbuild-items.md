@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7ea464695faeaf6651f645a39ce2b41d255108
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633306"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093972"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 
@@ -44,6 +44,8 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
     <Compile Include = "file1.cs;file2.cs"/>
 </ItemGroup>
 ```
+
+`Include` 특성은 프로젝트 파일의 폴더 $(MSBuildProjectPath)를 기준으로 해석되는 경로이며, 항목이 *.targets* 파일과 같은 가져온 파일에 있는 경우도 마찬가지입니다.
 
 ## <a name="create-items-during-execution"></a>실행 중에 항목 만들기
 
@@ -122,7 +124,7 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 
  항목은 메타데이터 값을 포함하지 않을 수도 있고 하나 이상 포함할 수도 있습니다. 언제든지 메타데이터 값을 변경할 수 있습니다. 메타데이터를 빈 값으로 설정하면 실제로는 빌드에서 메타데이터가 제거됩니다.
 
-### <a name="BKMK_ReferencingItemMetadata"></a> 프로젝트 파일에서 항목 메타데이터 참조
+### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> 프로젝트 파일에서 항목 메타데이터 참조
 
  프로젝트 파일 전체에서 %(\<ItemMetadataName>) 구문을 사용하여 항목형 메타데이터를 참조할 수 있습니다. 메타데이터가 명확하지 않은 경우에는 항목 종류의 이름을 사용하여 참조를 한정할 수 있습니다. 예를 들어 %(\<ItemType.ItemMetaDataName>)을 지정할 수 있습니다. 다음 예제에서는 표시 메타데이터를 사용하여 메시지 작업을 일괄 처리합니다. 일괄 처리에 항목 메타데이터를 사용하는 방법에 대한 자세한 내용은 [작업 일괄 처리의 항목 메타데이터](../msbuild/item-metadata-in-task-batching.md)를 참조하세요.
 
@@ -142,11 +144,11 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 </Project>
 ```
 
-### <a name="BKMK_WellKnownItemMetadata"></a> 잘 알려진 항목 메타데이터
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> 잘 알려진 항목 메타데이터
 
  항목 종류에 항목을 추가하면 해당 항목에는 몇 가지 잘 알려진 메타데이터가 할당됩니다. 예를 들어 모든 항목에는 잘 알려진 메타데이터 %(\<Filename>)이 포함되며, 이 메타데이터의 값은 항목의 파일 이름(확장명 없음)입니다. 자세한 내용은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.
 
-### <a name="BKMK_Transforming"></a> 메타데이터를 사용하여 항목 종류 변환
+### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> 메타데이터를 사용하여 항목 종류 변환
 
  메타데이터를 사용하여 항목 목록을 새 항목 목록으로 변환할 수 있습니다. 예를 들어 `@(CppFiles -> '%(Filename).obj')` 식을 사용하여 *.cpp* 파일을 나타내는 항목이 포함된 항목 종류 `CppFiles`를 해당하는 *.obj* 파일 목록으로 변환할 수 있습니다.
 
@@ -189,7 +191,7 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 
  .NET Framework 3.5부터는 `Target` 요소가 항목 요소가 들어 있을 수 있는 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 요소를 포함할 수 있습니다. 이 섹션의 특성은 `Target`에 있는 `ItemGroup`에서 항목에 대해 지정되는 경우 유효합니다.
 
-### <a name="BKMK_RemoveAttribute"></a> 특성 제거
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> 특성 제거
 
  `Remove` 특성은 항목 종류에서 특정 항목(파일)을 제거합니다. 이 특성은 .NET Framework 3.5에서 도입되었습니다(내부 대상만). MSBuild 15.0부터 내부 및 외부 대상이 모두 지원됩니다.
 
@@ -203,7 +205,7 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 </Target>
 ```
 
-### <a name="BKMK_KeepMetadata"></a> KeepMetadata 특성
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> KeepMetadata 특성
 
  대상 내에서 항목이 생성되는 경우 항목 요소는 `KeepMetadata` 특성을 포함할 수 있습니다. 이 특성을 지정하면 세미콜론으로 구분된 이름 목록에 지정되어 있는 메타데이터만 소스 항목에서 대상 항목으로 전송됩니다. 이 특성에 빈 값을 지정하는 것은 특성을 지정하지 않는 것과 같습니다. `KeepMetadata` 특성은 .NET Framework 4.5에서 도입되었습니다.
 
@@ -246,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_RemoveMetadata"></a> RemoveMetadata 특성
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> RemoveMetadata 특성
 
  대상 내에서 항목이 생성되는 경우 항목 요소는 `RemoveMetadata` 특성을 포함할 수 있습니다. 이 특성을 지정하면 이름이 세미콜론으로 구분된 이름 목록에 포함되어 있는 메타데이터를 제외한 모든 메타데이터가 소스 항목에서 대상 항목으로 전송됩니다. 이 특성에 빈 값을 지정하는 것은 특성을 지정하지 않는 것과 같습니다. `RemoveMetadata` 특성은 .NET Framework 4.5에서 도입되었습니다.
 
@@ -296,7 +298,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_KeepDuplicates"></a> KeepDuplicates 특성
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> KeepDuplicates 특성
 
  대상 내에서 항목이 생성되는 경우 항목 요소는 `KeepDuplicates` 특성을 포함할 수 있습니다. `KeepDuplicates`는 항목이 기존 항목의 정확한 복제본인 경우 대상 그룹에 해당 항목을 추가할지를 지정하는 `Boolean` 특성입니다.
 

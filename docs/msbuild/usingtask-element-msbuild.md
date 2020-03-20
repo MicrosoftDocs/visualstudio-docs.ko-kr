@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263125"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431451"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 
@@ -78,6 +78,8 @@ ms.locfileid: "78263125"
 > MSBuild 엔진을 통해 전역으로 등록된 *.tasks* 파일 중 하나에서 `UsingTask` 요소를 가져오는 경우 프로젝트 수준 속성 또는 항목에는 의미가 없습니다. 프로젝트 수준 값은 MSBuild에 대해 전역이 아닙니다.
 
  MSBuild 4.0에서는 작업 사용을 *.overridetask* 파일에서 로드할 수 있습니다.
+
+`Task`가 처음 사용되면 사용자 지정 작업이 포함된 어셈블리가 로드됩니다.
 
 ## <a name="example"></a>예제
 

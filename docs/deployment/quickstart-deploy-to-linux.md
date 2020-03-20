@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 1e05862aa57c24bfa8f17d551762054278dd6e52
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72806868"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio를 사용하여 Linux의 App Service에 ASP.NET Core 앱 게시
@@ -50,10 +50,10 @@ Visual Studio 2017 버전 15.7부터 다음 방법 중 하나를 사용하여 AS
 
 ## <a name="clean-up-resources"></a>리소스 정리
 
-이전 단계에서 Azure 리소스를 리소스 그룹에 만들었습니다. 나중에 이러한 리소스가 필요하지 않은 경우에 리소스 그룹을 삭제하여 삭제할 수 있습니다.
-Azure Portal의 왼쪽 메뉴에서 **리소스 그룹**을 선택한 다음, **myResourceGroup**을 선택합니다.
-리소스 그룹 페이지에서 나열된 리소스가 삭제하려는 항목인지 확인합니다.
-**삭제**를 선택하고, 텍스트 상자에 **myResourceGroup**을 입력한 다음, **삭제**를 선택합니다.
+이전 단계에서 Azure 리소스를 리소스 그룹에 만들었습니다. 이러한 리소스가 나중에 필요하지 않을 경우에는 리소스 그룹을 삭제하여 해당 리소스를 삭제할 수 있습니다.
+Azure Portal의 왼쪽 메뉴에서 **리소스 그룹**을 선택한 다음 **myResourceGroup**을 선택합니다.
+리소스 그룹 페이지에서 나열된 리소스가 삭제하려는 리소스인지 확인합니다.
+**삭제**를 선택하고, 텍스트 상자에서 **myResourceGroup**을 입력한 다음, **삭제**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

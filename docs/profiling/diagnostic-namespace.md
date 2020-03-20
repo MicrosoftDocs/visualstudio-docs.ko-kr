@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970085"
 ---
 # <a name="diagnostic-namespace"></a>진단 네임스페이스
@@ -32,14 +32,14 @@ namespace diagnostic;
 
 ### <a name="classes"></a>클래스
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[marker_series 클래스](../profiling/marker-series-class.md)|단일 공급자가 생성한 이벤트의 직렬 채널을 나타냅니다.|
 |[span 클래스](../profiling/span-class.md)|애플리케이션의 단계를 정의합니다.|
 
 ### <a name="enumerations"></a>열거형
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[marker_importance 열거형](../profiling/marker-importance-enumeration.md)|동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.|
 
@@ -48,5 +48,5 @@ namespace diagnostic;
 
  **네임스페이스:** 동시성
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [동시성 네임스페이스(동시성 시각화 도우미)](../profiling/concurrency-namespace-concurrency-visualizer.md)

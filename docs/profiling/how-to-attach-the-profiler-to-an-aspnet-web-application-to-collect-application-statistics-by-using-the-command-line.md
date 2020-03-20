@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 549e43f403b19d8832e00277f826cdc7b276b747
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779079"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 ASP.NET 웹 애플리케이션에 프로파일러를 연결하여 애플리케이션 통계 수집
@@ -49,7 +49,7 @@ ms.locfileid: "74779079"
 
 3. 컴퓨터를 다시 시작합니다.
 
-4. 프로파일러를 시작합니다. 입력: **VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`]
+4. 프로파일러를 시작합니다. 다음을 입력합니다. **VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`]
 
    - **/start:sample** 옵션은 프로파일러를 초기화합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "74779079"
 
 5. 일반적인 방법으로 ASP.NET 웹 애플리케이션을 시작합니다.
 
-6. 프로파일러를 ASP.NET 작업자 프로세스에 연결합니다. Type:**VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:** `Version`]
+6. 프로파일러를 ASP.NET 작업자 프로세스에 연결합니다. 다음을 입력합니다. **VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
    - `PID`는 ASP.NET 작업자 프로세스의 프로세스 ID를 지정하고, `ProcName`은 작업자 프로세스의 이름을 지정합니다. Windows 작업 관리자에서 실행 중인 모든 프로세스의 프로세스 ID와 이름을 볼 수 있습니다.
 
@@ -84,7 +84,7 @@ ms.locfileid: "74779079"
    |[/counter](../profiling/counter.md) **:** `Config`|샘플링 이벤트 및 간격을 `Config`에 지정된 프로세서 성능 카운터 및 간격으로 변경합니다.|
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|한 애플리케이션에 두 개 이상의 런타임 버전이 로드된 경우 프로파일링할 CLR(공용 언어 런타임) 버전을 지정합니다.|
 
-   - **/targetclr:** `Version`은 한 애플리케이션에 둘 이상의 런타임 버전이 로드될 때 프로파일링할 CLR 버전을 지정합니다. 선택 사항입니다.
+   - **targetclr:** `Version`은 한 애플리케이션에 둘 이상의 런타임 버전이 로드될 때 프로파일링할 CLR 버전을 지정합니다. 선택 사항입니다.
 
 ## <a name="control-data-collection"></a>데이터 수집 제어
  애플리케이션이 실행되는 동안 *VSPerfCmd.exe* 옵션을 사용하여 파일에 대한 데이터 쓰기를 시작하고 중지함으로써 데이터 수집을 제어할 수 있습니다. 데이터 수집을 제어하면 애플리케이션의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.
@@ -97,7 +97,7 @@ ms.locfileid: "74779079"
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|모든 프로세스에 대한 데이터 수집을 시작( **/globalon**) 또는 중지( **/globaloff**)합니다.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|`PID`에 지정된 프로세스에 대한 데이터 수집을 시작( **/processon**) 또는 중지( **/processoff**)합니다.|
-    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach**는 `PID` 또는 프로세스 이름(ProcName)으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach**는 지정된 프로세스 또는 모든 프로세스(특정 프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detch](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach**는 `PID` 또는 프로세스 이름(ProcName)으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach**는 지정된 프로세스 또는 모든 프로세스(특정 프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|
 
 ## <a name="end-the-profiling-session"></a>프로파일링 세션 종료
  프로파일링 세션을 종료하려면 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션을 닫은 다음, IIS(인터넷 정보 서비스) **IISReset** 명령을 사용하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 닫습니다. 그런 다음 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 옵션을 호출하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다.
@@ -116,7 +116,7 @@ ms.locfileid: "74779079"
 
    - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 닫습니다.
 
-2. 프로파일러를 종료합니다. 입력: **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
+2. 프로파일러를 종료합니다. 다음을 입력합니다. **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 
 3. (선택 사항) 프로파일링 환경 변수를 지웁니다. 유형:
 
@@ -124,6 +124,6 @@ ms.locfileid: "74779079"
 
 4. 컴퓨터를 다시 시작합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [샘플링 방법 데이터 뷰](../profiling/profiler-sampling-method-data-views.md)

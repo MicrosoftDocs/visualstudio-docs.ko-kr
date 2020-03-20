@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279229"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터(C++) 분석
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(C++)
 
 Visual Studio는 애플리케이션에서 성능 문제를 분석할 수 있도록 여러 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다. 여기에서는 높은 CPU 사용량으로 인한 성능 병목 상태를 식별하는 도구를 살펴봅니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
 
@@ -51,7 +51,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
    > [!NOTE]
    > **콘솔 앱** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다. 그런 다음, Visual Studio 설치 관리자에서 **C++를 사용한 데스크톱 개발** 워크로드를 선택합니다.
 
-   **새 프로젝트 구성** 창의 **프로젝트 이름** 상자에 *Diagnostics_Get_Started_Native*를 입력합니다. 그런 다음, **만들기**를 선택합니다.
+   **새 프로젝트 구성** 창의 *프로젝트 이름* 상자에 **Diagnostics_Get_Started_Native**를 입력합니다. 그런 다음, **만들기**를 선택합니다.
 
    ::: moniker-end
 
@@ -199,9 +199,9 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
 - [메모리 사용 분석](../profiling/memory-usage.md)으로 성능 병목 상태를 확인합니다.
 - [CPU 사용량 분석](../profiling/cpu-usage.md)은 CPU 사용량 도구에 대한 더 상세한 정보를 제공합니다.
-- 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석합니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)을 참조하세요.
+- 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석합니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

@@ -1,13 +1,13 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 38e4f8a6e0ae111627c756857417a173ae49c4d1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68193048"
 ---
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 ::: moniker range="vs-2017"
 - Python 작업이 설치된 Visual Studio 2017 자세한 내용은 [Visual Studio에서 Python 작업 - 0단계](../tutorial-working-with-python-in-visual-studio-step-00-installation.md)를 참조하세요.

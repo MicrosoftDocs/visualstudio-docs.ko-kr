@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776968"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 및 GlobalOff
@@ -55,11 +55,11 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **연결:** `PID` 지정된 프로세스의 프로파일링을 시작합니다.
 
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID` 지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
+ {**ProcessOff**&#124;**ProcessOn**}**:**`PID` 지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
 
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID` 지정된 프로세스에 대한 프로파일링을 중지 또는 시작합니다(계측 방법만 해당).
+ {**ThreadOff**&#124;**ThreadOn**}**:**`TID` 지정된 프로세스에 대한 프로파일링을 중지 또는 시작합니다(계측 방법만 해당).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 애플리케이션 시작 및 종료에 대한 프로파일링 데이터가 수집되지 않도록 하기 위해 **GlobalOff** 및 **GlobalOn** 옵션이 사용됩니다.
 
 ```cmd
@@ -77,7 +77,7 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

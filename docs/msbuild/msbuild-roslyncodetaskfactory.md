@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633228"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865377"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory를 사용한 MSBuild 인라인 작업
 
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)와 유사하게 RoslynCodeTaskFactory는 플랫폼 간 Roslyn 컴파일러를 사용하여 인라인 작업으로 사용하기 위한 메모리 내 작업 어셈블리를 생성합니다.  RoslynCodeTaskFactory 작업은 .NET Standard를 대상으로 하며 .NET Framework 및 .NET Core 런타임뿐만 아니라 Linux 및 Mac OS와 같은 다른 플랫폼에서도 작업할 수 있습니다.
 
 >[!NOTE]
->RoslynCodeTaskFactory 작업은 MSBuild 15.8 이상에서만 사용할 수 있습니다.
+>RoslynCodeTaskFactory 작업은 MSBuild 15.8 이상에서만 사용할 수 있습니다. MSBuild 버전은 Visual Studio 버전을 따르므로, Visual Studio 15.8 이상에서는 RoslynCodeTaskFactory를 사용할 수 있습니다.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory를 사용한 인라인 작업의 구조
 
@@ -164,7 +164,7 @@ Log.LogError("Hello, world!");
 
 - `Tally`는 System.Int32 형식의 출력 매개 변수입니다.
 
-`Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.
+`Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다.  RoslynCodeTaskFactory에서 `Code` 요소에 `Class`의 `Type` 특성이 있는 경우 `ParameterGroup`을 지정할 필요가 없습니다. 소스 코드에서 추론되기 때문입니다(`CodeTaskFactory`와의 차이점). 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.
 
 ## <a name="example"></a>예제
 
