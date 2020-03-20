@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778273"
 ---
 # <a name="start"></a>Start
@@ -53,11 +53,11 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>잘못된 옵션
  다음 옵션은 명령줄에서 **Start** 옵션과 함께 사용할 수 없습니다.
 
- **Status** - **Status**는 프로파일링되는 프로세스에 적용됩니다. 프로세스 및 스레드와 해당 현재 프로필 상태(On/Off) 목록을 표시합니다. 예를 들어 프로세스가 중지되더라도 보고서에서 **Status**에는 해당 상태가 나타나지 않습니다. 즉, **Status**는 프로세스가 프로파일링되었는지 여부를 표시합니다.
+ **Status** **Status**는 프로파일링되는 프로세스에 적용되며 프로세스 및 스레드와 해당 현재 프로필 상태(On/Off) 목록을 표시합니다. 예를 들어 프로세스가 중지되더라도 보고서에서 **Status**에는 해당 상태가 나타나지 않습니다. 즉, **Status**는 프로세스가 프로파일링되었는지 여부를 표시합니다.
 
  **Shutdown**[ **:** `Timeout`] 프로파일러를 해제합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 *VSPerfCmd.exe* **Start** 옵션을 사용하여 프로파일러를 초기화하는 방법을 보여 줍니다.
 
 ```cmd
@@ -65,7 +65,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

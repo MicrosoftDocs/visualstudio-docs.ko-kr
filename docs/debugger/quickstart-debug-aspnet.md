@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75847881"
 ---
 # <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 ASP.NET Core 디버그
@@ -40,7 +40,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
     **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
 
-    Visual Studio가 프로젝트를 만듭니다.
+    Visual Studio가 프로젝트를 생성합니다.
 
 1. 솔루션 탐색기에서 About.cshtml.cs(Pages/About.cshtml 아래)를 열고 다음 코드를 바꿉니다.
 

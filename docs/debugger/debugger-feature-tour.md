@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77578950"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
@@ -37,7 +37,7 @@ ms.locfileid: "77578950"
 
 중단점은 자세히 검사하려는 코드 줄 또는 코드 섹션을 아는 경우 유용한 기능입니다.
 
-## <a name="navigate"></a> 한 단계 실행 명령을 사용하여 디버거에서 코드 탐색
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> 한 단계 실행 명령을 사용하여 디버거에서 코드 탐색
 
 앱 코드를 더욱 빠르게 탐색할 수 있으므로 대부분의 명령에 대한 바로 가기 키를 제공합니다. (메뉴 명령과 같은 해당 명령이 괄호 안에 표시됩니다.)
 
@@ -185,7 +185,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 또한 **호출 스택** 창에서 오른쪽 클릭 메뉴를 사용하여 다른 작업을 수행할 수도 있습니다. 예를 들어 지정된 함수에 중단점을 삽입하고, **커서까지 실행**을 사용하여 앱을 다시 시작하고, 소스 코드를 검사할 수 있습니다. [방법: 호출 스택 검사](../debugger/how-to-use-the-call-stack-window.md)를 참조하세요.
 
-## <a name="exception"></a> 예외 검사
+## <a name="examine-an-exception"></a><a name="exception"></a> 예외 검사
 
 앱에서 예외를 throw하는 경우 디버거는 예외를 throw한 코드 줄로 이동합니다.
 

@@ -23,10 +23,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 1ce41cd1c0dabc94658b83aa5e2bcdc08d005fdb
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77275363"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++용 코드 분석 개요

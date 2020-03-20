@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579981"
 ---
 # <a name="learn-about-projects-and-solutions"></a>프로젝트 및 솔루션에 대한 자세한 정보
@@ -39,7 +39,7 @@ ms.locfileid: "77579981"
 
 ## <a name="solutions-and-projects"></a>솔루션 및 프로젝트
 
-이름과 달리 솔루션은 “답변”이 아닙니다. 솔루션은 Visual Studio에서 하나 이상의 관련 프로젝트를 구성하는 데 사용되는 간단한 컨테이너입니다. Visual Studio에서 솔루션을 열면 솔루션에 포함된 모든 프로젝트가 자동으로 로드됩니다.
+이름과 달리 솔루션은 "답변"이 아닙니다. 솔루션은 Visual Studio에서 하나 이상의 관련 프로젝트를 구성하는 데 사용되는 간단한 컨테이너입니다. Visual Studio에서 솔루션을 열면 솔루션에 포함된 모든 프로젝트가 자동으로 로드됩니다.
 
 ### <a name="create-a-solution"></a>솔루션 만들기
 
@@ -245,7 +245,7 @@ ms.locfileid: "77579981"
 
 1. **솔루션 탐색기**에서 **QuickTest** 프로젝트를 선택합니다. 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **속성**을 선택하거나 **Alt**+**Enter** 키를 누릅니다.
 
-   프로젝트의 *속성 페이지*가 **애플리케이션** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 “QuickTest”입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll*에서 선택한 이름으로 변경됩니다.
+   프로젝트의 *속성 페이지*가 **애플리케이션** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 "QuickTest"입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll*에서 선택한 이름으로 변경됩니다.
 
    ![프로젝트 속성](media/tutorial-projects-netcore-properties.png)
 

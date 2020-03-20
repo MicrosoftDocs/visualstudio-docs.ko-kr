@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8697f1451e3d528ff27beb2467ff7758e04267cc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775498"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 통해 .NET Framework 서비스 계측 및 메모리 데이터 수집
@@ -105,7 +105,7 @@ ms.locfileid: "74775498"
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|스레드 ID(`TID`)로 지정된 스레드에 대한 데이터 수집을 시작( **/threadon**) 또는 중지( **/threadoff**)합니다.|
 
 ## <a name="end-the-profiling-session"></a>프로파일링 세션 종료
- 프로파일링 세션을 종료하려면 계측된 구성 요소를 실행하는 애플리케이션을 닫은 다음, **VSPerfCmd**[/shutdown](../profiling/shutdown.md) 옵션을 시작하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다. **VSPerfClrEnv /globaloff** 명령은 프로파일링 환경 변수를 지웁니다.
+ 프로파일링 세션을 종료하려면 계측된 구성 요소를 실행하는 애플리케이션을 닫은 다음, **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 옵션을 시작하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다. **VSPerfClrEnv /globaloff** 명령은 프로파일링 환경 변수를 지웁니다.
 
 #### <a name="to-end-a-profiling-session"></a>프로파일링 세션을 종료하려면
 
@@ -123,6 +123,6 @@ ms.locfileid: "74775498"
 
 4. 컴퓨터를 다시 시작합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)
 - [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)

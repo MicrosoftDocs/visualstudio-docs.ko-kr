@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 044c531432de987fc7f3d34ce5344ad0374bcd00
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633748"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094494"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 
@@ -67,7 +67,7 @@ ms.locfileid: "77633748"
 
  규칙상 가져온 공유 프로젝트 파일은 *.targets* 파일로 저장되지만 실제로는 표준 MSBuild 프로젝트 파일입니다. MSBuild에서는 다른 파일 이름 확장명을 가진 프로젝트를 가져오는 것이 금지되지 않지만, 일관성을 위해 *.targets* 확장명을 사용할 것을 권장합니다.
 
- 가져온 프로젝트의 상대 경로는 가져오는 프로젝트의 디렉터리를 기준으로 해석됩니다. 따라서 프로젝트 파일을 서로 다른 위치의 여러 프로젝트 파일로 가져온 경우, 가져온 프로젝트 파일의 상대 경로는 가져온 각 프로젝트에 대해 다르게 해석됩니다.
+ 가져온 프로젝트의 상대 경로는 가져오는 프로젝트의 디렉터리를 기준으로 해석됩니다(이 단락 후반에서 설명하는 몇 가지 예외가 있음). 따라서 프로젝트 파일을 서로 다른 위치의 여러 프로젝트 파일로 가져온 경우, 가져온 프로젝트 파일의 상대 경로는 가져온 각 프로젝트에 대해 다르게 해석됩니다. 두 가지 예외 사항이 있습니다. 한 가지 예외는 `Import` 요소에서 경로가 항상 `Import` 요소가 포함된 프로젝트를 기준으로 해석된다는 것입니다. 또 다른 예외는 `UsingTask`가 항상 `UsingTask` 요소가 포함된 파일을 기준으로 `AssemblyFile` 특성의 상대 경로를 해석한다는 것입니다.
 
  가져온 프로젝트에서 참조되는, 프로젝트 파일과 관련된 MSBuild의 모든 예약된 속성(예: `MSBuildProjectDirectory` 및 `MSBuildProjectFile`)은 가져오는 프로젝트 파일을 기반으로 값이 할당됩니다.
 

@@ -1,6 +1,6 @@
 ---
 title: If 문을 switch 문 또는 switch 식으로 변환
-ms.date: 02/12/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb0c06fe0493f973ea9cf0a566ffda45a49eeeff
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77283462"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094129"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>If 문을 switch 문 또는 switch 식으로 변환
 
@@ -32,9 +32,15 @@ ms.locfileid: "77283462"
 
 1. 커서를 `if` 키워드에 놓습니다.
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
-3. **‘switch’ 문으로 변환**을 선택합니다.
+3. 다음 두 옵션 중에서 선택합니다. 
 
-   ![If 문을 switch 문 또는 switch 식으로 변환](media/convert-if-statement-to-switch-statement-or-switch-expression.png) 
+    **‘switch’ 문으로 변환**을 선택합니다.
+
+   ![if 문을 switch 문으로 변환](media/convert-if-to-switch-statement.png) 
+
+    **'switch' 식으로 변환**을 선택합니다. 
+
+    ![if 문을 switch 식으로 변환](media/convert-if-to-switch-expression.png) 
 
 ## <a name="see-also"></a>참조
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999410"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
@@ -33,7 +33,7 @@ Visual Studio는 성능 측정 및 프로파일링 도구 중에서 선택할 �
 - 디버거 자체는 예외 및 모듈 로드 이벤트 가로채기와 같은 필요한 디버거 작업을 수행하므로 성능 시간을 변경합니다.
 - **성능 프로파일러** 도구의 릴리스 빌드 성능 번호가 가장 정밀하고 정확합니다. 디버거 통합 도구 결과는 다른 디버깅 관련 측정과 비교할 때 가장 유용합니다.
 
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 디버깅하는 동안 프로파일링 데이터 수집
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 디버깅하는 동안 프로파일링 데이터 수집
 
 **디버깅** > **디버깅 시작** 또는 **F5**를 눌러 Visual Studio에서 디버깅을 시작하면 기본적으로 **진단 도구** 창이 나타납니다. 수동으로 열려면 **디버그** > **Windows** > **진단 도구 표시**를 선택합니다. **진단 도구**에는 이벤트, 프로세스 메모리 및 CPU 사용량에 대한 정보가 표시됩니다.
 
@@ -79,7 +79,7 @@ Visual Studio는 성능 측정 및 프로파일링 도구 중에서 선택할 �
 
    세션이 실행되는 동안 일부 도구는 진단 도구 페이지에 실시간 데이터의 그래프를 표시합니다.
 
-    ![성능 및 진단 Hub에서 데이터 수집](../profiling/media/pdhub_collectdata.png "Hub 데이터 수집")
+    ![성능 및 진단 허브에서 데이터 수집](../profiling/media/pdhub_collectdata.png "허브 데이터 수집")
 
 1. 진단 세션을 종료하려면 **컬렉션 중지**를 선택합니다.
 
@@ -109,9 +109,9 @@ Visual Studio는 성능 측정 및 프로파일링 도구 중에서 선택할 �
 
  이미 설치된 앱을 시작하거나 이미 실행 중인 앱 및 프로세스에 진단 도구를 연결할 수 있습니다. **실행 중인 앱** 또는 **설치된 앱**을 선택하면 지정된 배포 대상에 앱을 찾는 목록에서 앱을 선택합니다. 이 대상은 로컬 또는 원격 머신일 수 있습니다.
 
- ![진단을 위해 실행 중이거나 설치된 응용 프로그램 선택](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+ ![진단을 위해 실행 중이거나 설치된 앱 선택](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 다음은 진단 개발팀의 블로그 게시물 및 MSDN 문서입니다.
 - [MSDN Magazine: Visual Studio 2015에서 디버그하는 동안 성능 분석](https://msdn.microsoft.com/magazine/dn973013.aspx)

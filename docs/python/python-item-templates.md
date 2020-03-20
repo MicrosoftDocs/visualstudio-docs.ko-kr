@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430346"
 ---
 # <a name="python-item-templates"></a>Python 항목 템플릿
@@ -46,7 +46,7 @@ ms.locfileid: "62430346"
 | **Azure 정적 파일 web.config** | 일반적으로 *static* 폴더(또는 정적 항목을 포함하는 다른 폴더)에 추가되어 해당 폴더에 대한 Python 처리를 사용하지 않도록 설정하는 *web.config* 파일. 이 구성 파일은 위의 FastCGI 또는 HttpPlatformHandler 구성 파일 중 하나와 함께 작동합니다. 자세한 내용은 [IIS에 대한 앱 구성](configure-web-apps-for-iis-windows.md)을 참조하세요. |
 | **Azure 원격 디버깅 web.config** | 사용되지 않습니다(더 이상 지원되지 않는 Windows용 Azure App Service의 원격 디버깅에 사용됨). |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Python 프로젝트 관리 - 프로젝트 템플릿](managing-python-projects-in-visual-studio.md#project-templates)
 - [Python 웹 프로젝트 템플릿](python-web-application-project-templates.md)

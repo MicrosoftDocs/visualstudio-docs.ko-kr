@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128286"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
@@ -68,11 +68,11 @@ ms.locfileid: "71128286"
 
 2. 응답성이 떨어지는 외견상의 원인이 있는지 알아보려면 **UI 스레드 사용률** 또는 **시각적 처리량(FPS)** 그래프의 정보를 사용하여 **타임라인 세부 정보** 보기에서 세부 정보를 검사합니다.
 
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> 시나리오, 범주 및 이벤트 보고
+### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a> 시나리오, 범주 및 이벤트 보고
 
 **애플리케이션 타임라인** 도구는 XAML 성능과 관련된 시나리오, 범주 및 이벤트에 대한 타이밍 데이터를 표시합니다.
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> 진단 세션 타임라인
+### <a name="diagnostic-session-timeline"></a><a name="BKMK_Diagnostic_session_timeline"></a> 진단 세션 타임라인
 
 ![성능 및 진단 타임라인](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
@@ -80,19 +80,19 @@ ms.locfileid: "71128286"
 
 타임라인에는 사용자가 삽입한 사용자 표시와 앱의 활성화 수명 주기 이벤트도 표시됩니다.
 
-### <a name="BKMK_UI_thread_utilization_graph"></a> UI 스레드 사용률 그래프
+### <a name="ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a> UI 스레드 사용률 그래프
 
 ![CPU 사용률 그래프](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
 **UI 스레드 사용률(%)** 그래프는 컬렉션 범위 도중에 대한 범주에서 소요된 시간의 상대 크기를 표시하는 막대형 차트입니다.
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> 시각적 처리량(FPS) 그래프
+### <a name="visual-throughput-fps-graph"></a><a name="BKMK_Visual_throughput_FPS_graph"></a> 시각적 처리량(FPS) 그래프
 
 ![시각적 처리량 그래프](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
 **시각적 처리량(FPS)** 선 그래프는 응용 프로그램에 대한 UI 및 컴퍼지션 스레드의 초당 프레임(FPS)을 보여 줍니다.
 
-### <a name="BKMK_Timeline_details_"></a> 타임라인 세부 정보
+### <a name="timeline-details"></a><a name="BKMK_Timeline_details_"></a> 타임라인 세부 정보
 
 세부 정보 보기에서 보고서를 분석하는 데 대부분의 시간을 사용합니다. UI 프레임워크 하위 시스템 또는 CPU를 소비하는 시스템 구성 요소에 따라 분류되는 애플리케이션별 CPU 사용을 표시합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "71128286"
 > [!TIP]
 > UI 스레드에서 실행하는 앱 메서드를 보기 위해 프로파일링을 시작하는 경우 **CPU 사용량** 도구를 **애플리케이션 타임라인** 도구와 함께 선택합니다. 장기 실행 앱 코드를 백그라운드 스레드로 이동하면 UI 응답성을 향상할 수 있습니다.
 
-#### <a name="BKMK_Customizing_Timeline_details_"></a> 타임라인 세부 정보 사용자 지정
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> 타임라인 세부 정보 사용자 지정
 
 **타임라인 세부 정보** 도구 모음을 사용하여 **타임라인 세부 정보** 뷰 항목의 주석을 정렬, 필터링 및 지정합니다.
 
@@ -121,7 +121,7 @@ ms.locfileid: "71128286"
 |![타임라인 세부 정보 필터링 목록](../profiling/media/timeline_filter.png "TIMELINE_Filter")|선택한 범주와 이벤트의 길이를 기준으로 목록을 필터링합니다.|
 |![타임라인 세부 정보 사용자 지정](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|이벤트에 대한 주석을 지정할 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF 팀 블로그: WPF 애플리케이션의 새로운 UI 성능 분석 도구](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](/previous-versions/windows/apps/hh750313\(v\=win.10\))

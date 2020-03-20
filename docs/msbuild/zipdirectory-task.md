@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630641"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094570"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 작업
 
@@ -52,7 +52,7 @@ ms.locfileid: "77630641"
 
 ## <a name="example"></a>예제
 
- 다음 예제에서는 프로젝트를 빌드한 후 출력 디렉터리에서 *.zip* 보관을 만듭니다.
+ 다음 예제에서는 (가져온 *.targets* 파일로 사용되는 경우) 프로젝트를 빌드한 후 출력 디렉터리에서 *.zip* 보관 파일을 만듭니다. `$(OutputPath)` 속성은 일반적으로 MSBuild 프로젝트 파일에서 정의되므로, 다음 파일을 가져오는 프로젝트 파일은 zip 보관 파일 `output.zip`을 생성합니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

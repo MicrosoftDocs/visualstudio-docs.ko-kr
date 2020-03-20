@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: f2b9ea7799656b0dd7dacd35bde62dc84aea08dd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779066"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>방법: 명령줄을 통해 ASP.NET 웹 애플리케이션에 프로파일러를 연결하여 메모리 데이터 수집
@@ -106,7 +106,7 @@ ms.locfileid: "74779066"
 
 1. 대상 애플리케이션에서 프로파일러를 분리하려면 다음 단계 중 하나를 수행합니다.
 
-   - **VSPerfCmd** [/detach](../profiling/detach.md) 입력
+   - Type **VSPerfCmd** [/detach](../profiling/detach.md)
 
       또는
 
@@ -126,6 +126,6 @@ ms.locfileid: "74779066"
 
     **IISReset /start**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)

@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957871"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>5단계: Django에서 사용자 인증
@@ -204,7 +204,7 @@ ms.locfileid: "62957871"
 
 1. 모든 작업이 완료되면 서버를 중지하고 다시 한번 변경 내용을 소스 제어에 커밋합니다.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>질문: \<form\> 요소에 나타나는 {% csrf_token %} 태그의 용도는 무엇인가요?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>질문: \<form\> 요소에 나타나는 {% csrf_token %} 태그의 용도는 무엇인가요?
 
 대답: `{% csrf_token %}` 태그에는 Django의 기본 제공 [CSRF(교차 사이트 요청 위조) 보호](https://docs.djangoproject.com/en/2.0/ref/csrf/)(Django 문서)가 포함됩니다. 일반적으로 양식과 같이 POST, PUT 또는 DELETE 요청 메서드를 포함하는 요소에 이 태그를 추가합니다. 그런 다음, 템플릿 렌더링 함수(`render`)에서 필요한 보호를 삽입합니다.
 

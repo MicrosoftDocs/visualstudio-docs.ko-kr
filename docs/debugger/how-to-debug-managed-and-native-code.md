@@ -16,10 +16,10 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77416362"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>자습서: 동일한 디버깅 세션에서 C# 및 C++ 디버그
@@ -63,7 +63,7 @@ Visual Studio를 설치했지만 필요한 워크로드가 없는 경우 Visual 
 
     **빈 프로젝트** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
 
-    Visual Studio가 프로젝트를 만듭니다.
+    Visual Studio가 프로젝트를 생성합니다.
 
 1. **솔루션 탐색기**에서 **원본 파일**을 선택한 다음, **프로젝트** > **새 항목 추가**를 선택합니다. 또는 **원본 파일**을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택합니다.
 

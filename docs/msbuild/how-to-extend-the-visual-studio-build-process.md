@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cca0c55951d4928347528814d043bb8a7c55be9a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633852"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093936"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 
@@ -28,7 +28,6 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 - 공통 대상(*Microsoft.Common.targets* 또는 가져오는 파일)에 정의된 미리 정의된 특정 대상을 재정의합니다.
 
 - 공통 대상에 정의된 “DependsOn” 속성을 재정의합니다.
-## <a name="override-predefined-targets"></a>미리 정의된 대상 재정의
 
 ## <a name="override-predefined-targets"></a>미리 정의된 대상 재정의
 
@@ -69,6 +68,45 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 |`BeforePublish`, `AfterPublish`|이러한 대상 중 하나에 삽입된 작업은 핵심 게시 기능이 호출되기 전 또는 후에 실행됩니다.|
 |`BeforeResolveReferences`, `AfterResolveReferences`|이러한 대상 중 하나에 삽입된 작업은 어셈블리 참조가 확인되기 전이나 후에 실행됩니다.|
 |`BeforeResGen`, `AfterResGen`|이러한 대상 중 하나에 삽입된 작업은 어셈블리 리소스가 생성되기 전이나 후에 실행됩니다.|
+
+## <a name="example-aftertargets-and-beforetargets"></a>예: AfterTargets 및 BeforeTargets
+
+다음 예제에서는 `AfterTargets` 특성을 사용하여 출력 파일에 무언가를 수행하는 사용자 지정 대상을 추가하는 방법을 보여 줍니다. 이 경우에는 새 폴더 *CustomOutput*에 출력 파일을 복사합니다.  이 예제에서는 또한, `BeforeTargets` 특성을 사용하고 `CoreClean` 대상보다 먼저 사용자 지정 정리 작업이 실행되도록 지정하여 `CustomClean` 대상이 있는 사용자 지정 빌드 작업을 통해 만들어진 파일을 정리하는 방법도 보여 줍니다.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+   <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+</PropertyGroup>
+
+<Target Name="CustomAfterBuild" AfterTargets="Build">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean" BeforeTargets="CoreClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+> [!WARNING]
+> 이전 섹션의 표에 나열된 사전 정의된 대상과 다른 이름을 사용해야 합니다(예: 여기서는 사용자 지정 빌드 대상을 `AfterBuild`가 아니라 `CustomAfterBuild`로 지정함). 사전 정의된 대상이 이 대상을 역시 지정하는 SDK 가져오기에 의해 재정의되기 떄문입니다. 이 대상을 재정의하는 대상 파일의 가져오기는 가시적으로 확인되지 않지만 SDK를 참조하는 `Sdk` 특성 메서드를 사용할 때 프로젝트 파일 끝에 암시적으로 추가됩니다.
 
 ## <a name="override-dependson-properties"></a>DependsOn 속성 재정의
 
@@ -130,6 +168,60 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 |`BuildDependsOn`|전체 빌드 프로세스 앞이나 뒤에 사용자 지정 대상을 삽입하려는 경우 재정의할 속성입니다.|
 |`CleanDependsOn`|사용자 지정 빌드 프로세스에서 출력을 정리하려는 경우 재정의할 속성입니다.|
 |`CompileDependsOn`|컴파일 단계 앞이나 뒤에 사용자 지정 프로세스를 삽입하려는 경우 재정의할 속성입니다.|
+
+## <a name="example-builddependson-and-cleandependson"></a>예: BuildDependsOn 및 CleanDependsOn
+
+다음 예제는 `BeforeTargets` 및 `AfterTargets` 예제와 비슷하지만 비슷한 기능을 구현하는 방법을 보여 줍니다. `BuildDependsOn`을 사용해 빌드를 확장하여 빌드 후 출력 파일을 복사하는 고유 작업 `CustomAfterBuild`를 추가할 뿐만 아니라 `CleanDependsOn`을 사용하여 해당하는 `CustomClean` 작업을 추가합니다.  
+
+이 예제에서는 SDK 스타일 프로젝트입니다. 이 문서 앞부분에서 SDK 스타일 프로젝트에 대해 설명한 대로 Visual Studio에서 프로젝트 파일을 생성할 때 사용하는 `Sdk` 특성 대신 수동 가져오기 메서드를 사용해야 합니다.
+
+```xml
+<Project>
+<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+</PropertyGroup>
+
+<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <BuildDependsOn>
+      $(BuildDependsOn);CustomAfterBuild
+    </BuildDependsOn>
+
+    <CleanDependsOn>
+      $(CleanDependsOn);CustomClean
+    </CleanDependsOn>
+
+    <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+  </PropertyGroup>
+
+<Target Name="CustomAfterBuild">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+요소의 순서가 중요합니다. `BuildDependsOn` 및 `CleanDependsOn` 요소는 표준 SDK 대상 파일을 가져온 후에 표시되어야 합니다.
 
 ## <a name="see-also"></a>참조
 

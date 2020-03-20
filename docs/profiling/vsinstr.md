@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 386d81d14996547670944ce1b4911233eb9c8955
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779924"
 ---
 # <a name="vsinstr"></a>VSInstr
@@ -56,7 +56,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:** {**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|프로파일링 실행 중에 데이터 수집을 중지합니다. 지정된 위치에 SuspendProfile API를 삽입합니다.<br /><br /> **Before** - 대상 함수 진입 위치 바로 앞에 삽입합니다.<br /><br /> **After** - 대상 함수 종료 위치 바로 뒤에 삽입합니다.<br /><br /> **Top** - 대상 함수의 진입 위치 바로 뒤에 삽입합니다.<br /><br /> **Bottom** - 대상 함수의 각 반환 바로 앞에 삽입합니다.<br /><br /> `funcname` - 대상 함수의 이름입니다.<br /><br /> 대상 함수가 StartProfile 함수를 포함하는 경우에는 그 앞에 SuspendProfile 함수가 삽입됩니다.|
 |**ResumeOnly:** {**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|프로파일링 실행 중에 데이터 수집을 시작하거나 다시 시작합니다.<br /><br /> 일반적으로 **SuspendOnly** 옵션이 프로파일링을 중지한 후 프로파일링을 시작하는 데 사용됩니다. 지정된 위치에 ResumeProfile API를 삽입합니다.<br /><br /> **Before** - 대상 함수 진입 위치 바로 앞에 삽입합니다.<br /><br /> **After** - 대상 함수 종료 위치 바로 뒤에 삽입합니다.<br /><br /> **Top** - 대상 함수의 진입 위치 바로 뒤에 삽입합니다.<br /><br /> **Bottom** - 대상 함수의 각 반환 바로 앞에 삽입합니다.<br /><br /> `funcname` - 대상 함수의 이름입니다.<br /><br /> 대상 함수가 StopProfile 함수를 포함하는 경우에는 그 뒤에 ResumeProfile 함수가 삽입됩니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

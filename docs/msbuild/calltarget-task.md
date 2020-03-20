@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831153a734fa88c045f7b8397db0a033e53862c7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634489"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094564"
 ---
 # <a name="calltarget-task"></a>CallTarget 작업
 
@@ -43,6 +43,8 @@ ms.locfileid: "77634489"
  `Targets`에 지정된 대상이 실패하고 `RunEachTargetSeparately`가 `true`인 경우 작업이 나머지 대상을 계속 빌드합니다.
 
  기본 대상을 빌드하려는 경우 [MSBuild 작업](../msbuild/msbuild-task.md)을 사용하고 `$(MSBuildProjectFile)`와 동일한 `Projects` 매개 변수를 설정합니다.
+
+`CallTarget`을 사용하는 경우 MSBuild는 호출이 발생한 동일 범위가 아니라 새 범위에서 호출된 대상을 평가합니다. 즉, 호출된 대상의 모든 항목 및 속성 변경 내용이 호출이 발생한 대상에 표시되지 않습니다.  호출이 발생한 대상에 정보를 전달하려면 `TargetOutputs` 출력 매개 변수를 사용합니다.
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 

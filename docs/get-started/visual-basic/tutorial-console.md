@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579942"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>자습서: Visual Studio에서 Visual Basic 시작
@@ -99,7 +99,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
    >
    > ![Visual Studio Installer에서 .NET Core 플랫폼 간 개발 워크로드](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 “[프로젝트 만들기](#create-a-project)” 프로시저의 2단계로 돌아갑니다.
+   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
 1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName*을 입력합니다. 그런 다음, **만들기**를 선택합니다.
 
@@ -109,7 +109,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 ::: moniker-end
 
-## <a name="create-a-what-is-your-name-application"></a>“What Is Your Name” 애플리케이션 만들기
+## <a name="create-a-what-is-your-name-application"></a>"What Is Your Name" 애플리케이션 만들기
 
 사용자 이름 입력을 요청한 다음 날짜 및 시간과 함께 해당 이름을 표시하는 앱을 만들어 보겠습니다. 방법은 다음과 같습니다.
 
@@ -169,7 +169,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
  ::: moniker-end
 
-## <a name="create-a-calculate-this-application"></a>“Calculate This” 애플리케이션 만들기
+## <a name="create-a-calculate-this-application"></a>"Calculate This" 애플리케이션 만들기
 
 ::: moniker range="vs-2017"
 
