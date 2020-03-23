@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "70060398"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 구독의 새로운 기능
@@ -39,7 +39,7 @@ GitHub Enterprise는 기업계약을 통해 구입한 Visual Studio Enterprise �
 
 ## <a name="2019-q1-january-march"></a>2019 Q1(1월~3월)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>[구독 관리 포털](https://manage.visualstudio.com)에 최대 사용량 추가
+### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>[구독 관리 포털](https://manage.visualstudio.com)에 최대 사용량 추가
 Visual Studio 구독 관리 포털의 새로운 기능을 사용하면 구매 및 할당된 구독 수를 추적하고, 지난 1년 내 및 규약 기간 동안 할당된 각 수준의 최대 구독 수를 식별할 수 있습니다. 이것은 현재 구독 사용량 및 향후 구매 계획을 이해하는 데 도움이 됩니다. 
 
   > [!div class="mx-imgBorder"]

@@ -102,7 +102,7 @@ sections:
             html: <p>문제를 조사하려면 디버거에서 앱을 실행하세요.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Debug
+            title: 디버그
           - href: version-control.md
             html: '<p>Azure DevOps, Git 또는 Subversion 소스 리포지토리에 액세스합니다.</p>'
             image:

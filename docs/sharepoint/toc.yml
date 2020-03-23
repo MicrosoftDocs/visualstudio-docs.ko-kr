@@ -34,13 +34,13 @@
               href: form-support-in-workflows.md
             - name: '연습: SharePoint 워크플로 솔루션 만들기 및 디버깅'
               href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
-            - name: '연습: 연결 및 초기화 양식을 사용하여 워크플로 만들기'
+            - name: '연습: 연결 및 초기화 폼이 있는 워크플로 만들기'
               href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
             - name: '연습: 워크플로에 애플리케이션 페이지 추가'
               href: walkthrough-add-an-application-page-to-a-workflow.md
-            - name: '연습: 사용자 지정 사이트 워크플로 활동 만들기'
+            - name: '연습: 사용자 지정 사이트 워크플로 작업 만들기'
               href: walkthrough-create-a-custom-site-workflow-activity.md
-            - name: '연습: SharePoint Designer의 재사용 가능 워크플로를 Visual Studio로 가져오기'
+            - name: '연습: Visual Studio에 SharePoint Designer의 다시 사용 가능한 워크플로 가져오기'
               href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
         - name: SharePoint에 대한 페이지 만들기
           items:
@@ -60,9 +60,9 @@
               href: how-to-create-a-sharepoint-web-part.md
             - name: 디자이너를 사용하여 SharePoint 웹 파트 만들기
               href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
-            - name: '연습: SharePoint용 웹 파트 만들기'
+            - name: '연습: SharePoint를 위한 웹 파트 만들기'
               href: walkthrough-creating-a-web-part-for-sharepoint.md
-            - name: '연습: Designer를 사용하여 SharePoint용 웹 파트 만들기'
+            - name: '연습: 디자이너를 사용하여 SharePoint를 위한 웹 파트 만들기'
               href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
             - name: '연습: SharePoint용 OData를 표시하는 Silverlight 웹 파트 만들기'
               href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
@@ -120,7 +120,7 @@
                   href: creating-an-association-between-entities.md
                 - name: 엔터티 간 연결 만들기
                   href: how-to-create-an-association-between-entities.md
-                - name: '연습: 비즈니스 데이터를 사용하여 SharePoint에서 외부 목록 만들기'
+                - name: '연습: 비즈니스 데이터를 사용하여 SharePoint에 외부 목록 만들기'
                   href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
         - name: SharePoint에 대한 사이트 정의 만들기
           items:
@@ -222,7 +222,7 @@
               href: how-to-add-and-remove-items-to-sharepoint-features.md
             - name: 기능 종속성 추가 및 제거
               href: how-to-add-and-remove-feature-dependencies.md
-            - name: '연습: 기능 이벤트 수신기 추가'
+            - name: '연습: 기능 이벤트 수신자 추가'
               href: walkthrough-add-feature-event-receivers.md
         - name: SharePoint 솔루션 패키지 만들기
           items:
@@ -252,7 +252,7 @@
               href: how-to-set-sharepoint-deployment-commands.md
             - name: SharePoint 배포 구성 편집
               href: how-to-edit-a-sharepoint-deployment-configuration.md
-            - name: '연습: 프로젝트 작업 목록 정의 만들기'
+            - name: '연습: 프로젝트 작업 목록 정의 배포'
               href: walkthrough-deploying-a-project-task-list-definition.md
         - name: 대체 가능 매개 변수
           href: replaceable-parameters.md

@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/06/2018
 ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985295"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습
@@ -50,7 +50,7 @@ ms.locfileid: "74985295"
     나열된 서비스가 없는 경우 **새로 만들기** 단추(9단계 참조)를 클릭합니다.
 
 7. `MobileServiceClient`에 대한 템플릿 코드를 PCL로 복사합니다. 파일 위치의 인스턴스가 하나만 있는 경우 파일 위치는 중요하지 않습니다.
-  권장하는 방법은 `MobileServiceClient`를 사용하고 모든 Azure 상호 작용을 처리하는 `AzureService` 클래스를 만드는 것입니다.
+  권장하는 방법은 `AzureService`를 사용하고 모든 Azure 상호 작용을 처리하는 `MobileServiceClient` 클래스를 만드는 것입니다.
 
     ![구성 코드를 앱에 복사](media/connected-services-image007.png "구성 코드를 앱에 복사")
 

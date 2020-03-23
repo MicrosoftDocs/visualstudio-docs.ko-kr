@@ -1,4 +1,4 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Visual Studio를 사용한 Azure 개발
 metadata:
   title: Azure 개발
@@ -10,106 +10,112 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
+  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "76022309"
 landingContent:
-  - title: Azure App Service에 배포
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Azure에 ASP.NET Core 앱 배포
-            url: /azure/app-service/app-service-web-get-started-dotnet-framework
-          - text: Azure에 ASP.NET 웹앱 배포
-            url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
-          - text: Visual Studio 및 Git을 사용하여 Azure에 연속 배포
-            url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-          - text: Azure Pipelines를 사용하여 Azure에 지속적인 배포
-            url: /azure/devops/pipelines/get-started-yaml
-          - text: Azure VM에 ASP.NET 웹앱 배포
-            url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
-  - title: 'Azure App Services, Logic Apps 및 Azure Functions'
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Azure App Service를 사용하여 웹앱 빌드 및 호스팅
-            url: /azure/app-service/app-service-web-get-started-dotnet
-          - text: Azure Logic Apps를 사용하여 자동화된 확장 가능한 워크플로 빌드
-            url: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
-          - text: Azure Functions를 사용하여 이벤트 처리
-            url: /azure/azure-functions/functions-create-your-first-function-visual-studio
-      - linkListType: overview
-        links:
-          - text: .NET 및 .NET Core 개발자용 Azure SDK
-            url: /dotnet/azure
-  - title: 컨테이너 개발
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: 컨테이너 개발
-            url: /visualstudio/containers
-          - text: Visual Studio의 컨테이너 도구
-            url: /visualstudio/containers/overview
-          - text: Kubernetes 도구
-            url: /visualstudio/containers/tutorial-kubernetes-tools
-  - title: Azure 서비스 디버그 및 성능 분석
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Azure의 IIS에서 ASP.NET Core 디버그
-            url: /visualstudio/debugger/remote-debugging-azure
-          - text: Azure에서 클라우드 서비스 디버그
-            url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-          - text: 가상 머신에서 실행 중인 앱 디버그
-            url: vs-azure-tools-debug-cloud-services-virtual-machines.md
-          - text: Azure의 클라우드 서비스 성능 측정
-            url: vs-azure-tools-performance-profiling-cloud-services.md
-  - title: 연결된 서비스
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Azure Storage
-            url: vs-azure-tools-connected-services-storage.md
-          - text: Azure Key Vault
-            url: /azure/key-vault/vs-key-vault-add-connected-service
-          - text: Azure Active Directory
-            url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-          - text: Cognitive Services - Text Analytics
-            url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-          - text: Cognitive Services - Bing News Search
-            url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-          - text: Cognitive Services - Face API
-            url: /azure/cognitive-services/face/vs-face-connected-service
-          - text: Cognitive Services - Computer Vision
-            url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
-  - title: Azure Cloud Services
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Azure 클라우드 서비스 프로젝트 만들기 및 구성
-            url: vs-azure-tools-azure-project-create.md
-          - text: 로컬 및 Azure에서 클라우드 서비스 디버그
-            url: vs-azure-tools-debugging-cloud-services-overview.md
-          - text: Visual Studio 프로파일러를 사용하여 성능 분석
-            url: vs-azure-tools-performance-profiling-cloud-services.md
-          - text: Azure에 클라우드 서비스 배포
-            url: vs-azure-tools-publishing-a-cloud-service.md
-          - text: Azure에서 실행 중인 클라우드 서비스 및 가상 머신 모니터링 및 진단
-            url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-  - title: 클라우드 탐색기
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Visual Studio에서 Azure 스토리지 계정에 액세스
-            url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-          - text: Visual Studio에서 Virtual Machines에 액세스
-            url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-  - title: 기타 리소스
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Azure 리소스 그룹
-            url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
-          - text: Data Lake Analytics
-            url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
-          - text: Stream Analytics
-            url: /azure/stream-analytics/stream-analytics-quick-create-vs
-          - text: Service Fabric
-            url: /azure/service-fabric/service-fabric-get-started
+- title: Azure App Service에 배포
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure에 ASP.NET Core 앱 배포
+      url: /azure/app-service/app-service-web-get-started-dotnet-framework
+    - text: Azure에 ASP.NET 웹앱 배포
+      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+    - text: Visual Studio 및 Git을 사용하여 Azure에 연속 배포
+      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+    - text: Azure Pipelines를 사용하여 Azure에 지속적인 배포
+      url: /azure/devops/pipelines/get-started-yaml
+    - text: Azure VM에 ASP.NET 웹앱 배포
+      url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
+- title: Azure App Services, Logic Apps 및 Azure Functions
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure App Service를 사용하여 웹앱 빌드 및 호스팅
+      url: /azure/app-service/app-service-web-get-started-dotnet
+    - text: Azure Logic Apps를 사용하여 자동화된 확장 가능한 워크플로 빌드
+      url: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+    - text: Azure Functions를 사용하여 이벤트 처리
+      url: /azure/azure-functions/functions-create-your-first-function-visual-studio
+  - linkListType: overview
+    links:
+    - text: .NET 및 .NET Core 개발자용 Azure SDK
+      url: /dotnet/azure
+- title: 컨테이너 개발
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 컨테이너 개발
+      url: /visualstudio/containers
+    - text: Visual Studio의 컨테이너 도구
+      url: /visualstudio/containers/overview
+    - text: Kubernetes 도구
+      url: /visualstudio/containers/tutorial-kubernetes-tools
+- title: Azure 서비스 디버그 및 성능 분석
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure의 IIS에서 ASP.NET Core 디버그
+      url: /visualstudio/debugger/remote-debugging-azure
+    - text: Azure에서 클라우드 서비스 디버그
+      url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
+    - text: 가상 머신에서 실행 중인 앱 디버그
+      url: vs-azure-tools-debug-cloud-services-virtual-machines.md
+    - text: Azure의 클라우드 서비스 성능 측정
+      url: vs-azure-tools-performance-profiling-cloud-services.md
+- title: 연결된 서비스
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure Storage
+      url: vs-azure-tools-connected-services-storage.md
+    - text: Azure Key Vault
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure Active Directory
+      url: /azure/active-directory/develop/vs-active-directory-add-connected-service
+    - text: Cognitive Services - Text Analytics
+      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
+    - text: Cognitive Services - Bing News Search
+      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+    - text: Cognitive Services - Face API
+      url: /azure/cognitive-services/face/vs-face-connected-service
+    - text: Cognitive Services - Computer Vision
+      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+- title: Azure Cloud Services
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Azure 클라우드 서비스 프로젝트 만들기 및 구성
+      url: vs-azure-tools-azure-project-create.md
+    - text: 로컬 및 Azure에서 클라우드 서비스 디버그
+      url: vs-azure-tools-debugging-cloud-services-overview.md
+    - text: Visual Studio 프로파일러를 사용하여 성능 분석
+      url: vs-azure-tools-performance-profiling-cloud-services.md
+    - text: Azure에 클라우드 서비스 배포
+      url: vs-azure-tools-publishing-a-cloud-service.md
+    - text: Azure에서 실행 중인 클라우드 서비스 및 가상 머신 모니터링 및 진단
+      url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
+- title: Cloud Explorer
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Visual Studio에서 Azure 스토리지 계정에 액세스
+      url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
+    - text: Visual Studio에서 Virtual Machines에 액세스
+      url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
+- title: 관련 자료
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Azure 리소스 그룹
+      url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
+    - text: Data Lake Analytics
+      url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+    - text: Stream Analytics
+      url: /azure/stream-analytics/stream-analytics-quick-create-vs
+    - text: Service Fabric
+      url: /azure/service-fabric/service-fabric-get-started

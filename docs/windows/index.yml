@@ -11,10 +11,10 @@ metadata:
   f1_keywords:
   - MSDNSTART
   ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
-  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 02/28/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "77904063"
 highlightedContent:
   items:
@@ -31,7 +31,7 @@ highlightedContent:
     itemType: learn
     url: /learn/
 conceptualContent:
-  title: 시작
+  title: 시작하기
   items:
   - title: Visual Studio를 사용하는 방법 알아보기
     links:
@@ -136,7 +136,7 @@ additionalContent:
     - title: 테스트
       summary: 프로젝트에서 테스트를 실행합니다.
       url: ../test/improve-code-quality.md
-    - title: '배포:'
+    - title: 배포
       summary: 웹 배포, InstallShield, NuGet, 연속 통합 등을 사용하여 앱과 코드를 공유합니다.
       url: ../deployment/index.yml
     - title: 버전 제어
@@ -148,10 +148,10 @@ additionalContent:
     - title: 성능 측정
       summary: 병목 상태를 식별하고 진단 도구를 사용하여 코드 성능을 최적화합니다.
       url: ../profiling/index.yml
-    - title: 확장
+    - title: Extend
       summary: 개발 환경을 개선하기 위해 Visual Studio IDE에 고유한 기능을 추가합니다.
       url: ../extensibility/index.yml
-    - title: 데이터
+    - title: data
       summary: 로컬, 클라우드 등 어디서나 모든 데이터베이스 또는 서비스와 연결하는 데이터 앱을 만듭니다.
       url: ../data-tools/accessing-data-in-visual-studio.md
     - title: 공동 작업
@@ -160,7 +160,7 @@ additionalContent:
     - title: Docker 컨테이너를 사용하여 개발
       summary: Docker 컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.
       url: ../containers/index.yml
-  - title: 작업
+  - title: 워크로드
     items:
     - title: 웹 및 클라우드
       links:

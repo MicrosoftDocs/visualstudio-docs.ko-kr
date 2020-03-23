@@ -3,15 +3,15 @@ title: 회사 또는 학교 계정으로 Visual Studio 구독 로그인 | Micros
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: 회사 또는 학교 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: fdad16a95c3686d738bd3ef77eb199549082b766
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315344"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508994"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>회사 또는 학교 계정으로 Visual Studio 구독 로그인 
 
@@ -69,6 +69,12 @@ A:  여러 사용자의 구독이 둘 이상입니다.  [https://my.visualstudio
 2. 동일한 이메일 주소와 연결된 구독이 여러 개 있습니다.  이메일 주소와 연결된 구독을 모두 보려면 https://my.visualstudio.com/subscriptions 에서 사용하려는 구독을 선택합니다. 
 
 여전히 문제가 있을 경우 [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/) 팀에 연락하여 도움을 받으실 수 있습니다.  
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독 포털에 성공적으로 로그인한 후에는 https://my.visualstudio.com/benefits 에서 혜택 페이지를 방문하여 사용자가 이용할 수 있는 유용한 도구, 서비스 및 제안을 살펴보는 것이 좋습니다.  

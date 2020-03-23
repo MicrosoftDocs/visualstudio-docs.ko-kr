@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985211"
 ---
 # <a name="source-editor"></a>소스 편집기
 
-코드를 간결하고 효율적으로 작성하려면 신뢰할 수 있는 소스 편집기가 꼭 필요합니다. Mac용 Visual Studio에서 제공하는 정교한 소스 편집기는 IDE 상호 작용의 핵심을 이룹니다. 소스 편집기는 예상할 수 있고 작업을 쉽게 수행할 수 있는 기능을 제공합니다. 구문 강조 표시, 코드 조각, 코드 접기 등과 같은 기본적인 기능부터 완전한 기능의 IntelliSense 코드 완성과 같은 Roslyn 컴파일러 통합에 이점에 이르기까지 다양합니다.
+코드를 간결하고 효율적으로 작성하려면 신뢰할 수 있는 소스 편집기가 꼭 필요합니다. Mac용 Visual Studio에서 제공하는 정교한 소스 편집기는 IDE 상호 작용의 핵심을 이룹니다. 소스 편집기는 구문 강조 표시, 코드 조각, 코드 접기 등의 기초적인 기능부터 Roslyn 컴파일러 통합에 따르는 완벽한 기능의 IntelliSense 코드 완성과 같은 이점에 이르기까지 작업의 편의성을 높여 주는 기능을 다양하게 제공합니다.
 
 Mac용 Visual Studio의 소스 편집기에서는 디버깅, 리팩터링, 버전 제어 통합 등 IDE의 다른 모든 기능을 원활하게 사용할 수 있습니다.
 
@@ -50,7 +50,7 @@ Mac용 Visual Studio는 플랫폼 간 개발을 최대한 편리하고 실용적
 
 소스 코드에서 보이지 않는 문자를 표시해야 하는 경우도 있습니다. 이는 코딩 표준을 준수하고 불필요한 공간 낭비를 방지하는 수단이 됩니다. 또한 정확한 줄 들여쓰기가 품질을 좌우하는 F# 코드를 작성할 때 유용합니다.
 
-**Visual Studio > 기본 설정 > 텍스트 편집기 > 표식 및 눈금자**로 이동하여 공백을 표시하는 옵션을 설정합니다. 이 옵션을 선택하면 보이지 않는 문자를 표시할  때  다음과 같이 선택할 수 있습니다. 안 함, 선택 시 또는 항상:
+**Visual Studio > 기본 설정 > 텍스트 편집기 > 표식 및 눈금자**로 이동하여 공백을 표시하는 옵션을 설정합니다. 이 옵션을 선택하면 보이지 않는 문자를 표시할 _경우_ 를 안 함(Never), 선택 시(On Selection), 항상(Always) 중 하나로 설정할 수 있습니다.
 
 ![보이지 않는 문자 표시 옵션](media/source-editor-image3.png)
 

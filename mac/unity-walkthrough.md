@@ -7,10 +7,10 @@ ms.date: 05/20/2019
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.openlocfilehash: c25df777a9af10859c70741a78c880a57c6f5b8e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984799"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 Unity로 게임 빌드 시작하기
@@ -24,7 +24,7 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 > [!div class="checklist"]
 > * Mac용 Visual Studio를 사용한 Unity 개발에 대해 알아보기
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - Mac용 Visual Studio([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
 - Unity 5.6.1 Personal Edition 이상([https://store.unity.com](https://store.unity.com/), 실행하려면 unity.com 계정 필요)

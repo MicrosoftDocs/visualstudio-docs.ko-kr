@@ -202,9 +202,9 @@
                   href: default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
                 - name: 기본 바로 가기 키
                   href: default-keyboard-shortcuts-in-visual-studio.md
-        - name: IntelliSense 사용
+        - name: Using IntelliSense
           items:
-            - name: IntelliSense 사용
+            - name: Using IntelliSense
               href: using-intellisense.md
             - name: Visual Basic 관련 IntelliSense
               items:
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<value>
+                    - name: \<값>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Visual Studio IDE 64비트 지원
       href: visual-studio-ide-64-bit-support.md
-    - name: Visual Studio 샘플
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: 사용자 계정 및 업데이트
       items:
@@ -498,7 +498,7 @@
           href: work-with-multiple-user-accounts.md
         - name: Visual Studio 잠금을 해제하는 방법
           href: how-to-unlock-visual-studio.md
-        - name: 알림
+        - name: 공지
           href: visual-studio-notifications.md
     - name: IDE 개인 설정
       items:
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: 보안 관련 참조 목록
           href: security-bibliography.md
-    - name: Visual Studio 샘플
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Microsoft 도움말 뷰어
       items:
@@ -676,7 +676,7 @@
                   href: reference/synchronized-settings-environment-options-dialog-box.md
                 - name: '옵션 대화 상자, 환경, 탭 및 창'
                   href: reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: '옵션 대화 상자, 환경, 작업 목록'
+                - name: 'Task List, Environment, Options Dialog Box'
                   href: reference/task-list-environment-options-dialog-box.md
                 - name: '옵션 대화 상자, 환경, 웹 브라우저'
                   href: reference/web-browser-environment-options-dialog-box.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: '프로젝트 디자이너, 디버그 페이지'
                   href: reference/debug-page-project-designer.md
-                - name: '내 확장명 페이지, 프로젝트 디자이너'
+                - name: '프로젝트 디자이너, My 확장명 페이지'
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: '프로젝트 디자이너, 게시 페이지'
                   items:
@@ -852,7 +852,7 @@
               href: reference/projectconfig-devenv-exe.md
             - name: /Rebuild
               href: reference/rebuild-devenv-exe.md
-            - name: /ResetAddin
+            - name: /Resetaddin
               href: reference/resetaddin-devenv-exe.md
             - name: /InstallVSTemplates
               href: reference/installvstemplates-devenv-exe.md
@@ -958,9 +958,9 @@
           href: ../msbuild/msbuild.md
         - name: IDE 오류 문제 해결을 위한 리소스
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-        - name: 장애인을 위한 내게 필요한 옵션
+        - name: 기능 제약을 느끼는 사용자를 위한 내게 필요한 옵션
           items:
-            - name: 장애인을 위한 내게 필요한 옵션
+            - name: 기능 제약을 느끼는 사용자를 위한 내게 필요한 옵션
               href: reference/accessibility-for-people-with-disabilities.md
             - name: Visual Studio의 내게 필요한 옵션 기능
               items:

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180348"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기
@@ -46,7 +46,7 @@ Python IDE인 Visual Studio에 대한 5~10분 분량의 소개에서는 Flask �
 
     ![Python 웹 프로젝트가 선택된 새 프로젝트 대화 상자](media/quickstart-python-00-web-project.png)
 
-    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자**를 실행하여 **추가** > **수정**을 선택하고 **Python 개발** 워크 로드를 선택한 다음, **수정**을 선택합니다.
+    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자**를 실행하여 **추가** > **수정**을 선택하고 **Python 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
     ![Visual Studio 설치 관리자의 Python 개발 작업](../python/media/installation-python-workload.png)
 
@@ -62,7 +62,7 @@ Python IDE인 Visual Studio에 대한 5~10분 분량의 소개에서는 Flask �
 
     ![Python 웹 프로젝트가 선택된 새 프로젝트 화면 만들기](media/quickstart-python-00-web-project-2019a.png)
 
-    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자**를 실행하여 **추가** > **수정**을 선택하고 **Python 개발** 워크 로드를 선택한 다음, **수정**을 선택합니다.
+    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자**를 실행하여 **추가** > **수정**을 선택하고 **Python 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
     ![Visual Studio 설치 관리자의 Python 개발 작업](../python/media/installation-python-workload.png)
 

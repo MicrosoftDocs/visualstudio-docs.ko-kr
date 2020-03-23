@@ -256,7 +256,7 @@
               href: strings-element-bootstrapper.md
             - name: <Schedules> 요소(부트스트래퍼)
               href: schedules-element-bootstrapper.md
-- name: 참조
+- name: 참고
   items:
     - name: ClickOnce 참조
       items:

@@ -10,10 +10,10 @@ metadata:
   manager: jillfra
   ms.date: 09/20/2019
   ms.openlocfilehash: 7bb755fc13215b7087a0023a8e2a19442415092b
-  ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 02/25/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "77579267"
 landingContent:
 - title: 디버깅 정보
@@ -26,11 +26,11 @@ landingContent:
       url: debugger-feature-tour.md
     - text: 디버깅 작업 찾기
       url: find-your-debugging-task.md
-- title: 시작
+- title: 시작하기
   linkLists:
   - linkListType: tutorial
     links:
-    - text: 완전 초보자를 위한 디버깅
+    - text: 완전 초보자를 디버깅
       url: debugging-absolute-beginners.md
     - text: C#을 디버깅하는 방법 알아보기
       url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json

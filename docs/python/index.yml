@@ -11,42 +11,48 @@ metadata:
   author: JoshuaPartlow
   ms.author: joshuapa
   ms.date: 09/23/2019
+  ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "71322481"
 landingContent:
-  - title: Visual Studio의 Python 지원 정보
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Python 지원 개요
-            url: overview-of-python-tools-for-visual-studio.md
-          - text: Visual Studio IDE 둘러보기
-            url: visual-studio-ide.md
-  - title: Python 시작
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Visual Studio에서 Python 지원 설치
-            url: installing-python-support-in-visual-studio.md
-          - text: 코드 작성 및 편집
-            url: editing-python-code-in-visual-studio.md
-          - text: 코드 디버그
-            url: debugging-python-in-visual-studio.md
-          - text: 테스트 작성 및 실행
-            url: unit-testing-python-in-visual-studio.md
-          - text: 대화형 REPL 사용
-            url: python-interactive-repl-in-visual-studio.md
-          - text: Python 환경 관리
-            url: managing-python-environments-in-visual-studio.md
-          - text: Python용 C/C++ 확장 작성
-            url: working-with-c-cpp-python-in-visual-studio.md
-      - linkListType: tutorial
-        links:
-          - text: Visual Studio에서 Python 작업
-            url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-  - title: 웹 개발 시작
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Django 프레임워크를 사용하여 웹앱 만들기
-            url: learn-django-in-visual-studio-step-01-project-and-solution.md
-          - text: Flask 프레임워크를 사용하여 웹앱 만들기
-            url: learn-flask-visual-studio-step-01-project-solution.md
+- title: Visual Studio의 Python 지원 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Python 지원 개요
+      url: overview-of-python-tools-for-visual-studio.md
+    - text: Visual Studio IDE 둘러보기
+      url: visual-studio-ide.md
+- title: Python 시작
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Visual Studio에서 Python 지원 설치
+      url: installing-python-support-in-visual-studio.md
+    - text: 코드 작성 및 편집
+      url: editing-python-code-in-visual-studio.md
+    - text: 코드 디버그
+      url: debugging-python-in-visual-studio.md
+    - text: 테스트 작성 및 실행
+      url: unit-testing-python-in-visual-studio.md
+    - text: 대화형 REPL 사용
+      url: python-interactive-repl-in-visual-studio.md
+    - text: Python 환경 관리
+      url: managing-python-environments-in-visual-studio.md
+    - text: Python용 C/C++ 확장 작성
+      url: working-with-c-cpp-python-in-visual-studio.md
+  - linkListType: tutorial
+    links:
+    - text: Visual Studio에서 Python 작업
+      url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+- title: 웹 개발 시작
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Django 프레임워크를 사용하여 웹앱 만들기
+      url: learn-django-in-visual-studio-step-01-project-and-solution.md
+    - text: Flask 프레임워크를 사용하여 웹앱 만들기
+      url: learn-flask-visual-studio-step-01-project-solution.md

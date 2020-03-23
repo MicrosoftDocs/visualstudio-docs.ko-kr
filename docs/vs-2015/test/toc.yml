@@ -62,7 +62,7 @@
           items:
             - name: C++용 Microsoft 유닛 테스트 프레임워크를 사용하여 C/C++용 유닛 테스트 작성
               href: writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md
-            - name: 기존 C++ 애플리케이션에 유닛 테스트 추가
+            - name: 기존 C++ 애플리케이션에 단위 테스트 추가
               href: unit-testing-existing-cpp-applications-with-test-explorer.md
             - name: Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용
               href: using-microsoft-visualstudio-testtools-cppunittestframework.md
@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: 코드 검사 문제 해결
               href: troubleshooting-code-coverage.md
-        - name: 에뮬레이터를 사용하여 Sharepoint 2010 유닛 테스트 격리
+        - name: 에뮬레이터를 사용하여 Sharepoint 2010 단위 테스트 격리
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: UI 자동화를 사용하여 코드 테스트
       items:
@@ -132,7 +132,7 @@
                   href: sample-excel-extension-technologymanager-class.md
                 - name: PropertyProvider 클래스
                   href: sample-excel-extension-propertyprovider-class.md
-                - name: Element 클래스
+                - name: 요소 클래스
                   href: sample-excel-extension-element-classes.md
                 - name: ActionFilter 클래스
                   href: sample-excel-extension-actionfilter-class.md
@@ -152,9 +152,9 @@
       items:
         - name: Visual Studio로 스토어 앱 테스트
           href: testing-store-apps-with-visual-studio.md
-        - name: 유닛 테스트 만들기 및 실행
+        - name: 단위 테스트 만들기 및 실행
           items:
-            - name: 유닛 테스트 만들기 및 실행
+            - name: 단위 테스트 만들기 및 실행
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: C++ DLL 유닛 테스트
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md

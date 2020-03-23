@@ -3,15 +3,15 @@ title: MPN(Microsoft 파트너 네트워크)를 통해 제공된 Visual Studio �
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 MPN 파트너에 대한 최종 사용자에게 할당하는 방법입니다.
-ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
-ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492909"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947135"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)를 통해 제공된 Visual Studio 구독 관리
 역량을 구하거나 MPN에서 Action Pack을 구매하는 파트너는 Visual Studio 구독을 사용할 자격이 있습니다. 이러한 구독은 사용자별로 라이선스가 발급되며 파트너 회사에 근무하는 특정 지명 사용자에게 할당된 경우만 유효합니다.
@@ -26,7 +26,7 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 4. 첫 번째, 두 번째 또는 세 번째 **기술 담당자**를 선택하고 **저장**합니다.
 5. **요구사항 및 자산**을 선택합니다.
 6. **권한**을 선택합니다.
-7. **Visual Studio 구독**(참고: Visual Studio 구독 업데이트 보류 중)을 선택합니다.
+7. **Visual Studio 구독**을 선택합니다. (참고: Visual Studio 구독 업데이트 보류 중)
 8. 원하는 **개인**을 선택합니다.
 9. **제출**을 클릭합니다.
 10. 개인이 전자 메일을 받습니다.
@@ -34,7 +34,7 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 12. 다음을 포함하여 Visual Studio 프로필 페이지가 표시될 수 있습니다.
     - 이름
     - 성
-    - 연락처 전자 메일
+    - 담당자 이메일
 13. 로그인이 완료되고 구독자가 혜택에 액세스할 수 있습니다.
 
 ## <a name="competency-partners"></a>역량 파트너
@@ -48,7 +48,7 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 8. Visual Studio 프로필 페이지가 표시될 수 있습니다.
     - 이름
     - 성
-    - 연락처 전자 메일
+    - 담당자 이메일
 9. 로그인이 완료되고 구독자가 혜택에 액세스할 수 있습니다.
 
 ## <a name="resources-and-references"></a>리소스 및 참조
@@ -59,7 +59,13 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
   > Visual Studio 구독에는 기술 담당자 역할이 필요합니다.
   - 8페이지 - 역량 파트너에 대한 Visual Studio 구독 할당
 
+## <a name="see-also"></a>참고 항목
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>다음 단계
 구독자 및 프로그램 관리자는 Microsoft 파트너 네트워크 지원 팀과 직접 작업하여 구독에 액세스하는 구독자의 문제를 해결해야 합니다. 도움이 필요한 [파트너 지원](https://partner.microsoft.com/support) 페이지를 참조하세요. (MPN 로그인 자격 증명이 필요합니다.)
 
-https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.;_ylu=X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV=2/RE=1577405628/RO=10/RU=https%3a%2f%2fassetsprod.microsoft.com%2fmpn%2fProgram-Administrator-Guide-to-Software-and-Online-Services-Benefits/RK=2/RS=xsA5OL.9t6QqJlvFYZ3OPnZkC_k-
+

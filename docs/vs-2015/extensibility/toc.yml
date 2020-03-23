@@ -840,9 +840,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: 열거자
+        - name: Enumerators
           items:
-            - name: 열거자
+            - name: Enumerators
               href: enumerators.md
             - name: 명령 코드
               href: command-code-enumerator.md

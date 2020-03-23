@@ -3,15 +3,15 @@ title: 고객의 Visual Studio 구독을 관리하는 파트너 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 파트너가 고객의 Visual Studio 구독을 관리하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850553"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947071"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>고객을 대신하여 구독을 관리하는 파트너
 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구독을 관리하려면 따라야 할 몇 가지 단계가 있습니다. 프로세스는 다음과 같습니다.
@@ -29,7 +29,7 @@ Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구�
 > 고객은 파트너가 Open License에 추가되었음을 알리는 알림 이메일을 받게 됩니다. 파트너의 액세스 권한을 제거하도록 선택할 수 있습니다.
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>VLSC(Volume Licensing Service Center)에 등록하는 새 파트너
-이는 새 Open License 주문을 작성하는 새 파트너에게 적용되지만 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)에 액세스하기 전에 add-open 흐름을 통해 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 등록합니다. 파트너는 다음 단계를 수행해야 합니다.
+이는 새 Open License 주문을 작성하는 새 파트너에게 적용되지만 [Visual Studio 구독 관리 포털](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 액세스하기 전에 add-open 흐름을 통해 [VLSC](https://manage.visualstudio.com)에 등록합니다. 파트너는 다음 단계를 수행해야 합니다.
 - VLSC에 로그인하고 “관계 요약”으로 이동합니다.
 - 원하는 Open License를 선택합니다.
 - 다음으로, “Visual Studio 구독” 아래의 “라이선스 세부 정보”에서 **여기 클릭** 링크를 통해 구독을 관리하는 옵션을 선택합니다.
@@ -41,7 +41,7 @@ Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구�
 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Visual Studio 구독 관리 포털을 직접 방문하는 새 파트너
-이 시나리오는 이미 새 Open License 주문을 작성했지만 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 등록하지 않고 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 직접 이동하는 새 파트너에게 적용됩니다.  아래 단계를 수행합니다.
+이 시나리오는 이미 새 Open License 주문을 작성했지만 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 등록하지 않고 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 직접 이동하는 새 파트너에게 적용됩니다.  다음 단계를 수행하세요.
 - [https://manage.visualstudio.com](https://manage.visualstudio.com )을 방문합니다.
 - 인식된 사용자가 아니라는 오류를 받습니다.
 - **OLP 파트너** 등록 옵션을 선택하고, 주문에 사용되는 인증 번호, 라이선스 번호, 고객 전자 메일 주소를 입력하고, 확인란을 선택하고, **제출**을 클릭합니다.
@@ -53,6 +53,12 @@ Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구�
 - [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [볼륨 라이선스 조건](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+
+## <a name="see-also"></a>참고 항목
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - 구독을 관리하려면 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)을 방문합니다.

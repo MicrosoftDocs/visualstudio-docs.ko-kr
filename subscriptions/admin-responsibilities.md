@@ -7,10 +7,10 @@ ms.date: 07/20/2019
 ms.topic: conceptual
 description: 구독 관리자의 책임에 대해 알아봅니다.
 ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235160"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>관리자 책임의 개요
@@ -35,7 +35,7 @@ Visual Studio 구독을 사용하면 개발 팀 멤버가 다른 소프트웨어
 | 라이선스 재할당                     | 사용자가 팀을 떠나거나 더이상 라이선스가 필요하지 않은 경우 90일이 경과한 후 라이선스를 다시 할당할 수 있습니다. 라이선스를 다시 할당하면 이미 사용되었던 모든 제품 키는 계속 사용할 수 있으며 바뀌지 않습니다. EA(기업 계약)가 있는 조직의 경우 원래 사용자가 사용한 모든 혜택(예: Pluralsight 교육)은 다시 설정됩니다.                                                                                                                                                                                                                                                 |
 | 최종 사용자에 대한 예외                  | 소프트웨어 개발 프로젝트의 마지막에, 최종 사용자는 일반적으로 애플리케이션을 검토하고 릴리스에 필요한 조건을 충족하는지 여부를 결정합니다. 이 프로세스를 UAT(사용자 승인 테스트)라고 합니다. 비즈니스 스폰서 또는 제품 관리자와 같은 팀 멤버는 최종 사용자에 대한 프록시와 같은 역할을 할 수 있습니다. 소프트웨어 사용이 다른 방법으로 모든 Visual Studio 사용 조건을 준수하는 경우, Visual Studio 구독이 없는 최종 사용자가 UAT용 소프트웨어에 액세스할 수도 있습니다. 기본 역할이 소프트웨어를 디자인하거나 개발하거나 테스트하는 사람이 “최종 사용자”로서 자격이 있는 경우는 거의 없습니다. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

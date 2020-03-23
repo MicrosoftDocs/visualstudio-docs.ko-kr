@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d38aed17d7fdaa694c8c5753705b28b0390dedfc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652142"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
@@ -78,5 +78,5 @@ ms.locfileid: "72652142"
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 DSL 도구 솔루션을 빌드하고 실행하면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 두 번째 인스턴스가 언어 사용자에게 도메인 특정 언어가 어떻게 보이는지 보여줍니다. 모든 항목이 올바르게 작동하는 것을 확인한 후에는 DslPackage 프로젝트의 빌드 폴더에 있는 `.vsix` 파일을 배포할 수 있습니다. 이 파일은 다른 컴퓨터에서 DSL을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 프로그램으로 설치하는 데 사용할 수 있습니다.  자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [실험적 인스턴스](../extensibility/the-experimental-instance.md) [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

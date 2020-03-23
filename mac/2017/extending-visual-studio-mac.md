@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75851963"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
@@ -96,7 +96,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 </Extension>
 ```
 
-CommandItem은 해당 id 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 **편집 메뉴**에 표시하는 `/MonoDevelop/Ide/MainMenu/Edit` 확장 지점을 확장합니다. CommandItem의 **id**는 명령 노드의 id인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
+CommandItem은 해당 id 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 `/MonoDevelop/Ide/MainMenu/Edit`편집 메뉴**에 표시하는**  확장 지점을 확장합니다. CommandItem의 **id**는 명령 노드의 id인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
 
 ### <a name="command-handlers"></a>명령 처리기
 
@@ -157,13 +157,13 @@ public enum DateInserterCommands
 * VCS 백 엔드
 * 리팩터링
 * 실행 처리기
-* 구문 강조
+* 구문 강조 표시
 
 ## <a name="additional-information"></a>추가 정보
 
 > [!NOTE]
 > Mac용 Visual Studio용 확장 시나리오 개선을 위해 현재 작업 중입니다. 확장을 만들고 있으며 추가 도움 또는 정보가 필요하거나 피드백을 제공하려는 경우 [Mac용 Visual Studio 확장 제작](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u) 양식을 작성해 주세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 확장 개발(Windows에서)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

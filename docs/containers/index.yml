@@ -1,8 +1,8 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Visual Studio의 컨테이너 도구
 metadata:
   title: Docker 컨테이너 개발 도구 설명서
-  description: '컨테이너 기반 앱 및 서비스를 빌드하고 관리하는 방법에 대해 알아봅니다. 설명서, 예제 코드, 자습서 등을 가져옵니다.'
+  description: 컨테이너 기반 앱 및 서비스를 빌드하고 관리하는 방법에 대해 알아봅니다. 설명서, 예제 코드, 자습서 등을 가져옵니다.
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -10,62 +10,68 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
+  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75400722"
 landingContent:
-  - title: 컨테이너 도구
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Visual Studio의 컨테이너 도구
-            url: overview.md
-  - title: 시작
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Visual Studio의 Docker
-            url: container-tools.md
-          - text: 컨테이너에서 빌드 도구 실행
-            url: /visualstudio/install/build-tools-container
-          - text: Visual Studio Tools for Kubernetes
-            url: tutorial-kubernetes-tools.md
-  - title: 컨테이너화된 앱 개발
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Docker Compose를 사용한 다중 컨테이너 앱
-            url: tutorial-multicontainer.md
-          - text: 컨테이너의 React.js 앱
-            url: container-tools-react.md
-          - text: Docker 앱 디버깅
-            url: edit-and-refresh.md
-  - title: Docker 컨테이너 배포
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Azure Container Registry에 배포
-            url: hosting-web-apps-in-docker.md
-          - text: Azure App Service에 배포
-            url: deploy-app-service.md
-          - text: Docker Hub에 배포
-            url: deploy-docker-hub.md
-  - title: 컨테이너 개발 작업
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: '방법: 빌드 및 디버그 환경 구성'
-            url: container-build.md
-          - text: '방법: 컨테이너 보기 및 진단'
-            url: view-and-diagnose-containers.md
-          - text: '방법: 컨테이너 개발 도구 문제 해결'
-            url: troubleshooting-docker-errors.md
-  - title: 컨테이너 도구 설정
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: 컨테이너 시작 설정
-            url: container-launch-settings.md
-          - text: 컨테이너 MSBuild 속성
-            url: container-msbuild-properties.md
-          - text: Docker Compose MSBuild 속성
-            url: docker-compose-properties.md
-          - text: 컨테이너 도구 구성
-            url: container-tools-configure.md
+- title: 컨테이너 도구
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio의 컨테이너 도구
+      url: overview.md
+- title: 시작
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Visual Studio의 Docker
+      url: container-tools.md
+    - text: 컨테이너에서 빌드 도구 실행
+      url: /visualstudio/install/build-tools-container
+    - text: Visual Studio Tools for Kubernetes
+      url: tutorial-kubernetes-tools.md
+- title: 컨테이너화된 앱 개발
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Docker Compose를 사용한 다중 컨테이너 앱
+      url: tutorial-multicontainer.md
+    - text: 컨테이너의 React.js 앱
+      url: container-tools-react.md
+    - text: Docker 앱 디버깅
+      url: edit-and-refresh.md
+- title: Docker 컨테이너 배포
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Azure Container Registry에 배포
+      url: hosting-web-apps-in-docker.md
+    - text: Azure App Service에 배포
+      url: deploy-app-service.md
+    - text: Docker Hub에 배포
+      url: deploy-docker-hub.md
+- title: 컨테이너 개발 작업
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: '방법: 빌드 및 디버그 환경 구성'
+      url: container-build.md
+    - text: '방법: 컨테이너 보기 및 진단'
+      url: view-and-diagnose-containers.md
+    - text: '방법: 컨테이너 개발 도구 문제 해결'
+      url: troubleshooting-docker-errors.md
+- title: 컨테이너 도구 설정
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 컨테이너 시작 설정
+      url: container-launch-settings.md
+    - text: 컨테이너 MSBuild 속성
+      url: container-msbuild-properties.md
+    - text: Docker Compose MSBuild 속성
+      url: docker-compose-properties.md
+    - text: 컨테이너 도구 구성
+      url: container-tools-configure.md

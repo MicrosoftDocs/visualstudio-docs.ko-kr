@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Visual Studio IDE 설명서
-summary: 'IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 애플리케이션입니다. Visual Studio IDE를 사용하면 앱을 쉽게 편집, 디버그, 빌드 및 게시할 수 있습니다.'
+summary: IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 애플리케이션입니다. Visual Studio IDE를 사용하면 앱을 쉽게 편집, 디버그, 빌드 및 게시할 수 있습니다.
 metadata:
   title: Visual Studio IDE 설명서
   titleSuffix: ''
@@ -11,64 +11,70 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 09/24/2019
+  ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "74316430"
 landingContent:
-  - title: 시작하기
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Visual Studio 다운로드
-            url: 'https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019'
-      - linkListType: get-started
-        links:
-          - text: Visual Studio 설치
-            url: ../install/install-visual-studio.md
-      - linkListType: overview
-        links:
-          - text: Visual Studio 개요
-            url: ../get-started/visual-studio-ide.md
-  - title: Visual Studio 사용
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: 코드 편집기 사용
-            url: ../get-started/tutorial-editor.md
-          - text: 컴파일 및 빌드
-            url: ../ide/compiling-and-building-in-visual-studio.md
-          - text: 코드 디버그
-            url: ../debugger/debugger-feature-tour.md
-          - text: 테스트 작성
-            url: ../test/getting-started-with-unit-testing.md
-          - text: 코드 품질 분석
-            url: ../code-quality/roslyn-analyzers-overview.md
-          - text: 웹 사이트 게시
-            url: ../deployment/quickstart-deploy-to-a-web-site.md
-          - text: 데이터 액세스
-            url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
-          - text: IDE 개인 설정
-            url: ../ide/quickstart-personalize-the-ide.md
-          - text: 생산성 기능
-            url: ../ide/productivity-features.md
-  - title: 내 언어로 개발
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 'C#'
-            url: ../get-started/csharp/tutorial-console.md
-          - text: C++
-            url: /cpp/get-started/tutorial-console-cpp
-          - text: Visual Basic
-            url: ../get-started/visual-basic/tutorial-console.md
-          - text: Python
-            url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
-          - text: JavaScript
-            url: /visualstudio/javascript/tutorial-nodejs
-          - text: 'F#'
-            url: /dotnet/fsharp/get-started/get-started-visual-studio
-  - title: 새로운 기능 검색
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: Visual Studio 2019의 새로운 기능
-            url: ../ide/whats-new-visual-studio-2019.md
-          - text: Visual Studio 2017의 새로운 기능
-            url: ../ide/whats-new-visual-studio-2017.md
+- title: 시작하기
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Visual Studio 다운로드
+      url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
+  - linkListType: get-started
+    links:
+    - text: Visual Studio 설치
+      url: ../install/install-visual-studio.md
+  - linkListType: overview
+    links:
+    - text: Visual Studio 개요
+      url: ../get-started/visual-studio-ide.md
+- title: Visual Studio 사용
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 코드 편집기 사용
+      url: ../get-started/tutorial-editor.md
+    - text: 컴파일 및 빌드
+      url: ../ide/compiling-and-building-in-visual-studio.md
+    - text: 코드 디버그
+      url: ../debugger/debugger-feature-tour.md
+    - text: 테스트 작성
+      url: ../test/getting-started-with-unit-testing.md
+    - text: 코드 품질 분석
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: 웹 사이트 게시
+      url: ../deployment/quickstart-deploy-to-a-web-site.md
+    - text: 데이터 액세스
+      url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
+    - text: IDE 개인 설정
+      url: ../ide/quickstart-personalize-the-ide.md
+    - text: 생산성 기능
+      url: ../ide/productivity-features.md
+- title: 내 언어로 개발
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: C#
+      url: ../get-started/csharp/tutorial-console.md
+    - text: C++
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Visual Basic
+      url: ../get-started/visual-basic/tutorial-console.md
+    - text: Python
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+    - text: JavaScript
+      url: /visualstudio/javascript/tutorial-nodejs
+    - text: F#
+      url: /dotnet/fsharp/get-started/get-started-visual-studio
+- title: 새로운 기능 검색
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Visual Studio 2019의 새로운 기능
+      url: ../ide/whats-new-visual-studio-2019.md
+    - text: Visual Studio 2017의 새로운 기능
+      url: ../ide/whats-new-visual-studio-2017.md

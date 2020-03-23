@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71127939"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Visual Studio를 사용하여 웹 사이트에 웹앱 게시
@@ -30,13 +30,13 @@ ms.locfileid: "71127939"
 
 1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다(또는 **빌드** > **게시** 메뉴 항목 사용).
 
-    ![솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 게시 명령](../deployment/media/quickstart-publish.png "게시 선택")
+    ![솔루션 탐색기의 프로젝트 상황에 맞는 메뉴에서 게시 명령](../deployment/media/quickstart-publish.png "게시 선택")
 
 1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필 만들기**를 선택합니다.
 
 1. **게시 대상 선택** 대화 상자에서 **IIS, FTP 등**을 선택합니다.
 
-    ![IIS, FTP 등 선택](../deployment/media/quickstart-publish-iis-ftp.png "IIS, FTP 등 선택")
+    ![IIS, FTP 등을 선택합니다.](../deployment/media/quickstart-publish-iis-ftp.png "IIS, FTP 등을 선택합니다.")
 
 1. **게시**를 선택합니다. 프로필 게시 설정 대화 상자가 열립니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "71127939"
 
 1. 게시 방법에 대한 필수 설정을 구성하고 **연결 유효성 검사**를 선택합니다. 서버 또는 대상을 사용할 수 있고 설정이 올바른 경우 연결이 유효함을 나타내는 메시지가 나타나고, 게시할 준비가 된 것입니다.
 
-    ![연결의 유효성 검사](../deployment/media/quickstart-publish-web-deploy.png "연결의 유효성 검사")
+    ![연결 유효성 검사](../deployment/media/quickstart-publish-web-deploy.png "연결 유효성 검사")
 
 1. **설정**을 선택하여 디버그 또는 릴리스 구성을 배포할지 여부와 같은 기타 배포 설정을 구성한 다음, **저장**을 선택합니다. 원격으로 디버그하는 경우 디버그 구성은 필수입니다.
 

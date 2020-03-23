@@ -50,27 +50,27 @@
               href: dowhile-activity-designer.md
             - name: ForEach\<T>
               href: foreach-t-activity-designer.md
-            - name: 조건
+            - name: 다음과 같은 경우
               href: if-activity-designer.md
             - name: 병렬
               href: parallel-activity-designer.md
             - name: ParallelForEach\<T>
               href: parallelforeach-t-activity-designer.md
-            - name: Pick
+            - name: 선택
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
-            - name: Sequence
+            - name: 시퀀스
               href: sequence-activity-designer.md
             - name: Switch\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
-        - name: Flowchart
+        - name: 순서도
           items:
-            - name: Flowchart
+            - name: 순서도
               href: flowchart-activity-designers.md
-            - name: Flowchart
+            - name: 순서도
               href: flowchart-activity-designer.md
             - name: FlowDecision
               href: flowdecision-activity-designer.md
@@ -96,11 +96,11 @@
               href: correlationscope-activity-designer.md
             - name: InitializeCorrelation
               href: initializecorrelation-activity-designer.md
-            - name: Receive
+            - name: 수신
               href: receive-activity-designer.md
             - name: ReceiveAndSendReply
               href: receiveandsendreply-template-designer.md
-            - name: Send
+            - name: 보내기
               href: send-activity-designer.md
             - name: SendAndReceiveReply
               href: sendandreceivereply-template-designer.md
@@ -110,7 +110,7 @@
           items:
             - name: 런타임
               href: runtime-activity-designers.md
-            - name: Persist
+            - name: 유지
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
@@ -120,7 +120,7 @@
               href: primitives-activity-designers.md
             - name: 할당
               href: assign-activity-designer.md
-            - name: 지연
+            - name: Delay
               href: delay-activity-designer.md
             - name: InvokeDelegate
               href: invokedelegate.md

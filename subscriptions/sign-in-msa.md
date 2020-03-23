@@ -3,15 +3,15 @@ title: Microsoft 계정(MSA)으로 Visual Studio 구독 로그인 | Microsoft Do
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Microsoft 계정(MSA)으로 Visual Studio 구독에 로그인하는 방법
-ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 49a20e5c34d81e7b5437ff48e749e322c6c57828
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493077"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508732"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Microsoft 계정(MSA)으로 Visual Studio 구독에 로그인
 
@@ -36,10 +36,16 @@ A:  로그인 문제는 구독과 연결된 MSA와 다른 MSA로 로그인을 �
 
 ### <a name="q--i-cant-see-my-subscription-where-is-it"></a>Q:  내 구독을 볼 수 없습니다. 어디에 있나요?
 A:  여러 사용자의 구독이 둘 이상입니다.  [https://my.visualstudio.com](https://my.visualstudio.com )에서 구독 포털로 로그인할 수는 있는데 구독이 보이지 않을 경우 가장 일반적인 원인은 다음과 같습니다.
-1. 다른 Microsoft 계정으로 로그인했습니다.  사용자는 Professional이나 Enterprise 구독 등의 다양한 구독과 Visual Studio Dev Essentials 멤버 자격 보유가 가능하며, 이는 다른 이메일 주소와 연결됩니다. 다른 구독을 보려면 로그아웃하고 다른 MSA로 다시 로그인합니다.
-2. 동일한 MSA와 연결된 구독이 여러 개 있습니다.  MSA와 연결된 구독을 모두 보려면 https://my.visualstudio.com/subscriptions 에서 사용하려는 구독을 선택합니다. 
+- 다른 Microsoft 계정으로 로그인했습니다.  사용자는 Professional이나 Enterprise 구독 등의 다양한 구독과 Visual Studio Dev Essentials 멤버 자격 보유가 가능하며, 이는 다른 이메일 주소와 연결됩니다. 다른 구독을 보려면 로그아웃하고 다른 MSA로 다시 로그인합니다.
+- 동일한 MSA와 연결된 구독이 여러 개 있습니다.  MSA와 연결된 구독을 모두 보려면 https://my.visualstudio.com/subscriptions 에서 사용하려는 구독을 선택합니다. 
 
 여전히 문제가 있을 경우 [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/) 팀에 연락하여 도움을 받으실 수 있습니다.  
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독 포털에 성공적으로 로그인한 후에는 https://my.visualstudio.com/benefits 에서 혜택 페이지를 방문하여 사용자가 이용할 수 있는 유용한 도구, 서비스 및 제안을 살펴보는 것이 좋습니다.  

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.openlocfilehash: e6dbe3b04a39a1ffd9a6e1b8f241b497ba8a6563
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984852"
 ---
 # <a name="set-up-a-git-repository"></a>Git 리포지토리 설정
@@ -162,6 +162,6 @@ Mac용 visual Studio는 이제 원격 GitHub 리포지토리에 변경 내용을
 1. [버전 제어] 메뉴를 찾아 **버전 제어에서 게시**를 선택합니다.
 1. 위의 연습 단계를 6단계부터 따라 수행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 버전 제어(Windows에서)](/visualstudio/version-control/)

@@ -1,4 +1,4 @@
-# [Visual Studio for Mac](/visualstudio/mac/)
+# [Mac용 Visual Studio](/visualstudio/mac/)
 # [IDE 둘러보기](ide-tour.md)
 
 # [설치](installation.md)

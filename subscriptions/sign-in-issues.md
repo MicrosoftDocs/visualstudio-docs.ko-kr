@@ -3,24 +3,24 @@ title: Visual Studio 구독에 로그인할 때의 문제 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 로그인할 때 발생할 수 있는 문제에 대해 알아보기
-ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 8175a1d8d2c79aecad25952eebdf734e0a9d29d2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706850"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509020"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio 구독에 로그인할 때의 문제
 Visual Studio 구독을 사용하려면 먼저 로그인해야 합니다.  구독에 따라 Microsoft 계정(MSA) 또는 AAD(Azure Active Directory) ID로 설정했을 수 있습니다.  이 문서에서는 구독에 로그인하는 동안 발생할 수 있는 몇 가지 문제에 대해 설명합니다.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>회사/학교 이메일 주소를 사용하여 Microsoft 계정(MSA)을 만들 수 없습니다.
-Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주소를 사용하여 새 개인 Microsoft 계정(MSA)을 만드는 기능을 더 이상 사용할 수 없습니다. 이것의 의미는 무엇인가요? 조직에서 Azure AD를 사용하는 Microsoft의 Office 365 또는 기타 다른 비즈니스 서비스를 사용하는 경우, Azure AD 테넌트에 도메인 이름을 추가하면 사용자는 더 이상 도메인의 이메일 주소를 사용하여 새 개인 Microsoft 계정을 만들 수 없습니다.
+Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주소를 사용하여 새 개인 Microsoft 계정(MSA)을 만드는 기능을 더 이상 사용할 수 없습니다. 무슨 의미인가요? 조직에서 Azure AD를 사용하는 Microsoft의 Office 365 또는 기타 다른 비즈니스 서비스를 사용하는 경우, Azure AD 테넌트에 도메인 이름을 추가하면 사용자는 더 이상 도메인의 이메일 주소를 사용하여 새 개인 Microsoft 계정을 만들 수 없습니다.
 
 ### <a name="why-was-this-change-made"></a>이런 변화가 왜 일어났나요?
-회사 주소가 있는 개인 Microsoft 계정을 사용자 이름으로 사용하는 것은 최종 사용자와 IT 부서 모두에게 많은 문제를 일으킵니다. 예:
+회사 주소가 있는 개인 Microsoft 계정을 사용자 이름으로 사용하는 것은 최종 사용자와 IT 부서 모두에게 많은 문제를 일으킵니다. 다음은 그 예입니다.
 - 사용자는 자신의 개인 Microsoft 계정이 비즈니스 준수이고 비즈니스 문서를 OneDrive에 저장할때 준수한다고 생각할 수 있습니다.
 - 조직을 떠나는 사용자는 일반적으로 회사 이메일 주소에 액세스하지 못합니다. 그럴 경우 자신의 암호를 잊어버리면 개인 Microsoft 계정으로 다시 전환하지 못할 수 있습니다. 반대로 IT 부서는 암호를 다시 설정하고 이전 직원의 개인 계정에 로그인할 수 있습니다.
 - IT 부서는 계정 소유권 및 보안에 대해 잘못된 인식을 가지고 있습니다. 하지만 사용자는 회사 이메일 주소로 코드를 한 번만 왕복하면 되고, 나중에 언제든지 계정 이름을 바꿀 수 있습니다.
@@ -61,6 +61,12 @@ Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주�
 
 ### <a name="what-options-do-i-have"></a>어떤 방법이 있습니까?
 구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다. 필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 Microsoft 계정(MSA)을 만들어야 할 수 있습니다. MSA를 만드는 단계를 수행하기 전에 이 작업 수행과 관련된 정책 또는 문제에 대해 관리자와 이야기를 나눕니다. 
+
+## <a name="see-also"></a>참고 항목
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - AAD 내에서 [MSA 및 AAD 계정을 연결](/azure/active-directory/b2b/add-users-administrator)하는 방법을 알아봅니다.

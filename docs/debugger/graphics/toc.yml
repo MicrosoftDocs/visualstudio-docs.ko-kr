@@ -60,11 +60,11 @@
       href: walkthrough-missing-objects-due-to-vertex-shading.md
     - name: '연습: 잘못 구성된 파이프라인으로 인해 누락된 개체'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: '연습: 음영으로 인한 렌더링 오류 디버그'
+    - name: '연습: 음영으로 인한 렌더링 오류 디버깅'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: '연습: 그래픽 진단을 사용하여 컴퓨팅 셰이더 디버그'
+    - name: '연습: 그래픽 진단을 사용하여 컴퓨팅 셰이더 디버깅'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: '방법: 그래픽 진단 재생 머신 변경'
+    - name: '방법: 그래픽 진단 재생 컴퓨터 변경'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: 참조(프로그램 방식 캡처)
   items:

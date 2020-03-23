@@ -10,15 +10,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b1c40412da096db63da87e04711cdc1a95b5cc84
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75591621"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 참조 설명서
 
-## <a name="contents"></a>목차
+## <a name="contents"></a>콘텐츠
 
 * **[IntelliTest 개요](introduction.md)**
   - [IntelliTest의 Hello World](introduction.md#the-hello-world-of-intellitest)
@@ -119,10 +119,10 @@ ms.locfileid: "75591621"
   - [외부 메서드 호출](warnings-and-errors.md#external-method-called)
   - [계측할 수 없는 메서드 호출](warnings-and-errors.md#uninstrumentable-method-called)
   - [테스트 가능성 문제](warnings-and-errors.md#testability-issue)
-  - [제한](warnings-and-errors.md#limitation)
+  - [제한 사항](warnings-and-errors.md#limitation)
   - [관촬된 호출 불일치](warnings-and-errors.md#observed-call-mismatch)
   - [정적 필드에 저장된 값](warnings-and-errors.md#value-static-field)
 
-## <a name="got-feedback"></a>피드백이 있으신가요?
+## <a name="got-feedback"></a>피드백이 있나요?
 
 아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

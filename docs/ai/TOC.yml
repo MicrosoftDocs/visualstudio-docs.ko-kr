@@ -26,7 +26,7 @@
               href: create-project.md
             - name: GitHub 리포지토리에서 프로젝트 만들기
               href: create-project-repo.md
-        - name: 모델 교육
+        - name: 모델 학습
           href: train-model.md
         - name: 작업 세부 정보 보기
           href: job-details.md

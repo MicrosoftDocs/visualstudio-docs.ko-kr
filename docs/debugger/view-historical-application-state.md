@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67825521"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio(Visual Studio Enterprise)에서 IntelliTrace 뒤로 이동을 사용하여 이전 앱 상태 검사
@@ -57,7 +57,7 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
     카메라 아이콘이 스냅샷을 사용할 수 있는 이벤트 옆에 나타납니다.
 
-    ![스냅샷이 있는 이벤트 탭](../debugger/media/intellitrace-events-tab-with-snapshots.png "중단점 및 단계에 스냅샷이 있는 이벤트 탭")
+    ![스냅샷이 있는 이벤트 탭](../debugger/media/intellitrace-events-tab-with-snapshots.png "중단점 및 단계에 대한 스냅샷이 있는 이벤트 탭")
 
     성능상의 이유로 단계를 매우 신속하게 실행할 때 스냅샷이 생성되지 않습니다. 카메라 아이콘이 단계 옆에 표시되지 않으면 더 느리게 단계를 실행합니다.
 
@@ -69,19 +69,19 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
     ![뒤로 이동 및 앞으로 이동 단추](../debugger/media/intellitrace-step-back-icons-description.png "뒤로 이동 및 앞으로 이동 단추")
 
-    뒤로 이동하거나 앞으로 이동할 때 Visual Studio는 기록 디버깅 모드를 시작합니다. 이 모드에서 디버거의 컨텍스트가 선택한 이벤트가 기록된 시간으로 전환됩니다. 또한 Visual Studio는 원본 창에서 해당 코드 줄로 포인터를 이동합니다.
+    뒤로 이동하거나 앞으로 이동할 때 Visual Studio는 기록 디버깅 모드를 시작합니다. 이 모드에서 디버거의 컨텍스트가 선택한 이벤트가 기록된 시간으로 전환됩니다. 또한 Visual Studio는 소스 창에서 해당 코드 줄로 포인터를 이동합니다.
 
     이 보기의 **호출 스택**, **로컬**, **자동** 및 **조사식** 창에서 값을 검사할 수 있습니다. 변수를 마우스로 가리켜 DataTips를 보고 **즉시 실행** 창에서 식 평가를 수행할 수도 있습니다. 표시되는 데이터는 해당 시점에 수행된 애플리케이션 프로세스 스냅샷의 데이터입니다.
 
     따라서 예를 들어 중단점에 도달하고 단계를 수행한 경우(**F10**) **뒤로 이동** 단추는 중단점에 해당하는 코드 줄의 기록 모드에 Visual Studio를 배치합니다.
 
-    ![스냅샷이 있는 이벤트의 기록 모드 활성화](../debugger/media/intellitrace-historical-mode-with-snapshot.png "스냅샷이 있는 이벤트의 기록 모드 활성화")
+    ![스냅샷을 사용하여 이벤트에 대한 기록 모드 활성화](../debugger/media/intellitrace-historical-mode-with-snapshot.png "스냅샷을 사용하여 이벤트에 대한 기록 모드 활성화")
 
 2. 라이브 실행으로 돌아가려면 **계속(F5)** 을 선택하거나 정보 표시줄의 **라이브 디버깅으로 돌아가기** 링크를 클릭합니다.
 
 3. **이벤트** 탭에서 스냅샷을 볼 수도 있습니다. 이렇게 하려면 스냅샷이 있는 이벤트를 선택하고 **기록 디버깅 활성화**를 클릭합니다.
 
-    ![이벤트에서 기록 디버깅 활성화](../debugger/media/intellitrace-activate-historical-debugging.png "이벤트에서 기록 디버깅 활성화")
+    ![이벤트에 대한 기록 디버깅 활성화](../debugger/media/intellitrace-activate-historical-debugging.png "이벤트에 대한 기록 디버깅 활성화")
 
     **다음 명령문 설정** 명령과 달리 스냅샷을 보는 것은 코드를 다시 실행하지 않습니다. 이전에 발생한 시점에서 애플리케이션의 상태에 대한 정적 보기를 제공합니다.
 
@@ -124,7 +124,7 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
 * 해당 프로세스에 많은 수의 고유 메모리 영역이 있는 애플리케이션을 디버깅할 때(예: 많은 수의 DLL을 로드하는 애플리케이션) 활성화된 스냅샷이 있는 단계별 실행 성능은 영향을 받을 수 있습니다. 이 문제는 Windows의 향후 버전에서 수정될 예정입니다. 이 문제가 발생하는 경우 stepback@microsoft.com으로 문의하세요.
 
-* 이벤트 및 스냅숏 모드에서 **디버그 > IntelliTrace > IntelliTrace 세션 저장**을 사용하여 파일을 저장할 때 스냅숏에서 캡처된 추가 데이터를 .itrace 파일에서 사용할 수 없습니다. 중단점 및 단계 이벤트에서 IntelliTrace 이벤트 전용 모드에서 파일을 저장한 것처럼 동일한 정보가 표시됩니다.
+* 이벤트 및 스냅샷 모드에서 **디버그 &gt; IntelliTrace &gt; IntelliTrace 세션 저장**을 사용하여 파일을 저장할 때 스냅샷에서 캡처된 추가 데이터를 .itrace 파일에서 사용할 수 없습니다. 중단점 및 단계 이벤트에서 IntelliTrace 이벤트 전용 모드에서 파일을 저장한 것처럼 동일한 정보가 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

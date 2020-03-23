@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: 메서드에 매개 변수 추가
                   href: ide/reference/add-parameter.md
+                - name: 매개 변수 생성
+                  href: ide/reference/generate-parameter.md
                 - name: 생성자에서 전용 필드 생성
                   href: ide/reference/generate-private-field-from-constructor.md
                 - name: 재정의 생성
@@ -350,6 +352,8 @@
                 - name: 개요
                   displayName: refactoring
                   href: ide/refactoring-in-visual-studio.md
+                - name: 모든 매개 변수에 대한 null 검사 추가
+                  href: ide\reference\add-null-checks-for-parameters.md
                 - name: 메서드 시그니처 변경
                   href: ide/reference/change-method-signature.md
                 - name: 무명 형식을 클래스로 변환
@@ -378,8 +382,6 @@
                   href: ide/reference/extract-method.md
                 - name: 로컬 함수 추출
                   href: ide/reference/extract-local-function.md
-                - name: 매개 변수 생성
-                  href: ide/reference/generate-parameter.md
                 - name: 인라인 임시 변수
                   href: ide/reference/inline-temporary-variable.md
                 - name: 가져오지 않은 형식에 대한 Intellisense 완성

@@ -7,10 +7,10 @@ ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75852032"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
@@ -36,7 +36,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 ## <a name="attribute-files"></a>특성 파일
 
-확장 패키지는 이름, 버전, 종속성, 기타 정보에 대한 메타데이터를 C# 특성에 저장합니다. Add-in Maker는 `AddinInfo.cs` 및 `AssemblyInfo.cs`라는 두 개의 파일을 만들어 이 정보를 저장하고 구성합니다. 확장 패키지의 ‘`Addin` 특성’에 고유 ID와 네임스페이스가 지정되어 있어야 합니다. 
+확장 패키지는 이름, 버전, 종속성, 기타 정보에 대한 메타데이터를 C# 특성에 저장합니다. Add-in Maker는 `AddinInfo.cs` 및 `AssemblyInfo.cs`라는 두 개의 파일을 만들어 이 정보를 저장하고 구성합니다. 확장 패키지의 ‘ *특성’에 고유 ID와 네임스페이스가 지정되어 있어야 합니다.`Addin`*
 
 ```csharp
 [assembly:Addin (
@@ -96,7 +96,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 </Extension>
 ```
 
-CommandItem은 해당 `id` 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 **편집 메뉴**에 표시하는 `/MonoDevelop/Ide/MainMenu/Edit` 확장 지점을 확장합니다. CommandItem의 ID는 명령 노드의 ID인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
+CommandItem은 해당 `id` 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 `/MonoDevelop/Ide/MainMenu/Edit`편집 메뉴**에 표시하는**  확장 지점을 확장합니다. CommandItem의 ID는 명령 노드의 ID인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
 
 ### <a name="command-handlers"></a>명령 처리기
 
@@ -157,7 +157,7 @@ public enum DateInserterCommands
 * VCS 백 엔드
 * 리팩터링
 * 실행 처리기
-* 구문 강조
+* 구문 강조 표시
 
 ## <a name="extending-the-new-editor"></a>새 편집기 확장
 
@@ -182,7 +182,7 @@ Mac용 Visual Studio와 관련된 확장 정보를 살펴보기 전에 공유 �
 
 이러한 리소스에서 숙지해야 하는 기본 개념은 [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) 및 [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview)입니다.
 
-* `ITextBuffer`는 시간이 지남에 따라 변경될 수 있는 텍스트의 메모리 내 표현입니다. `ITextBuffer`의 `CurrentSnapshot` 속성은 현재 버퍼 내용의 ‘변경이 불가능한’ 표현인 `ITextSnapshot` 인스턴스를 반환합니다.  버퍼를 편집하면 CurrentSnapshot 속성이 최신 버전으로 업데이트됩니다. 분석기는 모든 스레드의 텍스트 스냅샷 및 해당 콘텐츠가 변경되지 않았는지 검사할 수 있습니다.
+* `ITextBuffer`는 시간이 지남에 따라 변경될 수 있는 텍스트의 메모리 내 표현입니다. `CurrentSnapshot`의 `ITextBuffer` 속성은 현재 버퍼 내용의 ‘변경이 불가능한’ 표현인  *인스턴스를 반환합니다.* `ITextSnapshot` 버퍼를 편집하면 CurrentSnapshot 속성이 최신 버전으로 업데이트됩니다. 분석기는 모든 스레드의 텍스트 스냅샷 및 해당 콘텐츠가 변경되지 않았는지 검사할 수 있습니다.
 
 * `ITextView`는 화면의 편집기 컨트롤에서 `ITextBuffer`가 렌더링되는 방식의 UI 표현입니다. 해당 텍스트 버퍼에 대한 참조와 `Caret`, `Selection` 및 기타 UI 관련 개념이 있습니다.
 
@@ -193,6 +193,6 @@ Mac용 Visual Studio와 관련된 확장 정보를 살펴보기 전에 공유 �
 > [!NOTE]
 > Mac용 Visual Studio용 확장 시나리오 개선을 위해 현재 작업 중입니다. 확장을 만들고 있으며 추가 도움 또는 정보가 필요하거나 피드백을 제공하려는 경우 [Mac용 Visual Studio 확장 제작](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u) 양식을 작성해 주세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 확장 개발(Windows에서)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

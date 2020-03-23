@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: 기업계약을 체결한 고객에게 제공되는 Azure DevTest 특가를 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580117"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78410422"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 기업계약 DevTest 제안
 
@@ -25,7 +25,7 @@ ms.locfileid: "77580117"
 
 ## <a name="enable-offers-in-the-ea-portal"></a>EA Portal에서 제안 사용 설정
 제안을 사용 설정하려면:
-1. [https://manage.visualstudio.com](https://ea.azure.com/manage ) 에 로그인합니다.
+1. [https://ea.azure.com/manage](https://ea.azure.com/manage)에 로그인합니다.
 0. **계정** 메뉴를 클릭합니다.
 0. 제안을 사용 설정할 계정을 찾습니다.  계정이 많은 경우 **검색**를 사용하여 계정을 신속하게 찾을 수 있습니다. 
 0. 계정 이름에 마우스를 가져갑니다. 
@@ -35,12 +35,12 @@ ms.locfileid: "77580117"
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>계정 내에서 개별 구독 만들기
 계정의 각 구독자는 다음 단계에 따라 구독을 만들 수 있습니다.
-1. [https://manage.visualstudio.com](https://account.windowsazure.com/signup?showCatalogs=True ) 에 로그인합니다.
+1. [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True)에 로그인합니다.
 0. **Enterprise 개발/테스트** 제안을 선택합니다.
 0. 이 확인란을 클릭하면 구독에 기업계약이 적용된다는 것을 인정하는 것입니다. 
 0. **구매**를 클릭합니다.  (이 제안을 선택하더라도 실제로는 아무것도 구매하지 않습니다.)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

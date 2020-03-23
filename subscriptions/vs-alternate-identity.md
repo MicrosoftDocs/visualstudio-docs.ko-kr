@@ -7,10 +7,10 @@ ms.date: 07/19/2019
 ms.topic: conceptual
 description: Azure DevOps 및 Azure를 사용하기 위해 Visual Studio 구독에 대한 대체 ID를 추가하는 방법
 ms.openlocfilehash: e19774f2314280b2e5a995a7d83336f1403682a4
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "72816550"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 구독자용 ID
@@ -46,9 +46,9 @@ Azure에서 구독자 혜택인 [월간 Azure DevTest 개별 크레딧](https://
 
 ## <a name="faq"></a>FAQ
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Q:  Azure DevOps에서 나를 Visual Studio 구독자로 인식하지 못하는 것은 무엇 때문인가요?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>질문: Azure DevOps에서 나를 Visual Studio 구독자로 인식하지 못하는 것은 무엇 때문인가요?
 
-A: 기본 또는 대체 ID를 사용하여 로그인할 때 Azure DevOps는 사용자의 구독을 자동으로 인식해야 합니다. 그렇지 않다면 몇 가지를 시도해볼 수 있습니다.
+대답: 기본 또는 대체 ID를 사용하여 로그인할 때 Azure DevOps는 사용자의 구독을 자동으로 인식해야 합니다. 그렇지 않다면 몇 가지를 시도해볼 수 있습니다.
 
 * [Azure DevOps](vs-azure-devops.md#eligibility)를 혜택으로 포함하는 활성화된 Visual Studio 구독이 있는지 확인합니다.
 

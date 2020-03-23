@@ -10,10 +10,10 @@ metadata:
   ms.date: 09/18/2019
   ms.topic: hub-page
   ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
-  ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 12/10/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74985040"
 highlightedContent:
   items:
@@ -128,7 +128,7 @@ conceptualContent:
     - url: ~/editorconfig.md
       itemType: get-started
       text: EditorConfig 설정
-  - title: 추가 정보
+  - title: 자세한 정보
     links:
     - url: https://visualstudio.microsoft.com/vs/support/mac/
       itemType: reference
@@ -152,7 +152,7 @@ additionalContent:
     - title: 빌드
       summary: 컴파일러를 구성하고 앱을 빌드하세요.
       url: ~/compiling-and-building.md
-    - title: Debug
+    - title: 디버그
       summary: 문제를 조사하려면 디버거에서 앱을 실행하세요.
       url: ~/debugging.md
     - title: 버전 제어
