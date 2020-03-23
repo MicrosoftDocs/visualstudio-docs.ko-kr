@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128298"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 사용량을 분석하여 애플리케이션 성능 측정
@@ -39,7 +39,7 @@ Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성�
 
 Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
-이 자습서에서는 다음을 수행합니다.
+이 자습서에서 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * CPU 사용량 데이터 수집
@@ -111,7 +111,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
     함수를 두 번 클릭하면 **호출자/호출 수신자** 뷰가 왼쪽 창에 열립니다.
 
-    ![진단 도구 호출자 호출 수신자 뷰](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
+    ![진단 도구 호출자/호출 수신자 뷰](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
     이 뷰에서는 선택한 함수가 제목 및 **현재 함수** 상자에 표시됩니다(이 예제의 경우 GetNumber). 현재 함수를 호출한 함수는 **호출 함수** 아래 왼쪽에 표시되고, 현재 함수에 의해 호출된 함수는 오른쪽의 **호출된 함수** 상자에 표시됩니다. 두 상자 중 하나를 선택하여 현재 함수를 변경할 수 있습니다.
 
