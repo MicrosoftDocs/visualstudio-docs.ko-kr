@@ -1,5 +1,5 @@
 ---
-title: 디자인&#39;을 위한 새로운 기능
+title: 디자인의 새로운&#39;
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408363"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301286"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual studio의 Visual Studio에서 디자인의 새로운 기능 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>비주얼 스튜디오 2015의 비주얼 스튜디오에서 디자인의 새로운 내용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 이 Visual Studio 릴리스에는 더 효율적으로 코드를 이해하고 디자인할 수 있도록 다음과 같은 개선 기능이 포함되어 있습니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "78408363"
 
  최종(RTM) 릴리스에서는 그룹 선택, 편집, 관리 및 그룹 콘텐츠 레이아웃 변경 등과 관련된 여러 섹션으로 명령을 그룹화하여 코드 포인트 및 링크에 대한 바로 가기 메뉴를 훨씬 더 쉽게 사용할 수 있도록 만들었습니다. 테스트 프로젝트는 다른 프로젝트와 다른 스타일로 표시되며, 맵의 요소에 대한 아이콘이 더 적절한 버전으로 업데이트되었습니다.
 
- ![새 코드 맵에 선택한 항목 표시](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![선택한 항목을 새 코드 맵에 표시](../ide/media/codemapsshowonnewmap.png "코드맵쇼온뉴맵")
 
  기타 기능 향상은 다음과 같습니다.
 
@@ -64,18 +64,18 @@ ms.locfileid: "78408363"
 
 - **아키텍처 탐색기**. 이제 아키텍처 탐색기를 사용하여 다이어그램을 만들 수 없습니다. 하지만 솔루션 탐색기를 사용할 수 있습니다.
 
-## <a name="VersionSupport"></a>아키텍처 및 모델링 도구에 대 한 버전 지원
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>아키텍처 및 모델링 도구에 대한 에디션 지원
 
-Visual Studio 2015는 여러 버전에서 사용할 수 있습니다. 이러한 일부 아키텍처 및 모델링 도구에 대 한 지원을 제공 합니다. 다음 표에서는 각 도구의 사용 가능 여부를 보여 줍니다.
+비주얼 스튜디오 2015는 여러 버전에서 사용할 수 있습니다. 이러한 모든 아키텍처 및 모델링 도구에 대 한 지원을 제공 합니다. 다음 표에서는 각 도구의 사용 가능 여부를 보여 줍니다.
 
-|**기능**|**Enterprise**|**해**|**커뮤니티**|**Express**|
+|**기능**|**Enterprise**|**Professional**|**커뮤니티**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**코드 맵**|yes|는 코드 맵 읽기 및 필터링, 새 제네릭 노드 추가 및 선택 영역에서 새 방향 그래프 만들기만 지원 합니다.|-|-|
+|**코드 맵**|yes|코드 맵 읽기 및 필터링, 새 일반 노드 추가 및 선택 항목에서 새 지향 그래프 만들기만 지원합니다.|-|-|
 |**UML 클래스 다이어그램**|yes|-|-|-|
 |**UML 시퀀스 다이어그램**|yes|-|-|-|
 |**UML 사용 사례 다이어그램**|yes|-|-|-|
-|**UML 동작 다이어그램**|yes|-|-|-|
+|**UML 활동 다이어그램**|yes|-|-|-|
 |**UML 구성 요소 다이어그램**|yes|-|-|-|
 |**레이어 다이어그램**|yes|-|-|-|
-|**방향이** 지정 된 그래프 (DGML 다이어그램)|yes|yes|-|-|
-|**코드 복제본**|yes|-|-|-|
+|**지향** 그래프(DGML 다이어그램)|yes|yes|-|-|
+|**코드 복제**|yes|-|-|-|

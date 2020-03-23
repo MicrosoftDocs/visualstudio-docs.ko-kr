@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408703"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79300956"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 역할 구성
 Azure 클라우드 서비스에는 하나 이상의 작업자 또는 웹 역할이 포함될 수 있습니다. 각 역할에 대해 해당 역할을 설정하는 방법을 정의하고 해당 역할을 실행하는 방법을 구성해야 합니다. 클라우드 서비스의 역할에 대한 자세한 내용은 [Azure Cloud Services 소개](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)를 참조하세요.
 
 클라우드 서비스에 대한 정보는 다음 파일에 저장됩니다.
 
-- **Servicedefinition. .csdef** -서비스 정의 파일은 필요한 역할, 끝점 및 가상 컴퓨터 크기를 포함 하 여 클라우드 서비스에 대 한 런타임 설정을 정의 합니다. 역할이 실행 중일 때 `ServiceDefinition.csdef`에 저장된 데이터는 변경할 수 없습니다.
+- **ServiceDefinition.csdef** - 서비스 정의 파일은 필요한 역할, 끝점 및 가상 시스템 크기를 포함하여 클라우드 서비스의 런타임 설정을 정의합니다. 역할이 실행 중일 때 `ServiceDefinition.csdef`에 저장된 데이터는 변경할 수 없습니다.
 - **ServiceConfiguration.cscfg** - 서비스 구성 파일은 실행되는 역할의 인스턴스 수와 역할에 대해 정의된 설정 값을 구성합니다. 역할이 실행 중인 동안 `ServiceConfiguration.cscfg`에 저장된 데이터는 변경할 수 있습니다.
 
 역할 실행 방법을 제어하는 설정에 대해 다른 값을 저장하기 위해 여러 서비스 구성을 정의할 수 있습니다. 각 배포 환경에 대해 서로 다른 서비스 구성을 사용할 수 있습니다. 예를 들어 스토리지 계정 연결 문자열을 설정하여 로컬 서비스 구성에서 로컬 Azure Storage 에뮬레이터를 사용하고, 다른 서비스 구성을 만들어 클라우드에서 Azure Storage를 사용할 수 있습니다.
@@ -56,7 +56,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기에서**프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -72,7 +72,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     ![인스턴스 수 업데이트](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택합니다.
+1. 시각적 스튜디오에서 도구 모음에서 **저장을**선택합니다.
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>스토리지 계정에 대한 연결 문자열 관리
 서비스 구성에 대한 연결 문자열을 추가, 제거 또는 수정할 수 있습니다. 예를 들어, `UseDevelopmentStorage=true`값이 있는 로컬 서비스 구성에 대해 로컬 연결 문자열이 필요할 수 있습니다. 또한 Azure에서 스토리지 계정을 사용하는 클라우드 서비스 구성을 구성하려고 할 수도 있습니다.
@@ -86,7 +86,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기에서**프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -114,11 +114,11 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     - **Microsoft Azure Storage 에뮬레이터** - 이 옵션을 선택하면 Azure에만 적용되므로 대화 상자의 나머지 설정이 비활성화됩니다. **확인**을 선택합니다.
     - **구독** - 이 옵션을 선택하면 드롭다운 목록을 사용하여 Microsoft 계정을 선택하고 로그인하거나 Microsoft 계정을 추가합니다. Azure 구독 및 스토리지 계정을 선택합니다. **확인**을 선택합니다.
-    - **수동으로 입력한 자격 증명** - 스토리지 계정 이름과 기본 또는 보조 키를 입력합니다. **연결** 에 대 한 옵션을 선택 합니다. 대부분의 시나리오에는 HTTPS를 권장 합니다. **확인을**선택 합니다.
+    - **수동으로 입력한 자격 증명** - 스토리지 계정 이름과 기본 또는 보조 키를 입력합니다. **연결** 옵션을 선택합니다(대부분의 시나리오에 HTTPS는 권장됩니다.) **확인을**선택합니다.
 
 1. 연결 문자열을 삭제하려면 연결 문자열을 선택한 다음 **설정 제거**를 선택합니다.
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택합니다.
+1. 시각적 스튜디오에서 도구 모음에서 **저장을**선택합니다.
 
 ## <a name="programmatically-access-a-connection-string"></a>프로그래밍 방식으로 연결 문자열 액세스
 
@@ -148,7 +148,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기에서**프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -174,7 +174,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. 사용자 지정 설정을 삭제하려면 설정을 선택한 다음 **설정 제거**를 선택합니다.
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택합니다.
+1. 시각적 스튜디오에서 도구 모음에서 **저장을**선택합니다.
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>프로그래밍 방식으로 사용자 지정 설정 값 액세스
 
@@ -199,7 +199,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기에서**프로젝트 노드를 확장합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -225,7 +225,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. 로컬 스토리지 항목을 삭제하려면 해당 항목을 선택한 다음 **로컬 스토리지 제거**를 선택합니다.
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택합니다.
+1. 시각적 스튜디오에서 도구 모음에서 **저장을**선택합니다.
 
 ## <a name="programmatically-accessing-local-storage"></a>프로그래밍 방식으로 로컬 스토리지 액세스
 

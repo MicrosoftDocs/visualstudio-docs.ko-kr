@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "78946078"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301610"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
-이전에 Visual Studio에서 정적 코드 분석을 사용한 경우 현재 구현에서 [FxCop 분석기](install-fxcop-analyzers.md)로 사용할 수 있는 규칙을 궁금할 수 있습니다. 이 페이지에는 이식 되지 않은 규칙 및 이식 되지 않은 규칙과 포트를 이식할 계획이 있는지 여부가 나열 됩니다.
+이전에 Visual Studio에서 정적 코드 분석을 사용한 경우 현재 구현에서 [FxCop 분석기로](install-fxcop-analyzers.md)사용할 수 있는 규칙이 궁금할 수 있습니다. 이 페이지에는 포팅된 규칙과 포팅되지 않은 규칙 및 포팅할 계획이 있는지 여부가 나열되어 있습니다.
 
 ## <a name="ported-rules"></a>포팅된 규칙
 
-Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) 에는 FxCop 분석기로 이식 된 규칙의 최신 목록이 있습니다. 또한이 페이지에는 규칙이 기본적으로 사용 하도록 설정 되어 있고 연결 된 *코드 수정*이 있는지 여부와 같은 추가 정보가 있습니다. [코드 수정](../ide/quick-actions.md) 사항은 Visual Studio의 전구 아이콘 메뉴에서 사용할 수 있는 한 번 클릭으로 수정 되었습니다.
+roslyn 분석기 리포지토리의 [자동 생성된 문서 페이지에는](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) FxCop 분석기로 이식된 최신 규칙 목록이 있습니다. 또한 이 페이지에는 규칙이 기본적으로 활성화되어 있는지 여부 및 연결된 *코드 수정이*있는지 여부와 같은 추가 정보도 있습니다. (코드[수정은](../ide/quick-actions.md) Visual Studio의 전구 아이콘 메뉴에서 한 번의 클릭으로 수정할 수 있습니다.)
 
-이 페이지의 날짜를 기준으로 [fxcop 분석기](install-fxcop-analyzers.md) 로 이식 된 fxcop 규칙의 목록에는 다음이 포함 됩니다.
+이 페이지의 날짜를 기준으로 [FxCop 분석기로](install-fxcop-analyzers.md) 이식된 FxCop 규칙 목록은 다음과 같습니다.
 
 규칙 ID | 제목
 --------|---------
@@ -35,15 +35,15 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1008](ca1008-enums-should-have-zero-value.md) | 열거형에는 0 값이 있어야 합니다.
 [CA1010](ca1010-collections-should-implement-generic-interface.md) | 컬렉션은 제네릭 인터페이스를 구현해야 합니다.
 [CA1012](ca1012-abstract-types-should-not-have-constructors.md) | 추상 형식에는 생성자를 사용하면 안 됩니다.
-[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | CLSCompliant로 어셈블리 표시
+[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | CLSCompliant을 사용하는 어셈블리 표시
 [CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | 어셈블리 버전으로 어셈블리 표시
-[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | ComVisible로 어셈블리 표시
+[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | 컴가시블으로 어셈블리 표시
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | AttributeUsageAttribute로 특성을 표시하세요.
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | 특성 인수의 접근자를 정의하세요.
 [CA1021](ca1021.md) | out 매개 변수를 사용하지 마세요.
 [CA1024](ca1024-use-properties-where-appropriate.md) | 적합한 속성을 사용하세요.
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | 열거형을 FlagsAttribute로 표시하세요.
-[CA1028](ca1028-enum-storage-should-be-int32.md) | Enum 저장소는 Int32 여야 합니다.
+[CA1028](ca1028-enum-storage-should-be-int32.md) | 열거형 스토리지는 Int32이어야 합니다.
 [CA1030](ca1030-use-events-where-appropriate.md) | 적절한 경우 이벤트를 사용하세요.
 [CA1031](ca1031-do-not-catch-general-exception-types.md) | 일반적인 예외 형식을 catch하지 마세요.
 [CA1032](ca1032-implement-standard-exception-constructors.md) | 표준 예외 생성자를 구현하세요.
@@ -52,24 +52,24 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1036](ca1036-override-methods-on-comparable-types.md) | 비교 가능한 형식에 메서드를 재정의하세요.
 [CA1040](ca1040-avoid-empty-interfaces.md) | 빈 인터페이스를 사용하지 마세요.
 [CA1041](ca1041-provide-obsoleteattribute-message.md) | ObsoleteAttribute 메시지를 제공하세요.
-[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | 인덱서에 정수 또는 문자열 인수를 사용 하십시오.
+[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | 인덱서에 정수 또는 문자열 인수 사용
 [CA1044](ca1044-properties-should-not-be-write-only.md) | 속성은 쓰기 전용이면 안 됩니다.
 [CA1050](ca1050-declare-types-in-namespaces.md) | 네임스페이스에 형식을 선언하세요.
 [CA1051](ca1051-do-not-declare-visible-instance-fields.md) | 표시되는 인스턴스 필드를 선언하지 마세요.
-[CA1052](ca1052-static-holder-types-should-be-sealed.md) | 정적 소유자 형식은 정적 또는 NotInheritable 이어야 합니다.
-[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | 정적 소유자 형식에는 생성자를 사용할 수 없습니다 (CA1053는 FxCop 분석기의 [CA1052](ca1052-static-holder-types-should-be-sealed.md) 에 포함 됨).
-[CA1054](ca1054-uri-parameters-should-not-be-strings.md) | Uri 매개 변수는 문자열이 면 안 됩니다.
-[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Uri 반환 값은 문자열이 면 안 됩니다.
-[CA1056](ca1056-uri-properties-should-not-be-strings.md) | Uri 속성은 문자열이 면 안 됩니다.
+[CA1052](ca1052-static-holder-types-should-be-sealed.md) | 정적 홀더 유형은 정적이거나 상속할 수 없어야 합니다.
+[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | 정적 홀더 유형에생성자가 없어야 합니다(CA1053은 FxCop 분석기의 [CA1052일부임)](ca1052-static-holder-types-should-be-sealed.md)
+[CA1054](ca1054-uri-parameters-should-not-be-strings.md) | Uri 매개 변수는 문자열이 아니어야 합니다.
+[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Uri return 값은 문자열이 아니어야 합니다.
+[CA1056](ca1056-uri-properties-should-not-be-strings.md) | Uri 속성은 문자열이 아니어야 합니다.
 [CA1058](ca1058-types-should-not-extend-certain-base-types.md) | 형식은 특정 기본 형식을 확장하면 안 됩니다.
-[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | Pinvokes를 네이티브 메서드 클래스로 이동
+[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | 핀보크를 네이티브 메서드 클래스로 이동
 [CA1061](ca1061-do-not-hide-base-class-methods.md) | 기본 클래스 메서드를 숨기지 마십시오.
 [CA1062](ca1062-validate-arguments-of-public-methods.md) | public 메서드의 인수에 대한 유효성을 검사하세요.
-[CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable을 올바르게 구현 하십시오.
+[CA1063](ca1063-implement-idisposable-correctly.md) | I일회용 올바르게 구현
 [CA1064](ca1064-exceptions-should-be-public.md) | 예외는 public이어야 합니다.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 예기치 않은 위치에서 예외를 발생시키지 마십시오.
-CA1066 | Equals를 재정의 하기 때문에 {0} 형식에서 IEquatable\<T >를 구현 해야 합니다.
-CA1067 | IEquatable\<T를 구현 하는 경우 개체 Equals (개체)를 재정의 >
+CA1066 | 형식은 {0} 같음을\<재정의하기 때문에 IEquatable T> 구현해야 합니다.
+CA1067 | 개체 재정의를 사용합니다.IEquatable\<T를 구현할 때 개체와 같아(개체)>
 [CA1068](ca1068.md) | CancellationToken 매개 변수는 마지막에 위치해야 합니다.
 CA1200 | 접두사를 사용하여 cref 태그 사용 방지
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 리터럴을 지역화된 매개 변수로 전달하지 마세요.
@@ -77,15 +77,15 @@ CA1200 | 접두사를 사용하여 cref 태그 사용 방지
 [CA1305](ca1305-specify-iformatprovider.md) | IFormatProvider를 지정하세요.
 [CA1307](ca1307-specify-stringcomparison.md) | StringComparison 지정하세요.
 [CA1308](ca1308-normalize-strings-to-uppercase.md) | 대문자로 문자열을 정규화하세요.
-[CA1309](ca1309-use-ordinal-stringcomparison.md) | 서 수 문자열 비교 사용
+[CA1309](ca1309-use-ordinal-stringcomparison.md) | 서수 문자열 비교 사용
 [CA1401](ca1401-p-invokes-should-not-be-visible.md) | P/Invoke는 노출되지 않아야 합니다.
 [CA1501](ca1501-avoid-excessive-inheritance.md) | 상속성을 너무 많이 사용하지 마세요.
 [CA1502](ca1502-avoid-excessive-complexity.md) | 지나치게 복잡하게 만들지 마세요.
 [CA1505](ca1505-avoid-unmaintainable-code.md) | 유지 관리할 수 없는 코드를 사용하지 마세요.
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | 클래스를 지나치게 많이 결합하지 마세요.
-[CA1507](ca1507.md) | Nameof를 사용 하 여 기호 이름 표현
-CA1508 | 데드 조건부 코드 방지
-CA1509 | 코드 메트릭 규칙 사양 파일에 잘못 된 항목이 있습니다.
+[CA1507](ca1507.md) | 이름 사용으로 기호 이름 표현
+CA1508 | 죽은 조건부 코드 방지
+CA1509 | 코드 메트릭 규칙 사양 파일에서 잘못된 항목
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | 식별자에는 밑줄을 사용할 수 없습니다.
 [CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | 식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.
 [CA1710](ca1710-identifiers-should-have-correct-suffix.md) | 식별자에는 올바른 접미사를 사용해야 합니다.
@@ -95,38 +95,38 @@ CA1509 | 코드 메트릭 규칙 사양 파일에 잘못 된 항목이 있습니
 [CA1715](ca1715-identifiers-should-have-correct-prefix.md) | 식별자에는 올바른 접두사를 사용해야 합니다.
 [CA1716](ca1716-identifiers-should-not-match-keywords.md) | 식별자는 키워드와 달라야 합니다.
 [CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md) | FlagsAttribute 열거형만 복수형 이름을 가질 수 있습니다.
-[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | 식별자에 형식 이름이 포함 되어 있습니다.
+[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | 식별자는 형식 이름을 포함합니다.
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | 속성 이름은 Get 메서드와 달라야 합니다.
-[CA1724](ca1724-type-names-should-not-match-namespaces.md) | 형식 이름은 네임 스페이스와 일치 하면 안 됩니다.
+[CA1724](ca1724-type-names-should-not-match-namespaces.md) | 형식 이름이 네임스페이스와 일치하지 않아야 합니다.
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | 매개 변수 이름은 기본 선언과 일치해야 합니다.
 [CA1801](ca1801.md) | 사용되지 않은 매개 변수를 검토하세요.
-[CA1802](ca1802.md) | 적절 한 경우 리터럴 사용
+[CA1802](ca1802.md) | 적절한 경우 리터럴 사용
 [CA1806](ca1806.md) | 메서드 결과를 무시하지 마세요.
 [CA1810](ca1810.md) | 참조 형식 정적 필드를 인라인으로 초기화하세요.
 [CA1812](ca1812.md) | 인스턴스화되지 않은 내부 클래스를 사용하지 마세요.
 [CA1813](ca1813.md) | 봉인되지 않은 특성을 사용하지 마세요.
 [CA1814](ca1814.md) | 다차원 배열보다 가변 배열을 사용하세요.
 [CA1815](ca1815.md) | 값 형식에서 Equals 또는 같음 연산자를 재정의하세요.
-[CA1816](ca1816.md) | Dispose 메서드는 Gc.suppressfinalize을 호출 해야 합니다.
+[CA1816](ca1816.md) | 삭제 메서드는 SuppressFinalize를 호출해야 합니다.
 [CA1819](ca1819.md) | 속성은 배열을 반환해서는 안 됩니다.
 [CA1820](ca1820.md) | 문자열 길이를 사용하여 빈 문자열을 테스트하세요.
 [CA1821](ca1821.md) | 빈 종료자 제거
 [CA1822](ca1822.md) | 멤버를 static으로 표시하세요.
 [CA1823](ca1823.md) | 사용되지 않는 전용 필드를 사용하지 마세요.
 [CA1824](ca1824.md) | NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.
-CA1825 | 길이가 0 인 배열 할당을 방지 합니다.
-CA1826 | 인덱싱할 수 있는 컬렉션에 대해 열거 가능한 메서드를 사용 하지 마세요. 대신 컬렉션을 직접 사용 합니다.
+CA1825 | 길이가 0인 배열 할당을 방지합니다.
+CA1826 | 인덱싱 가능한 컬렉션에 열거 가능한 메서드를 사용하지 마십시오. 대신 컬렉션을 직접 사용하십시오.
 [CA2000](ca2000.md) | 범위를 벗어나기 전에 개체를 삭제하세요.
 [CA2002](ca2002.md) | 약한 ID를 가진 개체를 잠그지 마십시오.
-[CA2007](ca2007.md) | 대기 작업에서 System.threading.tasks.task.configureawait를 호출 하는 것이 좋습니다.
-CA2008 | TaskScheduler를 전달 하지 않고 작업을 만들지 않습니다.
-CA2009 | ImmutableCollection 값에 대해 ToImmutableCollection를 호출 하지 마십시오.
-CA2010 | 항상 PreserveSigAttribute로 표시 된 메서드에서 반환 된 값을 사용 합니다.
+[CA2007](ca2007.md) | 대기 중인 작업에 ConfigureAwait를 호출하는 것이 좋습니다.
+CA2008 | TaskScheduler를 전달하지 않고 작업을 만들지 마십시오.
+CA2009 | 변경 불가능한 컬렉션 값을 ToImmutable 컬렉션으로 호출하지 마십시오.
+CA2010 | 항상 PreserveSigAttribute로 표시된 메서드에서 반환되는 값을 사용합니다.
 [CA2100](ca2100.md) | 보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.
 [CA2101](ca2101.md) | P/Invoke 문자열 인수에 대해 마샬링을 지정하십시오.
 [CA2119](ca2119.md) | private 인터페이스를 만족하는 메서드를 봉인하세요.
-[CA2153](ca2153.md) | 손상 된 상태 예외를 Catch 하지 않음
-[CA2200](ca2200.md) | 스택 정보를 유지 하도록 다시 throw 합니다.
+[CA2153](ca2153.md) | 손상된 상태 예외를 catch하지 마십시오.
+[CA2200](ca2200.md) | 스택 세부 정보를 보존하려면 다시 throw합니다.
 [CA2201](ca2201.md) | 예약된 예외 형식을 발생시키지 마세요.
 [CA2207](ca2207.md) | 값 형식 정적 필드 인라인을 초기화하십시오.
 [CA2208](ca2208.md) | 인수 예외를 올바르게 인스턴스화하세요.
@@ -136,20 +136,20 @@ CA2010 | 항상 PreserveSigAttribute로 표시 된 메서드에서 반환 된 �
 [CA2216](ca2216.md) | 삭제 가능한 형식은 종료자를 선언해야 합니다.
 [CA2217](ca2217.md) | 열거형을 FlagsAttribute로 표시하지 마세요.
 [CA2218](ca2218.md) | Equals를 재정할 때 GetHashCode를 재정의하세요.
-[CA2219](ca2219.md) | Finally 절에서 예외를 발생 시 키 지 마십시오.
-[CA2224](ca2224.md) | 오버 로드 연산자 equals에 대 한 Override Equals
+[CA2219](ca2219.md) | finally 절에서 예외를 발생시키지 마십시오.
+[CA2224](ca2224.md) | 오버라이드 연산자 와 같음
 [CA2225](ca2225.md) | 연산자 오버로드에는 명명된 대체 항목이 있습니다.
 [CA2226](ca2226.md) | 연산자에는 대칭 오버로드가 있어야 합니다.
 [CA2227](ca2227.md) | 컬렉션 속성은 읽기 전용이어야 합니다.
 [CA2229](ca2229.md) | serialization 생성자를 구현하십시오.
-[CA2231](ca2231.md) | 오버 로드 연산자 equals 재정의 값 형식 같음
-[CA2234](ca2234.md) | 문자열 대신 시스템 uri 개체를 전달 합니다.
+[CA2231](ca2231.md) | 오버로드 연산자는 재정의 값 유형 같음과 같습니다.
+[CA2234](ca2234.md) | 문자열 대신 시스템 uri 개체 전달
 [CA2235](ca2235.md) | 모두 serialize할 수 없는 필드로 표시하십시오.
 [CA2237](ca2237.md) | ISerializable 형식을 serializable로 표시하세요.
 [CA2241](ca2241.md) | 서식 지정 메서드에 올바른 인수를 제공하십시오.
 [CA2242](ca2242.md) | NaN에 대해 정확하게 테스트하십시오.
 [CA2243](ca2243.md) | 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.
-CA2244 | 인덱싱된 요소 초기화를 복제 하지 마십시오.
+CA2244 | 인덱싱된 요소 초기화를 복제하지 마십시오.
 [CA2300](ca2300.md) | 안전하지 않은 역직렬 변환기 BinaryFormatter를 사용하지 마세요.
 [CA2301](ca2301.md) | 먼저 BinaryFormatter.Binder를 설정하지 않고 BinaryFormatter.Deserialize를 호출하지 마세요.
 [CA2302](ca2302.md) | BinaryFormatter.Deserialize를 호출하기 전에 BinaryFormatter.Binder가 설정되었는지 확인합니다.
@@ -172,44 +172,44 @@ CA2244 | 인덱싱된 요소 초기화를 복제 하지 마십시오.
 [CA3010](ca3010.md) | 코드에서 XAML 삽입 취약성에 대해 검토합니다.
 [CA3011](ca3011.md) | 코드에서 DLL 삽입 취약성에 대해 검토합니다.
 [CA3012](ca3012.md) | 코드에서 regex 삽입 취약성에 대해 검토합니다.
-CA3061 | URL로 스키마를 추가 하지 않습니다.
+CA3061 | URL별로 스키마를 추가하지 않음
 [CA3075](ca3075.md) | XML의 안전하지 않은 DTD 처리
-[CA3076](ca3076.md) | 안전 하지 않은 XSLT 스크립트 처리
-[CA3077](ca3077.md) | API Design, XmlDocument 및 XmlTextReader의 안전 하지 않은 처리
-[CA3147](ca3147.md) | 위조 방지 토큰을 사용 하 여 동사 처리기 표시
+[CA3076](ca3076.md) | 안전하지 않은 XSLT 스크립트 처리.
+[CA3077](ca3077.md) | API 디자인, XmlDocument 및 XmlTextReader에서 안전하지 않은 처리
+[CA3147](ca3147.md) | 위조 방지 토큰 유효성 검사로 동사 처리기 표시
 [CA5350](ca5350.md) | 취약한 암호화 알고리즘을 사용하지 마세요.
-[CA5351](ca5351.md) | 끊어진 암호화 알고리즘 사용 안 함
+[CA5351](ca5351.md) | 깨진 암호화 알고리즘을 사용하지 마십시오.
 CA5358 | 안전하지 않은 암호화 모드를 사용하지 마세요.
-CA5359 | 인증서 유효성 검사를 사용 하지 않도록 설정 안 함
-CA5360 | Deserialization에서 위험한 메서드를 호출 하지 마십시오.
-CA5361 | 강력한 암호화의 SChannel 사용을 사용 하지 않도록 설정 안 함
-CA5362 | Serializable 클래스에서 자체를 참조 하지 마십시오.
-CA5363 | 요청 유효성 검사를 사용 하지 않도록 설정 안 함
-CA5364 | 사용 되지 않는 보안 프로토콜 사용 안 함
-CA5365 | HTTP 헤더 검사를 사용 하지 않도록 설정 안 함
-CA5366 | 데이터 집합에 XmlReader 사용 Xml 읽기
-CA5367 | 포인터 필드를 사용 하 여 형식 직렬화 안 함
-CA5368 | 페이지에서 파생 된 클래스에 대해 ViewStateUserKey 설정
-CA5369 | Deserialization을 위해 XmlReader 사용
-CA5370 | 판독기의 유효성을 검사 하려면 XmlReader를 사용 합니다.
-CA5371 | 스키마 읽기에 XmlReader 사용
-CA5372 | XPathDocument에 XmlReader 사용
+CA5359 | 인증서 유효성 검사를 사용하지 않도록 설정하지 않음
+CA5360 | 직렬화에서 위험한 메서드를 호출하지 마십시오.
+CA5361 | 강력한 암호화의 S채널 사용을 비활성화하지 마십시오.
+CA5362 | 직렬화 가능한 클래스에서 자신을 참조하지 마십시오.
+CA5363 | 요청 유효성 검사를 사용하지 않음
+CA5364 | 더 이상 사용되지 않는 보안 프로토콜을 사용하지 마십시오.
+CA5365 | HTTP 헤더 검사를 사용하지 않음
+CA5366 | 데이터 집합 읽기 Xml에 대 한 Xml리더를 사용 하 여
+CA5367 | 포인터 필드를 사용 하 고 형식을 직렬화 하지 마십시오.
+CA5368 | 페이지에서 파생된 클래스에 대한 ViewStateUserKey 설정
+CA5369 | 직렬화를 위해 XmlReader 사용
+CA5370 | 판독기 유효성 을 검사하기 위해 XmlReader 사용
+CA5371 | 스키마 읽기를 위해 XmlReader 사용
+CA5372 | X패스문서에 XmlReader 사용
 CA5373 | 사용되지 않는 키 파생 함수를 사용하지 마세요.
-CA5374 | XslTransform 사용 안 함
-CA5375 | 계정 공유 액세스 서명 사용 안 함
-CA5376 | SharedAccessProtocol HttpsOnly 사용
+CA5374 | XslTransform을 사용하지 않음
+CA5375 | 계정 공유 액세스 서명 사용 안
+CA5376 | 공유 액세스 프로토콜 HttpsOnly 사용
 CA5377 | 컨테이너 수준 액세스 정책 사용
 CA5378 | ServicePointManagerSecurityProtocols를 비활성화하지 마세요.
-CA5379 | 약한 키 파생 함수 알고리즘 사용 안 함
-CA9999 | 분석기 버전이 일치 하지 않습니다.
+CA5379 | 약한 키 파생 함수 알고리즘을 사용하지 마십시오.
+CA9999 | 분석기 버전 불일치
 
-## <a name="unported-rules"></a>이식 되지 않은 규칙
+## <a name="unported-rules"></a>이식되지 않은 규칙
 
-[FxCop 분석기](install-fxcop-analyzers.md) 로 이식 되지 않은 규칙 집합은 아직 이식할 수 없지만 아직 [이식할](#rules-that-may-be-ported)수 있는 규칙 및 더 이상 사용 되지 않으며 [이식할 수](#deprecated-rules)없는 규칙으로 구성 됩니다.
+[FxCop 분석기로](install-fxcop-analyzers.md) 이식되지 않은 규칙 집합은 아직 이식되지 않았지만 여전히 [포팅될 수](#rules-that-may-be-ported)있는 규칙과 더 이상 사용되지 않으며 [이식되지 않는](#deprecated-rules)규칙으로 구성됩니다.
 
-### <a name="rules-that-may-be-ported"></a>이식할 수 있는 규칙
+### <a name="rules-that-may-be-ported"></a>포팅될 수 있는 규칙
 
-다음 FxCop 레거시 분석 규칙은 분석기로 아직 구현 되지 않았지만 여전히 일 수 있습니다. 이는 차단 기술 이유가 나 규칙의 우선 순위가 낮은 것일 수 있습니다. 각 규칙의 포팅 상태에 대 한 자세한 내용을 보려면 **추적 문제** 열의 링크를 클릭 하십시오.
+다음 FxCop 레거시 분석 규칙은 아직 분석기로 구현되지 않았지만 여전히 분석기일 수 있습니다. 이는 기술적 인 이유로 인해 또는 단순히 규칙이 낮은 우선 순위 때문일 수 있습니다. 각 규칙의 포팅 상태에 대한 자세한 내용을 보려면 **추적 문제** 열의 링크를 클릭합니다.
 
 규칙 ID | 추적 문제
 --- | ---
@@ -270,9 +270,9 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 [CA2239](ca2239.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
 [CA2240](ca2240.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
 
-### <a name="deprecated-rules"></a>사용 되지 않는 규칙
+### <a name="deprecated-rules"></a>더 이상 사용되지 않습니다.
 
-다음 FxCop 레거시 분석 규칙은 더 이상 사용 되지 않으며 분석기로 구현 되지 않습니다. 자세한 내용은 [roslyn-분석기 GitHub 문제 페이지](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)에서 규칙 ID (예: **CA1009**)로 검색할 수 있습니다.
+다음 FxCop 레거시 분석 규칙은 더 이상 사용되지 않으며 분석기로 구현되지 않습니다. 자세한 내용은 [로슬린 분석기 GitHub 문제 페이지에서](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)규칙 ID(예: **CA1009)로**검색할 수 있습니다.
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
@@ -338,7 +338,7 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA2210](ca2210.md)
 - [CA2220](ca2220.md)
 - [CA2221](ca2221.md)
-- [CA2222](ca2222.md) ([양쪽 맞춤](https://github.com/dotnet/roslyn-analyzers/issues/1378))
+- [CA2222](ca2222.md) [(정당화)](https://github.com/dotnet/roslyn-analyzers/issues/1378)
 - [CA2223](ca2223.md)
 - [CA2228](ca2228.md)
 - [CA2230](ca2230.md)
@@ -347,4 +347,4 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [FxCopAnalyzers 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [마이크로소프트.코드분석.FxCop분석기 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

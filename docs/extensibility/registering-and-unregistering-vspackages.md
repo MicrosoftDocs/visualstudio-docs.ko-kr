@@ -1,5 +1,5 @@
 ---
-title: 등록 하 고 Vspackage 등록 취소 | Microsoft Docs
+title: VS패키지 등록 및 등록 취소 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 701700ba9d5c6db1e5858a2419e1b2c0fa950ae5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334300"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301586"
 ---
-# <a name="register-and-unregister-vspackages"></a>등록 하 고 Vspackage 등록 취소
-특성을 사용 하 여 VSPackage를 등록 하지만
+# <a name="register-and-unregister-vspackages"></a>VS패키지 등록 및 등록 취소
+특성을 사용하여 VSPackage를 등록하지만
 
-## <a name="register-a-vspackage"></a>VSPackage 등록
- 관리 되는 Vspackage의 등록을 제어 하려면 특성을 사용할 수 있습니다. 에 포함 된 모든 등록 정보를 *.pkgdef* 파일입니다. 파일 기반 등록에 대 한 자세한 내용은 참조 하세요. [CreatePkgDef 유틸리티](../extensibility/internals/createpkgdef-utility.md)합니다.
+## <a name="register-a-vspackage"></a>VS패키지 등록
+ 특성을 사용하여 관리되는 VSPackage의 등록을 제어할 수 있습니다. 모든 등록 정보는 *.pkgdef* 파일에 포함됩니다. 파일 기반 등록에 대한 자세한 내용은 [CreatePkgDef 유틸리티를](../extensibility/internals/createpkgdef-utility.md)참조하십시오.
 
- 다음 코드에는 표준 등록 특성을 사용 하 여 VSPackage를 등록 하는 방법을 보여 줍니다.
+ 다음 코드는 VSPackage를 등록하기 위해 표준 등록 특성을 사용하는 방법을 보여 줍니다.
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -36,15 +36,15 @@ public sealed class BasicPackage : Package
 ```
 
 ## <a name="unregister-an-extension"></a>확장 등록 취소
- 실행 하기만 하면 많은 다른 Vspackage 사용 하 여 실험 되어 있는 경우 실험적 인스턴스에서 제거할 합니다 **재설정** 명령입니다. 검색할 **Visual Studio 실험적 인스턴스 다시 설정** 컴퓨터의 시작 페이지에서 또는 명령줄에서이 명령을 실행 합니다.
+ 많은 다른 VSPackage를 실험해 보고 실험 인스턴스에서 제거하려는 경우 **재설정** 명령을 실행할 수 있습니다. 컴퓨터의 시작 페이지에서 **Visual Studio 실험 인스턴스 재설정을** 찾거나 명령줄에서 이 명령을 실행합니다.
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- 사용자가 설치한 Visual Studio의 개발 인스턴스에서 확장을 제거 하려는 경우 이동할 **도구** > **확장 및 업데이트**확장을 찾고 클릭 **제거**합니다.
+ Visual Studio의 개발 인스턴스에 설치한 확장을 제거하려면 **도구** > **확장 및 업데이트로**이동하여 확장 프로그램을 찾은 다음 **제거를**클릭합니다.
 
- 어떤 이유로 이러한 메서드의 모두 확장을 제거에 성공 하면 명령줄에서 VSPackage 어셈블리를 다음과 같이 등록 취소할 수 있습니다.
+ 어떤 이유로 이러한 메서드 중 어느 것도 확장을 제거하는 데 성공하지 못하면 다음과 같이 명령줄에서 VSPackage 어셈블리를 등록 취소할 수 있습니다.
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>
@@ -52,13 +52,13 @@ public sealed class BasicPackage : Package
 
 <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>
 
-## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>사용자 지정 등록 특성을 사용 하 여 확장명 등록
+## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>사용자 지정 등록 특성을 사용하여 확장 등록
 
-특정 한 경우 확장 프로그램에 대해 새 등록 특성을 만드는 해야 합니다. 새 레지스트리 키를 추가 하거나 기존 키를 새 값을 추가 하려면 등록 특성을 사용할 수 있습니다. 새 특성에서 파생 되어야 합니다 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>를 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> 및 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> 메서드.
+경우에 따라 확장에 대한 새 등록 특성을 만들어야 할 수 있습니다. 등록 특성을 사용하여 새 레지스트리 키를 추가하거나 기존 키에 새 값을 추가할 수 있습니다. 새 특성에서 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>파생되어야 하며 및 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> 메서드를 재정의해야 합니다.
 
 ### <a name="create-a-custom-attribute"></a>사용자 지정 특성 만들기
 
-다음 코드에는 새 등록 특성을 만드는 방법을 보여 줍니다.
+다음 코드는 새 등록 특성을 만드는 방법을 보여 주며 있습니다.
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
@@ -67,11 +67,11 @@ public class CustomRegistrationAttribute : RegistrationAttribute
 }
 ```
 
- <xref:System.AttributeUsageAttribute> 특성 클래스에는 프로그램 요소 (클래스, 메서드 등)를 특성 관계가 있는,이 사용할 수 있는지 여부를 두 번 이상 상속할 수 있는지 여부를 지정 하는 데 사용 됩니다.
+ 는 <xref:System.AttributeUsageAttribute> 특성 클래스에서 특성이 관련된 프로그램 요소(클래스, 메서드 등)를 지정하는 데 사용되며, 특성을 두 번 이상 사용할 수 있는지 여부 및 상속할 수 있는지 여부를 지정합니다.
 
 ### <a name="create-a-registry-key"></a>레지스트리 키 만들기
 
-다음 코드에서는 사용자 지정 특성 만듭니다는 **사용자 지정** 등록 되는 VSPackage에 대 한 키 아래 하위 키입니다.
+다음 코드에서 사용자 지정 특성은 등록 중인 VSPackage의 키 아래에 **사용자 지정** 하위 키를 만듭니다.
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)
@@ -95,9 +95,9 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-### <a name="create-a-new-value-under-an-existing-registry-key"></a>기존 레지스트리 키 아래에서 새 값
+### <a name="create-a-new-value-under-an-existing-registry-key"></a>기존 레지스트리 키 아래에 새 값 만들기
 
-기존 키를 사용자 지정 값을 추가할 수 있습니다. 다음 코드를 VSPackage 등록 키를 새 값을 추가 하는 방법을 보여 줍니다.
+기존 키에 사용자 지정 값을 추가할 수 있습니다. 다음 코드는 VSPackage 등록 키에 새 값을 추가하는 방법을 보여 주며,
 
 ```csharp
 public override void Register(RegistrationAttribute.RegistrationContext context)
@@ -121,5 +121,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [VSPackage](../extensibility/internals/vspackages.md)
