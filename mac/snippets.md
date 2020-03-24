@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68787693"
 ---
 # <a name="code-snippets"></a>코드 조각
@@ -22,7 +22,7 @@ _코드 템플릿_이라고도 하는 코드 조각은 미리 작성된 코드 �
 
 다양한 방법으로 코드 조각을 추가할 수 있으며, 아래에서는 그중 일부를 설명합니다.
 
-- **탭 확장** &ndash; 템플릿 이름을 입력하여 목록에서 해당 이름을 선택하고 **탭** 및 **탭** 키를 눌러 이를 추가합니다.
+- **탭 확장** &ndash; 템플릿 이름을 입력하여 목록에서 해당 이름을 선택하고 **탭** 및 **탭** 키를 눌러 다음을 추가합니다.
 
   ![코드의 탭 확장](media/source-editor-image13.png)
 
@@ -46,7 +46,7 @@ _코드 템플릿_이라고도 하는 코드 조각은 미리 작성된 코드 �
 
 코드 조각이 편집기에 삽입되면 정의된 모든 키워드가 강조 표시되고 탭으로 이동하며 편집할 수 있습니다. 키워드는 코드 조각에서 “변수”처럼 행동하며 키워드 이름 앞과 뒤에 달러 기호(`$`)를 배치하여 정의됩니다. 
 
-**템플릿 편집** 창이 아래에 표시되어, 기본 제공 `prop` 코드 조각을 편집할 수 있습니다. 코드 조각에는 창의 오른쪽에 추가 속성 집합(기본값 및 도구 설명과 같음)을 가질 수 있는 &ndash; `$type$` 및 `$name$` &ndash; 등 두 개의 키워드가 포함되어 있습니다.
+**템플릿 편집** 창이 아래에 표시되어, 기본 제공 `prop` 코드 조각을 편집할 수 있습니다. 코드 조각에는 창의 오른쪽에 추가 속성 집합(기본값, 도구 설명 등)을 가질 수 있는 &ndash; `$type$` 및 `$name$` &ndash; 등 두 개의 키워드가 포함되어 있습니다.
 
 ![템플릿 편집 창](media/source-editor-image12z.png)
 
@@ -86,6 +86,6 @@ _코드 템플릿_이라고도 하는 코드 조각은 미리 작성된 코드 �
 
 이전 섹션의 `for` 코드 조각은 이러한 두 예약 키워드의 예제입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각(Windows의 Visual Studio)](/visualstudio/ide/code-snippets)

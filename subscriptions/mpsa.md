@@ -3,15 +3,15 @@ title: MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독 | 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
-ms.openlocfilehash: f87a77cdc19244ca24da1685c0b05372f6cc76d7
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e4416bfab95bd7d1c38c392bfbf9efee9a06fc7f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605852"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78410256"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
 MPSA 프로그램을 통해 Visual Studio 구독을 구매한 경우 Visual Studio 구독 관리자가 되어 구독을 다른 사용자에게 할당하기 전에 기억해야 할 몇 가지가 있습니다. 이미 관리자로 설정되어 있으면 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com/)로 직접 이동할 수 있습니다.
@@ -43,7 +43,12 @@ MPSA 프로그램을 통해 Visual Studio 구독을 구매한 경우 Visual Stud
 4. **테넌트**(예: contoso.onmicrosoft.com)를 선택합니다.
 5. **도메인 연결**을 클릭합니다.
 
-연결 시 필요한 조건을 충족한 모든 사용자는 일반적으로 몇 분 이내에 Visual Studio 구독 관리자로서 프로비저닝됩니다. 그러나 때로는 최대 24시간이 걸릴 수도 있습니다. 테넌트가 프로비저닝되면 Visual Studio 구독 관리 포털에 액세스할 수 있게 됩니다. 24시간 보다 오래 걸릴 경우 MPSA 고객 지원 팀에 문의하세요.
+연결 시 필요한 조건을 충족한 모든 사용자는 일반적으로 몇 분 이내에 Visual Studio 구독 관리자로서 프로비저닝됩니다. 그러나 때로는 최대 24시간이 걸릴 수도 있습니다. 테넌트가 프로비저닝되면 Visual Studio 구독 관리 포털에 액세스할 수 있게 됩니다. 24시간 보다 오래 걸릴 경우 다음 단계에 따라 MPSA 고객 지원 팀에 문의하세요.
+1. https://www.microsoft.com/licensing/mpsa/default 에 연결합니다.
+2. 페이지 맨 위에 있는 **기타** 메뉴를 클릭합니다. 
+3. **지원**을 선택합니다.
+4. **라이선스 지원**을 선택합니다.
+5. 요구 사항에 가장 잘 맞는 지원 옵션을 선택합니다. 
 
 > [!NOTE]
 > (연결 후에) 2단계 및 5단계 조건을 충족하는 새 사용자가 있는 경우 MPSA 고객 지원팀에 문의해야 합니다. MPSA 고객 지원 팀은 새 Visual Studio 구독 관리자를 프로비전하기 위한 지원을 제공합니다.
@@ -51,7 +56,21 @@ MPSA 프로그램을 통해 Visual Studio 구독을 구매한 경우 Visual Stud
 ## <a name="tenant-association-unmanaged"></a>테넌트 연결(관리되지 않는)
 위에서 설명한 것처럼 회사 계정이 아닌(“Azure AD”(Azure Active Directory)에 등록되지 않은) 전자 메일을 사용하여 비즈니스 센터에 등록한 경우 테넌트 연결이 약간 달라집니다. 이른 바 “도메인 인수”를 수행해야 합니다. 이 프로세스 동안 사용자 스스로 전역 관리자가 되어 관리되지 않는 테넌트에서 관리되는 테넌트로 변경해야 합니다.
 
-이 프로세스에 대한 자세한 내용은 [빠른 시작 안내](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx)를 참조합니다. 도메인 인수 과정을 안내해 줄 *"온라인 서비스 설치 및 사용"* 이라는 가이드를 다운로드합니다. 이 작업이 완료되면 사용자의 구매 계정이 테넌트에 연결됩니다.
+이 프로세스에 대한 자세한 내용은 [빠른 시작 안내](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)를 참조합니다. 도메인 인수 과정을 안내해 줄 *"온라인 서비스 설치 및 사용"* 이라는 가이드를 다운로드합니다. 이 작업이 완료되면 사용자의 구매 계정이 테넌트에 연결됩니다.
 
 > [!NOTE]
 > 도메인 인수 과정을 완료한 후 사용자는 사전 테넌트 연결(관리되는)에 대한 섹션에서 다섯 단계의 모든 조건을 준수해야 합니다. 이러한 조건이 충족되면 추가 Visual Studio 구독 관리자를 프로비전하기 위해 MPSA 고객 지원 팀에 문의해야 합니다.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>다음 단계
+Visual Studio 구독 관리에 대해 자세히 알아보세요.
+- [개별 구독 할당](assign-license.md)
+- [여러 구독 할당](assign-license-bulk.md)
+- [구독 편집](edit-license.md)
+- [구독 삭제](delete-license.md)
+- [최대 사용량 확인](maximum-usage.md)

@@ -3,18 +3,19 @@ title: 관리 포털에서 계약 기본 설정 지정
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: 관리 포털에서 언어, 연락처, 구독 수준 등에 대한 기본 설정을 지정하는 방법 알아보기
-ms.openlocfilehash: 24e9ddfa92ee63e4d15eea086224e1069d4bcbc8
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000983"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508760"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>관리 포털에서 계약 기본 설정 지정
-이제 슈퍼 관리자는 관리 포털에서 각 계약에 전역으로 적용될 특정 기본 설정을 지정할 수 있습니다.  이 기본 설정은 계약 관리자가 구독자를 추가하는 동안 설정할 수 있는 항목을 결정하며 슈퍼 관리자만 전역으로 수정할 수 있습니다.  
+슈퍼 관리자는 관리 포털에서 각 계약에 전역으로 적용될 특정 기본 설정을 지정할 수 있습니다.  이 기본 설정은 관리자가 구독자를 추가할 때 구독 세부 정보를 자동으로 채우며 슈퍼 관리자만 전역으로 수정할 수 있습니다.  
 
 ## <a name="access-preferences"></a>기본 설정에 액세스
 기본 설정을 보거나 수정하려면 계약에 대한 슈퍼 관리자 권한이 있는 로그인 ID를 사용하여 [관리자 포털](https://manage.visualstudio.com)에 로그인해야 합니다.  
@@ -46,7 +47,7 @@ ms.locfileid: "70000983"
 > 여기에 나열한 전자 메일 주소는 구독자에게 제공되지 않습니다.  구독자가 구독자 포털에서 **내 관리자에게 문의** 요청을 제출하면 해당 메시지는 구독자에게 공개하지 않고 별칭으로 전달됩니다. 
 
 ### <a name="default-external-subscribers-setting"></a>기본 외부 구독자 설정
-이 기본 설정을 사용하여 관리자가 조직의 테넌트/디렉터리 외부에서 구독자를 추가할 수 있는지 여부를 결정할 수 있습니다.  이 기능을 끄면 외부 구독자가 허용되지 않습니다.  이 기능을 사용하도록 설정하고 관리자가 외부 구독자를 추가하려고 하면 선택을 확인하는 메시지가 표시되고 구독을 할당할 수 있습니다. 관리자가 이 설정을 재정의할 수 없습니다. 
+이 기본 설정을 사용하여 관리자가 조직의 테넌트/디렉터리 외부에서 구독자를 추가할 수 있는지 여부를 결정할 수 있습니다.  이 기능을 끄면 외부 구독자가 허용되지 않습니다.  이 기능을 사용하도록 설정하고 관리자가 외부 구독자를 추가하려고 하면 선택을 확인하는 메시지가 표시되고 구독을 할당할 수 있습니다. 관리자는 이 설정을 재정의할 수 없습니다. 
 
 ### <a name="default-downloads-setting"></a>기본 다운로드 설정
 기본적으로 켜지는 이 설정을 사용하도록 설정하면 관리자가 새 구독을 만들 때 구독자가 다운로드에 액세스할 수 있습니다.  관리자가 개별 구독을 기준으로 다운로드를 사용하지 않도록 설정할 수 있습니다.  
@@ -73,7 +74,18 @@ A:  **연락처 전자 메일 주소** 기본 설정에 특정 전자 메일 주
 ## <a name="resources"></a>리소스
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>다음 단계
-- [구독을 할당](assign-license.md)하는 방법 알아보기
-- [구독 혜택](https://visualstudio.microsoft.com/vs/benefits/)의 전체 범위에 대한 자세한 정보
+Visual Studio 구독 관리에 대해 자세히 알아보세요.
+- [개별 구독 할당](assign-license.md)
+- [여러 구독 할당](assign-license-bulk.md)
+- [구독 편집](edit-license.md)
+- [최대 사용량 확인](maximum-usage.md)
+
+
 

@@ -3,15 +3,15 @@ title: 월간 구독에 대한 관리자 설정 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/02/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: 월간 구독에 대한 관리자 설정
-ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: a5d7c6e9442efd70ea3e7c2b7e7da4239e226aa2
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235214"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78289843"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 월간 구독에 대한 관리자 설정
 
@@ -33,13 +33,21 @@ Visual Studio 월간 구독을 구매하는 경우 구매하는 데 사용된 Az
 
 1. [portal.azure.com](https://portal.azure.com)에서 Azure Portal에 연결합니다.
 2. Visual Studio 월간 구독을 구매하는 데 사용된 계정으로 로그인합니다.
-3. 왼쪽 탐색 창에서 아래로 스크롤하여 **비용 관리 + 청구**로 이동합니다.
+3. **Azure 서비스**에서 **비용 관리 + 청구**를 선택합니다.
+   > [!div class="mx-imgBorder"]
+   > ![Azure 서비스에서 비용 관리 + 청구 선택](_img/cloud-admin/azure-cost-billing.png)
 4. **내 구독** 목록에서 구매하는 데 사용한 Azure 구독을 선택합니다.
-5. 왼쪽 탐색 창에서 목록의 상단 부근에 있는 **액세스 제어**를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![구독 선택](_img/cloud-admin/subscription-list.png)
+5. 왼쪽 탐색 창에서 목록의 상단 부근에 있는 **IAM(액세스 제어)** 을 클릭합니다.
 6. 창의 상단에 있는 **추가** 탭을 클릭합니다.
 7. **역할 할당 추가**를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![액세스 제어, 추가, 역할 할당 추가 선택](_img/cloud-admin/access-control-add.png)
 8. 오른쪽에 있는 플라이아웃 창에서 창 상단의 **역할** 드롭다운 목록을 클릭하고 아래로 스크롤하여 **사용자 액세스 관리자**를 선택합니다.
 9. 사용자 목록에서 아래로 스크롤해 관리자로 만들려는 사용자를 선택합니다. 
+   > [!div class="mx-imgBorder"]
+   > ![역할, 사용자 액세스 관리 선택](_img/cloud-admin/add-role-user-access-admin.png)
 10. **저장**을 클릭합니다.
 11. **역할 할당** 탭을 클릭하여 선택된 사용자가 사용자 액세스 관리자로 표시되는지 확인합니다.
 

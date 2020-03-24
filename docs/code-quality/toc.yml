@@ -14,10 +14,12 @@
           href: install-roslyn-analyzers.md
         - name: 소스 코드 분석기 구성
           href: use-roslyn-analyzers.md
+        - name: 라이브 코드 분석 범위
+          href: configure-live-code-analysis-scope-managed-code.md
+        - name: 수동으로 코드 분석 실행
+          href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 코드 분석 사용 안 함
           href: disable-code-analysis.md
-        - name: 전체 솔루션 분석 사용
-          href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: FAQ
           href: analyzers-faq.md
         - name: FxCop 분석기
@@ -50,7 +52,7 @@
         - name: FxCop 분석기로 마이그레이션
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: 수동으로 레거시 분석 실행
-          href: how-to-run-code-analysis-manually-for-managed-code.md
+          href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
         - name: Configuration
           items:
             - name: 레거시 분석 구성

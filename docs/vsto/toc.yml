@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Windows Installer를 사용하여 Office 솔루션 배포
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: Visual Studio 설치 프로젝트를 사용하여 Office 솔루션 배포
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: Office 솔루션 배포 문제 해결
               items:
                 - name: Office 솔루션 배포 문제 해결

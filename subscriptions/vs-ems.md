@@ -7,10 +7,10 @@ ms.date: 11/13/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Enterprise Mobility + Security 혜택에 대해 알아봅니다.
 ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74099541"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio의 EMS(Enterprise Mobility + Security)
@@ -29,18 +29,18 @@ Office 365 Developer(E3) 테넌트가 이미 있는 경우 EMS를 설치해야 �
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예          |
 | Visual Studio Professional(표준<sup>2</sup>) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  예          |
-| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  해당 사항 없음          |
-| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  해당 사항 없음          |
+| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  N/A          |
+| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
-<sup>1</sup> *포함:  NFR(전매금지), VSIP(Visual Studio 업계 파트너), MPN(Microsoft 파트너 네트워크), FTE, MCT 소프트웨어 및 서비스 개발자, BizSpark.  제외: MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services, Imagine, Microsoft 파트너 네트워크(Professional)*
+<sup>1</sup>  *포함:  NFR(전매금지), VSIP(Visual Studio 업계 파트너), MPN(Microsoft 파트너 네트워크), FTE, MCT 소프트웨어 및 서비스 개발자, BizSpark.  제외: MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services, Imagine, Microsoft 파트너 네트워크(Professional)*
 
 <sup>2</sup> *제외: Microsoft 파트너 네트워크(Professional)*
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
-어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
+어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 전자 메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 ## <a name="support-resources"></a>지원 리소스
 - EMS와 관련하여 도움이 필요하세요?  온라인 [EMS 설명서](/enterprise-mobility-security/)를 확인하세요.
