@@ -1,8 +1,12 @@
 - name: Visual Studio의 테스트 도구
-  href: improve-code-quality.md
+  href: index.yml
+- name: 개요
+  items:
+    - name: 테스트 도구 살펴보기
+      href: improve-code-quality.md
 - name: 단위 테스트
   items:
-    - name: 유닛 테스트 도구 개요
+    - name: 단위 테스트 도구 개요
       href: unit-test-your-code.md
     - name: 시작
       href: getting-started-with-unit-testing.md
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: 개요
+          href: intellitest-manual/index.md
         - name: '방법: IntelliTest를 사용하여 단위 테스트 생성'
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: 개요
-          href: intellitest-manual/introduction.md
-        - name: 시작
-          href: intellitest-manual/getting-started.md
-        - name: 섹션의 인덱스
-          href: intellitest-manual/index.md
         - name: 테스트 생성
           href: intellitest-manual/test-generation.md
         - name: 동적 기호 실행
@@ -71,7 +71,7 @@
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
             - name: '코드 생성, 컴파일 및 명명 규칙'
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
-        - name: 데이터 기반 유닛 테스트
+        - name: 데이터 기반 단위 테스트
           items:
             - name: 데이터 기반 단위 테스트 만들기
               href: how-to-create-a-data-driven-unit-test.md
@@ -81,7 +81,7 @@
           href: unit-tests-for-generic-methods.md
         - name: 이전 버전의 .NET을 대상으로 사용하도록 단위 테스트 구성
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-    - name: C/C++ Code용 유닛 테스트
+    - name: C/C++ Code용 단위 테스트
       items:
         - name: C/C++ Code용 단위 테스트 작성
           href: writing-unit-tests-for-c-cpp.md
@@ -99,13 +99,13 @@
           href: walkthrough-writing-unit-tests-for-cpp-dlls.md
         - name: C++ API 참조에 대한 Microsoft 단위 테스트 프레임워크
           href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
-    - name: UWP 앱의 유닛 테스트 만들기 및 실행
+    - name: UWP 앱의 단위 테스트 만들기 및 실행
       items:
         - name: C++ UWP DLL 단위 테스트
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
         - name: 'UWP 앱에서 Visual C# 코드 단위 테스트'
           href: unit-testing-visual-csharp-code-in-a-store-app.md
-        - name: '연습: UWP 앱의 유닛 테스트 만들기 및 실행'
+        - name: '연습: UWP 앱의 단위 테스트 만들기 및 실행'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
     - name: 코드 검사
       items:
