@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 03/18/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 8c7f8d2d79655c9bdd33827dc3ae2e48dc51b853
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508968"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232032"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -69,7 +69,7 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
-어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 전자 메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
+어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Q: Azure Portal 내에서 기술 지원 인시던트를 제출하려면 어떻게 하나요?
@@ -84,7 +84,7 @@ A:  Azure Portal에서 지원 인시던트를 제출하는 작업은 세 단계�
 A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 지적 재산은 해당 리소스를 제공하는 회사의 지적 재산입니다. 따라서 고용주를 통해 Visual Studio 구독을 받은 경우 해당 지적 재산권 정책이 적용됩니다. 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q: Azure에 대한 내 액세스가 곧 종료된다는 메시지를 받았습니다.  Azure를 계속 사용하려면 어떻게 해야 합니까?
-A:  이 전자 메일은 Visual Studio 구독에 연결된 Azure 혜택을 사용하고 있으며 해당 구독이 만료 또는 제거되면 수신됩니다.  Azure를 계속 사용하기 위한 다음과 같은 몇 가지 옵션이 있습니다.
+A:  이 이메일은 Visual Studio 구독에 연결된 Azure 혜택을 사용하고 있으며 해당 구독이 만료 또는 제거되면 수신됩니다.  Azure를 계속 사용하기 위한 다음과 같은 몇 가지 옵션이 있습니다.
 
 **권장 조치:**
 
@@ -104,7 +104,7 @@ Microsoft 계정에서 **다른** 구독 수준의 다른 활성 Visual Studio �
 
 이 Visual Studio Azure 구독을 계속 사용하지 않으려면 언제든지 가상 머신 및 데이터베이스와 같은 리소스를 다른 Azure 구독으로 전송하고 이 구독을 [취소](https://azure.microsoft.com/support/cancel-account/)할 수도 있습니다.
 
-이 전자 메일이 잘못되었다고 생각된다면 [Azure 고객 지원팀](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)으로 문의하세요.
+이 이메일이 잘못되었다고 생각된다면 [Azure 고객 지원팀](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)으로 문의하세요.
 
 ## <a name="support-resources"></a>지원 리소스
 - Azure와 관련하여 도움이 필요하세요?  다음 리소스를 확인하세요.
@@ -112,6 +112,12 @@ Microsoft 계정에서 **다른** 구독 수준의 다른 활성 Visual Studio �
   - [Azure 유용한 정보](https://microsoft.github.io/AzureTipsAndTricks/ "Azure 유용한 정보") 
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Microsoft 도구 및 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.
