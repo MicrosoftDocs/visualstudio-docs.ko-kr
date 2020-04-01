@@ -329,6 +329,8 @@
                   href: ide/reference/generate-constructor.md
                 - name: 분해자 생성
                   href: ide/reference/generate-deconstructor.md
+                - name: 명시적 캐스트 추가
+                  href: ide/reference/add-explicit-cast.md
                 - name: 메서드에 매개 변수 추가
                   href: ide/reference/add-parameter.md
                 - name: 매개 변수 생성
@@ -360,6 +362,8 @@
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: 익명 형식을 튜플로 변환
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: Auto 속성과 full 속성 간 변환
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: for 루프 및 foreach 명령문 간 변환
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Get 메서드 및 속성 간 변환

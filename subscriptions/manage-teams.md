@@ -3,15 +3,16 @@ title: 대규모 팀 및 외부 계약업체 관리 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 관리자의 대규모 팀 및 외부 계약업체 구독 관리 책임에 대해 알아봅니다.
-ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947055"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232318"
 ---
 # <a name="large-teams-and-external-contractors"></a>대규모 팀 및 외부 계약업체
 Visual Studio 구독 관리자는 Visual Studio 사용이 허가된 소프트웨어와 상호 작용하는 모든 사용자가 자신 소유의 Visual Studio 구독에 대해 적절하게 사용이 허가되어 있는지 확인해야 하는 책임이 있습니다.

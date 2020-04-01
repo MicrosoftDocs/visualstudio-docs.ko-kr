@@ -3,15 +3,16 @@ title: 관리자의 책임 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: 구독 관리자의 책임에 대해 알아봅니다.
-ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 61b75f1863ba490a610edf63c330661d1c4baf52
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78235160"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232719"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>관리자 책임의 개요
 관리자는 조직에 대한 구독을 관리할 수 있습니다.  또한 관리자 역할에는 사용 약관에 따라 구독이 관리되도록 해야 할 책임이 있습니다. 이 문서에서는 관리자 역할의 책임, 혜택 및 제한 사항에 대해 간략하게 설명합니다.

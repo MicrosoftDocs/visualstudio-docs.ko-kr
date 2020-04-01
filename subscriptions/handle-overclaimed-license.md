@@ -3,15 +3,16 @@ title: 초과 할당된 라이선스 처리 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 관리자가 초과 할당된 구독을 해결하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 6773196d914306b7e18fe31ce06cc0cd89783ffd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410269"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232446"
 ---
 # <a name="overallocated-subscriptions"></a>초과 할당된 구독
 구독자가 추가된 후 주문자가 변경되어 결국 회사가 소유하는 라이선스보다 더 많은 구독이 할당되는 경우가 간혹 있습니다. 이를 “초과 할당”이라고 합니다.  

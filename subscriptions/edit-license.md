@@ -3,15 +3,16 @@ title: 관리자 포털에서 구독 편집 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 관리자가 구독 할당을 편집하는 방법을 알아봅니다.
-ms.openlocfilehash: cd4bb40599ff242e20ba0e38fb561bde7d3f1823
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263284"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232549"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio 구독 할당 편집
 구독 관리자는 조직 내에서 개인에게 할당된 구독을 변경할 수 있습니다.  이 문서에서는 관리자가 변경할 수 있는 유형에 대해 설명하고 필요한 단계를 제공합니다.

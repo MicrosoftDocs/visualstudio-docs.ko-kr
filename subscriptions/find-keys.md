@@ -3,15 +3,16 @@ title: Visual Studio 구독에서 제품 키 찾고 요청하기 | Microsoft Doc
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 찾고 요청하며 내보내는 방법을 알아봅니다.
-ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937500"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232493"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 찾고 요청하기
 이 문서에서는 https://my.visualstudio.com/productkeys 에서 제품 키를 찾고 요청하며 내보내는 방법을 설명합니다.  일반 정품 및 볼륨 라이선스 버전의 키, 일일 제품 키 요청 제한, 키를 사용한 제품 정품 인증 방법에 대한 자세한 내용은 [제품 키 개요](product-keys.md)를 참조하세요.

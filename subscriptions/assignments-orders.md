@@ -3,15 +3,16 @@ title: 사용자 할당 추적 및 주문 처리 | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 관리자의 사용자 할당 추적 및 주문 처리 책임에 대해 알아봅니다.
-ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78235227"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232696"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>사용자 할당 추적 및 주문 처리
 Visual Studio 구독 관리자는 볼륨 라이선스 규약 및 Microsoft 제품 및 서비스 계약에 개략적으로 나와 있는 일정에 따라 Visual Studio 사용을 추적하고 사용량 증가에 따른 주문을 처리해야 합니다. 새 Visual Studio 구독 관리 포털에서는 사용 가능한 라이선스 및 사용한 라이선스를 표시하는 유용한 추적기를 통해 이 단계가 간소화되었습니다.

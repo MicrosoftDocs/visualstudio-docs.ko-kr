@@ -3,15 +3,16 @@ title: Microsoft for Startups 프로그램을 통해 신생 기업에 제공된 
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 구독에 대한 세부 사항은 Microsoft for Startups 프로그램을 통해 제공됩니다.
-ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947106"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233250"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>신생 기업에 제공된 Visual Studio 구독
 Microsoft for Startups 프로그램에 가입하는 정규화된 신생 기업은 5개의 Visual Studio Enterprise [월별 클라우드 구독](https://visualstudio.microsoft.com/vs/pricing/)을 얻을 수 있습니다. 

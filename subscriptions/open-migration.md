@@ -3,15 +3,16 @@ title: 고객의 Visual Studio 구독을 관리하는 파트너 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 파트너가 고객의 Visual Studio 구독을 관리하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: bf1fe706a0e1ee0b027e465c0bfaa8c0d326ee99
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947071"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232289"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>고객을 대신하여 구독을 관리하는 파트너
 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구독을 관리하려면 따라야 할 몇 가지 단계가 있습니다. 프로세스는 다음과 같습니다.
@@ -50,7 +51,7 @@ Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구�
 > 고객은 파트너가 Open License에 추가되었음을 알리는 알림 이메일을 받게 됩니다. 파트너의 액세스 권한을 제거하도록 선택할 수 있습니다.
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [볼륨 라이선스 조건](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

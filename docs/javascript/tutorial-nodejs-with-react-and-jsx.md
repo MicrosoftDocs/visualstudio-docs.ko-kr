@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235095"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550022"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
 Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 경험할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 애플리케이션 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
 
-이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
+이 자습서에서는 다음 작업 방법을 알아봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * NPM 패키지 추가
@@ -31,7 +31,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 > * JSX 트랜스파일
 > * 디버거 연결
 
-## <a name="before-you-begin"></a>시작하기 전 주의 사항
+## <a name="before-you-begin"></a>시작하기 전에
 
 다음은 몇 가지 주요 개념을 소개하는 빠른 FAQ입니다.
 
@@ -117,7 +117,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 * react
 * react-dom
 * express
-* path
+* 경로
 * ts-loader
 * typescript
 * webpack
@@ -407,10 +407,6 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
    Microsoft Edge(Chromium)의 경우 Chrome의 모든 인스턴스도 종료합니다. 두 브라우저는 모두 chromium 코드베이스를 공유하기 때문에 최상의 결과를 제공합니다.
    ::: moniker-end
 
-   ::: moniker range=">=vs-2019"
-   Microsoft Edge(Chromium)의 경우 Chrome의 모든 인스턴스도 종료합니다. 두 브라우저는 모두 chromium 코드 베이스를 사용하기 때문에 최상의 결과를 제공합니다.
-   ::: moniker-end
-
 2. 디버깅을 사용하도록 설정된 상태로 브라우저를 시작합니다.
 
     ::: moniker range=">=vs-2019"
@@ -459,7 +455,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
     },
     ```
 
-    이 코드로 바꿉니다.
+    바꿉니다.
 
     ```javascript
     output: {

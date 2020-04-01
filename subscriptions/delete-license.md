@@ -3,15 +3,16 @@ title: Visual Studio 구독 관리 포털에서 구독 할당 삭제 | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 관리자가 구독 할당을 삭제하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 6ed64f5c05f77bea7f157eee9e29bbb05aa8730d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a884cb56b9c04558023659317ecce2d06a8ec54d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263250"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232536"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 할당 삭제
 회사를 떠나거나, 프로젝트가 완료되거나, 새로운 작업 역할로 전환되는 경우처럼 구독자에게 더 이상 Visual Studio 구독이 필요하지 않은 경우 해당 구독을 제거하고 다른 사람에게 할당할 수 있습니다. 구독을 다시 할당하면 일부 구독자 혜택은 재설정되지 않습니다.  새 사용자는 요청되지 않은 키를 요청하고, 이전에 요청된 키를 볼 수 있지만 클레임 제한은 재설정되지 **않습니다**.  EA(기업 계약)가 있는 조직의 경우 원래 사용자가 사용한 모든 혜택(예: Pluralsight 교육)은 다시 설정됩니다. 

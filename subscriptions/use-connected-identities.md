@@ -1,18 +1,19 @@
 ---
 title: 연결된 Microsoft 계정 및 Azure Active Directory ID를 사용하는 방법 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
 ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 연결된 Microsoft 계정 및 Azure Active Directory ID를 사용하는 방법 알아보기
-ms.openlocfilehash: 3dcb41a26f27e5135962edf7ff933de40ccefe5e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508981"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233182"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 연결된 ID를 사용하는 방법
 사용자가 회사 또는 학교를 통해 Visual Studio 구독을 받고 Microsoft 계정(MSA)을 사용하여 로그인하는 경우, 구독 관리자는 조직의 Azure Active Directory(Azure AD)에서 사용자의 ID에 MSA를 연결할 수 있습니다.  이렇게 하면 구독에 포함된 일부 혜택에 액세스하는 방법이 변경됩니다. 
