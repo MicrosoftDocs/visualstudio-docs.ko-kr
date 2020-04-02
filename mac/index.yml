@@ -9,12 +9,12 @@ metadata:
   ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 9a0f8e7881dd7083fb9380a04e68d3b04c0071b1
+  ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74985040"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80544079"
 highlightedContent:
   items:
   - title: Mac용 Visual Studio 설치
@@ -39,7 +39,7 @@ productDirectory:
       text: .NET Core 지원
     - url: ~/asp-net-core.md
       text: .NET Core 시작
-    - url: https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc
+    - url: https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1
       text: ASP.NET 설명서
   - title: Azure
     imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg
@@ -128,7 +128,7 @@ conceptualContent:
     - url: ~/editorconfig.md
       itemType: get-started
       text: EditorConfig 설정
-  - title: 자세한 정보
+  - title: 추가 정보
     links:
     - url: https://visualstudio.microsoft.com/vs/support/mac/
       itemType: reference

@@ -52,9 +52,9 @@
 ## [Subversion 리포지토리 설정](/visualstudio/mac/set-up-subversion-repository)
 ## [Subversion 작업](/visualstudio/mac/working-with-subversion)
 
-# [웹앱 배포](/visualstudio/mac/web-app-deployment.md)
-## [Azure App Service에 게시](/visualstudio/mac/publish-app-svc.md)
-## [폴더에 게시](/visualstudio/mac/publish-folder.md)
+# [웹앱 배포](/visualstudio/mac/web-app-deployment)
+## [Azure App Service에 게시](/visualstudio/mac/publish-app-svc)
+## [폴더에 게시](/visualstudio/mac/publish-folder)
 
 # [작업](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
