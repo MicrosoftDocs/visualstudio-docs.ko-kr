@@ -1,7 +1,7 @@
 ---
 title: 설치 및 업그레이드 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
-ms.date: 09/13/2019
+ms.date: 03/23/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115002"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233107"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 설치 및 업그레이드 문제 해결
 
 > [!IMPORTANT]
-> 설치하는 데 문제가 있나요? 도와드리겠습니다. [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어로만 제공) 지원 옵션이 제공됩니다.
+> 설치하는 데 문제가 있나요? 도와드리겠습니다. [**설치 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어만 가능) 지원 옵션도 제공됩니다.
 
 이 문제 해결 가이드에는 대부분의 설치 문제를 해결할 수 있는 단계별 지침이 포함되어 있습니다.
 
@@ -134,7 +134,7 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및 .NET Framew
 1. [도구를 다운로드합니다](https://www.microsoft.com/download/details.aspx?id=12493).
 2. 관리자 명령 프롬프트를 엽니다.
 3. 도구를 저장한 디렉터리에서 `Collect.exe`를 실행합니다.
-4. `vslogs.zip` 디렉터리에서 결과 `%TEMP%` 파일을 찾습니다(예: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`).
+4. `%TEMP%` 디렉터리에서 결과 `vslogs.zip` 파일을 찾습니다(예: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`).
 
 > [!NOTE]
 > 이 도구는 실패한 설치가 실행되었던 동일한 사용자 계정으로 실행되어야 합니다. 다른 사용자 계정에서 이 도구를 실행하는 경우 `–user:<name>` 옵션을 설정하여 실패한 설치가 실행된 사용자 계정을 지정합니다. 추가 옵션 및 사용법 정보를 보려면 관리자 명령 프롬프트에서 `Collect.exe -?`를 실행합니다.

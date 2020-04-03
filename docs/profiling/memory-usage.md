@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75929241"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256194"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio에서 메모리 사용량 측정
 
@@ -63,11 +63,11 @@ ms.locfileid: "75929241"
      ![진단 도구 요약 탭](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     > 메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅샷은 기본적으로 사용되지 않습니다. 네이티브 또는 혼합 모드 앱에서 스냅샷을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5** 키). **진단 도구** 창이 나타나면 **메모리 사용량** 탭을 선택한 다음, **힙 프로파일링**을 선택합니다.
+     > 메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅샷은 기본적으로 사용되지 않습니다. 네이티브 또는 혼합 모드 앱에서 스냅샷을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5**). **진단 도구** 창이 나타나면 **메모리 사용량** 탭을 선택한 다음, **힙 프로파일링**을 선택합니다.
      >
      >  ![스냅샷 사용](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  디버깅을 중지(바로 가기 키: **Shift**+**F5**)하고 다시 시작합니다.
+     >  중지(바로 가기 키: **Shift**+**F5**) 및 디버깅을 다시 시작합니다.
 
 6. 디버깅 세션의 시작 부분에 스냅샷을 만들려면 **메모리 사용량** 요약 도구 모음에서 **스냅샷 만들기**를 선택합니다. (이는 여기에 중단점을 설정하는 데도 도움이 될 수 있습니다.)
 
@@ -117,7 +117,7 @@ ms.locfileid: "75929241"
 
  위쪽 창에는 형식에서 참조되는 모든 개체의 크기(**포함 크기**)를 포함하여 스냅샷의 형식 개수 및 크기가 표시됩니다.
 
- 아래쪽 창의 **루트 경로** 트리에는 위쪽 창에서 선택한 형식을 참조하는 개체가 표시됩니다. .NET Framework 가비지 수집기는 개체를 참조하는 마지막 형식이 해제된 경우에만 개체에 대한 메모리를 정리합니다.
+ 아래쪽 창의 **루트 경로** 트리에는 위쪽 창에서 선택한 형식을 참조하는 개체가 표시됩니다. .NET 가비지 수집기는 개체를 참조하는 마지막 형식이 해제된 경우에만 개체에 대한 메모리를 정리합니다.
 
  **참조된 개체** 트리에는 위쪽 창에서 선택한 형식이 보유하고 있는 참조가 표시됩니다.
 

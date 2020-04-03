@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988485"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274065"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -104,6 +104,10 @@ ms.locfileid: "79988485"
 7. 추가된 그룹을 보려면 사용자 목록 아래로 스크롤합니다.  
 
 8. 그룹 멤버를 표시하려면 **구독자 보기**를 선택합니다. 그룹의 구독자에 대한 세부 정보를 볼 수 있지만 구독자 또는 구독자에게 할당된 구독은 편집할 수 없습니다.    
+
+> [!NOTE]
+> 사용자에게 이미 개별적으로 구독을 할당했고 이후 해당 사용자가 Azure AD 그룹의 일부로 추가되었다면 해당 사용자는 그룹의 일부로 추가되며 더 이상 개인으로 표시되지 않습니다. 그러나 개별 구독이 다른 구독 수준인 경우에는 두 개의 구독을 갖게 됩니다.  예:  개별 Visual Studio Professional 구독이 있는 사용자가 Visual Studio Enterprise 구독이 할당된 그룹의 멤버인 경우 해당 사용자는 두 가지 구독을 모두 갖게 됩니다.  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

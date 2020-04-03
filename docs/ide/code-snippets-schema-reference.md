@@ -1,6 +1,6 @@
 ---
 title: 코드 조각 스키마 참조
-ms.date: 02/25/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306814"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472802"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -235,7 +235,7 @@ IntelliSense 코드 조각의 콘텐츠에 대한 설명 정보를 지정합니�
 Visual Studio에서 리터럴 또는 개체가 포커스를 받을 때 실행할 함수를 지정합니다.
 
 > [!NOTE]
-> `Function` 요소는 C# 코드 조각에서만 지원됩니다.
+> `function` 요소를 지원하지 않는 언어도 있습니다. 각 언어의 설명서에서 사용 가능한 함수를 확인하세요.
 
 ```xml
 <Function>
@@ -270,7 +270,7 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 |-------------------|-----------------|
 |[Author 요소](../ide/code-snippets-schema-reference.md#author-element)|선택적 요소입니다. 코드 조각을 작성한 사람 또는 회사의 이름입니다. `Author` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Description 요소](../ide/code-snippets-schema-reference.md#description-element)|선택적 요소입니다. 코드 조각에 대한 설명입니다. `Description` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
-|[HelpUrl 요소](../ide/code-snippets-schema-reference.md#helpurl-element)|선택적 요소입니다. 코드 조각에 대한 추가 정보가 들어 있는 URL입니다. Header 요소에는 `HelpURL` 요소가 0개 또는 그 이상 있을 수 있습니다. **참고:** Visual Studio에서는 `HelpUrl` 요소를 사용하지 않습니다. 이 요소는 IntelliSense 코드 조각 XML 스키마의 일부이며 이 요소를 포함하는 모든 코드 조각의 유효성이 검사되지만 요소의 값은 사용되지 않습니다.|
+|[HelpUrl 요소](../ide/code-snippets-schema-reference.md#helpurl-element)|선택적 요소입니다. 코드 조각에 대한 추가 정보가 들어 있는 URL입니다. Header 요소에는 `HelpURL` 요소가 0개 또는 그 이상 있을 수 있습니다. **참고:**  Visual Studio에서는 `HelpUrl` 요소를 사용하지 않습니다. 이 요소는 IntelliSense 코드 조각 XML 스키마의 일부이며 이 요소를 포함하는 모든 코드 조각의 유효성이 검사되지만 요소의 값은 사용되지 않습니다.|
 |[Keywords 요소](../ide/code-snippets-schema-reference.md#keywords-element)|선택적 요소입니다. `Keyword` 요소를 그룹화합니다. `Keywords` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Shortcut 요소](../ide/code-snippets-schema-reference.md#shortcut-element)|선택적 요소입니다. 코드 조각을 삽입하는 데 사용할 수 있는 바로 가기 텍스트를 지정합니다. `Shortcut` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[SnippetTypes 요소](../ide/code-snippets-schema-reference.md#snippettypes-element)|선택적 요소입니다. `SnippetType` 요소를 그룹화합니다. `SnippetTypes` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다. `SnippetTypes` 요소가 없으면 코드 조각은 항상 유효합니다.|
@@ -346,7 +346,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 
 |자식 요소|Description|
 |-------------------|-----------------|
-|[Import 요소](../ide/code-snippets-schema-reference.md#import-element)|선택적 요소입니다. 코드 조각에 대해 가져온 네임스페이스가 포함되어 있습니다. **요소에는**Import`Imports` 요소가 0개 또는 그 이상 있을 수 있습니다.|
+|[Import 요소](../ide/code-snippets-schema-reference.md#import-element)|선택적 요소입니다. 코드 조각에 대해 가져온 네임스페이스가 포함되어 있습니다. `Imports` 요소에는 **Import** 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
 |부모 요소|Description|
 | - |-----------------|
@@ -411,7 +411,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 |[Default 요소](../ide/code-snippets-schema-reference.md#default-element)|필수 요소입니다. 코드 조각을 삽입할 때 리터럴의 기본값을 지정합니다. 하나의 `Default` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
 |[Function 요소](../ide/code-snippets-schema-reference.md#function-element)|선택적 요소입니다. Visual Studio에서 리터럴이 포커스를 받을 때 실행할 함수를 지정합니다. `Function` 요소에는 `Literal` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[ID 요소](../ide/code-snippets-schema-reference.md#id-element)|필수 요소입니다. 리터럴의 고유 식별자를 지정합니다. 하나의 `ID` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
-|[ToolTip 요소](../ide/code-snippets-schema-reference.md#tooltip-element)|선택적 요소입니다. 리터럴의 예상 값과 사용법을 설명합니다. **요소에는**Tooltip`Literal` 요소가 0개 또는 1개 있을 수 있습니다.|
+|[ToolTip 요소](../ide/code-snippets-schema-reference.md#tooltip-element)|선택적 요소입니다. 리터럴의 예상 값과 사용법을 설명합니다. `Literal` 요소에는 **Tooltip** 요소가 0개 또는 1개 있을 수 있습니다.|
 
 |부모 요소|Description|
 | - |-----------------|
@@ -456,7 +456,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 |[Default 요소](../ide/code-snippets-schema-reference.md#default-element)|필수 요소입니다. 코드 조각을 삽입할 때 리터럴의 기본값을 지정합니다. 하나의 `Default` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
 |[Function 요소](../ide/code-snippets-schema-reference.md#function-element)|선택적 요소입니다. Visual Studio에서 리터럴이 포커스를 받을 때 실행할 함수를 지정합니다. `Function` 요소에는 `Literal` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[ID 요소](../ide/code-snippets-schema-reference.md#id-element)|필수 요소입니다. 리터럴의 고유 식별자를 지정합니다. 하나의 `ID` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
-|[ToolTip 요소](../ide/code-snippets-schema-reference.md#tooltip-element)|선택적 요소입니다. 리터럴의 예상 값과 사용법을 설명합니다. **요소에는**Tooltip`Literal` 요소가 0개 또는 1개 있을 수 있습니다.|
+|[ToolTip 요소](../ide/code-snippets-schema-reference.md#tooltip-element)|선택적 요소입니다. 리터럴의 예상 값과 사용법을 설명합니다. `Literal` 요소에는 **Tooltip** 요소가 0개 또는 1개 있을 수 있습니다.|
 |[Type 요소](../ide/code-snippets-schema-reference.md#type-element)|필수 요소입니다. 개체의 형식을 지정합니다. 하나의 `Type` 요소에는 `Object` 요소가 단 하나만 있어야 합니다.|
 
 |부모 요소|Description|

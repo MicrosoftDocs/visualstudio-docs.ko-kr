@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 63cf881fdedf9608d5cb773bbcb6b969a0f51624
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542596"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472649"
 ---
 # <a name="container-tools-launch-settings"></a>컨테이너 도구 시작 설정
 
@@ -50,7 +50,7 @@ commandName 설정은 이 섹션이 컨테이너 도구에 적용됨을 확인�
 
 ::: moniker range="vs-2017"
 
-|설정 이름|버전|예제|설명|
+|설정 이름|버전|예제|Description|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|“launchBrowser”: true|프로젝트를 시작한 후에 브라우저를 시작할지 여부를 나타냅니다.|
 |launchUrl|Visual Studio 2017|“launchUrl”: “{Scheme}://{ServiceHost}:{ServicePort}”|이 URL은 브라우저를 시작할 때 사용됩니다.  이 문자열에 대해 지원되는 대체 토큰은 다음과 같습니다.<br>   {Scheme} - SSL 사용 여부에 따라 “http” 또는 “https”로 바뀝니다.<br>   {ServiceHost} - 일반적으로 “localhost”로 바뀝니다. 하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 컨테이너의 IP로 바뀝니다.<br>   {ServicePort} - 일반적으로 SSL 사용 여부에 따라 sslPort 또는 httpPort로 바뀝니다.  하지만 Windows 10 RS3 또는 이전 버전의 Windows 컨테이너를 대상으로 하는 경우에는 SSL 사용 여부에 따라 “443” 또는 “80”으로 바뀝니다.|
@@ -59,9 +59,9 @@ commandName 설정은 이 섹션이 컨테이너 도구에 적용됨을 확인�
 
 ::: moniker range=">=vs-2019"
 
-| 설정 이름         | 예제                                               | 설명                                                                                                             |
+| 설정 이름         | 예제                                               | Description                                                                                                             |
 | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| commandLineArgs      | “commandLineArgs”: “--mysetting myvalue”              | 이 명령줄 인수는 컨테이너에서 프로젝트를 시작할 때 사용됩니다.                                     |
+| commandLineArgs      | “commandLineArgs”: “--mysetting myvalue”              | 앱을 시작하기 위한 이 명령줄 인수는 컨테이너에서 프로젝트를 시작할 때 사용됩니다.                                     |
 | environmentVariables | “environmentVariables”: {                             | 이 환경 변수 값은 컨테이너에서 시작되는 프로세스에 전달됩니다.                       |
 |                      | “ASPNETCORE_URLS”: “https://+:443; http://+:80,       |                                                                                                                         |
 |                      | “ASPNETCORE_HTTPS_PORT”: “44381”                      |                                                                                                                         |
@@ -86,6 +86,6 @@ commandName 설정은 이 섹션이 컨테이너 도구에 적용됨을 확인�
 
 [컨테이너 도구 빌드 속성](container-msbuild-properties.md)을 설정하여 프로젝트를 구성합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [Docker Compose 빌드 속성](docker-compose-properties.md)

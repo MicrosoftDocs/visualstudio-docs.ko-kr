@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 3d4392eb75cab353b99a043ae2cd5e934ac8cb14
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431256"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988513"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 
@@ -33,16 +33,16 @@ ms.locfileid: "79431256"
 
 다음 표에서는 Docker Compose 프로젝트에 사용할 수 있는 MSBuild 속성을 보여 줍니다.
 
-| 속성 이름 | 위치 | 설명 | 기본값  |
+| 속성 이름 | 위치 | Description | 기본값  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|모든 명령에 대해 docker-compose.exe로 보낼 세미콜론으로 구분된 목록에 추가 작성 파일을 지정합니다. dcproj(docker-compose project) 파일에서 상대 경로가 허용됩니다.|-|
-|ContainerDevelopmentMode|dcproj| “호스트에서 빌드” 최적화(“고속 모드” 디버깅)를 사용할지 여부를 제어합니다.  허용되는 값은 **Fast**와 **Regular**입니다. | Fast |
-|DockerComposeBaseFilePath|dcproj|*.yml* 확장명을 사용하지 않고 docker-compose 파일의 파일 이름 중 첫 번째 부분을 지정합니다. 예를 들어: <br>1.  DockerComposeBaseFilePath = null/undefined: 기본 파일 경로 *docker-compose*를 사용하면 파일 이름이 *docker-compose.yml* 및 *docker-compose.override.yml*이 됩니다.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: 파일 이름은 *mydockercompose.yml* 및 *mydockercompose.override.yml*이 됩니다.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: 파일이 한 수준 올라갑니다. |docker-compose|
-|DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--parallel --pull`과 같습니다. |
-|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--timeout 500`과 같습니다.|-|  
+|DockerComposeBaseFilePath|dcproj|*.yml* 확장명을 사용하지 않고 docker-compose 파일의 파일 이름 중 첫 번째 부분을 지정합니다. 다음은 그 예입니다. <br>1.  DockerComposeBaseFilePath = null/undefined: 기본 파일 경로 *docker-compose*를 사용하면 파일 이름이 *docker-compose.yml* 및 *docker-compose.override.yml*이 됩니다.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: 파일 이름은 *mydockercompose.yml* 및 *mydockercompose.override.yml*이 됩니다.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: 파일이 한 수준 올라갑니다. |docker-compose|
+|DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--parallel --pull` |
+|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj 또는 vbproj|docker-compose 프로젝트(dcproj) 파일의 상대 경로입니다. 서비스 프로젝트를 게시할 때 이 속성을 설정하여 docker-compose.yml 파일에 저장된 관련 이미지 빌드 설정을 찾습니다.|-|
-|DockerComposeUpArguments|dcproj|`docker-compose up` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--timeout 500`과 같습니다.|-|
-|DockerLaunchAction| dcproj | F5 키나 Ctrl+F5를 누를 때 수행할 시작 작업을 지정합니다.  허용되는 값은 None, LaunchBrowser, LaunchWCFTestClient입니다.|없음|
+|DockerComposeUpArguments|dcproj|`docker-compose up` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|
+|DockerDevelopmentMode|dcproj| “호스트에서 빌드” 최적화(“고속 모드” 디버깅)를 사용할지 여부를 제어합니다.  허용되는 값은 **Fast**와 **Regular**입니다. | 빠름 |
+|DockerLaunchAction| dcproj | F5 키나 Ctrl+F5를 누를 때 수행할 시작 작업을 지정합니다.  허용되는 값은 None, LaunchBrowser, LaunchWCFTestClient입니다.|None|
 |DockerLaunchBrowser| dcproj | 브라우저를 시작할지 여부를 나타냅니다. DockerLaunchAction을 지정한 경우에는 무시됩니다. | False |
 |DockerServiceName| dcproj|DockerLaunchAction 또는 DockerLaunchBrowser를 지정한 경우, DockerServiceName은 시작할 서비스의 이름입니다.  이 속성을 사용하여 docker-compose 파일에서 참조할 수 있는 많은 프로젝트 중 시작할 프로젝트를 확인합니다.|-|
 |DockerServiceUrl| dcproj | 브라우저를 시작할 때 사용할 URL입니다.  유효한 대체 토큰은 “{ServiceIPAddress}”, “{ServicePort}”, “{Scheme}”입니다.  예: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
@@ -104,7 +104,7 @@ services:
 
 앞의 예제와 같이 값을 큰따옴표로 묶고, 경로의 백슬래시에 대한 이스케이프 문자로 백슬래시를 사용합니다.
 
-|레이블 이름|설명|
+|레이블 이름|Description|
 |----------|-----------|
 |com.microsoft.visualstudio.debuggee.arguments|디버깅을 시작할 때 프로그램에 전달되는 인수입니다. .NET Core 앱에서 이 인수는 일반적으로 NuGet 패키지의 추가 검색 경로와 프로젝트의 출력 어셈블리 경로입니다.|
 |com.microsoft.visualstudio.debuggee.killprogram|이 명령은 필요한 경우 컨테이너 내부에서 실행 중인 디버기 프로그램을 중지하는 데 사용됩니다.|
@@ -129,7 +129,7 @@ services:
 
 MSBuild 속성에 대한 일반적인 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [컨테이너 도구 빌드 속성](container-msbuild-properties.md)
 

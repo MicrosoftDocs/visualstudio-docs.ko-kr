@@ -40,6 +40,7 @@
 #### [Visual Studio IDE](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Windows 개발자 계정](vs-windows-dev.md)
+#### [Windows Virtual Desktop](vs-windows-virtual-desktop.md)
 ### 전문적인 개발
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)

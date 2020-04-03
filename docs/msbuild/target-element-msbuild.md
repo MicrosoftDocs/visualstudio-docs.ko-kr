@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631980"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375560"
 ---
 # <a name="target-element-msbuild"></a>Target 요소(MSBuild)
 
@@ -57,9 +57,9 @@ MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
-|`Name`|필수 특성입니다.<br /><br /> 대상의 이름입니다.|
+|`Name`|필수 특성입니다.<br /><br /> 대상의 이름입니다. 대상 이름은 `$@()%*?.`를 제외한 모든 문자를 포함할 수 있습니다.|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 조건이 `false`로 평가되면 해당 대상 또는 `DependsOnTargets` 특성에 설정되어 있는 대상의 본문이 실행되지 않습니다. 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 |`Inputs`|선택적 특성입니다.<br /><br /> 이 대상에 대한 입력을 구성하는 파일입니다. 파일이 여러 개인 경우 세미콜론으로 구분합니다. 파일의 타임스탬프를 `Outputs`에 있는 파일의 타임스탬프와 비교하여 `Target`이 최신 상태인지를 확인합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md), [방법: 증분 방식으로 빌드](../msbuild/how-to-build-incrementally.md) 및 [변환](../msbuild/msbuild-transforms.md)을 참조하세요.|
 |`Outputs`|선택적 특성입니다.<br /><br /> 이 대상에 대한 출력을 구성하는 파일입니다. 파일이 여러 개인 경우 세미콜론으로 구분합니다. 파일의 타임스탬프를 `Inputs`에 있는 파일의 타임스탬프와 비교하여 `Target`이 최신 상태인지를 확인합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md), [방법: 증분 방식으로 빌드](../msbuild/how-to-build-incrementally.md) 및 [변환](../msbuild/msbuild-transforms.md)을 참조하세요.|
@@ -72,7 +72,7 @@ MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 
 ### <a name="child-elements"></a>자식 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | MSBuild 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 사용자 정의 `Property` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `PropertyGroup` 요소를 포함할 수 있습니다. |
@@ -81,7 +81,7 @@ MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 
@@ -121,7 +121,7 @@ MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 </Target>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [대상](../msbuild/msbuild-targets.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

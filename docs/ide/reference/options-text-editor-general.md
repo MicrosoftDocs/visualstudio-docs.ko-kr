@@ -33,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568414"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472826"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>옵션 대화 상자: 텍스트 편집기 \> 일반
 
@@ -72,7 +72,7 @@ ms.locfileid: "75568414"
 
 코드 편집기에서 현재 위치를 벗어나지 않고 창에 요소의 정의를 표시하려면 **Peek 뷰에서 정의 열기** 확인란을 선택합니다.
 
-## <a name="display"></a>표시
+## <a name="display"></a>디스플레이
 
 ### <a name="selection-margin"></a>선택 영역 여백
 
@@ -94,7 +94,11 @@ ms.locfileid: "75568414"
 
 선택할 경우 세로 선이 편집기에 개별 코드 블록을 쉽게 식별할 수 있는 정형 코드 블록과 함께 일렬로 표시됩니다.
 
-## <a name="see-also"></a>참조
+### <a name="show-file-health-indicator"></a>파일 상태 표시기 표시
+
+이 옵션을 선택하면 편집기 왼쪽 하단 모서리에 코드 정리 옵션이 포함된 파일 상태 표시기 상태(오류, 경고) 표시줄이 표시됩니다.
+
+## <a name="see-also"></a>참고 항목
 
 - [옵션, 텍스트 편집기, 모든 언어](../../ide/reference/options-text-editor-all-languages.md)
 - [옵션, 텍스트 편집기, 모든 언어, 탭](../../ide/reference/options-text-editor-all-languages-tabs.md)

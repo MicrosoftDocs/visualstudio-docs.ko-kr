@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594367"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256233"
 ---
-# <a name="testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
 Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은 코드를 개발하고 유지할 수 있습니다.
 

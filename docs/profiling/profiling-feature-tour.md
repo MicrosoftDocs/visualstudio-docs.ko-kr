@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578087"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412032"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
 
@@ -35,6 +35,21 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 > [!NOTE]
 > Windows 7 이상에서 사후 분석 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
+
+## <a name="examine-performance-using-perftips"></a>PerfTips를 사용하여 성능 검사
+
+성능 정보를 살펴보는 가장 쉬운 방법은 [PerfTips](../profiling/perftips.md)인 경우가 많습니다. PerfTips를 사용하면 코드와 상호 작용하면서 성능 정보를 확인할 수 있습니다. 이벤트 기간(디버거가 마지막으로 일시 중지되거나 앱이 시작된 시점부터 측정)과 같은 정보를 확인할 수 있습니다. 예를 들어(F10, F11) 코드를 단계별로 실행할 경우 PerfTips는 이전 단계 작업부터 현재 단계까지의 앱 런타임 지속 시간을 보여 줍니다.
+
+![프로파일링 둘러보기 PerfTips](../profiling/media/prof-tour-perf-tips.png "프로파일링 둘러보기 PerfTips")
+
+PerfTips를 사용하여 코드 블록이 실행되는 데 소요되는 시간이나 하나의 함수가 완료되는 데 소요되는 시간을 살펴볼 수 있습니다.
+
+PerfTips는 진단 도구의 **이벤트** 뷰에 표시되는 것과 동일한 이벤트를 보여 줍니다. **이벤트** 뷰에서는 중단점 설정, 코드 단계별 실행 작업 등 디버깅 중에 발생하는 여러 이벤트를 볼 수 있습니다.
+
+![진단 도구 이벤트 뷰](../profiling/media/prof-tour-events.png "진단 도구 보기 이벤트")
+
+ > [!NOTE]
+ > Visual Studio Enterprise를 사용하는 경우 이 탭에 [IntelliTrace 이벤트](../debugger/intellitrace.md)가 표시될 수도 있습니다.
 
 ## <a name="analyze-cpu-usage"></a>CPU 사용 분석
 
@@ -56,9 +71,9 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ## <a name="analyze-memory-usage"></a>메모리 사용량 분석
 
-또한 **진단 도구** 창을 사용하여 앱의 메모리 사용량을 평가할 수 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. 메모리 분석에 대한 자세한 지침은 [메모리 사용량 분석](../profiling/memory-usage.md)을 참조하세요.
+**진단 도구** 창에서는 **메모리 사용량** 도구를 사용하여 앱의 메모리 사용량을 평가할 수도 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. 메모리 분석에 대한 자세한 지침은 [메모리 사용량 분석](../profiling/memory-usage.md)을 참조하세요. 또 다른 메모리 분석 도구인 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)를 사용하면 .NET 코드의 할당 패턴과 비정상 요소를 식별하는 데 도움이 됩니다.
 
-디버그하는 동안 메모리 사용량을 분석하려면 메모리 스냅샷을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅샷을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅샷의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다.
+디버거에 통합된 메모리 사용량 도구를 사용하여 메모리 사용량을 분석하려면 메모리 스냅샷을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅샷을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅샷의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다.
 
 ![진단 도구에서 스냅샷 만들기](../profiling/media/prof-tour-take-snapshots.gif "스냅샷 수행 진단 도구")
 
@@ -67,19 +82,6 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 ![진단 도구 힙 차이 뷰](../profiling/media/prof-tour-mem-usage-diff-heap.png "진단 도구 힙 차이 뷰")
 
 대신에 **메모리 사용량** 뷰의 왼쪽 링크를 클릭하면 힙 뷰가 개체 수를 기준으로 구성됩니다. 즉, 숫자가 가장 많이 증가한 특정 유형의 개체가 맨 위에 표시됩니다(**개수 차이** 열을 기준으로 정렬됨).
-
-## <a name="examine-performance-events"></a>성능 이벤트 검사
-
-진단 도구의 **이벤트** 뷰에는 디버그 중에 발생하는 다른 이벤트(예: 중단점 설정, 코드 단계별 실행 작업)가 표시됩니다. 이벤트 기간(디버거가 마지막으로 일시 중지되거나 앱이 시작된 시점부터 측정)과 같은 정보를 확인할 수 있습니다. 예를 들어 (F10, F11) 코드를 단계별로 실행할 경우 **이벤트** 뷰에 앱 런타임 기간(이전 단계 작업부터 현재 단계까지)이 표시됩니다.
-
-![진단 도구 이벤트 뷰](../profiling/media/prof-tour-events.png "진단 도구 보기 이벤트")
-
- > [!NOTE]
- > Visual Studio Enterprise를 사용하는 경우 이 탭에 [IntelliTrace 이벤트](../debugger/intellitrace.md)가 표시될 수도 있습니다.
-
-동일한 이벤트가 코드 편집기에도 PerfTips로 표시됩니다.
-
-![프로파일링 둘러보기 PerfTips](../profiling/media/prof-tour-perf-tips.png "프로파일링 둘러보기 PerfTips")
 
 ## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> 디버거 없이 릴리스 빌드 프로파일링
 
@@ -187,7 +189,7 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |[성능 탐색기](../profiling/performance-explorer.md)|예|아니요|예|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 |[네트워크 사용량](../profiling/network-usage.md)|아니요|예|아니요|
-|[HTML UI 응답성](../profiling/html-ui-responsiveness.md)|아니요|HTML은 예, XAML은 no|아니요|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|아니요|HTML은 예, XAML은 no|아니요|
 |[JavaScript 메모리](../profiling/javascript-memory.md)|아니요|HTML은 예, XAML은 no|아니요|
 ::: moniker-end
 

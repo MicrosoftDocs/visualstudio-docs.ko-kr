@@ -3,15 +3,16 @@ title: Microsoft 계정(MSA)으로 Visual Studio 구독 로그인 | Microsoft Do
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Microsoft 계정(MSA)으로 Visual Studio 구독에 로그인하는 방법
-ms.openlocfilehash: 49a20e5c34d81e7b5437ff48e749e322c6c57828
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508732"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233214"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Microsoft 계정(MSA)으로 Visual Studio 구독에 로그인
 
@@ -48,4 +49,4 @@ A:  여러 사용자의 구독이 둘 이상입니다.  [https://my.visualstudio
 - [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-구독 포털에 성공적으로 로그인한 후에는 https://my.visualstudio.com/benefits 에서 혜택 페이지를 방문하여 사용자가 이용할 수 있는 유용한 도구, 서비스 및 제안을 살펴보는 것이 좋습니다.  
+구독 포털에 성공적으로 로그인했다면 혜택 페이지(https://my.visualstudio.com/benefits )를 방문하여 사용 가능한 유용한 도구, 서비스 및 제안을 살펴보시기 바랍니다.  

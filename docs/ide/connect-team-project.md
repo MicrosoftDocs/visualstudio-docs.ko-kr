@@ -1,16 +1,16 @@
 ---
 title: 팀 탐색기의 프로젝트에 연결
-ms.date: 12/04/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585485"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472745"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -44,3 +44,4 @@ ms.locfileid: "75585485"
 
 - [팀 탐색기 참조](reference/team-explorer-reference.md)
 - [프로젝트(Azure DevOps)에 연결](/azure/devops/organizations/projects/connect-to-projects)
+- [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)(프로젝트 연결 문제 해결)

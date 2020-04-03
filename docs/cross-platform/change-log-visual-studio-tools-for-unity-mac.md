@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771545"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232914"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="2520"></a>2.5.2.0
+
+릴리스 날짜: 2020년 3월 23일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **디버거:**
+
+  - 연결 후 스레드 등록이 수정되었습니다.
+
+## <a name="2510"></a>2.5.1.0
+
+릴리스 날짜: 2020년 3월 3일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) 에 대한 억제 장치가 추가되었습니다. Invoke, InvokeRepeating, StartCoroutine 또는 StopCoroutine과 함께 사용되는 프라이빗 메서드는 사용되지 않음으로 표시될 수 없습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - OnDrawGizmos/OnDrawGizmosSelected 설명서가 수정되었습니다.
+
+- **평가:**
+
+  - 람다 인수 검사가 수정되었습니다.
+
+## <a name="2501"></a>2.5.0.1
+
+릴리스 날짜: 2020년 2월 19일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 잘못된 메시지 시그니처에 대한 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) 진단 검사가 수정되었습니다. 여러 수준의 상속을 갖는 형식을 검사할 때 이 진단이 실패하고 `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` 메시지가 표시되는 경우가 있었습니다.
+
+## <a name="2500"></a>2.5.0.0
+
+릴리스 날짜: 2020년 1월 22일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - HLSL 파일에 대한 지원이 추가되었습니다.
+  
+  - 새로운 폴더 대화 상자 UI로 전환되었습니다.
+  
+  - 설정이 새로운 액세스 가능 속성 그리드로 전환되었습니다.
+
+  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)에 대한 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 프라이빗 필드는 사용되지 않음으로 표시될 수 없습니다.
+
+  - [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)에 대한 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 필드는 할당되지 않음으로 표시될 수 없습니다.  
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 프로젝트 생성이 수정되었습니다(`GenerateTargetFrameworkMonikerAttribute` 대상이 잘못 찾아지는 경우가 있었습니다).
+
+- **평가:**
+
+  - 문자열 계산이 수정되었습니다(ToString() 호출이 사용되지 않았습니다).
 
 ## <a name="2420"></a>2.4.2.0
 
@@ -37,7 +105,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 11월 6일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -61,7 +129,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 10월 15일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -73,7 +141,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 23일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -84,7 +152,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 16일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -109,7 +177,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -155,7 +223,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 7월 9일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -193,7 +261,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 6월 27일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -213,7 +281,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 6월 20일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -225,7 +293,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 5월 30일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -235,7 +303,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 4월 2일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -265,7 +333,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 26일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -275,7 +343,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 20일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -291,7 +359,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -307,7 +375,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
  
  릴리스 날짜: 2019년 3월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -331,7 +399,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 2월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -356,7 +424,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="2000"></a>2.0.0.0
  릴리스 날짜: 2018년 12월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -382,7 +450,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 11월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -440,7 +508,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 4월 18일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -452,7 +520,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -462,7 +530,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 21일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -472,7 +540,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -512,7 +580,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 12월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -542,7 +610,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 11월 20일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **마법사:**
 
@@ -554,7 +622,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 10월 23일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -572,7 +640,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 10월 23일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -582,7 +650,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 8월 8일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -596,7 +664,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 7월 20일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -606,7 +674,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 7월 12일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 

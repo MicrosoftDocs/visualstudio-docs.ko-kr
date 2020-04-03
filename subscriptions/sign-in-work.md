@@ -3,15 +3,16 @@ title: 회사 또는 학교 계정으로 Visual Studio 구독 로그인 | Micros
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: 회사 또는 학교 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: 7a2a252a010f22d06a7033c272056976e77c0db9
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508994"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233204"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>회사 또는 학교 계정으로 Visual Studio 구독 로그인 
 
@@ -77,4 +78,4 @@ A:  여러 사용자의 구독이 둘 이상입니다.  [https://my.visualstudio
 - [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-구독 포털에 성공적으로 로그인한 후에는 https://my.visualstudio.com/benefits 에서 혜택 페이지를 방문하여 사용자가 이용할 수 있는 유용한 도구, 서비스 및 제안을 살펴보는 것이 좋습니다.  
+구독 포털에 성공적으로 로그인했다면 혜택 페이지(https://my.visualstudio.com/benefits )를 방문하여 사용 가능한 유용한 도구, 서비스 및 제안을 살펴보시기 바랍니다.  

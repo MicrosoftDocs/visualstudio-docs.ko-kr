@@ -10,23 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234958"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233074"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
 JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 JavaScript 코드를 작성할 때 대부분 또는 모든 표준 편집 지원(코드 조각, IntelliSense 등)을 사용할 수 있습니다. 여러 애플리케이션 형식 및 서비스에 대해 JavaScript 코드를 작성할 수 있습니다.
 
 > [!NOTE]
-> 모든 Microsoft의 JavaScript API 참조(500개 이상의 페이지)를 docs.microsoft.com에서 MDN 사본으로 리디렉션하여 [MDN 웹 문서](https://developer.mozilla.org/en-US/)를 웹의 원스톱, 초연 개발 리소스로 만들려는 커뮤니티 차원의 노력에 동참하였습니다. 자세한 내용은 이 [공지](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)를 참조하세요.
+> Microsoft는 Microsoft의 모든(500개 이상의 페이지) JavaScript API 참조를 docs.microsoft.com에서 MDN 사본으로 리디렉션함으로써 [MDN 웹 문서](https://developer.mozilla.org/en-US/)를 웹의 프리미엄 원스톱 개발 리소스로 만들려는 커뮤니티 차원의 노력에 동참했습니다. 자세한 내용은 이 [공지](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)를 참조하세요.
 
-## <a name="ES6"></a> ECMAScript 2015(ES6) 이상 지원
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015(ES6) 이상 지원
 
 Visual Studio에서는 이제 ECMAScript 2015/2016 등의 ECMAScript 언어 업데이트 구문을 지원합니다.
 
@@ -53,12 +53,12 @@ tsconfig 파일에 대한 필수 설정은 다음과 같습니다.
 
 - `allowJs`: JavaScript 파일이 인식되려면 이 값을 `true`로 설정해야 합니다. 기본값은 `false`입니다. TypeScript는 JavaScript로 컴파일되고 컴파일러는 방금 컴파일한 파일을 포함하지 않아야 하기 때문입니다.
 - `outDir`: 내보낸 JavaScript 파일이 검색된 후 프로젝트에 포함되지 않도록 하려면 이 값을 프로젝트에 포함되지 않은 위치로 설정해야 합니다(`exclude` 참조).
-- `module`: 모듈을 사용할 경우 이 설정은 내보낸 코드에서 사용해야 하는 모듈 형식을 컴파일러에 알립니다(예: Browserify와 같은 노드 또는 bundler의 경우 `commonjs`).
+- `module`: 모듈을 사용할 경우 이 설정은 내보낸 코드에서 사용해야 하는 모듈 형식을 컴파일러에 알립니다(예: Browserify와 같은 노드 또는 번들러의 경우 `commonjs`).
 - `exclude`: 이 설정은 프로젝트에 포함하지 않을 폴더를 나타냅니다.
 출력 위치 및 `node_modules` 또는 `temp`와 같은 프로젝트 이외 폴더를 이 설정에 추가해야 합니다.
 - `enableAutoDiscovery`: 이 설정을 통해 이전에 설명한 대로 정의 파일을 자동으로 검색 및 다운로드할 수 있습니다.
 - `compileOnSave`: 이 설정은 언제든 소스 파일이 Visual Studio에서 저장되면 다시 컴파일해야 하는 경우 컴파일러에 알립니다.
-- `typeAcquisition`: 이 설정값 집합을 통해 자동 형식 인식의 동작([이 섹션](/visualstudio/ide/javascript-intellisense#Auto)에서 자세히 설명)을 제어합니다.
+- `typeAcquisition`: 이 설정 세트를 통해 자동 형식 인식의 동작([이 섹션](/visualstudio/ide/javascript-intellisense#Auto)에서 자세히 설명)을 제어합니다.
 
 JavaScript 파일을 CommonJS 모듈로 변환하고 `./out` 폴더에 두려면 다음 `tsconfig.json` 파일을 사용할 수 있습니다.
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)]의 JavaScript IntelliSense는 이제 매개 변수 및 멤버 목록에 대한 훨씬 더 많은 정보를 표시합니다. 이 새로운 정보는 코드를 더 잘 이해하도록 내부에서 정적 분석으로 사용하는 TypeScript 언어 서비스를 통해 제공됩니다. [여기](/visualstudio/ide/javascript-intellisense/)에서 새 IntelliSense 환경과 작동 방식에 대해 자세히 알아볼 수 있습니다.
 
-## <a name="JSX"></a> JSX 구문 지원
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> JSX 구문 지원
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)]의 JavaScript에서는 JSX 구문을 다양하게 지원합니다. JSX는 JavaScript 파일 내에서 HTML 태그를 허용하는 구문 집합입니다.
 
@@ -128,7 +128,7 @@ exports.default = Subscription_1.Subscription;
 ![JSX 구문](../javascript/media/js-react.png)
 
 > [!NOTE]
-> JSX 구문을 React 호출로 변환하려면 `"jsx": "react"` 설정을 `compilerOptions` 파일의 `tsconfig.json`에 추가해야 합니다.
+> JSX 구문을 React 호출로 변환하려면 `"jsx": "react"` 설정을 `tsconfig.json` 파일의 `compilerOptions`에 추가해야 합니다.
 
 빌드 시 `./out/app.js'에서 만들어진 JavaScript 파일에는 다음 코드가 포함됩니다.
 
@@ -186,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 ![폴더 구조](../javascript/media/js-folderstructure.png)
 
-다음 `tsconfig.json`을 사용하여 언어 서비스에서 `js` 폴더의 소스 파일만 분석하지만 여전히 `.d.ts` 폴더의 라이브러리를 위해 `lib` 파일을 가져와 사용하도록 할 수 있습니다.
+다음 `tsconfig.json`을 사용하여 언어 서비스에서 `js` 폴더의 소스 파일만 분석하지만 여전히 `lib` 폴더의 라이브러리를 위해 `.d.ts` 파일을 가져와 사용하도록 할 수 있습니다.
 
 ```json
 {

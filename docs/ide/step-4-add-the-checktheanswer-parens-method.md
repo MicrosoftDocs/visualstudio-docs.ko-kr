@@ -13,12 +13,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579849"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472616"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4단계: CheckTheAnswer() 메서드 추가
 
@@ -32,7 +32,7 @@ ms.locfileid: "77579849"
 > [!NOTE]
 > 이 메서드는 값을 반환하기 때문에 Visual Basic 사용자는 일반적인 `Function` 키워드 대신 `Sub` 키워드를 사용합니다. 논리는 간단합니다. sub는 값을 반환하지 않고 function은 값을 반환합니다.
 
-1. `CheckTheAnswer()` 메서드를 추가합니다.
+1. `CheckTheAnswer()` 메서드를 추가합니다. 이 메서드는 `StartTheQuiz()`와 같이 사용자가 만든 다른 메서드와 비슷해야 합니다.
 
      이 메서드를 호출하면 addend1과 addend2의 값을 더하고 그 결과를 sum <xref:System.Windows.Forms.NumericUpDown> 컨트롤의 값과 비교합니다. 두 값이 서로 같으면 이 메서드는 `true`를 반환하고 그렇지 않으면 `false`를 반환합니다. 이 코드는 다음과 같습니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "77579849"
 
      다음으로 새 `CheckTheAnswer()` 메서드를 호출하도록 타이머의 <xref:System.Windows.Forms.Timer.Tick> 이벤트 처리기에 대한 메서드에서 코드를 업데이트합니다.
 
-2. `if else` 문에 다음 코드를 추가합니다.
+2. 사용자가 정답을 맞히면 타이머가 중지되도록 `Timer1_Tick()` 메서드의 `if else` 문에 다음 코드를 추가합니다.
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
