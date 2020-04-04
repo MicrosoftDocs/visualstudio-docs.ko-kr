@@ -24,20 +24,20 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: 방법 가이드
   items:
-    - name: CPU 사용량
-      href: cpu-usage.md
     - name: PerfTips 사용
       href: perftips.md
+    - name: CPU 사용량
+      href: cpu-usage.md
     - name: 메모리 사용량
       items:
         - name: 메모리 사용량 분석
           href: analyze-memory-usage.md
         - name: .NET 개체에 대한 메모리 사용 분석
           href: dotnet-alloc-tool.md
-        - name: 사용자 지정 네이티브 ETW 힙 이벤트
-          href: custom-native-etw-heap-events.md
         - name: 디버거 없이 메모리 사용
           href: memory-usage-without-debugging2.md
+        - name: 사용자 지정 네이티브 ETW 힙 이벤트
+          href: custom-native-etw-heap-events.md
     - name: 명령줄에서 성능 측정
       href: profile-apps-from-command-line.md
     - name: GPU 사용량 분석
@@ -80,7 +80,7 @@
               href: performance-session-properties.md
             - name: 프로파일링 및 Windows Vista 보안
               href: profiling-and-windows-vista-security.md
-        - name: 시작하기
+        - name: 시작
           items:
             - name: 성능 도구 시작
               href: getting-started-with-performance-tools.md
@@ -186,13 +186,13 @@
                       items:
                         - name: .NET Framework 사용 성능 규칙 개요
                           href: dotnet-framework-usage-performance-rules.md
-                        - name: 'DA0001: 연결에 StringBuilder를 사용하십시오.'
+                        - name: 'DA0001: 연결에 StringBuilder 사용'
                           href: da0001-use-stringbuilder-for-concatenations.md
                         - name: 'DA0005: GC2 컬렉션이 많습니다.'
                           href: da0005-frequent-gc2-collections.md
-                        - name: 'DA0006: 값 형식에 대해 Equals()를 재정의하십시오.'
+                        - name: 'DA0006: 값 형식에 대해 Equals() 재정의'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: 제어 흐름에는 예외를 사용하지 마십시오.'
+                        - name: 'DA0007: 제어 흐름에 예외 사용 안 함'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
                         - name: 'DA0010: GetHashCode의 부담이 큽니다.'
                           href: da0010-expensive-gethashcode.md
@@ -202,27 +202,27 @@
                           href: da0012-significant-amount-of-reflection.md
                         - name: 'DA0013: String.Split 또는 String.Substring 사용률이 높습니다.'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션'
+                        - name: 'DA0018: 프로세스 관리되는 메모리 한도로 실행 중인 32비트 애플리케이션'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
                         - name: 'DA0021: Gen 1 가비지 수집의 비율이 높습니다.'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
                         - name: 'DA0022: Gen 2 가비지 수집의 비율이 높습니다.'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0023: 높은 GC CPU 시간'
+                        - name: 'DA0023: GC CPU 시간이 깁니다.'
                           href: da0023-high-gc-cpu-time.md
-                        - name: 'DA0024: 과도한 GC CPU 시간'
+                        - name: 'DA0024: GC CPU 시간이 너무 깁니다.'
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: 높은 비율의 잠금 경합'
+                        - name: 'DA0038: 잠금 경합의 비율이 높습니다.'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: 매우 높은 비율의 잠금 경합'
+                        - name: 'DA0039: 잠금 경합의 비율이 매우 높습니다.'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: 메모리 및 페이징 성능 규칙
                       items:
                         - name: 메모리 및 페이징 성능 규칙 개요
                           href: memory-and-paging-performance-rules.md
-                        - name: 'DA0014: 활성 메모리를 디스크에 페이징하는 비율이 극도로 높습니다.'
+                        - name: 'DA0014: 활성 메모리를 디스크에 페이징하는 비율이 매우 높습니다.'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017: 디스크에 대한 높은 활성 메모리 페이징 비율'
+                        - name: 'DA0017: 활성 메모리를 디스크에 페이징하는 비율이 높습니다.'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: 프로파일링 도구 사용 규칙
                       items:
@@ -236,27 +236,27 @@
                           href: da0004-high-processor-usage.md
                         - name: 'DA0008: 수집되는 샘플 수가 적습니다.'
                           href: da0008-few-samples-collected.md
-                        - name: 'DA0026: 과도한 커널 CPU 처리 시간'
+                        - name: 'DA0026: 커널 CPU 시간 처리 시간이 너무 깁니다.'
                           href: da0026-excessive-kernel-cpu-time-processing.md
                         - name: 'DA0029: 지원되지 않는 CLR 버전'
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: 데이터베이스 프로젝트에 대한 계층 상호 작용 측정값 수집'
+                        - name: 'DA0030: 데이터베이스 프로젝트의 계층 상호 작용 측정값 수집'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: 리소스 모니터링 성능 규칙
                       items:
                         - name: 리소스 모니터링 성능 규칙 개요
                           href: resource-monitoring-performance-rules.md
-                        - name: 'DA0501: 프로파일링 중인 프로세스의 평균 CPU 사용'
+                        - name: 'DA0501: 프로파일링되고 있는 프로세스의 평균 CPU 사용량'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: 프로파일링 중인 프로세스의 최대 CPU 사용'
+                        - name: 'DA0502: 프로파일링되고 있는 프로세스의 최대 CPU 사용량'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 집합(바이트)'
+                        - name: 'DA0503: 프로파일링되고 있는 프로세스의 평균 작업 집합(바이트)'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0504: 프로파일링 중인 프로세스에 대한 최대 작업 집합(바이트)'
+                        - name: 'DA0504: 프로파일링되고 있는 프로세스의 최대 작업 세트(바이트)'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트'
+                        - name: 'DA0505: 프로파일링되고 있는 프로세스에 할당된 평균 전용 바이트'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: 프로파일링 중인 프로세스에 할당되는 최대 전용 바이트'
+                        - name: 'DA0506: 프로파일링되고 있는 프로세스에 할당된 최대 전용 바이트'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: 성능 보고서 뷰
               items:
@@ -572,7 +572,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: 시작
+                    - name: Start
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
@@ -592,7 +592,7 @@
                       href: querycounters.md
                     - name: 이벤트(VSPerfCmd)
                       href: events-vsperfcmd.md
-                    - name: Shutdown
+                    - name: 종료
                       href: shutdown.md
                     - name: GlobalOn 및 GlobalOff
                       href: globalon-and-globaloff.md
@@ -610,7 +610,7 @@
                       href: args.md
                     - name: 표시
                       href: mark.md
-                    - name: 분리
+                    - name: Detach
                       href: detach.md
                     - name: PF
                       href: pf.md
@@ -620,9 +620,9 @@
                       href: timer.md
                     - name: LineOff
                       href: lineoff.md
-                    - name: 콘솔
+                    - name: Console
                       href: console.md
-                    - name: 상태
+                    - name: Status
                       href: status.md
                     - name: TargetCLR
                       href: targetclr.md
