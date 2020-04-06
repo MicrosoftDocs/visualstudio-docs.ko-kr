@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Microsoft Docs
+title: IDebug 기호공급자직접::GetCurrentModules상태 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f1917f420e4815bcd525f131e4b524e53e6b3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347325"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719077"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-기호 공급자 멤버인 기호 그룹에 대 한 정보를 검색 합니다.
+기호 공급자가 구성원인 기호 그룹에 대한 정보를 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,16 +42,16 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>매개 변수
 `pState`\
-[out] 기호 공급자 그룹의 상태입니다.
+【아웃】 기호 공급자 그룹의 상태입니다.
 
 `count`\
-[out] 그룹의 모듈 수입니다.
+【아웃】 그룹의 모듈 수입니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 상태는 모듈을 추가 또는 기호 그룹에서 제거할 때마다 변경 됩니다. 따라서 기호 그룹을 수정한 경우 검색할이 메서드를 사용할 수 있습니다.
+ 심볼 그룹에 모듈을 추가하거나 제거할 때마다 상태가 변경됩니다. 따라서 이 메서드를 사용하여 기호 그룹이 수정되었는지 검색할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

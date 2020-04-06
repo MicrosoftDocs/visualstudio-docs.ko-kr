@@ -3,17 +3,17 @@ title: 비주얼 스튜디오용 글꼴 및 서식 지정 | 마이크로 소프�
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: bf1550026fb5c9d9395d931f21d48bc4739ea8c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301544"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698577"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio의 글꼴 및 서식 지정
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>환경 글꼴
@@ -424,7 +424,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Usage:**<br /><br /> - 서명 대화 상자에서 더 큰 제목<br />- 주요 보고서 제목<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 항상 가벼운 무게를 사용<br /><br /> **안 함:**<br /><br /> - 시작 페이지와 같은 서명 UI 이외의 UI에 사용<br />- 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 도구 창에서 사용|**로 나타납니다 :** 28 pt 세고에 UI 라이트<br /><br /> **시각적 인 예 :**<br /><br /> ![310% 환경 글꼴 &#43; 라이트 제목의 예](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**사용:**<br /><br /> - 서명 대화 상자에서 더 큰 제목<br />- 주요 보고서 제목<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 항상 가벼운 무게를 사용<br /><br /> **안 함:**<br /><br /> - 시작 페이지와 같은 서명 UI 이외의 UI에 사용<br />- 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 도구 창에서 사용|**로 나타납니다 :** 28 pt 세고에 UI 라이트<br /><br /> **시각적 인 예 :**<br /><br /> ![310% 환경 글꼴 &#43; 라이트 제목의 예](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -432,7 +432,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Usage:**<br /><br /> - 서명 대화 상자에서 더 큰 제목<br />- 주요 보고서 제목<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 항상 가벼운 무게를 사용<br /><br /> **안 함:**<br /><br /> - 서명 UI 이외의 UI에 사용<br />- 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 도구 창에서 사용|**로 나타납니다 :** 28 pt 세고에 UI 라이트<br /><br /> **시각적 인 예 :**<br /><br /> ![310% 환경 글꼴 &#43; 라이트 제목의 예](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**사용:**<br /><br /> - 서명 대화 상자에서 더 큰 제목<br />- 주요 보고서 제목<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 항상 가벼운 무게를 사용<br /><br /> **안 함:**<br /><br /> - 서명 UI 이외의 UI에 사용<br />- 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 도구 창에서 사용|**로 나타납니다 :** 28 pt 세고에 UI 라이트<br /><br /> **시각적 인 예 :**<br /><br /> ![310% 환경 글꼴 &#43; 라이트 제목의 예](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -440,31 +440,31 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Usage:**<br /><br /> - 부제목<br />- 중소 대화 상자의 제목<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 항상 세미 라이트 무게를 사용<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 도구 창에서 사용|**로 나타납니다 :** 18 pt 세고에 UI 세미 라이트<br /><br /> **시각적 인 예 :**<br /><br /> ![200% 환경 글꼴 &#43; 세미라이트의 예](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**사용:**<br /><br /> - 부제목<br />- 중소 대화 상자의 제목<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 항상 세미 라이트 무게를 사용<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 도구 창에서 사용|**로 나타납니다 :** 18 pt 세고에 UI 세미 라이트<br /><br /> **시각적 인 예 :**<br /><br /> ![200% 환경 글꼴 &#43; 세미라이트의 예](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% 환경 글꼴
 
 |||
 |-|-|
-|**Usage:**<br /><br /> - 문서 잘 UI의 섹션 제목<br />- 보고서<br /><br /> **다음을 수행합니다.** 사용 문장 케이스<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 14 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![155% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
+|**사용:**<br /><br /> - 문서 잘 UI의 섹션 제목<br />- 보고서<br /><br /> **다음을 수행합니다.** 사용 문장 케이스<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 14 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![155% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>133% 환경 글꼴
 
 |||
 |-|-|
-|**Usage:**<br /><br /> - 서명 대화 상자의 작은 부제목<br />- 문서 웰 UI의 작은 부제목<br /><br /> **다음을 수행합니다.** 사용 문장 케이스<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 12 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![133% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
+|**사용:**<br /><br /> - 서명 대화 상자의 작은 부제목<br />- 문서 웰 UI의 작은 부제목<br /><br /> **다음을 수행합니다.** 사용 문장 케이스<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 12 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![133% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>122% 환경 글꼴
 
 |||
 |-|-|
-|**Usage:**<br /><br /> - 서명 대화 상자의 섹션 제목<br />- 트리 보기의 상단 노드<br />- 세로 탭 탐색<br /><br /> **다음을 수행합니다.** 사용 문장 케이스<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 11 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![122% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
+|**사용:**<br /><br /> - 서명 대화 상자의 섹션 제목<br />- 트리 보기의 상단 노드<br />- 세로 탭 탐색<br /><br /> **다음을 수행합니다.** 사용 문장 케이스<br /><br /> **안 함:**<br /><br /> - 굵게, 기울임꼴, 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 11 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![122% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
 #### <a name="environment-font--bold"></a>환경 글꼴 + 굵게
 
 |||
 |-|-|
-|**Usage:**<br /><br /> - 서명 대화 상자의 레이블 및 하위 헤드<br />- 보고서의 라벨 및 하위 헤드<br />- 문서 웰 UI의 레이블 및 하위 헤드<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 대담한 무게를 사용<br /><br /> **안 함:**<br /><br /> - 기울임꼴 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 굵게 9 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![환경 글꼴 &#43; 굵은 글꼴의 예](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+|**사용:**<br /><br /> - 서명 대화 상자의 레이블 및 하위 헤드<br />- 보고서의 라벨 및 하위 헤드<br />- 문서 웰 UI의 레이블 및 하위 헤드<br /><br /> **다음을 수행합니다.**<br /><br /> - 사용 문장 케이스<br />- 대담한 무게를 사용<br /><br /> **안 함:**<br /><br /> - 기울임꼴 또는 굵은 기울임꼴<br />- 본문 텍스트에 사용<br />- 표준 비주얼 스튜디오 컨트롤에 사용<br />- 도구 창에서 사용|**다음과 같이 나타납니다 :** 굵게 9 pt 세고에 UI<br /><br /> **시각적 인 예 :**<br /><br /> ![환경 글꼴 &#43; 굵은 글꼴의 예](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>환경 글꼴
 
@@ -481,7 +481,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 굵게 표시된 환경 글꼴 텍스트는 기본 줄 높이 간격 및 패딩을 따라야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSDN: 글꼴 (윈도우)](/windows/desktop/uxguide/vis-fonts)
 - [MSDN: 사용자 인터페이스 텍스트(윈도우)](/windows/desktop/uxguide/text-ui)

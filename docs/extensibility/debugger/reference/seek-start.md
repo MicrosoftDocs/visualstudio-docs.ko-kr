@@ -1,5 +1,5 @@
 ---
-title: SEEK_START | Microsoft Docs
+title: SEEK_START | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de4aa0214ab97c330ddfb689076a2c378c4d227a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329302"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713596"
 ---
-# <a name="seekstart"></a>SEEK_START
-디스어셈블리 스트림에서 검색을 시작 하는 위치를 지정 합니다.
+# <a name="seek_start"></a>SEEK_START
+디스어셈블리 스트림에서 검색할 위치를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,31 +50,31 @@ public enum enum_SEEK_START { 
 
 ## <a name="fields"></a>필드
  `SEEK_START_BEGIN`\
- 현재 문서의 시작 부분에서 검색을 시작 합니다.
+ 현재 문서의 시작 부분에서 검색을 시작합니다.
 
  `SEEK_START_END`\
- 현재 문서의 끝에 검색을 시작 합니다.
+ 현재 문서의 끝에서 검색을 시작합니다.
 
  `SEEK_START_CURRENT`\
- 현재 문서의 현재 위치에서 검색을 시작 합니다.
+ 현재 문서의 현재 위치에서 검색을 시작합니다.
 
  `SEEK_START_CODECONTEXT`\
- 현재 문서의 컨텍스트에서 지정 된 코드 검색을 시작 합니다.
+ 현재 문서의 지정된 코드 컨텍스트에서 검색을 시작합니다.
 
  `SEEK_START_CODELOCID`\
- 지정 된 코드 위치 식별자에 검색을 시작 합니다. 코드 위치 식별자를 호출 하 여 가져온 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)합니다.
+ 지정된 코드 위치 식별자를 검색하기 시작합니다. 코드 위치 식별자는 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)을 호출하여 가져옵니다.
 
 ## <a name="remarks"></a>설명
- 인수로 전달 된 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 메서드.
+ [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 메서드에 인수로 전달 됩니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 - [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

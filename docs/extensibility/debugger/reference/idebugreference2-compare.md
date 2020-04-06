@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare | Microsoft Docs
+title: IDebug참조2::비교 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::Compare
 ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81398c79289786d2c63fa6f37725c295b690d905
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0d293fcb89c92a19acc4f5a3910015914ef4231a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327546"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720645"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-다른 하나의 참조를 비교합니다. 나중에 사용하기 위해 예약되어 있습니다.
+한 참조를 다른 참조와 비교합니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,14 +43,14 @@ int Compare ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwCompare`\
-[in] 값을 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) 는 비교 연산을 수행 하려면 예를 들어, 보다 크거나 같음, 작음,를 지정 하는 열거형입니다.
+【인】 비교 작업을 지정하는 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) 열거된 값(예: 같음, 같음, 같음 또는 보다 큰 값)의 값입니다.
 
 `pReference`\
-[in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 비교에 대 한 참조를 나타내는 개체입니다.
+【인】 비교할 참조를 나타내는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)

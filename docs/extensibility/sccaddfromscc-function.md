@@ -1,5 +1,5 @@
 ---
-title: SccAddFromScc 함수 | Microsoft Docs
+title: SccAddFromScc 기능 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8f37ce82630b72d5a01c66c8848431e8f6c2891
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334041"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701242"
 ---
-# <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
-이 함수는 이미 소스 제어 시스템에 있는 파일을 찾을 수 있도록 하 고 이후에 현재 프로젝트의 일부인 이러한 파일을 확인 합니다. 예를 들어이 함수 파일을 복사 하지 않고 현재 프로젝트에 공통 헤더 파일을 가져올 수 있습니다. 파일의 반환 배열 `lplpFileNames`, IDE 프로젝트에 추가 하는 사용자가 파일의 목록을 포함 합니다.
+# <a name="sccaddfromscc-function"></a>SccAddFromScc 기능
+이 기능을 사용하면 사용자가 소스 제어 시스템에 이미 있는 파일을 찾아보고 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다. 예를 들어 이 함수는 파일을 복사하지 않고 현재 프로젝트에 공통 헤더 파일을 가져옵니다. 파일의 반환 배열은 `lplpFileNames`사용자가 IDE 프로젝트에 추가하려는 파일 목록을 포함합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,41 +36,41 @@ SCCRTN SccAddFromScc (
 ### <a name="parameters"></a>매개 변수
  pvContext
 
-[in] 원본 제어 플러그 인 상황에 맞는 구조입니다.
+【인】 소스 제어 플러그인 컨텍스트 구조입니다.
 
- hWnd
+ Hwnd
 
-[in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.
+【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
- lpnFiles
+ lpn파일
 
-[out에서] 파일에 추가 되는 개수에 대 한 버퍼입니다. (이것이 `NULL` 가리키는 메모리 경우 `lplpFileNames` 해제 하는 것입니다. 자세한 내용은 참조 설명 합니다.)
+【인, 아웃】 추가되는 파일 수에 대한 버퍼입니다. (가리키는 `NULL` 메모리를 해제하는 `lplpFileNames` 경우입니다. 자세한 내용은 비고를 참조하십시오.)
 
- lplpFileNames
+ lplpFile 이름
 
-[out에서] 디렉터리 경로 없이 모든 파일 이름에 대 한 포인터의 배열입니다. 이 배열 할당 되 고 소스 제어 플러그 인에서 해제 합니다. 하는 경우 `lpnFiles` = 1 및 `lplpFileNames` 아닙니다 `NULL`를 가리키는 배열에서 첫 번째 이름 `lplpFileNames` 대상 폴더를 포함 합니다.
+【인, 아웃】 디렉터리 경로가 없는 모든 파일 이름에 대한 포인터 배열입니다. 이 배열은 소스 제어 플러그인에 의해 할당되고 해제됩니다. = `lpnFiles` 1이 `lplpFileNames` 아닌 `NULL`경우 가리키는 배열의 첫 `lplpFileNames` 번째 이름에 대상 폴더가 포함됩니다.
 
-## <a name="return-value"></a>반환 값
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:
+## <a name="return-value"></a>Return Value
+ 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|성공적으로 파일이 있으며 프로젝트에 추가 되었습니다.|
-|SCC_I_OPERATIONCANCELED|아무런 영향을 미치지 작업이 취소 되었습니다.|
-|SCC_I_RELOADFILE|파일 또는 프로젝트 다시 로드 해야 합니다.|
+|SCC_OK|파일이 성공적으로 배치되어 프로젝트에 추가되었습니다.|
+|SCC_I_OPERATIONCANCELED|아무런 효과 없이 작업이 취소되었습니다.|
+|SCC_I_RELOADFILE|파일 또는 프로젝트를 다시 로드해야 합니다.|
 
 ## <a name="remarks"></a>설명
- IDE는이 함수를 호출합니다. 소스 제어 플러그 인에서는 로컬 대상 폴더를 지정 하는 경우 IDE 전달 `lpnFiles` = 1 및를 로컬 폴더 이름을 전달 `lplpFileNames`합니다.
+ IDE는 이 함수를 호출합니다. 소스 제어 플러그인이 로컬 대상 폴더 지정을 지원하는 경우 `lpnFiles` IDE는 = 1을 `lplpFileNames`전달하고 로컬 폴더 이름을 에 전달합니다.
 
- 경우에 대 한 호출을 `SccAddFromScc` 플러그 인에 값을 할당, 함수 반환 `lpnFiles` 및 `lplpFileNames`, 필요에 따라 파일 이름 배열에 대 한 메모리를 할당 (이 할당에 대 한 포인터를 대체 `lplpFileNames`). 소스 제어 플러그 인는 사용자의 디렉터리 또는 지정 된 대상 폴더에 모든 파일을 배치 하는 일을 담당 합니다. 그런 다음 IDE IDE 프로젝트에 파일을 추가합니다.
+ 함수에 대한 호출이 반환되면 플러그인은 필요에 `lpnFiles` 따라 `lplpFileNames`파일 이름 배열에 대한 메모리를 할당하는 값을 할당합니다(이 `lplpFileNames`할당은 포인터를 대체합니다). `SccAddFromScc` 소스 제어 플러그인은 모든 파일을 사용자의 디렉터리 또는 지정된 지정 폴더에 배치할 책임이 있습니다. 그런 다음 IDE는 파일을 IDE 프로젝트에 추가합니다.
 
- 마지막으로, IDE 호출이 함수를 두 번째로 전달 `NULL` 에 대 한 `lpnFiles`합니다. 이것은 특수 한 신호를 소스 제어에서 파일 이름 배열에 대 한 할당 된 메모리를 해제 하려면 플러그 인 `lplpFileNames``.`
+ 마지막으로 IDE는 이 함수를 두 번째로 `NULL` `lpnFiles`호출하여 에 전달합니다. 이는 소스 제어 플러그인이 파일 이름 배열에 할당된 메모리를 해제하는 특별한 신호로 해석됩니다.`lplpFileNames``.`
 
- `lplpFileNames` 가 `char ***` 포인터입니다. 소스 제어 플러그 인이 API에 대 한 표준 방식에서 목록을 전달 하므로 파일 이름에 대 한 포인터의 배열에 대 한 포인터를 배치 합니다.
+ `lplpFileNames`는 `char ***` 포인터입니다. 소스 제어 플러그인은 파일 이름에 대한 포인터 배열에 대한 포인터를 배치하므로 이 API에 대한 표준 방식으로 목록을 전달합니다.
 
 > [!NOTE]
-> VSSCI API의 초기 버전에 추가 된 파일에 대 한 대상 프로젝트를 표시 하는 방법을 제공 하지 않았습니다. 이의 의미 체계에 맞게는 `lplpFIleNames` 매개 변수는 출력 매개 변수 보다는 입/출력 매개 변수를 확인 하려면 향상 되었습니다. 단일 파일을 지정 하는 경우 즉, 값을 가리키는 `lpnFiles` = 1 이면 첫 번째 요소 `lplpFileNames` 대상 폴더를 포함 합니다. 이러한 새로운 의미 체계를 호출 하 여 IDE 사용 하는 `SccSetOption` 함수를 사용 합니다 `nOption`매개 변수 설정 `SCC_OPT_SHARESUBPROJ`합니다. 경우에 소스 제어 플러그 인 의미 체계를 지원 하지 않습니다, 반환 `SCC_E_OPTNOTSUPPORTED`합니다. 따라서 사용 하지 않도록 설정 사용을 수행 하는 **소스 제어에서 추가** 기능입니다. 경우 플러그 인을 지원 합니다 **소스 제어에서 추가** 기능 (`SCC_CAP_ADDFROMSCC`), 새로운 의미 체계를 지원 하 고 반환 하는 다음 `SCC_I_SHARESUBPROJOK`합니다.
+> VSSCI API의 초기 버전은 추가된 파일에 대한 대상 프로젝트를 나타내는 방법을 제공하지 않았습니다. 이를 수용하기 위해 `lplpFIleNames` 매개 변수의 의미 체계가 향상되어 출력 매개 변수가 아닌 인/아웃 매개변수로 변경되었습니다. 단일 파일만 지정하면 즉 = 1로 `lpnFiles` 가리키는 값이 대상 폴더를 `lplpFileNames` 포함합니다. 이러한 새 의미 체계를 사용 하려면 IDE `SccSetOption` `nOption`매개 변수가 `SCC_OPT_SHARESUBPROJ`설정 된 함수를 호출 합니다. 소스 제어 플러그인이 의미 체계를 지원하지 않으면 반환됩니다. `SCC_E_OPTNOTSUPPORTED` 이렇게 하면 **소스 제어에서 추가** 기능의 사용을 비활성화합니다. 플러그인이 **소스 제어에서 추가** 기능 ()을`SCC_CAP_ADDFROMSCC`지원하는 경우 새 의미 체계를 `SCC_I_SHARESUBPROJOK`지원하고 반환해야합니다.
 
-## <a name="see-also"></a>참고자료
-- [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>참조
+- [소스 제어 플러그인 API 기능](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

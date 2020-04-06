@@ -1,30 +1,30 @@
 ---
-title: 새 프로젝트 대화 상자에 디렉터리 추가 | Microsoft Docs
+title: 새 프로젝트 대화 상자에 디렉터리 추가 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e81d09c2a4e97ca5f3da112e593b04b219e6314
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327997"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710239"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>새 프로젝트 대화 상자에 디렉터리 추가
-새 프로젝트 형식을 만들면도 등록할 수 있습니다에 새 디렉터리를 **새 프로젝트** 대화 상자를 템플릿으로 사용 하기 위해 표시 합니다. 다음 코드 예제에서는 노드 라고도 하며 새 디렉터리를 등록 하는 방법에 설명 합니다. 예제에서는 VSPackage에 의해 노출 되는 템플릿 *CLSID_Package*, 등록 됩니다. 결과적으로 좌 변의 합니다 **새 프로젝트** 대화 상자에 따른 이름으로 추가 노드를 제공 합니다 *Folder_Label_ResID* 리소스. 이 리소스는 VSPackage 위성 DLL에서에서 로드 됩니다.
+새 프로젝트 유형을 만들 때 **새 프로젝트** 대화 상자에 새 디렉터리를 등록하여 템플릿으로 사용할 수 있도록 표시할 수도 있습니다. 다음 코드 예제에서는 노드라고도 하는 새 디렉터리를 등록하는 방법을 설명합니다. 이 예제에서는 VSPackage, *CLSID_Package*에 의해 노출된 템플릿이 등록됩니다. 결과적으로 **새 프로젝트** 대화 상자의 왼쪽에는 추가된 노드가 제공되며 *이름은 Folder_Label_ResID* 리소스에 의해 결정됩니다. 이 리소스는 VSPackage 위성 DLL에서 로드됩니다.
 
- 합니다 **폴더** 값 중인 폴더의 GUID를 나타내는 합니다 *Folder_Label_ResID* 노드가 표시 됩니다. GUID를 나타내는 예에서는 **기타 프로젝트** 폴더에는 **프로젝트 형식** 창의 **새 프로젝트** 대화 상자. 경우는 **기타 프로젝트** 값이 없음, 레이블이 최상위에 배치 됩니다.
+ **폴더** 값은 *Folder_Label_ResID* 노드가 표시되는 폴더의 GUID를 나타냅니다. 이 예제에서 GUID는 새 프로젝트 대화 상자의 **프로젝트 유형** 창에서 **다른** **프로젝트** 폴더를 나타냅니다. 기타 **프로젝트** 값이 없는 경우 레이블은 최상위 수준에 배치됩니다.
 
- `TemplatesDir` 값 프로젝트 템플릿이 포함 된 디렉터리의 전체 경로 지정 합니다. 이러한 파일 일 수 있습니다 *.vsz* 파일 또는 일반적인 템플릿 파일을 복제할 수 있습니다.
+ 이 `TemplatesDir` 값은 프로젝트 템플릿을 포함하는 디렉터리 전체 경로를 지정합니다. 이러한 파일은 *.vsz* 파일 또는 복제할 일반적인 템플릿 파일일 수 있습니다.
 
- 지정 하는 경우 `TemplatesLocalizedSubDir`의 하위 디렉터리의 이름을 지정 하는 문자열의 리소스 ID 여야 합니다 `TemplatesDir` 지역화 된 템플릿에 들어 있는입니다. 때문에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 문자열 리소스를 로드 위성 DLL에서에서 하나에 있는 경우 각 위성 DLL 포함 될 수 있습니다 다른 하위 디렉터리 이름입니다. `SortPriority` 값 정렬 우선 순위를 지정 합니다.
+ 을 지정하는 `TemplatesLocalizedSubDir`경우 지역화된 템플릿을 보유하는 하위 디렉터리 `TemplatesDir` 이름을 지정하는 문자열의 리소스 ID여야 합니다. 위성 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DLL이 있는 경우 위성 DLL에서 문자열 리소스를 로드하므로 각 위성 DLL에는 다른 하위 디렉터리 이름이 포함될 수 있습니다. 이 `SortPriority` 값은 정렬 우선 순위를 지정합니다.
 
 ```
 NoRemove NewProjectTemplates
@@ -45,7 +45,7 @@ NoRemove NewProjectTemplates
 }
 ```
 
-## <a name="see-also"></a>참고자료
-- [프로젝트 및 항목 템플릿을 등록합니다](../../extensibility/internals/registering-project-and-item-templates.md)
+## <a name="see-also"></a>참조
+- [프로젝트 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)
 - [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [새 항목 추가 대화 상자에 디렉터리 추가](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

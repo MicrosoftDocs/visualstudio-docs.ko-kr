@@ -1,27 +1,27 @@
 ---
-title: 기여 하는 새 항목 추가 대화 상자 | Microsoft Docs
+title: 새 항목 대화 상자 추가에 기여 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 443f52edda5f3bedb2e3f8c8dbbe748254fd7be7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 83444d9be6ba23392b792a0187bf46dc9920c465
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335566"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709284"
 ---
-# <a name="contribute-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 참여
-프로젝트 하위 형식에 대 한 항목의 전체 새 디렉터리를 제공할 수 있습니다 합니다 **새 항목 추가** 등록 하 여 대화 상자 **항목 추가** 에서 템플릿 합니다 **프로젝트** 레지스트리 하위 키입니다.
+# <a name="contribute-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 기여
+프로젝트 하위 유형은 **프로젝트** 레지스트리 하위 키 아래에 **항목 추가** 템플릿을 등록하여 새 **항목 추가** 대화 상자에 대한 항목의 완전한 새 디렉터리를 제공할 수 있습니다.
 
 ## <a name="register-add-new-item-templates"></a>새 항목 추가 템플릿 등록
- 이 섹션에서는 아래에 있는 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** 레지스트리에서 합니다. 다음 레지스트리 항목 가정를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 가상 프로젝트 하위 형식으로 집계 합니다. 에 대 한 항목을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트는 다음과 같습니다.
+ 이 섹션은 레지스트리의 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\프로젝트** 아래에 있습니다. 아래 레지스트리 항목은 가상프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하위유형으로 집계된 프로젝트를 가정합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 항목은 다음과 같습니다.
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]
@@ -35,12 +35,12 @@ ms.locfileid: "66335566"
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"
 ```
 
- 합니다 **AddItemTemplates\TemplateDirs** 항목에서 사용할 수 있는 디렉터리의 경로를 사용 하 여 레지스트리 항목을 포함 하는 하위 키를 **새 항목 추가** 대화 상자에 배치 됩니다.
+ **AddItemTemplates\TemplateDirs** 하위 키에는 **새 항목 추가** 대화 상자에서 사용할 수 있는 항목이 배치된 디렉터리 경로가 있는 레지스트리 항목이 포함되어 있습니다.
 
- 환경에 모든 항목을 자동으로 로드 합니다 **AddItemTemplates** 아래에서 데이터를 **프로젝트** 레지스트리 하위 키입니다. 이 데이터는 특정 프로젝트 하위 형식에 대 한 데이터 뿐만 아니라 기본 프로젝트 구현에 대 한 데이터에 포함할 수 있습니다. 각 프로젝트 하위 형식 프로젝트 형식으로 식별 되 **GUID**합니다. 대체 집합이 프로젝트 하위 형식을 지정할 수 있습니다 **항목 추가** 서식 파일에 사용할 특정 버전이 지정 된 프로젝트 인스턴스를 지원 하 여 합니다 `VSHPROPID_ AddItemTemplatesGuid` 열거형 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 프로젝트 하위 형식의 GUID 값을 반환 하는 구현입니다. 경우는 `VSHPROPID_AddItemTemplatesGuid` 속성을 지정 하지 않으면 기본 프로젝트 GUID가 사용 됩니다.
+ 환경은 **프로젝트** 레지스트리 하위 키 아래에 모든 **AddItemTemplates** 데이터를 자동으로 로드합니다. 이 데이터에는 기본 프로젝트 구현에 대한 데이터와 특정 프로젝트 하위 유형 형식에 대한 데이터가 포함될 수 있습니다. 각 프로젝트 하위 유형은 프로젝트 유형 **GUID로**식별됩니다. 프로젝트 하위 유형은 구현에서 `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 열거를 지원하여 프로젝트 하위 유형의 GUID 값을 반환하여 특정 맛있는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 프로젝트 인스턴스에 대해 항목 **추가** 템플릿의 대체 집합을 사용하도록 지정할 수 있습니다. `VSHPROPID_AddItemTemplatesGuid` 속성을 지정하지 않으면 기본 프로젝트 GUID가 사용됩니다.
 
- 항목을 필터링 할 수 있습니다 합니다 **새 항목 추가** 구현 하 여 대화 상자는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> 프로젝트 하위 형식 aggregator 개체의 인터페이스입니다. 집계 하 여 데이터베이스 프로젝트를 구현 하는 프로젝트 하위 형식 예를 들어를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트를 필터링 할 수는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에서 특정 항목을 **새 항목 추가** 대화 상자에 필터링을 구현 하 여 설정에서 추가할 수 있습니다 데이터베이스를 지원 하 여 프로젝트 관련 항목 `VSHPROPID_ AddItemTemplatesGuid` 에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>합니다. 필터링 및 항목을 추가 대 한 자세한 내용은 합니다 **새 항목 추가** 대화 상자, 참조 [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)합니다.
+ 프로젝트 하위 유형 애그리게이터 개체에서 인터페이스를 구현하여 **새 항목 추가** 대화 상자의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> 항목을 필터링할 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 예를 들어, 프로젝트를 집계하여 데이터베이스 프로젝트를 구현하는 프로젝트 하위 유형은 필터링을 구현하여 새 항목 **추가** 대화 상자에서 `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 특정 항목을 필터링할 수 있으며, 차례로 에서 지원하여 데이터베이스 프로젝트별 항목을 추가할 수 있습니다. **새 항목 추가** 대화 상자에 항목을 필터링하고 추가하는 방법에 대한 자세한 내용은 새 항목 [추가 대화 상자에 항목 추가 상자를](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)참조하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+- [일반적으로 프로젝트를 확장하는 데 사용되는 개체에 대한 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

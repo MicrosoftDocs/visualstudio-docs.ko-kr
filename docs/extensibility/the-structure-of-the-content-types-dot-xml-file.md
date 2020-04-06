@@ -8,17 +8,17 @@ helpviewer_keywords:
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957958cd930620734d09c592ea07bfb0919d0145
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80395312"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699029"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 파일의 구조
 VSIX 패키지의 콘텐츠 종류에 대한 정보를 포함합니다. Visual Studio는 [Content_Types].xml 파일을 사용하여 패키지를 설치하지만 파일 자체는 설치하지 않습니다.
@@ -37,13 +37,13 @@ VSIX 패키지의 콘텐츠 종류에 대한 정보를 포함합니다. Visual S
 
 ### <a name="attributes"></a>특성
 
-|특성|Description|
+|attribute|설명|
 |---------------|-----------------|
 |`Xmlns`|(필수) 이 [Content_Types].xml 파일에 사용되는 스키마의 위치입니다.|
 
 ### <a name="attribute-name-attribute"></a>{특성 이름} 특성
 
-| 값 | Description |
+| 값 | 설명 |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | 콘텐츠 형식 스키마의 위치입니다. |
 
@@ -56,7 +56,7 @@ VSIX 패키지의 콘텐츠 종류에 대한 정보를 포함합니다. Visual S
 
 ### <a name="attributes"></a>특성
 
-|특성|Description|
+|attribute|설명|
 |---------------|-----------------|
 |`Extension`|VSIX 패키지에 있는 파일의 파일 이름 확장명입니다.|
 |`ContentType`|파일 이름 확장명과 연결된 콘텐츠의 종류를 설명합니다.|
@@ -83,7 +83,7 @@ VSIX 패키지의 콘텐츠 종류에 대한 정보를 포함합니다. Visual S
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
  다음 [Content_Types].xml 파일은 일반적인 VSIX 패키지를 설명합니다.
 
 ### <a name="code"></a>코드
@@ -99,7 +99,7 @@ VSIX 패키지의 콘텐츠 종류에 대한 정보를 포함합니다. Visual S
 </Types>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)
 - [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
 - [OPC: 데이터 패키징을 위한 새로운 표준](https://msdn.microsoft.com/magazine/cc163372.aspx)

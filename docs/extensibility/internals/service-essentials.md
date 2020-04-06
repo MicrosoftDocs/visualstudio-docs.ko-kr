@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8817ca48ff0a3f44a973986a173e647ce89c662c
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301634"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705494"
 ---
 # <a name="service-essentials"></a>서비스 필수 항목
 서비스는 두 VSPackage 간의 계약입니다. 한 VSPackage는 다른 VSPackage에서 사용할 특정 인터페이스 집합을 제공합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]은 다른 VSPackage에 서비스를 제공하는 VSPackage의 모음입니다.
@@ -92,9 +92,9 @@ ms.locfileid: "79301634"
 
     이 코드는 SVsActivityLog 서비스를 가져오고 활동 로그에 쓰는 데 사용할 수 있는 IVsActivityLog 인터페이스로 캐스팅합니다. 예를 들어 사용 [방법: 활동 로그를 사용합니다.](../../extensibility/how-to-use-the-activity-log.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [사용 가능한 서비스 목록](../../extensibility/internals/list-of-available-services.md)
 - [서비스 사용 및 제공](../../extensibility/using-and-providing-services.md)
-- [캐스팅 및 유형 변환](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+- [캐스팅 및 형식 변환(C#)](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 - [캐스팅](/cpp/cpp/casting)
