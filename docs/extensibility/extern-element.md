@@ -1,5 +1,5 @@
 ---
-title: Extern 요소 | Microsoft Docs
+title: 외향적 요소 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342794"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711495"
 ---
-# <a name="extern-element"></a>Extern 요소
-Extern 요소는 모든 외부 헤더가 참조 ( *.h*)를 병합 하는 파일을 *.vsct* 컴파일 타임에 파일입니다. VSCT 컴파일러인 지정 되거나 참조 포함 경로에 병합할 파일 이어야 합니다는 [Include 요소](../extensibility/include-element.md)합니다. 기타 파일이 될 수 있습니다 *.vsct* 파일 또는 C++ 헤더 파일입니다.
+# <a name="extern-element"></a>외향적 요소
+Extern 요소는 컴파일 타임에 *.vsct* 파일과 병합할 외부*헤더(.h)* 파일을 참조합니다. 병합할 파일은 VSCT 컴파일러에 제공된 포함 경로에 있거나 Include [요소에서](../extensibility/include-element.md)참조해야 합니다. 파일은 다른 *.vsct* 파일 또는 C++ 헤더 파일일 수 있습니다.
 
- 폼의 헤더 파일에 정의 해야 "#define [기호] [Value]" 값을 이전에 정의 된 경우 다른 기호를 수 있습니다. 명령은 항목의 조건문에서 정의 사용할 수 있습니다. 실제로 사용 되는 모든 기호는 무시 됩니다.
+ 헤더 파일의 정의는 "#define [기호] [값]" 이전에 정의된 경우 값이 다른 기호일 수 있습니다. 정의는 명령 항목의 조건부 문에 사용할 수 있습니다. 실제로 사용되지 않는 기호는 삭제됩니다.
 
- CommandTable 요소 Extern 요소
+ 커맨드 테이블 엘리먼트 익스테르 니어
 
 ## <a name="syntax"></a>구문
 
@@ -38,23 +38,23 @@ Extern 요소는 모든 외부 헤더가 참조 ( *.h*)를 병합 하는 파일�
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
-|href|필수 요소. 헤더 파일에 대 한 경로:<br /><br /> href="stdidcmd.h"|
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|
-|language|선택 사항입니다. 모든 기본 언어가 [ \<문자열 >](../extensibility/strings-element.md) 명령 테이블에 있는 요소:<br /><br /> language="en-us"|
+|href|필수 사항입니다. 헤더 파일에 대한 경로:<br /><br /> href="stdidcmd.h"|
+|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
+|언어|(선택 사항) 모든 문자열의 기본 언어는 명령 테이블의 요소를 [ \<>.](../extensibility/strings-element.md)<br /><br /> 언어="en-us"|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |없음|없음|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 요소를 모두 정의-메뉴 항목, 메뉴, 도구 모음 및 콤보 상자,-VSPackage IDE를 제공 하는 합니다.|
+|[명령 테이블 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE에 제공하는 명령(즉, 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자)을 나타내는 모든 요소를 정의합니다.|
 
 ## <a name="example"></a>예제
 
@@ -68,7 +68,7 @@ Extern 요소는 모든 외부 헤더가 참조 ( *.h*)를 병합 하는 파일�
 </CommandTable>
 ```
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>참조
+- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [VSPackage사용자 인터페이스 요소를 추가하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

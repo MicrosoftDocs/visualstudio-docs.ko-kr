@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS | Microsoft Docs
+title: PROCESS_INFO_FIELDS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe9a1854fe5583d001e1dc156bfad5833fd1c08f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f81709e7146bbdef13daa3564bb784fd9c08d58e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309452"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714006"
 ---
-# <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-프로세스에 대 한 검색할 정보의 종류를 지정 합니다.
+# <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
+프로세스에 대해 검색할 정보의 종류를 지정했습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -58,46 +58,46 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
 ## <a name="fields"></a>필드
  `PIF_FILE_NAME`\
- 초기화/사용 된 `bstrFileName` 필드를 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조입니다.
+ [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조의 `bstrFileName` 필드를 초기화/사용합니다.
 
  `PIF_BASE_NAME`\
- 초기화/사용 된 `bstrBaseName` 필드는 `PROCESS_INFO` 구조입니다.
+ `PROCESS_INFO` 구조의 `bstrBaseName` 필드를 초기화/사용합니다.
 
  `PIF_TITLE`\
- 초기화/사용 된 `bstrTitle` 필드는 `PROCESS_INFO` 구조입니다.
+ `PROCESS_INFO` 구조의 `bstrTitle` 필드를 초기화/사용합니다.
 
  `PIF_PROCESS_ID`\
- 초기화/사용 된 `ProcessId` 필드는 `PROCESS_INFO` 구조입니다.
+ `PROCESS_INFO` 구조의 `ProcessId` 필드를 초기화/사용합니다.
 
  `PIF_SESSION_ID`\
- 초기화/사용 된 `dwSessionId` 필드는 `PROCESS_INFO` 구조입니다.
+ `PROCESS_INFO` 구조의 `dwSessionId` 필드를 초기화/사용합니다.
 
  `PIF_ATTACHED_SESSION_NAME`\
- 초기화/사용 된 `bstrAttachedSessionName` 필드는 `PROCESS_INFO` 구조입니다.
+ `PROCESS_INFO` 구조의 `bstrAttachedSessionName` 필드를 초기화/사용합니다.
 
  `PIF_CREATION_TIME`\
- 초기화/사용 된 `CreationTime` 필드는 `PROCESS_INFO` 구조입니다.
+ `PROCESS_INFO` 구조의 `CreationTime` 필드를 초기화/사용합니다.
 
  `PIF_FLAGS`\
- 초기화/사용 된 `Flags` 필드는 `PROCESS_INFO` 구조입니다.
+ `PROCESS_INFO` 구조의 `Flags` 필드를 초기화/사용합니다.
 
  `PIF_ALL`\
  모든 필드를 채웁니다.
 
 ## <a name="remarks"></a>설명
- 에 전달 합니다 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 의 필드를 표시 하는 방법을 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조는 초기화할 합니다.
+ [getInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 메서드에 전달되어 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조의 필드를 초기화할 필드를 나타냅니다.
 
- 에서도 사용 됩니다 `Fields` 필드는 `PROCESS_INFO` 에 유효 하 고 사용 되는 필드는 구조체.
+ 또한 `Fields` `PROCESS_INFO` 구조의 필드에서 사용되는 필드와 유효한 필드를 나타내는 데 사용됩니다.
 
- 이러한 플래그는 비트과 결합 될 수 `OR`입니다.
+ 이러한 플래그는 약간 으로 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

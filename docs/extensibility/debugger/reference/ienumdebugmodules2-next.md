@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Next | Microsoft Docs
+title: IEnumDebugModules2::다음 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Next
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5ce512cde85dd305b2d9efb360d805eddbba40e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7b4041f0082bb4a2789c9b9d707ad129f52f1f61
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350297"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716529"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 열거형에서 다음 요소 집합을 반환합니다.
@@ -45,17 +45,17 @@ int Next(
 
 ## <a name="parameters"></a>매개 변수
 `celt`\
-[in] 검색할 요소의 수입니다. 또한 최대 크기를 지정 된 `rgelt` 배열입니다.
+【인】 검색할 요소 수입니다. 또한 배열의 최대 크기를 `rgelt` 지정합니다.
 
 `rgelt`\
-[out에서] 배열을 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 채울 요소입니다.
+【인, 아웃】 입력할 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 요소의 배열입니다.
 
 `pceltFetched`\
-[out] 에 실제로 반환 된 요소의 수를 반환 합니다. `rgelt`합니다.
+【아웃】 에서 실제로 반환된 요소 `rgelt`수를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 요소의 요청 된 수보다 적은; 반환 될 수 있으면이 고, 그렇지 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 `S_OK`를 반환합니다. 요청된 수보다 적은 수의 요소를 반환할 수 `S_FALSE` 있는 경우 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

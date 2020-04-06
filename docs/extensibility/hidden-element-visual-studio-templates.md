@@ -1,5 +1,5 @@
 ---
-title: 요소 (Visual Studio 템플릿)을 숨겨진 | Microsoft Docs
+title: 숨겨진 요소 (비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341046"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711118"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden 요소 (Visual Studio 템플릿)
+# <a name="hidden-element-visual-studio-templates"></a>숨겨진 요소(비주얼 스튜디오 템플릿)
 
-표시할지 여부를 지정 템플릿 중 하나에서 새 프로젝트 또는 **새 항목 추가** 대화 상자.
+템플릿이 새 프로젝트에 표시되는지 또는 **새 항목 추가** 대화 상자에 표시되는지 여부를 지정합니다.
 
 ```xml
 <VSTemplate>
@@ -51,25 +51,25 @@ ms.locfileid: "66341046"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
 
 텍스트 값은 필수입니다.
 
-텍스트 여야 `true` 또는 `false`나타내는 템플릿이 표시 됩니다 여부는 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.
+템플릿이 새 `true` **프로젝트** 또는 새 **항목 추가** 대화 상자에 나타날지 여부를 나타내는 텍스트 또는 `false`.여야 합니다.
 
 ## <a name="remarks"></a>설명
 
 `Hidden`는 선택적 요소입니다.
 
-다른 자식 요소가 없습니다를 지정 하는 경우는 `TemplateData` 요소는 필요 합니다.
+지정하면 `TemplateData` 요소의 다른 자식 요소가 필요하지 않습니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에 대 한 메타 데이터를 C# 템플릿.
+다음 예제에서는 C# 템플릿에 대한 메타데이터를 보여 줍니다.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,7 +96,7 @@ ms.locfileid: "66341046"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

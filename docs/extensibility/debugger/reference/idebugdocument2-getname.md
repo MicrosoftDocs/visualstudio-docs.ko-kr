@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Microsoft Docs
+title: 아이디버그문서2:GetName | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310273"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731964"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
-여러 형식 중 하나로 문서의 이름을 가져옵니다.
+여러 형식 중 하나로 문서 이름을 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,17 +43,17 @@ int GetName( 
 
 ## <a name="parameters"></a>매개 변수
 `gnType`\
-[in] 값을 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 이름을 반환할 형식을 결정 하는 열거형입니다.
+【인】 반환할 이름의 유형을 결정하는 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 열거형의 값입니다.
 
 `pbstrFileName`\
-[out] 문서 이름이 포함 된 문자열을 반환 합니다.
+【아웃】 문서 이름이 포함된 문자열을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 예를 들어이 메서드를 제목으로 또는 파일 이름 또는 파일 이름의 부분에도 문서의 이름을 반환 해야 합니다.
+ 예를 들어 이 메서드는 문서 이름을 제목또는 파일 이름 또는 파일 이름의 일부로 반환할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

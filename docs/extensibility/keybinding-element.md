@@ -1,27 +1,27 @@
 ---
-title: KeyBinding 요소 | Microsoft Docs
+title: 키바인딩 요소 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309636"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703139"
 ---
-# <a name="keybinding-element"></a>KeyBinding 요소
-KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
+# <a name="keybinding-element"></a>키 바인딩 요소
+KeyBinding 요소는 명령에 대한 키보드 단축키를 지정합니다.
 
- 명령에는 상호 연결 된 단일 및 이중 키 바인딩을 가질 수 있습니다. 단일 키 바인딩을 예로 **Ctrl**+**S** 에 대 한 합니다 **저장** 명령입니다. 이중 키 바인딩을 두 개의 연속 키 조합의 명령을 트리거할 필요 합니다. 이중 키 바인딩을 예로 <strong>Ctrl *+</strong>K<strong>를</strong>Ctrl<strong>+</strong>K** 책갈피를 설정 합니다.
+ 명령에는 단일 키 바인딩과 이중 키 바인딩이 모두 연결될 수 있습니다. 단일 키 바인딩의 예는 **저장** 명령에 대한 **Ctrl**+**S입니다.** 이중 키 바인딩에는 명령을 트리거하려면 두 개의 연속키 조합이 필요합니다. 이중 키 바인딩의 예로는 책갈피를 설정하는 <strong>*+</strong>Ctrl<strong>K,</strong>Ctrl<strong>+</strong>K**가 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,30 +34,30 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
-|guid|필수 요소.|
-|ID|필수 요소.|
-|편집기|필수 요소. 편집기 GUID는이 바로 가기 키를 활성화 될 편집 컨텍스트를 나타냅니다. 전역 바인딩 범위 값은 "guidVSStd97"입니다.|
-|key1|필수 요소. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)합니다.|
-|mod1|선택 사항입니다. 조합을 **Ctrl**를 **Alt**, 및 **Shift** 공백으로 구분 합니다.|
-|key2|선택 사항입니다. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)합니다.|
-|mod2|선택 사항입니다. 조합을 **Ctrl**를 **Alt**, 및 **Shift** 공백으로 구분 합니다.|
-|에뮬레이터|선택 사항입니다.|
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|
+|guid|필수 사항입니다.|
+|id|필수 사항입니다.|
+|편집기|필수 사항입니다. 편집기 GUID는 이 키보드 단축성이 활성화될 편집 컨텍스트를 나타냅니다. 전역 바인딩 범위 값은 "guidVSStd97"입니다.|
+|key1|필수 사항입니다. 유효한 값에는 모든 입력 가능한 영숫자와 0x 및 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)앞에 오는 두 자리 헥사데피만 값이 포함됩니다.|
+|모드 1|(선택 사항) **Ctrl,** **Alt**및 **Shift의** 모든 조합은 공간으로 구분됩니다.|
+|key2|(선택 사항) 유효한 값에는 모든 입력 가능한 영숫자와 0x 및 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)앞에 오는 두 자리 헥사데피만 값이 포함됩니다.|
+|모드2|(선택 사항) **Ctrl,** **Alt**및 **Shift의** 모든 조합은 공간으로 구분됩니다.|
+|에뮬레이터|(선택 사항)|
+|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|부모||
+|Parent||
 |주석||
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[KeyBindings 요소](../extensibility/keybindings-element.md)|KeyBinding 요소 그룹 및 다른 KeyBindings 그룹화 합니다.|
+|[키 바인딩 요소](../extensibility/keybindings-element.md)|키 바인딩 요소 및 기타 키 바인딩 그룹화 그룹입니다.|
 
 ## <a name="example"></a>예제
 
@@ -70,6 +70,6 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>참고자료
-- [KeyBindings 요소](../extensibility/keybindings-element.md)
-- [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참조
+- [키 바인딩 요소](../extensibility/keybindings-element.md)
+- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

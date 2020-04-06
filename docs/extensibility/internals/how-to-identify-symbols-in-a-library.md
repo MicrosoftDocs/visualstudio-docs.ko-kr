@@ -1,27 +1,27 @@
 ---
-title: '방법: 라이브러리의 기호 식별 | Microsoft Docs'
+title: '방법: 라이브러리에서 기호 식별 | 마이크로 소프트 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 550bd16fec0dde508642a362835cde1e2d1637d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fe920fabd05a875b336467fbba16e4229fa9613
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328700"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708011"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>방법: 라이브러리의 기호 식별
-기호 검색 도구는 기호의 계층적 뷰를 표시합니다. 기호는 네임 스페이스, 개체, 클래스, 클래스 멤버 및 다른 언어 요소를 나타냅니다.
+# <a name="how-to-identify-symbols-in-a-library"></a>방법: 라이브러리에서 기호 식별
+기호 검색 도구는 기호의 계층적 보기를 표시합니다. 기호는 네임스페이스, 개체, 클래스, 클래스 멤버 및 기타 언어 요소를 나타냅니다.
 
- 계층의 각 기호를 기호 라이브러리에 의해 전달 된 탐색 정보로 식별할 수 있습니다는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다음 인터페이스를 통해 개체 관리자:
+ 계층구조의 각 심볼은 기호 라이브러리를 통해 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다음 인터페이스를 통해 개체 관리자에게 전달되는 탐색 정보로 식별할 수 있습니다.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>
 
@@ -29,11 +29,11 @@ ms.locfileid: "66328700"
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.
 
- 계층에 있는 기호의 위치 기호를 구분합니다. 기호 검색 도구를 특정 기호로 이동할 수 있습니다. 기호를 고유 하 고 정규화 된 경로 위치를 결정합니다. 경로 있는 각 요소는 노드입니다. 경로 최상위 노드를 사용 하 여 시작한 특정 기호를 사용 하 여 종료 합니다. 예를 들어 M1 방법은 C1 클래스의 멤버 이며 C1 N1 네임 스페이스에 있는 경우 전체 M1 메서드의 경로가 N1. C1 합니다. M1 합니다. 이 경로는 3 개의 노드가 포함 됩니다. N1, C1 및 M1 합니다.
+ 계층 구조에서 기호의 위치는 기호를 구분합니다. 심볼 브라우징 도구를 사용하여 특정 기호로 이동할 수 있습니다. 기호에 대한 고유하고 정규화된 경로가 위치를 결정합니다. 경로의 각 요소는 노드입니다. 경로는 최상위 노드로 시작하여 특정 기호로 끝납니다. 예를 들어 M1 메서드가 C1 클래스의 멤버이고 C1이 N1 네임스페이스에 있는 경우 M1 메서드의 전체 경로는 N1입니다. C1. M1. 이 경로에는 N1, C1 및 M1의 세 개의 노드가 포함됩니다.
 
- 탐색 정보를 사용 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 찾고 선택한 유지 선택한 기호를 계층 구조에서 개체 관리자입니다. 다른 검색 도구에서 이동 수 있습니다. 사용 하는 동안 **개체 브라우저** 에서 기호를 이동할를 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 프로젝트 메서드를 마우스 오른쪽 단추로 클릭 하 고 시작할 수 있습니다 합니다 **호출 브라우저** 메서드 호출 그래프에 표시할 도구입니다.
+ 탐색 정보를 사용하면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 개체 관리자가 계층 구조에서 선택한 기호를 찾고 선택하고 유지할 수 있습니다. 그것은 다른 하나의 브라우징 도구에서 탐색 할 수 있습니다. 개체 **브라우저를** 사용하여 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 프로젝트에서 기호를 탐색하는 동안 메서드를 마우스 오른쪽 단추로 클릭하고 **브라우저 호출** 도구를 시작하여 호출 그래프에 메서드를 표시할 수 있습니다.
 
- 두 가지 형식 기호 위치를 설명합니다. 정규 형식 기호 정규화 된 경로 기반으로 합니다. 계층에서 기호의 고유 위치를 나타냅니다. 기호 검색 도구 무관 합니다. 정규 형식 정보를 얻는 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] manager 호출은 개체 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 메서드. 프레젠테이션 폼 특정 기호 검색 도구 내에서 기호의 위치를 설명 합니다. 기호의 위치 계층 구조에서 다른 기호의 위치에 상대적입니다. 지정된 된 기호 하나만 정식 경로 이지만 프레젠테이션 경로가 여러 개 있을 수 있습니다. 예를 들어 C1 클래스 C2 클래스에서 상속 되며 두 클래스 모두 N1 네임 스페이스에는 **개체 브라우저** 다음 계층적 트리를 표시 합니다.
+ 두 가지 양식은 기호 위치를 설명합니다. 표준 형식은 기호의 정규화된 경로를 기반으로 합니다. 계층 구조에서 기호의 고유한 위치를 나타냅니다. 심볼 브라우징 도구와는 무관합니다. 표준 양식 정보를 얻으려면 개체 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 관리자가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 메서드를 호출합니다. 프레젠테이션 양식은 특정 심볼 검색 도구 내에서 기호의 위치를 설명합니다. 기호의 위치는 계층 구조의 다른 기호의 위치를 기준으로 합니다. 지정된 기호에는 여러 개의 프레젠테이션 경로가 있을 수 있지만 하나의 표준 경로만 있을 수 있습니다. 예를 들어 C1 클래스가 C2 클래스에서 상속되고 두 클래스가 모두 N1 네임스페이스에 있는 경우 **개체 브라우저는** 다음과 같은 계층 트리를 표시합니다.
 
 ```
 N1
@@ -46,15 +46,15 @@ N1
 
 ```
 
- 이 예제에서는 C2 클래스의 정식 경로 N1 + C2입니다. C2의 프레젠테이션 경로 C1과 "자료 및 인터페이스" 노드를 포함 합니다. N1 + C1 + 기본 "및" 인터페이스 + C2입니다.
+ 이 예제에서 C2 클래스의 표준 경로는 N1 + C2입니다. C2의 프리젠 테이션 경로는 C1 및 "베이스 및 인터페이스"노드를 포함 : N1 + C1 + "베이스 및 인터페이스"+ C2.
 
- 개체 관리자 호출 프레젠테이션 폼 정보를 얻는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> 메서드.
+ 프레젠테이션 양식 정보를 얻으려면 개체 관리자가 메서드를 호출합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>
 
-## <a name="to-obtain-canonical-and-presentation-forms-information"></a>정식 가져오려고 프레젠테이션 정보 이며
+## <a name="to-obtain-canonical-and-presentation-forms-information"></a>표준 및 프레젠테이션 양식 정보를 얻으려면
 
 1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 메서드를 구현합니다.
 
-     개체 관리자 기호의 정식 경로에 포함 된 노드의 목록을 가져오려면이 메서드를 호출 합니다.
+     개체 관리자는 기호의 표준 경로에 포함된 노드 목록을 얻기 위해 이 메서드를 호출합니다.
 
     ```vb
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer
@@ -77,9 +77,9 @@ N1
 
 2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> 메서드를 구현합니다.
 
-     개체 관리자 기호의 프레젠테이션 경로에 포함 된 노드의 목록을 가져오려면이 메서드를 호출 합니다.
+     개체 관리자는 기호의 프레젠테이션 경로에 포함된 노드 목록을 가져오려면 이 메서드를 호출합니다.
 
-## <a name="see-also"></a>참고자료
-- [기호 검색 도구를 지원 합니다.](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [방법: 개체 관리자를 사용 하 여 라이브러리를 등록 합니다.](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [방법: 개체 관리자에 게 라이브러리에서 제공 하는 기호 목록을 표시 합니다.](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>참조
+- [심볼 브라우징 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [방법: 개체 관리자와 라이브러리 등록](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [방법: 라이브러리에서 제공하는 기호 목록을 개체 관리자에 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

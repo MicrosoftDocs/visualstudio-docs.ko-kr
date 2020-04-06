@@ -3,17 +3,17 @@ title: 비주얼 스튜디오를 위한 색상 및 스타일링 | 마이크로 �
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301562"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699860"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
@@ -358,7 +358,7 @@ VSPackage는 사용자 지정 범주를 통해 글꼴 및 색상을 제어하고
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| 속성 | Type | 데이터 | Description |
+| 이름 | 형식 | 데이터 | 설명 |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | 범주를 식별하기 위해 만든 GUID |
 | 패키지 | REG_SZ | GUID | 범주를 지원하는 VSPackage 서비스의 GUID |
@@ -371,7 +371,7 @@ VSPackage는 사용자 지정 범주를 통해 글꼴 및 색상을 제어하고
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| 속성 | Type | 데이터 | Description |
+| 이름 | 형식 | 데이터 | 설명 |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | 범주를 식별하기 위해 만든 GUID |
 | 패키지 | REG_SZ | GUID | 범주를 지원하는 VSPackage 서비스의 GUID |

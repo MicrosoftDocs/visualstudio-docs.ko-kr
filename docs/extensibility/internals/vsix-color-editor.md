@@ -1,145 +1,145 @@
 ---
-title: VSIX 색 편집기 | Microsoft Docs
+title: VSIX 컬러 에디터 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28bc9381cd1fbd0cf03242683d3fcfb1ea39b8f0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: aa3ed1f1a2a761a6602ac891eb78b5a5436abf92
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252483"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704037"
 ---
 # <a name="vsix-color-editor"></a>VSIX 색 편집기
-Visual Studio 확장 색 편집기 도구를 통해 Visual Studio에 대 한 사용자 지정 색을 만들고 편집할 수 있습니다. 이 도구는 코드에서 색을 사용할 수 있도록 테마 리소스 키를 생성할 수도 있습니다. 이 도구는 테마를 지 원하는 Visual Studio 확장에 대 한 색을 만드는 데 유용 합니다. 이 도구는 .pkgdef 및 .xml 파일을 열 수 있습니다. Visual studio 테마 (vstheme 파일)는 파일 확장명을 .xml로 변경 하 여 Visual Studio 확장 색 편집기에서 사용할 수 있습니다. 또한 vstheme 파일을 현재 .xml 파일로 가져올 수 있습니다.
+비주얼 스튜디오 확장 색상 편집기 도구를 만들고 Visual Studio에 대 한 사용자 지정 색상을 편집할 수 있습니다. 이 도구는 색상이 코드에서 사용할 수 있도록 테마 리소스 키를 생성할 수도 있습니다. 이 도구는 테마를 지원하는 Visual Studio 확장의 색상을 만드는 데 유용합니다. 이 도구는 .pkgdef 및 .xml 파일을 열 수 있습니다. 비주얼 스튜디오 테마 (.vstheme 파일)는 .xml파일 확장을 변경하여 비주얼 스튜디오 확장 색상 편집기와 함께 사용할 수 있습니다. 또한 .vstheme 파일을 현재 .xml 파일로 가져올 수 있습니다.
 
- ![VSIX 색 편집기 주인공](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX 색 편집기 주인공")
+ ![VSIX 색 편집기 Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX 색 편집기 Hero")
 
  **패키지 정의 파일**
 
- 패키지 정의 파일 (.pkgdef)은 테마를 정의 하는 파일입니다. 색 자체는 .pkgdef 파일로 컴파일되는 테마 색 .xml 파일에 저장 됩니다. .Pkgdef 파일은 Visual Studio에서 검색할 수 있는 위치에 배포 되 고 런타임에 처리 되며 함께 병합 되어 테마를 정의 합니다.
+ 패키지 정의(.pkgdef) 파일은 테마를 정의하는 파일입니다. 색상 자체는 .pkgdef 파일로 컴파일되는 테마 색상 .xml 파일에 저장됩니다. .pkgdef 파일은 Visual Studio 검색 가능한 위치에 배포되고 런타임에 처리되며 함께 병합되어 테마를 정의합니다.
 
- **색 토큰**
+ **색상 토큰**
 
- 색 토큰은 4 개의 요소로 구성 됩니다.
+ 색상 토큰은 다음 네 가지 요소로 구성됩니다.
 
-- **범주 이름:** 색 집합에 대 한 논리적 그룹화입니다. 원하는 UI 요소 또는 UI 요소 그룹과 관련 된 색이 이미 있는 경우 기존 범주 이름을 사용 합니다.
+- **범주 이름:** 색상 집합에 대한 논리적 그룹입니다. 원하는 UI 요소 또는 UI 요소 그룹에 특정한 색상이 이미 있는 경우 기존 범주 이름을 사용합니다.
 
-- **토큰 이름:** 색 토큰 및 토큰 집합에 대 한 설명이 포함 된 이름입니다. 설정에는 배경 및 전경 (텍스트) 토큰 이름과 모든 상태를 포함 하며, 이러한 이름과 해당 쌍이 적용 되는 상태를 쉽게 식별할 수 있도록 이름이 지정 되어야 합니다.
+- **토큰 이름:** 색상 토큰 및 토큰 집합에 대한 설명이 있는 이름입니다. 집합에는 배경 및 전경(텍스트) 토큰 이름과 모든 상태가 포함되며, 해당 상태와 쌍을 쉽게 식별할 수 있도록 이름을 지정해야 합니다.
 
-- **색 값 (또는 색조):** 색이 지정 된 각 테마에 필요 합니다. 항상 배경색과 텍스트 색 값을 쌍으로 만듭니다. 색은 배경/전경에 대해 쌍을 이룹니다. 따라서 텍스트 (전경) 색은 그리는 배경색을 기준으로 항상 읽을 수 있습니다. 이러한 색은 연결 되어 있으며 UI에서 함께 사용 됩니다. 배경에 텍스트를 사용할 수 없는 경우 전경색을 정의 하지 마십시오.
+- **색상 값(또는 색조):** 각 컬러 테마에 필요합니다. 항상 배경 및 텍스트 색상 값을 쌍으로 만듭니다. 색상은 배경/전경에 대해 쌍을 이루므로 텍스트(전경) 색상은 항상 그려지는 배경 색에 대해 읽을 수 있습니다. 이러한 색상은 연결되며 UI에서 함께 사용됩니다. 배경이 텍스트와 함께 사용하기 위한 것이 아닌 경우 전경 색상을 정의하지 마십시오.
 
-- **시스템 색 이름:** 고대비 디스플레이에서 사용 합니다.
+- **시스템 색상 이름:** 고대비 디스플레이에 사용하십시오.
 
 ## <a name="how-to-use-the-tool"></a>이 도구를 사용 하는 방법
- 가능 하면 기존 Visual Studio 색을 새로 만드는 대신 다시 사용 해야 합니다. 그러나 적절 한 색이 정의 되지 않은 경우에는 확장 테마를 호환 가능 하 게 유지 하기 위해 사용자 지정 색을 만들어야 합니다.
+ 가능한 한 적절한 경우 기존 Visual Studio 색상을 새 색상을 만드는 대신 다시 사용해야 합니다. 그러나 적절한 색상이 정의되지 않은 경우 확장 테마를 호환 상태로 유지하려면 사용자 지정 색상을 만들어야 합니다.
 
- **새 색 토큰 만들기**
+ **새 색상 토큰 만들기**
 
- Visual Studio 확장 색 편집기를 사용 하 여 사용자 지정 색을 만들려면 다음 단계를 수행 합니다.
+ Visual Studio 확장 색상 편집기를 사용하여 사용자 지정 색상을 만들려면 다음 단계를 따르십시오.
 
-1. 새 색 토큰의 범주 및 토큰 이름을 결정 합니다.
+1. 새 색상 토큰의 범주 및 토큰 이름을 결정합니다.
 
-2. UI 요소가 각 테마에 사용할 색 및 고대비에 대 한 시스템 색을 선택 합니다.
+2. UI 요소가 각 테마에 사용할 색조와 고대비의 시스템 색상을 선택합니다.
 
-3. 색 편집기를 사용 하 여 새 색 토큰을 만듭니다.
+3. 색상 편집기를 사용하여 새 색상 토큰을 만듭니다.
 
-4. Visual Studio 확장에서 색을 사용 합니다.
+4. Visual Studio 확장의 색상을 사용합니다.
 
-5. Visual Studio에서 변경 내용을 테스트 합니다.
+5. Visual Studio에서 변경 내용을 테스트합니다.
 
-   **1단계: 새 색 토큰의 범주 및 토큰 이름을 결정 합니다.**
+   **1단계: 새 색상 토큰의 범주 및 토큰 이름을 결정합니다.**
 
-   VSColor의 기본 이름 지정 체계는 **[Category] [UI 유형] [상태]** 입니다. VSColor 이름에 "color" 라는 단어는 중복 되므로 사용 하지 마십시오.
+   VSColor에 대 한 기본 명명 체계는 **[범주] [UI 형식] [상태]** 입니다. VSColor 이름에 "color"라는 단어는 중복되어 있으므로 사용하지 마십시오.
 
-   범주 이름은 논리적 그룹화를 제공 하며 가능한 한 좁은 것으로 정의 되어야 합니다. 예를 들어 단일 도구 창의 이름은 범주 이름일 수 있지만 전체 사업부 또는 프로젝트 팀의 이름은 그렇지 않습니다. 항목을 범주로 그룹화 하면 이름이 같은 색 간의 혼동을 방지할 수 있습니다.
+   범주 이름은 논리적 그룹을 제공하며 가능한 한 좁게 정의해야 합니다. 예를 들어 단일 도구 창의 이름은 범주 이름이 될 수 있지만 전체 사업부 또는 프로젝트 팀의 이름은 그렇지 않습니다. 항목을 범주로 그룹화하면 이름이 같은 색상 간의 혼동을 방지할 수 있습니다.
 
-   토큰 이름은 요소 유형과 색이 적용 되는 상황 또는 "상태"를 명확 하 게 나타내야 합니다. 예를 들어 활성 데이터 팁의 **[UI 종류]** 의 이름을 "**DataTip**"으로 지정 하 고 **[State]** 이름을 "**active**"로 지정 하 여 색 이름을 "**DataTipActive**"로 지정할 수 있습니다. 데이터 팁에 텍스트가 있으므로 전경 색과 배경색을 모두 정의 해야 합니다. 배경색 편집기는 배경/전경 쌍을 사용 하 여 배경에 "**DataTipActive**" 색을 자동으로 만들며 전경의 경우 "**DataTipActiveText**"을 만듭니다.
+   토큰 이름은 색상이 적용되는 요소 유형과 상황 또는 "상태"를 명확하게 나타내야 합니다. 예를 들어 활성 데이터 팁의 **[UI 형식]의** 이름을 **"DataTip"** 및 **[상태]의** 이름을 **"활성"으로**지정하여 **"DataTipActive"의**색상 이름을 지정할 수 있습니다. 데이터 팁에는 텍스트가 있기 때문에 전경과 배경 색을 모두 정의해야 합니다. 배경/전경 페어링을 사용하면 색상 편집기에서 배경에 대한 **"DataTipActive"** 및 전경에 대한 **"DataTipActiveText"** 색을 자동으로 만듭니다.
 
-   UI 부분에 상태가 하나뿐인 경우 이름의 **[state]** 부분을 생략할 수 있습니다. 예를 들어 검색 상자에 테두리가 있고 테두리 색에 영향을 주는 상태 변화가 없는 경우 테두리 색 토큰의 이름을 "**Searchboxborder**"로 간단히 호출할 수 있습니다.
+   UI에 상태가 하나만 있는 경우 이름의 **[State]** 부분을 생략할 수 있습니다. 예를 들어 검색 상자에 테두리가 있고 테두리의 색상에 영향을 주는 상태 변경이 없는 경우 테두리의 색상 토큰 이름을 **"SearchBoxBorder"라고**간단히 호출할 수 있습니다.
 
-   일반적인 상태 이름에는 다음이 포함 됩니다.
+   몇 가지 일반적인 상태 이름은 다음과 같습니다.
 
-- 활성
+- Active
 
 - 비활성
 
 - MouseOver
 
-- MouseDown
+- Mousedown
 
-- 선택함
+- 선택
 
 - 포커스 있음
 
-  목록 항목 컨트롤의 일부에 대 한 몇 가지 토큰 이름 예:
+  목록 항목 컨트롤의 일부에 대한 몇 가지 토큰 이름의 예:
 
 - ListItem
 
-- ListItemBorder
+- 목록항목경계
 
-- ListItemMouseOver
+- 목록항목마우스오버
 
-- ListItemMouseOverBorder
+- 목록항목마우스오버보더보더
 
-- ListItemSelected
+- 목록항목 선택됨
 
-- ListItemSelectedBorder
+- 목록항목선택국경
 
-- ListItemDisabled
+- 목록항목 사용 안 함
 
-- ListItemDisabledBorder
+- 목록항목장애인국경
 
-  **2단계: UI 요소가 각 테마에 사용할 색 및 고대비에 대 한 시스템 색을 선택 합니다.**
+  **2단계: UI 요소가 각 테마에 사용할 색조와 고대비의 시스템 색상을 선택합니다.**
 
-  UI에 대 한 사용자 지정 색을 선택 하는 경우 유사한 기존 UI 요소를 선택 하 고 색을 기준으로 사용 합니다. 기본 UI 요소의 색은 검토 및 테스트를 거쳤습니다. 따라서 모든 테마에서 적절 하 게 표시 되 고 올바르게 동작 합니다.
+  UI에 대한 사용자 지정 색상을 선택할 때 유사한 기존 UI 요소를 선택하고 해당 색상을 기본으로 사용합니다. 즉시 사용 가능한 UI 요소의 색상은 검토 및 테스트를 거쳤기 때문에 모든 테마에서 적절히 보이고 올바르게 행동합니다.
 
-  **3단계: 색 편집기를 사용 하 여 새 색 토큰을 만듭니다.**
+  **3 단계 : 색상 편집기를 사용하여 새 색상 토큰을 만듭니다.**
 
-  색 편집기를 시작 하 고 새 사용자 지정 테마 색 .xml 파일을 열거나 만듭니다. 메뉴에서 **편집 > 새 색** 을 선택 합니다. 그러면 범주와 해당 범주 내의 색 항목에 대 한 하나 이상의 이름을 지정 하는 대화 상자가 열립니다.
+  색상 편집기를 실행하고 새 사용자 지정 테마 색상 .xml 파일을 열거나 만듭니다. 메뉴에서 **새 색상 > 편집을** 선택합니다. 이렇게 하면 범주를 지정하기 위한 대화 상자와 해당 범주 내의 색상 항목에 대한 하나 이상의 이름이 열립니다.
 
   ![VSIX 색 편집기 새 색](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX 색 편집기 새 색")
 
-  기존 범주를 선택 하거나 **새 범주** 를 선택 하 여 새 범주를 만듭니다. 다른 대화 상자가 열리고 새 범주 이름이 생성 됩니다.
+  기존 범주를 선택하거나 **새 범주를** 선택하여 새 범주를 만듭니다. 다른 대화 상자가 열리고 새 범주 이름이 생성됩니다.
 
   ![VSIX 색 편집기 새 범주](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX 색 편집기 새 범주")
 
-  새 범주는 **새 색** 범주 드롭다운 메뉴에서 사용할 수 있게 됩니다. 범주를 선택한 후 각 새 색 토큰에 대해 줄당 하나의 이름을 입력 하 고 완료 되 면 "만들기"를 선택 합니다.
+  그러면 새 색상 범주 드롭다운 메뉴에서 **새 범주를** 사용할 수 있습니다. 범주를 선택한 후 각 새 색상 토큰에 대해 줄당 하나의 이름을 입력하고 완료되면 "만들기"를 선택합니다.
 
-  ![VSIX 색 편집기 새 색 채우기](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX 색 편집기 새 색 채우기")
+  ![VSIX 색 편집기 새 색 채워짐](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX 색 편집기 새 색 채워짐")
 
-  색 값은 배경/전경 쌍으로 표시 되 고, "없음"은 색이 정의 되지 않았음을 나타냅니다. 참고: 색에 텍스트 색/배경 색 쌍이 없으면 배경만 정의 해야 합니다.
+  색상 값은 배경/전경 쌍으로 표시되며 색상이 정의되지 않음을 나타내는 "없음"이 표시됩니다. 참고: 색상에 텍스트 색상/배경 색 쌍이 없는 경우 배경만 정의하면 됩니다.
 
   ![VSIX 색 편집기 색 값](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX 색 편집기 색 값")
 
-  색 토큰을 편집 하려면 해당 토큰의 테마 (열)에 대 한 색 항목을 선택 합니다. 16 진수 색 값을 8 자리 ARGB 형식으로 입력 하거나, 셀에 시스템 색 이름을 입력 하거나, 드롭다운 메뉴를 사용 하 여 색 슬라이더 집합 또는 시스템 색 목록을 통해 원하는 색을 선택 하 여 색 값을 추가 합니다.
+  색상 토큰을 편집하려면 해당 토큰의 테마(열)에 대한 색상 항목을 선택합니다. 8자리 ARGB 형식으로 육수 색상 값을 입력하거나, 셀에 시스템 색상 이름을 입력하거나, 드롭다운 메뉴를 사용하여 색상 슬라이더 세트 또는 시스템 색상 목록을 통해 원하는 색상을 선택하여 색상 값을 추가합니다.
 
   ![VSIX 색 편집기 색 편집](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX 색 편집기 색 편집")
 
   ![VSIX 색 편집기 배경](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX 색 편집기 배경")
 
-  텍스트를 표시 하지 않아도 되는 구성 요소의 경우 배경색을 한 색 값으로 입력 합니다. 그렇지 않으면 배경색과 텍스트 색 모두에 대 한 값을 슬래시로 구분 하 여 입력 합니다.
+  텍스트를 표시할 필요가 없는 구성요소의 경우 하나의 색상 값인 배경색만 입력합니다. 그렇지 않으면 앞으로 슬래시로 구분된 배경 색과 텍스트 색상 모두에 대한 값을 입력합니다.
 
-  고대비에 대 한 값을 입력 하는 경우 올바른 Windows 시스템 색 이름을 입력 합니다. 하드 코드 되는 ARGB 값을 입력 하지 마세요. "배경:을 선택 하 여 유효한 시스템 색 이름 목록을 볼 수 있습니다. 시스템 "또는" 포그라운드: System "을 (를) 삭제 합니다. 텍스트 구성 요소가 있는 요소를 만드는 경우 올바른 배경/텍스트 시스템 색 쌍을 사용 하거나 텍스트를 읽을 수 없습니다.
+  고대비 값을 입력할 때 유효한 Windows 시스템 색상 이름을 입력합니다. 하드 코딩된 ARGB 값을 입력하지 마십시오. 색상 값 드롭다운 메뉴에서 "배경: 시스템" 또는 "전경: 시스템"을 선택하여 유효한 시스템 색상 이름 목록을 볼 수 있습니다. 텍스트 구성 요소가 있는 요소를 만들 때 올바른 배경/텍스트 시스템 색상 쌍을 사용하거나 텍스트를 읽을 수 없습니다.
 
-  색 토큰 만들기, 설정 및 편집을 마치면 원하는 .xml 또는. .pkgdef 형식으로 저장 합니다. 배경 또는 전경 집합이 아닌 색 토큰은 .xml 형식의 빈 색으로 저장 되지만 .pkgdef 형식에서 삭제 됩니다. .Pkgdef 파일에 빈 색을 저장 하려고 하면 대화 상자에서 잠재적 색 손실을 경고 합니다.
+  색상 토큰 만들기, 설정 및 편집을 마치면 원하는 .xml 또는 .pkgdef 형식으로 저장합니다. 배경이나 전경 세트가 없는 색상 토큰은 .xml 형식으로 빈 색상으로 저장되지만 .pkgdef 형식으로 삭제됩니다. .pkgdef 파일에 빈 색상을 저장하려고 하면 대화 상자에서 색상 손실이 발생할 수 있습니다.
 
-  **4단계: Visual Studio 확장에서 색을 사용 합니다.**
+  **4단계: Visual Studio 확장의 색상을 사용합니다.**
 
-  새 색 토큰을 정의한 후에는 프로젝트 파일의 "빌드 작업"을 "내용"으로 설정 하 고 "VSIX에 포함"을 "True"로 설정 하 여 .pkgdef를 포함 합니다.
+  새 색상 토큰을 정의한 후 프로젝트 파일에 .pkgdef를 "콘텐츠 빌드"로 설정하고 "VSIX에 포함"을 "True"로 설정합니다.
 
-  ![VSIX 색 편집기 .pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX 색 편집기 .pkgdef")
+  ![VSIX 색 편집기 pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX 색 편집기 pkgdef")
 
-  Visual Studio 확장 색 편집기에서 파일 > 리소스 코드 보기를 선택 하 여 WPF 기반 UI의 사용자 지정 색에 액세스 하는 데 사용 되는 코드를 봅니다.
+  Visual Studio 확장 색상 편집기에서 파일 > 보기 리소스 코드를 선택하여 WPF 기반 UI의 사용자 지정 색상에 액세스하는 데 사용되는 코드를 봅니다.
 
   ![VSIX 색 편집기 리소스 코드 뷰어](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX 색 편집기 리소스 코드 뷰어")
 
-  프로젝트의 정적 클래스에이 코드를 포함 합니다. VisualStudio에 대 한 참조입니다. **\<**  **ThemeResourceKey** 형식을 사용 하려면 vsversion > .0를 프로젝트에 추가 해야 합니다.
+  이 코드를 프로젝트의 정적 클래스에 포함합니다. **마이크로소프트.비주얼 스튜디오.쉘에 대\< 한 참조. VSVersion>.0.dll** **테마리소스키** 유형을 사용하려면 프로젝트에 추가해야 합니다.
 
 ```csharp
 namespace MyCustomColors
@@ -163,7 +163,7 @@ namespace MyCustomColors
 }
 ```
 
- 이렇게 하면 XAML 코드의 색에 액세스할 수 있으며 UI가 테마 변경 내용에 응답할 수 있습니다.
+ 이렇게 하면 XAML 코드의 색상에 액세스할 수 있으며 UI가 테마 변경 사항에 응답할 수 있습니다.
 
 ```xaml
 <UserControl x:Class="NewTestProject.TestPackageControl" Name="MyToolWindow"
@@ -179,21 +179,21 @@ namespace MyCustomColors
 </UserControl>
 ```
 
- **5단계: Visual Studio에서 변경 내용을 테스트 합니다.**
+ **5단계: Visual Studio의 변경 내용을 테스트합니다.**
 
- 색 편집기는 확장 패키지를 다시 빌드하지 않고도 색의 라이브 변경 내용을 볼 수 있도록 Visual Studio의 실행 중인 인스턴스에 색 토큰을 일시적으로 적용할 수 있습니다. 이렇게 하려면 각 테마 열의 헤더에 있는 "이 테마를 실행 하 여 Visual Studio 창 실행" 단추를 클릭 합니다. 이 임시 테마는 VSIX 색 편집기를 닫을 때 사라집니다.
+ 색상 편집기는 확장 패키지를 다시 빌드하지 않고 Visual Studio의 실행 중인 인스턴스에 색상 토큰을 일시적으로 적용하여 색상에 대한 실시간 변경 내용을 볼 수 있습니다. 이렇게 하려면 각 테마 열의 헤더에 있는 "이 테마 적용" 단추를 클릭합니다. 이 임시 테마는 VSIX 컬러 편집기닫을 때 사라집니다.
 
  ![VSIX 색 편집기 적용](../../extensibility/internals/media/vsix-color-editor-apply.png "VSIX 색 편집기 적용")
 
- 변경 내용을 영구적으로 적용 하려면 .pkgdef 파일에 새 색을 추가 하 고 해당 색을 사용 하는 코드를 작성 한 후 Visual Studio 확장을 다시 빌드하고 다시 배포 합니다. Visual Studio 확장을 다시 빌드하면 새 색의 레지스트리 값을 나머지 테마에 병합 합니다. 그런 다음 Visual Studio를 다시 시작한 다음 UI를 확인 하 고 새 색상이 예상 대로 표시 되는지 확인 합니다.
+ 변경 내용을 영구적으로 만들려면 .pkgdef 파일에 새 색상을 추가하고 해당 색상을 사용하는 코드를 작성한 후 Visual Studio 확장을 다시 빌드하고 다시 배포합니다. Visual Studio 확장을 다시 빌드하면 새 색상의 레지스트리 값이 나머지 테마에 병합됩니다. 그런 다음 Visual Studio를 다시 실행하고 UI를 보고 새 색상이 예상대로 나타나는지 확인합니다.
 
-## <a name="notes"></a>참고
- 이 도구는 기존 Visual Studio 테마에 대 한 사용자 지정 색을 만들거나 사용자 지정 Visual Studio 테마의 색을 편집 하는 데 사용 됩니다. 전체 사용자 지정 Visual Studio 테마를 만들려면 visual studio 확장 갤러리에서 [Visual Studio 색 테마 편집기 확장](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) 을 다운로드 합니다.
+## <a name="notes"></a>메모
+ 이 도구는 기존 Visual Studio 테마에 대한 사용자 지정 색상을 만들거나 사용자 지정 Visual Studio 테마의 색상을 편집하는 데 사용됩니다. 완벽한 사용자 지정 Visual Studio 테마를 만들려면 Visual Studio 확장 갤러리에서 [Visual Studio 색상 테마 편집기 확장을](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) 다운로드합니다.
 
 ## <a name="sample-output"></a>샘플 출력
- **XML 색 출력**
+ **XML 색상 출력**
 
- 도구에서 생성 된 .xml 파일은 다음과 유사 합니다.
+ 도구에서 생성된 .xml 파일은 다음과 유사합니다.
 
 ```xml
 <Themes>
@@ -222,9 +222,9 @@ namespace MyCustomColors
 
 ```
 
- **.PKGDEF 색 출력**
+ **PKGDEF 컬러 출력**
 
- 도구에서 생성 하는 .pkgdef 파일은 다음과 유사 합니다.
+ 도구에서 생성된 .pkgdef 파일은 다음과 유사합니다.
 
 ```
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\CategoryName]
@@ -238,9 +238,9 @@ namespace MyCustomColors
 
 ```
 
- **C#리소스 키 래퍼**
+ **C# 리소스 키 래퍼**
 
- 도구에서 생성 되는 색 리소스 키는 다음과 유사 합니다.
+ 도구에서 생성되는 색상 리소스 키는 다음과 유사합니다.
 
 ```csharp
 namespace MyNamespace
@@ -269,7 +269,7 @@ namespace MyNamespace
 
  **WPF 리소스 사전 래퍼**
 
- 도구에서 생성 된 색 **ResourceDictionary** 키는 다음과 유사 합니다.
+ 도구에서 생성된 색상 **ResourceDictionary** 키는 다음과 유사합니다.
 
 ```xaml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

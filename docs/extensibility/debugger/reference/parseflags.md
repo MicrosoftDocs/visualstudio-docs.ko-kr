@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Microsoft Docs
+title: 파르세 플래그 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6123c6438defff596351fff3d1ba31ea52a19f28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc70fdd9fe1279e4d419a422b970eb3d3b07c65
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349930"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714113"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-식의 구문을 분석 하는 방법을 지정 합니다.
+식을 구문 분석하는 방법을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,25 +46,25 @@ public enum enum_PARSEFLAGS { 
 
 ## <a name="fields"></a>필드
  `PARSE_EXPRESSION`\
- 식 문 임을 나타냅니다.
+ 식이 문이 아님을 나타냅니다.
 
  `PARSE_FUNCTION_AS_ADDRESS`\
- 식을 구문 분석 (하 고 나중에 평가)는 주소로 임을 나타냅니다.
+ 식을 구문 분석(나중에 평가)할 수 있음을 나타냅니다.
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- 식이 디자인 타임 동안 구문 분석 되는 나타냅니다 (즉, 디자이너를 열 때).
+ 표현식이 디자인 시간(즉, 디자이너가 열려 있는 경우)에 구문 분석중임을 나타냅니다.
 
 ## <a name="remarks"></a>설명
- 매개 변수로 전달 합니다 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 하 고 [구문 분석](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 메서드.
+ [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 및 [구문 분석](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 메서드에 매개 변수로 전달되었습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 - [구문 분석](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

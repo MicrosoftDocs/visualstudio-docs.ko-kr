@@ -1,40 +1,40 @@
 ---
-title: 상태 표시줄 확장 | Microsoft Docs
+title: 상태 표시줄 확장 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c555c2a23b52d475b01fbf8cc2086167acc423dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342873"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711547"
 ---
 # <a name="extend-the-status-bar"></a>상태 표시줄 확장
-정보를 표시 하는 IDE의 아래쪽에 Visual Studio 상태 표시줄을 사용할 수 있습니다.
+IDE 하단의 Visual Studio 상태 표시줄을 사용하여 정보를 표시할 수 있습니다.
 
- 4 개 지역에서 정보 및 UI 상태 표시줄을 확장 하는 경우 표시할 수 있습니다: 피드백 영역, 진행률 표시줄, 애니메이션 영역 및 디자이너 영역입니다. 피드백 영역을 사용 하면 텍스트를 표시 하 고 표시 된 텍스트를 강조 표시할 수 있습니다. 진행률 표시줄 단기 실행 파일을 저장 하는 등의 작업에 대 한 증분 진행률을 보여 줍니다. 애니메이션 영역에는 장기 실행 작업 또는 솔루션의 여러 프로젝트 빌드 같은 결정 되지 않은 길이의 작업에 대 한 지속적으로 반복 애니메이션을 표시 합니다. 및 디자이너 영역 커서 위치의 줄 및 열 번호를 보여 줍니다.
+ 상태 표시줄을 확장하면 피드백 영역, 진행률 표시줄, 애니메이션 영역 및 디자이너 영역의 네 가지 영역에 정보와 UI를 표시할 수 있습니다. 피드백 영역을 사용하면 텍스트를 표시하고 표시된 텍스트를 강조 표시할 수 있습니다. 진행률 표시줄에는 파일 저장과 같은 단기 실행 작업에 대한 증분 진행률을 표시합니다. 애니메이션 영역에는 솔루션에서 여러 프로젝트를 빌드하는 것과 같이 장기 실행 작업 또는 미정 길이의 작업을 위해 연속 루프 애니메이션이 표시됩니다. 디자이너 영역은 커서 위치의 선 및 열 번호를 표시합니다.
 
- 상태 표시줄을 사용 하 여 가져올 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> 인터페이스 (에서 <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 서비스). 구현 하 여 창 프레임에 배치 하는 모든 개체 상태 표시줄 클라이언트 개체를 등록 하는 또한는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 인터페이스입니다. Visual Studio에 대 한 해당 창에 배치 하는 개체를 쿼리 창이 활성화 될 때마다는 `IVsStatusbarUser` 인터페이스입니다. 찾을 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 메서드 반환 되는 인터페이스 및 개체에 해당 메서드 내에서 상태 표시줄을 업데이트할 수 있습니다. 예를 들어 windows 문서를 사용할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 활성화 될 때 디자이너 영역에 대 한 정보를 업데이트 하는 방법입니다.
+ <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> (서비스에서) 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> 사용 하 여 상태 표시줄을 얻을 수 있습니다. 또한 창 프레임에 사이트에 있는 모든 개체는 인터페이스를 구현하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 상태 표시줄 클라이언트 개체로 등록할 수 있습니다. 창이 활성화될 때마다 Visual Studio는 인터페이스에 대해 해당 `IVsStatusbarUser` 창에 있는 개체를 쿼리합니다. 발견되면 반환된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 인터페이스에서 메서드를 호출하고 개체는 해당 메서드 내에서 상태 표시줄을 업데이트할 수 있습니다. 예를 들어 문서 창은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 이 메서드를 사용하여 디자이너 영역의 정보가 활성화될 때 업데이트할 수 있습니다.
 
- 다음 절차는 VSIX 프로젝트를 만들고 사용자 지정 메뉴 명령을 추가 하는 방법을 이해 한다고 가정 합니다. 정보를 참조 하세요 [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.
+ 다음 절차에서는 VSIX 프로젝트를 만들고 사용자 지정 메뉴 명령을 추가하는 방법을 이해한다고 가정합니다. 자세한 내용은 [메뉴 명령을 사용하여 확장 만들기를](../extensibility/creating-an-extension-with-a-menu-command.md)참조하십시오.
 
-## <a name="modify-the-status-bar"></a>상태 표시줄을 수정 합니다.
- 이 절차에서는 설정 된 텍스트, 정적 텍스트를 표시 하 고 상태 표시줄의 피드백 영역에 표시 된 텍스트를 강조 표시 하는 방법을 보여 줍니다.
+## <a name="modify-the-status-bar"></a>상태 표시줄 수정
+ 이 절차에서는 상태 표시줄의 피드백 영역에서 텍스트를 설정하고 받고, 정적 텍스트를 표시하고, 표시된 텍스트를 강조 표시하는 방법을 보여 주었습니다.
 
 ### <a name="read-and-write-to-the-status-bar"></a>상태 표시줄에 읽기 및 쓰기
 
-1. 라는 VSIX 프로젝트를 만듭니다 **TestStatusBarExtension** 라는 메뉴 명령을 추가 하 고 **TestStatusBarCommand**합니다.
+1. **테스트 상태BarExtension이라는** VSIX 프로젝트를 만들고 **TestStatusBarCommand라는**메뉴 명령을 추가합니다.
 
-2. *TestStatusBarCommand.cs*, 명령 처리기 메서드 코드를 바꿉니다 (`MenuItemCallback`) 다음을 사용 하 여:
+2. *TestStatusBarCommand.cs*명령 처리기 메서드 코드`MenuItemCallback`() 를 다음과 같은 값으로 바꿉니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ ms.locfileid: "66342873"
     }
     ```
 
-3. 코드를 컴파일하고 디버깅을 시작 합니다.
+3. 코드를 컴파일하고 디버깅을 시작합니다.
 
-4. 엽니다는 **도구** Visual Studio의 실험적 인스턴스에서 메뉴. 클릭 합니다 **TestStatusBarCommand 호출** 단추입니다.
+4. Visual Studio의 실험 인스턴스에서 **도구** 메뉴를 엽니다. 테스트 **상태 BarCommand 호출** 단추를 클릭합니다.
 
-     표시 상태 이제 읽기 표시줄에 텍스트 **상태 표시줄에 방금 작성 한 합니다.** 및 표시 되는 메시지 상자에는 동일한 텍스트를 포함 합니다.
+     상태 표시줄의 텍스트가 이제 **상태 표시줄에 방금 쓴** 것으로 표시됩니다. 표시되는 메시지 상자에 동일한 텍스트가 있습니다.
 
-### <a name="update-the-progress-bar"></a>업데이트 진행률 표시줄
+### <a name="update-the-progress-bar"></a>진행률 표시줄 업데이트
 
-1. 이 절차에서는 초기화 하 고 진행률 표시줄을 업데이트 하는 방법을 알아보겠습니다.
+1. 이 절차에서는 진행률 표시줄을 초기화하고 업데이트하는 방법을 보여 드리겠습니다.
 
-2. 엽니다는 *TestStatusBarCommand.cs* 바꾸고 파일을 `MenuItemCallback` 메서드를 다음 코드로:
+2. *TestStatusBarCommand.cs* 파일을 열고 메서드를 `MenuItemCallback` 다음 코드로 바꿉니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ ms.locfileid: "66342873"
     }
     ```
 
-3. 코드를 컴파일하고 디버깅을 시작 합니다.
+3. 코드를 컴파일하고 디버깅을 시작합니다.
 
-4. 엽니다는 **도구** Visual Studio의 실험적 인스턴스에서 메뉴. 클릭 **TestStatusBarCommand 호출** 단추입니다.
+4. Visual Studio의 실험 인스턴스에서 **도구** 메뉴를 엽니다. **테스트 상태 바명령 호출 단추를 클릭합니다.**
 
-     것을 확인할 수 상태 이제 읽기 표시줄에 텍스트 **진행률 표시줄을 작성 합니다.** 또한 20 초 동안 1 초 마다 업데이트 진행률 표시줄이 표시 됩니다. 그런 다음 상태 표시줄 및 진행률 표시줄 취소 됩니다.
+     상태 표시줄의 텍스트가 **진행률 표시줄에 쓰기를** 읽는 것을 볼 수 있습니다. 또한 진행률 표시줄이 20초 동안 매초 업데이트되는 것을 볼 수 있습니다. 그 후 상태 표시줄과 진행률 표시줄이 지워집니다.
 
-### <a name="display-an-animation"></a>애니메이션을 표시 합니다.
+### <a name="display-an-animation"></a>애니메이션 표시
 
-1. 상태 표시줄 (예: 솔루션에 여러 프로젝트 빌드) 장기 실행 작업을 나타내는 애니메이션을 반복에 표시 됩니다. 이 애니메이션에 표시 되지 않으면 올바른 했는지 확인 **도구가** > **옵션** 설정:
+1. 상태 표시줄에는 장기 실행 작업(예: 솔루션에서 여러 프로젝트 빌드)을 나타내는 루핑 애니메이션이 표시됩니다. 이 애니메이션이 표시되지 않으면 **도구** > **옵션** 설정이 올바른지 확인하십시오.
 
-     로 이동 합니다 **도구가** > **옵션** > **일반** 탭을 선택 취소 **클라이언트를 기반으로 하는 시각적 효과 자동 조정 성능**합니다. 다음 하위 옵션을 선택 **리치 클라이언트 시각적 효과 사용 하도록 설정**합니다. 이제 Visual Studio의 실험적 인스턴스에서 프로젝트를 빌드할 때 애니메이션을 볼 수 있어야 합니다.
+     **도구** > **옵션** > **일반** 탭으로 이동하여 **클라이언트 성능에 따라 시각적 환경을 자동으로 조정취소합니다.** 그런 다음 하위 옵션을 **확인하여 풍부한 클라이언트 시각적 환경 활성화.** 이제 실험적인 Visual Studio 인스턴스에서 프로젝트를 빌드할 때 애니메이션을 볼 수 있습니다.
 
-     이 절차에서는 프로젝트 또는 솔루션을 빌드를 나타내는 표준 Visual Studio 애니메이션이 표시 합니다.
+     이 절차에서는 프로젝트 또는 솔루션 빌드를 나타내는 표준 Visual Studio 애니메이션을 표시합니다.
 
-2. 엽니다는 *TestStatusBarCommand.cs* 바꾸고 파일을 `MenuItemCallback` 메서드를 다음 코드로:
+2. *TestStatusBarCommand.cs* 파일을 열고 메서드를 `MenuItemCallback` 다음 코드로 바꿉니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ ms.locfileid: "66342873"
     }
     ```
 
-3. 코드를 컴파일하고 디버깅을 시작 합니다.
+3. 코드를 컴파일하고 디버깅을 시작합니다.
 
-4. 엽니다는 **도구** 하 고 Visual Studio의 실험적 인스턴스에서 메뉴 **TestStatusBarCommand 호출**합니다.
+4. 시각적 스튜디오의 실험 인스턴스에서 **도구** 메뉴를 열고 **호출 테스트 StatusBarCommand를**클릭합니다.
 
-     메시지 상자에 표시 되 면 맨 오른쪽에 있는 상태 표시줄의 애니메이션도 표시 됩니다. 메시지 상자를 닫고, 애니메이션이 사라집니다.
+     메시지 상자가 표시되면 맨 오른쪽에 있는 상태 표시줄에도 애니메이션이 표시됩니다. 메시지 상자를 해제하면 애니메이션이 사라집니다.

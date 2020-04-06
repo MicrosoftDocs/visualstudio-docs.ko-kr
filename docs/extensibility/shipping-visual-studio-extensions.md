@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 확장 전달 | Microsoft Docs
+title: 비주얼 스튜디오 확장 배송 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,56 +7,56 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55c85a11d8bfba90f142a82efcd6d78fb0122f22
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338377"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700118"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 확장 전달
-확장 프로그램 개발을 완료 한 후 다른 컴퓨터에 설치 수, 친구 및 동료와 공유 또는 Visual Studio Marketplace에 게시 합니다. 이 섹션에서는 게시 하 고 확장 프로그램을 유지 하기 위해 수행 해야 하는 모든 항목 설명:.vsix 파일을 게시, 지역화, 및 업데이트를 사용 합니다.
+확장 프로그램을 완료한 후 다른 컴퓨터에 설치하거나 친구 및 동료와 공유하거나 Visual Studio 마켓플레이스에 게시할 수 있습니다. 이 섹션에서는 .vsix 파일 작업, 게시, 지역화 및 업데이트와 같은 확장프로그램을 게시하고 유지하기 위해 수행해야 하는 모든 작업에 대해 설명합니다.
 
-## <a name="working-with-vsix-extensions"></a>VSIX 확장을 사용 하 여 작업
- 빈 VSIX 프로젝트를 만들고 다음을 다른 항목 템플릿을 추가 하 여 VSIX 확장을 만들 수 있습니다. 자세한 내용은 [VSIX 프로젝트 템플릿](../extensibility/vsix-project-template.md)합니다.
+## <a name="working-with-vsix-extensions"></a>VSIX 확장 작업
+ 빈 VSIX 프로젝트를 만든 다음 다른 항목 템플릿을 추가하여 VSIX 확장을 만들 수 있습니다. 자세한 내용은 [VSIX 프로젝트 템플릿](../extensibility/vsix-project-template.md)을 참조하십시오.
 
- 패키지 프로젝트 템플릿, 템플릿, Vspackage, 프레임 워크 MEF (Managed Extensibility) 구성 요소 항목을 VSIX 형식을 사용할 수 있습니다 **도구 상자** 컨트롤, 어셈블리 및 사용자 지정 형식 (여기에 시작 페이지 사용자 지정 시각적 개체 Studio 2017)입니다. VSIX 형식은 파일 기반 배포를 사용합니다. VSIX 패키지에 대 한 자세한 내용은 참조 하십시오 [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)합니다.
+ VSIX 형식을 사용하여 프로젝트 템플릿, 항목 템플릿, VSPackage, MEF(관리되는 확장성 프레임워크) 구성 요소, **도구 상자** 컨트롤, 어셈블리 및 사용자 지정 형식을 패키징할 수 있습니다(Visual Studio 2017용 사용자 지정 시작 페이지 포함). VSIX 형식은 파일 기반 배포를 사용합니다. VSIX 패키지에 대한 자세한 내용은 [VSIX 패키지의 해부학을](../extensibility/anatomy-of-a-vsix-package.md)참조하십시오.
 
- VSIX 형식 코드 조각 기능을 지원 하지 않습니다. 전역 어셈블리 캐시 (GAC)에 또는 시스템 레지스트리에 쓰기와 같은 다른 시나리오도 지원 하지 않습니다. GAC에 설치의 레지스트리에서 작성 해야 할 경우 Windows 설치 관리자를 사용 해야 합니다. 자세한 내용은 [Windows에 대 한 확장 준비 Installer 배포](../extensibility/preparing-extensions-for-windows-installer-deployment.md)합니다.
+ VSIX 형식은 코드 조각 설치를 지원하지 않습니다. 또한 GAC(전역 어셈블리 캐시) 또는 시스템 레지스트리에 쓰기와 같은 특정 다른 시나리오도 지원하지 않습니다. 설치시 GAC 또는 레지스트리에 사용해야 하는 경우 Windows 설치 관리자를 사용해야 합니다. 자세한 내용은 [Windows 설치 관리자 배포에 대한 확장 준비 를](../extensibility/preparing-extensions-for-windows-installer-deployment.md)참조하십시오.
 
-## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>확장 프로그램을 Visual Studio Marketplace에 게시
- .Vsix 파일을 메일 또는 서버에 배치 하면 다른 사용자에 게 확장 프로그램을 배포할 수 있습니다. 하지만 가장 좋은 방법은 코드의 많은 사람들이 참여에 배치 하는 것은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)합니다. Visual Studio Marketplace 확장을 통해 Visual Studio 사용자에 게 사용할 수 있습니다 **확장 및 업데이트**합니다. 자세한 내용은 [Visual Studio 확장명 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)을 참조하세요.
+## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>비주얼 스튜디오 마켓플레이스에 확장 게시
+ .vsix 파일을 우편으로 보내거나 서버에 넣기만 하면 확장 프로그램을 다른 사람에게 배포할 수 있습니다. 그러나 많은 사람들의 손에 코드를 얻는 가장 좋은 방법은 Visual Studio [마켓 플레이스에](https://marketplace.visualstudio.com/vs)넣는 것입니다. 비주얼 스튜디오 마켓플레이스 확장은 확장 및 업데이트를 통해 Visual Studio 사용자가 사용할 수 **있습니다.** 자세한 내용은 [Visual Studio 확장 찾기 및 사용을](../ide/finding-and-using-visual-studio-extensions.md)참조하십시오.
 
- Visual Studio Marketplace에 확장을 업로드 하는 방법을 보여 주는 전체 예제를 참조 하세요. [연습: Visual Studio 확장 기능 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)합니다.
+ Visual Studio 마켓플레이스에 확장을 업로드하는 방법을 보여 주는 전체 예제는 [연습: Visual Studio 확장 게시를](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)참조하십시오.
 
 ## <a name="private-galleries"></a>Private Galleries
- 컨트롤, 템플릿 및 도구를 개발할 때 인트라넷의 개인 갤러리에 게시 하 여 조직과 공유할 수 있습니다. 자세한 내용은 [Private Galleries](../extensibility/private-galleries.md)를 참조하세요.
+ 컨트롤, 템플릿 및 도구를 개발할 때 인트라넷의 개인 갤러리에 게시하여 조직과 공유할 수 있습니다. 자세한 내용은 [개인 갤러리를](../extensibility/private-galleries.md)참조하십시오.
 
-## <a name="localizing-your-extension"></a>확장 프로그램을 지역화
- 다른 로캘에서 확장 프로그램 해제 하려는 경우이 지역화 하는 것이 좋습니다. 와 관련 된 내용을 설명은 참조 하세요 [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)합니다.
+## <a name="localizing-your-extension"></a>확장 지역화
+ 다른 로캘에서 확장을 릴리스하려는 경우 지역화하는 것이 좋습니다. 관련된 내용에 대한 설명은 [VSIX 패키지 지역화를](../extensibility/localizing-vsix-packages.md)참조하십시오.
 
-## <a name="updating-and-versioning-your-extension"></a>업데이트 및 버전 관리 확장 프로그램
- 확장 프로그램을 게시 한 후 한 번 업데이트 해야 할 때 제공 됩니다. Visual Studio Marketplace에서 게시 된 확장을 업데이트 하는 방법을 알아보려면 참조 [방법: 확장 업데이트](../extensibility/how-to-update-a-visual-studio-extension.md)합니다.
+## <a name="updating-and-versioning-your-extension"></a>확장 프로그램 업데이트 및 버전 업데이트
+ 확장 프로그램을 게시한 후 업데이트해야 하는 시간이 있습니다. Visual Studio 마켓플레이스에 게시된 확장을 업데이트하는 방법을 알아보려면 [확장 업데이트 방법을 참조하세요.](../extensibility/how-to-update-a-visual-studio-extension.md)
 
- Visual Studio의 여러 버전을 지원 하도록 확장 프로그램을 설정할 수 있습니다. 자세한 내용은 [Visual Studio의 여러 버전을 지 원하는](../extensibility/supporting-multiple-versions-of-visual-studio.md)합니다.
+ 여러 버전의 Visual Studio를 지원하도록 확장을 설정할 수 있습니다. 자세한 내용은 [여러 버전의 Visual Studio 를 참조하세요.](../extensibility/supporting-multiple-versions-of-visual-studio.md)
 
 ## <a name="related-topics"></a>관련 항목
 
 |제목|설명|
 |-----------|-----------------|
-|[VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)|VSIX 프로젝트 템플릿을 사용 하 여 사용자 지정 프로젝트 템플릿을 설치 하는 방법에 설명 합니다.|
-|[VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)|VSIX 패키지의 구성 요소를 설명합니다.|
-|[VSIX 프로젝트 템플릿](../extensibility/vsix-project-template.md)|패키지 및 확장을 게시 하는 방법에 대 한 단계별 지침을 제공 합니다.|
-|[VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)|Extension.vsixlangpack 파일을 사용 하 여 설치 프로세스에 대 한 지역화 된 텍스트를 제공 하는 방법에 설명 합니다.|
-|[방법: 확장 업데이트](../extensibility/how-to-update-a-visual-studio-extension.md)|시스템에서 확장을 업데이트 하는 방법 및 기존 Visual Studio 확장에 업데이트를 배포 하는 방법을 설명 합니다.|
-|[방법: VSIX 패키지에 종속성 추가](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX 배포 패키지에 대 한 참조를 추가 하는 방법에 설명 합니다.|
-|[Windows Installer 배포에 대한 확장 준비](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Windows Installer를 사용 하 여 확장 프로그램을 배포 하는 방법에 설명 합니다.|
-|[VSIX 패키지 서명](../extensibility/signing-vsix-packages.md)|VSIX 패키지에 서명 하는 방법에 설명 합니다.|
-|[전용 갤러리](../extensibility/private-galleries.md)|확장에 대 한 전용 갤러리를 만드는 방법에 설명 합니다.|
-|[여러 버전의 Visual Studio 지원](../extensibility/supporting-multiple-versions-of-visual-studio.md)|여러 버전의 Visual Studio에 확장 지원이 방법을 보여 줍니다.|
-|[Visual Studio 찾기](locating-visual-studio.md)|사용자 지정 확장 프로그램 배포를 위한 Visual Studio 인스턴스를 찾는 방법을 설명 합니다.|
+|[VSIX 프로젝트 템플릿 으로 시작하기](../extensibility/getting-started-with-the-vsix-project-template.md)|VSIX 프로젝트 템플릿을 사용하여 사용자 지정 프로젝트 템플릿을 설치하는 방법을 설명합니다.|
+|[VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)|VSIX 패키지의 구성 요소에 대해 설명합니다.|
+|[VSIX 프로젝트 템플릿](../extensibility/vsix-project-template.md)|확장을 패키징하고 게시하는 방법에 대한 단계별 지침을 제공합니다.|
+|[VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)|extension.vsixlangpack 파일을 사용하여 설치 프로세스에 지역화된 텍스트를 제공하는 방법을 설명합니다.|
+|[방법: 확장 업데이트](../extensibility/how-to-update-a-visual-studio-extension.md)|시스템에서 확장을 업데이트하는 방법과 기존 Visual Studio 확장에 업데이트를 배포하는 방법에 대해 설명합니다.|
+|[방법: VSIX 패키지에 종속성 추가](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX 배포 패키지에 참조를 추가하는 방법을 설명합니다.|
+|[Windows Installer 배포에 대한 확장 준비](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Windows 설치 관리자를 사용하여 확장을 배포하는 방법을 설명합니다.|
+|[VSIX 패키지 서명](../extensibility/signing-vsix-packages.md)|VSIX 패키지에 서명하는 방법을 설명합니다.|
+|[전용 갤러리](../extensibility/private-galleries.md)|확장을 위한 개인 갤러리를 만드는 방법을 설명합니다.|
+|[여러 버전의 Visual Studio 지원](../extensibility/supporting-multiple-versions-of-visual-studio.md)|확장 프로그램이 여러 버전의 Visual Studio를 지원하도록 하는 방법을 보여 줍니다.|
+|[Visual Studio 찾기](locating-visual-studio.md)|사용자 지정 확장 배포를 위해 Visual Studio 인스턴스를 찾는 방법을 설명합니다.|

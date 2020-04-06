@@ -1,5 +1,5 @@
 ---
-title: SccCheckout 함수 | Microsoft Docs
+title: Scc체크아웃 기능 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5160a2600a8eb3250702dd0836d812b668a3d1b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6ed809e33a80bf2903c88550e97b28b1e0178bcd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333884"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701101"
 ---
-# <a name="scccheckout-function"></a>SccCheckout 함수
-정규화 된 파일 이름 목록이 들어이 함수 체크 로컬 드라이브에 있습니다. 체크 아웃 되 고 모든 파일에 주석을 적용 됩니다. 주석 인수 수를 `null` 문자열입니다.
+# <a name="scccheckout-function"></a>Scc체크아웃 기능
+정규화된 파일 이름 목록이 주어지면 이 함수는 해당 파일을 로컬 드라이브로 체크 아웃합니다. 주석은 체크 아웃중인 모든 파일에 적용됩니다. 주석 인수는 문자열일 `null` 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,47 +39,47 @@ SCCRTN SccCheckout (
 ### <a name="parameters"></a>매개 변수
  pvContext
 
-[in] 원본 제어 플러그 인 상황에 맞는 구조입니다.
+【인】 소스 제어 플러그인 컨텍스트 구조입니다.
 
- hWnd
+ Hwnd
 
-[in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.
+【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
- nFiles
+ n파일
 
-[in] 체크 아웃할 수를 선택 하는 파일 수입니다.
+【인】 체크 아웃할 파일 수입니다.
 
- lpFileNames
+ lpFile 이름
 
-[in] 체크 아웃할 파일의 정규화 된 로컬 경로 이름 배열입니다.
+【인】 체크 아웃할 파일의 정규화된 로컬 경로 이름 배열입니다.
 
  lpComment
 
-[in] 각 체크 아웃 되 고 선택한 파일에 적용할 주석 처리 합니다.
+【인】 체크 아웃중인 선택한 각 파일에 적용할 주석입니다.
 
- fOptions
+ f옵션
 
-[in] 명령 플래그 (참조 [특정 명령에 사용 되는 비트](../extensibility/bitflags-used-by-specific-commands.md)).
+【인】 명령 [플래그(특정 명령에서 사용되는 비트 플래그](../extensibility/bitflags-used-by-specific-commands.md)참조).
 
- pvOptions
+ pv옵션
 
-[in] 원본 제어 플러그 인에 대 한 옵션입니다.
+【인】 소스 제어 플러그인 관련 옵션.
 
 ## <a name="return-value"></a>반환 값
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:
+ 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|체크 아웃 했습니다.|
-|SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 코드 제어 없습니다.|
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다. 재시도 사용 하는 것이 좋습니다.|
-|SCC_E_NOTAUTHORIZED|사용자는이 작업을 수행할 수 없습니다.|
-|SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다. 파일 체크 아웃 했습니다.|
-|SCC_E_ALREADYCHECKEDOUT|사용자가 이미 파일을 체크 아웃 합니다.|
-|SCC_E_FILEISLOCKED|새 버전 생성 등의 금지 된 파일이 잠겨 있습니다.|
-|SCC_E_FILEOUTEXCLUSIVE|다른 사용자는이 파일에는 단독 체크 아웃을 수행 했습니다.|
-|SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|
+|SCC_OK|체크 아웃이 성공했습니다.|
+|SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 코드 제어하에 있지 않습니다.|
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 소스 제어 시스템에 액세스하는 데 문제가 있었습니다. 다시 시도하는 것이 좋습니다.|
+|SCC_E_NOTAUTHORIZED|사용자는 이 작업을 수행할 수 없습니다.|
+|SCC_E_NONSPECIFICERROR|비특정 오류입니다. 파일이 체크 아웃되지 않았습니다.|
+|SCC_E_ALREADYCHECKEDOUT|사용자가 이미 파일을 체크 아웃했습니다.|
+|SCC_E_FILEISLOCKED|파일이 잠겨 새 버전을 만들 수 없습니다.|
+|SCC_E_FILEOUTEXCLUSIVE|다른 사용자가 이 파일에 대한 단독 체크 아웃을 수행했습니다.|
+|SCC_I_OPERATIONCANCELED|작업이 완료되기 전에 취소되었습니다.|
 
-## <a name="see-also"></a>참고자료
-- [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
-- [특정 명령에 사용 되는 비트](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>참조
+- [소스 제어 플러그인 API 기능](../extensibility/source-control-plug-in-api-functions.md)
+- [특정 명령에서 사용되는 비트 플래그](../extensibility/bitflags-used-by-specific-commands.md)

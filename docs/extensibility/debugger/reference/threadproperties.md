@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Microsoft Docs
+title: 스레드 속성 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316177"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713428"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-스레드 속성을 설명합니다.
+스레드의 속성을 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,37 +53,37 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>멤버
  `dwFields`\
- 플래그의 조합을 합니다 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 이 구조의 필드는 유효한 설명 하는 열거형입니다.
+ 이 구조의 어떤 필드가 유효한지 설명하는 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 열거형의 플래그 조합입니다.
 
  `dwThreadId`\
- 스레드 id입니다.
+ 스레드 ID입니다.
 
  `dwSuspendCount`\
- 스레드 수를 일시 중단 합니다.
+ 스레드 일시 중단 카운트입니다.
 
  `dwThreadState`\
- 값을 [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) 운영 스레드의 상태를 나타내는 열거형입니다.
+ 스레드 [상태](../../../extensibility/debugger/reference/threadstate.md) 열거형의 값으로 운영 스레드의 상태를 나타냅니다.
 
  `bstrPriority`\
- 스레드 우선 순위;를 지정 하는 문자열 예를 들어, "위에 Normal", "Normal" 또는 "시간이 중요 한"입니다.
+ 스레드 우선 순위를 지정하는 문자열입니다. 예를 들어 "정상 이상", "정상" 또는 "시간 중요"를 예로 들 수 있습니다.
 
  `bstName`\
  스레드 이름입니다.
 
  `bstrLocation`\
- 일반적으로 실행이 중단 현재 메서드의 이름으로 표시 된 스레드 위치 (일반적으로 최상위 스택 프레임)입니다.
+ 스레드 위치(일반적으로 최상위 스택 프레임)는 일반적으로 실행이 현재 중지된 메서드의 이름으로 표시됩니다.
 
 ## <a name="remarks"></a>설명
- 이 구조에 대 한 호출에 의해 채워진 합니다 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 메서드. 따라서 반환 된 정보는 일반적으로 채우는 사용 합니다 **스레드** 창입니다.
+ 이 구조는 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 메서드에 대 한 호출에 의해 채워져 있습니다. 이렇게 반환되는 정보는 일반적으로 **스레드** 창을 채우는 데 사용됩니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)

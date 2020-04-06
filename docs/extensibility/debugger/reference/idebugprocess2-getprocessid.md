@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetProcessId | Microsoft Docs
+title: IDebugProcess2::GetProcessId | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetProcessId
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1759563f9f379a878f987662df2cd380ec0532c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 12e575979e5bd1527dfa0d8e15b290d6b78e36ff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309503"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723910"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
-이 프로세스에 대 한 GUID를 가져옵니다.
+이 프로세스에 대한 GUID를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int GetProcessId(
 
 ## <a name="parameters"></a>매개 변수
 `pguidProcessId`\
-[out] 이 프로세스에 대 한 GUID를 반환합니다.
+【아웃】 이 프로세스에 대한 GUID를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 전역적으로 고유 식별자 (GUID) 시스템에서 실행 되는 다른 모든 프로세스에서이 프로세스를 식별 합니다.
+ GUID(전역 고유 식별자)는 시스템에서 실행되는 다른 모든 프로세스에서 이 프로세스를 식별합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

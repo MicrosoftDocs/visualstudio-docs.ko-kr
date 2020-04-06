@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Continue | Microsoft Docs
+title: IDebugProgram2::계속 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Continue
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c7ea051c9753f6149802c9e92534dd9ee1d8735
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6d04445a7a1c444f30a0ef5c156dcd7ad744c6f1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319386"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723069"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
-중지 된 상태에서이 프로그램 실행을 계속 합니다. 이전 실행 상태 (예: 단계)은 유지, 프로그램이 다시 실행을 시작 하 고 있습니다.
+중지된 상태에서 이 프로그램을 계속 실행합니다. 이전 실행 상태(예: 단계)가 유지되고 프로그램이 다시 실행하기 시작합니다.
 
 > [!NOTE]
-> 이 메서드는 사용 되지 않습니다. 사용 된 [계속](../../../extensibility/debugger/reference/idebugprocess3-continue.md) 메서드 대신 합니다.
+> 이 메서드는 더 이상 사용되지 않습니다. 대신 [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) 메서드를 사용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,17 +43,17 @@ int Continue( 
 ```
 
 ## <a name="parameters"></a>매개 변수
-`pThread` [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 스레드를 나타내는 개체입니다.
+`pThread`【인】 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 디버깅 중인 프로그램 수 또는 중지 이벤트를 생성 하는 프로그램에 관계 없이이 프로그램에서 호출 됩니다. 구현 (예: 단계)를 실행 상태로 유지 하 고 이전 실행을 완료 하기 전에 중지 되지 것 처럼 계속 실행 해야 합니다. 즉,이 프로그램에서 스레드 건너뛰기 작업을 수행 중 이었던 작업 및 다른 프로그램 중지 하 고이 메서드를 호출한 다음 중지 되었습니다, 프로그램이 원래 건너뛰기 작업을 완료 해야 합니다.
+ 이 메서드는 디버깅 중인 프로그램 수 또는 중지 이벤트를 생성한 프로그램에 관계없이 이 프로그램에서 호출됩니다. 구현은 이전 실행 상태(예: 단계)를 유지하고 이전 실행을 완료하기 전에 중지한 적이 없는 것처럼 실행을 계속해야 합니다. 즉, 이 프로그램의 스레드가 스텝오버 작업을 수행하고 있고 다른 프로그램이 중지되어 중지된 다음 이 메서드가 호출된 경우 프로그램이 원래 단계별 작업을 완료해야 합니다.
 
 > [!WARNING]
-> Stopping 이벤트 또는 직접 (동기) 이벤트를 전송 하지 마십시오 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.
+> 이 호출을 처리하는 동안 중지 이벤트 또는 즉각적인(동기식) 이벤트를 [Event에](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 보내지 마십시오. 그렇지 않으면 디버거가 멈출 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
