@@ -6,17 +6,17 @@ helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 701700ba9d5c6db1e5858a2419e1b2c0fa950ae5
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: f345bdbd3cf5858d495937c743b580abf5e3dd50
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301586"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701588"
 ---
 # <a name="register-and-unregister-vspackages"></a>VS패키지 등록 및 등록 취소
 특성을 사용하여 VSPackage를 등록하지만
@@ -121,5 +121,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPackage](../extensibility/internals/vspackages.md)

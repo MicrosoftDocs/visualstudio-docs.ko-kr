@@ -1,5 +1,5 @@
 ---
-title: QUERYCHANGESFUNC | Microsoft Docs
+title: 쿼리변경스FUNC | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac0003d26296a25659debbab3352e4e37cbf2ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334405"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701640"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
-이에서 사용 하는 콜백 함수는 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 파일 이름의 컬렉션을 열거 하 고 각 파일의 상태를 확인 하는 작업입니다.
+이 콜백 함수는 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 작업에서 파일 이름 컬렉션을 등록하고 각 파일의 상태를 확인하는 데 사용됩니다.
 
- 합니다 `SccQueryChanges` 목록을 파일에 대 한 포인터를 지정 하는 함수는 `QUERYCHANGESFUNC` 콜백 합니다. 소스 제어 플러그 인 지정된 된 목록을 열거 하 고 목록에서 각 파일에 대 한 (이 콜백)을 통해 상태를 제공 합니다.
+ 함수에는 `SccQueryChanges` 파일 목록과 콜백에 대한 `QUERYCHANGESFUNC` 포인터가 제공됩니다. 소스 제어 플러그인은 지정된 목록을 열거하고 목록의 각 파일에 대해 (이 콜백을 통해) 상태를 제공합니다.
 
 ## <a name="signature"></a>서명
 
@@ -37,23 +37,23 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="parameters"></a>매개 변수
  pvCallerData
 
-[in] 합니다 `pvCallerData` (IDE) 호출자가 매개 변수 전달 [SccQueryChanges](../extensibility/sccquerychanges-function.md)합니다. 소스 제어 플러그 인이 값의 콘텐츠에 대 한 가정을 하지 확인 해야 합니다.
+【인】 `pvCallerData` 호출자(IDE)를 통해 [SccQueryChanges로](../extensibility/sccquerychanges-function.md)전달된 매개 변수입니다. 소스 제어 플러그인은 이 값의 내용에 대해 가정하지 않아야 합니다.
 
- pChangesData
+ p변경데이터
 
-[in] 에 대 한 포인터를 [QUERYCHANGESDATA 구조](#LinkQUERYCHANGESDATA) 파일에 변경 내용을 설명 하는 구조입니다.
+【인】 파일의 변경 내용을 설명하는 [QUERYCHANGESDATA 구조에](#LinkQUERYCHANGESDATA) 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
- IDE에는 적절 한 오류 코드를 반환합니다.
+ IDE는 적절한 오류 코드를 반환합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|계속 처리 합니다.|
-|SCC_I_OPERATIONCANCELED|처리를 중지 합니다.|
-|SCC_E_xxx|적절 한 SCC 오류 처리를 중지 해야 합니다.|
+|SCC_OK|처리를 계속합니다.|
+|SCC_I_OPERATIONCANCELED|처리를 중지합니다.|
+|SCC_E_xxx|적절한 SCC 오류는 처리를 중지해야 합니다.|
 
-## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 구조
- 각 파일에 전달 된 구조체는 다음과 같습니다.
+## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a>쿼리 변경데이터 구조
+ 각 파일에 대해 전달된 구조는 다음과 같습니다.
 
 ```cpp
 struct QUERYCHANGESDATA_A
@@ -75,28 +75,28 @@ struct QUERYCHANGESDATA_W
 };
 ```
 
- dwSize 바이트 단위로이 구조체의 크기입니다.
+ dwSize 이 구조의 크기(바이트)입니다.
 
- 이 항목에 대 한 원래 파일 이름이 lpFileName 합니다.
+ lpFileName 이 항목의 원래 파일 이름입니다.
 
- dwChangeType 파일의 나타내는 상태 코드:
+ dwChangeType 코드 파일의 상태를 나타내는:
 
 |코드|설명|
 |----------|-----------------|
-|`SCC_CHANGE_UNKNOWN`|변경 된 내용을 확인할 수 없습니다.|
-|`SCC_CHANGE_UNCHANGED`|이 파일의 이름이 변경 되지 않았습니다.|
-|`SCC_CHANGE_DIFFERENT`|다른 id 사용 하 여 파일 이름이 같은 데이터베이스에 존재 하지만 합니다.|
-|`SCC_CHANGE_NONEXISTENT`|파일에는 로컬로 또는 데이터베이스에 존재 하지 않습니다.|
-|`SCC_CHANGE_DATABASE_DELETED`|데이터베이스에서 삭제 하는 파일입니다.|
-|`SCC_CHANGE_LOCAL_DELETED`|파일을 로컬로 삭제 되지만 파일이 데이터베이스에 여전히 존재 합니다. 이 결정할 수 없는 경우 반환 `SCC_CHANGE_DATABASE_ADDED`합니다.|
-|`SCC_CHANGE_DATABASE_ADDED`|파일은 데이터베이스에 추가 되지만 로컬로 존재 하지 않습니다.|
-|`SCC_CHANGE_LOCAL_ADDED`|파일은 데이터베이스에 존재 하지 않습니다 하 고 새 로컬 파일입니다.|
-|`SCC_CHANGE_RENAMED_TO`|파일에서 데이터베이스를 이동 하거나 이름이 바뀐 `lpLatestName`합니다.|
-|`SCC_CHANGE_RENAMED_FROM`|파일의 데이터베이스에서 이동 하거나 이름이 바뀐 `lpLatestName`는 경우이 추적 하려면 비용이 너무 많이 반환 다른 플래그와 같은 `SCC_CHANGE_DATABASE_ADDED`합니다.|
+|`SCC_CHANGE_UNKNOWN`|변경된 내용을 알 수 없습니다.|
+|`SCC_CHANGE_UNCHANGED`|이 파일의 이름이 변경되지 않습니다.|
+|`SCC_CHANGE_DIFFERENT`|ID가 다르지만 이름이 같은 파일이 데이터베이스에 있습니다.|
+|`SCC_CHANGE_NONEXISTENT`|파일이 데이터베이스 또는 로컬에 존재하지 않습니다.|
+|`SCC_CHANGE_DATABASE_DELETED`|데이터베이스에서 삭제된 파일입니다.|
+|`SCC_CHANGE_LOCAL_DELETED`|파일은 로컬로 삭제되었지만 파일은 데이터베이스에 여전히 존재합니다. 이 것을 확인할 수 `SCC_CHANGE_DATABASE_ADDED`없는 경우 을 반환합니다.|
+|`SCC_CHANGE_DATABASE_ADDED`|데이터베이스에 추가되었지만 로컬로 존재하지 않는 파일입니다.|
+|`SCC_CHANGE_LOCAL_ADDED`|파일이 데이터베이스에 없고 새 로컬 파일입니다.|
+|`SCC_CHANGE_RENAMED_TO`|파일 이름이 바뀌거나 데이터베이스에서 로 `lpLatestName`이동했습니다.|
+|`SCC_CHANGE_RENAMED_FROM`|에서 데이터베이스에서 `lpLatestName`이름이 바뀌거나 이동된 파일입니다. 추적하기에 너무 비쌀 경우 와 같은 `SCC_CHANGE_DATABASE_ADDED`다른 플래그를 반환합니다.|
 
- 이 항목에 대 한 현재 파일 이름 lpLatestName입니다.
+ lpLatestName 이 항목의 현재 파일 이름입니다.
 
-## <a name="see-also"></a>참고자료
-- [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
+## <a name="see-also"></a>참조
+- [IDE에서 구현한 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [오류 코드](../extensibility/error-codes.md)

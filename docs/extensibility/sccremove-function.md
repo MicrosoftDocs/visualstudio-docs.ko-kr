@@ -1,5 +1,5 @@
 ---
-title: SccRemove 함수 | Microsoft Docs
+title: 스크리지 기능 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ff7299868b96aedb7cc096b4e939a0f8015aeb8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 17889d50dbdcf68dd4cca161d6703b8b6d69ad47
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720783"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700449"
 ---
 # <a name="sccremove-function"></a>SccRemove 함수
-이 함수는 소스 제어 시스템에서 파일을 삭제 합니다.
+이 함수는 소스 제어 시스템에서 파일을 삭제합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,48 +39,48 @@ SCCRTN SccRemove(
 #### <a name="parameters"></a>매개 변수
  pvContext
 
-진행 소스 제어 플러그 인 컨텍스트 구조입니다.
+【인】 소스 제어 플러그인 컨텍스트 구조입니다.
 
- hWnd
+ Hwnd
 
-진행 소스 제어 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.
+【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
- n
+ n파일
 
-진행 @No__t_0 배열에 지정 된 파일 수입니다.
+【인】 배열에 지정된 파일 `lpFileNames` 수입니다.
 
- lpFileNames 이름
+ lpFile 이름
 
-진행 제거할 파일의 정규화 된 로컬 경로 이름 배열입니다.
+【인】 제거할 파일의 정규화된 로컬 경로 이름 배열입니다.
 
  lpComment
 
-진행 제거 되는 각 파일에 적용할 설명입니다.
+【인】 제거되는 각 파일에 적용할 주석입니다.
 
- fOptions
+ f옵션
 
-진행 명령 플래그 (사용 되지 않음).
+【인】 명령 플래그(사용되지 않는).
 
- pvOptions
+ pv옵션
 
-진행 원본 제어 플러그 인 관련 옵션입니다.
+【인】 소스 제어 플러그인 관련 옵션.
 
-## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
+## <a name="return-value"></a>Return Value
+ 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|제거 했습니다.|
-|SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 제어에서 관리 되지 않습니다.|
-|SCC_E_OPNOTSUPPORTED|소스 제어 시스템에서이 작업을 지원 하지 않습니다.|
-|SCC_E_ISCHECKEDOUT|현재 사용자가 체크 아웃 했으므로 파일을 제거할 수 없습니다.|
-|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 원본 제어 시스템에 액세스 하는 동안 문제가 발생 했습니다.|
-|SCC_E_NOTAUTHORIZED|사용자가이 작업을 수행할 수 없습니다.|
-|SCC_E_NONSPECIFICERROR|일반 오류입니다. 파일이 제거 되지 않았습니다.|
-|SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|
+|SCC_OK|제거에 성공했습니다.|
+|SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 제어하에 있지 않습니다.|
+|SCC_E_OPNOTSUPPORTED|소스 제어 시스템은 이 작업을 지원하지 않습니다.|
+|SCC_E_ISCHECKEDOUT|사용자가 현재 파일을 체크 아웃했기 때문에 파일을 제거할 수 없습니다.|
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 소스 제어 시스템에 액세스하는 데 문제가 있었습니다.|
+|SCC_E_NOTAUTHORIZED|사용자는 이 작업을 수행할 수 없습니다.|
+|SCC_E_NONSPECIFICERROR|비특이적 오류; 제거되지 않았습니다.|
+|SCC_I_OPERATIONCANCELED|작업이 완료되기 전에 취소되었습니다.|
 
-## <a name="remarks"></a>주의
- 이 함수는 소스 제어 시스템에서 파일을 제거 하지만 사용자의 로컬 하드 드라이브에서 파일을 삭제 하지는 않습니다.
+## <a name="remarks"></a>설명
+ 이 기능은 소스 제어 시스템에서 파일을 제거하지만 사용자의 로컬 하드 드라이브에서 파일을 삭제하지는 않습니다.
 
 ## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

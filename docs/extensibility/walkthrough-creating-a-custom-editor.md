@@ -1,50 +1,50 @@
 ---
-title: '연습: 사용자 지정 편집기 만들기 | Microsoft Docs'
+title: '연습: 사용자 지정 편집기 만들기 | 마이크로 소프트 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eca6bc68accfd5c33e439ddfc5709943be7b549e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7eb376637fd72f3856415ee2527ec622fea02950
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312757"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697677"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>연습: 사용자 지정 편집기 만들기
-VSPackage 프로젝트 템플릿은에서 간단한 사용자 지정 편집기를 만들 수 있습니다 C++입니다. VSPackage 프로젝트 템플릿은 C# 또는 Visual Basic 프로젝트를 더 이상 지원합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.
+VSPackage 프로젝트 템플릿은 C++에서 간단한 사용자 지정 편집기를 만들 수 있습니다. VSPackage 프로젝트 템플릿은 더 이상 C# 또는 시각적 기본 프로젝트를 지원하지 않습니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)를 참조하십시오.
 
-## <a name="prerequisites"></a>전제 조건
- 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.
+## <a name="prerequisites"></a>사전 요구 사항
+ 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK 설치를](../extensibility/installing-the-visual-studio-sdk.md)참조하십시오.
 
-## <a name="the-visual-studio-package-project-template"></a>Visual Studio 패키지 프로젝트 템플릿
- Visual Studio 패키지 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 합니다  **C++ 확장성** 폴더입니다.
+## <a name="the-visual-studio-package-project-template"></a>비주얼 스튜디오 패키지 프로젝트 템플릿
+ **C++ 확장성** 폴더 아래의 **새 프로젝트** 대화 상자에서 Visual Studio 패키지 프로젝트 템플릿을 찾을 수 있습니다.
 
-### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Visual Studio 패키지 템플릿을 사용 하 여 VSPackage를 만들려면
+### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Visual Studio 패키지 템플릿을 사용하여 VSPackage를 만들려면
 
-1. Visual Studio 패키지 템플릿을 사용 하 여 프로젝트를 만듭니다.
+1. Visual Studio 패키지 템플릿을 사용하여 프로젝트를 만듭니다.
 
-2. 선택 된 **사용자 지정 편집기** 옵션을 클릭 **다음**합니다. 합니다 **편집기 옵션** 페이지가 나타납니다.
+2. 사용자 **지정 편집기** 옵션을 선택하고 다음 을 **클릭합니다.** **편집기 옵션** 페이지가 나타납니다.
 
-3. 편집기의 이름을 입력 합니다 **편집기 이름을** 상자입니다. 편집기를 사용 하 여 연결 하려는 파일 확장명을 입력 합니다 **파일 확장명** 상자입니다. 편집기는이 확장을 사용 하 여 파일 수 있습니다. 파일 확장명은 Windows에만 Visual Studio에 등록 됩니다. 편집기를 사용 하 여 만든 새 문서에 대 한 기본 파일 이름을 입력 합니다 **기본 파일 이름은** 상자입니다.
+3. **편집기 이름** 상자에 편집기 이름을 입력합니다. 파일 확장자 상자에 편집기와 연결하려는 **파일** 확장명익을 입력합니다. 이 확장자 파일에서 편집기에서 사용할 수 있습니다. 파일 확장은 Windows용이 아닌 Visual Studio에만 등록됩니다. 기본 파일 이름 상자에 편집기와 함께 만든 새 문서의 **기본 파일 이름을** 입력합니다.
 
 4. 지정한 폴더에 VSPackage를 만들려면 **마침** 을 클릭합니다.
 
-### <a name="to-test-your-custom-editor"></a>사용자 지정 편집기를 테스트 하려면
+### <a name="to-test-your-custom-editor"></a>사용자 지정 편집기를 테스트하려면
 
-1. 에 **파일** 메뉴에서 **새로 만들기** 을 클릭 한 다음 **파일**합니다.
+1. **파일** 메뉴에서 **새로** 를 가리킨 다음 **파일**을 클릭합니다.
 
-2. 에 **설치 된 템플릿** 창의 **새 파일** 대화 상자에서 파일 템플릿을 다음 파일 형식에 등록 합니다.
+2. **새 파일** 대화 상자의 **설치된 템플릿** 창에서 파일 템플릿을 선택한 다음 등록한 파일 형식을 선택합니다.
 
-3. 클릭 **열고** 를 보고 문서를 편집 합니다.
+3. **열기를** 클릭하여 문서를 보고 편집합니다.
 
-     편집기는 잘라내기 및 붙여넣기, 찾기 및 바꾸기, 및 오픈 로드 작업을 지원합니다.
+     편집기는 잘라내기 및 붙여넣기, 찾기 및 바꾸기 및 오픈 및 로드 작업을 지원합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [VSPackage](../extensibility/internals/vspackages.md)

@@ -3,17 +3,17 @@ title: 비주얼 스튜디오를 위한 이미지와 아이콘 | 마이크로 �
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e449fb30bd95319a46d1db50da63778f6800a70
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: dfef803d2bffb19cc54974465c7892b4d68ff3d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301598"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699044"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio의 이미지 및 아이콘
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>비주얼 스튜디오에서 이미지 사용
@@ -258,7 +258,7 @@ ms.locfileid: "79301598"
 
 - 인텔리센스 내의 아이템 을 차별화하기 위해
 
-### <a name="accessibility"></a>접근성
+### <a name="accessibility"></a>액세스 가능성
  Visual Studio 규정 준수 지침에서는 제품에 체크 인된 모든 아이콘이 색상 및 대비에 대한 접근성 요구 사항을 통과하도록 요구합니다. 시각적 언어 팔레트의 색상이 테스트되었으며 이러한 요구 사항을 충족합니다.
 
 #### <a name="color-inversion-for-dark-themes"></a>어두운 테마에 대한 색상 반전
@@ -269,7 +269,7 @@ ms.locfileid: "79301598"
 ### <a name="base-palette"></a>베이스 팔레트
  모든 표준 아이콘에는 세 가지 기본 색상이 포함되어 있습니다. 아이콘에는 3D 도구 아이콘에 대해 하나 또는 두 개의 예외가 있는 그라데이션이나 그림자가 포함되어 있지 않습니다.
 
-|사용|속성|값(라이트 테마)|견본|예제|
+|사용|이름|값(라이트 테마)|견본|예제|
 |-----------|----------|---------------------------|------------|-------------|
 |배경/어둡게|VS BG|424242 / 66,66,66|![견본 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![기본 색상표 예](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |전경/라이트|VS FG|F0EFF1 / 240,239,241|![견본 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -282,7 +282,7 @@ ms.locfileid: "79301598"
 #### <a name="action-modifiers"></a>작업 수정자
  아래 네 가지 색상은 작업 수정자에 필요한 작업 유형을 나타냅니다.
 
-|사용|속성|값(모든 테마)|견본|
+|사용|이름|값(모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |Positive|VS 액션 그린|388A34 / 56,138,52|![견본 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negative|VS 액션 레드|A1260D / 161,38,13|![견본 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -325,14 +325,14 @@ ms.locfileid: "79301598"
 
 #### <a name="folder"></a>폴더
 
-|사용|속성|값(모든 테마)|견본|예제|
+|사용|이름|값(모든 테마)|견본|예제|
 |-----------|----------|--------------------------|------------|-------------|
 |폴더|폴더|DCB67A / 220,182,122|![견본 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![폴더 색 아이콘](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>비주얼 스튜디오 언어
  Visual Studio에서 사용할 수 있는 각 공통 언어 또는 플랫폼에는 관련 색상이 있습니다. 이러한 색상은 기본 아이콘 또는 복합 아이콘의 오른쪽 위 모서리에 나타나는 언어 수정자에 사용됩니다.
 
-|사용|속성|값(모든 테마)|견본|
+|사용|이름|값(모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF 블루|0095D7 / 0,149,215|![견본 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP 퍼플|9B4F96 / 155,79,150|![견본 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -354,7 +354,7 @@ ms.locfileid: "79301598"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 아이콘은 전용 색상 팔레트를 사용합니다. 이러한 색상은 사용자가 IntelliSense 팝업 목록에서 다른 항목을 빠르게 구분하는 데 사용됩니다.
 
-|사용|속성|값(모든 테마)|견본|
+|사용|이름|값(모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |클래스, 이벤트|VS 액션 오렌지|C27D1A / 194,125,26|![견본 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |확장 방법, 방법, 모듈, 대리자|VS 액션 퍼플|652D90 / 101,45,144|![견본 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -369,10 +369,10 @@ ms.locfileid: "79301598"
 |![IntelliSense 클래스 아이콘](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")<br />클래스|![IntelliSense Private 이벤트 아이콘](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")<br />비공개 이벤트|![IntelliSense 대리자 아이콘](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")<br />대리자(delegate)|![IntelliSense 메서드 친구 아이콘](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")<br />메소드 친구|![필드 아이콘](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")<br />필드|
 |![IntelliSense 보호된 열거형 항목 아이콘](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")<br />보호된 열거형 항목|![intellisense 개체 아이콘](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "42_IntelliSenseObject 0405-42_IntelliSenseObject")<br />Object|![IntelliSense 템플릿 아이콘](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")<br />템플릿|![IntelliSense 예외 바로 가기 아이콘](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")<br />예외 바로 가기||
 
-### <a name="notifications"></a>공지
+### <a name="notifications"></a>알림
  Visual Studio의 알림은 상태를 나타내는 데 사용됩니다. 알림 팔레트는 다음과 같은 네 가지 색상과 검은색 또는 흰색 전경 채우기 옵션을 사용하여 다음과 같은 상태 수준으로 알림을 정의합니다.
 
-|사용|속성|값(모든 테마)|견본|
+|사용|이름|값(모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |상태: 중립|알림 파란색(VS 파란색)|1BA1E2 / 27,161,226|![견본 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |상태: 양수|알림 녹색(VS 녹색)|339933 / 51,153,51|![견본 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -390,7 +390,7 @@ ms.locfileid: "79301598"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  일반적으로 Visual Studio Online은 브라우저에서 호스팅되는 기능으로 구성됩니다. 색상은 환경에 따라 다르지만 스타일은 동일하게 유지됩니다.
 
-|그룹|사용|속성|값(모든 테마)|견본|
+|그룹|사용|이름|값(모든 테마)|견본|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|배경|TFSO BG|656565/ 101, 101, 101|![견본 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|윤곽선|TFSO 아웃|FFFFFF / 255, 255, 255|![견본 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
@@ -427,4 +427,4 @@ ms.locfileid: "79301598"
 
 |F12|||
 |---------|-|-|
-|![F12 깔끔한 코드 아이콘](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405-61_F12PrettyCode")<br />예쁜 코드|![F12 경고 아이콘](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405-62_F12Warning")<br />Warning|![F12 에뮬레이션 아이콘](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405-63_F12Emulate")<br />에뮬레이션|
+|![F12 깔끔한 코드 아이콘](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405-61_F12PrettyCode")<br />예쁜 코드|![F12 경고 아이콘](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405-62_F12Warning")<br />Warning|![F12 에뮬레이션 아이콘](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405-63_F12Emulate")<br />에뮬레이트|
