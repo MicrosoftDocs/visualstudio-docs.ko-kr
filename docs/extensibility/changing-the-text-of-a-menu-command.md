@@ -1,5 +1,5 @@
 ---
-title: 메뉴 명령의 텍스트를 변경 합니다. | Microsoft Docs
+title: 메뉴 명령의 텍스트 변경 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba19a6536be7f0f5855ee9035e80989c105cbf7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff6af7bdd64342e86201af79dbe5c7968b247d6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321118"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739838"
 ---
-# <a name="change-the-text-of-a-menu-command"></a>메뉴 명령의 텍스트를 변경 합니다.
-다음 단계를 사용 하 여 메뉴 명령의 텍스트 레이블을 변경 하는 방법을 보여는 <xref:System.ComponentModel.Design.IMenuCommandService> 서비스입니다.
+# <a name="change-the-text-of-a-menu-command"></a>메뉴 명령의 텍스트 변경
+다음 단계에서는 서비스를 사용하여 메뉴 명령의 텍스트 레이블을 <xref:System.ComponentModel.Design.IMenuCommandService> 변경하는 방법을 보여 줍니다.
 
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>IMenuCommandService 사용 하 여 메뉴 명령 레이블을 변경합니다.
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>IMenuCommandService를 사용하면 메뉴 명령 레이블 변경
 
-1. 라는 VSIX 프로젝트를 만듭니다 `MenuText` 메뉴 명령을 사용 하 여 이름이 **ChangeMenuText**합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.
+1. **ChangeMenuText라는**메뉴 `MenuText` 명령으로 명명된 VSIX 프로젝트를 만듭니다. 자세한 내용은 [메뉴 명령을 사용하여 확장 만들기를](../extensibility/creating-an-extension-with-a-menu-command.md)참조하십시오.
 
-2. 에 *.vsct* 파일을 추가 `TextChanges` 다음 예와에서 같이를 메뉴 명령에 플래그를 지정 합니다.
+2. *.vsct* 파일에서 다음 `TextChanges` 예제와 같이 메뉴 명령에 플래그를 추가합니다.
 
     ```xml
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">
@@ -39,7 +39,7 @@ ms.locfileid: "66321118"
     </Button>
     ```
 
-3. 에 *ChangeMenuText.cs* 파일, 메뉴 명령이 표시 되기 전에 호출 되는 이벤트 처리기를 만듭니다.
+3. *ChangeMenuText.cs* 파일에서 메뉴 명령이 표시되기 전에 호출되는 이벤트 처리기를 만듭니다.
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)
@@ -52,11 +52,11 @@ ms.locfileid: "66321118"
     }
     ```
 
-    변경 하 여이 메서드는 메뉴 명령의 상태를 업데이트할 수도 있습니다는 <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, 및 <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> 속성에는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체입니다.
+    개체의 <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>의 " <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>및 <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> 속성을 변경하여 이 메서드에서 메뉴 명령의 상태를 업데이트할 수도 있습니다. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>
 
-4. ChangeMenuText 생성자에서 만드는 코드를 사용 하 여 원래 명령 초기화 및 배치 코드를 바꿉니다를 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (아닌 `MenuCommand`) 메뉴 명령을 나타냅니다는, 추가 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 이벤트 처리기를 메뉴를 제공 합니다. 명령 메뉴 명령 서비스입니다.
+4. ChangeMenuText 생성자에서 원래 명령 초기화 및 배치 코드를 메뉴 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 명령을 나타내는 `MenuCommand`(a가 아닌) 만들고 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 이벤트 처리기를 추가하고 메뉴 명령 서비스에 메뉴 명령을 제공하는 코드로 바꿉니다.
 
-    처럼 보여야 합니다 다음과 같습니다.
+    다음과 같이 보일 수 있습니다.
 
     ```csharp
     private ChangeMenuText(Package package)
@@ -81,8 +81,8 @@ ms.locfileid: "66321118"
     }
     ```
 
-5. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 됩니다.
+5. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험 인스턴스가 나타납니다.
 
-6. 에 **도구가** 메뉴 라는 명령이 표시 됩니다 **ChangeMenuText 호출**합니다.
+6. **도구** 메뉴에는 **ChangeMenuText 호출이라는**명령이 표시됩니다.
 
-7. 명령을 클릭 합니다. 발표 하는 메시지 상자가 표시 됩니다 **MenuItemCallback** 가 호출 되었습니다. 도구 메뉴에 있는 명령의 이름이 이제 참조 해야 메시지 상자를 닫으면 **새 텍스트**합니다.
+7. 명령을 클릭합니다. **MenuItemCallback이** 호출되었음을 알리는 메시지 상자가 표시됩니다. 메시지 상자를 해제하면 도구 메뉴의 명령 이름이 **이제 새 텍스트인**것을 볼 수 있습니다.

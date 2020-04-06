@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Microsoft Docs
+title: FIELD_KIND | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344470"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736867"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
-에 포함 된 필드의 종류를 지정 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.
+# <a name="field_kind"></a>FIELD_KIND
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체에 포함 된 필드의 종류를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -126,117 +126,117 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>필드
 `FIELD_KIND_TYPE`\
-필드에만 형식 인지를 나타냅니다.
+필드가 형식일 뿐임을 나타냅니다.
 
 `FIELD_KIND_SYMBOL`\
-필드 형식, 이름 및 기타 정보를 사용 하 여 기호를 나타냅니다.
+필드가 유형, 이름 및 기타 정보가 있는 기호임을 나타냅니다.
 
 `FIELD_TYPE_PRIMITIVE`\
-필드는 기본 데이터 형식을 나타냅니다.
+필드가 기본 데이터 형식임을 나타냅니다.
 
 `FIELD_TYPE_STRUCT`\
-필드는 구조체 임을 나타냅니다.
+필드가 구조임을 나타냅니다.
 
 `FIELD_TYPE_CLASS`\
-필드는 클래스를 나타냅니다.
+필드가 클래스임을 나타냅니다.
 
 `FIELD_TYPE_INTERFACE`\
-인터페이스 필드 임을 나타냅니다.
+필드가 인터페이스임을 나타냅니다.
 
 `FIELD_TYPE_UNION`\
-공용 구조체 필드 임을 나타냅니다.
+필드가 공용 구조관임을 나타냅니다.
 
 `FIELD_TYPE_ARRAY`\
-필드는 배열 임을 나타냅니다.
+필드가 배열임을 나타냅니다.
 
 `FIELD_TYPE_METHOD`\
-필드는 메서드를 나타냅니다.
+필드가 메서드임을 나타냅니다.
 
 `FIELD_TYPE_BLOCK`\
-블록 필드 임을 나타냅니다.
+필드가 블록임을 나타냅니다.
 
 `FIELD_TYPE_POINTER`\
-필드에 대 한 포인터 임을 나타냅니다.
+필드가 포인터임을 나타냅니다.
 
 `FIELD_TYPE_ENUM`\
-열거형된 데이터 형식의 필드 임을 나타냅니다.
+필드가 들어간 데이터 형식임을 나타냅니다.
 
 `FIELD_TYPE_LABEL`\
-레이블 필드 임을 나타냅니다.
+필드가 레이블임을 나타냅니다.
 
 `FIELD_TYPE_TYPEDEF`\
-필드는 typedef 임을 나타냅니다.
+필드가 typedef임을 나타냅니다.
 
 `FIELD_TYPE_BITFIELD`\
-필드는 비트 필드 임을 나타냅니다.
+필드가 비트필드임을 나타냅니다.
 
 `FIELD_TYPE_NAMESPACE`\
-네임 스페이스 필드 임을 나타냅니다.
+필드가 네임스페이스임을 나타냅니다.
 
 `FIELD_TYPE_MODULE`\
-필드는 모듈 임을 나타냅니다.
+필드가 모듈임을 나타냅니다.
 
 `FIELD_TYPE_DYNAMIC`\
-동적 필드 임을 나타냅니다.
+필드가 동적임을 나타냅니다.
 
 `FIELD_TYPE_PROP`\
-필드 속성 임을 나타냅니다.
+필드가 속성임을 나타냅니다.
 
 `FIELD_TYPE_INNERCLASS`\
-필드는 내부 클래스를 나타냅니다.
+필드가 내부 클래스임을 나타냅니다.
 
 `FIELD_TYPE_REFERENCE`\
-필드에 대 한 참조 임을 나타냅니다.
+필드가 참조임을 나타냅니다.
 
 `FIELD_TYPE_EXTENDED`\
-나중에 사용하기 위해 예약되어 있습니다.
+다음에 사용하도록 예약됩니다.
 
 `FIELD_SYM_MEMBER`\
-멤버가 필드 임을 나타냅니다.
+필드가 멤버임을 나타냅니다.
 
 `FIELD_SYM_LOCAL`\
-로컬 필드 임을 나타냅니다.
+필드가 로컬임을 나타냅니다.
 
 `FIELD_SYM_PARAMETER`\
-매개 변수 필드 임을 나타냅니다.
+필드가 매개 변수임을 나타냅니다.
 
 `FIELD_SYM_THIS`\
-필드 "this"이 포인터 임을 나타냅니다.
+필드가 "this" 포인터임을 나타냅니다.
 
 `FIELD_SYM_GLOBAL`\
-전역 필드 임을 나타냅니다.
+필드가 전역임을 나타냅니다.
 
 `FIELD_SYM_PROP_GETTER`\
-필드 속성을 검색 합니다를 나타냅니다.
+필드는 속성을 검색합니다.
 
 `FIELD_SYM_PROP_SETTER`\
-필드 속성을 설정 함을 나타냅니다.
+필드가 속성을 설정했음을 나타냅니다.
 
 `FIELD_SYM_EXTENDED`\
-나중에 사용하기 위해 예약되어 있습니다.
+다음에 사용하도록 예약됩니다.
 
 `FIELD_KIND_MASK`\
-필드 종류에 대 한 마스크를 나타냅니다.
+필드 종류에 대한 마스크를 나타냅니다.
 
 `FIELD_TYPE_MASK`\
-필드 형식에 대 한 마스크를 나타냅니다.
+필드 유형에 대한 마스크를 나타냅니다.
 
 `FIELD_SYM_MASK`\
-기호 정보에 대 한 마스크를 나타냅니다.
+기호 정보에 대한 마스크를 나타냅니다.
 
 ## <a name="remarks"></a>설명
-호출에서 반환 된 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드.
+[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드에 대한 호출에서 반환되었습니다.
 
-필드의 종류에 따라 [QueryInterface](/cpp/atl/queryinterface) 에 대해 호출할 수는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스의 구체적인 형식에 대 한 인터페이스입니다. 예를 들어 경우 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 반환 `FIELD_TYPE_METHOD`를 호출할 수 있습니다 `QueryInterface` 필자에`DebugField` 가져오려고 합니다 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 인터페이스입니다.
+필드 종류에 따라 보다 구체적인 인터페이스 형식에 대 한 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스에서 [QueryInterface호출할](/cpp/atl/queryinterface) 수 있습니다. 예를 들어 [GetKind가](../../../extensibility/debugger/reference/idebugfield-getkind.md) `FIELD_TYPE_METHOD`반환되면 I를 `QueryInterface` `DebugField` 호출하여 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 인터페이스를 가져올 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: sh.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
 - [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)

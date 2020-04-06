@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft Docs
+title: 아이디버그컴플러스 심볼프로바이더2::함수하스라인정보 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - FunctionHasLineInfo
 - IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7a6c64c77e6d8fedaf6e61f397e5dcd2a3ae577f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a574766b884bf1aeed253754534fee66967e9ef
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352713"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733464"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
-지정된 된 메서드에 줄 정보를 포함 하는지를 결정 합니다.
+지정된 메서드에 선 정보가 있는지 확인합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,13 +40,13 @@ int FunctionHasLineInfo(
 
 ## <a name="parameters"></a>매개 변수
 `pAddress`\
-[in] 가 나타낸 디버그 주소는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스입니다. 이 주소는 METHOD_ADDRESS 여야 합니다.
+【인】 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스로 표시되는 디버그 주소입니다. 이 주소는 METHOD_ADDRESS 있어야 합니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE`합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 `S_FALSE`을 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.
+다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출하는 **CDebugSymbolProvider** 개체에 대해 이 메서드를 구현하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(
@@ -85,5 +85,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
