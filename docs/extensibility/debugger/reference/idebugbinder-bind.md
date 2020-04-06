@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Microsoft Docs
+title: 이데버그바인더::바인드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00d7e63b8a521ee25d2c7d378aeb82d064358ec9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344500"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736024"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-이 메서드는 메모리 컨텍스트 또는 기호의 현재 값이 포함 된 개체를 가져옵니다.
+이 메서드는 기호의 현재 값을 포함 하는 메모리 컨텍스트 또는 개체를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,18 +45,18 @@ int Bind(
 
 ## <a name="parameters"></a>매개 변수
 `pContainer`\
-[in] 합니다 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 자식에서 참조를 포함 하는 `pField`합니다.
+【인】 에서 참조하는 자식이 포함된 `pField` [IDebugObject입니다.](../../../extensibility/debugger/reference/idebugobject.md)
 
 `pField`\
-[in] 합니다 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 기호를 나타내는입니다.
+【인】 기호를 나타내는 [IDebugField입니다.](../../../extensibility/debugger/reference/idebugfield.md)
 
 `ppObject`\
-[out] 반환 된 `IDebugObject` 기호의 인스턴스를 나타내는입니다.
+【아웃】 기호의 `IDebugObject` 인스턴스를 나타내는 것을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext | Microsoft Docs
+title: IDebugObject::GetMemoryContext | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38f913952c3e2f58b0d7bd2a27ac20e8f754da2f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323619"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726660"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
-개체의 값의 주소를 나타내는 메모리 컨텍스트를 가져옵니다.
+개체 값의 주소를 나타내는 메모리 컨텍스트를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>매개 변수
 `pContext`\
-[out] 반환 된 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체의 값의 주소를 나타내는 개체입니다.
+【아웃】 개체 값의 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 표시 된 대로 값의 주소 지정 하는 반환 된 메모리 컨텍스트 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체입니다.
+ 반환된 메모리 컨텍스트는 이 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체로 표시되는 값의 주소를 지정합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

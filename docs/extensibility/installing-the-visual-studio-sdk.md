@@ -1,40 +1,40 @@
 ---
-title: Visual Studio SDK 설치 | Microsoft Docs
+title: 비주얼 스튜디오 SDK 설치 | 마이크로 소프트 문서
 ms.date: 07/12/2018
 ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4208c20cc3e7da34efaf98af16f0f41d54613824
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f391708abbd8a9b66f2dfd5aaa6559cb075910d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340754"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710340"
 ---
 # <a name="install-the-visual-studio-sdk"></a>Visual Studio SDK 설치
 
-Visual Studio SDK (소프트웨어 개발 키트)는 Visual Studio 설치에서 선택적 기능입니다. 또한 VS SDK를 나중에 설치할 수 있습니다.
+비주얼 스튜디오 SDK(소프트웨어 개발 키트)는 Visual Studio 설정에서 선택 사양입니다. 나중에 VS SDK를 설치할 수도 있습니다.
 
-## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Visual Studio 설치의 일부로 Visual Studio SDK 설치
+## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>비주얼 스튜디오 설치의 일부로 Visual Studio SDK 설치
 
-Visual Studio 설치에서 VS SDK를 포함 하려면 설치를 **Visual Studio 확장 개발** 워크 로드 아래 **기타 도구 집합**합니다. 이 워크 로드는 Visual Studio SDK 및 필수 설치 됩니다. 추가 선택 하거나 구성 요소를 선택 하 여 설치를 조정할 수 있습니다 합니다 **요약** 보기.
+Visual Studio 설치에 VS SDK를 포함하려면 다른 도구 **집합**아래에 **Visual Studio 확장 개발** 워크로드를 설치합니다. 이 워크로드는 Visual Studio SDK와 필요한 필수 구성 조건을 설치합니다. **요약** 보기에서 구성요소를 선택하거나 선택 취소하여 설치를 추가로 조정할 수 있습니다.
 
-## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Visual Studio를 설치한 후 Visual Studio SDK를 설치 합니다.
+## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>비주얼 스튜디오 설치 후 비주얼 스튜디오 SDK 설치
 
-Visual Studio 설치를 완료 한 후 Visual Studio SDK를 설치 하려면 Visual Studio 설치 관리자를 다시 실행 하 고 선택 합니다 **Visual Studio 확장 개발** 워크 로드.
+Visual Studio 설치를 완료한 후 Visual Studio SDK를 설치하려면 Visual Studio 설치 관리자를 다시 실행하고 **Visual Studio 확장 개발** 워크로드를 선택합니다.
 
-## <a name="install-the-visual-studio-sdk-from-a-solution"></a>솔루션에서 Visual Studio SDK를 설치 합니다.
+## <a name="install-the-visual-studio-sdk-from-a-solution"></a>솔루션에서 Visual Studio SDK 설치
 
-메시지가 표시 되는 확장성 프로젝트를 사용 하 여 솔루션을를 열면 먼저 VS SDK를 설치 하지 않고는 **누락 된 기능 설치** 설치 하는 대화는 **Visual Studio 확장 개발** 워크 로드:
+VS SDK를 먼저 설치하지 않고 확장성 프로젝트를 사용하여 솔루션을 열면 **누락된 기능 설치** 대화 상자에서 **Visual Studio 확장 개발** 워크로드를 설치하라는 메시지가 표시됩니다.
 
-![설치 확장 개발](../extensibility/media/install-extension-development.png "설치 확장 개발")
+![확장 개발 설치](../extensibility/media/install-extension-development.png "확장 개발 설치")
 
-## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>명령줄에서 Visual Studio SDK를 설치 합니다.
+## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>명령줄에서 Visual Studio SDK 설치
 
-모든 Visual Studio 워크 로드 또는 구성 요소를 사용 하 여 설치할 수도 있습니다는 **Visual Studio 확장 개발** 작업 (ID: Microsoft.VisualStudio.Workload.VisualStudioExtension) 명령줄에서. 참조 [명령줄 매개 변수를 사용 하 여 Visual Studio 설치](../install/use-command-line-parameters-to-install-visual-studio.md) 일반 지침은 워크 로드 또는 구성 요소 식별자를 확인 하 고 적절 한 명령줄 스위치에 대 한 자세한 내용은 합니다.
+다른 Visual Studio 워크로드 또는 구성 요소와 마찬가지로 명령줄에서 **Visual Studio 확장 개발** 워크로드(ID: Microsoft.VisualStudio.VisualStudio.VisualStudioExtension)를 설치할 수도 있습니다. 명령줄 매개 변수 사용을 사용하여 Visual [Studio를 설치하여](../install/use-command-line-parameters-to-install-visual-studio.md) 적절한 명령줄 스위치에 대한 자세한 내용과 워크로드 또는 구성 요소 식별자 결정에 대한 일반적인 지침을 참조하십시오.
 
-Visual Studio의 설치 된 버전과 일치 하는 Visual Studio 설치 관리자를 사용 해야 하는 참고 합니다. 예를 들어, Visual Studio Enterprise를 컴퓨터에 설치 된 경우 Visual Studio Enterprise 설치 관리자를 실행 해야 합니다 (*vs_enterprise.exe*).
+설치된 버전의 Visual Studio와 일치하는 Visual Studio 설치 관리자를 사용해야 합니다. 예를 들어 컴퓨터에 Visual Studio Enterprise가 설치되어 있는 경우 Visual Studio 엔터프라이즈 설치*관리자(vs_enterprise.exe)를*실행해야 합니다.

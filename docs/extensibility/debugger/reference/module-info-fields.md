@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Microsoft Docs
+title: MODULE_INFO_FIELDS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311382"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714323"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-디버그 모듈 정보에 대 한 플래그를 지정합니다.
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
+디버그 모듈 정보에 대한 플래그를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,59 +66,59 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>필드
  `MIF_NONE`\
- 구조에 필드를 초기화/사용 합니다.
+ 구조의 필드를 초기화/사용합니다.
 
  `MIF_NAME`\
- 초기화/사용 된 `m_bstrName` 필드를 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조입니다.
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조에서 `m_bstrName` 필드를 초기화/사용합니다.
 
  `MIF_URL`\
- 초기화/사용 된 `m_bstrUrl` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_bstrUrl` 필드를 초기화/사용합니다.
 
  `MIF_VERSION`\
- 초기화/사용 된 `m_bstrVersion` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_bstrVersion` 필드를 초기화/사용합니다.
 
  `MIF_DEBUGMESSAGE`\
- 초기화/사용 된 `m_bstrDebugMessage` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_bstrDebugMessage` 필드를 초기화/사용합니다.
 
  `MIF_LOADADDRESS`\
- 초기화/사용 된 `m_addrLoadAddress` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_addrLoadAddress` 필드를 초기화/사용합니다.
 
  `MIF_PREFFEREDADDRESS`\
- 초기화/사용 된 `m_addrPreferredLoadAddress` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_addrPreferredLoadAddress` 필드를 초기화/사용합니다.
 
  `MIF_SIZE`\
- 초기화/사용 된 `m_dwSize` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_dwSize` 필드를 초기화/사용합니다.
 
  `MIF_LOADORDER`\
- 초기화/사용 된 `m_dwLoadOrder` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_dwLoadOrder` 필드를 초기화/사용합니다.
 
  `MIF_TIMESTAMP`\
- 초기화/사용 된 `m_TimeStamp` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_TimeStamp` 필드를 초기화/사용합니다.
 
  `MIF_URLSYMBOLLOCATION`\
- 초기화/사용 된 `m_bstrUrlSymbolLocation` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_bstrUrlSymbolLocation` 필드를 초기화/사용합니다.
 
  `MIF_FLAGS`\
- 초기화/사용 된 `m_dwModuleFlags` 필드에 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조에서 `m_dwModuleFlags` 필드를 초기화/사용합니다.
 
  `MIF_ALLFIELDS`\
- 모든 필드의 초기화/사용 된 `MODULE_INFO` 구조입니다.
+ `MODULE_INFO` 구조의 모든 필드를 초기화/사용합니다.
 
 ## <a name="remarks"></a>설명
- 이러한 값을 인수로 전달 됩니다는 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 의 필드를 나타내려면 메서드는 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조는 초기화할 합니다.
+ 이러한 값은 [getInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 메서드에 인수로 전달되어 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조의 필드를 초기화할 수 있는지 나타냅니다.
 
- 이러한 값에도 사용 됩니다는 `MODULE_INFO` 에 유효 하 고 사용 되는 필드는 구조체.
+ 이러한 값은 구조에서 `MODULE_INFO` 사용되는 필드와 유효한 필드를 나타내는 데도 사용됩니다.
 
- 이러한 플래그는 비트과 결합 될 수 `OR`입니다.
+ 이러한 플래그는 약간 으로 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
+title: IDebugComPlus 기호공급자2::GetTypeFromToken | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypeFromToken
 - GetTypeFromToken
 ms.assetid: 4452bc5d-0225-40e0-a467-c472a5c7c4ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5212fe733e3590a7b15b5ade55d2bfd2aa4048dc
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: d2d7d809281ce1ad6e71a3c4afe666c486c53077
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "66326163"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733453"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-해당 토큰을 지정 하는 형식을 검색 합니다.
+토큰이 지정된 형식을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,22 +46,22 @@ int GetTypeFromToken(
 
 ## <a name="parameters"></a>매개 변수
 `appDomain`\
-[in] 응용 프로그램 도메인의 식별자입니다.
+【인】 응용 프로그램 도메인의 식별자입니다.
 
 `guidModule`\
-[in] 모듈의 고유 식별자입니다.
+【인】 모듈의 고유 식별자입니다.
 
 `tdToken`\
-[in] 검색할 형식의 토큰입니다.
+【인】 검색할 형식의 토큰입니다.
 
 `ppField`\
-[out] 나타내는 형식을 반환 합니다 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)합니다.
+【아웃】 [IDebugField로](../../../extensibility/debugger/reference/idebugfield.md)표시되는 형식을 반환합니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.
+다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출하는 **CDebugSymbolProvider** 개체에 대해 이 메서드를 구현하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(
@@ -89,5 +89,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

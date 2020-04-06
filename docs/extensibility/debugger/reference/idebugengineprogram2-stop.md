@@ -1,5 +1,5 @@
 ---
-title: 'IDebugEngineProgram2:: Stop | Microsoft Docs'
+title: 아이데버그엔진프로그램2::정지 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d7213dcd2484ba69caf51fdc21f52bba5bb3361
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506456"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730488"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
-이 프로그램에서 실행 중인 모든 스레드를 중지 합니다.
+이 프로그램에서 실행 중인 모든 스레드를 중지합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,13 +38,13 @@ int Stop();
 ```
 
 ## <a name="return-value"></a>Return Value
- 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는이 프로그램이 다중 프로그램 환경에서 디버깅 될 때 호출 됩니다. 다른 프로그램의 중지 이벤트를 수신 하면이 메서드가이 프로그램에서 호출 됩니다. 이 메서드의 구현은 비동기 여야 합니다. 즉,이 메서드가 반환 되기 전에 모든 스레드를 중지 해야 하는 것은 아닙니다. 이 메서드의 구현은이 프로그램에서 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) 메서드를 호출 하는 것 처럼 간단할 수 있습니다.
+ 이 메서드는 이 프로그램이 다중 프로그램 환경에서 디버깅될 때 호출됩니다. 다른 프로그램에서 중지 이벤트가 수신되면 이 메서드가 이 프로그램에서 호출됩니다. 이 메서드의 구현은 비동기적이어야 합니다. 즉, 이 메서드가 반환되기 전에 모든 스레드를 중지해야 하는 것은 아닙니다. 이 메서드의 구현은 이 프로그램에서 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) 메서드를 호출하는 것만큼 간단할 수 있습니다.
 
- 프로그램이 중지 되 면 구현자는 [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) 를 전송 해야 합니다.
+ 구현자는 프로그램이 중지될 때 [IDebugStopCompleteEvent2를](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) 보내야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

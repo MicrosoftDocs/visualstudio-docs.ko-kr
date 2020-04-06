@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM | Microsoft Docs
+title: CONSTRUCTOR_ENUM | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONSTRUCTOR_ENUM enumeration
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea240cf33bab70f1488a2aa90fecd71220b1da25
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f9e123399ed2378eaf63944f9a1527ef024c0cd6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346448"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737620"
 ---
-# <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-다양 한 생성자를 선택합니다.
+# <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
+다양한 유형의 생성자가 선택됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,24 +45,24 @@ public enum ConstructorMatchOptions {
 
 ## <a name="fields"></a>필드
 `crAll`\
-모든 생성자를 선택합니다.
+모든 생성자가 선택됩니다.
 
 `crNonStatic`\
-Static이 아니고 생성자를 선택합니다.
+비정적 생성자 선택합니다.
 
 `crStatic`\
-정적 생성자를 선택합니다.
+정적 생성자 선택합니다.
 
 ## <a name="remarks"></a>설명
-인수로 전달 된 [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) 메서드.
+[Enum생성자](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) 메서드에 인수로 전달되었습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: sh.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

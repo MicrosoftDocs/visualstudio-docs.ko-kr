@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetReferenceType | Microsoft Docs
+title: IDebug참조2::설정 참조 유형 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetReferenceType
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: add8a7c8243cd9754c30e38b5fac8fcf715a63da
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 346a95f553b8bb7f246a37555dc191b0fb22ac9b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339831"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720359"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-참조 형식을 설정합니다. 나중에 사용하기 위해 예약되어 있습니다.
+참조 유형을 설정합니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int SetReferenceType ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwRefType`\
-[in] 값을 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 참조 형식을 지정 하는 열거형입니다.
+【인】 참조 형식을 지정하는 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 열거형의 값입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

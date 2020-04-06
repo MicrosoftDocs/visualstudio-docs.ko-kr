@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2 | Microsoft Docs
+title: 아이디버그문서텍스트사건2 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ecf7c81c2be90b975785cc8f07f11af2aa2a7e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 44a1736890ac78e7aaf20b4a639b1794fc63b5ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351351"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731373"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
-이 인터페이스는 Visual Studio 디버그 엔진에 의해 제공 되는 소스 문서의 변경 내용을 알릴 사용 됩니다.
+이 인터페이스는 디버그 엔진에서 제공하는 원본 문서의 변경 내용을 Visual Studio에 알리는 데 사용됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,34 +28,34 @@ ms.locfileid: "66351351"
 IDebugDocumentTextEvents2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자 참고 사항
- DE 소스 코드를 변경 하도록 지원 하기 위해이 인터페이스를 구현 합니다. 이 인터페이스를 구현 하는 동일한 개체에서 일반적으로 구현 됩니다 합니다 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 인터페이스입니다.
+## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
+ DE는 소스 코드를 변경하는 것을 지원하기 위해 이 인터페이스를 구현합니다. 이 인터페이스는 일반적으로 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 인터페이스를 구현하는 동일한 개체에서 구현됩니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 호출을 통해이 인터페이스를 가져옵니다는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> 메서드. 합니다 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> 인터페이스에 대 한 호출에서 가져온는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> 메서드. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> 인터페이스를 호출 하 여 가져온 합니다 [QueryInterface](/cpp/atl/queryinterface) 메서드를 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 인터페이스.
+## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]을 사용하계 는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> 메서드에 대한 호출을 통해 이 인터페이스를 가져옵니다. 인터페이스는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> 메서드에 대한 호출에서 가져옵니다. 인터페이스는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 인터페이스에서 [QueryInterface](/cpp/atl/queryinterface) 메서드를 호출하여 가져옵니다.
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
- 다음 표에서의 메서드를 보여 줍니다. `IDebugDocumentTextEvents2`합니다.
+ 다음 표에서는 의 `IDebugDocumentTextEvents2`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
 
-|메서드|설명|
+|방법|설명|
 |------------|-----------------|
-|[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|소멸 된 전체 문서를 나타냅니다.|
-|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|텍스트 문서에 삽입 되었음을 디버그 패키지에 알립니다.|
-|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|텍스트 문서에서 제거 되었습니다 디버그 패키지에 알립니다.|
-|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|문서에서 텍스트를 교체한 디버그 패키지에 알립니다.|
-|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|문서에서 텍스트 특성 업데이트 되었습니다는 디버그 패키지에 알립니다.|
-|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|문서 속성을 업데이트 된 이벤트의 수신기에 알립니다.|
+|[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|전체 문서가 소멸되었음을 나타냅니다.|
+|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|텍스트가 문서에 삽입되었음을 디버그 패키지에 지정합니다.|
+|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|문서에서 텍스트가 제거되었음을 디버그 패키지에 지정합니다.|
+|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|문서에서 텍스트가 대체되었음을 디버그 패키지에 보온합니다.|
+|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|문서에서 텍스트 특성이 업데이트되었음을 디버그 패키지에 지정합니다.|
+|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|문서 특성이 업데이트되었음을 수신자에게 보전합니다.|
 
 ## <a name="remarks"></a>설명
- 해당 문서를 제공 하는 디버그 엔진은 활용 하기 위해 전용 된 `IDebugDocumentTextEvent2` 인터페이스. 이 예제는 스크립팅 디버그 엔진을 것입니다. 스크립트 해석 하는 동안 새 소스 코드 생성할 수 있습니다 디스크 파일에 없는 하는 DE에만 알려집니다.
+ 자체 문서를 제공하는 디버그 엔진만 인터페이스를 `IDebugDocumentTextEvent2` 활용할 수 있습니다. 이 것의 예는 스크립팅 디버그 엔진입니다. 스크립트를 해석하는 과정에서 디스크 파일에 없는 새 소스 코드를 생성할 수 있으며 DE에만 알려져 있습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

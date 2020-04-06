@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS | Microsoft Docs
+title: FIELD_INFO_FIELDS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337681"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736900"
 ---
-# <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-에 대 한 검색 정보를 지정 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.
+# <a name="field_info_fields"></a>FIELD_INFO_FIELDS
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체에 대해 검색할 정보를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -52,32 +52,32 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>필드
 `FIF_FULLNAME`\
-초기화/사용 된 `bstrFullName` 필드를 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조입니다.
+`bstrFullName` [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조에서 필드를 초기화/사용합니다.
 
 `FIF_NAME`\
-초기화/사용 된 `bstrName` 필드에 `FIELD_INFO` 구조입니다.
+`FIELD_INFO` 구조에서 `bstrName` 필드를 초기화/사용합니다.
 
 `FIF_TYPE`\
-초기화/사용 된 `bstrType` 필드에 `FIELD_INFO` 구조입니다.
+`FIELD_INFO` 구조에서 `bstrType` 필드를 초기화/사용합니다.
 
 `FIF_MODIFIERS`\
-초기화/사용 된 `bstrModifiers` 필드에 `FIELD_INFO` 구조입니다.
+`FIELD_INFO` 구조에서 `bstrModifiers` 필드를 초기화/사용합니다.
 
 ## <a name="remarks"></a>설명
-이러한 값을 인수로 전달도 됩니다는 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 의 필드를 지정 하는 메서드는 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조는 초기화할.
+또한 이러한 값은 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 메서드에 인수로 전달되어 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조의 필드를 초기화할 필드를 지정합니다.
 
-이러한 값에도 사용 됩니다 합니다 `dwFields` 의 멤버는 `FIELD_INFO` 에 유효 하 고 사용 되는 필드는 구조체.
+이러한 값은 `dwFields` `FIELD_INFO` 구조의 멤버에서 사용되는 필드와 유효한 필드를 나타내는 데도 사용됩니다.
 
-이러한 플래그는 비트과 결합 될 수 `OR`입니다.
+이러한 플래그는 약간 으로 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: sh.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

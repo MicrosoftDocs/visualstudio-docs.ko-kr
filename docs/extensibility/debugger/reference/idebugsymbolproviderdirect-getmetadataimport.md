@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs
+title: IDebug 기호공급자직접::겟메타데이터가져오기 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a2cd79581487e7e407cc409c4b8496abc53bfa7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 475ffab931445718d27ae6e1fe1242f6a5a76512
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347294"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718971"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
-메타 데이터 가져오기 정보를 검색합니다.
+메타데이터 가져오기 정보를 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,16 +44,16 @@ int GetMetaDataImport (
 
 ## <a name="parameters"></a>매개 변수
 `guid`\
-[in] 모듈에 대 한 고유 식별자입니다.
+【인】 모듈의 고유 식별자입니다.
 
 `appID`\
-[in] 응용 프로그램 도메인에 대 한 식별자입니다.
+【인】 응용 프로그램 도메인의 식별자입니다.
 
 `ppImport`\
-[out] 정보를 가져올 메타 데이터를 포함 하는 개체를 반환 합니다.
+【아웃】 메타데이터 가져오기 정보가 포함된 개체를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

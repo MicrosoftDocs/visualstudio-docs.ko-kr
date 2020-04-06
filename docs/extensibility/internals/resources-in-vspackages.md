@@ -1,5 +1,5 @@
 ---
-title: Vspackage의 리소스 | Microsoft Docs
+title: VS패키지 의 리소스 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,30 +7,30 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07e1e19f802203b9770764330ea894b7d0eb98b8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724163"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705596"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
-지역화 된 리소스를 네이티브 위성 UI Dll, 관리 되는 위성 Dll 또는 관리 되는 VSPackage 자체에 포함할 수 있습니다.
+네이티브 위성 UI DLL, 관리되는 위성 DLL 또는 관리되는 VSPackage 자체에 지역화된 리소스를 포함할 수 있습니다.
 
- 일부 리소스는 Vspackage에 포함할 수 없습니다. 다음 관리 되는 형식을 포함할 수 있습니다.
+ 일부 리소스는 VSPackage에 포함할 수 없습니다. 다음과 같은 관리 형식을 포함할 수 있습니다.
 
 - 문자열
 
-- 패키지 로드 키 (문자열 이기도)
+- 패키지 로드 키(문자열이기도 합니다)
 
-- 도구 창 아이콘
+- 공구 창 아이콘
 
-- 컴파일된 명령 테이블 출력 (CTO) 파일
+- 컴파일된 명령 테이블 출력(CTO) 파일
 
 - CTO 비트맵
 
@@ -38,17 +38,17 @@ ms.locfileid: "72724163"
 
 - 대화 상자 데이터 정보
 
-  관리 되는 패키지의 리소스는 리소스 ID로 선택 됩니다. 단, CTO 파일은 CTMENU로 이름을 지정 해야 합니다. CTO 파일은 리소스 테이블에 `byte[]` 표시 되어야 합니다. 다른 모든 리소스 항목은 유형으로 식별 됩니다.
+  관리되는 패키지의 리소스는 리소스 ID에 의해 선택됩니다. 예외는 CTMENU라는 이름을 지정해야 하는 CTO 파일입니다. CTO 파일은 리소스 테이블에 로 `byte[]`나타나야 합니다. 다른 모든 리소스 항목은 유형별로 식별됩니다.
 
-  @No__t_0 특성을 사용 하 여 관리 되는 리소스를 사용할 수 있음을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지정할 수 있습니다.
+  특성을 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 사용하여 관리되는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 리소스를 사용할 수 있음을 나타낼 수 있습니다.
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  이와 같은 방식으로 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>를 설정 하면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>을 사용 하는 등의 방법으로 리소스를 검색할 때 관리 되지 않는 위성 Dll을 무시 해야 합니다. @No__t_0 리소스 ID가 같은 리소스가 두 개 이상 발견 되 면 검색 된 첫 번째 리소스를 사용 합니다.
+  이러한 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 방식으로 설정하면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 예를 들어 를 사용하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>리소스를 검색할 때 관리되지 않는 위성 DLL을 무시해야 한다는 것을 나타냅니다. 동일한 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 리소스 ID를 가진 두 개 이상의 리소스가 발생하는 경우 찾은 첫 번째 리소스를 사용합니다.
 
 ## <a name="example"></a>예제
- 다음 예제는 도구 창 아이콘의 관리 되는 표현입니다.
+ 다음 예제는 도구 창 아이콘의 관리되는 표현입니다.
 
 ```
 <data name="1001"
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- 다음 예제에서는 CTMENU로 명명 되어야 하는 CTO 바이트 배열을 포함 하는 방법을 보여 줍니다.
+ 다음 예제에서는 CTMENU라는 이름을 지정해야 하는 CTO 바이트 배열을 포함하는 방법을 보여 줍니다.
 
 ```
 <data name="CTMENU"
@@ -81,9 +81,9 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>구현 참고 사항
- 가능 하면 Vspackage의 로드를 지연 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. @No__t_0 VSPackage에 CTO 파일을 포함 하면 설치 하는 동안 모든 Vspackage을 메모리에 로드 해야 합니다 .이는 병합 된 명령 테이블을 작성할 때입니다. VSPackage에서 코드를 실행 하지 않고 메타 데이터를 검사 하 여 VSPackage에서 리소스를 추출할 수 있습니다. VSPackage이 지금은 초기화 되지 않으므로 성능 손실이 최소화 됩니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage 로딩이 지연될 수 있습니다. VSPackage에 CTO 파일을 포함하면 설치 중에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 이러한 모든 VSPackage를 메모리에 로드해야 합니다. VSPackage에서 코드를 실행하지 않고 메타데이터를 검사하여 VSPackage에서 리소스를 추출할 수 있습니다. VSPackage는 현재 초기화되지 않으므로 성능 손실이 최소화됩니다.
 
- 설치 후 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 리소스를 요청 하는 경우 해당 패키지가 이미 로드 되 고 초기화 될 수 있으므로 성능 손실은 최소화 VSPackage.
+ 설치 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 후 VSPackage에서 리소스를 요청하는 경우 해당 패키지가 이미 로드되고 초기화될 가능성이 있으므로 성능 손실이 최소화됩니다.
 
 ## <a name="see-also"></a>참조
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)

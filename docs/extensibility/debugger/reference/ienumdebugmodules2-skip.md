@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Skip | Microsoft Docs
+title: IEnumDebugModules2::건너뛰기 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Skip
 ms.assetid: 61dc42f4-8544-45bb-8da0-fb22cccec7da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 160dbdedb9dc5f2188036203c2a0b881672dd9ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 02111475e7757eb91b1d55963e6175208747806f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339700"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716470"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
-지정 된 개수의 요소를 건너뜁니다.
+지정된 수의 요소를 건너뜁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int Skip(
 
 ## <a name="parameters"></a>매개 변수
 `celt`\
-[in] 건너뛸 요소 수입니다.
+【인】 건너뛸 요소 수입니다.
 
-## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우 `celt` 나머지 요소 수보다 큽니다; 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 `S_OK`를 반환합니다. 나머지 `S_FALSE` `celt` 요소 의 수보다 큰 경우 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 하는 경우 `celt` 수보다 큰 값 끝에 설정 되어 나머지 요소를 열거 및 `S_FALSE` 반환 됩니다.
+ 나머지 `celt` 요소 수보다 큰 값을 지정하면 열거형이 끝으로 설정되고 `S_FALSE` 반환됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft Docs
+title: LAUNCH_FLAGS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339362"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714713"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
+# <a name="launch_flags"></a>LAUNCH_FLAGS
 디버그 시작 플래그를 지정합니다.
 
 ## <a name="syntax"></a>구문
@@ -48,29 +48,29 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>필드
 `LAUNCH_DEBUG`\
-디버깅에 대 한 프로세스를 시작 합니다.
+디버깅 프로세스를 시작합니다.
 
 `LAUNCH_NODEBUG`\
-디버그 하지 않고 프로세스를 시작 합니다.
+디버깅하지 않고 프로세스를 시작합니다.
 
 `LAUNCH_ENABLE_ENC`\
-사용 되지 않으며, 사용 하지 마십시오.
+더 이상 사용되지 않습니다.
 
 `LAUNCH_MERGE_ENV`\
-프로세스를 시작 하 고 시작 하는 호스트를 사용 하 여 환경을 병합 합니다.
+프로세스를 시작하고 환경을 시작 호스트와 병합합니다.
 
 ## <a name="remarks"></a>설명
-이러한 값을 인수로 전달 되는 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드.
+이러한 값은 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드에 인수로 전달됩니다.
 
-이러한 플래그는 비트과 결합 될 수 `OR`입니다.
+이러한 플래그는 약간 으로 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

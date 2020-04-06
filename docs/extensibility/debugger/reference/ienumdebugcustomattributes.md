@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes | Microsoft Docs
+title: 이넘디버그커스터텀속성 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes interface
 ms.assetid: 11aa768d-1852-44d6-9de3-17f9bafaded2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e706999595033ac76508eaa5e3b3f995839ceaea
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7f8b521432124267d3f0e179d3a889fb599fa99d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321551"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717135"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
-사용자 지정 특성을 열거합니다.
+사용자 지정 특성을 개명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,31 +28,31 @@ ms.locfileid: "66321551"
 IEnumCustomAttributes : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자 참고 사항
- 사용자 지정 특성을 지원 하기 위해이 인터페이스를 구현 하는 기호 공급자 (통해 합니다 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 인터페이스).
+## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
+ 기호 공급자는 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 인터페이스를 통해 사용자 지정 특성을 지원 하기 위해이 인터페이스를 구현 합니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
-- [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) 이 인터페이스를 반환 합니다.
+## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
+- [열거형 사용자 지정 특성이 이 인터페이스를 반환합니다.](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
- 다음 표에서의 메서드를 보여 줍니다. `IEnumDebugCustomAttributes`합니다.
+ 다음 표에서는 의 `IEnumDebugCustomAttributes`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
 
-|메서드|설명|
+|방법|설명|
 |------------|-----------------|
-|[다음](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|열거형 시퀀스에서 사용자 지정 특성의 지정된 된 수를 검색 합니다.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|열거형 시퀀스에서 사용자 지정 특성의 지정된 된 수를 건너뜁니다.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|열거자의 사용자 지정 특성의 수를 가져옵니다.|
+|[다음](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|열거 순서에서 지정된 수의 사용자 지정 특성을 검색합니다.|
+|[건너뛸](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|열거 순서에서 지정된 수의 사용자 지정 특성을 건너뜁니다.|
+|[다시 설정](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|열거 순서를 시작 부분으로 재설정합니다.|
+|[복제](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|현재 열거체와 동일한 열거 상태를 포함하는 열거형 을 만듭니다.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|열거형에서 사용자 지정 특성 수를 가져옵니다.|
 
 ## <a name="requirements"></a>요구 사항
  헤더: sh.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

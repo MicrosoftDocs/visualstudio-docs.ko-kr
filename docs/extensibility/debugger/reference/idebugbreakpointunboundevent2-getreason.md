@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
+title: IDebugBreakpoint언바운드이벤트2::GetReason | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b3c15b25ec6f4f2d7ddc56efc163ec2eb6b81c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352829"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734725"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-중단점이 바인딩된 없습니다. 이유를 가져옵니다.
+중단점이 언바운드된 이유를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>매개 변수
 `pdwUnboundReason`\
-[out] 값을 반환 합니다 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 중단점이 바인딩된 없습니다. 이유를 지정 하는 열거형입니다.
+【아웃】 중단점이 바인딩되지 않은 이유를 지정하는 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 열거형에서 값을 반환합니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
-이유는 편집 하며 계속 하기 작업을 하거나 중단점 오류가 바인딩된 있는지 확인 한 후 다른 위치로 차츰 되 고 중단점을 포함 합니다.
+그 이유는 편집 및 계속 작업 후 다른 위치로 리바운드되는 중단점 또는 중단점이 오류에 바인딩되었음을 결정하는 것입니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CBreakpointUnboundDebugEventBase** 노출 하는 개체를 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) 인터페이스입니다.
+다음 예제에서는 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) 인터페이스를 노출하는 **CBreakpointUnboundDebugEventBase** 개체에 대해 이 메서드를 구현하는 방법을 보여 줍니다.
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
@@ -71,5 +71,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
