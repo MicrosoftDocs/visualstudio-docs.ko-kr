@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Microsoft Docs
+title: DEBUGREF_INFO_FLAGS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318362"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737380"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-디버그 참조 개체에 대 한 검색 정보를 지정 합니다.
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
+디버그 참조 개체에 대해 검색할 정보를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -58,47 +58,47 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>필드
 `DEBUGREF_INFO_NAME`\
-초기화/사용 된 `bstrName` 구조의 필드입니다.
+구조에서 `bstrName` 필드를 초기화/사용합니다.
 
 `DEBUGREF_INFO_TYPE`\
-초기화/사용 된 `bstrType` 구조의 필드입니다.
+구조에서 `bstrType` 필드를 초기화/사용합니다.
 
 `DEBUGREF_INFO_VALUE`\
-초기화/사용 된 `bstrValue` 구조의 필드입니다.
+구조에서 `bstrValue` 필드를 초기화/사용합니다.
 
 `DEBUGREF_INFO_ATTRIB`\
-초기화/사용 된 `dwAttrib` 구조의 필드입니다.
+구조에서 `dwAttrib` 필드를 초기화/사용합니다.
 
 `DEBUGREF_INFO_REFTYPE`\
-초기화/사용 된 `dwRefType` 구조의 필드입니다.
+구조에서 `dwRefType` 필드를 초기화/사용합니다.
 
 `DEBUGREF_INFO_REF`\
-초기화/사용 된 `pReference` 구조의 필드입니다.
+구조에서 `pReference` 필드를 초기화/사용합니다.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-값 필드는이 형식의 개체에 대 한 사용 가능한 경우 자동 확장 값을 포함 해야 합니다.
+값 필드에는 이 유형의 개체에 대해 사용 가능한 경우 자동 확장 값이 포함되어야 합니다.
 
 `DEBUGREF_INFO_NONE`\
-플래그가 설정 되어 있는지를 나타냅니다.
+플래그가 설정되지 않은 것을 나타냅니다.
 
 `DEBUGREF_INFO_ALL`\
-플래그 마스크를 나타냅니다.
+플래그의 마스크를 나타냅니다.
 
 ## <a name="remarks"></a>설명
-이러한 플래그에 전달 되는 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 및 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 의 필드를 나타내는 방법을 합니다 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조는 초기화할 합니다.
+이러한 플래그는 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 및 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 메서드에 전달되어 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조의 필드를 초기화할 필드를 나타냅니다.
 
-에 사용 되는 합니다 `dwFields` 의 멤버는 `DEBUG_REFERENCE_INFO` 구조 반환 되 면 유효 하 고 사용 되는 필드는 구조체.
+`DEBUG_REFERENCE_INFO` 구조의 멤버에 `dwFields` 사용 되는 필드 와 구조가 반환 될 때 유효한 나타내는 데 사용 됩니다.
 
-이러한 값을 비트 결합할 수 있습니다 `OR`합니다.
+이러한 값은 약간 과 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)

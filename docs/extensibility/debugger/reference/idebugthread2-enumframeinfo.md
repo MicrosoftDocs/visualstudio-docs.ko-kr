@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo | Microsoft Docs
+title: 아이디버그스레드2::에넘프레임정보 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::EnumFrameInfo
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fad77ca1d649e7ffdda02c7145dc11666619f232
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320316"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718847"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
-이 스레드에 대 한 스택 프레임의 목록을 검색합니다.
+이 스레드의 스택 프레임 목록을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,21 +45,21 @@ int EnumFrameInfo ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFieldSpec`\
-[in] 플래그의 조합을 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 의 필드를 지정 하는 열거형을 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조체가를 채워야 합니다. 지정 된 `FIF_FUNCNAME_FORMAT` 함수 이름의 단일 문자열로 서식을 지정 하는 플래그입니다.
+【인】 [frameINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조체의 필드를 채울 지 지정하는 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 열거형의 플래그 조합입니다. 함수 `FIF_FUNCNAME_FORMAT` 이름을 단일 문자열로 포맷할 플래그를 지정합니다.
 
 `nRadix`\
-[in] 열거자의 숫자 정보를 서식 지정에 사용 하는 기 수입니다.
+【인】 Radix는 열거체에서 숫자 정보를 서식지정하는 데 사용됩니다.
 
 `ppEnum`\
-[out] 반환 된 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 개체의 목록을 포함 하는 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 스택 프레임을 설명 하는 구조입니다.
+【아웃】 스택 프레임을 설명하는 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조 목록이 포함된 [IEnumDebugFrameFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 개체를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 스레드의 프레임 순서로 먼저 열거할 현재 프레임 및 마지막으로 열거 하는 가장 오래 된 프레임을 사용 하 여 열거 됩니다.
+ 스레드의 프레임은 순서대로 위대해지며, 현재 프레임은 먼저 예류가 되고 가장 오래된 프레임은 마지막으로 수거됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::QueryIsLocal | Microsoft Docs
+title: 아이디버그코어서버3::쿼리로컬 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::QueryIsLocal
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92ef0e0016027bb8e5d60ee8df070095da72d7ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e06cae53251be02ee63650ce7723e5915565be4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343966"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732824"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
-호출자에 게 로컬 서버 인지 확인 합니다.
+서버가 호출자에게 로컬인지 확인합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,8 +37,8 @@ HRESULT QueryIsLocal(
 int QueryIsLocal();
 ```
 
-## <a name="return-value"></a>반환 값
- 반환 `S_OK` 된 서버가 로컬 인지를 나타냅니다. 반환 `S_FALSE` msvsmon.exe 원격 디버깅을 위해 일반적으로 사용 되는 인스턴스에서 서버에서 실행 하는 경우.
+## <a name="return-value"></a>Return Value
+ 서버가 로컬임을 나타내기 위해 반환합니다. `S_OK` 서버가 일반적으로 원격 디버깅에 사용되는 msvsmon.exe의 인스턴스에서 실행 중인 경우 반환됩니다. `S_FALSE`
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

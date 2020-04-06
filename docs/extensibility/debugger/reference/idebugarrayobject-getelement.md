@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement | Microsoft Docs
+title: 아이데버그어레이오브젝트::겟엘리먼트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 527302a2e6d6fc2884107e3773402adc56b881c7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322214"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736175"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 배열의 요소를 가져옵니다.
@@ -43,16 +43,16 @@ int GetElement(
 
 ## <a name="parameters"></a>매개 변수
 `dwIndex`\
-[in] 요소의 인덱스입니다.
+【인】 요소 인덱스입니다.
 
 `ppElement`\
-[out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 요소를 나타내는 인터페이스입니다.
+【아웃】 요소를 나타내는 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 인터페이스를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 배열 개체는 다차원 배열 하는 경우에 모든 배열 개체 요소의 1 차원 배열에으로 간주 합니다. 예를 들어, 배열의 지정 된 `myarray[3][2][6]` 및 `dwIndex` 20의 매개 변수를이 메서드는 반환 요소 `myarray[1][1][2]`, 및 `dwIndex` 21의 매개 변수에서 요소 반환 `myarray[1][1][3]`합니다. 사용 된 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 배열에 있는 요소의 총 수를 확인 하는 방법입니다.
+ 이 메서드는 배열 개체가 다차원인 경우에도 배열 개체의 모든 요소를 1차원 배열로 봅니다. 예를 들어 배열과 `myarray[3][2][6]` 매개 `dwIndex` 변수가 20인 경우 이 `myarray[1][1][2]`메서드는 `dwIndex` 에서 요소를 반환하고 21의 매개 변수는 에서 `myarray[1][1][3]`요소를 반환합니다. [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 메서드를 사용하여 배열의 총 요소 수를 확인합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

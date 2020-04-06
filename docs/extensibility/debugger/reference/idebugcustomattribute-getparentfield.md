@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField | Microsoft Docs
+title: IDebug 사용자 정의 속성::GetParentField | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetParentField
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6a99310520109dad6a1b8084405119e0a106ad89
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1fae84a4d02438335aea00c50dd9b89520d08bae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350056"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732692"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-사용자 지정 특성에 연결 된 필드를 가져옵니다.
+사용자 지정 특성이 연결된 필드를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,14 +41,14 @@ int GetParentField(
 
 ## <a name="parameters"></a>매개 변수
 `ppField`\
-[out] 반환 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 연결 되는 사용자 지정 특성 필드를 나타내는 개체입니다.
+【아웃】 사용자 지정 특성이 연결된 필드를 나타내는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 호출을 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드는 반환 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 종류의 부모 필드를 결정 하는 개체입니다.
+ 반환된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체에서 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드를 호출하여 부모가 어떤 필드인지 확인합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

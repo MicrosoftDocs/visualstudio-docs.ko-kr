@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS_UNION | Microsoft Docs
+title: DEBUG_ADDRESS_UNION | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dbd114fb06bfd688c720744dbbad69bd0dae6aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346278"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737531"
 ---
-# <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
-주소의 다양 한 종류를 설명 합니다.
+# <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
+다양한 종류의 주소를 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,50 +54,50 @@ public struct DEBUG_ADDRESS_UNION {
 
 ## <a name="members"></a>멤버
 `dwKind`\
-값을 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형, 공용 구조체를 해석 하는 방법을 지정 합니다.
+공용 구조체를 해석하는 방법을 지정하는 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형의 값입니다.
 
 `addr.addrNative`\
-[C++ 만] 포함 된 [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_NATIVE =.
+[C++ 전용] = [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) ADDRESS_KIND_NATIVE 경우 `dwKind` NATIVE_ADDRESS 구조를 포함합니다.
 
 `addr.addrThisRel`\
-[C++ 만] 포함 된[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_UNMANAGED_THIS_RELATIVE =.
+[C++ 전용] =[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) ADDRESS_KIND_UNMANAGED_THIS_RELATIVE 경우 `dwKind` UNMANAGED_ADDRESS_THIS_RELATIVE 구조를 포함합니다.
 
 `addr.addUPhysical`\
-[C++ 만] 포함 된[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_UNMANAGED_PHYSICAL =.
+[C++ 전용] =[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) ADDRESS_KIND_UNMANAGED_PHYSICAL 경우 `dwKind` UNMANAGED_ADDRESS_PHYSICAL 구조를 포함합니다.
 
 `addr.addrMethod`\
-[C++ 만] 포함 된[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_METHOD =.
+[C++ 전용] =[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) ADDRESS_KIND_METHOD 경우 `dwKind` METADATA_ADDRESS_METHOD 구조를 포함합니다.
 
 `addr.addrField`\
-[C++ 만] 포함 된[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_FIELD =.
+[C++ 전용] =[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) ADDRESS_KIND_FIELD 경우 `dwKind` METADATA_ADDRESS_FIELD 구조를 포함합니다.
 
 `addr.addrLocal`\
-[C++ 만] 포함 된[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_LOCAL =.
+[C++ 전용] =[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) ADDRESS_KIND_LOCAL 경우 `dwKind` METADATA_ADDRESS_LOCAL 구조를 포함합니다.
 
 `addr.addrParam`\
-[C++ 만] 포함 된[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_PARAM =.
+[C++ 전용] =[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) ADDRESS_KIND_PARAM 경우 `dwKind` METADATA_ADDRESS_PARAM 구조를 포함합니다.
 
 `addr.addrArrayElem`\
-[C++ 만] 포함 된[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_ARRAYELEM =.
+[C++ 전용] =[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) ADDRESS_KIND_ARRAYELEM 경우 `dwKind` METADATA_ADDRESS_ARRAYELEM 구조를 포함합니다.
 
 `addr.addrRetVal`\
-[C++ 만] 포함 된[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) 하는 경우 구조체 `dwKind` ADDRESS_KIND_RETVAL =.
+[C++ 전용] =[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) ADDRESS_KIND_RETVAL 경우 `dwKind` METADATA_ADDRESS_RETVAL 구조를 포함합니다.
 
 `addr.unused`\
-[C++ 만] 패딩 합니다.
+[C++ 전용] 패딩.
 
 `addr`\
-[C++ 만] 공용 구조체의 이름입니다.
+[C++ 전용] 공용 구조의 이름입니다.
 
 `unionmember`\
-[C# 만] 이 값을 기반으로 적절 한 구조 형식으로 마샬링할 수 해야 `dwKind`합니다. 간의 연결에 대 한 주의 참조 하세요. `dwKind` 및 공용 구조체의 해석 합니다.
+[C# 만] 이 값은 `dwKind`을 기반으로 적절한 구조 체로 마샬링해야 합니다. 노조의 `dwKind` 연관성 및 해석에 대한 발언을 참조하십시오.
 
 ## <a name="remarks"></a>설명
-이 구조체의 일부인를 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 구조체이 고 다양 한 다른 유형의 주소 중 하나를 나타냅니다 (합니다 `DEBUG_ADDRESS` 구조에 대 한 호출에 의해 채워진 합니다 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드).
+이 구조는 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 구조의 일부이며 여러 종류의 주소 중 하나를 `DEBUG_ADDRESS` 나타냅니다(구조는 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드에 대한 호출로 채워져 있음).
 
- [C# 만] 다음 표에서 해석 하는 방법을 보여 줍니다는 `unionmember` 주소의 각 종류에 대 한 멤버입니다. 한 가지 주소에 대 한이 작업을 수행 하는 방법을 보여 줍니다.
+ [C# 만] 다음 표에서는 각 주소 `unionmember` 종류에 대한 멤버를 해석하는 방법을 보여 주어 있습니다. 예제에서는 한 종류의 주소에 대해 이 작업을 수행하는 방법을 보여 주며 있습니다.
 
-|`dwKind`|`unionmember` 로 해석|
+|`dwKind`|`unionmember`로 해석|
 |--------------|----------------------------------|
 |`ADDRESS_KIND_NATIVE`|[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)|
 |`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`|[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)|
@@ -110,7 +110,7 @@ public struct DEBUG_ADDRESS_UNION {
 |`ADDRESS_KIND_RETVAL`|[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)|
 
 ## <a name="example"></a>예제
-이 예제에는 일종의 주소를 해석 하는 방법을 보여 줍니다 (`METADATA_ADDRESS_ARRAYELEM`)의 `DEBUG_ADDRESS_UNION` C#의 구조입니다. 나머지 요소는 동일한 방식으로 해석할 수 있습니다.
+이 예제에서는 C#의 구조체의 한 종류의 주소()`METADATA_ADDRESS_ARRAYELEM`를 해석하는 `DEBUG_ADDRESS_UNION` 방법을 보여 주며 있습니다. 나머지 요소는 정확히 같은 방식으로 해석될 수 있습니다.
 
 ```csharp
 using System;
@@ -137,11 +137,11 @@ namespace MyPackage
 ## <a name="requirements"></a>요구 사항
 헤더: sh.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

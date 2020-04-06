@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID | Microsoft Docs
+title: AD_PROCESS_ID | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1893b78063e045f341af246fc0ef2c0f2ad1538e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351420"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738171"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
-시스템 ID 또는 GUID 일 수 있는 프로세스 ID를 지정 합니다.
+# <a name="ad_process_id"></a>AD_PROCESS_ID
+시스템 ID 또는 GUID일 수 있는 프로세스 ID를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,18 +49,18 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>멤버
 `ProcessIdType`\
-값을 [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) 해석 하는 방법을 지정 하는 열거형을 `ProcessId` 공용 구조체 (또는 구조체의 멤버에 액세스를 관리 코드용)입니다.
+공용 구조체를 해석하는 방법을 지정하는 AD_PROCESS_ID_TYPE 열거형의 값입니다(또는 액세스할 구조체의 구성원이 되는 관리 코드). [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) `ProcessId`
 
 `dwProcessId`\
-시스템에서 값으로 프로세스 ID입니다.
+프로세스 ID를 시스템의 값으로 합니다.
 
 `guidProcessId`\
-GUID로 프로세스 ID입니다.
+프로세스 ID를 GUID로 합니다.
 
-dwUnused 안쪽 여백입니다.
+dwUnused 패딩.
 
 ## <a name="remarks"></a>설명
-이 구조는 다음 메서드에 전달 됩니다.
+이 구조는 다음 메서드로 전달됩니다.
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
 
@@ -70,7 +70,7 @@ dwUnused 안쪽 여백입니다.
 
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
-다음 방법 중에서 반환 됩니다.
+그리고 다음 방법에서 반환됩니다.
 
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
@@ -79,11 +79,11 @@ dwUnused 안쪽 여백입니다.
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

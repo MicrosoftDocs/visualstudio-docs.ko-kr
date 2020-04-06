@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2 | Microsoft Docs
+title: 이넘디버그오류지점2 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d204b29b46e257d4ca0b8c4102c3a64e9e78adf1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea841a095964b71e301e966bfd0a10c8f7c0c65d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317238"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716890"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
-이 인터페이스는 보류 중인 중단점을 사용 하 여 연결 된 오류 중단점을 열거 합니다.
+이 인터페이스는 보류 중인 중단점과 관련된 오류 중단점을 개명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,34 +28,34 @@ ms.locfileid: "66317238"
 IEnumDebugErrorBreakpoints2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자 참고 사항
- 디버그 엔진 (DE) 중단점에 대 한 지원의 일부로이 인터페이스를 구현합니다.
+## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
+ 디버그 엔진(DE)은 중단점에 대한 지원의 일부로 이 인터페이스를 구현합니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
- Visual Studio 호출 [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 바인딩할 수 없는 중단점의 목록을 나타내는이 인터페이스를 가져올 수 또는 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 중단점의 목록을 나타내는이 인터페이스를 가져오려면 된 바인딩되지 않습니다.
+## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
+ Visual Studio는 바인딩할 수 없는 중단점 목록을 나타내는 이 인터페이스를 가져오려면 [CanBind를](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) [호출하거나, EnumErrorBreakpoints는](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 바인딩되지 않은 중단점 목록을 나타내는 이 인터페이스를 가져옵니다.
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
- 다음 표에서의 메서드를 보여 줍니다. `IEnumDebugErrorBreakpoints2`합니다.
+ 다음 표에서는 의 `IEnumDebugErrorBreakpoints2`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
 
-|메서드|설명|
+|방법|설명|
 |------------|-----------------|
-|[다음](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|열거형 시퀀스를 오류 중단점의 지정된 된 수를 검색 합니다.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|지정된 된 개수의 열거형 시퀀스를 오류 중단점을 건너뜁니다.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|열거자의 오류 중단점의 수를 가져옵니다.|
+|[다음](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|열거 시퀀스에서 지정된 수의 오류 중단점을 검색합니다.|
+|[건너뛸](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|열거 순서에서 지정된 수의 오류 중단점을 건너뜁니다.|
+|[다시 설정](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|열거 순서를 시작 부분으로 재설정합니다.|
+|[복제](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|현재 열거체와 동일한 열거 상태를 포함하는 열거형 을 만듭니다.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|열거형의 오류 중단점 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
- 이 인터페이스의 목록을 보유 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 는 바인딩할 수 없습니다 및 이유에 해당 바인딩할 수 없어 중단점을 설명 하는 각 인터페이스입니다. Visual Studio에서 사용 하는 `IEnumDebugErrorBreakpoint2` IDE에 표시 된 중단점을 업데이트 하는 인터페이스입니다.
+ 이 인터페이스에는 바인딩할 수 없는 중단점과 바인딩할 수 없는 이유를 설명하는 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 인터페이스 목록이 있습니다. Visual Studio는 `IEnumDebugErrorBreakpoint2` 인터페이스를 사용하여 IDE에 표시된 중단점을 업데이트합니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

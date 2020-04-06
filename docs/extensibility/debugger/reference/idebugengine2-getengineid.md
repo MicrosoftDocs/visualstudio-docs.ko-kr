@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::GetEngineID | Microsoft Docs
+title: 아이데버그엔진2::겟엔진ID | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29b6f219447e3c58bce9f5b4696697163ab4f6a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318464"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731085"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-디버그 엔진 (DE)의 GUID를 가져옵니다.
+디버그 엔진(DE)의 GUID를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,16 +41,16 @@ int GetEngineID(
 
 ## <a name="parameters"></a>매개 변수
 `pguidEngine`\
-[out] DE의 GUID를 반환합니다.
+【아웃】 DE의 GUID를 반환합니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
-일반적인 Guid의 일부의 예로 `guidScriptEng`, `guidNativeEng`, 또는 `guidSQLEng`합니다. 새 디버그 엔진을 id에 대 한 고유한 GUID를 만듭니다.
+일반적인 GUID의 몇 가지 `guidScriptEng`예는 `guidNativeEng` `guidSQLEng`. 새 디버그 엔진은 식별을 위해 자체 GUID를 만듭니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CEngine` 를 구현 하는 개체를 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 인터페이스입니다.
+다음 예제에서는 `CEngine` [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 인터페이스를 구현 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
@@ -66,5 +66,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

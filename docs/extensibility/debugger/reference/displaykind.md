@@ -1,27 +1,27 @@
 ---
-title: DisplayKind | Microsoft Docs
+title: 디스플레이Kind | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318271"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737257"
 ---
 # <a name="displaykind"></a>DisplayKind
-유효한 값에서 수행 되는 정보의 종류를 나타내는 열거를 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체 및 사용자에 게 표시 합니다.
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체에서 가져오고 사용자에게 표시할 정보의 종류를 나타내는 유효한 값을 열거합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -52,15 +52,15 @@ public enum enum_DisplayKind
 필드의 이름입니다.
 
 `DisplayKind_Type`\
-필드의 형식입니다.
+필드의 유형입니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: Ee.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

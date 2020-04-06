@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints | Microsoft Docs
+title: IDebugPending중단점2::에이넘오류중단점 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints method
 - EnumErrorBreakpoints method
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba93cf1e254f428261c2eaf2e144ad5dff4780ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11caf8c2af92a14e001d7403f2457f0fc66ff3ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333741"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725854"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
-이 보류 중인 중단점에서 발생 하는 모든 오류 중단점의 목록을 가져옵니다.
+이 보류 중인 중단점에서 발생한 모든 오류 중단점 목록을 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,16 +44,16 @@ int EnumErrorBreakpoints( 
 
 ## <a name="parameters"></a>매개 변수
 `bpErrorType`\
-[in] 값을 조합 합니다 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) 열거 하는 오류 유형을 선택 하는 열거형입니다.
+【인】 열거할 오류 유형을 선택하는 [BP_ERROR_TYPE 열거형의](../../../extensibility/debugger/reference/bp-error-type.md) 값 조합입니다.
 
 `ppEnum`\
-[out] 반환 된 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 개체의 목록을 포함 하는 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 개체입니다.
+【아웃】 IDebugErrorBreakpoint2 개체 의 목록을 포함 하는 [IEnumDebugErrorBreakpoint2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 개체를 반환 합니다. [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 중단점이 삭제된 경우 반환합니다. `E_BP_DELETED`
 
 ## <a name="example"></a>예제
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` 노출 하는 개체를 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다.
+ 다음 예제에서는 `CPendingBreakpoint` [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
@@ -127,7 +127,7 @@ HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

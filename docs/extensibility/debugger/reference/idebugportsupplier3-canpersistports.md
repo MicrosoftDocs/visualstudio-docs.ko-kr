@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
+title: IDebugPortSupplier3::캔지속포트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11bc6e21e8b70a5bd95c001f4173a7da3f3fe4be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340065"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724469"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-이 메서드는 지속할 지 여부를 포트 공급자 수 포트 (디스크에 쓴 후)에서 디버거는 호출 간에 결정 합니다.
+이 메서드는 포트 공급자가 디버거 호출 간에 포트를 디스크에 기록하여 포트를 지속할 수 있는지 여부를 결정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,11 +38,11 @@ int CanPersistPorts();
 ## <a name="parameters"></a>매개 변수
  없음
 
-## <a name="return-value"></a>반환 값
- `S_OK` 포트를 유지 하는 경우 또는 `S_FALSE` 나타내는 포트를 유지할 수 없습니다.
+## <a name="return-value"></a>Return Value
+ `S_OK`포트를 `S_FALSE` 유지하거나 포트를 유지할 수 없음을 나타낼 수 있습니다.
 
 ## <a name="remarks"></a>설명
- 포트 공급자는 포트를 유지할 수 있습니다, 소멸 될 때 사용자에 게 이렇게 하며 다음 다시 한 번 인스턴스화될 때 다시 로드 합니다.
+ 포트 공급자가 포트를 지속할 수 있는 경우 포트가 소멸될 때 포트를 유지한 다음 다시 인스턴스화될 때 다시 로드해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

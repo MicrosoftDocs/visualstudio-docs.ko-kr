@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs
+title: IDebugComPlus 기호제공자2::GettypesByName | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e084b7f6861a8a01a2998c5a5e9ef1feba1daf2d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334724"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733422"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-이름이 지정 된 형식을 검색 합니다.
+이름이 지정된 형식을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,22 +44,22 @@ int GetTypesByName(
 
 ## <a name="parameters"></a>매개 변수
 `pszClassName`\
-[in] 형식의 이름입니다.
+【인】 형식의 이름입니다.
 
 `nameMatch`\
-[in] 형식을 일치, 예를 들어, 대/소문자 구분을 선택합니다. 값을 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 열거형입니다.
+【인】 대/소문자를 구분하는 것과 같은 일치 유형을 선택합니다. [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 열거형의 값입니다.
 
 `ppEnum`\
-[out] 지정 된 이름의 형식을 포함 하는 열거자입니다.
+【아웃】 지정된 이름의 형식 또는 형식을 포함하는 열거형입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
-제네릭 형식의 경우에 대해 검색할 이름 ' 목록\<int >' 또는 ' 목록\<int, int >' 'List' 됩니다. 이름이 같은 유형의 여러 모듈에서 표시 하는 경우는 `ppEnum` 매개 변수 복사본을 모두 포함 됩니다. 사용 해야 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 구분에 따라 및는 `guidModule` 매개 변수입니다.
+일반 형식의 경우 'int int> 목록'\<\<또는 'int int int>'을 조회하는 이름은 '목록'입니다. 동일한 이름의 유형이 여러 모듈에 나타나면 매개 변수에 `ppEnum` 모든 복사본이 포함됩니다. [GetTypeInfo를](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 사용하고 매개 변수를 `guidModule` 기반으로 구분해야 합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.
+다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출하는 **CDebugSymbolProvider** 개체에 대해 이 메서드를 구현하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(
@@ -124,5 +124,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

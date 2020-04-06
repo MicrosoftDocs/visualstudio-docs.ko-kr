@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Microsoft Docs
+title: BP_UNBOUND_REASON | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350561"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737779"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-중단점이 바인딩된 없습니다. 이유를 제공 합니다.
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
+중단점이 언바운드된 이유를 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,27 +48,27 @@ public enum enum_BP_UNBOUND_REASON {
 
 ## <a name="fields"></a>필드
 `BPUR_UNKNOWN`\
-알 수 없는 이유입니다.
+그 이유는 알 수 없습니다.
 
 `BPUR_CODE_UNLOADED`\
-중단점을 포함 하는 코드는 언로드 되었습니다.
+중단점을 포함하는 코드가 언로드되었습니다.
 
 `BPUR_BREAKPOINT_REBIND`\
-다른 위치에 다시 바인딩 중단점. 이 편집 후 발생 하 고 중단점 움직이면 또는 더 이상 유효 경로 사용 하 여 파일 중단점이 바인딩될 때 작업을 계속 수 없습니다.
+중단점은 다른 위치로 반등했습니다. 이 문제는 중단점이 이동하거나 중단점이 더 이상 유효하지 않은 경로가 있는 파일에 바인딩된 경우 편집 및 계속 작업 후에 발생할 수 있습니다.
 
 `BPUR_ BREAKPOINT_ERROR`\
-중단점이 바인딩된 후 오류에 포함 되도록 결정 됩니다. 이 관리 되는 중단점 조건이 더 이상 유효 합니다.
+중단점은 바인딩된 후 오류가 있는 것으로 확인됩니다. 이는 조건이 더 이상 유효하지 않은 관리중단점에 발생합니다.
 
 ## <a name="remarks"></a>설명
-반환 된 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 메서드.
+[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 메서드에 의해 반환 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

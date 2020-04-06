@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::Attach | Microsoft Docs
+title: IDebugEngine2::연결 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731210"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
-프로그램 또는 프로그램을 디버그 엔진 (DE)에 연결합니다. DE 실행 중인 in-process로 SDM 때 세션 디버그 관리자 (SDM)에서 호출 됩니다.
+디버그 엔진(DE)을 프로그램 또는 프로그램에 연결합니다. DE가 SDM에 프로세스 중 실행 중일 때 세션 디버그 관리자(SDM)에서 호출됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,47 +49,47 @@ int Attach( 
 
 ## <a name="parameters"></a>매개 변수
 `pProgram`\
-[in] 배열을 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 프로그램에 연결을 나타내는 개체입니다. 이들은 포트 프로그램입니다.
+【인】 연결할 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체의 배열입니다. 포트 프로그램입니다.
 
 `rgpProgramNodes`\
-[in] 배열을 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 각 프로그램에 대 한 프로그램 노드를 나타내는 개체입니다. 이 배열에 있는 프로그램 노드 에서처럼 동일한 프로그램을 나타내는 `pProgram`합니다. 프로그램 노드는 DE 연결할 프로그램을 식별할 수 있도록 제공 됩니다.
+【인】 프로그램 노드를 나타내는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체의 배열입니다. 이 배열의 프로그램 노드는 에서와 `pProgram`동일한 프로그램을 나타냅니다. DE가 연결할 프로그램을 식별할 수 있도록 프로그램 노드가 제공됩니다.
 
 `celtPrograms`\
-[in] 프로그램 및/또는의 프로그램 노드 개수는 `pProgram` 고 `rgpProgramNodes` 배열입니다.
+【인】 `pProgram` 및 `rgpProgramNodes` 배열의 프로그램 및/또는 프로그램 노드 수입니다.
 
 `pCallback`\
-[in] 합니다 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체 SDM에 디버그 이벤트를 보내는 데 사용 됩니다.
+【인】 디버그 이벤트를 SDM에 보내는 데 사용할 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.
 
 `dwReason`\
-[in] 값을 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 이러한 프로그램을 연결 하는 것에 대 한 이유를 지정 하는 열거형입니다. 자세한 내용은 설명 섹션을 참조하세요.
+【인】 이러한 프로그램을 연결하는 이유를 지정하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다. 자세한 내용은 주의 섹션을 참조하세요.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 다음과 같이 프로그램에 연결 하는 방법은 세 가지가 있습니다.
+ 다음과 같이 프로그램에 연결하는 데는 세 가지 이유가 있습니다.
 
-- `ATTACH_REASON_LAUNCH` 사용자는 포함 하는 프로세스를 시작 하기 때문에 DE 프로그램에 연결 된 것을 나타냅니다.
+- `ATTACH_REASON_LAUNCH`은 사용자가 DE를 포함하는 프로세스를 시작했기 때문에 DE가 프로그램에 연결되고 있음을 나타냅니다.
 
-- `ATTACH_REASON_USER` 사용자가 프로그램 (또는 프로그램을 포함 하는 프로세스)에 연결할 DE을 명시적으로 요청 했음을 나타냅니다.
+- `ATTACH_REASON_USER`은 사용자가 DE를 프로그램(또는 프로그램이 포함된 프로세스)에 연결하도록 명시적으로 요청했음을 나타냅니다.
 
-- `ATTACH_REASON_AUTO` DE이 다른 프로그램에서 특정 프로세스를 디버깅 하는 이미 있으므로 특정 프로그램에 연결 됨을 나타냅니다. 또한이 호출 됩니다 자동으로 연결 합니다.
+- `ATTACH_REASON_AUTO`은 DE가 특정 프로세스의 다른 프로그램을 이미 디버깅하고 있기 때문에 특정 프로그램에 연결되고 있음을 나타냅니다. 이를 자동 연결이라고도 합니다.
 
-  이 메서드를 호출 하는 경우는 DE 시퀀스에서 이러한 이벤트를 전송 해야 합니다.
+  이 메서드가 호출되면 DE는 다음 이벤트를 순서대로 보내야 합니다.
 
-1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (하는 경우이 전송 되지 않은 이미 디버그 엔진의 특정 인스턴스에 대해)
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (디버그 엔진의 특정 인스턴스에 대해 아직 전송되지 않은 경우)
 
 2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)
 
 3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)
 
-   또한 연결에 대 한 설명이 `ATTACH_REASON_LAUNCH`를 전송 해야 하는 DE 합니다 [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) 이벤트.
+   또한 연결 `ATTACH_REASON_LAUNCH`이유가 있는 경우 DE는 [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) 이벤트를 보내야 합니다.
 
-   한 번 DE 가져옵니다 합니다 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체 디버깅 중인 프로그램에 해당 개인 인터페이스에 대해 쿼리할 수 있습니다.
+   DE가 디버깅 되는 프로그램에 해당하는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체를 받으면 모든 개인 인터페이스에 대해 쿼리할 수 있습니다.
 
-   제공한 배열에서 프로그램 노드의 메서드를 호출 하기 전에 `pProgram` 또는 `rgpProgramNodes`, 가장을 사용 하면 필요한 경우에서 사용할 수 있어야 합니다 `IDebugProgram2` 프로그램 노드를 나타내는 인터페이스입니다. 일반적으로 단,이 단계가 필요 하지 않습니다. 자세한 내용은 [보안 문제](../../../extensibility/debugger/security-issues.md)합니다.
+   또는 에 `pProgram` `rgpProgramNodes`의해 주어진 배열에서 프로그램 노드의 메서드를 호출하기 전에 , 필요한 `IDebugProgram2` 경우, 프로그램 노드를 나타내는 인터페이스에서 활성화해야합니다. 그러나 일반적으로 이 단계는 필요하지 않습니다. 자세한 내용은 [보안 문제를](../../../extensibility/debugger/security-issues.md)참조하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

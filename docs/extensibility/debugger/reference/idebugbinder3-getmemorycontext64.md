@@ -1,28 +1,28 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
+title: 아이데버그바인더3:겟메모리컨텍스트6 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92c589951e9b65536be5474f56eb6b959232b738
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327063"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735730"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-메모리 컨텍스트에 개체 위치 또는 64 비트 메모리 주소를 변환합니다.
+개체 위치 또는 64비트 메모리 주소를 메모리 컨텍스트로 변환합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>매개 변수
 `pField`\
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 설명 하는 찾을 개체입니다. 하는 경우 `NULL`를 사용 하 여 `dwConstant` 대신 합니다.
+【인】 찾을 개체를 설명하는 [IDebugField입니다.](../../../extensibility/debugger/reference/idebugfield.md) If `NULL`, `dwConstant` 대신 사용합니다.
 
 `uConstant`\
-[in] 0x50000000 같은 64 비트 메모리 주소입니다.
+【인】 0x50000000과 같은 64비트 메모리 주소입니다.
 
 `ppMemCxt`\
-[out] 반환 된 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체의 주소나 메모리 주소를에서 나타내는 인터페이스입니다.
+【아웃】 개체의 주소 또는 메모리의 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 인터페이스를 반환합니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예에서는 구현 하는 개체를 만듭니다는 [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) 인터페이스 및이 메서드를 사용 하 여 메모리 컨텍스트를 검색 합니다.
+다음 예제에서는 [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) 인터페이스를 구현 하는 개체를 만들고 이 메서드를 사용 하 여 메모리 컨텍스트를 검색 합니다.
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )
@@ -129,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

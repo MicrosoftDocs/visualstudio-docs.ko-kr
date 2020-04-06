@@ -1,30 +1,30 @@
 ---
-title: m_stateFlags 필드 | Microsoft Docs
+title: m_stateFlags 필드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dee91fa96e16cdc2cd1cd75083c381422a99092
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330844"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738383"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags 필드
-현재 상태에 대 한 정보를 저장 합니다 <xref:System.Threading.Tasks.Task> 개체입니다.
+# <a name="m_stateflags-field"></a>m_stateFlags 필드
+개체의 현재 상태에 대한 <xref:System.Threading.Tasks.Task> 정보를 저장합니다.
 
- **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **어셈블리:** mscorlib (에서 *mscorlib.dll*)
+ **조립:** mscorlib *(mscorlib.dll)*
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ ms.locfileid: "66330844"
 ```
 
 ## <a name="remarks"></a>설명
- 일반적으로 사용 하 여 <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> 속성을이 값에 액세스 합니다.
+ 일반적으로 이 <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> 값을 액세스하려면 속성을 사용합니다.
 
  이 멤버는 다음 값의 조합일 수 있습니다.
 
@@ -47,5 +47,5 @@ ms.locfileid: "66330844"
 
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

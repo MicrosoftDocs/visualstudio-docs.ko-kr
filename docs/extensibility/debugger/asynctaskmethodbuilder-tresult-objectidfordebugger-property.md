@@ -1,30 +1,30 @@
 ---
-title: AsyncTaskMethodBuilder&lt;TResult&gt;합니다. ObjectIdForDebugger 속성 | Microsoft Docs
+title: 비동기 TaskMethod빌더&lt;&gt;TResult . ObjectIdForbugger 속성 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectForDebugger property, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 060b857f-daf5-43ea-bb51-abf9368e1e91
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66c75f50f6857628bca79f2cfce83f2b37906ab0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 712cd8b1a178d69899aeac2fde5640e20d18be95
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315526"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739352"
 ---
-# <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;합니다. ObjectIdForDebugger 속성
-이 작성기 디버거를 고유 하 게 식별 하는 데 사용할 수 있는 개체를 가져옵니다.
+# <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>비동기 TaskMethod빌더&lt;&gt;TResult . ObjectIdForDebugger 속성
+디버거에 이 빌더를 고유하게 식별하는 데 사용할 수 있는 개체를 가져옵니다.
 
- **네임스페이스:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **어셈블리:** mscorlib (mscorlib.dll)
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,6 +32,6 @@ ms.locfileid: "66315526"
 private object ObjectIdForDebugger
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [.NET Framework에 대 한 병렬 확장 기능 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 프레임워크에 대한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

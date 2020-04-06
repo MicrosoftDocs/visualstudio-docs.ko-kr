@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Clone | Microsoft Docs
+title: IEnumDebug바운드브레이크포인트2:클론 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::Clone
 ms.assetid: c6ce01a2-7da3-46ec-9837-855042fa7244
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70a61ffeb3cf2d210b9ea79c473a7805bfb1f7a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b10289a713642960b03c1a51775148357b8a3c08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350515"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717568"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
-별도 개체와 현재 열거형의 복사본을 반환합니다.
+현재 열거형의 복사본을 별도의 개체로 반환합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>매개 변수
 `ppEnum`\
-[out] 이 열거형은 개별 개체로 복사본을 반환 합니다.
+【아웃】 이 열거형의 복사본을 별도의 개체로 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 열거형의 복사본을이 메서드는 시간에 원본과 동일한 상태를 있습니다. 그러나 복사본의 및는 원래 상태는 각각 별도 이며 개별적으로 변경할 수 있습니다.
+ 열거형의 복사본은 이 메서드가 호출될 때원본과 동일한 상태를 가짐입니다. 그러나 복사본과 원본의 상태는 분리되어 개별적으로 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
