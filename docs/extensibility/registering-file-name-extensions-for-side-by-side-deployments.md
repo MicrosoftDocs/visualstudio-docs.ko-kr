@@ -1,33 +1,33 @@
 ---
-title: Side-by-side-배포에 대 한 파일 이름 확장명 등록 | Microsoft Docs
+title: 나란히 배포할 파일 이름 확장자 등록 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, registering for side-by-side
 ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bdfb562ddfcce2584b8868c3c931c21f9dbc127
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334224"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701550"
 ---
-# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Side-by-side-배포에 대 한 파일 이름 확장명 등록
-Side-by-side-환경에 배포 하는 Vspackage, 파일의 올바른 버전을 사용 하 여 연결할 파일 이름 확장명을 등록 해야 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 버전별 파일 이름 확장명을 사용 하지 않으면 등록을 사용 하면 프로젝트를 열고 적절 한 버전의 항목 파일을 프로젝트에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다.
+# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>나란히 배포할 파일 이름 확장명 등록
+나란히 배치된 VSPackage의 경우 파일 이름 확장명을 등록하여 파일을 올바른 버전의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]와 연결해야 합니다. 버전별 파일 이름 확장명을 사용하지 않는 한 등록을 통해 사용자는 프로젝트 및 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]프로젝트 항목 파일을 적절한 버전의 에서 열 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
-- [파일 이름 확장명에 대 한](../extensibility/about-file-name-extensions.md) 파일 이름 확장명은 등록 하는 방법에 대해 설명 합니다.
+## <a name="in-this-section"></a>섹션 내용
+- [파일 이름 확장명 에 대해](../extensibility/about-file-name-extensions.md) 파일 이름 확장명을 등록하는 방법에 대해 설명합니다.
 
-- [파일 이름 확장명에 대 한 파일 처리기 지정](../extensibility/specifying-file-handlers-for-file-name-extensions.md) 열 수 있는 응용 프로그램, edit 및 등등으로 특정 파일 이름 확장명을 등록 하는 방법에 대 한 정보를 제공 합니다.
+- [파일 이름 확장명에 대한 파일 처리기 지정](../extensibility/specifying-file-handlers-for-file-name-extensions.md) 특정 파일 이름 확장자를 열고 편집할 수 있는 응용 프로그램을 등록하는 방법에 대한 정보를 제공합니다.
 
-- [파일 이름 확장명에 대 한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md) 동사를 등록 하는 방법에 설명 합니다.
+- [파일 이름 확장명에 대한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md) 동사를 등록하는 방법에 대해 설명합니다.
 
-- [Side-by-side-파일 연결 관리](../extensibility/managing-side-by-side-file-associations.md) side-by-side-설치를 처리 하는 방법에 설명의 특정 버전 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 파일을 호출 해야 합니다.
+- [나란히 파일 연결 관리](../extensibility/managing-side-by-side-file-associations.md) 파일을 열려면 특정 버전의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 특정 버전을 호출해야 하는 병렬 설치를 처리하는 방법에 대해 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
-- [여러 버전의 Visual Studio 지원](../extensibility/supporting-multiple-versions-of-visual-studio.md) 의 여러 버전에 관련 된 문제에 설명 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 및 개발 및 최종 사용자에 게 배포 하는 동안 VSPackage입니다.
+- [여러 버전의 Visual Studio 지원](../extensibility/supporting-multiple-versions-of-visual-studio.md) 최종 사용자에게 개발 및 배포하는 동안 VSPackage의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 여러 버전 및 VSPackage와 관련된 문제를 설명합니다.

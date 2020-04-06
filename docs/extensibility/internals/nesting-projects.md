@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 중첩 | Microsoft Docs
+title: 네스팅 프로젝트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,29 +8,29 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f291a9c105c8207fb6721d32d4d0481e49dd4295
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726418"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707025"
 ---
 # <a name="nesting-projects"></a>프로젝트 중첩
-VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자는 *프로젝트 중첩*을 사용 하 여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 비슷한 형식의 프로젝트를 편리 하 게 그룹화 할 수 있습니다. 예를 들어 Enterprise Template 프로젝트는 중첩 된 프로젝트를 사용 하 여 프로젝트를 범주로 그룹화 합니다. 비즈니스 외관 프로젝트, 웹 UI 프로젝트 등은 하나의 범주에 함께 그룹화 됩니다.
+VS 패키지를 사용하는 엔터프라이즈 응용 프로그램 개발자는 프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *중첩을*사용하여 유사한 유형의 프로젝트를 편리하게 그룹화할 수 있습니다. 예를 들어 엔터프라이즈 템플릿 프로젝트는 중첩된 프로젝트를 사용하여 프로젝트를 범주로 그룹화합니다. 비즈니스 파사드 프로젝트, 웹 UI 프로젝트 등은 하나의 범주로 그룹화됩니다.
 
- 개발자가 프로그래밍 방식으로 제한을 제공할 수 있지만이 시나리오에서는 개발자가 각 부모 프로젝트에서 중첩할 수 있는 프로젝트 수에 제한이 없습니다. 이러한 종류의 그룹화도 재귀적으로 만들 수 있습니다 .이 경우 자식 프로젝트와 동일한 형식의 프로젝트가 자식에 중첩 되어 부모의 하위 프로젝트가 될 수 있습니다.
+ 이 시나리오에서는 개발자가 프로그래밍 방식으로 제한을 제공할 수 있지만 개발자가 각 상위 프로젝트 아래에 중첩할 수 있는 프로젝트 수에는 제한이 없습니다. 이러한 유형의 그룹화는 다시 할 수 있으며, 이 경우 자식 프로젝트와 동일한 유형의 프로젝트를 자식 아래에 중첩하여 하위 프로젝트의 하위 프로젝트인 하위 프로젝트가 될 수 있습니다.
 
- 프로젝트 중첩은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 내장 부분이 아닙니다. 자식 프로젝트 내에서 중첩 및 하위 프로젝트 중첩을 사용 하도록 설정 하는 코드를 작성 해야 합니다. 부모 프로젝트는 특수 한 VSPackage 또는 프로젝트 형식이 며 프로젝트 중첩을 구현 하는 데 필요한 코드를 포함 하는 고유한 GUID를 사용 하 여 생성 및 등록 됩니다.
+ 프로젝트 중첩은 의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]본질적인 부분이 아닙니다. 하위 프로젝트 내에서 중첩 및 하위 프로젝트 중첩을 사용하도록 코드를 작성해야 합니다. 상위 프로젝트는 프로젝트 중첩을 구현하는 데 필요한 코드를 포함하는 자체 GUID를 만들고 등록한 특수 VSPackage 또는 프로젝트 유형입니다.
 
- [방법: 중첩 프로젝트 구현](../../extensibility/internals/how-to-implement-nested-projects.md)에서 프로젝트를 중첩 하는 방법에 대 한 예제를 찾을 수 있습니다.
+ 프로젝트를 중첩하는 [방법: 중첩 프로젝트 구현에서](../../extensibility/internals/how-to-implement-nested-projects.md)프로젝트를 중첩하는 방법에 대한 예제를 찾을 수 있습니다.
 
-## <a name="nested-projects-example"></a>중첩 프로젝트 예제
- ![중첩 프로젝트 솔루션](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") 중첩 프로젝트 예제
+## <a name="nested-projects-example"></a>중첩된 프로젝트 예제
+ ![중첩 된 프로젝트 솔루션](../../extensibility/internals/media/vsnestedprojects.gif "vs네스트프로젝트") 중첩된 프로젝트 예제
 
 ## <a name="see-also"></a>참조
 - [중첩된 프로젝트 언로드 및 다시 로드에 대한 고려 사항](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)

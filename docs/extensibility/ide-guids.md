@@ -1,28 +1,28 @@
 ---
-title: IDE Guid | Microsoft Docs
+title: 아이드 구이드 | 마이크로 소프트 문서
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2cdd5a292de0413845da0ce2d7e8b4678cf895
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 41f9931b8e36dcb363624ecbc67e186bd3f5f71c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311165"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710493"
 ---
 # <a name="ide-guids"></a>IDE GUID
 
-<xref:Microsoft.VisualStudio.VSConstants> 클래스 아래 표에 나열 된 일부 통합된 개발 환경 (IDE)의 Guid를 게시 합니다.
+이 <xref:Microsoft.VisualStudio.VSConstants> 클래스는 아래 표에 나열된 통합 개발 환경(IDE)의 일부 구이드를 게시합니다.
 
-## <a name="core-systems"></a>코어 시스템
+## <a name="core-systems"></a>핵심 시스템
 
 |상수|GUID|
 |--------------|----------|
@@ -35,20 +35,20 @@ ms.locfileid: "66311165"
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>광범위 하 게 표시 구성 요소
+## <a name="broadly-visible-components"></a>광범위하게 보이는 구성 요소
 
 |상수|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
-|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
+|마이크로소프트.비주얼스튜디오.VS콘스탄츠.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
+|마이크로소프트.비주얼스튜디오.VS콘스탄츠.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>파일, 가상 및 실제 폴더 및 하위 프로젝트
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>파일, 가상 및 물리적 폴더 및 하위 프로젝트
 
 |상수|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFile_guid>|6bb5f8ee-4483-11d3-8bcf-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFile_guid>|6bb5f8e-4483-11d3-8bcf-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFolder_guid>|6bb5f8ef-4483-11d3-8bcf-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.SubProject_guid>|EA6618E8-6E24-4528-94BE-6889FE16485C|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.VirtualFolder_guid>|6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c|
@@ -78,22 +78,22 @@ ms.locfileid: "66311165"
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.GeneralPane_guid>|3C24D581-5591-4884-A571-9FE89915CD64|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.SortedBuildOutputPane_guid>|2032B126-7C8D-48AD-8026-0E0348004FC0|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
-|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
+|마이크로소프트.비주얼스튜디오.VS콘스탄츠.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="command-sets-and-properties"></a>명령 집합 및 속성
 
 |상수|GUID|
 |--------------|----------|
-|Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
+|마이크로소프트.비주얼스튜디오.VS콘스탄츠.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
+|마이크로소프트.비주얼스튜디오.VS콘스탄츠.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
 |상수|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000000046|
 
-## <a name="task-list-guids"></a>작업 Guid 목록
+## <a name="task-list-guids"></a>작업 목록 GUID
 
 |상수|GUID|
 |--------------|----------|
@@ -109,24 +109,24 @@ ms.locfileid: "66311165"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>구성 요소 선택기 페이지 Guid
+## <a name="component-selector-page-guids"></a>구성 요소 선택기 페이지 GUID
 
 |상수|GUID|
 |---------------|----------|
-|Microsoft.VisualStudio.VSConstants.GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F990235|
-|Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
-|Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
+|마이크로소프트.비주얼스튜디오.VS콘스탄티드.GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F990235|
+|마이크로소프트.비주얼스튜디오.VS콘스탄츠.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
+|마이크로소프트.비주얼스튜디오.VS콘스탄티즈.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>기타 셸 Guid
+## <a name="miscellaneous-shell-guids"></a>기타 쉘 GUID
 
 |상수|GUID|
 |---------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
-|Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
+|마이크로소프트.비주얼스튜디오.VS콘스탄츠.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [관리 코드의 COM 상수](../extensibility/com-constants-in-managed-code.md)
 - [IDE 상수](../extensibility/ide-constants.md)
-- [S 프로젝트 시스템이 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [프로젝트 의 ystems 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9170532746dfc61cdec6636fb669676a94535de1
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301628"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704260"
 ---
 # <a name="upgrading-projects"></a>프로젝트 업그레이드
 
@@ -179,6 +179,6 @@ ms.locfileid: "79301628"
 
 2. 프로젝트 항목에서 프로젝트 업그레이드 알림을 받으면 Visual **Studio 변환 마법사가** 계속 표시됩니다. 따라서 인터페이스의 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 사용 하 여 마법사 UI에 업그레이드 메시지를 제공 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트](../../extensibility/internals/projects.md)

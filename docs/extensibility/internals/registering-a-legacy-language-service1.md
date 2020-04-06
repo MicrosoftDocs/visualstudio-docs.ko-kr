@@ -1,27 +1,27 @@
 ---
-title: 레거시 언어 Service1 등록 | Microsoft Docs
+title: 레거시 언어 서비스 등록1 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], registering
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6607f96a37c8805c8a01d1d8aa5271ef84f1c6a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 91776382fff1818986049558c9d86e8fce4d0dd7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252369"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705898"
 ---
 # <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스 등록
-MPF (관리 되는 패키지 프레임 워크)에서 언어 서비스는 VSPackage ( [vspackage](../../extensibility/internals/vspackages.md)참조)에 의해 제공 되 레지스트리 키와 항목 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 을 추가 하 여에 등록 됩니다. 이 등록 프로세스는 부분적으로 설치 하는 동안 및 런타임에 부분적으로 수행 됩니다.
+MPF(관리되는 패키지 프레임워크)에서 언어 서비스는 VSPackage(VSPackages 참조)에서 제안되며 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 레지스트리 키와 항목을 추가하여 [등록됩니다.](../../extensibility/internals/vspackages.md) 이 등록 프로세스는 설치 중에 부분적으로, 부분적으로런 타임에 수행됩니다.
 
-## <a name="register-the-language-service-by-using-attributes"></a>특성을 사용 하 여 언어 서비스 등록
- 언어 서비스를 등록 하는 데 사용 되는 특성은 다음과 같습니다.
+## <a name="register-the-language-service-by-using-attributes"></a>특성을 사용하여 언어 서비스 등록
+ 다음 특성은 언어 서비스를 등록하는 데 사용됩니다.
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>
 
@@ -33,10 +33,10 @@ MPF (관리 되는 패키지 프레임 워크)에서 언어 서비스는 VSPacka
 
 - <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>
 
-  이러한 특성은 아래에 설명 되어 있습니다.
+  이러한 특성은 아래에 설명되어 있습니다.
 
-### <a name="provideserviceattribute"></a>ProvideServiceAttribute
- 이 특성은 언어 서비스를 서비스로 등록 합니다.
+### <a name="provideserviceattribute"></a>서비스 속성 제공
+ 이 특성은 언어 서비스를 서비스로 등록합니다.
 
 ### <a name="example"></a>예제
 
@@ -54,8 +54,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute
- 이 특성은 언어 서비스를 특정 언어 서비스로 등록 합니다. 언어 서비스에서 제공 하는 기능을 지정 하는 옵션을 설정할 수 있습니다. 이 예제에서는 언어 서비스에서 제공할 수 있는 옵션의 하위 집합을 보여 줍니다. 언어 서비스 옵션의 전체 집합은을 참조 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>하십시오.
+### <a name="providelanguageserviceattribute"></a>제공언어서비스속성
+ 이 특성은 언어 서비스를 구체적으로 언어 서비스로 등록합니다. 언어 서비스에서 제공하는 기능을 지정하는 옵션을 설정할 수 있습니다. 이 예제에서는 언어 서비스에서 제공할 수 있는 옵션의 하위 집합을 보여 주며 있습니다. 언어 서비스 옵션의 전체 집합은 을 참조하십시오. <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>
 
 ### <a name="example"></a>예제
 
@@ -79,8 +79,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute
- 이 특성은 언어 서비스를 파일 확장명에 연결 합니다. 이 확장명을 가진 파일이 로드 될 때마다 모든 프로젝트에서 언어 서비스가 시작 되어 파일 내용을 표시 하는 데 사용 됩니다.
+### <a name="providelanguageextensionattribute"></a>제공언어확장특성
+ 이 특성은 언어 서비스를 파일 확장과 연결합니다. 해당 확장명이 있는 파일이 로드될 때마다 모든 프로젝트에서 언어 서비스가 시작되고 파일의 내용을 표시하는 데 사용됩니다.
 
 ### <a name="example"></a>예제
 
@@ -98,8 +98,8 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute
- 이 특성은 코드 확장 또는 코드 조각 템플릿을 가져오는 위치를 등록 합니다. 이 정보는 코드 조각 **브라우저** 및 코드 조각이 소스 파일에 삽입 될 때 편집기에서 사용 됩니다.
+### <a name="providelanguagecodeexpansionattribute"></a>제공언어코드확장특성
+ 이 특성은 코드 확장 또는 코드 조각 템플릿을 가져오는 위치를 등록합니다. 이 정보는 코드 **조각 브라우저와** 코드 조각이 소스 파일에 삽입될 때 편집기에서 사용됩니다.
 
 ### <a name="example"></a>예제
 
@@ -124,11 +124,11 @@ namespace TestLanguagePackage
 }
 ```
 
-### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute
- 이 특성은 **옵션** 대화 상자의 **텍스트 편집기** 범주에 표시 되는 속성 페이지를 등록 합니다. 각 페이지에 대해 이러한 특성 중 하나를 사용 하 여 언어 서비스에 대해 표시 합니다. 트리 구조에서 페이지를 구성 해야 하는 경우 추가 특성을 사용 하 여 트리의 각 노드를 정의 합니다.
+### <a name="providelanguageeditoroptionpageattribute"></a>제공언어편집기옵션페이지속성
+ 이 특성은 **텍스트 편집기** 범주 아래의 **옵션** 대화 상자에 표시할 속성 페이지를 등록합니다. 언어 서비스에 표시할 각 페이지에 대해 이러한 특성 중 하나를 사용합니다. 트리 구조에서 페이지를 구성해야 하는 경우 추가 특성을 사용하여 트리의 각 노드를 정의합니다.
 
 ### <a name="example"></a>예제
- 이 예제에서는 두 개의 속성 페이지, **옵션** 및 **들여쓰기**와 두 번째 속성 페이지를 포함 하는 하나의 노드를 보여 줍니다.
+ 이 예제에서는 두 개의 속성 페이지인 **옵션** 및 **들여쓰기**및 두 번째 속성 페이지를 포함하는 노드 를 보여 주십습니다.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -159,11 +159,11 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="proffer-the-language-service-at-run-time"></a>런타임에 언어 서비스 Proffer
- 언어 패키지가 로드 될 때 언어 서비스가 준비 되었음을 알려 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 주어 야 합니다. 이렇게 하려면 서비스를 proffering 합니다. 이 작업은 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드에서 수행 됩니다. 또한 유휴 기간 동안 언어 서비스를 호출 하는 타이머를 시작 해야 백그라운드 구문 분석을 수행할 수 있습니다. 클래스를 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 통해를 구현한 경우이 유휴 타이머는 문서 속성을 업데이트 하는 데도 사용 됩니다. 타이머를 지원 하기 위해 패키지는 인터페이스를 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> 구현 해야 합니다. 메서드는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> 완전히 구현 되어야 하며 나머지 메서드는 기본값을 반환할 수 있습니다.
+## <a name="proffer-the-language-service-at-run-time"></a>런타임에 언어 서비스 제공
+ 언어 패키지가 로드되면 언어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 서비스가 준비되었는 것을 알려야 합니다. 서비스를 제공 하 여이 작업을 수행 합니다. 이 작업은 메서드에서 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 수행됩니다. 또한 백그라운드 구문 분석이 수행될 수 있도록 유휴 기간 동안 언어 서비스를 호출하는 타이머를 시작해야 합니다. 이 유휴 타이머는 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스를 통해 구현한 경우 문서 속성을 업데이트하는 데도 사용됩니다. 타이머를 지원하려면 패키지가 인터페이스를 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> 구현해야 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> 합니다(메서드만 완전히 구현해야 하며 나머지 메서드는 기본값을 반환할 수 있음).
 
 ### <a name="example"></a>예제
- 이 예제에서는 서비스를 proffering 하 고 유휴 타이머를 제공 하는 일반적인 방법을 보여 줍니다.
+ 이 예제에서는 서비스를 제공하고 유휴 타이머를 제공하는 일반적인 방법을 보여 주며, 이 예제에서는 서비스를 제공합니다.
 
 ```csharp
 
