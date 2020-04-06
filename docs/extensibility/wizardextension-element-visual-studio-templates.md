@@ -1,5 +1,5 @@
 ---
-title: WizardExtension 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 마법사 확장 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfd46573f70b31559f9d6c4749c142d763537764
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748944"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740379"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 요소(Visual Studio 템플릿)
-템플릿 마법사를 사용자 지정 하기 위한 등록 요소를 포함 합니다.
+템플릿 마법사를 사용자 지정하기 위한 등록 요소가 포함되어 있습니다.
 
- > \<VSTemplate \<WizardExtension >
+ \<VS템플릿> ... \<마법사확장>
 
 ## <a name="syntax"></a>구문
 
@@ -39,22 +39,22 @@ ms.locfileid: "72748944"
  다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음.
+ 없음
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[어셈블리](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|필수적 요소입니다.<br /><br /> 전역 어셈블리 캐시에 표시 되는 어셈블리의 이름 또는 강력한 이름을 지정 합니다. @No__t_1 요소에 `Assembly` 요소가 하나 이상 있어야 합니다.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|필수적 요소입니다.<br /><br /> @No__t_0 인터페이스를 구현 하는 클래스의 정규화 된 이름입니다. @No__t_1 요소에 `FullClassName` 요소가 하나 이상 있어야 합니다.|
+|[어셈블리](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|필수 요소입니다.<br /><br /> 전역 어셈블리 캐시에 나타나는 어셈블리의 이름이나 강력한 이름을 지정합니다. 요소에 하나 이상의 `Assembly` 요소가 있어야 합니다. `WizardExtension`|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|필수 요소입니다.<br /><br /> `IWizard` 인터페이스를 구현하는 클래스의 정규화된 이름입니다. 요소에 하나 이상의 `FullClassName` 요소가 있어야 합니다. `WizardExtension`|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[템플릿의](../extensibility/vstemplate-element-visual-studio-templates.md)|프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함 합니다.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대한 모든 메타데이터가 들어 있습니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  `WizardExtension`은 `VSTemplate`의 선택적 자식 요소입니다.
 
 ## <a name="example"></a>예제
