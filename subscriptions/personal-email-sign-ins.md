@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Visual Studio 구독 - 구독자의 Hotmail 또는 Gmail 주소가 보이는 이유는 무엇인가요?
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550331"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808334"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio 구독 - 구독자의 개인 계정이 보이는 이유는 무엇인가요?
 기업이 VLSC(볼륨 라이선스 서비스 센터)에서 새 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)로 마이그레이션한 후 관리자는 일부 구독자의 “로그인 전자 메일 주소”에 Hotmail 또는 Outlook과 같은 개인 전자 메일 주소가 표시되는 것을 발견했습니다.  자세한 내용은 [이 비디오](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6)를 참조하세요.
@@ -28,6 +28,9 @@ ms.locfileid: "79550331"
 > [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)의 최신 구독자 환경은 회사/학교 및 MSA(Microsoft 계정) ID 유형을 둘 다 지원합니다.
 
 ## <a name="solution"></a>솔루션
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 문제를 해결하려면 **전자 메일 연결** 단추를 선택하면 됩니다. 그러면 시스템에서는 이름과 성이 일치하는지 여부에 따라 MSA가 있는 계정을 조직의 Azure AD(Azure Active Directory)에 있는 기존 사용자와 대조하려고 합니다. 오류가 발생하는 경우 일치 항목 오른쪽의 **X**를 클릭하여 일치 항목을 제거할 수 있습니다.  
 
 > [!div class="mx-imgBorder"]

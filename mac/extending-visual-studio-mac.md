@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75852032"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544023"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -161,7 +161,7 @@ public enum DateInserterCommands
 
 ## <a name="extending-the-new-editor"></a>새 편집기 확장
 
-Mac용 Visual Studio에서 [새로 도입된 네이티브 Cocoa 텍스트 편집기 UI](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes#RTW)는 Windows용 Visual Studio의 동일한 편집기 계층을 기반으로 해서 구축되었습니다.
+Mac용 Visual Studio에서 [새로 도입된 네이티브 Cocoa 텍스트 편집기 UI](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)는 Windows용 Visual Studio의 동일한 편집기 계층을 기반으로 해서 구축되었습니다.
 
 Visual Studio와 Mac용 Visual Studio 간에 편집기를 공유할 경우의 많은 이점 중 하나는 Visual Studio 편집기를 대상으로 하는 코드를 Mac용 Visual Studio에서 실행되도록 조정할 수 있다는 것입니다.
 

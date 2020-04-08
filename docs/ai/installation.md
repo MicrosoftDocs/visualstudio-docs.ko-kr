@@ -2,19 +2,20 @@
 title: AI 도구 설치
 description: Visual Studio용 AI 도구를 설치하는 방법을 설명합니다.
 keywords: AI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915806"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638581"
 ---
 # <a name="installation"></a>설치
 
@@ -130,7 +131,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > 위의 명령은 기존 구형 또는 비공식(예: http://www.lfd.uci.edu/~gohlke/pythonlibs/ 에서 제공하는 Windows용 타사 패키지) NumPy 및 SciPy를 최신 공식 버전으로 업그레이드합니다.
 
-### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive 도구 키트(CNTK)
+### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft CNTK(Cognitive Toolkit)
 
 [Microsoft Cognitive Toolkit](https://cntk.ai)는 지시된 그래프를 통해 일련의 계산 단계로 신경망을 설명하는 통합 심층 학습 도구 키트입니다. CNTK은 Python 및 BrainScript 프로그래밍 언어를 모두 지원합니다.
 
@@ -156,7 +157,7 @@ CNTK Python 패키지를 설치하려면 [CNTK를 설치하는 방법](/cognitiv
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet(인큐베이팅)](https://mxnet.incubator.apache.org/)은 효율성과 유연성을 위해 설계된 심층 학습 프레임워크입니다. 이를 통해 **기호 및 명령적 프로그래밍**을 [혼합](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)하여 효율성과 생산성을 극대화할 수 있습니다.
+[Apache MXNet(인큐베이팅)](https://mxnet.incubator.apache.org/)은 효율성과 유연성을 위해 설계된 심층 학습 프레임워크입니다. 이를 통해 [기호 및 명령적 프로그래밍](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)을 **혼합**하여 효율성과 생산성을 극대화할 수 있습니다.
 
 MXNet을 설치하려면 터미널에서 다음 명령을 실행합니다.
 
