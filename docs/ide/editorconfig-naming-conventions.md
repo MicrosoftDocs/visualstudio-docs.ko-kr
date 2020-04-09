@@ -1,21 +1,21 @@
 ---
 title: EditorConfig 파일에 대한 .NET 명명 규칙
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588605"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544000"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig에 대한 .NET 명명 규칙
 
@@ -25,7 +25,7 @@ ms.locfileid: "75588605"
 
 시작하려면 규칙 전체를 설명하기 위해 필요한 각각의 속성에서 사용할 명명 규칙에 제목을 선택합니다. 예를 들어 `public_members_must_be_capitalized`는 명명 규칙에 적합한 설명 이름입니다. 이 페이지에서는 이후 섹션에서 **<namingRuleTitle\>** 로 선택하는 제목을 참조하겠습니다.
 
-## <a name="symbols"></a>Symbols
+## <a name="symbols"></a>기호
 
 먼저 명명 규칙을 적용할 기호 그룹을 식별합니다. 이 속성의 형식은 다음과 같습니다.
 
@@ -42,20 +42,23 @@ ms.locfileid: "75588605"
 허용 가능한 값은 아래와 같으며, 이러한 값을 쉼표로 구분하여 여러 값을 지정할 수 있습니다.
 
 - \*(모든 기호를 지정하려면 이 값을 사용합니다.)
-- 네임스페이스
+- namespace
 - class
 - struct
-- 인터페이스
+- interface(인터페이스)
 - enum
-- 속성
-- method
-- 필드
-- 이벤트
-- 대리자
-- 매개 변수(parameter)
+- 속성(property)
+- 메서드
+- 필드(field)
+- event
+- 대리자(delegate)
+- 매개 변수
 - type_parameter
-- local
+- 로컬
 - local_function
+
+> [!NOTE] 
+> 튜플 멤버는 현재 지원되지 않습니다.
 
 ### <a name="accessibility-levels-of-symbols"></a>기호의 액세스 가능성 수준
 
@@ -66,15 +69,15 @@ ms.locfileid: "75588605"
 허용 가능한 값은 아래와 같으며, 이러한 값을 쉼표로 구분하여 여러 값을 지정할 수 있습니다.
 
 - \*(모든 액세스 가능성 수준을 지정하려면 이 값을 사용합니다.)
-- 공공
+- public
 - internal or friend
-- 프라이빗
+- private
 - protected
 - protected\_internal or protected_friend
 - private\_protected
-- local
+- 로컬
 
-   `local` 접근성 수준은 메서드 내에 정의된 기호에 적용됩니다. 이 접근성 수준은 코드에서 접근성을 지정할 수 있는 기호의 명명 규칙을 정의하는 데 유용합니다. 예를 들어 상수의 명명 규칙(`applicable_accessibilities = local`)에서 `required_modifiers = const`을 지정하면 규칙은 메서드 내에 정의된 상수에만 적용되고 형식에 정의된 상수에는 적용되지 않습니다.
+   `local` 접근성 수준은 메서드 내에 정의된 기호에 적용됩니다. 이 접근성 수준은 코드에서 접근성을 지정할 수 있는 기호의 명명 규칙을 정의하는 데 유용합니다. 예를 들어 상수의 명명 규칙(`required_modifiers = const`)에서 `applicable_accessibilities = local`을 지정하면 규칙은 메서드 내에 정의된 상수에만 적용되고 형식에 정의된 상수에는 적용되지 않습니다.
 
    ```csharp
    class TypeName
@@ -107,12 +110,12 @@ ms.locfileid: "75588605"
    > [!NOTE]
    > `static` 또는 `shared` 기호에 대한 명명 규칙이 있는 경우 암시적으로 static인 `const` 기호에도 적용됩니다. `static` 명명 규칙을 `const` 기호에 적용하지 않으려면 `const` 기호에 대한 별도의 명명 규칙을 만듭니다.
 
-명명 규칙은 *에 지정된 ‘모든’ 한정자가 있는 시그니처와 일치시킵니다.* `required_modifiers` 이 속성을 생략하면 빈 목록의 기본값이 사용되므로 일치 항목에 특정 한정자가 필요하지 않습니다. 즉, 기호 한정자가 이 규칙의 적용 여부에 영향을 주지 않습니다.
+명명 규칙은 `required_modifiers`에 지정된 ‘모든’ 한정자가 있는 시그니처와 일치시킵니다.  이 속성을 생략하면 빈 목록의 기본값이 사용되므로 일치 항목에 특정 한정자가 필요하지 않습니다. 즉, 기호 한정자가 이 규칙의 적용 여부에 영향을 주지 않습니다.
 
 > [!TIP]
-> `*`에 대해 `required_modifiers` 값을 지정하지 마세요. 대신 `required_modifiers` 속성을 모두 생략하며 명명 규칙은 모든 종류의 한정자에 적용됩니다.
+> `required_modifiers`에 대해 `*` 값을 지정하지 마세요. 대신 `required_modifiers` 속성을 모두 생략하며 명명 규칙은 모든 종류의 한정자에 적용됩니다.
 
-## <a name="style"></a>Style
+## <a name="style"></a>스타일
 
 명명 규칙을 적용할 기호 그룹을 식별했으면, 이제 명명 스타일을 설명할 수 있습니다. 스타일은 이름에 특정 접두사 또는 특정 접미사를 사용거나 이름의 개별 단어를 특정 기호로 분리하도록 할 수 있습니다. 대/소문자 스타일을 지정할 수도 있습니다. 이 스타일의 형식은 다음과 같습니다.
 
@@ -163,9 +166,9 @@ ms.locfileid: "75588605"
 
 다음 표에서는 허용될 수 있는 심각도 값 및 해당 의미를 보여줍니다.
 
-심각도 | 영향
+심각도 | 효과
 ------------ | -------------
-none | 규칙은 전혀 표시되지 않습니다.
+없음 | 규칙은 전혀 표시되지 않습니다.
 리팩터링 또는 자동 | 이 스타일을 따르지 않을 경우 사용자에게 아무 것도 표시되지 않지만 자동 생성 코드는 이 스타일을 따릅니다.
 suggestion | 이 스타일을 따르지 않을 경우 처음 두 문자에 점선이 밑줄로 표시되어 사용자에게 제안으로 표시됩니다. 컴파일 시간에 영향을 주지 않습니다.
 warning | 이 스타일을 따르지 않을 경우 **오류 목록**에서 컴파일러 경고가 표시됩니다.
@@ -230,7 +233,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ![명명 규칙 경고](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [언어 규칙](editorconfig-language-conventions.md)
 - [서식 지정 규칙](editorconfig-formatting-conventions.md)

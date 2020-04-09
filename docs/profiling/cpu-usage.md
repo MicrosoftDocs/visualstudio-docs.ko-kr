@@ -1,7 +1,7 @@
 ---
 title: CPU 사용량 분석 | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553622"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638841"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 사용량 분석
 
 앱의 성능 문제를 조사하기 위한 좋은 방법은 CPU 사용량을 이해하는 것입니다. **CPU 사용량** 성능 도구는 C++, C#/Visual Basic 및 JavaScript 앱에서 코드 실행에 소요된 CPU 시간 및 백분율을 보여줍니다.
 
-**CPU 사용량** 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Microsoft Store 앱에서 실행하거나 실행 중인 앱 또는 프로세스에 연결할 수 있습니다. 로컬이나 원격 머신에서 또는 시뮬레이터나 에뮬레이터에서 도구를 실행할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+**CPU 사용량** 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Microsoft Store 앱에서 실행하거나 실행 중인 앱 또는 프로세스에 연결할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
 디버깅을 사용하거나 사용하지 않고 **CPU 사용량** 도구를 실행할 수 있습니다. 디버거에서 CPU 프로파일링을 설정하거나 해제할 수 있으며 CPU 사용량에 대한 함수별 분석을 볼 수 있습니다. 실행이 일시 중지된 경우 CPU 사용량 결과를 볼 수 있습니다(예: 중단점에서).
 
@@ -33,9 +33,9 @@ ms.locfileid: "62553622"
 
 ## <a name="collect-cpu-usage-data"></a>CPU 사용량 데이터 수집
 
-1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 머신**을 배포 대상으로 선택합니다.
+1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
 
-    ![릴리스 및 로컬 컴퓨터 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "릴리스 및 로컬 컴퓨터 선택")
+    ![릴리스 및 로컬 머신 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "릴리스 및 로컬 머신 선택")
 
 1. **디버그** > **성능 프로파일러**를 선택합니다.
 

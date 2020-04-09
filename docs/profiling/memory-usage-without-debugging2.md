@@ -1,7 +1,7 @@
 ---
 title: 디버깅하지 않고 메모리 사용량 분석 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/15/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,28 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256246"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638820"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>디버거 없이 메모리 사용량 분석
 
 **메모리 사용량** 도구는 앱의 메모리 사용량을 모니터링합니다. 이 도구를 사용하여 Visual Studio에서 활발하게 개발 중인 시나리오의 실시간 메모리 효과를 학습할 수 있습니다. 앱의 메모리 상태에 대한 자세한 스냅샷을 만들고 스냅샷을 비교하여 메모리 문제의 근본 원인을 찾을 수 있습니다.
 
-**메모리 사용량** 도구는 디버거를 사용하거나 사용하지 않고 실행할 수 있습니다. 다음 지침은 Visual Studio **성능 프로파일러**에서 디버거 없이 **메모리 사용량** 도구를 사용하는 방법을 보여줍니다.
+**메모리 사용량** 도구는 [디버거를 사용하거나 사용하지 않고](../profiling/running-profiling-tools-with-or-without-the-debugger.md) 실행할 수 있습니다. 다음 문서에서는 Visual Studio **성능 프로파일러**에서 디버거 없이 **메모리 사용량** 도구를 사용하는 방법을 보여줍니다.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>메모리 사용량 진단 세션
 
 **메모리 사용량 진단 세션을 시작하려면:**
 
-1. Visual Studio에서 C# 유니버설 Windows(UWP) 프로젝트를 엽니다.
+1. Visual Studio에서 프로젝트를 엽니다.
+
+   메모리 사용량 도구는 .NET, ASP.NET, 네이티브 또는 혼합 모드(.NET 및 네이티브) 앱을 지원합니다.
+
+1. 디버그 메뉴에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
 
 1. 메뉴 모음에서 **디버그** > **성능 프로파일러**를 선택합니다.
 
-1. **메모리 사용량**을 선택한 다음, **시작**을 선택합니다.
+1. **사용 가능한 도구**에서 **메모리 사용량**을 선택한 다음, **시작**을 선택합니다.
 
    ![메모리 사용량 진단 세션 시작](../profiling/media/memuse_start_diagnosticssession.png "메모리 사용량 진단 세션 시작")
 
@@ -129,7 +133,7 @@ ms.locfileid: "80256246"
 |||
 |-|-|
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|
-|**Count**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|
+|**개수**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|
 |**크기(바이트)**|유형의 경우 스냅샷에 있는 모든 유형 인스턴스의 크기가 인스턴스의 포함된 개체 크기보다 작습니다.<br /><br /> 인스턴스의 경우 개체의 크기가 인스턴스에 포함된 개체의 크기보다 작습니다. |
 |**포함 크기(바이트)**|포함된 개체 크기를 비롯한 유형의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
@@ -210,7 +214,7 @@ ms.locfileid: "80256246"
 |**포함 크기 차이(바이트)**|유형의 경우 개체의 개체 크기를 비롯한 기본 스냅샷과 이전 스냅샷 간 모든 인스턴스 유형의 크기 차이입니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [JavaScript 메모리](../profiling/javascript-memory.md)
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

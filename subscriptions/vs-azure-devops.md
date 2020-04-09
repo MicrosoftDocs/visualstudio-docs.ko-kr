@@ -1,17 +1,18 @@
 ---
 title: Visual Studio 구독자용 Azure DevOps 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Azure DevOps를 Visual Studio 구독자로 사용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
+ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79306742"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80607176"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 구독자용 Azure DevOps 혜택
 적극적인 Visual Studio 구독자는 구독 혜택에 포함된 Azure DevOps의 다양한 기능을 사용할 수 있습니다. 조직을 직접 만들었든 또는 다른 사용자에 의해 추가되었든, 멤버로 속해 있는 각 Azure DevOps 조직에서 이러한 동일한 기능을 사용할 수 있습니다.
@@ -32,7 +33,7 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | Azure Boards & Repos(기본), Azure Test Plans                                              |  예          |
 ||
 
-<sup>1</sup>  *포함:  NFR(전매금지), MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner), Microsoft 파트너 네트워크(Enterprise), BizSpark, MCT Software & Services Developer, FTE. 제외: MCT Software & Services, Imagine.*
+<sup>1</sup>  포함:  *NFR(전매금지), MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner), Microsoft 파트너 네트워크(Enterprise), BizSpark, MCT Software & Services Developer, FTE. 제외: MCT Software & Services, Imagine.*
 
 
 > [!NOTE]
@@ -46,9 +47,15 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 - Visual Studio IDE, Azure DevOps 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 - [Azure DevOps 설명서](/azure/devops/)를 참조하세요.
 
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>다음 단계
 Azure DevOps 기능에 대한 자세한 정보:
-- [Azure Boards & Repos(기본)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure Boards & Repos(기본 플랜)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 

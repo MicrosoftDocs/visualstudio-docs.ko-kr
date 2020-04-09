@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558127"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638698"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>명령줄에서 애플리케이션 성능 측정
 
@@ -29,9 +29,11 @@ ms.locfileid: "77558127"
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
-* Visual Studio 2019 미리 보기 3 이상 버전
+* Visual Studio 2019 이상 버전
 
 * 명령줄 도구 사용 경험
+
+* Visual Studio가 설치되어 있지 않은 원격 머신에서 성능 정보를 수집하려면 원격 머신에 [Visual Studio용 성능 도구](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019)를 설치합니다. 도구의 버전이 Visual Studio의 버전과 일치해야 합니다.
 
 ## <a name="collect-performance-data"></a>성능 데이터 수집
 
@@ -65,7 +67,7 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
 1. 이전 명령의 파일 출력으로 이동하여 Visual Studio에서 열어 수집된 정보를 검사합니다.
 
-## <a name="config_file"></a> 에이전트 구성 파일
+## <a name="agent-configuration-files"></a><a name="config_file"></a> 에이전트 구성 파일
 
 컬렉션 에이전트는 측정하려는 항목에 따라 서로 다른 유형의 데이터를 수집하는 상호 교환이 가능한 구성 요소입니다.
 

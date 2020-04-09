@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984890"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543751"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
@@ -29,7 +29,7 @@ Mac용 Visual Studio를 엽니다. 시작 페이지에서 **새 프로젝트...*
 
 그러면 애플리케이션을 만들 템플릿을 선택할 수 있는 새 프로젝트 대화 상자가 표시됩니다.
 
-ASP.NET Core 애플리케이션 빌드를 시작하기 위해 미리 작성된 템플릿을 제공하는 많은 프로젝트가 있습니다. 다음과 같습니다.
+ASP.NET Core 애플리케이션 빌드를 시작하기 위해 미리 작성된 템플릿을 제공하는 많은 프로젝트가 있습니다. 이러한 항목은 다음과 같습니다.
 
 - **.NET Core &gt; ASP.NET Core 빈 웹 애플리케이션**
 - **.NET Core > ASP.NET Core 웹앱**
@@ -42,7 +42,7 @@ ASP.NET Core 애플리케이션 빌드를 시작하기 위해 미리 작성된 �
 
 ![새로운 ASP.NET Core 빈 프로젝트 보기](media/asp-net-core-image4.png)
 
-ASP.NET Core 빈 웹 애플리케이션은 두 개의 기본 파일 **Program.cs** 및 **Startup.cs**가 포함된 웹 애플리케이션을 만듭니다. 두 파일은 아래에서 설명합니다. 또한 ASP.NET Core, .NET Core 프레임워크, 프로젝트를 빌드하는 MSBuild 대상 등 프로젝트의 NuGet 패키지 종속성을 포함하는 종속성 폴더를 만듭니다.
+ASP.NET Core 빈 웹 애플리케이션은 두 개의 기본 파일 **Program.cs** 및 **Startup.cs**가 포함된 웹 애플리케이션을 만듭니다. 또한 ASP.NET Core, .NET Core 프레임워크, 프로젝트를 빌드하는 MSBuild 대상 등 프로젝트의 NuGet 패키지 종속성을 포함하는 종속성 폴더를 만듭니다.
 
 ![종속성을 표시하는 Solution Pad](media/asp-net-core-image12.png)
 
@@ -75,7 +75,7 @@ ASP.NET Core 앱이 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 인스
 
 ### <a name="startupcs"></a>Startup.cs
 
-앱의 시작 클래스는 `UseStartup()`의 `WebHostBuilder` 메서드에서 지정됩니다. 이 클래스에서 요청 처리 파이프라인을 지정하고 모든 서비스를 구성합니다.
+앱의 시작 클래스는 `WebHostBuilder`의 `UseStartup()` 메서드에서 지정됩니다. 이 클래스에서 요청 처리 파이프라인을 지정하고 모든 서비스를 구성합니다.
 
 프로젝트에서 **Startup.cs** 파일을 열고 검사합니다.
 
@@ -112,7 +112,7 @@ public class Startup
 
 `Configure`를 사용하면 [미들웨어](/aspnet/core/fundamentals/middleware)를 통해 요청 파이프라인을 구성할 수 있습니다. ASP.NET 애플리케이션 파이프라인 내에서 요청과 응답을 처리하는 데 사용되는 구성 요소입니다. HTTP 파이프라인은 순서대로 호출되는 많은 요청 대리자로 구성됩니다. 각 대리자는 요청을 직접 처리하거나 다음 대리자에 전달하도록 선택할 수 있습니다.
 
-`Run`의 `Map`, `Use`, `IApplicationBuilder` 메서드를 사용하여 대리자를 구성할 수 있지만, `Run` 메서드는 다음 대리자를 호출하지 않으며 항상 파이프라인의 끝에 사용해야 합니다.
+`IApplicationBuilder`의 `Run`, `Map`, `Use` 메서드를 사용하여 대리자를 구성할 수 있지만, `Run` 메서드는 다음 대리자를 호출하지 않으며 항상 파이프라인의 끝에 사용해야 합니다.
 
 미리 작성된 템플릿의 `Configure` 메서드는 몇 가지 작업을 수행하도록 빌드되었습니다. 첫째, 개발하는 동안 사용할 예외 처리 페이지를 구성합니다. 그런 다음 간단한 “Hello World”를 사용하여 요청하는 웹 페이지에 응답을 보냅니다.
 
@@ -133,7 +133,7 @@ Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작
 ASP.NET Core 앱은 MVC(모델-뷰-컨트롤러) 디자인 패턴을 사용하여 앱의 각 부분에 대한 책임을 논리적으로 구분합니다. MVC는 다음과 같이 구성됩니다.
 
 - **모델**: 앱의 데이터를 나타내는 클래스입니다.
-- **뷰**: 앱의 사용자 인터페이스(대개 모델 데이터임)를 표시합니다.
+- **보기**: 앱의 사용자 인터페이스(대개 모델 데이터임)를 표시합니다.
 - **컨트롤러**: 브라우저 요청을 처리하고 사용자 입력 및 상호 작용에 응답하는 클래스입니다.
 
 MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspnet/core/mvc/overview) 가이드를 참조하세요.
@@ -167,7 +167,7 @@ MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspne
     }
     ```
 
-3. `Microsoft.AspNetCore.Mvc`종속성**폴더를 마우스 오른쪽 단추로 클릭하고**패키지 추가...**를 선택하여**  종속성을 프로젝트에 추가합니다.
+3. **종속성** 폴더를 마우스 오른쪽 단추로 클릭하고 **패키지 추가...** 를 선택하여 `Microsoft.AspNetCore.Mvc` 종속성을 프로젝트에 추가합니다.
 
 4. 검색 상자를 사용하여 `Microsoft.AspNetCore.Mvc`의 NuGet 라이브러리를 찾은 다음 **패키지 추가**를 선택합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며, 필수 종속성에 대한 다양한 라이선스에 동의하라는 메시지가 표시될 수도 있습니다.
 
@@ -216,7 +216,7 @@ MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspne
 
     ![브라우저에서 앱 실행](media/asp-net-core-image13.png)
 
-9. `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy`를 올바른 포트로 바꿔 `xxxx`로 이동하면 다음이 같이 표시됩니다.
+9. `xxxx`를 올바른 포트로 바꿔 `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy`로 이동하면 다음이 같이 표시됩니다.
 
     ![인수를 사용하여 브라우저에서 앱 실행](media/asp-net-core-image10.png)
 
@@ -234,7 +234,7 @@ Mac OS 10.11(El Capitan) 이상에 .NET Core를 수동으로 설치해야 하는
 
 이 가이드에서는 ASP.NET Core를 소개했습니다. ASP.NET Core란 무엇이고 언제 사용해야 하는지를 설명하고, Mac용 Visual Studio에서 사용하는 방법에 대한 정보를 제공했습니다.
 이후 단계에 대한 자세한 내용은 다음 가이드를 참조하세요.
-- [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc) 문서
+- [ASP.NET Core](/aspnet/core/) 문서
 - [네이티브 모바일 애플리케이션용 백 엔드 서비스 만들기](/aspnet/core/mobile/native-mobile-backend) - Xamarin.Forms 앱용 ASP.NET Core를 사용하여 REST 서비스를 빌드하는 방법을 보여 줍니다.
 - [ASP.NET Core 실습 교육](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
 
