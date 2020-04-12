@@ -75,7 +75,6 @@
 ### [슈퍼 관리자 및 관리자](admin-roles.md)
 ### [계약 기본 설정 지정](admin-prefs.md)
 ### [개요](using-admin-portal.md)
-### [비디오 자습서: 관리 포털 사용](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### 구독 할당
 #### [단일 사용자 추가](assign-license.md)
 #### [여러 사용자 추가](assign-license-bulk.md)
