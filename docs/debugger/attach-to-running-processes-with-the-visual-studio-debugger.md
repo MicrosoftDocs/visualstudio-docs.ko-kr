@@ -1,7 +1,7 @@
 ---
 title: 디버거로 실행 중인 프로세스에 연결 | 마이크로 소프트 문서
 ms.custom: seodec18
-ms.date: 04/08/2019
+ms.date: 04/14/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5305be7615e426d7792d8dd3fefb2579e2ab6be
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233017"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385488"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스가 실행되면**처리에 대한** **디버그** > 첨부를 선택하거나 Visual Studio에서 **Ctrl**+**Alt**+**P를** 누르고 **프로세스에 연결 대화** 상자를 사용하여 디버거를 프로세스에 연결합니다.
@@ -253,15 +253,15 @@ Visual Studio 디버거를 처리하기 첨부 대화 상자를 사용하여 로
 
 디버거에서 C++로 작성된 코드에 연결하려면 코드에 `DebuggableAttribute`가 있어야 합니다. 이 특성은 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 링커 옵션으로 링크하여 자동으로 코드에 추가할 수 있습니다.
 
-클라이언트 쪽 스크립트 디버깅의 경우 브라우저에서 스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome에서 클라이언트 쪽 스크립트를 디버깅하려면 **웹 키트를** 코드 유형으로 선택하고 앱 유형에 따라 모든 Chrome 인스턴스를 닫고 디버깅 모드에서 브라우저를 시작해야 할 수 있습니다(명령줄에서 입력). `chrome.exe --remote-debugging-port=9222`
+클라이언트 쪽 스크립트 디버깅의 경우 브라우저에서 스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome에서 클라이언트 쪽 스크립트를 디버깅하려면 코드 유형으로 **JavaScript(크롬)** 또는 **자바스크립트(Microsoft Edge - 크롬)를** 선택하고 앱 유형에 따라 모든 Chrome 인스턴스를 닫고 `chrome.exe --remote-debugging-port=9222` 디버깅 모드에서 브라우저를 시작해야 할 수 있습니다(명령줄에서 입력). 이전 버전의 Visual Studio에서는 Chrome용 스크립트 디버거가 **웹 키트였습니다.**
 
 Visual Studio에서 연결할 실행 중인 프로세스를 빠르게 선택하려면 **Ctrl**+**Alt**+**P를**입력한 다음 프로세스 이름의 첫 번째 문자를 입력합니다.
 
 |시나리오|디버그 방법|프로세스 이름|메모 및 링크|
 |-|-|-|-|
 |IIS 서버에서 원격 디버그 ASP.NET 4 또는 4.5|원격 도구 사용 및 **프로세스에 연결**|*w3wp.exe*|[원격 IIS 컴퓨터에서 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 보기|
-|IIS 서버의 코어ASP.NET 원격 디버그|원격 도구 사용 및 **프로세스에 연결**|*dotnet.exe* 또는 *앱네임.exe*|앱 배포의 경우 [IIS에 게시를](https://docs.asp.net/en/latest/publishing/iis.html)참조하십시오. 디버깅에 대 한 [참조 원격 IIS 컴퓨터에서 코어에 ASP.NET 원격 디버깅](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|지원되는 앱 유형에 대해 로컬 IIS 서버에서 클라이언트 측 스크립트 디버그 |**프로세스에 연결 사용**|*크롬.exe,* *마이크로 소프트 에지CP.exe,* 또는 *iexplore.exe*|스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome의 경우 디버그 모드에서 Chrome을 실행하고 **연결** 필드에서 **웹킷 코드를** 선택해야 합니다.|
+|IIS 서버의 코어ASP.NET 원격 디버그|원격 도구 사용 및 **프로세스에 연결**|*w3wp.exe* 또는 *닷넷.exe*|.NET Core 3부터 *w3wp.exe* 프로세스는 기본 [인앱 호스팅 모델에](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)사용됩니다. 앱 배포의 경우 [IIS에 게시를](/aspnet/core/host-and-deploy/iis/)참조하십시오. 자세한 내용은 원격 [IIS 컴퓨터에서 코어ASP.NET 원격 디버깅을](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach) 참조하세요.|
+|지원되는 앱 유형에 대해 로컬 IIS 서버에서 클라이언트 측 스크립트 디버그 |**프로세스에 연결 사용**|*크롬.exe,* *마이크로 소프트 에지CP.exe,* 또는 *iexplore.exe*|스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome의 경우 디버그 모드(명령줄에서 `chrome.exe --remote-debugging-port=9222` 입력)에서 Chrome을 실행하고 필드에 연결 필드에서 **JavaScript(크롬)를** 선택해야 합니다. **Attach to**|
 |로컬 컴퓨터에서 C#, 시각적 기본 또는 C++ 앱 디버깅|표준**디버깅(F5)** 또는 **프로세스에 연결**|*\<앱 네임>.exe*|대부분의 시나리오에서 표준 디버깅을 사용하고 **프로세스에 연결하지**않습니다.|
 |Windows 데스크톱 앱원격 디버그|원격 도구|해당 없음| [C# 또는 비주얼 베이직 앱](../debugger/remote-debugging-csharp.md) 원격 디버그 를 참조하거나 [C++ 앱 원격 디버깅](../debugger/remote-debugging-cpp.md)|
 |리눅스에서 디버그 .NET 코어|**프로세스에 연결 사용**|*dotnet.exe*|SSH를 사용하려면 [SSH를 사용하여 Linux에서 실행되는 원격 디버그 .NET 코어를](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)참조하십시오. |
@@ -307,7 +307,7 @@ Visual Studio에서 연결할 실행 중인 프로세스를 빠르게 선택하�
 
     이렇게 하면 연결이 완전히 실패하고 자세한 오류 메시지가 나타납니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [여러 프로세스 디버그](../debugger/debug-multiple-processes.md)
 - [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)
