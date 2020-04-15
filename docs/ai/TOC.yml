@@ -1,7 +1,7 @@
 - name: Visual Studio Tools for AI
   items:
     - name: Visual Studio Tools for AI
-      href: index.yml
+      href: overview.md
     - name: 개요
       href: about-ai-tools.md
     - name: 설치
@@ -26,7 +26,7 @@
               href: create-project.md
             - name: GitHub 리포지토리에서 프로젝트 만들기
               href: create-project-repo.md
-        - name: 모델 학습
+        - name: 모델 교육
           href: train-model.md
         - name: 작업 세부 정보 보기
           href: job-details.md
