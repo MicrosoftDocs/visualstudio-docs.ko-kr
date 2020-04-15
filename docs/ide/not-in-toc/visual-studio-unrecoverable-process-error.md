@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206fcddca51f8e770e013ff67de6ae3d5562f633
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1879be46498d851eec0fbfce71b2328bdfc9afb
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585797"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224442"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 복구할 수 없는 프로세스 오류
 
@@ -34,15 +34,15 @@ Visual Studio에서는 여러 out-of-proc 프로세스를 사용하여 필요한
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
 - PerfWatson2.exe
+- ServiceHub.Host.CLR.x86.exe
 - ServiceHub.Host.Node.x86.exe
 - ServiceHub.IdentityHost.exe
-- ServiceHub.VSDetouredHost.exe
-- ServiceHub.SettingsHost.exe
-- ServiceHub.Host.CLR.x86.exe
-- ServiceHub.RoslynCodeAnalysisService32.exe
 - ServiceHub.RoslynCodeAnalysisService.exe
+- ServiceHub.RoslynCodeAnalysisService32.exe
+- ServiceHub.SettingsHost.exe
+- ServiceHub.VSDetouredHost.exe
+- WaAppAgent.exe
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
-- WaAppAgent.exe
 
 이러한 프로세스 중 하나가 예기치 않게 종료되면 Visual Studio 내의 일부 기능이 작동하지 않습니다. 일부 프로세스의 경우 기능 손실이 사소할 수 있습니다. 다른 경우 Visual Studio의 안정성이 영향을 받고 오류 메시지가 표시됩니다.

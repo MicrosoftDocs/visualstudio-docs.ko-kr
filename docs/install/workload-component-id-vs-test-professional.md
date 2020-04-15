@@ -15,12 +15,13 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: ececc1815ebc578076d059b00ade1a5fde4552a4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 61a52d98f695a6420dd6081117b8c6c4e83ae0a4
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437343"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276216"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 구성 요소 디렉터리
 

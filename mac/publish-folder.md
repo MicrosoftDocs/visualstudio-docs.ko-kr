@@ -8,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715900"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224500"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 폴더에 게시
 
@@ -52,7 +52,7 @@ Mac용 Visual Studio를 사용하면 게시 도구를 통해 .NET Core 프로젝
 
 ## <a name="customize-publish-options"></a>게시 옵션 사용자 지정
 
-게시 상황에 맞는 메뉴에 표시되는 게시 프로필의 이름을 변경하려면 게시 프로필 파일의 이름을 변경하세요. 파일의 확장명(`.puxbml`)은 변경하지 않도록 하세요.
+게시 상황에 맞는 메뉴에 표시되는 게시 프로필의 이름을 변경하려면 게시 프로필 파일의 이름을 변경하세요. 파일의 확장명(`.pubxml`)은 변경하지 않도록 하세요.
 
 게시 폴더 경로를 변경하려면 게시 프로필을 열고 `publishUrl` 값을 편집합니다.
 

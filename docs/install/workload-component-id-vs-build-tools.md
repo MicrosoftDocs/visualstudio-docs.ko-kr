@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 304e8bf8a3caba5154e06e1b44b6e05dd664f9ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 930dc73cb1ad38f46e8d5567468eedcb432f6b3d
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437698"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276431"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Visual Studio Build Tools 구성 요소 디렉터리
 
@@ -48,7 +49,7 @@ ms.locfileid: "79437698"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

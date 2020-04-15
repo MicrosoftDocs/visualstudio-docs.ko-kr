@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 73d83f6d4fa722da47298adf06649c4ff8abc670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: a0b0961aae1942a503f6470d7ca727a6d52019b1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437474"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276359"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller 구성 요소 디렉터리
 
@@ -44,7 +45,7 @@ ms.locfileid: "79437474"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

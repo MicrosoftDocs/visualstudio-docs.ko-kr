@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847297"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880340"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -53,6 +53,7 @@ TFS(Team Foundation Server) 및 Azure Test Plans의 [빌드 및 릴리스](/azur
 
 자세한 내용은 [Build 또는 Release Management 사용](use-build-or-rm-instead-of-lab-management.md)을 참조하세요.
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Microsoft Test Manager의 Visual Studio Lab Management 기능 사용
 
 Visual Studio Enterprise 버전을 사용하는 경우 Microsoft Test Manager의 Visual Studio Lab Management 기능을 사용하여 랩 환경을 만들고 관리할 수 있습니다.
@@ -136,6 +137,7 @@ Lab Management에 대한 자세한 내용은 다음을 참조하세요.
 * [표준 랩 환경](https://msdn.microsoft.com/library/ee390842.aspx)
 * [SCVMM(가상) 환경](https://msdn.microsoft.com/library/ee943322.aspx)
 * [네트워크 격리 환경 만들기 및 사용](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
 ## <a name="see-also"></a>참고 항목
 
