@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585641"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880366"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>코딩된 UI 테스트를 사용하여 코드 테스트
 
@@ -435,7 +435,12 @@ myWinCheckBox.Checked = true;
 
 ## <a name="whats-next"></a>새로운 기능
 
+::: moniker range="vs-2017"
 **코딩된 UI 테스트를 실행하기 위한 추가 옵션:** 이 토픽의 앞에서 설명한 것처럼 Visual Studio에서 직접 코딩된 UI 테스트를 실행할 수 있습니다. 또한 Microsoft Test Manager 또는 Azure Pipelines에서 자동화된 UI 테스트를 실행할 수 있습니다. 코딩된 UI 테스트가 자동화된 경우 다른 자동화된 테스트와 달리 코딩된 UI 테스트를 실행할 때는 테스트와 데스크톱 사이에 상호 작용이 필요합니다.
+::: moniker-end
+::: moniker range=">=vs-2019"
+**코딩된 UI 테스트를 실행하기 위한 추가 옵션:** 이 토픽의 앞에서 설명한 것처럼 Visual Studio에서 직접 코딩된 UI 테스트를 실행할 수 있습니다. 또한 Azure Pipelines를 사용하여 자동화된 UI 테스트를 실행할 수 있습니다. 코딩된 UI 테스트가 자동화된 경우 다른 자동화된 테스트와 달리 코딩된 UI 테스트를 실행할 때는 테스트와 데스크톱 사이에 상호 작용이 필요합니다.
+::: moniker-end
 
 - [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)
 
@@ -449,7 +454,7 @@ myWinCheckBox.Checked = true;
 
 - [코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 수동 테스트에 대한 자세한 내용은 [Microsoft Test Manager를 사용하여 수동 테스트 실행](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts)을 참조하세요. 자동화된 테스트에 대한 자세한 내용은 [Visual Studio에서 도구 테스트](../test/improve-code-quality.md)를 참조하세요.
+코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 자동화된 테스트에 대한 자세한 내용은 [Visual Studio에서 도구 테스트](../test/improve-code-quality.md)를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

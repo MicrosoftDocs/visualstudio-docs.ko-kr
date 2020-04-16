@@ -2,7 +2,7 @@
 # [새로운 기능](whats-new-in-subscriptions.md)
 # 알림 신청
 ## 구독 구입
-### [정품](https://visualstudio.microsoft.com/vs/pricing)
+### [정품](buy-activate-retail.md)
 ### 클라우드 
 #### [개요](vscloud-overview.md)
 #### [청구 FAQ](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [MPN에 대한 구독 관리](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## 로그인 
-### [정품 구독 활성화](activate-store-subscriptions.md)
 ### [Microsoft 계정으로 로그인](sign-in-msa.md)
 ### [회사 또는 학교 계정으로 로그인](sign-in-work.md)
 ### [GitHub로 로그인](sign-in-github.md)

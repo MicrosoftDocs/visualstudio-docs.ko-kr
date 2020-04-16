@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169393"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880236"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 부하 테스트에 대한 ASP.NET 프로파일러 구성
 
@@ -22,7 +22,7 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 프�
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Microsoft Test Manager를 사용하여 실행되는 테스트에는 이 진단 데이터 어댑터를 사용할 수 없습니다. ASP.NET 프로파일러 진단 데이터 어댑터는 Visual Studio Enterprise가 필요한 웹 사이트를 사용하는 부하 테스트에만 사용할 수 있습니다.
+> Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)를 사용하여 실행되는 테스트에는 이 진단 데이터 어댑터를 사용할 수 없습니다. ASP.NET 프로파일러 진단 데이터 어댑터는 Visual Studio Enterprise가 필요한 웹 사이트를 사용하는 부하 테스트에만 사용할 수 있습니다.
 
 ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스트를 실행할 때 애플리케이션 계층에서 ASP.NET 프로파일러 데이터를 수집할 수 있습니다. 실행 시간이 1시간 이상인 부하 테스트와 같이 오랜 시간이 걸리는 부하 테스트의 경우에는 이 프로파일러를 실행하면 안 됩니다. 프로파일러 파일이 수백 메가바이트까지 커질 수 있기 때문입니다. 대신 보다 짧은 부하 테스트에 ASP.NET 프로파일러를 사용해도 성능 문제를 깊이 있게 진단할 수 있습니다.
 
@@ -58,8 +58,8 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
 
 이제 테스트 설정에 구성된 ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 웹 애플리케이션에 대한 ASP.NET 프로파일링 데이터를 수집할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
-- [방법: 분산 부하 테스트에 대한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [방법: 분산 부하 테스트를 위한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)

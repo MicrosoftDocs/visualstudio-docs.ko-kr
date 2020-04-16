@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75851438"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223707"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing를 구성 및 사용하는 방법
 
@@ -130,12 +130,13 @@ Live Unit Testing을 사용하도록 설정하면 Visual Studio 편집기에서 
 
 예를 들어, 이전 이미지에 표시된 테스트 오류로 인해 테스트 메서드에서 알파벳이 아닌 문자가 <xref:System.Char.IsLower%2A?displayProperty=fullName> 메서드에 전달될 때 `true`을 반환한다는 잘못된 가정을 발생시켰습니다. 테스트 메서드를 수정하면 모든 테스트가 통과합니다. Live Unit Testing을 일시 중지하거나 중지할 필요가 없습니다.
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>테스트 탐색기
 
 **테스트 탐색기**는 테스트 결과를 실행, 디버그 및 분석할 수 있게 해 주는 인터페이스를 제공합니다. Live Unit Testing은 **Test Explorer**와 통합됩니다. Live Unit Testing이 사용되지 않거나 중지되면 **Test Explorer**는 마지막으로 테스트를 실행한 단위 테스트의 상태를 표시합니다. 소스 코드를 변경하려면 테스트를 다시 실행해야 합니다. 반면에 Live Unit Testing을 사용하는 경우 **Test Explorer**에서 단위 테스트의 상태가 즉시 업데이트됩니다. 단위 테스트를 명시적으로 실행할 필요가 없습니다.
 
 > [!TIP]
-> 최상위 Visual Studio 메뉴에서 **테스트** > **Windows** > **테스트 탐색기**를 선택하여 **테스트 탐색기**를 엽니다.
+> 최상위 Visual Studio 메뉴에서 **테스트** > **Windows** > **테스트 탐색기**를 선택하여 **Live Unit Testing**을 엽니다.
 
 **Test Explorer** 창에서 일부 테스트가 흐리게 표시된 것을 알 수 있습니다. 예를 들어 이전에 저장한 프로젝트를 연 후 Live Unit Testing을 활성화하면 다음 이미지와 같이 **Test Explorer** 창에는 실패한 테스트를 제외한 모든 항목이 흐리게 표시됩니다. 이 경우 Live Unit Testing에서 실패한 테스트를 다시 실행했지만 성공한 테스트는 다시 실행하지 않았습니다. Live Unit Testing의 지속되는 데이터가 테스트를 마지막으로 성공적으로 실행한 이후에 변경되지 않았음을 나타냅니다.
 
@@ -148,6 +149,28 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 - Test Explorer 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다.
 - Live Unit Testing은 테스트를 실행할 새 애플리케이션 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 애플리케이션 도메인을 만들지 않습니다.
 - Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **테스트탐색기** 창에서 여러 테스트를 병렬로 실행하도록 선택할 수 있습니다.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Live Unit Testing 창
+
+**테스트 탐색기**와 비슷한 **Live Unit Testing**은 테스트 결과를 실행, 디버그 및 분석할 수 있게 해 주는 인터페이스를 제공합니다. Live Unit Testing을 사용하는 경우 **테스트 탐색기**에서 단위 테스트의 상태가 즉시 업데이트됩니다. 단위 테스트를 명시적으로 실행할 필요가 없습니다. Live Unit Testing이 사용되지 않거나 중지되면 **Live Unit Testing**은 마지막으로 테스트를 실행한 단위 테스트의 상태를 표시합니다. Live Unit Testing을 다시 시작한 후에는 테스트를 다시 실행하려면 소스 코드를 변경해야 합니다.
+
+> [!TIP]
+> 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작**을 선택하여 Live Unit Testing을 시작합니다. **보기** > **다른 창** > **Live Unit Testing 창**을 사용하여 **Live Unit Testing** 창을 열 수도 있습니다.
+
+**Live Unit Testing** 창에서 일부 테스트가 흐리게 표시된 것을 알 수 있습니다. 예를 들어 Live Unit Testing을 중지했다가 다시 시작하면 다음 이미지와 같이 **Live Unit Testing** 창에서 모든 테스트가 흐리게 표시됩니다. 흐리게 표시된 테스트 결과는 해당 테스트가 최근 Live Unit 테스트 실행에 포함되지 않았음을 나타냅니다. 테스트의 변경 사항이나 테스트 종속성이 검색된 경우에만 테스트가 실행됩니다. 변경 내용이 없으면 테스트가 불필요하게 실행되지 않습니다. 이 경우에는 회색으로 표시된 테스트 결과는 최근 실행에 포함되지 않았어도 “최신 상태”입니다.
+
+![테스트 탐색기에서 흐리게 표시된 테스트](media/vs-2019/lut-test-explorer.png)
+
+흐리게 표시된 테스트를 다시 실행하려면 코드를 변경하면 됩니다.
+
+Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트는 것과 **Test Explorer**에서 테스트를 명시적으로 실행하는 것은 다릅니다. 이러한 차이점에는 다음이 포함됩니다.
+
+- Test Explorer 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다.
+- Live Unit Testing은 테스트를 실행할 새 애플리케이션 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 애플리케이션 도메인을 만들지 않습니다.
+- Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **테스트탐색기** 창에서 여러 테스트를 병렬로 실행하도록 선택할 수 있습니다.
+::: moniker-end
 
 ## <a name="large-solutions"></a>대규모 솔루션
 

@@ -9,16 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566828"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880132"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Azure Test Plans 사용
 
 자동화된 테스트 또는 빌드-배포-테스트 자동화에 Microsoft Test Manager 및 Lab Management를 사용할 경우, 이 항목에서는 Azure Pipelines 및 TFS(Team Foundation Server)의 [빌드 및 릴리스](/azure/devops/pipelines/index?view=vsts) 기능을 사용하여 동일한 목표를 달성하는 방법을 설명합니다.
+
+> [!NOTE]
+> Microsoft Test Manager는 Visual Studio 2017에서 사용이 중단되었으며, Visual Studio 2019에서 제거되었습니다.
 
 ## <a name="build-deploy-test-automation"></a>빌드-배포-테스트 자동화
 
@@ -26,7 +29,7 @@ Microsoft Test Manage 및 Lab Management는 XAML 빌드 정의를 사용하여 �
 
 | 단계 | XAML 빌드 사용 | 빌드 또는 릴리스에서 |
 |-------|----------------------|-----------------|
-| 빌드를 배포하고 테스트를 실행할 컴퓨터를 식별합니다. | 해당 머신을 사용하여 Microsoft Test Manager의 표준 랩 환경을 만듭니다. | 해당 없음 |
+| 빌드를 배포하고 테스트를 실행할 컴퓨터를 식별합니다. | 해당 머신을 사용하여 Microsoft Test Manager의 표준 랩 환경을 만듭니다. | N/A |
 | 실행할 테스트를 식별합니다. | Microsoft Test Manager에서 테스트 도구 모음을 만들고, 테스트 사례를 만들고, 각 테스트 사례와 자동화를 연결합니다. 테스트를 실행할 랩 환경에서 머신의 역할을 식별하는 테스트 설정을 Microsoft Test Manager에서 만듭니다. | 테스트 계획을 통해 테스트를 관리하려면 같은 방식으로 Microsoft Test Manager에서 자동화된 테스트 도구 모음을 만듭니다. 또는 빌드에서 생성된 테스트 이진 파일에서 직접 테스트를 실행하려면 이 단계를 건너뛸 수 있습니다. 어느 경우에도 테스트 설정을 만들 필요가 없습니다. |
 | 배포 및 테스트를 자동화합니다. | LabDefaultTemplate.*.xaml을 사용하여 XAML 빌드 정의를 만듭니다. 빌드 정의에서 빌드, 테스트 도구 모음 및 랩 환경을 지정합니다. | 단일 환경을 사용하여 [빌드 또는 릴리스 파이프라인](/azure/devops/pipelines/index?view=vsts)을 만듭니다. 명령줄 작업을 사용하여 XAML 빌드 정의에서 동일한 배포 스크립트를 실행하고 테스트 에이전트 배포 및 기능 테스트 실행 작업을 사용하여 자동화된 테스트를 실행합니다. 컴퓨터 및 해당 자격 증명 목록을 이러한 작업의 입력으로 지정합니다. |
 

@@ -8,21 +8,28 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dc00598595ee3e3d958562682900bde9aad2a353
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588969"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880184"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정
 
+::: moniker range="vs-2017"
 데스크톱과 상호 작용하는 자동화된 테스트를 실행하려면 서비스 대신 프로세스로 실행되도록 에이전트를 설정해야 합니다. 예를 들어 테스트 컨트롤러와 테스트 에이전트를 사용하여 코딩된 UI 테스트를 원격으로 실행하려는 경우나 테스트를 실행하고 테스트 실행 과정을 비디오로 기록하려는 경우 프로세스로 실행할 에이전트를 설정해야 합니다. Visual Studio를 사용하여 테스트 설정의 역할에 에이전트를 할당하거나 Microsoft Test Manager를 사용하여 환경의 역할에 에이전트를 할당할 때 데스크톱과 상호 작용해야 하는 역할에 할당된 모든 에이전트의 설정을 변경해야 합니다.
+::: moniker-end
+::: moniker range=">=vs-2019"
+데스크톱과 상호 작용하는 자동화된 테스트를 실행하려면 서비스 대신 프로세스로 실행되도록 에이전트를 설정해야 합니다. 예를 들어 테스트 컨트롤러와 테스트 에이전트를 사용하여 코딩된 UI 테스트를 원격으로 실행하려는 경우나 테스트를 실행하고 테스트 실행 과정을 비디오로 기록하려는 경우 프로세스로 실행할 에이전트를 설정해야 합니다. Visual Studio를 사용하여 테스트 설정의 역할에 에이전트를 할당할 때 데스크톱과 상호 작용해야 하는 역할에 할당된 모든 에이전트의 설정을 변경해야 합니다.
+::: moniker-end
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 > [!WARNING]
 > Microsoft Test Manager를 사용하여 랩 환경을 설정하는 경우 테스트 에이전트가 설치됩니다. **환경 만들기 마법사**에서 역할 중 하나가 코딩된 UI 테스트를 실행하도록 구성할 수 있습니다.
+:::moniker-end
 
 > [!IMPORTANT]
 > 코딩된 UI 테스트를 수행하는 데 사용할 에이전트가 실행되는 컴퓨터는 잠그거나 화면 보호기를 사용할 수 없습니다.
@@ -73,8 +80,10 @@ ms.locfileid: "75588969"
    > [!NOTE]
    > 프로세스로 실행되는 테스트 에이전트의 컴퓨터에서 알림 영역 아이콘이 실행됩니다. 이 알림 영역에는 테스트 에이전트의 상태가 표시됩니다. 테스트 에이전트가 이 도구를 사용하여 프로세스로 실행되는 경우 테스트 에이전트를 시작하거나 중지하거나 다시 시작할 수 있습니다. 테스트 에이전트가 실행 중이 아닌 경우 프로세스로 시작하려면 **시작** > **Visual Studio** > **Microsoft Visual Studio Test Agent**를 선택합니다.
 
+   ::: moniker range="vs-2017"
    이 테스트 에이전트에 대한 테스트 컨트롤러가 Team Foundation Server에 등록되어 있는 경우 대화형 프로세스로 실행되는 테스트 에이전트의 상태는 Microsoft Test Manager의 **랩 센터**에 있는 **컨트롤러** 뷰에 표시됩니다. 이 테스트 에이전트의 상태 앞에는 대화형 프로세스로 실행 중임을 나타내는 별표 기호가 추가됩니다. 이 테스트 에이전트를 다시 시작하려면 **컨트롤러** 보기가 아니라 컴퓨터에서 테스트 에이전트에 대해 실행되는 도구를 사용해야 합니다.
+   ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

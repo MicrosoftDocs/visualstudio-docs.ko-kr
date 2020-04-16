@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590880"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892777"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 
@@ -38,11 +38,11 @@ Visual Studio는 현재 [TextMate 문법](https://manual.macromates.com/en/langu
 |||||||
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
+|Clojure|이동|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|계정을|Ruby|TypeScript|YAML|
+|Docker|Jade|Make|Ruby|TypeScript|YAML|
 
 구문 색 지정 및 기본 문 완성 기능 외에도 Visual Studio에는 [탐색](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) 기능이 있습니다. 이 기능을 사용하면 코드 파일, 파일 경로 및 코드 기호를 빠르게 검색할 수 있습니다. Visual Studio는 다음 언어에 대해 탐색 기능을 지원합니다.
 
@@ -56,7 +56,7 @@ Visual Studio는 현재 [TextMate 문법](https://manual.macromates.com/en/langu
 
 - Visual Basic
 
-- Go
+- 이동
 
 - Java
 
@@ -74,7 +74,7 @@ Visual Studio에 대한 새 TextMate 문법을 다음 폴더에 추가합니다.
 
 상황에 적용되는 경우 다음 폴더를 이 기본 경로 아래에 추가합니다.
 
-|폴더 이름|Description|
+|폴더 이름|설명|
 |-----------------|-----------------|
 |\\ *\<언어 이름>*|언어 폴더입니다. *\<언어 이름>* 을 해당 언어의 이름으로 바꿉니다. 예를 들어 *\Matlab*으로 바꿉니다.|
 |*\Syntaxes*|문법 폴더입니다. 언어의 문법 *.json* 파일(예: *Matlab.json*)이 들어 있습니다.|
@@ -87,8 +87,10 @@ Windows에서 *%userprofile%* 은 *c:\Users\\\<user name>* 경로로 확인됩�
 
 TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate – Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)(TextMate – 언어 문법 소개) 및 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)(Textmate 번들의 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [언어 서버 프로토콜 확장 추가](../extensibility/adding-an-lsp-extension.md)
 - [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)
 - [연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)
+- [예제 코드: TextMate 문법](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [예제 코드: 사용자 지정 언어 지원](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094673"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223673"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -43,7 +43,7 @@ ms.locfileid: "79094673"
    Bank 프로젝트가 만들어져 **솔루션 탐색기**에 표시되고 코드 편집기에 *Program.cs* 파일이 열립니다.
 
    > [!NOTE]
-   > *Program.cs*가 편집기에 열리지 않으면 *솔루션 탐색기*에서 **Program.cs** 파일을 두 번 클릭하여 엽니다.
+   > *Program.cs*가 편집기에 열리지 않으면 **솔루션 탐색기**에서 *Program.cs* 파일을 두 번 클릭하여 엽니다.
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ ms.locfileid: "79094673"
    Bank 프로젝트가 만들어져 **솔루션 탐색기**에 표시되고 코드 편집기에 *Program.cs* 파일이 열립니다.
 
    > [!NOTE]
-   > *Program.cs*가 편집기에 열리지 않으면 *솔루션 탐색기*에서 **Program.cs** 파일을 두 번 클릭하여 엽니다.
+   > *Program.cs*가 편집기에 열리지 않으면 **솔루션 탐색기**에서 *Program.cs* 파일을 두 번 클릭하여 엽니다.
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ ms.locfileid: "79094673"
    }
    ```
 
-6. *솔루션 탐색기*에서 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하여 파일의 이름을 **BankAccount.cs**로 바꿉니다.
+6. **솔루션 탐색기**에서 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하여 파일의 이름을 *BankAccount.cs*로 바꿉니다.
 
 7. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
@@ -313,7 +313,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 m_balance += amount;
 ```
 
-다음 구문으로 바꿉니다.
+다음으로 바꿉니다.
 
 ```csharp
 m_balance -= amount;
@@ -403,7 +403,7 @@ if (amount < 0)
 
 ### <a name="refactor-the-test-methods"></a>테스트 메서드 리팩터링
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>에 대한 호출을 제거하여 테스트 메서드를 리팩터링합니다. `Debit()` 블록에서 `try/catch`에 대한 호출을 래핑하고 예상되는 특정 예외를 catch한 다음, 연결된 메시지를 확인합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 메서드는 두 문자열을 비교하는 기능을 제공합니다.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>에 대한 호출을 제거하여 테스트 메서드를 리팩터링합니다. `try/catch` 블록에서 `Debit()`에 대한 호출을 래핑하고 예상되는 특정 예외를 catch한 다음, 연결된 메시지를 확인합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 메서드는 두 문자열을 비교하는 기능을 제공합니다.
 
 이제 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`는 다음과 같습니다.
 
@@ -431,11 +431,11 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>재테스트, 재작성 및 재분석
 
-테스트 중인 메서드에 버그가 있는데 `Debit` 메서드에서 <xref:System.ArgumentOutOfRangeException>을 throw하지 않는 경우라도 올바른 메시지가 예외와 함께 출력될 수 있습니다. 현재는 테스트 메서드가 이러한 사례를 처리하지 않습니다. `debitAmount` 값이 유효하면(즉, 잔액보다 작고 0보다 큼) 예외가 catch되지 않으므로 어설션이 절대로 시작되지 않습니다. 그런데도 테스트 메서드를 통과합니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.
+현재 테스트 메서드에서는 처리해야 하는 일부 사례를 처리하지 못합니다. 테스트 중인 메서드 `Debit` 메서드는 `debitAmount`가 잔액보다 크거나 0보다 작을 때 <xref:System.ArgumentOutOfRangeException>를 throw하지 못하는 경우에도 테스트 메서드가 전달됩니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.
 
 이것은 테스트 메서드의 버그입니다. 문제를 해결하려면 테스트 메서드 끝에 예외가 throw되지 않은 경우를 처리하도록 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션을 추가합니다.
 
-테스트를 다시 실행하여 올바른 예외가 catch되면 테스트가 *실패*한다는 점이 확인되었습니다. `catch` 블록은 예외를 catch하지만 메서드가 계속 실행되고 새로운 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션에서 실패합니다. 이 문제를 해결하려면 `return` 블록에서 `StringAssert` 다음에 `catch`문을 추가합니다. 테스트를 다시 실행하여 이 문제가 수정되었는지 확인합니다. `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`의 최종 버전은 다음과 같습니다.
+테스트를 다시 실행하여 올바른 예외가 catch되면 테스트가 *실패*한다는 점이 확인되었습니다. `catch` 블록은 예외를 catch하지만 메서드가 계속 실행되고 새로운 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션에서 실패합니다. 이 문제를 해결하려면 `catch` 블록에서 `StringAssert` 다음에 `return`문을 추가합니다. 테스트를 다시 실행하여 이 문제가 수정되었는지 확인합니다. `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`의 최종 버전은 다음과 같습니다.
 
 ```csharp
 [TestMethod]
@@ -469,6 +469,6 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 > [!TIP]
 > 이 연습에서는 관리 코드에 Microsoft 단위 테스트 프레임워크를 사용합니다. **테스트 탐색기**에서는 **테스트 탐색기**용 어댑터가 포함된 타사 단위 테스트 프레임워크의 테스트도 실행할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 명령줄에서 테스트를 실행하는 방법에 대한 자세한 내용은 [VSTest.Console.exe command-line 옵션](vstest-console-options.md)을 참조하세요.

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233091"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880353"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -88,7 +88,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 
 ::: moniker-end
 
-### <a name="command-line"></a>명령 줄
+### <a name="command-line"></a>명령줄
 
 명령줄에서 테스트를 실행하려면 *vstest.console.exe*를 사용하고, **/Settings** 매개 변수를 통해 설정 파일을 지정합니다.
 
@@ -327,10 +327,10 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
 
 이러한 설정은 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 특성을 가진 테스트 메서드를 실행하는 테스트 어댑터에 따라 달라집니다.
 
-|구성|기본값|값|
+|Configuration|기본값|값|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 **true**로 설정합니다.<br /><br />예를 들어, 단위 테스트에 대해 *app.config* 파일을 지정한 경우 이 설정을 사용할 수 있습니다.<br /><br />새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|
-|**IgnoreTestImpact**|false|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](https://msdn.microsoft.com/library/dd286589)를 참조하세요.|
+|**IgnoreTestImpact**|false|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](https://msdn.microsoft.com/library/dd286589)를 참조하세요.|
 |**SettingsFile**||여기에서 MSTest 어댑터와 함께 사용할 테스트 설정 파일을 지정할 수 있습니다. [설정 메뉴에서](#ide) 테스트 설정 파일을 지정할 수도 있습니다.<br /><br />이 값을 지정하면 **ForcedlegacyMode** 도 **true**로 설정해야 합니다.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|테스트 실행이 완료되면 MSTest가 종료됩니다. 테스트의 일부로 시작된 프로세스도 종료됩니다. 테스트 실행기를 활성 상태로 유지하려면 값을 **true**로 설정합니다. 예를 들어, 이 설정을 사용하여 브라우저가 코딩된 UI 테스트 사이에서 계속 실행되도록 할 수 있습니다.|
 |**DeploymentEnabled**|true|값을 **false**로 설정할 경우 테스트 메서드에서 지정한 배포 항목이 배포 디렉터리로 복사되지 않습니다.|
@@ -340,7 +340,7 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
 |**InProcMode**|false|테스트를 MSTest 어댑터와 동일한 프로세스에서 실행하려면 이 값을 **true**로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|
 |**AssemblyResolution**|false|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다. 예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다. 경로를 지정하려면 **디렉터리 경로** 요소를 사용합니다. 경로는 환경 변수를 포함할 수 있습니다.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 실행 구성](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)

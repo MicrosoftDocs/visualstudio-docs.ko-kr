@@ -3,17 +3,17 @@ title: 기능 제안
 description: 개발자 커뮤니티의 제안 사항, 제안하는 방법 및 Microsoft에서 제안 사항을 Visual Studio 로드맵에 사용하는 방법을 설명합니다.
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853518"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276490"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio에 대한 기능 제안
 
@@ -27,7 +27,7 @@ ms.locfileid: "74853518"
 
 **제안하기**를 선택하면 [개발자 커뮤니티](https://developercommunity.visualstudio.com)로 이동하여 제안 사항을 입력할 수 있습니다.
 
-## <a name="user-voice"></a>사용자 음성
+## <a name="user-voice"></a>사용자 의견
 
 지금까지 Visual Studio 사용자는 사용자 의견에 대한 새로운 기능 아이디어를 제안했습니다. *기능 제안* 기능을 개발자 커뮤니티에 추가하면 Visual Studio 제품 팀에 대한 모든 피드백이 한 곳에서 제공됩니다.
 
@@ -127,6 +127,6 @@ ms.locfileid: "74853518"
 
 응답 시간은 피드백의 현재 상태에 따라 다릅니다. 응답 시간을 이해하려면 이 문서에서 상태에 대한 설명을 검토하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [개발자 커뮤니티(Visual Studio 블로그)에서 '기능 제안' 소개](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

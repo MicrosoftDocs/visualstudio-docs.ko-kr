@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235082"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224526"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 Express 앱 만들기
 
@@ -56,7 +56,7 @@ npm는 Node.js를 위한 기본 패키지 관리자입니다. 패키지 관리�
 
 ### <a name="what-is-express"></a>Express란?
 
-Express는 웹 애플리케이션 프레임워크로, Node.js가 웹 애플리케이션을 빌드하기 위한 서버 프레임워크로 사용됩니다. Express를 사용하면 Pug(이전의 Jade)와 같이 UI를 만들 수 있는 프런트 엔드 프레임 워크를 다양하게 선택할 수 있습니다. 이 자습서에서는 Pug가 사용되었습니다.
+Express는 웹 애플리케이션 프레임워크로, Node.js가 웹 애플리케이션을 빌드하기 위한 서버 프레임워크로 사용됩니다. Express를 사용하면 Pug(이전의 Jade)와 같이 UI를 만들 수 있는 프런트 엔드 프레임워크를 다양하게 선택할 수 있습니다. 이 자습서에서는 Pug가 사용되었습니다.
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
