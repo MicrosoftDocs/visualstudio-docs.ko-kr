@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b26d27c77ecb578d8eef0807c35b8efb8581a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701387"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444572"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>로슬린 분석기 및 불변성 어레이에 대한 코드 인식 라이브러리
 
 [.NET 컴파일러](https://github.com/dotnet/roslyn) 플랫폼("Roslyn")을 사용하면 코드 인식 라이브러리를 빌드할 수 있습니다. 코드 인식 라이브러리는 라이브러리를 가장 좋은 방법으로 사용하거나 오류를 방지하는 데 도움이 되는 도구 및 툴링(Roslyn 분석기)을 제공합니다. 이 항목에서는 [System.Collections.ImMutable](https://www.nuget.org/packages/System.Collections.Immutable) NuGet 패키지를 사용할 때 일반적인 오류를 catch하기 위해 실제 Roslyn 분석기를 빌드하는 방법을 보여 주며 이 항목에서는 다음과 같은 방법을 보여 주실 수 있습니다. 또한 이 예제에서는 분석기에서 찾은 코드 문제에 대한 코드 수정 프로그램을 제공하는 방법을 보여 줍니다. 사용자는 Visual Studio 전구 UI에서 코드 수정 사항을 보고 코드에 대한 수정 프로그램을 자동으로 적용할 수 있습니다.
 
-## <a name="get-started"></a>시작하기
+## <a name="get-started"></a>시작
 
 이 예제를 빌드하려면 다음이 필요합니다.
 
@@ -312,4 +312,4 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 * [GitHub에서 완료된 코드](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [GitHub의 몇 가지 예는 세 가지 종류의 분석기로 그룹화되었습니다.](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [GitHub OSS 사이트의 다른 문서](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-* [GitHub에 로슬린 분석기와 구현 FxCop 규칙](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+* [GitHub에 로슬린 분석기와 구현 FxCop 규칙](https://github.com/dotnet/roslyn/tree/master/src/Features/Core/Portable/Diagnostics/Analyzers)

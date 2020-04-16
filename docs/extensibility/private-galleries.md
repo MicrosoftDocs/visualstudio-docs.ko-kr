@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702033"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444650"
 ---
 # <a name="private-galleries"></a>프라이빗 갤러리
 다음과 같이 조직의 인트라넷에 있는 *개인 갤러리에* 게시하여 개발한 컨트롤, 템플릿 및 도구를 공유할 수 있습니다.
@@ -42,9 +42,9 @@ ms.locfileid: "80702033"
 
 5. **URL** 필드에 개인 갤러리를 호스팅하는 Atom 피드 또는 SharePoint 사이트의 URL을 입력합니다.
 
-    1. 호스트가 개인 갤러리에 연결되는 Atom 피드인 경우 URL은 다음과 http://www.mywebsite/mygallery/atom.xml유사합니다.  이 URL은 파일 또는 네트워크 경로를 참조할 수 있습니다.
+    1. 호스트가 개인 갤러리에 연결되는 Atom 피드인 경우 URL은 다음과 `http://www.mywebsite/mygallery/atom.xml`유사합니다.  이 URL은 파일 또는 네트워크 경로를 참조할 수 있습니다.
 
-    2. 호스트가 SharePoint 사이트인 경우 URL은 다음과 http://mysharepoint/sites/mygallery/forms/AllItems.aspx유사합니다.
+    2. 호스트가 SharePoint 사이트인 경우 URL은 다음과 `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`유사합니다.
 
 ### <a name="manage-private-galleries"></a>개인 갤러리 관리
  관리자는 각 컴퓨터의 시스템 레지스트리를 수정하여 여러 컴퓨터에서 동시에 개인 갤러리를 사용할 수 있도록 할 수 있습니다. 이렇게 하려면 새 레지스트리 키와 해당 값을 설명하는 *.pkgdef* 파일을 만듭니다.  이 파일의 형식은 다음과 같습니다.

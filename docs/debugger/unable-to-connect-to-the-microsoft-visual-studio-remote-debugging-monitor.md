@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385395"
+ms.locfileid: "81397378"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 원격 디버깅 모니터가 원격 컴퓨터에서 제대로 설정되지 않았거나 네트워크 문제 또는 방화벽이 있는 경우 원격 컴퓨터에 액세스할 수 없기 때문에 이 메시지가 발생할 수 있습니다.
@@ -34,6 +34,7 @@ ms.locfileid: "81385395"
 
 - [디버거가 원격 컴퓨터에 연결할 수 없습니다. 디버거가 지정된 컴퓨터 이름을 확인할 수 없습니다.](#cannot_connect)
 - [원격 디버거에서 연결 요청이 거부되었습니다.](#rejected)
+- [원격 끝점과의 연결이 종료되었습니다.](#connection_terminated)
 - [메모리 위치에 대한 잘못된 액세스](#invalid_access)
 - [원격 컴퓨터에서 실행 중인 지정된 이름으로 서버가 없습니다.](#no_server)
 - [요청된 이름이 유효하지만 요청된 형식의 데이터가 없습니다.](#valid_name)
@@ -67,17 +68,19 @@ ms.locfileid: "81385395"
 
 이러한 값이 올바르고 메시지에 **Windows 인증** 모드가 언급되어 있으면 원격 디버거가 올바른 인증 모드(도구 **> 옵션)에**있는지 확인합니다.
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>원격 끝점과의 연결이 종료되었습니다.
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>원격 끝점과의 연결이 종료되었습니다.
 
 Azure App Service 앱을 디버깅하는 경우 **프로세스에 연결대신**클라우드 탐색기 또는 서버 탐색기에서 [디버거 연결](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service) 명령을 사용해 보십시오.
 
 **프로세스에 연결하여** 디버깅하는 경우:
 
-1. **프로세스에 연결** 대화 상자 또는 프로젝트 속성에서 원격 컴퓨터 이름과 포트 번호가 원격 디버거 창에 표시된 이름 및 포트 번호와 일치하는지 확인합니다. 올바르지 않으면 수정하고 다시 시도하십시오.
+- **프로세스에 연결** 대화 상자 또는 프로젝트 속성에서 원격 컴퓨터 이름과 포트 번호가 원격 디버거 창에 표시된 이름 및 포트 번호와 일치하는지 확인합니다. 올바르지 않으면 수정하고 다시 시도하십시오.
 
-2. 문제를 해결하는 데 도움이 되는 자세한 내용은 서버의 응용 프로그램 로그(Windows의 이벤트 뷰어)를 확인하십시오.
+- 호스트 이름을 사용하여 연결하려는 경우 대신 IP 주소를 사용해 보십시오.
 
-3. 그렇지 않으면 관리자 권한으로 Visual Studio를 다시 시작한 다음 다시 시도하십시오.
+- 문제를 해결하는 데 도움이 되는 자세한 내용은 서버의 응용 프로그램 로그(Windows의 이벤트 뷰어)를 확인하십시오.
+
+- 그렇지 않으면 관리자 권한으로 Visual Studio를 다시 시작한 다음 다시 시도하십시오.
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>메모리 위치에 대한 잘못된 액세스
 
@@ -176,5 +179,5 @@ Visual Studio에서 프로젝트 속성을 확인하고 서버 이름이 올바�
 ## <a name="more-help"></a>자세한 도움말
  원격 디버거 도움말을 추가하려면 원격 디버거 의 도움말 페이지(원격 디버거에서**사용 > 도움말)를** 엽니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [원격 디버깅](../debugger/remote-debugging.md)

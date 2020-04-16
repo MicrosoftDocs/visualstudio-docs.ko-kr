@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876781cb6967f5d10dddccd54a46e218170445ab
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432200"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444908"
 ---
 # <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Windows 설치 관리자를 사용하여 Office 솔루션을 위한 Visual Studio 도구 배포
 
@@ -346,7 +346,7 @@ MSI 패키지를 사용하여 추가 기능 또는 솔루션을 설치하는 경
 |Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Smart Tag(스마트 태그)|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |사무실 공유|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB0506}|{625F5772-C1B3-497E-8ABE-7254EDB0506}|
-|Project|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
+|프로젝트|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
 
   ![최종 발사 조건의 스크린샷](media/setup-project-figure-11.jpg)
 
@@ -593,7 +593,7 @@ s
 ## <a name="about-the-authors"></a>저자 정보
 
 Wouter van Vugt는 오피스 오픈 XML 기술을 보유한 Microsoft MVP이며 SharePoint, Microsoft Office 및 관련 .NET 기술을 통해 오피스 비즈니스 응용 프로그램(OBA)을 만드는 데 중점을 둔 독립 컨설턴트입니다.
-Wouter는 [OpenXmlDeveloper.org](http://openxmldeveloper.org/) 및 [MSDN과](/previous-versions/office/developer/office-2007/bb879915(v=office.12))같은 개발자 커뮤니티 사이트에 자주 기여합니다. 그는 여러 백서와 기사뿐만 아니라 오픈 XML : 설명 전자 책이라는 제목의 라인에 사용할 수있는 책을 출판했다.
-Wouter는 다양한 채널을 통해 최첨단 기술 콘텐츠를 제공하는 데 중점을 둔 네덜란드 회사인 Code-Counsel의 창립자입니다. Wouter에 대한 자세한 내용은 블로그를 읽고 [코드-변호인 웹 사이트를](http://www.code-counsel.net/)방문하여 확인할 수 있습니다.
+Wouter는 [MSDN과](/previous-versions/office/developer/office-2007/bb879915(v=office.12))같은 개발자 커뮤니티 사이트에 자주 기여합니다. 그는 여러 백서와 기사뿐만 아니라 오픈 XML : 설명 전자 책이라는 제목의 라인에 사용할 수있는 책을 출판했다.
+Wouter는 다양한 채널을 통해 최첨단 기술 콘텐츠를 제공하는 데 중점을 둔 네덜란드 회사인 Code-Counsel의 창립자입니다. Wouter에 대한 자세한 내용은 그의 블로그를 통해 확인할 수 있습니다.
 
 테드 패티슨은 셰어포인트 MVP, 저자, 트레이너, 테드 패티슨 그룹의 창립자입니다. 2005년 가을, 테드는 마이크로소프트의 개발자 플랫폼 전도 그룹에서 Windows SharePoint 서비스 3.0 및 Microsoft Office SharePoint Server 2007에 대한 어센드 개발자 교육 커리큘럼을 작성하도록 고용되었습니다. 그 이후로 Ted는 SharePoint 2007 기술에 대한 전문 개발자 교육에 전적으로 집중해 왔습니다. Ted는 SharePoint를 비즈니스 솔루션 구축을 위한 개발 플랫폼으로 사용하는 방법에 중점을 둔 내부 Windows SharePoint 서비스 3.0이라는 제목의 Microsoft Press용 책을 작성했습니다. 테드는 또한 MSDN 매거진의 오피스 스페이스라는 제목의 개발자 중심 칼럼을 작성합니다.
