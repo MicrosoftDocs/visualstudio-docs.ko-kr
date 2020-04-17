@@ -4,17 +4,17 @@ description: 클라우드 및 스토리지 계정 서비스를 설정하고 Azur
 author: ghogen
 manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 81c5787e3c058848c97c69fad03827223c9fc582
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6174f8294f3a9e990893ca9a45d77f2a069692e
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572411"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489664"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio에서 클라우드 서비스 게시 또는 배포 준비
 
@@ -57,7 +57,7 @@ Azure 환경에서 역할을 실행하는 클라우드 서비스 다음 섹션�
 
 1. [Azure Portal](https://portal.azure.com/)에 로그인합니다.
 1. 왼쪽 위에서 **+ 새로 만들기**를 선택합니다.
-1. "Azure Marketplace" 아래에서 **저장소**를 선택한 다음, 오른쪽에서 **저장소 계정 - Blob,파일, 테이블, 큐**를 선택합니다.
+1. &quot;Azure Marketplace&quot; 아래에서 **스토리지**를 선택한 다음, 오른쪽에서 **스토리지 계정 - Blob,파일, 테이블, 큐**를 선택합니다.
 1. 필요한 정보(이름, 배포 모델 등)를 제공합니다.
 1. **만들기**를 선택하여 프로세스를 완료합니다.
 

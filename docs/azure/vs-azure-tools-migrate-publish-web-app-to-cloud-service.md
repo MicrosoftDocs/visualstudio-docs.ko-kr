@@ -4,17 +4,17 @@ description: Visual Studio를 사용하여 Azure 클라우드 서비스로 웹 �
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 0c3bc28131a6e8f341e5fac52ed10725e6a7a40c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624132"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489677"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>방법: Visual Studio에서 Azure 클라우드 서비스로 웹 애플리케이션 마이그레이션 및 게시
 
@@ -36,7 +36,7 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 
 발생하는 모든 경고 또는 오류는 어셈블리 누락처럼 Azure에 배포하기 전에 해결해야 하는 문제를 나타냅니다.
 
-애플리케이션을 빌드하고 컴퓨팅 에뮬레이터를 사용하여 로컬로 실행하거나 Azure에 게시할 경우 다음과 같은 오류가 표시될 수 있습니다. "지정된 경로, 파일 이름 중 하나 또는 둘 다가 너무 깁니다." 이 오류는 정규화된 Azure 프로젝트 이름이 146자를 초과한다는 의미입니다. 이 문제를 해결하려면 경로 길이가 짧은 폴더로 솔루션을 이동합니다.
+애플리케이션을 빌드하고 컴퓨팅 에뮬레이터를 사용하여 로컬로 실행하거나 Azure에 게시할 경우 "지정한 경로 및/또는 파일 이름이 너무 깁니다."라는 오류가 표시될 수 있습니다. 이 오류는 정규화된 Azure 프로젝트 이름이 146자를 초과한다는 의미입니다. 이 문제를 해결하려면 경로 길이가 짧은 폴더로 솔루션을 이동합니다.
 
 경고를 오류로 처리하는 방법은 [Visual Studio에서 Azure 클라우드 서비스 프로젝트 구성](vs-azure-tools-configuring-an-azure-project.md)을 참조하세요.
 
@@ -55,10 +55,10 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 ## <a name="publish-the-application-to-azure-cloud-service"></a>애플리케이션을 Azure Cloud Service에 게시
 
 1. [Visual Studio에서 Azure 애플리케이션 게시 또는 배포 준비](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)의 설명에 따라 Azure 구독에서 필요한 클라우드 서비스 및 스토리지 계정을 만듭니다.
-1. Visual Studio에서 애플리케이션 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Microsoft Azure에 게시...** ("게시…" 명령과 다름)를 선택합니다.
+1. Visual Studio에서 애플리케이션 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Microsoft Azure에 게시... **("게시…" 명령과 다름)를 선택합니다.
 1. 나타나는 **Azure 애플리케이션 게시**에서, 계정을 사용하여 Azure 구독에 로그인하고 **다음 &gt;** 을 선택합니다.
 1. 선택한 환경 및 구성에 맞는 대상 클라우드 서비스를 **설정 > 일반 설정** 탭의 **클라우드 서비스** 드롭다운 목록에서 선택합니다.
-1. **설정 > 고급 설정**에서 사용할 저장소 계정을 선택하고 **다음 >** 을 선택합니다.
+1. **설정 &gt; 고급 설정**에서 사용할 스토리지 계정을 선택하고 **다음 &gt;** 을 선택합니다.
 1. **진단**에서 Application Insights에 정보를 보낼 것인지 선택합니다.
 1. **다음 >** 을 선택하여 요약 정보를 살펴본 후 **게시**를 선택하여 배포를 시작합니다.
 1. Visual Studio에서 진행률을 추적할 수 있는 활동 로그 창이 열립니다.
@@ -80,7 +80,7 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 | ASP.NET 웹 애플리케이션<br/>(MVC 2, MVC 3, MVC 4 포함) | **Azure 활동 로그**의 **배포** 탭에서 URL을 선택합니다. |
 | ASP.NET 빈 웹 애플리케이션 | 애플리케이션에 기본 `.aspx` 페이지가 있는 경우 **Azure 활동 로그**의 **배포** 탭에서 URL을 선택합니다. 다른 페이지로 이동하려면 브라우저에서 `<deployment_url>/<page_name>.aspx` 양식의 URL을 입력합니다. |
 | Silverlight 애플리케이션<br/>Silverlight 비즈니스 애플리케이션<br/>Silverlight 탐색 애플리케이션 | `<deployment_url>/<page_name>.aspx` URL 양식을 사용하여 애플리케이션의 특정 페이지로 이동합니다. |
-| WCF Service Application<br/>WCF Workflow 서비스 애플리케이션 | `.svc` 파일을 WCF 서비스 프로젝트의 시작 페이지로 설정합니다. 그런 다음 `<deployment_url>/<service_file>.svc`로 이동합니다. |
+| WCF 서비스 애플리케이션<br/>WCF 워크플로 서비스 애플리케이션 | `.svc` 파일을 WCF 서비스 프로젝트의 시작 페이지로 설정합니다. 그런 다음 `<deployment_url>/<service_file>.svc`로 이동합니다. |
 | ASP.NET 동적 엔터티<br/>SQL에 대한 ASP.NET Dynamic Data Linq | 다음 섹션의 설명에 따라 연결 문자열을 업데이트합니다. 그런 다음 `<deployment_url>/<page_name>.aspx`로 이동합니다. Linq to SQL의 경우 Azure SQL 데이터베이스를 사용해야 합니다. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>ASP.NET 동적 엔터티의 연결 문자열 업데이트
@@ -120,9 +120,9 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 | Silverlight | Silverlight 애플리케이션 |
 | Silverlight | Silverlight 비즈니스 애플리케이션 |
 | Silverlight | Silverlight 탐색 애플리케이션 |
-| WCF | WCF Service Application |
-| WCF | WCF Workflow 서비스 애플리케이션 |
-| 워크플로 | WCF Workflow 서비스 애플리케이션 |
+| WCF | WCF 서비스 애플리케이션 |
+| WCF | WCF 워크플로 서비스 애플리케이션 |
+| 워크플로 | WCF 워크플로 서비스 애플리케이션 |
 
 ## <a name="next-steps"></a>다음 단계
 
