@@ -94,8 +94,6 @@
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
             - name: ClickOnce 애플리케이션의 사용자 지정 권한 설정
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: 제한된 권한으로 ClickOnce 애플리케이션 디버그
-              href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
             - name: 애플리케이션 및 배포 매니페스트 다시 서명

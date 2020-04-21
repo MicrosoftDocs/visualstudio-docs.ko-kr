@@ -447,7 +447,7 @@
             - name: 디버그하는 동안 XAML 속성 검사
               href: inspect-xaml-properties-while-debugging.md
             - name: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: Blend에서 XAML 디버그
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 및 CSS
@@ -507,7 +507,7 @@
                 - name: 디버그하는 동안 XAML 속성 검사
                   href: inspect-xaml-properties-while-debugging.md
                 - name: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: WPF 트리 시각화 도우미 사용
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: WPF 추적 정보 표시
