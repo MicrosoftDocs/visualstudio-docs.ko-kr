@@ -1,5 +1,5 @@
 ---
-title: ClickOnce 앱의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
+title: ClickOnce 앱용 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a874415d35d08fe00989b034c0bd828dbb6d567
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 1423952405a31063ee88ce6fa1dfe0b75d80fe5d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806899"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649212"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>방법: ClickOnce 애플리케이션의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
 신뢰할 수 있는 애플리케이션 배포를 사용하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션이 사용자 프롬프트 없이 더 높은 신뢰 수준으로 실행되도록 클라이언트 컴퓨터를 구성할 수 있습니다. 다음 절차에서는 명령줄 도구 CertMgr.exe를 사용하여, 클라이언트 컴퓨터의 신뢰할 수 있는 게시자 저장소에 게시자의 인증서를 추가하는 방법을 보여 줍니다.
@@ -38,7 +38,7 @@ ms.locfileid: "72806899"
 
 1. CA에서 디지털 인증서를 가져옵니다.
 
-2. Base64 X.509( *.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조하세요.
+2. Base64 X.509(*.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조하세요.
 
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "72806899"
 
 1. CA에서 디지털 인증서를 가져옵니다.
 
-2. Base64 X.509( *.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조하세요.
+2. Base64 X.509(*.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기를](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))참조하십시오.
 
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.
 
@@ -56,8 +56,8 @@ ms.locfileid: "72806899"
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>참조
-- [연습: ClickOnce 애플리케이션 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+## <a name="see-also"></a>참고 항목
+- [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)
@@ -65,7 +65,7 @@ ms.locfileid: "72806899"
 - [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 애플리케이션의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [방법: ClickOnce 애플리케이션의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [방법: 제한된 사용 권한으로 ClickOnce 애플리케이션 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](securing-clickonce-applications.md)
 - [방법: ClickOnce 애플리케이션의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [방법: 애플리케이션 및 배포 매니페스트에 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 - [방법: ClickOnce 신뢰 프롬프트 동작 구성](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

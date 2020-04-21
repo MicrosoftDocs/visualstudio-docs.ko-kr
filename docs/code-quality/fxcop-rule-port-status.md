@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: c6328678365da0f8292360e51f35b4a2ec0133f2
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301610"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649354"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -286,7 +286,7 @@ CA9999 | 분석기 버전 불일치
 - [CA1400](ca1400-p-invoke-entry-points-should-exist.md)
 - [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 - [CA1504](ca1504-review-misleading-field-names.md)
-- [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701](ca1701.md)
 - [CA1702](ca1702.md)
 - [CA1703](ca1703.md)
 - [CA1800](ca1800.md)

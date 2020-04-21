@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697785"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649840"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 피처 추가
 사용자 지정 편집기를 만든 후 추가 기능을 추가할 수 있습니다.
@@ -34,7 +34,7 @@ ms.locfileid: "80697785"
 
 3. 인터페이스를 설정하여 편집기 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 팩터리를 구현합니다.
 
-     자세한 내용은 [편집기 팩터리를](../extensibility/editor-factories.md)참조하십시오.
+     자세한 내용은 [편집기 팩터리를](/visualstudio/extensibility/editor-factories?view=vs-2015)참조하십시오.
 
 4. 편집기에서 내부 활성화를 사용할지 또는 단순화된 임베디드를 사용하여 문서 보기 개체 창을 관리할지 여부를 결정합니다.
 
@@ -152,6 +152,6 @@ ms.locfileid: "80697785"
 
   - `Window.Object`
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [자동화 모델에 기여](../extensibility/internals/contributing-to-the-automation-model.md)

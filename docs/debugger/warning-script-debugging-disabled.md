@@ -1,5 +1,5 @@
 ---
-title: '경고: 스크립트 디버깅을 사용할 수 없습니다. | Microsoft Docs'
+title: '경고: 스크립트 디버깅 사용 안 함 | 마이크로 소프트 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728207"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648499"
 ---
 # <a name="warning-script-debugging-disabled"></a>경고: 스크립트 디버깅 사용 안 함
 Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습니다.
@@ -43,5 +43,5 @@ Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습�
 
      그러면 새 설정이 적용됩니다.
 
-## <a name="see-also"></a>참조
-- [방법: 스크립트에 연결](../debugger/how-to-attach-to-script.md)
+## <a name="see-also"></a>참고 항목
+- [방법: 스크립트에 연결](attach-to-running-processes-with-the-visual-studio-debugger.md)
