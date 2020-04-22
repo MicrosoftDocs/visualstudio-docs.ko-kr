@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbbf9b6aaf983bb36291611a7b9b50f7886915b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702693"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744942"
 ---
 # <a name="manage-universal-windows-projects"></a>범용 Windows 프로젝트 관리
 
@@ -72,8 +72,9 @@ Visual Studio 2015부터는 다운로드 센터에서 Visual Studio SDK를 설�
             MenuCommand menuItem = new MenuCommand(eventHandler, menuCommandID);
             commandService.AddCommand(menuItem);
         }
+
         // get a reference to the Output window
-                    output = (IVsOutputWindowPane)ServiceProvider.GetService(typeof(SVsGeneralOutputWindowPane));
+        output = (IVsOutputWindowPane)ServiceProvider.GetService(typeof(SVsGeneralOutputWindowPane));
     }
     ```
 
@@ -146,7 +147,7 @@ Visual Studio 2015부터는 다운로드 센터에서 Visual Studio SDK를 설�
                 MessageBox.Show("Solution has no shared project");
                 return;
             }
-                }
+        }
         else
         {
             MessageBox.Show("No solution is open");
@@ -198,20 +199,17 @@ Visual Studio 2015부터는 다운로드 센터에서 Visual Studio SDK를 설�
                 }
                 else
                 {
-                MessageBox.Show("Shared project has no active platform project");
+                    MessageBox.Show("Shared project has no active platform project");
                 }
             }
             else
             {
                 MessageBox.Show("Solution has no shared project");
-                return;
             }
         }
         else
-            {
-                MessageBox.Show("No solution is open");
-                return;
-            }
+        {
+            MessageBox.Show("No solution is open");
         }
     }
     ```
@@ -334,7 +332,7 @@ Visual Studio 2015부터는 다운로드 센터에서 Visual Studio SDK를 설�
             {
                 this.InspectHierarchyItems(hier, child, level + 1, itemIds, isSharedItem, printItems);
             }
-                    }
+        }
     }
     ```
 

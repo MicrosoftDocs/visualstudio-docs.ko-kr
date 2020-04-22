@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300926"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760138"
 ---
 # <a name="code-analysis-faq"></a>코드 분석 자주 묻는 질문
 
@@ -88,7 +88,13 @@ ms.locfileid: "79300926"
      ...
      ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="code-analysis-solution-property-page"></a>코드 분석 솔루션 속성 페이지
+
+**Q**: 솔루션의 코드 분석 속성 페이지는 어디에 있습니까?
+
+**A**: 솔루션 수준의 코드 분석 속성 페이지가 보다 신뢰할 수 있는 공유 속성 그룹에 찬성하여 제거되었습니다. 프로젝트 수준에서 코드 분석을 관리하기 위해 코드 분석 속성 페이지를 계속 사용할 수 있습니다. 관리되는 프로젝트의 경우 규칙 구성을 위해 규칙 집합에서 EditorConfig로 마이그레이션하는 것이 좋습니다.  솔루션 또는 리포지토리에서 여러/모든 프로젝트에서 규칙 집합을 공유하는 경우 공유 소품/대상 파일 또는 Directory.props/Directory.targets 파일에서 CodeAnalysisRuleSet 속성을 가진 속성 그룹을 정의하는 것이 좋습니다. 모든 프로젝트에서 가져오는 일반적인 props 또는 대상이 없는 경우 [디렉터리 또는 하위 디렉터리에 정의된 모든 프로젝트 파일에서 자동으로 가져오는 최상위 솔루션 디렉터리의 Directory.props 또는 Directory.targets에 이러한 속성 그룹을 추가하는](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)것이 좋습니다.
+
+## <a name="see-also"></a>참조
 
 - [분석기 개요](roslyn-analyzers-overview.md)
-- [편집기구성에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)
