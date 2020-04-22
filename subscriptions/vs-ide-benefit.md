@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Visual Studio IDE를 다운로드하고 설치하는 방법을 알아봅니다.
-ms.openlocfilehash: 154e5449603a8a92d2c2a52887fc4631b8dd0ab9
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 84666b0fd4362002fe15b21a6f23cd96c9cdc6a1
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649548"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 혜택
 

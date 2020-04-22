@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: 71af6f269fe84ef633215dcb526b89dffe8481a0
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: 6ae0a77cf4849f0e648eeed17830911c90c8b584
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301873"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649795"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -25,7 +25,7 @@ ms.locfileid: "80301873"
 ## <a name="activation-steps"></a>활성화 단계
 1. 구독을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 연결하고 전문적인 개발 섹션에 있는 Pluralsight 혜택 타일에서 **코드 가져오기** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight 혜택 타일](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
+   > ![Pluralsight 혜택 타일](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
    >
    > [!IMPORTANT]
    > Pluralsight 혜택 타일에서 “코드 얻기” 링크를 클릭하면 다음 메시지가 표시될 수 있습니다.

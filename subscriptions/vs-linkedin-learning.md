@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 LinkedIn 프리미엄 구독의 일부로 포함된 LinkedIn 학습 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 57744c21123188448048b469aa06153cf81a949f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: a0b837ce4a86b48acb690030c1a96064b336cd61
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273961"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649523"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 LinkedIn 학습 혜택
 
@@ -27,7 +27,7 @@ LinkedIn Premium 구독 및 LinkedIn Learning 혜택을 활성화하려면:
 
 2. 교육 범주에서 LinkedIn Learning 타일을 찾아 **코드 가져오기** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 혜택 타일](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
+   > ![LinkedIn Learning 혜택 타일](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
 3. LinkedIn 계정이 있고 자동으로 로그인한 경우 즉시 LinkedIn Learning 혜택 활성화 페이지로 이동하게 됩니다.  LinkedIn 계정이 있으나 자동으로 로그인하지 않은 경우 사용자 이름 및 암호를 입력한 다음 **로그인**을 클릭하기만 하면 됩니다.  제품을 활성화하려면 [이 단계](#activate-your-offer)로 건너뜁니다.
 

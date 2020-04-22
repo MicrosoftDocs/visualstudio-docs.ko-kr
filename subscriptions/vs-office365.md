@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: 일부 Visual Studio 구독에 포함된 Office 365 Pro Plus 혜택을 알아봅니다.
-ms.openlocfilehash: ce0527fbf4912ed55ed99f9368c8f10dde68a091
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: 3db596912739562b65a0568864dfdf224cc28b3a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649487"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365 Pro Plus
 

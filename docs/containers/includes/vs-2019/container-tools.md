@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80502217"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389982"
 ---
 Visual Studio를 사용하여 컨테이너화된 NET, ASP.NET 및 ASP.NET Core 앱을 쉽게 빌드, 디버그, 실행하고 ACR(Azure Container Registry), Docker Hub, Azure App Service 또는 사용자 고유 컨테이너 레지스트리에 게시할 수 있습니다. 이 문서에서는 ASP.NET Core 앱을 ACR에 게시합니다.
 
@@ -21,7 +21,7 @@ Visual Studio를 사용하여 컨테이너화된 NET, ASP.NET 및 ASP.NET Core �
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core를 사용하여 개발하기 위한 [.NET Core 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/)
-* Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
+* Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/free/dotnet/)합니다.
 
 ## <a name="installation-and-setup"></a>설치 및 설정
 

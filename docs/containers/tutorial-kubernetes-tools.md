@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916956"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444689"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
@@ -40,7 +40,7 @@ Visual Studio Kubernetes 도구는 Kubernetes를 대상으로 하는 컨테이�
 
     1. Azure Kubernetes Service 클러스터입니다. 자세한 내용은 [AKS 클러스터 만들기](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster)를 참조하세요. 개발 워크스테이션에서 [클러스터에 연결](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)해야 합니다.
 
-    1. 개발 워크스테이션에 설치된 Helm CLI. 자세한 내용은 [Helm 설치](https://github.com/kubernetes/helm/blob/master/docs/install.md)를 참조하세요.
+    1. 개발 워크스테이션에 설치된 Helm CLI. 자세한 내용은 [Helm 설치](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md)를 참조하세요.
 
     1. `helm init` 명령을 사용하여 AKS 클러스터에 대해 구성된 Helm. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Helm 구성 방법](/azure/aks/kubernetes-helm#configure-helm)을 참조하세요.
 ::: moniker-end

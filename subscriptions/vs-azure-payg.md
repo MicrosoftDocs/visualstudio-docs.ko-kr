@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Azure 종량제(Pay-As-You-Go) 계정을 설정하는 방법을 알아봅니다.
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231980"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444854"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest 종량제 구독
 클라우드에서 팀과 공동으로 작업해 보세요.  여러 개발 및 테스트 종량제(PAYG, Pay-As-You-Go) 구독을 만들면 다른 구독자와 협업을 가능하게 하는 한편 팀과 환경 간의 격리를 제공합니다.  Azure에서 구독 소프트웨어의 개발/테스트 및 클라우드 사용권에 대한 시간당 요금이 독점적으로 할인됩니다.

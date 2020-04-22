@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fdb0cc217062190e02e70b6361c8a3a2aa2f935
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306916"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648534"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -104,7 +104,7 @@ EditorConfig 편집기 설정은 XML을 제외하고 Visual Studio가 지원하�
 
 - IntelliCode for Visual Studio의 [코드 유추 기능](/visualstudio/intellicode/code-style-inference)은 기존 코드에서 코드 스타일을 유추합니다. 그런 다음, 이미 정의된 코드 스타일 기본 설정을 사용하여 비어 있지 않은 EditorConfig 파일을 만듭니다.
 
-- Visual Studio 2019부터 **도구** > **옵션**에서 [코드 스타일 설정에 따라 EditorConfig 파일을 생성](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files)할 수 있습니다.
+- Visual Studio 2019부터 **도구** > **옵션**에서 [코드 스타일 설정에 따라 EditorConfig 파일을 생성](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)할 수 있습니다.
 
 ## <a name="file-hierarchy-and-precedence"></a>파일 계층 구조 및 우선 순위
 

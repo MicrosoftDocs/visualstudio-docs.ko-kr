@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/01/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 통해 Microsoft Windows Virtual Desktop을 활용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 3954a3e86c319b8d433e509a8b283201c3313410
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 87911b1b7b6eb63eb85b64515d5d24755e4656e6
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80573084"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649727"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>구독에서 Windows Virtual Desktop 액세스 
 이제 Visual Studio 구독자는 Microsoft Windows Virtual Desktop 서비스에 대해 Azure 개발/테스트 개별 크레딧을 사용할 수 있습니다.  

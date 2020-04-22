@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233074"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649625"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
@@ -58,7 +58,7 @@ tsconfig 파일에 대한 필수 설정은 다음과 같습니다.
 출력 위치 및 `node_modules` 또는 `temp`와 같은 프로젝트 이외 폴더를 이 설정에 추가해야 합니다.
 - `enableAutoDiscovery`: 이 설정을 통해 이전에 설명한 대로 정의 파일을 자동으로 검색 및 다운로드할 수 있습니다.
 - `compileOnSave`: 이 설정은 언제든 소스 파일이 Visual Studio에서 저장되면 다시 컴파일해야 하는 경우 컴파일러에 알립니다.
-- `typeAcquisition`: 이 설정 세트를 통해 자동 형식 인식의 동작([이 섹션](/visualstudio/ide/javascript-intellisense#Auto)에서 자세히 설명)을 제어합니다.
+- `typeAcquisition`: 이 설정 세트를 통해 자동 형식 인식의 동작([이 섹션](../ide/javascript-intellisense.md#Auto)에서 자세히 설명)을 제어합니다.
 
 JavaScript 파일을 CommonJS 모듈로 변환하고 `./out` 폴더에 두려면 다음 `tsconfig.json` 파일을 사용할 수 있습니다.
 
