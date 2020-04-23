@@ -77,6 +77,7 @@
 ### 구독 할당
 #### [단일 사용자 추가](assign-license.md)
 #### [여러 사용자 추가](assign-license-bulk.md)
+#### [특정 구독 할당](assign-guid.md)
 ### [구독 편집](edit-license.md)
 ### [구독 삭제](delete-license.md)
 ### [구독 검색](search-license.md)
