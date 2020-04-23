@@ -175,9 +175,9 @@
         - name: Unity 도구 사용
           href: using-vsmac-tools-unity.md
         - name: Unity에서 .NET 4.x 사용
-          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
+          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
         - name: 변경 로그
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: Xamarin을 사용한 모바일 앱
       href: /visualstudio/mac/xamarin
 - name: 액세스 가능성
