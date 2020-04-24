@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78235108"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744985"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기
 
@@ -103,19 +103,24 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 ## <a name="build-the-project"></a>프로젝트 빌드
 
+::: moniker range=">=vs-2019"
+1. 그런 다음, **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다.
+
+1. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
+::: moniker-end
+::: moniker range="vs-2017"
 1. (TypeScript 프로젝트에만 해당) Visual Studio에서 **빌드** > **솔루션 정리**를 선택합니다.
 
-    ::: moniker range=">=vs-2019"
-    Visual Studio 2019에 포함된 TypeScript 템플릿에서 이 단계를 건너뜁니다.
-    ::: moniker-end
+1. 그런 다음, **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다.
 
-1. 그런 다음, **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
+1. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
+::: moniker-end
 
-    JavaScript Vue.js 프로젝트 템플릿(및 이전 버전의 TypeScript 템플릿)은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows Explorer에서 프로젝트 파일( *\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
+JavaScript Vue.js 프로젝트 템플릿(및 이전 버전의 TypeScript 템플릿)은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows Explorer에서 프로젝트 파일( *\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 
@@ -135,6 +140,6 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 ## <a name="next-steps"></a>다음 단계
 
+- [Vue.js](create-application-with-vuejs.md)에 대한 문서 참조
 - [Node.js 및 Express에 대한 자습서](tutorial-nodejs.md) 살펴보기
-- [Node.js 및 React에 대한 자습서](tutorial-nodejs-with-react-and-jsx.md) 살펴보기
 - [앱을 Linux App Service에 배포](../javascript/publish-nodejs-app-azure.md)

@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113716"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649200"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio 제거
 
@@ -51,18 +51,18 @@ ms.locfileid: "76113716"
 1. 관리자 명령 프롬프트를 엽니다. 관리자 명령 프롬프트를 열려면 다음 단계를 따릅니다.
    * "검색하려면 여기에 입력" 상자에 **cmd**를 입력합니다.
    * **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다.
-1. `InstallCleanup.exe` 도구의 전체 경로를 입력하고 원하는 명령줄 스위치를 추가합니다. 기본적으로 이 도구의 경로는 다음과 같습니다.
+1. `InstallCleanup.exe` 도구의 전체 경로를 입력하고 원하는 명령줄 스위치를 추가합니다. 기본적으로 이 도구의 경로는 다음과 같습니다. 공백이 포함된 명령을 큰따옴표로 묶습니다.
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]
-   > 항상 `InstallCleanup.exe`에 위치하는 Visual Studio 설치 관리자 디렉터리 아래에서 `%ProgramFiles(x86)%\Microsoft Visual Studio`를 찾을 수 없는 경우 다음 단계를 수행합니다. 지침에 따라 [Visual Studio를 설치](install-visual-studio.md)합니다. 그런 다음 워크로드 선택 화면이 표시되면 창을 닫고 이 페이지의 단계를 다시 수행합니다.
+   > 항상 `%ProgramFiles(x86)%\Microsoft Visual Studio`에 위치하는 Visual Studio 설치 관리자 디렉터리 아래에서 `InstallCleanup.exe`를 찾을 수 없는 경우 다음 단계를 수행합니다. 지침에 따라 [Visual Studio를 설치](install-visual-studio.md)합니다. 그런 다음 워크로드 선택 화면이 표시되면 창을 닫고 이 페이지의 단계를 다시 수행합니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 설치](install-visual-studio.md)
 * [Visual Studio 업데이트](update-visual-studio.md)

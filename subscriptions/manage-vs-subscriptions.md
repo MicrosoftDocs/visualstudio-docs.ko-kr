@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232354"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444879"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -38,7 +38,7 @@ Visual Studio 구독 포털은 향상된 단일 포털 환경에서 모든 Visua
 ### <a name="if-your-subscription-is-not-visible"></a>구독이 표시되지 않는 경우
 
 - 구독이 만료되었을 수 있습니다. 구독자 포털에는 활성 구독만 표시됩니다.
-- 구독이 다른 전자 메일 주소와 연결되어 있을 수 있습니다. 예를 들어 회사/학교 전자 메일로 Visual Studio Professional 구독에 로그인하고 Microsoft 계정과 연결된 Visual Studio Dev Essentials 멤버 자격이 있는 경우, 구독자 포털에 로그인하는 데 사용한 전자 메일 주소에 해당하는 구독만 표시됩니다. 다른 구독을 보려면 로그아웃한 다음 다른 전자 메일 주소로 로그인해야 합니다.
+- 구독이 다른 이메일 주소와 연결되어 있을 수 있습니다. 예를 들어 회사/학교 전자 메일로 Visual Studio Professional 구독에 로그인하고 Microsoft 계정과 연결된 Visual Studio Dev Essentials 멤버 자격이 있는 경우, 구독자 포털에 로그인하는 데 사용한 이메일 주소에 해당하는 구독만 표시됩니다. 다른 구독을 보려면 로그아웃한 다음 다른 이메일 주소로 로그인해야 합니다.
 - 회사에서 볼륨 라이선스를 통해 구독을 구입한 경우 관리자가 사용자에게 구독을 할당하지 않았거나 사용자의 구독을 다른 사용자에게 다시 할당했을 수 있습니다.
 
 ## <a name="renewing-my-subscriptions"></a>내 구독 갱신
@@ -52,7 +52,6 @@ Visual Studio 구독 포털은 향상된 단일 포털 환경에서 모든 Visua
 **프로그램을 통해 구입한 구독:**  프로그램을 통해 구독을 얻는 경우 구독은 프로그램 참여와 관련이 있습니다. 추가 정보는 프로그램 담당자에게 문의하세요.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft 파트너 네트워크](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -84,14 +83,14 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>내 구독을 기존 Azure DevOps Services 또는 Azure 구독에 연결
 개인 MSA(Microsoft 계정)를 사용하여 구독에 로그인하는 경우 Azure에서 관리하는 회사 또는 학교 계정을 사용하는 Azure DevOps Services 또는 Microsoft Azure를 포함한 구독이 있으면 두 구독을 연결할 수 있습니다. 이를 "대체 계정"이라고 하며, 학교 또는 회사 계정과 연결된 기존 Azure, Azure DevOps Services 또는 IDE 리소스에 액세스하는 동안 MSA를 계속 사용하여 구독에 로그인할 수 있게 해줍니다.
 
-두 계정이 모두 동일한 전자 메일 주소를 사용하더라도 두 계정 모두에서 혜택을 사용하려면 회사/학교 계정을 대체 계정으로 추가해야 합니다.
+두 계정이 모두 동일한 이메일 주소를 사용하더라도 두 계정 모두에서 혜택을 사용하려면 회사/학교 계정을 대체 계정으로 추가해야 합니다.
 
 대체 계정을 추가하려면
 
 1. MSA(Microsoft 계정)를 사용하여 [구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인합니다.
 2. **구독** 탭을 클릭합니다.
 3. **관련 링크** 아래에서 **대체 계정 추가**를 선택합니다.
-4. 회사/학교 계정 전자 메일 주소를 입력하고 **추가**를 클릭합니다.
+4. 회사/학교 계정 이메일 주소를 입력하고 **추가**를 클릭합니다.
 
 대체 계정을 추가하면 언제든지 **구독** 탭을 클릭하고 **관련 링크** 섹션에서 적절한 옵션을 선택하여 해당 계정을 업데이트하거나 제거할 수 있습니다.
 
@@ -106,7 +105,7 @@ A: Microsoft가 고객 데이터를 유지하는 기간은 구매 채널에 따�
 |    VLSC(볼륨 라이선스 서비스 센터)              |    180          |
 |    MPSA(Microsoft 제품 및 서비스 계약)    |    180          |
 |    Visual Studio 클라우드 구독                   |    180          |
-|    프로그램(예: MCT, BizSpark, MPN, Imagine)          |    180          |
+|    프로그램(예: MCT, MPN, Imagine)          |    180          |
 |    재판매 금지(예: MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 

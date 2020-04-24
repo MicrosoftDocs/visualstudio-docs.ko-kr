@@ -7,17 +7,22 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Azure DevOps를 Visual Studio 구독자로 사용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
-ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
+ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80607176"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444828"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 구독자용 Azure DevOps 혜택
 적극적인 Visual Studio 구독자는 구독 혜택에 포함된 Azure DevOps의 다양한 기능을 사용할 수 있습니다. 조직을 직접 만들었든 또는 다른 사용자에 의해 추가되었든, 멤버로 속해 있는 각 Azure DevOps 조직에서 이러한 동일한 기능을 사용할 수 있습니다.
 
 ## <a name="sign-in"></a>로그인
+
+   > [!div class="mx-imgBorder"]
+   > ![Azure DevOps 타일](_img/vs-azure-devops/vs-azure-devops-tile.png)
+
+   
 Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는 [대체 ID](vs-alternate-identity.md)를 사용하여 Azure DevOps에 로그인하면 자동으로 인식됩니다.  이 방식으로 회사 또는 학교 계정(Visual Studio, Office 365 또는 회사나 학교 네트워크에 로그인할 때 사용하는 계정)을 추가할 수 있으며, 사용자의 개인 계정과 회사 또는 학교 계정 둘 다를 사용하여 Azure DevOps에 액세스할 수도 있습니다.
 
 [무료 Azure DevOps 조직에 등록](https://visualstudio.microsoft.com/team-services/)

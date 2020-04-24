@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70180273"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744936"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 애플리케이션 만들기
 
@@ -51,7 +51,7 @@ Visual Studio에서 Vue.js 애플리케이션을 개발할 때 다음과 같은 
 
     아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임에서 검색되지 않을 경우 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다. (프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.)
 
-## <a name="create-a-vuejs-project-using-a-template"></a>템플릿을 사용하여 Vue.js 프로젝트 만들기
+## <a name="create-a-vuejs-project-using-nodejs"></a>Node.js를 사용하여 Vue.js 프로젝트 만들기
 
 새 Vue.js 템플릿을 사용하여 새 프로젝트를 만들 수 있습니다. 템플릿 사용은 시작을 위한 가장 쉬운 방법입니다. 자세한 단계는 [Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기](../javascript/quickstart-vuejs-with-nodejs.md)를 참조하세요.
 

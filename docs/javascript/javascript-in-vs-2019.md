@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: df4630182e89dad08360794057bda856ff4d677b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549941"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544291"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019의 JavaScript 및 TypeScript
 
@@ -38,7 +38,8 @@ Visual Studio 2019는 TypeScript 컴파일을 프로젝트에 통합하는 다�
 * [TypeScript npm 패키지](https://www.npmjs.com/package/typescript). TypeScript 2.1 이상용 npm 패키지가 프로젝트에 설치되면 해당 버전의 TypeScript 언어 서비스가 편집기에 로드됩니다.
 * Visual Studio 설치 관리자에서 기본적으로 제공되고 [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017)에서 독립 실행형 SDK 다운로드로 제공되는 TypeScript SDK.
 
-Visual Studio 2019에서 개발된 프로젝트의 경우 다양한 플랫폼과 환경에서 이식성을 높이려면 TypeScript NuGet 및 npm 패키지를 사용하는 것이 좋습니다.
+> [!TIP]
+> Visual Studio 2019에서 개발된 프로젝트의 경우 다양한 플랫폼과 환경에서 이식성을 높이려면 TypeScript NuGet 또는 TypeScript npm 패키지를 사용하는 것이 좋습니다.
 
 NuGet 패키지의 일반적인 용도 중 하나는 .NET Core CLI를 사용하여 TypeScript를 컴파일하는 것입니다. TypeScript SDK 설치에서 빌드 대상을 가져오도록 프로젝트 파일을 수동으로 편집하지 않는 이상, NuGet 패키지는 `dotnet build` 및 `dotnet publish`와 같은 .NET Core CLI 명령을 사용하여 TypeScript 컴파일을 사용하도록 설정할 유일한 방법입니다.
 

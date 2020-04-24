@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180348"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444949"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기
 
@@ -182,7 +182,7 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
 3. **디버그 > 디버깅하지 않고 시작**(**Ctrl**+**F5**)을 선택하여 변경 내용을 파일에 저장하고 앱을 실행합니다.
 
-4. 명령 창에는 "*<https://localhost:4449/>에서 실행" 메시지가 표시되고, 브라우저 창이 "Hello, Python!"이라는 메시지가 표시되는 `localhost:4449`에 열려야 합니다. 명령 창에 200 상태와 함께 GET 요청도 나타납니다.
+4. 명령 창에는 **https:\//localhost:4449에서 실행** 메시지가 표시되고, 브라우저 창이 “Hello, Python!”이라는 메시지가 표시되는 `localhost:4449`에 열려야 합니다. 명령 창에 200 상태와 함께 GET 요청도 나타납니다.
 
     브라우저가 자동으로 열리지 않으면 원하는 브라우저를 시작하고 `localhost:4449`으로 이동합니다.
 

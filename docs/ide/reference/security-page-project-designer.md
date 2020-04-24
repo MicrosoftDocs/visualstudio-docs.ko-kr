@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593579"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649831"
 ---
 # <a name="security-page-project-designer"></a>프로젝트 디자이너, 보안 페이지
 
@@ -36,7 +36,7 @@ ms.locfileid: "75593579"
 > [!NOTE]
 > **게시** 마법사를 사용하여 애플리케이션을 게시하면 이 옵션은 자동으로 사용됩니다.
 
-이 옵션을 선택하면 **완전 신뢰 애플리케이션** 또는 **부분 신뢰 애플리케이션**이라는 두 개의 라디오 단추 중 하나를 선택합니다.
+이 옵션을 선택하는 경우 다음 두 개의 라디오 단추 중 하나를 선택할 수 있습니다. **완전 신뢰 애플리케이션** 또는 **부분 신뢰 애플리케이션**
 
 WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션이 기본적으로 선택됩니다.
 
@@ -72,15 +72,15 @@ WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션은 기
 
 [고급 보안 설정 대화 상자](../../ide/reference/advanced-security-settings-dialog-box.md)를 열어 제한된 권한으로 애플리케이션을 디버깅하는 설정을 구성하는 데 사용합니다. 이 설정은 디버깅하는 동안 검사됩니다. 권한 예외는 애플리케이션에 영역에 정의된 것보다 많은 권한이 필요할 수 있음을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md)
 - [방법: ClickOnce 보안 설정 사용](../../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 애플리케이션의 보안 영역 설정](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [방법: ClickOnce 애플리케이션에 대한 사용자 지정 권한 설정](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [방법: ClickOnce 애플리케이션의 사용자 지정 권한 설정](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [ClickOnce 앱 보안](../../deployment/securing-clickonce-applications.md)
 - [ClickOnce 보안 및 배포](../../deployment/clickonce-security-and-deployment.md)
 - [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)
 - [고급 보안 설정 대화 상자](../../ide/reference/advanced-security-settings-dialog-box.md)

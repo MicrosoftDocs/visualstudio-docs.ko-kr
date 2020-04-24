@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544047"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649694"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 구독의 새로운 기능
 
@@ -39,6 +39,23 @@ Azure AD(Azure Active Directory)를 사용하는 조직에서는 이제 Azure AD
 Microsoft 파트너인 CAST Highlight가 제공하는 혜택의 확장을 발표하게 되어 기쁘게 생각합니다. 
 - Visual Studio Enterprise 구독에 포함된 혜택의 기간이 6개월까지 연장되었습니다.  
 - 이제 Visual Studio Professional 구독자는 단일 애플리케이션을 3개월 동안 평가할 수 있는 구독을 받을 수 있습니다. 
+
+## <a name="2020-q2-april-june"></a>2020 Q2(4월~6월)
+
+### <a name="visual-studio-subscriptions-portal"></a>Visual Studio 구독 포털
+
+Visual Studio 구독 포털은 모양과 사용 편의성이 크게 변경되었습니다.  
+
+- 혜택 타일이 크기가 조정되어 모두 창에 표시되므로, 지정된 범주의 모든 타일을 보기 위해 왼쪽이나 오른쪽으로 스크롤할 필요가 없습니다. 
+- 사용 가능한 모든 혜택을 표시하거나 범주 선택을 사용하여 한 범주만 표시하도록 선택할 수 있습니다.
+   > [!div class="mx-imgBorder"]
+   > ![새로운 혜택 범주 선택](_img/whats-new/whats-new-category-picker.png)
+- 또한 구독 선택을 창의 오른쪽 위 모서리에서 더 쉽게 액세스할 수 있는 위치로 옮겼습니다.
+   > [!div class="mx-imgBorder"]
+   > ![새로운 구독 선택](_img/whats-new/whats-new-sub-picker.png)
+- 새로운 혜택이나 인기 있는 혜택을 호출하도록 혜택 목록 맨 위에 “주요 혜택”을 추가했습니다.  
+   > [!div class="mx-imgBorder"]
+   > ![새로운 주요 혜택](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>다음 단계
 - 새로운 [구독 관리 포털](https://manage.visualstudio.com) UI 및 새 기능 확인
