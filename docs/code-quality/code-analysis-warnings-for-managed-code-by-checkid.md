@@ -106,6 +106,7 @@ f1_keywords:
 - CA1505
 - CA1506
 - CA1507
+- CA1508
 - CA1600
 - CA1601
 - CA1700
@@ -265,18 +266,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83ed654a6e0795e5930580f9d13198631b5d695e
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109496"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153019"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
 다음 표에서는 관리 코드에 대한 코드 분석 경고를 경고의 CheckId 식별자별로 보여 줍니다.
 
-| CheckId | Warning | 설명 |
+| CheckId | Warning | Description |
 |---------| - | - |
 | CA2007 | [CA2007: 작업을 직접 기다리지 않음](ca2007.md) | 비동기 메서드는 [awaits](/dotnet/csharp/language-reference/keywords/await) 를 <xref:System.Threading.Tasks.Task> 직접 기다립니다 합니다. 비동기 메서드가 <xref:System.Threading.Tasks.Task> 직접 기다립니다 작업을 만든 스레드와 동일한 스레드에서 연속 작업을 수행 합니다. 이 동작은 성능 측면에서 비용이 많이 들 수 있으며 UI 스레드에 교착 상태가 발생할 수 있습니다. 을 호출 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 하 여 연속 작업을 위한 신호를 보내는 것이 좋습니다. |
 | CA1000 | [CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마십시오.](../code-quality/ca1000.md) | 제네릭 형식의 정적 멤버를 호출할 때는 형식에 형식 인수를 지정해야 합니다. 유추를 지원하지 않는 제네릭 인스턴스 멤버를 호출할 때는 멤버에 형식 인수를 지정해야 합니다. 이 두 가지 경우에 형식 인수를 지정하기 위한 구문은 서로 다르며 혼동되기 쉽습니다. |
@@ -375,7 +376,9 @@ ms.locfileid: "82109496"
 | CA1502 | [CA1502: 지나치게 복잡하게 만들지 마십시오.](../code-quality/ca1502.md) | 이 규칙은 메서드를 통과하는 선형 독립 경로의 수를 측정하며 조건부 분기의 수와 복잡성에 의해 결정됩니다. |
 | CA1504 | [CA1504: 잘못된 필드 이름을 검토하십시오.](../code-quality/ca1504.md) | 인스턴스 필드의 이름이 "s_"로 시작 하거나 정적 (Visual Basic에서는 Shared) 필드의 이름이 "m_"로 시작 합니다. |
 | CA1505 | [CA1505: 유지 관리할 수 없는 코드는 사용하지 마십시오.](../code-quality/ca1505.md) | 형식 또는 메서드에 낮은 유지 관리 인덱스 값이 있습니다. 낮은 유지 관리 인덱스는 형식 또는 메서드가 유지 관리하기 어렵고 다시 디자인될 수 있음을 나타냅니다. |
-| CA1506 |[CA1506: 클래스 결합을 지나치게 많이 사용하지 마십시오.](../code-quality/ca1506.md) | 이 규칙은 형식 또는 메서드에 들어 있는 고유한 형식 참조의 개수를 계산하여 클래스 결합을 측정합니다. |
+| CA1506 | [CA1506: 클래스 결합을 지나치게 많이 사용하지 마십시오.](../code-quality/ca1506.md) | 이 규칙은 형식 또는 메서드에 들어 있는 고유한 형식 참조의 개수를 계산하여 클래스 결합을 측정합니다. |
+| CA1507 | [CA1507: 문자열 대신 nameof를 사용 합니다.](../code-quality/ca1507.md) | 문자열 리터럴은 `nameof` 식을 사용할 수 있는 인수로 사용 됩니다. |
+| CA1508 | [CA1508: 데드 조건부 코드 방지](../code-quality/ca1508.md) | 메서드에는 항상 또는 `true` `false` 런타임 시로 계산 되는 조건부 코드가 있습니다. 이렇게 하면 조건의 `false` 분기에서 데드 코드가 발생 합니다. |
 | CA1600 | [CA1600: 유휴 상태 프로세스 우선 순위를 사용하지 마십시오.](../code-quality/ca1600.md) | 프로세스 우선 순위를 유휴 상태로 설정하지 마십시오. System.Diagnostics.ProcessPriorityClass.Idle인 프로세스는 어떠한 이유로든 유휴 상태가 될 경우 CPU를 차지하므로 블록이 대기 모드가 됩니다. |
 | CA1601 | [CA1601: 전원 상태 변경을 방해하는 타이머를 사용하지 마십시오.](../code-quality/ca1601.md) | 정기적인 작업의 실행 빈도가 높아지면 CPU 사용률도 높아져 디스플레이 및 하드 디스크를 끄는 절전 유휴 타이머에 방해가 됩니다. |
 | CA1700 | [CA1700: 열거형 값의 이름을 'Reserved'로 지정하지 마십시오.](../code-quality/ca1700.md) | 이 규칙에서는 "reserved"라는 단어가 포함된 이름을 갖는 열거형 멤버가 현재 사용되지는 않지만 이후 버전에서 이름이 바뀌거나 제거될 자리 표시자라고 가정합니다. 멤버의 이름을 바꾸거나 멤버를 제거하는 것은 주요 변경에 해당합니다. |
