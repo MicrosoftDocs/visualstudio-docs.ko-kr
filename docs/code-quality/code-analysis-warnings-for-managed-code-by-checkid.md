@@ -158,6 +158,10 @@ f1_keywords:
 - CA1823
 - CA1824
 - CA1825
+- CA1826
+- CA1827
+- CA1828
+- CA1829
 - CA1900
 - CA1901
 - CA1903
@@ -266,12 +270,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153019"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167386"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -424,6 +428,10 @@ ms.locfileid: "82153019"
 | CA1823 | [CA1823: 사용되지 않는 전용 필드를 사용하지 마십시오.](../code-quality/ca1823.md) | 어셈블리에서 액세스되지 않는 것으로 보이는 전용 필드가 발견되었습니다. |
 | CA1824 |[CA1824: NeutralResourcesLanguageAttribute로 어셈블리 표시](../code-quality/ca1824.md) | NeutralResourcesLanguage 특성은 어셈블리에 대 한 중립 문화권의 리소스를 표시 하는 데 사용 된 언어를 리소스 관리자에 게 알립니다. 이렇게 하면 로드한 첫 리소스에 대한 찾기 성능을 향상시킬 수 있으며 작업이 간단해집니다. |
 | CA1825 |[CA1825: 길이가 0 인 배열 할당을 방지 합니다.](../code-quality/ca1825.md) | 길이가 0 인 배열을 초기화 하면 불필요 한 메모리 할당이 발생 합니다. 대신를 호출 <xref:System.Array.Empty%2A?displayProperty=nameWithType>하 여 정적으로 할당 된 빈 배열 인스턴스를 사용 합니다. 메모리 할당은이 메서드의 모든 호출에서 공유 됩니다. |
+| CA1826 |[CA1826: Linq Enumerable 메서드 대신 속성을 사용 하십시오.](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>LINQ 메서드는 보다 효율적인 동등한 속성을 지 원하는 형식에서 사용 되었습니다. |
+| CA1827 |[CA1827: Count/LongCount을 사용할 수 있는 경우 사용 하지 마십시오.](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>또는 <xref:System.Linq.Enumerable.LongCount%2A> 메서드가 더 효율적으로 <xref:System.Linq.Enumerable.Any%2A> 사용 되었습니다. |
+| CA1828 |[CA1828: AnyAsync를 사용할 수 있는 경우 CountAsync/LongCountAsync를 사용 하지 마십시오.](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>또는 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> 메서드가 더 효율적으로 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 사용 되었습니다. |
+| CA1829 |[CA1829: Enumerable 메서드 대신 Length/Count 속성을 사용 하십시오.](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ 메서드가 동등한, 보다 효율적인 `Length` 또는 `Count` 속성을 지 원하는 형식에서 사용 되었습니다. |
 | CA1900 | [CA1900: 값 형식 필드는 이식 가능해야 합니다.](../code-quality/ca1900.md) | 이 규칙에서는 명시적 레이아웃으로 선언된 구조체가 64비트 운영 체제에서 비관리 코드로 마샬링될 때 올바르게 맞춰지는지 검사합니다. |
 | CA1901 | [CA1901: P/Invoke 선언은 이식 가능해야 합니다.](../code-quality/ca1901.md) | 이 규칙은 P/Invoke의 반환 값과 각 매개 변수의 크기를 계산하여 32비트 및 64비트 운영 체제에서 비관리 코드로 마샬링될 때 해당 매개 변수의 크기가 올바른지 확인합니다. |
 | CA1903 | [CA1903: 대상 프레임워크에서 API만 사용하십시오.](../code-quality/ca1903.md) | 멤버 또는 형식이 프로젝트의 대상 프레임워크에 함께 포함되지 않은 서비스 팩에 도입된 멤버 또는 형식을 사용합니다. |
