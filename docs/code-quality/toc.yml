@@ -332,6 +332,10 @@
                   href: ca1064.md
                 - name: 'CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.'
                   href: ca1065.md
+                - name: 'CA1066: Equals를 재정의할 때 IEquatable을 구현하세요.'
+                  href: ca1066.md
+                - name: 'CA1067: IEquatable을 구현할 때 Equals를 재정의하세요.'
+                  href: ca1067.md
                 - name: 'CA1068: CancellationToken 매개 변수는 마지막에 위치해야 합니다.'
                   href: ca1068.md
                 - name: 'CA2210: 어셈블리에는 올바른 강력한 이름을 사용해야 합니다.'
@@ -426,6 +430,8 @@
                   href: ca1506.md
                 - name: 'CA1507: 문자열 대신 nameof 사용'
                   href: ca1507.md
+                - name: 'CA1508: 데드 조건부 코드 방지'
+                  href: ca1508.md
             - name: 이동성 경고
               items:
                 - name: 개요
@@ -531,6 +537,14 @@
                   href: ca1824.md
                 - name: 'CA1825: 길이가 0인 배열 할당 방지'
                   href: ca1825.md
+                - name: 'CA1826: Linq Enumerable 메서드 대신 속성을 사용하세요.'
+                  href: ca1826.md
+                - name: 'CA1827: Any를 사용할 수 있는 경우 Count/LongCount를 사용하지 마세요.'
+                  href: ca1827.md
+                - name: 'CA1828: AnyAsync를 사용할 수 있는 경우 CountAsync/LongCountAsync를 사용하지 마세요.'
+                  href: ca1828.md
+                - name: 'CA1829: Enumerable.Count 메서드 대신 Length/Count 속성을 사용하세요.'
+                  href: ca1829.md
             - name: 이식성 경고
               items:
                 - name: 개요
