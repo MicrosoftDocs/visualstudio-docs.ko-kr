@@ -11,19 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633761"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255578"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>방법: 여러 프로젝트 파일에서 동일한 대상 사용
 
 여러 MSBuild 프로젝트 파일을 만들었다면 여러 프로젝트 파일에서 동일한 작업 및 대상을 사용해야 한다는 사실을 알게 되었을 것입니다. 모든 프로젝트 파일에 이러한 작업이나 대상에 대한 완전한 설명을 포함하는 대신, 대상을 별도 프로젝트 파일에 저장한 다음, 해당 대상을 사용해야 하나ㅡㄴ 다른 프로젝트로 해당 프로젝트를 가져올 수 있습니다.
+
 ## <a name="use-the-import-element"></a>Import 요소 사용
 
- `Import` 요소는 한 프로젝트 파일을 다른 프로젝트 파일에 삽입하는 데 사용됩니다. 가져올 프로젝트 파일은 유효한 MSBuild 프로젝트 파일이어야 하며 올바른 형식의 XML을 포함해야 합니다. `Project` 특성은 가져온 프로젝트 파일의 경로를 지정합니다. `Import` 요소에 대한 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.
 `Import` 요소는 한 프로젝트 파일을 다른 프로젝트 파일에 삽입하는 데 사용됩니다. 가져올 프로젝트 파일은 유효한 MSBuild 프로젝트 파일이어야 하며 올바른 형식의 XML을 포함해야 합니다. `Project` 특성은 가져온 프로젝트 파일의 경로를 지정합니다. `Import` 요소에 대한 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.
 
 #### <a name="to-import-a-project"></a>프로젝트를 가져오려면

@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588384"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072507"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 작업
 
@@ -55,7 +55,7 @@ XML 파일로의 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 </Package>
 ```
 
-이 예제에서 `/Package/mp:PhoneIdentity/PhonePublisherId`를 수정하려는 경우 다음을 사용합니다.
+이 예제에서 `/Package/mp:PhoneIdentity/PhoneProductId`를 수정하려는 경우 다음을 사용합니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

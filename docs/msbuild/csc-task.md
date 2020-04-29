@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c88e5aaef9262d320cdf61564078246dee46b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634268"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167425"
 ---
 # <a name="csc-task"></a>Csc 작업
 
@@ -82,9 +82,7 @@ ms.locfileid: "77634268"
 | `Win32Manifest` | 선택적 `String` 매개 변수입니다.<br /><br /> 포함할 Win32 매니페스트를 지정합니다. |
 | `Win32Resource` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스( *.res*) 파일을 출력 파일에 삽입합니다. 자세한 내용은 [-win32res(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)를 참조하세요. |
 
-## <a name="remarks"></a>설명
-
-이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 상속하는 `Microsoft.Build.Tasks.ManagedCompiler` 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>예제
 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633605"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167399"
 ---
 # <a name="lc-task"></a>LC 작업
 
@@ -33,7 +33,7 @@ ms.locfileid: "77633605"
 
 다음 표에서는 `LC` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`LicenseTarget`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> *.licenses* 파일이 생성되는 대상 실행 파일을 지정합니다.|
 |`NoLogo`|선택적 `Boolean` 매개 변수입니다.<br /><br /> Microsoft 시작 배너를 표시하지 않습니다.|
@@ -41,9 +41,9 @@ ms.locfileid: "77633605"
 |`OutputLicense`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 출력 매개 변수입니다.<br /><br /> *.licenses* 파일의 이름을 지정합니다. 이름을 지정하지 않는 경우 *.licx* 파일의 이름이 사용되고 *.licenses* 파일이 *.licx* 파일을 포함하는 디렉터리에 배치됩니다.|
 |`ReferencedAssemblies`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> *.license* 파일을 생성할 때 로드할 참조된 구성 요소를 지정합니다.|
 |`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> *resgen.exe*와 같은 SDK 도구에 대한 경로를 지정합니다.|
-|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> *.licenses* 파일에 포함할 라이선스가 있는 구성 요소가 포함된 항목을 지정합니다. 자세한 내용은 `/complist`Lc.exe(라이선스 컴파일러)의 [ 스위치](/dotnet/framework/tools/lc-exe-license-compiler)에 대한 설명서를 참조하세요.|
+|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> *.licenses* 파일에 포함할 라이선스가 있는 구성 요소가 포함된 항목을 지정합니다. 자세한 내용은 [Lc.exe(라이선스 컴파일러)의 `/complist` 스위치](/dotnet/framework/tools/lc-exe-license-compiler)에 대한 설명서를 참조하세요.|
 
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Utilities.ToolTask> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>예제
 
@@ -69,7 +69,7 @@ ms.locfileid: "77633605"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

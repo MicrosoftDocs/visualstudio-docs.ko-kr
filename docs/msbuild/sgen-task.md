@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4305f27435d97c346ce623a21b37f011fd8da0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cbf18c4477a164ec2e25a5ed4b2105f6fdad9130
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632305"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167438"
 ---
 # <a name="sgen-task"></a>SGen 작업
 
@@ -51,9 +51,7 @@ ms.locfileid: "77632305"
 | `Types` | 선택적 `String[]` 매개 변수입니다.<br /><br /> serialization 코드를 생성하기 위한 특정 형식의 목록을 가져오거나 설정합니다. SGen은 해당 형식에 대해서만 serialization 코드를 생성합니다. |
 | `UseProxyTypes` | 필수 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 SGen 작업은 XML Web services 프록시 형식에 대해서만 serialization 코드를 생성합니다. |
 
-## <a name="remarks"></a>설명
-
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="see-also"></a>참조
 

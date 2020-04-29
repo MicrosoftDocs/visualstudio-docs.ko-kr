@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a1710336ebc73be707e962733e37376b5689e10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30f1a45c384495ccd02c624ea42f91a4379226df
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631239"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167455"
 ---
 # <a name="vbc-task"></a>Vbc 작업
 
@@ -89,9 +89,7 @@ ms.locfileid: "77631239"
 | `Win32Icon` | 선택적 `String` 매개 변수입니다.<br /><br /> **파일 탐색기**에서 출력 파일을 원하는 모양으로 표시하는 *.ico* 파일을 어셈블리에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 스위치에 해당합니다. |
 | `Win32Resources` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스( *.res*) 파일을 출력 파일에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) 스위치에 해당합니다. |
 
-## <a name="remarks"></a>설명
-
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>예제
 

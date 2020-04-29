@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634216"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167304"
 ---
 # <a name="exec-task"></a>Exec 작업
 
@@ -49,13 +49,13 @@ ms.locfileid: "77634216"
 |`StdOutEncoding`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 캡처된 작업 표준 출력 스트림의 인코딩을 지정합니다. 기본값은 현재 콘솔 출력 인코딩입니다.|
 |`WorkingDirectory`|선택적 `String` 매개 변수입니다.<br /><br /> 명령이 실행될 디렉터리를 지정합니다.<br /><br />기본값: 프로젝트의 현재 작업 디렉터리입니다.|
 
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
+
 ## <a name="remarks"></a>설명
 
 이 작업은 수행하려는 작업에 대한 특정 MSBuild 작업을 사용할 수 없을 때 유용합니다. 그러나 `Exec` 작업은 보다 구체적인 작업과 달리 실행하는 도구 또는 명령의 결과에 따라 추가 처리 또는 조건부 작업을 수행할 수 없습니다.
 
 `Exec` 작업은 프로세스를 직접 호출하지 않고 *cmd.exe*를 호출합니다.
-
-이 작업은 이 문서에 나와 있는 매개 변수 외에도 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
