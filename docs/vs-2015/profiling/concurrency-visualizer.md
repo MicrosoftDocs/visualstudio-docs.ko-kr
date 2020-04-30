@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: becaa70d2eed862d77f4c666b0a408054eaf5926
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e7061acabbe5ce18ff6e1f210fe0003bdaf88980
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850943"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586818"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "75850943"
 > 동시성 시각화 도우미는 Visual Studio의 선택적 확장입니다. 다음 링크에서 동시성 시각화 도우미와 동시성 시각화 수집 도구를 다운로드하세요.  
 > 
 > - [동시성 시각화 도우미](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 확장을 다운로드합니다.  
->   - [Visual Studio 2015용 동시성 시각화 수집 도구](https://www.microsoft.com/download/details.aspx?id=49103)를 다운로드합니다.  
+>   - [Visual Studio 2015에 대 한 Concurrency 시각화 수집 도구](https://www.microsoft.com/download/details.aspx?id=49103)를 다운로드 합니다.  
 > 
 >   [동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio 2015용 동시성 시각화 도우미에서 확인할 수 있습니다. 이 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.  
   
@@ -48,10 +48,10 @@ ms.locfileid: "75850943"
 |[사용률 뷰](../profiling/utilization-view.md)|모든 프로세서의 시스템 작업을 보고 분석하는 방법에 대해 설명합니다.|  
 |[스레드 뷰](../profiling/threads-view-parallel-performance.md)|프로그램의 스레드 간 상호 작용을 분석하는 방법에 대해 설명합니다.|  
 |[코어 뷰](../profiling/cores-view.md)|코어 간의 스레드 마이그레이션을 분석하는 방법에 대해 설명합니다.|  
-|[잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|몇 가지 일반적인 패턴을 설명하고 이러한 패턴이 동시성 시각화 도우미에서 어떻게 나타나는지 보여 줍니다.|  
-|[Visual Studio에서 병렬 개발 블로그](https://blogs.msdn.com/b/visualizeparallel)|동시성 시각화 도우미에 대한 팁과 유용한 정보를 제공합니다.|  
+|[잘못 동작 하는 다중 스레드 응용 프로그램의 일반 패턴](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|몇 가지 일반적인 패턴을 설명하고 이러한 패턴이 동시성 시각화 도우미에서 어떻게 나타나는지 보여 줍니다.|  
+|[Visual Studio에서 병렬 개발 블로그](https://docs.microsoft.com/archive/blogs/visualizeparallel/)|동시성 시각화 도우미에 대한 팁과 유용한 정보를 제공합니다.|  
 |[성능 보고서 뷰](../profiling/performance-report-views.md)|Visual Studio 프로파일링 도구의 보고서 및 뷰에 대한 참조 정보를 제공합니다.|  
-|[Concurrency 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)|동시성 시각화 도우미에서 추가 정보를 표시하도록 소스 코드를 계측하는 방법을 설명합니다.|  
+|[동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)|동시성 시각화 도우미에서 추가 정보를 표시하도록 소스 코드를 계측하는 방법을 설명합니다.|  
 |[동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)를 사용하여 Visual Studio가 설치되지 않은 컴퓨터에서 추적 정보를 수집 및 처리하는 방법을 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
