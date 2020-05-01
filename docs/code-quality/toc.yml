@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: 'CA1508: 데드 조건부 코드 방지'
                   href: ca1508.md
+                - name: 'CA1509: 코드 메트릭 구성 파일의 잘못된 항목'
+                  href: ca1509.md
             - name: 이동성 경고
               items:
                 - name: 개요
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007: 작업을 직접 대기하지 마세요.'
                   href: ca2007.md
+                - name: 'CA2009: ImmutableCollection 값의 ToImmutableCollection을 호출하지 마세요.'
+                  href: ca2009.md
             - name: 보안 경고
               items:
                 - name: 개요
