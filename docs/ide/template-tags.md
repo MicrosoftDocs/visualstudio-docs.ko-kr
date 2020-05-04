@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189514"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153020"
 ---
 # <a name="add-tags-to-project-templates"></a>프로젝트 템플릿에 태그 추가
 
@@ -56,12 +56,12 @@ ms.locfileid: "73189514"
 
 고급 사용자 시나리오에서 다음 선택적 특성을 사용할 수 있습니다.
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
 |`Package`|Visual Studio 패키지를 ID를 지정하는 GUID입니다.|
 |`ID`|Visual Studio 리소스 ID를 지정합니다.|
 
-구문
+구문:
 
 ```xml
 <LanguageTag Package="{PackageID}" ID="ResourceID" />
@@ -77,7 +77,7 @@ ms.locfileid: "73189514"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(필수) 템플릿을 분류하고 **새 프로젝트** 대화 상자 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
@@ -93,7 +93,7 @@ Visual Studio는 기본 제공되는 태그의 목록을 제공합니다. 기본
 
 다음은 Visual Studio에서 사용할 수 있는 기본 제공 태그를 보여 줍니다. 해당 값은 괄호 안에 표시됩니다.
 
-| 언어 | 플랫폼 | 프로젝트 형식 |
+| 언어 태그 | 플랫폼 태그 | 프로젝트 형식 태그 |
 | -- | -- | -- |
 | C++(`cpp`) | Android(`android`) | 클라우드(`cloud`) |
 | C#(`csharp`) | Azure(`azure`) | 콘솔(`console`) |
@@ -145,7 +145,7 @@ Visual Studio는 기본 제공되는 태그의 목록을 제공합니다. 기본
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](creating-project-and-item-templates.md)

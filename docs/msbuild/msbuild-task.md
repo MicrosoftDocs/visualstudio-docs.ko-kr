@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633176"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072582"
 ---
 # <a name="msbuild-task"></a>MSBuild 작업
 
@@ -42,6 +42,7 @@ ms.locfileid: "77633176"
 | `RemoveProperties` | 선택적 `String` 매개 변수입니다.<br /><br /> 제거할 전역 속성의 집합을 지정합니다. |
 | `RunEachTargetSeparately` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 MSBuild 작업이 MSBuild에 전달된 목록의 각 대상을 동시에 호출하는 대신 한 번에 하나씩 호출합니다. 이 매개 변수를 `true`로 설정하면 이전에 호출된 대상에 오류가 발생하더라도 후속 대상이 호출됩니다. 그렇지 않은 경우에는 빌드 오류로 인해 모든 후속 대상의 호출이 중지됩니다. 기본값은 `false`입니다. |
 | `SkipNonexistentProjects` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 디스크에 없는 프로젝트 파일을 건너뜁니다. 그렇지 않은 경우 이러한 프로젝트로 인해 오류가 발생합니다. |
+|`SkipNonexistentTargets`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 존재하지만 명명된 `Targets`를 포함하지 않는 프로젝트 파일을 건너뜁니다. 그렇지 않은 경우 이러한 프로젝트로 인해 오류가 발생합니다. MSBuild 15.5에서 도입되었습니다.|
 | `StopOnFirstFailure` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 프로젝트 중 하나를 빌드하지 못하면 더 이상 프로젝트를 빌드하지 않습니다. 현재 여러 프로세서를 사용하여 병렬로 빌드할 때는 이 매개 변수가 지원되지 않습니다. |
 | `TargetAndPropertyListSeparators` | 선택적 `String[]` 매개 변수입니다.<br /><br /> 대상 및 속성의 목록을 `Project` 항목 메타데이터로 지정합니다. 처리 전에 구분 기호를 이스케이프 해제합니다. 예를 들어 %3B(이스케이프된 ';')는 이스케이프 해제된 ';'로 처리됩니다. |
 | `TargetOutputs` | 선택적 읽기 전용 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 모든 프로젝트 파일에서 작성된 대상의 출력을 반환합니다. 해당 대상이 종속된 대상에 있을 수 있는 출력이 아닌, 지정된 대상의 출력만 반환됩니다.<br /><br /> `TargetOutputs` 매개 변수는 다음 메타데이터도 포함합니다.<br /><br /> -   `MSBuildSourceProjectFile`: 출력을 설정하는 대상이 포함된 MSBuild 프로젝트 파일입니다.<br />-   `MSBuildSourceTargetName`: 출력을 설정하는 대상입니다. **참고:**  각 프로젝트 파일이나 대상의 출력을 개별적으로 식별하려는 경우 각 프로젝트 파일 또는 대상에 대해 `MSBuild` 작업을 개별적으로 실행합니다. `MSBuild` 작업을 한 번만 실행하여 모든 프로젝트 파일을 빌드하는 경우에는 모든 대상의 출력이 배열 하나에 수집됩니다. |
