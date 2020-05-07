@@ -10,18 +10,20 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, conditions
 - conditions [MSBuild]
+- Exists, MSBuild condition function
+- HasTrailingSlash, MSBuild condition function
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7948f9da5922ba5f5e3582924bbccd56d50219a0
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072569"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586827"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 조건
 

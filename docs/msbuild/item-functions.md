@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633683"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586885"
 ---
 # <a name="item-functions"></a>항목 함수
 
@@ -101,6 +101,10 @@ ms.locfileid: "77633683"
     Reverse: third;second;first
   -->
 ```
+
+## <a name="msbuild-condition-functions"></a>MSBuild 조건 함수
+
+`Exists` 및 `HasTrailingSlash` 함수는 항목 함수가 아닙니다. `Condition` 특성과 함께 사용할 수 있습니다. [MSBuild 조건](msbuild-conditions.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 

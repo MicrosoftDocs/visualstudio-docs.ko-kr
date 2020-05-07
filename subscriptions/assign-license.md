@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 관리자가 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 87334251532dbaa127d4def8c33a9814c28d42e1
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232713"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564162"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 라이선스 할당
 Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자 또는 사용자 그룹에 구독을 할당할 수 있습니다.
@@ -25,6 +25,11 @@ Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자
 
 ## <a name="add-a-single-subscriber"></a>단일 구독자 추가
 구독 혜택에 액세스할 수 있도록 새 사용자에게 Visual Studio 구독을 할당하는 방법은 다음과 같습니다.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vpPh]
+
 
 1. [관리 포털](https://manage.visualstudio.com)에 로그인합니다.
 2. 단일 Visual Studio 구독자에게 라이선스를 할당하려면 테이블 맨 위에서 **추가**를 선택한 다음 **개별 구독자**를 선택합니다.

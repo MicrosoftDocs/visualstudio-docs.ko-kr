@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784663"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586569"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows의 Azure App Service에 게시
 
@@ -63,7 +63,7 @@ Azure에 게시하려면 대상 App Service가 필요합니다. 이 목적의 �
 
 다음과 같이 Azure 구독이 필요하지 않는 임시 App Service를 만듭니다.
 
-1. 브라우저를 [try.azurewebsites.net](https://try.azurewebsites.net)로 엽니다.
+1. 브라우저에서 [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/)을(를) 엽니다.
 1. 앱 유형에 **Web App**을 선택하고 **다음**을 선택합니다.
 1. **빈 사이트**, **만들기**를 차례로 선택합니다.
 1. 선택한 소셜 로그인을 사용하여 로그인하면 잠시 후에 사이트가 표시된 URL에서 준비됩니다.

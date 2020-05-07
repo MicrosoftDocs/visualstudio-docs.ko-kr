@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385520"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564188"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -108,7 +108,7 @@ ms.locfileid: "81385520"
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Q: Azure AD 그룹 내에서 할당할 여러 구독 수준을 선택할 수 있나요? 

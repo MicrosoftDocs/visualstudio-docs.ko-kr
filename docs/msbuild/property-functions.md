@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307192"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586683"
 ---
 # <a name="property-functions"></a>속성 함수
 
@@ -339,6 +339,10 @@ Output:
   Value2 = b
 -->
 ```
+
+## <a name="msbuild-condition-functions"></a>MSBuild 조건 함수
+
+`Exists` 및 `HasTrailingSlash` 함수는 속성 함수가 아닙니다. `Condition` 특성과 함께 사용할 수 있습니다. [MSBuild 조건](msbuild-conditions.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 
