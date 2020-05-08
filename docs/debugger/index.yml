@@ -26,11 +26,11 @@ landingContent:
       url: debugger-feature-tour.md
     - text: 디버깅 작업 찾기
       url: find-your-debugging-task.md
-- title: 시작하기
+- title: 시작
   linkLists:
   - linkListType: tutorial
     links:
-    - text: 완전 초보자를 디버깅
+    - text: 완전 초보자를 위한 디버깅
       url: debugging-absolute-beginners.md
     - text: C#을 디버깅하는 방법 알아보기
       url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
