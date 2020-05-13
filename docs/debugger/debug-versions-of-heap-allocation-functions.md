@@ -1,4 +1,4 @@
----
+﻿---
 title: 힙 할당 함수의 디버그 버전 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

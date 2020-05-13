@@ -1,4 +1,4 @@
----
+﻿---
 title: 변수 검사-자동 및 지역 창 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
@@ -26,7 +26,7 @@ ms.locfileid: "74904102"
 
 디버깅하는 동안 **Autos**와 **Locals** 창에 변수 값이 표시됩니다. Windows는 디버깅 세션 중에서만 사용할 수 있습니다. **Autos** 창에는 현재 중단점 주위에 사용된 변수가 표시됩니다. **Locals** 창에는 일반적으로 현재 함수 또는 메서드인 지역 범위에 정의된 변수가 표시됩니다. 처음으로 코드를 디버그하려는 경우 이 문서를 진행하기 전에 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)과 [기술 및 도구 디버깅](../debugger/write-better-code-with-visual-studio.md)을 먼저 읽고 오는것이 좋습니다.
 
- **Autos** 창은 C#, Visual Basic, C++ 및 Python 코드에서는 사용할 수 있지만 JavaScript 또는 F#에서는 사용할 수 없습니다.
+**Autos** 창은 C#, Visual Basic, C++ 및 Python 코드에서는 사용할 수 있지만 JavaScript 또는 F#에서는 사용할 수 없습니다.
 
 **자동** 창을 열려면 디버그 하는 동안 **Windows** > **자동**으로 **디버그** > 선택 하거나 **Ctrl**+**alt**+**V** > **을**누릅니다.
 
@@ -45,12 +45,11 @@ ms.locfileid: "74904102"
 
 디버거 창의 기본 숫자 형식은 10진수입니다. 16진수로 변경하려면 **Locals** 또는 **Autos** 창에서 마우스 오른쪽 단추를 클릭하고 **16진수 표시**를 선택하세요. 이 변경은 모든 디버거 창에 영향을 줍니다.
 
-## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Autos 또는 Locals 창에서 변수 값 편집
-
 **Autos** 또는 **Locals** 창에서 대부분의 변수 값을 편집하려면 값을 두 번 클릭하고 새 값을 입력하세요.
 
 값에 대해 식을 입력할 수 있습니다(예: `a + b`). 디버거는 유효한 언어 식을 대부분 받아들입니다.
 
+값에 대해 식을 입력할 수 있습니다(예: `a + b`). 디버거는 유효한 언어 식을 대부분 받아들입니다.
 네이티브 C++ 코드에서 변수 이름의 컨텍스트를 한정해야 할 수 있습니다. 자세한 내용은 [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)를 참조하세요.
 
 >[!CAUTION]
@@ -70,6 +69,19 @@ ms.locfileid: "74904102"
 ![지역 창에서 검색](../debugger/media/ee-search-locals.png "지역 창에서 검색")
 
 검색을 더 또는 덜 철저하게 하려면 **Autos** 또는 **Locals** 창의 맨 위에 있는 더 **심층적인 검색** 드롭 다운을 사용하여 중첩된 개체를 검색할 수준을 선택하세요. 
+## <a name="pin-properties-in-the-autos-or-locals-window"></a>자동 또는 지역 창에서 속성 고정
+
+> [!NOTE]
+> 이 기능은 .NET Core 3.0 이상에서 지원 됩니다.
+
+**Pinnable 속성** 도구를 사용 하 여 자동 및 지역 창에서 개체의 속성을 기준으로 개체를 신속 하 게 검사할 수 있습니다.  이 도구를 사용 하려면 속성 위로 마우스를 이동 하 고 표시 되는 고정 아이콘을 선택 하거나 마우스 오른쪽 단추를 클릭 하 고 결과 상황에 맞는 메뉴에서 **즐겨찾기로 멤버 고정** 옵션을 선택 합니다.  그러면 해당 속성이 개체의 속성 목록 맨 위에 표시 되 고 속성 이름 및 값이 **값** 열에 표시 됩니다.  속성을 고정 해제 하려면 고정 아이콘을 다시 선택 하거나 상황에 맞는 메뉴에서 **멤버를 즐겨찾기로 고정 해제** 옵션을 선택 합니다.
+
+![지역 창에서 속성 고정](../debugger/media/basic-pin.gif "지역 창에서 속성 고정")
+
+자동 또는 지역 창에서 개체의 속성 목록을 볼 때 속성 이름을 전환 하 고 고정 되지 않은 속성을 필터링 할 수도 있습니다.  자동 또는 지역 창 위의 도구 모음에서 단추를 선택 하 여 각 옵션에 액세스할 수 있습니다.
+
+![속성 이름 설정/해제](../debugger/media/toggle-property-names.gif "속성 이름 설정/해제")
+![즐겨찾기 속성](../debugger/media/filter-pinned-properties-locals.png "즐겨찾기 속성 필터링")
 
 ## <a name="pin-properties-in-the-autos-or-locals-window"></a>자동 또는 지역 창에서 속성 고정
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio, 5단계, 인증에서 Django 자습서 알아보기
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 웹 프로젝트 템플릿에서 제공하는 인증 기능을 구체적으로 설명합니다.

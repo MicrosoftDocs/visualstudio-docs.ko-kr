@@ -47,4 +47,4 @@ MFC ActiveX 샘플 OCLIENT 및 SUPERPAD도 애플리케이션을 테스트하는
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [OCLIENT 샘플: 비주얼 편집 컨테이너 응용 프로그램을 보여 줍니다.](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [SUPERPAD 샘플: CEditView를 사용 하 여 텍스트를 편집 하는 비주얼 편집 서버를 보여 줍니다.](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [SUPERPAD 샘플: CEditView를 사용하여 텍스트를 편집하는 비주얼 편집 서버를 보여 줍니다.](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

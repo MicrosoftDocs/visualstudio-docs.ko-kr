@@ -1,4 +1,4 @@
----
+﻿---
 title: 디버그 후크 함수 작성 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -36,7 +36,7 @@ ms.locfileid: "62563375"
 
  [할당 후크 함수](../debugger/allocation-hook-functions.md) 할당 후크 함수를 정의 다른 용도 탐색, 제한 사항 지적 및 프로토타입을 제공 합니다.
 
- [할당 후크 및 CRT 메모리 할당](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) 내부 메모리를 할당하는 C 런타임 라이브러리 함수를 호출하는 경우 `_CRT_BLOCK`  블록을 명시적으로 무시하는 할당 후크 함수 제한에 대해 설명합니다. 또한 이 항목에서는 할당 후크가 `_CRT_BLOCK` 블록을 무시하지 않을 경우에 발생하는 결과(예제 포함) 및 기본 할당 후크 함수 **CrtDefaultAllocHook**를 변경하는 방법도 소개합니다.
+ [할당 후크 및 CRT 메모리 할당](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) 내부 메모리를 할당하는 C 런타임 라이브러리 함수를 호출하는 경우 `_CRT_BLOCK` 블록을 명시적으로 무시하는 할당 후크 함수 제한에 대해 설명합니다. 또한 이 항목에서는 할당 후크가 `_CRT_BLOCK` 블록을 무시하지 않을 경우에 발생하는 결과(예제 포함) 및 기본 할당 후크 함수 **CrtDefaultAllocHook**를 변경하는 방법도 소개합니다.
 
  [보고서 후크 함수](../debugger/report-hook-functions.md) 특정 형식의 할당에 초점을 맞추기 위해 보고서를 필터링하는 데 사용할 수 있는 `_CrtSetReportHook`에 대해 설명합니다. 이 항목은 프로토타입도 제공합니다.
 

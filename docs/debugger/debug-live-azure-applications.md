@@ -1,4 +1,4 @@
----
+﻿---
 title: 라이브 ASP.NET Azure 앱 디버그
 description: 스냅샷 디버거로 snappoint를 설정하고 스냅샷을 보는 방법을 알아봅니다.
 ms.custom: ''
@@ -66,7 +66,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
 
 ::: moniker range=">=vs-2019"
 
-2. **디버그 &gt; 스냅샷 디버거 연결...** 을 선택합니다. 프로젝트가 배포된 Azure App Service 및 Azure Storage 계정을 선택하고 **연결**을 클릭합니다. 스냅숏 디버거 [Azure Kubernetes Service](debug-live-azure-kubernetes.md) 및 [AZURE Virtual Machines (VM) & Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md)도 지원 합니다.
+2. **디버그 &gt; 스냅샷 디버거 연결...**을 선택합니다. 프로젝트가 배포된 Azure App Service 및 Azure Storage 계정을 선택하고 **연결**을 클릭합니다. 스냅샷 디버거는 [Azure Kubernetes Service](debug-live-azure-kubernetes.md) 및 [AZURE Virtual Machines (VM) & Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md)도 지원합니다.
 
    ![디버그 메뉴에서 스냅샷 디버거 시작](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -152,11 +152,11 @@ snappoint가 적중될 때 스냅샷을 생성하는 것 외에 메시지를 로
 
 1. snappoint 아이콘(파란색 육각형)을 마우스 오른쪽 단추로 클릭하고 **설정**을 선택합니다.
 
-1. snappoint 설정 창에서 **작업**을 선택합니다.
+2. snappoint 설정 창에서 **작업**을 선택합니다.
 
    ![logpoint 만들기](../debugger/media/snapshot-logpoint.png)
 
-1. **메시지** 필드에 로그할 새 로그 메시지를 입력할 수 있습니다. 로그 메시지에서 변수를 중괄호 안에 배치하여 변수를 평가할 수도 있습니다.
+3. **메시지** 필드에 로그할 새 로그 메시지를 입력할 수 있습니다. 로그 메시지에서 변수를 중괄호 안에 배치하여 변수를 평가할 수도 있습니다.
 
    **출력 창으로 보내기**를 선택하는 경우 logpoint가 적중되면 진단 도구 창에 메시지가 표시됩니다.
 

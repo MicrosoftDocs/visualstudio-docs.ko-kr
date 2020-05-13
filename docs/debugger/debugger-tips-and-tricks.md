@@ -1,6 +1,6 @@
----
-title: 디버거의 팁과 트릭
-description: Visual Studio 디버거에서 지원하는 덜 알려진 기능 중 일부에 대해 알아봅니다.
+﻿﻿---
+title: 디버거의 팁과 요령
+description: Visual Studio 디버거에서 지 원하는 몇 가지 덜 알려진 기능에 대해 알아봅니다.
 ms.custom: seodec18
 ms.date: 06/15/2018
 ms.topic: conceptual

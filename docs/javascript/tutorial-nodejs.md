@@ -1,4 +1,4 @@
----
+﻿---
 title: Node.js 및 Express 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
 ms.date: 04/20/2020
@@ -56,7 +56,7 @@ npm는 Node.js를 위한 기본 패키지 관리자입니다. 패키지 관리�
 
 ### <a name="what-is-express"></a>Express란?
 
-Express는 웹 애플리케이션 프레임워크로, Node.js가 웹 애플리케이션을 빌드하기 위한 서버 프레임워크로 사용됩니다. Express를 사용하면 Pug(이전의 Jade)와 같이 UI를 만들 수 있는 프런트 엔드 프레임워크를 다양하게 선택할 수 있습니다. 이 자습서에서는 Pug가 사용되었습니다.
+Express는 웹 애플리케이션 프레임워크로, Node.js가 웹 애플리케이션을 빌드하기 위한 서버 프레임워크로 사용됩니다. Express를 사용하면 Pug(이전의 Jade)와 같이 UI를 만들 수 있는 프런트 엔드 프레임 워크를 다양하게 선택할 수 있습니다. 이 자습서에서는 Pug가 사용되었습니다.
 
 ## <a name="prerequisites"></a>사전 요구 사항
 

@@ -1,5 +1,5 @@
----
-title: 원격 디버깅 | 마이크로 소프트 문서
+﻿﻿---
+title: 원격 디버깅 | Microsoft Docs
 ms.custom:
 - remotedebugging
 - seodec18
@@ -55,9 +55,9 @@ ms.locfileid: "79301058"
 
 ## <a name="optional-to-run-the-remote-debugger-from-a-file-share"></a><a name="fileshare_msvsmon"></a>(선택 사항) 파일 공유에서 원격 디버거를 실행하려면
 
-비주얼 스튜디오 커뮤니티, 전문가 또는 엔터프라이즈가 이미 설치된 컴퓨터에서 원격*디버거(msvsmon.exe)를*찾을 수 있습니다. 일부 시나리오의 경우 원격 디버깅을 설정하는 가장 쉬운 방법은 파일 공유에서 원격 디버거(msvsmon.exe)를 실행하는 것입니다. 사용 제한 사항은 원격 디버거 도움말 페이지(원격 디버거에서 사용 >**도움말)를** 참조하십시오.
+Visual Studio Community, Professional 또는 Enterprise가 이미 설치된 컴퓨터에서 원격 디버거(msvsmon.exe)를 찾을 수 있습니다. 일부 시나리오의 경우 원격 디버깅을 설정하는 가장 쉬운 방법은 파일 공유에서 원격 디버거(msvsmon.exe)를 실행하는 것입니다. 사용 제한 사항에 대한 원격 디버거의 도움말 페이지(원격 디버거의 **도움말 > 사용량**)를 참조하세요. 
 
-1. 비주얼 스튜디오의 버전과 일치하는 디렉토리에서 *msvsmon.exe를* 찾기 :
+1. Visual Studio 버전과 일치하는 디렉터리에서 msvsmon.exe를 찾으세요.
 
    ::: moniker range=">=vs-2019"
 
@@ -79,7 +79,7 @@ ms.locfileid: "79301058"
 3. 원격 컴퓨터에서 공유 폴더에서 *msvsmon.exe를* 실행합니다. 설정 [지침을](#bkmk_setup)따릅니다.
 
 > [!TIP]
-> 명령줄 설치 및 명령줄 참조의 경우 Visual Studio가 설치된 컴퓨터의 명령줄을 입력하여 ``msvsmon.exe /?`` *msvsmon.exe의* 도움말 페이지를 참조하십시오(또는 원격 디버거에서 사용 > 사용 **도움말로** 이동).
+> 명렬줄 설치 및 명령줄 참조는 Visual Studio가 설치된 컴퓨터의 명령줄에서 *msvsmon.exe*를 입력하여(또는 원격 디버거에서 **도움말**> **사용량**으로 이동) ``msvsmon.exe /?``의 도움말 페이지를 참조하세요.
 
 ## <a name="set-up-the-remote-debugger"></a><a name="bkmk_setup"></a>원격 디버거 설정
 
@@ -88,14 +88,14 @@ ms.locfileid: "79301058"
 ### <a name="configure-the-remote-debugger"></a><a name="configure_msvsmon"></a> 원격 디버거 구성
 원격 디버거를 처음으로 시작한 후에 원격 디버거 구성의 일부 측면을 변경할 수 있습니다.
 
-- 다른 사용자가 원격 디버거에 연결할 수 있는 권한을 추가해야 하는 경우 사용 권한 > 도구 를 **선택합니다.** 사용 권한을 부여하거나 거부하려면 관리자 권한이 있어야 합니다.
+- 다른 사용자가 원격 디버거에 연결할 수 있는 권한을 추가해야 하는 경우 **도구**> **권한**을 선택하세요. 사용 권한을 부여하거나 거부하려면 관리자 권한이 있어야 합니다.
 
      > [!IMPORTANT]
      > Visual Studio 컴퓨터에서 사용 중인 사용자 계정과 다른 사용자 계정에서 원격 디버거를 실행할 수 있지만 원격 디버거의 사용 권한에 다른 사용자 계정을 추가해야 합니다.
 
-     또는 ** \</allow 사용자 이름>** 매개 변수로 명령줄에서 원격 디버거를 시작할 수 있습니다 ** \< username@computer>. **
+      또는 **/ allow \<username>** 매개 변수: **msvsmon / allow <username @ computer>**를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다.
 
-- 인증 모드 또는 포트 번호를 변경하거나 원격 도구에 대한 시간 시간 지정 값을 지정해야 하는 경우 **도구 > 옵션을**선택합니다.
+- 인증 모드 또는 포트 번호를 변경하거나 원격 도구의 시간 제한 값을 지정하는 경우: **도구 > 옵션**을 선택하세요.
 
      기본적으로 사용되는 포트 번호 목록은 원격 [디버거 포트 할당을](../debugger/remote-debugger-port-assignments.md)참조하십시오.
 
@@ -115,7 +115,7 @@ ASP.NET 및 기타 서버 환경에서 디버깅하려면 원격 디버거를 �
 
 4. 사용자 계정 및 암호의 이름을 추가합니다.
 
-    **로그온을** 이 계정에 서비스 사용자 오른쪽으로 추가해야 할 수 있습니다(시작 페이지 또는 **Start** 창에서 **로컬 보안 정책** 찾기(secpol.msc) (또는 명령 프롬프트에서 **secpol** 입력). 창이 나타나면 **사용자 권한 할당**을 두 번 클릭한 다음 오른쪽 창에서 **서비스로 로그온** 을 찾습니다. 폴더를 두 번 클릭합니다. **속성** 창에 사용자 계정을 추가하고 **확인**을 클릭합니다. **다음**을 클릭합니다.
+    이 계정에 **서비스로 로그온** 사용자 권한을 추가해야 할 수도 있습니다 **시작** 페이지 또는 창에서 **로컬 보안 정책**(secpol.msc)을 찾습니다. (또는 명령 프롬프트에 **secpol**을 입력합니다.) 창이 나타나면 **사용자 권한 할당**을 두 번 클릭한 다음 오른쪽 창에서 **서비스로 로그온**을 찾습니다. 폴더를 두 번 클릭합니다. **속성** 창에 사용자 계정을 추가하고 **확인**을 클릭합니다. **다음**을 클릭합니다.
 
 5. 원격 도구가 통신하는 데 사용할 네트워크 유형을 선택합니다. 하나 이상의 네트워크 형식을 선택해야 합니다. 컴퓨터가 도메인을 통해 연결된 경우 첫 번째 항목을 선택해야 합니다. 컴퓨터가 작업 그룹 또는 홈 그룹을 통해 연결된 경우 두 번째 또는 세 번째 항목을 선택해야 합니다. **다음**을 클릭합니다.
 
@@ -136,5 +136,6 @@ ASP.NET 및 기타 서버 환경에서 디버깅하려면 원격 디버거를 �
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)
-- [원격 IIS 컴퓨터에서 코어를 ASP.NET 원격 디버깅](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
+- [원격 디버깅 원격 IIS 컴퓨터에서 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)
+
