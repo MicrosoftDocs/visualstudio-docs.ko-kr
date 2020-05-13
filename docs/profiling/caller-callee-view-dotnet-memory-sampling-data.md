@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773311"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터
@@ -50,7 +50,7 @@ ms.locfileid: "74773311"
 |**제외 바이트**|- 현재 함수의 경우 프로파일링 실행 시 함수가 할당한 메모리의 바이트 수입니다. 이 수에는 현재 함수에서 호출된 함수가 할당한 메모리는 포함되지 않습니다.<br />- 호출자 함수의 경우 호출자 함수의 호출에 의해 생성된 현재 함수의 제외 바이트 수입니다.<br />- 호출 수신자 함수의 경우 현재 함수의 호출에 의해 생성된 함수의 인스턴스가 할당한 바이트 수입니다. 이 수에는 호출 수신자 함수가 호출한 함수에서 할당한 바이트가 포함되지 않습니다.|
 |**제외 바이트(%)**|이 함수의 제외 할당으로, 프로파일링 실행 시 할당된 모든 메모리 바이트의 비율입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)

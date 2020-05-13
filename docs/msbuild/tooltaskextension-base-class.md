@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594970"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77631694"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 기본 클래스
+
 많은 작업은 <xref:Microsoft.Build.Utilities.Task> 클래스에서 상속되는 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 상속되는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 상속됩니다. 이 상속 체인은 매개 변수에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 이러한 매개 변수가 이 문서에 나열되어 있습니다.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 기본 클래스의 매개 변수에 대해 설명합니다.
 
 | 매개 변수 | 설명 |
@@ -41,10 +43,11 @@ ms.locfileid: "75594970"
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | 선택적 `String` 매개 변수입니다.<br /><br /> 표준 출력 스트림의 텍스트를 기록할 때 적용할 중요도입니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | 가상의 선택적 `Int32` 매개 변수입니다.<br /><br /> 작업 실행 파일이 얼마 후에 종료될 지를 밀리초 단위로 지정합니다. 기본값은 시간 제한이 없음을 나타내는 `Int.MaxValue`입니다. 제한 시간(밀리초)입니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | 가상의 선택적 `string` 매개 변수입니다.<br /><br /> 프로젝트에서 작업의 ToolName을 재정의하기 위해 이를 구현할 수 있습니다. 작업에서는 ToolName을 유지하기 위해 이를 재정의할 수 있습니다. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | 선택적 `string` 매개 변수입니다.<br /><br /> 작업에서 내부 실행 파일을 로드할 위치를 지정합니다. 이 매개 변수를 지정하지 않으면 작업에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하고 있는 버전의 Framework에 해당하는 SDK 설치 경로가 사용됩니다. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | 선택적 `string` 매개 변수입니다.<br /><br /> 작업에서 내부 실행 파일을 로드할 위치를 지정합니다. 이 매개 변수를 지정하지 않으면 작업에서는 MSBuild를 실행하고 있는 프레임워크 버전에 해당하는 SDK 설치 경로가 사용됩니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | 선택적 `bool` 매개 변수입니다.<br /><br /> `true`로 설정된 경우 이 작업은 명령줄에 대한 배치 파일을 만들고 명령을 직접 실행하는 대신 명령 처리기를 사용하여 실행합니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | 선택적 `bool` 매개 변수입니다.<br /><br /> `true`로 설정된 경우 작업이 실행 중이면 이 작업이 노드를 발생시킵니다. |
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115151"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리
@@ -27,7 +27,7 @@ ms.locfileid: "76115151"
 
 ## <a name="enable-advanced-build-configurations"></a>고급 빌드 구성 활성화
 
-기본적으로 Visual Basic 개발자 설정은 [프로젝트 디자이너](../ide/reference/application-page-project-designer-visual-basic.md)의 **구성** 및 **플랫폼** 목록과 **구성 관리자** 대화 상자를 여는 옵션을 숨깁니다.
+기본적으로 Visual Basic 개발자 설정은 **프로젝트 디자이너**의 **구성** 및 **플랫폼** 목록과 [구성 관리자](../ide/reference/application-page-project-designer-visual-basic.md) 대화 상자를 여는 옵션을 숨깁니다.
 
 1. **도구** 메뉴에서 **옵션**을 클릭합니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "76115151"
 
      이제 **빌드** 메뉴에서 **구성 관리자**를 사용할 수 있고 **구성** 및 **플랫폼** 목록이 **프로젝트 디자이너**에 표시됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)

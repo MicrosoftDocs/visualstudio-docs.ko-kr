@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 1981141a01848dc7fac09913548f205a04ce618e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692354"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306724"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity 설정
 

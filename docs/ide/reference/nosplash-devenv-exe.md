@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950655"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash(devenv.exe)
@@ -33,13 +33,13 @@ devenv /NoSplash [File1[ FileN]...]
 
 - *File1*
 
-  선택 사항입니다. Visual Studio의 기존 인스턴스에서 열 파일입니다. Visual Studio의 인스턴스가 없으면 간소화된 창 레이아웃으로 새 인스턴스가 만들어지고 *File1*이 새 인스턴스에서 열립니다.
+  (선택 사항) Visual Studio의 기존 인스턴스에서 열 파일입니다. Visual Studio의 인스턴스가 없으면 간소화된 창 레이아웃으로 새 인스턴스가 만들어지고 *File1*이 새 인스턴스에서 열립니다.
 
 - *FileN*
 
-  선택 사항입니다. Visual Studio의 기존 인스턴스에서 열 1개 이상의 추가 파일입니다.
+  (선택 사항) Visual Studio의 기존 인스턴스에서 열 1개 이상의 추가 파일입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 스위치는 시작 화면을 숨깁니다. 이 스위치를 벗어나면 시작 화면이 표시됩니다. 시작 화면을 추가로 검토하려면(예: VSPackage 제품 아이콘 확인) [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md) 스위치를 사용합니다.
 

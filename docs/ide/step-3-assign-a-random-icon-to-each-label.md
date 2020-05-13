@@ -1,6 +1,6 @@
 ---
 title: '3단계: 각 레이블에 임의 아이콘 할당'
-ms.date: 11/04/2016
+ms.date: 03/21/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621547"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472633"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3단계: 각 레이블에 임의 아이콘 할당
 
@@ -44,7 +44,7 @@ ms.locfileid: "72621547"
     > [!NOTE]
     > "iconLabel" 및 "control"과 같이 의미를 알기 쉬운 이름이 사용되었습니다. 이러한 이름은 다른 이름으로 바꿀 수 있으며, 코드는 루프 내의 각 문에서 이름을 변경하는 한 동일하게 작동합니다.
 
-     `AssignIconsToSquares()` 메서드는 TableLayoutPanel의 각 Label 컨트롤을 반복하고 각 컨트롤에 대해 동일한 문을 실행합니다. 해당 문은 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)에서 추가한 목록에서 임의의 아이콘을 끌어옵니다. 이 때문에 각 아이콘을 두 개씩 목록에 포함했습니다. 따라서 임의의 Label 컨트롤에 아이콘 쌍이 할당됩니다.
+     `AssignIconsToSquares()` 메서드는 TableLayoutPanel의 각 Label 컨트롤을 반복하고 각 컨트롤에 대해 동일한 문을 실행합니다. 해당 문은 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)를 참조하세요. 각 아이콘은 Webdings 글꼴로 된 문자이므로 이 메서드에서 텍스트로 표현됩니다. 임의의 레이블 컨트롤에 한 쌍의 아이콘이 할당되도록 목록에 각 아이콘을 두 개씩 포함했습니다.
 
      `foreach` 또는 `For Each` 루프 내에서 실행되는 코드에 대해 보다 자세히 살펴봅니다. 이 코드가 여기에 재현되어 있습니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "72621547"
 
      코드의 일부 기능에 대해 잘 모를 경우 마우스 포인터를 코드 요소 위에 놓으면 나타나는 도구 설명을 검토할 수 있습니다. Visual Studio 디버거를 사용하여 프로그램이 실행되는 동안 코드의 각 줄을 단계별로 실행할 수 있습니다. 자세한 내용은 [어떻게 할까요?: Visual Studio에서 디버거를 사용하여 단계별 실행](https://msdn.microsoft.com/vstudio/ee672313.aspx) 또는 [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)을 참조하세요.
 
-3. 게임 보드를 아이콘으로 채우려면 프로그램이 시작되자 마자 `AssignIconsToSquares()` 메서드를 호출해야 합니다. C#을 사용하는 경우 **Form1**_생성자_에서 `InitializeComponent()` 메서드 호출 바로 아래에 문을 추가합니다. 그러면 폼이 표시되기 전에 폼을 설정하는 새로운 메서드가 호출됩니다. 생성자는 클래스 또는 구조체와 같은 새 개체를 만들 때 호출됩니다. 자세한 내용은 Visual Basic의 [생성자(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) 또는 [생성자 및 소멸자 사용](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))을 참조하세요.
+3. 게임 보드를 아이콘으로 채우려면 프로그램이 시작되자 마자 `AssignIconsToSquares()` 메서드를 호출해야 합니다. C#을 사용하는 경우 **Form1** _생성자_에서 `InitializeComponent()` 메서드 호출 바로 아래에 문을 추가합니다. 그러면 폼이 표시되기 전에 새 메서드가 호출되어 폼을 설정합니다. 생성자는 클래스 또는 구조체와 같은 새 개체를 만들 때 호출됩니다. 자세한 내용은 Visual Basic의 [생성자(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) 또는 [생성자 및 소멸자 사용](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))을 참조하세요.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -67,17 +67,14 @@ ms.locfileid: "72621547"
     End Sub
     ```
 
-4. 프로그램을 저장하고 실행합니다. 각 레이블에 임의의 아이콘이 할당된 폼이 나타납니다.
+4. 프로그램을 저장하고 실행합니다. 각 레이블에 임의의 아이콘이 할당된 폼이 나타납니다. 
 
-5. 프로그램을 닫고 다시 실행합니다. 다음 그림과 같이 각 레이블에 서로 다른 아이콘이 할당됩니다.
+5. 프로그램을 닫고 다시 실행합니다. 다음 그림과 같이 각 레이블에 서로 다른 아이콘이 할당됩니다. 
 
      ![임의의 아이콘을 표시하는 일치 게임](../ide/media/express_tut4step3.png)<br/>
 *임의의 아이콘을 표시하는 일치 게임*
 
      아이콘을 숨기지 않았으므로 지금은 아이콘이 보입니다. 플레이어에서 아이콘을 숨기려면 각 레이블의 **ForeColor** 속성을 해당 **BackColor** 속성과 같은 색으로 설정하면 됩니다.
-
-    > [!TIP]
-    > 레이블과 같은 컨트롤을 숨기는 또 다른 방법은 해당 **Visible** 속성을 **False**로 설정하는 것입니다.
 
 6. 아이콘을 숨기려면 프로그램을 중지하고 `For Each` 루프 내 코드의 주석 처리된 줄에 대한 주석 표시를 제거합니다.
 

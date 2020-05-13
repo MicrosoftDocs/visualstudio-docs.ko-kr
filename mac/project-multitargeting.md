@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 12/12/2019
 ms.assetid: 2a561af4-f1fe-493e-9a53-aa6d77d15498
 ms.openlocfilehash: 3d1372ab5bd08ce164352293ec9d341ca567e3d5
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75439045"
 ---
 # <a name="projects-with-multiple-target-frameworks"></a>대상 프레임워크가 여러 개인 프로젝트
@@ -75,7 +75,7 @@ public class MyClass
 
 ![IntelliSense에 표시된 경고 메시지 - API가 지정된 대상 프레임워크에 대해 작동하지 않음. 예제 텍스트: namespace System.Buffers, SharedUtils (netstandard2.0) - Not Available. 탐색 모음을 사용하여 컨텍스트를 전환할 수 있습니다.](media/project-multitargeting-intellisense-warnings.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Framework 대상 지정 개요(Windows)](/visualstudio/ide/visual-studio-multi-targeting-overview)
 - [SDK 스타일 프로젝트의 대상 프레임워크](/dotnet/standard/frameworks#how-to-specify-target-frameworks)

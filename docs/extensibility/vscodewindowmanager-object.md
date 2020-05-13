@@ -1,5 +1,5 @@
 ---
-title: VSCodeWindowManager 개체 | Microsoft Docs
+title: VS코드윈도우매니저 오브젝트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VsCodeWindowManager object
 - views [Visual Studio SDK], VSCodeWindowManager object
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 17bc9462af55ec9621654bd39cd65a2091f3f73f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189040"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740410"
 ---
-# <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 개체
+# <a name="vscodewindowmanager-object"></a>VS코드윈도우관리자 개체
 
-언어 서비스는 코드 창 관리자를 구현 하며 장식 (예: 드롭다운 모음) 관리를 담당 합니다. 자세한 내용은 [레거시 API를 사용 하 여 코드 창 사용자 지정](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015)을 참조 하세요.
+언어 서비스는 코드 창 관리자를 구현하고 장식(예: 드롭다운 표시줄)을 관리합니다. 자세한 내용은 [레거시 API를 사용하여 코드 Windows 사용자 지정을](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015)참조하세요.
 
-다음 표에서는 `VSCodeWindowManager` 개체의 인터페이스를 보여 줍니다.
+다음 표에서는 개체의 인터페이스를 `VSCodeWindowManager` 보여 줍니다.
 
 |인터페이스|설명|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|코드 창에서 장식 (예: 드롭다운 모음)을 추가 하거나 제거할 수 있습니다.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|코드 창에 장식(예: 드롭다운 막대)을 추가하거나 제거할 수 있습니다.|

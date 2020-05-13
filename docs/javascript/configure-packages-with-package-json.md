@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67692366"
 ---
 # <a name="packagejson-configuration"></a>package.json configuration
@@ -49,7 +49,7 @@ React를 사용 중이고 **react** 및 **react-dom** npm 패키지를 포함해
 
 위 표기법을 사용하면 npm에서 항상 정확하게 지정된 버전(16.4.2)을 가져옵니다.
 
-패치 업데이트(버그 수정)로 업데이트를 제한하는 특수 표기법을 사용할 수 있습니다. 이 예제에 대한 설명:
+패치 업데이트(버그 수정)로 업데이트를 제한하는 특수 표기법을 사용할 수 있습니다. 이 예제에서:
 
   ```json
   "dependencies": {

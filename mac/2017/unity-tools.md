@@ -6,10 +6,10 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62986805"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity
@@ -30,7 +30,7 @@ Mac용 Visual Studio Tools for Unity의 주요 기능은 다음과 같습니다.
 
 ### <a name="intellisense-for-unity-messages"></a>Unity 메시지에 대한 IntelliSense
 
-IntelliSense를 사용하면 `OnCollisionEnter`와 같은 [Unity 메시지](using-vsmac-tools-unity.md#intellisense-for-unity-messages)와 매개 변수를 빠르고 쉽게 구현할 수 있습니다.
+IntelliSense를 사용하면 [와 같은 ](using-vsmac-tools-unity.md#intellisense-for-unity-messages)Unity 메시지`OnCollisionEnter`와 매개 변수를 빠르고 쉽게 구현할 수 있습니다.
 
 ### <a name="superior-debugging"></a>탁월한 디버깅
 

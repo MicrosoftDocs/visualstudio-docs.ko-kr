@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851224"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586340"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 코딩된 UI 테스트는 Internet Explorer로 테스트를 기록하여 웹 애플리케이션 테스트를 자동화합니다. 그런 다음 이러한 웹 애플리케이션에 대해 Internet Explorer 또는 기타 브라우저를 사용하여 테스트를 사용자 지정하고 재생할 수 있습니다.
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise
 
@@ -56,7 +56,7 @@ ms.locfileid: "75851224"
  다양한 웹 브라우저 종류로 웹 애플리케이션을 테스트하면 다양한 브라우저를 실행하는 사용자의 UI 환경을 더 잘 에뮬레이션할 수 있습니다. 예를 들어, 애플리케이션에 다른 웹 브라우저와 호환되지 않는 Internet Explorer의 컨트롤 또는 코드를 포함할 수 있습니다. 다른 브라우저에서 코딩된 UI 테스트를 실행하면 고객에게 영향을 미치기 전에 문제를 발견하고 수정할 수 있습니다.
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>지원되는 웹 브라우저를 사용하여 웹 애플리케이션에서 코딩된 UI 테스트를 기록 및 재생하는 방법
- **기록:** Internet Explorer를 사용하여 웹 애플리케이션 테스트를 기록하려면 코딩된 UI 테스트 빌더를 사용해야 합니다. 코딩된 UI 테스트와 같은 방식으로, 미리 정의된 집합을 사용하여 테스트된 컨트롤에 대해 유효성 검사 및 사용자 지정 코드를 추가할 수 있습니다(선택 사항). 자세한 내용은 [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)를 참조하세요.
+ **기록:** Internet Explorer를 사용하여 웹 애플리케이션 테스트를 기록하려면 코딩된 UI 테스트 빌더를 사용해야 합니다. 코딩된 UI 테스트와 같은 방식으로, 미리 정의된 집합을 사용하여 테스트된 컨트롤에 대해 유효성 검사 및 사용자 지정 코드를 추가할 수 있습니다(선택 사항). 자세한 내용은 [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)를 참조 하세요.
 
 > [!NOTE]
 > Google Chrome 또는 Mozilla Firefox 브라우저로는 코딩된 UI 테스트를 기록할 수 없습니다.
@@ -95,11 +95,11 @@ ms.locfileid: "75851224"
 
     2. **공용 언어 런타임 예외**에 대해 **사용자가 처리하지 않음**을 선택 취소합니다.
 
-## <a name="generate"></a>*코딩 된 UI 테스트에서 BrowserWindow. CurrentBrowser를 변경 하는 옵션이 표시 되지 않습니다* .
+## <a name="i-dont-see-the-option-to-change-browserwindowcurrentbrowser-in-the-coded-ui-test"></a><a name="generate"></a> *코딩된 UI 테스트에 BrowserWindow.CurrentBrowser를 변경할 수 있는 옵션이 표시되지 않습니다.*
  다양한 웹 브라우저를 사용하여 코딩된 UI 테스트를 지원하지 않는 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 버전을 사용하는 중일 수 있습니다. 코딩된 UI 테스트를 사용하려면 Visual Studio Enterprise를 사용해야 합니다.
 
  *그 외 무엇을 알아야 하나요?*
- **참고**
+ **참고 사항**
 
 - ![Prereq](../test/media/prereq.png "필수 구성 요소") Apple Safari 웹 브라우저는 지원 되지 않습니다.
 
@@ -127,10 +127,10 @@ ms.locfileid: "75851224"
 
 ## <a name="external-resources"></a>외부 리소스
 
-### <a name="videos"></a>비디오
- [IE에서 기록하고 어디에서나 재생](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+### <a name="videos"></a>동영상
+ [IE에서 기록 하 고 어디에서 나 재생](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [코딩된 UI 테스트 빌더로 다중 브라우저 테스트 작성](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+ [코딩 된 UI 테스트 빌더를 사용 하 여 브라우저 간 테스트 작성](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
  [UI 맵 없이 일반 수작업 코딩으로 다중 브라우저 테스트 작성](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
@@ -144,7 +144,7 @@ ms.locfileid: "75851224"
  [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장: 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>FAQ
- [코딩된 UI 테스트 FAQ - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [코딩된 UI 테스트 FAQ - 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [코딩된 UI 테스트 FAQ - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 

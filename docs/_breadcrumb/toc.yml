@@ -19,7 +19,7 @@
                   topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
                 - name: 플랫폼 간
                   tocHref: /visualstudio/cross-platform/
-                  topicHref: /visualstudio/cross-platform/index
+                  topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
                 - name: 데이터 도구
                   tocHref: /visualstudio/data-tools/
                   topicHref: /visualstudio/data-tools/index
@@ -47,7 +47,7 @@
                   topicHref: /visualstudio/profiling/index
                 - name: 테스트
                   tocHref: /visualstudio/test/
-                  topicHref: /visualstudio/test/improve-code-quality
+                  topicHref: /visualstudio/test/index
                 - name: Workflow Designer
                   tocHref: /visualstudio/workflow-designer/
                   topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
@@ -74,7 +74,7 @@
                   tocHref: /visualstudio/extensibility/debugger/
                   topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
                   items:
-                    - name: 참조
+                    - name: 참고
                       tocHref: /visualstudio/extensibility/debugger/reference/
                       topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
                 - name: 사용자 환경 지침
@@ -102,3 +102,6 @@
                 - name: VSTO
                   tocHref: /visualstudio/vsto/
                   topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
+            - name: Azure 개발
+              tocHref: /visualstudio/azure
+              topicHref: /visualstudio/azure/index

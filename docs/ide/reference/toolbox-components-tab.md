@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597310"
 ---
 # <a name="toolbox-components-tab"></a>도구 상자, 구성 요소 탭
@@ -58,7 +58,7 @@ Active Directory에 대해 쿼리를 실행하는 데 사용할 수 있는 <xref
 
 **ImageList**
 
-<xref:System.Drawing.Image> 개체 컬렉션을 관리하는 메서드를 제공하는 <xref:System.Windows.Forms.ImageList> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [ImageList 구성 요소](/dotnet/framework/winforms/controls/imagelist-component-windows-forms)를 참조하세요.
+<xref:System.Windows.Forms.ImageList> 개체 컬렉션을 관리하는 메서드를 제공하는 <xref:System.Drawing.Image> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [ImageList 구성 요소](/dotnet/framework/winforms/controls/imagelist-component-windows-forms)를 참조하세요.
 
 **MessageQueue**
 
@@ -68,7 +68,7 @@ Active Directory에 대해 쿼리를 실행하는 데 사용할 수 있는 <xref
 
 새 범주 및 인스턴스 만들기, 카운터에서 값 읽기, 카운터 데이터에 대한 계산 수행과 같이 Windows 성능 카운터를 조작하는 데 사용할 수 있는 <xref:System.Diagnostics.PerformanceCounter> 구성 요소 인스턴스를 만듭니다.
 
-**Process**
+**처리**
 
 시스템의 프로세스와 연결된 데이터를 중지, 시작, 조작하는 데 사용할 수 있는 <xref:System.Diagnostics.Process> 구성 요소 인스턴스를 만듭니다.
 
@@ -80,14 +80,14 @@ Active Directory에 대해 쿼리를 실행하는 데 사용할 수 있는 <xref
 
 서비스 시작 및 중지, 서비스에 명령 보내기와 같이 기존 서비스를 조작하는 데 사용할 수 있는 <xref:System.ServiceProcess.ServiceController> 구성 요소 인스턴스를 만듭니다.
 
-**Timer**
+**타이머**
 
 Windows 기반 애플리케이션에 시간 기반 기능을 추가하는 데 사용할 수 있는 <xref:System.Windows.Forms.Timer> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [Timer 구성 요소](/dotnet/framework/winforms/controls/timer-component-windows-forms)를 참조하세요.
 
 > [!NOTE]
-> **도구 상자**에 추가할 수 있는 시스템 기반 <xref:System.Timers.Timer>도 있습니다. 이 <xref:System.Timers.Timer>는 서버 애플리케이션에 최적화되어 있고 Windows Forms <xref:System.Windows.Forms.Timer>는 Windows Forms에 가장 적합합니다.
+> <xref:System.Timers.Timer>도구 상자**에 추가할 수 있는 시스템 기반** 도 있습니다. 이 <xref:System.Timers.Timer>는 서버 애플리케이션에 최적화되어 있고 Windows Forms <xref:System.Windows.Forms.Timer>는 Windows Forms에 가장 적합합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Windows Forms에 사용할 수 있는 컨트롤](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [도구 상자 항목 선택, WPF 구성 요소](choose-toolbox-items-wpf-components.md)

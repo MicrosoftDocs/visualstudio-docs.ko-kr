@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779885"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
@@ -37,7 +37,7 @@ ms.locfileid: "74779885"
 
  관리되는 코드의 경우 프로파일러 API는 *Microsoft.VisualStudio.Profiler.dll*에 있습니다. 이 DLL은 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 디렉터리에 있습니다. 64비트 앱의 경우 폴더는 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*입니다. 자세한 내용은 [Profiler](/previous-versions/ms242704(v=vs.140))를 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습에서는 사용자가 선택한 개발 환경이 디버깅 및 샘플링을 지원하도록 구성되었다고 가정합니다. 다음 항목에서는 이러한 필수 구성 요소의 개요를 제공합니다.
 
 - [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)
@@ -152,23 +152,23 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**
 
-3. 다음 명령을 입력합니다. **VSInstr \<filename>.exe**
+3. **VSInstr \<filename>.exe** 명령을 입력합니다.
 
-4. 다음 명령을 입력합니다. **VSPerfCmd /start:trace /output:\<filename>.vsp**
+4. **VSPerfCmd /start:trace /output:\<filename>.vsp** 명령을 입력합니다.
 
-5. 다음 명령을 입력합니다. **VSPerfCmd /globaloff**
+5. **VSPerfCmd /globaloff** 명령을 입력합니다.
 
 6. 프로그램을 실행합니다.
 
-7. 다음 명령을 입력합니다. **VSPerfCmd /shutdown**
+7. **VSPerfCmd /shutdown** 명령을 입력합니다.
 
-8. 다음 명령을 입력합니다. **VSPerfReport /calltrace:\<filename>.vsp**
+8. **VSPerfReport /calltrace:\<filename>.vsp** 명령을 입력합니다.
 
      결과 성능 데이터와 함께 현재 디렉터리에 .*csv* 파일이 만들어집니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [Profiler](/previous-versions/ms242704(v=vs.140))
+- [프로파일러](/previous-versions/ms242704(v=vs.140))
 - [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [시작](../profiling/getting-started-with-performance-tools.md)
 - [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)

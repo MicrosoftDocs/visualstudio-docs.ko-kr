@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72983658"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python용 Azure Cloud Service 프로젝트
@@ -58,9 +58,9 @@ Visual Studio는 Python을 사용하여 Azure Cloud Services 만들기를 시작
 
 다음과 같이 추가 구성을 수행할 수 있습니다.
 
-1. 프로젝트의 루트 디렉터리에 있는 *requirements.txt* 파일을 업데이트하고 `pip`를 사용하여 패키지를 설치합니다. *ConfigureCloudService.ps1* 스크립트는 이 파일을 배포에 설치합니다.
-1. *web.config* 파일(웹 역할) 또는 *ServiceDefinition.csdef* 파일의 `Runtime` 섹션(작업자 역할)을 수정하여 환경 변수를 설정합니다.
-1. *ServiceDefinitions.csdef* 파일의 `Runtime/EntryPoint` 섹션에서 명령줄을 수정하여 작업자 역할에 사용할 스크립트 및 인수를 지정합니다.
+1. 프로젝트의 루트 디렉터리에 있는 `pip`requirements.txt*파일을 업데이트하고*를 사용하여 패키지를 설치합니다. *ConfigureCloudService.ps1* 스크립트는 이 파일을 배포에 설치합니다.
+1. *web.config* 파일(웹 역할) 또는 `Runtime`ServiceDefinition.csdef*파일의* 섹션(작업자 역할)을 수정하여 환경 변수를 설정합니다.
+1. `Runtime/EntryPoint`ServiceDefinitions.csdef*파일의* 섹션에서 명령줄을 수정하여 작업자 역할에 사용할 스크립트 및 인수를 지정합니다.
 1. *web.config* 파일을 통해 웹 역할에 대한 기본 처리기 스크립트를 설정합니다.
 
 ## <a name="test-role-deployment"></a>역할 배포 테스트
@@ -87,7 +87,7 @@ Cloud Services의 경우 *ConfigureCloudService.ps1* 스크립트는 `pip`를 �
 
 클라우드 서비스 인스턴스는 C 컴파일러를 포함하지 않으므로 C 확장명이 있는 모든 라이브러리는 사전 컴파일된 이진 파일을 제공해야 합니다.
 
-pip 및 해당 종속성과 *requirements.txt*의 패키지는 자동으로 다운로드되며 청구 가능한 대역폭 사용량으로 계산할 수 있습니다. *requirements.txt* 파일 관리에 대한 자세한 내용은 [필수 패키지 관리](managing-required-packages-with-requirements-txt.md)를 참조하세요.
+pip 및 해당 종속성과 *requirements.txt*의 패키지는 자동으로 다운로드되며 청구 가능한 대역폭 사용량으로 계산할 수 있습니다. [requirements.txt](managing-required-packages-with-requirements-txt.md) 파일 관리에 대한 자세한 내용은 *필수 패키지 관리*를 참조하세요.
 
 ## <a name="troubleshooting"></a>문제 해결
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112533"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77275442"
 ---
 # <a name="warnings-and-errors"></a>경고 및 오류
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112533"
 * **제약 조건 해결**
   * [솔루션을 구체화할 수 없음](#cannot-concretize-solution)
 
-* **도메인**
+* **도메인 또는 런타임**
   * [개체를 생성하는 데 도움이 필요](#help-construct)
   * [형식을 찾는 데 도움이 필요](#help-types)
   * [사용 가능한 형식 추측](#usable-type-guessed)
@@ -46,7 +46,7 @@ ms.locfileid: "76112533"
   * [외부 메서드 호출](#external-method-called)
   * [계측할 수 없는 메서드 호출](#uninstrumentable-method-called)
   * [테스트 가능성 문제](#testability-issue)
-  * [제한](#limitation)
+  * [제한 사항](#limitation)
 
 * **인터프리터**
   * [관찰된 호출 불일치](#observed-call-mismatch)
@@ -65,7 +65,7 @@ IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 �
 for (int i=0; i<100; i++) { }
 ```
 
-[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxBranches** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다.
+**PexClass** 또는 **PexMethod** 같이 [PexSettingsAttributeBase](attribute-glossary.md#pexclass)에서 파생된 특성의 [MaxBranches](attribute-glossary.md#pexmethod) 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다.
 
 ```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxConditions** 옵션을 편집할 수 있습니다. 예:
+**PexClass** 또는 **PexMethod** 같이 [PexSettingsAttributeBase](attribute-glossary.md#pexclass)에서 파생된 특성의 [MaxConditions](attribute-glossary.md#pexmethod) 옵션을 편집할 수 있습니다. 다음은 그 예입니다.
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -145,7 +145,7 @@ IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 �
 
 실행 및 모니터링된 코드의 각 호출(직접, 간접, 가상 또는 이동)은 이 제한 계산에 포함됩니다.
 
-[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxCalls** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다.
+**PexClass** 또는 **PexMethod** 같이 [PexSettingsAttributeBase](attribute-glossary.md#pexclass)에서 파생된 특성의 [MaxCalls](attribute-glossary.md#pexmethod) 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다.
 
 ```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
@@ -161,7 +161,7 @@ public void MyTest(...) {
 
 IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 경로의 호출 스택 크기를 제한합니다. 이 기능은 스택 오버플로가 발생하는 경우 IntelliTest가 종료되는 문제를 방지합니다.
 
-[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxStack** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
+**PexClass** 또는 **PexMethod** 같이 [PexSettingsAttributeBase](attribute-glossary.md#pexclass)에서 파생된 특성의 [MaxStack](attribute-glossary.md#pexmethod) 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
 
 ```csharp
 [PexMethod(MaxStack=int.MaxValue)]
@@ -179,7 +179,7 @@ IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 �
 
 IntelliTest가 특정 입력을 사용하여 매개 변수가 있는 테스트를 실행할 때마다 새 테스트 사례를 내보내는 경우는 여기에 해당하지 않을 수 있습니다. 자세한 내용은 [TestEmissionFilter](exploration-bounds.md#testemissionfilter)를 참조하세요.
 
-[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxRuns** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
+**PexClass** 또는 **PexMethod** 같이 [PexSettingsAttributeBase](attribute-glossary.md#pexclass)에서 파생된 특성의 [MaxRuns](attribute-glossary.md#pexmethod) 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
 
 ```csharp
 [PexMethod(MaxRuns=2000)]
@@ -197,7 +197,7 @@ IntelliTest가 특정 입력을 사용하여 매개 변수가 있는 테스트�
 
 IntelliTest는 처음에 많은 흥미로운 테스트 입력을 찾지만, 잠시 후에는 추가적인 테스트를 내보내지 않습니다. 이 옵션은 IntelliTest가 또 다른 관련 테스트 입력을 계속 찾을 수 있는 기간을 제어합니다.
 
-[PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxRunsWithoutNewTests** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
+**PexClass** 또는 **PexMethod** 같이 [PexSettingsAttributeBase](attribute-glossary.md#pexclass)에서 파생된 특성의 [MaxRunsWithoutNewTests](attribute-glossary.md#pexmethod) 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
 
 ```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
@@ -301,9 +301,9 @@ IntelliTest는 프로그램 실행을 모니터링하여 [테스트 입력을 �
 이 경고는 테스트 사례를 실행하는 동안 비결정적으로 동작하거나 환경과 상호 작용하는 메서드가 호출되었기 때문에 표시됩니다. 이러한 메서드의 예로는 **System.Random** 및 **System.IO.File**이 있습니다. IntelliTest가 의미 있는 테스트 입력을 만들도록 하려면 IntelliTest에서 추적 가능성 문제로 플래그를 지정하는 메서드를 모방해야 합니다.
 
 <a name="limitation"></a>
-## <a name="limitation"></a>제한
+## <a name="limitation"></a>제한 사항
 
-IntelliTest는 [제약 조건 해결기](input-generation.md#constraint-solver)를 사용하여 [테스트 입력을 생성](input-generation.md)합니다.
+IntelliTest는 [제약 조건 해결기](input-generation.md)를 사용하여 [테스트 입력을 생성](input-generation.md#constraint-solver)합니다.
 그러나 [제약 조건 해결기](input-generation.md#constraint-solver)의 범위를 벗어나는 몇 가지 작업이 있습니다.
 현재 여기에는 다음과 같은 작업이 포함됩니다.
 
@@ -342,6 +342,6 @@ IntelliTest는 단위 테스트가 결정적일 경우에만 [관련 테스트 �
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>피드백이 있으신가요?
+## <a name="got-feedback"></a>피드백이 있나요?
 
 아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

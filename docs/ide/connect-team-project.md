@@ -1,16 +1,16 @@
 ---
 title: 팀 탐색기의 프로젝트에 연결
-ms.date: 12/04/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585485"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472745"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -40,7 +40,8 @@ ms.locfileid: "75585485"
 > [!TIP]
 > 새 프로젝트를 만들거나 프로젝트에 사용자를 추가해야 하는 경우 [프로젝트 만들기(Azure DevOps)](/azure/devops/organizations/projects/create-project) 및 [프로젝트 또는 팀에 사용자 추가(Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [팀 탐색기 참조](reference/team-explorer-reference.md)
 - [프로젝트(Azure DevOps)에 연결](/azure/devops/organizations/projects/connect-to-projects)
+- [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)(프로젝트 연결 문제 해결)

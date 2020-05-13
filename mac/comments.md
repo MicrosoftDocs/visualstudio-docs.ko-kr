@@ -6,13 +6,13 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.openlocfilehash: 2966d8b89a2609d3fbfc2b6b4561288433641ca1
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67693107"
 ---
-# <a name="comments"></a>설명
+# <a name="comments"></a>주석
 
 코드로 디버깅하거나 실험하는 경우 일시적 또는 장기적으로 코드 블록을 주석으로 처리하는 것이 유용할 수 있습니다.
 

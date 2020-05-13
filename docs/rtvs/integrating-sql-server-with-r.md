@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72888450"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server 및 R 사용
@@ -26,7 +26,7 @@ Visual Studio의 뛰어난 SQL Server 지원은 SQL 쿼리를 생성 및 실행�
 
 |   |   |
 |---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | SQL Server 및 R의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=n4AYr0QIwdQ)하세요(3분 03초). |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | SQL Server 및 R의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=n4AYr0QIwdQ)하세요(3분 03초). |
 
 ## <a name="create-and-run-sql-queries"></a>SQL 쿼리 만들기 및 실행
 
@@ -59,7 +59,7 @@ RTVS는 다음 섹션의 설명대로 SQL 및 R 코드를 단일 SQL 문으로 �
 
 |   |   |
 |---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | R 및 SQL 저장 프로시저의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=dFKIT2OitWQ)하세요(6분 09초). |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | R 및 SQL 저장 프로시저의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=dFKIT2OitWQ)하세요(6분 09초). |
 
 ### <a name="add-a-database-connection"></a>데이터베이스 연결 추가
 

@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a7baa08a29cd77506e48762179118b3bbb2d1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63002758"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled 메서드
+# <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 메서드
 모든 세션에서 공급자를 사용하도록 설정했는지 확인합니다.
 
 ## <a name="syntax"></a>구문
@@ -44,5 +44,5 @@ bool is_enabled(
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [marker_series 클래스](../profiling/marker-series-class.md)

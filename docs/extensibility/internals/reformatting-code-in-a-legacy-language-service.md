@@ -1,45 +1,45 @@
 ---
-title: 레거시 언어 서비스의 코드 다시 포맷 | Microsoft Docs
+title: 레거시 언어 서비스에서 코드 다시 포답 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae48e1b97b5c9194cf3081687ab31ea9f857e6c9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724751"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705919"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 서식 다시 지정
 
-에서는 들여쓰기 및 공백 사용을 정규화 하 여 소스 코드의 서식을 다시 지정할 수 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. 여기에는 각 줄의 시작 부분에 공백이 나 탭 삽입 또는 제거, 줄 사이에 새 줄 추가 또는 공백이 있는 탭 이나 탭으로 공백 바꾸기가 포함 될 수 있습니다.
+소스 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 코드에서 들여쓰기 및 공백 사용을 정규화하여 다시 포식할 수 있습니다. 여기에는 각 줄의 시작 부분에 공백이나 탭을 삽입 또는 제거하거나, 줄 사이에 새 선을 추가하거나, 공백을 탭이나 탭으로 대체하는 것이 포함될 수 있습니다.
 
 > [!NOTE]
-> 줄 바꿈 문자를 삽입 하거나 삭제 하면 중단점과 책갈피와 같은 표식에 영향을 줄 수 있지만 공백 또는 탭을 추가 하거나 제거 해도 표식에는 영향을 주지 않습니다.
+> 줄 바표지 문자를 삽입하거나 삭제하면 중단점 및 책갈피와 같은 마커에 영향을 줄 수 있지만 공백이나 탭을 추가하거나 제거해도 마커에는 영향을 주지 않습니다.
 
-사용자는 **편집** 메뉴의 **고급** 메뉴에서 **선택 영역 서식** 또는 **문서 서식** 을 선택 하 여 다시 포맷 작업을 시작할 수 있습니다. 코드 조각 또는 특정 문자를 삽입 하는 경우에도 다시 포맷 작업을 트리거할 수 있습니다. 예를 들어에서 C#닫는 중괄호를 입력 하는 경우 일치 하는 여는 중괄호와 닫는 중괄호 사이의 모든 항목이 자동으로 적절 한 수준으로 들여쓰기 됩니다.
+사용자는 **편집** 메뉴의 **고급** 메뉴에서 **형식 선택** 또는 **문서 형식** 지정을 선택하여 다시 포맷 작업을 시작할 수 있습니다. 코드 조각 이나 특정 문자를 삽입 하는 경우 다시 포식 작업을 트리거할 수도 있습니다. 예를 들어 C#에서 닫는 중괄호를 입력하면 일치하는 열린 중괄호와 가까운 중괄호 사이의 모든 것이 자동으로 적절한 수준으로 들여쓰기됩니다.
 
-@No__t_0 **형식 선택** 또는 **문서 서식 지정** 명령을 언어 서비스로 보내면 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스가 <xref:Microsoft.VisualStudio.Package.Source> 클래스에서 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> 메서드를 호출 합니다. 서식 지정을 지원 하려면 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> 메서드를 재정의 하 고 사용자 고유의 서식 지정 코드를 제공 해야 합니다.
+**형식 선택** 또는 **형식 문서** 명령을 언어 서비스에 <xref:Microsoft.VisualStudio.Package.ViewFilter> 보내면 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 클래스는 <xref:Microsoft.VisualStudio.Package.Source> 클래스의 메서드를 호출합니다. 서식 지정을 지원하려면 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> 메서드를 재정의하고 고유한 서식 지정 코드를 제공해야 합니다.
 
-## <a name="enabling-support-for-reformatting"></a>다시 포맷 지원 사용
+## <a name="enabling-support-for-reformatting"></a>다시 포질화지원 지원
 
-서식 지정을 지원 하려면 VSPackage을 등록할 때 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>의 `EnableFormatSelection` 매개 변수를 `true`으로 설정 해야 합니다. 이렇게 하면 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> 속성이 `true`로 설정 됩니다. @No__t_0 메서드는이 속성의 값을 반환 합니다. True를 반환 하는 경우 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스가 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>를 호출 합니다.
+서식지정을 지원하려면 VSPackage를 `EnableFormatSelection` 등록할 때 의 매개 변수를 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> `true` 설정해야 합니다. 그러면 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> 속성이 `true`로 설정됩니다. 메서드는 <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> 이 속성의 값을 반환합니다. true를 반환하면 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스는 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>을 호출합니다.
 
-## <a name="implementing-reformatting"></a>다시 포맷 구현
+## <a name="implementing-reformatting"></a>다시 포질화 구현
 
-다시 포맷을 구현 하려면 <xref:Microsoft.VisualStudio.Package.Source> 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> 메서드를 재정의 해야 합니다. @No__t_0 개체는 형식을 지정할 범위를 설명 하 고 <xref:Microsoft.VisualStudio.Package.EditArray> 개체는 범위에 대 한 편집 내용을 보유 합니다. 이 범위는 전체 문서 일 수 있습니다. 그러나 범위에 대 한 변경 내용이 여러 개 있을 가능성이 있으므로 모든 변경 내용을 단일 작업으로 되돌릴 수 있어야 합니다. 이렇게 하려면 <xref:Microsoft.VisualStudio.Package.CompoundAction> 개체의 모든 변경 내용을 래핑합니다 .이 항목의 "CompoundAction 클래스 사용" 섹션을 참조 하십시오.
+다시 포식을 구현하려면 <xref:Microsoft.VisualStudio.Package.Source> 클래스에서 클래스를 파생하고 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> 메서드를 재정의해야 합니다. 개체는 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> 포맷할 범위를 설명하고 <xref:Microsoft.VisualStudio.Package.EditArray> 개체는 범위에서 만든 편집을 보유합니다. 이 범위는 전체 문서가 될 수 있습니다. 그러나 범위에 여러 번 변경될 수 있기 때문에 모든 변경 내용은 단일 작업에서 되돌릴 수 있어야 합니다. 이렇게 하려면 <xref:Microsoft.VisualStudio.Package.CompoundAction> 개체의 모든 변경 내용을 래핑합니다(이 항목의 "CompoundAction 클래스 사용" 섹션 참조).
 
 ### <a name="example"></a>예제
 
-다음 예에서는 쉼표 뒤에 탭이 오거나 줄의 끝에 있는 경우를 제외 하 고 선택 영역에 있는 각 쉼표 뒤에 공백이 하나씩 있는지 확인 합니다. 줄에서 마지막 쉼표 뒤의 후행 공백이 삭제 됩니다. @No__t_0 메서드에서이 메서드를 호출 하는 방법을 보려면이 항목의 "CompoundAction 클래스 사용" 섹션을 참조 하세요.
+다음 예제에서는 쉼표 뒤에 탭이 있거나 줄끝에 있는 경우가 아니면 선택 영역의 모든 쉼표 뒤에 단일 공백이 있는지 확인합니다. 줄의 마지막 쉼표 이후의 후행 공백이 삭제됩니다. 이 항목의 "CompoundAction 클래스 사용" 섹션을 참조하여 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> 메서드에서 이 메서드를 호출하는 방법을 확인합니다.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -153,13 +153,13 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="using-the-compoundaction-class"></a>CompoundAction 클래스 사용
+## <a name="using-the-compoundaction-class"></a>컴파운드액션 클래스 사용
 
-코드 섹션에서 수행 되는 모든 서식 지정은 단일 작업으로 되돌릴 수 있어야 합니다. @No__t_0 클래스를 사용 하 여이를 수행할 수 있습니다. 이 클래스는 텍스트 버퍼에 대 한 편집 작업 집합을 단일 편집 작업으로 래핑합니다.
+코드 섹션에서 수행되는 모든 다시 포식은 단일 작업에서 되돌릴 수 있어야 합니다. 이 작업은 클래스를 <xref:Microsoft.VisualStudio.Package.CompoundAction> 사용하여 수행할 수 있습니다. 이 클래스는 텍스트 버퍼에 대한 편집 작업 집합을 단일 편집 작업으로 래핑합니다.
 
 ### <a name="example"></a>예제
 
-@No__t_0 클래스를 사용 하는 방법에 대 한 예제는 다음과 같습니다. @No__t_0 메서드의 예제는이 항목의 "서식 지정 지원 구현" 섹션의 예제를 참조 하세요.
+다음은 <xref:Microsoft.VisualStudio.Package.CompoundAction> 클래스를 사용하는 방법의 예입니다. `DoFormatting` 메서드의 예는 이 항목의 "서식 지정 지원 구현" 절의 예제를 참조하십시오.
 
 ```csharp
 using Microsoft.VisualStudio.Package;

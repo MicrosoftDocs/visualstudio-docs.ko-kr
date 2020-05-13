@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970942"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77580024"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>5단계: Azure에 ASP.NET Core 앱 배포
 
@@ -83,6 +83,6 @@ Azure를 사용하여 앱을 호스트하는 또 다른 이점은 보안 및 규
 
 [ASP.NET Core 애플리케이션 아키텍처](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio를 사용하여 Azure에 ASP.NET Core 앱 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)

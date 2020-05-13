@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405814"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,21 +23,21 @@ Mac용 Visual Studio에서 IntelliSense는 핵심 편집기 서비스에서 제�
 
 또한 완성 창은 형식별로 포함된 완성을 필터링하기 위한 지원을 제공합니다. 예를 들어 클래스 또는 대리자와 같은 형식만 표시하도록 목록의 멤버를 제한할 수 있습니다. 이 필터링 프로세스는 필터링되는 형식을 나타내는 특정 아이콘을 클릭하거나 지정된 형식과 일치하는 바로 가기 키를 통해 사용하도록 설정할 수 있습니다. 완성 창의 아래쪽에 있는 아이콘은 다음과 같습니다.
 
-| 아이콘                         | 이름          | 키워드    | 바로 가기 키 |
+| 아이콘                         | 속성          | 키워드    | 바로 가기 키 |
 | -----------------------------|---------------| -----------|--------|
-| ![클래스 아이콘](media/classes-icon.png)  | 클래스         | `class`    |  ⌥C
-| ![상수 아이콘](media/constant-icon.png) | 상수      | `const`    |  ⌥O
-| ![대리자 아이콘](media/delegate-icon.png) | 대리자(delegate)      | `delegate` |  ⌥D
+| ![클래스 아이콘](media/classes-icon.png)  | class         | `class`    |  ⌥C
+| ![상수 아이콘](media/constant-icon.png) | constant      | `const`    |  ⌥O
+| ![대리자 아이콘](media/delegate-icon.png) | 대리자      | `delegate` |  ⌥D
 | ![열거형 아이콘](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![이벤트 아이콘](media/event-icon.png)    | 이벤트(event)         |            |  ⌥V
-| ![필드 아이콘](media/fields-icon.png)   | 필드(field)         |            |  ⌥F
-| ![인터페이스 아이콘](media/interface-icon.png)| interface(인터페이스)     | `interface`|  ⌥I
-| ![키워드 아이콘](media/keyword-icon.png)  | keyword       |            |  ⌥K
-| ![메서드 아이콘](media/method-icon.png)   | 메서드        |            |  ⌥M
-| ![네임스페이스 아이콘](media/namespace-icon.png)| 네임스페이스(namespace)     | `namespace`|  ⌥N
-| ![속성 아이콘](media/props-icon.png)    | 속성(property)      |            |  ⌥P
+| ![이벤트 아이콘](media/event-icon.png)    | 이벤트         |            |  ⌥V
+| ![필드 아이콘](media/fields-icon.png)   | 필드         |            |  ⌥F
+| ![인터페이스 아이콘](media/interface-icon.png)| 인터페이스     | `interface`|  ⌥I
+| ![키워드 아이콘](media/keyword-icon.png)  | 키워드(keyword)       |            |  ⌥K
+| ![메서드 아이콘](media/method-icon.png)   | method        |            |  ⌥M
+| ![네임스페이스 아이콘](media/namespace-icon.png)| 네임스페이스     | `namespace`|  ⌥N
+| ![속성 아이콘](media/props-icon.png)    | 속성      |            |  ⌥P
 | ![코드 조각 아이콘](media/snippet-icon.png)  | 코드 조각       | `class`    |  ⌥S
-| ![구조체 아이콘](media/struct-icon.png)   | 구조체(structure)     | `struct`   |  ⌥S
+| ![구조체 아이콘](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
 
 아이콘을 클릭하거나 해당하는 바로 가기 키를 누르면 완성 목록은 필터 세트에 정의된 형식으로만 제한됩니다.  
 
@@ -58,7 +58,7 @@ IntelliSense의 다른 기능은 해당하는 경우 매개 변수 목록을 제
 
 `control-shift-space`를 입력하여 매개 변수 창의 모양을 수동으로 트리거할 수도 있습니다. 캐럿이 매개 변수 목록에 대해 유효한 위치에 있으면 매개 변수 목록이 캐럿 위치 근처에 나타납니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빠른 작업(Windows의 Visual Studio)](/visualstudio/ide/quick-actions)
 - [코드 리팩터링(Windows의 Visual Studio)](/visualstudio/ide/refactoring-in-visual-studio)

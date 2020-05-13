@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::EnumPrograms | Microsoft Docs
+title: 아이데버그엔진2::에넘프로그램 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::EnumPrograms
 ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05146e92f9f1174d747dbd73488c59f8950c7395
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5ab53366b228077ab3c3cc6b1ab38ee5d0383dcd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330074"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731090"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
-디버그 엔진 (DE)에서 디버깅 중인 모든 프로그램의 목록을 검색 합니다.
+DE(디버그 엔진)에 의해 디버깅되는 모든 프로그램 목록을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int EnumPrograms( 
 
 ## <a name="parameters"></a>매개 변수
 `ppEnum`\
-[out] 반환 된 [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) 는 DE로 디버깅 중인 모든 프로그램의 목록을 포함 하는 개체입니다.
+【아웃】 DE에서 디버깅하는 모든 프로그램의 목록을 포함하는 [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) 개체를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

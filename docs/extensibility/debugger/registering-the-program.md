@@ -1,44 +1,44 @@
 ---
-title: 프로그램 등록 | Microsoft Docs
+title: 프로그램 등록 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60bc94efb9d3b2026de31c6018b466d432bf98f8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315952"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713165"
 ---
-# <a name="register-the-program"></a>등록 프로그램
-디버그 엔진에 대 한 포트를을 가져온 후 표시를 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스는 프로그램을 디버깅을 사용 하도록 설정 하는 다음 단계는 포트를 등록 합니다. 등록 되 면 프로그램은 다음 방법 중 하나에서 디버깅을 위해 제공 됩니다.
+# <a name="register-the-program"></a>프로그램 등록
+디버그 엔진이 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스로 표시되는 포트를 획득한 후 프로그램을 디버깅할 수 있도록 하는 다음 단계는 포트에 등록하는 것입니다. 등록이 완료되면 다음 중 하나를 통해 디버깅할 수 있습니다.
 
-- 디버거를 실행 중인 응용 프로그램의 전체 디버깅 제어할 수 있는 프로세스에 연결입니다.
+- 디버거가 실행 중인 응용 프로그램의 완전한 디버깅 제어를 얻을 수 있도록 연결하는 프로세스입니다.
 
-- -Just-in-time (JIT) 디버깅, 팩트 후 디버거를 독립적으로 실행 되는 프로그램의 디버깅 수 있습니다. 런타임 아키텍처는 오류를 catch 하는 경우 운영 체제 전에 디버거에 알립니다 때나 런타임 환경 메모리와 faulting 프로그램의 리소스를 해제 합니다.
+- JIT(Just-In-Time) 디버깅을 통해 디버거와 독립적으로 실행되는 프로그램의 사후 디버깅이 가능합니다. 런타임 아키텍처에서 오류를 Catch하면 운영 체제 또는 런타임 환경이 오류 프로그램의 메모리와 리소스를 해제하기 전에 디버거에 알림을 받게 됩니다.
 
-## <a name="registering-procedure"></a>프로시저를 등록합니다.
+## <a name="registering-procedure"></a>등록 절차
 
-### <a name="to-register-your-program"></a>프로그램을 등록 하려면
+### <a name="to-register-your-program"></a>프로그램 등록
 
-1. 호출 된 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) 포트에서 구현 하는 메서드.
+1. 포트에서 구현한 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) 메서드를 호출합니다.
 
-     `IDebugPortNotify2::AddProgramNode` 필요에 대 한 포인터를 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스입니다.
+     `IDebugPortNotify2::AddProgramNode`에서는 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스에 대한 포인터가 필요합니다.
 
-     일반적으로 운영 체제 또는 런타임 환경 프로그램이 로드 되 면 프로그램 노드에서 만듭니다. 디버그 엔진 (DE) 프로그램을 로드 하 라는 메시지가 표시 됩니다, 경우는 DE 만들고 프로그램 노드를 등록 합니다.
+     일반적으로 운영 체제 또는 런타임 환경이 프로그램을 로드할 때 프로그램 노드가 만들어집니다. DE(디버그 엔진)가 프로그램을 로드하라는 메시지가 있으면 DE는 프로그램 노드를 만들고 등록합니다.
 
-     다음 예제에서는 프로그램을 시작 하 고 포트를 사용 하 여 등록 하는 디버그 엔진을 보여 줍니다.
+     다음 예제에서는 프로그램을 시작하고 포트에 등록하는 디버그 엔진을 보여 주습니다.
 
     > [!NOTE]
-    > 이 코드 예제를 시작 하 고 프로세스를 다시 시작 하는 유일한 방법은 아닙니다. 이 코드는 주로 포트를 사용 하 여 프로그램을 등록 하는 예입니다.
+    > 이 코드 샘플만이 프로세스를 시작하고 다시 시작하는 유일한 방법은 아닙니다. 이 코드는 주로 포트에 프로그램을 등록하는 예입니다.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -104,6 +104,6 @@ ms.locfileid: "66315952"
 
     ```
 
-## <a name="see-also"></a>참고자료
-- [포트 가져오기](../../extensibility/debugger/getting-a-port.md)
-- [디버그할 프로그램을 사용 하도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>참조
+- [포트 받기](../../extensibility/debugger/getting-a-port.md)
+- [프로그램을 디버깅할 수 있도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

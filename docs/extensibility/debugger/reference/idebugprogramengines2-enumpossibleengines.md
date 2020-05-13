@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
+title: IDebugProgramEngines2::에이넘가능한엔진 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 532486c66b6feb5c397b9167e2b1cd6197513fa8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343394"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722436"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-모든 가능한 디버그 엔진 (DE)이이 프로그램을 디버그할 수 있는 Guid를 반환 합니다.
+이 프로그램을 디버깅할 수 있는 가능한 모든 DEBug 엔진(DE)에 대한 GUID를 반환합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,19 +45,19 @@ int EnumPossibleEngines( 
 
 ## <a name="parameters"></a>매개 변수
 `celtBuffer`\
-[in] 반환할 DE Guid 수입니다. 이 또한의 최대 크기를 지정 된 `rgguidEngines` 배열입니다.
+【인】 반환할 DE GUID의 수입니다. 또한 배열의 최대 크기를 지정합니다. `rgguidEngines`
 
 `rgguidEngines`\
-[out에서] 배열 채울 DE Guid입니다.
+【인, 아웃】 채울 DE GUID의 배열입니다.
 
 `pceltEngines`\
-[out] 반환 되는 DE Guid의 실제 수를 반환 합니다.
+【아웃】 반환되는 실제 DE GUID 수를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 또는 [C#] 0x8007007A 버퍼 크기가 충분 하지 않은 경우.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 버퍼가 충분히 크지 않은 경우 [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 또는 [C#] 0x8007007A를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 엔진 수를 확인 하기 위해 사용 하 여 한 번이 메서드를 호출 합니다 `celtBuffer` 매개 변수가 0으로 설정 및 `rgguidEngines` 매개 변수가 null 값으로 설정 합니다. 반환 합니다. `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (C#에 대 한 0x8007007A) 및 `pceltEngines` 매개 변수 버퍼의 필요한 크기를 반환 합니다.
+ 얼마나 많은 엔진이 있는지 확인하려면 매개 변수를 `celtBuffer` 0으로 설정하고 `rgguidEngines` 매개 변수를 null 값으로 설정하여 이 메서드를 한 번 호출합니다. 이렇게 `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 하면(C#의 경우 0x8007007A) `pceltEngines` 매개 변수가 버퍼의 필요한 크기를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

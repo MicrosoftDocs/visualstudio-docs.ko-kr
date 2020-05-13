@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591673"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask 기본 클래스
@@ -26,7 +26,7 @@ ms.locfileid: "75591673"
 
 다음 표에서는 **VCToolTask** 기본 클래스의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |**ActiveToolSwitchesValues**|선택적 **Dictionary\<string, ToolSwitch>** 매개 변수입니다.|
 |**AdditionalOptions**|선택적 **string** 매개 변수입니다.|
@@ -37,7 +37,7 @@ ms.locfileid: "75591673"
 |**GenerateCommandLine**|선택적 **string** 매개 변수입니다.<br/><br/>**CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] 및 **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] 값을 사용합니다.|
 |**GenerateCommandLineExceptSwitches**|선택적 **string** 매개 변수입니다.<br/><br/>**string[]** *switchesToRemove*, **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] 및 **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] 값을 사용합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [작업 참조](../msbuild/msbuild-task-reference.md)<br/>
 [작업](../msbuild/msbuild-tasks.md)

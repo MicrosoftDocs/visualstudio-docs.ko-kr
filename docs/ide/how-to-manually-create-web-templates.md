@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591010"
 ---
 # <a name="how-to-manually-create-web-templates"></a>방법: 수동으로 웹 템플릿 만들기
@@ -22,7 +22,7 @@ ms.locfileid: "75591010"
 웹 템플릿을 만드는 것은 다른 종류의 템플릿을 만드는 것과 다릅니다. 웹 프로젝트 템플릿은 **새 웹 사이트 추가** 대화 상자에 나타나고 웹 프로젝트 항목은 프로그래밍 언어에 따라 분류되므로 *vstemplate* 파일은 템플릿을 웹 템플릿으로 지정하고 프로그래밍 언어를 식별해야 합니다.
 
 > [!NOTE]
-> 웹 템플릿에는 빈 *.webproj* 파일이 포함되어 있어야 하고, 이 파일은 *vstemplate* 파일에서 `Project` 요소의 `File` 특성에 참조되어야 합니다. 웹 프로젝트에는 *.proj* 프로젝트 파일이 필요하지 않지만 이 스텁 파일을 만들어야 웹 템플릿이 올바르게 작동합니다.
+> 웹 템플릿에는 빈 *.webproj* 파일이 포함되어 있어야 하고, 이 파일은 *vstemplate* 파일에서 `File` 요소의 `Project` 특성에 참조되어야 합니다. 웹 프로젝트에는 *.proj* 프로젝트 파일이 필요하지 않지만 이 스텁 파일을 만들어야 웹 템플릿이 올바르게 작동합니다.
 
 ## <a name="to-manually-create-a-web-template"></a>웹 템플릿을 수동으로 만들려면
 
@@ -34,14 +34,14 @@ ms.locfileid: "75591010"
 
 4. 프로젝트 템플릿 메타데이터를 제공하도록 *vstemplate* XML 파일을 편집합니다. 자세한 내용은 [다음에 나오는 예제](#example)를 참조하세요.
 
-5. *vstemplate* 파일에서 `ProjectType` 요소를 찾고 텍스트 값을 `Web`으로 설정합니다.
+5. `ProjectType`vstemplate*파일에서* 요소를 찾고 텍스트 값을 `Web`으로 설정합니다.
 
 6. `ProjectType` 요소 다음에 `ProjectSubType` 요소를 추가하고 텍스트 값을 템플릿의 프로그래밍 언어로 설정합니다. 프로그래밍 언어는 다음 값 중 하나일 수 있습니다.
 
    - CSharp
    - VisualBasic
 
-     예:
+     다음은 그 예입니다.
 
      ```xml
      <TemplateData>
@@ -81,7 +81,7 @@ ms.locfileid: "75591010"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조(확장성)](../extensibility/visual-studio-template-schema-reference.md)

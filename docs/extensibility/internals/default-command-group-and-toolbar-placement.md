@@ -1,5 +1,5 @@
 ---
-title: 기본 명령, 그룹 및 도구 모음 배치 | Microsoft Docs
+title: 기본 명령, 그룹 및 도구 모음 배치 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4445531b48b35de9b47d1b68478cf344bf31d2d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351648"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708887"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>기본 명령, 그룹 및 도구 모음 배치
-제품 일관성 및 안정성에 대 한 UI를 기본적으로 특정 명령 그룹을 표시 하 고 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령 및 명령 그룹에 대 한 정의 제공 합니다. 표준 명령 및 명령 그룹 Vspackage를 이용할 수 있습니다.
+제품 균일성과 안정성을 위해 UI는 기본적으로 특정 명령 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그룹을 표시하고 명령 및 명령 그룹에 대한 정의를 제공합니다. VSPackage는 표준 명령 및 명령 그룹을 사용할 수도 있습니다.
 
- 기본 명령 그룹은 다음과 같은 세 가지 범주로 분류 됩니다. IDE 명령, 제품 명령 및 편집기 명령입니다.
+ 기본 명령 그룹은 IDE 명령, 제품 명령 및 편집기 명령의 세 가지 범주로 나뉩니다.
 
 ## <a name="default-ide-commands"></a>기본 IDE 명령
- 기본 IDE 도구 모음에 명령에 포함 된 모든 제품에서 공유 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 다음과 같은 일반 프로젝트 작업에 관련 된 명령은 합니다 **저장** 명령 및 **항목 추가** 명령입니다. Vspackage를 추가 하지 않거나 한 가지 예외로이 도구 모음에서 뺄 해야 합니다. 제품 또는 VSPackage는 새 도구 창을 추가 하는 경우에 사용할 수 있는 도구 창의 목록에 추가할 해야 창 합니다 **보기** 메뉴. 새 제품 또는 Vspackage는 자체 도구 모음을 추가할 수 있습니다.
+ 기본 IDE 도구 모음에는 에 포함된 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]제품에서 공유하는 명령이 포함됩니다. 여기에는 **항목 저장** 명령 및 **항목 추가** 명령과 같은 일반 프로젝트 작업과 관련된 명령이 포함됩니다. VSPackages는 제품 또는 VSPackage가 새 도구 창을 추가하는 경우 **보기** 메뉴에서 사용 가능한 도구 창 목록에 창을 추가하거나 빼지 않아야 합니다. 새 제품 또는 VSPackage는 자체 도구 모음을 추가할 수 있습니다.
 
 ## <a name="default-product-commands"></a>기본 제품 명령
- 각 제품 중요 한 포함 된 자주 사용 하는 명령 자체 기본 도구 모음을 사용 하 여 IDE를 제공할 수 있습니다. 그러나 기존 메뉴 및 가능한 경우 도구 모음을 사용 하 고 필요에 따라 다른 태스크 별 도구 모음을 사용 하 여 보완 하는 것이 좋습니다 합니다.
+ 각 제품은 중요하고 자주 사용하는 명령을 포함하는 자체 기본 도구 모음을 IDE에 제공할 수 있습니다. 그러나 가능하면 기존 메뉴와 도구 모음을 사용하고 필요에 따라 다른 작업 별 도구 모음으로 보완하는 것이 가장 좋습니다.
 
- 도구 모음에 대 한 우선 순위 필드의 행 위치를 결정합니다. 메뉴 모음 아래에 세 번째 행 (행 3)의 도구 모음을 배치 하는 0 우선 순위 (1 행) 및 **표준** 도구 모음 (2 행). 따라서 다른 도구 모음으로 행에 표시 (우선 순위 + 3). 다음 도구 모음; 공간이 있는 경우 같은 행에 배치 됩니다. 그렇지 않은 경우 자동으로 이동 하는 다음 행.
+ 도구 모음의 우선 순위 필드에 행 배치가 결정됩니다. 우선 순위가 0인 경우 도구 모음이 세 번째 행(행 3)에 메뉴 막대(행 1) 및 **표준** 도구 모음(행 2) 아래에 배치됩니다. 따라서 다른 도구 모음이 행에 나타납니다(우선 순위 + 3). 후속 도구 모음은 공간이 있는 경우 동일한 행에 배치됩니다. 그렇지 않으면 자동으로 다음 행으로 이동됩니다.
 
 ## <a name="default-editor-commands"></a>기본 편집기 명령
- 사용자 지정 편집기를 제공 하는 VSPackage는 가장 중요 한 포함 하는 편집기에서 자주 사용 되는 명령을 기본 도구 모음을 제공 해야 합니다. 편집기 도구 모음 편집기가 활성 상태일 편집기를 사용 하지 않으면 숨겨야 할 때 표시 됩니다. 이러한 가시성은에서 제어를 `VisibilityConstraints` 의 요소를 *.vsct* 파일입니다.
+ 사용자 지정 편집기제공 VSPackage는 해당 편집기에서 가장 중요하고 자주 사용되는 명령을 포함하는 기본 도구 모음을 제공해야 합니다. 편집기 도구 모음은 편집기가 활성 상태일 때 나타나야 하며 편집기가 활성화되지 않은 경우 숨춰져야 합니다. 이 가시성은 `VisibilityConstraints` *.vsct* 파일의 요소에서 제어됩니다.
 
- 제품 및 IDE 도구 모음 아래 편집기 도구 모음을 배치 되어야 합니다.
+ 편집기 도구 모음은 IDE 및 제품 도구 모음 아래에 배치해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
-- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackage사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

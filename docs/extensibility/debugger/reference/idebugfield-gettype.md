@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetType | Microsoft Docs
+title: 아이디버그필드::겟타입 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetType method
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c052f4b4c45080d8292dd8787c44777818bae585
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e052155524c962894af021bf5afdec50d182d68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333170"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728796"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 이 메서드는 필드의 형식을 가져옵니다.
@@ -41,10 +41,10 @@ int GetType(
 
 ## <a name="parameters"></a>매개 변수
 `ppType`\
-[out] 다른 필드 형식을 반환 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.
+【아웃】 필드 형식을 다른 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체로 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

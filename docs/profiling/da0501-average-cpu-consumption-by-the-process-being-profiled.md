@@ -1,5 +1,5 @@
 ---
-title: 'DA0501: 프로파일링되고 있는 프로세스의 평균 CPU 사용입니다. | Microsoft 문서'
+title: 'DA0501: 프로파일링 중인 프로세스의 평균 CPU 사용 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d9835ad1965d1fd9a31113117eeb07ed62fd8ec4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777465"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: 프로파일링되고 있는 프로세스의 평균 CPU 사용량입니다.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: 프로파일링 중인 프로세스의 평균 CPU 사용입니다.
 
 |||
 |-|-|
 |규칙 ID|DA501|
-|범주|리소스 모니터링|
+|Category|리소스 모니터링|
 |프로파일링 방법|모두|
 |메시지|프로파일링되고 있는 프로세스의 평균 CPU 사용입니다.|
 |규칙 유형|정보|

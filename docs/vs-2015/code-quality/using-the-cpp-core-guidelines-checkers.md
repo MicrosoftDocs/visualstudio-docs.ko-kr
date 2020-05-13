@@ -6,15 +6,15 @@ ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ccc44b77c4524e7d707ce3fe407d204d729017ff
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 946b46bfb5101154832e10b61cd861b0c104dc14
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291245"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275294"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core Guidelines 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

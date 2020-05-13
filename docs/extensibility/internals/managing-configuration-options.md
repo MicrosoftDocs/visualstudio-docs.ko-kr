@@ -1,55 +1,55 @@
 ---
-title: 관리 구성 옵션 | Microsoft Docs
+title: 구성 옵션 관리 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e093b3af6c0db75282d12f8766d36bc511d2cf4c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328657"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707304"
 ---
 # <a name="managing-configuration-options"></a>구성 옵션 관리
-새 프로젝트 형식의 만들면 어떻게 프로젝트가 빌드되는, 패키지, 배포 및 실행을 결정 하는 프로젝트 및 솔루션 구성 설정을 관리 해야 합니다. 다음 항목 프로젝트 및 솔루션 구성에 설명 합니다.
+새 프로젝트 유형을 만들 때 프로젝트를 빌드, 패키지, 배포 및 실행하는 방법을 결정하는 프로젝트 및 솔루션 구성 설정을 관리해야 합니다. 다음 항목에서는 프로젝트 및 솔루션 구성에 대해 설명합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 - [개요](../../extensibility/internals/configuration-options-overview.md)
 
- 에 대해 설명 하는 방법의 프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 여러 구성을 지원할 수 있습니다.
+ 에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트가 여러 구성을 지원하는 방법을 설명합니다.
 
-- [속성 페이지(Visual C++)](../../extensibility/internals/property-pages.md)
+- [속성 페이지](../../extensibility/internals/property-pages.md)
 
- 사용자가 보고 하 고 속성 페이지를 사용 하 여 프로젝트 구성에 대 한 종속 속성 및 독립적인 속성을 변경할 수에 대해 설명 합니다.
+ 사용자는 속성 페이지를 사용하여 프로젝트 구성 종속 속성 및 독립 속성을 보고 변경할 수 있다고 설명합니다.
 
 - [솔루션 구성](../../extensibility/internals/solution-configuration.md)
 
- 솔루션 구성에 저장 된 것 및 솔루션 구성의 동작을 지시 하는 방법에 대 한 정보를 제공 합니다 **시작** 하 고 **빌드** 명령입니다.
+ 솔루션 구성에 저장되는 내용과 솔루션 구성이 **시작** 및 **빌드** 명령의 동작을 지시하는 방법에 대한 정보를 제공합니다.
 
 - [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)
 
- 프로젝트 구성 개체를 UI 구성 정보의 표시를 관리 하는 방법을 설명 합니다.
+ 프로젝트 구성 개체가 UI에 구성 정보 표시를 관리하는 방법을 설명합니다.
 
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 
- 특정 솔루션에 대 한 솔루션 구성의 목록에서 관리 하는 방법에 대해 설명 합니다 **솔루션 구성** 대화 상자.
+ 솔루션 구성 대화 상자에서 특정 솔루션에 대한 솔루션 구성 목록을 관리하는 방법을 **설명합니다.**
 
 - [배포 관리를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 
- 배포 하 고 두 가지 방법으로 작업 정의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 배포를 지 원하는 프로젝트를 지원 합니다.
+ 배포 행위를 정의하고 배포를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지원하는 프로젝트를 지원하는 두 가지 방법을 정의합니다.
 
 - [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)
 
- 모든 구성을 지원할 수 있는 빌드 프로세스 및 인터페이스 및 메서드를 출력 하 여 항목 사용 가능 하 게 설명 합니다.
+ 모든 구성이 지원할 수 있는 빌드 프로세스와 출력 항목을 사용할 수 있는 인터페이스 및 메서드를 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
-- [프로젝트 형식](../../extensibility/internals/project-types.md)
+- [프로젝트 유형](../../extensibility/internals/project-types.md)
 
- 기본 빌딩 블록으로 프로젝트의 개요를 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE)입니다. 프로젝트 빌드 및 컴파일 코드를 제어 하는 방법을 설명 하는 추가 항목 링크가 제공 됩니다.
+ 통합 개발 환경(IDE)의 기본 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 구성 요소로서 프로젝트의 개요를 제공합니다. 프로젝트가 빌드 및 컴파일 코드를 제어하는 방법을 설명하는 추가 항목에 대한 링크가 제공됩니다.

@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericParamField::GetConstraints | Microsoft Docs
+title: 아이데버그제네릭파라필드::겟제약 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0821b98250b26d6eafa5f1e02a3c2ef8c07562f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330420"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728018"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-이 제네릭 매개 변수를 사용 하 여 연결 된 제약 조건을 검색 합니다.
+이 제네릭 매개 변수와 연결된 제약 조건을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,19 +44,19 @@ int GetConstraints(
 
 ## <a name="parameters"></a>매개 변수
 `cConstraints`\
-[in] 제약 조건 수입니다.
+【인】 구속조건 수입니다.
 
 `ppConstraints`\
-[out] 이 필드와 연결 된 제약 조건을 포함 하는 배열을 반환 합니다.
+【아웃】 이 필드와 연결된 제약 조건을 포함하는 배열을 반환합니다.
 
 `pcConstraints`\
-[out에서] 에 제약 조건의 수는 `ppConstraints` 배열입니다.
+【인, 아웃】 배열의 제약 조건 `ppConstraints` 수입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugGenericParamFieldType** 노출 하는 개체를 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스입니다.
+다음 예제에서는 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamField 개체에** 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(
@@ -151,5 +151,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

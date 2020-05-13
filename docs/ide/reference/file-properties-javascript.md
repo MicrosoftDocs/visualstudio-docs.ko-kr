@@ -27,17 +27,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926230"
 ---
 # <a name="file-properties-javascript"></a>파일 속성, JavaScript
 
 파일 속성을 사용하여 프로젝트 시스템이 파일에 대해 수행해야 하는 작업을 지정할 수 있습니다. 예를 들어 파일 속성을 설정하여 파일을 패키지에 리소스 파일로 추가해야 하는지 여부를 지정할 수 있습니다.
 
-솔루션 탐색기에서 파일을 선택하고 속성 창에서 해당 속성을 검사할 수 있습니다. JavaScript 파일에는 다음과 같은 네 가지 속성이 있습니다. **출력 디렉터리에 복사**, **패키지 작업**, **파일 이름** 및 **파일 경로**
+솔루션 탐색기에서 파일을 선택하고 속성 창에서 해당 속성을 검사할 수 있습니다. JavaScript 파일에는 **출력 디렉터리에 복사**, **패키지 작업**, **파일 이름**, **파일 경로**의 네 가지 속성이 있습니다.
 
 ## <a name="file-properties"></a>파일 속성
 이 섹션에서는 JavaScript 파일에 공통적인 속성을 설명합니다.
@@ -70,13 +70,13 @@ ms.locfileid: "68926230"
 ### <a name="culture"></a>문화권
 참조와 연결된 언어를 표시합니다.
 
-### <a name="file-type"></a>파일 형식
+### <a name="file-type"></a>파일 유형
 참조의 파일 형식을 표시합니다.
 
 ### <a name="file-version"></a>파일 버전
 참조의 파일 버전을 표시합니다.
 
-### <a name="identity"></a>클레임
+### <a name="identity"></a>ID
 프로젝트 파일에 저장되는 프로젝트에서 사용되는 참조의 ID를 표시합니다.
 
 ### <a name="package"></a>패키지
@@ -88,7 +88,7 @@ ms.locfileid: "68926230"
 ### <a name="sdk-path"></a>SDK 경로
 참조된 SDK 파일의 경로를 표시합니다.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
 파일을 소스 파일로 포함하기 위해 프로젝트의 HTML 또는 JavaScript 파일에 포함해야 하는 URI를 표시합니다.
 
 ### <a name="version"></a>버전

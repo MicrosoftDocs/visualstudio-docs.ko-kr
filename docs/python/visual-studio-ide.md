@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73661926"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
@@ -144,7 +144,7 @@ Windows의 세 가지 Visual Studio 버전은 다음과 같습니다. Community,
 > [!div class="nextstepaction"]
 > [Visual Studio에서 Flask 웹 프레임워크 시작](learn-flask-visual-studio-step-01-project-solution.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 추가 기능](../ide/advanced-feature-overview.md)을 검색하세요.
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)을 방문하세요.

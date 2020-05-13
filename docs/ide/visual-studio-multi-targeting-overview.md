@@ -1,6 +1,6 @@
 ---
 title: 대상 .NET Framework
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594125"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472728"
 ---
 # <a name="framework-targeting-overview"></a>Framework 대상 지정 개요
 
 Visual Studio에서는 프로젝트에서 대상으로 하려는 .NET의 버전을 지정할 수 있습니다. 프레임워크 대상 지정을 통해 애플리케이션에서 지정된 프레임워크 버전에서 제공되는 기능만 사용하도록 할 수 있습니다. .NET Framework 앱이 다른 컴퓨터에서 실행되려면 애플리케이션이 대상으로 하는 Framework 버전이 컴퓨터에 설치된 Framework 버전과 호환되어야 합니다.
 
-Visual Studio 솔루션에는 여러 가지 버전의 .NET을 대상으로 하는 프로젝트가 포함될 수 있습니다.
-
-대상 프레임워크에 대한 자세한 내용은 [대상 프레임워크](/dotnet/standard/frameworks)를 참조하세요.
+Visual Studio 솔루션에는 여러 가지 버전의 .NET을 대상으로 하는 프로젝트가 포함될 수 있습니다.  그러나 단일 빌드에 대한 참조 조건을 사용하여 단일 버전의 .NET을 대상으로 빌드하거나 각 버전에 대해 여러 이진 파일을 재귀적으로 빌드하는 것만 가능합니다.  대상 프레임워크에 대한 자세한 내용은 [대상 프레임워크](/dotnet/standard/frameworks)를 참조하세요.
 
 > [!TIP]
 > 다른 플랫폼에 대한 애플리케이션을 대상으로 지정할 수도 있습니다. 자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.
@@ -120,7 +118,7 @@ Visual Studio 솔루션에는 여러 가지 버전의 .NET을 대상으로 하�
 
 .NET Framework 3.5 이상을 대상으로 지정하면 **System.Core**에 대한 참조 및 <xref:System.Linq>에 대한 프로젝트 수준 가져오기(Visual Basic에서만)가 자동으로 추가됩니다. LINQ 기능을 사용하려면 `Option Infer`도 켜야 합니다(Visual Basic에서만). 대상을 이전 .NET Framework 버전으로 변경하면 참조 및 가져오기가 자동으로 제거됩니다. 자세한 내용은 [LINQ 작업](/dotnet/csharp/tutorials/working-with-linq)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [대상 프레임워크](/dotnet/standard/frameworks)
 - [멀티 타기팅(MSBuild)](../msbuild/msbuild-multitargeting-overview.md)

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75678963"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79300878"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
 

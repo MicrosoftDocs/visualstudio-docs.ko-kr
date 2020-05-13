@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565632"
 ---
 # <a name="quick-watch-command"></a>간략한 조사식 명령
@@ -32,7 +32,7 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>인수
 
 `text`\
-선택 사항입니다. **간략한 조사식** 대화 상자에 추가할 텍스트입니다.
+(선택 사항) **간략한 조사식** 대화 상자에 추가할 텍스트입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -44,10 +44,10 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 조사식 및 간략한 조사식 창을 사용하여 변수에 대한 조사식 설정](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

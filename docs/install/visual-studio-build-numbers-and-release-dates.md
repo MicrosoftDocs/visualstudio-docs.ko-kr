@@ -5,18 +5,19 @@ description: 날짜별로 정렬된 Visual Studio의 릴리스 버전 및 빌드
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 02/11/2020
+ms.date: 04/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5be0303d89ba33a56c22f8a149e42c107094a04b
-ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+open_to_public_contributors: false
+ms.openlocfilehash: 33d82e84b28fa85bf4cfb014ecd292f31e0c84cb
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155217"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109457"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -28,6 +29,23 @@ ms.locfileid: "77155217"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Preview 4 | 2020년 4월 23일 | 16.6.30021.99 |
+| 16.6.0 | Preview 3 | 2020년 4월 16일 | 16.6.30014.187 |
+| 16.0.13 | Release | 2020년 4월 14일 | 16.0.28803.718 |
+| 16.4.7 | Release | 2020년 4월 14일 | 16.4.30011.19 |
+| 16.5.4 | Release | 2020년 4월 14일 | 16.5.30011.22 |
+| 16.5.3 | Release | 2020년 4월 7일 | 16.5.30002.166 |
+| 16.6.0 | 미리 보기 2.1 | 2020년 4월 2일 | 16.6.30001.183 |
+| 16.5.2 | Release | 2020년 3월 31일 | 16.5.29926.136 |
+| 16.6.0 | Preview 2 | 2020년 3월 26일 | 16.6.29924.181 |
+| 16.5.1 | Release | 2020년 3월 24일 | 16.5.29920.165 |
+| 16.6.0 | 미리 보기 1 | 2020년 3월 16일 | 16.6.29911.98 |
+| 16.5.0 | Release | 2020년 3월 16일 | 16.5.29911.84 |
+| 16.4.6 | Release | 2020년 3월 10월  | 16.4.29905.134 |
+| 16.0.12 | Release | 2020년 3월 10월 | 16.0.28803.697 |
+| 16.5.0 | Preview 5 | 2020년 3월 2일 | 16.5.29827.131 |
+| 16.5.0 | Preview 4 | 2020년 2월 25일 | 16.5.29820.132 |
+| 16.5.0 | Preview 3 | 2020년 2월 19일 | 16.5.29814.53 |
 | 16.4.5 | Release | 2020년 2월 11일 | 16.4.29806.167 |
 | 16.4.4 | Release | 2020년 1월 31일 | 16.4.29728.190 |
 | 16.5.0 | Preview 2 | 2020년 1월 22일 | 16.5.29721.120 |
@@ -123,6 +141,8 @@ ms.locfileid: "77155217"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.22 | Release | 2020년 4월 14일 | 15.9.28307.1093 |
+| 15.9.21 | Release | 2020년 3월 10월 | 15.9.28307.1064 |
 | 15.9.20 | Release | 2020년 2월 11일 | 15.9.28307.1033 |
 | 15.9.19 | Release | 2020년 1월 14일 | 15.9.28307.1000 |
 | 15.0.28 | Release | 2019년 12월 11일 | 15.0.26228.102 |

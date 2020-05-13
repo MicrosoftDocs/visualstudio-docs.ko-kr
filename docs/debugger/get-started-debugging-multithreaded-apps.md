@@ -2,7 +2,7 @@
 title: 다중 스레드 응용 프로그램 디버깅에 대 한 자세한 정보
 description: Visual Studio의 병렬 스택 및 병렬 조사식 창을 사용 하 여 디버그
 ms.custom: ''
-ms.date: 11/16/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e21d5174c9a909e9ad8031dfb7585abc52a7e78
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091797"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416409"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>다중 스레드 응용 프로그램 디버깅 시작C#(, Visual Basic C++,)
 
@@ -34,7 +34,7 @@ Visual Studio는 다중 스레드 응용 프로그램을 디버깅 하는 데 �
 
 - 사용 하는 샘플에 대 한 <xref:System.Threading.Tasks.Task> (관리 코드) (c + +), 동시성 런타임에서 참조 및 [연습: 병렬 애플리케이션 디버그](../debugger/walkthrough-debugging-a-parallel-application.md). 대부분의 다중 스레드 응용 프로그램 유형에 적용 되는 일반적인 디버깅 팁은 해당 항목과이 항목을 모두 읽습니다.
 
-먼저 다중 스레드 응용 프로그램 프로젝트가 필요 합니다. 예를 들면 다음과 같습니다.
+먼저 다중 스레드 응용 프로그램 프로젝트가 필요 합니다. 예제는 다음과 같습니다.
 
 ## <a name="create-a-multithreaded-app-project"></a>다중 스레드 응용 프로그램 프로젝트 만들기
 

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa840bbb088e83ab8435f1cfbd0f2468c05605ae
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d901d09350af063a11e3d156f36a100df85e7718
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844695"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586923"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Gen 1 가비지 수집의 비율이 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "75844695"
   
  0세대의 개체는 빈번하게, 보통 매우 효율적으로 수집됩니다. 1세대의 개체는 덜 빈번하게, 덜 효율적으로 수집됩니다. 마지막으로 2세대의 장기 유지 개체는 훨씬 덜 빈번하게 수집되어야 합니다. 전체 가비지 수집 실행을 나타내는 2세대 수집은 가장 부담이 큰 작업이기도 합니다.  
   
- 1세대 수집이 상대적으로 너무 많이 발생한 경우 이 규칙이 실행됩니다. 너무 많은 단기 유지 개체가 0세대 수집에서 생존하지만 1세대 수집에서 이를 수집할 수 있다면 메모리 관리 비용이 과도해질 수 있습니다. 자세한 내용은 MSDN 웹 사이트의 Rico Mariani의 Performance Tidbits에서 [Mid-life crisis](https://blogs.msdn.com/ricom/archive/2003/12/04/41281.aspx)(중간 수명의 위기) 게시물을 참조하세요.  
+ 1세대 수집이 상대적으로 너무 많이 발생한 경우 이 규칙이 실행됩니다. 너무 많은 단기 유지 개체가 0세대 수집에서 생존하지만 1세대 수집에서 이를 수집할 수 있다면 메모리 관리 비용이 과도해질 수 있습니다. 자세한 내용은 MSDN 웹 사이트의 Rico Mariani의 Performance Tidbits에서 [Mid-life crisis](https://docs.microsoft.com/archive/blogs/ricom/mid-life-crisis)(중간 수명의 위기) 게시물을 참조하세요.  
   
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
  [오류 목록] 창에서 메시지를 두 번 클릭하여 프로파일링 데이터의 [표시 뷰](../profiling/marks-view.md)로 이동합니다. **.NET CLR Memory\\# of Gen 0 Collections** 및 **.NET CLR Memory\\# of Gen 1 Collections** 열을 찾습니다. 가비지 수집이 더 빈번히 발생하는 특정 프로그램 실행 단계가 있는지 확인합니다. 이러한 값을 **% Time in GC** 열에 비교하여 관리되는 메모리 할당의 패턴이 과도한 메모리 관리 오버헤드를 일으키는지 확인합니다.  

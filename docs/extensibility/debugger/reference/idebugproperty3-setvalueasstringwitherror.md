@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
+title: IDebugProperty3:SetValueAsString오류 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348810"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721070"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-이 속성의 값을 설정 하 고 필요한 경우에 오류 메시지를 반환 합니다.
+이 속성의 값을 설정 하 고 필요한 경우 오류 메시지를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,25 +47,25 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>매개 변수
 `pszValue`\
-[in] 설정할 값입니다.
+【인】 설정할 값입니다.
 
 `dwRadix`\
-[in] 기 수 설정 되는 값입니다.
+【인】 설정 중인 값의 방수입니다.
 
 `dwTimeout`\
-[in] 설정할 값에 대 한 대기 시간의 길이 (`INFINITE` 의미 무기한 대기).
+【인】 값이 설정될 때까지 기다리는 시간입니다(영원히`INFINITE` 대기의미).
 
 `errorString`\
-[out] 값을 설정할 때 오류가 발생에 발생 한 경우이 오류가 발생 한 이유를 보유 합니다.
+【아웃】 값을 설정하는 데 오류가 있는 경우 오류의 이유가 있습니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
-들어오는 값 식을 계산할 수 있습니다.
+들어오는 값은 평가할 식일 수 있습니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 노출 하는 개체를 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.
+다음 예제에서는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 노출 하는 **CProperty** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(
@@ -169,5 +169,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetName | Microsoft Docs
+title: 아이디버그프로그램2::겟네임 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetName
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 651c845e37ffb89461dfb8c9fe96e1db0b100d3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 76e66e857da87afeee105267fb35ddebdb692637
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320786"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722805"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 프로그램의 이름을 가져옵니다.
@@ -41,13 +41,13 @@ int GetName( 
 
 ## <a name="parameters"></a>매개 변수
 `pbstrName`\
-[out] 프로그램의 이름을 반환합니다.
+【아웃】 프로그램 이름을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드에서 반환 된 이름은 항상 프로그램을 설명 하는 친숙 하 고 사용자 표시 이름이입니다.
+ 이 메서드에서 반환되는 이름은 항상 프로그램을 설명하는 친숙하고 사용자가 표시할 수 있는 이름입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

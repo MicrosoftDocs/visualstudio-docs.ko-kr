@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189162"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557848"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부
   SharePoint 프로젝트는 하나 이상의 SharePoint 프로젝트 항목에 대 한 컨테이너입니다. 사용자 고유의 SharePoint 프로젝트 항목 형식을 만든 다음 프로젝트 템플릿에 연결 하 여 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 사이트 열을 만들기 위한 프로젝트 항목 형식을 정의 하 고, 사이트 열 프로젝트 항목을 포함 하는 새 프로젝트를 만드는 데 사용할 수 있는 프로젝트 템플릿을 만듭니다.
@@ -40,12 +40,12 @@ ms.locfileid: "73189162"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 이 연습에서는 SDK의 **Vsix 프로젝트** 템플릿을 사용 하 여 프로젝트 항목을 배포할 vsix 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)을 참조 하세요.
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]입니다. 이 연습에서는 SDK의 **Vsix 프로젝트** 템플릿을 사용 하 여 프로젝트 항목을 배포할 vsix 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)을 참조 하세요.
 
   다음 개념에 대 한 정보는 연습을 완료 하는 데 도움이 되지만 반드시 필요한 것은 아닙니다.
 
@@ -103,7 +103,7 @@ ms.locfileid: "73189162"
 
     - *MyApplication. .vb*
 
-    - MyApplication
+    - MyApplication.myapp
 
     - *리소스. 디자이너 .vb*
 
@@ -215,7 +215,7 @@ ms.locfileid: "73189162"
 
      `OutputSubPath` 요소는 프로젝트를 빌드할 때 프로젝트 템플릿이 만들어지는 경로에 추가 폴더를 지정 합니다. 여기에 지정 된 폴더는 고객이 **새 프로젝트** 대화 상자를 열고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 하는 경우에만 프로젝트 템플릿을 사용할 수 있도록 합니다.
 
-5. 파일을 저장한 후 닫습니다.
+5. 파일을 저장하고 닫습니다.
 
 6. **솔루션 탐색기**에서 **SiteColumnProjectTemplate** 프로젝트에 대 한 바로 가기 메뉴를 연 다음 **프로젝트 다시 로드**를 선택 합니다.
 
@@ -252,7 +252,7 @@ ms.locfileid: "73189162"
 
      SharePoint 프로젝트의 **샌드박스가 적용 된 솔루션** 속성이 **True**로 설정 된 경우 Visual Studio는 AssemblyInfo 코드 파일에 <xref:System.Security.AllowPartiallyTrustedCallersAttribute>를 추가 합니다. 그러나 프로젝트 템플릿의 AssemblyInfo 코드 파일은 기본적으로 <xref:System.Security> 네임 스페이스를 가져오지 않습니다. 컴파일 오류를 방지 하려면이 **using** 또는 **Imports** 문을 추가 해야 합니다.
 
-2. 파일을 저장한 후 닫습니다.
+2. 파일을 저장하고 닫습니다.
 
 #### <a name="to-edit-the-elementsxml-file"></a>Elements .xml 파일을 편집 하려면
 
@@ -272,7 +272,7 @@ ms.locfileid: "73189162"
 
      새 XML은 사이트 열의 이름, 해당 기본 형식 및 갤러리의 사이트 열을 나열할 그룹을 정의 하는 `Field` 요소를 추가 합니다. 이 파일의 내용에 대 한 자세한 내용은 [필드 정의 스키마](/previous-versions/office/developer/sharepoint-2010/ms196289(v=office.14))를 참조 하세요.
 
-2. 파일을 저장한 후 닫습니다.
+2. 파일을 저장하고 닫습니다.
 
 #### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>SharePointProjectItem 파일을 편집 하려면
 
@@ -296,7 +296,7 @@ ms.locfileid: "73189162"
 
      *.Spdata* 파일의 내용에 대 한 자세한 내용은 [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)를 참조 하세요.
 
-2. 파일을 저장한 후 닫습니다.
+2. 파일을 저장하고 닫습니다.
 
 #### <a name="to-edit-the-feature1feature-file"></a>Feature1 파일을 편집 하려면
 
@@ -322,7 +322,7 @@ ms.locfileid: "73189162"
 
      *기능* 파일에 대 한 자세한 내용은 [SharePoint 프로젝트 항목에 대 한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)를 참조 하세요.
 
-2. 파일을 저장한 후 닫습니다.
+2. 파일을 저장하고 닫습니다.
 
 #### <a name="to-edit-the-packagepackage-file"></a>패키지를 편집 하려면 패키지 파일
 
@@ -347,7 +347,7 @@ ms.locfileid: "73189162"
 
      *패키지* 파일에 대 한 자세한 내용은 [SharePoint 프로젝트 항목에 대 한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)를 참조 하세요.
 
-2. 파일을 저장한 후 닫습니다.
+2. 파일을 저장하고 닫습니다.
 
 #### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>Sitecolumnprojecttemplate 파일을 편집 하려면
 
@@ -429,13 +429,13 @@ ms.locfileid: "73189162"
 
    - `Name` 요소를 값 **사이트 열**로 설정 합니다. 이 이름은 **새 프로젝트** 대화 상자에 나타납니다.
 
-   - 각 프로젝트 인스턴스에 포함 된 각 filethat 요소를 추가 합니다.
+   - 각 프로젝트 인스턴스에 포함 된 각 filethat 요소를 추가 합니다.`ProjectItem`
 
-   - "<http://schemas.microsoft.com/developer/vstemplate/2005>" 네임 스페이스를 사용 합니다. 이 솔루션의 다른 프로젝트 파일은 "<http://schemas.microsoft.com/developer/msbuild/2003>" 네임 스페이스를 사용 합니다. 따라서 XML 스키마 경고 메시지가 생성 되지만이 연습에서는 무시 해도 됩니다.
+   - `http://schemas.microsoft.com/developer/vstemplate/2005`네임 스페이스를 사용 합니다. 이 솔루션의 다른 프로젝트 파일은 `http://schemas.microsoft.com/developer/msbuild/2003` 네임 스페이스를 사용 합니다. 따라서 XML 스키마 경고 메시지가 생성 되지만이 연습에서는 무시 해도 됩니다.
 
      *.Vstemplate* 파일의 내용에 대 한 자세한 내용은 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조 하세요.
 
-2. 파일을 저장한 후 닫습니다.
+2. 파일을 저장하고 닫습니다.
 
 #### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>Projecttemplate .csproj 또는 projecttemplate .vbproj 파일을 편집 하려면
 
@@ -630,7 +630,7 @@ ms.locfileid: "73189162"
 
     - *.Xml* 및 *SharePointProjectItem*와 같은 프로젝트의 각 기본 파일에 대 한 요소를 추가 합니다.
 
-2. 파일을 저장한 후 닫습니다.
+2. 파일을 저장하고 닫습니다.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-template"></a>VSIX 패키지를 만들어 프로젝트 템플릿 배포
  확장을 배포 하려면 **SiteColumnProjectItem** 솔루션의 vsix 프로젝트를 사용 하 여 vsix 패키지를 만듭니다. 먼저 VSIX 프로젝트에 포함 된 source.extension.vsixmanifest 파일을 수정 하 여 VSIX 패키지를 구성 합니다. 그런 다음 솔루션을 빌드하여 VSIX 패키지를 만듭니다.
@@ -752,7 +752,7 @@ ms.locfileid: "73189162"
 ## <a name="next-steps"></a>다음 단계
  이 연습을 완료 한 후에 마법사를 프로젝트 템플릿에 추가할 수 있습니다. 사용자가 사이트 열 프로젝트를 만들면 마법사에서 디버깅에 사용할 사이트 URL과 새 솔루션이 샌드 박싱 되었는지 여부를 사용자에 게 묻는 메시지를 표시 하 고 마법사는이 정보를 사용 하 여 새 프로젝트를 구성 합니다. 또한이 마법사는 열에 대 한 정보 (예: 사이트 열 갤러리의 열을 나열 하는 기본 유형 및 그룹)를 수집 하 고이 정보를 새 프로젝트의 *Elements* 파일에 추가 합니다. 자세한 내용은 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)

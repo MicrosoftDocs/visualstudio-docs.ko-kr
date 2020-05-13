@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetNumberOfElements | Microsoft Docs
+title: 이데버그어레이필드::겟넘버오브엘리먼트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e8576c7f7365f8f87f8b31a90e414b75000026d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30318e1f17f93d1c9fc68bf5a4a9a0d4ae4cf353
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321734"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736321"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 배열의 요소 수를 가져옵니다.
@@ -41,13 +41,13 @@ int GetNumberOfElements(
 
 ## <a name="parameters"></a>매개 변수
 `pdwNumElements`\
-[out] 배열의 요소 수를 반환합니다.
+【아웃】 배열의 요소 수를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 반환 되는 값은 차원 수에 관계 없이 배열에 있는 요소의 총 수입니다.
+ 반환되는 값은 차원 수에 관계없이 배열의 총 요소 수입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

@@ -19,10 +19,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74955038"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
@@ -110,9 +110,9 @@ Visual Studio의 확장 목록을 보려면 **도구** > **확장 및 업데이�
 
 * ![로밍 아이콘](media/vs2017ide-roamedicon.png) **_로밍_** : 이 로밍 목록에 포함되어 있지만, 머신에 설치되지 않은 확장입니다.
   **다운로드** 단추를 사용하여 이러한 확장을 설치할 수 있습니다.
-* ![로밍 및 설치 아이콘](media/vs2017ide-roamedinstalledicon.png) **_로밍 및 설치_** : 로밍 목록에 포함되어 있고 개발 환경에 설치된 모든 확장입니다.
+* ![로밍 및 설치 아이콘](media/vs2017ide-roamedinstalledicon.png) **_로밍 및 설치 아이콘_** : 로밍 목록에 포함되어 있고 개발 환경에 설치된 모든 확장입니다.
   로밍하지 않도록 결정하는 경우 **로밍 중지** 단추를 사용하여 이러한 확장을 제거할 수 있습니다.
-* ![설치 아이콘](media/vs2017ide-installedicon.png) **_설치됨_** : 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
+* ![설치 아이콘](media/vs2017ide-installedicon.png) **_설치_** : 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
   **로밍 시작** 단추를 사용하여 로밍 목록에 확장을 추가할 수 있습니다.
 
 로그인되어 있는 동안 다운로드한 모든 확장은 목록에 **로밍 및 설치**로 추가됩니다. 그런 다음, 확장이 로밍 목록에 포함되고, 모든 컴퓨터에서 액세스할 수 있습니다.
@@ -383,7 +383,7 @@ Visual Studio를 개선하는 방법을 제안하거나 제품 지원 옵션에 
 
 발생한 문제의 전반적인 영향을 메시지만으로 전달할 수 없는 경우도 있습니다. 시스템 중단, 충돌 또는 기타 성능 문제가 발생하는 경우 **문제 보고** 도구를 사용하여 쉽게 재현 단계 및 지원 파일(예: 스크린샷, 추적 및 힙 덤프 파일)을 공유할 수 있습니다. 이 도구를 사용하는 방법에 대한 자세한 내용은 [문제를 보고하는 방법](how-to-report-a-problem-with-visual-studio.md) 페이지를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 2017 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes)
 * [Visual Studio 2017 SDK의 새로운 기능](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)

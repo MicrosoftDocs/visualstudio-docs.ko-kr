@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779235"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>함수 뷰 - .NET 메모리 계측 데이터
@@ -97,7 +97,7 @@ ms.locfileid: "74779235"
 |**최대 애플리케이션 전용 시간**|이 함수에 대한 호출의 최대 애플리케이션 전용 시간입니다.|
 |**최소 애플리케이션 전용 시간**|이 함수에 대한 호출의 최소 애플리케이션 전용 시간입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [함수 뷰 - 샘플링](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [함수 뷰](../profiling/functions-view-instrumentation-data.md)

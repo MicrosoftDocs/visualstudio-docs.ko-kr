@@ -7,10 +7,10 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714520"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Mac용 Visual Studio는 Team Foundation 버전 제어를 지원하나요?
@@ -32,11 +32,11 @@ Mac용 Visual Studio는 TFVC를 공식적으로 지원하지 않지만 이 가�
 * 옵션 1. [ 그래픽 UI에 Visual Studio Code 및 Azure Repos 확장 사용](#use-visual-studio-code-and-the-azure-repos-extension)
 * 옵션 2. [TEE-CLC(Team Explorer Everywhere 명령줄 클라이언트)를 사용하여 리포지토리에 연결](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### 옵션 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Visual Studio Code 및 Azure Repos 확장 사용
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>옵션 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Visual Studio Code 및 Azure Repos 확장 사용
 
 그래픽 인터페이스를 사용하여 버전 제어에서 파일을 관리하려는 경우 Visual Studio Code용 Azure Repos 확장이 Microsoft에서 지원되는 솔루션을 제공합니다. 시작하려면 [Visual Studio Code](https://code.visualstudio.com)를 다운로드한 다음, [Azure Repos 확장을 구성](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)하는 방법을 알아봅니다.
 
-### 옵션 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Team Explorer Everywhere 명령줄 클라이언트를 사용하여 연결
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>옵션 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Team Explorer Everywhere 명령줄 클라이언트를 사용하여 연결
 
 > [!IMPORTANT]
 > Team Explorer Everywhere 추가 정보에 따라 이 프로젝트는 [더 이상 유지 관리](https://github.com/microsoft/team-explorer-everywhere)되지 않습니다.

@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585273"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>형식을 일치하는 파일 리팩터링으로 이동
@@ -26,7 +26,7 @@ ms.locfileid: "75585273"
 
 - Visual Basic
 
-**내용:** 선택한 형식을 같은 이름을 가진 별도의 파일로 이동할 수 있습니다.
+**대상:** 선택한 형식을 같은 이름을 가진 별도의 파일로 이동할 수 있습니다.
 
 **시기:** 동일한 파일에 구분하려는 여러 클래스, 구조체, 인터페이스 등이 있습니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "75585273"
 
 ## <a name="how-to"></a>방법
 
-1. 커서를 정의된 형식의 이름 안에 놓습니다. 예:
+1. 커서를 정의된 형식의 이름 안에 놓습니다. 다음은 그 예입니다.
 
    ```csharp
    class Person
@@ -61,6 +61,6 @@ ms.locfileid: "75585273"
 
       ![인라인 결과 - Visual Basic](media/movetype-result-vb.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)

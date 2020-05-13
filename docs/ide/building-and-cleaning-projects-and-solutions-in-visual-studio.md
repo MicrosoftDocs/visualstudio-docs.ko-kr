@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114564"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Visual Studio에서 프로젝트와 솔루션 빌드 및 정리
@@ -35,7 +35,7 @@ ms.locfileid: "76114564"
 이 항목의 절차에 따라 솔루션에 포함된 프로젝트 또는 프로젝트 항목의 전체 또는 일부를 빌드, 다시 빌드 또는 정리할 수 있습니다. 단계별 자습서는 [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 프로젝트와 솔루션 빌드 및 정리](/visualstudio/mac/building-and-cleaning-projects-and-solutions)를 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 프로젝트와 솔루션 빌드 및 정리](/visualstudio/mac/building-and-cleaning-projects-and-solutions)를 참조하세요.
 
 > [!NOTE]
 > 사용 중인 Visual Studio 버전의 UI는 활성 설정에 따라 이 항목의 설명과 다를 수 있습니다. 설정을 **일반** 또는 **Visual C++** 설정 등으로 변경하려면 **도구** > **설정 가져오기 및 내보내기**를 선택한 다음, **모두 다시 설정**을 선택합니다.
@@ -59,15 +59,15 @@ ms.locfileid: "76114564"
 
 1. **솔루션 탐색기**에서 프로젝트를 선택하거나 엽니다.
 
-2. 메뉴 모음에서 **빌드**를 선택한 다음 *ProjectName* **빌드** 또는 *ProjectName* **다시 빌드** 을 선택합니다.
+2. 메뉴 모음에서 **빌드**를 선택한 다음 **ProjectName** *빌드* 또는 **ProjectName** *다시 빌드* 을 선택합니다.
 
-    - 가장 최근 빌드 이후 변경된 프로젝트 구성 요소만 빌드하려면 *ProjectName* **빌드**를 선택합니다.
+    - 가장 최근 빌드 이후 변경된 프로젝트 구성 요소만 빌드하려면 **ProjectName** *빌드*를 선택합니다.
 
-    - 프로젝트를 "정리"한 후 프로젝트 파일과 모든 프로젝트 구성 요소를 빌드하려면 *ProjectName* **다시 빌드**를 선택합니다.
+    - 프로젝트를 "정리"한 후 프로젝트 파일과 모든 프로젝트 구성 요소를 빌드하려면 **ProjectName** *다시 빌드*를 선택합니다.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>시작 프로젝트 및 해당 종속성만 빌드하려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
 2. **옵션** 대화 상자에서 **프로젝트 및 솔루션** 노드를 확장하고 **빌드 및 실행** 페이지를 선택합니다.
 
@@ -87,13 +87,13 @@ ms.locfileid: "76114564"
 
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 선택한 다음, 메뉴 모음에서 **빌드** > **프로젝트만 해당**, 다음 명령 중 하나를 차례로 선택합니다.
 
-- *ProjectName* **만 빌드**
+- **ProjectName** *만 빌드*
 
-- *ProjectName* **만 다시 빌드**
+- **ProjectName** *만 다시 빌드*
 
-- *ProjectName* **만 정리**
+- **ProjectName** *만 정리*
 
-- *ProjectName* **만 링크**
+- **ProjectName** *만 링크*
 
 이러한 명령은 프로젝트 종속성 또는 솔루션 파일을 빌드, 다시 빌드, 정리 또는 링크하지 않고 선택한 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트에만 적용됩니다. 사용 중인 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 버전에 따라 **프로젝트만** 하위 메뉴에 추가 명령이 포함될 수 있습니다.
 
@@ -111,7 +111,7 @@ ms.locfileid: "76114564"
 
 - **Ctrl**+**중단**을 누릅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)

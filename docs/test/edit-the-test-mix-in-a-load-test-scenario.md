@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595932"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>테스트 조합을 편집하여 부하 테스트 시나리오에 포함할 웹 성능 테스트, 단위 테스트 및 코딩된 UI 테스트 지정
@@ -76,7 +76,7 @@ ms.locfileid: "75595932"
 
 슬라이더를 움직이면 사용 가능한 모든 항목의 백분율 값이 변경됩니다. 항목이 셋 이상인 경우 더하거나 빼는 양이 다른 항목에 고르게 분산됩니다. 이 동작을 재정의할 수도 있습니다. 특정 값 항목의 잠금 열에 있는 확인란을 선택하면 해당 항목에 지정된 백분율 값이 잠깁니다. 이렇게 하면 슬라이더를 움직일 때 더하거나 빼는 양이 잠기지 않은 항목에만 적용됩니다.
 
-**분포** 단추를 사용하면 모든 항목에 백분율이 동일하게 할당됩니다. 예를 들어 항목이 세 개인 경우 **분포**를 선택하면 백분율 값이 34, 33, 33으로 설정됩니다.
+**분포** 단추를 사용하면 모든 항목에 백분율이 동일하게 할당됩니다. 예를 들어 항목이 세 개인 경우, **균등 맞춤**을 선택하면 백분율 값이 34, 33 및 33으로 설정됩니다.
 
 > [!WARNING]
 > **균등 맞춤** 단추는 잠긴 모든 항목을 재정의합니다.
@@ -88,6 +88,6 @@ ms.locfileid: "75595932"
 
 백분율 값을 직접 입력할 때는 모든 항목을 더한 값이 100%인지 확인해야 합니다. 목록을 저장할 때 합계가 100%가 아니면 현재 백분율을 그대로 사용할지 또는 이전 단계로 돌아가서 백분율 값을 조정할지 선택하라는 메시지가 표시됩니다. 현재 백분율을 그대로 사용하도록 선택하면 각 값이 100%를 기준으로 조정됩니다.  예를 들어 두 개의 항목이 있고 두 항목의 값을 80%와 40%로 직접 설정한 경우 첫 번째 항목은 80을 120으로 나눈 값인 66.67%로, 두 번째 항목은 40을 120으로 나눈 값인 33.33%로 설정됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)

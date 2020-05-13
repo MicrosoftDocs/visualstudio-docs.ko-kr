@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9294e9bf9ab35d75e0b06c620699c6e39babe1a3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779144"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET 서비스에 프로파일러를 연결하여 애플리케이션 통계 수집
@@ -129,6 +129,6 @@ ms.locfileid: "74779144"
 
 4. 컴퓨터를 다시 시작합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)
 - [샘플링 방법 데이터 뷰](../profiling/profiler-sampling-method-data-views.md)

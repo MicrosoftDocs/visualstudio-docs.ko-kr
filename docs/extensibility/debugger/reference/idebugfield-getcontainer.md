@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetContainer | Microsoft Docs
+title: 아이디버그필드::겟컨테이너 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetContainer method
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e335a9461917077439fc7dfe49e8c061891a9cd9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352675"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728913"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 이 메서드는 필드의 컨테이너를 가져옵니다.
@@ -41,14 +41,14 @@ int GetContainer(
 
 ## <a name="parameters"></a>매개 변수
 `ppContainerField`\
-[out] 에 표시 된 대로 컨테이너를 반환 합니다 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스입니다.
+【아웃】 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스로 표시되는 대로 컨테이너를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 필드에 반환된 된 컨테이너에 없으면 `ppContainerField` null 값이 됩니다.
+ 이 필드에 컨테이너가 없는 경우 `ppContainerField` 반환된 값은 null 값입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

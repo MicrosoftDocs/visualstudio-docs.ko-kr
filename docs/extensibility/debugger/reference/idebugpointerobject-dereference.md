@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Microsoft Docs
+title: IDebugPointerObject::D참조 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 381c6f392cccb398497204cc5772c5f9a00fd5b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331652"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725570"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 가리키는 개체를 가져옵니다.
@@ -43,16 +43,16 @@ int Dereference(
 
 ## <a name="parameters"></a>매개 변수
 `dwIndex`\
-[in] 개체의 시작 부분에서 간단한 바이트 오프셋을 지정 합니다.
+【인】 가리키는 개체의 시작 부분에서 간단한 바이트 오프셋입니다.
 
 `ppObject`\
-[out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 있으면를 가리키는 plus 오프셋을 나타내는 개체를 개체.
+【아웃】 가리키는 개체를 나타내는 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체와 오프셋(있는 경우)을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다. 이 개체가 다른 개체를 가리키지 않을 경우 E_FAIL을 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다. 이 개체가 다른 개체를 가리키지 않는 경우 E_FAIL 반환합니다.
 
 ## <a name="remarks"></a>설명
- 기본 형식 또는 클래스 또는 구조체와 같은 보다 복잡 한 형식을 가리키는 개체가 수 있습니다.
+ 가리키는 개체는 원시적이거나 클래스 나 구조체와 같은 보다 복잡한 형식일 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

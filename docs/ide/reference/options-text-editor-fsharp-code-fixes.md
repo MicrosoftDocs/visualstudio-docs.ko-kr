@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5c736be59c257d98085831971d6b7b9dc2a0ef3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666275"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>옵션: 텍스트 편집기 > F# > 코드 수정
@@ -38,7 +38,7 @@ ms.locfileid: "72666275"
 
   이 확인란을 선택하면 도구가 코드에서 사용되지 않는 값을 인식합니다. 그런 다음, 사용되지 않는 값을 가리키면 값을 사용할 수 있는 추천 방법이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
 - [CodeLens에서 코드 변경 내용 및 기타 기록 찾기](../../ide/find-code-changes-and-other-history-with-codelens.md)

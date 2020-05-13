@@ -1,25 +1,25 @@
 ---
-title: CommandName 요소 | Microsoft Docs
+title: 명령 이름 요소 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b792e7bbe1efaa1158cc517cd96494049e2b9e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337263"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739754"
 ---
-# <a name="commandname-element"></a>CommandName 요소
-`CommandName` 키보드 범주에 표시 되는 텍스트를 지정 하는 요소는 **옵션** 대화 상자에서 및를 **명령** 목록에 **사용자 지정** 대화 상자입니다.
+# <a name="commandname-element"></a>명령 이름 요소
+이 `CommandName` 요소는 **옵션** 대화 상자의 키보드 범주에 나타나는 텍스트와 **사용자 지정** 대화 상자의 **명령** 목록에 있는 텍스트를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,9 +38,9 @@ ms.locfileid: "66337263"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[Strings 요소](../extensibility/strings-element.md)|텍스트 요소와 같은 그룹화 `ButtonText` 고 `CommandName`입니다.|
+|[문자열 요소](../extensibility/strings-element.md)|와 `ButtonText` `CommandName`같은 텍스트 요소를 그룹화합니다.|
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참조
+- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

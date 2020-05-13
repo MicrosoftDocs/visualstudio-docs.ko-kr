@@ -1,28 +1,28 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
+title: 아이디버그문서체크섬2::겟체크섬앤알고리즘 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20cf33743d222e160458afcdcf186022a7405fa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350090"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731934"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-사용 하는 바이트의 최대 수를 지정 된 문서 체크섬과 알고리즘 식별자를 검색 합니다.
+사용할 최대 바이트 수가 주어지면 문서 체크섬 및 알고리즘 식별자를 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>매개 변수
 `pRetVal`\
-[out] 체크섬 알고리즘에 대 한 고유 식별자입니다.
+【아웃】 체크섬 알고리즘의 고유 식별자입니다.
 
 `cMaxBytes`\
-[in] 체크섬에 사용 되는 바이트의 최대 수입니다.
+【인】 체크섬에 사용할 최대 바이트 수입니다.
 
 `pChecksum`\
-[out] 체크섬 값입니다.
+【아웃】 체크섬의 값입니다.
 
 `pcNumBytes`\
-[out] 실제 체크섬에 사용 된 바이트 수입니다.
+【아웃】 체크섬에 사용된 실제 바이트 수입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 사용 하 여 체크섬 및 문서에 대 한 알고리즘을 가져옵니다.
+다음 예제에서는 이 메서드를 사용하여 문서에 대한 체크섬 및 알고리즘을 가져옵니다.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)
@@ -126,5 +126,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

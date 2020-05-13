@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605991"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>옵션 대화 상자: 텍스트 편집기 \> JavaScript \> 서식
@@ -69,6 +69,6 @@ ms.locfileid: "68605991"
 |**익명 함수의 함수 키워드 뒤에 공백 삽입**|이 옵션을 선택하면 코드 편집기는 익명 함수에 대한 `function` 키워드 뒤에 공백을 추가합니다.|
 |**여는 괄호 뒤와 비어 있지 않은 닫는 괄호 앞에 공백 삽입**|이 옵션을 선택하면 코드 편집기는 비어 있지 않는 문자가 있는 경우 여는 괄호 뒤와 닫는 괄호 앞에 공백을 추가합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565411"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
@@ -96,7 +96,7 @@ ms.locfileid: "75565411"
 
 ## <a name="add-the-data-source"></a>데이터 소스를 추가합니다.
 
-1. 데이터 소스를 추가합니다.
+1. 데이터 원본을 추가합니다.
 
      ![웹 성능 테스트에 데이터 소스 추가](../test/media/web_test_databinding_sql_adddatasource.png)
 
@@ -128,7 +128,7 @@ ms.locfileid: "75565411"
 
      ![RadioButtonList1 값에 ColorName 필드 바인딩](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. **솔루션 탐색기**에서 *Local.testsettings* 파일을 열고, **데이터 소스 행마다 한 번씩 실행** 옵션을 선택합니다.
+2. *솔루션 탐색기*에서 **Local.testsettings** 파일을 열고, **데이터 소스 행마다 한 번씩 실행** 옵션을 선택합니다.
 
      ![테스트 설정 파일 편집](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -154,9 +154,9 @@ ms.locfileid: "75565411"
 
      ![데이터 바인딩을 사용하여 테스트 통과](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
-## <a name="q--a"></a>Q&A
+## <a name="q--a"></a>질문과 대답
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: 데이터 원본으로 사용할 수 있는 데이터베이스는 무엇입니까?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: 데이터 소스로 사용할 수 있는 데이터베이스는 무엇입니까?
 
 **A:** 다음을 사용할 수 있습니다.
 
@@ -247,7 +247,7 @@ ms.locfileid: "75565411"
 
      ![테스트에 추가된 데이터 소스](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q: XML 파일을 데이터 원본으로 사용하려면 어떻게 할까요?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q: XML 파일을 데이터 소스로 사용하려면 어떻게 할까요?
 
 **A:** 예.
 
@@ -279,7 +279,7 @@ ms.locfileid: "75565411"
 
      ![이름을 입력하고 XML 파일을 선택](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q: SOAP를 사용한 웹 서비스 요청에 데이터 바인딩을 추가할 수 있습니까?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q: SOAP을 사용한 웹 서비스 요청에 데이터 바인딩을 추가할 수 있습니까?
 
 **A:** 예, SOAP XML을 수동으로 변경해야 합니다.
 

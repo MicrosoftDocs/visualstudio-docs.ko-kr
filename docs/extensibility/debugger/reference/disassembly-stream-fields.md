@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
+title: DISASSEMBLY_STREAM_FIELDS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318253"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737359"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-디스어셈블리 필드에 대 한 검색 정보를 지정 합니다.
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
+분해 필드에 대해 검색할 정보를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,60 +66,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>필드
 `DSF_ADDRESS`\
-초기화/사용 된 `bstrAddress` 필드입니다.
+`bstrAddress` 필드를 초기화/사용합니다.
 
 `DSF_ADDRESSOFFSET`\
-초기화/사용 된 `bstrAddressOffset` 필드입니다.
+`bstrAddressOffset` 필드를 초기화/사용합니다.
 
 `DSF_CODEBYTES`\
-초기화/사용 된 `bstrCodeBytes` 필드입니다.
+`bstrCodeBytes` 필드를 초기화/사용합니다.
 
 `DSF_OPCODE`\
-초기화/사용 된 `bstrOpCode` 필드입니다.
+`bstrOpCode` 필드를 초기화/사용합니다.
 
 `DSF_OPERANDS`\
-초기화/사용 된 `bstrOperands` 필드입니다.
+`bstrOperands` 필드를 초기화/사용합니다.
 
 `DSF_SYMBOL`\
-초기화/사용 된 `bstrSymbol` 필드입니다.
+`bstrSymbol` 필드를 초기화/사용합니다.
 
 `DSF_CODELOCATIONID`\
-초기화/사용 된 `uCodeLocationId` 필드입니다.
+`uCodeLocationId` 필드를 초기화/사용합니다.
 
 `DSF_POSITION`\
-초기화/사용 된 `posBeg` 고 `posEnd` 필드입니다.
+`posBeg` 및 `posEnd` 필드를 초기화/사용합니다.
 
 `DSF_DOCUMENTURL`\
-초기화/사용 된 `bstrDocumentUrl` 필드입니다.
+`bstrDocumentUrl` 필드를 초기화/사용합니다.
 
 `DSF_BYTEOFFSET`\
-초기화/사용 된 `dwByteOffset` 필드입니다.
+`dwByteOffset` 필드를 초기화/사용합니다.
 
 `DSF_FLAGS`\
-초기화/사용 된 `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) 필드입니다.
+(DISASSEMBLY_FLAGS) 필드를 초기화/사용합니다.[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) `dwFlags`
 
 `DSF_OPERANDS_SYMBOLS`\
-기호 이름에 포함 된 `bstrOperands` 필드입니다.
+필드에 기호 이름을 `bstrOperands` 포함합니다.
 
 `DSF_ALL`\
-디스어셈블리 스트림에 대 한 모든 필드를 지정합니다.
+디스어셈블리 스트림에 대한 모든 필드를 지정합니다.
 
 ## <a name="remarks"></a>설명
-매개 변수로 전달 합니다 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 의 필드를 표시 하는 방법 합니다 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조는 초기화할.
+[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조의 어떤 필드를 초기화할지 나타내기 [메서드에](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 매개 변수로 전달됩니다.
 
-에 사용 되는 합니다 `dwFields` 의 멤버는 `DisassemblyData` 구조 반환 되 면 유효 하 고 사용 되는 필드는 구조체.
+`DisassemblyData` 구조의 멤버에 `dwFields` 사용 되는 필드 와 구조가 반환 될 때 유효한 나타내는 데 사용 됩니다.
 
-이러한 값을 비트 결합할 수 있습니다 `OR`합니다.
+이러한 값은 약간 과 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

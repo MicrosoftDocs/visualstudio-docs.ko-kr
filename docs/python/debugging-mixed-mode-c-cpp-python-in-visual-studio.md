@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75679002"
 ---
 # <a name="debug-python-and-c-together"></a>Python과 C++ 함께 디버그

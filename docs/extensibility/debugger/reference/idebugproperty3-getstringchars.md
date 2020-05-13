@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Microsoft Docs
+title: 아이디버그프로퍼티3:겟스트링차 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348824"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721088"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-이 속성을 사용 하 여 연결 된 문자열을 검색 하 고 사용자가 제공한 버퍼에 저장 합니다.
+이 속성과 연결된 문자열을 검색하고 사용자 제공 버퍼에 저장합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>매개 변수
 `buflen`\
-[in] 최대 문자 수는 사용자가 제공한 버퍼를 포함할 수 있습니다.
+【인】 사용자가 제공한 버퍼가 보유할 수 있는 최대 문자 수입니다.
 
 `rgString`\
-[out] 문자열을 반환합니다.
+【아웃】 문자열을 반환합니다.
 
- [C++ 만], `rgString` 문자열의 유니코드 문자를 받는 버퍼에 대 한 포인터입니다. 이 버퍼 이상 이어야 합니다 `buflen` 크기에서 (바이트 아님) 문자입니다.
+ [C++ `rgString` 전용]은 문자열의 유니코드 문자를 수신하는 버퍼에 대한 포인터입니다. 이 버퍼의 크기는 바이트가 아닌 최소 `buflen` 문자여야 합니다.
 
 `pceltFetched`\
-[out] 여기서 실제로 버퍼에 저장 하는 문자 수가 반환 됩니다. (일 수 있습니다 `NULL` 에서 C++.)
+【아웃】 버퍼에 실제로 저장된 문자 수가 반환되는 위치입니다. (C `NULL` ++에 있을 수 있습니다.)
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
-C++, 버퍼 이상 인지 확인 하려면 주의 해야 `buflen` 자의 유니코드 문자입니다. 2 바이트 유니코드 문자는 참고 합니다.
+C++에서는 버퍼가 유니코드 문자 가 적어도 `buflen` 긴지 확인하려면 주의해야 합니다. 유니코드 문자는 2바이트 길이입니다.
 
 > [!NOTE]
-> C++에서 반환된 된 문자열에 null 종결 문자 포함 되지 않습니다. 주어진 경우 `pceltFetched` 문자열의 문자 수를 지정 합니다.
+> C++에서 반환된 문자열에는 종료 null 문자가 포함되지 않습니다. 주어진 `pceltFetched` 경우 문자열의 문자 수를 지정합니다.
 
 ## <a name="example"></a>예제
 
@@ -87,7 +87,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetSize | Microsoft Docs
+title: 아이디버그디스어셈블리스트림2::겟사이즈 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetSize
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb13ac24aaa542d3111ff3480ac340615226a0a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75fa12b1e9e70601626667dd3707f1e230f5de0c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310411"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732109"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 이 디스어셈블리 스트림의 지침에서 크기를 가져옵니다.
@@ -41,15 +41,15 @@ int GetSize( 
 
 ## <a name="parameters"></a>매개 변수
 `pnSize`\
-[out] 지침에는 크기를 반환합니다.
+【아웃】 지침에 따라 크기를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드에서 반환 된 값의 배열에 할당할 수 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 에 전달 되는 구조를 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 메서드.
+ 이 메서드에서 반환 된 값을 사용 하 고 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조의 배열을 할당 하는 데 사용할 수 있습니다.다음 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 메서드에 전달 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

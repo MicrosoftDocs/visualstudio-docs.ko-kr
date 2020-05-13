@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f13df00059523ca87e720a999c596e203b20e49
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593683"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>어셈블리 및 매니페스트 서명 관리
@@ -69,9 +69,9 @@ C++ 프로젝트의 어셈블리 서명에 대한 자세한 내용은 [강력한
 
 공개 키에만 액세스할 수 있는 경우 서명 연기를 사용하여 키 할당을 지연시킬 수 있습니다. **서명만 연기** 확인란을 선택하여 서명 연기를 사용하도록 설정합니다. 지연 서명된 프로젝트가 실행되지 않고 이 프로젝트를 디버그할 수 없습니다. 그러나 [Sn.exe 강력한 이름 도구](/dotnet/framework/tools/sn-exe-strong-name-tool)를 `-Vr` 옵션과 함께 사용하여 개발 중에 확인을 건너뛸 수 있습니다.
 
-매니페스트를 서명하는 방법에 대한 자세한 내용은 [방법: 애플리케이션 및 배포 매니페스트 서명](../ide/how-to-sign-application-and-deployment-manifests.md)을 참조하세요.
+매니페스트 서명에 대한 자세한 내용은 [방법: 애플리케이션 및 배포 매니페스트 서명](../ide/how-to-sign-application-and-deployment-manifests.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [강력한 이름의 어셈블리](/dotnet/framework/app-domains/strong-named-assemblies)
 - [강력한 이름의 어셈블리(C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605923"
 ---
 # <a name="options-text-editor-javascript-project"></a>옵션, 텍스트 편집기, JavaScript, 프로젝트
@@ -28,7 +28,7 @@ ms.locfileid: "68605923"
 
 이 옵션은 편집기에서 프로젝트를 분석하고, 진단을 보고하고, 개선 사항을 제안하는 방법을 결정합니다. 옵션을 선택하거나 선택 취소하여 편집기에서 해당 상황을 처리하는 방법을 지정합니다.
 
-### <a name="uielement-list"></a>UI 요소 목록
+### <a name="uielement-list"></a>UIElement 목록
 
 - **편집기에서 열린 파일이 있는 프로젝트만 분석**
 - **편집기에 열려 있는 파일에 대한 진단만 보고**
@@ -42,7 +42,7 @@ ms.locfileid: "68605923"
 
 이 옵션은 프로젝트의 일부가 아닌 TypeScript 파일이 자동으로 컴파일되는지 여부를 결정합니다. 확인란을 선택한 후 사용할 코드 생성 유형을 선택합니다.
 
-### <a name="uielement-list"></a>UI 요소 목록
+### <a name="uielement-list"></a>UIElement 목록
 
 - **프로젝트의 일부가 아닌 모듈에 대해 AMD 코드 생성 사용**
 - **프로젝트의 일부가 아닌 모듈에 대해 CommonJS 코드 생성 사용**
@@ -58,9 +58,9 @@ ms.locfileid: "68605923"
 
 이 옵션은 편집기에서 프로젝트의 일부가 아닌 TypeScript 파일이 처리하는 방법을 결정합니다.
 
-### <a name="uielement-list"></a>UI 요소 목록
+### <a name="uielement-list"></a>UIElement 목록
 
-|옵션|설명|
+|옵션|Description|
 |------------|-----------------|
 |**React Framework**|이 옵션을 선택하면 코드 편집기에서 *.js* 파일 확장명을 내보냅니다.|
 |**Preserve**|이 옵션을 선택하면 코드 편집기에서 JSX를 출력의 일부로 유지하고 *.jsx* 파일 확장명을 내보냅니다.|

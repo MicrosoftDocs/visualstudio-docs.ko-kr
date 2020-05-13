@@ -123,15 +123,15 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: bd9107bed68b9b5b6f88a239b3b155440b0e654c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852390"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271622"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "75852390"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.:  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ ms.locfileid: "75852390"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.:  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ ms.locfileid: "75852390"
   
 - `_Struct_size_bytes_(size)`  
   
-     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.:  
+     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
@@ -492,7 +492,7 @@ ms.locfileid: "75852390"
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
-## <a name="related-resources"></a>관련 참고 자료  
+## <a name="related-resources"></a>관련 리소스  
  [코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>참고 항목  

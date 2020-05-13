@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180273"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744936"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 애플리케이션 만들기
 
@@ -29,7 +29,7 @@ Visual Studio에서 Vue.js 애플리케이션을 개발할 때 다음과 같은 
 * *.vue* 파일에서 `lang` 특성 인식
 * Vue.js 프로젝트 및 파일 템플릿
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * **Node.js 개발** 워크로드와 Visual Studio 2017 버전 15.8 이상 버전이 설치되어 있어야 합니다.
 
@@ -51,7 +51,7 @@ Visual Studio에서 Vue.js 애플리케이션을 개발할 때 다음과 같은 
 
     아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임에서 검색되지 않을 경우 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다. (프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.)
 
-## <a name="create-a-vuejs-project-using-a-template"></a>템플릿을 사용하여 Vue.js 프로젝트 만들기
+## <a name="create-a-vuejs-project-using-nodejs"></a>Node.js를 사용하여 Vue.js 프로젝트 만들기
 
 새 Vue.js 템플릿을 사용하여 새 프로젝트를 만들 수 있습니다. 템플릿 사용은 시작을 위한 가장 쉬운 방법입니다. 자세한 단계는 [Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기](../javascript/quickstart-vuejs-with-nodejs.md)를 참조하세요.
 
@@ -74,7 +74,7 @@ Vue.js는 빠르게 프로젝트를 스캐폴딩하기 위한 공식 CLI를 제�
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl+Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력한 후 **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 표시되는 대화 상자에서 **클라이언트 앱**의 이름을 선택한 다음, **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장한 후 **웹**을 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택하고 **클라이언트 앱**의 이름을 입력한 다음, **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장한 후 **웹**을 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택하고 **클라이언트 앱**의 이름을 입력한 다음, **확인**을 선택합니다.
     ::: moniker-end
 
     **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 먼저 **ASP.NET 및 웹 개발** 워크로드 및 .**NET Core** 개발 워크로드를 설치해야 합니다. 워크로드를 설치하려면 **새 프로젝트**(**파일** > **새로 만들기** > **프로젝트**를 선택) 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 필요한 워크로드를 선택합니다.
@@ -196,7 +196,7 @@ cd ../
 
 * 프로젝트 속성에서 빌드 전 이벤트로서의 `npm run build` 명령 실행은 vue-cli 3.0을 사용하는 경우 작동하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Vue 시작 가이드입니다](https://vuejs.org/v2/guide).
 - [Vue CLI 프로젝트입니다](https://github.com/vuejs/vue-cli).

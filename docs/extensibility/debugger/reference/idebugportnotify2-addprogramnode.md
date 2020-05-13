@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode | Microsoft Docs
+title: IDebugPortNotify2::애드프로그램노드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::AddProgramNode
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0afd0b2ae50555e29a75159edb8f52635730a56
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319474"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724979"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-실행 되는 포트를 사용 하 여 디버깅할 수 있는 프로그램을 등록 합니다.
+실행 중인 포트로 디버깅할 수 있는 프로그램을 등록합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,15 +41,15 @@ int AddProgramNode( 
 
 ## <a name="parameters"></a>매개 변수
 `pProgramNode`\
-[in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 등록 프로그램을 나타내는 개체입니다.
+【인】 등록할 프로그램을 나타내는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 프로그램 노드를 등록 취소할 수 있습니다 포트에서 호출 하 여 합니다 [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 메서드.
+ 프로그램 노드는 [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 메서드를 호출하여 포트에서 등록취소할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)

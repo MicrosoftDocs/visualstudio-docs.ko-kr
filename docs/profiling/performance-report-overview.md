@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772234"
 ---
 # <a name="performance-report-overview"></a>성능 보고서 개요
@@ -50,7 +50,7 @@ Visual Studio Team System Development Edition IDE(통합 개발 환경)의 **성
   호출한 목록 또는 호출 수신자 목록에서 함수를 두 번 클릭하여 다른 함수를 선택할 수 있습니다. 자세한 내용은 [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)를 참조하세요.
 
 ### <a name="call-tree-view"></a>호출 트리 뷰
- 호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 애플리케이션이나 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.
+ 호출 트리 뷰는 프로파일링된 애플리케이션에서 트래버스된 함수 실행 경로를 표시합니다. 트리의 루트는 애플리케이션이나 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.
 
  호출 트리 뷰를 확장하여 시간을 가장 많이 사용했거나 가장 자주 샘플링된 함수의 실행 경로를 강조 표시할 수도 있습니다. 가장 많이 사용된 경로를 표시하려면 함수를 마우스 오른쪽 단추로 클릭하고 **실행 부하 과다 경로 확장**을 클릭합니다. 자세한 내용은 [호출 트리 뷰](../profiling/call-tree-view.md)를 참조하세요.
 

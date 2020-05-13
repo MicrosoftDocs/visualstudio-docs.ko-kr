@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001071"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>동시성 네임스페이스(동시성 시각화 도우미)
@@ -28,13 +28,13 @@ ms.locfileid: "63001071"
 namespace Concurrency;
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 
 ### <a name="namespaces"></a>네임스페이스
 
-|name|설명|
+|속성|Description|
 |----------|-----------------|
-|[diagnostic 네임스페이스](../profiling/diagnostic-namespace.md)|`diagnostics` 네임스페이스는 동시성 시각화 도우미 표식을 내보내는 기능을 제공합니다.|
+|[진단 네임스페이스](../profiling/diagnostic-namespace.md)|`diagnostics` 네임스페이스는 동시성 시각화 도우미 표식을 내보내는 기능을 제공합니다.|
 
 ## <a name="requirements"></a>요구 사항
  **헤더:** cvmarkersobj.h

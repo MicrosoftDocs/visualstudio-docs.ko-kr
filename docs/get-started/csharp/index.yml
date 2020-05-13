@@ -15,13 +15,13 @@ metadata:
   dev_langs:
   - CSharp
   ms.openlocfilehash: 0e5519756bebafd91b72186e001ca6af7f53c254
-  ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 02/01/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "76923121"
 landingContent:
-- title: 시작
+- title: 시작하기
   linkLists:
   - linkListType: how-to-guide
     links:

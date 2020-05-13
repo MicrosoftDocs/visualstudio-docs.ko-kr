@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPorts2::Reset | Microsoft Docs
+title: IEnumDebugPorts2::리셋 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2::Reset
 ms.assetid: 67da406c-eadb-421e-ae12-e26e9866f262
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64f8bdbea804659dbd10a0ec6efe5590d1b16af4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6247e48af98f5c21a0afc40577e18d38bba06506
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339309"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716189"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Next
-첫 번째 요소를 열거를 초기화합니다.
+열거형이 첫 번째 요소로 재설정됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,11 +37,11 @@ HRESULT Reset(
 int Reset();
 ```
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드를 호출한 후, 다음 호출을 [다음](../../../extensibility/debugger/reference/ienumdebugports2-next.md) 메서드 열거형의 첫 번째 요소를 반환 합니다.
+ 이 메서드를 호출 한 후 [Next](../../../extensibility/debugger/reference/ienumdebugports2-next.md) 메서드에 대 한 다음 호출 열거형의 첫 번째 요소를 반환 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

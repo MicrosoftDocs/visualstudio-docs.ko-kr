@@ -94,10 +94,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593618"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
@@ -105,7 +105,7 @@ ms.locfileid: "75593618"
 일부 오류 메시지에만 특정 관련된 도움말 항목이 포함됩니다. 오류 메시지의 정보가 문제를 해결하는 데 도움이 되지 않는 경우 기술 자료 문서, 포럼 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 문제 해결](/visualstudio/mac/troubleshooting)을 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 문제 해결](/visualstudio/mac/troubleshooting)을 참조하세요.
 
 ## <a name="knowledge-base-articles"></a>기술 자료 문서
 
@@ -121,7 +121,7 @@ KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색
 
 다른 리소스를 확인한 후에도 궁금한 점이 있는 경우 [Microsoft 지원](https://support.microsoft.com/en-us) 웹 사이트를 방문하여 Microsoft 지원 서비스에 문의할 수 있습니다. 해당 지역에서 사용 가능한 제품 지원에 대한 자세한 내용은 [Visual Studio 피드백 옵션](../../ide/feedback-options.md) 페이지를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [네트워크 관련 또는 프록시 오류 문제 해결](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [문제 해결(Mac용 Visual Studio)](/visualstudio/mac/troubleshooting)

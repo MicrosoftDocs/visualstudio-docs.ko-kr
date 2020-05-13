@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592037"
 ---
 # <a name="find-references-in-your-code"></a>코드에서 참조 찾기
@@ -52,6 +52,6 @@ C# 또는 Visual Basic에서 참조 찾기 창에는 찾은 참조 유형이 나
 
 ![참조 창 종류 찾기 열 ](../ide/media/vside_findallreferencesKind.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 탐색](../ide/navigating-code.md)

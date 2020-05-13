@@ -15,18 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912024"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77192405"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 
 > [!NOTE]
 > 동시성 시각화 도우미는 Visual Studio의 선택적 확장입니다. 다음 링크에서 동시성 시각화 도우미와 동시성 시각화 수집 도구를 다운로드하세요.
 >
+> - [Visual Studio 2019용 Concurrency 시각화 도우미](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview) 확장을 다운로드합니다.
 > - [Visual Studio 2017용 Concurrency 시각화 도우미](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) 확장을 다운로드합니다.
 > - [Visual Studio 2015용 Concurrency 시각화 도우미](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015) 확장을 다운로드합니다.
 > - [Visual Studio 2015용 Concurrency 시각화 수집 도구](https://www.microsoft.com/download/details.aspx?id=49103)를 다운로드합니다.
@@ -42,7 +43,7 @@ ms.locfileid: "72912024"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[사용률 뷰](../profiling/utilization-view.md)|모든 프로세서의 시스템 작업을 보고 분석하는 방법에 대해 설명합니다.|
 |[스레드 뷰](../profiling/threads-view-parallel-performance.md)|프로그램의 스레드 간 상호 작용을 분석하는 방법에 대해 설명합니다.|

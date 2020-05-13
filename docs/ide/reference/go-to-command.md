@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569207"
 ---
 # <a name="go-to-command"></a>이동 명령
@@ -31,7 +31,7 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>인수
 `linenumber`\
-선택 사항입니다. 이동할 줄 번호를 나타내는 정수입니다.
+(선택 사항) 이동할 줄 번호를 나타내는 정수입니다.
 
 ## <a name="remarks"></a>설명
 줄 번호는 1부터 시작합니다. `linenumber` 값이 1보다 작은 경우 첫 번째 줄이 표시됩니다. `linenumber` 값이 마지막 줄 번호보다 큰 경우 마지막 줄이 표시됩니다.
@@ -46,9 +46,9 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

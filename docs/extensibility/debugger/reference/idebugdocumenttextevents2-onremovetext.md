@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onRemoveText | Microsoft Docs
+title: 아이디버그문서텍스트이벤트2::온리remove텍스트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onRemoveText
 ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4698399cd69c9493b9690bbac24a2b0bc3309d61
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 744a6c769673acdc383999392cde88d255ad8142
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330507"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731423"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
-텍스트 문서에서 제거 되었습니다 디버그 패키지에 알립니다.
+문서에서 텍스트가 제거되었음을 디버그 패키지에 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,14 +43,14 @@ int onRemoveText( 
 
 ## <a name="parameters"></a>매개 변수
 `pos`\
-[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 텍스트를 제거 하는 위치를 나타내는 구조입니다.
+【인】 텍스트가 제거된 위치를 나타내는 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조입니다.
 
 `dwNumToRemove`\
-[in] 제거 된 텍스트의 문자 수를 지정 합니다.
+【인】 제거된 텍스트의 문자 수를 지정합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: IDebugBreakpoint 해상도 2::GetResolutionInfo | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e5b847590a066f10580eeaaa3d600089b70a2e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352856"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734774"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-이 중단점을 설명 하는 중단점 해결 정보를 가져옵니다.
+이 중단점을 설명하는 중단점 확인 정보를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-[in] 플래그의 조합을 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) 의 필드를 결정 하는 열거형을 `pBPResolutionInfo` 작성 해야 할 매개 변수는 합니다.
+【인】 매개 변수의 필드를 채울 BPRESI_FIELDS 열거형의 플래그 조합입니다. [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) `pBPResolutionInfo`
 
 `pBPResolutionInfo`\
-[out] 합니다 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 이 중단점에 대 한 정보로 채워질 구조입니다.
+【아웃】 이 중단점에 대한 정보로 채워질 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 `CDebugBreakpointResolution` 노출 하는 개체를 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스입니다.
+ 다음 예제는 `CDebugBreakpointResolution` [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스를 노출 하는 간단한 개체에 대 한이 메서드를 구현 합니다.
 
 ```
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(
@@ -141,7 +141,7 @@ HRESULT CDebugBreakpointResolution::CopyBP_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

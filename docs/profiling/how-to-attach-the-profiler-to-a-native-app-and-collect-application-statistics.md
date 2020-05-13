@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 96d4a812fd98dbd0f58a8012a61cdaef96db3a8b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779105"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 독립 실행형 애플리케이션에 프로파일러를 연결하여 애플리케이션 통계 수집
@@ -95,12 +95,12 @@ ms.locfileid: "74779105"
 
 2. 프로파일러를 종료합니다. 유형:
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 
 3. (선택 사항) 프로파일링 환경 변수를 지웁니다. 유형:
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [샘플링 방법 데이터 뷰](../profiling/profiler-sampling-method-data-views.md)

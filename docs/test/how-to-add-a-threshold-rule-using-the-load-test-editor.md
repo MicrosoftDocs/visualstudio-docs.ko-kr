@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d1389df0c307ad6ec65575fc7934e622928a0ca1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591634"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 임계값 규칙 추가
@@ -36,12 +36,12 @@ ms.locfileid: "75591634"
 
      **임계값 규칙 추가** 대화 상자가 표시됩니다.
 
-5. 두 가지 유형의 규칙에서 선택할 수 있습니다. **상수 비교** 및 **카운터 비교**. 적절한 유형을 선택하고 값을 설정합니다.
+5. **상수 비교**와 **카운터 비교**라는 두 가지 규칙 유형 중에서 선택할 수 있습니다. 적절한 유형을 선택하고 값을 설정합니다.
 
     > [!NOTE]
     > **초과하면 경고** 속성을 **True**로 설정하면 임계값을 초과할 때 경고가 표시되고 또는 **False**로 설정하면 임계값 밑으로 떨어질 때 경고가 표시됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

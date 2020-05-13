@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569665"
 ---
 # <a name="error-list-window"></a>오류 목록 창
@@ -84,11 +84,11 @@ ms.locfileid: "75569665"
 
 오류 코드를 표시합니다.
 
-설명
+Description
 
 항목의 텍스트를 표시합니다.
 
-프로젝트
+Project
 
 현재 프로젝트의 이름을 표시합니다.
 
@@ -96,6 +96,6 @@ ms.locfileid: "75569665"
 
 파일 이름을 표시합니다.
 
-줄
+꺾은선형
 
 문제가 발생한 줄을 표시합니다.

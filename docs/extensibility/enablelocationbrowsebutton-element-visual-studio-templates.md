@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 인에이블위치브라우시볼 버튼 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be2f67d08fcac39d26f9a27f76ad8aff967440b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334461"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711984"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 요소 (Visual Studio 템플릿)
-지정 여부를 합니다 **찾아보기** 단추를 사용할 수는 **새 프로젝트** 대화 상자에서 사용자가 새 프로젝트를 저장 된 기본 디렉터리를 쉽게 수정할 수 있도록 합니다.
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>사용 위치찾아보기 단추 요소(비주얼 스튜디오 템플릿)
+**새 프로젝트** 대화 상자에서 **찾아보기** 단추를 사용할 수 있는지 여부를 지정하여 사용자가 새 프로젝트가 저장된 기본 디렉터리를 쉽게 수정할 수 있도록 합니다.
 
- \<VSTemplate > \<TemplateData > \<EnableLocationBrowseButton >
+ \<VS템플릿 \<> 템플릿데이터> \<인에이블위치찾아보기버튼>
 
 ## <a name="syntax"></a>구문
 
@@ -42,22 +42,22 @@ ms.locfileid: "66334461"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 텍스트 여야 `true` 또는 `false`를 표시할 것인지 여부를 나타내는 **찾아보기** 단추를 **새 프로젝트** 대화 상자.
+ 새 프로젝트 대화 `true` `false`상자에 **찾아보기** 단추를 표시할지 여부를 **New Project** 나타내는 텍스트 또는 이중 하나여야 합니다.
 
 ## <a name="remarks"></a>설명
- `EnableLocationBrowseButton`는 선택적 요소입니다. 기본값은 `true`를 표시 합니다 **찾아보기** 단추를 **새 프로젝트** 대화 상자.
+ `EnableLocationBrowseButton`는 선택적 요소입니다. 기본값은 `true` **새 프로젝트** 대화 상자에 **찾아보기** 단추를 표시하는 입니다.
 
- 에 **새 프로젝트** 대화 상자에서를 **위치** 텍스트 상자가 새 프로젝트를 저장 된 디렉터리를 지정 합니다. 합니다 **찾아보기** 단추를 표시 하 여이 디렉터리를 수정할 수 있습니다 합니다 **프로젝트 위치** 컴퓨터에서 사용할 수 있는 다른 디렉터리에 쉽게 이동할 수 있는 대화 상자 및 그런 다음 새 프로젝트 저장 된 디렉터리를 선택 합니다.
+ 새 **프로젝트** 대화 상자에서 **위치** 텍스트 상자에새 프로젝트가 저장되는 디렉터리를 지정합니다. **찾아보기** 단추를 사용하면 컴퓨터에서 사용할 수 있는 다른 디렉터리로 쉽게 이동한 다음 새 프로젝트가 저장된 디렉터리로 선택할 수 있는 **프로젝트 위치** 대화 상자를 표시하여 이 디렉토리를 수정할 수 있습니다.
 
 ## <a name="example"></a>예제
- 다음 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다.
+ 다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램에 대 한 메타 데이터를 보여 줍니다.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,6 +84,6 @@ ms.locfileid: "66334461"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>참조
+- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

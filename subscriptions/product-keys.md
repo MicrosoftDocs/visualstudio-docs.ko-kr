@@ -3,15 +3,16 @@ title: 제품 키 사용 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/20/2019
+ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 얻고 관리하는 방법을 알아봅니다.
-ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 138b85d151aff5ecded4e8a69595518d05f12e7b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377703"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232222"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 사용
 
@@ -43,7 +44,7 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 자체 연구에 따르면 대부분의 구독자는 각 구독에 포함된 제품 키 수만큼 보호됩니다. 추가 키가 필요한 경우 Visual Studio 구독 [고객 서비스](https://visualstudio.microsoft.com/subscriptions/support/)를 통해 요청을 제출할 수 있으며 사례별로 승인됩니다.
 
 ## <a name="accessing-product-keys"></a>제품 키 액세스
-제품 키를 보려면 Visual Studio 구독에 로그인해야 합니다. 개별 제품 키는 아래 표시된 것처럼 [다운로드](https://my.visualstudio.com/downloads) 페이지에서 특정 제품에 대한 파란색 **키 가져오기** 링크를 선택하여 확인할 수 있습니다.  단일 제품에 대해 여러 키가 있는 경우 다운로드를 위해 [메모] 열에 해당 정보가 표시되어 사용해야 할 키를 식별하는 데 도움이 됩니다.
+제품 키를 보려면 Visual Studio 구독에 로그인해야 합니다. 개별 제품 키는 아래 표시된 것처럼 **다운로드** 페이지에서 특정 제품에 대한 파란색 [키 가져오기](https://my.visualstudio.com/downloads) 링크를 선택하여 확인할 수 있습니다.  단일 제품에 대해 여러 키가 있는 경우 다운로드를 위해 [메모] 열에 해당 정보가 표시되어 사용해야 할 키를 식별하는 데 도움이 됩니다.
 
 일부 제품은 한 번에 다운로드할 수 있도록 여러 버전이 번들로 구성되어 있습니다. 이러한 경우 입력하는 제품 키에 따라 설치되는 제품 버전이 결정됩니다.
 일부 키는 "정적" 키와 같이 자동으로 제공되며, 정품 인증이 필요하지 않으므로 필요한 만큼 여러 번 사용할 수 있습니다. 다른 키는 제품에 대한 **키 가져오기** 링크를 선택하여 요청해야 합니다.
@@ -59,10 +60,10 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 
 ### <a name="product-key-types"></a>제품 키 유형
 
-|    키 유형           |    설명                                                                                                                                                                                                           |
+|    키 유형           |    Description                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    해당 없음                    |    이 제품을 설치하는 데 필요한 키가 없습니다.                                                       |
-|    일반 정품                     |    일반 정품 키는 복수 정품 인증을 허용하며, 제품의 일반 정품 빌드에 사용됩니다. 대부분의 경우 키당 10회의 정품 인증이 허용되지만, 동일한 컴퓨터에서 더 자주 정품 인증이 허용됩니다.                                                       |
+|    해당 사항 없음                    |    이 제품을 설치하는 데 필요한 키가 없습니다.                                                       |
+|    소매                     |    일반 정품 키는 복수 정품 인증을 허용하며, 제품의 일반 정품 빌드에 사용됩니다. 대부분의 경우 키당 10회의 정품 인증이 허용되지만, 동일한 컴퓨터에서 더 자주 정품 인증이 허용됩니다.                                                       |
 |    복수 정품 인증        |    MAK(복수 정품 인증 키)를 사용하면 여러 곳에 설치한 제품을 동일한 키로 정품 인증할 수 있습니다. MAK는 대체로 제품의 볼륨 라이선스 버전에 사용됩니다. 일반적으로 구독당 MAK 하나만 제공됩니다.    |
 |    정적 정품 인증 키    |    정적 정품 인증 키는 정품 인증이 필요하지 않은 제품에 제공되며, 설치 수에 관계없이 사용할 수 있습니다.                                                                                                                  |
 |    사용자 지정 키                 |    사용자 지정 키는 제품을 정품 인증하거나 설치하기 위한 특별한 작업 또는 정보를 제공합니다.                                                                                                                                                                |
@@ -74,6 +75,12 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 |
 
 제품에 대한 다운로드 페이지에서 키를 요청하거나 [제품 키](https://my.visualstudio.com/productkeys) 페이지에서 필요한 키를 검색할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 키를 요청하려면 https://my.visualstudio.com/productkeys 를 방문하세요.  

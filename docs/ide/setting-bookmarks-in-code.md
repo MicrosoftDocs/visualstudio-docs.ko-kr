@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595438"
 ---
 # <a name="set-bookmarks-in-code"></a>코드에 책갈피 설정
@@ -40,6 +40,6 @@ ms.locfileid: "75595438"
 
 책갈피 창에서 **모든 책갈피 사용 안 함** 단추를 선택하여 책갈피를 제거하지 않고 끌 수 있습니다. 책갈피를 다시 사용하려면 같은 단추(**모든 책갈피 사용**으로 바뀜)를 다시 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)

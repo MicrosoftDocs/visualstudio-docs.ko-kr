@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916742"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255543"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 
@@ -146,8 +146,8 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
-      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
-      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
       FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
       WORKDIR /app
@@ -175,7 +175,7 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 
 1. `**/bin`을 제거하여 .dockerignore 파일을 업데이트합니다.
 
-## <a name="debug"></a>Debug
+## <a name="debug"></a>디버그
 
 도구 모음의 디버그 드롭다운에서 **Docker**를 선택하고 앱에서 디버깅을 시작합니다. 인증서 신뢰 요청 메시지가 표시될 수 있습니다. 계속하려면 인증서를 신뢰하도록 선택하세요.  처음 빌드할 때는 docker가 기본 이미지를 다운로드하기 때문에 시간이 조금 더 걸릴 수 있습니다.
 

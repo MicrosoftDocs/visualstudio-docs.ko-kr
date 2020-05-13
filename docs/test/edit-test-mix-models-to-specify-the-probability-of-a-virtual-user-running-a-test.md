@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593215"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>테스트 조합 모델을 편집하여 가상 사용자의 테스트 실행 가능성 지정
@@ -32,7 +32,7 @@ ms.locfileid: "75593215"
 
 - **사용자 속도 기반:** 부하 테스트가 진행되는 동안 각 웹 성능 테스트 또는 단위 테스트가 시간당 사용자별로 지정된 횟수만큼 실행됩니다. 가상 사용자가 부하 테스트 전체에서 특정 속도로 테스트를 실행하도록 하려는 경우 이 테스트 조합 모델을 사용합니다.
 
-- **정렬된 순서 기반:** 각 가상 사용자가 시나리오에 정의된 테스트 순서에 따라 웹 성능 또는 단위 테스트를 실행합니다. 가상 사용자는 부하 테스트가 완료될 때까지 이 순서로 테스트를 계속해서 순환합니다.
+- **순차적 테스트 순서 기반:** 각 가상 사용자가 시나리오에 정의된 테스트 순서에 따라 웹 성능 또는 단위 테스트를 실행합니다. 가상 사용자는 부하 테스트가 완료될 때까지 이 순서로 테스트를 계속해서 순환합니다.
 
 ## <a name="tasks"></a>작업
 
@@ -79,7 +79,7 @@ ms.locfileid: "75593215"
 
 9. 속성을 변경한 후 **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **테스트 조합 유형** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593579"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649831"
 ---
 # <a name="security-page-project-designer"></a>프로젝트 디자이너, 보안 페이지
 
@@ -80,7 +80,7 @@ WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션은 기
 - [방법: ClickOnce 보안 설정 사용](../../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 애플리케이션의 보안 영역 설정](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [방법: ClickOnce 애플리케이션의 사용자 지정 권한 설정](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [ClickOnce 앱 보안](../../deployment/securing-clickonce-applications.md)
 - [ClickOnce 보안 및 배포](../../deployment/clickonce-security-and-deployment.md)
 - [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)
 - [고급 보안 설정 대화 상자](../../ide/reference/advanced-security-settings-dialog-box.md)

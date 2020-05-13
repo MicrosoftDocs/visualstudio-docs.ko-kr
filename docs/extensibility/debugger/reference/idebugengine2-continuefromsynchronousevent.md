@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs
+title: IDebugEngine2::계속에서동기 이벤트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::ContinueFromSynchronousEvent
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32dc338f2f2ff99d6aaff6dbd728fa3dd7fc9b84
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da059b6efe137092d46241977a98b22b1eb66c44
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330142"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731150"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-세션 디버그 관리자 (SDM) 이전에 보낸 디버그 엔진 (DE)은 SDM 동기식 디버그 이벤트를 수신 되어 처리를 나타내기 위해 호출 됩니다.
+세션 디버그 관리자(SDM)에서 호출하여 이전에 DEBug 엔진(DE)이 SDM으로 전송한 동기 디버그 이벤트가 수신되고 처리되었음을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,16 +41,16 @@ HRESULT ContinueFromSynchronousEvent(
 
 ## <a name="parameters"></a>매개 변수
 `pEvent`\
-[in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 디버거는 이제 계속 이전에 보낸된 동기 이벤트를 나타내는 개체입니다.
+【인】 디버거가 계속되어야 하는 이전에 전송된 동기 이벤트를 나타내는 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
-DE 나타낸 이벤트의 소스 했는지 확인 해야 합니다는 `pEvent` 매개 변수입니다.
+DE는 `pEvent` 매개 변수로 표시되는 이벤트의 원본인지 확인해야 합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CEngine` 를 구현 하는 개체를 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 인터페이스입니다.
+다음 예제에서는 `CEngine` [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 인터페이스를 구현 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
@@ -88,6 +88,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

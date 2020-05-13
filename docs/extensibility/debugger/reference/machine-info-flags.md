@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS | Microsoft Docs
+title: MACHINE_INFO_FLAGS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FLAGS enumeration
 ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77d2c9af733f192526970d08d0ae3d24d2a5bf3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b74955d65ff34c4787de03c3b03383fe7eb702cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339231"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714508"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
-컴퓨터에 설명 하는 데 사용 합니다.
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
+컴퓨터를 설명하는 데 사용됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,18 +42,18 @@ public enum enum_MACHINE_INFO_FLAGS { 
 
 ## <a name="fields"></a>필드
  `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
- 터미널 서비스를 사용할 수 있는지를 나타냅니다.
+ 터미널 서비스를 사용할 수 있음을 나타냅니다.
 
 ## <a name="remarks"></a>설명
- 로 사용 합니다 `Flags` 의 멤버는 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조입니다.
+ `Flags` [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조의 멤버로 사용됩니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)

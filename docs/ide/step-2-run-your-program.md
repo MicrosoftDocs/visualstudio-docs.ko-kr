@@ -5,17 +5,17 @@ ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588748"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579410"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>2단계: 그림 뷰어 앱 실행
 

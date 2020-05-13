@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776373"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
@@ -59,7 +59,7 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
     > [!NOTE]
     > **사용 가능한 성능 카운터**는 **CPU 카운터 수집** 확인란을 선택한 경우에만 사용하도록 설정됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [성능 세션 속성](../profiling/performance-session-properties.md)

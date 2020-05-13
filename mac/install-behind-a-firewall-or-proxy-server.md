@@ -7,10 +7,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.openlocfilehash: 717eb9cd58f213c3d2c31a18c546a83ab8feb645
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984034"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치 및 사용
@@ -65,7 +65,7 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 | visualstudio-devdiv-c2s.msedge.net | 80/443| 실험적 기능 및 알림 |
 | targetednotifications.azurewebsites.net|  80/443| 전체 알림 목록을 특정 유형의 컴퓨터/사용 시나리오에만 적용 가능한 목록으로 필터링하는 데 사용됩니다.|
 
-### <a name="identity"></a>클레임
+### <a name="identity"></a>Identity
 
 | 도메인 | 포트|용도|
 | ----------------------|------------------|------------------|
@@ -89,7 +89,7 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 | connectivitycheck.gstatic.com | Android Emulator의 연결|
 | cloudconfig.googleapis.com| Android Emulator의 API|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Windows에서 유사한 문제 해결](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

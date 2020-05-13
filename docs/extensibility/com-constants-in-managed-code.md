@@ -1,24 +1,24 @@
 ---
-title: 관리 코드의 COM 상수 | Microsoft Docs
+title: 관리 코드의 COM 상수 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d855142ad51f5433fbf0053cfbcfc1d8bef8871d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350719"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739833"
 ---
 # <a name="com-constants-in-managed-code"></a>관리 코드의 COM 상수
-관리 패키지 프레임 워크 (MPF) 관리 코드에 사용 가능한 몇 가지 표준 COM 상수를 만듭니다. 이러한 상수는 참조용 아래 나열 됩니다.
+MPF(관리되는 패키지 프레임워크)는 관리되는 코드에 몇 가지 표준 COM 상수를 제공합니다. 이러한 상수는 참조를 위해 아래에 나열되어 있습니다.
 
 ## <a name="boolean-hresult-values"></a>부울 HRESULT 값
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
@@ -126,5 +126,5 @@ ms.locfileid: "66350719"
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [오류 처리 및 반환 값](../extensibility/error-handling-and-return-values.md)

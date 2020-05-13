@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Microsoft Docs
+title: IDebugEngine3::SetAll예외사항 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77c34ec86eb9c06b844803765319730313cffd9e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1b2913756c30bf3b1c8436434da71337a2100aa8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352480"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730799"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
-이 메서드는 모든 처리 중인 예외 상태를 설정합니다.
+이 메서드는 모든 미해결 예외의 상태를 설정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int SetAllExceptions(
 
 ## <a name="parameters"></a>매개 변수
 `dwState`\
-[in] 중 하나는 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 값입니다.
+【인】 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 값 중 하나입니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

@@ -4,17 +4,17 @@ ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3039207cd36e1fcfedef95830fec9ebb91686491
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590269"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579712"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 맞추기 게임 만들기
 

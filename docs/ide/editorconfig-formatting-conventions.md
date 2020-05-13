@@ -1,24 +1,24 @@
 ---
 title: EditorConfig에 대한 .NET 서식 지정 규칙
-ms.date: 07/17/2019
+ms.date: 04/02/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 136744514e5e2e49ec92a443ac590eb5cc34418a
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589229"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892764"
 ---
 # <a name="formatting-conventions"></a>서식 지정 규칙
 
@@ -65,7 +65,6 @@ dotnet_separate_import_directive_groups = true
 | **해당 언어** | C# 및 Visual Basic |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - System.* `using` 지시문을 사전순으로 정렬하고 다른 using 지시문 앞에 배치합니다.<br /><br />`false` - System.* `using` 지시문을 다른 `using` 지시문 앞에 배치하지 않습니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -89,7 +88,6 @@ using System.Threading.Tasks;
 | **해당 언어** | C# 및 Visual Basic |
 | **도입된 버전** | Visual Studio 2017 15.5 버전 |
 | **값** | `true` - `using` 지시문 그룹 사이에 빈 줄을 넣습니다.<br /><br />`false` - `using` 지시문 그룹 사이에 빈 줄을 넣지 않습니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -151,6 +149,8 @@ using Octokit;
 - [줄 바꿈 옵션](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [지시문 옵션 사용](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>줄 바꿈 옵션
 
@@ -180,7 +180,6 @@ csharp_new_line_between_query_expression_clauses = true
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `all` - 모든 식에서 중괄호를 새 줄에 배치해야 합니다(“Allman” 스타일).<br /><br />`none` - 모든 식에서 중괄호를 동일한 줄에 배치해야 합니다(“K&R”).<br /><br />`accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`, `lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` - 지정된 코드 요소에서 중괄호를 새 줄에 배치해야 합니다(“Allman” 스타일). |
-| **Visual Studio 기본값** | `all` |
 
 코드 예제:
 
@@ -210,7 +209,6 @@ void MyMethod() {
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - `else` 문을 새 줄에 배치합니다.<br /><br />`false` - `else` 문을 동일한 줄에 배치합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -239,7 +237,6 @@ if (...) {
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - `catch` 문을 새 줄에 배치합니다.<br /><br />`false` - `catch` 문을 동일한 줄에 배치합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -268,7 +265,6 @@ try {
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - `finally` 문을 닫는 괄호 뒤의 새 줄에 배치해야 합니다.<br /><br />`false` - `finally` 문을 닫는 괄호와 동일한 줄에 배치해야 합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -302,7 +298,6 @@ try {
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 개체 이니셜라이저의 멤버를 새 줄에 배치해야 합니다.<br /><br />`false` - 개체 이니셜라이저의 멤버를 동일한 줄에 배치해야 합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -329,7 +324,6 @@ var z = new B()
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 무명 형식의 멤버를 새 줄에 배치해야 합니다.<br /><br />`false` - 무명 형식의 멤버를 동일한 줄에 배치해야 합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -356,7 +350,6 @@ var z = new
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 쿼리 식 절의 요소를 새 줄에 배치해야 합니다.<br /><br />`false` - 쿼리 식 절의 요소를 동일한 줄에 배치해야 합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -396,7 +389,6 @@ csharp_indent_case_contents_when_block = true
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - `switch` case 콘텐츠를 들여씁니다.<br /><br />`false` - `switch` case 콘텐츠를 들여 쓰지 않습니다. |
-| **Visual Studio 기본값** | `true` |
 
 - 이 규칙을 **true**로 설정한 경우 i입니다.
 - 이 규칙을 **false**로 설정한 경우 d입니다.
@@ -439,7 +431,6 @@ switch(c) {
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - `switch` 레이블을 들여씁니다.<br /><br />`false` - `switch` 레이블을 들여 쓰지 않습니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -479,7 +470,6 @@ default:
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `flush_left` - 레이블이 가장 왼쪽 열에 배치됩니다.<br /><br />`one_less_than_current` - 레이블이 현재 컨텍스트보다 한 수준 더 들여쓰기에 배치됩니다.<br /><br />`no_change` - 레이블이 현재 컨텍스트와 동일한 들여쓰기에 배치됩니다. |
-| **Visual Studio 기본값** | `no_change` |
 
 코드 예제:
 
@@ -531,7 +521,6 @@ class C
 | **규칙 이름** | csharp_indent_block_contents |
 | **해당 언어** | C# |
 | **값** | `true` - <br /><br />`false` -  |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -556,7 +545,6 @@ Console.WriteLine("Hello");
 | **규칙 이름** | csharp_indent_braces |
 | **해당 언어** | C# |
 | **값** | `true` - <br /><br />`false` -  |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -581,7 +569,6 @@ static void Hello()
 | **규칙 이름** | csharp_indent_case_contents_when_block |
 | **해당 언어** | C# |
 | **값** | `true` - <br /><br />`false` -  |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -642,7 +629,6 @@ csharp_space_between_square_brackets = false
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 캐스트와 값 사이에 공백 문자를 배치합니다.<br /><br />`false` - 캐스트와 값 사이에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -662,7 +648,6 @@ int y = (int)x;
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - `for` 루프와 같은 제어 흐름 문의 키워드 뒤에 공백 문자를 배치합니다.<br /><br />`false` - `for` 루프와 같은 제어 흐름 문의 키워드 뒤에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -682,7 +667,6 @@ for(int i;i<x;i++) { ... }
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `control_flow_statements` - 제어 흐름 문의 괄호 사이에 공백을 넣습니다.<br /><br />`expressions` - 식의 괄호 사이에 공백을 넣습니다.<br /><br />`type_casts` - 형식 캐스트의 괄호 사이에 공백을 넣습니다. |
-| **Visual Studio 기본값** | `false` |
 
 이 규칙을 생략하거나 `control_flow_statements`, `expressions` 또는 `type_casts` 이외의 값을 사용하면 설정이 적용되지 않습니다.
 
@@ -707,7 +691,6 @@ int y = ( int )x;
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 버전 15.7 |
 | **값** | `true` - 형식 선언에서 베이스 또는 인터페이스의 콜론 앞에 공백 문자를 배치합니다.<br /><br />`false` - 형식 선언에서 베이스 또는 인터페이스의 콜론 앞에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -743,7 +726,6 @@ class C: I
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 버전 15.7 |
 | **값** | `true` - 형식 선언에서 베이스 또는 인터페이스의 콜론 뒤에 공백 문자를 배치합니다.<br /><br />`false` - 형식 선언에서 베이스 또는 인터페이스의 콜론 뒤에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -779,7 +761,6 @@ class C :I
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 버전 15.7 |
 | **값** | `before_and_after` - 이항 연산자 앞뒤에 공백을 삽입합니다.<br /><br />`none` - 이항 연산자 앞뒤의 공백을 제거합니다.<br /><br />`ignore` - 이항 연산자 주위의 공백을 무시합니다. |
-| **Visual Studio 기본값** | `before_and_after` |
 
 이 규칙을 생략하거나 `before_and_after`, `none` 또는 `ignore` 이외의 값을 사용하는 경우 설정이 적용되지 않습니다.
 
@@ -804,7 +785,6 @@ return x  *  (x-y);
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 여는 괄호 뒤 및 메서드 선언 매개 변수 목록의 닫는 괄호 앞에 공백 문자를 넣습니다.<br /><br />`false` - 여는 괄호 뒤 및 메서드 선언 매개 변수 목록의 닫는 괄호 앞에서 공백 문자를 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -824,7 +804,6 @@ void Bark(int x) { ... }
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 버전 15.7 |
 | **값** | `true` - 메서드 선언에서 빈 매개 변수 목록 괄호 안에 공백을 삽입합니다.<br /><br />`false` - 메서드 선언에서 빈 매개 변수 목록 괄호 안의 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -859,7 +838,6 @@ void Goo(int x)
 | **규칙 이름** | csharp_space_between_method_declaration_name_and_open_parenthesis |
 | **해당 언어** | C# |
 | **값** | `true` -메서드 선언에서 메서드 이름과 여는 괄호 사이에 공백 문자를 배치합니다.<br /><br />`false` -메서드 선언에서 메서드 이름과 여는 괄호 사이에서 공백 문자를 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -879,7 +857,6 @@ void M() { }
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 여는 괄호 뒤 및 메서드 호출의 닫는 괄호 앞에 공백 문자를 넣습니다.<br /><br />`false` - 여는 괄호 뒤 및 메서드 호출의 닫는 괄호 앞에서 공백 문자를 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -899,7 +876,6 @@ MyMethod(argument);
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 버전 15.7 |
 | **값** | `true` - 빈 인수 목록 괄호 안에 공백을 삽입합니다.<br /><br />`false` - 빈 인수 목록 괄호 안의 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -935,7 +911,6 @@ void Goo(int x)
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 버전 15.7 |
 | **값** | `true` - 메서드 호출 이름과 여는 괄호 사이에 공백을 삽입합니다.<br /><br />`false` - 메서드 호출 이름과 여는 괄호 사이의 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -970,7 +945,6 @@ void Goo(int x)
 | **규칙 이름** | csharp_space_after_comma |
 | **해당 언어** | C# |
 | **값** | `true` - 쉼표 뒤에 공백을 삽입합니다.<br /><br />`false` - 쉼표 뒤의 공백을 제거합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -989,7 +963,6 @@ int[] x = new int[] { 1,2,3,4,5 }
 | **규칙 이름** | csharp_space_before_comma |
 | **해당 언어** | C# |
 | **값** | `true` - 쉼표 앞에 공백을 삽입합니다.<br /><br />`false` - 쉼표 앞에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1008,7 +981,6 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 | **규칙 이름** | csharp_space_after_dot |
 | **해당 언어** | C# |
 | **값** | `true` - 점 뒤에 공백을 삽입합니다.<br /><br />`false` - 점 뒤의 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1027,7 +999,6 @@ this.Goo();
 | **규칙 이름** | csharp_space_before_dot |
 | **해당 언어** | C# |
 | **값** | `true` - 점 앞에 공백을 삽입합니다. <br /><br />`false` - 점 앞에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1046,7 +1017,6 @@ this.Goo();
 | **규칙 이름** | csharp_space_after_semicolon_in_for_statement |
 | **해당 언어** | C# |
 | **값** | `true` - `for` 문의 각 세미콜론 뒤에 공백을 삽입합니다.<br /><br />`false` - `for` 문의 각 세미콜론 뒤에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -1065,7 +1035,6 @@ for (int i = 0;i < x.Length;i++)
 | **규칙 이름** | csharp_space_before_semicolon_in_for_statement |
 | **해당 언어** | C# |
 | **값** | `true` - `for` 문의 각 세미콜론 앞에 공백을 삽입합니다. <br /><br />`false` - `for` 문의 각 세미콜론 앞에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1084,7 +1053,6 @@ for (int i = 0; i < x.Length; i++)
 | **규칙 이름** | csharp_space_around_declaration_statements |
 | **해당 언어** | C# |
 | **값** | `ignore` - 선언문에서 추가 공백 문자를 제거하지 않습니다.<br /><br />`false` - 선언문에서 추가 공백 문자를 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1103,7 +1071,6 @@ int x = 0;
 | **규칙 이름** | csharp_space_before_open_square_brackets |
 | **해당 언어** | C# |
 | **값** | `true` - 여는 대괄호 `[` 앞에 공백을 삽입합니다. <br /><br />`false` - 여는 대괄호 `[` 앞에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1122,7 +1089,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **규칙 이름** | csharp_space_between_empty_square_brackets |
 | **해당 언어** | C# |
 | **값** | `true` - 빈 대괄호 `[ ]` 사이에 공백을 삽입합니다. <br /><br />`false` - 빈 대괄호 `[]` 사이에서 공백을 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1141,7 +1107,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **규칙 이름** | csharp_space_between_square_brackets |
 | **해당 언어** | C# |
 | **값** | `true` - 비어 있지 않은 대괄호 `[ 0 ]` 안에 공백 문자를 삽입합니다. <br /><br />`false` - 비어 있지 않은 대괄호 `[0]` 안에서 공백 문자를 제거합니다. |
-| **Visual Studio 기본값** | `false` |
 
 코드 예제:
 
@@ -1174,7 +1139,6 @@ csharp_preserve_single_line_blocks = true
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 문과 멤버 선언을 동일한 줄에 유지합니다.<br /><br />`false` - 문과 멤버 선언을 다른 줄에 유지합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -1195,7 +1159,6 @@ string name = "John";
 | **해당 언어** | C# |
 | **도입된 버전** | Visual Studio 2017 15.3 버전 |
 | **값** | `true` - 코드 블록을 한 줄에 유지합니다.<br /><br />`false` - 코드 블록을 새 줄에 유지합니다. |
-| **Visual Studio 기본값** | `true` |
 
 코드 예제:
 
@@ -1207,6 +1170,46 @@ public int Foo { get; set; }
 public int MyProperty
 {
     get; set;
+}
+```
+
+### <a name="using-directive-options"></a>지시문 옵션 사용
+
+이 서식 지정 규칙은 네임스페이스 내부에 배치거나 외부에 배치되는 지시문을 사용하는 것과 관련이 있습니다.
+
+예제 *.editorconfig* 파일:
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **규칙 이름** | csharp_using_directive_placement |
+| **해당 언어** | C# |
+| **도입된 버전** | Visual Studio 2019 버전 16.1 |
+| **값** | `outside_namespace` - 네임스페이스 외부에서 지시문을 사용<br /><br />`inside_namespace` - 네임스페이스 내부에서 지시문을 사용 |
+
+코드 예제:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
 }
 ```
 

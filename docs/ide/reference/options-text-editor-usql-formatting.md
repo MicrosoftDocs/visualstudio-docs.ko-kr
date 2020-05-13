@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568271"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>옵션, 텍스트 편집기, U-SQL, 서식
@@ -49,6 +49,6 @@ ms.locfileid: "75568271"
 - **붙여넣을 때 들여쓰기 조정**이 선택된 동안 코드를 파일에 붙여넣을 경우,
 - 서식 지정되는 블록이 수동으로 입력되는 경우).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md)

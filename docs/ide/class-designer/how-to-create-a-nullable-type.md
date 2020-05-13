@@ -15,17 +15,17 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592232"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>방법: 클래스 디자이너에서 Nullable 형식 만들기
 
 특정 값 형식에 항상 정의된 값이 포함되거나 필요한 것은 아닙니다. 이는 일부 필드에 값이 할당되지 않을 수 있는 데이터베이스에서 일반적인 경우입니다. 예를 들어 데이터베이스 필드에 null 값을 할당하여 아직 값이 할당되지 않았음을 나타낼 수 있습니다.
 
-*Nullable 형식*은 해당 형식에 대한 일반적인 값 범위 및 null 값도 사용하도록 확장하는 값 형식입니다. Nullable\<Int32>로도 나타내는 `Int32`의 nullable에는 -2147483648에서 2147483647까지 값이 할당되거나 null 값이 할당될 수 있습니다. Nullable\<bool>에는 `True`, `False` 또는 null(전혀 값이 없음) 값이 할당될 수 있습니다.
+*Nullable 형식*은 해당 형식에 대한 일반적인 값 범위 및 null 값도 사용하도록 확장하는 값 형식입니다. Nullable`Int32`Int32>로도 나타내는 \<의 nullable에는 -2147483648에서 2147483647까지 값이 할당되거나 null 값이 할당될 수 있습니다. Nullable\<bool>에는 `True`, `False` 또는 null(전혀 값이 없음) 값이 할당될 수 있습니다.
 
 Nullable 형식은 <xref:System.Nullable%601> 구조체의 인스턴스입니다. Nullable 형식의 각 인스턴스에는 두 개의 public 읽기 전용 속성 `HasValue` 및 `Value`가 포함됩니다.
 
@@ -85,7 +85,7 @@ C#의 nullable 형식에 대한 자세한 내용은 [Nullable 형식](/dotnet/cs
 
 5. 클래스 모양을 마우스 오른쪽 단추로 클릭하고 **클래스 세부 내용**을 클릭합니다. **클래스 세부 내용** 창에서 새 형식의 속성을 보거나 수정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Nullable%601>
 - [Nullable 형식](/dotnet/csharp/programming-guide/nullable-types/index)

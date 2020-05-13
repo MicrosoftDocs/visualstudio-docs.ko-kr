@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595529"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77557938"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  필수 요소. 지정한 언어의 로캘 식별자(LCID)입니다.
+  필수 사항입니다. 지정한 언어의 로캘 식별자(LCID)입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -51,15 +51,20 @@ IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. �
 
 |언어|LCID|
 |--------------|----------|
-|및|2052|
-|옵션 대신,|1028|
+|중국어 (간체)|2052|
+|중국어 (번체)|1028|
+|체코어|1029|
 |영어|1033|
 |프랑스어|1036|
 |독일어|1031|
 |이탈리아어|1040|
 |일본어|1041|
 |한국어|1042|
+|폴란드어|1045|
+|포르투갈어(브라질)|1046|
+|러시아어|1049|
 |스페인어|3082|
+|터키어|1055
 
 ## <a name="example"></a>예제
 
@@ -69,7 +74,7 @@ IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. �
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
 - [옵션 대화 상자, 환경, 국가별 설정](../../ide/reference/international-settings-environment-options-dialog-box.md)

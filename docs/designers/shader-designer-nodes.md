@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72634920"
 ---
 # <a name="shader-designer-nodes"></a>셰이더 디자이너 노드
@@ -41,7 +41,7 @@ ms.locfileid: "72634920"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[상수 노드](../designers/constant-nodes.md)|셰이더 계산에서 리터럴 값 및 보간된 꼭짓점 상태 정보를 나타내는 데 사용할 수 있는 노드를 설명합니다. 꼭짓점 상태가 보간되고, 이에 따라 각 픽셀마다 다르기 때문에 각 픽셀 셰이더 인스턴스에서 다른 버전의 상수를 받습니다.|
 |[매개 변수 노드](../designers/parameter-nodes.md)|셰이더 계산에서 카메라 위치, 재질 속성, 조명 매개 변수, 시간 및 기타 앱 상태 정보를 나타내는 데 사용할 수 있는 노드를 설명합니다.|

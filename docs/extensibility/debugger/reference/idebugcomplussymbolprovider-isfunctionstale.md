@@ -1,27 +1,27 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
+title: 아이디버그컴플러스 심볼라이더::이스처스테일 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 121782e7febeb93844689c140d1994a68e3903b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4e5b42e8bb89a84b5274669173c93db3e287755a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351803"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733690"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
-지정 된 디버그 주소는 유효 하지 않은 간주 됩니다 결정 합니다.
+지정된 디버그 주소의 함수가 부실로 간주되는지 여부를 결정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,13 +39,13 @@ int IsFunctionStale(
 
 ## <a name="parameters"></a>매개 변수
 `pAddress`\
-[in] 가 나타낸 디버그 주소는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스입니다. 이 주소는 METHOD_ADDRESS 여야 합니다.
+【인】 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스로 표시되는 디버그 주소입니다. 이 주소는 METHOD_ADDRESS 있어야 합니다.
 
-## <a name="return-value"></a>반환 값
-함수는 유효 하지 않은 것으로 간주 됩니다을 하는 경우 반환 `S_OK`합니다. 함수가 유효 하지 않은 경우 반환 `S_FALSE`합니다.
+## <a name="return-value"></a>Return Value
+함수가 오래된 것으로 간주되면 `S_OK`반환합니다. 함수가 오래되지 않은 경우 `S_FALSE`을 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.
+다음 예제에서는 [IDebugComPlusSymbol공급자](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **CDebugSymbolProvider** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionStale(
@@ -91,5 +91,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

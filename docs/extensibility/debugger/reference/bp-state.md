@@ -1,5 +1,5 @@
 ---
-title: BP_STATE | Microsoft Docs
+title: BP_STATE | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a35ddccf1723067574942711db89cb64cc41f7b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350609"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737806"
 ---
-# <a name="bpstate"></a>BP_STATE
-바인딩된 중단점의 존재 여부를 지정 하 고 또한 사용 되는지 여부를 지정 합니다.
+# <a name="bp_state"></a>BP_STATE
+바인딩된 중단점의 존재를 지정하고 활성화된 경우 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,27 +48,27 @@ public enum enum_BP_STATE {
 
 ## <a name="fields"></a>필드
 `BPS_NONE`\
-중단점이 있는지를 지정 합니다.
+중단점이 없음을 지정합니다.
 
 `BPS_DELETED`\
-중단점 삭제 된 것을 지정 합니다.
+중단점이 삭제되었음을 지정합니다.
 
 `BPS_DISABLED`\
-중단점은 사용 되지 않음을 지정 합니다.
+중단점이 비활성화되도록 지정합니다.
 
 `BPS_ENABLED`\
-중단점이 설정 되었음을 지정 합니다.
+중단점이 활성화되도록 지정합니다.
 
 ## <a name="remarks"></a>설명
-반환 된 [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 메서드.
+[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 메서드에서 반환되었습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [겟스테이트](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

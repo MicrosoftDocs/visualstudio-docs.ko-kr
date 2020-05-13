@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Microsoft Docs
+title: IDebugMessageEvent2::GetMessage | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - GetMessage method
 - IDebugMessageEvent2::GetMessage method
 ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 758b3b860167ed8c2db8bb20c0d76ab289e39a0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 819b796a656f0ef8775fbb1c9e800e3019b81729
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346888"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727407"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 표시할 메시지를 가져옵니다.
@@ -50,24 +50,24 @@ int GetMessage( 
 
 ## <a name="parameters"></a>매개 변수
 `pMessageType`\
-[out] 값을 반환 합니다 [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 메시지의 형식을 설명 하는 열거형입니다.
+【아웃】 [메시지 유형형식을](../../../extensibility/debugger/reference/messagetype.md) 설명하는 MESSAGETYPE 열거형에서 값을 반환합니다.
 
 `pbstrMessage`\
-[out] 메시지를 반환합니다.
+【아웃】 메시지를 반환합니다.
 
 `pdwType`\
-[out] Win32의 규칙을 사용 하 여 메시지의 형식을 반환 `MessageBox` 함수입니다. 참조 된 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 세부 정보에 대 한 함수입니다.
+【아웃】 Win32 `MessageBox` 함수의 규칙을 사용하여 메시지 형식을 반환합니다. 자세한 내용은 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 기능을 참조하십시오.
 
 `pbstrHelpFileName`\
-[out에서] 도움말 파일의 이름을 반환합니다. null 일 수 있습니다 (C++) 또는 빈 (C#) 도움말 파일이 없는 경우 값입니다.
+【인, 아웃】 도움말 파일 이름을 반환합니다. 도움말 파일이 없는 경우 null(C++) 또는 빈(C#) 값일 수 있습니다.
 
 `pdwHelpId`\
-[out에서] 도움말 식별자를 반환합니다. 있습니다 수이 메시지와 관련 된 도움말이 없습니다 경우에 0입니다.
+【인, 아웃】 도움말 식별자를 반환합니다. 이 메시지와 관련된 도움이 없는 경우 0일 수 있습니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
-- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
+- [메시지 유형](../../../extensibility/debugger/reference/messagetype.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

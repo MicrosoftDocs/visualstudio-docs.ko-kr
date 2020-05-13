@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Emulator for Android의 시스템 요구 사항 | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916813"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77272048"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항
 
@@ -124,7 +126,7 @@ Windows의 Hyper-V 요구 사항
  자신을 수동으로 그룹에 추가하려면 로컬 사용자 및 그룹 스냅인을 엽니다.
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>부팅 가능한 VHD에서 에뮬레이터 실행은 지원되지 않음
- 부팅 가능한 VHD에서 Windows를 실행하는 동안 Android용 Visual Studio 에뮬레이터에서 앱을 실행하려는 경우 에뮬레이터는 일반적으로 시작되는 데 몇 분 정도 걸리거나 시작되지 않습니다. 에뮬레이터를 시작하지 못하면 다음 메시지가 나타납니다. 앱을 배포하지 못했습니다. 다시 시도하세요.
+ 부팅 가능한 VHD에서 Windows를 실행하는 동안 Android용 Visual Studio 에뮬레이터에서 앱을 실행하려는 경우 에뮬레이터는 일반적으로 시작되는 데 몇 분 정도 걸리거나 시작되지 않습니다. 에뮬레이터가 시작되지 못하는 경우 다음과 같은 메시지가 표시됩니다. 앱을 배포하지 못했습니다. 나중에 다시 시도하세요.
 
  이 구성은 지원되지 않습니다. 관련된 문제에 대한 자세한 내용은 [Android용 Visual Studio 에뮬레이터 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요.
 
@@ -145,6 +147,6 @@ ReFS 파일 시스템에서는 가상 하드 디스크 파일에 무결성 비�
 
 에뮬레이터가 OpenGL ES에서 사용되는 GPU 등에 대한 호출을 에뮬레이트하기 위해서는 컴퓨터에 적절한 DirectX 드라이버와 함께 DirectX 호환 GPU가 설치되어 있어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Android용 Visual Studio 에뮬레이터 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

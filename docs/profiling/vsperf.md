@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779937"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -33,7 +33,7 @@ ms.locfileid: "74779937"
 |**/app:{AppName}**|프로파일러를 시작하고 지정한 앱이 시작 메뉴에서 시작될 때까지 기다립니다.<br /><br /> 설치된 앱의 앱 Name 및 PackageFullName을 보려면 `vsperf /listapps`를 실행합니다.|
 |**/package:{PackageFullName}**|프로파일러를 시작하고 지정한 앱이 시작 메뉴에서 시작될 때까지 기다립니다.<br /><br /> 설치된 앱의 앱 Name 및 PackageFullName을 보려면 `vsperf /listapps`를 실행합니다.|
 |**/js**|JavaScript 앱을 프로파일링하는 데 필요합니다.<br /><br /> JavaScript 앱에서 성능 데이터를 수집합니다.<br /><br /> /package 또는 /attach와 함께 사용해야 합니다.|
-|**/noclr**|선택 사항입니다. CLR 데이터를 수집하지 않습니다.<br /><br /> /package 또는 /attach와 함께 사용해야 합니다.<br /><br /> 최적화 상태이며 관리되는 기호를 확인하지 않습니다.|
+|**/noclr**|(선택 사항) CLR 데이터를 수집하지 않습니다.<br /><br /> /package 또는 /attach와 함께 사용해야 합니다.<br /><br /> 최적화 상태이며 관리되는 기호를 확인하지 않습니다.|
 |**/listapps**|설치된 응용 프로그램 Name 및 PackageFullNames의 목록을 표시합니다.|
 
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Windows 8 데스크톱 애플리케이션 및 Windows Server 2012 애플리케이션 전용
@@ -51,7 +51,7 @@ ms.locfileid: "74779937"
 |||
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|지정된 프로세스에서 데이터를 수집합니다.<br /><br /> 작업 관리자를 사용하여 실행 중인 앱의 PID(프로세스 ID) 및 프로세스 이름을 확인합니다.|
-|**/file:{ReportName}**|선택 사항입니다. 기존 파일을 덮어쓰는 출력 파일을 지정합니다.<br /><br /> /package 또는 /attach와 함께 사용해야 합니다.|
+|**/file:{ReportName}**|(선택 사항) 기존 파일을 덮어쓰는 출력 파일을 지정합니다.<br /><br /> /package 또는 /attach와 함께 사용해야 합니다.|
 |**/pause**|데이터 수집을 일시 중지합니다.|
 |**/resume**|데이터 수집을 다시 시작합니다.|
 |**/stop**|데이터 수집을 중지하고 대상 프로세스를 종료합니다.|

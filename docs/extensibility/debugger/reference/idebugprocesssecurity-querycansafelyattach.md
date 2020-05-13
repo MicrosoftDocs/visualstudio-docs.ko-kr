@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
+title: IDebugProcess 보안::쿼리안전연결 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity::QueryCanSafelyAttach
 ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e718efddc90c45ced7e497a9c66c9ab3889c090
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e03ccbb7761802401239768c54f4ea5b36ab86bf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311432"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723204"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-이 메서드는 사용자는 안전 하지 않은 프로세스에 연결 하려면 먼저 경고를 표시 하려면 포트 공급자를 사용 합니다.
+이 방법을 사용하면 포트 공급자가 안전하지 않은 프로세스에 연결하기 전에 경고를 표시할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,14 +33,14 @@ HRESULT QueryCanSafelyAttach();
 int QueryCanSafelyAttach();
 ```
 
-## <a name="return-value"></a>반환 값
- 반환 값은 아래와 같습니다.
+## <a name="return-value"></a>Return Value
+ 반환 값은 다음과 같습니다.
 
-- `S_OK`: 프로세스에 연결 하는 것이 안전 하 고 경고 대화 상자가 표시 됩니다.
+- `S_OK`: 처리에 부착해도 안전하며 경고 대화 상자가 표시되지 않습니다.
 
-- `S_FALSE`: 연결 보안 문제가 될 수 하 고 경고 대화 상자가 표시 됩니다.
+- `S_FALSE`: 연결은 보안 문제가 될 수 있으며 경고가 있는 대화 상자가 표시됩니다.
 
-- `FAILURE`: 프로세스에 연결 실패 합니다.
+- `FAILURE`: 프로세스에 연결하지 못합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

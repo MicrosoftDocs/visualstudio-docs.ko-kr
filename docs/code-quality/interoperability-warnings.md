@@ -9,17 +9,17 @@ helpviewer_keywords:
 - interoperability warnings
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1eb65f52df4b27837c00b7557db0c5e15e6c187
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: e18b8ccbdc688586004a363f16360ace1bb488c9
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091758"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167600"
 ---
 # <a name="interoperability-warnings"></a>상호 운용성 경고
 
@@ -27,7 +27,7 @@ ms.locfileid: "77091758"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-| 규칙 | 설명 |
+| 규칙 | Description |
 | - | - |
 | [CA1400: P/Invoke 진입점이 있어야 합니다.](../code-quality/ca1400.md) | public 또는 protected 메서드는 System.Runtime.InteropServices.DllImportAttribute 특성으로 표시됩니다. 관리되지 않는 라이브러리를 찾을 수 없거나 해당 메서드와 라이브러리의 함수가 일치하지 않습니다. |
 | [CA1401: P/Invoke는 노출되지 않아야 합니다.](../code-quality/ca1401.md) | 공용 형식의 public 또는 protected 메서드에 T e m. S y s 특성이 있습니다 .이 특성은 Visual Basic의 Declare 키워드에 의해 구현 됩니다. 이러한 메서드는 노출되지 않아야 합니다. |

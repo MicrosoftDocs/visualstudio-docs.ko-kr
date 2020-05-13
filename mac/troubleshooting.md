@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
 ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691894"
 ---
 # <a name="troubleshooting"></a>문제 해결
@@ -21,7 +21,7 @@ ms.locfileid: "67691894"
 
 ![로그 디렉터리 열기 메뉴 항목](media/troubleshooting-image1.png)
 
-## <a name="viewing-exceptions"></a>예외 보기
+## <a name="viewing-exceptions"></a>예외 사항 보기
 
 예외가 catch되면 예외 풍선이 나타납니다. 자세한 내용을 보려면 **자세히 보기** 단추를 선택합니다.
 

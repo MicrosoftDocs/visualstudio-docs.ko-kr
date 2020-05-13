@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589203"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
@@ -33,11 +33,11 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
 
 1. Visual Studio에서 새 **Windows Forms 컨트롤 라이브러리** 프로젝트를 만듭니다. 프로젝트 이름을 **MessageEditors**로 지정합니다.
 
-   프로젝트가 새 솔루션에 추가되고 *UserControl1.cs*라는 <xref:System.Windows.Forms.UserControl>이 디자이너에 표시됩니다.
+   프로젝트가 새 솔루션에 추가되고 <xref:System.Windows.Forms.UserControl>UserControl1.cs*라는* 이 디자이너에 표시됩니다.
 
 1. **도구 상자**의 **공용 컨트롤** 범주에서 <xref:System.Windows.Forms.RichTextBox>를 UserControl1로 끌어 옵니다.
 
-1. <xref:System.Windows.Forms.RichTextBox> 컨트롤의 오른쪽 위에 있는 작업 태그 문자 모양(![스마트 태그 문자 모양](../test/media/vs_winformsmttagglyph.gif))을 선택한 다음, **부모 컨테이너에서 도킹**을 선택합니다.
+1. ![ 컨트롤의 오른쪽 위에 있는 작업 태그 문자 모양(](../test/media/vs_winformsmttagglyph.gif)스마트 태그 문자 모양<xref:System.Windows.Forms.RichTextBox>)을 선택한 다음, **부모 컨테이너에서 도킹**을 선택합니다.
 
 1. **솔루션 탐색기**에서 Windows Forms 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
@@ -119,7 +119,7 @@ private MessageEditorControl messageEditorControl
 
 messageEditorControl 인스턴스는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> 메서드로 만든 플러그 인 대화 상자 내에서 호스팅됩니다. 또한 messageEditorControl의 <xref:System.Windows.Forms.RichTextBox>는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>의 콘텐츠로 채워집니다. 그러나 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*>에서 `true`를 반환하지 않는 경우에는 플러그 인을 만들 수 없습니다. 이 편집기의 경우 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*>의 `true`에 "xml"이 포함되어 있으면 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*>은 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>를 반환합니다.
 
-문자열 본문의 편집이 완료된 후 사용자가 플러그 인 대화 상자에서 **확인**을 클릭하면 편집된 텍스트를 문자열로 가져오고 웹 성능 테스트 편집기의 요청에 있는 **문자열 본문**을 업데이트하기 위해 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*>가 호출됩니다.
+문자열 본문의 편집이 완료된 후 사용자가 플러그 인 대화 상자에서 **확인**을 클릭하면 편집된 텍스트를 문자열로 가져오고 웹 성능 테스트 편집기의 요청에 있는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*>문자열 본문**을 업데이트하기 위해** 가 호출됩니다.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>클래스 만들기 및 IStringHttpBodyEditorPlugin 인터페이스 구현
 
@@ -206,7 +206,7 @@ private MessageEditorControl messageEditorControl
 
 messageEditorControl 인스턴스는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.CreateEditor*> 메서드로 만든 플러그 인 대화 상자 내에서 호스팅됩니다. 또한 messageEditorControl의 <xref:System.Windows.Forms.RichTextBox>는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>의 콘텐츠로 채워집니다. 그러나 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*>에서 `true`를 반환하지 않는 경우에는 플러그 인을 만들 수 없습니다. 이 편집기의 경우 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*>의 `true`에 "msbin1"이 포함되어 있으면 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*>은 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>를 반환합니다.
 
-문자열 본문의 편집이 완료된 후 사용자가 플러그 인 대화 상자에서 **확인**을 클릭하면 편집된 텍스트를 문자열로 가져오고 웹 성능 테스트 편집기의 요청에 있는 **BinaryHttpBody.Data**를 업데이트하기 위해 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.GetNewValue*>가 호출됩니다.
+문자열 본문의 편집이 완료된 후 사용자가 플러그 인 대화 상자에서 **확인**을 클릭하면 편집된 텍스트를 문자열로 가져오고 웹 성능 테스트 편집기의 요청에 있는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.GetNewValue*>BinaryHttpBody.Data**를 업데이트하기 위해** 가 호출됩니다.
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>클래스에 IBinaryHttpBodyEditorPlugin을 추가하려면
 
@@ -297,7 +297,7 @@ Windows 컨트롤 라이브러리 프로젝트의 대상 프레임워크가 .NET
 
 자세한 내용은 [애플리케이션 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

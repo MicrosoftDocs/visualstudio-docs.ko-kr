@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595724"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649429"
 ---
 # <a name="debug-page-project-designer"></a>프로젝트 디자이너, 디버그 페이지
 
@@ -87,5 +87,5 @@ Visual Basic 애플리케이션에서 SQL 프로시저의 디버깅을 사용하
 - [디버거 소개](../../debugger/debugger-feature-tour.md)
 - [C# 디버그 구성에 대한 프로젝트 설정](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 디버그 구성에 대한 프로젝트 설정](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [ClickOnce 앱 보안](../../deployment/securing-clickonce-applications.md)
 - [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)

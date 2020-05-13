@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: IDebug중단점요청2:GetRequestInfo | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734943"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.
+이 중단점 요청을 설명하는 중단점 요청 정보를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,16 +43,16 @@ int GetRequestInfo( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-[in] 플래그의 조합을 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 에서 필드를 결정 하는 열거형을 `pBPRequestInfo` 작성 해야 할 매개 변수는.
+【인】 매개 변수의 필드를 채울 필드를 결정하는 BPREQI_FIELDS 열거형의 플래그 조합입니다. [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) `pBPRequestInfo`
 
 `pBPRequestInfo`\
-[out] 지정 된 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 중단점 요청에 대 한 설명을로 채워질 구조입니다.
+【아웃】 중단점 요청에 대한 설명으로 채워질 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조를 지정합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugBreakpointRequest` 노출 하는 개체를 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스입니다.
+ 다음 예제에서는 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스를 노출 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(
@@ -216,7 +216,7 @@ HRESULT CDebugBreakpointRequest::CopyBP_REQUEST_INFO(
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

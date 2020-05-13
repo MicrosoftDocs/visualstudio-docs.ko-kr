@@ -1,19 +1,19 @@
 ---
 title: C/C++에 대한 단위 테스트 작성
 description: CTest, Boost.Test 및 Google Test를 비롯한 다양한 테스트 프레임워크를 사용하여 Visual Studio에서 C++ 유닛 테스트를 작성합니다.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649608"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -41,7 +41,7 @@ C++ 단위 테스트 프로젝트는 [CodeLens](../ide/find-code-changes-and-oth
 
 - **Boost.Test**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **테스트 탐색기**와 통합되었지만 현재는 프로젝트 템플릿이 없습니다. 수동으로 구성해야 합니다. 자세한 내용은 [방법: Visual Studio에서 Boost.Test 사용](how-to-use-boost-test-for-cpp.md)을 참조하세요.
 
-- **CTest** 지원은 **C++를 사용한 데스크톱 개발** 워크로드의 일부인 **C++ CMake 도구** 구성 요소에 포함되어 있습니다. 그러나 CTest는 아직 **테스트 탐색기**와 완전히 통합되지 않았습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
+- **CTest** 지원은 **C++를 사용한 데스크톱 개발** 워크로드의 일부인 **C++ CMake 도구** 구성 요소에 포함되어 있습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
 
 **Visual Studio 2015 및 이전 버전**
 
@@ -79,7 +79,7 @@ Visual Studio Marketplace에서 Google Test 어댑터 및 Boost.Test 어댑터 �
 
 ### <a name="link-to-object-or-library-files"></a>개체 또는 라이브러리 파일에 연결
 
-테스트 코드가 테스트할 함수를 내보내지 않는 경우 .obj 또는 .lib 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다. 자세한 내용은 [개체 또는 라이브러리 파일에 테스트를 연결하려면](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files)을 참조하세요.
+테스트 코드가 테스트할 함수를 내보내지 않는 경우 .obj 또는 .lib 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다. 자세한 내용은 [개체 또는 라이브러리 파일에 테스트를 연결하려면](how-to-use-microsoft-test-framework-for-cpp.md#object_files)을 참조하세요.
 
 ### <a name="add-include-directives-for-header-files"></a>헤더 파일에 대해 #include 지시문 추가
 

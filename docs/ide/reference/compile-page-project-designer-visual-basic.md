@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111311"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>프로젝트 디자이너, 컴파일 페이지(Visual Basic)
@@ -41,7 +41,7 @@ ms.locfileid: "76111311"
 > [!NOTE]
 > 단순화된 빌드 구성을 사용하면 프로젝트 시스템에서 디버그 버전을 빌드할지 아니면 릴리스 버전을 빌드할지 결정합니다. 따라서 **구성** 및 **플랫폼** 목록이 표시되지 않습니다.
 
-**구성**
+**Configuration**
 
 표시하거나 수정할 구성 설정을 지정합니다. 설정은 **디버그**(기본값), **릴리스** 또는 **모든 구성**입니다. 자세한 내용은 [빌드 구성 이해](../../ide/understanding-build-configurations.md) 및 [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
 
@@ -85,7 +85,7 @@ ms.locfileid: "76111311"
 
 개체에 `Object` 형식으로 선언된 변수의 속성 또는 메서드에 할당되면 런타임에 바인딩됩니다. 자세한 내용은 [Option Strict 문](/dotnet/visual-basic/language-reference/statements/option-strict-statement) 및 [초기 바인딩 및 런타임에 바인딩](/dotnet/visual-basic/programming-guide/language-features/early-late-binding)을 참조하세요.
 
-암시적 개체 형식 오류는 선언된 변수에 대해 적절한 형식이 유추될 수 없어 `Object`의 형식이 유추될 때 발생합니다. 주로 `As` 절을 사용하지 않고 `Dim` 문을 사용하여 변수를 선언하고, `Option Infer`가 꺼져 있는 경우 발생합니다. 자세한 내용은 [Option Strict 문](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer 문](/dotnet/visual-basic/language-reference/statements/option-infer-statement) 및 [Visual Basic 언어 사양](/dotnet/visual-basic/reference/language-specification)을 참조하세요.
+암시적 개체 형식 오류는 선언된 변수에 대해 적절한 형식이 유추될 수 없어 `Object`의 형식이 유추될 때 발생합니다. 주로 `Dim` 절을 사용하지 않고 `As` 문을 사용하여 변수를 선언하고, `Option Infer`가 꺼져 있는 경우 발생합니다. 자세한 내용은 [Option Strict 문](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer 문](/dotnet/visual-basic/language-reference/statements/option-infer-statement) 및 [Visual Basic 언어 사양](/dotnet/visual-basic/reference/language-specification)을 참조하세요.
 
 **Option Strict** 설정은 [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) 컴파일러 옵션에 해당합니다.
 
@@ -187,7 +187,7 @@ ms.locfileid: "76111311"
 
 **AdvancedCompiler 설정** 대화 상자에 액세스하려면 이 단추를 클릭합니다. **AdvancedCompiler 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 Visual Basic 프로젝트에만 적용됩니다. 자세한 내용은 [고급 컴파일러 설정 대화 상자(Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Visual Basic 명령줄 컴파일러](/dotnet/visual-basic/reference/command-line-compiler/index)

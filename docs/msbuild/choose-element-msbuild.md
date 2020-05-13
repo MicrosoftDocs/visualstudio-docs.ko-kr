@@ -19,14 +19,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593371"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77634476"
 ---
 # <a name="choose-element-msbuild"></a>Choose 요소(MSBuild)
+
 자식 요소를 평가하여 평가할 `ItemGroup` 요소 및/또는 `PropertyGroup` 요소의 집합 하나를 선택합니다.
 
  \<프로젝트> \<선택> \<시기> \<선택>... \<그렇지 않으면> \<선택 >...
@@ -41,9 +42,11 @@ ms.locfileid: "75593371"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
+
  없음
 
 ### <a name="child-elements"></a>자식 요소
@@ -58,13 +61,15 @@ ms.locfileid: "75593371"
 | 요소 | 설명 |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | 모든 `When` 요소가 `false`로 평가될 경우 실행할 코드 블록을 지정합니다. |
-| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
+| [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 | [When](../msbuild/when-element-msbuild.md) | `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다. |
 
 ## <a name="remarks"></a>설명
+
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.
 
 ## <a name="example"></a>예제
+
  다음 프로젝트에서는 `Choose` 요소를 사용하여 설정할 `When` 요소의 속성 값 집합을 선택합니다. 두 `When` 요소의 `Condition` 특성이 모두 `false`로 평가되면 `Otherwise` 요소의 속성 값이 설정됩니다.
 
 ```xml
@@ -113,5 +118,6 @@ ms.locfileid: "75593371"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [조건부 구문](../msbuild/msbuild-conditional-constructs.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784886"
 ---
 # <a name="django-web-project-template"></a>Django 웹 프로젝트 템플릿
@@ -51,15 +51,15 @@ Django 관리 콘솔은 **프로젝트** 메뉴의 다양한 명령을 통해서
 
     ![Django Shell 열기 명령의 결과](media/template-django-console-shell.png)
 
-- **Django Sync DB**: **대화형** 창에서 `manage.py syncdb`를 실행합니다.
+- **Django Sync DB**: `manage.py syncdb`대화형**창에서**를 실행합니다.
 
     ![Django Sync DB 명령의 결과](media/template-django-console-sync-db.png)
 
-- **정적 수집**: `manage.py collectstatic --noinput`을 실행하여 *settings.py*의 `STATIC_ROOT`에 지정된 경로에 모든 정적 파일을 복사합니다.
+- **정적 수집**: `manage.py collectstatic --noinput`을 실행하여 `STATIC_ROOT`settings.py*의* 에 지정된 경로에 모든 정적 파일을 복사합니다.
 
     ![정적 수집 명령의 결과](media/template-django-console-collect-static.png)
 
-- **유효성 검사**: `manage.py validate`를 실행하여 *settings.py*의 `INSTALLED_APPS`에 지정된 설치된 모델에서 모든 유효성 검사 오류를 보고합니다.
+- **유효성 검사**: `manage.py validate`를 실행하여 `INSTALLED_APPS`settings.py*의* 에 지정된 설치된 모델에서 모든 유효성 검사 오류를 보고합니다.
 
     ![유효성 검사 명령의 결과](media/template-django-console-validate.png)
 

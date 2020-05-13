@@ -1,25 +1,25 @@
 ---
-title: Menus 요소 | Microsoft Docs
+title: 메뉴 요소 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef5124bc59a4eb0671ba5493f79ea301aa48fc71
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346637"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702584"
 ---
-# <a name="menus-element"></a>Menus 요소
-모든 메뉴 및 VSPackage 구현 하는 도구 모음을 정의 합니다.
+# <a name="menus-element"></a>메뉴 요소
+VSPackage가 구현하는 모든 메뉴와 도구 모음을 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,22 +35,22 @@ ms.locfileid: "66346637"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|
+|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[Menus 요소](../extensibility/menus-element.md)|모든 메뉴 및 VSPackage 구현 하는 도구 모음을 정의 합니다.|
-|[Menu 요소](../extensibility/menu-element.md)|단일 메뉴 또는 도구 모음을 나타냅니다.|
+|[메뉴 요소](../extensibility/menus-element.md)|VSPackage가 구현하는 모든 메뉴와 도구 모음을 정의합니다.|
+|[메뉴 요소](../extensibility/menu-element.md)|단일 메뉴 또는 도구 모음을 나타냅니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[Commands 요소](../extensibility/commands-element.md)|VSPackage의 명령 컬렉션을 나타냅니다.|
+|[명령 요소](../extensibility/commands-element.md)|VSPackage에서 명령 컬렉션을 나타냅니다.|
 
 ## <a name="example"></a>예제
 
@@ -77,6 +77,6 @@ ms.locfileid: "66346637"
 <Commands>
 ```
 
-## <a name="see-also"></a>참고자료
-- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>참조
+- [VSPackage사용자 인터페이스 요소를 추가하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984917"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac용 Visual Studio 2017 설치
@@ -89,7 +89,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
 10. 설치가 완료되면 **시작**을 눌러 Visual Studio에서 앱 개발을 시작할 수 있습니다.
 
-    ![Visual Studio를 엽니다.](media/installer-image11.png)
+    ![Visual Studio 열기](media/installer-image11.png)
 
 > [!NOTE]
 > 원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://visualstudio.microsoft.com/vs/)를 다시 실행해야 합니다.

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbe8db6c6bd7df5285880f7f860df5bb26db736a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590113"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>방법: 클래스 디자이너에서 인터페이스 구현
@@ -33,7 +33,7 @@ ms.locfileid: "75590113"
 
      롤리팝이 클래스에 연결되도록 표시되고 인터페이스 이름을 가진 레이블은 상속 관계를 식별합니다. Visual Studio는 모든 인터페이스 멤버에 대한 스텁을 생성합니다.
 
-자세한 내용은 [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)를 참조하세요.
+자세한 내용은 [방법: 형식 간의 상속 만들기](how-to-create-inheritance-between-types.md)를 참조하세요.
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>클래스 뷰 창에서 인터페이스를 구현하려면
 
@@ -48,7 +48,7 @@ ms.locfileid: "75590113"
 
      롤리팝이 클래스에 연결되도록 표시되고 인터페이스 이름을 가진 레이블은 상속 관계를 식별합니다. Visual Studio는 모든 인터페이스 멤버에 대한 스텁을 생성합니다. 이 시점에서 인터페이스를 구현합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 클래스 디자이너를 사용하여 형식 만들기](how-to-create-types.md)
 - [방법: 기존 형식 보기](how-to-view-existing-types.md)

@@ -6,10 +6,10 @@ ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.openlocfilehash: 9fd030c5246908d578b49a9567c4e0f4cf1c16e8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72749024"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>자습서: 기존 ASP.NET Core 웹 애플리케이션 확장

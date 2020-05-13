@@ -1,7 +1,7 @@
 ---
 title: 병렬 응용 프로그램 디버그 | Microsoft Docs
 description: Visual Studio에서 병렬 작업 및 병렬 스택 창을 사용 하 여 디버그
-ms.date: 03/22/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728591"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416427"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>연습: Visual Studio에서 병렬 응용 프로그램 디버깅 (C#, Visual Basic, C++)
 
@@ -45,7 +45,7 @@ ms.locfileid: "72728591"
 
 - 창에서 그룹화, 확대/축소 및 기타 관련 기능을 통한 크기 조정을 처리하는 방법
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습에서는 최신 버전의 Visual Studio에서 기본적으로 사용 하도록 설정 되어 **내 코드만** 를 사용할 수 있다고 가정 합니다. **도구** 메뉴에서 **옵션**을 클릭하고, **디버깅** 노드를 확장하고, **일반**을 선택한 다음, **내 코드만 사용(관리 전용)** 을 선택합니다. 이 기능을 설정하지 않아도 연습을 사용할 수 있지만 결과가 그림과 다를 수 있습니다.
 
 ## <a name="c-sample"></a>C# 샘플
@@ -54,7 +54,7 @@ ms.locfileid: "72728591"
 ## <a name="c-sample"></a>C++ 샘플
  C++ 샘플을 사용하는 경우 이 항목의 외부 코드에 대한 참조를 무시해도 됩니다. 외부 코드는 C# 샘플에만 적용됩니다.
 
-## <a name="illustrations"></a>그림
+## <a name="illustrations"></a>일러스트레이션
  이 항목의 그림은 C# 샘플을 실행하는 쿼드 코어 컴퓨터에서 기록되었습니다. 다른 구성을 사용하여 이 연습을 수행할 수도 있지만 그림이 컴퓨터에 표시되는 것과 다를 수 있습니다.
 
 ## <a name="creating-the-sample-project"></a>샘플 프로젝트 만들기
@@ -64,25 +64,37 @@ ms.locfileid: "72728591"
 
 1. Visual Studio를 연 다음 새 프로젝트를 만듭니다.
 
-    ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력 하 여 검색 상자를 열고 **console** (또는 **c + +** )을 입력 한 후 **템플릿**을 선택 하 고 다음을 수행 합니다.
+   ::: moniker range=">=vs-2019"
 
-    - 또는 Visual Basic의 경우 C# 또는 Visual Basic에 대해 **새 콘솔 앱 만들기 (.NET Framework) 프로젝트** 를 선택 합니다. C# 표시되는 대화 상자에서 **만들기**를 선택합니다.
-    - 에 C++대해 **새 콘솔 앱 프로젝트 만들기** 를 선택 C++합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
+   시작 창이 열려 있지 않으면 **파일** > **시작 창**을 선택합니다.
 
-    그런 다음 이름을 입력 하거나 기본 이름을 사용 하 고 **만들기**를 클릭 합니다.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 다음을 선택 합니다.
+   시작 창에서 **새 프로젝트 만들기**를 선택합니다.
 
-    - 앱의 경우 **시각적 C#개체** 에서 **Windows 데스크톱**을 선택한 다음 가운데 창에서 **콘솔 앱 (.NET Framework)** 을 선택 합니다. C#
-    - Visual Basic 앱의 경우 **Visual Basic**에서 **Windows 데스크톱**을 선택한 다음 가운데 창에서 **콘솔 앱 (.NET Framework)** 을 선택 합니다.
-    - 앱의 경우 **시각적 개체 C++** 에서 **windows 데스크톱**을 선택한 다음 **windows 콘솔 응용 프로그램**을 선택 합니다. C++
+   **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔*을 입력합니다. 그런 다음 언어 **C#** 목록 **C++** 에서, 또는 **Visual Basic** 를 선택 하 고 플랫폼 목록에서 **Windows** 를 선택 합니다. 
 
-    그런 다음 이름을 입력 하거나 기본 이름을 사용 하 고 **확인**을 클릭 합니다.
-    ::: moniker-end
+   언어 및 플랫폼 필터를 적용 한 후 **콘솔 앱 (.net Core)** 또는 C++ **콘솔 앱** 템플릿을 선택 하 고 **다음**을 선택 합니다.
 
-    **콘솔 앱** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발*** 또는 **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+   > [!NOTE]
+   > 올바른 템플릿이 표시 되지 않으면 **도구** > 도구 **및 기능 가져오기**...로 이동 하 여 Visual Studio 설치 관리자를 엽니다. **.NET 데스크톱 개발*** 또는 **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+
+   **새 프로젝트 구성** 창에서 이름을 입력 하거나 **프로젝트 이름** 상자에 기본 이름을 사용 합니다. 그런 다음, **만들기**를 선택합니다.
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 다음을 선택 합니다.
+
+   - 앱의 경우 **시각적 C#개체** 에서 **Windows 데스크톱**을 선택한 다음 가운데 창에서 **콘솔 앱 (.NET Framework)** 을 선택 합니다. C#
+   - Visual Basic 앱의 경우 **Visual Basic**에서 **Windows 데스크톱**을 선택한 다음 가운데 창에서 **콘솔 앱 (.NET Framework)** 을 선택 합니다.
+   - 앱의 경우 **시각적 개체 C++** 에서 **windows 데스크톱**을 선택한 다음 **windows 콘솔 응용 프로그램**을 선택 합니다. C++
+
+   **콘솔 앱 (.Net Core)** 또는 C++ **콘솔 앱** 프로젝트 템플릿에 대 한가 표시 되지 않으면 도구 > 도구 **및 기능 가져오기** **...로 이동** 하 여 Visual Studio 설치 관리자를 엽니다. **.NET 데스크톱 개발*** 또는 **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+
+   그런 다음 이름을 입력 하거나 기본 이름을 사용 하 고 **확인**을 클릭 합니다.
+
+   **확인**을 선택합니다.
+   ::: moniker-end
+
+   새 콘솔 프로젝트가 나타납니다. 프로젝트를 만든 후에 소스 파일이 표시 됩니다.
 
 1. 프로젝트에서 .cpp, .cs 또는 .vb 코드 파일을 엽니다. 내용을 삭제하여 빈 코드 파일을 만듭니다.
 
@@ -244,7 +256,7 @@ ms.locfileid: "72728591"
 
      ![작업 창의 대기 중인 작업 두 개](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     작업 4는 작업 2에 할당된 스레드가 소유하는 모니터를 기다리고 있습니다. 머리글 행을 마우스 오른쪽 단추로 클릭 하 고 **열**  > **스레드 할당** 을 선택 하 여 작업 2에 대 한 스레드 할당 값을 확인 합니다.
+     작업 4는 작업 2에 할당된 스레드가 소유하는 모니터를 기다리고 있습니다. 머리글 행을 마우스 오른쪽 단추로 클릭 하 고 **열** > **스레드 할당** 을 선택 하 여 작업 2에 대 한 스레드 할당 값을 확인 합니다.
 
      ![작업 창의 대기 작업 및 도구 설명](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
@@ -311,7 +323,7 @@ ms.locfileid: "72728591"
 ## <a name="summary"></a>요약
  이 연습에서는 **병렬 작업** 및 **병렬 스택** 디버거 창에 대해 설명했습니다. 다중 스레드 코드를 사용하는 실제 프로젝트에서 이러한 창을 사용하십시오. C++, C# 또는 Visual Basic으로 작성된 병렬 코드를 검사할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [다중 스레드 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)

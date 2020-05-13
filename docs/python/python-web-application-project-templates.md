@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917378"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307108"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
@@ -39,17 +39,17 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 모든 **빈 \<프레임워크> 웹 프로젝트** 템플릿은 *requirements.txt* 파일에 선언된 거의 최소한의 상용구 코드와 필요한 종속성을 사용하여 프로젝트를 만듭니다.
 
-| 템플릿 | 설명 |
+| 템플릿 | Description |
 | --- | --- |
-| **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 `<name>`을 에코하는 `/` 및 `/hello/<name>` 페이지의 홈페이지를 사용하여 *app.py*에 최소 앱을 생성합니다. |
+| **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 *을 에코하는*  및 `/` 페이지의 홈페이지를 사용하여 `/hello/<name>`app.py`<name>`에 최소 앱을 생성합니다. |
 | **빈 Django 웹 프로젝트** | 코어 Django 사이트 구조를 사용하지만 Django 앱은 포함되지 않은 Django 프로젝트를 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 1단계](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요. |
-| **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 세부 단계를 수행한 결과가 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
+| **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)의 자세한 단계를 수행한 결과와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
 
 ### <a name="web-group"></a>웹 그룹
 
 모든 **\<프레임워크> 웹 프로젝트** 템플릿은 선택한 프레임워크와 관계없이 동일한 디자인으로 시작 웹앱을 만듭니다. 이 앱에는 부트스트랩을 사용하는 탐색 모음 및 반응형 디자인과 함께 홈, 정보 및 연락처 페이지가 포함됩니다. 각 앱은 정적 파일(CSS, JavaScript 및 글꼴)을 제공하도록 적절하게 구성되며, 프레임워크에 적합한 페이지 템플릿 메커니즘을 사용합니다.
 
-| 템플릿 | 설명 |
+| 템플릿 | Description |
 | --- | --- |
 | **Bottle 웹 프로젝트** | 정적 파일이 *static* 폴더에 포함되고 *app.py*의 코드를 통해 처리되는 앱을 생성합니다. 개별 페이지에 대한 라우팅은 *routes.py*에 포함되며, *보기* 폴더에는 페이지 템플릿이 포함되어 있습니다.|
 | **Django 웹 프로젝트** | 세 개의 페이지, 인증 지원 및 SQLite 데이터베이스(데이터 모델 없음)를 사용하여 Django 프로젝트 및 Django 앱을 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 4단계](learn-django-in-visual-studio-step-04-full-django-project-template.md)를 참조하세요. |
@@ -60,7 +60,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 **설문 조사 \<프레임워크> 웹 프로젝트** 템플릿은 사용자가 다양한 설문 조사 질문에 투표할 수 있는 시작 웹앱을 만듭니다. 각 앱은 데이터베이스를 사용하여 설문 조사 및 사용자 응답을 관리하는 **웹** 프로젝트 템플릿의 구조를 기반으로 합니다. 앱에는 *samples.json* 파일에서 설문 조사를 로드하는 적절한 데이터 모델과 특수한 앱 페이지(/seed)가 포함됩니다.
 
-| 템플릿 | 설명 |
+| 템플릿 | Description |
 | --- | --- |
 | **설문 조사 Bottle 웹 프로젝트** | 메모리 내 데이터베이스, MongoDB 또는 Azure Table Storage에 대해 실행할 수 있는 앱을 생성하며, `REPOSITORY_NAME` 환경 변수를 사용하여 구성합니다. 데이터 모델 및 데이터 저장소 코드는 *모델* 폴더에 포함되고 *settings.py* 파일에는 사용되는 데이터 저장소를 확인하는 코드가 포함되어 있습니다. |
 | **설문 조사 Django 웹 프로젝트** | 세 개의 페이지와 SQLite 데이터베이스를 사용하여 Django 프로젝트 및 Django 앱을 생성합니다. 인증된 관리자가 설문 조사를 만들고 관리할 수 있도록 하는 Django 관리 인터페이스에 대한 사용자 지정을 포함합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 6단계](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)를 참조하세요. |
@@ -75,7 +75,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 소스 제어를 사용하는 경우 가상 환경은 *requirements.txt*만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치**를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 자습서 학습 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 및 [Flask 자습서 학습 - 1-2 및 1-3단계](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
 
-Microsoft Azure App Service에 배포할 때는 [사이트 확장](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로**[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
+Microsoft Azure App Service에 배포할 때는 [사이트 확장](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 **requirements.txt** 파일에서 패키지를 자동으로 설치하지 *않으므로*[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
 
 Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*. 자세한 내용은 [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
 
@@ -145,7 +145,7 @@ Pyramid 앱은 현재 `pcreate` 명령줄 도구를 사용하여 최적으로 �
 
 ![Microsoft Azure Cloud Service 프로젝트 명령으로 변환](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Python 항목 템플릿 참조](python-item-templates.md)
 - [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)

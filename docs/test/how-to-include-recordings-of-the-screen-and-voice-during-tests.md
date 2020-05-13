@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d53f03ed711b613a44aaf7cd243bd9aadeb2c93b
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589021"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880327"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>방법: 테스트 설정을 사용하여 테스트를 수행하는 중에 화면 및 음성의 녹화/녹음 포함
 
@@ -58,8 +58,14 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 
 7. **확인**을 선택합니다. 테스트 설정에 대해 진단 추적 수집기 설정이 구성 및 저장됩니다.
 
+    ::: moniker range="vs-2017"
     > [!TIP]
     > 이 진단 데이터 어댑터의 구성을 다시 설정하려면 Visual Studio의 경우 **기본 구성으로 다시 설정**을 선택하고 Microsoft Test Manager의 경우에는 **기본값으로 다시 설정**을 선택합니다.
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    > [!TIP]
+    > 이 진단 데이터 어댑터의 구성을 다시 설정하려면 Visual Studio에서 **기본 구성으로 다시 설정**를 선택합니다.
+    ::: moniker-end
 
 ## <a name="see-also"></a>참조
 

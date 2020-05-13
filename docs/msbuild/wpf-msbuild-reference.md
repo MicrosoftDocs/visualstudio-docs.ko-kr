@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596309"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 참조
 
 WPF(Windows Presentation Foundation)는 이 섹션에서 설명되는 추가 빌드 지원을 사용하여 Microsoft Build Engine(MSBuild)을 확장합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [WPF .Targets 파일](../msbuild/wpf-dot-targets-files.md)
 
@@ -57,6 +57,6 @@ WPF .Targets 파일을 설명합니다.
 
 빌드 작업 창 어셈블리.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild](../msbuild/msbuild.md)

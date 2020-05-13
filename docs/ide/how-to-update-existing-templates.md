@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591361"
 ---
 # <a name="how-to-update-existing-templates"></a>방법: 기존 템플릿 업데이트
@@ -43,7 +43,7 @@ Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 
 
 ## <a name="manually-update-an-existing-template"></a>기존 템플릿 수동 업데이트
 
-압축된 *.zip* 파일에 있는 파일을 수정하여 **템플릿 내보내기 마법사**를 사용하지 않고 기존 템플릿을 업데이트할 수 있습니다.
+압축된 **.zip** 파일에 있는 파일을 수정하여 *템플릿 내보내기 마법사*를 사용하지 않고 기존 템플릿을 업데이트할 수 있습니다.
 
 ### <a name="to-manually-update-an-existing-template"></a>기존 템플릿을 수동으로 업데이트하려면
 
@@ -65,7 +65,7 @@ Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 
 
 1. 추출된 템플릿 파일과 이전 템플릿 *.zip* 파일을 삭제합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 메뉴 및 도구 모음 명령 최적화 | Microsoft Docs
+title: 메뉴 및 도구 모음 명령 최적화 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,29 +9,29 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c76e4f37fd77bd35526153bd86d419417a6cdb6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333120"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706914"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>메뉴 및 도구 모음 명령 최적화
-Vspackage 및 해당 해당 명령을 추가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 꽉된 UI를 발생할 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI 명령을 혼동을 최소화 하는 데 유용한 방법을 제공 합니다.
+VSPackage 및 해당 명령을 추가하면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI가 혼잡해질 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서는 UI 명령 혼동을 최소화하는 방법을 제공합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 - [명령을 사용 가능하게 지정](../../extensibility/internals/making-commands-available.md)
 
- 가 중 시키는 최소화 하기 위한 일반적인 지침을 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Vspackage를 추가 하면 UI입니다.
+ VSPackage를 추가할 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI의 혼잡을 최소화하기 위한 일반적인 지침을 제공합니다.
 
 - [배치 지침](../../extensibility/internals/command-placement-guidelines.md)
 
- 명령 집합의 크기에 따라 VSPackage 구현에 대 한 특정 지침을 제공 합니다.
+ 명령 집합의 크기에 따라 VSPackage를 구현하기 위한 특정 지침을 제공합니다.
 
 ## <a name="related-sections"></a>관련 단원
 - [명령, 메뉴 및 도구 모음](../../extensibility/internals/commands-menus-and-toolbars.md)

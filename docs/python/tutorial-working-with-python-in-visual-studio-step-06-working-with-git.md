@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72289710"
 ---
 # <a name="step-6-work-with-git"></a>6단계: Git 작업

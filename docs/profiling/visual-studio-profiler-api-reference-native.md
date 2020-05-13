@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778026"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 프로파일러 API 참조(네이티브)
@@ -27,7 +27,7 @@ Visual Studio 프로파일러 API를 사용하여 수집된 데이터의 양을 
 > [!NOTE]
 > 프로파일링 도구에 대한 경로를 가져오려면 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
 
 [CommentMarkProfile](../profiling/commentmarkprofile.md)

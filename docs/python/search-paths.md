@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62428440"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio에서 Python 검색 경로를 사용하는 방법
@@ -25,7 +25,7 @@ ms.locfileid: "62428440"
 1. 실행 중인 Python 코드를 포함하는 폴더입니다.
 1. 적용 가능한 환경 변수에 정의된 “모듈 검색 경로” 입니다. (코어 Python 설명서의 [모듈 검색 경로](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) 및 [환경 변수](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) 참조)
 
-그러나 Visual Studio에서는 변수가 전체 시스템에 대해 설정된 경우에도 검색 경로 환경 변수를 무시합니다. 실제로, 엄밀히 말해 전체 시스템에 대해 설정되었고, 자동으로 응답할 수 없는 특정 질문이 제기되기 *때문에* 무시됩니다. 참조된 모듈은 Python 2.7 또는 Python 3.6+용임을 의미하나요? 이 모듈이 표준 라이브러리 모듈을 재정의하게 되는가? 개발자가 이 동작을 알고 있는가 아니면 악의적인 하이재킹 시도인가?
+그러나 Visual Studio에서는 변수가 전체 시스템에 대해 설정된 경우에도 검색 경로 환경 변수를 무시합니다. 실제로 이렇게 무시되는 이유는 엄밀히 말해 전체 시스템에 대해 설정되었고, 따라서 자동으로 해결할 수 없는 다음과 같은 특정 질문이 제기되기 *때문입니다*. 참조된 모듈이 Python 2.7 또는 Python 3.6용인가요? 이 모듈이 표준 라이브러리 모듈을 재정의하게 되는가? 개발자가 이 동작을 알고 있는가 아니면 악의적인 하이재킹 시도인가?
 
 따라서 Visual Studio에서는 환경 및 프로젝트 모두에서 검색 경로를 직접 지정하는 방법을 제공합니다. Visual Studio에서 실행하거나 디버그하는 코드는 `PYTHONPATH` 값으로 검색 경로(및 기타 동등한 변수)를 받습니다. Visual Studio는 검색 경로를 추가하여 해당 위치의 라이브러리를 검사하고 필요한 경우(Visual Studio 2017 버전 15.5 및 이전 버전) 라이브러리에 대한 IntelliSense 데이터베이스를 빌드합니다(라이브러리 수에 따라 데이터베이스를 구성하는 데 다소 시간이 걸릴 수 있음).
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
+title: 아이디버그코드컨텍스트2::겟랭정보 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08138fcd67e7d4fd5115ac13fe1b8348f76245d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 465cc07b3ca75835afe0737fb22ba403acc4098b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339008"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734235"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
-이 코드 컨텍스트에 대 한 언어 정보를 가져옵니다.
+이 코드 컨텍스트에 대한 언어 정보를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,16 +43,16 @@ int GetLanguageInfo( 
 
 ## <a name="parameters"></a>매개 변수
 `pbstrLanguage`\
-[out에서] 같은 언어의 이름을 포함 하는 문자열을 반환 합니다. "C++."
+【인, 아웃】 "C++"와 같은 언어 이름이 포함된 문자열을 반환합니다.
 
 `pguidLanguage`\
-[out에서] 예를 들어 코드 컨텍스트에의 언어에 대 한 GUID를 반환 합니다 `guidCPPLang`합니다.
+【인, 아웃】 코드 컨텍스트의 언어에 대한 GUID를 반환합니다(예: `guidCPPLang`.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 하나 이상의 매개 변수는 null이 아닌 값을 반환 해야 합니다.
+ 매개 변수 중 하나 이상이 null이 아닌 값을 반환해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

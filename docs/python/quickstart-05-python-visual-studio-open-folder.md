@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62431160"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>빠른 시작: 폴더에서 Python 코드 열기 및 실행
@@ -68,7 +68,7 @@ ms.locfileid: "62431160"
 
 이런 경우도 시작 구성 JSON 파일에 줄을 추가하여 작업 디렉터리를 지정해야 합니다.
 
-1. **솔루션 탐색기**에서 Python(*.py*) 시작 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다.
+1. **솔루션 탐색기**에서 Python( *.py*) 시작 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다.
 
     ![Python 파일의 디버그 및 시작 설정 명령](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
@@ -109,7 +109,7 @@ ms.locfileid: "62431160"
 > [!div class="nextstepaction"]
 > [자습서: Visual Studio에서 Python 작업](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빠른 시작: 기존 코드에서 Python 프로젝트 만들기](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [빠른 시작: 리포지토리에서 Python 프로젝트를 만들기](quickstart-03-python-in-visual-studio-project-from-repository.md)

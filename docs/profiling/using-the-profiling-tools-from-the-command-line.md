@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778039"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>명령줄에서 프로파일링 도구 사용
@@ -30,7 +30,7 @@ ms.locfileid: "74778039"
 
 ## <a name="common-tasks"></a>일반 작업
 
-| 작업 | 관련 내용 |
+| Task | 관련 내용 |
 | - | - |
 | **기호 위치 설정:** 함수 및 매개 변수의 이름을 표시하려면 프로파일러가 프로파일링된 이진 파일의 기호(.*pdb*) 파일에 액세스할 수 있어야 합니다. 이러한 파일은 분석에서 확인하려는 Microsoft 운영 체제 및 애플리케이션의 기호 파일을 포함해야 합니다. 공용 Microsoft 기호 서버를 통해 올바른 Microsoft 이진 파일용 .*pdb* 파일이 있는지 확인할 수 있습니다. | -   [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
 | **애플리케이션 프로파일링:** 대상 애플리케이션을 프로파일링하는 데 사용하는 명령줄 도구 및 옵션은 애플리케이션의 유형, 프로파일링 방법 및 대상이 관리되는 애플리케이션인지 아니면 기본 애플리케이션인지에 따라 달라집니다. | -   [명령줄에서 프로파일링 방법 사용](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [서비스 프로파일링](../profiling/command-line-profiling-of-services.md) |

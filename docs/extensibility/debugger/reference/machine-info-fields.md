@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS | Microsoft Docs
+title: MACHINE_INFO_FIELDS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79bd733d987511a624235c06b5dbe83206e0c5bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89a2552bb6a8bea88f54a897b829ab89b30ff413
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339351"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714513"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-특정 컴퓨터에 대 한 검색할 정보의 종류를 지정 합니다.
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
+특정 컴퓨터에 대해 검색할 정보의 종류를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,29 +46,29 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
 ## <a name="fields"></a>필드
  `MCIF_NAME`\
- 초기화/사용 된 `bstrName` 구조의 필드입니다.
+ 구조에서 `bstrName` 필드를 초기화/사용합니다.
 
  `MCIF_FLAGS`\
- 초기화/사용 된 `Flags` 구조의 필드입니다.
+ 구조에서 `Flags` 필드를 초기화/사용합니다.
 
  `MIF_ALL`\
- 모든 구조에 필드를 초기화/사용 합니다.
+ 구조의 모든 필드를 초기화/사용합니다.
 
 ## <a name="remarks"></a>설명
- 이러한 값에 전달 되는 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 멤버를 나타내도록 메서드는 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조는 초기화할 합니다.
+ 이러한 값은 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 메서드에 전달되어 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조의 구성원을 초기화할 구성원을 나타냅니다.
 
- 에서도 사용 합니다 `Fields` 소속을 `MACHINE_INFO` 에 유효 하 고 사용 되는 필드는 구조체.
+ 또한 사용 `Fields` 되고 유효한 `MACHINE_INFO` 필드를 나타내는 구조의 멤버에 사용 됩니다.
 
- 이러한 플래그는 비트과 결합 될 수 `OR`입니다.
+ 이러한 플래그는 약간 으로 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

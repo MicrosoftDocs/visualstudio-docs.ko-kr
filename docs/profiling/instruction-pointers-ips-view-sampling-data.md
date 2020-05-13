@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774258"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>IP(명령 포인터) 뷰 - 샘플링 데이터
@@ -24,13 +24,13 @@ ms.locfileid: "74774258"
 > [!NOTE]
 > Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
 
-|Column|설명|
+|열|Description|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
 |**모듈 이름**|명령이 포함된 모듈의 이름입니다.|
 |**모듈 경로**|명령이 포함된 모듈의 경로입니다.|
-|**소스 파일**|명령이 포함된 소스 파일입니다.|
+|**원본 파일**|명령이 포함된 소스 파일입니다.|
 |**함수 이름**|명령이 포함된 함수의 이름입니다.|
 |**함수 줄 번호**|소스 파일에서 이 함수가 시작되는 줄 번호입니다.|
 |**함수 주소**|로드된 이진에서 함수의 시작 메모리 주소입니다.|

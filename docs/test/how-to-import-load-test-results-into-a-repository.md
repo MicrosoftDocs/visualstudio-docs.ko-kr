@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbc8c352c7bf3cda0524f07aa82b6ccbe70602b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589034"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>방법: 리포지토리로 부하 테스트 결과 가져오기
@@ -44,7 +44,7 @@ ms.locfileid: "75589034"
 
 5. **파일 이름** 상자에 보관된 테스트 결과 파일의 이름을 입력하고 **열기**를 선택합니다.
 
-     \- 또는 -
+     \- 또는-
 
      파일을 찾은 다음, **열기**를 선택합니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589034"
 
      이렇게 가져온 결과는 **부하 테스트 결과** 목록에 나타납니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

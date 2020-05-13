@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 1c4358fb1ceef0773a29c6860ee7b670c2d021b1
-  ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 02/15/2020
-  ms.locfileid: "77265562"
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "77904063"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -148,10 +148,10 @@ additionalContent:
     - title: 성능 측정
       summary: 병목 상태를 식별하고 진단 도구를 사용하여 코드 성능을 최적화합니다.
       url: ../profiling/index.yml
-    - title: 확장
+    - title: Extend
       summary: 개발 환경을 개선하기 위해 Visual Studio IDE에 고유한 기능을 추가합니다.
-      url: ../extensibility/index.md
-    - title: 데이터
+      url: ../extensibility/index.yml
+    - title: data
       summary: 로컬, 클라우드 등 어디서나 모든 데이터베이스 또는 서비스와 연결하는 데이터 앱을 만듭니다.
       url: ../data-tools/accessing-data-in-visual-studio.md
     - title: 공동 작업
@@ -202,7 +202,7 @@ additionalContent:
     - title: 기타 도구 집합
       links:
       - text: Visual Studio 확장 개발
-        url: ../extensibility/index.md
+        url: ../extensibility/index.yml
       - text: C++를 사용한 Linux 개발
         url: /cpp/linux/
       - text: .NET Core 플랫폼 간 개발

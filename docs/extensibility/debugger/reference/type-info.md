@@ -1,5 +1,5 @@
 ---
-title: TYPE_INFO | Microsoft Docs
+title: TYPE_INFO | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 86212a5ef6f417dae2ae345b1367e041c3cf9095
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316124"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713324"
 ---
-# <a name="typeinfo"></a>TYPE_INFO
-이 구조는 다양 한 종류의 필드의 형식에 대 한 정보를 지정합니다.
+# <a name="type_info"></a>TYPE_INFO
+이 구조는 필드 유형에 대한 다양한 종류의 정보를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,42 +48,42 @@ public struct TYPE_INFO {
 
 ## <a name="members"></a>멤버
  `dwKind`\
- 값을 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 합집합을 해석 하는 방법을 결정 하는 열거형입니다.
+ 공용 구조체를 해석하는 방법을 결정하는 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 열거형의 값입니다.
 
  `type.typeMeta`\
- [C++ 만] 포함 된 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_METADATA`합니다.
+ [C++ 전용] [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 구조가 `dwKind` 포함되어 `TYPE_KIND_METADATA`있는 경우.
 
  `type.typePdb`\
- [C++ 만] 포함 된 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_PDB`합니다.
+ [C++ 전용] [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 구조가 `dwKind` 포함되어 `TYPE_KIND_PDB`있는 경우.
 
  `type.typeBuilt`\
- [C++ 만] 포함 된 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_BUILT`합니다.
+ [C++ 전용] [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 구조를 `dwKind` `TYPE_KIND_BUILT`포함합니다.
 
  `type.unused`\
- 사용 되지 않는 안쪽 여백입니다.
+ 사용하지 않은 패딩.
 
  `type`\
- 공용 구조체의 이름입니다.
+ 공용 구조의 이름입니다.
 
  `unionmember`\
- [C# 만] 적절 한 구조 형식에이에 따라 마샬링 `dwKind`합니다.
+ [C# 만] `dwKind`을 기반으로 적절한 구조 유형으로 마샬링합니다.
 
 ## <a name="remarks"></a>설명
- 이 구조에 전달 되는 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 메서드 위치에서 채워집니다. 구조체의 내용을 해석 되는 방식을 기반으로 합니다 `dwKind` 필드입니다.
+ 이 구조는 채워진 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 메서드에 전달됩니다. 구조의 내용을 해석하는 방법은 `dwKind` 필드에 따라 다다.
 
 > [!NOTE]
-> [C++ 만] 경우 `dwKind` equals `TYPE_KIND_BUILT`, 기본 릴리스해야 하는 것 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 제거 하는 경우 개체는 `TYPE_INFO` 구조입니다. 이를 위해 `typeInfo.type.typeBuilt.pUnderlyingField->Release()`를 호출합니다.
+> [C++ 전용] `dwKind` 같으면 `TYPE_KIND_BUILT`구조를 파괴할 때 기본 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체를 `TYPE_INFO` 해제해야 합니다. 이를 위해 `typeInfo.type.typeBuilt.pUnderlyingField->Release()`를 호출합니다.
 
- [C# 만] 다음 표에서 해석 하는 방법을 보여 줍니다는 `unionmember` 각 종류의 형식에 대 한 멤버입니다. 형식의 한 종류에 대 한이 작업을 수행 하는 방법을 보여 줍니다.
+ [C# 만] 다음 표에서는 각 유형의 멤버를 `unionmember` 해석하는 방법을 보여 주며, 예제에서는 한 종류의 형식에 대해 이 작업을 수행하는 방법을 보여 주며 있습니다.
 
-|`dwKind`|`unionmember` 로 해석|
+|`dwKind`|`unionmember`로 해석|
 |--------------|----------------------------------|
 |`TYPE_KIND_METADATA`|[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)|
 |`TYPE_KIND_PDB`|[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)|
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
 ## <a name="example"></a>예제
- 해석 하는 방법을 보여 주는이 예제는 `unionmember` 의 멤버는 `TYPE_INFO` C#의 구조입니다. 이 예제에서는 하나의 형식만 해석 (`TYPE_KIND_METADATA`) 하지만 다른 동일한 방식으로 해석 됩니다.
+ 이 예제에서는 C#에서 구조체의 `unionmember` 멤버를 `TYPE_INFO` 해석하는 방법을 보여 주습니다. 이 예제에서는 한 형식()만`TYPE_KIND_METADATA`해석하지만 다른 형식은 정확히 동일한 방식으로 해석됩니다.
 
 ```csharp
 using System;
@@ -109,14 +109,14 @@ namespace MyPackage
 ## <a name="requirements"></a>요구 사항
  헤더: sh.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
-- [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
+- [겟타입정보](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
 - [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)
 - [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)
 - [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)

@@ -13,34 +13,37 @@ helpviewer_keywords:
 - GetWinFXPath task [WPF MSBuild]
 - obtaining the path to the current .NET Framework runtime [WPF MSBuild]
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996510"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633969"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 작업
-<xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 작업은 현재 [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] 런타임의 디렉터리를 반환합니다.
+
+<xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 작업은 현재 .NET 런타임의 디렉터리를 반환합니다.
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
 | 매개 변수 | 설명 |
 |-------------------| - |
-| `WinFXPath` | 선택적 **String** 출력 매개 변수입니다.<br /><br /> [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)] 런타임의 실제 경로를 지정합니다. |
-| `WinFXNativePath` | 필수 **String** 매개 변수입니다.<br /><br /> 네이티브 [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] 런타임의 경로를 지정합니다. |
-| `WinFXWowPath` | 필수 **String** 매개 변수입니다.<br /><br /> 64비트 시스템의 32비트 **Windows** 모듈에서 [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] 어셈블리의 경로를 지정합니다. |
+| `WinFXPath` | 선택적 **String** 출력 매개 변수입니다.<br /><br /> .NET 런타임의 실제 경로를 지정합니다. |
+| `WinFXNativePath` | 필수 **String** 매개 변수입니다.<br /><br /> 네이티브 .NET 런타임의 경로를 지정합니다. |
+| `WinFXWowPath` | 필수 **String** 매개 변수입니다.<br /><br /> 64비트 시스템의 32비트 **Windows** 모듈에서 .NET 어셈블리의 경로를 지정합니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
+
  <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 작업이 64비트 프로세서에서 실행되는 경우 **WinFXPath** 매개 변수는 **WinFXWowPath** 매개 변수에 저장된 경로로 설정되고, 그렇지 않으면 **WinFXPath** 매개 변수는 **WinFXNativePath** 매개 변수에 저장된 경로로 설정됩니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 **GetWinFXPath** 작업을 사용하여 [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] 런타임에 대한 네이티브 경로를 검색하는 방법을 보여 줍니다.
+
+ 다음 예제에서는 **GetWinFXPath** 작업을 사용하여 .NET 런타임의 네이티브 경로를 검색하는 방법을 보여 줍니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,7 +59,8 @@ ms.locfileid: "62996510"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
+
 - [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)
 - [작업 참조](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

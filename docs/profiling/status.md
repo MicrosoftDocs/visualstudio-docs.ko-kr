@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778247"
 ---
 # <a name="status"></a>Status
 *VSPerfCmd.exe* **Status** 옵션은 프로파일러의 상태에 대한 정보 및 현재 프로파일링되는 모든 프로세스를 표시합니다.
 
- **Status** 옵션은 명령줄에 지정된 유일한 옵션이어야 합니다. 상태를 표시하려면 먼저 프로파일러가 *VSPerfCmd.exe* **Start** 옵션으로 초기화되어야 합니다.
+ **Status** 옵션은 명령줄에 지정된 유일한 옵션이어야 합니다. 프로파일러는 상태를 표시하려면 *VSPerfCmd.exe* **Start** 옵션으로 초기화되어야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -59,7 +59,7 @@ VSPerfCmd.exe /Status
 
  **모니터에 액세스할 수 있는 권한을 가진 사용자** 프로파일러에 대한 액세스 권한이 있는 사용자의 이름을 나열합니다. VSPerfCmd.exe **Admin** 옵션을 사용하여 추가 사용자에게 액세스를 부여할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

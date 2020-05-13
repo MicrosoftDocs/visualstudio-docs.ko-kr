@@ -1,0 +1,64 @@
+### YamlMime:Landing
+title: Visual Studio의 테스트 도구
+summary: Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은 코드를 개발하고 유지할 수 있습니다.
+metadata:
+  title: Visual Studio의 테스트 도구
+  description: Visual Studio를 사용하여 코드를 테스트하는 방법을 알아보세요.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 03/23/2020
+  ms.openlocfilehash: cb29c5219cb3ad73cf8a3efeecaf344c7af81968
+  ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/25/2020
+  ms.locfileid: "80256403"
+landingContent:
+- title: 테스트 도구 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 테스트 도구 살펴보기
+      url: improve-code-quality.md
+    - text: 단위 테스트 도구 개요
+      url: unit-test-your-code.md
+    - text: Live Unit Testing 개요
+      url: live-unit-testing-intro.md
+- title: Unit Testing
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 단위 테스트 시작
+      url: getting-started-with-unit-testing.md
+    - text: 관리 코드에 대한 단위 테스트 만들기 및 실행
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - text: 테스트 탐색기를 사용하여 단위 테스트 실행
+      url: run-unit-tests-with-test-explorer.md
+    - text: Live Unit Testing 시작
+      url: live-unit-testing-start.md
+    - text: 단위 테스트 생성(IntelliTest)
+      url: generate-unit-tests-for-your-code-with-intellitest.md
+- title: 추가 테스트 도구
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 코드 검사 - 테스트할 코드 범위 결정
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - text: Micorosft Fakes - 테스트 중인 코드 격리
+      url: isolating-code-under-test-with-microsoft-fakes.md
+    - text: 코딩된 UI(사용되지 않음)
+      url: use-ui-automation-to-test-your-code.md
+    - text: 부하 테스트(사용되지 않음)
+      url: quickstart-create-a-load-test-project.md
+- title: 관련 도구(Azure DevOps)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 예비 및 수동 테스트(Azure Test Plans)
+      url: /azure/devops/test/overview?view=azure-devops
+    - text: 부하 테스트(Azure Test Plans)
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+    - text: 지속적인 테스트(Azure Pipelines)
+      url: /azure/devops/pipelines/?view=azure-devops

@@ -1,26 +1,29 @@
 ---
 title: 매개 변수 리팩터링 생성
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e95e76c35afdb8cdbe38c8b33329734ba68361b1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329062"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094345"
 ---
 # <a name="generate-parameter"></a>매개 변수 생성
 
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 **내용:** 자동으로 메서드 매개 변수 생성
 
@@ -35,6 +38,6 @@ ms.locfileid: "67329062"
 
    ![매개 변수 생성](media/generate-parameter.png) 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

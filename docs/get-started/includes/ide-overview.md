@@ -1,17 +1,17 @@
----
+﻿---
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632444"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79081961"
 ---
 Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
@@ -47,7 +47,7 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드�
 
 Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2017에 중점을 둡니다.
 
-세 가지 Visual Studio 2017 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+세 가지 Visual Studio 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 버전 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2019와 동일한 기능이 많이 있으며 플랫폼 간 앱 및 모바일 앱 개발에 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2019에 중점을 둡니다.
 
-세 가지 Visual Studio 2019 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+세 가지 Visual Studio 2019 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 버전 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ::: moniker-end
 
@@ -182,7 +182,6 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
    > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
    Visual Studio가 프로젝트를 생성합니다. <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 사용해서 콘솔(프로그램 출력) 창에 "Hello World!" 리터럴 문자열을 출력하는 간단한 "Hello World" 애플리케이션입니다.
-
    잠시 후 다음과 같은 정보가 표시됩니다.
 
    ![Visual Studio IDE](../media/overview-ide-console-app.png)
@@ -250,7 +249,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
    ![Visual Studio에서 새 프로젝트 구성](../media/vs-2019/configure-new-project.png)
 
-   Visual Studio가 프로젝트를 만듭니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
+   Visual Studio가 프로젝트를 생성합니다. <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 사용해서 콘솔(프로그램 출력) 창에 "Hello World!" 리터럴 문자열을 출력하는 간단한 "Hello World" 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
@@ -413,7 +412,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 ::: moniker range="vs-2017"
 
-2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경하고 **확인**을 선택합니다.
+2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경한 다음 **확인**을 선택합니다.
 
    전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
 
@@ -423,7 +422,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 ::: moniker range=">=vs-2019"
 
-2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경하고 **확인**을 선택합니다.
+2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경한 다음 **확인**을 선택합니다.
 
    전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
 

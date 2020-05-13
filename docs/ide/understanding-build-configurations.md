@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027611"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77904167"
 ---
 # <a name="understand-build-configurations"></a>빌드 구성 이해
 
@@ -44,7 +44,7 @@ ms.locfileid: "77027611"
 
 빌드된 출력 파일이 저장되는 구성 및 플랫폼 컨트롤입니다. 일반적으로 Visual Studio가 프로젝트를 빌드하면 출력 위치는 활성 구성으로 이름이 지정된 프로젝트 하위 폴더지만(예: *bin/Debug/x86*) 이는 변경할 수 있습니다.
 
-솔루션 및 프로젝트 수준에서 고유한 빌드 구성을 만들 수 있습니다. 솔루션 구성은 이 구성이 활성화 상태일 때 빌드에 포함할 프로젝트를 결정합니다. 활성 솔루션 구성에 지정된 프로젝트만 빌드됩니다. 프로젝트 구성은 프로젝트를 빌드할 때 사용할 빌드 설정과 컴파일러 옵션을 결정합니다.
+솔루션 및 프로젝트 수준에서 고유한 빌드 구성을 만들 수 있습니다. 솔루션 구성은 이 구성이 활성화 상태일 때 빌드에 포함할 프로젝트를 결정합니다. 활성 솔루션 구성에 지정된 프로젝트만 빌드됩니다. 구성 관리자에서 여러 대상 플랫폼을 선택하면 해당 플랫폼에 적용되는 모든 프로젝트가 빌드됩니다. 프로젝트 구성은 프로젝트를 빌드할 때 사용할 빌드 설정과 컴파일러 옵션을 결정합니다.
 
 구성을 만들거나, 선택하거나, 수정하거나, 삭제하려면 **구성 관리자**를 사용합니다. 구성 관리자를 열려면 메뉴 모음에서 **빌드** > **구성 관리자**를 선택하거나 검색 상자에 **구성**을 입력합니다. **표준** 도구 모음에서 **솔루션 구성** 목록을 사용하여 구성을 선택하거나 **구성 관리자**를 열 수도 있습니다.
 
@@ -70,6 +70,12 @@ ms.locfileid: "77027611"
 빌드 시 사용할 빌드 설정과 컴파일러 옵션을 지정할 때는 프로젝트가 대상으로 하는 구성과 플랫폼이 함께 사용됩니다. 프로젝트에서는 각 구성 및 플랫폼 조합에 대해 서로 다른 설정을 지정할 수 있습니다. 프로젝트 속성을 수정하려면 **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.  프로젝트 디자이너의 **빌드** 탭 상단에서 활성 구성을 선택해 빌드 설정을 수정합니다.
 
 ![프로젝트 디자이너 구성](media/understanding-build-configurations/project-designer-configuration.png)
+
+## <a name="building-multiple-configurations"></a>여러 구성 빌드
+
+**빌드** > **솔루션 빌드** 명령을 사용하여 솔루션을 빌드하면 Visual Studio는 활성 구성만 빌드합니다. 해당 솔루션 구성에 지정된 모든 프로젝트가 빌드되고, 빌드된 프로젝트 구성만 활성 솔루션 구성 및 활성 솔루션 플랫폼에 지정된 구성으로, Visual Studio의 도구 모음에 표시됩니다. 예를 들어 **Debug**와 **x86**이 표시됩니다. 정의된 다른 구성과 플랫폼은 빌드되지 않습니다.
+
+하나의 작업에서 여러 구성 및 플랫폼을 빌드하려는 경우 Visual Studio에서 **빌드** > **일괄 빌드** 옵션을 사용할 수 있습니다. 이 기능에 액세스하려면 **Ctrl**+**Q**를 눌러 검색 상자를 열고 `Batch build`를 입력합니다. 일부 프로젝트 형식에는 일괄 빌드를 사용할 수 없습니다. [방법: 여러 구성 동시 빌드](how-to-build-multiple-configurations-simultaneously.md)를 참조하세요.
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio가 프로젝트 구성을 할당하는 방법
 

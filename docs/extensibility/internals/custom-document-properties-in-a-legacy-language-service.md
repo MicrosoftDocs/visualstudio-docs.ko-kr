@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스에서 사용자 지정 문서 속성 | Microsoft Docs
+title: 레거시 언어 서비스의 사용자 지정 문서 속성 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8422e35e5241cf1cef30d0ba4a1fe7815323d091
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312899"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708965"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>레거시 언어 서비스의 사용자 지정 문서 속성
-문서 속성에 표시 될 수는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창입니다. 프로그래밍 언어 개별 원본 파일과 연결 된 속성이 없는 일반적으로 합니다. 그러나 XML 인코딩, 스키마 및 스타일 시트에 영향을 주는 문서 속성을 지원 합니다.
+문서 속성은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창에 표시할 수 있습니다. 프로그래밍 언어에는 일반적으로 개별 소스 파일과 관련된 속성이 없습니다. 그러나 XML은 인코딩, 스키마 및 스타일시트에 영향을 주는 문서 속성을 지원합니다.
 
 ## <a name="discussion"></a>토론
- 언어 사용자 지정 문서 속성에서 필요한 경우에서 클래스를 파생 해야 하는 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스 및 파생된 클래스에서 필요한 속성을 구현 합니다.
+ 언어에 사용자 지정 문서 속성이 필요한 경우 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스에서 클래스를 파생하고 파생 클래스에 필요한 속성을 구현해야 합니다.
 
- 또한 문서 속성은 일반적으로 원본 파일 자체에 저장 됩니다. 이렇게 하려면 표시할 소스 파일에서 속성 정보를 구문 분석할 수 있도록 언어 서비스를 **속성** 창 및 문서 속성에 변경 될 때 원본 파일을 업데이트 하는  **속성** 창입니다.
+ 또한 문서 속성은 일반적으로 원본 파일 자체에 저장됩니다. 이를 위해서는 언어 서비스가 속성 **창에** 표시하기 위해 소스 파일의 속성 정보를 구문 분석하고 **속성** 창의 문서 속성을 변경할 때 원본 파일을 업데이트해야 합니다.
 
-## <a name="customize-the-documentproperties-class"></a>DocumentProperties 클래스를 사용자 지정
- 를 지원 하기 위해 사용자 지정 문서 속성에서 클래스를 파생 해야 하는 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스 및 필요에 따라 많은 속성을 추가 합니다. 사용자 특성 구성에 제공 해야 합니다 **속성** 창 표시 합니다. 속성에만 있는 경우는 `get` 접근자에서 읽기 전용으로 표시 됩니다는 **속성** 창. 속성 둘 다 있으면 `get` 하 고 `set` 접근자 속성을 업데이트할 수도 있습니다에 **속성** 창입니다.
+## <a name="customize-the-documentproperties-class"></a>문서 속성 클래스 사용자 지정
+ 사용자 지정 문서 속성을 지원하려면 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스에서 클래스를 파생하고 필요한 만큼 속성을 추가해야 합니다. 또한 **속성** 창 표시에서 구성 할 사용자 특성을 제공해야합니다. 속성에 `get` 접근자만 있는 경우 **속성** 창에서 읽기 전용으로 표시됩니다. 속성에 모두 `get` `set` 및 접근자가 있는 경우 **속성** 창에서 속성을 업데이트할 수도 있습니다.
 
 ### <a name="example"></a>예제
- 파생 된 클래스 예제는 다음과 같습니다 <xref:Microsoft.VisualStudio.Package.DocumentProperties>, 두 속성을 보여 주는 `Filename` 고 `Description`입니다. 속성이 업데이트 되는 경우, 사용자 지정 메서드를는 <xref:Microsoft.VisualStudio.Package.LanguageService> 속성 소스 파일에 쓸 클래스 라고 합니다.
+ 다음은 <xref:Microsoft.VisualStudio.Package.DocumentProperties>에서 `Filename` `Description`파생된 예제 클래스입니다. 속성이 업데이트되면 클래스의 사용자 <xref:Microsoft.VisualStudio.Package.LanguageService> 지정 메서드를 호출하여 소스 파일에 속성을 작성합니다.
 
 ```csharp
 using System.ComponentModel;
@@ -120,8 +120,8 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="instantiate-the-custom-documentproperties-class"></a>사용자 지정 DocumentProperties 클래스 인스턴스화
- 사용자 지정 문서 속성 클래스를 인스턴스화할 때 재정의 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> 사용 중인 버전에서 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 의 단일 인스턴스를 반환 하는 클래스에 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스입니다.
+## <a name="instantiate-the-custom-documentproperties-class"></a>사용자 지정 문서속성 클래스 인스턴스화
+ 사용자 지정 문서 속성 클래스를 인스턴스화하려면 클래스의 단일 인스턴스를 <xref:Microsoft.VisualStudio.Package.LanguageService> 반환하려면 클래스 버전의 <xref:Microsoft.VisualStudio.Package.DocumentProperties> <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> 메서드를 재정의해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -147,20 +147,20 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="properties-in-the-source-file"></a>소스 파일의 속성
- 문서 속성에 일반적으로 소스 파일에 특정 되므로 값은 원본 파일 자체에 저장 됩니다. 이렇게 하려면 언어 파서 또는 스캐너 이러한 속성을 정의를 지원 합니다. 예를 들어, XML 문서 속성은 루트 노드에 저장 됩니다. 경우 루트 노드에서 값을 수정 합니다 **속성** 창 값이 변경 되 고 편집기에서 루트 노드 업데이트 됩니다.
+## <a name="properties-in-the-source-file"></a>원본 파일의 속성
+ 문서 속성은 일반적으로 원본 파일에 만해당하므로 값은 원본 파일 자체에 저장됩니다. 이를 위해서는 이러한 속성을 정의하기 위해 언어 파서 또는 스캐너의 지원이 필요합니다. 예를 들어 XML 문서의 속성은 루트 노드에 저장됩니다. 루트 노드의 값은 **속성** 창 값이 변경되고 루트 노드가 편집기에서 업데이트될 때 수정됩니다.
 
 ### <a name="example"></a>예제
- 속성을 저장 하는이 예제 `Filename` 고 `Description` 소스 파일의 처음 두 줄에 포함 된 특수 주석 헤더에으로:
+ 이 예제에서는 `Filename` 속성과 `Description` 특수 주석 헤더에 포함된 소스 파일의 처음 두 줄에 다음과 같이 저장합니다.
 
 ```
 //!Filename = file.testext
 //!Description = A sample file
 ```
 
- 이 예제에서는 가져오기 및 사용자 소스 파일을 직접 수정 하는 경우 속성은 업데이트 방법과 소스 파일의 처음 두 줄에서 문서 속성을 설정 하는 데 필요한 두 메서드를 보여 줍니다. `SetPropertyValue` 같습니다. 동일한 예에서 하나에서 메서드를 호출할 합니다 `TestDocumentProperties` 에 표시 된 대로 클래스를 *DocumentProperties 클래스 사용자 지정* 섹션.
+ 이 예제에서는 원본 파일의 처음 두 줄에서 문서 속성을 얻고 설정하는 데 필요한 두 가지 방법과 사용자가 원본 파일을 직접 수정하는 경우 속성이 업데이트되는 방법을 보여 주십습니다. 여기에 `SetPropertyValue` 표시된 예제의 메서드는 DocumentProperties 사용자 `TestDocumentProperties` 지정 클래스 섹션에 표시된 클래스에서 호출된 *메서드와* 동일합니다.
 
- 이 예제에서는 처음 두 줄에서 토큰의 형식을 결정 하려면 스캐너를 사용 합니다. 이 예제는 설명 목적 으로만 제공 됩니다. 이 상황을 좀 더 일반적인 방법은 무엇 이라고 구문 분석 트리 트리의 각 노드는 특정 토큰에 대 한 정보를 포함 하는 위치를 소스 파일을 구문 분석 하는 것입니다. 루트 노드는 문서 속성을 포함 됩니다.
+ 이 예제에서는 스캐너를 사용하여 처음 두 줄의 토큰 유형을 결정합니다. 이 예제는 설명용으로만 사용됩니다. 이 상황에 대한 보다 일반적인 방법은 소스 파일을 트리의 각 노드에 특정 토큰에 대한 정보가 포함된 구문 분석 트리로 구문 분석하는 것입니다. 루트 노드에는 문서 속성이 포함됩니다.
 
 ```csharp
 using System.ComponentModel;
@@ -397,5 +397,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)

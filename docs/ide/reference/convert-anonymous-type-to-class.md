@@ -1,26 +1,29 @@
 ---
 title: 익명 형식을 클래스로 변환
-ms.date: 02/13/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f29e31fb87d8b18e7f5a46d16f90217ee08d51f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968539"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094290"
 ---
 # <a name="convert-anonymous-type-to-class"></a>익명 형식을 클래스로 변환
 
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 **내용:** 익명 형식을 클래스로 변환합니다.
 
@@ -31,7 +34,7 @@ ms.locfileid: "62968539"
 ## <a name="how-to"></a>방법
 
 1. 익명 형식으로 커서를 놓습니다.
-2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
    ![익명 형식을 클래스로 변환](media/convert-anon-to-class.png)
 
@@ -39,6 +42,6 @@ ms.locfileid: "62968539"
 
    ![익명 형식을 허용하는 클래스로 변환](media/convert-anon-to-class-complete.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

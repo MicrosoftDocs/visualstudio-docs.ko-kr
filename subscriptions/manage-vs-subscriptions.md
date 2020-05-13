@@ -3,15 +3,16 @@ title: Visual Studio 구독 관리
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706979"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444879"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -51,7 +52,6 @@ Visual Studio 구독 포털은 향상된 단일 포털 환경에서 모든 Visua
 **프로그램을 통해 구입한 구독:**  프로그램을 통해 구독을 얻는 경우 구독은 프로그램 참여와 관련이 있습니다. 추가 정보는 프로그램 담당자에게 문의하세요.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft 파트너 네트워크](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -105,10 +105,24 @@ A: Microsoft가 고객 데이터를 유지하는 기간은 구매 채널에 따�
 |    VLSC(볼륨 라이선스 서비스 센터)              |    180          |
 |    MPSA(Microsoft 제품 및 서비스 계약)    |    180          |
 |    Visual Studio 클라우드 구독                   |    180          |
-|    프로그램(예: MCT, BizSpark, MPN, Imagine)          |    180          |
+|    프로그램(예: MCT, MPN, Imagine)          |    180          |
 |    재판매 금지(예: MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
 > [!NOTE]
 > - Microsoft 계정 또는 Azure AD를 폐쇄하기로 선택하면 개인 데이터는 즉시 익명 처리됩니다.
 > - 활성 구독이 있는 경우 모든 개인 데이터가 완전히 제거되지는 않습니다.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>다음 단계
+조직용 구독을 관리하십니까?  Visual Studio 구독 관리에 대해 자세히 알아보세요.
+- [개별 구독 할당](assign-license.md)
+- [여러 구독 할당](assign-license-bulk.md)
+- [구독 편집](edit-license.md)
+- [구독 삭제](delete-license.md)
+- [최대 사용량 확인](maximum-usage.md)

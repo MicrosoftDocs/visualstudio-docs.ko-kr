@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e594a6aec3f9e3a9664c5eac829b27f96f12ea0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584454"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정
 
-코딩된 UI 테스트 재생 시 창이 나타나거나 진행률 표시줄이 사라지는 등의 특정 이벤트가 발생할 때까지 기다리도록 테스트에 지시할 수 있습니다. 이렇게 하려면 다음 표에 설명된 대로 적절한 UITestControl.WaitForControlXXX() 메서드를 사용합니다. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 메서드를 사용하여 컨트롤을 사용할 수 있을 때까지 코딩된 UI 테스트가 기다리도록 하는 예제는 [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)를 참조하세요.
+코딩된 UI 테스트 재생 시 창이 나타나거나 진행률 표시줄이 사라지는 등의 특정 이벤트가 발생할 때까지 기다리도록 테스트에 지시할 수 있습니다. 이렇게 하려면 다음 표에 설명된 대로 적절한 UITestControl.WaitForControlXXX() 메서드를 사용합니다. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 메서드를 사용하여 컨트롤이 사용하도록 설정할 때까지 기다리는 코딩된 UI 테스트에 대한 예제는 [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)를 참조하세요.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-마법사가 서버를 호출하여 입력에 대해 몇 가지 비동기 유효성 검사를 수행하는 동안 컨트롤이 사용하도록 설정될 때까지 기다립니다. 예를 들어 메서드를 사용하여 마법사의 **다음** 단추를 사용하도록 설정할 때까지 기다릴 수 있습니다. 이 메서드의 예제는 [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)를 참조하세요.
+마법사가 서버를 호출하여 입력에 대해 몇 가지 비동기 유효성 검사를 수행하는 동안 컨트롤이 사용하도록 설정될 때까지 기다립니다. 예를 들어 메서드를 사용하여 마법사의 **다음** 단추를 사용하도록 설정할 때까지 기다릴 수 있습니다. 이 메서드에 대한 예제는 [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)를 참조하세요.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -105,7 +105,7 @@ Playback.Wait()는 사용자 취소/분리 작업을 확인하는 동안 위의 
 > [!TIP]
 > 코딩된 UI 테스트 편집기에서는 코딩된 UI 테스트를 쉽게 수정할 수 있습니다. 코딩된 UI 테스트 편집기를 사용하면 테스트 메서드를 찾아서 보고 편집할 수 있습니다. 또한 UI 작업을 편집하고 UI 컨트롤 맵에서 관련 컨트롤을 편집할 수도 있습니다. 자세한 내용은 [코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md)

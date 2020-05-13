@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CanDetach | Microsoft Docs
+title: IDebugProgram2::캔데타흐 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CanDetach
 ms.assetid: dcd9ab6c-49e5-447e-aa7c-89f571f4a052
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6bc8f7ac644a893049592420ad8435ac896a62b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d03d942bbc052a7ac6bebc6a89c55ec21a1b4c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311479"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723128"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
-디버그 엔진 (DE) 프로그램에서 분리 하는 경우를 결정 합니다.
+DEBug 엔진(DE)이 프로그램에서 분리될 수 있는지 확인합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,8 +37,8 @@ HRESULT CanDetach(
 int CanDetach();
 ```
 
-## <a name="return-value"></a>반환 값
- 경우를 분리 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `S_FALSE` 경우는 DE 프로그램에서 분리할 수 없습니다.
+## <a name="return-value"></a>Return Value
+ 분리할 수 있는 `S_OK`경우 반환합니다. 그렇지 않으면 오류 코드를 반환합니다. DE가 프로그램에서 분리할 수 없는 경우 반환합니다. `S_FALSE`
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

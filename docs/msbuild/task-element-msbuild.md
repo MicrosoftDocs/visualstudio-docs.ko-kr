@@ -1,5 +1,5 @@
 ---
-title: Task 요소(MSBuild) | Microsoft Docs
+title: Target의 Task 요소(MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f808c14b8459abfb3bf9c531cfff496932836c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566360"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78263177"
 ---
-# <a name="task-element-msbuild"></a>Task 요소(MSBuild)
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. 생성된 작업 이름에 따라 요소 이름이 결정됩니다.
+# <a name="task-element-of-target-msbuild"></a>Target의 Task 요소(MSBuild)
+
+MSBuild 작업의 인스턴스를 만들고 실행합니다. 생성된 작업 이름에 따라 요소 이름이 결정됩니다.
 
  \<프로젝트> \<대상>
 
@@ -39,6 +40,7 @@ ms.locfileid: "75566360"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
@@ -59,14 +61,16 @@ ms.locfileid: "75566360"
 
 | 요소 | 설명 |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 컨테이너 요소입니다. |
+| [Target](../msbuild/target-element-msbuild.md) | MSBuild 작업의 컨테이너 요소입니다. |
 
 ## <a name="remarks"></a>설명
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 `Task` 요소는 작업의 인스턴스를 생성하며 작업에 대한 속성을 설정하고 작업을 실행합니다. `Output` 요소는 프로젝트 파일의 다른 곳에서 사용될 속성이나 항목에 출력 매개 변수를 저장합니다.
+
+ MSBuild 프로젝트 파일의 `Task` 요소는 작업의 인스턴스를 생성하며 작업에 대한 속성을 설정하고 작업을 실행합니다. `Output` 요소는 프로젝트 파일의 다른 곳에서 사용될 속성이나 항목에 출력 매개 변수를 저장합니다.
 
  작업의 상위 `Target` 요소에 [OnError](../msbuild/onerror-element-msbuild.md) 요소가 있는 경우 작업이 실패하고 `ContinueOnError`에 `false` 값이 있으면 계속 평가됩니다. 작업에 대한 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 [Csc task](../msbuild/csc-task.md) 클래스의 인스턴스를 만들고 6개의 속성을 설정하며 작업을 실행합니다. 실행한 후에는 개체의 `OutputAssembly` 속성 값이 `FinalAssemblyName`이라는 항목 목록에 배치됩니다.
 
 ```xml
@@ -84,6 +88,7 @@ ms.locfileid: "75566360"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

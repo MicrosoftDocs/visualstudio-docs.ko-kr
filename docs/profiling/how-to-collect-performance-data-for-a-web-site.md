@@ -19,15 +19,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74779040"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307186"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>방법: 웹 사이트에 대한 성능 데이터 수집
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에 대한 성능 데이터를 수집하려면 **성능 마법사**를 사용할 수 있습니다. Visual Studio에 열려 있는 웹 애플리케이션을 프로파일링하거나, 로컬 컴퓨터에 있고 Visual Studio IDE에 열려 있지 않은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 사이트를 프로파일링할 수 있습니다.
+**웹 애플리케이션에 대한 성능 데이터를 수집하려면**성능 마법사[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]를 사용할 수 있습니다. Visual Studio에 열려 있는 웹 애플리케이션을 프로파일링하거나, 로컬 컴퓨터에 있고 Visual Studio IDE에 열려 있지 않은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 사이트를 프로파일링할 수 있습니다.
 
 > [!NOTE]
 > **성능 마법사** 에서는 계층 상호 작용(TIP) 데이터, JScript 성능 데이터 또는 둘 모두를 수집된 프로파일링 데이터에 추가할 수 있습니다. TIP 옵션은 서버 쪽 프로세스에서 데이터를 수집합니다. JScript 프로파일링은 로컬 또는 원격 웹 사이트에서 실행 중인 스크립트에서 데이터를 수집합니다. 대부분의 경우 옵션을 하나만 선택해야 합니다.

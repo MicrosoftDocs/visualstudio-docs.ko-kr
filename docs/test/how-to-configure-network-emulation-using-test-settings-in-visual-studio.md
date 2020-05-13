@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589216"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880145"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
@@ -24,12 +24,19 @@ Visual Studio에서 다양한 네트워크 환경에 처한 애플리케이션�
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 다음 절차에서는 구성 편집기를 통해 네트워크 에뮬레이션을 구성하는 방법을 설명합니다. 이러한 단계는 Visual Studio 및 Microsoft Test Manager의 구성 편집기에 모두 적용됩니다.
+::: moniker-end
+::: moniker range=">=vs-2019"
+다음 절차에서는 구성 편집기를 통해 네트워크 에뮬레이션을 구성하는 방법을 설명합니다. 이러한 단계는 Visual Studio의 구성 편집기에 적용됩니다.
+::: moniker-end
 
 > [!NOTE]
-> 네트워크 에뮬레이션 진단 데이터 어댑터는 Visual Studio 테스트 설정에만 적용할 수 있습니다. Microsoft Test Manager의 테스트 설정에는 사용되지 않습니다.
+> 네트워크 에뮬레이션 진단 데이터 어댑터는 Visual Studio 테스트 설정에만 적용할 수 있습니다. Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)의 테스트 설정에는 사용되지 않습니다.
 
+::: moniker range="vs-2017"
 네트워크 에뮬레이션에는 관리자 권한이 있는 계정을 사용해야 합니다. 수동 테스트를 실행하는 로컬 역할에 대해 네트워크 에뮬레이션을 선택한 경우 관리자 권한을 사용하여 Microsoft Test Manager를 시작해야 합니다. 다른 역할에 대해 네트워크 에뮬레이션을 선택한 경우에는 해당 역할의 컴퓨터에 있는 테스트 에이전트가 Administrators 그룹의 멤버인 사용자 계정을 사용하는지 확인해야 합니다. 테스트 에이전트의 계정을 설정하는 방법에 대한 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
+::: moniker-end
 
 > [!NOTE]
 > 테스트 에이전트의 기본 계정인 네트워크 서비스 계정은 Administrators 그룹의 멤버가 아닙니다.

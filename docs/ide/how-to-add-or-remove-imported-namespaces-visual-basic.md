@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593332"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
 
-네임스페이스를 가져오면 해당 네임스페이스의 요소를 정규화하지 않고 코드에서 사용할 수 있습니다. 예를 들어 `System.Messaging.MessageQueue` 클래스의 `Create` 메서드에 액세스하려면 `System.Messaging` 네임스페이스를 가져오고 코드에 필요한 요소를 `MessageQueue.Create`로 참조하면 됩니다.
+네임스페이스를 가져오면 해당 네임스페이스의 요소를 정규화하지 않고 코드에서 사용할 수 있습니다. 예를 들어 `Create` 클래스의 `System.Messaging.MessageQueue` 메서드에 액세스하려면 `System.Messaging` 네임스페이스를 가져오고 코드에 필요한 요소를 `MessageQueue.Create`로 참조하면 됩니다.
 
 가져온 네임스페이스는 **프로젝트 디자이너**의 **참조** 페이지에서 관리됩니다. 이 대화 상자에서 지정하는 가져오기는 컴파일러( */imports*)에 직접 전달되고 프로젝트의 모든 파일에 적용됩니다. `Imports` 문을 사용하여 단일 소스 코드 파일에서 네임스페이스를 사용합니다.
 
@@ -76,6 +76,6 @@ ms.locfileid: "75593332"
 
 5. **사용자 가져오기 업데이트** 단추를 클릭하여 **가져온 네임스페이스** 목록에서 네임스페이스를 업데이트합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569285"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio에서 Equals 및 GetHashCode 메서드 재정의 생성
@@ -20,7 +20,7 @@ ms.locfileid: "75569285"
 
 - C#
 
-**내용:** **Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
+**대상:** **Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
 
 **시기:** 메모리의 개체 위치 대신 하나 이상의 필드에서 비교되어야 하는 형식이 있을 경우 이러한 재정의를 생성합니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "75569285"
 
    ![메서드 생성 결과](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

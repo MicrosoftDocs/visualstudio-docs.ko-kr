@@ -7,10 +7,10 @@ ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
 ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74127200"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 NuGet 패키지 설치 및 관리
@@ -139,6 +139,6 @@ NuGet 설명서에서는 [소스 제어에 패키지를 커밋하지 않고 NuGe
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio에서 패키지 설치 및 사용(Windows에서)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

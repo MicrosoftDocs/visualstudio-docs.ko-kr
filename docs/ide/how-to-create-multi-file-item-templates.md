@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593735"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
@@ -36,7 +36,7 @@ ms.locfileid: "75593735"
 
 1. 단일 파일 항목 템플릿을 수동으로 만들 때처럼 항목 템플릿을 만들되, 다중 파일 항목을 구성 하는 각 파일을 포함합니다.
 
-1. *.vstemplate* XML 파일에서 각 개별 파일에 대한 `ProjectItem` 요소를 추가하고 이 요소에 `TargetFileName` 특성을 추가합니다. `TargetFileName` 특성 값을 *$fileinputname$.FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 확장명입니다. 예:
+1. *.vstemplate* XML 파일에서 각 개별 파일에 대한 `ProjectItem` 요소를 추가하고 이 요소에 `TargetFileName` 특성을 추가합니다. `TargetFileName` 특성 값을 *$fileinputname$.FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 확장명입니다. 다음은 그 예입니다.
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -92,9 +92,9 @@ ms.locfileid: "75593735"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)
-- [방법: 템플릿의 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)
+- [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)

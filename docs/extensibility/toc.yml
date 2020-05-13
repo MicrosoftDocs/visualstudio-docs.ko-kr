@@ -4,7 +4,7 @@
   href: installing-the-visual-studio-sdk.md
 - name: Visual Studio 확장 개발 시작
   href: starting-to-develop-visual-studio-extensions.md
-- name: '첫 번째 확장 만들기: Hello World'
+- name: '첫 번째 확장: Hello World 만들기'
   href: extensibility-hello-world.md
 - name: Visual Studio 2019 SDK의 새로운 기능
   items:
@@ -138,11 +138,11 @@
           href: editor-imports.md
         - name: EditorConfig 지원
           href: supporting-editorconfig.md
-        - name: '연습: 파일 이름 확장명에 콘텐츠 형식 링크'
+        - name: '연습: 파일 이름 확장명에 콘텐츠 형식 연결'
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
         - name: '연습: 여백 문자 모양 만들기'
           href: walkthrough-creating-a-margin-glyph.md
-        - name: '연습: 텍스트 보기 사용자 지정'
+        - name: '연습: 텍스트 뷰 사용자 지정'
           href: walkthrough-customizing-the-text-view.md
         - name: '연습: 보기 장식, 명령 및 설정(열 안내선) 만들기'
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
@@ -156,7 +156,7 @@
           href: walkthrough-displaying-quickinfo-tooltips.md
         - name: '연습: 서명 도움말 표시'
           href: walkthrough-displaying-signature-help.md
-        - name: '연습: 명령문 완성 표시'
+        - name: '연습: 문 완성 표시'
           href: walkthrough-displaying-statement-completion.md
         - name: '연습: 코드 조각 구현'
           href: walkthrough-implementing-code-snippets.md
@@ -494,9 +494,9 @@
       href: vsix-project-template.md
     - name: VSIX 프로젝트 템플릿 시작
       href: getting-started-with-the-vsix-project-template.md
-    - name: '연습: Visual Studio 확장 게시'
+    - name: '연습: Visual Studio 확장 기능 게시'
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: '연습: 명령줄을 통해 Visual Studio 확장 게시'
+    - name: '연습: 명령줄을 통한 Visual Studio 확장 기능 게시'
       href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
     - name: '연습: 확장 팩 만들기'
       href: walkthough-create-extension-pack.md
@@ -768,9 +768,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: 열거자
+        - name: Enumerators
           items:
-            - name: 열거자
+            - name: Enumerators
               href: enumerators.md
             - name: 명령 코드 열거자
               href: command-code-enumerator.md

@@ -5,17 +5,17 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 06/17/2019
 ms.openlocfilehash: 2c6bdd7d0b2c939ed9db9be962e89d9ee423e1d4
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984121"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 Docker 시작
 
 Mac용 Visual Studio를 사용하면 컨테이너화된 ASP.NET Core 앱을 간편하게 빌드, 디버그, 실행하고 Azure에 게시할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 * [Mac용 Visual Studio 2019](https://visualstudio.microsoft.com/vs/mac)

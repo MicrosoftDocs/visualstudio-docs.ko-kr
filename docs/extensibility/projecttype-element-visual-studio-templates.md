@@ -1,5 +1,5 @@
 ---
-title: ProjectType 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 프로젝트 유형 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 494f8d3ab204a599e8d3708d07a56c87658b97d4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311906"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701802"
 ---
-# <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소 (Visual Studio 템플릿)
-지정 된 그룹에 나타나도록 프로젝트 템플릿을 분류 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.
+# <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소(비주얼 스튜디오 템플릿)
+**새** 프로젝트 또는 **새 항목 추가** 대화 상자에서 지정된 그룹 아래에 표시되도록 프로젝트 템플릿을 분류합니다.
 
 > [!WARNING]
-> 에 대 한 프로젝트 템플릿은 지원 되지만 C++ Visual Studio 2012에서 시작 합니다. 에 대 한 지원 되지 않습니다 C++ Visual Studio 2010 및 이전 버전입니다.
+> 프로젝트 템플릿은 Visual Studio 2012에서 시작하여 C++에 지원됩니다. Visual Studio 2010 및 이전 버전에서는 C++에 대해 지원되지 않습니다.
 
- \<VSTemplate> \<TemplateData> \<ProjectType>
+ \<VS템플릿 \<> 템플릿데이터> \<프로젝트 유형>
 
 ## <a name="syntax"></a>구문
 
@@ -45,30 +45,30 @@ ms.locfileid: "66311906"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 이 값에는 프로젝트 템플릿 만들고, 유형과 다음 값 중 하나를 포함 해야 합니다 지정 합니다.
+ 이 값은 템플릿이 만들 프로젝트 유형을 지정하며 다음 값 중 하나를 포함해야 합니다.
 
-- `CSharp`: 서식 파일을 만들도록 지정을 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트 또는 항목입니다.
+- `CSharp`: 템플릿이 프로젝트 또는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 항목을 생성되도록 지정합니다.
 
-- `VisualBasic`: 서식 파일을 만들도록 지정을 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트 또는 항목입니다.
+- `VisualBasic`: 템플릿이 프로젝트 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 항목을 생성되도록 지정합니다.
 
-- `Web`: 템플릿이 웹 프로젝트 또는 항목을 만들도록 지정 합니다. 경우는 `ProjectType` 이 값을 포함 하는 요소, 프로젝트 또는 항목의 언어에 정의 된 합니다 [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)합니다.
+- `Web`: 템플릿이 웹 프로젝트 또는 항목을 만들수 있도록 지정합니다. `ProjectType` 요소에 이 값이 포함되어 있으면 프로젝트 또는 항목의 언어가 [ProjectSubType 요소(Visual Studio 템플릿)에 정의됩니다.](../extensibility/projectsubtype-element-visual-studio-templates.md)
 
 ## <a name="remarks"></a>설명
  `ProjectType`은 `TemplateData`의 필수 자식 요소입니다.
 
- 값을 `ProjectType` 요소 서식 파일의 위치를 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자. 사용 하 여 템플릿 예를 들어를 `ProjectType` 값 `CSharp` 아래에 표시 됩니다는 **Visual C#** 에 노드를 **새 프로젝트** 대화 상자.
+ 요소값은 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 템플릿이 있는 위치를 지정합니다. `ProjectType` 예를 들어 값이 있는 `ProjectType` 템플릿이 **새 프로젝트** 대화 상자의 **Visual C#** 노드 아래에 `CSharp` 나타납니다.
 
- Template 하위 유형의 경우를 사용 하 여 지정할 수 있습니다 합니다 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소입니다.
+ [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소를 사용하여 템플릿 하위 유형을 지정할 수 있습니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.
+ 다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 합니다.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -94,7 +94,7 @@ ms.locfileid: "66311906"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>참조
+- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)
+- [프로젝트서브타입 요소(비주얼 스튜디오 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)

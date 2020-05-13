@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE | Microsoft Docs
+title: REFERENCE_COMPARE | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d166917ec9770e3f8d1f41f3774676278b894724
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322353"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713726"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
-참조에 대 한 비교의 형식을 지정합니다.
+# <a name="reference_compare"></a>REFERENCE_COMPARE
+참조비교 유형을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,24 +46,24 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>필드
  `REF_COMPARE_EQUAL`\
- 같음 비교를 지정합니다.
+ 동일하게 비교를 지정합니다.
 
  `REF_COMPARE_LESS_THAN`\
- 작음 지정-보다 비교 합니다.
+ 비교보다 적게 지정합니다.
 
  `REF_COMPARE_GREATER_THAN`\
- 큼 지정-보다 비교 합니다.
+ 비교보다 큰 것을 지정합니다.
 
 ## <a name="remarks"></a>설명
- 인수로 전달 된 [비교](../../../extensibility/debugger/reference/idebugreference2-compare.md) 메서드.
+ [비교](../../../extensibility/debugger/reference/idebugreference2-compare.md) 메서드에 인수로 전달되었습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+- [비교](../../../extensibility/debugger/reference/idebugreference2-compare.md)

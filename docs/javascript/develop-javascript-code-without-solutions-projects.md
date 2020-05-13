@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888649"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549939"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>솔루션이나 프로젝트 없이 Visual Studio에서 JavaScript 및 TypeScript 코드 개발
 
@@ -27,7 +27,7 @@ Visual Studio 2017부터 [프로젝트 또는 솔루션 없이 코드 개발](..
 시작하려면 도구 모음에서 **파일** > **열기** > **폴더**를 선택합니다. 솔루션 탐색기는 폴더에 있는 모든 파일을 표시하며 파일을 열어 편집을 시작할 수 있습니다. 백그라운드에서 Visual Studio는 npm, 빌드 및 디버그 기능을 사용하도록 파일을 인덱싱합니다.
 
 > [!IMPORTANT]
-> npm 통합을 포함하여 이 문서에서 설명하는 많은 기능에는 Visual Studio 2017 버전 15.8 이상이 필요합니다.
+> npm 통합을 포함하여 이 문서에서 설명하는 많은 기능에는 Visual Studio 2017 버전 15.8 이상이 필요합니다. Visual Studio **Node.js 개발** 워크로드가 설치되어 있어야 합니다.
 
 ## <a name="npm-integration"></a>npm 통합
 

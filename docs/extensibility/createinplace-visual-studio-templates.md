@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace 요소 (Visual Studio 템플릿)
+title: CreateInPlace 요소(비주얼 스튜디오 템플릿)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341786"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739666"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 요소 (Visual Studio 템플릿)
-프로젝트를 만듭니다 및 지정 된 위치의 매개 변수 대체를 수행 하거나 임시 위치에 매개 변수 대체를 수행 하 고 다음 지정된 된 위치에 프로젝트를 저장 여부를 지정 합니다.
+# <a name="createinplace-element-visual-studio-templates"></a>만들기인플레이스 요소(비주얼 스튜디오 템플릿)
+프로젝트를 만들고 지정된 위치에서 매개 변수 교체를 수행할지 또는 임시 위치에서 매개 변수 교체를 수행할지 여부를 지정한 다음 프로젝트를 지정된 위치에 저장합니다.
 
- \<VSTemplate > \<TemplateData > \<CreateInPlace >
+ \<VS템플릿 \<> 템플릿데이터> \<생성장소>
 
 ## <a name="syntax"></a>구문
 
@@ -43,14 +43,14 @@ ms.locfileid: "66341786"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 텍스트는 `true` 또는 `false`여야 합니다. 하는 경우 `true`프로젝트가 생성 되 고 지정 된 위치에서 매개 변수 대체가 수행 됩니다 합니다 **새 프로젝트** 대화 상자. 경우 `false`, 매개 변수를 대체 임시 위치에서 수행 되 고 프로젝트 후 지정된 된 위치에 복사 됩니다.
+ 텍스트는 `true` 또는 `false`여야 합니다. 프로젝트가 `true`만들어지고 **새 프로젝트** 대화 상자에 지정된 위치에서 매개 변수 교체가 수행되는 경우. ? `false`매개 변수 교체가 임시 위치에서 수행되고 프로젝트가 지정된 위치로 복사되는 경우
 
 ## <a name="remarks"></a>설명
  `CreateInPlace`는 선택적 요소입니다. 기본값은 `true`입니다.
@@ -83,6 +83,6 @@ ms.locfileid: "66341786"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

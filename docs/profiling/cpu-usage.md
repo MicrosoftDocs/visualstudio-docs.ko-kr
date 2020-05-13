@@ -1,7 +1,7 @@
 ---
 title: CPU 사용량 분석 | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553622"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638841"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 사용량 분석
 
 앱의 성능 문제를 조사하기 위한 좋은 방법은 CPU 사용량을 이해하는 것입니다. **CPU 사용량** 성능 도구는 C++, C#/Visual Basic 및 JavaScript 앱에서 코드 실행에 소요된 CPU 시간 및 백분율을 보여줍니다.
 
-**CPU 사용량** 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Microsoft Store 앱에서 실행하거나 실행 중인 앱 또는 프로세스에 연결할 수 있습니다. 로컬이나 원격 머신에서 또는 시뮬레이터나 에뮬레이터에서 도구를 실행할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+**CPU 사용량** 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Microsoft Store 앱에서 실행하거나 실행 중인 앱 또는 프로세스에 연결할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
 디버깅을 사용하거나 사용하지 않고 **CPU 사용량** 도구를 실행할 수 있습니다. 디버거에서 CPU 프로파일링을 설정하거나 해제할 수 있으며 CPU 사용량에 대한 함수별 분석을 볼 수 있습니다. 실행이 일시 중지된 경우 CPU 사용량 결과를 볼 수 있습니다(예: 중단점에서).
 
@@ -33,7 +33,7 @@ ms.locfileid: "62553622"
 
 ## <a name="collect-cpu-usage-data"></a>CPU 사용량 데이터 수집
 
-1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 머신**을 배포 대상으로 선택합니다.
+1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
 
     ![릴리스 및 로컬 머신 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "릴리스 및 로컬 머신 선택")
 
@@ -59,7 +59,7 @@ ms.locfileid: "62553622"
 Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부하 과다 경로 표시** 단추를 클릭하여 호출 트리 뷰에서 CPU 사용률이 가장 높은 함수 호출을 볼 수 있습니다.
 ::: moniker-end
 
-### <a name="BKMK_Call_tree_data_columns"></a> CPU 사용량 데이터 열
+### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> CPU 사용량 데이터 열
 
 |||
 |-|-|
@@ -67,11 +67,11 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 |**셀프 CPU [단위, %]**|![자체 % 수식](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 함수에 의해 호출되는 함수를 제외하고 선택한 시간 범위에서 함수를 호출하는 데 사용되는 밀리초 및 CPU 백분율입니다.|
 |**모듈**|함수를 포함하는 모듈의 이름입니다.
 
-### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리
+### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리
 
 호출 트리를 보려면 보고서에서 부모 노드를 선택합니다. **CPU 사용량** 페이지가 **호출자/호출 수신자** 보기에 열립니다. **현재 보기** 드롭다운 목록에서 **호출 트리**를 선택합니다.
 
-#### <a name="BKMK_Call_tree_structure"></a> 호출 트리 구조
+#### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> 호출 트리 구조
 
 ::: moniker range=">=vs-2019"
 ![호출 트리 구조](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "호출 트리 구조")
@@ -87,7 +87,7 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 |![3단계](../profiling/media/procguid_3.png "ProcGuid_3")|두 번째 수준 노드의 자식은 두 번째 수준 시스템과 프레임워크 코드가 호출하거나 만드는 사용자 코드 메서드 및 비동기 루틴입니다.|
 |![4단계](../profiling/media/procguid_4.png "ProcGuid_4")|메서드의 자식 노드에는 부모 메서드 호출에 대한 데이터만 있습니다. **외부 코드 표시** 가 사용하지 않도록 설정되어 있으면 앱 메서드에 **[External Code]** 노드를 포함할 수 있습니다.|
 
-#### <a name="BKMK_External_Code"></a> 외부 코드
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> 외부 코드
 
 코드로 실행되는 시스템과 프레임워크 함수를 *외부 코드*라고 합니다. 외부 코드 함수는 앱 시작 및 중지, UI 그리기, 스레딩 제어, 기타 낮은 수준 서비스를 앱에 제공합니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.
 
@@ -108,7 +108,7 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 ![중첩된 외부 코드 검색](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "중첩된 외부 코드 검색")
 ::: moniker-end
 
-### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리의 비동기 함수
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리의 비동기 함수
 
  컴파일러에서 비동기 메서드가 발생하면 메서드 실행을 제어하는 숨겨진 클래스를 만듭니다. 개념적으로 클래스는 상태 머신입니다. 클래스에 원래 메서드를 비동기식으로 호출하는 컴파일러 생성 함수와 이를 실행하는 데 필요한 콜백, 스케줄러 및 반복기가 있습니다. 부모 메서드가 원래 메서드를 호출하면 컴파일러는 부모의 실행 컨텍스트에서 메서드를 제거하고, 앱 실행을 제어하는 시스템과 프레임워크 코드의 컨텍스트에서 숨겨진 클래스 메서드를 실행합니다. 비동기 메서드는 일반적으로 하나 이상의 서로 다른 스레드에서 실행되지만 항상 그렇지는 않습니다. 이 코드는 트리의 상단 노드 바로 아래의 **[External Code]** 노드의 자식으로 **CPU 사용량** 호출 트리에 나타납니다.
 

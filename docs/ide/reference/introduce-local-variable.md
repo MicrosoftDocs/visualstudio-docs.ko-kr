@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568817"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio에서 지역 변수 소개
@@ -23,11 +23,11 @@ ms.locfileid: "75568817"
 
 - Visual Basic
 
-**내용:** 기존 식을 대체할 지역 변수를 즉시 생성할 수 있습니다.
+**대상:** 기존 식을 대체할 지역 변수를 즉시 생성할 수 있습니다.
 
 **시기:** 지역 변수에 있는 경우 나중에 쉽게 다시 사용할 수 있는 코드가 있습니다.
 
-**이유:** 코드를 여러 번 복사하여 붙여넣으면 다양한 위치에서 사용할 수 있지만, 작업을 한 번 수행하고, 지역 변수에 결과를 저장하고, 전체적으로 지역 변수를 사용하는 것이 좋습니다.
+**이유:** 코드를 여러 번 복사하여 붙여넣으면 다양한 위치에서 사용할 수 있지만, 작업을 한 번 수행하고 지역 변수에 결과를 저장한 다음, 전체적으로 지역 변수를 사용하는 것이 좋습니다.
 
 ## <a name="how-to"></a>방법
 
@@ -69,7 +69,7 @@ ms.locfileid: "75568817"
    > [!NOTE]
    > **...모든 항목...** 메뉴 옵션을 사용하면 특별히 강조 표시한 항목만이 아니라 선택한 식의 모든 인스턴스를 대체할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

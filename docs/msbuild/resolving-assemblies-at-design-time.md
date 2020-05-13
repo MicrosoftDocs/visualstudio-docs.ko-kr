@@ -10,20 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595152"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632565"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>디자인 타임에 어셈블리 확인
+
 **참조 추가** 대화 상자의 **.NET** 탭을 통해 어셈블리에 참조를 추가할 때, 참조는 중간 참조 어셈블리를 가리킵니다. 이 어셈블리는 모든 형식 및 시그니처 정보를 포함하지만 코드를 반드시 포함하지는 않습니다. **.NET** 탭에는 .NET Framework의 런타임 어셈블리에 해당하는 참조 어셈블리가 표시됩니다. 또한 타사에서 사용되는 등록된 AssemblyFoldersEx 폴더의 런타임 어셈블리에 해당하는 참조 어셈블리도 표시됩니다.
 
 ## <a name="multi-targeting"></a>멀티 타기팅
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]를 사용하면 CLR(공용 언어 런타임) 버전 2.0 또는 버전 4에서 실행되는 .NET Framework의 버전을 대상으로 지정할 수 있습니다. 이러한 버전에는 .NET Framework 버전 2.0, 3.0, 3.5, 4, 4.5 및 4.5.1과 Silverlight 버전 1.0, 2.0 및 3.0이 포함됩니다. CLR 버전 2.0 또는 버전 4를 기준으로 하는 새 .NET Framework 버전이 릴리스되면 타기팅 팩을 사용하여 Framework를 설치할 수 있으며 설치된 후에는 자동으로 Visual Studio에서 대상으로 표시됩니다.
+
+ Visual Studio에서는 여러 버전의 .NET Framework에서 실행되는 .NET Framework 버전을 대상으로 지정할 수 있습니다. 새 .NET Framework 버전이 릴리스되면 타기팅 팩을 사용하여 Framework를 설치할 수 있으며 설치된 후에는 자동으로 Visual Studio에서 대상으로 표시됩니다.
 
 ## <a name="how-type-resolution-works"></a>형식 확인 작동 방식
+
  런타임에 CLR은 GAC, *bin* 디렉터리 및 모든 검색 경로를 검사하여 어셈블리의 형식을 확인합니다. 이 작업은 Fusion 로더에 의해 처리됩니다. 그러나 Fusion 로더에서 어떤 항목을 찾고 있는지를 어떻게 알 수 있나요? 이것은 애플리케이션이 빌드되는 디자인 타임에 수행되는 확인에 따라 결정됩니다.
 
  빌드 중에 컴파일러는 참조 어셈블리를 사용하여 애플리케이션 형식을 확인합니다. .NET Framework 버전 2.0, 3.0, 3.5, 4, 4.5 및 4.5.1에서 .NET Framework가 설치될 때 참조 어셈블리가 설치됩니다.

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585732"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Visual Studio 바로 가기 팁
@@ -22,11 +22,11 @@ ms.locfileid: "75585732"
 명령 바로 가기의 전체 목록은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)를 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)를 참조하세요.
 
 ## <a name="window-management"></a>창 관리
 
-|작업|바로 가기|
+|Task|바로 가기|
 |-|-|
 |부동 창 최대화|제목 표시줄 **두 번 클릭**|
 |창 최대화/최소화|**Win**+**위쪽 화살표** / **Win**+**아래쪽 화살표**|
@@ -41,7 +41,7 @@ ms.locfileid: "75585732"
 
 ## <a name="search"></a>검색
 
-|작업|바로 가기|
+|Task|바로 가기|
 |-|-|
 |솔루션 탐색기 검색|**Ctrl**+ **;**|
 |모든 도구 창에서 검색 상자에 포커스 배치(편집기 제외)|도구 창에 포커스가 있을 경우 **Alt**+ **`**|
@@ -51,7 +51,7 @@ ms.locfileid: "75585732"
 
 ## <a name="find-in-the-editor"></a>편집기에서 찾기
 
-|작업|바로 가기|
+|Task|바로 가기|
 |-|-|
 |빠른 찾기|**Ctrl**+**F**|
 |빠른 다음 찾기 결과|**Enter**|
@@ -66,7 +66,7 @@ ms.locfileid: "75585732"
 
 ## <a name="code-editor"></a>코드 편집기
 
-|작업|바로 가기|
+|Task|바로 가기|
 |-|-|
 |전체로 이동|**Ctrl**+**T**|
 |최근에 사용한 파일로 이동|**Ctrl**+**T**,**R**|
@@ -101,18 +101,18 @@ ms.locfileid: "75585732"
 
 ## <a name="toolbars"></a>도구 모음
 
-|작업|바로 가기|
+|Task|바로 가기|
 |-|-|
 |단추 추가|도구 모음 오버플로 단추 선택|
 |표준 도구 모음의 찾기 콤보 상자|**Ctrl**+**D**|
 |찾기 텍스트 상자 명령 모드|**>** 입력|
-|새 별칭 만들기|**명령** 창에서 **alias \<new alias> \<command>** 입력|
+|새 별칭 만들기|**명령\< 창에서 \<alias** new alias> **command>** 입력|
 
 ## <a name="debugging"></a>디버깅
 
-|작업|바로 가기|
+|Task|바로 가기|
 |-|-|
-|디버깅 시작|**F5**|
+|디버그 시작|**F5**|
 |디버깅 중지|**Shift**+**F5**|
 |디버깅 다시 시작|**Ctrl**+**Shift**+**F5**|
 |프로시저 단위 실행|**F10**|
@@ -127,7 +127,7 @@ ms.locfileid: "75585732"
 |직접 실행 창 - 버퍼 지우기|**cls** 입력|
 |직접 실행 창 - 값 출력|**?varname** 입력|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)
 - [Visual Studio의 생산성 기능](productivity-features.md)

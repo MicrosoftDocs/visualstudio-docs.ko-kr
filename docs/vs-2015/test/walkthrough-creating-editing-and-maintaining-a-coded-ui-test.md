@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851225"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586909"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "75851225"
 
 ### <a name="create-a-simple-wpf-application"></a>간단한 WPF 애플리케이션 만들기
 
-1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 선택 합니다.
 
      **새 프로젝트** 대화 상자가 나타납니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "75851225"
 
      Visual Studio용 WPF Designer가 열리고 프로젝트의 MainWindow가 표시됩니다.
 
-8. 현재 도구 상자가 열려 있지 않으면 엽니다. **보기** 메뉴를 선택한 다음 **도구 상자**를 선택합니다.
+8. 현재 도구 상자가 열려 있지 않으면 엽니다. **보기** 메뉴를 선택한 다음 **도구 상자**를 선택 합니다.
 
 9. **모든 WPF 컨트롤** 섹션에서 **Button**, **CheckBox** 및 **ProgressBar** 컨트롤을 디자인 화면의 MainWindow로 끌어옵니다.
 
@@ -53,9 +53,9 @@ ms.locfileid: "75851225"
 
 11. ProgressBar 컨트롤을 선택합니다. 속성 창에 **Name** 속성의 값을 \<이름 없음>에서 progressBar1로 변경합니다. 그런 다음 **Maximum** 속성 값을 **100**에서 **10000**으로 변경합니다.
 
-12. Checkbox 컨트롤을 선택합니다. 속성 창에서 **Name** 속성을 \<이름 없음>에서 checkBox1로 변경하고 **IsEnabled** 속성을 선택 취소합니다.
+12. Checkbox 컨트롤을 선택합니다. 속성 창에서 **Name** 속성을 \<이름 없음>에서 checkBox1로 변경하고 **IsEnabled** 속성의 선택을 취소합니다.
 
-     ![간단한 WPF 응용 프로그램](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
+     ![간단한 WPF 애플리케이션](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
 13. 단추 컨트롤을 두 번 클릭하여 Click 이벤트 처리기를 추가합니다.
 
@@ -106,7 +106,7 @@ ms.locfileid: "75851225"
 
 ### <a name="verify-the-wpf-application-runs-correctly"></a>WPF 애플리케이션이 제대로 실행되는지 확인
 
-1. **디버그** 메뉴에서 **디버깅 시작**을 선택하거나 **F5** 키를 누릅니다.
+1. **디버그** 메뉴에서 **디버깅 시작** 을 선택 하거나 **f5**키를 누릅니다.
 
 2. 확인란 컨트롤은 사용하지 않도록 설정되어 있습니다. **시작**을 선택합니다.
 
@@ -125,7 +125,7 @@ ms.locfileid: "75851225"
     > [!TIP]
     > 애플리케이션 바로 가기를 사용하면 애플리케이션을 신속하게 시작할 수 있기 때문에 애플리케이션에 대해 코딩된 UI 테스트를 쉽게 추가하거나 수정할 수 있습니다.
 
-3. 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음 **새 프로젝트**를 선택합니다.
+3. 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 선택한 다음 **새 프로젝트**를 선택 합니다.
 
      **새 프로젝트 추가** 대화 상자가 나타납니다.
 
@@ -147,7 +147,7 @@ ms.locfileid: "75851225"
 
 8. UIMap – 코딩된 UI 테스트 빌더에서 **기록 시작**을 선택합니다.
 
-     ![기록 시작](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
+     ![녹화 시작](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
 
      필요한 경우, 예를 들어 들어오는 메일을 처리해야 하는 경우 기록을 일시 중지할 수 있습니다.
 
@@ -168,7 +168,7 @@ ms.locfileid: "75851225"
 
 12. SimpleWPFApp 애플리케이션을 닫습니다.
 
-13. UIMap – 코딩된 UI 테스트 빌더에서 **코드 생성**을 선택합니다.
+13. UIMap-코딩 된 UI 테스트 빌더에서 **코드 생성**을 선택 합니다.
 
 14. 메서드 이름에 **SimpleAppTest**를 입력하고 **추가 후 생성**을 선택합니다. 그러면 몇 초 안에 코딩된 UI 테스트가 나타나고 솔루션에 추가됩니다.
 
@@ -180,13 +180,13 @@ ms.locfileid: "75851225"
 
 ### <a name="run-the-coded-ui-test"></a>코딩된 UI 테스트 실행
 
-1. **테스트** 메뉴에서 **창**을 선택한 다음 **테스트 탐색기**를 선택합니다.
+1. **테스트** 메뉴에서 **창** 을 선택한 다음 **테스트 탐색기**를 선택 합니다.
 
 2. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
 
 3. CodedUITest1.cs 파일에서 **CodedUITestMethod** 메서드를 찾아 마우스 오른쪽 단추로 클릭한 다음 **테스트 실행**을 선택하거나 테스트 탐색기에서 테스트를 실행합니다.
 
-     코딩된 UI 테스트가 실행되는 동안 SimpleWPFApp를 볼 수 있습니다. 이전 절차에서 수행한 단계가 실행됩니다. 그러나 테스트에서 확인란 컨트롤에 해당하는 확인란을 선택하려고 시도하면 테스트 결과 창에서 테스트가 실패했음을 보여 줍니다. 진행률 표시줄이 100% 완료 상태가 될 때까지 확인란 컨트롤을 사용할 수 없다는 사실을 모르고 테스트에서 해당 확인란을 선택하려고 시도했기 때문입니다. 이와 같은 문제는 코딩된 UI 테스트에 사용할 수 있는 다양한 `UITestControl.WaitForControlXXX()` 메서드를 사용하여 해결할 수 있습니다. 다음 절차에서는 `WaitForControlEnabled()` 메서드를 사용하여, 테스트 실패의 원인이 된 문제를 해결하는 방법을 보여 줍니다. 자세한 내용은 [코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)을 참조하세요.
+     코딩된 UI 테스트가 실행되는 동안 SimpleWPFApp를 볼 수 있습니다. 이전 절차에서 수행한 단계가 실행됩니다. 그러나 테스트에서 확인란 컨트롤에 해당하는 확인란을 선택하려고 시도하면 테스트 결과 창에서 테스트가 실패했음을 보여 줍니다. 진행률 표시줄이 100% 완료 상태가 될 때까지 확인란 컨트롤을 사용할 수 없다는 사실을 모르고 테스트에서 해당 확인란을 선택하려고 시도했기 때문입니다. 이와 같은 문제는 코딩된 UI 테스트에 사용할 수 있는 다양한 `UITestControl.WaitForControlXXX()` 메서드를 사용하여 해결할 수 있습니다. 다음 절차에서는 `WaitForControlEnabled()` 메서드를 사용하여, 테스트 실패의 원인이 된 문제를 해결하는 방법을 보여 줍니다. 자세한 내용은 [코딩 된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 설정](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)을 참조 하세요.
 
 ### <a name="edit-and-rerun-the-coded-ui-test"></a>코딩된 UI 테스트 편집 및 다시 실행
 
@@ -219,7 +219,7 @@ ms.locfileid: "75851225"
 
      테스트 메서드가 UIMap.uitest 파일에서 제거되고 더 이상 UI 작업 창에 표시되지 않습니다. 이동한 테스트 파일을 편집하려면 솔루션 탐색기에서 UIMap.cs 파일을 엽니다.
 
-9. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 도구 모음에서 **저장**을 선택합니다.
+9. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 도구 모음에서 **저장**을 선택 합니다.
 
      테스트 메서드 업데이트가 UIMap.Designer 파일에 저장됩니다.
 
@@ -261,7 +261,7 @@ ms.locfileid: "75851225"
 
     ```
 
-14. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
+14. **빌드** 메뉴에서 **솔루션 빌드**를 선택 합니다.
 
 15. **CodedUITestMethod** 메서드를 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택합니다.
 
@@ -273,9 +273,9 @@ ms.locfileid: "75851225"
 
 2. 속성 창 상단에서 **Name** 속성 값을 button1에서 buttonA로 변경합니다.
 
-3. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
+3. **빌드** 메뉴에서 **솔루션 빌드**를 선택 합니다.
 
-4. 테스트 탐색기에서 **CodedUITestMethod1**을 실행합니다.
+4. 테스트 탐색기에서 **CodedUITestMethod1**를 실행 합니다.
 
      코딩된 UI 테스트가 원래 UIMap에서 button1으로 매핑된 Button 컨트롤을 찾을 수 없으므로 테스트가 실패합니다. 리팩터링은 코딩된 UI 테스트에 이러한 방식으로 영향을 줄 수 있습니다.
 
@@ -360,7 +360,7 @@ ms.locfileid: "75851225"
 
     ```
 
-13. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
+13. **빌드** 메뉴에서 **솔루션 빌드**를 선택 합니다.
 
 14. 테스트 탐색기에서 CodedUITestMethod1을 실행합니다.
 
@@ -368,18 +368,18 @@ ms.locfileid: "75851225"
 
 ## <a name="external-resources"></a>외부 리소스
 
-### <a name="videos"></a>비디오
- 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [-DeepDive-Deepdive-episode1-gettingstarted-get started](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
+### <a name="videos"></a>동영상
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Deepdive-episode1-gettingstarted-get started](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [-DeepDive-Episode2-deepdive-episode2-maintainenceanddebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Episode2-deepdive-episode2-maintainenceanddebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [-DeepDive-Episode3-핸드 코딩](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Episode3-핸드 코딩](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>실습
  [MSDN 가상 랩: Visual Studio 2010을 사용하여 코딩된 UI 테스트 만들기 소개](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
 ### <a name="faq"></a>FAQ
- [코딩된 UI 테스트 FAQ - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [코딩된 UI 테스트 FAQ - 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [코딩된 UI 테스트 FAQ - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 

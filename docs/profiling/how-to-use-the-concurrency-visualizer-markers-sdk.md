@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68870340"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>방법: 동시성 시각화 도우미 표식 SDK 사용
@@ -48,7 +48,7 @@ ms.locfileid: "68870340"
 
 4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작**을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화에 있는 범위 3개 및 표식 3개를 보여 줍니다.
 
-     ![3개 표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkersnative.png "CvMarkersNative")
+     ![3가지 마커 및 경고가 있는 동시성 시각화 도우미](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
 5. 표식 시리즈의 문자열 이름을 사용하는 `marker_series`이 생성자를 호출하여 사용자 지정 표식 시리즈를 추가로 만드는 코드를 추가합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "68870340"
 
 6. 현재 프로젝트를 시작하여 동시성 시각화를 표시합니다. 스레드 뷰의 자체 레인에 두 개의 표식 시리즈가 나타납니다. 다음 그림은 두 개의 새 범위를 보여 줍니다.
 
-     ![3개 표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![3가지 사용자 지정 마커 계열이 있는 동시성 시각화 도우미](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic 또는 C\#을 사용하려면
 
@@ -126,7 +126,7 @@ ms.locfileid: "68870340"
 
 4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작**을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화의 스레드 뷰에 있는 범위 3개 및 표식 3개를 보여 줍니다.
 
-     ![표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
+     ![마커 및 경고가 있는 동시성 시각화 도우미](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
 5. static [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) 메서드를 사용하여 고객 표식 시리즈를 만드는 코드를 추가합니다. [MarkerSeries](/previous-versions/hh694127(v=vs.140)) 클래스에는 범위를 만들고 플래그, 메시지 및 경고를 쓸 수 있는 메서드가 포함됩니다.
 
@@ -164,7 +164,7 @@ ms.locfileid: "68870340"
 
 6. 현재 프로젝트를 시작하여 동시성 시각화를 표시합니다. 스레드 뷰의 자체 레인에 세 개의 표식 시리즈가 나타납니다. 다음 그림은 세 개의 새 범위를 보여 줍니다.
 
-     ![3개 표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![3가지 사용자 지정 마커 계열이 있는 동시성 시각화 도우미](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593852"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093602"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
 
@@ -42,7 +42,7 @@ ms.locfileid: "75593852"
 </Target>
 ```
 
- AfterBuild가 실행되는 경우 "두 번째 발생"만 표시됩니다.
+ `AfterBuild`가 실행되는 경우 `AfterBuild`의 두 번째 정의가 첫 번째 정의를 숨기기 때문에 "Second occurrence"만 표시됩니다.
 
  MSBuild는 가져오기 순서에 종속되며, 대상의 마지막 정의가 사용됩니다.
 
@@ -105,6 +105,7 @@ Reference: 4.0
  모든 출력 항목이 최신 상태인 경우 MSBuild는 대상을 건너뜁니다. 이로 인해 빌드 속도가 크게 향상됩니다. 이를 대상의 증분 빌드라고 합니다. 일부 파일만 최신 상태인 경우 MSBuild는 최신 항목 없이 대상을 실행합니다. 이를 대상의 부분 증분 빌드라고 합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md)를 참조하세요.
 
 ## <a name="default-build-targets"></a>기본 빌드 대상
+
 다음은 Microsoft.Common.CurrentVersion.Targets의 공용 대상입니다.
 
 ```

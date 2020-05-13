@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590373"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 상속 만들기
@@ -47,9 +47,9 @@ ms.locfileid: "75590373"
     >
     >  기존 제네릭 형식을 시각화할 수는 있지만 새 제네릭 형식을 만들 수는 없습니다. 또한 기존 제네릭 형식의 형식 매개 변수를 변경할 수도 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [상속](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [상속 기본 사항](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [방법: 형식 간에 상속 보기](how-to-view-inheritance-between-types.md)
+- [방법: 형식 간의 상속 보기](how-to-view-inheritance-between-types.md)
 - [클래스 디자이너의 Visual C++ 클래스](visual-cpp-classes.md)

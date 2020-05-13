@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779911"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
@@ -65,7 +65,7 @@ VSPerfCmd /Attach:MyService.exe
 
 다음 표에는 계측 프로파일링을 위한 VSPerfCLREnv 옵션에 대한 설명이 나와 있습니다.
 
-|옵션|설명|
+|옵션|Description|
 |------------|-----------------|
 |**TraceOn**|계측 방법을 사용하여 프로파일링을 활성화합니다. 메모리 할당 프로파일링 또는 개체 수명 데이터 수집은 활성화되지 않습니다.|
 |**TraceGC**|계측 방법을 사용하여 메모리 할당 프로파일링을 활성화합니다. 개체 수명 데이터 수집은 활성화되지 않습니다.|
@@ -75,7 +75,7 @@ VSPerfCmd /Attach:MyService.exe
 
 다음 표에는 샘플링 프로파일링을 위한 VSPerfCLREnv 옵션에 대한 설명이 나와 있습니다.
 
-|옵션|설명|
+|옵션|Description|
 |------------|-----------------|
 |**SampleOn**|샘플링 방법을 사용하여 프로파일링을 활성화합니다. 메모리 할당 프로파일링 또는 개체 수명 데이터 수집은 활성화되지 않습니다.|
 |**SampleGC**|샘플링 방법을 사용하여 메모리 할당 프로파일링을 활성화합니다. 개체 수명 데이터 수집은 활성화되지 않습니다.|
@@ -86,7 +86,7 @@ VSPerfCmd /Attach:MyService.exe
 
 사용자가 시작하는 것이 아니라 운영 체제에 의해 시작되는 ASP.NET 웹 애플리케이션과 관리 서비스를 프로파일링하려면 VSPerfCLREnv 옵션의 전역 프로파일링용 옵션을 사용합니다. 다음 표에는 VSPerfCLREnv 옵션의 전역 버전에 대한 설명이 나와 있습니다. 이러한 옵션은 레지스트리에서 적절한 환경 변수를 설정합니다.
 
-|옵션|설명|
+|옵션|Description|
 |------------|-----------------|
 |**GlobalTraceOn**|계측 방법을 사용하여 전역 프로파일링을 활성화합니다. 메모리 할당 이벤트 또는 개체 수명 데이터는 수집되지 않습니다.|
 |**GlobalTraceGC**|계측 방법을 사용하여 전역 메모리 할당 프로파일링을 활성화합니다. 개체 수명 데이터 수집은 활성화되지 않습니다.|
@@ -99,7 +99,7 @@ VSPerfCmd /Attach:MyService.exe
 
  관리되는 애플리케이션 프로파일링을 완료한 후에는 다음 옵션 중 하나를 사용하여 VSPerfCLREnv가 추가한 환경 변수를 삭제합니다. 다음 표에서는 표준 환경 변수와 전역 환경 변수를 둘 다 삭제하는 방법을 설명합니다.
 
-|옵션|설명|
+|옵션|Description|
 |------------|-----------------|
 |**Off**|표준 .NET 프로파일링용 환경 변수를 삭제합니다. 비전역 VSPerfClrEnv 옵션을 사용하여 프로파일러 환경 변수를 설정한 경우 이 옵션을 사용합니다.|
 |**GlobalOff**|전역 .NET 프로파일링용 환경 변수를 삭제합니다. 프로파일러가 아닌 운영 체제에 의해 애플리케이션이 시작된 경우 이 옵션을 사용합니다.|

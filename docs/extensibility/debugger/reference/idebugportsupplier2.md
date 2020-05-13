@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2 | Microsoft Docs
+title: 아이디버그포트공급업체2 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947a311cb1e83eaa131730725aeb7938e5615f0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724479"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
-이 인터페이스는 세션 디버그 관리자 (SDM)에 대 한 포트를 제공합니다.
+이 인터페이스는 세션 디버그 관리자(SDM)에 포트를 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,11 +28,11 @@ ms.locfileid: "66340058"
 IDebugPortSupplier2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자 참고 사항
-사용자 지정 포트 공급자 포트 공급자를 나타내는 데이 인터페이스를 구현 합니다.
+## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
+사용자 지정 포트 공급자는 이 인터페이스를 구현하여 포트 공급자를 나타냅니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
-에 대 한 호출 `CoCreateInstance` 포트 공급자를 사용 하 여 `GUID` (이것이이 인터페이스를 검색 하는 일반적인 방법)이이 인터페이스를 반환 합니다. 예를 들어:
+## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
+포트 공급자를 `CoCreateInstance` `GUID` 호출하면 이 인터페이스가 반환됩니다(이 인터페이스를 가져오는 일반적인 방법입니다). 다음은 그 예입니다.
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -49,38 +49,38 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }
 ```
 
-에 대 한 호출 [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) 이 인터페이스를 사용 하 고 현재 포트 공급자를 나타내는 반환 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]합니다.
+[GetPortSupplier에](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) 대한 호출은 에서 사용 중인 현재 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]포트 공급자를 나타내는 이 인터페이스를 반환합니다.
 
-- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) 포트를 만든 포트 공급자를 나타내는이 인터페이스를 반환 합니다.
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) 포트를 만든 포트 공급자를 나타내는 이 인터페이스를 반환 합니다.
 
-- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) 목록을 나타냅니다 `IDebugPortSupplier` 인터페이스 (합니다 `IEnumDebugPortSuppliers` 인터페이스에서 가져온 [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)합니다 를사용하여등록된모든포트공급자를나타내는[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) 인터페이스 의 `IDebugPortSupplier` 목록을 나타냅니다 `IEnumDebugPortSuppliers` (인터페이스는 [EnumPortSuppliers에서](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)가져온, 등록 된 포트 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]공급 업체의 모든 나타내는).
 
-디버그 엔진을 일반적으로 상호 작용 하지 않습니다 포트 공급자입니다.
+디버그 엔진은 일반적으로 포트 공급자와 상호 작용하지 않습니다.
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
-다음 표에서의 메서드를 보여 줍니다. `IDebugPortSupplier2`합니다.
+다음 표에서는 의 `IDebugPortSupplier2`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
 
-|메서드|설명|
+|방법|설명|
 |------------|-----------------|
 |[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|포트 공급자 이름을 가져옵니다.|
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|포트 공급자 식별자를 가져옵니다.|
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|포트 공급자에서 포트를 가져옵니다.|
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|이미 존재 하는 포트를 열거 합니다.|
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|포트 공급자 새 포트 추가 지원 하는지 확인 합니다.|
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|포트 공급자로부터 포트를 가져옵니다.|
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|이미 존재하는 포트를 연수합니다.|
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|포트 공급자가 새 포트 추가를 지원하는지 확인합니다.|
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|포트를 추가합니다.|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|포트를 제거합니다.|
 
 ## <a name="remarks"></a>설명
-포트 공급자 수 파악 자체 이름 및 ID, 추가 포트를 제거 하 고 포트 공급자가 제공 하는 모든 포트를 열거 합니다.
+포트 공급자는 이름과 ID로 자신을 식별하고, 포트를 추가 및 제거하고, 포트 공급자가 제공하는 모든 포트를 열거할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

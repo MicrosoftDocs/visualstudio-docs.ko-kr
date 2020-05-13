@@ -4,8 +4,8 @@ ms.date: 06/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - minidumps for Visual Studio issues"
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 7b3be91e5d0d2e1f14724dd647670fc4885bcd4d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461649"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77271191"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>모든 호출 스택을 사용하여 Visual Studio 프로세스에 대한 미니덤프 만들기
 

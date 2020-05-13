@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596374"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
@@ -31,7 +31,7 @@ IDE의 지역화된 버전에서는 IDE의 기본 언어 또는 영어로 명령
 
 ## <a name="escape-character"></a>이스케이프 문자
 
-Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케이프 문자는 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석됨을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예:
+Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케이프 문자는 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석됨을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들어:
 
 ```
 >Edit.Find ^^t /regex

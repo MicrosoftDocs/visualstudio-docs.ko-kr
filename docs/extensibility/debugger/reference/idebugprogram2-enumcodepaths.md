@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths | Microsoft Docs
+title: 아이디버그프로그램2::에이넘코드패스 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumCodePaths
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3206a9c89197ccc9415115fe9fb0995e51ede8c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353178"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723037"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-소스 파일에서 지정된 된 위치에 대 한 코드 경로의 목록을 검색합니다.
+소스 파일에서 지정된 위치에 대한 코드 경로 목록을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,30 +51,30 @@ int EnumCodePaths( 
 
 ## <a name="parameters"></a>매개 변수
 `pszHint`\
-[in] 커서 아래에 있는 단어를 **원본** 하거나 **디스어셈블리** IDE에서 보기.
+【인】 IDE의 **소스** 또는 **디스어셈블리** 뷰의 커서 아래에 있는 단어입니다.
 
 `pStart`\
-[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 현재 코드 컨텍스트를 나타내는 개체입니다.
+【인】 현재 코드 컨텍스트를 나타내는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체입니다.
 
 `pFrame`\
-[in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 현재 중단점을 사용 하 여 연결 된 스택 프레임을 나타내는 개체입니다.
+【인】 현재 중단점과 연결된 스택 프레임을 나타내는 [IDebugStackFrameFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 개체입니다.
 
 `fSource`\
-[in] 0이 아닌 (`TRUE`)에 있는 경우는 **소스** 뷰 또는 0 (`FALSE`)에 있는 경우는 **디스어셈블리** 보기.
+【인】 비영`TRUE`() 소스 **뷰에** 있는`FALSE`경우, 또는 0 () **디스어셈블리 뷰에** 있는 경우.
 
 `ppEnum`\
-[out] 반환 된 [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) 코드 경로 목록을 포함 하는 개체입니다.
+【아웃】 코드 경로 목록을 포함하는 [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) 개체를 반환합니다.
 
 `ppSafety`\
-[out] 반환 된 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 건너뜁니다 코드 경로 선택한 경우 중단점으로 설정 하도록 추가 코드 컨텍스트를 나타내는 개체입니다. 예를 들어 대해서는 처리가 단축된 부울 식의 경우 발생할 수 있습니다이 있습니다.
+【아웃】 선택한 코드 경로를 건너뛰는 경우 중단점으로 설정할 추가 코드 컨텍스트를 나타내는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체를 반환합니다. 예를 들어 단락된 부울 식의 경우 이러한 일이 발생할 수 있습니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 코드 경로 메서드 또는 프로그램 실행의 현재 위치를 이동 하려면 호출 된 함수의 이름을 설명 합니다. 코드 경로의 목록에는 호출 스택을 나타냅니다.
+ 코드 경로는 프로그램 실행의 현재 지점에 도달하기 위해 호출된 메서드 또는 함수의 이름을 설명합니다. 코드 경로 목록은 호출 스택을 나타냅니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

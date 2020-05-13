@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772729"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>모듈 뷰 - .NET 메모리 샘플링 데이터
@@ -41,7 +41,7 @@ ms.locfileid: "74772729"
 |**제외 바이트**|-   함수의 경우 함수에 의해 할당된 총 바이트 수입니다. 이 수에는 이 함수가 호출한 함수에서 할당된 바이트는 포함되지 않습니다.<br />-   모듈의 경우 모듈 내 함수에 의해 할당된 제외 바이트의 합계입니다.<br />-   줄이나 명령의 경우 이 줄 또는 명령에 의해 할당된 총 개체 수입니다.|
 |**제외 바이트(%)**|모듈, 함수, 줄 또는 명령의 제외 바이트인 프로파일링 실행에서 할당된 모든 바이트의 비율입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [모듈 뷰](../profiling/modules-view-sampling-data.md)

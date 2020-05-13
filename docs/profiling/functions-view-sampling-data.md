@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74780028"
 ---
 # <a name="functions-view---sampling-data"></a>함수 뷰 - 샘플링 데이터
@@ -40,7 +40,7 @@ ms.locfileid: "74780028"
 |**전용 샘플**|이 함수 본문의 코드가 실행될 때(즉, 이 함수가 호출 스택의 맨 위에 있을 때) 수집된 총 샘플 수입니다. 해당 함수가 호출한 함수에서 수집된 샘플은 포함되지 않습니다.|
 |**전용 샘플 비율(%)**|프로파일링 실행 시, 이 함수의 전용 샘플이었던 모든 샘플의 비율입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [함수 뷰 - 계측](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [함수 뷰 - 샘플링](../profiling/functions-view-dotnet-memory-sampling-data.md)

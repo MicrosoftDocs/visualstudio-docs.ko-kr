@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
 ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714396"
 ---
 # <a name="build-actions"></a>빌드 작업
@@ -31,11 +31,11 @@ Mac용 Visual Studio에서 파일에 대해 빌드 작업을 설정하려면, �
 
 Mac용 Visual Studio에서 빌드할 수 있는 프로젝트에 대한 몇 가지 일반적인 빌드 작업은 다음과 같습니다.
 
-|빌드 작업 | 프로젝트 형식 | 설명 |
+|빌드 동작 | 프로젝트 형식 | Description |
 |--|--|--|
 | **컴파일** | any | 파일이 소스 파일로 C# 컴파일러에 전달됩니다.|
 | **콘텐츠** | .NET, Xamarin | ASP.NET 프로젝트의 경우 이러한 파일은 배포 시 사이트의 일부로 포함됩니다. Xamarin.iOS 및 Xamarin.Mac 프로젝트의 경우 앱 번들에 포함됩니다.|
-| **포함 리소스** | .NET | 파일이 어셈블리에 포함될 리소스로 C# 컴파일러에 전달됩니다. 그런 다음, `System.Reflection` 네임스페이스의 [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream)을 사용하여 어셈블리에서 파일을 읽을 수 있습니다.|
+| **포함 리소스** | .NET | 파일이 어셈블리에 포함될 리소스로 C# 컴파일러에 전달됩니다. 그런 다음, [ 네임스페이스의 ](/dotnet/api/system.reflection.assembly.getmanifestresourcestream)Assembly.GetManifestResourceStream`System.Reflection`을 사용하여 어셈블리에서 파일을 읽을 수 있습니다.|
 | **없음** | any | 파일이 어떤 방식으로든 빌드에 속하지 않고, IDE에서 쉽게 액세스할 수 있도록 프로젝트에 포함됩니다. 이 값은 예를 들어 "ReadMe" 파일과 같은 문서 파일에 사용할 수 있습니다.|
 
 > [!NOTE]

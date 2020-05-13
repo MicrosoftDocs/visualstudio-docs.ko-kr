@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595828"
 ---
 # <a name="application-page-project-designer-c"></a>프로젝트 디자이너, 애플리케이션 페이지(C#)
@@ -38,7 +38,7 @@ ms.locfileid: "75595828"
 
 [/out(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option)을 사용하여 명령줄에서 이 변경을 수행할 수도 있습니다.
 
-프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>를 참조하세요.
 
 **기본 네임스페이스**
 
@@ -46,7 +46,7 @@ ms.locfileid: "75595828"
 
 코드에서 네임스페이스를 만드는 방법에 대한 자세한 내용은 [네임스페이스](/dotnet/csharp/language-reference/keywords/namespace)를 참조하세요.
 
-프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>를 참조하세요.
 
 **대상 프레임워크**
 
@@ -71,7 +71,7 @@ ms.locfileid: "75595828"
 
 **출력 형식** 속성에 대한 자세한 내용은 [/target(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option)을 참조하세요.
 
-프로그래밍 방식으로 이 속성에 액세스하는 방법에 대한 자세한 내용은 <xref:VSLangProj.ProjectProperties.OutputType%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하는 방법에 대한 자세한 내용은 <xref:VSLangProj.ProjectProperties.OutputType%2A>를 참조하세요.
 
 **바인딩 리디렉션 자동 생성**
 
@@ -85,7 +85,7 @@ ms.locfileid: "75595828"
 
 기본적으로, WPF 앱 프로젝트에서 이 옵션은 **(설정 안 함)** 으로 설정됩니다. 다른 옵션은 \[projectname].App입니다. WPF 프로젝트에서는 애플리케이션을 시작할 때 UI 리소스를 로드하도록 시작 URI를 설정해야 합니다. 이렇게 하려면 프로젝트에서 *Application.xaml* 파일을 열고, `StartupUri` 속성을 프로젝트의 *.xaml* 파일(예: *Window1.xaml*)로 설정합니다. 허용되는 루트 요소 목록은 <xref:System.Windows.Application.StartupUri%2A>를 참조하세요. 또한 프로젝트의 클래스에서 `public static void Main()` 메서드를 정의해야 합니다. 이 클래스는 **시작 개체** 목록에 *ProjectName.ClassName*으로 나타납니다. 그런 다음 클래스를 시작 개체로 선택할 수 있습니다.
 
-자세한 내용은 [/main(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.StartupObject%2A>을 참조하세요.
+자세한 내용은 [/main(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.StartupObject%2A>를 참조하세요.
 
 **어셈블리 정보**
 
@@ -103,13 +103,13 @@ ms.locfileid: "75595828"
 
 프로그램 아이콘으로 사용할 *.ico* 파일을 설정합니다. **찾아보기**를 클릭하여 기존 그래픽을 찾거나 원하는 파일의 이름을 입력합니다. 자세한 내용은 [/win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)을 참조하세요.
 
-프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>를 참조하세요.
 
 아이콘을 만드는 방법에 대한 자세한 내용은 [아이콘을 위한 이미지 편집기](/cpp/windows/image-editor-for-icons)를 참조하세요.
 
 **Manifest**
 
-Windows Vista에서 UAC(사용자 계정 컨트롤)로 애플리케이션을 실행하는 경우 매니페스트 생성 옵션을 선택합니다. 이 옵션은 다음 값을 가질 수 있습니다.
+Windows Vista에서 UAC(사용자 계정 컨트롤)로 애플리케이션을 실행하는 경우 매니페스트 생성 옵션을 선택합니다. 이 옵션에 사용할 수 있는 값은 다음과 같습니다.
 
 - **기본 설정으로 구성된 매니페스트 포함** Windows Vista에서 Visual Studio가 작동하는 일반적인 방식(`requestedExecutionLevel`을 `AsInvoker`로 지정하여 애플리케이션의 실행 파일에 보안 정보 포함)을 지원합니다. 기본 옵션입니다.
 

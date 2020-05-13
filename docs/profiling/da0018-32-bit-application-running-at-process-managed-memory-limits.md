@@ -1,5 +1,5 @@
 ---
-title: 'DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션 | Microsoft Docs'
+title: 'DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74780067"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션
@@ -25,10 +25,10 @@ ms.locfileid: "74780067"
 |||
 |-|-|
 |규칙 ID|DA0018|
-|범주|프로파일링 도구 사용|
+|Category|프로파일링 도구 사용|
 |프로파일링 방법|샘플링|
 |메시지|관리되는 메모리 할당이 32비트 프로세스의 기본 한도에 근접하고 있습니다. 애플리케이션이 메모리 바인딩될 수 있습니다.|
-|규칙 유형|경고|
+|규칙 유형|Warning|
 
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.
 

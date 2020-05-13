@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778819"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>방법: 계측을 특정 DLL로 제한
@@ -68,7 +68,7 @@ ms.locfileid: "74778819"
     > [!NOTE]
     > DLL을 실행하는 실행 파일(.*exe*)을 지정하지 마세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [데이터 컬렉션 제어](../profiling/controlling-data-collection.md)
 [방법: 특정 함수로 계측 제한](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

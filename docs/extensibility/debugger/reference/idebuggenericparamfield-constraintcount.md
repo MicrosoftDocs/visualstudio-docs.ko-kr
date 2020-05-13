@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericParamField::ConstraintCount | Microsoft Docs
+title: 아이데버그제네릭파라필드::제약카운트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de00e38fa02447217b30e4a6801001e2663798e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5a8f9809df0fa45021aab640bf3ff547efaa1576
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330452"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728083"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
-이 제네릭 매개 변수를 사용 하 여 연결 된 제약 조건의 수를 반환 합니다.
+이 제네릭 매개 변수와 연결된 제약 조건 수를 반환합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,13 +40,13 @@ int ConstraintCount(
 
 ## <a name="parameters"></a>매개 변수
 `pcConst`\
-[out에서] 이 필드와 연관 된 제약 조건 수입니다.
+【인, 아웃】 이 필드와 연결된 제약 조건 수입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugGenericParamFieldType** 노출 하는 개체를 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스입니다.
+다음 예제에서는 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamField 개체에** 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)
@@ -81,5 +81,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969994"
 ---
 # <a name="execution-profile-report"></a>실행 프로필 보고서
@@ -28,9 +28,9 @@ ms.locfileid: "62969994"
 
   다음 표에서는 보고서에 있는 열을 보여 줍니다.
 
-|열|설명|
+|열|Description|
 |------------|-----------------|
-|name|호출 스택의 각 수준에 대한 함수의 이름입니다.|
+|속성|호출 스택의 각 수준에 대한 함수의 이름입니다.|
 |포괄 샘플|호출 스택 트리의 이 수준으로 롤업되는 모든 스택에 대해 수집된 총 샘플 수입니다. 포괄 수는 이 함수에 대한 전용 샘플 및 모든 하위 노드에 대한 포괄 카운터의 합계입니다.|
 |전용 샘플|이 함수가 호출 스택의 최하위 수준에 있는 경우 수집된 총 샘플 수입니다.|
 |% 포함|포괄 샘플 열에 표시된 총 샘플의 백분율입니다. 백분율은 소수점 이하 두 자리까지 반올림됩니다.|

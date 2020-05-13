@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566308"
 ---
 # <a name="modify-load-test-logging-settings"></a>부하 테스트 로깅 설정 수정
@@ -23,11 +23,11 @@ ms.locfileid: "75566308"
 
 *테스트 컨트롤러*에서는 테스트가 실행되는 동안 수집된 모든 부하 테스트 샘플 데이터를 데이터베이스 로그에 스풀링합니다. 타이밍 정보와 오류 정보 같은 추가 데이터는 테스트가 완료된 후에 데이터베이스로 로드됩니다.
 
-|작업|관련 항목|
+|Task|관련 항목|
 |-|-----------------------|
 |**부하 테스트가 실패할 경우 로그 저장:** 부하 테스트가 실패할 때마다 테스트 로그를 저장할지 여부를 지정할 수 있습니다.|-   [방법: 테스트 실패를 테스트 로그에 저장할지 여부 지정](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**로그 파일의 최대 파일 크기 설정:** 테스트 컨트롤러 서비스와 연결된 XML 구성 파일을 편집하여 로그 파일에 사용할 최대 파일 크기를 지정할 수 있습니다.|*QTCcontroller.exe.config* XML 구성 파일에서 `<add key="LogSizeLimitInMegs" value="20"/>`을 수정합니다.|
+|**로그 파일의 최대 파일 크기 설정:** 테스트 컨트롤러 서비스와 연결된 XML 구성 파일을 편집하여 로그 파일에 사용할 최대 파일 크기를 지정할 수 있습니다.|`<add key="LogSizeLimitInMegs" value="20"/>`QTCcontroller.exe.config*XML 구성 파일에서*을 수정합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)

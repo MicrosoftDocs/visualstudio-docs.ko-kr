@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
-ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71301686"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>로컬 함수를 메서드로 변환
@@ -40,7 +40,7 @@ ms.locfileid: "71301686"
 
     ![로컬 함수를 메서드 결과로 변환 샘플](media/convert-local-function-to-method-result.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [.NET 개발자를 위한 팁](../csharp-developer-productivity.md)

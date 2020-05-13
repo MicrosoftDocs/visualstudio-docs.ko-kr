@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal | Microsoft Docs
+title: 아이디버그필드::평등 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::Equal method
 ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8af316c9669b00ae8316888c6a7072d4737dd23d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8a45a31c02376f95c3cd6b0c4a4adf0434fabe92
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352660"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729017"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-이 메서드는 같음에 대 한 지정된 된 필드를 사용 하 여이 필드를 비교합니다.
+이 메서드는 이 필드를 같음의 지정된 필드와 비교합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,10 +41,10 @@ int Equal(
 
 ## <a name="parameters"></a>매개 변수
 `pField`\
-[in] 이 이와 비교할 필드입니다.
+【인】 이 필드와 비교할 수 있습니다.
 
-## <a name="return-value"></a>반환 값
- 필드 같으면 반환 `S_OK`합니다. 필드를 다른 경우 반환 `S_FALSE.` 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 필드가 동일한 경우 을 `S_OK`반환합니다. 필드가 다른 경우 `S_FALSE.` 그렇지 않으면 반환하고 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

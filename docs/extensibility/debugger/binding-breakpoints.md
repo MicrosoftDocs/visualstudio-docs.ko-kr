@@ -1,57 +1,57 @@
 ---
-title: 중단점 바인딩 | Microsoft Docs
+title: 바인딩 중단점 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f861875e15a9051ab05d1b7398ea5902189830b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 680cff398a43d1ebe9ccf061ad42781500c7cf01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332560"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739236"
 ---
 # <a name="bind-breakpoints"></a>중단점 바인딩
-사용자 설정 중단점, 아마도 키를 눌러 **F9**, IDE 요청을 작성 하 고 중단점을 만들려고 하면 디버그 세션의 메시지를 표시 합니다.
+사용자가 **F9을**눌러 중단점을 설정하는 경우 IDE는 요청을 공식화하고 디버그 세션을 표시하여 중단점을 만듭니다.
 
 ## <a name="set-a-breakpoint"></a>중단점 설정
- 중단점 설정 이므로 2 단계 프로세스, 코드 또는 중단점의 영향을 받는 데이터를 아직 사용할 수 없습니다. 중단점을 설명 해야 합니다 하 고 그런 다음 코드 또는 데이터를 사용할 수 있는,이에 연결 해야 코드 또는 데이터를 사용 하는 다음과 같이 먼저:
+ 중단점 설정은 중단점의 영향을 받는 코드 나 데이터를 아직 사용할 수 없기 때문에 2 단계 프로세스입니다. 첫째, 중단점을 설명해야 하며 코드 나 데이터를 사용할 수 있게 되면 다음과 같이 해당 코드 또는 데이터에 바인딩되어야 합니다.
 
-1. 관련 디버그 엔진 (DEs)에서 중단점을 요청 하 고 중단점에 바인딩된 코드 또는 데이터를 사용할 수 있는 키를 누릅니다.
+1. 중단점은 관련 디버그 엔진(DEs)에서 요청된 다음 중단점은 코드 또는 데이터에 바인딩되어 사용 가능해집니다.
 
-2. 중단점 요청은 모든 관련 DEs로 전송 하는 디버그 세션에 전송 됩니다. 중단점을 처리 하도록 선택 하는 모든 DE 해당 보류 중단점을 만듭니다.
+2. 중단점 요청은 디버그 세션으로 전송되어 모든 관련 DEs로 전송됩니다. 중단점을 처리하도록 선택하는 모든 DE는 해당 보류 중인 중단점을 만듭니다.
 
-3. 디버그 세션은 보류 중인 중단점을 수집 하 고 디버그 패키지 (Visual Studio의 디버깅 구성)에 다시 보냅니다.
+3. 디버그 세션은 보류 중인 중단점을 수집하고 디버그 패키지(Visual Studio의 디버깅 구성 요소)로 다시 보냅니다.
 
-4. 디버그 패키지가 보류 중인 중단점 코드나 데이터에 바인딩할 디버그 세션을 요청 합니다. 디버그 세션에 모든 관련 DEs이이 요청을 보냅니다.
+4. 디버그 패키지는 디버그 세션이 보류 중인 중단점을 코드 또는 데이터에 바인딩하라는 메시지를 표시합니다. 디버그 세션은 이 요청을 모든 관련 DEs로 보냅니다.
 
-5. DE 중단점을 바인딩할 수 있으면 중단점 디버그 세션에 다시 이벤트를 바인딩된 보냅니다. 그렇지 않은 경우 대신 중단점 오류 이벤트를 보냅니다.
+5. DE가 중단점을 바인딩할 수 있는 경우 중단점 바인딩 된 이벤트를 디버그 세션으로 다시 보냅니다. 그렇지 않으면 중단점 오류 이벤트를 대신 보냅니다.
 
 ## <a name="pending-breakpoints"></a>보류 중인 중단점
- 보류 중인 중단점 여러 코드 위치에 바인딩할 수 있습니다. 예를 들어, 소스 코드 줄을 C++ 템플릿 템플릿에서 생성 되는 모든 코드 시퀀스를 바인딩할 수 있습니다. 디버그 세션 중단점이 바인딩된 이벤트를 사용 하 여 이벤트가 전송 된 시간에 중단점을 바인딩할 코드 컨텍스트 열거를 수 있습니다. 자세한 코드 컨텍스트는 DE 여러 중단점 바인딩된 각 바인딩 요청에 대 한 이벤트를 보낼 수 있습니다 나중에 바인딩할 수 있습니다. 그러나는 DE 바인딩 요청당 하나의 중단점 오류 이벤트를 전송 해야 합니다.
+ 보류 중인 중단점은 여러 코드 위치에 바인딩할 수 있습니다. 예를 들어 C++ 템플릿에 대한 소스 코드 줄은 템플릿에서 생성된 모든 코드 시퀀스에 바인딩할 수 있습니다. 디버그 세션은 중단점 바인딩 이벤트를 사용하여 이벤트가 전송될 때 중단점에 바인딩된 코드 컨텍스트를 열거할 수 있습니다. 나중에 더 많은 코드 컨텍스트를 바인딩할 수 있으므로 DE는 각 바인드 요청에 대해 여러 중단점 바인딩 이벤트를 보낼 수 있습니다. 그러나 DE는 바인드 요청당 하나의 중단점 오류 이벤트만 보내야 합니다.
 
 ## <a name="implementation"></a>구현
- 디버그 패키지 세션 디버그 관리자 SDM ()를 호출 하 고 제공 하는 프로그래밍 방식으로 [IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 래핑하는 인터페이스를 [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) 설명 하는 구조는 중단점을 설정할 수 있습니다. 중단점의 다양 한 형태를 사용할 수 있지만 궁극적으로 코드 또는 데이터 컨텍스트를 확인 합니다.
+ 프로그래밍 방식으로 디버그 패키지는 세션 디버그 관리자(SDM)를 호출하고 설정할 중단점을 설명하는 [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) 구조를 래핑하는 [IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스를 제공합니다. 중단점은 여러 형태일 수 있지만 궁극적으로 코드 또는 데이터 컨텍스트로 해결됩니다.
 
- SDM 호출 하 여 각 관련 DE이이 호출을 전달 해당 [CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) 메서드. 중단점을 처리 하는 DE 싶다면 만들고 반환 된 [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다. 이러한 인터페이스를 수집 하 고 단일 디버그 패키지로 다시 전달 하는 SDM `IDebugPendingBreakpoint2` 인터페이스입니다.
+ SDM은 [CreatePending중단점](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) 메서드를 호출하여 각 관련 DE에 이 호출을 전달합니다. DE가 중단점을 처리하도록 선택하면 [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스를 만들고 반환합니다. SDM은 이러한 인터페이스를 수집하여 단일 `IDebugPendingBreakpoint2` 인터페이스로 디버그 패키지로 다시 전달합니다.
 
- 지금 이벤트가 생성 되었습니다.
+ 지금까지 이벤트가 생성되지 않았습니다.
 
- 디버그 패키지가 시도 호출 하 여 코드 또는 데이터에 보류 중인 중단점을 바인딩할 [바인딩할](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)는 DE 여 구현 하는 합니다.
+ 그런 다음 디버그 패키지는 DE에서 구현되는 [Bind를](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)호출하여 보류 중인 중단점을 코드 또는 데이터에 바인딩하려고 시도합니다.
 
- 중단점 바인딩되는 DE 보냅니다는 [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 디버그 패키지에 대 한 이벤트 인터페이스입니다. 모든 코드 컨텍스트 (또는 단일 데이터 컨텍스트)를 열거 하기 위해이 인터페이스를 호출 하 여 중단점을 바인딩할 디버그 패키지 사용 [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)를 하나 이상 반환 하는 [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스입니다. 합니다 [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) 반환 인터페이스는 [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스 및 [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 반환을 [BP_ RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) 코드 또는 데이터 컨텍스트를 포함 하는 공용 구조체입니다.
+ 중단점이 바인딩된 경우 DE는 디버그 패키지에 [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 이벤트 인터페이스를 보냅니다. 디버그 패키지는 이 인터페이스를 사용하여 하나 이상의 [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스를 반환하는 [EnumBoundBreakpoints를](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)호출하여 중단점에 바인딩된 모든 코드 컨텍스트(또는 단일 데이터 컨텍스트)를 열거합니다. [GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) 인터페이스는 [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스를 반환하고 [GetResolutionInfo는](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 코드 또는 데이터 컨텍스트를 포함하는 [BP_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) 공용 구조체를 반환합니다.
 
- DE 중단점을 바인딩할 수 없는 경우 단일 보냅니다 [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) 디버그 패키지에 대 한 이벤트 인터페이스입니다. 호출 하 여 오류 유형 (오류 또는 경고) 및 정보 메시지를 검색 하는 디버그 패키지가 [GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)차례로 [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) 고 [ GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)합니다. 반환이 [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) 오류 유형 및 메시지를 포함 하는 구조입니다.
+ DE가 중단점을 바인딩할 수 없는 경우 단일 [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) 이벤트 인터페이스를 디버그 패키지로 보냅니다. 디버그 패키지는 [GetErrorBreakpoint를](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)호출하여 오류 유형(오류 또는 경고) 및 정보 메시지를 검색한 다음 [GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) 및 [GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)를 호출합니다. 그러면 오류 유형과 메시지가 포함된 [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조가 반환됩니다.
 
- 형식의 오류를 반환 하기는 DE 중단점을 처리 하지만 이어서 바인딩할 수 없습니다 경우 `BPET_TYPE_ERROR`합니다. IDE 내에서 중단점 문자 모양 소스 코드 줄의 왼쪽에는 느낌표 문자 모양 배치 및 디버그 패키지는 오류 대화 상자를 표시 하 여 응답 합니다.
+ DE가 중단점을 처리하지만 바인딩할 수 없는 경우 형식 `BPET_TYPE_ERROR`의 오류를 반환합니다. 디버그 패키지는 오류 대화 상자를 표시하여 응답하고 IDE는 소스 코드 줄의 왼쪽에 중단점 문말 내부에 느낌표 문선을 배치합니다.
 
- 독일에 바인딩할 수도 DE 중단점을 처리 하지만, 일부 다른 바인딩할 수 없습니다 경우 경고를 반환 합니다. IDE는 소스 코드 줄의 왼쪽에 중단점 문자 모양 내 질문 문자 모양을 배치 하 여 응답 합니다.
+ DE가 중단점을 처리하는 경우 바인딩할 수 없지만 다른 DE에서는 바인딩할 수 있으므로 경고를 반환합니다. IDE는 소스 코드 줄의 왼쪽에 중단점 문말 내부에 질문 문선을 배치하여 응답합니다.
 
-## <a name="see-also"></a>참고자료
-- [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)
+## <a name="see-also"></a>참조
+- [작업 디버깅](../../extensibility/debugger/debugging-tasks.md)

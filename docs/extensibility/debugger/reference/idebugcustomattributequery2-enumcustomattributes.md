@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
+title: IDebug사용자 정의 속성 쿼리2::열거형 사용자 정의 속성 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc9cc9158939ac0cbd7cac482961e2078b8249ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b00ead2236a36c2fa12e1ad154b9f853aa2224d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322226"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732595"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-이 필드에 연결 하는 모든 사용자 지정 특성에 대 한 열거자를 가져옵니다.
+이 필드에 연결된 모든 사용자 지정 특성에 대한 열거형기를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,14 +41,14 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>매개 변수
 `ppEnum`\
-[out] 반환 합니다는 [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) 사용자 지정 특성의 목록을 나타내는 개체, 그렇지 않으면 사용자 지정 특성이 없는 경우 null 값을 반환 합니다.
+【아웃】 사용자 지정 특성 목록을 나타내는 [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) 개체를 반환합니다. 그렇지 않으면 사용자 지정 특성이 없는 경우 null 값을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK 또는 반환 S_FALSE이이 필드에 사용자 지정 특성이 없는 경우. 그렇지 않으면 오류 코드 반환
+## <a name="return-value"></a>Return Value
+ 성공하면 이 필드에 사용자 지정 특성이 없는 경우 S_OK 반환하거나 S_FALSE 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 필드에는 사용자 지정 특성이 여러 개 있을 수 있습니다.
+ 필드에는 여러 사용자 지정 특성이 있을 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4af752c99c87bf470922db03bf5d4746151fa8f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591023"
 ---
 # <a name="how-to-manage-editor-windows"></a>방법: 편집기 창 관리
@@ -54,7 +54,7 @@ ms.locfileid: "75591023"
 
    편집기의 새 탭 인스턴스가 추가됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 - [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)

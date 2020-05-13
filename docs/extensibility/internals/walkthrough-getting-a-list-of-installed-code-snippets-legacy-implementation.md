@@ -1,5 +1,5 @@
 ---
-title: 설치 된 코드 조각 목록 가져오기 (레거시) | Microsoft Docs
+title: 설치된 코드 조각 목록 얻기(레거시) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,28 +7,28 @@ helpviewer_keywords:
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 072827bbb9676ba49df5ccd69f329ea9b04c78b2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721652"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703647"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>연습: 설치된 코드 조각 목록 가져오기(레거시 구현)
-코드 조각은 메뉴 명령 (설치 된 코드 조각 목록 중에서 선택할 수 있음)을 사용 하거나 IntelliSense 완성 목록에서 코드 조각 바로 가기를 선택 하 여 소스 버퍼에 삽입할 수 있는 코드 조각입니다.
+코드 스니펫은 메뉴 명령(설치된 코드 조각 목록 중에서 선택할 수 있음)을 사용하는 또는 IntelliSense 완료 목록에서 코드 바로 가기를 선택하여 소스 버퍼에 삽입할 수 있는 코드 조각입니다.
 
- @No__t_0 메서드는 특정 언어 GUID에 대 한 모든 코드 조각을 가져옵니다. 이러한 조각에 대 한 바로 가기를 IntelliSense 완성 목록에 삽입할 수 있습니다.
+ 메서드는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> 특정 언어 GUID에 대 한 모든 코드 조각을 가져옵니다. 이러한 코드 조각에 대한 바로 가기를 IntelliSense 완료 목록에 삽입할 수 있습니다.
 
- MPF (관리 패키지 프레임 워크) 언어 서비스에서 코드 조각을 구현 하는 방법에 대 한 자세한 내용은 [레거시 언어 서비스의 코드 조각 지원](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) 을 참조 하세요.
+ 관리되는 패키지 프레임워크(MPF) 언어 서비스에서 코드 조각 구현에 대한 자세한 내용은 [레거시 언어 서비스의 코드 조각 지원을](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) 참조하십시오.
 
-### <a name="to-retrieve-a-list-of-code-snippets"></a>코드 조각의 목록을 검색 하려면
+### <a name="to-retrieve-a-list-of-code-snippets"></a>코드 조각 목록을 검색하려면
 
-1. 다음 코드에서는 지정 된 언어에 대 한 코드 조각 목록을 가져오는 방법을 보여 줍니다. 결과는 <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 구조체의 배열에 저장 됩니다. 이 메서드는 정적 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 서비스에서 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 인터페이스를 가져옵니다. 그러나 VSPackage에 제공 된 서비스 공급자를 사용 하 여 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 메서드를 호출할 수도 있습니다.
+1. 다음 코드는 지정된 언어에 대한 코드 조각 목록을 얻는 방법을 보여 주었습니다. 결과는 구조의 <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 배열에 저장됩니다. 이 메서드는 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 정적 메서드를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 사용 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 하 여 서비스에서 인터페이스를 가져옵니다. 그러나 VSPackage에 제공된 서비스 공급자를 사용하고 메서드를 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 호출할 수도 있습니다.
 
     ```csharp
     using System;
@@ -101,12 +101,12 @@ ms.locfileid: "72721652"
     }
     ```
 
-### <a name="to-call-the-getsnippets-method"></a>GetSnippets 메서드를 호출 하려면
+### <a name="to-call-the-getsnippets-method"></a>GetSnippets 메서드를 호출하려면
 
-1. 다음 메서드는 구문 분석 작업을 완료할 때 `GetSnippets` 메서드를 호출 하는 방법을 보여 줍니다. @No__t_0 메서드는 <xref:Microsoft.VisualStudio.Package.ParseReason> 이유로 시작 된 구문 분석 작업 후에 호출 됩니다.
+1. 다음 메서드는 구문 `GetSnippets` 분석 작업이 완료될 때 메서드를 호출하는 방법을 보여 주며 있습니다. 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> 원인으로 <xref:Microsoft.VisualStudio.Package.ParseReason>시작된 구문 분석 작업 후에 호출됩니다.
 
 > [!NOTE]
-> @No__t_0 배열 목록은 성능상의 이유로 캐시 됩니다. 코드 조각에 대 한 변경 내용은 언어 서비스가 중지 되 고 다시 로드 될 때까지 목록에 반영 되지 않습니다. 예를 들어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]을 중지 했다가 다시 시작 합니다.
+> 성능상의 `expansionsList` 이유로 배열 목록이 캐시됩니다. 언어 서비스가 중지되고 다시 로드될 때까지 코드 조각에 대한 변경 내용은 목록에 반영되지 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]않습니다(예: 중지 및 다시 시작).
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -125,13 +125,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>코드 조각 정보를 사용 하려면
+### <a name="to-use-the-snippet-information"></a>스니펫 정보를 사용하려면
 
-1. 다음 코드에서는 `GetSnippets` 메서드에서 반환 된 코드 조각 정보를 사용 하는 방법을 보여 줍니다. @No__t_0 메서드는 코드 조각 목록을 채우는 데 사용 되는 구문 분석 이유에 대 한 응답으로 파서에서 호출 됩니다. 전체 구문 분석이 처음으로 수행 된 후에이 작업을 수행 해야 합니다.
+1. 다음 코드는 메서드에서 반환하는 코드 조각 `GetSnippets` 정보를 사용하는 방법을 보여 주며 있습니다. 메서드는 `AddSnippets` 코드 조각 목록을 채우는 데 사용 되는 모든 구문 분석 이유에 대 한 응답으로 파서에서 호출 됩니다. 이것은 전체 구문 분석이 처음으로 수행 된 후에 수행되어야합니다.
 
-     @No__t_0 메서드는 나중에 완성 목록에 표시 되는 선언 목록을 작성 합니다.
+     메서드는 `AddDeclaration` 나중에 완료 목록에 표시 되는 선언 목록을 작성 합니다.
 
-     @No__t_0 클래스에는 선언 유형 뿐만 아니라 완성 목록에 표시 될 수 있는 모든 정보가 포함 되어 있습니다.
+     클래스에는 `TestDeclaration` 완료 목록에 표시할 수 있는 모든 정보와 선언 유형이 포함되어 있습니다.
 
     ```csharp
     class TestAuthoringScope : AuthoringScope

@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d03912eecd7b3cfa3563fc095453fee3ddf9b163
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114287"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio의 엔터프라이즈 배포에 대한 기본값 설정
@@ -50,7 +50,7 @@ Visual Studio의 배포에 영향을 주는 레지스트리 정책을 설정할 
 
 다음 레지스트리 값을 설정할 수 있습니다.
 
-| **이름** | **Type** | **기본** | **설명** |
+| **이름** | **형식** | **기본값** | **설명** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` 또는 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 패키지가 매니페스트되고 필요한 경우 페이로드가 저장되는 디렉터리입니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md) 페이지를 참조하세요. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 설치된 후에도 패키지 페이로드를 유지합니다. 언제든지 값을 변경할 수 있습니다. 정책을 사용하지 않도록 설정하면 복구하거나 수정하는 인스턴스에 대한 캐시된 패키지 페이로드가 모두 제거됩니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md) 페이지를 참조하세요. |
@@ -63,7 +63,7 @@ Visual Studio의 배포에 영향을 주는 레지스트리 정책을 설정할 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 설치](install-visual-studio.md)
 - [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md)

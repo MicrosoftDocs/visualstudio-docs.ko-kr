@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
+title: IDebugProgramPublisher2::게시 취소프로그램노드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c59f4df20be0836d42a5d88431401660d9d5bc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343153"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721570"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-가용성을 디버그 엔진 (DEs) 및 세션 디버그 관리자 (SDM)에서 지정한 프로그램 노드를 제거 합니다.
+지정된 프로그램 노드를 가용성에서 DEs(디버그 엔진) 및 세션 디버그 관리자(SDM)로 제거합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,17 +41,17 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>매개 변수
 `pProgramNode`\
-[in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 제거할 프로그램 노드를 나타내는 개체입니다.
+【인】 제거되는 프로그램 노드를 나타내는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 제거 되 면 프로그램 노드가 더 이상 사용할 수 프로그램 정보를 쿼리할 수 없습니다.
+ 제거되면 프로그램 정보에 대해 더 이상 프로그램 노드를 쿼리할 수 없습니다.
 
- 프로그램 노드를 사용할 수 있도록 호출을 [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) 메서드.
+ 프로그램 노드를 사용할 수 있도록 하려면 [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) 메서드를 호출합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

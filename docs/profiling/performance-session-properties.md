@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772204"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
@@ -57,9 +57,9 @@ ms.locfileid: "74772204"
 - 성능 카운터 - 낮은 수준의 성능 문제
 - 사용 가능한 성능 카운터에 따라 추가 샘플 이벤트를 지정할 수 있습니다.
 
-자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)
+자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.
 
-## <a name="binary"></a>이항
+## <a name="binary"></a>이진
 이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 *My.DLL*을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 *My.Orig.DLL*이라는 *My.DLL*의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 *My.DLL*이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.
 
 자세한 내용은 [방법: 시작할 이진 파일 지정](../profiling/how-to-specify-the-binary-to-start.md)을 참조하세요.
@@ -82,7 +82,7 @@ ms.locfileid: "74772204"
 
 이러한 설정을 사용하면 계측 프로파일링 방법을 사용할 때 CPU 성능 카운터에 대한 데이터를 수집할 수 있습니다. 이식 가능한 성능 카운터는 CPU 디자인 또는 제조업체에 관계없이 사용할 수 있습니다. 플랫폼 이벤트는 CPU 디자인 및 제조업체별로 다릅합니다. 온칩 성능 카운터에 대한 자세한 내용은 특정 프로세서 설명서를 참조하세요.
 
-자세한 내용은 [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)
+자세한 내용은 [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)을 참조하세요.
 
 ## <a name="windows-events"></a>Windows 이벤트
 

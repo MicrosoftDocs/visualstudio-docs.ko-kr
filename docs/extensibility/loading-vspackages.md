@@ -1,34 +1,34 @@
 ---
-title: Vspackage를 로드 합니다. | Microsoft Docs
+title: 로딩 VS패키지 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7c2a558abc928524813419df6b7848d34f0f3e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309567"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702961"
 ---
-# <a name="load-vspackages"></a>Vspackage를 로드 합니다.
-Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니다. 예를 들어, Visual Studio 프로젝트 팩터리 또는 VSPackage 구현 하는 서비스를 사용 하는 경우 VSPackage가 로드 됩니다. 이 기능은 성능 향상을 위해 가능할 때마다 사용 되는 지연 된 로드를 라고 합니다.
+# <a name="load-vspackages"></a>로드 VS패키지
+VS패키지는 기능이 필요한 경우에만 Visual Studio에 로드됩니다. 예를 들어, VISUAL Studio에서 VSPackage가 구현하는 프로젝트 팩터리 또는 서비스를 사용할 때 VSPackage가 로드됩니다. 이 기능을 지연 된 로드 라고 하며 성능을 향상 시키기 위해 가능 하면 사용 됩니다.
 
 > [!NOTE]
-> Visual Studio에는 VSPackage를 로드 하지 않고, VSPackage에서 제공 하는 명령 등과 같이 특정 VSPackage 정보를 확인할 수 있습니다.
+> Visual Studio는 VSPackage를 로드하지 않고 VSPackage가 제공하는 명령과 같은 특정 VSPackage 정보를 확인할 수 있습니다.
 
- Vspackage 설정할 수 있습니다 특정 사용자 인터페이스 (UI) 컨텍스트에서 자동 로드 하려면 예를 들어 솔루션이 열려 있는 경우. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 특성이이 컨텍스트를 설정 합니다.
+ VSPackage는 솔루션이 열려 있는 경우와 같은 특정 사용자 인터페이스(UI) 컨텍스트에서 자동 로드하도록 설정할 수 있습니다. 특성은 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 이 컨텍스트를 설정합니다.
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>특정 컨텍스트에서 VSPackage 자동 로드
 
-- 추가 된 `ProvideAutoLoad` VSPackage 특성에 특성:
+- VSPackage `ProvideAutoLoad` 특성에 특성을 추가합니다.
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -39,22 +39,22 @@ Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니
     {. . .}
     ```
 
-     열거형된 필드를 참조 하세요. <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI 컨텍스트 및 GUID 값의 목록에 대 한 합니다.
+     UI 컨텍스트 및 해당 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> GUID 값의 목록은 나열된 필드를 참조하십시오.
 
-- 중단점을 설정 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드.
+- <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드에서 중단점을 설정합니다.
 
-- VSPackage를 빌드 및 디버깅을 시작 합니다.
+- VSPackage를 빌드하고 디버깅을 시작합니다.
 
-- 솔루션을 로드 하거나 새로 만드십시오.
+- 솔루션을 로드하거나 솔루션을 만듭니다.
 
-     VSPackage 로드 하 고 중단점에서 중지 됩니다.
+     VS패키지는 중단점에서 로드되고 중지됩니다.
 
-## <a name="force-a-vspackage-to-load"></a>강제 로드 하는 VSPackage
- 일부 상황에서 VSPackage 강제 로드 되도록 다른 VSPackage 해야 할 수 있습니다. 예를 들어, 간단한 VSPackage를 CMDUIContext으로 사용할 수 없는 컨텍스트에서 큰 VSPackage를 로드할 수 있습니다.
+## <a name="force-a-vspackage-to-load"></a>VS패키지가 로드하도록 강제
+ 경우에 따라 VSPackage는 다른 VSPackage를 강제로 로드해야 할 수 있습니다. 예를 들어 경량 VSPackage는 CMDUIContext로 사용할 수 없는 컨텍스트에서 더 큰 VSPackage를 로드할 수 있습니다.
 
- 사용할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> 강제로 VSPackage를 로드 하는 방법입니다.
+ 이 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> 사용하여 VSPackage를 강제로 로드할 수 있습니다.
 
-- 이 코드를 삽입 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 강제로 다른 VSPackage를 로드 하는 VSPackage의 메서드:
+- 이 코드를 VSPackage 메서드에 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 삽입하여 다른 VSPackage를 로드하도록 합니다.
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;
@@ -67,9 +67,9 @@ Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니
 
     ```
 
-     강제로 VSPackage를 초기화할 때 `PackageToBeLoaded` 를 로드 합니다.
+     VSPackage가 초기화되면 강제로 `PackageToBeLoaded` 로드됩니다.
 
-     강제 로드 VSPackage 통신용 쓰일 수 없습니다. 사용 하 여 [사용 하 여 서비스를 제공 하 고](../extensibility/using-and-providing-services.md) 대신 합니다.
+     VSPackage 통신에는 강제 로딩을 사용할 수 없습니다. 대신 [사용 및 서비스 제공.](../extensibility/using-and-providing-services.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [VSPackage](../extensibility/internals/vspackages.md)

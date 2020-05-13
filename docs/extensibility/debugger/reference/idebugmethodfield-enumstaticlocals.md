@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals | Microsoft Docs
+title: 이데버그메소드필드::에이넘정적 지역 주민들 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 006f1975c18aa7464531654d9b71fd857953afc9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324251"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727161"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
-메서드는 정적 지역 변수에 대 한 열거자를 만듭니다.
+메서드의 정적 로컬 변수에 대한 열거수를 만듭니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,15 +41,15 @@ int EnumStaticLocals(
 
 ## <a name="parameters"></a>매개 변수
 `ppLocals`\
-[out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 정적 지역 변수의 목록을 나타내는 개체입니다. 정적 지역에 없는 경우 null 값을 반환 합니다.
+【아웃】 정적 지역 인의 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환합니다. 정적 지역 주민이 없는 경우 null 값을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 또는 정적 지역에 없는 경우 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 정적 지역 주민이 없는 경우 S_OK 반환하거나 S_FALSE 반환합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명
- 각 요소는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 정적 지역 변수의 형식을 나타내는 개체입니다. 호출 된 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 정확히 어떤 유형의 정적 로컬 개체가 나타내는 확인 하려면 각 개체의 메서드.
+ 각 요소는 서로 다른 유형의 정적 지역 요소를 나타내는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다. 각 개체에 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드를 호출하여 개체가 나타내는 정적 로컬의 종류를 정확히 확인합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

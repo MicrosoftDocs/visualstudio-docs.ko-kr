@@ -1,5 +1,5 @@
 ---
-title: 로컬 값 가져오기 | Microsoft Docs
+title: 로컬 값 얻기 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,36 +7,36 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ce7e8417f0b05375f1285aac24f7abb0cbab6d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75cc530f13de22a994eff70492f340059d2a5839
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319213"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738612"
 ---
-# <a name="get-local-values"></a>로컬 값을 얻으려면
+# <a name="get-local-values"></a>로컬 값 받기
 > [!IMPORTANT]
-> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.
+> Visual Studio 2015에서는 식 계산기 구현 방식이 더 이상 사용되지 않습니다. CLR 식 계산기 구현에 대한 자세한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리식 계산기 샘플을](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)참조하십시오.
 
-Visual Studio의 로컬 값을 가져오려면 호출 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 해당 로컬에 대 한 합니다. 이 구현에서는 클래스 `CFieldProperty` 각 로컬 IDebugProperty2 인터페이스를 구현 합니다.
+로컬값을 얻으려면 Visual Studio에서 해당 로컬에 대해 [GetPropertyInfo를](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 호출합니다. 이 구현에서 클래스는 `CFieldProperty` 각 로컬에 대해 IDebugProperty2 인터페이스를 구현합니다.
 
-이 구현의 `IDebugProperty2::GetPropertyInfo` 다음 작업을 수행 합니다.
+이 구현은 다음 작업을 `IDebugProperty2::GetPropertyInfo` 수행합니다.
 
-1. 지역 변수의 이름, 속성 및 특성을 가져옵니다 합니다 [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) 구조 클래스를 인스턴스화하고 초기화 때 채워집니다.
+1. 클래스가 인스턴스화되고 초기화될 때 채워진 [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) 구조에서 로컬 이름, 속성 및 특성을 가져옵니다.
 
-2. 지역 변수의 형식을 가져옵니다 합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 개체입니다.
+2. [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 개체에서 로컬 형식을 가져옵니다.
 
-3. 지역 변수의 값을 가져옵니다는 `IDebugField` 개체입니다. 이 필드를 사용 하 여 로컬 메모리 위치에 바인딩되는 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) 개체 및 값을 결과에서 가져온 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.
+3. `IDebugField` 개체에서 로컬 값을 가져옵니다. 이 필드는 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) 개체를 사용하여 로컬의 메모리 위치에 바인딩되며 결과 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체에서 값을 가져옵니다.
 
-4. 요청 된 모든 속성을 반환 합니다는 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 구조입니다.
+4. [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 구조에서 요청된 모든 속성을 반환합니다.
 
 ## <a name="managed-code"></a>관리 코드
-이 예제에서는 구현을 보여 줍니다. `IDebugProperty2::GetPropertyInfo` 메서드의 관리 코드에서 로컬에 대 한 합니다. 또한 도우미 함수를 보여 줍니다 `Field.GetType`되는 필드의 형식을 가져오는 데 사용 합니다. `Field.GetValue` 에 표시 됩니다 [지역 평가](../../extensibility/debugger/evaluating-locals.md)합니다. 도우미 함수 `Field.MapModifiersToAttributes` (표시 되지 않음) 단순히 필드를 변환 [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) 하는 플래그 [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) 값입니다.
+이 예제에서는 관리 `IDebugProperty2::GetPropertyInfo` 되는 코드에서 메서드의 로컬에 대 한 구현을 보여 주다. 또한 필드의 형식을 얻는 `Field.GetType`데 사용되는 도우미 함수를 보여 줍니다. `Field.GetValue`[지역 주민 평가에](../../extensibility/debugger/evaluating-locals.md)표시됩니다. 도우미 함수(표시되지 `Field.MapModifiersToAttributes` 않음)는 단순히 필드의 [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) 플래그를 [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) 값으로 변환합니다.
 
 ```csharp
 namespace EEMC
@@ -175,8 +175,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>관리 되지 않는 코드
- 이 예제에서는 구현을 보여 줍니다. `IDebugProperty2::GetPropertyInfo` 메서드의 비관리 코드에서 로컬에 대 한 합니다. 또한 두 도우미 함수를 보여 줍니다 `FieldGetType` 고 `FieldGetValue` 각각 필드의 형식 및 값을 가져올 때 사용 되는 합니다. `VARIANT`s 필드의 값에 사용 되 고으로 입력 한 `VARIANT` 다양 한 값 형식 처리할 수 있습니다. 이 구현에서는 `FieldGetValue` 반환을 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 나중에 개체에 대 한 호출에서 값으로 변환할 `FieldGetPrimitiveValue` (에 나와 있는 [지역 평가](../../extensibility/debugger/evaluating-locals.md)).
+## <a name="unmanaged-code"></a>관리되지 않는 코드
+ 이 예제에서는 관리되지 않는 코드에서 메서드의 로컬에 `IDebugProperty2::GetPropertyInfo` 대한 구현을 보여 주습니다. 또한 두 개의 도우미 함수를 보여 `FieldGetType` 주며 `FieldGetValue` 필드의 형식과 값을 각각 얻는 데 사용됩니다. s는 `VARIANT`필드의 값과 다양한 값 형식을 `VARIANT` 처리할 수 있는 형식에 사용됩니다. 이 구현에서는 `FieldGetValue` 나중에 호출의 값으로 변환되는 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 개체를 `FieldGetPrimitiveValue` 반환합니다(지역 [구시데 에](../../extensibility/debugger/evaluating-locals.md)표시됨).
 
 ```cpp
 STDMETHODIMP CFieldProperty::GetPropertyInfo(
@@ -438,7 +438,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }
 ```
 
-## <a name="see-also"></a>참고자료
-- [지역 변수의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [로컬 속성 가져오기](../../extensibility/debugger/getting-local-properties.md)
+## <a name="see-also"></a>참조
+- [지역 주민의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [로컬 속성 받기](../../extensibility/debugger/getting-local-properties.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

@@ -1,31 +1,31 @@
 ---
-title: TaskScheduler 클래스-내부 멤버 | Microsoft Docs
+title: 태스크스케줄러 클래스 - 내부 구성원 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 865e12819a5e7325886c0f7f5d8425a6b3d2e393
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331327"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712574"
 ---
-# <a name="taskscheduler-class---internal-members"></a>TaskScheduler 클래스-내부 멤버
-이 문서에서는 설명의 internal 멤버를 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 도움이 되는 클래스 사용자 지정 디버거를 구현 합니다. 이 클래스에 대 한 일반 정보에 대 한 참조를 <xref:System.Threading.Tasks.TaskScheduler> 참조 문서입니다.
+# <a name="taskscheduler-class---internal-members"></a>작업 스케줄러 클래스 - 내부 구성원
+이 문서에서는 사용자 지정 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 디버거를 구현하는 데 도움이 되는 클래스의 내부 멤버에 대해 설명합니다. 이 클래스에 대한 일반적인 <xref:System.Threading.Tasks.TaskScheduler> 정보는 참조 문서를 참조하십시오.
 
- **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **어셈블리:** mscorlib (에서 *mscorlib.dll*)
+ **조립:** mscorlib *(mscorlib.dll)*
 
- .NET Framework에서 이러한 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이러한 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,11 +40,11 @@ ms.locfileid: "66331327"
 
 |이름|설명|
 |----------|-----------------|
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|모든 예약 된 작업의 배열을 검색합니다.|
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|모든 배열을 검색 <xref:System.Threading.Tasks.TaskScheduler> 현재 활성화 되어 있는 개체입니다.|
+|[GetScheduled작업포디버거](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|예약된 모든 작업의 배열을 검색합니다.|
+|[겟태스크스케줄러포디버거](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|현재 활성 상태인 <xref:System.Threading.Tasks.TaskScheduler> 모든 개체의 배열을 검색합니다.|
 
 ## <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [.NET Framework에 대 한 병렬 확장 기능 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 프레임워크에 대한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreatePrimitiveObject | Microsoft Docs
+title: IDebugFunctionObject::원시적 개체 만들기 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d47f3edfffadc74791d6d6b2267a37319a053d7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320822"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728538"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
-간단한 integer와 같은 기본 데이터 개체를 만듭니다.
+단순 정수와 같은 기본 데이터 개체를 만듭니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,16 +43,16 @@ int CreatePrimitiveObject(
 
 ## <a name="parameters"></a>매개 변수
 `ot`\
-[in] 값을 [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) 만들려면 기본 형식을 나타내는 열거형입니다.
+【인】 만들 [기본](../../../extensibility/debugger/reference/object-type.md) 형식의 OBJECT_TYPE 열거형의 값입니다.
 
 `ppObject`\
-[out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 새로 만든된 개체를 나타내는입니다.
+【아웃】 새로 만든 개체를 나타내는 [IDebugObject를](../../../extensibility/debugger/reference/idebugobject.md) 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 으로 표현 되는 함수에 매개 변수는 기본 개체를 나타내는 개체를 만들려면이 메서드를 호출 합니다 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스입니다. 예를 들어, "myString(5)" 식 문자열을 사용 하는 경우이 메서드는 데 사용할 5 정수를 나타내는 개체를 만듭니다.
+ [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스로 표시되는 함수의 매개 변수인 기본 개체를 나타내는 개체를 만들기 위해 이 메서드를 호출합니다. 예를 들어 식 문자열이 "myString(5)"인 경우 이 메서드는 정수 5를 나타내는 개체를 만드는 데 사용됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

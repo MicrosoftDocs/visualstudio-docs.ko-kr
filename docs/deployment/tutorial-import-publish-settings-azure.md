@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679182"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 Azure App Service에 애플리케이션 게시
@@ -23,7 +23,7 @@ ms.locfileid: "65679182"
 
 이러한 단계는 Visual Studio에서 ASP.NET, ASP.NET Core 및 .NET Core 앱에 적용됩니다. [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 앱에 대한 게시 설정을 가져올 수도 있습니다.
 
-이 자습서에서 다음을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * Azure App Service에서 게시 설정 파일 생성
@@ -33,9 +33,9 @@ ms.locfileid: "65679182"
 게시 설정 파일(*\*.publishsettings*)은 Visual Studio에서 생성되는 게시 프로필(*\*.pubxml*)과 다릅니다. 게시 설정 파일은 Azure App Service에서 만들어진 다음, Visual Studio로 가져올 수 있습니다.
 
 > [!NOTE]
-> Visual Studio의 한 설치에서 다른 설치로 Visual Studio 게시 프로필(*\*.pubxml* 파일)을 복사해야 하는 경우 관리되는 프로젝트 형식에 대한 *\\<projectname\>\Properties\PublishProfiles* 폴더에서 게시 프로필, *\<profilename\>.pubxml*을 찾을 수 있습니다. 웹 사이트의 경우 *\App_Data* 폴더 아래에서 확인합니다. 게시 프로필은 MSBuild XML 파일입니다.
+> Visual Studio의 한 설치에서 다른 설치로 Visual Studio 게시 프로필(*\*.pubxml* 파일)을 복사해야 하는 경우 관리되는 프로젝트 형식에 대한 *\<<projectname\>\Properties\PublishProfiles* 폴더에서 게시 프로필, *\\profilename\>.pubxml*을 찾을 수 있습니다. 웹 사이트의 경우 *\App_Data* 폴더 아래에서 확인합니다. 게시 프로필은 MSBuild XML 파일입니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 ::: moniker range=">=vs-2019"
 

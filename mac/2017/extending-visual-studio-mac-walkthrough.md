@@ -6,10 +6,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
 ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985033"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Mac용 Visual Studio 확장 연습
@@ -92,7 +92,7 @@ ms.locfileid: "74985033"
 
     ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
-11. `DateInserterCommands.cs` 파일에 `InsertDate` 명령을 새 열거형으로 추가합니다.
+11. `InsertDate` 파일에 `DateInserterCommands.cs` 명령을 새 열거형으로 추가합니다.
 
     ``` cs
     using System;
@@ -112,7 +112,7 @@ ms.locfileid: "74985033"
 
     현재 구현에는 자리 표시자 메서드만 있으므로 메뉴에서 날짜 삽입을 선택해도 적용되지 않습니다.
 
-13. 이 프레임워크는 확장 패키지를 위해 구현되었으며, 날짜 삽입을 구동하는 코드를 작성해야 합니다. 먼저, `InsertDateHandler.cs`의 `Update` 메서드를 다음 코드로 바꿔 사용자가 텍스트 파일을 연 경우에만 **날짜 삽입 명령**을 사용할 수 있도록 합니다.
+13. 이 프레임워크는 확장 패키지를 위해 구현되었으며, 날짜 삽입을 구동하는 코드를 작성해야 합니다. 먼저, **의**  메서드를 다음 코드로 바꿔 사용자가 텍스트 파일을 연 경우에만 `Update`날짜 삽입 명령`InsertDateHandler.cs`을 사용할 수 있도록 합니다.
 
     ```cs
     protected override void Update(CommandInfo info)

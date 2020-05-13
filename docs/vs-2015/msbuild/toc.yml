@@ -20,9 +20,9 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: 속성 함수
               href: property-functions.md
-        - name: 항목
+        - name: Items
           items:
-            - name: 항목
+            - name: Items
               href: msbuild-items.md
             - name: 빌드할 파일 선택
               href: how-to-select-the-files-to-build.md

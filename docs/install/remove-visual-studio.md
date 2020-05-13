@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113716"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649200"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio 제거
 
@@ -51,10 +51,10 @@ ms.locfileid: "76113716"
 1. 관리자 명령 프롬프트를 엽니다. 관리자 명령 프롬프트를 열려면 다음 단계를 따릅니다.
    * "검색하려면 여기에 입력" 상자에 **cmd**를 입력합니다.
    * **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다.
-1. `InstallCleanup.exe` 도구의 전체 경로를 입력하고 원하는 명령줄 스위치를 추가합니다. 기본적으로 이 도구의 경로는 다음과 같습니다.
+1. `InstallCleanup.exe` 도구의 전체 경로를 입력하고 원하는 명령줄 스위치를 추가합니다. 기본적으로 이 도구의 경로는 다음과 같습니다. 공백이 포함된 명령을 큰따옴표로 묶습니다.
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]

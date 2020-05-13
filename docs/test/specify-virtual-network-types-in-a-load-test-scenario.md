@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60fa2bd38f3d7e594e9af7ba8ec544518bdbb920
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115305"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 가상 네트워크 형식 지정

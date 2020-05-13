@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4ffd105032cda050ab16132b6a4c2d54488028b8
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851352"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586761"
 ---
 # <a name="visualize-code"></a>코드 시각화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를 이해하고 애플리케이션을 설명할 수 있습니다. 이렇게 하면 변경 내용이 코드에 미치는 영향을 시각적으로 알아보고 작업 및 해당 변경 내용으로 인한 위험을 평가할 수 있습니다. 예를 들면 다음과 같습니다.:
+Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를 이해하고 애플리케이션을 설명할 수 있습니다. 이렇게 하면 변경 내용이 코드에 미치는 영향을 시각적으로 알아보고 작업 및 해당 변경 내용으로 인한 위험을 평가할 수 있습니다. 다음은 그 예입니다. 
 
 - 코드의 관계를 이해하려면 해당 관계를 시각적으로 매핑합니다.
 
@@ -37,21 +37,21 @@ Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를
 
   각 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-## <a name="what-do-you-want-to-do"></a>원하는 옵션을 선택하세요.
+## <a name="what-do-you-want-to-do"></a>수행 작업
 
 |||
 |-|-|
-|**코드 및 해당 관계 이해:**<br /><br /> 특정 코드 조각 간의 관계를 매핑합니다.<br /><br /> 전체 솔루션에 대한 코드의 관계 개요를 참조하세요.<br /><br /> **참고**: 이 Visual Studio 릴리스에서는 *종속성 그래프* 대신에 *코드 맵*이 사용됩니다.|[솔루션 전체에서 종속성 -   매핑](../modeling/map-dependencies-across-your-solutions.md)<br />[코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md) -   <br />[코드 맵 분석기를 사용 하 여 잠재적인 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md) -   <br />[디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) -   |
-|**클래스 구조 이해:**<br /><br /> 코드에서 클래스 다이어그램을 만들어 프로젝트의 클래스 구조를 시각화합니다.|[방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**이 디자인에 대해 개략적인 시스템 디자인을 설명 하 고 코드의 유효성을 검사 합니다.**<br /><br /> 레이어 다이어그램을 만들어 전반적인 시스템 디자인 및 의도한 종속성에 대해 설명합니다. 이 디자인과 비교해서 코드의 유효성을 검사하여 코드의 종속성이 디자인과 일치하는지 확인합니다.|[코드에서 레이어 다이어그램 -   만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />-   [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />[레이어 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md) -   |
-|**사용자 요구 사항 및 아키텍처를 전달 합니다.**<br /><br /> 동작, 구성 요소, 클래스, 시퀀스 및 사용 사례의 UML 다이어그램을 그려 사용자 요구 사항과 소프트웨어 시스템의 아키텍처를 모델링합니다.|[앱에 대 한 모델을 만드는](../modeling/create-models-for-your-app.md) -   <br />-   [모델 사용자 요구 사항](../modeling/model-user-requirements.md)<br />[앱 아키텍처를 모델링](../modeling/model-your-app-s-architecture.md) -   |
+|**코드 및 해당 관계 이해:**<br /><br /> 특정 코드 조각 간의 관계를 매핑합니다.<br /><br /> 전체 솔루션에 대한 코드의 관계 개요를 참조하세요.<br /><br /> **참고**: 이 Visual Studio 릴리스에서는 *종속성 그래프* 대신에 *코드 맵*이 사용됩니다.|-   [솔루션 전체에서 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />-   [코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [코드 맵 분석기를 사용 하 여 잠재적인 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**클래스 구조 이해:**<br /><br /> 코드에서 클래스 다이어그램을 만들어 프로젝트의 클래스 구조를 시각화합니다.|[방법: 프로젝트에 클래스 다이어그램 추가 (클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
+|**전반적인 시스템 디자인을 설명하고 이 디자인에 대해 코드의 유효성 검사:**<br /><br /> 레이어 다이어그램을 만들어 전반적인 시스템 디자인 및 의도한 종속성에 대해 설명합니다. 이 디자인과 비교해서 코드의 유효성을 검사하여 코드의 종속성이 디자인과 일치하는지 확인합니다.|-   [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />-   [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />-   [레이어 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
+|**사용자 요구 사항 및 아키텍처 전달:**<br /><br /> 동작, 구성 요소, 클래스, 시퀀스 및 사용 사례의 UML 다이어그램을 그려 사용자 요구 사항과 소프트웨어 시스템의 아키텍처를 모델링합니다.|-   [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)<br />-   [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)<br />-   [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**링크**|
 |------------------|---------------|
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](https://blogs.msdn.com/b/visualstudioalm)|
+|**블로그**|[Visual Studio ALM + Team Foundation Server 블로그](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 포럼](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>참고 항목

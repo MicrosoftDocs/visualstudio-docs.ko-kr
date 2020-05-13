@@ -1,6 +1,6 @@
 ---
 title: 단위 테스트 메서드 스텁 만들기
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844312"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153000"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>단위 테스트 만들기 명령을 사용하여 단위 테스트 메서드 스텁 만들기
 
@@ -22,11 +22,11 @@ ms.locfileid: "75844312"
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> **단위 테스트 만들기** 메뉴 명령은 .NET Framework(하지만 .NET Core 아님)를 대상으로 하는 관리 코드에서만 사용할 수 있습니다.
+> **단위 테스트 만들기** 메뉴 명령은 .NET Framework(하지만 .NET Core 아님)를 대상으로 하는 C# 코드에서만 사용할 수 있습니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> **유닛 테스트 만들기** 메뉴 명령은 관리 코드에만 사용할 수 있습니다.
+> **단위 테스트 만들기** 메뉴 명령은 C# 코드에만 사용할 수 있습니다.
 ::: moniker-end
 
 **단위 테스트 만들기** 메뉴 명령은 확장 가능하며 MSTest, MSTest V2, NUnit 및 xUnit에 대한 테스트를 생성하는 데 사용할 수 있습니다.

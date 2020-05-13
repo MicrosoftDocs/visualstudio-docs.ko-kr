@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Microsoft Docs
+title: 옵트네임 체인지PFN | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6107f48f4680cef9cbb825f4d760f3f0bac1ec1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336233"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702243"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-이것이에 대 한 호출에 지정 된 콜백 함수는 [SccSetOption](../extensibility/sccsetoption-function.md) (옵션을 사용 하 여 `SCC_OPT_NAMECHANGEPFN`) 이름 변경에 대 한 소스 제어 플러그 인 다시 IDE 통신에 사용 되 고 합니다.
+이 콜백 함수는 [SccSetOption(옵션](../extensibility/sccsetoption-function.md) `SCC_OPT_NAMECHANGEPFN`사용)에 대한 호출에 지정된 콜백 함수이며 소스 제어 플러그인에 의해 변경된 이름을 IDE로 다시 전달하는 데 사용됩니다.
 
 ## <a name="signature"></a>서명
 
@@ -35,24 +35,24 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## <a name="parameters"></a>매개 변수
  pvCallerData
 
-[in] 에 대 한 이전 호출에 지정 된 사용자 값을 [SccSetOption](../extensibility/sccsetoption-function.md) (옵션을 사용 하 여 `SCC_OPT_USERDATA`).
+【인】 [SccSetOption에](../extensibility/sccsetoption-function.md) 대한 이전 호출에서 지정한 `SCC_OPT_USERDATA`사용자 값입니다(옵션 사용).
 
  pszOldName
 
-[in] 파일의 원래 이름입니다.
+【인】 파일의 원래 이름입니다.
 
  pszNewName
 
-[in] 파일의 이름은로 바뀌었습니다.
+【인】 파일이름이 바뀌었습니다.
 
 ## <a name="return-value"></a>반환 값
  없음
 
 ## <a name="remarks"></a>설명
- 소스 제어 작업을 하는 동안 파일의 이름을 바꾸면, 소스 제어 플러그 인이 콜백을 통해 이름 변경 하는 방법에 대 한 IDE를 알릴 수 있습니다.
+ 소스 제어 작업 중에 파일이름이 변경되면 소스 제어 플러그인은 이 콜백을 통해 이름 변경에 대해 IDE에 알릴 수 있습니다.
 
- 호출 하지 IDE이이 콜백은 지원 하지 않는 경우는 [SccSetOption](../extensibility/sccsetoption-function.md) 를 지정 합니다. 하는 경우 플러그 인을 지원 하지 않으면이 콜백에서 반환 `SCC_E_OPNOTSUPPORTED` 에서 `SccSetOption` IDE 콜백을 설정 하려고 할 때 작동 합니다.
+ IDE가 이 콜백을 지원하지 않는 경우 [SccSetOption을](../extensibility/sccsetoption-function.md) 호출하여 지정하지 않습니다. 플러그인이 이 콜백을 지원하지 않으면 IDE가 `SCC_E_OPNOTSUPPORTED` `SccSetOption` 콜백을 설정하려고 할 때 함수에서 반환됩니다.
 
-## <a name="see-also"></a>참고자료
-- [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
+## <a name="see-also"></a>참조
+- [IDE에서 구현한 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

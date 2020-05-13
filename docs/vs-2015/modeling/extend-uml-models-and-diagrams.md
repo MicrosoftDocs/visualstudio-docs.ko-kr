@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849797"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586724"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML 모델 및 다이어그램 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "75849797"
 
  Fabrikam의 도구 팀에서는 개발 팀을 지원하기 위해 다양한 기능을 향상합니다. 다음 섹션에서는 사용자가 정의할 수 있는 다양한 확장 종류를 설명합니다. 이러한 여러 방법 중 몇 가지를 단일 Visual Studio 확장으로 결합할 수 있습니다.
 
- 자세한 내용은 다음 비디오를 참조 하세요. MSDN ![링크 비디오](../data-tools/media/playvideo.gif "동영상 재생")[MSDN 방법 I 시리즈: UML 도구 및 확장성](https://msdn.microsoft.com/vstudio/ff859492).
+ 자세한 내용은 다음 비디오를 참조 하세요. MSDN ![링크 비디오](../data-tools/media/playvideo.gif "링크 playvideo 보려면")[MSDN 방법 I 시리즈: UML 도구 및 확장성](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a> 요구 사항
+## <a name="requirements"></a><a name="Requirements"></a> 요구 사항
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+- [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md).
 
 - [Visual Studio 2015용 SDK 모델링](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -85,7 +85,7 @@ ms.locfileid: "75849797"
 
  자세한 내용은 [UML 모델을 다른 모델 및 도구와 통합](../modeling/integrate-uml-models-with-other-models-and-tools.md)을 참조 하세요.
 
-## <a name="generation"></a>생성
+## <a name="generation"></a>Generation
  모델에서 프로그램 코드, 스크립트, 구성, 문서, 새 모델 또는 기타 아티팩트를 생성할 수 있습니다.
 
  Fabrikam이 설계한 수하물 시스템에서 대부분 프로그램 코드는 여러 프로젝트에서 동일합니다. 주요 변수 측면은 공항 주위의 수하물 흐름 계획입니다. 설계 팀에서는 처음 몇 프로젝트에 대한 경험을 확보한 후 도구 개발자가 수하물 흐름 모델을 기반으로 대부분 변수 프로그램 코드 및 기타 파일(예: 사용자 문서)을 생성하는 템플릿을 만듭니다. 이를 통해 새로운 각 프로젝트에 대한 개발 시간과 오류 비율이 크게 감소합니다.
@@ -106,16 +106,16 @@ ms.locfileid: "75849797"
 
  자세한 내용은 [프로그램 코드에서 UML 모델 읽기](../modeling/read-a-uml-model-in-program-code.md)를 참조 하세요.
 
-## <a name="domain-specific-languages"></a>도메인별 언어
+## <a name="domain-specific-languages"></a>도메인 특정 언어
  특정 모델 형식을 자주 사용할 경우 도메인 특정 언어를 만드는 것이 유용할 수 있습니다. UML 모델보다 더 밀접하게 비즈니스 요구 사항에 맞추면 도메인 특정 언어를 만들 수 있지만 빌드와 유지 관리에 더 많은 작업이 필요합니다. 자세한 내용은 [Visual Studio 용 모델링 SDK-도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)를 참조 하세요.
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**링크**|
 |------------------|---------------|
-|**비디오**|![비디오에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [MSDN How Do DO 시리즈: UML 도구 및 확장성](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [: Visual Studio를 사용 하는 UML](https://channel9.msdn.com/posts/clinted/)|
+|**비디오**|![비디오에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [MSDN How Do DO 시리즈: UML 도구 및 확장성](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [: Visual Studio를 사용 하는 UML](https://channel9.msdn.com/posts/clinted/)|
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](https://blogs.msdn.com/b/visualstudioalm)|
+|**블로그**|[Visual Studio ALM + Team Foundation Server 블로그](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>참고 항목

@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300583"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77580072"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>3단계: Entity Framework를 사용하여 데이터 작업
 
@@ -133,7 +133,7 @@ EF Core 및 Visual Studio 2019를 사용하여 ASP.NET Core 앱에서 데이터 
 
 [4단계: ASP.NET Core 앱에서 웹 API 표시](tutorial-aspnet-core-ef-step-04.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [ASP.NET Core에서 Entity Framework Core를 사용한 Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [ASP.NET Core Razor Pages 및 EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

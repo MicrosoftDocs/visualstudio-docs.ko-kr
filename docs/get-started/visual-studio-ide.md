@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589359"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE 시작
@@ -44,7 +44,7 @@ ms.locfileid: "75589359"
 
 - [Visual Studio를 사용하여 첫 번째 C++ 콘솔 앱 만들기](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 추가 기능](../ide/advanced-feature-overview.md)을 검색하세요.
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)을 방문하세요.

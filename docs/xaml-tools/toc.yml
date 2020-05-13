@@ -30,7 +30,7 @@
           href: animate-objects-in-xaml-designer.md
         - name: 데이터 표시
           href: display-data-in-blend.md
-    - name: 참조
+    - name: 참고
       items:
         - name: XAML 오류 및 경고
           href: xaml-errors-warnings.md

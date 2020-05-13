@@ -11,31 +11,34 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a4b756e0f0926e6c0ccd1a68ab44b7bc13e25c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574060"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255578"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>방법: 여러 프로젝트 파일에서 동일한 대상 사용
-여러 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일을 만들었으면 다른 프로젝트 파일에서 동일한 작업 및 대상을 사용해야 할 수 있다는 사실을 알게 되었을 것입니다. 모든 프로젝트 파일에 이러한 작업이나 대상에 대한 완전한 설명을 포함하는 대신, 대상을 별도 프로젝트 파일에 저장한 다음, 해당 대상을 사용해야 하나ㅡㄴ 다른 프로젝트로 해당 프로젝트를 가져올 수 있습니다.
+
+여러 MSBuild 프로젝트 파일을 만들었다면 여러 프로젝트 파일에서 동일한 작업 및 대상을 사용해야 한다는 사실을 알게 되었을 것입니다. 모든 프로젝트 파일에 이러한 작업이나 대상에 대한 완전한 설명을 포함하는 대신, 대상을 별도 프로젝트 파일에 저장한 다음, 해당 대상을 사용해야 하나ㅡㄴ 다른 프로젝트로 해당 프로젝트를 가져올 수 있습니다.
 
 ## <a name="use-the-import-element"></a>Import 요소 사용
- `Import` 요소는 한 프로젝트 파일을 다른 프로젝트 파일에 삽입하는 데 사용됩니다. 가져올 프로젝트 파일은 유효한 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일이어야 하며 올바른 형식의 XML을 포함해야 합니다. `Project` 특성은 가져온 프로젝트 파일의 경로를 지정합니다. `Import` 요소에 대한 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.
+
+`Import` 요소는 한 프로젝트 파일을 다른 프로젝트 파일에 삽입하는 데 사용됩니다. 가져올 프로젝트 파일은 유효한 MSBuild 프로젝트 파일이어야 하며 올바른 형식의 XML을 포함해야 합니다. `Project` 특성은 가져온 프로젝트 파일의 경로를 지정합니다. `Import` 요소에 대한 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.
 
 #### <a name="to-import-a-project"></a>프로젝트를 가져오려면
 
 1. 가져온 프로젝트의 속성 및 항목에 대한 매개 변수로 사용되는 모든 속성 및 항목을 가져오기 프로젝트 파일에 정의합니다.
 
-2. `Import` 요소를 사용하여 프로젝트를 가져옵니다. 예:
+2. `Import` 요소를 사용하여 프로젝트를 가져옵니다. 예를 들어:
 
      `<Import Project="MyCommon.targets"/>`
 
 3. `Import` 요소 다음에, 가져온 프로젝트의 속성 및 항목의 기본 정의를 재정의해야 하는 모든 속성 및 항목을 프로젝트 파일에 정의합니다.
 
 ## <a name="order-of-evaluation"></a>계산 순서
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 `Import` 요소에 도달하면 가져온 프로젝트는 `Import` 요소의 해당 위치에 있는 가져오기 프로젝트에 효과적으로 삽입됩니다. 따라서 `Import` 요소의 위치는 속성 및 항목의 값에 영향을 줄 수 있습니다. 가져온 프로젝트에 의해 설정된 속성 및 항목과 가져온 프로젝트가 사용하는 속성 및 항목을 이해하는 것이 중요합니다.
+
+ MSBuild가 `Import` 요소에 도달하면 가져온 프로젝트는 `Import` 요소의 해당 위치에 있는 가져오기 프로젝트에 효과적으로 삽입됩니다. 따라서 `Import` 요소의 위치는 속성 및 항목의 값에 영향을 줄 수 있습니다. 가져온 프로젝트에 의해 설정된 속성 및 항목과 가져온 프로젝트가 사용하는 속성 및 항목을 이해하는 것이 중요합니다.
 
  프로젝트가 빌드될 때 모든 속성이 먼저 평가된 후 항목이 평가됩니다. 예를 들어, 다음 XML은 가져온 프로젝트 파일 *MyCommon.targets*를 정의합니다.
 
@@ -81,6 +84,7 @@ ms.locfileid: "75574060"
 3. 가져온 프로젝트의 속성 및 항목의 기본 정의를 재정의해야 하는 모든 속성 및 항목을 프로젝트 파일에 정의합니다.
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 두 번째 코드 예제에서 가져오는 *MyCommon.targets* 파일을 보여 줍니다. *.targets* 파일은 가져오기 프로젝트의 속성을 평가하여 빌드를 구성합니다.
 
 ```xml
@@ -99,6 +103,7 @@ ms.locfileid: "75574060"
 ```
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 *MyCommon.targets* 파일을 가져옵니다.
 
 ```xml
@@ -112,5 +117,6 @@ ms.locfileid: "75574060"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)
 - [대상](../msbuild/msbuild-targets.md)

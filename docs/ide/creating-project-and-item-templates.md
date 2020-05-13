@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589762"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306910"
 ---
 # <a name="project-and-item-templates"></a>프로젝트 및 항목 템플릿
 
@@ -37,13 +37,13 @@ ms.locfileid: "75589762"
 
 ::: moniker range="vs-2017"
 
-- 템플릿에서 프로젝트 또는 항목을 만들고 템플릿을 **새 프로젝트** 및 **새 항목 추가** 창에 표시하는 데 필요한 메타데이터가 포함된 *.vstemplate* 파일입니다.
+- 템플릿에서 프로젝트 또는 항목을 만들고 템플릿을 *새 프로젝트* 및 **새 항목 추가** 창에 표시하는 데 필요한 메타데이터가 포함된 **.vstemplate** 파일입니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- 템플릿에서 프로젝트 또는 항목을 만들고 템플릿을 **새 프로젝트 만들기** 페이지 및 **새 항목 추가** 대화 상자에 표시하는 데 필요한 메타데이터가 포함된 *.vstemplate* 파일입니다.
+- 템플릿에서 프로젝트 또는 항목을 만들고 템플릿을 *새 프로젝트 만들기* 페이지 및 **새 항목 추가** 대화 상자에 표시하는 데 필요한 메타데이터가 포함된 **.vstemplate** 파일입니다.
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ ms.locfileid: "75589762"
 
 템플릿 폴더에 대한 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)

@@ -1,17 +1,18 @@
 ---
 title: 기술 지원 혜택
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706992"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301949"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화 및 사용
 Visual Studio 구독의 기술 지원 혜택은 [지원 수명 주기](https://support.microsoft.com/lifecycle/search)의 기본 지원 단계에 여전히 있는 제품에 대해 **비-프로덕션 환경**의 중단 수정 문제 해결을 위한 것입니다. Visual Studio Enterprise 표준 및 연간 클라우드 구독은 네 개의 인시던트를 받고, Visual Studio Professional 표준 및 연간 클라우드 구독은 혜택 활성화 후 최대 1년 간 두 개의 인시던트를 받습니다. 혜택 활성화는 구독이 최신 상태인 동안 발생해야 합니다.
@@ -27,7 +28,7 @@ Visual Studio 구독의 기술 지원 혜택은 [지원 수명 주기](https://s
 ## <a name="supported-products"></a>지원되는 제품 
 Visual Studio IDE 및 Azure DevOps Server와 같은 개발자 도구는 Visual Studio 구독을 통해 기본 및 확장 지원을 모두 받게 됩니다.
 
-Visual Studio 구독에서 다운로드한 비 개발자 제품(예: SQL, Windows, SharePoint)은 기본 지원만 받을 수 있습니다. 이러한 제품은 개발 환경에서 응용 프로그램을 디자인, 개발, 테스트 또는 시연하는 경우에만 사용이 허가됩니다. 프로덕션 환경에서는 사용이 허가되지 않습니다.
+Visual Studio 구독에서 다운로드한 비 개발자 제품(예: SQL, Windows, SharePoint)은 기본 지원만 받을 수 있습니다. 이러한 제품은 개발 환경에서 애플리케이션을 디자인, 개발, 테스트 또는 시연하는 경우에만 사용이 허가됩니다. 프로덕션 환경에서는 사용이 허가되지 않습니다.
 
 제품 수준 설명: **사용할 수 없는 지원 플랜**을 확장합니다. **Support plan cannot be used for support on the specified product (Code: 8)** (지원 플랜을 지정된 제품의 지원에 사용할 수 없음(코드: 8))가 표시된 경우, 선택한 제품 버전에 지원 계약을 사용할 수 없습니다.
 
@@ -125,6 +126,12 @@ Azure와 관련된 문제에 대해 Visual Studio 구독 기술 지원 혜택을
 <sup>2</sup> *포함: Imagine Standard.*
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.

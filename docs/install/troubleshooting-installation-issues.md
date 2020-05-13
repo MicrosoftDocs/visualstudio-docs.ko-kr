@@ -1,7 +1,7 @@
 ---
 title: 설치 및 업그레이드 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
-ms.date: 09/13/2019
+ms.date: 03/23/2020
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9dfdf504378dafd7d71288cae1927dd8d6bb9e56
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 97cc0dd72b54795342d8c4f66a90bbd1ae4a7272
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115002"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233107"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 설치 및 업그레이드 문제 해결
 
 > [!IMPORTANT]
-> 설치하는 데 문제가 있나요? 도와드리겠습니다. [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어로만 제공) 지원 옵션이 제공됩니다.
+> 설치하는 데 문제가 있나요? 도와드리겠습니다. [**설치 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어만 가능) 지원 옵션도 제공됩니다.
 
 이 문제 해결 가이드에는 대부분의 설치 문제를 해결할 수 있는 단계별 지침이 포함되어 있습니다.
 
@@ -116,7 +116,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 다음은 [오프라인 설치](create-an-offline-installation-of-visual-studio.md)를 생성한 후 로컬 레이아웃에서 설치할 때 도움이 되는 알려진 문제 및 몇 가지 해결 방법의 표입니다.
 
-| 문제점       | 항목                   | 솔루션 |
+| 문제       | 항목                   | 해결 방법 |
 | ----------- | ---------------------- | -------- |
 | 사용자에게 파일에 액세스할 수 있는 권한이 없습니다. | 권한(ACL) | 오프라인 설치를 공유하기 *전에* 먼저 다른 사용자에게 읽기 액세스 권한을 부여하도록 권한(ACL)을 조정해야 합니다. |
 | 새 작업, 구성 요소 또는 언어가 설치되지 않습니다.  | `--layout`  | 부분 레이아웃에서 설치하고 해당 부분 레이아웃에서 이전에 다운로드하지 않은 워크로드, 구성 요소 또는 언어를 선택하는 경우 인터넷에 액세스할 수 있는지 확인합니다. |
@@ -143,7 +143,7 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및 .NET Framew
 
 이 문제 해결 가이드에 나열된 솔루션이 Visual Studio를 성공적으로 설치하거나 업그레이드하는 데 도움이 되지 않는 경우 [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous) 지원 옵션(영어로만 제공)을 사용하여 추가 지원을 받으세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 제거](remove-visual-studio.md)
 * [방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62788905"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴
@@ -36,13 +36,13 @@ ms.locfileid: "62788905"
 
 ## <a name="uneven-workload-distribution"></a>균등하지 않은 작업 부하 분산
 
-![균등하지 않은 작업 부하](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![균등하지 않은 작업](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
 
 위의 그림처럼 애플리케이션에서 여러 병렬 스레드 간에 균등하지 않은 작업 분산이 발생하면 각 스레드가 작업을 완료할 때 일반적인 계단 단계 패턴이 나타납니다. 동시성 시각화 도우미는 대개 각 동시 스레드에 대해 근접한 시작 시간을 보여줍니다. 그러나 이러한 스레드는 동시에 종료하는 대신 일반적으로 불균등하게 종료됩니다. 이 패턴은 병렬 스레드의 그룹 간에 불균등한 작업 분산을 나타내며, 이로 인해 성능이 저하될 수 있습니다. 이러한 문제를 해결하기 위해서는 병렬 스레드 간에 작업을 나누는 알고리즘을 다시 평가하는 것이 좋습니다.
 
 다음 그림과 같이 동시성 시각화 도우미는 CPU 사용률 뷰에 이 증상을 CPU 사용률의 점진적인 단계별 감소로 표시할 수 있습니다.
 
-![균등하지 않은 작업 부하](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![균등하지 않은 작업](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
 
 ## <a name="oversubscription"></a>초과 구독
 
@@ -68,6 +68,6 @@ I/O의 오용 또는 남용은 애플리케이션의 비효율성에 대한 일�
 
 애플리케이션이 선착순으로 잠금을 획득하고 잠금의 도착률이 잠금 획득률보다 높은 경우 잠금 호송이 발생합니다. 이러한 두 조건이 결합되면 잠금에서 백업을 시작하라는 요청이 발생합니다. 이 문제를 해결하는 방법은 "불공정" 잠금 또는 잠금 해제된 상태의 스레드를 찾을 수 있도록 첫 번째 스레드에 대한 액세스를 제공하는 잠금을 사용하는 것입니다. 위의 그림에서는 이 호송 동작을 보여 줍니다. 이 문제를 해결하려면 동기화 개체에 대한 경합을 줄이고 불공정 잠금을 사용해 보세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [스레드 뷰](../profiling/threads-view-parallel-performance.md)

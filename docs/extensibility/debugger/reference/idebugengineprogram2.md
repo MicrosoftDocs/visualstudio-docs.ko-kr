@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2 | Microsoft Docs
+title: 아이데버그엔진프로그램2 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 221ab8fd00bc7d98745fdd5cc03dd72b9919b4b2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8e5ccf2327e660a983bcb3032363a92ac8a6f71d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345133"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730305"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
-이 인터페이스는 다중 스레드 디버깅을 지원 합니다.
+이 인터페이스는 다중 스레드 디버깅 지원을 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,30 +28,30 @@ ms.locfileid: "66345133"
 IDebugEngineProgram2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자 참고 사항
- 디버그 엔진을 다중 스레드의 동시 디버깅을 지원 하기 위해이 인터페이스를 구현 합니다. 이 인터페이스를 구현 하는 동일한 개체에서 구현 됩니다 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스입니다.
+## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
+ 디버그 엔진은 여러 스레드의 동시 디버깅을 지원하기 위해 이 인터페이스를 구현합니다. 이 인터페이스는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스를 구현하는 동일한 개체에서 구현됩니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
- 사용 하 여 [QueryInterface](/cpp/atl/queryinterface) 에서이 인터페이스를 가져올 수는 `IDebugProgram2` 인터페이스입니다.
+## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
+ [QueryInterface를](/cpp/atl/queryinterface) 사용하여 인터페이스에서 `IDebugProgram2` 이 인터페이스를 가져옵니다.
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
- 다음 표에서의 메서드를 보여 줍니다. `IDebugEngineProgram2`합니다.
+ 다음 표에서는 의 `IDebugEngineProgram2`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
 
-|메서드|설명|
+|방법|설명|
 |------------|-----------------|
-|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|이 프로그램에서 실행 중인 모든 스레드를 중지 합니다.|
-|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|실행 (또는 실행에 대 한 감시 중지)에 대 한 감시 지정한 스레드에서 발생 합니다.|
-|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|허용 하거나 허용 하지 않습니다 프로그램이 중지 하는 경우에 특정 스레드에서 발생 되는 식 계산.|
+|[중지](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|이 프로그램에서 실행 중인 모든 스레드를 중지합니다.|
+|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|지정된 스레드에서 실행(또는 실행 감시 중지)을 감시합니다.|
+|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|프로그램이 중지된 경우에도 지정된 스레드에서 식 평가를 수행하도록 허용(또는 허용하지 않는) 식 계산을 허용합니다.|
 
 ## <a name="remarks"></a>설명
- 이 인터페이스에 대 한 응답에서을 호출 하는 visual Studio는 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 이벤트 프로그램의 "보기에 대 한 스레드 단계" 및 "에 대 한 식 평가에서 스레드 보기" 상태를 설정 하 고 있습니다. [중지](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) 가 호출 될 때마다 프로그램이 중지;이 방법을 사용 하면 프로그램 모든 스레드를 종료 하기.
+ Visual Studio는 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 이벤트에 대한 응답으로 이 인터페이스를 호출하고 프로그램의 "스레드 단계 감시" 및 "스레드에서 식 평가 감시" 상태를 설정합니다. [프로그램이 중지될](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) 때마다 중지가 호출됩니다. 이 메서드는 프로그램에 모든 스레드를 종료할 수 있는 기회를 제공합니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

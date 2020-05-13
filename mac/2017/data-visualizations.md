@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984764"
 ---
 # <a name="data-visualizations"></a>데이터 시각화
@@ -23,17 +23,17 @@ Mac용 Visual Studio에는 디버거에 대한 UI 지원이 포함되어 있으�
 
 아래 목록에는 Mac용 Visual Studio에서 디버그할 때 제공되는 여러 가지 새로운 시각화가 나와 있습니다.
 
-## <a name="point"></a>요소
+## <a name="point"></a>Point
 iOS 및 Mac의 CGPoint 또는 Point/PointF는 디버그 패드에 X 및 Y 값을 표시하는 튜플로 렌더링됩니다.
 
 ![포인트 시각화](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Size
+## <a name="size"></a>크기
 iOS 및 Mac의 CGSize 또는 Size/SizeF는 사각형으로 렌더링됩니다. 크기가 250px 이상으로 확장될 때까지 크기가 조정되고, 250px 이상이 되면 최대 크기가 250px인 사각형으로 크기가 조정됩니다.
 
 [크기 시각화](media/data-visualizations-image11.png)
 
-## <a name="rectangle"></a>사각형
+## <a name="rectangle"></a>직사각형
 iOS 및 Mac의 Rectangle/RectangleF 또는 CGRect는 크기와 원점을 표시합니다. Size와 마찬가지로, 크기가 250px 이상으로 확장될 때까지 크기가 조정됩니다.
 
 ![사각형 시각화](media/data-visualizations-image12.png)
@@ -60,7 +60,7 @@ UIColor, CGColor, Color 속성을 표시하고 색 미리 보기, RGBA 구성 �
 
 ![베지어 곡선 시각화](media/data-visualizations-image16.png)
 
-## <a name="string"></a>문자열
+## <a name="string"></a>String
 
 100자 미만의 문자열은 미리 보기 없이 전체 내용이 표시됩니다. 더 긴 문자열은 미리 보기에 전체 내용이 표시됩니다. 문자열은 편집 가능하며, 아래 그림과 같이 시각화 도우미에 있는 편집 단추를 사용하여 미리 보기 또는 문자열 값 편집기에서 문자열 값을 편집할 수 있습니다.
 

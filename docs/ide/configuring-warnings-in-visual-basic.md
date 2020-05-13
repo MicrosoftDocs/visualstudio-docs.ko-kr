@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114721"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic에서 경고 구성
@@ -32,14 +32,14 @@ ms.locfileid: "76114721"
 
 **프로젝트 디자이너** 페이지의 **컴파일** 탭에서 경고를 켜고 끌 수 있습니다. 모든 경고를 사용하지 않으려면 **모든 경고 사용 안 함** 확인란을 선택하고, 모든 경고를 오류로 처리하려면 **모든 경고를 오류로 처리**를 선택합니다. 표시된 표에서 원하는 대로 일부 개별 경고를 오류 또는 경고로 토글할 수 있습니다.
 
-**Option Strict**가 **끄기**로 설정되면 **Option Strict** 관련 경고를 서로 개별적으로 처리할 수 없습니다. **Option Strict**가 **켜기**로 설정되면 상태에 관계없이 관련 경고가 오류로 처리됩니다. 명령줄 컴파일러에서 `/optionstrict:custom`을 지정하여 **Option Strict**가 **사용자 지정**으로 설정되면 **Option Strict** 경고를 개별적으로 켜고 끌 수 있습니다.
+**Option Strict**가 **끄기**로 설정되면 **Option Strict** 관련 경고를 서로 개별적으로 처리할 수 없습니다. **Option Strict**가 **켜기**로 설정되면 상태에 관계없이 관련 경고가 오류로 처리됩니다. 명령줄 컴파일러에서 **을 지정하여** Option Strict**가** 사용자 지정`/optionstrict:custom`으로 설정되면 **Option Strict** 경고를 개별적으로 켜고 끌 수 있습니다.
 
 컴파일러의 **/warnaserror** 명령줄 옵션을 사용하여 경고를 오류로 처리할지 여부를 지정할 수도 있습니다. \+ 또는 -를 사용하여 이 목록에 쉼표로 구분된 목록을 추가하면 어떤 경고를 오류 또는 경고로 처리할지 지정할 수 있습니다. 다음 표에서는 가능한 옵션을 자세히 설명합니다.
 
-|명령줄 옵션|설명|
+|명령줄 옵션|지정 내용|
 | - |---------------|
 |`/warnaserror+`|모든 경고를 오류로 처리합니다.|
-|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 기본값입니다.|
+|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 이것이 기본값입니다.|
 |`/warnaserror+:<warning list` `>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리합니다.|
 |`/warnaserror-:<warning list>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리하지 않습니다.|
 |`/nowarn`|경고를 보고하지 않습니다.|
@@ -50,7 +50,7 @@ ms.locfileid: "76114721"
 ## <a name="examples"></a>예
 이 명령줄 인수 예제에 대한 표에서는 각 인수가 수행하는 작업을 설명합니다.
 
-|인수|설명|
+|인수|Description|
 |--------------|-----------------|
 |`vbc /warnaserror`|모든 경고를 오류로 처리하도록 지정합니다.|
 |`vbc /warnaserror:42024`|경고 42024가 오류로 처리되도록 지정합니다.|
@@ -73,7 +73,7 @@ ID: 42016
 ID: 42017
 
 ### <a name="operands-of-type-object-warnings"></a>'Object' 형식 경고의 피연산자
-**Option Strict On** 관련 오류를 생성하는 `Object` 형식의 피연산자가 발생할 경우 생성됩니다. 새 프로젝트의 기본값은 켜기입니다.
+`Object`Option Strict On**관련 오류를 생성하는** 형식의 피연산자가 발생할 경우 생성됩니다. 새 프로젝트의 기본값은 켜기입니다.
 
 ID: 42018 및 42019
 
@@ -88,7 +88,7 @@ ID: 42020(변수 선언), 42021(함수 선언) 및 42022(속성 선언).
 ID: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>사용되지 않는 로컬 변수 경고
-로컬 변수가 선언되었지만 참조된 적이 없는 경우 생성됩니다. 기본값은 켜기입니다.
+로컬 변수가 선언되었지만 참조된 적이 없는 경우 생성됩니다. 이 옵션은 기본적으로 사용됩니다.
 
 ID: 42024
 
@@ -117,7 +117,7 @@ ID: 42028
 
 ID: 42029, 42031
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [오류 형식](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Try...Catch...Finally 명령문](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

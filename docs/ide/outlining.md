@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585758"
 ---
 # <a name="outlining"></a>개요
@@ -27,7 +27,7 @@ ms.locfileid: "75585758"
 더하기 기호( **+** ) 아래에 표시되도록 코드 영역을 축소하여 일부 코드를 뷰에서 숨길 수 있습니다. 더하기 기호를 클릭하면 축소된 영역이 확장됩니다. 키보드 사용자인 경우 **Ctrl**+**M**+**M**을 선택하여 축소하고 확장할 수 있습니다. 코드 바로 왼쪽에 표시되는 개요 여백의 영역에서 아무 줄이나 두 번 클릭하여 개요 영역을 축소할 수도 있습니다. 축소된 영역을 마우스로 가리키면 축소된 영역의 내용을 도구 설명으로 확인할 수 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)를 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)를 참조하세요.
 
 여백을 마우스로 가리키면 개요 여백의 영역도 강조 표시됩니다. 일부 색 구성에서는 기본 강조 색이 다소 희미하게 보일 수도 있습니다. **도구** > **옵션** > **환경** > **F글꼴 및 색** > **축소 가능한 영역**에서 변경할 수 있습니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "75585758"
 
 Visual Studio SDK를 사용하여 확장 또는 축소할 텍스트 영역을 정의할 수도 있습니다. [연습: 개요](../extensibility/walkthrough-outlining.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 - [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)

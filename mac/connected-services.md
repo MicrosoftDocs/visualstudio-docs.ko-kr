@@ -6,10 +6,10 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.openlocfilehash: 34a4344be0e48d41829a7bf7df660a91d4f897b6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67693082"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습
@@ -21,7 +21,7 @@ ms.locfileid: "67693082"
 1. 솔루션에서 **연결된 서비스** 노드를 두 번 클릭하여 시작하면 **서비스 갤러리**가 표시됩니다.
   애플리케이션 유형에 대한 모든 사용 가능한 서비스 목록입니다. 서비스(예: **Azure App Service를 사용한 모바일 백 엔드**)를 클릭하여 선택합니다.
 
-    [![Mac용 Visual Studio에서 연결된 서비스 노드](media/connected-services-image001-sml.png "Mac용 Visual Studio에서 연결된 서비스 노드")](media/connected-services-image001.png#lightbox)
+    [![Mac용 Visual Studio에서 연결된 Services 노드](media/connected-services-image001-sml.png "Mac용 Visual Studio에서 연결된 Services 노드")](media/connected-services-image001.png#lightbox)
 
 2. 서비스 세부 정보 페이지에서는 설치될 서비스 및 종속성에 대해 설명합니다.
   **추가** 단추를 클릭하여 앱에 종속성을 추가합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "67693082"
 4. NuGet 패키지용 **라이선스 승인** 대화 상자에서 **동의**를 선택합니다.
   MobileClient 및 종속성을 위한 대화 상자 및 오프라인 데이터 동기화에 필요한 SQLiteStore를 위한 대화 상자 등 동의를 위한 대화 상자는 두 개가 있을 수 있습니다.
 
-    [![사용권 계약에 동의](media/connected-services-image004-sml.png "사용권 계약에 동의")](media/connected-services-image004.png#lightbox)
+    [![라이선스 계약에 동의](media/connected-services-image004-sml.png "라이선스 계약에 동의")](media/connected-services-image004.png#lightbox)
 
     ![라이선스 승인 창](media/connected-services-image005.png "라이선스 승인 창")
 
@@ -50,9 +50,9 @@ ms.locfileid: "67693082"
     나열된 서비스가 없는 경우 **새로 만들기** 단추(9단계 참조)를 클릭합니다.
 
 7. `MobileServiceClient`에 대한 템플릿 코드를 PCL로 복사합니다. 파일 위치의 인스턴스가 하나만 있는 경우 파일 위치는 중요하지 않습니다.
-  권장하는 방법은 `MobileServiceClient`를 사용하고 모든 Azure 상호 작용을 처리하는 `AzureService` 클래스를 만드는 것입니다.
+  권장하는 방법은 `AzureService`를 사용하고 모든 Azure 상호 작용을 처리하는 `MobileServiceClient` 클래스를 만드는 것입니다.
 
-    ![구성 코드 앱에 복사](media/connected-services-image007.png "구성 코드 앱에 복사")
+    ![구성 코드를 앱에 복사](media/connected-services-image007.png "구성 코드를 앱에 복사")
 
 8. **다음 단계**의 설명서에 따라 데이터, 오프라인 동기화, 인증 및 푸시 알림을 앱에 추가합니다.
 

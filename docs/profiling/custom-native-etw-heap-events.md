@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552965"
 ---
 # <a name="custom-native-etw-heap-events"></a>사용자 지정 네이티브 ETW 힙 이벤트
@@ -61,7 +61,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. 포인터를 새로 할당된 힙 메모리로 반환하는 `__declspec(allocator)` 데코레이터를 사용자 지정 힙 관리자의 함수에 추가합니다.  이 데코레이터를 통해 도구에서 반환 중인 메모리의 형식을 올바르게 식별할 수 있습니다.  예:
+1. 포인터를 새로 할당된 힙 메모리로 반환하는 `__declspec(allocator)` 데코레이터를 사용자 지정 힙 관리자의 함수에 추가합니다.  이 데코레이터를 통해 도구에서 반환 중인 메모리의 형식을 올바르게 식별할 수 있습니다.  다음은 그 예입니다.
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -105,7 +105,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   또는
+   또는:
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
@@ -117,7 +117,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   또는
+   또는:
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
@@ -129,7 +129,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    delete pHeapTracker;
    ```
 
-   또는
+   또는:
 
    ```C
    CloseHeapTracker(hHeapTracker);

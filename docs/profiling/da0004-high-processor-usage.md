@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777727"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: 프로세서 사용률이 높습니다.
@@ -26,7 +26,7 @@ ms.locfileid: "74777727"
 |||
 |-|-|
 |규칙 ID|DA0004|
-|범주|프로파일링 도구 사용|
+|Category|프로파일링 도구 사용|
 |프로파일링 방법|계측<br /><br /> 샘플링|
 |메시지|프로세서 사용률이 지속적으로 75% 이상입니다. CPU 바인딩된 애플리케이션에 샘플링 모드를 사용해 보세요.|
 |규칙 유형|정보|

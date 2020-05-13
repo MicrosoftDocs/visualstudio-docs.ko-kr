@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Step | Microsoft Docs
+title: IDebugProgram2::스텝 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8030bd45850a2b81e3cfb03a83497bba77c4515c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 194e72eba5a3f137e4650752a090d91ad7c402fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325291"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722763"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 단계를 수행합니다.
 
 > [!NOTE]
-> 이 메서드는 사용 되지 않습니다. 사용 된 [단계](../../../extensibility/debugger/reference/idebugprocess3-step.md) 메서드 대신 합니다.
+> 이 메서드는 더 이상 사용되지 않습니다. 대신 [단계](../../../extensibility/debugger/reference/idebugprocess3-step.md) 메서드를 사용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,24 +48,24 @@ int Step( 
 
 ## <a name="parameters"></a>매개 변수
 `pThread`\
-[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 단계별 중인 스레드를 나타내는 개체입니다.
+【인】 단계별 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
 `sk`\
-[in] 값을 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) 단계의 종류를 지정 하는 열거형입니다.
+【인】 단계의 종류를 지정하는 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) 열거형의 값입니다.
 
 `step`\
-[in] 값을 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) 지정 열거형 단계의 단위 (예를 들어, 문 또는 명령).
+【인】 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) 열거형의 값으로 단계 단위를 지정합니다(예: 명령또는 명령).
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 발생 한 경우 모든 스레드 동기화 또는 스레드 간 통신, 특정 스레드에서 단계별로 실행할 때 프로그램의 다른 스레드를 실행 해야 합니다.
+ 스레드 간에 스레드 동기화 또는 통신이 있는 경우 특정 스레드가 스테핑될 때 프로그램의 다른 스레드가 실행되어야 합니다.
 
 > [!WARNING]
-> Stopping 이벤트 또는 직접 (동기) 이벤트를 전송 하지 마십시오 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.
+> 이 호출을 처리하는 동안 중지 이벤트 또는 즉각적인(동기식) 이벤트를 [Event에](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 보내지 마십시오. 그렇지 않으면 디버거가 멈출 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

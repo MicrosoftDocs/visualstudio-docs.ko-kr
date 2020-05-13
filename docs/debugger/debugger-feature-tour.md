@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599309"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77578950"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
 
@@ -27,7 +27,7 @@ ms.locfileid: "73599309"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>중단점 설정 및 디버거 시작
 
-디버그하려면 앱 프로세스에 연결된 디버거로 앱을 시작해야 합니다. **F5**(**디버그 > 디버깅 시작**)는 디버그 작업을 수행하는 가장 일반적인 방법입니다. 그러나 지금 앱 코드를 검사할 중단점을 설정하지 않았으므로 먼저 중단점을 설정한 다음, 디버깅을 시작합니다. 중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
+디버그하려면 앱 프로세스에 연결된 디버거로 앱을 시작해야 합니다. **F5**(**디버그 > 디버깅 시작**)는 디버그 작업을 수행하는 가장 일반적인 방법입니다. 그러나 지금 앱 코드를 검사할 중단점을 설정하지 않았으므로 먼저 중단점을 설정한 다음, 디버깅을 시작합니다. 중단점은 신뢰할 수 있는 디버깅의 가장 기본적이고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
 코드 편집기에 파일이 열려 있는 경우 코드 줄의 왼쪽 여백을 클릭하여 중단점을 설정할 수 있습니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "73599309"
 
 중단점은 자세히 검사하려는 코드 줄 또는 코드 섹션을 아는 경우 유용한 기능입니다.
 
-## <a name="navigate"></a> 한 단계 실행 명령을 사용하여 디버거에서 코드 탐색
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> 한 단계 실행 명령을 사용하여 디버거에서 코드 탐색
 
 앱 코드를 더욱 빠르게 탐색할 수 있으므로 대부분의 명령에 대한 바로 가기 키를 제공합니다. (메뉴 명령과 같은 해당 명령이 괄호 안에 표시됩니다.)
 
@@ -110,7 +110,7 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 ## <a name="restart-your-app-quickly"></a>앱을 빠르게 다시 시작
 
-디버그 도구 모음에서 **다시 시작**![앱 다시 시작](../debugger/media/dbg-tour-restart.png "앱 다시 시작") 단추를 클릭합니다(**Ctrl + Shift +F5**).
+디버그 도구 모음에서 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "앱 다시 시작") 단추를 클릭합니다(**Ctrl+Shift+F5**).
 
 **다시 시작**을 누르면 앱을 중지하고 디버거를 다시 시작하는 것에 비해 시간이 절약됩니다. 디버거가 코드를 실행하여 적중한 첫 번째 중단점에서 일시 중지합니다.
 
@@ -185,7 +185,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 또한 **호출 스택** 창에서 오른쪽 클릭 메뉴를 사용하여 다른 작업을 수행할 수도 있습니다. 예를 들어 지정된 함수에 중단점을 삽입하고, **커서까지 실행**을 사용하여 앱을 다시 시작하고, 소스 코드를 검사할 수 있습니다. [방법: 호출 스택 검사](../debugger/how-to-use-the-call-stack-window.md)를 참조하세요.
 
-## <a name="exception"></a> 예외 검사
+## <a name="examine-an-exception"></a><a name="exception"></a> 예외 검사
 
 앱에서 예외를 throw하는 경우 디버거는 예외를 throw한 코드 줄로 이동합니다.
 
@@ -208,7 +208,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 디버깅 속성은 프로젝트 형식마다 고유합니다. 예를 들어, 애플리케이션을 시작할 때 전달할 인수를 지정할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트 관련 속성에 액세스할 수 있습니다. 디버깅 속성은 일반적으로 특정 프로젝트 형식에 따라 **빌드** 또는 **디버그** 탭에 나타납니다.
 
-![](../debugger/media/dbg-tour-project-properties.png "프로젝트 속성")
+![프로젝트 속성](../debugger/media/dbg-tour-project-properties.png "프로젝트 속성")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Azure App Service에서 라이브 ASP.NET 앱 디버그
 
@@ -229,6 +229,10 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 ![뒤로 이동 및 앞으로 이동 단추](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 이동 및 앞으로 이동 단추")
 
 자세한 내용은 [IntelliTrace를 사용하여 이전 앱 상태 검사](../debugger/view-historical-application-state.md) 페이지를 참조하세요.
+
+## <a name="debug-performance-issues"></a>성능 문제 디버그
+
+앱이 너무 느리게 실행되거나 너무 많은 메모리를 사용하는 경우 먼저 프로파일링 도구를 사용하여 앱을 테스트해야 할 수 있습니다. CPU 사용량 도구 및 메모리 분석기와 같은 프로파일링 도구에 대한 자세한 내용은 [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

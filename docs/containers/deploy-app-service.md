@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027294"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 ASP.NET Core 컨테이너 배포
@@ -29,7 +29,7 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
 - "ASP.NET 및 웹 개발" 워크로드가 포함된 최신 버전의 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)을 설치합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- *ASP.NET 및 웹 개발* 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)입니다.
+- [ASP.NET 및 웹 개발](https://visualstudio.microsoft.com/downloads) 워크로드가 있는 *Visual Studio 2019*
 ::: moniker-end
 - [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) 설치
 
@@ -40,7 +40,7 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
 ::: moniker range="vs-2017"
 1. Visual Studio 메뉴에서 **파일 > 새로 만들기 > 프로젝트**를 선택합니다.
 2. **새 프로젝트** 대화 상자의 **템플릿** 섹션에서 **Visual C# > 웹**을 선택합니다.
-3. **새 ASP.NET Core 웹 애플리케이션**을 선택합니다.
+3. **ASP.NET Core 웹 애플리케이션**을 선택합니다.
 4. 새 애플리케이션에 이름을 지정(또는 기본값 사용)하고 **확인**을 선택합니다.
 5. **웹 애플리케이션**을 선택합니다.
 6. **Docker 지원 사용** 확인란을 선택합니다.
@@ -102,6 +102,6 @@ Azure Portal에서 **리소스 그룹**을 선택한 다음, 리소스 그룹을
 
 [Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro)에 대한 자세한 정보
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [Azure Container Registry에 배포](hosting-web-apps-in-docker.md)

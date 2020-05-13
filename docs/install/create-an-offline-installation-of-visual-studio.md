@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d52dd064e895b1e35230b93c85a7a8499032943e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114827"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio의 오프라인 설치 만들기
@@ -108,7 +108,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ### <a name="step-2---create-a-local-install-cache"></a>2다계 - 로컬 설치 캐시 만들기
 
-이 단계를 완료하려면 인터넷 연결이 있어야 합니다.
+이 단계를 완료하려면 인터넷에 연결되어 있는 상태여야 합니다.
 
 > [!IMPORTANT]
 > Visual Studio Community를 설치하는 경우 설치 후 30일 이내에 활성화해야 합니다. 활성화하려면 인터넷 연결이 필요합니다.

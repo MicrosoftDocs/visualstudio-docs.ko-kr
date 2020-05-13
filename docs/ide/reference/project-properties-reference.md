@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567725"
 ---
 # <a name="project-properties-reference"></a>프로젝트 속성 참조
@@ -24,7 +24,7 @@ ms.locfileid: "75567725"
 
 ## <a name="project-properties-pages"></a>프로젝트 속성 페이지
 
-| 제목 | 설명 |
+| 제목 | Description |
 | - | - |
 | [프로젝트 디자이너, 애플리케이션 페이지(Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 프로젝트에 대한 애플리케이션 설정 및 속성을 지정하려면 이 페이지를 사용합니다. |
 | [프로젝트 디자이너, 애플리케이션 페이지(C#)](../../ide/reference/application-page-project-designer-csharp.md) | [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트에 대한 애플리케이션 설정 및 속성을 지정하려면 이 페이지를 사용합니다. |
@@ -38,6 +38,6 @@ ms.locfileid: "75567725"
 | [프로젝트 디자이너, 보안 페이지](../../ide/reference/security-page-project-designer.md) | [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 배포를 통해 배포된 애플리케이션에 대한 코드 액세스 보안을 구성하려면 이 페이지를 사용합니다. |
 | [프로젝트 디자이너, 서명 페이지](../../ide/reference/signing-page-project-designer.md) | 애플리케이션 및 배포 매니페스트에 서명하고 어셈블리에 서명하려면 이 페이지를 사용합니다. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md)

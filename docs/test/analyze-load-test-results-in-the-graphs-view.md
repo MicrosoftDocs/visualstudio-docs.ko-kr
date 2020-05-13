@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591270"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 그래프 뷰에서 부하 테스트 결과 분석
@@ -32,13 +32,13 @@ ms.locfileid: "75591270"
 
 한 번에 최대 4개의 그래프 패널을 표시할 수 있습니다. **패널 레이아웃** 도구 모음 단추를 사용하면 패널 레이아웃으로 전환할 수 있습니다.
 
-몇 가지 기본 제공 그래프도 있습니다. 기본 제공 그래프를 그대로 사용하거나 사용자 지정할 수 있습니다. 또한 사용자가 직접 그래프를 만들 수도 있습니다. 자세한 내용은 [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) 및 [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)를 참고하세요.
+몇 가지 기본 제공 그래프도 있습니다. 기본 제공 그래프를 그대로 사용하거나 사용자 지정할 수 있습니다. 또한 사용자가 직접 그래프를 만들 수도 있습니다. 자세한 내용은 [방법: 그래프에 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) 및 [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)를 참조하세요.
 
 ## <a name="built-in-graphs"></a>기본 제공 그래프
 
 다음 표에서는 부하 테스트 실행 결과를 분석하는 데 사용할 수 있는 기본 제공 그래프를 보여 줍니다.
 
-|그래프 이름|설명|
+|그래프 이름|Description|
 |-|-|
 |핵심 지표|사용자 부하, 처리량 및 응답 시간과 같은 테스트 성능의 기본 특징을 설명하는 카운터입니다.|
 |테스트 응답 시간|테스트를 실행하는 데 소요된 시간에 대한 데이터입니다.|
@@ -65,25 +65,25 @@ ms.locfileid: "75591270"
 |카운터|카운터의 이름입니다.|
 |-|-|
 |인스턴스|카운터 인스턴스의 이름입니다.|
-|범주|카운터 범주의 이름입니다.|
-|컴퓨터|카운터가 수집되는 컴퓨터의 이름입니다.|
+|Category|카운터 범주의 이름입니다.|
+|Computer|카운터가 수집되는 컴퓨터의 이름입니다.|
 |색|그래프에 표시되는 선의 색입니다.|
 |범위|해당 카운터에 대한 그래프에서 100으로 표현되는 수를 나타냅니다. 예를 들어 상한값이 10,000인 범위의 경우 그래프의 맨 위에 표시된 레이블 100은 10,000을 나타냅니다.|
-|최소|카운터의 최소값을 밀리초 단위로 나타냅니다.|
-|최대|카운터의 최대값을 밀리초 단위로 나타냅니다.|
-|평균|카운터의 평균값을 밀리초 단위로 나타냅니다.|
+|최소값|카운터의 최소값을 밀리초 단위로 나타냅니다.|
+|최대값|카운터의 최대값을 밀리초 단위로 나타냅니다.|
+|Avg|카운터의 평균값을 밀리초 단위로 나타냅니다.|
 |마지막|가장 최근 샘플링 간격 동안의 카운터 값을 밀리초 단위로 나타냅니다.|
 
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
 |-|-|
-|**범례를 사용하여 그래프 사용자 지정:** 그래프 보기 범례에는 그래프와 연결된 각 성능 카운터에 대한 정보가 표시됩니다. 범례를 사용하여 성능 카운터를 제거하고, 그래프에서 성능 카운터를 강조 표시하고, 출력 옵션을 사용자 지정할 수 있습니다.|-   [그래프 뷰 범례를 사용하여 부하 테스트 분석](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**범례를 사용하여 그래프 사용자 지정:** 그래프 뷰의 범례에는 그래프와 연결된 각 성능 카운터에 대한 정보가 표시됩니다. 범례를 사용하여 성능 카운터를 제거하고, 그래프에서 성능 카운터를 강조 표시하고, 출력 옵션을 사용자 지정할 수 있습니다.|-   [그래프 뷰 범례를 사용하여 부하 테스트 분석](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**그래프에 카운터 표시:** 부하 테스트 결과 그래프에 카운터를 배치하여 해당 그래프에 다른 종류의 데이터를 추가할 수 있습니다.|-   [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**그래프 확대:** 부하 테스트가 완료되면 확대/축소 막대를 사용하여 그래프의 영역으로 확대 및 스크롤할 수 있습니다. 확대하면 부하 테스트 실행 동안 생성된 데이터를 보다 자세히 검사할 수 있습니다.|-   [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**타일 그래프:** 부하 테스트 결과 그래프는 몇 가지 패턴으로 배열할 수 있습니다. 최대 네 개의 그래프를 바둑판식으로 배열할 수 있습니다.||
+|**그래프 바둑판식 배열:** 부하 테스트 결과 그래프는 몇 가지 패턴으로 배열할 수 있습니다. 최대 네 개의 그래프를 바둑판식으로 배열할 수 있습니다.||
 |**사용자 지정 그래프 만들기:** 부하 테스트 결과에 대한 특정 정보를 표시하는 그래프를 디자인할 수 있습니다. 그래프에 표시할 부하 테스트 카운터를 지정하여 사용자 지정 그래프를 디자인합니다.|-   [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**그래프에서 성능 카운터 데이터 내보내기:** **그래프** 보기 상태에서 **부하 테스트 분석기** 도구 모음의 **그래프 데이터를 Excel로 내보내기** 단추를 사용하여 그래프 데이터를 Microsoft Excel로 내보낼 수 있습니다.||
+|**그래프의 성능 카운터 데이터 내보내기:** **그래프** 뷰에서 **부하 테스트 분석기** 도구 모음의 **그래프 데이터를 Excel로 내보내기** 단추를 사용하여 그래프 데이터를 Microsoft Excel로 내보낼 수 있습니다.||
 
 ## <a name="related-tasks"></a>관련 작업
 
@@ -93,7 +93,7 @@ ms.locfileid: "75591270"
 
 [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)

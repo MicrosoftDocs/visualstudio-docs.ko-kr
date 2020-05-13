@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
+title: IDebugparsed표현식::평가동기화 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aac58831224a6bebadd625dad72177f2aec3fc76
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311821"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726015"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-이 메서드는 구문 분석 된 식을 계산 하 고 필요에 따라 다른 데이터 형식으로 결과 캐스팅 합니다.
+이 메서드는 구문 분석된 식을 평가 하 고 선택적으로 다른 데이터 형식에 결과 캐스팅 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,33 +53,33 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>매개 변수
 `dwEvalFlags`\
-[in] 조합을 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 식을 평가 하는 하는 방법을 제어 하는 상수입니다.
+【인】 식을 평가하는 방법을 제어하는 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 상수의 조합입니다.
 
 `dwTimeout`\
-[in] 이 메서드에서 반환 되기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.
+【인】 이 메서드에서 반환하기 전에 기다릴 최대 시간(밀리초)을 지정합니다. 무기한 `INFINITE` 대기하는 데 사용합니다.
 
 `pSymbolProvider`\
-[in] 로 표현 된 기호 공급자에는 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 인터페이스입니다.
+【인】 [IDebugSymbol공급자](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 인터페이스로 표현된 기호 공급자입니다.
 
 `pAddress`\
-[in] 로 표현 되는 메서드 내에서 현재 실행 위치에는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스입니다.
+【인】 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스로 표현된 메서드 내의 현재 실행 위치입니다.
 
 `pBinder`\
-[in] 로 표현 된 바인더에는 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 인터페이스입니다.
+【인】 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 인터페이스로 표현된 바인더입니다.
 
 `bstrResultType`\
-[in] 결과 형식 캐스팅할 수 해야 합니다. 이 인수는 null 값을 수 있습니다.
+【인】 결과를 캐스팅해야 하는 형식을 입력합니다. 이 인수는 null 값이 될 수 있습니다.
 
 `ppResult`\
-[out] 반환 된 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 평가의 결과 나타내는 인터페이스입니다.
+【아웃】 평가 결과를 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 식 계산 컨텍스트를 지정 하 여 `pAddress`, 포함 하는 메서드를 결정할 수 있습니다 및 식에 있는 기호의 값을 확인 하려면 규칙 사용 하 여 언어 범위를 지정 합니다.
+ 식 평가 컨텍스트는 `pAddress`포함 메서드를 결정한 다음 언어 범위 지정 규칙을 사용하여 식에서 기호값을 결정할 수 있는 에 의해 제공됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

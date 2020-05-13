@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567842"
 ---
 # <a name="print-command"></a>인쇄 명령
@@ -35,7 +35,7 @@ ms.locfileid: "75567842"
 
 `text`
 
-필수 요소. 계산할 식 또는 표시할 텍스트입니다.
+필수 사항입니다. 계산할 식 또는 표시할 텍스트입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -59,10 +59,10 @@ ms.locfileid: "75567842"
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [문 실행 명령](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

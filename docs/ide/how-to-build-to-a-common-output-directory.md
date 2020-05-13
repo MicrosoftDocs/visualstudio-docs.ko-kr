@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68416751"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>방법: 공통 출력 디렉터리로 빌드

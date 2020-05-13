@@ -10,15 +10,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f4caebfdc4e61b683e0f1407d1522f6da2328fcf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591075"
 ---
 # <a name="how-to-create-project-templates"></a>방법: 프로젝트 템플릿 만들기
 
-이 항목에서는 템플릿을 *.zip* 파일로 패키징하는 **템플릿 내보내기 마법사**를 사용하여 템플릿을 만드는 방법을 보여줍니다.
+이 항목에서는 템플릿을 **.zip** 파일로 패키징하는 *템플릿 내보내기 마법사*를 사용하여 템플릿을 만드는 방법을 보여줍니다.
 
 ## <a name="use-the-export-template-wizard"></a>템플릿 내보내기 마법사 사용
 
@@ -41,7 +41,7 @@ ms.locfileid: "75591075"
 
    프로젝트는 *.zip* 파일로 내보내고 지정된 출력 위치에 배치되며 선택할 경우 Visual Studio로 가져옵니다.
 
-**새 프로젝트** 대화 상자에서 템플릿을 찾고 **설치됨**을 확장한 후 *.vstemplate* 파일의 `ProjectType` 요소에 해당하는 범주를 확장합니다. 예를 들어 `<ProjectType>CSharp</ProjectType>`을 포함하는 *.vstemplate* 파일은 기본적으로 **설치됨** > **Visual C#** 아래에 나타납니다. 해당 디렉터리에 폴더를 만들고 그 안에 템플릿의 *.zip* 파일을 추가하여 프로젝트 형식의 하위 디렉터리에 템플릿을 구성할 수 있습니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
+**새 프로젝트** 대화 상자에서 템플릿을 찾고 **설치됨**을 확장한 후 `ProjectType`.vstemplate*파일의* 요소에 해당하는 범주를 확장합니다. 예를 들어 *을 포함하는* .vstemplate`<ProjectType>CSharp</ProjectType>` 파일은 기본적으로 **설치됨** > **Visual C#** 아래에 나타납니다. 해당 디렉터리에 폴더를 만들고 그 안에 템플릿의 *.zip* 파일을 추가하여 프로젝트 형식의 하위 디렉터리에 템플릿을 구성할 수 있습니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ ms.locfileid: "75591075"
 
 Visual Studio SDK를 설치한 경우 **VSIX 프로젝트** 템플릿을 사용하여 완료된 템플릿을 .vsix 파일로 래핑하여 배포할 수 있습니다. 자세한 내용은 [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)

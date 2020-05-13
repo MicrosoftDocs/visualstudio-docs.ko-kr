@@ -3,15 +3,16 @@ title: Visual Studio 구독 내 소프트웨어 다운로드 관련 제품 가�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 위한 소프트웨어 다운로드 내의 제품 가용성 알아보기
-ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706819"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232311"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독 내 소프트웨어 다운로드 관련 제품 가용성
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.
@@ -36,6 +37,12 @@ ms.locfileid: "74706819"
 > 동일한 이메일 주소와 연결된 구독이 여럿인 경우 사용자가 이용 가능한 소프트웨어 타이틀은 사용자의 **최고** 수준 구독에 따라 결정됩니다.  예를 들어 사용자에게 Visual Studio Enterprise 구독과 Visual Studio Test Professional 구독이 있다면 구독 포털에서 어떤 구독이 현재 사용 중인지와 관계없이 Visual Studio Enterprise 구독과 함께 포함된 소프트웨어 타이틀 액세스 권한이 주어집니다. 
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
+
+## <a name="see-also"></a>참고 항목
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - 일부 소프트웨어 다운로드에는 이를 설치 및 정품 인증할 제품 키가 필요할 수 있습니다.  제품 키 가져오기 및 관리 방법에 대한 자세한 내용은 [제품 키](product-keys.md) 문서를 참조하세요. 

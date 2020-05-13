@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04656351b538aa71811bc32d6b45d735f5441441
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773207"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 .NET Framework 메모리 데이터 수집
@@ -22,7 +22,7 @@ ms.locfileid: "74773207"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**애플리케이션 시작 및 .NET 메모리 프로파일링**|-   [방법: 프로파일러를 통해 .NET Framework 애플리케이션을 시작하여 메모리 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**.NET 애플리케이션에 프로파일러 연결**|-   [방법: .NET Framework 애플리케이션에 프로파일러를 연결하여 메모리 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
@@ -32,7 +32,7 @@ ms.locfileid: "74773207"
 
 ### <a name="profile-stand-alone-applications"></a>독립 실행형 애플리케이션 프로파일링
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**샘플링 방법을 사용하여 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**계측 방법을 사용하여 프로파일링**|-   [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
@@ -41,7 +41,7 @@ ms.locfileid: "74773207"
 
 ### <a name="profile-net-memory-data"></a>.NET 메모리 데이터 프로파일링
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**ASP.NET 애플리케이션 프로파일링**|-   [메모리 데이터 수집](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
 |**서비스 프로파일링**|-   [.NET 메모리 데이터 수집](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|

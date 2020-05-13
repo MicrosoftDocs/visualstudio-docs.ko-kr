@@ -1,17 +1,18 @@
 ---
 title: Visual Studio 구독의 CODE Magazine 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 10/13/2019
+ms.assetid: e5768153-2758-46d3-a323-3272def213ee
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: f3b8c7c10cc8995e05b0e0da7da5e85226e131a3
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491661"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274013"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -56,7 +57,7 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  아니요          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
-<sup>1</sup> 포함:  ‘NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, BizSpark, Imagine Premium  제외: MPN(Microsoft 파트너 네트워크), MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services Developer, MCT Software & Services, Imagine’
+<sup>1</sup>  포함:  ‘NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, BizSpark, Imagine Premium  제외: MPN(Microsoft 파트너 네트워크), MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services Developer, MCT Software & Services, Imagine’
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -74,6 +75,12 @@ A:  CODE Magazine은 이행, 제품 선택, 디지털 액세스 프로세스를 
 - CODE Magazine 구독에 대해 궁금한 점이 있을 경우,  전자 메일이나 전화로 [CODE Magazine](https://www.codemag.com/contact)에 문의하거나, 온라인 지원 요청을 제출하세요.
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독에 포함된 기타 유용한 혜택을 확인합니다. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)로 이동합니다.

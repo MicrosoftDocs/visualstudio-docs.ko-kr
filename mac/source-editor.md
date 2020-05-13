@@ -6,15 +6,15 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68493269"
 ---
 # <a name="source-editor"></a>소스 편집기
 
-코드를 간결하고 효율적으로 작성하려면 신뢰할 수 있는 소스 편집기가 꼭 필요합니다. Mac용 Visual Studio에서 제공하는 정교한 소스 편집기는 IDE 상호 작용의 핵심을 이룹니다. 소스 편집기는 예상할 수 있고 작업을 쉽게 수행할 수 있는 기능을 제공합니다. 구문 강조 표시, 코드 조각, 코드 접기 등과 같은 기본적인 기능부터 완전한 기능의 IntelliSense 코드 완성과 같은 Roslyn 컴파일러 통합에 이점에 이르기까지 다양합니다.
+코드를 간결하고 효율적으로 작성하려면 신뢰할 수 있는 소스 편집기가 꼭 필요합니다. Mac용 Visual Studio에서 제공하는 정교한 소스 편집기는 IDE 상호 작용의 핵심을 이룹니다. 소스 편집기는 구문 강조 표시, 코드 조각, 코드 접기 등의 기초적인 기능부터 Roslyn 컴파일러 통합에 따르는 완벽한 기능의 IntelliSense 코드 완성과 같은 이점에 이르기까지 작업의 편의성을 높여 주는 기능을 다양하게 제공합니다.
 
 Mac용 Visual Studio의 소스 편집기에서는 디버깅, 리팩터링, 버전 제어 통합 등 IDE의 다른 모든 기능을 원활하게 사용할 수 있습니다.
 
@@ -46,7 +46,7 @@ Mac용 Visual Studio는 플랫폼 간 개발을 최대한 편리하고 실용적
 
 이 메뉴 항목으로 코드 접기를 사용하거나 사용하지 않도록 설정할 수도 있습니다.
 
-## <a name="word-wrap"></a>단어 줄 바꿈
+## <a name="word-wrap"></a>자동 줄 바꿈
 
 자동 줄 바꿈은 긴 코드 줄 또는 제한된 보기 공간에서 작업할 때 공간을 관리하는 데 도움을 줄 수 있습니다. 또한 자동 줄 바꿈은 보기를 숨기거나 소스 보기의 너비를 줄일 수 있는 창을 여는 경우에도 코드 보기에 소스 파일의 전체 내용이 포함되도록 할 수 있습니다. 
 

@@ -2,7 +2,7 @@
 title: Visual Studio Build Tools를 컨테이너에 설치
 titleSuffix: ''
 description: Visual Studio Build Tools를 Windows 컨테이너에 설치하여 CI/CD(연속 통합/지속적인 업데이트) 워크플로를 지원하는 방법을 알아봅니다.
-ms.date: 07/03/2019
+ms.date: 03/25/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114616"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273896"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools를 컨테이너에 설치
 
@@ -28,7 +28,7 @@ Visual Studio Build Tools를 Windows 컨테이너에 설치하여 CI/CD(지속�
 
 Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 없는 경우 다른 Visual Studio 제품에 대해 동일한 단계를 사용할 수 있습니다. 그러나 Windows 컨테이너는 대화형 사용자 인터페이스를 지원하지 않으므로 모든 명령을 자동화해야 합니다.
 
-## <a name="before-you-begin"></a>시작하기 전 주의 사항
+## <a name="before-you-begin"></a>시작하기 전에
 
 아래에서는 [Docker](https://www.docker.com/what-docker)에 어느 정도 익숙한 것으로 간주합니다. Windows에서 Docker 실행에 대해 아직 익숙하지 않은 경우 [Windows에서 Docker 엔진 설치 및 구성](/virtualization/windowscontainers/manage-docker/configure-docker-daemon) 방법을 확인하세요.
 
@@ -71,22 +71,24 @@ Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Install Build Tools excluding workloads and components with known issues.
+   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
    RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
-       --all `
+       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
        --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
-   # Start developer command prompt with any other commands specified.
-   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
-
-   # Default to PowerShell if no other command specified.
-   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   # Define the entry point for the Docker container.
+   # This entry point starts the developer command prompt and launches the PowerShell shell.
+   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
+
+   > [!TIP]
+   > 워크로드 및 구성 요소 목록은 [Visual Studio Build Tools 구성 요소 디렉터리](workload-component-id-vs-build-tools.md)를 참조하세요.
+   >
 
    > [!WARNING]
    > 이미지가 직접 microsoft/windowsservercore 또는 mcr.microsoft.com/windows/servercore를 기반으로 하는 경우([Microsoft 신디케이트 컨테이너 카탈로그](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/) 참조) .NET Framework가 올바로 설치되지 않을 수 있으며 설치 오류 표시가 되지 않습니다. 관리 코드는 설치가 완료된 후 실행되지 않을 수 있습니다. 대신, [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 이상에서 이미지를 기반으로 합니다. 또한 버전 4.7.2 이상 태그가 지정된 이미지는 `RUN` 및 `ENTRYPOINT` 지침 실패로 이어지는 기본값 `SHELL`로 PowerShell을 사용할 수 있습니다.
@@ -94,7 +96,7 @@ Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 
    > Visual Studio 2017 버전 15.8 또는 이전 버전(제품)이 mcr.microsoft.com/windows/servercore:1809 이상에 제대로 설치되지 않습니다. 오류가 표시되지 않습니다.
    >
    > 어떤 호스트 OS 버전에 어떤 컨테이너 OS 버전이 지원되는지 확인하려면 [Windows 컨테이너 버전 호환성](/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하고, 알려진 문제의 경우에는 [알려진 컨테이너 관련 문제](build-tools-container-issues.md)를 참조하세요.
-
+   
    ::: moniker-end
 
    ::: moniker range="vs-2019"
@@ -111,22 +113,24 @@ Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Install Build Tools excluding workloads and components with known issues.
+   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
    RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
-       --all `
+       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
        --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
-   # Start developer command prompt with any other commands specified.
-   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
-
-   # Default to PowerShell if no other command specified.
-   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   # Define the entry point for the docker container.
+   # This entry point starts the developer command prompt and launches the PowerShell shell.
+   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
+
+   > [!TIP]
+   > 워크로드 및 구성 요소 목록은 [Visual Studio Build Tools 구성 요소 디렉터리](workload-component-id-vs-build-tools.md)를 참조하세요.
+   >
 
    > [!WARNING]
    > microsoft/windowsservercore에 이미지를 직접 베이스하는 경우 .NET Framework는 제대로 설치되지 않을 수 있으며 설치 오류가 표시되지 않습니다. 관리 코드는 설치가 완료된 후 실행되지 않을 수 있습니다. 대신, [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 이상에서 이미지를 베이스합니다. 또한 버전 4.8 이상 태그가 지정된 이미지는 `RUN` 및 `ENTRYPOINT` 지침 실패로 이어지는 기본값 `SHELL`로 PowerShell을 사용할 수 있습니다.
@@ -190,9 +194,18 @@ Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 
 
 이 이미지를 CI/CD 워크플로에 사용하려면 자신의 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) 또는 다른 내부 [Docker 레지스트리](https://docs.docker.com/registry/deploying)에 게시하여 서버에서 끌어오기만 하면 됩니다.
 
+   > [!NOTE]
+   > Docker 컨테이너가 시작되지 않는다면 Visual Studio 설치 문제가 있는 것일 수 있습니다. Visual Studio 일괄 처리 명령을 호출하는 단계가 제거되도록 Dockerfile을 업데이트해 보세요. 이렇게 하면 Docker 컨테이너를 시작하고 설치 오류 로그를 읽을 수 있습니다.
+   >
+   > Dockerfile 파일에서 `ENTRYPOINT` 명령의 `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` 매개 변수와 `&&` 매개 변수를 제거합니다. 그러면 명령이 `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`가 됩니다. 다음으로 Dockerfile을 다시 빌드하고 `run` 명령을 실행하여 컨테이너 파일에 액세스합니다. 설치 오류 로그를 찾으려면 `$env:TEMP` 디렉터리로 이동하여 `dd_setup_<timestamp>_errors.log` 파일을 찾습니다.
+   >
+   > 설치 문제를 찾아서 해결한 후에는 `ENTRYPOINT` 명령에 `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` 매개 변수와 `&&` 매개 변수를 추가하고 Dockerfile을 다시 빌드하면 됩니다.
+   >
+   > 자세한 내용은 [컨테이너의 알려진 문제](build-tools-container-issues.md)를 참조하세요.
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [고급 컨테이너 예제](advanced-build-tools-container.md)
 * [알려진 컨테이너 관련 문제](build-tools-container-issues.md)

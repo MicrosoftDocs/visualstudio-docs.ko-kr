@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75678899"
 ---
 # <a name="create-a-new-project"></a>새 프로젝트 만들기
@@ -51,6 +51,6 @@ Solution Pad에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추
 
 기존 프로젝트를 추가하도록 선택하면 컴퓨터에서 기존 프로젝트를 찾아 솔루션에 추가할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [솔루션 및 프로젝트 만들기(Windows의 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

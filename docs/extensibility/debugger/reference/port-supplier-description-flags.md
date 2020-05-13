@@ -1,28 +1,28 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01cf70b473d2c430741df2021d27b3047e782b79
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309478"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713986"
 ---
-# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+# <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-포트 공급자에 대 한 검색할 수 있는 메타 데이터를 정의 합니다.
+포트 공급자에 대해 검색할 수 있는 메타데이터를 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,21 +44,21 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>필드
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-옵션을 선택 하는 경우 UI에 경고 아이콘이 표시 됩니다.
+이 옵션을 선택하면 경고 아이콘이 UI에 표시됩니다.
 
 ## <a name="remarks"></a>설명
 
-이 열거형에서 반환 되는 [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) 메서드.
+이 열거형은 [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) 메서드에 의해 반환됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
 헤더: Msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
+- [설명 받기](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

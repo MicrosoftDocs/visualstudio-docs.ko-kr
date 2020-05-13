@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592258"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>방법: 클래스 다이어그램에 설명 추가
+# <a name="how-to-add-comments-to-class-diagrams"></a>방법: 클래스 다이어그램에 주석 추가
 
 주석 도형을 사용하여 클래스 다이어그램에 주석을 달 수 있습니다. 주석 도형에는 텍스트를 입력할 수 있는 **텍스트**라는 하나의 속성이 있습니다. 주석 도형은 다이어그램 화면에만 존재하고 코드에는 존재하지 않습니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "75592258"
 
 2. 다이어그램에서 새 주석 도형을 클릭하고 원하는 텍스트를 입력합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [클래스 다이어그램 작업](designing-and-viewing-classes-and-types.md)
 - [방법: 클래스 다이어그램 사용자 지정](how-to-customize-class-diagrams.md)

@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 53378c3d210ef9666df251d68a3eec570f8caa2f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778000"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -50,8 +50,8 @@ VSPerfCmd [/U] [/options]
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|모든 데이터 수집을 중지하지만 프로파일링 세션을 종료하지 않습니다.|
 |[ProcessOn](../profiling/processon-and-processoff.md) **:** `pid`|**VSPerfCmdProcessOff** 호출로 프로파일링이 일시 중지된 후 지정된 프로세스에 대한 데이터 수집을 다시 시작합니다.|
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|지정된 프로세스에 대한 데이터 수집을 중지합니다.|
-|[ThreadOn 및 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|**VSPerfCmdThreadOff** 호출로 프로파일링이 일시 중지된 후 지정된 프로세스에 대한 프로파일링을 다시 시작합니다. 계측 방법으로 프로파일링하는 경우에만 **ThreadOn**을 사용합니다.|
-|[ThreadOn 및 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|지정된 스레드에 대한 프로파일링을 일시 중지합니다. 계측 방법으로 프로파일링하는 경우에만 **ThreadOff**를 사용합니다.|
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|**VSPerfCmdThreadOff** 호출로 프로파일링이 일시 중지된 후 지정된 프로세스에 대한 프로파일링을 다시 시작합니다. 계측 방법으로 프로파일링하는 경우에만 **ThreadOn**을 사용합니다.|
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|지정된 스레드에 대한 프로파일링을 일시 중지합니다. 계측 방법으로 프로파일링하는 경우에만 **ThreadOff**를 사용합니다.|
 |[Mark](../profiling/mark.md) **:** _MarkNum_[ **,** _MarkText_ **]**|선택적 텍스트와 함께 표시를 프로파일링 데이터 파일에 삽입합니다.|
 
 ## <a name="sample-method-options"></a>샘플 메서드 옵션
@@ -62,7 +62,7 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *실행 파일*|지정된 애플리케이션을 시작하고 프로파일링을 시작합니다.|
 |[Args](../profiling/args.md) **:** *인수*|시작된 애플리케이션에 전달할 명령줄 인수를 지정합니다.|
 |[콘솔](../profiling/console.md)|새 명령 프롬프트 창에서 지정된 명령을 시작합니다.|
-|[연결](../profiling/attach.md) **:** *PID*[ **,** _PID_]|지정된 프로세스의 프로파일링을 시작합니다. 프로세스는 프로세스 ID 또는 프로세스 이름으로 식별할 수 있습니다.|
+|[Attach](../profiling/attach.md) **:** *PID*[ **,** _PID_]|지정된 프로세스의 프로파일링을 시작합니다. 프로세스는 프로세스 ID 또는 프로세스 이름으로 식별할 수 있습니다.|
 |[Detach](../profiling/detach.md)[ **:** _PID_[,_PID_]]|지정된 프로세스의 프로파일링을 중지합니다. 프로세스는 프로세스 ID 또는 프로세스 이름으로 식별할 수 있습니다. 프로세스가 지정되지 않은 경우 모든 프로세스의 프로파일링이 중지됩니다.|
 |[GC](../profiling/gc-vsperfcmd.md)[ **:** {**Allocation**`&#124;`**Lifetime**}]|.NET 메모리 할당 및 개체 수명 데이터를 수집합니다. **VSPerfCmdLaunch** 옵션과 함께 사용하는 것만 가능합니다.|
 
@@ -90,7 +90,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver
  **VSPerfCmd /Driver** 옵션은 이제 사용되지 않습니다. 해당 기능에는 **VsPerfCmd 관리자** 옵션을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

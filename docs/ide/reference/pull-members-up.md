@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969179"
 ---
 # <a name="pull-members-up"></a>멤버 끌어오기
@@ -34,7 +34,7 @@ ms.locfileid: "62969179"
 ## <a name="how-to"></a>방법
 
 1. 구현된 인터페이스의 모든 멤버에 커서를 놓습니다.
-2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
    ![멤버 끌어오기](media/pull-members-up.png)
 
@@ -48,6 +48,6 @@ ms.locfileid: "62969179"
 
    ![멤버 끌어오기 완성](media/pull-members-up-completed.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

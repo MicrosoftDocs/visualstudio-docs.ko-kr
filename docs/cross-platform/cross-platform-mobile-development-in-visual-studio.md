@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916872"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78234984"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -140,12 +140,12 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 |**자세히**|
 |--------------------|
-|[Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/community/)(VisualStudio.com)|
-|[C++를 사용한 플랫폼 간 모바일 개발 설치](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)(VisualStudio.com)|
+|[C++를 사용한 플랫폼 간 모바일 개발 설치](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[여러 플랫폼을 대상으로 한 C++ 사용에 대해 알아보기](https://visualstudio.microsoft.com/vs/cplusplus-mdd/)(VisualStudio.com)|
-|[필요한 항목을 설치한 다음 Android용 Native Activity 애플리케이션 만들기](create-an-android-native-activity-app.md)|
+|[필요한 항목을 설치한 다음 Android용 C++ 기본 활동 애플리케이션 만들기](/cpp/cross-platform/create-an-android-native-activity-app)|
 |[Android 및 Windows 앱과 C++ 코드를 공유하는 방법에 대해 알아보기](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[C++ 플랫폼 간 모바일 개발 예제](cross-platform-mobile-development-examples.md)|
+|[C++ 플랫폼 간 모바일 개발 예제](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04b109bfa5741a5d4349f2d503bd1c821e19029d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588709"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>방법: 클래스 디자이너에서 기존 형식 보기
@@ -61,8 +61,8 @@ ms.locfileid: "75588709"
 
 **솔루션 탐색기**나 **클래스 뷰**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **보기**, **클래스 다이어그램 보기**를 차례로 선택합니다. 자동으로 채워진 클래스 다이어그램이 만들어집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-- [방법: 형식 간에 상속 보기](how-to-view-inheritance-between-types.md)
+- [방법: 형식 간의 상속 보기](how-to-view-inheritance-between-types.md)
 - [방법: 클래스 다이어그램 사용자 지정](how-to-customize-class-diagrams.md)
 - [형식 및 관계 보기](designing-and-viewing-classes-and-types.md)

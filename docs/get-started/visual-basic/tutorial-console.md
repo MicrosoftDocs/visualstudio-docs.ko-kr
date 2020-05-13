@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830000"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579942"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>자습서: Visual Studio에서 Visual Basic 시작
 
@@ -268,7 +268,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 > [!div class="nextstepaction"]
 > [Visual Studio에서 Visual Basic 및 .NET Core SDK를 사용하여 라이브러리 빌드](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Basic 언어 연습](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic 언어 참조](/dotnet/visual-basic/language-reference/index)

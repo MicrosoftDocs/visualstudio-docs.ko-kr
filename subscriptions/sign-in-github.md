@@ -3,15 +3,16 @@ title: GitHub 계정으로 Visual Studio 구독 로그인 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: GitHub 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944194"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233225"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub 계정으로 Visual Studio 구독 로그인 
 
@@ -62,6 +63,12 @@ A:  account.microsoft.com의 [보안 탭](https://account.microsoft.com/security
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q:  내 GitHub 계정을 사용하여 로그인을 시도했지만 대신 사용해야 하는 Microsoft ID가 이미 있다는 메시지가 나타납니다.  이유가 무엇입니까?
 A:  GitHub 계정에 Azure Active Directory 이메일 주소가 있다면 Azure에 액세스하고 GitHub 코드를 사용하여 CI 파이프라인을 실행할 수 있는 Microsoft ID가 이미 있는 것입니다. 해당 계정을 사용하면 Azure 리소스 및 빌드 파이프라인이 조직 경계 내에 확실히 유지됩니다. 그러나 개인 작업을 수행하는 경우 GitHub 계정에 개인 이메일 주소를 지정하여 언제나 해당 계정에 액세스할 수 있도록 하는 것이 좋습니다. 이렇게 수행한 후 다시 로그인을 시도하고 회사 또는 학교 게정에 로그인하라는 메시지가 나타날 때 **다른 이메일 주소 사용**을 선택하세요. 그러면 해당 개인 이메일 주소를 사용하여 새 Microsoft 계정을 만들 수 있습니다.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독 포털에 성공적으로 로그인한 후에는 https://my.visualstudio.com/benefits 에서 혜택 페이지를 방문하여 사용자가 이용할 수 있는 유용한 도구, 서비스 및 제안을 살펴보는 것이 좋습니다.  

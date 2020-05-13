@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595451"
 ---
 # <a name="secure-applications"></a>보안 애플리케이션
@@ -38,7 +38,7 @@ ms.locfileid: "75595451"
 - [Dotfuscator](dotfuscator/index.md)는 무료이며 .NET 어셈블리를 리버스 엔지니어링 및 무단 사용 (예: 무단 디버깅)으로부터 보호합니다.
 - 소프트웨어 구성 요소를 고유하게 식별하고 이름 스푸핑을 방지하는 데 [강력한 이름 서명](managing-assembly-and-manifest-signing.md)을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [.NET의 보안](/dotnet/standard/security/index)
 - [Azure 보안](/azure/security/)

@@ -1,39 +1,39 @@
 ---
-title: 간단한 포함 | Microsoft Docs
+title: 단순화된 임베딩 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c77c7f19ff677ddbe8339c88ef3ea46953e23b7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332069"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700081"
 ---
 # <a name="simplified-embedding"></a>간단한 포함
-해당 문서 뷰 개체 (즉, 자식 수) 부모가 되는 경우 편집기에서 활성화 되어 단순화 포함 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 인터페이스 해당 창 명령을 처리 하기 위해 구현 됩니다. 간단한 포함 편집기 활성 컨트롤을 호스팅할 수 없습니다. 간단한 포함 편집기를 만드는 데 개체는 다음 그림에 표시 됩니다.
+문서 뷰 개체가 부모(즉, 자식)에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]부모가 되고 해당 창 명령을 처리하기 위해 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 인터페이스가 구현될 때 편집기에서 단순화된 포함이 활성화됩니다. 단순화된 임베디드 편집기는 활성 컨트롤을 호스트할 수 없습니다. 단순화된 포함을 사용하여 편집기를 만드는 데 사용되는 개체는 다음 그림에 나와 있습니다.
 
- ![간단한 포함 편집기 그래픽](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor") 간단한 포함 편집기
+ ![단순화된 임베딩 편집기 그래픽](../extensibility/media/vssimplifiedembeddingeditor.gif "vs 단순화 엠베딩 에디터") 단순화된 임베딩이 있는 편집기
 
 > [!NOTE]
-> 만이 그림의 개체는 `CYourEditorFactory` 표준 파일 기반 편집기를 만드는 데 필요한 개체입니다. 사용자 지정 편집기를 만드는 경우는 필요가 없으며 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>편집기에는 자체 전용 지 속성 메커니즘이 있을 때문입니다. 그러나 사용자 지정이 아닌 편집기에 대해 해야 합니다.
+> 이 그림의 개체 중 `CYourEditorFactory` 표준 파일 기반 편집기를 만들려면 개체만 필요합니다. 사용자 지정 편집기를 만드는 경우 편집기에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>자체 개인 지속성 메커니즘이 있을 수 있으므로 구현할 필요가 없습니다. 그러나 사용자 지정되지 않은 편집기의 경우 그렇게 해야 합니다.
 
- 에 포함 된 간단한 포함 편집기를 만들기 위해 구현 하는 모든 인터페이스는 `CYourEditorDocument` 개체입니다. 그러나 문서 데이터의 여러 보기를 지원 하기 위해 분할 별도 데이터와 뷰 개체 인터페이스는 다음 표에 표시 된 대로.
+ 단순화된 포함을 사용하여 편집기를 만들기 위해 구현된 `CYourEditorDocument` 모든 인터페이스가 개체에 포함됩니다. 그러나 문서 데이터의 여러 뷰를 지원하려면 인터페이스를 별도의 데이터로 분할하고 다음 표에 표시된 대로 개체를 봅니다.
 
-|인터페이스|인터페이스의 위치|사용|
+|인터페이스|인터페이스 위치|사용|
 |---------------|---------------------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|보기|부모 창에 대 한 연결을 제공합니다.|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|보기|명령을 처리합니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|보기|상태 표시줄 업데이트를 사용하도록 설정합니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|보기|사용 하도록 설정 **도구 상자** 항목입니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|데이터|파일 변경 되 면 알림을 보냅니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|데이터|파일 형식으로 저장 기능을 사용 하도록 설정 합니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|View|상위 창에 대한 연결을 제공합니다.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|View|명령을 처리합니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|View|상태 표시줄 업데이트를 사용하도록 설정합니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|View|도구 상자 항목을 **활성화합니다.**|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|데이터|파일이 변경될 때 알림을 보냅니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|데이터|파일 형식에 대해 다른 기능으로 저장을 활성화합니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|데이터|문서에 대해 지속성을 사용하도록 설정합니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|데이터|다시 로드 트리거 같은 파일 변경 이벤트의 제거를 허용합니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|데이터|다시 로드 트리거와 같은 파일 변경 이벤트를 억제할 수 있습니다.|

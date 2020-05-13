@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f920311301b722c11bea4a9f4eb90e9aa7663d80
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747727"
 ---
 # <a name="set-radix-command"></a>기수 설정 명령
@@ -32,9 +32,9 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>인수
 `10`, `16`, `hex` 또는 `dec`
 
-선택 사항입니다. 10진수(10 또는 dec) 또는 16진수(16 또는 hex)를 나타냅니다. 인수를 생략하면 현재 기수 값이 반환됩니다.
+(선택 사항) 10진수(10 또는 dec) 또는 16진수(16 또는 hex)를 나타냅니다. 인수를 생략하면 현재 기수 값이 반환됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 16진수 형식의 정수 값을 표시하도록 환경을 설정합니다.
 
 ```cmd
@@ -46,4 +46,4 @@ Debug.SetRadix [10 | 16 | hex | dec]
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

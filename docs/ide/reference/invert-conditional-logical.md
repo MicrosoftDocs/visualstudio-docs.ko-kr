@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531682"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>조건식 및 조건부 AND/OR 연산자 반전
@@ -33,14 +33,14 @@ ms.locfileid: "65531682"
 ## <a name="invert-conditional-expressions-and-conditional-andor-operators-refactoring"></a>조건식 및 조건부 AND/OR 연산자 리팩터링 반전
 
 1. 커서를 조건식 또는 조건부 AND/OR 연산자에 놓습니다.
-2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 3. **조건부 반전** 또는 **'&&'를 '||'로 대체** 선택
 
     ![조건부 반전](media/invert-conditional.png)
 
     ![조건부 반전](media/invert-logical-operator.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [.NET 개발자를 위한 팁](../csharp-developer-productivity.md)

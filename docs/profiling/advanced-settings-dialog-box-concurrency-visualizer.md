@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911215"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>고급 설정 대화 상자(동시성 시각화 도우미)
 동시성 시각화 도우미의 **고급 설정** 대화 상자에서는 추적 수집 방법을 제어할 수 있습니다.  이 대화 상자에는 기호, 내 코드만, 버퍼링, 필터링, CLR 이벤트, 표식, 공급자 및 파일에 대한 탭이 포함됩니다.
 
-## <a name="symbols"></a>기호
+## <a name="symbols"></a>Symbols
  동시성 시각화 도우미에는 Visual Studio 디버거와 동일한 기호 설정이 사용됩니다. 동시성 시각화 도우미는 이 설정을 사용해서 성능 데이터와 연관된 호출 스택을 분석합니다.  추적을 처리할 때 동시성 시각화 도우미는 설정 페이지에 지정된 기호 서버에 액세스합니다.  네트워크를 통해 이 데이터에 액세스할 경우에는 추적 처리 속도가 느려집니다.  기호를 분석하는 데 필요한 시간을 줄이기 위해서는 기호를 로컬로 캐시할 수 있습니다. 기호가 다운로드되었으면 Visual Studio가 로컬 캐시에서 기호를 로드합니다.
 
 ## <a name="just-my-code"></a>내 코드만
@@ -31,7 +31,7 @@ ms.locfileid: "72911215"
 ## <a name="buffering"></a>버퍼링
  동시성 시각화 도우미는 추적을 수집할 때 ETW(Windows용 이벤트 추적)를 사용합니다.  ETW는 이벤트를 저장할 때 여러 버퍼를 사용합니다.  기본 ETW 버퍼 설정은 모든 경우에 최적이 아닐 수 있으며, 일부 경우에는 이벤트 손실과 같은 문제를 일으킬 수 있습니다.  버퍼링 탭을 사용하여 ETW 버퍼 설정을 구성할 수 있습니다. 자세한 내용은 [이벤트 추적](/windows/win32/etw/event-tracing-portal) 및 [EVENT_TRACE_PROPERTIES 구조](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)를 참조하세요.
 
-## <a name="filter"></a>필터
+## <a name="filter"></a>Assert
  필터 탭에는 동시성 시각화 도우미에서 수집하는 이벤트 집합을 선택할 수 있습니다. 이벤트 하위 집합을 선택하면 보고서에 표시되는 데이터 형식이 제한되고, 각 추적의 크기가 감소하고, 추적 처리에 필요한 시간이 줄어듭니다.
 
 ### <a name="clr-events"></a>CLR 이벤트
@@ -52,7 +52,7 @@ ms.locfileid: "72911215"
 ### <a name="file-io-events"></a>파일 I/O 이벤트
  파일 I/O 이벤트는 현재 프로세스를 대신해서 디스크에 대한 액세스를 제공합니다.  파일 I/O 이벤트를 비활성화하면 추적 크기가 줄어들지만 스레드 보기에서 디스크 채널 또는 디스크 작업에 대한 정보를 보고하지 않습니다.
 
-## <a name="markers"></a>Markers
+## <a name="markers"></a>표식
  **표식** 탭에서는 동시성 시각화 도우미에 표식으로 나타나는 ETW 공급자 집합을 구성할 수 있습니다.  또한 중요도 수준 및 ETW 범주에 따라 표식 컬렉션을 필터링 할 수 있습니다.  [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)를 사용 중이고 고유한 표식 공급자를 사용 중이면 스레드 보기에 표시되도록 여기에서 등록할 수 있습니다.
 
 ### <a name="add-a-new-provider"></a>새 공급자 추가

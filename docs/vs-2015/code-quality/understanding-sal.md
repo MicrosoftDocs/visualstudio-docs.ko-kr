@@ -6,15 +6,15 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848459"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278447"
 ---
 # <a name="understanding-sal"></a>SAL 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  이 섹션에서는 기본 SAL 주석에 대 한 코드 예제를 보여 줍니다.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Visual Studio 코드 분석 도구를 사용하여 오류 찾기  
- 예제에서는 코드 오류를 찾기 위해 Visual Studio Code 분석 도구를 SAL 주석과 함께 사용 합니다. 방법은 다음과 같습니다.  
+ 예제에서는 코드 오류를 찾기 위해 Visual Studio Code 분석 도구를 SAL 주석과 함께 사용 합니다. 이 작업을 수행 하는 방법은 다음과 같습니다.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio 코드 분석 도구 및 SAL을 사용하려면  
   
@@ -408,7 +408,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   
   또는 모든 매개 변수에 주석을 추가 하 여 의도 하지 않은 전체를 확인 하 고 주석이 완료 되었는지 쉽게 확인할 수 있습니다.  
   
-## <a name="related-resources"></a>관련 참고 자료  
+## <a name="related-resources"></a>관련 리소스  
  [코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>참고 항목  

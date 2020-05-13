@@ -1,5 +1,5 @@
 ---
-title: RequiredFrameworkVersion 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 필수프레임워크버전 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744751"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701506"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소 (Visual Studio 템플릿)
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>필수프레임워크버전 요소(비주얼 스튜디오 템플릿)
 
-서식 파일에 필요한.NET Framework의 최소 버전을 지정 합니다. 발생 합니다 **대상 프레임 워크 버전** 드롭다운에 표시 되는 **새 프로젝트** 대화 합니다. `RequiredFrameworkVersion` 요소는 또한 드롭다운 목록에서 사용 가능한 가장 낮은 값을 결정 합니다.
+템플릿에 필요한 .NET 프레임워크의 최소 버전을 지정합니다. **대상 프레임워크 버전** 드롭다운이 새 **프로젝트** 대화 상자에 표시됩니다. `RequiredFrameworkVersion` 또한 요소는 드롭다운에서 사용할 수 있는 가장 낮은 값을 결정합니다.
 
 > [!IMPORTANT]
-> Visual Studio 2017 버전 15.6부터를 **대상 프레임 워크 버전** 드롭다운에 표시 된 템플릿에 대 한 필터는 더 이상 합니다 **템플릿** 부분은 **새프로젝트** 대화 상자. 대신, 드롭다운에서 선택한 템플릿에 대 한 프레임 워크 선택기로 작동합니다.
+> Visual Studio 2017 버전 15.6에서 시작하여 **대상 프레임워크 버전** 드롭다운은 더 이상 새 **프로젝트** 대화 상자의 **템플릿** 섹션에 표시된 템플릿에 대한 필터가 아닙니다. 대신 드롭다운은 선택한 템플릿에 대한 프레임워크 선택기역할을 합니다.
 
- \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
+ \<VS템플릿 \<> 템플릿데이터> \<필수프레임 워크>
 
 ## <a name="syntax"></a>구문
 
@@ -45,22 +45,22 @@ ms.locfileid: "66744751"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류 하 고에서 표시 되는 방식을 정의 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 새 **항목 추가** 대화 상자에 표시되는 방법을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 텍스트는 템플릿에 대 한 필요한.NET Framework의 최소 버전 번호 여야 합니다.
+ 텍스트는 템플릿에 필요한 .NET Framework의 최소 버전 번호여야 합니다.
 
 ## <a name="remarks"></a>설명
 
-`RequiredFrameworkVersion`는 선택적 요소입니다. 템플릿은 특정 최소 버전 (및 이상 버전 있는 경우)를 지원 하는 경우에이 요소를 사용 하 여.NET Framework의 합니다. 지정 하는 경우는 `RequiredFrameworkVersion` 요소 및 템플릿에 특정 최소 버전의.NET Framework를 지원 하지 않습니다 합니다 **대상 프레임 워크 버전** 드롭다운에는 적용 되지 않는 경우 표시 됩니다.
+`RequiredFrameworkVersion`는 선택적 요소입니다. 템플릿이 .NET Framework의 특정 최소 버전(및 이후 버전인 경우)을 지원하는 경우에만 이 요소를 사용합니다. 요소를 지정하고 템플릿이 .NET Framework의 특정 최소 버전을 지원하지 않는 경우 **대상 프레임워크 버전** 드롭다운이 적용되지 않을 때 표시됩니다. `RequiredFrameworkVersion`
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 표준에 대 한 메타 데이터를 보여 줍니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스 템플릿.
+다음 예제에서는 표준 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스 템플릿에 대한 메타데이터를 보여 줍니다.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,10 +80,10 @@ ms.locfileid: "66744751"
 </VSTemplate>
 ```
 
-이 예제에서는 서식 파일을 여는 데 필요한.NET Framework의 최소 버전 표시 `RequiredFrameworkVersion`,이 3.0 이라고 합니다. 이 템플릿을 사용 하 여 만든 프로젝트는.NET Framework 버전 3.0에서 대상으로 지정할 수 있습니다.
+이 예제에서는 `RequiredFrameworkVersion`에서 로 표시되는 템플릿에 필요한 .NET Framework의 최소 버전은 3.0입니다. 이 템플릿으로 만든 프로젝트는 3.0부터 .NET Framework 버전을 대상으로 할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [개요를 대상으로 하는 프레임 워크](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework 대상 지정 개요](../ide/visual-studio-multi-targeting-overview.md)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef50983d964c4b7ef6479117ed2501569a77a62d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778910"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>방법: 명령줄에서 독립 실행형 .NET Framework 구성 요소 계측 및 프로파일러를 사용하여 타이밍 데이터 수집
@@ -94,6 +94,6 @@ ms.locfileid: "74778910"
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [계측 방법 데이터 뷰](../profiling/instrumentation-method-data-views.md)

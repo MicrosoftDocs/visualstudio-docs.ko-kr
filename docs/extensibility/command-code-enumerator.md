@@ -1,25 +1,25 @@
 ---
-title: 명령 코드 열거자 | Microsoft Docs
+title: 명령 코드 열거자 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4ec14c15bbd0aa6340e30e3156e714ba5f9e074
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334956"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739792"
 ---
 # <a name="command-code-enumerator"></a>명령 코드 열거자
-이 열거자에 대 한 옵션에 사용 되는 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 하며 [SccPopulateList](../extensibility/sccpopulatelist-function.md)옵션 지정 되는 명령을 나타냅니다.
+이 열거자는 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 및 [SccPopulateList에](../extensibility/sccpopulatelist-function.md)대 한 옵션에 대 한 옵션에서 사용 됩니다 옵션을 지정 하는 명령을 나타내는.
 
 ## <a name="syntax"></a>구문
 
@@ -40,29 +40,29 @@ enum SCCCOMMAND {
 ```
 
 ## <a name="members"></a>멤버
-에 해당 하는 SCC_COMMAND_GET 합니다 [SccGet](../extensibility/sccget-function.md)합니다.
+SCC_COMMAND_GET [SccGet에](../extensibility/sccget-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_CHECKOUT 합니다 [SccCheckout](../extensibility/scccheckout-function.md)합니다.
+SCC_COMMAND_CHECKOUT [SccCheckout에](../extensibility/scccheckout-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_CHECKIN 합니다 [SccCheckin](../extensibility/scccheckin-function.md)합니다.
+SCC_COMMAND_CHECKIN [SccCheckin에](../extensibility/scccheckin-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_UNCHECKOUT 합니다 [SccUncheckout](../extensibility/sccuncheckout-function.md)합니다.
+SCC_COMMAND_UNCHECKOUT [SccUncheckout에](../extensibility/sccuncheckout-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_ADD 합니다 [SccAdd](../extensibility/sccadd-function.md)합니다.
+SCC_COMMAND_ADD [SccAdd에](../extensibility/sccadd-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_REMOVE 합니다 [SccRemove](../extensibility/sccremove-function.md)합니다.
+SCC_COMMAND_REMOVE [SccRemove에](../extensibility/sccremove-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_DIFF 합니다 [SccDiff](../extensibility/sccdiff-function.md)합니다.
+SCC_COMMAND_DIFF [SccDiff에](../extensibility/sccdiff-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_HISTORY 합니다 [SccHistory](../extensibility/scchistory-function.md)합니다.
+SCC_COMMAND_HISTORY [SccHistory에](../extensibility/scchistory-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_RENAME 합니다 [SccRename](../extensibility/sccrename-function.md)합니다.
+SCC_COMMAND_RENAME [SccRename에](../extensibility/sccrename-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_PROPERTIES 합니다 [SccProperties](../extensibility/sccproperties-function.md)합니다.
+SCC_COMMAND_PROPERTIES [SccProperties에](../extensibility/sccproperties-function.md)해당합니다.
 
-에 해당 하는 SCC_COMMAND_OPTIONS 합니다 [SccSetOption](../extensibility/sccsetoption-function.md)합니다.
+SCC_COMMAND_OPTIONS [SccSetOption에](../extensibility/sccsetoption-function.md)해당합니다.
 
-## <a name="see-also"></a>참고자료
-- [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>참조
+- [소스 제어 플러그인](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

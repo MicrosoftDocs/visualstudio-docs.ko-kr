@@ -18,28 +18,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588118bf31c5d310e947b02fda476a63d0d9df7a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573449"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633644"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 요소(MSBuild)
-사용자 정의 [Item](../msbuild/item-element-msbuild.md) 요소 집합을 포함합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 사용되는 모든 항목은 `ItemGroup` 요소의 자식으로 지정해야 합니다.
+
+사용자 정의 [Item](../msbuild/item-element-msbuild.md) 요소 집합을 포함합니다. MSBuild 프로젝트에서 사용되는 모든 항목은 `ItemGroup` 요소의 자식으로 지정해야 합니다.
 
 \<Project> \<ItemGroup>
 
 ## <a name="syntax"></a>구문
 
 ```xml
-<ItemGroup Condition="'String A' == 'String B'">
+<ItemGroup Condition="'String A' == 'String B'"
+           Label="Label">
     <Item1>... </Item1>
     <Item2>... </Item2>
 </ItemGroup>
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
@@ -47,6 +50,7 @@ ms.locfileid: "75573449"
 |특성|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다. 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
+|`Label`|선택적 특성입니다. `ItemGroup`를 식별합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
@@ -58,10 +62,11 @@ ms.locfileid: "75573449"
 
 | 요소 | 설명 |
 | - | - |
-| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
+| [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 | [Target](../msbuild/target-element-msbuild.md) | .NET Framework 3.5부터 `ItemGroup` 요소는 `Target` 요소 내에 표시될 수 있습니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. |
 
 ## <a name="example"></a>예제
+
 다음 코드 예제에서는 사용자 정의 항목 컬렉션 `Res` 및 `ItemGroup` 요소 내에 선언된 `CodeFiles`를 보여 줍니다. `Res` 항목 컬렉션의 각 항목은 사용자 정의 자식 [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) 요소를 포함합니다.
 
 ```xml
@@ -82,6 +87,7 @@ ms.locfileid: "75573449"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
 - [항목](../msbuild/msbuild-items.md)
 - [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md)

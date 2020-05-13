@@ -1,18 +1,19 @@
 ---
 title: GPU 사용률 모니터
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: f455a1cbfbad58ebe724c879837e161954cf4be2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8cc9491edb2e38ef96aa8ad6d554a53d43e5957f
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560950"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638720"
 ---
 # <a name="monitoring-gpu-utilization"></a>GPU 사용률 모니터
 

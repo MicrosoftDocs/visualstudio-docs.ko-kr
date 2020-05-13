@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592050"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>단위 테스트를 위한 Assert 클래스 사용
@@ -38,7 +38,7 @@ ms.locfileid: "75592050"
 
 테스트가 실패할 때마다 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> 예외가 throw됩니다. 테스트는 시간이 초과되거나, 예기치 않은 예외가 throw되거나, **Failed** 결과를 생성하는 Assert 문을 포함하는 경우 실패합니다.
 
-테스트 후 **결과 불충분** 결과가 생성될 때마다 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>이 throw됩니다. 일반적으로는 아직 작업 중엔 테스트에 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 문을 추가하여 해당 테스트가 아직 실행할 준비가 되지 않았음을 나타냅니다.
+테스트 후 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>결과 불충분**결과가 생성될 때마다**이 throw됩니다. 일반적으로는 아직 작업 중엔 테스트에 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 문을 추가하여 해당 테스트가 아직 실행할 준비가 되지 않았음을 나타냅니다.
 
 > [!NOTE]
 > <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute> 특성을 사용하여 테스트 실행 준비가 되지 않았음을 표시하는 전략을 사용할 수도 있습니다. 그러나 이 전략을 사용하는 경우 구현되지 않은 테스트 수에 대한 보고서를 쉽게 생성할 수 없다는 단점이 있습니다.
@@ -47,6 +47,6 @@ ms.locfileid: "75592050"
 
 애플리케이션 코드의 메서드가 throw할 것으로 예상했던 예외가 실제로 해당 메서드에서 throw되었는지 확인하려면 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> 메서드를 사용하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)

@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587448"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408719"
 ---
 # <a name="suppress-code-analysis-warnings"></a>코드 분석 경고 표시 안 함
 
@@ -78,7 +78,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **범위** -경고가 표시 되지 않는 대상입니다. 대상이 지정 되지 않은 경우 특성의 대상으로 설정 됩니다. 지원 되는 [범위](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) 는 다음과 같습니다.
 
-  - `module`-이 범위는 어셈블리에 대 한 경고를 표시 하지 않습니다. 전체 프로젝트에 적용 되는 전역 비 표시 제거입니다.
+  - [`module`](#module-suppression-scope) -이 범위는 어셈블리에 대 한 경고를 표시 하지 않습니다. 전체 프로젝트에 적용 되는 전역 비 표시 제거입니다.
 
   - `resource`-([레거시 FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) 만 해당)이 범위는 모듈 (어셈블리)의 일부인 리소스 파일에 기록 된 진단 정보의 경고를 표시 하지 않습니다. 이 범위는 원본 파일만 분석 하는 C#Roslyn analyzer 진단에 대 한/vb 컴파일러에서 읽고 적용 되지 않습니다.
 
@@ -91,6 +91,8 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   - `namespaceanddescendants`-(컴파일러 버전 3(sp3) 이상 및 Visual Studio 2019 필요)이 범위는 네임 스페이스 및 모든 하위 기호에서 경고를 표시 하지 않습니다. `namespaceanddescendants` 값은 레거시 분석에서 무시 됩니다.
 
 - **대상** -경고를 표시 하지 않을 대상을 지정 하는 데 사용 되는 식별자입니다. 정규화 된 항목 이름을 포함 해야 합니다.
+
+Visual Studio에서 경고가 표시 되 면 [전역 비 표시 오류 (suppression) 파일에 비](../code-quality/use-roslyn-analyzers.md#suppress-violations)표시를 추가 하 여 `SuppressMessage` 예제를 볼 수 있습니다. 비 표시 특성 및 필수 속성은 미리 보기 창에 표시 됩니다.
 
 ## <a name="suppressmessage-usage"></a>SuppressMessage 사용
 
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>생성 된 코드
-
-관리 코드 컴파일러와 일부 타사 도구는 코드를 신속 하 게 개발 하는 코드를 생성 합니다. 소스 파일에 표시 되는 컴파일러 생성 코드는 일반적으로 `GeneratedCodeAttribute` 특성으로 표시 됩니다.
-
-생성 된 코드에 대 한 코드 분석 경고 및 오류를 표시 하지 않을 지 여부를 선택할 수 있습니다. 이러한 경고 및 오류를 표시 하지 않는 방법에 대 한 자세한 내용은 [How to: ](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)생성 된 코드에 대 한 경고를 표시 하지 않습니다.
-
-> [!NOTE]
-> 코드 분석은 전체 어셈블리나 단일 매개 변수에 적용 될 때 `GeneratedCodeAttribute`를 무시 합니다.
-
 ## <a name="global-level-suppressions"></a>전역 수준 비 표시 오류
 
 관리 코드 분석 도구는 어셈블리, 모듈, 형식, 멤버 또는 매개 변수 수준에서 적용 되는 `SuppressMessage` 특성을 검사 합니다. 리소스와 네임 스페이스에 대 한 위반도 발생 시킵니다. 이러한 위반은 전역 수준에서 적용 해야 하며 범위 지정 및 대상 지정이 가능 합니다. 예를 들어 다음 메시지는 네임 스페이스 위반을 억제 합니다.
@@ -174,9 +167,33 @@ public class Animal
 > [!NOTE]
 > `Target`에는 항상 정규화 된 항목 이름이 포함 됩니다.
 
-## <a name="global-suppression-file"></a>전역 비 표시 파일
+### <a name="global-suppression-file"></a>전역 비 표시 파일
 
 전역 비 표시 오류 (suppression) 파일은 대상을 지정 하지 않는 전역 수준 비 표시 오류 (suppression) 또는 비 표시 오류 (suppression)를 유지 합니다. 예를 들어 어셈블리 수준 위반에 대 한 비 표시 오류는이 파일에 저장 됩니다. 또한 일부 ASP.NET 비 표시 오류는이 파일에 저장 됩니다 .이 파일은 폼의 코드에 대해 프로젝트 수준 설정을 사용할 수 없기 때문입니다. **오류 목록** 창에 있는 **표시 안 함** 명령의 **Project 비 표시 오류 (suppression) 파일** 옵션을 처음으로 선택 하면 전역 비 표시 오류 (suppression) 파일이 생성 되어 프로젝트에 추가 됩니다.
+
+### <a name="module-suppression-scope"></a>모듈 비 표시 범위
+
+**모듈** 범위를 사용 하 여 전체 어셈블리에 대 한 코드 품질 위반을 억제할 수 있습니다.
+
+예를 들어 _Globalsuppressions_ 표시 프로젝트 파일의 다음 특성은 ASP.NET Core 프로젝트에 대 한 system.threading.tasks.task.configureawait 위반을 표시 하지 않습니다.
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>생성 된 코드
+
+관리 코드 컴파일러와 일부 타사 도구는 코드를 신속 하 게 개발 하는 코드를 생성 합니다. 소스 파일에 표시 되는 컴파일러 생성 코드는 일반적으로 `GeneratedCodeAttribute` 특성으로 표시 됩니다.
+
+소스 코드 분석 (FxCop 분석기)의 경우 프로젝트 또는 솔루션의 루트에 있는 [editorconfig](../code-quality/configure-fxcop-analyzers.md) 파일을 사용 하 여 생성 된 코드에서 메시지를 표시 하지 않을 수 있습니다. 생성 된 코드와 일치 하는 파일 패턴을 사용 합니다. 예를 들어 * *. designer.cs* 파일에서 CS1591 경고를 제외 하려면 구성 파일에서이 경고를 사용 합니다.
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+레거시 코드 분석의 경우 생성 된 코드에 대 한 코드 분석 경고 및 오류를 표시 하지 않을 지 여부를 선택할 수 있습니다. 이러한 경고 및 오류를 표시 하지 않는 방법에 대 한 자세한 내용은 [How to: ](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)생성 된 코드에 대 한 경고를 표시 하지 않습니다.
+
+> [!NOTE]
+> 코드 분석은 전체 어셈블리나 단일 매개 변수에 적용 될 때 `GeneratedCodeAttribute`를 무시 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8adce700524c4ade6c627aa91480460f8f2571f2
-ms.sourcegitcommit: 9f6f63a2d76c6e579b4b67a96ec86faba99ad1df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71933478"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Python 프로젝트에 대한 테스트 프레임워크 선택

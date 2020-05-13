@@ -7,10 +7,10 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691293"
 ---
 # <a name="refactoring"></a>리팩터링
@@ -47,7 +47,7 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 어떤 언어든지 타사에서 SDK에 포함하는 방식 등을 통해 사용자 지정 진단 및 제안을 제공할 수 있으며 Visual Studio 전구는 이러한 규칙을 기반으로 켜집니다.
 
 ### <a name="quick-action-icons"></a>빠른 작업 아이콘
-빠른 작업을 사용할 수 있을 때 나타나는 아이콘은 사용 가능한 해결 방법 또는 리팩터링 형식을 나타냅니다. *스크루드라이버*![스크루드라이버 아이콘](media/quick-actions-screwdriver-icon.png) 아이콘은 코드를 변경하는 데 사용할 수 있는 작업이 있음을 나타내지만 반드시 사용해야 하는 것은 아닙니다. *노란색 전구*![전구 아이콘](media/quick-actions-light-bulb-icon.png) 아이콘은 코드 개선을 위해 *해야 하는* 작업이 있음을 나타냅니다. *오류 전구*![오류 전구 아이콘](media/quick-actions-error-light-bulb-icon.png) 아이콘은 코드에서 오류를 수정하는 데 사용할 수 있는 작업이 있음을 나타냅니다.
+빠른 작업을 사용할 수 있을 때 나타나는 아이콘은 사용 가능한 해결 방법 또는 리팩터링 형식을 나타냅니다. *스크루드라이버* ![스크루드라이버 아이콘](media/quick-actions-screwdriver-icon.png) 아이콘은 코드를 변경하는 데 사용할 수 있는 작업이 있음을 나타내지만 반드시 사용해야 하는 것은 아닙니다. *노란색 전구* ![전구 아이콘](media/quick-actions-light-bulb-icon.png) 아이콘은 코드 개선을 위해 *해야 하는* 작업이 있음을 나타냅니다. *오류 전구* ![오류 전구 아이콘](media/quick-actions-error-light-bulb-icon.png) 아이콘은 코드에서 오류를 수정하는 데 사용할 수 있는 작업이 있음을 나타냅니다.
 
 ### <a name="to-see-a-light-bulb-or-screwdriver"></a>전구 또는 스크루드라이버를 표시하려면
 
@@ -65,7 +65,7 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
 ![Option Enter 컨텍스트 항목](media/refactoring-image2a.png)
 
-이러한 옵션을 사용하도록 설정하려면 **Mac용 Visual Studio > 기본 설정 > 텍스트 편집기 > 소스 분석**에서 *열린 파일의 소스 분석 사용*을 선택해야 합니다.
+이러한 옵션을 사용하도록 설정하려면 *Mac용 Visual Studio > 기본 설정 > 텍스트 편집기 > 소스 분석*에서 **열린 파일의 소스 분석 사용**을 선택해야 합니다.
 
 ![소스 분석을 사용하도록 설정](media/refactoring-options.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 'DA0504: 프로파일링 중인 프로세스에 대한 최대 작업 세트(바이트) | Microsoft Docs'
+title: 'DA0504: 프로파일링 중인 프로세스에 대한 최대 작업 집합(바이트) | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a181ecb66c3735eb34ab3c866c3c68b2397781f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779326"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: 프로파일링되고 있는 프로세스의 최대 작업 세트(바이트)
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: 프로파일링 중인 프로세스에 대한 최대 작업 집합(바이트)
 
 |||
 |-|-|
 |규칙 ID|DA0504|
-|범주|리소스 관리|
+|Category|리소스 관리|
 |프로파일링 방법|모두|
 |메시지|이 정보는 참고용으로만 수집됩니다. Process Working Set 카운터는 프로파일링하고 있는 프로세스의 실제 메모리 사용량을 측정합니다. 보고된 값은 모든 측정 간격에서 관찰되는 최대값입니다.|
 |규칙 유형|정보|

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 095fbcf35337ff2a619b6f3dcc6d5c28773ae975
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542648"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77275259"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 설치에 대한 명령줄 매개 변수 예
 
@@ -51,7 +51,7 @@ ms.locfileid: "76542648"
    ```
 
   > [!NOTE]
-  > 두 명령이 모두 필요합니다. 첫 번째 명령은 Visual Studio 설치 관리자를 업데이트합니다. 두 번째 명령은 Visual Studio 인스턴스를 업데이트합니다. [사용자 계정 컨트롤] 대화 상자를 사용하지 않으려면 명령 프롬프트를 관리자 권한으로 실행합니다.
+  > 두 명령 모두 사용하는 것이 좋습니다. 첫 번째 명령은 Visual Studio 설치 관리자를 업데이트합니다. 두 번째 명령은 Visual Studio 인스턴스를 업데이트합니다. [사용자 계정 컨트롤] 대화 상자를 사용하지 않으려면 명령 프롬프트를 관리자 권한으로 실행합니다.
 
 * 제품을 설치해야만 반환되는 프랑스어 언어 팩을 포함한 Visual Studio의 데스크톱 인스턴스를 자동으로 설치합니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "76542648"
 
 ## <a name="using---wait"></a>--wait 사용
 
-* 배치 파일 또는 스크립트에서 다음 명령을 실행하기 전에 Visual Studio 설치 관리자가 완료될 때까지 기다리는 데 사용합니다. 일괄 처리 파일의 경우 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지에 나오는 대로 `%ERRORLEVEL%` 환경 변수가 명령의 반환 값을 포함합니다. 일부 명령 유틸리티는 추가 매개 변수가 있어야 완료될 때까지 기다리고 설치 관리자의 반환 값을 가져올 수 있습니다. 다음은 PowerShell 스크립트 명령 ‘Start-Process’와 함께 사용되는 추가 매개 변수에 대한 예제입니다.
+* 배치 파일 또는 스크립트에서 다음 명령을 실행하기 전에 Visual Studio 설치 관리자가 완료될 때까지 기다리는 데 사용합니다. 일괄 처리 파일의 경우 `%ERRORLEVEL%`명령줄 매개 변수를 사용하여 Visual Studio 설치[ 페이지에 나오는 대로 ](use-command-line-parameters-to-install-visual-studio.md) 환경 변수가 명령의 반환 값을 포함합니다. 일부 명령 유틸리티는 추가 매개 변수가 있어야 완료될 때까지 기다리고 설치 관리자의 반환 값을 가져올 수 있습니다. 다음은 PowerShell 스크립트 명령 ‘Start-Process’와 함께 사용되는 추가 매개 변수에 대한 예제입니다.
 
    ```cmd
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
@@ -221,7 +221,7 @@ ms.locfileid: "76542648"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)

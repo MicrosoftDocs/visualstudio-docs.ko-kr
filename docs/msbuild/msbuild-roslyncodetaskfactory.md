@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585901"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865377"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory를 사용한 MSBuild 인라인 작업
+
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)와 유사하게 RoslynCodeTaskFactory는 플랫폼 간 Roslyn 컴파일러를 사용하여 인라인 작업으로 사용하기 위한 메모리 내 작업 어셈블리를 생성합니다.  RoslynCodeTaskFactory 작업은 .NET Standard를 대상으로 하며 .NET Framework 및 .NET Core 런타임뿐만 아니라 Linux 및 Mac OS와 같은 다른 플랫폼에서도 작업할 수 있습니다.
 
 >[!NOTE]
->RoslynCodeTaskFactory 작업은 MSBuild 15.8 이상에서만 사용할 수 있습니다.
+>RoslynCodeTaskFactory 작업은 MSBuild 15.8 이상에서만 사용할 수 있습니다. MSBuild 버전은 Visual Studio 버전을 따르므로, Visual Studio 15.8 이상에서는 RoslynCodeTaskFactory를 사용할 수 있습니다.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory를 사용한 인라인 작업의 구조
+
  RoslynCodeTaskFactory 인라인 작업은 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)와 동일한 방식으로 선언되며, 유일한 차이점은 .NET Standard를 대상으로 한다는 것입니다.  인라인 작업 및 이 작업을 포함하는 `UsingTask` 요소는 일반적으로 *.targets* 파일에 포함되며 필요할 때 다른 프로젝트 파일로 가져옵니다. 다음은 기본 인라인 작업입니다. 이 작업은 아무 것도 수행하지 않습니다.
 
 ```xml
@@ -68,6 +70,7 @@ ms.locfileid: "75585901"
 > `Task` 요소에 의해 포함된 요소는 작업 팩터리(이 경우 코드 작업 팩터리)마다 고유합니다.
 
 ### <a name="code-element"></a>Code 요소
+
 `Task` 요소 내에 마지막으로 나타나는 자식 요소는 `Code` 요소입니다. `Code` 요소는 작업으로 컴파일하려는 코드를 포함하거나 이러한 코드를 찾습니다. `Code` 요소에 포함하는 내용은 작업을 작성하려는 방법에 따라 다릅니다.
 
 `Language` 특성은 코드가 작성된 언어를 지정합니다. 허용되는 값은 C#의 경우 `cs`, Visual Basic의 경우 `vb`입니다.
@@ -88,6 +91,7 @@ ms.locfileid: "75585901"
 > 소스 파일에서 클래스 이름을 정의할 때 클래스 이름은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소의 `TaskName` 특성에 부합되어야 합니다.
 
 ## <a name="hello-world"></a>Hello World
+
  RoslynCodeTaskFactory를 사용한 보다 강력한 인라인 작업이 있습니다. HelloWorld 작업은 일반적으로 시스템 콘솔 또는 Visual Studio **출력** 창에 해당하는 기본 오류 로깅 디바이스에 "Hello, world!"를 표시합니다. 이 예제의 `Reference` 요소는 단지 설명을 위해 포함되었습니다.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>입력 및 출력 매개 변수
+
  인라인 작업 매개 변수는 `ParameterGroup` 요소의 자식 요소입니다. 모든 매개 변수는 해당 매개 변수를 정의하는 요소의 이름을 사용합니다. 다음 코드는 매개 변수 `Text`를 정의합니다.
 
 ```xml
@@ -159,9 +164,10 @@ Log.LogError("Hello, world!");
 
 - `Tally`는 System.Int32 형식의 출력 매개 변수입니다.
 
-`Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.
+`Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다.  RoslynCodeTaskFactory에서 `Code` 요소에 `Class`의 `Type` 특성이 있는 경우 `ParameterGroup`을 지정할 필요가 없습니다. 소스 코드에서 추론되기 때문입니다(`CodeTaskFactory`와의 차이점). 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.
 
 ## <a name="example"></a>예제
+
  다음 인라인 작업은 일부 메시지를 기록하고 문자열을 반환합니다.
 
 ```xml
@@ -254,5 +260,6 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="see-also"></a>참조
+
 - [작업](../msbuild/msbuild-tasks.md)
 - [연습: 인라인 작업 만들기](../msbuild/walkthrough-creating-an-inline-task.md)

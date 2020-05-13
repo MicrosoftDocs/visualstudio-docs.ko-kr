@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596959"
 ---
 # <a name="quick-actions"></a>빠른 작업
@@ -42,7 +42,7 @@ ms.locfileid: "75596959"
 - 코드 생성(예: [지역 변수 도입](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)을 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)을 참조하세요.
 
 전구![전구 아이콘](media/light-bulb-icon.png) 또는 스크루드라이버![스크루드라이버 아이콘](media/screwdriver-icon.png) 아이콘을 사용하거나 **Ctrl**+**을 눌러 빠른 작업을 적용 할 수 있습니다.** 동작을 사용할 수 있는 코드 줄에 커서가 있는 경우입니다. 오류를 나타내는 빨간 물결무늬가 있는 경우 오류 전구![오류 전구 아이콘](media/error-light-bulb-icon.png)가 표시되고, Visual Studio에는 해당 오류에 사용할 수 있는 수정 사항이 있습니다.
 
@@ -68,7 +68,7 @@ ms.locfileid: "75596959"
 
 ![확장된 전구](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 코드 생성](../ide/code-generation-in-visual-studio.md)
 - [일반적인 빠른 작업](../ide/common-quick-actions.md)

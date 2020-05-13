@@ -12,20 +12,21 @@ helpviewer_keywords:
 - ResourcesGenerator task [WPF MSBuild]
 - ResourcesGenerator task [WPF MSBuild], parameters
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef54bdc3b3c692869b4883cf4f92293551a1958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996767"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632513"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 작업
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스(*.jpg*, *.ico*, *.bmp*, 이진 형식의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
+
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스( *.jpg*, *.ico*, *.bmp*, 이진 형식의 XAML 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
@@ -36,6 +37,7 @@ ms.locfileid: "62996767"
 |`ResourcesFiles`|필수 **ITaskItem[]** 매개 변수입니다.<br /><br /> 생성된 *.resources* 파일에 포함할 하나 이상의 리소스를 지정합니다.|
 
 ## <a name="example"></a>예제
+
  다음 예제에서는 단일 *.bmp* 리소스로 *.resources* 파일을 생성합니다. *.bmp* 리소스는 프로젝트 루트 디렉터리에 상대적인 디렉터리에 생성됩니다.
 
 ```xml
@@ -52,7 +54,8 @@ ms.locfileid: "62996767"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
+
 - [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)
 - [작업 참조](../msbuild/wpf-msbuild-task-reference.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

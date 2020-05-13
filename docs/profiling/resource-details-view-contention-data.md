@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771605"
 ---
 # <a name="resource-details-view---contention-data"></a>리소스 정보 뷰 - 경합 데이터
@@ -25,7 +25,7 @@ ms.locfileid: "74771605"
 
  이 뷰는 각 스레드의 실행 시간 표시 막대를 가로 막대로, 각 차단 이벤트를 스레드 시간 표시 막대의 세로 막대로 나타냅니다. 필요한 경우 시간 표시 막대의 섹션을 확대하여 개별 이벤트를 확인할 수 있습니다. 이벤트를 발생시킨 함수의 실행 경로(호출 스택)를 확인하려면 이벤트 막대를 클릭합니다. 그러면 **호출 스택** 창에 함수가 표시됩니다. 함수의 소스 코드를 사용할 수 있는 경우, 함수 이름을 클릭하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 인터페이스에서 소스 파일을 편집할 수 있습니다.
 
-## <a name="procedures"></a>절차
+## <a name="procedures"></a>프로시저
 
 #### <a name="to-magnify-a-timeline-segment"></a>시간 표시 막대 세그먼트를 확대하려면
 

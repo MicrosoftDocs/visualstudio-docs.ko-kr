@@ -2,7 +2,7 @@
 title: Azure Virtual Machine에서 Visual Studio 사용
 titleSuffix: ''
 description: Azure 가상 머신에서 Visual Studio를 사용하는 방법에 대한 자세한 정보
-ms.date: 12/06/2019
+ms.date: 04/23/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,14 +17,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8daf933292c521bb50d294dff2a380b130a4f2ce
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 6095a3d7d8bfa7a5ee367da2c93d16113a777d0c
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113809"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109483"
 ---
-# <a id="top"> </a> Azure의 Visual Studio 이미지
+# <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure의 Visual Studio 이미지
 
 사전 구성된 Azure VM(가상 머신)에서 Visual Studio를 사용하는 것이 제대로 실행되는 개발 환경을 처음부터 구현하는 쉽고 빠른 방법입니다. 다양한 Visual Studio 구성을 포함하는 시스템 이미지가 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure)에서 제공됩니다.
 
@@ -36,10 +36,10 @@ Azure를 처음 사용하는 경우 [체험 Azure 계정을 만드세요](https:
 
 | 릴리스 버전                                                                                                                                          | 버전              |    제품 버전    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: 최신(버전 16.4)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.4.0    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.9    |
-| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.17   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.27   |
+| [Visual Studio 2019: 최신(버전 16.5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.5.4    |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.13    |
+| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.22   |
+| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.28   |
 | [Visual Studio 2015: 최신(업데이트 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | 버전 14.0.25431.01 |
 
 > [!NOTE]

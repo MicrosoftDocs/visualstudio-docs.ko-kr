@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115183"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>방법: 부하 테스트 결과의 그래프에서 카운터 추가 및 삭제
@@ -71,18 +71,18 @@ ms.locfileid: "76115183"
 
 5. 그래프에서 성능 카운터 데이터를 제거하려면 범례의 **카운터** 열에서 성능 카운터를 마우스 오른쪽 단추로 클릭하고 **삭제**를 선택합니다.
 
-     \- 또는 -
+     \- 또는-
 
      그래프에서 데이터 줄을 마우스 오른쪽 단추로 클릭한 다음, **삭제**를 선택합니다.
 
-     \- 또는 -
+     \- 또는-
 
      범례의 **카운터** 열에서 성능 카운터를 선택하거나 그래프의 데이터 줄을 선택한 다음, **Delete** 키를 누릅니다.
 
     > [!NOTE]
     > **범례에 카운터 표시** 명령을 사용하여 성능 카운터를 범례에만 표시하고 그래프에는 표시하지 않도록 선택할 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)

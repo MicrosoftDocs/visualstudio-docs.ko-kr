@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568141"
 ---
 # <a name="options-text-editor-xml-formatting"></a>옵션, 텍스트 편집기, XML, 서식 지정
@@ -23,14 +23,14 @@ ms.locfileid: "75568141"
 
 **수동으로 지정한 특성 서식 유지**
 
-특성 서식을 다시 지정하지 않습니다. 이 설정이 기본값입니다.
+특성 서식을 다시 설정하지 마십시오. 이 설정은 기본값입니다.
 
 > [!NOTE]
-> 특성이 여러 줄에 있을 경우 편집기는 부모 요소의 들여쓰기와 일치하도록 각 특성 줄을 들여씁니다.
+> 특성이 여러 줄로 된 경우 편집기에서 상위 요소의 들여쓰기에 맞게 특성의 각 줄을 들여씁니다.
 
 **별도의 줄에 특성 맞춤**
 
-첫 번째 특성의 들여쓰기와 일치하도록 두 번째 특성 및 그 이후 특성을 세로로 정렬합니다. 다음 XML 텍스트는 특성을 정렬하는 방법의 예제입니다.
+첫 번째 특성의 들여쓰기에 맞게 두 번째 및 이후의 특성을 세로로 정렬합니다. 다음 XML 텍스트는 특성을 정렬하는 방법의 예제입니다.
 
 ```xml
 <item id = "123-A"
@@ -39,23 +39,23 @@ ms.locfileid: "75568141"
 </item>
 ```
 
-## <a name="auto-reformat"></a>자동 서식 다시 지정
+## <a name="auto-reformat"></a>자동 서식 다시 설정
 
 **클립보드에서 붙여 넣을 때**
 
-클립보드에서 붙여넣은 XML 텍스트의 서식을 다시 지정합니다.
+클립보드에서 붙여 넣은 XML 텍스트 서식을 다시 설정합니다.
 
 **끝 태그 완료 시**
 
-끝 태그가 완료될 때 요소의 서식을 다시 지정합니다.
+끝 태그가 완료될 때 요소 서식을 다시 설정합니다.
 
-## <a name="mixed-content"></a>혼합 내용
+## <a name="mixed-content"></a>혼합된 콘텐츠
 
 **기본값으로 혼합 콘텐츠 서식 지정**
 
-콘텐츠가 `xml:space="preserve"` 범위에 있는 경우를 제외하고 혼합 콘텐츠의 서식을 다시 지정하려고 시도합니다. 이 설정이 기본값입니다.
+`xml:space="preserve"` 범위에 콘텐츠가 있을 때를 제외하고 혼합된 콘텐츠 서식을 다시 설정하려고 합니다. 이 설정은 기본값입니다.
 
-요소에 텍스트와 태그가 혼합되어 있는 경우 이 내용은 혼합 내용으로 간주됩니다. 혼합 콘텐츠가 포함된 요소의 예제는 다음과 같습니다.
+요소에 텍스트와 마크업이 혼합되어 있으면 콘텐츠가 혼합된 콘텐츠로 간주됩니다. 다음은 혼합된 콘텐츠가 있는 요소의 예입니다.
 
 ```xml
 <dir>c:\data\AlphaProject\
@@ -64,7 +64,7 @@ ms.locfileid: "75568141"
 </dir>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [XML 옵션 - 기타](options-text-editor-xml-miscellaneous.md)
 - [Visual Studio의 XML 도구](../../xml-tools/xml-tools-in-visual-studio.md)

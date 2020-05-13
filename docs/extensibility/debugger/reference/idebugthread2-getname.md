@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetName | Microsoft Docs
+title: IDebugThread2::GetName | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetName
 ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6b57aac800027a4a591c3ea683761e19a31462c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9d4828b573585969154f2ad1d484c9fcdf767417
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320221"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718764"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 스레드의 이름을 가져옵니다.
@@ -41,14 +41,14 @@ int GetName ( 
 
 ## <a name="parameters"></a>매개 변수
 `pbstrName`\
-[out] 스레드의 이름을 반환합니다.
+【아웃】 스레드의 이름을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 검색 이름은 항상 표시 될 수 있는 이름 및 스레드 하는이 이름에 설명 합니다. 스레드 이름 명명 된 스레드를 지원 하거나 디버그 엔진에서 파생 된 이름 수 있습니다는 런타임 아키텍처를에서 파생 될 수 있습니다. 호출 하 여 스레드의 이름을 설정할 수 있습니다 또는 합니다 [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) 메서드.
+ 검색된 이름은 항상 표시할 수 있는 이름이며 이 이름은 스레드를 설명합니다. 스레드 이름은 명명된 스레드를 지원하는 런타임 아키텍처에서 파생되거나 디버그 엔진에서 파생된 이름일 수 있습니다. 또는 [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) 메서드에 대 한 호출에 의해 스레드의 이름을 설정할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

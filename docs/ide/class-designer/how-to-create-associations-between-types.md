@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590386"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 연결 만들기
@@ -54,6 +54,6 @@ ms.locfileid: "75590386"
 
    **클래스 세부 내용** 창, 형식 연결 선, **속성** 창 및 코드에서 이름이 업데이트됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 멤버 표시와 연결 표시 간 변경](how-to-change-between-member-notation-and-association-notation.md)

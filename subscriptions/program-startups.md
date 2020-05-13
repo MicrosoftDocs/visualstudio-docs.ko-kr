@@ -3,15 +3,16 @@ title: Microsoft for Startups 프로그램을 통해 신생 기업에 제공된 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: 구독에 대한 세부 사항은 Microsoft for Startups 프로그램을 통해 제공됩니다.
-ms.openlocfilehash: 087fb820687063c22e98b34b0c3cd2292fb9a35b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605746"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233250"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>신생 기업에 제공된 Visual Studio 구독
 Microsoft for Startups 프로그램에 가입하는 정규화된 신생 기업은 5개의 Visual Studio Enterprise [월별 클라우드 구독](https://visualstudio.microsoft.com/vs/pricing/)을 얻을 수 있습니다. 
@@ -38,6 +39,12 @@ A: Visual Studio 클라우드 구독을 취소할 경우 자동 갱신을 취소
 월간 클라우드 구독의 경우 취소는 다음 달의 첫째 날에 효력을 발휘합니다. 월간 클라우드 구독의 일부만 취소하는 경우 올바른 사용자가 활성화된 구독을 계속 할당받을 수 있도록 다음 달의 첫째 날에 취소한 사용자를 제거해야 합니다.
 
 연간 클라우드 구독의 경우 취소는 원래 구매에서 12개월 또는 지난 연간 갱신 요금 청구로부터 12개월 다음 달의 첫째 날에 효력을 발휘합니다. 예를 들어 2018년 1월 3일에 Visual Studio Professional 연간 클라우드 구독을 구입한 경우 다음 해로 자동 갱신되는 2019년 2월 1일까지는 활성화를 유지합니다. 구입 당시와 2020년 2월 1일 사이에 언제든 취소하는 경우 해당 구독은 2020년 2월 1일에 만료됩니다. 연간 클라우드 구독의 경우 구독 한 해 동안 일부 취소에 대한 환불은 없습니다.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 [Microsoft for Startups에 대한 자세한 정보](https://startups.microsoft.com)

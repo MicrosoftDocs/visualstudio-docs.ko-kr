@@ -1,5 +1,5 @@
 ---
-title: 프로젝트에서 파일을 엽니다는 편집기 결정 | Microsoft Docs
+title: 프로젝트에서 파일을 여는 편집기 결정 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,38 +8,38 @@ helpviewer_keywords:
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e54a922cfa36aad8c8c7e68e87012926a8ab715
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708650"
 ---
-# <a name="determine-which-editor-opens-a-file-in-a-project"></a>프로젝트에서 파일을 엽니다는 편집기 결정
-사용자의 프로젝트에서 파일을 열면 환경 최종적으로 적절 한 편집기를 열거나 해당 파일에 대 한 디자이너는 폴링 프로세스를 진행 합니다. 환경에서 사용 되는 초기 절차 표준 및 사용자 지정 편집기에 대해 동일 합니다. 파일 열기를 사용 하는 편집기를 폴링할 때이 환경에서는 다양 한 조건 및 VSPackage이이 프로세스 중 환경과 조정 해야 합니다.
+# <a name="determine-which-editor-opens-a-file-in-a-project"></a>프로젝트에서 파일을 여는 편집기 결정
+사용자가 프로젝트에서 파일을 열면 환경은 폴링 프로세스를 거치게 되어 결국 해당 파일에 대한 적절한 편집기 또는 디자이너를 엽니다. 환경에서 사용하는 초기 절차는 표준 편집기와 사용자 지정 편집기 모두에서 동일합니다. 환경은 파일을 여는 데 사용할 편집기를 폴링할 때 다양한 기준을 사용하며 VSPackage는 이 프로세스 중에 환경과 조정해야 합니다.
 
- 사용자 선택 하면 예를 들어 합니다 **열기** 명령을 **파일** 메뉴에서 후 선택 *filename.rtf* (또는 사용 하 여 다른 파일을 *.rtf*확장), 환경은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> 최종적으로 솔루션의 모든 프로젝트 인스턴스를 순환 하는 각 프로젝트에 대해 구현 합니다. 프로젝트에는 우선 순위에 따라 문서에 대 한 클레임을 식별 하는 플래그 집합을 반환 합니다. 가장 높은 우선 순위를 사용 하 여, 환경이 적절 한 호출. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> 메서드. 폴링 프로세스에 대 한 자세한 내용은 참조 하세요. [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md)합니다.
+ 예를 들어 사용자가 **파일** 메뉴에서 **열기** 명령을 선택한 다음 *filename.rtf(또는* *.rtf* 확장자가 있는 다른 파일)를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> 선택하면 환경이 각 프로젝트에 대한 구현을 호출하여 결국 솔루션의 모든 프로젝트 인스턴스를 순환합니다. 프로젝트는 우선 순위에 따라 문서의 클레임을 식별하는 플래그 집합을 반환합니다. 가장 높은 우선 순위를 사용하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> 환경은 적절한 메서드를 호출합니다. 폴링 프로세스에 대한 자세한 내용은 [프로젝트 및 프로젝트 항목 템플릿 추가를](../../extensibility/internals/adding-project-and-project-item-templates.md)참조하십시오.
 
- 기타 파일 프로젝트에는 모든 파일을 다른 프로젝트에서 요구 하지는 클레임입니다. 이 이렇게 하면 사용자 지정 편집기 문서를 열고 하 수 표준 편집기 열기 전에 합니다. 환경을 호출 하는 기타 파일 프로젝트 파일을 클레임 하는 경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드를 표준 편집기를 사용 하 여 파일을 엽니다. 환경 처리 하는 하나에 대해 등록 된 편집기의 내부 목록을 검사 *.rtf* 파일입니다. 이 목록은 레지스트리에서 다음 키:
+ 기타 파일 프로젝트는 다른 프로젝트에서 주장하지 않는 모든 파일을 클레임합니다. 이렇게 하면 사용자 지정 편집자는 표준 편집기에서 문서를 열기 전에 문서를 열 수 있습니다. 기타 파일 프로젝트가 파일을 클레임하는 경우 환경은 표준 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 편집기로 파일을 여는 메서드를 호출합니다. 환경은 *.rtf* 파일을 처리하는 편집기의 내부 목록을 확인합니다. 이 목록은 다음 키의 레지스트리에 있습니다.
 
- **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\\<버전 > \Editors\\\<편집기 팩터리의 guid > \Extensions**
+ **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\\<버전>\편집자\\\<편집자 공장 guid>\확장**
 
- 환경도 클래스 식별자를 확인 합니다 **HKEY_CLASSES_ROOT\CLSID** 하위 키가 있는 모든 개체에 대 한 키 **DocObject**합니다. 파일 확장명을 찾을 수 없으면, Microsoft Word와 같은 응용 프로그램의 임베디드 버전이 Visual Studio에서 전체 만들어집니다. 이러한 문서 개체를 구현 하는 복합 파일 이어야 합니다는 <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> 인터페이스 또는 개체를 구현 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> 인터페이스입니다.
+ 또한 환경은 하위 **키 DocObject**가 있는 개체에 대해 **HKEY_CLASSES_ROOT\CLSID** 키의 클래스 식별자를 검사합니다. 파일 확장명이 발견되면 Microsoft Word와 같은 응용 프로그램의 임베디드 버전이 Visual Studio에서 만들어집니다. 이러한 문서 개체는 인터페이스를 <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> 구현하는 복합 파일이거나 개체가 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> 구현해야 합니다.
 
- 에 대 한 편집기 팩터리 없는 경우 *.rtf* 환경에서 검색 한 다음 레지스트리에서 파일을 **HKEY_CLASSES_ROOT\\.rtf** 키를 지정 된 편집기가 열립니다. 파일 확장명에 없으면 **HKEY_CLASSES_ROOT**, 텍스트 파일인 경우 환경 파일을 열려면 Visual Studio 핵심 텍스트 편집기를 사용 합니다.
+ 레지스트리에 *.rtf* 파일에 대한 편집기 팩터기가 없는 경우 환경은 **HKEY_CLASSES_ROOT\\.rtf** 키에서 보이며 지정된 편집기가 열립니다. **HKEY_CLASSES_ROOT**파일 확장명이 없는 경우 환경은 Visual Studio 핵심 텍스트 편집기를 사용하여 텍스트 파일인 경우 파일을 엽니다.
 
- 핵심 텍스트 편집기에 실패 하면 파일이 텍스트 파일로 없으면 다음 환경을 사용 하 여 해당 바이너리 편집기 파일에 대 한 발생 하는 합니다.
+ 파일이 텍스트 파일이 아닌 경우 발생하는 핵심 텍스트 편집기에서 오류가 발생하면 환경은 파일에 이진 편집기(이진 편집기)를 사용합니다.
 
- 환경에 대 한 편집기를 찾지 경우 합니다 *.rtf* 이 편집기 팩터리를 구현 하는 VSPackage 로드 해당 레지스트리에 확장 합니다. 환경은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 새 VSPackage 메서드. 호출 하 여 VSPackage `QueryService` 에 대 한 `SID_SVsRegistorEditor`를 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> 환경과 편집기 팩터리를 등록 하는 방법입니다.
+ 환경이 레지스트리에서 *.rtf* 확장에 대한 편집을 찾으면 이 편집기 팩터리를 구현하는 VSPackage를 로드합니다. 환경은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 새 VSPackage에서 메서드를 호출합니다. VSPackage는 `QueryService` 메서드를 `SID_SVsRegistorEditor` <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> 사용하여 편집기 팩터리를 환경에 등록해야 합니다.
 
- 환경에는 이제 등록된에 대 한 새로 등록 된 편집기 팩터리를 찾을 편집기의 내부 목록을 재확인 *.rtf* 파일입니다. 환경 구현의 호출 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 메서드를 만들려면 뷰 형식과 파일 이름을 전달 합니다.
+ 이제 환경은 *.rtf* 파일에 대해 새로 등록된 편집기 팩터리를 찾기 위해 등록된 편집기의 내부 목록을 다시 확인합니다. 환경은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 만들 파일 이름 및 보기 형식을 전달하여 메서드의 구현을 호출합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>
 - <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>

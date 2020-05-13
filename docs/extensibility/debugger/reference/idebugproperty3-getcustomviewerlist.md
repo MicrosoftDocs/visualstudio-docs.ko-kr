@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
+title: 아이디버그프로퍼퍼3::GetCustom뷰어리스트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348865"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721167"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-이 속성과 연결 된 사용자 지정 뷰어에 목록을 가져옵니다.
+이 속성과 연결된 사용자 지정 뷰어 목록을 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,27 +47,27 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>매개 변수
 `celtSkip`\
-[in] 보기 권한자를 건너뛸 수입니다.
+【인】 건너뛸 시청자 수입니다.
 
 `celtRequested`\
-[in] 검색할 검토자 수 (도의 크기를 지정 합니다 `rgViewers` 배열)입니다.
+【인】 검색할 뷰어 `rgViewers` 수(배열 크기도 지정).
 
 `rgViewers`\
-[out에서] 배열을 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 구조를 채울 수 있습니다.
+【인, 아웃】 채울 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 구조의 배열.
 
 `pceltFetched`\
-[out] 뷰어 실제 수를 반환 합니다.
+【아웃】 실제 시청자 수가 반환되었습니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
-형식 시각화 도우미를 지원 하려면이 메서드는 호출을 전달 합니다 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 메서드. 식 계산기는이 속성의이 형식에 대 한 사용자 지정 뷰어도 지원,이 메서드는 목록에 적절 한 사용자 지정 뷰어를 추가할 수 있습니다.
+형식 시각화 도우미를 지원 하기 위해이 메서드는 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 메서드에 호출을 전달 합니다. 식 계산기에서 이 속성의 형식에 대한 사용자 지정 뷰어도 지원하는 경우 이 메서드는 적절한 사용자 지정 뷰어를 목록에 추가할 수 있습니다.
 
-참조 [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 형식 시각화 도우미 및 사용자 지정 뷰어 간의 차이점에 대 한 자세한 내용은 합니다.
+[유형 시각화 도우미와 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 간의 차이점에 대한 자세한 내용은 유형 시각화 도우미 및 사용자 지정 뷰어를 참조하세요.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 노출 하는 개체를 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.
+다음 예제에서는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 노출 하는 **CProperty** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)
@@ -88,7 +88,7 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

@@ -12,19 +12,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0f49925211247e346ac3203de20a97496c54295d
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569077"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444806"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>방법: 편집기에서 자동 줄 바꿈 관리
 
 **자동 줄 바꿈** 옵션을 설정 및 선택 취소할 수 있습니다. 이 옵션을 설정하면 코드 편집기 창의 현재 너비를 벗어나는 긴 줄의 해당 부분이 다음 줄에 표시됩니다. 예를 들어 줄 번호 매기기를 쉽게 사용하기 위해 이 옵션의 선택을 취소한 경우에는 오른쪽으로 스크롤하여 긴 줄의 끝을 확인할 수 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows에서 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 현재 자동 줄 바꿈을 지원하지 않습니다.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio의 경우 [소스 편집기: 단어 줄 바꿈](/visualstudio/mac/source-editor#word-wrap)을 참조하세요.
 
 ## <a name="to-set-word-wrap-preferences"></a>자동 줄 바꿈 기본 설정을 설정하려면
 
@@ -50,7 +50,6 @@ ms.locfileid: "75569077"
 Notepad++, Sublime Text 또는 Visual Studio Code에서 자동 줄 바꿈에 익숙한 경우 Visual Studio가 다른 편집기에 대해 다르게 동작하는 다음 문제에 유의하세요.
 
 * [세 번 클릭해도 전체 줄을 선택하지 않습니다.](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [Cut 명령이 전체 줄을 삭제하지 않습니다.](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
 * [End 키를 두 번 눌러서 커서를 줄 끝으로 이동하지 않습니다.](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>참조

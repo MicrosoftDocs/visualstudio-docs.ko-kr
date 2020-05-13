@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591998"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio에서 양방향 언어에 대한 지원
@@ -56,7 +56,7 @@ Visual Studio는 유니코드를 지원하므로 시스템이 적절한 로캘 �
 
 - 특성 및 메타데이터.
 
-- 속성 값.
+- 속성 값
 
    **속성** 창에서 아랍어 또는 히브리어 텍스트를 사용할 수 있습니다. 이 창에서 표준 Windows 키 입력(오른쪽에서 왼쪽의 경우 **Ctrl**+**RightShift**, 왼쪽에서 오른쪽의 경우 **Ctrl**+**LeftShift**)을 사용하여 오른쪽에서 왼쪽 순서와 왼쪽에서 오른쪽 순서 간에 전환할 수 있습니다.
 
@@ -86,6 +86,6 @@ Visual Studio에서 다음 경우에는 오른쪽에서 왼쪽 읽기 순서가 
 
 - 코드 편집기(및 텍스트 편집기)는 오른쪽에서 왼쪽 읽기 순서를 지원하지 않습니다. 양방향 언어로 텍스트를 입력할 수 있지만 읽기 순서는 항상 왼쪽에서 오른쪽입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [세계화 및 지역화된 앱 개발](globalizing-and-localizing-applications.md)

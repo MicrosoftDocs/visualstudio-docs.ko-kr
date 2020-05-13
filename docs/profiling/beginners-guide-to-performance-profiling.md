@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128298"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638781"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 사용량을 분석하여 애플리케이션 성능 측정
 
-Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 이 절차에서는 진단 도구의 **CPU 사용량** 탭을 사용하여 앱의 성능 데이터를 가져오는 방법을 보여 줍니다.
+Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 이 문서에서는 진단 도구의 **CPU 사용량** 탭을 사용하여 앱의 성능 데이터를 가져오는 방법을 보여 줍니다.
 
 디버거가 일시 중지되면 **CPU 사용량** 도구는 애플리케이션에서 실행되는 함수에 대한 정보를 지정된 간격으로 수집합니다. 또한 이 도구에는 작업을 수행하는 함수가 표시되고 샘플링 세션의 특정 세그먼트를 집중적으로 확인할 수 있는 타임라인 그래프도 표시됩니다.
 
@@ -35,11 +35,11 @@ Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성�
 > [!Important]
 > 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
 
-이 문서에서는 일반적인 디버깅 워크플로에서의 CPU 사용량 분석에 대해 설명합니다. 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석할 수도 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)을 참조하세요.
+이 문서에서는 일반적인 디버깅 워크플로에서의 CPU 사용량 분석에 대해 설명합니다. 디버거를 연결하지 않고, 또는 실행 중인 앱을 대상으로 하여 CPU 사용량을 분석할 수도 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 또 다른 프로파일링 도구인 [PerfTips](../profiling/perftips.md)를 사용하여 코드를 단계별로 실행하며 특정 함수나 코드 블록이 완료되는 데 소요되는 시간을 확인할 수 있습니다.
 
 Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
-이 자습서에서는 다음을 수행합니다.
+이 자습서에서 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * CPU 사용량 데이터 수집
@@ -51,8 +51,7 @@ Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 
 
 2. 분석할 함수 또는 코드 영역 끝에 두 번째 중단점을 설정합니다.
 
-    > [!TIP]
-    > 두 개의 중단점을 설정하여, 분석하려는 코드 부분으로 데이터 수집을 제한할 수 있습니다.
+    두 개의 중단점을 설정하여, 분석하려는 코드 부분으로 데이터 수집을 제한할 수 있습니다.
 
 3. 끄지 않았다면 **진단 도구** 가 자동으로 나타납니다. 창을 다시 표시하려면 **디버그** > **Windows** > **진단 도구 표시**를 클릭합니다.
 
@@ -96,6 +95,9 @@ Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 
 
      이 시점에서 데이터 분석을 시작할 수 있습니다.
 
+     > [!TIP]
+     >  성능 문제를 조사할 때는 측정을 여러 번 진행하세요. 성능은 본질적으로 각 실행마다 다르게 나타나며 코드 경로는 보통 DLL 로드, JIT 컴파일 메서드, 캐시 초기화와 같은 일회성 초기화 작업으로 인해 처음 실행될 때 가장 느리게 실행됩니다. 측정을 여러 번 진행하면 조사하려는 메트릭의 범위와 중앙값을 더 잘 파악하여 해당 코드 영역의 첫 번째 실행 성능과 정상 상태 성능을 비교할 수 있습니다.
+
 ## <a name="step-2-analyze-cpu-usage-data"></a>2단계: CPU 사용량 데이터 분석
 
 CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 수행하는 함수를 확인한 다음, 각 함수를 자세히 살펴보는 방식으로 데이터 분석을 시작하는 것이 좋습니다.
@@ -111,7 +113,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
     함수를 두 번 클릭하면 **호출자/호출 수신자** 뷰가 왼쪽 창에 열립니다.
 
-    ![진단 도구 호출자 호출 수신자 뷰](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
+    ![진단 도구 호출자/호출 수신자 뷰](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
     이 뷰에서는 선택한 함수가 제목 및 **현재 함수** 상자에 표시됩니다(이 예제의 경우 GetNumber). 현재 함수를 호출한 함수는 **호출 함수** 아래 왼쪽에 표시되고, 현재 함수에 의해 호출된 함수는 오른쪽의 **호출된 함수** 상자에 표시됩니다. 두 상자 중 하나를 선택하여 현재 함수를 변경할 수 있습니다.
 

@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 282bb801625429d639e625a0a5edb02a8fb4da25
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777987"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -90,5 +90,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:** [*columnname*]|이 특정 열 비교 값을 사용합니다. 기본값은 전용 샘플 백분율 열입니다.|
 |**QueryDiffTables**|제공한 두 보고서 파일의 올바른 테이블 및 열을 나열합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [성능 보고서 뷰](../profiling/performance-report-views.md)

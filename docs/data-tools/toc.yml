@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Entity Framework 도구
       href: entity-data-model-tools-in-visual-studio.md
-    - name: 데이터 세트
+    - name: DataSets
       items:
         - name: 데이터 세트 도구
           href: dataset-tools-in-visual-studio.md
@@ -38,7 +38,7 @@
   items:
     - name: 데이터베이스 만들기
       href: create-a-sql-database-by-using-a-designer.md
-    - name: 연결
+    - name: Connections
       items:
         - name: 연결 추가
           href: add-new-connections.md

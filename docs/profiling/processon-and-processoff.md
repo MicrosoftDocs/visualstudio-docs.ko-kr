@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778390"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 및 ProcessOff
@@ -57,7 +57,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
  {**ThreadOff**&#124;**ThreadOn**} **:** `TID` 지정된 스레드에 대한 프로파일링을 중지 또는 시작합니다(계측 방법만 해당).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서 **ProcessOff** 하위 명령은 애플리케이션 시작에 대한 프로파일링 데이터를 수집하는 데 사용됩니다.
 
 ```cmd
@@ -72,7 +72,7 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

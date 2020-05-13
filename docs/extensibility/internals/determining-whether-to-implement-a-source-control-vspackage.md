@@ -1,40 +1,40 @@
 ---
-title: 소스 제어 VSPackage를 구현할지 여부 결정 | Microsoft Docs
+title: 소스 제어 VS패키지 구현 여부 결정 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba0ac240c8b8a93b6afbf1ec7dd580090ee54fd9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8707f3c1ced1cc2df9d3ae77280fc8779874a837
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351617"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708716"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage를 구현할지 여부 결정
-이 섹션에서는 소스 제어 통합 적합 한 경로 선택 하는 방법에 대 한 솔루션을 사용 하면 광범위 한 지침을 확장 하는 것에 대 한 원본 제어 플러그 인 및 소스 제어 Vspackage의 선택 항목을 설명 합니다.
+이 섹션에서는 소스 제어 솔루션을 확장하기 위한 소스 제어 플러그인 및 소스 제어 VSPackage의 선택에 대해 자세히 설명하며 적합한 통합 경로 선택에 대한 광범위한 지침을 제공합니다.
 
-## <a name="small-source-control-solution-with-limited-resources"></a>제한 된 리소스를 사용 하 여 작은 소스 제어 솔루션
- 리소스 제한 하 고 소스 제어 패키지를 작성 하는 오버 헤드를 사용 하 여 부담이 될 수 없습니다. 소스 제어 플러그 인 API 기반 플러그 인을 만들 수 있습니다. 이렇게 하면 소스 제어 패키지와 함께 작동 하 고 원본 제어 플러그 인 및 주문형 패키지 간에 전환할 수 있습니다. 자세한 내용은 [등록과 선택](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)합니다.
+## <a name="small-source-control-solution-with-limited-resources"></a>제한된 리소스를 갖춘 소규모 소스 제어 솔루션
+ 리소스가 제한되어 있고 소스 제어 패키지를 작성하는 오버헤드에 부담을 주지 않는 경우 소스 제어 플러그인 API 기반 플러그인을 만들 수 있습니다. 자세한 내용은 [등록 및 선택을](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)참조하십시오.
 
-## <a name="large-source-control-solution-with-a-rich-feature-set"></a>다양 한 기능 집합을 사용 하 여 큰 소스 제어 솔루션
- 원본 제어 플러그 인 API를 사용 하 여 적절 하 게 캡처하지 않은 다양 한 원본 제어 모델이 제공 하는 원본 제어 솔루션을 구현 하려는 경우 통합 경로로 소스 제어 패키지를 고려할 수 있습니다. 적용 됩니다 (원본 제어 플러그 인을 사용 하 여 통신를 제공 하는 UI를 기본 원본 제어) 소스 제어 어댑터 패키지는 대신 대체 하는 경우에 특히 사용자 고유의 사용자 지정 방식으로 원본 제어 이벤트를 처리할 수 있도록 합니다. UI를 제어 하 고 해당 환경에서 유지 하려는 만족 스러운 원본에 이미 있는 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 소스 제어 패키지 옵션을 사용 하는 작업을 수행할 수 있습니다. 소스 제어 패키지 제네릭이 아닌 및 사용 하 여 사용 하기 위해서 설계 되었습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
+## <a name="large-source-control-solution-with-a-rich-feature-set"></a>풍부한 기능 세트를 갖춘 대형 소스 제어 솔루션
+ 소스 제어 플러그인 API를 사용하여 적절히 캡처되지 않은 풍부한 소스 제어 모델을 제공하는 소스 제어 솔루션을 구현하려는 경우 소스 제어 패키지를 통합 경로로 간주할 수 있습니다. 이는 소스 제어 어댑터 패키지(소스 제어 플러그인과 통신하고 기본 소스 제어 UI를 제공함)를 사용자 지정 방식으로 소스 제어 이벤트를 처리할 수 있도록 사용자 고유의 로 대체하는 경우에 특히 적용됩니다. 이미 만족스러운 소스 제어 UI가 있고 해당 환경을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]유지하려는 경우 소스 제어 패키지 옵션을 사용하면 이 작업을 수행할 수 있습니다. 소스 제어 패키지는 일반 패키지가 아니며 IDE와 함께 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용하도록만 설계되었습니다.
 
- 유연성 및 원본 제어 논리 및 UI를 통해 다양 한 제어를 제공 하는 원본 제어 솔루션을 구현 하려는 경우 원본 제어 패키지 통합 경로 수도 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
+ 소스 제어 논리 및 UI에 대한 유연성과 보다 풍부한 제어를 제공하는 소스 제어 솔루션을 구현하려는 경우 소스 제어 패키지 통합 경로를 선호할 수 있습니다. 다음을 수행할 수 있습니다.
 
-1. 사용자 고유의 소스 제어 VSPackage를 등록 (참조 [등록과 선택](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
+1. 자신의 소스 제어 VSPackage를 등록하십시오(등록 [및 선택](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)참조).
 
-2. 사용자 지정 UI를 사용 하 여 UI의 기본 소스 제어를 바꿉니다 (참조 [사용자 지정 사용자 인터페이스](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).
+2. 기본 소스 제어 UI를 사용자 지정 UI로 바꿉니다(사용자 [지정 사용자 인터페이스](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)참조).
 
-3. 사용 되 고 솔루션 탐색기 문자 모양 이벤트를 처리할 문자 모양을 지정 (참조 [문자 모양 제어](../../extensibility/internals/glyph-control-source-control-vspackage.md)).
+3. 사용할 글리프를 지정하고 솔루션 탐색기 글리프 이벤트를 [처리합니다(글리프 컨트롤](../../extensibility/internals/glyph-control-source-control-vspackage.md)참조).
 
-4. 쿼리 편집 하 고 쿼리를 저장 하는 이벤트 처리 (참조 [쿼리 편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
+4. 쿼리 편집 및 쿼리 저장 이벤트를 처리합니다(쿼리 [편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)참조).
 
-## <a name="see-also"></a>참고자료
-- [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)
+## <a name="see-also"></a>참조
+- [소스 제어 플러그인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS | Microsoft Docs
+title: THREADPROPERTY_FIELDS | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9da7b995826b905af7faf6cac3fa0fc3d5ceba5e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316201"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713407"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
-스레드에 대 한 정보를 검색할 수를 지정 합니다.
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
+스레드에 대한 정보를 검색할 내용을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,41 +54,41 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
 ## <a name="fields"></a>필드
  `TPF_ID`\
- 초기화/사용 된 `dwThreadId` 필드를 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조입니다.
+ [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조의 `dwThreadId` 필드를 초기화/사용합니다.
 
  `TPF_SUSPENDCOUNT`\
- 초기화/사용 합니다 `dwSuspendCount` 필드는 `THREADPROPERTIE`S 구조입니다.
+ `THREADPROPERTIE`S 구조의 `dwSuspendCount` 필드를 초기화/사용합니다.
 
  `TPF_STATE`\
- 초기화/사용 합니다 `dwThreadState` 필드는 `THREADPROPERTIE`S 구조입니다.
+ `THREADPROPERTIE`S 구조의 `dwThreadState` 필드를 초기화/사용합니다.
 
  `TPF_PRIORITY`\
- 초기화/사용 합니다 `bstrPriority` 필드는 `THREADPROPERTIE`S 구조입니다.
+ `THREADPROPERTIE`S 구조의 `bstrPriority` 필드를 초기화/사용합니다.
 
  `TPF_NAME`\
- 초기화/사용 합니다 `bstrName` 필드는 `THREADPROPERTIE`S 구조입니다.
+ `THREADPROPERTIE`S 구조의 `bstrName` 필드를 초기화/사용합니다.
 
  `TPF_LOCATION`\
- 초기화/사용 합니다 `bstrLocation` 필드는 `THREADPROPERTIE`S 구조입니다.
+ `THREADPROPERTIE`S 구조의 `bstrLocation` 필드를 초기화/사용합니다.
 
  `TPF_ALLFIELDS`\
  모든 필드를 지정합니다.
 
 ## <a name="remarks"></a>설명
- 이러한 값을 인수로 전달 됩니다는 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 의 필드를 나타내려면 메서드는 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조는 초기화할 합니다.
+ 이러한 값은 [ThreadProperties](../../../extensibility/debugger/reference/threadproperties.md) 구조의 필드를 초기화할 필드를 나타내기 위해 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 메서드에 인수로 전달됩니다.
 
- 이러한 값에도 사용 됩니다 `dwFields` 의 멤버는 `THREADPROPERTIES` 에 유효 하 고 사용 되는 필드는 구조체.
+ 이러한 값은 구조의 `dwFields` `THREADPROPERTIES` 구성원에서 사용되는 필드와 유효한 필드를 나타내는 데도 사용됩니다.
 
- 이러한 플래그는 비트과 결합 될 수 `OR`입니다.
+ 이러한 플래그는 약간 으로 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

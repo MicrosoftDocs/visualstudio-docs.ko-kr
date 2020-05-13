@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589801"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>게임 및 앱을 위한 3D 자산 작업
@@ -54,7 +54,7 @@ Visual Studio는 DirectX를 사용하여 2D 및 3D 자산을 렌더링합니다.
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[질감 및 이미지 작업](../designers/working-with-textures-and-images.md)|Visual Studio를 사용하여 이미지와 질감을 사용하는 방법을 설명합니다.|
 |[3D 모델 작업](../designers/working-with-3-d-models.md)|Visual Studio를 사용하여 3D 모델을 작업하는 방법을 설명합니다.|

@@ -1,30 +1,30 @@
 ---
-title: TASK_STATE_CANCELED 필드 | Microsoft Docs
+title: TASK_STATE_CANCELED 필드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e8b2906c2a8061a7153533036fcab7de82ca1d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d59335a418febef45ebe35d4590c72b486921639
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348400"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712754"
 ---
-# <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED 필드
-작업 실행 상태에 도달 하거나 해당 취소를 확인 하 고 예외 없이 완료 전에 취소 되었습니다.
+# <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED 필드
+작업이 실행 상태에 도달하기 전에 취소되거나 취소를 확인하여 예외 없이 완료되었습니다.
 
- **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **어셈블리:** mscorlib (mscorlib.dll)
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ ms.locfileid: "66348400"
 ```
 
 ## <a name="remarks"></a>설명
- 경우는 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 이 값을 포함 하는 필드를 <xref:System.Threading.Tasks.Task.Status%2A> 속성에서 반환 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>합니다.
+ [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에 이 값이 포함되어 <xref:System.Threading.Tasks.Task.Status%2A> 있으면 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>속성이 반환됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

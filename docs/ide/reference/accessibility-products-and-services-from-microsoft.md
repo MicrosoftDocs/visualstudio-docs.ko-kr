@@ -22,15 +22,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79e9ead07e58a1b359e67289913581a533185a45
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72919096"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft의 내게 필요한 옵션 제품 및 서비스
 
-Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 이 페이지에서는 장애가 있는 사용자가 Microsoft Windows를 보다 쉽게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 정보를 제공합니다.
+Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 이 페이지에서는 장애가 있는 사용자가 Microsoft Windows를 보다 쉽게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 정보를 제공합니다.
 
 > [!IMPORTANT]
 > 이 페이지의 정보는 미국에서 Microsoft 제품의 사용을 허가하는 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 [Microsoft 접근성](https://www.microsoft.com/accessibility/) 웹 사이트를 방문하여 Microsoft 지원 서비스 전화 번호와 주소 목록을 볼 수 있습니다. 자회사에 연락하여 이 페이지에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 접근성에 대한 정보는 다른 언어로도 제공됩니다.

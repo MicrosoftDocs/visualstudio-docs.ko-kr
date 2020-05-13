@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595789"
 ---
 # <a name="assembly-information-dialog-box"></a>어셈블리 정보 대화 상자
@@ -25,12 +25,12 @@ ms.locfileid: "75595789"
 
 이 대화 상자에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음, **프로젝트** 메뉴에서 **속성**을 선택합니다. **애플리케이션** 페이지에서 **어셈블리 정보** 단추를 선택합니다.
 
-## <a name="uielement-list"></a>UI 요소 목록
+## <a name="uielement-list"></a>UIElement 목록
 
 **제목**\
 어셈블리 매니페스트의 제목을 지정합니다. <xref:System.Reflection.AssemblyTitleAttribute>에 해당합니다.
 
-**설명**\
+**Description**\
 어셈블리 매니페스트의 선택적 설명을 지정합니다. <xref:System.Reflection.AssemblyDescriptionAttribute>에 해당합니다.
 
 **회사**\
@@ -65,7 +65,7 @@ Win32 파일 버전 리소스에 대해 특정 버전을 사용하도록 컴파�
 > [!NOTE]
 > .NET Framework 클래스 라이브러리에서 NuGet 패키지를 생성할 때 이러한 속성을 설정하는 방법에 대한 자세한 내용은 [패키지의 프로젝트 속성 구성](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 디자이너, 애플리케이션 페이지(Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [특성](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91ac811c1f55fdb9a662db679ebd2d038ecdd5dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588982"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>방법: 부하 테스트에 대한 활성 실행 설정 선택
@@ -26,7 +26,7 @@ ms.locfileid: "75588982"
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
-부하 테스트의 **실행 설정** 폴더 아래에 실행 설정 노드가 하나만 있는 경우 해당 노드가 항상 활성 노드가 됩니다. 부하 테스트에 여러 실행 설정 노드가 있는 경우에는 부하 테스트를 실행할 때 사용할 노드 하나를 선택할 수 있습니다. [방법: 부하 테스트에 추가 실행 설정 추가](../test/how-to-add-additional-run-settings-to-a-load-test.md)를 참조하세요.
+부하 테스트의 **실행 설정** 폴더 아래에 실행 설정 노드가 하나만 있는 경우 해당 노드가 항상 활성 노드가 됩니다. 부하 테스트에 여러 실행 설정 노드가 있는 경우에는 부하 테스트를 실행할 때 사용할 노드 하나를 선택할 수 있습니다. [방법: 부하 테스트에 실행 설정 추가](../test/how-to-add-additional-run-settings-to-a-load-test.md)를 참조하세요.
 
 **부하 테스트 편집기**에서 활성 실행 설정은 "[Active]" 접미사로 식별됩니다.
 
@@ -55,8 +55,8 @@ ms.locfileid: "75588982"
 
 **mstest /testcontainer:loadtest1.loadtest**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [방법: 부하 테스트에 추가 실행 설정 추가](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [방법: 부하 테스트에 실행 설정 추가](../test/how-to-add-additional-run-settings-to-a-load-test.md)

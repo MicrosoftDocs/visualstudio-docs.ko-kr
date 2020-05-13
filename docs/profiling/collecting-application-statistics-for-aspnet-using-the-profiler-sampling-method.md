@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: a2cae807a8d833cf2653ea23616eeb819673229e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773246"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>ASP.NET 웹앱에 대한 통계를 수집합니다.
@@ -31,7 +31,7 @@ ms.locfileid: "74773246"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**ASP.NET 애플리케이션에 프로파일러 연결**|-   [방법: ASP.NET 웹 애플리케이션에 프로파일러를 연결하여 애플리케이션 통계 수집](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|
 
@@ -39,7 +39,7 @@ ms.locfileid: "74773246"
 
 ### <a name="profile-aspnet-web-applications"></a>ASP.NET 웹 애플리케이션 프로파일링
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**계측 방법을 사용하여 프로파일링**|-   [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
 |**메모리 할당 및 가비지 수집 프로파일링**|-   [메모리 데이터 수집](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
@@ -47,7 +47,7 @@ ms.locfileid: "74773246"
 
 ### <a name="sample-method"></a>샘플 메서드
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**독립 실행형(클라이언트) 애플리케이션 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |-   **서비스 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|

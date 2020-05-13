@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985020"
 ---
 # <a name="debugging-with-xamarin"></a>Xamarin을 사용한 디버깅
@@ -41,7 +41,7 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 
 ![중단점 목록](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>디버깅 시작
+## <a name="start-debugging"></a>디버그 시작
 
 디버깅을 시작하려면 IDE에서 대상 디바이스 또는 유사 디바이스/에뮬레이터를 선택합니다.
 

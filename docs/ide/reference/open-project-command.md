@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565814"
 ---
 # <a name="open-project-command"></a>프로젝트 열기 명령
@@ -36,7 +36,7 @@ File.OpenProject filename
 
 `filename`
 
-필수 요소. 열려는 프로젝트 또는 솔루션의 전체 경로와 파일 이름입니다.
+필수 사항입니다. 열려는 프로젝트 또는 솔루션의 전체 경로와 파일 이름입니다.
 
 > [!NOTE]
 > `filename` 인수 구문에서 공백을 포함하는 경로에는 따옴표를 사용해야 합니다.
@@ -55,7 +55,7 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

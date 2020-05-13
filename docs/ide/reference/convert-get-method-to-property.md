@@ -1,23 +1,24 @@
 ---
 title: Get 메서드를 속성으로 변환, 속성을 Get 메서드로 변환
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e3807f3902cbd0d2718f249f15cd268fb81ac51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570234"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094206"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Get 메서드를 속성으로 변환 / 속성을 Get 메서드로 변환 / 리팩터링
 
@@ -25,9 +26,11 @@ ms.locfileid: "75570234"
 
 - C#
 
+- Visual Basic
+
 ## <a name="convert-get-method-to-property"></a>Get 메서드를 속성으로 변환
 
-**내용:** Get 메서드를 속성(및 선택적으로 Set 메서드)으로 변환할 수 있습니다.
+**대상:** Get 메서드를 속성(및 선택적으로 Set 메서드)으로 변환할 수 있습니다.
 
 **시기:** 논리를 포함하지 않는 Get 메서드가 있습니다.
 
@@ -46,7 +49,7 @@ ms.locfileid: "75570234"
 
 1. 코드 미리 보기의 변경 내용에 만족할 경우 **Enter** 키를 누르거나 메뉴에서 수정을 클릭하면 변경 내용이 커밋됩니다.
 
-예:
+예제:
 
 ```csharp
 private int MyValue;
@@ -68,7 +71,7 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>속성을 Get 메서드로 변환
 
-**내용:** 속성을 Get 메서드로 변환할 수 있습니다.
+**대상:** 속성을 Get 메서드로 변환할 수 있습니다.
 
 **시기:** 값을 즉시 설정하고 가져오는 것 이외에 관련된 속성이 있습니다.
 
@@ -85,7 +88,7 @@ public int MyValue
 
 1. 코드 미리 보기의 변경 내용에 만족할 경우 **Enter** 키를 누르거나 메뉴에서 수정을 클릭하면 변경 내용이 커밋됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

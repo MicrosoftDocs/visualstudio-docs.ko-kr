@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593280"
 ---
 # <a name="diagnosing-task-failures"></a>작업 실패 진단
 
-작업에서 특정 오류를 기록하지 않은 경우 <xref:Microsoft.Build.Utilities.ToolTask> 파생 클래스가 0이 아닌 종료 코드를 반환하는 도구 프로세스를 실행할 때 `MSB6006`이 내보내집니다.
+작업에서 특정 오류를 기록하지 않은 경우 `MSB6006` 파생 클래스가 0이 아닌 종료 코드를 반환하는 도구 프로세스를 실행할 때 <xref:Microsoft.Build.Utilities.ToolTask>이 내보내집니다.
 
 ## <a name="identifying-the-failing-task"></a>실패한 작업 확인
 
@@ -51,7 +51,7 @@ Build FAILED.
 
 이 결과는 프로젝트 `S:\MSB6006_demo\MSB6006_demo.csproj`에서 `InvokeToolTask`라는 대상의 파일 `S:\MSB6006_demo\MSB6006_demo.csproj`의 19번 줄에 정의된 작업에서 오류가 발생했음을 나타냅니다.
 
-### <a name="in-visual-studio"></a>Visual Studio
+### <a name="in-visual-studio"></a>Visual Studio에서
 
 `Project`, `File` 및 `Line` 열의 Visual Studio 오류 목록에서 동일한 정보를 사용할 수 있습니다.
 

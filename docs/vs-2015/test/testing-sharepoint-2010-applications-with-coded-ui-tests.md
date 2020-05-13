@@ -8,26 +8,26 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b44e921a8e1ba13d3f0786d4633f942f94f3eaaa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851282"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586976"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SharePoint 애플리케이션에 코딩된 UI 테스트를 포함하면 해당 UI 컨트롤을 포함해서 전체 애플리케이션이 올바르게 작동하는지 확인할 수 있습니다. 코딩된 UI 테스트는 또한 사용자 인터페이스에서 값 및 논리의 유효성을 검사할 수 있습니다.
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>코딩된 UI 테스트에 대해 그 밖에 알아야 할 내용
  코딩된 UI 테스트를 사용할 때의 이점에 대한 자세한 내용은 [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) 및 [Visual Studio 2012를 사용한 연속 배달 테스트 – 5장 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)를 참조하세요.
 
- **참고**
+ **참고 사항**
 
 - ![Prereq](../test/media/prereq.png "필수 구성 요소") SharePoint 응용 프로그램에 대 한 코딩 된 UI 테스트는 SharePoint 2010 에서만 지원 됩니다.
 
@@ -53,7 +53,7 @@ SharePoint 애플리케이션에 코딩된 UI 테스트를 포함하면 해당 U
 > [!WARNING]
 > 화살표 작업 후 Excel 셀에 텍스트를 입력하는 작업은 올바르게 기록되지 않습니다. 마우스를 사용해서 셀을 선택하세요.
 
- 빈 셀에 대한 작업을 기록할 때는 셀을 두 번 클릭하고 텍스트 설정 작업을 수행하여 코드를 수정해야 합니다. 셀을 클릭하고 키보드 작업을 수행하면 셀 내에서 `textarea` 가 활성화되기 때문에 이 작업이 필요합니다. 빈 셀에서 단순히 `setvalue` 를 기록하면 셀을 클릭할 때까지 제공되지 않은 `editbox` 가 검색됩니다. 예를 들면 다음과 같습니다.:
+ 빈 셀에 대한 작업을 기록할 때는 셀을 두 번 클릭하고 텍스트 설정 작업을 수행하여 코드를 수정해야 합니다. 셀을 클릭하고 키보드 작업을 수행하면 셀 내에서 `textarea` 가 활성화되기 때문에 이 작업이 필요합니다. 빈 셀에서 단순히 `setvalue` 를 기록하면 셀을 클릭할 때까지 제공되지 않은 `editbox` 가 검색됩니다. 다음은 그 예입니다. 
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
@@ -138,10 +138,10 @@ uiGridKeyboardInputEdit.Text=value;
  [코딩된 UI 테스트에 대한 콘텐츠 인덱스](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)
+ [Visual Studio 2012을 사용한 연속 배달 테스트 – 5 장 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>포럼
- [Visual Studio ALM + Team Foundation Server 블로그](https://blogs.msdn.com/b/visualstudioalm/)
+ [Visual Studio ALM + Team Foundation Server 블로그](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
 ## <a name="see-also"></a>참고 항목
  [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) [웹 성능 테스트 및 부하 테스트 sharepoint 2010 및 2013 응용 프로그램](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [sharepoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [코드 확인 및 디버깅](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) sharepoint [솔루션 빌드 및 디버깅 Sharepoint 솔루션 빌드 및 디버깅](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) sharepoint [응용 프로그램의 성능 프로 파일링](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

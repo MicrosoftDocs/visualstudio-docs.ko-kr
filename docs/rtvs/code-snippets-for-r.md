@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969456"
 ---
 # <a name="code-snippets"></a>코드 조각
@@ -36,7 +36,7 @@ Visual Studio의 코드 조각은 임의 길이의 코드 블록을 빠르게 �
 
 ![R에 대한 코드 조각 대화 상자](media/code-snippet-dialog.png)
 
-사용자 지정 코드 조각을 만들려면 [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)를 참조하세요. 결국 코드 조각은 XML 파일입니다. 예를 들어 다음 코드는 파이프 연산에 대한 코드 조각입니다(바로 가기 `>`).
+사용자 지정 코드 조각을 만들려면 [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)의 지침을 따릅니다. 결국 코드 조각은 XML 파일입니다. 예를 들어 다음 코드는 파이프 연산에 대한 코드 조각입니다(바로 가기 `>`).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

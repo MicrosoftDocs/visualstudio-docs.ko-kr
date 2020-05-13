@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585472"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Visual Studio에서 새 프로젝트 만들기
@@ -99,6 +99,6 @@ Visual Studio 개발 환경이 이미 열려 있는 경우 메뉴 모음에서 *
 
 추가 프로젝트를 솔루션에 추가하려면 **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [솔루션 및 프로젝트 만들기](creating-solutions-and-projects.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b53a71a0a8215ae6bc9af47f9fe2a0ff911b5
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b1d2512c14c0630d2268adfa465e092555150943
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806884"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557873"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Windows에서 인식할 수 없는 파일 형식 (예: Microsoft Word 파일)이 배포에 포함 되어 있으면 IIS에서 해당 파일을 전송 하는 것을 거부 하 고 배포가 실패 합니다.
@@ -49,7 +49,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 및 프록시 인증
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET Framework 3.5부터 Windows 통합 프록시 인증에 대 한 지원을 제공 합니다. 특정 machine.config 지시문이 필요 하지 않습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]는 기본 또는 다이제스트와 같은 다른 인증 프로토콜에 대 한 지원을 제공 하지 않습니다.
 
- .NET Framework 2.0에 핫픽스를 적용 하 여이 기능을 사용 하도록 설정할 수도 있습니다. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkId=158730 을 참조하십시오.
+ .NET Framework 2.0에 핫픽스를 적용 하 여이 기능을 사용 하도록 설정할 수도 있습니다. 자세한 내용은 [.NET Framework 2.0에서 만든 ClickOnce 응용 프로그램을 프록시 서버를 사용 하도록 구성 된 클라이언트 컴퓨터에 설치 하려고 할 때 수정: 오류 메시지: "프록시 인증 필요"](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that)를 참조 하십시오.
 
  자세한 내용은 [\<defaultProxy > 요소 (네트워크 설정)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)를 참조 하세요.
 
@@ -75,12 +75,12 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ```
 
 > [!NOTE]
-> 사이트에서 기본 자격 증명이 아닌 자격 증명을 묻는 메시지를 표시 하는 경우 NTLM (NT 챌린지-응답) 인증을 사용할 수 있습니다 .이 경우에는 제공 된 자격 증명을 저장할 것인지 묻는 메시지가 표시 되 면 보안 대화 상자에서 **확인** 을 클릭 합니다. 이후 세션. 그러나이 해결 방법은 기본 인증에는 적용 되지 않습니다.
+> 사이트에서 기본 자격 증명이 아닌 자격 증명을 묻는 메시지가 표시 되는 경우 NTLM (NT 챌린지-응답) 인증을 사용할 수 있으며, 보안 대화 상자에서 이후 세션에 대해 제공 된 자격 증명을 저장할지 묻는 메시지가 표시 되 면 **확인** 을 클릭 합니다. 그러나이 해결 방법은 기본 인증에는 적용 되지 않습니다.
 
 ## <a name="use-third-party-web-servers"></a>타사 웹 서버 사용
  IIS 이외의 웹 서버에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 배포 하는 경우 서버에서 배포 매니페스트와 응용 프로그램 매니페스트와 같은 키 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 파일에 대해 잘못 된 콘텐츠 형식을 반환 하는 경우 문제가 발생할 수 있습니다. 이 문제를 해결 하려면 서버에 새 콘텐츠 유형을 추가 하는 방법에 대 한 웹 서버의 도움말 설명서를 참조 하 고 다음 표에 나열 된 모든 파일 이름 확장명 매핑이 준비 되어 있는지 확인 합니다.
 
-|파일 이름 확장명|콘텐츠 형식|
+|파일 이름 확장명|내용 유형|
 |-------------------------|------------------|
 |`.application`|`application/x-ms-application`|
 |`.manifest`|`application/x-ms-manifest`|
@@ -94,7 +94,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>응용 프로그램 설치에 지원 되지 않는 FTP 프로토콜
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]는 모든 HTTP 1.1 웹 서버 또는 파일 서버에서 응용 프로그램 설치를 지원 합니다. 파일 전송 프로토콜 FTP는 응용 프로그램을 설치 하는 데 지원 되지 않습니다. FTP를 사용 하 여 응용 프로그램을 게시할 수 있습니다. 다음 표에는 이러한 차이점이 요약 되어 있습니다.
 
-| URL 형식 | 설명 |
+| URL 형식 | Description |
 |----------| - |
 | ftp:// | 이 프로토콜을 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 게시할 수 있습니다. |
 | http:// | 이 프로토콜을 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 설치할 수 있습니다. |
@@ -118,7 +118,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 
 - 확장명 "<em>" 및 mime 형식 "응용 프로그램/8 진수 스트림"을 사용 하 여 mime 형식을 만들면 차단 해제 된 파일 형식의 파일을 다운로드할 수 있습니다. 그러나 * .aspx 및 .asmx와 같은 차단 된 파일 형식은</em> 다운로드할 수 없습니다.
 
-  Windows Server에서 MIME 형식을 구성 하는 방법에 대 한 자세한 내용은 Microsoft 기술 자료 문서 KB326965, "IIS 6.0은 알 수 없는 MIME 형식을 제공 하지 않습니다. http://support.microsoft.com/default.aspx?scid=kb " ( [en-us; 326965;](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965))를 참조 하세요.
+  Windows Server에서 MIME 형식을 구성 하는 방법에 대 한 지침은 [웹 사이트 또는 응용 프로그램에 mime 형식을 추가 하는 방법](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application)을 참조 하세요.
 
 ## <a name="content-type-mappings"></a>콘텐츠 형식 매핑
  HTTP를 통해 게시 하는 경우 *응용 프로그램* 파일에 대 한 콘텐츠 형식 (MIME 형식이 라고도 함)은 "응용 프로그램/x m s-응용 프로그램" 이어야 합니다. 서버에 .NET Framework 2.0가 설치 되어 있으면 자동으로 설정 됩니다. 이 버전이 설치 되어 있지 않으면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 vroot 또는 전체 서버에 대 한 MIME 형식 연결을 만들어야 합니다.
@@ -132,7 +132,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 
  IIS에 대 한 자세한 지침은 [HTTP 압축을 위한 추가 문서 유형을 지정 하는 방법](https://support.microsoft.com/help/234497)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)

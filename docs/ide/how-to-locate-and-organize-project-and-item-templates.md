@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591049"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>방법: 프로젝트 템플릿과 항목 템플릿 찾기 및 구성
@@ -124,7 +124,7 @@ ms.locfileid: "75591049"
 
 ### <a name="display-templates-in-parent-categories"></a>템플릿을 부모 범주에 표시
 
-*.vstemplate* 파일에서 `NumberOfParentCategoriesToRollUp` 요소를 사용하여 하위 범주의 템플릿이 부모 범주에 표시되도록 할 수 있습니다. 이 단계는 프로젝트 템플릿과 항목 템플릿에 대해 동일합니다.
+`NumberOfParentCategoriesToRollUp`.vstemplate*파일에서* 요소를 사용하여 하위 범주의 템플릿이 부모 범주에 표시되도록 할 수 있습니다. 이 단계는 프로젝트 템플릿과 항목 템플릿에 대해 동일합니다.
 
 1. 템플릿을 포함하는 *.zip* 파일을 찾습니다.
 
@@ -156,7 +156,7 @@ ms.locfileid: "75591049"
 
 ::: moniker-end
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조(확장성)](../extensibility/visual-studio-template-schema-reference.md)

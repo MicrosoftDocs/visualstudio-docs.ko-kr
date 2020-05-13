@@ -6,10 +6,10 @@ author: bytesguy
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: c0d51c0b458a1d4079eb935d40b09c260cf01186
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983634"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 기본 바로 가기 키
@@ -32,7 +32,7 @@ ms.locfileid: "74983634"
 |이전 오류|**⌥⇧⇞**|
 |파일의 이전 문제|**⌥⇞**|
 
-## <a name="debug"></a>Debug
+## <a name="debug"></a>디버그
 
 |명령|바로 가기 키|
 |-|-|
@@ -209,7 +209,7 @@ ms.locfileid: "74983634"
 |문자 바꾸기|**⌃T**|
 |&lt;div&gt;로 래핑|**⌥⇧W**|
 
-## <a name="view"></a>보기
+## <a name="view"></a>View
 
 |명령|바로 가기 키|
 |-|-|
@@ -270,6 +270,6 @@ ms.locfileid: "74983634"
 |␣|**스페이스바**|
 |⇥|**Tab**|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 바로 가기 키(Windows에서)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

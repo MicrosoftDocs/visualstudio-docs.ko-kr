@@ -1,24 +1,24 @@
 ---
-title: VSSDK 유틸리티 | Microsoft Docs
+title: VSSDK 유틸리티 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Architecture, Visual Studio Integration
 ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e359d0541f1fde6c00ef94e4b96922d72a243ae0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d3faf0dad9d935fcc62637d387e41d599b7ec874
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323466"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703738"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 유틸리티
-이 섹션의에서 항목에서는 VSSDK 함께 제공 되는 도구를 설명 합니다.
+이 섹션의 항목에서는 VSSDK와 함께 제공되는 도구에 대해 설명합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

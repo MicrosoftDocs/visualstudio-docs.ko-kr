@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670609"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477092"
 ---
 # <a name="how-to-troubleshoot-templates"></a>방법: 템플릿 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "72670609"
 
 2. .zip 파일의 압축을 풉니다.
 
-3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 **파일** 메뉴에서 **열기**를 클릭하고 **파일**을 클릭합니다.
+3. **의 **파일[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 메뉴에서 **열기**를 클릭하고 **파일**을 클릭합니다.
 
 4. 템플릿의 .vstemplate 파일을 선택하고 **열기**를 클릭합니다.
 
 5. .vstemplate 파일의 XML이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 템플릿 스키마에 부합하는지 확인합니다. .vstemplate 스키마에 대한 자세한 내용은 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요.
 
     > [!NOTE]
-    > .vstemplate 파일을 제작하는 동안 IntelliSense 지원을 가져오려면 `xmlns` 특성을 `VSTemplate` 요소에 추가하고 http://schemas.microsoft.com/developer/vstemplate/2005 의 값을 할당합니다.
+    > .vstemplate 파일을 제작하는 동안 IntelliSense 지원을 가져오려면 `xmlns` 특성을 `VSTemplate` 요소에 추가하고 `http://schemas.microsoft.com/developer/vstemplate/2005`의 값을 할당합니다.
 
 6. .vstemplate 파일을 저장한 다음 닫습니다.
 
@@ -58,9 +58,9 @@ ms.locfileid: "72670609"
 
 2. 왼쪽 창에서 **애플리케이션**을 클릭합니다.
 
-3. `Visual Studio - VsTemplate`이라는 **원본** 값을 포함하는 이벤트를 검색합니다.
+3. **이라는 **원본`Visual Studio - VsTemplate` 값을 포함하는 이벤트를 검색합니다.
 
 4. 오류를 보려면 템플릿 이벤트를 두 번 클릭합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md) [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591738"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78235201"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio의 기능
 
@@ -84,7 +84,7 @@ Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 디바이스](h
 
 - [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md)를 사용하여 C#으로 2D 및 3D 게임을 빌드합니다.
 
-- iOS, Android 및 Windows 디바이스용 네이티브 C++ 앱을 빌드합니다. [플랫폼 간 개발용 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)를 사용하여 iOS, Android 및 Windows용으로 빌드된 라이브러리에서 공통 코드를 공유합니다.
+- iOS, Android 및 Windows 디바이스용 네이티브 C++ 앱을 빌드합니다. [플랫폼 간 개발용 C++](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development)를 사용하여 iOS, Android 및 Windows용으로 빌드된 라이브러리에서 공통 코드를 공유합니다.
 
 - [Android Emulator](../cross-platform/visual-studio-emulator-for-android.md)를 사용하여 Android 앱을 배포, 테스트 및 디버그합니다.
 

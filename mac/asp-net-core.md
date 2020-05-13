@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404992"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543891"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
- Mac용 Visual Studio를 사용하면 최신 ASP.NET Core 웹 개발 플랫폼 지원을 통해 앱 서비스를 쉽게 개발할 수 있습니다. ASP.NET Core는 .NET Framework와 런타임의 최신 형태인 .NET Core에서 실행됩니다. 빠른 성능을 위해 조정되고, 작은 설치 크기에 맞게 팩터링되고, Windows뿐 아니라 Linux 및 macOS에서도 실행되도록 다시 설계되었습니다.
+ Mac용 Visual Studio를 사용하면 최신 ASP.NET Core 웹 개발 플랫폼 지원을 통해 앱 서비스를 쉽게 개발할 수 있습니다. ASP.NET Core는 .NET Framework와 런타임의 최신 형태인 .NET Core에서 실행됩니다. 빠른 성능을 위해 조정되고 작은 설치 크기에 맞게 팩터링되고 Windows뿐 아니라 Linux 및 macOS에서도 실행되도록 다시 설계되었습니다.
 
 ## <a name="installing-net-core"></a>.NET Core 설치
 
@@ -236,7 +236,7 @@ Mac OS 10.12(Sierra) 이상에 .NET Core를 수동으로 설치해야 하는 경
 
 이 가이드에서는 ASP.NET Core를 소개했습니다. ASP.NET Core란 무엇이고 언제 사용해야 하는지를 설명하고, Mac용 Visual Studio에서 사용하는 방법에 대한 정보를 제공했습니다.
 이후 단계에 대한 자세한 내용은 다음 가이드를 참조하세요.
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc) 문서
+- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1) 문서
 - [네이티브 모바일 애플리케이션용 백 엔드 서비스 만들기](/aspnet/core/mobile/native-mobile-backend) - Xamarin.Forms 앱용 ASP.NET Core를 사용하여 REST 서비스를 빌드하는 방법을 보여 줍니다.
 - [ASP.NET Core 실습 교육](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
 

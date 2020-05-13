@@ -1,17 +1,18 @@
 ---
 title: Visual Studio Subscription의 Concierge Chat 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Concierge Chat 혜택을 알아봅니다.
-ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 6b6ed0635f86abb94fd3693d14b53a9ff1f7c936
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099587"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274000"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Concierge Chat
 Concierge Chat 서비스는 Visual Studio 구독 혜택 사용에 도움이 될 뿐 아니라 제품 정보 및 기술 문서를 찾는 데도 도움이 됩니다.
@@ -45,7 +46,7 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  예          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
-<sup>1</sup> 포함:*NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft Certified Trainer, BizSpark,  제외:* FTE, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), Imagine
+<sup>1</sup>  포함:*NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft Certified Trainer, BizSpark,  제외:* FTE, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), Imagine
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -59,6 +60,12 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
 ## <a name="support-resources"></a>지원 리소스
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Microsoft 도구 및 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.

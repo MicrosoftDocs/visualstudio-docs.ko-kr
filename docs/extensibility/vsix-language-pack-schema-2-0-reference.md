@@ -11,12 +11,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: zorio
 author: zoeyr
 manager: jillfra
-ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739326"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169341"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 언어 팩 스키마 2.0 참조
 
@@ -24,19 +24,19 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 
 ## <a name="language-pack-schema"></a>언어 팩 스키마
 
-언어 팩 파일의 루트 요소는 이며 `<PackageLanguagePackManifest>`언어 팩 형식의 버전인 `Version`특성을 사용 합니다. 이 문서에서는 `Version` 특성을 값 `Version="2.0.0"`으로 설정 하 여 매니페스트에 지정 된 언어 팩 형식의 버전 2.0을 설명 합니다. 루트 요소는 정확히 하나의 자식 `<Metadata>` 요소를 포함 합니다.
+언어 팩 파일의 루트 요소는 `<PackageLanguagePackManifest>`되며 언어 팩 형식의 버전인 `Version`특성을 사용 합니다. 이 문서에서는 `Version` 특성을 `Version="2.0.0"`값으로 설정 하 여 매니페스트에 지정 된 언어 팩 형식의 버전 2.0을 설명 합니다. 루트 요소는 정확히 하나의 자식 `<Metadata>` 요소를 포함 합니다.
 
 ### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest 요소
 
 `<PackageLanguagePackManifest>` 요소 내에 다음 요소가 있어야 합니다.
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |`<Metadata>`| 모든 지역화 된 패키지 메타 데이터에 대 한 포함 요소입니다.
 
 ### <a name="metadata-element"></a>Metadata 요소
 
-`<Metadata>` 요소 내에 다음 요소를 사용할 수 있습니다.
+`<Metadata>` 요소 내에서 다음 요소를 사용할 수 있습니다.
 
 |제목|Description|
 |-----------|-----------------|
@@ -53,7 +53,7 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 <?xml version="1.0" encoding="utf-8"?>
 <PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <DisplayName>Arbol de Familia</LocalizedName>
+    <DisplayName>Arbol de Familia</DisplayName>
     <Description> Esta extensión pone control personalizado en la caja de herramientas por manejar información de familia.</Description>
     <MoreInfo> http://www.contoso.com/products/es/ArbolDeFamilia.htm</MoreInfo>
     <License>Eula.rtf</License>
@@ -63,9 +63,9 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)|VSIX 패키지에 대해 지역화 된 설치 지원을 제공 하는 방법을 보여 줍니다.|
 |[VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 매니페스트는 *.vsix* 배포 파일의 콘텐츠를 설명 합니다. 배포 파일을 사용 하면 **확장 및 업데이트** 대화 상자를 사용 하 여 Visual Studio 확장을 설치할 수 있습니다.|

@@ -4,17 +4,17 @@ description: Visual Studio에서 문제를 보고하는 방법 찾기
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947691"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276503"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 
@@ -72,7 +72,7 @@ ms.locfileid: "62947691"
 
 1. **레코드** 탭을 선택합니다.
 
-1. 문제를 재현할 수 있는 경우 **작업 기록**에서 Visual Studio의 현재 인스턴스를 선택합니다. 예를 들어 Visual Studio가 정지되어 수행할 수 없는 경우  **\<새 인스턴스 만들기>** 를 선택하여 Visual Studio의 새 인스턴스에서 작업을 기록합니다.
+1. 문제를 재현할 수 있는 경우 **작업 기록**에서 Visual Studio의 현재 인스턴스를 선택합니다. 예를 들어 Visual Studio가 정지되어 수행할 수 없는 경우 **\<새 인스턴스 만들기>** 를 선택하여 Visual Studio의 새 인스턴스에서 작업을 기록합니다.
 
 1. **기록 시작**을 선택합니다. 도구를 실행할 수 있는 권한을 제공합니다.
 
@@ -120,9 +120,9 @@ Visual Studio 2017 버전 15.5 부터는 사용자가 문제 보고에 대한 �
 
 보고할 문제가 없지만 기능을 제안하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [기능 제안](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) 페이지를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-* [의견 보내기](../ide/talk-to-us.md)
+* [Visual Studio 피드백 옵션](../ide/feedback-options.md)
 * [Mac용 Visual Studio의 문제 보고](/visualstudio/mac/report-a-problem)
 * [C++를 사용하여 문제 보고](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)

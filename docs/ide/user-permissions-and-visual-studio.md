@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75718638"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
@@ -28,12 +28,12 @@ ms.locfileid: "75718638"
 
 일반 사용자로 Visual Studio IDE에서 거의 모든 작업을 수행할 수 있습니다. 다음 작업을 완료하려면 관리자 권한이 필요합니다.
 
-|Area|작업|추가 정보|
+|영역|Task|참조 항목|
 |----------|----------| - |
 |설치|Visual Studio 설치 또는 수정|[Visual Studio 설치](../install/install-visual-studio.md), [Visual Studio 수정](../install/modify-visual-studio.md)|
 ||로컬 도움말 콘텐츠를 설치, 업데이트 또는 제거합니다.|[로컬 도움말 콘텐츠 설치 및 관리](../help-viewer/install-manage-local-content.md)|
 |도구 상자|**도구 상자**에 클래식 COM 컨트롤을 추가합니다.|[도구 상자](../ide/reference/toolbox.md)|
-|빌드|구성 요소를 등록하는 빌드 후 이벤트를 사용합니다.|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](/cpp/build/understanding-custom-build-steps-and-build-events)|
+|빌딩|구성 요소를 등록하는 빌드 후 이벤트를 사용합니다.|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||C++ 프로젝트를 빌드할 때 등록 단계를 포함합니다.||
 |디버깅|높은 권한으로 실행되는 애플리케이션 디버깅합니다.|[디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)|
 ||ASP.NET 웹 사이트와 같이 다른 사용자 계정으로 실행되는 애플리케이션을 디버깅합니다.|[ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
@@ -73,7 +73,7 @@ ms.locfileid: "75718638"
 
 또한 애플리케이션 바로 가기를 수정하여 항상 관리자 권한으로 실행하도록 할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Visual Studio 설치](../install/install-visual-studio.md)

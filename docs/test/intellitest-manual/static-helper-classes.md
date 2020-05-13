@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591569"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306988"
 ---
 # <a name="static-helper-classes"></a>정적 도우미 클래스
 
@@ -32,7 +32,7 @@ IntelliTest는 [매개 변수가 있는 단위 테스트](test-generation.md#par
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-가정(예: [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)의 [사전 조건](test-generation.md#precondition))을 표현하는 데 사용되는 정적 클래스입니다. 이 클래스의 메서드는 부적절한 테스트 입력을 필터링하는 데 사용할 수 있습니다.
+가정(예: [매개 변수가 있는 단위 테스트](test-generation.md#precondition)의 [사전 조건](test-generation.md#parameterized-unit-testing))을 표현하는 데 사용되는 정적 클래스입니다. 이 클래스의 메서드는 부적절한 테스트 입력을 필터링하는 데 사용할 수 있습니다.
 
 가정된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssumeFailedException**이 throw됩니다. 이로 인해 테스트가 자동으로 무시됩니다.
 
@@ -64,7 +64,7 @@ public void TestSomething(int i, int j) {
 <a name="pexassert"></a>
 ## <a name="pexassert"></a>PexAssert
 
-어설션(예: [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)의 [사후 조건](test-generation.md#postcondition))을 표현하는 데 사용되는 정적 클래스입니다.
+어설션(예: [매개 변수가 있는 단위 테스트](test-generation.md#postcondition)의 [사후 조건](test-generation.md#parameterized-unit-testing))을 표현하는 데 사용되는 정적 클래스입니다.
 
 어설션된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssertFailedException**이 throw되어 테스트가 실패합니다.
 
@@ -170,6 +170,6 @@ public static void AreElementsNotNull<T>(T[] value)
 }
 ```
 
-## <a name="got-feedback"></a>피드백이 있으신가요?
+## <a name="got-feedback"></a>피드백이 있나요?
 
 아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

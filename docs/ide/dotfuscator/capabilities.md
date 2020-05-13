@@ -18,10 +18,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918411"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator의 기능
@@ -52,13 +52,13 @@ Dotfuscator는 이 시도를 방지하기 위해 [디버그 방지 동작][debug
 소스 코드 보호뿐 아니라 애플리케이션이 설계된 대로 사용되도록 하는 것도 중요합니다.
 공격자는 라이선싱 정책을 우회하거나(즉, 소프트웨어 불법 복제), 애플리케이션에서 처리되는 중요한 데이터를 훔치거나 조작하거나, 애플리케이션의 동작을 변경하기 위해 애플리케이션을 하이재킹하려고 시도할 수 있습니다.
 
-Dotfuscator Community는 [조작 방지][tamper], [디버그 방지][debug] 및 [루팅 방지 디바이스][root] 대책을 포함하여 [애플리케이션 유효성 검사 코드][checks]를 어셈블리에 삽입할 수 있습니다.
+Dotfuscator Community는 [조작 방지][checks], [디버그 방지][tamper] 및 [루팅 방지 디바이스][debug] 대책을 포함하여 [애플리케이션 유효성 검사 코드][root]를 어셈블리에 삽입할 수 있습니다.
 잘못된 애플리케이션 상태가 검색되면 유효성 검사 코드가 [애플리케이션 코드를 호출하여 상황을 적절한 방식으로 해결][check-app]할 수 있습니다.
 또는 애플리케이션의 잘못된 사용을 처리하는 코드를 작성하지 않으려는 경우 소스 코드를 수정할 필요 없이 Dotfuscator에서 [응답][check-action] 동작을 삽입할 수도 있습니다.
 
 이와 같은 방법의 대부분은 평가 및 평가판 소프트웨어를 위해 [수명 종료 기한][shelflife]을 적용하는 데 사용될 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [전체 Dotfuscator Community 사용자 가이드의 이 항목][full]
 

@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f196c3850c9413a7c68fd1fe67af50273915f249
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5b198d8d3e9156b8a38325034bf19ce96b742d9e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589177"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880158"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
@@ -23,7 +23,7 @@ ms.locfileid: "75589177"
 
 테스트를 실행하는 컴퓨터에 적용되거나 테스트 대상 애플리케이션을 실행하는 데 사용할 환경에 속한 컴퓨터에 적용되는 진단 데이터 어댑터를 만들 수 있습니다. 예를 들어 테스트를 실행하는 테스트 컴퓨터에서 파일을 수집하거나 애플리케이션의 웹 서버 역할을 하는 컴퓨터에서 파일을 수집할 수 있습니다.
 
-Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 만들 때 표시되는 알기 쉬운 이름을 진단 데이터 어댑터에 지정할 수 있습니다. 테스트 설정을 사용하면 테스트를 실행할 때 해당 환경에서 특정 진단 데이터 어댑터를 실행할 컴퓨터 역할을 정의할 수 있습니다. 테스트 설정을 만들 때 진단 데이터 어댑터를 구성할 수도 있습니다. 예를 들어 웹 서버에서 사용자 지정 로그를 수집하는 진단 데이터 어댑터를 만들 수 있습니다. 테스트 설정을 만들 때 이 웹 서버 역할을 수행하는 컴퓨터에서 이 진단 데이터 어댑터를 실행하도록 선택할 수 있고 작성된 로그 중 마지막 로그 세 개만 수집하도록 테스트 설정의 구성을 수정할 수 있습니다. 테스트 설정에 대한 자세한 내용은 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
+Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)를 사용하여 테스트 설정을 만들 때 표시되는 알기 쉬운 이름을 진단 데이터 어댑터에 지정할 수 있습니다. 테스트 설정을 사용하면 테스트를 실행할 때 해당 환경에서 특정 진단 데이터 어댑터를 실행할 컴퓨터 역할을 정의할 수 있습니다. 테스트 설정을 만들 때 진단 데이터 어댑터를 구성할 수도 있습니다. 예를 들어 웹 서버에서 사용자 지정 로그를 수집하는 진단 데이터 어댑터를 만들 수 있습니다. 테스트 설정을 만들 때 이 웹 서버 역할을 수행하는 컴퓨터에서 이 진단 데이터 어댑터를 실행하도록 선택할 수 있고 작성된 로그 중 마지막 로그 세 개만 수집하도록 테스트 설정의 구성을 수정할 수 있습니다. 테스트 설정에 대한 자세한 내용은 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
 
 테스트를 실행하면 진단 데이터 어댑터가 테스트의 해당 지점에서 작업을 수행할 수 있도록 이벤트가 발생합니다.
 
@@ -255,7 +255,7 @@ Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 
 
 14. 테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
 
-15. 진단 데이터 어댑터를 선택하려면 먼저 기존 테스트 설정을 선택하거나 Microsoft Test Manager 또는 Visual Studio에서 새 항목을 만들어야 합니다. 어댑터는 클래스에 할당된 이름으로 테스트 설정의 **데이터 및 진단** 탭에 표시됩니다.
+15. 진단 데이터 어댑터를 선택하려면 먼저 기존 테스트 설정을 선택하거나 Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 새 항목을 만들어야 합니다. 어댑터는 클래스에 할당된 이름으로 테스트 설정의 **데이터 및 진단** 탭에 표시됩니다.
 
 16. 이러한 테스트 설정을 활성으로 설정합니다. 테스트 설정에 대한 자세한 내용은 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
 

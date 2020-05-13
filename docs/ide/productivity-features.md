@@ -2,17 +2,17 @@
 title: 생산성 팁
 ms.date: 2/21/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd85565ee573015737ab815258914bec89ab9369
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 620ad93c03e1a1b260ee14cb27093403f27648d7
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596985"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544304"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 생산성 팁
 
@@ -34,7 +34,7 @@ ms.locfileid: "75596985"
 
 - **코드 조각 사용** 기본 제공된 코드 조각을 사용하거나 직접 코드 조각을 만들 수 있습니다.
 
-     코드 조각을 삽입하려면 메뉴 모음에서 **편집** > **IntelliSense** > **코드 조각 삽입** 또는 **코드 감싸기**를 선택하거나 파일의 바로 가기 메뉴를 열고 **코드 조각** > **코드 조각 삽입** 또는 **코드 감싸기**를 선택합니다. 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.
+     코드 조각을 삽입하려면 메뉴 모음에서 **편집** > **IntelliSense** > **코드 조각 삽입** 또는 **코드 감싸기**를 선택하거나 파일의 바로 가기 메뉴를 열고 **코드 조각** > **코드 조각 삽입** 또는 **코드 감싸기**를 선택합니다. 자세한 내용은 [Code Snippets](../ide/code-snippets.md)을 참조하세요.
 
 - **코드 오류를 인라인으로 수정** 빠른 작업을 사용하면 단일 작업으로 쉽게 코드를 리팩터링하거나, 생성하거나, 수정할 수 있습니다. 이 작업은 스크루드라이버![스크루드라이버 아이콘](media/screwdriver-icon.png) 또는 전구![전구 아이콘](media/light-bulb-icon.png) 아이콘을 사용하거나 커서가 적절한 코드 줄에 있을 때 **Alt**+**Enter** 또는 **Ctrl**+ **.** 를 눌러 적용할 수 있습니다. 자세한 내용은 [빠른 작업](quick-actions.md)을 참조하세요.
 
@@ -88,7 +88,7 @@ ms.locfileid: "75596985"
 
 디버깅은 시간이 오래 걸릴 수 있지만 다음 팁을 참고하여 처리 시간을 줄일 수 있습니다.
 
-- **여러 브라우저에서 같은 페이지, 애플리케이션 또는 사이트 테스트** 코드를 디버그할 때 **브라우저 선택** 대화 상자를 열지 않고도 [페이지 검사기(Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 등의 설치된 웹 브라우저 간에 쉽게 전환할 수 있습니다. **디버깅 시작** 단추 옆에 있는 **표준** 도구 모음에서 **디버그 대상** 목록을 사용하여 디버그 또는 보기 페이지로 사용 중인 브라우저를 빠르게 확인할 수 있습니다.
+- **여러 브라우저에서 같은 페이지, 애플리케이션 또는 사이트 테스트** 코드를 디버그할 때 [브라우저 선택](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 대화 상자를 열지 않고도 **페이지 검사기(Visual Studio)** 등의 설치된 웹 브라우저 간에 쉽게 전환할 수 있습니다. **디버깅 시작** 단추 옆에 있는 **표준** 도구 모음에서 **디버그 대상** 목록을 사용하여 디버그 또는 보기 페이지로 사용 중인 브라우저를 빠르게 확인할 수 있습니다.
 
     ![웹 브라우저 디버그 옵션 선택](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "75596985"
 
      DataTip을 추가하려면 디버거가 중단 모드여야 합니다. 커서를 변수에 놓고 나타나는 DataTip에서 핀 단추를 선택합니다. 디버깅이 중지되면 소스 파일에서 변수가 들어 있는 코드 줄 옆에 파란색 핀 아이콘이 나타납니다. 파란색 핀을 가리키면 최근 디버깅 세션의 변수 값이 나타납니다.
 
-- **직접 실행 창 지우기** 디자인 타임에 `>cls` 또는 `>Edit.ClearAll`를 입력하여 [직접 실행 창](../ide/reference/immediate-window.md)의 내용을 지울 수 있습니다.
+- **직접 실행 창 지우기** 디자인 타임에 [ 또는 ](../ide/reference/immediate-window.md)를 입력하여 `>cls`직접 실행 창`>Edit.ClearAll`의 내용을 지울 수 있습니다.
 
      추가 명령에 대한 자세한 내용은 [Visual Studio 명령 별칭](../ide/reference/visual-studio-command-aliases.md)을 참조하세요.
 
@@ -138,9 +138,9 @@ ms.locfileid: "75596985"
 
    **솔루션 탐색기**의 다른 인스턴스를 만들고 다른 모니터로 이동하여 파일을 더욱 쉽게 관리할 수도 있습니다. **솔루션 탐색기**의 다른 인스턴스를 만들려면 **솔루션 탐색기**에서 바로 가기 메뉴를 열고 **새 솔루션 탐색기 뷰**를 선택합니다.
 
-- **Visual Studio에 표시되는 글꼴 사용자 지정** IDE에서 텍스트에 사용되는 글꼴, 글꼴 크기 및 글꼴 색을 변경할 수 있습니다. 예를 들어, 편집기의 특정 코드 요소의 색과 도구 창 또는 IDE 전체에서 글꼴을 사용자 지정할 수 있습니다. 자세한 내용은 [방법: 글꼴 및 색 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) 및 [방법: 편집기의 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)을 참조하세요.
+- **Visual Studio에 표시되는 글꼴 사용자 지정** IDE에서 텍스트에 사용되는 글꼴, 글꼴 크기 및 글꼴 색을 변경할 수 있습니다. 예를 들어, 편집기의 특정 코드 요소의 색과 도구 창 또는 IDE 전체에서 글꼴을 사용자 지정할 수 있습니다. 자세한 내용은 [방법: 글꼴 및 색 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) 및 [방법: 편집기에서 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 팁과 요령 블로그 게시물](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [자주 사용되는 명령의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)

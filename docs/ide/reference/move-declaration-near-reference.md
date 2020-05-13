@@ -1,20 +1,21 @@
 ---
 title: 참조 근처로 변수 선언 이동
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35735009a5b813ca29159f276fe2d5abb734be0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1339f4a9d151ef41d9a35c5aac0a96f220a297b3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585286"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093999"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>참조 리팩터링 근처로 선언 이동
 
@@ -22,7 +23,9 @@ ms.locfileid: "75585286"
 
 - C#
 
-**내용:** 변수 선언을 해당 사용에 더 가깝게 이동할 수 있습니다.
+- Visual Basic
+
+**대상:** 변수 선언을 해당 사용에 더 가깝게 이동할 수 있습니다.
 
 **시기:** 범위를 좁힐 수 있는 변수 선언이 있습니다.
 
@@ -41,7 +44,7 @@ ms.locfileid: "75585286"
 
 1. 변경 내용에 만족할 경우 **Enter** 키를 누르거나 메뉴에서 수정을 클릭하면 변경 내용이 커밋됩니다.
 
-예:
+예제:
 
 ```csharp
 // Before
@@ -62,7 +65,7 @@ if (condition)
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

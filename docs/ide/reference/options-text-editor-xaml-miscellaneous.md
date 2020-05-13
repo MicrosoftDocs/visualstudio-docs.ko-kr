@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568206"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
@@ -54,6 +54,6 @@ ms.locfileid: "75568206"
 
 이 설정을 사용하여 오류 및 경고가 자동으로 생성되는 경우를 제어합니다. 자세한 내용은 [XAML 오류 및 경고](../../xaml-tools/xaml-errors-warnings.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [WPF의 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

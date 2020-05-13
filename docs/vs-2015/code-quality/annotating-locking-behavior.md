@@ -30,15 +30,15 @@ f1_keywords:
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850166"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271596"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "75850166"
 ## <a name="locking-annotations"></a>주석 잠금  
  다음 표에서는 잠금 주석을 보여 줍니다.  
   
-|Annotation|설명|  
+|주석|Description|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 증가시킴을 나타냅니다.|  
 |`_Acquires_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 증가시킴을 나타냅니다.|  
@@ -91,7 +91,7 @@ ms.locfileid: "75850166"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>노출되지 않은 잠금 개체에 대한 SAL 내장 함수  
  특정 잠금 개체는 연결된 잠금 함수의 구현에 의해 노출되지 않습니다.  다음 표에서는 이러한 노출되지 않는 잠금 개체에서 작동하는 함수에 주석을 사용하도록 설정하는 SAL 내장 변수를 보여 줍니다.  
   
-|Annotation|설명|  
+|주석|Description|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|취소 스핀 잠금을 설명합니다.|  
 |`_Global_critical_region_`|임계 영역을 설명합니다.|  
@@ -101,7 +101,7 @@ ms.locfileid: "75850166"
 ## <a name="shared-data-access-annotations"></a>공유 데이터 액세스 주석  
  다음 표에서는 공유 데이터 액세스에 대한 주석을 보여 줍니다.  
   
-|Annotation|설명|  
+|주석|Description|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|변수에 주석을 추가하고 변수가 엑세스될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|  
 |`_Interlocked_`|변수에 주석을 추가하며 `_Guarded_by_(_Global_interlock_)`와 동일합니다.|  

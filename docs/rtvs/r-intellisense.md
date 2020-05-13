@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999043"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-Visual Studio IntelliSense를 사용하면 코드를 작성할 때 직접 보이는 곳에 호출할 수 있는 함수, 개체 멤버, 함수 인수 및 [코드 조각](code-snippets-for-r.md)에 대한 정보가 표시됩니다. 또한 입력할 때 가능한 완성이 표시되고 **Tab** 또는 **Enter** 키를 누르면 완성됩니다. **고급** 탭에 대해서는 [편집기 옵션](editing-r-code-in-visual-studio.md#editor-options)을 참조하세요. IntelliSense는 편집기 및 [대화형 창](interactive-repl-for-r-in-visual-studio.md)에서 둘 다 사용할 수 있습니다.
+Visual Studio IntelliSense를 사용하면 코드를 작성할 때 직접 보이는 곳에 호출할 수 있는 함수, 개체 멤버, 함수 인수 및 [코드 조각](code-snippets-for-r.md)에 대한 정보가 표시됩니다. 또한 입력할 때 가능한 완성이 표시되고 **Tab** 또는 **Enter** 키를 누르면 완성됩니다. [고급](editing-r-code-in-visual-studio.md#editor-options) 탭에 대해서는 **편집기 옵션**을 참조하세요. IntelliSense는 편집기 및 [대화형 창](interactive-repl-for-r-in-visual-studio.md)에서 둘 다 사용할 수 있습니다.
 
 ![함수 시그니처를 표시하는 IntelliSense](media/intellisense-function-signature.png)
 

@@ -1,29 +1,29 @@
 ---
-title: RequiredPlatformVersion 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 필수플랫폼버전 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd166e41588ee440d9e0a1e90494aaa8f5091909
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334149"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701490"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 요소 (Visual Studio 템플릿)
-프로젝트 템플릿이 제대로 작동 하는 데 필요한 운영 체제의 최소 버전을 지정 합니다. 이 요소는 프로젝트 템플릿을 만드는 데 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 앱.
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>필수 플랫폼버전 요소(비주얼 스튜디오 템플릿)
+프로젝트 템플릿이 올바르게 작동하는 데 필요한 운영 체제의 최소 버전을 지정합니다. 이 요소는 앱을 만드는 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 프로젝트 템플릿에 사용됩니다.
 
- `RequiredPlatformVersion` 운영 체제의 버전을 사용 하 여 직접 값과 비교 됩니다. 경우는 `RequiredPlatformVersion` 운영 체제 버전 보다 높은 템플릿이 표시 되지 않습니다 합니다 **새 프로젝트** 대화 상자. 에 대 한 템플릿을 지정 하려면 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 더 높고, 설정 또는 `RequiredPlatformVersion` 6.2.0 하 합니다. 에 대 한 템플릿을 지정 하려면 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 더 높고, 설정 또는 `RequiredPlatformVersion` 를 6.3.0으로 합니다.
+ 이 `RequiredPlatformVersion` 값은 운영 체제 버전과 직접 비교됩니다. 운영 체제 버전보다 높으면 새 프로젝트 대화 상자에 템플릿이 나타나지 않습니다. **New Project** `RequiredPlatformVersion` 에 대한 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 템플릿을 지정하려면 `RequiredPlatformVersion` 6.2.0으로 설정합니다. 에 대한 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 템플릿을 지정하려면 `RequiredPlatformVersion` 6.3.0으로 설정합니다.
 
- 지정 하는 템플릿 `RequiredPlatformVersion`= 8 이전 고객와 호환 되는 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 템플릿.
+ =8을 `RequiredPlatformVersion`지정하는 템플릿은 이전 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 고객 템플릿과 호환됩니다.
 
- VSTemplate TemplateData... TargetPlatformName RequiredPlatformVersion
+ VS 템플릿 템플릿 데이터 ..... 대상 플랫폼 이름 필수 플랫폼버전
 
 ## <a name="syntax"></a>구문
 
@@ -42,15 +42,15 @@ ms.locfileid: "66334149"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|프로젝트 템플릿의 대상 플랫폼을 지정합니다.|
+|[템플릿플랫폼 이름](../extensibility/templatedata-element-visual-studio-templates.md)|프로젝트 템플릿의 대상 플랫폼을 지정합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
 ## <a name="remarks"></a>설명
- 이 텍스트 템플릿에 필요한 최소 운영 체제 버전을 지정 합니다.
+ 이 텍스트는 템플릿에 필요한 최소 운영 체제 버전을 지정합니다.
 
 ## <a name="example"></a>예제
  이 예제에서는 프로젝트 템플릿이 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 이상을 대상으로 하도록 지정합니다.
@@ -68,7 +68,7 @@ ms.locfileid: "66334149"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고자료
-- [TargetPlatformName 요소 (Visual Studio 템플릿)](../extensibility/targetplatformname-element-visual-studio-templates.md)
+## <a name="see-also"></a>참조
+- [대상 플랫폼 이름 요소(비주얼 스튜디오 템플릿)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

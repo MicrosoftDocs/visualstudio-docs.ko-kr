@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588579"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306850"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio에 대한 환경 설정
 
@@ -46,7 +46,7 @@ Visual Studio를 처음 연 후 개발 설정을 변경하려면 다음 단계�
 
 1. **다시 설정 완료** 페이지에서 **닫기**를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [여러 컴퓨터 간에 설정 동기화](synchronized-settings-in-visual-studio.md)
 - [Visual Studio IDE 개인 설정](personalizing-the-visual-studio-ide.md)

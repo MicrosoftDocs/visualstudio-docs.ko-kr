@@ -1,5 +1,5 @@
 ---
-title: 스크립트 디버깅의 제한 사항 | Microsoft Docs
+title: 스크립트 디버깅에 대 한 제한 사항 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,12 +18,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ea088eadc09d45d576dd3c9cd33e5d9e2d79fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f4f8f1e2fb014dc812bb5980d333e0a851f9222
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160634"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476811"
 ---
 # <a name="limitations-on-script-debugging"></a>스크립트 디버깅의 제한 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "68160634"
   
 - 중단점은 `<script>` 블록 내에서 설정되어야 합니다. 인라인 스크립트 또는 `<% %>` 블록에 있는 중단점은 매핑할 수 없습니다.  
   
-- 페이지의 브라우저 URL에는 페이지 이름이 포함되어야 합니다. http://microsoft.com/default.apsx )을 입력합니다. 중단점 매핑은 같은 주소에서 리디렉션을 인식할 수 없는 http://microsoft.com 기본 페이지에 있습니다.  
+- 페이지의 브라우저 URL에는 페이지 이름이 포함되어야 합니다. `http://microsoft.com/default.apsx`)을 입력합니다. 중단점 매핑은 `http://microsoft.com`와 같은 주소에서 기본 페이지로의 리디렉션을 인식할 수 없습니다.  
   
 - 중단점은 ASPX 컨트롤(ascx) 파일, 마스터 페이지 또는 해당 페이지에 포함된 다른 파일에서가 아니라 브라우저 URL에 지정된 페이지에서 설정되어야 합니다. 포함된 페이지에서 설정된 중단점은 매핑할 수 없습니다.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "68160634"
 - `<script id="">` 블록에서 설정된 중단점의 경우 중단점 매핑에서 `id` 특성이 무시됩니다.  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>중단점 매핑 및 중복된 줄  
- 서버 쪽 및 클라이언트 쪽 스크립트에서 해당하는 위치를 찾기 위해 중단점 매핑 알고리즘은 각 줄의 코드를 검사합니다. 이 알고리즘에서는 각 줄이 고유하다고 가정합니다. 두 개 이상의 줄에 같은 코드가 포함된 경우 이 중복된 줄 중 하나에 중단점을 설정하면 중단점 매핑 알고리즘이 클라이언트 쪽 파일에서 다른 중복된 줄을 잘못 선택할 수 있습니다. 이 문제를 방지하려면 중단점을 설정한 줄에 주석을 추가합니다. 예를 들어:  
+ 서버 쪽 및 클라이언트 쪽 스크립트에서 해당하는 위치를 찾기 위해 중단점 매핑 알고리즘은 각 줄의 코드를 검사합니다. 이 알고리즘에서는 각 줄이 고유하다고 가정합니다. 두 개 이상의 줄에 같은 코드가 포함된 경우 이 중복된 줄 중 하나에 중단점을 설정하면 중단점 매핑 알고리즘이 클라이언트 쪽 파일에서 다른 중복된 줄을 잘못 선택할 수 있습니다. 이 문제를 방지하려면 중단점을 설정한 줄에 주석을 추가합니다. 예를 들면 다음과 같습니다.  
   
 ```  
 i++ ;  

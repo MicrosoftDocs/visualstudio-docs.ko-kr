@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 12/10/2019
+ms.date: 03/16/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125366"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437738"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.4 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.5 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -206,7 +206,7 @@ Azure VM에서 실행되는 ASP.NET(Core 및 데스크톱) 애플리케이션을
 
 ## <a name="whats-next"></a>새로운 기능
 
-Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 최신 혁신 기능을 자세히 알아보려면 [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)를 확인하세요. 미리 보기에서 현재까지 릴리스된 내용에 대한 기록은 [미리 보기 릴리스 노트](/visualstudio/releases/2019/release-notes-preview/)를 살펴보세요.
+Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 최신 혁신 기능을 자세히 알아보려면 [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)를 확인하세요. 미리 보기에서 현재까지 릴리스된 내용에 대한 기록은 [미리 보기 릴리스 정보](/visualstudio/releases/2019/release-notes-preview/)를 살펴보세요. 다음 출시 예정 목록은 [Visual Studio 로드맵](/visualstudio/productinfo/vs-roadmap)을 참조하세요.
 
 Visual Studio 2019에서 진행 중인 다른 기능에 대해 더 알고 싶은가요? [Visual Studio 로드맵](/visualstudio/productinfo/vs-roadmap/)을 참조하세요.
 
@@ -221,7 +221,7 @@ Visual Studio 2019에서 진행 중인 다른 기능에 대해 더 알고 싶은
 ## <a name="see-also"></a>참조
 
 * [Visual Studio 2019 릴리스 정보](/visualstudio/releases/2019/release-notes/)
-* [Visual Studio 2019 SDK의 새로운 기능](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Mac용 Visual Studio 2019 릴리스 정보](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Microsoft 빌드 2019 회의](https://www.microsoft.com/build)
-* [Microsoft Connect(); 2018 회의](https://www.microsoft.com/connectevent)
+* [Visual Studio 2019 SDK의 새로운 기능](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Microsoft Build 컨퍼런스](https://www.microsoft.com/build)
+* [Microsoft Ignite 컨퍼런스](https://www.microsoft.com/ignite)
