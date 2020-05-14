@@ -1,4 +1,4 @@
----
+﻿---
 title: 그래픽 진단 시작 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
@@ -20,6 +20,7 @@ ms.locfileid: "77557923"
 
 ## <a name="requirements"></a>요구 사항
  Visual Studio에서 그래픽 진단을 사용하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용해야 합니다.  Visual Studio Code를 비롯한 다른 버전에는 이 기능이 포함되어 있지 않습니다.
+
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 

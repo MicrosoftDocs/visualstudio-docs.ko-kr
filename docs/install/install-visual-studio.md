@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio 설치
 titleSuffix: ''
 description: Visual Studio를 설치하는 방법을 단계별로 알아봅니다.
@@ -125,7 +125,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
    * Visual Studio Community용 **vs_community.exe**
    * Visual Studio Professional용 **vs_professional.exe**
-   * Visual Studio Enterprise용 **vs_enterprise.exe**
+   * Visual Studio Enterprise를 설치하기 위한 **vs_enterprise.exe**
 
    사용자 계정 컨트롤 알림을 받으면 **예**를 선택합니다.
 
@@ -141,11 +141,11 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 1. **Visual Studio 설치 관리자**에서 원하는 워크로드를 찾습니다.
 
-   ![Visual Studio 2017: 워크로드 설치](../install/media/vs-installer-installing-workloads.png)
+   ![Visual Studio 2017: 작업 설치](../install/media/vs-installer-installing-workloads.png)
 
      예를 들어 ".NET 데스크톱 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
-1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
+1. 원하는 작업를 선택한 후 **설치**를 선택합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
 
@@ -155,10 +155,10 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 1. **Visual Studio 설치 관리자**에서 원하는 워크로드를 찾습니다.
 
-   ![Visual Studio 2019: 워크로드 설치](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019: 작업 설치](../install/media/vs-2019/vs-installer-workloads.png)
 
      예를 들어 "ASP.NET 및 웹 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
-
+     
 1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
@@ -166,7 +166,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
  ::: moniker-end
 
 > [!TIP]
-> 설치 후에 언제든지 초기에 설치하지 않은 워크로드 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기에서 설치할 워크로드 또는 구성 요소를 선택합니다. 그런 다음, **수정**을 선택합니다.
+> 설치 후에 언제든지 초기에 설치하지 않은 작업 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...**로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기에서 설치할 작업 또는 구성 요소를 선택합니다. 그런 다음, **수정**을 선택합니다.
 
 ## <a name="step-5---choose-individual-components-optional"></a>5단계 - 개별 구성 요소 선택(선택 사항)
 

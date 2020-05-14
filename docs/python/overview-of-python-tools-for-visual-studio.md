@@ -163,7 +163,7 @@ Python용 Azure 라이브러리는 Windows, Mac OS X 및 Linux 앱에서 Azure �
 
 **질문: Mac용 Visual Studio에서 Python 지원을 사용할 수 있나요?**
 
-대답: 이번에는 아니지만 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)에 대한 요청을 긍정적으로 평가할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/) 설명서에서는 지원되는 현재 개발 유형을 식별합니다. 한편, Windows, Mac 및 Linux의 Visual Studio Code는 [사용 가능한 확장을 통해 Python에서 잘 작동](https://code.visualstudio.com/docs/languages/python)합니다.
+대답: 이번에는 아니지만 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)에 대한 요청을 긍정적으로 검토할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/) 설명서에서는 지원되는 현재 개발 유형을 확인합니다. 한편, Windows, Mac 및 Linux의 Visual Studio Code는 [사용 가능한 확장을 통해 Python에서 잘 작동](https://code.visualstudio.com/docs/languages/python)합니다.
 
 **질문: UI를 빌드하는 데 Python과 함께 무엇을 사용할 수 있나요?**
 

@@ -1,0 +1,9 @@
+newPRWelcomeComment: >
+  지역화된 콘텐츠에 기여해 주셔서 감사합니다! 
+  콘텐츠에 대한 모든 기여는 다음 지침을 준수해야 합니다.
+  1. [Microsoft 언어 스타일 가이드](https://www.microsoft.com/Language/StyleGuides): 영어를 다른 언어로 번역할 때 텍스트를 읽는 방법을 설명합니다.
+  2. [Microsoft 언어 포털](https://www.microsoft.com/language): Microsoft 제품에서 사용되는 영어 및 해당 번역으로 된 기술 관련 **용어**를 제공합니다.
+  계속 성장하는 지역화 커뮤니티에 참여하면 [커뮤니티 지역화 Wiki](https://github.com/Microsoft/Localization/wiki)를 방문하여 커뮤니티 지역화 프로그램 및 Microsoft 프로그램에 기여하는 기타 방법에 대해 자세히 알아볼 수 있습니다. 또한 이 페이지에서 PR 승인 프로세스와 몇 가지 <PR 관리> 팁도 공유합니다.
+  계속 기역하고 <지역화> 기여에 대한 포인트를 받아 [기여자 순위표](https://microsoftl10n.github.io/)에서 더 높은 순위를 차지하세요!
+
+  Microsoft 개발자 관계 인터내셔널 그룹

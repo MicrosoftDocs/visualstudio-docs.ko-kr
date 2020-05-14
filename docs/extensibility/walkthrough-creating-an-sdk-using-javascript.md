@@ -1,4 +1,4 @@
----
+﻿---
 title: '연습: 자바스크립트를 사용하여 SDK 만들기 | 마이크로 소프트 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual

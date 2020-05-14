@@ -43,7 +43,9 @@ ms.locfileid: "72738163"
 
  [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md) CRT 디버그 라이브러리 사용, 보고용 매크로, malloc와 _malloc_dbg의 차이, 디버그 후크 함수 작성, CRT 디버그 힙 등을 비롯한 C 런타임 라이브러리에 대한 디버깅 기술에 대한 링크를 제공합니다.
 
- [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md) C++ 프로그램 디버깅에 대한 자주 묻는 질문에 대한 대답을 제공합니다.
+
+[네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md) C++ 프로그램 디버깅에 대한 자주 묻는 질문에 대한 대답을 제공합니다.
+
 
  [COM 및 ActiveX 디버깅](../debugger/com-and-activex-debugging.md) Com 및 ActiveX 디버깅에 사용할 수 있는 도구를 포함하여 COM 및 ActiveX 응용 프로그램 디버깅에 대한 정보를 제공합니다.
 

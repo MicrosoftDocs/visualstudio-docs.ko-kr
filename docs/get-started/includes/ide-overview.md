@@ -1,4 +1,4 @@
----
+﻿---
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
