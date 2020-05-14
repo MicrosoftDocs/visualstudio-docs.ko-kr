@@ -1,5 +1,5 @@
 ---
-title: '방법: 인라인 어셈블리 코드 디버깅 | Microsoft Docs'
+title: '방법: 인라인 어셈블리 코드 디버그 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62894302"
@@ -39,7 +39,7 @@ ms.locfileid: "62894302"
 
 2. 등록 내용은 **레지스터** 창을 참조하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [디버거 보안](../debugger/debugger-security.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

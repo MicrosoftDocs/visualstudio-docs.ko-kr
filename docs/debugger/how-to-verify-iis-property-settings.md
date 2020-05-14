@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62846430"
@@ -35,7 +35,7 @@ IIS 관리 도구를 사용하여 웹 애플리케이션의 속성을 설정할 
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>웹 애플리케이션에 대한 IIS 설정을 확인하려면
 
-1. 엽니다는 **관리 도구** 창: 에 **시작** 메뉴에서 **프로그램**를 클릭 하 고 **관리 도구**합니다. **관리 도구**가 **프로그램** 메뉴에 없으면 **제어판**에서 찾습니다.
+1. **관리 도구** 창을 엽니다. **시작** 메뉴에서 **프로그램**을 가리킨 다음 **관리 도구**를 클릭합니다. **관리 도구**가 **프로그램** 메뉴에 없으면 **제어판**에서 찾습니다.
 
    - Windows 2000에서는 **인터넷 서비스 관리자**를 선택합니다.
 
@@ -59,7 +59,7 @@ IIS 관리 도구를 사용하여 웹 애플리케이션의 속성을 설정할 
 
    3. **확인**을 클릭하여 **인증 방법** 대화 상자를 닫습니다.
 
-5. ATL 서버 애플리케이션의 경우 DEBUG 동사가 ISAPI 확장과 관련이 있는지 여부를 확인합니다. 자세한 내용은 [방법: DEBUG 동사 확장이 연결](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)합니다.
+5. ATL 서버 애플리케이션의 경우 DEBUG 동사가 ISAPI 확장과 관련이 있는지 여부를 확인합니다. 자세한 내용은 [방법: DEBUG 동사를 확장과 연결](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)을 참조하세요.
 
 6. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션의 경우, 해당 애플리케이션의 가상 폴더에 **IIS(인터넷 정보 서비스) 관리자**, **인터넷 서비스 관리자** 또는 **인터넷 정보 서비스**에 설정된 애플리케이션 이름이 있는지 확인합니다.
 
@@ -77,6 +77,6 @@ IIS 관리 도구를 사용하여 웹 애플리케이션의 속성을 설정할 
 
 9. **확인**을 클릭하여 **IIS(인터넷 정보 서비스) 관리자**, **인터넷 서비스 관리자** 또는 **인터넷 정보 서비스** 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [문제 해결](../debugger/debugging-web-applications-troubleshooting.md)

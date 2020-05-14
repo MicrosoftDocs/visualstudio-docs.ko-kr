@@ -1,5 +1,5 @@
 ---
-title: Web Form 디버그 | Microsoft Docs
+title: 웹 양식 디버그 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62901635"
@@ -48,7 +48,7 @@ ms.locfileid: "62901635"
 
 3. **템플릿** 창에서 **ASP.NET 웹 사이트**를 클릭합니다.
 
-4. 에 **위치** 줄, 클릭 **HTTP** 목록에서 및 텍스트 상자에 입력 **http://localhost/WebSite** 합니다.
+4. **위치** 줄의 목록에서 **HTTP**를 클릭하고 텍스트 상자에 **http://localhost/WebSite** 를 입력합니다.
 
 5. **언어** 목록에서 **Visual C#** 또는 **Visual Basic**을 클릭합니다.
 
@@ -68,7 +68,7 @@ ms.locfileid: "62901635"
 
 11. 끌어 놓은 단추 컨트롤을 두 번 클릭합니다.
 
-     이렇게 하면 코드 페이지: Default.aspx.cs에 대 한 C# 의 경우 default.aspx.vb [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]합니다. 커서는 `Button1_Click` 함수에 있어야 합니다.
+     이렇게 하면 다음의 코드 페이지로 이동합니다. C#에 대해 Default.aspx.cs 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에 대해 Default.aspx.vb입니다. 커서는 `Button1_Click` 함수에 있어야 합니다.
 
 12. `Button1_Click` 함수에 다음 코드를 추가합니다.
 
@@ -154,7 +154,7 @@ ms.locfileid: "62901635"
 
     Web Form이 Internet Explorer에서 실행되지만 디버거가 연결되지는 않습니다.
 
-4. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스에 연결합니다. 자세한 내용은 [배포 된 웹 응용 프로그램 디버깅](../debugger/debugging-deployed-web-applications.md)합니다.
+4. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스에 연결합니다. 자세한 내용은 [배포된 웹 애플리케이션 디버깅](../debugger/debugging-deployed-web-applications.md)을 참조하세요.
 
 5. Internet Explorer에서 폼의 단추를 클릭합니다.
 
@@ -162,6 +162,6 @@ ms.locfileid: "62901635"
 
 6. 디버깅이 완료되면 **디버그** 메뉴에서 **디버깅 중지**를 클릭합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [ASP.NET 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

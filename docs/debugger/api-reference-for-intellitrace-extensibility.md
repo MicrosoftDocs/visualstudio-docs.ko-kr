@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62564296"
@@ -23,12 +23,12 @@ ms.locfileid: "62564296"
 
 ## <a name="in-this-section"></a>단원 내용
 
-이 네임 스페이스는 IntelliTrace 확장성 Api를 포함 합니다.
+이 네임스페이스에는 IntelliTrace 확장성 API가 포함되어 있습니다.
 
 - <xref:Microsoft.VisualStudio.IntelliTrace>
 
 ## <a name="related-sections"></a>관련 단원
 
-[IntelliTrace](../debugger/intellitrace.md) IntelliTrace로 디버깅 하는 방법에 대 한 정보를 제공 합니다.
+[IntelliTrace](../debugger/intellitrace.md) IntelliTrace를 사용한 디버깅 방법에 대한 정보를 제공합니다.
 
-[개발자 코드 샘플](https://code.msdn.microsoft.com/) IntelliTrace 확장성을 사용 하는 방법을 보여 주는 샘플 응용 프로그램을 호스팅합니다.
+[개발자 코드 샘플](https://code.msdn.microsoft.com/)IntelliTrace 확장성의 사용 방법을 보여 주는 샘플 애플리케이션을 호스팅합니다.
