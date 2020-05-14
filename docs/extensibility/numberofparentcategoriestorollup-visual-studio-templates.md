@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp 요소 (템플릿)
+title: 번호OfParentCategoriesToRollUp 요소(템플릿)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65787aef175052eb69c6dedfff2e095f16c81ef1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336337"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702364"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp 요소 (Visual Studio 템플릿)
-부모 범주에 템플릿 표시 하는 횟수를 지정 합니다 **새 프로젝트** 대화 상자.
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp 요소(비주얼 스튜디오 템플릿)
+**새 프로젝트** 대화 상자에 템플릿을 표시할 상위 범주 수를 지정합니다.
 
- \<VSTemplate> \<TemplateData> \<NumberOfParentCategoriesToRollUp>
+ \<VS템플릿 \<> 템플릿데이터> \<번호OfParentCategoriesToRollup>
 
 ## <a name="syntax"></a>구문
 
@@ -45,20 +45,20 @@ ms.locfileid: "66336337"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
- `integer` 값이 필요 합니다.
+ `integer` 값이 필요합니다.
 
- 이 값에서 템플릿을 표시 하는 부모 범주 수를 지정 합니다 **새 프로젝트** 대화 상자.
+ 이 값은 **새 프로젝트** 대화 상자에 템플릿을 표시할 상위 범주 수를 지정합니다.
 
 ## <a name="remarks"></a>설명
  `NumberOfParentCategoriesToRollUp`는 선택적 요소입니다.
 
 ## <a name="example"></a>예제
- 이 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다. 이 메타 데이터를 사용 하 여 템플릿 최상위 수준 아래 두 수준 폴더에 배치 되 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 노드를 서식 파일에서 최상위 노드에 나타납니다 합니다 **새 프로젝트** 대화 상자. 경우는 `NumberOfParentCategoriesToRollUp` 템플릿을 나타나는 노드는에서 실제로 설정 하지 않으면.
+ 이 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램에 대한 메타데이터를 보여 줍니다. 이 메타데이터가 있는 템플릿이 최상위 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 노드 아래에 두 개의 폴더 수준 아래에 배치되면 템플릿이 새 **프로젝트** 대화 상자의 최상위 노드에 표시됩니다. 를 `NumberOfParentCategoriesToRollUp` 설정하지 않으면 템플릿이 물리적으로 위치한 노드에만 나타납니다.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -85,6 +85,6 @@ ms.locfileid: "66336337"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>참조
+- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

@@ -10,24 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888656"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649625"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
 JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 JavaScript 코드를 작성할 때 대부분 또는 모든 표준 편집 지원(코드 조각, IntelliSense 등)을 사용할 수 있습니다. 여러 애플리케이션 형식 및 서비스에 대해 JavaScript 코드를 작성할 수 있습니다.
 
 > [!NOTE]
-> 모든 Microsoft의 JavaScript API 참조(500개 이상의 페이지)를 docs.microsoft.com에서 MDN 사본으로 리디렉션하여 [MDN 웹 문서](https://developer.mozilla.org/en-US/)를 웹의 원스톱, 초연 개발 리소스로 만들려는 커뮤니티 차원의 노력에 동참하였습니다. 자세한 내용은 이 [공지](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)를 참조하세요.
+> Microsoft는 Microsoft의 모든(500개 이상의 페이지) JavaScript API 참조를 docs.microsoft.com에서 MDN 사본으로 리디렉션함으로써 [MDN 웹 문서](https://developer.mozilla.org/en-US/)를 웹의 프리미엄 원스톱 개발 리소스로 만들려는 커뮤니티 차원의 노력에 동참했습니다. 자세한 내용은 이 [공지](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)를 참조하세요.
 
-## <a name="ES6"></a> ECMAScript 2015(ES6) 이상 지원
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> ECMAScript 2015(ES6) 이상 지원
 
 Visual Studio에서는 이제 ECMAScript 2015/2016 등의 ECMAScript 언어 업데이트 구문을 지원합니다.
 
@@ -59,7 +58,7 @@ tsconfig 파일에 대한 필수 설정은 다음과 같습니다.
 출력 위치 및 `node_modules` 또는 `temp`와 같은 프로젝트 이외 폴더를 이 설정에 추가해야 합니다.
 - `enableAutoDiscovery`: 이 설정을 통해 이전에 설명한 대로 정의 파일을 자동으로 검색 및 다운로드할 수 있습니다.
 - `compileOnSave`: 이 설정은 언제든 소스 파일이 Visual Studio에서 저장되면 다시 컴파일해야 하는 경우 컴파일러에 알립니다.
-- `typeAcquisition`: 이 설정 세트를 통해 자동 형식 인식의 동작([이 섹션](/visualstudio/ide/javascript-intellisense#Auto)에서 자세히 설명)을 제어합니다.
+- `typeAcquisition`: 이 설정 세트를 통해 자동 형식 인식의 동작([이 섹션](../ide/javascript-intellisense.md#Auto)에서 자세히 설명)을 제어합니다.
 
 JavaScript 파일을 CommonJS 모듈로 변환하고 `./out` 폴더에 두려면 다음 `tsconfig.json` 파일을 사용할 수 있습니다.
 
@@ -119,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)]의 JavaScript IntelliSense는 이제 매개 변수 및 멤버 목록에 대한 훨씬 더 많은 정보를 표시합니다. 이 새로운 정보는 코드를 더 잘 이해하도록 내부에서 정적 분석으로 사용하는 TypeScript 언어 서비스를 통해 제공됩니다. [여기](/visualstudio/ide/javascript-intellisense/)에서 새 IntelliSense 환경과 작동 방식에 대해 자세히 알아볼 수 있습니다.
 
-## <a name="JSX"></a> JSX 구문 지원
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> JSX 구문 지원
 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)]의 JavaScript에서는 JSX 구문을 다양하게 지원합니다. JSX는 JavaScript 파일 내에서 HTML 태그를 허용하는 구문 집합입니다.
 
@@ -261,7 +260,7 @@ VSDoc는 이제 더 쉽게 작성할 수 있고 JavaScript의 표준으로 승�
 새 언어 서비스는 실행 엔진이 아니라 정적 분석을 통해 구현되므로(차이점에 대한 정보는 [이 문제](https://github.com/Microsoft/TypeScript/issues/4789) 참조) 더 이상 감지되지 않는 JavaScript 패턴이 몇 가지 있습니다.
 가장 일반적인 패턴은 “expando” 패턴입니다.
 현재 언어 서비스에서는 선언 후에 추가된 속성이 있는 개체에서 IntelliSense를 제공할 수 없습니다.
-예:
+다음은 그 예입니다.
 
 ```js
 var obj = {};

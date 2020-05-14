@@ -1,18 +1,18 @@
 ---
 title: 코드 검사 문제 해결
-ms.date: 11/04/2016
+ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565977"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528000"
 ---
 # <a name="troubleshoot-code-coverage"></a>코드 검사 문제 해결
 
@@ -22,7 +22,12 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 
 **테스트** 메뉴의 **코드 검사 분석** 명령을 선택하고 빌드 및 테스트가 성공적으로 실행될 경우 **코드 검사** 창에 결과 목록이 표시됩니다. 자세한 내용을 보려면 항목을 확장해야 합니다.
 
+::: moniker range=">=vs-2019"
+![강조 표시된 코드 검사 결과](../test/media/vs-2019/codecoverage1.png)
+::: moniker-end
+::: moniker range="vs-2017"
 ![강조 표시된 코드 검사 결과](../test/media/codecoverage1.png)
+::: moniker-end
 
 자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 

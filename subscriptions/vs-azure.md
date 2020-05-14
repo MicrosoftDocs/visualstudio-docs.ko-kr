@@ -3,15 +3,16 @@ title: Microsoft Azure 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
+ms.date: 04/28/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 01c31d96b7ee3e696f941725bbcb314c5f0e0e60
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542674"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564175"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -41,6 +42,29 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
 
 0. 나중에 쉽게 액세스할 수 있도록 [Azure Portal](https://portal.azure.com)에 책갈피를 지정합니다.
 
+## <a name="maintain-a-subscription-to-use-monthly-credits"></a>월간 크레딧을 사용하여 구독 유지 관리
+Visual Studio 구독이 만료되거나 제거되면 월간 Azure 개발/테스트 개별 크레딧을 비롯한 모든 구독 혜택을 더 이상 사용할 수 없습니다. 월간 크레딧을 사용하여 Azure를 계속 사용하려면 구독을 갱신하거나 새 구독을 구매하거나 Azure 혜택을 Azure 개발/테스트 개별 크레딧이 포함된 활성 구독을 이전해야 합니다.  
+
+> [!IMPORTANT]
+> 현재 Azure 구독이 사용할 수 없게 되거나 데이터에 액세스할 수 없게 되기 전에 리소스를 다른 Azure 구독으로 이전해야 합니다.  
+
+Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하여 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
+
+- **Visual Studio 구독을 직접 구매하는 경우** [Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=)를 통해 새 구독을 구매하거나 구독을 갱신합니다.  
+- **조직의 누군가가 조직의 구독을 구매하는 경우**, [Visual Studio 구독 관리자에게 문의](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
+- 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우**, Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
+
+아래 자격 표를 사용하여 각 구독 유형에 포함된 크레딧 수를 확인합니다.  
+
+
+## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Azure 구독을 종량제로 변환
+
+더 이상 Visual Studio 구독 또는 크레딧이 필요하지 않지만 Azure 리소스를 계속 사용하려는 경우 다른 Azure 구독으로 [리소스를 이전](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)하거나 [지출 한도를 제거](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)하여 Azure 구독을 종량제 가격 책정으로 전환합니다. 
+
+이러한 작업 중 하나를 수행하지 않는 경우 전자 메일 알림을 받고 30일이 지나면 Azure 구독이 사용할 수 없게 되고 삭제됩니다.  
+
+## <a name="have-a-question"></a>질문이 있나요?
+리소스 이전, 지출 한도 제거 또는 기타 Azure 항목에 대해 궁금한 사항이 있으면 Azure Portal에서 [Azure 지원 요청을 제출](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)할 수 있습니다. 
 
 ## <a name="eligibility"></a>자격
 |                 구독 수준/프로그램                 |           이점           |                         갱신 가능?                          |
@@ -82,37 +106,18 @@ A:  Azure Portal에서 지원 인시던트를 제출하는 작업은 세 단계�
 ### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q: Azure DevTest 개별 크레딧을 사용하여 만든 지적 재산을 소유하는 방법
 A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 지적 재산은 해당 리소스를 제공하는 회사의 지적 재산입니다. 따라서 고용주를 통해 Visual Studio 구독을 받은 경우 해당 지적 재산권 정책이 적용됩니다. 
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q: Azure에 대한 내 액세스가 곧 종료된다는 메시지를 받았습니다.  Azure를 계속 사용하려면 어떻게 해야 합니까?
-A:  이 이메일은 Visual Studio 구독에 연결된 Azure 혜택을 사용하고 있으며 해당 구독이 만료 또는 제거되면 수신됩니다.  Azure를 계속 사용하기 위한 다음과 같은 몇 가지 옵션이 있습니다.
-
-**권장 조치:**
-
-Visual Studio Azure DevTest 개별 크레딧 및 할인을 계속 사용하려면 다음 단계 중 하나를 수행합니다.
-
-팀 또는 조직에 속한 누군가가 사용자를 대신하여 구독을 구매하는 경우 사용자 조직의 Visual Studio 관리자에게 연락하여 필요한 Azure DevTest 개별 크레딧 금액을 이용할 수 있는 자격을 부여하는 Visual Studio 구독을 요청합니다.   Azure 구독 전송에 대해 걱정할 필요가 없도록 이전에 구독이 할당된 동일한 사용자 ID에 새 구독을 할당하도록 관리자에게 요청합니다.
-
-직접 구독을 구입할 수 있는 경우 다음 중 하나를 수행하세요.
-1. Visual Studio Marketplace를 통해 연간 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 또는 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 클라우드 구독을 구매합니다.
-2. [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription)를 통해 현재 구독을 갱신하여 50% 이상의 할인을 활용합니다.
-
-[구독 및 해당 이점](https://visualstudio.microsoft.com/vs/pricing/)을 모두 비교합니다.
-
-Microsoft 계정에서 **동일한** 구독 수준의 다른 활성 Visual Studio 구독이 있는 경우 Visual Studio 구독 포털에서 [대체 계정](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions)을 추가하여 이 Azure 혜택에 연결할 수 있습니다. 제대로 작동하지 않을 경우 활성 Visual Studio 구독으로 [Azure 혜택을 전송](/azure/billing/billing-subscription-transfer/)해 볼 수도 있습니다.
-
-Microsoft 계정에서 **다른** 구독 수준의 다른 활성 Visual Studio 구독이 있는 경우 [Azure 고객 지원팀](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)에 문의하여 도움을 받으세요.
-
-구독에 지출 한도가 있고 만료되기 전에 조치를 취하지 않은 경우 Azure 구독의 사용자 Azure 구독을 사용할 수 없습니다. 종량제 상품으로 변환하여 계속 사용하려면 결제 수단을 추가하고 [지출 한도를 제거](/azure/billing/billing-spending-limit/)합니다.
-
-이 Visual Studio Azure 구독을 계속 사용하지 않으려면 언제든지 가상 머신 및 데이터베이스와 같은 리소스를 다른 Azure 구독으로 전송하고 이 구독을 [취소](https://azure.microsoft.com/support/cancel-account/)할 수도 있습니다.
-
-이 이메일이 잘못되었다고 생각된다면 [Azure 고객 지원팀](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)으로 문의하세요.
-
 ## <a name="support-resources"></a>지원 리소스
 - Azure와 관련하여 도움이 필요하세요?  다음 리소스를 확인하세요.
   - 기술 지원: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure 유용한 정보](https://microsoft.github.io/AzureTipsAndTricks/ "Azure 유용한 정보") 
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Microsoft 도구 및 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.

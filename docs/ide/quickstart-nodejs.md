@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4995c6b95ba12eb776130b17dab1911c47988871
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: f716421da3b9f888dbb7656c55db6814de88332b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180334"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "78235056"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 웹앱 만들기
 
 Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개에서는 간단한 Node.js 웹 애플리케이션을 만듭니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * Node.js 개발 워크로드와 Visual Studio가 설치되어 있어야 합니다.
 
@@ -41,7 +41,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 * Node.js 런타임을 설치해야 합니다.
 
-    아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
+    아직 설치하지 않은 경우 외부 프레임워크 및 라이브러리와의 호환성을 최대화하기 위해 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치하는 것이 좋습니다. Node.js는 32비트 및 64비트 아키텍처용으로 빌드됩니다. Node.js 워크로드에 포함된 Visual Studio의 Node.js 도구는 두 버전을 모두 지원합니다. 하나만 필요하며 Node.js 설치 관리자는 한 번에 하나의 설치만 지원합니다.
+    
+    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하여 **속성**을 선택하고 **Node.exe 경로**를 설정합니다). Node.js의 전역 설치를 사용하거나 각 Node.js 프로젝트에서 로컬 인터프리터 경로를 지정할 수 있습니다. 
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -49,7 +51,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 1. Node.js 런타임이 아직 설치되어 있지 않으면 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다.
 
-    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
+    자세한 내용은 필수 조건을 참조하세요.
 
 1. Visual Studio를 엽니다.
 
@@ -59,7 +61,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **Node.js**를 입력한 다음, **새 빈 Node.js 웹 애플리케이션 프로젝트 만들기**(JavaScript)를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션**을 선택한 후 **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션**을 선택한 후 **확인**을 선택합니다.
     ::: moniker-end
     **빈 Node.js 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **Node.js 개발** 워크로드를 추가해야 합니다. 자세한 지침은 [필수 조건](#prerequisites)을 참조하세요.
 

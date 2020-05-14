@@ -12,10 +12,10 @@ ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027278"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker 관련 Visual Studio 개발 문제 해결

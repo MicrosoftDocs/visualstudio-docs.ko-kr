@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847457"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 피드백 옵션

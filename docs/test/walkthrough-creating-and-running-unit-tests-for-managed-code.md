@@ -13,16 +13,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590711"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223673"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
 이 문서에서는 관리 코드에 대한 Microsoft 단위 테스트 프레임워크 및 Visual Studio **테스트 탐색기**를 사용하여 일련의 단위 테스트를 생성, 실행 및 사용자 지정하는 방법을 안내합니다. 개발 중인 C# 프로젝트로 시작하여 해당 코드를 실행해 보는 테스트를 만들어 테스트를 실행하고 결과를 검사합니다. 그런 다음, 프로젝트 코드를 변경하고 테스트를 다시 실행합니다.
+
+
 
 ## <a name="create-a-project-to-test"></a>테스트할 프로젝트 만들기
 
@@ -429,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>재테스트, 재작성 및 재분석
 
-테스트 중인 메서드에 버그가 있는데 `Debit` 메서드에서 <xref:System.ArgumentOutOfRangeException>을 throw하지 않는 경우라도 올바른 메시지가 예외와 함께 출력될 수 있습니다. 현재는 테스트 메서드가 이러한 사례를 처리하지 않습니다. `debitAmount` 값이 유효하면(즉, 잔액보다 작고 0보다 큼) 예외가 catch되지 않으므로 어설션이 절대로 시작되지 않습니다. 그런데도 테스트 메서드를 통과합니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.
+현재 테스트 메서드에서는 처리해야 하는 일부 사례를 처리하지 못합니다. 테스트 중인 메서드 `Debit` 메서드는 `debitAmount`가 잔액보다 크거나 0보다 작을 때 <xref:System.ArgumentOutOfRangeException>를 throw하지 못하는 경우에도 테스트 메서드가 전달됩니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.
 
 이것은 테스트 메서드의 버그입니다. 문제를 해결하려면 테스트 메서드 끝에 예외가 throw되지 않은 경우를 처리하도록 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션을 추가합니다.
 

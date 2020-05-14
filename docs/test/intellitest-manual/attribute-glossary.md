@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594307"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307000"
 ---
 # <a name="attribute-glossary"></a>특성 용어집
 
@@ -124,7 +124,7 @@ IntelliTest는 다양한 매개 변수를 사용하여 [매개 변수가 있는 
 매개 변수가 있는 단위 테스트:
 
 * 인스턴스 메서드여야 합니다.
-* [폭포수형 설정](settings-waterfall.md)에 따라 생성된 테스트가 배치되는 테스트 클래스에 [표시](input-generation.md#visibility)되어야 합니다.
+* [폭포수형 설정](input-generation.md#visibility)에 따라 생성된 테스트가 배치되는 테스트 클래스에 [표시](settings-waterfall.md)되어야 합니다.
 * 제한 없이 매개 변수를 사용할 수 있습니다.
 * 제네릭일 수 있습니다.
 
@@ -142,7 +142,7 @@ public partial class MyTests {
 <a name="pexexplorationattributebase"></a>
 ## <a name="pexexplorationattributebase"></a>PexExplorationAttributeBase
 
-[추가 정보](xref:Microsoft.Pex.Framework.PexExplorationAttributeBase)
+[자세한 정보](xref:Microsoft.Pex.Framework.PexExplorationAttributeBase)
 
 <a name="pexassemblysettings"></a>
 ## <a name="pexassemblysettings"></a>PexAssemblySettings
@@ -233,18 +233,18 @@ class CtorTest(int capacity) {
 <a name="pexallowedexceptionfromassembly"></a>
 ## <a name="pexallowedexceptionfromassembly"></a>PexAllowedExceptionFromAssembly
 
-[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromAssemblyAttribute)
+[자세한 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromAssemblyAttribute)
 
 <a name="pexallowedexceptionfromtype"></a>
 ## <a name="pexallowedexceptionfromtype"></a>PexAllowedExceptionFromType
 
-[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeAttribute)
+[자세한 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeAttribute)
 
 <a name="pexallowedexceptionfromtypeundertest"></a>
 ## <a name="pexallowedexceptionfromtypeundertest"></a>PexAllowedExceptionFromTypeUnderTest
 
-[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
+[자세한 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>피드백이 있으신가요?
+## <a name="got-feedback"></a>피드백이 있나요?
 
 아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

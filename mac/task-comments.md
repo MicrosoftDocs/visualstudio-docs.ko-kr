@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692320"
 ---
 # <a name="task-comments"></a>작업 주석
@@ -18,7 +18,7 @@ ms.locfileid: "67692320"
 
 ![작업 목록 기본 설정](media/source-editor-image10.png)
 
-새 작업 주석을 추가하려면 작업 키워드가 포함된 주석을 추가합니다. 예:
+새 작업 주석을 추가하려면 작업 키워드가 포함된 주석을 추가합니다. 다음은 그 예입니다.
 
 ```csharp
 //TODO: Finish this for all properties.

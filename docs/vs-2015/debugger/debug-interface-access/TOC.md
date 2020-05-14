@@ -25,7 +25,7 @@
 #### [BaseClass](baseclass.md)
 #### [BaseType](basetype.md)
 #### [CustomType](customtype.md)
-#### [크기](dimension.md)
+#### [Dimension](dimension.md)
 #### [열거형(디버그 인터페이스 액세스 SDK)](enum-debug-interface-access-sdk.md)
 #### [Friend(디버그 인터페이스 액세스 SDK)](friend-debug-interface-access-sdk.md)
 #### [FunctionArgType](functionargtype.md)

@@ -9,10 +9,10 @@ ms.topic: article
 ms.date: 07/23/2019
 ms.author: ghogen
 ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73188753"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub에 배포
@@ -49,7 +49,7 @@ Docker Hub 리포지토리가 없는 경우 [Docker Hub](https://hub.docker.com/
 
 [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)를 사용하여 CI/CD(연속 통합 및 지속적인 업데이트)를 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Azure App Service에 배포](deploy-app-service.md)
 [Visual Studio Container Tools](/visualstudio/containers/).

@@ -122,7 +122,7 @@ sections:
             html: <p>Visual Studio에서 Virtual Machines에 액세스</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: 가상 컴퓨터
+            title: Virtual Machines
   - title: 기타 Azure 개발 리소스
     items:
       - type: paragraph

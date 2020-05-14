@@ -3,17 +3,17 @@ title: Google Test for C++를 사용하는 방법
 description: Google Test를 사용하여 Visual Studio에서 C++ 단위 테스트를 만듭니다.
 ms.date: 05/06/2017
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926757"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279301"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio에서 Google Test for C++를 사용하는 방법
 
@@ -25,7 +25,7 @@ Visual Studio 2017 이상에서는 Google Test가 **C++를 통한 데스크톱 �
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Visual Studio 2019에서 Google Test 프로젝트 추가
 
-1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **프로젝트**를 선택합니다.
+1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 2. **언어**를 **C++** 로 설정하고 검색 상자에 **테스트**를 입력합니다. 결과 목록에서 **Google Test 프로젝트**를 선택합니다.
 3. 테스트 프로젝트에 이름을 지정하고 **확인**을 클릭합니다.
 
@@ -37,8 +37,8 @@ Visual Studio 2017 이상에서는 Google Test가 **C++를 통한 데스크톱 �
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Visual Studio 2017에서 Google Test 프로젝트 추가
 
-1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **프로젝트**를 선택합니다.
-2. 왼쪽 창에서 **Visual C++** > **테스트**를 선택한 다음, 가운데 창에서 **Google Test 프로젝트**를 선택합니다.
+1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
+2. 왼쪽 창에서 **Visual C++** >**테스트**를 선택한 다음, 가운데 창에서 **Google Test 프로젝트**를 선택합니다.
 3. 테스트 프로젝트에 이름을 지정하고 **확인**을 클릭합니다.
 
 ![새 Google Test 프로젝트](media/cpp-gtest-new-project.png)
@@ -65,7 +65,7 @@ Visual Studio 2017 이상에서는 Google Test가 **C++를 통한 데스크톱 �
 
 ## <a name="write-and-run-tests"></a>테스트 작성 및 실행
 
-이제 Google Test를 작성하고 실행할 준비가 되었습니다. 테스트 매크로에 대한 자세한 내용은 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. **테스트 탐색기**를 사용한 테스트 검색, 실행 및 그룹화에 대한 내용은 [테스트 탐색기를 사용하여 단위 테스트 실행](run-unit-tests-with-test-explorer.md)을 참조하세요.
+이제 Google Test를 작성하고 실행할 준비가 되었습니다. 테스트 매크로에 대한 자세한 내용은 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. [테스트 탐색기](run-unit-tests-with-test-explorer.md)를 사용한 테스트 검색, 실행 및 그룹화에 대한 내용은 **테스트 탐색기를 사용하여 단위 테스트 실행**을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

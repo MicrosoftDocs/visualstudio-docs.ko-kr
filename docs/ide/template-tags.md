@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189514"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153020"
 ---
 # <a name="add-tags-to-project-templates"></a>프로젝트 템플릿에 태그 추가
 
@@ -93,7 +93,7 @@ Visual Studio는 기본 제공되는 태그의 목록을 제공합니다. 기본
 
 다음은 Visual Studio에서 사용할 수 있는 기본 제공 태그를 보여 줍니다. 해당 값은 괄호 안에 표시됩니다.
 
-| 언어 | 플랫폼 | 프로젝트 형식 |
+| 언어 태그 | 플랫폼 태그 | 프로젝트 형식 태그 |
 | -- | -- | -- |
 | C++(`cpp`) | Android(`android`) | 클라우드(`cloud`) |
 | C#(`csharp`) | Azure(`azure`) | 콘솔(`console`) |
@@ -111,7 +111,7 @@ Visual Studio는 기본 제공되는 태그의 목록을 제공합니다. 기본
 | | | UWP(`uwp`) |
 | | | 웹(`web`) |
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제는 Visual C# 애플리케이션의 프로젝트 템플릿용 메타데이터를 보여 줍니다.
 
@@ -145,7 +145,7 @@ Visual Studio는 기본 제공되는 태그의 목록을 제공합니다. 기본
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](creating-project-and-item-templates.md)

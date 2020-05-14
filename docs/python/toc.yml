@@ -1,4 +1,4 @@
-- name: Visual Studio의 Python
+- name: Visual Studio 내 Python
   href: index.yml
 - name: 개요
   items:
@@ -16,7 +16,7 @@
       href: installing-python-interpreters.md
 - name: 빠른 시작
   items:
-    - name: Flask를 사용하여 웹앱 만들기
+    - name: Flask를 통해 웹앱 만들기
       href: ../ide/quickstart-python.md
       maintainContext: true
     - name: 템플릿으로 프로젝트 만들기
@@ -31,7 +31,7 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: 자습서
   items:
-    - name: Visual Studio의 Python
+    - name: Visual Studio 내 Python
       items:
         - name: 0 - Python 설치 지원
           href: tutorial-working-with-python-in-visual-studio-step-00-installation.md

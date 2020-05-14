@@ -11,25 +11,27 @@ helpviewer_keywords:
 - RequiresFramework35SP1Assembly task [MSBuild]
 - MSBuild, RequiresFramework35SP1Assembly task
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c1e640c3b6f7a285c10b2487f9758520facf11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caefe0887ca23cd4cee60c3a4ba2a6133e9893df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974620"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632773"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly 작업
+
 애플리케이션에 .NET Framework 3.5 SP1이 필요한지 여부를 확인합니다.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 표에서는 `RequiresFramework35SP1Assembly` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`Assemblies`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 애플리케이션에서 참조되는 어셈블리를 지정합니다.|
 |`CreateDesktopShortcut`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 설치하는 동안 데스크톱에서 바로 가기 아이콘을 만듭니다.|
@@ -43,9 +45,11 @@ ms.locfileid: "62974620"
 |`SuiteName`|선택적 `String` 매개 변수입니다.<br /><br /> **시작** 메뉴에서 애플리케이션을 설치할 폴더 이름을 지정합니다.|
 |`TargetFrameworkVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 이 애플리케이션의 대상 .NET Framework 버전을 지정합니다.|
 
-## <a name="remarks"></a>주의
- 이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
+## <a name="remarks"></a>설명
+
+ 이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
+
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

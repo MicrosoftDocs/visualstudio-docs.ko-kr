@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault 요소 (Visual Studio 템플릿)
+title: ShowByDefault 요소(비주얼 스튜디오 템플릿)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720097"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700105"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 요소 (Visual Studio 템플릿)
-@No__t_0 경우 템플릿이 지정 된 템플릿 [groupid](../extensibility/templategroupid-element-visual-studio-templates.md)에만 표시 되도록 지정 합니다.
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 요소(비주얼 스튜디오 템플릿)
+을 `false`통해 템플릿이 지정된 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)에서만 표시되도록 지정합니다.
 
- \<VSTemplate > \<TemplateData > \<ShowByDefault >
+ \<VS템플릿 \<> 템플릿데이터> \<ShowByDefault>
 
 ## <a name="syntax"></a>구문
 
@@ -33,17 +33,17 @@ ms.locfileid: "72720097"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음.
+ 없음
 
 ### <a name="child-elements"></a>자식 요소
- 없음.
+ 없음
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
@@ -52,8 +52,8 @@ ms.locfileid: "72720097"
 
  텍스트는 `true` 또는 `false`여야 합니다. true인 경우 템플릿이 모든 프로젝트 형식에 대해 표시되도록 지정합니다. false인 경우 템플릿이 지정된 `TemplateGroupID`에만 표시되도록 지정합니다.
 
-## <a name="remarks"></a>주의
- `ShowByDefault`는 선택적 요소입니다. 기본값은 `true`여야 합니다.
+## <a name="remarks"></a>설명
+ `ShowByDefault`는 선택적 요소입니다. 기본값은 `true`입니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.

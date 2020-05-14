@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Next | Microsoft Docs
+title: IEnumDebug 사용자 정의 속성::다음 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Next
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01d3f7f1459cf15525cfe6a1025a99e2eb41f8c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08228fe4a630eac37c38f4eb247dc91678d8e2e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333098"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717240"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
-열거형 시퀀스에서 사용자 지정 특성의 지정된 된 수를 검색 합니다.
+열거 순서에서 지정된 수의 사용자 지정 특성을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,17 +45,17 @@ int Next(
 
 ## <a name="parameters"></a>매개 변수
 `celt`\
-[in] 검색할 요소의 수입니다. 또한 최대 크기를 지정 된 `rgelt` 배열입니다.
+【인】 검색할 요소 수입니다. 또한 배열의 최대 크기를 `rgelt` 지정합니다.
 
 `rgelt`\
-[out] 배열을 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 채울 개체입니다.
+【아웃】 입력할 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 개체의 배열입니다.
 
 `pceltFetched`\
-[out] 에 실제로 반환 된 요소의 수를 반환 합니다. `rgelt`합니다.
+【아웃】 에서 실제로 반환된 요소 `rgelt`수를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 요소의 요청 된 수보다 적은; 반환 될 수 있으면이 고, 그렇지 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 `S_OK`를 반환합니다. 요청된 수보다 적은 수의 요소를 반환할 수 `S_FALSE` 있는 경우 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: f7a05f62685509a69fd5dfe8f758b4e5599b9324
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636581"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527934"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>먼저 Visual Studio IDE 살펴보기
 
@@ -21,13 +21,13 @@ ms.locfileid: "73636581"
 
 ::: moniker range="vs-2017"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Visual Studio의 기능을 계속 탐색하기 위해 새 프로젝트를 만들
 1. 표시되는 **새 프로젝트** 대화 상자에서 기본 프로젝트 이름을 그대로 사용하고 **확인**을 선택합니다.
 ::: moniker-end
 
-   프로젝트가 만들어지고 **편집기** 창에 *server.js*라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
+   프로젝트가 만들어지고 *편집기* 창에 **server.js**라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
 
    ![Visual Studio의 편집기](media/editor.png)
 

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585667"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>자동 복구, 환경, 옵션 대화 상자
@@ -38,6 +38,6 @@ ms.locfileid: "75585667"
 
 Visual Studio에서 자동 복구를 위해 생성된 파일을 보관할 기간을 지정하려면 이 옵션을 사용합니다.
 
-### <a name="see-also"></a>참조
+### <a name="see-also"></a>참고 항목
 
 - [옵션 대화 상자](../../ide/reference/options-dialog-box-visual-studio.md)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778598"
 ---
 # <a name="lines-view---contention-data"></a>줄 뷰 - 경합 데이터
@@ -63,7 +63,7 @@ ms.locfileid: "74778598"
 |**소스 줄 시작**|문이 시작되는 소스 파일의 줄 번호입니다.|
 |**소스 줄 끝**|문이 끝나는 소스 파일의 줄 번호입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [줄 뷰](../profiling/lines-view.md)
 - [줄 뷰 - 샘플링](../profiling/lines-view-dotnet-memory-sampling-data.md)

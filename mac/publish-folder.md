@@ -8,18 +8,18 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715900"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224500"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 폴더에 게시
 
 게시 도구를 사용하여 .NET Core 콘솔 또는 ASP.NET Core 앱을 폴더에 게시할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - .NET Core가 사용하도록 설정된 상태로 설치된 [Mac용 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019).
 - .NET Core 콘솔 또는 ASP.NET Core 프로젝트. 아직 프로젝트가 없는 경우 [새 프로젝트를 만들 수 있습니다](/visualstudio/mac/create-new-projects?view=vsmac-2019).
@@ -52,7 +52,7 @@ Mac용 Visual Studio를 사용하면 게시 도구를 통해 .NET Core 프로젝
 
 ## <a name="customize-publish-options"></a>게시 옵션 사용자 지정
 
-게시 상황에 맞는 메뉴에 표시되는 게시 프로필의 이름을 변경하려면 게시 프로필 파일의 이름을 변경하세요. 파일의 확장명(`.puxbml`)은 변경하지 않도록 하세요.
+게시 상황에 맞는 메뉴에 표시되는 게시 프로필의 이름을 변경하려면 게시 프로필 파일의 이름을 변경하세요. 파일의 확장명(`.pubxml`)은 변경하지 않도록 하세요.
 
 게시 폴더 경로를 변경하려면 게시 프로필을 열고 `publishUrl` 값을 편집합니다.
 

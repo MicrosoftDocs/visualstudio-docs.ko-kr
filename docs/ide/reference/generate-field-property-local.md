@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b554aa5586150942c0fc7d7aeada9356a67029ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595607"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Visual Studio에서 필드, 속성 또는 로컬 변수 생성
@@ -22,7 +22,7 @@ ms.locfileid: "75595607"
 
 - Visual Basic
 
-**내용:** 이전에 선언되지 않은 필드, 속성 또는 로컬에 대한 코드를 즉시 생성할 수 있습니다.
+**대상:** 이전에 선언되지 않은 필드, 속성 또는 로컬에 대한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 새 필드, 속성 또는 로컬을 소개하고 자동으로 해당 항목을 제대로 선언하려고 합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "75595607"
 
        ![메서드 생성 결과 VB](media/field-result-vb.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

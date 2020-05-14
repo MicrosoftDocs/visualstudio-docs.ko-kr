@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetEngineGuid | Microsoft Docs
+title: 아이데버그엔진3::세엔진가드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66b72edc81cdde1d3d83e4c3534b50e40dd2cf19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae151484a7c2fd5828888a8a551b710c6fda44c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352497"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730761"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
-이 메서드는 디버그 엔진 (DE) 설정 `GUID`합니다.
+이 메서드는 디버그 엔진 (DE)을 `GUID`설정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,10 +41,10 @@ int SetEngineGuid(
 
 ## <a name="parameters"></a>매개 변수
 `guidEngine`\
-[in] `GUID` 엔진입니다.
+【인】 `GUID` 엔진의
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

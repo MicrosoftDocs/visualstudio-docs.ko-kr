@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10433c63e0bad00d187f79634f74fa3727edc3dc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113292"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기
@@ -28,7 +28,7 @@ ms.locfileid: "76113292"
 
 1. **부하 테스트** 도구 모음에서 **새 그래프 추가**를 선택합니다.
 
-     \- 또는 -
+     \- 또는-
 
      **부하 테스트 분석기**에서 **카운터** 패널 또는 그래프를 마우스 오른쪽 단추로 클릭한 다음, **그래프 추가**를 선택합니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "76113292"
 
 3. 카운터를 추가하여 새 그래프를 사용자 지정합니다. 자세한 내용은 [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027601"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts

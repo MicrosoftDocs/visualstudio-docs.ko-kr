@@ -11,11 +11,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585407"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306832"
 ---
 # <a name="code-style-preferences"></a>코드 스타일 기본 설정
 

@@ -20,10 +20,10 @@ helpviewer_keywords:
 - asset compatibility
 - projects, conversion
 ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75406343"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조

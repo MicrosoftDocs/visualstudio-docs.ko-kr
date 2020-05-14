@@ -1,17 +1,18 @@
 ---
 title: Visual Studio 구독의 Pluralsight 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6ae0a77cf4849f0e648eeed17830911c90c8b584
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706993"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649795"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -24,7 +25,7 @@ ms.locfileid: "74706993"
 ## <a name="activation-steps"></a>활성화 단계
 1. 구독을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 연결하고 전문적인 개발 섹션에 있는 Pluralsight 혜택 타일에서 **코드 가져오기** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight 혜택 타일](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
+   > ![Pluralsight 혜택 타일](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
    >
    > [!IMPORTANT]
    > Pluralsight 혜택 타일에서 “코드 얻기” 링크를 클릭하면 다음 메시지가 표시될 수 있습니다.
@@ -60,13 +61,13 @@ ms.locfileid: "74706993"
 |          GitHub Enterprise가 포함된 Visual Studio Enterprise          | VL  |   6개월    | 예<sup>2</sup> |
 |         Visual Studio Professional(표준)          | VL, Azure, 일반 정품 |   3개월    | 예<sup>2</sup> |
 |         GitHub Enterprise가 포함된 Visual Studio Professional          | VL  |   3개월    | 예<sup>2</sup> |
-|              Visual Studio Test Professional(표준)              |    VL, 일반 정품     |   3개월    | 예<sup>2</sup>  |
-|                      MSDN 플랫폼(표준)                       |    VL, 일반 정품     |   3개월    | 예<sup>2</sup>  |
+|              Visual Studio Test Professional(표준)              |    VL, 일반 정품     |   사용할 수 없음    | 해당 없음  |
+|                      MSDN 플랫폼(표준)                       |    VL, 일반 정품     |   사용할 수 없음    | 해당 없음  |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) |       Azure       | 사용할 수 없음 |       해당 없음       |
 |             Visual Studio Enterprise(NFR<sup>1</sup>)              |      프로그램      | 사용할 수 없음 |       해당 없음       |
 ||
 
-<sup>1</sup> 포함:  NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Services, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), FTE, Imagine
+<sup>1</sup>  포함:  NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Services, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), FTE, Imagine
 
 <sup>2</sup>  *선택된 Visual Studio 구독의 Pluralsight 혜택은 구독이 갱신되면 갱신됩니다. 예를 들어 매년 갱신되는 연간 구독이 있는 경우 매년 갱신할 때마다 혜택이 제공됩니다. 다년간 구독이 있는 경우 구독 기간 중에 한 번 Pluralsight 혜택이 제공됩니다.  다년간 구독을 갱신하면 갱신 후 혜택이 다시 제공됩니다.*
 
@@ -96,6 +97,12 @@ A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 �
 - [Pluralsight 도움말 센터](https://help.pluralsight.com/help)는 Pluralsight 과정을 진행하거나 Pluralsight 웹 사이트를 사용하여 지원을 제공합니다.
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 계정을 만들면 학습을 시작할 준비가 된 것입니다.  [https://www.pluralsight.com](https://www.pluralsight.com)을 방문하여 페이지 오른쪽 위 모서리에 있는 **로그인**을 탭하여 새 코스를 시작하거나 이미 진행 중인 코스로 돌아갑니다.

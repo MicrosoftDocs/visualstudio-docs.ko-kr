@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597349"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 개요
@@ -37,21 +37,21 @@ Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시�
 
 - 테스트 컨트롤러에 테스트 에이전트를 더 추가하여 부하 생성 확장
 
-- 동일한 컴퓨터나 다른 컴퓨터에서 클라이언트, 테스트 컨트롤러 및 테스트 에이전트 소프트웨어를 설치할 수 있는 유연성 예:
+- 동일한 컴퓨터나 다른 컴퓨터에서 클라이언트, 테스트 컨트롤러 및 테스트 에이전트 소프트웨어를 설치할 수 있는 유연성 다음은 그 예입니다.
 
    **로컬 구성:**
 
-  - 머신1: Visual Studio, 컨트롤러, 에이전트.
+  - 컴퓨터1: Visual Studio, 컨트롤러, 에이전트
 
     ![컨트롤러 및 에이전트를 사용하는 로컬 컴퓨터](./media/load-test-configa.png)
 
     **일반 원격 구성:**
 
-  - 머신1 및 2: Visual Studio(여러 테스터가 동일한 컨트롤러를 사용할 수 있음).
+  - 컴퓨터1 및 컴퓨터2: Visual Studio(여러 테스터가 같은 컨트롤러를 사용할 수 있음)
 
-  - 머신3: 컨트롤러(여기에도 에이전트가 설치되어 있을 수 있음).
+  - 컴퓨터3: 컨트롤러(여기에도 에이전트가 설치되어 있을 수 있음)
 
-  - 머신4-n: 머신3의 컨트롤러와 모두 연결된 에이전트.
+  - 컴퓨터4-n: 컴퓨터3의 컨트롤러와 모두 연결된 에이전트
 
     ![컨트롤러 및 에이전트를 사용하는 원격 컴퓨터](./media/load-test-configb.png)
 
@@ -89,6 +89,6 @@ Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시�
 
 테스트 컨트롤러와 하나 이상의 에이전트를 설치한 다음에는 부하 테스트를 위한 테스트 설정에서 테스트 컨트롤러에 원격 실행을 사용할지 여부를 지정할 수 있습니다. 또한 테스트 설정의 에이전트와 연결된 역할에 사용할 데이터 및 진단 어댑터를 지정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

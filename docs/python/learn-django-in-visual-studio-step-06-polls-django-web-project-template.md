@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75755581"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용

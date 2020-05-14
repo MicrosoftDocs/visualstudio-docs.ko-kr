@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs
+title: IPropertyProxyEESide::해결어셈블리참조 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d2fd21b39e171238319c857ad0384db1d7635d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353455"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714882"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-지정 된 관리 되는 어셈블리 참조의 위치를 결정합니다.
+지정된 관리되는 어셈블리 참조의 위치를 결정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,27 +49,27 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>매개 변수
 `assemName`\
-[in] 확인할 어셈블리의 이름입니다.
+【인】 확인할 어셈블리의 이름입니다.
 
 `assemBytes`\
-[out] 반환 된 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 참조와 연결 된 어셈블리 바이트를 포함 하는 개체입니다.
+【아웃】 참조와 연결된 어셈블리 바이트를 포함하는 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 개체를 반환합니다.
 
 `assemPdb`\
-[out] 반환 된 `IEEDataStorage` 이 참조와 연결 된 데이터를 저장 하는 기호를 포함 하는 개체입니다.
+【아웃】 이 `IEEDataStorage` 참조와 연결된 심볼 저장소 데이터가 포함된 개체를 반환합니다.
 
 `assemLocation`\
-[out] 이 참조의 경로 위치를 반환합니다.
+【아웃】 이 참조의 경로 위치를 반환합니다.
 
 `alr`\
-[out] 값을 반환 합니다 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 이 참조의이 어셈블리의 위치를 나타내는 열거형입니다.
+【아웃】 이 참조 어셈블리의 위치를 나타내는 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 열거형에서 값을 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 사용자 지정 식 계산기에서 일반적으로 구현 되지 않았습니다.
+ 이 메서드는 일반적으로 사용자 지정 식 계산기에서 구현 되지 않습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

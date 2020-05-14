@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778156"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 및 ThreadOff
@@ -48,9 +48,9 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 
  **GlobalOff**&#124;**GlobalOn** 명령줄 프로파일링 세션에서 모든 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
 
- {**ProcessOff**&#124;**ProcessOn**} **:** `TID` 지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
+ {**ProcessOff**&#124;**ProcessOn**}**:**`TID` 지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서 **ThreadOff** 하위 명령은 애플리케이션 시작 데이터만 수집될 수 있도록 프로파일링 데이터 수집을 중지하는 데 사용됩니다.
 
 ```cmd
@@ -65,7 +65,7 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

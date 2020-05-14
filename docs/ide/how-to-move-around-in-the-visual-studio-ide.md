@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590997"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
@@ -68,11 +68,11 @@ Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습�
     > [!TIP]
     > **활성 파일** 목록을 이동하는 순서를 반대로 하려면 **Ctrl**+**Shift** 키를 누른 상태에서 **Tab** 키를 누릅니다.
 
-    \- 또는 -
+    \- 또는-
 
 - 편집기의 오른쪽 위에서 **활성 파일** 단추를 선택한 다음 전환할 목록에서 파일을 선택합니다.
 
-    \- 또는 -
+    \- 또는-
 
 - 메뉴 모음에서 **창** > **창**을 선택합니다.
 
@@ -92,7 +92,7 @@ Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습�
     > [!TIP]
     > **활성 도구 창** 목록을 이동하는 순서를 반대로 하려면 **Shift**+**Alt** 키를 누른 상태에서 **F7** 키를 누릅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)
 - [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)

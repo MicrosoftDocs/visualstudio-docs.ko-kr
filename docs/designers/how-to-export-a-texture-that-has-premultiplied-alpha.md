@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72635478"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>방법: 미리 증가된 알파를 사용하는 질감 내보내기
@@ -38,7 +38,7 @@ ms.locfileid: "72635478"
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>미리 곱한 알파를 사용하는 질감을 만들려면
 
-1. 기본 질감으로 시작합니다. 기존 이미지 파일을 로드하거나 [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)에서 설명된 대로 새 질감을 만듭니다.
+1. 기본 질감으로 시작합니다. 기존 이미지 파일을 로드하거나 [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)에서 설명된 대로 질감을 만듭니다.
 
 2. 이미지 콘텐츠 파이프라인에서 처리되도록 질감 파일을 구성합니다. **솔루션 탐색기**에서 질감 파일의 바로 가기 메뉴를 열고 **속성**을 선택합니다. **구성 속성** > **일반** 페이지에서 **항목 종류** 속성을 **이미지 콘텐츠 파이프라인**으로 설정합니다. **콘텐츠** 속성이 **예**로 설정되고 **빌드에서 제외**가 **아니요**로 설정되어 있는지 확인하고 **적용** 단추를 선택합니다. **이미지 콘텐츠 파이프라인** 구성 속성 페이지가 표시됩니다.
 

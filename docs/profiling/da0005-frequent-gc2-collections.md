@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a50567a101d77ed6498aaae13a5fe5556d9c1056
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777714"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: GC2 컬렉션이 많습니다.
@@ -26,10 +26,10 @@ ms.locfileid: "74777714"
 |||
 |-|-|
 |RuleId|DA0005|
-|범주|.NET Framework 사용|
+|Category|.NET Framework 사용|
 |프로파일링 방법|.NET 메모리|
 |메시지|대부분의 개체는 2세대 가비지 수집에서 수집됩니다.|
-|메시지 유형|경고|
+|메시지 유형|Warning|
 
 ## <a name="cause"></a>원인
  많은 .NET 메모리 개체가 2세대 가비지 수집에서 회수됩니다.

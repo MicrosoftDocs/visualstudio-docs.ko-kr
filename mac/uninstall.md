@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.openlocfilehash: 348a6ad1bde58c17b2bbb1ef4868fcfa6835ef9f
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "76892170"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac용 Visual Studio 제거
@@ -243,6 +243,6 @@ Mac용 Visual Studio 2019가 출시되었으므로, 이제 Mac용 Visual Studio 
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 제거(Windows에서)](/visualstudio/install/uninstall-visual-studio)

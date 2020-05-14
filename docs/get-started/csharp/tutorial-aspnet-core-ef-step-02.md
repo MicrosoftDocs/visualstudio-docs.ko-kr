@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061123"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77580078"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>2단계: 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -126,6 +126,6 @@ public void OnGet()
 
 [자습서: ASP.NET Core 앱에서 데이터 작업](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [자습서: ASP.NET Core를 사용하여 Razor Pages 웹앱 만들기](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

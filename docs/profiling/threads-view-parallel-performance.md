@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62973758"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>동시성 시각화 도우미의 스레드 보기
@@ -53,7 +53,7 @@ ms.locfileid: "62973758"
 
 보고서 왼쪽 위에 있는 **스레드** 탭을 선택하여 **스레드** 보기를 엽니다.
 
-![스레드 보기](../profiling/media/threadsviewnarrowing.png "스레드 보기")
+![스레드 뷰](../profiling/media/threadsviewnarrowing.png "스레드 뷰")
 
 성능 분석을 시작할 시간 간격 및 스레드를 선택합니다.
 
@@ -128,7 +128,7 @@ ms.locfileid: "62973758"
 
 - **Per Thread Summary** - 현재 선택한 시간 간격에 대한 스레드 상태를 보여주는 그래프를 표시하려면 **스레드 단위 요약**을 선택합니다. 색으로 구분된 열은 각 스레드가 실행, 차단, I/O 및 기타 상태에서 소비한 총 시간을 표시합니다. 스레드는 아래쪽에 레이블이 지정됩니다. 타임라인 그래프에서 확대/축소 수준을 조정하면 이 그래프는 자동으로 업데이트됩니다.
 
-  특정 확대/축소 수준에서 일부 스레드가 그래프에 표시되지 않을 수 있습니다. 이 경우, 오른쪽에 줄임표 (**...**)가 나타납니다. 확인하려는 스레드가 표시되지 않으면 다른 스레드를 숨길 수 있습니다. 자세한 내용은 [스레드 단위 요약 보고서](../profiling/per-thread-summary-report.md)를 참조하세요.
+  특정 확대/축소 수준에서 일부 스레드가 그래프에 표시되지 않을 수 있습니다. 이 경우, 오른쪽에 줄임표 ( **...** )가 나타납니다. 확인하려는 스레드가 표시되지 않으면 다른 스레드를 숨길 수 있습니다. 자세한 내용은 [스레드 단위 요약 보고서](../profiling/per-thread-summary-report.md)를 참조하세요.
 
 - **Disk Operations** - **디스크 작업**을 선택하여 현재 프로세스의 디스크 I/O와 관련된 프로세스 및 스레드, 이러한 스레드와 프로세스가 사용한 파일(예: 로드된 DLL), 읽은 바이트 수 및 기타 정보를 표시합니다. 이 보고서를 사용하여 특히 프로세스가 I/O에 바인딩된 것으로 보이는 경우에 실행 중 파일에 액세스하는 데 걸린 시간을 평가할 수 있습니다. 자세한 내용은 [디스크 작업 보고서](../profiling/disk-operations-report-threads-view.md)를 참조하세요.
 
@@ -139,4 +139,4 @@ ms.locfileid: "62973758"
 이 탭에는 선택한 스레드를 차단 해제한 스레드와 차단 해제 호출 스택이 표시됩니다.
 
 ## <a name="see-also"></a>참고 항목
-- [동시성 시각화 도우미](../profiling/concurrency-visualizer.md)
+- [Concurrency 시각화 도우미](../profiling/concurrency-visualizer.md)

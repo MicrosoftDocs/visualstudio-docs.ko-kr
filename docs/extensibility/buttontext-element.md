@@ -1,25 +1,25 @@
 ---
-title: ButtonText 요소 | Microsoft Docs
+title: 버튼텍스트 요소 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe2440258e95ad0d61998b24dae54b731a998c47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321220"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739913"
 ---
-# <a name="buttontext-element"></a>ButtonText 요소
-이 필드를 사용 하면 다양 한 메뉴에 나타나는 텍스트를 지정할 수 있습니다. 기본적으로 `ButtonText` 요소 메뉴 컨트롤러에 표시 됩니다. `ButtonText` 요소 또한 기본값이 다른 텍스트 필드는 비어 있는 경우. `ButtonText` 기타 텍스트 필드에 지정 된 경우에 요소를 비워 둘 수 없습니다.
+# <a name="buttontext-element"></a>버튼텍스트 요소
+이 필드를 사용하면 다양한 메뉴에 나타나는 텍스트를 지정할 수 있습니다. 기본적으로 `ButtonText` 요소는 메뉴 컨트롤러에 나타납니다. 다른 `ButtonText` 텍스트 필드가 비어 있는 경우에도 요소가 기본값이 됩니다. 다른 `ButtonText` 텍스트 필드를 지정한 경우에도 요소를 비워둘 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,12 +38,12 @@ ms.locfileid: "66321220"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[Strings 요소](../extensibility/strings-element.md)|텍스트 요소와 같은 그룹화 `ButtonText` 고 `CommandName`입니다.|
+|[문자열 요소](../extensibility/strings-element.md)|와 `ButtonText` `CommandName`같은 텍스트 요소를 그룹화합니다.|
 
 ## <a name="text-value"></a>텍스트 값
- 텍스트 값을 `ButtonText` 요소 메뉴 항목과 combos, 표시 되는 텍스트에 있는 다른 사용자 인터페이스 (UI) 요소에 대 한 표시 되는 텍스트를 제공 합니다.
+ `ButtonText` 요소의 텍스트 값은 메뉴 항목, 콤보 및 표시되는 텍스트가 있는 기타 사용자 인터페이스(UI) 요소에 대해 표시되는 텍스트를 제공합니다.
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참조
+- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

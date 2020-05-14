@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430685"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "64543146"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제
 
@@ -80,8 +80,8 @@ ms.locfileid: "62430685"
 > [!div class="nextstepaction"]
 > [자습서: Visual Studio에서 Python 작업](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [기존 Python 인터프리터 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Visual Studio 2015 및 이전 버전에서 Python 지원 설치](installing-python-support-in-visual-studio.md)
+- [Windows의 Visual Studio에서 Python 지원 설치 방법](installing-python-support-in-visual-studio.md)
 - [설치 위치](installing-python-support-in-visual-studio.md#install-locations)

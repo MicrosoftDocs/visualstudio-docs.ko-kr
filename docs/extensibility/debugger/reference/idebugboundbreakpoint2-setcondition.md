@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
+title: IDebug바운드 브레이크포인트2:설정조건 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337439"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735467"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-설정 하거나이 바인딩된 중단점과 연결 된 조건을 변경 합니다.
+이 바인딩된 중단점과 연관된 조건을 설정하거나 변경합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,15 +42,15 @@ int SetCondition( 
 
 ## <a name="parameters"></a>매개 변수
 `bpCondition`\
-[in] 값을 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 조건을 설명 하는 열거형입니다.
+【인】 조건을 설명하는 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 열거형의 값입니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 바인딩된 중단점 개체의 상태 설정 됩니다 `BPS_DELETED` (부분 합니다 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거형)입니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 바인딩된 중단점 개체의 상태가 `E_BP_DELETED` `BPS_DELETED` 설정된 경우(BP_STATE [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거형의 일부)가 반환됩니다.
 
 ## <a name="remarks"></a>설명
- 이 중단점을 사용 하 여 이전에 연관 된 모든 상태는 손실 됩니다.
+ 이전에 이 중단점과 연관된 모든 조건이 손실됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

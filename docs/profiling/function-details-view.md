@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779261"
 ---
 # <a name="function-details-view"></a>함수 정보 뷰
@@ -71,9 +71,9 @@ ms.locfileid: "74779261"
 ## <a name="function-performance-details"></a>함수 성능 정보
  함수 성능 정보 테이블은 선택된 함수의 성능 메트릭에 대한 요약 데이터를 제공합니다. 값과 백분율이 모두 표시됩니다. 차트 및 세부 정보 테이블에 나타나는 프로파일링 데이터를 **성능 메트릭** 목록에 지정합니다.
 
-|Column|설명|
+|열|Description|
 |------------|-----------------|
-|**전용**|- 함수 본문 실행에서 발생한 성능 메트릭의 크기입니다.|
+|**단독**|- 함수 본문 실행에서 발생한 성능 메트릭의 크기입니다.|
 |**호출**|- 선택된 함수가 호출한 함수에서 발생한 성능 메트릭의 크기입니다.|
 |**포함 합계**|- **전용** 및 **호출** 값의 합계입니다.|
 

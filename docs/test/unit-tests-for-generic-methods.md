@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2158c889aefc85c908aa9ee42d45858fd11d557e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590815"
 ---
 # <a name="unit-tests-for-generic-methods"></a>제네릭 메서드의 단위 테스트
@@ -160,7 +160,7 @@ namespace ClassLibrary2
 
 이 예제에서는 제네릭 형식 매개 변수 `T`에 `where T : Employee` 제약 조건이 있습니다. 이 제약 조건은 테스트 메서드에서 충족되지 않습니다. 따라서 `DataTest()` 메서드에는 `T`에 배치된 형식 제약 조건을 요구 사항에 제공하도록 경고하는 Assert 문이 포함되어 있습니다. 이 Assert 문의 메시지는 다음과 같습니다. `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
 
-즉, 테스트 메서드 `DataTest()`에서 `DataTestHelper<T>()` 메서드를 호출하는 경우 `Employee` 형식의 매개 변수 또는 `Employee`에서 파생 클래스를 전달해야 합니다.
+즉, 테스트 메서드 `DataTestHelper<T>()`에서 `DataTest()` 메서드를 호출하는 경우 `Employee` 형식의 매개 변수 또는 `Employee`에서 파생 클래스를 전달해야 합니다.
 
 ```csharp
 using ClassLibrary2;
@@ -194,6 +194,6 @@ namespace TestProject1
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)

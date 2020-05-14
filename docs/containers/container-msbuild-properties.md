@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
+ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950693"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189493"
 ---
 # <a name="container-tools-build-properties"></a>컨테이너 도구 빌드 속성
 
@@ -40,19 +40,47 @@ MSBuild에서 프로젝트를 빌드하는 데 사용하는 속성을 설정하�
 | DockerDefaultTargetOS | Docker 이미지를 빌드할 때 사용되는 기본 대상 운영 체제입니다. | Visual Studio에서 설정됩니다. |1.0.1985401 이상|
 | DockerImageLabels | Docker 이미지에 적용되는 기본 레이블 집합입니다. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 이상|
 | DockerFastModeProjectMountDirectory|**고속 모드**에서 이 속성은 프로젝트 출력 디렉터리가 실행 중인 컨테이너에 대량 탑재되는 위치를 제어합니다.|C:\app(Windows) 또는 /app(Linux)|1.9.2 이상|
-| DockerfileBuildArguments | Docker build 명령에 전달되는 추가 인수입니다. | 해당 사항 없음. |1.0.1872750 이상|
-| DockerfileContext | Docker 이미지를 빌드할 때 사용되는 기본 컨텍스트입니다. | Visual Studio에서 설정됩니다. |1.0.1872750 이상|
+| DockerfileBuildArguments | [Docker build](https://docs.docker.com/engine/reference/commandline/build/) 명령에 전달되는 추가 인수입니다. | 해당 사항 없음. |1.0.1872750 이상|
+| DockerfileContext | Docker 이미지를 빌드할 때 사용되는 기본 컨텍스트로, Dockerfile에 대한 상대적인 경로입니다. | Visual Studio에서 설정됩니다. |1.0.1872750 이상|
 | DockerfileFastModeStage | 디버그 모드로 이미지를 빌드할 때 사용되는 Dockerfile 스테이지(즉, 대상)입니다. | Dockerfile에 있는 첫 번째 스테이지(base) |
 | DockerfileFile | 프로젝트의 컨테이너를 빌드/실행하는 데 사용되는 기본 Dockerfile에 대해 설명합니다. 경로일 수도 있습니다. | Dockerfile |1.0.1872750 이상|
-| DockerfileRunArguments | Docker run 명령에 전달되는 추가 인수입니다. | 해당 사항 없음. |1.0.1872750 이상|
+| DockerfileRunArguments | [Docker run](https://docs.docker.com/engine/reference/commandline/run/) 명령에 전달되는 추가 인수입니다. | 해당 사항 없음. |1.0.1872750 이상|
 | DockerfileRunEnvironmentFiles | Docker 실행 중에 적용되는 환경 파일의 세미콜론으로 구분된 목록입니다. | 해당 사항 없음. |1.0.1872750 이상|
 | DockerfileTag | Docker 이미지를 빌드할 때 사용되는 태그입니다. 디버그 시, “:dev”가 태그에 추가됩니다. | 다음 규칙을 사용하여 영숫자가 아닌 문자를 제거한 후의 어셈블리 이름 <br/> 결과 태그가 모두 숫자이면 “image”가 접두사로 삽입됩니다(예: image2314). <br/> 결과 태그가 빈 문자열이면 “image”가 태그로 사용됩니다. |1.0.1872750 이상|
+
+## <a name="example"></a>예제
+
+다음 프로젝트 파일은 이러한 설정의 예를 보여 줍니다.
+
+```xml
+ <Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>feae72bf-2368-4487-b6c6-546c19338cb1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <!-- In CI/CD scenarios, you might need to change the context. By default, Visual Studio uses the
+         folder above the Dockerfile. The path is relative to the Dockerfile, so here the context is
+         set to the same folder as the Dockerfile. -->
+    <DockerfileContext>.</DockerfileContext>
+    <!-- Set `docker run` arguments to mount a volume -->
+    <DockerfileRunArguments>-v $(pwd)/host-folder:/container-folder:ro</DockerfileRunArguments>
+    <!-- Set `docker build` arguments to add a custom tag -->
+    <DockerfileBuildArguments>-t contoso/front-end:v2.0</DockerfileBuildArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.6" />
+  </ItemGroup>
+
+</Project>
+```
 
 ## <a name="next-steps"></a>다음 단계
 
 MSBuild 속성에 대한 일반적인 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Docker Compose 빌드 속성](docker-compose-properties.md)
 

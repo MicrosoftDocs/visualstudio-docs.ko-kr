@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569090"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>방법: 편집기에서 URL을 링크로 표시
@@ -37,12 +37,12 @@ ms.locfileid: "75569090"
 
 3. 하나의 언어에 대한 옵션만 변경하려면 해당 언어의 폴더를 확장하고 **일반**을 선택합니다.
 
-     또는
+     —또는—
 
      모든 언어에 대한 옵션을 변경하려면 **모든 언어** 폴더를 확장하고 **일반**을 선택합니다.
 
 4. **표시** 아래에서 **한 번 클릭으로 URL 탐색**을 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 편집기의 기능](../../ide/writing-code-in-the-code-and-text-editor.md)

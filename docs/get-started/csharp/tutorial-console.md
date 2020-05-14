@@ -2,25 +2,25 @@
 title: '자습서: 간단한 C# 콘솔 앱 만들기'
 description: Visual Studio에서 C# 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830002"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "78215426"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -134,6 +134,9 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
     이렇게 하면 Visual Studio의 IntelliSense 기능은 항목을 자동 완성하는 옵션을 제공합니다.
 
+    > [!NOTE]
+    > 다음 애니메이션은 위의 코드를 복제하기 위한 것이 아닙니다. 자동 완성 기능의 작동 방식을 보여 주기 위한 것입니다.
+
     ![Visual Studio IDE에서 IntelliSense 자동 완성 기능을 보여주는 정수 수식 코드의 애니메이션](./media/integer-math-intellisense.gif)
 
 1. **계산기** 옆의 녹색 **시작** 단추를 선택하여 프로그램을 빌드하고 실행하거나 **F5**를 누릅니다.
@@ -242,7 +245,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 1. `int` 변수의 각 인스턴스를 `float`로 변경합니다.
 
-   **찾기 및 바꾸기** 컨트롤에서 **대/소문자 일치**(**Alt**+**C**) 및 **전체 단어 일치**(**Alt** + **W**)로 토글해야 합니다.
+   **찾기 및 바꾸기** 컨트롤에서 **대/소문자 일치**(**Alt**+**C**) 및 **전체 단어 일치**(**Alt**+**W**)로 토글해야 합니다.
 
     ![int 변수를 float로 변경하는 방법을 보여 주는 찾기 및 바꾸기 컨트롤의 애니메이션](./media/find-replace-control-animation.gif)
 
@@ -268,18 +271,21 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 기본 계산기 앱을 개선했지만 사용자 입력 오류와 같은 예외를 처리할 수 있는 오류 방지 기능을 아직 갖추고 있지 않습니다.
 
-예를 들어 숫자를 0으로 나누거나 앱이 숫자 문자가 필요할 때 알파 문자를 입력하면(또는 그 반대로) 앱이 작동을 중지하고 오류를 반환합니다.
+예를 들어 숫자를 0으로 나누거나 앱이 숫자 문자가 필요할 때 알파 문자를 입력하면(또는 그 반대로) 앱이 작동을 중지하고 오류를 반환하거나 예기치 않게 숫자 아닌 결과를 반환할 수 있습니다.
 
-몇 가지 일반적인 사용자 입력 오류를 살펴보고 디버거에서 오류를 찾아 코드에서 수정하세요.
+몇 가지 일반적인 사용자 입력 오류를 살펴보고 디버거에 나타나는 오류를 찾아 코드에서 수정하세요.
 
->[!TIP]
->디버거 및 디버거의 작동 방식에 대한 자세한 내용은 [먼저 Visual Studio 디버거 살펴보기](../../debugger/debugger-feature-tour.md) 페이지를 참조하세요.
+> [!TIP]
+> 디버거 및 디버거의 작동 방식에 대한 자세한 내용은 [먼저 Visual Studio 디버거 살펴보기](../../debugger/debugger-feature-tour.md) 페이지를 참조하세요.
 
 ### <a name="fix-the-divide-by-zero-error"></a>"0으로 나누기" 오류 해결
 
-숫자를 0으로 나누려고 하면 콘솔 앱이 중단됩니다. 그런 다음, Visual Studio는 코드 편집기에서 무엇이 잘못되었는지 보여줍니다.
+숫자를 0으로 나누려고 하면 콘솔 앱이 중지되고 코드 편집기에 잘못된 내용이 표시될 수 있습니다.
 
    ![Visual Studio 코드 편집기에서 0으로 나누기 오류가 표시됩니다.](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> 앱이 중지되지 않고 디버거가 0으로 나누기 오류를 표시하지 않는 경우도 있습니다. 대신, 앱이 무한대 기호와 같이 숫자가 아닌 결과를 예기치 않게 반환할 수 있습니다. 다음 코드 수정은 여전히 적용됩니다.
 
 이 오류를 처리하기 위해 코드를 변경해 보겠습니다.
 
@@ -323,15 +329,15 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 이제 시작해 보겠습니다.
 
-1. 다음 코드 블록 *후* 모두 삭제합니다.
+1. `Calculator` 네임스페이스에서 여는 중괄호와 닫는 중괄호 사이에 있는 모든 항목을 삭제합니다.
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. 다음으로, 새 `Calculator` 클래스를 다음과 같이 추가합니다.
@@ -599,7 +605,7 @@ namespace Calculator
 > [!div class="nextstepaction"]
 > [추가 C# 자습서 계속 진행](/dotnet/csharp/tutorials/)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Visual Studio에서 C# 코드를 디버그하는 방법 알아보기](tutorial-debugger.md)

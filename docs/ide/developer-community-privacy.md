@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75775882"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
@@ -85,7 +85,7 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
   > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 문제를 보고하는 방법](how-to-report-a-problem-with-visual-studio.md)
 - [C++ 문제 보고서 데이터 개인 정보](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

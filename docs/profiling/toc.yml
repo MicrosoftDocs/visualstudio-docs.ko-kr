@@ -10,7 +10,7 @@
       href: quickstart-cpu-usage-managed.md
     - name: CPU 사용량 분석(네이티브)
       href: quickstart-cpu-usage-native.md
-    - name: CPU 사용량 분석(ASP.NET)
+    - name: CPU 사용량 분석(ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
 - name: 자습서
   items:
@@ -24,6 +24,8 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: 방법 가이드
   items:
+    - name: PerfTips 사용
+      href: perftips.md
     - name: CPU 사용량
       href: cpu-usage.md
     - name: 메모리 사용량
@@ -32,18 +34,16 @@
           href: analyze-memory-usage.md
         - name: .NET 개체에 대한 메모리 사용 분석
           href: dotnet-alloc-tool.md
-        - name: 사용자 지정 네이티브 ETW 힙 이벤트
-          href: custom-native-etw-heap-events.md
         - name: 디버거 없이 메모리 사용
           href: memory-usage-without-debugging2.md
+        - name: 사용자 지정 네이티브 ETW 힙 이벤트
+          href: custom-native-etw-heap-events.md
     - name: 명령줄에서 성능 측정
       href: profile-apps-from-command-line.md
     - name: GPU 사용량 분석
       href: gpu-usage.md
     - name: 리소스 사용 분석
       href: application-timeline.md
-    - name: PerfTips 사용
-      href: perftips.md
     - name: 네트워크 사용량 분석
       href: network-usage.md
     - name: JavaScript 메모리 분석
@@ -466,8 +466,6 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: 명령줄에서 프로파일러를 사용하여 독립 실행형 .NET Framework 구성 요소 계측 및 메모리 데이터 수집
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: '연습: 샘플링을 사용하여 명령줄 프로파일링'
-                  href: walkthrough-command-line-profiling-using-sampling.md
             - name: ASP.NET 웹 애플리케이션
               items:
                 - name: ASP.NET 웹 애플리케이션의 명령줄 프로파일링

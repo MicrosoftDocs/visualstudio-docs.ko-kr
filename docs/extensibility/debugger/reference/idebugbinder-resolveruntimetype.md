@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
+title: 아이디버그바인더::해결런타임타입 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveRuntimeType method
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2954b5f2a1ac4dd14485a1b924423ba53fddcb7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315159"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735960"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 이 메서드는 개체의 런타임 형식을 결정합니다.
@@ -43,18 +43,18 @@ int ResolveRuntimeType(
 
 ## <a name="parameters"></a>매개 변수
 `pObject`\
-[in] 합니다 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 를 해결할 수 있습니다.
+【인】 해결될 [IDebugObject입니다.](../../../extensibility/debugger/reference/idebugobject.md)
 
 `ppResolved`\
-[out] 개체의 형식을 반환 합니다는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)합니다.
+【아웃】 개체 형식을 [IDebugField로](../../../extensibility/debugger/reference/idebugfield.md)반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 컴파일 타임에 개체의 런타임 형식은 항상 알 수는 없습니다. 예를 들어 다형성을 사용 하 여 인수로 전달할 수 있습니다 함수 단추 클래스 등의 기본 클래스로. 실제 인수의 라디오 단추 클래스와 같은 파생된 클래스를 수 있습니다.
+ 개체의 런타임 형식이 컴파일 타임에 항상 알려진 것은 아닙니다. 예를 들어 다형성을 사용하면 인수가 단추 클래스와 같은 기본 클래스로 함수에 전달될 수 있습니다. 실제 인수는 라디오 단추 클래스와 같은 파생 클래스일 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aeae28288936b6723b53e826142a4888ad0bc8b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570143"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe(devenv.exe)
@@ -34,7 +34,7 @@ devenv /DebugExe ExecutableFile
 
 - *ExecutableFile*
 
-  필수 요소. `.exe` 파일의 경로 및 파일 이름. `.exe` 파일을 찾을 수 없거나 파일이 존재하지 않는 경우 경고 또는 오류가 표시되지 않고 Visual Studio가 정상적으로 시작됩니다.
+  필수 사항입니다. `.exe` 파일의 경로 및 파일 이름. `.exe` 파일을 찾을 수 없거나 파일이 존재하지 않는 경우 경고 또는 오류가 표시되지 않고 Visual Studio가 정상적으로 시작됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -48,6 +48,6 @@ devenv /DebugExe ExecutableFile
 devenv /debugexe MyApplication.exe
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)

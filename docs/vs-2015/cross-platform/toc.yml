@@ -28,7 +28,7 @@
           href: visual-studio-tools-for-unity.md
         - name: 개요
           href: overview-of-visual-studio-tools-for-unity.md
-        - name: 시작
+        - name: 시작하기
           href: getting-started-with-visual-studio-tools-for-unity.md
         - name: Visual Studio Tools for Unity 사용
           href: using-visual-studio-tools-for-unity.md
@@ -50,9 +50,9 @@
       items:
         - name: 플랫폼 간 모바일 개발용 Visual C++
           href: visual-cpp-for-cross-platform-mobile-development.md
-        - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
+        - name: Install Visual C++ for Cross-Platform Mobile Development
           items:
-            - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
+            - name: Install Visual C++ for Cross-Platform Mobile Development
               href: install-visual-cpp-for-cross-platform-mobile-development.md
             - name: Install and Configure Tools to Build using iOS
               href: install-and-configure-tools-to-build-using-ios.md
@@ -64,7 +64,7 @@
           href: import-an-xcode-project.md
         - name: XCode와 Visual Studio 간에 변경 내용 동기화
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: 플랫폼 간 모바일 개발 예제
+        - name: Cross-Platform Mobile Development Examples
           href: cross-platform-mobile-development-examples.md
     - name: UWP(유니버설 Windows 플랫폼)용 앱 개발
       href: develop-apps-for-the-universal-windows-platform-uwp.md

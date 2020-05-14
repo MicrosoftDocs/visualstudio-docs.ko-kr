@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926190"
 ---
 # <a name="property-pages-javascript"></a>속성 페이지, JavaScript
@@ -38,7 +38,7 @@ ms.locfileid: "68926190"
 
 표시하거나 수정할 구성 및 플랫폼을 선택하려면 다음 옵션을 사용합니다.
 
- **구성**
+ **Configuration**
 
 표시하거나 수정할 구성 설정을 지정합니다. 설정에는 **디버그**(기본값), **릴리스**, **모든 구성** 또는 사용자 정의 구성이 있습니다. 자세한 내용은 [방법: Visual Studio에서 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 

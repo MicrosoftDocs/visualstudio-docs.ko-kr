@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594844"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633046"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 요소(MSBuild)
+
 모든 `When` 요소가 `false`로 평가될 경우에만 실행할 코드 블록을 지정합니다.
 
  \<프로젝트> \<선택> \<시기> \<선택>... \<그렇지 않으면> \<선택 >...
@@ -41,9 +42,11 @@ ms.locfileid: "75594844"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
+
  없음
 
 ### <a name="child-elements"></a>자식 요소
@@ -61,11 +64,13 @@ ms.locfileid: "75594844"
 |[Choose](../msbuild/choose-element-msbuild.md)|자식 요소를 평가하여 실행할 코드의 한 섹션을 선택합니다.|
 
 ## <a name="remarks"></a>설명
+
  `Choose` 요소에 `Otherwise` 요소가 1개만 있을 수 있으며 마지막 요소여야 합니다.
 
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.
 
 ## <a name="example"></a>예제
+
  다음 프로젝트에서는 `Choose` 요소를 사용하여 설정할 `When` 요소의 속성 값 집합을 선택합니다. 두 `When` 요소의 `Condition` 특성이 모두 `false`로 평가되면 `Otherwise` 요소의 속성 값이 설정됩니다.
 
 ```xml
@@ -114,5 +119,6 @@ ms.locfileid: "75594844"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [조건부 구문](../msbuild/msbuild-conditional-constructs.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

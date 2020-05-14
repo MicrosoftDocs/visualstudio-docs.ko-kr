@@ -12,24 +12,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 921b5d2d4aad7cfe48b7f6cc9cb802fde9520e19
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585260"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633930"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드
+
 *MSBuild.exe*를 사용하여 솔루션에서 특정 프로젝트의 특정 대상을 빌드할 수 있습니다.
 
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>솔루션에서 특정 프로젝트의 특정 대상을 빌드하려면
+## <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>솔루션에서 특정 프로젝트의 특정 대상을 빌드하려면
 
 1. 명령줄에서 `MSBuild.exe <SolutionName>.sln`을 입력합니다. 여기서 `<SolutionName>`은 실행할 대상이 포함된 솔루션의 파일 이름에 해당합니다.
 
 2. `-target:` 스위치 뒤에 대상을 \<ProjectName>:\<TargetName> 형식으로 지정합니다. 프로젝트 이름에 `%`, `$`, `@`, `;`, `.`, `(`, `)` 또는 `'` 문자를 포함하는 경우 지정된 대상 이름에서 `_`로 변경합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 `NotInSlnFolder` 프로젝트의 `Rebuild` 대상을 실행한 다음, *NewFolder* 솔루션 폴더에 있는 `InSolutionFolder` 프로젝트의 `Clean` 대상을 실행합니다.
+
+ 다음 예제에서는 `Rebuild` 프로젝트의 `NotInSlnFolder` 대상을 실행한 다음, `Clean`NewFolder`InSolutionFolder` 솔루션 폴더에 있는 *프로젝트의* 대상을 실행합니다.
 
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
@@ -41,7 +43,8 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 이 내부 보기가 필요하지 않으면 이 환경 변수 설정을 사용하여 빌드하지 않습니다. 이 설정은 솔루션에서 프로젝트를 빌드하는 문제가 발생할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
+
 - [명령줄 참조](../msbuild/msbuild-command-line-reference.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

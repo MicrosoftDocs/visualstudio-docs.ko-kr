@@ -1,5 +1,5 @@
 ---
-title: 중단 모드 단계별 실행 | Microsoft Docs
+title: 브레이크 모드에서 스테핑 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - stepping, in break mode
 - debugging [Debugging SDK], stepping in break mode
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3a8688f32a97d27ee6f6e2d18fcea8e25feaac2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348538"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712849"
 ---
-# <a name="stepping-in-break-mode"></a>중단 모드 단계별 실행
-다음 섹션에서는 디버거가 중단 모드 이며 코드를 단계별로 실행 해야 하는 경우 발생 하는 프로세스를 설명 합니다.
+# <a name="stepping-in-break-mode"></a>브레이크 모드에서 스테핑
+다음 섹션에서는 디버거가 중단 모드에 있을 때 발생하는 프로세스에 대해 설명하고 코드를 단계별로 수행해야 합니다.
 
-## <a name="stepping-process"></a>단계별 프로세스
+## <a name="stepping-process"></a>스테핑 프로세스
 
-1. 호출 [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) 사용 하 여 [STEPKIND](../../extensibility/debugger/reference/stepkind.md) 하 고 [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) 단계의 실행에 대 한 인수입니다.
+1. [IDebugProgram2::STEPKIND](../../extensibility/debugger/reference/idebugprogram2-step.md) [STEPKIND](../../extensibility/debugger/reference/stepkind.md) 및 [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) 인수를 사용하여 단계를 실행합니다.
 
-2. 단계가 완료 되 면 송신을 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 중지 이벤트입니다.
+2. 단계가 완료되면 [IDebugStepCompleteEvent2를](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 중지 이벤트로 보냅니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

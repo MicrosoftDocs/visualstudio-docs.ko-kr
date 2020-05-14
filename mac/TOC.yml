@@ -1,0 +1,238 @@
+- name: Mac용 Visual Studio
+  href: index.yml
+- name: 시작
+  items:
+    - name: IDE 둘러보기
+      href: ide-tour.md
+    - name: Windows 사용자를 위한 Mac용 Visual Studio
+      href: vsmac-for-windows-users.md
+- name: 설치
+  items:
+    - name: Mac용 Visual Studio 2019 설치
+      href: installation.md
+    - name: 방화벽 또는 프록시에서 설치 및 사용
+      href: install-behind-a-firewall-or-proxy-server.md
+    - name: 미리 보기 릴리스 설치
+      href: install-preview.md
+    - name: 업데이트
+      href: update.md
+    - name: 제거
+      href: uninstall.md
+- name: 사용자 계정
+  items:
+    - name: 개요
+      href: user-accounts.md
+    - name: 로그인
+      href: signing-in.md
+    - name: 구독 사용
+      href: enable-subscription.md
+- name: IDE 사용자 지정
+  items:
+    - name: IDE의 모양과 느낌 사용자 지정
+      href: customizing-the-ide.md
+    - name: Mac용 Visual Studio 확장
+      href: extending-visual-studio-mac.md
+- name: 프로젝트 및 솔루션
+  items:
+    - name: 개요
+      href: projects-and-solutions.md
+    - name: 새 프로젝트 만들기
+      href: create-new-projects.md
+    - name: 프로젝트 항목 추가 및 제거
+      href: add-and-remove-project-items.md
+    - name: 솔루션 및 프로젝트 속성 관리
+      href: managing-solutions-and-project-properties.md
+    - name: 다중 대상 지정
+      href: project-multitargeting.md
+    - name: 프로젝트의 참조 관리
+      items:
+        - name: 개요
+          href: managing-references-in-a-project.md
+        - name: 연습 - 프로젝트에 NuGet 패키지 포함하기
+          href: nuget-walkthrough.md
+    - name: 앱 리소스 관리
+      href: managing-app-resources.md
+    - name: '방법: 여러 솔루션 또는 인스턴스 열기'
+      href: open-multiple-solutions.md
+- name: 소스 편집기
+  items:
+    - name: 편집기 기능
+      href: source-editor.md
+    - name: 리팩터링
+      href: refactoring.md
+    - name: IntelliSense
+      href: intellisense.md
+    - name: 가져오기 항목 표시
+      href: show-imports.md
+    - name: 다중 캐럿 편집
+      href: multi-caret-editing.md
+    - name: 주석
+      href: comments.md
+    - name: 편집기 동작
+      href: editor-behavior.md
+    - name: 작업 주석
+      href: task-comments.md
+    - name: 코드 조각
+      href: snippets.md
+    - name: 블록 선택
+      href: block-selection.md
+    - name: 편집기 테마
+      href: editor-themes.md
+    - name: EditorConfig
+      href: editorconfig.md
+    - name: 기본 바로 가기 키
+      href: keyboard-shortcuts.md
+- name: 디버깅
+  items:
+    - name: 개요
+      href: debugging.md
+    - name: 데이터 시각화
+      href: data-visualizations.md
+    - name: 소스 링크를 사용하여 NuGet 패키지 디버깅
+      href: source-link.md
+- name: 컴파일 및 빌드
+  items:
+    - name: 개요
+      href: compiling-and-building.md
+    - name: 프로젝트와 솔루션 빌드 및 정리
+      href: building-and-cleaning-projects-and-solutions.md
+    - name: 빌드 작업
+      href: build-actions.md
+    - name: '방법: 여러 시작 프로젝트 설정'
+      href: set-startup-projects.md
+    - name: 빌드 시스템 사용자 지정
+      href: customizing-build-system.md
+    - name: 구성
+      items:
+        - name: 빌드 구성 이해
+          href: configurations.md
+        - name: 구성 만들기 및 편집
+          href: create-and-edit-configurations.md
+- name: 버전 제어
+  items:
+    - name: 개요
+      href: version-control.md
+    - name: Git 리포지토리 설정
+      href: set-up-git-repository.md
+    - name: Git 작업
+      href: working-with-git.md
+    - name: Subversion 리포지토리 설정
+      href: set-up-subversion-repository.md
+    - name: Subversion 작업
+      href: working-with-subversion.md
+- name: 웹앱 배포
+  items:
+    - name: 개요
+      href: web-app-deployment.md
+    - name: Azure App Service에 게시
+      href: publish-app-svc.md
+    - name: 폴더에 게시
+      href: publish-folder.md
+- name: 작업
+  items:
+    - name: 사용 가능한 워크로드
+      href: workloads.md
+    - name: ASP.NET Core
+      items:
+        - name: .NET Core 지원
+          href: net-core-support.md
+        - name: ASP.NET Core 시작
+          href: asp-net-core.md
+        - name: Mac용 Visual Studio에서 ASP.NET Core 애플리케이션 빌드
+          href: building-asp-net-core.md
+        - name: Razor
+          href: razor.md
+        - name: Blazor
+          href: blazor.md
+        - name: JavaScript 및 TypeScript
+          href: javascript.md
+        - name: launchSettings.json
+          href: launch-settings.md
+    - name: Azure
+      items:
+        - name: 개요
+          href: azure-workload.md
+        - name: Azure Functions 소개
+          href: azure-functions.md
+        - name: '자습서: Azure Functions'
+          href: azure-functions-lab.md
+        - name: 연결된 서비스
+          href: connected-services.md
+    - name: Docker
+      items:
+        - name: Docker 시작
+          href: docker-quickstart.md
+        - name: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
+          href: docker-multi-container.md
+    - name: Unity 게임 개발
+      items:
+        - name: Unity 게임 개발
+          href: unity-tools.md
+        - name: 설정
+          href: setup-vsmac-tools-unity.md
+        - name: Unity 시작
+          href: unity-walkthrough.md
+        - name: Unity 도구 사용
+          href: using-vsmac-tools-unity.md
+        - name: Unity에서 .NET 4.x 사용
+          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
+        - name: 변경 로그
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+    - name: Xamarin을 사용한 모바일 앱
+      href: /visualstudio/mac/xamarin
+- name: 액세스 가능성
+  items:
+    - name: 개요
+      href: accessibility.md
+    - name: IDE 접근성 옵션 설정
+      href: accessibility-ide-options.md
+    - name: macOS 접근성 도구 및 기능
+      items:
+        - name: macOS 접근성 도구 사용
+          href: accessibility-macos.md
+        - name: 키보드 탐색 사용
+          href: accessibility-keyboard.md
+        - name: VoiceOver 사용
+          href: accessibility-voiceover.md
+- name: 비디오 자습서
+  items:
+    - name: Mac용 Visual Studio에서 ASP.NET Core 시작
+      href: tutorial-aspnet-core-vsmac-getting-started.md
+    - name: 기존 ASP.NET Core 웹 애플리케이션 확장
+      href: tutorial-aspnet-core-vsmac-extending.md
+- name: Windows 사용자를 위한 Mac용 Visual Studio
+  href: vsmac-for-windows-users.md
+- name: 문제 해결
+  items:
+    - name: 로그 및 예외
+      href: troubleshooting.md
+    - name: Visual Studio 사용자 환경 개선 프로그램
+      href: visual-studio-experience-improvement-program.md
+    - name: 문제 보고
+      href: report-a-problem.md
+    - name: '문제 해결: Mac용 Visual Studio는 Team Foundation 버전 제어를 지원하나요?'
+      href: tf-version-control.md
+    - name: '문제 해결: 왜 모든 템플릿을 볼 수 없나요?'
+      href: troubleshooting-no-templates.md
+    - name: '문제 해결: Updater에서 정보 검색 중에 오류가 발생했습니다.'
+      href: updater-troubleshooting.md
+- name: 릴리스 정보
+  href: /visualstudio/releasenotes/vs2019-mac-relnotes
+- name: 미리 보기 릴리스 정보
+  href: /visualstudio/releasenotes/vs2019-mac-preview-relnotes
+- name: 샘플
+  items:
+    - name: 추천 샘플
+      href: samples/index.yml
+    - name: 모든 ASP.NET Core 샘플
+      href: /samples/browse/?products=aspnet-core
+    - name: 모든 .NET Core 샘플
+      href: /samples/browse/?products=dotnet-core
+    - name: 모든 Xamarin.Forms 샘플
+      href: /xamarin/xamarin-forms/samples/
+    - name: 모든 Xamarin.iOS 샘플
+      href: /xamarin/ios/samples/
+    - name: 모든 Xamarin.Android 샘플
+      href: /xamarin/android/samples/
+    - name: 모든 Xamarin.Mac 샘플
+      href: /xamarin/mac/samples/

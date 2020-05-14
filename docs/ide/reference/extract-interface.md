@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595672"
 ---
 # <a name="extract-an-interface-refactoring"></a>인터페이스 추출 리팩터링

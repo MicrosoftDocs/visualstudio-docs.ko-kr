@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589459"
 ---
 # <a name="how-to-create-a-basic-texture"></a>방법: 기본 질감 만들기
@@ -87,6 +87,6 @@ ms.locfileid: "75589459"
 
 다음 단계로 이 질감에 대한 MIP 수준을 생성할 수 있습니다. 자세한 내용은 [방법: MIP 수준 만들기 및 수정](../designers/how-to-create-and-modify-mip-levels.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-- [Image Editor](../designers/image-editor.md)
+- [이미지 편집기](../designers/image-editor.md)

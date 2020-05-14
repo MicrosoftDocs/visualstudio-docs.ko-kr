@@ -1,5 +1,5 @@
 ---
-title: '방법: 권한 설정 | Microsoft Docs'
+title: '방법: 권한 설정 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774591"
 ---
 # <a name="how-to-set-permissions"></a>방법: 권한 설정
@@ -36,7 +36,7 @@ ms.locfileid: "74774591"
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>사용자 권한을 가진 사용자 계정을 만들려면
 
-1. **내 컴퓨터**를 마우스 오른쪽 단추로 클릭하고 **관리**를 클릭합니다.
+1. **내 컴퓨터**를 마우스 오른쪽 단추로 클릭한 다음 **관리**를 클릭합니다.
 
      **컴퓨터 관리** 창이 열립니다.
 
@@ -86,7 +86,7 @@ ms.locfileid: "74774591"
     <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
-3. 다음 명령을 실행합니다.
+3. 다음 명령 실행:
 
     ```cmd
     vsperfcmd /admin:driver,start /admin:service,start

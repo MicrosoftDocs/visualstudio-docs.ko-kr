@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.openlocfilehash: ad0be8546b88fbd01f54faf7eb00f71ddd6aa632
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "76892157"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac용 Visual Studio 제거
@@ -219,6 +219,6 @@ rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 제거(Windows에서)](/visualstudio/install/uninstall-visual-studio)

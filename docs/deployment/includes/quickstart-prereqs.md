@@ -1,12 +1,12 @@
 ---
 ms.openlocfilehash: 034d4c1e528ff33343b6da1dab3a2de96a0228fc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70197160"
 ---
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 ::: moniker range=">=vs-2019"
 

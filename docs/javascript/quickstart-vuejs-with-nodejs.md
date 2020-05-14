@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428768"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744985"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기
 
@@ -26,7 +26,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 > [!IMPORTANT]
 > 이 문서에서는 Visual Studio 2017 버전 15.8부터 사용할 수 있는 Vue.js 템플릿이 필요합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * Node.js 개발 워크로드와 Visual Studio가 설치되어 있어야 합니다.
 
@@ -43,7 +43,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 * Node.js 런타임을 설치해야 합니다.
 
-    아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
+    아직 설치하지 않은 경우 외부 프레임워크 및 라이브러리와의 호환성을 최대화하기 위해 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치하는 것이 좋습니다. Node.js는 32비트 및 64비트 아키텍처용으로 빌드됩니다. Node.js 워크로드에 포함된 Visual Studio의 Node.js 도구는 두 버전을 모두 지원합니다. 하나만 필요하며 Node.js 설치 관리자는 한 번에 하나의 설치만 지원합니다.
+    
+    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하여 **속성**을 선택하고 **Node.exe 경로**를 설정합니다). Node.js의 전역 설치를 사용하거나 각 Node.js 프로젝트에서 로컬 인터프리터 경로를 지정할 수 있습니다. 
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -51,7 +53,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 1. Node.js 런타임이 아직 설치되어 있지 않으면 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다.
 
-    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
+    자세한 내용은 필수 조건을 참조하세요.
 
 1. Visual Studio를 엽니다.
 
@@ -63,7 +65,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
     ![Vue.js 템플릿](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript** 또는 **TypeScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **기본 Vue.js 웹 애플리케이션**을 선택하고 **basic-vuejs**의 이름을 입력한 다음, **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript** 또는 **TypeScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **기본 Vue.js 웹 애플리케이션**을 선택하고 **basic-vuejs**의 이름을 입력한 다음, **확인**을 선택합니다.
 
     ![Vue.js 템플릿](../javascript/media/vuejs-template.png)
     ::: moniker-end
@@ -101,19 +103,24 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 ## <a name="build-the-project"></a>프로젝트 빌드
 
+::: moniker range=">=vs-2019"
+1. 그런 다음, **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다.
+
+1. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
+::: moniker-end
+::: moniker range="vs-2017"
 1. (TypeScript 프로젝트에만 해당) Visual Studio에서 **빌드** > **솔루션 정리**를 선택합니다.
 
-    ::: moniker range=">=vs-2019"
-    Visual Studio 2019에 포함된 TypeScript 템플릿에서 이 단계를 건너뜁니다.
-    ::: moniker-end
+1. 그런 다음, **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다.
 
-1. 그런 다음, **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
+1. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
+::: moniker-end
 
-    JavaScript Vue.js 프로젝트 템플릿(및 이전 버전의 TypeScript 템플릿)은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows Explorer에서 프로젝트 파일( *\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
+JavaScript Vue.js 프로젝트 템플릿(및 이전 버전의 TypeScript 템플릿)은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows Explorer에서 프로젝트 파일( *\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 
@@ -133,6 +140,6 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 ## <a name="next-steps"></a>다음 단계
 
+- [Vue.js](create-application-with-vuejs.md)에 대한 문서 참조
 - [Node.js 및 Express에 대한 자습서](tutorial-nodejs.md) 살펴보기
-- [Node.js 및 React에 대한 자습서](tutorial-nodejs-with-react-and-jsx.md) 살펴보기
 - [앱을 Linux App Service에 배포](../javascript/publish-nodejs-app-azure.md)

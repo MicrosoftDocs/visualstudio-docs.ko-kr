@@ -1,5 +1,5 @@
 ---
-title: SccDiff 함수 | Microsoft Docs
+title: SccDiff 기능 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52da17cbb7f6349d99a04709bbe469501394d4e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327512"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701028"
 ---
-# <a name="sccdiff-function"></a>SccDiff 함수
-이 함수 표시 (또는 확인만 필요한 경우)에서 차이점 (로컬 디스크)의 현재 파일 및 해당 마지막 체크 인 버전 원본 제어 시스템입니다.
+# <a name="sccdiff-function"></a>SccDiff 기능
+이 함수는 현재 파일(로컬 디스크)과 소스 제어 시스템의 마지막 체크 인 버전 간의 차이점을 표시합니다(또는 선택적으로 확인).
 
 ## <a name="syntax"></a>구문
 
@@ -37,55 +37,55 @@ SCCRTN SccDiff(
 ### <a name="parameters"></a>매개 변수
  pvContext
 
-[in] 원본 제어 플러그 인 상황에 맞는 구조입니다.
+【인】 소스 제어 플러그인 컨텍스트 구조입니다.
 
- hWnd
+ Hwnd
 
-[in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.
+【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
  lpFileName
 
-[in] 차이 요청한 대상 파일 이름입니다.
+【인】 차이가 요청되는 파일 이름입니다.
 
- fOptions
+ f옵션
 
-[in] 명령 플래그입니다. 세부 정보에 대 한 설명을 참조 하세요.
+【인】 명령 플래그입니다. 자세한 내용은 비고를 참조하십시오.
 
- pvOptions
+ pv옵션
 
-[in] 원본 제어 플러그 인에 대 한 옵션입니다.
+【인】 소스 제어 플러그인 관련 옵션.
 
 ## <a name="return-value"></a>반환 값
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:
+ 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|작업 복사 및 서버 버전은 동일 합니다.|
-|SCC_I_FILESDIFFERS|작업 복사본을 소스 제어에서 사용 중인 버전에서 서로 다릅니다.|
-|SCC_I_RELOADFILE|파일 또는 프로젝트 다시 로드 해야 합니다.|
-|SCC_E_FILENOTCONTROLLED|소스 제어를 파일이 없습니다.|
-|SCC_E_NOTAUTHORIZED|사용자는이 작업을 수행할 수 없습니다.|
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다. 재시도 사용 하는 것이 좋습니다.|
-|SCC_E_NONSPECIFICERROR|일반 오류입니다. 파일 차이 가져오지 못했습니다.|
+|SCC_OK|작업 복사본 및 서버 버전은 동일합니다.|
+|SCC_I_FILESDIFFERS|작업 복사본은 소스 제어의 버전과 다릅니다.|
+|SCC_I_RELOADFILE|파일 또는 프로젝트를 다시 로드해야 합니다.|
+|SCC_E_FILENOTCONTROLLED|파일이 소스 제어를 받지 않습니다.|
+|SCC_E_NOTAUTHORIZED|사용자는 이 작업을 수행할 수 없습니다.|
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 소스 제어 시스템에 액세스하는 데 문제가 있었습니다. 다시 시도하는 것이 좋습니다.|
+|SCC_E_NONSPECIFICERROR|비특이적 오류; 파일 차이를 얻지 못했습니다.|
 |SCC_E_FILENOTEXIST|로컬 파일을 찾을 수 없습니다.|
 
 ## <a name="remarks"></a>설명
- 이 함수는 두 개의 다른 용도로 사용 됩니다. 기본적으로 파일에 변경 내용 목록을 표시 합니다. 소스 제어 플러그 인 형식에 관계 없이 디스크에 대 한 사용자의 파일 및 소스 제어에서 파일의 최신 버전의 차이점을 표시 하려면 선택에서 자체 창에서 열립니다.
+ 이 함수는 두 가지 다른 용도로 사용됩니다. 기본적으로 파일의 변경 내용 목록을 표시합니다. 소스 제어 플러그인은 원하는 형식에 관계없이 자체 창을 열어 디스크에 있는 사용자 파일과 소스 제어하에 있는 파일의 최신 버전 간의 차이점을 표시합니다.
 
- 또는 IDE 단순히 파일 변경 되었는지 여부를 확인 해야 합니다. 예를 들어, IDE는 파일을 체크 아웃 한 사용자에 게 알리지 않고 안전 인지 확인 해야 합니다. IDE에서 전달 하는 경우는 `SCC_DIFF_CONTENTS` 플래그입니다. 소스 제어 플러그 인 소스 제어 파일에 대해 바이트 단위로 디스크에 파일을 확인 하 고 두 개의 파일을 사용자에 게 아무 것도 표시 하지 않고 다른 지 여부를 나타내는 값을 반환 해야 합니다.
+ 또는 IDE는 파일이 변경되었는지 여부를 결정해야 할 수도 있습니다. 예를 들어 IDE는 사용자에게 알리지 않고 파일을 체크 아웃하는 것이 안전한지 확인해야 할 수 있습니다. 이 경우 IDE는 플래그를 `SCC_DIFF_CONTENTS` 통과합니다. 소스 제어 플러그인은 원본 제어 파일에 대해 바이트별로 디스크의 파일을 확인하고 사용자에게 아무 것도 표시하지 않고 두 파일이 다른지 여부를 나타내는 값을 반환해야 합니다.
 
- 성능 최적화, 소스 제어 플러그 인 체크섬 또는 호출한 바이트 단위로 비교 하는 대신 타임 스탬프를 기반으로 하는 대신 사용할 수 있습니다 `SCC_DIFF_CONTENTS`: 물론 빨라지지만 덜 안정적인 이러한 형태의 비교 됩니다. 모든 소스 제어 시스템에는 이러한 대체 비교 메서드를 지원할 수 있습니다 및 플러그 인 할 내용 비교 하도록 대체 합니다. 모든 원본 제어 플러그 인, 최소한 지원 해야 내용을 비교 합니다.
+ 성능 최적화로 소스 제어 플러그인은 다음과 같은 형태의 비교가 요구되는 바이트별 비교 대신 체크섬 또는 타임스탬프를 `SCC_DIFF_CONTENTS`기반으로 대안을 사용할 수 있습니다. 모든 소스 제어 시스템이 이러한 대체 비교 방법을 지원할 수 있는 것은 아니며 플러그인은 내용 비교로 되돌아갈 수 있습니다. 모든 소스 제어 플러그인은 최소한 콘텐츠 비교를 지원해야 합니다.
 
 > [!NOTE]
-> 빠른 차이 플래그는 함께 사용할 수 없습니다. 없음 플래그를 전달 하는 것이 유효 하지만 동시에 둘 이상의 전달 올바르지 않습니다. `SCC_DIFF_QUICK_DIFF`을 테스트 하려면 사용할 수는 모든 플래그를 결합 하는 마스크 있지만 매개 변수로 전달 되지 해야 합니다.
+> 빠른 차이 플래그는 상호 배타적입니다. 플래그를 전달하지 않는 것은 유효하지만 동시에 두 개 이상의 플래그를 전달하는 것은 유효하지 않습니다. `SCC_DIFF_QUICK_DIFF`모든 플래그를 결합하는 마스크인 을 테스트하는 데 사용할 수 있지만 매개 변수로 전달해서는 안 됩니다.
 
 |`fOption`|의미|
 |---------------|-------------|
-|SCC_DIFF_IGNORECASE|대/소문자 비교 (빠른 또는 시각적 개체 차이점에 대해 사용할 수 있음).|
-|SCC_DIFF_IGNORESPACE|공백 (빠른 또는 시각적 개체 차이점에 대해 사용할 수 있음)를 무시 합니다.|
-|SCC_DIFF_QD_CONTENTS|자동으로 파일을 바이트 단위로 비교합니다.|
-|SCC_DIFF_QD_CHECKSUM|지원 되는 경우 checksum 통해 파일을 자동으로 비교 합니다. 지원 되지 않는 경우 비교 내용 대체 합니다.|
-|SCC_DIFF_QD_TIME|지원 되는 경우 해당 타임 스탬프를 통해 파일을 자동으로 비교 합니다. 지원 되지 않는 경우 비교 내용 대체 합니다.|
+|SCC_DIFF_IGNORECASE|대/소문자 구분 되지 않는 비교 (빠른 또는 시각적 차이 사용할 수 있습니다).|
+|SCC_DIFF_IGNORESPACE|공백을 무시합니다(빠른 또는 시각적 차이에 사용할 수 있음).|
+|SCC_DIFF_QD_CONTENTS|파일바이트별로 자동으로 비교합니다.|
+|SCC_DIFF_QD_CHECKSUM|지원되는 경우 체크섬을 통해 파일을 자동으로 비교합니다. 지원되지 않으면 내용비교로 돌아갑니다.|
+|SCC_DIFF_QD_TIME|지원되는 경우 타임스탬프를 통해 파일을 자동으로 비교합니다. 지원되지 않으면 내용비교로 돌아갑니다.|
 
-## <a name="see-also"></a>참고자료
-- [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>참조
+- [소스 제어 플러그인 API 기능](../extensibility/source-control-plug-in-api-functions.md)

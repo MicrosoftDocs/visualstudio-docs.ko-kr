@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO | Microsoft Docs
+title: FIELD_INFO | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337697"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736889"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
-이 구조는 지역 변수, 매개 변수 또는 다른 필드를 설명합니다.
+# <a name="field_info"></a>FIELD_INFO
+이 구조는 로컬 변수, 매개 변수 또는 기타 필드를 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>멤버
 `dwFields`\
-플래그의 조합을 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 채워지는 멤버를 지정 하는 열거형입니다.
+[채워진](../../../extensibility/debugger/reference/field-info-fields.md) 멤버를 지정하는 FIELD_INFO_FIELDS 열거형의 플래그 조합입니다.
 
 `bstrFullName`\
 필드의 전체 이름입니다.
@@ -61,19 +61,19 @@ public struct FIELD_INFO {
 필드의 형식입니다.
 
 `dwModifiers`\
-플래그의 조합을 합니다 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) 필드를 설명 하는 열거형입니다.
+필드를 설명하는 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) 열거형의 플래그 조합입니다.
 
 ## <a name="remarks"></a>설명
-이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 메서드 위치에서 채워집니다.
+이 구조는 채워진 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 메서드에 전달됩니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: sh.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)

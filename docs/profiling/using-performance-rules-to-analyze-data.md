@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778065"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>성능 규칙을 사용하여 데이터 분석
@@ -22,7 +22,7 @@ ms.locfileid: "74778065"
 > [!NOTE]
 > 프로파일러 성능 경고는 프로그램 실행의 동적 분석에서 생성되며 코드 분석 경고와는 관계가 없습니다. 코드 분석에서도 소스 코드의 정적 분석을 기반으로 하여 관리 코드에 대한 성능 경고를 생성할 수 있습니다. 자세한 내용은 [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md) 및 [성능 경고](../code-quality/performance-warnings.md)를 참조하세요.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 - [방법: 성능 경고 보기](../profiling/how-to-view-performance-warnings.md)
 
  **오류 목록** 창을 열어 프로파일러 성능 경고를 확인하는 방법을 설명합니다.

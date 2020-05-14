@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590984"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 테스트 반복 구성
@@ -89,7 +89,7 @@ ms.locfileid: "75590984"
 
 5. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **테스트 반복 간 인지 시간** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [부하 테스트에 대한 데스트 에이전트 및 테스트 컨트롤러 구성](../test/configure-test-agents-and-controllers-for-load-tests.md)

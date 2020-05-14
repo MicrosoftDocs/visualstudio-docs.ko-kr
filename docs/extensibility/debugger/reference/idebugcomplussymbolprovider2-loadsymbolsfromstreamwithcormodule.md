@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 682786df1d676391cc1ec838e739cb03983ebb66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa1d03b2f91cea03403f4893e61ec15bf5b82952
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334662"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733389"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-지정 된 데이터 스트림에서 디버그 기호를 로드 합니다 **ICorDebugModule** 개체입니다.
+**ICorDebugModule** 개체가 지정된 데이터 스트림에서 디버그 기호를 로드합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,28 +50,28 @@ int LoadSymbolsFromStreamWithCorModule(
 
 ## <a name="parameters"></a>매개 변수
 `ulAppDomainID`\
-[in] 응용 프로그램 도메인의 식별자입니다.
+【인】 응용 프로그램 도메인의 식별자입니다.
 
 `guidModule`\
-[in] 모듈의 고유 식별자입니다.
+【인】 모듈의 고유 식별자입니다.
 
 `baseAddress`\
-[in] 기본 메모리 주소입니다.
+【인】 기본 메모리 주소입니다.
 
 `pUnkMetadataImport`\
-[in] 기호 메타 데이터가 포함 된 개체입니다.
+【인】 기호 메타데이터가 포함된 개체입니다.
 
 `pUnkCorDebugModule`\
-[in] 구현 하는 개체를 [ICorDebugModule 인터페이스](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)합니다.
+【인】 [ICorDebugModule 인터페이스를](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)구현하는 개체입니다.
 
 `pStream`\
-[in] 로드 하는 디버그 기호를 포함 하는 데이터 스트림.
+【인】 로드할 디버그 기호가 포함된 데이터 스트림입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.
+다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출하는 **CDebugSymbolProvider** 개체에 대해 이 메서드를 구현하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(
@@ -143,5 +143,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

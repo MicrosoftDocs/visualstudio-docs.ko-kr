@@ -1,26 +1,29 @@
 ---
 title: IntelliSense를 통한 정규식 완성 메뉴
-ms.date: 06/10/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75110432f9bba35ce02588032b9a41dece01056b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033424"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093858"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>IntelliSense를 통한 정규식 완성 메뉴
 
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 **내용:** IntelliSense를 통한 정규식(regex) 완성 메뉴
 
@@ -36,6 +39,6 @@ ms.locfileid: "67033424"
 
    ![정규식 완성 IntelliSense](../media/regex-completion-intellisense.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

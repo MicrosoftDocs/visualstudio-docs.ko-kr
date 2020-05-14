@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c337a6e809f85490e651fecf405b44e9f28930
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592011"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233124"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>옵션 대화 상자: 환경 \> 작업 목록
 
@@ -61,7 +61,7 @@ ms.locfileid: "75592011"
 > [!NOTE]
 > 기본 주석 토큰을 삭제하거나 이름을 바꿀 수는 없지만 해당 우선 순위 수준을 변경할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업 목록 사용](../../ide/using-the-task-list.md)
 - [코드에 책갈피 설정](../../ide/setting-bookmarks-in-code.md)

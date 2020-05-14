@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be6194936264d6038c4dc1e26b5d05f539f0dc6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830904"
 ---
-# <a name="markerserieswritemessage-method"></a>marker_series::write_message 메서드
+# <a name="marker_serieswrite_message-method"></a>marker_series::write_message 메서드
 동시성 시각화 도우미 추적 파일에 메시지를 씁니다.
 
 ## <a name="syntax"></a>구문
@@ -59,5 +59,5 @@ void write_message(
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [marker_series 클래스](../profiling/marker-series-class.md)

@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: 실행 중인 프로세스에 연결
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: 기호 파일(.pdb) 및 소스 파일 지정
+    - name: 기호 파일(.pdb) 및 원본 파일 지정
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: 64비트 애플리케이션 디버그
       href: debug-64-bit-applications.md
@@ -134,7 +134,7 @@
               href: web-control-library-managed-code.md
         - name: 콘솔 프로젝트
           href: debugging-preparation-console-projects.md
-        - name: ASP.NET 웹 애플리케이션
+        - name: ASP.NET 웹 응용 프로그램
           href: debugging-preparation-aspnet-web-applications.md
         - name: Visual Studio 솔루션에 포함되지 않는 실행 파일 디버그
           href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: 숨겨진 디버거 명령 복원
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: 원격 디버깅
   items:
-    - name: Remote Debugging
+    - name: 원격 디버깅
       href: remote-debugging.md
     - name: 원격 디버깅을 위해 Windows 방화벽 구성
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -424,7 +424,7 @@
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: 권장되는 속성 설정
               href: managed-debugging-recommended-property-settings.md
-            - name: Windows Forms 애플리케이션
+            - name: Windows Forms 응용 프로그램
               href: debugging-preparation-windows-forms-applications.md
             - name: Windows 서비스
               href: debugging-preparation-windows-services.md
@@ -564,7 +564,7 @@
           href: visual-studio-graphics-diagnostics.md
         - name: 개요
           href: overview-of-visual-studio-graphics-diagnostics.md
-        - name: 시작
+        - name: 시작하기
           href: getting-started-with-visual-studio-graphics-diagnostics.md
         - name: 그래픽 정보 캡처
           href: capturing-graphics-information.md
@@ -764,7 +764,7 @@
       items:
         - name: '옵션 대화 상자, 디버깅'
           href: debugging-options-dialog-box.md
-        - name: '옵션 대화 상자, 디버깅, 일반'
+        - name: 'General, Debugging, Options Dialog Box'
           href: general-debugging-options-dialog-box.md
         - name: '옵션 대화 상자, 디버깅, Just-In-Time'
           href: just-in-time-debugging-options-dialog-box.md

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595659"
 ---
 # <a name="evaluate-statement-command"></a>문 실행 명령
@@ -34,7 +34,7 @@ ms.locfileid: "75595659"
 
 `text`
 
-필수 요소. 평가할 문입니다.
+필수 사항입니다. 평가할 문입니다.
 
 ## <a name="example"></a>예제
 
@@ -42,10 +42,10 @@ ms.locfileid: "75595659"
 >Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [인쇄 명령](../../ide/reference/print-command.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

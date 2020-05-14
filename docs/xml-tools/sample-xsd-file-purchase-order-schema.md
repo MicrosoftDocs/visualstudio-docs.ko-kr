@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75592570"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>샘플 XSD 파일: 구매 주문 스키마

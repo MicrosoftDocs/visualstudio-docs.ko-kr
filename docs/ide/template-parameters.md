@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585888"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78169367"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 
@@ -23,7 +23,7 @@ ms.locfileid: "75585888"
 
 ## <a name="declare-and-enable-template-parameters"></a>템플릿 매개 변수 선언 및 사용
 
-템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 예:
+템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 예를 들어:
 
 - $safeprojectname$
 
@@ -61,7 +61,7 @@ ms.locfileid: "75585888"
 |safeitemrootname|`safeitemname`와 동일합니다.|
 |safeprojectname|프로젝트를 만들 때 사용자가 제공했지만 안전하지 않은 문자 및 공백을 모두 제거한 이름입니다.|
 |Time|DD/MM/YYYY 00:00:00 형식인 현재 시간입니다.|
-|specifiedSolutionName|솔루션의 기본 이름. "솔루션 디렉터리 만들기"를 선택한 경우 `specifiedSolutionName`에는 솔루션 이름이 있습니다. "솔루션 디렉터리 만들기"를 선택하지 않은 경우 `specifiedSolutionName`은 비어 있습니다.|
+|specifiedsolutionname|솔루션의 기본 이름. "솔루션 디렉터리 만들기"를 선택한 경우 `specifiedsolutionname`에는 솔루션 이름이 있습니다. "솔루션 디렉터리 만들기"를 선택하지 않은 경우 `specifiedsolutionname`은 비어 있습니다.|
 |userdomain|현재 사용자 도메인입니다.|
 |사용자 이름|현재 사용자 이름입니다.|
 |webnamespace|현재 웹 사이트의 이름입니다. 이 매개 변수는 고유한 클래스 이름을 보장하기 위해 웹 양식 템플릿에서 사용됩니다. 웹 사이트가 웹 서버의 루트 디렉터리에 있으면 이 템플릿 매개 변수는 웹 서버의 루트 디렉터리를 확인합니다.|

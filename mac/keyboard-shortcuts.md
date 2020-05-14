@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984566"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77567974"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 기본 바로 가기 키
 
@@ -20,6 +20,13 @@ ms.locfileid: "74984566"
 
 > [!TIP]
 > 이 문서에 표시되는 바로 가기 키와 Mac용 Visual Studio의 키 바인딩 기본 설정은 macOS에서 일반적으로 사용되는 기호를 사용하여 표시됩니다. 기호를 잘 모르는 경우에는 [macOS 키 기호 조회 표](#macos-key-symbols-lookup)를 검토합니다.
+
+## <a name="downloadable-quick-ref-pdfs"></a>다운로드 가능한 빠른 참조 pdf
+
+가장 많이 사용되고 가장 유용한 바로 가기 키를 다운로드 가능한 pdf 파일로 컴파일했습니다. 두 가지 버전이 있습니다. 하나는 Mac용 Visual Studio에 대한 바로 가기를 보여주는 버전이며, 다른 하나는 Windows를 사용하는 경우 이전에 Visual Studio를 사용한 경험이 있는 사용자에게 Visual Studio 바로 가기를 나란히 표시하는 버전입니다.
+
+ - [Mac용 Visual Studio의 바로 가기 키 빠른 참조](https://aka.ms/vsm-keys)
+ - [Visual Studio 및 Mac용 Visual Studio의 바로 가기 키 빠른 참조](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>코드 탐색
 
@@ -32,7 +39,7 @@ ms.locfileid: "74984566"
 |이전 오류|**⌥⇧⇞**|
 |파일의 이전 문제|**⌥⇞**|
 
-## <a name="debug"></a>Debug
+## <a name="debug"></a>디버그
 
 |명령|바로 가기 키|
 |-|-|
@@ -209,7 +216,7 @@ ms.locfileid: "74984566"
 |문자 바꾸기|**⌃T**|
 |&lt;div&gt;로 래핑|**⌥⇧W**|
 
-## <a name="view"></a>보기
+## <a name="view"></a>View
 
 |명령|바로 가기 키|
 |-|-|
@@ -270,6 +277,6 @@ ms.locfileid: "74984566"
 |␣|**스페이스바**|
 |⇥|**Tab**|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 바로 가기 키(Windows에서)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107843"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>액세스 가능한 애플리케이션 설계를 위한 리소스
@@ -46,7 +46,7 @@ ms.locfileid: "70107843"
 
 * **내게 필요한 옵션이 있는 콘솔** 이 기술 문서에서는 Windows XP에서 내게 필요한 옵션 보조 도구를 사용할 수 있도록 콘솔을 노출하는 데 사용되는 API와 이벤트에 대해 설명합니다. 자세한 내용은 [콘솔 내게 필요한 옵션](/previous-versions/windows/desktop/dnacc/console-accessibility)을 참조하세요.
 
-## <a name="websites"></a>웹 사이트
+## <a name="websites"></a>Websites
 
 - [연습: 이미지 컨트롤, 메뉴 컨트롤 및 자동 포스트백을 사용하기 위한 내게 필요한 옵션 지침](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 이 문서에서는 샘플 웹 페이지에서 액세스 가능한 컨트롤을 포함하는 단계별 지침을 제공합니다. 또한 웹에서 일부 내게 필요한 옵션 디자인 팁을 제공합니다.
 

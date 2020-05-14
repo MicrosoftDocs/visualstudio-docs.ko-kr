@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04f7a66884238856ba6988b9f1e8c648f4ff1d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666651"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>옵션, 텍스트 편집기, U-SQL, IntelliSense

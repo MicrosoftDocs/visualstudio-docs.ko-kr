@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 1a83ce4cf47f8a1607e562dfdb69b5b7374de1a6
-ms.sourcegitcommit: ca9375d1c48355f2e9f7bc1b2d3f0e94eb15db00
+ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76022340"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77652809"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0의 새로운 기능
 
@@ -21,7 +21,7 @@ ms.locfileid: "76022340"
 
 ## <a name="changed-path"></a>변경된 경로
 
- MSBuild는 각 Visual Studio 버전 아래의 *\Current* 폴더에 설치됩니다. 예를 들어 *C:\Program Files (x86)\Microsoft Visual Studio\Current\Enterprise\MSBuild*에 설치됩니다. 또한 다음 PowerShell 모듈을 사용하여 MSBuild를 찾을 수도 있습니다. [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
+ MSBuild는 각 Visual Studio 버전 아래 *\Current* 폴더에 설치되며, 실행 파일은 *\Bin* 하위 폴더에 있습니다. 예를 들어 Visual Studio 2019 Community와 함께 설치된 *MSBuild.exe* 경로는 *C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe*입니다. PowerShell 모듈 [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)을 사용하여 MSBuild를 찾을 수도 있습니다.
 
 ## <a name="changed-properties"></a>변경된 속성
 
@@ -36,4 +36,5 @@ ms.locfileid: "76022340"
 MSBuild(및 Visual Studio)는 이제 .NET Framework 4.7.2를 대상으로 합니다. 새로운 MSBuild API 기능을 사용하려면 어셈블리도 업그레이드해야 하지만 기존 코드는 계속 작동합니다.
 
 ## <a name="see-also"></a>참조
+
 - [MSBuild](../msbuild/msbuild.md)

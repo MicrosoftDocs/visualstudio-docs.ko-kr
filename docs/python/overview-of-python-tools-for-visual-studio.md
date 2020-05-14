@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845666"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79300866"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 

@@ -1,5 +1,5 @@
 ---
-title: SccInitialize 함수 | Microsoft Docs
+title: Scc초기화 기능 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552ec06a4eabf55872358fc8e5d731e47c1eb6ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721178"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700637"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 함수
-이 함수는 소스 제어 플러그 인을 초기화 하 고 IDE (통합 개발 환경)에 기능 및 제한을 제공 합니다.
+이 함수는 소스 제어 플러그인을 초기화하고 통합 개발 환경(IDE)에 대한 기능과 제한을 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,58 +40,58 @@ SCCRTN SccInitialize (
 #### <a name="parameters"></a>매개 변수
  `ppvContext`
 
-진행 소스 제어 플러그 인은 여기에 컨텍스트 구조에 대 한 포인터를 놓을 수 있습니다.
+【인】 소스 제어 플러그인은 컨텍스트 구조에 대한 포인터를 여기에 배치할 수 있습니다.
 
  `hWnd`
 
-진행 소스 제어 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.
+【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
  `lpCallerName`
 
-진행 소스 제어 플러그 인을 호출 하는 프로그램의 이름입니다.
+【인】 소스 제어 플러그인을 호출하는 프로그램의 이름입니다.
 
  `lpSccName`
 
-[in, out] 소스 제어 플러그 인에서 자체 이름을 지정 하는 버퍼 (`SCC_NAME_LEN`초과 하지 않음)입니다.
+【인, 아웃】 소스 제어 플러그인이 자체 이름을 넣는 버퍼입니다(초과하지 `SCC_NAME_LEN`않음).
 
  `lpSccCaps`
 
-제한이 소스 제어 플러그 인의 기능 플래그를 반환 합니다.
+【아웃】 소스 제어 플러그인의 기능 플래그를 반환합니다.
 
  `lpAuxPathLabel`
 
-[in, out] 소스 제어 플러그 인이 [SccOpenProject](../extensibility/sccopenproject-function.md) 및 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)에서 반환된 `lpAuxProjPath` 매개 변수를 설명하는 문자열을 넣는 버퍼입니다. (`SCC_AUXLABEL_LEN`을 넘지 않음)
+【인, 아웃】 소스 제어 플러그인이 [SccOpenProject](../extensibility/sccopenproject-function.md) 및 [SccGetProjPath에서](../extensibility/sccgetprojpath-function.md) 반환되는 `lpAuxProjPath` 매개 변수를 설명하는 문자열을 배치하는 `SCC_AUXLABEL_LEN`버퍼입니다(초과하지 않음).
 
  `pnCheckoutCommentLen`
 
-제한이 체크 아웃 설명에 허용 되는 최대 길이를 반환 합니다.
+【아웃】 체크 아웃 주석에 대한 최대 허용 길이를 반환합니다.
 
  `pnCommentLen`
 
-제한이 다른 주석에 허용 되는 최대 길이를 반환 합니다.
+【아웃】 다른 주석에 대한 최대 허용 길이를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
+## <a name="return-value"></a>Return Value
+ 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|소스 제어를 초기화 했습니다.|
+|SCC_OK|소스 제어 초기화가 성공했습니다.|
 |SCC_E_INITIALIZEFAILED|시스템을 초기화할 수 없습니다.|
-|SCC_E_NOTAUTHORIZED|사용자가 지정 된 작업을 수행할 수 없습니다.|
-|SCC_E_NONSPECFICERROR|일반 오류입니다. 소스 제어 시스템이 초기화 되지 않았습니다.|
+|SCC_E_NOTAUTHORIZED|사용자는 지정된 작업을 수행할 수 없습니다.|
+|SCC_E_NONSPECFICERROR|비특이적 오류; 소스 제어 시스템이 초기화되지 않았습니다.|
 
-## <a name="remarks"></a>주의
- IDE는 먼저 소스 제어 플러그 인을 로드할 때이 함수를 호출 합니다. IDE에서 호출자 이름과 같은 특정 정보를 플러그 인에 전달할 수 있습니다. 또한 IDE는 주석과 플러그 인의 기능에 허용 되는 최대 길이 등의 특정 정보를 다시 가져옵니다.
+## <a name="remarks"></a>설명
+ IDE는 소스 제어 플러그인을 처음 로드할 때 이 함수를 호출합니다. 이를 통해 IDE는 호출자 이름과 같은 특정 정보를 플러그인에 전달할 수 있습니다. 또한 IDE는 주석에 허용되는 최대 길이 및 플러그인 기능과 같은 특정 정보를 다시 가져옵니다.
 
- `ppvContext` `NULL` 포인터를 가리킵니다. 소스 제어 플러그 인은 고유한 용도에 대 한 구조체를 할당 하 고 해당 구조체에 대 한 포인터를 `ppvContext`에 저장할 수 있습니다. IDE는 다른 모든 VSSCI API 함수에이 포인터를 전달 하 여 플러그 인이 전역 저장소를 사용 하 고 플러그 인의 여러 인스턴스를 지원 하지 않고도 컨텍스트 정보를 사용할 수 있도록 합니다. [SccUninitialize](../extensibility/sccuninitialize-function.md) 가 호출 되 면이 구조를 할당 취소 해야 합니다.
+ 포인터를 `ppvContext` 가리킵니다. `NULL` 소스 제어 플러그인은 자체 사용을 위해 구조를 할당하고 해당 구조에 `ppvContext`대한 포인터를 에 저장할 수 있습니다. IDE는 이 포인터를 다른 모든 VSSCI API 함수에 전달하여 플러그인이 전역 저장소에 의존하지 않고 컨텍스트 정보를 사용할 수 있도록 하고 플러그인의 여러 인스턴스를 지원할 수 있도록 합니다. 이 구조는 [SccUninitialize가](../extensibility/sccuninitialize-function.md) 호출될 때 할당 해제되어야 합니다.
 
- `lpCallerName` 및 `lpSccName` 매개 변수를 사용 하면 IDE와 소스 제어 플러그 인에서 이름을 교환할 수 있습니다. 이러한 이름은 여러 인스턴스를 구분 하는 데만 사용 되거나 실제로 메뉴 또는 대화 상자에 표시 될 수 있습니다.
+ 및 `lpCallerName` `lpSccName` 매개 변수를 사용하면 IDE 및 소스 제어 플러그인이 이름을 교환할 수 있습니다. 이러한 이름은 단순히 여러 인스턴스를 구분하는 데 사용되거나 실제로 메뉴 또는 대화 상자에 나타날 수 있습니다.
 
- `lpAuxPathLabel` 매개 변수는 솔루션 파일에 저장 되 고 [Sccopenproject](../extensibility/sccopenproject-function.md)호출에서 소스 제어 플러그 인에 전달 되는 보조 프로젝트 경로를 식별 하기 위해 주석으로 사용 되는 문자열입니다. [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] "SourceSafe 프로젝트:" 문자열을 사용 합니다. 다른 소스 제어 플러그 인은이 특정 문자열을 사용 하지 않도록 합니다.
+ 매개 `lpAuxPathLabel` 변수는 솔루션 파일에 저장되고 [SccOpenProject에](../extensibility/sccopenproject-function.md)대한 호출에서 소스 제어 플러그인에 전달되는 보조 프로젝트 경로를 식별하기 위해 주석으로 사용되는 문자열입니다. [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]"SourceSafe 프로젝트:"문자열을 사용합니다. 다른 소스 제어 플러그인은 이 특정 문자열사용을 삼가야 합니다.
 
- `lpSccCaps` 매개 변수는 플러그 인의 기능을 나타내는 bitflag를 저장할 원본 제어 플러그 인을 제공 합니다. 기능 비트 플래그의 전체 목록은 [기능 플래그](../extensibility/capability-flags.md)를 참조 하세요. 예를 들어 플러그 인에서 호출자가 제공한 콜백 함수에 결과를 쓸 계획인 경우 플러그 인은 기능 비트 SCC_CAP_TEXTOUT을 설정 합니다. 그러면 IDE에서 버전 제어 결과에 대 한 창을 만들도록 신호를 보낼 수 있습니다.
+ 매개 `lpSccCaps` 변수는 소스 제어 플러그인에 플러그인의 기능을 나타내는 비트 플래그를 저장할 수 있는 위치를 제공합니다. 기능 비트 플래그의 전체 목록은 [기능 플래그를](../extensibility/capability-flags.md)참조하십시오. 예를 들어 플러그인이 발신자가 제공한 콜백 함수에 결과를 작성하려는 경우 플러그인은 기능 비트를 SCC_CAP_TEXTOUT 설정합니다. 이렇게 하면 IDE가 버전 제어 결과에 대한 창을 만들도록 신호를 보시입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

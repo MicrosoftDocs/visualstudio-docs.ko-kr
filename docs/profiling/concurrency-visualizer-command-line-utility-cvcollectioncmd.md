@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911212"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)
@@ -40,7 +40,7 @@ ms.locfileid: "72911212"
 
 |옵션|설명|매개 변수|반환 값|
 |------------|-----------------|----------------|-------------------|
-|Query|수집을 시작할 수 있는지 여부를 반환합니다.|없음|수집을 시작할 준비가 되면 0입니다.<br /><br /> 수집이 이미 진행 중이면 1입니다.<br /><br /> 수집이 진행 중이 아니지만 필수 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 세션 중 하나 이상이 이미 활성화되었으면 2입니다.|
+|쿼리|수집을 시작할 수 있는지 여부를 반환합니다.|없음|수집을 시작할 준비가 되면 0입니다.<br /><br /> 수집이 이미 진행 중이면 1입니다.<br /><br /> 수집이 진행 중이 아니지만 필수 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 세션 중 하나 이상이 이미 활성화되었으면 2입니다.|
 |Launch|Concurrency 시각화 도우미 아래에서 지정한 프로세스를 실행합니다.|실행 파일의 경로|실행에 성공한 경우 0입니다.<br /><br /> 대상 애플리케이션을 시작할 수 없어 실행에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 실행에 실패한 경우 13입니다.|
 |연결|시스템 차원에서 추적 수집을 시작합니다. 그렇지 않고 프로세스가 지정되어 있으면 해당 프로세스에 연결합니다.|없음|연결에 성공한 경우 0입니다.<br /><br /> 지정한 프로세스가 잘못되었거나 모호해서 연결에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 연결에 실패한 경우 13입니다.|
 |Detach|수집을 중지합니다.|없음|분리에 성공한 경우 0입니다.<br /><br /> 현재 수집이 진행되고 있지 않아 분리에 실패한 경우 1입니다.<br /><br /> 수집을 중지할 수 없어 분리에 실패한 경우 2입니다.|
@@ -73,7 +73,7 @@ ms.locfileid: "72911212"
 | MarkerProvider | 단일 표식 공급자를 지정합니다. | 다음 요소를 포함해야 합니다.<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 다음 요소를 포함할 수 있습니다.<br /><br /> -   Categories<br />-   IsEnabled |
 | Level | MarkerProvider의 중요도 수준을 설정합니다. | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | GUID | ETW 표식 공급자의 고유한 전역 식별자입니다. | GUID |
-| name | 표식 공급자에 대한 설명을 지정합니다. | 문자열 |
+| 이름 | 표식 공급자에 대한 설명을 지정합니다. | 문자열 |
 | 범주 | 표식 공급자에 대해 수집된 범주를 지정합니다. | 쉼표로 구분된 숫자 문자열 또는 숫자 범위 |
 | IsEnabled | 표식 공급자를 수집에 사용할지 여부를 결정하는 값을 설정합니다. | -   True<br />-   False |
 | FilterConfig | 수집에서 필터링된 ETW 이벤트의 구성 옵션 목록을 지정합니다. | 다음 요소가 포함되어 있을 수 있습니다.<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |
@@ -91,7 +91,7 @@ ms.locfileid: "72911212"
 | JustMyCode | 내 코드만 디렉터리의 목록을 지정합니다. | MyCodeDirectory 요소 0개 이상으로 구성된 목록 |
 | MyCodeDirectory | 코드가 포함된 디렉터리를 지정합니다. | 절대 경로 |
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  처음부터 구성 파일을 만드는 대신 다음 예제를 복사한 다음 요구 사항에 맞춰 수정할 수 있습니다.
 
 ```xml

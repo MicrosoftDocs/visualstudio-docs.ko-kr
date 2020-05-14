@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6a8c5d431b7be54c4c5bc1a1c37619deb67de751
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779586"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>.NET 메모리 할당 및 수명 데이터 수집
@@ -46,7 +46,7 @@ Visual Studio 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 
 
 1. **성능 탐색기**에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
 
-2. ‘성능 세션’ **속성 페이지** 대화 상자에서 **일반** 탭을 클릭하고, **.NET 개체 할당 정보 수집** 확인란을 선택합니다. 
+2. ‘성능 세션’ **속성 페이지** 대화 상자에서 **일반** 탭을 클릭하고 **.NET 개체 할당 정보 수집** 확인란을 선택합니다. 
 
 3. .NET 개체 수명 데이터를 수집하려면 **추가적으로 .NET 개체 수명 정보 수집** 확인란을 선택합니다.
 
@@ -78,7 +78,7 @@ Visual Studio 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 
 |**CPU 카운터** 페이지에서 프로파일링 데이터에 추가할 프로세서 성능 카운터를 하나 이상 지정합니다.|- [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)|
 |**고급** 페이지에서 특정 함수를 포함하거나 제외하는 옵션 등 원하는 추가 VSInstr.exe 옵션을 지정합니다. VSInstr 옵션에 대한 자세한 내용은 [VSInstr](../profiling/vsinstr.md)을 참조하세요.|- [방법: 추가 계측 옵션 지정](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [방법: 특정 함수로 계측 제한](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)

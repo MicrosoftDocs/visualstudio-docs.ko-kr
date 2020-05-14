@@ -5,17 +5,17 @@ ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589957"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579284"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7단계: 양식에 대화 상자 구성 요소 추가
 

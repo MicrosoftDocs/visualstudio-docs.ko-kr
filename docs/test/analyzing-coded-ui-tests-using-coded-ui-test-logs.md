@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591218"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
@@ -28,7 +28,7 @@ ms.locfileid: "75591218"
 
    1. 테스트를 실행할 때 어떤 *QTAgent\*.exe* 프로세스를 시작할지 결정합니다. 이것을 결정하는 한 가지 방법은 Windows **작업 관리자**에서 **세부 정보** 탭을 확인하는 것입니다.
 
-   2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* 폴더에서 해당 *.config* 파일을 엽니다. 예를 들어 *QTAgent_40.exe* 프로세스를 실행하는 경우에는 *QTAgent_40.exe.config*를 엽니다.
+   2. *%ProgramFiles(x86)%\Microsoft Visual Studio* *version>\\\<edition>\Common7\IDE\\ 폴더에서 해당 \<.config* 파일을 엽니다. 예를 들어 *QTAgent_40.exe* 프로세스를 실행하는 경우에는 *QTAgent_40.exe.config*를 엽니다.
 
    2. **EqtTraceLevel**의 값을 원하는 로그 수준으로 수정합니다.
 
@@ -58,7 +58,7 @@ ms.locfileid: "75591218"
    Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
    ```
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2단계: 코딩된 UI 테스트 실행 및 로그 보기
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2단계: 코딩된 UI 테스트를 실행하고 로그 보기
 
 현재 위치에서 *QTAgent\*.exe.config* 파일을 적절하게 수정한 코딩된 UI 테스트를 실행하는 경우 **테스트 탐색기** 결과에 출력 링크가 표시됩니다. 로그 파일은 테스트에 실패한 경우뿐만 아니라 추적 수준이 **verbose**로 설정되었을 때 성공한 테스트의 경우에도 생성됩니다.
 
@@ -87,7 +87,7 @@ ms.locfileid: "75591218"
 
      ![코딩된 UI 테스트 로그 파일](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [방법: Microsoft Visual Studio에서 테스트 실행](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

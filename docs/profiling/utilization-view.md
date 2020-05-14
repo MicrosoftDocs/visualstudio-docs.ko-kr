@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62823528"
 ---
 # <a name="utilization-view"></a>사용률 뷰
@@ -48,6 +48,6 @@ ms.locfileid: "62823528"
 ## <a name="zoom"></a>확대/축소
  CPU 사용률 그래프 또는 GPU 활동 그래프에서 확대하려면 특정 섹션을 선택하거나 그래프 위쪽에 있는 확대/축소 슬라이더 도구를 사용합니다. 확대/축소 설정은 다른 뷰로 전환해도 유지됩니다. 다시 축소하려면 확대/축소 슬라이더 도구를 사용합니다. **Ctrl**+**스크롤**을 사용하여 확대/축소할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [동시성 시각화 도우미](../profiling/concurrency-visualizer.md)
 - [코어 뷰](../profiling/cores-view.md)

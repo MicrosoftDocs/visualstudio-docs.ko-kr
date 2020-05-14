@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: c9ee0ae59fd32394e31acc75184d0e55aaae872d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775360"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>방법: 명령줄을 통해 프로파일러와 함께 독립 실행형 .NET Framework 애플리케이션을 시작하여 메모리 데이터 수집
@@ -104,8 +104,8 @@ ms.locfileid: "74775360"
 
 2. 프로파일러를 종료합니다. 유형:
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
+     **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)

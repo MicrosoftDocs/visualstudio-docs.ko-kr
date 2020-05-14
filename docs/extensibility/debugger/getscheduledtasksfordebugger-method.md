@@ -1,30 +1,30 @@
 ---
-title: GetScheduledTasksForDebugger 메서드 | Microsoft Docs
+title: GetScheduled작업포디버거 방법 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49a63462eece9bef09579c7284f72790a3914bc2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fca6c8e92cd0b4755bd79b8e142a7e1d283f868d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353724"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738657"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 메서드
-모든 예약 된 작업의 배열을 검색합니다.
+예약된 모든 작업의 배열을 검색합니다.
 
- **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **어셈블리:** mscorlib (에서 *mscorlib.dll*)
+ **조립:** mscorlib *(mscorlib.dll)*
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,11 +32,11 @@ ms.locfileid: "66353724"
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed
 ```
 
-## <a name="return-value"></a>반환 값
- 모든 예약 된 작업의 배열입니다. 각 작업 실행 되거나 실행이 완료 합니다.
+## <a name="return-value"></a>Return Value
+ 예약된 모든 작업의 배열입니다. 각 작업이 실행 중이거나 실행이 완료되었습니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 스레드로부터 안전 하지 및 다른 인스턴스의 동시 사용 하면 안 <xref:System.Threading.Tasks.TaskScheduler>합니다. 디버거가 다른 모든 스레드가 일시 중단 하는 경우에 디버거에서이 메서드를 호출 합니다.
+ 이 메서드는 스레드에서 안전하지 않으며 <xref:System.Threading.Tasks.TaskScheduler>의 다른 인스턴스와 동시에 사용해서는 안 됩니다. 디버거가 다른 모든 스레드를 일시 중단한 경우에만 디버거에서 이 메서드를 호출합니다.
 
-## <a name="see-also"></a>참고자료
-- [TaskScheduler 클래스](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+## <a name="see-also"></a>참조
+- [작업 스케줄러 클래스](../../extensibility/debugger/taskscheduler-class-internal-members.md)

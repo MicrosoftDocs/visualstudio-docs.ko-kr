@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593358"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865338"
 ---
 # <a name="cl-task"></a>CL 작업
-Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행( *.exe*) 파일, 동적 연결 라이브러리( *.dll*) 파일 또는 코드 모듈( *.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.
+
+Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행( *.exe*) 파일, 동적 연결 라이브러리( *.dll*) 파일 또는 코드 모듈( *.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
+
  다음 목록에서는 **CL** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.
 
 - **AdditionalIncludeDirectories**
@@ -801,4 +803,5 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
    자세한 내용은 이 표의 **TLogReadFiles** 및 **TLogWriteFiles** 매개 변수를 참조하세요.
 
 ## <a name="see-also"></a>참조
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776151"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 사용하여 데이터 원본 정의
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 원본 정의
 
-이 연습에서는 *app.config* 파일에 정의된 데이터 원본을 유닛 테스트에 사용하는 방법을 설명합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 클래스에 사용될 수 있는 데이터 원본을 정의하는 *app.config* 파일을 만드는 방법을 알아봅니다. 이 연습에서 수행할 작업은 다음과 같습니다.
+이 연습에서는 *app.config* 파일에 정의된 데이터 원본을 유닛 테스트에 사용하는 방법을 설명합니다. *클래스에 사용될 수 있는 데이터 원본을 정의하는*app.config<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 파일을 만드는 방법을 알아봅니다. 이 연습에서 수행할 작업은 다음과 같습니다.
 
 - *app.config* 파일 만들기
 
@@ -85,7 +85,7 @@ ms.locfileid: "75776151"
 
 3. 첫 번째 **add** 요소에서 Microsoft Access 데이터베이스에 연결하기 위한 다음과 같은 특성 및 값을 만듭니다.
 
-|특성|값|
+|attribute|값|
 |-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
@@ -93,7 +93,7 @@ ms.locfileid: "75776151"
 
 두 번째 **add** 요소에서 Microsoft Excel 스프레드시트에 연결하기 위한 다음과 같은 특성 및 값을 만듭니다.
 
-|특성|값|
+|attribute|값|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -132,7 +132,7 @@ ms.locfileid: "75776151"
 
 4. 첫 번째 **add** 요소에서 Microsoft Access 데이터 원본에 대해 다음과 같은 특성 및 값을 만듭니다.
 
-|특성|값|
+|attribute|값|
 |-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ ms.locfileid: "75776151"
 
 두 번째 **add** 요소에서 Microsoft Excel 데이터 원본에 대해 다음과 같은 특성 및 값을 만듭니다.
 
-|특성|값|
+|attribute|값|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -192,11 +192,11 @@ ms.locfileid: "75776151"
 
 1. *testdatasource.accdb*라는 Microsoft Access 데이터베이스를 만듭니다.
 
-2. *testdatasource.accdb*에 테이블을 만들고 이름을 `MyDataTable`로 지정합니다.
+2. `MyDataTable`testdatasource.accdb*에 테이블을 만들고 이름을* 로 지정합니다.
 
-3. `Number` 데이터 형식을 사용하여 이름이 `Arg1` 및 `Arg2`인 두 개의 필드를 `MyDataTable`에 만듭니다.
+3. `MyDataTable` 데이터 형식을 사용하여 이름이 `Arg1` 및 `Arg2`인 두 개의 필드를 `Number`에 만듭니다.
 
-4. `Arg1` 및 `Arg2`에 각각 다음과 같은 값을 사용한 5개의 엔터티를 `MyDataTable`에 추가합니다. (10,50), (3,2), (6,0), (0,8) 및 (12312,1000).
+4. `MyDataTable`과 `Arg1`에 다음과 같은 값을 사용한 5개의 엔터티를 `Arg2`에 추가합니다. (10,50), (3,2), (6,0), (0,8), (12312,1000)
 
 5. 데이터베이스를 저장한 후 닫습니다.
 
@@ -206,11 +206,11 @@ ms.locfileid: "75776151"
 
 1. *data.xlsx*라는 Microsoft Excel 스프레드시트를 만듭니다.
 
-2. *data.xlsx*에 없는 경우 `Sheet1`이라는 시트를 만듭니다.
+2. `Sheet1`data.xlsx*에 없는 경우* 이라는 시트를 만듭니다.
 
-3. `Sheet1`에 두 개의 열 머리글을 만들고 `Val1` 및 `Val2`로 이름을 지정합니다.
+3. `Val1`에 두 개의 열 머리글을 만들고 `Val2` 및 `Sheet1`로 이름을 지정합니다.
 
-4. `Val1` 및 `Val2`에 각각 다음과 같은 값을 사용한 5개의 엔터티를 `Sheet1`에 추가합니다. (1,1), (2,2), (3,3), (4,4) 및 (5,0).
+4. `Sheet1`과 `Val1`에 다음과 같은 값을 사용한 5개의 엔터티를 `Val2`에 추가합니다. (1,1), (2,2), (3,3), (4,4), (5,0)
 
 5. 스프레드시트를 저장한 후 닫습니다.
 
@@ -267,7 +267,7 @@ ms.locfileid: "75776151"
 > [!IMPORTANT]
 > 테스트에서 배포 디렉터리를 통해 액세스할 수 있도록 데이터 원본과 같은 항목을 배포합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)
 - [방법: 데이터 기반 단위 테스트 만들기](../test/how-to-create-a-data-driven-unit-test.md)

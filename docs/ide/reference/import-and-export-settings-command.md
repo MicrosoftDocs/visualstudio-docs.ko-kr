@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568830"
 ---
 # <a name="import-and-export-settings-command"></a>설정 가져오기 및 내보내기 명령
@@ -34,15 +34,15 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 /export:`filename`
 
-선택 사항입니다. 현재 설정을 지정된 파일로 내보냅니다.
+(선택 사항) 현재 설정을 지정된 파일로 내보냅니다.
 
 /import:`filename`
 
-선택 사항입니다. 지정된 파일의 설정을 가져옵니다.
+(선택 사항) 지정된 파일의 설정을 가져옵니다.
 
 /reset
 
-선택 사항입니다. 현재 설정을 다시 설정합니다.
+(선택 사항) 현재 설정을 다시 설정합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -56,7 +56,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [환경 설정](../../ide/environment-settings.md)
 - [설정 동기화](../../ide/synchronized-settings-in-visual-studio.md)

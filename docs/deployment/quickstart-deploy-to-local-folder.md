@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128204"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio를 사용하여 로컬 폴더에 앱 배포
@@ -30,7 +30,7 @@ ms.locfileid: "71128204"
 
 1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다(또는 **빌드** > **게시** 메뉴 항목 사용).
 
-    ![솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 게시 명령](../deployment/media/quickstart-publish.png "게시 선택")
+    ![솔루션 탐색기의 프로젝트 상황에 맞는 메뉴에서 게시 명령](../deployment/media/quickstart-publish.png "게시 선택")
 
 1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필 만들기**를 선택합니다.
 

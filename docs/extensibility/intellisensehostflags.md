@@ -1,5 +1,5 @@
 ---
-title: IntelliSenseHostFlags | Microsoft Docs
+title: 인텔리센스호스트플래그 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d0e66f70b91985882df5691d05175995b4f6ca8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328084"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710263"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 IntelliSense 호스트 플래그를 지정합니다.
@@ -40,14 +40,14 @@ enum IntellisenseHostFlags
 
 |멤버|설명|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|상황에 맞는 버퍼는 읽기 전용입니다.|
-|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 상황에 맞는 버퍼에 IntelliSense 대상 (의미 `!IHF_READONLYCONTEXT`).|
-|`IHF_SINGLELINESUBJECT`|제목 텍스트는 다중 명령줄 수 없습니다.|
-|`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer`와 동일합니다.|
-|`IHF_OVERTYPE`|겹쳐쓰기 모드에서 주체 또는 상황에 맞는) (에서 편집 해야 합니다.|
+|`IHF_READONLYCONTEXT`|컨텍스트 버퍼는 읽기 전용입니다.|
+|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 컨텍스트 버퍼에는 IntelliSense 대상(의미)이 포함되어 있습니다. `!IHF_READONLYCONTEXT`|
+|`IHF_SINGLELINESUBJECT`|제목 텍스트는 다중 줄로 할 수 없습니다.|
+|`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer`와 같습니다.|
+|`IHF_OVERTYPE`|편집(제목 또는 컨텍스트)은 오버타입 모드에서 수행해야 합니다.|
 
 ## <a name="requirements"></a>요구 사항
- SingleFileeditor.idl
+ 싱글파일편집기.idl
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

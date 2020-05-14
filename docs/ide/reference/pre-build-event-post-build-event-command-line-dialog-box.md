@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567920"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자
@@ -55,7 +55,7 @@ ms.locfileid: "75567920"
 빌드 전 또는 빌드 후에 실행할 이벤트를 포함합니다.
 
 > [!NOTE]
-> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
+> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
 
 **매크로**
 
@@ -69,11 +69,11 @@ ms.locfileid: "75567920"
 
 매크로 테이블에서 선택된 매크로를 명령줄 편집 상자에 삽입합니다.
 
-### <a name="macros"></a>매크로
+### <a name="macros"></a>Macros
 
 이 매크로 중 하나를 사용하여 파일 위치를 지정하거나 여러 개를 선택한 경우 입력 파일의 실제 이름을 가져올 수 있습니다. 이러한 매크로는 대/소문자를 구분하지 않습니다.
 
-|매크로|설명|
+|매크로|Description|
 |-----------|-----------------|
 |`$(ConfigurationName)`|현재 프로젝트 구성의 이름(예: "디버그")입니다.|
 |`$(OutDir)`|프로젝트 디렉터리를 기준으로 하는 출력 파일 디렉터리에 대한 경로입니다. 출력 디렉토리 속성에 대한 값으로 확인됩니다. 뒤에 백슬래시 '\\'를 포함합니다.|
@@ -95,7 +95,7 @@ ms.locfileid: "75567920"
 |`$(TargetFileName)`|빌드에 대한 기본 출력 파일의 파일 이름(기본 이름 및 파일 확장명으로 정의됨)입니다.|
 |`$(TargetExt)`|빌드에 대한 기본 출력 파일의 파일 확장명입니다. 파일 확장명 앞에 '.'을 포함합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 사용자 지정 빌드 이벤트 지정](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [프로젝트 디자이너, 빌드 이벤트 페이지(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)

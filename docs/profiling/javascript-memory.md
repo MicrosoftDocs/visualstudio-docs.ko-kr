@@ -21,10 +21,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189389"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP 앱에서 JavaScript 메모리 사용량 분석
@@ -353,7 +353,7 @@ if (performance && performance.mark) {
 
 - 메모리 문제의 원인을 식별하기 어려울 때는 여러 가지 뷰(예: 도미네이터 및 형식)를 사용하여 공통점을 찾습니다. 이는 특히 뷰에 표시된 여러 다른 개체에 대한 참조를 포함할 수 있는 하나의 개체(또는 몇 가지 개체)를 식별하는데 도움이 됩니다.
 
-- 사용자가 새 페이지로 이동한 후 우연히 메모리에 남겨진 개체를 찾습니다. 이것은 메모리 문제의 일반적인 원인입니다. 예:
+- 사용자가 새 페이지로 이동한 후 우연히 메모리에 남겨진 개체를 찾습니다. 이것은 메모리 문제의 일반적인 원인입니다. 예를 들어:
 
   - [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) 함수를 잘못 사용하면 이 문제가 발생할 수 있습니다.
 

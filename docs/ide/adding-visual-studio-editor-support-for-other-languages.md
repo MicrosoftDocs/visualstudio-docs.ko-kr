@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590880"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892777"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 
@@ -92,3 +92,5 @@ TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate – 
 - [언어 서버 프로토콜 확장 추가](../extensibility/adding-an-lsp-extension.md)
 - [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)
 - [연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)
+- [예제 코드: TextMate 문법](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [예제 코드: 사용자 지정 언어 지원](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

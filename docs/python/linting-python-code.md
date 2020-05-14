@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bf503cff7d8de2c00a93385113de05de00059390
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62956816"
 ---
 # <a name="use-pylint-to-check-python-code"></a>PyLint를 사용하여 Python 코드 검사
@@ -44,7 +44,7 @@ PyLint 설명서의 [명령줄 옵션](https://pylint.readthedocs.io/en/latest/u
 
 예를 들어 프로젝트에서 *.pylintrc* 파일을 사용하여 이전 이미지에 표시된 “docstring이 없습니다.”라는 경고를 표시하지 않으려면 다음 단계를 수행합니다.
 
-1. 명령줄에서 프로젝트 루트(*.pyproj* 파일이 포함된 위치)로 이동하고 다음 명령을 실행하여 주석으로 처리된 구성 파일을 생성합니다.
+1. 명령줄에서 프로젝트 루트( *.pyproj* 파일이 포함된 위치)로 이동하고 다음 명령을 실행하여 주석으로 처리된 구성 파일을 생성합니다.
 
    ```command
    pylint --generate-rcfile > .pylintrc
@@ -57,4 +57,4 @@ PyLint 설명서의 [명령줄 옵션](https://pylint.readthedocs.io/en/latest/u
 1. *.pylintrc* 파일을 저장하고 PyLint를 다시 실행하여 해당 경고가 표시되지 않는지 확인합니다.
 
 > [!Tip]
-> 네트워크 공유에서 *.pylintrc* 파일을 사용하려면 UNC 경로나 매핑된 드라이브 문자를 사용하여 네트워크 공유의 파일 이름의 값을 통해 이름이 `PYLINTRC`인 환경 변수를 만듭니다. 예를 들어, `PYLINTRC=\\myshare\python\.pylintrc`을 입력합니다.
+> 네트워크 공유에서 *.pylintrc* 파일을 사용하려면 UNC 경로나 매핑된 드라이브 문자를 사용하여 네트워크 공유의 파일 이름의 값을 통해 이름이 `PYLINTRC`인 환경 변수를 만듭니다. `PYLINTRC=\\myshare\python\.pylintrc`)을 입력합니다.

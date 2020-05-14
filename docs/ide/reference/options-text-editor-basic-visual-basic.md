@@ -18,21 +18,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a069e17e615199e367683273adb85e771f1d9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584519"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431477"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>옵션, 텍스트 편집기, 기본(Visual Basic), 고급
 **옵션**(**도구** 메뉴), **텍스트 편집기**의 **Basic** 폴더에 있는 **VB 관련** 속성 페이지 대화 상자에는 다음 속성이 포함되어 있습니다.
 
 ## <a name="analysis"></a>분석
 
-- 전체 솔루션 분석 사용
+- 실시간 코드 분석 또는 백그라운드 분석 범위
 
-   열린 코드 파일뿐만 아니라 솔루션의 모든 파일에 대해 코드 분석을 사용할 수 있습니다. 자세한 내용은 [전체 옵션 분석](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)을 참조하세요.
+   관리 코드에 대한 백그라운드 분석 범위를 구성합니다. 자세한 내용은 [방법: 관리 코드에 대한 실시간 코드 분석 범위를 구성합니다](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Using 지시문
 

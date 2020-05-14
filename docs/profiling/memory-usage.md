@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75929241"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256194"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio에서 메모리 사용량 측정
 
@@ -33,7 +33,7 @@ ms.locfileid: "75929241"
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
-이 자습서에서 다음을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 메모리 스냅샷 생성
@@ -117,7 +117,7 @@ ms.locfileid: "75929241"
 
  위쪽 창에는 형식에서 참조되는 모든 개체의 크기(**포함 크기**)를 포함하여 스냅샷의 형식 개수 및 크기가 표시됩니다.
 
- 아래쪽 창의 **루트 경로** 트리에는 위쪽 창에서 선택한 형식을 참조하는 개체가 표시됩니다. .NET Framework 가비지 수집기는 개체를 참조하는 마지막 형식이 해제된 경우에만 개체에 대한 메모리를 정리합니다.
+ 아래쪽 창의 **루트 경로** 트리에는 위쪽 창에서 선택한 형식을 참조하는 개체가 표시됩니다. .NET 가비지 수집기는 개체를 참조하는 마지막 형식이 해제된 경우에만 개체에 대한 메모리를 정리합니다.
 
  **참조된 개체** 트리에는 위쪽 창에서 선택한 형식이 보유하고 있는 참조가 표시됩니다.
 

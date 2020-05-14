@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Microsoft Docs
+title: 이벤트 속성 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3361d27a9e0a4a1f56035c0d2af20d9fa9a9303
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337765"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737066"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 이벤트 특성을 지정합니다.
@@ -54,39 +54,39 @@ public enum enum_EVENTATTRIBUTES {
 
 ## <a name="fields"></a>필드
 `EVENT_ASYNCHRONOUS`\
-이 이벤트는 비동기 이벤트에 응답 하지 필요 함을 나타냅니다.
+이벤트가 비동기이며 이벤트에 대한 응답이 필요하지 없음을 나타냅니다.
 
 `EVENT_SYNCHRONOUS`\
-이벤트 동기; 임을 나타냅니다. 이용 하 여 회신 [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)합니다.
+이벤트가 동기임을 나타냅니다. [계속에서](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)시작 동기 를 통해 회신이벤트 .
 
 `EVENT_STOPPING`\
-이 stopping 이벤트를 나타냅니다. 사용 하 여 결합 해야 `EVENT_ASYNCHRONOUS` 또는 `EVENT_SYNCHRONOUS`합니다.
+이 이벤트가 중지 이벤트임을 나타냅니다. 또는 와 `EVENT_ASYNCHRONOUS` 결합해야 `EVENT_SYNCHRONOUS`합니다.
 
 `EVENT_ASYNC_STOP`\
-비동기 중지 이벤트를 나타냅니다. 이런 이벤트가 현재입니다. 이 플래그는 자리 표시자만 합니다.
+비동기 중지 이벤트를 나타냅니다. 현재 이러한 이벤트는 없습니다. 이 플래그는 자리 표시자일 뿐입니다.
 
 `EVENT_SYNC_STOP`\
-동기 중지 이벤트를 나타냅니다 (조합을 `EVENT_SYNCHRONOUS` 고 `EVENT_STOPPING`). 이 값은 중지 이벤트를 보낼 때 디버그 엔진 (DE)에 의해 사용 됩니다. 회신을 호출 하 여 이루어집니다 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)를 [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md), 또는 [계속](../../../extensibility/debugger/reference/idebugprogram2-continue.md)합니다.
+동기 중지 이벤트(및 `EVENT_SYNCHRONOUS` `EVENT_STOPPING`의 조합)를 나타냅니다. 이 값은 중지 이벤트를 보낼 때 DE(디버그 엔진)에서 사용됩니다. 응답은 [실행,](../../../extensibility/debugger/reference/idebugprogram2-execute.md) [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md)또는 [계속에](../../../extensibility/debugger/reference/idebugprogram2-continue.md)대한 호출을 통해 이루어집니다.
 
 `EVENT_IMMEDIATE`\
-IDE에 즉시 하 고 동기적으로 전송 되는 이벤트를 나타냅니다. 이 플래그와 같은 다른 플래그와 함께 결합 `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, 또는 `EVENT_SYNC_STOP` 이벤트 및 응답 메커니즘 (있는 경우) 라고 팩트 유형을 지정 하는 합니다.
+IDE에 즉시 동기적으로 전송되는 이벤트를 나타냅니다. 이 플래그는 의 `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS`와 같은 `EVENT_SYNC_STOP` 다른 플래그와 결합하거나 이벤트 유형및 회신 메커니즘(있는 경우)이 알려져 있다는 사실을 나타냅니다.
 
 `EVENT_EXPRESSION_EVALUATION`\
-이벤트 식 평가의 결과입니다.
+이벤트는 식 평가의 결과입니다.
 
 ## <a name="remarks"></a>설명
-이러한 값에 전달 되는 `dwAttrib` 의 매개 변수를 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 메서드.
+이러한 값은 `dwAttrib` [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 메서드의 매개 변수에 전달됩니다.
 
-이러한 값을 비트 결합할 수 있습니다 `OR`합니다.
+이러한 값은 약간 과 `OR`결합될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

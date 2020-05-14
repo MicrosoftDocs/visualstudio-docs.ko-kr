@@ -1,5 +1,5 @@
 ---
-title: SccGetExtendedCapabilities 함수 | Microsoft Docs
+title: SccGet확장 기능 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa6a067a0b9e8358f503228dbc53e20586b84468
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353663"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700730"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 함수
-이 함수는 소스 제어 플러그 인에서 지 원하는 추가 기능을 반환 합니다.
+# <a name="sccgetextendedcapabilities-function"></a>SccGet확장기능 기능
+이 함수는 소스 제어 플러그인에서 지원하는 추가 기능을 반환합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,28 +35,28 @@ SCCRTN SccGetExtendedCapabilities(
 ### <a name="parameters"></a>매개 변수
  pContext
 
-[in] 원본 제어 플러그 인 컨텍스트 포인터입니다.
+【인】 소스 제어 플러그인 컨텍스트 포인터입니다.
 
  lSccExCaps
 
-[in] 테스트 하려는 확장된 기능을 지정 하는 플래그 (의 확장 기능 코드 표를 참조 [기능 플래그](../extensibility/capability-flags.md) 가능한 플래그에 대 한).
+【인】 테스트할 확장 기능을 지정하는 플래그입니다(가능한 플래그에 대한 [기능 플래그의](../extensibility/capability-flags.md) 확장 기능 코드 테이블 참조).
 
- pbSupported
+ pb지원
 
-[out] 0이 아닌 값을 반환 합니다 (`TRUE`) 지정 된 기능 지원 되 면 그렇지 않은 경우 0을 반환 합니다 (`FALSE`).
+【아웃】 지정된 기능이 지원되는 경우 0이 아닌 ()`TRUE`반환합니다. 그렇지 않으면 0`FALSE`()을 반환합니다.
 
 ## <a name="return-value"></a>반환 값
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:
+ 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|Get 기능 작업을 완료 했습니다.|
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|알 수 없거나 지정 되지 않은 오류가 발생 했습니다.|
+|SCC_OK|get 기능 작업이 성공적으로 완료되었습니다.|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|알 수 없거나 지정되지 않은 오류가 발생했습니다.|
 
 ## <a name="remarks"></a>설명
- 이 메서드는 주문형; 호출 즉, 기능을 테스트 해야 하는 경우이 메서드는 여부를 확인 하려면 기능이 지원 되는 합니다. 한 번에 하나만 플래그 지정 됩니다.
+ 이 메서드는 요청 시 호출됩니다. 즉, 기능을 테스트해야 하는 경우 해당 기능이 지원되는지 확인하기 위해 이 메서드가 호출됩니다. 한 번에 하나의 플래그만 지정됩니다.
 
-## <a name="see-also"></a>참고자료
-- [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>참조
+- [소스 제어 플러그인 API 기능](../extensibility/source-control-plug-in-api-functions.md)
 - [오류 코드](../extensibility/error-codes.md)
 - [기능 플래그](../extensibility/capability-flags.md)

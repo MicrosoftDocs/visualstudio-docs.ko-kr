@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72652470"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio에서 수집한 시스템에서 생성된 로그

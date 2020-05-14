@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922970"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389982"
 ---
 Visual Studio를 사용하여 컨테이너화된 NET, ASP.NET 및 ASP.NET Core 앱을 쉽게 빌드, 디버그, 실행하고 ACR(Azure Container Registry), Docker Hub, Azure App Service 또는 사용자 고유 컨테이너 레지스트리에 게시할 수 있습니다. 이 문서에서는 ASP.NET Core 앱을 ACR에 게시합니다.
 
@@ -21,7 +21,7 @@ Visual Studio를 사용하여 컨테이너화된 NET, ASP.NET 및 ASP.NET Core �
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core를 사용하여 개발하기 위한 [.NET Core 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/)
-* Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
+* Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/free/dotnet/)합니다.
 
 ## <a name="installation-and-setup"></a>설치 및 설정
 
@@ -75,6 +75,9 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 **출력** 창의 **컨테이너 도구** 옵션에 실행 중인 작업이 표시됩니다. 처음에는 기본 이미지를 다운로드하는 데 시간이 걸릴 수 있지만 이후 실행은 훨씬 더 빠릅니다.
 
+>[!NOTE]
+> 디버깅을 위해 포트를 변경해야 하는 경우 *launchSettings. json* 파일에서 변경하면 됩니다. [컨테이너 시작 설정](../../container-launch-settings.md)을 참조하세요.
+
 ## <a name="containers-window"></a>컨테이너 창
 
 Visual Studio 2019 버전 16.4 이상을 사용하는 경우 **컨테이너** 창을 사용하여 머신에서 실행 중인 컨테이너와 사용할 수 있는 이미지를 확인할 수 있습니다.
@@ -99,7 +102,7 @@ IDE에서 검색 상자를 사용하여(사용하려면 **Ctrl**+**Q**를 누름
 1. **새 Azure Container Registry 만들기**를 선택하고 **게시**를 클릭합니다.
 1. **새 Azure Container Registry 만들기**에 원하는 값을 채웁니다.
 
-    | 설정      | 제안 값  | 설명                                |
+    | 설정      | 제안 값  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
     | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |

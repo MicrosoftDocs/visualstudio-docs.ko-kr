@@ -1,5 +1,5 @@
 ---
-title: 'DA0038: 잠금 경합의 비율이 높습니다. | Microsoft Docs'
+title: 'DA0038: 높은 비율의 잠금 경합 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d8e0218b01a162a3af8c35009bc8e733f5c386ef
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777504"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: 잠금 경합의 비율이 높습니다.
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: 높은 비율의 잠금 경합
 
 |||
 |-|-|
 |규칙 ID|DA0038|
-|범주|.NET Framework 사용|
+|Category|.NET Framework 사용|
 |프로파일링 방법|샘플링<br /><br /> 계측<br /><br /> .NET 메모리|
 |메시지|.NET 잠금 경합의 비율이 높습니다. 동시성 프로필을 실행하여 이 잠금 경합의 원인을 조사하세요.|
 |규칙 유형|정보|
@@ -47,9 +47,9 @@ ms.locfileid: "74777504"
  프로파일링 실행 중에 수집된 측정값이 잠금 경합 수가 지나치게 많다는 것을 나타낼 경우 이 규칙이 실행됩니다. 잠금 경합은 잠금을 기다리고 있는 스레드의 실행을 지연시킵니다. 저사양 하드웨어에서 실행되는 부하 테스트나 단위 테스트의 잠금 경합 수가 적더라도 잠금 경합을 조사해야 합니다.
 
 > [!NOTE]
-> 프로파일링 데이터에서 보고된 잠금 경합 비율이 지나치게 높을 때 이 정보 메시지 대신 [DA0039: 잠금 경합의 비율이 매우 높습니다.](../profiling/da0039-very-high-rate-of-lock-contentions.md) 경고 메시지가 발생합니다.
+> 프로파일링 데이터에서 보고된 잠금 경합 비율이 너무 높으면 이 정보 메시지 대신 [DA0039: 매우 높은 비율의 잠금 경합](../profiling/da0039-very-high-rate-of-lock-contentions.md) 경고 메시지가 실행됩니다.
 
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법
  메시지를 두 번 클릭하여 프로파일링 데이터의 [표시](../profiling/marks-view.md) 뷰로 이동합니다.  **.NET CLR LocksAndThreads\Contention Rate / sec** 열을 찾습니다. 다른 단계보다 잠금 경합 수가 더 많은 특정 프로그램 실행 단계가 있는지 확인합니다.
 
- 동시성 프로파일링 방법을 사용하지 않을 경우에만 이 규칙이 실행됩니다. 동시성 프로파일링 방법은 애플리케이션에서 잠금 경합에 관련된 성능 문제를 진단할 때 사용할 가장 좋은 도구입니다. 동시성 프로파일링 데이터를 수집하여 애플리케이션의 잠금 동작을 파악합니다. 어떤 잠금이 아주 많이 경합되는지, 경합된 잠금을 기다리는 스레드의 실행 시간이 지연되는 기간, 특정 코드의 의미 등을 파악해야 합니다. 동시성 프로필은 네이티브 Windows 기능 및 .NET Framework 클래스의 잠금 동작과 애플리케이션이 참조하는 기타 모든 타사 라이브러리의 잠금 동작을 포함하여 모든 잠금 경합에 대한 데이터를 수집합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE의 동시성 프로파일링에 대한 자세한 내용은 [스레드 및 프로세스 동시성 데이터 수집](../profiling/collecting-thread-and-process-concurrency-data.md)을 참조하세요. 명령줄의 동시성 프로파일링 정보에 대한 링크는 [명령줄에서 프로파일링 방법 사용](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)의 **동시성 방법을 사용하여 리소스 경합 및 스레드 작업 데이터 수집** 섹션을 참조하세요.
+ 동시성 프로파일링 방법을 사용하지 않을 경우에만 이 규칙이 실행됩니다. 동시성 프로파일링 방법은 애플리케이션에서 잠금 경합에 관련된 성능 문제를 진단할 때 사용할 가장 좋은 도구입니다. 동시성 프로파일링 데이터를 수집하여 애플리케이션의 잠금 동작을 파악합니다. 어떤 잠금이 아주 많이 경합되는지, 경합된 잠금을 기다리는 스레드의 실행 시간이 지연되는 기간, 특정 코드의 의미 등을 파악해야 합니다. 동시성 프로필은 네이티브 Windows 기능 및 .NET Framework 클래스의 잠금 동작과 애플리케이션이 참조하는 기타 모든 타사 라이브러리의 잠금 동작을 포함하여 모든 잠금 경합에 대한 데이터를 수집합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE의 동시성 프로파일링에 대한 자세한 내용은 [스레드 및 프로세스 동시성 데이터 수집](../profiling/collecting-thread-and-process-concurrency-data.md)을 참조하세요. 명령줄의 동시성 프로파일링 정보에 대한 링크는 **명령줄에서 프로파일링 방법 사용**의 [동시성 방법을 사용하여 리소스 경합 및 스레드 작업 데이터 수집](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md) 섹션을 참조하세요.

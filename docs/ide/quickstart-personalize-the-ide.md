@@ -1,18 +1,18 @@
 ---
 title: 색 테마 및 글꼴 설정
-ms.date: 11/20/2017
+ms.date: 03/23/2020
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596946"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233146"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Visual Studio IDE 및 편집기 개인 설정
 
@@ -52,8 +52,19 @@ Visual Studio의 기본 색 테마는 **파랑**이라고 합니다. **어두운
 
    ::: moniker-end
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor)에서 **Visual Studio 색 테마 편집기**를 설치하여 미리 정의된 추가 테마를 설치할 수 있습니다. 이 도구를 설치하면 **색 테마** 드롭다운 목록에 추가 색 테마가 나타납니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)에서 제공되는 **Visual Studio Color Theme Designer**를 설치하여 사용자 자체 테마를 만들 수도 있습니다.
+
+::: moniker-end
 
 ## <a name="change-text-color"></a>텍스트 색 변경
 
@@ -115,7 +126,7 @@ Visual Studio의 기본 색 테마는 **파랑**이라고 합니다. **어두운
 
 Visual Studio에서 색을 사용자 지정하는 몇 가지 방법을 살펴보았습니다. **옵션** 대화 상자에서 다른 사용자 지정 옵션도 탐색하여 자신에게 맞게 Visual Studio를 설정하시기 바랍니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [편집기 사용자 지정](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)

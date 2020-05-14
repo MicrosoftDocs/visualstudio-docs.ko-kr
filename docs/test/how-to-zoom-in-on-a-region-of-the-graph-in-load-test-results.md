@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594372"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>방법: 부하 테스트 결과에서 그래프의 지역으로 확대
@@ -55,7 +55,7 @@ ms.locfileid: "75594372"
 
 2. 부하 테스트 실행이 끝나고 부하 테스트 결과 저장소의 결과를 볼지 묻는 대화 상자가 나타나면 **예**를 선택합니다.
 
-     \- 또는 -
+     \- 또는-
 
      이전에 실행한 부하 테스트의 세부 정보를 봅니다. 자세한 내용은 [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)를 참조하세요.
 
@@ -113,7 +113,7 @@ ms.locfileid: "75594372"
 
      이렇게 하면 그래프가 축소되어 부하 테스트 실행의 전체 기간이 표시됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

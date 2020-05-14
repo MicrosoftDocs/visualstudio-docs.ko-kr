@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461533"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
@@ -42,7 +42,7 @@ ms.locfileid: "68461533"
 - UWP 앱. UWP 앱을 빌드하려면 빌드 컴퓨터에 Visual Studio를 설치해야 합니다.
 - .NET Framework 4 또는 그 이전 버전을 대상으로 하는 데스크톱 앱. 이러한 종류의 앱을 빌드하려면 빌드 컴퓨터에 Visual Studio나 .NET 참조 어셈블리 및 도구(Windows 7.1 SDK)를 설치해야 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 **.NET 데스크톱 개발** 워크로드가 설치된 Visual Studio.
 
@@ -287,7 +287,7 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> 빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> 빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치
 
 MSBuild를 사용하려면 빌드 컴퓨터의 GAC에 일부 추가 어셈블리를 설치해야 합니다.
 
@@ -406,7 +406,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [명령줄 참조](../msbuild/msbuild-command-line-reference.md)

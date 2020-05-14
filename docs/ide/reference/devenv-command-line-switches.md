@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595711"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255562"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 명령줄 스위치
 
@@ -72,6 +72,7 @@ VSPackage 개발과 관련된 스위치에 대한 자세한 내용은 [VSPackage
 |[/LCID 또는 /L](lcid-devenv-exe.md)|IDE의 기본 언어를 설정합니다. 지정한 언어가 Visual Studio 설치에 포함되어 있지 않은 경우 이 설정은 무시됩니다.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Visual Studio를 시작하고 모든 작업을 로그 파일에 기록합니다.<br /><br /> `devenv /log mylogfile.xml`|
 |[/NoSplash](nosplash-devenv-exe.md)|시작 화면을 표시하지 않고 IDE를 엽니다.<br /><br /> `devenv /nosplash File1 File2`|
+|[/ResetSettings](resetsettings-devenv-exe.md)|Visual Studio 기본 설정을 복원합니다. 필요에 따라 설정을 지정한 `.vssettings` 파일로 초기화합니다.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Run 또는 /R](run-devenv-exe.md)|지정한 솔루션을 컴파일하고 실행합니다.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|지정한 솔루션을 컴파일 및 실행하고, 솔루션 실행 시 IDE를 최소화하고, 솔루션 실행이 완료되면 IDE를 닫습니다.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Visual Studio를 안전 모드로 시작합니다. 이 스위치는 기본 환경, 기본 서비스 및 타사 패키지의 배송된 버전만 로드합니다.<br /><br /> 이 스위치는 인수가 필요 없습니다.|
@@ -89,7 +90,6 @@ VSPackage 개발과 관련된 스위치에 대한 자세한 내용은 [VSPackage
 |[/Project](project-devenv-exe.md)|빌드, 정리 또는 배포할 프로젝트입니다. `/Build`, `/Rebuild`, `/Clean` 또는 `/Deploy` 스위치도 제공한 경우에만 이 스위치를 사용할 수 있습니다.<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|빌드 또는 배포할 프로젝트 구성을 지정합니다. `/Project` 스위치도 제공한 경우에만 이 스위치를 사용할 수 있습니다.<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
 |[/Rebuild](rebuild-devenv-exe.md)|지정한 솔루션의 구성에 따라 지정한 솔루션 또는 프로젝트를 정리한 후 빌드합니다.<br /><br /> `devenv mysln.sln /rebuild`|
-|[/ResetSettings](resetsettings-devenv-exe.md)|Visual Studio 기본 설정을 복원합니다. 필요에 따라 설정을 지정한 `.vssettings` 파일로 초기화합니다.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|지정한 솔루션 파일 및 모든 프로젝트 파일이나 지정한 프로젝트 파일을 이러한 파일의 현재 Visual Studio 형식으로 업그레이드합니다.<br /><br /> `devenv mysln.sln /upgrade`|
 
 ## <a name="see-also"></a>참조

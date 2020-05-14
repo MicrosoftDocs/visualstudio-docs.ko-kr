@@ -1,5 +1,5 @@
 ---
-title: '방법: 보고서 보기 열 사용자 지정 | Microsoft Docs'
+title: '방법: 보고서 뷰 열 사용자 지정 | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,13 +15,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778975"
 ---
-# <a name="how-to-customize-report-view-columns"></a>방법: 보고서 보기 열 사용자 지정
+# <a name="how-to-customize-report-view-columns"></a>방법: 보고서 뷰 열 사용자 지정
 Visual Studio Team System Development Edition의 성능 도구는 효율적인 사용자 환경을 제공할 수 있도록 IDE(통합 개발 환경)에 완전히 통합되어 있습니다. 다음 목록은 열을 추가, 제거 및 재정렬하여 사용자 지정할 수 있는 뷰를 나타냅니다.
 
 - [모듈 뷰](../profiling/modules-view.md)
@@ -50,7 +50,7 @@ Visual Studio Team System Development Edition의 성능 도구는 효율적인 �
 
 2. 보고서 뷰 화면을 마우스 오른쪽 단추로 클릭하고 **열 추가/제거**를 클릭합니다.
 
-     **열 추가/제거** 대화 상자가 표시됩니다.
+     **열 추가/제거** 대화 상자가 나타납니다.
 
 3. 추가할 열을 선택합니다.
 

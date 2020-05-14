@@ -3,21 +3,25 @@ title: Visual Studio 구독의 소프트웨어 타이틀 다운로드 | Microsof
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/18/2019
+ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 Microsoft 소프트웨어 타이틀을 찾고 다운로드하는 방법을 알아봅니다.
-ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 4196d8bcf256a624f34ae0b66e11f536e3c2c2ec
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095405"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232603"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio 구독의 소프트웨어 타이틀 다운로드
 어떤 Visual Studio 구독을 보유하느냐에 따라 매우 다양한 Microsoft 소프트웨어 타이틀을 사용할 수 있습니다.  이 문서에서는 구독을 최대한 활용하는 데 필요한 소프트웨어를 찾고 다운로드하는 방법을 개괄적으로 소개합니다. 
 
 > [!NOTE]
 > [다운로드](https://my.visualstudio.com/downloads/featured) 페이지에는 자신의 구독에 포함된 다운로드만 표시됩니다.  둘 이상의 구독 또는 프로그램 멤버 자격이 있으면 현재 다른 구독을 보고 있는 경우에도 보유한 **최상위 구독**에 대한 다운로드가 표시됩니다.  예를 들어 Visual Studio Enterprise 구독과 Visual Studio Professional 구독이 모두 동일한 로그인 ID에 연결되어 있는 경우, 현재 Professional 구독 혜택을 보고 있더라도 Enterprise 구독에 포함된 다운로드가 표시됩니다.
+
+> [!NOTE]
+> Office 365 제품 키의 가용성과 관련된 문제에 대해 알고 있습니다.  원인을 조사하고 있으며, 문제가 해결되면 이 문서를 업데이트하겠습니다. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>구독자 포털에서 다운로드를 찾으려면 어떻게 할까요?
 [다운로드](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) 페이지를 방문하면 인기 있는 다운로드가 제품 유형별 그룹으로 정렬되어 표시됩니다.  표시된 인기 있는 다운로드 중 하나를 선택하거나 페이지 위쪽의 검색 표시줄을 사용하여 모든 제품을 검색할 수 있습니다.
@@ -47,7 +51,22 @@ ms.locfileid: "71095405"
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019 제품 키 요청](_img/subscriber-downloads/vs2019-claim-keys.png)
 
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>다음 단계
 제품 키 찾기, 요청하기, 내보내기에 대한 자세한 내용은 제품 키 설명서를 참조하세요.
 - [제품 키 개요](product-keys.md)
 - [키 찾기 및 요청](find-keys.md)
+
+다음과 같은 다른 유용한 혜택을 활용하는 방법을 알아보세요.
+- [Azure DevTest 개별 크레딧](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Visual Studio IDE](vs-ide-benefit.md)
+
+
+
+

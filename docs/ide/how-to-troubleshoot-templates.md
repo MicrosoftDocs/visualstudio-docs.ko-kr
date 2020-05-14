@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591387"
 ---
 # <a name="how-to-troubleshoot-templates"></a>방법: 템플릿 문제 해결
@@ -59,7 +59,7 @@ ms.locfileid: "75591387"
 
 [템플릿 검색 문제 해결(확장성)](../extensibility/troubleshooting-template-discovery.md)의 단계를 수행하여 템플릿 검색에 대한 진단 로그를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [템플릿 검색 문제 해결(확장성)](../extensibility/troubleshooting-template-discovery.md)
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)

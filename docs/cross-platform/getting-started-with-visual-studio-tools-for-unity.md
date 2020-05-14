@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306964"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 
@@ -71,7 +71,7 @@ Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집�
 
    ![Visual Studio 선택](media/vstu_unity-external-tools.png)
 
-4. **찾아보기...** 를 선택한 경우 Visual Studio 설치 디렉터리 내부의 **Common7/IDE** 디렉터리로 이동하고 **devenv.exe**를 선택합니다. 그런 다음, **열기**를 클릭합니다.
+4. **찾아보기...** 를 선택한 경우 Visual Studio 설치 디렉터리 내부의 **Common7/IDE** 디렉터리로 이동하고 **devenv.exe**를 선택합니다. 그런 다음 **열기**를 클릭합니다.
 
    ![열기 선택](media/vstu_browse-for-application.png)
 

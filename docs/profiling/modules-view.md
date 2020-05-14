@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 89d9146b3f724b4883f21a43689a495eef252777
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778520"
 ---
 # <a name="modules-view"></a>모듈 뷰
@@ -27,7 +27,7 @@ ms.locfileid: "74778520"
 
  모듈 성능 데이터의 뷰를 표시하거나 닫으려면 모듈 이름을 확장하거나 축소합니다.
 
- 열을 추가 또는 제거하려면 보고서 창을 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 자세한 내용은 [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.
+ 열을 추가 또는 제거하려면 보고서 창을 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.
 
  모듈 뷰에서 사용할 수 있는 열은 데이터를 수집하는 데 사용된 프로파일링 방법(샘플링 또는 계측) 및 프로파일링 실행 시 .NET 메모리 데이터가 수집되었는지 여부에 따라 달라집니다.
 

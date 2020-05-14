@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2019의 JavaScript 및 TypeScript
-ms.date: 03/27/2019
+ms.date: 03/16/2020
 ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3412e1d27a365a6c6302c56ada865f33a436b639
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888615"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544291"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019의 JavaScript 및 TypeScript
 
@@ -35,10 +35,39 @@ Visual Studio 2019의 JavaScript 환경은 TypeScript 지원을 제공하는 동
 Visual Studio 2019는 TypeScript 컴파일을 프로젝트에 통합하는 다음과 같은 여러 가지 옵션을 제공합니다.
 
 * [TypeScript NuGet 패키지](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). TypeScript 3.2 이상용 NuGet 패키지가 프로젝트에 설치되면 해당 버전의 TypeScript 언어 서비스가 편집기에 로드됩니다.
-* Visual Studio 설치 관리자에서 기본적으로 제공되고 [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017)에서 독립 실행형 SDK 다운로드로 제공되는 TypeScript SDK.
 * [TypeScript npm 패키지](https://www.npmjs.com/package/typescript). TypeScript 2.1 이상용 npm 패키지가 프로젝트에 설치되면 해당 버전의 TypeScript 언어 서비스가 편집기에 로드됩니다.
+* Visual Studio 설치 관리자에서 기본적으로 제공되고 [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017)에서 독립 실행형 SDK 다운로드로 제공되는 TypeScript SDK.
 
-Visual Studio 2019에서 개발된 프로젝트의 경우 다양한 플랫폼과 환경에서 이식성을 높이려면 TypeScript NuGet 및 npm 패키지를 사용하는 것이 좋습니다.
+> [!TIP]
+> Visual Studio 2019에서 개발된 프로젝트의 경우 다양한 플랫폼과 환경에서 이식성을 높이려면 TypeScript NuGet 또는 TypeScript npm 패키지를 사용하는 것이 좋습니다.
+
+NuGet 패키지의 일반적인 용도 중 하나는 .NET Core CLI를 사용하여 TypeScript를 컴파일하는 것입니다. TypeScript SDK 설치에서 빌드 대상을 가져오도록 프로젝트 파일을 수동으로 편집하지 않는 이상, NuGet 패키지는 `dotnet build` 및 `dotnet publish`와 같은 .NET Core CLI 명령을 사용하여 TypeScript 컴파일을 사용하도록 설정할 유일한 방법입니다.
+
+## <a name="remove-default-imports-aspnet-core-projects"></a>기본값 가져오기 제거(ASP.NET Core 프로젝트)
+
+[SDK 스타일이 아닌 형식](https://docs.microsoft.com/nuget/resources/check-project-format)을 사용하는 이전 프로젝트에서는 몇몇 프로젝트 파일 요소를 제거해야 할 수 있습니다.
+
+프로젝트에서 MSBuild 지원을 위해 NuGet 패키지를 사용하는 경우 프로젝트 파일이 `Microsoft.TypeScript.Default.props` 또는 `Microsoft.TypeScript.targets`를 가져와야 합니다. 파일은 NuGet 패키지가 가져오기 때문에 개별적으로 포함할 경우 의도하지 않은 동작이 발생할 수 있습니다.
+
+1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택합니다.
+
+1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **편집\<프로젝트 파일 이름\>** 을 선택합니다. 
+
+   프로젝트 파일이 열립니다.
+
+1. `Microsoft.TypeScript.Default.props` 및 `Microsoft.TypeScript.targets`에 대한 참조를 제거합니다.
+
+   제거해야 하는 가져오기는 다음과 비슷하게 표시됩니다.
+
+   ```xml
+   <Import
+      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props"
+      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+
+   <Import
+      Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets"
+      Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+   ```
 
 ## <a name="projects"></a>프로젝트
 

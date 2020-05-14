@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588917"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정
@@ -32,9 +32,9 @@ ms.locfileid: "75588917"
 
 - 초기 사용자 수: 100
 
-- 최대 사용자 수: 2000
+- 최대 사용자 수: 2,000
 
-- 단계 지속 시간(초): 1800
+- 단계 지속 시간(초): 1,800
 
 - 단계 진입 시간(초): 20
 
@@ -68,7 +68,7 @@ ms.locfileid: "75588917"
 
 6. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **단계 진입 시간** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)

@@ -1,30 +1,30 @@
 ---
-title: AsyncVoidMethodBuilder.m_objectIdForDebugger 필드 | Microsoft Docs
+title: 비동기 메소드빌더.m_objectIdForDebugger 필드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_objectIdForDebugger field, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e744b766a32232470e6d79b1cf8bfba08e1636c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 10d63a92e2648c269c51faddc9521323c76116b1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350947"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739317"
 ---
-# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger field
-디버거에서 사용 하 여이 작성기를 고유 하 게 식별 하 여 지연 초기화 된 개체를 나타냅니다.
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>비동기 메서드 빌더.m_objectIdForDebugger 필드
+디버거가 이 빌더를 고유하게 식별하는 데 사용하는 게으른 초기화 개체를 나타냅니다.
 
- **네임스페이스:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **어셈블리:** mscorlib (mscorlib.dll)
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,6 +32,6 @@ ms.locfileid: "66350947"
 .field private object m_objectIdForDebugger
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [.NET Framework에 대 한 병렬 확장 기능 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET 프레임워크에 대한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

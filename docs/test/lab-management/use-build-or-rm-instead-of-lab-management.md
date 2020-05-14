@@ -9,16 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566828"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880132"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Azure Test Plans 사용
 
 자동화된 테스트 또는 빌드-배포-테스트 자동화에 Microsoft Test Manager 및 Lab Management를 사용할 경우, 이 항목에서는 Azure Pipelines 및 TFS(Team Foundation Server)의 [빌드 및 릴리스](/azure/devops/pipelines/index?view=vsts) 기능을 사용하여 동일한 목표를 달성하는 방법을 설명합니다.
+
+> [!NOTE]
+> Microsoft Test Manager는 Visual Studio 2017에서 사용이 중단되었으며, Visual Studio 2019에서 제거되었습니다.
 
 ## <a name="build-deploy-test-automation"></a>빌드-배포-테스트 자동화
 

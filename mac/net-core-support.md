@@ -6,10 +6,10 @@ ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
 ms.openlocfilehash: 6a4bc5a68a17bf3562e0f82b1f2c521f9b3f3e72
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75735807"
 ---
 # <a name="net-core-support"></a>.NET Core 지원

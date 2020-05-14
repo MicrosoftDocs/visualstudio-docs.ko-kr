@@ -1,30 +1,30 @@
 ---
-title: TASK_STATE_WAITING_ON_CHILDREN 필드 | Microsoft Docs
+title: TASK_STATE_WAITING_ON_CHILDREN 필드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7f7930161b07dc8aeb4f3ff8bfb506e9f6e737
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27b9963db54d939b3d509da451478c20dbe0e7d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345398"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712579"
 ---
-# <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN 필드
-해당 대리자 실행을 마친 작업과 연결 된 자식 작업이 완료 되기를 기다리는 암시적으로 합니다.
+# <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 필드
+작업이 대리자 실행이 완료되었으며 연결된 자식 작업이 완료되기를 암시적으로 기다리고 있습니다.
 
- **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **어셈블리:** mscorlib (에서 *mscorlib.dll*)
+ **조립:** mscorlib *(mscorlib.dll)*
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ ms.locfileid: "66345398"
 ```
 
 ## <a name="remarks"></a>설명
- 경우는 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 이 값을 포함 하는 필드를 <xref:System.Threading.Tasks.Task.Status%2A> 속성에서 반환 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>합니다.
+ [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에 이 값이 포함되어 <xref:System.Threading.Tasks.Task.Status%2A> 있으면 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>속성이 반환됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

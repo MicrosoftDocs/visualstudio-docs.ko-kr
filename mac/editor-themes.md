@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.openlocfilehash: 0c9c58f8da76b09055c1f2b70cd05a44890ce22c
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691626"
 ---
 # <a name="editor-themes"></a>편집기 테마
@@ -28,7 +28,7 @@ ms.locfileid: "67691626"
 
 새 테마를 찾았거나 만든 후 로컬 컴퓨터로 다운로드했으면, 다음 단계를 수행하여 추가합니다.
 
-1. 색 테마 옵션 대화 상자에서 **추가** 단추를 선택합니다.  ![색 테마 추가](media/source-editor-image20.png)
+1. 색 테마 옵션 대화 상자 **색 테마 추가**에서 ![추가](media/source-editor-image20.png) 단추를 선택합니다.
 2. 로컬 컴퓨터에서 테마를 찾은 다음 **열기**를 누릅니다.
 3. 사전 설치된 테마 목록의 맨 아래에 테마가 추가됩니다. 테마를 미리 보려면 해당 테마를 선택합니다. ![색 테마 미리 보기](media/source-editor-image21.png)
 4. 테마를 적용하려면 **확인** 단추를 누릅니다.

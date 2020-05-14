@@ -13,10 +13,10 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568882"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>연습: UWP 앱의 유닛 테스트 만들기 및 실행
@@ -123,7 +123,7 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
 
    ![단위 테스트 탐색기 &#45; 테스트 완료됨](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio를 사용하여 UWP 앱 테스트](../test/unit-test-your-code.md)
 - [UWP 앱 빌드 및 테스트](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

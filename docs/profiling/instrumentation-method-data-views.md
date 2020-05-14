@@ -13,16 +13,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774165"
 ---
 # <a name="instrumentation-method-data-views"></a>계측 방법 데이터 뷰
 이 섹션에서는 계측 방법을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보를 제공합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 - [요약 뷰](../profiling/summary-view-instrumentation-data.md)
 
  가장 많은 시간을 소비한 함수와 가장 많은 개별 작업을 수행한 함수를 나열합니다.

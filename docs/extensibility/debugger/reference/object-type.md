@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349925"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714124"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
+# <a name="object_type"></a>Object_Type
 식 계산기에서 개체의 형식을 지정합니다.
 
 ## <a name="syntax"></a>구문
@@ -70,61 +70,61 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>필드
  `OBJECT_TYPE_BOOLEAN`\
- 부울 개체 임을 나타냅니다.
+ 개체가 부울임을 나타냅니다.
 
  `OBJECT_TYPE_CHAR`\
- 개체는 문자 인지를 나타냅니다.
+ 개체가 문자임을 나타냅니다.
 
  `OBJECT_TYPE_I1`\
- 개체는 1 바이트 부호 있는 정수를 나타냅니다.
+ 개체가 1바이트 서명된 정수임을 나타냅니다.
 
  `OBJECT_TYPE_U1`\
- 개체는 1 바이트 부호 없는 정수를 나타냅니다.
+ 개체가 1바이트 의 부호 없는 정수임을 나타냅니다.
 
  `OBJECT_TYPE_I2`\
- 개체는 2 바이트 부호 있는 정수를 나타냅니다.
+ 개체가 2바이트 서명된 정수임을 나타냅니다.
 
  `OBJECT_TYPE_U2`\
- 개체는 2 바이트 부호 없는 정수를 나타냅니다.
+ 개체가 2바이트 의 부호 없는 정수임을 나타냅니다.
 
  `OBJECT_TYPE_I4`\
- 개체는 4 바이트 부호 있는 정수를 나타냅니다.
+ 개체가 4바이트 서명된 정수임을 나타냅니다.
 
  `OBJECT_TYPE_U4`\
- 개체는 4 바이트 부호 없는 정수를 나타냅니다.
+ 개체가 4바이트 의 부호 없는 정수임을 나타냅니다.
 
  `OBJECT_TYPE_I8`\
- 개체는 8 비트 부호 있는 정수를 나타냅니다.
+ 개체가 8바이트 서명된 정수임을 나타냅니다.
 
  `OBJECT_TYPE_U8`\
- 개체는 8 비트 부호 없는 정수를 나타냅니다.
+ 개체가 8바이트 의 서명되지 않은 정수임을 나타냅니다.
 
  `OBJECT_TYPE_R4`\
- 개체는 4 바이트 부동 소수점 숫자를 나타냅니다.
+ 개체가 4바이트 부동 소수점 번호임을 나타냅니다.
 
  `OBJECT_TYPE_R8`\
- 개체는 8 바이트 부동 소수점 숫자를 나타냅니다.
+ 개체가 8바이트 부동 소수점 번호임을 나타냅니다.
 
  `OBJECT_TYPE_OBJECT`\
- 개체는 개체 임을 나타냅니다.
+ 개체가 개체임을 나타냅니다.
 
  `OBJECT_TYPE_NULL`\
- 개체가 NULL 임을 나타냅니다.
+ 개체가 NULL임을 나타냅니다.
 
  `OBJECT_TYPE_CLASS`\
- 개체 클래스 임을 나타냅니다.
+ 개체가 클래스임을 나타냅니다.
 
 ## <a name="remarks"></a>설명
- 인수로 전달 합니다 [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) 하 고 [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) 메서드.
+ [CreatePrimitive개체](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) 및 [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) 메서드에 인수로 전달됩니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: ee.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)
 - [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

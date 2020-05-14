@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779820"
 ---
 # <a name="args"></a>Args
@@ -28,12 +28,12 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
 ```
 
 #### <a name="parameters"></a>매개 변수
- `Arguments` **Launch** 명령의 대상 애플리케이션에 대한 인수 목록입니다.
+ `Arguments`**Launch** 명령의 대상 애플리케이션에 대한 인수 목록입니다.
 
 ## <a name="required-options"></a>필수 옵션
  **시작:** `AppName` 지정된 애플리케이션을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 **Args** 옵션을 사용하여 TestApp.exe에 인수를 전달합니다.
 
 ```cmd
@@ -41,7 +41,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

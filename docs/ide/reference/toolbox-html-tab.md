@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596439"
 ---
 # <a name="toolbox-html-tab"></a>도구 상자, HTML 탭
@@ -40,7 +40,7 @@ ms.locfileid: "75596439"
 
 ![HTML 웹 페이지 단추](../../ide/reference/media/vxbutton.gif)
 
-`type="button"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Button1"`은 첫 번째 단추로 삽입되고, `id="Button2"`는 두 번째 단추로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="button"` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Button1"`은 첫 번째 단추로 삽입되고, `id="Button2"`는 두 번째 단추로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Button)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "75596439"
 
 ![HTMLpageResetButton 스크린 샷](../../ide/reference/media/vxreset.gif)
 
-`type="reset"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Reset1"`은 첫 번째 다시 설정 단추로 삽입되고, `id="Reset2"`는 두 번째 다시 설정 단추로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="reset"` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Reset1"`은 첫 번째 다시 설정 단추로 삽입되고, `id="Reset2"`는 두 번째 다시 설정 단추로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Reset)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "75596439"
 
 ![HTMLpageToolbarSubmitButton 스크린 샷](../../ide/reference/media/vxsubmit.gif)
 
-`type="submit"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Submit1"`은 첫 번째 제출 단추로 삽입되고, `id="Submit2"`는 두 번째 제출 단추로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="submit"` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Submit1"`은 첫 번째 제출 단추로 삽입되고, `id="Submit2"`는 두 번째 제출 단추로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Submit)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -76,7 +76,7 @@ ms.locfileid: "75596439"
 
 ![HTMLpageToolbarTextField 스크린 샷](../../ide/reference/media/vxtextfield.gif)
 
-`type="text"`의 `input` 요소를 문서에 삽입합니다. 표시되는 기본 텍스트를 변경하려면 `value` 특성을 편집합니다. 기본적으로 `id="Text1"`은 첫 번째 텍스트 필드로 삽입되고, `id="Text2"`는 두 번째 텍스트 필드로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="text"` 요소를 문서에 삽입합니다. 표시되는 기본 텍스트를 변경하려면 `value` 특성을 편집합니다. 기본적으로 `id="Text1"`은 첫 번째 텍스트 필드로 삽입되고, `id="Text2"`는 두 번째 텍스트 필드로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Text)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "75596439"
 
 ![HTML 페이지 파일 필드](../../ide/reference/media/vxfilefield.gif)
 
-`type="file"`의 `input` 요소를 문서에 삽입합니다. 기본적으로 `id="File1"`은 첫 번째 파일 필드로 삽입되고, `id="File2"`는 두 번째 파일 필드로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="file"` 요소를 문서에 삽입합니다. 기본적으로 `id="File1"`은 첫 번째 파일 필드로 삽입되고, `id="File2"`는 두 번째 파일 필드로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (File)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -106,7 +106,7 @@ ms.locfileid: "75596439"
 
 ![Visual Studio 암호 필드](../../ide/reference/media/vxpassword.gif)
 
-`type="password"`의 `input` 요소를 삽입합니다. 기본적으로 `id="Password1"`은 첫 번째 암호 필드로 삽입되고, `id="Password2"`는 두 번째 암호 필드로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="password"` 요소를 삽입합니다. 기본적으로 `id="Password1"`은 첫 번째 암호 필드로 삽입되고, `id="Password2"`는 두 번째 암호 필드로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Password)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -121,7 +121,7 @@ ms.locfileid: "75596439"
 
 ![HTML 웹 페이지 도구 상자 확인란 옵션](../../ide/reference/media/vxcheckbox.gif)
 
-`type="checkbox"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Checkbox1"`은 첫 번째 확인란으로 삽입되고, `id="Checkbox2"`는 두 번째 확인란으로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="checkbox"` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Checkbox1"`은 첫 번째 확인란으로 삽입되고, `id="Checkbox2"`는 두 번째 확인란으로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Check box)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -133,7 +133,7 @@ ms.locfileid: "75596439"
 
 ![VisualStudioHTMLpageRadioButton 스크린 샷](../../ide/reference/media/vxradio.gif)
 
-`type="radio"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Radio1"`은 첫 번째 라디오 단추로 삽입되고, `id="Radio2"`는 두 번째 라디오 단추로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="radio"` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Radio1"`은 첫 번째 라디오 단추로 삽입되고, `id="Radio2"`는 두 번째 라디오 단추로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Radio)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -145,7 +145,7 @@ ms.locfileid: "75596439"
 
 ![HTML 페이지 숨겨진 항목](../../ide/reference/media/vxhidden.gif)
 
-`type="hidden"`의 `input` 요소를 삽입합니다. 기본적으로 `id="Hidden1"`은 첫 번째 숨겨진 필드로 삽입되고, `id="Hidden2"`는 두 번째 숨겨진 필드로 삽입되는 식으로 항목이 삽입됩니다.
+`input`의 `type="hidden"` 요소를 삽입합니다. 기본적으로 `id="Hidden1"`은 첫 번째 숨겨진 필드로 삽입되고, `id="Hidden2"`는 두 번째 숨겨진 필드로 삽입되는 식으로 항목이 삽입됩니다.
 
 **Input (Hidden)** 를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -168,7 +168,7 @@ ms.locfileid: "75596439"
 > [!IMPORTANT]
 > 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)(ASP.NET 웹 페이지(Razor) 사이트에서 사용자 입력 유효성 검사)를 참조하세요.
 
-**Table**
+**테이블**
 
 ![HTMLpageToolbarTable 스크린 샷](../../ide/reference/media/vxtable.gif)
 
@@ -180,7 +180,7 @@ ms.locfileid: "75596439"
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
-**Image**
+**이미지**
 
 ![HTML 페이지 이미지 항목](../../ide/reference/media/vximage.gif)
 
@@ -192,7 +192,7 @@ ms.locfileid: "75596439"
 <img alt="" src="">
 ```
 
-**선택**
+**Select**
 
 ![HTML 페이지 도구 상자 드롭다운](../../ide/reference/media/vxdropdown.gif)
 
@@ -222,7 +222,7 @@ size 속성 값을 늘려 여러 줄 `select` 요소를 만들 수 있습니다.
 
 ![HTML 페이지 레이블](../../ide/reference/media/vxlabel.gif)
 
-`ms_positioning="FlowLayout"` 특성을 포함하는 `div` 요소를 삽입합니다. 너비 및 높이를 제외하고 이 항목은 선형 레이아웃 패널과 동일합니다. `div` 요소 내에 포함된 텍스트의 서식을 지정하려면 `class="stylename"` 특성을 여는 태그에 추가합니다.
+`div` 특성을 포함하는 `ms_positioning="FlowLayout"` 요소를 삽입합니다. 너비 및 높이를 제외하고 이 항목은 선형 레이아웃 패널과 동일합니다. `div` 요소 내에 포함된 텍스트의 서식을 지정하려면 `class="stylename"` 특성을 여는 태그에 추가합니다.
 
 **Div**를 디자인 보기 화면으로 끌어다 놓으면 다음과 같은 HTML 태그가 문서에 삽입됩니다.
 
@@ -230,6 +230,6 @@ size 속성 값을 늘려 여러 줄 `select` 요소를 만들 수 있습니다.
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [도구 상자](../../ide/reference/toolbox.md)

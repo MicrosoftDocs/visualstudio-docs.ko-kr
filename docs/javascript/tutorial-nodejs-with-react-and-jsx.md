@@ -1,8 +1,8 @@
 ---
 title: Node.js 및 React 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
-ms.custom: mvc
-ms.date: 11/01/2019
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
-ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622564"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760088"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
@@ -72,9 +72,11 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 * Node.js 런타임을 설치해야 합니다.
 
-    이 자습서는 버전 10.16.0을 사용하여 테스트했습니다.
+    이 자습서는 버전 12.6.2를 사용하여 테스트했습니다.
 
-    아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
+    아직 설치하지 않은 경우 외부 프레임워크 및 라이브러리와의 호환성을 최대화하기 위해 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치하는 것이 좋습니다. Node.js는 32비트 및 64비트 아키텍처용으로 빌드됩니다. Node.js 워크로드에 포함된 Visual Studio의 Node.js 도구는 두 버전을 모두 지원합니다. 하나만 필요하며 Node.js 설치 관리자는 한 번에 하나의 설치만 지원합니다.
+    
+    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하여 **속성**을 선택하고 **Node.exe 경로**를 설정합니다). Node.js의 전역 설치를 사용하거나 각 Node.js 프로젝트에서 로컬 인터프리터 경로를 지정할 수 있습니다. 
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -104,7 +106,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json*에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
 
-    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 이 파일에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
+    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 자세한 내용은 [npm 패키지 관리](../javascript/npm-package-management.md)를 참조하세요.
 
     (5) *server.js*와 같은 프로젝트 파일은 프로젝트 노드 아래에 표시됩니다. *server.js*는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정**을 선택하여 시작 파일을 설정할 수 있습니다.
 
@@ -127,7 +129,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 1. **새 npm 패키지 설치** 대화 상자에서 React 패키지를 검색하고 **패키지 설치**를 선택하여 설치합니다.
 
-    ![npm 패키지 설치](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![npm 패키지 설치](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     패키지를 설치 진행률을 확인하려면 **출력** 창을 선택합니다(**출력 보기** 필드에서 **Npm**선택). 설치 시 패키지가 **npm** 노드 아래 표시됩니다.
 
@@ -137,14 +139,14 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     ```json
     "dependencies": {
-      "express": "~4.16.4",
+      "express": "~4.17.1",
       "path": "~0.12.7",
-      "react": "~16.6.0",
-      "react-dom": "~16.6.0",
-      "ts-loader": "~5.3.0",
-      "typescript": "~3.1.5",
-      "webpack": "~4.23.1",
-      "webpack-cli": "~3.1.2"
+      "react": "~16.13.1",
+      "react-dom": "~16.13.1",
+      "ts-loader": "~7.0.1",
+      "typescript": "~3.8.3",
+      "webpack": "~4.42.1",
+      "webpack-cli": "~3.3.11"
     }
     ```
 
@@ -152,13 +154,15 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 1. 변경 내용을 저장합니다.
 
-1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 업데이트**를 선택합니다.
+1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 설치**를 선택합니다.
+
+    이 명령은 npm 설치 명령을 직접 실행합니다.
 
     아래쪽 창에서 **출력** 창을 선택하여 패키지 설치 진행률을 확인합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며 즉시 결과를 확인할 수는 없습니다. 출력을 보려면 **출력** 창의 **출력 표시** 필드에서 **Npm**을 선택합니다.
 
     설치된 후 솔루션 탐색기에 표시된 대로 여기 npm 모듈이 있습니다.
 
-    ![NPM 패키지](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![NPM 패키지](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > 명령줄을 사용하여 npm 패키지를 설치하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기**를 선택합니다. 표준 Node.js 명령을 사용하여 패키지를 설치합니다.
@@ -308,7 +312,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     명령 프롬프트 창에 결과가 표시됩니다.
 
-    ![webpack 실행](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![webpack 실행](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     위의 출력 대신 오류를 참조하면 앱이 작동하기 전에 해당 오류를 해결해야 합니다. npm 패키지 버전이 이 자습서에 표시된 버전과 다른 경우 오류의 원인이 될 수 있습니다. 오류를 수정하는 한 방법은 이전 단계에서 표시된 정확한 버전을 사용하는 것입니다. 또한 이러한 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다. *package.json*을 사용하여 npm 패키지 버전을 제어하는 방법에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
@@ -338,7 +342,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 ## <a name="run-the-app"></a>앱 실행
 
-1. Microsoft Edge 또는 Chrome을 현재 디버그 대상으로 선택합니다.
+1. 현재 디버그 대상으로 **웹 서버(Google Chrome)** 또는 **웹 서버(Microsoft Edge)** 를 선택합니다.
 
     ::: moniker range=">=vs-2019"
     ![디버그 대상으로 크롬 선택](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -347,12 +351,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
     ![디버그 대상으로 크롬 선택](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    컴퓨터에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **웹 브라우저(browsername)** > **웹 브라우저 선택**을 선택하고 기본 브라우저 대상으로 **Chrome**을 선택합니다.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    컴퓨터에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **웹 브라우저(browsername)** > **Google Chrome**을 선택하고 기본 브라우저 대상으로 **Chrome**을 선택합니다.
-    ::: moniker-end
+    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
 
 1. 앱을 실행하려면 **F5**(**디버그** > **디버깅 시작**) 키 또는 녹색 화살표 단추를 누릅니다.
 
@@ -405,14 +404,10 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
    Microsoft Edge(Chromium)의 경우 Chrome의 모든 인스턴스도 종료합니다. 두 브라우저는 모두 chromium 코드베이스를 공유하기 때문에 최상의 결과를 제공합니다.
    ::: moniker-end
 
-   ::: moniker range=">=vs-2019"
-   Microsoft Edge(Chromium)의 경우 Chrome의 모든 인스턴스도 종료합니다. 두 브라우저는 모두 chromium 코드 베이스를 사용하기 때문에 최상의 결과를 제공합니다.
-   ::: moniker-end
-
 2. 디버깅을 사용하도록 설정된 상태로 브라우저를 시작합니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019부터 **디버그** 도구 모음에서 **브라우저 선택...** >을 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port=9222` 플래그를 설정할 수 있습니다. 브라우저에 대해 **디버깅 포함 Edge** 또는 **디버깅 포함 Chrome**과 같은 다른 식별 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2)를 참조하세요.
+    Visual Studio 2019부터 **디버그** 도구 모음에서 **브라우저 선택...** >을 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port=9222` 플래그를 설정할 수 있습니다. 브라우저에 대해 **디버깅 포함 Microsoft Edge** 또는 **디버깅 포함 Chrome**과 같은 다른 식별 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2)를 참조하세요.
 
     ![디버깅 사용 설정 상태로 열도록 브라우저 설정](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 

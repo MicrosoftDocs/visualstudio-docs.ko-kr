@@ -88,13 +88,13 @@
                       items:
                         - name: XElement 클래스 동적 속성
                           href: xelement-class-dynamic-properties.md
-                        - name: 특성
+                        - name: attribute
                           href: attribute-xelement-dynamic-property.md
                         - name: 요소
                           href: element-xelement-dynamic-property.md
                         - name: 요소
                           href: elements-xelement-dynamic-property.md
-                        - name: 하위 항목
+                        - name: Descendants
                           href: descendants-xelement-dynamic-property.md
                         - name: 값
                           href: value-xelement-dynamic-property.md

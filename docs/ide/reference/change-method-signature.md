@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68711257"
 ---
 # <a name="change-a-method-signature-refactoring"></a>메서드 시그니처 변경 리팩터링
@@ -29,11 +29,11 @@ ms.locfileid: "68711257"
 
 - Visual Basic
 
-**내용:** 메서드 매개 변수의 순서를 제거하거나 변경할 수 있습니다.
+**대상:** 메서드 매개 변수의 순서를 제거하거나 변경할 수 있습니다.
 
 **시기:** 다양한 위치에서 현재 사용 중인 메서드 매개 변수를 이동하거나 제거하려고 합니다.
 
-**이유:** 매개 변수를 수동으로 제거하고 다시 정렬한 다음, 해당 메서드에 대한 모든 호출을 찾아 하나씩 변경할 수 있지만 오류가 발생할 수 있습니다.  이 리팩터링 도구는 작업을 자동으로 수행합니다.
+**이유:** 매개 변수를 수동으로 제거하고 다시 정렬한 후 해당 메서드에 대한 모든 호출을 찾아 하나씩 변경할 수 있지만 오류가 발생할 수 있습니다.  이 리팩터링 도구는 작업을 자동으로 수행합니다.
 
 ## <a name="how-to"></a>방법
 
@@ -61,7 +61,7 @@ ms.locfileid: "68711257"
 
    ![시그니처 변경 대화 상자](media/changesignature-dialog-cs.png)
 
-   | 단추 | 설명
+   | 단추 | Description
    | ------ | ---
    | **위쪽/아래쪽** | 선택한 매개 변수를 목록에서 위아래로 이동합니다.
    | **제거** | 목록에서 선택한 매개 변수를 제거합니다.

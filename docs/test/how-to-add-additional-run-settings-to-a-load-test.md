@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adcb50d2c6800c5ce64ab2b7cf16ce9d2a25aaaa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584506"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>방법: 부하 테스트에 추가 실행 설정 추가
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>방법: 부하 테스트에 실행 설정 추가
 
 부하 테스트의 실행 설정을 통해 다양한 설정을 지정할 수 있습니다. 실행 설정에는 테스트 기간, 결과 컬렉션 세부 수준 및 테스트 실행 시 수집되는 카운터 집합이 포함됩니다. 부하 테스트마다 여러 실행 설정을 만들어 저장한 다음 테스트를 실행할 때 특정 설정을 하나 선택하여 사용할 수 있습니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 실행 설정이 부하 테스트에 추가됩니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "75584506"
 
      **속성** 창이 선택한 실행 설정의 속성과 함께 표시됩니다.
 
-5. **속성** 창에서 **이름** 속성의 텍스트 상자를 사용하여 실행 설정의 의도를 설명하는 이름(예: **실행 설정: 5분 실행**)을 지정합니다.
+5. **속성** 창에서 **이름** 속성의 텍스트 상자를 사용하여 **실행 설정: 5분 실행**과 같이 실행 설정의 의도를 설명하는 이름을 새 실행 설정에 지정합니다.
 
 6. **속성** 창을 사용하여 실행 설정을 변경합니다. 예를 들어 실행 지속 시간을 **00:05:00**으로 변경하여 테스트를 5분간 실행합니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "75584506"
 
      추가된 실행 설정을 활성 상태로 설정하여 해당 설정을 사용하도록 지정할 수 있습니다. 자세한 내용은 [방법: 부하 테스트에 대한 활성 실행 설정 선택](../test/how-to-select-the-active-run-setting-for-a-load-test.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

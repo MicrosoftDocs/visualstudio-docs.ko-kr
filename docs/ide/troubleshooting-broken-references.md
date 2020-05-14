@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565918"
 ---
 # <a name="troubleshoot-broken-references"></a>끊어진 참조 문제 해결
@@ -88,6 +88,6 @@ ms.locfileid: "75565918"
 
 사용자가 COM 구성 요소에 대한 참조를 추가했고 두 번째 사용자가 이 구성 요소가 설치되지 않은 컴퓨터에서 코드를 실행하려고 하면 두 번째 사용자에게 참조가 끊어졌다는 오류 메시지가 표시됩니다. 두 번째 컴퓨터에 구성 요소를 설치하면 오류가 수정됩니다. 프로젝트에서 COM 구성 요소 참조를 사용하는 방법에 대한 자세한 내용은 [.NET Framework 애플리케이션의 COM 상호 운용성](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 디자이너, 참조 페이지(Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

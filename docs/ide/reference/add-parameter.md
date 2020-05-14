@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595867"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>빠른 작업을 사용하여 메서드에 매개 변수 추가
@@ -22,7 +22,7 @@ ms.locfileid: "75595867"
 
 - Visual Basic
 
-**내용:** 사용법을 기준으로 메서드에 매개 변수를 자동으로 추가할 수 있습니다.
+**대상:** 사용법을 기준으로 메서드에 매개 변수를 자동으로 추가할 수 있습니다.
 
 **시기:** 메서드에 매개 변수를 추가해야 하며, 자동으로 메서드를 제대로 선언하려고 합니다.
 
@@ -46,6 +46,6 @@ ms.locfileid: "75595867"
 > [!NOTE]
 > 메서드에 대한 다른 호출이 있는 경우, 새로 추가된 매개 변수에 대한 인수를 지정하지 않기 때문에 이 빠른 작업을 사용한 후 오류가 발생할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [생성자에 매개 변수 추가](generate-constructor.md#addparameter)

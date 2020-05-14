@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c7da73ac3f47b6b63817ff905923b71e3354b06c
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 34f3dc8642e2cf8e965e2ad303bed79931d2645c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180089"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579502"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>빠른 시작: Visual Studio에서 Visual Basic을 사용하여 첫 번째 콘솔 앱 만들기
 
@@ -27,13 +27,13 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
 ::: moniker range="vs-2017"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
    >
    > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName*을 입력합니다. 그런 다음, **만들기**를 선택합니다.
+1. **새 프로젝트 구성** 창에서 *프로젝트 이름* 상자에 **WhatIsYourName**을 입력합니다. 그런 다음, **만들기**를 선택합니다.
 
    !['새 프로젝트 구성' 창에서 프로젝트의 이름을 'WhatIsYourName'으로 지정합니다.](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -132,7 +132,7 @@ IDE에서 **HelloWorld** 단추를 클릭하면 디버그 모드에서 프로그
 
    ![Hello World 단추를 클릭하여 도구 모음에서 프로그램을 실행합니다.](../ide/media/vb-console-hello-world-button.png)
 
-2. 콘솔 창을 닫으려면 아무 키나 누릅니다.
+2. 아무 키를 눌러 콘솔 창을 닫습니다.
 
    ![Hello World 및 계속하려면 아무 키나 누르세요.를 표시하는 콘솔 창](../ide/media/vb-console-hello-world-press-any-key.png)
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779976"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>명령줄에서 프로파일링 방법을 사용하여 성능 데이터 수집
@@ -26,7 +26,7 @@ ms.locfileid: "74779976"
 
  프로파일러와 애플리케이션은 동시에 시작할 수도 있고 애플리케이션의 실행 중인 인스턴스에 프로파일러를 연결할 수도 있습니다.
 
-|작업|대상 애플리케이션 유형|
+|Task|대상 애플리케이션 유형|
 |----------|-----------------------------|
 |**애플리케이션 시작**|-   [독립 실행형 애플리케이션](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
 |**실행 중인 프로세스에 연결**|-   [.NET Framework 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [기본 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)<br />-   [ASP.NET 웹 애플리케이션](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [.NET 서비스](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [기본 서비스](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
@@ -55,7 +55,7 @@ ms.locfileid: "74779976"
 
  프로파일러를 사용하여 대상 애플리케이션을 시작할 수 있고, 애플리케이션의 실행 중인 인스턴스에 프로파일러를 연결할 수 있으며, 애플리케이션의 계측된 버전을 만들어 .NET Framework 메모리 데이터와 함께 상세한 타이밍 정보를 수집할 수 있습니다.
 
-|작업|대상 애플리케이션 유형|
+|Task|대상 애플리케이션 유형|
 |----------|-----------------------------|
 |**애플리케이션 시작**|-   [독립 실행형.NET Framework 애플리케이션](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**실행 중인 프로세스에 연결**|-   [.NET Framework 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)<br />-   [ASP.NET 웹 애플리케이션](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [.NET 서비스](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|
@@ -66,7 +66,7 @@ ms.locfileid: "74779976"
 
  프로파일러를 사용하여 애플리케이션을 시작할 수도 있고 애플리케이션의 실행 중인 인스턴스에 프로파일러를 연결할 수도 있습니다.
 
-|작업|대상 애플리케이션 유형|
+|Task|대상 애플리케이션 유형|
 |----------|-----------------------------|
 |**애플리케이션 시작**|-   [독립 실행형.NET Framework 애플리케이션](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [독립 실행형 기본 애플리케이션](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
 |**실행 중인 프로세스에 연결**|-   [.NET Framework 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [기본 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)<br />-   [ASP.NET 웹 애플리케이션](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [.NET 서비스](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [기본 서비스](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|

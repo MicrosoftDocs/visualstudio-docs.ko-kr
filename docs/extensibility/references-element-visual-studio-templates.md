@@ -1,5 +1,5 @@
 ---
-title: 요소 (Visual Studio 템플릿)를 참조 | Microsoft Docs
+title: 참조 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <References> element [Visual Studio Templates]
 - References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2ab5c3decc201958bd939a0a9d66dd65a5ef1c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334416"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701609"
 ---
-# <a name="references-element-visual-studio-templates"></a>References 요소 (Visual Studio 템플릿)
-서식 파일 프로젝트에 추가 하는 어셈블리 참조를 그룹화 합니다.
+# <a name="references-element-visual-studio-templates"></a>참조 요소(비주얼 스튜디오 템플릿)
+템플릿이 프로젝트에 추가하는 어셈블리 참조를 그룹합니다.
 
- \<VSTemplate> \<TemplateContent> \<References>
+ \<VS템플릿 \<> 템플릿콘텐츠> \<참조>
 
 ## <a name="syntax"></a>구문
 
@@ -44,23 +44,23 @@ ms.locfileid: "66334416"
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[참조](../extensibility/reference-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 항목이 프로젝트에 추가될 때 추가할 어셈블리 참조를 지정합니다. 하나 이상 이어야 `Reference` 의 요소를 `References` 요소입니다.|
+|[참조](../extensibility/reference-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 항목이 프로젝트에 추가될 때 추가할 어셈블리 참조를 지정합니다. `References` 요소에 하나 이상의 `Reference` 요소가 있어야 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|서식 파일의 내용을 지정합니다.|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|템플릿의 내용을 지정합니다.|
 
 ## <a name="remarks"></a>설명
  `References`은 `TemplateContent`의 선택적 자식 요소입니다.
 
- `Reference` 및 `References` 요소에만 사용할 수 있습니다 *.vstemplate* 파일을 `Type` 특성의 값 `Item`합니다.
+ `Reference` 및 `References` 요소는 `Type` 의 특성 값이 있는 *.vstemplate* 파일에서만 사용할 수 `Item`있습니다.
 
 ## <a name="example"></a>예제
- 다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML에 대 한 참조를 추가 합니다 *System.dll* 하 고 *System.Data.dll* 어셈블리입니다.
+ 다음 예제에서는 항목 `TemplateContent` 템플릿의 요소를 보여 줍니다. 이 XML은 *System.dll* 및 *System.Data.dll* 어셈블리에 대한 참조를 추가합니다.
 
 ```xml
 <TemplateContent>
@@ -80,6 +80,6 @@ ms.locfileid: "66334416"
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>참조
+- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

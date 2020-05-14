@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585745"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
@@ -19,7 +19,7 @@ ms.locfileid: "75585745"
 사용자 고유의 개발 스타일 및 요구 사항을 가장 효과적으로 지원하기 위해 다양한 방식으로 Visual Studio를 개인 설정할 수 있습니다. 많은 설정이 Visual Studio 인스턴스에서 사용자와 함께 로밍됩니다.&mdash;[동기화 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요. 이 문서에서는 다양한 개인 설정과 추가 정보를 확인할 수 있는 위치를 간략하게 설명합니다.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio IDE 사용자 지정](/visualstudio/mac/customizing-the-ide)을 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio IDE 사용자 지정](/visualstudio/mac/customizing-the-ide)을 참조하세요.
 
 ## <a name="default-settings"></a>기본 설정
 
@@ -66,7 +66,7 @@ ms.locfileid: "75585745"
 
 외부 도구를 시작하려면 **도구** 메뉴를 사용자 지정할 수 있습니다. 자세한 내용은 [외부 도구 관리](../ide/managing-external-tools.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [환경 설정](environment-settings.md)
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)

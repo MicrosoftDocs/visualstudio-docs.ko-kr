@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75755559"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio에서 Microsoft Unit Testing Framework for C++ 사용
@@ -110,12 +110,12 @@ TEST_METHOD(Method1)
 
 `CppUnitTest.h`에는 다음의 미리 정의된 특성이 있습니다. 자세한 내용은 [Microsoft Unit Testing Framework for C++ API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)를 참조하세요.
 
-|매크로|설명|
+|매크로|Description|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|TEST_METHOD_ATTRIBUTE 매크로를 사용하여 특성(trait)을 정의합니다.|
 |`TEST_OWNER(ownerAlias)`|미리 정의된 소유자 특성(trait)을 사용하여 테스트 메서드의 소유자를 지정합니다.|
 |`TEST_PRIORITY(priority)`|미리 정의된 우선순위 특성(trait)을 사용하여 테스트 메서드에 상대적 우선순위를 할당합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)

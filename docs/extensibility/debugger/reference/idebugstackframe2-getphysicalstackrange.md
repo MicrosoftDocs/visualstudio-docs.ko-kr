@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+title: IDebugStackFrame2::GetPhysicalStackRange | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347708"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719662"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-스택 프레임과 연결 된 물리적 주소 범위의 컴퓨터 종속 표현을 가져옵니다.
+스택 프레임과 연결된 물리적 주소 범위의 컴퓨터 종속 표현을 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>매개 변수
 `paddrMin`\
-[out] 이 스택 프레임과 연결 된 가장 낮은 물리적 주소를 반환 합니다.
+【아웃】 이 스택 프레임과 연결된 가장 낮은 물리적 주소를 반환합니다.
 
 `paddrMax`\
-[out] 이 스택 프레임과 연결 된 가장 높은 물리적 주소를 반환 합니다.
+【아웃】 이 스택 프레임과 연결된 가장 높은 물리적 주소를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드에서 반환 되는 정보는 스택 프레임을 정렬 하려면 세션 디버그 관리자 SDM ()가 사용 됩니다.
+ 이 메서드에서 반환되는 정보는 세션 디버그 관리자(SDM)에서 스택 프레임을 정렬하는 데 사용됩니다.
 
- 호출 스택, 즉 증가, 점점 더 낮은 메모리 주소를 새 스택 프레임 추가 되어 있는지 간주 됩니다. 런타임 아키텍처는이 가정을 일치 하는 실제 스택에 범위를 제공 해야 합니다.
+ 호출 스택이 아래로 증가하는 것으로 가정합니다. 런타임 아키텍처는 이 가정과 일치하는 물리적 스택 범위를 제공해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

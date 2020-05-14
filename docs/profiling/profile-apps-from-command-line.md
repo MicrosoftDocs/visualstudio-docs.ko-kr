@@ -1,8 +1,8 @@
 ---
-title: 명령줄에서 CPU 사용량 측정
-description: 명령줄에서 애플리케이션의 CPU 성능을 측정합니다.
+title: 명령줄에서 성능 측정
+description: 명령줄에서 애플리케이션의 CPU 성능 및 관리되는 메모리 사용량을 측정합니다.
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972422"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638698"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>명령줄에서 애플리케이션 성능 측정
 
@@ -27,11 +27,13 @@ ms.locfileid: "62972422"
 
 이 문서에 설명된 예제에서는 Microsoft Notepad에 대한 성능 정보를 수집하지만 동일한 방법을 사용하여 모든 프로세스를 프로파일링할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
-* Visual Studio 2019 미리 보기 3 이상 버전
+* Visual Studio 2019 이상 버전
 
 * 명령줄 도구 사용 경험
+
+* Visual Studio가 설치되어 있지 않은 원격 머신에서 성능 정보를 수집하려면 원격 머신에 [Visual Studio용 성능 도구](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019)를 설치합니다. 도구의 버전이 Visual Studio의 버전과 일치해야 합니다.
 
 ## <a name="collect-performance-data"></a>성능 데이터 수집
 
@@ -65,7 +67,7 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
 1. 이전 명령의 파일 출력으로 이동하여 Visual Studio에서 열어 수집된 정보를 검사합니다.
 
-## <a name="config_file"></a> 에이전트 구성 파일
+## <a name="agent-configuration-files"></a><a name="config_file"></a> 에이전트 구성 파일
 
 컬렉션 에이전트는 측정하려는 항목에 따라 서로 다른 유형의 데이터를 수집하는 상호 교환이 가능한 구성 요소입니다.
 
@@ -74,7 +76,7 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * CpuUsage 구성(기본/높음/낮음)은 [CPU 사용량](../profiling/cpu-usage.md) 프로파일링 도구에 대해 수집된 데이터에 해당합니다.
-* DotNetObjectAlloc 구성(기본/낮음)은 [.NET 개체 할당 도구](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling)에 대해 수집된 데이터에 해당합니다.
+* DotNetObjectAlloc 구성(기본/낮음)은 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)에 대해 수집된 데이터에 해당합니다.
 
 기본/낮음/높음 구성은 샘플링 주기를 참조하세요. 예를 들어 낮음은 100 샘플/초이고 높음은 4000 샘플/초입니다.
 

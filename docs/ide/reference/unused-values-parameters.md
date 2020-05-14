@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531870"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>사용되지 않은 값 할당, 변수 및 매개 변수
@@ -40,7 +40,7 @@ ms.locfileid: "65531870"
   ![사용되지 않는 값 할당](media/unused-value-assignment.png)
   ![사용되지 않는 값 삭제](media/unused-value-discard.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [.NET 개발자를 위한 팁](../csharp-developer-productivity.md)

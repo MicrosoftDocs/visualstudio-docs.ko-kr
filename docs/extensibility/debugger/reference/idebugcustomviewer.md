@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer | Microsoft Docs
+title: 아이디버그커스텀뷰어 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46561bbab71b12d924edec96650736c8b1576894
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c44d2289180ece35725b9258e9d20abeb3a4cac3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328025"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732423"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
-이 인터페이스는 식 계산기를 (EE) 형식에 관계 없이가 필요한 속성의 값을 표시할 수 있습니다.
+이 인터페이스를 사용하면 식 계산기(EE)가 필요한 형식으로 속성값을 표시할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,37 +28,37 @@ ms.locfileid: "66328025"
 IDebugCustomViewer : IUknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자 참고 사항
-EE 속성의 값을 사용자 지정 형식으로 표시 하려면이 인터페이스를 구현 합니다.
+## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
+EE는 이 인터페이스를 구현하여 사용자 지정 형식으로 속성의 값을 표시합니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
-COM의 호출이 `CoCreateInstance` 함수는이 인터페이스를 인스턴스화합니다. 합니다 `CLSID` 전달할 `CoCreateInstance` 레지스트리에서 가져옵니다. 에 대 한 호출 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 레지스트리의 위치를 가져옵니다. 예제 뿐만 아니라 세부 정보에 대 한 설명을 참조 하세요.
+## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
+COM 함수에 `CoCreateInstance` 대한 호출은 이 인터페이스를 인스턴스화합니다. `CoCreateInstance` 전달된 것은 `CLSID` 레지스트리에서 가져옵니다. [GetCustomViewerList에](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 대한 호출은 레지스트리의 위치를 가져옵니다. 자세한 내용은 설명과 예제를 참조하십시오.
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
-이 인터페이스는 다음 메서드를 구현합니다.
+이 인터페이스는 다음 방법을 구현합니다.
 
-|메서드|설명|
+|방법|설명|
 |------------|-----------------|
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|지정된 된 값을 표시 하는 데 필요한 무엇이 수행 합니다.|
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|지정된 값을 표시하는 데 필요한 모든 작업을 수행합니다.|
 
 ## <a name="remarks"></a>설명
-정상적인 방법으로 속성의 값을 표시할 수 없는 경우이 인터페이스는 사용-예를 들어 데이터 테이블 또는 다른 복합 속성 형식입니다. 표시 되는 사용자 지정 뷰어를는 `IDebugCustomViewer` 인터페이스, EE에 관계 없이 특정 형식의 데이터를 표시 하는 것에 대 한 외부 프로그램은 형식 시각화 도우미와에서 다릅니다. EE는 EE 관련 된 사용자 지정 뷰어를 구현 합니다. 사용자는 어떤 유형의 시각화 도우미를 사용할 형식 시각화 도우미 또는 사용자 지정 뷰어를 선택 합니다. 참조 [시각화 및 데이터 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md) 이 프로세스에 대 한 자세한 내용은 합니다.
+이 인터페이스는 데이터 테이블이나 다른 복잡한 속성 유형과 같이 속성값을 정상적인 수단으로 표시할 수 없는 경우에 사용됩니다. `IDebugCustomViewer` 인터페이스로 표시되는 사용자 지정 뷰어는 EE에 관계없이 특정 형식의 데이터를 표시하기 위한 외부 프로그램인 형식 시각화 도우미와 다릅니다. EE는 해당 EE에 특정한 사용자 지정 뷰어를 구현합니다. 사용자는 사용할 시각화 도우미 유형(형식 시각화 도우미 또는 사용자 지정 뷰어)을 선택합니다. 이 프로세스에 대한 자세한 내용은 [데이터 시각화 및 보기를](../../../extensibility/debugger/visualizing-and-viewing-data.md) 참조하십시오.
 
-사용자 지정 뷰어는 EE와 마찬가지로에 등록 되 고 따라서 언어 GUID와 공급 업체 GUID 필요 합니다. 정확한 메트릭 (또는 레지스트리 항목 이름)는 EE에만 알려집니다. 이 메트릭은 반환 됩니다 합니다 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 를 호출 하 여 반환 되는 구조 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)합니다. 메트릭 저장 된 값은는 `CLSID` COM의 전달 되는 `CoCreateInstance` 함수 (예제 참조).
+사용자 지정 뷰어는 EE와 동일한 방식으로 등록되므로 언어 GUID와 공급업체 GUID가 필요합니다. 정확한 메트릭(또는 레지스트리 항목 이름)은 EE에만 알려져 있습니다. 이 메트릭은 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 구조에서 반환되며 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)에 대한 호출을 통해 반환됩니다. 메트릭에 저장된 값은 `CLSID` COM 함수에 `CoCreateInstance` 전달되는 값입니다(예제 참조).
 
-합니다 [디버깅을 위한 SDK 도우미](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 함수를 `SetEEMetric`, 사용자 지정 뷰어를 등록할 수 있습니다. "식 계산기" 레지스트리 섹션을 참조 `Debugging SDK Helpers` 특정 레지스트리 키에 대 한 사용자 지정 해야 합니다. 식 계산기를 몇 가지 미리 정의 된 메트릭이 필요 하지만 사용자 지정 뷰어 (EE의 구현자에 의해 정의 됩니다)는 하나의 메트릭 해야 함을 note 합니다.
+디버깅 기능을 `SetEEMetric` [위한 SDK 도우미는](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 사용자 지정 뷰어를 등록하는 데 사용할 수 있습니다. 사용자 지정 뷰어가 필요로 하는 `Debugging SDK Helpers` 특정 레지스트리 키에 대한 "표현식 평가자" 레지스트리 섹션을 참조하십시오. 사용자 지정 뷰어에는 EE 구현자가 정의한 메트릭이 하나만 필요하지만 식 계산기에는 미리 정의된 여러 메트릭이 필요합니다.
 
-일반적으로 사용자 지정 보기가 읽기 전용 데이터를 이후 합니다 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 제공 [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) 문자열로 제외 하 고 속성의 값을 변경 하는 것에 대 한 메서드가 없습니다. 사용자 지정 인터페이스를 구현 하는 동일한 개체에서 EE 변경 데이터의 임의 요소를 지원 하기 위해 구현 된 `IDebugProperty3` 인터페이스입니다. 이 사용자 지정 인터페이스는 데이터의 임의 블록을 변경 하는 데 필요한 메서드를 제공 합니다.
+일반적으로 사용자 지정 뷰어는 [DisplayValue에](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) 제공된 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스에 문자열을 제외한 속성 값을 변경하는 메서드가 없으므로 데이터에 대한 읽기 전용 보기를 제공합니다. 변경되는 임의의 데이터 블록을 지원하기 위해 EE는 `IDebugProperty3` 인터페이스를 구현하는 동일한 개체에 사용자 지정 인터페이스를 구현합니다. 그런 다음 이 사용자 지정 인터페이스는 임의의 데이터 블록을 변경하는 데 필요한 메서드를 제공합니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
 ## <a name="example"></a>예제
-이 예제에 해당 속성이 모든 사용자 지정 뷰어가 경우 속성에서 첫 번째 사용자 지정 뷰어를 가져오는 방법을 보여 줍니다.
+이 예제에서는 해당 속성에 사용자 지정 뷰어가 있는 경우 속성에서 첫 번째 사용자 지정 뷰어를 얻는 방법을 보여 주어집니다.
 
 ```cpp
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
@@ -104,7 +104,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [디버깅을 위한 SDK 도우미](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

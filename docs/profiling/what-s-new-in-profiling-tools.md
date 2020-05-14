@@ -14,13 +14,13 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128333"
 ---
-# <a name="whats-new-in-profiling-tools-in-includevs_dev15miscincludesvs_dev15_mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]에 포함된 프로파일링 도구의 새로운 기능
+# <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]에 포함된 프로파일링 도구의 새로운 기능
 
 진단 도구에는 수정해야 하는 앱의 문제를 식별하는 데 사용할 수 있는 새로운 시각화가 포함되어 있습니다. 이제는 진단 도구에 ASP.NET 앱 지원이 포함됩니다.
 
@@ -32,9 +32,9 @@ ms.locfileid: "71128333"
 
 CPU 사용량 도구에는 성능 문제를 발생시킬 가능성이 가장 높은 기능을 식별하는 데 사용할 수 있는 [새로운 시각화](../profiling/Beginners-Guide-to-Performance-Profiling.md)가 포함되어 있습니다. 새로운 **호출자/호출 수신자** 뷰에서는 선택한 함수와의 함수 호출 비용을 조사할 수 있습니다.
 
-![진단 도구 호출자 호출 수신자 뷰](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
+![진단 도구 호출자/호출 수신자 뷰](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 프로필](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

@@ -11,10 +11,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: dec1478314e752ddace8fae822747e7c8e328b70
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114579"
 ---
 # <a name="package-payload-changes"></a>패키지 페이로드 변경 내용
@@ -37,7 +37,7 @@ ms.locfileid: "76114579"
 
     `END: Downloading [url] to [path]`
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md)
 * [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3f3a5e97153997908a0360bc123fd1b88fb5c009
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596842"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 개요

@@ -7,19 +7,19 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186847"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543936"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>자습서: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 애플리케이션 만들기
 
@@ -42,6 +42,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 1. 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
 1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고 **Windows 유니버설**을 선택합니다. 중간 창에서 **빈 앱(유니버설 Windows)** 을 선택합니다. 프로젝트 이름을 *HelloWorld*로 지정하고 **확인**을 선택합니다.
+
+   > [!NOTE]
+   > 소스 프로젝트가 예를 들어 OS(운영 체제) 드라이브와 같은 **NTFS(New Technology File System)** 포맷 드라이브에 있는지 확인합니다. 이러한 드라이브에 없다면 프로젝트를 빌드하고 실행하는 데 문제가 있을 수 있습니다. 
 
    ![Visual Studio IDE의 새 프로젝트 대화 상자의 Windows 유니버설 프로젝트 템플릿](media/new-project-csharp-uwp-helloworld.png)
 
@@ -125,7 +128,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 ### <a name="add-an-event-handler"></a>이벤트 처리기 추가
 
-"이벤트 처리기"는 복잡해 보이지만 이벤트가 발생할 때 호출되는 코드에 대한 다른 이름에 지나지 않습니다. 이 경우 "Hello World"에 작업을 추가합니다! 단추를 선택합니다.
+"이벤트 처리기"는 복잡해 보이지만 이벤트가 발생할 때 호출되는 코드에 대한 다른 이름에 지나지 않습니다. 이 경우 "Hello World"에 작업을 추가합니다! 클릭합니다.
 
 1. 디자인 캔버스에서 단추 컨트롤을 두 번 클릭합니다.
 
@@ -164,7 +167,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
 
-   ![로컬 컴퓨터를 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
+   ![로컬 머신을 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
 
    또는 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
 
@@ -184,7 +187,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
 
-   ![로컬 컴퓨터를 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
+   ![로컬 머신을 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
 
    또는 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
 
@@ -207,7 +210,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 > [!div class="nextstepaction"]
 > [사용자 인터페이스 만들기](/windows/uwp/design/basics/xaml-basics-ui)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [UWP 개요](/windows/uwp/get-started/universal-application-platform-guide)
 - [UWP 앱 샘플 가져오기](/windows/uwp/get-started/get-uwp-app-samples)

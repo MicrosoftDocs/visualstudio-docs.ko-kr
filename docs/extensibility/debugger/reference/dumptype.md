@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Microsoft Docs
+title: 덤프타입 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318197"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737208"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-덤프 하는 데 얼마나 많은 프로그램의 상태 (예: 실행 중인 스레드, 스택 프레임 및 현재 명령 주소)를 지정 합니다.
+덤프할 프로그램의 상태(예: 실행 중인 스레드, 스택 프레임 및 현재 명령 어누)를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,21 +44,21 @@ public enum enum_DUMPTYPE {
 
 ## <a name="fields"></a>필드
 `DUMP_MINIDUMP`\
-작은, compact 덤프를 지정합니다.
+작고 컴팩트한 덤프를 지정합니다.
 
 `DUMP_FULLDUMP`\
-큰, 전체 덤프를 지정합니다.
+크고 완전한 덤프를 지정합니다.
 
 ## <a name="remarks"></a>설명
-인수로 전달 된 [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) 메서드.
+[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) 메서드에 인수로 전달 되었습니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

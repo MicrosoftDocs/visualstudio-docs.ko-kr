@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590035"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>부하 테스트 시나리오에서 인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이트
@@ -33,7 +33,7 @@ ms.locfileid: "75590035"
 
 인지 시간이 무시됩니다. 최대 부하를 생성하여 웹 서버를 최대한 이용하려면 이 설정을 사용합니다. 사용자와 웹 서버 간에 보다 현실적인 상호 작용을 만들려면 이 설정을 사용하지 마세요.
 
-**On**
+**위치**
 
 인지 시간이 웹 성능 테스트에 기록된 대로 정확히 사용됩니다. 웹 성능 테스트를 실행하는 여러 사용자를 기록된 대로 정확하게 시뮬레이트합니다. 부하 테스트에서는 여러 사용자를 시뮬레이션하므로 동일한 인지 시간을 사용하면 동기화된 여러 가상 사용자에 대해 부자연스러운 부하 패턴이 만들어질 수 있습니다.
 
@@ -56,6 +56,6 @@ ms.locfileid: "75590035"
 
 4. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 인지 시간 프로필로 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)

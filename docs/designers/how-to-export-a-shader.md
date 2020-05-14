@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589437"
 ---
 # <a name="how-to-export-a-shader"></a>방법: 셰이더 내보내기
@@ -41,7 +41,7 @@ ms.locfileid: "75589437"
 
 4. **파일 이름** 콤보 상자에서 내보낸 셰이더의 이름을 지정하고 **저장** 단추를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)
 - [셰이더 디자이너](../designers/shader-designer.md)

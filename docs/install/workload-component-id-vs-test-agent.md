@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bec1795b831ffc522b42984b74320505a774acb9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+open_to_public_contributors: false
+ms.openlocfilehash: 5a24e7c95d3e55b5b91d737877b9292e0af0db58
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276405"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test Agent 구성 요소 디렉터리
 

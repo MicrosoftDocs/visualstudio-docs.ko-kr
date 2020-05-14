@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566776"
 ---
 # <a name="settings-page-project-designer"></a>설정 페이지, 프로젝트 디자이너
@@ -45,13 +45,13 @@ C# 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.cs* 파�
 Properties.Settings.Default.Save();
 ```
 
-Visual Basic 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.vb* 파일의 코드를 볼 수 있습니다. 이 파일은 `My.Settings` 개체에서 특정 이벤트를 처리할 수 있도록 하는 `MySettings` 클래스를 정의합니다. `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스하는 방법에 대한 자세한 내용은 [애플리케이션 설정 액세스](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
+Visual Basic 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.vb* 파일의 코드를 볼 수 있습니다. 이 파일은 `MySettings` 개체에서 특정 이벤트를 처리할 수 있도록 하는 `My.Settings` 클래스를 정의합니다. `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스하는 방법에 대한 자세한 내용은 [애플리케이션 설정 액세스](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
 
 애플리케이션 설정에 대한 자세한 내용은 [Windows Forms에 대한 애플리케이션 설정 개요](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms)를 참조하세요.
 
 **액세스 한정자**
 
-**액세스 한정자** 단추는 Visual Studio가 *Settings.Designer.cs* 또는 *Settings.Designer.vb*에서 생성하는 `Properties.Settings`(C#) 또는 `My.Settings`(Visual Basic) 도우미 클래스의 액세스 수준을 지정합니다.
+**액세스 한정자** 단추는 Visual Studio가 `Properties.Settings`Settings.Designer.cs`My.Settings` 또는 *Settings.Designer.vb*에서 생성하는 *(C#) 또는* (Visual Basic) 도우미 클래스의 액세스 수준을 지정합니다.
 
 Visual C# 프로젝트의 경우 액세스 한정자는 **Internal** 또는 **Public**일 수 있습니다.
 
@@ -69,7 +69,7 @@ Visual Basic 프로젝트의 경우 액세스 한정자는 **Friend** 또는 **P
 
 이 필드에 애플리케이션 설정 이름을 입력합니다.
 
-**Type**
+**형식**
 
 드롭다운 목록을 사용하여 설정 형식을 선택합니다. 가장 자주 사용하는 형식이 드롭다운 목록에 나타납니다. 예를 들어, **String**, **(연결 문자열)** 및 **System.Drawing.Font**입니다. 목록 끝에서 **찾아보기**를 선택한 다음, **형식 선택** 대화 상자에서 형식을 선택하여 다른 형식을 선택할 수 있습니다. 형식을 선택하면 드롭다운 목록의 일반 형식에 추가됩니다(현재 솔루션만 해당).
 
@@ -85,7 +85,7 @@ Visual Basic 프로젝트의 경우 액세스 한정자는 **Friend** 또는 **P
 
 애플리케이션 설정과 연결된 데이터 또는 값입니다. 예를 들어 설정이 글꼴인 경우 값은 **Verdana, 9.75pt, style=Bold**일 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [애플리케이션 설정 관리](../managing-application-settings-dotnet.md)
 - [애플리케이션 설정 액세스(Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

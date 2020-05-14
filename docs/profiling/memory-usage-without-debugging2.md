@@ -1,7 +1,7 @@
 ---
 title: 디버깅하지 않고 메모리 사용량 분석 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/15/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910353"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638820"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>디버거 없이 메모리 사용량 분석
 
 **메모리 사용량** 도구는 앱의 메모리 사용량을 모니터링합니다. 이 도구를 사용하여 Visual Studio에서 활발하게 개발 중인 시나리오의 실시간 메모리 효과를 학습할 수 있습니다. 앱의 메모리 상태에 대한 자세한 스냅샷을 만들고 스냅샷을 비교하여 메모리 문제의 근본 원인을 찾을 수 있습니다.
 
-**메모리 사용량** 도구는 디버거를 사용하거나 사용하지 않고 실행할 수 있습니다. 다음 지침은 Visual Studio **성능 프로파일러**에서 디버거 없이 **메모리 사용량** 도구를 사용하는 방법을 보여줍니다.
-
->[!NOTE]
->- .NET Core 앱의 메모리 사용량을 측정하려면 디버거와 함께 **메모리 사용량** 도구를 사용해야 합니다. 자세한 내용은 [Visual Studio에서 프로필 메모리 사용량](memory-usage.md)을 참조하세요.
->- JavaScript 또는 HTML UWP 앱에서 메모리 사용을 분석하려면 **성능 프로파일러**의 [JavaScript 메모리](../profiling/javascript-memory.md) 도구를 사용합니다.
+**메모리 사용량** 도구는 [디버거를 사용하거나 사용하지 않고](../profiling/running-profiling-tools-with-or-without-the-debugger.md) 실행할 수 있습니다. 다음 문서에서는 Visual Studio **성능 프로파일러**에서 디버거 없이 **메모리 사용량** 도구를 사용하는 방법을 보여줍니다.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>메모리 사용량 진단 세션
 
 **메모리 사용량 진단 세션을 시작하려면:**
 
-1. Visual Studio에서 C# 유니버설 Windows(UWP) 프로젝트를 엽니다.
+1. Visual Studio에서 프로젝트를 엽니다.
+
+   메모리 사용량 도구는 .NET, ASP.NET, 네이티브 또는 혼합 모드(.NET 및 네이티브) 앱을 지원합니다.
+
+1. 디버그 메뉴에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
 
 1. 메뉴 모음에서 **디버그** > **성능 프로파일러**를 선택합니다.
 
-1. **메모리 사용량**을 선택한 다음, **시작**을 선택합니다.
+1. **사용 가능한 도구**에서 **메모리 사용량**을 선택한 다음, **시작**을 선택합니다.
 
    ![메모리 사용량 진단 세션 시작](../profiling/media/memuse_start_diagnosticssession.png "메모리 사용량 진단 세션 시작")
 
@@ -56,7 +56,7 @@ ms.locfileid: "72910353"
 
 스냅샷을 수집하려면 메모리 데이터를 캡처할 때 **스냅샷 만들기**를 선택합니다.
 
-### <a name="BKMK_Close_a_monitoring_session"></a> 진단 세션 닫기
+### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a> 진단 세션 닫기
 
 보고서를 생성하지 않고 모니터링 세션을 중지하려면 진단 창을 닫기만 하면 됩니다. 스냅샷 수집을 완료하거나 스냅샷을 만들 때 보고서를 생성하려면 **컬렉션 중지**를 선택합니다.
 
@@ -68,7 +68,7 @@ ms.locfileid: "72910353"
 
 ![메모리 사용량 개요 페이지](../profiling/media/memuse__reportoverview1.png "메모리 사용량 개요 페이지")
 
-### <a name="BKMK_Memory_Usage_snapshot_views"></a> 메모리 사용량 스냅샷
+### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> 메모리 사용량 스냅샷
 
 **스냅샷** 창의 숫자는 각 스냅샷이 생성될 때 메모리의 바이트 및 개체와 스냅샷과 이전 스냅샷 간의 차이를 보여줍니다.
 
@@ -93,17 +93,17 @@ ms.locfileid: "72910353"
 
 **개체 유형**이 파란색이면 이 유형을 선택하여 별도의 창에서 소스 코드의 개체로 이동할 수 있습니다.
 
-식별할 수 없는 유형이나 이해할 수 없는 코드에는 .NET Framework, 운영 체제 또는 컴파일러 개체가 포함될 수 있습니다. **메모리 사용량** 도구는 개체의 소유권 체인과 관련된 경우 이러한 개체를 표시합니다.
+식별할 수 없는 유형이나 코드에서 사용된 방식을 이해하기 어려운 유형은 .NET, 운영 체제 또는 컴파일러 개체일 가능성이 큽니다. **메모리 사용량** 도구는 개체의 소유권 체인과 관련된 경우 이러한 개체를 표시합니다.
 
 스냅샷 보고서에서:
 
 - **관리되는 힙** 트리는 보고서의 유형과 인스턴스를 보여줍니다. 형식 또는 인스턴스를 선택하면 선택한 항목에 대한 **루트 경로** 및 **참조 개체** 트리가 표시됩니다.
 
-- **루트 경로** 트리는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여줍니다. .NET Framework 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.
+- **루트 경로** 트리는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여줍니다. .NET 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.
 
 - **참조 형식** 또는 **참조 개체** 트리는 선택한 형식 또는 인스턴스가 참조하는 개체를 보여줍니다.
 
-### <a name="BKMK_Report_tree_filters_"></a> 보고서 트리 필터
+### <a name="report-tree-filters"></a><a name="BKMK_Report_tree_filters_"></a> 보고서 트리 필터
 
 앱의 많은 형식은 앱 개발자에게 그리 흥미롭지 않습니다. 스냅샷 보고서 필터는 **관리되는 힙** 및 **루트 경로** 트리에서 이러한 유형의 대부분을 숨길 수 있습니다.
 
@@ -111,9 +111,9 @@ ms.locfileid: "72910353"
 
 - <a name="BKMK_Filter"></a> 형식 이름별로 트리를 필터링하려면 **필터** 상자에 이름을 입력합니다. 필터는 대/소문자를 구분하지 않고 형식 이름의 모든 부분에서 지정한 문자열을 인식합니다.
 
-- <a name="BKMK_Collapse_Small_Objects"></a> **필터** 드롭다운에서 **작은 개체 축소**를 선택하여 **크기(바이트)** 가 총 메모리의 0.5% 미만인 유형을 숨깁니다.
+- <a name="BKMK_Collapse_Small_Objects"></a>**필터** 드롭다운에서 **작은 개체 축소**를 선택하여 **크기(바이트)** 가 총 메모리의 0.5% 미만인 유형을 숨깁니다.
 
-- <a name="BKMK_Just_My_Code"></a> **필터** 드롭다운에서 **내 코드만** 필터를 선택하면 외부 코드로 생성된 대부분의 인스턴스를 숨깁니다. 외부 유형은 운영 체제 또는 프레임워크 구성 요소에 속하거나 컴파일러에서 생성합니다.
+- <a name="BKMK_Just_My_Code"></a>**필터** 드롭다운에서 **내 코드만** 필터를 선택하면 외부 코드로 생성된 대부분의 인스턴스를 숨깁니다. 외부 유형은 운영 체제 또는 프레임워크 구성 요소에 속하거나 컴파일러에서 생성합니다.
 
 ## <a name="snapshot-details-reports"></a>스냅샷 정보 보고서
 
@@ -123,7 +123,7 @@ ms.locfileid: "72910353"
 
 두 링크 모두 동일한 보고서를 엽니다. **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 크기 링크는 **포함 크기(바이트)** 열을 기준으로 보고서를 정렬합니다. 개체 링크는 **개수** 열을 기준으로 보고서를 정렬합니다. 보고서를 연 후 정렬 열이나 순서를 변경할 수 있습니다.
 
-### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> 관리되는 힙 트리(스냅샷 정보 보고서)
+### <a name="managed-heap-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> 관리되는 힙 트리(스냅샷 정보 보고서)
  **관리되는 힙** 트리에는 메모리에 보관된 개체의 형식이 나열됩니다. 유형 이름을 확장하여 가장 큰 유형의 인스턴스 10개를 크기별로 정렬해서 봅니다. 형식 또는 인스턴스를 선택하여 선택한 항목에 대한 **루트 경로** 및 **참조 개체** 트리를 표시합니다.
 
  ![관리되는 힙 트리](../profiling/media/memuse__snapshotdetails_managedheaptree.png "관리되는 힙 트리")
@@ -138,14 +138,14 @@ ms.locfileid: "72910353"
 |**포함 크기(바이트)**|포함된 개체 크기를 비롯한 유형의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
 
-### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> 루트 경로 트리(스냅샷 정보 보고서)
-**루트 경로 트리**는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여줍니다. .NET Framework 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.
+### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> 루트 경로 트리(스냅샷 정보 보고서)
+**루트 경로 트리**는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여줍니다. .NET 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.
 
 **루트 경로** 트리의 유형인 경우 해당 유형에 대한 참조를 보관하는 개체 수가 **참조 개수** 열에 나타납니다.
 
 ![유형에 대한 루트 트리 경로](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "유형에 대한 루트 트리 경로")
 
-### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> 참조된 형식 또는 참조된 개체 트리(스냅샷 정보 보고서)
+### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> 참조된 형식 또는 참조된 개체 트리(스냅샷 정보 보고서)
 **참조 형식** 또는 **참조 개체** 트리는 선택한 형식 또는 인스턴스가 참조하는 개체를 보여줍니다.
 
 ![인스턴스에 대한 참조된 개체 트리](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "인스턴스에 대한 참조된 개체 트리")
@@ -168,7 +168,7 @@ ms.locfileid: "72910353"
 
  ![스냅샷 창의 차이 보고서 링크](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "스냅샷 창의 차이 보고서 링크")
 
-### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> 관리되는 힙 트리(스냅샷 차이 보고서)
+### <a name="managed-heap-tree-snapshot-diff-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> 관리되는 힙 트리(스냅샷 차이 보고서)
 
  **관리되는 힙** 트리에는 메모리에 보관된 개체의 형식이 나열됩니다. 유형에서 가장 큰 인스턴스 10개를 크기별로 정렬해서 볼 수 있도록 유형 이름을 확장할 수 있습니다. 형식 또는 인스턴스를 선택하여 선택한 항목에 대한 **루트 경로** 및 **참조 개체** 트리를 표시합니다.
 
@@ -187,15 +187,15 @@ ms.locfileid: "72910353"
 |**포함 크기 차이(바이트)**|유형의 경우 개체의 개체 크기를 비롯한 기본 스냅샷과 이전 스냅샷 간 모든 인스턴스 유형의 크기 차이입니다. 인스턴스의 경우 이 필드는 비어 있습니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
 
-### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> 루트 경로 트리(스냅샷 차이 보고서)
+### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> 루트 경로 트리(스냅샷 차이 보고서)
 
-**루트 경로 트리**는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여줍니다. .NET Framework 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.
+**루트 경로 트리**는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여줍니다. .NET 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.
 
 **루트 경로** 트리의 유형인 경우 해당 유형에 대한 참조를 보관하는 개체 수가 **참조 개수** 열에 나타납니다. 이전 스냅샷과의 개수 차이는 **참조 차이** 열에 있습니다.
 
  ![차이 보고서의 루트 트리 경로](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "차이 보고서의 루트 트리 경로")
 
-### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> 참조 형식 또는 참조 개체 트리(스냅샷 차이 보고서)
+### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> 참조 형식 또는 참조 개체 트리(스냅샷 차이 보고서)
 
 **참조 형식** 또는 **참조 개체** 트리는 선택한 형식 또는 인스턴스가 참조하는 개체를 보여줍니다.
 
@@ -214,7 +214,7 @@ ms.locfileid: "72910353"
 |**포함 크기 차이(바이트)**|유형의 경우 개체의 개체 크기를 비롯한 기본 스냅샷과 이전 스냅샷 간 모든 인스턴스 유형의 크기 차이입니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [JavaScript 메모리](../profiling/javascript-memory.md)
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

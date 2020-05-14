@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62961696"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>4단계: 전체 Django 웹 프로젝트 템플릿 사용
@@ -87,7 +87,7 @@ Visual Studio에서 “빈 Django 웹 프로젝트” 템플릿을 기반으로 
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2단계: 프로젝트 템플릿으로 만든 보기 및 페이지 템플릿 이해
 
-프로젝트를 실행하면 앱에 세 가지 보기가 포함되어 있음을 알 수 있습니다. 홈, 정보 및 연락처. 이러한 보기에 대한 코드는 *app/views* 폴더에 있습니다. 각 보기 함수는 템플릿의 경로 및 간단한 사전 개체로 `django.shortcuts.render`를 호출합니다. 예를 들어 정보 페이지는 `about` 함수에 의해 처리됩니다.
+프로젝트를 실행하면 앱에 홈, 정보, 연락처의 세 가지 보기가 포함되어 있음을 알 수 있습니다. 이러한 보기에 대한 코드는 *app/views* 폴더에 있습니다. 각 보기 함수는 템플릿의 경로 및 간단한 사전 개체로 `django.shortcuts.render`를 호출합니다. 예를 들어 정보 페이지는 `about` 함수에 의해 처리됩니다.
 
 ```python
 def about(request):
@@ -161,7 +161,7 @@ def about(request):
 
 *index.html* 및 *contact.html*은 동일한 구조를 사용하고 "content" 블록에 보다 긴 콘텐츠를 제공합니다.
 
-또한 *templates/app* 폴더에는 `{% include %}`를 사용하여 *layout.html*을 가져오는 *loginpartial.html*과 함께 네 번째 페이지인 *login.html*이 있습니다. 이 템플릿 파일은 인증에 대한 5단계에서 설명합니다.
+또한 *templates/app* 폴더에는 *를 사용하여* layout.html*을 가져오는* loginpartial.html*과 함께 네 번째 페이지인* login.html`{% include %}`이 있습니다. 이 템플릿 파일은 인증에 대한 5단계에서 설명합니다.
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>질문: {% block %} 및 {% endblock %}은 Django 페이지 템플릿에서 들여쓰기할 수 있나요?
 
@@ -204,11 +204,11 @@ urlpatterns = [
 ]
 ```
 
-처음 세 개의 URL 패턴은 앱의 *views.py* 파일에 있는 `home`, `contact` 및 `about` 보기에 직접 매핑됩니다. 반면 `^login/$` 및 `^logout$` 패턴은 앱 정의 보기 대신 기본 제공 Django 보기를 사용합니다. `url` 메서드 호출에도 보기를 사용자 지정할 수 있는 추가 데이터가 포함됩니다. 5단계에서 이러한 호출을 살펴봅니다.
+처음 세 개의 URL 패턴은 앱의 `home`views.py`contact` 파일에 있는 `about`, *및* 보기에 직접 매핑됩니다. 반면 `^login/$` 및 `^logout$` 패턴은 앱 정의 보기 대신 기본 제공 Django 보기를 사용합니다. `url` 메서드 호출에도 보기를 사용자 지정할 수 있는 추가 데이터가 포함됩니다. 5단계에서 이러한 호출을 살펴봅니다.
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>질문: 제가 만든 프로젝트에서 "about" URL 패턴이 여기에 표시된 '^about$' 대신 '^about'을 사용하는 이유는 무엇인가요?
 
-대답: 정규식에서 후행 ‘$’를 사용하지 않는 것은 여러 버전의 프로젝트 템플릿에서 단순한 실수였습니다. URL 패턴은 “about”이라는 페이지에서 완벽하게 작동하지만 후행 ‘$’가 없을 경우 URL 패턴은 “about=django”, “about09876”, “aboutoflaughter” 등의 URL과도 일치합니다. 후행 ‘$’는 “about”과’만’ 일치하는 URL 패턴을 만들기 위해 여기에 표시된 것입니다.
+대답: 정규식에서 후행 ‘$’를 사용하지 않는 것은 여러 버전의 프로젝트 템플릿에서 단순한 실수였습니다. URL 패턴은 “about”이라는 페이지에서 완벽하게 작동하지만 후행 ‘$’가 없을 경우 URL 패턴은 “about=django”, “about09876”, “aboutoflaughter” 등의 URL과도 일치합니다. 후행 ‘$’는 “about”과’만’ 일치하는 URL 패턴을 만들기 위해 여기에 표시된 것입니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

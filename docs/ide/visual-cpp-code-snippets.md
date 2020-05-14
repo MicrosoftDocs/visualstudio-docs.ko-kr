@@ -2,19 +2,19 @@
 title: Visual C++ 코드 조각
 ms.date: 11/04/2016
 ms.topic: reference
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461632"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77277832"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 코드 조각
 
@@ -52,7 +52,7 @@ Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 �
 
 - 키보드를 사용하여 누름: **Ctrl**+**K**+**S**
 
-**#if**를 선택합니다. 다음과 같이 표시되어야 합니다.
+**#if**를 선택합니다. 다음과 유사한 결과가 표시됩니다.
 
 ```cpp
 #if 0
@@ -113,7 +113,7 @@ private:
 
 ## <a name="for-vs-forr-vs-rfor"></a>for, forr 및 rfor
 
-다양한 `for` 루프를 제공하는 세 가지 **for** 코드 조각이 있습니다.
+다양한 **루프를 제공하는 세 가지**for`for` 코드 조각이 있습니다.
 
 **rfor** 코드 조각은 [범위 기반](/cpp/cpp/range-based-for-statement-cpp) for 루프(링크)를 제공합니다. 이 구문은 인덱스 기반 `for` 루프보다 선호됩니다.
 
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-**for** 코드 조각은 조건이 개체의 길이(`size_t`)에 기반을 둔 `for` 루프를 제공합니다.
+**for** 코드 조각은 조건이 개체의 길이(`for`)에 기반을 둔 `size_t` 루프를 제공합니다.
 
 ```cpp
 for (size_t i = 0; i < length; i++)

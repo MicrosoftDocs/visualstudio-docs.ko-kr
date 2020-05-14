@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 086601cb8cde00d63e3be85c028201922ebe5b76
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584415"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880197"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 관리
 
@@ -20,7 +20,9 @@ Visual Studio를 사용하여 테스트를 원격으로 실행하거나 여러 �
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 Microsoft Test Manager를 사용하여 랩 환경에서 테스트를 실행하는 경우 Microsoft Test Manager용 **랩 센터**의 **테스트 컨트롤러 관리자**를 사용하여 테스트 컨트롤러와 해당 에이전트를 관리합니다. 이 항목은 Visual Studio를 사용하여 테스트를 실행할 경우에만 적용할 수 있습니다.
+::: moniker-end
 
 테스트 에이전트와 테스트 컨트롤러를 설치 및 구성하여 Visual Studio에서 테스트를 실행하는 방법은 [테스트 에이전트 및 컨트롤러 구성](../test/configure-test-agents-and-controllers-for-load-tests.md)을 참조하세요.
 
@@ -90,25 +92,36 @@ Microsoft Test Manager를 사용하여 랩 환경에서 테스트를 실행하�
 
 테스트 에이전트를 제거하려면 먼저 이를 오프라인 상태로 설정해야 합니다.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > 이 절차를 사용하여 컨트롤러에 랩 환경의 일부로 등록된 에이전트를 제거할 수 없습니다. 컨트롤러에서 이러한 에이전트를 제거하려면 Microsoft Test Manager를 사용하여 환경을 제거해야 합니다.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> 이 절차를 사용하여 컨트롤러에 랩 환경의 일부로 등록된 에이전트를 제거할 수 없습니다.
+::: moniker-end
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>테스트 컨트롤러에서 테스트 에이전트를 제거하려면
 
-1. 테스트 컨트롤러가 프로젝트에 등록되어 있지 않으면 다음 단계를 따릅니다.
+::: moniker range=">=vs-2019"
+Visual Studio 2019에서는 테스트 컨트롤러가 프로젝트에 등록되어 있는 경우 테스트 에이전트를 제거할 수 없습니다.
+::: moniker-end
+테스트 컨트롤러가 프로젝트에 등록되어 있지 않으면 다음 단계를 따릅니다.
 
-    1. Visual Studio에서 테스트 프로젝트의 테스트 설정 파일을 열고 **역할**을 선택한 다음, **컨트롤러** 필드의 드롭다운에서 **테스트 컨트롤러 관리**를 선택합니다.
+1. Visual Studio에서 테스트 프로젝트의 테스트 설정 파일을 열고 **역할**을 선택한 다음, **컨트롤러** 필드의 드롭다운에서 **테스트 컨트롤러 관리**를 선택합니다.
 
-         **테스트 컨트롤러 관리** 대화 상자가 나타납니다.
+   **테스트 컨트롤러 관리** 대화 상자가 나타납니다.
 
-    2. **컨트롤러** 드롭다운 목록에 테스트 컨트롤러가 설정된 컴퓨터의 이름을 입력합니다. 앞서 특정 테스트 컨트롤러를 관리한 적이 있으면 목록에서 해당 이름을 선택할 수 있습니다.
+2. **컨트롤러** 드롭다운 목록에 테스트 컨트롤러가 설정된 컴퓨터의 이름을 입력합니다. 앞서 특정 테스트 컨트롤러를 관리한 적이 있으면 목록에서 해당 이름을 선택할 수 있습니다.
 
-    3. **에이전트** 창에서 테스트 에이전트 이름을 선택합니다. 에이전트가 아직 온라인 상태이면 **오프라인**을 선택합니다. 제거하려면 **제거**를 선택합니다.
+3. **에이전트** 창에서 테스트 에이전트 이름을 선택합니다. 에이전트가 아직 온라인 상태이면 **오프라인**을 선택합니다. 제거하려면 **제거**를 선택합니다.
 
-        > [!NOTE]
-        > 테스트 에이전트를 제거하면 테스트 컨트롤러와의 연결만 끊어집니다. 테스트 에이전트를 완전히 제거하려면 테스트 에이전트 컴퓨터에서 **프로그램 및 기능** 제어판을 사용합니다.
+   > [!NOTE]
+   > 테스트 에이전트를 제거하면 테스트 컨트롤러와의 연결만 끊어집니다. 테스트 에이전트를 완전히 제거하려면 테스트 에이전트 컴퓨터에서 **프로그램 및 기능** 제어판을 사용합니다.
 
-2. 테스트 컨트롤러가 프로젝트에 등록된 경우 Microsoft Test Manager를 사용하여 에이전트를 제거합니다.
+::: moniker range="vs-2017"
+테스트 컨트롤러가 프로젝트에 등록된 경우 Microsoft Test Manager를 사용하여 에이전트를 제거합니다.
+::: moniker-end
 
 ## <a name="change-the-settings-for-a-test-agent"></a>테스트 에이전트의 설정 변경
 
@@ -125,8 +138,10 @@ Microsoft Test Manager를 사용하여 랩 환경에서 테스트를 실행하�
 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>테스트 에이전트의 설정을 변경하려면
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > 테스트 에이전트가 테스트 컨트롤러에 등록되어 있고 해당 테스트 컨트롤러가 프로젝트에 등록되어 있으면 Microsoft Test Manager에서 설정을 변경합니다.
+::: moniker-end
 
 1. 부하 테스트의 테스트 컨트롤러 및 등록된 에이전트를 구성하고 모니터링하려면 Visual Studio에서 **부하 테스트** 메뉴를 선택한 다음, **테스트 컨트롤러 관리**를 선택합니다. 기타 테스트의 경우에는 Visual Studio에서 테스트 프로젝트의 테스트 설정 파일을 열고 **역할**을 선택한 다음, **컨트롤러** 필드의 드롭다운에서 **테스트 컨트롤러 관리**를 선택합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::GetCount | Microsoft Docs
+title: IEnumDebugProcesses2::GetCount | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::GetCount
 ms.assetid: 5dc3e36c-46e5-4556-bf41-1870aa67d2a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 191bf52d3ed17a65c1a7d9507f5add58d76e796d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae0d6541bd2dc33b751087dc2ca8ee8dfeabba8c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326193"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715854"
 ---
 # <a name="ienumdebugprocesses2getcount"></a>IEnumDebugProcesses2::GetCount
 열거형의 요소 수를 반환합니다.
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>매개 변수
 `pcelt`\
-[out] 열거형의 요소 수를 반환합니다.
+【아웃】 열거형의 요소 수를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 항목만 지정 하는 일반적인 COM 열거형 인터페이스의 일부가 아닙니다.는 `Next`, `Clone`를 `Skip`, 및 `Reset` 메서드를 구현 해야 합니다.
+ 이 메서드는 `Next`"에 `Clone` `Skip`이 및 `Reset` 메서드만 구현해야 하는 지정하는 관습COM 열거 인터페이스의 일부가 아닙니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

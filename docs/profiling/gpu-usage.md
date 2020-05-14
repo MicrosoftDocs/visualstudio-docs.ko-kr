@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969880"
 ---
 # <a name="gpu-usage"></a>GPU 사용량
@@ -20,7 +20,7 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
 
 이 스크린샷은 **GPU 사용량 보고서** 창을 보여줍니다.
 
-![CPU 및 GPU 타임라인을 사용한 GPU 사용량 보고서](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![CPU 및 GPU 타임라인을 사용한 GPU 사용 보고서](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 ## <a name="requirements"></a>요구 사항
 
@@ -90,7 +90,7 @@ GPU 사용량 보고서의 윗부분에는 CPU 처리 작업, GPU 렌더링 작�
 
 다음은 **GPU 사용량 보고서** 창입니다.
 
-![CPU 및 GPU 타임라인을 사용한 GPU 사용량 보고서](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![CPU 및 GPU 타임라인을 사용한 GPU 사용 보고서](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 보고서 하단에서 이벤트를 선택하면 관련 타임라인에서 해당하는 이벤트에 표식이 표시됩니다. 일반적으로 CPU 스레드의 이벤트가 하나의 API 호출을 표시하는 반면 GPU 타임라인 중 하나의 다른 이벤트는 GPU가 작업을 완료하는 시기를 표시합니다. 마찬가지로, 타임라인에서 이벤트를 선택하면 보고서에서는 보고서 하단에서 해당하는 이벤트를 강조 표시합니다. 보고서의 상단에서 타임라인을 확대/축소하면 시간이 가장 많이 걸리는 이벤트만 표시됩니다. 기간이 더 짧은 이벤트를 보려면 Ctrl 키를 누른 채로 포인팅 디바이스의 휠을 움직이거나 상단 패널의 왼쪽 아래 모서리에 있는 크기 조정 컨트롤을 사용하여 타임라인을 확대합니다. 타임라인 패널의 콘텐츠를 끌어 기록된 이벤트를 이동할 수도 있습니다.
 
@@ -108,7 +108,7 @@ GPU 사용량 보고서의 윗부분에는 CPU 처리 작업, GPU 렌더링 작�
 
  GPU 사용량 보고서 하단에 있는 이벤트 목록은 각 이벤트의 세부 정보를 표시합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이벤트 이름**|그래픽 이벤트의 이름입니다. 이벤트는 일반적으로 CPU 스레드 타임라인의 이벤트 및 GPU 타임라인 이벤트에 해당합니다.<br /><br /> 이벤트 이름은 GPU 사용량에서 이벤트의 이름을 확인할 수 없는 경우 이벤트 이름은 'unattributed'가 될 수 있습니다. 자세한 내용은 이 표 아래의 참고 내용을 참조하세요.|
 |**CPU 시작(ns)**|Direct3D API 호출을 통해 이벤트가 CPU에서 시작된 시간입니다. 이 시간은 앱이 시작된 시간을 기준으로 나노초 단위로 측정됩니다.|
@@ -139,7 +139,7 @@ GPU 사용량 보고서의 윗부분에는 CPU 처리 작업, GPU 렌더링 작�
 
 GPU 사용량 도구에서 앱을 실행하면 GPU 사용량 도구 창 하단에서 추가 링크를 사용할 수 있습니다. 프로파일링 정보 수집을 시작하려면 **자세한 GPU 사용량 데이터를 추가로 수집하기 시작합니다.** 메시지에서 **시작** 링크를 선택합니다.
 
-## <a name="hwsupport"></a> 하드웨어 및 드라이버 지원
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> 하드웨어 및 드라이버 지원
 
 지원되는 GPU 하드웨어 및 드라이버는 다음과 같습니다.
 
@@ -151,7 +151,7 @@ GPU 사용량 도구에서 앱을 실행하면 GPU 사용량 도구 창 하단�
 
  NVIDIA® SLI™ 및 AMD Crossfire™ 등의 다중 GPU 구성은 현재 지원되지 않습니다. NVIDIA® Optimus™ 및 AMD Enduro™ 등의 하이브리드 그래픽 설정이 지원됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [DirectX 도구를 사용하여 어려운 게임 그래픽 문제 해결(비디오)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)
 - [Visual Studio의 GPU 사용량 도구(비디오)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)

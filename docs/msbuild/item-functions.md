@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573796"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586885"
 ---
 # <a name="item-functions"></a>항목 함수
-MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대한 정보를 얻기 위해 item 함수를 호출할 수 있습니다. 이러한 함수를 사용하면 Distinct() 항목을 간편하게 가져올 수 있으며 항목을 반복하는 방식보다 속도도 더 빠릅니다.
+
+작업 및 대상의 코드는 프로젝트의 항목에 대한 정보를 얻기 위해 항목 함수를 호출할 수 있습니다(MSBuild 4.0 이상). 이러한 함수를 사용하면 고유 항목을 간편하게 가져올 수 있으며 항목을 반복하는 방식보다 속도도 더 빠릅니다.
 
 ## <a name="string-item-functions"></a>문자열 항목 함수
+
 .NET Framework에서 문자열 메서드 및 속성을 사용하여 모든 항목 값을 작동할 수 있습니다. <xref:System.String> 메서드의 경우 메서드 이름을 지정합니다. <xref:System.String> 속성의 경우 "get_" 뒤에 속성 이름을 지정합니다.
 
 여러 문자열에 있는 항목의 경우 문자열 메서드 또는 속성이 각 문자열에서 실행됩니다.
@@ -49,6 +51,7 @@ MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대�
 ```
 
 ## <a name="intrinsic-item-functions"></a>내장 항목 함수
+
 아래 표는 항목에 사용할 수 있는 내장 함수를 나열합니다.
 
 |기능|예제|설명|
@@ -99,5 +102,10 @@ MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대�
   -->
 ```
 
+## <a name="msbuild-condition-functions"></a>MSBuild 조건 함수
+
+`Exists` 및 `HasTrailingSlash` 함수는 항목 함수가 아닙니다. `Condition` 특성과 함께 사용할 수 있습니다. [MSBuild 조건](msbuild-conditions.md)을 참조하세요.
+
 ## <a name="see-also"></a>참조
+
 - [항목](../msbuild/msbuild-items.md)

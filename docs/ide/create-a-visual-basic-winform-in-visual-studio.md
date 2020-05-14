@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 89effbfd31e0194a88067a340c9332d888ef23df
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681588"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224552"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio에서 Visual Basic을 사용하여 Windows Forms 앱 만들기
 
@@ -162,7 +162,7 @@ Visual Basic 프로젝트 템플릿을 선택하고 파일 이름을 지정한 �
 > [!div class="nextstepaction"]
 > [자습서: 사진 뷰어 만들기](tutorial-1-create-a-picture-viewer.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [추가 Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
 * [C# 자습서](/visualstudio/get-started/csharp/)

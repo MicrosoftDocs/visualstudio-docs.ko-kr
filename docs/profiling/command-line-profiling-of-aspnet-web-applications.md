@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: aa184667e5d569bc2662052a29b25bfea6e470a7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779573"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET 웹 애플리케이션의 명령줄 프로파일링

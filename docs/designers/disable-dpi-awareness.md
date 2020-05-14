@@ -7,10 +7,10 @@ ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
 ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589567"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio에서 DPI 인식 사용 안 함

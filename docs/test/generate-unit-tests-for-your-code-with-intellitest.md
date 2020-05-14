@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589593"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>방법: IntelliTest를 사용하여 단위 테스트 생성

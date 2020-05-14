@@ -1,5 +1,5 @@
 ---
-title: 명령 및 Interop 어셈블리를 사용 하는 메뉴 | Microsoft Docs
+title: 인터옵 어셈블리를 사용하는 명령 및 메뉴 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,55 +8,55 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14625d38a8eae594d1ba63aa1f628c2482be8f30
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342023"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709492"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>명령 및 Interop 어셈블리를 사용 하는 메뉴
-Interop 어셈블리를 사용 하 여 도구 모음 및 메뉴 명령을 구현 하는 VSPackage는 다음 작업을 수행 해야 합니다.
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>Interop 어셈블리를 사용하는 명령 및 메뉴
+INTERop 어셈블리를 사용하여 메뉴 및 도구 모음 명령을 구현하는 VSPackage는 다음을 수행해야 합니다.
 
-- 알릴는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지 원하는 명령 및 현재 사용 여부에 대 한 통합된 개발 환경 (IDE)입니다.
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합 개발 환경(IDE)에 지원하는 명령과 현재 사용 가능한 명령여부를 알립니다.
 
-- 명령 처리에 대 한 규칙 (계약)을 준수 합니다.
+- 명령 처리를 위한 규칙(계약)을 준수합니다.
 
-- 명시적으로 사용 하 여 명령 처리를 구현 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스입니다.
+- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스를 사용하여 명령 처리를 명시적으로 구현합니다.
 
-  다음 섹션에는 이러한 작업을 수행 하는 방법을 설명 합니다.
+  다음 섹션에서는 이러한 작업을 수행하는 방법을 설명합니다.
 
-## <a name="in-this-section"></a>단원 내용
-- [Interop 어셈블리를 사용 하 여 명령 상태를 확인 합니다.](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
+## <a name="in-this-section"></a>섹션 내용
+- [Interop 어셈블리를 사용하여 명령 상태 확인](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
- VSPackage IDE에 게 알리는 방법을 설명 합니다. 현재 사용 여부 및는 명령에 대 한 지원.
+ VSPackage가 지원하는 명령과 현재 사용 가능한 지 여부에 대해 IDE에 알리는 방법을 설명합니다.
 
 - [Interop 어셈블리의 명령 계약](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
 
- Interop 어셈블리를 사용 하 여 명령을 구현 하는 모든 Vspackage에서 사용 하는 기본 명령 계약의 정의 제공 합니다.
+ Interop 어셈블리를 사용하여 명령을 구현하는 모든 VSPackage에서 사용하는 기본 명령 계약에 대한 정의를 제공합니다.
 
 - [명령 구현](../../extensibility/internals/command-implementation.md)
 
- VSPackage의 명령을 구현 하는 방법의 개요를 제공 합니다.
+ VSPackage가 명령을 구현하는 방법에 대한 개요를 제공합니다.
 
-- [Interop 어셈블리 명령 처리기를 등록 합니다.](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
+- [Interop 어셈블리 명령 처리기 등록](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
 
- 알림 IDE는 VSPackage 명령 처리기를 제공 하는 데 필요한 레지스트리 항목을 설명 합니다.
+ VSPackage 명령 처리기를 제공 하는 IDE를 알리는 데 필요한 레지스트리 항목을 설명 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 - [명령 가용성](../../extensibility/internals/command-availability.md)
 
- VSPackage 명령을 사용할 수 있고 어떤 개체를 처리 하 고 확인 하려면 IDE에서 사용 되는 조건을 설명 합니다.
+ IDE에서 사용할 수 있는 VSPackage 명령과 해당 명령을 처리하는 개체를 결정하는 데 사용되는 조건을 설명합니다.
 
-- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackage사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- 사용 하는 UI를 만드는 방법에 대 한 세부 정보를 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령을 지원 합니다.
+ 명령 지원을 사용하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI를 만드는 방법에 대한 세부 정보를 제공합니다.
 
-- [Vspackage의 명령 라우팅](../../extensibility/internals/command-routing-in-vspackages.md)
+- [VS패키지의 명령 라우팅](../../extensibility/internals/command-routing-in-vspackages.md)
 
- 올바른 명령 요청을 사용 하 여 개체를 연결 하는 데 사용 하는 프로세스를 간략하게 설명 합니다.
+ 개체를 올바른 명령 요청과 연관하는 데 사용되는 프로세스의 개요입니다.

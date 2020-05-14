@@ -1,27 +1,27 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+title: IDebugBreakpointChecksumRequest2::GetChecksum | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a266a827e3dc73ea1c3cc5b3fb28cbb99acba1a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314342"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735177"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-사용할 체크섬 알고리즘의 고유 식별자를 지정 된 중단점 요청에 대 한 문서 체크섬을 검색 합니다.
+사용할 체크섬 알고리즘의 고유 식별자가 있는 중단점 요청에 대한 문서 검사점을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>매개 변수
 `guidAlgorithm`\
-[in] 체크섬 알고리즘의 고유 식별자입니다.
+【인】 체크섬 알고리즘의 고유 식별자입니다.
 
 `pChecksumData`\
-[out] 중단점 요청에 대 한 문서 체크섬입니다.
+【아웃】 중단점 요청에 대한 문서 검사입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는 UI에서 체크섬을 바인딩할 수는 문서의 일치 하는지 여부를 확인 하는 함수를 보여 줍니다.
+다음 예제에서는 바인딩될 문서의 검사본이 UI와 일치하는지 여부를 확인하는 함수를 보여 주며, 이 함수를 보여 주며, 이 함수는 바인딩될 문서의 체크섬과 일치하는지 여부를 확인합니다.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)
@@ -104,5 +104,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

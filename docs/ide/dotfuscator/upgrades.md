@@ -25,10 +25,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596803"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community 업그레이드
@@ -65,7 +65,7 @@ Dotfuscator Professional은 산업 표준 [.NET Obfuscator][net-obfuscator]이�
 Dotfuscator Professional의 고급 애플리케이션 보호 기능에 대한 자세한 내용을 보려면 PreEmptive Solutions의 [Dotfuscator 개요 페이지][product-about]를 방문해서 [Dotfuscator Community와 비교][product-compare]해 보세요.
 [preemptive.com][eval]에서 전체 기능이 지원되는 평가판을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [전체 Dotfuscator Community 사용자 가이드의 이 문서][full]
 

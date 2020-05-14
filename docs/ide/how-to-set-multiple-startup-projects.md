@@ -1,5 +1,5 @@
 ---
-title: '방법: 여러 시작 프로젝트 설정'
+title: '방법: 여러 개의 시작 프로젝트 설정'
 ms.date: 06/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a1eec02adf0a643d7ac7e0da8a75da5328c601b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115145"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>방법: 여러 시작 프로젝트 설정
+# <a name="how-to-set-multiple-startup-projects"></a>방법: 여러 개의 시작 프로젝트 설정
 
 Visual Studio에서는 디버거를 시작할 때 둘 이상의 프로젝트를 실행하는 방법을 지정할 수 있습니다.
 
@@ -32,7 +32,7 @@ Visual Studio에서는 디버거를 시작할 때 둘 이상의 프로젝트를 
 
 4. **여러 시작 프로젝트** 옵션을 선택하고 적절한 작업을 설정합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)
 - [솔루션 및 프로젝트 만들기](../ide/creating-solutions-and-projects.md)

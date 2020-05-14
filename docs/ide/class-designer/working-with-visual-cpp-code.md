@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596751"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>클래스 디자이너에서 C++ 코드 사용
@@ -39,11 +39,11 @@ ms.locfileid: "75596751"
 
 - 구조체
 
-- Enum
+- 열거형
 
 - 매크로(후처리된 매크로 뷰가 표시됨)
 
-- Typedef
+- 형식 정의
 
 > [!NOTE]
 > 이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../../modeling/what-s-new-for-design-in-visual-studio.md)를 참조하세요.
@@ -90,7 +90,7 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 - C++ 프로젝트가 로드되면 **클래스 디자이너**는 읽기 전용 방식으로 작동합니다. 즉, 클래스 다이어그램을 변경할 수 있지만 클래스 다이어그램에서 변경한 내용을 소스 코드에 저장할 수는 없습니다.
 
-- **클래스 디자이너**에서는 네이티브 C++ 의미 체계만 지원됩니다. 관리 코드로 컴파일된 C++ 프로젝트의 경우 **클래스 디자이너**에는 네이티브 형식인 코드 요소만 시각화됩니다. 따라서 프로젝트에 클래스 다이어그램을 추가할 수는 있지만 `IsManaged` 속성이 `true`로 설정된 요소, 즉 값 형식과 참조 형식은 **클래스 디자이너**에 시각화되지 않습니다.
+- **클래스 디자이너**에서는 네이티브 C++ 의미 체계만 지원됩니다. 관리 코드로 컴파일된 C++ 프로젝트의 경우 **클래스 디자이너**에는 네이티브 형식인 코드 요소만 시각화됩니다. 따라서 프로젝트에 클래스 다이어그램을 추가할 수는 있지만 **속성이**로 설정된 요소, 즉 값 형식과 참조 형식은 `IsManaged`클래스 디자이너`true`에 시각화되지 않습니다.
 
 - C++ 프로젝트의 경우 **클래스 디자이너**에서는 형식의 정의만 읽습니다. 예를 들어 헤더 파일(.h)에 형식을 정의하고 해당 멤버는 구현 파일(.cpp)에 정의할 경우, 구현 파일(.cpp)에서 "클래스 다이어그램 보기"를 호출하면 **클래스 디자이너**에 아무 것도 표시되지 않습니다. 또 다른 예로, `#include` 명령문을 사용하여 다른 파일을 포함하지만 실제 클래스 정의는 포함하지 않는 .cpp 파일에서 "클래스 다이어그램 보기"를 호출할 경우에도 **클래스 디자이너**에 아무 것도 표시되지 않습니다.
 
@@ -108,7 +108,7 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 - **클래스 디자이너**에서는 void 형식이거나 void 형식에서 파생된 형식을 표시할 수 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
 - [클래스 디자이너 오류에 대한 추가 정보](additional-information-about-errors.md)

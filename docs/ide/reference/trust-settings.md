@@ -14,10 +14,10 @@ helpviewer_keywords:
 - trusted files
 - trusted folders
 ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62789644"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>파일 및 폴더에 대한 신뢰 설정 구성

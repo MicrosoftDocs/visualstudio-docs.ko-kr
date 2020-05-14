@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778078"
 ---
 # <a name="understand-instrumentation-data-values"></a>계측 데이터 값 이해
@@ -96,7 +96,7 @@ Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 �
 
 100 * 함수 애플리케이션 전용 시간/세션 애플리케이션 포괄 시간
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)
 [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)

@@ -1,17 +1,18 @@
 ---
 title: WhiteSource Bolt 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 01/06/2020
+ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: d00d210e6bbe859aac5595fcb0d586bccbeea5b3
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114327"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649746"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
@@ -60,14 +61,14 @@ ms.locfileid: "76114327"
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 개별 크레딧](vs-azure.md)
-
-## <a name="see-also"></a>참조
-- [Visual Studio 설명서](/visualstudio/)
-- [Azure DevOps 설명서](/azure/devops/)
-- [Azure 설명서](/azure/)
-- [Microsoft 365 설명서](/microsoft-365/)

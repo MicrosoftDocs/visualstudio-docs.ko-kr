@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570468"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
@@ -34,23 +34,23 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *SolutionName*
 
-  필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
+  필수 사항입니다. 솔루션 파일의 전체 경로 및 이름입니다.
 
 - *Config*
 
-  선택 사항입니다. *SolutionName*에서 명명된 솔루션의 매개자 파일을 정리하는 구성입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
+  (선택 사항) `Debug`SolutionName`Release`에서 명명된 솔루션의 매개자 파일을 정리하는 구성입니다(예: *또는*). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
 - `/Project` *ProjName*
 
-  선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. 프로젝트의 표시 이름 또는 *SolutionName* 폴더에서 프로젝트 파일까지 상대 경로를 입력할 수 있습니다. 프로젝트 파일의 전체 경로와 이름을 입력할 수도 있습니다.
+  (선택 사항) 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. 프로젝트의 표시 이름 또는 *SolutionName* 폴더에서 프로젝트 파일까지 상대 경로를 입력할 수 있습니다. 프로젝트 파일의 전체 경로와 이름을 입력할 수도 있습니다.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  선택 사항입니다. 명명된 `/Project`를 정리할 때 사용할 프로젝트의 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *Config* 인수를 재정의합니다.
+  (선택 사항) 명명된 `Debug`를 정리할 때 사용할 프로젝트의 빌드 구성 이름입니다(예: `Release` 또는 `/Project`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *Config* 인수를 재정의합니다.
 
 - `/Out` *OutputFilename*
 
-  선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
+  (선택 사항) 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -66,7 +66,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 첫 번째 예제는 솔루션 파일에 지정된 기본 구성을 사용하여 `MySolution` 솔루션을 정리합니다.
 
-두 번째 예제에서는 `MySolution` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 정리합니다.
+두 번째 예제에서는 `CSharpWinApp` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `MySolution` 프로젝트를 정리합니다.
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
@@ -74,7 +74,7 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)

@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75944231"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
@@ -38,7 +38,7 @@ Unity 2017.1의 릴리스부터 Unity는 NET 4.6 C# 6 호환 버전으로 업그
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>.NET 4.x 및 NET Standard 2.0 프로필 중에서 선택
 
-.NET 4.x 해당 스크립팅 런타임으로 전환한 후 PlayerSettings(**편집 > 프로젝트 설정 > 플레이어**)의 드롭다운 메뉴를 사용하여 **Api 호환성 수준**을 지정할 수 있습니다. 두 가지 옵션이 있습니다.
+.NET 4.x 해당 스크립팅 런타임으로 전환한 후 PlayerSettings(**편집 > 프로젝트 설정 > 플레이어**)의 드롭다운 메뉴를 사용하여 **Api 호환성 수준**을 지정할 수 있습니다. 옵션에는
 
 * **.NET Standard 2.0**. 이 프로필은 .NET Foundation에서 게시한 [.NET Standard 2.0 프로필](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)과 일치합니다. Unity는 새 프로젝트에 .NET Standard 2.0을 권장합니다. 크기가 제한된 플랫폼에 적합한 .NET 4.x보다 작습니다. 또한 Unity는 Unity가 지원하는 모든 플랫폼에서 이 프로필을 지원하기 위해 커밋되었습니다.
 
@@ -183,7 +183,7 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 [비동기 프로그래밍](/dotnet/csharp/async)을 사용하면 애플리케이션이 응답하지 않는 시간이 오래 걸리는 작업을 수행할 수 있습니다. 또한 이 기능을 사용하면 시간이 많이 소요되는 작업이 완료될 때까지 코드를 기다렸다가 이러한 작업의 결과에 따라 코드를 계속 사용할 수 있습니다. 예를 들어 파일이 로드되거나 네트워크 작업이 완료될 때까지 기다릴 수 있습니다.
 
-Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](/dotnet/api/system.threading.tasks.task)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)입니다. 요약하면 `async` 함수에서 나머지 애플리케이션의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
+Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](/dotnet/api/system.threading.tasks.task)입니다. 요약하면 `async` 함수에서 나머지 애플리케이션의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
 
 ```csharp
 // Unity coroutine
@@ -341,7 +341,7 @@ iOS와 같은 플랫폼에 게임을 내보낼 때 Unity는 IL2CPP 엔진을 사
 
 샘플에는 여러 .NET 4.x 기능의 예가 포함되어 있습니다. [GitHub](https://github.com/Microsoft/unity-scripting-upgrade)에서 프로젝트를 다운로드하거나 소스 코드를 볼 수 있습니다.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 * [Unity 블로그 - Unity 2018.2에서 스크립팅 런타임 개선](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [C#의 기록](/dotnet/csharp/whats-new/csharp-version-history)

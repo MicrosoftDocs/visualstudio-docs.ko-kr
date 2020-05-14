@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
 ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "66501004"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 문제를 보고하는 방법
@@ -66,6 +66,6 @@ Mac용 Visual Studio와 관련된 문제를 보고하려면 메뉴 모음에서 
 
 보고할 문제가 없지만 기능을 제안하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [기능 제안](https://developercommunity.visualstudio.com/content/idea/post.html?space=41) 페이지를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 문제 보고(Windows에서)](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

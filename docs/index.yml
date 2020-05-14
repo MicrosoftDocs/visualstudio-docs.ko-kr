@@ -14,12 +14,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 157d3bc451829b0c91772a66222b563cd07a5eaf
+  ms.sourcegitcommit: 20049ffecc08fdfae45406c26190de900357eef6
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74118967"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80620643"
 productDirectory:
   items:
   - title: Visual Studio
@@ -54,6 +54,15 @@ productDirectory:
     - url: https://code.visualstudio.com/updates
       text: 릴리스 정보
     - url: https://code.visualstudio.com
+      text: 제품 페이지
+  - title: Visual Studio Online
+    imageSrc: ./media/vs-ide-2019.svg
+    links:
+    - url: https://docs.microsoft.com/visualstudio/online/
+      text: 설명서
+    - url: https://code.visualstudio.com/docs/remote/vsonline
+      text: Visual Studio Code에서 사용
+    - url: https://visualstudio.microsoft.com/services/visual-studio-online/
       text: 제품 페이지
   - title: Visual Studio 앱 센터
     imageSrc: ./media/vs-mobile-center.svg

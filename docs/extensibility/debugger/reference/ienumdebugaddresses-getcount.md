@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::GetCount | Microsoft Docs
+title: IEnumDebug 주소::겟카운트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::GetCount method
 ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a718679441f93131bc545aa3062f2b9a68893f9e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4610613b6fef5e80ae0fd36c3548b4dfdcbc8591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347309"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717683"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 이 메서드는 열거형의 요소 수를 반환합니다.
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>매개 변수
 `pcelt`\
-[out] 열거형의 요소 수를 반환합니다.
+【아웃】 열거형의 요소 수를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 다음, 복제, Skip 및 재설정 구현 해야를 지정 하는 일반적인 COM 열거형 인터페이스의 일부가 아닙니다.
+ 이 메서드는 다음, 복제, 건너뛰기 및 재설정만 구현해야 한다고 지정하는 관습COM 열거 인터페이스의 일부가 아닙니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -1,5 +1,5 @@
 ---
-title: 디버거 외부에서 앱을 실행할 때 액세스 위반 디버그
+title: 디버거 외부에서 앱을 실행하는 경우 액세스 위반 디버그
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f5009bae2d7679081e29ae8f46d72455beac7e11
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734577"

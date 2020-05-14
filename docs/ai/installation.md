@@ -2,19 +2,20 @@
 title: AI 도구 설치
 description: Visual Studio용 AI 도구를 설치하는 방법을 설명합니다.
 keywords: AI, Visual Studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915806"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638581"
 ---
 # <a name="installation"></a>설치
 

@@ -1,0 +1,77 @@
+### YamlMime:Landing
+title: Visual Studio 데이터 도구 설명서
+summary: Visual Studio 및 .NET 도구를 사용하여 데이터 애플리케이션을 개발하세요.
+metadata:
+  title: 데이터 솔루션 개발
+  description: .NET 도구, SQL Server Data Tools, Azure Data Lake, Azure HDInsight 및 Azure Streaming Analytics를 포함하여 Visual Studio에서 데이터 솔루션을 개발하는 데 필요한 다양한 도구에 대해 알아봅니다.
+  ms.date: 01/01/2018
+  author: ghogen
+  ms.author: ghogen
+  ms.topic: landing-page
+  ms.workload:
+  - data-storage
+  ms.openlocfilehash: c9b80dcd2d1d8bb81c0dd8e06aa0f4749ff93eb5
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "78263095"
+landingContent:
+- title: .NET
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: .NET용 Visual Studio 데이터 도구
+      url: visual-studio-data-tools-for-dotnet.md
+    - text: 데이터 세트 도구
+      url: dataset-tools-in-visual-studio.md
+    - text: Entity Framework 도구
+      url: entity-data-model-tools-in-visual-studio.md
+    - text: LINQ to SQL 도구
+      url: linq-to-sql-tools-in-visual-studio2.md
+    - text: WCF 및 WCF Data Services(OData) 도구
+      url: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
+  - linkListType: tutorial
+    links:
+    - text: ADO.NET 데이터 애플리케이션
+      url: create-a-simple-data-application-by-using-adonet.md
+    - text: WPF 및 Entity Framework 6
+      url: create-a-simple-data-application-with-wpf-and-entity-framework-6.md
+    - text: N 계층 데이터 애플리케이션
+      url: walkthrough-creating-an-n-tier-data-application.md
+    - text: WPF 및 Entity Framework를 사용한 WCF 데이터 서비스
+      url: walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md
+  - linkListType: concept
+    links:
+    - text: ADO.NET
+      url: /dotnet/framework/data/adonet/index
+    - text: Entity Framework 6
+      url: /ef/ef6/
+    - text: Entity Framework Core
+      url: /ef/core/
+- title: 데이터 도구
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio에서 데이터 작업
+      url: /visualstudio/data-tools/accessing-data-in-visual-studio
+    - text: SQL Server Data Tools로 작업
+      url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15
+    - text: C++에서 데이터 액세스
+      url: /cpp/data/data-access-in-cpp?view=vs-2019
+- title: Azure
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure SQL 데이터베이스
+      url: /azure/sql-database/sql-database-connect-query-dotnet-visual-studio
+    - text: Cosmos DB - .NET 콘솔 앱
+      url: /azure/cosmos-db/sql-api-get-started
+    - text: Cosmos DB - .NET 웹앱
+      url: /azure/cosmos-db/sql-api-dotnet-application
+    - text: Azure 데이터 레이크 분석
+      url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+    - text: HDInsight
+      url: /azure/hdinsight/hdinsight-hadoop-visual-studio-tools-get-started
+    - text: Azure Stream Analytics
+      url: /azure/stream-analytics/stream-analytics-tools-for-visual-studio

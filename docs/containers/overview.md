@@ -7,10 +7,10 @@ ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75916559"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio의 컨테이너 도구

@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5178b2cebdfa4246256aef6334e026ef091fa553
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62831415"
 ---
-# <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 생성자
+# <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series 생성자
 `marker_series` 클래스의 새 인스턴스를 초기화합니다.
 
 ## <a name="syntax"></a>구문
@@ -48,5 +48,5 @@ marker_series(
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [marker_series 클래스](../profiling/marker-series-class.md)

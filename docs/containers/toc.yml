@@ -40,7 +40,7 @@
           href: container-build.md
     - name: 문제 해결
       href: troubleshooting-docker-errors.md
-    - name: 참고
+    - name: 참조
       items:
         - name: 컨테이너 프로젝트에 대한 MSBuild 속성
           href: container-msbuild-properties.md

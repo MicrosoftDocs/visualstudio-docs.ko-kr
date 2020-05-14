@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778611"
 ---
 # <a name="launch"></a>Launch
@@ -65,7 +65,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
 - **GC** - .NET 메모리 데이터를 수집합니다. 기본적으로(**allocation**) 모든 메모리 할당 이벤트에서 데이터가 수집됩니다. **lifetime** 매개변수가 지정되면 데이터는 각 가비지 컬렉션 이벤트에서도 수집됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 애플리케이션을 시작하는 **Launch**의 사용을 보여 줍니다.
 
 ```cmd
@@ -73,7 +73,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

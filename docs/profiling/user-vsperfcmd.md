@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779963"
 ---
 # <a name="user-vsperfcmd"></a>사용자(VSPerfCmd)
@@ -37,14 +37,14 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 
  **시작:** `Method` 지정된 프로파일링 방법으로 프로파일러를 초기화합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 **User** 옵션을 사용하는 방법을 보여 줍니다.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)

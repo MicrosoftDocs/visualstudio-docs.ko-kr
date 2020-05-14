@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588566"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>WIP 제외 앱으로 Visual Studio 구성
@@ -34,6 +34,6 @@ Visual Studio에는 여러 이진 파일이 포함되어 있으므로 [WIP 제�
 
 Visual Studio가 네트워크에서 엔터프라이즈 데이터에 액세스할 수 있는 위치를 지정하려면 다음 [단계에 따라 보호된 앱이 엔터프라이즈 데이터를 찾고 전송할 수 있는 위치를 정의합니다](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Windows가 IP 주소를 통해 클라우드 리소스에 대한 연결을 차단하지 못하게 하려면 /\*AppCompat\*/ 문자열을 설정에 추가해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [WIP를 사용한 앱 동작](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

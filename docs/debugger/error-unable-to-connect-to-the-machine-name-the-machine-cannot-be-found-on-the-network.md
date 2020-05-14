@@ -1,5 +1,5 @@
 ---
-title: '오류: 컴퓨터 &lt;name &gt;에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다. | Microsoft 문서'
+title: '오류: 컴퓨터 &lt;이름&gt;에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다. | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736831"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>오류: 컴퓨터 &lt;name &gt;에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>오류: 컴퓨터 &lt;이름&gt;에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다.
 이 오류는 다음과 같은 경우에 발생합니다.
 
 - 원격 컴퓨터에 대한 연결이 끊어진 경우

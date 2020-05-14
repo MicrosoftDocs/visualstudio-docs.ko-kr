@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd8717d7e87453c047ce5d438a54c594f63cd5de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986365"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586888"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint 솔루션 개발
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 여러 가지 SharePoint 프로젝트 형식 템플릿을 사용하여 SharePoint 사이트와 사이트 요소를 만들 수 있습니다. 사용 가능한 프로젝트 형식 목록은 [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)을 참조 하세요. SharePoint 프로젝트의 요소와 속성에 대한 설명은 다음과 같습니다.
 
- SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
+ SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 프로젝트의 요소
  SharePoint 프로젝트 아래에 있는 노드를 *SharePoint 항목*이라고 합니다. SharePoint 항목에는 *SharePoint 항목 파일*이라는 하위 파일이 하나 이상 포함될 수 있습니다(예: [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 구성 파일, .aspx 양식 등).
@@ -36,7 +36,7 @@ ms.locfileid: "72986365"
  모든 SharePoint 프로젝트에는 프로젝트에서 이름을 바꾸거나, 삭제하거나, 잘라내거나, 복사하거나, 끌어서 놓을 수 없는 노드 두 개가 포함됩니다. 이들 노드는 다음과 같습니다.
 
 - 기능
-- Package
+- 패키지
 
   프로젝트에 대한 기능이나 패키지가 정의되지 않더라도 두 노드는 모두 항상 모든 SharePoint 프로젝트에 표시됩니다.
 
@@ -71,7 +71,7 @@ ms.locfileid: "72986365"
 |패키지에 어셈블리 포함|빌드 시간에 프로젝트 어셈블리를 패키지할지를 지정합니다.|
 |배포 후 명령줄|SharePoint 솔루션을 배포한 후에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조하세요.|
 |배포 전 명령줄|SharePoint 솔루션을 배포하기 전에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조하세요.|
-|프로젝트 파일|빌드, 구성 및 기타 프로젝트 정보가 들어 있는 파일의 이름입니다.|
+|프로젝트 파일|프로젝트에 대한 빌드, 구성 및 기타 정보가 들어 있는 파일의 이름입니다.|
 |프로젝트 폴더|시스템에서 프로젝트 파일의 위치입니다. 읽기 전용입니다.|
 |Sandboxed Solution|프로젝트를 *사용자가 만든 솔루션*이라고도 하는 *샌드박스 솔루션*으로 배포할지를 지정합니다. 샌드박스 솔루션을 신뢰할 수 있어야 할 필요는 없습니다. **true** 값은 프로젝트가 샌드박스 솔루션으로 배포됨을 의미하고 **false** 값은 프로젝트가 팜 솔루션으로 배포됨을 의미합니다. 자세한 내용은 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) 및 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)를 참조하세요.|
 |사이트 URL|이 프로젝트에 대한 대상 사이트의 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 을(를) 지정합니다.|
@@ -94,14 +94,14 @@ ms.locfileid: "72986365"
 
 |속성 이름|설명|
 |-------------------|-----------------|
-|빌드 작업|파일이 빌드 및 배포 프로세스와 연결되는 방법을 지정합니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|
-|출력 디렉터리에 복사|소스 파일을 출력 디렉터리로 복사할 것인지를 지정합니다. 다음 값 중 하나입니다.<br /><br /> *복사 안 함* -   <br />-   *항상 복사*<br />*새 -   복사*<br /><br /> 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|
+|빌드 동작|파일이 빌드 및 배포 프로세스와 연결되는 방법을 지정합니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|
+|출력 디렉터리로 복사|소스 파일을 출력 디렉터리로 복사할 것인지를 지정합니다. 다음 값 중 하나일 수 있습니다.<br /><br /> -   *복사 안 함*<br />-   *항상 복사*<br />-   *새 버전이 면 복사*<br /><br /> 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|
 |사용자 지정 도구|디자인 타임에 파일을 변환하고 변환 출력을 다른 파일에 저장하는 도구의 이름을 지정합니다. 예를 들어 데이터 세트(.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 파일에는 기본 사용자 지정 도구가 있습니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|
 |사용자 지정 도구 네임스페이스|사용자 지정 도구의 출력이 복사될 네임스페이스입니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|
 |배포 위치|SharePoint 서버에서 파일의 정규화된 경로입니다. 이 경로는 배포 루트 및 배포 경로 하위 속성으로 구성됩니다.|
-|배포 경로|SharePoint 서버 파일에서 파일의 상대 경로 (예: Workflow1.vb\\)입니다. 파일에 대한 정규화된 경로는 *Deployment Path* 값을 *Deployment Root* 값의 끝에 연결해서 만듭니다.<br /><br /> *배포 유형* 속성에 대해 *rootfile* 값을 선택 하면 *배포 루트* 속성이 \<SharePointRoot >\\으로 변경 되어 \<SharePointRoot > \workflow1의 정규화 된 경로가 생성 됩니다 @no_ _t_6_ . 자세한 내용은 [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)를 참조 하세요.|
-|Deployment Root|문자열. SharePoint 서버에서 파일이 배포되는 루트 폴더입니다. 예를 들어 \<SharePointRoot > \\Ate\omom\FeatureName\\\<\\합니다.<br /><br /> *Deployment Root* 속성 값은 *Deployment Type* 설정에 따라 결정됩니다.|
-|배포 형식|*Deployment Root* 값을 결정하는 파일의 배포 유형입니다. 다음 값 중 하나입니다.<br /><br /> NoDeployment: *값을\<*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\features\\\<\\*<br /><br /> ElementFile: *\<SharePointRoot > \Ate\omFeatureName\\\<\\*<br /><br /> 템플릿 파일: *\<SharePointRoot > \template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>을 참조하십시오.|
+|배포 경로|SharePoint 서버 파일에서 파일의 상대 경로 (예: Workflow1.vb\\)입니다. 파일에 대한 정규화된 경로는 *Deployment Path* 값을 *Deployment Root* 값의 끝에 연결해서 만듭니다.<br /><br /> *배포 유형* 속성에 *대해 rootfile* 값을 선택 하면 *배포 루트* 속성이 \<SharePointRoot>\\로 변경 되어 SharePointRoot> \workflow1 \<\\의 정규화 된 경로가 생성 됩니다. 자세한 내용은 [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)를 참조 하세요.|
+|Deployment Root|문자열입니다. SharePoint 서버에서 파일이 배포되는 루트 폴더입니다. 예를 \<들어 SharePointRoot>\\\<\template\features>\\입니다.<br /><br /> *Deployment Root* 속성 값은 *Deployment Type* 설정에 따라 결정됩니다.|
+|배포 유형|*Deployment Root* 값을 결정하는 파일의 배포 유형입니다. 다음 값 중 하나일 수 있습니다.<br /><br /> Nodeployment: * \<값 없음>*<br /><br /> Elementmanifest: * \<SharePointRoot>\\\<\omFeatureName>*\\<br /><br /> Elementfile: * \<SharePointRoot>\\\<\template\features>\\*<br /><br /> 템플릿 파일: * \<SharePointRoot> \template\\*<br /><br /> Rootfile: * \<SharePointRoot>\\*<br /><br /> Globalresource: * \<SharePointRoot> \resources\\*<br /><br /> Classresource: * \<ClassResourcePath>\\*<br /><br /> 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>를 참조하세요.|
 |파일 이름|항목 파일에 대한 파일 또는 폴더의 이름입니다.|
 |전체 경로|항목에 대한 파일의 위치입니다. 읽기 전용입니다.|
 
@@ -126,10 +126,10 @@ ms.locfileid: "72986365"
 |[방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)|SharePoint 리소스에 더 쉽게 액세스할 수 있도록 매핑된 폴더를 프로젝트에 추가하는 방법을 설명합니다.|
 |[샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)|샌드박스 솔루션과 관련된 문제에 대해 설명합니다.|
 |[SharePoint 솔루션 보안](../sharepoint/security-for-sharepoint-solutions.md)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 솔루션을 개발하기 위한 보안 고려 사항을 설명합니다.|
-|[URL 선택기 대화 상자 &#40;Visual Studio에서 SharePoint 개발&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|프로젝트 또는 로컬 SharePoint 서버의 리소스에 경로 참조를 추가하는 데 사용할 수 있는 대화 상자에 대해 설명합니다.|
+|[URL 선택기 대화 상자는 Visual Studio에서 SharePoint 개발을 &#40;&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|프로젝트 또는 로컬 SharePoint 서버의 리소스에 경로 참조를 추가하는 데 사용할 수 있는 대화 상자에 대해 설명합니다.|
 
-## <a name="see-also"></a>참조
-- [Visual Studio &#40;에서 SharePoint 개발 시작&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+## <a name="see-also"></a>참고 항목
+- [Visual Studio에서 SharePoint 개발 &#40;시작&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

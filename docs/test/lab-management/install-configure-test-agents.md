@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 271e9253daf4ab23a5fb06a189ac3042bc925b2a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594268"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880275"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 
@@ -40,6 +40,7 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 
 이러한 설치 관리자는 가상 머신에 쉽게 설치할 수 있도록 ISO 파일로 제공됩니다.
 
+::: moniker range="vs-2017"
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>TFS, Microsoft Test Manager, 테스트 컨트롤러 및 테스트 에이전트의 호환되는 버전
 
 다음 표에 따라 서로 다른 버전의 TFS, Microsoft Test Manager, 테스트 컨트롤러 및 테스트 에이전트를 혼합할 수 있습니다.
@@ -53,6 +54,23 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 | 2015: 새로 설치 | 2013 | 2013 | 2013 |
 | 2015: 2013 이상 설치에서 업그레이드 | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>TFS, 테스트 컨트롤러 및 테스트 에이전트의 호환되는 버전
+
+다음 표에 따라 서로 다른 버전의 TFS, 테스트 컨트롤러 및 테스트 에이전트를 혼합할 수 있습니다.
+
+| TFS | Controller | 에이전트 |
+| --- | -------------------------------------- | ---------- | ----- |
+| 2017: 2015 이상 설치에서 업그레이드 | 2017 | 2017 |
+| 2017: 2015 이상 설치에서 업그레이드 | 2013 업데이트 5 | 2013 업데이트 5 |
+| 2017: 2015 이상 설치에서 업그레이드 | 2013 업데이트 5 | 2013 업데이트 5 |
+| 2015: 2013에서 업그레이드 | 2013 |2013 |
+| 2015: 새로 설치 | 2013 | 2013 |
+| 2015: 2013 이상 설치에서 업그레이드 | 2013 | 2013 |
+| 2013 | 2013 | 2013 |
+::: moniker-end
 
 > [!NOTE]
 > TFS 2018 및 Azure DevOps Services의 랩 관리 시나리오는 더 이상 사용되지 않습니다. 자세한 내용은 [TFS 2018 릴리스 정보](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager)를 참조하세요.
@@ -67,5 +85,5 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 | - | - |
 | Visual Studio의 빌드-배포-테스트 워크플로 | 사용자는 TFS의 빌드, 배포 및 테스트 시나리오에 [빌드 파이프라인](/azure/devops/pipelines/index?view=vsts)(XAML 빌드가 아님)을 사용할 수 있습니다. |
 | 온-프레미스 원격 컴퓨터를 사용한 부하 테스트(성능 테스트) | Test Controller 및 Test Agents 2013 업데이트 5를 사용하여 온-프레미스로 부하 테스트를 실행할 수 있습니다. |
-| 랩 환경을 사용하여 Microsoft Test Manager에서 자동화된 테스트 원격 실행 | 지금은 이 시나리오에 대한 대체 방법이 없습니다. 빌드 및 릴리스 정의(XAML 빌드가 아님)에서 기능 테스트 실행 작업을 사용하여 테스트를 원격으로 실행하는 것이 좋습니다. |
+| 랩 환경을 사용하여 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 자동화된 테스트 원격 실행 | 지금은 이 시나리오에 대한 대체 방법이 없습니다. 빌드 및 릴리스 정의(XAML 빌드가 아님)에서 기능 테스트 실행 작업을 사용하여 테스트를 원격으로 실행하는 것이 좋습니다. |
 | Visual Studio에서 원격 테스트를 실행하는 개발자 | 더 이상 지원되지 않습니다. |

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 25f61b68249dfab7faf04c5e0460800947275db4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779469"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 .NET Framework 서비스에서 메모리 데이터 수집
@@ -47,5 +47,5 @@ ms.locfileid: "74779469"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>.NET 메모리 데이터 뷰 및 보고서 분석
 - [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>참조
+## <a name="reference"></a>참고
 - [명령줄 프로파일링 도구 참조](../profiling/command-line-profiling-tools-reference.md)

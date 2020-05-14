@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589892"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Forms 디자이너 개요
@@ -35,7 +35,7 @@ Visual Studio의 Windows Forms 디자이너는 Windows Forms 기반 애플리케
 > [!NOTE]
 > 리소스 편집기가 아닌 Windows Forms 디자이너를 사용하여 양식의 리소스( *.resx*) 파일을 변경할 수 있습니다. 양식 기반 .resx 파일을 편집하는 경우 리소스 편집기에서 변경한 내용이 손실 될 수 있다는 경고가 표시됩니다. Windows Forms 디자이너는 .resx 파일을 생성하기 때문입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Windows Forms 개요](/dotnet/framework/winforms/windows-forms-overview)
 - [Windows Forms 컨트롤](/dotnet/framework/winforms/controls/)

@@ -1,5 +1,5 @@
 ---
-title: 로컬 속성 가져오기 | Microsoft Docs
+title: 로컬 프로퍼티 얻기 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local properties
 - expression evaluation, local properties
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c10cd5ebfe1efbf6657b9925c4c27cce33591524
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338265"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738624"
 ---
-# <a name="get-local-properties"></a>로컬 속성 가져오기
+# <a name="get-local-properties"></a>로컬 속성 받기
 > [!IMPORTANT]
-> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.
+> Visual Studio 2015에서는 식 계산기 구현 방식이 더 이상 사용되지 않습니다. CLR 식 계산기 구현에 대한 자세한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리식 계산기 샘플을](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)참조하십시오.
 
-Visual Studio 호출 [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 가져오려고는 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 에 표시 되는 모든 지역에 대 한 액세스를 제공 하는 개체를 **지역** 창입니다. Visual Studio 호출 [다음](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) 각 로컬에 대해 표시할 정보를 가져옵니다. 이 예제에서는 클래스 `CEnumPropertyInfo` 구현 된 `IEnumDebugPropertyInfo2` 인터페이스입니다.
+비주얼 스튜디오는 [에이넘아이들을](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 호출하여 **지역 주민** 창에 표시할 모든 지역 주민에 대한 액세스를 제공하는 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 가져옵니다. 그런 다음 Visual Studio를 [호출하여](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) 각 로컬에 대해 표시할 정보를 가져옵니다. 이 예제에서 클래스는 `CEnumPropertyInfo` 인터페이스를 `IEnumDebugPropertyInfo2` 구현합니다.
 
-이 구현의 `IEnumDebugPropertyInfo2::Next` 다음 작업을 수행 합니다.
+이 구현은 다음 작업을 `IEnumDebugPropertyInfo2::Next` 수행합니다.
 
-1. 정보를 저장할 배열입니다를 지웁니다.
+1. 정보가 저장될 배열을 지웁히 됩니다.
 
-2. 호출 [다음](../../extensibility/debugger/reference/ienumdebugfields-next.md) 각 로컬 저장 반환 된 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 반환할 배열의 합니다. 합니다 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체가 제공 된 경우이 `CEnumPropertyInfo` 클래스 인스턴스화 되었습니다.
+2. 각 로컬에 대해 [Next를](../../extensibility/debugger/reference/ienumdebugfields-next.md) 호출하여 반환되는 배열에 반환된 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 저장합니다. 이 `CEnumPropertyInfo` 클래스가 인스턴스화되었을 때 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체가 제공되었습니다.
 
 ## <a name="managed-code"></a>관리 코드
-이 예제에서는 구현을 보여 줍니다. `IEnumDebugPropertyInfo2::EnumChildren` 관리 코드에서 메서드의 지역에 대 한 합니다.
+이 예제에서는 관리 `IEnumDebugPropertyInfo2::EnumChildren` 코드에서 메서드의 지역 메서드에 대한 구현을 보여 주며 있습니다.
 
 ```csharp
 namespace EEMC
@@ -94,8 +94,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>관리 되지 않는 코드
- 이 예제에서는 구현을 보여 줍니다. `IEnumDebugPropertyInfo2::EnumChildren` 비관리 코드에서 메서드의 지역에 대 한 합니다.
+## <a name="unmanaged-code"></a>관리되지 않는 코드
+ 이 예제에서는 관리되지 않는 코드에서 메서드의 지역 `IEnumDebugPropertyInfo2::EnumChildren` 메서드에 대한 구현을 보여 주습니다.
 
 ```cpp
 STDMETHODIMP CEnumPropertyInfo::Next(
@@ -156,6 +156,6 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 }
 ```
 
-## <a name="see-also"></a>참고자료
-- [지역 변수의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [로컬 항목 열거](../../extensibility/debugger/enumerating-locals.md)
+## <a name="see-also"></a>참조
+- [지역 주민의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [지역 주민 을 내사](../../extensibility/debugger/enumerating-locals.md)

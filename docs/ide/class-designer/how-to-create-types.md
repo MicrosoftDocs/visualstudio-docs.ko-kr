@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590178"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>방법: 클래스 디자이너를 사용하여 형식 만들기
 
-새로운 형식의 C# 및 Visual Basic 프로젝트를 디자인하려면 클래스 다이어그램에서 해당 형식을 만듭니다. 기존 형식을 확인하려면 [방법: 기존 형식 보기](how-to-view-existing-types.md)를 참조하세요.
+새로운 형식의 C# 및 Visual Basic 프로젝트를 디자인하려면 클래스 다이어그램에서 해당 형식을 만듭니다. 기존 형식을 보려면 [방법: 기존 형식 보기](how-to-view-existing-types.md)를 참조하세요.
 
 ## <a name="CreateType"></a> 새 형식 만들기
 
@@ -36,11 +36,11 @@ ms.locfileid: "75590178"
 
     - **Enum**
 
-    - **Interface**
+    - **인터페이스**
 
     - **구조체**(VB) 또는 **구조체**(C#)
 
-    - **Delegate**
+    - **대리자**
 
     - **모듈**(VB에만 해당)
 
@@ -63,7 +63,7 @@ ms.locfileid: "75590178"
     |열거형|열거형을 구성하고 있는 필드 값|
     |인터페이스|인터페이스를 구성하는 메서드, 속성 및 이벤트|
     |대리자|대리자를 정의하는 매개 변수|
-    |Module|모듈을 정의하는 메서드, 속성, 필드, 이벤트, 생성자(메서드) 및 상수|
+    |모듈|모듈을 정의하는 메서드, 속성, 필드, 이벤트, 생성자(메서드) 및 상수|
 
      [멤버 만들기](creating-and-configuring-type-members.md#create-members)를 참조하세요.
 
@@ -87,7 +87,7 @@ ms.locfileid: "75590178"
 
    사용자 지정 특성이 해당 형식에 적용됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)
 - [방법: 형식 간에 연결 만들기](how-to-create-associations-between-types.md)

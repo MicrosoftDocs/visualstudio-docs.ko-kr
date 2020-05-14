@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111481"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>부하 테스트에서 시나리오 시작 시간 지연 구성
@@ -83,7 +83,7 @@ ms.locfileid: "76111481"
 
 4. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **준비 시간 동안 사용 안 함** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [부하 테스트에 대한 데스트 에이전트 및 테스트 컨트롤러 구성](../test/configure-test-agents-and-controllers-for-load-tests.md)

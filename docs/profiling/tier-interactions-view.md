@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778143"
 ---
 # <a name="tier-interactions-view"></a>계층 상호 작용 뷰
@@ -37,10 +37,10 @@ ms.locfileid: "74778143"
 
 ## <a name="master-pane"></a>마스터 창
 
-|Column|설명|
+|열|Description|
 |------------|-----------------|
 |**이름**|- 최상위 행의 경우 프로파일링된 프로세스 또는 웹 페이지의 이름입니다.<br />- 데이터베이스 연결 행의 경우 데이터베이스를 호스트하는 서버의 이름입니다.|
-|**데이터베이스**|데이터베이스의 이름입니다(데이터베이스 연결 행에만 해당됨).|
+|**Database**|데이터베이스의 이름입니다(데이터베이스 연결 행에만 해당됨).|
 |**Count**|프로세스, 웹 페이지 또는 데이터베이스 연결에 의해 생성된 요청의 총 수입니다.|
 |**총 경과 시간**|프로세스, 웹 페이지 또는 데이터베이스 연결에서 단일 요청을 실행하는 데 소요된 총 시간입니다.|
 |**최대 경과 시간**|프로세스, 웹 페이지 또는 데이터베이스 연결에서 단일 요청을 실행하는 데 소요된 최대 시간입니다.|
@@ -49,7 +49,7 @@ ms.locfileid: "74778143"
 
 ## <a name="database-connection-details-pane"></a>데이터베이스 연결 세부 정보 창
 
-|Column|설명|
+|열|Description|
 |------------|-----------------|
 |**명령 텍스트**|요청의 SQL 쿼리입니다.|
 |**쿼리 개수**|쿼리가 실행된 횟수입니다.|

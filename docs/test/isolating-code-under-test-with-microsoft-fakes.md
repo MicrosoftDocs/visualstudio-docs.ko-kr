@@ -11,10 +11,10 @@ dev_langs:
 - VB
 - CSharp
 ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566906"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
@@ -244,7 +244,7 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 
 또한 특정 인스턴스, 생성자 및 속성에 대한 shim을 만들 수 있습니다. 자세한 내용은 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 [스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

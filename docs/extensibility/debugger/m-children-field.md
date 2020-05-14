@@ -1,30 +1,30 @@
 ---
-title: m_children 필드 | Microsoft Docs
+title: m_children 필드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab6446b18350fe1f11e0b164d9eb4bff39035ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330887"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738432"
 ---
-# <a name="mchildren-field"></a>m_children 필드
-이 작업을 사용 하 여 등록 된 자식 작업의 목록입니다.
+# <a name="m_children-field"></a>m_children 필드
+이 작업에 등록된 자식 작업 목록입니다.
 
- **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **어셈블리:** mscorlib (에서 *mscorlib.dll*)
+ **조립:** mscorlib *(mscorlib.dll)*
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.
+ .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,9 +33,9 @@ ms.locfileid: "66330887"
 ```
 
 ## <a name="remarks"></a>설명
- 작업이 실행 되는 동안 작업을 실행 하는 스레드만이 배열을 액세스 해야 합니다.
+ 작업이 실행되는 동안 작업을 실행하는 스레드만 이 배열에 액세스해야 합니다.
 
- 작업이 완료 되는 경우에 다른 스레드가에 아무것도 추가 하거나 아무 것도를 제거 하지는이 필드에 액세스할 수 있습니다.
+ 작업이 완료되면 다른 스레드는 이 필드에 아무 것도 추가하지 않거나 해당 필드에 아무 것도 제거하지 않는 한 이 필드에 액세스할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
-- [ContingentProperties 클래스](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+## <a name="see-also"></a>참조
+- [우발적 속성 클래스](../../extensibility/debugger/contingentproperties-class-internal-members.md)

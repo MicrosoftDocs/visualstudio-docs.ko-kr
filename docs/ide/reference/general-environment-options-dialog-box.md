@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569441"
 ---
 # <a name="options-dialog-box-environment--general"></a>옵션 대화 상자: 환경 \> 일반

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryContext | Microsoft Docs
+title: IDebugProperty2::GetMemoryContext | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetMemoryContext
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 84ea336050582e2f23aafbbf74599f92c82d20fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8fa610af3ae00d30462c1a3a0c825e5a85722cdc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343066"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721466"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 속성 값의 메모리 컨텍스트를 가져옵니다.
@@ -41,11 +41,11 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>매개 변수
 `ppMemory`\
-[out] 반환 된 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 이 속성과 연결 된 메모리를 나타내는 개체입니다.
+【아웃】 이 속성과 연결된 메모리를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 반환 `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` 검색할 메모리 컨텍스트가 있는 경우.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 검색할 메모리 컨텍스트가 없는 경우 반환합니다. `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

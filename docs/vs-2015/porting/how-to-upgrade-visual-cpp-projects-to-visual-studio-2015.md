@@ -9,15 +9,15 @@ helpviewer_keywords:
 - projects [C++], upgrading
 ms.assetid: 9a283ebb-f6d8-49c0-a73e-323979ff56a2
 caps.latest.revision: 26
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 23461fb1927cfcbf738d2dbcb82e3977b3be265a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918797"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278734"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>방법: Visual C++ 프로젝트를 Visual Studio 2015로 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

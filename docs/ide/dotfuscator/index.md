@@ -18,10 +18,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f1b2c0bfd4adbd4a952a64f20fc3d2639a8abb5f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75918440"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community

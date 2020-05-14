@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585589"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>코딩된 UI 테스트에서 HTML5 컨트롤 사용
@@ -36,7 +36,7 @@ ms.locfileid: "75585589"
 
 ![HTML5 오디오 컨트롤](../test/media/codedui_html5_audio.png)
 
-|작업|기록 중|생성된 코드|
+|작업|기록|생성된 코드|
 |-|---------------|-|
 |**오디오 재생**<br /><br /> 컨트롤 또는 컨트롤의 오른쪽 클릭 메뉴에서 직접|00:00:00부터 \<name> 오디오 재생|HtmlAudio.Play(TimeSpan)|
 |**오디오의 특정 시간까지 검색**|00:01:48까지 \<name> 오디오 검색|HtmlAudio.Seek(TimeSpan)|
@@ -49,7 +49,7 @@ ms.locfileid: "75585589"
 
 **검색 속성:** `HtmlAudio`에 대한 검색 속성은 `Id`, `Name` 및 `Title`입니다.
 
-**필터 속성:** `HtmlAudio`에 대한 검색 속성은 `Src`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
+**필터 속성:** `HtmlAudio`에 대한 필터 속성은 `Src`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
 
 > [!NOTE]
 > 검색 및 일시 중지에 대한 시간은 중요할 수 있습니다. 재생하는 동안 코딩된 UI 테스트는 `(TimeSpan)`에 지정된 시간까지 기다린 후 오디오를 일시 중지합니다. 특수한 경우 일시 중지 명령을 누르기 전에 지정된 시간이 경과하면 예외가 throw됩니다.
@@ -59,7 +59,7 @@ ms.locfileid: "75585589"
 
 ![HTML5 비디오 컨트롤](../test/media/codedui_html5_video.png)
 
-|작업|기록 중|생성된 코드|
+|작업|기록|생성된 코드|
 |-|---------------|-|
 |**비디오 재생**<br /><br /> 컨트롤 또는 컨트롤의 오른쪽 클릭 메뉴에서 직접|00:00:00부터 \<name> 비디오 재생|HtmlVideo.Play(TimeSpan)|
 |**비디오의 특정 시간까지 검색**|00:01:48까지 \<name> 비디오 검색|HtmlVideo.Seek(TimeSpan)|
@@ -72,7 +72,7 @@ ms.locfileid: "75585589"
 
 **검색 속성:** `HtmlVideo`에 대한 검색 속성은 `Id`, `Name` 및 `Title`입니다.
 
-**필터 속성:** `HtmlVideo`에 대한 검색 속성은 `Src`, `Poster`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
+**필터 속성:** `HtmlVideo`에 대한 필터 속성은 `Src`, `Poster`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
 
 > [!NOTE]
 > -30s 또는 +30s 레이블을 사용하여 비디오를 되감거나 빨리 감으면 적절한 시간까지 검색하도록 집계됩니다.
@@ -82,7 +82,7 @@ ms.locfileid: "75585589"
 
 ![HTML5 ProgressBar 컨트롤](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [HTML 요소](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
+title: IDebugPending중단점2::캔빈빈드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::CanBind method
 - CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9325d8a0c8ee39aec6f8ceccb5bbb894eef2163
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07625f7249092e2de3d3dccaaef31a2869755e36
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311728"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725966"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-이 보류 중인 중단점 코드 위치에 바인딩할 수 있는지 여부를 결정 합니다.
+이 보류 중인 중단점이 코드 위치에 바인딩할 수 있는지 여부를 결정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,16 +42,16 @@ int CanBind ( 
 
 ## <a name="parameters"></a>매개 변수
 `ppErrorEnum`\
-[out] 반환을 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 개체의 목록을 포함 하는 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 개체 오류가 있을 수 있습니다.
+【아웃】 오류가 있을 수 있는 경우 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 개체 목록을 포함하는 [IEnumDebugErrorBreakpoint2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 개체를 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK.` 반환 `S_FALSE` 중단점을 바인딩할 수 없는 경우이 경우 오류를 반환한는 `ppErrorEnum` 매개 변수입니다. 그러지 않으면 오류 코드가 반환됩니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.
+## <a name="return-value"></a>Return Value
+ 성공하면 중단점이 `S_FALSE` 바인딩할 수 없는 경우 Returns를 반환하며, `ppErrorEnum` `S_OK.` 이 경우 오류가 매개 변수에 의해 반환됩니다. 그러지 않으면 오류 코드가 반환됩니다. 중단점이 삭제된 경우 반환합니다. `E_BP_DELETED`
 
 ## <a name="remarks"></a>설명
- 발생 하는 상황을 확인 하려면이 메서드는 중단점 보류 중인이 바인딩된 경우입니다. 호출 된 [바인딩할](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) 실제로 보류 중인 중단점을 바인딩할 메서드.
+ 이 메서드는 이 보류 중인 중단점이 바인딩된 경우 발생할 작업을 결정 하기 위해 호출 됩니다. [바인드](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) 메서드를 호출하여 보류 중인 중단점을 실제로 바인딩합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` 노출 하는 개체를 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다.
+ 다음 예제에서는 `CPendingBreakpoint` [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
@@ -138,8 +138,8 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
-- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [바인딩](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

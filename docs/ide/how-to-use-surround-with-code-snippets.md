@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593761"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>방법: 코드 감싸기 코드 조각 사용
@@ -55,7 +55,7 @@ ms.locfileid: "75593761"
 
      또는 코드 조각의 이름을 입력한 다음, **Tab** 키 또는 **Enter** 키를 누릅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [C# 코드 조각](../ide/visual-csharp-code-snippets.md)
 - [코드 조각 선택](../ide/reference/code-snippet-picker.md)

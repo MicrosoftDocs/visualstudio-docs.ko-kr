@@ -7,10 +7,10 @@ ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75397978"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 디버깅
@@ -43,7 +43,7 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 
 ![중단점 목록](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>디버깅 시작
+## <a name="start-debugging"></a>디버그 시작
 
 디버깅을 시작하려면 대상 브라우저, 디바이스 또는 시뮬레이터/에뮬레이터를 선택합니다.
 
@@ -97,6 +97,6 @@ Xamarin 제품은 Mono 클래스 라이브러리에 대한 소스 코드와 함�
 
 ![한 단계씩 외부 코드 실행 옵션](media/debugging-image8.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 디버깅(Windows에서)](/visualstudio/debugger/)

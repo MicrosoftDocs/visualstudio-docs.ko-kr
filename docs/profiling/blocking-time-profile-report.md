@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926315"
 ---
 # <a name="blocking-time-profile-report"></a>차단 시간 프로필 보고서
@@ -31,19 +31,19 @@ ms.locfileid: "68926315"
 ## <a name="blocking-time-report-columns"></a>차단 시간 보고서 열
  다음 표에서는 각 차단 시간 보고서에 대한 열을 보여 줍니다.
 
-|열 이름|설명|
+|열 이름|Description|
 |-----------------|-----------------|
 |**이름**|호출 스택의 각 수준에 대한 함수의 이름입니다.|
 |**인스턴스**|보이는 기간에 대한 차단 호출의 인스턴스 수입니다.|
 |**포함 차단 시간**|호출 스택 트리의 이 수준까지 이르는 모든 스택에 소요된 총 차단 시간입니다. 포함 수는 이 함수에 대한 제외 차단 시간과 모든 하위 노드에 대한 제외 차단 시간의 합입니다.|
 |**제외 차단 시간**|이 함수가 호출 스택에서 최하위 수준에 있는 동안 소요된 총 차단 시간입니다. 제외 차단 시간 값이 높은 고유한 호출 스택 항목이 관심 함수일 수 있습니다.|
 |**API/대기 범주**|호출 스택의 최하위 수준에 있는 함수에만 표시됩니다. 차단 호출의 서명이 인식되는 곳에서는 차단 API의 이름이 제공됩니다. 시그니처가 인식되지 않으면 커널에서 보고된 정보가 제공됩니다.|
-|**설명**|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|
+|**세부 정보**|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|
 
 ### <a name="synchronization"></a>동기화
  동기화 보고서에는 동기화에서 차단되는 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [동기화 시간](../profiling/synchronization-time.md)을 참조하세요.
 
-### <a name="sleep"></a>Sleep
+### <a name="sleep"></a>절전
  중지 보고서에는 중지에 사용된 시간으로 전환된 차단 시간을 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [절전 모드 시간](../profiling/sleep-time.md)을 참조하세요.
 
 ### <a name="io"></a>I/O

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74474023"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445014"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Azure에 Node.js 애플리케이션 게시(Linux App Service)
 
@@ -29,14 +29,14 @@ Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 애플리
 
 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 설치한 템플릿에서 시작하는 Node.js 애플리케이션을 만들고, 코드를 GitHub의 리포지토리로 푸시한 다음, GitHub 리포지토리에서 배포할 수 있도록 Azure 웹 포털을 통해 Azure App Service를 프로비전하는 방법을 설명합니다. 명령줄을 사용하여 Azure App Service를 프로비전하고 로컬 Git 리포지토리에서 코드를 푸시하려면 [Node.js 앱 만들기](/azure/app-service/containers/quickstart-nodejs)를 참조하세요.
 
-이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
+이 자습서에서는 다음 작업 방법을 알아봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * 코드에 대한 GitHub 리포지토리 만들기
 > * Azure에서 Linux App Service 만들기
 > * Linux에 배포
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * Node.js 개발 워크로드와 Visual Studio가 설치되어 있어야 합니다.
 
@@ -121,7 +121,7 @@ Visual Studio에 대해 GitHub를 설정하려면 다음을 수행합니다.
 
 5. **만들기**를 클릭하여 App Service를 만듭니다.
 
-    배포하는 데 몇 분 정도 걸릴 수 있습니다.
+    배포하는 데 몇 분이 걸릴 수 있습니다.
 
 6. 배포된 후 **애플리케이션 설정** 섹션으로 이동하고 `SCM_SCRIPT_GENERATOR_ARGS`란 이름 및 `--node` 값의 설정을 추가합니다.
 
@@ -173,9 +173,9 @@ Visual Studio에 대해 GitHub를 설정하려면 다음을 수행합니다.
 ## <a name="troubleshooting"></a>문제 해결
 
 * node.exe 프로세스가 중단되는 경우(즉, 처리되지 않은 예외가 발생) 컨테이너가 다시 시작됩니다.
-* 컨테이너가 시작되면 Node.js 프로세스를 시작하는 방법을 파악하는 다양한 추론을 통해 실행됩니다. 구현에 대한 세부 정보는 [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js)에서 볼 수 있습니다.
+* 컨테이너가 시작되면 Node.js 프로세스를 시작하는 방법을 파악하는 다양한 추론을 통해 실행됩니다. 구현에 대한 세부 정보는 [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js)에서 볼 수 있습니다.
 * 조사를 위해 SSH를 통해 실행 중인 컨테이너에 연결할 수 있습니다. Azure Portal을 사용하여 손쉽게 수행할 수 있습니다. App Service를 선택하고 **개발 도구** 섹션의 **SSH**에 도달할 때까지 도구 목록을 아래로 스크롤합니다.
-* 문제 해결을 돕기 위해 App Service에 대한 **진단 로그** 설정으로 이동하고 **Docker 컨테이너 로깅** 설정을 **해제**에서 **파일 시스템**으로 변경합니다. 로그가 */home/LogFiles/* _docker.log*에 있는 컨테이너에 생성되며, SSH 또는 FTP(S)를 사용하여 상자에서 액세스할 수 있습니다.
+* 문제 해결을 돕기 위해 App Service에 대한 **진단 로그** 설정으로 이동하고 **Docker 컨테이너 로깅** 설정을 **해제**에서 **파일 시스템**으로 변경합니다. 로그가 */home/LogFiles/*_docker.log*에 있는 컨테이너에 생성되며, SSH 또는 FTP(S)를 사용하여 상자에서 액세스할 수 있습니다.
 * 사용자 지정 도메인 이름을 기본적으로 할당된 *.azurewebsites.net URL이 아닌 사이트에 할당할 수도 있습니다. 자세한 내용은 [사용자 지정 도메인 매핑](/azure/app-service/app-service-web-tutorial-custom-domain) 항목을 참조하세요.
 * 프로덕션으로 이동하기 전에 추가 테스트를 위해 스테이징 사이트를 배포하는 것이 가장 좋습니다. 이를 구성하는 방법에 대한 자세한 내용은 [스테이징 환경 만들기](/azure/app-service/web-sites-staged-publishing) 항목을 참조하세요.
 * 더 자주 묻는 질문은 [Linux의 App Service에 대한 FAQ](/azure/app-service/containers/app-service-linux-faq)를 참조하세요.

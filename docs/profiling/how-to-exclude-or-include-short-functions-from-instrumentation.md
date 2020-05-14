@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de6d6325b1e518146768798c773754c091861aa8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775916"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>방법: 계측에서 간단한 함수 제외 또는 포함
@@ -31,7 +31,7 @@ ms.locfileid: "74775916"
 
 2. **속성 페이지**에서 **계측** 속성을 클릭합니다.
 
-3. 계측에서 간단한 함수를 제외하려면 **계측에서 간단한 함수 제외**를 선택합니다. 이것이 기본 설정입니다.
+3. 계측에서 간단한 함수를 제외하려면 **계측에서 간단한 함수 제외**를 선택합니다. 이 값은 기본 설정입니다.
 
      또는
 

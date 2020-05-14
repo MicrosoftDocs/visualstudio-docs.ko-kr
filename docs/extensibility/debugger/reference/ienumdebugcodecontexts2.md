@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2 | Microsoft Docs
+title: 이넘디버그코드컨텍스트2 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dae1261adca25162b5bb81cc3ae8b006ce7ef283
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6917c44bb3ddc80513e7c45a6aa4ea0207fd46c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350884"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717276"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
-이 인터페이스는 디버그 세션이 나 연결 된 특정 프로그램이 나 문서 코드 컨텍스트 열거 합니다.
+이 인터페이스는 디버그 세션 또는 특정 프로그램 또는 문서와 관련된 코드 컨텍스트를 개과연합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,36 +28,36 @@ ms.locfileid: "66350884"
 IEnumDebugCodeContexts2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자 참고 사항
- 디버그 엔진 (DE) 프로그램에서 특정 텍스트 위치에 대 한 컨텍스트를 코드의 목록 또는 특정 문서 컨텍스트에 대 한 코드 컨텍스트 목록을 나타내는 데이 인터페이스를 구현 합니다.
+## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
+ DE(디버그 엔진)는 프로그램의 특정 텍스트 위치에 대한 코드 컨텍스트 목록 또는 특정 문서 컨텍스트에 대한 코드 컨텍스트 목록을 나타내기 위해 이 인터페이스를 구현합니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
- 호출 [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) 프로그램의 소스 문서에서 특정 텍스트 위치에 대 한 코드 컨텍스트 목록을 나타내는이 인터페이스를 가져올 수 있습니다.
+## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
+ 프로그램의 원본 문서에서 특정 텍스트 위치에 대한 코드 컨텍스트 목록을 나타내는 이 인터페이스를 얻으려면 [EnumCodeContexts를](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) 호출합니다.
 
- 호출 [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) 특정 소스 문서에서 모든 코드 컨텍스트 목록을 나타내는이 인터페이스를 가져올 수 있습니다.
+ 특정 소스 문서의 모든 코드 컨텍스트 목록을 나타내는 이 인터페이스를 가져오려면 [EnumCodeContexts를](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) 호출합니다.
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
- 다음 표에서의 메서드를 보여 줍니다. `IEnumDebugCodeContexts2`합니다.
+ 다음 표에서는 의 `IEnumDebugCodeContexts2`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
 
-|메서드|설명|
+|방법|설명|
 |------------|-----------------|
-|[다음](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|코드 컨텍스트 열거 시퀀스에 지정된 된 수를 검색 합니다.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|코드 컨텍스트 열거 시퀀스에 지정된 된 수를 건너뜁니다.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|열거자에서 코드 컨텍스트 수를 가져옵니다.|
+|[다음](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|열거 시퀀스에서 지정된 수의 코드 컨텍스트를 검색합니다.|
+|[건너뛸](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|열거 시퀀스에서 지정된 수의 코드 컨텍스트를 건너뜁니다.|
+|[다시 설정](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|열거 순서를 시작 부분으로 재설정합니다.|
+|[복제](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|현재 열거체와 동일한 열거 상태를 포함하는 열거형 을 만듭니다.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|열거형의 코드 컨텍스트 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
- Visual Studio 호출 [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) 코드 컨텍스트의 목록을 채울 선택할 수 있으며 경우에서 다음 문을 설정 또는 소스 파일에 대 한 디스어셈블리를 표시 합니다. 인스턴스가 여러 개 있는 경우, 여러 코드 컨텍스트 발생할 수 있습니다는 C++-스타일 템플릿.
+ Visual Studio는 [EnumCodeContexts를](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) 호출하여 다음 문을 설정하거나 소스 파일에 대한 디스어셈블리를 표시할 때 사용자가 선택할 수 있는 코드 컨텍스트 목록을 채웁니다. 예를 들어 C++스타일 템플릿의 인스턴스가 여러 개인 경우 여러 코드 컨텍스트가 발생할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911190"
 ---
 # <a name="concurrency-visualizer-sdk"></a>동시성 시각화 도우미 SDK
@@ -119,7 +119,7 @@ ms.locfileid: "72911190"
     CvWriteFlag(series, _T("Writing a flag"));
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 |제목|설명|
 |-----------|-----------------|

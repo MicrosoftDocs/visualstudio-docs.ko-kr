@@ -1,5 +1,5 @@
 ---
-title: Templates Groupid 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 템플릿그룹ID 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718664"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699073"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 요소(Visual Studio 템플릿)
-항목 템플릿이 표시되는 프로젝트 종류를 지정합니다. 이 요소는 [Showbydefault (Visual Studio 템플릿)](../extensibility/showbydefault-visual-studio-templates.md) 가 `false`로 설정 된 경우에 중요 합니다. [Showbydefault (Visual Studio 템플릿)](../extensibility/showbydefault-visual-studio-templates.md) 가 `true`로 설정 된 경우 모든 프로젝트 형식에서 항목 템플릿을 사용할 수 있습니다.
+항목 템플릿이 표시되는 프로젝트 종류를 지정합니다. 이 요소는 [ShowByDefault(시각적 스튜디오 템플릿)를](../extensibility/showbydefault-visual-studio-templates.md) 로 `false`설정할 때 중요합니다. [ShowByDefault(Visual Studio 템플릿)가](../extensibility/showbydefault-visual-studio-templates.md) `true`로 설정되면 모든 프로젝트 유형에서 항목 템플릿을 사용할 수 있습니다.
 
- \<VSTemplate > \<TemplateData > \<TemplateGroupID >
+ \<VS템플릿 \<> 템플릿데이터> \<템플릿 그룹ID>
 
 ## <a name="syntax"></a>구문
 
@@ -33,17 +33,17 @@ ms.locfileid: "72718664"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음.
+ 없음
 
 ### <a name="child-elements"></a>자식 요소
- 없음.
+ 없음
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
@@ -52,10 +52,10 @@ ms.locfileid: "72718664"
 
  텍스트는 항목 템플릿 범주에 대한 식별자를 지정합니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  `TemplateGroupID`는 요소입니다.
 
- @No__t_0 요소 값은 프로젝트 시스템 등록 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version number >* \projects \\)과 함께 사용 되어 **새 항목 추가에 표시 되는 템플릿을 필터링 합니다.** 대화 상자.
+ `TemplateGroupID` 요소의 값은 프로젝트 시스템 등록(HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<버전 번호 *>\\\Project)와 함께 새 **항목 추가** 대화 상자에 나타나는 템플릿을 필터링하는 데 사용됩니다.
 
 |Visual C++ 값|의미|
 |------------------------|-------------|

@@ -1,17 +1,18 @@
 ---
 title: EMS 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: bada7a96-a969-4459-a2ac-7f253149d925
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Enterprise Mobility + Security 혜택에 대해 알아봅니다.
-ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: e66e760cc8400e1f81c396c0e62ff57bf6356153
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099541"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273922"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio의 EMS(Enterprise Mobility + Security)
 
@@ -29,11 +30,11 @@ Office 365 Developer(E3) 테넌트가 이미 있는 경우 EMS를 설치해야 �
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예          |
 | Visual Studio Professional(표준<sup>2</sup>) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  예          |
-| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  해당 사항 없음          |
-| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  해당 사항 없음          |
+| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  N/A          |
+| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
-<sup>1</sup> *포함:  NFR(전매금지), VSIP(Visual Studio 업계 파트너), MPN(Microsoft 파트너 네트워크), FTE, MCT 소프트웨어 및 서비스 개발자, BizSpark.  제외: MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services, Imagine, Microsoft 파트너 네트워크(Professional)*
+<sup>1</sup>  포함:  NFR(전매금지), VSIP(Visual Studio 업계 파트너), MPN(Microsoft 파트너 네트워크), FTE, MCT 소프트웨어 및 서비스 개발자, BizSpark.  제외: MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services, Imagine, Microsoft 파트너 네트워크(Professional).
 
 <sup>2</sup> *제외: Microsoft 파트너 네트워크(Professional)*
 
@@ -47,6 +48,12 @@ Office 365 Developer(E3) 테넌트가 이미 있는 경우 EMS를 설치해야 �
 - EMS의 구성 요소를 사용하는 기술 지원은 [EMS 지원 FAQ](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq)를 방문하여 질문에 대한 적합한 지원을 찾습니다.
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독과 함께 제공되는 Azure DevTest 개별 크레딧 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure DevTest 개별 크레딧을 사용합니다.

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778456"
 ---
 # <a name="performance-report-view-filter"></a>성능 보고서 뷰 필터
@@ -24,7 +24,7 @@ ms.locfileid: "74778456"
 
  각 필터 절을 수정하여 결과를 구체화할 수 있습니다. 필터 작성기에서 사용 가능한 열은 다음과 같습니다.
 
-|필터 항목|설명|
+|필터 항목|Description|
 |-----------------|-----------------|
 |및/또는|이 절과 다음 절이 둘 다 true여야 결과와 일치하는 경우 **및**을 선택합니다. 이 절이나 다음 절 중 하나가 true이면 결과와 일치하는 경우 **또는**을 선택합니다.|
 |필드|현재 보고서 파일에서 사용할 수 있는 데이터 필드의 목록에서 필터 절에 사용할 필드를 선택합니다.|

@@ -10,21 +10,21 @@ dev_langs:
 helpviewer_keywords:
 - VerifyFileHash task [MSBuild]
 - MSBuild, VerifyFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481970"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77579530"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 작업
 
-파일이 예상 파일 해시와 일치하는지 확인합니다.
+파일이 예상 파일 해시와 일치하는지 확인합니다. 해시가 일치하지 않으면 작업이 실패합니다.
 
 이 작업은 15.8에 추가되었지만 16.0 미만의 MSBuild 버전에 사용하려면 [해결 방법](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272)이 필요합니다.
 
@@ -32,14 +32,14 @@ ms.locfileid: "71481970"
 
  다음 표에서는 `VerifyFileHash` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`File`|필수 `String` 매개 변수입니다.<br /><br />해시되고 유효성이 검사된 파일입니다.|
 |`Hash`|필수 `String` 매개 변수입니다.<br /><br />파일의 예상 해시입니다.|
 |`Algorithm`|선택적 `String` 매개 변수입니다.<br /><br />알고리즘입니다. 허용되는 값: `SHA256`, `SHA384`, `SHA512`. 기본값은 `SHA256`입니다.|
 |`HashEncoding`|선택적 `String` 매개 변수입니다.<br /><br />생성된 해시에 사용할 인코딩입니다. 기본값은 `hex`입니다. 허용되는 값은 `hex`, `base64`입니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `VerifyFileHash` 작업을 사용하여 자체 체크섬을 확인합니다.
 
@@ -59,6 +59,30 @@ ms.locfileid: "71481970"
                     Hash="$(ExpectedHash)" />
   </Target>
 </Project>
+```
+
+MSBuild 16.5 이상에서 제어 흐름의 조건으로 해시 비교를 사용하는 경우와 같이 해시가 일치하지 않을 때 빌드가 실패하지 않도록 하려면 다음 코드를 사용하여 경고를 메시지로 다운그레이드할 수 있습니다.
+
+```xml
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3952</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="DemoVerifyCheck">
+    <VerifyFileHash File="$(MSBuildThisFileFullPath)"
+                    Hash="1"
+                    ContinueOnError="WarnAndContinue" />
+
+    <PropertyGroup>
+      <HashMatched>$(MSBuildLastTaskResult)</HashMatched>
+    </PropertyGroup>
+
+    <Message Condition=" '$(HashMatched)' != 'true'"
+             Text="The hash didn't match" />
+
+    <Message Condition=" '$(HashMatched)' == 'true'"
+             Text="The hash did match" />
+  </Target>
 ```
 
 ## <a name="see-also"></a>참고 항목

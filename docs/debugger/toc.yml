@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: C++ 앱 디버그
       href: quickstart-debug-with-cplusplus.md
-    - name: ASP.NET 앱 디버그
+    - name: ASP.NET Core 앱 디버그
       href: quickstart-debug-aspnet.md
 - name: 자습서
   items:
@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: IIS 컴퓨터의 원격 디버그 ASP.NET
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Azure의 원격 디버그 ASP.NET
+        - name: Azure의 ASP.NET Core 원격 디버그
           href: remote-debugging-azure.md
         - name: 'C# 또는 Visual Basic 프로젝트 원격 디버그'
           href: remote-debugging-csharp.md
         - name: C++ 프로젝트 원격 디버그
           href: remote-debugging-cpp.md
+        - name: Linux의 .NET Core 원격 디버그
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: 원격 디버거 포트 할당
           href: remote-debugger-port-assignments.md
         - name: 원격 디버깅을 위해 Windows 방화벽 구성
@@ -445,7 +447,7 @@
             - name: 디버그하는 동안 XAML 속성 검사
               href: inspect-xaml-properties-while-debugging.md
             - name: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: Blend에서 XAML 디버그
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 및 CSS
@@ -505,7 +507,7 @@
                 - name: 디버그하는 동안 XAML 속성 검사
                   href: inspect-xaml-properties-while-debugging.md
                 - name: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: WPF 트리 시각화 도우미 사용
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: WPF 추적 정보 표시
@@ -588,8 +590,6 @@
                   items:
                     - name: COM 서버 및 컨테이너 디버깅
                       href: com-server-and-container-debugging.md
-                    - name: RPC 디버깅을 사용하여 COM 클라이언트 및 서버 디버그
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX 컨트롤
                   items:
                     - name: ActiveX 컨트롤 디버그

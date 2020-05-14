@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189128"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277655"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>연습: SharePoint 응용 프로그램 프로 파일링
   이 연습에서는 Visual Studio에서 프로파일링 도구를 사용하여 SharePoint 애플리케이션의 성능을 최적화하는 방법을 보여 줍니다. 예제 애플리케이션은 기능 이벤트 수신기의 성능을 저하시키는 유휴 루프가 포함된 SharePoint 기능 이벤트 수신기입니다. Visual Studio profiler를 사용 하면 프로젝트의 가장 비용이 많이 드는 (가장 느리게 수행 되는) 부분을 찾아서 제거할 수 있습니다 (실행 *부하 과다 경로*라고도 함).
 
  이 연습에서는 다음 작업을 수행합니다.
 
-- [기능 및 기능 이벤트 수신기 Addg](#add-a-feature-and-feature-event-receiver)
+- [기능 및 기능 이벤트 수신기를 추가](#add-a-feature-and-feature-event-receiver)합니다.
 
 - [SharePoint 응용 프로그램을 구성 하 고 배포](#configure-and-deploy-the-sharepoint-application)합니다.
 
@@ -37,19 +37,19 @@ ms.locfileid: "73189128"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>SharePoint 프로젝트 만들기
  먼저 SharePoint 프로젝트를 만듭니다.
 
 ### <a name="to-create-a-sharepoint-project"></a>SharePoint 프로젝트를 만들려면
 
-1. 메뉴 모음에서 **파일**  > **새**  > **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
+1. 메뉴 모음에서 **파일** > **새** > **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
 
 2. **시각적 개체 C#**  또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "73189128"
 
     현재 팜 솔루션만 프로파일링할 수 있습니다. 샌드박스 솔루션과 팜 솔루션에 대 한 자세한 내용은 [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)을 참조 하세요.
 
-7. **마침** 단추를 선택 합니다. 프로젝트가 **솔루션 탐색기**에 나타납니다.
+7. **마침** 단추를 선택합니다. 프로젝트가 **솔루션 탐색기**에 나타납니다.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>기능 및 기능 이벤트 수신기 추가
  다음 작업으로, 기능의 이벤트 수신기와 함께 프로젝트에 기능을 추가합니다. 이 이벤트 수신기에는 프로파일링할 코드가 포함됩니다.
@@ -272,8 +272,7 @@ ms.locfileid: "73189128"
 
      유휴 루프 호출이 제거되었으므로 기능이 훨씬 빠르게 활성화됩니다. 샘플 프로파일링 보고서는 이를 반영합니다.
 
-## <a name="see-also"></a>참조
-- [성능 탐색기](../profiling/performance-explorer.md)
+## <a name="see-also"></a>참고 항목
 - [성능 세션 개요](../profiling/performance-session-overview.md)
 - [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)
 - [Visual Studio Profiler를 사용 하 여 응용 프로그램 병목 상태 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)

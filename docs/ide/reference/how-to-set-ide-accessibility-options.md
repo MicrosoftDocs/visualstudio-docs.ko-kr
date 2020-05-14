@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63bba4e8defcd727f05dbc209aa2f48f7d5f2c92
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107776"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>방법: IDE 접근성 옵션 설정
@@ -128,7 +128,7 @@ Visual Studio에는 시력이 약한 사용자와 읽기와 손으로 글씨를 
 
 1. **이름** 옆의 삽입은 선택된 단추에 대한 새 캡션을 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Mac용 Visual Studio 접근성](/visualstudio/mac/accessibility/)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569194"
 ---
 # <a name="go-to-line-dialog-box"></a>행 이동 대화 상자
@@ -30,7 +30,7 @@ ms.locfileid: "75569194"
 
 **줄 번호(1 - \<n>)** 상자에 이동할 활성 문서의 줄 번호를 입력합니다. 입력한 번호는 1과 현재 문서의 마지막 줄 번호 사이여야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [이동 명령을 사용하여 코드 찾기](../../ide/go-to.md)
 - [코드에 책갈피 설정](../../ide/setting-bookmarks-in-code.md)

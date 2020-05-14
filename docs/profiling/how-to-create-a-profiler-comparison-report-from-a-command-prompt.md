@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0328e04067770f8837d10d532abb67d16c65e50
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776429"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>방법: 명령 프롬프트에서 프로파일러 비교 보고서 만들기

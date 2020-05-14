@@ -1,5 +1,5 @@
 ---
-title: '방법: 개체 관리자에 라이브러리 등록 | Microsoft Docs'
+title: '방법: 개체 관리자에 라이브러리 등록 | 마이크로 소프트 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,34 +9,34 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7481b9710237bcd1e624b07f8985b5708f271bef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4bd1032d2ba67a0c0f3338560a80038ed3215531
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312060"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707939"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자를 사용 하 여 라이브러리를 등록 합니다.
-와 같은 도구 기호 검색 **클래스 뷰**, **개체 브라우저**를 **호출 브라우저** 고 **기호 찾기 결과**를 볼 수 있도록 외부 구성 요소 또는 프로젝트의 기호입니다. 기호는 네임 스페이스, 클래스, 인터페이스, 메서드 및 다른 언어 요소를 포함 합니다. 라이브러리는 이러한 기호를 추적 하 고 노출 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 데이터를 사용 하 여 도구를 채우는 개체 관리자입니다.
+# <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자와 라이브러리 등록
+**클래스 보기,** **개체 브라우저,** **브라우저 호출** 및 기호 **결과 찾기와**같은 기호 검색 도구를 사용하면 프로젝트 또는 외부 구성 요소에서 기호를 볼 수 있습니다. 기호에는 네임스페이스, 클래스, 인터페이스, 메서드 및 기타 언어 요소가 포함됩니다. 라이브러리는 이러한 기호를 추적하고 도구를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 데이터로 채우는 개체 관리자에 노출합니다.
 
- 개체 관리자는 사용 가능한 모든 라이브러리의 추적 합니다. 각 라이브러리 개체 관리자를 사용 하 여 기호 검색 도구에 대 한 기호를 제공 하기 전에 등록 해야 합니다.
+ 개체 관리자는 사용 가능한 모든 라이브러리를 추적합니다. 각 라이브러리는 기호 검색 도구에 대한 기호를 제공하기 전에 개체 관리자에 등록해야 합니다.
 
- 일반적으로 VSPackage를 로드 하는 경우 라이브러리를 등록 합니다. 그러나 필요에 따라 다른 시간에이 수행할 수 있습니다. VSPackage가 종료 될 때 라이브러리를 등록 취소 합니다.
+ 일반적으로 VSPackage가 로드될 때 라이브러리를 등록합니다. 그러나 필요에 따라 다른 시간에 수행 할 수 있습니다. VSPackage가 종료되면 라이브러리를 등록 취소합니다.
 
- 라이브러리를 등록 하려면 사용 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> 메서드. 관리 코드 라이브러리에 대해 사용 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 메서드.
+ 라이브러리를 등록하려면 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> 사용합니다. 관리 되는 코드 라이브러리에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 대 한 메서드를 사용 합니다.
 
- 라이브러리의 등록을 취소 하려면 사용 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 메서드.
+ 라이브러리를 등록 취소하려면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 메서드를 사용합니다.
 
- 개체 관리자에 대 한 참조를 가져오는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>에 전달 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID 서비스 `GetService` 메서드.
+ 개체 관리자에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>대한 참조를 얻으려면 <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> 서비스 ID를 메서드에 전달합니다. `GetService`
 
-## <a name="register-and-unregister-a-library-with-the-object-manager"></a>등록 및 개체 관리자를 사용 하 여 라이브러리를 등록 취소
+## <a name="register-and-unregister-a-library-with-the-object-manager"></a>개체 관리자에 라이브러리 등록 및 등록 취소
 
-### <a name="to-register-a-library-with-the-object-manager"></a>개체 관리자를 사용 하 여 라이브러리를 등록 하려면
+### <a name="to-register-a-library-with-the-object-manager"></a>개체 관리자에 라이브러리를 등록하려면
 
 1. 라이브러리를 만듭니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "66312060"
 
     ```
 
-2. 개체에 대 한 참조를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 입력 하 고 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 메서드.
+2. 형식의 개체에 대한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 참조를 가져오고 메서드를 호출합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>
 
     ```vb
     Private Sub RegisterLibrary()
@@ -109,9 +109,9 @@ ms.locfileid: "66312060"
 
     ```
 
-### <a name="to-unregister-a-library-with-the-object-manager"></a>라이브러리 개체 관리자를 등록 취소
+### <a name="to-unregister-a-library-with-the-object-manager"></a>개체 관리자에 라이브러리를 등록 취소하려면
 
-1. 개체에 대 한 참조를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 입력 하 고 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 메서드.
+1. 형식의 개체에 대한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 참조를 가져오고 메서드를 호출합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>
 
     ```vb
     Private Sub UnregisterLibrary()
@@ -164,7 +164,7 @@ ms.locfileid: "66312060"
 
     ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)
-- [기호 검색 도구를 지원 합니다.](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [방법: 개체 관리자에 게 라이브러리에서 제공 하는 기호 목록을 표시 합니다.](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [심볼 브라우징 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [방법: 라이브러리에서 제공하는 기호 목록을 개체 관리자에 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

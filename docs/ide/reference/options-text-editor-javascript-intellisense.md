@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605972"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>옵션 대화 상자: 텍스트 편집기 \> JavaScript \> IntelliSense
@@ -38,7 +38,7 @@ ms.locfileid: "68605972"
 
 이 확인란을 선택하면 JavaScript 코드 편집기에서는 **Tab** 키나 **Enter** 키를 선택한 후에만 완성 목록의 선택한 항목을 포함한 문이 추가됩니다. 이 확인란이 선택되어 있지 않으면 마침표, 쉼표, 콜론, 여는 괄호, 여는 중괄호({)와 같은 기타 문자로도 선택한 항목을 사용하여 명령문을 추가할 수 있습니다.
 
-## <a name="references"></a>참조
+## <a name="references"></a>참조 항목
 
 이러한 옵션을 사용하여 다른 JavaScript 프로젝트 형식의 범위에 있는 IntelliSense .js 파일의 형식을 지정할 수 있습니다. IntelliSense 참조는 일반적으로 전역 개체에 대한 IntelliSense 지원을 제공하기 위해 사용됩니다. 또한 이 페이지를 사용하여 런타임에 로드해야 하는 스크립트의 로드 순서를 설정하고 IntelliSense 확장 파일을 추가할 수 있습니다.
 
@@ -76,6 +76,6 @@ ms.locfileid: "68605972"
 > [!NOTE]
 > 웹 프로젝트의 경우 프로젝트에서 참조된 원격 파일이 기본적으로 다운로드됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

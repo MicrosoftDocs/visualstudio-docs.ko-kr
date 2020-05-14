@@ -1,5 +1,5 @@
 ---
-title: '방법: 삽입 된 코드 디버깅 | Microsoft Docs'
+title: '방법: 삽입한 코드 디버그 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -26,7 +26,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62847787"
@@ -36,7 +36,7 @@ ms.locfileid: "62847787"
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
 
-특성을 사용하면 C++ 프로그래밍을 매우 단순화할 수 있습니다. 자세한 내용은 [개념](/cpp/windows/attributed-programming-concepts)을 참조합니다. 일부 특성은 컴파일러가 직접 해석합니다. 프로그램 소스에 코드를 삽입하여 컴파일러가 컴파일할 수 있게 하는 특성도 있습니다. 이렇게 코드를 삽입하면 프로그래머가 써야 하는 코드의 양이 줄어들어 보다 쉽게 프로그래밍할 수 있습니다. 그러나 삽입된 코드를 실행하는 동안 때때로 버그가 발생하여 애플리케이션에 문제가 생기기도 합니다. 이런 경우에는 삽입된 코드를 살펴보아야 할 수 있습니다. Visual Studio에서는 두 가지 방법으로 삽입된 코드를 볼 수 있습니다.
+특성을 사용하면 C++ 프로그래밍을 매우 단순화할 수 있습니다. 자세한 내용은 [개념](/cpp/windows/attributed-programming-concepts)을 참조하세요. 일부 특성은 컴파일러가 직접 해석합니다. 프로그램 소스에 코드를 삽입하여 컴파일러가 컴파일할 수 있게 하는 특성도 있습니다. 이렇게 코드를 삽입하면 프로그래머가 써야 하는 코드의 양이 줄어들어 보다 쉽게 프로그래밍할 수 있습니다. 그러나 때때로 버그가 발생하여 삽입된 코드를 실행하는 동안 애플리케이션에 문제가 생기기도 합니다. 이런 경우에는 삽입된 코드를 볼 수 있습니다. Visual Studio에서는 두 가지 방법으로 삽입된 코드를 볼 수 있습니다.
 
 - **디스어셈블리** 창에서 삽입된 코드를 볼 수 있습니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "62847787"
 
 2. **디버그** 메뉴에서 **창**을 선택하고 **디스어셈블리**를 클릭합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [디버거 보안](../debugger/debugger-security.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

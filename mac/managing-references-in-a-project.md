@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.openlocfilehash: a14630c5448632a939e1768040b910caf6276c2a
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692912"
 ---
 # <a name="managing-references-in-a-project"></a>프로젝트에서 참조 관리
@@ -18,7 +18,7 @@ Mac용 Visual Studio에서는 프로젝트에 참조를 추가하기 위한 두 
 
 ![프로젝트 참조](media/projects-and-solutions-image10.png)
 
-이러한 방법은 다음과 같습니다.
+다음과 같습니다.
 
 * 참조
 * NuGets(패키지 폴더를 통해 추가)

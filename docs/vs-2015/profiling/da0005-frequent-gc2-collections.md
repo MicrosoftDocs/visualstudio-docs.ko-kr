@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 74091a3fe2da42ce3a9d16fdfa581d7774492574
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 46e03ecb00e4a5733039e003d170f3cfe0a854ee
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852304"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586958"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: GC2 컬렉션이 많습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ RuleId|DA0005|
   
  0세대의 개체는 빈번하게, 보통 매우 효율적으로 수집됩니다. 1세대의 개체는 덜 빈번하게, 덜 효율적으로 수집됩니다. 마지막으로 2세대의 장기 유지 개체는 훨씬 덜 빈번하게 수집되어야 합니다. 전체 가비지 수집 실행을 나타내는 2세대 수집은 가장 부담이 큰 작업이기도 합니다.  
   
- 2세대 수집이 상대적으로 너무 많이 발생한 경우 이 규칙이 실행됩니다. 너무 많은 상대적 단기 유지 개체가 1세대 수집에서 생존하지만 2세대 전체 수집에서 이를 수집할 수 있다면 메모리 관리 비용이 쉽게 과도해질 수 있습니다. 자세한 내용은 MSDN 웹 사이트의 Rico Mariani의 Performance Tidbits에서 [Mid-life crisis](https://blogs.msdn.com/ricom/archive/2003/12/04/41281.aspx)(중간 수명의 위기) 게시물을 참조하세요.  
+ 2세대 수집이 상대적으로 너무 많이 발생한 경우 이 규칙이 실행됩니다. 너무 많은 상대적 단기 유지 개체가 1세대 수집에서 생존하지만 2세대 전체 수집에서 이를 수집할 수 있다면 메모리 관리 비용이 쉽게 과도해질 수 있습니다. 자세한 내용은 MSDN 웹 사이트의 Rico Mariani의 Performance Tidbits에서 [Mid-life crisis](https://docs.microsoft.com/archive/blogs/ricom/mid-life-crisis)(중간 수명의 위기) 게시물을 참조하세요.  
   
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
  [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md) 보고서를 검토하여 애플리케이션의 메모리 할당 패턴을 파악합니다. [개체 수명 뷰](../profiling/object-lifetime-view.md)를 사용하여 프로그램의 어떤 데이터 개체가 2세대로 생존하고 2세대에서 회수되는지 확인합니다. [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 사용하여 이러한 할당이 시작된 실행 경로를 확인합니다.  

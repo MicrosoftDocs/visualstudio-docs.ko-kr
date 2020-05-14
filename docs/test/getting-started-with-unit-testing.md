@@ -1,6 +1,6 @@
 ---
-title: 유닛 테스트 시작
-ms.date: 04/01/2019
+title: 단위 테스트 시작
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,33 +9,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596478"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153042"
 ---
-# <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
+# <a name="get-started-with-unit-testing"></a>단위 테스트 시작
 
 Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코드 상태를 유지 관리하고, 코드 적용 범위를 확인하고 , 고객이 찾기 전에 오류와 결함을 찾을 수 있습니다. 단위 테스트를 수시로 실행하여 코드가 올바르게 작동하는지 확인합니다.
 
 ## <a name="create-unit-tests"></a>단위 테스트 만들기
 
-이 섹션에서는 단위 테스트 프로젝트를 만드는 방법을 개략적으로 설명합니다.
+이 섹션에서는 단위 테스트 프로젝트를 만드는 방법을 설명합니다.
 
 1. Visual Studio에서 테스트할 프로젝트를 엽니다.
 
-   예제 단위 테스트를 보여 주기 위해 이 문서에서는 간단한 “Hello World” 프로젝트를 테스트합니다. 이러한 프로젝트의 샘플 코드는 다음과 같습니다.
+   예제 단위 테스트를 보여 주기 위해 이 문서에서는 **HelloWorldCore**라는 간단한 “Hello World” 프로젝트를 테스트합니다. 이러한 프로젝트의 샘플 코드는 다음과 같습니다.
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. **솔루션 탐색기**에서 솔루션 노드를 선택합니다. 그런 다음, 상단 메뉴 모음에서 **파일** > **추가** > **새 프로젝트**를 선택합니다.
@@ -70,14 +72,81 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
 1. 단위 테스트 메서드에 코드를 추가합니다.
 
-   ![Visual Studio에서 단위 테스트 메서드에 코드 추가](media/vs-2019/unit-test-method.png)
+   예를 들어 MSTest 테스트 프로젝트의 경우 다음 코드를 사용할 수 있고
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
+   NUnit 테스트 프로젝트의 경우에는 다음 코드를 사용할 수 있습니다.
+
+   ```csharp
+   using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
-> 단위 테스트 만들기에 대한 자세한 연습은 [관리 코드에 대한 단위 테스트 만들기 및 실행](walkthrough-creating-and-running-unit-tests-for-managed-code.md)를 참조하세요.
+> 단위 테스트 만들기에 대한 자세한 내용은 [관리 코드에 대한 단위 테스트 만들기 및 실행](walkthrough-creating-and-running-unit-tests-for-managed-code.md)을 참조하세요.
 
 ## <a name="run-unit-tests"></a>단위 테스트 실행
 
-1. 상단 메뉴 모음에서 **테스트** > **Windows** > **테스트 탐색기**를 선택하여 [테스트 탐색기](../test/run-unit-tests-with-test-explorer.md)를 엽니다.
+1. [테스트 탐색기](../test/run-unit-tests-with-test-explorer.md)를 엽니다.
+
+   ::: moniker range=">=vs-2019"
+   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **테스트 탐색기**를 선택합니다.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **Windows** > **테스트 탐색기**를 선택합니다.
+   ::: moniker-end
 
 1. **모두 실행**을 클릭하여 단위 테스트를 실행합니다.
 
@@ -132,7 +201,7 @@ IntelliTest를 실행하면 오류가 발생하는 테스트를 확인하고 필
 
 ## <a name="analyze-code-coverage"></a>코드 검사 분석
 
-프로젝트의 코드 중 유닛 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정하려면 Visual Studio의 코드 검사 기능을 사용합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행해야 합니다. 방법을 알아보려면 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
+프로젝트의 코드 중 단위 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정하려면 Visual Studio의 코드 검사 기능을 사용합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행해야 합니다. 방법을 알아보려면 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 
 ## <a name="use-a-third-party-test-framework"></a>타사 테스트 프레임워크 사용
 

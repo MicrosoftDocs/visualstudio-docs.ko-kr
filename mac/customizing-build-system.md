@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128385"
 ---
 # <a name="customizing-the-build-system"></a>빌드 시스템 사용자 지정
@@ -20,7 +20,7 @@ Microsoft Build Engine은 애플리케이션을 빌드하기 위한 플랫폼입
 
 ## <a name="msbuild-file"></a>MSBuild 파일
 
-MSBuild는 프로젝트 파일이라는 XML 파일을 사용합니다. 이 파일은 프로젝트의 일부인 *항목*(예: 이미지 리소스)과 프로젝트를 빌드하는 데 필요한 *속성*을 정의합니다. 이 프로젝트 파일의 파일 확장명은 C# 프로젝트의 `.csproj`와 같이 항상 `proj`로 끝납니다.
+MSBuild는 프로젝트 파일이라는 XML 파일을 사용합니다. 이 파일은 프로젝트의 일부인 *항목*(예: 이미지 리소스)과 프로젝트를 빌드하는 데 필요한 *속성*을 정의합니다. 이 프로젝트 파일의 파일 확장명은 C# 프로젝트의 `proj`와 같이 항상 `.csproj`로 끝납니다.
 
 ### <a name="viewing-the-msbuild-file"></a>MSBuild 파일 보기
 
@@ -48,13 +48,13 @@ Mac용 Visual Studio의 새 탭에서 `.csproj`를 표시하려면 프로젝트 
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
-대상 파일은 다른 MSBuild 파일입니다. 이 파일에는 여러 프로젝트에서 다시 사용할 수 있는 MSBuild 코드가 들어 있습니다. 예를 들어 `MSBuildBinPath` 속성(또는 변수)이 나타내는 디렉터리의 `Microsoft.CSharp.targets` 파일에는 C# 소스 파일에서 C# 어셈블리를 빌드하기 위한 논리가 포함되어 있습니다.
+대상 파일은 다른 MSBuild 파일입니다. 이 파일에는 여러 프로젝트에서 다시 사용할 수 있는 MSBuild 코드가 들어 있습니다. 예를 들어 `Microsoft.CSharp.targets` 속성(또는 변수)이 나타내는 디렉터리의 `MSBuildBinPath` 파일에는 C# 소스 파일에서 C# 어셈블리를 빌드하기 위한 논리가 포함되어 있습니다.
 
 ### <a name="items-and-properties"></a>항목 및 속성
 
 MSBuild에는 두 가지 기본적인 데이터 형식인 ‘항목’ 및 ‘속성’이 있습니다. 두 데이터 형식은 다음 섹션에서 자세히 설명합니다.  
 
-#### <a name="properties"></a>properties
+#### <a name="properties"></a>속성
 
 속성은 키/값 쌍으로, 컴파일러 옵션 등 컴파일에 영향을 주는 설정을 저장하는 데 사용됩니다.
 

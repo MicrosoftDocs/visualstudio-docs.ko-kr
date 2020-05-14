@@ -5,17 +5,17 @@ ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118795"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579892"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기
 
@@ -28,7 +28,7 @@ ms.locfileid: "71118795"
 1. 그림을 열기 전에 **배경색 설정** 단추를 선택합니다. **색** 대화 상자가 열립니다.
 
      ![색 대화 상자](../ide/media/express_colordialog.png)<br/>
-***색*** *대화 상자*
+***색*** 대화 상자 
 
 1. PictureBox 배경색으로 설정할 색을 선택합니다. `backgroundButton_Click()`(또는 `BackgroundButton_Click()`) 메서드가 어떤 식으로 작동하는지 자세히 살펴봅니다.
 
@@ -49,14 +49,14 @@ ms.locfileid: "71118795"
 
 ## <a name="next-steps"></a>다음 단계
 
-자세히 알아보려면 다음 자습서를 계속합니다.
+자세히 알아보려면 계속 다음 자습서를 사용하세요.
 
 > [!div class="nextstepaction"]
 > [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
 이전 자습서 단계로 돌아가려면 [10단계: 추가 단추 및 확인란에 대한 코드 작성](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [추가 C# 자습서](/visualstudio/get-started/csharp/)
 * [추가 Visual Basic 자습서](/visualstudio/get-started/visual-basic/)

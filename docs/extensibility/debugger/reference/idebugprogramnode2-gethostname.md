@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostName | Microsoft Docs
+title: 아이디버그프로그램노드2:겟호스트네임 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostName
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61e38cbb41cc6503ee39072c99ffcbee9f08a4a3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 028ee16e7b9c5a30effc683494f68b2bd4eb604f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351125"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722059"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 프로그램을 호스팅하는 프로세스의 이름을 가져옵니다.
@@ -43,16 +43,16 @@ int GetHostName (
 
 ## <a name="parameters"></a>매개 변수
 `dwHostNameType`\
-[in] 값을 [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) 반환할 이름의 형식을 지정 하는 열거형입니다.
+【인】 반환할 이름의 형식을 지정하는 [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) 열거형의 값입니다.
 
 `pbstrHostName`\
-[out] 호스팅 프로세스의 이름을 반환합니다.
+【아웃】 호스팅 프로세스의 이름을 반환합니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 노출 하는 개체를 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스입니다. 이 예제에서는 무시는 `dwHostNameType` 매개 변수에서 모듈의 파일 경로의 기본 이름에서 가져온 대로 프로그램의 이름만 반환 합니다.
+다음 예제에서는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) `CProgram` 인터페이스를 노출 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다. 이 예제에서는 `dwHostNameType` 매개 변수를 무시하고 모듈의 파일 경로의 기본 이름에서 가져온 프로그램 이름만 반환합니다.
 
 ```cpp
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {
@@ -96,7 +96,7 @@ HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

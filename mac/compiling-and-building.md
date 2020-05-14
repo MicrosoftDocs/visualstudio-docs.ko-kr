@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128413"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 컴파일 및 빌드
@@ -55,6 +55,6 @@ Mac용 Visual Studio를 사용하여 다음 작업을 수행할 수도 있습니
     ![사용자 지정 명령 추가](media/compiling-and-building-image6.png)
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [컴파일 및 빌드(Windows의 Visual Studio)](/visualstudio/ide/compiling-and-building-in-visual-studio)

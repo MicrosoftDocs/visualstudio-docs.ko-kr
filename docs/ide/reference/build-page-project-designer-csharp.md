@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76923261"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
@@ -36,7 +36,7 @@ ms.locfileid: "76923261"
 > [!NOTE]
 > 단순화된 빌드 구성을 사용하면 프로젝트 시스템에서 디버그 버전을 빌드할지 아니면 릴리스 버전을 빌드할지 결정합니다. 따라서 이러한 옵션이 표시되지 않습니다. 자세한 내용은 [방법: 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
-**구성**
+**Configuration**
 
 표시하거나 수정할 구성 설정을 지정합니다. **활성(디버그)** (기본값), **디버그**, **릴리스** 또는 **모든 구성** 중에서 설정을 선택할 수 있습니다.
 
@@ -135,7 +135,7 @@ ms.locfileid: "76923261"
 
 **COM interop 등록**
 
-관리되는 애플리케이션이 COM 개체가 관리되는 애플리케이션과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 애플리케이션에 대한 **프로젝트 디자이너**의 [애플리케이션 페이지](../../ide/reference/application-page-project-designer-visual-basic.md)에서 **출력 형식** 속성을 **클래스 라이브러리**로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 애플리케이션에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
+관리되는 애플리케이션이 COM 개체가 관리되는 애플리케이션과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 애플리케이션에 대한 [프로젝트 디자이너](../../ide/reference/application-page-project-designer-visual-basic.md)의 **애플리케이션 페이지**에서 **출력 형식** 속성을 **클래스 라이브러리**로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 애플리케이션에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
 
 **serialization 어셈블리 생성**
 
@@ -145,7 +145,7 @@ XML serialization 어셈블리를 만드는 데 XML 직렬 변환기 생성기 �
 
 [고급 빌드 설정 대화 상자(C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) 대화 상자를 표시하려면 클릭합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)
 - [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)

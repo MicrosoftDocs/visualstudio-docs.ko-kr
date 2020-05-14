@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779872"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>명령줄에서 계층 상호 작용 데이터 추가
@@ -36,7 +36,7 @@ Windows 8 데스크톱 앱 및 Windows Server 2012 앱에서 계층 상호 작�
 
 **TIP 보고서**
 
-계층 상호 작용 데이터는 Visual Studio Enterprise에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서는 사용할 수 없습니다.
+계층 상호 작용 데이터는 Visual Studio Enterprise에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서를 사용할 수 없습니다.
 
 ## <a name="add-tier-interaction-data-with-vsperfcmd"></a>VSPerfCmd를 사용하여 계층 상호 작용 데이터 추가
 

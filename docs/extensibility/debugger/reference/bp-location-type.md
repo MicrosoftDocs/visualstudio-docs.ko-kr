@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE | Microsoft Docs
+title: BP_LOCATION_TYPE | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50e6bdc0dba8f6bcbdd55c45132dff02735786d6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353042"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737946"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
-중단점 요청에 대 한 중단점 위치 유형을 지정합니다.
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
+중단점 요청에 대한 중단점의 위치 유형을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -70,65 +70,65 @@ public enum enum_BP_LOCATION_TYPE {
 
 ## <a name="fields"></a>필드
 `BPLT_NONE`\
-없는 중단점 위치를 지정합니다.
+중단점 위치를 지정하지 않습니다.
 
 `BPLT_FILE_LINE`\
-파일 줄으로 중단점의 위치 유형을 지정합니다.
+중단점의 위치 유형을 파일 줄로 지정합니다.
 
 `BPLT_FUNC_OFFSET`\
-중단점 위치 형식 함수 오프셋으로 지정합니다.
+중단점의 위치 유형을 함수 오프셋으로 지정합니다.
 
 `BPLT_CONTEXT`\
-중단점 위치 유형을 컨텍스트로 지정합니다.
+중단점의 위치 유형을 컨텍스트로 지정합니다.
 
 `BPLT_STRING`\
-중단점 위치 형식의 문자열로 지정합니다.
+중단점의 위치 유형을 문자열로 지정합니다.
 
 `BPLT_ADDRESS`\
-주소로 중단점의 위치 유형을 지정합니다.
+중단점의 위치 유형을 주소로 지정합니다.
 
 `BPLT_RESOLUTION`\
-중단점 위치 형식 해상도로 지정합니다.
+중단점의 위치 유형을 해상도로 지정합니다.
 
 `BPLT_CODE_FILE_LINE`\
-소스 코드의 줄으로 중단점의 위치 유형을 지정합니다.
+중단점의 위치 유형을 소스 코드 줄로 지정합니다.
 
 `BPLT_CODE_FUNC_OFFSET`\
-코드 함수 오프셋으로 중단점의 위치 유형을 지정합니다.
+중단점의 위치 유형을 코드 함수 오프셋으로 지정합니다.
 
 `BPLT_CODE_CONTEXT`\
-코드 컨텍스트로 중단점의 위치 유형을 지정합니다.
+중단점의 위치 유형을 코드 컨텍스트로 지정합니다.
 
 `BPLT_CODE_STRING`\
-중단점 위치 형식 코드 문자열로 지정합니다.
+중단점의 위치 형식을 코드 문자열로 지정합니다.
 
 `BPLT_CODE_ADDRESS`\
-중단점 위치 형식 코드 주소로 지정합니다.
+중단점의 위치 유형을 코드 주소로 지정합니다.
 
 `BPLT_DATA_STRING`\
-중단점 위치 형식 데이터 문자열로 지정합니다.
+중단점의 위치 유형을 데이터 문자열로 지정합니다.
 
 `BPLT_TYPE_MASK`\
-중단점 형식 값에서 추출할 수 있도록 하는 비트 마스크를 지정 합니다.
+비트 마스크를 지정하여 중단점 유형을 값에서 추출할 수 있도록 합니다.
 
 `BPLT_LOCATION_TYPE_MASK`\
-중단점 위치 유형 값에서 추출할 수 있도록 하는 비트 마스크를 지정 합니다.
+중단점 위치 유형을 값에서 추출할 수 있도록 비트 마스크를 지정합니다.
 
 ## <a name="remarks"></a>설명
-매개 변수로 전달 된 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) 메서드.
+[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) 메서드에 매개 변수로 전달 되었습니다.
 
-중단점 위치 유형 및 위치 형식이 중단점 형식으로 구성 됩니다. 즉, 중단점 위치 형식 중단점 유형 뿐 되지 (예를 들어 `BPT_CODE`) 또는 위치 형식 (예를 들어 `BPLT_FILE_LINE`). 이 열거형에 포함 된 현재 지원 되는 모든 중단점 위치 형식에 대 한 미리 정의 된 상수 (`BPLT_CODE_FILE_LINE` 를 통해 `BPLT_DATA_STRING`).
+중단점 위치 유형은 중단점 유형과 위치 유형으로 구성됩니다. 즉, 중단점 위치 형식은 중단점 유형(예: `BPT_CODE`위치 유형)이 `BPLT_FILE_LINE`아닙니다. 현재 지원되는 모든 중단점 위치 유형에 대해 미리 정의된 상수는 `BPLT_DATA_STRING`이 열거형(through)에`BPLT_CODE_FILE_LINE` 포함됩니다.
 
-`BPT_CODE` 및 `BPT_DATA` 의 멤버인 합니다 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거형입니다.
+`BPT_CODE``BPT_DATA` [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거형의 구성원입니다.
 
 ## <a name="requirements"></a>요구 사항
 헤더: msdbg.h
 
-네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
-어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

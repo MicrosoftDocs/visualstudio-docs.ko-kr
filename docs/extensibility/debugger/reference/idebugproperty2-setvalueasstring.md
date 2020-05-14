@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Microsoft Docs
+title: 아이디버그프로퍼피2::세트밸류아스스트링 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27b481165cf95a97d7674d52d8553426dfb6417c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 112ded163f38b93e9918387d8ca6beafb8282647
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721246"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-지정된 된 문자열에서 속성의 값을 설정 합니다.
+지정된 문자열에서 속성값을 설정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,21 +45,21 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>매개 변수
 `pszValue`\
-[in] 설정할 값이 들어 있는 string입니다.
+【인】 설정할 값을 포함하는 문자열입니다.
 
 `nRadix`\
-[in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다. 이 0을 기 수를 자동으로 확인 하도록 수 있습니다.
+【인】 모든 수치 정보를 해석하는 데 사용되는 방사형입니다. 이 경우 Radix를 자동으로 확인하려면 0이 될 수 있습니다.
 
 `dwTimeout`\
-[in] 이 메서드에서 반환 되기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.
+【인】 이 메서드에서 반환하기 전에 기다릴 최대 시간(밀리초)을 지정합니다. 무기한 `INFINITE` 대기하는 데 사용합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서 가능한 다른 값을 보여 줍니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 다음 표에서는 다른 가능한 값을 보여 주며 있습니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|문자열 속성 값으로 변환할 수 없습니다 또는 속성 값을 설정할 수 없습니다.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|문자열을 속성 값으로 변환할 수 없거나 속성 값을 설정할 수 없습니다.|
 |`E_SETVALUE_VALUE_IS_READONLY`|속성이 읽기 전용입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

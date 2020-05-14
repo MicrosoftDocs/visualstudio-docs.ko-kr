@@ -1,5 +1,5 @@
 ---
-title: 'DA0021: Gen 1 가비지 수집의 비율이 높습니다. | Microsoft Docs'
+title: 'DA0021: Gen 1 가비지 컬렉션의 비율이 높습니다. | Microsoft 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 36350b59a3d70f8553fddc5f58bf5c79716fa3aa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777662"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Gen 1 가비지 수집의 비율이 높습니다.
@@ -25,7 +25,7 @@ ms.locfileid: "74777662"
 |||
 |-|-|
 |규칙 ID|DA0021|
-|범주|.NET Framework 사용|
+|Category|.NET Framework 사용|
 |프로파일링 방법|모두|
 |메시지|Gen 1 가비지 수집의 비율이 상당히 높습니다. 의도적으로 프로그램의 데이터 구조가 대다수 오랜 시간 동안 할당되고 지속되는 경우 일반적으로 이러한 현상은 문제가 되지 않습니다. 하지만 이러한 동작이 의도되지 않은 경우에는 애플리케이션이 개체를 고정하고 있는 것일 수 있습니다. 확실하지 않으면 .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|
 |규칙 유형|정보|

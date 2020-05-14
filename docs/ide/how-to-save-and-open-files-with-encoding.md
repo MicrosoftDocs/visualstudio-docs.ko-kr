@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596179"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>방법: 인코딩을 사용하여 파일 저장 및 열기
@@ -56,7 +56,7 @@ ms.locfileid: "75596179"
 
 3. 이전 절차에서 2단계 및 3단계를 수행합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [인코딩 및 줄 바꿈](encodings-and-line-breaks.md)
 - [인코딩 및 Windows Forms 전역화](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

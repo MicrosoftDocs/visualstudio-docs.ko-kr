@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74538569"
 ---
 # <a name="team-explorer-reference"></a>팀 탐색기 참조
@@ -20,7 +20,7 @@ ms.locfileid: "74538569"
 
 ## <a name="home-page"></a>홈 페이지
 
-**팀 탐색기**에서 [프로젝트에 연결](../connect-team-project.md)한 후 **프로젝트** 섹션에서 다음 링크를 사용할 수 있습니다.
+[팀 탐색기](../connect-team-project.md)에서 **프로젝트에 연결**한 후 **프로젝트** 섹션에서 다음 링크를 사용할 수 있습니다.
 
 - [리포지토리 복제](/azure/devops/repos/git/clone)
 - [웹 포털](/azure/devops/project/navigation/index)
@@ -69,7 +69,7 @@ ms.locfileid: "74538569"
 
 ## <a name="work-items-page"></a>작업 항목 페이지
 
-**작업 항목** 페이지에서는 [작업 항목](/azure/devops/boards/work-items/about-work-items) 쿼리를 볼 수 있습니다. 참조
+**작업 항목** 페이지에서는 [작업 항목](/azure/devops/boards/work-items/about-work-items) 쿼리를 볼 수 있습니다. 다음을 참조하세요.
 
 - [작업 항목 추가](/azure/devops/boards/backlogs/add-work-items)
 - [쿼리 편집기를 사용하여 쿼리 나열 및 관리](/azure/devops/boards/queries/using-queries)
@@ -90,7 +90,7 @@ ms.locfileid: "74538569"
 
 **빌드** 페이지에서 프로젝트에 대한 빌드 정의를 볼 수 있습니다.
 
-참조
+다음을 참조하세요.
 
 - [빌드 파이프라인 만들기](/azure/devops/pipelines/tasks/index)
 - [빌드 보기 및 관리](/azure/devops/pipelines/overview)
@@ -102,7 +102,7 @@ ms.locfileid: "74538569"
 
 **설정** 페이지에서 프로젝트 또는 팀 프로젝트 컬렉션에 대한 관리 기능을 구성할 수 있습니다. 다음 문서를 참조하세요.
 
-| 프로젝트 | 프로젝트 컬렉션 | 기타 |
+| Project | 프로젝트 컬렉션 | 기타 |
 | - | - | - |
 | [보안, 그룹 멤버 자격](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[보안, 소스 제어(TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[작업 항목 영역](/azure/devops/organizations/settings/set-area-paths)<br/>[작업 항목 반복](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[포털 설정](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[프로젝트 경고](/azure/devops/notifications/howto-manage-team-notifications) | [보안, 그룹 멤버 자격](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[소스 제어(TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[프로세스 템플릿 관리자](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git 글로벌 설정](/azure/devops/repos/git/git-config)<br/>[Git 리포지토리 설정](/azure/devops/repos/git/git-config) |
 

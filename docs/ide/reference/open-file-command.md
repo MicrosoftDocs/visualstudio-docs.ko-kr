@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591517"
 ---
 # <a name="open-file-command"></a>파일 열기 명령
@@ -35,13 +35,13 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-필수 요소. 열려는 파일의 전체 또는 부분 경로와 파일 이름입니다. 공백을 포함한 경로는 따옴표로 묶어야 합니다.
+필수 사항입니다. 열려는 파일의 전체 또는 부분 경로와 파일 이름입니다. 공백을 포함한 경로는 따옴표로 묶어야 합니다.
 
 ## <a name="switches"></a>스위치
 
 /e:`editorname`
 
-선택 사항입니다. 파일이 열리는 편집기의 이름입니다. 편집기 이름을 제공하지 않고 인수를 지정한 경우 **연결 프로그램** 대화 상자가 나타납니다.
+(선택 사항) 파일이 열리는 편집기의 이름입니다. 편집기 이름을 제공하지 않고 인수를 지정한 경우 **연결 프로그램** 대화 상자가 나타납니다.
 
 /e:`editorname` 인수 구문은 연결 프로그램 대화 상자에 따옴표로 묶여 나타나는 편집기 이름을 사용합니다.
 
@@ -63,7 +63,7 @@ File.OpenFile filename [/e:editorname]
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

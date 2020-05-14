@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114545"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>방법: 프로젝트 종속성 만들기 및 제거
@@ -61,7 +61,7 @@ ms.locfileid: "76114545"
 
 4. **다음에 종속** 필드에서 더 이상 이 프로젝트의 종속성이 아닌 모든 다른 프로젝트 옆의 확인란을 선택 취소합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)

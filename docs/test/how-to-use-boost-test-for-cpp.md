@@ -9,10 +9,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0a1a621c7ee7175d86b2cbcf9a6e2c02c0aecbb3
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76922917"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio에서 Boost.Test for C++를 사용하는 방법

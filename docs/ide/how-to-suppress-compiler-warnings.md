@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114502"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 
-하나 이상 종류의 컴파일러 경고를 필터링하여 빌드 로그를 정리할 수 있습니다. 예를 들어 빌드 로그 세부 정보 표시를 **일반**, **자세히** 또는 **진단**으로 설정할 때 생성되는 출력 중 일부만 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
+하나 이상 종류의 컴파일러 경고를 필터링하여 빌드 로그를 정리할 수 있습니다. 예를 들어 빌드 로그 세부 정보 표시를 **일반**, **자세히** 또는 **진단**으로 설정할 때 생성되는 출력 중 일부만 검토할 수 있습니다. 세부 정보 표시에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# 또는 F\#에 대한 특정 경고 표시 안 함
 
@@ -69,7 +69,7 @@ ms.locfileid: "76114502"
 
 1. 빌드 중인 빌드 구성에 대한 `<NoWarn>` 요소를 찾고 하나 이상의 경고 번호를 `<NoWarn>` 요소의 값으로 추가합니다. 여러 경고 번호를 지정하는 경우 쉼표로 구분합니다.
 
-     다음 예제는 두 개의 컴파일러 경고가 표시되지 않는 x86 플랫폼의 *디버그* 빌드 구성에 대한 `<NoWarn>` 요소를 보여줍니다.
+     다음 예제는 두 개의 컴파일러 경고가 표시되지 않는 x86 플랫폼의 `<NoWarn>`디버그*빌드 구성에 대한* 요소를 보여줍니다.
 
     ```xml
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -87,7 +87,7 @@ ms.locfileid: "76114502"
     ```
 
    > [!NOTE]
-   > .NET Core 프로젝트는 기본적으로 빌드 구성 속성 그룹을 포함하지 않습니다. .NET Core 프로젝트에서 경고를 표시하지 않으려면 빌드 구성 섹션을 파일에 수동으로 추가합니다. 예:
+   > .NET Core 프로젝트는 기본적으로 빌드 구성 속성 그룹을 포함하지 않습니다. .NET Core 프로젝트에서 경고를 표시하지 않으려면 빌드 구성 섹션을 파일에 수동으로 추가합니다. 다음은 그 예입니다.
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -130,7 +130,7 @@ ms.locfileid: "76114502"
 
    **솔루션 탐색기** 및 **오류 목록**에서 경고가 사라집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)
 - [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)

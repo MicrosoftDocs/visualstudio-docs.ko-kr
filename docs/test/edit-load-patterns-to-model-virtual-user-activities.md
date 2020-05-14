@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590308"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>모델 가상 사용자 동작에 대한 부하 패턴 편집
@@ -30,7 +30,7 @@ ms.locfileid: "75590308"
 
 ## <a name="load-patterns"></a>부하 패턴
 
-### <a name="constant"></a>상수
+### <a name="constant"></a>지속적임
 
 일정 부하 패턴은 부하 테스트를 실행하는 동안 변경되지 않는 사용자 부하를 지정하는 데 사용됩니다. 예를 들어 웹 애플리케이션에서 스모크 테스트를 실행하는 경우 일정 부하를 사용자 10명으로 적게 설정할 수 있습니다.
 
@@ -81,8 +81,8 @@ ms.locfileid: "75590308"
 
 |속성 그룹|속성|값|
 |-|--------------|-|
-|성능 카운터|범주|프로세서|
-|성능 카운터|컴퓨터|ContosoServer1|
+|성능 카운터|Category|프로세서|
+|성능 카운터|Computer|ContosoServer1|
 |성능 카운터|카운터|% Processor Time|
 |성능 카운터|인스턴스|_Total|
 |성능 카운터의 대상 범위|최대값|90|
@@ -93,7 +93,7 @@ ms.locfileid: "75590308"
 |사용자 수 제한|최대 사용자 수 증가|5|
 |사용자 수 제한|최소 사용자 수|1|
 
-위와 같이 설정하면 **부하 테스트 분석기**에서 테스트 실행 도중 WebServer01의 `% Processor Time`에 대한 **카운터**가 `70%`에서 `90%.` 사이로 유지되도록 사용자 부하가 1에서 100까지 조정됩니다.
+위와 같이 설정하면 **부하 테스트 분석기**에서 테스트 실행 도중 WebServer01의 **에 대한** 카운터`% Processor Time`가 `70%`에서 `90%.` 사이로 유지되도록 사용자 부하가 1에서 100까지 조정됩니다.
 
 각 사용자 부하를 조정하는 크기는 **최대 사용자 수 증가**와 **최대 사용자 수 감소** 설정에 따라 결정됩니다. 사용자 수 제한은 **최대 사용자 수**와 **최소 사용자 수** 속성에 따라 설정됩니다.
 
@@ -110,9 +110,9 @@ ms.locfileid: "75590308"
 |작업|관련 항목|
 |-|-----------------------|
 |**부하 테스트에 대한 초기 부하 패턴 지정:** **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 부하 패턴을 선택합니다.|-   [부하 패턴 변경](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**부하 테스트에 대한 부하 패턴 편집:** 부하 테스트를 만든 후에 **부하 테스트 편집기**에서 부하 패턴을 편집할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**부하 테스트 시나리오의 가상 사용자가 웹 캐시 데이터를 포함해야 하는지 여부 지정:** 부하 테스트에서 가상 사용자를 위한 웹 브라우저가 수행하는 웹 캐시 작업을 시뮬레이트하는 방식에 영향을 주도록 **새 사용자의 백분율** 속성을 변경할 수 있습니다.|-   [방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**단계 부하 패턴에 단계 진입 시간 지정:** **단계 진입 시간** 속성을 사용하면 사용자 수를 100명에서 200명으로 늘리는 것과 같이 한 단계에서 다음 단계로 부하를 증가시키는 작업이 즉각적으로가 아니라 점차적으로 이루어지도록 할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**부하 테스트에 대한 부하 패턴 편집:** 부하 테스트를 만든 다음, **부하 테스트 편집기**에서 부하 패턴을 편집할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**부하 테스트 시나리오의 가상 사용자에 웹 캐시 데이터를 포함해야 하는지 여부 지정:** **새 사용자의 백분율** 속성을 변경하여 부하 테스트가 가상 사용자의 웹 브라우저에서 수행되는 웹 캐싱을 시뮬레이트하는 방식을 조정할 수 있습니다.|-   [방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**단계 부하 패턴에 대한 단계 진입 시간 지정:** **단계 진입 시간** 속성을 사용하면 사용자 수를 100명에서 200명으로 늘리는 것과 같이 한 단계에서 다음 단계로 부하를 증가시키는 작업이 즉각적으로가 아니라 점차적으로 이루어지도록 할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>부하 패턴 변경
 
@@ -150,7 +150,7 @@ ms.locfileid: "75590308"
 
 6. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 부하 패턴으로 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588644"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
@@ -30,10 +30,10 @@ ms.locfileid: "75588644"
 
 다음 표에서는 테스트 컨트롤러와 테스트 에이전트를 배포하기 위한 권장 하드웨어 요구 사항을 보여 줍니다.
 
-|**구성**|**구성 요소**|**CPU**|**HD**|**메모리**|
+|**Configuration**|**구성 요소**|**CPU**|**HD**|**메모리**|
 |-|-------------------|-|------------|-|
-|가상 사용자 수 500명 미만|테스트 에이전트|2.6GHz|10GB|2GB|
-|가상 사용자 수 1000명 미만|테스트 에이전트|이중 프로세서 2.6GHz|10GB|2GB|
+|가상 사용자 수 500명 미만|테스트 에이전트|2.6GHz|10 GB|2GB|
+|가상 사용자 수 1000명 미만|테스트 에이전트|이중 프로세서 2.6GHz|10 GB|2GB|
 |N x 가상 사용자 수 1000명|테스트 에이전트|각각 2.6Ghz의 이중 프로세서가 있는 N개의 에이전트로 확장|10GB|2GB|
 |\< 테스트 환경에서 컴퓨터 수 30대 테스트 대상 서버와 에이전트 포함|Test Controller|2.6GHz|||
 |테스트 환경의 컴퓨터 수 30대의 N배. 테스트 대상 서버와 에이전트 포함|Test Controller|N개의 2.6GHz 프로세서|||
@@ -59,6 +59,6 @@ Visual Studio를 실행하는 서버는 네트워크에 안정적으로 연결�
 
 에이전트 컴퓨터를 모니터링하면 테스트 중에 실행되고 늘어나거나 줄어든 *QTAgent\*.exe* 프로세스를 관찰함으로써 필요한 리소스를 결정할 수 있습니다. *QTAgent\*.exe* 프로세스의 가장 일반적인 병목 현상은 CPU 사용률입니다. CPU 사용률이 지속적으로 90퍼센트 이상을 유지한다면 에이전트의 현재 부하량이 많은 것입니다. 그 다음의 일반적인 병목 현상은 메모리 사용량입니다. 까다로운 테스트의 경우 이러한 리소스를 모니터링함으로써 컴퓨터 리소스를 늘려야 할지 또는 테스트를 다른 방법으로 배포해야 할지를 손쉽게 결정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

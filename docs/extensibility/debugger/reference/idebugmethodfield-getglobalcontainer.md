@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetGlobalContainer | Microsoft Docs
+title: 아이디버그메소드필드::겟글로벌컨테이너 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77f3d82beab43b227dd3beb772dd41353d89b6fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37e3b26a265fe651216e46fa299bdd827416b8ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324182"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727129"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 메서드의 전역 컨테이너를 가져옵니다.
@@ -41,14 +41,14 @@ int GetGlobalContainer(
 
 ## <a name="parameters"></a>매개 변수
 `ppClass`\
-[out] 반환 된 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 이 메서드가 정의 되어 있는 모듈을 나타내는입니다.
+【아웃】 이 메서드가 정의된 모듈을 나타내는 [IDebugClassField를](../../../extensibility/debugger/reference/idebugclassfield.md) 반환합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 반환 된 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 개체는 전체 모듈 나타내며 인위적인 개체, 즉, 모듈 자체는 실제 클래스 없지만로 나타낼 수 있습니다는 `IDebugClassField` 허용 하는 다양 한 개체 열거 하 고 발견 된 모듈의 요소입니다.
+ 반환된 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 개체는 전체 모듈을 나타내며 인공 개체, 즉 모듈 자체에는 실제 클래스가 `IDebugClassField` 없지만 개체로 나타낼 수 있으므로 모듈의 다양한 요소를 열거하고 검색할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

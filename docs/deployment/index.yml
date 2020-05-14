@@ -10,10 +10,10 @@ metadata:
   manager: jillfra
   ms.date: 09/17/2019
   ms.openlocfilehash: a2fc975c390283104fc4aa2c79244dba7e4e669e
-  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/24/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "71238097"
 landingContent:
 - title: 배포 정보
@@ -24,7 +24,7 @@ landingContent:
       url: deploying-applications-services-and-components-resources.md
     - text: 배포 소개
       url: deploying-applications-services-and-components.md
-- title: 시작
+- title: 시작하기
   linkLists:
   - linkListType: quickstart
     links:

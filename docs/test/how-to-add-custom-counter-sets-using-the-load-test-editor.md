@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7438f657af2ba40fbda5afefbd8a12cc56a2a4c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114876"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 사용자 지정 카운터 집합 추가
@@ -46,7 +46,7 @@ ms.locfileid: "76114876"
     > [!NOTE]
     > 기존 카운터 집합을 마우스 오른쪽 단추로 클릭하고 복사를 선택한 다음 카운터 집합 노드에 붙여 넣어 사용자 지정 카운터 집합을 추가할 수도 있습니다. 필요하지 않은 카운터가 추가로 복사된 경우 이를 삭제할 수 있습니다. **속성** 창을 사용하여 새 카운터 집합의 이름을 변경할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)

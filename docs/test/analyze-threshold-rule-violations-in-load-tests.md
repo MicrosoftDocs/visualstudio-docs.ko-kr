@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591283"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
@@ -34,14 +34,14 @@ ms.locfileid: "75591283"
 
 임계값 위반 테이블에는 처음 1,000개의 위반이 표시됩니다. 이 테이블에는 다음과 같은 열이 있습니다.
 
-|Column|설명|기본적으로 표시되는지 여부|
+|열|Description|기본적으로 표시되는지 여부|
 |-|-|-|
-|Time|부하 테스트 도중 위반이 발생한 시간입니다.|예|
-|컴퓨터|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:**  Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|예|
-|범주|위반이 발생한 성능 카운터 범주입니다.|예|
-|카운터|위반이 발생한 성능 카운터 이름입니다.|예|
-|인스턴스|위반이 발생한 성능 카운터 인스턴스입니다.|예|
-|메시지|임계값 위반을 설명하는 메시지입니다. 예: **값 5가 중요 임계값 0을 초과합니다.**|예|
+|Time|부하 테스트 도중 위반이 발생한 시간입니다.|yes|
+|Computer|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:** Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|yes|
+|Category|위반이 발생한 성능 카운터 범주입니다.|yes|
+|카운터|위반이 발생한 성능 카운터 이름입니다.|yes|
+|인스턴스|위반이 발생한 성능 카운터 인스턴스입니다.|yes|
+|메시지|임계값 위반을 설명하는 메시지입니다. 예: **값 5가 중요 임계값 0을 초과합니다.**|yes|
 
 > [!NOTE]
 > 열 머리글을 선택하여 테이블을 정렬할 수 있습니다.
@@ -74,7 +74,7 @@ ms.locfileid: "75591283"
 
 자세한 내용은 [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

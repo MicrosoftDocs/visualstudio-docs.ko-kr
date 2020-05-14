@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 만들기
 description: 기업 내에서 Visual Studio를 배포하기 위한 네트워크 설치 지점을 만드는 방법을 알아봅니다.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115381"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759723"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
@@ -70,7 +70,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ## <a name="create-an-offline-installation-folder"></a>오프라인 설치 관리자 폴더 만들기
 
-이 단계를 완료하려면 인터넷 연결이 있어야 합니다. 모든 언어와 기능을 포함한 오프라인 설치를 만들려면 다음 예제의 명령 중 하나를 사용합니다.
+이 단계를 완료하려면 인터넷에 연결되어 있는 상태여야 합니다. 모든 언어와 기능을 포함한 오프라인 설치를 만들려면 다음 예제의 명령 중 하나를 사용합니다.
 
    > [!IMPORTANT]
    > 전체 Visual Studio 레이아웃에는 최소 35GB의 디스크 공간이 필요하며 다운로드하는 데 약간의 시간이 걸릴 수 있습니다. 설치하려는 구성 요소만 포함하는 레이아웃을 만드는 방법은 [네트워크 레이아웃 사용자 지정](#customize-the-network-layout) 섹션을 참조하세요.
@@ -94,7 +94,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 
 ## <a name="copy-the-layout-to-a-network-share"></a>레이아웃을 네트워크 공유로 복사
 
-다른 컴퓨터에서 실행될 수 있도록 레이아웃을 네트워크 공유에 호스트합니다.
+다른 머신에서 실행될 수 있도록 레이아웃을 네트워크 공유에 호스트합니다.
 
 다음 예제에서는 [xcopy](/windows-server/administration/windows-commands/xcopy/)를 사용합니다. 원하는 경우 [robocopy](/windows-server/administration/windows-commands/robocopy/)를 사용할 수도 있습니다.  
 
@@ -204,7 +204,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 ## <a name="deploy-from-a-network-installation"></a>네트워크 설치에서 배포
 
-관리자는 설치 스크립트의 일부로 Visual Studio를 클라이언트 워크스테이션에 배포할 수 있습니다. 또는 관리자 권한을 가진 사용자는 공유에서 직접 설치 프로그램을 실행하여 Visual Studio를 컴퓨터에 설치할 수 있습니다.
+관리자는 설치 스크립트의 일부로 Visual Studio를 클라이언트 워크스테이션에 배포할 수 있습니다. 또는 관리자 권한을 가진 사용자는 공유에서 직접 설치 프로그램을 실행하여 Visual Studio를 머신에 설치할 수 있습니다.
 
 * 사용자는 다음 명령을 실행하여 설치할 수 있습니다. <br>
 
@@ -237,8 +237,11 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 레이아웃에서 설치하는 경우 설치되는 콘텐츠는 레이아웃에서 가져옵니다. 그러나 레이아웃에 없는 구성 요소를 선택하면 인터넷에서 해당 구성 요소를 가져옵니다.  Visual Studio 설치 프로그램이 레이아웃에 없는 콘텐츠를 다운로드하지 못하도록 하려면 `--noWeb` 옵션을 사용합니다. `--noWeb`을 사용하고 설치하도록 선택한 콘텐츠가 레이아웃에 없으면 설치가 실패합니다.
 
+> [!TIP]
+> 인터넷에 연결되지 않은 컴퓨터에서 오프라인 소스를 설치하려면 `--noWeb` 및 `--noUpdateInstaller` 옵션을 모두 지정합니다. 앞의 옵션은 업데이트된 워크로드, 구성 요소 등을 다운로드하지 못하게 하고, 뒤의 옵션은 설치 프로그램이 웹에서 자체 업데이트되지 못하게 합니다.
+
 > [!IMPORTANT]
-> `--noWeb` 옵션은 Visual Studio 설치 프로그램에서 업데이트를 확인하는 과정을 허용합니다. 자세한 내용은 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md) 페이지를 참조하세요.
+> `--noWeb` 옵션은 인터넷에 연결된 컴퓨터의 Visual Studio 설정에서 업데이트를 확인하도록 허용합니다. 자세한 내용은 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md) 페이지를 참조하세요.
 
 ### <a name="error-codes"></a>오류 코드
 
@@ -280,7 +283,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 오프라인 설치에 문제가 발생하는 경우와 관련하여 자세히 알려고 합니다. [문제 보고](../ide/how-to-report-a-problem-with-visual-studio.md)를 사용하여 알리는 것이 가장 좋습니다. 이 도구를 사용하면 문제를 진단하고 해결하는 데 필요한 원격 분석과 로그를 보낼 수 있습니다.
 
-설치 관련 문제는 [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어만 가능) 지원 옵션도 제공합니다.
+설치 관련 문제를 위한 [**설치 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어만 가능) 지원 옵션도 제공됩니다.
 
 사용 가능한 다른 지원 옵션도 있습니다. 목록은 [피드백](../ide/feedback-options.md) 페이지를 참조하세요.
 
@@ -294,3 +297,4 @@ vs_enterprise.exe --layout c:\VSLayout --all
 - [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md)
 - [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
+- [Visual Studio 오프라인 설치에 필요한 인증서 설치](install-certificates-for-visual-studio-offline.md)

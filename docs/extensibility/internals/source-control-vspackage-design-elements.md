@@ -1,24 +1,24 @@
 ---
-title: 소스 제어 VSPackage 디자인 요소를 | Microsoft Docs
+title: 소스 제어 VS패키지 설계 요소 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e9b22ea32698d6e996bfee618b0b5ca4da5943d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322474"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705002"
 ---
 # <a name="source-control-vspackage-design-elements"></a>소스 제어 VSPackage 디자인 요소
-이 섹션의에서 항목에서는 소스 제어 VSPackage의 긴밀 한 통합에 대 한 구현 해야 구조를 간략하게 설명 합니다. 또한 인터페이스를 나열 하 고 서비스는 소스 제어 VSPackage를 구현할 수 있습니다 다른 소스 제어 VSPackage 사용 수 인터페이스 및 서비스를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 모델 및 기능을 제어 하는 구성 요소를 해당 소스를 지원 합니다.
+이 섹션의 항목에서는 소스 제어 VSPackage가 심층 통합을 위해 구현해야 하는 구조를 간략하게 설명합니다. 또한 소스 제어 VSPackage가 구현할 수 있는 인터페이스와 서비스를 나열하고 소스 제어 VSPackage가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 모델 및 기능을 지원하기 위해 다른 구성 요소에서 사용할 수 있는 인터페이스 및 서비스도 나열합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 - [VSPackage 구조체](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)
@@ -27,13 +27,13 @@ ms.locfileid: "66322474"
 
 - [관련 서비스 및 인터페이스](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
 
- 원본 제어 패키지 관련 인터페이스 및 서비스를 나열합니다.
+ 소스 제어 패키지 관련 인터페이스 및 서비스를 나열합니다.
 
 - [제공된 서비스](../../extensibility/internals/services-provided-source-control-vspackage.md)
 
- 소스 제어 VSPackage에서 제공 하는 소스 제어 서비스를 설명 합니다.
+ 소스 제어 VSPackage에서 제공하는 소스 제어 서비스에 대해 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
 - [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- 소스 제어 뿐 아니라 소스 제어 기능을 제공 하지만 사용자 지정에 사용할 수 있는 VSPackage를 만드는 방법에 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 UI 컨트롤입니다.
+ 소스 제어 기능을 제공 할뿐만 아니라 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 UI를 사용자 지정하는 데 사용할 수있는 소스 제어 VSPackage를 만드는 방법에 대해 설명합니다.

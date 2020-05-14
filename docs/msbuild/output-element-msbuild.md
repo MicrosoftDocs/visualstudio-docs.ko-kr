@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594853"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633033"
 ---
 # <a name="output-element-msbuild"></a>Output 요소(MSBuild)
+
 항목 및 속성에서 태스크 출력 값을 저장합니다.
 
  \<프로젝트> \<대상> \<작업> \<출력>
@@ -39,6 +40,7 @@ ms.locfileid: "75594853"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
+
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
@@ -51,15 +53,17 @@ ms.locfileid: "75594853"
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 
 ### <a name="child-elements"></a>자식 요소
+
  없음
 
 ### <a name="parent-elements"></a>부모 요소
 
 | 요소 | 설명 |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. |
+| [Task](../msbuild/task-element-msbuild.md) | MSBuild 작업의 인스턴스를 만들고 실행합니다. |
 
 ## <a name="example"></a>예제
+
  다음 코드 예제에서는 `Target` 요소 내에서 실행되는 `Csc` 태스크를 보여 줍니다. 태스크 매개 변수에 전달된 항목 및 속성은 이 예제의 범위 밖에서 선언됩니다. 출력 매개 변수 `OutputAssembly`의 값은 `FinalAssemblyName` 항목에 저장되고 출력 매개 변수 `BuildSucceeded`의 값은 `BuildWorked` 속성에 저장됩니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
 ```xml
@@ -80,5 +84,6 @@ ms.locfileid: "75594853"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

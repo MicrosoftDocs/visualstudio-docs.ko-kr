@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307114"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 대화형 창 작업
 
@@ -25,7 +25,7 @@ Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL
 
 Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니다.
 
-| REPL | 설명 | 편집 | 디버그 | 이미지 |
+| REPL | 설명 | 편집 | 디버깅 | 이미지 |
 | --- | --- | --- | --- | --- |
 | 표준 | 기본 REPL, Python에 직접 명령 | 표준 편집(여러 줄 등). | 예, `$attach`를 통해 | 아니요 |
 | 디버그 | 기본 REPL, 디버깅된 Python 프로세스에 명령 | 표준 편집 | 디버깅만 | 아니요 |
@@ -71,7 +71,7 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 > [!Tip]
 > **대화형** 창은 주변 범위에 속하는 문을 자동으로 들여쓰기하여 일반적인 Python 명령줄 REPL 환경을 개선합니다. 또한 명령줄 REPL은 단일 줄만 제공하지만 대화형 창은 위쪽 화살표로 회수할 수 있는 기록에 여러 줄 항목을 제공합니다.
 
-<a name="meta-commands"></a> **대화형** 창은 몇 가지 메타 명령도 지원합니다. 모든 메타 명령은 `$`로 시작하고, `$help`를 입력하면 메타 명령의 목록을 가져올 수 있고, `$help <command>`를 입력하면 특정 명령의 자세한 사용법을 가져올 수 있습니다.
+<a name="meta-commands"></a>**대화형** 창은 몇 가지 메타 명령도 지원합니다. 모든 메타 명령은 `$`로 시작하고, `$help`를 입력하면 메타 명령의 목록을 가져올 수 있고, `$help <command>`를 입력하면 특정 명령의 자세한 사용법을 가져올 수 있습니다.
 
 | 메타 명령 | 설명 |
 | --- | --- |

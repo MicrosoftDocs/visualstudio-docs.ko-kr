@@ -1,5 +1,5 @@
 ---
-title: 디버거의 식 | Microsoft Docs
+title: 디버거의 표현식 | 마이크로 소프트 문서
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158491"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301418"
 ---
 # <a name="expressions-in-the-debugger"></a>디버거에서 사용하는 식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 디버거 내장 함수를 사용하여 상태 유지  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>디버거 내장 함수를 사용하여 상태 유지  
  디버거 내장 함수는 애플리케이션의 상태를 변경하지 않고 식에서 특정 C/C++ 함수를 호출하는 방법을 제공합니다.  
   
  디버거 내장 함수의 특징은 다음과 같습니다.  
@@ -113,7 +113,7 @@ int main()
 |**문자열 비교**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
 |**문자열 검색**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> 이러한 함수를 사용하려면 디버깅 중인 프로세스가 Windows 8에서 실행되어야 합니다. Windows 8 디바이스에서 생성된 덤프 파일을 디버깅하려면 Visual Studio 컴퓨터에서 Windows 8이 실행되어야 합니다. 그러나 Windows 8 디바이스를 원격으로 디버그하는 경우에는 Visual Studio 컴퓨터에서 Windows 7이 실행될 수 있습니다.|  
+|**윈도우 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> 이러한 함수를 사용하려면 디버깅 중인 프로세스가 Windows 8에서 실행되어야 합니다. Windows 8 디바이스에서 생성된 덤프 파일을 디버깅하려면 Visual Studio 컴퓨터에서 Windows 8이 실행되어야 합니다. 그러나 Windows 8 디바이스를 원격으로 디버그하는 경우에는 Visual Studio 컴퓨터에서 Windows 7이 실행될 수 있습니다.|  
 |**기타**|__log2<br /><br /> 가장 가까운 낮은 정수로 반올림된 밑이 2인 지정된 정수의 로그 값을 반환합니다.|  
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 지원되지 않는 식  
@@ -215,7 +215,7 @@ int main()
 - `End Sub` 또는 `Module`과 같은 네임스페이스 또는 모듈 수준 키워드  
   
 ## <a name="see-also"></a>참고 항목  
- [C++의 형식 지정자](../debugger/format-specifiers-in-cpp.md)   
- [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)   
+ [C++의 포맷 지정기](../debugger/format-specifiers-in-cpp.md)   
+ [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)   
+ [C의 형식 지정 #](../debugger/format-specifiers-in-csharp.md)   
  [의사 변수](../debugger/pseudovariables.md)

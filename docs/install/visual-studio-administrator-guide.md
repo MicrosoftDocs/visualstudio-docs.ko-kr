@@ -2,7 +2,7 @@
 title: Visual Studio 관리자 가이드
 titleSuffix: ''
 description: 엔터프라이즈 환경에 Visual Studio를 배포하는 방법을 자세히 알아봅니다.
-ms.date: 06/02/2019
+ms.date: 03/09/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: bda9a73a7a1aabb2d288653ff4d7b20b1c40db8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114210"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79190283"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
@@ -115,6 +115,14 @@ ms.locfileid: "76114210"
 
 클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2019)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
 
+## <a name="advanced-configuration"></a>고급 구성
+
+기본적으로 Visual Studio 설치에서는 Bing 검색에 오류 목록 F1 및 코드 링크로부터 사용자 지정 유형을 포함할 수 있습니다. 정책에 따라 다음 레지스트리 키의 값을 변경하여 검색 메커니즘이 사용자 지정 사용자 유형을 포함하지 못하도록 Visual Studio를 구성할 수 있습니다.
+
+**“PutCustomTypeInBingSearch” DWORD 0**
+
+레지스트리는 프라이빗 레지스트리 하이브의 *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -153,6 +161,14 @@ ms.locfileid: "76114210"
 ## <a name="step-5---optional-use-visual-studio-tools"></a>5단계 - (선택 사항) Visual Studio 도구 사용
 
 클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2017)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
+
+## <a name="advanced-configuration"></a>고급 구성
+
+기본적으로 Visual Studio 설치에서는 Bing 검색에 오류 목록 F1 및 코드 링크로부터 사용자 지정 유형을 포함할 수 있습니다. 정책에 따라 다음 레지스트리 키의 값을 변경하여 검색 메커니즘이 사용자 지정 사용자 유형을 포함하지 못하도록 Visual Studio를 구성할 수 있습니다.
+
+**“PutCustomTypeInBingSearch” DWORD 0**
+
+레지스트리는 프라이빗 레지스트리 하이브의 *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
 
 ::: moniker-end
 

@@ -1,5 +1,5 @@
 ---
-title: '[Content_types] .xml 파일의 구조입니다. Microsoft Docs'
+title: '[Content_types].xml 파일의 구조 | 마이크로 소프트 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,83 +8,83 @@ helpviewer_keywords:
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983035"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699029"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 파일의 구조
-VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual Studio는 [Content_Types] .xml 파일을 사용 하 여 패키지를 설치 하지만 파일 자체를 설치 하지는 않습니다.
+VSIX 패키지의 콘텐츠 종류에 대한 정보를 포함합니다. Visual Studio는 [Content_Types].xml 파일을 사용하여 패키지를 설치하지만 파일 자체는 설치하지 않습니다.
 
 > [!NOTE]
-> 이 항목은 VSIX 패키지에 사용 되는 [Content_Type] .xml 파일에만 적용 되지만 [Content_Types] .xml 파일 형식은 *OPC (Open 패키징 규칙)* 표준의 일부입니다. 자세한 내용은 OPC: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://msdn.microsoft.com/magazine/cc163372.aspx) 을 참조 하세요.
+> 이 항목은 VSIX 패키지에 사용되는 [Content_Type].xml 파일에만 적용되지만 [Content_Types].xml 파일 형식은 *OPC(개방형 패키징 규칙)* 표준의 일부입니다. 자세한 내용은 OPC: MSDN 웹 사이트에서 [데이터 패키징에 대한 새로운 표준을](https://msdn.microsoft.com/magazine/cc163372.aspx) 참조하십시오.
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 섹션에서는 루트 요소와 해당 특성 및 자식 요소에 대해 설명 합니다.
+ 다음 섹션에서는 루트 요소와 해당 특성 및 자식 요소를 설명합니다.
 
 ### <a name="root-element"></a>루트 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|`Types`|VSIX 패키지의 파일 형식을 열거 하는 자식 요소를 포함 합니다.|
+|`Types`|VSIX 패키지의 파일 형식을 등록하는 자식 요소를 포함합니다.|
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
-|`Xmlns`|필요 합니다. 이 [Content_Types] .xml 파일에 사용 되는 스키마의 위치입니다.|
+|`Xmlns`|(필수) 이 [Content_Types].xml 파일에 사용되는 스키마의 위치입니다.|
 
-### <a name="attribute-name-attribute"></a>{Attribute name} 특성도
+### <a name="attribute-name-attribute"></a>{특성 이름} 특성
 
 | 값 | 설명 |
 | - | - |
-| http://schemas.openformats.org/package/2006/content-types | 콘텐츠 형식 스키마의 위치입니다. |
+| `http://schemas.openformats.org/package/2006/content-types` | 콘텐츠 형식 스키마의 위치입니다. |
 
 ### <a name="child-elements"></a>자식 요소
- `Types` 요소에는 개수에 관계 없이 `Default` 요소가 포함 될 수 있습니다.
+ `Types` 요소는 개수에 관계없이 `Default` 요소를 포함할 수 있습니다.
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|`Default`|VSIX 패키지의 콘텐츠 형식을 설명 합니다. 패키지의 모든 파일 형식에는 자체 `Default` 요소가 있어야 합니다.|
+|`Default`|VSIX 패키지의 콘텐츠 형식에 대해 설명합니다. 패키지의 모든 파일 형식에는 `Default` 고유한 요소가 있어야 합니다.|
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Extension`|VSIX 패키지에 있는 파일의 파일 이름 확장명입니다.|
-|`ContentType`|파일 이름 확장명과 연결 된 콘텐츠의 종류를 설명 합니다.|
+|`ContentType`|파일 이름 확장명과 연결된 콘텐츠의 종류를 설명합니다.|
 
-### <a name="attribute-name-attribute"></a>{Attribute name} 특성도
- Visual Studio에서는 연결 된 `Extension` 형식에 대해 다음과 같은 `ContentType` 값을 인식 합니다.
+### <a name="attribute-name-attribute"></a>{특성 이름} 특성
+ Visual Studio는 연결된 `ContentType` `Extension` 형식에 대한 다음 값을 인식합니다.
 
-|확장명|contentType|
+|내선 번호|ContentType|
 |---------------|-----------------|
-|.txt|텍스트/일반|
-|.pkgdef|텍스트/일반|
-|xml|text/xml|
-|source.extension.vsixmanifest|text/xml|
+|txt|텍스트/일반|
+|pkgdef|텍스트/일반|
+|Xml|text/xml|
+|vsixmanifest|text/xml|
 |htm 또는 html|텍스트/html|
-|형식|응용 프로그램/rtf|
-|pdf|응용 프로그램/pdf|
-|gif|이미지/gif|
-|jpg 또는 jpeg|이미지/jpg|
-|tiff|이미지/tiff|
-|vsix|응용 프로그램/zip|
-|zip|응용 프로그램/zip|
+|Rtf|응용 프로그램 / RTF|
+|pdf|응용 프로그램 / PDF|
+|GIF|image/gif|
+|jpg 또는 jpeg|이미지 /jpg|
+|tiff|image/tiff|
+|vsix|응용 프로그램 / 우편|
+|zip|응용 프로그램 / 우편|
 |dll|application/octet-stream|
-|기타 모든 파일 형식|application/octet-stream|
+|다른 모든 파일 형식|application/octet-stream|
 
 ## <a name="example"></a>예제
 
 ### <a name="description"></a>설명
- 다음 [Content_Types] .xml 파일은 일반적인 VSIX 패키지를 설명 합니다.
+ 다음 [Content_Types].xml 파일은 일반적인 VSIX 패키지를 설명합니다.
 
 ### <a name="code"></a>코드
 
@@ -102,4 +102,4 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 ## <a name="see-also"></a>참조
 - [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)
 - [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: 데이터를 패키징하는 새 표준](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [OPC: 데이터 패키징을 위한 새로운 표준](https://msdn.microsoft.com/magazine/cc163372.aspx)

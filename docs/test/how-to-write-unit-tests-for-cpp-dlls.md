@@ -2,31 +2,31 @@
 title: C++ DLL의 단위 테스트 작성
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926662"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279277"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio에서 C++ DLL에 대한 단위 테스트 작성
 
 테스트할 함수를 내보낼지 여부에 따라 DLL 코드를 테스트하는 방법에는 여러 가지가 있습니다. 다음 방법 중 하나를 선택합니다.
 
-**단위 테스트가 DLL에서 내보낸 함수만 호출:** [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)에서 설명한 대로 별도의 테스트 프로젝트를 추가합니다. 테스트 프로젝트에서 DLL 프로젝트에 대한 참조를 추가합니다.
+**단위 테스트가 DLL에서 내보낸 함수만 호출:** [C/C++용 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)에 설명된 대로 별도 테스트 프로젝트를 추가합니다. 테스트 프로젝트에서 DLL 프로젝트에 대한 참조를 추가합니다.
 
 [DLL 프로젝트에서 내보낸 함수를 참조하려면](#projectRef) 절차로 이동합니다.
 
-**DLL이 .exe 파일로 빌드:** 개별 테스트 프로젝트를 추가합니다. 출력 개체 파일에 연결합니다.
+**DLL이 .exe 파일로 빌드:** 별도 테스트 프로젝트를 추가합니다. 출력 개체 파일에 연결합니다.
 
 [개체 또는 라이브러리 파일에 테스트를 연결하려면](#objectRef) 절차로 이동합니다.
 
-**단위 테스트가 DLL에서 내보내지 않은 비 멤버 함수를 호출하며 DLL를 정적 라이브러리 형태로 빌드할 수 있음:** *.lib* 파일로 컴파일되도록 DLL 프로젝트를 변경합니다. 테스트 중인 프로젝트를 참조하는 개별 테스트 프로젝트를 추가합니다.
+**단위 테스트가 DLL에서 내보내지 않은 비 멤버 함수를 호출하며 DLL를 정적 라이브러리 형태로 빌드할 수 있음:** *.lib* 파일로 컴파일될 수 있도록 DLL 프로젝트를 변경합니다. 테스트 중인 프로젝트를 참조하는 개별 테스트 프로젝트를 추가합니다.
 
 이 접근 방법은 테스트에서 내보내지 않은 멤버를 사용할 수 있다는 이점이 있지만, 테스트를 여전히 별도 프로젝트로 유지해야 합니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "68926662"
 
       ::: moniker range="vs-2017"
 
-      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 선택합니다.
+      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 차례로 선택합니다.
 
       ::: moniker-end
 
@@ -96,7 +96,7 @@ ms.locfileid: "68926662"
 
       ::: moniker range="vs-2017"
 
-      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 선택합니다.
+      1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** > **Visual C++** > **테스트** > **C++ 단위 테스트 프로젝트**를 차례로 선택합니다.
 
       ::: moniker-end
 
@@ -141,7 +141,7 @@ ms.locfileid: "68926662"
 
 1. 각 단위 테스트 코드 파일에서 테스트 중인 프로젝트의 헤더에 대해 `#include` 문을 추가합니다.
 
-2. 테스트 클래스와 메서드를 단위 테스트 코드 파일에 추가합니다. 예:
+2. 테스트 클래스와 메서드를 단위 테스트 코드 파일에 추가합니다. 다음은 그 예입니다.
 
     ```cpp
     #include "stdafx.h"

@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591582"
 ---
 # <a name="settings-waterfall"></a>폭포수형 설정
@@ -46,6 +46,6 @@ namespace MyTests
 }
 ```
 
-## <a name="got-feedback"></a>피드백이 있으신가요?
+## <a name="got-feedback"></a>피드백이 있나요?
 
 아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

@@ -1,5 +1,5 @@
 ---
-title: 데이터 액세스 및 도구
+title: Visual Studio에서 데이터 작업
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916715"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272080"
 ---
-# <a name="access-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
+# <a name="work-with-data-in-visual-studio"></a>Visual Studio에서 데이터 작업
 
 Visual Studio에서는 거의 모든 데이터베이스 제품 또는 서비스의 데이터에 연결 하는 응용 프로그램을 로컬 컴퓨터, 로컬 영역 네트워크 또는 공용, 사설 또는 하이브리드 클라우드에서 모든 형식으로 만들 수 있습니다.
 
 JavaScript, Python, PHP, Ruby 또는 C++의 응용 프로그램의 경우 라이브러리를 가져오고 코드를 작성 하 여 다른 작업을 수행 하는 것 처럼 데이터에 연결 합니다. .NET 응용 프로그램의 경우 Visual Studio는 데이터 원본을 탐색 하 고, 개체 모델을 만들어 메모리에 데이터를 저장 및 조작 하 고, 데이터를 사용자 인터페이스에 바인딩하는 데 사용할 수 있는 도구를 제공 합니다. Microsoft Azure는 .NET, Java, node.js, PHP, Python, Ruby 및 모바일 앱에 대 한 Sdk 및 Visual Studio에서 Azure Storage에 연결 하는 데 사용할 수 있는 도구를 제공 합니다.
 
+::: moniker range="vs-2017"
 다음 목록에서는 Visual Studio에서 사용할 수 있는 몇 가지 데이터베이스 및 저장소 시스템을 보여 줍니다. [Microsoft Azure](https://azure.microsoft.com/) 제품은 기본 데이터 저장소의 모든 프로 비전 및 관리를 포함 하는 데이터 서비스입니다. [Visual studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 의 **azure 개발** 워크 로드를 통해 Visual studio에서 직접 azure 데이터 저장소를 사용할 수 있습니다.
+::: moniker-end
+::: moniker range=">=vs-2019"
+다음 목록에서는 Visual Studio에서 사용할 수 있는 몇 가지 데이터베이스 및 저장소 시스템을 보여 줍니다. [Microsoft Azure](https://azure.microsoft.com/) 제품은 기본 데이터 저장소의 모든 프로 비전 및 관리를 포함 하는 데이터 서비스입니다. [Visual studio 2019](https://visualstudio.microsoft.com/downloads) 의 **azure 개발** 워크 로드를 통해 Visual studio에서 직접 azure 데이터 저장소를 사용할 수 있습니다.
+::: moniker-end
 
 ![Azure 개발 워크로드](media/azure-development-workload.png)
 
@@ -33,13 +38,13 @@ JavaScript, Python, PHP, Ruby 또는 C++의 응용 프로그램의 경우 라이
 
 **Microsoft Azure**
 
-- SQL 데이터베이스
+- SQL Database
 - Azure Cosmos DB
 - 저장소 (blob, 테이블, 큐, 파일)
 - SQL Data Warehouse
 - SQL Server Stretch Database
 - StorSimple
-- 기타...
+- 이 외에도 다양한 혜택이 제공됩니다!
 
 **SQL**
 
@@ -50,7 +55,7 @@ JavaScript, Python, PHP, Ruby 또는 C++의 응용 프로그램의 경우 라이
 - Oracle
 - PostgreSQL
 - SQLite
-- 기타...
+- 이 외에도 다양한 혜택이 제공됩니다!
 
 **NoSQL**
 
@@ -61,7 +66,7 @@ JavaScript, Python, PHP, Ruby 또는 C++의 응용 프로그램의 경우 라이
 - OrientDB|
 - RavenDB
 - VelocityDB
-- 기타...
+- 이 외에도 다양한 혜택이 제공됩니다!
 
 ::: moniker range="vs-2017"
 

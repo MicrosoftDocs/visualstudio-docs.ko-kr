@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113363"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정

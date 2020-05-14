@@ -19,10 +19,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68918892"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정
@@ -41,7 +41,7 @@ ms.locfileid: "68918892"
 
   빌드 로그 파일의 생성을 설정합니다. 이 옵션은 프로젝트의 중간 파일 디렉터리에서 찾을 수 있는 BuildLog.htm을 생성합니다. 모든 최신 빌드는 이전 BuildLog.htm 파일을 덮어씁니다.
 
- **No**
+ **아니요**
 
   빌드 로그 파일의 생성을 해제합니다.
 
@@ -51,7 +51,7 @@ ms.locfileid: "68918892"
 
 빌드 로그 파일에 환경 변수를 나열합니다. 이 옵션은 C++ 프로젝트를 빌드하는 동안 모든 환경 변수를 빌드 로그 파일에 반향하도록 지정합니다.
 
- **No**
+ **아니요**
 
 빌드 로그 파일에서 환경 변수를 제외합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "68918892"
 
   빌드 타이밍을 설정합니다. 이 옵션을 선택하면 빌드가 완료되는 데 걸리는 시간이 출력 창에 게시됩니다. 자세한 내용은 [출력 창](../../ide/reference/output-window.md)을 참조하세요.
 
- **No**
+ **아니요**
 
 빌드 타이밍을 해제합니다.
 
@@ -97,7 +97,7 @@ ms.locfileid: "68918892"
 
 다음에 프로젝트를 열 때 Visual Studio가 프로젝트 파일에서 다시 계산하지 않고 캐시한 데이터를 로드할 수 있도록 Visual Studio에서 프로젝트 데이터를 캐시하도록 합니다. 캐시한 데이터를 사용하면 프로젝트 로드 시간이 상당히 빨라집니다.
 
-**No**
+**아니요**
 
 캐시된 프로젝트 데이터를 사용하지 않습니다. 프로젝트가 로드될 때마다 프로젝트 파일을 구문 분석합니다.
 

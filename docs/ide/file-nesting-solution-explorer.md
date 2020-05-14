@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67587021"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>솔루션 탐색기에서 파일 중첩
@@ -178,7 +178,7 @@ ms.locfileid: "67587021"
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
 - [Visual Studio의 솔루션 및 프로젝트](solutions-and-projects-in-visual-studio.md)

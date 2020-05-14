@@ -1,27 +1,30 @@
 ---
 title: 가져오지 않은 형식에 대한 IntelliSense 완성
 description: '`using` 지시문으로 아직 가져오지 않은 형식에 대해 IntelliSense 완성 기능을 사용하는 방법입니다.'
-ms.date: 06/20/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f313cfa8520e4c13b310be0f9223466c529ca18f
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 04ea7c94d3dd24c1a511544adca9bfac3370cd71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67312921"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094263"
 ---
 # <a name="intellisense-completion-for-unimported-types"></a>가져오지 않은 형식에 대한 IntelliSense 완성
 
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
+
+- Visual Basic
 
 **내용:** 가져오지 않은 형식에 대해 IntelliSense 완성 기능 사용
 
@@ -38,6 +41,6 @@ ms.locfileid: "67312921"
 
    ![가져오지 않은 형식에 대한 IntelliSense 완성](media/intellisense-completion-unimported-types.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

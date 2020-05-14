@@ -15,10 +15,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180433"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>자습서: 리포지토리에서 프로젝트 열기
@@ -183,7 +183,7 @@ Visual Studio로 코딩할 준비가 되면 다음 언어별 자습서를 자세
 - [Visual Studio 자습서 | **Python**](/visualstudio/python/)
 - [Visual Studio 자습서 | **JavaScript**, **TypeScript** 및 **Node.js**](/visualstudio/javascript/)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/)(Azure DevOps Services: Azure Repos 및 Visual Studio 시작하기)
 - [Microsoft Learn: Azure DevOps 시작하기](/learn/modules/get-started-with-devops/)

@@ -1,17 +1,18 @@
 ---
 title: Visual Studio 클라우드 구독을 구매하는 방법
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
-ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962943"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273948"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 **“클라우드 구독”** 이라고 합니다.
@@ -59,7 +60,7 @@ Azure 구독에 대한 [소유자](https://docs.microsoft.com/azure/role-based-a
 > [!div class="mx-imgBorder"]
 > ![구독 보기](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
-## <a name="manage-subscriptions"></a>구매한 클라우드 구독 갱신 취소
+## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>구매한 클라우드 구독 갱신 취소
 
 * 구매한 구독의 수를 변경하려면 다음을 수행합니다.
 
@@ -118,6 +119,12 @@ A:  다른 클라우드 연간 구독을 구입할 수 없지만 Visual Studio �
 - [Visual Studio 구독 지원](https://visualstudio.microsoft.com/vs/support/)
 - [Visual Studio 클라우드 구독 청구 FAQ](vscloud-billing-faq.md)
 - [CSP에 대한 Visual Studio 클라우드 구독 구매](vscloud-csp.md)
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 클라우드 구독 구입

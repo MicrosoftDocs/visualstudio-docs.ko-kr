@@ -13,10 +13,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596998"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio 성능 최적화
@@ -29,7 +29,7 @@ ms.locfileid: "75596998"
 
 ::: moniker range="vs-2017"
 
-이미 Visual Studio 2017을 사용 중인 경우 버전 15.6 이상을 실행하고 있는지 확인합니다. 데이터에 따르면 버전 15.6에서 솔루션이 최대 2-3배 더 빠르게 로드됩니다. [여기서](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 다운로드하세요.
+이미 Visual Studio 2017을 사용 중인 경우 버전 15.6 이상을 실행하고 있는지 확인합니다. 데이터에 따르면 버전 15.6에서 솔루션이 최대 2-3배 더 빠르게 로드됩니다. [여기](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)에서 다운로드하세요.
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ ms.locfileid: "75596998"
 
 여러분의 의견이 개선에 도움이 됩니다. **문제 보고** 기능을 사용하여 추적을 "레코드"하고 당사에 보내십시오. **빠른 실행** 옆에 있는 피드백 아이콘을 선택하거나 메뉴 모음에서 **도움말** > **의견 보내기** > **문제 보고**를 선택합니다. 자세한 내용은 [Visual Studio의 문제를 보고하는 방법](../ide/how-to-report-a-problem-with-visual-studio.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [성능 팁 및 요령](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Visual Studio 블로그 - Visual Studio 2017 버전 15.6으로 더 빠르게 솔루션 로드](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

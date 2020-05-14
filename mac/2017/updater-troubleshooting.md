@@ -7,10 +7,10 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983489"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>문제 해결: Updater에서 정보 검색 중에 오류가 발생했습니다.

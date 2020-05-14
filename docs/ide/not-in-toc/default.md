@@ -10,10 +10,10 @@ manager: jillfra
 author: TerryGLee
 ms.author: tglee
 ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597011"
 ---
 # <a name="f1-help"></a>F1 도움말

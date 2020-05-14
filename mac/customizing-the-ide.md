@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984199"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306682"
 ---
 # <a name="customizing-the-ide"></a>IDE 사용자 지정
 

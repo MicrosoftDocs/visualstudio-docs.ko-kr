@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774314"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>IP(명령 포인터) 뷰 - 경합 데이터
@@ -43,7 +43,7 @@ ms.locfileid: "74774314"
 |**소스 줄 시작**|이 명령이 시작되는 소스 파일의 줄 번호입니다.|
 |**소스 줄 끝**|이 명령이 끝나는 소스 파일의 줄 번호입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [IP(명령 포인터) 뷰](../profiling/instruction-pointers-ips-view.md)
 - [IP(명령 포인터) 뷰 - 샘플링](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

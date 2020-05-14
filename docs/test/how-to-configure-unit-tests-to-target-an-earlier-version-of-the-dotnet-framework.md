@@ -8,13 +8,13 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596023"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 지정하도록 단위 테스트 구성
 
 Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framework의 가장 최근 버전이 기본적으로 대상으로 설정됩니다. 또한 Visual Studio의 이전 버전에서 테스트 프로젝트를 업그레이드할 경우 해당 프로젝트는 .NET Framework의 가장 최근 버전을 대상으로 지정하도록 업그레이드됩니다. 프로젝트 속성을 편집하여 .NET Framework의 이전 버전을 프로젝트 대상으로 명시적으로 지정할 수 있습니다.
 
@@ -87,7 +87,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
    . *.vcxproj* 파일이 편집기에서 열립니다.
 
-4. `PropertyGroup` 레이블이 지정된 `"Globals"`에서 `TargetFrameworkVersion`을 버전 3.5 이상으로 설정합니다. 클라이언트 버전을 지정하면 안 됩니다.
+4. `TargetFrameworkVersion` 레이블이 지정된 `PropertyGroup`에서 `"Globals"`을 버전 3.5 이상으로 설정합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -104,7 +104,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 6. **솔루션 탐색기**에 새 C++ 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **프로젝트 다시 로드**를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

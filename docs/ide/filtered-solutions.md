@@ -11,17 +11,17 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72650845"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio의 필터링된 솔루션
 
 대규모 개발팀은 종종 여러 프로젝트가 포함된 하나의 대형 솔루션을 사용하여 공동 작업을 진행합니다. 그러나 개별 개발자는 일반적으로 이러한 프로젝트의 소규모 하위 집합에서 작업합니다. 대형 솔루션을 열 때 성능을 향상하기 위해 Visual Studio 2019에서는 ‘솔루션 필터링’이 도입되었습니다.  솔루션 필터링을 사용하면 선택한 프로젝트만 로드된 솔루션을 열 수 있습니다. 솔루션에서 프로젝트의 하위 집합을 로드하면 솔루션 로드, 빌드 및 테스트 실행 시간이 단축되고 검토에 집중할 수 있습니다.
 
-다음과 같은 기능이 제공됩니다.
+사용할 수 있는 기능은 다음과 같습니다.
 
 - 프로젝트를 로드하지 않고 솔루션을 열어 더 빠르게 코드로 이동할 수 있습니다. 솔루션이 열리면 로드할 프로젝트를 선택할 수 있습니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "72650845"
 
    Visual Studio는 다음에 로컬로 솔루션을 열 때 이전에 로드된 프로젝트를 기억합니다.
 
-### <a name="command-line"></a>명령줄
+### <a name="command-line"></a>명령 줄
 
 (Visual Studio 2019 버전 16.1의 새로운 기능)
 

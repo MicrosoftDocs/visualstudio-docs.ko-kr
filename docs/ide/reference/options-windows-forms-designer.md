@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568063"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>옵션 대화 상자: Windows Forms 디자이너

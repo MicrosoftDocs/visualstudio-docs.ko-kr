@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76542687"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>“폴더 열기” 개발에 대한 빌드 및 디버그 작업 사용자 지정
@@ -28,12 +28,12 @@ Visual Studio는 여러 다른 언어 및 코드베이스를 실행하는 방법
 
 다음 *.json* 파일을 사용하여 프로젝트 없는 코드베이스를 사용자 지정합니다.
 
-|파일 이름|용도|
+|파일 이름|목적|
 |-|-|
 |*tasks.vs.json*|사용자 지정 빌드 명령 및 컴파일러 스위치와 임의(빌드와 관련되지 않은) 작업을 지정합니다.<br>**솔루션 탐색기**의 오른쪽 클릭 메뉴 항목 **작업 구성**을 통해 액세스합니다.|
 |*launch.vs.json*|디버깅을 위한 명령줄 인수를 지정합니다.<br>**솔루션 탐색기**의 오른쪽 클릭 메뉴 항목 **디버그 및 시작 설정**을 통해 액세스합니다.|
 
-이러한 *.json* 파일은 코드베이스의 루트 폴더에 있는 *.vs*라는 숨겨진 폴더에 있습니다. **솔루션 탐색기**에서 파일이나 폴더에 대한 **작업 구성** 또는 **디버그 및 시작 설정**을 선택하면 Visual Studio에서 *tasks.vs.json* 및 *launch.vs.json* 파일이 필요에 따라 만들어집니다. 사용자는 일반적으로 이러한 *.json* 파일을 소스 제어로 체크 인하지 않으므로 파일이 숨겨져 있습니다. 그러나 소스 제어로 체크 인할 수 있도록 파일을 코드베이스의 루트로 끌어서 놓으면 파일이 표시됩니다.
+이러한 *.json* 파일은 코드베이스의 루트 폴더에 있는 *.vs*라는 숨겨진 폴더에 있습니다. *솔루션 탐색기*에서 파일이나 폴더에 대한 *작업 구성* 또는 **디버그 및 시작 설정**을 선택하면 Visual Studio에서 **tasks.vs.json** 및 **launch.vs.json** 파일이 필요에 따라 만들어집니다. 사용자는 일반적으로 이러한 *.json* 파일을 소스 제어로 체크 인하지 않으므로 파일이 숨겨져 있습니다. 그러나 소스 제어로 체크 인할 수 있도록 파일을 코드베이스의 루트로 끌어서 놓으면 파일이 표시됩니다.
 
 > [!TIP]
 > Visual Studio에서 숨겨진 파일을 보려면 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 단추를 선택합니다.
@@ -122,7 +122,7 @@ bin:
 ![빌드, 다시 빌드 및 정리가 포함된 메이크파일 상황에 맞는 메뉴](media/customize-build-rebuild-clean.png)
 
 > [!NOTE]
-> 이 명령은 `contextType` 설정으로 인해 **작업 구성** 명령 아래의 상황에 맞는 메뉴에 표시됩니다. “build”, “rebuild” 및 “clean”은 빌드 명령이므로 상황에 맞는 메뉴의 중간에 있는 빌드 섹션에 표시됩니다.
+> 이 명령은 **설정으로 인해**작업 구성`contextType` 명령 아래의 상황에 맞는 메뉴에 표시됩니다. “build”, “rebuild” 및 “clean”은 빌드 명령이므로 상황에 맞는 메뉴의 중간에 있는 빌드 섹션에 표시됩니다.
 
 이러한 옵션 중 하나를 선택하면 작업이 실행됩니다. **출력** 창에 출력이 표시되고 **오류 목록**에 빌드 오류가 표시됩니다.
 
@@ -291,7 +291,7 @@ bin:
 ![디버그 구성 드롭다운 목록](media/customize-debug-configurations.png)
 
 > [!NOTE]
-> *launch.vs.json*의 `configurations` 배열 속성은 두 개의 파일 위치인&mdash;코드베이스의 루트 디렉터리 및 *.vs* 디렉터리에서 읽습니다. 충돌이 있으면 *.vs\launch.vs.json*의 값에 우선 순위가 제공됩니다.
+> `configurations`launch.vs.json*의*  배열 속성은 두 개의 파일 위치인&mdash;코드베이스의 루트 디렉터리 및 *.vs* 디렉터리에서 읽습니다. 충돌이 있으면 *.vs\launch.vs.json*의 값에 우선 순위가 제공됩니다.
 
 ## <a name="additional-settings-files"></a>추가 설정 파일
 
@@ -309,7 +309,7 @@ Visual Studio는 *.vscode*라는 디렉터리에 있는 *settings.json* 파일�
 
 *.gitignore* 파일에서 읽은 설정은 부모 디렉터리 및 모든 하위 디렉터리에 적용됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 또는 솔루션 없이 코드 개발](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [C++의 폴더 열기 프로젝트](/cpp/build/open-folder-projects-cpp)

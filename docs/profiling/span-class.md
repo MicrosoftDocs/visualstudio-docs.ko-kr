@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979759"
 ---
 # <a name="span-class"></a>span 클래스
@@ -32,7 +32,7 @@ class span;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[span::span 생성자](../profiling/span-span-constructor.md)|`span` 클래스의 새 인스턴스를 초기화합니다.|
 |[span::~span 소멸자](../profiling/span-tilde-span-destructor.md)|`span` 개체를 제거하고 해당 리소스를 해제합니다.|
@@ -45,5 +45,5 @@ class span;
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [진단 네임스페이스](../profiling/diagnostic-namespace.md)

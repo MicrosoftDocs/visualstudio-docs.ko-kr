@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569506"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306790"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio에서 생성자 생성
 
@@ -22,9 +22,9 @@ ms.locfileid: "75569506"
 
 - Visual Basic
 
-**내용:** 클래스에서 새 생성자에 대한 코드를 즉시 생성할 수 있습니다.
+**대상:** 클래스에서 새 생성자에 대한 코드를 즉시 생성할 수 있습니다.
 
-**시기:** 새 생성자를 소개하고 자동으로 생성자를 제대로 선언하거나 기존 생성자를 수정하려고 합니다.
+**시기**: 새 생성자를 소개하고 자동으로 생성자를 제대로 선언하거나 기존 생성자를 수정하려고 합니다.
 
 **이유:** 생성자를 사용하기 전에 사용자가 생성자를 선언할 수 있지만, 이 기능은 적절한 매개 변수를 사용하여 생성자를 자동으로 생성합니다. 또한 이 기능을 사용하여 자동으로 업데이트하지 않는 한, 기존 생성자를 수정하려면 모든 호출 사이트를 업데이트해야 합니다.
 
@@ -178,7 +178,7 @@ ms.locfileid: "75569506"
 
    ![생성자 생성 결과](media/constructor5-result-cs.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

@@ -1,41 +1,41 @@
 ---
-title: 열거자 | Microsoft Docs
+title: 열거자 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d3a0876dfd3a9d7b9cc86b18f6e9a6ba3b780d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334505"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711848"
 ---
-# <a name="enumerators"></a>열거자
-이 섹션에서는 소스 제어 플러그 인에 대해 알아야 하는 원본 제어 플러그 인 API 데이터 형식 열거자를 나열 합니다.
+# <a name="enumerators"></a>Enumerators
+이 섹션에서는 소스 제어 플러그인 API에 열거자 데이터 형식을 나열합니다.
 
-## <a name="in-this-section"></a>단원 내용
-- [코드 명령을](../extensibility/command-code-enumerator.md) 옵션을 열거 합니다 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 하 고 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 함수.
+## <a name="in-this-section"></a>섹션 내용
+- [명령 코드](../extensibility/command-code-enumerator.md) [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 및 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 함수에 대 한 옵션을 나열 합니다.
 
-- [메시지](../extensibility/message-enumerator.md) 인쇄 콜백에 대 한 사용 플래그 열거 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)합니다.
+- [메시지 메시지](../extensibility/message-enumerator.md) 인쇄 콜백에 사용되는 플래그를 새길 [수](../extensibility/lptextoutproc.md)있습니다.
 
-- [상태 코드를 파일](../extensibility/file-status-code-enumerator.md) 라는 소스 제어에서 파일의 상태를 지정 하는 상수 값을 포함 합니다.
+- [파일 상태 코드](../extensibility/file-status-code-enumerator.md) 소스 제어하에 파일의 상태를 지정하는 명명된 상수 값을 포함합니다.
 
-- [디렉터리 상태 코드](../extensibility/directory-status-code-enumerator.md) 라는 소스 제어에서 디렉터리의 상태를 지정 하는 상수 값을 포함 합니다.
+- [디렉터리 상태 코드](../extensibility/directory-status-code-enumerator.md) 소스 제어에서 디렉터리 상태를 지정하는 명명된 상수 값을 포함합니다.
 
 ## <a name="related-sections"></a>관련 단원
-- [소스 제어 플러그 인 만들기](../extensibility/internals/creating-a-source-control-plug-in.md) 소스 제어 플러그 인 SDK를 정의 하 고 포함 된 리소스를 설명 합니다.
+- [소스 제어 플러그인 만들기](../extensibility/internals/creating-a-source-control-plug-in.md) 소스 제어 플러그인 SDK를 정의하고 포함된 리소스에 대해 설명합니다.
 
-- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 라는 사용자 지정된 명령에 대 한 고급 옵션에 대 한 메시지를 표시 합니다.
+- [SccGetCommand옵션](../extensibility/sccgetcommandoptions-function.md) 지정된 명령에 대한 고급 옵션을 사용자에게 요청합니다.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) 현재 상태에 대 한 파일 목록을 검사 합니다. 또한에서는 합니다 `pfnPopulate` 파일에 대 한 조건과 일치 하지 않는 경우 호출자에 게 알리도록 함수는 `nCommand`합니다.
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) 파일의 현재 상태를 검사합니다. 또한 이 함수를 사용하여 파일이 `pfnPopulate` `nCommand`의 조건과 일치하지 않을 때 호출자에게 알립니다.
 
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 에서 사용 되는 콜백 함수에 설명 합니다 [SccOpenProject](../extensibility/sccopenproject-function.md) IDE를 통해 플러그 인 소스 제어 메시지를 표시 합니다.
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) [SccOpenProject에서](../extensibility/sccopenproject-function.md) IDE를 통해 소스 제어 플러그인의 메시지를 표시하는 데 사용되는 콜백 함수에 대해 설명합니다.
 
-- [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md) 원본 제어 플러그 인 API에 있는 모든 요소의 전체 목록을 제공 합니다.
+- [소스 제어 플러그인](../extensibility/source-control-plug-ins.md) 소스 제어 플러그인 API의 모든 요소에 대한 전체 목록을 제공합니다.

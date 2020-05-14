@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74298754"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 개요
@@ -67,4 +67,4 @@ ms.locfileid: "74298754"
 - Unity 스타일 콜백 ProjectFileGeneration을 사용하여 Visual Studio Tools for Unity에서 프로젝트 파일을 생성하는 방법을 변경할 수 있습니다. 자세한 내용은 프로젝트 파일 생성 예제를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [Unity Homepage](https://unity.com/)(Unity 홈페이지)
+ [Unity 홈 페이지](https://unity.com/)

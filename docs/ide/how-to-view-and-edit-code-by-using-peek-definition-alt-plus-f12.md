@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591348"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)
@@ -26,7 +26,7 @@ ms.locfileid: "75591348"
 
 1. 검색하려는 형식 또는 멤버의 오른쪽 클릭 메뉴에서 **정의 피킹**을 선택하여 정의를 피킹할 수 있습니다. 이 옵션을 설정하는 경우, **Ctrl** 키(또는 다른 한정자)를 누르고 멤버 이름을 클릭하여 마우스를 사용하는 정의를 피킹할 수도 있습니다. 또는 키보드에서 **Alt**+**F12**를 누릅니다.
 
-     이 그림은 `Print()`라는 메서드에 대한 **정의 피킹(Peeking)** 창을 보여 줍니다.
+     이 그림은 **라는 메서드에 대한** 정의 피킹(Peeking)`Print()` 창을 보여 줍니다.
 
      ![피크(Peek) 창](../ide/media/peekwindow.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "75591348"
 
 1. **피킹 보기에서 정의 열기** 옵션을 선택합니다.
 
-1. **확인**을 클릭하여 **옵션** 대화 상자를 닫습니다.
+1. **확인** 을 클릭하여 **옵션** 대화 상자를 닫습니다.
 
    ![마우스 클릭 정의 피킹 옵션 설정](../ide/media/editor_options_peek_view.png)
 
@@ -82,7 +82,7 @@ ms.locfileid: "75591348"
 > [!NOTE]
 > **정의 피킹(Peeking)** 창에서 코드를 편집하기 위해 Visual Studio의 다른 위치에서 사용할 때와 같은 바로 가기 키를 사용할 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 탐색](../ide/navigating-code.md)
 - [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)

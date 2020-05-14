@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73715880"
 ---
 # <a name="create-razor-web-apps"></a>Razor 웹앱 만들기

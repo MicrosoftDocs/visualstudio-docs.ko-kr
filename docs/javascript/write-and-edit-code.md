@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840836"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
@@ -116,7 +116,7 @@ for (var i = 0; i < length; i++) {
 
 **편집** > **IntelliSense** > **코드 조각 삽입**을 선택한 다음, 언어의 폴더를 선택하여 언어에 사용 가능한 코드 조각을 확인할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각](../ide/code-snippets.md)
 - [코드 탐색](../ide/navigating-code.md)

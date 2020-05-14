@@ -2,17 +2,17 @@
 title: UWP 앱의 C++ DLL 테스트 방법
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
-author: mikeblome
-ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+author: corob-msft
+ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748085"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77274449"
 ---
 # <a name="how-to-test-a-c-dll"></a>C++ DLL 테스트 방법
 
@@ -48,7 +48,7 @@ ms.locfileid: "72748085"
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     다음 사항에 유의합니다.
+     다음 사항에 유의하세요.
 
     - 각 테스트는 `TEST_METHOD(YourTestName){...}`를 사용하여 정의됩니다.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72748085"
 
     2. **RooterLib 속성 페이지** 대화 상자에서 **구성 속성** 및 **C++** 를 차례로 확장하고, **전처리기**를 선택합니다.
 
-    3. **전처리기 정의** 목록에서 **\<편집...>** 을 선택한 다음, **전처리기 정의** 대화 상자에서 `ROOTERLIB_EXPORTS`를 추가합니다.
+    3. **전처리기 정의\< 목록에서** **편집...>** 을 선택한 다음, `ROOTERLIB_EXPORTS`전처리기 정의**대화 상자에서**를 추가합니다.
 
 4. 선언된 함수의 최소 구현을 추가합니다. *RooterLib.cpp*를 열고 다음 코드를 추가합니다.
 

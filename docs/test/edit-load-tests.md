@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593228"
 ---
 # <a name="edit-load-tests"></a>부하 테스트 편집
@@ -48,7 +48,7 @@ ms.locfileid: "75593228"
 
 자세한 내용은 [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md) 및 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)

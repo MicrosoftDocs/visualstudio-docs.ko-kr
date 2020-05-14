@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62811190"
 ---
 # <a name="create-visual-data-plots-with-r"></a>R을 사용하여 시각적 데이터 플롯 만들기
@@ -23,7 +23,7 @@ ms.locfileid: "62811190"
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | R을 사용한 그리기에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=ZTbKmz5RSgY)하세요(2분 02초). |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | R을 사용한 그리기에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=ZTbKmz5RSgY)하세요(2분 02초). |
 
 ## <a name="the-plot-window"></a>플롯 창
 
@@ -45,7 +45,7 @@ ms.locfileid: "62811190"
 
 플롯 창의 도구 모음에는 적용 가능한 명령이 포함되고 이러한 명령은 대부분 **R 도구** > **플롯** 메뉴를 통해서도 사용할 수 있습니다.
 
-| 단추 | 명령 | 설명 |
+| 단추 | 명령 | Description |
 | --- | --- | --- |
 | ![새 플롯 창 단추](media/plotting-toolbar-01-new-plot-window.png) | 새 플롯 창 | 자체 기록이 포함된 별도의 플롯 창을 만듭니다. [여러 플롯 창](#multiple-plot-windows)을 참조하세요. |
 | ![플롯 창 활성화 단추](media/plotting-toolbar-02-activate-plot-window.png) | 플롯 창 활성화 | 현재 플롯 창을 활성 창으로 설정하므로 후속 `plot` 명령은 해당 창으로 렌더링됩니다. [여러 플롯 창](#multiple-plot-windows)을 참조하세요. [여러 플롯 창](#multiple-plot-windows)을 참조하세요. |

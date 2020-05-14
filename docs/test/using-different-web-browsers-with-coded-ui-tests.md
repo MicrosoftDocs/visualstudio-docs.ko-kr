@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585576"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
@@ -130,7 +130,7 @@ IE가 아닌 웹 브라우저에서 테스트를 재생하려면 **코딩된 UI 
 
 [다중 브라우저 테스트 오류 문제 해결](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

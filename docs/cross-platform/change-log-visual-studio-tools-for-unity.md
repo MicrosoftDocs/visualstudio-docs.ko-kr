@@ -1,7 +1,7 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 3/23/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,66 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 0b1d735cd05f79eaabd00a575a6c050b37ce2d16
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706780"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232832"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="4510"></a>4.5.1.0
+
+릴리스 날짜: 2020년 3월 16일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) 에 대한 억제 장치가 추가되었습니다. Invoke, InvokeRepeating, StartCoroutine 또는 StopCoroutine과 함께 사용되는 프라이빗 메서드는 사용되지 않음으로 표시될 수 없습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - OnDrawGizmos/OnDrawGizmosSelected 설명서가 수정되었습니다.
+
+- **평가:**
+
+  - 람다 인수 검사가 수정되었습니다.
+
+## <a name="4501"></a>4.5.0.1
+
+릴리스 날짜: 2020년 2월 19일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 잘못된 메시지 시그니처에 대한 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) 진단 검사가 수정되었습니다. 여러 수준의 상속을 갖는 형식을 검사할 때 이 진단이 실패하고 `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added` 메시지가 표시되는 경우가 있었습니다.
+
+## <a name="4500"></a>4.5.0.0
+
+릴리스 날짜: 2020년 1월 22일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - HLSL 파일에 대한 지원이 추가되었습니다.
+  
+  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)에 대한 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 프라이빗 필드는 사용되지 않음으로 표시될 수 없습니다.
+  
+  - [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)에 대한 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 필드는 할당되지 않음으로 표시될 수 없습니다.  
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 프로젝트 생성이 수정되었습니다(`GenerateTargetFrameworkMonikerAttribute` 대상이 잘못 찾아지는 경우가 있었습니다).
 
 ## <a name="4420"></a>4.4.2.0
 
@@ -37,7 +87,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 11월 6일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -49,7 +99,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - **통합:**
 
-  - 고급 이진 및 호출 식을 사용하여 태그 비교 분석기 `UNT0002`를 수정했습니다.
+  - 고급 이진 및 호출 식을 사용하는 태그 비교 분석기 [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md)가 수정되었습니다.
 
 ### <a name="deprecated-features"></a>사용되지 않는 기능
 
@@ -61,11 +111,11 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 10월 15일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
-  - 모든 Unity 메시지에 대해 `IDE0060`(사용되지 않는 매개 변수)의 억제 장치를 추가했습니다.
+  - 모든 Unity 메시지에 대해 [`IDE0060`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md)(사용되지 않는 매개 변수)에 대한 억제 장치가 추가되었습니다.
   
   - `TooltipAttribute` 태그가 지정된 필드에 대한 빠른 도구 설명을 추가했습니다. (이 내용은 이 필드를 사용하는 간단한 get 접근자에도 적용됩니다.)
 
@@ -83,32 +133,32 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 16일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
   - Unity와 관련된 새로운 진단 기능을 추가하여 Unity 프로젝트에 대한 Visual Studio의 지식을 심화했습니다. Unity 프로젝트에 적용되지 않는 일반적인 C# 진단을 억제하여 IDE를 보다 효율적으로 만들었습니다. 예를 들어 IDE에 검사기 변수를 `readonly`로 변경하는 빠른 수정이 표시되지 않습니다. 이렇게 하면 Unity 편집기에서 변수를 수정할 수 없습니다.
-    - `UNT0001`: Unity 메시지는 비어 있는 경우에도 런타임에 의해 호출되며, Unity 런타임에 의한 불필요한 처리를 방지하려면 이 메시지를 선언하지 마십시오.
-    - `UNT0002`: 문자열 같음을 사용한 태그 비교는 기본 제공 CompareTag 메서드보다 느립니다.
-    - `UNT0003`: 형식 안전성을 위해 GetComponent의 일반 형식을 사용하는 것이 좋습니다.
-    - `UNT0004`: Update 메시지는 프레임 속도에 따라 달라지며, Time.fixedDeltaTime 대신 Time.deltaTime을 사용해야 합니다.
-    - `UNT0005`: FixedUpdate 메시지는 프레임 속도에 따라 달라지며, Time.deltaTime 대신 Time.fixedDeltaTime을 사용해야 합니다.
-    - `UNT0006`: 이 Unity 메시지에 대해 잘못된 메서드 시그니처가 검색되었습니다.
-    - `UNT0007`: Unity는 null 결합과 호환되지 않는 Unity 개체에 대해 null 비교 연산자를 재정의합니다.
-    - `UNT0008`: Unity는 null 전파와 호환되지 않는 Unity 개체에 대해 null 비교 연산자를 재정의합니다.
-    - `UNT0009`: 클래스에 InitializeOnLoad 특성을 적용할 때 정적 생성자를 제공해야 합니다. InitializeOnLoad 특성은 편집기가 시작될 때 호출되도록 합니다.
-    - `UNT0010`: MonoBehaviours는 AddComponent()를 사용해서만 만들어야 합니다. MonoBehaviour는 구성 요소이며, GameObject에 연결되어야 합니다.
-    - `UNT0011`: ScriptableObject는 CreateInstance()를 사용해서만 만들어야 합니다. Unity 메시지 메서드를 처리하려면 ScriptableObject는 Unity 엔진으로 만들어야 합니다.
-    - `IDE0029`의 `USP0001`: Unity 개체는 null 결합을 사용하면 안 됩니다.
-    - `IDE0031`의 `USP0002`: Unity 개체는 null 전파를 사용하면 안 됩니다.
-    - `IDE0051`의 `USP0003`: Unity 메시지는 Unity 런타임에서 호출됩니다.
-    - `IDE0044`의 `USP0004`: SerializeField 특성이 있는 필드는 readonly로 설정하면 안 됩니다.
+    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md): Unity 메시지는 비어 있는 경우에도 런타임에 의해 호출되며, Unity 런타임에 의한 불필요한 처리를 방지하려면 이 메시지를 선언하지 마십시오.
+    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md): 문자열 같음을 사용한 태그 비교는 기본 제공 CompareTag 메서드보다 느립니다.
+    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0003.md): 형식 안전성을 위해 GetComponent의 일반 형식을 사용하는 것이 좋습니다.
+    - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0004.md): Update 메시지는 프레임 속도에 따라 달라지며, Time.fixedDeltaTime 대신 Time.deltaTime을 사용해야 합니다.
+    - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0005.md): FixedUpdate 메시지는 프레임 속도에 따라 달라지며, Time.deltaTime 대신 Time.fixedDeltaTime을 사용해야 합니다.
+    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md): 이 Unity 메시지에 대해 잘못된 메서드 시그니처가 검색되었습니다.
+    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0007.md): Unity는 null 결합과 호환되지 않는 Unity 개체에 대해 null 비교 연산자를 재정의합니다.
+    - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0008.md): Unity는 null 전파와 호환되지 않는 Unity 개체에 대해 null 비교 연산자를 재정의합니다.
+    - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0009.md): 클래스에 InitializeOnLoad 특성을 적용할 때 정적 생성자를 제공해야 합니다. InitializeOnLoad 특성은 편집기가 시작될 때 호출되도록 합니다.
+    - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0010.md): MonoBehaviours는 AddComponent()를 사용해서만 만들어야 합니다. MonoBehaviour는 구성 요소이며, GameObject에 연결되어야 합니다.
+    - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0011.md): ScriptableObject는 CreateInstance()를 사용해서만 만들어야 합니다. Unity 메시지 메서드를 처리하려면 ScriptableObject는 Unity 엔진으로 만들어야 합니다.
+    - `IDE0029`의 [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0001.md): Unity 개체는 null 결합을 사용하면 안 됩니다.
+    - `IDE0031`의 [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0002.md): Unity 개체는 null 전파를 사용하면 안 됩니다.
+    - `IDE0051`의 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0003.md): Unity 메시지는 Unity 런타임에서 호출됩니다.
+    - `IDE0044`의 [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md): SerializeField 특성이 있는 필드는 readonly로 설정하면 안 됩니다.
 
 ## <a name="4310"></a>4.3.1.0
 
 릴리스 날짜: 2019년 9월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -122,7 +172,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 8월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -158,7 +208,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 7월 24일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -182,7 +232,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 5월 24일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -200,7 +250,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 5월 21일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -256,7 +306,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 2월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -268,7 +318,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 1월 31일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -322,7 +372,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 12월 10일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -350,7 +400,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 12월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -444,7 +494,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 8월 14일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -482,7 +532,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 6월 26일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버깅:**
 
@@ -500,7 +550,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 5월 30일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버깅:**
 
@@ -524,7 +574,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - 실험용 빌드를 사용할 경우 종속성 문제가 해결되었습니다.
 
@@ -532,7 +582,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 5월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버깅:**
 
@@ -562,7 +612,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -596,7 +646,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 2월 23일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -616,7 +666,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 2월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -644,7 +694,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 1월 10일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -690,7 +740,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 12월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -724,7 +774,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 9월 19일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -766,7 +816,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 8월 14일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -796,9 +846,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 5월 10일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - MEF 캐시 정리 지원이 추가되었습니다.
 
@@ -814,7 +864,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 4월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -885,7 +935,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 Preview
 릴리스 날짜: 2016년 11월 17일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **일반:**
 
@@ -953,7 +1003,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2016년 7월 14일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **일반:**
 
@@ -989,7 +1039,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2016년 2월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **마법사:**
 
@@ -1027,7 +1077,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - [Tabs Studio](https://tabsstudio.com/) Visual Studio 확장과의 비호환성 문제가 해결되었습니다.
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - HKLM 레지스트리 항목을 만들어 VSTU의 시스템 전체 설치(모든 사용자에 대한 설치)를 지원합니다.
 
@@ -1037,7 +1087,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2015년 9월 8일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 5.2 지원
 
@@ -1094,7 +1144,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 Preview 2
 릴리스 날짜: 2015년 4월 2일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Unity 프로젝트 탐색기:**
 
@@ -1183,7 +1233,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Preview
 릴리스 날짜: 2014년 11월 12일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Visual Studio 2015가 지원됩니다.
 
@@ -1223,7 +1273,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 10월 9일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 플레이어의 검색을 향상합니다.
 
@@ -1247,7 +1297,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 9월 22일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 원본 위치로 바인딩 중단점을 최적화합니다.
 
@@ -1293,7 +1343,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 7월 29일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 디버거 연결 창에서 디버그할 사용자 지정 IP 및 포트를 입력하는 기능을 추가합니다.
 
@@ -1342,7 +1392,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 1월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 편집기의 원격 검색을 위해 Mavericks에서 Unity의 스크립팅 엔진 네트워크 계층에 있는 문제를 해결합니다.
 
@@ -1370,7 +1420,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 11월 21일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4.3 API와 함께 MonoBehaviour 마법사가 조정되었습니다.
 
@@ -1404,7 +1454,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 9월 24일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1484,7 +1534,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 3월 25일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1596,7 +1646,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="10110"></a>1.0.11.0
 릴리스 날짜: 2012년 11월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4를 공식 지원합니다.
 
@@ -1673,7 +1723,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 14일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Visual Studio 2012를 지원합니다.
 
@@ -1703,7 +1753,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity에서 디버그 기호가 자동으로 변환됩니다.
 
@@ -1717,7 +1767,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity에서 파일을 열기 위해 UnityVS의 사용을 비활성화하는 새 구성 옵션입니다.
 
@@ -1745,7 +1795,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 8월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4.0 베타에 대한 미리 보기를 지원합니다.
 

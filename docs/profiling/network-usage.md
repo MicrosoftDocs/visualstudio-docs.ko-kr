@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73144692"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP 앱에서 네트워크 사용 분석
@@ -72,7 +72,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
 
 3. 응답 자동 서식 지정 단추(본문 탭 내부)를 사용하면 콘텐츠 가독성을 높여 JSON, XML, HTML, CSS, JavaScript 및 TypeScript 응답 페이로드를 통해 구문 분석하는 데 도움이 될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](https://devblogs.microsoft.com/visualstudio/)

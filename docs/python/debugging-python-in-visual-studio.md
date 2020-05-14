@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959979"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307174"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -257,6 +257,6 @@ ptvsd 설치를 관리하려면:
 
 1. 디버깅을 시작하고 문제를 다시 재현합니다. 그러면 `%temp%\DebugAdapterHostLog.txt`에서 디버거 로그를 찾을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 Visual Studio 디버거에 대한 자세한 내용은 [Visual Studio에서 디버깅](../debugger/debugger-feature-tour.md)을 참조하세요.

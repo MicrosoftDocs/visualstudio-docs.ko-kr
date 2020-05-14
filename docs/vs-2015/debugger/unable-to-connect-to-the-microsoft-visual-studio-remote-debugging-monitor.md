@@ -1,5 +1,5 @@
 ---
-title: Microsoft Visual Studio 원격 디버깅 모니터에 연결할 수 없습니다. | Microsoft Docs
+title: Microsoft Visual Studio 원격 디버깅 모니터에 연결할 수 없습니다. Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684828"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477059"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65684828"
 이 오류 메시지는 **프로세스에 연결** 대화 상자에 잘못된 Visual Studio 원격 디버깅 모니터 이름을 입력한 경우에 나타납니다. 원격 디버깅 모니터 이름은 일반적으로 원격으로 디버깅하기 위해 연결하려는 컴퓨터의 이름과 동일합니다. 이 메시지는 원격 컴퓨터가 네트워크에 없거나, 원격 컴퓨터에 원격 디버깅 모니터가 올바르게 설치되지 않았거나, 네트워크 문제 또는 방화벽으로 인해 원격 컴퓨터에 액세스할 수 없는 경우에 나타날 수 있습니다.  
   
 > [!IMPORTANT]
-> 제품 버그 때문에 이 메시지가 수신되었다고 생각하는 경우 이 문제를 Visual Studio [웃는 얼굴 보내기](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)로 알려주세요. 자세한 도움말이 필요한 경우 [Talk to Us](../ide/talk-to-us.md) 에서 Microsoft에 문의하는 방법을 참조하세요.  
+> 자세한 도움말이 필요한 경우 [Talk to Us](../ide/talk-to-us.md) 에서 Microsoft에 문의하는 방법을 참조하세요.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>로컬로 디버그하는 동안 이 메시지가 수신됨  
  로컬로 디버그하는 동안 이 메시지가 수신된 경우 바이러스 백신 소프트웨어 또는 타사 방화벽 때문일 수 있습니다. Visual Studio는 32비트 애플리케이션이므로 64비트 버전의 원격 디버거를 사용하여 64비트 애플리케이션을 디버그합니다. 두 프로세스는 로컬 컴퓨터 내의 로컬 네트워크를 사용하여 통신합니다. 컴퓨터에서 나가는 네트워크 트래픽이 없지만 타사 보안 소프트웨어가 통신을 차단할 수 있습니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "65684828"
   
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 원격 컴퓨터에 Visual Studio 원격 디버깅 모니터가 설치되어 실행되고 있는지 확인합니다. 원격 디버거 및 설치 하는 방법에 대 한 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)합니다.  
+- 원격 컴퓨터에 Visual Studio 원격 디버깅 모니터가 설치되어 실행되고 있는지 확인합니다. 원격 디버거 및 설치 방법에 대 한 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)을 참조 하세요.  
   
 - Visual Studio에서 프로젝트 속성을 확인합니다(**프로젝트/속성/디버깅**). **원격 서버 이름** 이 올바른지 확인합니다.  
   
@@ -48,9 +48,10 @@ ms.locfileid: "65684828"
  원격 컴퓨터를 [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) 하려고 합니다. Ping에 응답하지 않으면 원격 도구도 연결할 수 없습니다. 원격 컴퓨터를 다시 부팅하거나 네트워크에서 올바르게 구성되었는지 확인합니다.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>원격 디버거 버전이 Visual Studio 버전과 일치하지 않음  
- 로컬로 실행하는 Visual Studio 버전이 원격 컴퓨터에서 실행되는 원격 디버깅 모니터 버전과 일치해야 합니다. 이 문제를 해결하려면 일치하는 버전의 원격 디버깅 모니터를 다운로드하여 설치합니다. [다운로드 센터](http://www.microsoft.com/download) 로 이동하여 올바른 버전의 원격 디버거를 찾습니다.  
-  
+ 로컬로 실행하는 Visual Studio 버전이 원격 컴퓨터에서 실행되는 원격 디버깅 모니터 버전과 일치해야 합니다. 이 문제를 해결하려면 일치하는 버전의 원격 디버깅 모니터를 다운로드하여 설치합니다. Visual studio [구독](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) 으로 이동 하 여 사용자의 visual studio 버전에 맞는 올바른 버전의 원격 디버거를 찾습니다.
+
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>로컬 및 원격 컴퓨터의 인증 모드가 서로 다름  
+
  로컬 및 원격 컴퓨터에서 동일한 인증 모드를 사용해야 합니다. 이 문제를 해결하려면 두 컴퓨터에서 모두 동일한 인증 모드를 사용 중인지 확인합니다. **도구/옵션** 대화 상자에서 원격 디버거의 인증 모드를 변경할 수 있습니다.  
   
  인증 모드에 대한 자세한 내용은 [Windows 인증 개요](https://technet.microsoft.com/library/hh831472.aspx)를 참조하세요.  
@@ -84,4 +85,4 @@ ms.locfileid: "65684828"
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>참고 항목  
- [Remote Debugging](../debugger/remote-debugging.md)
+ [원격 디버깅](../debugger/remote-debugging.md)

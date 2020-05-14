@@ -5,17 +5,17 @@ ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590022"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579389"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃
 

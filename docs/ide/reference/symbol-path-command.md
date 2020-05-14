@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589385"
 ---
 # <a name="symbol-path-command"></a>기호 경로 명령
@@ -33,7 +33,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>인수
 `pathname`
 
-선택 사항입니다. 디버거가 기호를 검색할 경로의 세미콜론으로 구분된 목록입니다.
+(선택 사항) 디버거가 기호를 검색할 경로의 세미콜론으로 구분된 목록입니다.
 
 ## <a name="remarks"></a>설명
 `pathname`을 지정하지 않으면 이 명령은 현재 기호 경로를 나열합니다.
@@ -52,7 +52,7 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [명령 창](../../ide/reference/command-window.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)

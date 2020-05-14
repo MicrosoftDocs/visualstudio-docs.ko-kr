@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Microsoft Docs
+title: PROVIDER_PROCESS_DATA | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18b60d68b8c36c1d0c4fcd2a90e25732108460ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713773"
 ---
-# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
-이 구조는 컴퓨터에서 실행 중인 프로세스에 대 한 정보를 제공 합니다.
+# <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
+이 구조는 컴퓨터에서 실행되는 프로세스에 대한 정보를 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,25 +45,25 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>멤버
  `Fields`\
- 플래그의 조합을 합니다 [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) 열거형을 나타내는 필드 채워집니다.
+ [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) 열거형의 플래그를 조합하여 채워진 필드를 나타냅니다.
 
  `ProgramNodes`\
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 프로그램 노드의 배열을 포함 하는 구조입니다.
+ 프로그램 노드의 배열을 포함하는 [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 구조입니다.
 
  `fIsDebuggerPresent`\
- 0이 아닌 값 (`TRUE`) 하는 경우는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 디버거가 실행 되 고, 0 (`FALSE`) 없는 경우.
+ Nonzero`TRUE`() [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 디버거가 실행 중인`FALSE`경우 0 () 이 아닌 경우.
 
 ## <a name="remarks"></a>설명
- 이 구조에 전달 되는 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 메서드 위치에서 채워집니다.
+ 이 구조는 채워진 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 메서드에 전달됩니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg.h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)
 - [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)

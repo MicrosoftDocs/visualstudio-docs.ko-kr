@@ -2,7 +2,7 @@
 # [새로운 기능](whats-new-in-subscriptions.md)
 # 알림 신청
 ## 구독 구입
-### [정품](https://visualstudio.microsoft.com/vs/pricing)
+### [정품](buy-activate-retail.md)
 ### 클라우드 
 #### [개요](vscloud-overview.md)
 #### [청구 FAQ](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [MPN에 대한 구독 관리](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## 로그인 
-### [정품 구독 활성화](activate-store-subscriptions.md)
 ### [Microsoft 계정으로 로그인](sign-in-msa.md)
 ### [회사 또는 학교 계정으로 로그인](sign-in-work.md)
 ### [GitHub로 로그인](sign-in-github.md)
@@ -27,18 +26,20 @@
 ### 도구
 #### [Azure DevTest 개별 크레딧](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Azure Pay-As-You-Go](vs-azure-payg.md)
+#### [Azure DevTest 종량제](vs-azure-payg.md)
+#### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST 하이라이트](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
-#### [Microsoft 365](vs-m365.md)
-#### [Office 365 구독](vs-office365.md)
+#### [Microsoft 365 개발자](vs-m365.md)
+#### [Office 365 Pro Plus](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Visual Studio IDE](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Windows 개발자 계정](vs-windows-dev.md)
+#### [Windows Virtual Desktop](vs-windows-virtual-desktop.md)
 ### 전문적인 개발
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
@@ -73,10 +74,10 @@
 ### [슈퍼 관리자 및 관리자](admin-roles.md)
 ### [계약 기본 설정 지정](admin-prefs.md)
 ### [개요](using-admin-portal.md)
-### [비디오 자습서: 관리 포털 사용](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### 구독 할당
 #### [단일 사용자 추가](assign-license.md)
 #### [여러 사용자 추가](assign-license-bulk.md)
+#### [특정 구독 할당](assign-guid.md)
 ### [구독 편집](edit-license.md)
 ### [구독 삭제](delete-license.md)
 ### [구독 검색](search-license.md)
@@ -84,7 +85,7 @@
 ### [초과 할당](handle-overclaimed-license.md)
 ### [최대 사용량](maximum-usage.md)
 ### [만료된 구독](handle-expired-license.md)
-### [별칭을 사용하는 구독자](aliasing.md)
+### [구독자 로그인 시나리오 ](aliasing.md)
 ### [개인 전자 메일 로그인을 사용하는 구독자](personal-email-sign-ins.md)
 ### [GitHub Enterprise가 포함된 Visual Studio 관리](assign-github.md)
 # 리소스

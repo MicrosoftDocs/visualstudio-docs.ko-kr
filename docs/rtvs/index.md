@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "73189247"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio에서 R 작업
@@ -47,7 +47,7 @@ Visual Studio에서 R을 사용해 보려면
 
 |   |   |
 |---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Visual Studio용 R 도구(12m 36s)의 개요에 대한 [비디오 보기(youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ). 또한 [더 많은 R 도구 비디오](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)를 참조합니다. |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | Visual Studio용 R 도구(12m 36s)의 개요에 대한 [비디오 보기(youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ). 또한 [더 많은 R 도구 비디오](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)를 참조합니다. |
 
 ## <a name="send-us-your-feedback"></a>피드백을 보내주세요.
 

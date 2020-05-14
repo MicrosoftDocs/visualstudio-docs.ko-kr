@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568479"
 ---
 # <a name="options-text-editor-f-codelens"></a>옵션, 텍스트 편집기, F#, CodeLens
@@ -38,7 +38,7 @@ ms.locfileid: "75568479"
 
    주석에 사용되는 기본 접두사를 변경할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
 - [CodeLens에서 코드 변경 내용 및 기타 기록 찾기](../../ide/find-code-changes-and-other-history-with-codelens.md)

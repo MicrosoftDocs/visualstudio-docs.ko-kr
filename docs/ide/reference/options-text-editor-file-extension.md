@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596205"
 ---
 # <a name="options-text-editor-file-extension"></a>옵션, 텍스트 편집기, 파일 확장명
@@ -28,9 +28,9 @@ ms.locfileid: "75596205"
 
 “인코딩 사용” 옵션을 선택하면 해당 형식의 문서를 열 때마다 해당 문서에 대한 인코딩 체계를 선택할 수 있는 대화 상자가 표시됩니다. 다양한 플랫폼에서 또는 다양한 대상 언어로 사용할 프로젝트 문서 버전을 준비 중이라면 이 대화 상자가 유용할 수 있습니다.
 
-## <a name="uielement-list"></a>UI 요소 목록
+## <a name="uielement-list"></a>UIElement 목록
 
-**확장**
+**확장명**
 
 정의할 IDE의 편집 환경을 포함하는 파일 확장명을 입력합니다.
 
@@ -58,6 +58,6 @@ ms.locfileid: "75596205"
 
 **편집기**와 동일한 목록을 제공합니다. 파일 확장명이 없는 문서가 열릴 IDE 편집기 또는 디자이너를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 편집기 모드 관리](../../ide/how-to-manage-editor-modes.md)

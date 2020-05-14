@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02639b91ce07ade97e9023dee3de7cfdaf10a07e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847967"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586794"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace 독립 실행형 수집기 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "75847967"
 >
 > **모니터** 모드에서 에이전트를 실행하면 IntelliTrace 데이터에서 성능 관련 이벤트를 수집할 수 있습니다. **모니터** 모드는 **추적** 모드 또는 **IntelliTrace 독립 실행형 수집기**에 비해 성능에 주는 영향이 적습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다. [Microsoft Monitoring Agent 사용을](../debugger/using-the-microsoft-monitoring-agent.md)참조 하세요.
 
- **Requirements**
+ **요구 사항**
 
 - .NET Framework 3.5, 4 또는 4.5
 
@@ -51,7 +51,7 @@ ms.locfileid: "75847967"
 
 - [IntelliTrace 데이터를 가져올 수 있는 다른 위치](#WhereElse)
 
-## <a name="WhatApps"></a> 컬렉터를 사용할 수 있는 앱
+## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a>수집기에서 사용할 앱은 무엇 인가요?
 
 - IIS(인터넷 정보 서비스) 버전 7.0, 7.5, 8.0에서 호스트되는 ASP.NET 웹앱
 
@@ -59,7 +59,7 @@ ms.locfileid: "75847967"
 
 - WPF(Windows Presentation Foundation) 및 Windows Forms 앱
 
-## <a name="GetStarted"></a> 시작하는 방법
+## <a name="how-do-i-get-started"></a><a name="GetStarted"></a>시작 어떻게 할까요?
 
 1. [수집기 설치](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
@@ -71,13 +71,13 @@ ms.locfileid: "75847967"
 
 5. [웹 애플리케이션 또는 SharePoint 애플리케이션에서 데이터 수집](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     -또는-
+     또는
 
-     [관리되는 앱에서 데이터를 수집합니다.](#BKMK_Collect_Data_from_Executables)
+     [관리 되는 앱에서 데이터 수집](#BKMK_Collect_Data_from_Executables)
 
-6. [Visual Studio Enterprise에서 .iTrace 파일을 엽니다.](#BKMK_View_IntelliTrace_Log_Files)
+6. [Visual Studio Enterprise에서 .Itrace 파일을 엽니다.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 수집기 설치
+## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a>수집기 설치
 
 1. 앱 서버에서 **C:\IntelliTraceCollector**와 같은 수집기 디렉터리를 만듭니다.
 
@@ -112,13 +112,13 @@ ms.locfileid: "75847967"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > 마침표( **.** )는 지역화된 수집 계획을 포함하는 하위 폴더를 보존합니다.
+       > 마침표(**.**)는 지역화된 수집 계획을 포함하는 하위 폴더를 보존합니다.
 
-## <a name="ConfigurePermissionsRunningCollector"></a> 수집기 디렉터리에 대한 사용 권한 설정
+## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a>수집기 디렉터리에 대 한 사용 권한 설정
 
 1. 앱 서버에서 관리자 권한으로 명령 프롬프트 창을 엽니다.
 
-2. Windows **icacls** 명령을 사용하여 서버 관리자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다. 예를 들면 다음과 같습니다.:
+2. Windows **icacls** 명령을 사용하여 서버 관리자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다. 다음은 그 예입니다. 
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -126,13 +126,13 @@ ms.locfileid: "75847967"
 
     1. IntelliTrace PowerShell cmdlet을 실행하는 사용자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다.
 
-         예를 들면 다음과 같습니다.:
+         다음은 그 예입니다. 
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. 웹앱 또는 SharePoint 애플리케이션의 애플리케이션 풀에 수집기 디렉터리에 대한 읽기 및 실행 권한을 제공합니다.
 
-         예를 들면 다음과 같습니다.:
+         다음은 그 예입니다. 
 
         - **DefaultAppPool** 애플리케이션 풀의 웹앱:
 
@@ -142,11 +142,11 @@ ms.locfileid: "75847967"
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> IntelliTrace PowerShell cmdlet을 설치하고 웹앱 또는 SharePoint 애플리케이션에 대한 데이터를 수집
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>IntelliTrace PowerShell cmdlet을 설치 하 여 웹 앱 또는 SharePoint 응용 프로그램에 대 한 데이터 수집
 
 1. 앱 서버에서 PowerShell이 사용하도록 설정되어 있는지 확인합니다. 대부분 Windows Server 버전에서는 **서버 관리자** 관리 도구에서 이 기능을 추가할 수 있습니다.
 
-     ![서버 관리자를 사용 하 여 PowerShell 추가](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![서버 관리자를 사용하여 PowerShell 추가](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. IntelliTrace PowerShell cmdlet을 설치합니다.
 
@@ -162,11 +162,11 @@ ms.locfileid: "75847967"
 
     2. PowerShell 명령 창에서 **Import-Module** 명령을 사용하여 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**을 가져옵니다.
 
-         예를 들면 다음과 같습니다.:
+         다음은 그 예입니다. 
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-## <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> .iTrace 파일 디렉터리에 대한 사용 권한 설정
+## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a>.Itrace 파일 디렉터리에 대 한 사용 권한 설정
 
 1. 앱 서버에서 **C:\IntelliTraceLogFiles**와 같은 .iTrace 파일 디렉터리를 만듭니다.
 
@@ -180,7 +180,7 @@ ms.locfileid: "75847967"
 
 2. 웹앱 또는 SharePoint 애플리케이션의 경우에는 .iTrace 파일 디렉터리에 대한 모든 권한을 해당 애플리케이션 풀에 제공합니다. Windows **icacls** 명령이나 Windows 탐색기 또는 파일 탐색기를 사용할 수 있습니다.
 
-    예를 들면 다음과 같습니다.:
+    다음은 그 예입니다. 
 
    - Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.
 
@@ -192,7 +192,7 @@ ms.locfileid: "75847967"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       -또는-
+       또는
 
    - Windows 탐색기 또는 파일 탐색기를 통해 사용 권한을 설정하려면 다음 단계를 수행합니다.
 
@@ -210,7 +210,7 @@ ms.locfileid: "75847967"
 
      7. 애플리케이션 풀에 **모든 권한**이 있는지 확인합니다.
 
-## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 웹 애플리케이션 또는 SharePoint 애플리케이션에서 데이터 수집
+## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a>웹 앱 또는 SharePoint 응용 프로그램에서 데이터 수집
 
 1. 데이터 수집을 시작하려면 관리자 권한으로 PowerShell 명령 창을 열고 다음 명령을 실행합니다.
 
@@ -226,18 +226,18 @@ ms.locfileid: "75847967"
     |||
     |-|-|
     |*ApplicationPool*|애플리케이션이 실행되는 애플리케이션 풀의 이름입니다.|
-    |*PathToCollectionPlan*|수집 계획(수집기의 설정을 구성하는 .xml 파일)의 경로입니다.<br /><br /> 수집기와 함께 제공되는 계획을 지정할 수 있습니다. 다음 계획은 웹앱 및 SharePoint 애플리케이션에 대해 사용할 수 있습니다.<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     예외, 데이터베이스 호출 및 웹 서버 요청을 포함한 IntelliTrace 이벤트 및 SharePoint 이벤트만 수집합니다.<br />-   collection_plan.ASP.NET.trace.xml<br />     함수 호출과 collection_plan.ASP.NET.default.xml의 모든 데이터를 수집합니다. 이 계획은 상세 분석의 경우에는 효율적이지만 collection_plan.ASP.NET.default.xml에 비해 앱의 속도는 더 느려질 수 있습니다.<br /><br /> 앱 속도 저하를 방지하려면 이러한 계획을 사용자 지정하거나 계획을 직접 만듭니다. 보안을 유지하려면 수집기 파일과 같은 안전한 위치에 사용자 지정 계획을 저장합니다. [IntelliTrace 수집 계획 만들기 및 사용자 지정](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) 및 [앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법](#Minimizing) **참고:**  기본적으로 .Itrace 파일의 최대 크기는 100 MB입니다. .ITrace 파일이 이 제한에 도달하면 수집기는 파일의 가장 오래된 항목을 삭제하여 새 항목을 저장하기 위한 공간을 확보합니다. 이 제한을 변경하려면 수집 계획의 `MaximumLogFileSize` 특성을 편집합니다. <br /><br /> *수집 계획의 지역화된 버전을 찾을 수 있는 위치*<br /><br /> 수집기 하위 폴더에서 지역화된 계획을 찾을 수 있습니다.|
+    |*PathToCollectionPlan*|수집 계획(수집기의 설정을 구성하는 .xml 파일)의 경로입니다.<br /><br /> 수집기와 함께 제공되는 계획을 지정할 수 있습니다. 다음 계획은 웹앱 및 SharePoint 애플리케이션에 대해 사용할 수 있습니다.<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     예외, 데이터베이스 호출 및 웹 서버 요청을 포함한 IntelliTrace 이벤트 및 SharePoint 이벤트만 수집합니다.<br />-   collection_plan.ASP.NET.trace.xml<br />     함수 호출과 collection_plan.ASP.NET.default.xml의 모든 데이터를 수집합니다. 이 계획은 상세 분석의 경우에는 효율적이지만 collection_plan.ASP.NET.default.xml에 비해 앱의 속도는 더 느려질 수 있습니다.<br /><br /> 앱 속도 저하를 방지하려면 이러한 계획을 사용자 지정하거나 계획을 직접 만듭니다. 보안을 유지하려면 수집기 파일과 같은 안전한 위치에 사용자 지정 계획을 저장합니다. [IntelliTrace 수집 계획 만들기 및 사용자 지정](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) 및 [앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법](#Minimizing) **참고:**  기본적으로 .Itrace 파일의 최대 크기는 100 MB입니다. .ITrace 파일이 이 제한에 도달하면 수집기는 파일의 가장 오래된 항목을 삭제하여 새 항목을 저장하기 위한 공간을 확보합니다. 이 제한을 변경하려면 수집 계획의 `MaximumLogFileSize` 특성을 편집합니다. <br /><br /> *수집 계획의 지역화된 버전을 찾을 수 있는 위치*<br /><br /> 수집기 하위 폴더에서 지역화된 계획을 찾을 수 있습니다.|
     |*FullPathToITraceFileDirectory*|.iTrace 파일 디렉터리의 전체 경로입니다. **보안 정보:**  상대 경로가 아닌 전체 경로를 제공 합니다.|
 
      수집기는 애플리케이션 풀에 연결되어 데이터 수집을 시작합니다.
 
-     *지금은 .iTrace 파일을 열 수 없습니다.* 데이터 수집 동안에는 파일이 잠겨 있습니다.
+     *지금은 .iTrace 파일을 열 수 없습니다.* 데이터 수집 중에는 파일이 잠겨 있습니다.
 
 2. 문제를 재현합니다.
 
 3. .iTrace 파일의 스냅샷을 만들려면 다음 구문을 사용합니다.
 
-     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
+     `Checkpoint-IntelliTraceCollection``"` *ApplicationPool \<>*`"`
 
 4. 수집 상태를 확인하려면 다음 구문을 사용합니다.
 
@@ -245,18 +245,18 @@ ms.locfileid: "75847967"
 
 5. 데이터 수집을 중지하려면 다음 구문을 사용합니다.
 
-     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
+     `Stop-IntelliTraceCollection``"` *ApplicationPool \<>*`"`
 
     > [!IMPORTANT]
     > 이 명령을 실행한 후 **Y** 를 입력하여 데이터 수집 중지를 확인합니다. 그렇지 않으면 수집기가 데이터를 계속 수집하거나 iTrace 파일이 잠긴 상태로 유지되거나 파일에 유용한 데이터가 포함되지 않을 수 있습니다.
 
-6. [Visual Studio Enterprise에서 .iTrace 파일을 엽니다.](#BKMK_View_IntelliTrace_Log_Files)
+6. [Visual Studio Enterprise에서 .Itrace 파일을 엽니다.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_Collect_Data_from_Executables"></a> 관리되는 앱에서 데이터를 수집합니다.
+## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a> 관리되는 앱에서 데이터를 수집합니다.
 
 1. 앱을 시작하는 동시에 데이터를 수집하려면 다음 구문을 사용합니다.
 
-     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
+     `\IntelliTraceSC.exe launch /cp:` `/f:` *FullPathToIntelliTraceCollectorExecutable>\<pathtocollectionplan&gt>* *fullpathtoitracefiledirectoryandfilename&gt \<>* *pathtoappexecutablefileandfilename&gt \<>* * \<*
 
      예를 들어 **MyApp**앱에서 데이터를 수집하려면 다음 명령을 실행합니다.
 
@@ -265,15 +265,15 @@ ms.locfileid: "75847967"
     |||
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|수집기 실행 파일인 IntelliTraceSC.exe의 전체 경로입니다.|
-    |*PathToCollectionPlan*|수집 계획(수집기의 설정을 구성하는 .xml 파일)의 경로입니다.<br /><br /> 수집기와 함께 제공되는 계획을 지정할 수 있습니다. 관리되는 앱에 사용할 수 있는 계획은 다음과 같습니다.<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     예외, 데이터베이스 호출 및 웹 서버 요청을 포함한 IntelliTrace 이벤트만 수집합니다.<br />-   collection_plan.ASP.NET.trace.xml<br />     함수 호출과 collection_plan.ASP.NET.default.xml의 모든 데이터를 수집합니다. 이 계획은 상세 분석의 경우에는 효율적이지만 collection_plan.ASP.NET.default.xml에 비해 앱의 속도는 더 느려질 수 있습니다.<br /><br /> 앱 속도 저하를 방지하려면 이러한 계획을 사용자 지정하거나 계획을 직접 만듭니다. 보안을 유지하려면 수집기 파일과 같은 안전한 위치에 사용자 지정 계획을 저장합니다. [IntelliTrace 수집 계획 만들기 및 사용자 지정](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) 및 [앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법](#Minimizing) **참고:**  기본적으로 .Itrace 파일의 최대 크기는 100 MB입니다. .ITrace 파일이 이 제한에 도달하면 수집기는 파일의 가장 오래된 항목을 삭제하여 새 항목을 저장하기 위한 공간을 확보합니다. 이 제한을 변경하려면 수집 계획의 `MaximumLogFileSize` 특성을 편집합니다. <br /><br /> *수집 계획의 지역화된 버전을 찾을 수 있는 위치*<br /><br /> 수집기 하위 폴더에서 지역화된 계획을 찾을 수 있습니다.|
+    |*PathToCollectionPlan*|수집 계획(수집기의 설정을 구성하는 .xml 파일)의 경로입니다.<br /><br /> 수집기와 함께 제공되는 계획을 지정할 수 있습니다. 관리되는 앱에 사용할 수 있는 계획은 다음과 같습니다.<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     예외, 데이터베이스 호출 및 웹 서버 요청을 포함한 IntelliTrace 이벤트만 수집합니다.<br />-   collection_plan.ASP.NET.trace.xml<br />     함수 호출과 collection_plan.ASP.NET.default.xml의 모든 데이터를 수집합니다. 이 계획은 상세 분석의 경우에는 효율적이지만 collection_plan.ASP.NET.default.xml에 비해 앱의 속도는 더 느려질 수 있습니다.<br /><br /> 앱 속도 저하를 방지하려면 이러한 계획을 사용자 지정하거나 계획을 직접 만듭니다. 보안을 유지하려면 수집기 파일과 같은 안전한 위치에 사용자 지정 계획을 저장합니다. [IntelliTrace 수집 계획 만들기 및 사용자 지정](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) 및 [앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법](#Minimizing) **참고:**  기본적으로 .Itrace 파일의 최대 크기는 100 MB입니다. .ITrace 파일이 이 제한에 도달하면 수집기는 파일의 가장 오래된 항목을 삭제하여 새 항목을 저장하기 위한 공간을 확보합니다. 이 제한을 변경하려면 수집 계획의 `MaximumLogFileSize` 특성을 편집합니다. <br /><br /> *수집 계획의 지역화된 버전을 찾을 수 있는 위치*<br /><br /> 수집기 하위 폴더에서 지역화된 계획을 찾을 수 있습니다.|
     |*FullPathToITraceFileDirectoryAndFileName*|.iTrace 파일 디렉터리의 전체 경로와 확장명이 **.itrace** 인 .iTrace 파일 이름입니다. **보안 정보:**  상대 경로가 아닌 전체 경로를 제공 합니다.|
     |*PathToAppExecutableFileAndFileName*|관리되는 앱의 경로 및 파일 이름입니다.|
 
 2. 앱을 종료하여 데이터 수집을 중지합니다.
 
-3. [Visual Studio Enterprise에서 .iTrace 파일을 엽니다.](#BKMK_View_IntelliTrace_Log_Files)
+3. [Visual Studio Enterprise에서 .Itrace 파일을 엽니다.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise에서 .iTrace 파일을 엽니다.
+## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise에서 .iTrace 파일을 엽니다.
 
 > [!NOTE]
 > IntelliTrace를 사용하여 코드를 디버그하고 단계별로 실행하려면 일치하는 소스 파일과 기호 파일이 있어야 합니다. [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)을 참조 하세요.
@@ -287,8 +287,8 @@ ms.locfileid: "75847967"
     > [!NOTE]
     > IntelliTrace를 사용하여 코드를 디버그하고 단계별로 실행하려면 개발 컴퓨터에 일치하는 소스 파일과 기호 파일이 있어야 합니다. [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)을 참조 하세요.
 
-## <a name="Minimizing"></a> 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법
- IntelliTrace는 많은 데이터를 수집할 수 있으므로 앱 성능에 대한 영향은 수집하는 데이터와 분석하는 코드의 종류에 따라 달라집니다. [프로덕션 서버에서 IntelliTrace 컬렉션 최적화](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)를 참조하세요.
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법
+ IntelliTrace는 많은 데이터를 수집할 수 있으므로 앱 성능에 대한 영향은 수집하는 데이터와 분석하는 코드의 종류에 따라 달라집니다. [프로덕션 서버에서 IntelliTrace 컬렉션 최적화](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/)를 참조하세요.
 
  앱 속도를 그대로 유지하면서 대부분의 데이터를 가져올 수 있는 몇 가지 방법은 다음과 같습니다.
 
@@ -375,32 +375,32 @@ ms.locfileid: "75847967"
 
    `Employee` 형식에는 `Id`, `Name`및 `HomeAddress`특성이 있습니다. 그리고 `Employee` 및 `Address` 형식 간에는 연결 관계가 있습니다.
 
-   ![직원 및 주소 간의 관계](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![직원과 주소의 관계](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    수집기는 `id`메서드에서 반환되는 `Employee.Id`, `Employee.Name` , `Employee` 및 `AlterEmployee` 개체의 값을 기록합니다. 그러나 `Address` 개체에 대한 정보는 null인지 여부를 제외하고는 기록하지 않습니다. 또한 `AlterEmployee` 메서드의 로컬 변수에 대한 데이터도 기록하지 않습니다. 단, 다른 메서드가 해당 로컬 변수를 매개 변수로 사용하는 경우에는 로컬 변수가 메서드 매개 변수로 기록됩니다.
 
-## <a name="WhereElse"></a> IntelliTrace 데이터를 가져올 수 있는 다른 위치
+## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a>IntelliTrace 데이터를 가져올 수 있는 다른 위치
 
 - Visual Studio Enterprise의 IntelliTrace 디버깅 세션에서 [Intellitrace 기능](../debugger/intellitrace-features.md)을 참조 하세요.
 
 - Microsoft Test Manager의 테스트 세션에서 [방법: 어려운 문제 디버그에 도움이 되는 IntelliTrace 데이터 수집](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)을 참조하세요.
 
-## <a name="where-can-i-get-more-information"></a>추가 정보는 어디서 확인할 수 있나요?
+## <a name="where-can-i-get-more-information"></a>자세한 정보는 어디서 얻을 수 있습니까?
  [저장된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)
 
  [IntelliTrace](../debugger/intellitrace.md)
 
 ### <a name="blogs"></a>블로그
- [원격으로 IntelliTrace 독립 실행형 수집기 사용](https://blogs.msdn.com/b/visualstudioalm/archive/2012/07/09/using-the-intellitrace-standalone-collector-remotely.aspx)
+ [원격으로 IntelliTrace 독립 실행형 수집기 사용](https://devblogs.microsoft.com/devops/using-the-intellitrace-standalone-collector-remotely/)
 
- [IntelliTrace 수집 계획 만들기 및 사용자 지정](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx)
+ [IntelliTrace 수집 계획 만들기 및 사용자 지정](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/)
 
- [프로덕션 서버에서 IntelliTrace 컬렉션 최적화](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)
+ [프로덕션 서버에서 IntelliTrace 컬렉션 최적화](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/)
 
- [Visual Studio ALM + TFS 블로그](https://blogs.msdn.com/b/visualstudioalm)
+ [Visual Studio ALM + TFS 블로그](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
 ### <a name="forums"></a>포럼
  [Visual Studio 디버거](https://social.msdn.microsoft.com/Forums/vsdebug)
 
-### <a name="videos"></a>비디오
+### <a name="videos"></a>동영상
  [Channel 9 비디오: IntelliTrace 데이터 수집 및 분석](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

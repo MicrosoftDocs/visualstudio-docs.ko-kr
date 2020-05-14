@@ -1,28 +1,28 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2::GetModuleName | Microsoft Docs
+title: IDebugBefore 기호검색이벤트2::GetModule네임 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
 ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 026c0a297eed18b21692885f08af07bdc656e842
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 0d97e78b3238b0efababb3fd4782743d03595387
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "66317540"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736126"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
-현재 디버깅 중인 모듈의 이름을 검색 합니다.
+현재 디버깅 중인 모듈의 이름을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,13 +40,13 @@ public int GetModuleName (
 
 ## <a name="parameters"></a>매개 변수
 `pbstrModuleName`\
-[out] 모듈의 이름입니다.
+【아웃】 모듈의 이름입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugBeforeSymbolSearchEventBase** 노출 하는 개체를 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스입니다.
+다음 예제에서는 [IDebugBeforeSymbolSearchEventEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스를 노출하는 **CDebugBeforeSymbolSearchEventBase** 개체에 대해 이 메서드를 구현하는 방법을 보여 줍니다.
 
 ```cpp
 STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)
@@ -68,5 +68,5 @@ STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleN
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)

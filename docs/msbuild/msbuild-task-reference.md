@@ -15,37 +15,37 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593878"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865325"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 
-작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 다음 목록의 작업이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 포함되어 있습니다. [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]가 설치되면 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 빌드하는 데 사용되는 추가 작업을 사용할 수 있습니다. 자세한 내용은 [C++ 작업](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)을 참조하세요.
+작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 다음 목록의 작업이 MSBuild에 포함되어 있습니다. C++ 워크로드가 설치되면 C++ 프로젝트를 빌드하는 데 사용되는 추가 작업을 사용할 수 있습니다. 자세한 내용은 [C++ 작업](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)을 참조하세요.
 
 이 섹션의 항목에 나열된 매개 변수 외에도 각 작업에는 다음과 같은 매개 변수가 있습니다.
 
 | 매개 변수 | 설명 |
 |-------------------| - |
-| `Condition` | 선택적 `String` 매개 변수입니다.<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 엔진이 이 작업이 실행될지 여부를 결정하는 데 사용하는 `Boolean` 식입니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 지원되는 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요. |
+| `Condition` | 선택적 `String` 매개 변수입니다.<br /><br /> MSBuild 엔진이 이 작업의 실행 여부를 결정하는 데 사용하는 `Boolean` 식입니다. MSBuild에서 지원되는 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요. |
 | `ContinueOnError` | 선택적 매개 변수입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)를 참조하세요. |
 
 ## <a name="in-this-section"></a>단원 내용
 
 - [Task 기본 클래스](../msbuild/task-base-class.md)
 
- <xref:Microsoft.Build.Utilities.Task> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다.
+ <xref:Microsoft.Build.Utilities.Task> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 직접 사용할 수 없습니다.
 
 - [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다.
+ <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 직접 사용할 수 없습니다.
 
 - [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)
 
- <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다.
+ <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 직접 사용할 수 없습니다.
 
 - [AL(어셈블리 링커) 작업](../msbuild/al-assembly-linker-task.md)
 
@@ -85,7 +85,7 @@ ms.locfileid: "75593878"
 
 - [CreateCSharpManifestResourceName 작업](../msbuild/createcsharpmanifestresourcename-task.md)
 
- 지정된 *.resx* 파일 이름 또는 기타 리소스에서 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 스타일 매니페스트 이름을 만듭니다.
+ 지정된 *.resx* 파일 이름 또는 기타 리소스에서 C# 스타일 매니페스트 이름을 만듭니다.
 
 - [CreateItem 작업](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ ms.locfileid: "75593878"
 
 - [CreateVisualBasicManifestResourceName 작업](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- 지정된 *.resx* 파일 이름 또는 기타 리소스에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 스타일 매니페스트 이름을 만듭니다.
+ 지정된 *.resx* 파일 이름 또는 기타 리소스에서 Visual Basic 스타일 매니페스트 이름을 만듭니다.
 
 - [Csc 작업](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ ms.locfileid: "75593878"
 
 - [GenerateApplicationManifest 작업](../msbuild/generateapplicationmanifest-task.md)
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션 매니페스트 또는 네이티브 매니페스트를 생성합니다.
+ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트를 생성합니다.
 
 - [GenerateBootstrapper 작업](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ ms.locfileid: "75593878"
 
 - [GenerateDeploymentManifest 작업](../msbuild/generatedeploymentmanifest-task.md)
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 매니페스트를 생성합니다.
+ ClickOnce 배포 매니페스트를 생성합니다.
 
 - [GenerateResource 작업](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ ms.locfileid: "75593878"
 
 - [GetFrameworkSdkPath 작업](../msbuild/getframeworksdkpath-task.md)
 
- [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]에 대한 경로를 검색합니다.
+ Windows SDK(소프트웨어 개발 키트) 경로를 검색합니다.
 
 - [GetReferenceAssemblyPaths 작업](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -197,7 +197,7 @@ ms.locfileid: "75593878"
 
 - [MSBuild 작업](../msbuild/msbuild-task.md)
 
- 다른 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트를 빌드합니다.
+ 다른 MSBuild 프로젝트에서 MSBuild 프로젝트를 빌드합니다.
 
 - [ReadLinesFromFile 작업](../msbuild/readlinesfromfile-task.md)
 

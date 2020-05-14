@@ -5,17 +5,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 32ac2f1977bb0b8b391651ed7ed459b9dc560330
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919130"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "77579739"
 ---
 # <a name="step-9-try-other-features"></a>9단계: 기타 기능 사용
 아이콘과 색을 변경하고 게임 타이머와 소리를 추가하는 등 다른 작업을 더 시도해 볼 수 있습니다. 보드를 크게 하거나 타이머를 조정해 보면 게임을 더 흥미롭게 즐길 수 있습니다.

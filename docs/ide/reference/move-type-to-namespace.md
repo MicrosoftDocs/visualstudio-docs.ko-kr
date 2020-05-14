@@ -9,12 +9,13 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 821e915a0b66f25c5b89a83b31e93b01aea6f400
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+monikerRange: vs-2019
+ms.openlocfilehash: 58d2757fa8798b67c8e597f5f82bc65a279f4a90
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67292701"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375564"
 ---
 # <a name="move-type-to-namespace"></a>형식을 네임스페이스로 이동
 
@@ -40,6 +41,6 @@ ms.locfileid: "67292701"
 
    ![네임스페이스 선택 대화 상자](media/select-target-namespace.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

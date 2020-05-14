@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::IsUserCode | Microsoft Docs
+title: 아이디버그모듈3:이유저코드 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::IsUserCode
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1869b9b4bda263d72db9c949be730e51fdc02d01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 435ec50ef5437e5aca5d3722a2041115882d15f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323894"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726835"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
-모듈이 나타내는 사용자 코드 여부에 대 한 정보를 검색 합니다.
+모듈이 사용자 코드를 나타내는지 여부에 대한 정보를 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,10 +41,10 @@ int IsUserCode(
 
 ## <a name="parameters"></a>매개 변수
 `pfUser`\
-[out] 0이 아닌 값 (`TRUE`) 모듈에서 사용자 코드를 나타내는 경우에 0 (`FALSE`) 그렇지 않은 경우.
+【아웃】 비제로`TRUE`() 모듈이 사용자 코드를`FALSE`나타내는 경우, 0 () 그렇지 않은 경우.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

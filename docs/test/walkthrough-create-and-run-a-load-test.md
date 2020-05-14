@@ -10,12 +10,12 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2ade11d4bffc3c9fdf812cb38d21cd742c9845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093627"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>연습: 단위 테스트를 포함하는 부하 테스트 만들기 및 실행
 
@@ -41,23 +41,25 @@ ms.locfileid: "75590854"
 
 ### <a name="to-start-the-new-load-test-wizard"></a>부하 테스트 새로 만들기 마법사를 시작하려면
 
+1. [하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)에 설명된 **웹 성능 및 부하 테스트 도구** 구성 요소를 설치했는지 확인합니다.
+
 1. 다음 [에서 만든 Bank 솔루션을 엽니다. 연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
-2. **솔루션 탐색기**에서 은행 솔루션 노드의 바로 가기 메뉴를 열고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
+1. **솔루션 탐색기**에서 은행 솔루션 노드의 바로 가기 메뉴를 열고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 
      **새 프로젝트 추가** 대화 상자가 표시됩니다.
 
-3. **새 프로젝트 추가** 대화 상자에서 **Visual C#** 을 확장하고, **테스트**를 선택합니다. 템플릿 목록에서 **웹 성능 및 부하 테스트 프로젝트**를 선택하고 **이름** 필드에 `BankLoadTest`를 입력합니다. **확인**을 선택합니다.
+1. **새 프로젝트 추가** 대화 상자에서 **Visual C#** 을 확장하고, **테스트**를 선택합니다. 템플릿 목록에서 **웹 성능 및 부하 테스트 프로젝트**를 선택하고 **이름** 필드에 `BankLoadTest`를 입력합니다. **확인**을 선택합니다.
 
      BankLoadTest 웹 성능 및 부하 테스트 프로젝트가 솔루션에 추가됩니다.
 
-4. 새 BankLoadTest 웹 성능 및 부하 테스트 프로젝트의 바로 가기 메뉴를 열고 **추가**를 선택한 다음, **부하 테스트**를 선택합니다.
+1. 새 BankLoadTest 웹 성능 및 부하 테스트 프로젝트의 바로 가기 메뉴를 열고 **추가**를 선택한 다음, **부하 테스트**를 선택합니다.
 
-5. **부하 테스트 새로 만들기 마법사**가 시작됩니다.
+1. **부하 테스트 새로 만들기 마법사**가 시작됩니다.
 
-6. **부하 테스트 새로 만들기 마법사**의 **시작** 페이지가 첫 번째 페이지입니다.
+1. **부하 테스트 새로 만들기 마법사**의 **시작** 페이지가 첫 번째 페이지입니다.
 
-7. **다음**을 선택합니다.
+1. **다음**을 선택합니다.
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>부하 테스트 시나리오의 설정을 편집하려면
 

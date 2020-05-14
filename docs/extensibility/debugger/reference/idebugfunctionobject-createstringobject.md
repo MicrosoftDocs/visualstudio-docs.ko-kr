@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateStringObject | Microsoft Docs
+title: IDebugFunctionObject::생성 스트링오브젝트 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 620aef7474f7f669e22fcb44c7df2611dc50bafb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313617"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728521"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 문자열 개체를 만듭니다.
@@ -43,16 +43,16 @@ int CreateStringObject(
 
 ## <a name="parameters"></a>매개 변수
 `pcstrString`\
-[in] 문자열 개체의 문자열 값입니다.
+【인】 문자열 개체의 문자열 값입니다.
 
 `ppObject`\
-[out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 새로 생성된 된 문자열 개체를 나타내는 개체입니다.
+【아웃】 새로 만든 문자열 개체를 나타내는 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>Return Value
+ 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="remarks"></a>설명
- 으로 표현 되는 함수에 매개 변수는 문자열을 나타내는 개체를 만들려면이 메서드를 호출 합니다 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스입니다.
+ [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스에 의해 표현 되는 함수에 대 한 매개 변수는 문자열을 나타내는 개체를 만드는이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

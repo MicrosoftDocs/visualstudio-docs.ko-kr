@@ -1,24 +1,24 @@
 ---
 title: EditorConfig에 대한 .NET 언어 규칙
-ms.date: 09/23/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542661"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544007"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
@@ -94,7 +94,6 @@ Visual Studio 2019 버전 16.3부터, 스타일 위반이 발생한 후에 [빠�
   - dotnet\_style\_predefined\_type\_for\_member_access
 - [한정자 기본 설정](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
-  - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
   - dotnet\_style\_readonly\_field
 - [괄호 기본 설정](#parentheses-preferences)
@@ -109,15 +108,15 @@ Visual Studio 2019 버전 16.3부터, 스타일 위반이 발생한 후에 [빠�
   - dotnet\_style\_prefer\_inferred\_tuple_names
   - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
   - dotnet\_style\_prefer\_auto\_properties
-  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
   - dotnet\_style\_prefer\_compound\_assignment
 - ["Null" 검사 기본 설정](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
+  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-### <a name="this-and-me"></a>"This." 그리고 "Me." 한정자
+### <a name="this-and-me-qualifiers"></a><a name="this-and-me"></a>"This." 그리고 "Me." 한정자
 
 이 스타일 규칙은 필드, 속성, 메서드 또는 이벤트에 적용할 수 있습니다. 값이 **true**이면 C#에서 `this.` 또는 Visual Basic에서 `Me.`를 코드 기호 앞에 추가하는 것이 좋습니다. 값이 **false**이면 `this.` 또는 `Me.`을 코드 요소 앞에 추가하지 _않는_ 것이 좋습니다.
 
@@ -244,7 +243,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-### <a name="language-keywords"></a>형식 참조를 위한 프레임워크 형식 이름 대신 언어 키워드
+### <a name="language-keywords-instead-of-framework-type-names-for-type-references"></a><a name="language-keywords"></a>형식 참조를 위한 프레임워크 형식 이름 대신 언어 키워드
 
 지역 변수, 메서드 매개 변수 및 클래스 멤버 또는 멤버 액세스 식을 입력할 별도 규칙으로 이 스타일 규칙을 적용할 수 있습니다. 값이 **true**인 경우 자신을 나타내는 키워드를 가진 형식에 형식 이름(예: `Int32`) 대신 언어 키워드(예: `int` 또는 `Integer`)를 사용하는 것이 좋습니다. 값이 **false**인 경우 언어 키워드 대신 형식 이름을 사용하는 것이 좋습니다.
 
@@ -313,7 +312,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-### <a name="normalize-modifiers"></a>한정자 기본 설정
+### <a name="modifier-preferences"></a><a name="normalize-modifiers"></a>한정자 기본 설정
 
 이 섹션의 스타일 규칙은 액세스 가능성 한정자 요구, 원하는 한정자 정렬 순서 지정 및 읽기 전용 한정자 요구를 포함한 한정자 기본 설정과 관련이 있습니다.
 
@@ -407,6 +406,43 @@ class MyClass
 Public Class MyClass
     Private Shared ReadOnly daysInYear As Int = 365
 End Class
+```
+
+#### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **규칙 이름** | visual_basic_style_unused_value_expression_statement_preference |
+| **규칙 ID** | IDE0058 |
+| **해당 언어** | Visual Basic |
+| **값** | `unused_local_variable:silent` |
+| **Visual Studio 기본값** | `unused_local_variable:silent` |
+
+코드 예제:
+
+```vb
+' visual_basic_style_unused_value_expression_statement_preference = unused_local_variable:silent
+
+Dim unused = Computation()
+```
+
+#### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **규칙 이름** | visual_basic_style_unused_value_assignment_preference |
+| **규칙 ID** | IDE0059 |
+| **해당 언어** | Visual Basic |
+| **값** | `unused_local_variable:silent` |
+| **Visual Studio 기본값** | `unused_local_variable:silent` |
+
+코드 예제:
+
+```vb
+' visual_basic_style_unused_value_assignment_preference = unused_local_variable:suggestion
+
+Dim unused = Computation()
+Dim x = 1;
 ```
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
@@ -941,6 +977,7 @@ x = x + 1
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 ```
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
@@ -1002,6 +1039,16 @@ Dim v = o?.ToString()
 Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
+
+### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+
+|||
+|-|-|
+| **규칙 이름** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **규칙 ID** | IDE0041 |
+| **해당 언어** | C# 6.0 이상 및 Visual Basic 14 이상 |
+| **값** | `true` - 참조 같음 메서드보다 is null 검사를 선호함<br /><br />`false` - is null 검사보다 참조 같음 메서드를 선호함 |
+| **Visual Studio 기본값** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>.NET 코드 품질 설정
 
@@ -1081,6 +1128,8 @@ End Function
 - ["Null" 검사 기본 설정](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
+- [한정자 기본 설정](#normalize-modifiers)
+  - csharp\_preferred\_modifier_order
 - [코드 블록 기본 설정](#code-block-preferences)
   - csharp\_prefer_braces
 - [사용되지 않는 값 기본 설정](#unused-value-preferences)

@@ -10,22 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595087"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77632123"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>IDE에서 빌드 시작
+
 사용자 지정 프로젝트 시스템은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>를 사용하여 빌드를 시작해야 합니다. 이 문서에서는 이 요구 사항에 대한 이유를 설명하고 프로시저를 간략하게 설명합니다.
 
 ## <a name="parallel-builds-and-threads"></a>병렬 빌드 및 스레드
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 공통 리소스에 액세스하기 위한 중재를 필요로 하는 병렬 빌드를 허용합니다. 프로젝트 시스템은 빌드를 비동기적으로 실행할 수 있지만 이러한 시스템은 호출 내에서 빌드 함수를 호출하지 않아야 합니다.
+
+ Visual Studio는 공통 리소스에 액세스하기 위한 중재를 필요로 하는 병렬 빌드를 허용합니다. 프로젝트 시스템은 빌드를 비동기적으로 실행할 수 있지만 이러한 시스템은 호출 내에서 빌드 함수를 호출하지 않아야 합니다.
 
  프로젝트 시스템이 환경 변수를 수정할 경우 빌드의 NodeAffinity를 OutOfProc로 설정해야 합니다. 이 요구 사항을 적용하면 in-proc 노드가 필요하므로 호스트 개체를 사용할 수 없습니다.
 
 ## <a name="use-ivsbuildmanageraccessor"></a>IVSBuildManagerAccessor 사용
+
  아래 코드는 프로젝트 시스템이 빌드를 시작하는 데 사용할 수 있는 메서드를 간략하게 설명합니다.
 
 ```csharp

@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985243"
 ---
 # <a name="refactoring"></a>리팩터링
@@ -45,7 +45,7 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
 ![Option Enter 컨텍스트 항목](media/refactoring-image2a.png)
 
-이러한 옵션을 사용하도록 설정하려면 **Mac용 Visual Studio > 기본 설정 > 텍스트 편집기 > 소스 분석**에서 *열린 파일의 소스 분석 사용*을 선택해야 합니다.
+이러한 옵션을 사용하도록 설정하려면 *Mac용 Visual Studio > 기본 설정 > 텍스트 편집기 > 소스 분석*에서 **열린 파일의 소스 분석 사용**을 선택해야 합니다.
 
 ![소스 분석을 사용하도록 설정](media/refactoring-options.png)
 
@@ -64,7 +64,7 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 * 선택한 코드를 포함하는 새 메서드를 만듭니다.
 * 선택한 코드가 있는 곳에서 새 메서드를 호출합니다.
 
-##### <a name="example"></a>예
+##### <a name="example"></a>예제
 
 1. 다음 코드를 추가합니다.
 

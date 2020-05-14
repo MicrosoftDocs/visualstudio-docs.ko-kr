@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779755"
 ---
 # <a name="call-tree-view---sampling-data"></a>호출 트리 뷰 - 샘플링 데이터
@@ -53,7 +53,7 @@ ms.locfileid: "74779755"
 |**포괄 샘플**|호출 트리의 부모 함수가 이 함수를 호출한 경우 이 함수에서 수집된 샘플 수입니다. 이 수에는 해당 함수가 호출한 함수에서 수집된 샘플이 포함됩니다.|
 |**포괄 샘플 비율(%)**|호출 트리의 부모 함수가 이 함수를 호출한 경우 이 함수의 포괄 샘플이었던 모든 샘플의 비율입니다(프로파일링 실행 시).|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [호출 트리 뷰 - 프로파일러 샘플링 데이터](../profiling/call-Tree-view-sampling-data.md)
 - [호출 트리 뷰 - 샘플링](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

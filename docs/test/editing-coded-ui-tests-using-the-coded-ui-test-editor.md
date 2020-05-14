@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589658"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445040"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집
 
@@ -74,7 +74,7 @@ Visual C# 및 Visual Basic 기반의 코딩된 UI 테스트를 **코딩된 UI �
 
 UI 작업에 대한 속성을 수정하려면 **UI 작업** 창에서 속성을 편집하려는 UI 작업이 포함된 테스트 메서드를 확장하고, 해당 UI 작업을 선택한 다음, 속성 창을 사용해 속성을 수정합니다.
 
-예를 들어 서버를 사용할 수 없는 상황이며 웹 브라우저에 나오는 **웹 페이지 ‘<http://Contoso1/default.aspx>’로 이동**과 관련된 UI 작업이 있는 경우 이 URL을 `'http://Contoso2/default.aspx'`로 변경할 수 있습니다.
+예를 들어 서버를 사용할 수 없는 상황이며 웹 브라우저에 나오는 **웹 페이지 http:\//Contoso1/default.aspx로 이동**과 관련된 UI 작업이 있는 경우 이 URL을 `http://Contoso2/default.aspx`로 변경할 수 있습니다.
 
 ![컨트롤 속성](../test/media/codeduitestcontrolprop.png)
 

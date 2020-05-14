@@ -1,6 +1,6 @@
 ---
 title: '연습: 코드 조각 만들기'
-ms.date: 06/10/2019
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1bfadb4b8d1836d131b669ea43f28f522f3fbd8b
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597297"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472812"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>연습: 코드 조각 만들기
 
@@ -54,7 +54,7 @@ ms.locfileid: "75597297"
 
 2. Title 요소에 코드 조각의 **제목**을 입력합니다. 제목 **제곱근**을 사용합니다.
 
-3. **Code** 요소의 **Language** 특성에 코드 조각의 언어를 입력합니다. C#의 경우 **CSharp**를 사용하고 Visual Basic의 경우 **VB**를 사용합니다.
+3. **Code** 요소의 **Language** 특성에 코드 조각의 언어를 입력합니다. C#의 경우 **CSharp**를, Visual Basic의 경우 **VB**를, C++의 경우 **CPP**를 사용합니다.
 
    > [!TIP]
    > 사용 가능한 언어 값을 모두 보려면 [코드 조각 스키마 참조](code-snippets-schema-reference.md) 페이지에서 [코드 요소 특성 섹션](code-snippets-schema-reference.md#attributes)으로 이동합니다.
@@ -86,7 +86,7 @@ ms.locfileid: "75597297"
 
 1. **코드 조각 관리자**를 사용하여 Visual Studio 설치에 조각을 가져올 수 있습니다. **도구** > **코드 조각 관리자**를 선택하여 엽니다.
 
-2. **내보내기** 단추를 클릭합니다.
+2. **가져오기** 단추를 클릭합니다.
 
 3. 이전 절차에서 코드 조각을 저장한 위치로 이동하고, 선택하고, **열기**를 클릭합니다.
 
@@ -228,6 +228,6 @@ ms.locfileid: "75597297"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113435"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기
@@ -26,7 +26,7 @@ ms.locfileid: "76113435"
 > 테이블 뷰의 일반 텍스트와 세부 정보 뷰의 스크린 샷을 Microsoft Word에 복사할 수도 있지만 이 경우에는 데이터가 HTML 형식으로 적용되지 않으므로 추가로 서식을 지정하고 편집해야 합니다.
 
 > [!TIP]
-> 올바르게 구성된 Microsoft Excel 보고서를 자동으로 생성할 수도 있습니다. 자세한 내용은 [방법: Microsoft Excel 사용을 통해 부하 테스트 성능 보고서 만들기](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)를 참조하세요.
+> 올바르게 구성된 Microsoft Excel 보고서를 자동으로 생성할 수도 있습니다. 자세한 내용은 [방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)를 참조하세요.
 
 ## <a name="copy-summary-view-data"></a>요약 뷰 데이터 복사
 
@@ -55,7 +55,7 @@ ms.locfileid: "76113435"
     > [!WARNING]
     > 원격 데스크톱의 그래프를 복사하여 다른 컴퓨터에 붙여넣을 경우에는 그래프와 연결된 테이블 정보만 복사되고 그래프 이미지는 복사되지 않습니다. 그래프 이미지는 복사한 이미지가 있는 컴퓨터의 임시 디렉터리에 저장되므로 두 번째 컴퓨터에서 디렉터리를 역참조할 수는 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고](../test/compare-load-test-results.md)
 - [방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

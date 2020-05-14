@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75678976"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio에서 JavaScript 또는 TypeScript 앱 디버그
@@ -78,7 +78,7 @@ ASP.NET 이외 애플리케이션의 경우 여기에 설명된 단계를 따르
 2. 디버깅을 사용하도록 설정된 상태로 브라우저를 시작합니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019부터 **디버그** 도구 모음에서 **브라우저 선택...** >을 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port=9222` 플래그를 설정할 수 있습니다. 브라우저에 대해 **디버깅 포함 Edge** 또는 **디버깅 포함 Chrome**과 같은 다른 식별 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2)를 참조하세요.
+    Visual Studio 2019부터 **디버그** 도구 모음에서 **브라우저 선택...** >을 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port=9222` 플래그를 설정할 수 있습니다. 브라우저에 대해 **디버깅 포함 Microsoft Edge** 또는 **디버깅 포함 Chrome**과 같은 다른 식별 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2)를 참조하세요.
 
     ![디버깅 사용 설정 상태로 열도록 브라우저 설정](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 

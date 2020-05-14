@@ -1,24 +1,25 @@
 ---
 title: 템플릿으로 AI 프로젝트 만들기
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b537d80b8db9150c6804aff2ee3de0e6c879bb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 759ee562e5d3648cf831c6a1247bc660596336a1
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546728"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638586"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Visual Studio의 템플릿에서 AI 프로젝트 만들기
 
 [AI에 Visual Studio Tools를 설치](installation.md)하면 다양한 템플릿을 사용하여 새 AI 프로젝트를 쉽게 만들 수 있습니다.
 
-1. Visual Studio를 실행합니다.
+1. Visual Studio를 시작합니다.
 
 2. **파일 > 새로 만들기 > 프로젝트**(Ctrl+Shift+N)를 선택합니다. **새 프로젝트** 대화 상자에서 "**AI 도구**"를 검색하고, 원하는 템플릿을 선택합니다. 템플릿을 선택하면 템플릿이 제공하는 것의 간단한 설명이 표시됩니다.
 

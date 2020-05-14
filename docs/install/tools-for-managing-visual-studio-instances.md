@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115037"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio 인스턴스 검색 및 관리 도구
@@ -33,7 +33,7 @@ ms.locfileid: "76115037"
 
 * [VSWhere](https://github.com/microsoft/vswhere): 실행 파일은 Visual Studio에 기본 설정되거나 별도 배포에 사용할 수 있습니다. 그러면 특정 머신에서 모든 Visual Studio 인스턴스의 위치를 확인할 수 있습니다.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): 설치 구성 API를 사용하여 Visual Studio의 설치된 인스턴스를 식별하는 PowerShell 스크립트입니다.
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): 설치 구성 API를 사용하여 기존 설치를 쿼리하는 방법을 보여주는 C# 및 C++ 샘플입니다.
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): 설치 구성 API를 사용하여 기존 설치를 쿼리하는 방법을 보여 주는 C# 및 C++ 샘플입니다.
 
 뿐만 아니라 [설치 구성 API](<xref:Microsoft.VisualStudio.Setup.Configuration>)는 Visual Studio 인스턴스를 조회하기 위해 자신의 유틸리티를 빌드하려는 개발자를 위한 인터페이스를 제공합니다.
 
@@ -64,7 +64,7 @@ Visual Studio에서 레지스트리 설정은 전용 위치에 저장되므로 �
 
 1. `HKEY_LOCAL_MACHINE` 노드를 선택합니다.
 
-1. Regedit 주 메뉴에서 **파일** > **하이브 로드...** 를 선택한 다음, **AppData\Local** 폴더에 저장된 전용 레지스트리 파일을 선택합니다. 예:
+1. Regedit 주 메뉴에서 **파일** > **하이브 로드...** 를 선택한 다음, **AppData\Local** 폴더에 저장된 전용 레지스트리 파일을 선택합니다. 다음은 그 예입니다.
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
@@ -80,6 +80,6 @@ Visual Studio에서 레지스트리 설정은 전용 위치에 저장되므로 �
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

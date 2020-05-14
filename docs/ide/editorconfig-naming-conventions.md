@@ -1,21 +1,21 @@
 ---
 title: EditorConfig 파일에 대한 .NET 명명 규칙
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588605"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544000"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig에 대한 .NET 명명 규칙
 
@@ -42,20 +42,23 @@ ms.locfileid: "75588605"
 허용 가능한 값은 아래와 같으며, 이러한 값을 쉼표로 구분하여 여러 값을 지정할 수 있습니다.
 
 - \*(모든 기호를 지정하려면 이 값을 사용합니다.)
-- 네임스페이스(namespace)
-- 클래스
+- namespace
+- class
 - struct
 - interface(인터페이스)
 - enum
 - 속성(property)
 - 메서드
 - 필드(field)
-- 이벤트(event)
+- event
 - 대리자(delegate)
 - 매개 변수
 - type_parameter
 - 로컬
 - local_function
+
+> [!NOTE] 
+> 튜플 멤버는 현재 지원되지 않습니다.
 
 ### <a name="accessibility-levels-of-symbols"></a>기호의 액세스 가능성 수준
 

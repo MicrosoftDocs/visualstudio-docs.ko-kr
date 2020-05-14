@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetSize | Microsoft Docs
+title: IDebug참조2::겟사이즈 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetSize
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5512a9d07c859dc548f91611bfc8d0c05621c0ff
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7ea57467c6bcc716226ac7075976a0fb9daf5f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329788"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720370"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-참조의 값을 바이트의 크기를 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
+참조 값의 크기를 바이트로 가져옵니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,10 +41,10 @@ int GetSize ( 
 
 ## <a name="parameters"></a>매개 변수
 `pdwSize`\
-[out] 참조의 값을 바이트의 크기를 반환합니다.
+【아웃】 참조 값의 크기를 바이트로 반환합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.openlocfilehash: 26f6e25bfe1284fc31bcd484b905bf5d75c2ba15
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128431"
 ---
 # <a name="creating-and-editing-build-configurations"></a>빌드 구성 만들기 및 편집
@@ -70,6 +70,6 @@ ms.locfileid: "71128431"
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빌드 구성 만들기 및 편집(Windows의 Visual Studio)](/visualstudio/ide/how-to-create-and-edit-configurations)

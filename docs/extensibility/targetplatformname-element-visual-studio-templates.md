@@ -1,20 +1,20 @@
 ---
-title: TargetPlatformName 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 대상 플랫폼 이름 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718915"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699273"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 요소(Visual Studio 템플릿)
 프로젝트 템플릿의 대상 플랫폼을 지정합니다. 이 요소는 프로젝트 템플릿을 사용하여 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 앱을 만들도록 지정하는 데 사용됩니다.
@@ -28,27 +28,27 @@ ms.locfileid: "72718915"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음.
+ 없음
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|프로젝트 템플릿의 대상 운영 체제 버전을 지정합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  텍스트는 **Windows**여야 합니다.
 
 ## <a name="example"></a>예제

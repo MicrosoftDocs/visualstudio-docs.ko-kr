@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983649"
 ---
 # <a name="creating-new-projects-and-solutions"></a>새 프로젝트 및 솔루션 만들기

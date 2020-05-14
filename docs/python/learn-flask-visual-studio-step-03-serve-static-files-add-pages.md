@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72985178"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
@@ -44,7 +44,7 @@ Flask 앱을 개발하는 경우 일반적으로 더 많은 Python, HTML, CSS �
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>질문: Visual Studio에서는 제공할 항목 템플릿을 어떻게 알 수 있나요?
 
-대답: Visual Studio 프로젝트 파일( *.pyproj*)에는 Python 프로젝트로 표시하는 프로젝트 형식 식별자가 포함되어 있습니다. Visual Studio에서는 이 형식 식별자를 사용하여 프로젝트 형식에 적합한 항목 템플릿만 표시합니다. 이런 방식으로 Visual Studio에서는 매번 정렬 여부를 묻는 메시지를 표시하지 않고 여러 프로젝트 형식에 대해 다양한 항목 템플릿을 제공할 수 있습니다.
+대답: Visual Studio 프로젝트 파일(*.pyproj*)에는 Python 프로젝트로 표시하는 프로젝트 형식 식별자가 포함되어 있습니다. Visual Studio에서는 이 형식 식별자를 사용하여 프로젝트 형식에 적합한 항목 템플릿만 표시합니다. 이런 방식으로 Visual Studio에서는 매번 정렬 여부를 묻는 메시지를 표시하지 않고 여러 프로젝트 형식에 대해 다양한 항목 템플릿을 제공할 수 있습니다.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>3-2단계: 앱에서 정적 파일 제공
 
@@ -182,9 +182,9 @@ Flask는 코드에서 호출하여 프로젝트의 *static* 폴더 내의 모든
 
 Flask의 템플릿 시스템(기본적으로 Jinja)은 템플릿에서 특정 요소를 다시 사용할 수 있는 두 가지 방법(포함과 상속)을 제공합니다.
 
-- ‘포함’은 `{% include <template_path> %}` 구문을 사용하여 참조 템플릿의 특정 위치에 삽입하는 다른 페이지 템플릿입니다.  코드에서 동적으로 경로를 변경하려는 경우 변수를 사용할 수도 있습니다. 포함은 일반적으로 페이지의 특정 위치에서 공유 템플릿을 풀하기 위해 페이지 본문에 사용됩니다.
+- ‘포함’은 `{% include <template_path> %}` 구문을 사용하여 참조 템플릿의 특정 위치에 삽입하는 다른 페이지 템플릿입니다. 코드에서 동적으로 경로를 변경하려는 경우 변수를 사용할 수도 있습니다. 포함은 일반적으로 페이지의 특정 위치에서 공유 템플릿을 풀하기 위해 페이지 본문에 사용됩니다.
 
-- ‘상속’은 페이지 템플릿 시작 부분에서 `{% extends <template_path> %}`를 사용하여 참조 템플릿의 기반이 되는 공유 기본 템플릿을 지정합니다.  일반적으로 상속은 공유 레이아웃, 탐색 모음 및 기타 앱 페이지 구조를 정의하는 데 사용되므로, 참조 템플릿에서는 ‘블록’  이라는 기본 템플릿의 특정 영역을 추가하거나 수정하기만 하면 됩니다.
+- ‘상속’은 페이지 템플릿 시작 부분에서 `{% extends <template_path> %}`를 사용하여 참조 템플릿의 기반이 되는 공유 기본 템플릿을 지정합니다. 일반적으로 상속은 공유 레이아웃, 탐색 모음 및 기타 앱 페이지 구조를 정의하는 데 사용되므로, 참조 템플릿에서는 ‘블록’이라는 기본 템플릿의 특정 영역을 추가하거나 수정하기만 하면 됩니다.
 
 두 경우 모두 `<template_path>`는 앱의 *templates* 폴더(`../` 또는 `./`도 허용됨)에 대해 상대적입니다.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: IDebug오류 중단점 해결 방법 2::GetResolutionInfo | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fefea5081278800b330dac665862a360b4a0c15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327816"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730027"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 중단점 오류 해결 정보를 가져옵니다.
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-[in] 플래그의 조합을 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) 의 필드를 결정 하는 열거형 `pErrorResolutionInfo` 작성 됩니다.
+【인】 채울 필드를 결정하는 [BPERESI_FIELDS 열거형의](../../../extensibility/debugger/reference/bperesi-fields.md) `pErrorResolutionInfo` 플래그 조합입니다.
 
 `pErrorResolutionInfo`\
-[out에서] 합니다 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조 채워진 중단점 해결에 대 한 설명을 사용 하 여 로그인 합니다.
+【인, 아웃】 중단점 해상도에 대한 설명으로 채워진 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는 간단한에 대 한이 메서드를 구현 `CDebugErrorBreakpointResolution` 노출 하는 개체를 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 인터페이스입니다.
+다음 예제는 `CDebugErrorBreakpointResolution` [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 인터페이스를 노출하는 간단한 개체에 대해 이 메서드를 구현합니다.
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(
@@ -152,7 +152,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)

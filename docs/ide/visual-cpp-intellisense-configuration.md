@@ -2,17 +2,17 @@
 title: IntelliSense에 대한 C++ 프로젝트 구성
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748588"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279317"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense에 대한 C++ 프로젝트 구성
 
@@ -76,7 +76,7 @@ Visual Studio에서 이 문제는 다음 두 가지 방식으로 나타납니다
 
 IntelliSense 컴파일러가 포함 경로 및 전처리기 매크로를 포함하여 올바른 컴파일러 옵션을 사용하는지 확인하려면 **도구 > 옵션 > 텍스트 편집기 > C/C++ > 고급 > 진단 로깅**에서 IntelliSense 명령줄의 진단 로깅을 켭니다. **로깅 사용**을 True로 설정하고 **로깅 수준**을 5(가장 자세한 정보 로깅), **로깅 필터**를 8(IntelliSense 로깅)로 설정합니다.
 
-출력 창에는 이제 IntelliSense 컴파일러에 전달되는 명령줄이 표시됩니다. 다음은 샘플 출력입니다.
+출력 창에는 이제 IntelliSense 컴파일러에 전달되는 명령줄이 표시됩니다. 샘플 출력은 다음과 같습니다.
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32

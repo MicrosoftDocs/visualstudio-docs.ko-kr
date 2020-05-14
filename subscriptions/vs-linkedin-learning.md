@@ -1,17 +1,18 @@
 ---
 title: Visual Studio 구독의 LinkedIn Learning 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/02/2019
+ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 LinkedIn 프리미엄 구독의 일부로 포함된 LinkedIn 학습 혜택에 대해 알아봅니다.
-ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: a0b837ce4a86b48acb690030c1a96064b336cd61
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649523"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 LinkedIn 학습 혜택
 
@@ -26,7 +27,7 @@ LinkedIn Premium 구독 및 LinkedIn Learning 혜택을 활성화하려면:
 
 2. 교육 범주에서 LinkedIn Learning 타일을 찾아 **코드 가져오기** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 혜택 타일](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
+   > ![LinkedIn Learning 혜택 타일](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
 3. LinkedIn 계정이 있고 자동으로 로그인한 경우 즉시 LinkedIn Learning 혜택 활성화 페이지로 이동하게 됩니다.  LinkedIn 계정이 있으나 자동으로 로그인하지 않은 경우 사용자 이름 및 암호를 입력한 다음 **로그인**을 클릭하기만 하면 됩니다.  제품을 활성화하려면 [이 단계](#activate-your-offer)로 건너뜁니다.
 
@@ -74,11 +75,11 @@ LinkedIn Premium 구독 및 LinkedIn Learning 혜택을 활성화하려면:
 | GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL | 6개월       |  아니요.  새 구독자만 사용할 수 있음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 3개월                                                            |아니요.  새 구독자만 사용할 수 있음         |
 | GitHub Enterprise가 포함된 Visual Studio Professional | VL | 3개월      | 아니요.  새 구독자만 사용할 수 있음         |
-| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 3개월                                             |  아니요.  새 구독자만 사용할 수 있음         |
-| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 3개월                                              | 아니요.  새 구독자만 사용할 수 있음         |
+| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                            |  해당 없음         |
+| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              | 해당 없음         |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup> *포함:  NFR(전매 금지), VSIP(Visual Studio 업계 파트너).  제외:  MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Most Valuable Professional), RD(Regional Director),  MCT 소프트웨어 및 서비스.*
+<sup>1</sup>  포함:  NFR(전매 금지), VSIP(Visual Studio 업계 파트너).  제외:  MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Most Valuable Professional), RD(Regional Director),  MCT 소프트웨어 및 서비스.
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -95,6 +96,12 @@ A:  아니요, LinkedIn 학습 혜택은 새 구독자만 사용할 수 있습�
   - 계정 및 프로필 만들기, 네트워크 유지 관리와 같은 [LinkedIn](https://www.linkedin.com/help/linkedin)에 대한 일반적인 질문에 도움이 됩니다.
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독에 포함된 기타 유용한 혜택을 확인합니다. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)로 이동합니다.

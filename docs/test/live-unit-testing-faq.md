@@ -9,10 +9,10 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591543"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 질문과 대답

@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154888"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio에서 데이터 과학 지원 설치

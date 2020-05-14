@@ -18,7 +18,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745800"
@@ -37,14 +37,14 @@ ms.locfileid: "72745800"
 ## <a name="security-requirements"></a>보안 요구 사항
  원격 디버깅을 수행하려면 로컬 및 원격 컴퓨터가 도메인 설정 또는 작업 그룹 설정에 있어야 하며,
 
- 응용 프로그램 풀에서 호스팅하는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 디버깅 하려면 해당 프로세스를 디버깅할 수 있는 권한이 있어야 합니다. 기본적으로 IIS 6.0 이전의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램은 **ASPNET** 사용자로 실행 됩니다. IIS 6.0 및 IIS 7.0에서 **네트워크 서비스** 계정이 기본값입니다. 작업자 프로세스가 **ASPNET**또는 **NETWORK SERVICE**로 실행되는 경우 이 프로세스를 디버깅하려면 관리자 권한이 필요합니다.
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스(응용 프로그램 풀에서 호스트함)를 디버그하려면 해당 프로세스를 디버그할 수 있는 권한이 있어야 합니다. IIS 6.0 이전의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램은 기본적으로 **ASPNET** 사용자로 실행됩니다. IIS 6.0 및 IIS 7.0에서는 **NETWORK SERVICE** 계정이 기본값입니다. 작업자 프로세스가 **ASPNET**또는 **NETWORK SERVICE**로 실행되는 경우 이 프로세스를 디버깅하려면 관리자 권한이 필요합니다.
 
  > [!IMPORTANT]
- > Windows Server 2008 R2부터 각 응용 프로그램 풀의 id로 [Applicationpoolidentity](/iis/manage/configuring-security/application-pool-identities) 를 사용 하는 것이 좋습니다.
+ > Windows Server 2008 R2부터는 각 응용 프로그램 풀의 ID로 [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)를 사용하는 것이 좋습니다.
 
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스의 이름은 디버깅 시나리오와 IIS 버전에 따라 다릅니다. 자세한 내용은 [방법: ASP.NET 프로세스의 이름 찾기](../debugger/how-to-find-the-name-of-the-aspnet-process.md)을 참조하세요.
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스의 이름은 디버깅 시나리오와 IIS 버전에 따라 다릅니다. 자세한 내용은 [방법: ASP.NET 프로세스의 이름 찾기](../debugger/how-to-find-the-name-of-the-aspnet-process.md)를 참조하세요.
 
- IIS를 실행 중인 서버의 machine.config 파일을 편집하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 실행하는 사용자 계정을 변경할 수 있습니다. **IIS(인터넷 정보 서비스) 관리자**를 사용하여 이 작업을 수행하는 것이 가장 좋습니다. 자세한 내용은 [방법: 사용자 계정으로 작업자 프로세스 실행](../debugger/how-to-run-the-worker-process-under-a-user-account.md)을 참조 하세요.
+ IIS를 실행 중인 서버의 machine.config 파일을 편집하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 실행하는 사용자 계정을 변경할 수 있습니다. **IIS(인터넷 정보 서비스) 관리자**를 사용하여 이 작업을 수행하는 것이 가장 좋습니다. 자세한 내용은 [방법: 사용자 계정으로 작업자 프로세스 실행](../debugger/how-to-run-the-worker-process-under-a-user-account.md)을 참조하세요.
 
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스가 고유한 사용자 계정에서 실행되도록 변경하는 경우에는 IIS를 실행하는 서버의 관리자가 아니어도 됩니다.
 

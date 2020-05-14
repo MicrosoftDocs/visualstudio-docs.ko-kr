@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs
+title: IDebugComPlus 기호 제공자::GetFunctionLine오프셋 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1edec584cfd11e469db8a3f1468dcdfc5768e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52f519259cbd0a79325fb062d630e7c4db757695
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336775"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733873"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
-지정 된 줄 오프셋을 나타내는 함수 내에서 주소를 검색 합니다.
+지정된 줄 오프셋을 나타내는 함수 내에서 주소를 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,19 +44,19 @@ int GetFunctionLineOffset(
 
 ## <a name="parameters"></a>매개 변수
 `pAddress`\
-[in] 함수를 나타내는 주소입니다.
+【인】 함수를 나타내는 주소입니다.
 
 `dwLine`\
-[in] 함수의 시작 부분에서 오프셋을 줄.
+【인】 함수의 시작 부분에서 선 간격띄우기.
 
 `ppNewAddress`\
-[out] 함수의 시작 부분에서 오프셋 되는 줄을 나타내는 새 주소입니다.
+【아웃】 함수의 시작 부분에서 줄 오프셋을 나타내는 새 주소입니다.
 
-## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+## <a name="return-value"></a>Return Value
+성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.
+다음 예제에서는 [IDebugComPlusSymbol공급자](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **CDebugSymbolProvider** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(
@@ -103,5 +103,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

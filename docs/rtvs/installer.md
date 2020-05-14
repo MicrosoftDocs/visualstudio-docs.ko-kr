@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62581172"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Visual Studio용 R 도구 시작
@@ -21,9 +21,9 @@ RTVS(Visual Studio용 R 도구)를 설치해 주셔서 감사합니다. 확인�
 
 ![RTVS 스크린샷](media/installer-screenshot.png)
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
-- [문서](index.md)
+- [설명서](index.md)
 - [Visual Studio용 R 도구를 설치하는 방법](installing-r-tools-for-visual-studio.md)
 - [Submit and browse bugs and feature requests on GitHib](https://github.com/Microsoft/RTVS/issues)(GitHub에서 버그 및 기능 제출 및 찾아보기)
 - [Explore and contribute to the source code](https://github.com/Microsoft/RTVS/blob/master/LICENSE)(소스 코드 탐색 및 참여)

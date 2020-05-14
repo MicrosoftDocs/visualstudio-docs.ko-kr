@@ -1,5 +1,5 @@
 ---
-title: 추가 하 고 속성 페이지를 제거 합니다. | Microsoft Docs
+title: 속성 페이지 추가 및 제거 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03974bba0ca93242cf044a58bbb60ca772a369ce
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352310"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740210"
 ---
-# <a name="add-and-remove-property-pages"></a>추가 하 고 속성 페이지를 제거 합니다.
+# <a name="add-and-remove-property-pages"></a>속성 페이지 추가 및 제거
 
-프로젝트 속성, 설정 및 리소스를 관리 하기 위한 중앙된 위치를 제공 하는 프로젝트 디자이너 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 단일 창으로 표시 된 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경) 및 오른쪽에서 왼쪽에 있는 탭을 통해 액세스 되는 창 수를 포함 합니다. 프로젝트 디자이너 (속성 페이지 라고도 함)는 창의 프로젝트 형식 및 언어에 따라 다릅니다. 프로젝트 디자이너를 사용 하 여 액세스할 수 있습니다 합니다 **속성** 명령 합니다 **프로젝트** 메뉴.
+프로젝트 디자이너는 에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]프로젝트 속성, 설정 및 리소스를 관리하기 위한 중앙 집중식 위치를 제공합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 통합 개발 환경(IDE)의 단일 창으로 나타나며 왼쪽의 탭을 통해 액세스되는 오른쪽의 여러 창이 포함되어 있습니다. 프로젝트 디자이너의 창(속성 페이지라고도 함)은 프로젝트 유형 및 언어에 따라 다릅니다. 프로젝트 디자이너는 **프로젝트** 메뉴에서 **속성** 명령을 통해 액세스할 수 있습니다.
 
-프로젝트 하위 형식 자주 프로젝트 디자이너의 추가 속성 페이지를 표시 해야 합니다. 마찬가지로, 기본 제공 속성 페이지를 제거할 수는 몇 가지 프로젝트 하위 형식이 필요할 수 있습니다. 중 하나를 수행 하려면 프로젝트 하위 유형을 구현 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 인터페이스를 재정의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 메서드. 이 메서드를 재정의 하 고 사용 하 여 `propId` 매개 변수 값 중 하나를 포함 하는 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 열거형, 필터링, 추가 하거나 프로젝트 속성을 제거할 수 있습니다. 예를 들어 구성에 종속 된 속성 페이지에 페이지를 추가 해야 합니다. 이 위해 구성에 종속 된 속성 페이지를 필터링 한 후 기존 목록에 새 페이지를 추가 해야 합니다.
+프로젝트 하위 유형은 프로젝트 디자이너에 추가 속성 페이지를 표시해야 하는 경우가 종종 있습니다. 마찬가지로 일부 프로젝트 하위 유형에서는 기본 제공 속성 페이지를 제거해야 할 수 있습니다. 둘 중 하나를 수행하려면 프로젝트 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 하위 유형이 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 인터페이스를 구현하고 메서드를 재정의해야 합니다. 이 메서드를 재정의하고 `propId` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 열거값 중 하나를 포함하는 매개 변수를 사용하여 프로젝트 속성을 필터링, 추가 또는 제거할 수 있습니다. 예를 들어 구성 종속 속성 페이지에 페이지를 추가해야 할 수 있습니다. 이렇게 하려면 구성 종속 속성 페이지를 필터링한 다음 기존 목록에 새 페이지를 추가해야 합니다.
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>추가 하 고 프로젝트 디자이너의 속성 페이지를 제거 합니다.
+## <a name="add-and-remove-property-pages-in-project-designer"></a>프로젝트 디자이너의 속성 페이지 추가 및 제거
 
-### <a name="remove-a-property-page"></a>속성 페이지를 제거 합니다.
+### <a name="remove-a-property-page"></a>속성 페이지 제거
 
-1. 재정의 `GetProperty(uint itemId, int propId, out object property)` 속성 페이지를 필터링 하 고 가져오는 메서드를 `clsids` 목록입니다.
+1. 속성 페이지를 `GetProperty(uint itemId, int propId, out object property)` 필터링하고 목록을 가져오는 `clsids` 메서드를 재정의합니다.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "66352310"
     }
     ```
 
-2. 제거 된 **빌드 이벤트** 페이지에서 가져온 `clsids` 목록입니다.
+2. 가져온 목록에서 **이벤트 빌드** `clsids` 페이지를 제거합니다.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ ms.locfileid: "66352310"
 
 ### <a name="add-a-property-page"></a>속성 페이지 추가
 
-1. 추가 하려는 속성 페이지를 만듭니다.
+1. 추가할 속성 페이지를 만듭니다.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "66352310"
     }
     ```
 
-2. 새 속성 페이지를 등록 합니다.
+2. 새 속성 페이지를 등록합니다.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "66352310"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. 재정의 `GetProperty(uint itemId, int propId, out object property)` 속성 페이지를 필터링을 가져오는 메서드를 `clsids` 나열 하 고 새 속성 페이지를 추가 합니다.
+3. 속성을 필터링하고 `GetProperty(uint itemId, int propId, out object property)` `clsids` 목록을 가져오고 새 속성 페이지를 추가하는 메서드를 재정의합니다.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer
@@ -206,6 +206,6 @@ ms.locfileid: "66352310"
     }
     ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-- [프로젝트 하위 형식](../extensibility/internals/project-subtypes.md)
+- [프로젝트 하위 유형](../extensibility/internals/project-subtypes.md)

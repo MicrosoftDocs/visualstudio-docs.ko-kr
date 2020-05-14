@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957279"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4단계: 전체 Flask 웹 프로젝트 템플릿 사용
@@ -72,7 +72,7 @@ Visual Studio에서 “빈 Flask 앱 프로젝트” 템플릿을 기반으로 �
   - *\_\_init.py\_\_* 는 앱 코드를 Python 모듈로 표시하고, Flask 개체를 만들며 앱의 뷰를 가져옵니다.
   - *views.py*는 페이지를 렌더링할 코드를 포함합니다.
   - *static* 폴더는 *content*(CSS 파일), *fonts*(글꼴 파일) 및 *scripts*(JavaScript 파일)라는 하위 폴더를 포함합니다.
-  - *templates* 폴더에는 각각 *layout.html*을 확장하는 특정 페이지에 대한 *about.html*, *contact.html* 및  *index.html*과 함께 *layout.html* 기본 템플릿이 포함됩니다.
+  - *templates* 폴더에는 각각 *layout.html*을 확장하는 특정 페이지에 대한 *about.html*, *contact.html* 및 * index.html*과 함께 *layout.html* 기본 템플릿이 포함됩니다.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>질문: Visual Studio 프로젝트 간에 가상 환경을 공유할 수 있나요?
 
@@ -86,7 +86,7 @@ Visual Studio에서 “빈 Flask 앱 프로젝트” 템플릿을 기반으로 �
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2단계: 프로젝트 템플릿으로 만든 보기 및 페이지 템플릿 이해
 
-프로젝트를 실행하면 앱에 세 가지 보기가 포함되어 있음을 알 수 있습니다. 홈, 정보 및 연락처. 이러한 보기에 대한 코드는 *FlaskWeb/views.py* 폴더에 있습니다. 각 보기 함수는 템플릿 경로 및 템플릿에 제공할 값에 대한 인수의 변수 목록과 함께 `flask.render_template`을 호출합니다. 예를 들어 정보 페이지는 `about` 함수에 의해 처리됩니다(데코레이터가 URL 라우팅을 제공).
+프로젝트를 실행하면 앱에 홈, 정보, 연락처의 세 가지 보기가 포함되어 있음을 알 수 있습니다. 이러한 보기에 대한 코드는 *FlaskWeb/views.py* 폴더에 있습니다. 각 보기 함수는 템플릿 경로 및 템플릿에 제공할 값에 대한 인수의 변수 목록과 함께 `flask.render_template`을 호출합니다. 예를 들어 정보 페이지는 `about` 함수에 의해 처리됩니다(데코레이터가 URL 라우팅을 제공).
 
 ```python
 @app.route('/about')

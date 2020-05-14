@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77633202"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
+
 프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 802x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.
 
 > [!IMPORTANT]
 > 이 문서에서는 이전 방법으로 대상 프레임워크를 지정하는 방법을 보여 줍니다. SDK 스타일 프로젝트는 netstandard와 같이 다른 TargetFrameworks를 사용하도록 설정합니다. 자세한 내용은 [대상 프레임워크](/dotnet/standard/frameworks)를 참조하세요.
 
 ## <a name="target-framework-and-profile"></a>대상 프레임워크 및 프로필
+
  대상 프레임워크는 빌드하는 프로젝트의 실행 기반인 특정 버전의 .NET Framework입니다. 대상 프레임워크의 사양은 해당 프레임워크 버전에만 해당되는 컴파일러 기능 및 어셈블리 참조를 사용할 수 있게 하므로 필수입니다.
 
  현재 사용할 수 있는 .NET Framework 버전은 다음과 같습니다.
 
 - .NET Framework 2.0(Visual Studio 2005에 포함)
 
-- .NET Framework 3.0([!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]에 포함)
+- .NET Framework 3.0(Windows Vista에 포함)
 
-- .NET Framework 3.5([!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]에 포함)
+- .NET Framework 3.5(Visual Studio 2008에 포함)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6([!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)]에 포함)
+- .NET Framework 4.6(Visual Studio 2015에 포함)
 
 - .NET Framework 4.6.1
 
@@ -69,6 +71,7 @@ ms.locfileid: "75596777"
 ```
 
 ## <a name="target-platform"></a>대상 플랫폼
+
  *플랫폼*은 하드웨어 및 특정 런타임 환경을 정의하는 소프트웨어의 조합입니다. 예를 들면 다음과 같습니다.
 
 - `x86`은 Intel 80x86 프로세서 또는 이와 동등한 프로세서에서 실행되는 32비트 Windows 운영 체제를 지정합니다.
@@ -97,4 +100,5 @@ ms.locfileid: "75596777"
 ```
 
 ## <a name="see-also"></a>참조
+
 - [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)

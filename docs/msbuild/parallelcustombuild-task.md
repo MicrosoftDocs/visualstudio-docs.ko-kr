@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), ParallelCustomBuild task
 - ParallelCustomBuild task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ea14e61eb2d62f3fc9ccdac3a17010ccc9194f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747228"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "77279258"
 ---
 # <a name="parallelcustombuild-task"></a>ParallelCustomBuild 작업
 
@@ -32,7 +32,7 @@ ms.locfileid: "72747228"
 
 다음 표에서는 **ParallelCustomBuild** 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|선택적 **bool** 매개 변수입니다.|
 |**MaxItemsInBatch**|선택적 **int** 매개 변수입니다.|

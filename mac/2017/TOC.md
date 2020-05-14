@@ -1,4 +1,4 @@
-# [Visual Studio for Mac](/visualstudio/mac/)
+# [Mac용 Visual Studio](/visualstudio/mac/)
 # [IDE 둘러보기](ide-tour.md)
 
 # [설치](installation.md)
@@ -52,9 +52,9 @@
 ## [Subversion 리포지토리 설정](/visualstudio/mac/set-up-subversion-repository)
 ## [Subversion 작업](/visualstudio/mac/working-with-subversion)
 
-# [웹앱 배포](/visualstudio/mac/web-app-deployment.md)
-## [Azure App Service에 게시](/visualstudio/mac/publish-app-svc.md)
-## [폴더에 게시](/visualstudio/mac/publish-folder.md)
+# [웹앱 배포](/visualstudio/mac/web-app-deployment)
+## [Azure App Service에 게시](/visualstudio/mac/publish-app-svc)
+## [폴더에 게시](/visualstudio/mac/publish-folder)
 
 # [작업](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
@@ -67,8 +67,8 @@
 ## [Unity 게임 개발](/visualstudio/mac/unity-tools)
 ### [설정](/visualstudio/mac/setup-vsmac-tools-unity)
 ### [Unity 도구 사용](/visualstudio/mac/using-vsmac-tools-unity)
-### [Unity에서 .NET 4.x 사용](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
-### [변경 로그](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+### [Unity에서 .NET 4.x 사용](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [변경 로그](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Xamarin을 사용한 모바일 앱](/visualstudio/mac/xamarin)
 
 # [액세스 가능성](/visualstudio/mac/accessibility)

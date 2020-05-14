@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594255"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio의 코드 생성 기능
@@ -29,7 +29,7 @@ Visual Studio가 코드 생성, 수정 및 리팩터링하도록 도울 수 있�
 > [!NOTE]
 > Visual Studio의 각 언어 서비스는 자체의 생성 기능을 제공하므로 일부 기능은 C#에서만 사용할 수 있고 또 어떤 기능은 C#와 Visual Basic에서 모두 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 조각](../ide/code-snippets.md)
 - [빠른 작업](../ide/quick-actions.md)

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692953"
 ---
 # <a name="adding-and-removing-project-items"></a>프로젝트 항목 추가 및 제거
@@ -39,6 +39,6 @@ ms.locfileid: "67692953"
 * **삭제** - 프로젝트 및 디스크에서 항목을 제거합니다.
 * **프로젝트에서 제거** - 프로젝트에서 항목을 제거하지만 디스크에서는 제거하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio의 솔루션 및 프로젝트(Windows에서)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

@@ -1,5 +1,5 @@
 ---
-title: SccGet 함수 | Microsoft Docs
+title: SccGet 기능 | 마이크로 소프트 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ad087af24723c6ccbf901280c7db748e2af461a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332120"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700897"
 ---
 # <a name="sccget-function"></a>SccGet 함수
-이 함수는 하나 이상의 파일 보기 및 컴파일하기 위한 아니라 편집의 복사본을 검색 합니다. 대부분의 시스템에서 파일 읽기 전용으로 태그가 지정 됩니다.
+이 함수는 편집할 수 있지만 편집할 수 없는 편집을 위해 하나 이상의 파일의 복사본을 검색합니다. 대부분의 시스템에서 파일은 읽기 전용으로 태그가 지정됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,74 +38,74 @@ SCCRTN SccGet(
 ### <a name="parameters"></a>매개 변수
  pvContext
 
-[in] 상황에 맞는 구조는 소스 제어 플러그 인입니다.
+【인】 소스 제어 플러그인의 컨텍스트 구조입니다.
 
- hWnd
+ Hwnd
 
-[in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.
+【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
- nFiles
+ n파일
 
-[in] 에 지정 된 파일 수는 `lpFileNames` 배열입니다.
+【인】 배열에 지정된 파일 `lpFileNames` 수입니다.
 
- lpFileNames
+ lpFile 이름
 
-[in] 검색할 파일의 정규화 된 이름의 배열입니다.
+【인】 검색할 파일의 정규화된 이름의 배열입니다.
 
- fOptions
+ f옵션
 
-[in] 명령 플래그 (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).
+【인】 명령 플래그`SCC_GET_ALL` `SCC_GET_RECURSIVE`(, ).
 
- pvOptions
+ pv옵션
 
-[in] 원본 제어 플러그 인에 대 한 옵션입니다.
+【인】 소스 제어 플러그인 관련 옵션.
 
 ## <a name="return-value"></a>반환 값
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:
+ 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
-|SCC_OK|가져오기 작업의 성공 했습니다.|
-|SCC_E_FILENOTCONTROLLED|소스 제어를 파일이 없습니다.|
-|SCC_E_OPNOTSUPPORTED|소스 제어 시스템에서이 작업을 지원 하지 않습니다.|
-|SCC_E_FILEISCHECKEDOUT|사용자 현재 체크 아웃 된 파일을 가져올 수 없습니다.|
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다. 재시도 사용 하는 것이 좋습니다.|
-|SCC_E_NOSPECIFIEDVERSION|에 잘못 된 버전 또는 날짜/시간을 지정 합니다.|
-|SCC_E_NONSPECIFICERROR|일반 오류입니다. 파일 동기화 되지 않았습니다.|
-|SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|
-|SCC_E_NOTAUTHORIZED|사용자는이 작업을 수행할 수 있는 권한이 없습니다.|
+|SCC_OK|작업의 성공.|
+|SCC_E_FILENOTCONTROLLED|파일이 소스 제어를 받지 않습니다.|
+|SCC_E_OPNOTSUPPORTED|소스 제어 시스템은 이 작업을 지원하지 않습니다.|
+|SCC_E_FILEISCHECKEDOUT|사용자가 현재 체크 아웃한 파일을 얻을 수 없습니다.|
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 소스 제어 시스템에 액세스하는 데 문제가 있었습니다. 다시 시도하는 것이 좋습니다.|
+|SCC_E_NOSPECIFIEDVERSION|잘못된 버전 또는 날짜/시간을 지정했습니다.|
+|SCC_E_NONSPECIFICERROR|비특이적 오류; 파일이 동기화되지 않았습니다.|
+|SCC_I_OPERATIONCANCELED|작업이 완료되기 전에 취소되었습니다.|
+|SCC_E_NOTAUTHORIZED|사용자가 이 작업을 수행할 권한이 없습니다.|
 
 ## <a name="remarks"></a>설명
- 이 함수는 수 고를 검색할 파일의 이름 배열을 사용 하 여 호출 됩니다. IDE 플래그를 전달 하는 경우 `SCC_GET_ALL`, 즉, 항목 `lpFileNames` 파일이 아니라 디렉터리 및 지정 된 디렉터리에서 소스 제어 아래 모든 파일이 검색 됩니다.
+ 이 함수는 검색할 파일의 개수 및 이름 배열로 호출됩니다. IDE가 플래그를 `SCC_GET_ALL`통과하면 해당 `lpFileNames` 항목이 파일이 아니라 디렉터리이며 지정된 디렉터리에서 소스 제어하에 있는 모든 파일을 검색해야 한다는 의미입니다.
 
- `SCC_GET_ALL` 플래그를 사용 하 여 결합할 수는 `SCC_GET_RECURSIVE` 플래그를 지정 된 디렉터리의 모든 파일 및 모든 하위 디렉터리도 검색 합니다.
+ 플래그를 `SCC_GET_ALL` `SCC_GET_RECURSIVE` 플래그와 결합하여 지정된 디렉터리및 모든 하위 디렉토리의 모든 파일을 검색할 수 있습니다.
 
 > [!NOTE]
-> `SCC_GET_RECURSIVE` 없이 전달 되지 해야 `SCC_GET_ALL`합니다. 또한 경우 디렉터리 *C:\A* 하 고 *C:\A\B* 재귀 get에서 전달 됩니다 *C:\A\B* 및 모든 하위 디렉터리를 두 번 실제로 검색 됩니다. IDE의 책임-인 원본이 아닌 제어 및-같이 중복 하는 배열에서 유지 되도록 합니다.
+> `SCC_GET_RECURSIVE`없이 전달해서는 `SCC_GET_ALL`안됩니다. 또한 디렉터리 *C:\A와* *C:\A\B가* 모두 재귀 get에 전달되는 경우 *C:\A\B와* 모든 하위 디렉터리는 실제로 두 번 검색됩니다. 소스 제어 플러그인이 아닌 IDE의 책임이며 이와 같은 중복 항목이 어레이에서 유지되도록 합니다.
 
- 소스 제어 플러그 인 경우에 지정 하는 마지막으로 `SCC_CAP_GET_NOUI` 초기화 없기 Get 명령에 대 한 사용자 인터페이스에이 함수는 파일을 검색 하려면 IDE에서 여전히 호출할 수 있습니다를 나타내는 플래그입니다. 플래그는 단순히 IDE 가져오기 메뉴 항목을 표시 하지 않습니다 하 고 UI를 제공 해야 플러그 인 아님을 의미 합니다.
+ 마지막으로 소스 제어 플러그인이 초기화에 `SCC_CAP_GET_NOUI` 플래그를 지정하여 Get 명령에 대한 사용자 인터페이스가 없는 경우에도 이 함수는 IDE에서 파일을 검색하도록 호출할 수 있습니다. 플래그는 단순히 IDE가 Get 메뉴 항목을 표시하지 않으며 플러그인이 UI를 제공하지 않을 것으로 예상된다는 것을 의미합니다.
 
-## <a name="rename-files-and-sccget"></a>파일 및 SccGet 이름 바꾸기
- 상황: 사용자가 체크 아웃 한 파일을 예를 들어 *a.txt*를 수정 합니다. 하기 전에 *a.txt* 체크 인할 수, 두 번째 사용자의 이름을 바꾸면 *a.txt* 에 *b.txt* 소스 제어 데이터베이스에서 체크 아웃 *b.txt*를 사용 하면 파일에 일부 수정 파일을 확인 합니다. 첫 번째 사용자가 첫 번째 사용자가 로컬 버전의 이름을 변경 되므로 두 번째 사용자가 수행한 변경 내용을 *a.txt* 파일을 *b.txt* 파일에 get을 수행 합니다. 그러나 버전 번호를 추적 하는 로컬 캐시 것으로 생각의 첫 번째 버전 *a.txt* 로컬로 저장 되 고 소스 제어에서 차이 확인할 수 없습니다.
+## <a name="rename-files-and-sccget"></a>파일 이름 바꾸기 및 SccGet
+ 상황: 사용자가 *a.txt와*같은 파일을 체크 아웃하고 수정합니다. *a.txt를* 체크 인하기 전에 두 번째 사용자는 소스 제어 데이터베이스에서 *a.txt를* *b.txt로* 이름을 바꿉니다. *b.txt* 첫 번째 사용자는 두 번째 사용자가 변경한 내용을 원하므로 첫 번째 사용자는 *a.txt* 파일의 로컬 버전 이름을 *b.txt로* 바꾸고 파일을 가져옵니다. 그러나 버전 번호를 추적하는 로컬 캐시는 여전히 *a.txt의* 첫 번째 버전이 로컬에 저장되어 있으므로 소스 제어가 차이를 해결할 수 없다고 생각합니다.
 
- 두 가지 방법으로 원본 제어 버전의 로컬 캐시는 원본 제어 데이터베이스와 동기화 되는이 상황을 해결 하기.
+ 소스 제어 버전의 로컬 캐시가 원본 제어 데이터베이스와 동기화되지 않는 경우 두 가지 방법으로 이 문제를 해결할 수 있습니다.
 
-1. 현재 체크 아웃 원본 제어 데이터베이스에서 파일 이름을 바꿀 수 없습니다.
+1. 현재 체크 아웃된 소스 제어 데이터베이스의 파일 이름을 바꾸는 것은 허용되지 않습니다.
 
-2. "이전"삭제 "새로 추가" 뒤에 해당 하는를 수행 합니다. 다음 알고리즘은이 작업을 수행 하는 하나의 방법입니다.
+2. "이전 삭제"와 "새 새 추가"에 해당하는 작업을 수행합니다. 다음 알고리즘은 이 작업을 수행하는 한 가지 방법입니다.
 
-    1. 호출을 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 의 이름 바꾸기에 대 한 자세한 함수 *a.txt* 에 *b.txt* 소스 제어 데이터베이스에서.
+    1. 소스 제어 데이터베이스에서 *a.txt에서 b.txt로* 의 이름을 바꾸는 방법에 대해 알아보려면 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 함수를 호출합니다. *b.txt*
 
-    2. 로컬 이름 바꾸기 *a.txt* 하 *b.txt*합니다.
+    2. 로컬 *a.txt의* 이름을 *b.txt로*바꿉니다.
 
-    3. 호출을 `SccGet` 둘 다에 대 한 함수 *a.txt* 하 고 *b.txt*합니다.
+    3. `SccGet` *a.txt 및 b.txt* 모두에 대한 함수를 *호출합니다.*
 
-    4. 때문에 *a.txt* 존재 하지 않는 소스 제어 데이터베이스에서 로컬 버전 캐시는 제거 누락 *a.txt* 버전 정보입니다.
+    4. *a.txt는* 소스 제어 데이터베이스에 없기 때문에 로컬 버전 캐시는 누락된 *a.txt* 버전 정보를 제거합니다.
 
-    5. 합니다 *b.txt* 파일을 체크 아웃 되는 로컬의 내용으로 병합 됩니다 *b.txt* 파일입니다.
+    5. 체크 아웃중인 *b.txt* 파일은 로컬 *b.txt* 파일의 내용과 병합됩니다.
 
-    6. 업데이트 된 *b.txt* 파일 이제 확인할 수 있습니다.
+    6. 이제 업데이트된 *b.txt* 파일을 체크 인할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
-- [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
-- [특정 명령에 사용 되는 비트](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>참조
+- [소스 제어 플러그인 API 기능](../extensibility/source-control-plug-in-api-functions.md)
+- [특정 명령에서 사용되는 비트 플래그](../extensibility/bitflags-used-by-specific-commands.md)

@@ -21,17 +21,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772122"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>HPC(고성능 컴퓨팅) 클러스터에서 프로파일링
 
 Visual Studio 프로파일링 도구의 샘플링 방법을 사용하여 Microsoft Windows HPC 클러스터의 컴퓨팅 노드에서 프로파일링을 수행할 수 있습니다. HPC에 대한 자세한 내용은 Microsoft 웹 사이트에서 [Windows HPC](https://azure.microsoft.com/solutions/big-compute/)를 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 HPC 컴퓨팅 노드에서 프로파일링하려면 다음을 수행해야 합니다.
 

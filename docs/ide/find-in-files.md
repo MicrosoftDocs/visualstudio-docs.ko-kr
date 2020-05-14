@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595477"
 ---
 # <a name="find-in-files"></a>파일에서 찾기
@@ -52,7 +52,7 @@ ms.locfileid: "75595477"
 
 ## <a name="look-in"></a>찾는 위치
 
-**찾는 위치** 드롭다운 목록에서 선택한 옵션은 **파일에서 찾기**가 현재 활성 파일에서만 검색하는지 또는 특정 폴더 내에 저장된 모든 파일에서 검색하는지를 결정합니다. 목록에서 검색 범위를 선택하거나 **찾아보기(...)** 단추를 클릭하여 **검색 폴더 선택** 대화 상자를 표시하고 고유한 디렉터리 집합을 입력합니다. **찾는 위치** 상자에 경로를 직접 입력할 수도 있습니다.
+**찾는 위치** 드롭다운 목록에서 선택한 옵션에 따라 **파일에서 찾기** 에서 현재 활성화된 파일만 검색할지 아니면 특정 폴더에 저장되어 있는 모든 파일을 검색할지 여부가 결정됩니다. 목록에서 검색 범위를 선택하거나 **찾아보기(...)** 단추를 클릭하여 **검색 폴더 선택** 대화 상자를 표시하고 고유한 디렉터리 집합을 입력합니다. **찾는 위치** 상자에 경로를 직접 입력할 수도 있습니다.
 
 > [!WARNING]
 > **전체 솔루션** 또는 **현재 프로젝트** 옵션을 사용할 경우 프로젝트 및 솔루션 파일이 검색되지 않습니다. 프로젝트 파일을 확인하려는 경우 검색 폴더를 선택합니다.
@@ -106,7 +106,7 @@ ms.locfileid: "75595477"
 
 검색 결과를 이전 검색 결과에 추가합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)
 - [파일에서 바꾸기](../ide/replace-in-files.md)

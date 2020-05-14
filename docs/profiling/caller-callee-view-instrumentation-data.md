@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773298"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>호출자/호출 수신자 뷰 - 계측 데이터
@@ -82,7 +82,7 @@ ms.locfileid: "74773298"
 ## <a name="application-exclusive-values"></a>애플리케이션 전용 값
  애플리케이션 전용 값은 함수에서 소요된 시간을 나타냅니다. 이 값에는 자식 함수에서 소요된 시간이 제외되며 컨텍스트 전환 및 입/출력 작업과 같이 운영 체제에 대한 호출도 제외됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**애플리케이션 전용 시간**|- 현재 함수의 경우 함수의 직접 실행에 소요된 시간입니다. 값에는 자식 함수에서 소요된 시간이 포함되지 않으며, 컨텍스트 전환 및 입/출력 작업과 같이 운영 체제에 대한 호출도 포함되지 않습니다.<br />- 호출자 함수의 경우 이 호출자 함수의 호출에 의해 생성된 현재 함수의 애플리케이션 전용 시간의 총계입니다.<br />- 호출 수신자 함수의 경우 현재 함수의 호출에 의해 생성된 이 함수의 인스턴스에서 소요된 시간입니다. 값에는 호출 수신자 함수의 자식 함수에서 소요된 시간이 포함되지 않으며, 컨텍스트 전환 및 입/출력 작업과 같이 운영 체제에 대한 호출도 포함되지 않습니다.|
 |**애플리케이션 전용 시간 비율(%)**|이 컨텍스트에서 이 함수의 총 애플리케이션 전용 시간에서 소요된 프로파일링 실행의 총 경과된 전용 시간 비율입니다.|
@@ -90,7 +90,7 @@ ms.locfileid: "74773298"
 |**최대 애플리케이션 전용 시간**|이 컨텍스트에서 이 함수에 대한 호출의 최대 애플리케이션 전용 시간입니다.|
 |**최소 애플리케이션 전용 시간**|이 컨텍스트에서 이 함수에 대한 호출의 최소 애플리케이션 전용 시간입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)
 - [호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)

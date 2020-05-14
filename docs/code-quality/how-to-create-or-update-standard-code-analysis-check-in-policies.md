@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587539"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506498"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 
@@ -29,7 +29,7 @@ ms.locfileid: "75587539"
 
 - 관리 코드의 경우 코드 분석 규칙의 하위 집합을 포함 하는 *규칙 집합* 을 지정 하 여 체크 인 정책을 설정 합니다.
 
-- C/C++ 코드의 경우, Visual Studio 2017 버전 15.6 및 이전 버전에서 체크 인 정책에는 모든 코드 분석 규칙이 실행 되어야 합니다. 사전 프로세서 지시문을 추가 하 여 Azure DevOps 프로젝트에서 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정할 수 있습니다. 15.7 이상에서는 **/analyze: 규칙 집합** 을 사용 하 여 실행할 규칙을 지정할 수 있습니다. 자세한 내용은 [규칙 집합을 사용 하 여 실행할 C++ 규칙 지정](using-rule-sets-to-specify-the-cpp-rules-to-run.md)을 참조 하세요.
+- C/C++ 코드의 경우, Visual Studio 2017 버전 15.6 및 이전 버전에서 체크 인 정책에는 모든 코드 분석 규칙이 실행 되어야 합니다. 사전 프로세서 지시문을 추가 하 여 Azure DevOps 프로젝트에서 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정할 수 있습니다. 15.7 이상에서는 **/analyze: 규칙 집합** 을 사용 하 여 실행할 규칙을 지정할 수 있습니다. 자세한 내용은 [규칙 집합을 사용 하 여 실행할 C++ 규칙 지정](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)을 참조 하세요.
 
 관리 코드에 대 한 체크 인 정책을 지정 하 고 나면 팀 멤버가 코드 프로젝트의 코드 분석 설정을 Azure DevOps 프로젝트 정책 설정에 동기화 할 수 있습니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "75587539"
 
 1. **원본 제어** 대화 상자에서 **체크 인 정책** 탭을 선택 합니다.
 
-1. 다음 작업 중 하나를 수행합니다.
+1. 다음 중 하나를 수행합니다.
 
     - **추가** 를 클릭 하 여 새 체크 인 정책을 만듭니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "75587539"
 
 다음 옵션을 선택 하거나 선택 취소 합니다.
 
-|옵션|설명|
+|옵션|Description|
 |------------|-----------------|
 |**현재 솔루션에 속하는 파일만 포함 하도록 체크 인을 적용 합니다.**|코드 분석은 솔루션 및 프로젝트 구성 파일에 지정 된 파일에 대해서만 실행할 수 있습니다. 이 정책은 솔루션의 일부인 모든 코드가 분석 됨을 보장 합니다.|
 |**C/C++ 코드 분석 (/analyze) 적용**|코드 분석을 체크 인하기 C++ 전에 실행 하려면 모든 C 또는 프로젝트를/analyze 컴파일러 옵션으로 빌드해야 합니다.|
@@ -67,6 +67,6 @@ ms.locfileid: "75587539"
 
 사용자 지정 체크 인 정책 규칙 집합을 만들고 구현 하는 방법에 대 한 자세한 내용은 [관리 코드에 대 한 사용자 지정 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

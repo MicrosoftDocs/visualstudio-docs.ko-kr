@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596972"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>빠른 시작: 먼저 Visual Studio IDE 살펴보기
@@ -21,13 +21,13 @@ ms.locfileid: "75596972"
 
 ::: moniker range="vs-2017"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 평가판을 설치합니다.
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ Visual Studio의 기능을 계속 탐색하기 위해 새 프로젝트를 만들
 
    **새 프로젝트 만들기**라고 표시된 대화 상자가 열립니다. 여기서 프로젝트 템플릿을 검색, 필터링 및 선택할 수 있습니다. 최근에 사용한 프로젝트 템플릿 목록도 보여줍니다.
 
-1. 맨 위에 있는 검색 상자에 **console**을 입력하여 프로젝트 유형 목록을 이름에 “console”이 포함된 프로젝트 유형으로 필터링합니다. **언어** 선택기에서 **C#** (또는 선택한 다른 언어)를 선택하여 검색 결과를 더 구체화합니다.
+1. 맨 위에 있는 검색 상자에 **console**을 입력하여 프로젝트 유형 목록을 이름에 “console”이 포함된 프로젝트 유형으로 필터링합니다. **언어** 선택기에서 **C#**(또는 선택한 다른 언어)를 선택하여 검색 결과를 더 구체화합니다.
 
    ![Visual Studio 2019의 새 프로젝트 대화 상자](media/vs-2019/create-a-new-project.png)
 
@@ -93,7 +93,7 @@ Visual Studio의 기능을 계속 탐색하기 위해 새 프로젝트를 만들
 
 ::: moniker-end
 
-   프로젝트가 만들어지고 **편집기** 창에 *Program.cs*라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
+   프로젝트가 만들어지고 *편집기* 창에 **Program.cs**라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
 
    ![Visual Studio의 편집기](media/editor.png)
 
@@ -197,7 +197,7 @@ Visual Studio를 사용하는 동안 문제가 발생하거나 제품을 개선�
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [Visual Studio의 추가 기능](../ide/advanced-feature-overview.md)

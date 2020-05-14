@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594177"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307258"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -66,11 +66,11 @@ IntelliSense는 필터를 사용하여 완성 목록에서 불필요한 멤버�
 
 - **개체 이니셜라이저**: 초기화할 수 있는 멤버만 완성 목록에 표시됩니다.
 
-- **new 키워드**: `new`를 입력한 다음, **스페이스**를 누르면 완성 목록이 표시됩니다. 코드의 컨텍스트에 따라 항목이 목록에서 자동으로 선택됩니다. 예를 들어 메서드의 선언 문과 반환 문에 대한 항목이 완성 목록에서 자동으로 선택됩니다.
+- **new 키워드**: `new`를 입력한 후 **스페이스**를 누르면 완성 목록이 표시됩니다. 코드의 컨텍스트에 따라 항목이 목록에서 자동으로 선택됩니다. 예를 들어 메서드의 선언 문과 반환 문에 대한 항목이 완성 목록에서 자동으로 선택됩니다.
 
 - **enum 키워드**: 열거형 할당의 등호 이후에 **스페이스**를 누르면 완성 목록이 표시됩니다. 코드의 컨텍스트에 따라 항목이 목록에서 자동으로 선택됩니다. 예를 들어 return 키워드를 입력한 후 그리고 선언을 만들 때 항목이 완성 목록에서 자동으로 선택됩니다.
 
-- **as 및 is 연산자**: 필터링된 완성 목록은 `as` 또는 `is` 키워드를 입력한 후 **스페이스**를 누르면 자동으로 표시됩니다.
+- **as 및 is 연산자**: 필터링된 완성 목록은 **또는** 키워드를 입력한 후 `as`스페이스`is`를 누르면 자동으로 표시됩니다.
 
 - **이벤트**: `event` 키워드를 입력하면 완성 목록에 대리자 형식만 포함됩니다.
 
@@ -80,7 +80,7 @@ IntelliSense는 필터를 사용하여 완성 목록에서 불필요한 멤버�
 
 IntelliSense는 자동 개체 이름 완성을 위해 팝업 [멤버 목록](../ide/using-intellisense.md) 상자에서 최근에 선택한 멤버를 기억합니다. 다음에 **멤버 목록**을 사용할 때는 최근에 사용한 멤버가 맨 위에 표시됩니다. 최근에 사용한 멤버 기록은 각 Visual Studio 세션을 종료하면 지워집니다.
 
-### <a name="override"></a>재정의
+### <a name="override"></a>override
 
 [override](/dotnet/csharp/language-reference/keywords/override)를 입력하고 **스페이스**를 누르면 IntelliSense가 팝업 목록 상자에서 재정의할 수 있는 모든 유효한 기본 클래스 멤버를 표시합니다. `override` 뒤에 메서드의 반환 형식을 입력하면 IntelliSense가 같은 형식을 반환하는 메서드만 표시합니다. IntelliSense가 일치 항목을 찾을 수 없으면 기본 클래스 멤버가 모두 표시됩니다.
 
@@ -144,7 +144,7 @@ IntelliSense는 코드 편집기에서 작업하는 동안 자동으로 추상 �
 
 코드 편집기에서 IntelliSense는 메서드(이벤트 처리기)를 이벤트 필드에 연결하는 데 도움이 될 수 있습니다.
 
-*.cs* 파일에서 이벤트 필드 뒤에 `+=` 연산자를 입력하는 경우 IntelliSense는 **탭** 키를 누르는 옵션을 표시합니다. 이때 이벤트를 처리하는 메서드를 가리키는 대리자의 새 인스턴스가 삽입됩니다.
+`+=`.cs*파일에서 이벤트 필드 뒤에* 연산자를 입력하는 경우 IntelliSense는 **탭** 키를 누르는 옵션을 표시합니다. 이때 이벤트를 처리하는 메서드를 가리키는 대리자의 새 인스턴스가 삽입됩니다.
 
 ![단추 자동 후크](../ide/media/vxautohookup.gif)
 
@@ -160,7 +160,7 @@ IntelliSense는 코드 편집기에서 작업하는 동안 자동으로 추상 �
 > [!NOTE]
 > 이벤트 연결 문으로 돌아가려면 **보기** 메뉴에서 **뒤로 탐색** 명령(**Ctrl**+ **-** )을 사용합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

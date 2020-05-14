@@ -1,22 +1,28 @@
 ---
 title: Visual Studio 구독자용 Azure DevOps 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Azure DevOps를 Visual Studio 구독자로 사용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983687"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444828"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 구독자용 Azure DevOps 혜택
 적극적인 Visual Studio 구독자는 구독 혜택에 포함된 Azure DevOps의 다양한 기능을 사용할 수 있습니다. 조직을 직접 만들었든 또는 다른 사용자에 의해 추가되었든, 멤버로 속해 있는 각 Azure DevOps 조직에서 이러한 동일한 기능을 사용할 수 있습니다.
 
 ## <a name="sign-in"></a>로그인
+
+   > [!div class="mx-imgBorder"]
+   > ![Azure DevOps 타일](_img/vs-azure-devops/vs-azure-devops-tile.png)
+
+   
 Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는 [대체 ID](vs-alternate-identity.md)를 사용하여 Azure DevOps에 로그인하면 자동으로 인식됩니다.  이 방식으로 회사 또는 학교 계정(Visual Studio, Office 365 또는 회사나 학교 네트워크에 로그인할 때 사용하는 계정)을 추가할 수 있으며, 사용자의 개인 계정과 회사 또는 학교 계정 둘 다를 사용하여 Azure DevOps에 액세스할 수도 있습니다.
 
 [무료 Azure DevOps 조직에 등록](https://visualstudio.microsoft.com/team-services/)
@@ -32,7 +38,7 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | Azure Boards & Repos(기본), Azure Test Plans                                              |  예          |
 ||
 
-<sup>1</sup> 포함: *NFR(전매금지), MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner), Microsoft 파트너 네트워크(Enterprise), BizSpark, MCT Software & Services Developer, FTE. 제외: MCT Software & Services, Imagine.*
+<sup>1</sup>  포함:  *NFR(전매금지), MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner), Microsoft 파트너 네트워크(Enterprise), BizSpark, MCT Software & Services Developer, FTE. 제외: MCT Software & Services, Imagine.*
 
 
 > [!NOTE]
@@ -46,9 +52,15 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 - Visual Studio IDE, Azure DevOps 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 - [Azure DevOps 설명서](/azure/devops/)를 참조하세요.
 
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
+- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
+- [Azure 설명서](https://docs.microsoft.com/azure/)
+- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>다음 단계
 Azure DevOps 기능에 대한 자세한 정보:
-- [Azure Boards & Repos(기본)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure Boards & Repos(기본 플랜)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 

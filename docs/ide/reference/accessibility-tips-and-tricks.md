@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68919530"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio의 내게 필요한 옵션 팁과 요령
@@ -25,7 +25,7 @@ Visual Studio에는 화면 판독기 및 기타 보조 기술과 호환되는 �
 또한 주석을 사용하여 사용자 코드에 대한 유용한 정보를 노출하는 방법 및 빌드 및 중단점 이벤트에 대한 소리 큐를 설정하는 방법을 보여줍니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 접근성](/visualstudio/mac/accessibility)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 접근성](/visualstudio/mac/accessibility)을 참조하세요.
 
 ## <a name="save-your-ide-settings"></a>IDE 설정 저장
 
@@ -120,7 +120,7 @@ Windows에서 소리 애플릿을 사용하여 Visual Studio 프로그램 이벤
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
