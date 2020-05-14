@@ -1,5 +1,5 @@
 ---
-title: 프로젝트에서 C++ 디버그 기능 사용 (-D_DEBUG) | Microsoft Docs
+title: C++ 프로젝트에서 디버그 기능 사용(-D_DEBUG) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737951"
 ---
-# <a name="enabling-debug-features-in-c-projects-d_debug"></a>프로젝트에서 C++ 디버그 기능 사용 (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>C++ 프로젝트에서 디버그 기능 사용(/D_DEBUG)
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]에서 **_DEBUG** 기호를 정의하고 프로그램을 컴파일하면 어설션과 같은 디버깅 기능을 사용할 수 있습니다. **_DEBUG**는 다음 두 가지 방법 중 하나를 통해 정의할 수 있습니다.
 
 - 소스 코드에서 **#define _DEBUG**를 지정하거나

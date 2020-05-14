@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62906754"
 ---
 # <a name="how-to-display-window-properties"></a>방법: 창 속성 표시
-에 표시 된 창에 대 한 자세한 내용을 알아보려면 [Windows 보기](../debugger/windows-view.md)를 사용 합니다 [창 속성 대화 상자](../debugger/window-properties-dialog-box.md).
+[창 뷰](../debugger/windows-view.md)에 나열된 창에 대해 자세히 알아보려면 [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 참조하세요.
 
 ### <a name="to-open-the-window-properties-dialog-box"></a>창 속성 대화 상자를 열려면
 
-1. 선택한 항목을 선택 **속성** 에서 합니다 **보기** 메뉴.
+1. 항목을 선택한 후 **뷰** 메뉴에서 **속성**을 선택합니다.
 
-   속성 대화 상자 모달있지 않습니다. 항목을 보기 창에서을 클릭 하면 대화 상자를 자동으로 새로 고쳐집니다 선택한 각 항목에 대 한 정보를 사용 하 여 합니다.
+   속성 대화 상자는 모달이 아닙니다. 뷰 창의 한 항목에서 다른 항목으로 클릭하면 선택한 각 항목에 대한 정보가 포함된 대화 상자가 자동으로 새로 고쳐집니다.
