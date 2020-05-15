@@ -1,4 +1,3 @@
-﻿---
 title: CRT 라이브러리로 메모리 누수 찾기 | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual

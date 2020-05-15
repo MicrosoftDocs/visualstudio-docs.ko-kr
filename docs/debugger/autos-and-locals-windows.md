@@ -1,4 +1,4 @@
-﻿---
+---
 title: 변수 검사 - 자동 및 지역 창 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
@@ -69,6 +69,7 @@ ms.locfileid: "74904102"
 ![지역 창에서 검색](../debugger/media/ee-search-locals.png "지역 창에서 검색")
 
 검색을 보다 정밀하게 하려면 **자동** 또는 **지역** 창의 맨 위에 있는 **심층 검색** 드롭다운을 사용하여 중첩된 개체를 검색하려는 수준 깊이를 선택합니다. 
+
 ## <a name="pin-properties-in-the-autos-or-locals-window"></a>자동 또는 지역 창에서 속성 고정
 
 > [!NOTE]
