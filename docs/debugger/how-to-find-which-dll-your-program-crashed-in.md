@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그램에서 충돌이 발생 하는 DLL 찾기 Microsoft Docs'
+title: '방법: 프로그램에서 충돌이 발생하는 DLL 찾기 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733278"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>방법: 프로그램이 충돌 하는 DLL 찾기 (C#, C++, Visual Basic,) F#
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>방법: 프로그램에서 충돌이 발생하는 DLL 찾기(C#, C++, Visual Basic, F#)
 
  시스템 DLL 또는 다른 사람의 코드를 호출하는 동안 애플리케이션에 충돌이 발생하면 충돌 발생 시 활성 상태였던 DLL을 찾아야 합니다. 사용자 프로그램 외부에서 DLL에 충돌이 발생하는 경우 **모듈** 창을 사용하여 위치를 확인할 수 있습니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "72733278"
 
 1. 충돌이 발생한 주소를 기록합니다.
 
-    오류 메시지에 주소가 표시 되지 않는 경우에는 다른 방법을 사용 하 여 DLL을 식별 해야 할 수 있습니다. 시스템 DLL이 있다고 생각 되 면 디버그할 때 Microsoft 기호 서버에서 [기호를 로드할](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 수 있습니다. 그렇지 않으면 대신 힙 정보를 사용 하 여 [덤프 파일을 만들어야](../debugger/using-dump-files.md) 할 수 있습니다. 다양 한 [도구](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) 를 사용 하 여 덤프 파일을 만들 수 있습니다.
+    오류 메시지에 주소가 표시되지 않으면 다른 방법을 사용하여 DLL을 식별해야 할 수 있습니다. 시스템 DLL이 있다고 생각되면 디버깅할 때 Microsoft 기호 서버에서 [심볼을 로드](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)할 수 있습니다. 시스템 DLL이 없으면 대신에 힙 정보를 사용하여 [덤프 파일을 만들어야](../debugger/using-dump-files.md)할 수 있습니다. 다양한 [도구](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)를 사용하여 덤프 파일을 만들 수 있습니다.
 
 2. **디버그** 메뉴에서 **창**을 선택한 다음, **모듈**을 클릭합니다.
 

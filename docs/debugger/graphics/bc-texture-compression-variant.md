@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736154"
@@ -23,7 +23,7 @@ B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감�
 
  질감이 블록 기반 압축에 적절하고 완벽한 색 충실도가 필요 없는 경우 블록 압축 형식을 사용하여 메모리와 대역폭 사용량을 줄일 것을 고려해 보세요.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  원본 질감을 만드는 `ID3DDevice::CreateTexture2D`를 호출할 때마다 블록 기반 압축 형식을 사용하여 질감을 압축합니다. 특히, 질감은 다음과 같은 경우 압축됩니다.
 
 - `D3D11_TEXTURE2D_DESC`에서 전달된 `pDesc` 개체가 변하지 않는 셰이더를 설명하는 경우, 즉 다음과 같은 경우입니다.

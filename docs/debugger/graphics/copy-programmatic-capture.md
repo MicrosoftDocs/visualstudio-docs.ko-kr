@@ -1,5 +1,5 @@
 ---
-title: 복사 (프로그램 방식 캡처) | Microsoft Docs
+title: 복사(프로그래밍 방식 캡처) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 30ec235a-0abb-44b9-8852-61bc9e67ce22
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3a888605cfae6b5430782defd198f83988c31870
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62895956"

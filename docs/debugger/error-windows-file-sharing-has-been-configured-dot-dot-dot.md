@@ -1,5 +1,5 @@
 ---
-title: '오류: Windows 파일 공유가 구성 되었습니다... | Microsoft Docs'
+title: '오류: Windows 파일 공유가 구성되었음... | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 89224dc5394f248ea82d428731ef387cb705ff27
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62850055"
@@ -36,7 +36,7 @@ ms.locfileid: "62850055"
 
      또는
 
-     . 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.
+     을 선택합니다. 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.
 
     1. **시작** 메뉴에서 **보조 프로그램**을 가리킨 다음, **명령 프롬프트**를 클릭합니다.
 

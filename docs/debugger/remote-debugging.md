@@ -1,5 +1,4 @@
-﻿﻿---
-title: 원격 디버깅 | Microsoft Docs
+title: 원격 디버깅 | 마이크로 소프트 문서
 ms.custom:
 - remotedebugging
 - seodec18
@@ -136,6 +135,5 @@ ASP.NET 및 기타 서버 환경에서 디버깅하려면 원격 디버거를 �
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)
-- [원격 디버깅 원격 IIS 컴퓨터에서 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
+- [원격 IIS 컴퓨터에서 코어를 ASP.NET 원격 디버깅](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)
-

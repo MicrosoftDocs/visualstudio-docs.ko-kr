@@ -1,5 +1,5 @@
-﻿﻿---
-title: '연습: JavaScript를 사용 하 여 SDK 만들기 | Microsoft Docs'
+---
+title: '연습: 자바스크립트를 사용하여 SDK 만들기 | 마이크로 소프트 문서'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715

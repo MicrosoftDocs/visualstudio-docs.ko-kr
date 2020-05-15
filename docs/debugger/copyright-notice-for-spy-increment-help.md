@@ -1,5 +1,5 @@
 ---
-title: Spy + + 도움말에 대 한 저작권 표시 | Microsoft Docs
+title: Spy++ 도움말에 대한 저작권 표시 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d16628dc634fe58843c71867b4795dae21a6341f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62565500"
