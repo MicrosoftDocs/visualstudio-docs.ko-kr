@@ -130,7 +130,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > *vstest.console.exe*를 찾을 수 없음을 나타내는 오류가 발생하는 경우 일반적인 명령 프롬프트가 아니라 개발자 명령 프롬프트를 열었는지 확인합니다.
 
-## <a name="addingFramework"></a>단위 테스트 프레임워크에 대한 지원 추가
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>단위 테스트 프레임워크에 대한 지원 추가
 
 JavaScript를 사용하여 검색 및 실행 논리를 구현하여 추가 테스트 프레임워크에 대한 지원을 추가할 수 있습니다. 테스트 프레임워크의 이름이 있는 폴더를 다음에서 추가하여 수행할 수 있습니다.
 

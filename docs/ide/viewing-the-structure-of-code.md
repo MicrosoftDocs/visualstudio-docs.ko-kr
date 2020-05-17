@@ -121,7 +121,7 @@ Visual Studio Enterprise Edition이 있는 경우 ‘코드 맵’을 사용하�
 |**Copy**|선택한 노드(해당 하위 노드 제외)를 복사합니다.|
 |**새로 고침**|정보를 새로 고칩니다.|
 
-## <a name="BKMK_ObjectBrowser"></a> 개체 브라우저
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> 개체 브라우저
 
 **개체 브라우저** 창은 프로젝트의 코드 설명을 표시합니다.
 
