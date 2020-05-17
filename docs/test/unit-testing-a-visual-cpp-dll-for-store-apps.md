@@ -22,7 +22,7 @@ ms.locfileid: "77274449"
 
 또한 이 항목에서는 단일 Visual Studio 솔루션과 테스트할 DLL 및 단위 테스트에 대한 별도의 프로젝트를 만듭니다. DLL 프로젝트에 직접 단위 테스트를 포함하거나 단위 테스트 및 .DLL에 대한 별도의 솔루션을 만들 수도 있습니다. 사용할 구조에 대한 팁은 [기존 C++ 애플리케이션에 단위 테스트 추가](../test/how-to-use-microsoft-test-framework-for-cpp.md)를 참조하세요.
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> 솔루션 및 단위 테스트 프로젝트 만들기
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> 솔루션 및 단위 테스트 프로젝트 만들기
 
 ::: moniker range="vs-2019"
 
@@ -58,7 +58,7 @@ ms.locfileid: "77274449"
 
          테스트를 실행하면 각 테스트 클래스의 인스턴스가 생성됩니다. 테스트 메서드는 지정되지 않은 순서로 호출됩니다. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
 
-## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 테스트 탐색기에서 테스트가 실행되는지 확인
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 테스트 탐색기에서 테스트가 실행되는지 확인
 
 1. 일부 테스트 코드를 삽입합니다.
 
@@ -77,7 +77,7 @@ ms.locfileid: "77274449"
 
      ![테스트 탐색기](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="Add_the_DLL_project_to_the_solution"></a> 솔루션에 DLL 프로젝트 추가
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> 솔루션에 DLL 프로젝트 추가
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ ms.locfileid: "77274449"
 
     ```
 
-## <a name="make_the_dll_functions_visible_to_the_test_code"></a> dll 함수가 테스트 코드에 표시되도록 설정
+## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a> dll 함수가 테스트 코드에 표시되도록 설정
 
 1. RooterLibTests 프로젝트에 RooterLib를 추가합니다.
 
@@ -196,7 +196,7 @@ ms.locfileid: "77274449"
 
    테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
 
-## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
 
 1. 새 테스트 추가:
 
@@ -256,7 +256,7 @@ ms.locfileid: "77274449"
 > [!TIP]
 > 한 번에 하나씩 테스트를 추가하여 코드를 개발합니다. 각 반복 후 모든 테스트가 통과하는지 확인합니다.
 
-## <a name="Debug_a_failing_test"></a> 실패한 테스트 디버그
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> 실패한 테스트 디버그
 
 1. *unittest1.cpp*에 다른 테스트를 추가합니다.
 
@@ -325,7 +325,7 @@ ms.locfileid: "77274449"
 
    ![모든 테스트 통과](../test/media/ute_ult_alltestspass.png)
 
-## <a name="Refactor_the_code_without_changing_tests"></a> 테스트를 변경하지 않고 코드 리팩터링
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> 테스트를 변경하지 않고 코드 리팩터링
 
 1. `SquareRoot` 함수에서 중앙 계산을 단순화합니다.
 

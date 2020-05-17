@@ -39,7 +39,7 @@ ms.locfileid: "75589606"
 
 - **순차적 테스트 순서 기반:** 각 가상 사용자가 시나리오에 정의된 테스트 순서에 따라 웹 성능 또는 단위 테스트를 실행합니다. 가상 사용자는 부하 테스트가 완료될 때까지 이 순서로 테스트를 계속해서 순환합니다. 자세한 내용은 [정렬된 순서](#SequentialOrder)를 참조하세요.
 
-### <a name="BasedOnTestsStarted"></a> 시작된 테스트 기반 백분율
+### <a name="percentage-based-on-tests-started"></a><a name="BasedOnTestsStarted"></a> 시작된 테스트 기반 백분율
 
 조합에 포함된 각 테스트에 대해 해당 테스트를 다음에 실행할 테스트로 선택하는 빈도를 결정하는 백분율을 지정할 수 있습니다. 예를 들어 세 개의 테스트에 백분율 값을 다음과 같이 할당할 수 있습니다.
 
@@ -51,10 +51,10 @@ ms.locfileid: "75589606"
 
 이 설정을 사용할 경우 다음에 시작할 테스트는 할당된 백분율을 기반으로 합니다. 이때 각 테스트를 현재 실행하고 있는 가상 사용자의 수는 고려하지 않습니다.
 
-### <a name="PercentageBasedonVirtualUsers"></a> 가상 사용자 기반 백분율
+### <a name="percentage-based-on-virtual-users"></a><a name="PercentageBasedonVirtualUsers"></a> 가상 사용자 기반 백분율
 이 테스트 조합 모델은 특정 테스트를 실행할 가상 사용자의 백분율을 결정합니다. 이 테스트 조합 모델을 사용할 경우 다음에 시작할 테스트는 할당된 백분율뿐만 아니라 특정 테스트를 현재 실행하고 있는 가상 사용자의 백분율도 기반으로 합니다. 부하 테스트의 모든 지점에서 특정 테스트를 실행하고 있는 사용자 수는 할당된 몫과 가능한 한 가깝게 일치합니다.
 
-### <a name="PacingTestMix"></a> 테스트 조합 속도 지정
+### <a name="pacing-test-mix"></a><a name="PacingTestMix"></a> 테스트 조합 속도 지정
 
 테스트 조합 속도를 지정할 경우 테스트 조합에 포함된 각 테스트의 각 가상 사용자에 대해 테스트 실행 속도를 설정합니다. 각 테스트에 대해 이 속도는 시간 및 가상 사용자별로 실행된 테스트로 표현됩니다. 예를 들어 다음 테스트에 테스트 조합 속도를 다음과 같이 할당할 수 있습니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "75589606"
 
   자세한 내용은 [방법: 사용자 속도 테스트 조합 모델을 사용할 때 속도 지연에 분포 적용](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)을 참조하세요.
 
-### <a name="SequentialOrder"></a> 정렬된 순서
+### <a name="sequential-order"></a><a name="SequentialOrder"></a> 정렬된 순서
 순차적 테스트 순서를 기준으로 하는 선택 옵션을 사용하면 각 가상 사용자가 테스트의 정의 순서에 따라 시나리오의 모든 테스트를 실행하도록 할 수 있습니다.
 
 ## <a name="test-iterations-property"></a>테스트 반복 속성

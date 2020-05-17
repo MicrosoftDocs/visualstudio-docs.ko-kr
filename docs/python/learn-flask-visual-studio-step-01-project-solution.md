@@ -158,7 +158,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
 1. 앞에서 설명한 대로 *requirements.txt* 파일은 Flask 패키지 종속성을 지정합니다. 이 파일은 처음으로 프로젝트를 만들 때 가상 환경을 만들도록 초대하는 데 필요합니다.
 
-1. 단일 *requirements.txt* 파일에는 세 부분이 포함되어 있습니다. 첫 번째는 Flask에 대한 `import` 문으로, `Flask` 변수에 할당된 `app` 클래스의 인스턴스를 만든 다음, `wsgi_app` 변수를 할당합니다(이는 웹 호스트에 배포할 때 유용하지만 현재 사용되지 않음).
+1. 단일 *requirements.txt* 파일에는 세 부분이 포함되어 있습니다. 첫 번째는 Flask에 대한 `import` 문으로, `app` 변수에 할당된 `Flask` 클래스의 인스턴스를 만든 다음, `wsgi_app` 변수를 할당합니다(이는 웹 호스트에 배포할 때 유용하지만 현재 사용되지 않음).
 
     ```python
     from flask import Flask
