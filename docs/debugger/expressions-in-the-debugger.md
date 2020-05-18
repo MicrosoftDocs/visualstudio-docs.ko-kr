@@ -1,5 +1,5 @@
 ---
-title: 디버거의 표현식 | 마이크로 소프트 문서
+title: 디버거의 식 | Microsoft Docs
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -21,15 +21,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
 ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "79301136"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>비주얼 스튜디오 디버거의 표현식
+# <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 식
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.
 
-다음 섹션에서는 Visual Studio에서 지원하는 언어에 대한 식 평가의 제한 사항에 대해 설명합니다.
+다음 섹션에서는 Visual Studio에서 지원되는 언어의 식 계산 제한 사항을 설명합니다.
 
 ## <a name="f-expressions-are-not-supported"></a>F# 식은 지원되지 않습니다.
 F# 식은 인식할 수 없습니다. F# 코드를 디버그하는 경우 디버거 창 또는 대화 상자에 식을 입력하기 전에 식을 C# 구문으로 변환해야 합니다. F#에서 C#으로 식을 변환하는 경우 C#은 `==` 연산자를 사용하여 같은지 테스트하는 반면 F#은 단일 `=`를 사용한다는 것에 유의하세요.
@@ -84,7 +84,7 @@ int main()
 
 ```
 
-### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>디버거 내장 함수를 사용하여 상태 유지
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 디버거 내장 함수를 사용하여 상태 유지
 디버거 내장 함수는 애플리케이션의 상태를 변경하지 않고 식에서 특정 C/C++ 함수를 호출하는 방법을 제공합니다.
 
 디버거 내장 함수의 특징은 다음과 같습니다.
@@ -99,12 +99,12 @@ int main()
 
 |영역|내장 함수|
 |----------|-------------------------|
-|**문자열 길이**|[스트렌, wcslen,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l) [스트렌렌, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
-|**문자열 비교**|[strcmp, wcscmp,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp) [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi,](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l) [strncmp, wcsncmp,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l) [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
-|**문자열 검색**|[스트chr, wcschr,](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l) [memchr, wmemchr,](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr) [스트스트, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
-|**Win32**|[CoDecodeProxy,](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy) [디코딩 포인터,](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29) [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**윈도우 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [윈도우비교스트링Ordinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [윈도우겟스트링렌,](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen) [윈도우겟스트링로우버퍼](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> 이러한 함수를 사용하려면 디버깅 중인 프로세스가 Windows 8에서 실행되어야 합니다. Windows 8 디바이스에서 생성된 덤프 파일을 디버깅하려면 Visual Studio 컴퓨터에서 Windows 8이 실행되어야 합니다. 그러나 Windows 8 디바이스를 원격으로 디버그하는 경우에는 Visual Studio 컴퓨터에서 Windows 7이 실행될 수 있습니다.|
-|**기타**|__log2 // 지정된 정수의 로그 베이스 2를 가장 가까운 하부 정수로 반올림합니다.<br /><br />__findNonNull, 디코딩HString, 디코딩WinRT제한예외, 다이나믹캐스트, 다이나믹멤버룩업, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // 동시성::배열<>::연산자[인덱스<>] 및 연산자(인덱스<>)<br /><br />ConcurrencyArray_OperatorBracket_int // 동시성::배열<>::연산자(int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // 동시성::배열<>::연산자[tiled_index<>] 및 연산자(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // 동시성::array_view<>::연산자[인덱스<>] 및 연산자(인덱스<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // 동시성::array_view<>::연산자 (int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // 동시성::array_view<>:연산자[tiled_index<>] 및 연산자(tiled_index<>)<br /><br />TreeTraverse_Init // 새 트리 통과 초기화<br /><br />TreeTraverse_Next // 트리에서 노드 반환<br /><br />TreeTraverse_Skip 보류 중인 트리 통과에서 노드 건너뛰기''|
+|**문자열 길이**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**문자열 비교**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**문자열 검색**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> 이러한 함수를 사용하려면 디버깅 중인 프로세스가 Windows 8에서 실행되어야 합니다. Windows 8 디바이스에서 생성된 덤프 파일을 디버깅하려면 Visual Studio 컴퓨터에서 Windows 8이 실행되어야 합니다. 그러나 Windows 8 디바이스를 원격으로 디버그하는 경우에는 Visual Studio 컴퓨터에서 Windows 7이 실행될 수 있습니다.|
+|**기타**|__log2 // 가장 가까운 낮은 정수로 반올림된 밑이 2인 지정된 정수의 로그 값을 반환합니다.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] 및 operator(index<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] 및 operator(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] 및 operator(index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] 및 operator(tiled_index<>)<br /><br />TreeTraverse_Init // 새 트리 순회를 초기화합니다.<br /><br />TreeTraverse_Next // 트리의 노드를 반환합니다.<br /><br />TreeTraverse_Skip // 보류 중인 트리 순회의 노드를 건너뜁니다.|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 지원되지 않는 식
 
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - 지원되지 않는 식
 
 ### <a name="dynamic-objects"></a>동적 개체
-디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. 구현된 <xref:System.Dynamic.IDynamicMetaObjectProvider> 개체가 Watch 창에서 평가되면 동적 보기 노드가 추가됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.
+디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. <xref:System.Dynamic.IDynamicMetaObjectProvider>를 구현하는 개체가 조사식 창에서 평가될 때 동적 뷰 노드가 추가됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.
 
 동적 개체의 다음 기능은 지원되지 않습니다.
 
@@ -204,8 +204,8 @@ Import 별칭은 지원되지 않습니다.
 
 - `End Sub` 또는 `Module`과 같은 네임스페이스 또는 모듈 수준 키워드
 
-## <a name="see-also"></a>참고 항목
-- [C++의 포맷 지정기](../debugger/format-specifiers-in-cpp.md)
-- [Context Operator (C++)](../debugger/context-operator-cpp.md)
-- [C의 형식 지정 #](../debugger/format-specifiers-in-csharp.md)
+## <a name="see-also"></a>참조
+- [C++의 형식 지정자](../debugger/format-specifiers-in-cpp.md)
+- [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)
+- [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)
 - [의사 변수](../debugger/pseudovariables.md)

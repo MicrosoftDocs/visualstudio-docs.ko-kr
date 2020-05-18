@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916443"
@@ -38,7 +38,7 @@ ms.locfileid: "75916443"
 
  [디버거가 현재 위치에 대한 소스 코드나 디스어셈블리를 표시할 수 없습니다.](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [디버거 서비스에 메모리가 부족 합니다.](../debugger/error-debugger-services-no-memory.md)
+ [메모리가 부족한 디버거 서비스](../debugger/error-debugger-services-no-memory.md)
 
  [디버깅 세션에 사용할 실행 파일 대화 상자](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -56,10 +56,10 @@ ms.locfileid: "75916443"
 
  [머신에 연결할 수 없음](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ ‘오류:[ 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
-## <a name="related-sections"></a>관련 섹션
- [스크립트와 웹 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="related-sections"></a>관련 단원
+ [스크립트 및 웹 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [원격 디버깅 오류](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

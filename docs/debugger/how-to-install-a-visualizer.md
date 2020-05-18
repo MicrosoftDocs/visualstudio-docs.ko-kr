@@ -1,5 +1,5 @@
 ---
-title: '방법: 시각화 도우미 설치 | 마이크로 소프트 문서'
+title: '방법: 시각화 도우미 설치 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 499d644cc8374b070cedaf058b0e4dc17d155bdc
 ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/08/2020
 ms.locfileid: "80880262"
@@ -31,40 +31,40 @@ ms.locfileid: "80880262"
 > UWP 앱에서는 표준 텍스트, HTML, XML 및 JSON 시각화 도우미만 지원됩니다. 사용자가 만든 사용자 지정 시각화 도우미는 지원되지 않습니다.
 
 ::: moniker range=">=vs-2019"
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>비주얼 스튜디오 2019에 대한 시각화 도우미를 설치하려면
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Visual Studio 2019용 시각화 도우미를 설치하려면
   
-1. 빌드한 시각화 도우미가 포함된 DLL을 찾습니다.
+1. 빌드한 시각화 도우미가 들어 있는 DLL을 찾습니다.
 
-   일반적으로 디버거 측 DLL과 디버그 측 DLL이 **모든 CPU를** 대상 플랫폼으로 지정하는 것이 가장 좋습니다. 디버거 측 DLL은 모든 **CPU** 또는 **32비트여야**합니다. 디버그지 측 DLL의 대상 플랫폼은 디부지 프로세스에 해당해야 합니다.
+   일반적으로 디버거 쪽 DLL과 디버기 쪽 DLL 모두가 대상 플랫폼으로 **모든 CPU**를 지정하는 것이 가장 좋습니다. 디버거 쪽 DLL은 **모든 CPU** 또는 **32비트**여야 합니다. 디버기 쪽 DLL의 대상 플랫폼은 디버기 프로세스와 일치해야 합니다.
 
-2. [디버거 사이드](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL(및 DLL에 의존하는 모든 DLL)을 다음 위치 중 하나에 복사합니다.
+2. 다음 위치 중 하나에 [디버거 쪽](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL(및 해당 DLL이 종속된 모든 DLL)을 복사합니다.
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. [디버그지 사이드](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) DLL을 다음 위치 중 하나에 복사합니다.
+3. 다음 위치 중 하나에 [디버기 쪽](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) DLL을 복사합니다.
 
-    - *비주얼스튜디오설치경로* `\Common7\Packages\Debugger\Visualizers\` *프레임워크*
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
-    - `My Documents\`*비주얼 스튜디오버전* `\Visualizers\` *프레임워크*
+    - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
 
-    *프레임워크가* 있는 위치:
-    - `net2.0`런타임을 실행하는 디버지의 `.NET Framework` 경우
-    - `netstandard2.0``.NET Framework v4.6.1+` (또는)를 `.NET Core 2.0+`지원하는 `netstandard 2.0` 런타임을 사용하는 디버기의 경우
-    - `netcoreapp`런타임을 실행하는 디버지의 `.NET Core` 경우 (지원) `.NET Core 2.0+`
+    여기서 *Framework*는 다음 중 하나입니다.
+    - `.NET Framework` 런타임을 실행하는 디버기의 경우 `net2.0`
+    - `netstandard 2.0`(`.NET Framework v4.6.1+` 또는 `.NET Core 2.0+`)을 지원하는 런타임을 사용하는 디버기의 경우 `netstandard2.0`
+    - `.NET Core` 런타임을 실행하는 디버기의 경우 `netcoreapp` (`.NET Core 2.0+`를 지원)
 
 4. 디버깅 세션을 다시 시작합니다.
 
 > [!NOTE]
-> 이 절차는 Visual Studio 2017 이상에서 다릅니다. 이 문서의 [이전 버전을](how-to-install-a-visualizer.md?view=vs-2017) 참조하십시오.
+> Visual Studio 2017 이전에서는 절차가 다릅니다. 이 문서의 [이전 버전](how-to-install-a-visualizer.md?view=vs-2017)을 참조하세요.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Visual Studio 2017 이상용 시각화 도우미설치
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Visual Studio 2017 이전용 시각화 도우미를 설치하려면
 
 > [!IMPORTANT]
-> Visual Studio 2017 이상에서는 .NET Framework 시각화 도우미만 지원됩니다.
+> Visual Studio 2017 이전에서는 .NET Framework 시각화 도우미만 지원됩니다.
 
 1. 빌드한 시각화 도우미가 들어 있는 DLL을 찾습니다.
 
@@ -81,5 +81,5 @@ ms.locfileid: "80880262"
 ::: moniker-end
 
 ## <a name="see-also"></a>참조
-- [사용자 지정 시각화 도우미 만들기](../debugger/create-custom-visualizers-of-data.md)
+- [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)
 - [방법: 시각화 도우미 작성](create-custom-visualizers-of-data.md)

@@ -1,5 +1,5 @@
 ---
-title: '경고: 스크립트 디버깅 사용 안 함 | 마이크로 소프트 문서'
+title: '경고: 스크립트 디버깅 사용 안 함 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
 ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/21/2020
 ms.locfileid: "81648499"
@@ -43,5 +43,5 @@ Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습�
 
      그러면 새 설정이 적용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 스크립트에 연결](attach-to-running-processes-with-the-visual-studio-debugger.md)
