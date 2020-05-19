@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
 ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/11/2019
 ms.locfileid: "67823767"
@@ -26,7 +26,7 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
 ### <a name="state-views"></a>상태 보기
  다양한 방법으로 상태 테이블을 볼 수 있습니다.
 
-|보기|Description|
+|View|설명|
 |----------|-----------------|
 |API 입력 상태 보기|이 보기는 상태를 구성하는 Direct3D 개체에 유사한 레이아웃으로 상태를 표시합니다.|
 |논리 입력 상태 보기|이 보기는 상태를 구성하는 Direct3D 개체의 레이아웃을 미러링하지 않는 논리 뷰로 상태를 표시합니다.|

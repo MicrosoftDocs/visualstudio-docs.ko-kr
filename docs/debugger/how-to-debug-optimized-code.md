@@ -1,5 +1,5 @@
 ---
-title: '방법: 최적화 된 코드 디버그 | Microsoft Docs'
+title: '방법: 최적화된 코드 디버그 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
 ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72430669"
 ---
-# <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버깅
+# <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버그
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
@@ -52,7 +52,7 @@ ms.locfileid: "72430669"
 
   전역 변수, 정적 변수 및 구조 레이아웃은 항상 올바르게 표시됩니다. 구조를 가리키는 포인터가 있고 포인터 값이 올바르면 구조의 모든 멤버 변수에 올바른 값이 표시됩니다.
 
-  따라서 가능하면 최적화되지 않은 프로그램 버전을 사용하여 디버깅해야 합니다. 기본적으로 최적화는 C++ 프로그램의 디버그 구성에서 해제 되 고 릴리스 구성에서 켜 집니다.
+  따라서 가능하면 최적화되지 않은 프로그램 버전을 사용하여 디버깅해야 합니다. 기본적으로 최적화는 C++ 프로그램의 디버그 구성에서 해제되고 릴리스 구성에서는 설정됩니다.
 
   그러나 최적화된 프로그램 버전에서만 버그가 나타날 수도 있습니다. 이 경우에는 최적화된 코드를 디버깅해야 합니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "72430669"
 
 8. `Custom`에 대해 `Optimization` 옵션을 선택한 경우 속성 목록에 있는 다른 속성에도 옵션을 설정할 수 있습니다.
 
-9. 프로젝트 속성 페이지의 구성 속성,C++C/, 명령줄 노드를 선택 하 고 **추가 옵션** 텍스트 상자에 `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`를 추가 합니다.
+9. 구성 속성, C/C++, 프로젝트 속성 페이지의 명령줄 노드를 선택하고 `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)`를 **추가 옵션** 텍스트 상자에 추가합니다.
 
     > [!WARNING]
     > `/Zo`를 사용하려면 Visual Studio 2013 업데이트 3 이상이 필요합니다.

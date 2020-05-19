@@ -1,5 +1,5 @@
 ---
-title: X64 프로세스에 대 한 혼합 모드 디버깅은 Microsoft.NET Framework 4 이상을 사용할 때만 지원 됩니다. | Microsoft Docs
+title: x64 프로세스의 혼합 모드 디버깅은 Microsoft .NET Framework 4 이상을 사용할 때만 지원됨 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731021"
 ---
-# <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 프로세스의 혼합 모드 디버깅은 Microsoft.NET Framework 4 이상을 사용할 때만 지원됩니다.
+# <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 프로세스의 혼합 모드 디버깅은 Microsoft .NET Framework 4 이상을 사용할 때만 지원됩니다.
 4 이전의 .NET Framework 버전에서는 x64 프로세스의 혼합 모드 디버깅을 지원하지 않습니다. 따라서 디버깅하는 동안 네이티브 코드에서 관리 코드로 또는 그 반대로 실행할 수 없습니다.
 
 ### <a name="workarounds"></a>해결 방법
@@ -55,7 +55,7 @@ ms.locfileid: "72731021"
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-- [SQL 디버깅 설정](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))을 참조 하세요.
+- [SQL 디버깅 설정](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [64비트 애플리케이션 디버그](../debugger/debug-64-bit-applications.md)

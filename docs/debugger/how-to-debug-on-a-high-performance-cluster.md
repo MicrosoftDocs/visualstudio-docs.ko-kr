@@ -18,18 +18,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733661"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>방법: 고성능 클러스터에서 디버그 (C#, Visual Basic,) C++
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>방법: 고성능 클러스터에서 디버그(C#, Visual Basic, C++)
 
-고성능 클러스터에서 다중 처리 프로그램을 디버깅하는 방법은 원격 컴퓨터에서 일반적인 프로그램을 디버깅하는 방법과 비슷합니다. 그러나 여기에는 몇 가지 추가로 고려해야 할 사항이 있습니다. 일반적인 원격 설치 요구 사항은 [원격 디버깅](../debugger/remote-debugging.md)을 참조 하세요.
+고성능 클러스터에서 다중 처리 프로그램을 디버깅하는 방법은 원격 컴퓨터에서 일반적인 프로그램을 디버깅하는 방법과 비슷합니다. 그러나 여기에는 몇 가지 추가로 고려해야 할 사항이 있습니다. 일반적인 원격 설치 요구 사항은 [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.
 
  고성능 클러스터에서 디버깅하는 경우 원격 디버깅에 제공되는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버깅 창과 기술을 모두 사용할 수 있습니다. 그러나 디버깅을 원격으로 수행하므로 외부 콘솔 창은 사용할 수 없습니다.
 
- **스레드** 창과 **프로세스** 창은 병렬 애플리케이션을 디버깅하는 데 특히 유용합니다. 이러한 창을 사용 하는 방법에 대 한 팁을 참조 하세요. [방법: 프로세스 창 사용](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) 고 [연습: 스레드 창을 사용하여 디버그](../debugger/how-to-use-the-threads-window.md).
+ **스레드** 창과 **프로세스** 창은 병렬 애플리케이션을 디버깅하는 데 특히 유용합니다. 해당 창을 사용하는 방법에 관한 팁은 [방법: 프로세스 창 사용](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) 및 [연습: 스레드 창을 사용하여 디버그](../debugger/how-to-use-the-threads-window.md)를 참조하세요.
 
  다음 절차에서는 고성능 클러스터에서 디버깅을 수행할 때 특히 유용한 몇 가지 방법을 보여 줍니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "72733661"
 
 3. **중단점 필터** 대화 상자에 다음을 입력합니다.
 
-     `ProcessName =` *yourprocessname*
+     `ProcessName =`  *yourprocessname*
 
      또는
 
@@ -100,6 +100,6 @@ ms.locfileid: "72733661"
 - [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
 - [방법: 프로세스 창 사용](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
-- [다중 스레드 앱 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)
+- [다중 스레드 앱 디버그 시작](../debugger/get-started-debugging-multithreaded-apps.md)
 - [스레드 및 프로세스](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [중단점 사용](../debugger/using-breakpoints.md)

@@ -1,5 +1,5 @@
 ---
-title: DebuggerTypeProxy를 사용 하 여 사용자 지정 형식 표시 | Microsoft Docs
+title: DebuggerTypeProxy를 사용하여 사용자 지정 형식 표시 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d56d173d715258153f284c55d9bac80c06a50002
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728726"
 ---
-# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy Attribute (C#, Visual Basic, C++/cli)를 사용 하 여 표시할 형식을 디버거에 알립니다.
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy 특성을 사용하여 디버거에 표시할 내용 지시(C#, Visual Basic, C++/CLI)
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시가 있는 변수를 볼 때 원래 형식 대신 프록시가 **표시**에 나타납니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 전용 멤버는 표시 되지 않습니다.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시가 있는 변수를 볼 때 원래 형식 대신 프록시가 **표시**에 나타납니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 프라이빗 멤버는 표시되지 않습니다.
 
 이 특성은 다음 항목에 적용될 수 있습니다.
 
@@ -35,19 +35,19 @@ ms.locfileid: "72728726"
 - 어셈블리
 
 > [!NOTE]
-> 네이티브 코드의 경우이 특성은 C++/cli 코드 에서만 지원 됩니다.
+> 네이티브 코드의 경우 이 특성은 C++/CLI 코드에서만 지원됩니다.
 
-형식 프록시 클래스에는 프록시가 대체할 형식의 인수를 사용하는 생성자가 있어야 합니다. 디버거는 대상 형식의 변수를 표시 해야 할 때마다 형식 프록시 클래스의 새 인스턴스를 만듭니다. 이 경우 성능에 영향을 미칠 수 있습니다. 따라서 생성자에서 반드시 필요한 것 보다 더 많은 작업을 수행 하면 안 됩니다.
+형식 프록시 클래스에는 프록시가 대체할 형식의 인수를 사용하는 생성자가 있어야 합니다. 디버거는 대상 유형의 변수를 표시해야 할 때마다 형식 프록시 클래스의 새 인스턴스를 만듭니다. 이 동작은 성능에 영향을 미칠 수 있습니다. 따라서 생성자에서 꼭 필요한 것보다 많은 작업을 수행하지 않아야 합니다.
 
 성능 저하를 최소화하기 위해 식 계산기에서는 사용자가 디버거 창에서 + 기호를 클릭하거나 <xref:System.Diagnostics.DebuggerBrowsableAttribute>를 사용하여 형식을 확장한 경우가 아니면 형식의 표시 프록시에 대한 특성을 검사하지 않습니다. 따라서 표시 형식 자체에 특성을 배치하면 안 됩니다. 특성은 표시 형식의 본문에서만 사용할 수 있습니다.
 
 형식 프록시는 특성의 대상인 클래스 내에 중첩된 private 클래스인 것이 좋습니다. 이렇게 하면 형식 프록시에서 내부 멤버에 쉽게 액세스할 수 있습니다.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> 상속 될 수 있으므로, 형식 프록시가 기본 클래스에 지정 된 경우 해당 파생 클래스에서 자체 형식 프록시를 지정 하지 않으면 파생 클래스에 적용 됩니다.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 상속될 수 있으므로, 해당 파생 클래스에서 자체 형식 프록시를 지정하지 않는 경우 기본 클래스에 지정된 형식 프록시가 모든 파생 클래스에 적용됩니다.
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>가 어셈블리 수준에서 사용되는 경우 `Target` 매개 변수는 프록시가 대체할 형식을 지정합니다.
 
-@No__t_0 및 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>와 함께이 특성을 사용 하는 방법에 대 한 예제는[DebuggerDisplay 특성 사용](../debugger/using-the-debuggerdisplay-attribute.md)을 참조 하세요.
+이 특성을 <xref:System.Diagnostics.DebuggerDisplayAttribute> 및 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>와 함께 사용하는 방법에 관한 예제는 [DebuggerDisplay 특성 사용](../debugger/using-the-debuggerdisplay-attribute.md)을 참조하세요.
 
 ## <a name="using-generics-with-debuggertypeproxy"></a>DebuggerTypeProxy와 함께 제네릭 사용
 
@@ -59,7 +59,7 @@ ms.locfileid: "72728726"
 
 `DebuggerTypeProxy`에서 제네릭 형식을 대상으로 사용하는 경우 이 구문을 사용해야 합니다. `DebuggerTypeProxy` 메커니즘은 형식 매개 변수를 자동으로 유추합니다.
 
-의 C# open 및 closed 형식에 대 한 자세한 내용은 20.5.2 open 및 closed types [ C# 언어 사양](/dotnet/csharp/language-reference/language-specification)을 참조 하세요.
+C#의 개방형 형식과 폐쇄형 형식에 관한 자세한 내용은 [C# 언어 사양](/dotnet/csharp/language-reference/language-specification)의 섹션 20.5.2 개방형 형식 및 폐쇄형 형식을 참조하세요.
 
 Visual Basic에는 개방형 형식 구문이 없으므로 Visual Basic의 경우 이와 같은 작업을 수행할 수 없습니다. 대신 개방형 형식 이름의 문자열 표현을 사용해야 합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: '오류: IA64 프로세스에 대 한 혼합 모드 디버깅은 지원 되지 않습니다. | Microsoft Docs'
+title: '오류: IA64 프로세스에 대해서는 혼합 모드 디버깅이 지원되지 않음 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0bddbb1572bd0258eae2052eb34dfa3d0d67a134
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737633"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>오류: IA64 프로세스에 대해서는 혼합 모드 디버깅을 수행할 수 없습니다.
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>오류: IA64 프로세스에 대해서는 혼합 모드 디버깅이 지원되지 않습니다.
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거에서는 Itanium 기반 프로세스의 혼합 네이티브 및 관리 코드에 대한 디버깅이 지원되지 않습니다.
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면

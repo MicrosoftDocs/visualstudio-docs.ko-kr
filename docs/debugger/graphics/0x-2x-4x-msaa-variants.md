@@ -1,5 +1,5 @@
 ---
-title: 0 x-2 x-4 msaa 변형 | Microsoft Docs
+title: 0x-2x-4x MSAA 변형 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
 ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/12/2019
 ms.locfileid: "64816543"

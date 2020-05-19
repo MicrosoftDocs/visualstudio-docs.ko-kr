@@ -1,5 +1,5 @@
 ---
-title: 밉 맵 생성 변형 | Microsoft Docs
+title: Mip 맵 생성 변형 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734897"
@@ -25,8 +25,8 @@ Mip 맵은 더 작은 버전의 질감을 미리 계산하여 최소화한 질�
 
 이러한 변형이 성능을 상당히 개선하면 Mip 맵을 사용하지 않음을 나타내므로 질감 캐시를 최대한 활용하지 않는 것입니다.
 
-## <a name="remarks"></a>주의
-원본 질감을 생성하는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 Mip 맵이 강제로 생성됩니다. 특히 `pDesc` 전달 된 D3D11_TEXTURE2D_DESC 개체가 변경 되지 않은 셰이더 리소스를 설명 하는 경우에는 밉 맵 생성이 강제로 적용 됩니다. 말하자면:
+## <a name="remarks"></a>설명
+원본 질감을 생성하는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 Mip 맵이 강제로 생성됩니다. 특히 다음과 같이 `pDesc`에서 전달되는 D3D11_TEXTURE2D_DESC 개체가 변경되지 않는 셰이더 리소스를 설명하는 경우 Mip 맵이 강제로 생성됩니다.
 
 - BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우
 
@@ -62,7 +62,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 ```
 
-전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 밉 체인의 밉 수준 수는 floor (log2 (n) + 1) 이며 여기서 n은 질감의 가장 큰 차원입니다.
+전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 Mip 체인에 있는 Mip 맵 수준 수는 floor(log2(n) + 1)이며, 여기서 n은 텍스처의 최대 크기입니다.
 
 `CreateTexture2D`에 초기 데이터를 제공하는 경우 각 Mip 수준에 대한 D3D11_SUBRESOURCE_DATA 개체를 제공해야 합니다.
 

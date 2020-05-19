@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합 시각화 도우미 대화 상자 | Microsoft Docs
+title: 데이터 세트 시각화 도우미 대화 상자 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745596"
@@ -32,7 +32,7 @@ ms.locfileid: "72745596"
  이 시각화 도우미에서 개체를 변경할 수 있습니다. 변경 내용은 행을 커밋하는 즉시 저장됩니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
- 테이블이 드롭다운 목록 상자를 사용 하 여 시각화 하려는 데이터 집합 내의 테이블을 선택 합니다.
+ 테이블 - 데이터 세트 내에서 시각화할 테이블을 선택하려면 이 드롭다운 목록 상자를 사용합니다.
 
 ## <a name="see-also"></a>참조
 

@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736266"
@@ -67,9 +67,9 @@ ms.locfileid: "72736266"
 
 3. **보안 옵션**을 클릭합니다.
 
-4. **정책** 열에서 **네트워크 액세스: 로컬 계정에 대한 공유 및 보안**을 두 번 클릭합니다.
+4. **정책** 열에서 **네트워크 액세스: 로컬 계정에 대한 공유 및 보안 모델**을 두 번 클릭합니다.
 
-5. **네트워크 액세스: 로컬 계정에 대한 공유 및 보안** 대화 상자의 값을 **클래식 - 로컬 사용자를 그대로 인증**으로 변경하고 **적용** 단추를 클릭합니다.
+5. **네트워크 액세스: 로컬 계정에 대한 공유 및 보안 모델** 대화 상자의 값을 **클래식 - 로컬 사용자를 그대로 인증**으로 변경하고 **적용** 단추를 클릭합니다.
 
      ![로컬 보안 정책 보안 옵션](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 

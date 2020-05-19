@@ -1,5 +1,5 @@
 ---
-title: 어설션 실패 대화 상자 | Microsoft Docs
+title: 어설션 오류 대화 상자 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,7 +22,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745762"
@@ -33,7 +33,7 @@ ms.locfileid: "72745762"
 |클릭 대상|대상|
 |-----------|--------|
 |다시 시도|어설션을 디버깅하거나 어설션에 대한 도움말을 봅니다.|
-|Ignore|어설션을 무시하고 프로그램을 계속 실행합니다.|
+|무시|어설션을 무시하고 프로그램을 계속 실행합니다.|
 |중단|프로그램 실행을 중지하고 디버깅 세션을 끝냅니다.|
 
 ## <a name="see-also"></a>참조

@@ -1,5 +1,5 @@
 ---
-title: '오류: 서버에 대해 자동으로 한 단계씩 코드를 실행 하지 못했습니다. | Microsoft Docs'
+title: '오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 34b298b299bb4911bfe64b362d94c3e90ecfa585
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736869"
 ---
-# <a name="error-unable-to-automatically-step-into-the-server"></a>오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없습니다.
+# <a name="error-unable-to-automatically-step-into-the-server"></a>오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음
 이 오류 메시지는 다음과 같습니다.
 
  서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없습니다. 원격 프로시저가 실행되기 전에 디버거에 알리지 않았습니다.

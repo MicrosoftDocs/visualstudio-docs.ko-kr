@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592440"
@@ -45,7 +45,7 @@ ms.locfileid: "75592440"
     </xsl:stylesheet>
     ```
 
-2. `<xsl:template name="msg23" match="msg23">` 뒤에 커서를 삽입 하 고 **enter**키를 누릅니다. 그리고 나서 다음 `xsl:call-template` 요소 입력을 시작합니다.
+2. 커서를 `<xsl:template name="msg23" match="msg23">` 다음에 놓고 **Enter** 키를 누릅니다. 그리고 나서 다음 `xsl:call-template` 요소 입력을 시작합니다.
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ ms.locfileid: "75592440"
 
      입력할 때 템플릿 이름의 목록이 `name=""` 요소의 `xsl:call-template` 특성에 나타납니다.
 
-3. `<xsl:call-template name="localized-message">` 뒤에 커서를 삽입 하 고 **enter**키를 누릅니다. 그리고 나서 다음 `xsl:with-param` 요소 입력을 시작합니다.
+3. 커서를 `<xsl:call-template name="localized-message">` 다음에 놓고 **Enter** 키를 누릅니다. 그리고 나서 다음 `xsl:with-param` 요소 입력을 시작합니다.
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ ms.locfileid: "75592440"
     </xsl:stylesheet>
     ```
 
-2. `<xsl:apply-templates select="phone" />` 뒤에 커서를 삽입 하 고 **enter**키를 누릅니다. 그리고 나서 다음 `xsl: apply-templates` 요소 입력을 시작합니다.
+2. 커서를 `<xsl:apply-templates select="phone" />` 다음에 놓고 **Enter** 키를 누릅니다. 그리고 나서 다음 `xsl: apply-templates` 요소 입력을 시작합니다.
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ ms.locfileid: "75592440"
     </xsl:stylesheet>
     ```
 
-2. `<xsl:stylesheet version="1.0">` 뒤에 커서를 삽입 하 고 **enter**키를 누릅니다. 그리고 나서 다음 `xsl:namespace-alias` 요소 입력을 시작합니다.
+2. 커서를 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 다음에 놓고 **Enter** 키를 누릅니다. 그리고 나서 다음 `xsl:namespace-alias` 요소 입력을 시작합니다.
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

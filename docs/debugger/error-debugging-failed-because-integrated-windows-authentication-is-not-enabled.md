@@ -1,5 +1,5 @@
 ---
-title: '오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 하지 못했습니다. | Microsoft Docs'
+title: '오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911544"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅을 하지 못했습니다.
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패
 인증 오류로 인해 디버깅을 요청한 사용자를 인증할 수 없습니다. 웹 애플리케이션 또는 XML Web services를 한 단계씩 실행하려고 할 때 이 오류가 발생할 수 있습니다. 이 오류는 Windows 통합 인증이 사용할 수 없도록 설정되어 있기 때문에 발생할 수 있습니다. 이 인증을 사용하려면 "통합 Windows 인증을 사용하려면"의 단계를 따릅니다.
 
  Windows 통합 인증을 사용하도록 설정했는데도 이 오류가 계속 발생하면 **Windows 도메인 서버의 다이제스트 인증**을 사용하도록 설정했기 때문일 수 있습니다. 이 경우에는 네트워크 관리자에게 문의하십시오.
@@ -67,7 +67,7 @@ ms.locfileid: "72911544"
 
 2. Windows 인증 및 II6 관리 호환성을 설정하지 않은 경우 다음 단계에 따라 이를 설정합니다.
 
-    1. **시작**, **제어판** 을 차례로 클릭 한 다음 **프로그램**을 클릭 합니다.
+    1. **시작**, **제어판**, **프로그램**을 차례로 클릭합니다.
 
     2. **프로그램 및 기능**에서 **Windows 기능 사용/사용 안 함**을 클릭합니다.
 
@@ -116,4 +116,4 @@ ms.locfileid: "72911544"
 ## <a name="see-also"></a>참조
 - [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest 인증](/windows/win32/secauthn/microsoft-digest-authentication)
-- [IIS 7.0 및 Visual Studio를 사용 하 여 Windows Vista에서 웹 응용 프로그램 실행](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [IIS 7.0 및 Visual Studio를 사용하여 Windows Vista에서 웹 애플리케이션 실행](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

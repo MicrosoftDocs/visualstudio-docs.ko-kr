@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735507"
@@ -22,7 +22,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 호출 스택을 사용�
 
  아래 그림은 이벤트 호출 스택 창입니다.
 
- ![DrawIndexed 이벤트 앞의 호출 스택입니다.](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
+ ![DrawIndexed 이벤트에 앞서 수행되는 호출 스택입니다.](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
 
 ## <a name="understanding-the-graphics-event-call-stack"></a>그래픽 이벤트 호출 스택 이해
  이벤트 호출 스택을 사용하면 특정 Direct3D 이벤트를 발생시킨 실행 흐름을 파악할 수 있습니다. 실행 중인 앱 내 현재 스레드의 현재 호출 스택이 표시되는 대신 선택한 Direct3D 이벤트가 발생한 시점의 호출 스택이 표시된다는 점을 제외하면 그래픽 이벤트 호출 스택은 Visual Studio 호출 스택 창과 비슷합니다. 이벤트 호출 스택에서 선택한 Direct3D 이벤트의 호출 사이트로 이동하여 주변 코드를 검사할 수 있습니다.

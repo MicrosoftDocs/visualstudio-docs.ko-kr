@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733413"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>방법: 레지스터 값 편집 (C#, C++, Visual Basic,) F#
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>방법: 레지스터 값 편집(C#, C++, Visual Basic, F#)
 
 레지스터 창은 **옵션** 대화 상자의 **디버깅** 노드에서 주소 수준 디버깅을 활성화한 경우에만 사용할 수 있습니다.
 

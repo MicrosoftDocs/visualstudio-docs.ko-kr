@@ -1,5 +1,5 @@
 ---
-title: '방법: 메모리에서 위 또는 아래로 페이지 이동 | Microsoft Docs'
+title: '방법: 메모리에서 페이지 위 또는 아래로 이동 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733030"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>방법: 메모리에서 위 또는 아래로 한 페이지 이동
+# <a name="how-to-page-up-or-down-in-memory"></a>방법: 메모리에서 페이지 위 또는 아래로 이동
 
 **메모리** 창이나 **디스어셈블리** 창에서 메모리 내용을 볼 때 세로 스크롤 막대를 사용하여 메모리 공간에서 위나 아래로 이동할 수 있습니다.
 

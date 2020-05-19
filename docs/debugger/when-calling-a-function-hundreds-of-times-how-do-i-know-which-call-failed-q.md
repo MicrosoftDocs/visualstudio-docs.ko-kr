@@ -1,5 +1,5 @@
 ---
-title: 함수를 여러 번 호출할 때 실패 한 호출 찾기 | Microsoft Docs
+title: 함수를 여러 번 호출할 때 실패한 호출 찾기 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -30,7 +30,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728042"

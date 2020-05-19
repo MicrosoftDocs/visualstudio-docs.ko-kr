@@ -1,5 +1,5 @@
 ---
-title: 잘못 된 매개 변수 값을 전달 하는 사람 찾기 | Microsoft Docs
+title: 무엇이 잘못된 매개 변수 값을 전달하는지 알아보기 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 42884cd6498f00cfe2df2d0396ff9ea6b03c2f98
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734233"
@@ -41,7 +41,7 @@ ms.locfileid: "72734233"
 
 2. 마우스 오른쪽 단추로 중단점을 클릭하고 **조건**을 선택합니다.
 
-3. **중단점 조건** 대화 상자에서 **조건** 확인란을 클릭합니다. [고급 중단점](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)을 참조 하세요.
+3. **중단점 조건** 대화 상자에서 **조건** 확인란을 클릭합니다. [고급 중단점](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)을 참조하세요.
 
 4. 텍스트 상자에 `Var==3` 같은 식을 입력합니다. 여기서 `Var`은 잘못된 값을 포함하는 매개 변수의 이름이고 `3`은 이 매개 변수에 전달된 잘못된 값입니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "72734233"
 
 6. 이제 프로그램을 다시 실행합니다. `Var` 매개 변수의 값이 `3`인 경우 중단점은 함수의 시작 부분에서 프로그램을 중단하게 합니다.
 
-7. 호출 스택 창을 사용하여 호출하는 함수를 찾고 함수의 소스 코드를 탐색합니다. 자세한 내용은 [방법: 호출 스택 창 사용](../debugger/how-to-use-the-call-stack-window.md)을 참조 하세요.
+7. 호출 스택 창을 사용하여 호출하는 함수를 찾고 함수의 소스 코드를 탐색합니다. 자세한 내용은 [방법: 호출 스택 창 사용](../debugger/how-to-use-the-call-stack-window.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)

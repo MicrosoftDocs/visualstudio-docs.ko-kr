@@ -1,5 +1,5 @@
 ---
-title: '방법: 관리 코드에서 스레드 이름 설정 | Microsoft Docs'
+title: '방법: 관리 코드에 스레드 이름 설정 | Microsoft Docs'
 ms.date: 04/27/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,7 +20,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: cf05c0eea2ec05f04c1c792145218f570c4bce96
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732776"

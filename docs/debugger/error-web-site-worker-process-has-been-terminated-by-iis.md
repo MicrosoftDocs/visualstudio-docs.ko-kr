@@ -1,5 +1,5 @@
 ---
-title: '오류: IIS에서 웹 사이트 작업자 프로세스를 종료 했습니다. | Microsoft Docs'
+title: '오류: IIS에서 웹 사이트 작업자 프로세스를 종료함 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736349"

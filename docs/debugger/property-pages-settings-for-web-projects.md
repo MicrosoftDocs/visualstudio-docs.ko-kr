@@ -1,5 +1,5 @@
 ---
-title: 웹 프로젝트에 대 한 속성 설정 | Microsoft Docs
+title: 웹 프로젝트의 속성 설정 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730590"
@@ -42,7 +42,7 @@ ms.locfileid: "72730590"
 | **명령줄 인수:** | 위에서 지정한 명령의 인수를 지정합니다. |
 | **작업 디렉터리:** | 디버깅 중인 프로그램의 작업 디렉터리를 지정합니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]에서는 애플리케이션이 시작된 디렉터리가 작업 디렉터리입니다. 이 디렉터리는 기본적으로 \bin\debug입니다. |
 | **시작 URL** | 디버깅할 웹 애플리케이션의 위치를 지정합니다. |
-| **페이지를 열지 마세요. 외부 응용 프로그램의 요청 대기** | 외부 애플리케이션의 요청을 기다리도록 지정합니다. 이 옵션은 Internet Explorer 또는 다른 애플리케이션을 시작하지 않습니다. 애플리케이션에서 호출될 때 디버깅이 준비합니다. |
+| **페이지를 열지 않고 외부 애플리케이션의 요청 기다리기** | 외부 애플리케이션의 요청을 기다리도록 지정합니다. 이 옵션은 Internet Explorer 또는 다른 애플리케이션을 시작하지 않습니다. 애플리케이션에서 호출될 때 디버깅이 준비합니다. |
 | **서버** | 사용할 서버에 관련된 옵션을 그룹화하는 제목입니다. |
 | **기본 웹 서버 사용** | 기본 웹 서버를 사용하도록 지정합니다. |
 | **사용자 지정 서버 사용** | 서버로 사용할 기본 URL을 입력할 수 있습니다. |

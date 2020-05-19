@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729866"
@@ -37,7 +37,7 @@ ms.locfileid: "72729866"
 int YourReportHook(int nRptType, char *szMsg, int *retVal);
 ```
 
- **_CrtSetReportHook** 에 전달 하는 포인터는 crtdbg.h에 정의 된 **_CRT_REPORT_HOOK**형식입니다. 넣기
+ **_CrtSetReportHook**에 전달한 포인터는 CRTDBG.H에 정의된 대로 **_CRT_REPORT_HOOK** 형식입니다.
 
 ```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);

@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733463"
@@ -46,7 +46,7 @@ ms.locfileid: "72733463"
 
      드롭다운 목록 컨트롤이 **데이터 바인딩** 또는 클릭한 범주 옆의 설정 열에 나타납니다.
 
-8. 드롭다운 목록을 클릭하고 표시할 추적 정보의 형식(**All**, **Critical**, **Error**, **Warning**, **Information**, **Verbose** 또는 **ActivityTracing**)을 선택합니다.
+8. 드롭다운 목록을 클릭하고 다음과 같이 보려는 추적 정보 형식을 선택합니다. **All**, **Critical**, **Error**, **Warning**, **Information**, **Verbose** 또는 **ActivityTracing**.
 
      **Critical**은 중요 이벤트만 추적하도록 설정합니다.
 

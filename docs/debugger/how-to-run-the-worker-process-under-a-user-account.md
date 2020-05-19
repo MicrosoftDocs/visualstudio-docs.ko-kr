@@ -22,7 +22,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732812"
@@ -31,7 +31,7 @@ ms.locfileid: "72732812"
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스(aspnet_wp.exe 또는 w3wp.exe)를 사용자 계정으로 실행할 수 있도록 컴퓨터를 설정하려면 다음 단계를 따르세요.
 
  > [!IMPORTANT]
- > Windows Server 2008 R2부터 각 응용 프로그램 풀의 id로 [Applicationpoolidentity](/iis/manage/configuring-security/application-pool-identities) 를 사용 하는 것이 좋습니다.
+ > Windows Server 2008 R2부터는 각 애플리케이션 풀의 ID로 [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)를 사용하는 것이 좋습니다.
 
 ## <a name="procedure"></a>프로시저
 
@@ -78,7 +78,7 @@ ms.locfileid: "72732812"
 
     **사용자, 컴퓨터 또는 그룹 선택** 대화 상자가 나타납니다.
 
-10. **선택할 개체 이름 입력** 상자에 사용자 이름을 입력하고 **확인**을 클릭합니다. 사용자 이름은 DomainName\UserName 형식이어야 합니다.
+10. **선택할 개체 이름 입력** 상자에 사용자 이름을 입력하고 **확인**을 클릭합니다. 사용자 이름은 다음 형식을 따라야 합니다. DomainName\UserName.
 
 11. **Temporary ASP.NET Files 권한 항목** 대화 상자에서 사용자에게 **모든 권한**을 부여한 다음 **확인** 을 클릭하여 **Temporary ASP.NET Files 권한 항목** 대화 상자를 닫습니다.
 

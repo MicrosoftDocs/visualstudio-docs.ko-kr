@@ -39,13 +39,13 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732151"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 기능 사용
-Visual Studio C++ 프로젝트에서 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks) 를 사용 하 여 다음과 같은 일반적인 런타임 오류를 catch 할 수 있습니다.
+# <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 사용
+Visual Studio C++ 프로젝트에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks)를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.
 
 - 스택 포인터 손상
 
@@ -59,7 +59,7 @@ Visual Studio C++ 프로젝트에서 네이티브 [runtime_checks](/cpp/preproce
 
   **/RTC** 를 최적화된 빌드( **/O**)와 함께 사용하면 컴파일러 오류가 발생합니다. 최적화된 빌드에는 `runtime_checks` pragma를 사용해도 적용되지 않습니다.
 
-  런타임 검사가 활성화된 상태에서 프로그램을 디버깅하면 런타임 오류가 발생한 경우 기본적으로 프로그램을 중지하고 디버거를 중단합니다. 모든 런타임 검사의 기본 동작은 변경할 수 있습니다. 자세한 내용은 [디버거를 사용 하 여 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조 하세요.
+  런타임 검사가 활성화된 상태에서 프로그램을 디버깅하면 런타임 오류가 발생한 경우 기본적으로 프로그램을 중지하고 디버거를 중단합니다. 모든 런타임 검사의 기본 동작은 변경할 수 있습니다. 자세한 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조하세요.
 
   다음 절차에서는 디버그 빌드에서 네이티브 런타임 검사 기능을 활성화하는 방법과 네이티브 런타임 검사 동작을 수정하는 방법에 대해 설명합니다.
 

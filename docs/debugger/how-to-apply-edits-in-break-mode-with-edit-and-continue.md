@@ -1,5 +1,5 @@
 ---
-title: 편집 하며 계속 하기를 사용 하 여 중단 모드에서 편집 적용 | Microsoft Docs
+title: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,15 +25,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734027"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>방법: 편집 하며 계속 하기를 사용 하 여 중단 모드에서 편집 적용 (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>방법: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용(Visual Basic)
 편집하며 계속하기를 사용하면 실행을 중지한 후에 다시 시작하지 않고도 중단 모드에서 코드를 편집한 다음 계속 진행할 수 있습니다.
 
-디버깅 하는 동안 편집 하며 계속 하기 사용에 대 한 제한 사항은 [지원C# 되는 코드 변경 내용 (및 Visual Basic)](../debugger/supported-code-changes-csharp.md)을 참조 하세요.
+디버그하는 동안 편집하며 계속하기 사용의 제한 사항은 [지원되는 코드 변경(C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)을 참조하세요.
 
 ### <a name="to-edit-code-in-break-mode"></a>중단 모드에서 코드를 편집하려면
 
@@ -47,11 +47,11 @@ ms.locfileid: "72734027"
 
          또는
 
-    - 예외가 발생 하면 **예외 도우미**에서 **편집 사용** 을 선택 합니다.
+    - 예외가 발생하면 **예외 도우미**에서 **편집 사용**을 선택합니다.
 
-2. 원하는 코드와 지원 되는 코드 변경을 수행 합니다.
+2. 지원되는 코드를 원하는 대로 변경합니다.
 
-     자세한 내용은 [지원 되는 코드 변경 내용 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)을 참조 하세요.
+     자세한 내용은 [지원되는 코드 변경(C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)을 참조하세요.
 
     > [!NOTE]
     > 편집하며 계속하기에서 허용되지 않는 코드 변경 작업을 수행하면 자주색 물결선이 편집 내용 아래에 밑줄로 표시되고 해당 작업이 작업 목록에 나타납니다. 잘못된 코드 변경 내용을 취소하지 않으면 코드 실행을 계속 진행할 수 없습니다.
@@ -61,5 +61,5 @@ ms.locfileid: "72734027"
      적용한 편집 내용이 프로젝트에 통합된 상태로 코드가 실행됩니다.
 
 ## <a name="see-also"></a>참조
-- [지원 되는 코드C# 변경 (및 Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [지원되는 코드 변경(C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [편집하며 계속하기(Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

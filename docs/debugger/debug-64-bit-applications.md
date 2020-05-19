@@ -1,5 +1,5 @@
 ---
-title: 64 비트 응용 프로그램 디버그 | Microsoft Docs
+title: 64비트 애플리케이션 디버그 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911581"
@@ -37,14 +37,14 @@ ms.locfileid: "72911581"
 
 1. Visual Studio 솔루션(예: C# 콘솔 애플리케이션)을 만듭니다.
 
-2. Configuration Manager를 사용하여 구성을 64비트로 설정합니다. 자세한 내용은 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)을 참조하세요.
+2. Configuration Manager를 사용하여 구성을 64비트로 설정합니다. 자세한 내용은 [방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)을 참조하세요.
 
 3. 이때 64비트 버전의 원격 디버거(msvsmon.exe)가 시작됩니다. 64비트 구성을 사용하는 솔루션이 열려 있으면 디버거가 실행됩니다.
 
 4. 디버깅을 시작합니다. 사용자 환경은 32비트 구성과 동일합니다. 오류가 발생할 경우 아래의 문제 해결 섹션을 참조하세요.
 
 ## <a name="troubleshooting-64-bit-debugging"></a>64비트 디버깅 문제 해결
- "64비트 디버깅 작업이 예상보다 오래 걸리고 있습니다."라는 오류가 표시될 수 있습니다. 이 경우 Visual Studio에서 64비트 버전의 msvsmon.exe로 요청을 보냈으며, 해당 요청의 결과가 반환되는 데 오랜 시간이 걸렸습니다.
+ 다음 오류가 표시될 수 있습니다. “64비트 디버깅 작업이 예상보다 오래 걸리고 있습니다.” 이 경우 Visual Studio에서 64비트 버전의 msvsmon.exe로 요청을 보냈으며, 해당 요청의 결과가 반환되는 데 오랜 시간이 걸렸습니다.
 
  이 오류의 주요 원인으로는 다음 두 가지가 있습니다.
 

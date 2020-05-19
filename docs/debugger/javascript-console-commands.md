@@ -16,21 +16,21 @@ ms.workload:
 - cordova
 ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731705"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio의 JavaScript 콘솔 명령
 
-명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 이 창을 사용 하는 방법을 보여 주는 예제는 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)를 참조 하세요. 이 항목의 정보는 node.js 앱, UWP 앱 및 Apache Cordova에 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다.
+명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 이 창을 사용하는 방법을 보여 주는 예제는 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)를 참조하세요. 이 항목의 정보는 Node.js 앱, UWP 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 적용됩니다.
 
-JavaScript 콘솔 창이 닫힌 경우 Visual Studio에서 디버그 하는 동안 **디버그**  > **Windows**  > **javascript 콘솔**을 선택 하 여 열 수 있습니다.
+JavaScript 콘솔 창이 닫혀 있는 경우 Visual Studio에서 디버그하는 동안 **디버그** > **창** > **JavaScript 콘솔**을 선택하여 콘솔 창을 열 수 있습니다.
 
 > [!NOTE]
 > 디버깅 세션 중에 창을 사용할 수 없는 경우 프로젝트의 디버그 속성에서 디버거 형식이 **Script** 로 설정되었는지 확인하세요.
 
-Microsoft Edge 개발자 도구에서 콘솔을 사용 하는 방법에 대 한 정보는 [이 항목](/microsoft-edge/devtools-guide)을 참조 하세요.
+Microsoft Edge 개발자 도구에서 콘솔을 사용하는 방법에 관한 내용은 [이 항목](/microsoft-edge/devtools-guide)을 참조하세요.
 
 ## <a name="console-object-commands"></a>콘솔 개체 명령
 
@@ -55,9 +55,9 @@ Microsoft Edge 개발자 도구에서 콘솔을 사용 하는 방법에 대 한 
 |`groupEnd()`|현재 그룹을 종료합니다.<br /><br /> 요구 사항:<br /><br /> Visual Studio 2013|`group` 명령의 예를 참조하세요.|
 |`info(message)`|콘솔 창에 `message` 를 보냅니다. 메시지 앞에 정보 기호가 옵니다.|`console.info("info message");`<br /><br /> 추가 예제는 이 항목의 뒷부분에 나오는 [Formatting console.log output](#ConsoleLog) 을 참조하세요.|
 |`log(message)`|콘솔 창에 `message` 를 보냅니다.<br /><br /> 개체를 전달하는 경우 이 명령은 해당 개체를 콘솔 창으로 보내고 개체 시각화 도우미에 표시합니다. 시각화 도우미를 사용하여 콘솔 창에서 속성을 검사할 수 있습니다.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|웹 앱에서 사용됩니다. JavaScript를 사용 하는 UWP 앱에서 지원 되지 않습니다.|지원되지 않음|
-|`profile(reportName)`|웹 앱에서 사용됩니다. JavaScript를 사용 하는 UWP 앱에서 지원 되지 않습니다.|지원되지 않음|
-|`profileEnd()`|웹 앱에서 사용됩니다. JavaScript를 사용 하는 UWP 앱에서 지원 되지 않습니다.|지원되지 않음|
+|`msIsIndependentlyComposed(element)`|웹 앱에서 사용됩니다. JavaScript를 사용하는 UWP 앱에서는 지원되지 않습니다.|지원되지 않습니다.|
+|`profile(reportName)`|웹 앱에서 사용됩니다. JavaScript를 사용하는 UWP 앱에서는 지원되지 않습니다.|지원되지 않습니다.|
+|`profileEnd()`|웹 앱에서 사용됩니다. JavaScript를 사용하는 UWP 앱에서는 지원되지 않습니다.|지원되지 않습니다.|
 |`select(element)`|`element` DOM 탐색기 [에서 지정한 HTML](../debugger/quickstart-debug-html-and-css.md)를 선택합니다.|console.select(요소);|
 |`time (name)`|선택적 `name` 매개 변수에서 식별하는 타이머를 시작합니다. `console.timeEnd`와 함께 사용할 경우 `time` 과 `timeEnd`사이에 경과된 시간을 계산하고 `name` 문자열을 접두사로 사용하여 결과(단위: ms)를 콘솔에 보냅니다. 성능을 측정하기 위한 앱 코드 계측을 활성화하는 데 사용됩니다.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|선택적 `name` 매개 변수에서 식별하는 타이머를 중지합니다. `time` 콘솔 명령을 참조하세요.|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -89,7 +89,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>JavaScript 콘솔 창에서 개체 검사
 JavaScript 콘솔 창을 사용하면 범위 내에 있는 개체와 상호 작용할 수 있습니다. 콘솔 창에서 범위 외부의 개체를 검토하려면 코드에서 `console.log` , `console.dir`또는 기타 명령을 사용하세요. 또는 개체가 범위 내에 있는 경우 코드에 중단점을 설정(**중단점** > **Insert 중단점**)하여 콘솔 창에서 이 개체와 상호 작용할 수 있습니다.
 
-## <a name="ConsoleLog"></a> console.log 출력 서식 지정
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> console.log 출력 서식 지정
 여러 인수를 `console.log`에 전달하는 경우 콘솔은 인수를 배열로 처리하고 출력을 연결합니다.
 
 ```javascript

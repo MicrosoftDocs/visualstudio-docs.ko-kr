@@ -1,5 +1,5 @@
 ---
-title: 'VsgDbg:: ~ VsgDbg (소멸자) | Microsoft Docs'
+title: VsgDbg::~VsgDbg(소멸자) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7a3b97fb-d344-4df7-b195-9347d1edfcf7
@@ -10,13 +10,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dcc518e649732f6774259efed0965a9898e0fb2d
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734790"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg(소멸자)
-@No__t_0 클래스의 인스턴스를 소멸 시킵니다. 그래픽 정보를 적극적으로 기록 하는 경우 그래픽 로그 파일이 종료 되 고 닫히고 그래픽 정보를 적극적으로 캡처하는 동안 사용 된 리소스가 해제 됩니다.
+`VsgDbg` 클래스의 인스턴스를 제거합니다. 그래픽 정보가 활발히 기록되고 있는 경우 그래픽 로그 파일은 종료되고 닫히며 그래픽 정보를 활발히 캡처하는 동안 사용된 리소스는 해제됩니다.
 
 ## <a name="syntax"></a>구문
 

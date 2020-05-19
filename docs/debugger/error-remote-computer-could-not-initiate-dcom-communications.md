@@ -1,5 +1,5 @@
 ---
-title: '오류: 원격 컴퓨터에서 DCOM 통신을 시작할 수 없습니다. | Microsoft Docs'
+title: '오류: 원격 컴퓨터에서 DCOM 통신을 시작하지 못함 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2d61fe145a8dc301c928b81f9b57f1a574865a1d
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737546"
@@ -32,7 +32,7 @@ ms.locfileid: "72737546"
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. 로컬 컴퓨터에서 Windows 방화벽을 사용 하는 경우 로컬 디버깅을 위해 방화벽을 구성 하는 방법에 대 한 지침은 [원격 디버깅](../debugger/remote-debugging.md) 을 참조 하세요.
+1. 로컬 머신에서 Windows 방화벽을 사용하는 경우에 로컬 디버깅을 위해 방화벽을 구성하는 방법에 관한 지침은 [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.
 
 2. 원격 서버에서 로컬 컴퓨터의 파일 공유 위치를 열어 Windows 인증을 테스트합니다.
 

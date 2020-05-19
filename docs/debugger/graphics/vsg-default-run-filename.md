@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734835"
@@ -34,10 +34,10 @@ ms.locfileid: "72734835"
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  전처리기 기호 `DONT_SAVE_VSGLOG_TO_TEMP`가 정의된 경우 파일 이름이 캡처된 앱의 현재 디렉터리에 상대적이거나 절대 경로입니다. 그렇지 않으면 사용자의 임시 파일 디렉터리에 상대적이고 절대 경로일 수 없습니다.
 
- 정의 된 파일 이름을 변경 하려면 프로그램에 `vsgcapture.h`을 포함 하기 전에이를 다시 정의 해야 합니다.
+ 정의된 파일 이름을 변경하려면 프로그램에 `vsgcapture.h`를 포함하기 전에 다시 정의해야 합니다.
 
 ## <a name="example"></a>예제
  이 예제에서는 캡처 파일의 기본 파일 이름을 변경하는 방법을 보여줍니다.

@@ -1,5 +1,5 @@
 ---
-title: '오류: 웹 서비스를 디버깅 하는 동안 시간이 초과 되었습니다. | Microsoft Docs'
+title: '오류: 웹 서비스를 디버그하는 동안 시간 초과 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5aba4fef3e1c787651eb961f80b3507090f250a2
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736884"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>오류: 웹 서비스를 디버깅하는 동안 시간이 초과되었습니다.
+# <a name="error-timeout-while-debugging-web-services"></a>오류: 웹 서비스를 디버깅하는 동안 시간 초과
 코드를 호출하여 XML Web services를 한 단계씩 실행할 때 호출 시간이 초과되어 디버깅을 계속할 수 없는 경우가 있습니다. 이때 다음과 같은 오류 메시지가 나타날 수 있습니다.
 
 ```cmd

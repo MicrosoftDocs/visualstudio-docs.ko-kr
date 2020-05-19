@@ -1,5 +1,5 @@
 ---
-title: 혼합 모드 디버깅은 Microsoft .NET Framework 2.0 또는 3.0를 사용 하는 경우에만 지원 됩니다. Microsoft Docs
+title: 혼합 모드 디버깅은 Microsoft .NET Framework 2.0 또는 3.0을 사용할 때만 지원됨 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730926"
@@ -51,7 +51,7 @@ ms.locfileid: "72730926"
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-- [SQL 디버깅 설정](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))을 참조 하세요.
+- [SQL 디버깅 설정](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [64비트 애플리케이션 디버그](../debugger/debug-64-bit-applications.md)

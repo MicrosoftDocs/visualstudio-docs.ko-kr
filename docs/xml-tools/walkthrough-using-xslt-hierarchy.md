@@ -7,7 +7,7 @@ ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592453"
@@ -20,9 +20,9 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
 
 이 항목의 예제에서는 참조된 스타일시트에서의 디버깅을 보여 줍니다.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>참조 된 스타일 시트에서 디버깅 하려면
+## <a name="to-debug-in-a-referenced-style-sheet"></a>참조된 스타일시트에서 디버그하는 방법
 
-1. Visual Studio에서 XML 문서를 엽니다. 이 예제에서는 다음 문서를 사용 합니다.
+1. Visual Studio에서 XML 문서를 엽니다. 이 예제에서는 다음 문서를 사용합니다.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -46,7 +46,7 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
     </COLLECTION>
     ```
 
-1. 다음 xslincludefile를 추가 *합니다*.
+1. 다음 *xslincludefile.xsl*을 추가합니다.
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
     </xsl:stylesheet>
     ```
 
-3. 다음 *xslinclude* 파일을 추가 합니다.
+3. 다음 *xslinclude.xsl* 파일을 추가합니다.
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
     </xsl:stylesheet>
     ```
 
-4. 명령 `<xsl:include href="xslincludefile.xsl" />`에 중단점을 추가 합니다.
+4. `<xsl:include href="xslincludefile.xsl" />` 명령에 중단점을 추가합니다.
 
 5. 디버깅을 시작합니다.
 
-6. 디버거가 명령 `<xsl:include href="xslincludefile.xsl" />`에서 중지 되 면 한 **단계씩 코드 실행** 단추를 누릅니다. 참조 된 스타일 시트에서 디버깅을 계속할 수 있습니다. 계층 구조가 표시되며 디자이너에서 올바른 경로를 표시합니다.
+6. `<xsl:include href="xslincludefile.xsl" />` 명령에서 디버거가 중지되면 **한 단계씩 코드 실행** 단추를 누릅니다. 참조된 스타일시트에서 디버깅을 계속할 수 있습니다. 계층 구조가 표시되며 디자이너에서 올바른 경로를 표시합니다.
 
 ## <a name="see-also"></a>참조
 

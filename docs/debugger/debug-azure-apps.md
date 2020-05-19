@@ -12,26 +12,26 @@ ms.workload:
 - azure
 ms.openlocfilehash: e7c7ba163010a14102aa3e1b0160e1c3cf294db1
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745558"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Visual Studio에서 Azure 서비스 디버그
 
-Visual Studio를 사용 하 여 다양 한 시나리오에서 Azure 서비스를 디버그할 수 있습니다.
+Visual Studio를 사용하여 다양한 시나리오에서 Azure 서비스를 디버그할 수 있습니다.
 
-- Azure App Service에서 호스트 되는 프로덕션 앱을 디버깅 하려면 [스냅숏 디버거를 사용 하 여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)를 참조 하세요.
+- Azure App Service에서 호스트되는 프로덕션 앱을 디버그하려면 [스냅샷 디버거를 사용하여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)를 참조하세요.
 
-- Azure 가상 머신 또는 Azure 가상 머신 확장 집합에서 호스트 되는 프로덕션 앱을 디버깅 하려면 [스냅숏 디버거을 사용 하 여 라이브 ASP.NET azure virtual machines 및 azure virtual machine scale Sets 디버그](../debugger/debug-live-azure-virtual-machines.md)를 참조 하세요.
+- Azure 가상 머신 또는 Azure 가상 머신 확장 집합에서 호스트되는 프로덕션 앱을 디버그하려면 [스냅샷 디버거를 사용하여 라이브 ASP.NET Azure Virtual Machines 및 Azure Virtual Machine Scale Sets 디버그](../debugger/debug-live-azure-virtual-machines.md)를 참조하세요.
 
-- Azure Kubernetes Service에서 호스팅되는 프로덕션 앱을 디버깅 하려면 [스냅숏 디버거을 사용 하 여 라이브 ASP.NET Azure Kubernetes Services 디버그](../debugger/debug-live-azure-kubernetes.md)를 참조 하세요.
+- Azure Kubernetes Service에서 호스트되는 프로덕션 앱을 디버그하려면 [스냅샷 디버거를 사용하여 라이브 ASP.NET Azure Kubernetes Services 디버그](../debugger/debug-live-azure-kubernetes.md)를 참조하세요.
 
-- Application Insights를 사용 하 여 프로덕션 앱을 디버깅 하 고 Azure App Service 또는 Service Fabric에서 호스트 하려면 [.net 앱의 예외에 대 한 스냅숏 디버그](/azure/application-insights/app-insights-snapshot-debugger)를 참조 하세요.
+- Application Insights를 사용하고 Azure App Service 또는 Service Fabric에서 호스트되는 프로덕션 앱을 디버그하려면 [.NET 앱의 예외에 대한 디버그 스냅샷](/azure/application-insights/app-insights-snapshot-debugger)을 참조하세요.
 
-- IIS의 원격 디버그 ASP.NET (Azure App Service 또는 Azure VM)에 대 한 자세한 내용은 [azure의 원격 디버깅 ASP.NET](remote-debugging-azure.md)(영문)를 참조 하세요.
+- IIS(Azure App Service 또는 Azure VM)에서 ASP.NET을 원격 디버그하려면 [Azure에서 ASP.NET 원격 디버그](remote-debugging-azure.md)를 참조하세요.
 
-- Azure Service Fabric의 원격 디버그 ASP.NET [원격 Service Fabric 응용 프로그램 디버그](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application) 를 참조 하세요.
+- Azure Service Fabric에서 ASP.NET을 원격 디버그하려면 [원격 Service Fabric 애플리케이션 디버그](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

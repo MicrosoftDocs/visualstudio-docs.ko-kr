@@ -1,5 +1,5 @@
 ---
-title: Windows 서비스 디버깅 준비 | Microsoft Docs
+title: Windows 서비스 디버그 준비 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3161f6d2c328e8e33dd82ed206aa8aa20e654cc9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738082"
 ---
-# <a name="debugging-preparation-windows-services"></a>디버깅 준비: Windows 서비스
+# <a name="debugging-preparation-windows-services"></a>디버깅 준비 중: Windows 서비스
 Windows 서비스는 Microsoft Windows에서 백그라운드로 실행되는 프로그램입니다. 예를 들어, 컴퓨터의 시간을 업데이트하는 Windows 시간 서비스와 텔넷 서비스가 Windows 서비스에 포함됩니다. Windows 서비스는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 내에서 실행할 수 없고 서비스 제어 관리자의 컨텍스트 내에서 실행해야 합니다. 자세한 내용은 [Windows 서비스 만들기](/dotnet/framework/windows-services/how-to-create-windows-services), [Windows 서비스 애플리케이션 디버깅](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) 및 [Windows 서비스 애플리케이션](/dotnet/framework/windows-services/index)을 참조하세요.
 
 ## <a name="see-also"></a>참조

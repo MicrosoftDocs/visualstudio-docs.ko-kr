@@ -1,5 +1,5 @@
 ---
-title: 관리 되는 개체의 사용자 지정 뷰 만들기 | Microsoft Docs
+title: 관리 개체의 사용자 지정 뷰 만들기 | Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -25,30 +25,30 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188642"
 ---
-# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>관리 되는 개체의 사용자 지정C#뷰 만들기 ( F#, C++Visual Basic,,/cli)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>관리 개체의 사용자 지정 뷰 만들기(C#, Visual Basic, F#, C++/CLI)
 Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방식을 사용자 지정할 수 있습니다.
 
 ## <a name="attributes"></a>특성
 
-에서 C#, F#, 및 C++ Visual Basic (C++/cli 코드만 해당) <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> 및 <xref:System.Diagnostics.DebuggerBrowsableAttribute>을 사용 하 여 사용자 지정 데이터에 대 한 확장을 추가할 수 있습니다.
+C#, Visual Basic, F# 및 C++(C++/CLI 코드만 해당)에서 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> 및 <xref:System.Diagnostics.DebuggerBrowsableAttribute>를 사용하여 사용자 지정 데이터에 대한 확장을 추가할 수 있습니다.
 
-.NET Framework 2.0 코드에서 Visual Basic는 DebuggerBrowsable 특성을 지원 하지 않습니다. 최신 버전의 .NET에서는 이러한 제한 사항이 제거 되었습니다.
+.NET Framework 2.0 코드에서 Visual Basic은 DebuggerBrowsable 특성을 지원하지 않습니다. 최신 버전의 .NET에서는 이러한 제한 사항이 제거되었습니다.
 
 ## <a name="visualizers"></a>시각화 도우미
 
-시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](create-custom-visualizers-of-data.md)을 참조 하세요.
+시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](create-custom-visualizers-of-data.md)을 참조하세요.
 
 > [!NOTE]
-> 코드의 경우 [디버거에서 개체의 C++ 사용자 지정 뷰 만들기](create-custom-views-of-native-objects.md)에 설명 된 대로 Natvis 프레임 워크를 사용 하 여 사용자 지정 데이터 형식 확장을 추가할 수 있습니다. C++
+> C++ 코드의 경우 [디버거에서 C++ 개체의 사용자 지정 뷰 만들기](create-custom-views-of-native-objects.md)에 설명된 대로 Natvis 프레임워크를 사용하여 사용자 지정 데이터 형식 확장을 추가할 수 있습니다.
 
 ## <a name="see-also"></a>참조
 
-- [DebuggerDisplay 특성을 사용 하 여 표시할 내용을 디버거에 알립니다.](../debugger/using-the-debuggerdisplay-attribute.md)
-- [DebuggerTypeProxy 특성을 사용 하 여 표시할 형식을 디버거에 알립니다.](../debugger/using-debuggertypeproxy-attribute.md)
+- [DebuggerDisplay 특성을 사용하여 디버거에 표시할 내용 지시](../debugger/using-the-debuggerdisplay-attribute.md)
+- [DebuggerTypeProxy 특성을 사용하여 디버거에 표시할 내용 지시](../debugger/using-debuggertypeproxy-attribute.md)
 - [조사식 및 간략한 조사식 창](../debugger/watch-and-quickwatch-windows.md)
 - [디버거 표시 특성을 사용하여 디버깅 향상](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

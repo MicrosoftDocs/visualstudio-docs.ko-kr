@@ -1,5 +1,5 @@
 ---
-title: 지점/쌍선형/trilinear/anisotropic 텍스처 필터링 변형
+title: 점, 쌍선형, 3중 선형 및 이방성 질감 필터 변형
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
 ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/28/2019
 ms.locfileid: "66262928"

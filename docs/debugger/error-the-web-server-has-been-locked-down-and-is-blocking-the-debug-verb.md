@@ -1,5 +1,5 @@
 ---
-title: '오류: 웹 서버가 잠겨 있어 디버그 동사를 차단 하 고 있습니다. | Microsoft Docs'
+title: '오류: 웹 서버가 잠겨 있어 DEBUG 동사를 차단함 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9564f077a5379f44d2beb4d7851453dd6b35fa48
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736949"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>오류: 웹 서버가 잠겨 있어 DEBUG 동사를 차단함
 IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있기 때문에 웹 애플리케이션 또는 XML Web services를 한 단계씩 실행하지 못했습니다. 이 상태가 되면 IIS에서 DEBUG 동사를 받을 수 없습니다.
 
  URLScan은 IIS 잠금 도구와 함께 작동하는 보안 도구로서, IIS 웹 사이트 관리자는 이 도구를 사용하여 필요하지 않은 기능을 끄고 서버에서 처리하는 HTTP 요청 형식을 제한할 수 있습니다. URLScan 보안 도구를 사용하면 특정 HTTP 요청을 차단하여 위험한 요청이 서버로 들어와 서버가 손상되는 것을 방지할 수 있습니다.
@@ -50,4 +50,4 @@ IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있
 
 ## <a name="see-also"></a>참조
 - [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [오류: 요청한 리소스를 웹 서버에서 찾지 못했습니다.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+- ‘오류:[ 요청한 리소스를 웹 서버에서 찾지 못했습니다.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 761845044bae9b35694bef53cae36dd64f3dd6ba
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729576"
@@ -31,9 +31,9 @@ ms.locfileid: "72729576"
 # <a name="select-code-type-dialog-box"></a>코드 형식 선택 대화 상자
 이 대화 상자를 열려면 **프로세스에 연결** 대화 상자를 열고 **선택** 단추를 클릭합니다.
 
- **디버그할 코드 형식을 자동으로 결정** 실행 중인 코드의 종류에 따라 적절 한 디버거가 선택 됩니다.
+ **디버그할 코드 형식을 자동으로 결정** - 실행되고 있는 코드의 종류에 따라 적절한 디버거가 선택됩니다.
 
- **다음 코드 형식 디버깅:** 제공 된 목록에서 디버깅 하려는 코드의 형식을 선택 합니다.
+ **다음 코드 형식 디버깅:** 제공된 목록에서 디버깅할 코드 형식을 선택합니다.
 
 ## <a name="see-also"></a>참조
 - [디버거 보안](../debugger/debugger-security.md)

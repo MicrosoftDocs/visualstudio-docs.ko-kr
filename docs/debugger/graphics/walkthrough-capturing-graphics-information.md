@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734735"
@@ -51,12 +51,12 @@ ms.locfileid: "72734735"
 
    앱에 포커스가 있는 상태에서 **Print Screen**을 누릅니다.
 
-  프레임에 대한 정보를 캡처할 때마다 그래픽 진단 기능은 Direct3D 이벤트와 연결된 상태를 기록하고 그래픽 로그에 해당 데이터를 추가합니다. 각 그래픽 진단 세션에 대해 새 그래픽 로그가 생성됩니다. 그래픽 로그에 대 한 자세한 내용은 [개요](overview-of-visual-studio-graphics-diagnostics.md)를 참조 하세요.
+  프레임에 대한 정보를 캡처할 때마다 그래픽 진단 기능은 Direct3D 이벤트와 연결된 상태를 기록하고 그래픽 로그에 해당 데이터를 추가합니다. 각 그래픽 진단 세션에 대해 새 그래픽 로그가 생성됩니다. 그래픽 로그에 관한 자세한 내용은 [개요](overview-of-visual-studio-graphics-diagnostics.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
  이 연습에서는 그래픽 정보를 수동으로 캡처하는 방법을 보여 주었습니다. 다음 단계로 아래 옵션을 고려해 보세요.
 
-- 그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. [개요](overview-of-visual-studio-graphics-diagnostics.md)를 참조 하세요.
+- 그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. [개요](overview-of-visual-studio-graphics-diagnostics.md)를 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [Capturing Graphics Information](capturing-graphics-information.md)

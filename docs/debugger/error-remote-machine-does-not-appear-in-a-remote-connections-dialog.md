@@ -1,5 +1,5 @@
 ---
-title: '오류: 원격 컴퓨터가 원격 연결 대화 상자에 표시 되지 않습니다. | Microsoft Docs'
+title: '오류: 원격 머신은 원격 연결 대화 상자에 표시되지 않음 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dd46d2164ccb3cd26831160235b992d699229e2c
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916187"
@@ -22,7 +22,7 @@ ms.locfileid: "75916187"
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>오류: 원격 컴퓨터는 원격 연결 대화 상자에 표시되지 않습니다.
 원격 컴퓨터가 원격 연결 대화 상자에 표시되지 않는 경우 다음과 같은 일반적인 원인을 확인합니다.
 
- 관리형 호환성 모드를 사용하는 경우 Visual Studio 2010 설명서: [원격 디버깅 문제 해결 - Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100))을 확인하세요.
+ 관리형 호환 모드를 사용하는 경우 Visual Studio 2010 설명서: [원격 디버깅 문제 해결 - Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100))을 확인하세요.
 
 ### <a name="common-causes-for-this-error"></a>이 오류의 일반적인 원인
 

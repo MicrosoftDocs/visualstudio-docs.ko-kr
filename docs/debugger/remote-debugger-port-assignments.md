@@ -11,7 +11,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
 ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74239453"
@@ -48,18 +48,18 @@ Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서�
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64비트 운영 체제의 원격 디버거 포트
 ::: moniker range=">=vs-2019"
- 64 비트 버전의 원격 디버거가 시작 되 면 기본적으로 주 포트 (4024)를 사용 합니다.  32 비트 프로세스를 디버그 하는 경우 원격 디버거의 64 비트 버전은 포트 4025에서 원격 디버거의 32 비트 버전을 시작 합니다 (1 씩 증가 하는 주 포트 번호). 32비트 원격 디버거를 실행하는 경우 해당 디버거에서 4024를 사용하며 4025는 사용하지 않습니다.
+ 64비트 버전의 원격 디버거가 시작되면 기본적으로 기본 포트(4024)를 사용합니다.  32비트 프로세스를 디버그하는 경우 64비트 버전의 원격 디버거가 4025 포트(1씩 증가하는 기본 포트 번호)에서 32비트 버전의 원격 디버거를 시작합니다. 32비트 원격 디버거를 실행하는 경우 해당 디버거에서 4024를 사용하며 4025는 사용하지 않습니다.
 ::: moniker-end
 ::: moniker range="vs-2017"
- 64 비트 버전의 원격 디버거가 시작 되 면 기본적으로 주 포트 (4022)를 사용 합니다.  32 비트 프로세스를 디버그 하는 경우 원격 디버거의 64 비트 버전은 포트 4023에서 원격 디버거의 32 비트 버전을 시작 합니다 (1 씩 증가 하는 주 포트 번호). 32비트 원격 디버거를 실행하는 경우 4022를 사용하며 4023은 사용되지 않습니다.
+ 64비트 버전의 원격 디버거가 시작되면 기본적으로 기본 포트(4022)를 사용합니다.  32비트 프로세스를 디버그하는 경우 64비트 버전의 원격 디버거가 4023 포트(1씩 증가하는 기본 포트 번호)에서 32비트 버전의 원격 디버거를 시작합니다. 32비트 원격 디버거를 실행하는 경우 4022를 사용하며 4023은 사용되지 않습니다.
 :::moniker-end
 
- 이 포트는 명령줄에서 구성할 수 있습니다(**Msvsmon /wow64port \<포트 번호>** ).
+ 이 포트는 명령줄 **Msvsmon /wow64port \<포트 번호>** 에서 구성할 수 있습니다.
 
 ## <a name="the-discovery-port"></a>검색 포트
  UDP 3702는 네트워크에서 실행 중인 원격 디버거 인스턴스를 찾는 데 사용됩니다(예: **프로세스에 연결** 대화 상자의 **찾기** 대화 상자). 원격 디버거를 실행하는 컴퓨터를 검색하는 용도로만 사용되므로 대상 컴퓨터의 컴퓨터 이름 또는 IP 주소를 확인하는 다른 방법이 있을 경우 선택 사항입니다. 이는 검색에 사용되는 표준 포트이므로 포트 번호를 구성할 수 없습니다.
 
- 검색을 사용하지 않으려는 경우 검색을 사용하지 않도록 설정하여 명령줄에서 msvsmon을 시작할 수 있습니다(  **Msvsmon /nodiscovery**).
+ 검색을 사용하지 않으려는 경우 검색을 사용하지 않도록 설정하여 명령줄  **Msvsmon /nodiscovery**에서 msvsmon을 시작할 수 있습니다.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Azure의 원격 디버거 포트
  Azure의 원격 디버거에서 사용되는 포트는 다음과 같습니다. 클라우드 서비스의 포트는 개별 VM의 포트에 매핑됩니다. 모든 포트는 TCP입니다.
@@ -71,5 +71,5 @@ Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서�
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarderx86|31401|31399|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
-## <a name="see-also"></a>참고 항목
-- [원격 디버깅](../debugger/remote-debugging.md)
+## <a name="see-also"></a>참조
+- [Remote Debugging](../debugger/remote-debugging.md)

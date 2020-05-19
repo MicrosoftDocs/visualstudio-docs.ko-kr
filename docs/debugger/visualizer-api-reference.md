@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187216"
@@ -28,7 +28,7 @@ ms.locfileid: "73187216"
 
 시각화 도우미 API는 Visual Studio 디버거용 시각화 도우미를 작성하려는 사용자를 위해 제공됩니다. 시각화 도우미는 Visual Studio 디버거 사용자 인터페이스의 기능을 확장하는 작은 애플리케이션입니다. 시각화 도우미에서는 설계 대상으로 선택된 특정 형식의 데이터 개체를 표시하고 선택에 따라서는 이 개체를 편집할 수도 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>
 

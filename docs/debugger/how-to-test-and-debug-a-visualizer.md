@@ -19,15 +19,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a0d2fdcd0685b83f63e9354b96146c1c869b355
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732402"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>방법: 시각화 도우미 테스트 및 디버깅
+# <a name="how-to-test-and-debug-a-visualizer"></a>방법: 시각화 도우미 테스트 및 디버그
 시각화 도우미를 작성한 후에는 이를 디버깅하고 테스트해야 합니다.
 
-시각화 도우미를 테스트하는 한 가지 방법으로 이를 Visual Studio에 설치하고 디버거 창에서 호출할 수 있습니다. [방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)를 참조 하세요. 이렇게 하는 경우 Visual Studio의 두 번째 인스턴스를 사용 하 여 디버거의 첫 번째 인스턴스에서 실행 되는 시각화 도우미를 연결 하 고 디버깅 해야 합니다.
+시각화 도우미를 테스트하는 한 가지 방법으로 이를 Visual Studio에 설치하고 디버거 창에서 호출할 수 있습니다. ([방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)를 참조하세요.) 이 경우 디버거의 첫 번째 인스턴스에서 실행되는 시각화 도우미에 연결하고 디버그하기 위해 Visual Studio의 두 번째 인스턴스를 사용해야 합니다.
 
 시각화 도우미를 디버깅하기 위한 더 쉬운 방법으로는 테스트 드라이버에서 시각화 도우미를 실행하는 방법이 있습니다. 시각화 도우미 API를 사용하면 그와 같은 드라이버를 쉽게 만들 수 있습니다. 이 드라이버를 *시각화 도우미 개발 호스트*라고 합니다.
 
@@ -51,7 +51,7 @@ ms.locfileid: "72732402"
     DebuggerSide.TestShowVisualizer(myString);
     ```
 
-    자세한 예제는 [연습:에서 C#시각화 도우미 작성 ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)을 참조 하세요.
+    자세한 예제는 [연습: C#에서 시각화 도우미 작성](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [연습: C#에서 시각화 도우미 작성](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)

@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735295"
@@ -22,7 +22,7 @@ Visual Studio Graphics Analyzer의 HLSL 디버거를 사용하면 앱의 실제 
 
  이것은 HLSL 디버거입니다.
 
- ![조사식 및 호출 스택 창을 사용 하 여 HLSL를 디버깅 합니다.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
+ ![조사식 및 호출 스택 창을 사용하는 디버깅 HLSL입니다.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>HLSL 디버거 이해
  HLSL 디버거는 셰이더 코드에서 발생하는 문제를 이해하는 데 도움을 줄 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서의 HLSL 코드 디버깅은 C++, C# 또는 Visual Basic과 같은 다른 언어로 작성된 코드의 디버깅과 유사합니다. 다른 언어를 디버깅할 때와 같이 변수 내용을 검사하고 중단점을 설정하고 코드를 단계별로 실행하고 호출 스택을 탐색할 수 있습니다.
@@ -39,7 +39,7 @@ Visual Studio Graphics Analyzer의 HLSL 디버거를 사용하면 앱의 실제 
 
   그럼에도 불구하고 HLSL 디버거는 가능한 다른 방법 대비 더욱 우수한 유사 CPU 디버깅 환경을 제공합니다.
 
-## <a name="hlsl-shader-edit--apply"></a>HLSL 셰이더 편집 & 적용
+## <a name="hlsl-shader-edit--apply"></a>HLSL 셰이더 편집 및 적용
  HLSL 셰이더 디버거는 CPU 디버거와 같은 방식으로 편집하며 계속하기 기능을 지원하지 않습니다. GPU 실행 모델에서는 셰이더 상태를 실행 취소할 수 없기 때문입니다. 대신 HLSL 디버거는 편집 및 적용을 지원합니다. 이 기능을 통해 HLSL 소스 파일을 편집한 다음, **적용**을 선택하여 프레임을 다시 생성해 적용된 변경 내용을 확인할 수 있습니다. 프로젝트의 원본 HLSL 소스 파일 무결성을 보존하기 위해 수정된 셰이더 코드는 별도의 파일에 저장됩니다. 변경 내용이 올바른 경우 **복사 위치...** 를 선택하여 변경 내용을 프로젝트에 복사할 수 있습니다. 이 기능을 사용하면 오류가 포함된 셰이더 코드를 빠르게 반복하여 비용이 많이 드는 다시 빌드 및 캡처 단계를 HLSL 디버깅 워크플로에서 제거할 수 있습니다.
 
 ## <a name="hlsl-disassembly"></a>HLSL 디스어셈블리
@@ -70,7 +70,7 @@ Visual Studio Graphics Analyzer의 HLSL 디버거를 사용하면 앱의 실제 
    > [!NOTE]
    > 이러한 HLSL 디버거로의 진입점은 선택한 그리기 호출, 기본 형식 및 선택한 픽셀에 해당하는 픽셀 셰이더 스레드, 또는 그리기 호출, 기본 형식 및 선택한 픽셀로 결과가 보간되는 꼭짓점 셰이더 스레드를 디버깅합니다. 꼭짓점 셰이더의 경우, 꼭지점 셰이더 정보를 확장하여 특정 꼭짓점을 가리키도록 진입점을 더욱 구체화할 수 있습니다.
 
-   HLSL 디버거를 사용 하 여 셰이더 오류를 디버깅 하는 방법에 대 한 예제는 참고 항목 섹션에서에 연결 된 [예제](graphics-diagnostics-examples.md) 또는 연습을 참조 하세요.
+   HLSL 디버거를 사용하여 셰이더 오류를 디버그하는 방법에 대한 예제를 보려면 [예제](graphics-diagnostics-examples.md) 또는 참고 항목 섹션에 연결된 연습을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [연습: 꼭짓점 음영으로 인해 누락된 개체](walkthrough-missing-objects-due-to-vertex-shading.md)
