@@ -46,8 +46,8 @@ Visual Studio IDE에서 Dotfuscator Community를 설치할 수 있습니다.
 
 1. **검색 상자**(Ctrl+Q)에 `dotfuscator`을 입력합니다. <br/> <br/> ![검색 상자](media/install_in_vs19_12.png) <br/> <br/>
 
-2. 표시되는 검색 결과에서 ‘구성 요소’ 제목 아래에 있는 **PreEmptive Protection - Dotfuscator 설치**를 선택합니다. 
-   * ‘메뉴’ 제목 아래에 **PreEmptive Protection - Dotfuscator Community**가 대신 표시되면 Dotfuscator Community가 이미 설치되어 있습니다.  해당 옵션을 선택하여 [시작][get-started]합니다.
+2. 표시되는 검색 결과에서 ‘구성 요소’ 제목 아래에 있는 **PreEmptive Protection - Dotfuscator 설치**를 선택합니다.
+   * ‘메뉴’ 제목 아래에 **PreEmptive Protection - Dotfuscator Community**가 대신 표시되면 Dotfuscator Community가 이미 설치되어 있습니다. 해당 옵션을 선택하여 [시작][get-started]합니다.
 
 3. Dotfuscator Community를 설치하도록 미리 구성된 Visual Studio 설치 관리자 창이 시작됩니다.
    > [!NOTE]

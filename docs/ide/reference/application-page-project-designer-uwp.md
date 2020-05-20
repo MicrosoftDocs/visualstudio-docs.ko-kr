@@ -38,7 +38,7 @@ ms.locfileid: "77173082"
 
 **어셈블리 정보**&mdash; 이 단추를 선택하면 [어셈블리 정보 대화 상자](../../ide/reference/assembly-information-dialog-box.md)가 표시됩니다.
 
-**패키지 매니페스트**&mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 _솔루션 탐색기_에서 **Package.appxmanifest** 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/msix/package/packaging-uwp-apps#configure-your-project)을 참조하세요.
+**패키지 매니페스트**&mdash; 이 단추를 선택하면 매니페스트 디자이너가 열립니다. 또한 **솔루션 탐색기**에서 _Package.appxmanifest_ 파일을 선택하여 매니페스트 디자이너에 액세스할 수 있습니다. 자세한 내용은 [매니페스트 디자이너를 사용하여 패키지 구성](/windows/msix/package/packaging-uwp-apps#configure-your-project)을 참조하세요.
 
 ## <a name="targeting-section"></a>대상 지정 섹션
 

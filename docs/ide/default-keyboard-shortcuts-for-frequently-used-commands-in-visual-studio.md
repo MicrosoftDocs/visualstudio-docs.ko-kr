@@ -21,7 +21,7 @@ ms.locfileid: "75596725"
 ‘전역’ 컨텍스트는 Visual Studio의 모든 도구 창에서 바로 가기를 적용할 수 있음을 의미합니다. 
 
 > [!NOTE]
-> [옵션](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) 대화 상자를 열고 **환경** 노드를 확장한 다음 **키보드**를 선택하여 모든 명령의 **바로 가기를 확인**할 수 있습니다.
+> **옵션** 대화 상자를 열고 **환경** 노드를 확장한 다음 [키보드](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)를 선택하여 모든 명령의 **바로 가기를 확인**할 수 있습니다.
 
 ## <a name="build"></a>빌드
 

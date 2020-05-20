@@ -43,7 +43,7 @@ Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 
 
 ## <a name="manually-update-an-existing-template"></a>기존 템플릿 수동 업데이트
 
-압축된 **.zip** 파일에 있는 파일을 수정하여 *템플릿 내보내기 마법사*를 사용하지 않고 기존 템플릿을 업데이트할 수 있습니다.
+압축된 *.zip* 파일에 있는 파일을 수정하여 **템플릿 내보내기 마법사**를 사용하지 않고 기존 템플릿을 업데이트할 수 있습니다.
 
 ### <a name="to-manually-update-an-existing-template"></a>기존 템플릿을 수동으로 업데이트하려면
 

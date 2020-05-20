@@ -23,7 +23,7 @@ ms.locfileid: "77557836"
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]은(는) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 설치하지 않고 실행할 수 있는 명령줄 기반 독립 실행형 프로파일러를 제공합니다. 이 경우는 컴퓨터에 설치된 개발 환경이 없거나 설치할 수 없는 경우에 발생합니다. 예를 들어 프로덕션 웹 서버에 개발 환경을 설치하면 안 됩니다.
 
 > [!NOTE]
-> 독립 실행형 프로파일러를 사용하여 ASP.NET 웹 사이트에 대한 성능 데이터를 수집하는 경우 [VSPerfCmd](../profiling/vsperfaspnetcmd.md) 도구보다 [VSPerfASPNetCmd](../profiling/vsperfcmd.md) 선 도구를 권장합니다.
+> 독립 실행형 프로파일러를 사용하여 ASP.NET 웹 사이트에 대한 성능 데이터를 수집하는 경우 [VSPerfCmd](../profiling/vsperfcmd.md) 도구보다 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 선 도구를 권장합니다.
 
 ### <a name="to-install-the-stand-alone-profiler"></a>독립 실행형 프로파일러를 설치하려면
 

@@ -158,7 +158,7 @@ ms.locfileid: "75589645"
 
 7. ASPQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 자동으로 검색되었습니다. 그러나 JScriptQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 검색되지 않습니다.
 
-     **Querystring.aspx**에 추출 규칙을 추가하려면 *확인*을 선택하고, ASPQuery 페이지에 바인딩합니다.
+     *Querystring.aspx*에 추출 규칙을 추가하려면 **확인**을 선택하고, ASPQuery 페이지에 바인딩합니다.
 
      ![검색된 동적 매개 변수 승격](../test/media/web_test_dynamicparameter_promotedialog.png)
 

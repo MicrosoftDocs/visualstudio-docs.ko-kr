@@ -96,7 +96,7 @@ if (performance && performance.mark) {
 2. **에너지 소비** 를 선택한 다음 **시작**을 선택합니다.
 
     > [!NOTE]
-    > **에너지 소비** 프로파일러를 시작하면 **VsEtwCollector.exe** 실행 권한을 요청하는 *사용자 계정 제어* 창이 나타날 수 있습니다. **예**를 선택합니다.
+    > **에너지 소비** 프로파일러를 시작하면 *VsEtwCollector.exe* 실행 권한을 요청하는 **사용자 계정 제어** 창이 나타날 수 있습니다. **예**를 선택합니다.
 
 3. 데이터를 수집하려면 앱을 실행합니다.
 
@@ -150,7 +150,7 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>기타 리소스
 
-- **C#/VB/C++ 및 XAML**의 [연결 상태 및 비용 관리](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 섹션에서는 앱이 네트워크 트래픽 비용을 최소화하는 데 사용할 수 있는 네트워크 연결 정보를 제공하는 Windows API에 대해 설명합니다.
+- [C#/VB/C++ 및 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\))의 **연결 상태 및 비용 관리** 섹션에서는 앱이 네트워크 트래픽 비용을 최소화하는 데 사용할 수 있는 네트워크 연결 정보를 제공하는 Windows API에 대해 설명합니다.
 
    UWP 앱에 대한 Visual Studio 시뮬레이터를 사용하여 네트워크 정보 API의 데이터 연결 속성을 시뮬레이션할 수 있습니다. [시뮬레이터에서 UWP 앱 실행](../debugger/run-windows-store-apps-in-the-simulator.md)을 참조하세요.
 

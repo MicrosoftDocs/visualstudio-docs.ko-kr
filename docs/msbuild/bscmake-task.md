@@ -41,10 +41,10 @@ ms.locfileid: "77634515"
 |매개 변수|Description|
 |---------------|-----------------|
 |**AdditionalOptions**|선택적 **String** 매개 변수입니다.<br /><br /> 명령줄에 지정된 것처럼 옵션 목록입니다. 예: /\<option1> /\<option2> /\<option#>. 이 매개 변수를 사용하여 다른 **BscMake** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.<br /><br /> 자세한 내용은 [BSCMAKE 옵션](/cpp/build/reference/bscmake-options)의 옵션을 참조하세요.|
-|**OutputFile**|선택적 **String** 매개 변수입니다.<br /><br /> 기본 출력 파일 이름을 재정의하는 파일 이름을 지정합니다.<br /><br /> 자세한 내용은 **BSCMAKE 옵션**의 [/o](/cpp/build/reference/bscmake-options) 옵션을 참조하세요.|
-|**PreserveSBR**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 비증분 빌드를 수행합니다. 전체 비증분 빌드는 *.bsc* 파일이 있는지 여부에 관계 없이 발생하고 *.sbr* 파일이 잘리지 않도록 방지합니다.<br /><br /> 자세한 내용은 **BSCMAKE 옵션**의 [/n](/cpp/build/reference/bscmake-options) 옵션을 참조하세요.|
+|**OutputFile**|선택적 **String** 매개 변수입니다.<br /><br /> 기본 출력 파일 이름을 재정의하는 파일 이름을 지정합니다.<br /><br /> 자세한 내용은 [BSCMAKE 옵션](/cpp/build/reference/bscmake-options)의 **/o** 옵션을 참조하세요.|
+|**PreserveSBR**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 비증분 빌드를 수행합니다. 전체 비증분 빌드는 *.bsc* 파일이 있는지 여부에 관계 없이 발생하고 *.sbr* 파일이 잘리지 않도록 방지합니다.<br /><br /> 자세한 내용은 [BSCMAKE 옵션](/cpp/build/reference/bscmake-options)의 **/n** 옵션을 참조하세요.|
 |**Sources**|선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> 작업에서 사용하고 내보낼 수 있는 MSBuild 소스 파일 항목의 배열을 정의합니다.|
-|**SuppressStartupBanner**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.<br /><br /> 자세한 내용은 **BSCMAKE 옵션**의 [/NOLOGO](/cpp/build/reference/bscmake-options) 옵션을 참조하세요.|
+|**SuppressStartupBanner**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.<br /><br /> 자세한 내용은 [BSCMAKE 옵션](/cpp/build/reference/bscmake-options)의 **/NOLOGO** 옵션을 참조하세요.|
 |**TrackerLogDirectory**|선택적 **String** 매개 변수입니다.<br /><br /> 추적기 로그용 디렉터리를 지정합니다.|
 
 ## <a name="see-also"></a>참고 항목

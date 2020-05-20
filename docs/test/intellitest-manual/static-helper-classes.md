@@ -32,7 +32,7 @@ IntelliTest는 [매개 변수가 있는 단위 테스트](test-generation.md#par
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-가정(예: [매개 변수가 있는 단위 테스트](test-generation.md#precondition)의 [사전 조건](test-generation.md#parameterized-unit-testing))을 표현하는 데 사용되는 정적 클래스입니다. 이 클래스의 메서드는 부적절한 테스트 입력을 필터링하는 데 사용할 수 있습니다.
+가정(예: [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)의 [사전 조건](test-generation.md#precondition))을 표현하는 데 사용되는 정적 클래스입니다. 이 클래스의 메서드는 부적절한 테스트 입력을 필터링하는 데 사용할 수 있습니다.
 
 가정된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssumeFailedException**이 throw됩니다. 이로 인해 테스트가 자동으로 무시됩니다.
 
@@ -64,7 +64,7 @@ public void TestSomething(int i, int j) {
 <a name="pexassert"></a>
 ## <a name="pexassert"></a>PexAssert
 
-어설션(예: [매개 변수가 있는 단위 테스트](test-generation.md#postcondition)의 [사후 조건](test-generation.md#parameterized-unit-testing))을 표현하는 데 사용되는 정적 클래스입니다.
+어설션(예: [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)의 [사후 조건](test-generation.md#postcondition))을 표현하는 데 사용되는 정적 클래스입니다.
 
 어설션된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssertFailedException**이 throw되어 테스트가 실패합니다.
 

@@ -20,7 +20,7 @@ ms.locfileid: "74538569"
 
 ## <a name="home-page"></a>홈 페이지
 
-[팀 탐색기](../connect-team-project.md)에서 **프로젝트에 연결**한 후 **프로젝트** 섹션에서 다음 링크를 사용할 수 있습니다.
+**팀 탐색기**에서 [프로젝트에 연결](../connect-team-project.md)한 후 **프로젝트** 섹션에서 다음 링크를 사용할 수 있습니다.
 
 - [리포지토리 복제](/azure/devops/repos/git/clone)
 - [웹 포털](/azure/devops/project/navigation/index)

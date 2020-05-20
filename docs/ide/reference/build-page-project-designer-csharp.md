@@ -135,7 +135,7 @@ ms.locfileid: "76923261"
 
 **COM interop 등록**
 
-관리되는 애플리케이션이 COM 개체가 관리되는 애플리케이션과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 애플리케이션에 대한 [프로젝트 디자이너](../../ide/reference/application-page-project-designer-visual-basic.md)의 **애플리케이션 페이지**에서 **출력 형식** 속성을 **클래스 라이브러리**로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 애플리케이션에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
+관리되는 애플리케이션이 COM 개체가 관리되는 애플리케이션과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 애플리케이션에 대한 **프로젝트 디자이너**의 [애플리케이션 페이지](../../ide/reference/application-page-project-designer-visual-basic.md)에서 **출력 형식** 속성을 **클래스 라이브러리**로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 애플리케이션에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
 
 **serialization 어셈블리 생성**
 

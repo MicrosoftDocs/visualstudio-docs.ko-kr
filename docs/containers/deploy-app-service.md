@@ -29,7 +29,7 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
 - "ASP.NET 및 웹 개발" 워크로드가 포함된 최신 버전의 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)을 설치합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [ASP.NET 및 웹 개발](https://visualstudio.microsoft.com/downloads) 워크로드가 있는 *Visual Studio 2019*
+- *ASP.NET 및 웹 개발* 워크로드가 있는 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 ::: moniker-end
 - [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) 설치
 

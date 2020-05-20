@@ -128,7 +128,7 @@ ms.locfileid: "75565411"
 
      ![RadioButtonList1 값에 ColorName 필드 바인딩](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. *솔루션 탐색기*에서 **Local.testsettings** 파일을 열고, **데이터 소스 행마다 한 번씩 실행** 옵션을 선택합니다.
+2. **솔루션 탐색기**에서 *Local.testsettings* 파일을 열고, **데이터 소스 행마다 한 번씩 실행** 옵션을 선택합니다.
 
      ![테스트 설정 파일 편집](../test/media/web_test_databinding_sql_testsettings.png)
 

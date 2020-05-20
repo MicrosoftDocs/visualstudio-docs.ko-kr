@@ -124,7 +124,7 @@ IntelliTest는 다양한 매개 변수를 사용하여 [매개 변수가 있는 
 매개 변수가 있는 단위 테스트:
 
 * 인스턴스 메서드여야 합니다.
-* [폭포수형 설정](input-generation.md#visibility)에 따라 생성된 테스트가 배치되는 테스트 클래스에 [표시](settings-waterfall.md)되어야 합니다.
+* [폭포수형 설정](settings-waterfall.md)에 따라 생성된 테스트가 배치되는 테스트 클래스에 [표시](input-generation.md#visibility)되어야 합니다.
 * 제한 없이 매개 변수를 사용할 수 있습니다.
 * 제네릭일 수 있습니다.
 

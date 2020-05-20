@@ -60,6 +60,6 @@ ms.locfileid: "77476896"
   set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
  ```
 
- 다음 VSPerfReport 명령줄은 */SymbolPath* 옵션을 사용하여 **C:\Projects\Symbols** 디렉터리를 검색 경로에 추가합니다.
+ 다음 VSPerfReport 명령줄은 **/SymbolPath** 옵션을 사용하여 *C:\Projects\Symbols* 디렉터리를 검색 경로에 추가합니다.
 
  **VSPerfReport** *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

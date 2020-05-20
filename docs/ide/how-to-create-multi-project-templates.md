@@ -24,9 +24,9 @@ ms.locfileid: "75591088"
 
 또한 다중 프로젝트 템플릿은 단일 프로젝트 템플릿 다르게 작동합니다. 다음과 같은 고유한 특징이 있습니다.
 
-- 다중 프로젝트 템플릿에 있는 개별 프로젝트는 템플릿을 사용하여 새 프로젝트를 만들 때 이름을 할당할 수 없습니다. 대신 **vstemplate** 파일에 있는 **ProjectTemplateLink** 요소의 *ProjectName* 특성을 사용하여 각 프로젝트의 이름을 지정합니다.
+- 다중 프로젝트 템플릿에 있는 개별 프로젝트는 템플릿을 사용하여 새 프로젝트를 만들 때 이름을 할당할 수 없습니다. 대신 *vstemplate* 파일에 있는 **ProjectTemplateLink** 요소의 **ProjectName** 특성을 사용하여 각 프로젝트의 이름을 지정합니다.
 
-- 다중 프로젝트 템플릿에는 다른 언어로 작성된 프로젝트가 포함될 수 있지만 전체 템플릿 자체는 하나의 범주에만 배치될 수 있습니다. **vstemplate** 파일에 있는 *ProjectType* 요소에서 템플릿 범주를 지정합니다.
+- 다중 프로젝트 템플릿에는 다른 언어로 작성된 프로젝트가 포함될 수 있지만 전체 템플릿 자체는 하나의 범주에만 배치될 수 있습니다. *vstemplate* 파일에 있는 **ProjectType** 요소에서 템플릿 범주를 지정합니다.
 
 다중 프로젝트 템플릿에는 *.zip* 파일로 압축된 다음, 항목이 포함되어야 합니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "75591088"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- **TemplateContent** 요소에는 포함된 프로젝트의 **vstemplate** 파일에 대한 경로를 정의하는 **ProjectTemplateLink** 요소가 하나 이상 있는 *ProjectCollection* 요소가 포함됩니다. 다음은 그 예입니다.
+- **TemplateContent** 요소에는 포함된 프로젝트의 *vstemplate* 파일에 대한 경로를 정의하는 **ProjectTemplateLink** 요소가 하나 이상 있는 **ProjectCollection** 요소가 포함됩니다. 다음은 그 예입니다.
 
     ```xml
     <TemplateContent>

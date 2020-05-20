@@ -32,7 +32,7 @@ ms.locfileid: "77630784"
 소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(*xsd.exe*)를 래핑합니다.
 
 > [!NOTE]
-> Visual Studio 2017부터 *xsd.exe*에 대한 C++ 프로젝트 지원이 사용되지 않습니다. **CppCodeProvider.dll**을 수동으로 GAC에 추가하여 *Microsoft.VisualC.CppCodeProvider* API를 계속 사용할 수 있습니다.
+> Visual Studio 2017부터 *xsd.exe*에 대한 C++ 프로젝트 지원이 사용되지 않습니다. *CppCodeProvider.dll*을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다.
 
 ## <a name="parameters"></a>매개 변수
 

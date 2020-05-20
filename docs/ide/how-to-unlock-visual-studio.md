@@ -20,7 +20,7 @@ ms.locfileid: "77027574"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>평가판 버전 확장 또는 라이선스 업데이트
 
-[Visual Studio Professional 또는 Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/)의 무료 평가판을 30일 동안 평가할 수 있습니다. 그리고 로그인하면 평가 기간을 90일로 연장할 수 있습니다. (Visual Studio Community는 평가 기간 없이 무료로 제공됩니다. 그러나 [라이선스를 최신](signing-in-to-visual-studio.md)으로 유지하려면 정기적으로 [로그인](#update-a-stale-license)해야 합니다.)
+[Visual Studio Professional 또는 Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/)의 무료 평가판을 30일 동안 평가할 수 있습니다. 그리고 로그인하면 평가 기간을 90일로 연장할 수 있습니다. (Visual Studio Community는 평가 기간 없이 무료로 제공됩니다. 그러나 [라이선스를 최신](#update-a-stale-license)으로 유지하려면 정기적으로 [로그인](signing-in-to-visual-studio.md)해야 합니다.)
 
 평가 기간이 종료한 후 Visual Studio를 계속 사용하려면 [온라인 구독](#use-an-online-subscription) 또는 [제품 키](#enter-a-product-key)를 사용하여 잠금을 해제합니다.
 

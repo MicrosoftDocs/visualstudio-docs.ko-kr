@@ -65,7 +65,7 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
 ![Option Enter 컨텍스트 항목](media/refactoring-image2a.png)
 
-이러한 옵션을 사용하도록 설정하려면 *Mac용 Visual Studio > 기본 설정 > 텍스트 편집기 > 소스 분석*에서 **열린 파일의 소스 분석 사용**을 선택해야 합니다.
+이러한 옵션을 사용하도록 설정하려면 **Mac용 Visual Studio > 기본 설정 > 텍스트 편집기 > 소스 분석**에서 *열린 파일의 소스 분석 사용*을 선택해야 합니다.
 
 ![소스 분석을 사용하도록 설정](media/refactoring-options.png)
 

@@ -65,7 +65,7 @@ Visual Studio 2017 이상에서는 Google Test가 **C++를 통한 데스크톱 �
 
 ## <a name="write-and-run-tests"></a>테스트 작성 및 실행
 
-이제 Google Test를 작성하고 실행할 준비가 되었습니다. 테스트 매크로에 대한 자세한 내용은 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. [테스트 탐색기](run-unit-tests-with-test-explorer.md)를 사용한 테스트 검색, 실행 및 그룹화에 대한 내용은 **테스트 탐색기를 사용하여 단위 테스트 실행**을 참조하세요.
+이제 Google Test를 작성하고 실행할 준비가 되었습니다. 테스트 매크로에 대한 자세한 내용은 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. **테스트 탐색기**를 사용한 테스트 검색, 실행 및 그룹화에 대한 내용은 [테스트 탐색기를 사용하여 단위 테스트 실행](run-unit-tests-with-test-explorer.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

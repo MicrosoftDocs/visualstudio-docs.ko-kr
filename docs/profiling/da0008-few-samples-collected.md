@@ -38,4 +38,4 @@ ms.locfileid: "74779443"
  샘플링 방법을 사용할 경우 데이터가 실제 프로그램 동작을 나타내는지 확인하려면 통계적으로 의미 있는 수의 샘플을 수집해야 합니다. 샘플링 오류를 최소화하려면 프로그램 명령 실행 동작의 샘플을 1000개 이상 수집해야 합니다. 충분한 샘플을 수집하지 않으면 프로파일링 데이터를 분석할 때 결과가 잘못될 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 통계적으로 의미 있는 결과를 얻으려면 더 오래 실행되는 애플리케이션을 프로파일링하거나 더 빠른 샘플링 주기를 사용해 보세요. Visual Studio IDE에서 샘플링 주기를 변경하는 방법에 대한 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요. 프로파일링 도구 명령줄을 사용할 때 샘플링 주기를 변경하는 방법에 대한 자세한 내용은 [VSPerfCmd](../profiling/timer.md) 참조에서 [Timer](../profiling/vsperfcmd.md)를 참조하세요.
+ 통계적으로 의미 있는 결과를 얻으려면 더 오래 실행되는 애플리케이션을 프로파일링하거나 더 빠른 샘플링 주기를 사용해 보세요. Visual Studio IDE에서 샘플링 주기를 변경하는 방법에 대한 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요. 프로파일링 도구 명령줄을 사용할 때 샘플링 주기를 변경하는 방법에 대한 자세한 내용은 [VSPerfCmd](../profiling/vsperfcmd.md) 참조에서 [Timer](../profiling/timer.md)를 참조하세요.

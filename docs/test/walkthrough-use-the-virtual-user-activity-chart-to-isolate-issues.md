@@ -38,7 +38,7 @@ ms.locfileid: "78169380"
 
 1. Visual Studio를 엽니다.
 
-2. **LoadTest1.loadtest**가 포함된 *ColorWebApp* 솔루션을 엽니다. 이 부하 테스트는 이 항목의 시작 부분에서 사전 요구 사항 단원에 나열된 세 가지 연습의 단계를 수행하면 나오는 결과입니다.
+2. *LoadTest1.loadtest*가 포함된 **ColorWebApp** 솔루션을 엽니다. 이 부하 테스트는 이 항목의 시작 부분에서 사전 요구 사항 단원에 나열된 세 가지 연습의 단계를 수행하면 나오는 결과입니다.
 
      이 연습의 나머지 단계에서는 ColorWebApp라는 웹 애플리케이션, *ColorWebAppTest.webtest*라는 웹 성능 테스트 및 *LoadTest1.loadtest*라는 부하 테스트가 있다고 가정합니다.
 

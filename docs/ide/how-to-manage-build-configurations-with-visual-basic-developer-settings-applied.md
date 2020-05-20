@@ -27,7 +27,7 @@ ms.locfileid: "76115151"
 
 ## <a name="enable-advanced-build-configurations"></a>고급 빌드 구성 활성화
 
-기본적으로 Visual Basic 개발자 설정은 **프로젝트 디자이너**의 **구성** 및 **플랫폼** 목록과 [구성 관리자](../ide/reference/application-page-project-designer-visual-basic.md) 대화 상자를 여는 옵션을 숨깁니다.
+기본적으로 Visual Basic 개발자 설정은 [프로젝트 디자이너](../ide/reference/application-page-project-designer-visual-basic.md)의 **구성** 및 **플랫폼** 목록과 **구성 관리자** 대화 상자를 여는 옵션을 숨깁니다.
 
 1. **도구** 메뉴에서 **옵션**을 클릭합니다.
 

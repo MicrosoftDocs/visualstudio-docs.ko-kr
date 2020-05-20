@@ -40,7 +40,7 @@ C#, Visual Basic 및 F# 프로젝트에서는 속성이 **프로젝트 디자이
 **프로젝트 디자이너**의 각 속성 페이지에 대한 자세한 내용은 [프로젝트 속성 참조](../ide/reference/project-properties-reference.md)를 참조하세요.
 
 > [!TIP]
-> 솔루션에는 몇 가지 속성이 있으며 프로젝트 항목도 마찬가지입니다. 이러한 속성은 [프로젝트 디자이너](../ide/reference/properties-window.md)가 아니라 **속성 창**에서 액세스합니다.
+> 솔루션에는 몇 가지 속성이 있으며 프로젝트 항목도 마찬가지입니다. 이러한 속성은 **프로젝트 디자이너**가 아니라 [속성 창](../ide/reference/properties-window.md)에서 액세스합니다.
 
 ### <a name="c-and-javascript-projects"></a>C++ 및 JavaScript 프로젝트
 
