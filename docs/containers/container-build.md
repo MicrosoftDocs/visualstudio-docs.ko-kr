@@ -46,7 +46,7 @@ WORKDIR "/src/WebApplication43"
 RUN dotnet build "WebApplication43.csproj" -c Release -o /app
 ```
 
-`build` 스테이지는 base에서 계속되는 것이 아니라 레지스트리의 다른 원본 이미지(`sdk` 대신 `aspnet`)에서 시작되는 것을 확인할 수 있습니다.  `sdk` 이미지에는 모든 빌드 도구가 포함되어 있으므로, 런타임 구성 요소만 포함하는 aspnet 이미지보다 훨씬 더 큽니다. Dockerfile의 나머지 부분을 살펴보면 개별 이미지를 사용해야 하는 이유가 명확해집니다.
+`build` 스테이지는 base에서 계속되는 것이 아니라 레지스트리의 다른 원본 이미지(`aspnet` 대신 `sdk`)에서 시작되는 것을 확인할 수 있습니다.  `sdk` 이미지에는 모든 빌드 도구가 포함되어 있으므로, 런타임 구성 요소만 포함하는 aspnet 이미지보다 훨씬 더 큽니다. Dockerfile의 나머지 부분을 살펴보면 개별 이미지를 사용해야 하는 이유가 명확해집니다.
 
 ```
 FROM build AS publish
@@ -82,7 +82,7 @@ Visual Studio에서 만든 .NET Framework 프로젝트용(및 Visual Studio 2017
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Visual Studio IDE에서 솔루션을 빌드할 때 **출력** 창에 표시되는 것과 유사한 출력이 표시됩니다. Visual Studio에서 다단계 빌드 최적화 기능을 사용하는 경우 `/p:Configuration=Release`디버그**구성을 빌드할 때 결과가 예상과 다를 수 있으므로 항상**를 사용합니다. [디버깅](#debugging)을 참조하세요.
+Visual Studio IDE에서 솔루션을 빌드할 때 **출력** 창에 표시되는 것과 유사한 출력이 표시됩니다. Visual Studio에서 다단계 빌드 최적화 기능을 사용하는 경우 **디버그** 구성을 빌드할 때 결과가 예상과 다를 수 있으므로 항상 `/p:Configuration=Release`를 사용합니다. [디버깅](#debugging)을 참조하세요.
 
 Docker Compose 프로젝트를 사용하는 경우에는 다음 명령을 사용하여 이미지를 빌드합니다.
 
@@ -148,7 +148,7 @@ ASP.NET Core는 *Https* 폴더 아래에서 어셈블리 이름과 일치하는 
 
 **디버그** 구성에서 빌드할 때, Visual Studio에서 컨테이너화된 프로젝트에 대한 빌드 프로세스의 성능 향상을 지원하는 여러 가지 최적화 기능이 있습니다. 컨테이너화된 앱의 빌드 프로세스는 Dockerfile에 설명된 단계만큼 간단하게 진행되지 않습니다. 컨테이너에서 빌드하는 경우 로컬 컴퓨터에서 빌드하는 것보다 훨씬 더 느립니다.  따라서 **디버그** 구성으로 빌드하는 경우, Visual Studio는 실제로 로컬 컴퓨터에서 프로젝트를 빌드한 다음, 볼륨 탑재를 사용하여 출력 폴더를 컨테이너에 공유합니다. 이 최적화 기능을 사용하는 빌드를 ‘고속’ 모드 빌드라고 합니다. 
 
-**고속** 모드에서 Visual Studio는 `docker build` 스테이지만 빌드하도록 Docker에 지시하는 인수를 사용하여 `base`를 호출합니다.  Visual Studio는 Dockerfile의 내용에 관계없이 프로세스의 나머지 부분을 처리합니다. 따라서 컨테이너 환경을 사용자 지정하거나 추가 종속성을 설치하기 위해 Dockerfile을 수정하는 경우, 수정 내용을 첫 번째 스테이지에 배치해야 합니다.  Dockerfile의 `build`, `publish` 또는 `final` 스테이지에 배치된 사용자 지정 단계는 모두 실행되지 않습니다.
+**고속** 모드에서 Visual Studio는 `base` 스테이지만 빌드하도록 Docker에 지시하는 인수를 사용하여 `docker build`를 호출합니다.  Visual Studio는 Dockerfile의 내용에 관계없이 프로세스의 나머지 부분을 처리합니다. 따라서 컨테이너 환경을 사용자 지정하거나 추가 종속성을 설치하기 위해 Dockerfile을 수정하는 경우, 수정 내용을 첫 번째 스테이지에 배치해야 합니다.  Dockerfile의 `build`, `publish` 또는 `final` 스테이지에 배치된 사용자 지정 단계는 모두 실행되지 않습니다.
 
 이 성능 최적화 기능은 **디버그** 구성으로 빌드하는 경우에만 수행됩니다. **릴리스** 구성에서는 Dockerfile에 지정된 대로 컨테이너에서 빌드가 수행됩니다.
 

@@ -33,7 +33,7 @@ Mac용 Visual Studio Tools for Unity의 주요 기능은 다음과 같습니다.
 
 ### <a name="intellisense-for-unity-messages"></a>Unity 메시지에 대한 IntelliSense
 
-IntelliSense를 사용하면 [와 같은 ](using-vsmac-tools-unity.md#intellisense-for-unity-messages)Unity 메시지`OnCollisionEnter`와 매개 변수를 빠르고 쉽게 구현할 수 있습니다.
+IntelliSense를 사용하면 `OnCollisionEnter`와 같은 [Unity 메시지](using-vsmac-tools-unity.md#intellisense-for-unity-messages)와 매개 변수를 빠르고 쉽게 구현할 수 있습니다.
 
 ### <a name="superior-debugging"></a>탁월한 디버깅
 

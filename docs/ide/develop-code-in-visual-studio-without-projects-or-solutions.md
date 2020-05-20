@@ -87,7 +87,7 @@ MSBuild 기반 코드베이스에는 **시작** 단추의 드롭다운 목록에
 
 ### <a name="codebases-that-use-custom-build-tools"></a>사용자 지정 빌드 도구를 사용하는 코드베이스
 
-코드베이스에서 사용자 지정 빌드 도구를 사용하는 경우 *.json* 파일에 정의된 ‘빌드 작업’을 사용하여 코드 빌드 방법을 Visual Studio에 알려야 합니다.  자세한 내용은 [빌드 및 디버그 작업 사용자 지정](../ide/customize-build-and-debug-tasks-in-visual-studio.md)을 참조하세요.
+코드베이스에서 사용자 지정 빌드 도구를 사용하는 경우 *.json* 파일에 정의된 ‘빌드 작업’을 사용하여 코드 빌드 방법을 Visual Studio에 알려야 합니다. 자세한 내용은 [빌드 및 디버그 작업 사용자 지정](../ide/customize-build-and-debug-tasks-in-visual-studio.md)을 참조하세요.
 
 ### <a name="codebases-that-contain-python-or-javascript-code"></a>Python 또는 JavaScript 코드를 포함하는 코드베이스
 

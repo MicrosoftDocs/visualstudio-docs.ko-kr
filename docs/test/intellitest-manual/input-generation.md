@@ -18,11 +18,11 @@ ms.locfileid: "79306994"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>동적 기호 실행을 사용하여 입력 생성
 
-IntelliTest는 프로그램에서 분기 조건을 분석하여 [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)에 대한 입력을 생성합니다. 테스트 입력은 입력이 프로그램의 새 분기 동작을 트리거할 수 있는지에 따라 선택됩니다. 분석은 증분 프로세스입니다. 정식 테스트 입력 매개 변수 `q: I -> {true, false}`에 대한 조건자 `I`를 구체화합니다. `q`는 IntelliTest가 이미 관찰한 동작의 집합을 나타냅니다. 처음에는 아무것도 관찰되지 않았으므로 `q := false`입니다.
+IntelliTest는 프로그램에서 분기 조건을 분석하여 [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)에 대한 입력을 생성합니다. 테스트 입력은 입력이 프로그램의 새 분기 동작을 트리거할 수 있는지에 따라 선택됩니다. 분석은 증분 프로세스입니다. 정식 테스트 입력 매개 변수 `I`에 대한 조건자 `q: I -> {true, false}`를 구체화합니다. `q`는 IntelliTest가 이미 관찰한 동작의 집합을 나타냅니다. 처음에는 아무것도 관찰되지 않았으므로 `q := false`입니다.
 
 루프 단계는 다음과 같습니다.
 
-1. IntelliTest는 `i`제약 조건 해결기`q(i)=false`를 사용하여 [가 되도록 입력 ](#constraint-solver)를 결정합니다. 생성 시 입력 `i`는 이전에 표시되지 않은 실행 경로를 사용합니다. 처음에는 실행 경로가 검색되지 않았으므로 이것은 `i`가 입력일 수 있음을 의미합니다.
+1. IntelliTest는 [제약 조건 해결기](#constraint-solver)를 사용하여 `q(i)=false`가 되도록 입력 `i`를 결정합니다. 생성 시 입력 `i`는 이전에 표시되지 않은 실행 경로를 사용합니다. 처음에는 실행 경로가 검색되지 않았으므로 이것은 `i`가 입력일 수 있음을 의미합니다.
 
 1. IntelliTest는 선택된 입력 `i`를 사용하여 테스트를 실행하고 테스트 및 테스트 중인 프로그램의 실행을 모니터링합니다.
 

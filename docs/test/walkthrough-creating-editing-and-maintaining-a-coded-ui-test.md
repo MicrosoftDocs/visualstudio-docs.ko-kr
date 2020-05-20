@@ -192,7 +192,7 @@ ms.locfileid: "75592063"
 
 8. Microsoft Visual Studio 대화 상자가 표시됩니다. 메서드가 *UIMap.uitest* 파일에서 *UIMap.cs* 파일로 이동하며 더 이상 코딩된 UI 테스트 편집기를 사용하여 메서드를 편집할 수 없다는 경고가 나타납니다. **예**를 선택합니다.
 
-     테스트 메서드가 *UIMap.uitest* 파일에서 제거되고 더 이상 UI 작업 창에 표시되지 않습니다. 이동한 테스트 파일을 편집하려면 *솔루션 탐색기*에서 **UIMap.cs** 파일을 엽니다.
+     테스트 메서드가 *UIMap.uitest* 파일에서 제거되고 더 이상 UI 작업 창에 표시되지 않습니다. 이동한 테스트 파일을 편집하려면 **솔루션 탐색기**에서 *UIMap.cs* 파일을 엽니다.
 
 9. Visual Studio 도구 모음에서 **저장**을 선택합니다.
 
@@ -314,7 +314,7 @@ ms.locfileid: "75592063"
 
      이제 새로 매핑된 컨트롤을 사용하도록 코딩된 UI 테스트를 수정할 수 있습니다. 이전 프로시저에서 언급했듯이 코딩된 UI 테스트에서 메서드나 속성을 재정의하려는 경우에는 *UIMap.cs* 파일에서 재정의해야 합니다.
 
-12. *UIMap.cs* 파일에서 생성자를 추가하고 `SearchProperties` 값을 가진 `UIStartButton` 속성을 사용하도록 `AutomationID` 속성의 `"buttonA":` 속성을 지정합니다.
+12. *UIMap.cs* 파일에서 생성자를 추가하고 `"buttonA":` 값을 가진 `AutomationID` 속성을 사용하도록 `UIStartButton` 속성의 `SearchProperties` 속성을 지정합니다.
 
     ```csharp
     public UIMap()

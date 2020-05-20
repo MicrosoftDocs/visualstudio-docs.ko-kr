@@ -96,7 +96,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 </Extension>
 ```
 
-CommandItem은 해당 id 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 `/MonoDevelop/Ide/MainMenu/Edit`편집 메뉴**에 표시하는**  확장 지점을 확장합니다. CommandItem의 **id**는 명령 노드의 id인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
+CommandItem은 해당 id 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 **편집 메뉴**에 표시하는 `/MonoDevelop/Ide/MainMenu/Edit` 확장 지점을 확장합니다. CommandItem의 **id**는 명령 노드의 id인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
 
 ### <a name="command-handlers"></a>명령 처리기
 

@@ -182,7 +182,7 @@ class Choice(object):
 
 1. *memory.py*를 새 파일에 복사하여 `Repository` 클래스의 기본 인터페이스를 사용합니다.
 1. 사용 중인 데이터 저장소에 맞게 클래스의 구현을 수정합니다.
-1. 추가된 데이터 저장소의 이름을 인식하고 적절한 모듈을 가져오는 다른 *사례를 추가하려면*factory.py`elif`를 수정합니다.
+1. 추가된 데이터 저장소의 이름을 인식하고 적절한 모듈을 가져오는 다른 `elif` 사례를 추가하려면 *factory.py*를 수정합니다.
 1. *settings.py*를 수정하여 `REPOSITORY_NAME` 환경 변수에서 다른 이름을 인식하고 이에 따라 `REPOSITORY_SETTINGS`를 초기화합니다.
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>samples.json에서 데이터 저장소 시드
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-`repository.add_sample_polls()`에 대한 호출은 선택한 데이터 저장소의 특정 `Repository` 구현 중 하나에서 종료됩니다. 각 구현에서는 `_load_samples_json`models *\_init\_\_.py\_에 있는*  메서드를 호출하여 *models\samples.json* 파일을 메모리에 로드한 다음, 해당 데이터를 반복하여 데이터 저장소에 필요한 `Poll` 및 `Choice` 개체를 만듭니다.
+`repository.add_sample_polls()`에 대한 호출은 선택한 데이터 저장소의 특정 `Repository` 구현 중 하나에서 종료됩니다. 각 구현에서는 *models\_\_init\_\_.py*에 있는 `_load_samples_json` 메서드를 호출하여 *models\samples.json* 파일을 메모리에 로드한 다음, 해당 데이터를 반복하여 데이터 저장소에 필요한 `Poll` 및 `Choice` 개체를 만듭니다.
 
-해당 프로세스가 완료되면 `redirect('/')` 메서드의 `seed` 문이 홈 페이지로 다시 이동합니다. 이제 `repository.get_polls`가 데이터 개체를 반환하므로 *templates\index.html*의 조건부 태그에서 설문 조사가 포함된 테이블을 렌더링합니다.
+해당 프로세스가 완료되면 `seed` 메서드의 `redirect('/')` 문이 홈 페이지로 다시 이동합니다. 이제 `repository.get_polls`가 데이터 개체를 반환하므로 *templates\index.html*의 조건부 태그에서 설문 조사가 포함된 테이블을 렌더링합니다.
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>질문: 새 설문 조사를 앱에 어떻게 추가하나요?
 
-답변: 프로젝트 템플릿을 통해 제공된 앱에는 설문 조사를 추가하거나 편집할 수 있는 기능이 없습니다. *models\samples.json*을 수정하여 새 초기화 데이터를 만들 수는 있지만 그럴 경우 데이터 저장소를 다시 설정해야 합니다 편집 기능을 구현하려면 필요한 `Repository` 및 `Choice` 인스턴스를 만드는 메서드로 `Poll` 클래스 인터페이스를 확장한 다음, 해당 메서드를 사용하는 추가 페이지에 UI를 구현해야 합니다.
+답변: 프로젝트 템플릿을 통해 제공된 앱에는 설문 조사를 추가하거나 편집할 수 있는 기능이 없습니다. *models\samples.json*을 수정하여 새 초기화 데이터를 만들 수는 있지만 그럴 경우 데이터 저장소를 다시 설정해야 합니다 편집 기능을 구현하려면 필요한 `Choice` 및 `Poll` 인스턴스를 만드는 메서드로 `Repository` 클래스 인터페이스를 확장한 다음, 해당 메서드를 사용하는 추가 페이지에 UI를 구현해야 합니다.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>5-4단계: 설문 조사 세부 정보 및 결과 보기 이해
 
@@ -298,7 +298,7 @@ def details(key):
 
 **투표** 단추에 `type="submit"`이 있으므로, 이를 선택하면 `details` 함수로 한 번 더 라우팅된 동일한 URL에 대한 POST 요청이 생성됩니다. 그러나 이번에는 양식 데이터에서 선택 사항을 추출하고 /results/\<choice\>로 리디렉션합니다.
 
-그리고 /results/\<key\> URL이 `results`views.py*의*  함수로 라우팅된 다음, 설문 조사의 `calculate_stats` 메서드를 호출하고, 렌더링을 위해 *templates\results.html*을 적용합니다.
+그리고 /results/\<key\> URL이 *views.py*의 `results` 함수로 라우팅된 다음, 설문 조사의 `calculate_stats` 메서드를 호출하고, 렌더링을 위해 *templates\results.html*을 적용합니다.
 
 ```python
 @app.route('/results/<key>')

@@ -50,7 +50,7 @@ ms.locfileid: "67693082"
     나열된 서비스가 없는 경우 **새로 만들기** 단추(9단계 참조)를 클릭합니다.
 
 7. `MobileServiceClient`에 대한 템플릿 코드를 PCL로 복사합니다. 파일 위치의 인스턴스가 하나만 있는 경우 파일 위치는 중요하지 않습니다.
-  권장하는 방법은 `AzureService`를 사용하고 모든 Azure 상호 작용을 처리하는 `MobileServiceClient` 클래스를 만드는 것입니다.
+  권장하는 방법은 `MobileServiceClient`를 사용하고 모든 Azure 상호 작용을 처리하는 `AzureService` 클래스를 만드는 것입니다.
 
     ![구성 코드를 앱에 복사](media/connected-services-image007.png "구성 코드를 앱에 복사")
 

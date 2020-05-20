@@ -48,7 +48,7 @@ ms.locfileid: "67587021"
 
 노드 **dependentFileProviders**와 그 자식 노드를 중점적으로 살펴보겠습니다. 각 자식 노드는 Visual Studio에서 파일을 중첩하는 데 사용할 수 있는 규칙 형식입니다. 예를 들어 **파일 이름은 동일하지만 확장명이 다름**은 하나의 규칙 형식입니다. 사용 가능한 규칙은 다음과 같습니다.
 
-* **extensionToExtension**: *file.js* 아래에 *file.js*를 중첩하려면 이 규칙 형식을 사용합니다.
+* **extensionToExtension**: *file.ts* 아래에 *file.js*를 중첩하려면 이 규칙 형식을 사용합니다.
 
 * **fileSuffixToExtension**: *file.js* 아래에 *file-vsdoc.js*를 중첩하려면 이 규칙 형식을 사용합니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "67587021"
 
 * **pathSegment**: *jquery.js* 아래에 *jquery.min.js*를 중첩하려면 이 규칙 형식을 사용합니다.
 
-* **allExtensions**: *file.js* 아래에 *file.* *를 중첩하려면 이 규칙 형식을 사용합니다.
+* **allExtensions**: *file.js* 아래에 *file.**를 중첩하려면 이 규칙 형식을 사용합니다.
 
 * **fileToFile**: *.bowerrc* 아래에 *bower.json*을 중첩하려면 이 규칙 형식을 사용합니다.
 

@@ -42,7 +42,7 @@ MSBuild는 현재 [.NET Core SDK](https://www.microsoft.com/net/download/core)�
 
 - [Project 요소](../msbuild/project-element-msbuild.md)는 새 `SDK` 특성을 포함합니다. 이제 `Xmlns` 특성도 선택 사항입니다. `SDK` 특성에 대한 자세한 내용은 [방법: MSBuild 프로젝트 SDK 사용](../msbuild/how-to-use-project-sdk.md), [패키지, 메타패키지, 프레임워크](/dotnet/core/packages) 및 [.NET Core용 csproj 형식에 대한 추가 사항](/dotnet/core/tools/csproj)을 참조하세요.
 - 대상 외부의 [Item 요소](../msbuild/item-element-msbuild.md)는 새 `Update` 특성을 포함합니다. 또한 `Remove` 특성 대한 제한 사항도 제거되었습니다.
-- *Directory.Build.props*는 디렉터리에 있는 프로젝트에 대한 사용자 지정을 제공하는 사용자 지정 파일입니다. *속성을*false`ImportDirectoryBuildTargets`로 설정한 경우가 아니면 **Microsoft.Common.props**에서 이 파일을 자동으로 가져옵니다. *Directory.Build.targets*는 *Microsoft.Common.targets*를 통해 가져옵니다.
+- *Directory.Build.props*는 디렉터리에 있는 프로젝트에 대한 사용자 지정을 제공하는 사용자 지정 파일입니다. `ImportDirectoryBuildTargets` 속성을 **false**로 설정한 경우가 아니면 *Microsoft.Common.props*에서 이 파일을 자동으로 가져옵니다. *Directory.Build.targets*는 *Microsoft.Common.targets*를 통해 가져옵니다.
 - 현재 특성 목록과 충돌하지 않는 이름을 가진 메타데이터를 특성으로 선택적으로 표시할 수 있습니다. 자세한 내용은 [Item 요소](../msbuild/item-element-msbuild.md)를 참조하세요.
 
 ## <a name="new-property-functions"></a>새 속성 함수

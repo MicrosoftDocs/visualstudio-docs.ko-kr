@@ -59,7 +59,7 @@ ms.locfileid: "75593566"
 
  **선택 사항: 자격 증명 공급자**
 
-폼 인증에서만 사용됩니다. 애플리케이션이 <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>`static` 메서드를 호출하고 매개 변수에 대해 빈 문자열이나 <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>을 전달할 때 인증 서비스에서 로그인 대화 상자를 표시하는 데 사용할 `null` 구현을 나타냅니다. 이 상자를 비워 두면 유효한 사용자 이름 및 암호를 <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 메서드에 전달해야 합니다. 자격 증명 공급자를 정규화된 어셈블리 형식 이름을 지정해야 합니다. 자세한 내용은 <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> 및 [어셈블리 이름](/dotnet/framework/app-domains/assembly-names)을 참조하세요. 가장 단순한 형식의 정규화된 어셈블리 형식 이름은 다음 예제와 같습니다. `MyNamespace.MyLoginClass, MyAssembly`
+폼 인증에서만 사용됩니다. 애플리케이션이 `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 메서드를 호출하고 매개 변수에 대해 빈 문자열이나 `null`을 전달할 때 인증 서비스에서 로그인 대화 상자를 표시하는 데 사용할 <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> 구현을 나타냅니다. 이 상자를 비워 두면 유효한 사용자 이름 및 암호를 <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 메서드에 전달해야 합니다. 자격 증명 공급자를 정규화된 어셈블리 형식 이름을 지정해야 합니다. 자세한 내용은 <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> 및 [어셈블리 이름](/dotnet/framework/app-domains/assembly-names)을 참조하세요. 가장 단순한 형식의 정규화된 어셈블리 형식 이름은 다음 예제와 같습니다. `MyNamespace.MyLoginClass, MyAssembly`
 
  **역할 서비스 위치**
 

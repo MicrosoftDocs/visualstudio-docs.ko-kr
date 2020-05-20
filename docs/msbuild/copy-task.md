@@ -38,7 +38,7 @@ ms.locfileid: "77634372"
 
 |매개 변수|Description|
 |---------------|-----------------|
-|`CopiedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 실제로 복사되지 않았지만 이미 최신 상태이고 *가* 이기 때문에 건너뛴 항목을 비롯하여 성공적으로 복사된 항목을 포함합니다.`SkipUnchangedFiles``true`|
+|`CopiedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 실제로 복사되지 않았지만 이미 최신 상태이고 `SkipUnchangedFiles`가 `true`이기 때문에 건너뛴 항목을 비롯하여 성공적으로 복사된 항목을 포함합니다.|
 |`DestinationFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 소스 파일을 복사할 파일의 목록을 지정합니다. 이 목록은 `SourceFiles` 매개 변수에 지정된 목록이 포함된 일대일 매핑이어야 합니다. 즉, `SourceFiles`에 지정된 첫 번째 파일이 `DestinationFiles` 등에 지정된 첫 번째 위치에 복사됩니다.|
 |`DestinationFolder`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 파일을 복사하려는 디렉터리를 지정합니다. 파일이 아닌 디렉터리여야 합니다. 디렉터리가 없는 경우 자동으로 생성됩니다.|
 |`OverwriteReadOnlyFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 파일이 읽기 전용으로 표시된 경우에 파일을 덮어씁니다.|
@@ -72,7 +72,7 @@ ms.locfileid: "77634372"
 
 `DestinationFolder` 또는 `DestinationFiles` 매개 변수 중 하나(둘 다가 아닌)를 지정해야 합니다. 둘 다를 지정하는 경우 작업이 실패하고 오류가 기록됩니다.
 
-이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
+이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 

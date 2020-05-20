@@ -60,7 +60,7 @@ ms.locfileid: "75591049"
 
 ### <a name="user-templates"></a>사용자 템플릿
 
-*.vstemplate* 파일을 포함하는 압축된( *.zip*) 파일을 사용자 템플릿 디렉터리에 추가하는 경우 템플릿이 새 프로젝트 및 새 항목 대화 상자에 나타납니다. 기본적으로 사용자 템플릿은 다음 위치에 있습니다.
+*.vstemplate* 파일을 포함하는 압축된(*.zip*) 파일을 사용자 템플릿 디렉터리에 추가하는 경우 템플릿이 새 프로젝트 및 새 항목 대화 상자에 나타납니다. 기본적으로 사용자 템플릿은 다음 위치에 있습니다.
 
 ::: moniker range="vs-2017"
 
@@ -124,7 +124,7 @@ ms.locfileid: "75591049"
 
 ### <a name="display-templates-in-parent-categories"></a>템플릿을 부모 범주에 표시
 
-`NumberOfParentCategoriesToRollUp`.vstemplate*파일에서* 요소를 사용하여 하위 범주의 템플릿이 부모 범주에 표시되도록 할 수 있습니다. 이 단계는 프로젝트 템플릿과 항목 템플릿에 대해 동일합니다.
+*.vstemplate* 파일에서 `NumberOfParentCategoriesToRollUp` 요소를 사용하여 하위 범주의 템플릿이 부모 범주에 표시되도록 할 수 있습니다. 이 단계는 프로젝트 템플릿과 항목 템플릿에 대해 동일합니다.
 
 1. 템플릿을 포함하는 *.zip* 파일을 찾습니다.
 

@@ -60,9 +60,9 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
     </PropertyGroup>
     ```
 
-1. Visual Studio로 다시 전환하고 파일 변경에 관한 메시지가 표시될 때 **다시 로드**를 선택합니다. 그런 다음, 앞에서 추가한 줄은 PyLint 명령이 포함된 기본 **속성 그룹을 복제할 뿐이므로**Python**메뉴를 다시 확인하여**PyLint 실행`<PythonCommands>`이 여전히 거기에 표시된 유일한 항목인지 확인합니다.
+1. Visual Studio로 다시 전환하고 파일 변경에 관한 메시지가 표시될 때 **다시 로드**를 선택합니다. 그런 다음, 앞에서 추가한 줄은 PyLint 명령이 포함된 기본 `<PythonCommands>` 속성 그룹을 복제할 뿐이므로 **Python** 메뉴를 다시 확인하여 **PyLint 실행**이 여전히 거기에 표시된 유일한 항목인지 확인합니다. 
 
-1. 프로젝트 파일을 포함한 편집기로 전환하고 `<Target>` 뒤에 다음 `<PropertyGroup>` 정의를 추가합니다. 이 아티클의 뒷부분에서 설명하듯이, 이 `Target` 요소는 콘솔 창에서 *python.exe*를 사용하여 시작 파일("StartupFile" 속성에 의해 식별됨)을 실행하는 사용자 지정 명령을 정의합니다. 특성 `ExecuteIn="consolepause"`는 닫기 전에 키를 누르기를 기다리는 콘솔을 사용합니다.
+1. 프로젝트 파일을 포함한 편집기로 전환하고 `<PropertyGroup>` 뒤에 다음 `<Target>` 정의를 추가합니다. 이 아티클의 뒷부분에서 설명하듯이, 이 `Target` 요소는 콘솔 창에서 *python.exe*를 사용하여 시작 파일("StartupFile" 속성에 의해 식별됨)을 실행하는 사용자 지정 명령을 정의합니다. 특성 `ExecuteIn="consolepause"`는 닫기 전에 키를 누르기를 기다리는 콘솔을 사용합니다.
 
     ```xml
     <Target Name="Example_RunStartupFile" Label="Run startup file" Returns="@(Commands)">
@@ -169,7 +169,7 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 C:  1, 0: Missing module docstring (missing-docstring)
 ```
 
-Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **오류 목록** 창에 표시하려면 `WarningRegex`Pylint 실행**명령에 대한** 값은 다음과 같습니다.
+Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **오류 목록** 창에 표시하려면 **Pylint 실행** 명령에 대한 `WarningRegex` 값은 다음과 같습니다.
 
 ```regex
 ^(?<filename>.+?)\((?<line>\d+),(?<column>\d+)\): warning (?<msg_id>.+?): (?<message>.+?)$]]
@@ -240,7 +240,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 
 ### <a name="run-pip-install-with-a-specific-package-pip-target"></a>특정 패키지(pip 대상)를 사용하여 pip 설치 실행
 
-다음 명령은 `pip install my-package`출력**창에서**를 실행합니다. 패키지를 개발하고 설치를 테스트할 때 이런 명령을 사용할 수 있습니다. Target이 `install` 명령(`ExecuteIn="output"`을 사용할 때 가정됨) 대신 패키지 이름을 포함한다는 데 주목하십시오.
+다음 명령은 **출력** 창에서 `pip install my-package`를 실행합니다. 패키지를 개발하고 설치를 테스트할 때 이런 명령을 사용할 수 있습니다. Target이 `install` 명령(`ExecuteIn="output"`을 사용할 때 가정됨) 대신 패키지 이름을 포함한다는 데 주목하십시오.
 
 ```xml
 <PropertyGroup>
@@ -380,7 +380,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 - 필수 `TargetType` 특성이 비어 있거나 인식되지 않는 값을 포함합니다.
 - 필수 `ExecuteIn` 특성이 비어 있거나 인식되지 않는 값을 포함합니다.
 - `ErrorRegex` 또는 `WarningRegex`는 설정 `ExecuteIn="output"` 없이 지정됩니다.
-- 요소에 인식되지 않는 특성이 존재합니다. `Argumnets` 대신 `Arguments`(철자 틀림)를 사용했을 수 있습니다.
+- 요소에 인식되지 않는 특성이 존재합니다. `Arguments` 대신 `Argumnets`(철자 틀림)를 사용했을 수 있습니다.
 
 정의되지 않은 특성을 참조하면 특성 값이 비어 있을 수 있습니다. 예를 들어 토큰 `$(StartupFile)`을 사용하지만 프로젝트에 시작 파일이 정의되어 있지 않으면 토큰이 빈 문자열로 확인됩니다. 그러한 경우 기본값을 정의하는 것이 좋습니다. 예를 들어 Bottle, Flask 및 Django 프로젝트 템플릿에 정의된 **Run server** 및 **Run debug server** 명령은 프로젝트 속성에 서버 시작 파일을 다른 방법으로 지정하지 않은 한 기본적으로 *manage.py*로 지정됩니다.
 

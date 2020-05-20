@@ -43,7 +43,7 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
 
  이 작업이 성공하기 위해 이 어셈블리가 있어야 할 필요는 없습니다. 존재하지 않는 어셈블리의 등록을 취소하려고 하면 작업은 성공하지만 경고가 발생합니다. 이 작업의 해당 작업이 레지스트리에서 어셈블리 등록을 제거하는 것이기 때문입니다. 어셈블리가 없으면 레지스트리에 없으므로 작업은 성공합니다.
 
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 클래스에서 직접 상속하는 <xref:System.MarshalByRefObject> 클래스의 매개 변수도 상속합니다. `MarshalByRefObject` 클래스는 <xref:Microsoft.Build.Utilities.Task> 클래스와 동일한 기능을 제공하지만 해당 애플리케이션 도메인에서 인스턴스화될 수 있습니다.
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:System.MarshalByRefObject> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 클래스의 매개 변수도 상속합니다. `MarshalByRefObject` 클래스는 <xref:Microsoft.Build.Utilities.Task> 클래스와 동일한 기능을 제공하지만 해당 애플리케이션 도메인에서 인스턴스화될 수 있습니다.
 
 ## <a name="example"></a>예제
 

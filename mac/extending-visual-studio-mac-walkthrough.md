@@ -92,7 +92,7 @@ ms.locfileid: "74983294"
 
     ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
-11. `InsertDate` 파일에 `DateInserterCommands.cs` 명령을 새 열거형으로 추가합니다.
+11. `DateInserterCommands.cs` 파일에 `InsertDate` 명령을 새 열거형으로 추가합니다.
 
     ``` cs
     using System;
@@ -112,7 +112,7 @@ ms.locfileid: "74983294"
 
     현재 구현에는 자리 표시자 메서드만 있으므로 메뉴에서 날짜 삽입을 선택해도 적용되지 않습니다.
 
-13. 이 프레임워크는 확장 패키지를 위해 구현되었으며, 날짜 삽입을 구동하는 코드를 작성해야 합니다. 먼저, **의**  메서드를 다음 코드로 바꿔 사용자가 텍스트 파일을 연 경우에만 `Update`날짜 삽입 명령`InsertDateHandler.cs`을 사용할 수 있도록 합니다.
+13. 이 프레임워크는 확장 패키지를 위해 구현되었으며, 날짜 삽입을 구동하는 코드를 작성해야 합니다. 먼저, `InsertDateHandler.cs`의 `Update` 메서드를 다음 코드로 바꿔 사용자가 텍스트 파일을 연 경우에만 **날짜 삽입 명령**을 사용할 수 있도록 합니다.
 
     ```cs
     protected override void Update(CommandInfo info)

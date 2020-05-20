@@ -20,7 +20,7 @@ ms.locfileid: "75585524"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
-이 항목의 섹션에는 C# 및 Visual Basic 코드 모두에 적용할 수 있는 일반적인 **빠른 작업** 중 일부가 나와 있습니다. 이러한 작업은 컴파일러 진단 또는 Visual Studio의 기본 제공 *.NET Compiler Platform 분석기*에 대한 [코드 수정](../code-quality/roslyn-analyzers-overview.md)입니다.
+이 항목의 섹션에는 C# 및 Visual Basic 코드 모두에 적용할 수 있는 일반적인 **빠른 작업** 중 일부가 나와 있습니다. 이러한 작업은 컴파일러 진단 또는 Visual Studio의 기본 제공 [.NET Compiler Platform 분석기](../code-quality/roslyn-analyzers-overview.md)에 대한 *코드 수정*입니다.
 
 ## <a name="actions-that-fix-errors"></a>오류를 수정하는 작업
 
@@ -511,7 +511,7 @@ Dim c = New Customer() With {.Age = 21}
 
 ### <a name="use-collection-initializers"></a>컬렉션 이니셜라이저 사용
 
-이 빠른 작업을 사용하면 클래스의 [ 메서드를 여러 번 호출하는 대신 ](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)컬렉션 이니셜라이저`Add`를 사용할 수 있습니다.
+이 빠른 작업을 사용하면 클래스의 `Add` 메서드를 여러 번 호출하는 대신 [컬렉션 이니셜라이저](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)를 사용할 수 있습니다.
 
 ```csharp
 // Before
@@ -664,7 +664,7 @@ int fibonacci(int n)
 | ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Visual Studio 2017 버전 15.5 이상 |
 
-이 빠른 작업은 가능한 경우 [ 코딩 패턴보다는 ](/dotnet/csharp/pattern-matching)패턴 일치```ReferenceEquals```를 사용하도록 제안합니다.
+이 빠른 작업은 가능한 경우 ```ReferenceEquals``` 코딩 패턴보다는 [패턴 일치](/dotnet/csharp/pattern-matching)를 사용하도록 제안합니다.
 
 ```csharp
 // Before

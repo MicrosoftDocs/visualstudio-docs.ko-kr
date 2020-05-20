@@ -38,7 +38,7 @@ ms.locfileid: "75592050"
 
 테스트가 실패할 때마다 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> 예외가 throw됩니다. 테스트는 시간이 초과되거나, 예기치 않은 예외가 throw되거나, **Failed** 결과를 생성하는 Assert 문을 포함하는 경우 실패합니다.
 
-테스트 후 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>결과 불충분**결과가 생성될 때마다**이 throw됩니다. 일반적으로는 아직 작업 중엔 테스트에 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 문을 추가하여 해당 테스트가 아직 실행할 준비가 되지 않았음을 나타냅니다.
+테스트 후 **결과 불충분** 결과가 생성될 때마다 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>이 throw됩니다. 일반적으로는 아직 작업 중엔 테스트에 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 문을 추가하여 해당 테스트가 아직 실행할 준비가 되지 않았음을 나타냅니다.
 
 > [!NOTE]
 > <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute> 특성을 사용하여 테스트 실행 준비가 되지 않았음을 표시하는 전략을 사용할 수도 있습니다. 그러나 이 전략을 사용하는 경우 구현되지 않은 테스트 수에 대한 보고서를 쉽게 생성할 수 없다는 단점이 있습니다.

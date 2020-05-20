@@ -42,12 +42,12 @@ ms.locfileid: "75595815"
 
 ### <a name="root-namespace"></a>루트 네임스페이스
 
-프로젝트의 모든 파일에 대한 기본 네임스페이스를 지정합니다. 예를 들어 **루트 네임스페이스**를 `Project1`로 설정하고 코드의 네임스페이스 외부에 `Class1`이 있는 경우 해당 네임스페이스는 `Project1.Class1`입니다. 코드의 `Class2` 네임스페이스에 `Order`가 있는 경우 해당 네임스페이스는 `Project1.Order.Class2`입니다.
+프로젝트의 모든 파일에 대한 기본 네임스페이스를 지정합니다. 예를 들어 **루트 네임스페이스**를 `Project1`로 설정하고 코드의 네임스페이스 외부에 `Class1`이 있는 경우 해당 네임스페이스는 `Project1.Class1`입니다. 코드의 `Order` 네임스페이스에 `Class2`가 있는 경우 해당 네임스페이스는 `Project1.Order.Class2`입니다.
 
 **루트 네임스페이스**의 선택을 취소하는 경우 코드에서 프로젝트의 네임스페이스 구조를 지정할 수 있습니다.
 
 > [!NOTE]
-> `Global`네임스페이스 명령문[에서 ](/dotnet/visual-basic/language-reference/statements/namespace-statement) 키워드를 사용하는 경우 프로젝트의 루트 네임스페이스 외부에서 네임스페이스를 정의할 수 있습니다. **루트 네임스페이스**의 선택을 취소하면 `Global`이 최상위 네임스페이스가 되므로 `Global` 문에 `Namespace` 키워드가 필요하지 않습니다. 자세한 내용은 [Visual Basic의 네임스페이스](/dotnet/visual-basic/programming-guide/program-structure/namespaces)에서 "Namespace 문의 Global 키워드"를 참조하세요.
+> [네임스페이스 명령문](/dotnet/visual-basic/language-reference/statements/namespace-statement)에서 `Global` 키워드를 사용하는 경우 프로젝트의 루트 네임스페이스 외부에서 네임스페이스를 정의할 수 있습니다. **루트 네임스페이스**의 선택을 취소하면 `Global`이 최상위 네임스페이스가 되므로 `Namespace` 문에 `Global` 키워드가 필요하지 않습니다. 자세한 내용은 [Visual Basic의 네임스페이스](/dotnet/visual-basic/programming-guide/program-structure/namespaces)에서 "Namespace 문의 Global 키워드"를 참조하세요.
 
 코드에서 네임스페이스를 만드는 방법에 대한 자세한 내용은 [Namespace 문](/dotnet/visual-basic/language-reference/statements/namespace-statement)을 참조하세요.
 
@@ -106,11 +106,11 @@ ms.locfileid: "75595815"
 
 이 확인란이 선택된 경우 애플리케이션에서 표준 `Sub Main`을 사용합니다. 이 확인란을 선택하면 **Windows 애플리케이션 프레임워크 속성** 섹션의 기능을 사용할 수 있으며, 시작 폼도 선택해야 합니다.
 
-이 확인란의 선택을 취소하면 애플리케이션이 `Sub Main`시작 폼**에서 지정된 사용자 지정** 을 사용합니다. 이 경우 시작 개체(메서드 또는 클래스의 사용자 지정 `Sub Main`) 또는 폼을 지정할 수 있습니다. 또한 **Windows 애플리케이션 프레임워크 속성** 섹션의 옵션을 사용할 수 없게 됩니다.
+이 확인란의 선택을 취소하면 애플리케이션이 **시작 폼**에서 지정된 사용자 지정 `Sub Main`을 사용합니다. 이 경우 시작 개체(메서드 또는 클래스의 사용자 지정 `Sub Main`) 또는 폼을 지정할 수 있습니다. 또한 **Windows 애플리케이션 프레임워크 속성** 섹션의 옵션을 사용할 수 없게 됩니다.
 
 ### <a name="view-windows-settings"></a>Windows 설정 보기
 
-이 단추를 클릭하면 *app.manifest* 파일이 생성되고 열립니다. Visual Studio는 이 파일을 사용하여 애플리케이션에 대한 매니페스트 데이터를 생성합니다. 그런 다음, `<requestedExecutionLevel>`app.manifest*의*  태그를 다음과 같이 수정하여 UAC 요청된 실행 수준을 설정합니다.
+이 단추를 클릭하면 *app.manifest* 파일이 생성되고 열립니다. Visual Studio는 이 파일을 사용하여 애플리케이션에 대한 매니페스트 데이터를 생성합니다. 그런 다음, *app.manifest*의 `<requestedExecutionLevel>` 태그를 다음과 같이 수정하여 UAC 요청된 실행 수준을 설정합니다.
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -143,13 +143,13 @@ Windows 인증을 사용하여 현재 로그온한 사용자를 식별하도록 
 
 ### <a name="shutdown-mode"></a>종료 모드
 
-다른 폼이 열려 있어도 시작 폼으로 설정된 폼을 닫을 때 애플리케이션이 종료되도록 지정하려면 **시작 폼을 닫을 때**(기본값)를 선택합니다. 마지막 폼을 닫을 때나 **또는** 문을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 `My.Application.Exit`마지막 폼을 닫을 때`End`를 선택합니다.
+다른 폼이 열려 있어도 시작 폼으로 설정된 폼을 닫을 때 애플리케이션이 종료되도록 지정하려면 **시작 폼을 닫을 때**(기본값)를 선택합니다. 마지막 폼을 닫을 때나 `My.Application.Exit` 또는 `End` 문을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 폼을 닫을 때**를 선택합니다.
 
-**을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면** 명시적으로 종료할 때`Shutdown`를 선택합니다.
+`Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **명시적으로 종료할 때**를 선택합니다.
 
-마지막 창을 닫을 때 또는 **을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면** 마지막 창을 닫을 때`Shutdown`를 선택합니다. 이 값은 기본 설정입니다.
+마지막 창을 닫을 때 또는 `Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 창을 닫을 때**를 선택합니다. 이 값은 기본 설정입니다.
 
-주 창을 닫을 때 또는 **을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면** 주 창을 닫을 때`Shutdown`를 선택합니다.
+주 창을 닫을 때 또는 `Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **주 창을 닫을 때**를 선택합니다.
 
 ### <a name="splash-screen"></a>시작 화면
 
@@ -167,11 +167,11 @@ Windows 인증을 사용하여 현재 로그온한 사용자를 식별하도록 
 
 이 속성은 WPF(Windows Presentation Foundation) 애플리케이션에만 적용됩니다.
 
-**을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면** 명시적으로 종료할 때<xref:System.Windows.Application.Shutdown%2A>를 선택합니다.
+<xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **명시적으로 종료할 때**를 선택합니다.
 
-마지막 창을 닫을 때 또는 **을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면** 마지막 창을 닫을 때<xref:System.Windows.Application.Shutdown%2A>를 선택합니다. 이 값은 기본 설정입니다.
+마지막 창을 닫을 때 또는 <xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 창을 닫을 때**를 선택합니다. 이 값은 기본 설정입니다.
 
-주 창을 닫을 때 또는 **을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면** 주 창을 닫을 때<xref:System.Windows.Application.Shutdown%2A>를 선택합니다.
+주 창을 닫을 때 또는 <xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **주 창을 닫을 때**를 선택합니다.
 
 이 설정을 사용하는 방법에 대한 자세한 내용은 <xref:System.Windows.Application.Shutdown%2A>을 참조하세요.
 

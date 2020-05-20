@@ -23,7 +23,7 @@ ms.locfileid: "75593280"
 ---
 # <a name="diagnosing-task-failures"></a>작업 실패 진단
 
-작업에서 특정 오류를 기록하지 않은 경우 `MSB6006` 파생 클래스가 0이 아닌 종료 코드를 반환하는 도구 프로세스를 실행할 때 <xref:Microsoft.Build.Utilities.ToolTask>이 내보내집니다.
+작업에서 특정 오류를 기록하지 않은 경우 <xref:Microsoft.Build.Utilities.ToolTask> 파생 클래스가 0이 아닌 종료 코드를 반환하는 도구 프로세스를 실행할 때 `MSB6006`이 내보내집니다.
 
 ## <a name="identifying-the-failing-task"></a>실패한 작업 확인
 

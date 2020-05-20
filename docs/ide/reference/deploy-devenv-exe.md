@@ -38,7 +38,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 - *SolnConfigName*
 
-  (선택 사항) `Debug`SolutionName`Release`에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: *또는*). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
+  (선택 사항) *SolutionName*에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
 - `/Project` *ProjName*
 
@@ -46,7 +46,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 - `/ProjectConfig` *ProjConfigName*
 
-  (선택 사항) 명명된 `Debug`를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다(예: `Release` 또는 `/Project`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *SolnConfigName* 인수를 재정의합니다.
+  (선택 사항) 명명된 `/Project`를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *SolnConfigName* 인수를 재정의합니다.
 
 - `/Out` *OutputFilename*
 
@@ -62,7 +62,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 ## <a name="example"></a>예제
 
-이 예제에서는 `CSharpWinApp` 내에 있는 `Release` 프로젝트 빌드 구성을 사용하여 `MySolution` 프로젝트를 배포합니다.
+이 예제에서는 `MySolution` 내에 있는 `Release` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 배포합니다.
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release

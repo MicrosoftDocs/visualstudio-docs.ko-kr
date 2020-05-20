@@ -111,13 +111,13 @@ commas_to_colons(1)
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> Python 3.5 이전 버전의 경우 Visual Studio는 Typeshed ‘스텁 파일’( *.pyi*)을 통해 사용자가 입력한 형식 힌트도 표시합니다.  코드에 형식 힌트를 직접 포함하지 않고자 하거나, 형식 힌트를 직접 사용하지 않는 라이브러리에 대한 형식 힌트를 만들려는 경우 스텁 파일을 사용할 수 있습니다. 자세한 내용은 mypy 프로젝트 wiki에서 [Python 모듈에 대한 스텁 만들기](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)를 참조하세요.
+> Python 3.5 이전 버전의 경우 Visual Studio는 Typeshed ‘스텁 파일’(*.pyi*)을 통해 사용자가 입력한 형식 힌트도 표시합니다. 코드에 형식 힌트를 직접 포함하지 않고자 하거나, 형식 힌트를 직접 사용하지 않는 라이브러리에 대한 형식 힌트를 만들려는 경우 스텁 파일을 사용할 수 있습니다. 자세한 내용은 mypy 프로젝트 wiki에서 [Python 모듈에 대한 스텁 만들기](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)를 참조하세요.
 >
 > 현재는 Visual Studio에서 주석의 형식 힌트를 지원하지 않습니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Python 3.5 이전 버전의 경우 Visual Studio는 Typeshed ‘스텁 파일’( *.pyi*)을 통해 사용자가 입력한 형식 힌트도 표시합니다.  코드에 형식 힌트를 직접 포함하지 않고자 하거나, 형식 힌트를 직접 사용하지 않는 라이브러리에 대한 형식 힌트를 만들려는 경우 스텁 파일을 사용할 수 있습니다. 자세한 내용은 mypy 프로젝트 wiki에서 [Python 모듈에 대한 스텁 만들기](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)를 참조하세요.
+> Python 3.5 이전 버전의 경우 Visual Studio는 Typeshed ‘스텁 파일’(*.pyi*)을 통해 사용자가 입력한 형식 힌트도 표시합니다. 코드에 형식 힌트를 직접 포함하지 않고자 하거나, 형식 힌트를 직접 사용하지 않는 라이브러리에 대한 형식 힌트를 만들려는 경우 스텁 파일을 사용할 수 있습니다. 자세한 내용은 mypy 프로젝트 wiki에서 [Python 모듈에 대한 스텁 만들기](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)를 참조하세요.
 >
 > Visual Studio에는 Python 2 및 3에 대한 Typeshed 파일의 번들 집합이 포함되어 있으므로 추가 다운로드가 필요하지 않습니다. 하지만 다른 파일 집합을 사용하려는 경우 **도구** > **옵션** > **Python** > **언어 서버** 옵션에서 경로를 지정할 수 있습니다. [옵션 - 언어 서버](python-support-options-and-settings-in-visual-studio.md#language-server-options)를 참조하세요.
 >

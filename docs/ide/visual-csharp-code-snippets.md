@@ -44,7 +44,7 @@ ms.locfileid: "75594164"
 |do|[do](/dotnet/csharp/language-reference/keywords/do) `while` 루프를 만듭니다.|메서드, 인덱서, 속성 접근자 또는 이벤트 접근자 내부|
 |else|[else](/dotnet/csharp/language-reference/keywords/if-else) 블록을 만듭니다.|메서드, 인덱서, 속성 접근자 또는 이벤트 접근자 내부|
 |enum|[enum](/dotnet/csharp/language-reference/keywords/enum) 선언을 만듭니다.|네임스페이스(전역 네임스페이스 포함), 클래스 또는 구조체 내부|
-|equals|<xref:System.Object.Equals%2A> 클래스에 정의된 <xref:System.Object> 메서드를 재정의하는 메서드 선언을 만듭니다.|클래스 또는 구조체 내부|
+|equals|<xref:System.Object> 클래스에 정의된 <xref:System.Object.Equals%2A> 메서드를 재정의하는 메서드 선언을 만듭니다.|클래스 또는 구조체 내부|
 |exception|예외(기본적으로 <xref:System.Exception>)에서 파생되는 클래스에 대한 선언을 만듭니다.|네임스페이스(전역 네임스페이스 포함), 클래스 또는 구조체 내부|
 |for|[for](/dotnet/csharp/language-reference/keywords/for) 루프를 만듭니다.|메서드, 인덱서, 속성 접근자 또는 이벤트 접근자 내부|
 |foreach|[foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 루프를 만듭니다.|메서드, 인덱서, 속성 접근자 또는 이벤트 접근자 내부|
@@ -60,7 +60,7 @@ ms.locfileid: "75594164"
 |네임스페이스|[namespace](/dotnet/csharp/language-reference/keywords/namespace) 선언을 만듭니다.|네임스페이스(전역 네임스페이스 포함) 내부|
 |prop|[자동 구현 속성](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) 선언을 만듭니다.|클래스 또는 구조체 내부|
 |propfull|`get` 및 `set` 접근자를 사용하여 속성 선언을 만듭니다.|클래스 또는 구조체 내부|
-|propg|전용 [ 접근자를 사용하여 읽기 전용 ](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)자동 구현 속성`set`을 만듭니다.|클래스 또는 구조체 내부|
+|propg|전용 `set` 접근자를 사용하여 읽기 전용 [자동 구현 속성](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)을 만듭니다.|클래스 또는 구조체 내부|
 |sim|[static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) Main 메서드 선언을 만듭니다.|클래스 또는 구조체 내부|
 |struct|[struct](/dotnet/csharp/language-reference/keywords/struct) 선언을 만듭니다.|네임스페이스(전역 네임스페이스 포함), 클래스 또는 구조체 내부|
 |svm|[static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void) Main 메서드 선언을 만듭니다.|클래스 또는 구조체 내부|

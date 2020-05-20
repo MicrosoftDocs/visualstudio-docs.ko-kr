@@ -31,7 +31,7 @@ ms.locfileid: "77633930"
 
 ## <a name="example"></a>예제
 
- 다음 예제에서는 `Rebuild` 프로젝트의 `NotInSlnFolder` 대상을 실행한 다음, `Clean`NewFolder`InSolutionFolder` 솔루션 폴더에 있는 *프로젝트의* 대상을 실행합니다.
+ 다음 예제에서는 `NotInSlnFolder` 프로젝트의 `Rebuild` 대상을 실행한 다음, *NewFolder* 솔루션 폴더에 있는 `InSolutionFolder` 프로젝트의 `Clean` 대상을 실행합니다.
 
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean

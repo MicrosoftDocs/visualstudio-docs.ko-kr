@@ -183,7 +183,7 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 [비동기 프로그래밍](/dotnet/csharp/async)을 사용하면 애플리케이션이 응답하지 않는 시간이 오래 걸리는 작업을 수행할 수 있습니다. 또한 이 기능을 사용하면 시간이 많이 소요되는 작업이 완료될 때까지 코드를 기다렸다가 이러한 작업의 결과에 따라 코드를 계속 사용할 수 있습니다. 예를 들어 파일이 로드되거나 네트워크 작업이 완료될 때까지 기다릴 수 있습니다.
 
-Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](/dotnet/api/system.threading.tasks.task)입니다. 요약하면 `async` 함수에서 나머지 애플리케이션의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
+Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](/dotnet/api/system.threading.tasks.task)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)입니다. 요약하면 `async` 함수에서 나머지 애플리케이션의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
 
 ```csharp
 // Unity coroutine

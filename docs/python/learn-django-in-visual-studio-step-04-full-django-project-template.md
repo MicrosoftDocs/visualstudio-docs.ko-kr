@@ -161,7 +161,7 @@ def about(request):
 
 *index.html* 및 *contact.html*은 동일한 구조를 사용하고 "content" 블록에 보다 긴 콘텐츠를 제공합니다.
 
-또한 *templates/app* 폴더에는 *를 사용하여* layout.html*을 가져오는* loginpartial.html*과 함께 네 번째 페이지인* login.html`{% include %}`이 있습니다. 이 템플릿 파일은 인증에 대한 5단계에서 설명합니다.
+또한 *templates/app* 폴더에는 `{% include %}`를 사용하여 *layout.html*을 가져오는 *loginpartial.html*과 함께 네 번째 페이지인 *login.html*이 있습니다. 이 템플릿 파일은 인증에 대한 5단계에서 설명합니다.
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>질문: {% block %} 및 {% endblock %}은 Django 페이지 템플릿에서 들여쓰기할 수 있나요?
 
@@ -204,7 +204,7 @@ urlpatterns = [
 ]
 ```
 
-처음 세 개의 URL 패턴은 앱의 `home`views.py`contact` 파일에 있는 `about`, *및* 보기에 직접 매핑됩니다. 반면 `^login/$` 및 `^logout$` 패턴은 앱 정의 보기 대신 기본 제공 Django 보기를 사용합니다. `url` 메서드 호출에도 보기를 사용자 지정할 수 있는 추가 데이터가 포함됩니다. 5단계에서 이러한 호출을 살펴봅니다.
+처음 세 개의 URL 패턴은 앱의 *views.py* 파일에 있는 `home`, `contact` 및 `about` 보기에 직접 매핑됩니다. 반면 `^login/$` 및 `^logout$` 패턴은 앱 정의 보기 대신 기본 제공 Django 보기를 사용합니다. `url` 메서드 호출에도 보기를 사용자 지정할 수 있는 추가 데이터가 포함됩니다. 5단계에서 이러한 호출을 살펴봅니다.
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>질문: 제가 만든 프로젝트에서 "about" URL 패턴이 여기에 표시된 '^about$' 대신 '^about'을 사용하는 이유는 무엇인가요?
 

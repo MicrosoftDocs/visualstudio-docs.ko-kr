@@ -35,7 +35,7 @@ ms.locfileid: "75585459"
 
 ## <a name="initial-targets"></a>초기 대상
 
-`InitialTargets`Project[ 요소의 ](../msbuild/project-element-msbuild.md) 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다. 초기 대상은 대개 오류 검사용으로 사용됩니다.
+[Project](../msbuild/project-element-msbuild.md) 요소의 `InitialTargets` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다. 초기 대상은 대개 오류 검사용으로 사용됩니다.
 
 `InitialTargets` 특성의 값은 세미콜론으로 구분되어 순서가 지정된 대상 목록일 수 있습니다. 다음 예제에서는 `Warm` 대상이 실행된 후에 `Eject` 대상이 실행됨을 지정합니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "75585459"
 
 ## <a name="default-targets"></a>기본 대상
 
-`DefaultTargets`Project[ 요소의 ](../msbuild/project-element-msbuild.md) 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 빌드할 하나 이상의 대상을 지정합니다.
+[Project](../msbuild/project-element-msbuild.md) 요소의 `DefaultTargets` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 빌드할 하나 이상의 대상을 지정합니다.
 
 `DefaultTargets` 특성의 값은 세미콜론으로 구분되어 순서가 지정된 기본 대상 목록일 수 있습니다. 다음 예제에서는 `Clean` 대상이 실행된 후에 `Build` 대상이 실행됨을 지정합니다.
 
@@ -98,7 +98,7 @@ MSBuild 4.0에서는 `BeforeTargets` 및 `AfterTargets` 특성을 사용하여 �
 </Project>
 ```
 
-`Optimize` 대상이 실행된 이후 `Compile` 대상이 실행되기 전에 실행되는 중간 대상 `Link`를 만들려면 `Project` 요소의 아무 위치에나 다음 대상을 추가합니다.
+`Compile` 대상이 실행된 이후 `Link` 대상이 실행되기 전에 실행되는 중간 대상 `Optimize`를 만들려면 `Project` 요소의 아무 위치에나 다음 대상을 추가합니다.
 
 ```xml
 <Target Name="Optimize"
@@ -119,7 +119,7 @@ MSBuild는 다음처럼 대상 빌드 순서를 결정합니다.
 
    `BeforeTargets` 또는 `AfterTargets`에 조건부 대상을 나열하는 다른 대상은 여전히 지정된 순서대로 실행됩니다.
 
-4. 대상이 실행되거나 건너뛰기 전에 `DependsOnTargets` 특성이 대상에 적용되고 `Condition`로 평가되지 않는 한 해당 `false` 대상이 실행됩니다.
+4. 대상이 실행되거나 건너뛰기 전에 `Condition` 특성이 대상에 적용되고 `false`로 평가되지 않는 한 해당 `DependsOnTargets` 대상이 실행됩니다.
 
    > [!NOTE]
    > 대상이 출력 항목을 최신 상태로 유지하기 때문에 실행되지 않으면 건너뛴 것으로 간주됩니다([증분 빌드](../msbuild/incremental-builds.md) 참조). 이 검사는 대상 내의 작업을 실행하기 직전에 수행되며, 대상 실행 순서에 영향을 주지 않습니다.

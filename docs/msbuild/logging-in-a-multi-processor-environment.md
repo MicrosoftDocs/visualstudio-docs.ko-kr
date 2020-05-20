@@ -49,7 +49,7 @@ public interface INodeLogger: ILogger
 
 이 문제를 줄이기 위해 MSBuild는 전달 로거를 만들도록 하여 중앙 로깅 모델을 확장하는 "분산된 로깅 모델"을 활성화합니다. 전달 로거는 보조 노드에 연결되며 해당 노드에서 들어오는 빌드 이벤트를 받습니다. 전달 로거는 이벤트를 필터링한 다음 중앙 노드에 원하는 이벤트만 전달할 수 있는 것을 제외하고 일반 로거와 동일합니다. 이는 중앙 노드에서 메시지 트래픽을 감소시키므로 더 나은 성능을 활성화합니다.
 
- <xref:Microsoft.Build.Framework.IForwardingLogger>에서 파생된 <xref:Microsoft.Build.Framework.ILogger> 인터페이스를 구현하여 전달 로거를 만들 수 있습니다. 인터페이스는 다음과 같이 정의됩니다.
+ <xref:Microsoft.Build.Framework.ILogger>에서 파생된 <xref:Microsoft.Build.Framework.IForwardingLogger> 인터페이스를 구현하여 전달 로거를 만들 수 있습니다. 인터페이스는 다음과 같이 정의됩니다.
 
 ```csharp
 public interface IForwardingLogger: INodeLogger
@@ -59,7 +59,7 @@ public interface IForwardingLogger: INodeLogger
 }
 ```
 
-전달 로거에서 이벤트를 전달하려면 <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> 인터페이스의 <xref:Microsoft.Build.Framework.IEventRedirector> 메서드를 호출합니다. 매개 변수로 적절한 <xref:Microsoft.Build.Framework.BuildEventArgs> 또는 파생 개체를 전달합니다.
+전달 로거에서 이벤트를 전달하려면 <xref:Microsoft.Build.Framework.IEventRedirector> 인터페이스의 <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> 메서드를 호출합니다. 매개 변수로 적절한 <xref:Microsoft.Build.Framework.BuildEventArgs> 또는 파생 개체를 전달합니다.
 
 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.
 

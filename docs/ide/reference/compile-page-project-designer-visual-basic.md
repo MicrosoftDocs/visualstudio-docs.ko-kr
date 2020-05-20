@@ -85,7 +85,7 @@ ms.locfileid: "76111311"
 
 개체에 `Object` 형식으로 선언된 변수의 속성 또는 메서드에 할당되면 런타임에 바인딩됩니다. 자세한 내용은 [Option Strict 문](/dotnet/visual-basic/language-reference/statements/option-strict-statement) 및 [초기 바인딩 및 런타임에 바인딩](/dotnet/visual-basic/programming-guide/language-features/early-late-binding)을 참조하세요.
 
-암시적 개체 형식 오류는 선언된 변수에 대해 적절한 형식이 유추될 수 없어 `Object`의 형식이 유추될 때 발생합니다. 주로 `Dim` 절을 사용하지 않고 `As` 문을 사용하여 변수를 선언하고, `Option Infer`가 꺼져 있는 경우 발생합니다. 자세한 내용은 [Option Strict 문](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer 문](/dotnet/visual-basic/language-reference/statements/option-infer-statement) 및 [Visual Basic 언어 사양](/dotnet/visual-basic/reference/language-specification)을 참조하세요.
+암시적 개체 형식 오류는 선언된 변수에 대해 적절한 형식이 유추될 수 없어 `Object`의 형식이 유추될 때 발생합니다. 주로 `As` 절을 사용하지 않고 `Dim` 문을 사용하여 변수를 선언하고, `Option Infer`가 꺼져 있는 경우 발생합니다. 자세한 내용은 [Option Strict 문](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer 문](/dotnet/visual-basic/language-reference/statements/option-infer-statement) 및 [Visual Basic 언어 사양](/dotnet/visual-basic/reference/language-specification)을 참조하세요.
 
 **Option Strict** 설정은 [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) 컴파일러 옵션에 해당합니다.
 

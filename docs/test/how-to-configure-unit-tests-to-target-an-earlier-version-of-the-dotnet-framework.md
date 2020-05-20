@@ -87,7 +87,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
    . *.vcxproj* 파일이 편집기에서 열립니다.
 
-4. `TargetFrameworkVersion` 레이블이 지정된 `PropertyGroup`에서 `"Globals"`을 버전 3.5 이상으로 설정합니다. 클라이언트 버전을 지정하면 안 됩니다.
+4. `PropertyGroup` 레이블이 지정된 `"Globals"`에서 `TargetFrameworkVersion`을 버전 3.5 이상으로 설정합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
     ```xml
     <PropertyGroup Label="Globals">

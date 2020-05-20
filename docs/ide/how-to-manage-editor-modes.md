@@ -46,7 +46,7 @@ Visual Studio 코드 편집기를 다양한 표시 모드로 표시할 수 있�
 
      -- 또는 --
 
-- `View.Fullscreen`명령**창에서** 명령을 실행합니다.
+- **명령** 창에서 `View.Fullscreen` 명령을 실행합니다.
 
 ## <a name="enable-virtual-space-mode"></a>가상 공간 모드 활성화
 

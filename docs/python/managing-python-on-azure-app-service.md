@@ -46,7 +46,7 @@ ms.locfileid: "62535993"
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Azure Resource Manager를 통해 Python 버전 선택
 
-Azure Resource Manager 템플릿을 사용하여 App Service를 배포하는 경우 사이트 확장을 리소스로 추가합니다. 특히 확장은 `resources` 형식과 `resources`siteextensions.net`siteextensions`의 이름을 사용하여 중첩된 리소스([ 아래의 ](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) 개체)로 표시됩니다.
+Azure Resource Manager 템플릿을 사용하여 App Service를 배포하는 경우 사이트 확장을 리소스로 추가합니다. 특히 확장은 `siteextensions` 형식과 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22)의 이름을 사용하여 중첩된 리소스(`resources` 아래의 `resources` 개체)로 표시됩니다.
 
 예를 들어 `python361x64`(Python 3.6.1 x64)에 참조를 추가한 후 템플릿이 다음과 같이 표시될 수 있습니다(일부 속성 생략됨).
 
@@ -100,7 +100,7 @@ App Service에서 특정 경로를 보려면 App Service 페이지에서 **확�
 
 ### <a name="configure-the-httpplatform-handler"></a>HttpPlatform 처리기 구성
 
-HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 직접 전달합니다. 이 전달을 통해 원하는 모든 웹 서버를 실행할 수 있지만 로컬 웹 서버를 실행하는 시작 스크립트가 필요합니다. `<httpPlatform>`web.config*의*  요소에 스크립트를 지정합니다. 여기서 `processPath` 특성은 사이트 확장의 Python 인터프리터를 가리키고, `arguments` 특성은 스크립트 및 제공하려는 모든 인수를 가리킵니다.
+HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 직접 전달합니다. 이 전달을 통해 원하는 모든 웹 서버를 실행할 수 있지만 로컬 웹 서버를 실행하는 시작 스크립트가 필요합니다. *web.config*의 `<httpPlatform>` 요소에 스크립트를 지정합니다. 여기서 `processPath` 특성은 사이트 확장의 Python 인터프리터를 가리키고, `arguments` 특성은 스크립트 및 제공하려는 모든 인수를 가리킵니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

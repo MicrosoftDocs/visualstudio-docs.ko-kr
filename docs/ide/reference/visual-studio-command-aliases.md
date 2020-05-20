@@ -25,9 +25,9 @@ ms.locfileid: "75596413"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
-명령 별칭을 통해 명령을 실행하려는 경우 더 적은 문자를 입력할 수 있습니다. **찾기/명령** 상자 또는 **명령** 창에 별칭을 입력합니다. 예를 들어 `>File.OpenFile`열려 있는 파일**대화 상자를 표시하는**을 입력하는 대신 미리 정의된 별칭인 `>of`를 사용할 수 있습니다.
+명령 별칭을 통해 명령을 실행하려는 경우 더 적은 문자를 입력할 수 있습니다. **찾기/명령** 상자 또는 **명령** 창에 별칭을 입력합니다. 예를 들어 **열려 있는 파일** 대화 상자를 표시하는 `>File.OpenFile`을 입력하는 대신 미리 정의된 별칭인 `>of`를 사용할 수 있습니다.
 
-`alias`명령**창에**를 입력하여 현재 별칭 및 해당 정의의 목록을 표시합니다. `>cls`를 입력하여 **명령** 창의 내용을 지웁니다. 특정 명령에 대한 별칭을 보려면 `alias <command name>`을 입력하십시오.
+**명령** 창에 `alias`를 입력하여 현재 별칭 및 해당 정의의 목록을 표시합니다. `>cls`를 입력하여 **명령** 창의 내용을 지웁니다. 특정 명령에 대한 별칭을 보려면 `alias <command name>`을 입력하십시오.
 
 인수 포함 여부에 관계없이 Visual Studio 명령 중 하나에 대한 사용자 고유 별칭을 쉽게 만들 수 있습니다. 예를 들어 `File.NewFile MyFile.txt`의 별칭을 만드는 구문은 `alias MyAlias File.NewFile MyFile.txt`입니다. 별칭은 `alias <alias name> /delete`를 사용하여 삭제할 수 있습니다.
 

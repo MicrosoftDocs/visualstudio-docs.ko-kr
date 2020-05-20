@@ -25,7 +25,7 @@ ms.locfileid: "77631707"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension 기본 클래스
 
-많은 작업은 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 상속되는 <xref:Microsoft.Build.Utilities.Task> 클래스에서 상속됩니다. 이 상속 체인은 매개 변수에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 이러한 매개 변수가 이 문서에 나열되어 있습니다.
+많은 작업은 <xref:Microsoft.Build.Utilities.Task> 클래스에서 상속되는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 상속됩니다. 이 상속 체인은 매개 변수에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 이러한 매개 변수가 이 문서에 나열되어 있습니다.
 
 ## <a name="parameters"></a>매개 변수
 

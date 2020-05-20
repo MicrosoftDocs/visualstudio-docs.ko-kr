@@ -71,7 +71,7 @@ MSBuild는 필요에 따라 항목 종류 및 문자열 값 간의 변환을 수
 </PropertyGroup>
 ```
 
-OutputDir 항목 종류에는 "KeyFiles`Include`;Certificates\\" 값을 가진 \\ 특성이 있습니다. MSBuild는 이 문자열을 두 개의 항목인 KeyFiles\ 및 Certificates\\로 구문 분석합니다. OutputDir 항목 종류가 OutputDirList 속성의 값으로 사용되면 MSBuild에서 항목 종류를 세미콜론으로 구분된 문자열 "KeyFiles\\;Certificates\\"로 변환하거나 “평면화"합니다.
+OutputDir 항목 종류에는 "KeyFiles\\;Certificates\\" 값을 가진 `Include` 특성이 있습니다. MSBuild는 이 문자열을 두 개의 항목인 KeyFiles\ 및 Certificates\\로 구문 분석합니다. OutputDir 항목 종류가 OutputDirList 속성의 값으로 사용되면 MSBuild에서 항목 종류를 세미콜론으로 구분된 문자열 "KeyFiles\\;Certificates\\"로 변환하거나 “평면화"합니다.
 
 ## <a name="properties-and-items-in-tasks"></a>작업의 속성 및 항목
 

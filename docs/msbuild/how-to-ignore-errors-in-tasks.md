@@ -22,7 +22,7 @@ ms.locfileid: "77633826"
 
 ## <a name="use-the-continueonerror-attribute"></a>ContinueOnError 특성 사용
 
-`ContinueOnError` 요소의 `Task` 특성은 작업 실패가 발생할 경우 빌드를 중지하거나 계속할지 여부를 제어합니다. 이 특성은 빌드를 계속할 경우 오류를 오류 또는 경고로 처리할지 여부를 제어합니다.
+`Task` 요소의 `ContinueOnError` 특성은 작업 실패가 발생할 경우 빌드를 중지하거나 계속할지 여부를 제어합니다. 이 특성은 빌드를 계속할 경우 오류를 오류 또는 경고로 처리할지 여부를 제어합니다.
 
 `ContinueOnError` 특성은 다음 값 중 하나를 포함할 수 있습니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "77633826"
 
 ## <a name="example"></a>예제
 
-다음 코드 예제에서는 `Build` 작업이 실패하더라도 `Delete` 대상이 계속 실행되고 빌드가 성공한 것으로 간주됨을 보여 줍니다.
+다음 코드 예제에서는 `Delete` 작업이 실패하더라도 `Build` 대상이 계속 실행되고 빌드가 성공한 것으로 간주됨을 보여 줍니다.
 
 ```xml
 <Project DefaultTargets="FakeBuild"

@@ -74,7 +74,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
 ## <a name="save-the-log-output-to-multiple-files"></a>여러 파일에 로그 출력 저장
 
- 다음 예제에서는 *msbuild1.log*에 전체 로그를 저장하고 *JustErrors.log*에는 오류만, *JustWarnings.log*에는 경고만 저장합니다. 이 예제에서는 3개 파일에 대해 각각 파일 번호를 사용합니다. 파일 번호는 **및**과 같이 **fl** 및 `-fl1`-flp`-flp1` 스위치 바로 뒤에 지정됩니다.
+ 다음 예제에서는 *msbuild1.log*에 전체 로그를 저장하고 *JustErrors.log*에는 오류만, *JustWarnings.log*에는 경고만 저장합니다. 이 예제에서는 3개 파일에 대해 각각 파일 번호를 사용합니다. 파일 번호는 `-fl1` 및 `-flp1`과 같이 **fl** 및 **-flp** 스위치 바로 뒤에 지정됩니다.
 
  파일 2 및 3에 대한 **-filelogparameters**(`flp`) 스위치는 각 파일에 지정할 이름 및 포함할 내용을 지정합니다. 파일 1에는 이름이 지정되지 않았으므로 기본 이름인 *msbuild1.log*가 사용됩니다.
 

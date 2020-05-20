@@ -26,7 +26,7 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
 1. **연결 추가**를 선택합니다.
 1. 연결에 이름을 지정하고, `https://localhost:5444`(Linux용 Windows 하위 시스템) 또는 `https://public-ip:5444`(Azure 컨테이너)와 같이 해당 URL을 제공합니다. 완료된 경우 **저장**을 선택합니다.
 1. 연결 아이콘을 선택하거나 연결 항목을 두 번 클릭합니다.
-1. 로그인 자격 증명을 입력합니다. 사용자 이름은 `<<unix>>\`에서 `<<unix>>\ruser1`를 접두사로 사용해야 합니다(Linux 원격 컴퓨터에 대한 모든 연결의 필요에 따라).
+1. 로그인 자격 증명을 입력합니다. 사용자 이름은 `<<unix>>\ruser1`에서 `<<unix>>\`를 접두사로 사용해야 합니다(Linux 원격 컴퓨터에 대한 모든 연결의 필요에 따라).
 1. 자체 서명된 인증서를 사용하는 경우 경고 메시지가 표시될 수 있습니다. 메시지는 경고를 수정하기 위한 지침을 제공합니다.
 
 ## <a name="set-up-remote-r-service"></a>원격 R 서비스 설정
@@ -67,7 +67,7 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
     sudo systemctl start rtvsd
     ```
 
-1. SSL 인증서를 구성합니다(프로덕션에 필요). 기본적으로 rtvs-daemon은 `ssl-cert-snakeoil.pem` 패키지에서 생성된 `ssl-cert-snakeoil.pem` 및 `ssl-cert`을 사용합니다. 설치 중에 `ssl-cert-snakeoil.pfx`로 결합됩니다. 프로덕션용으로 관리자가 제공한 SSL 인증서를 사용합니다. SSL 인증서는 */etc/rtvs/rtvsd.config.json*에서 *.pfx* 파일 및 선택적 가져오기 암호를 제공하여 구성할 수 있습니다.
+1. SSL 인증서를 구성합니다(프로덕션에 필요). 기본적으로 rtvs-daemon은 `ssl-cert` 패키지에서 생성된 `ssl-cert-snakeoil.pem` 및 `ssl-cert-snakeoil.pem`을 사용합니다. 설치 중에 `ssl-cert-snakeoil.pfx`로 결합됩니다. 프로덕션용으로 관리자가 제공한 SSL 인증서를 사용합니다. SSL 인증서는 */etc/rtvs/rtvsd.config.json*에서 *.pfx* 파일 및 선택적 가져오기 암호를 제공하여 구성할 수 있습니다.
 
 1. (선택 사항)서비스가 실행되고 있는지 확인합니다.
 
@@ -161,7 +161,7 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
 1. [로컬 또는 원격 Docker 컨테이너(빌드 정리)](#local-or-remote-docker-container-clean-build)의 지침에 따라 이미지를 만듭니다.
 1. Docker 허브 또는 Azure Container Repository에 컨테이너를 푸시합니다.
 1. Azure CLI를 시작하고 `az login` 명령을 사용하여 로그인합니다.
-1. `az container create`를 `--command-line "rtvsd"` 서비스로 실행하도록 컨테이너를 설정하지 않은 경우 `rtvsd`를 사용하여 컨테이너를 만드는 `systemd` 명령을 사용합니다. 아래 명령에서 이미지는 Docker 허브에 연결하도록 합니다. 컨테이너 리포지토리 자격 증명 인수를 명령줄에 추가하여 Azure Container Repository를 사용할 수도 있습니다.
+1. `rtvsd`를 `systemd` 서비스로 실행하도록 컨테이너를 설정하지 않은 경우 `--command-line "rtvsd"`를 사용하여 컨테이너를 만드는 `az container create` 명령을 사용합니다. 아래 명령에서 이미지는 Docker 허브에 연결하도록 합니다. 컨테이너 리포지토리 자격 증명 인수를 명령줄에 추가하여 Azure Container Repository를 사용할 수도 있습니다.
 
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"

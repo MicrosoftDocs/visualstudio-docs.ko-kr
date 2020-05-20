@@ -38,10 +38,10 @@ Microsoft C++ 컴파일러 도구 clang.exe를 래핑합니다.
 |**AdditionalOptions**|선택적 **string** 매개 변수입니다.|
 |**BufferSecurityCheck**|선택적 **string** 매개 변수입니다.<br/><br/>보안 검사를 통해 스택 버퍼 오버런, 프로그램의 보안에 대해 일반적으로 시도되는 공격을 검색할 수 있습니다. <br/><br/>대신 `fstack-protector`를|
 |**BuildingInIde**|선택적 **bool** 매개 변수입니다.|
-|**CLanguageStandard**|선택적 **string** 매개 변수입니다.<br/><br/>C 언어 표준을 결정합니다.<br/><br/>값이 `std=[value]`c89 **,** c99 **,** c11 **,** gnu99**또는**gnu11**인** 를 사용합니다.|
+|**CLanguageStandard**|선택적 **string** 매개 변수입니다.<br/><br/>C 언어 표준을 결정합니다.<br/><br/>값이 **c89**, **c99**, **c11**, **gnu99** 또는 **gnu11**인 `std=[value]`를 사용합니다.|
 |**ClangVersion**|선택적 **string** 매개 변수입니다.|
 |**CompileAs**|선택적 **string** 매개 변수입니다.<br/><br/>.c 및 .cpp 파일에 대한 컴파일 언어 옵션을 선택합니다. 기본값은 .c 또는 .cpp 확장명에 따라 감지됩니다.<br/><br/>`-x c`, `-x c++`를 사용합니다.|
-|**CppLanguageStandard**|선택적 **string** 매개 변수입니다.<br/><br/>C++ 언어 표준을 결정합니다.<br/><br/>값이 `std=[value]`c++98 **,** c++11 **,** c++1y **,** gnu++98 **,** gnu++11**또는**gnu++1y**인** 를 사용합니다.|
+|**CppLanguageStandard**|선택적 **string** 매개 변수입니다.<br/><br/>C++ 언어 표준을 결정합니다.<br/><br/>값이 **c++98**, **c++11**, **c++1y**, **gnu++98**, **gnu++11** 또는 **gnu++1y**인 `std=[value]`를 사용합니다.|
 |**DataLevelLinking**|선택적 **bool** 매개 변수입니다.<br/><br/>링커 최적화를 사용하면 별도 섹션에서 각 데이터 항목을 내보내 사용하지 않은 데이터를 제거할 수 있습니다.|
 |**DebugInformationFormat**|선택적 **string** 매개 변수입니다.<br/><br/>컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다.<br/><br/>**None** - 디버깅 정보를 생성하지 않으므로 컴파일이 더 빨라질 수 있습니다(`g0` 사용).<br/>**FullDebug** - DWARF2 디버그 정보를 생성합니다(`g2 -gdwarf-2` 사용).<br/>**LineNumber** - 줄 번호 정보만 생성합니다(`gline-tables-only` 사용).|
 |**EnableNeonCodegen**|선택적 **bool** 매개 변수입니다.<br/><br/>NEON 부동 소수점 하드웨어에 대한 코드 생성을 사용하도록 설정합니다. 이는 arm 아키텍처에만 적용됩니다.|

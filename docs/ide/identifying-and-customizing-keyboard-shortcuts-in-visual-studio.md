@@ -32,7 +32,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 - 바로 가기의 동작의 사용자 지정 여부
 
-- 바로 가기를 선택한 컨텍스트 위치. 예를 들어 **F2** 바로 가기는 `Edit.EditCell`설정 디자이너**를 사용 중인 경우**  명령을 호출하고, `File.Rename`팀 탐색기**를 사용 중인 경우**  명령을 호출합니다.
+- 바로 가기를 선택한 컨텍스트 위치. 예를 들어 **F2** 바로 가기는 **설정 디자이너**를 사용 중인 경우 `Edit.EditCell` 명령을 호출하고, **팀 탐색기**를 사용 중인 경우 `File.Rename` 명령을 호출합니다.
 
 설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. [인기 있는 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 가지 명령의 기본 바로 가기 키를 확인할 수도 있습니다. 모든 기본 바로 가기의 전체 목록(**일반 개발** 설정 기준)은 [모든 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 

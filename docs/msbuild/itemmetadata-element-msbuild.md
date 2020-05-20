@@ -63,7 +63,7 @@ ms.locfileid: "77633618"
 
 ## <a name="example"></a>예제
 
- 다음 코드 예제에서는 `Culture` 항목에 `fr` 값을 가진 `CSFile` 메타데이터를 추가하는 방법을 보여 줍니다.
+ 다음 코드 예제에서는 `CSFile` 항목에 `fr` 값을 가진 `Culture` 메타데이터를 추가하는 방법을 보여 줍니다.
 
 ```xml
 <ItemGroup>

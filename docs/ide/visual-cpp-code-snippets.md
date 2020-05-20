@@ -113,7 +113,7 @@ private:
 
 ## <a name="for-vs-forr-vs-rfor"></a>for, forr 및 rfor
 
-다양한 **루프를 제공하는 세 가지**for`for` 코드 조각이 있습니다.
+다양한 `for` 루프를 제공하는 세 가지 **for** 코드 조각이 있습니다.
 
 **rfor** 코드 조각은 [범위 기반](/cpp/cpp/range-based-for-statement-cpp) for 루프(링크)를 제공합니다. 이 구문은 인덱스 기반 `for` 루프보다 선호됩니다.
 
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-**for** 코드 조각은 조건이 개체의 길이(`for`)에 기반을 둔 `size_t` 루프를 제공합니다.
+**for** 코드 조각은 조건이 개체의 길이(`size_t`)에 기반을 둔 `for` 루프를 제공합니다.
 
 ```cpp
 for (size_t i = 0; i < length; i++)

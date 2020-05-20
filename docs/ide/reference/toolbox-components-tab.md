@@ -58,7 +58,7 @@ Active Directory에 대해 쿼리를 실행하는 데 사용할 수 있는 <xref
 
 **ImageList**
 
-<xref:System.Windows.Forms.ImageList> 개체 컬렉션을 관리하는 메서드를 제공하는 <xref:System.Drawing.Image> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [ImageList 구성 요소](/dotnet/framework/winforms/controls/imagelist-component-windows-forms)를 참조하세요.
+<xref:System.Drawing.Image> 개체 컬렉션을 관리하는 메서드를 제공하는 <xref:System.Windows.Forms.ImageList> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [ImageList 구성 요소](/dotnet/framework/winforms/controls/imagelist-component-windows-forms)를 참조하세요.
 
 **MessageQueue**
 
@@ -85,7 +85,7 @@ Active Directory에 대해 쿼리를 실행하는 데 사용할 수 있는 <xref
 Windows 기반 애플리케이션에 시간 기반 기능을 추가하는 데 사용할 수 있는 <xref:System.Windows.Forms.Timer> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [Timer 구성 요소](/dotnet/framework/winforms/controls/timer-component-windows-forms)를 참조하세요.
 
 > [!NOTE]
-> <xref:System.Timers.Timer>도구 상자**에 추가할 수 있는 시스템 기반** 도 있습니다. 이 <xref:System.Timers.Timer>는 서버 애플리케이션에 최적화되어 있고 Windows Forms <xref:System.Windows.Forms.Timer>는 Windows Forms에 가장 적합합니다.
+> **도구 상자**에 추가할 수 있는 시스템 기반 <xref:System.Timers.Timer>도 있습니다. 이 <xref:System.Timers.Timer>는 서버 애플리케이션에 최적화되어 있고 Windows Forms <xref:System.Windows.Forms.Timer>는 Windows Forms에 가장 적합합니다.
 
 ## <a name="see-also"></a>참고 항목
 

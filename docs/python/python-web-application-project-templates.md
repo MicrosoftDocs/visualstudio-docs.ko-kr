@@ -41,7 +41,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 | 템플릿 | Description |
 | --- | --- |
-| **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 *을 에코하는*  및 `/` 페이지의 홈페이지를 사용하여 `/hello/<name>`app.py`<name>`에 최소 앱을 생성합니다. |
+| **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 `<name>`을 에코하는 `/` 및 `/hello/<name>` 페이지의 홈페이지를 사용하여 *app.py*에 최소 앱을 생성합니다. |
 | **빈 Django 웹 프로젝트** | 코어 Django 사이트 구조를 사용하지만 Django 앱은 포함되지 않은 Django 프로젝트를 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 1단계](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요. |
 | **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)의 자세한 단계를 수행한 결과와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
 
@@ -75,7 +75,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 소스 제어를 사용하는 경우 가상 환경은 *requirements.txt*만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치**를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 자습서 학습 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 및 [Flask 자습서 학습 - 1-2 및 1-3단계](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
 
-Microsoft Azure App Service에 배포할 때는 [사이트 확장](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 **requirements.txt** 파일에서 패키지를 자동으로 설치하지 *않으므로*[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
+Microsoft Azure App Service에 배포할 때는 [사이트 확장](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로**[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
 
 Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*. 자세한 내용은 [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
 

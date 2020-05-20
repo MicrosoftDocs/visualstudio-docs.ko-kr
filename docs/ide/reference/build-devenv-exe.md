@@ -39,7 +39,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolnConfigName*
 
-  (선택 사항) `Debug`SolutionName`Release`에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: *또는*). 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼을 지정해야 합니다(예: `Debug|Win32`). 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
+  (선택 사항) *SolutionName*에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼을 지정해야 합니다(예: `Debug|Win32`). 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
 - `/Project` *ProjName*
 
@@ -67,7 +67,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="example"></a>예제
 
-다음 명령은 `CSharpWinApp` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `MySolution` 프로젝트를 빌드합니다.
+다음 명령은 `MySolution` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 빌드합니다.
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug

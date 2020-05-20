@@ -45,13 +45,13 @@ ms.locfileid: "77634333"
 
 ## <a name="remarks"></a>설명
 
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
- 다음 코드 예제에서는 항목 컬렉션 `MySourceItemsWithMetadata`에서 `MySourceItems`라는 새 항목 컬렉션을 만듭니다. `CreateItem` 작업은 `MySourceItems` 항목에 있는 항목으로 새 항목 컬렉션을 채웁니다. 그런 다음 값이 `MyMetadata`인 `Hello`라는 추가 메타데이터 항목을 새 컬렉션의 각 항목에 추가합니다.
+ 다음 코드 예제에서는 항목 컬렉션 `MySourceItems`에서 `MySourceItemsWithMetadata`라는 새 항목 컬렉션을 만듭니다. `CreateItem` 작업은 `MySourceItems` 항목에 있는 항목으로 새 항목 컬렉션을 채웁니다. 그런 다음 값이 `Hello`인 `MyMetadata`라는 추가 메타데이터 항목을 새 컬렉션의 각 항목에 추가합니다.
 
- 작업이 실행된 후 `MySourceItemsWithMetadata` 항목 컬렉션에는 *에 대한 메타데이터 항목을 포함하는* file1.resx*및*file2.resx`MyMetadata` 항목이 포함됩니다. `MySourceItems` 항목 컬렉션은 변경되지 않습니다.
+ 작업이 실행된 후 `MySourceItemsWithMetadata` 항목 컬렉션에는 `MyMetadata`에 대한 메타데이터 항목을 포함하는 *file1.resx* 및 *file2.resx* 항목이 포함됩니다. `MySourceItems` 항목 컬렉션은 변경되지 않습니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -120,11 +120,11 @@ public void AddItems()
 }
 ```
 
-각 메서드 정의에 대한 요약 설명에서는 해당 메서드의 매개 변수 값에 사용할 클래스를 지시합니다. 이 경우 `AddItemsParams`UIMap.cs*파일의 뒷부분에서 정의되고* 속성에서 반환되는 값 형식이기도 한 `AddItemsParams` 클래스입니다.
+각 메서드 정의에 대한 요약 설명에서는 해당 메서드의 매개 변수 값에 사용할 클래스를 지시합니다. 이 경우 *UIMap.cs* 파일의 뒷부분에서 정의되고 `AddItemsParams` 속성에서 반환되는 값 형식이기도 한 `AddItemsParams` 클래스입니다.
 
 메서드 코드 맨 위에는 메서드에서 사용할 UI 개체에 대한 지역 변수를 정의하는 `Variable Declarations` 영역이 있습니다.
 
-이 메서드에서 `UIItemWindow` 및 `UIItemEdit`는 둘 다 `UICalculatorWindow`UIMap.cs*파일의 뒷부분에서 정의되는* 클래스를 사용하여 액세스할 수 있는 속성입니다.
+이 메서드에서 `UIItemWindow` 및 `UIItemEdit`는 둘 다 *UIMap.cs* 파일의 뒷부분에서 정의되는 `UICalculatorWindow` 클래스를 사용하여 액세스할 수 있는 속성입니다.
 
 다음은 `AddItemsParams` 개체의 속성을 사용하여 키보드에서 계산기 애플리케이션으로 텍스트를 보내는 줄입니다.
 
@@ -181,7 +181,7 @@ public class AddItemsParams
 }
 ```
 
-*UIMap.cs* 파일의 모든 클래스와 마찬가지로, 이 클래스는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>로 시작합니다. 이 작은 클래스에는 앞에서 설명한 `Fields` 메서드에서 사용되는 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 메서드의 매개 변수로 사용할 문자열을 정의하는 `UIMap.AddItems()` 영역이 있습니다. 이러한 매개 변수가 사용되는 메서드를 호출하기 전에 해당 문자열 필드의 값을 바꾸는 코드를 작성할 수 있습니다.
+*UIMap.cs* 파일의 모든 클래스와 마찬가지로, 이 클래스는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>로 시작합니다. 이 작은 클래스에는 앞에서 설명한 `UIMap.AddItems()` 메서드에서 사용되는 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 메서드의 매개 변수로 사용할 문자열을 정의하는 `Fields` 영역이 있습니다. 이러한 매개 변수가 사용되는 메서드를 호출하기 전에 해당 문자열 필드의 값을 바꾸는 코드를 작성할 수 있습니다.
 
 ### <a name="uimapcs"></a><a name="UIMapCS"></a> UIMap.cs
 기본적으로 이 파일은 메서드나 속성이 없는 partial `UIMap` 클래스를 포함합니다.
@@ -257,7 +257,7 @@ public void MyTestCleanup()
 }
 ```
 
-`MyTestInitialize()` 메서드에는 다른 테스트 메서드보다 먼저 이 메서드를 호출하도록 테스트 프레임워크에 지시하는 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>가 적용되어 있습니다. 마찬가지로, `MyTestCleanup()` 메서드에는 다른 테스트 메서드가 모두 호출된 후 이 메서드를 호출하도록 테스트 프레임워크에 지시하는 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>가 적용되어 있습니다. 이러한 메서드 사용은 선택 사항입니다. 이 테스트를 위해 `UIMap.LaunchCalculator()`에서 `MyTestInitialize()` 메서드를 호출할 수 있고, `UIMap.CloseCalculator()` 대신 `MyTestCleanup()`에서 `CodedUITest1Method1()` 메서드를 호출할 수 있습니다.
+`MyTestInitialize()` 메서드에는 다른 테스트 메서드보다 먼저 이 메서드를 호출하도록 테스트 프레임워크에 지시하는 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>가 적용되어 있습니다. 마찬가지로, `MyTestCleanup()` 메서드에는 다른 테스트 메서드가 모두 호출된 후 이 메서드를 호출하도록 테스트 프레임워크에 지시하는 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>가 적용되어 있습니다. 이러한 메서드 사용은 선택 사항입니다. 이 테스트를 위해 `MyTestInitialize()`에서 `UIMap.LaunchCalculator()` 메서드를 호출할 수 있고, `CodedUITest1Method1()` 대신 `MyTestCleanup()`에서 `UIMap.CloseCalculator()` 메서드를 호출할 수 있습니다.
 
 [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120))를 사용하여 이 클래스에 더 많은 메서드를 추가하는 경우 테스트 프레임워크에서 테스트의 일부로 각 메서드를 호출합니다.
 

@@ -44,7 +44,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 4. 빌드 전 또는 빌드 후 작업에 대한 명령줄 인수를 입력한 다음 **확인**을 클릭합니다.
 
     > [!NOTE]
-    > `call`.bat*파일을 실행하는 모든 빌드 후 이벤트 명령 앞에* 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
+    > *.bat* 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
 
     > [!NOTE]
     > 빌드 전 또는 빌드 후 이벤트가 성공적으로 완료되지 않으면 성공적인 작업을 나타내는 0(영) 이외의 코드로 이벤트 작업이 종료되도록 하여 빌드를 종료할 수 있습니다.

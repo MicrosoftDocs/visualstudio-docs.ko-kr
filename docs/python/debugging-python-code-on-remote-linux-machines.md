@@ -65,7 +65,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. `ptvsd`를 사용하여 사용자 환경에 `pip3 install ptvsd` 패키지를 설치합니다.
+1. `pip3 install ptvsd`를 사용하여 사용자 환경에 `ptvsd` 패키지를 설치합니다.
    >[!NOTE]
    >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여줍니다.
 
@@ -76,10 +76,10 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
    ptvsd.enable_attach()
    ```
 
-1. 파일을 저장하고 `python3 guessing-game.py`를 실행합니다. `enable_attach`에 대한 호출이 백그라운드에서 실행되고, 달리 프로그램과 상호 작용하지 않으면 들어오는 연결을 기다립니다. 원하는 경우 디버거가 연결될 때까지 `wait_for_attach` 뒤에 `enable_attach` 함수를 호출하여 프로그램을 차단할 수 있습니다.
+1. 파일을 저장하고 `python3 guessing-game.py`를 실행합니다. `enable_attach`에 대한 호출이 백그라운드에서 실행되고, 달리 프로그램과 상호 작용하지 않으면 들어오는 연결을 기다립니다. 원하는 경우 디버거가 연결될 때까지 `enable_attach` 뒤에 `wait_for_attach` 함수를 호출하여 프로그램을 차단할 수 있습니다.
 
 > [!Tip]
-> `enable_attach` 및 `wait_for_attach` 외에도, ptvsd는 디버거가 연결되어 있으면 중단점을 프로그래밍 방식으로 작동하는 `break_into_debugger` 도우미 함수를 제공합니다. 또한 디버거가 연결되어 있으면 `is_attached`를 반환하는 `True` 함수도 있지만, 다른 `ptvsd` 함수를 호출하기 전에 이 결과를 확인할 필요가 없습니다.
+> `enable_attach` 및 `wait_for_attach` 외에도, ptvsd는 디버거가 연결되어 있으면 중단점을 프로그래밍 방식으로 작동하는 `break_into_debugger` 도우미 함수를 제공합니다. 또한 디버거가 연결되어 있으면 `True`를 반환하는 `is_attached` 함수도 있지만, 다른 `ptvsd` 함수를 호출하기 전에 이 결과를 확인할 필요가 없습니다.
 
 ## <a name="attach-remotely-from-python-tools"></a>Python 도구에서 원격으로 연결
 
@@ -111,11 +111,11 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 ### <a name="connection-troubleshooting"></a>연결 문제 해결
 
-1. **연결 형식**에 대해 **Python remote (ptvsd)** (Python 원격(ptvsd))를 선택했는지 확인합니다(이전 버전의 경우 **전송**에 대해 **Python 원격 디버깅**).
+1. **연결 형식**에 대해 **Python remote (ptvsd)**(Python 원격(ptvsd))를 선택했는지 확인합니다(이전 버전의 경우 **전송**에 대해 **Python 원격 디버깅**).
 1. **연결 대상**(또는 **한정자**)의 암호가 원격 코드의 암호와 정확히 일치하는지 확인합니다.
 1. **연결 대상**(또는 **한정자**)의 IP 주소가 원격 컴퓨터의 IP 주소와 일치하는지 확인합니다.
 1. 원격 컴퓨터에서 원격 디버깅 포트를 열었는지와 연결 대상에 `:5678`과 같은 포트 접미사를 포함했는지 확인합니다.
-    - 다른 포트를 사용해야 하는 경우 `enable_attach`에서처럼 `address` 호출에서 `ptvsd.enable_attach(address = ('0.0.0.0', 8080))` 인수를 사용하여 지정할 수 있습니다. 이 경우 방화벽에서 해당 특정 포트를 엽니다.
+    - 다른 포트를 사용해야 하는 경우 `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`에서처럼 `enable_attach` 호출에서 `address` 인수를 사용하여 지정할 수 있습니다. 이 경우 방화벽에서 해당 특정 포트를 엽니다.
 1. `pip3 list`로 반환된, 원격 컴퓨터에 설치된 ptvsd 버전이 Visual Studio에서 사용 중인 Python 도구 버전에서 사용되는 ptvsd 버전과 일치하는지 아래 표에서 확인합니다. 필요한 경우 원격 컴퓨터에서 ptvsd를 업데이트합니다.
 
     | Visual Studio 버전 | Python 도구/ptvsd 버전 |
@@ -148,9 +148,9 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
     openssl에서 메시지를 표시하면 **일반 이름**에 대해 호스트 이름 또는 IP 주소(어느 쪽이든 연결에 사용하는 항목)를 사용합니다.
 
-    (자세한 내용은 Python [ 모듈 문서의 ](https://docs.python.org/3/library/ssl.html#self-signed-certificates)Self-signed certificates`ssl`(자체 서명된 인증서)를 참조하세요. 해당 문서의 명령은 결합된 단일 파일만 생성합니다.)
+    (자세한 내용은 Python `ssl` 모듈 문서의 [Self-signed certificates](https://docs.python.org/3/library/ssl.html#self-signed-certificates)(자체 서명된 인증서)를 참조하세요. 해당 문서의 명령은 결합된 단일 파일만 생성합니다.)
 
-1. 코드에서 파일 이름을 값으로 사용하는 `enable_attach` 및 `certfile` 인수를 포함하도록 `keyfile`에 대한 호출을 수정합니다(이러한 인수는 표준 `ssl.wrap_socket` Python 함수에 대해 같은 의미를 지님).
+1. 코드에서 파일 이름을 값으로 사용하는 `certfile` 및 `keyfile` 인수를 포함하도록 `enable_attach`에 대한 호출을 수정합니다(이러한 인수는 표준 `ssl.wrap_socket` Python 함수에 대해 같은 의미를 지님).
 
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
@@ -167,7 +167,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
     1. 나타나는 창의 왼쪽에서 **신뢰할 수 있는 루트 인증 기관**을 확장하고, **인증서**를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **가져오기**를 선택합니다.
     1. 원격 컴퓨터에서 복사한 *.cer* 파일로 이동하여 이 파일을 선택한 다음, 대화 상자를 클릭하여 가져오기를 완료합니다.
 
-1. 앞에서 설명한 대로 Visual Studio에서 연결 프로세스를 반복하고 이제 `tcps://`연결 대상 **(또는** 한정자 **)에 대한 프로토콜로** 를 사용합니다.
+1. 앞에서 설명한 대로 Visual Studio에서 연결 프로세스를 반복하고 이제 **연결 대상**(또는 **한정자**)에 대한 프로토콜로 `tcps://`를 사용합니다.
 
     ![SSL로 원격 디버깅 전송 선택](media/remote-debugging-qualifier-ssl.png)
 

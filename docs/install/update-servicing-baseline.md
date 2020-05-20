@@ -38,13 +38,13 @@ ms.locfileid: "76114966"
 > 최종 버전의 부트스트래퍼와 표준 부트스트래퍼를 구분해야 합니다. 표준 부트스트래퍼는 Visual Studio의 최신 릴리스를 사용하도록 구성됩니다. 표준 부트스트래퍼는 My.VisualStudio.com에서 다운로드할 때 파일 이름에 숫자가 있습니다(예: vs_enterprise__123456789-123456789.exe).
 
 설치하는 동안 엔터프라이즈 관리자는 클라이언트가 최신 릴리스로 업데이트되지 않도록 구성해야 합니다. 다음과 같은 여러 가지 방법으로 이 작업을 수행할 수 있습니다.
-- [레이아웃 또는 로컬 폴더에서 채널 매니페스트를 사용하도록 응답 구성 파일`channelUri`의 ](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) 설정을 변경합니다.
+- [레이아웃 또는 로컬 폴더에서 채널 매니페스트를 사용하도록 응답 구성 파일](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network)의 `channelUri` 설정을 변경합니다.
 - [존재하지 않는 파일을 사용하도록 명령줄을 실행](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet)하여 channelUri를 수정합니다.
 - [클라이언트가 자동 업데이트되지 않도록 클라이언트 시스템에서 업데이트](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating)를 사용하지 않도록 정책을 설정합니다.
 
 ### <a name="install-a-servicing-baseline-on-a-network"></a>네트워크에 서비스 기준선 설치
 
-네트워크 레이아웃 설치를 사용하는 관리자는 동일한 폴더에 있는 `channelUri`channelmanifest.json*파일을 사용하도록 레이아웃의*response.json*파일에서* 값을 수정해야 합니다. 실행 단계는 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)를 참조하세요. `channelUri` 값을 변경하면 클라이언트가 레이아웃 위치에서 업데이트를 검색할 수 있습니다.
+네트워크 레이아웃 설치를 사용하는 관리자는 동일한 폴더에 있는 *channelmanifest.json* 파일을 사용하도록 레이아웃의 *response.json* 파일에서 `channelUri` 값을 수정해야 합니다. 실행 단계는 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)를 참조하세요. `channelUri` 값을 변경하면 클라이언트가 레이아웃 위치에서 업데이트를 검색할 수 있습니다.
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>인터넷을 통해 서비스 기준선 설치
 

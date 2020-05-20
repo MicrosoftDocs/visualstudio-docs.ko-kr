@@ -34,7 +34,7 @@ ms.locfileid: "75591413"
 
 1. 템플릿에 대한 *vstemplate* 파일에서 이 파일을 포함하는 `ProjectItem` 요소를 찾습니다.
 
-1. `ReplaceParameters` 요소의 `true` 특성을 `ProjectItem`로 설정합니다.
+1. `ProjectItem` 요소의 `ReplaceParameters` 특성을 `true`로 설정합니다.
 
     ```xml
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>

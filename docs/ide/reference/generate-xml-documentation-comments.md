@@ -53,7 +53,7 @@ Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식 및 멤버�
    ![완료된 주석](media/doc-style-cs.png) 
 
 > [!NOTE]
-> C#에서 [ 또는 Visual Basic에서 ](../../ide/reference/options-text-editor-csharp-advanced.md)를 입력한 후 XML 문서 주석을 설정/해제하는 `///`옵션`'''`이 있습니다. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음, **텍스트 편집기** > **C#** 또는 **기본** > **고급**으로 이동합니다. **편집기 도움말** 섹션에서 **XML 문서 주석 생성** 옵션을 찾습니다.
+> C#에서 `///` 또는 Visual Basic에서 `'''`를 입력한 후 XML 문서 주석을 설정/해제하는 [옵션](../../ide/reference/options-text-editor-csharp-advanced.md)이 있습니다. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음, **텍스트 편집기** > **C#** 또는 **기본** > **고급**으로 이동합니다. **편집기 도움말** 섹션에서 **XML 문서 주석 생성** 옵션을 찾습니다.
 
 ## <a name="see-also"></a>참고 항목
 

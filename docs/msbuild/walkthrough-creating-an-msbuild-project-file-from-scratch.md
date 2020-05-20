@@ -51,7 +51,7 @@ ms.locfileid: "78263138"
 
  이 섹션에서는 텍스트 편집기를 사용하여 최소 C# 애플리케이션 소스 파일을 만드는 방법을 보여 줍니다.
 
-1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서 *’ 또는 ‘\바탕 화면\\’).* *\\*
+1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’).
 
 2. **md HelloWorld**를 입력하여 *\HelloWorld\\* 라는 하위 폴더를 만듭니다.
 
@@ -163,7 +163,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 
 명령 프롬프트에 **set PATH=%PATH%;%ProgramFiles%\MSBuild** 또는 **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**를 입력합니다.
 
-또는 Visual Studio가 설치되어 있는 경우 **MSBuild** 폴더를 포함하는 경로가 있는 *Visual Studio용 개발자 명령 프롬프트*를 사용할 수 있습니다.
+또는 Visual Studio가 설치되어 있는 경우 *MSBuild* 폴더를 포함하는 경로가 있는 **Visual Studio용 개발자 명령 프롬프트**를 사용할 수 있습니다.
 
 ## <a name="build-the-application"></a>애플리케이션 빌드
 
@@ -240,7 +240,7 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 ```
 
 > [!NOTE]
-> \\ 요소에 백슬래시(`OutputPath`) 경로 구분 기호를 지정할 때는 `OutputAssembly` 작업의 `Csc` 특성에 해당 기호를 추가하는 대신 폴더 이름의 끝에 기호를 추가하는 것이 좋습니다. 따라서
+> `OutputPath` 요소에 백슬래시(\\) 경로 구분 기호를 지정할 때는 `Csc` 작업의 `OutputAssembly` 특성에 해당 기호를 추가하는 대신 폴더 이름의 끝에 기호를 추가하는 것이 좋습니다. 따라서
 >
 > `<OutputPath>Bin\</OutputPath>`
 >

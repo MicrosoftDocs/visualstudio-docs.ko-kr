@@ -25,7 +25,7 @@ ms.locfileid: "75592232"
 
 특정 값 형식에 항상 정의된 값이 포함되거나 필요한 것은 아닙니다. 이는 일부 필드에 값이 할당되지 않을 수 있는 데이터베이스에서 일반적인 경우입니다. 예를 들어 데이터베이스 필드에 null 값을 할당하여 아직 값이 할당되지 않았음을 나타낼 수 있습니다.
 
-*Nullable 형식*은 해당 형식에 대한 일반적인 값 범위 및 null 값도 사용하도록 확장하는 값 형식입니다. Nullable`Int32`Int32>로도 나타내는 \<의 nullable에는 -2147483648에서 2147483647까지 값이 할당되거나 null 값이 할당될 수 있습니다. Nullable\<bool>에는 `True`, `False` 또는 null(전혀 값이 없음) 값이 할당될 수 있습니다.
+*Nullable 형식*은 해당 형식에 대한 일반적인 값 범위 및 null 값도 사용하도록 확장하는 값 형식입니다. Nullable\<Int32>로도 나타내는 `Int32`의 nullable에는 -2147483648에서 2147483647까지 값이 할당되거나 null 값이 할당될 수 있습니다. Nullable\<bool>에는 `True`, `False` 또는 null(전혀 값이 없음) 값이 할당될 수 있습니다.
 
 Nullable 형식은 <xref:System.Nullable%601> 구조체의 인스턴스입니다. Nullable 형식의 각 인스턴스에는 두 개의 public 읽기 전용 속성 `HasValue` 및 `Value`가 포함됩니다.
 

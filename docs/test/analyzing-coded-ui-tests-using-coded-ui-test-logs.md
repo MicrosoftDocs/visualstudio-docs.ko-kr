@@ -28,7 +28,7 @@ ms.locfileid: "75591218"
 
    1. 테스트를 실행할 때 어떤 *QTAgent\*.exe* 프로세스를 시작할지 결정합니다. 이것을 결정하는 한 가지 방법은 Windows **작업 관리자**에서 **세부 정보** 탭을 확인하는 것입니다.
 
-   2. *%ProgramFiles(x86)%\Microsoft Visual Studio* *version>\\\<edition>\Common7\IDE\\ 폴더에서 해당 \<.config* 파일을 엽니다. 예를 들어 *QTAgent_40.exe* 프로세스를 실행하는 경우에는 *QTAgent_40.exe.config*를 엽니다.
+   2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* 폴더에서 해당 *.config* 파일을 엽니다. 예를 들어 *QTAgent_40.exe* 프로세스를 실행하는 경우에는 *QTAgent_40.exe.config*를 엽니다.
 
    2. **EqtTraceLevel**의 값을 원하는 로그 수준으로 수정합니다.
 

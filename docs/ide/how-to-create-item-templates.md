@@ -72,7 +72,7 @@ ms.locfileid: "75594723"
 
 Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 유형에만 템플릿이 표시되도록 지정할 수 있습니다.
 
-1. `ProjectType`.vstemplate*파일에서 항목 템플릿에 대한* 요소를 찾습니다.
+1. *.vstemplate* 파일에서 항목 템플릿에 대한 `ProjectType` 요소를 찾습니다.
 
 1. [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소 바로 뒤에 `ProjectType` 요소를 추가합니다.
 

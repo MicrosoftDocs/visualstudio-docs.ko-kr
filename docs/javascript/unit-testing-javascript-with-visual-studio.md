@@ -75,7 +75,7 @@ describe('Test Suite 1', function() {
 ![테스트 탐색기](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> 테스트 탐색기는 TypeScript 파일에서 단위 테스트를 찾을 수 없으므로 `outdir`tsconfig.json`outfile`에서 *또는* 옵션을 사용하지 않습니다.
+> 테스트 탐색기는 TypeScript 파일에서 단위 테스트를 찾을 수 없으므로 *tsconfig.json*에서 `outdir` 또는 `outfile` 옵션을 사용하지 않습니다.
 
 ## <a name="run-tests"></a>테스트 실행
 

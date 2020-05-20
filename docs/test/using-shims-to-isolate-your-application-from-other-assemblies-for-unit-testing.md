@@ -88,7 +88,7 @@ public void Y2kCheckerTest() {
 }
 ```
 
-각 shim 컨텍스트를 올바르게 삭제하는 것이 중요합니다. 경험상, `ShimsContext.Create` 문 내에서 `using`를 호출하여 등록된 shim이 제대로 지워지도록 합니다. 예를 들어 항상 2000년 1월 1일을 반환하는 대리자로 `DateTime.Now` 메서드를 대체하는 테스트 메서드에 대해 shim을 등록할 수 있습니다. 테스트 메서드에서 등록된 shim을 지우지 않으면 테스트 실행의 나머지 부분에서 항상 2000년 1월 1일을 `DateTime.Now` 값으로 반환합니다. 이 결과는 놀라움과 혼동을 줄 수 있습니다.
+각 shim 컨텍스트를 올바르게 삭제하는 것이 중요합니다. 경험상, `using` 문 내에서 `ShimsContext.Create`를 호출하여 등록된 shim이 제대로 지워지도록 합니다. 예를 들어 항상 2000년 1월 1일을 반환하는 대리자로 `DateTime.Now` 메서드를 대체하는 테스트 메서드에 대해 shim을 등록할 수 있습니다. 테스트 메서드에서 등록된 shim을 지우지 않으면 테스트 실행의 나머지 부분에서 항상 2000년 1월 1일을 `DateTime.Now` 값으로 반환합니다. 이 결과는 놀라움과 혼동을 줄 수 있습니다.
 
 ### <a name="write-a-test-with-shims"></a>shim을 사용하여 테스트 작성
 
@@ -165,7 +165,7 @@ shim 형식을 사용하여 정적 메서드 또는 비가상 메서드를 포�
 
 ### <a name="static-methods"></a>정적 메서드
 
-정적 메서드에 shim을 연결하는 속성은 shim 형식에 배치됩니다. 각 속성에는 대상 메서드에 대리자를 연결하는 데 사용할 수 있는 setter만 있습니다. 예를 들어 정적 메서드 `MyClass`를 포함하는 `MyMethod` 클래스가 있다고 가정합니다.
+정적 메서드에 shim을 연결하는 속성은 shim 형식에 배치됩니다. 각 속성에는 대상 메서드에 대리자를 연결하는 데 사용할 수 있는 setter만 있습니다. 예를 들어 정적 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 //code under test
@@ -185,7 +185,7 @@ ShimMyClass.MyMethod = () => 5;
 
 ### <a name="instance-methods-for-all-instances"></a>모든 인스턴스에 대한 인스턴스 메서드
 
-정적 메서드와 마찬가지로, 모든 인스턴스에 대해 인스턴스 메서드를 shim할 수 있습니다. 이러한 shim을 연결할 속성은 혼동을 피하기 위해 AllInstances라는 중첩된 형식에 배치됩니다. 예를 들어 인스턴스 메서드 `MyClass`를 포함하는 `MyMethod` 클래스가 있다고 가정합니다.
+정적 메서드와 마찬가지로, 모든 인스턴스에 대해 인스턴스 메서드를 shim할 수 있습니다. 이러한 shim을 연결할 속성은 혼동을 피하기 위해 AllInstances라는 중첩된 형식에 배치됩니다. 예를 들어 인스턴스 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 // code under test
@@ -224,7 +224,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 호출 수신자에 따라 다른 대리자가 인스턴스 메서드를 shim할 수도 있습니다. 이렇게 하면 동일한 인스턴스 메서드가 형식 인스턴스별로 다른 동작을 수행할 수 있습니다. 이러한 shim을 설정하는 속성은 shim 형식 자체의 인스턴스 메서드입니다. 인스턴스화된 각 shim 형식은 shim된 형식의 원시 인스턴스에도 연결됩니다.
 
-예를 들어 인스턴스 메서드 `MyClass`를 포함하는 `MyMethod` 클래스가 있다고 가정합니다.
+예를 들어 인스턴스 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 // code under test
@@ -335,7 +335,7 @@ public class ShimMyClass : ShimBase<MyClass>
 
 기본 형식에 대한 shim을 만들고 기본 shim 클래스의 생성자에 자식 인스턴스를 매개 변수로 전달하여 기본 멤버의 shim 속성에 액세스할 수 있습니다.
 
-예를 들어 인스턴스 메서드 `MyBase` 및 하위 형식 `MyMethod`를 포함하는 `MyChild` 클래스가 있다고 가정합니다.
+예를 들어 인스턴스 메서드 `MyMethod` 및 하위 형식 `MyChild`를 포함하는 `MyBase` 클래스가 있다고 가정합니다.
 
 ```csharp
 public abstract class MyBase {
@@ -348,7 +348,7 @@ public class MyChild : MyBase {
 }
 ```
 
-새로운 `MyBase` shim을 만들어 `ShimMyBase`의 shim을 설정할 수 있습니다.
+새로운 `ShimMyBase` shim을 만들어 `MyBase`의 shim을 설정할 수 있습니다.
 
 ```csharp
 // unit test code
@@ -390,7 +390,7 @@ Fakes 코드 생성기는 서명에 표시되는 형식, 즉 표시되는 매개
 
 shim된 형식이 인터페이스를 구현하는 경우 코드 생성기에서 해당 인터페이스의 모든 멤버를 한 번에 바인딩할 수 있는 메서드를 내보냅니다.
 
-예를 들어 `MyClass`를 구현하는 `IEnumerable<int>` 클래스가 있다고 가정합니다.
+예를 들어 `IEnumerable<int>`를 구현하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 public class MyClass : IEnumerable<int> {
@@ -435,7 +435,7 @@ var shim = new ShimMyClass();
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
 ```
 
-정적 `InstanceBehavior` 속성을 설정하여 `ShimsBehaviors.Current` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
+정적 `ShimsBehaviors.Current` 속성을 설정하여 `InstanceBehavior` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
 
 ```csharp
 // unit test code
@@ -446,7 +446,7 @@ ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
 
 ## <a name="detect-environment-accesses"></a>환경 액세스 검색
 
-해당 shim 형식의 정적 속성 `ShimsBehaviors.NotImplemented`에 `Behavior` 동작을 할당하면 정적 메서드를 포함하여 특정 형식의 모든 메서드에 동작을 연결할 수 있습니다.
+해당 shim 형식의 정적 속성 `Behavior`에 `ShimsBehaviors.NotImplemented` 동작을 할당하면 정적 메서드를 포함하여 특정 형식의 모든 메서드에 동작을 연결할 수 있습니다.
 
 ```csharp
 // unit test code

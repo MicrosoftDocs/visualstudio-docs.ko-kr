@@ -447,7 +447,7 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType>은 인쇄 후 줄 종결자를 추가하지 않는다는 점에서 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>과 약간 다릅니다. 즉, 출력으로 전송되는 다음 텍스트가 같은 줄에 인쇄됩니다. 코드에서 이러한 각 메서드 위로 마우스를 가져가면 설명을 볼 수 있습니다.
 
-7. 다음으로, 리팩터링을 다시 사용하여 코드를 좀 더 간결하게 만듭니다. `now` 줄에서 변수 `Dim now = Date.Now`를 클릭합니다.
+7. 다음으로, 리팩터링을 다시 사용하여 코드를 좀 더 간결하게 만듭니다. `Dim now = Date.Now` 줄에서 변수 `now`를 클릭합니다.
 
    해당 줄의 여백에 작은 스크루드라이버 아이콘이 나타납니다.
 

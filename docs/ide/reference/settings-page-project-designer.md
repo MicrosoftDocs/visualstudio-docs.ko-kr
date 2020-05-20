@@ -45,13 +45,13 @@ C# 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.cs* 파�
 Properties.Settings.Default.Save();
 ```
 
-Visual Basic 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.vb* 파일의 코드를 볼 수 있습니다. 이 파일은 `MySettings` 개체에서 특정 이벤트를 처리할 수 있도록 하는 `My.Settings` 클래스를 정의합니다. `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스하는 방법에 대한 자세한 내용은 [애플리케이션 설정 액세스](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
+Visual Basic 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.vb* 파일의 코드를 볼 수 있습니다. 이 파일은 `My.Settings` 개체에서 특정 이벤트를 처리할 수 있도록 하는 `MySettings` 클래스를 정의합니다. `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스하는 방법에 대한 자세한 내용은 [애플리케이션 설정 액세스](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
 
 애플리케이션 설정에 대한 자세한 내용은 [Windows Forms에 대한 애플리케이션 설정 개요](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms)를 참조하세요.
 
 **액세스 한정자**
 
-**액세스 한정자** 단추는 Visual Studio가 `Properties.Settings`Settings.Designer.cs`My.Settings` 또는 *Settings.Designer.vb*에서 생성하는 *(C#) 또는* (Visual Basic) 도우미 클래스의 액세스 수준을 지정합니다.
+**액세스 한정자** 단추는 Visual Studio가 *Settings.Designer.cs* 또는 *Settings.Designer.vb*에서 생성하는 `Properties.Settings`(C#) 또는 `My.Settings`(Visual Basic) 도우미 클래스의 액세스 수준을 지정합니다.
 
 Visual C# 프로젝트의 경우 액세스 한정자는 **Internal** 또는 **Public**일 수 있습니다.
 
