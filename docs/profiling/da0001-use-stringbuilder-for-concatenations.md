@@ -42,4 +42,4 @@ ms.locfileid: "74779508"
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법
  **오류 목록** 창에서 메시지를 두 번 클릭하여 샘플링 프로필 데이터의 [함수 정보 뷰](../profiling/function-details-view.md)로 이동합니다. 문자열 연결을 가장 자주 사용하는 프로그램 섹션을 찾습니다. 빈번한 문자열 연결 작업을 포함하여 복잡한 문자열 조작에 StringBuilder 클래스를 사용합니다.
 
- 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations)의 [문자열 작업](/previous-versions/msp-n-p/ff647790(v=pandp.10)) 섹션을 참조하세요.
+ 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](/previous-versions/msp-n-p/ff647790(v=pandp.10))의 [문자열 작업](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) 섹션을 참조하세요.

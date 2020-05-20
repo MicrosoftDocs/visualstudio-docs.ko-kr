@@ -55,7 +55,7 @@ IntelliTest에서 개체를 생성해야 할 경우 필요에 따라 생성자 �
 <a name="parameterized-unit-testing"></a>
 ## <a name="parameterized-unit-testing"></a>매개 변수가 있는 유닛 테스트
 
-PUT(*매개 변수가 있는 단위 테스트*)는 매개 변수를 사용하는 테스트입니다. 일반적으로 폐쇄형 메서드인 기존 단위 테스트와 달리 PUT는 모든 매개 변수 집합을 사용합니다. 그렇게 간단한가요? 예 - 기존 테스트에서는 IntelliTest가 테스트에서 도달할 수 있는 코드를 [완전히 검사](input-generation.md)하는 [(최소) 입력 집합을 생성](input-generation.md#dynamic-code-coverage)하려고 합니다.
+PUT(*매개 변수가 있는 단위 테스트*)는 매개 변수를 사용하는 테스트입니다. 일반적으로 폐쇄형 메서드인 기존 단위 테스트와 달리 PUT는 모든 매개 변수 집합을 사용합니다. 그렇게 간단한가요? 예 - 기존 테스트에서는 IntelliTest가 테스트에서 도달할 수 있는 코드를 [완전히 검사](input-generation.md#dynamic-code-coverage)하는 [(최소) 입력 집합을 생성](input-generation.md)하려고 합니다.
 
 PUT는 MSTest(또는 NUnit, xUnit)와 비슷한 방식으로 [PexMethod](attribute-glossary.md#pexmethod) 사용자 지정 특성을 사용하여 정의됩니다. PUT는 [PexClass](attribute-glossary.md#pexclass) 태그가 지정된 클래스에서 논리적으로 그룹화되는 인스턴스 메서드입니다. 다음 예제에서는 **MyPexTest** 클래스에 저장된 간단한 PUT를 보여 줍니다.
 
