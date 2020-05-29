@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b888dbbe7a26e5ff333ec39aa0fdfcec90b429
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586206"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182809"
 ---
 # <a name="reliability-warnings"></a>안정성 경고
 
@@ -33,5 +33,7 @@ ms.locfileid: "82586206"
 |[CA2003: 파이버를 스레드로 취급하지 마세요.](../code-quality/ca2003.md)|관리 되는 스레드가 Win32 스레드로 처리 되 고 있습니다.|
 |[CA2004: GC.KeepAlive에 대한 호출을 제거하세요.](../code-quality/ca2004.md)|SafeHandle 사용으로 변환 하는 경우 GC에 대 한 모든 호출을 제거 합니다. KeepAlive (개체). 이 경우 클래스는 GC를 호출할 필요가 없습니다. KeepAlive는 종료 자가 없지만 SafeHandle을 사용 하 여이에 대 한 OS 핸들을 마무리 한다고 가정 합니다.|
 |[CA2006: SafeHandle을 사용하여 네이티브 리소스를 캡슐화하세요.](../code-quality/ca2006.md)|관리 코드에 IntPtr을 사용하는 것은 잠재적인 보안 및 안정성 문제를 나타냅니다. IntPtr을 사용할 때마다 SafeHandle 또는 유사한 기술을 대신 사용해야 하는지 여부를 결정하도록 검토해야 합니다.|
-|[CA2007: 작업을 직접 대기하지 마세요.](../code-quality/ca2007.md)|비동기 메서드는 [awaits](/dotnet/csharp/language-reference/keywords/await) 를 <xref:System.Threading.Tasks.Task> 직접 기다립니다 합니다.|
-|[CA2009: ImmutableCollection 값에 대해 ToImmutableCollection를 호출 하지 마십시오.](../code-quality/ca2009.md)|`ToImmutable`네임 스페이스의 <xref:System.Collections.Immutable> 변경할 수 없는 컬렉션에 대해 메서드를 불필요 하 게 호출 했습니다.|
+|[CA2007: 작업을 직접 대기하지 마세요.](../code-quality/ca2007.md)|비동기 메서드는를 직접 [기다립니다](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> 합니다.|
+|[CA2009: ImmutableCollection 값의 ToImmutableCollection을 호출하지 마세요.](../code-quality/ca2009.md)|`ToImmutable`네임 스페이스의 변경할 수 없는 컬렉션에 대해 메서드를 불필요 하 게 호출 했습니다 <xref:System.Collections.Immutable> .|
+|[CA2011: setter 내에서 속성을 할당 하지 마십시오.](../code-quality/ca2011.md) | 속성에 해당 하는 자체 [set 접근자](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)내에 값이 실수로 할당 되었습니다. |
+|[CA2015: MemoryManager T에서 파생 된 형식에 대 한 종료자를 정의 하지 않습니다. &lt;&gt;](../code-quality/ca2015.md) | 에서 파생 된 형식에 종료자를 추가 하면에서 <xref:System.Buffers.MemoryManager%601> 아직 사용 중인 메모리를 해제할 수 있습니다 <xref:System.Span%601> . |
