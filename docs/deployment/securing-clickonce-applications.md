@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d447a33e73c2f27598b027788b3cf1dcd2822b
-ms.sourcegitcommit: 960bab34e126c9ca449560a76a839a8f8c3263fb
+ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82139639"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184447"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce 애플리케이션 보안
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에서는 .NET Framework의 코드 액세스 보안 제한에 따라 보호된 리소스 및 작업에 대한 코드의 액세스를 제한합니다. 따라서 코드 액세스 보안의 의미를 이해하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 적절하게 작성해야 합니다. 애플리케이션에서는 완전 신뢰 영역이나 부분 신뢰 영역(예: 인터넷 및 인트라넷 영역)을 사용하여 액세스를 제한할 수 있습니다.
@@ -41,11 +41,11 @@ ms.locfileid: "82139639"
  기본 사용 권한은 애플리케이션의 원래 버전이 배포된 위치를 기반으로 하며, 애플리케이션 업데이트 시 해당 사용 권한이 상속됩니다. 애플리케이션이 웹 또는 네트워크 위치에서 업데이트를 확인하도록 구성되어 있고 최신 버전이 사용 가능하면 원래 설치된 버전에서 완전 신뢰 권한 대신 인터넷 또는 인트라넷 영역에 대한 사용 권한을 받을 수 있습니다. 시스템 관리자가 특정 애플리케이션 게시자를 신뢰할 수 있는 소스로 정의하는 ClickOnce 배포 정책을 지정하여 해당 메시지가 표시되지 않게 할 수도 있습니다. 이 정책이 배포되는 컴퓨터의 경우 사용 권한이 자동으로 부여되므로 사용자에게 관련 메시지가 표시되지 않습니다. 자세한 내용은 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)을 참조하십시오. 신뢰할 수 있는 애플리케이션 배포를 구성하기 위해 인증서를 컴퓨터 또는 엔터프라이즈 수준에 설치할 수 있습니다. 자세한 내용은 [방법: ClickOnce 애플리케이션에 대 한 클라이언트 컴퓨터에 대 한 Add a Trusted Publisher](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)합니다.
 
 ## <a name="code-access-security-policies"></a>코드 액세스 보안 정책
- 응용 프로그램에 대 한 사용 권한은 응용 프로그램 매니페스트의 [ \<trustinfo> element](../deployment/trustinfo-element-clickonce-application.md) 요소의 설정에 따라 결정 됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 프로젝트의 **보안** 속성 페이지에 있는 설정을 기반으로이 정보를 자동으로 생성 합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에는 요청된 특정 권한만 부여됩니다. 예를 들어, 파일에 액세스하는 데 완전 신뢰 권한이 필요할 때 애플리케이션에서 파일 액세스 권한을 요청하면 완전 신뢰 권한이 아니라 파일 액세스 권한만 부여됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 개발할 때, 애플리케이션에서 필요한 특정 권한만 요청해야 합니다. 대부분의 경우, 인터넷 또는 로컬 인트라넷 영역을 사용하여 애플리케이션을 부분 신뢰로 제한할 수 있습니다. 자세한 내용은 [How to: Set a security zone for a ClickOnce application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)을 참조 하세요. 애플리케이션에 사용자 지정 권한이 필요한 경우 사용자 지정 영역을 만들 수 있습니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)을 참조 하세요.
+ 응용 프로그램에 대 한 사용 권한은 응용 프로그램 매니페스트의 [ \<trustInfo> 요소](../deployment/trustinfo-element-clickonce-application.md) 요소에 있는 설정에 따라 결정 됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 프로젝트의 **보안** 속성 페이지에 있는 설정을 기반으로이 정보를 자동으로 생성 합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에는 요청된 특정 권한만 부여됩니다. 예를 들어, 파일에 액세스하는 데 완전 신뢰 권한이 필요할 때 애플리케이션에서 파일 액세스 권한을 요청하면 완전 신뢰 권한이 아니라 파일 액세스 권한만 부여됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 개발할 때, 애플리케이션에서 필요한 특정 권한만 요청해야 합니다. 대부분의 경우, 인터넷 또는 로컬 인트라넷 영역을 사용하여 애플리케이션을 부분 신뢰로 제한할 수 있습니다. 자세한 내용은 [How to: Set a security zone for a ClickOnce application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)을 참조 하세요. 애플리케이션에 사용자 지정 권한이 필요한 경우 사용자 지정 영역을 만들 수 있습니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)을 참조 하세요.
 
  애플리케이션이 배포되는 영역의 기본 권한 집합에 속하지 않는 권한을 포함하면 설치 또는 업데이트 시 권한을 부여하라는 메시지가 나타납니다. 시스템 관리자가 특정 애플리케이션 게시자를 신뢰할 수 있는 소스로 정의하는 ClickOnce 배포 정책을 지정하여 해당 메시지가 표시되지 않게 할 수도 있습니다. 이 정책이 배포되는 컴퓨터에서는 사용 권한이 자동으로 부여되므로 사용자에게 관련 메시지가 표시되지 않습니다.
 
- 개발자는 적절한 사용 권한으로 애플리케이션이 실행되도록 해야 합니다. 애플리케이션이 런타임에 영역 외부에서 권한을 요청하는 경우 보안 예외가 발생할 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 는 대상 보안 영역에서 애플리케이션을 디버깅할 수 있도록 합니다. 또한, 보안 애플리케이션 개발에 대한 도움말을 제공 합니다. 자세한 내용은 [system.object를 사용 하는 ClickOnce 응용 프로그램 디버그](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)를 참조 하세요.
+ 개발자는 적절한 사용 권한으로 애플리케이션이 실행되도록 해야 합니다. 애플리케이션이 런타임에 영역 외부에서 권한을 요청하는 경우 보안 예외가 발생할 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]대상 보안 영역에서 응용 프로그램을 디버그할 수 있도록 하 고 보안 응용 프로그램 개발에 대 한 도움말을 제공 합니다. 자세한 내용은 [system.object를 사용 하는 ClickOnce 응용 프로그램 디버그](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)를 참조 하세요.
 
  코드 액세스 보안 및 ClickOnce에 대 한 자세한 내용은 [clickonce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조 하세요.
 
@@ -76,6 +76,6 @@ ms.locfileid: "82139639"
 ## <a name="deploying-obfuscated-assemblies"></a>난독 처리된 어셈블리 배포
  Visual Studio에는 체험판 [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md)가 포함되어 있어 코드 난독 처리 및 활성 보호 조치를 통해 ClickOnce 애플리케이션을 보호하는 데 사용할 수 있습니다.  자세한 내용은 [Dotfuscator Community 사용자 가이드의 ClickOnce 섹션](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
