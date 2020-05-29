@@ -9,25 +9,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a5f918cac9d2b9e97c047e8823d7702768134336
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: c3d622d52e6ae1c1e25563fdbb05f68a9ecc91d0
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489677"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180001"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>방법: Visual Studio에서 Azure 클라우드 서비스로 웹 애플리케이션 마이그레이션 및 게시
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>방법: Visual Studio에서 Azure 클라우드 서비스로 웹 응용 프로그램 마이그레이션 및 게시
 
 Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플리케이션을 Azure 클라우드 서비스로 마이그레이션 및 배포해야 하는 경우가 있습니다. 최소의 변경 작업만 수행하면 됩니다. 이 문서에서는 클라우드 서비스에 배포하는 내용만 다룹니다. App Service에 대한 내용은 [Azure App Service에 웹앱 배포](/azure/app-service/app-service-deploy-local-git)를 참조하세요.
 
 > [!Important]
-> 이 마이그레이션은 특정 ASP.NET, Silverlight, WCF 및 WCF 워크플로 프로젝트에만 지원됩니다. ASP.NET Core 프로젝트에는 지원되지 않습니다. [지원되는 프로젝트 템플릿](#supported-project-templates)을 참조하세요.
+> 이 마이그레이션은 특정 ASP.NET, WCF 및 WCF 워크플로 프로젝트에 대해서만 지원 됩니다. ASP.NET Core 프로젝트에는 지원되지 않습니다. [지원되는 프로젝트 템플릿](#supported-project-templates)을 참조하세요.
 
 ## <a name="migrate-a-project-to-cloud-services"></a>프로젝트를 클라우드 서비스로 마이그레이션
 
-1. 웹 애플리케이션 프로젝트를 마우스 오른쪽 단추로 클릭하고 **변환 &gt; Microsoft Azure 클라우드 서비스 프로젝트로 변환**을 선택합니다. (솔루션에 이미 웹 역할 프로젝트가 있으면 이 명령이 표시되지 않습니다.)
-1. Visual Studio는 필요한 웹 역할이 포함된 솔루션에 클라우드 서비스 프로젝트를 만듭니다. 이 프로젝트의 이름은 애플리케이션 프로젝트의 이름에 `.Azure` 접미사를 붙여서 만듭니다.
-1. 또한 Visual Studio는 MVC 2, MVC 3, MVC 4, Silverlight Business Applications에 필요한 어셈블리의 **Copy Local** 속성을 true로 설정합니다. 이 속성은 이러한 어셈블리를 배포에 사용되는 서비스 패키지에 추가합니다.
+1. 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가 > 새 프로젝트 ...** 를 선택 하 고 새 **Azure 클라우드 서비스 (클래식)** 프로젝트를 기존 솔루션에 추가 합니다.
+1. **새 Microsoft Azure 클라우드 서비스 (클래식)** 대화 상자에서 프로젝트에 역할을 추가 하지 않고 확인을 클릭 합니다.
+1. 새로 추가 된 Cloud Services 프로젝트에서 역할 노드를 마우스 오른쪽 단추로 클릭 하 고 **솔루션에서 웹 역할 프로젝트 추가**...를 선택 합니다.
+1. **역할 프로젝트에 연결** 대화 상자에서 웹 역할로 연결할 프로젝트를 선택 합니다.
 
    > [!Important]
    > 이 웹 애플리케이션에 필요한 다른 어셈블리 또는 파일이 있는 경우 이러한 파일에 대한 속성을 수동으로 설정해야 합니다. 이러한 속성을 설정하는 방법은 [서비스 패키지에 파일 포함](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package)을 참조하세요.
@@ -79,7 +80,6 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 | --- | --- |
 | ASP.NET 웹 애플리케이션<br/>(MVC 2, MVC 3, MVC 4 포함) | **Azure 활동 로그**의 **배포** 탭에서 URL을 선택합니다. |
 | ASP.NET 빈 웹 애플리케이션 | 애플리케이션에 기본 `.aspx` 페이지가 있는 경우 **Azure 활동 로그**의 **배포** 탭에서 URL을 선택합니다. 다른 페이지로 이동하려면 브라우저에서 `<deployment_url>/<page_name>.aspx` 양식의 URL을 입력합니다. |
-| Silverlight 애플리케이션<br/>Silverlight 비즈니스 애플리케이션<br/>Silverlight 탐색 애플리케이션 | `<deployment_url>/<page_name>.aspx` URL 양식을 사용하여 애플리케이션의 특정 페이지로 이동합니다. |
 | WCF 서비스 애플리케이션<br/>WCF 워크플로 서비스 애플리케이션 | `.svc` 파일을 WCF 서비스 프로젝트의 시작 페이지로 설정합니다. 그런 다음 `<deployment_url>/<service_file>.svc`로 이동합니다. |
 | ASP.NET 동적 엔터티<br/>SQL에 대한 ASP.NET Dynamic Data Linq | 다음 섹션의 설명에 따라 연결 문자열을 업데이트합니다. 그런 다음 `<deployment_url>/<page_name>.aspx`로 이동합니다. Linq to SQL의 경우 Azure SQL 데이터베이스를 사용해야 합니다. |
 
@@ -117,9 +117,6 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 | 웹 | ASP.NET MVC 2 빈 웹 애플리케이션 |
 | 웹 | ASP.NET 동적 데이터 엔터티 웹 애플리케이션 |
 | 웹 | SQL 웹 애플리케이션에 대한 ASP.NET Dynamic Data Linq |
-| Silverlight | Silverlight 애플리케이션 |
-| Silverlight | Silverlight 비즈니스 애플리케이션 |
-| Silverlight | Silverlight 탐색 애플리케이션 |
 | WCF | WCF 서비스 애플리케이션 |
 | WCF | WCF 워크플로 서비스 애플리케이션 |
 | 워크플로 | WCF 워크플로 서비스 애플리케이션 |
@@ -127,4 +124,4 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 ## <a name="next-steps"></a>다음 단계
 
 - [Visual Studio에서 Azure 애플리케이션 게시 또는 배포 준비](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
-- [명명된 인증 자격 증명 설정](vs-azure-tools-setting-up-named-authentication-credentials.md).
+- [명명 된 인증 자격 증명을 설정](vs-azure-tools-setting-up-named-authentication-credentials.md)합니다.
