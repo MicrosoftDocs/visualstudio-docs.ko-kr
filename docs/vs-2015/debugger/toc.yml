@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: 실행 중인 프로세스에 연결
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: 기호 파일(.pdb) 및 원본 파일 지정
+    - name: 기호 파일(.pdb) 및 소스 파일 지정
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: 64비트 애플리케이션 디버그
       href: debug-64-bit-applications.md
@@ -134,7 +134,7 @@
               href: web-control-library-managed-code.md
         - name: 콘솔 프로젝트
           href: debugging-preparation-console-projects.md
-        - name: ASP.NET 웹 응용 프로그램
+        - name: ASP.NET 웹 애플리케이션
           href: debugging-preparation-aspnet-web-applications.md
         - name: Visual Studio 솔루션에 포함되지 않는 실행 파일 디버그
           href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: 숨겨진 디버거 명령 복원
       href: how-to-restore-hidden-debugger-commands.md
-- name: 원격 디버깅
+- name: Remote Debugging
   items:
-    - name: 원격 디버깅
+    - name: Remote Debugging
       href: remote-debugging.md
     - name: 원격 디버깅을 위해 Windows 방화벽 구성
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -244,8 +244,6 @@
       items:
         - name: 원격 디버깅 오류 및 문제 해결
           href: remote-debugging-errors-and-troubleshooting.md
-        - name: 원격 컴퓨터의 Microsoft Visual Studio 원격 디버깅 모니터가 이 컴퓨터에 연결할 수 있는 권한이 없습니다.
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
         - name: 원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다.
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: 원격 컴퓨터의 Microsoft Visual Studio 원격 디버깅 모니터가 다른 사용자로 실행 중입니다.
@@ -258,8 +256,6 @@
           href: error-kerberos-authentication-failed.md
         - name: 대상 컴퓨터에서 DNS가 올바르게 구성되었는지 확인
           href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
-        - name: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
         - name: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
           href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
         - name: DCOM 통신을 초기화할 수 없음
@@ -278,7 +274,7 @@
           href: error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md
         - name: IIS에서 웹 사이트 작업자 프로세스를 종료했습니다.
           href: error-web-site-worker-process-has-been-terminated-by-iis.md
-        - name: 머신 \<name>에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다.
+        - name: 컴퓨터 \<name>에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다.
           href: error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md
         - name: 혼합 모드 디버깅은 Microsoft .NET Framework 2.0 이상을 사용할 때만 지원됩니다.
           href: error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md
@@ -424,7 +420,7 @@
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: 권장되는 속성 설정
               href: managed-debugging-recommended-property-settings.md
-            - name: Windows Forms 응용 프로그램
+            - name: Windows Forms 애플리케이션
               href: debugging-preparation-windows-forms-applications.md
             - name: Windows 서비스
               href: debugging-preparation-windows-services.md
@@ -564,7 +560,7 @@
           href: visual-studio-graphics-diagnostics.md
         - name: 개요
           href: overview-of-visual-studio-graphics-diagnostics.md
-        - name: 시작하기
+        - name: 시작
           href: getting-started-with-visual-studio-graphics-diagnostics.md
         - name: 그래픽 정보 캡처
           href: capturing-graphics-information.md
@@ -628,9 +624,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: ARM 디바이스에서 그래픽 진단 사용
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: 참조
+        - name: 참고
           items:
-            - name: 참조
+            - name: 참고
               href: reference-programmatic-capture.md
             - name: VsgDbg 클래스
               items:
@@ -764,7 +760,7 @@
       items:
         - name: '옵션 대화 상자, 디버깅'
           href: debugging-options-dialog-box.md
-        - name: 'General, Debugging, Options Dialog Box'
+        - name: '옵션 대화 상자, 디버깅, 일반'
           href: general-debugging-options-dialog-box.md
         - name: '옵션 대화 상자, 디버깅, Just-In-Time'
           href: just-in-time-debugging-options-dialog-box.md

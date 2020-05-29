@@ -6,6 +6,8 @@
       href: ide-tour.md
     - name: Windows 사용자를 위한 Mac용 Visual Studio
       href: vsmac-for-windows-users.md
+    - name: 통합 터미널
+      href: integrated-terminal.md
 - name: 설치
   items:
     - name: Mac용 Visual Studio 2019 설치
