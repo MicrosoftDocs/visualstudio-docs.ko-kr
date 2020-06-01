@@ -8,16 +8,16 @@ ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 417b3e8dd4145a8f19b273d88b688af389eaf876
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 8bbeb8a5e13ad000939057a7d476f6979b15dca8
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386392"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200528"
 ---
 ## <a name="how-do-i-manage-administrators"></a>관리자를 관리하려면 어떻게 해야 하나요?
 
-슈퍼 관리자인 경우 다른 슈퍼 관리자 또는 관리자를 추가하거나 제거할 수 있습니다. 관리자는 구독자만 추가하거나 제거할 수 있으며, manage.visualstudio.com의 관리자 관리 탭을 볼 수 없습니다.
+슈퍼 관리자인 경우 다른 슈퍼 관리자 또는 관리자를 추가하거나 제거할 수 있습니다. 관리자는 구독자만 추가하거나 제거할 수 있으며, [관리 포털](https://manage.visualstudio.com)의 관리자 관리 탭을 볼 수 없습니다.
 
 관리자를 관리하려면 다음을 수행합니다.
 

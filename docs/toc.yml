@@ -910,6 +910,8 @@
           href: ide/signing-in-to-visual-studio.md
         - name: Work with multiple user accounts
           href: ide/work-with-multiple-user-accounts.md
+        - name: 다단계 인증이 필요한 계정 작업
+          href: ide/work-with-multi-factor-authentication.md
         - name: 평가판 버전 확장 또는 라이선스 업데이트
           href: ide/how-to-unlock-visual-studio.md
     - name: Visual Studio의 성능 조정

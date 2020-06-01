@@ -338,6 +338,10 @@
                   href: ca1067.md
                 - name: 'CA1068: CancellationToken 매개 변수는 마지막에 위치해야 합니다.'
                   href: ca1068.md
+                - name: 'CA1069: 열거형에 중복 값이 없어야 합니다.'
+                  href: ca1069.md
+                - name: 'CA1070: 이벤트 필드를 가상으로 선언하지 마세요.'
+                  href: ca1070.md
                 - name: 'CA2210: 어셈블리에는 올바른 강력한 이름을 사용해야 합니다.'
                   href: ca2210.md
             - name: 설명서 경고
@@ -579,6 +583,10 @@
                   href: ca2007.md
                 - name: 'CA2009: ImmutableCollection 값의 ToImmutableCollection을 호출하지 마세요.'
                   href: ca2009.md
+                - name: 'CA2011: Setter 내에서 속성을 할당하지 마세요.'
+                  href: ca2011.md
+                - name: 'CA2015: MemoryManager에서 파생된 형식에 대해 종료자를 정의하지 마세요.<T>'
+                  href: ca2015.md
             - name: 보안 경고
               items:
                 - name: 개요
@@ -740,12 +748,24 @@
                   href: ca3147.md
                 - name: 'CA5358: 안전하지 않은 암호화 모드를 사용하지 마세요.'
                   href: ca5358.md
+                - name: 'CA5359: 인증서 유효성 검사를 비활성화하지 마세요.'
+                  href: ca5359.md
                 - name: 'CA5361: 강력한 암호의 SChannel 사용을 비활성화하지 마세요.'
                   href: ca5361.md
+                - name: 'CA5362: 역직렬화된 개체 그래프의 잠재적 참조 주기'
+                  href: ca5362.md
                 - name: 'CA5363: 요청 유효성 검사를 사용하지 않도록 설정하지 마세요.'
                   href: ca5363.md
                 - name: 'CA5364: 사용되지 않는 보안 프로토콜을 사용하지 마세요.'
                   href: ca5364.md
+                - name: 'CA5365: HTTP 헤더 검사를 사용하지 않도록 설정하지 마세요.'
+                  href: ca5365.md
+                - name: 'CA5366: 데이터 세트 읽기 XML에 XmlReader를 사용하세요.'
+                  href: ca5366.md
+                - name: 'CA5367: 포인터 필드를 사용하여 형식을 직렬화하지 마세요.'
+                  href: ca5367.md
+                - name: 'CA5368: Page에서 파생된 클래스의 ViewStateUserKey를 설정하세요.'
+                  href: ca5368.md
                 - name: 'CA5369: 역직렬화에 XmlReader를 사용하세요.'
                   href: ca5369.md
                 - name: 'CA5370: 판독기 유효성 검사에 XmlReader를 사용하세요.'
@@ -756,20 +776,50 @@
                   href: ca5372.md
                 - name: 'CA5373: 사용되지 않는 키 파생 함수를 사용하지 마세요.'
                   href: ca5373.md
+                - name: 'CA5374: XslTransform을 사용하지 마세요.'
+                  href: ca5374.md
                 - name: 'CA5378: ServicePointManagerSecurityProtocols를 비활성화하지 마세요.'
                   href: ca5378.md
+                - name: 'CA5379: 취약한 키 파생 함수 알고리즘은 사용하지 마세요.'
+                  href: ca5379.md
                 - name: 'CA5380: 루트 저장소에 인증서를 추가하지 마세요.'
                   href: ca5380.md
                 - name: 'CA5381: 인증서가 루트 저장소에 추가되지 않았는지 확인하세요.'
                   href: ca5381.md
+                - name: 'CA5382: ASP.NET Core에서 보안 쿠키를 사용하세요.'
+                  href: ca5382.md
+                - name: 'CA5383: ASP.NET Core에서 보안 쿠키를 사용해야 합니다.'
+                  href: ca5383.md
+                - name: 'CA5384: DSA(디지털 시그니처 알고리즘)를 사용하지 마세요.'
+                  href: ca5384.md
+                - name: 'CA5385: 충분한 키 크기로 RSA(Rivest–Shamir–Adleman) 알고리즘을 사용하세요.'
+                  href: ca5385.md
                 - name: 'CA5386: SecurityProtocolType 값을 하드 코딩하지 마세요.'
                   href: ca5386.md
+                - name: 'CA5387: 부족한 반복 횟수로 취약한 키 파생 함수를 사용하지 마세요.'
+                  href: ca5387.md
+                - name: 'CA5388: 취약한 키 파생 함수를 사용할 때 충분한 반복 횟수가 필요합니다.'
+                  href: ca5388.md
                 - name: 'CA5389: 대상 파일 시스템 경로에 보관 항목의 경로를 추가하지 마세요.'
                   href: ca5389.md
+                - name: 'CA5390: 암호화 키를 하드 코딩하지 마세요.'
+                  href: ca5390.md
+                - name: 'CA5394: 안전하지 않은 임의성을 사용하지 마세요.'
+                  href: ca5394.md
+                - name: 'CA5396: HttpCookie에 대해 HttpOnly를 true로 설정하세요.'
+                  href: ca5396.md
                 - name: 'CA5397: 사용되지 않는 SslProtocols 값을 사용하지 마세요.'
                   href: ca5397.md
                 - name: 'CA5398: SslProtocols 값을 하드 코딩하지 마세요.'
                   href: ca5398.md
+                - name: 'CA5399: HttpClient 인증서 해지 목록 확인을 사용하지 않도록 명시적으로 설정하세요.'
+                  href: ca5399.md
+                - name: 'CA5400: HttpClient 인증서 해지 목록 확인을 사용할 수 있는지 확인합니다.'
+                  href: ca5400.md
+                - name: 'CA5401: 기본이 아닌 IV와 함께 CreateEncryptor를 사용하지 마세요.'
+                  href: ca5401.md
+                - name: 'CA5402: 기본 IV와 함께 CreateEncryptor를 사용하세요.'
+                  href: ca5402.md
                 - name: 'CA5403: 인증서 하드 코딩 안 함'
                   href: ca5403.md
             - name: 사용법 경고
@@ -863,5 +913,11 @@
                   href: ca2242.md
                 - name: 'CA2243: 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.'
                   href: ca2243.md
+                - name: 'CA2244: 인덱싱된 요소의 초기화는 복제하면 안 됩니다.'
+                  href: ca2244.md
+                - name: 'CA2245: 속성을 자체에 할당하지 마세요.'
+                  href: ca2245.md
+                - name: 'CA2246: 동일한 문에 기호 및 해당 멤버를 할당하지 마세요.'
+                  href: ca2246.md
             - name: 자동 기능 일시 중단
               href: automatic-feature-suspension.md
