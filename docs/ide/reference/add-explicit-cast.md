@@ -2,17 +2,17 @@
 title: 명시적 캐스트 추가
 ms.date: 03/26/2020
 ms.topic: reference
-author: y87feng
-ms.author: t-yufen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78a61a8ed782df935a146b111bbc4107fa7c6d82
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80416845"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182978"
 ---
 # <a name="add-explicit-cast"></a>명시적 캐스트 추가
 

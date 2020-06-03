@@ -1,3 +1,4 @@
+---
 title: CRT 라이브러리로 메모리 누수 찾기 | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 4ae879d8ed03653959ae926cc372300db9b71b9f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404986"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182653"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>CRT 라이브러리로 메모리 누수 찾기
 
@@ -71,7 +72,7 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 다음과 같이 표시된 것처럼 `_CrtSetReportMode`를 사용하여 보고서를 다른 위치로 리디렉션하거나 **출력** 창으로 다시 리디렉션할 수 있습니다.
 
 ```cpp
-_CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
+_CrtSetReportMode( _CRT_WARN, _CRTDBG_MODE_DEBUG );
 ```
 
 ## <a name="interpret-the-memory-leak-report"></a>메모리 누수 보고서 해석
@@ -105,7 +106,7 @@ Object dump complete.
 - 블록 형식(이 예제의 경우 `normal`).
 - 16진수 메모리 위치(이 예제의 경우 `0x00780E80`).
 - 블록 크기(이 예제의 경우 `64 bytes`).
-- 블록 처음 데이터의 16바이트(16진수 형식)를 표시합니다.
+- 블록 내 데이터의 처음 16바이트(16진수 형식)
 
 메모리 블록 형식은 *일반*, *클라이언트* 또는 *CRT*입니다. *표준 블록* 은 프로그램이 할당한 보통 메모리입니다. *클라이언트 블록* 은 MFC 프로그램이 소멸자를 필요로 하는 개체에 대해 사용하는 특별한 메모리 블록 형식입니다. MFC `new` 연산자는 표준 블록 또는 클라이언트 블록 중 생성되는 개체에 적합한 블록을 만듭니다.
 

@@ -12,12 +12,13 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: f185451a7f12c3c0b24d74d4a24b40d986ec536f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114966"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184395"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>서비스 기준선에서 Visual Studio 업데이트
 

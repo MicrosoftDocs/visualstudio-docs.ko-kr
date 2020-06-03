@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 통해 Microsoft Windows Virtual Desktop을 활용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 87911b1b7b6eb63eb85b64515d5d24755e4656e6
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649727"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183589"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>구독에서 Windows Virtual Desktop 액세스 
 이제 Visual Studio 구독자는 Microsoft Windows Virtual Desktop 서비스에 대해 Azure 개발/테스트 개별 크레딧을 사용할 수 있습니다.  
@@ -39,7 +39,7 @@ Windows Virtual Desktop을 사용하기 위한 필수 조건의 전체 목록을
 
 ## <a name="get-started"></a>시작 
 모든 필수 조건이 충족되면 구현을 준비하기 위해 몇 가지 작업을 완료합니다.  다음 자습서를 확인하여 시작하세요.
-- [Windows Virtual Desktop 테넌트 만들기](https://docs.microsoft.com/azure/virtual-desktop/tenant-setup-azure-active-directory)
+- [Windows Virtual Desktop 테넌트 만들기](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - Azure Portal을 사용하여 [호스트 풀 만들기](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace)
 - Windows Virtual Desktop에 대한 [앱 그룹 관리](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups)
 

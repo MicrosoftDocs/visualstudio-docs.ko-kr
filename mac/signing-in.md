@@ -3,14 +3,14 @@ title: Mac용 Visual Studio에 로그인
 description: Mac용 Visual Studio에 로그인하는 방법
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d5bfb81264c3503643c51c621cad29df44acef92
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75844269"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173197"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Mac용 Visual Studio에 로그인
 
@@ -51,7 +51,7 @@ Mac용 Visual Studio는 개인 설정 계정에 여러 계정을 추가하는 �
 
 추가 사용자 계정을 추가하려면 Mac용 Visual Studio에서 **Visual Studio > 계정...** 메뉴를 선택합니다. **추가...**  단추를 클릭하여 추가 계정 자격 증명을 입력합니다.
 
-![계정 관리](media/signing-in-image15.png)
+![계정 관리](media/user-accounts-login.png)
 
 ## <a name="view-or-change-your-profile-information"></a>프로필 정보 보기 또는 변경
 

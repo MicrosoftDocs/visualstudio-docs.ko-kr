@@ -7,16 +7,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d147397a168bb78a31a8fbe6929d6c2184d080
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386689"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180495"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Visual Studio에서 FIPS 140-2 승인 작업 모드 지원
 
-Visual Studio 2019 [버전 16.4](/visualstudio/releases/2019/release-notes-v16.4/)부터 Windows, Azure 및 .NET에서 FIPS(Federal Information Processing Standard ) 발행물 140-2 승인 작업 모드를 지원합니다. 그리고 [버전 16.5](/visualstudio/releases/2019/release-notes-v16.5/)의 Visual Studio에서는 이제 [원격 Linux 시스템 대상의 C++ 애플리케이션](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)을 개발할 때 FIPS 140-2 승인 작업 모드를 지원합니다.
+Visual Studio 2019 [버전 16.4](/visualstudio/releases/2019/release-notes-v16.4/)부터 Windows, Azure 및 .NET에서 FIPS(Federal Information Processing Standard ) 발행물 140-2 승인 작업 모드를 지원합니다. 그리고 [버전 16.5](/visualstudio/releases/2019/release-notes-archive-v16.5)의 Visual Studio에서는 이제 [원격 Linux 시스템 대상의 C++ 애플리케이션](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)을 개발할 때 FIPS 140-2 승인 작업 모드를 지원합니다.
 
 Visual Studio의 FIPS 140-2 승인 작업 모드를 구성하려면 [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)을 설치한 다음 그룹 정책 설정인 **시스템 암호화: 암호화, 해시, 서명에 FIPS 호환 알고리즘 사용**을 사용하도록 지정합니다.
 
