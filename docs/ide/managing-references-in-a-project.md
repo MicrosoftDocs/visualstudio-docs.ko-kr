@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591257"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183537"
 ---
 # <a name="manage-references-in-a-project"></a>프로젝트에서 참조 관리
 
@@ -107,7 +107,7 @@ GAC에 등록되어 있는 사용자 지정 구성 요소에 대한 참조가 �
 
 다른 버전의 .NET을 대상으로 하는 프로젝트나 어셈블리를 참조하는 애플리케이션을 만들 수 있습니다. 예를 들어 .NET Framework 4.5를 대상으로 하는 어셈블리를 참조하고 .NET Framework 4.6을 대상으로 하는 애플리케이션을 만들 수 있습니다. 이전 버전의 .NET를 대상으로 하는 프로젝트를 만드는 경우 해당 프로젝트에서 새 버전을 대상으로 하는 프로젝트나 어셈블리에 대한 참조를 설정할 수 없습니다.
 
-자세한 내용은 [Framework 타기팅 개요](../ide/visual-studio-multi-targeting-overview.md)를 참조하세요.
+자세한 내용은 [Framework 대상 지정 개요](../ide/visual-studio-multi-targeting-overview.md)를 참조하세요.
 
 ## <a name="project-to-project-references"></a>프로젝트 간 참조
 

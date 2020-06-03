@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071949"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183108"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio의 유닛 테스트 JavaScript 및 TypeScript
 
@@ -28,9 +28,6 @@ Visual Studio용 Node.js 도구를 사용하면 명령 프롬프트로 전환하
 * Tape([github.com/substack/tape](https://github.com/substack/tape))
 * Jest([jestjs.io](https://jestjs.io/))
 * Export Runner(이 프레임워크는 Visual Studio용 Node.js 도구로 한정됨)
-
-> [!WARNING]
-> Tape의 문제는 현재 Tape 테스트 실행을 차단합니다. [PR #361](https://github.com/substack/tape/pull/361)이 병합된 경우 문제를 해결해야 합니다.
 
 원하는 프레임워크가 지원되지 않는 경우 [단위 테스트 프레임워크에 대한 지원 추가](#addingFramework)에서 지원 추가에 대한 정보를 참조하세요.
 
@@ -99,7 +96,7 @@ Visual Studio 2017 또는 명령줄에서 테스트를 실행할 수 있습니�
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-이 명령은 다음과 유사한 출력을 표시합니다.
+이 명령은 다음과 유사한 출력 결과를 표시합니다.
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0

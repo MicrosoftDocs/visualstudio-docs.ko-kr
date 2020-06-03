@@ -3,14 +3,14 @@ title: 구독 사용
 description: 이 문서에서는 Microsoft 계정을 통해 Mac용 Visual Studio에서 구독 및 잠금 해제 기능을 사용하도록 설정하는 방법을 설명합니다.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 2074207876df78bc6a268db909e5fa190073f9ba
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984041"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183940"
 ---
 # <a name="enable-subscription"></a>구독 사용
 
@@ -44,6 +44,6 @@ Mac용 Visual Studio는 선택할 수 있는 세 가지 구독 수준을 제공�
 
 인터넷 연결이 없는 머신을 위해 Mac용 Visual Studio Enterprise 2019를 구입한 경우 정품 인증 없이 Mac용 Visual Studio를 계속 사용할 수 있지만 Xamarin Inspector, Xamarin Profiler 및 포함된 어셈블리 기능은 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows의 Visual Studio에 로그인](/visualstudio/ide/signing-in-to-visual-studio)

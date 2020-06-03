@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678899"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183961"
 ---
 # <a name="create-a-new-project"></a>새 프로젝트 만들기
 
@@ -25,7 +25,7 @@ Mac용 Visual Studio에서 새 프로젝트를 만드는 여러 방법이 있습
 
 솔루션이 로드된 상태로 Mac용 Visual Studio가 이미 열려 있는 경우 메뉴 모음으로 이동한 후 **파일> 새 솔루션**을 선택하여 새 솔루션을 만들 수 있습니다. 이러한 방식으로 새 솔루션을 만들면 이미 로드된 솔루션은 닫힙니다.
 
-## <a name="creating-a-new-project-from-a-template"></a>템플릿으로 새 프로젝트 만들기
+## <a name="creating-a-new-project"></a>새 프로젝트 만들기
 
 **새 프로젝트** 대화 상자는 기본적으로 *가장 최근에 사용한* 템플릿을 기준으로 정렬된 사용자가 최근에 사용한 템플릿을 보여줍니다.
 
@@ -51,6 +51,6 @@ Solution Pad에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추
 
 기존 프로젝트를 추가하도록 선택하면 컴퓨터에서 기존 프로젝트를 찾아 솔루션에 추가할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [솔루션 및 프로젝트 만들기(Windows의 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

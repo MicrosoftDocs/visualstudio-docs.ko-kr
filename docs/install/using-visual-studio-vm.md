@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6095a3d7d8bfa7a5ee367da2c93d16113a777d0c
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: 6453c263cb970ae3fff2c134f1ae570bca730b93
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109483"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183238"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure의 Visual Studio 이미지
 
@@ -37,10 +37,10 @@ Azure를 처음 사용하는 경우 [체험 Azure 계정을 만드세요](https:
 | 릴리스 버전                                                                                                                                          | 버전              |    제품 버전    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
 | [Visual Studio 2019: 최신(버전 16.5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.5.4    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.13    |
-| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.22   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.28   |
-| [Visual Studio 2015: 최신(업데이트 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | 버전 14.0.25431.01 |
+| Visual Studio 2019: RTW                         | Enterprise            | 버전 16.0.13    |
+| Visual Studio 2017: 최신(버전 15.9)           | Enterprise, Community | 버전 15.9.22   |
+| Visual Studio 2017: RTW                             | Enterprise, Community | 버전 15.0.28   |
+| Visual Studio 2015: 최신(업데이트 3)              | Enterprise, Community | 버전 14.0.25431.01 |
 
 > [!NOTE]
 > Microsoft 서비스 정책에 따라 원래 릴리스된(RTW) Visual Studio 2015 버전에 대한 서비스가 만료되었습니다. Visual Studio 2015 업데이트 3이 Visual Studio 2015 제품 라인에 대해 제공되는 유일한 버전입니다.
@@ -115,7 +115,7 @@ Visual Studio는 Azure의 “사용자 라이선스 필요” 모델을 따릅�
 > [!NOTE]
 > 이미지 스토리지에 대한 비용이 여전히 발생하지만 증분 비용은 필요한 각 팀 구성원에 대해 VM을 처음부터 다시 빌드하기 위한 오버헤드 비용과 비교하여 중요하지 않을 수 있습니다. 예를 들어, 전체 팀이 다시 사용할 수 있는 127GB 이미지를 만들고 저장하는 데 필요한 비용은 매달 몇 달러입니다. 이 비용은 각 직원이 개별적으로 사용하기 위해 제대로 구성된 개발 시스템을 빌드 및 유효성 검사하는 데 소요되는 시간에 비해 중요하지 않습니다.
 
-또한 개발 작업 또는 기술은 다양한 개발 구성 및 여러 컴퓨터 구성과 같은 추가 확장성이 필요할 수 있습니다. Azure DevTest Labs를 사용하여 “골든 이미지”의 구성을 자동화하는 ‘레시피’를 만들 수 있습니다.  DevTest Labs를 사용하여 팀이 실행 중인 VM에 대한 정책을 관리할 수도 있습니다. [개발자용 Azure DevTest Labs 사용](/azure/devtest-lab/devtest-lab-developer-lab)에서 DevTest Labs에 대한 자세한 정보를 확인할 수 있습니다.
+또한 개발 작업 또는 기술은 다양한 개발 구성 및 여러 컴퓨터 구성과 같은 추가 확장성이 필요할 수 있습니다. Azure DevTest Labs를 사용하여 “골든 이미지”의 구성을 자동화하는 ‘레시피’를 만들 수 있습니다. DevTest Labs를 사용하여 팀이 실행 중인 VM에 대한 정책을 관리할 수도 있습니다. [개발자용 Azure DevTest Labs 사용](/azure/devtest-lab/devtest-lab-developer-lab)에서 DevTest Labs에 대한 자세한 정보를 확인할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
