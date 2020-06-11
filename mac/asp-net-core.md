@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3ec4b28f9af769d4765750ab48048e3b155fb48e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543891"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180348"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
@@ -19,7 +19,7 @@ ms.locfileid: "80543891"
 
 ## <a name="installing-net-core"></a>.NET Core 설치
 
-.NET Core 2.1은 Mac용 Visual Studio를 설치할 때 자동으로 설치됩니다.
+.NET Core 3.1은 Mac용 Visual Studio를 설치할 때 자동으로 설치됩니다. Mac용 Visual Studio에서 지원되는 .NET Core 버전에 대한 자세한 내용은 [.NET Core 지원](/visualstudio/mac/net-core-support)을 참조하세요.
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 ASP.NET Core 앱 만들기
 
@@ -35,6 +35,8 @@ ASP.NET Core 애플리케이션 빌드를 시작하기 위해 미리 작성된 �
 - **.NET Core > API**
 - **.NET Core > 웹 애플리케이션**
 - **.NET Core > 웹 애플리케이션(Model-View-Controller)**
+- **.NET Core > Blazor 서버 앱**
+- **.NET Core > Blazor WebAssembly 앱**
 
 ![ASP.NET 프로젝트 옵션](media/asp-net-core-2019-new-asp-core.png)
 

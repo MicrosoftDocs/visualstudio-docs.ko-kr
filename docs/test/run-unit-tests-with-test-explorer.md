@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 429892e3022854cac157605117f955fd672f8997
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278527"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182926"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -27,9 +27,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 ## <a name="run-tests-in-test-explorer"></a>테스트 탐색기에서 테스트 실행
 
-
-테스트 프로젝트를 빌드하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows**를 선택한 다음 **테스트 탐색기**를 선택합니다.
-
+[테스트 프로젝트를 빌드](../test/getting-started-with-unit-testing.md)하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows**를 선택한 다음 **테스트 탐색기**를 선택합니다.
 
 ::: moniker range="vs-2017"
 ![단위 테스트 탐색기](../test/media/ute_failedpassednotrunsummary.png)

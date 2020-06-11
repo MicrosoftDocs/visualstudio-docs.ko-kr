@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f286002112667ba763419f0e3d6265dbe1942212
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143543"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173889"
 ---
 
 1. ASP.NET 프로젝트가 Visual Studio에서 열려 있는 컴퓨터에서 솔루션 탐색기의 프로젝트를 마우스 오른쪽 단추로 클릭하고, **게시**를 선택합니다.

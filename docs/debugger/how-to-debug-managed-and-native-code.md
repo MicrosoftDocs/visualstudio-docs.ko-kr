@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416362"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182640"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>자습서: 동일한 디버깅 세션에서 C# 및 C++ 디버그
 
@@ -139,7 +139,7 @@ Visual Studio를 설치했지만 필요한 워크로드가 없는 경우 Visual 
     **콘솔 앱** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
     > [!NOTE]
-    > 기존 C++ 솔루션에 새 관리 프로젝트를 추가할 수 있지만 새 솔루션 만들기는 더 많은 디버깅 시나리오를 지원합니다.
+    > 기존 C++ 솔루션에 새 관리형 프로젝트를 추가할 수도 있습니다. 혼합 모드 디버깅 작업을 더 어렵게 만들기 위해 새 솔루션에서 프로젝트를 만듭니다.
 
    Visual Studio에서는 빈 프로젝트를 만들고 **솔루션 탐색기**에 해당 프로젝트를 표시합니다.
 

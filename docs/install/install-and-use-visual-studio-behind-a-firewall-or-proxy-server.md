@@ -1,7 +1,7 @@
 ---
 title: 방화벽 또는 프록시 서버 뒤에 설치 및 사용
 description: 조직에서 방화벽 또는 프록시 서버를 사용하는 경우 허용 목록에 추가하거나 열려는 도메인 URL, 포트 및 프로토콜을 검토합니다.
-ms.date: 02/01/2020
+ms.date: 05/13/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223660"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180443"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -132,11 +132,11 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | 개발자 커뮤니티 | sendvsfeedback2.azurewebsites.net/api | https/443 | 개발자 커뮤니티 피드백 도구 API를 호출하는 데 사용됩니다(내 문제, 검색, 투표, 주석, 제출, 업로드, 재개). |
 | IntelliCode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Intellicode API를 호출하는 데 사용됩니다. |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Live Share API를 호출하는 데 사용됩니다. |
-| Visual Studio Online | \*.online.visualstudio.com | https/443 | Visual Studio Online API를 호출하는 데 사용됩니다. |
+| Visual Studio Codespaces | \*.online.visualstudio.com | https/443 | Visual Studio Codespaces API를 호출하는 데 사용됩니다. |
 | JavaScript 자동 형식 획득 | registry.npmjs.org | https/443 | 인기 있는 JavaScript 라이브러리에 Intellisense를 제공하기 위해 TypeScript 형식 정의를 설치하는 데 사용됩니다. |
 | Visual Studio 구독 라이선싱 서비스 | app.vssps.visualstudio.com/apis/<br/>Licensing/ClientRights | https/443 | 온라인 활성화에 대한 라이선싱 |
 | 디버거 | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>SSH를 통해 Unix/macOS에서 .NET Core 디버깅을 위한 디버거 비트를 다운로드하는 데 사용됩니다. <br><br>2. <br>원격 Windows Docker 컨테이너 디버깅을 위한 디버거 비트를 다운로드하는 데 사용됩니다.<br><br> 3. .NET Framework 소스 단계별 실행에 사용됨 <br><br> 4. <br>사용자가 등록하는 경우 NuGet.org 기호 서버에 게시된 기호를 다운로드하는 데 사용됩니다.<br><br> 5. 사용자가 등록하는 경우 MS 기호 및 이진 파일을 다운로드하는 데 사용되며, 덤프에서 관리 코드를 디버깅하는 데 필요할 수도 있습니다. |
-| Visual Studio Online| \*.online.visualstudio.com | https/443 | Visual Studio Online API를 호출하는 데 사용됩니다. |
+| Visual Studio Codespaces| \*.online.visualstudio.com | https/443 | Visual Studio Codespaces API를 호출하는 데 사용됩니다. |
 | Xamarin Android 앱 게시 | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Visual Studio에서 직접 Xamarin Android 애플리케이션을 게시/업로드하기 위해 Google Play 스토어 서비스와 상호 작용하는 데 사용됩니다. |
 | Azure Container Registry | *.azurecr.io | https/443 | CICD 파이프라인 구성을 위해 Azure에서 호스트되는 컨테이너 레지스트리에 액세스 |
 | | | | |

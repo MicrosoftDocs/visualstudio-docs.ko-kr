@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece57a102851efe0198f8993b60dba8e0eae6dec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7502644c9820b47149acb4a9b8a749bec70551e4
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634424"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180430"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 
@@ -118,6 +118,7 @@ ms.locfileid: "77634424"
 | Satellite_Win32Resource | 위성 어셈블리에 Win32 리소스( *.res* 파일)를 삽입합니다. |
 | SGenToolPath | 현재 버전의 *SGen.exe*를 재정의할 때 *SGen.exe*를 구할 수 있는 위치를 나타내는 선택적 도구 경로입니다. 이 속성은 .NET Framework에만 사용됩니다.|
 | SGenUseProxyTypes | *SGen.exe*에서 프록시 형식을 생성해야 하는지 여부를 나타내는 부울 값입니다. *GenerateSerializationAssemblies*를 on으로 설정했으며 .NET Framework만 대상으로 할 경우에만 적용됩니다.<br /><br /> SGen 대상은 이 속성을 사용하여 UseProxyTypes 플래그를 설정합니다. 이 속성은 기본적으로 true로 설정되어 있으며 이를 변경할 UI가 없습니다. 웹 서비스가 아닌 형식에 대해 serialization 어셈블리를 생성하려면 이 속성을 프로젝트 파일에 추가하고 *Microsoft.Common.Targets* 또는 *C#/VB.targets*를 가져오기 전에 false로 설정합니다. |
+| SkipInvalidConfigurations | `true`이면 잘못된 플랫폼 및 구성 조합에 대해 경고를 생성하지만 빌드가 실패하지 않고, `false`이거나 정의되지 않은 경우(기본값) 오류를 생성합니다. |
 | StartupObject | Main 메서드 또는 Sub Main 프로시저가 포함된 클래스나 모듈을 지정합니다. 이 속성은 `/main` 컴파일러 스위치와 동일합니다. |
 | SubsystemVersion | 생성된 실행 파일이 사용할 수 있는 하위 시스템의 최소 버전을 지정합니다. 이 속성은 `/subsystemversion` 컴파일러 스위치와 동일합니다. 이 속성의 기본값에 대한 자세한 내용은 [/subsystemversion(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) 또는 [/subsystemversion(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option)을 참조하세요. |
 | TargetCompactFramework | 빌드하고 있는 애플리케이션을 실행하는 데 필요한 .NET Compact Framework의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다. |

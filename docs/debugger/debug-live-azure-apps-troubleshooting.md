@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911592"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182874"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대한 문제 해결 및 알려진 문제
 
@@ -30,12 +30,36 @@ ms.locfileid: "72911592"
 
 ### <a name="401-unauthorized"></a>(401) 권한 없음
 
-이 오류는 Visual Studio에서 Azure로 발급한 REST 호출이 잘못된 자격 증명을 사용함을 나타냅니다. Azure Active Directory Easy OAuth 모듈의 알려진 버그로 인해 이 오류가 발생할 수 있습니다.
+이 오류는 Visual Studio에서 Azure로 발급한 REST 호출이 잘못된 자격 증명을 사용함을 나타냅니다. 
 
 다음 단계를 수행하세요.
 
 * Visual Studio 개인 설정 계정에 연결할 Azure 구독 및 리소스에 대한 권한이 있는지 확인합니다. 이를 확인하는 빠른 방법은 **디버그** > **스냅샷 디버거 연결...**  > **Azure 리소스** > **기존 선택**의 대화 상자 또는 클라우드 탐색기에서 리소스를 사용할 수 있는지 확인하는 것입니다.
 * 이 오류가 계속 지속되면 이 문서의 시작 부분에 설명된 피드백 채널 중 하나를 사용합니다.
+
+App Service에서 인증/권한 부여(EasyAuth)를 사용하도록 설정한 경우 호출 스택 오류 메시지에서 LaunchAgentAsync와 함께 401 오류가 발생할 수 있습니다. Azure Portal에서 **요청이 인증되지 않은 경우 수행할 작업**이 **익명 요청 허용(작업 없음)** 으로 설정되어 있는지 확인하고 D:\Home\sites\wwwroot의 authorization.json에 대신 다음 내용을 입력하세요. 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+첫 번째 경로는 **Log in with [IdentityProvider]** ([IdentityProvider]로 로그인)와 유사하게 앱 도메인을 효과적으로 보호합니다. 두 번째 경로는 SnapshotDebugger AgentLaunch 엔드포인트를 인증 외부에 노출하여 앱 서비스에 대해 SnapshotDebugger 사전 설치된 사이트 확장을 사용하도록 설정한 ‘경우에만’ SnapshotDebugger 진단 에이전트를 시작하는 미리 정의된 작업을 수행합니다. authorization.json 구성에 대한 자세한 내용은 [URL authorization rules](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html)(URL 권한 부여 규칙)를 참조하세요.
 
 ### <a name="403-forbidden"></a>(403) 사용할 수 없음
 
@@ -173,7 +197,7 @@ Visual Studio 2019를 사용하려면 Azure App Service에 최신 버전의 스�
 
 ### <a name="enable-agent-logs"></a>에이전트 로그 사용
 
-에이전트 로깅을 사용하거나 사용하지 않도록 설정하려면 Visual Studio를 열고 ‘도구&gt;옵션&gt;스냅샷 디버거&gt;에이전트 로깅 사용’으로 이동합니다.  ‘세션을 시작할 때 오래된 에이전트 로그 삭제’도 사용하도록 설정되어 있는 경우 Visual Studio 연결이 성공할 때마다 이전 에이전트 로그가 삭제됩니다. 
+에이전트 로깅을 사용하거나 사용하지 않도록 설정하려면 Visual Studio를 열고 ‘도구&gt;옵션&gt;스냅샷 디버거&gt;에이전트 로깅 사용’으로 이동합니다. ‘세션을 시작할 때 오래된 에이전트 로그 삭제’도 사용하도록 설정되어 있는 경우 Visual Studio 연결이 성공할 때마다 이전 에이전트 로그가 삭제됩니다.
 
 에이전트 로그는 다음 위치에 있습니다.
 
@@ -194,7 +218,7 @@ Visual Studio 2019를 사용하려면 Azure App Service에 최신 버전의 스�
 - VM/VMSS:
   - VM에 로그인하고 이벤트 뷰어를 엽니다.
   - 다음 보기를 엽니다. *Windows Logs>Application*.
-  - ‘프로덕션 중단점’ 또는 ‘계측 엔진’을 사용하여 ‘이벤트 원본’별로 ‘현재 로그를 필터링’합니다.    
+  - ‘프로덕션 중단점’ 또는 ‘계측 엔진’을 사용하여 ‘이벤트 원본’별로 ‘현재 로그를 필터링’합니다.   
 - AKS
   - 계측 엔진 로깅은 /tmp/diag/log.txt(DockerFile의 MicrosoftInstrumentationEngine_FileLogPath 설정)에서 수행됩니다.
   - 프로덕션 중단점 로그는 /tmp/diag/shLog.txt에 있습니다.
@@ -214,7 +238,7 @@ Visual Studio 2019를 사용하려면 Azure App Service에 최신 버전의 스�
 - App Service 내에 [배포 슬롯](/azure/app-service/web-sites-staged-publishing)을 만들고 이 슬롯에 사이트를 배포합니다.
 - 이 슬롯을 Visual Studio에 있는 클라우드 탐색기 또는 Azure Portal의 프로덕션과 교환합니다.
 - 슬롯 사이트를 중지합니다. 모든 인스턴스의 사이트 w3wp.exe 프로세스를 종료하는 데는 몇 초가 걸립니다.
-- Kudu 사이트 또는 Azure Portal(‘App Service 블레이드 > 개발 도구 > 확장 > 업데이트’)에서 슬롯 사이트 확장을 업그레이드합니다. 
+- Kudu 사이트 또는 Azure Portal(‘App Service 블레이드 > 개발 도구 > 확장 > 업데이트’)에서 슬롯 사이트 확장을 업그레이드합니다.
 - 슬롯 사이트를 시작합니다. 사이트를 방문하여 다시 사이트를 준비하는 것이 좋습니다.
 - 슬롯을 프로덕션과 교환합니다.
 

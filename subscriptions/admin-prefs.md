@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: 관리 포털에서 언어, 연락처, 구독 수준 등에 대한 기본 설정을 지정하는 방법 알아보기
-ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508760"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183498"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>관리 포털에서 계약 기본 설정 지정
 슈퍼 관리자는 관리 포털에서 각 계약에 전역으로 적용될 특정 기본 설정을 지정할 수 있습니다.  이 기본 설정은 관리자가 구독자를 추가할 때 구독 세부 정보를 자동으로 채우며 슈퍼 관리자만 전역으로 수정할 수 있습니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "79508760"
 이 기본 설정을 사용하여 관리자가 조직의 테넌트/디렉터리 외부에서 구독자를 추가할 수 있는지 여부를 결정할 수 있습니다.  이 기능을 끄면 외부 구독자가 허용되지 않습니다.  이 기능을 사용하도록 설정하고 관리자가 외부 구독자를 추가하려고 하면 선택을 확인하는 메시지가 표시되고 구독을 할당할 수 있습니다. 관리자는 이 설정을 재정의할 수 없습니다. 
 
 ### <a name="default-downloads-setting"></a>기본 다운로드 설정
-기본적으로 켜지는 이 설정을 사용하도록 설정하면 관리자가 새 구독을 만들 때 구독자가 다운로드에 액세스할 수 있습니다.  관리자가 개별 구독을 기준으로 다운로드를 사용하지 않도록 설정할 수 있습니다.  
+기본적으로 켜지는 이 설정을 사용하도록 설정하면 관리자가 새 구독을 만들 때 구독자가 다운로드에 액세스할 수 있습니다.  관리자가 개별 구독을 기준으로 다운로드를 사용하지 않도록 설정할 수 있습니다.  다운로드에 대한 액세스를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다.  
 
 ### <a name="default-subscription-level"></a>기본 구독 수준
 이 설정을 사용하여 구독이 사용자에게 할당될 때 기본적으로 선택되는 계약에 포함된 구독 수준을 결정할 수 있습니다.  관리자는 이 설정을 계약의 구독 수준으로 변경할 수 있습니다. 이렇게 하면 가장 일반적인 선택을 반복할 필요가 없습니다. 
@@ -74,7 +74,7 @@ A:  **연락처 전자 메일 주소** 기본 설정에 특정 전자 메일 주
 ## <a name="resources"></a>리소스
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

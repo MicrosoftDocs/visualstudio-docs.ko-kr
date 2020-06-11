@@ -1,7 +1,7 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 5/19/2020
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,70 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fa5a68a15dd5b53d5a626ff5c46e9739db504fc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232914"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184564"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="2610"></a>2.6.1.0
+릴리스 날짜: 2020년 5월 19일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Unity 쪽에서 메시징 서버를 만들 수 없으면 경고합니다.
+
+  - 경량 컴파일 중 분석기를 올바로 실행합니다.
+
+  - Unity Hub 허브 설치와 함께 API 설명서가 수정되었습니다.
+  
+  - 디버거 시각화 도우미 크래시가 수정되었습니다.
+
+## <a name="2600"></a>2.6.0.0
+릴리스 날짜: 2020년 4월 14일
+
+### <a name="new-features"></a>새 기능
+
+- **통합:**
+
+  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md) 진단이 추가되었습니다. `StartCoroutine()`에서 코루틴 호출을 검색하고 래핑합니다.
+
+  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md) 진단이 추가되었습니다. 잘못되거나 중복된 `SerializeField` 특성을 검색하고 제거합니다.
+
+  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md) 진단이 추가되었습니다. 구성 요소가 아닌 형식 또는 인터페이스가 아닌 형식으로 호출된 `GetComponent()`를 검색합니다.
+
+  - `IDE0051`에 대한 [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) 억제 장치가 추가되었습니다. `ContextMenu` 특성이 있는 메서드 또는 `ContextMenuItem` 특성이 있는 필드에 의해 참조된 메서드를 사용되지 않음으로 플래그 지정하지 않습니다.
+
+  - `IDE0051`에 대한 [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) 억제 장치가 추가되었습니다. `ContextMenuItem` 특성이 있는 필드를 사용되지 않음으로 플래그 지정하지 않습니다.
+
+  - `IDE0044`에 대한 [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) 억제 장치가 추가되었습니다. `ContextMenuItem` 특성이 있는 필드를 읽기 전용으로 설정하지 않습니다.
+
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) 및 [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)이 이제 `SerializeReference` 및 `SerializeField` 특성 모두에서 작동합니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 편집기에서 통신할 수 있는 경우에만 Unity에 시작/중지 명령을 보냅니다.
+
+  - 상속된 메시지를 사용하여 QuickInfo 설명서가 수정되었습니다.
+
+  - `CreateInspectorGUI` 메시지의 메시지 범위가 수정되었습니다.
+
+  - 다형 한정자를 사용하는 메서드에 대해 [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md)을 보고하지 않습니다.
+
+- **평가:**
+
+  - 별칭이 지정된 using의 처리가 수정되었습니다.
+  
+  - Null 값의 처리가 수정되었습니다.  
 
 ## <a name="2520"></a>2.5.2.0
 
@@ -35,11 +89,11 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2020년 3월 3일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
-  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) 에 대한 억제 장치가 추가되었습니다. Invoke, InvokeRepeating, StartCoroutine 또는 StopCoroutine과 함께 사용되는 프라이빗 메서드는 사용되지 않음으로 표시될 수 없습니다.
+  - `IDE0051`에 대한 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) 억제 장치가 추가되었습니다. Invoke, InvokeRepeating, StartCoroutine 또는 StopCoroutine과 함께 사용되는 프라이빗 메서드는 사용되지 않음으로 표시될 수 없습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -65,7 +119,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2020년 1월 22일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -75,9 +129,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
   
   - 설정이 새로운 액세스 가능 속성 그리드로 전환되었습니다.
 
-  - [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)에 대한 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 프라이빗 필드는 사용되지 않음으로 표시될 수 없습니다.
+  - `IDE0051`에 대한 [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 프라이빗 필드는 사용되지 않음으로 표시될 수 없습니다.
 
-  - [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)에 대한 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 필드는 할당되지 않음으로 표시될 수 없습니다.  
+  - `CS0649`에 대한 [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) 억제 장치가 추가되었습니다. `SerializeField` 특성이 있는 필드는 할당되지 않음으로 표시될 수 없습니다.  
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -105,7 +159,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 11월 6일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -129,11 +183,11 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 10월 15일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
-  - 모든 Unity 메시지에 대해 `IDE0060`(사용되지 않는 매개 변수)의 억제 장치를 추가했습니다.
+  - 모든 Unity 메시지에 대해 `IDE0060`(사용되지 않는 매개 변수)에 대한 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) 억제 장치가 추가되었습니다.
 
   - `TooltipAttribute` 태그가 지정된 필드에 대한 빠른 도구 설명을 추가했습니다. (이 내용은 이 필드를 사용하는 간단한 get 접근자에도 적용됩니다.)
 
@@ -141,7 +195,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 23일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -152,7 +206,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 16일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -177,7 +231,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 4일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **평가:**
 
@@ -223,7 +277,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 7월 9일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **디버거:**
 
@@ -261,7 +315,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 6월 27일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -281,7 +335,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 6월 20일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -293,7 +347,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 5월 30일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -303,7 +357,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 4월 2일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -333,7 +387,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 26일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -343,7 +397,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 20일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **Project Generation:**
 
@@ -359,7 +413,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 5일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -375,7 +429,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
  
  릴리스 날짜: 2019년 3월 5일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **Project Generation:**
 
@@ -399,7 +453,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 2월 4일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -424,7 +478,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="2000"></a>2.0.0.0
  릴리스 날짜: 2018년 12월 4일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **디버거:**
 
@@ -450,7 +504,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 11월 13일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **디버거:**
 
@@ -508,7 +562,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 4월 18일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -520,7 +574,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 28일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -530,7 +584,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 21일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -540,7 +594,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 5일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **Project Generation:**
 
@@ -580,7 +634,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 12월 13일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **Project Generation:**
 
@@ -610,7 +664,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 11월 20일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **마법사:**
 
@@ -622,7 +676,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 10월 23일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **디버거:**
 
@@ -640,7 +694,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 10월 23일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **Project Generation:**
 
@@ -650,7 +704,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 8월 8일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **디버거:**
 
@@ -664,7 +718,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 7월 20일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 
@@ -674,7 +728,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 7월 12일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **통합:**
 

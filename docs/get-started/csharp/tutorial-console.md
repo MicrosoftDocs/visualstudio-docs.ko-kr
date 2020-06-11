@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78215426"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183290"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -241,7 +241,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 10진수를 처리하도록 코드를 수정해 보겠습니다.
 
-1. **Ctrl** + **F**를 눌러 **찾기 및 바꾸기** 컨트롤을 엽니다.
+1. **Ctrl** + **H**를 눌러 **찾기 및 바꾸기** 컨트롤을 엽니다.
 
 1. `int` 변수의 각 인스턴스를 `float`로 변경합니다.
 
@@ -257,7 +257,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 그러나 앱은 10진수 결과만 생성합니다. 앱도 10진수를 계산할 수 있도록 코드를 몇 가지 수정해 보겠습니다.
 
-1. **찾기 및 바꾸기** 컨트롤(**Ctrl** + **F**)을 사용하여 `float` 변수의 각 인스턴스를 `double`로 변경하고 `Convert.ToInt32` 메서드의 각 인스턴스를 `Convert.ToDouble`로 변경합니다.
+1. **찾기 및 바꾸기** 컨트롤(**Ctrl** + **H**)을 사용하여 `float` 변수의 각 인스턴스를 `double`로 변경하고 `Convert.ToInt32` 메서드의 각 인스턴스를 `Convert.ToDouble`로 변경합니다.
 
 1. 계산기 앱을 실행하고 숫자 **42.5**를 숫자 **119.75**로 나눕니다.
 

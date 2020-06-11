@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634450"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182913"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 
 MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니다. 항목에는 파일 이름, 경로 및 버전 번호와 같은 메타데이터가 포함됩니다. Visual Studio의 모든 프로젝트 형식에는 공통된 여러 항목이 있습니다. 이러한 항목은 *Microsoft.Build.CommonTypes.xsd* 파일에 정의되어 있습니다.
+
 ## <a name="common-items"></a>공통 항목
 
- 다음은 모든 공통 프로젝트 항목의 목록입니다.
 다음은 모든 공통 프로젝트 항목의 목록입니다.
 
 ### <a name="reference"></a>참고
 
- 프로젝트의 어셈블리(관리) 참조를 나타냅니다.
+프로젝트의 어셈블리(관리) 참조를 나타냅니다.
 
 |항목 메타데이터 이름|설명|
 |---------------|-----------------|
@@ -45,7 +45,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="comreference"></a>COMReference
 
- 프로젝트의 COM(비관리) 구성 요소 참조를 나타냅니다. 이 항목은 .NET 프로젝트에만 적용됩니다.
+프로젝트의 COM(비관리) 구성 요소 참조를 나타냅니다. 이 항목은 .NET 프로젝트에만 적용됩니다.
 
 |항목 메타데이터 이름|설명|
 |---------------|-----------------|
@@ -59,7 +59,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="comfilereference"></a>COMFileReference
 
- [ResolveComReference](resolvecomreference-task.md) 대상의 `TypeLibFiles` 매개 변수에 전달되는 형식 라이브러리 목록을 나타냅니다. 이 항목은 .NET 프로젝트에만 적용됩니다.
+[ResolveComReference](resolvecomreference-task.md) 대상의 `TypeLibFiles` 매개 변수에 전달되는 형식 라이브러리 목록을 나타냅니다. 이 항목은 .NET 프로젝트에만 적용됩니다.
 
 |항목 메타데이터 이름|설명|
 |---------------|-----------------|
@@ -67,7 +67,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="nativereference"></a>NativeReference
 
- 네이티브 매니페스트 파일 또는 이러한 파일에 대한 참조를 나타냅니다.
+네이티브 매니페스트 파일 또는 이러한 파일에 대한 참조를 나타냅니다.
 
 |항목 메타데이터 이름|설명|
 |---------------|-----------------|
@@ -76,7 +76,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="projectreference"></a>ProjectReference
 
- 다른 프로젝트에 대한 참조를 나타냅니다.
+다른 프로젝트에 대한 참조를 나타냅니다. `ProjectReference` 항목은 `ResolveProjectReferences` 대상에 의해 [참조](#reference) 항목으로 변환되므로 참조의 모든 유효한 메타데이터는 변환 프로세스에서 덮어쓰지 않는 경우 `ProjectReference`에서 유효할 수 있습니다.
 
 |항목 메타데이터 이름|설명|
 |---------------|-----------------|
@@ -87,7 +87,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="compile"></a>Compile
 
- 컴파일러에 대한 소스 파일을 나타냅니다.
+컴파일러에 대한 소스 파일을 나타냅니다.
 
 | 항목 메타데이터 이름 | 설명 |
 |-----------------------| - |
@@ -99,7 +99,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="embeddedresource"></a>EmbeddedResource
 
- 생성된 어셈블리에 포함될 리소스를 나타냅니다.
+생성된 어셈블리에 포함될 리소스를 나타냅니다.
 
 | 항목 메타데이터 이름 | 설명 |
 |-----------------------| - |
@@ -114,7 +114,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="content"></a>콘텐츠
 
- 프로젝트로 컴파일되지 않지만 프로젝트에 포함되거나 함께 게시될 수 있는 파일을 나타냅니다.
+프로젝트로 컴파일되지 않지만 프로젝트에 포함되거나 함께 게시될 수 있는 파일을 나타냅니다.
 
 | 항목 메타데이터 이름 | 설명 |
 |-----------------------| - |
@@ -130,7 +130,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="none"></a>없음
 
- 빌드 프로세스에서 역할이 없는 파일을 나타냅니다.
+빌드 프로세스에서 역할이 없는 파일을 나타냅니다.
 
 | 항목 메타데이터 이름 | 설명 |
 |-----------------------| - |
@@ -144,7 +144,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
 
- `[AssemblyMetadata(key, value)]`로 생성될 어셈블리 특성을 나타냅니다.
+`[AssemblyMetadata(key, value)]`로 생성될 어셈블리 특성을 나타냅니다.
 
 | 항목 메타데이터 이름 | 설명 |
 |-----------------------| - |
@@ -156,16 +156,17 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
- 빌드에 대한 기본 애플리케이션 매니페스트를 나타내며 ClickOnce 배포 보안 정보를 포함합니다.
+빌드에 대한 기본 애플리케이션 매니페스트를 나타내며 ClickOnce 배포 보안 정보를 포함합니다.
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
 
- 가져올 FxCop 프로젝트를 나타냅니다.
+가져올 FxCop 프로젝트를 나타냅니다.
 
 ### <a name="import"></a>가져오기
 
- Visual Basic 컴파일러가 네임스페이스를 가져올 어셈블리를 나타냅니다.
+Visual Basic 컴파일러가 네임스페이스를 가져올 어셈블리를 나타냅니다.
 
 ## <a name="see-also"></a>참조
 
 - [일반적인 MSBuild 프로젝트 속성](../msbuild/common-msbuild-project-properties.md)
+- [.NET Core SDK 프로젝트의 MSBuild 속성](/dotnet/core/project-sdk/msbuild-props)

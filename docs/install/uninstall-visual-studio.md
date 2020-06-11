@@ -2,7 +2,7 @@
 title: Visual Studio 제거
 titleSuffix: ''
 description: Visual Studio를 제거하는 방법을 단계별로 알아봅니다.
-ms.date: 12/19/2019
+ms.date: 05/06/2020
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd21f01f89cb4fe4507775670968496cbb5f99f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b5377c9bdb83c5c67816b3567656c49cf707071
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115007"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184421"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 
 이 페이지에서는 개발자를 위한 통합 생산성 도구 제품군인 Visual Studio를 제거하는 과정을 안내합니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 제거](/visualstudio/mac/uninstall)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 제거](/visualstudio/mac/uninstall)를 참조하세요.
+
+> [!TIP]
+> Visual Studio의 인스턴스에 문제가 있는 경우 **복구** 도구를 사용해 보세요. 자세한 내용은 [Visual Studio 복구](../install/repair-visual-studio.md)를 참조하세요. 
+>
+> 일부 Visual Studio 파일의 위치를 변경하려면 현재 인스턴스를 제거하지 않고도 할 수 있습니다. 자세한 내용은 [Visual Studio에서의 설치 위치 선택](../install/change-installation-locations.md) 페이지를 참조하세요.
+>
+> 일반적인 문제 해결 팁은 [Visual Studio 설치 및 업그레이드 문제 해결](../install/troubleshooting-installation-issues.md)을 참조하세요.
 
 ::: moniker range="vs-2017"
 
@@ -104,7 +111,7 @@ Visual Studio 2019와 Visual Studio 설치 관리자를 컴퓨터에서 제거�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 수정](modify-visual-studio.md)
 * [Visual Studio 업데이트](update-visual-studio.md)

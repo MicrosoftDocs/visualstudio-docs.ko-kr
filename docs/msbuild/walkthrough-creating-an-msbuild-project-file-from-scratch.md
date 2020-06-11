@@ -10,14 +10,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263138"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184278"
 ---
-# <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기
+# <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 MSBuild 프로젝트 파일 만들기
 
 .NET Framework를 대상으로 하는 프로그래밍 언어는 MSBuild 프로젝트 파일을 사용하여 애플리케이션 빌드 프로세스를 설명하고 제어합니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들 때 적절한 XML이 파일에 자동으로 추가됩니다. 그러나 XML이 구성되는 방식과 이러한 방식을 변경하여 빌드를 제어할 수 있는 방법을 이해하는 것이 좋습니다.
 
@@ -25,11 +25,11 @@ ms.locfileid: "78263138"
 
  이 연습에서는 텍스트 편집기만을 사용하여 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다. 이 연습에서는 다음과 같은 단계를 따릅니다.
 
-1. 최소 애플리케이션 소스 파일을 만듭니다.
+1. PATH 환경 변수를 확장합니다.
 
-2. 최소 MSBuild 프로젝트 파일을 만듭니다.
+2. 최소 애플리케이션 소스 파일을 만듭니다.
 
-3. MSBuild를 포함하도록 PATH 환경 변수를 확장합니다.
+3. 최소 MSBuild 프로젝트 파일을 만듭니다.
 
 4. 프로젝트 파일을 사용하여 애플리케이션을 빌드합니다.
 
@@ -45,13 +45,17 @@ ms.locfileid: "78263138"
 
 이 연습에서는 명령 프롬프트에서 프로젝트를 빌드하고 결과를 검토하는 방법을 보여 줍니다. MSBuild 및 명령 프롬프트에서 MSBuild를 실행하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
-연습을 완료하려면 .NET Framework(버전 2.0, 3.5, 4.0, 4.5 또는 그 이상)가 설치되어 있어야 합니다. .NET Framework에 연습에 필요한 MSBuild 및 Visual C# 컴파일러가 포함되어 있기 때문입니다.
+연습을 완료하려면 Visual Studio가 설치되어 있어야 합니다. 연습에 필요한 MSBuild 및 Visual C# 컴파일러가 포함되어 있기 때문입니다.
+
+## <a name="extend-the-path"></a>경로 확장
+
+MSBuild를 사용하려면 먼저 필요한 도구를 모두 포함하도록 PATH 환경 변수를 확장해야 합니다. **Visual Studio용 개발자 명령 프롬프트**를 사용할 수 있습니다. Windows 10에서 Windows 작업 표시줄의 검색 상자를 사용하여 검색합니다. 일반 명령 프롬프트 또는 스크립트 환경에서 환경을 설정하려면 Visual Studio 설치의 *Common7/Tools* 하위 폴더에서 *VSDevCmd.bat*를 실행합니다.
 
 ## <a name="create-a-minimal-application"></a>최소 애플리케이션 만들기
 
  이 섹션에서는 텍스트 편집기를 사용하여 최소 C# 애플리케이션 소스 파일을 만드는 방법을 보여 줍니다.
 
-1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’).
+1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’). 
 
 2. **md HelloWorld**를 입력하여 *\HelloWorld\\* 라는 하위 폴더를 만듭니다.
 
@@ -154,16 +158,6 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 > ```xml
 > <Compile Include="*.cs" />
 > ```
-
-## <a name="extend-the-path-to-include-msbuild"></a>MSBuild를 포함하도록 경로 확장
-
-MSBuild에 액세스하려면 먼저 .NET Framework 폴더를 포함하도록 PATH 환경 변수를 확장해야 합니다.
-
-Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%ProgramFiles%\MSBuild* 또는 64비트 운영 체제의 경우 *%ProgramFiles(x86)%\MSBuild*)에서 *MSBuild.exe*를 찾을 수 있습니다.
-
-명령 프롬프트에 **set PATH=%PATH%;%ProgramFiles%\MSBuild** 또는 **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**를 입력합니다.
-
-또는 Visual Studio가 설치되어 있는 경우 *MSBuild* 폴더를 포함하는 경로가 있는 **Visual Studio용 개발자 명령 프롬프트**를 사용할 수 있습니다.
 
 ## <a name="build-the-application"></a>애플리케이션 빌드
 
@@ -472,11 +466,11 @@ Visual Studio 2013부터 MSBuild 폴더(32비트 운영 체제의 경우 *%Progr
 </Project>
 ```
 
-## <a name="whats-next"></a>다음 단계
+## <a name="whats-next"></a>새로운 기능
 
  Visual Studio는 이 연습에 표시된 작업의 많은 부분을 자동으로 수행할 수 있습니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들고, 편집하고, 빌드하고, 테스트하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild 개요](../msbuild/msbuild.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 03/16/2020
+ms.date: 05/20/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,23 +15,27 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437738"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183381"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.5 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.6 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
 
-Visual Studio 2019를 사용하면 모든 개발자, 앱 및 플랫폼을 위한 업계 최고의 도구와 서비스가 제공됩니다. Visual Studio를 처음 사용하는 초보자든, 수년간 사용한 숙련자든 간에 이 새로운 버전에는 유용한 많은 기능이 있습니다.
+Visual Studio는 개발자의 요구를 충족하기 위해 계속 변경됩니다. **[Microsoft Build](https://mybuild.microsoft.com/)** 라이브러리의 다음 비디오에서 일부 [최신 기능](/visualstudio/releases/2019/release-notes/) 둘러보기에 참여하여 향후 제공될 기능을 [살펴보세요](/visualstudio/releases/2019/release-notes-preview/). <br><br>비디오 길이: 44분 58초
 
-다음은 새로운 기능에 대한 간략한 요약입니다.
+> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
+
+Visual Studio 2019를 사용하면 모든 개발자, 앱 및 플랫폼을 위한 업계 최고의 도구와 서비스가 제공됩니다. Visual Studio를 처음 사용하는 사용자와 수년간 사용해 온 사용자 모두에게 유용한 여러 기능이 최신 버전에 포함되어 있습니다.
+
+다음은 새로운 기능 모두에 대한 간략한 요약입니다.
 
 * **[개발](#develop)** : 향상된 성능, 인스턴트 코드 정리, 더 나은 검색 결과를 사용하여 계속 집중하고 생산성을 유지합니다.
 * **[공동 작업](#collaborate)** : Git 우선 워크플로, 실시간 편집 및 디버깅, Visual Studio에서 바로 코드 검토를 사용하여 자연스럽게 협업합니다.

@@ -1,6 +1,6 @@
 ---
-title: '방법: 여러 구성 동시 빌드'
-ms.date: 11/04/2016
+title: '방법: 여러 구성 빌드'
+ms.date: 05/13/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
@@ -9,20 +9,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6d6a3b4f9110f85ff42e8b9dcf6dd531c3802e2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77904089"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183550"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>방법: 여러 구성 동시 빌드
+# <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>방법: 단일 빌드 요청에서 여러 구성 빌드
 
-**일괄 빌드** 대화 상자를 통해 여러 빌드 구성 또는 모든 빌드 구성을 동시에 사용하여 대부분의 프로젝트 형식을 빌드할 수 있습니다. 그러나 다음과 같은 유형의 프로젝트는 여러 빌드 구성에서 동시에 빌드할 수 없습니다.
+**일괄 빌드** 대화 상자를 사용하여 하나의 IDE 작업으로 여러 빌드 구성 또는 모든 빌드 구성을 통해 대부분의 프로젝트 형식을 빌드할 수 있습니다. 그러나 다음과 같은 유형의 프로젝트는 여러 빌드 구성에서 동시에 빌드할 수 없습니다.
 
 1. JavaScript를 사용하여 빌드된 Windows용 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 앱
 
 2. 모든 Visual Basic 프로젝트
+
+3. CMake 프로젝트
 
 솔루션에 이러한 두 가지 프로젝트 형식의 프로젝트가 포함된 경우 해당 솔루션에 **일괄 빌드**를 사용할 수 없습니다. 이 경우 **빌드** 메뉴에 명령이 표시되지 않습니다.
 

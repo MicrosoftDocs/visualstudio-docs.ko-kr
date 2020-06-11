@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77652796"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180404"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
@@ -73,7 +73,14 @@ c:\
 
 *Directory.Build.props*는 *Microsoft.Common.props*에서 초기에 가져오고 나중에 정의된 속성을 적용할 수 없습니다. 따라서 아직 정의되지 않은 속성을 참조하지 마세요. 참조할 경우 비어 있는 것으로 평가됩니다.
 
-*Directory.Build.targets*는 NuGet 패키지에서 *.targets* 파일을 가져온 후 *Microsoft.Common.targets*에서 가져옵니다. 따라서 대부분의 빌드 논리에 정의된 속성 및 대상을 재정의할 수 있으나, 마지막으로 가져온 후 프로젝트를 사용자 지정해야 할 수 있습니다.
+*Directory.Build.props*에 설정된 속성은 프로젝트 파일이나 가져온 파일의 다른 위치에서 재정의할 수 있으므로 *Directory.Build.props*의 설정은 프로젝트의 기본값을 지정하는 것으로 간주할 수 있습니다.
+
+*Directory.Build.targets*는 NuGet 패키지에서 *.targets* 파일을 가져온 후 *Microsoft.Common.targets*에서 가져옵니다. 따라서 개별 프로젝트에서 무엇을 설정하는지와 관계없이 대부분의 빌드 논리에 정의된 속성과 대상을 재정의하거나 모든 프로젝트의 속성을 설정할 수 있습니다.
+
+이전 설정을 모두 재정의하는 개별 프로젝트의 속성을 설정하거나 대상을 정의해야 하는 경우 최종 가져오기 후 프로젝트 파일에 해당 논리를 넣습니다. SDK 스타일 프로젝트에서 이 작업을 수행하려면 먼저 SDK 스타일 특성을 해당하는 가져오기로 바꾸어야 합니다. [MSBuild 프로젝트 SDK 사용 방법](how-to-use-project-sdk.md)을 참조하세요.
+
+> [!NOTE]
+> MSBuild 엔진은 모든 프로젝트(`PreBuildEvent`포함)의 빌드 실행을 시작하기 전에 평가 중 가져온 모든 파일을 읽으므로 이러한 파일은 `PreBuildEvent` 또는 빌드 프로세스의 다른 부분에 의해 수정될 수 없습니다. 모든 수정 사항은 *MSBuild.exe*의 다음 호출 또는 다음 Visual Studio 빌드까지 적용되지 않습니다.
 
 ### <a name="use-case-multi-level-merging"></a>사용 사례: 다단계 병합
 
@@ -189,6 +196,8 @@ MSBuild에서 솔루션 파일을 빌드할 때 먼저 프로젝트 파일로 �
 </Project>
 ```
 
+솔루션 빌드는 프로젝트 빌드와 별개이므로 여기의 설정은 프로젝트 빌드에 영향을 주지 않습니다.
+
 ## <a name="customize-all-net-builds"></a>모든 .NET 빌드 사용자 지정
 
 빌드 서버를 유지 관리할 때는 서버에 있는 모든 빌드에 대해 MSBuild 설정을 전역적으로 구성해야 할 수 있습니다.  원칙적으로 전역 *Microsoft.Common.Targets* 또는 *Microsoft.Common.Props* 파일을 수정할 수 있지만 더 좋은 방법이 있습니다. 특정 MSBuild 속성을 사용하고 특정 사용자 지정 `.targets` 및 `.props` 파일을 추가하여 특정 프로젝트 형식(예: 모든 C# 프로젝트)의 모든 빌드에 영향을 줄 수 있습니다.
@@ -216,14 +225,35 @@ MSBuild 또는 Visual Studio 설치가 관리하는 모든 C# 또는 Visual Basi
 msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
 ```
 
-가장 좋은 방법은 시나리오에 따라 달라집니다. 전용 빌드 서버가 있고 해당 서버에서 실행되는 적절한 프로젝트 형식의 모든 빌드에서 항상 특정 대상이 실행되도록 하려면 전역 사용자 지정 `.targets` 또는 `.props` 파일을 사용하는 것이 좋습니다.  특정 조건이 적용될 때만 사용자 지정 대상이 실행되도록 하려면 다른 파일 위치를 사용하고 필요한 경우에만 MSBuild 명령줄에서 적절한 MSBuild 속성을 설정하여 해당 파일의 경로를 설정합니다.
+가장 좋은 방법은 시나리오에 따라 달라집니다. Visual Studio 확장성을 사용하여 빌드 시스템을 사용자 지정하고 사용자 지정을 설치 및 관리하기 위한 메커니즘을 제공할 수 있습니다.
+
+전용 빌드 서버가 있고 해당 서버에서 실행되는 적절한 프로젝트 형식의 모든 빌드에서 항상 특정 대상이 실행되도록 하려면 전역 사용자 지정 `.targets` 또는 `.props` 파일을 사용하는 것이 좋습니다.  특정 조건이 적용될 때만 사용자 지정 대상이 실행되도록 하려면 다른 파일 위치를 사용하고 필요한 경우에만 MSBuild 명령줄에서 적절한 MSBuild 속성을 설정하여 해당 파일의 경로를 설정합니다.
 
 > [!WARNING]
 > Visual Studio는 형식이 일치하는 프로젝트를 빌드할 때마다 MSBuild 폴더에서 사용자 지정 `.targets` 또는 `.props` 파일을 찾으면 이를 사용합니다. 이로 인해 의도하지 않은 결과가 발생할 수 있으며, 제대로 수행되지 않으면 컴퓨터에서 Visual Studio의 빌드 기능을 사용하지 못할 수 있습니다.
 
+## <a name="customize-c-builds"></a>C++ 빌드 사용자 지정
+
+C++ 프로젝트의 경우 앞에서 설명한 사용자 지정 *.targets* 및 *.props* 파일을 같은 방법으로 사용하여 기본 설정을 재정의할 수 없습니다. *Directory.Build.props*는 *Microsoft.Common.props*에서 가져옵니다. 후자 파일은 `Microsoft.Cpp.Default.props`에서 가져오지만 대부분의 기본값은 *Microsoft.Cpp.props*에서 정의되고, 여러 속성의 경우 속성이 이미 정의되어 있으므로 “아직 정의되지 않은 경우” 조건을 사용할 수 없지만 `PropertyGroup`에 정의된 특정 프로젝트 속성의 기본값은 `Label="Configuration"`과 달라야 합니다([.vcxproj 및 .props 파일 구조](/cpp/build/reference/vcxproj-file-structure) 참조).
+
+그러나 다음 속성을 사용하여 *.props* 파일을 *Microsoft.Cpp.\** 파일 전/후에 자동으로 가져오도록 지정할 수 있습니다.
+
+- ForceImportAfterCppDefaultProps
+- ForceImportBeforeCppProps
+- ForceImportAfterCppProps
+- ForceImportBeforeCppTargets
+- ForceImportAfterCppTargets
+
+모든 C++ 빌드의 속성 기본값을 사용자 지정하려면 다른 *.props* 파일(예: *MyProps.props*)을 만들고 `Directory.Build.props`의 `ForceImportAfterCppProps` 속성이 이 파일을 가리키도록 정의합니다.
+
+<PropertyGroup> <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
+</PropertyGroup>
+
+*MyProps.props*는 *Microsoft.Cpp.props*의 맨 끝에서 자동으로 가져옵니다.
+
 ## <a name="customize-all-c-builds"></a>모든 C++ 빌드 사용자 지정
 
-C++ 프로젝트에서는 앞에서 언급한 사용자 지정 `.targets` 및 `.props` 파일이 무시됩니다. C++ 프로젝트에서는 플랫폼마다 `.targets` 파일을 만들어 해당 플랫폼의 적절한 가져오기 폴더에 배치할 수 있습니다.
+Visual Studio 설치 사용자 지정은 해당 사용자 지정을 추적하기 쉽지 않아서 권장되지 않지만, Visual Studio를 확장하여 특정 플랫폼의 C++ 빌드를 사용자 지정하는 경우 각 플랫폼의 `.targets` 파일을 만들어 해당 플랫폼의 적절한 가져오기 폴더에 Visual Studio 확장의 일부로 배치할 수 있습니다.
 
 Win32 플랫폼용 `.targets` 파일인 *Microsoft.Cpp.Win32.targets*에는 다음 `Import` 요소가 포함되어 있습니다.
 
@@ -243,7 +273,9 @@ Win32 플랫폼용 `.targets` 파일인 *Microsoft.Cpp.Win32.targets*에는 다�
 
 *%ProgramFiles32%\MSBuild\Microsoft.Cpp\v{version}\Platforms\*에는 다른 대상 플랫폼을 위한 비슷한 import 요소가 있습니다.
 
-플랫폼에 따라 적절한 폴더에 `.targets` 파일을 배치하면 MSBuild는 해당 플랫폼의 모든 C++ 빌드에 해당 파일을 가져옵니다. 필요한 경우, 여기에 여러 `.targets` 파일을 넣을 수 있습니다.
+플랫폼에 따라 적절한 `ImportAfter` 폴더에 `.targets` 파일을 배치하면 MSBuild는 해당 플랫폼의 모든 C++ 빌드에 해당 파일을 가져옵니다. 필요한 경우, 여기에 여러 `.targets` 파일을 넣을 수 있습니다. 
+
+Visual Studio 확장성을 사용하여 새 플랫폼을 정의하는 등의 추가 사용자 지정을 수행할 수 있습니다. 자세한 내용은 [C++ 프로젝트 확장성](../extensibility/visual-cpp-project-extensibility.md)을 참조하세요.
 
 ### <a name="specify-a-custom-import-on-the-command-line"></a>명령줄에서 사용자 지정 가져오기 지정
 

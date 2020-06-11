@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는 구독의 수에 대한 세부 정보입니다.
-ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232330"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183056"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 
@@ -72,7 +72,7 @@ MPN을 통해 제공된 Visual Studio 구독을 사용하여 라이선스 사용
 
 ## <a name="resources"></a>리소스
 
-- [MPN 프로그램 관리자 가이드](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - Visual Studio 구독을 MPN 직원에게 할당하는 방법에 대한 지침을 포함 합니다.
+- [Microsoft 파트너 네트워크 프로그램 가이드](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Visual Studio 구독을 MPN 직원에게 할당](manage-mpn-subscriptions.md)
 - [사용 약관 사용](https://www.microsoft.com/useterms/) - MPN를 통해 제공된 Visual Studio 구독은 (NFR)EULA 재판매용이 아닌 Visual Studio 구독을 조건으로 합니다.
 

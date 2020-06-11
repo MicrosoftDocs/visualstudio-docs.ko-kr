@@ -3,7 +3,7 @@ title: IIS 컴퓨터의 원격 디버그 ASP.NET
 ms.custom:
 - remotedebugging
 - seodec18
-ms.date: 05/21/2018
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 86b035164c4d34f4ce0182ea51fdfe6381ad2d4f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536026"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173917"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>원격 IIS 컴퓨터의 ASP.NET 원격 디버그
 IIS에 배포된 ASP.NET 애플리케이션을 디버그하려면 앱을 배포한 컴퓨터에 원격 도구를 설치하고 실행한 다음, Visual Studio에서 실행 중인 앱에 연결합니다.
@@ -113,7 +113,7 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 이 옵션을 사용하여 게시 설정 파일을 만들고 Visual Studio로 가져올 수 있습니다.
 
 > [!NOTE]
-> 이 배포 방법은 웹 배포를 사용합니다. 설정을 가져오는 대신 Visual Studio에서 웹 배포를 직접 구성하려는 경우 호스팅 서버용 웹 배포 3.6 대신 웹 배포 3.6을 설치하면 됩니다. 단, 웹 배포를 직접 구성하는 경우 서버의 앱 폴더가 올바른 값과 권한으로 구성되어 있는지 확인해야 합니다([ASP.NET 웹 사이트 구성](#BKMK_deploy_asp_net)참조).
+> 이 배포 방법에서는 서버에 설치되어 있어야 하는 웹 배포를 사용합니다. 설정을 가져오는 대신 웹 배포를 직접 구성하려는 경우 호스팅 서버용 웹 배포 3.6 대신 웹 배포 3.6을 설치하면 됩니다. 단, 웹 배포를 직접 구성하는 경우 서버의 앱 폴더가 올바른 값과 권한으로 구성되어 있는지 확인해야 합니다([ASP.NET 웹 사이트 구성](#BKMK_deploy_asp_net)참조).
 
 ### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Windows Server에서 호스팅 서버용 웹 배포 설치 및 구성
 
@@ -131,7 +131,7 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 
 1. **설정** 대화 상자에서 **다음**을 클릭하여 디버깅을 사용하도록 설정하고 **디버그** 구성을 선택한 다음, **파일 게시** 옵션 아래에서 **대상에서 추가 파일 제거**를 선택합니다.
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > 릴리스 구성을 선택하는 경우 게시할 때 *web.config* 파일에서 디버깅을 사용하지 않도록 설정합니다.
 
 1. **저장**을 클릭한 다음, 앱을 다시 게시합니다.
@@ -202,15 +202,15 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
     > [!TIP]
     > Visual Studio 2017 이상 버전에서는 **디버그 > 프로세스에 다시 연결...** (Shift+Alt+P)을 사용하여 이전에 연결한 프로세스에 다시 연결할 수 있습니다.
 
-3. 한정자 필드를 **\<원격 컴퓨터 이름>** 으로 설정하고 **Enter** 키를 누릅니다.
+3. 한정자 필드를 **\<remote computer name>** 으로 설정하고 **Enter** 키를 누릅니다.
 
-    Visual Studio에서 **\<원격 컴퓨터 이름>:포트** 형식으로 표시되는 컴퓨터 이름에 필요한 포트를 추가하는지 확인합니다.
+    Visual Studio에서 **\<remote computer name>:포트** 형식으로 표시되는 컴퓨터 이름에 필요한 포트를 추가하는지 확인합니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서는 **\<원격 컴퓨터 이름>:4024**가 표시됩니다.
+    Visual Studio 2019에서는 **\<remote computer name>:4024**가 표시되고,
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017에서는 **\<원격 컴퓨터 이름>:4022**가 표시됩니다.
+    Visual Studio 2017에서는 **\<remote computer name>:4022**가 표시됩니다.
     ::: moniker-end
     이 포트는 필수입니다. 포트 번호가 표시되지 않으면 수동으로 추가하세요.
 
@@ -234,7 +234,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
 
 7. **연결**을 클릭합니다.
 
-8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서 **http://\<원격 컴퓨터 이름>** 으로 이동합니다.
+8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서 **http://\<remote computer name>** 으로 이동합니다.
 
     ASP.NET 웹 페이지가 표시됩니다.
 9. 실행 중인 ASP.NET 애플리케이션에서 **정보** 페이지 링크를 클릭합니다.

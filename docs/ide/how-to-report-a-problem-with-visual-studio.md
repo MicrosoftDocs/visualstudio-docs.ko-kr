@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 37dcfd6351cfa3adde4c1825518dd2bea7ce9b34
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276503"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180560"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 
@@ -45,9 +45,6 @@ ms.locfileid: "81276503"
 
 1. 발생한 문제를 찾을 수 없는 경우 화면 맨 아래에서 **새 문제 보고**를 선택합니다.
 
-   > [!NOTE]
-   > **새 문제 보고** 단추는 개발자 커뮤니티에 대한 Visual Studio 인터페이스에만 표시됩니다. [개발자 커뮤니티](https://developercommunity.visualstudio.com/) 웹 사이트에서 직접 문제를 보고할 수 없습니다.
-
 1. 올바른 Visual Studio 팀에게 전달될 수 있도록 문제에 대한 설명이 포함된 제목을 입력합니다.
 
 1. 추가 세부 정보와 문제를 재현을 위한 단계(가능한 경우)를 제공합니다.
@@ -72,7 +69,7 @@ ms.locfileid: "81276503"
 
 1. **레코드** 탭을 선택합니다.
 
-1. 문제를 재현할 수 있는 경우 **작업 기록**에서 Visual Studio의 현재 인스턴스를 선택합니다. 예를 들어 Visual Studio가 정지되어 수행할 수 없는 경우 **\<새 인스턴스 만들기>** 를 선택하여 Visual Studio의 새 인스턴스에서 작업을 기록합니다.
+1. 문제를 재현할 수 있는 경우 **작업 기록**에서 Visual Studio의 현재 인스턴스를 선택합니다. 예를 들어 Visual Studio가 정지되어 수행할 수 없는 경우 **\<Create a new instance>** 를 선택하여 Visual Studio의 새 인스턴스에서 작업을 기록합니다.
 
 1. **기록 시작**을 선택합니다. 도구를 실행할 수 있는 권한을 제공합니다.
 

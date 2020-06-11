@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633332"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183524"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 멀티 타기팅 개요
 
@@ -36,7 +36,7 @@ MSBuild를 사용하면 .NET Framework의 여러 버전 중 하나 및 여러 �
 
 ## <a name="target-framework-and-platform"></a>대상 프레임워크 및 플랫폼
 
- *대상 프레임워크*는 프로젝트가 실행되도록 기본 제공되는 .NET Framework의 버전이고 *대상 플랫폼*은 프로젝트가 실행되도록 기본 제공되는 시스템 플랫폼입니다.  예를 들어 802x86 프로세서 제품군(x86)과 호환되는 32비트 플랫폼에서 실행할 .NET Framework 2.0 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다. 자세한 내용은 [대상 프레임워크 및 대상 플랫폼](../msbuild/msbuild-target-framework-and-target-platform.md)을 참조하세요.
+ *대상 프레임워크*는 프로젝트가 실행되도록 기본 제공되는 .NET Framework의 버전이고 *대상 플랫폼*은 프로젝트가 실행되도록 기본 제공되는 시스템 플랫폼입니다.  예를 들어 80x86 프로세서 제품군(x86)과 호환되는 32비트 플랫폼에서 실행할 .NET Framework 2.0 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다. 자세한 내용은 [대상 프레임워크 및 대상 플랫폼](../msbuild/msbuild-target-framework-and-target-platform.md)을 참조하세요.
 
 ## <a name="toolset-toolsversion"></a>도구 집합(ToolsVersion)
 

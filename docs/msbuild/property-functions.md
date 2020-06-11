@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586683"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183654"
 ---
 # <a name="property-functions"></a>속성 함수
 
@@ -45,7 +45,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>정적 속성 함수
 
-빌드 스크립트에서 많은 시스템 클래스의 정적 속성 및 메서드에 액세스할 수 있습니다. 정적 속성값을 가져오려면 다음 구문을 사용합니다. 여기서 \<Class>는 시스템 클래스의 이름이고 \<Property>는 속성의 이름입니다.
+빌드 스크립트에서 많은 시스템 클래스의 정적 속성 및 메서드에 액세스할 수 있습니다. 정적 속성 값을 가져오려면 다음 구문을 사용합니다. 여기서 \<Class>는 시스템 클래스의 이름이고 \<Property>는 속성의 이름입니다.
 
 ```
 $([Class]::Property)
@@ -71,57 +71,57 @@ $([Class]::Method(Parameters))
 
 정적 속성 함수에는 다음과 같은 시스템 클래스의 모든 정적 메서드 또는 속성을 사용할 수 있습니다.
 
-- System.Byte
-- System.Char
-- System.Convert
-- System.DateTime
-- System.Decimal
-- System.Double
-- System.Enum
-- System.Guid
-- System.Int16
-- System.Int32
-- System.Int64
-- System.IO.Path
-- System.Math
-- System.Runtime.InteropServices.OSPlatform
-- System.Runtime.InteropServices.RuntimeInformation
-- System.UInt16
-- System.UInt32
-- System.UInt64
-- System.SByte
-- System.Single
-- System.String
-- System.StringComparer
-- System.TimeSpan
-- System.Text.RegularExpressions.Regex
-- System.UriBuilder
-- System.Version
-- Microsoft.Build.Utilities.ToolLocationHelper
+- <xref:System.Byte?displayProperty=nameWithType>
+- <xref:System.Char?displayProperty=nameWithType>
+- <xref:System.Convert?displayProperty=nameWithType>
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.Decimal?displayProperty=nameWithType>
+- <xref:System.Double?displayProperty=nameWithType>
+- <xref:System.Enum?displayProperty=nameWithType>
+- <xref:System.Guid?displayProperty=nameWithType>
+- <xref:System.Int16?displayProperty=nameWithType>
+- <xref:System.Int32?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType>
+- <xref:System.IO.Path?displayProperty=nameWithType>
+- <xref:System.Math?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.OSPlatform?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.RuntimeInformation?displayProperty=nameWithType>
+- <xref:System.UInt16?displayProperty=nameWithType>
+- <xref:System.UInt32?displayProperty=nameWithType>
+- <xref:System.UInt64?displayProperty=nameWithType>
+- <xref:System.SByte?displayProperty=nameWithType>
+- <xref:System.Single?displayProperty=nameWithType>
+- <xref:System.String?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- <xref:System.TimeSpan?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
+- <xref:System.UriBuilder?displayProperty=nameWithType>
+- <xref:System.Version?displayProperty=nameWithType>
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper?displayProperty=nameWithType>
 
 또한 다음 정적 메서드 및 속성을 사용할 수 있습니다.
 
-- System.Environment::CommandLine
-- System.Environment::ExpandEnvironmentVariables
-- System.Environment::GetEnvironmentVariable
-- System.Environment::GetEnvironmentVariables
-- System.Environment::GetFolderPath
-- System.Environment::GetLogicalDrives
-- System.IO.Directory::GetDirectories
-- System.IO.Directory::GetFiles
-- System.IO.Directory::GetLastAccessTime
-- System.IO.Directory::GetLastWriteTime
-- System.IO.Directory::GetParent
-- System.IO.File::Exists
-- System.IO.File::GetCreationTime
-- System.IO.File::GetAttributes
-- System.IO.File::GetLastAccessTime
-- System.IO.File::GetLastWriteTime
-- System.IO.File::ReadAllText
+- [System.Environment::CommandLine](xref:System.Environment.CommandLine*)
+- [System.Environment::ExpandEnvironmentVariables](xref:System.Environment.ExpandEnvironmentVariables*)
+- [System.Environment::GetEnvironmentVariable](xref:System.Environment.GetEnvironmentVariable*)
+- [System.Environment::GetEnvironmentVariables](xref:System.Environment.GetEnvironmentVariables*)
+- [System.Environment::GetFolderPath](xref:System.Environment.GetFolderPath*)
+- [System.Environment::GetLogicalDrives](xref:System.Environment.GetLogicalDrives*)
+- [System.IO.Directory::GetDirectories](xref:System.IO.Directory.GetDirectories*)
+- [System.IO.Directory::GetFiles](xref:System.IO.Directory.GetFiles*)
+- [System.IO.Directory::GetLastAccessTime](xref:System.IO.Directory.GetLastAccessTime*)
+- [System.IO.Directory::GetLastWriteTime](xref:System.IO.Directory.GetLastWriteTime*)
+- [System.IO.Directory::GetParent](xref:System.IO.Directory.GetParent*)
+- [System.IO.File::Exists](xref:System.IO.File.Exists*)
+- [System.IO.File::GetCreationTime](xref:System.IO.File.GetCreationTime*)
+- [System.IO.File::GetAttributes](xref:System.IO.File.GetAttributes*)
+- [System.IO.File::GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
+- [System.IO.File::GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
+- [System.IO.File::ReadAllText](xref:System.IO.File.ReadAllText*)
 
 ### <a name="calling-instance-methods-on-static-properties"></a>정적 속성에 대한 인스턴스 메서드 호출
 
-개체 인스턴스를 반환하는 정적 속성에 액세스하는 경우 해당 개체의 인스턴스 메서드를 호출할 수 있습니다. 인스턴스 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 \<Class>는 시스템 클래스의 이름이고 \<Property>는 속성의 이름이며 \<Method>는 메서드의 이름이고, (\<Parameters>)는 메서드의 매개 변수 목록입니다.
+개체 인스턴스를 반환하는 정적 속성에 액세스하는 경우 해당 개체의 인스턴스 메서드를 호출할 수 있습니다. 인스턴스 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 \<Class>는 시스템 클래스의 이름이고 \<Property>는 속성의 이름이며, \<Method>는 메서드의 이름이고 (\<Parameters>)는 메서드의 매개 변수 목록입니다.
 
 ```
 $([Class]::Property.Method(Parameters))

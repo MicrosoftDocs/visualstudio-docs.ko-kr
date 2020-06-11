@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543965"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183004"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>먼저 Visual Studio의 배포 살펴보기
 
-다른 컴퓨터, 디바이스, 서버 또는 클라우드에 설치하기 위해 애플리케이션, 서비스 또는 구성 요소를 배포할 수 있습니다. Visual Studio에서 필요한 배포 유형에 적합한 방법을 선택할 수 있습니다. 명령줄 배포와 같은, 여기서 설명하지 않은 기타 배포 도구를 지원하는 앱 유형이 많습니다.
+다른 컴퓨터, 디바이스, 서버 또는 클라우드에 설치하기 위해 애플리케이션, 서비스 또는 구성 요소를 배포할 수 있습니다. Visual Studio에서 필요한 배포 유형에 적합한 방법을 선택할 수 있습니다. (여러 앱 유형은 명령 줄 배포 또는 여기에 설명되지 않은 NuGet 같은 기타 배포 도구를 지원합니다.)
 
 단계별 배포 지침은 빠른 시작 및 자습서를 참조하세요. 배포 옵션의 개요는 [내게 적합한 게시 옵션은?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)을 참조하세요.
 
@@ -44,7 +44,7 @@ ms.locfileid: "80543965"
 
     ![게시 선택](../deployment/media/quickstart-publish.png)
 
-- **Windows 데스크톱** ClickOnce 배포를 사용하여 Windows 데스크톱 애플리케이션을 게시할 수 있습니다. 이렇게 하면 사용자가 클릭 한 번으로 애플리케이션을 설치할 수 있습니다. 자세한 내용은 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 및 Visual Basic)를 참조하세요. C++/CLI의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조하고, C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
+- **Windows 데스크톱** ClickOnce 배포를 사용하여 Windows 데스크톱 애플리케이션을 게시할 수 있습니다. 이렇게 하면 사용자가 클릭 한 번으로 애플리케이션을 설치할 수 있습니다. 자세한 내용은 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 및 Visual Basic)를 참조하세요. C++/CLR의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) 또는 C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
 
 ## <a name="publish-to-azure"></a>Azure에 게시
 
@@ -77,13 +77,13 @@ ms.locfileid: "80543965"
 
     솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. (모든 게시 프로필을 이전에 구성한 경우 **새 프로필 만들기**를 클릭해야 합니다.) 게시 도구에서 원하는 옵션을 선택하고 구성 단계를 따릅니다.
 
-    ![IIS, FTP 등을 선택합니다.](../deployment/media/quickstart-publish-iis-ftp.png)
+    ![IIS 선택](../deployment/media/quickstart-publish-iis.png)
 
     Visual Studio에서 게시 프로필을 가져오는 방법에 대한 자세한 내용은 [게시 설정 가져오기 및 IIS에 배포](../deployment/tutorial-import-publish-settings-iis.md)를 참조하세요.
 
-    ASP.NET 애플리케이션 및 서비스는 여러 가지 다른 방법으로 배포할 수 있습니다. 자세한 내용은 [ASP.NET 웹 애플리케이션 및 서비스 배포](/aspnet/mvc/overview/deployment/)를 참조하세요.
+    ASP.NET 애플리케이션 및 서비스는 여러 가지 다른 방법으로 배포할 수 있습니다. 자세한 내용은 [ASP.NET 웹 애플리케이션 및 서비스 배포](/aspnet/overview/deployment)를 참조하세요.
 
-- **Windows 데스크톱** ClickOnce 배포를 사용하여 웹 서버 또는 네트워크 파일 공유에 Windows 데스크톱 애플리케이션을 게시할 수 있습니다. 이렇게 하면 사용자가 클릭 한 번으로 애플리케이션을 설치할 수 있습니다. 자세한 내용은 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 및 Visual Basic)를 참조하세요. C++/CLI의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조하고, C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
+- **Windows 데스크톱** ClickOnce 배포를 사용하여 웹 서버 또는 네트워크 파일 공유에 Windows 데스크톱 애플리케이션을 게시할 수 있습니다. 이렇게 하면 사용자가 클릭 한 번으로 애플리케이션을 설치할 수 있습니다. 자세한 내용은 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 및 Visual Basic)를 참조하세요. C++/CLR의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) 또는 C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
 
 ## <a name="publish-to-microsoft-store"></a>Microsoft Store에 게시
 
@@ -93,16 +93,9 @@ Visual Studio에서 Microsoft Store에 배포하기 위한 앱 패키지를 만�
 
     ![앱 패키지 만들기](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows 데스크톱**: Visual Studio 2017 버전 15.4부터 Microsoft Store에 배포할 수 있습니다. 이 작업을 수행하려면 Windows 애플리케이션 패키징 프로젝트를 만들어 시작합니다. 자세한 내용은 [Microsoft Store용 데스크톱 앱 패키지](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)를 참조하세요.
+- **Windows 데스크톱**: Visual Studio 2017 버전 15.4부터 데스크톱 브리지를 사용하여 Microsoft Store에 배포할 수 있습니다. 이 작업을 수행하려면 Windows 애플리케이션 패키징 프로젝트를 만들어 시작합니다. 자세한 내용은 [Microsoft Store의 데스크톱 앱 패키지(데스크톱 브리지)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 참조하세요.
 
-    ![데스크톱 앱 패키지](../deployment/media/feature-tour-desktop-bridge.png)
-
-## <a name="deploy-net-packages-to-nugetorg"></a>NuGet.org에 .NET 패키지 배포
-
-이러한 패키지를 사용하는 프로젝트에 필요한 다른 컨텐츠와 함께 컴파일된 코드(DLL)가 포함된 "패키지"에 번들 코드를 배포하려면 Visual Studio를 사용하여 NuGet 패키지 및 CLI 도구를 만들어 최종 배포 명령을 실행하면 됩니다.
-
-- [.NET Standard 패키지 만들기 및 게시](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-- [.NET Framework 패키지 만들기 및 게시](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
+    ![데스크톱 브리지](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-to-a-device-uwp"></a>디바이스에 배포(UWP)
 
@@ -112,13 +105,12 @@ Visual Studio에서 Microsoft Store에 배포하기 위한 앱 패키지를 만�
 
 [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)가 제공할 수 있는 것보다 더 복잡한 데스크톱 애플리케이션의 설치가 필요한 경우 Windows Installer 패키지(MSI 또는 EXE 설치 파일) 또는 사용자 지정 부트스트래퍼를 만들 수 있습니다.
 
-- [WiX Toolset 확장](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset)을 사용하여 MSI 기반 설치 관리자 패키지를 만들 수 있습니다. 이는 명령줄 도구 세트입니다.
+- [WiX Toolset Visual Studio 2017 확장](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)을 사용하여 MSI 기반 설치 관리자 패키지를 만들 수 있습니다. 이는 명령줄 도구 세트입니다.
 
-   ::: moniker range=">=vs-2019"
-   Visual studio 2019의 경우 [WiX Toolset Visual Studio 2019 확장](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension)을 사용합니다.
-   ::: moniker-end
+- Flexera Software의 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. InstallShield는 Visual Studio 2017 및 이후 버전에서 사용할 수 있습니다(Community Edition은 지원되지 않음). 
 
-- Flexera Software의 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. InstallShield는 Visual Studio 2017 및 이후 버전에서 사용할 수 있습니다(Community Edition은 지원되지 않음). InstallShield Limited Edition은 더 이상 Visual Studio에 포함되지 않으며, Visual Studio 2017 및 이후 버전에서 지원되지 않습니다. 추후 가용성은 [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)에 확인하세요.
+  > [!NOTE]
+  > InstallShield Limited Edition은 더 이상 Visual Studio에 포함되지 않으며 Visual Studio 2017 및 이후 버전에서 지원되지 않습니다. 추후 가용성은 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)에서 확인하세요.
 
 - 설치 프로젝트(vdproj)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. 이 옵션을 사용하려면 [Visual Studio 설치 관리자 프로젝트 확장](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)을 설치합니다.
 
@@ -146,7 +138,7 @@ Azure Pipelines를 사용하여 앱의 연속 배포를 사용하도록 설정�
 
 | 앱 형식 | 배포 시나리오 | 링크 |
 | --- | --- | --- |
-| **Office 앱** | Visual Studio에서 Office용 추가 기능을 게시할 수 있습니다. | [Office 추가 기능 게시 및 배포](/office/dev/add-ins/publish/publish) |
+| **Office 앱** | Visual Studio에서 Office용 추가 기능을 게시할 수 있습니다. | [Office 추가 기능 게시 및 배포](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 또는 OData 서비스** | 웹 서버에 배포한 WCF RIA 서비스를 다른 애플리케이션에서 사용할 수 있습니다. | [WCF Data Services 개발 및 배포](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch는 Visual Studio 2017부터 더 이상 지원되지 않지만, Visual Studio 2015 및 이전 버전에서는 아직 배포할 수 있습니다. | [LightSwitch 애플리케이션 배포](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

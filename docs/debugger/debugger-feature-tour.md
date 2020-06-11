@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77578950"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184213"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
 
@@ -93,9 +93,7 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 ## <a name="run-to-cursor"></a>커서까지 실행
 
-**디버깅 중지** 빨간색 단추![디버깅 중지](../debugger/media/dbg-tour-stop-debugging.png "디버그하는 동안 진단 도구 사용") 또는 **Shift** + **F5**를 눌러 디버거를 중지합니다.
-
-앱의 코드 줄을 마우스 오른쪽 단추로 클릭하고 **커서까지 실행**을 선택합니다. 이 명령은 디버깅을 시작하고 현재의 코드 줄에서 임시 중단점을 설정합니다.
+디버거에서 일시 중지되지 않고 코드를 편집하는 경우 앱의 코드 줄을 마우스 오른쪽 단추로 클릭하고 **커서까지 실행**을 선택합니다. 이 명령은 디버깅을 시작하고 현재의 코드 줄에서 임시 중단점을 설정합니다.
 
 ![커서까지 실행](../debugger/media/dbg-tour-run-to-cursor.png "커서까지 실행")
 

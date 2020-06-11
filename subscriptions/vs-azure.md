@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564175"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183615"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -32,7 +32,7 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
    > [!div class="mx-imgBorder"]
    > ![Azure 준비](_img/vs-azure/vs-azure-identity.png)
 
-5. 마지막 단계로 확인란을 클릭하여 약관에 동의한 다음 **등록**를 클릭합니다.  이것이 전부입니다!
+5. 마지막 단계로 확인란을 클릭하여 약관에 동의한 다음 **등록**를 클릭합니다.  이제 모든 작업을 마쳤습니다.
    > [!div class="mx-imgBorder"]
    > ![Azure 준비](_img/vs-azure/vs-azure-agreement.png)
 
@@ -50,7 +50,10 @@ Visual Studio 구독이 만료되거나 제거되면 월간 Azure 개발/테스�
 
 Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하여 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
 
-- **Visual Studio 구독을 직접 구매하는 경우** [Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=)를 통해 새 구독을 구매하거나 구독을 갱신합니다.  
+- **Visual Studio 구독을 직접 구매하는 경우** Microsoft Store를 통해 새 구독을 구매하거나 구독을 갱신합니다.  
+    - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 - **조직의 누군가가 조직의 구독을 구매하는 경우**, [Visual Studio 구독 관리자에게 문의](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
 - 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우**, Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
 
@@ -67,7 +70,7 @@ Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습�
 리소스 이전, 지출 한도 제거 또는 기타 Azure 항목에 대해 궁금한 사항이 있으면 Azure Portal에서 [Azure 지원 요청을 제출](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)할 수 있습니다. 
 
 ## <a name="eligibility"></a>자격
-|                 구독 수준/프로그램                 |           이점           |                         갱신 가능?                          |
+|                 구독 수준/프로그램                 |           혜택           |                         갱신 가능?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 USD 월간 크레딧     |                             예                             |
 |              GitHub Enterprise가 포함된 Visual Studio Enterprise               |     150 USD 월간 크레딧     |                             예                             |
@@ -113,7 +116,7 @@ A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472802"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183680"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -36,7 +36,7 @@ IntelliSense 코드 조각은 Visual Studio에서 애플리케이션에 삽입�
 </Assembly>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Reference 요소](../ide/code-snippets-schema-reference.md#reference-element)|코드 조각에서 필요로 하는 어셈블리 참조에 대한 정보가 포함되어 있습니다.|
 
@@ -52,7 +52,7 @@ IntelliSense 코드 조각은 Visual Studio에서 애플리케이션에 삽입�
 </Author>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
@@ -62,7 +62,7 @@ IntelliSense 코드 조각은 Visual Studio에서 애플리케이션에 삽입�
 
 짧은 코드 블록에 대한 컨테이너를 제공합니다.
 
-### <a name="keywords"></a>키워드
+### <a name="keywords"></a>키워드가
 
 `Code` 요소의 텍스트에는 `$end$` 및 `$selected$`의 두 예약어를 사용할 수 있습니다. `$end$`는 코드 조각을 삽입하고 나서 커서를 놓을 위치를 표시합니다. `$selected$`는 코드 조각을 호출하면 조각으로 삽입되는 문서에서 선택한 텍스트를 나타냅니다. 다음을 포함하는 코드 조각의 예를 들어 보겠습니다.
 
@@ -108,22 +108,23 @@ $selected$ is a great color. I love $selected$.
 
 코드 요소에 세 가지 특성을 사용할 수 있습니다.
 
-- 코드 조각의 언어를 지정하는 **언어** - _필수_ 특성입니다. 이 값은
+- 코드 조각의 언어를 지정하는 **언어** - _필수_ 특성입니다. 값은 다음 중 하나일 수 있습니다.
 
-   |값|Description|
+   |값|설명|
    |-----|-----------|
    |`VB`|Visual Basic 코드 조각을 식별합니다.|
    |`CSharp`|C# 코드 조각을 식별합니다.|
    |`CPP`|C++ 코드 조각을 식별합니다.|
+   |`XAML`|XAML 코드 조각을 식별합니다.|
    |`XML`|XML 코드 조각을 식별합니다.|
    |`JavaScript`|JavaScript 코드 조각을 식별합니다.|
    |`TypeScript`|TypeScript 코드 조각을 식별합니다.|
    |`SQL`|SQL 코드 조각을 식별합니다.|
    |`HTML`|HTML 코드 조각을 식별합니다.|
 
-- 조각에 포함된 코드 종류를 지정하는 **Kind** -  _(선택 사항)_ 특성입니다. 이 값은
+- 조각에 포함된 코드 종류를 지정하는 **Kind** -  _(선택 사항)_ 특성입니다. 값은 다음 중 하나일 수 있습니다.
 
-   |값|Description|
+   |값|설명|
    |-----|-----------|
    |`method body`|코드 조각이 메서드 본문이므로 메서드 선언 안에 삽입되도록 지정합니다.|
    |`method decl`|코드 조각이 메서드이므로 클래스나 모듈 안에 삽입되도록 지정합니다.|
@@ -135,7 +136,7 @@ $selected$ is a great color. I love $selected$.
 
 ### <a name="parent-element"></a>부모 요소
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet-element)|코드 조각에 대한 참조, 가져오기, 선언 및 코드가 포함되어 있습니다.|
 
@@ -150,16 +151,16 @@ Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조
 </CodeSnippet>
 ```
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
 |`Format`|필수 특성입니다. 코드 조각의 스키마 버전을 지정합니다. Format 특성은 x.x.x 구문의 문자열이어야 합니다. 여기서 각 "x"는 버전 번호의 숫자 값을 나타냅니다. Visual Studio에서는 이해할 수 없는 `Format` 특성을 갖는 코드 조각을 무시합니다.|
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
-|[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|필수 요소입니다. 코드 조각에 대한 일반 정보가 포함되어 있습니다. 하나의 코드 조각에는 `Header` 요소가 단 하나만 있어야 합니다.|
-|[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet-element)|필수 요소입니다. Visual Studio에서 삽입할 코드가 포함되어 있습니다. 하나의 코드 조각에는 `Snippet` 요소가 단 하나만 있어야 합니다.|
+|[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|필수적 요소입니다. 코드 조각에 대한 일반 정보가 포함되어 있습니다. 하나의 코드 조각에는 `Header` 요소가 단 하나만 있어야 합니다.|
+|[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet-element)|필수적 요소입니다. Visual Studio에서 삽입할 코드가 포함되어 있습니다. 하나의 코드 조각에는 `Snippet` 요소가 단 하나만 있어야 합니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[CodeSnippets 요소](../ide/code-snippets-schema-reference.md#codesnippets-element)|코드 조각 XML 스키마의 루트 요소입니다.|
 
@@ -173,7 +174,7 @@ Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조
 </CodeSnippets>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
 |[CodeSnippet 요소](../ide/code-snippets-schema-reference.md#codesnippet-element)|선택적 요소입니다. 모든 코드 조각 데이터의 부모 요소입니다. `CodeSnippet` 요소에는 `CodeSnippets` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
@@ -188,12 +189,12 @@ Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조
 </Declarations>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|선택적 요소입니다. 편집할 수 있는 코드 조각의 리터럴을 정의합니다. `Literal` 요소에는 `Declarations` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|선택적 요소입니다. 편집할 수 있는 코드 조각의 개체를 정의합니다. `Object` 요소에는 `Declarations` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet-element)|코드 조각에 대한 참조, 가져오기, 선언 및 코드가 포함되어 있습니다.|
 
@@ -207,7 +208,7 @@ IntelliSense 코드 조각의 리터럴 또는 개체에 대한 기본값을 지
 </Default>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|편집할 수 있는 코드 조각의 리터럴 필드를 정의합니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
@@ -224,7 +225,7 @@ IntelliSense 코드 조각의 콘텐츠에 대한 설명 정보를 지정합니�
 </Description>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
@@ -243,7 +244,7 @@ Visual Studio에서 리터럴 또는 개체가 포커스를 받을 때 실행할
 </Function>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|편집할 수 있는 코드 조각의 리터럴 필드를 정의합니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
@@ -266,7 +267,7 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 </Header>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
 |[Author 요소](../ide/code-snippets-schema-reference.md#author-element)|선택적 요소입니다. 코드 조각을 작성한 사람 또는 회사의 이름입니다. `Author` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Description 요소](../ide/code-snippets-schema-reference.md#description-element)|선택적 요소입니다. 코드 조각에 대한 설명입니다. `Description` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
@@ -274,9 +275,9 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 |[Keywords 요소](../ide/code-snippets-schema-reference.md#keywords-element)|선택적 요소입니다. `Keyword` 요소를 그룹화합니다. `Keywords` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Shortcut 요소](../ide/code-snippets-schema-reference.md#shortcut-element)|선택적 요소입니다. 코드 조각을 삽입하는 데 사용할 수 있는 바로 가기 텍스트를 지정합니다. `Shortcut` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[SnippetTypes 요소](../ide/code-snippets-schema-reference.md#snippettypes-element)|선택적 요소입니다. `SnippetType` 요소를 그룹화합니다. `SnippetTypes` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다. `SnippetTypes` 요소가 없으면 코드 조각은 항상 유효합니다.|
-|[Title 요소](../ide/code-snippets-schema-reference.md#title-element)|필수 요소입니다. 코드 조각의 이름입니다. 하나의 `Title` 요소에는 `Header` 요소가 단 하나만 있어야 합니다.|
+|[Title 요소](../ide/code-snippets-schema-reference.md#title-element)|필수적 요소입니다. 코드 조각의 이름입니다. 하나의 `Title` 요소에는 `Header` 요소가 단 하나만 있어야 합니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[CodeSnippet 요소](../ide/code-snippets-schema-reference.md#codesnippet-element)|모든 코드 조각 데이터의 부모 요소입니다.|
 
@@ -293,7 +294,7 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 </HelpUrl>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
@@ -309,7 +310,7 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 </ID>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|편집할 수 있는 코드 조각의 리터럴 필드를 정의합니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
@@ -326,11 +327,11 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Import>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
-|[Namespace 요소](../ide/code-snippets-schema-reference.md#namespace-element)|필수 요소입니다. 코드 조각에서 사용되는 네임스페이스를 지정합니다. 하나의 `Namespace` 요소에는 `Import` 요소가 단 하나만 있어야 합니다.|
+|[Namespace 요소](../ide/code-snippets-schema-reference.md#namespace-element)|필수적 요소입니다. 코드 조각에서 사용되는 네임스페이스를 지정합니다. 하나의 `Namespace` 요소에는 `Import` 요소가 단 하나만 있어야 합니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Imports 요소](../ide/code-snippets-schema-reference.md#imports-element)|**Import** 요소에 대한 grouping 요소입니다.|
 
@@ -344,11 +345,11 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Imports>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
 |[Import 요소](../ide/code-snippets-schema-reference.md#import-element)|선택적 요소입니다. 코드 조각에 대해 가져온 네임스페이스가 포함되어 있습니다. `Imports` 요소에는 **Import** 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet-element)|코드 조각에 대한 참조, 가져오기, 선언 및 코드가 포함되어 있습니다.|
 
@@ -362,7 +363,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Keyword>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Keywords 요소](../ide/code-snippets-schema-reference.md#keywords-element)|개별 `Keyword` 요소를 그룹화합니다.|
 
@@ -379,11 +380,11 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Keywords>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
 |[Keyword 요소](../ide/code-snippets-schema-reference.md#keyword-element)|선택적 요소입니다. 코드 조각에 대한 개별 키워드가 포함되어 있습니다. `Keyword` 요소에는 `Keywords` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
@@ -402,18 +403,18 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Literal>
 ```
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
 |`Editable`|선택적 `Boolean` 특성입니다. 코드 조각을 삽입한 이후에 리터럴을 편집할 수 있는지 여부를 지정합니다. 이 특성의 기본값은 `true`입니다.|
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
-|[Default 요소](../ide/code-snippets-schema-reference.md#default-element)|필수 요소입니다. 코드 조각을 삽입할 때 리터럴의 기본값을 지정합니다. 하나의 `Default` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
+|[Default 요소](../ide/code-snippets-schema-reference.md#default-element)|필수적 요소입니다. 코드 조각을 삽입할 때 리터럴의 기본값을 지정합니다. 하나의 `Default` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
 |[Function 요소](../ide/code-snippets-schema-reference.md#function-element)|선택적 요소입니다. Visual Studio에서 리터럴이 포커스를 받을 때 실행할 함수를 지정합니다. `Function` 요소에는 `Literal` 요소가 0개 또는 그 이상 있을 수 있습니다.|
-|[ID 요소](../ide/code-snippets-schema-reference.md#id-element)|필수 요소입니다. 리터럴의 고유 식별자를 지정합니다. 하나의 `ID` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
+|[ID 요소](../ide/code-snippets-schema-reference.md#id-element)|필수적 요소입니다. 리터럴의 고유 식별자를 지정합니다. 하나의 `ID` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
 |[ToolTip 요소](../ide/code-snippets-schema-reference.md#tooltip-element)|선택적 요소입니다. 리터럴의 예상 값과 사용법을 설명합니다. `Literal` 요소에는 **Tooltip** 요소가 0개 또는 1개 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Declarations 요소](../ide/code-snippets-schema-reference.md#declarations-element)|편집할 수 있는 코드 조각의 리터럴과 개체가 포함되어 있습니다.|
 
@@ -427,7 +428,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Namespace>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Import 요소](../ide/code-snippets-schema-reference.md#import-element)|지정된 네임스페이스를 가져옵니다.|
 
@@ -447,19 +448,19 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Object>
 ```
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
 |`Editable`|선택적 `Boolean` 특성입니다. 코드 조각을 삽입한 이후에 리터럴을 편집할 수 있는지 여부를 지정합니다. 이 특성의 기본값은 `true`입니다.|
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
-|[Default 요소](../ide/code-snippets-schema-reference.md#default-element)|필수 요소입니다. 코드 조각을 삽입할 때 리터럴의 기본값을 지정합니다. 하나의 `Default` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
+|[Default 요소](../ide/code-snippets-schema-reference.md#default-element)|필수적 요소입니다. 코드 조각을 삽입할 때 리터럴의 기본값을 지정합니다. 하나의 `Default` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
 |[Function 요소](../ide/code-snippets-schema-reference.md#function-element)|선택적 요소입니다. Visual Studio에서 리터럴이 포커스를 받을 때 실행할 함수를 지정합니다. `Function` 요소에는 `Literal` 요소가 0개 또는 그 이상 있을 수 있습니다.|
-|[ID 요소](../ide/code-snippets-schema-reference.md#id-element)|필수 요소입니다. 리터럴의 고유 식별자를 지정합니다. 하나의 `ID` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
+|[ID 요소](../ide/code-snippets-schema-reference.md#id-element)|필수적 요소입니다. 리터럴의 고유 식별자를 지정합니다. 하나의 `ID` 요소에는 `Literal` 요소가 단 하나만 있어야 합니다.|
 |[ToolTip 요소](../ide/code-snippets-schema-reference.md#tooltip-element)|선택적 요소입니다. 리터럴의 예상 값과 사용법을 설명합니다. `Literal` 요소에는 **Tooltip** 요소가 0개 또는 1개 있을 수 있습니다.|
-|[Type 요소](../ide/code-snippets-schema-reference.md#type-element)|필수 요소입니다. 개체의 형식을 지정합니다. 하나의 `Type` 요소에는 `Object` 요소가 단 하나만 있어야 합니다.|
+|[Type 요소](../ide/code-snippets-schema-reference.md#type-element)|필수적 요소입니다. 개체의 형식을 지정합니다. 하나의 `Type` 요소에는 `Object` 요소가 단 하나만 있어야 합니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Declarations 요소](../ide/code-snippets-schema-reference.md#declarations-element)|편집할 수 있는 코드 조각의 리터럴과 개체가 포함되어 있습니다.|
 
@@ -474,12 +475,12 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Reference>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
-|[Assembly 요소](../ide/code-snippets-schema-reference.md#assembly-element)|필수 요소입니다. 코드 조각이 참조하는 어셈블리 이름이 포함되어 있습니다. 하나의 `Assembly` 요소에는 `Reference` 요소가 단 하나만 있어야 합니다.|
+|[Assembly 요소](../ide/code-snippets-schema-reference.md#assembly-element)|필수적 요소입니다. 코드 조각이 참조하는 어셈블리 이름이 포함되어 있습니다. 하나의 `Assembly` 요소에는 `Reference` 요소가 단 하나만 있어야 합니다.|
 |[Url 요소](../ide/code-snippets-schema-reference.md#url-element)|선택적 요소입니다. 참조된 어셈블리에 대한 추가 정보를 제공하는 URL이 포함되어 있습니다. `Url` 요소에는 `Reference` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[References 요소](../ide/code-snippets-schema-reference.md#references-element)|`Reference` 요소에 대한 그룹화 요소입니다.|
 
@@ -493,11 +494,11 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </References>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
 |[Reference 요소](../ide/code-snippets-schema-reference.md#reference-element)|선택적 요소입니다. 코드 조각의 어셈블리 참조에 대한 정보가 포함되어 있습니다. `Reference` 요소에는 `References` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet-element)|코드 조각에 대한 참조, 가져오기, 선언 및 코드가 포함되어 있습니다.|
 
@@ -514,7 +515,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Shortcut>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
@@ -533,14 +534,14 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Snippet>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
-|[Code 요소](../ide/code-snippets-schema-reference.md#code-element)|필수 요소입니다. 설명서 파일에 삽입할 코드를 지정합니다. 하나의 `Code` 요소에는 `Snippet` 요소가 단 하나만 있어야 합니다.|
+|[Code 요소](../ide/code-snippets-schema-reference.md#code-element)|필수적 요소입니다. 설명서 파일에 삽입할 코드를 지정합니다. 하나의 `Code` 요소에는 `Snippet` 요소가 단 하나만 있어야 합니다.|
 |[Declarations 요소](../ide/code-snippets-schema-reference.md#declarations-element)|선택적 요소입니다. 코드 조각에서 편집할 수 있는 부분을 구성하는 리터럴과 개체를 지정합니다. `Declarations` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Imports 요소](../ide/code-snippets-schema-reference.md#imports-element)|선택적 요소입니다. 개별 `Import` 요소를 그룹화합니다. `Imports` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[References 요소](../ide/code-snippets-schema-reference.md#references-element)|선택적 요소입니다. 개별 `Reference` 요소를 그룹화합니다. `References` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[CodeSnippet 요소](../ide/code-snippets-schema-reference.md#codesnippet-element)|Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조각 및 제목을 지정할 수 있습니다.|
 
@@ -554,7 +555,7 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 </SnippetType>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[SnippetTypes 요소](../ide/code-snippets-schema-reference.md#snippettypes-element)|`SnippetType` 요소를 그룹화합니다.|
 
@@ -577,11 +578,11 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 </SnippetTypes>
 ```
 
-|자식 요소|Description|
+|자식 요소|설명|
 |-------------------|-----------------|
 |[SnippetType 요소](../ide/code-snippets-schema-reference.md#snippettype-element)|선택적 요소입니다. Visual Studio에서 코드에 코드 조각을 삽입하는 방법을 지정합니다. `SnippetType` 요소에는 `SnippetTypes` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보를 지정합니다.|
 
@@ -595,7 +596,7 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 </Title>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보를 지정합니다.|
 
@@ -611,7 +612,7 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 </ToolTip>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|편집할 수 있는 코드 조각의 리터럴 필드를 정의합니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
@@ -628,11 +629,11 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 </Type>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
 
-텍스트 값은 필수입니다. 이 텍스트는 개체의 형식을 지정합니다. 다음은 그 예입니다.
+텍스트 값은 필수입니다. 이 텍스트는 개체의 형식을 지정합니다. 예를 들어:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>
@@ -651,13 +652,13 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 </Url>
 ```
 
-|부모 요소|Description|
+|부모 요소|설명|
 | - |-----------------|
 |[Reference 요소](../ide/code-snippets-schema-reference.md#reference-element)|코드 조각에 필요한 어셈블리 참조를 지정합니다.|
 
 텍스트 값은 필수입니다. 이 텍스트는 참조된 어셈블리에 대한 추가 정보를 제공하는 URL을 지정합니다. 참조가 프로젝트에 추가될 수 없는 경우 이 URL이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각](../ide/code-snippets.md)
 - [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)

@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632253"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184044"
 ---
 # <a name="special-characters-to-escape"></a>이스케이프할 특수 문자
 
@@ -31,16 +31,16 @@ ms.locfileid: "77632253"
 
  이스케이프할 수 있는 특수 문자의 전체 목록은 다음과 같습니다.
 
-|문자|설명|
-|---------------|-----------------|
-|%|메타데이터를 참조하는 데 사용되는 퍼센트 기호입니다.|
-|$|속성을 참조하는 데 사용되는 달러 기호입니다.|
-|@|항목 목록을 참조하는 데 사용되는 @ 기호입니다.|
-|(|목록에 사용되는 여는 괄호입니다.|
-|)|목록에 사용되는 닫는 괄호입니다.|
-|;|목록 구분 기호인 세미콜론입니다.|
-|?|항목의 Include/Exclude 섹션에서 파일 사양을 설명하는 와일드카드 문자인 물음표입니다.|
-|*|항목의 Include/Exclude 섹션에서 파일 사양을 설명하는 와일드카드 문자인 별표입니다.|
+|문자|ASCII 인코딩|설명|
+|---------|----------|-----------|
+|%|%25|메타데이터를 참조하는 데 사용되는 퍼센트 기호입니다.|
+|$|%24|속성을 참조하는 데 사용되는 달러 기호입니다.|
+|@|%40|항목 목록을 참조하는 데 사용되는 @ 기호입니다.|
+|(|%28|목록에 사용되는 여는 괄호입니다.|
+|)|%29|목록에 사용되는 닫는 괄호입니다.|
+|;|%3B|목록 구분 기호인 세미콜론입니다.|
+|?|%3F|항목의 Include/Exclude 섹션에서 파일 사양을 설명하는 와일드카드 문자인 물음표입니다.|
+|* |%2A|항목의 Include/Exclude 섹션에서 파일 사양을 설명하는 와일드카드 문자인 별표입니다.|
 
 > [!NOTE]
 > 일부 시나리오에서는 `Exec` 작업 내에서 사용할 때와 같이 큰 따옴표(") 문자를 이스케이프해야 할 수도 있습니다.

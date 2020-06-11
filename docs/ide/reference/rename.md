@@ -1,6 +1,6 @@
 ---
 title: 리팩터링 이름 바꾸기
-ms.date: 01/26/2018
+ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
@@ -12,14 +12,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565463"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182961"
 ---
-# <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
+# <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 리팩터링
 
 이 리팩터링은 다음에 적용됩니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "75565463"
 
 - Visual Basic
 
-**대상:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
+**내용:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
 
 **시기:** 모든 인스턴스를 찾지 않고도 안전하게 이름을 바꾸고 새 이름을 복사하여 붙여넣으려고 합니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "75565463"
 
        ![강조 표시된 코드 - Visual Basic](media/rename-highlight-vb.png)
 
-2. 다음 작업 중 하나를 수행합니다.
+2. 이제 다음과 같이 키보드나 마우스를 사용합니다.
 
    - **키보드**
       - **Ctrl+R**을 누른 다음 **Ctrl+R**을 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
@@ -78,9 +78,11 @@ ms.locfileid: "75565463"
 
    ![이름 바꾸기 충돌](media/rename-conflict-cs.png)
 
-- 기호의 이름을 바꾸는 다른 방법은 편집기에서 해당 이름을 변경하는 것입니다. 그런 다음 커서를 기호 이름에 놓고 **Ctrl**+**을 누릅니다.** 또는 나타나는 전구 아이콘 메뉴를 확장한 후 **이름 바꾸기\<를 선택하여 이전 이름을 \<새 이름**으로 바꿉니다.
+- 기호의 이름을 바꾸는 다른 방법은 편집기에서 해당 이름을 변경하는 것입니다. 그런 다음 커서를 기호 이름에 놓고 **Ctrl**+**을 누릅니다.** 또는 나타나는 전구 아이콘 메뉴를 확장한 후 **\<old name>을 \<new name>으로 이름 바꾸기**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+   ![편집기에서 이름 바꾸기](media/rename-with-editor-cs.png)
+
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

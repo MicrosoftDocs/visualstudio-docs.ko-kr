@@ -7,12 +7,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597141"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184031"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15에 대한 기존 애플리케이션 업데이트
 
@@ -85,7 +85,33 @@ Microsoft.Build.Locator 패키지에 대한 `ExcludeAssets=runtime`을 지정하
 
 ### <a name="register-instance-before-calling-msbuild"></a>MSBuild를 호출하기 전에 인스턴스 등록
 
-MSBuild를 사용하는 메서드를 호출하기 전에 로케이터 API에 호출을 추가합니다.
+> [!IMPORTANT]
+> MSBuildLocator를 호출하는 메서드에서는 `Microsoft.Build` 네임스페이스의 MSBuild 형식을 참조할 수 없습니다. 예를 들어 다음을 수행할 수 없습니다.
+>
+> ```csharp
+> void ThisWillFail()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     Project p = new Project(SomePath); // Could be any MSBuild type
+>     // Code that uses the MSBuild type
+> }
+> ```
+>
+> 대신 다음을 수행해야 합니다.
+>
+> ```csharp
+> void MethodThatDoesNotDirectlyCallMSBuild()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     MethodThatCallsMSBuild();
+> }
+> 
+> void MethodThatCallsMSBuild()
+> {
+>     Project p = new Project(SomePath);
+>     // Code that uses the MSBuild type
+> }
+> ```
 
 로케이터 API 호출을 추가하는 가장 간단한 방법은 다음에 호출을 추가하는 것입니다.
 

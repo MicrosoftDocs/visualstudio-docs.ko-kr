@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128204"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184175"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio를 사용하여 로컬 폴더에 앱 배포
 
@@ -24,7 +24,7 @@ ms.locfileid: "71128204"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 로컬 폴더에 Windows 데스크톱 애플리케이션을 게시해야 하는 경우 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 또는 Visual Basic)를 참조하세요. C++/CLI의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조하고, C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
+> 로컬 폴더에 Windows 데스크톱 애플리케이션을 게시해야 하는 경우 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 또는 Visual Basic)를 참조하세요. C++/CLR의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) 또는 C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
 
 ## <a name="deploy-to-a-local-folder"></a>로컬 폴더에 배포
 
@@ -32,19 +32,19 @@ ms.locfileid: "71128204"
 
     ![솔루션 탐색기의 프로젝트 상황에 맞는 메뉴에서 게시 명령](../deployment/media/quickstart-publish.png "게시 선택")
 
-1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필 만들기**를 선택합니다.
+1. **게시** 대화 상자에서 **폴더**를 선택합니다.
 
-1. **게시 대상 선택** 대화 상자에서 **폴더**를 선택합니다.
+    ![게시 대상으로 폴더 선택](../deployment/media/quickstart-publish-folder.png "폴더 선택")
 
-    ![게시 대상으로 로컬 폴더 선택](../deployment/media/quickstart-publish-folder.png "폴더 선택")
+1. 경로를 입력하거나 **찾아보기**를 선택하여 폴더를 지정합니다.
 
-1. 경로를 입력하거나 **찾아보기**를 선택하여 로컬 폴더를 지정합니다.
+    ![폴더 경로 지정](../deployment/media/quickstart-publish-folder-path.png "폴더 선택")
 
 1. **게시**를 선택합니다. Visual Studio는 프로젝트를 빌드하고 지정된 폴더에 게시합니다. 프로필 요약을 표시하는 프로젝트 속성 **게시** 창이 나타납니다.
 
     ![프로필 요약을 표시하는 게시 속성 창](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. 배포 설정을 구성하려면 프로필 요약에서 **구성**을 선택하고 **설정** 탭을 선택합니다.
+1. 배포 설정을 구성하려면 게시 프로필 요약에서 **편집**을 선택하고 **설정** 탭을 선택합니다.
 
     ![프로필 설정](../deployment/media/quickstart-profile-settings.png "프로필 설정")
 

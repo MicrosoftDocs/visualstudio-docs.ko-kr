@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416427"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183849"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>연습: Visual Studio에서 병렬 애플리케이션 디버깅(C#, Visual Basic, C++)
 
@@ -318,7 +318,7 @@ ms.locfileid: "77416427"
 
      바로 가기 메뉴에는 작업 상태에 따라 다양한 명령이 표시됩니다. 명령에는 **복사**, **모두 선택**, **16진수 표시**, **작업으로 전환**, **할당된 스레드 중지**, **이 스레드를 제외한 모든 스레드 중지**, **할당된 스레드 재개** 및 **플래그 설정**이 있습니다.
 
-     작업의 내부 스레드를 중지하거나 할당된 스레드를 제외한 모든 스레드를 중지할 수 있습니다. 중지된 스레드는 **스레드** 창에서처럼 **작업** 창에 파란색  일시 중지 아이콘으로 표시됩니다.
+     작업의 내부 스레드를 중지하거나 할당된 스레드를 제외한 모든 스레드를 중지할 수 있습니다. 중지된 스레드는 **스레드** 창에서처럼 **작업** 창에 파란색 일시 중지 아이콘으로 표시됩니다.
 
 ## <a name="summary"></a>요약
  이 연습에서는 **병렬 작업** 및 **병렬 스택** 디버거 창에 대해 설명했습니다. 다중 스레드 코드를 사용하는 실제 프로젝트에서 이러한 창을 사용하십시오. C++, C# 또는 Visual Basic으로 작성된 병렬 코드를 검사할 수 있습니다.

@@ -4,20 +4,24 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564188"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182900"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
 
 대규모 사용자 그룹을 추가하려면 일괄 추가 기능을 사용하면 됩니다. 조직에서 Microsoft Azure Active Directory(Azure AD)를 사용하는 경우에는 Azure AD 그룹을 사용할 수 있습니다. 이 문서에서는 두 옵션의 프로세스를 모두 설명합니다. 
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>일괄 추가를 사용하여 구독 할당
 1. https://manage.visualstudio.com 에서 Visual Studio 구독 관리 포털에 로그인합니다.
@@ -32,6 +36,9 @@ ms.locfileid: "82564188"
    > 항상 이 템플릿의 최신 버전을 다운로드합니다. 이전 버전을 사용하는 경우 대량 업로드가 실패할 수 있습니다.
 
 3. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. (*참조*는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
+
+    > [!NOTE]
+    > 관리자는 템플릿의 필드 중 하나를 사용하여 구독자의 소프트웨어 다운로드 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다.  다운로드를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다.
 
    원활한 업로드를 보장하기 위해 다음 모범 사례를 관찰합니다.
 
@@ -74,12 +81,17 @@ ms.locfileid: "82564188"
 > [!IMPORTANT]
 >
 > Azure AD 그룹을 사용한 구독자 추가에는 다음 제한 사항이 적용됩니다.
+> - 처음에 관리 포털에 그룹을 추가할 때 관리자는 AAD 테넌트의 멤버여야 합니다.  그룹이 추가된 후에는 그룹의 멤버 자격을 변경할 때 관리자의 개입이 필요하지 않습니다. 
 > - 그룹에는 적어도 한 명의 멤버가 포함되어야 합니다.  빈 그룹은 지원되지 않습니다.
 > - 그룹의 사용자 수는 1,000명 미만이어야 합니다. 
 > - 모든 사용자는 그룹의 최상위 수준에 있어야 합니다.  중첩된 그룹은 지원되지 않습니다.
 > - 신뢰할 수 있는 계약만 지원됩니다.
 > - 그룹의 모든 멤버에게는 Azure AD 계정에 연결된 전자 메일 주소가 있어야 합니다.
 > - Azure AD 그룹을 사용하여 추가한 구독에서는 알림에 별도의 전자 메일 주소를 사용할 수 없습니다.  
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
 1. [https://manage.visualstudio.com](https://manage.visualstudio.com)에서 Visual Studio 구독 관리 포털에 로그인합니다.
 
@@ -104,11 +116,8 @@ ms.locfileid: "82564188"
 8. 그룹 멤버를 표시하려면 **구독자 보기**를 선택합니다. 그룹의 구독자에 대한 세부 정보를 볼 수 있지만 구독자 또는 구독자에게 할당된 구독은 편집할 수 없습니다.    
 
 > [!NOTE]
-> 사용자에게 이미 개별적으로 구독을 할당했고 이후 해당 사용자가 Azure AD 그룹의 일부로 추가되었다면 해당 사용자는 그룹의 일부로 추가되며 더 이상 개인으로 표시되지 않습니다. 그러나 개별 구독이 다른 구독 수준인 경우에는 두 개의 구독을 갖게 됩니다.  예:  개별 Visual Studio Professional 구독이 있는 사용자가 Visual Studio Enterprise 구독이 할당된 그룹의 멤버인 경우 해당 사용자는 두 가지 구독을 모두 갖게 됩니다.  
+> 사용자에게 이미 개별적으로 구독을 할당했고 이후 해당 사용자가 Azure AD 그룹의 일부로 추가되었다면 해당 사용자는 그룹의 일부로 추가되며 더 이상 개인으로 표시되지 않습니다. 그러나 개별 구독이 다른 구독 수준인 경우에는 두 개의 구독을 갖게 됩니다.  예제:  개별 Visual Studio Professional 구독이 있는 사용자가 Visual Studio Enterprise 구독이 할당된 그룹의 멤버인 경우 해당 사용자는 두 가지 구독을 모두 갖게 됩니다.  
 
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>Q: Azure AD 그룹 내에서 할당할 여러 구독 수준을 선택할 수 있나요? 
@@ -120,7 +129,7 @@ A: 아니요. 개별 구독자의 정보를 수정하려면 Azure AD 보안 그�
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q: Azure AD 보안 그룹에 구독자를 추가했지만 구독 관리 포털에는 추가되었다고 표시되지 않고 구독도 없습니다. 이유는 무엇입니까?  
 A: 조직이 Azure AD를 구성한 방식에 따라 사용자가 추가되기까지 최대 24시간 지연될 수 있습니다. 24시간 넘게 지연되면 [고객 지원팀에 문의](https://visualstudio.microsoft.com/support/support-overview-vs)하세요.  
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

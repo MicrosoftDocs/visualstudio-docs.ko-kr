@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594892"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184057"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild를 사용하여 빌드 로그 가져오기
 
@@ -47,7 +47,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 다음 표에서는 로그의 자세한 정도(열 값)가 기록되는 메시지 유형(행 값)에 미치는 영향을 보여줍니다.
 
-|                                       | Quiet | 최소 | 정상 | Detailed | 진단 |
+|                                       | Quiet | 최소 | 보통 | 자세히 | 진단 |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | 오류                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | 경고                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -64,7 +64,7 @@ msbuild MyProject.proj -t:go -v:diag
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- 다음 예제에서 로그 파일의 이름은 *MyProjectOutput.log*이고 로그 출력의 자세한 표시 수준은 `diagnostic`으로 설정됩니다. **-filelogparameters**(`flp`) 스위치를 사용하여 이 두 설정을 지정합니다.
+ 다음 예제에서 로그 파일의 이름은 *MyProjectOutput.log*이고 로그 출력의 자세한 표시 수준은 `diagnostic`으로 설정됩니다. **-fileLoggerParameters**(`flp`) 스위치를 사용하여 이 두 설정을 지정합니다.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -76,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
  다음 예제에서는 *msbuild1.log*에 전체 로그를 저장하고 *JustErrors.log*에는 오류만, *JustWarnings.log*에는 경고만 저장합니다. 이 예제에서는 3개 파일에 대해 각각 파일 번호를 사용합니다. 파일 번호는 `-fl1` 및 `-flp1`과 같이 **fl** 및 **-flp** 스위치 바로 뒤에 지정됩니다.
 
- 파일 2 및 3에 대한 **-filelogparameters**(`flp`) 스위치는 각 파일에 지정할 이름 및 포함할 내용을 지정합니다. 파일 1에는 이름이 지정되지 않았으므로 기본 이름인 *msbuild1.log*가 사용됩니다.
+ 파일 2 및 3에 대한 **-fileLoggerParameters**(`flp`) 스위치는 각 파일에 지정할 이름 및 포함할 내용을 지정합니다. 파일 1에는 이름이 지정되지 않았으므로 기본 이름인 *msbuild1.log*가 사용됩니다.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
@@ -102,7 +102,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
  MSBuild 명령줄에서 **-logger** 스위치를 통해 사용자 지정 로거를 지정합니다. **-noconsolelogger** 스위치를 사용하여 기본 콘솔 로거를 비활성화할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [빌드 로거](../msbuild/build-loggers.md)

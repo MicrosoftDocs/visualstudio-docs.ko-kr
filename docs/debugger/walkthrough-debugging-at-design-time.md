@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916153"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183563"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Visual Studio(C#, C++/CLI, Visual Basic, F#)에서 디자인 타임 시 디버그
 
@@ -83,13 +83,13 @@ ms.locfileid: "75916153"
 
 1. 디버그할 사용자 지정 컨트롤이 포함된 XAML 페이지를 엽니다.
 
-   UWP 프로젝트가 Windows 빌드 16299 이상을 대상으로 하는 경우 이 단계에서 *UwpSurface.exe* 프로세스를 시작합니다. WPF 또는 UWP가 Windows 빌드 16299 이전 버전인 경우 이 단계에서 *XDesProc.exe* 프로세스를 시작합니다.
+   UWP 프로젝트가 Windows 빌드 16299 이상을 대상으로 하는 경우 이 단계에서 *UwpSurface.exe* 프로세스를 시작합니다. WPF 프로젝트가 Windows 빌드 16299 이상을 대상으로 하는 경우 이 단계에서 *WpfSurface.exe* 프로세스를 시작합니다. WPF 또는 UWP가 Windows 빌드 16299 이전 버전인 경우 이 단계에서 *XDesProc.exe* 프로세스를 시작합니다. 
 
 1. Visual Studio의 두 번째 인스턴스를 엽니다. 두 번째 인스턴스에서 솔루션 또는 프로젝트를 열지 마세요.
 
 1. Visual Studio의 두 번째 인스턴스에서 **디버그** 메뉴를 열고 **프로세스에 연결...** 을 선택합니다.
 
-1. 프로젝트 형식(이전 단계 참조)에 따라 사용 가능한 프로세스 목록에서 *UwpSurface.exe* 또는 *XDesProc.exe* 프로세스를 선택합니다.
+1. 프로젝트 형식(이전 단계 참조)에 따라 사용 가능한 프로세스 목록에서 *UwpSurface.exe*, *WpfSurface.exe* 또는 *XDesProc.exe* 프로세스를 선택합니다.
 
 1. **프로세스에 연결** 대화 상자의 **연결 대상** 필드에서 디버그하려는 사용자 지정 컨트롤에 올바른 코드 형식을 선택합니다.
 

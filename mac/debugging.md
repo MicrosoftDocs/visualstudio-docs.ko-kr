@@ -3,15 +3,15 @@ title: Mac용 Visual Studio를 사용하여 디버깅
 description: 디버깅은 프로그래밍의 공통적인 필수 부분입니다. 완성도가 높은 IDE인 Mac용 Visual Studio에는 편리한 디버깅을 위한 전체 기능 모음이 포함되어 있습니다. 이 문서에서는 Mac용 Visual Studio에서 안전한 디버깅부터 데이터 시각화까지 디버깅의 잠재력을 완전히 활용하는 방법을 설명합니다.
 author: therealjohn
 ms.author: johmil
-ms.date: 12/13/2019
+ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75397978"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183987"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 디버깅
 
@@ -43,7 +43,7 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 
 ![중단점 목록](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>디버그 시작
+## <a name="start-debugging"></a>디버깅 시작
 
 디버깅을 시작하려면 대상 브라우저, 디바이스 또는 시뮬레이터/에뮬레이터를 선택합니다.
 
@@ -87,6 +87,15 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 * **한 단계씩 코드 실행** - 다음 코드 줄을 실행합니다. 다음 줄이 함수 호출인 경우 한 단계씩 코드 실행은 함수의 첫 번째 줄에서 중지되며, 함수 디버깅을 줄 단위로 계속할 수 있도록 합니다. 다음 줄이 함수가 아닌 경우 프로시저 단위 실행과 동일하게 동작합니다.
 * **프로시저 나가기** - 현재 함수가 호출된 줄로 돌아갑니다.
 
+## <a name="change-which-statement-is-executed-next"></a>다음에 실행되는 문 변경
+
+디버거가 일시 중지된 동안 여백의 화살표는 다음에 실행될 코드 줄을 보여 줍니다. 화살표를 클릭하고 다른 코드 줄로 끌어 실행될 문을 변경할 수 있습니다. 코드 줄을 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 **다음 문 설정**을 선택하여 같은 작업을 수행할 수 있습니다.
+
+![화살표를 끌어다 놓아 다음 문 설정](media/debugger-drag-setnextstatement.gif)
+
+> [!CAUTION]
+> 현재 실행 줄을 변경하면 애플리케이션에서 예기치 않은 동작이 발생할 수 있습니다. 일부 조건에서는 실행할 다음 문을 변경할 수 없을 수도 있습니다. 예를 들어 한 메서드에서 다른 메서드로 화살표 끌기가 작동하지 않습니다. 이와 같이 지원되지 않은 경우에 Mac용 Visual Studio에서는 현재 실행 줄을 변경할 수 없다고 알리는 대화 상자를 표시합니다. 
+
 ## <a name="debugging-monos-class-libraries"></a>Mono의 클래스 라이브러리 디버깅
 
 Xamarin 제품은 Mono 클래스 라이브러리에 대한 소스 코드와 함께 제공되며, 이 소스 코드를 사용하여 디버거에서 한 단계씩 실행하면서 코드가 어떻게 동작하는지 검사할 수 있습니다.
@@ -97,6 +106,6 @@ Xamarin 제품은 Mono 클래스 라이브러리에 대한 소스 코드와 함�
 
 ![한 단계씩 외부 코드 실행 옵션](media/debugging-image8.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 디버깅(Windows에서)](/visualstudio/debugger/)

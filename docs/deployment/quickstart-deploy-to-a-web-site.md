@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71127939"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173697"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Visual Studio를 사용하여 웹 사이트에 웹앱 게시
 
@@ -24,7 +24,7 @@ ms.locfileid: "71127939"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> 네트워크 파일 공유에 Windows 데스크톱 애플리케이션을 게시해야 하는 경우 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 또는 Visual Basic)를 참조하세요. C++/CLI의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조하고, C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
+> 네트워크 파일 공유에 Windows 데스크톱 애플리케이션을 게시해야 하는 경우 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 또는 Visual Basic)를 참조하세요. C++/CLR의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) 또는 C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
 
 ## <a name="publish-to-a-web-site"></a>웹 사이트에 게시
 
@@ -34,23 +34,19 @@ ms.locfileid: "71127939"
 
 1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필 만들기**를 선택합니다.
 
-1. **게시 대상 선택** 대화 상자에서 **IIS, FTP 등**을 선택합니다.
+1. **게시** 대화 상자에서 **웹 서버(IIS)** 를 선택합니다.
 
-    ![IIS, FTP 등을 선택합니다.](../deployment/media/quickstart-publish-iis-ftp.png "IIS, FTP 등을 선택합니다.")
+    ![게시 대상 선택](../deployment/media/quickstart-publish-iis.png "IIS, FTP 등을 선택합니다.")
 
-1. **게시**를 선택합니다. 프로필 게시 설정 대화 상자가 열립니다.
+1. 배포 방법으로 **웹 배포**를 선택합니다. 웹 배포는 IIS 서버에 웹 애플리케이션 및 웹 사이트의 배포를 간소화하고, 서버에서 애플리케이션으로 설치되어야 합니다. [웹 플랫폼 설치 관리자](https://www.microsoft.com/web/downloads/platform.aspx)를 사용하여 설치합니다.
 
-    ![폴더 선택](../deployment/media/quickstart-publish-settings-web.png "폴더 선택")
+    ![배포 방법 선택](../deployment/media/quickstart-publish-iis-web-deploy.png "IIS, FTP 등을 선택합니다.")
 
-1. **게시 방법** 필드에서 **웹 배포** 또는 **FTP**와 같은 방법을 선택합니다. 다음에 표시되는 설정은 게시 방법에 해당합니다. 웹 배포는 IIS 서버에 웹 애플리케이션 및 웹 사이트의 배포를 간소화하고, 서버에서 애플리케이션으로 설치되어야 합니다. [웹 플랫폼 설치 관리자](https://www.microsoft.com/web/downloads/platform.aspx)를 사용하여 설치합니다.
+1. 게시 방법의 필수 설정을 구성하고 **마침**을 선택합니다. 
 
-1. 게시 방법에 대한 필수 설정을 구성하고 **연결 유효성 검사**를 선택합니다. 서버 또는 대상을 사용할 수 있고 설정이 올바른 경우 연결이 유효함을 나타내는 메시지가 나타나고, 게시할 준비가 된 것입니다.
+    ![웹 배포 연결 정보](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-    ![연결 유효성 검사](../deployment/media/quickstart-publish-web-deploy.png "연결 유효성 검사")
-
-1. **설정**을 선택하여 디버그 또는 릴리스 구성을 배포할지 여부와 같은 기타 배포 설정을 구성한 다음, **저장**을 선택합니다. 원격으로 디버그하는 경우 디버그 구성은 필수입니다.
-
-1. 게시하려면 **게시**를 선택합니다. 출력 창은 배포 진행률 및 결과를 표시합니다.
+1. 게시하려면 요약 페이지에서 **게시**를 선택합니다. 출력 창은 배포 진행률 및 결과를 표시합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

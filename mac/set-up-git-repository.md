@@ -1,16 +1,16 @@
 ---
 title: Git 리포지토리 설정
 description: Mac용 Visual Studio에서 Git 및 Subversion 사용
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 02/15/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e9dc8728a3115368f1772287362b2a9f21a4309
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70107897"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173375"
 ---
 # <a name="set-up-a-git-repository"></a>Git 리포지토리 설정
 
@@ -46,13 +46,13 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
 1. Mac용 Visual Studio의 Solution Pad에서 솔루션 이름을 선택합니다.
 
-2. 메뉴 모음에서 **버전 제어 > 버전 제어에서 게시**를 선택하여 **리포지토리 선택** 대화 상자를 표시합니다.
+2. 메뉴 모음에서 **버전 제어 > 버전 제어에서 게시**를 선택하여 **리포지토리 복제** 대화 상자를 표시합니다.
 
-    ![Mac용 Visual Studio에서 체크 아웃 시작](media/version-control-git4-sml.png)
+    ![Mac용 Visual Studio에서 체크 아웃 시작](media/version-control-git4.png)
 
     이 메뉴 항목이 메뉴에 표시되지 않으면 솔루션 이름을 선택했는지 확인합니다.
 
-3. **등록된 리포지토리** 탭을 선택하고 **추가** 단추를 클릭합니다.
+3. **등록된 항목에서 선택** 탭을 선택하고 **추가** 단추를 누릅니다.
 
     ![](media/version-control-git5.png)
 
@@ -81,7 +81,7 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
     ![버전 제어 메뉴](media/version-control-git10.png)
 
-10. 추가적인 변경 작업을 시작한 경우, **변경 내용 푸시...** 를 선택하여 변경 내용을 **원격** 리포지토리로 푸시합니다. 이렇게 하면 github.com에서 해당하는 모든 사용자가 변경 사항을 볼 수 있습니다.
+10. 추가 변경을 시작하면 먼저 **버전 제어 > 검토 및 커밋** 메뉴를 사용하여 상태 보기를 엽니다. 변경 내용을 선택하여 커밋한 후 **푸시**를 선택하여 변경 내용을 원격 리포지토리로 푸시합니다. 이렇게 하면 github.com에서 해당하는 모든 사용자가 변경 사항을 볼 수 있습니다.
 
     ![원격 리포지토리에 변경 사항 푸시](media/version-control-git11.png)
 
@@ -96,7 +96,7 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 > [!NOTE]
 > GitHub 리포지토리를 아직 만들지 않은 경우 [GitHub에서 원격 리포지토리 만들기](#creating-a-remote-repo-on-github) 섹션을 참조하세요.
 
-1. 메뉴 모음에서 **버전 제어 > 솔루션 검토 및 커밋**으로 이동하여 첫 번째 커밋을 만듭니다.
+1. 메뉴 모음에서 **버전 제어 > 검토 및 커밋**으로 이동하여 첫 번째 커밋을 만듭니다.
 
 2. 상태 탭에서 왼쪽 상단에 있는 **커밋**을 선택합니다.
 
@@ -127,23 +127,23 @@ Mac용 visual Studio는 이제 원격 GitHub 리포지토리에 변경 내용을
 
 ![푸시 작업이 성공적으로 완료되었습니다.](media/version-control-git11.png)
 
-## <a name="check-out-an-existing-repository"></a>기존 리포지토리 체크 아웃
+## <a name="clone-an-existing-repository"></a>기존 리포지토리 복제
 
-로컬 머신에는 없고 원격에만 존재하는 GitHub 리포지토리로 작업해야 하는 경우가 있습니다. Mac용 Visual Studio를 사용하면 이 리포지토리를 신속하게 체크 아웃할 수 있습니다. 다음 단계를 수행하여 컴퓨터로 복제합니다.
+로컬 머신에는 없고 원격에만 존재하는 GitHub 리포지토리로 작업해야 하는 경우가 있습니다. Mac용 Visual Studio를 사용하면 이 리포지토리를 신속하게 복제할 수 있습니다. 다음 단계를 수행하여 컴퓨터로 복제합니다.
 
-1. 메뉴 모음에서 **버전 제어 > 체크 아웃**을 선택합니다.
+1. 메뉴 모음에서 **버전 제어 > 리포지토리 복제**를 선택합니다.
 
-2. 그러면 **리포지토리에 연결** 탭이 표시됩니다.
+2. **URL에 연결** 탭이 표시됩니다.
 
-    ![입력한 세부 정보가 표시된 리포지토리 탭에 연결](media/version-control-git13.png)
+    ![세부 정보가 입력된 URL에 연결 탭](media/version-control-git13.png)
 
 3. 원격 리포지토리의 GitHub 페이지에서 **복제 또는 다운로드** 단추를 누르고 제공된 URL을 복사합니다.
 
     ![표시된 GitHub URL](media/version-control-git14.png)
 
-4. **리포지토리에 연결** 탭에서 **URL** 입력 필드의 모든 텍스트를 바꿉니다. 그러면 2단계의 이미지에 나와 있는 것처럼 이 탭의 다른 대부분의 필드가 사용자에 맞게 채워집니다.
+4. **URL에 연결** 탭에서 **URL** 입력 필드의 모든 텍스트를 바꿉니다. 그러면 2단계의 이미지에 나와 있는 것처럼 이 탭의 다른 대부분의 필드가 사용자에 맞게 채워집니다.
 
-5. 리포지토리를 복제할 디렉터리를 입력하고 **체크 아웃**을 누릅니다.
+5. 리포지토리를 복제할 디렉터리를 입력하고 **복제**를 누릅니다.
 
 > [!NOTE]
 > 리포지토리 크기가 4GB 이상인 경우 문제가 발생할 수 있습니다.

@@ -8,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 76dcbbf8c5c5c5019c0b45fe97150838d996bfa1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633202"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183355"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
 
-프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 802x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.
+프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 80x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.
 
 > [!IMPORTANT]
 > 이 문서에서는 이전 방법으로 대상 프레임워크를 지정하는 방법을 보여 줍니다. SDK 스타일 프로젝트는 netstandard와 같이 다른 TargetFrameworks를 사용하도록 설정합니다. 자세한 내용은 [대상 프레임워크](/dotnet/standard/frameworks)를 참조하세요.
@@ -89,7 +89,7 @@ ms.locfileid: "77633202"
 
 ```
 
-*대상 구성*은 대상 플랫폼의 하위 집합입니다. 예를 들어 `x86``Debug` 구성에는 대부분의 코드 최적화가 포함되지 않습니다. 대상 구성은 프로젝트 파일의 `Configuration` 빌드 속성에서 지정됩니다. 프로젝트 속성 페이지 또는 **구성 관리자**를 사용하여 대상 구성을 변경할 수 있습니다.
+*대상 구성*은 대상 플랫폼의 하위 집합입니다. 예를 들어 `x86` `Debug` 구성에는 대부분의 코드 최적화가 포함되지 않습니다. 대상 구성은 프로젝트 파일의 `Configuration` 빌드 속성에서 지정됩니다. 프로젝트 속성 페이지 또는 **구성 관리자**를 사용하여 대상 구성을 변경할 수 있습니다.
 
 ```xml
 <PropertyGroup>

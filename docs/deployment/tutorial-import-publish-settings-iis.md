@@ -1,7 +1,7 @@
 ---
 title: 게시 설정을 가져와서 IIS에 게시
 description: Visual Studio에서 IIS로 애플리케이션을 배포하기 위한 게시 프로필 만들기 및 가져오기
-ms.date: 01/31/2019
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65680135"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183303"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 IIS에 애플리케이션 게시
 
@@ -23,7 +23,7 @@ ms.locfileid: "65680135"
 
 이러한 단계는 Visual Studio에서 ASP.NET, ASP.NET Core 및 .NET Core 앱에 적용됩니다.
 
-이 자습서에서는 다음을 수행합니다.
+이 자습서에서 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 게시 설정 파일을 생성할 수 있도록 IIS 구성
@@ -31,10 +31,10 @@ ms.locfileid: "65680135"
 > * Visual Studio로 게시 설정 파일 가져오기
 > * IIS에 앱 배포
 
-게시 설정 파일(*\*.publishsettings*)은 Visual Studio에서 생성되는 게시 프로필(*\*.pubxml*)과 다릅니다. 게시 설정 파일은 IIS 또는 Azure App Service에서 만들어지거나 수동으로 만들어질 수 있습니다. 그런 다음, Visual Studio로 가져올 수 있습니다.
+게시 설정 파일( *\*.publishsettings*)은 Visual Studio에서 생성되는 게시 프로필( *\*.pubxml*)과 다릅니다. 게시 설정 파일은 IIS 또는 Azure App Service에서 만들어지거나 수동으로 만들어질 수 있습니다. 그런 다음, Visual Studio로 가져올 수 있습니다.
 
 > [!NOTE]
-> Visual Studio의 한 설치에서 다른 설치로 Visual Studio 게시 프로필(\*.pubxml 파일)을 복사해야 하는 경우 관리되는 프로젝트 형식에 대한 *\<<projectname\>\Properties\PublishProfiles* 폴더에서 게시 프로필, *\\profilename\>.pubxml*을 찾을 수 있습니다. 웹 사이트의 경우 *\App_Data* 폴더 아래에서 확인합니다. 게시 프로필은 MSBuild XML 파일입니다.
+> Visual Studio의 한 설치에서 다른 설치로 Visual Studio 게시 프로필(\*.pubxml 파일)을 복사해야 하는 경우 관리형 프로젝트 형식에 대한 *\\<projectname\>\Properties\PublishProfiles* 폴더에서 게시 프로필 *\<profilename\>.pubxml*을 찾을 수 있습니다. 웹 사이트의 경우 *\App_Data* 폴더 아래에서 확인합니다. 게시 프로필은 MSBuild XML 파일입니다.
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
@@ -52,7 +52,7 @@ ms.locfileid: "65680135"
     아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)  페이지로 이동하여 체험용으로 설치합니다.
 ::: moniker-end
 
-* 서버에서 Windows Server 2012 또는 Windows Server 2016을 실행하고 [IIS Web Server 역할](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)이 올바르게 설치되어 있어야 합니다(게시 설정 파일(*\*.publishsettings*)을 생성하는 데 필요함). ASP.NET 4.5 또는 ASP.NET Core도 서버에 설치해야 합니다. ASP.NET 4.5를 설정하려면 [ASP.NET 3.5 및 ASP.NET 4.5를 사용하는 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)을 참조하세요. ASP.NET Core를 설정하려면 [IIS가 있는 Windows에서 ASP.NET Core 호스팅](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)을 참조하세요.
+* 서버에서 Windows Server 2012, Windows Server 2016 또는 Windows Server 2019를 실행하고 [IIS 웹 서버 역할](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)이 올바르게 설치되어 있어야 합니다(게시 설정 파일( *\*.publishsettings*)을 생성하는 데 필요함). ASP.NET 4.5 또는 ASP.NET Core도 서버에 설치해야 합니다. ASP.NET 4.5를 설정하려면 [ASP.NET 3.5 및 ASP.NET 4.5를 사용하는 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)을 참조하세요. ASP.NET Core를 설정하려면 [IIS가 있는 Windows에서 ASP.NET Core 호스팅](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)을 참조하세요. ASP.NET Core의 경우 이 문서에 설명된 대로 **관리 코드 없음**을 사용하도록 애플리케이션 풀을 구성해야 합니다.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio에서 새로운 ASP.NET 프로젝트 만들기
 
@@ -64,11 +64,11 @@ ms.locfileid: "65680135"
 
     선택한 프로젝트 템플릿(ASP.NET 또는 ASP.NET Core)은 웹 서버에 설치된 ASP.NET의 버전과 일치해야 합니다.
 
-1. **MVC**(.NET Framework) 또는 **웹 애플리케이션(Model-View-Controller)**(.NET Core용)을 선택하고, **인증 안 함**이 선택되었는지 확인한 다음, **확인**을 클릭합니다.
+1. **MVC**(.NET Framework) 또는 **웹 애플리케이션(Model-View-Controller)** (.NET Core용)을 선택하고, **인증 안 함**이 선택되었는지 확인한 다음, **확인**을 클릭합니다.
 
 1. **MyWebApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
 
-    Visual Studio가 프로젝트를 만듭니다.
+    Visual Studio가 프로젝트를 생성합니다.
 
 1. **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다.
 

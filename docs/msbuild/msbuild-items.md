@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093972"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183667"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 
@@ -59,7 +59,7 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 
 ## <a name="reference-items-in-a-project-file"></a>프로젝트 파일의 항목 참조
 
- 프로젝트 파일 전체에서 항목 종류를 참조하려면 @(\<ItemType>) 구문을 사용합니다. 예를 들어 `@(Compile)`을 사용하여 이전 예제의 항목 종류를 참조합니다. 이 구문을 사용하면 항목 종류를 작업의 매개 변수로 지정하여 해당 작업에 항목을 전달할 수 있습니다. 자세한 내용은 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.
+ 프로젝트 파일 전체에서 항목 종류를 참조하려면 (\<ItemType>) 구문을 사용합니다. 예를 들어 `@(Compile)`을 사용하여 이전 예제의 항목 종류를 참조합니다. 이 구문을 사용하면 항목 종류를 작업의 매개 변수로 지정하여 해당 작업에 항목을 전달할 수 있습니다. 자세한 내용은 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.
 
  기본적으로 항목 종류를 확장하면 해당 항목이 세미콜론(;)으로 구분됩니다. @(\<ItemType>, '\<separator>') 구문을 사용하면 기본값이 아닌 구분 기호를 지정할 수 있습니다. 자세한 내용은 [방법: 항목 목록을 쉼표로 구분하여 표시](../msbuild/how-to-display-an-item-list-separated-with-commas.md)를 참조하세요.
 
@@ -335,6 +335,261 @@ Output:
   Item2: hourglass;boomerang;hourglass
     hourglass  Count: 2
     boomerang  Count: 1
+-->
+```
+
+##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>대상 외부에 있는 ItemGroup의 항목에서 메타데이터 업데이트
+
+대상 외부의 항목에서는 `Update` 특성을 통해 기존 메타데이터를 업데이트할 수 있습니다. 이 특성은 대상 아래의 항목에 사용할 수 **없습니다**.
+
+```xml
+<Project>
+    <PropertyGroup>
+        <MetadataToUpdate>pencil</MetadataToUpdate>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Color>red</Color>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>YELLOW</Color>
+        </Item2>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="$(MetadataToUpdate);stapler;er*r;@(Item2)" Price="10" Material="">
+            <Color>RED</Color>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: RED
+    Material:
+    Price: 10
+Item1: pencil
+    Size: small
+    Color: RED
+    Material:
+    Price: 10
+Item1: eraser
+    Size:
+    Color: RED
+    Material:
+    Price: 10
+Item1: notebook
+    Size: large
+    Color: RED
+    Material:
+    Price: 10
+-->
+```
+
+:::moniker range=">=vs-2019"
+MSBuild 버전 16.6 이상에서는 `Update` 특성이 정규화된 메타데이터 참조를 지원하므로 둘 이상의 항목에서 메타데이터를 가져올 수 있습니다.
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item3 Include="notebook">
+            <Size>SMALL</Size>
+            <Color>BLUE</Color>
+            <Price>20</Price>
+        </Item3>
+
+        <!-- Metadata can be expressed either as attributes or as elements -->
+        <Item1 Update="@(Item2);er*r;@(Item3)" Size="%(Size)" Color="%(Item2.Color)" Price="%(Item3.Price)" Model="2020">
+            <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+        </Item1>
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: medium
+    Color: black
+    Material: plastic
+    Price:
+    Model:
+Item1: pencil
+    Size: small
+    Color: RED
+    Material: Premium PLASTIC
+    Price:
+    Model: 2020
+Item1: eraser
+    Size: small
+    Color:
+    Material: gum
+    Price:
+    Model: 2020
+Item1: notebook
+    Size: large
+    Color:
+    Material: paper
+    Price: 20
+    Model: 2020
+-->
+```
+
+설명:
+- 정규화되지 않은 메타데이터(%(M))는 업데이트되는 항목 종류(위 예제에서는 `Item1`)에 바인딩됩니다. 정규화된 메타데이터(`%(Item2.Color)`)는 Update 식에서 캡처된 일치 항목 종류의 집합 안에 바인딩됩니다.
+- 항목이 여러 참조 항목 내나 사이에서 여러 번 일치하는 경우:
+  - 참조된 각 항목 종류에서 마지막 항목이 캡처됩니다(따라서 항목 종류당 캡처되는 항목 1개).
+  - 이는 대상 아래에서 작업 항목 일괄 처리의 동작과 일치합니다.
+- %() 참조를 넣을 수 있는 경우:
+  - 메타데이터
+  - 메타데이터 조건
+- 메타데이터 이름 일치는 대/소문자를 구분하지 않습니다.
+:::moniker-end
+
+## <a name="updating-metadata-on-items-in-an-itemgroup-of-a-target"></a>대상의 ItemGroup에 있는 항목에서 메타데이터 업데이트
+
+메타데이터는 `Update`보다 덜 명료한 구문을 통해 대상 내에서도 수정할 수 있습니다.
+
+```xml
+<Project>
+    <ItemGroup>
+        <Item1 Include="stapler">
+            <Size>medium</Size>
+            <Color>black</Color>
+            <Material>plastic</Material>
+        </Item1>
+        <Item1 Include="pencil">
+            <Size>small</Size>
+            <Color>yellow</Color>
+            <Material>wood</Material>
+        </Item1>
+        <Item1 Include="eraser">
+            <Size>small</Size>
+            <Color>red</Color>
+            <Material>gum</Material>
+        </Item1>
+        <Item1 Include="notebook">
+            <Size>large</Size>
+            <Color>white</Color>
+            <Material>paper</Material>
+        </Item1>
+
+        <Item2 Include="pencil">
+            <Size>MEDIUM</Size>
+            <Color>RED</Color>
+            <Material>PLASTIC</Material>
+            <Price>10</Price>
+        </Item2>
+
+        <Item2 Include="ruler">
+            <Color>GREEN</Color>
+        </Item2>
+
+    </ItemGroup>
+
+    <Target Name="MyTarget">
+        <ItemGroup>
+            <!-- Metadata can be expressed either as attributes or as elements -->
+            <Item1 Size="GIGANTIC" Color="%(Item2.Color)">
+                <Material Condition="'%(Item2.Material)' != ''">Premium %(Item2.Material)</Material>
+            </Item1>
+        </ItemGroup>
+
+        <Message Text="Item1: %(Item1.Identity)
+    Size: %(Item1.Size)
+    Color: %(Item1.Color)
+    Material: %(Item1.Material)
+    Price: %(Item1.Price)
+    Model: %(Item1.Model)" />
+    </Target>
+</Project>
+
+<!--  
+Item1: stapler
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: pencil
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: eraser
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
+Item1: notebook
+    Size: GIGANTIC
+    Color: GREEN
+    Material: Premium PLASTIC
+    Price:
+    Model:
 -->
 ```
 

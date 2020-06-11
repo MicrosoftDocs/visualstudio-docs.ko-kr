@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 관리자가 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564162"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183472"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 라이선스 할당
 Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자 또는 사용자 그룹에 구독을 할당할 수 있습니다.
@@ -20,7 +20,7 @@ Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자
 사용자 그룹의 경우 구독을 할당하는 방법을 선택할 수 있습니다.  
 - 한 번에 하나씩 구독을 할당하거나
 - [일괄 추가](assign-license-bulk.md) 기능을 사용하여 구독자 목록과 해당 구독 정보를 쉽고 빠르게 업로드할 수 있습니다.
-- 조직에서 Microsoft Azure Active Directory(Azure AD)를 사용하는 경우 Azure AD 그룹을 사용하여 구독을 사용자 그룹에 할당할 수 있습니다.  (이 기능은 단계적으로 배포 중이므로 조직에서 바로 사용하지 못할 수 있습니다.)
+- 조직에서 Microsoft Azure Active Directory(Azure AD)를 사용하는 경우 [Azure AD 그룹을 사용하여 구독을 사용자 그룹에 할당](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions)할 수 있습니다.  
 
 
 ## <a name="add-a-single-subscriber"></a>단일 구독자 추가
@@ -39,7 +39,11 @@ Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자
    > [!div class="mx-imgBorder"]
    > ![구독자 세부 정보](_img/assign-license-add/subscriber-details.png)
 
-    구독자가 [Visual Studio 구독 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인할 때 소프트웨어 다운로드에 액세스할 수 있도록 하려면 **다운로드 설정**에서 다운로드 토글을 사용하도록 설정된 상태로 둡니다. 다운로드를 사용하지 않도록 선택하면 사용자는 소프트웨어 다운로드에 액세스할 수 없지만 구독에 포함된 다른 모든 혜택에는 계속 액세스할 수 있습니다.
+    > [!NOTE]
+    > 구독자 이름을 입력할 때 Azure Active Directory 테넌트의 멤버가 표시되려면 관리자가 테넌트의 멤버여야 합니다. 
+
+
+    구독자가 [Visual Studio 구독 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인할 때 소프트웨어 다운로드에 액세스할 수 있도록 하려면 **다운로드 설정**에서 다운로드 토글을 사용하도록 설정된 상태로 둡니다. 다운로드를 사용하지 않도록 설정하면 사용자는 소프트웨어 다운로드에 액세스할 수 없게 됩니다.  제품 키에 대한 액세스도 사용하지 않도록 설정됩니다.  구독자는 구독에 포함된 다른 모든 혜택에 계속 액세스할 수 있습니다.
    > [!div class="mx-imgBorder"]
    > ![다운로드 액세스 권한](media/access-to-downloads.png)
 
@@ -54,7 +58,7 @@ Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자
 ## <a name="resend-assignment-emails"></a>할당 전자 메일 다시 보내기
 구독자를 추가한 후 새 구독자에게 추가 지침이 있는 할당 전자 메일이 자동으로 전송됩니다. 구독자를 선택하고 위쪽 메뉴의 **다시 보내기** 단추를 클릭하여 언제든지 할당 전자 메일을 다시 보낼 수 있습니다.  여러 사용자에게 전자 메일을 다시 보내려면 구독자를 선택 하는 동안 **Ctrl** 키를 누르고 있습니다.  **다시 보내기** 단추를 클릭하면 해당 구독자에게 다시 보낼 것인지 확인하는 대화 상자가 표시됩니다.  
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

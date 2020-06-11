@@ -18,18 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633644"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173514"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 요소(MSBuild)
 
 사용자 정의 [Item](../msbuild/item-element-msbuild.md) 요소 집합을 포함합니다. MSBuild 프로젝트에서 사용되는 모든 항목은 `ItemGroup` 요소의 자식으로 지정해야 합니다.
 
-\<Project> \<ItemGroup>
+\<Project>
+\<ItemGroup>
 
 ## <a name="syntax"></a>구문
 
@@ -85,6 +86,10 @@ ms.locfileid: "77633644"
 ...
 </Project>
 ```
+
+간단한 프로젝트 파일에서는 일반적으로 단일 `ItemGroup` 요소를 사용하지만 여러 `ItemGroup` 요소를 사용할 수도 있습니다. 여러 `ItemGroup` 요소가 사용되는 경우 항목은 단일 `ItemGroup`으로 결합됩니다. 예를 들어 일부 항목은 가져온 파일에 정의된 별도의 `ItemGroup` 요소에 포함될 수 있습니다.
+
+ItemGroups에는 `Condition` 특성을 사용하여 적용되는 조건이 있을 수 있습니다. 이 경우 조건이 충족되는 경우에만 항목이 항목 목록에 추가됩니다. [MSBuild 조건](msbuild-conditions.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300854"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173731"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio에서 배포 개요
 
@@ -26,26 +26,26 @@ ms.locfileid: "79300854"
 
 많은 일반적인 앱 형식의 경우 Visual Studio의 솔루션 탐색기에서 애플리케이션을 바로 배포할 수 있습니다. 이 기능의 둘러보기는 [배포 소개](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
 
-![게시 옵션 선택](../deployment/media/quickstart-publish-azure.png)
+![게시 옵션 선택](../deployment/media/quickstart-publish-dialog.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>내게 적합한 게시 옵션
 
 Visual Studio 내에서 애플리케이션을 다음 대상에 직접 게시할 수 있습니다.
 
-- [Azure App Service](#azure-app-service)
-- [Azure Virtual Machines](#azure-virtual-machines)
-- [파일 시스템](#file-system)
-- [사용자 지정 대상(IIS, FTP 등)](#custom-targets-iis-ftp)(임의의 모든 웹 서버 포함)
+- [Azure](#azure)
+- [Docker 컨테이너 레지스트리](#docker-container-registry)
+- [폴더](#folder)
+- [사용자 지정 대상(IIS, FTP)](#Custom targets (IIS, FTP))
 
 **게시** 탭에서 기존 게시 프로필을 선택하거나, 기존 게시 프로필을 가져오거나, 여기에 설명된 옵션을 사용하여 새로 만들 수 있습니다. 다양한 앱 형식에 대한 IDE에서 게시 옵션을 둘러보려면 [배포 소개](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
 
-## <a name="azure-app-service"></a>Azure App Service
+## <a name="azure"></a>Azure 
 
-[Azure App Service](/azure/app-service/app-service-web-overview) 및 [Linux의 App Service](/azure/app-service/containers/app-service-linux-intro)는 개발자가 인프라를 유지 관리하지 않고 확장 가능한 여러 웹 애플리케이션과 서비스를 빠르게 만드는 데 도움이 됩니다.
+### <a name="azure-app-service"></a>Azure App Service
+
+[Azure App Service](/azure/app-service/app-service-web-overview)는 개발자가 인프라를 유지 관리하지 않고 확장 가능한 웹 애플리케이션과 서비스를 빠르게 만드는 데 도움이 됩니다. App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되지만 이러한 가상 컴퓨터가 자동으로 관리됩니다. App Service의 각 앱에는 고유한 \*.azurewebsites.net URL이 할당됩니다. 무료 이외의 모든 가격 책정 계층에서는 사용자 지정 도메인 이름을 사이트에 할당할 수 있습니다.
 
 포함하는 App Service에 대한 [가격 책정 계층 또는 계획](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)을 선택하여 App Service의 컴퓨팅 성능을 확인합니다. 가격 책정 계층을 변경하지 않고 여러 웹앱(및 기타 앱 유형)에서 동일한 App Service를 공유하도록 할 수도 있습니다. 예를 들어 개발, 스테이징 및 프로덕션 웹앱을 동일한 App Service에서 함께 호스트할 수 있습니다.
-
-App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되지만 이러한 가상 컴퓨터가 자동으로 관리됩니다. App Service의 각 앱에는 고유한 \*.azurewebsites.net URL이 할당됩니다. 무료 이외의 모든 가격 책정 계층에서는 사용자 지정 도메인 이름을 사이트에 할당할 수 있습니다.
 
 ### <a name="when-to-choose-azure-app-service"></a>Azure App Service를 선택해야 하는 경우
 
@@ -58,7 +58,7 @@ App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되�
 
 App Service에 게시에 대한 자세한 내용은 [빠른 시작 - Azure App Service에 게시](quickstart-deploy-to-azure.md) 및 [빠른 시작 - Linux에 ASP.NET Core 게시](quickstart-deploy-to-linux.md)를 참조하세요.
 
-## <a name="azure-virtual-machines"></a>Azure Virtual Machines
+### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
 [Azure VM(Virtual Machines)](https://azure.microsoft.com/documentation/services/virtual-machines/)을 사용하면 개수에 관계없이 클라우드에서 컴퓨팅 리소스를 만들고 관리할 수 있습니다. VM의 모든 소프트웨어 및 업데이트에 대한 책임을 지고 애플리케이션에 필요한 경우 원하는 대로 사용자 지정할 수 있습니다. 원격 데스크톱을 통해 가상 컴퓨터에 직접 액세스할 수 있으며, 각 가상 컴퓨터에서 필요한 기간 동안 할당된 IP 주소를 유지 관리합니다.
 
@@ -75,7 +75,15 @@ App Service에 게시에 대한 자세한 내용은 [빠른 시작 - Azure App S
 
 > 사용자 고유의 데이터 센터 또는 다른 온-프레미스 컴퓨터에서 Azure Virtual Machines를 사용하려는 경우 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)을 사용하면 됩니다.
 
-## <a name="file-system"></a>파일 시스템
+## <a name="docker-container-registry"></a>Docker 컨테이너 레지스트리
+
+애플리케이션에서 Docker를 사용하는 경우 컨테이너화된 애플리케이션을 Docker 컨테이너 레지스트리에 게시할 수 있습니다.
+
+### <a name="when-to-choose-docker-container-registry"></a>Docker 컨테이너 레지스트리를 선택하는 경우
+
+- 컨테이너화된 애플리케이션을 배포하려는 경우
+
+## <a name="folder"></a>폴더
 
 파일 시스템에 배포하는 경우 사용자 컴퓨터의 특정 폴더에 애플리케이션의 파일을 복사하면 됩니다. 이 작업은 주로 테스트를 위해 또는 컴퓨터에서 서버도 실행하는 경우 제한된 수의 사용자가 사용할 애플리케이션을 배포하기 위해 사용됩니다. 대상 폴더가 네트워크에서 공유되는 경우 파일 시스템에 배포하면 웹 애플리케이션 파일을 특정 서버에 배포할 수 있는 다른 사용자들이 사용할 수 있게 됩니다.
 

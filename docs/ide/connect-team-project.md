@@ -1,16 +1,16 @@
 ---
 title: 팀 탐색기의 프로젝트에 연결
-ms.date: 03/31/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472745"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183706"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -19,7 +19,7 @@ ms.locfileid: "80472745"
 ![Visual Studio의 팀 탐색기 홈 페이지](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> Visual Studio를 열었지만 **팀 탐색기**가 나타나지 않으면, 메뉴 모음에서 **보기** > **팀 탐색기**를 선택하여 엽니다.
+> Visual Studio를 열었지만 **팀 탐색기**가 나타나지 않으면 메뉴 모음에서 **보기** > **팀 탐색기**를 선택하거나 **Ctrl**+ **&#92;** , **Ctrl**+**M**을 눌러 엽니다.
 
 ## <a name="connect-to-a-project-or-repository"></a>프로젝트 또는 리포지토리에 연결
 
@@ -40,7 +40,7 @@ ms.locfileid: "80472745"
 > [!TIP]
 > 새 프로젝트를 만들거나 프로젝트에 사용자를 추가해야 하는 경우 [프로젝트 만들기(Azure DevOps)](/azure/devops/organizations/projects/create-project) 및 [프로젝트 또는 팀에 사용자 추가(Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [팀 탐색기 참조](reference/team-explorer-reference.md)
 - [프로젝트(Azure DevOps)에 연결](/azure/devops/organizations/projects/connect-to-projects)

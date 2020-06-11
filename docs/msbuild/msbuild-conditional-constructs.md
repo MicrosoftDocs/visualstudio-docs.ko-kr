@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633384"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184291"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 조건부 구문
 
@@ -77,6 +77,18 @@ MSBuild는 [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/whe
     </Choose>
     <!-- Rest of Project -->
 </Project>
+```
+
+이 예제에서는 컴파일러 상수 `DEFINED_CONSTANT`의 조건이 사용됩니다. 이러한 요소는 `DefinedConstants` 속성에 포함되어 있습니다. 정규식은 세미콜론으로 구분된 목록의 정확한 상수를 찾는 데 사용됩니다.
+
+```xml
+<Choose>
+   <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(
+         $(DefineConstants), '^(.*;)*DEFINED_CONSTANT(;.*)*$'))">
+      <!-- When DEFINED_CONSTANT is defined. -->
+   </When>
+   <!-- other conditions -->
+</Choose>
 ```
 
 ## <a name="see-also"></a>참조

@@ -1,7 +1,7 @@
 ---
 title: C#에서 시각화 도우미 작성 | Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/12/2019
+ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a46967d5f46c4f495a07d80e5f73cfc9f9d60c1a
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542635"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183745"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>연습: C\#에서 시각화 도우미 작성
+
 이 연습에서는 C#을 사용하여 간단한 시각화 도우미를 작성하는 방법을 보여줍니다. 이 연습에서 만들 시각화 도우미는 Windows Forms 메시지 상자를 사용하여 문자열의 내용을 표시합니다. 이 간단한 문자열 시각화 도우미는 그 자체로는 특히 유용하지 않지만 다른 데이터 형식에 더 유용한 시각화 도우미를 만들기 위해 수행해야 하는 기본 단계를 보여 줍니다.
 
 > [!NOTE]
@@ -133,7 +134,9 @@ ms.locfileid: "76542635"
 
    이제 디버거 쪽 코드를 모두 작성했습니다. 그러나 여기에서 한 단계를 추가로 수행해야 합니다. 시각화 도우미를 구성하는 클래스 컬렉션을 디버기 쪽에 알리는 특성이 필요합니다.
 
-### <a name="to-add-the-debuggee-side-code"></a>디버기 쪽 코드를 추가하려면
+### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>디버기 측 코드에 대해 시각화할 형식을 추가하려면
+
+디버거 쪽 코드에서 <xref:System.Diagnostics.DebuggerVisualizerAttribute> 특성을 사용하여 디버기에 대해 시각화할 형식(개체 소스)을 지정합니다. `Target` 속성은 시각화할 형식을 설정합니다.
 
 1. 다음 특성 코드를 DebuggerSide.cs의 `using` 지시문 뒤에서 `namespace MyFirstVisualizer` 앞에 추가합니다.
 

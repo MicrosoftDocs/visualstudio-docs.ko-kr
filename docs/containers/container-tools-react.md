@@ -3,15 +3,15 @@ title: ASP.NET Core 및 React.js를 포함한 Visual Studio 컨테이너 도구
 author: ghogen
 description: Visual Studio 컨테이너 도구 및 Windows용 Docker를 사용하는 방법 알아보기
 ms.author: ghogen
-ms.date: 10/16/2019
+ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255543"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182792"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 
@@ -72,16 +72,16 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 
 최종 Docker 이미지를 만들기 위한 레시피인 *Dockerfile*은 프로젝트에 생성됩니다. 그 안의 명령을 이해하려면 [Dockerfile 참조](https://docs.docker.com/engine/reference/builder/)를 참조하세요.
 
-프로젝트에서 *Dockerfile*을 열고 다음 행을 추가하여 컨테이너에 Node.js 10.x를 설치합니다. 이 행을 첫 번째 섹션에 추가하고 노드 패키지 관리자 *npm.exe* 설치를 이어지는 단계에 사용되는 기본 이미지에 추가해야 합니다.
+프로젝트에서 *Dockerfile*을 열고 다음 행을 추가하여 컨테이너에 Node.js 10.x를 설치합니다. 이 행을 둘 다 첫 번째 섹션에 추가하고 노드 패키지 관리자 *npm.exe* 설치를 기본 이미지 및 `build` 섹션에 추가해야 합니다.
 
-```
+```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 ```
 
 이제 *Dockerfile*이 다음과 같이 표시됩니다.
 
-```
+```Dockerfile
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
 WORKDIR /app
 EXPOSE 80 
@@ -90,6 +90,8 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
 FROM microsoft/dotnet:2.2-sdk-stretch AS build
+RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
+RUN apt-get install -y nodejs
 WORKDIR /src
 COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
 RUN dotnet restore "WebApplication37/WebApplication37.csproj"
@@ -123,7 +125,7 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
    1. Dockerfile의 첫 번째 줄에 ``# escape=` ``를 추가합니다.
    1. `FROM … base` 앞에 다음 줄을 추가합니다.
 
-      ```
+      ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
@@ -133,17 +135,19 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 
    1. `FROM … build` 앞과 뒤에 다음 줄을 추가합니다.
 
-      ```
+      ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
    1. 이제 완전한 Dockerfile이 다음과 같이 표시됩니다.
 
-      ```
+      ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      RUN mkdir -p C:\nodejsfolder
+      WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `

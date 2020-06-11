@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c73adff20ea253ac854d99b90c4161a963343e29
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916527"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184811"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>로컬 Docker 컨테이너에서 앱 디버그
 
@@ -81,13 +81,23 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
     }
     ```
 
+    다음과 같이 `Startup` 메서드를 수정합니다.
+
+    ```csharp
+    public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
+    {
+        Configuration = configuration;
+        Env = webHostEnvironment;
+    }
+    ```
+
    자세한 내용은 [ASP.NET Core의 Razor 파일 컴파일](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1)을 참조하세요.
 
 1. **솔루션 구성**을 **디버그**로 설정합니다. **Ctrl**+**F5**를 눌러 Docker 이미지를 빌드하고 로컬에서 실행합니다.
 
     컨테이너 이미지가 빌드되고 Docker 컨테이너에서 실행되면 Visual Studio가 기본 브라우저에서 웹앱을 시작합니다.
 
-1. ‘인덱스’ 페이지로 이동합니다.  이 페이지를 변경하겠습니다.
+1. ‘인덱스’ 페이지로 이동합니다. 이 페이지를 변경하겠습니다.
 1. Visual Studio로 돌아가서 *Index.cshtml*을 엽니다.
 1. 파일의 끝에 다음 HTML 콘텐츠를 추가하고 변경 내용을 저장합니다.
 

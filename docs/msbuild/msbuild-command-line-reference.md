@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90354cdc30785099d68d36781d7916de52b58705
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 625dd9517325d83348021681f6b5fbfa0272a12d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072361"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173501"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 명령줄 참조
 
@@ -63,6 +63,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-restore|-r|실제 대상을 빌드하기 전에 `Restore` 대상을 실행합니다.|
 |-restoreProperty:`name=value`|-rp:`name=value`|복원 중에만 이러한 프로젝트 수준 속성을 설정하거나 재정의하고 -property 인수로 지정된 속성을 사용하지 마세요. `name`은 속성 이름이고 `value`는 속성 값입니다. 세미콜론 또는 쉼표를 사용하여 여러 속성을 구분하거나 각 속성을 개별적으로 지정합니다.|
 |-target:`targets`|-t:`targets`|프로젝트에서 지정된 대상을 빌드합니다. 각 대상을 개별적으로 지정하거나 다음 예제에서와 같이 세미콜론 또는 쉼표를 사용하여 여러 대상을 구분합니다.<br /><br /> `-target:PrepareResources;Compile`<br /><br /> 이 스위치를 사용하여 대상을 지정하는 경우 프로젝트 파일의 `DefaultTargets` 특성에서 다른 대상 대신 이 대상이 실행됩니다. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md) 및 [방법: 먼저 빌드할 대상 지정](../msbuild/how-to-specify-which-target-to-build-first.md)을 참조하세요.<br /><br /> 대상은 작업 그룹입니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.|
+|-targets[:`file`]|-ts[:`file`]|빌드 프로세스를 실제로 실행하지 않고 지정된 파일(또는 파일을 지정하지 않은 경우 출력 디바이스)에 사용 가능한 대상 목록을 씁니다.|
 |-toolsVersion:`version`|-tv:`version`|다음 예제에서와 같이 프로젝트 빌드에 사용할 도구 집합 버전을 지정합니다. `-toolsversion:3.5`<br /><br /> 이 스위치를 사용하면 프로젝트를 빌드하고 [프로젝트 요소(MSBuild)](../msbuild/project-element-msbuild.md)에 지정된 버전과 다른 버전을 지정할 수 있습니다. 자세한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.<br /><br /> MSBuild 4.5의 경우 `version`에 대해 2.0, 3.5 및 4.0 값을 지정할 수 있습니다. 4\.0을 지정하는 경우 `VisualStudioVersion` 빌드 속성은 사용할 하위 도구 집합을 지정합니다. 자세한 내용은의 [MSBuild 도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)의 하위 도구 집합 섹션을 참조하세요.<br /><br /> 도구 집합은 애플리케이션을 빌드하는 데 사용되는 작업, 대상 및 도구로 구성됩니다. 도구에는 *csc.exe* 및 *vbc.exe*와 같은 컴파일러가 포함됩니다. 도구 집합에 대한 자세한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md) 및 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요. **참고:**  도구 세트 버전은 프로젝트가 실행되도록 빌드되는 .NET Framework 버전에 해당하는 대상 프레임워크 버전과는 다릅니다. 자세한 내용은 [대상 프레임워크 및 대상 플랫폼](../msbuild/msbuild-target-framework-and-target-platform.md)을 참조하세요.|
 |-validate:[`schema`]|-val[`schema`]|프로젝트 파일의 유효성을 검사하고 유효성 검사에 통과하면 프로젝트를 빌드합니다.<br /><br /> `schema`를 지정하지 않으면 기본 스키마에 대해 프로젝트의 유효성을 검사합니다.<br /><br /> `schema`를 지정하는 경우 지정한 스키마에 대해 프로젝트의 유효성을 검사합니다.<br /><br /> 설정 예: `-validate:MyExtendedBuildSchema.xsd`|
 |-verbosity:`level`|-v:`level`|빌드 로그에 표시할 정보의 양을 지정합니다. 각 로거는 해당 로거에 대해 설정한 자세한 정도를 기준으로 이벤트를 표시합니다.<br /><br /> 자세한 정도를 `q[uiet]`, `m[inimal]`, `n[ormal]`(기본값), `d[etailed]` 및 `diag[nostic]`로 지정할 수 있습니다.<br /><br /> 설정 예: `-verbosity:quiet`

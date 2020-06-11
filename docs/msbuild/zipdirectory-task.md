@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094570"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183069"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 작업
 
@@ -43,7 +43,7 @@ ms.locfileid: "79094570"
 |매개 변수|설명|
 |---------------|-----------------|
 |`DestinationFile`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수<br /><br /> 생성할 *.zip* 파일의 전체 경로입니다.|
-|`Overwrite`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 건너뜁니다. 대상 파일이 있으면 덮어씁니다. 기본값은 `false`입니다.|
+|`Overwrite`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 대상 파일이 있으면 덮어씁니다. 기본값은 `false`입니다.|
 |`SourceDirectory`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> *.zip* 보관을 만들 디렉터리를 지정합니다.|
 
 ## <a name="remarks"></a>설명
