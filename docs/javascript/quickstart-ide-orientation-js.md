@@ -21,13 +21,13 @@ ms.locfileid: "80527934"
 
 ::: moniker range="vs-2017"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 평가판을 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 평가판을 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Visual Studio의 기능을 계속 탐색하기 위해 새 프로젝트를 만들
 1. 표시되는 **새 프로젝트** 대화 상자에서 기본 프로젝트 이름을 그대로 사용하고 **확인**을 선택합니다.
 ::: moniker-end
 
-   프로젝트가 만들어지고 *편집기* 창에 **server.js**라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
+   프로젝트가 만들어지고 **편집기** 창에 *server.js*라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
 
    ![Visual Studio의 편집기](media/editor.png)
 
@@ -156,7 +156,7 @@ Visual Studio를 사용하는 동안 문제가 발생하거나 제품을 개선�
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017의 추가 기능](../ide/advanced-feature-overview.md)

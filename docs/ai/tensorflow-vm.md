@@ -20,7 +20,7 @@ ms.locfileid: "80638758"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>클라우드에서 TensorFlow 모델 학습
 
-이 자습서에서는 Azure [심층 학습](http://yann.lecun.com/exdb/mnist/) 가상 머신에서 [MNIST 데이터 세트](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)를 사용하여 TensorFlow 모델을 학습합니다.
+이 자습서에서는 Azure [심층 학습](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) 가상 머신에서 [MNIST 데이터 세트](http://yann.lecun.com/exdb/mnist/)를 사용하여 TensorFlow 모델을 학습합니다.
 
 MNIST 데이터베이스에는 60,000개의 학습 예제 집합과 직접 작성한 10,000개의 테스트 예제 집합이 있습니다.
 
