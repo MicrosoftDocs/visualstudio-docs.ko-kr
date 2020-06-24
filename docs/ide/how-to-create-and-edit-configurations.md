@@ -2,7 +2,7 @@
 title: '방법: 구성 만들기 및 편집'
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 754d2ceef776ab0dea2d8d51151d4170839173b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5b3ecd4abb05148130b0d87e287cbe199557951
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114704"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284505"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>방법: 구성 만들기 및 편집
 

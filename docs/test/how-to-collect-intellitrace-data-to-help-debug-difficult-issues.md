@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 데이터
 ms.date: 10/13/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc77ee87bbbf07d04fd7c01a554c7c074e5bf7f
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880223"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288262"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>방법: 어려운 문제 디버그에 도움이 되는 IntelliTrace 데이터 수집
 

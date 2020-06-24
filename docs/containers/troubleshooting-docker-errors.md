@@ -7,16 +7,16 @@ manager: jillfra
 ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1f4ca9d53900d0dc0c2392296303a94121103158
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027278"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283114"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker 관련 Visual Studio 개발 문제 해결
 

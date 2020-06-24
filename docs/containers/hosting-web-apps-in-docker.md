@@ -5,16 +5,16 @@ author: ghogen
 manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
-ms.topic: conceptual
+ms.topic: how-to
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: cfed918633f62700f464ee5f9911fbbfc6463c36
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9778590d804a72ff896b190a743fc08293f5b9ca
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916908"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283140"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Visual Studio를 사용하여 컨테이너 레지스트리에 ASP.NET 컨테이너 배포
 

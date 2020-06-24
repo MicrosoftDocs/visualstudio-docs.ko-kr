@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: conceptual
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bc5f4a9bfc78dd3139202872bdf8d70a050f4039
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182900"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289133"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -24,18 +24,18 @@ ms.locfileid: "84182900"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>일괄 추가를 사용하여 구독 할당
-1. https://manage.visualstudio.com 에서 Visual Studio 구독 관리 포털에 로그인합니다.
+1. <https://manage.visualstudio.com> 에서 Visual Studio 구독 관리 포털에 로그인합니다.
 
-2. 여러 구독자를 한 번에 추가하려면 **구독자 관리** 탭으로 이동합니다. **추가** 탭을 선택한 다음 드롭다운에서 **일괄 추가**를 선택합니다.  
+1. 여러 구독자를 한 번에 추가하려면 **구독자 관리** 탭으로 이동합니다. **추가** 탭을 선택한 다음 드롭다운에서 **일괄 추가**를 선택합니다.  
 
-2. 일괄 추가는 Microsoft Excel 템플릿을 사용하여 구독자 정보를 업로드합니다. [여러 구독자 업로드] 대화 상자에서 **다운로드**를 클릭하여 템플릿을 다운로드합니다.
+1. 일괄 추가는 Microsoft Excel 템플릿을 사용하여 구독자 정보를 업로드합니다. [여러 구독자 업로드] 대화 상자에서 **다운로드**를 클릭하여 템플릿을 다운로드합니다.
    > [!div class="mx-imgBorder"]
    > ![Excel 템플릿을 다운로드하여 여러 구독자 업로드](media/download-template-upload-subscribers.png)
    >
    > [!NOTE]
    > 항상 이 템플릿의 최신 버전을 다운로드합니다. 이전 버전을 사용하는 경우 대량 업로드가 실패할 수 있습니다.
 
-3. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. (*참조*는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
+1. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. (*참조*는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
 
     > [!NOTE]
     > 관리자는 템플릿의 필드 중 하나를 사용하여 구독자의 소프트웨어 다운로드 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다.  다운로드를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다.
@@ -48,11 +48,11 @@ ms.locfileid: "84182900"
     - 모든 필수 필드가 완료되었는지 확인합니다. 
     - **오류 메시지** 열을 확인합니다.  나열된 오류가 있다면 파일을 업로드하기 전에 오류를 해결합니다. 
 
-4. Visual Studio 구독 관리 포털로 돌아갑니다. **여러 구독자 업로드** 대화 상자에서 **찾아보기**를 클릭합니다.
+1. Visual Studio 구독 관리 포털로 돌아갑니다. **여러 구독자 업로드** 대화 상자에서 **찾아보기**를 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![저장된 템플릿으로 이동하여 여러 구독자 업로드](media/bulk-add-browse-saved-template.png)
 
-5. 저장한 Excel 파일로 이동한 다음, **확인**을 클릭합니다.
+1. 저장한 Excel 파일로 이동한 다음, **확인**을 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Excel 템플릿을 업로드하여 여러 구독자 업로드](media/bulk-upload-subscribers.png)
 

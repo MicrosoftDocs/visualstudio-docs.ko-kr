@@ -1,7 +1,7 @@
 ---
 title: 코딩된 UI 테스트로 UWP 앱 테스트
 ms.date: 05/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590360"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286754"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>UWP 앱을 테스트하기 위한 코딩된 UI 테스트 만들기
 

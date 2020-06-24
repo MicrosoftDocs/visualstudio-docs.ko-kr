@@ -1,7 +1,7 @@
 ---
 title: devops에 랩 환경 사용
 ms.date: 05/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880340"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286832"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 

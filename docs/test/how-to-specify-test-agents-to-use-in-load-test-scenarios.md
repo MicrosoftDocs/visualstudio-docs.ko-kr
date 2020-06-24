@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test agents, load tests
 - load tests, scenarios
@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588930"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287495"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>방법: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
 

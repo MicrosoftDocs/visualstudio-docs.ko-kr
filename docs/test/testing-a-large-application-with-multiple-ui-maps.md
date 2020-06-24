@@ -1,7 +1,7 @@
 ---
 title: 여러 UI 맵이 포함된 대형 애플리케이션 테스트
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590295"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286585"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>여러 UI 맵이 포함된 대형 애플리케이션 테스트
 

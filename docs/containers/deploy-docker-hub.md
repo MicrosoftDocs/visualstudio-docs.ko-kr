@@ -5,15 +5,15 @@ author: ghogen
 manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73188753"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283179"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub에 배포
 

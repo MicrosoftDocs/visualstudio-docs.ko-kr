@@ -5,13 +5,13 @@ description: 컨테이너 도구 빌드 프로세스 개요
 ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 63cf881fdedf9608d5cb773bbcb6b969a0f51624
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.topic: reference
+ms.openlocfilehash: 07dd9dd4c5c61014eecf245719b142cdbaecbc38
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472649"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283335"
 ---
 # <a name="container-tools-launch-settings"></a>컨테이너 도구 시작 설정
 

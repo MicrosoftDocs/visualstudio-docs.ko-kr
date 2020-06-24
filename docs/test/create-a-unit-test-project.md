@@ -1,18 +1,18 @@
 ---
 title: 단위 테스트 프로젝트 만들기
 ms.date: 01/29/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 313083090c94c94f4e196e87f3bf6cf6df36e118
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ffa19fb9dc49d6286ef3f54c51d89043445f18ba
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565255"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288717"
 ---
 # <a name="create-a-unit-test-project"></a>단위 테스트 프로젝트 만들기
 
