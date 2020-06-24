@@ -2,7 +2,7 @@
 title: '방법: 빌드 출력 디렉터리 변경'
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4c2f2445bc7139c5bbc80a35905e24c319c9dfa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114261"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284648"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>방법: 빌드 출력 디렉터리 변경
 

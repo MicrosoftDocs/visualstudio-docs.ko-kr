@@ -1,19 +1,19 @@
 ---
 title: 부하 테스트에 대한 단계 부하 패턴의 단계 진입 시간
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5ae00c3d9d647eff6f9df448c1681ae1d6c54bcb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588917"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287326"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정
 

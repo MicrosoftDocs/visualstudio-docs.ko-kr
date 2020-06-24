@@ -1,7 +1,7 @@
 ---
 title: 메뉴 및 도구 모음 사용자 지정
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -27,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306826"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284401"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정
 
@@ -81,7 +81,7 @@ ms.locfileid: "79306826"
         > [!NOTE]
         > 도구 모음의 사용 가능성과 내게 필요한 옵션 기능을 향상시키는 방법에 대한 자세한 내용은 [방법: IDE 내게 필요한 옵션 설정](../ide/reference/how-to-set-ide-accessibility-options.md)을 참조하세요.
 
-## <a name="customizing_menu">메뉴 또는 도구 모음 사용자 지정</a>
+## <a name=""></a><a name="customizing_menu">메뉴 또는 도구 모음 사용자 지정</a>
 
 1. 메뉴 모음에서 **도구** > **사용자 지정**을 선택합니다.
 

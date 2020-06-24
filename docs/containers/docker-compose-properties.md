@@ -5,13 +5,13 @@ description: 컨테이너 도구 빌드 프로세스 개요
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.topic: reference
+ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988513"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283153"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 

@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984917"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289419"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac용 Visual Studio 2017 설치
 
@@ -29,7 +29,7 @@ ms.locfileid: "74984917"
 
 Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
-- macOS Sierra 10.12 이상이 설치된 Mac
+- macOS Sierra 10.13 이상이 설치된 Mac
 - Xcode 9.3 이상. 대개 안정적인 최신 버전을 사용하는 것이 좋습니다.
 - Apple ID. Apple ID가 없으면 https://appleid.apple.com 에서 새로 만들 수 있습니다. Xcode를 설치하고 서명하려면 Apple ID가 있어야 합니다.
 
@@ -89,7 +89,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
 10. 설치가 완료되면 **시작**을 눌러 Visual Studio에서 앱 개발을 시작할 수 있습니다.
 
-    ![Visual Studio 열기](media/installer-image11.png)
+    ![Visual Studio를 엽니다.](media/installer-image11.png)
 
 > [!NOTE]
 > 원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://visualstudio.microsoft.com/vs/)를 다시 실행해야 합니다.
@@ -125,6 +125,6 @@ Mac용 Visual Studio를 설치하면 앱 코드 작성을 시작할 수 있습�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 2017 설치(Windows에서)](/visualstudio/install/install-visual-studio)

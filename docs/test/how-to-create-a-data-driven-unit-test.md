@@ -1,7 +1,7 @@
 ---
 title: 데이터 기반 단위 테스트 만들기
 ms.date: 05/08/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589190"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287989"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>방법: 데이터 기반 단위 테스트 만들기
 

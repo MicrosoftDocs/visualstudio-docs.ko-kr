@@ -1,7 +1,7 @@
 ---
 title: '방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)'
 ms.date: 06/21/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593332"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284741"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
 

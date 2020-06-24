@@ -1,7 +1,7 @@
 ---
 title: 웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs, load tests
 - load tests, walkthroughs
@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25df1c0d0d3165ba8afb068fc416a872af737a82
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589645"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288756"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
 

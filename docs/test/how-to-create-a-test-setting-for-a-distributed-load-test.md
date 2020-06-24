@@ -1,19 +1,19 @@
 ---
 title: 분산 부하 테스트를 위한 테스트 설정 만들기
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 625f4720e94f6ec0b3b9751c28ad18e0a9f38bbd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589151"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288010"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>방법: 분산 부하 테스트를 위한 테스트 설정 파일 만들기
 

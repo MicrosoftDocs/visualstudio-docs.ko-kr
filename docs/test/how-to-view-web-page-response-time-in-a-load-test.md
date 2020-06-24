@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트의 페이지 응답 시간
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, response times
 - response times in load tests
@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf8bc1205658899a51cf1a50e83a9a8b34034b25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1affda002290a191fde6d5115094a2185ac8bfcb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594320"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287053"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 

@@ -5,16 +5,16 @@ ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: c73adff20ea253ac854d99b90c4161a963343e29
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184811"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283166"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>로컬 Docker 컨테이너에서 앱 디버그
 

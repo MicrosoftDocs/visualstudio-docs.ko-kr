@@ -1,7 +1,7 @@
 ---
 title: Windows Communication Foundation 및 WCF Data Services
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -35,12 +35,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585940"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281047"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스
 
@@ -52,25 +52,25 @@ WCF (Windows Communication Foundation)는 안전 하 고 신뢰할 수 있으며
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services 정의
 
-WCF Data Services는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project** > **서비스 참조 추가**)의 .Net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](/dotnet/framework/data/wcf)를 참조하세요.
+WCF Data Services는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project**  >  **서비스 참조 추가**)의 .net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](/dotnet/framework/data/wcf)를 참조하세요.
 
 ### <a name="wcf-programming-model"></a>WCF 프로그래밍 모델
 
-WCF 프로그래밍 모델은 WCF 서비스와 WCF 클라이언트 라는 두 엔터티 간의 통신을 기반으로 합니다. 프로그래밍 모델은 .NET의 <xref:System.ServiceModel> 네임 스페이스에 캡슐화 되어 있습니다.
+WCF 프로그래밍 모델은 WCF 서비스와 WCF 클라이언트 라는 두 엔터티 간의 통신을 기반으로 합니다. 프로그래밍 모델은 <xref:System.ServiceModel> .net의 네임 스페이스에 캡슐화 됩니다.
 
 ### <a name="wcf-service"></a>WCF 서비스
 
-WCF 서비스는 서비스와 클라이언트 간의 계약을 정의 하는 인터페이스를 기반으로 합니다. 다음 코드와 같이 <xref:System.ServiceModel.ServiceContractAttribute> 특성으로 표시 됩니다.
+WCF 서비스는 서비스와 클라이언트 간의 계약을 정의 하는 인터페이스를 기반으로 합니다. <xref:System.ServiceModel.ServiceContractAttribute>다음 코드와 같이 특성으로 표시 됩니다.
 
 [!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
 [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]
 
-WCF 서비스에 의해 노출 되는 함수 또는 메서드를 <xref:System.ServiceModel.OperationContractAttribute> 특성으로 표시 하 여 정의 합니다.
+WCF 서비스에 의해 노출 되는 함수 또는 메서드를 특성으로 표시 하 여 정의 <xref:System.ServiceModel.OperationContractAttribute> 합니다.
 
 [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
 [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]
 
-또한 복합 형식을 <xref:System.Runtime.Serialization.DataContractAttribute> 특성으로 표시 하 여 serialize 된 데이터를 노출할 수 있습니다. 이렇게 하면 클라이언트에서 데이터를 바인딩할 수 있습니다.
+또한 복합 형식을 특성으로 표시 하 여 serialize 된 데이터를 노출할 수 있습니다 <xref:System.Runtime.Serialization.DataContractAttribute> . 이렇게 하면 클라이언트에서 데이터를 바인딩할 수 있습니다.
 
 인터페이스와 해당 메서드를 정의한 후에는 인터페이스를 구현 하는 클래스에 캡슐화 됩니다. 단일 WCF 서비스 클래스는 여러 서비스 계약을 구현할 수 있습니다.
 
@@ -84,7 +84,7 @@ WCF 서비스는 *끝점*이라고 하는 항목을 통해 사용 하기 위해 
 
 WCF 클라이언트는 응용 프로그램이 WCF 서비스와 통신할 수 있도록 하는 *프록시와* 서비스에 대해 정의 된 끝점과 일치 하는 끝점으로 구성 됩니다. 프록시는 *app.config* 파일의 클라이언트 쪽에서 생성 되 고 서비스에서 노출 하는 형식 및 메서드에 대 한 정보를 포함 합니다. 여러 끝점을 노출 하는 서비스의 경우 클라이언트는 HTTP를 통해 통신 하 고 Windows 인증을 사용 하는 등의 요구에 가장 적합 한 항목을 선택할 수 있습니다.
 
-WCF 클라이언트를 만든 후에는 다른 개체와 마찬가지로 코드에서 서비스를 참조 합니다. 예를 들어 앞에 표시 된 `GetData` 메서드를 호출 하려면 다음과 같은 코드를 작성 합니다.
+WCF 클라이언트를 만든 후에는 다른 개체와 마찬가지로 코드에서 서비스를 참조 합니다. 예를 들어 앞에 표시 된 메서드를 호출 하려면 `GetData` 다음과 같은 코드를 작성 합니다.
 
 [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
 [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
@@ -111,7 +111,7 @@ Visual Studio 디버거를 시작할 때 ( **F5**키를 눌러) wcf 서비스 �
 
 WCF 서비스 호스트를 사용 하 여 개발 중에 추가 코드를 작성 하거나 특정 호스트를 커밋하지 않고도 WCF 서비스를 테스트할 수 있습니다.
 
-WCF 서비스 호스트에 대 한 자세한 내용은 [wcf 서비스 호스트 (wcfsvchost.exe)](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe)를 참조 하세요.
+WCF 서비스 호스트에 대 한 자세한 내용은 [wcf 서비스 호스트 (WcfSvcHost.exe)](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe)를 참조 하세요.
 
 #### <a name="wcf-test-client"></a>WCF 테스트 클라이언트
 
@@ -119,11 +119,11 @@ WCF 테스트 클라이언트 도구를 사용 하 여 테스트 매개 변수�
 
 **F5** 키를 눌러 wcf 서비스 프로젝트를 디버깅할 때 Wcf 테스트 클라이언트는 구성 파일에 정의 된 서비스 끝점 목록을 열고 표시 합니다. 매개 변수를 테스트 하 고 서비스를 시작 하 고이 프로세스를 반복 하 여 서비스를 지속적으로 테스트 하 고 유효성을 검사할 수 있습니다.
 
-WCF 테스트 클라이언트에 대해 자세히 알아보려면 [wcf 테스트 클라이언트 (wcftestclient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)를 참조 하세요.
+WCF 테스트 클라이언트에 대해 자세히 알아보려면 [wcf 테스트 클라이언트 (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)를 참조 하세요.
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Visual Studio에서 WCF 서비스 액세스
 
-Visual Studio는 WCF 클라이언트 만들기, **서비스 참조 추가** 대화 상자를 사용 하 여 추가 하는 서비스에 대 한 프록시 및 끝점을 자동으로 생성 하는 작업을 간소화 합니다. 필요한 모든 구성 정보는 *app.config* 파일에 추가 됩니다. 대부분의 경우에는이 서비스를 사용 하기 위해 서비스를 인스턴스화해야 합니다.
+Visual Studio는 WCF 클라이언트 만들기, **서비스 참조 추가** 대화 상자를 사용 하 여 추가 하는 서비스에 대 한 프록시 및 끝점을 자동으로 생성 하는 작업을 간소화 합니다. 필요한 모든 구성 정보가 *app.config* 파일에 추가 됩니다. 대부분의 경우에는이 서비스를 사용 하기 위해 서비스를 인스턴스화해야 합니다.
 
 **서비스 참조 추가** 대화 상자를 사용 하 여 서비스에 대 한 주소를 입력 하거나 솔루션에 정의 된 서비스를 검색할 수 있습니다. 이 대화 상자는 서비스 목록 및 해당 서비스에서 제공 하는 작업을 반환 합니다. 또한 코드에서 서비스를 참조 하는 네임 스페이스를 정의할 수 있습니다.
 
@@ -133,7 +133,7 @@ Visual Studio는 WCF 클라이언트 만들기, **서비스 참조 추가** 대�
 
 WCF (일부 Windows Communication Foundation) 서비스는 클라이언트가 서비스와 통신할 수 있는 여러 끝점을 노출 합니다. 예를 들어 서비스는 HTTP 바인딩과 사용자 이름 및 암호 보안을 사용 하는 하나의 끝점과 FTP 및 Windows 인증을 사용 하는 두 번째 끝점을 노출할 수 있습니다. 첫 번째 끝점은 방화벽 외부에서 서비스에 액세스 하는 응용 프로그램에서 사용 될 수 있지만, 두 번째 끝점은 인트라넷에서 사용 될 수 있습니다.
 
-이러한 경우 서비스 참조의 생성자에 대 한 매개 변수로 `endpointConfigurationName`를 지정할 수 있습니다.
+이 경우을 `endpointConfigurationName` 서비스 참조의 생성자에 대 한 매개 변수로 지정할 수 있습니다.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -154,7 +154,7 @@ WCF (일부 Windows Communication Foundation) 서비스는 클라이언트가 �
     > [!NOTE]
     > *ServiceReference* 을 서비스 참조의 네임 스페이스로 바꾸고 *Service1Client* 을 서비스 이름으로 바꿉니다.
 
-3. 생성자에 대 한 오버 로드가 포함 된 IntelliSense 목록이 표시 됩니다. `endpointConfigurationName As String` 오버 로드를 선택 합니다.
+3. 생성자에 대 한 오버 로드가 포함 된 IntelliSense 목록이 표시 됩니다. `endpointConfigurationName As String`오버 로드를 선택 합니다.
 
 4. 오버 로드 뒤에 `=` *configurationname*을 입력 합니다. 여기서 *configurationname* 은 사용 하려는 끝점의 이름입니다.
 
@@ -163,15 +163,15 @@ WCF (일부 Windows Communication Foundation) 서비스는 클라이언트가 �
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>WCF 서비스에 사용할 수 있는 끝점을 찾으려면
 
-1. **솔루션 탐색기**에서 서비스 참조가 포함 된 프로젝트의 **app.config 파일을** 마우스 오른쪽 단추로 클릭 한 다음 **열기**를 클릭 합니다. 파일이 코드 편집기에 표시 됩니다.
+1. **솔루션 탐색기**에서 서비스 참조가 포함 된 프로젝트에 대 한 **app.config** 파일을 마우스 오른쪽 단추로 클릭 한 다음 **열기**를 클릭 합니다. 파일이 코드 편집기에 표시 됩니다.
 
-2. 파일에서 `<Client>` 태그를 검색 합니다.
+2. `<Client>`파일에서 태그를 검색 합니다.
 
-3. `<Client>` 태그 아래에서 `<Endpoint>`로 시작 하는 태그를 검색 합니다.
+3. 태그 아래에서 `<Client>` 로 시작 하는 태그를 검색 `<Endpoint>` 합니다.
 
      서비스 참조에서 여러 끝점을 제공 하는 경우 두 개 이상의 `<Endpoint` 태그가 있습니다.
 
-4. `<EndPoint>` 태그 안에 `name="`*SomeService*`"` 매개 변수 (여기서 *SomeService* 은 끝점 이름을 나타냄)를 찾을 수 있습니다. 서비스 참조에 대 한 생성자의 `endpointConfigurationName As String` 오버 로드에 전달 될 수 있는 끝점의 이름입니다.
+4. 태그 내 `<EndPoint>` 에서 `name="` *SomeService* `"` 매개 변수를 찾습니다 (여기서 *SomeService* 은 끝점 이름을 나타냄). `endpointConfigurationName As String`서비스 참조에 대 한 생성자의 오버 로드에 전달 될 수 있는 끝점의 이름입니다.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>방법: 비동기적으로 서비스 메서드 호출
 
@@ -210,7 +210,7 @@ WCF (Windows Communication Foundation) 서비스의 대부분의 메서드는 �
 
 5. 바인딩하려는 컨트롤의 형식을 클릭 합니다.
 
-6. 필드를 폼으로 끌어 놓습니다. 컨트롤은 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소와 함께 폼에 추가 됩니다.
+6. 필드를 폼으로 끌어 놓습니다. 컨트롤은 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 구성 요소와 함께 폼에 추가 됩니다 <xref:System.Windows.Forms.BindingNavigator> .
 
 7. 바인딩하려는 다른 모든 필드에 대해 4 ~ 6 단계를 반복 합니다.
 
@@ -224,7 +224,7 @@ WCF (Windows Communication Foundation) 서비스의 대부분의 메서드는 �
 
 4. 표 형태의 데이터를 표시 하려면 **DataGridView** 를 클릭 하거나 개별 컨트롤에 데이터를 표시 하려면 **세부 정보** 를 클릭 합니다.
 
-5. 노드를 폼으로 끌어 옵니다. 컨트롤은 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소와 함께 폼에 추가 됩니다.
+5. 노드를 폼으로 끌어 옵니다. 컨트롤은 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 구성 요소와 함께 폼에 추가 됩니다 <xref:System.Windows.Forms.BindingNavigator> .
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>방법: 서비스를 구성 하 여 기존 형식 다시 사용
 
@@ -252,18 +252,18 @@ WCF (Windows Communication Foundation) 서비스의 대부분의 메서드는 �
 
 ## <a name="related-topics"></a>관련 항목
 
-| 제목 | 설명 |
+| 제목 | Description |
 | - | - |
 | [연습: Windows Forms에서 간단한 WCF 서비스 만들기](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Visual Studio에서 WCF 서비스를 만들고 사용 하는 방법에 대 한 단계별 데모를 제공 합니다. |
-| [연습: WPF 및 Entity Framework를 사용하여 WCF 데이터 서비스 만들기](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Visual Studio에서 WCF Data Services를 만들고 사용 하는 방법에 대 한 단계별 데모를 제공 합니다. |
+| [연습: WPF 및 Entity Framework를 사용 하 여 WCF 데이터 서비스 만들기](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Visual Studio에서 WCF Data Services를 만들고 사용 하는 방법에 대 한 단계별 데모를 제공 합니다. |
 | [WCF 개발 도구 사용](/dotnet/framework/wcf/using-the-wcf-development-tools) | Visual Studio에서 WCF 서비스를 만들고 테스트 하는 방법을 설명 합니다. |
 | | [방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [서비스 참조 문제 해결](../data-tools/troubleshooting-service-references.md) | 서비스 참조에서 발생할 수 있는 몇 가지 일반적인 오류와 이러한 오류를 방지 하는 방법을 보여 줍니다. |
-| [WCF 서비스 디버그](../debugger/debugging-wcf-services.md) | WCF 서비스를 디버그할 때 발생할 수 있는 일반적인 디버깅 문제와 기술에 대해 설명 합니다. |
+| [WCF 서비스 디버깅](../debugger/debugging-wcf-services.md) | WCF 서비스를 디버그할 때 발생할 수 있는 일반적인 디버깅 문제와 기술에 대해 설명 합니다. |
 | [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 형식화된 데이터 세트을 만들고 TableAdapter 및 데이터 세트 코드를 여러 프로젝트로 분리하는 단계별 지침을 제공합니다. |
 | [서비스 참조 구성 대화 상자](../data-tools/configure-service-reference-dialog-box.md) | **서비스 참조 구성** 대화 상자의 사용자 인터페이스 요소에 대해 설명 합니다. |
 
-## <a name="reference"></a>참조
+## <a name="reference"></a>참고
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

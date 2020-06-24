@@ -1,19 +1,19 @@
 ---
 title: 부하 테스트 실행 설정 구성
 ms.date: 10/03/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, configuring run settings
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffc9d6c2e563fcd16a61e91eaa94889de8607efc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e8002373b7ad34796df557686c1aff6a417d49ea
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595984"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288834"
 ---
 # <a name="configure-load-test-run-settings"></a>부하 테스트 실행 설정 구성
 

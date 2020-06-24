@@ -1,7 +1,7 @@
 ---
 title: 웹 성능 테스트에 대한 사용자 지정 유효성 검사 규칙 코딩
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
@@ -15,12 +15,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9780a4ee81a4d063b5cfb7f66b1a5ea023d8fa2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8bdf7f7f8f5bfcc7f8403740bea924c967bf3964
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75573406"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288873"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 유효성 검사 규칙 코딩
 

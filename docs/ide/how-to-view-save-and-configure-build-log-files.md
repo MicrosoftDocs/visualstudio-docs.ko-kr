@@ -2,19 +2,19 @@
 title: '방법: 빌드 로그 파일 보기, 저장 및 구성 | Microsoft Docs'
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472784"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283907"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>방법: 빌드 로그 파일 보기, 저장 및 구성
 
@@ -63,7 +63,7 @@ MSBuild를 사용하여 종류를 불문하고 프로젝트를 빌드하는 경�
      자세한 내용은 [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) 및 <xref:Microsoft.Build.Framework.LoggerVerbosity>를 참조하세요.
 
     > [!IMPORTANT]
-    > **출력** 창(모든 프로젝트) 및 *\<ProjectName>.txt* 파일(C++ 프로젝트에만 해당)에 적용할 변경 내용에 대한 프로젝트를 다시 빌드해야 합니다.
+    > **출력** 창(모든 프로젝트) 및 *\<ProjectName>.txt* 파일(C++ 프로젝트에만 해당)에 적용할 변경 내용에 대한 프로젝트를 다시 작성해야 합니다.
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>큰 로그 파일을 더욱 쉽게 찾아볼 수 있도록 이진 로그 사용
 

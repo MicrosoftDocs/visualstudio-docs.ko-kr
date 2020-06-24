@@ -1,7 +1,7 @@
 ---
 title: '방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load test results graphs, creating
 - load test results graphs
@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10433c63e0bad00d187f79634f74fa3727edc3dc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113292"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287807"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기
 

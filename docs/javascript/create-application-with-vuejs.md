@@ -3,7 +3,7 @@ title: Node.js를 사용하여 Vue.js 앱 만들기
 description: Vue.js 프레임워크를 사용하여 Visual Studio에서 Node.js 애플리케이션을 만들 수 있습니다.
 ms.custom: seodec18
 ms.date: 07/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81744936"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285168"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 애플리케이션 만들기
 

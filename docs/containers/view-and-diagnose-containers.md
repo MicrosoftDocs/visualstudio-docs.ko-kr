@@ -3,16 +3,16 @@ title: Docker 컨테이너 로그, 환경 변수 및 파일 시스템 액세스
 description: 도구 창을 통해 앱을 호스트하는 컨테이너 내에서 수행되는 작업을 확인하여 Visual Studio에서 컨테이너 기반 앱을 디버그하고 진단하는 기능을 향상하는 방법을 설명합니다.
 author: ghogen
 ms.author: ghogen
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027300"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283127"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio에서 컨테이너와 이미지를 보고 진단하는 방법
 

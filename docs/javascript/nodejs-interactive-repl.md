@@ -2,7 +2,7 @@
 title: Node.js REPL 사용
 description: Visual Studio는 Node.js 런타임과의 상호 작용 지원을 제공합니다.
 ms.date: 12/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840672"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285006"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Node.js 대화형 창 사용
 

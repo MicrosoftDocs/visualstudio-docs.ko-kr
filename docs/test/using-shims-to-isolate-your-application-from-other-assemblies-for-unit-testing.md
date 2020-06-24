@@ -1,19 +1,19 @@
 ---
 title: shim을 사용하여 단위 테스트를 위한 애플리케이션 격리
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f7d2f993891a4adfa9217357fbdb1a95e10b637
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585537"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289302"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 앱 격리
 

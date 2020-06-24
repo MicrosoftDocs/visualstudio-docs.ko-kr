@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트에 대한 임계값 규칙 추가
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, monitoring
 - load tests, thresholds
@@ -11,12 +11,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1389df0c307ad6ec65575fc7934e622928a0ca1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c6855088c05e03311b5724ba3a0ccf438a43b6a8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591634"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288483"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 임계값 규칙 추가
 

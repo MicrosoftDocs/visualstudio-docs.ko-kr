@@ -1,7 +1,7 @@
 ---
 title: 코드 조각을 확장명으로 배포
 ms.date: 03/21/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e77658b2b09f643af18a3f136f5428828cfb5c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591062"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284375"
 ---
 # <a name="how-to-distribute-code-snippets"></a>방법: 코드 조각 배포
 

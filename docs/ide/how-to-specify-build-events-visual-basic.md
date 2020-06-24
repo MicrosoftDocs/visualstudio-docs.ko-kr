@@ -2,7 +2,7 @@
 title: '방법: 빌드 이벤트 지정(Visual Basic)'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115099"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283972"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>방법: 빌드 이벤트 지정(Visual Basic)
 
@@ -44,12 +44,12 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 4. 빌드 전 또는 빌드 후 작업에 대한 명령줄 인수를 입력한 다음 **확인**을 클릭합니다.
 
     > [!NOTE]
-    > *.bat* 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
+    > *.bat* 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
 
     > [!NOTE]
     > 빌드 전 또는 빌드 후 이벤트가 성공적으로 완료되지 않으면 성공적인 작업을 나타내는 0(영) 이외의 코드로 이벤트 작업이 종료되도록 하여 빌드를 종료할 수 있습니다.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>예제: 빌드 후 이벤트를 사용하여 매니페스트 정보를 변경하는 방법
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>예: 빌드 후 이벤트를 사용하여 매니페스트 정보를 변경하는 방법
 
 다음 절차에서는 빌드 후 이벤트에서 호출된 *.exe* 명령을 사용하여 애플리케이션 매니페스트의 최소 운영 체제 버전을 설정하는 방법을 보여줍니다(프로젝트 디렉터리의 *.exe.manifest* 파일). 최소 운영 체제 버전은 네 부분으로 구성된 번호입니다(예: 4.10.0.0). 이를 위해 명령은 매니페스트의 `<dependentOS>` 섹션을 변경합니다.
 
@@ -65,7 +65,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 
 1. 명령에 대한 콘솔 애플리케이션을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-2. **새 프로젝트** 대화 상자의 **Visual Basic** 노드에서 **창** 및 **콘솔 애플리케이션** 템플릿을 차례로 선택합니다. 프로젝트 `ChangeOSVersionVB`의 이름을 지정합니다.
+2. **새 프로젝트** 대화 상자의 **Visual Basic** 노드에서 **창** 및 **콘솔 애플리케이션** 템플릿을 차례로 선택합니다. 프로젝트 이름을 `ChangeOSVersionVB`로 지정합니다.
 
 3. *Module1.vb*에서 파일 맨 위의 다른 `Imports` 문에 다음 줄을 추가합니다.
 
@@ -116,7 +116,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
    End Sub
    ```
 
-   이 명령은 두 개의 인수를 사용합니다. 첫 번째 인수는 애플리케이션 매니페스트의 경로(즉, 빌드 프로세스에서 매니페스트를 만드는 폴더, 일반적으로 *\< ProjectName>.publish*)입니다. 두 번째 인수는 새 운영 체제 버전입니다.
+   이 명령은 두 개의 인수를 사용합니다. 첫 번째 인수는 애플리케이션 매니페스트의 경로(즉, 빌드 프로세스에서 매니페스트를 만드는 폴더, 일반적으로 *\<ProjectName>.publish*)입니다. 두 번째 인수는 새 운영 체제 버전입니다.
 
 5. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
@@ -128,7 +128,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 
 1. 프로젝트를 게시할 Windows 애플리케이션을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-2. **새 프로젝트** 대화 상자의 **Visual Basic**에서 **Windows 바탕 화면** 및 **Windows Forms 앱** 템플릿을 차례로 선택합니다. 프로젝트 `VBWinApp`의 이름을 지정합니다.
+2. **새 프로젝트** 대화 상자의 **Visual Basic**에서 **Windows 바탕 화면** 및 **Windows Forms 앱** 템플릿을 차례로 선택합니다. 프로젝트 이름을 `VBWinApp`로 지정합니다.
 3. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.
 
 4. **프로젝트 디자이너**에서 **게시** 페이지로 이동하고 **게시 위치**를 *C:\TEMP*로 설정합니다.
@@ -163,7 +163,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [컴파일 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [게시 페이지, 프로젝트 디자이너](../ide/reference/publish-page-project-designer.md)

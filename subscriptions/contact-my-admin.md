@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: b203feee61bf44af99ea802992e1fdc3c416c037
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 117bdb82c878e498862dd967615fde9d6ba632eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232628"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289107"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>구독 관리자의 도움 받기
 회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자나 “관리자”가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
@@ -20,7 +20,7 @@ ms.locfileid: "80232628"
 많은 조직의 규모 및 복잡성을 고려해 볼 때 관리자가 누구인지 알지 못할 수 있으므로 어디에서 도움을 받을지 알기 어려울 수 있습니다.  관리자에게 문의하는 데 도움이 되는 새로운 기능을 구독자 포털에 추가했습니다.   
 
 ## <a name="how-to-contact-your-admin"></a>관리자에게 문의하는 방법
-1. https://my.visualstudio.com 에 방문하여 구독자 포털에 로그인합니다.
+1. <https://my.visualstudio.com> 에 방문하여 구독자 포털에 로그인합니다.
 2. **구독** 탭을 클릭합니다. 
 3. 오른쪽 위에 있는 **내 관리자에게 문의** 단추를 클릭합니다. 
    > [!div class="mx-imgBorder"]

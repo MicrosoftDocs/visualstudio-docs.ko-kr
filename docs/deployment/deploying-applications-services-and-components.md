@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183004"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286360"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>먼저 Visual Studio의 배포 살펴보기
 
@@ -58,7 +58,7 @@ ms.locfileid: "84183004"
 
   **게시** 도구를 사용하려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. (모든 게시 프로필을 이전에 구성한 경우 **새 프로필 만들기**를 클릭해야 합니다.) 게시 대화 상자에서 **App Service** 또는 **Azure Virtual Machines** 중 하나를 선택한 다음, 구성 단계를 따릅니다.
 
-  ![Azure App Service 선택](../deployment/media/quickstart-publish-azure.png "Azure App Service 선택")
+  ![Azure App Service 선택](../deployment/media/quickstart-publish-azure-new.png "Azure App Service 선택")
 
   Visual Studio 2017 버전 15.7부터 ASP.NET Core 앱을 **Linux용 App Service**에 배포할 수 있습니다.
 
@@ -91,7 +91,7 @@ Visual Studio에서 Microsoft Store에 배포하기 위한 앱 패키지를 만�
 
 - **UWP**: 메뉴 항목을 사용하여 앱을 패키지 및 배포할 수 있습니다. 자세한 내용은 [Visual Studio를 사용하여 UWP 앱 패키지](/windows/uwp/packaging/packaging-uwp-apps)를 참조하세요.
 
-    ![앱 패키지 만들기](../deployment/media/feature-tour-create-app-package.jpg)
+    ![앱 패키지 만들기](../deployment/media/feature-tour-create-app-package.png)
 
 - **Windows 데스크톱**: Visual Studio 2017 버전 15.4부터 데스크톱 브리지를 사용하여 Microsoft Store에 배포할 수 있습니다. 이 작업을 수행하려면 Windows 애플리케이션 패키징 프로젝트를 만들어 시작합니다. 자세한 내용은 [Microsoft Store의 데스크톱 앱 패키지(데스크톱 브리지)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 참조하세요.
 

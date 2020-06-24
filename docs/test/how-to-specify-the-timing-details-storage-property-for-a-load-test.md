@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트 실행 설정에 대한 타이밍 정보 스토리지 속성
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbd3b2a7d7e56870a994af288f5887f1d86256af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0225ae23ed141b317d4424da573593d446766f43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591647"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287313"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 타이밍 정보 스토리지 속성 지정
 

@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트에 실행 설정 추가
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, run settings, adding
 - load tests, run settings
@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adcb50d2c6800c5ce64ab2b7cf16ce9d2a25aaaa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2f62b3e9797e411138590fc15b0fe872920d203
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584506"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288457"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>방법: 부하 테스트에 실행 설정 추가
 

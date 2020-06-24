@@ -1,19 +1,19 @@
 ---
 title: Kubernetes 도구 자습서 | Microsoft Docs
 ms.date: 06/08/2018
-ms.topic: conceptual
+ms.topic: tutorial
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444689"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283192"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 

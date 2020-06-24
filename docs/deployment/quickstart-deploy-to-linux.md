@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 1a6500b8b38cc6beef21e7da301ec8e1ef7d4bd6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 5b0b45d586fb6eb89eb458329f611d980d9415e0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173268"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285477"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio를 사용하여 Linux의 App Service에 ASP.NET Core 앱 게시
 
@@ -36,7 +36,7 @@ Visual Studio 2017 버전 15.7부터 다음 방법 중 하나를 사용하여 AS
 
 1. **게시** 대화 상자에서 **Azure**를 선택합니다.
 
-    ![게시 대상 선택](../deployment/media/quickstart-publish-azure.png)
+    ![게시 대상 선택](../deployment/media/quickstart-publish-azure-new.png)
 
 1. **Azure App Service(Linux)** 및 **다음**을 차례로 선택합니다.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf05c0eea2ec05f04c1c792145218f570c4bce96
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b55b7b2be0fc546a9dcbbec03480f332724e7e2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732776"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286377"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>방법: 관리 코드에 스레드 이름 설정
 스레드 명명 기능은 Visual Studio의 모든 버전에서 사용할 수 있습니다. 이 기능은 **스레드** 창에서 스레드를 추적할 때 유용합니다.

@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트 API
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code, load tests
 - plug-ins, load test
@@ -10,12 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d949b8c73bb155b2e6fe4900c54c6d5314d26c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588813"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287105"
 ---
 # <a name="how-to-use-the-load-test-api"></a>방법: 부하 테스트 API 사용
 

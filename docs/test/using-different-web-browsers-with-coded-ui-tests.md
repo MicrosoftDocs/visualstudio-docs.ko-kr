@@ -1,18 +1,18 @@
 ---
 title: 코딩된 UI 테스트에 다른 웹 브라우저 사용
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585576"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289328"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 

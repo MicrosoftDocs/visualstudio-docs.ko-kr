@@ -1,7 +1,7 @@
 ---
 title: N 계층 데이터 애플리케이션 개요
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - presentation tier
 - middle tier
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 14527e84d5bbd2d06b2d091ba7a9d4daa9763462
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586382"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281957"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 애플리케이션 개요
 *N 계층* 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 데이터 응용 프로그램입니다. "분산 응용 프로그램" 및 "다중 계층 응용 프로그램" 이라는 n 계층 응용 프로그램은 클라이언트와 서버 간에 분산 된 불연속 계층으로 처리를 분리 합니다. 데이터에 액세스 하는 응용 프로그램을 개발 하는 경우 응용 프로그램을 구성 하는 다양 한 계층을 명확 하 게 구분 해야 합니다.
@@ -31,12 +31,12 @@ Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 �
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 는 DataContext 및 데이터 클래스를 별도의 네임 스페이스로 생성 하는 설정을 제공 합니다. 이렇게 하면 데이터 액세스 및 데이터 엔터티 계층을 논리적으로 분리할 수 있습니다.
 
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) 는 응용 프로그램의 여러 계층 으로부터 DataContext를 가져오는 데 사용할 수 있는 <xref:System.Data.Linq.Table%601.Attach%2A> 메서드를 제공 합니다. 자세한 내용은 [LINQ to SQL를 사용 하는 N 계층 및 원격 응용 프로그램](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)을 참조 하세요.
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) 는 <xref:System.Data.Linq.Table%601.Attach%2A> 응용 프로그램의 여러 계층 으로부터 DataContext를 가져오는 데 사용할 수 있는 메서드를 제공 합니다. 자세한 내용은 [LINQ to SQL를 사용 하는 N 계층 및 원격 응용 프로그램](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)을 참조 하세요.
 
 ## <a name="presentation-tier"></a>프레젠테이션 계층
 *프레젠테이션 계층* 은 사용자가 응용 프로그램과 상호 작용 하는 계층입니다. 추가 응용 프로그램 논리도 포함 하는 경우가 많습니다. 일반적인 프레젠테이션 계층 구성 요소에는 다음이 포함 됩니다.
 
-- <xref:System.Windows.Forms.BindingSource> 및 <xref:System.Windows.Forms.BindingNavigator>와 같은 데이터 바인딩 구성 요소입니다.
+- 데이터 바인딩 구성 요소 (예: <xref:System.Windows.Forms.BindingSource> 및 <xref:System.Windows.Forms.BindingNavigator> )
 
 - 프레젠테이션 계층에서 사용할 엔터티 클래스 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) 같은 데이터의 개체 표현입니다.
 
@@ -57,7 +57,7 @@ Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 �
 
 다음 그림에서는 Visual Studio에서 사용할 수 있는 기능 및 기술과 n 계층 응용 프로그램의 중간 계층에 적합할 수 있는 기술을 보여 줍니다.
 
-중간 계층](../data-tools/media/ntiermid.png) 중간 계층 구성 요소 ![
+![중간 계층 구성 요소 ](../data-tools/media/ntiermid.png) 중간 계층
 
 중간 계층은 일반적으로 데이터 연결을 사용 하 여 데이터 계층에 연결 합니다. 이 데이터 연결은 일반적으로 데이터 액세스 구성 요소에 저장 됩니다.
 
@@ -66,7 +66,7 @@ Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 �
 
 다음 그림에서는 Visual Studio에서 사용할 수 있는 기능 및 기술과 n 계층 응용 프로그램의 데이터 계층에 적합할 수 있는 기술을 보여 줍니다.
 
-데이터 계층](../data-tools/media/ntierdatatier.png) 데이터 계층 구성 요소 ![
+![데이터 계층 구성 요소 ](../data-tools/media/ntierdatatier.png) 데이터 계층
 
 프레젠테이션 계층의 클라이언트에서 직접 데이터 계층에 액세스할 수 없습니다. 대신, 중간 계층의 데이터 액세스 구성 요소는 프레젠테이션과 데이터 계층 간의 통신에 사용 됩니다.
 
@@ -77,11 +77,11 @@ Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 �
 
 [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
-[LINQ to SQL을 사용한 N 계층 및 원격 애플리케이션](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[LINQ to SQL를 사용 하는 N 계층 및 원격 응용 프로그램](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
-- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)

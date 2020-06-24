@@ -1,19 +1,19 @@
 ---
 title: '방법: 부하 테스트 실행 설정에 대한 샘플링 주기 지정'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63b6b9479347b076b7bd9e350e80e4bfa2a36d69
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab77354226028397d5875137ed331860a4b32925
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594827"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287391"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 샘플 속도 지정
 

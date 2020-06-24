@@ -1,7 +1,7 @@
 ---
 title: .NET 용 Data tools
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: ghogen
 ms.author: ghogen
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586044"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281073"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET용 Visual Studio 데이터 도구
 
@@ -42,6 +42,6 @@ Visual Studio 및 .NET은 데이터베이스에 연결 하 고, 메모리에서 
 
 3 단계를 건너뛰고 .NET 응용 프로그램을 프로그래밍 하 여 모델을 사용 하지 않고 데이터베이스에 직접 명령을 실행할 수 있습니다. 이 경우에 관련 설명서를 보면: [ADO.NET](/dotnet/framework/data/adonet/index)합니다. **데이터 소스 구성 마법사** 및 디자이너를 사용 하 여 메모리에 사용자 고유의 개체를 채운 다음 해당 개체에 데이터를 바인딩할 때 데이터 바인딩 코드를 생성할 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)

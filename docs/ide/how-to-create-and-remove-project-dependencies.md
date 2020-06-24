@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로젝트 종속성 만들기 및 제거'
 ms.date: 06/21/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114545"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284466"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>방법: 프로젝트 종속성 만들기 및 제거
 

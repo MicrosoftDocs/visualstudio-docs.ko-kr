@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트 카운터 집합
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.countersetmapping
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1eeb99d58a9fc0547d118c529878d8b02cc83dda
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113430"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287690"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 카운터 집합 관리
 

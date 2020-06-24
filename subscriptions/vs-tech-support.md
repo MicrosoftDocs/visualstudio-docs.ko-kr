@@ -7,18 +7,18 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301949"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289432"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화 및 사용
 Visual Studio 구독의 기술 지원 혜택은 [지원 수명 주기](https://support.microsoft.com/lifecycle/search)의 기본 지원 단계에 여전히 있는 제품에 대해 **비-프로덕션 환경**의 중단 수정 문제 해결을 위한 것입니다. Visual Studio Enterprise 표준 및 연간 클라우드 구독은 네 개의 인시던트를 받고, Visual Studio Professional 표준 및 연간 클라우드 구독은 혜택 활성화 후 최대 1년 간 두 개의 인시던트를 받습니다. 혜택 활성화는 구독이 최신 상태인 동안 발생해야 합니다.
 
 > [!NOTE]
-> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 https://visualstudio.microsoft.com/vs/pricing/ 으로 이동하여 Visual Studio 구독을 구입하기 위한 다양한 옵션을 살펴보세요.
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 <https://visualstudio.microsoft.com/vs/pricing/> 으로 이동하여 Visual Studio 구독을 구입하기 위한 다양한 옵션을 살펴보세요.
 
 > [!NOTE]
 > 지정된 수준의 일부 구독은 지원 인시던트를 받을 수 없습니다. FTE, NFR, MPN, MCT 및 기타 프로그램을 통해 취득한 구독은 지원 인시던트를 받을 수 없습니다. 구독에 기술 지원 인시던트를 받을 자격이 없는 경우 기술 지원 타일이 사용 가능한 혜택에 나타나지 않습니다.
@@ -33,7 +33,7 @@ Visual Studio 구독에서 다운로드한 비 개발자 제품(예: SQL, Window
 제품 수준 설명: **사용할 수 없는 지원 플랜**을 확장합니다. **Support plan cannot be used for support on the specified product (Code: 8)** (지원 플랜을 지정된 제품의 지원에 사용할 수 없음(코드: 8))가 표시된 경우, 선택한 제품 버전에 지원 계약을 사용할 수 없습니다.
 
 ## <a name="how-to-activate-the-benefit"></a>혜택을 활성화하는 방법
-1. https://my.visualstudio.com/Benefits 로 이동하여 지원 섹션까지 아래로 스크롤하고, 기술 지원 타일에서 **채팅하여 활성화**를 클릭합니다.
+1. <https://my.visualstudio.com/Benefits> 로 이동하여 지원 섹션까지 아래로 스크롤하고, 기술 지원 타일에서 **채팅하여 활성화**를 클릭합니다.
     > [!div class="mx-imgBorder"]
     > ![기술 지원 혜택 타일](_img/vs-tech-support/vs-tech-support-tile.png)
 2. 이렇게 하면 **계약 ID** 및 **액세스 ID**를 만들고 이메일을 통해 제공하여 기록을 위해 사용할 수 있는 담당자와 채팅 세션이 시작됩니다.

@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트에 대한 테스트 반복 구성
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590984"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288782"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 테스트 반복 구성
 

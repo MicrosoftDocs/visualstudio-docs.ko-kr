@@ -1,19 +1,19 @@
 ---
 title: '방법: 진단 데이터 어댑터 만들기'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b198d8d3e9156b8a38325034bf19ce96b742d9e
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880158"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288080"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 

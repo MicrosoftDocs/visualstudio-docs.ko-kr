@@ -1,7 +1,7 @@
 ---
 title: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a94a44d0a826cbda1d50b212f61bef86ad29f05c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589073"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287820"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기
 

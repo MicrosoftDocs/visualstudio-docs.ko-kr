@@ -1,7 +1,7 @@
 ---
 title: 웹 서비스 테스트 만들기
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, creating Web service tests
 - Web services [Visual Studio ALM], creating
@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 67aff3b1486224c93a6a8302feb96caea91afcff
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589099"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287898"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 

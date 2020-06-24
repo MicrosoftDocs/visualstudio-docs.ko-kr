@@ -2,7 +2,7 @@
 title: 유닛 테스트 JavaScript 및 TypeScript
 description: Visual Studio는 Visual Studio용 Node.js 도구를 사용하는 지원 유닛 테스트 JavaScript 및 TypeScript 코드를 제공합니다.
 ms.date: 06/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183108"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289003"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio의 유닛 테스트 JavaScript 및 TypeScript
 

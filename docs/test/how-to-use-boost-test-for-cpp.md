@@ -2,18 +2,18 @@
 title: Boost.Test for C++를 사용하는 방법
 description: Boost.Test를 사용하여 Visual Studio에서 단위 테스트를 만듭니다.
 ms.date: 01/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: corob-msft
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a1a621c7ee7175d86b2cbcf9a6e2c02c0aecbb3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34c593469a586d1314c7ee52f3aeb3ab6faf334c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922917"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287274"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio에서 Boost.Test for C++를 사용하는 방법
 

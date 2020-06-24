@@ -1,7 +1,7 @@
 ---
 title: 웹 성능 테스트 API
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
@@ -9,12 +9,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e869bc46997ffb6ebecae2aa3e49c3cb6b2582fa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594341"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287079"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>방법: 웹 성능 테스트 API 사용
 

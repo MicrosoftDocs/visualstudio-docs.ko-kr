@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7ae4e0f865b35787663313277eb4df37169b72b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75406343"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286065"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조
 
@@ -106,7 +106,8 @@ ms.locfileid: "75406343"
 
 ## <a name="see-also"></a>참조
 
-[프로젝트 마이그레이션 및 Visual Studio 2019에 대한 업그레이드 참조](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [프로젝트 마이그레이션 및 Visual Studio 2019에 대한 업그레이드 참조](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end
 
@@ -114,7 +115,7 @@ ms.locfileid: "75406343"
 
 새 버전의 Visual Studio에서는 대부분의 형식의 프로젝트, 파일 및 기타 자산을 지원합니다. 최신 기능을 사용하지 않는 경우 [이전과 동일하게](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다.
 
-Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려고 노력합니다. 하지만 일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio는 특정 프로젝트를 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트해야 할 수도 있습니다. 
+Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려고 노력합니다. 하지만 일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio는 특정 프로젝트를 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트해야 할 수도 있습니다.
 
 > [!NOTE]
 > 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)를 참조하세요. 각 Visual Studio 버전과 관련된 기능에 대한 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
@@ -182,7 +183,7 @@ Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, V
 
 해당 프로젝트 유형을 소유한 엔지니어링 팀은 이러한 기준을 지향하여 지원, 호환성 및 마이그레이션 관련 결정을 내립니다. 다시 한 번, Microsoft에서는 한 버전의 Visual Studio에서 프로젝트를 만들고 수정하면 다른 버전에서도 작동하도록 Visual Studio 버전 간 호환성을 유지하려고 노력합니다.
 
-경우에 따라 호환성이 가능하지 않습니다. 그러면 Visual Studio가 업그레이드 마법사를 열어 필요한 단방향 변경을 수행합니다. 이러한 단방향 변경이 프로젝트 파일에서 `ToolsVersion` 속성의 변경을 포함할 수 있습니다. 이 속성은 정확하게 어떤 버전의 MSBuild가 프로젝트의 소스 코드를 사용자가 원하는 실행가능하고 배포 가능한 아티팩트로 바꿀 수 있는지 표시합니다. 
+경우에 따라 호환성이 가능하지 않습니다. 그러면 Visual Studio가 업그레이드 마법사를 열어 필요한 단방향 변경을 수행합니다. 이러한 단방향 변경이 프로젝트 파일에서 `ToolsVersion` 속성의 변경을 포함할 수 있습니다. 이 속성은 정확하게 어떤 버전의 MSBuild가 프로젝트의 소스 코드를 사용자가 원하는 실행가능하고 배포 가능한 아티팩트로 바꿀 수 있는지 표시합니다.
 
 이전 버전의 Visual Studio와 호환되지 않는 프로젝트를 렌더링한 것은 *Visual Studio* 버전이 아니라 `ToolsVersion`에서 결정한 *MSBuild* 버전입니다. 사용자의 Visual Studio 버전이 프로젝트의 `ToolsVersion`과 일치하는 MSBuild 도구 체인을 포함하는 경우 Visual Studio는 해당 도구 체인이 프로젝트를 빌드하도록 호출할 수 있습니다.
 
@@ -199,6 +200,7 @@ Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, V
 
 ## <a name="see-also"></a>참조
 
-[프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

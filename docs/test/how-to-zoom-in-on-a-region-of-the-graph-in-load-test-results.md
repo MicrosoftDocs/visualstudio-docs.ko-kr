@@ -1,7 +1,7 @@
 ---
 title: 부하 테스트 결과 그래프 확대
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.monitor.graphzoom
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 836e4f30e2c84bf0093366f4cc38a2cb7f58b545
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594372"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287027"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>방법: 부하 테스트 결과에서 그래프의 지역으로 확대
 

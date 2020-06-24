@@ -2,22 +2,22 @@
 title: 프로젝트 및 NuGet 패키지에 대한 컴파일러 경고 표시 안 함
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114502"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283959"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 
-하나 이상 종류의 컴파일러 경고를 필터링하여 빌드 로그를 정리할 수 있습니다. 예를 들어 빌드 로그 세부 정보 표시를 **일반**, **자세히** 또는 **진단**으로 설정할 때 생성되는 출력 중 일부만 검토할 수 있습니다. 세부 정보 표시에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
+하나 이상 종류의 컴파일러 경고를 필터링하여 빌드 로그를 정리할 수 있습니다. 예를 들어 빌드 로그 세부 정보 표시를 **일반**, **자세히** 또는 **진단**으로 설정할 때 생성되는 출력 중 일부만 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# 또는 F\#에 대한 특정 경고 표시 안 함
 
@@ -63,7 +63,7 @@ ms.locfileid: "76114502"
 
 1. 메뉴 모음에서 **프로젝트** > **프로젝트 언로드**를 선택합니다.
 
-1. **솔루션 탐색기**에서 프로젝트의 오른쪽 클릭 메뉴 또는 바로 가기 메뉴를 열고 **편집 \< ProjectName>.vbproj**를 선택합니다.
+1. **솔루션 탐색기**에서 프로젝트의 오른쪽 클릭 메뉴 또는 바로 가기 메뉴를 열고 **편집 \<ProjectName>.vbproj**를 선택합니다.
 
     XML 프로젝트 파일이 코드 편집기에서 열립니다.
 
@@ -87,7 +87,7 @@ ms.locfileid: "76114502"
     ```
 
    > [!NOTE]
-   > .NET Core 프로젝트는 기본적으로 빌드 구성 속성 그룹을 포함하지 않습니다. .NET Core 프로젝트에서 경고를 표시하지 않으려면 빌드 구성 섹션을 파일에 수동으로 추가합니다. 다음은 그 예입니다.
+   > .NET Core 프로젝트는 기본적으로 빌드 구성 속성 그룹을 포함하지 않습니다. .NET Core 프로젝트에서 경고를 표시하지 않으려면 빌드 구성 섹션을 파일에 수동으로 추가합니다. 예를 들어:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -130,7 +130,7 @@ ms.locfileid: "76114502"
 
    **솔루션 탐색기** 및 **오류 목록**에서 경고가 사라집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)
 - [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)

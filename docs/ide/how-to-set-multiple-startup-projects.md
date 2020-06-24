@@ -1,7 +1,7 @@
 ---
 title: '방법: 여러 개의 시작 프로젝트 설정'
 ms.date: 06/21/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a1eec02adf0a643d7ac7e0da8a75da5328c601b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 369b0f0dd41f028e49378d73ebb65c59931bbd60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115145"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284089"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>방법: 여러 개의 시작 프로젝트 설정
 

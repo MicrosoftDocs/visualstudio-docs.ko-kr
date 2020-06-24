@@ -2,18 +2,18 @@
 title: Google Test for C++를 사용하는 방법
 description: Google Test를 사용하여 Visual Studio에서 C++ 단위 테스트를 만듭니다.
 ms.date: 05/06/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279301"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287248"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio에서 Google Test for C++를 사용하는 방법
 

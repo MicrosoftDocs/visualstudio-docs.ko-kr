@@ -1,7 +1,7 @@
 ---
 title: 테스트 실패에 대한 부하 테스트 로그 저장
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
@@ -9,12 +9,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b47010a68520379afd8e0d969fa99169cb1ff0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaef2888cecc7622a3dc589a6bab816b0c134668
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588956"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287508"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 테스트 실패를 테스트 로그에 저장할지 여부 지정
 

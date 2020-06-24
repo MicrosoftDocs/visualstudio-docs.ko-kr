@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183745"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286310"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>연습: C\#에서 시각화 도우미 작성
 
@@ -235,6 +235,8 @@ ms.locfileid: "84183745"
 
    시각화 도우미를 테스트 환경에서 호출하는 대신 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 사용하려면 이를 설치해야 합니다. 자세한 내용은 [방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)를 참조하세요.
 
+::: moniker range="vs-2017"
+
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>시각화 도우미 항목 템플릿을 사용하여 시각화 도우미 만들기
 
 지금까지 이 연습에서는 시각화 도우미를 수동으로 만드는 방법을 알아보았습니다. 이는 학습 연습이었습니다. 이제 간단한 시각화 도우미가 어떻게 작동하는지 알고 있으므로 시각화 도우미 항목 템플릿을 사용하면 더 쉽게 만들 수 있습니다.
@@ -268,6 +270,7 @@ ms.locfileid: "84183745"
 5. **추가**를 클릭합니다.
 
    이제 모든 작업을 마쳤습니다. SecondVisualizer.cs 파일을 확인하고 템플릿이 추가한 코드를 확인합니다. 계속해서 코드를 실험해 보세요. 이제 기본 사항을 배웠으므로 더 복잡하고 유용한 시각화 도우미를 직접 만들 수 있습니다.
+::: moniker-end
 
 ## <a name="see-also"></a>참조
 

@@ -1,18 +1,18 @@
 ---
 title: C++ DLL의 단위 테스트 작성
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279277"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287040"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio에서 C++ DLL에 대한 단위 테스트 작성
 
@@ -38,7 +38,7 @@ ms.locfileid: "77279277"
 
 ## <a name="create-the-tests"></a>테스트 만들기
 
-### <a name="staticLink"></a>DLL을 정적 라이브러리로 변경하려면
+### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a>DLL을 정적 라이브러리로 변경하려면
 
 - 테스트가 DLL 프로젝트에서 내보내지 않은 멤버를 사용해야 하며 테스트 중인 프로젝트가 동적 라이브러리로 빌드되는 경우에는 정적 라이브러리로 변환하는 것을 고려해 보세요.
 
@@ -50,7 +50,7 @@ ms.locfileid: "77279277"
 
   [개체 또는 라이브러리 파일에 테스트를 연결하려면](#objectRef) 절차를 계속 진행합니다.
 
-### <a name="projectRef"></a> 테스트 프로젝트에서 내보낸 DLL 함수를 참조하려면
+### <a name="to-reference-exported-dll-functions-from-the-test-project"></a><a name="projectRef"></a> 테스트 프로젝트에서 내보낸 DLL 함수를 참조하려면
 
 - DLL 프로젝트에서 테스트할 함수를 내보내는 경우 테스트 프로젝트에서 코드 프로젝트에 대한 참조를 추가할 수 있습니다.
 
@@ -82,7 +82,7 @@ ms.locfileid: "77279277"
 
   [단위 테스트 작성](#addTests)으로 이동합니다.
 
-### <a name="objectRef"></a> 개체 또는 라이브러리 파일에 테스트를 연결하려면
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> 개체 또는 라이브러리 파일에 테스트를 연결하려면
 
 - DLL이 테스트할 함수를 내보내지 않는 경우 *.obj* 또는 *.lib* 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다.
 
@@ -116,7 +116,7 @@ ms.locfileid: "77279277"
 
   [단위 테스트 작성](#addTests)으로 이동합니다.
 
-### <a name="sameProject"></a> 동일 프로젝트에 단위 테스트를 추가하려면
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> 동일 프로젝트에 단위 테스트를 추가하려면
 
 1. 유닛 테스트에 필요한 헤더 및 라이브러리 파일을 포함하도록 제품 코드 프로젝트 속성을 수정합니다.
 
@@ -137,7 +137,7 @@ ms.locfileid: "77279277"
 
    [단위 테스트 작성](#addTests)으로 이동합니다.
 
-## <a name="addTests"></a>단위 테스트 작성
+## <a name="write-the-unit-tests"></a><a name="addTests"></a>단위 테스트 작성
 
 1. 각 단위 테스트 코드 파일에서 테스트 중인 프로젝트의 헤더에 대해 `#include` 문을 추가합니다.
 

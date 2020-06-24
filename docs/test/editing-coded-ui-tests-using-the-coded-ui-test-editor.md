@@ -1,7 +1,7 @@
 ---
 title: 코딩된 UI 테스트 편집
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81445040"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288730"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집
 

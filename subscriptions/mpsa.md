@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
-ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232197"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289354"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
 MPSA 프로그램을 통해 Visual Studio 구독을 구매한 경우 Visual Studio 구독 관리자가 되어 구독을 다른 사용자에게 할당하기 전에 기억해야 할 몇 가지가 있습니다. 이미 관리자로 설정되어 있으면 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com/)로 직접 이동할 수 있습니다.
@@ -45,7 +45,7 @@ MPSA 프로그램을 통해 Visual Studio 구독을 구매한 경우 Visual Stud
 5. **도메인 연결**을 클릭합니다.
 
 연결 시 필요한 조건을 충족한 모든 사용자는 일반적으로 몇 분 이내에 Visual Studio 구독 관리자로서 프로비저닝됩니다. 그러나 때로는 최대 24시간이 걸릴 수도 있습니다. 테넌트가 프로비저닝되면 Visual Studio 구독 관리 포털에 액세스할 수 있게 됩니다. 24시간 보다 오래 걸릴 경우 다음 단계에 따라 MPSA 고객 지원 팀에 문의하세요.
-1. https://www.microsoft.com/licensing/mpsa/default 에 연결합니다.
+1. <https://www.microsoft.com/licensing/mpsa/default> 에 연결합니다.
 2. 페이지 맨 위에 있는 **기타** 메뉴를 클릭합니다. 
 3. **지원**을 선택합니다.
 4. **라이선스 지원**을 선택합니다.

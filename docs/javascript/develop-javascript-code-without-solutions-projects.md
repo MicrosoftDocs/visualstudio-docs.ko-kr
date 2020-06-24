@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Visual Studio는 프로젝트 파일이나 솔루션 파일에 대한 종속성 없이 코드 작성을 지원
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 187ca5ea0d0232e0ca8b99165e77ee265b81e801
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549939"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285090"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>솔루션이나 프로젝트 없이 Visual Studio에서 JavaScript 및 TypeScript 코드 개발
 

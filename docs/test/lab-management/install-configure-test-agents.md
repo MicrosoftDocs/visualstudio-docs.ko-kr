@@ -1,7 +1,7 @@
 ---
 title: 테스트 에이전트 및 테스트 컨트롤러 설치
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - configure test agents, test lab
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 271e9253daf4ab23a5fb06a189ac3042bc925b2a
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880275"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286898"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 

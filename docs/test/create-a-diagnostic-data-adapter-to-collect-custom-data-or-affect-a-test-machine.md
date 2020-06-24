@@ -1,7 +1,7 @@
 ---
 title: 테스트용 진단 데이터 어댑터 만들기
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Diagnostic Data Adapter [Visual Studio ALM]
 - Diagnostic Data Adapter
@@ -9,12 +9,12 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2eadce12890e483f1b1c7aafccb61d9a6ee28e3a
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 2a9b6880b2f71079b6b70eeb6c2e9f7b4e81fc19
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880301"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288743"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 머신에 영향 주기
 
