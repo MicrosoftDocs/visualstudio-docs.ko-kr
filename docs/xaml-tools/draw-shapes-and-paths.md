@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921156"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350825"
 ---
 # <a name="draw-shapes-and-paths"></a>도형 및 패스 그리기
 
@@ -86,7 +86,7 @@ XAML 디자이너에서 *도형은* 정확히 필요한 것입니다. (예: 사�
 
 ## <a name="convert-a-shape-to-a-path"></a>도형을 패스로 변환
 
-패스를 수정하는 방법과 같은 방법으로 도형을 수정하려면 도형을 패스로 변환합니다. 셰이프를 선택한 다음 **서식** > **경로** > **패스로 변환**를 선택 합니다.
+패스를 수정하는 방법과 같은 방법으로 도형을 수정하려면 도형을 패스로 변환합니다. 셰이프를 선택한 다음 **서식**  >  **경로**  >  **패스로 변환**를 선택 합니다.
 
 **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 사용: 도형을 경로로 변환](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
@@ -99,11 +99,14 @@ XAML 디자이너에서 *도형은* 정확히 필요한 것입니다. (예: 사�
 
 ![패스 결합](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|||||
-|-|-|-|-|
-|![결합하기 전의 두 도형](../designers/media/b1_1.png)|결합하기 전의 두 도형|![Intersect](../designers/media/b1_4.png)|Intersect|
-|![통합](../designers/media/b1_2.png)|통합|![겹침 제외](../designers/media/b1_5.png)|겹침 제외|
-|![나누기](../designers/media/b1_3.png)|나누기|![빼기](../designers/media/b1_6.png)|빼기|
+|Number|작업|
+|-|-|
+|![결합하기 전의 두 도형](../designers/media/b1_1.png)|결합하기 전의 두 도형|
+|![통합](../designers/media/b1_2.png)|통합|
+|![나누기](../designers/media/b1_3.png)|나누기|
+|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![겹침 제외](../designers/media/b1_5.png)|겹침 제외|
+|![빼기](../designers/media/b1_6.png)|빼기|
 
 **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 사용: 경로 결합](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
