@@ -1,7 +1,7 @@
 ---
 title: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506498"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371900"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 
@@ -25,11 +25,11 @@ ms.locfileid: "77506498"
 > [!NOTE]
 > 이 기능은 Team Foundation Server를 사용 하는 경우에만 사용할 수 있습니다.
 
-코드 분석 체크 인 정책은 프로젝트 설정에서 설정 되며 각 코드 프로젝트에 적용 됩니다. 코드 분석 실행은 코드 프로젝트에 대 한 프로젝트 (. 하지만에서는 .xxproj) 파일의 코드 프로젝트에 대해 구성 됩니다. 코드 분석 실행은 로컬 컴퓨터에서 수행 됩니다. 코드 분석 체크 인 정책을 사용 하도록 설정 하는 경우 체크 인 되는 코드 프로젝트의 파일은 마지막 편집 및 코드 분석 실행 후에 컴파일해야 합니다. 최소한 프로젝트 설정의 규칙은 변경 된 컴퓨터에서 수행 해야 합니다. 을 (를) 만들었습니다.
+코드 분석 체크 인 정책은 프로젝트 설정에서 설정 되며 각 코드 프로젝트에 적용 됩니다. 코드 분석 실행은 코드 프로젝트에 대 한 프로젝트 (. 하지만에서는 .xxproj) 파일의 코드 프로젝트에 대해 구성 됩니다. 코드 분석 실행은 로컬 컴퓨터에서 수행 됩니다. 코드 분석 체크 인 정책을 사용 하도록 설정 하는 경우 체크 인 되는 코드 프로젝트의 파일은 마지막 편집 및 코드 분석 실행 후에 컴파일해야 합니다. 최소한 프로젝트 설정의 규칙은 변경 내용이 적용 된 컴퓨터에서 수행 되어야 합니다.
 
 - 관리 코드의 경우 코드 분석 규칙의 하위 집합을 포함 하는 *규칙 집합* 을 지정 하 여 체크 인 정책을 설정 합니다.
 
-- C/C++ 코드의 경우, Visual Studio 2017 버전 15.6 및 이전 버전에서 체크 인 정책에는 모든 코드 분석 규칙이 실행 되어야 합니다. 사전 프로세서 지시문을 추가 하 여 Azure DevOps 프로젝트에서 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정할 수 있습니다. 15.7 이상에서는 **/analyze: 규칙 집합** 을 사용 하 여 실행할 규칙을 지정할 수 있습니다. 자세한 내용은 [규칙 집합을 사용 하 여 실행할 C++ 규칙 지정](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)을 참조 하세요.
+- C/c + + 코드의 경우 Visual Studio 2017 버전 15.6 이전 버전에서는 체크 인 정책에 모든 코드 분석 규칙이 실행 되어야 합니다. 사전 프로세서 지시문을 추가 하 여 Azure DevOps 프로젝트에서 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정할 수 있습니다. 15.7 이상에서는 **/analyze: 규칙 집합** 을 사용 하 여 실행할 규칙을 지정할 수 있습니다. 자세한 내용은 [규칙 집합을 사용 하 여 실행할 c + + 규칙 지정](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)을 참조 하세요.
 
 관리 코드에 대 한 체크 인 정책을 지정 하 고 나면 팀 멤버가 코드 프로젝트의 코드 분석 설정을 Azure DevOps 프로젝트 정책 설정에 동기화 할 수 있습니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "77506498"
 |옵션|Description|
 |------------|-----------------|
 |**현재 솔루션에 속하는 파일만 포함 하도록 체크 인을 적용 합니다.**|코드 분석은 솔루션 및 프로젝트 구성 파일에 지정 된 파일에 대해서만 실행할 수 있습니다. 이 정책은 솔루션의 일부인 모든 코드가 분석 됨을 보장 합니다.|
-|**C/C++ 코드 분석 (/analyze) 적용**|코드 분석을 체크 인하기 C++ 전에 실행 하려면 모든 C 또는 프로젝트를/analyze 컴파일러 옵션으로 빌드해야 합니다.|
+|**C/c + + 코드 분석 (/analyze) 적용**|코드 분석을 체크 인하기 전에 실행 하려면 모든 C 또는 c + + 프로젝트를/analyze 컴파일러 옵션으로 빌드해야 합니다.|
 |**관리 코드에 대 한 코드 분석 적용**|모든 관리 되는 프로젝트를 체크 인하기 전에 코드 분석을 실행 하 고 빌드해야 합니다.|
 
 ## <a name="to-specify-a-managed-rule-set"></a>관리 되는 규칙 집합을 지정 하려면
@@ -61,12 +61,12 @@ ms.locfileid: "77506498"
 
 - Microsoft 표준 규칙 집합을 선택 합니다.
 
-- **소스 제어에서 규칙 집합 선택\<클릭 하 여 사용자 지정 규칙 집합을 선택 합니다. >** . 그런 다음 소스 제어 브라우저에서 규칙 집합의 버전 제어 경로를 입력 합니다. 버전 제어 경로의 구문은 다음과 같습니다.
+- 을 클릭 하 여 사용자 지정 규칙 집합을 선택 **\<Select Rule Set from Source Control...>** 합니다. 그런 다음 소스 제어 브라우저에서 규칙 집합의 버전 제어 경로를 입력 합니다. 버전 제어 경로의 구문은 다음과 같습니다.
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
 사용자 지정 체크 인 정책 규칙 집합을 만들고 구현 하는 방법에 대 한 자세한 내용은 [관리 코드에 대 한 사용자 지정 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

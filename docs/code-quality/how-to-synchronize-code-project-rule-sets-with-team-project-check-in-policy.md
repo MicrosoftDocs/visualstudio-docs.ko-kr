@@ -1,7 +1,7 @@
 ---
 title: 체크 인 정책을 사용 하 여 프로젝트 규칙 집합 동기화
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587409"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371783"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>방법: Azure DevOps 프로젝트 체크 인 정책을 사용 하 여 코드 프로젝트 규칙 집합 동기화
 
@@ -31,7 +31,7 @@ ms.locfileid: "75587409"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Microsoft 표준 규칙 집합을 지정 하려면
 
-1. **솔루션 탐색기**코드 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성**합니다.
+1. **솔루션 탐색기**에서 코드 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
 2. **코드 분석**을 클릭합니다.
 
@@ -51,19 +51,19 @@ ms.locfileid: "75587409"
 
 1. 필요한 경우 체크 인 정책을 지정 하는 규칙 집합 파일에 대해 가져오기 작업을 수행 합니다.
 
-2. **솔루션 탐색기**코드 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성**합니다.
+2. **솔루션 탐색기**에서 코드 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
 3. **코드 분석**을 클릭합니다.
 
 ::: moniker range="vs-2017"
 
-4. **이 규칙 집합 실행** 목록에서 **\<찾아보기 >** 를 클릭 합니다.
+4. **이 규칙 집합 실행** 목록에서을 클릭 **\<Browse>** 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. **활성 규칙** 목록에서 **\<찾아보기 >** 를 클릭 합니다.
+4. **활성 규칙** 목록에서를 클릭 **\<Browse>** 합니다.
 
 ::: moniker-end
 

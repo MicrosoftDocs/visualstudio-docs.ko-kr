@@ -1,7 +1,7 @@
 ---
-title: '방법: 관리 코드에 대해 코드 분석을 수동으로 실행합니다.'
+title: 관리 코드에 대 한 코드 분석을 수동으로 실행 하는 방법
 ms.date: 11/04/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
 - run code analysis
@@ -11,23 +11,23 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5fdeb56a0c0f4c5904a00ec53d64dae87aa4e9a5
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 584ddc9953b6f1522d12722fdd9a24d71e4e1538
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431386"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371835"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>방법: 관리 코드에 대해 코드 분석을 수동으로 실행합니다(Visual Studio 2019 버전 16.5 이상 필요)
-기본적으로 .NET 컴파일러 플랫폼("Roslyn") 코드 분석기는 빌드 하는 동안뿐만 아니라 라이브 분석을 수행하여 입력할 때 C# 또는 Visual Basic 코드를 분석합니다. 따라서 일반적으로 코드 분석을 수동으로 트리거할 필요가 없습니다. 그러나 코드 분석을 수동으로 트리거할 수 있는 몇 가지 시나리오가 있습니다.
+# <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>방법: 관리 코드에 대해 수동으로 코드 분석 실행 (Visual Studio 2019 버전 16.5 이상이 필요 함)
+기본적으로 .NET Compiler Platform ("Roslyn") 코드 분석기는 실시간 분석을 수행 하 고 빌드 중에도 입력할 때 c # 또는 Visual Basic 코드를 분석 합니다. 따라서 일반적으로 코드 분석을 수동으로 트리거할 필요가 없습니다. 그러나 코드 분석을 수동으로 트리거할 수 있는 몇 가지 시나리오가 있습니다.
 
-- 기본적으로 라이브 코드 분석은 Visual Studio의 열린 파일에 대해서만 분석기를 실행합니다. 그러나 특정 프로젝트 또는 솔루션의 모든 파일에 대한 코드 분석 경고를 보는 것이 좋습니다. 그렇다면 프로젝트 또는 솔루션에서 코드 분석을 한 번 트리거할 수 있습니다. 또는 연속 라이브 코드 분석을 사용하여 전체 솔루션에서 실행할 수 있습니다. 자세한 내용은 [관리 코드에 대한 라이브 코드 분석 범위를 구성하는 방법을](./configure-live-code-analysis-scope-managed-code.md)참조하십시오.
-- 지속적인 실시간 분석 또는 빌드 시간 분석보다 주문형 코드 분석 실행 워크플로를 선호할 수 있습니다. 이 경우 라이브 분석 및/또는 빌드 중에 분석기 실행을 비활성화할 수 있습니다. 분석 비활성화에 대한 자세한 내용은 [소스 코드 분석을 사용하지 않도록 설정하는 방법을](disable-code-analysis.md)참조하십시오. 그런 다음 프로젝트 또는 솔루션에서 코드 분석을 한 번 수동으로 트리거할 수 있습니다. 
+- 기본적으로 라이브 코드 분석은 Visual Studio에서 열려 있는 파일에 대해서만 분석기를 실행 합니다. 그러나 특정 프로젝트 또는 솔루션의 모든 파일에 대 한 코드 분석 경고를 보는 데 관심이 있을 수 있습니다. 이 경우 프로젝트 또는 솔루션에서 코드 분석을 한 번 트리거할 수 있습니다. 또는 연속 라이브 코드 분석을 사용 하 여 전체 솔루션에서 실행할 수 있습니다. 자세한 내용은 [방법: 관리 코드에 대 한 라이브 코드 분석 범위 구성](./configure-live-code-analysis-scope-managed-code.md)을 참조 하세요.
+- 연속 라이브 분석 또는 빌드 시간 분석에 대해 주문형 코드 분석 실행 워크플로를 선호 하는 경우가 있습니다. 이 경우 라이브 분석 및/또는 빌드 중에 분석기 실행을 사용 하지 않도록 설정할 수 있습니다. 분석을 사용 하지 않도록 설정 하는 방법에 대 한 자세한 내용은 [소스 코드 분석을 사용 하지 않도록 설정](disable-code-analysis.md) 그런 다음 프로젝트 또는 솔루션에 대해 코드 분석을 수동으로 트리거 하려고 합니다. 
 
 ### <a name="run-code-analysis-manually"></a>수동으로 코드 분석 실행
 
-1. **솔루션 탐색기에서**프로젝트를 클릭합니다.
+1. **솔루션 탐색기**에서 프로젝트를 클릭 합니다.
 
-2. **분석** 메뉴에서 *프로젝트 이름에*대한 코드 **분석 실행을** 클릭합니다.
+2. **분석** 메뉴에서 *프로젝트 이름* **에 대해 코드 분석 실행** 을 클릭 합니다.
 
-코드 분석은 백그라운드에서 실행이 시작됩니다. 왼쪽 아래 모서리를 향한 Visual Studio 상태 표시줄에 **프로젝트> 대한 \<코드 분석 실행** 메시지가 표시됩니다. 코드 분석이 완료되면 상태 메시지가 **프로젝트>대해 \<완료된 코드 분석으로 **변경됩니다. 오류 목록은 모든 코드 분석 진단 과 함께 곧 새로 고쳐집니다.
+코드 분석은 백그라운드에서 실행을 시작 합니다. Visual Studio 상태 표시줄에서 왼쪽 아래 모퉁이에 **대 한 코드 분석을 실행 \<project> ** 하는 중 ... 메시지가 표시 됩니다. 코드 분석이 완료 되 면 상태 메시지가 **에 대해 \<project> 완료 된 코드 분석 **으로 변경 됩니다. 모든 코드 분석 진단 기능을 사용 하 여 오류 목록이 곧 새로 고쳐집니다.
