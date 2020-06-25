@@ -11,6 +11,8 @@
         - name: 개요
           displayName: msbuild concepts
           href: msbuild-concepts.md
+        - name: MSBuild에서 프로젝트를 빌드하는 방법
+          href: build-process-overview.md
         - name: 속성
           items:
             - name: MSBuild 속성

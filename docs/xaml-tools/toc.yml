@@ -2,6 +2,8 @@
   href: index.yml
 - name: XAML 개요
   href: xaml-overview.md
+- name: XAML 코드 편집기
+  href: xaml-code-editor.md
 - name: XAML 디자이너
   items:
     - name: Visual Studio 및 Blend에서 XAML 디자인

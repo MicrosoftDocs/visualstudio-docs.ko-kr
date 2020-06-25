@@ -154,9 +154,9 @@
       href: ide/quickstart-visual-basic-console.md
 - name: 자습서
   items:
-    - name: 'C#'
+    - name: C#
       href: get-started/csharp/
-    - name: 'F#'
+    - name: F#
       href: /dotnet/fsharp/
     - name: Visual Basic
       href: get-started/visual-basic/
@@ -202,7 +202,7 @@
           items:
             - name: 애플리케이션 설정 관리(.NET)
               href: ide/managing-application-settings-dotnet.md
-            - name: '앱 구성 파일을 C# 프로젝트에 추가'
+            - name: 앱 구성 파일을 C# 프로젝트에 추가
               href: ide/how-to-add-app-config-file.md
         - name: 매니페스트 서명
           items:
@@ -291,7 +291,7 @@
               items:
                 - name: 코드 조각 사용
                   href: ide/code-snippets.md
-                - name: 'C# 코드 조각 참조'
+                - name: C# 코드 조각 참조
                   href: ide/visual-csharp-code-snippets.md
                 - name: C++ 코드 조각 참조
                   href: ide/visual-cpp-code-snippets.md
@@ -325,10 +325,16 @@
                   href: ide/reference/generate-method.md
                 - name: 필드/속성/로컬 생성
                   href: ide/reference/generate-field-property-local.md
+                - name: IComparable에 대한 비교 연산자 생성
+                  href: ide/reference/generate-comparison-operators.md
                 - name: 생성자 생성
                   href: ide/reference/generate-constructor.md
                 - name: 분해자 생성
                   href: ide/reference/generate-deconstructor.md
+                - name: 구조체에 대한 IEquatable 연산자 생성
+                  href: ide/reference/generate-equals-structs.md
+                - name: 파일 헤더 추가
+                  href: ide/reference/add-file-header.md
                 - name: 명시적 캐스트 추가
                   href: ide/reference/add-explicit-cast.md
                 - name: 메서드에 매개 변수 추가
@@ -368,6 +374,8 @@
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Get 메서드 및 속성 간 변환
                   href: ide/reference/convert-get-method-to-property.md
+                - name: 일반 문자열 리터럴과 축자 문자열 리터럴 간 변환
+                  href: ide/reference/convert-between-regular-string-verbatim-string.md
                 - name: 로컬 함수를 메서드로 변환
                   href: ide/reference/convert-local-function-method.md
                 - name: foreach 루프를 LINQ로 변환
@@ -378,6 +386,8 @@
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: switch 문을 switch 식으로 변환
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
+                - name: DateTime 및 TimeSpan 완성
+                  href: ide/reference/datetime-timespan-completion.md
                 - name: 필드 캡슐화
                   href: ide/reference/encapsulate-field.md
                 - name: 인터페이스 추출
@@ -412,6 +422,8 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: 이름 바꾸기
                   href: ide/reference/rename.md
+                - name: 조건식 간소화
+                  href: ide/reference/simplify-conditional-expression.md
                 - name: 문자열 보간 간소화
                   href: ide/reference/simplify-string-interpolation.md
                 - name: using 정렬
@@ -438,7 +450,7 @@
               href: ide/using-intellisense.md
             - name: Visual Basic IntelliSense
               href: ide/visual-basic-specific-intellisense.md
-            - name: 'C# IntelliSense'
+            - name: C# IntelliSense
               href: ide/visual-csharp-intellisense.md
             - name: JavaScript IntelliSense
               href: ide/javascript-intellisense.md
@@ -583,7 +595,7 @@
           href: ide/productivity-features.md
         - name: 생산성 바로 가기
           href: ide/productivity-shortcuts.md
-        - name: 'C# 개발자를 위한 팁'
+        - name: C# 개발자를 위한 팁
           displayName: ReSharper
           href: ide/csharp-developer-productivity.md
         - name: 바로 가기 키 사용자 지정
@@ -684,9 +696,9 @@
                       href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
                     - name: '9단계: 기타 기능 사용'
                       href: ide/step-9-try-other-features.md
-        - name: 'F#'
+        - name: F#
           items:
-            - name: 'F# 개발'
+            - name: F# 개발
               href: ide/fsharp-visual-studio.md
             - name: 이전 .NET 버전 대상
               href: ide/fsharp-target-older-dotnet-versions.md
@@ -851,7 +863,7 @@
       href: /azure/devops/pipelines/index?view=vsts
     - name: 빌드 이벤트 지정(Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
-    - name: '빌드 이벤트 지정(C#)'
+    - name: 빌드 이벤트 지정(C#)
       href: ide/how-to-specify-build-events-csharp.md
     - name: Visual Basic에서 경고 구성
       href: ide/configuring-warnings-in-visual-basic.md
@@ -1122,7 +1134,7 @@
                       href: ide/code-styles-and-code-cleanup.md
                     - name: IntelliSense
                       href: ide/visual-basic-specific-intellisense.md
-                - name: 'C#'
+                - name: C#
                   items:
                     - name: 고급
                       href: ide/reference/options-text-editor-csharp-advanced.md
@@ -1140,7 +1152,7 @@
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
                     - name: View
                       href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: 'F#'
+                - name: F#
                   items:
                     - name: 고급
                       href: ide/reference/options-text-editor-fsharp-advanced.md
@@ -1223,7 +1235,7 @@
               items:
                 - name: 빌드 페이지
                   href: ide/reference/build-page-project-designer-csharp.md
-                - name: '고급 빌드 설정 대화 상자(C#)'
+                - name: 고급 빌드 설정 대화 상자(C#)
                   href: ide/reference/advanced-build-settings-dialog-box-csharp.md
             - name: '프로젝트 디자이너, 코드 분석'
               href: ide/reference/code-analysis-project-designer.md

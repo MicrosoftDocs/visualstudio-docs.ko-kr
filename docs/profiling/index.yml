@@ -8,55 +8,65 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
-  ms.date: 10/30/2019
-  ms.openlocfilehash: 94bbe9a81a38b255eba6cc6b15812743328a0f27
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.date: 06/03/2020
+  ms.openlocfilehash: 4f522f6613424c3251344207381d2eaf31705c9c
+  ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "79549927"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289120"
 landingContent:
-- title: 프로파일링 정보
+- title: 시작
   linkLists:
-  - linkListType: overview
-    links:
-    - text: 프로파일링 도구 살펴보기
-      url: profiling-feature-tour.md
-  - linkListType: concept
-    links:
-    - text: 프로파일링 도구를 실행하는 방법
-      url: running-profiling-tools-with-or-without-the-debugger.md
-- title: 시작하기
-  linkLists:
-  - linkListType: quickstart
-    links:
-    - text: CPU 사용량 분석(C#, Visual Basic)
-      url: quickstart-cpu-usage-managed.md
-    - text: CPU 사용량 분석(C++)
-      url: quickstart-cpu-usage-native.md
-    - text: CPU 사용량 분석(ASP.NET)
-      url: quickstart-cpu-usage-aspnet.md
   - linkListType: tutorial
     links:
     - text: CPU 사용량 분석 시작
       url: beginners-guide-to-performance-profiling.md
     - text: 메모리 사용량 측정 시작
       url: memory-usage.md
-- title: 추가 성능 도구
-  linkLists:
   - linkListType: how-to-guide
     links:
     - text: PerfTips
       url: perftips.md
-    - text: 명령줄에서 CPU 사용량 측정
-      url: profile-apps-from-command-line.md
-    - text: .NET 개체에 대한 메모리 사용 측정
+- title: 기본 사항
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 프로파일링 도구 살펴보기
+      url: profiling-feature-tour.md
+    - text: 프로파일링 도구를 실행하는 방법
+      url: running-profiling-tools-with-or-without-the-debugger.md
+  - linkListType: concept
+    links:
+    - text: 성능 데이터 수집 방법 이해
+      url: understanding-performance-collection-methods-perf-profiler.md
+- title: 성능 도구
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: CPU 사용량
+      url: cpu-usage.md
+    - text: 데이터베이스
+      url: analyze-database.md
+    - text: 이벤트 뷰어
+      url: events-viewer.md
+    - text: 메모리 사용량
+      url: memory-usage-without-debugging2.md
+    - text: .NET 개체 할당 추적
       url: dotnet-alloc-tool.md
+    - text: GPU 사용량(Direct3D)
+      url: gpu-usage.md
+    - text: .NET Async
+      url: analyze-async.md
     - text: 리소스 사용 분석(XAML)
       url: application-timeline.md
-    - text: GPU 사용량 분석(Direct3D)
-      url: gpu-usage.md
-    - text: 네트워크 사용량 분석(UWP)
-      url: network-usage.md
-    - text: 에너지 사용량 분석(UWP)
-      url: analyze-energy-use-in-store-apps.md
+- title: 가이드
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 프로파일러 설정 최적화
+      url: optimize-profiler-settings.md
+    - text: 명령줄에서 성능 측정
+      url: profile-apps-from-command-line.md
+    - text: 동시에 여러 프로파일러 도구 사용
+      url: use-multiple-profiler-tools-simultaneously.md

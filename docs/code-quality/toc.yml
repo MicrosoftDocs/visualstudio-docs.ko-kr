@@ -551,6 +551,14 @@
                   href: ca1828.md
                 - name: 'CA1829: Enumerable.Count 메서드 대신 Length/Count 속성을 사용하세요.'
                   href: ca1829.md
+                - name: 'CA1831: 적절한 경우 문자열에 대해 범위 기반 인덱서 대신 AsSpan을 사용하세요.'
+                  href: ca1831.md
+                - name: 'CA1832: 배열의 ReadOnlySpan 또는 ReadOnlyMemory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.'
+                  href: ca1832.md
+                - name: 'CA1833: 배열의 Span 또는 Memory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.'
+                  href: ca1833.md
+                - name: 'CA1835: Stream ReadAsync/WriteAsync 메서드의 메모리 오버로드를 사용하세요.'
+                  href: ca1835.md
             - name: 이식성 경고
               items:
                 - name: 개요
@@ -585,6 +593,12 @@
                   href: ca2009.md
                 - name: 'CA2011: Setter 내에서 속성을 할당하지 마세요.'
                   href: ca2011.md
+                - name: 'CA2012: ValueTasks를 올바르게 사용하세요.'
+                  href: ca2012.md
+                - name: 'CA2013: 값 형식과 함께 ReferenceEquals를 사용하지 마세요.'
+                  href: ca2013.md
+                - name: 'CA2014: 루프에 stackalloc를 사용하지 마세요.'
+                  href: ca2014.md
                 - name: 'CA2015: MemoryManager에서 파생된 형식에 대해 종료자를 정의하지 마세요.<T>'
                   href: ca2015.md
             - name: 보안 경고
@@ -750,6 +764,8 @@
                   href: ca5358.md
                 - name: 'CA5359: 인증서 유효성 검사를 비활성화하지 마세요.'
                   href: ca5359.md
+                - name: 'CA5360: deserialization에서 위험한 메서드를 호출하지 마세요.'
+                  href: ca5360.md
                 - name: 'CA5361: 강력한 암호의 SChannel 사용을 비활성화하지 마세요.'
                   href: ca5361.md
                 - name: 'CA5362: 역직렬화된 개체 그래프의 잠재적 참조 주기'
@@ -778,6 +794,12 @@
                   href: ca5373.md
                 - name: 'CA5374: XslTransform을 사용하지 마세요.'
                   href: ca5374.md
+                - name: 'CA5375: 계정 공유 액세스 시그니처를 사용하지 마세요.'
+                  href: ca5375.md
+                - name: 'CA5376: SharedAccessProtocol HttpsOnly를 사용하세요.'
+                  href: ca5376.md
+                - name: 'CA5377: 컨테이너 수준 액세스 정책을 사용하세요.'
+                  href: ca5377.md
                 - name: 'CA5378: ServicePointManagerSecurityProtocols를 비활성화하지 마세요.'
                   href: ca5378.md
                 - name: 'CA5379: 취약한 키 파생 함수 알고리즘은 사용하지 마세요.'
@@ -804,8 +826,16 @@
                   href: ca5389.md
                 - name: 'CA5390: 암호화 키를 하드 코딩하지 마세요.'
                   href: ca5390.md
+                - name: 'CA5391: ASP.NET Core MVC 컨트롤러에서 위조 방지 토큰을 사용하세요.'
+                  href: ca5391.md
+                - name: 'CA5392: P/Invokes에 DefaultDllImportSearchPaths 특성을 사용하세요.'
+                  href: ca5392.md
+                - name: 'CA5393: 안전하지 않은 DllImportSearchPath 값을 사용하지 마세요.'
+                  href: ca5393.md
                 - name: 'CA5394: 안전하지 않은 임의성을 사용하지 마세요.'
                   href: ca5394.md
+                - name: 'CA5395: 작업 메서드의 HttpVerb 특성이 없습니다.'
+                  href: ca5395.md
                 - name: 'CA5396: HttpCookie에 대해 HttpOnly를 true로 설정하세요.'
                   href: ca5396.md
                 - name: 'CA5397: 사용되지 않는 SslProtocols 값을 사용하지 마세요.'
@@ -919,5 +949,7 @@
                   href: ca2245.md
                 - name: 'CA2246: 동일한 문에 기호 및 해당 멤버를 할당하지 마세요.'
                   href: ca2246.md
+                - name: 'CA2248: Enum.HasFlag에 올바른 enum 인수를 제공하세요.'
+                  href: ca2248.md
             - name: 자동 기능 일시 중단
               href: automatic-feature-suspension.md

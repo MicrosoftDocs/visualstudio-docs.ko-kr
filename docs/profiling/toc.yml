@@ -1,11 +1,13 @@
 - name: 프로파일링 설명서
   href: index.yml
 - name: 개요
-  href: profiling-overview.md
-- name: 빠른 시작
   items:
     - name: 프로파일링 소개
       href: profiling-feature-tour.md
+    - name: 디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: 빠른 시작
+  items:
     - name: CPU 사용량 분석(관리)
       href: quickstart-cpu-usage-managed.md
     - name: CPU 사용량 분석(네이티브)
@@ -20,12 +22,22 @@
       href: memory-usage.md
 - name: 개념
   items:
-    - name: 디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
-      href: running-profiling-tools-with-or-without-the-debugger.md
+    - name: 성능 데이터 수집 방법 이해
+      href: understanding-performance-collection-methods-perf-profiler.md
+    - name: 프로파일러 설정 최적화
+      href: optimize-profiler-settings.md
+    - name: 동시에 여러 프로파일러 도구 사용
+      href: use-multiple-profiler-tools-simultaneously.md
 - name: 방법 가이드
   items:
-    - name: PerfTips 사용
+    - name: PerfTips
       href: perftips.md
+    - name: .NET Async
+      href: analyze-async.md
+    - name: 데이터베이스
+      href: analyze-database.md
+    - name: 이벤트 뷰어
+      href: events-viewer.md
     - name: CPU 사용량
       href: cpu-usage.md
     - name: 메모리 사용량

@@ -74,6 +74,7 @@
 ### [슈퍼 관리자 및 관리자](admin-roles.md)
 ### [계약 기본 설정 지정](admin-prefs.md)
 ### [개요](using-admin-portal.md)
+### [월간 구독 추가](add-monthly-subs.md)
 ### 구독 할당
 #### [단일 사용자 추가](assign-license.md)
 #### [여러 사용자 추가](assign-license-bulk.md)
