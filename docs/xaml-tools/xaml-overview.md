@@ -1,16 +1,16 @@
 ---
 title: XAML 개요
-ms.date: 05/20/2020
-ms.topic: reference
+ms.date: 06/23/2020
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 97f3bc7777023903d5fc38ad1bda7cde45b683b6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e14e23f9820301374bd435484ba784edf50294bb
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183485"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331944"
 ---
 # <a name="overview-of-xaml"></a>XAML 개요
 
@@ -28,17 +28,23 @@ XAML(Extensible Application Markup Language)은 XML을 기반으로 하는 선�
 
 XAML은 [Windows WF(WorkFlow Foundation) 앱](/dotnet/framework/windows-workflow-foundation/serializing-workflows-and-activities-to-and-from-xaml)에서 워크플로를 정의하는 데에도 사용됩니다.
 
+## <a name="xaml-code-editor"></a>XAML 코드 편집기
+
+Visual Studio IDE의 [XAML 코드 편집기](xaml-code-editor.md) 에는 Windows 플랫폼 및 XAMARIN.IOS 용 WPF 및 UWP 앱을 만드는 데 필요한 모든 도구가 포함 되어 있습니다. 또한 Visual Studio의 IDE (통합 개발 환경)에는 다른 플랫폼용 응용 프로그램을 개발 하는 데 사용할 수 있는 많은 기능이 포함 되어 있지만 XAML에 고유한 기능도 있습니다.
+
 ## <a name="xaml-designer"></a>XAML 디자이너
 
-Visual Studio 및 Blend for Visual Studio는 WPF, UWP 및 Xamarin.Forms 앱의 UI(사용자 인터페이스)를 빌드하는 데 유용한 XAML 디자이너를 제공합니다. 도구 상자 또는 자산 창에서 컨트롤을 끌어 속성 창에서 속성을 설정할 수 있습니다. 이렇게 하면 Visual Studio 및 Blend for Visual Studio 해당 XAML 코드를 만듭니다. XAML 코드를 직접 편집하려는 경우에도 이 작업을 수행할 수 있습니다.
-
-이 설명서 집합의 문서에서는 Visual Studio 및 Blend for Visual Studio의 XAML 디자이너에 대해 설명합니다.
+Visual Studio 및 Blend for Visual Studio WPF, UWP 및 Xamarin. Forms 앱에 대 한 UI (사용자 인터페이스)를 빌드하는 데 도움이 되는 [XAML 디자이너](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) 제공 합니다. 도구 상자 또는 자산 창에서 컨트롤을 끌어 속성 창에서 속성을 설정할 수 있습니다. 이렇게 하면 Visual Studio 및 Blend for Visual Studio 해당 XAML 코드를 만듭니다. XAML 코드를 직접 편집하려는 경우에도 이 작업을 수행할 수 있습니다.
 
 ## <a name="whats-new"></a>새로운 기능
 
-최신 정보는 Visual studio에서 [xaml 개발자 도구의 새로운 기능 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/) 블로그 게시물, [visual studio 2019 버전 16.7 PREVIEW 1의 xaml 도구 향상 버전 Preview 1](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/) 블로그 게시물 및 YouTube의 [Visual STUDIO 비디오에 있는 새로운 xaml 기능](https://youtu.be/yI9OyA4ZM2E) 을 참조 하세요.
+최신 정보는 다음 리소스를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+- **[Visual Studio 2019 버전 16.7 Preview 1 블로그 게시물의 XAML 도구 개선 사항](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/)**
+- **[Visual Studio에서 XAML 개발자 도구의 새로운 기능 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)** 블로그 게시물
+- YouTube의 **[Visual Studio 비디오에 있는 새로운 XAML 기능](https://youtu.be/yI9OyA4ZM2E)**
+
+## <a name="see-also"></a>참조
 
 - [WPF 앱의 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [UWP 앱의 XAML](/windows/uwp/xaml-platform/xaml-overview)

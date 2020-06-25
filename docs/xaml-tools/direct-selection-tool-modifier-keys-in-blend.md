@@ -2,19 +2,19 @@
 title: 직접 선택 도구 보조 키
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ac2ee5c5e71dd08e7c9aee81e640cf6f856b6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "82921066"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332313"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio의 직접 선택 도구 보조 키
 
@@ -33,7 +33,7 @@ ms.locfileid: "82921066"
 |세그먼트를 가져와 곡선으로 구부려 포인터 위치 관통|마우스로 패스의 세그먼트 위를 가리킨 다음, **Alt**를 누른 채 세그먼트를 끕니다.|![세그먼트를 가져와 곡선으로 구부려 포인터 위치 관통](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> 세그먼트 변환 포인터|
 |탄젠트의 한쪽 끝을 다른 쪽과 별개로 조정|점 또는 세그먼트를 직접 선택한 다음, **Alt**를 누른 채 탄젠트 끝점을 끕니다.|![탄젠트의 한쪽 끝을 다른 쪽과 별개로 조정](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> 탄젠트 변환 포인터|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [아트보드 보조 키](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [펜 도구 보조 키](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

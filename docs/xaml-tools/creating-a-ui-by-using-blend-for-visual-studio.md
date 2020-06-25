@@ -2,7 +2,7 @@
 title: Blend for Visual Studio 기능 둘러보기
 titleSuffix: ''
 ms.date: 07/31/2019
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "82921306"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332091"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 개요
 
@@ -79,7 +79,7 @@ Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이�
 
 사용 가능한 기능에 대한 자세한 내용을 보려면 창의 각 단추를 마우스로 가리킵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [개체에 애니메이션 적용](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [도형 및 패스 그리기](../xaml-tools/draw-shapes-and-paths.md)

@@ -1,21 +1,22 @@
 ---
 title: XAML 코드 편집기
+description: Visual Studio에서 XAML 코드 편집기 둘러보기
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289829"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329182"
 ---
 # <a name="xaml-code-editor"></a>XAML 코드 편집기
 
-[Visual STUDIO IDE](../get-started/visual-studio-ide.md) 의 XAML 코드 편집기에는 Windows 플랫폼 및 [xamarin.ios](/xamarin/xamarin-forms/user-interface/text/editor/)용 WPF 및 UWP 앱을 만드는 데 필요한 모든 도구가 포함 되어 있습니다. 이 문서에서는 XAML 기반 앱을 개발할 때 코드 편집기에서 수행 하는 역할과 Visual Studio 2019의 XAML 코드 편집기에 고유한 기능에 대해 간략하게 설명 합니다.
+[Visual STUDIO IDE](../get-started/visual-studio-ide.md) 의 XAML 코드 편집기에는 Windows 플랫폼 및 [xamarin.ios](/xamarin/xamarin-forms/user-interface/text/editor/)용 WPF 및 UWP 앱을 만드는 데 필요한 모든 도구가 포함 되어 있습니다. 이 문서에서는 XAML 기반 앱을 개발할 때 코드 편집기에서 수행 하는 역할 및 Visual Studio 2019의 XAML 코드 편집기에 고유한 기능에 대해 간략하게 설명 합니다.
 
 먼저 오픈 WPF 프로젝트를 사용 하 여 IDE (통합 개발 환경)를 살펴보겠습니다. 다음 이미지는 XAML 코드 편집기와 함께 사용 하는 몇 가지 주요 IDE 도구를 보여 줍니다.
 
@@ -182,7 +183,7 @@ XAML 코드 편집기에서 코드를 편집 하는 경우 마우스 오른쪽 �
 
 코드 조각은 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴 명령을 사용 하 여 코드 파일에 삽입할 수 있는 작은 재사용 가능한 코드 블록으로, 코드 **조각 삽입** 또는 바로 가기 키 조합 (**ctrl** + **K**, **ctrl** + **X**)을 사용 합니다. [IntelliSense](../ide/using-intellisense.md) 는 기본 제공 코드 조각과 수동으로 추가 하는 모든 사용자 지정 코드 조각에 대해 작동 하는 XAML 조각 표시를 지원 하도록 향상 되었습니다. 기본 XAML 코드 조각 `#region` 에는,, `Column definition` `Row definition` , 및가 `Setter` `Tag` 있습니다.
 
-![IntelliSense에 표시 되는 #region 옵션을 포함 하는 XAML 코드 편집기](media/xaml-code-snippets.png "IntelliSense에 표시 되는 #region 옵션을 포함 하는 XAML 코드 편집기의 스크린샷")
+![IntelliSense에 표시 되는 XAML 코드 조각 옵션이 있는 XAML 코드 편집기](media/xaml-code-snippets.png "IntelliSense에 표시 되는 XAML 코드 조각 옵션이 있는 XAML 코드 편집기의 스크린샷")
 
 자세한 내용은 [코드 조각](../ide/code-snippets.md) 및 [c # 코드 조각](../ide/visual-csharp-code-snippets.md) 페이지를 참조 하세요.
 

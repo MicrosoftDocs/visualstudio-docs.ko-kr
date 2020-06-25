@@ -1,22 +1,21 @@
 ---
 title: 디버깅 하는 동안 XAML 속성 검사 | Microsoft Docs
 ms.date: 11/12/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 36246f959aa49e49aa84defc203075f163c67118
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "82921264"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331081"
 ---
-# <a name="inspect-xaml-properties-while-debugging"></a>디버그하는 동안 XAML 속성 검사 
+# <a name="inspect-xaml-properties-while-debugging"></a>디버그하는 동안 XAML 속성 검사
 
 **라이브 시각적 트리** 및 **라이브 속성 탐색기**를 사용하여 실행 중인 XAML 코드를 실시간으로 볼 수 있습니다. 이러한 도구는 실행 중인 XAML 애플리케이션의 UI 요소에 대한 트리 뷰를 제공하고 선택한 UI 요소의 런타임 속성을 보여 줍니다.
 
@@ -31,9 +30,9 @@ ms.locfileid: "82921264"
 
 목록 보기 및 단추가 있는 매우 간단한 WPF 애플리케이션을 시작하겠습니다. 단추를 클릭할 때마다 다른 항목이 목록에 추가됩니다. 짝수 번호 항목은 회색으로 표시되고 홀수 번호 항목은 노란색으로 표시됩니다.
 
-### <a name="create-the-project"></a>프로젝트를 만듭니다.
+### <a name="create-the-project"></a>프로젝트 만들기
 
-1. 새 c # wpf 응용 프로그램을 만들고 (**파일** > **새로** > **만들기)**"c # wpf"를 입력 한 다음 **wpf 앱 (.net Core)** 또는 **wpf 앱 (.NET Framework)** 을 선택 합니다. **TestXAML**로 이름을 지정합니다.
+1. 새 c # wpf 응용 프로그램을 만들고 (**파일**  >  **새로**만들기)  >  **Project**"c # wpf"를 입력 한 다음 **wpf 앱 (.net Core)** 또는 **wpf 앱 (.NET Framework)** 을 선택 합니다. **TestXAML**로 이름을 지정합니다.
 
 1. 다음과 같이 MainWindow.xaml을 변경합니다.
 
@@ -78,10 +77,10 @@ ms.locfileid: "82921264"
 
    창이 표시 되 면 실행 중인 응용 프로그램 내에 앱 내 도구 모음이 표시 됩니다.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    ![앱의 주 창](../debugger/media/vs-2019/livevisualtree-app.png "LiveVIsualTree-앱")
    ::: moniker-end
-   ::: moniker range="vs-2017" 
+   ::: moniker range="vs-2017"
    ![앱의 주 창](../debugger/media/livevisualtree-app.png "LiveVIsualTree-앱")
    ::: moniker-end
 
@@ -93,16 +92,16 @@ ms.locfileid: "82921264"
 
 1. **라이브 시각적 트리** 창에서 **ContentPresenter** 노드를 확장합니다. 단추와 목록 상자에 대한 노드가 있어야 합니다. 목록 상자와 **ScrollContentPresenter** 및 **ItemsPresenter**를 차례로 확장하여 목록 상자 항목을 찾습니다.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    **ContentPresenter** 노드가 표시 되지 않으면 도구 모음에서 **내 XAML만 표시** 아이콘을 설정/해제 합니다. Visual Studio 2019 버전 16.4부터 XAML 요소 뷰는 기본적으로 내 XAML 기능만 사용 하 여 간소화 됩니다. 모든 XAML 요소를 항상 표시 하는 옵션에서 [이 설정을 사용 하지 않도록](../debugger/general-debugging-options-dialog-box.md) 설정할 수도 있습니다.
    ::: moniker-end
 
    창이 다음과 같이 표시되어야 합니다.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    ![라이브 표시 트리의 Listboxitem](../debugger/media/vs-2019/livevisualtree-listboxitems.png "LiveVisualTree-Listboxitem")
    ::: moniker-end
-   ::: moniker range="vs-2017" 
+   ::: moniker range="vs-2017"
    ![라이브 표시 트리의 Listboxitem](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-Listboxitem")
    ::: moniker-end
 
@@ -110,16 +109,16 @@ ms.locfileid: "82921264"
 
 1. 이제 목록 상자 항목 중 하나의 속성을 살펴보겠습니다.
 
-   **라이브 시각적 트리**의 첫 번째 목록 상자 항목을 선택하고 도구 모음에서 **속성 표시** 아이콘을 클릭합니다. **라이브 속성 탐색기**가 표시됩니다. **콘텐츠** 필드는 "Item1"이 고, **배경색** > **필드는** **#FFFFFFE0**입니다.
-   
-1. **라이브 시각적 트리**로 돌아가서 두 번째 목록 상자 항목을 선택합니다. **라이브 속성 탐색기** 는 **내용** 필드가 "Item2"이 고 **배경색** > **필드가** **#FFD3D3D3** (테마에 따라) 임을 표시 합니다.
+   **라이브 시각적 트리**의 첫 번째 목록 상자 항목을 선택하고 도구 모음에서 **속성 표시** 아이콘을 클릭합니다. **라이브 속성 탐색기**가 표시됩니다. **콘텐츠** 필드는 "Item1"이 고, **배경색**  >  **Color** 필드는 **#FFFFFFE0**입니다.
+
+1. **라이브 시각적 트리**로 돌아가서 두 번째 목록 상자 항목을 선택합니다. **라이브 속성 탐색기** 는 **내용** 필드가 "Item2"이 고 **배경색**  >  **Color** 필드가 **#FFD3D3D3** (테마에 따라) 임을 표시 합니다.
 
    > [!NOTE]
-   > **라이브 속성 탐색기** 에서 속성 주위의 노란색 테두리는 속성 값이와 `Color = {BindingExpression}`같은 바인딩을 통해 설정 됨을 의미 합니다. 녹색 테두리는와 `Color = {StaticResource MyBrush}`같은 리소스를 사용 하 여 값을 설정 하는 것을 의미 합니다.
+   > **라이브 속성 탐색기** 에서 속성 주위의 노란색 테두리는 속성 값이와 같은 바인딩을 통해 설정 됨을 의미 합니다 `Color = {BindingExpression}` . 녹색 테두리는와 같은 리소스를 사용 하 여 값을 설정 하는 것을 의미 합니다 `Color = {StaticResource MyBrush}` .
 
    XAML의 실제 구조에는 직접적으로 관련이 없는 많은 요소가 있습니다. 코드를 잘 모르면 트리에서 필요한 항목을 찾기가 어려울 수 있습니다. 따라서 **라이브 시각적 트리**에는 검사하려는 요소를 찾는 데 도움이 되는 애플리케이션 UI를 사용할 수 있는 몇 가지 방법이 있습니다.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    **실행 중인 응용 프로그램에서 요소를 선택**합니다. **라이브 시각적 트리** 도구 모음의 가장 왼쪽에 있는 단추를 선택하면 이 모드를 사용할 수 있습니다. 이 모드를 켜면 애플리케이션에서 UI 요소를 선택할 수 있고 **라이브 시각적 트리**(및 **라이브 속성 뷰어**)가 이 요소 및 해당 속성에 해당하는 트리에 노드를 표시하도록 자동으로 업데이트됩니다. Visual Studio 2019 버전 16.4부터 [요소 선택의 동작을 구성할](../debugger/general-debugging-options-dialog-box.md)수 있습니다.
 
    **실행 중인 애플리케이션에 레이아웃 표시기를 표시합니다**. 선택 사용 단추 바로 오른쪽에 있는 단추를 선택하면 이 모드를 사용할 수 있습니다. **레이아웃 표시기 표시**를 켜면 애플리케이션 창에 선택한 개체의 범위를 따라 가로 및 세로줄이 표시됩니다. 따라서 여백을 표시하는 사각형뿐만 아니라 어떤 항목이 정렬되는지 확인할 수 있습니다. 예를 들어 **요소 선택** 및 **레이아웃 표시** 를 모두 설정 하 고 응용 프로그램에서 항목 텍스트 블록 **추가** 를 선택 합니다. **라이브 시각적 트리**에 텍스트 블록 노드가 표시되고 **라이브 속성 뷰어**에 텍스트 블록 속성이 표시되어야 합니다. 또한 텍스트 블록의 범위에는 가로 및 세로줄이 표시되어야 합니다.
@@ -129,7 +128,7 @@ ms.locfileid: "82921264"
    **선택 미리 보기**. 라이브 시각적 트리 도구 모음의 왼쪽에서 세 번째 단추를 선택하면 이 모드를 사용할 수 있습니다. 이 모드에서는 애플리케이션의 소스 코드에 액세스할 수 있는 경우 요소가 선언된 XAML을 보여 줍니다. **요소 선택** 및 선택 **영역 미리 보기**를 선택한 다음 테스트 응용 프로그램에서 단추를 선택 합니다. Visual Studio에서 MainWindow.xaml 파일이 열리고 커서가 단추가 정의된 줄에 위치합니다.
    ::: moniker-end
 
-   ::: moniker range="vs-2017" 
+   ::: moniker range="vs-2017"
    **실행 중인 애플리케이션에서 선택을 사용합니다**. **라이브 시각적 트리** 도구 모음의 가장 왼쪽에 있는 단추를 선택하면 이 모드를 사용할 수 있습니다. 이 모드를 켜면 애플리케이션에서 UI 요소를 선택할 수 있고 **라이브 시각적 트리**(및 **라이브 속성 뷰어**)가 이 요소 및 해당 속성에 해당하는 트리에 노드를 표시하도록 자동으로 업데이트됩니다.
 
    **실행 중인 애플리케이션에 레이아웃 표시기를 표시합니다**. 선택 사용 단추 바로 오른쪽에 있는 단추를 선택하면 이 모드를 사용할 수 있습니다. **레이아웃 표시기 표시**를 켜면 애플리케이션 창에 선택한 개체의 범위를 따라 가로 및 세로줄이 표시됩니다. 따라서 여백을 표시하는 사각형뿐만 아니라 어떤 항목이 정렬되는지 확인할 수 있습니다. 예를 들어 **선택 사용** 및 **레이아웃 표시**를 모두 켜고 애플리케이션에서 **항목 추가** 텍스트 블록을 선택합니다. **라이브 시각적 트리**에 텍스트 블록 노드가 표시되고 **라이브 속성 뷰어**에 텍스트 블록 속성이 표시되어야 합니다. 또한 텍스트 블록의 범위에는 가로 및 세로줄이 표시되어야 합니다.
@@ -151,6 +150,6 @@ ms.locfileid: "82921264"
 
 4. Visual Studio의 두 번째 인스턴스에서 **라이브 시각적 트리**(**디버그 > 창 > 라이브 시각적 트리**)를 엽니다. **TestXaml** UI 요소가 표시되어야 하고 애플리케이션을 직접 디버그하는 동안 했던 것처럼 해당 요소를 조작할 수 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [XAML 핫 다시 로드를 사용 하 여 실행 중인 XAML 코드 작성 및 디버그](xaml-hot-reload.md)

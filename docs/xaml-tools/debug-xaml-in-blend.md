@@ -6,15 +6,14 @@ ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "82921258"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331043"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend에서 XAML 디버그
 
@@ -55,7 +54,7 @@ Blend에서 간단한 코드 숨겨진 구문 오류, 컴파일 오류 및 런�
 
 3. 프로젝트 템플릿 목록에서 **비어 있는 앱 (유니버설 Windows)** 을 클릭 합니다.
 
-4. **이름** 텍스트 상자에을 입력 `DebuggingSample`합니다.
+4. **이름** 텍스트 상자에을 입력 `DebuggingSample` 합니다.
 
 5. **위치** 텍스트 상자에서 프로젝트 위치를 확인합니다.
 
@@ -89,7 +88,7 @@ Blend에서 간단한 코드 숨겨진 구문 오류, 컴파일 오류 및 런�
     </Grid>
     ```
 
-10. **Ctrl**+**Shift**Shift+**B** 를 눌러 프로젝트를 빌드합니다.
+10. **Ctrl** + **Shift** + **B** 를 눌러 프로젝트를 빌드합니다.
 
     프로젝트를 빌드할 수 없음을 경고하는 오류 메시지가 표시되고, 오류를 나열하는 **결과** 패널이 앱 맨 아래에 나타납니다.
 
@@ -109,11 +108,11 @@ XAML 오류가 감지되면 디자인 화면에서 프로젝트에 잘못된 태
 
 4. "멤버 '콘텐츠'를 인식할 수 없거나 액세스할 수 없습니다."를 두 번 클릭합니다. `c`의 `content`는 대문자여야 합니다. 소문자 "c"를 대문자 "c"로 바꿉니다.
 
-5. "' Mame ' 속성이 `http://schemas.microsoft.com/winfx/2006/xaml` 네임 스페이스에 없습니다."를 두 번 클릭 합니다. "Mame"의 "M"은 "N"이어야 합니다. "M"을 "N"으로 바꿉니다. XAML을 구문 분석할 수 있으므로 응용 프로그램이 디자인 화면에 나타납니다.
+5. "' Mame ' 속성이 네임 스페이스에 없습니다."를 두 번 클릭 `http://schemas.microsoft.com/winfx/2006/xaml` 합니다. "Mame"의 "M"은 "N"이어야 합니다. "M"을 "N"으로 바꿉니다. XAML을 구문 분석할 수 있으므로 응용 프로그램이 디자인 화면에 나타납니다.
 
     ![Blend for Visual Studio에서 XAML 디버깅](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    **Ctrl**+**Shift**Shift+**B** 를 눌러 프로젝트를 빌드하고 나머지 오류가 없는지 확인 합니다.
+    **Ctrl** + **Shift** + **B** 를 눌러 프로젝트를 빌드하고 나머지 오류가 없는지 확인 합니다.
 
 ## <a name="debug-in-visual-studio"></a>Visual Studio에서 디버그
 
