@@ -1,7 +1,7 @@
 ---
 title: 데이터 세트 및 TableAdapter를 다른 프로젝트로 분리
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8df444646512ecd4dba866fccf6da5fdf7a8bab3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586226"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281554"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 세트 및 TableAdapter를 다른 프로젝트로 분리
 형식화 된 데이터 집합은 [tableadapter](create-and-configure-tableadapters.md) 및 데이터 집합 클래스가 개별 프로젝트로 생성 될 수 있도록 향상 되었습니다. 이를 통해 응용 프로그램 계층을 신속 하 게 분리 하 고 n 계층 데이터 응용 프로그램을 생성할 수 있습니다.
@@ -30,7 +30,7 @@ TableAdapter 코드에서 데이터 집합 코드를 분리 하는 경우 데이
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>데이터 집합을 다른 프로젝트로 분리 하려면
 
-1. 데이터 집합 ( *.xsd* 파일)이 포함 된 솔루션을 엽니다.
+1. 데이터 집합 (*.xsd* 파일)이 포함 된 솔루션을 엽니다.
 
     > [!NOTE]
     > 솔루션에 데이터 집합 코드를 분리 하려는 프로젝트가 포함 되어 있지 않으면 프로젝트를 만들거나 솔루션에 기존 프로젝트를 추가 합니다.
@@ -59,8 +59,8 @@ TableAdapter 코드에서 데이터 집합 코드를 분리 하는 경우 데이
 
 ## <a name="see-also"></a>참조
 
-- [N 계층 데이터 애플리케이션 개요](../data-tools/n-tier-data-applications-overview.md)
-- [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
+- [연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

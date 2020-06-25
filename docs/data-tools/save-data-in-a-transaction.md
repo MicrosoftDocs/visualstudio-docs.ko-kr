@@ -1,7 +1,7 @@
 ---
 title: '연습: 트랜잭션에 데이터 저장'
 ms.date: 09/08/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586239"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281632"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>연습: 트랜잭션에 데이터 저장
 
-이 연습에서는 <xref:System.Transactions> 네임 스페이스를 사용 하 여 트랜잭션에 데이터를 저장 하는 방법을 보여 줍니다. 이 연습에서는 Windows Forms 응용 프로그램을 만듭니다. 데이터 소스 구성 마법사를 사용 하 여 Northwind 샘플 데이터베이스의 두 테이블에 대 한 데이터 집합을 만듭니다. Windows form에 데이터 바인딩된 컨트롤을 추가 하 고 BindingNavigator의 저장 단추에 대 한 코드를 수정 하 여 TransactionScope 내에서 데이터베이스를 업데이트 합니다.
+이 연습에서는 네임 스페이스를 사용 하 여 트랜잭션에 데이터를 저장 하는 방법을 보여 줍니다 <xref:System.Transactions> . 이 연습에서는 Windows Forms 응용 프로그램을 만듭니다. 데이터 소스 구성 마법사를 사용 하 여 Northwind 샘플 데이터베이스의 두 테이블에 대 한 데이터 집합을 만듭니다. Windows form에 데이터 바인딩된 컨트롤을 추가 하 고 BindingNavigator의 저장 단추에 대 한 코드를 수정 하 여 TransactionScope 내에서 데이터베이스를 업데이트 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "75586239"
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -62,11 +62,11 @@ ms.locfileid: "75586239"
 
 ## <a name="create-a-database-data-source"></a>데이터베이스 데이터 원본 만들기
 
-이 단계에서는 **데이터 소스 구성 마법사** 를 사용 하 여 Northwind 샘플 데이터베이스의 `Customers` 및 `Orders` 테이블을 기반으로 데이터 원본을 만듭니다.
+이 단계에서는 **데이터 소스 구성 마법사** 를 사용 하 여 `Customers` `Orders` Northwind 샘플 데이터베이스의 및 테이블을 기반으로 데이터 원본을 만듭니다.
 
 1. 데이터 **소스** 창을 열려면 **데이터** 메뉴에서 **데이터 소스 표시**를 선택 합니다.
 
-2. **데이터 원본** 창에서 **새 데이터 원본 추가**를 선택하여 **데이터 원본 구성 마법사**를 시작합니다.
+2. **데이터** 소스 창에서 **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사**를 시작 합니다.
 
 3. **데이터 소스 형식 선택** 화면에서 **데이터베이스**를 선택 하 고 **다음**을 선택 합니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "75586239"
 
     - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
-         -또는-
+         또는
 
     - **새 연결**을 선택하여 **연결 추가/수정** 대화 상자를 시작하고 Northwind 데이터베이스에 대한 연결을 만듭니다.
 
@@ -84,23 +84,23 @@ ms.locfileid: "75586239"
 
 7. **데이터베이스 개체 선택** 화면에서 **테이블** 노드를 확장 합니다.
 
-8. `Customers` 및 `Orders` 테이블을 선택 하 고 **마침**을 선택 합니다.
+8. `Customers`및 테이블을 선택 하 고 `Orders` **마침**을 선택 합니다.
 
-     **NorthwindDataSet**가 프로젝트에 추가되고 `Customers` 및 `Orders` 테이블이 **데이터 원본** 창에 나타납니다.
+     **NorthwindDataSet** 가 프로젝트에 추가 되 고 `Customers` 및 `Orders` 테이블이 **데이터 소스** 창에 표시 됩니다.
 
 ## <a name="add-controls-to-the-form"></a>폼에 컨트롤 추가
 
-**데이터 원본** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
+**데이터 소스** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
 
 1. **데이터 소스** 창에서 **Customers** 노드를 확장 합니다.
 
 2. 주 **Customers** 노드를 **데이터 원본** 창에서 **Form1**으로 끌어서 놓습니다.
 
-   <xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>및 <xref:System.Windows.Forms.BindingNavigator>가 구성 요소 트레이에 나타납니다.
+   <xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md),, `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> 및가 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다.
 
 3. 관련 **Orders** 노드 (주 **주문** 노드가 아닌, **Fax** 열 아래의 관련 자식 테이블 노드)를 **customersdatagridview**아래에 있는 폼으로 끕니다.
 
-   <xref:System.Windows.Forms.DataGridView>가 폼에 나타납니다. 구성 요소 트레이에 `OrdersTableAdapter` 및 <xref:System.Windows.Forms.BindingSource> 표시 됩니다.
+   <xref:System.Windows.Forms.DataGridView>가 폼에 나타납니다. `OrdersTableAdapter`및가 <xref:System.Windows.Forms.BindingSource> 구성 요소 트레이에 나타납니다.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>시스템 트랜잭션 어셈블리에 대 한 참조 추가
 
@@ -116,7 +116,7 @@ ms.locfileid: "75586239"
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>BindingNavigator의 SaveItem 단추에서 코드 수정
 
-폼에 끌어 놓은 첫 번째 테이블의 경우 코드는 기본적으로 <xref:System.Windows.Forms.BindingNavigator>의 저장 단추 `click` 이벤트에 추가 됩니다. 추가 테이블을 업데이트하려면 코드를 수동으로 추가해야 합니다. 이 연습에서는 저장 단추의 click 이벤트 처리기에서 기존 저장 코드를 리팩터링 합니다. 또한 행을 추가 하거나 삭제 해야 하는지 여부에 따라 특정 업데이트 기능을 제공 하는 몇 가지 메서드를 추가로 만들 수 있습니다.
+폼에 끌어 놓은 첫 번째 테이블의 경우 코드는 기본적으로의 저장 단추에 대 한 이벤트에 추가 됩니다 `click` <xref:System.Windows.Forms.BindingNavigator> . 추가 테이블을 업데이트하려면 코드를 수동으로 추가해야 합니다. 이 연습에서는 저장 단추의 click 이벤트 처리기에서 기존 저장 코드를 리팩터링 합니다. 또한 행을 추가 하거나 삭제 해야 하는지 여부에 따라 특정 업데이트 기능을 제공 하는 몇 가지 메서드를 추가로 만들 수 있습니다.
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>자동으로 생성된 저장 코드를 수정하려면
 
@@ -129,13 +129,13 @@ ms.locfileid: "75586239"
 
 관련 데이터의 변경을 조정하는 순서는 다음과 같습니다.
 
-- 자식 레코드를 삭제 합니다. 이 경우 `Orders` 테이블에서 레코드를 삭제 합니다.
+- 자식 레코드를 삭제 합니다. 이 경우 테이블에서 레코드를 삭제 `Orders` 합니다.
 
-- 부모 레코드를 삭제 합니다. 이 경우 `Customers` 테이블에서 레코드를 삭제 합니다.
+- 부모 레코드를 삭제 합니다. 이 경우 테이블에서 레코드를 삭제 `Customers` 합니다.
 
-- 부모 레코드를 삽입 합니다. 이 경우 `Customers` 테이블에 레코드를 삽입 합니다.
+- 부모 레코드를 삽입 합니다. (이 경우 테이블에 레코드를 삽입 `Customers` 합니다.)
 
-- 자식 레코드를 삽입 합니다. 이 경우 `Orders` 테이블에 레코드를 삽입 합니다.
+- 자식 레코드를 삽입 합니다. (이 경우 테이블에 레코드를 삽입 `Orders` 합니다.)
 
 ### <a name="to-delete-existing-orders"></a>기존 주문을 삭제하려면
 

@@ -1,7 +1,7 @@
 ---
 title: TableAdapter DBDirect 메서드를 사용하여 데이터 저장
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,20 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586213"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281611"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect 메서드를 사용하여 데이터 저장
 
-이 연습에서는 TableAdapter의 DBDirect 메서드를 사용 하 여 데이터베이스에 대해 직접 SQL 문을 실행 하기 위한 자세한 지침을 제공 합니다. TableAdapter의 DBDirect 메서드는 데이터베이스 업데이트에 대한 상세 제어 수준을 제공합니다. 응용 프로그램에서 필요에 따라 개별 `Insert`, `Update`및 `Delete` 메서드를 호출 하 여 특정 SQL 문 및 저장 프로시저를 실행 하는 데 사용할 수 있습니다 .이 메서드는 업데이트, 삽입 및 삭제 문을 모두 한 번 호출 하는 오버 로드 된 `Update` 메서드와는 반대로 수행 합니다.
+이 연습에서는 TableAdapter의 DBDirect 메서드를 사용 하 여 데이터베이스에 대해 직접 SQL 문을 실행 하기 위한 자세한 지침을 제공 합니다. TableAdapter의 DBDirect 메서드는 데이터베이스 업데이트에 대한 상세 제어 수준을 제공합니다. 응용 프로그램에서 필요에 따라 개별, 및 메서드를 호출 하 여 특정 SQL 문 및 저장 프로시저를 실행 하는 데 사용할 수 있습니다 `Insert` `Update` `Delete` `Update` .이 메서드는 한 번의 호출로 UPDATE, INSERT 및 DELETE 문을 수행 하는 오버 로드 된 메서드가 아니라
 
 이 연습에서는 다음 작업을 수행하는 방법을 배웁니다.
 
-- 새 **Windows Forms 애플리케이션**을 만듭니다.
+- 새 **Windows Forms 응용 프로그램**을 만듭니다.
 
 - [데이터 소스 구성 마법사](../data-tools/media/data-source-configuration-wizard.png)를 사용 하 여 데이터 집합을 만들고 구성 합니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "75586213"
 
 - 데이터베이스에 직접 액세스 하 고 삽입, 업데이트 및 삭제를 수행 하는 메서드를 추가 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "75586213"
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -73,7 +73,7 @@ ms.locfileid: "75586213"
 
 ## <a name="create-a-data-source-from-your-database"></a>데이터베이스에서 데이터 원본 만들기
 
-이 단계에서는 **데이터 원본 구성 마법사**를 사용하여 Northwind 샘플 데이터베이스의 `Region` 테이블을 기반으로 하는 데이터 원본을 만듭니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 자세한 내용은 [방법: 샘플 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)를 참조 하세요.
+이 단계에서는 **데이터 소스 구성 마법사** 를 사용 하 여 `Region` Northwind 샘플 데이터베이스의 테이블을 기반으로 데이터 원본을 만듭니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 자세한 내용은 [방법: 샘플 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)를 참조 하세요.
 
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
 
@@ -81,7 +81,7 @@ ms.locfileid: "75586213"
 
    **데이터 원본** 창이 열립니다.
 
-2. **데이터 원본** 창에서 **새 데이터 원본 추가**를 선택하여 **데이터 원본 구성 마법사**를 시작합니다.
+2. **데이터** 소스 창에서 **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사**를 시작 합니다.
 
 3. **데이터 소스 형식 선택** 화면에서 **데이터베이스**를 선택 하 고 **다음**을 선택 합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "75586213"
 
     - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
-         -또는-
+         또는
 
     - **새 연결**을 선택하여 **연결 추가/수정** 대화 상자를 시작합니다.
 
@@ -99,7 +99,7 @@ ms.locfileid: "75586213"
 
 7. **데이터베이스 개체 선택** 화면에서 **테이블** 노드를 확장 합니다.
 
-8. `Region` 테이블을 선택 하 고 **마침**을 선택 합니다.
+8. `Region`테이블을 선택 하 고 **마침**을 선택 합니다.
 
      **NorthwindDataSet**가 프로젝트에 추가되고 `Region` 테이블이 **데이터 원본** 창에 나타납니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "75586213"
 
 Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역** 노드를 **데이터 소스** 창에서 폼으로 끌어 옵니다.
 
-<xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>및 <xref:System.Windows.Forms.BindingNavigator>가 구성 요소 트레이에 나타납니다.
+<xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md),, `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> 및가 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>개별 TableAdapter DbDirect 메서드를 호출하는 단추를 추가하려면
 
@@ -120,8 +120,8 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
     |이름|텍스트|
     |----------|----------|
     |`InsertButton`|**삽입**|
-    |`UpdateButton`|**업데이트**|
-    |`DeleteButton`|**삭제**|
+    |`UpdateButton`|**Update**|
+    |`DeleteButton`|**Delete**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>데이터베이스에 새 레코드를 삽입하는 코드를 추가하려면
 

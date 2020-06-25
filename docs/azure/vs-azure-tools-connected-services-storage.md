@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911892"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280686"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 연결 서비스를 사용하여 Azure Storage 추가
 
@@ -31,7 +31,7 @@ Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서
 완료되면 **연결된 서비스 추가** 대화 상자에 Blob Storage, 큐, 테이블 작업을 시작하는 데 필요한 단계를 자세히 설명하는 설명서가 자동으로 표시됩니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
 
 ## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>연결된 서비스 대화 상자를 사용하여 Azure Storage에 연결
 
@@ -47,7 +47,7 @@ Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서
 
 1. **Azure Storage** 대화 상자에서, 기존 스토리지 계정을 선택한 다음 **추가**를 선택합니다.
 
-    스토리지 계정을 만들어야 하는 경우 다음 단계로 이동합니다. 그렇지 않은 경우, 6단계로 건너뜁니다.
+    스토리지 계정을 만들어야 하는 경우 다음 단계로 이동합니다. 그렇지 않을 경우 6단계로 건너뜁니다.
 
     ![프로젝트에 기존 스토리지 계정 추가](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 

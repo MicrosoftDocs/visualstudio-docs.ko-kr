@@ -1,7 +1,7 @@
 ---
 title: 폼 간에 데이터 전달
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586369"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281879"
 ---
 # <a name="pass-data-between-forms"></a>폼 간에 데이터 전달
 
@@ -47,7 +47,7 @@ ms.locfileid: "75586369"
 
 - 폼 간에 데이터를 전달합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "75586369"
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -154,7 +154,7 @@ Form2에 TableAdapter 쿼리를 추가 하 여 Form1에서 선택한 고객에 �
 
 6. **다음**을 클릭합니다.
 
-7. **Fill a DataTableMethod Name**에 `FillByCustomerID`을 입력 합니다.
+7. **Fill a DataTableMethod Name**에를 입력 `FillByCustomerID` 합니다.
 
 8. **DataTable 반환** 옵션 선택을 취소한 후, **다음**을 클릭합니다.
 

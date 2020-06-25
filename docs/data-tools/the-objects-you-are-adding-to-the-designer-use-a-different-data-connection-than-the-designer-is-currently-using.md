@@ -1,25 +1,25 @@
 ---
 title: 디자이너에 추가 된 개체는 다른 데이터 연결을 사용 합니다.
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a3a2e00ccdee20fd374c52235ba648f89a0faa1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 38fa361536f9e99c013f9a13330fe1a68e53641a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586161"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281411"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>디자이너에 추가 하려는 개체가 디자이너와 다른 데이터 연결을 사용 합니다.
 
 디자이너에 추가하려는 개체가 디자이너에서 현재 사용 중인 데이터 연결이 아닌 다른 데이터 연결을 사용합니다. 디자이너에서 사용 중인 연결을 바꾸시겠습니까?
 
-**개체 관계형 디자이너** (**O/R 디자이너**)에 항목을 추가 하는 경우 모든 항목은 하나의 공유 데이터 연결을 사용 합니다. 디자인 화면은 표면의 모든 개체에 대해 단일 연결을 사용 하는 <xref:System.Data.Linq.DataContext>를 나타냅니다. 디자이너에서 현재 사용 중인 데이터 연결과 다른 데이터 연결을 사용 하는 디자이너에 개체를 추가 하는 경우이 메시지가 나타납니다. 이 오류를 해결하려면 기존 연결 유지를 선택하세요. 이 항목을 선택하면 선택한 개체가 추가되지 않습니다. 또는 개체 추가를 선택하고 <xref:System.Data.Linq.DataContext> 연결을 새 연결로 다시 설정할 수 있습니다.
+**개체 관계형 디자이너** (**O/R 디자이너**)에 항목을 추가 하는 경우 모든 항목은 하나의 공유 데이터 연결을 사용 합니다. 디자인 화면은 <xref:System.Data.Linq.DataContext> 표면의 모든 개체에 대해 단일 연결을 사용 하는를 나타냅니다. 디자이너에서 현재 사용 중인 데이터 연결과 다른 데이터 연결을 사용 하는 디자이너에 개체를 추가 하는 경우이 메시지가 나타납니다. 이 오류를 해결하려면 기존 연결 유지를 선택하세요. 이 항목을 선택하면 선택한 개체가 추가되지 않습니다. 또는 개체 추가를 선택하고 <xref:System.Data.Linq.DataContext> 연결을 새 연결로 다시 설정할 수 있습니다.
 
 ## <a name="connection-options"></a>연결 옵션
 

@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ae9064b6aba283c8d2fb8d1e5ec02ef1bd70e199
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260733"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280852"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Azure 클라우드 서비스의 가상 IP 주소를 일정하게 유지
 Azure에서 호스팅되는 클라우드 서비스를 업데이트하는 경우 서비스의 가상 IP 주소(VIP)가 변경되지 않는지 확인해야 할 수 있습니다. 많은 도메인 관리 서비스에서 도메인 이름을 등록하는 데 도메인 이름 시스템(DNS)을 사용합니다. DNS는 VIP가 동일하게 유지되는 경우에만 작동합니다. Azure 도구에서 **게시 마법사** 를 사용하여 클라우드 서비스를 업데이트할 때 VIP가 변경되지 않는지 확인할 수 있습니다. 클라우드 서비스에 대한 DNS 도메인 관리를 사용하는 방법에 대한 자세한 내용은 [Azure 클라우드 서비스에 대한 사용자 지정 도메인 이름 구성](/azure/cloud-services/cloud-services-custom-domain-name-portal)을 참조하세요.
@@ -35,11 +35,11 @@ Azure에서 호스팅되는 클라우드 서비스를 업데이트하는 경우 
 
     ![Azure 애플리케이션 게시 로그인 페이지](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. **일반 설정** 탭에서 배포 중인 클라우드 서비스 이름을 확인하고 **환경**, **빌드 구성** 및 **서비스 구성**이 모두 올바른지 확인합니다.
+4. **일반 설정** 탭에서 배포 중인 클라우드 서비스의 이름, **환경**, **빌드 구성**및 **서비스 구성** 이 모두 올바른지 확인 합니다.
 
     ![Azure 애플리케이션 게시 일반 설정 탭](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. **고급 설정** 탭에서 **배포 레이블** 및 **Storage 계정**이 올바른지 확인합니다. **실패 시 배포 삭제** 확인란의 선택을 취소했는지 확인하고, **배포 업데이트** 확인란을 선택했는지 확인합니다. **실패 시 배포 삭제** 확인란을 선택 취소하면 배포 중에 오류가 발생할 경우 VIP가 손실되지 않았는지 확인할 수 있습니다. **배포 업데이트** 확인란을 선택하면 애플리케이션을 다시 게시할 때 배포가 삭제되지 않고 VIP가 손실되지 않았는지 확인할 수 있습니다.
+5. **고급 설정** 탭에서 **배포 레이블** 및 **Storage 계정**이 올바른지 확인합니다. **실패 시 배포 삭제** 확인란의 선택을 취소했는지 확인하고, **배포 업데이트** 확인란을 선택했는지 확인합니다. **실패 시 배포 삭제** 확인란의 선택을 취소 하 여 배포 중에 오류가 발생 하는 경우 VIP가 손실 되지 않도록 합니다. **배포 업데이트** 확인란을 선택하면 애플리케이션을 다시 게시할 때 배포가 삭제되지 않고 VIP가 손실되지 않았는지 확인할 수 있습니다.
 
     ![Azure 애플리케이션 게시 고급 설정 탭](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 

@@ -1,7 +1,7 @@
 ---
 title: '방법: 서비스의 데이터에 연결'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting to web services
 - data sources, creating from web services
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01ad796faa8c722ba088143da814305844136aa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586525"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282230"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>방법: 서비스의 데이터에 연결
 
@@ -60,4 +60,4 @@ ms.locfileid: "75586525"
 ## <a name="see-also"></a>참조
 
 - [WCF 데이터 서비스에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF 데이터 서비스](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio에서 Windows Communication Foundation Services 및 WCF data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

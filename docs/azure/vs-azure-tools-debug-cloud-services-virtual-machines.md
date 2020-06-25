@@ -4,18 +4,18 @@ description: Visual Studio에서 클라우드 서비스 또는 Virtual Machine �
 author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 2536a56f76a048cab6a3bf9a5ec026d22fe112a7
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 06344d536f0bb6db5f13329ece2c5202205bcefb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489742"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280715"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 또는 가상 머신 디버깅
 
@@ -25,7 +25,7 @@ Visual Studio는 Azure 클라우드 서비스와 가상 머신 디버깅에 여�
 
 Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 머신에서 클라우드 서비스 디버그하면 시간과 돈을 절약할 수 있습니다. 배포하기 전에 로컬로 서비스를 디버깅하면, 컴퓨팅 시간이 소요되지 않고 안정성과 성능을 향상할 수 있습니다. 그러나, Azure 자체에서 클라우드 서비스를 실행하는 경우, 일부 오류가 발생할 수 있습니다. 서비스를 게시하거나 역할 인스턴스에 디버거를 연결할 때 원격 디버깅을 사용하면 이 오류들을 디버그할 수 있습니다.
 
-에뮬레이터가 로컬 환경에서 Azure 컴퓨팅 서비스를 시뮬레이트 및 실행하여 클라우드 서비스를 배포하기 전에 테스트 및 디버그할 수 있습니다. 에뮬레이터는 역할 인스턴스의 수명 주기를 처리하고 로컬 스토리지 같은 시뮬레이트된 리소스에 대한 액세스를 제공합니다. Visual Studio에서 서비스를 디버그하거나 실행할 때, 에뮬레이터가 백그라운드 애플리케이션으로 자동으로 시작된 다음, 서비스가 에뮬레이터에 배포됩니다. 로컬 환경에서 서비스가 실행되는 것을 보기 위해 에뮬레이터를 사용할 수 있습니다. 에뮬레이터의 정식 버전 또는 Express 버전을 사용할 수 있습니다. Azure 2.3부터 에뮬레이터의 express 버전이 기본값입니다. [에뮬레이터 익스프레스를 사용하여 클라우드 서비스를 로컬로 실행하고 디버깅합니다.](vs-azure-tools-emulator-express-debug-run.md)
+에뮬레이터가 로컬 환경에서 Azure 컴퓨팅 서비스를 시뮬레이트 및 실행하여 클라우드 서비스를 배포하기 전에 테스트 및 디버그할 수 있습니다. 에뮬레이터는 역할 인스턴스의 수명 주기를 처리하고 로컬 스토리지 같은 시뮬레이트된 리소스에 대한 액세스를 제공합니다. Visual Studio에서 서비스를 디버그하거나 실행할 때, 에뮬레이터가 백그라운드 애플리케이션으로 자동으로 시작된 다음, 서비스가 에뮬레이터에 배포됩니다. 로컬 환경에서 서비스가 실행되는 것을 보기 위해 에뮬레이터를 사용할 수 있습니다. 에뮬레이터의 정식 버전 또는 Express 버전을 사용할 수 있습니다. (Azure 2.3부터 에뮬레이터의 express 버전이 기본값입니다.) [Emulator Express를 사용 하 여 로컬에서 클라우드 서비스 실행 및 디버그를](vs-azure-tools-emulator-express-debug-run.md)참조 하세요.
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>로컬 컴퓨터에서 클라우드 서비스를 디버그 하려면
 
@@ -187,6 +187,6 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
 ## <a name="next-steps"></a>다음 단계
 
-* **IntelliTrace를** 사용하여 릴리스 서버에서 통화 및 이벤트 로그를 수집합니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)을 참조하세요.
+* **IntelliTrace** 를 사용 하 여 릴리스 서버에서 호출 및 이벤트 로그를 수집 합니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)을 참조하세요.
 
 * **Azure Diagnostics**를 이용하여 개발 환경 또는 Azure에서 실행되는 역할 내에서 실행되는 코드의 자세한 내용을 기록합니다. [Azure Diagnostics를 사용하여 로깅 데이터 수집](/azure/cloud-services/cloud-services-dotnet-diagnostics)을 참조하세요.

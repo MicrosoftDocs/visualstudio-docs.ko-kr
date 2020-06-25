@@ -4,24 +4,24 @@ description: Visual Studio 및 IntelliTrace를 사용하여 클라우드 서비�
 author: mikejo5000
 manager: jillfra
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: c61af4a08c61cbfd16d33e2b5cf7402960163f12
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 1e4de25f3d1b00459128b89bc5559f55cec8f077
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489716"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280598"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio 및 IntelliTrace를 사용하여 게시된 Azure 클라우드 서비스 디버깅
 IntelliTrace를 사용하여 Azure에서 실행할 때 역할 인스턴스에 대한 광범위한 정보를 기록할 수 있습니다. 문제의 원인을 찾아야 하는 경우 Azure에서 실행 중인 것처럼 Visual Studio에서 코드를 단계별로 실행하는 데 IntelliTrace 로그를 사용할 수 있습니다. 실제로 Azure에서 Azure 애플리케이션을 클라우드 서비스로 실행 중일 때 IntelliTrace는 키 코드 실행 및 환경 데이터를 기록하여 Visual Studio에서 기록된 데이터를 재생할 수 있습니다.
 
 Visual Studio Enterprise가 설치되어 있으며 Azure 애플리케이션 대상 .NET Framework 4 이상 버전이 있는 경우 IntelliTrace를 사용할 수 있습니다. IntelliTrace는 Azure 역할에 대한 정보를 수집합니다. 이러한 역할에 대한 가상 머신은 항상 64비트 운영 체제를 실행합니다.
 
-또는 [원격 디버깅을](vs-azure-tools-debugging-cloud-services-overview.md) 사용하여 Azure에서 실행 중인 클라우드 서비스에 직접 연결할 수 있습니다.
+또는 [원격 디버깅](vs-azure-tools-debugging-cloud-services-overview.md) 을 사용 하 여 Azure에서 실행 되는 클라우드 서비스에 직접 연결할 수 있습니다.
 
 > [!IMPORTANT]
 > IntelliTrace는 디버그 시나리오 전용이며 프로덕션 배포용으로 사용할 수 없습니다.

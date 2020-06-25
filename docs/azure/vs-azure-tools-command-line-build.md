@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: bc65d64f4dad2ac38c1f0c64ce6c7297d3c37d3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 179737f7a4a55fd6111338363ad6668a43689205
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572424"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280767"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>명령줄에서 Azure 프로젝트 빌드
 Microsoft Build Engine(MSBuild)을 사용하여 Visual Studio가 설치되지 않은 빌드 랩 환경에 제품을 빌드할 수 있습니다. MSBuild는 Microsoft에서 확장 가능하고 완전히 지원되는 프로젝트 파일에 대한 XML 형식을 사용합니다. MSBuild 파일 형식으로 하나 이상의 플랫폼 및 구성에 대해 어떤 항목을 빌드해야 하는지 설명할 수 있습니다

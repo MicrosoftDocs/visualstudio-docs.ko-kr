@@ -6,19 +6,19 @@ manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 23e2db0b42fb12872feb5942d9f4eeaab96d3c2d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489755"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280377"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 프로젝트 만들기
 
-Visual Studio는 간단한 범용 [Azure 서비스인 Azure 클라우드 서비스를](/azure/cloud-services/cloud-services-choose-me)만들 수 있는 프로젝트 템플릿을 제공합니다. 프로젝트를 만든 후 Visual Studio에서 클라우드 서비스를 구성 및 디버그하고 Azure에 배포할 수 있습니다.
+Visual Studio는 간단한 범용 Azure 서비스인 [azure 클라우드 서비스](/azure/cloud-services/cloud-services-choose-me)를 만들 수 있는 프로젝트 템플릿을 제공 합니다. 프로젝트를 만든 후 Visual Studio에서 클라우드 서비스를 구성 및 디버그하고 Azure에 배포할 수 있습니다.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만드는 단계
 이 섹션에서는 하나 이상의 웹 역할을 사용하여 Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만드는 과정을 안내합니다.
@@ -60,7 +60,7 @@ Visual Studio는 간단한 범용 [Azure 서비스인 Azure 클라우드 서비�
 
 Visual Studio Azure 프로젝트에는 솔루션의 역할 프로젝트에 대한 연결이 있습니다. 또한 *서비스 정의 파일* 및 *서비스 구성 파일*도 포함됩니다.
 
-- **서비스 정의 파일** - 필요한 역할, 끝점 및 가상 시스템 크기를 포함하여 응용 프로그램의 런타임 설정을 정의합니다.
+- **서비스 정의 파일** -필요한 역할, 끝점 및 가상 컴퓨터 크기를 포함 하 여 응용 프로그램에 대 한 런타임 설정을 정의 합니다.
 - **서비스 구성 파일** - 얼마나 많은 역할의 인스턴스가 실행되는지와 역할에 대해 정의된 설정의 값을 구성합니다.
 
 이러한 파일에 대한 자세한 내용은 [Visual Studio에서 Azure 클라우드 서비스에 대한 역할 구성](vs-azure-tools-configure-roles-for-cloud-service.md)을 참조하세요.

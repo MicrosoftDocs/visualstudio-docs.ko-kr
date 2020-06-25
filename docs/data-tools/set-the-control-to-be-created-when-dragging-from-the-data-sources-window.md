@@ -1,7 +1,7 @@
 ---
 title: 데이터 소스 창에서 끌어올 때 만들 컨트롤을 설정 합니다.
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Data Sources Window, select controls
 - Windows Forms, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586187"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281541"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>데이터 소스 창에서 끌어올 때 만들 컨트롤 설정
 
@@ -37,7 +37,7 @@ ms.locfileid: "75586187"
 2. **데이터 소스** 창에서 설정 하려는 데이터 테이블이 나 개체를 나타내는 항목을 선택 합니다.
 
    > [!TIP]
-   > **데이터 소스** 창이 열려 있지 않은 경우 **다른 Windows** > **데이터 원본** > **보기** 를 선택 하 여 열 수 있습니다.
+   > **데이터 소스** 창이 열려 있지 않은 경우 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 하 여 열 수 있습니다.
 
 3. 항목에 대 한 드롭다운 메뉴를 클릭 하 고 메뉴에서 다음 항목 중 하나를 클릭 합니다.
 

@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489651"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280533"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure 애플리케이션 게시 마법사 사용
 
@@ -63,7 +63,7 @@ Visual Studio에서 웹 애플리케이션을 개발한 후 **Azure 애플리케
 
 **모든 역할에 대해 원격 데스크톱 사용** - 원격으로 서비스에 연결하려면 이 옵션을 선택합니다. 이 옵션은 주로 문제 해결을 위해 사용됩니다. 자세한 내용은 [Visual Studio를 사용하여 Azure Cloud Services에서 역할에 대한 원격 데스크톱 연결 사용](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)을 참조하세요.
 
-**모든 웹 역할에 대해 웹 배포 사용** - 서비스에 웹 배포를 사용하도록 설정하려면 이 옵션을 선택합니다. 이 기능을 사용하려면 **모든 역할에 대해 원격 데스크톱 사용** 옵션도 선택해야 합니다. 자세한 내용은 [Visual Studio를 사용하여 클라우드 서비스 게시를](vs-azure-tools-publishing-a-cloud-service.md)참조하십시오.
+**모든 웹 역할에 대해 웹 배포 사용** - 서비스에 웹 배포를 사용하도록 설정하려면 이 옵션을 선택합니다. 이 기능을 사용하려면 **모든 역할에 대해 원격 데스크톱 사용** 옵션도 선택해야 합니다. 자세한 내용은 [Visual Studio를 사용 하 여 클라우드 서비스 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조 하세요.
 
 ## <a name="settings-page---advanced-settings-tab"></a>설정 페이지 - 고급 설정 탭
 
@@ -118,6 +118,6 @@ Azure Storage 계정은 애플리케이션 배포용 패키지를 저장합니�
 
 - [Azure 클라우드 서비스의 성능 테스트](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Azure 클라우드 서비스 및 가상 시스템에 대한 진단 구성.](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Azure Cloud Services 및 Virtual Machines에 대 한 진단 구성](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
 
-- [응용 프로그램 인사이트는 무엇입니까?](/azure/application-insights/app-insights-overview)
+- [Application Insights란?](/azure/application-insights/app-insights-overview)
