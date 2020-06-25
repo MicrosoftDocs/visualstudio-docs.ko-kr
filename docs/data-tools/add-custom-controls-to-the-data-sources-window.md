@@ -1,7 +1,7 @@
 ---
 title: 데이터 소스 창에 사용자 지정 컨트롤 추가
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587110"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283075"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>데이터 소스 창에 사용자 지정 컨트롤 추가
 
@@ -39,7 +39,7 @@ ms.locfileid: "75587110"
 2. **데이터 소스** 창에서 창에 추가한 데이터 원본의 일부인 항목을 클릭 한 다음 해당 항목에 대 한 드롭다운 메뉴를 클릭 합니다.
 
    > [!TIP]
-   > 데이터 소스 창이 열려 있지 않으면 **다른 Windows** > **데이터 원본** > **보기** 를 선택 하 여 엽니다.
+   > 데이터 소스 창이 열려 있지 않으면 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 하 여 엽니다.
 
 3. 드롭다운 메뉴에서 **사용자 지정**을 클릭 합니다. 다음 대화 상자 중 하나가 열립니다.
 
@@ -76,11 +76,11 @@ ms.locfileid: "75587110"
 
      컨트롤에는 다음 특성 중 하나가 있어야 합니다.
 
-    |특성|설명|
+    |attribute|설명|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|<xref:System.Windows.Forms.TextBox>같은 데이터의 단일 열 또는 속성을 표시 하는 간단한 컨트롤에 대해이 특성을 구현 합니다.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|<xref:System.Windows.Forms.DataGridView>와 같은 데이터 목록 또는 테이블을 표시 하는 컨트롤에 대해이 특성을 구현 합니다.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|데이터의 목록이 나 테이블을 표시 하는 컨트롤에 대해이 특성을 구현 하 고 <xref:System.Windows.Forms.ComboBox>같은 단일 열 이나 속성을 제공 해야 합니다.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|와 같은 데이터의 단일 열 또는 속성을 표시 하는 간단한 컨트롤에 대해이 특성을 구현 <xref:System.Windows.Forms.TextBox> 합니다.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|와 같은 데이터의 목록 (또는 테이블)을 표시 하는 컨트롤에 대해이 특성을 구현 <xref:System.Windows.Forms.DataGridView> 합니다.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|데이터의 목록이 나 테이블을 표시 하는 컨트롤에 대해이 특성을 구현 합니다. 단, 단일 열 또는 속성 (예:)도 제공 해야 <xref:System.Windows.Forms.ComboBox> 합니다.|
 
 2. Windows Forms의 경우 **옵션** 대화 상자에서 **데이터 UI 사용자 지정** 페이지를 엽니다. 또는 WPF의 경우 **컨트롤 바인딩 사용자 지정** 대화 상자를 엽니다. 자세한 내용은 [데이터 형식에 대 한 바인딩 가능한 컨트롤 목록 사용자 지정](#customize-the-bindable-controls-list)을 참조 하세요.
 

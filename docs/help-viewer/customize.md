@@ -1,7 +1,7 @@
 ---
 title: 도움말 뷰어 사용자 지정
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_options
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edcdee8ffe4c2b8a97f4ed65ae86f925db42b1c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825020"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284974"
 ---
 # <a name="customize-the-help-viewer"></a>도움말 뷰어 사용자 지정
 글꼴 크기, 최대 결과 수 및 영어 콘텐츠 포함 여부 등의 다른 옵션은 물론, 도움말 뷰어 창의 레이아웃을 사용자 지정할 수 있습니다.
@@ -43,8 +43,8 @@ ms.locfileid: "67825020"
 |텍스트가 표시되는 글꼴의 크기 변경|**텍스트 크기** 목록에서 크기를 선택합니다.|
 |**검색** 탭에 나타나는 최대 검색 결과 수를 변경합니다.|**최대 검색 결과** 목록에서 값을 선택합니다.|
 |**즐겨찾기** 창에 나타나는 최대 기록 항목 수를 변경합니다.|**저장되는 최대 기록 항목** 목록에서 값을 선택합니다.|
-|영어 이외의 제품 버전에 대한 콘텐츠를 볼 때 영어 콘텐츠를 포함 또는 제외합니다.|**모든 탐색 탭과 F1 요청에 영어 콘텐츠 포함** 확인란을 선택하거나 선택 취소합니다. **주의:**  또한 이 기능은 **콘텐츠 관리** 탭에서 영어 콘텐츠를 다운로드할 수 있는지 여부를 제어하기도 합니다.|
+|영어 이외의 제품 버전에 대한 콘텐츠를 볼 때 영어 콘텐츠를 포함 또는 제외합니다.|**모든 탐색 탭과 F1 요청에 영어 콘텐츠 포함** 확인란을 선택하거나 선택 취소합니다. **주의:** 또한, 이 기능은 **콘텐츠 관리** 탭에서 영어 콘텐츠를 다운로드할 수 있는지 여부를 제어하기도 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

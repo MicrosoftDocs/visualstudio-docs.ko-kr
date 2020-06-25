@@ -1,7 +1,7 @@
 ---
 title: '방법: 엔터티 클래스에 유효성 검사 추가'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586564"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282347"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>방법: 엔터티 클래스에 유효성 검사 추가
 엔터티 클래스의 *유효성 검사*는 데이터 개체에 입력된 값이 개체의 스키마 제약 조건과 애플리케이션에 대해 설정된 규칙을 따르는지 확인하는 과정입니다. 업데이트를 내부 데이터베이스에 보내기 전에 데이터의 유효성을 검사하면 오류를 줄일 수 있습니다. 또한 애플리케이션과 데이터베이스 간에 발생할 수 있는 잠재적 라운드트립 횟수를 줄일 수 있습니다.
@@ -33,7 +33,7 @@ ms.locfileid: "75586564"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>열의 값을 변경하는 동안 데이터의 유효성을 검사하려면
 
-1. **O/R 디자이너**에서 새 LINQ to SQL 클래스 파일 ( **.dbml** 파일)을 열거나 만듭니다. (**솔루션 탐색기**에서 **.dbml** 파일을 두 번 클릭합니다.)
+1. **O/R 디자이너**에서 새 LINQ to SQL 클래스 파일 (**.dbml** 파일)을 열거나 만듭니다. (**솔루션 탐색기**에서 **.dbml** 파일을 두 번 클릭합니다.)
 
 2. **O/R 디자이너**에서 유효성 검사를 추가할 클래스를 마우스 오른쪽 단추로 클릭한 다음, **코드 보기**를 클릭합니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "75586564"
 
     C# 프로젝트의 경우:
 
-    프로젝트 C# 는 이벤트 처리기를 자동으로 생성 하지 않으므로 IntelliSense를 사용 하 여 열 변경 부분 메서드를 만들 수 있습니다. `partial`을 입력한 다음 사용 가능한 부분 메서드에 액세스하기 위한 공간을 입력합니다. 유효성 검사를 추가할 열에 대해 열 변경 메서드를 클릭합니다. 다음 코드는 열 변경 부분 메서드를 선택할 때 생성 되는 코드와 비슷합니다.
+    C # 프로젝트는 이벤트 처리기를 자동으로 생성 하지 않으므로 IntelliSense를 사용 하 여 열 변경 부분 메서드를 만들 수 있습니다. `partial`을 입력한 다음 사용 가능한 부분 메서드에 액세스하기 위한 공간을 입력합니다. 유효성 검사를 추가할 열에 대해 열 변경 메서드를 클릭합니다. 다음 코드는 열 변경 부분 메서드를 선택할 때 생성 되는 코드와 비슷합니다.
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -79,7 +79,7 @@ ms.locfileid: "75586564"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>엔터티 클래스에 대한 업데이트 동안 데이터의 유효성을 검사하려면
 
-1. **O/R 디자이너**에서 새 LINQ to SQL 클래스 파일 ( **.dbml** 파일)을 열거나 만듭니다. (**솔루션 탐색기**에서 **.dbml** 파일을 두 번 클릭합니다.)
+1. **O/R 디자이너**에서 새 LINQ to SQL 클래스 파일 (**.dbml** 파일)을 열거나 만듭니다. (**솔루션 탐색기**에서 **.dbml** 파일을 두 번 클릭합니다.)
 
 2. **O/R 디자이너**에서 마우스 오른쪽 단추로 빈 영역을 클릭하고 **코드 보기**를 클릭합니다.
 
@@ -106,7 +106,7 @@ ms.locfileid: "75586564"
 
     C# 프로젝트의 경우:
 
-    프로젝트 C# 는 이벤트 처리기를 자동으로 생성 하지 않으므로 IntelliSense를 사용 하 여 부분 `UpdateCLASSNAME` 메서드를 만들 수 있습니다. `partial`을 입력한 다음 사용 가능한 부분 메서드에 액세스하기 위한 공간을 입력합니다. 유효성 검사를 추가 하려는 클래스의 업데이트 메서드를 클릭 합니다. 다음 코드는 `UpdateCLASSNAME` 부분 메서드를 선택할 때 생성 되는 코드와 비슷합니다.
+    C # 프로젝트는 이벤트 처리기를 자동으로 생성 하지 않으므로 IntelliSense를 사용 하 여 부분 메서드를 만들 수 있습니다 `UpdateCLASSNAME` . `partial`을 입력한 다음 사용 가능한 부분 메서드에 액세스하기 위한 공간을 입력합니다. 유효성 검사를 추가 하려는 클래스의 업데이트 메서드를 클릭 합니다. 다음 코드는 부분 메서드를 선택할 때 생성 되는 코드와 비슷합니다 `UpdateCLASSNAME` .
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

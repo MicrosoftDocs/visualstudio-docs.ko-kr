@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 735a4cc533312bcfa3823410780b09caa4f53fde
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173943"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282763"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF 및 Entity Framework 6을 사용하여 간단한 데이터 애플리케이션 만들기
 
-이 연습에서는 Visual Studio에서 기본 "데이터 폼" 응용 프로그램을 만드는 방법을 보여 줍니다. 앱은 SQL Server LocalDB, Northwind 데이터베이스, Entity Framework 6 및 Windows Presentation Foundation를 사용 합니다. 마스터-세부 보기를 사용 하 여 기본 데이터 바인딩을 수행 하는 방법을 보여 줍니다. 또한 **다음으로 이동**, **이전**으로 이동, **처음으로**이동, **끝으로 이동**, **업데이트** 및 **삭제**단추가 포함 된 사용자 지정 바인딩 탐색기가 있습니다.
+이 연습에서는 Visual Studio에서 기본 "데이터 폼" 응용 프로그램을 만드는 방법을 보여 줍니다. 앱은 SQL Server LocalDB, Northwind 데이터베이스 Entity Framework 6 (Entity Framework Core 아님)을 사용 하 고 .NET Framework에 대해 Windows Presentation Foundation를 사용 합니다 (.NET Core 아님). 마스터-세부 보기를 사용 하 여 기본 데이터 바인딩을 수행 하는 방법을 보여 줍니다. 또한 **다음으로 이동**, **이전**으로 이동, **처음으로**이동, **끝으로 이동**, **업데이트** 및 **삭제**단추가 포함 된 사용자 지정 바인딩 탐색기가 있습니다.
 
 이 문서에서는 Visual Studio에서 데이터 도구를 사용 하는 방법을 집중적으로 설명 하며, 기본 기술에 대해 설명 하지 않습니다. XAML, Entity Framework 및 SQL에 대 한 기본적인 지식이 있다고 가정 합니다. 또한이 예제에서는 WPF 응용 프로그램의 표준인 MVVM (모델-뷰-ViewModel) 아키텍처를 보여 주지 않습니다. 그러나이 코드를 수정 하지 않은 사용자 고유의 MVVM 응용 프로그램으로 복사할 수 있습니다.
 
@@ -427,7 +427,7 @@ Windows Forms 응용 프로그램에서는 데이터베이스의 행을 탐색 �
 
 디버깅을 시작하려면 **F5** 키를 누릅니다. 표에서 customer 및 order 데이터를 채우고 탐색 단추가 예상 대로 작동 해야 합니다. 데이터를 입력 한 후 새 고객 또는 주문을 모델에 추가 하려면 **커밋** 을 클릭 합니다. 데이터를 저장 하지 않고 새 고객 또는 새 주문 양식으로 돌아가려면 **취소** 를 클릭 합니다. 텍스트 상자에서 기존 고객과 주문을 직접 편집할 수 있으며 이러한 변경 내용은 자동으로 모델에 기록 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Entity Framework 설명서](/ef/)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184577"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283348"
 ---
 # <a name="usage-warnings"></a>사용법 경고
 
@@ -72,6 +72,7 @@ ms.locfileid: "84184577"
 |[CA2241: 서식 지정 메서드에 올바른 인수를 제공하십시오.](../code-quality/ca2241.md)|System.string에 전달 된 format 인수에 각 개체 인수에 해당 하는 형식 항목이 포함 되어 있지 않거나 그 반대의 경우도 마찬가지입니다.|
 |[CA2242: NaN에 대해 정확하게 테스트하십시오.](../code-quality/ca2242.md)|이 식은 Single.Nan 또는 Double.Nan에 대해 값을 테스트합니다. 값을 테스트하려면 Single.IsNan(Single) 또는 Double.IsNan(Double)을 사용합니다.|
 |[CA2243: 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.](../code-quality/ca2243.md)|특성의 문자열 리터럴 매개 변수는 URL, GUID 또는 버전에 대해 올바르게 구문 분석 되지 않습니다.|
-|[CA2244: 인덱싱된 요소 초기화를 복제 하지 마십시오.](../code-quality/ca2244.md)|개체 이니셜라이저에 동일한 상수 인덱스를 사용 하는 두 개 이상의 인덱싱된 요소 이니셜라이저가 있습니다. 마지막 이니셜라이저가 아닌 모두 중복 됩니다.|
-|[CA2245: 속성을 자신에 게 할당 하지 않습니다.](../code-quality/ca2245.md)|속성이 실수로 자신에 게 할당 되었습니다.|
-|[CA2246: 동일한 문에서 기호와 해당 멤버를 할당 하지 않습니다.](../code-quality/ca2246.md)|동일한 문에서 기호와 해당 멤버, 즉 필드 또는 속성을 할당 하는 것은 권장 되지 않습니다. 멤버 액세스에서 할당 전 기호의 이전 값을 사용 하거나이 문의 할당에서 새 값을 사용 하기 위한 것은 분명 하지 않습니다.|
+|[CA2244: 인덱싱된 요소의 초기화는 복제하면 안 됩니다.](../code-quality/ca2244.md)|개체 이니셜라이저에 동일한 상수 인덱스를 사용 하는 두 개 이상의 인덱싱된 요소 이니셜라이저가 있습니다. 마지막 이니셜라이저가 아닌 모두 중복 됩니다.|
+|[CA2245: 속성을 자체에 할당하지 마세요.](../code-quality/ca2245.md)|속성이 실수로 자신에 게 할당 되었습니다.|
+|[CA2246: 동일한 문에 기호 및 해당 멤버를 할당하지 마세요.](../code-quality/ca2246.md)|동일한 문에서 기호와 해당 멤버, 즉 필드 또는 속성을 할당 하는 것은 권장 되지 않습니다. 멤버 액세스에서 할당 전 기호의 이전 값을 사용 하거나이 문의 할당에서 새 값을 사용 하기 위한 것은 분명 하지 않습니다.|
+|[CA2248: ' Enum. HasFlag '에 올바른 ' enum ' 인수를 제공 하십시오.](../code-quality/ca2248.md)|메서드 호출에 인수로 전달 된 열거형 형식이 호출 하는 `HasFlag` 열거형 형식과 다릅니다.|

@@ -1,7 +1,7 @@
 ---
 title: 데이터 바인딩 사용자 지정 개체
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 09e3ad2cfc2690c27e4e26e51f6b40d7afd79f54
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586993"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282932"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio에서 개체를 데이터 원본으로 바인딩
 
@@ -34,7 +34,7 @@ Visual Studio는 사용자 지정 개체를 응용 프로그램의 데이터 소
 
 Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정 개체의 유일한 요구 사항은 개체에 public 속성이 하나 이상 있어야 한다는 것입니다.
 
-일반적으로 사용자 지정 개체에는 응용 프로그램의 데이터 소스 역할을 하는 특정 인터페이스, 생성자 또는 특성이 필요 하지 않습니다. 그러나 데이터 **소스** 창에서 디자인 화면으로 개체를 끌어 데이터 바인딩된 컨트롤을 만들고 개체가 <xref:System.ComponentModel.ITypedList> 또는 <xref:System.ComponentModel.IListSource> 인터페이스를 구현 하는 경우 개체에는 기본 생성자가 있어야 합니다. 그렇지 않으면 Visual Studio에서 데이터 소스 개체를 인스턴스화할 수 없으며, 항목을 디자인 화면으로 끌 때 오류가 표시 됩니다.
+일반적으로 사용자 지정 개체에는 응용 프로그램의 데이터 소스 역할을 하는 특정 인터페이스, 생성자 또는 특성이 필요 하지 않습니다. 그러나 데이터 **소스** 창에서 디자인 화면으로 개체를 끌어 데이터 바인딩된 컨트롤을 만들고 개체가 또는 인터페이스를 구현 하는 경우 <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> 개체에는 기본 생성자가 있어야 합니다. 그렇지 않으면 Visual Studio에서 데이터 소스 개체를 인스턴스화할 수 없으며, 항목을 디자인 화면으로 끌 때 오류가 표시 됩니다.
 
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>사용자 지정 개체를 데이터 원본으로 사용 하는 예
 
@@ -56,14 +56,14 @@ Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정
 
 이 예에서는 Tableadapter를 사용 하 여 개체에 데이터를 로드 합니다. 기본적으로 Tableadapter는 데이터베이스에서 데이터를 가져오고 데이터 테이블을 채우는 두 가지 종류의 메서드를 사용 하 여 생성 됩니다.
 
-- `TableAdapter.Fill` 메서드는 기존 데이터 테이블을 반환 된 데이터로 채웁니다.
+- `TableAdapter.Fill`메서드는 기존 데이터 테이블을 반환 된 데이터로 채웁니다.
 
-- `TableAdapter.GetData` 메서드는 데이터로 채워진 새 데이터 테이블을 반환 합니다.
+- `TableAdapter.GetData`메서드는 데이터로 채워진 새 데이터 테이블을 반환 합니다.
 
-데이터를 사용 하 여 사용자 지정 개체를 로드 하는 가장 쉬운 방법은 `TableAdapter.GetData` 메서드를 호출 하 고, 반환 된 데이터 테이블의 행 컬렉션을 반복 하 고 각 개체를 각 행의 값으로 채우는 것입니다. TableAdapter에 추가 된 쿼리에 대해 채워진 데이터 테이블을 반환 하는 `GetData` 메서드를 만들 수 있습니다.
+데이터를 사용 하 여 사용자 지정 개체를 로드 하는 가장 쉬운 방법은 메서드를 호출 하 `TableAdapter.GetData` 고, 반환 된 데이터 테이블의 행 컬렉션을 반복 하 고 각 개체를 각 행의 값으로 채우는 것입니다. `GetData`TableAdapter에 추가 된 쿼리에 대해 채워진 데이터 테이블을 반환 하는 메서드를 만들 수 있습니다.
 
 > [!NOTE]
-> Visual Studio는 기본적으로 `Fill` 하 고 `GetData` TableAdapter 쿼리의 이름을 지정할 수 있지만 이러한 이름을 유효한 메서드 이름으로 변경할 수 있습니다.
+> Visual Studio는 TableAdapter 쿼리를 `Fill` `GetData` 기본적으로의 이름을 지정할 수 있지만 이러한 이름을 유효한 메서드 이름으로 변경할 수 있습니다.
 
 다음 예에서는 데이터 테이블의 행을 반복 하 고 데이터를 사용 하 여 개체를 채우는 방법을 보여 줍니다.
 
@@ -74,46 +74,46 @@ Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정
 
 개체에 대 한 컬렉션 클래스를 만들거나 [BindingSource 구성 요소](/dotnet/framework/winforms/controls/bindingsource-component)에서 자동으로 제공 하는 형식화 된 컬렉션을 사용할 수 있습니다.
 
-개체에 대 한 사용자 지정 컬렉션 클래스를 만들 때 <xref:System.ComponentModel.BindingList%601>에서 상속 하는 것이 좋습니다. 이 제네릭 클래스는 컬렉션을 관리 하는 기능 뿐만 아니라 Windows Forms의 데이터 바인딩 인프라에 알림을 보내는 이벤트를 발생 시키는 기능을 제공 합니다.
+개체에 대 한 사용자 지정 컬렉션 클래스를 만들 때에서 상속 하는 것이 좋습니다 <xref:System.ComponentModel.BindingList%601> . 이 제네릭 클래스는 컬렉션을 관리 하는 기능 뿐만 아니라 Windows Forms의 데이터 바인딩 인프라에 알림을 보내는 이벤트를 발생 시키는 기능을 제공 합니다.
 
-<xref:System.Windows.Forms.BindingSource>에서 자동으로 생성 된 컬렉션은 형식화 된 컬렉션에 대 한 <xref:System.ComponentModel.BindingList%601>를 사용 합니다. 응용 프로그램에 추가 기능이 필요 하지 않은 경우 <xref:System.Windows.Forms.BindingSource>내에서 컬렉션을 유지할 수 있습니다. 자세한 내용은 참조 하세요. 합니다 <xref:System.Windows.Forms.BindingSource.List%2A> 의 속성을 <xref:System.Windows.Forms.BindingSource> 클래스.
+에서 자동으로 생성 된 컬렉션은 <xref:System.Windows.Forms.BindingSource> <xref:System.ComponentModel.BindingList%601> 형식화 된 컬렉션에 대해를 사용 합니다. 응용 프로그램에 추가 기능이 필요 하지 않은 경우 내에서 컬렉션을 유지할 수 있습니다 <xref:System.Windows.Forms.BindingSource> . 자세한 내용은 <xref:System.Windows.Forms.BindingSource.List%2A> 클래스의 속성을 참조 하세요 <xref:System.Windows.Forms.BindingSource> .
 
 > [!NOTE]
-> 컬렉션에 <xref:System.ComponentModel.BindingList%601>의 기본 구현에서 제공 하지 않는 기능이 필요한 경우 필요에 따라 클래스에 추가할 수 있도록 사용자 지정 컬렉션을 만들어야 합니다.
+> 컬렉션에의 기본 구현에서 제공 하지 않는 기능이 필요한 경우 필요에 따라 <xref:System.ComponentModel.BindingList%601> 클래스에 추가할 수 있도록 사용자 지정 컬렉션을 만들어야 합니다.
 
-다음 코드에서는 강력한 형식의 `Order` 개체 컬렉션에 대 한 클래스를 만드는 방법을 보여 줍니다.
+다음 코드에서는 강력한 형식의 개체 컬렉션에 대 한 클래스를 만드는 방법을 보여 줍니다 `Order` .
 
 [!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
 [!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]
 
 ### <a name="add-objects-to-a-collection"></a>컬렉션에 개체 추가
 
-사용자 지정 컬렉션 클래스 또는 <xref:System.Windows.Forms.BindingSource>의 `Add` 메서드를 호출 하 여 컬렉션에 개체를 추가 합니다.
+사용자 지정 컬렉션 클래스 또는의 메서드를 호출 하 여 컬렉션에 개체를 추가 `Add` <xref:System.Windows.Forms.BindingSource> 합니다.
 
 > [!NOTE]
-> `Add` 메서드는 <xref:System.ComponentModel.BindingList%601>에서 상속할 때 사용자 지정 컬렉션에 대해 자동으로 제공 됩니다.
+> `Add`에서 상속 하는 경우 사용자 지정 컬렉션에 대해 메서드가 자동으로 제공 됩니다 <xref:System.ComponentModel.BindingList%601> .
 
-다음 코드에서는 <xref:System.Windows.Forms.BindingSource>의 형식화 된 컬렉션에 개체를 추가 하는 방법을 보여 줍니다.
+다음 코드에서는의 형식화 된 컬렉션에 개체를 추가 하는 방법을 보여 줍니다 <xref:System.Windows.Forms.BindingSource> .
 
 [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
 [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
 
-다음 코드는 <xref:System.ComponentModel.BindingList%601>에서 상속 되는 형식화 된 컬렉션에 개체를 추가 하는 방법을 보여 줍니다.
+다음 코드에서는에서 상속 되는 형식화 된 컬렉션에 개체를 추가 하는 방법을 보여 줍니다 <xref:System.ComponentModel.BindingList%601> .
 
 > [!NOTE]
-> 이 예제에서 `Orders` 컬렉션은 `Customer` 개체의 속성입니다.
+> 이 예제에서 컬렉션은 `Orders` 개체의 속성입니다 `Customer` .
 
 [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
 [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
 
 ### <a name="remove-objects-from-a-collection"></a>컬렉션에서 개체 제거
 
-사용자 지정 컬렉션 클래스 또는 <xref:System.Windows.Forms.BindingSource>의 `Remove` 또는 `RemoveAt` 메서드를 호출 하 여 컬렉션에서 개체를 제거 합니다.
+`Remove` `RemoveAt` 사용자 지정 컬렉션 클래스 또는의 또는 메서드를 호출 하 여 컬렉션에서 개체를 제거 <xref:System.Windows.Forms.BindingSource> 합니다.
 
 > [!NOTE]
-> `Remove` 및 `RemoveAt` 메서드는 <xref:System.ComponentModel.BindingList%601>에서 상속할 때 사용자 지정 컬렉션에 대해 자동으로 제공 됩니다.
+> `Remove` `RemoveAt` 에서 상속 하는 경우 사용자 지정 컬렉션에 대해 및 메서드가 자동으로 제공 됩니다 <xref:System.ComponentModel.BindingList%601> .
 
-다음 코드에서는 <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> 메서드를 사용 하 여 <xref:System.Windows.Forms.BindingSource>의 형식화 된 컬렉션에서 개체를 찾고 제거 하는 방법을 보여 줍니다.
+다음 코드에서는 메서드를 사용 하 여의 형식화 된 컬렉션에서 개체를 찾고 제거 하는 방법을 보여 줍니다 <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> .
 
 [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
 [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]
@@ -126,7 +126,7 @@ Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정
 
 Windows Forms 컨트롤에 데이터 바인딩된 사용자 지정 개체의 데이터를 편집 하려면 바인딩된 컨트롤의 데이터를 편집 하거나 개체의 속성에서 직접 편집 하면 됩니다. 데이터 바인딩 아키텍처는 개체의 데이터를 업데이트 합니다.
 
-응용 프로그램에서 변경 내용을 추적 해야 하 고 제안 된 변경 내용을 원래 값으로 롤백하는 경우 개체 모델에서이 기능을 구현 해야 합니다. 데이터 테이블에서 제안 된 변경 내용을 추적 하는 방법에 대 한 예는 <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>및 <xref:System.Data.DataTable.GetChanges%2A>를 참조 하세요.
+응용 프로그램에서 변경 내용을 추적 해야 하 고 제안 된 변경 내용을 원래 값으로 롤백하는 경우 개체 모델에서이 기능을 구현 해야 합니다. 데이터 테이블에서 제안 된 변경 내용을 추적 하는 방법에 대 한 예는, 및을 참조 하십시오 <xref:System.Data.DataRowState> <xref:System.Data.DataSet.HasChanges%2A> <xref:System.Data.DataTable.GetChanges%2A> .
 
 ### <a name="save-data-in-objects-back-to-the-database"></a>개체의 데이터를 데이터베이스에 다시 저장 합니다.
 
@@ -137,12 +137,12 @@ Visual Studio는 데이터베이스에 대해 직접 실행할 수 있는 DBDire
 |TableAdapter DBDirect 메서드|설명|
 | - |-----------------|
 |`TableAdapter.Insert`|데이터베이스에 새 레코드를 추가 하 여 개별 열 값을 메서드 매개 변수로 전달할 수 있도록 합니다.|
-|`TableAdapter.Update`|데이터베이스의 기존 레코드를 업데이트 합니다. Update 메서드는 원래 열 값과 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 사용 하 여 원래 레코드를 찾은 다음 새 값을 사용 하 여 해당 레코드를 업데이트 합니다.<br /><br /> `TableAdapter.Update` 메서드는 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>또는 <xref:System.Data.DataRow>s의 배열을 메서드 매개 변수로 사용 하 여 데이터 집합의 변경 내용을 데이터베이스에 다시 조정 하는 데도 사용 됩니다.|
+|`TableAdapter.Update`|데이터베이스의 기존 레코드를 업데이트 합니다. Update 메서드는 원래 열 값과 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 사용 하 여 원래 레코드를 찾은 다음 새 값을 사용 하 여 해당 레코드를 업데이트 합니다.<br /><br /> 메서드는의,, `TableAdapter.Update` <xref:System.Data.DataSet> <xref:System.Data.DataTable> <xref:System.Data.DataRow> 또는 배열을 <xref:System.Data.DataRow> 메서드 매개 변수로 사용 하 여 데이터 집합의 변경 내용을 데이터베이스에 다시 조정 하는 데도 사용 됩니다.|
 |`TableAdapter.Delete`|메서드 매개 변수로 전달 된 원래 열 값을 기준으로 데이터베이스에서 기존 레코드를 삭제 합니다.|
 
 개체의 컬렉션에서 데이터를 저장 하려면 개체의 컬렉션을 반복 합니다. 예를 들어 for next 루프를 사용 합니다. TableAdapter의 DBDirect 메서드를 사용 하 여 각 개체의 값을 데이터베이스로 보냅니다.
 
-다음 예에서는 `TableAdapter.Insert` DBDirect 메서드를 사용 하 여 새 고객을 데이터베이스에 직접 추가 하는 방법을 보여 줍니다.
+다음 예에서는 dbdirect 메서드를 사용 하 여 `TableAdapter.Insert` 새 고객을 데이터베이스에 직접 추가 하는 방법을 보여 줍니다.
 
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]

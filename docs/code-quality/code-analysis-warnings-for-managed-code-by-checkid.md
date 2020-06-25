@@ -165,6 +165,10 @@ f1_keywords:
 - CA1827
 - CA1828
 - CA1829
+- CA1831
+- CA1832
+- CA1833
+- CA1835
 - CA1900
 - CA1901
 - CA1903
@@ -177,6 +181,9 @@ f1_keywords:
 - CA2007
 - CA2009
 - CA2011
+- CA2012
+- CA2013
+- CA2014
 - CA2015
 - CA2100
 - CA2101
@@ -279,12 +286,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ea04276b7b2fe3dfb5814fbd31602134641b8ef
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b4bfee67e23c40d8ddf9dbfac42bc803d5576c43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180040"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283413"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -356,8 +363,8 @@ ms.locfileid: "84180040"
 | CA1066 | [CA1066: Equals를 재정의할 때 IEquatable을 구현하세요.](../code-quality/ca1066.md) | 값 형식은 <xref:System.Object.Equals%2A> 메서드를 재정의 하지만는 구현 하지 않습니다 <xref:System.IEquatable%601> . |
 | CA1067 | [CA1067: IEquatable을 구현할 때 Equals를 재정의하세요.](../code-quality/ca1067.md) | 형식은를 구현 <xref:System.IEquatable%601> 하지만 메서드를 재정의 하지 않습니다 <xref:System.Object.Equals%2A> . |
 | CA1068 | [CA1068: CancellationToken 매개 변수는 마지막에 위치해야 합니다.](../code-quality/ca1068.md) | 메서드에 마지막 매개 변수가 아닌 CancellationToken 매개 변수가 있습니다. |
-| CA1069 | [CA1069: 열거형은 중복 값을 사용할 수 없습니다.](../code-quality/ca1069.md) | 열거형에는 동일한 상수 값을 명시적으로 할당 하는 여러 멤버가 있습니다. |
-| CA1070 | [CA1070: 이벤트 필드를 가상으로 선언 하지 마십시오.](../code-quality/ca1070.md) | [필드와 유사한 이벤트가](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) 가상으로 선언 되었습니다. |
+| CA1069 | [CA1069: 열거형에 중복 값이 없어야 합니다.](../code-quality/ca1069.md) | 열거형에는 동일한 상수 값을 명시적으로 할당 하는 여러 멤버가 있습니다. |
+| CA1070 | [CA1070: 이벤트 필드를 가상으로 선언하지 마세요.](../code-quality/ca1070.md) | [필드와 유사한 이벤트가](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) 가상으로 선언 되었습니다. |
 | CA1200 | [CA1200: 접두사를 사용하여 cref 태그 사용 방지](../code-quality/ca1200.md) | XML 문서 태그의 [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 특성은 "코드 참조"를 의미 합니다. 태그의 내부 텍스트를 형식, 메서드, 속성 등의 코드 요소로 지정합니다. `cref`컴파일러가 참조를 확인 하는 것을 방지 하므로 접두사와 함께 태그를 사용 하지 마십시오. 또한 Visual Studio IDE (통합 개발 환경)에서 리팩터링 중에 이러한 기호 참조를 찾아 업데이트할 수 없습니다. |
 | CA1300 | [CA1300: MessageBoxOptions를 지정하세요.](../code-quality/ca1300.md) | 오른쪽에서 왼쪽으로 읽기 순서를 사용하는 문화권에 대해 메시지 상자를 올바로 표시하려면 MessageBoxOptions 열거형의 RightAlign 및 RtlReading 멤버를 Show 메서드로 전달해야 합니다. |
 | CA1301 | [CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.](../code-quality/ca1301.md) | 액셀러레이터 키라고도 하는 선택키를 사용하면 Alt 키를 사용하여 키보드로 컨트롤에 액세스할 수 있습니다. 여러 컨트롤에 중복 된 액세스 키가 있는 경우에는 액세스 키의 동작이 제대로 정의 되지 않습니다. |
@@ -443,6 +450,10 @@ ms.locfileid: "84180040"
 | CA1827 |[CA1827: Any를 사용할 수 있는 경우 Count/LongCount를 사용하지 마세요.](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>또는 메서드가 <xref:System.Linq.Enumerable.LongCount%2A> 더 효율적으로 사용 되었습니다 <xref:System.Linq.Enumerable.Any%2A> . |
 | CA1828 |[CA1828: AnyAsync를 사용할 수 있는 경우 CountAsync/LongCountAsync를 사용하지 마세요.](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>또는 메서드가 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> 더 효율적으로 사용 되었습니다 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> . |
 | CA1829 |[CA1829: Enumerable.Count 메서드 대신 Length/Count 속성을 사용하세요.](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ 메서드가 동등한, 보다 효율적인 또는 속성을 지 원하는 형식에서 사용 `Length` 되었습니다 `Count` . |
+| CA1831 |[CA1831: 해당 하는 경우 문자열에 대해 범위 기반 인덱서 대신 AsSpan을 사용 합니다.](../code-quality/ca1831.md) | 문자열에 범위 인덱서를 사용 하 고 해당 값을 ReadOnlySpan char 형식에 암시적으로 할당 하는 경우 &lt; &gt; 이 메서드는 <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 문자열의 요청 된 부분 복사본을 생성 하는 대신 사용 됩니다. |
+| CA1832 |[CA1832: 배열의 ReadOnlySpan 또는 ReadOnlyMemory 부분을 가져오기 위해 범위 기반 인덱서 대신 AsSpan 또는 Asspan를 사용 합니다.](../code-quality/ca1832.md) | 배열에 범위-인덱서를 사용 하 고 또는 형식에 값을 암시적으로 할당 하는 경우 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> 이 메서드는 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 배열에서 요청 된 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 부분의 복사본을 생성 하는 대신 사용 됩니다. |
+| CA1833 |[CA1833: 배열의 범위 또는 메모리 부분을 가져오기 위해 범위 기반 인덱서 대신 AsSpan 또는 Asspan를 사용 합니다.](../code-quality/ca1833.md) | 배열에 범위-인덱서를 사용 하 고 또는 형식에 값을 암시적으로 할당 하는 경우 <xref:System.Span%601> <xref:System.Memory%601> 이 메서드는 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 배열에서 요청 된 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 부분의 복사본을 생성 하는 대신 사용 됩니다. |
+| CA1835 |[CA1835: ' ReadAsync ' 및 ' WriteAsync '에 대해 ' Memory' 기반 오버 로드를 선호 합니다.](../code-quality/ca1835.md) | ' Stream '에는 첫 번째 인수로 ' Memory Byte '를 사용 하는 ' ReadAsync ' 오버 로드 &lt; &gt; 와 ' ReadOnlyMemory &lt; Byte &gt; '를 첫 번째 인수로 사용 하는 ' WriteAsync ' 오버 로드가 있습니다. 더 효율적인 메모리 기반 오버 로드를 호출 하는 것이 좋습니다. |
 | CA1900 | [CA1900: 값 형식 필드는 이식 가능해야 합니다.](../code-quality/ca1900.md) | 이 규칙에서는 명시적 레이아웃으로 선언된 구조체가 64비트 운영 체제에서 비관리 코드로 마샬링될 때 올바르게 맞춰지는지 검사합니다. |
 | CA1901 | [CA1901: P/Invoke 선언은 이식 가능 해야 합니다.](../code-quality/ca1901.md) | 이 규칙은 P/Invoke의 반환 값과 각 매개 변수의 크기를 계산하여 32비트 및 64비트 운영 체제에서 비관리 코드로 마샬링될 때 해당 매개 변수의 크기가 올바른지 확인합니다. |
 | CA1903 | [CA1903: 대상 프레임워크의 API만 사용하세요.](../code-quality/ca1903.md) | 멤버 또는 형식이 프로젝트의 대상 프레임워크에 함께 포함되지 않은 서비스 팩에 도입된 멤버 또는 형식을 사용합니다. |
@@ -454,7 +465,10 @@ ms.locfileid: "84180040"
 | CA2006 | [CA2006: SafeHandle을 사용하여 네이티브 리소스를 캡슐화하세요.](../code-quality/ca2006.md) | 관리 코드에 IntPtr을 사용하는 것은 잠재적인 보안 및 안정성 문제를 나타냅니다. IntPtr을 사용할 때마다 SafeHandle 또는 유사한 기술을 대신 사용해야 하는지 여부를 결정하도록 검토해야 합니다. |
 | CA2007 | [CA2007: 작업을 직접 대기하지 마세요.](ca2007.md) | 비동기 메서드는를 직접 [기다립니다](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> 합니다. 비동기 메서드가 <xref:System.Threading.Tasks.Task> 직접 기다립니다 작업을 만든 스레드와 동일한 스레드에서 연속 작업을 수행 합니다. 이 동작은 성능 측면에서 비용이 많이 들 수 있으며 UI 스레드에 교착 상태가 발생할 수 있습니다. 을 호출 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 하 여 연속 작업을 위한 신호를 보내는 것이 좋습니다. |
 | CA2009 | [CA2009: ImmutableCollection 값의 ToImmutableCollection을 호출하지 마세요.](ca2009.md) | `ToImmutable`네임 스페이스의 변경할 수 없는 컬렉션에 대해 메서드를 불필요 하 게 호출 했습니다 <xref:System.Collections.Immutable> . |
-| CA2011 | [CA2011: setter 내에서 속성을 할당 하지 마십시오.](ca2011.md) | 속성에 해당 하는 자체 [set 접근자](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)내에 값이 실수로 할당 되었습니다. |
+| CA2011 | [CA2011: Setter 내에서 속성을 할당하지 마세요.](ca2011.md) | 속성에 해당 하는 자체 [set 접근자](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)내에 값이 실수로 할당 되었습니다. |
+| CA2012 | [CA2012: ValueTasks를 올바르게 사용 합니다.](ca2012.md) | 멤버 호출에서 반환 되는 ValueTasks는 직접 대기 합니다.  는 특정 기능을 여러 번 사용 하거나 완료 되기 전에 한 결과에 직접 액세스 하려고 시도 하 여 예외 또는 손상이 발생할 수 있습니다.  이러한 것을 무시 하면 기능적 버그를 나타낼 수 있으며 성능이 저하 될 수 있습니다. |
+| CA2013 | [CA2013: ReferenceEquals를 값 형식과 함께 사용 하지 마십시오.](ca2013.md) | 를 사용 하 여 값을 비교할 때 <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> objA와 Obja가 값 형식이 면 메서드로 전달 되기 전에 boxing 됩니다 <xref:System.Object.ReferenceEquals%2A> . 즉, objA와 Obja가 모두 값 형식의 동일한 인스턴스를 나타내는 경우에도 <xref:System.Object.ReferenceEquals%2A> 메서드에서 false를 반환 합니다. |
+| CA2014 | [CA2014: 루프에서 stackalloc을 사용 하지 마십시오.](ca2014.md) | Stackalloc에 의해 할당 된 스택 공간은 현재 메서드 호출의 끝 에서만 해제 됩니다.  루프에서이를 사용 하면 바인딩되지 않은 스택 증가 및 최종 스택 오버플로 조건이 발생할 수 있습니다. |
 | CA2015 | [CA2015: MemoryManager T에서 파생 된 형식에 대 한 종료자를 정의 하지 않습니다. &lt;&gt;](ca2015.md) | 에서 파생 된 형식에 종료자를 추가 하면에서 <xref:System.Buffers.MemoryManager%601> 아직 사용 중인 메모리를 해제할 수 있습니다 <xref:System.Span%601> . |
 | CA2100 | [CA2100: 보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.](../code-quality/ca2100.md) | 메서드가 메서드에 대한 문자열 인수로부터 만들어진 문자열을 사용하여 System.Data.IDbCommand.CommandText 속성을 설정합니다. 이 규칙에서는 문자열 인수에 사용자 입력이 포함된 것으로 가정합니다. 사용자 입력으로부터 만들어진 SQL 명령 문자열은 SQL 삽입 공격에 취약합니다. |
 | CA2101 |[CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101.md) | 플랫폼 호출 멤버가 부분 신뢰 호출자를 허용하고, 문자열 매개 변수를 사용하고, 문자열을 명시적으로 마샬링하지 않습니다. 이렇게 하면 보안상 위험할 수 있습니다. |
@@ -544,17 +558,21 @@ ms.locfileid: "84180040"
 | CA2241 | [CA2241: 서식 지정 메서드에 올바른 인수를 제공하십시오.](../code-quality/ca2241.md) | System.String.Format에 전달된 format 인수에 각 개체 인수에 해당하는 형식 항목이 없거나 각 형식 항목에 해당하는 개체 인수가 없습니다. |
 | CA2242 |[CA2242: NaN에 대해 정확하게 테스트하십시오.](../code-quality/ca2242.md) | 이 식은 Single.Nan 또는 Double.Nan에 대해 값을 테스트합니다. 값을 테스트하려면 Single.IsNan(Single) 또는 Double.IsNan(Double)을 사용합니다. |
 | CA2243 |[CA2243: 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.](../code-quality/ca2243.md) | 특성의 문자열 리터럴 매개 변수가 URL, GUID 또는 버전에 대해 구문을 올바르게 분석하지 않습니다. |
-| CA2244 | [CA2244: 인덱싱된 요소 초기화를 복제 하지 마십시오.](../code-quality/ca2244.md) | 개체 이니셜라이저에 동일한 상수 인덱스를 사용 하는 두 개 이상의 인덱싱된 요소 이니셜라이저가 있습니다. 마지막 이니셜라이저가 아닌 모두 중복 됩니다. |
-| CA2245 | [CA2245: 속성을 자신에 게 할당 하지 않습니다.](../code-quality/ca2245.md) | 속성이 실수로 자신에 게 할당 되었습니다. |
-| CA2246 | [CA2246: 동일한 문에서 기호와 해당 멤버를 할당 하지 않습니다.](../code-quality/ca2246.md) | 동일한 문에서 기호와 해당 멤버, 즉 필드 또는 속성을 할당 하는 것은 권장 되지 않습니다. 멤버 액세스에서 할당 전 기호의 이전 값을 사용 하거나이 문의 할당에서 새 값을 사용 하기 위한 것은 분명 하지 않습니다. |
+| CA2244 | [CA2244: 인덱싱된 요소의 초기화는 복제하면 안 됩니다.](../code-quality/ca2244.md) | 개체 이니셜라이저에 동일한 상수 인덱스를 사용 하는 두 개 이상의 인덱싱된 요소 이니셜라이저가 있습니다. 마지막 이니셜라이저가 아닌 모두 중복 됩니다. |
+| CA2245 | [CA2245: 속성을 자체에 할당하지 마세요.](../code-quality/ca2245.md) | 속성이 실수로 자신에 게 할당 되었습니다. |
+| CA2246 | [CA2246: 동일한 문에 기호 및 해당 멤버를 할당하지 마세요.](../code-quality/ca2246.md) | 동일한 문에서 기호와 해당 멤버, 즉 필드 또는 속성을 할당 하는 것은 권장 되지 않습니다. 멤버 액세스에서 할당 전 기호의 이전 값을 사용 하거나이 문의 할당에서 새 값을 사용 하기 위한 것은 분명 하지 않습니다. |
 | CA5122 | [CA5122 P/Invoke 선언이 안전 하 게 중요 한 것은 아닙니다.](../code-quality/ca5122.md) | 메서드는 보안에 중요한 작업을 수행할 때 SecuritySafeCritical로 표시되지만, 투명 코드에서도 안전하게 사용할 수 있습니다. 투명 코드는 P/Invoke를 통해 절대 네이티브 코드를 직접 호출할 수 없습니다. 따라서 P/Invoke를 SecuritySafeCritical로 표시할 경우 투명 코드가 P/Invoke를 호출할 수 없으며, 보안 분석에서 잘못 해석하는 원인이 됩니다. |
 | CA5359 | [CA5359 인증서 유효성 검사를 사용 하지 않도록 설정 안 함](../code-quality/ca5359.md) | 인증서는 서버의 id를 인증 하는 데 도움이 될 수 있습니다. 클라이언트는 서버 인증서의 유효성을 검사 하 여 요청이 원하는 서버로 전송 되도록 해야 합니다. ServerCertificateValidationCallback에서 항상를 반환 `true` 하는 경우 모든 인증서가 유효성 검사를 통과 합니다. |
+| CA5360 | [CA5360는 deserialization에서 위험한 메서드를 호출 하지 않습니다.](../code-quality/ca5360.md) | 안전 하지 않은 deserialization은 신뢰할 수 없는 데이터를 사용 하 여 응용 프로그램의 논리를 남용 하거나, DoS (서비스 거부) 공격을 수행 하거나, deserialize 될 때 임의의 코드를 실행할 때 발생 하는 취약성입니다. 응용 프로그램에서 제어 하는 신뢰할 수 없는 데이터를 deserialize 하는 경우 악의적인 사용자가 이러한 deserialization 기능을 악용할 수 있습니다. 특히 deserialization 프로세스에서 위험한 메서드를 호출 합니다. 안전 하지 않은 deserialization 공격에 성공 하면 공격자가 DoS 공격, 인증 바이패스 및 원격 코드 실행과 같은 공격을 수행할 수 있습니다. |
 | CA5362 | [Deserialize 된 개체 그래프에서 잠재적 참조 주기 CA5362](../code-quality/ca5362.md) | 신뢰할 수 없는 데이터를 deserialize 하는 경우 deserialize 된 개체 그래프를 처리 하는 모든 코드는 무한 루프로 이동 하지 않고 참조 주기를 처리 해야 합니다. 여기에는 deserialization 콜백의 일부인 코드와 deserialization 완료 후 개체 그래프를 처리 하는 코드가 모두 포함 됩니다. 그렇지 않으면 공격자가 참조 주기를 포함 하는 악성 데이터를 사용 하 여 서비스 거부 공격을 수행할 수 있습니다. |
 | CA5365 | [CA5365 HTTP 헤더 검사를 사용 하지 않도록 설정 안 함](../code-quality/ca5365.md) | HTTP 헤더 검사는 응답 헤더에 있는 캐리지 리턴 및 줄 바꿈 문자 (\r 및 \n)의 인코딩을 사용할 수 있도록 합니다. 이 인코딩 헤더에 포함 된 신뢰할 수 없는 데이터를 표시 하는 애플리케이션을 악용 하는 삽입 공격을 방지 하는 데 도움이 됩니다. |
 | CA5366 | [CA5366 데이터 집합에 XmlReader를 사용 하 여 XML 읽기](../code-quality/ca5366.md) | 를 사용 하 여 <xref:System.Data.DataSet> 신뢰할 수 없는 데이터가 있는 XML을 읽으면 <xref:System.Xml.XmlReader> 보안 해결 프로그램을 사용 하거나 DTD 처리를 사용할 수 없는를 사용 하 여 제한 해야 하는 위험한 외부 참조가 로드 될 수 있습니다. |
 | CA5367 | [CA5367는 포인터 필드를 사용 하 여 형식을 직렬화 하지 않습니다.](../code-quality/ca5367.md) | 이 규칙은 포인터 필드 또는 속성이 있는 serializable 클래스가 있는지 여부를 확인 합니다. Serialize 할 수 없는 멤버는 정적 멤버 또는로 표시 된 필드와 같은 포인터 일 수 있습니다 <xref:System.NonSerializedAttribute> . |
 | CA5368 | [페이지에서 파생 된 클래스에 대 한 CA5368 Set ViewStateUserKey](../code-quality/ca5368.md) | 속성을 설정 하면 공격자가 변수를 사용 하 여 <xref:System.Web.UI.Page.ViewStateUserKey> 공격을 생성할 수 없도록 개별 사용자의 뷰 상태 변수에 식별자를 할당할 수 있으므로 응용 프로그램에 대 한 공격을 방지할 수 있습니다. 그렇지 않으면 교차 사이트 요청 위조에 대 한 취약성이 있습니다. |
 | CA5374 | [CA5374 XslTransform 사용 안 함](../code-quality/ca5374.md) | 이 규칙 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> 은가 코드에서 인스턴스화되어 있는지 확인 합니다. <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>는 이제 사용 되지 않으며 사용할 수 없습니다. |
+| CA5375 | [CA5375 계정 공유 액세스 서명 사용 안 함](../code-quality/ca5375.md) | 계정 SAS는 서비스 SAS로 허용 되지 않는 blob 컨테이너, 테이블, 큐 및 파일 공유에 대 한 읽기, 쓰기 및 삭제 작업에 대 한 액세스를 위임할 수 있습니다. 그러나 컨테이너 수준 정책을 지원 하지 않으며 부여 된 사용 권한에 대 한 유연성과 제어 수준이 낮습니다. 악의적인 사용자가이를 가져오면 저장소 계정이 쉽게 손상 됩니다. |
+| CA5376 | [CA5376 SharedAccessProtocol HttpsOnly 사용](../code-quality/ca5376.md) | SAS는 HTTP에서 일반 텍스트로 전송할 수 없는 중요 한 데이터입니다. |
+| CA5377 | [컨테이너 수준 액세스 정책을 사용 하는 CA5377](../code-quality/ca5377.md) | 컨테이너 수준 액세스 정책은 언제 든 지 수정 하거나 취소할 수 있습니다. 이를 통해 부여 되는 사용 권한을 보다 유연 하 게 제어할 수 있습니다. |
 | CA5379 | [CA5379 약한 키 파생 함수 알고리즘 사용 안 함](../code-quality/ca5379.md) | <xref:System.Security.Cryptography.Rfc2898DeriveBytes>클래스는 기본적으로 알고리즘을 사용 <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> 합니다. 이상에서 생성자의 일부 오버 로드에 사용할 해시 알고리즘을 지정 해야 합니다 <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> . 속성에는 <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> 접근자만 있으며 `get` 한정자가 없습니다 `overriden` . |
 | CA5382 | [ASP.NET Core에서 보안 쿠키 사용 CA5382](../code-quality/ca5382.md) | HTTPS를 통해 사용할 수 있는 응용 프로그램은 보안 쿠키를 사용 해야 합니다 .이 쿠키는 쿠키가 SSL(Secure Sockets Layer) (SSL)를 사용 하 여 전송 되어야 함을 브라우저에 표시 합니다. |
 | CA5383 | [ASP.NET Core에서 보안 쿠키를 사용 하도록 CA5383](../code-quality/ca5383.md) | HTTPS를 통해 사용할 수 있는 응용 프로그램은 보안 쿠키를 사용 해야 합니다 .이 쿠키는 쿠키가 SSL(Secure Sockets Layer) (SSL)를 사용 하 여 전송 되어야 함을 브라우저에 표시 합니다. |
@@ -563,7 +581,11 @@ ms.locfileid: "84180040"
 | CA5387 | [CA5387 충분 하지 않은 반복 횟수로 약한 키 파생 함수를 사용 하지 않음](../code-quality/ca5387.md) | 이 규칙은 암호화 키가 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 10만 보다 작은 반복 횟수를 사용 하 여 생성 되었는지 확인 합니다. 반복 횟수를 높이면 생성 된 암호화 키를 추측 하려고 시도 하는 사전 공격을 줄일 수 있습니다. |
 | CA5388 | [약한 키 파생 함수를 사용 하는 경우 충분 한 반복 횟수 확인 CA5388](../code-quality/ca5388.md) | 이 규칙은 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 10만 보다 작은 반복 횟수를 사용 하 여 암호화 키가 생성 되었는지 확인 합니다. 반복 횟수를 높이면 생성 된 암호화 키를 추측 하려고 시도 하는 사전 공격을 줄일 수 있습니다. |
 | CA5390 | [CA5390 암호화 키를 하드 코딩 하지 않음](../code-quality/ca5390.md) | 대칭 알고리즘을 성공적으로 수행 하려면 비밀 키를 발신자와 수신자 에게만 인식 해야 합니다. 키가 하드 코드 되 면 쉽게 검색 됩니다. 컴파일된 이진 파일의 경우에도 악의적인 사용자가 쉽게 추출할 수 있습니다. 개인 키가 손상 되 면 암호화 텍스트를 직접 해독 하 여 더 이상 보호할 수 없습니다. |
+| CA5391 | [ASP.NET Core MVC 컨트롤러에서 위조 방지 토큰 CA5391 사용](../code-quality/ca5391.md) | `POST` `PUT` `PATCH` `DELETE` 위조 방지 토큰의 유효성을 검사 하지 않고,, 또는 요청을 처리 하면 교차 사이트 요청 위조 공격에 취약할 수 있습니다. 사이트 간 요청 위조 공격은 인증 된 사용자의 악성 요청을 ASP.NET Core MVC 컨트롤러로 보낼 수 있습니다. |
+| CA5392 | [P/Invoke에 대 한 CA5392 Use DefaultDllImportSearchPaths 특성](../code-quality/ca5392.md) | 기본적으로 P/Invoke 함수는 <xref:System.Runtime.InteropServices.DllImportAttribute> 로드 하는 라이브러리에 대 한 현재 작업 디렉터리를 포함 하 여 많은 디렉터리를 검색 합니다. 이는 특정 응용 프로그램에 대 한 보안 문제 이며 DLL 하이재킹이 될 수 있습니다. |
+| CA5393 | [CA5393 unsafe DllImportSearchPath value 사용 안 함](../code-quality/ca5393.md) | 기본 DLL 검색 디렉터리와 어셈블리 디렉터리에 악성 DLL이 있을 수 있습니다. 또는 응용 프로그램이 실행 되는 위치에 따라 응용 프로그램 디렉터리에 악성 DLL이 있을 수 있습니다. |
 | CA5394 | [CA5394은 안전 하지 않은 임의성을 사용 하지 않습니다.](../code-quality/ca5394.md) | 공격자는 암호화 된 약한 의사 난수 생성기를 사용 하 여 보안에 중요 한 값이 생성 되는 것을 예측할 수 있습니다. |
+| CA5395 | [작업 메서드에 대 한 CA5395 누락 HttpVerb 특성](../code-quality/ca5395.md) | 데이터를 만들거나 편집, 삭제 또는 수정 하는 모든 작업 메서드는 사이트 간 요청 위조 공격 으로부터 위조 방지 특성으로 보호 해야 합니다. GET 작업을 수행 하는 것은 부작용이 없으며 지속형 데이터를 수정 하지 않는 안전 작업 이어야 합니다. |
 | CA5396 | [되어에 대해 CA5396를 true로 설정 합니다.](../code-quality/ca5396.md) | 심층 방어 수단으로 보안에 민감한 HTTP 쿠키가 HttpOnly로 표시 되어 있는지 확인 합니다. 이는 웹 브라우저에서 스크립트가 쿠키에 액세스 하지 못하도록 하는 것을 의미 합니다. 삽입 된 악성 스크립트는 쿠키를 도용 하는 일반적인 방법입니다. |
 | CA5399 | [CA5399 = HttpClient 인증서 해지 목록 확인](../code-quality/ca5399.md) | 해지 된 인증서를 더 이상 신뢰할 수 없습니다. 공격자는 악성 데이터를 전달 하거나 HTTPS 통신에서 중요 한 데이터를 도용 하는 데 사용할 수 있습니다. |
 | CA5400 | [CA5400 HttpClient 인증서 해지 목록 확인이 사용 하도록 설정 되지 않았는지 확인 합니다.](../code-quality/ca5400.md) | 해지 된 인증서를 더 이상 신뢰할 수 없습니다. 공격자는 악성 데이터를 전달 하거나 HTTPS 통신에서 중요 한 데이터를 도용 하는 데 사용할 수 있습니다. |

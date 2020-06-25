@@ -1,25 +1,25 @@
 ---
 title: 항목 검색(도움말 뷰어)
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824987"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284921"
 ---
 # <a name="how-to-search-for-topics"></a>방법: 항목 검색
 
 전체 텍스트 검색 기능을 사용하여 특정 단어를 포함하는 모든 항목을 찾을 수 있습니다. 또한, 와일드카드 식, 논리 연산자 및 고급 검색 연산자를 사용하여 검색을 구체화하고 사용자 지정할 수도 있습니다.
 
-**검색** 탭을 열려면 **도움말 뷰어** 창에서 **검색** 탭을 선택하거나 키워드 사용자인 경우 **Ctrl**+**E**를 선택하세요.
+**검색** 탭을 열려면 **도움말 뷰어** 창에서 **검색** 탭을 선택 하거나 키보드 사용자 인 경우 **Ctrl** + **E**를 선택 합니다.
 
 ## <a name="to-perform-a-full-text-search"></a>전체 텍스트 검색을 수행하려면
 
@@ -30,7 +30,7 @@ ms.locfileid: "67824987"
     > [!NOTE]
     > **뷰어 옵션** 대화 상자에서 한번에 표시할 최대 검색 결과 수 등의 추가 기본 설정과 기본 로캘이 영어가 아닌 경우 영어 콘텐츠를 포함할지 지정할 수 있습니다.
 
-3. **Enter** 키를 선택합니다.
+3. **Enter** 키를 선택 합니다.
 
      검색은 기본적으로 최대 200개의 결과를 반환하며 검색 결과 영역에 표시합니다. 각 결과에 대한 추가 버전 정보가 콘텐츠에 따라 나타날 수 있습니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "67824987"
 
 다음 표에는 도움말의 검색 쿼리를 작성하기 위한 몇 가지 기본 규칙과 지침이 나와 있습니다.
 
-|구문|설명|
+|구문|Description|
 |------------|-----------------|
 |대/소문자 구분|검색 시 대/소문자를 구분하지 않습니다. 대문자 또는 소문자를 사용하여 검색 조건을 작성합니다. 예를 들어 "OLE"와 "ole"는 동일한 결과를 반환합니다.|
 |문자 조합|개별 문자(a–z) 또는 숫자(0-9)만 검색할 수는 없습니다. 특정 예약어(예: “and”, “from” 및 “with”)를 검색하려고 하면 무시됩니다. 자세한 내용은 이 항목의 뒷부분에 나오는 [검색에서 무시되는 단어](#stopwords)를 참조하세요.|
@@ -56,15 +56,15 @@ ms.locfileid: "67824987"
 
 > [!IMPORTANT]
 > - 문구 검색은 지원되지 않습니다. 검색 문자열에 여러 단어를 지정하는 경우 지정한 단어를 모두 포함하지만 지정한 정확한 문구가 아닌 항목도 반환됩니다.
-> - 검색 문구에서 단어 간의 관계를 지정하려면 논리 연산자를 사용합니다. AND, OR, NOT, NEAR 등의 논리 연산자를 포함하여 검색을 구체화할 수 있습니다. 예를 들어 "declaring NEAR union"을 검색하는 경우 "declaring" 및 "union" 단어를 포함하고 그 사이에 몇 단어만 있는 항목이 검색 결과에 포함됩니다. 자세한 내용은 [검색 식의 논리 연산자](../help-viewer/logical-operators-search-expressions.md)를 참조하세요.
+> - 검색 문구에서 단어 간의 관계를 지정하려면 논리 연산자를 사용합니다. AND, OR, NOT, NEAR 등의 논리 연산자를 포함하여 검색을 구체화할 수 있습니다. 예를 들어 "declaring NEAR union"을 검색하는 경우 "declaring" 및 "union" 단어를 포함하고 그 사이에 몇 단어만 있는 항목이 검색 결과에 포함됩니다. 자세한 내용은 [검색 식의 논리 연산자](../help-viewer/logical-operators-search-expressions.md)를 참조 하세요.
 
 ### <a name="filters"></a>필터
 
-고급 검색 연산자를 사용하여 검색 결과를 더욱 제한할 수 있습니다. 도움말에는 전체 텍스트 검색 결과를 필터링하는 데 사용할 수 있는 다음 세 가지 범주가 포함되어 있습니다. 제목, 코드 및 키워드.
+고급 검색 연산자를 사용하여 검색 결과를 더욱 제한할 수 있습니다. 도움말에는 전체 텍스트 검색 결과를 필터링하는 데 사용할 수 있는 세 가지 범주(제목, 코드 및 키워드)가 포함되어 있습니다.
 
 ### <a name="ranking-of-search-results"></a>검색 결과의 순위 지정
 
-검색 알고리즘은 특정 조건을 적용하여 결과 목록에서 검색 결과의 순위를 위나 아래로 조정합니다. 일반적으로 다음과 같이 작동합니다.
+검색 알고리즘은 특정 조건을 적용하여 결과 목록에서 검색 결과의 순위를 위나 아래로 조정합니다. 일반적으로:
 
 1. 제목에 검색어를 포함하는 콘텐츠의 순위가 그렇지 않은 콘텐츠보다 높습니다.
 
@@ -72,11 +72,11 @@ ms.locfileid: "67824987"
 
 3. 높은 밀도의 검색어를 포함하는 콘텐츠의 순위가 낮은 밀도의 검색어를 포함하는 콘텐츠보다 높습니다.
 
-### <a name="stopwords">검색에서 무시되는 단어(중지 단어)</a>
+### <a name=""></a><a name="stopwords">검색에서 무시 되는 단어 (중지 단어)</a>
 
 자주 사용되는 단어 또는 숫자(중지 단어라고도 함)는 전체 텍스트 검색 시 자동으로 무시됩니다. 예를 들어 "pass through" 문구를 검색하는 경우 검색 결과에 "pass" 단어를 포함하는 항목이 표시되지만 "through" 단어를 포함하는 항목은 표시되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [논리 및 고급 운영자](../help-viewer/logical-operators-search-expressions.md)
 - [방법: 인덱스에서 항목 찾기](../help-viewer/find-topics-index.md)

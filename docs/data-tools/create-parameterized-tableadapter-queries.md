@@ -1,7 +1,7 @@
 ---
 title: 매개 변수가 있는 TableAdapter 쿼리 만들기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586746"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282607"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
 
@@ -40,7 +40,7 @@ ms.locfileid: "75586746"
 
 - 원하는 매개 변수가 포함된 WHERE 절을 SQL 문에 추가하여 새 TableAdapter를 만듭니다. 자세한 내용은 [Tableadapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)을 참조 하세요.
 
-     -또는-
+     또는
 
 - 원하는 매개 변수가 포함된 WHERE 절을 SQL 문에 추가하여 기존 TableAdapter에 쿼리를 추가합니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "75586746"
 
 4. 새 쿼리를 만드는 경우 **새 쿼리 이름** 상자에 이름을 입력합니다.
 
-     -또는-
+     또는
 
      **기존 쿼리 이름** 상자에서 쿼리를 선택합니다.
 
@@ -77,7 +77,7 @@ ms.locfileid: "75586746"
 
 ### <a name="query-for-null-values"></a>Null 값 쿼리
 
-현재 값이 없는 레코드를 쿼리하려면 TableAdapter 매개 변수에 null 값을 할당할 수 있습니다. 예를 들어 `WHERE` 절에 `ShippedDate` 매개 변수가 있는 다음 쿼리를 살펴보세요.
+현재 값이 없는 레코드를 쿼리하려면 TableAdapter 매개 변수에 null 값을 할당할 수 있습니다. 예를 들어, `ShippedDate` 절에 매개 변수가 있는 다음 쿼리를 살펴보세요 `WHERE` .
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -94,10 +94,10 @@ TableAdapter에 대 한 쿼리 인 경우 다음 코드와 함께 제공 되지 
 
 1. **데이터 세트 디자이너**에서 null 매개 변수 값을 허용 해야 하는 TableAdapter 쿼리를 선택 합니다.
 
-2. **속성** 창에서 **매개 변수**를 선택 하 고 줄임표 ( **...** ) 단추를 클릭 하 여 **매개 변수 컬렉션 편집기**를 엽니다.
+2. **속성** 창에서 **매개 변수**를 선택 하 고 줄임표 (**...**) 단추를 클릭 하 여 **매개 변수 컬렉션 편집기**를 엽니다.
 
-3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을 `true`로 설정 합니다.
+3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을로 설정 `true` 합니다.
 
 ## <a name="see-also"></a>참조
 
-- [TableAdapter를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

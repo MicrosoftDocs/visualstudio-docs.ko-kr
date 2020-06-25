@@ -1,7 +1,7 @@
 ---
 title: 데이터 세트로 WPF 컨트롤 바인딩
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586980"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282919"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>데이터 세트로 WPF 컨트롤 바인딩
 
@@ -38,9 +38,9 @@ ms.locfileid: "75586980"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
-이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - Visual Studio
 
@@ -48,11 +48,11 @@ ms.locfileid: "75586980"
 
 또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.
 
-- 데이터 세트 및 TableAdapter. 자세한 내용은 [Visual Studio 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) 및 [TableAdapters](../data-tools/create-and-configure-tableadapters.md)를 참조하세요.
+- 데이터 세트 및 TableAdapter. 자세한 내용은 [Visual Studio 및 tableadapter의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) 를 [TableAdapters](../data-tools/create-and-configure-tableadapters.md)참조 하세요.
 
-- WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)를 참조하세요.
+- WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)를 참조 하세요.
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
 
 제품 레코드를 표시 하는 새 WPF 프로젝트를 만듭니다.
 
@@ -76,11 +76,11 @@ ms.locfileid: "75586980"
 
 2. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
 
-3. C# **WPF 앱** 프로젝트 템플릿을 검색 하 고 단계에 따라 프로젝트를 만들고 **AdventureWorksProductsEditor**프로젝트 이름을 지정 합니다.
+3. C # **WPF 앱** 프로젝트 템플릿을 검색 하 고 단계에 따라 프로젝트를 만들고 **AdventureWorksProductsEditor**프로젝트 이름을 지정 합니다.
 
 ::: moniker-end
 
-   AdventureWorksProductsEditor 프로젝트가 만들어집니다.
+   Visual Studio에서 AdventureWorksProductsEditor 프로젝트를 만듭니다.
 
 ## <a name="create-a-dataset-for-the-application"></a>응용 프로그램에 대 한 데이터 집합 만들기
 
@@ -92,7 +92,7 @@ ms.locfileid: "75586980"
 
 2. **데이터 소스** 창에서 **새 데이터 소스 추가**를 클릭합니다.
 
-   **데이터 원본 구성** 마법사가 열립니다.
+   **데이터 소스 구성** 마법사가 열립니다.
 
 3. **데이터 원본 형식 선택** 페이지에서 **데이터베이스**를 선택한 후, **다음**을 클릭합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "75586980"
 
 8. **마침**을 클릭합니다.
 
-   Visual Studio는 프로젝트에 새 `AdventureWorksLTDataSet.xsd` 파일을 추가 하 고 해당 **adventureworksltdataset.xsd 파일이** 항목을 **데이터 소스** 창에 추가 합니다. `AdventureWorksLTDataSet.xsd` 파일은 `AdventureWorksLTDataSet` 이라는 형식화 된 데이터 집합과 `ProductTableAdapter`라는 TableAdapter를 정의 합니다. 이 연습 뒷부분에서 `ProductTableAdapter`를 사용하여 데이터 세트에 데이터를 채우고 변경 내용을 데이터베이스에 다시 저장합니다.
+   Visual Studio는 프로젝트에 새 파일을 추가 하 `AdventureWorksLTDataSet.xsd` 고 해당 **adventureworksltdataset.xsd 파일이** 항목을 **데이터 소스** 창에 추가 합니다. 이 `AdventureWorksLTDataSet.xsd` 파일은 라는 형식화 된 데이터 집합과 라는 TableAdapter를 정의 합니다 `AdventureWorksLTDataSet` `ProductTableAdapter` . 이 연습 뒷부분에서 `ProductTableAdapter`를 사용하여 데이터 세트에 데이터를 채우고 변경 내용을 데이터베이스에 다시 저장합니다.
 
 9. 프로젝트를 빌드합니다.
 
@@ -158,7 +158,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 ## <a name="create-data-bound-controls"></a>데이터 바인딩된 컨트롤 만들기
 
-`Product` 테이블을 **데이터 소스** 창에서 WPF 디자이너로 끌어 고객 레코드를 표시 하는 컨트롤을 만듭니다.
+`Product` **데이터 소스** 창에서 WPF Designer로 테이블을 끌어 고객 레코드를 표시 하는 컨트롤을 만듭니다.
 
 1. **데이터 소스** 창에서 **Product** 노드의 드롭다운 메뉴를 클릭하고 **정보**를 선택합니다.
 
@@ -191,13 +191,13 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 ## <a name="navigate-product-records"></a>제품 레코드 탐색
 
-사용자가 **\<** 및 **>** 단추를 사용하여 제품 레코드를 스크롤할 수 있도록 하는 코드를 추가합니다.
+사용자가 단추를 사용 하 여 제품 레코드를 스크롤할 수 있도록 하는 코드를 추가 **\<** and **>** 합니다.
 
-1. 디자이너의 창 화면에서 **<** 단추를 두 번 클릭합니다.
+1. 디자이너의 **<** 창 화면에서 단추를 두 번 클릭 합니다.
 
      Visual Studio가 코드 숨김 파일을 열고 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트에 대해 새 `backButton_Click` 이벤트 처리기를 만듭니다.
 
-2. `Window_Loaded` 이벤트 처리기를 수정하여 `ProductViewSource`, `AdventureWorksLTDataSet` 및 `AdventureWorksLTDataSetProductTableAdapter`가 메서드 외부에 있으며 전체 양식에 액세스할 수 있도록 합니다. 이러한 항목을 폼에 대해 전역적으로 선언 하 고 다음과 같이 `Window_Loaded` 이벤트 처리기 내에 할당 합니다.
+2. `Window_Loaded` 이벤트 처리기를 수정하여 `ProductViewSource`, `AdventureWorksLTDataSet` 및 `AdventureWorksLTDataSetProductTableAdapter`가 메서드 외부에 있으며 전체 양식에 액세스할 수 있도록 합니다. 이러한 항목을 폼에 대해 전역적으로 선언 하 고 `Window_Loaded` 다음과 비슷한 이벤트 처리기 내에 할당 합니다.
 
      [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
      [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
@@ -207,7 +207,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
 
-4. 디자이너로 돌아가서 **>** 단추를 두 번 클릭합니다.
+4. 디자이너로 돌아가서 단추를 두 번 클릭 **>** 합니다.
 
 5. 다음 코드를 `nextButton_Click` 이벤트 처리기에 추가합니다.
 
@@ -218,7 +218,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 사용자가 **변경 내용 저장** 단추를 사용하여 제품 레코드 변경 내용을 저장할 수 있도록 하는 코드를 추가합니다.
 
-1. 디자이너에서 **변경 내용 저장** 단추를 두 번 클릭합니다.
+1. 디자이너에서 **변경 내용 저장** 단추를 두 번 클릭 합니다.
 
      Visual Studio가 코드 숨김 파일을 열고 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트에 대해 새 `saveButton_Click` 이벤트 처리기를 만듭니다.
 
@@ -230,17 +230,17 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
     > [!NOTE]
     > 이 예에서는 `Save`의 `TableAdapter` 메서드를 사용하여 변경 내용을 저장합니다. 이 연습에서는 데이터 테이블을 하나만 변경하므로 이러한 방식이 적절합니다. 여러 데이터 테이블의 변경 내용을 저장해야 하는 경우에는 데이터 세트과 함께 생성되는 `UpdateAll`의 `TableAdapterManager` 메서드를 사용할 수 있습니다. 자세한 내용은 [tableadapter](../data-tools/create-and-configure-tableadapters.md)를 참조 하십시오.
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
 
 애플리케이션을 빌드 및 실행합니다. 제품 레코드를 보고 업데이트할 수 있는지 확인합니다.
 
 1. **F5**키를 누릅니다.
 
-     애플리케이션이 빌드되고 실행됩니다. 다음 사항을 확인합니다.
+     애플리케이션이 빌드되고 실행됩니다. 다음을 확인합니다.
 
     - 텍스트 상자에 사진이 포함된 첫 번째 제품 레코드의 데이터가 표시됩니다. 이 제품의 ID는 713이고 이름은 **Long-Sleeve Logo Jersey, S**입니다.
 
-    - **>** 또는 **<** 단추를 클릭하여 다른 제품 레코드를 탐색할 수 있습니다.
+    - 또는 단추를 클릭 **>** **<** 하 여 다른 제품 레코드를 탐색할 수 있습니다.
 
 2. 제품 레코드 중 하나에서 **크기** 값을 변경한 다음, **변경 내용 저장**을 클릭합니다.
 
@@ -261,5 +261,5 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 ## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)

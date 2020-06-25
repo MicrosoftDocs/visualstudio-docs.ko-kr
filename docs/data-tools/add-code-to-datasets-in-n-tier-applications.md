@@ -1,7 +1,7 @@
 ---
 title: n 계층 애플리케이션에서 데이터 세트에 코드 추가
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587123"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283088"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트에 코드 추가
 
@@ -32,7 +32,7 @@ ms.locfileid: "75587123"
 > **데이터 집합 프로젝트** 속성을 설정 하 여 데이터 집합 및 tableadapter를 분리 하는 경우 프로젝트의 기존 부분 데이터 집합 클래스는 자동으로 이동 되지 않습니다. 기존 데이터 집합 partial 클래스는 데이터 집합 프로젝트로 수동으로 이동 해야 합니다.
 
 > [!NOTE]
-> 유효성 검사 코드를 추가 해야 하는 경우 형식화 된 데이터 집합은 <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.RowChanging> 이벤트 처리기를 생성 하는 기능을 제공 합니다. 자세한 내용은 [n 계층 데이터 집합에 유효성 검사 추가](../data-tools/add-validation-to-an-n-tier-dataset.md)를 참조 하세요.
+> 유효성 검사 코드를 추가 해야 하는 경우 형식화 된 데이터 집합은 <xref:System.Data.DataTable.ColumnChanging> 및 이벤트 처리기를 생성 하는 기능을 제공 합니다 <xref:System.Data.DataTable.RowChanging> . 자세한 내용은 [n 계층 데이터 집합에 유효성 검사 추가](../data-tools/add-validation-to-an-n-tier-dataset.md)를 참조 하세요.
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 계층 응용 프로그램의 데이터 집합에 코드를 추가 하려면
 
@@ -65,7 +65,7 @@ ms.locfileid: "75587123"
 
 ## <a name="see-also"></a>참조
 
-- [N 계층 데이터 애플리케이션 개요](../data-tools/n-tier-data-applications-overview.md)
+- [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
 - [n 계층 애플리케이션에서 TableAdapter에 코드 추가](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [TableAdapter 만들기 및 구성](create-and-configure-tableadapters.md)
 - [계층적 업데이트 개요](hierarchical-update.md)

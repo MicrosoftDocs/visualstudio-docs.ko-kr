@@ -1,7 +1,7 @@
 ---
 title: 도움말 뷰어 인덱스 사용
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825939"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284960"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>도움말 뷰어 인덱스를 사용하여 항목 찾기
 
@@ -77,7 +77,7 @@ ms.locfileid: "67825939"
 
     예를 들어 “빌드”라는 용어를 입력한 경우 대신 “만들기”를 입력해 보세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: TOC에서 항목 찾기](../help-viewer/find-topics-toc.md)
 - [방법: 항목 검색](../help-viewer/find-topics.md)

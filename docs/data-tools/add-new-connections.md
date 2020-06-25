@@ -1,18 +1,18 @@
 ---
 title: 새 연결 추가
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587071"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283062"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 
@@ -22,7 +22,7 @@ ms.locfileid: "75587071"
 
    기본적으로 Visual Studio에 설치 됩니다. 를 사용 하 여 연결을 테스트 하 고 SQL Server 데이터베이스, ADO.NET 공급자가 설치 된 다른 데이터베이스 및 일부 Azure 서비스를 볼 수 있습니다. 시스템 성능 카운터, 이벤트 로그 및 메시지 큐와 같은 하위 수준 개체도 보여 줍니다. 데이터 원본에 ADO.NET 공급자가 없으면 여기에 표시 되지 않지만 프로그래밍 방식으로 연결 하 여 Visual Studio에서 사용할 수 있습니다.
 
-- 클라우드 탐색기
+- Cloud Explorer
 
    [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS)에서 Visual Studio 확장으로이 창을 수동으로 설치 합니다. 는 Azure 서비스를 탐색 하 고 연결 하기 위한 특수 기능을 제공 합니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "75587071"
 
 데이터 원본을 선택한 후 **연결 테스트**를 클릭 합니다. 성공 하지 못하면 공급 업체의 설명서에 따라 문제를 해결 해야 합니다.
 
-![연결 테스트](../data-tools/media/raddata-test-connection.png)
+![연결을 테스트](../data-tools/media/raddata-test-connection.png)
 
 테스트에 성공 하면 기본 데이터베이스 또는 서비스를 기반으로 하는 *데이터 모델* 을 의미 하는 Visual Studio 용어 인 *데이터 소스*를 만들 준비가 된 것입니다.
 

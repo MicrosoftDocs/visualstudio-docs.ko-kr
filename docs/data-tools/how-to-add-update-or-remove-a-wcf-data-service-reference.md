@@ -1,7 +1,7 @@
 ---
 title: '방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184235"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282373"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
 
@@ -108,7 +108,7 @@ ms.locfileid: "84184235"
 
 1. **확인**을 클릭하여 프로젝트에 대한 참조를 추가합니다.
 
-    서비스 클라이언트 (프록시)가를 생성 하 고, 서비스를 설명 하는 메타 데이터가 *app.config* 파일에 추가 됩니다.
+    서비스 클라이언트 (프록시)는을 생성 하 고, 서비스를 설명 하는 메타 데이터는 *app.config* 파일에 추가 됩니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. **솔루션 탐색기**에서 **연결된 서비스** 노드를 두 번 클릭 하거나 누릅니다. 
@@ -129,7 +129,7 @@ ms.locfileid: "84184235"
 
 1. **마침** 을 클릭 하 여 프로젝트에 참조를 추가 합니다.
 
-    서비스 클라이언트 (프록시)가를 생성 하 고, 서비스를 설명 하는 메타 데이터가 *app.config* 파일에 추가 됩니다.
+    서비스 클라이언트 (프록시)는을 생성 하 고, 서비스를 설명 하는 메타 데이터는 *app.config* 파일에 추가 됩니다.
 
 ::: moniker-end
 
@@ -156,6 +156,6 @@ ms.locfileid: "84184235"
     > [!NOTE]
     > 서비스 참조를 참조 하는 모든 코드는 수동으로 제거 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 Windows Communication Foundation Services 및 WCF data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

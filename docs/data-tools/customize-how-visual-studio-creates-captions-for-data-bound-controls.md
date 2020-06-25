@@ -1,7 +1,7 @@
 ---
 title: 데이터 바인딩된 컨트롤에 대 한 캡션 사용자 지정
 ms.date: 11/03/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113665"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282581"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정
 
@@ -53,12 +53,12 @@ ms.locfileid: "76113665"
 
 |레지스트리 항목|기본값|설명|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|소문자와 대문자 또는 밑줄을 찾습니다.|
+|**SmartCaptionExpression**|**( \\ \p{Ll}) ( \\ \p{lu}는) &#124;_ +**|소문자와 대문자 또는 밑줄을 찾습니다.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** 은 식의 첫 번째 괄호에서 일치 하는 문자를 나타내며, **$2** 은 두 번째 괄호에 일치 하는 모든 문자를 나타냅니다. 첫 번째 일치 항목, 공백, 두 번째 일치 항목을 대체 합니다.|
-|**SmartCaptionSuffix**|**:**|반환 된 문자열에 추가 되는 문자를 나타냅니다. 예를 들어 캡션이 `Company Name`되는 경우 접미사를 사용 하 여 `Company Name:`|
+|**SmartCaptionSuffix**|**:**|반환 된 문자열에 추가 되는 문자를 나타냅니다. 예를 들어 캡션이 인 경우 접미사가이를 `Company Name` 사용 합니다.`Company Name:`|
 
 > [!CAUTION]
-> 레지스트리 편집기에서 원하는 작업을 수행 하는 경우에는 주의 해야 합니다. 레지스트리를 편집 하기 전에 백업 합니다. 레지스트리 편집기를 잘못 사용 하면 운영 체제를 다시 설치 해야 할 수 있는 심각한 문제가 발생할 수 있습니다. Microsoft는 레지스트리 편집기를 잘못 사용 하 여 발생 하는 문제를 해결할 수 있도록 보장 하지 않습니다. 레지스트리 편집기 사용에 따른 결과는 사용자의 책임입니다.
+> 레지스트리 편집기에서 원하는 작업을 수행 하는 경우에는 주의 해야 합니다. 레지스트리를 편집 하기 전에 백업 합니다. 레지스트리 편집기를 잘못 사용 하면 운영 체제를 다시 설치 해야 할 수 있는 심각한 문제가 발생할 수 있습니다. Microsoft는 레지스트리 편집기를 잘못 사용 하 여 발생 하는 문제를 해결할 수 있도록 보장 하지 않습니다. 레지스트리 편집기 사용에 따른 위험은 사용자가 책임져야 합니다.
 >
 > 레지스트리 백업, 편집 및 복원에 대 한 자세한 내용은 [advanced users에 대 한 Windows 레지스트리 정보](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users)를 참조 하십시오.
 
@@ -66,19 +66,19 @@ ms.locfileid: "76113665"
 
 1. **시작** 을 클릭 한 다음 **실행**을 클릭 하 여 명령 창을 엽니다.
 
-2. **실행** 대화 상자에 `regedit`을 입력 하 고 **확인**을 클릭 합니다.
+2. `regedit` **실행** 대화 상자에를 입력 하 고 **확인**을 클릭 합니다.
 
-3. **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** 노드를 확장 합니다.
+3. **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** 노드를 확장 합니다.
 
 ::: moniker range="vs-2017"
 
-4. **15.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 `Data Designers`이라는 새 **키** 를 만듭니다.
+4. **15.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 라는 새 **키** 를 만듭니다 `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. **16.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 `Data Designers`이라는 새 **키** 를 만듭니다.
+4. **16.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 라는 새 **키** 를 만듭니다 `Data Designers` .
 
 ::: moniker-end
 
@@ -106,19 +106,19 @@ ms.locfileid: "76113665"
 
 1. **시작** 을 클릭 한 다음 **실행**을 클릭 하 여 명령 창을 엽니다.
 
-2. **실행** 대화 상자에 `regedit`을 입력 하 고 **확인**을 클릭 합니다.
+2. `regedit` **실행** 대화 상자에를 입력 하 고 **확인**을 클릭 합니다.
 
-3. **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** 노드를 확장 합니다.
+3. **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** 노드를 확장 합니다.
 
 ::: moniker range="vs-2017"
 
-4. **15.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 `Data Designers`이라는 새 **키** 를 만듭니다.
+4. **15.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 라는 새 **키** 를 만듭니다 `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. **16.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 `Data Designers`이라는 새 **키** 를 만듭니다.
+4. **16.0** 노드를 마우스 오른쪽 단추로 클릭 하 고 라는 새 **키** 를 만듭니다 `Data Designers` .
 
 ::: moniker-end
 
@@ -130,11 +130,11 @@ ms.locfileid: "76113665"
 
 6. **Smartcaptionexpression** 항목을 마우스 오른쪽 단추로 클릭 하 고 **수정**을 선택 합니다.
 
-7. 값에 `(.*)`을 입력 합니다. 그러면 전체 문자열이 일치 합니다.
+7. `(.*)`값으로을 입력 합니다. 그러면 전체 문자열이 일치 합니다.
 
 8. **Smartcaptionreplacement** 항목을 마우스 오른쪽 단추로 클릭 하 고 **수정**을 선택 합니다.
 
-9. 값에 `$1`을 입력 합니다. 이렇게 하면 문자열을 일치 하는 값으로 대체 하 여 변경 되지 않은 상태로 유지 되도록 전체 문자열을 대체 합니다.
+9. `$1`값으로을 입력 합니다. 이렇게 하면 문자열을 일치 하는 값으로 대체 하 여 변경 되지 않은 상태로 유지 되도록 전체 문자열을 대체 합니다.
 
     다음 번에 **데이터 소스** 창에서 항목을 끌면 수정 되지 않은 캡션으로 캡션 레이블이 생성 됩니다.
 

@@ -1,7 +1,7 @@
 ---
 title: 동시성 예외 처리
 ms.date: 09/11/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,24 +18,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586603"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282360"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 
-동시성 예외 (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>)는 두 사용자가 동시에 데이터베이스의 동일한 데이터를 변경 하려고 할 때 발생 합니다. 이 연습에서는 <xref:System.Data.DBConcurrencyException>를 catch 하 고 오류를 발생 시킨 행을 찾아 처리 하는 방법에 대 한 전략을 파악 하는 방법을 보여 주는 Windows 응용 프로그램을 만듭니다.
+동시성 예외 ( <xref:System.Data.DBConcurrencyException?displayProperty=fullName> )는 두 사용자가 동시에 데이터베이스의 동일한 데이터를 변경 하려고 할 때 발생 합니다. 이 연습에서는를 catch 하 고 <xref:System.Data.DBConcurrencyException> , 오류를 일으킨 행을 찾고,이를 처리 하는 방법에 대 한 전략을 파악 하는 방법을 보여 주는 Windows 응용 프로그램을 만듭니다.
 
 이 연습에서는 다음 프로세스를 수행 합니다.
 
-1. 새 **Windows Forms 애플리케이션** 프로젝트를 만듭니다.
+1. 새 **Windows Forms 응용 프로그램** 프로젝트를 만듭니다.
 
 2. Northwind Customers 테이블을 기반으로 새 데이터 집합을 만듭니다.
 
-3. <xref:System.Windows.Forms.DataGridView>를 사용 하 여 폼을 만들어 데이터를 표시 합니다.
+3. 를 사용 하 여 폼을 만들어 <xref:System.Windows.Forms.DataGridView> 데이터를 표시 합니다.
 
 4. Northwind 데이터베이스의 Customers 테이블 데이터를 사용 하 여 데이터 집합을 채웁니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "75586603"
 
 7. 오류를 파악 한 다음 레코드의 다른 버전을 표시 하 여 사용자가 계속 해 서 데이터베이스를 업데이트 하거나 업데이트를 취소할지 여부를 결정할 수 있도록 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "75586603"
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -83,7 +83,7 @@ ms.locfileid: "75586603"
 
 1. **데이터** 메뉴에서 **새 데이터 소스 추가**를 선택 합니다.
 
-   데이터 소스 구성 마법사가 열립니다.
+   데이터 원본 구성 마법사가 열립니다.
 
 2. **데이터 소스 형식 선택** 화면에서 **데이터베이스**를 선택 합니다.
 
@@ -102,7 +102,7 @@ ms.locfileid: "75586603"
 
 ## <a name="create-a-data-bound-datagridview-control"></a>데이터 바인딩된 DataGridView 컨트롤 만들기
 
-이 섹션에서는 **데이터 소스** 창에서 Windows Form으로 **Customers** 항목을 끌어서 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType>를 만듭니다.
+이 섹션에서는 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> **데이터 소스** 창에서 Windows Form으로 **Customers** 항목을 끌어를 만듭니다.
 
 1. 데이터 **소스** 창을 열려면 **데이터** 메뉴에서 **데이터 소스 표시**를 선택 합니다.
 
@@ -112,7 +112,7 @@ ms.locfileid: "75586603"
 
 4. 테이블을 폼의 빈 영역으로 끕니다.
 
-     **Customersdatagridview**라는 <xref:System.Windows.Forms.DataGridView> 컨트롤과 **customersdatagridview**라는 <xref:System.Windows.Forms.BindingNavigator> <xref:System.Windows.Forms.BindingSource>에 바인딩되는 폼에 추가 됩니다. 이는 NorthwindDataSet의 Customers 테이블에 바인딩됩니다.
+     <xref:System.Windows.Forms.DataGridView> **Customersdatagridview**라는 컨트롤과 <xref:System.Windows.Forms.BindingNavigator> 이름이 **customersdatagridview**인 컨트롤이에 바인딩된 폼에 추가 됩니다 <xref:System.Windows.Forms.BindingSource> . 이는 NorthwindDataSet의 Customers 테이블에 바인딩됩니다.
 
 ## <a name="test-the-form"></a>양식 테스트
 
@@ -120,7 +120,7 @@ ms.locfileid: "75586603"
 
 1. **F5 키** 를 선택 하 여 응용 프로그램을 실행 합니다.
 
-     이 폼에는 Customers 테이블의 데이터로 채워진 <xref:System.Windows.Forms.DataGridView> 컨트롤이 표시 됩니다.
+     <xref:System.Windows.Forms.DataGridView>이 폼에는 Customers 테이블의 데이터로 채워진 컨트롤이 표시 됩니다.
 
 2. **디버그** 메뉴에서 **디버깅 중지**를 선택합니다.
 
@@ -150,33 +150,33 @@ ms.locfileid: "75586603"
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>동시성 예외를 처리 하는 코드 추가
 
-업데이트를 수행 하려고 할 때 예외가 발생 하면 일반적으로 발생 한 예외에 의해 제공 된 정보를 사용 하 여 작업을 수행 하려고 합니다. 이 섹션에서는 데이터베이스 업데이트를 시도 하는 코드를 추가 합니다. 또한 발생할 수 있는 모든 <xref:System.Data.DBConcurrencyException> 및 기타 예외를 처리 합니다.
+업데이트를 수행 하려고 할 때 예외가 발생 하면 일반적으로 발생 한 예외에 의해 제공 된 정보를 사용 하 여 작업을 수행 하려고 합니다. 이 섹션에서는 데이터베이스 업데이트를 시도 하는 코드를 추가 합니다. 또한 <xref:System.Data.DBConcurrencyException> 발생할 수 있는 모든 예외 및 기타 예외를 처리 합니다.
 
 > [!NOTE]
-> `CreateMessage` 및 `ProcessDialogResults` 메서드는 연습의 뒷부분에서 추가 됩니다.
+> `CreateMessage`및 `ProcessDialogResults` 메서드는 연습의 뒷부분에서 추가 됩니다.
 
-1. `Form1_Load` 메서드 아래에 다음 코드를 추가 합니다.
+1. 메서드 아래에 다음 코드를 추가 합니다 `Form1_Load` .
 
    [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
    [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
-2. `CustomersBindingNavigatorSaveItem_Click` 메서드를 대체 하 여 다음과 같이 `UpdateDatabase` 메서드를 호출 합니다.
+2. 메서드를 `CustomersBindingNavigatorSaveItem_Click` 호출 하 여 메서드를 `UpdateDatabase` 다음과 같이 바꿉니다.
 
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>사용자에 게 선택 항목 표시
 
-방금 작성 한 코드는 `CreateMessage` 프로시저를 호출 하 여 사용자에 게 오류 정보를 표시 합니다. 이 연습에서는 메시지 상자를 사용 하 여 레코드의 다른 버전을 사용자에 게 표시 합니다. 이를 통해 사용자는 레코드를 변경 내용으로 덮어쓸지 아니면 편집을 취소할지를 선택할 수 있습니다. 사용자가 메시지 상자에서 단추를 클릭 하 여 옵션을 선택 하면 응답이 `ProcessDialogResult` 메서드에 전달 됩니다.
+방금 작성 한 코드는 프로시저를 호출 `CreateMessage` 하 여 사용자에 게 오류 정보를 표시 합니다. 이 연습에서는 메시지 상자를 사용 하 여 레코드의 다른 버전을 사용자에 게 표시 합니다. 이를 통해 사용자는 레코드를 변경 내용으로 덮어쓸지 아니면 편집을 취소할지를 선택할 수 있습니다. 사용자가 메시지 상자에서 단추를 클릭 하 여 옵션을 선택 하면 응답은 메서드에 전달 됩니다 `ProcessDialogResult` .
 
-**코드 편집기**에 다음 코드를 추가 하 여 메시지를 만듭니다. `UpdateDatabase` 메서드 아래에 다음 코드를 입력 합니다.
+**코드 편집기**에 다음 코드를 추가 하 여 메시지를 만듭니다. 메서드 아래에 다음 코드를 입력 합니다 `UpdateDatabase` .
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>사용자의 응답을 처리 합니다.
 
-또한 메시지 상자에 대 한 사용자의 응답을 처리 하는 코드도 필요 합니다. 옵션은 데이터베이스의 현재 레코드를 제안 된 변경 내용으로 덮어쓰거나 로컬 변경 내용을 취소 하 고 현재 데이터베이스에 있는 레코드를 사용 하 여 데이터 테이블을 새로 고치는 것입니다. 사용자가 **예**를 선택 하면 *preserveChanges* 인수를 **true**로 설정 하 여 <xref:System.Data.DataTable.Merge%2A> 메서드가 호출 됩니다. 그러면 레코드의 원래 버전이 데이터베이스의 레코드와 일치 하기 때문에 업데이트에 성공 하 게 됩니다.
+또한 메시지 상자에 대 한 사용자의 응답을 처리 하는 코드도 필요 합니다. 옵션은 데이터베이스의 현재 레코드를 제안 된 변경 내용으로 덮어쓰거나 로컬 변경 내용을 취소 하 고 현재 데이터베이스에 있는 레코드를 사용 하 여 데이터 테이블을 새로 고치는 것입니다. 사용자가 **예**를 선택 하면 <xref:System.Data.DataTable.Merge%2A> *preserveChanges* 인수를 **true**로 설정 하 여 메서드가 호출 됩니다. 그러면 레코드의 원래 버전이 데이터베이스의 레코드와 일치 하기 때문에 업데이트에 성공 하 게 됩니다.
 
 이전 섹션에서 추가 된 코드 아래에 다음 코드를 추가 합니다.
 

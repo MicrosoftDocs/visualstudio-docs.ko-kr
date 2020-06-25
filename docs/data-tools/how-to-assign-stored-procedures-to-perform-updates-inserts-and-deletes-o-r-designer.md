@@ -1,29 +1,29 @@
 ---
 title: LINQ to SQL의 저장 프로시저를 사용 하 여 데이터 업데이트 (O/R 디자이너)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8028171cf3255de3484bb89a374bfc22a2625b1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586551"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282321"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)
 
-저장 프로시저를 **O/R 디자이너**에 추가하여 일반적인 <xref:System.Data.Linq.DataContext> 메서드로 실행할 수 있습니다. 또한 엔터티 클래스의 변경 내용이 데이터베이스에 저장 된 경우 (예: <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 메서드를 호출 하는 경우) 삽입, 업데이트 및 삭제를 수행 하는 기본 LINQ to SQL 런타임 동작을 재정의 하는 데 사용할 수 있습니다.
+저장 프로시저를 **O/R 디자이너**에 추가하여 일반적인 <xref:System.Data.Linq.DataContext> 메서드로 실행할 수 있습니다. 또한 엔터티 클래스의 변경 내용을 데이터베이스에 저장 하는 경우 (예: 메서드를 호출 하는 경우) 삽입, 업데이트 및 삭제를 수행 하는 기본 LINQ to SQL 런타임 동작을 재정의 하는 데 사용할 수 있습니다 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> .
 
 > [!NOTE]
 > 클라이언트로 다시 보내야 하는 값(예: 저장 프로시저에서 계산된 값)을 저장 프로시저에서 반환하는 경우 저장 프로시저에 출력 매개 변수를 만듭니다. 출력 매개 변수를 사용할 수 없는 경우 O/R 디자이너에서 생성된 재정의를 사용하지 말고 부분 메서드(Partial Method) 구현을 작성합니다. 데이터베이스에서 생성된 값에 매핑되는 멤버는 INSERT 또는 UPDATE 작업이 성공적으로 완료된 후 적절한 값으로 설정되어야 합니다. 자세한 내용은 [기본 동작 재정의에서 개발자의 책임](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior)을 참조 하세요.
 
 > [!NOTE]
-> LINQ to SQL은 id (자동 증분), rowguidcol (데이터베이스에서 생성 된 GUID) 및 timestamp 열에 대해 데이터베이스에서 생성 된 값을 자동으로 처리 합니다. 데이터베이스에서 생성된 값이 다른 형식의 열에 있으면 null 값이라는 예기치 않은 결과가 발생합니다. 데이터베이스에서 생성 된 값을 반환 하려면 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>를 **true** 로 수동으로 설정 하 고 [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync, OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)또는 [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)중 하나로 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 해야 합니다.
+> LINQ to SQL은 id (자동 증분), rowguidcol (데이터베이스에서 생성 된 GUID) 및 timestamp 열에 대해 데이터베이스에서 생성 된 값을 자동으로 처리 합니다. 데이터베이스에서 생성된 값이 다른 형식의 열에 있으면 null 값이라는 예기치 않은 결과가 발생합니다. 데이터베이스에서 생성 된 값을 반환 하려면 수동으로를 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> **true** 로 설정 하 고 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync, OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)또는 [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)중 하나로 설정 해야 합니다.
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>엔터티 클래스의 업데이트 동작 구성
 
@@ -51,7 +51,7 @@ ms.locfileid: "75586551"
 
 8. **사용자 지정** 목록에서 원하는 저장 프로시저를 선택합니다.
 
-9. **메서드 인수** 및 **클래스 속성** 목록을 살펴보고 **메서드 인수**가 적절한 **클래스 속성**에 매핑되어 있는지 확인합니다. 원래 메서드 인수 (`Original_<ArgumentName>`)를 `Update` 및 `Delete` 명령의 원래 속성 (`<PropertyName> (Original)`)에 매핑합니다.
+9. **메서드 인수** 및 **클래스 속성** 목록을 살펴보고 **메서드 인수**가 적절한 **클래스 속성**에 매핑되어 있는지 확인합니다. 원래 메서드 인수 ( `Original_<ArgumentName>` )를 및 명령의 원래 속성 ()에 매핑합니다 `<PropertyName> (Original)` `Update` `Delete` .
 
     > [!NOTE]
     > 기본적으로 메서드 인수는 이름이 일치하는 경우 클래스 속성에 매핑됩니다. 속성 이름이 변경되어서 더 이상 테이블과 엔터티 클래스 간에 일치하지 않으면 디자이너에서 올바른 매핑을 결정할 수 없는 경우 매핑할 해당 클래스 속성을 선택해야 합니다.

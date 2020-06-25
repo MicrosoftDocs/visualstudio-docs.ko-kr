@@ -1,7 +1,7 @@
 ---
 title: 로컬 도움말 설명서 설치
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824952"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284908"
 ---
 # <a name="install-and-manage-local-content"></a>로컬 콘텐츠 설치 및 관리
 
@@ -51,7 +51,7 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
     - *.msha* 파일의 경로 또는 서비스 엔드포인트의 URL을 입력합니다.
 
-    - 찾아보기( **...** ) 단추를 선택하여 *.msha* 파일로 이동합니다.
+    - 찾아보기 (**...**) 단추를 선택 하 여 *. m s s* 파일을 탐색 합니다.
 
     - 목록에서 가장 최근에 사용된 항목을 선택합니다.
 
@@ -129,6 +129,6 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
 3. 콘텐츠가 이동되면 **닫기** 단추를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

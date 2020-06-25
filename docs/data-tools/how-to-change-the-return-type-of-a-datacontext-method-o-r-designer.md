@@ -1,25 +1,25 @@
 ---
 title: DataContext 메서드의 반환 형식 변경 (O-R 디자이너)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fac3a26f77151d7e09b620ef084d42a9ab50f1e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c232e3e4261008fa736377801183d92420ffbf4c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586538"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282269"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>방법: DataContext 메서드의 반환 형식 변경(O/R 디자이너)
-저장 프로시저 또는 함수를 기반으로 만들어진 <xref:System.Data.Linq.DataContext> 메서드의 반환 형식은 **O/R 디자이너**에서 저장 프로시저 또는 함수를 놓는 위치에 따라 달라 집니다. 저장 프로시저 또는 함수에서 반환된 데이터의 스키마가 엔터티 클래스의 모양과 일치하는 경우 항목을 기존 엔터티 클래스에 직접 드롭하면 엔터티 클래스의 반환 형식을 갖는 <xref:System.Data.Linq.DataContext> 메서드가 만들어집니다. 항목을 **O/R 디자이너**의 빈 영역에 놓으면 자동으로 생성 된 형식을 반환 하는 <xref:System.Data.Linq.DataContext> 메서드가 만들어집니다. 메서드 창에 추가한 후 <xref:System.Data.Linq.DataContext> 메서드의 반환 형식을 변경할 수 있습니다. <xref:System.Data.Linq.DataContext> 메서드의 반환 형식을 검사하거나 변경하려면 해당 메서드를 선택하고 **속성** 창에서 **반환 형식** 속성을 클릭합니다.
+저장 프로시저 또는 함수를 <xref:System.Data.Linq.DataContext> 기반으로 만들어진 메서드의 반환 형식은 **O/R 디자이너**에서 저장 프로시저 또는 함수를 놓는 위치에 따라 달라 집니다. 저장 프로시저 또는 함수에서 반환된 데이터의 스키마가 엔터티 클래스의 모양과 일치하는 경우 항목을 기존 엔터티 클래스에 직접 드롭하면 엔터티 클래스의 반환 형식을 갖는 <xref:System.Data.Linq.DataContext> 메서드가 만들어집니다. 항목을 **O/R 디자이너**의 빈 영역에 놓으면 <xref:System.Data.Linq.DataContext> 자동으로 생성 된 형식을 반환 하는 메서드가 만들어집니다. 메서드 창에 추가한 후 <xref:System.Data.Linq.DataContext> 메서드의 반환 형식을 변경할 수 있습니다. <xref:System.Data.Linq.DataContext> 메서드의 반환 형식을 검사하거나 변경하려면 해당 메서드를 선택하고 **속성** 창에서 **반환 형식** 속성을 클릭합니다.
 
 > [!NOTE]
-> 반환 형식을 엔터티 클래스로 설정한 <xref:System.Data.Linq.DataContext> 메서드를 **속성** 창을 사용하여 자동 생성된 형식을 반환하도록 되돌릴 수 없습니다. 자동으로 생성된 형식을 반환하도록 <xref:System.Data.Linq.DataContext> 메서드를 되돌리려면 원래 데이터베이스 개체를 **O/R 디자이너**로 끌어와야 합니다.
+> 반환 형식을 엔터티 클래스로 설정한 <xref:System.Data.Linq.DataContext> 메서드를 **속성** 창을 사용하여 자동 생성된 형식을 반환하도록 되돌릴 수 없습니다. <xref:System.Data.Linq.DataContext>자동 생성 된 형식을 반환 하도록 메서드를 되돌리려면 원래 데이터베이스 개체를 **O/R 디자이너로** 다시 끌어와 야 합니다.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "75586538"
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>DataContext 메서드의 반환 형식을 엔터티 클래스에서 자동으로 생성된 형식으로 다시 변경하려면
 
-1. **메서드** 창에서 <xref:System.Data.Linq.DataContext> 메서드를 선택한 다음, 삭제합니다.
+1. 메서드 <xref:System.Data.Linq.DataContext> 창에서 메서드를 **Methods** 선택 하 고 삭제 합니다.
 
 2. **서버 탐색기** 또는 **데이터베이스 탐색기** 의 데이터베이스 개체를 **O/R 디자이너**의 빈 영역으로 끕니다.
 

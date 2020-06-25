@@ -1,7 +1,7 @@
 ---
 title: Access 데이터베이스의 데이터에 연결
 ms.date: 07/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting
 - connecting to data, Access databases
@@ -12,20 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586863"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282737"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Access 데이터베이스의 데이터에 연결
 
 Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는 *.accdb* 파일)에 연결할 수 있습니다. 연결을 정의한 후 **데이터 원본** 창에 데이터가 나타납니다. 여기에서 테이블 또는 뷰를 디자인 화면으로 끌 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
-이러한 절차를 사용 하려면 Windows Forms 또는 WPF 프로젝트와 Access 데이터베이스 ( *.accdb* 파일) 또는 access 2000-2003 데이터베이스 ( *.mdb* 파일)가 필요 합니다. 파일 형식에 해당하는 절차를 따릅니다.
+이러한 절차를 사용 하려면 Windows Forms 또는 WPF 프로젝트와 Access 데이터베이스 (*.accdb* 파일) 또는 access 2000-2003 데이터베이스 (*.mdb* 파일)가 필요 합니다. 파일 형식에 해당하는 절차를 따릅니다.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>.Accdb 파일에 대 한 데이터 집합 만들기
 
@@ -33,7 +33,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 1. Visual Studio에서 Windows Forms 또는 WPF 응용 프로그램 프로젝트를 엽니다.
 
-2. **데이터 소스** 창을 열려면 **보기** 메뉴에서 **다른 창** > **데이터 소스**를 선택 합니다.
+2. **데이터 소스** 창을 열려면 **보기** 메뉴에서 **다른 Windows**  >  **데이터 소스**를 선택 합니다.
 
    ![다른 창 데이터 소스 보기](../data-tools/media/viewdatasources.png)
 
@@ -49,7 +49,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
    **연결 추가** 대화 상자가 열립니다.
 
-7. **데이터 원본을** **Microsoft Access 데이터베이스 파일 (OLE DB)** 로 설정 하지 않은 경우에는 **변경** 단추를 선택 합니다.
+7. **데이터 원본을** **Microsoft Access 데이터베이스 파일**로 설정 하지 않은 경우에는 **변경** 단추를 선택 합니다.
 
    **데이터 소스 변경** 대화 상자가 열립니다. 데이터 원본 목록에서 **Microsoft Access 데이터베이스 파일**을 선택 합니다. **데이터 공급자** 드롭다운에서 **.NET Framework Data Provider OLE DB**를 선택한 다음 **확인**을 선택 합니다.
 
@@ -59,7 +59,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 10. **데이터 연결 선택** 페이지에서 **다음** 을 선택 합니다.
 
-    데이터 파일이 현재 프로젝트에 없다고 알려주는 대화 상자가 표시 될 수 있습니다. **예** 또는 **아니요**를 선택합니다.
+    데이터 파일이 현재 프로젝트에 없다고 알려주는 대화 상자가 표시 될 수 있습니다. **예** 또는 **아니요**를 선택 합니다.
 
 11. **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음** 을 선택 합니다.
 
@@ -75,7 +75,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 1. Visual Studio에서 Windows Forms 또는 WPF 응용 프로그램 프로젝트를 엽니다.
 
-2. **보기** 메뉴에서 **다른 Windows** > **데이터 원본**을 선택 합니다.
+2. **보기** 메뉴에서 **기타 Windows**  >  **데이터 원본**을 선택 합니다.
 
    ![다른 창 데이터 소스 보기](../data-tools/media/viewdatasources.png)
 
@@ -113,7 +113,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 - **데이터 세트 디자이너**에서 데이터 원본을 열어 데이터 세트를 구성하는 개체를 추가하거나 편집합니다.
 
-- 데이터 집합의 데이터 테이블에 대 한 <xref:System.Data.DataTable.ColumnChanging> 또는 <xref:System.Data.DataTable.RowChanging> 이벤트에 유효성 검사 논리를 추가 합니다 (데이터 [집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)참조).
+- 데이터 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 집합에 있는 데이터 테이블의 또는 이벤트에 유효성 검사 논리를 추가 합니다 (데이터 [집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)참조).
 
 ## <a name="see-also"></a>참조
 
