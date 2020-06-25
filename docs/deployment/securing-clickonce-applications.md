@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184447"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286305"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce 애플리케이션 보안
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에서는 .NET Framework의 코드 액세스 보안 제한에 따라 보호된 리소스 및 작업에 대한 코드의 액세스를 제한합니다. 따라서 코드 액세스 보안의 의미를 이해하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 적절하게 작성해야 합니다. 애플리케이션에서는 완전 신뢰 영역이나 부분 신뢰 영역(예: 인터넷 및 인트라넷 영역)을 사용하여 액세스를 제한할 수 있습니다.
@@ -50,7 +50,7 @@ ms.locfileid: "84184447"
  코드 액세스 보안 및 ClickOnce에 대 한 자세한 내용은 [clickonce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조 하세요.
 
 ## <a name="code-signing-certificates"></a>코드 서명 인증서
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용하여 애플리케이션을 게시하려면 퍼블릭/전용 키 쌍을 사용하여 애플리케이션과 해당 애플리케이션의 배포 매니페스트에 서명합니다. 매니페스트에 서명하는 도구는 **프로젝트 디자이너** 의 **서명**페이지에서 사용할 수 있습니다. 자세한 내용은 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)을 참조하십시오. 또는 게시 마법사를 사용하여 게시 프로세스 동안 키 파일로 매니페스트를 서명할 수 있습니다.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용하여 애플리케이션을 게시하려면 퍼블릭/전용 키 쌍을 사용하여 애플리케이션과 해당 애플리케이션의 배포 매니페스트에 서명합니다. 매니페스트에 서명하는 도구는 **프로젝트 디자이너** 의 **서명**페이지에서 사용할 수 있습니다. 자세한 내용은 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)을 참조하십시오.
 
  매니페스트에 서명한 후에는 설치 시 Authenticode 서명 기반의 게시자 정보가 권한 대화 상자에 표시되어 애플리케이션의 출처를 신뢰할 수 있음을 보여 줍니다.
 
@@ -76,6 +76,6 @@ ms.locfileid: "84184447"
 ## <a name="deploying-obfuscated-assemblies"></a>난독 처리된 어셈블리 배포
  Visual Studio에는 체험판 [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md)가 포함되어 있어 코드 난독 처리 및 활성 보호 조치를 통해 ClickOnce 애플리케이션을 보호하는 데 사용할 수 있습니다.  자세한 내용은 [Dotfuscator Community 사용자 가이드의 ClickOnce 섹션](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
