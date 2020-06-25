@@ -9,19 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "82921234"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329085"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Blend for Visual Studio에서 데이터 표시
 
 페이지의 레이아웃을 사용자 지정할 때 디자이너에서 예제 데이터를 볼 수 있습니다. 예제 데이터는 처음부터 새로 또는 기존 클래스를 사용하여 생성할 수 있습니다. 예제 데이터를 실행시 앱에 표시되는 *라이브 데이터*에 연결할 수도 있습니다.
 
 > [!NOTE]
-> Blend의 **데이터** 패널은 .NET Framework를 대상으로 하는 프로젝트에만 지원 됩니다. .NET Core를 대상으로 하는 UWP 프로젝트 또는 프로젝트에 대해서는 지원 되지 않습니다. 
+> Blend의 **데이터** 패널은 .NET Framework를 대상으로 하는 프로젝트에만 지원 됩니다. .NET Core를 대상으로 하는 UWP 프로젝트 또는 프로젝트에 대해서는 지원 되지 않습니다.
 
 ## <a name="generate-sample-data"></a>샘플 데이터 생성
 
@@ -45,6 +45,6 @@ ms.locfileid: "82921234"
 
 **짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [일부 데이터 바인딩을 Blend와 혼합](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Blend for Visual Studio를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

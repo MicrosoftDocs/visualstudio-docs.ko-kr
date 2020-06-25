@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e26a889c65b80d5a83cc6b2b3a726aa9ad2319
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8b1a9d109b833d17783beb39c5f34cf6b9ed3274
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184460"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292895"
 ---
 # <a name="code-metrics-values"></a>코드 메트릭 값
 
@@ -40,7 +40,7 @@ Visual Studio에서 코드 메트릭 데이터를 생성 하는 방법에 대 �
 
 - **소스 코드 줄** -빈 줄을 포함 하 여 소스 파일에 있는 소스 코드 줄의 정확한 수를 나타냅니다. 이 메트릭은 Visual Studio 2019 버전 16.4 및 2.9.5 (영문)부터 사용할 수 있습니다.
 
-- **실행 코드 줄** -대략적인 실행 코드 줄 또는 작업 수를 나타냅니다. 실행 코드의 작업 수입니다. 이 메트릭은 Visual Studio 2019 버전 16.4 및 메트릭 (2.9.5)부터 사용할 수 있습니다. 값은 일반적으로 레거시 모드에서 사용 되는 MSIL 명령 기반 메트릭에 해당 하는 이전 메트릭과 **코드 줄**의 근접 일치 항목입니다.
+- **실행 코드 줄** -대략적인 실행 코드 줄 또는 작업 수를 나타냅니다. 실행 코드의 작업 수입니다. 이 메트릭은 Visual Studio 2019 버전 16.4 및 2.9.5 (영문)부터 사용할 수 있습니다. 값은 일반적으로 레거시 모드에서 사용 되는 MSIL 명령 기반 메트릭에 해당 하는 이전 메트릭과 **코드 줄**의 근접 일치 항목입니다.
 ::: moniker-end
 ::: moniker range="vs-2017"
 
