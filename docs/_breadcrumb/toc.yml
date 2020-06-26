@@ -3,105 +3,101 @@
   topicHref: /
   items:
     - name: Visual Studio
-      tocHref: /visualstudio/
-      topicHref: /visualstudio/
+      tocHref: /visualstudio/windows
+      topicHref: /visualstudio/windows/index
       items:
-        - name: Windows
-          tocHref: /visualstudio/windows
-          topicHref: /visualstudio/windows/index
+        - name: IDE
+          tocHref: /visualstudio/ide/
+          topicHref: /visualstudio/ide/
           items:
-            - name: IDE
-              tocHref: /visualstudio/ide/
-              topicHref: /visualstudio/ide/
+            - name: 코드 품질
+              tocHref: /visualstudio/code-quality/
+              topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
+            - name: 플랫폼 간
+              tocHref: /visualstudio/cross-platform/
+              topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
+            - name: 데이터 도구
+              tocHref: /visualstudio/data-tools/
+              topicHref: /visualstudio/data-tools/index
+            - name: 디버깅
+              tocHref: /visualstudio/debugger/
+              topicHref: /visualstudio/debugger/index
               items:
-                - name: 코드 품질
-                  tocHref: /visualstudio/code-quality/
-                  topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
-                - name: 플랫폼 간
-                  tocHref: /visualstudio/cross-platform/
-                  topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
-                - name: 데이터 도구
-                  tocHref: /visualstudio/data-tools/
-                  topicHref: /visualstudio/data-tools/index
-                - name: 디버깅
-                  tocHref: /visualstudio/debugger/
-                  topicHref: /visualstudio/debugger/index
-                  items:
-                    - name: 디버그 인터페이스 액세스 SDK
-                      tocHref: /visualstudio/debugger/debug-interface-access/
-                      topicHref: /visualstudio/debugger/debug-interface-access/debug-interface-access-sdk
-                    - name: 그래픽
-                      tocHref: /visualstudio/debugger/graphics/
-                      topicHref: /visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics
-                - name: 배포
-                  tocHref: /visualstudio/deployment/
-                  topicHref: /visualstudio/deployment/deploying-applications-services-and-components
-                - name: IDE 클래스 디자이너
-                  tocHref: /visualstudio/ide/class-designer
-                  topicHref: /visualstudio/ide/class-designer/designing-and-viewing-classes-and-types
-                - name: 아키텍처 모델링
-                  tocHref: /visualstudio/modeling/
-                  topicHref: /visualstudio/modeling/analyze-and-model-your-architecture
-                - name: 프로파일링
-                  tocHref: /visualstudio/profiling/
-                  topicHref: /visualstudio/profiling/index
-                - name: 테스트
-                  tocHref: /visualstudio/test/
-                  topicHref: /visualstudio/test/index
-                - name: Workflow Designer
-                  tocHref: /visualstudio/workflow-designer/
-                  topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
-                - name: XAML 도구
-                  tocHref: /visualstudio/xaml-tools/
-                  topicHref: /visualstudio/xaml-tools/
-                - name: XML 도구
-                  tocHref: /visualstudio/xml-tools/
-                  topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio
-                - name: 'C# 시작'
-                  tocHref: /visualstudio/get-started/csharp/
-                  topicHref: /visualstudio/get-started/csharp/index
-                - name: Visual Basic 시작
-                  tocHref: /visualstudio/get-started/visual-basic/
-                  topicHref: /visualstudio/get-started/visual-basic/
-            - name: 확장성
-              tocHref: /visualstudio/extensibility/
-              topicHref: /visualstudio/extensibility/index
+                - name: 디버그 인터페이스 액세스 SDK
+                  tocHref: /visualstudio/debugger/debug-interface-access/
+                  topicHref: /visualstudio/debugger/debug-interface-access/debug-interface-access-sdk
+                - name: 그래픽
+                  tocHref: /visualstudio/debugger/graphics/
+                  topicHref: /visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics
+            - name: 배포
+              tocHref: /visualstudio/deployment/
+              topicHref: /visualstudio/deployment/deploying-applications-services-and-components
+            - name: IDE 클래스 디자이너
+              tocHref: /visualstudio/ide/class-designer
+              topicHref: /visualstudio/ide/class-designer/designing-and-viewing-classes-and-types
+            - name: 아키텍처 모델링
+              tocHref: /visualstudio/modeling/
+              topicHref: /visualstudio/modeling/analyze-and-model-your-architecture
+            - name: 프로파일링
+              tocHref: /visualstudio/profiling/
+              topicHref: /visualstudio/profiling/index
+            - name: 테스트
+              tocHref: /visualstudio/test/
+              topicHref: /visualstudio/test/index
+            - name: Workflow Designer
+              tocHref: /visualstudio/workflow-designer/
+              topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
+            - name: XAML 도구
+              tocHref: /visualstudio/xaml-tools/
+              topicHref: /visualstudio/xaml-tools/
+            - name: XML 도구
+              tocHref: /visualstudio/xml-tools/
+              topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio
+            - name: C# 시작
+              tocHref: /visualstudio/get-started/csharp/
+              topicHref: /visualstudio/get-started/csharp/index
+            - name: Visual Basic 시작
+              tocHref: /visualstudio/get-started/visual-basic/
+              topicHref: /visualstudio/get-started/visual-basic/
+        - name: 확장성
+          tocHref: /visualstudio/extensibility/
+          topicHref: /visualstudio/extensibility/index
+          items:
+            - name: Visual Studio SDK 기본 사항
+              tocHref: /visualstudio/extensibility/internals/
+              topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
+            - name: 디버거 확장성
+              tocHref: /visualstudio/extensibility/debugger/
+              topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
               items:
-                - name: Visual Studio SDK 기본 사항
-                  tocHref: /visualstudio/extensibility/internals/
-                  topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
-                - name: 디버거 확장성
-                  tocHref: /visualstudio/extensibility/debugger/
-                  topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
-                  items:
-                    - name: 참고
-                      tocHref: /visualstudio/extensibility/debugger/reference/
-                      topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
-                - name: 사용자 환경 지침
-                  tocHref: /visualstudio/extensibility/ux-guidelines/
-                  topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
-            - name: MSBuild
-              tocHref: /visualstudio/msbuild/
-              topicHref: /visualstudio/msbuild/msbuild
-            - name: JavaScript 및 TypeScript
-              tocHref: /visualstudio/javascript/
-              topicHref: /visualstudio/javascript/index
-            - name: Python
-              tocHref: /visualstudio/python/
-              topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
-            - name: R
-              tocHref: /visualstudio/rtvs/
-              topicHref: /visualstudio/rtvs/index
-            - name: Office 및 SharePoint
+                - name: 참고
+                  tocHref: /visualstudio/extensibility/debugger/reference/
+                  topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
+            - name: 사용자 환경 지침
+              tocHref: /visualstudio/extensibility/ux-guidelines/
+              topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
+        - name: MSBuild
+          tocHref: /visualstudio/msbuild/
+          topicHref: /visualstudio/msbuild/msbuild
+        - name: JavaScript 및 TypeScript
+          tocHref: /visualstudio/javascript/
+          topicHref: /visualstudio/javascript/index
+        - name: Python
+          tocHref: /visualstudio/python/
+          topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
+        - name: R
+          tocHref: /visualstudio/rtvs/
+          topicHref: /visualstudio/rtvs/index
+        - name: Office 및 SharePoint
+          tocHref: /visualstudio/vsto/
+          topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
+          items:
+            - name: SharePoint
+              tocHref: /visualstudio/sharepoint/
+              topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
+            - name: VSTO
               tocHref: /visualstudio/vsto/
-              topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
-              items:
-                - name: SharePoint
-                  tocHref: /visualstudio/sharepoint/
-                  topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
-                - name: VSTO
-                  tocHref: /visualstudio/vsto/
-                  topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
-            - name: Azure 개발
-              tocHref: /visualstudio/azure
-              topicHref: /visualstudio/azure/index
+              topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
+        - name: Azure 개발
+          tocHref: /visualstudio/azure
+          topicHref: /visualstudio/azure/index
