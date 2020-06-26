@@ -1,7 +1,7 @@
 ---
-title: '방법: ClickOnce 응용 프로그램에 대 한 업데이트 관리 | Microsoft Docs'
+title: 방법-ClickOnce 응용 프로그램에 대 한 업데이트 관리 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba899e922e98817462b06a1693525ab1ae69e20
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159911"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382356"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 대한 업데이트 관리
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 자동으로 또는 프로그래밍 방식으로 업데이트를 확인할 수 있습니다. 개발자는 업데이트 확인을 수행 하는 시기와 방법, 업데이트가 필수 인지 여부 및 응용 프로그램이 업데이트를 확인 해야 하는 위치를 지정 하는 데 많은 유연성을 발휘할 수 있습니다.
 
  응용 프로그램이 시작 되기 전이나 응용 프로그램이 시작 된 후 설정 된 간격으로 업데이트를 자동으로 확인 하도록 응용 프로그램을 구성할 수 있습니다. 또한 필요한 최소 버전을 지정할 수 있습니다. 즉, 사용자의 버전이 필요한 버전 보다 낮은 경우 업데이트가 설치 됩니다.
 
- 응용 프로그램에서 사용자 요청 등의 이벤트에 따라 프로그래밍 방식으로 업데이트를 확인 하도록 구성할 수 있습니다. 이 항목의 "프로그래밍 방식으로 업데이트를 확인 하려면" 절차에서는 클래스를 <xref:System.Deployment.Application.ApplicationDeployment> 사용 하 여 이벤트를 기반으로 업데이트를 확인 하는 코드를 작성 하는 방법을 보여 줍니다.
+ 응용 프로그램에서 사용자 요청 등의 이벤트에 따라 프로그래밍 방식으로 업데이트를 확인 하도록 구성할 수 있습니다. 이 항목의 "프로그래밍 방식으로 업데이트를 확인 하려면" 절차에서는 클래스를 사용 하 여 이벤트를 <xref:System.Deployment.Application.ApplicationDeployment> 기반으로 업데이트를 확인 하는 코드를 작성 하는 방법을 보여 줍니다.
 
  한 위치에서 응용 프로그램을 배포 하 고 다른 위치에서 업데이트할 수도 있습니다. "다른 업데이트 위치를 지정 하려면" 절차를 참조 하십시오.
 
@@ -87,7 +87,7 @@ ms.locfileid: "71159911"
 
 4. **응용 프로그램 업데이트** 대화 상자에서 **응용 프로그램이 업데이트를 확인 해야 함** 확인란을 선택 했는지 확인 합니다.
 
-5. **업데이트 위치** 필드에, 형식 *http://Hostname/ApplicationName* 또는  *\\ \Server\ApplicationName*형식을 사용 하 여 정규화 된 URL을 사용 하 여 업데이트 위치를 입력 하거나, **찾아보기** 단추를 클릭 하 여 업데이트 위치입니다.
+5. **업데이트 위치** 필드에서 형식 또는 \Server\ApplicationName 형식을 사용 하 여 정규화 된 URL을 사용 하 여 업데이트 위치를 입력 *http://Hostname/ApplicationName* 하거나 **찾아보기** 단추를 클릭 * \\ *하 여 업데이트 위치를 찾습니다.
 
 ### <a name="to-check-for-updates-programmatically"></a>프로그래밍 방식으로 업데이트를 확인 하려면
 
@@ -99,13 +99,13 @@ ms.locfileid: "71159911"
 
 4. **응용 프로그램 업데이트** 대화 상자에서 **응용 프로그램이 업데이트를 확인 해야 함** 확인란의 선택을 취소 했는지 확인 합니다. (선택 사항)이 확인란을 선택 하 여 프로그래밍 방식으로 업데이트를 확인 하 고 ClickOnce 런타임에서 업데이트를 자동으로 확인 하도록 할 수도 있습니다.
 
-5. **업데이트 위치** 필드에, 형식 *http://Hostname/ApplicationName* 또는  *\\ \Server\ApplicationName*형식을 사용 하 여 정규화 된 URL을 사용 하 여 업데이트 위치를 입력 하거나, **찾아보기** 단추를 클릭 하 여 업데이트 위치입니다. 업데이트 위치는 응용 프로그램이 업데이트 된 버전을 검색 하는 위치입니다.
+5. **업데이트 위치** 필드에서 형식 또는 \Server\ApplicationName 형식을 사용 하 여 정규화 된 URL을 사용 하 여 업데이트 위치를 입력 *http://Hostname/ApplicationName* 하거나 **찾아보기** 단추를 클릭 * \\ *하 여 업데이트 위치를 찾습니다. 업데이트 위치는 응용 프로그램이 업데이트 된 버전을 검색 하는 위치입니다.
 
-6. 사용자가 업데이트를 확인 하기 위해 선택 하는 Windows Form에서 단추, 메뉴 항목 또는 기타 사용자 인터페이스 항목을 만듭니다. 해당 항목의 이벤트 처리기에서 메서드를 호출 하 여 업데이트를 확인 하 고 설치 합니다. 이러한 메서드에 C# [대 한 Visual Basic 및 시각적 코드의 예제는 방법: ClickOnce 배포 API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)를 사용 하 여 프로그래밍 방식으로 응용 프로그램 업데이트를 확인 합니다.
+6. 사용자가 업데이트를 확인 하기 위해 선택 하는 Windows Form에서 단추, 메뉴 항목 또는 기타 사용자 인터페이스 항목을 만듭니다. 해당 항목의 이벤트 처리기에서 메서드를 호출 하 여 업데이트를 확인 하 고 설치 합니다. [방법: ClickOnce 배포 API를 사용 하 여 프로그래밍 방식으로 응용 프로그램 업데이트 확인](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)에서 이러한 메서드에 대 한 Visual Basic 및 Visual c # 코드의 예제를 찾을 수 있습니다.
 
 7. 응용 프로그램을 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [애플리케이션 업데이트 대화 상자](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)

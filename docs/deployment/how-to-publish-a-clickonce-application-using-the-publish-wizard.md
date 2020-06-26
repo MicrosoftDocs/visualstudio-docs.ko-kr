@@ -1,7 +1,7 @@
 ---
 title: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3880fdc8d1d83fd36fdf09fea9e0c955b02236
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263260"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382304"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시
 ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나 경로, FTP 서버 또는 이동식 미디어에 해당 애플리케이션을 게시해야 합니다. 게시 마법사를 사용하여 애플리케이션을 게시할 수 있습니다. 게시와 관련된 추가 속성은 **프로젝트 디자이너**의 **게시** 페이지에서 사용 가능합니다. 자세한 내용은 [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)를 참조하세요.
 
-게시 마법사를 실행하기 전에 게시 속성을 적절하게 설정해야 합니다. 예를 들어 ClickOnce 애플리케이션에 서명을 하기 위한 키는 **프로젝트 디자이너**의 **서명** 페이지에서 지정할 수 있습니다. 자세한 내용은 [ClickOnce 보안 응용 프로그램](../deployment/securing-clickonce-applications.md)합니다.
+게시 마법사를 실행하기 전에 게시 속성을 적절하게 설정해야 합니다. 예를 들어 ClickOnce 애플리케이션에 서명을 하기 위한 키는 **프로젝트 디자이너**의 **서명** 페이지에서 지정할 수 있습니다. 자세한 내용은 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)을 참조 하세요.
 
 > [!NOTE]
 > ClickOnce를 사용하여 애플리케이션 버전을 둘 이상 설치하면 이전 애플리케이션 버전이 지정한 게시 위치의 *Archive* 폴더로 이동합니다. 이러한 방식으로 이전 버전이 보관되므로 설치 디렉터리에 이전 버전의 폴더가 남지 않습니다.
@@ -39,7 +39,7 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
 
 1. **솔루션 탐색기**에서 애플리케이션 프로젝트를 선택합니다.
 
-2. 에 **빌드할** 메뉴에서 클릭 **게시** *Projectname*합니다.
+2. **빌드** 메뉴에서 *Projectname* **게시** 를 클릭 합니다.
 
     게시 마법사가 나타납니다.
 
@@ -69,13 +69,13 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
 
 1. **솔루션 탐색기**에서 애플리케이션 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.
 
-    **프로젝트 디자이너**가 표시됩니다.
+    **프로젝트 디자이너가** 나타납니다.
 
 2. **게시** 탭을 클릭하여 **프로젝트 디자이너**에서 **게시** 페이지를 열고 **게시 마법사** 단추를 클릭합니다.
 
     게시 마법사가 나타납니다.
 
-3. **애플리케이션을 게시할 위치** 페이지에 애플리케이션을 게시할 파일 경로나 FTP 위치를 *d:\deploy*와 같이 입력합니다. 그런 후에, **다음**을 클릭하여 계속 진행합니다.
+3. **애플리케이션을 게시할 위치** 페이지에 애플리케이션을 게시할 파일 경로나 FTP 위치를 *d:\deploy*와 같이 입력합니다. 그리고 **다음**을 클릭하여 계속합니다.
 
 4. **애플리케이션 설치 방법** 페이지에서 **CD-ROM 또는 DVD-ROM에서**를 클릭한 후, **다음**을 클릭합니다.
 
@@ -97,8 +97,8 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
    > [!NOTE]
    > 게시가 완료되면 CD 재작성기 또는 DVD 재작성기를 사용하여 3단계에서 지정한 위치에서 CD-ROM 또는 DVD-ROM 미디어로 파일을 복사합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>추가 정보
 
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
-- [ClickOnce를 사용하여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)

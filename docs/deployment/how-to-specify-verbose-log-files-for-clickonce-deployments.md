@@ -1,7 +1,7 @@
 ---
-title: '방법: ClickOnce 배포에 대 한 자세한 정보 표시 로그 파일을 지정 합니다. | Microsoft Docs'
+title: 방법-ClickOnce 배포에 대 한 자세한 로그 파일 지정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,30 +15,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d57c9aa618ec3df91b130cb2f870d88b01c323c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406699"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381771"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>방법: ClickOnce 배포에 대한 자세한 로그 파일 지정
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 모든 배포에 대 한 활동 로그를 유지 관리합니다. 이러한 로그는 설치, 초기화, 업데이트 및 제거와 관련 된 세부 정보 문서는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 합니다. 세부 사항이 증가 하는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 레지스트리 편집기를 사용 하 여 이러한 로그 파일에 쓰기 (*regedit.exe*) 세부 정보 표시 수준을 지정 하려면.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]모든 배포에 대 한 활동 로그 파일을 유지 관리 합니다. 이러한 로그는 배포 설치, 초기화, 업데이트 및 제거와 관련 된 정보를 문서화 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 합니다. 이러한 로그 파일에 기록 하는 세부 정보를 늘리려면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 레지스트리 편집기 (*regedit.exe*)를 사용 하 여 자세한 정도를 지정 합니다.
 
 > [!CAUTION]
-> 레지스트리 편집기를 잘못 사용 하면 운영 체제를 다시 설치 해야 할 수 있는 심각한 문제가 발생할 수 있습니다. 레지스트리 편집기를 사용할 때는 주의하세요.
+> 레지스트리 편집기를 잘못 사용 하면 운영 체제를 다시 설치 해야 할 수 있는 심각한 문제가 발생할 수 있습니다. 레지스트리 편집기를 사용할 때는 특별히 주의해야 합니다.
 
- 다음 절차에 대 한 세부 정보 표시 수준을 지정 하는 방법에 설명 합니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 현재 사용자에 대 한 파일을 기록 합니다. 자세한 정도 줄이려면이 레지스트리 값을 제거 합니다.
+ 다음 절차에서는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 현재 사용자에 대 한 로그 파일의 자세한 정도 수준을 지정 하는 방법을 설명 합니다. 자세한 정도 수준을 줄이려면이 레지스트리 값을 제거 합니다.
 
 ### <a name="to-specify-verbose-log-files"></a>자세한 로그 파일을 지정 하려면
 
-1. 오픈 *Regedit.exe*합니다.
+1. *Regedit.exe*를 엽니다.
 
-2. 노드로 이동 **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**합니다.
+2. **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment**노드로 이동 합니다.
 
-3. 필요한 경우 라는 새 문자열 값을 만듭니다. `LogVerbosityLevel`합니다.
+3. 필요한 경우 라는 새 문자열 값을 만듭니다 `LogVerbosityLevel` .
 
-4. 설정 된 `LogVerbosityLevel` 값을 `1`입니다.
+4. `LogVerbosityLevel`값을로 설정 `1` 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)

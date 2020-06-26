@@ -1,7 +1,7 @@
 ---
 title: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30169a43d88f0ee8ae2c428e5a3da0aef0b9d642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637858"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382187"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>방법: 온라인 ClickOnce 애플리케이션에서 쿼리 문자열 정보 검색
 *쿼리 문자열* 은 임의의 정보를 *name=value*형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 호스트하는 `WindowsApp1` 이라는 이름의 `servername`애플리케이션이 있으며, 애플리케이션이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.
@@ -39,14 +39,14 @@ ms.locfileid: "72637858"
 > [!NOTE]
 > 이 기능의 사용 여부를 결정하기 전에 이 항목의 뒷부분에 나오는 "보안" 섹션을 참조하세요.
 
- *Mage.exe* 또는 *mageui.exe*를 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 만드는 방법에 대 한 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Mage.exe* 또는 *MageUI.exe*를 사용 하 여 배포를 만드는 방법에 대 한 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
 
 > [!NOTE]
 > .NET Framework 3.5 SP1부터 명령줄 인수를 오프라인 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 전달할 수 있습니다. 애플리케이션에 인수를 제공하려는 경우 .APPREF-MS 확장명의 바로 가기 파일에 매개 변수를 전달할 수 있습니다.
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>ClickOnce 애플리케이션에서 쿼리 문자열 정보를 가져오려면
 
-1. 프로젝트에 다음 코드를 추가합니다. 이 코드가 작동 하려면 system.web에 대 한 참조를 보유 하 고 system.web, System.object 및 System.object에 대 한 `using` 또는 `Imports` 지시문을 추가 해야 합니다.
+1. 프로젝트에 다음 코드를 추가합니다. 이 코드가 작동 하려면 system.web에 대 한 참조를 보유 하 고 system.web `using` `Imports` , System.object 및 system.object에 대 한 또는 지시문을 추가 해야 합니다.
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
@@ -76,7 +76,7 @@ ms.locfileid: "72637858"
  온라인 전용인 애플리케이션은 항상 URL을 통해 활성화됩니다. 그러나 이 경우, 쿼리 문자열 매개 변수가 누락되거나 손상되더라도 제대로 작동하도록 애플리케이션을 작성해야 합니다.
 
 ## <a name="net-framework-security"></a>.NET Framework 보안
- 악의적인 문자의 입력을 사용 전에 지우려는 경우에만 URL 매개 변수가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 전달되도록 하세요. 예를 들어 따옴표, 슬래시 또는 세미콜론이 포함된 문자열은 데이터베이스에 대한 SQL 쿼리에서 필터링되지 않고 사용될 경우 임의의 데이터 작업을 수행할 수 있습니다. 쿼리 문자열 보안에 대한 자세한 내용은 [Script Exploits Overview](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조하세요.
+ 악의적인 문자의 입력을 사용 전에 지우려는 경우에만 URL 매개 변수가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 전달되도록 하세요. 예를 들어 따옴표, 슬래시 또는 세미콜론이 포함된 문자열은 데이터베이스에 대한 SQL 쿼리에서 필터링되지 않고 사용될 경우 임의의 데이터 작업을 수행할 수 있습니다. 쿼리 문자열 보안에 대 한 자세한 내용은 [스크립트 악용 개요](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

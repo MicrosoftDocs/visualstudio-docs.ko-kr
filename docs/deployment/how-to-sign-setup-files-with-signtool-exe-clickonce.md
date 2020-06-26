@@ -1,7 +1,7 @@
 ---
-title: '방법: SignTool.exe (ClickOnce)를 사용 하 여 파일 설치 | Microsoft Docs'
+title: SignTool.exe를 사용 하 여 설치 파일에 서명 하는 방법 (ClickOnce) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928401"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382070"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>방법: SignTool.exe를 사용하여 설치 파일에 서명(ClickOnce)
 *SignTool.exe*를 사용하여 설치 프로그램(*setup.exe*)에 서명을 할 수 있습니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.
@@ -36,7 +36,7 @@ ms.locfileid: "62928401"
 
 1. 매니페스트에 서명하는 데 사용할 인증서를 개발 컴퓨터에 설치합니다.
 
-2. **솔루션 탐색기**에서 프로젝트를 선택합니다.
+2. **솔루션 탐색기**에서 프로젝트를 선택 합니다.
 
 3. **프로젝트** 메뉴에서 *ProjectName* **속성**을 클릭합니다.
 
@@ -76,5 +76,5 @@ ms.locfileid: "62928401"
     signtool sign /f CertFileName Setup.exe
     ```
 
-## <a name="see-also"></a>참고자료
-- [방법: 애플리케이션 및 배포 매니페스트 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+## <a name="see-also"></a>추가 정보
+- [방법: 애플리케이션 및 배포 매니페스트에 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

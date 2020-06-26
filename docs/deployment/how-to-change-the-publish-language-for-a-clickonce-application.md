@@ -1,7 +1,7 @@
 ---
-title: ClickOnce 응용 프로그램에 대 한 언어를 게시 하는 변경
+title: ClickOnce 응용 프로그램의 게시 언어 변경
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e80a65b65d75d925decdf60b633a7d51ea9bafce
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263170"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382590"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 게시 언어 변경
 
-게시 하는 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 사용자 인터페이스 언어 및 개발 컴퓨터의 문화권을 기본값으로 설치 중에 표시 합니다. 지역화 된 응용 프로그램을 게시 하는 경우에 언어 및 지역화 된 버전과 일치 하는 문화권을 지정 하는 것이 해야 합니다. 에 의해 결정 되기는 `Publish language` 프로젝트에 대 한 속성입니다.
+응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치 중에 표시 되는 사용자 인터페이스는 개발 컴퓨터의 언어 및 문화권으로 기본 설정 됩니다. 지역화 된 응용 프로그램을 게시 하는 경우 언어와 문화권을 지역화 된 버전과 일치 하도록 지정 해야 합니다. 이는 프로젝트의 속성에 의해 결정 됩니다 `Publish language` .
 
-`Publish language` 에서 속성을 설정할 수 있습니다 합니다 **게시 옵션** 에서 액세스할 수 있는 대화 상자를 **게시** 페이지를 **프로젝트 디자이너**합니다.
+`Publish language`속성은 **프로젝트 디자이너**의 **게시** 페이지에서 액세스할 수 있는 **게시 옵션** 대화 상자에서 설정할 수 있습니다.
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
@@ -38,13 +38,13 @@ ms.locfileid: "66263170"
 
 2. **게시** 탭을 클릭합니다.
 
-3. 클릭 합니다 **옵션** 버튼을 클릭 합니다 **게시 옵션** 대화 상자.
+3. **옵션** 단추를 클릭 하 여 **게시 옵션** 대화 상자를 엽니다.
 
-4. 클릭 **설명을**합니다.
+4. **설명**을 클릭 합니다.
 
-5. 에 **게시 옵션** 대화 상자, 언어 및 문화권에서 **게시 언어** 한 다음 클릭 하 고 드롭 다운 목록 **확인**합니다.
+5. **게시 옵션** 대화 상자의 **게시 언어** 드롭다운 목록에서 언어 및 문화권을 선택 하 고 **확인**을 클릭 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>추가 정보
 
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
 - [방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
