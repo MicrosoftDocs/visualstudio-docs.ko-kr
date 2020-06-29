@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92613b96d5d85a959e3426df86168c7110b74fed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633657"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288990"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 

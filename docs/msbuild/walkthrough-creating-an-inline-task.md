@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631161"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289146"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>연습: 인라인 작업 만들기
 
@@ -250,14 +250,16 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 ### <a name="handle-reserved-characters"></a>예약 문자 처리
 
- MSBuild 파서는 인라인 작업을 XML로 처리합니다. XML에서 예약된 의미를 갖는 문자(예: "\<" 및 ">")는 검색된 후 .NET 소스 코드가 아니라 마치 XML인 것처럼 처리됩니다. `Files.Length > 0`과 같은 코드 식에 예약된 문자를 포함하려면 다음과 같이 해당 콘텐츠가 CDATA 식에 포함되도록 `Code` 요소를 씁니다.
+ MSBuild 파서는 인라인 작업을 XML로 처리합니다. XML에서 예약된 의미를 갖는 문자(예: "\<" and ">")는 검색된 후 .NET 소스 코드가 아니라 마치 XML인 것처럼 처리됩니다. `Files.Length > 0`과 같은 코드 식에 예약된 문자를 포함하려면 다음과 같이 해당 콘텐츠가 CDATA 식에 포함되도록 `Code` 요소를 씁니다.
 
  ```xml
 <Code Type="Fragment" Language="cs">
   <![CDATA[
 
-  // Your code goes here.
-
+  if (Files.Length > 0)
+  {
+      // Your code goes here.
+  }
   ]]>
 </Code>
 ```

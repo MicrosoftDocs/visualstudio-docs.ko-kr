@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431451"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289159"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 
@@ -51,8 +51,10 @@ ms.locfileid: "79431451"
 
 |특성|설명|
 |---------------|-----------------|
+|`Architecture`|선택적 특성입니다.<br /><br /> 작업이 지정된 비트 수의 프로세스에서 실행되도록 지정합니다. 현재 프로세스가 요구 사항을 충족하지 않으면 작업이 요구 사항을 충족하는 작업 호스트 프로세스에서 실행됩니다.<br /><br /> 지원되는 값은 `x86`(32비트), `x64`(64비트), `CurrentArchitecture` 및 `*`(모든 아키텍처)입니다.|  
 |`AssemblyName`|`AssemblyName` 특성 또는 `AssemblyFile` 특성이 필요합니다.<br /><br /> 로드할 어셈블리의 이름입니다. `AssemblyName` 특성에서는 강력한 이름의 어셈블리를 허용하지만 필수적 요소는 아닙니다. 이 특성을 사용하면 .NET Framework에서 <xref:System.Reflection.Assembly.Load%2A> 메서드를 사용하여 어셈블리를 로드하는 것과 같은 결과를 얻을 수 있습니다.<br /><br /> `AssemblyFile` 특성을 사용하는 경우에는 이 특성을 사용할 수 없습니다.|
 |`AssemblyFile`|`AssemblyName` 또는 `AssemblyFile` 특성이 필요합니다.<br /><br /> 어셈블리의 파일 경로입니다. 이 특성에는 전체 경로 또는 상대 경로를 모두 사용할 수 있습니다. 상대 경로는 `UsingTask` 요소가 선언된 대상 파일이나 프로젝트의 디렉터리를 기준으로 합니다. 이 특성을 사용하면 .NET Framework에서 <xref:System.Reflection.Assembly.LoadFrom%2A> 메서드를 사용하여 어셈블리를 로드하는 것과 같은 결과를 얻을 수 있습니다.<br /><br /> `AssemblyName` 특성을 사용하는 경우에는 이 특성을 사용할 수 없습니다.|
+|`Runtime`|선택적 특성입니다.<br /><br /> 작업이 지정된 버전의 .NET Framework 런타임에서 실행되도록 지정합니다. 현재 프로세스가 요구 사항을 충족하지 않으면 작업이 요구 사항을 충족하는 작업 호스트 프로세스에서 실행됩니다. .NET Core MSBuild에서는 지원되지 않습니다.<br /><br /> 지원되는 값은 `CLR2`(.NET Framework 3.5), `CLR4`(.NET Framework 4.7.2 이상), `CurrentRuntime` 및 `*`(모든 런타임)입니다.|  
 |`TaskFactory`|선택적 특성입니다.<br /><br /> 지정된 `Task` 이름의 인스턴스 생성을 담당하는 어셈블리에 클래스를 지정합니다.  사용자는 또한 작업 팩터리가 수신해서 작업을 생성하는 데 사용하는 하위 요소로 `Task`를 지정할 수 있습니다. `Task`의 내용은 작업 팩터리에만 해당합니다.|
 |`TaskName`|필수 특성입니다.<br /><br /> 어셈블리에서 참조할 작업의 이름입니다. 모호성이 발생할 가능성이 있으면 이 특성에 항상 전체 네임스페이스를 지정해야 합니다. 모호성이 있으면 MSBuild에서는 일치하는 임의의 항목을 선택하므로 예기치 않은 결과가 발생할 수 있습니다.|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
@@ -110,5 +112,6 @@ ms.locfileid: "79431451"
 ## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
+- [방법: 대상 및 작업 구성](../msbuild/how-to-configure-targets-and-tasks.md)   
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

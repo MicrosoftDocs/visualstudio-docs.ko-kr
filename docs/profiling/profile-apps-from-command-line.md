@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638698"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285846"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>명령줄에서 애플리케이션 성능 측정
 
@@ -33,7 +33,7 @@ ms.locfileid: "80638698"
 
 * 명령줄 도구 사용 경험
 
-* Visual Studio가 설치되어 있지 않은 원격 머신에서 성능 정보를 수집하려면 원격 머신에 [Visual Studio용 성능 도구](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019)를 설치합니다. 도구의 버전이 Visual Studio의 버전과 일치해야 합니다.
+* Visual Studio가 설치되어 있지 않은 원격 머신에서 성능 정보를 수집하려면 원격 머신에 [Visual Studio용 성능 도구](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)를 설치합니다. 도구의 버전이 Visual Studio의 버전과 일치해야 합니다.
 
 ## <a name="collect-performance-data"></a>성능 데이터 수집
 
@@ -53,9 +53,9 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
    포함되어야 하는 인수는 다음과 같습니다.
 
-   * \<*id*> 컬렉션 세션을 식별합니다. ID는 1~255 사이의 숫자여야 합니다.
-   * \<*pid*> 프로파일링하려는 프로세스의 PID(이 경우 1단계에서 찾은 PID)
-   * \<*configFile*> 시작하려는 컬렉션 에이전트의 구성 파일입니다. 자세한 내용은 [에이전트의 구성 파일](#config_file)을 참조하세요.
+   * \<*id*>, 수집 세션을 식별합니다. ID는 1~255 사이의 숫자여야 합니다.
+   * \<*pid*>, 프로파일링하려는 프로세스의 PID입니다(이 경우 1단계에서 찾은 PID).
+   * \<*configFile*>, 시작하려는 컬렉션 에이전트의 구성 파일입니다. 자세한 내용은 [에이전트의 구성 파일](#config_file)을 참조하세요.
 
 1. 메모장의 크기를 조정하거나 몇 가지 흥미로운 프로파일링 정보가 수집되는지 확인하기 위해 항목을 입력합니다.
 
@@ -73,10 +73,20 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
 편의를 위해 에이전트 구성 파일에 해당 정보를 저장할 수 있습니다. 구성 파일은 최소한 *.dll*의 이름과 해당 COM CLSID를 포함하는 *.json* 파일입니다. 다음 폴더에서 찾을 수 있는 구성 파일의 예제는 다음과 같습니다.
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* CpuUsage 구성(기본/높음/낮음)은 [CPU 사용량](../profiling/cpu-usage.md) 프로파일링 도구에 대해 수집된 데이터에 해당합니다.
-* DotNetObjectAlloc 구성(기본/낮음)은 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)에 대해 수집된 데이터에 해당합니다.
+에이전트 구성 파일을 다운로드하고 보려면 다음 링크를 참조하세요.
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+CpuUsage 구성(기본/높음/낮음)은 [CPU 사용량](../profiling/cpu-usage.md) 프로파일링 도구에 대해 수집된 데이터에 해당합니다.
+DotNetObjectAlloc 구성(기본/낮음)은 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)에 대해 수집된 데이터에 해당합니다.
 
 기본/낮음/높음 구성은 샘플링 주기를 참조하세요. 예를 들어 낮음은 100 샘플/초이고 높음은 4000 샘플/초입니다.
 

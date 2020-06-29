@@ -1,7 +1,7 @@
 ---
 title: Python 코드 디버그
 description: Visual Studio는 중단점 설정, 단계별 실행, 값 검사, 예외 확인, 대화형 창에서 디버깅을 포함하여 Python 코드에 대한 풍부한 디버깅 기능을 제공합니다.
-ms.date: 03/13/2019
+ms.date: 05/12/2020
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307174"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285649"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -186,7 +186,7 @@ HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는
 
 ## <a name="use-the-legacy-debugger"></a>레거시 디버거 사용
 
-Visual Studio 2017 버전 15.8 이상에서는 ptvsd 버전 4.1 이상에 기반한 디버거를 사용합니다. 이 버전의 ptvsd는 Python 2.7 및 Python 3.5+와 호환 가능합니다. Python 2.6, 3.1~3.4 또는 IronPython을 사용하는 경우 Visual Studio에서는 **디버거는 이 Python 환경을 지원하지 않습니다.** 라는 오류를 표시합니다.
+Visual Studio 2017 버전 15.8 이상에서는 ptvsd 버전 4.1 이상에 기반한 디버거를 사용합니다. Visual Studio 2019 버전 16.5 이상에서는 debugpy에 기반한 디버거를 사용합니다. 이러한 버전의 디버거는 Python 2.7 및 Python 3.5+와 호환됩니다. Python 2.6, 3.1~3.4 또는 IronPython을 사용하는 경우 Visual Studio에서는 **디버거는 이 Python 환경을 지원하지 않습니다.** 라는 오류를 표시합니다.
 
 ![디버거를 사용하는 경우 디버거가 이 Python 환경을 지원하지 않습니다 오류](media/debugging-experimental-incompatible-error.png)
 
@@ -221,7 +221,8 @@ ptvsd 설치를 관리하려면:
 
 ## <a name="troubleshooting"></a>문제 해결
 
-디버거에 문제가 있는 경우 먼저 다음과 같이 ptvsd의 버전을 업그레이드합니다.
+### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Visual Studio 2019(버전 16.4 이전)의 경우 ptvsd를 업그레이드
+디버거에 문제가 있는 경우 먼저 다음과 같이 디버거의 버전을 업그레이드합니다.
 
 1. **Python 환경** 창에서 **패키지** 탭으로 이동합니다.
 
@@ -229,7 +230,10 @@ ptvsd 설치를 관리하려면:
 
     ![Python 환경 창에서 ptvsd upgrade 명령 제공](media/debugging-experimental-upgrade-ptvsd.png)
 
-문제가 계속되면 [PTVS GitHub 리포지토리](https://github.com/Microsoft/ptvs/issues)에 문제를 보고하세요.
+   문제가 계속되면 [PTVS GitHub 리포지토리](https://github.com/Microsoft/ptvs/issues)에 문제를 보고하세요.
+
+   > [!NOTE]
+   > Visual Studio 2019 버전 16.5 이상에서는 debugpy가 Visual Studio Python 워크로드의 일부이며 Visual Studio와 함께 업데이트됩니다.
 
 ### <a name="enable-debugger-logging"></a>디버거 로깅 사용
 

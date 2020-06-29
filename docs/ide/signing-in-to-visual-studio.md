@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79132723"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285298"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -23,6 +23,13 @@ ms.locfileid: "79132723"
 
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에 로그인](/visualstudio/mac/signing-in)을 참조하세요.
+
+::: moniker range="vs-2017"
+
+> [! 경고] Visual Studio 2017을 사용하여 조건부 액세스를 위해 구성된 리소스에 액세스하면 인증 환경이 저하되어 동일한 Visual Studio 세션 내에서 재인증을 여러 번 수행해야 할 수 있습니다. 
+> 조건부 액세스를 사용하도록 구성된 리소스를 사용하려면 Visual Studio 2019 업데이트 16.6 이상으로 업그레이드합니다. 자세한 내용은 [다단계 인증이 필요한 계정으로 Visual Studio를 사용하는 방법](work-with-multi-factor-authentication.md)을 참조하세요.
+
+::: moniker-end
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
 

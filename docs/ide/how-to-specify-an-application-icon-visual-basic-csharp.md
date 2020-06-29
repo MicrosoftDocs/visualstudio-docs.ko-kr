@@ -1,7 +1,7 @@
 ---
 title: '방법: 애플리케이션 아이콘 지정(Visual Basic, C#)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
@@ -11,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596140"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284063"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>방법: 애플리케이션 아이콘 지정(Visual Basic, C#)
 
-프로젝트에 대한 `Icon` 속성은 컴파일된 애플리케이션에 대해 **파일 탐색기** 및 Windows 작업 표시줄에서 표시되는 아이콘 파일(*.ico*)을 지정합니다.
+프로젝트에 대한 `Icon` 속성은 컴파일된 애플리케이션에 대해 **파일 탐색기** 및 Windows 작업 표시줄에서 표시되는 아이콘 파일( *.ico*)을 지정합니다.
 
 `Icon` 속성은 **프로젝트 디자이너**의 **애플리케이션** 창에서 액세스할 수 있습니다. 이 속성에는 리소스나 콘텐츠 파일로 프로젝트에 추가된 아이콘 목록이 포함되어 있습니다.
 
@@ -37,9 +37,9 @@ ms.locfileid: "75596140"
 
 1. **(Visual Basic)** &mdash;**아이콘** 목록에서 아이콘 파일( *.ico*)을 선택합니다.
 
-    **C#** &mdash;**아이콘** 목록 근처에서 **\<찾아보기...>** 단추를 선택한 다음, 원하는 아이콘 파일의 위치로 이동합니다.
+    **C#** &mdash;**아이콘** 목록 근처에서 **\<Browse...>** 단추를 선택한 다음, 원하는 아이콘 파일의 위치로 이동합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [애플리케이션 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [애플리케이션 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)

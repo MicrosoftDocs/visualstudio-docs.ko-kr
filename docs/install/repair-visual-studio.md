@@ -2,7 +2,7 @@
 title: Visual Studio 복구
 titleSuffix: ''
 description: Visual Studio 2017의 설치를 복구하는 방법 알아보기
-ms.date: 07/31/2019
+ms.date: 06/15/2020
 ms.custom: seodec18
 ms.topic: conceptual
 author: ornellaalt
@@ -12,18 +12,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5883889e4ccbeab22d8a11578bcd342ca95e9be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114739"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285246"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio 복구
 
-::: moniker range="vs-2017"
+경우에 따라 Visual Studio 설치가 손상되거나 훼손됩니다. 복구는 업데이트를 포함하여 모든 설치 작업에서 설치 시간 문제를 해결하는 데 유용합니다.
 
-경우에 따라 Visual Studio 설치가 손상되거나 훼손됩니다. 복구는 이 문제를 해결할 수 있습니다.
+## <a name="when-to-use-repair"></a>복구를 사용하는 경우
+* 설치 페이로드 문제가 있는 경우. 이 문제는 디스크에 파일을 쓸 수 없는 경우에 발생할 수 있으며 손상된 파일을 삭제하여 수정할 수 없습니다. 복구는 필요한 파일을 다시 가져올 수 있습니다. 
+* 클라이언트 쪽 다운로드 문제가 있는 경우. 연결 또는 프록시 문제를 해결한 경우에는 복구가 도움이 될 수 있습니다. 
+* Visual Studio를 업데이트하는 데 문제가 있는 경우. 복구가 일반적인 업데이트 문제를 해결합니다. 
+
+> [!TIP] 
+> 설치 문제가 Windows Installer와 같은 기본 Windows 서비스의 문제로 인해 발생한 경우 복구에서도 동일한 문제가 발생할 수 있습니다. 시스템 문제에는 손상된 Windows Installer 또는 불안정한 인터넷 연결이 포함될 수 있습니다. 시스템 문제를 확인하려면 설치 작업에서 생성된 오류 보고서를 사용합니다.
+
+> [!NOTE] 
+> Visual Studio를 복구하면 사용자 설정이 초기화되고 이미 있던 어셈블리가 다시 설치됩니다. 제품 문제가 발생한 경우 복구를 통해 문제가 해결되지 않을 수 있으므로 [Visual Studio 피드백 티켓](https://developercommunity.visualstudio.com/content/problem/post.html?space=8)을 만듭니다.
+
+## <a name="how-to-repair"></a>복구 방법
+::: moniker range="vs-2017"
 
 1. 컴퓨터에서 **Visual Studio 설치 관리자**를 찾습니다.
 
@@ -49,7 +61,7 @@ ms.locfileid: "76114739"
 
 ::: moniker range="vs-2019"
 
-1. 컴퓨터에서 Visual Studio 설치 관리자를 찾습니다.
+1. 컴퓨터에서 **Visual Studio 설치 관리자**를 찾습니다.
 
      예를 들어 Windows 10을 실행하는 컴퓨터에서 **시작**을 선택한 다음, **Visual Studio 설치 관리자**로 나열되는 **V** 문자로 스크롤합니다.
 
@@ -77,7 +89,7 @@ ms.locfileid: "76114739"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 설치](install-visual-studio.md)
 * [Visual Studio 업데이트](update-visual-studio.md)

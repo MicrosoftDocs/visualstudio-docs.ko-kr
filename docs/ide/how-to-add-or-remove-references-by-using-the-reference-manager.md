@@ -1,7 +1,7 @@
 ---
 title: 참조 관리자에서 참조 추가
 ms.date: 08/02/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595312"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284728"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 
@@ -190,7 +190,7 @@ WinMD에 대한 파일 참조를 수행하는 경우, 예상되는 레이아웃�
 
 - **기본 구성 요소**: 네이티브 프로젝트에서는 연결되지 않은 네임스페이스 집합 각각에 대한 하나의 WinMD 및 그 구현으로 구성된 하나의 DLL을 만듭니다. WinMD는 서로 다른 이름을 갖게 됩니다. 이 기본 구성 요소 파일을 참조하는 경우, MSBuild에서는 서로 다른 이름을 가진 WinMD에서 하나의 구성 요소를 만드는 것을 인식하지 못합니다. 따라서 동일한 이름의 *\<FileName>.dll* 및 *\<FileName>.winmd*만 복사되어 런타임 오류가 발생합니다. 이 문제를 해결하기 위해서는 확장명 SDK를 만듭니다. 자세한 내용은 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)를 참조하세요.
 
-- **컨트롤 사용**: XAML 컨트롤은 최소한 *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* 및 *\<ImageName>.jpg*로 구성됩니다. 프로젝트를 빌드할 때 파일 참조와 연관된 리소스 파일은 프로젝트의 출력 디렉터리에 복사되지 않고 *\<FileName>.winmd*, *\<FileName>.dll* 및 *\<FileName>.pri*만 복사됩니다. 빌드 오류가 기록되어 사용자에게 리소스 *\<XamlName>.xaml* 및 *\<ImageName>.jpg*가 누락되었음을 알려줍니다. 성공적으로 빌드하려면 사용자는 이러한 리소스 파일을 수동으로 빌드 및 디버깅/런타임용 프로젝트 출력 디렉터리에 복사해야 합니다. 이 문제를 해결하려면 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)의 단계에 따라 확장명 SDK를 만들거나, 프로젝트 파일을 편집하여 다음 속성을 추가합니다.
+- **컨트롤 사용**: XAML 컨트롤은 최소 하나씩의 *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* 및 *\<ImageName>.jpg*로 구성됩니다. 프로젝트를 빌드할 때 파일 참조와 연관된 리소스 파일은 프로젝트의 출력 디렉터리에 복사되지 않고 *\<FileName>.winmd*, *\<FileName>.dll* 및 *\<FileName>.pri*만 복사됩니다. 빌드 오류가 기록되어 사용자에게 리소스 *\<XamlName>.xaml* 및 *\<ImageName>.jpg*가 누락되었음을 알려줍니다. 성공적으로 빌드하려면 사용자는 이러한 리소스 파일을 수동으로 빌드 및 디버깅/런타임용 프로젝트 출력 디렉터리에 복사해야 합니다. 이 문제를 해결하려면 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)의 단계에 따라 확장명 SDK를 만들거나, 프로젝트 파일을 편집하여 다음 속성을 추가합니다.
 
     ```xml
     <PropertyGroup>

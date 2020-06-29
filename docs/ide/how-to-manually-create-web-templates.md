@@ -1,7 +1,7 @@
 ---
 title: 웹 템플릿 만들기
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591010"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284180"
 ---
 # <a name="how-to-manually-create-web-templates"></a>방법: 수동으로 웹 템플릿 만들기
 
@@ -41,7 +41,7 @@ ms.locfileid: "75591010"
    - CSharp
    - VisualBasic
 
-     다음은 그 예입니다.
+     예를 들어:
 
      ```xml
      <TemplateData>
@@ -54,7 +54,7 @@ ms.locfileid: "75591010"
 
 7. 템플릿(*vstemplate* 파일 포함)에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음, **보내기** > **압축(ZIP) 폴더**를 선택합니다. 파일이 *.zip* 파일로 압축됩니다.
 
-8. *.zip* 템플릿 파일을 Visual Studio 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\ProjectTemplates*입니다.
+8. *.zip* 템플릿 파일을 Visual Studio 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*입니다.
 
 ## <a name="example"></a>예제
 
@@ -81,7 +81,7 @@ ms.locfileid: "75591010"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조(확장성)](../extensibility/visual-studio-template-schema-reference.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21522ba32990a850a388bfcf69ab239232a2c23d
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638419"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285948"
 ---
 # <a name="analyze-memory-usage"></a>메모리 사용량 분석
 
@@ -21,7 +21,7 @@ ms.locfileid: "80638419"
 
 메모리 사용량 도구를 통해 관리되는 메모리 및 네이티브 메모리 힙의 *스냅샷* 을 하나 이상 만들 수 있습니다. .NET, ASP.NET, 네이티브 또는 혼합 모드(.NET 및 네이티브) 앱의 스냅샷을 수집할 수 있습니다. **메모리 사용량** 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Microsoft Store 앱에서 실행하거나 실행 중인 앱 또는 프로세스에 연결할 수 있습니다. 디버깅을 사용하거나 사용하지 않고 **메모리 사용량** 도구를 실행할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 디버거에서 메모리 프로파일링을 설정하거나 해제할 수 있으며 메모리 사용량에 대한 개체별 분석을 볼 수 있습니다. 실행이 일시 중지된 경우 메모리 사용량 결과를 볼 수 있습니다(예: 중단점에서).
 
-**.NET 개체 할당 도구**를 사용하면 .NET 코드의 할당 패턴과 비정상 요소를 식별하는 데 도움이 됩니다. 이 도구는 사후 분석 도구로만 실행됩니다. 로컬 머신이나 원격 머신에서 이 도구를 실행할 수 있습니다.
+**.NET 개체 할당 도구**를 사용하면 .NET 코드의 할당 패턴과 비정상 요소를 식별하는 데 도움이 됩니다. 이 도구는 사후 분석 도구로만 실행됩니다. 로컬 컴퓨터 또는 원격 컴퓨터에서 이 도구를 실행할 수 있습니다.
 
 메모리 분석 도구를 사용하는 방법을 설명하는 자세한 지침은 [메모리 사용량 분석](../profiling/memory-usage.md) 자습서 및 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)를 참조하세요.
 

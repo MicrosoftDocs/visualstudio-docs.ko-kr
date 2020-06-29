@@ -1,7 +1,7 @@
 ---
 title: 다중 파일 항목 템플릿 만들기
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593735"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284427"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 
@@ -36,7 +36,7 @@ ms.locfileid: "75593735"
 
 1. 단일 파일 항목 템플릿을 수동으로 만들 때처럼 항목 템플릿을 만들되, 다중 파일 항목을 구성 하는 각 파일을 포함합니다.
 
-1. *.vstemplate* XML 파일에서 각 개별 파일에 대한 `ProjectItem` 요소를 추가하고 이 요소에 `TargetFileName` 특성을 추가합니다. `TargetFileName` 특성 값을 *$fileinputname$.FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 확장명입니다. 다음은 그 예입니다.
+1. *.vstemplate* XML 파일에서 각 개별 파일에 대한 `ProjectItem` 요소를 추가하고 이 요소에 `TargetFileName` 특성을 추가합니다. `TargetFileName` 특성 값을 *$fileinputname$.FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 확장명입니다. 예를 들어:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -57,7 +57,7 @@ ms.locfileid: "75593735"
 
    선택한 파일이 *.zip* 파일로 압축됩니다.
 
-1. *.zip* 파일을 사용자 항목 템플릿 위치에 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\Templates\ItemTemplates*입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
+1. *.zip* 파일을 사용자 항목 템플릿 위치에 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
 
 1. Visual Studio를 종료한 다음 다시 엽니다.
 
@@ -92,9 +92,9 @@ ms.locfileid: "75593735"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)
-- [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)
+- [방법: 템플릿의 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)

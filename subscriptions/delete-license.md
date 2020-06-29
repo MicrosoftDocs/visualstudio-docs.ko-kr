@@ -4,21 +4,23 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 03/03/2020
+ms.date: 06/16/2020
 ms.topic: conceptual
 description: 관리자가 구독 할당을 삭제하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: a884cb56b9c04558023659317ecce2d06a8ec54d
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f630eef2d06e008966165e898cd40d123cb5c590
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232536"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289081"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 할당 삭제
 회사를 떠나거나, 프로젝트가 완료되거나, 새로운 작업 역할로 전환되는 경우처럼 구독자에게 더 이상 Visual Studio 구독이 필요하지 않은 경우 해당 구독을 제거하고 다른 사람에게 할당할 수 있습니다. 구독을 다시 할당하면 일부 구독자 혜택은 재설정되지 않습니다.  새 사용자는 요청되지 않은 키를 요청하고, 이전에 요청된 키를 볼 수 있지만 클레임 제한은 재설정되지 **않습니다**.  EA(기업 계약)가 있는 조직의 경우 원래 사용자가 사용한 모든 혜택(예: Pluralsight 교육)은 다시 설정됩니다. 
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yG2q]
+
 ## <a name="delete-a-subscription-assignment"></a>구독 할당 삭제
-1. 제거하려는 구독자의 이름을 클릭합니다. 제거할 구독자를 여럿 선택하려면 구독자 이름 왼쪽에 있는 원을 클릭하여 각 구독자를 선택하면 됩니다.  또는 **CTRL** 키를 누른 채로 제거할 각 구독자를 클릭하면 됩니다.  모든 구독자를 선택하고 제거하려면 **CTRL + A**를 누릅니다. 
+1. 제거하려는 구독자의 이름을 클릭합니다. 제거할 구독자를 여럿 선택하려면 구독자 이름 왼쪽에 있는 원을 클릭하여 각 구독자를 선택하면 됩니다.  또는 **CTRL** 키를 누른 채로 제거할 각 구독자를 클릭하면 됩니다. 구독자의 범위를 제거하려면 첫 번째 구독자를 클릭하고 **Shift** 키를 누른 상태에서 마지막 구독자를 클릭합니다.  모든 구독자를 선택하고 제거하려면 **CTRL + A**를 누릅니다. 
 2. 선택한 구독자를 삭제하려면 **삭제**를 클릭합니다.
 3. 삭제를 확인하는 메시지가 나타나면 **확인**을 클릭합니다.
    > [!div class="mx-imgBorder"]

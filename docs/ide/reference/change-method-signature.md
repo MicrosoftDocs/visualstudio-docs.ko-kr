@@ -1,7 +1,7 @@
 ---
 title: 메서드 시그니처 변경
-description: 메서드 매개 변수의 순서를 제거하거나 변경합니다. 메서드를 마우스 오른쪽 단추로 클릭하고 빠른 작업 및 리팩터링를 선택한 다음 시그니처 변경을 선택합니다.
-ms.date: 01/26/2018
+description: 메서드 매개 변수를 추가, 제거 또는 그 순서를 변경합니다. 메서드를 마우스 오른쪽 단추로 클릭하고 빠른 작업 및 리팩터링를 선택한 다음 시그니처 변경을 선택합니다.
+ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68711257"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283884"
 ---
 # <a name="change-a-method-signature-refactoring"></a>메서드 시그니처 변경 리팩터링
 
@@ -29,11 +29,11 @@ ms.locfileid: "68711257"
 
 - Visual Basic
 
-**대상:** 메서드 매개 변수의 순서를 제거하거나 변경할 수 있습니다.
+**내용:** 메서드 매개 변수의 순서를 제거하거나 변경할 수 있습니다.
 
 **시기:** 다양한 위치에서 현재 사용 중인 메서드 매개 변수를 이동하거나 제거하려고 합니다.
 
-**이유:** 매개 변수를 수동으로 제거하고 다시 정렬한 후 해당 메서드에 대한 모든 호출을 찾아 하나씩 변경할 수 있지만 오류가 발생할 수 있습니다.  이 리팩터링 도구는 작업을 자동으로 수행합니다.
+**이유:** 매개 변수를 수동으로 제거하고 다시 정렬한 다음, 해당 메서드에 대한 모든 호출을 찾아 하나씩 변경할 수 있지만 오류가 발생할 수 있습니다.  이 리팩터링 도구는 작업을 자동으로 수행합니다.
 
 ## <a name="how-to"></a>방법
 
@@ -59,19 +59,27 @@ ms.locfileid: "68711257"
 
 3. 표시되는 **시그니처 변경** 대화 상자에서 오른쪽 단추를 사용하여 메서드 시그니처를 변경할 수 있습니다.
 
-   ![시그니처 변경 대화 상자](media/changesignature-dialog-cs.png)
+   ![시그니처 변경 대화 상자](media/change-signature.png)
 
-   | 단추 | Description
+   | 단추 | 설명
    | ------ | ---
    | **위쪽/아래쪽** | 선택한 매개 변수를 목록에서 위아래로 이동합니다.
+   | **추가** | 목록에 새 매개 변수 추가
    | **제거** | 목록에서 선택한 매개 변수를 제거합니다.
    | **복원** | 선택한 취소선이 그어진 매개 변수를 목록으로 복원합니다.
 
    > [!TIP]
    > **참조 변경 내용 미리 보기** 확인란을 사용하여 커밋하기 전에 [결과를 확인](../../ide/preview-changes.md)합니다.
 
-4. 완료되면 **확인** 단추를 눌러 변경합니다.
+4. **시그니처 변경** 대화 상자에서 **추가**를 선택하면 **매개 변수 추가** 대화 상자가 열립니다. **매개 변수 추가** 대화 상자를 사용하여 형식 이름과 매개 변수 이름을 추가할 수 있습니다. 매개 변수를 필수 매개 변수로 설정하거나 기본값을 사용하여 선택적 매개 변수로 설정할 수 있습니다. 그런 다음 호출 사이트에서 값을 추가하고 해당 값의 명명된 인수를 선택하거나 TODO 변수를 도입할 수 있습니다. TODO 변수는 코드에 TODO를 넣으므로 각 오류를 방문하고 각 호출 사이트를 독립적으로 조사하여 무엇을 전달할지 결정할 수 있습니다. 선택적 매개 변수의 경우 호출 사이트를 완전히 생략하는 옵션이 있습니다.
 
+    ![매개 변수 추가 대화 상자 - C#](media/add-parameter-dialog.png)
+
+5. 매개 변수 추가가 완료되면 **확인** 단추를 눌러 변경 내용을 미리봅니다.
+
+    ![시그니처 변경 대화 상자](media/change-signature.png)
+
+6. **확인**을 눌러 변경 내용을 확인합니다.
    - C#:
 
       ![시그니처 변경 결과 - C#](media/changesignature-result-cs.png)
@@ -80,7 +88,7 @@ ms.locfileid: "68711257"
 
       ![시그니처 변경 결과 - Visual Basic](media/changesignature-result-vb.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

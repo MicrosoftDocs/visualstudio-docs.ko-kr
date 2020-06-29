@@ -1,7 +1,7 @@
 ---
 title: '방법: 부하 테스트 결과 리포지토리 선택'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.connectstringmissing
 - vs.test.load.dialog.databaseconnectstring
@@ -15,12 +15,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589008"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287573"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>방법: 부하 테스트 결과 리포지토리 선택
 
@@ -53,7 +53,7 @@ ms.locfileid: "75589008"
 
 8. **테스트 컨트롤러 관리** 대화 상자에서 **닫기**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)

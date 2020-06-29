@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75775882"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284804"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -40,7 +40,8 @@ ms.locfileid: "75775882"
 3. 재현에 필요한 설명 및 기타 정보, 이미지 및 첨부 파일을 추가합니다. **제출** 단추를 선택하여 이 정보를 비공개로 보냅니다.
 
    > [!NOTE]
-   > 첨부된 파일은 2GB까지 최대 10개로 제한됩니다. 더 큰 파일을 업로드해야 하는 경우 새 문제 보고서를 제출하거나 개인 주석으로 Microsoft 직원에게 업로드 URL을 요청할 수 있습니다.
+   > Developer Community 웹 사이트에서는 첨부 파일이 크기는 최대 2GB, 개수는 최대 10개로 제한됩니다. 더 큰 파일을 업로드해야 하는 경우 새 문제 보고서를 제출하거나 개인 주석으로 Microsoft 직원에게 업로드 URL을 요청할 수 있습니다.
+   > Microsoft에서 문제를 종결하면 90일 후에 연결된 첨부 파일이 삭제됩니다.
 
 개인 정보를 보호하고 중요한 정보를 공개하지 않으려면 공개 제한적 주석에 따라 회신함으로써 Microsoft와의 모든 상호 작용을 유지하세요. 기타 다른 주석에 대한 회신은 실수로 중요한 정보가 누설될 수 있습니다.
 
@@ -85,7 +86,7 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
   > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 문제를 보고하는 방법](how-to-report-a-problem-with-visual-studio.md)
 - [C++ 문제 보고서 데이터 개인 정보](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

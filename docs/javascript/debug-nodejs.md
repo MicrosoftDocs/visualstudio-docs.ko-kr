@@ -2,7 +2,7 @@
 title: JavaScript 또는 TypeScript 앱 디버그
 description: Visual Studio는 Visual Studio에서 JavaScript and TypeScript 앱의 디버깅을 지원합니다.
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75678976"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285194"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio에서 JavaScript 또는 TypeScript 앱 디버그
 
@@ -58,7 +58,7 @@ ASP.NET 이외 애플리케이션의 경우 여기에 설명된 단계를 따르
 
 소스 맵을 생성하는 방법에 대한 도움말은 [디버깅에 대한 소스 맵 생성](#generate_source_maps)을 참조하세요.
 
-### <a name="prepare_the_browser_for_debugging"></a> 디버그할 브라우저 준비
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> 디버그할 브라우저 준비
 
 ::: moniker range=">=vs-2019"
 이 시나리오에서는 현재 IDE에서 **Microsoft Edge 베타**라고 되어 있는 Microsoft Edge(Chromium) 또는 Chrome을 사용합니다.
@@ -162,7 +162,7 @@ Visual Studio에서 디버거를 연결하고 클라이언트 쪽 코드에서 �
 
    * 트랜스파일된 JavaScript 파일(예: *app-bundle.js*)에서 코드를 중단해야 하는데 그럴 수 없는 경우 *filename.js.map* 소스 맵 파일을 제거합니다.
 
-### <a name="troubleshooting_source_maps"></a> 중단점 및 소스 맵 문제 해결
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> 중단점 및 소스 맵 문제 해결
 
 TypeScript 또는 JSX 소스 파일에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 환경이 올바르게 설정되었는지 확인합니다.
 
@@ -174,7 +174,7 @@ TypeScript 또는 JSX 소스 파일에서 코드를 중단해야 하는데 그�
 
 또는 소스 파일(예: *app.tsx*)에서 코드를 중단해야 하는데 그럴 수 없는 경우 소스 파일에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구(또는 Microsoft Edge의 F12 도구)에서 중단점을 설정합니다.
 
-## <a name="generate_source_maps"></a> 디버깅에 대한 소스 맵 생성
+## <a name="generate-source-maps-for-debugging"></a><a name="generate_source_maps"></a> 디버깅에 대한 소스 맵 생성
 
 Visual Studio에는 JavaScript 소스 파일에 소스 맵을 사용하고 생성하는 기능이 있습니다. 이는 소스가 TypeScript 또는 Babel과 같은 transpiler에 의해 축소되거나 생성되는 경우에 종종 필요합니다. 사용 가능한 옵션은 프로젝트 형식에 따라 달라집니다.
 
@@ -210,7 +210,7 @@ Visual Studio에서 클라이언트 쪽 코드의 디버깅을 사용하도록 �
 
 복잡한 시나리오의 경우 브라우저 도구(**F12**)는 사용자 지정 접두사를 변경할 필요가 없으므로 디버깅에 가장 적합합니다.
 
-### <a name="configure_source_maps"></a> tsconfig.json 파일을 사용하여 소스 맵 구성
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> tsconfig.json 파일을 사용하여 소스 맵 구성
 
 *tsconfig.json* 파일을 프로젝트에 추가하면 Visual Studio는 디렉터리 루트를 TypeScript 프로젝트로 처리합니다. 파일을 추가하려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **추가 > 새 항목 > TypeScript JSON 구성 파일**을 선택합니다. 다음과 같은 *tsconfig.json* 파일이 프로젝트에 추가됩니다.
 
@@ -267,7 +267,7 @@ Visual Studio는 Chrome 및 Internet Explorer에 대해서만 디버깅 지원�
    Chrome의 경우 **솔루션 탐색기 > 스크립트 문서 > YourPageName**으로 이동합니다.
 
     > [!NOTE]
-    > Chrome을 사용하는 경우 **\<스크립트> 태그 간에 소스를 사용할 수 없음**이라는 메시지가 표시될 수 있습니다. 괜찮습니다. 디버깅을 계속하세요.
+    > Chrome을 사용하는 경우 **\<script> 태그 간에 소스를 사용할 수 없음**이라는 메시지가 표시될 수 있습니다. 괜찮습니다. 디버깅을 계속하세요.
 
    ::: moniker range=">=vs-2019"
    Microsoft Edge(Chromium)의 경우 Chrome과 동일한 절차를 사용합니다.

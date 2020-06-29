@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183381"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283595"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -29,7 +29,7 @@ ms.locfileid: "84183381"
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
 
-Visual Studio는 개발자의 요구를 충족하기 위해 계속 변경됩니다. **[Microsoft Build](https://mybuild.microsoft.com/)** 라이브러리의 다음 비디오에서 일부 [최신 기능](/visualstudio/releases/2019/release-notes/) 둘러보기에 참여하여 향후 제공될 기능을 [살펴보세요](/visualstudio/releases/2019/release-notes-preview/). <br><br>비디오 길이: 44분 58초
+Visual Studio는 개발자의 요구를 충족하기 위해 계속 변경됩니다. **[Microsoft Build](https://mybuild.microsoft.com/)** 라이브러리의 다음 비디오에서 일부 [최신 기능](/visualstudio/releases/2019/release-notes/) 둘러보기에 참여하여 향후 제공될 기능을 [살펴보세요](/visualstudio/releases/2019/release-notes-preview/). <br><br>*비디오 길이:* 44분 58초
 
 > [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
 
@@ -227,5 +227,9 @@ Visual Studio 2019에서 진행 중인 다른 기능에 대해 더 알고 싶은
 * [Visual Studio 2019 릴리스 정보](/visualstudio/releases/2019/release-notes/)
 * [Mac용 Visual Studio 2019 릴리스 정보](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK의 새로운 기능](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Visual Studio의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
+* [C# 8.0의 새로운 기능](/dotnet/csharp/whats-new/csharp-8.md)
+* [.NET Core 3.1의 새로운 기능](/dotnet/core/whats-new/dotnet-core-3-1.md)
+* [.NET Framework의 새로운 기능](/dotnet/framework/whats-new.md)
 * [Microsoft Build 컨퍼런스](https://www.microsoft.com/build)
 * [Microsoft Ignite 컨퍼런스](https://www.microsoft.com/ignite)

@@ -2,19 +2,19 @@
 title: '방법: 빌드에서 프로젝트 제외'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114809"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284323"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
 
@@ -42,7 +42,7 @@ ms.locfileid: "76114809"
 
 1. 메뉴 모음에서 **빌드** > **구성 관리자**를 선택합니다.
 
-2. **활성 솔루션 구성** 목록에서 **\<새로 만들기>** 를 선택합니다.
+2. **활성 솔루션 구성** 목록에서 **\<New>** 를 선택합니다.
 
 3. **이름** 상자에 솔루션 구성의 이름을 입력합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "76114809"
 
 프로젝트를 건너뛴 이유를 확인하려면 활성 구성(이전 예시의 `Debug x86`)을 확인하고 **빌드** > **구성 관리자**를 선택합니다. 이 문서에서 설명한 대로 각 구성에 대해 건너뛰는 프로젝트를 보거나 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)
 - [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)

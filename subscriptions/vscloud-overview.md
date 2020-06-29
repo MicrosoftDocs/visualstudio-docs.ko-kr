@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
-ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: b2a80fce75f710d508f0d32df37bbcde73ee20e3
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273948"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292934"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 **“클라우드 구독”** 이라고 합니다.
@@ -52,7 +52,7 @@ Azure 구독에 대한 [소유자](https://docs.microsoft.com/azure/role-based-a
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 구독자 포털로 이동](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-하나 이상의 구독을 구매한 경우 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 이동해 다른 사용자에게 구독을 할당합니다.
+하나 이상의 구독을 구매한 경우 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 이동해 다른 사용자에게 구독을 할당합니다.  새 구독을 처음 구매한 경우에는 관리 포털에 [새 구독을 추가](add-monthly-subs.md)해야 할 수 있습니다.
 
 > [!div class="mx-imgBorder"]
 > ![다른 사용자에게 구독 할당](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)

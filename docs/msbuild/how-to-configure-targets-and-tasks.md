@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633891"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288899"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>방법: 대상 및 작업 구성
 
@@ -112,6 +112,7 @@ MSBuild가 작업을 실행하기 전에 동일한 대상 컨텍스트를 갖는
 > [!NOTE]
 > 작업 매개 변수는 작업 호스트의 컨텍스트가 아니라 부모 노드의 컨텍스트에서 평가됩니다. 런타임 종속적 또는 아키텍처 종속적 환경 변수(예: *프로그램 파일* 위치)는 부모 노드와 일치하는 값으로 평가됩니다. 그러나 동일한 환경 변수를 작업에서 직접 읽을 경우 작업 호스트의 컨텍스트에서 올바르게 평가됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [대상 및 작업 구성](../msbuild/configuring-targets-and-tasks.md)
+- [UsingTask 요소](../msbuild/usingtask-element-msbuild.md)

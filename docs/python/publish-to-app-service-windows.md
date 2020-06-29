@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586569"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289172"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows의 Azure App Service에 게시
 
@@ -129,7 +129,7 @@ Visual Studio 2017 이상에서 Azure App Service에 게시하려면 프로젝�
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    다음 오류에서 배열 결과에 사용자 URL을 추가하지 못했습니다. “DisallowedHost at / Invalid HTTP_HOST header: ‘\<site URL\>’ ‘\<사이트 URL\>’을 ALLOWED_HOSTS에 추가해야 할 수도 있습니다.”
+    배열에 사용자 URL을 추가하지 않으면 다음 오류가 표시됩니다. "DisallowedHost at / Invalid HTTP_HOST header: '\<site URL\>'. '\<site URL\>'를 ALLOWED_HOSTS에 추가해야 할 수도 있습니다."
 
     배열이 비어 있으면 Django는 ‘localhost’를 자동으로 허용하지만 프로덕션 URL을 추가하면 해당 기능이 제거됩니다. 이러한 이유로 `settings.py`의 개별 개발 및 프로덕션 복사본을 유지 관리하거나, 환경 변수를 사용하여 런타임 값을 제어할 수 있습니다.
 
@@ -209,7 +209,7 @@ Visual Studio 2017 이상에서 Azure App Service에 게시하려면 프로젝�
 - 앱의 `wsgi_app` 함수 및 App Service의 기본 Python 3.4 인터프리터에 대한 적절한 포인터를 포함하는 `web.config` 파일을 서버에 만듭니다.
 - 프로젝트의 `static` 폴더에서 파일에 대한 프로세스를 해제합니다(이에 대한 규칙은 `web.config`에 있음).
 - 가상 환경을 서버에 게시합니다.
-- `web.debug.config` 파일 및 ptvsd 디버깅 도구를 추가하여 원격 디버깅을 활성화합니다.
+- `web.debug.config` 파일 및 디버깅 도구를 추가하여 원격 디버깅을 활성화합니다. Visual Studio 2019 버전 16.4 이전의 경우 디버깅 도구는 ptvsd입니다. Visual Studio 2019 버전 16.5 이상에서는 디버깅 도구가 debugpy입니다.
 
 앞에서 설명한 대로 이러한 자동 단계는 게시 프로세스를 간소화하는 반면, Python 환경을 제어하기는 더 어려워집니다. 예를 들어 `web.config` 파일은 서버에서만 생성되지만 사용자의 프로젝트에는 추가되지 않습니다. 또한 서버 구성에 의존하는 것이 아니라 개발 컴퓨터에서 전체 가상 환경을 복사하기 때문에 게시 프로세스에 시간이 더 걸릴 수 있습니다.
 

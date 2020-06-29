@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128286"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285984"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
 
@@ -48,6 +48,8 @@ ms.locfileid: "71128286"
 2. **디버그/성능 프로파일러**를 클릭합니다. diagsession 창에 프로파일링 도구 목록이 표시되어야 합니다.
 
 3. **애플리케이션 타임라인** 을 선택한 다음 창 하단의 **시작** 을 클릭합니다.
+
+   ![애플리케이션 타임라인 도구 선택됨](../profiling/media/apptimelineselect.png "애플리케이션 타임라인 도구")
 
    > [!NOTE]
    > *VsEtwCollector.exe* 실행 권한을 요청하는 사용자 계정 컨트롤 창이 나타날 수 있습니다. **예**를 클릭합니다.

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143535"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292074"
 ---
 
 1. UI에서 업데이트된 구성 옵션을 표시하려면 IIS 관리 콘솔을 닫았다가 다시 엽니다.
@@ -12,6 +12,8 @@ ms.locfileid: "68143535"
 2. IIS에서 **기본 웹 사이트**를 마우스 오른쪽 단추로 클릭하고 **배포** > **웹 배포 게시 구성**을 선택합니다.
 
     ![웹 배포 구성](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+
+   **배포** 메뉴가 표시되지 않는 경우 이전 섹션을 참조하여 웹 배포가 실행 중인지 확인합니다.
 
 3. **웹 배포 게시 구성** 대화 상자에서 설정을 검토합니다.
 

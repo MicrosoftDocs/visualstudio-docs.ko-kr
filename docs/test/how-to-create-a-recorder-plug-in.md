@@ -1,19 +1,19 @@
 ---
 title: 웹 성능 테스트용 레코더 플러그 인 만들기
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589162"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288011"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
@@ -71,7 +71,7 @@ ms.locfileid: "75589162"
 
 8. 웹 기록이 발생한 후 레코더 플러그 인에서 실행할 작업에 따라 원하는 코드를 더 추가합니다. 예를 들어 다음 샘플과 같이 사용자 지정 상관 관계를 처리하는 코드를 추가할 수 있습니다. 주석을 트랜잭션으로 변환하거나 웹 성능 테스트에 유효성 검사 규칙을 추가하는 등의 작업을 위한 레코더 플러그 인을 만들 수도 있습니다.
 
-9. **빌드** 메뉴에서 **\<클래스 라이브러리 프로젝트 이름> 빌드**를 선택합니다.
+9. **빌드** 메뉴에서 **빌드\<class library project name>** 를 선택합니다.
 
 그런 다음, Visual Studio에 등록하기 위해 레코더 플러그 인을 배포합니다.
 
@@ -99,7 +99,7 @@ ms.locfileid: "75589162"
     > [!WARNING]
     > 이 플러그 인을 사용하는 부하 테스트 또는 웹 성능 테스트를 실행할 때 다음과 유사한 오류가 발생할 수 있습니다.
     >
-    > **요청 실패: \<플러그 인> 이벤트의 예외: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
+    > **요청 실패: \<plug-in> 이벤트의 예외: 파일 또는 어셈블리 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
     >
     > 이 오류는 플러그 인의 코드를 변경하고 새 DLL 버전 **(버전=0.0.0.0)** 을 만들었지만 해당 플러그 인이 계속해서 원래 플러그 인 버전을 참조하는 경우에 발생합니다. 이 문제를 해결하려면 다음 단계를 수행합니다.
     >

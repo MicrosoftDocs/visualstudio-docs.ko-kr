@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf712cf26c7d2dbc5924aa495a7008fb790c33d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 605b6ff67963c8df3e711c3f0b000c23f82050cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633397"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289250"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 개념
 
@@ -33,5 +33,6 @@ MSBuild는 빌드 플랫폼이 소프트웨어를 빌드하는 방법을 제어�
 | [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md) | MSBuild가 특정 컨텍스트에서 특수하게 사용하기 위해 예약하는 일부 문자를 이스케이프하는 방법을 설명합니다. |
 | [연습: 처음부터 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 텍스트 편집기만을 사용해서 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다. |
 | [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md) | MSBuild의 구성 요소를 소개하고 Visual Studio IDE(통합 개발 환경)를 닫지 않고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. |
+| [MSBuild가 프로젝트를 빌드하는 방식](build-process-overview.md) | MSBuild에서 사용되는 내부 빌드 프로세스를 설명합니다. |
 | [MSBuild 참조](../msbuild/msbuild-reference.md) | 참조 정보를 포함하는 문서에 대한 링크입니다. |
 | [MSBuild](../msbuild/msbuild.md) | 프로젝트 파일용 XML 스키마에 대해 간략하게 소개하고 이 스키마가 소프트웨어를 빌드하는 프로세스를 제어하는 방법을 보여 줍니다. |

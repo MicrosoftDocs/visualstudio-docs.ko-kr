@@ -1,7 +1,7 @@
 ---
 title: 웹 성능 테스트용 요청 수준 플러그 인 만들기
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
@@ -9,16 +9,16 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589158"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287976"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>방법: 요청 수준 플러그 인 만들기
 
-‘요청’은 웹 성능 테스트를 구성하는 선언문입니다.  웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트의 주 선언문 외부에서 코드를 분리하여 다시 사용할 수 있습니다. 플러그 인을 만들어 개별 요청과 요청을 포함하는 웹 성능 테스트에 추가할 수 있습니다. 사용자 지정 ‘요청 플러그 인’을 사용하면 웹 성능 테스트에서 특정 요청을 실행하는 코드를 호출할 수 있습니다. 
+‘요청’은 웹 성능 테스트를 구성하는 선언문입니다. 웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트의 주 선언문 외부에서 코드를 분리하여 다시 사용할 수 있습니다. 플러그 인을 만들어 개별 요청과 요청을 포함하는 웹 성능 테스트에 추가할 수 있습니다. 사용자 지정 ‘요청 플러그 인’을 사용하면 웹 성능 테스트에서 특정 요청을 실행하는 코드를 호출할 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -74,7 +74,7 @@ ms.locfileid: "75589158"
     > [!WARNING]
     > 이 플러그 인을 사용하는 부하 테스트 또는 웹 성능 테스트를 실행할 때 다음과 유사한 오류가 발생할 수 있습니다.
     >
-    > **요청 실패: \<플러그 인> 이벤트의 예외: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
+    > **요청 실패: \<plug-in> 이벤트의 예외: 파일 또는 어셈블리 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
     >
     > 이 오류는 플러그 인의 코드를 변경하고 새 DLL 버전 **(버전=0.0.0.0)** 을 만들었지만 해당 플러그 인이 계속해서 원래 플러그 인 버전을 참조하는 경우에 발생합니다. 이 문제를 해결하려면 다음 단계를 수행합니다.
     >

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b78ac2347a5143aeb532a4bcc294551430584b4a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630667"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286104"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 작업
 
@@ -33,13 +33,13 @@ ms.locfileid: "77630667"
 
  다음 표에서는 `WriteLinestoFile` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`File`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 항목을 쓸 파일을 지정합니다.|
-|`Lines`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 파일에 쓸 항목을 지정합니다.|
-|`Overwrite`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업에서 파일의 모든 기존 내용을 덮어씁니다.|
-|`Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 문자 인코딩을 선택합니다(예: "Unicode").  <xref:System.Text.Encoding>도 참조하세요.|
-|`WriteOnlyWhenDifferent`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면, 지정한 대상 파일(있는 경우)을 먼저 읽고 작업에서 기록했어야 하는 내용과 비교합니다. 동일한 경우 파일이 디스크에 기록되지 않고 타임스탬프가 유지됩니다.|
+|`Lines`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 파일에 쓸 항목을 지정합니다. 기본값은 빈 목록입니다.|
+|`Overwrite`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업에서 파일의 모든 기존 내용을 덮어씁니다. 기본값은 `false`입니다.|
+|`Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 문자 인코딩을 선택합니다(예: "Unicode"). 기본값은 UTF-8입니다.  <xref:System.Text.Encoding>을 참조하세요.|
+|`WriteOnlyWhenDifferent`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면, 지정한 대상 파일(있는 경우)을 먼저 읽고 작업에서 기록했어야 하는 내용과 비교합니다. 동일한 경우 파일이 디스크에 기록되지 않고 타임스탬프가 유지됩니다. 기본값은 `false`입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -95,7 +95,7 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

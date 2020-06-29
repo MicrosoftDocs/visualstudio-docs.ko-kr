@@ -1,7 +1,7 @@
 ---
 title: 템플릿 찾기
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591049"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284245"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>방법: 프로젝트 템플릿과 항목 템플릿 찾기 및 구성
 
@@ -60,7 +60,7 @@ ms.locfileid: "75591049"
 
 ### <a name="user-templates"></a>사용자 템플릿
 
-*.vstemplate* 파일을 포함하는 압축된(*.zip*) 파일을 사용자 템플릿 디렉터리에 추가하는 경우 템플릿이 새 프로젝트 및 새 항목 대화 상자에 나타납니다. 기본적으로 사용자 템플릿은 다음 위치에 있습니다.
+*.vstemplate* 파일을 포함하는 압축된( *.zip*) 파일을 사용자 템플릿 디렉터리에 추가하는 경우 템플릿이 새 프로젝트 및 새 항목 대화 상자에 나타납니다. 기본적으로 사용자 템플릿은 다음 위치에 있습니다.
 
 ::: moniker range="vs-2017"
 
@@ -102,7 +102,7 @@ ms.locfileid: "75591049"
 
 1. 사용자 프로젝트 템플릿 디렉터리의 프로그래밍 언어 폴더에 폴더를 만듭니다. 예를 들어 C# 프로젝트 템플릿에 대해 **HelloWorld** 범주를 만들려면 다음 디렉터리를 만듭니다.
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<버전\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. 이 범주의 모든 템플릿을 새 폴더에 넣습니다.
 
@@ -114,7 +114,7 @@ ms.locfileid: "75591049"
 
 1. 사용자 항목 템플릿 디렉터리의 프로그래밍 언어 폴더에 폴더를 만듭니다. 예를 들어 C# 항목 템플릿에 대해 **HelloWorld** 범주를 만들려면 다음 디렉터리를 만듭니다.
 
-    - *\%USERPROFILE%\Documents\Visual Studio \<버전\>\Templates\ItemTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. 이 범주의 모든 템플릿을 새 폴더에 넣습니다.
 
@@ -156,7 +156,7 @@ ms.locfileid: "75591049"
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조(확장성)](../extensibility/visual-studio-template-schema-reference.md)

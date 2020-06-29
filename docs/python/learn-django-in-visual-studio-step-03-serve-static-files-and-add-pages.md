@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62958251"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279811"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
@@ -44,7 +44,7 @@ Django 앱을 개발하는 경우 일반적으로 더 많은 Python, HTML, CSS �
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>질문: Visual Studio에서는 제공할 항목 템플릿을 어떻게 알 수 있나요?
 
-대답: Visual Studio 프로젝트 파일(*.pyproj*)에는 Python 프로젝트로 표시하는 프로젝트 형식 식별자가 포함되어 있습니다. Visual Studio에서는 이 형식 식별자를 사용하여 프로젝트 형식에 적합한 항목 템플릿만 표시합니다. 이런 방식으로 Visual Studio에서는 매번 정렬 여부를 묻는 메시지를 표시하지 않고 여러 프로젝트 형식에 대해 다양한 항목 템플릿을 제공할 수 있습니다.
+대답: Visual Studio 프로젝트 파일( *.pyproj*)에는 Python 프로젝트로 표시하는 프로젝트 형식 식별자가 포함되어 있습니다. Visual Studio에서는 이 형식 식별자를 사용하여 프로젝트 형식에 적합한 항목 템플릿만 표시합니다. 이런 방식으로 Visual Studio에서는 매번 정렬 여부를 묻는 메시지를 표시하지 않고 여러 프로젝트 형식에 대해 다양한 항목 템플릿을 제공할 수 있습니다.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>3-2단계: 앱에서 정적 파일 제공
 
@@ -102,6 +102,22 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>질문: 정적 파일 구성에 대한 규칙이 있나요?
 
 대답: 원하는 방식으로 *static* 폴더에서 다른 CSS, JavaScript 및 HTML 파일을 추가할 수 있습니다. 일반적으로 정적 파일을 구성하려면 스타일시트 및 다른 모든 파일에 대해 *fonts*, *scripts* 및 *content*라는 하위 폴더를 만듭니다. 각각의 경우 `{% static %}` 참조의 파일에 대한 상대 경로에 해당 폴더를 포함해야 합니다.
+
+### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>질문: {% load staticfiles %} 태그를 사용하지 않고 동일한 작업을 완료할 수 있나요?
+
+대답: 예, 가능합니다.
+
+```html
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="../../static/site.css" />
+    </head>
+    <body>
+        <span class="message">{{ message }}</span>{{ content }}
+    </body>
+</html>
+```
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>3-3단계: 앱에 페이지 추가
 

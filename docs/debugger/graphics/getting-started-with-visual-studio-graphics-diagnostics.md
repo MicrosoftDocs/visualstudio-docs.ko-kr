@@ -1,26 +1,25 @@
-﻿---
+---
 title: 그래픽 진단 시작 | Microsoft Docs
 ms.custom: seodec18
-ms.date: 05/26/2017
+ms.date: 06/08/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 473946353a1ea044464e409a75a838eaf52a1483
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557923"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286546"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 시작
 이 섹션에서는 처음으로 그래픽 진단 사용을 준비한 다음 Direct3D 앱에서 프레임을 캡처하고 Graphics Analyzer에서 검사합니다.
 
 ## <a name="requirements"></a>요구 사항
  Visual Studio에서 그래픽 진단을 사용하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용해야 합니다.  Visual Studio Code를 비롯한 다른 버전에는 이 기능이 포함되어 있지 않습니다.
-
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -53,12 +52,18 @@ ms.locfileid: "77557923"
  이제 필요한 모든 항목이 준비되었으므로 그래픽 진단을 사용할 수 있습니다. 아래 단계를 따르기만 하면 됩니다.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Direct3D 앱 만들기
- 그래픽 진단을 탐색하는 데 사용할 고유한 Direct3D 앱이 이미 있다면 다행입니다. 해당 앱이 없는 경우에는 다음 중 하나를 사용하세요.
 
+그래픽 진단을 탐색하는 데 사용할 고유한 Direct3D 앱이 이미 있다면 다행입니다. 해당 앱이 없는 경우에는 다음 중 하나를 사용하세요.
+
+::: moniker range=">=vs-2019"
+[Direct3D Game Sample](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/)에서 샘플을 다운로드합니다.
+::: moniker-end
+::: moniker range="vs-2017"
 - Windows 10용 **DirectX 11 앱(유니버설 Windows)** 또는 **DirectX 12 앱(유니버설 Windows)** 프로젝트 템플릿
 - Windows 10용 [Direct3D 12 UAP 샘플](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)
+::: moniker-end
 
-  계속 진행하기 전에 앱을 빌드할 수 있는지 확인합니다.
+계속 진행하기 전에 앱을 빌드하고 실행할 수 있는지 확인합니다. **빌드** > **솔루션 빌드**를 선택하여 오류 없이 빌드되는지 확인합니다. 그런 다음 **디버그** > **디버깅하지 않고 시작**(**Ctrl + F5**)를 선택하여 올바르게 실행되는지 확인합니다. 도구를 사용하여 테스트하는 컴퓨터에 따라 샘플에서 플랫폼 및 디버깅 대상을 조정해야 할 수 있습니다. 예를 들어 Visual Studio 호스트 컴퓨터에서 x64 플랫폼을 테스트하려면 **x64**를 솔루션 플랫폼으로 선택하고 **로컬 컴퓨터**를 디버깅 대상으로 선택합니다. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 그래픽 진단 세션 시작
  이제 첫 번째 그래픽 진단 세션을 시작할 준비가 되었습니다. Visual Studio의 주 메뉴에서 **디버그, 그래픽, 그래픽 디버깅 시작**을 선택하거나 **Alt+F5**만 누르면 됩니다. 그러면 그래픽 진단 모드로 앱이 시작되고 Visual Studio에 진단 세션 창이 표시됩니다.

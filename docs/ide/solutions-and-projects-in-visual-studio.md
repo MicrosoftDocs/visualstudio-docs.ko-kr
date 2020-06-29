@@ -20,23 +20,23 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307294"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285233"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
-이 페이지에서는 Visual Studio의 ‘프로젝트’ 및 ‘솔루션’ 개념에 대해 설명합니다.   솔루션 탐색기 도구 창과 새 프로젝트를 만드는 방법에 대해서도 간략하게 설명합니다.
+이 페이지에서는 Visual Studio의 ‘프로젝트’ 및 ‘솔루션’ 개념에 대해 설명합니다.  솔루션 탐색기 도구 창과 새 프로젝트를 만드는 방법에 대해서도 간략하게 설명합니다.
 
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 프로젝트 및 솔루션](/visualstudio/mac/projects-and-solutions)을 참조하세요.
 
 ## <a name="projects"></a>프로젝트
 
-Visual Studio에서 앱이나 웹 사이트를 만드는 경우 ‘프로젝트’에서 시작합니다.  논리적인 측면에서 프로젝트에는 실행 파일, 라이브러리 또는 웹 사이트로 컴파일되는 모든 파일이 포함됩니다. 이러한 파일에는 소스 코드, 아이콘, 이미지, 데이터 파일 등이 포함될 수 있습니다. 프로젝트에도 프로그램이 통신하는 여러 서비스 또는 구성 요소에 필요할 수 있는 컴파일러 설정 및 기타 구성 파일이 포함되어 있습니다.
+Visual Studio에서 앱이나 웹 사이트를 만드는 경우 ‘프로젝트’에서 시작합니다. 논리적인 측면에서 프로젝트에는 실행 파일, 라이브러리 또는 웹 사이트로 컴파일되는 모든 파일이 포함됩니다. 이러한 파일에는 소스 코드, 아이콘, 이미지, 데이터 파일 등이 포함될 수 있습니다. 프로젝트에도 프로그램이 통신하는 여러 서비스 또는 구성 요소에 필요할 수 있는 컴파일러 설정 및 기타 구성 파일이 포함되어 있습니다.
 
 ### <a name="project-file"></a>프로젝트 파일
 
@@ -75,6 +75,9 @@ Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하
 대부분의 메뉴 명령은 **솔루션 탐색기**에 있는 다양한 항목의 오른쪽 클릭 메뉴에서 사용할 수 있습니다. 이러한 명령에는 프로젝트 빌드, NuGet 패키지 관리, 참조 추가, 파일 이름 바꾸기, 테스트 실행 등이 포함됩니다. **솔루션 탐색기**의 위쪽에 있는 도구 모음에는 솔루션 보기를 폴더 보기로 전환하고 숨겨진 파일을 표시하고 모든 노드를 축소하는 등의 작업을 위한 단추가 있습니다.
 
 ASP.NET Core 프로젝트의 경우에는 파일이 **솔루션 탐색기**에 중첩되는 방식을 사용자 지정할 수 있습니다. 자세한 내용은 [솔루션 탐색기에서 파일 중첩 사용자 지정](file-nesting-solution-explorer.md)을 참조하세요.
+
+> [!TIP]
+> 솔루션 탐색기에 표시되는 일부 아이콘의 목록을 보려면 [클래스 뷰 및 개체 브라우저 아이콘](class-view-and-object-browser-icons.md) 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180404"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288938"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
@@ -182,7 +182,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 ## <a name="customize-the-solution-build"></a>솔루션 빌드 사용자 지정
 
 > [!IMPORTANT]
-> 이러한 방식의 솔루션 빌드 사용자 지정은 *MSBuild.exe*를 사용하여 명령줄 빌드에만 적용됩니다. Visual Studio 내의 빌드에 적용되지 **않습니다**.
+> 이러한 방식의 솔루션 빌드 사용자 지정은 *MSBuild.exe*를 사용하여 명령줄 빌드에만 적용됩니다. Visual Studio 내의 빌드에 적용되지 **않습니다**. 따라서 솔루션 수준에서 사용자 지정을 추가하지 않는 것이 좋습니다. 솔루션의 모든 프로젝트를 사용자 지정하기 위한 더 나은 대안은 이 문서의 다른 부분에서 설명한 대로 솔루션 폴더에 *Directory.Build.props* 및 *Directory.build.targets* 파일을 사용하는 것이 좋습니다.
 
 MSBuild에서 솔루션 파일을 빌드할 때 먼저 프로젝트 파일로 내부적으로 변환한 다음, 빌드합니다. 생성된 프로젝트 파일은 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` 및 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` 디렉터리에 설치된 대상을 포함하여 대상을 정의하기 전에 `before.{solutionname}.sln.targets`를 가져오고 대상을 가져온 후에 `after.{solutionname}.sln.targets`를 가져옵니다.
 

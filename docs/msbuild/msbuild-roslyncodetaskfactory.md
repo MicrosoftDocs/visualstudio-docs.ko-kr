@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865377"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289211"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory를 사용한 MSBuild 인라인 작업
 
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)와 유사하게 RoslynCodeTaskFactory는 플랫폼 간 Roslyn 컴파일러를 사용하여 인라인 작업으로 사용하기 위한 메모리 내 작업 어셈블리를 생성합니다.  RoslynCodeTaskFactory 작업은 .NET Standard를 대상으로 하며 .NET Framework 및 .NET Core 런타임뿐만 아니라 Linux 및 Mac OS와 같은 다른 플랫폼에서도 작업할 수 있습니다.
 
 >[!NOTE]
->RoslynCodeTaskFactory 작업은 MSBuild 15.8 이상에서만 사용할 수 있습니다. MSBuild 버전은 Visual Studio 버전을 따르므로, Visual Studio 15.8 이상에서는 RoslynCodeTaskFactory를 사용할 수 있습니다.
+>RoslynCodeTaskFactory 작업은 MSBuild 15.8 이상에서만 사용할 수 있습니다. MSBuild 버전은 Visual Studio 버전을 따르므로, Visual Studio 2017 버전 15.8 이상에서는 RoslynCodeTaskFactory를 사용할 수 있습니다.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory를 사용한 인라인 작업의 구조
 
@@ -83,7 +83,7 @@ ms.locfileid: "78865377"
 
 - `Type` 값이 `Fragment`이면 코드는 서명 또는 `return` 문이 아니라 `Execute` 메서드의 내용을 정의합니다.
 
-코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" 또는 ">"와 같은 예약 문자 이스케이프에 신경쓰지 않아도 됩니다.
+코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" or ">"와 같은 예약 문자 이스케이프에 신경 쓰지 않아도 됩니다.
 
 또는 `Code` 요소의 `Source` 특성을 사용하여 작업에 대한 코드를 포함하는 파일의 위치를 지정할 수 있습니다. 소스 파일의 코드는 `Type` 특성으로 지정된 형식이어야 합니다. `Source` 특성이 있으면 `Type`의 기본값은 `Class`입니다. `Source`가 없으면 기본값은 `Fragment`입니다.
 
@@ -256,6 +256,57 @@ Log.LogError("Hello, world!");
 
         <Message Text="File name: '$(MyFileName)'" />
     </Target>
+</Project>
+```
+
+## <a name="provide-backward-compatibility"></a>이전 버전과의 호환성 제공
+
+`RoslynCodeTaskFactory`는 MSBuild 버전 15.8부터 사용할 수 있습니다. 이전 버전의 Visual Studio 및 MSBuild를 지원하려고 하는데 `RoslynCodeTaskFactory`는 사용할 수 없지만 `CodeTaskFactory`는 사용할 수 있고 동일한 빌드 스크립트를 사용하려는 경우를 가정해 보겠습니다. 다음 예제와 같이 `$(MSBuildVersion)` 속성을 사용하는 `Choose` 구조체를 사용하여 빌드 시간에 `RoslynCodeTaskFactory`를 사용할지 아니면 `CodeTaskFactory`로 대체할지를 결정할 수 있습니다.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition=" '$(MSBuildVersion.Substring(0,2))' >= 16 Or
+    ('$(MSBuildVersion.Substring(0,2))' == 15 And '$(MSBuildVersion.Substring(3,1))' >= 8)">
+      <PropertyGroup>
+        <TaskFactory>RoslynCodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <TaskFactory>CodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  
+  <UsingTask
+    TaskName="HelloWorld"
+    TaskFactory="$(TaskFactory)"
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup />
+    <Task>
+      <Using Namespace="System"/>
+      <Using Namespace="System.IO"/>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+         Log.LogError("Using RoslynCodeTaskFactory");
+      ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="RunTask" AfterTargets="Build">
+    <Message Text="MSBuildVersion: $(MSBuildVersion)"/>
+    <Message Text="TaskFactory: $(TaskFactory)"/>
+    <HelloWorld />
+  </Target>
+
 </Project>
 ```
 

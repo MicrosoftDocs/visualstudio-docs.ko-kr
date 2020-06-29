@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173514"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288977"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 요소(MSBuild)
 
@@ -51,7 +51,7 @@ ms.locfileid: "84173514"
 |특성|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다. 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
-|`Label`|선택적 특성입니다. `ItemGroup`를 식별합니다.|
+|`Label`|선택적 특성입니다. `ItemGroup`를 식별합니다. |
 
 ### <a name="child-elements"></a>자식 요소
 
@@ -90,6 +90,8 @@ ms.locfileid: "84173514"
 간단한 프로젝트 파일에서는 일반적으로 단일 `ItemGroup` 요소를 사용하지만 여러 `ItemGroup` 요소를 사용할 수도 있습니다. 여러 `ItemGroup` 요소가 사용되는 경우 항목은 단일 `ItemGroup`으로 결합됩니다. 예를 들어 일부 항목은 가져온 파일에 정의된 별도의 `ItemGroup` 요소에 포함될 수 있습니다.
 
 ItemGroups에는 `Condition` 특성을 사용하여 적용되는 조건이 있을 수 있습니다. 이 경우 조건이 충족되는 경우에만 항목이 항목 목록에 추가됩니다. [MSBuild 조건](msbuild-conditions.md)을 참조하세요.
+
+`Label` 특성은 일부 빌드 시스템에서 빌드 동작을 제어하는 방법으로 사용됩니다. 이 특성은 선언에서만 더 이해하기 쉬운 MSBuild 스크립트를 만드는 방법 또는 빌드 작업에 영향을 주는 제어 설정으로 사용할 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

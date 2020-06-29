@@ -1,7 +1,7 @@
 ---
 title: 웹 성능 테스트 플러그 인 만들기
 ms.date: 10/03/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.web.webtestplugin
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc2eeafa41b953f9d853c7ff435a6a9706ae73ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c9651f4003647e18ba52e916aeb21e176274de5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589112"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287937"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>방법: 웹 성능 테스트 플러그 인 만들기
 
@@ -101,7 +101,7 @@ ms.locfileid: "75589112"
     > [!WARNING]
     > 이 플러그 인을 사용하는 부하 테스트 또는 웹 성능 테스트를 실행할 때 다음과 유사한 오류가 발생할 수 있습니다.
     >
-    > **요청 실패: \<플러그 인> 이벤트의 예외: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
+    > **요청 실패: \<plug-in> 이벤트의 예외: 파일 또는 어셈블리 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
     >
     > 이 오류는 플러그 인의 코드를 변경하고 새 DLL 버전 **(버전=0.0.0.0)** 을 만들었지만 해당 플러그 인이 계속해서 원래 플러그 인 버전을 참조하는 경우에 발생합니다. 이 문제를 해결하려면 다음 단계를 수행합니다.
     >

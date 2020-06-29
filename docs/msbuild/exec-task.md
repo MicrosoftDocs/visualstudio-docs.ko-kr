@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167304"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288925"
 ---
 # <a name="exec-task"></a>Exec 작업
 
@@ -41,7 +41,7 @@ ms.locfileid: "82167304"
 |`CustomErrorRegularExpression`|선택적 `String` 매개 변수입니다.<br /><br /> 도구 출력에서 오류 줄을 찾는 데 사용되는 정규식을 지정합니다. 예외적으로 형식이 지정된 출력을 생성하는 도구에 유용합니다.<br /><br />기본값: `null`(사용자 지정 처리 안 함).|
 |`CustomWarningRegularExpression`|선택적 `String` 매개 변수입니다.<br /><br /> 도구 출력에서 경고 줄을 찾는 데 사용되는 정규식을 지정합니다. 예외적으로 형식이 지정된 출력을 생성하는 도구에 유용합니다.<br /><br />기본값: `null`(사용자 지정 처리 안 함).|
 |`EchoOff`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`일 경우 작업이 `Command`의 확장된 양식을 MSBuild 로그로 내보내지 않습니다.<br /><br />기본값: `false`.|
-|`ExitCode`|선택적 `Int32` 읽기 전용 출력 매개 변수입니다.<br /><br /> 실행한 명령에서 제공하는 종료 코드를 지정합니다.|
+|`ExitCode`|선택적 `Int32` 읽기 전용 출력 매개 변수입니다.<br /><br /> 실행된 명령에서 제공하는 종료 코드를 지정합니다. 단, 작업에서는 오류를 기록했지만 프로세스의 종료 코드는 0(성공)인 경우 `ExitCode`는 -1로 설정됩니다.|
 |`IgnoreExitCode`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 이 작업은 실행한 명령에서 제공하는 종료 코드를 무시합니다. 그렇지 않고 실행된 명령이 0이 아닌 종료 코드를 반환하는 경우 이 작업은 `false`를 반환합니다.<br /><br />기본값: `false`.|
 |`IgnoreStandardErrorWarningFormat`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `false`이면 표준 오류/경고 형식과 일치하는 줄을 출력에서 선택하고 오류/경고로 로깅합니다. `true`이면 이 동작을 사용하지 않도록 설정하세요.<br /><br />기본값: `false`.|
 |`Outputs`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 작업의 출력 항목을 포함합니다. `Exec` 작업은 자체적으로 이를 설정하지 않습니다. 대신 마치 설정된 것처럼 사용자가 제공하여 나중에 프로젝트에서 사용되도록 할 수 있습니다.|

@@ -1,6 +1,6 @@
 ---
 title: '방법: 시각화 도우미 설치 | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183628"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286390"
 ---
 # <a name="how-to-install-a-visualizer"></a>방법: 시각화 도우미 설치
 시각화 도우미를 만든 후에는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용할 수 있도록 이 시각화 도우미를 설치해야 합니다. 시각화 도우미를 설치하는 과정은 간단합니다.
@@ -53,6 +53,10 @@ ms.locfileid: "84183628"
     - `.NET Framework` 런타임을 실행하는 디버기의 경우 `net2.0`
     - `netstandard 2.0`(`.NET Framework v4.6.1+` 또는 `.NET Core 2.0+`)을 지원하는 런타임을 사용하는 디버기의 경우 `netstandard2.0`
     - `.NET Core` 런타임을 실행하는 디버기의 경우 `netcoreapp` (`.NET Core 2.0+`를 지원)
+
+   독립 실행형 시각화 도우미를 만들려는 경우에는 디버기 쪽 DLL이 필요합니다. 이 DLL에는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>의 메서드를 구현할 수 있는 데이터 개체에 대한 코드가 포함되어 있습니다.
+
+   디버기 쪽 코드를 다중 대상으로 지정하는 경우에는 디버기 쪽 DLL을 최소 지원 TFM 폴더에 배치해야 합니다.
 
 4. 디버깅 세션을 다시 시작합니다.
 

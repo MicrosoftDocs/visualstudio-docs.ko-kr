@@ -1,7 +1,7 @@
 ---
 title: 방화벽 또는 프록시 서버 뒤에 설치 및 사용
 description: 조직에서 방화벽 또는 프록시 서버를 사용하는 경우 허용 목록에 추가하거나 열려는 도메인 URL, 포트 및 프로토콜을 검토합니다.
-ms.date: 05/13/2020
+ms.date: 06/17/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180443"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283478"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -129,6 +129,8 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https/443 | 작업을 컴파일, 제출, 확인, 진단 및 디버그하는 데 사용됩니다. ADLS 파일을 찾는 데 사용됩니다. 파일을 업로드 및 다운로드하는 데 사용됩니다. |
 | 패키징 서비스 | [계정].visualstudio.com <br/> [계정].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | \*.npmjs.org, \*.nuget.org 및 \*.nodejs.org는 특정 빌드 작업 시나리오(예: NuGet 도구 설치 관리자, 노드 도구 설치 관리자) 또는 피드와 함께 공용 업스트림을 사용하려는 경우에만 필요합니다. 다른 세 가지 도메인은 패키징 서비스의 핵심 기능에 필요합니다. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Azure DevOps Services와 연결하는 데 사용됨 |
+| Azure Service Bus | \*.servicebus.windows.net | ampq/5671 및 5672, </br> sbmp/9350~9354, </br> http/80, </br> https/443 | 큐, 토픽 및 구독을 만드는 데 사용됩니다. </br> Service Bus 큐 및 토픽에서 메시지를 보내고 받는 데에도 사용됩니다. |
+| Azure Cosmos DB | \*.documents.azure.com | https/443 | 핵심 문서 데이터베이스 API를 호출하는 데 사용됩니다. |
 | 개발자 커뮤니티 | sendvsfeedback2.azurewebsites.net/api | https/443 | 개발자 커뮤니티 피드백 도구 API를 호출하는 데 사용됩니다(내 문제, 검색, 투표, 주석, 제출, 업로드, 재개). |
 | IntelliCode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Intellicode API를 호출하는 데 사용됩니다. |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Live Share API를 호출하는 데 사용됩니다. |

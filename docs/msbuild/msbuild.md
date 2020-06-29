@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2387526860b7d6da136a72cf83727f6714e2e52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633072"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289198"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -70,7 +70,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  다음 단원에서는 MSBuild 프로젝트 파일 형식의 몇 가지 기본 요소에 대해 설명합니다. 기본 프로젝트 파일을 만드는 방법에 대한 자습서는 [연습: 처음부터 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.
 
-### <a name="BKMK_Properties"></a> 속성
+### <a name="properties"></a><a name="BKMK_Properties"></a> 속성
 
  속성은 빌드를 구성하는 데 사용될 수 있는 키/값 쌍을 나타냅니다. 속성 이름을 포함하는 요소를 [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 요소의 자식으로 만들어 속성을 선언합니다. 예를 들어 다음 코드는 값이 `BuildDir`인 `Build`이라는 속성을 만듭니다.
 
@@ -90,7 +90,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  속성에 대한 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
 
-### <a name="BKMK_Items"></a> 항목
+### <a name="items"></a><a name="BKMK_Items"></a> 항목
 
  항목은 빌드 시스템에 대한 입력이며, 일반적으로 파일을 나타냅니다. 항목은 사용자 정의된 항목 이름에 따라 항목 형식으로 그룹화됩니다. 이러한 항목 형식은 작업의 매개 변수로 사용될 수 있으며, 이 작업은 개별 항목을 사용하여 빌드 프로세스의 단계를 수행합니다.
 
@@ -116,7 +116,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  항목은 와일드카드 문자를 사용하여 선언될 수 있으며 고급 빌드 시나리오에 대한 추가 메타데이터를 포함할 수 있습니다. 항목에 대한 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.
 
-### <a name="BKMK_Tasks"></a> 작업
+### <a name="tasks"></a><a name="BKMK_Tasks"></a> 작업
 
  작업은 MSBuild 프로젝트에서 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다. 예를 들어, 작업은 입력 파일을 컴파일하거나 외부 도구를 실행할 수 있습니다. 작업은 다시 사용할 수 있으며 다른 개발자가 다른 프로젝트에서 작업을 공유할 수 있습니다.
 
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  작업에 대한 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
-### <a name="BKMK_Targets"></a> 대상
+### <a name="targets"></a><a name="BKMK_Targets"></a> 대상
 
  대상은 작업을 특정 순서로 그룹화하고 프로젝트 파일의 섹션을 빌드 프로세스의 진입점으로 노출합니다. 대상은 확장할 수 있고 좀더 쉽게 이해할 수 있도록 종종 논리적 섹션으로 그룹화됩니다. 빌드 단계를 대상으로 나누면 해당 코드 섹션을 각 대상으로 복사하지 않아도 다른 대상에서 빌드 프로세스의 한 부분을 호출할 수 있습니다. 예를 들어 빌드 프로세스에 대한 몇 개의 진입점에 빌드할 참조가 필요한 경우, 참조를 빌드하는 대상을 만든 다음 필요한 모든 진입점에서 이 대상을 실행할 수 있습니다.
 
@@ -158,7 +158,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Visual Studio에서 MSBuild를 사용하는 방법에 대한 자습서는 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
-## <a name="BKMK_Multitargeting"></a> 멀티 타기팅
+## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a> 멀티 타기팅
 
  Visual Studio를 사용하면 .NET Framework의 여러 버전 중 하나에서 실행되는 애플리케이션을 컴파일할 수 있습니다. 예를 들어 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 컴파일하고 동일한 애플리케이션을 64비트 플랫폼의 .NET Framework 4.5에서 실행되도록 컴파일할 수 있습니다. 둘 이상의 프레임워크에서 실행 가능하도록 컴파일하는 기능을 다중 대상 지정이라고 합니다.
 
@@ -190,6 +190,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [조건](../msbuild/msbuild-conditions.md) | MSBuild 요소에서 `Condition` 특성을 사용하는 방법에 대해 설명합니다. |
 | [고급 개념](../msbuild/msbuild-advanced-concepts.md) | 일괄 처리, 변환 수행, 다중 대상 지정 및 기타 고급 기술을 제공합니다. |
 | [MSBuild의 로그인](../msbuild/logging-in-msbuild.md) | 빌드 이벤트, 메시지 및 오류를 기록하는 방법에 대해 설명합니다. |
+| [MSBuild가 프로젝트를 빌드하는 방식](build-process-overview.md) | MSBuild에서 사용되는 내부 빌드 프로세스를 설명합니다. |
 | [추가 리소스](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | MSBuild에 대한 자세한 정보를 볼 수 있는 커뮤니티 및 지원 리소스를 나열합니다. |
 
 ## <a name="reference"></a>참고

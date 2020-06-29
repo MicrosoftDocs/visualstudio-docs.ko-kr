@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595204"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286182"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 작업
 
@@ -33,7 +33,7 @@ ms.locfileid: "75595204"
 
  다음 표에서는 `ResolveCOMReference` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`DelaySign`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 공개 키를 어셈블리에 배치합니다. `false`인 경우 어셈블리에 완전히 서명합니다.|
 |`EnvironmentVariables`|선택적 `String[]` 매개 변수입니다.<br /><br /> 등호로 구분된 환경 변수 쌍의 배열입니다. 이러한 변수는 생성된 *tlbimp.exe* 및 *aximp.exe*에 전달되면서 일반 환경 블록에 추가되거나 일부 일반 환경 블록을 재정의합니다.|
@@ -57,7 +57,7 @@ ms.locfileid: "75595204"
 
  다음 표에서는 `TypeLibNames` 매개 변수에 전달된 항목에 사용 가능한 항목 메타데이터를 설명합니다.
 
-|메타데이터|Description|
+|메타데이터|설명|
 |--------------|-----------------|
 |`GUID`|필수 항목 메타데이터입니다.<br /><br /> 형식 라이브러리의 GUID입니다. 이 항목 메타데이터를 지정하지 않으면 작업이 실패합니다.|
 |`VersionMajor`|필수 항목 메타데이터입니다.<br /><br /> 형식 라이브러리의 주 버전입니다. 이 항목 메타데이터를 지정하지 않으면 작업이 실패합니다.|
@@ -70,7 +70,7 @@ ms.locfileid: "75595204"
 
  다음 표에서는 `TypeLibFiles` 매개 변수에 전달된 항목에 사용 가능한 항목 메타데이터를 설명합니다.
 
-|메타데이터|Description|
+|메타데이터|설명|
 |--------------|-----------------|
 |`EmbedInteropTypes`|선택적 `Boolean` 매개 변수입니다.<br /><br />  `true`인 경우 interop DLL을 생성하지 않고 이 참조의 interop 형식을 어셈블리에 직접 포함합니다.|
 |`WrapperTool`|선택적 항목 메타데이터입니다.<br /><br /> 이 형식 라이브러리의 어셈블리 래퍼를 생성하는 데 사용되는 래퍼 도구를 지정합니다. 이 항목 메타데이터를 지정하지 않으면 작업에서 기본 래퍼 도구 “tlbimp”가 사용됩니다. 사용 가능한 typelib(대/소문자 구분)는 다음과 같습니다.<br /><br /> -   `Primary`: COM 구성 요소에 대한 이미 생성된 주 interop 어셈블리를 사용하려면 이 래퍼 도구를 사용합니다. 이 래퍼 도구를 사용할 경우 래퍼 출력 디렉터리를 지정하지 마세요. 지정하면 작업이 실패합니다.<br />-   `TLBImp`: COM 구성 요소에 대한 interop 어셈블리를 생성하려면 이 래퍼 도구를 사용합니다.<br />-   `AXImp`: ActiveX 컨트롤에 대한 interop 어셈블리를 생성하려면 이 래퍼 도구를 사용합니다.|
@@ -84,7 +84,17 @@ ms.locfileid: "75595204"
 
 이 작업을 수행하기 위해 COM DLL을 컴퓨터에 등록할 필요가 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="msb4803-error"></a>MSB4803 오류
+
+`dotnet` CLI 명령에서 `ResolveCOMReference` 작업을 사용하는 프로젝트를 실행하려고 하면 다음 오류가 발생합니다.
+
+```output
+MSB4803: The task "ResolveComReference" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild.
+```
+
+명령줄에서 `dotnet build` 명령을 실행할 때 사용되는 MSBuild의 .NET Core 버전에서는 이 작업이 지원되지 않습니다. MSBuild의 .NET Framework 버전이 사용되므로 Visual Studio 개발자 명령 프롬프트에서 [MSbuild.exe](msbuild-command-line-reference.md)를 호출하여 프로젝트 빌드를 시도하세요.
+
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

@@ -1,6 +1,6 @@
 ---
 title: 설정 동기화
-ms.date: 12/10/2018
+ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566789"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285207"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>여러 컴퓨터에서 Visual Studio 설정 동기화
 
@@ -49,14 +49,14 @@ ms.locfileid: "75566789"
 
 Visual Studio의 동기화된 설정이 기본적으로 켜져 있습니다. **도구** > **옵션** > **환경** > **계정** 페이지로 이동하고 **Visual Studio에 로그인할 때 디바이스에서 설정 동기화** 선택을 취소하면 컴퓨터에서 동기화된 설정을 끌 수 있습니다.
 
-예를 들어 컴퓨터 “A”에서 Visual Studio의 설정을 동기화하지 않기로 결정하면 컴퓨터 “A”에서 수행한 변경 사항이 컴퓨터 “B”나 컴퓨터 “C”에 나타나지 않습니다. 컴퓨터 “B”와 “C”는 계속 서로 동기화되지만 컴퓨터 “A”와는 동기화되지 않습니다.
+예를 들어 컴퓨터 "A"에서 Visual Studio의 설정을 동기화하지 않기로 결정하면 컴퓨터 "A"에서 수행한 변경 사항이 컴퓨터 "B"나 컴퓨터 "C"에 나타나지 않습니다. 컴퓨터 “B”와 “C”는 계속 서로 동기화되지만 컴퓨터 “A”와는 동기화되지 않습니다.
 
 > [!NOTE]
 > **도구** > **옵션** > **환경** > **계정** 페이지에서 옵션을 선택 취소하여 설정을 동기화하지 않도록 선택한 경우, 동일한 컴퓨터에 있는 Visual Studio의 다른 버전이나 에디션에는 영향을 미치지 않습니다. Visual Studio의 이러한 side-by-side 설치는 해당 설정을 계속 동기화합니다(여기에서 옵션을 선택 취소하지 않는 경우).
 
-## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Visual Studio 제품군 제품 및 버전 간에 설정 동기화
+## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Visual Studio IDE 제품 및 버전 간에 설정 동기화
 
-설정은 *side-by-side*로 설치된 Visual Studio 버전과 에디션 간에 동기화됩니다. Blend for Visual Studio를 포함한 Visual Studio 제품군 제품 간에서도 설정이 동기화됩니다. 그러나 개별 제품군 제품에는 Visual Studio와 공유되지 않는 자체 설정이 있을 수 있습니다. 예를 들어 컴퓨터 "A"의 Blend for Visual Studio에 관련된 설정은 컴퓨터 "A" 또는 "B"의 Visual Studio와 공유되지 않습니다.
+설정은 *side-by-side*로 설치된 Visual Studio 버전과 에디션 간에 동기화됩니다. Blend for Visual Studio를 포함한 Visual Studio IDE 제품 간에도 설정이 동기화됩니다. 그러나 개별 Visual Studio IDE 제품에는 Visual Studio와 공유되지 않는 고유한 설정이 있을 수 있습니다. 예를 들어 컴퓨터 "A"의 Blend for Visual Studio에 관련된 설정은 컴퓨터 "A" 또는 "B"의 Visual Studio와 공유되지 않습니다.
 
 ## <a name="side-by-side-synchronized-settings"></a>Side-by-Side 동기화된 설정
 
@@ -89,8 +89,9 @@ Visual Studio의 동기화된 설정이 기본적으로 켜져 있습니다. **�
 
 모든 설정을 기본값으로 다시 설정하려면 Visual Studio에 로그인한 후 **도구** > **설정 가져오기 및 내보내기**를 선택하여 **설정 가져오기 및 내보내기 마법사**를 엽니다. **모두 다시 설정**을 선택한 후 마법사의 나머지 단계를 따릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
 - [환경 설정](../ide/environment-settings.md)
 - [환경 > 계정 옵션 대화 상자](reference/accounts-environment-options-dialog-box.md)
+- [Visual Studio 버전 side-by-side 설치](../install/install-visual-studio-versions-side-by-side.md)

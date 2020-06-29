@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 55092145d5760e235dc0c38c5a191760af2a2bc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183615"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279772"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -32,7 +32,7 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
    > [!div class="mx-imgBorder"]
    > ![Azure 준비](_img/vs-azure/vs-azure-identity.png)
 
-5. 마지막 단계로 확인란을 클릭하여 약관에 동의한 다음 **등록**를 클릭합니다.  이제 모든 작업을 마쳤습니다.
+5. 마지막 단계로 확인란을 클릭하여 약관에 동의한 다음 **등록**를 클릭합니다.  이것이 전부입니다!
    > [!div class="mx-imgBorder"]
    > ![Azure 준비](_img/vs-azure/vs-azure-agreement.png)
 
@@ -70,7 +70,7 @@ Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습�
 리소스 이전, 지출 한도 제거 또는 기타 Azure 항목에 대해 궁금한 사항이 있으면 Azure Portal에서 [Azure 지원 요청을 제출](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)할 수 있습니다. 
 
 ## <a name="eligibility"></a>자격
-|                 구독 수준/프로그램                 |           혜택           |                         갱신 가능?                          |
+|                 구독 수준/프로그램                 |           이점           |                         갱신 가능?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 USD 월간 크레딧     |                             예                             |
 |              GitHub Enterprise가 포함된 Visual Studio Enterprise               |     150 USD 월간 크레딧     |                             예                             |
@@ -106,7 +106,7 @@ A:  Azure Portal에서 지원 인시던트를 제출하는 작업은 세 단계�
 
 자세한 내용은 [기술 지원](vs-tech-support.md) 설명서를 참조하세요.
 
-### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q: Azure DevTest 개별 크레딧을 사용하여 만든 지적 재산을 소유하는 방법
+### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q: 내 Azure DevTest 개별 크레딧을 사용하여 직접 만든 지적 재산은 누가 소유하나요?
 A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 지적 재산은 해당 리소스를 제공하는 회사의 지적 재산입니다. 따라서 고용주를 통해 Visual Studio 구독을 받은 경우 해당 지적 재산권 정책이 적용됩니다. 
 
 ## <a name="support-resources"></a>지원 리소스
@@ -116,7 +116,7 @@ A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

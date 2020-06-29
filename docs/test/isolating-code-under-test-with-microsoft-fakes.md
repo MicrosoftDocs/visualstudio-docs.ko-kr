@@ -1,7 +1,7 @@
 ---
 title: Microsoft Fakes를 사용하여 테스트 중인 코드 격리
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 06/03/2020
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566906"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286962"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -33,6 +33,7 @@ Fakes는 두 가지 버전이 있습니다.
 
 - Visual Studio Enterprise
 - .NET Framework 프로젝트
+- .NET Core 및 SDK 스타일 프로젝트 지원은 현재 미리 보기 버전입니다. [자세히 알아보기](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - .NET Standard 프로젝트는 지원되지 않습니다.
@@ -244,7 +245,7 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 
 또한 특정 인스턴스, 생성자 및 속성에 대한 shim을 만들 수 있습니다. 자세한 내용은 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 [스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

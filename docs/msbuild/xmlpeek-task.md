@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a76bf033fa3eb85f0626478b965285f32e5fb6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094665"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286123"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 작업
 
@@ -42,8 +42,6 @@ XML 파일에서 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 ## <a name="remarks"></a>설명
 
  이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
-
-
 
 ## <a name="example"></a>예제
 
@@ -74,7 +72,49 @@ XML 파일에서 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 </Target>
 ```
 
+XML 네임스페이스에서는 다음 예제와 같이 `Namespaces` 매개 변수를 사용합니다. 입력 XML 파일 `XMLFile1.xml`이 다음과 같고
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<class AccessModifier='public' Name='test' xmlns:s='http://nsurl'>
+  <s:variable Type='String' Name='a'>This</s:variable>
+  <s:variable Type='String' Name='b'>is</s:variable>
+  <s:variable Type='String' Name='c'>Sparta!</s:variable>
+  <method AccessModifier='public static' Name='GetVal' />
+</class>
+```
+
+프로젝트 파일에 다음 `Target`이 정의되어 있으면
+
+```xml
+  <Target Name="TestPeek" BeforeTargets="Build">
+    <!-- Find the Name attributes -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/@Name"
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value1" />
+    </XmlPeek>
+    <Message Text="@(value1)"/>
+    <!-- Find 'variable' nodes (XPath query includes ".") -->
+    <XmlPeek XmlInputPath="XMLFile1.xml"
+             Query="//s:variable/."
+             Namespaces="&lt;Namespace Prefix='s' Uri='http://nsurl' /&gt;">
+      <Output TaskParameter="Result" ItemName="value2" />
+    </XmlPeek>
+    <Message Text="@(value2)"/>
+  </Target>
+```
+
+출력은 `TestPeek` 대상에서 다음을 포함합니다.
+
+```output
+  TestPeek output:
+  a;b;c
+  <s:variable Type="String" Name="a" xmlns:s="http://nsurl">This</s:variable>;<s:variable Type="String" Name="b" xmlns:s="http://nsurl">is</s:variable>;<s:variable Type="String" Name="c" xmlns:s="http://nsurl">Sparta!</s:variable>
+```
+
 ## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)
+- [XPath 쿼리 구문](https://wikipedia.org/wiki/XPath)

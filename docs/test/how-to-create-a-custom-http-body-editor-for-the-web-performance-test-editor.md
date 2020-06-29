@@ -1,19 +1,19 @@
 ---
 title: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589203"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288145"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 
@@ -264,7 +264,7 @@ messageEditorControl 인스턴스는 <xref:Microsoft.VisualStudio.TestTools.WebT
 
 ## <a name="build-and-deploy-the-plug-ins"></a>플러그 인 빌드 및 배포
 
-1. **빌드** 메뉴에서 **\<Windows Form 컨트롤 라이브러리 프로젝트 이름> 빌드**를 선택합니다.
+1. **빌드** 메뉴에서 **빌드\<Windows Form Control Library project name>** 를 선택합니다.
 
 2. Visual Studio의 모든 인스턴스를 닫습니다.
 
@@ -297,7 +297,7 @@ Windows 컨트롤 라이브러리 프로젝트의 대상 프레임워크가 .NET
 
 자세한 내용은 [애플리케이션 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

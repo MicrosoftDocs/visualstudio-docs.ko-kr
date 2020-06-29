@@ -1,6 +1,6 @@
 ---
 title: 프로젝트 또는 솔루션 없이 코드 개발
-ms.date: 02/21/2018
+ms.date: 06/22/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596296"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284895"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발
 
@@ -34,10 +34,18 @@ Visual Studio에서 다음과 같은 방법으로 코드를 열 수 있습니다
 
 ::: moniker range="vs-2017"
 - Visual Studio **시작 페이지**에서 **폴더 열기** 링크를 선택합니다.
+
+    > [!IMPORTANT]
+    > Visual Studio **시작 페이지**에서 **폴더 열기** 링크를 사용하여 모든 코드를 열 수 있는 것은 아닙니다. 예를 들어 코드 파일이 솔루션의 일부로, &mdash;즉 .sln 파일에&mdash; 저장된 경우 여기에 나열된 다른 옵션 중 하나를 사용하여 코드를 열어야 합니다.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - 시작 창에서 **폴더 열기** 링크를 선택합니다.
+
+    > [!IMPORTANT]
+    > Visual Studio 시작 창에서 **폴더 열기** 링크를 사용하여 모든 코드를 열 수 있는 것은 아닙니다. 예를 들어 코드 파일이 솔루션의 일부로, &mdash;즉 .sln 파일에&mdash; 저장된 경우 여기에 나열된 다른 옵션 중 하나를 사용하여 코드를 열어야 합니다.
+
 ::: moniker-end
 
 - 키보드 사용자인 경우 Visual Studio에서 **Ctrl**+**Shift**+**Alt**+**O**를 누릅니다.
@@ -74,7 +82,7 @@ Visual Studio에서 다음과 같은 방법으로 코드를 열 수 있습니다
 
 ## <a name="run-and-debug-your-code"></a>코드 실행 및 디버그
 
-Visual Studio에서 프로젝트 또는 솔루션 없이 코드를 디버그할 수 있습니다. 일부 언어를 디버그하려면 스크립트, 실행 파일 또는 프로젝트와 같은 유효한 ‘시작 파일’을 코드베이스에서 지정해야 할 수 있습니다.  도구 모음의 **시작** 단추 옆에 있는 드롭다운 목록 상자에서는 Visual Studio에서 검색한 모든 시작 항목과 특별히 지정한 항목을 나열합니다. 코드를 디버그할 때는 먼저 이 코드를 Visual Studio에서 실행합니다.
+Visual Studio에서 프로젝트 또는 솔루션 없이 코드를 디버그할 수 있습니다. 일부 언어를 디버그하려면 스크립트, 실행 파일 또는 프로젝트와 같은 유효한 ‘시작 파일’을 코드베이스에서 지정해야 할 수 있습니다. 도구 모음의 **시작** 단추 옆에 있는 드롭다운 목록 상자에서는 Visual Studio에서 검색한 모든 시작 항목과 특별히 지정한 항목을 나열합니다. 코드를 디버그할 때는 먼저 이 코드를 Visual Studio에서 실행합니다.
 
 Visual Studio에서 실행되도록 코드를 구성하는 것은 해당 코드의 종류 및 빌드 도구에 따라 달라집니다.
 

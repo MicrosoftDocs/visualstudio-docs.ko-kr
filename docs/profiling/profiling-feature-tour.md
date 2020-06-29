@@ -2,7 +2,7 @@
 title: 프로파일링 도구를 사용하여 성능 측정
 description: Visual Studio에서 사용할 수 있는 다른 진단 도구에 대해 간략히 살펴봅니다.
 ms.custom: mvc
-ms.date: 05/18/2018
+ms.date: 06/03/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,16 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80412032"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280253"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
 
-Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할 수 있는 다양한 프로파일링 도구를 제공합니다.
+Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할 수 있는 다양한 프로파일링 도구를 제공합니다. 이 문서에서는 가장 일반적인 프로파일링 도구를 간략하게 살펴봅니다.
+
+## <a name="view-performance-while-debugging"></a>디버그하는 동안 성능 보기
 
 디버깅 세션 중에 액세스할 수 있는 프로파일링 도구는 [진단 도구] 창에 제공됩니다. 끄지 않았다면 [진단 도구] 창이 자동으로 나타납니다. 창을 표시하려면 **디버그/Windows/진단 도구 표시**를 클릭합니다. 창이 열리면 데이터를 수집할 도구를 선택할 수 있습니다.
 
@@ -31,7 +33,7 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 ![진단 도구 요약 보기](../profiling/media/prof-tour-cpu-and-memory-graph.gif "진단 도구 요약")
 
-기본적으로 **진단 도구** 창을 사용하여 앱을 프로파일링하지만 릴리스 빌드의 경우 앱에 대한 post-mortem 분석을 대신 수행할 수도 있습니다. 다른 방법에 대한 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#which-tool-should-i-use)를 참조하세요.
+일반적으로 **진단 도구** 창을 사용하여 앱을 프로파일링하지만 릴리스 빌드의 경우 앱에 대한 post-mortem 분석을 대신 수행할 수도 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#which-tool-should-i-use)를 참조하세요.
 
 > [!NOTE]
 > Windows 7 이상에서 사후 분석 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
@@ -59,7 +61,7 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ![진단 도구에서 CPU 사용량 사용](../profiling/media/prof-tour-enable-cpu-profiling.png "진단 도구 CPU 사용량 사용")
 
-도구를 가장 효율적으로 사용하려면 코드에 두 개의 중단점을 설정합니다(함수 또는 분석할 코드 영역의 시작 부분과 끝에 각각 하나씩). 두 번째 중단점에서 일시 중지된 경우에 프로파일링 데이터를 검토하세요.
+이 도구를 사용하는 한 가지 방법은 코드에 두 개의 중단점을 설정하는 것입니다(함수 또는 분석할 코드 영역의 시작 부분과 끝에 각각 하나씩). 두 번째 중단점에서 일시 중지된 경우에 프로파일링 데이터를 검토하세요.
 
 **CPU 사용량** 보기에는 함수 목록이 오래 실행된 순으로 표시됩니다. 즉, 가장 오래 실행 중인 함수가 맨 위에 표시됩니다. 이 목록에서 성능 병목 현상이 발생 중인 함수를 알 수 있습니다.
 
@@ -89,15 +91,9 @@ CPU 사용량 및 메모리 사용량과 같은 프로파일링 도구를 디버
 
 ![성능 프로파일러](../profiling/media/prof-tour-performance-profiler.png "성능 프로파일러")
 
-**디버그** > **성능 프로파일러**를 선택하여 성능 프로파일러를 엽니다.
+**디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
 
-창에서 여러 프로파일링 도구를 선택할 수 있는 경우도 있습니다. CPU 사용량과 같은 도구는 분석에 유용한 보조 데이터를 제공할 수 있습니다. [명령줄 프로파일러](../profiling/profile-apps-from-command-line.md)를 사용하여 여러 프로파일링 도구를 포함하는 시나리오를 사용하도록 설정할 수도 있습니다.
-
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI 성능 및 접근성 이벤트 검사(UWP)
-
-UWP 앱의 **진단 도구** 창에서 **UI 분석**을 사용하도록 설정할 수 있습니다. 이 도구는 디버그하는 동안 일반 성능 또는 접근성 문제를 검색하여 **이벤트** 뷰에 표시합니다. 이벤트 설명에는 문제를 해결하는 데 유용한 정보가 제공됩니다.
-
-![진단 도구의 UI 분석 이벤트 뷰](../profiling/media/prof-tour-ui-analysis.png "진단 도구 보기 UI 분석 이벤트")
+창에서 [여러 프로파일링 도구](../profiling/use-multiple-profiler-tools-simultaneously.md)를 선택할 수 있는 경우도 있습니다. CPU 사용량과 같은 도구는 분석에 유용한 보조 데이터를 제공할 수 있습니다. [명령줄 프로파일러](../profiling/profile-apps-from-command-line.md)를 사용하여 여러 프로파일링 도구를 포함하는 시나리오를 사용하도록 설정할 수도 있습니다.
 
 ## <a name="analyze-resource-consumption-xaml"></a>리소스 사용 분석(XAML)
 
@@ -110,6 +106,40 @@ XAML 앱(예: Windows 데스크톱 WPF 앱 및 UWP 앱)에서 애플리케이션
 타임라인 세부 정보 뷰에서 작업 유형 또는 포함된 UI 요소와 작업 기간 등과 같은 정보를 확인할 수 있습니다. 예를 들어 그림에서 표 형태 컨트롤에 대한 **레이아웃** 이벤트는 57.53ms 걸렸습니다.
 
 자세한 내용은 [애플리케이션 타임라인](../profiling/application-timeline.md)을 참조하세요.
+
+::: moniker range=">=vs-2019"
+
+## <a name="examine-application-events"></a>애플리케이션 이벤트 검사
+
+일반 [이벤트 뷰어](../profiling/events-viewer.md)를 사용하면 모듈 로드, 스레드 시작, 시스템 구성과 같은 이벤트 목록을 통해 애플리케이션의 활동을 확인하여 Visual Studio 프로파일러 내에서 애플리케이션의 성능을 보다 잘 진단할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
+
+이 도구는 각 이벤트를 목록 뷰에 표시합니다. 열은 이벤트 이름, 타임스탬프, 프로세스 ID와 같은 각 이벤트에 대한 정보를 제공합니다.
+
+![이벤트 뷰어 추적](../profiling/media/eventviewertrace.png "이벤트 뷰어 추적")
+
+## <a name="analyze-asynchronous-code-net"></a>비동기 코드 분석(.NET)
+
+[.NET Async 도구](../profiling/analyze-async.md)를 사용하여 애플리케이션에서 비동기 코드의 성능을 분석할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
+
+이 도구는 각 비동기 작업을 목록 뷰에 표시합니다. 비동기 작업의 시작 시간, 종료 시간 및 총 시간과 같은 정보를 볼 수 있습니다.
+
+![.NET Async 도구 중지됨](../profiling/media/async-tool-opened.png ".NET Async 도구 중지됨")
+
+## <a name="analyze-database-performance-net-core"></a>데이터베이스 성능 분석(.NET Core)
+
+ADO.NET 또는 Entity Framework Core를 사용하는 .NET Core 앱의 경우 [데이터베이스 도구](../profiling/analyze-database.md)를 사용하여 진단 세션 중에 애플리케이션이 수행하는 데이터베이스 쿼리를 기록할 수 있습니다. 그런 다음 애플리케이션 성능을 향상할 수 있는 지점을 찾기 위해 개별 쿼리에 대한 정보를 분석할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
+
+이 도구는 각 쿼리를 목록 뷰에 표시합니다. 쿼리 시작 시간 및 기간과 같은 정보를 볼 수 있습니다.
+
+![Allocation](./media/db-gotosource.png "할당")
+
+::: moniker-end
+
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI 성능 및 접근성 이벤트 검사(UWP)
+
+UWP 앱의 **진단 도구** 창에서 **UI 분석**을 사용하도록 설정할 수 있습니다. 이 도구는 디버그하는 동안 일반 성능 또는 접근성 문제를 검색하여 **이벤트** 뷰에 표시합니다. 이벤트 설명에는 문제를 해결하는 데 유용한 정보가 제공됩니다.
+
+![진단 도구의 UI 분석 이벤트 뷰](../profiling/media/prof-tour-ui-analysis.png "진단 도구 보기 UI 분석 이벤트")
 
 ## <a name="analyze-gpu-usage-direct3d"></a>GPU 사용량 분석(Direct3D)
 
@@ -166,33 +196,36 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 다음 테이블에는 Visual Studio가 제안하는 다양한 도구 및 그와 함께 사용할 수 있는 다양한 프로젝트 형식이 나열되어 있습니다.
 
 ::: moniker range=">=vs-2019"
-|성능 도구|Windows 데스크톱|UWP|ASP.NET/ASP.NET Core|
+|성능 도구|Windows 바탕 화면|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
+|[PerfTips](../profiling/perftips.md)|예|예|예|
 |[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
 |[.NET 개체 할당](../profiling/dotnet-alloc-tool.md)|예(.NET만 해당)|예|예|
-|[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|아니요|
-|[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|아니요|
-|[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|
-|[성능 탐색기](../profiling/performance-explorer.md)|예|아니요|예|
+|[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|no|
+|[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|no|
+|[이벤트 뷰어](../profiling/perftips.md)|예|예|예|
+|[.NET Async](../profiling/perftips.md)|예(.NET만 해당)|예|예|
+|[데이터베이스](../profiling/perftips.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
+|[성능 탐색기](../profiling/performance-explorer.md)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-|성능 도구|Windows 데스크톱|UWP|ASP.NET/ASP.NET Core|
+|성능 도구|Windows 바탕 화면|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
-|[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|아니요|
-|[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|아니요|
+|[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|no|
+|[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|no|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|
-|[성능 탐색기](../profiling/performance-explorer.md)|예|아니요|예|
+|[성능 탐색기](../profiling/performance-explorer.md)|예|no|예|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
-|[네트워크 사용량](../profiling/network-usage.md)|아니요|예|아니요|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|아니요|HTML은 예, XAML은 no|아니요|
-|[JavaScript 메모리](../profiling/javascript-memory.md)|아니요|HTML은 예, XAML은 no|아니요|
+|[네트워크 사용량](../profiling/network-usage.md)|no|예|no|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|HTML은 예, XAML은 no|no|
+|[JavaScript 메모리](../profiling/javascript-memory.md)|no|HTML은 예, XAML은 no|no|
 ::: moniker-end
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

@@ -1,18 +1,18 @@
 ---
 title: 항목 템플릿 만들기
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594723"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284479"
 ---
 # <a name="how-to-create-item-templates"></a>방법: 항목 템플릿 만들기
 
@@ -36,9 +36,9 @@ ms.locfileid: "75594723"
 
 1. **템플릿 옵션 선택** 페이지에서, 템플릿 이름 및 설명(옵션), 아이콘 이미지 및 미리 보기 이미지를 입력한 다음 **마침**을 선택합니다.
 
-    템플릿 파일은 *.zip* 파일에 추가되고 마법사에서 지정한 디렉터리에 복사됩니다. 기본 위치는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\My Exported Templates*입니다.
+    템플릿 파일은 *.zip* 파일에 추가되고 마법사에서 지정한 디렉터리에 복사됩니다. 기본 위치는 *%USERPROFILE%\Documents\Visual Studio \<version\>\My Exported Templates*입니다.
 
-1. **템플릿 내보내기 마법사**에서 **템플릿을 자동으로 Visual Studio로 가져오기** 옵션을 선택하지 않은 경우 내보낸 템플릿을 찾습니다. 그런 다음, 사용자 항목 템플릿 디렉터리에 복사합니다. 기본 위치는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\Templates\ItemTemplates*입니다.
+1. **템플릿 내보내기 마법사**에서 **템플릿을 자동으로 Visual Studio로 가져오기** 옵션을 선택하지 않은 경우 내보낸 템플릿을 찾습니다. 그런 다음, 사용자 항목 템플릿 디렉터리에 복사합니다. 기본 위치는 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ItemTemplates*입니다.
 
 1. Visual Studio를 종료한 다음 다시 엽니다.
 
@@ -83,7 +83,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
     - 데이터베이스
     - 웹
 
-예: `<ProjectSubType>Database</ProjectSubType>`
+예를 들어 `<ProjectSubType>Database</ProjectSubType>`을 참조하십시오.
 
 다음 예제에서는 **Office** 프로젝트용 항목 템플릿을 보여 줍니다.
 
@@ -111,7 +111,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
 
 2. 템플릿으로 저장할 준비가 될 때까지 프로젝트 항목을 수정합니다.
 
-3. 해당되는 경우 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 매개 변수 대체에 대한 자세한 내용은 [방법: 템플릿에서 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
+3. 해당되는 경우 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 매개 변수 대체에 대한 자세한 내용은 [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
 
 4. XML 파일을 만들고 *.vstemplate* 파일 확장명을 사용하여 프로젝트 항목 파일과 같은 디렉터리에 저장합니다.
 
@@ -133,7 +133,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md)

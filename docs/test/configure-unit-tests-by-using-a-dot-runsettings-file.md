@@ -1,18 +1,18 @@
 ---
 title: .runsettings 파일을 사용하여 단위 테스트 구성
 ms.date: 10/03/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880353"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288769"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -214,6 +214,27 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
+  
+  <!-- Configuration for loggers -->
+  <LoggerRunSettings>
+    <Loggers>      
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
 
   <!-- Adapter Specific sections -->
 
@@ -310,6 +331,32 @@ public void HomePageTest()
 ```
 
 TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 필드 및 공용 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 속성을 테스트 클래스에 추가합니다.
+
+### <a name="logger-run-settings"></a>로거 실행 설정
+
+```xml
+<LoggerRunSettings>
+    <Loggers>        
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+            <Verbosity>quiet</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>foo.trx</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>foo.html</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
+```
+
+`LoggerRunSettings` 섹션은 테스트 실행에 사용할 로거를 하나 이상 정의합니다. 가장 일반적인 로거는 콘솔, trx 및 html입니다. 
 
 ### <a name="mstest-run-settings"></a>MSTest 실행 설정
 

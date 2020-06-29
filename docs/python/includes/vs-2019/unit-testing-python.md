@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8adce700524c4ade6c627aa91480460f8f2571f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e84b9de4eca681812209eb17f492d5e07522d3b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933478"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292127"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Python 프로젝트에 대한 테스트 프레임워크 선택
 
@@ -130,7 +130,7 @@ Visual Studio를 사용하여 Python 코드가 포함된 [폴더를 열어](../.
 단위 테스트는 코드 조각이므로 다른 코드처럼 버그가 있을 수 있으며 경우에 따라 디버거에서 실행해야 합니다. 디버거에서 중단점을 설정하고 변수를 검사하며 코드를 단계별로 실행할 수 있습니다. Visual Studio는 단위 테스트에 대한 진단 도구도 제공합니다.
 
 > [!Note]
-> 기본적으로 테스트 디버깅은 ptvsd 4 디버거를 사용합니다. ptvsd 3을 대신 사용하려면 
+> 기본적으로 테스트 디버깅은 Visual Studio 2017(버전 15.8 이상)에는 ptvsd 4 디버거를 사용하고 Visual Studio 2019(버전 16.5 이상)에는 debugpy를 사용합니다. ptvsd 3을 대신 사용하려면 
 **도구** > **옵션** > **Python** > **디버깅**의 **레거시 디버거 사용** 옵션을 선택할 수 있습니다. 
 
 디버깅을 시작하려면 코드에 초기 중단점을 설정하고 **테스트 탐색기**에서 테스트(또는 선택 항목)를 마우스 오른쪽 단추로 클릭한 다음, **선택한 테스트 디버그**를 선택합니다. 애플리케이션 코드의 경우처럼 Visual Studio에서 Python 디버거를 시작합니다.

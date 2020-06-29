@@ -1,20 +1,20 @@
 ---
 title: 이전 버전의 .NET Framework를 대상으로 하는 단위 테스트
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596023"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288171"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 지정하도록 단위 테스트 구성
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 
 Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framework의 가장 최근 버전이 기본적으로 대상으로 설정됩니다. 또한 Visual Studio의 이전 버전에서 테스트 프로젝트를 업그레이드할 경우 해당 프로젝트는 .NET Framework의 가장 최근 버전을 대상으로 지정하도록 업그레이드됩니다. 프로젝트 속성을 편집하여 .NET Framework의 이전 버전을 프로젝트 대상으로 명시적으로 지정할 수 있습니다.
 
@@ -83,7 +83,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 2. **솔루션 탐색기**의 새 C++ 테스트 프로젝트에서 **프로젝트 언로드**를 선택합니다.
 
-3. **솔루션 탐색기**에서 언로드된 C++ 테스트 프로젝트를 선택하고 **편집 \<project name>.vcxproj**를 선택합니다.
+3. **솔루션 탐색기**에서 언로드된 C++ 테스트 프로젝트를 선택하고 **\<project name> 편집**을 선택합니다.
 
    . *.vcxproj* 파일이 편집기에서 열립니다.
 
@@ -104,7 +104,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 6. **솔루션 탐색기**에 새 C++ 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **프로젝트 다시 로드**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

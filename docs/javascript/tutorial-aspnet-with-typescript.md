@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183095"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283569"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>자습서: Visual Studio에서 TypeScript를 사용하여 ASP.NET Core 앱 만들기
 
@@ -162,7 +162,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
     `lastName`을 선택하여 마지막 이름을 코드에 다시 추가합니다.
 
-1. *Views/Home* 폴더를 연 다음, *index.html*을 엽니다.
+1. *Views/Home* 폴더를 연 다음, *Index.cshtml*을 엽니다.
 
 1. 파일 끝에 다음 HTML 코드를 추가합니다.
 

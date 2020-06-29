@@ -1,7 +1,7 @@
 ---
 title: 다중 프로젝트 템플릿 만들기
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591088"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284414"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
 
@@ -46,14 +46,14 @@ ms.locfileid: "75591088"
 
 다중 프로젝트 템플릿에 대한 루트 *vstemplate* 파일은 다음과 같은 점에서 단일 프로젝트 템플릿과 다릅니다.
 
-- **VSTemplate** 요소의 **Type** 특성에는 **Project** 대신 값 **ProjectGroup**이 있습니다. 다음은 그 예입니다.
+- **VSTemplate** 요소의 **Type** 특성에는 **Project** 대신 값 **ProjectGroup**이 있습니다. 예를 들어:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- **TemplateContent** 요소에는 포함된 프로젝트의 *vstemplate* 파일에 대한 경로를 정의하는 **ProjectTemplateLink** 요소가 하나 이상 있는 **ProjectCollection** 요소가 포함됩니다. 다음은 그 예입니다.
+- **TemplateContent** 요소에는 포함된 프로젝트의 *vstemplate* 파일에 대한 경로를 정의하는 **ProjectTemplateLink** 요소가 하나 이상 있는 **ProjectCollection** 요소가 포함됩니다. 예를 들어:
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ ms.locfileid: "75591088"
     ```
 
 > [!TIP]
-> 다중 프로젝트 템플릿만 새 프로젝트 대화 상자에 표시하고 포함된 개별 프로젝트를 표시하지 않으려면 내부 템플릿을 [숨김](../extensibility/hidden-element-visual-studio-templates.md)으로 표시합니다. 다음은 그 예입니다.
+> 다중 프로젝트 템플릿만 새 프로젝트 대화 상자에 표시하고 포함된 개별 프로젝트를 표시하지 않으려면 내부 템플릿을 [숨김](../extensibility/hidden-element-visual-studio-templates.md)으로 표시합니다. 예를 들어:
 >
 > ```xml
 > <VSTemplate Type="Project" ... >
@@ -88,7 +88,7 @@ ms.locfileid: "75591088"
 2. 서식 파일에 내보낼 준비가 될 때까지 프로젝트를 사용자 지정합니다.
 
    > [!TIP]
-   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. `$ext_safeprojectname$`)을 입력합니다. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true**로 설정합니다.
+   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. 예: `$ext_safeprojectname$`. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true**로 설정합니다.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
@@ -117,7 +117,7 @@ ms.locfileid: "75591088"
 
    파일 및 폴더가 *.zip* 파일로 압축됩니다.
 
-10. 사용자 프로젝트 템플릿 디렉터리에 *.zip* 파일을 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\Templates\ProjectTemplates*입니다.
+10. 사용자 프로젝트 템플릿 디렉터리에 *.zip* 파일을 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*입니다.
 
 11. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트**를 선택하고 템플릿이 표시되는지 확인합니다.
 
@@ -186,7 +186,7 @@ ms.locfileid: "75591088"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)

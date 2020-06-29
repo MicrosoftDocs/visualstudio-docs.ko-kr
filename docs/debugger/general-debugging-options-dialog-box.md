@@ -1,6 +1,6 @@
 ---
 title: 일반, 디버깅, 옵션 대화 상자 | Microsoft Docs
-ms.date: 11/12/2019
+ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bbd65d11b26d9b35000e4acbe4d28a585f8ddc
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472689"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286559"
 ---
 # <a name="general-debugging-options"></a>일반 디버깅 옵션
 
@@ -89,7 +89,7 @@ Visual Studio 디버거 옵션을 설정하려면 **도구** > **옵션**을 선
 
 - **모든 소스 링크 요청에 대해 Git 자격 증명 관리자 인증으로 대체**:   소스 링크 지원을 사용하도록 설정하고 소스 링크 요청이 인증에 실패하는 경우 Visual Studio는 Git 자격 증명 관리자를 호출합니다.
 
-**중단점과 현재 명령문의 전체 줄 강조 표시(C++만 해당)** : 디버거가 중단점이나 현재 문을 강조 표시할 때 전체 줄을 강조 표시합니다.
+**중단점 및 현재 명령문의 전체 소스 줄 강조 표시(C++만 해당)** : 디버거가 중단점이나 현재 문을 강조 표시할 때 전체 줄을 강조 표시합니다.
 
 **소스 파일이 원래 버전과 정확하게 일치해야 함**: 디버깅 중인 실행 파일을 빌드하는 데 사용되는 소스 코드의 버전이 소스 파일과 일치하는지 확인하도록 디버거에 지시합니다. 버전이 일치하지 않으면 일치하는 소스를 찾으라는 메시지가 표시됩니다. 일치하는 소스가 없으면 디버깅하는 동안 소스 코드가 표시되지 않습니다.
 
@@ -101,11 +101,9 @@ Visual Studio 디버거 옵션을 설정하려면 **도구** > **옵션**을 선
 
 **ASP.NET에 대해 JavaScript 디버깅 사용(Chrome, Microsoft Edge 및 IE)** : ASP.NET 앱용 스크립트 디버거를 사용하도록 설정합니다. Chrome에서 처음 사용하는 경우 브라우저에 로그인하여 설치한 Chrome 확장을 활성화해야 할 수 있습니다. 레거시 동작으로 되돌리려면 이 옵션을 비활성화합니다.
 
-**UWP JavaScript 앱용 Edge 개발자 도구 사용(실험적)** : Microsoft Edge에서 UWP JavaScript 앱용 Edge 개발자 도구를 사용하도록 설정합니다.
-
-**ASP.NET에 대해 레거시 크롬 JavaScript 디버거 사용**: ASP.NET에 대해 레거시 Chrome JavaScript 스크립트 디버거를 사용하도록 설정합니다. Chrome에서 처음 사용하는 경우 브라우저에 로그인하여 설치한 Chrome 확장을 활성화해야 할 수 있습니다.
-
-**관리자 권한으로 Visual Studio를 실행하는 경우 크롬 JavaScript 디버깅을 시작하는 실험적 방법 사용**: JavaScript 디버깅 중에 Chrome을 시작하는 새로운 방법을 시도해 보도록 Visual Studio에 지시합니다.
+::: moniker range=">= vs-2019"
+**적용 가능한 대상의 JavaScript 디버그에 여러 대상 JavaScript 디버거를 사용(디버깅을 다시 시작해야 함)** 브라우저와 백 엔드에 대한 연결을 동시에 사용하도록 설정하여 클라이언트 및 서버에서 실행 중인 코드를 편집기에서 바로 디버그할 수 있도록 합니다.
+::: moniker-end
 
 **dll 내보내기 로드(네이티브 전용)** : dll 내보내기 테이블이 로드됩니다. Windows 메시지, Windows 프로시저(WindowProcs), COM 개체, 마샬링 또는 기호가 없는 dll을 사용하여 작업하는 경우 dll 내보내기 테이블의 기호 정보가 유용할 수 있지만, dll 내보내기 정보를 읽으면 일부 오버헤드가 발생합니다. 따라서 이 기능은 기본적으로 해제되어 있습니다.
 
@@ -124,7 +122,9 @@ dll의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려�
 > [!NOTE]
 > 관리되는 호환성 모드를 선택하면 기본 디버깅 엔진에서만 구현되는 일부 기능이 비활성화됩니다. 레거시 디버깅 엔진은 Visual Studio 2012에서 대체되었습니다.
 
+::: moniker range="vs-2017"
 **레거시 C# 및 VB 식 계산기 사용**: 디버거에서는 Visual Studio 2015 Roslyn 기반 식 계산기 대신 Visual Studio 2013 C# 또는 Visual Basic 식 계산기를 사용합니다.
+::: moniker-end
 
 **안전하지 않을 수 있는 프로세스에 대해 사용자 지정 디버거 시각화 도우미를 사용할 때 경고(관리 전용)** : 디버그된 프로세스에서 코드를 실행 중인 사용자 지정 디버거 시각화 도우미를 사용할 경우 안전하지 않은 코드가 실행될 수 있으므로 Visual Studio에서 경고합니다.
 
@@ -142,6 +142,9 @@ dll의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려�
 - **내 XAML만 사용**: Visual Studio 2019 버전 16.4부터 **라이브 시각적 트리**는 기본적으로 사용자 코드로 분류된 XAML만 표시합니다. 이 옵션을 사용하지 않도록 설정하면 생성된 모든 XAML 코드가 도구에 표시됩니다.
 
 - **요소를 선택할 때 선택 모드 해제** Visual Studio 2019 버전 16.4부터 요소를 선택하면 앱 내 도구 모음 요소 선택기 단추(**선택 영역 사용**)가 꺼집니다. 이 옵션을 사용하지 않도록 설정하면 앱 내 도구 모음 단추를 다시 클릭할 때까지 요소 선택이 계속 유지됩니다.
+
+- **문서 저장 시 XAML 핫 다시 로드 적용** Visual Studio 2019 버전 16.6부터 문서를 저장할 때 XAML 핫 다시 로드를 적용합니다.
+
 ::: moniker-end
 
 **디버그하는 동안 진단 도구 사용**: 디버깅하는 동안 **진단 도구** 창이 나타납니다.
@@ -162,15 +165,25 @@ dll의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려�
 
 ::: moniker range=">= vs-2019"
 **빠른 식 계산 사용(관리 전용)** : 디버거가 간단한 속성 및 메서드의 실행을 시뮬레이션하여 더 빠른 계산을 시도할 수 있습니다.
+
+**외부 프로세스에 디버그 기호 로드(네이티브 전용)** 디버깅 중에 이 [메모리 최적화](https://devblogs.microsoft.com/cppblog/out-of-process-debugger-for-c-in-visual-studio-2019/)를 사용합니다.
+
+**디버거에서 중단 시 포그라운드에 Visual Studio 표시** 디버거에서 일시 중지할 때 Visual Studio를 포그라운드로 전환합니다.
 ::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>이전 버전의 Visual Studio에서 사용 가능한 옵션
 
 이전 버전의 Visual Studio를 사용하는 경우 몇 가지 추가 옵션이 있을 수 있습니다.
 
+**UWP JavaScript 앱용 Edge 개발자 도구 사용(실험적)** : Microsoft Edge에서 UWP JavaScript 앱용 Edge 개발자 도구를 사용하도록 설정합니다.
+
+**ASP.NET에 대해 레거시 크롬 JavaScript 디버거 사용**: ASP.NET에 대해 레거시 Chrome JavaScript 스크립트 디버거를 사용하도록 설정합니다. Chrome에서 처음 사용하는 경우 브라우저에 로그인하여 설치한 Chrome 확장을 활성화해야 할 수 있습니다.
+
 **예외 도우미 사용**: 관리 코드의 경우 예외 도우미를 사용하도록 설정합니다. Visual Studio 2017부터 예외 도우미(Exception Helper)가 예외 도우미(Exception Assistant)를 대체했습니다.
 
 **처리되지 않은 예외에 대한 호출 스택 해제**: **호출 스택** 창에서 호출 스택을 처리되지 않은 예외가 발생하기 전 시점으로 롤백합니다.
+
+**관리자 권한으로 Visual Studio를 실행하는 경우 크롬 JavaScript 디버깅을 시작하는 실험적 방법 사용**: JavaScript 디버깅 중에 Chrome을 시작하는 새로운 방법을 시도해 보도록 Visual Studio에 지시합니다.
 
 **시작할 때 기호가 없으면 경고(네이티브 전용)** : 디버거에 기호 정보가 없는 프로그램을 디버그할 때 경고 대화 상자가 표시됩니다.
 

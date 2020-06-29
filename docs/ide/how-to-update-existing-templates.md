@@ -1,7 +1,7 @@
 ---
 title: 기존 프로젝트 항목 템플릿 업데이트
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - item templates, updating
 - Visual Studio templates, updating
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591361"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283920"
 ---
 # <a name="how-to-update-existing-templates"></a>방법: 기존 템플릿 업데이트
 
@@ -47,7 +47,7 @@ Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 
 
 ### <a name="to-manually-update-an-existing-template"></a>기존 템플릿을 수동으로 업데이트하려면
 
-1. 템플릿을 포함하는 *.zip* 파일을 찾습니다. 사용자 프로젝트 템플릿은 일반적으로 *%USERPROFILE%\Documents\Visual Studio \<버전\>\Templates\ProjectTemplates*에 있습니다.
+1. 템플릿을 포함하는 *.zip* 파일을 찾습니다. 사용자 프로젝트 템플릿은 일반적으로 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*에 있습니다.
 
 1. *.zip* 파일의 압축을 풉니다.
 
@@ -65,7 +65,7 @@ Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 
 
 1. 추출된 템플릿 파일과 이전 템플릿 *.zip* 파일을 삭제합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
