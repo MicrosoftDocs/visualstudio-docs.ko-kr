@@ -551,6 +551,8 @@
                   href: ca1828.md
                 - name: 'CA1829: Enumerable.Count 메서드 대신 Length/Count 속성을 사용하세요.'
                   href: ca1829.md
+                - name: 'CA1830: StringBuilder에서 강력한 형식의 추가 및 삽입 메서드 오버로드를 사용하세요.'
+                  href: ca1830.md
                 - name: 'CA1831: 적절한 경우 문자열에 대해 범위 기반 인덱서 대신 AsSpan을 사용하세요.'
                   href: ca1831.md
                 - name: 'CA1832: 배열의 ReadOnlySpan 또는 ReadOnlyMemory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.'
@@ -949,6 +951,8 @@
                   href: ca2245.md
                 - name: 'CA2246: 동일한 문에 기호 및 해당 멤버를 할당하지 마세요.'
                   href: ca2246.md
+                - name: 'CA2247: TaskCompletionSource 생성자로 전달된 인수는 TaskContinuationOptions 열거형이 아닌 TaskCreationOptions 열거형이어야 합니다.'
+                  href: ca2247.md
                 - name: 'CA2248: Enum.HasFlag에 올바른 enum 인수를 제공하세요.'
                   href: ca2248.md
             - name: 자동 기능 일시 중단
