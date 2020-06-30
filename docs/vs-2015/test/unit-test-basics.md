@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dff9b4bece79c692aa896af6e5d3f7d2048cde52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672057"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543782"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ ms.locfileid: "72672057"
 
 - [테스트 실행 및 보기](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="BKMK_Unit_testing_overview"></a> 단위 테스트 개요
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>단위 테스트 개요
 
-### <a name="BKMK_Quick_starts"></a> 빠른 시작
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>빠른 시작
  코딩으로 직접 이동하는 단위 테스트에 대한 설명을 보려면 다음 항목 중 하나를 참조하세요.
 
 - [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ ms.locfileid: "72672057"
 
 - [테스트 탐색기를 사용하여 네이티브 코드 단위 테스트](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="BKMK_The_MyBank_Solution_example"></a> MyBank 솔루션 예제
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>MyBank 솔루션 예제
  이 항목에서는 `MyBank` 라는 가상의 애플리케이션 개발이 예제로 사용됩니다. 이 항목의 설명을 이해하는 데에는 실제 코드가 필요하지 않습니다. 테스트 메서드는 C#으로 작성되고 관리 코드에 대한 Microsoft 단위 테스트 프레임워크를 사용하여 제공됩니다. 하지만 이러한 개념은 다른 언어 및 프레임워크에서도 쉽게 적용할 수 있습니다.
 
  ![MyBank 솔루션](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -92,22 +92,22 @@ public void Withdraw(double amount)
 
  이제 코드가 작성되었으므로 테스트할 시간입니다.
 
-## <a name="BKMK_Creating_the_unit_test_projects"></a> 단위 테스트 프로젝트 및 테스트 메서드 만들기
+## <a name="create-unit-test-projects-and-test-methods"></a><a name="BKMK_Creating_the_unit_test_projects"></a>단위 테스트 프로젝트 및 테스트 메서드 만들기
  코드에서 단위 테스트 프로젝트와 단위 테스트 스텁을 생성하는 것이 더 빠를 수 있습니다. 또는 요구 사항에 따라 단위 테스트 프로젝트 및 테스트를 수동으로 만들도록 선택할 수 있습니다.
 
  **단위 테스트 프로젝트 및 단위 테스트 스텁 생성**
 
 1. 코드 편집기 창에서 마우스 오른쪽 단추를 클릭하고 상황에 맞는 메뉴에서 **단위 테스트 만들기** 를 선택합니다.
 
-    ![편집기 창에서 상황에 맞는 메뉴를 봅니다.](../test/media/createunittestsrightclick.png "Createit")
+    ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/createunittestsrightclick.png "Createit")
 
 2. 확인을 클릭하여 단위 테스트를 만드는 기본값을 그대로 사용하거나, 단위 테스트 프로젝트와 단위 테스트를 만들고 이름을 지정하는 데 사용되는 값을 변경합니다. 단위 테스트 메서드에 기본적으로 추가되는 코드를 선택할 수 있습니다.
 
-    ![편집기&#45;를 마우스 오른쪽 단추로 클릭 하 고 단위 테스트 만들기를 선택 합니다.](../test/media/createunittestsdialog.png "Createbits Testsdialog")
+    ![편집기에서 마우스 오른쪽 단추&#45;클릭 하 고 단위 테스트 만들기를 선택 합니다.](../test/media/createunittestsdialog.png "Createbits Testsdialog")
 
 3. 단위 테스트 스텁은 클래스의 모든 메서드에 대한 새 단위 테스트 프로젝트에서 만들어집니다.
 
-    ![단위 테스트가 생성 됩니다.](../test/media/createunittestsstubs.png "Create사업부 Tests스텁이")
+    ![단위 테스트가 생성됨](../test/media/createunittestsstubs.png "Create사업부 Tests스텁이")
 
 4. 이제 [단위 테스트 메서드에 코드를 추가](#BKMK_Writing_your_tests) 하여 단위 테스트에 의미를 부여하는 방법과 코드를 철저히 테스트하기 위해 추가할 수 있는 추가 단위 테스트에 대해 알아보겠습니다.
 
@@ -119,7 +119,7 @@ public void Withdraw(double amount)
 
 5. **파일** 메뉴에서 **새로 만들기** 를 선택한 후 **프로젝트** 를 선택합니다(키보드 Ctrl+Shift+N).
 
-6. 새 프로젝트 대화 상자에서 **설치됨** 노드를 확장하고 테스트 프로젝트에 사용하려는 언어를 선택한 후 **테스트**를 선택합니다.
+6. 새 프로젝트 대화 상자에서 **설치됨** 노드를 확장하고 테스트 프로젝트에 사용하려는 언어를 선택한 다음, **테스트**를 선택합니다.
 
 7. Microsoft 단위 테스트 프레임워크 중 하나를 사용하려면 프로젝트 템플릿 목록에서 **단위 테스트 프로젝트** 를 선택합니다. 그렇지 않으면 사용하려는 단위 테스트 프레임워크의 프로젝트 템플릿을 선택합니다. 예제에 사용된 `Accounts` 프로젝트를 테스트하려면 프로젝트 이름을 `AccountsTests`로 지정해야 합니다.
 
@@ -132,7 +132,7 @@ public void Withdraw(double amount)
 
    1. 솔루션 탐색기에서 프로젝트를 선택합니다.
 
-   2. **프로젝트** 메뉴에서 **참조 추가**를 선택합니다.
+   2. **프로젝트** 메뉴에서 **참조 추가**를 선택 합니다.
 
    3. 참조 관리자 대화 상자에서 **솔루션** 노드를 열고 **프로젝트**를 선택합니다. 코드 프로젝트 이름을 선택하고 대화 상자를 닫습니다.
 
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - `CheckingAccountTests` 클래스는 `CheckingAccount` 클래스에 대한 단위 테스트 메서드가 포함됩니다.
 
-## <a name="BKMK_Writing_your_tests"></a> 테스트 작성
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>테스트 작성
  사용 중인 단위 테스트 프레임워크 및 Visual Studio IntelliSense에서는 코드 프로젝트에 대해 단위 테스트에 대한 코드를 작성하는 방법이 안내됩니다. 테스트 탐색기에서 실행할 수 있으려면, 대부분의 프레임워크의 경우, 단위 테스트 메서드를 식별할 수 있는 특정 특성을 추가해야 합니다. 프레임워크는 또한 일반적으로 어설션 문 또는 메서드 특성을 통해 테스트 메서드가 통과 또는 실패했는지 여부를 나타내는 방법을 제공합니다. 다른 특성들은 클래스 초기화 시에 그리고 각 테스트 메서드 이전에 사용되는 선택적인 설정 메서드와 각 테스트 메서드 다음에 그리고 클래스가 삭제되기 전에 실행되는 해체 메서드를 식별합니다.
 
  AAA(정렬, 동작, 어설션) 패턴은 테스트 중인 메서드에 대한 단위 테스트를 작성하는 일반적인 방법입니다.
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="BKMK_Running_tests_in_Test_Explorer"></a> 테스트 탐색기에서 테스트 실행
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>테스트 탐색기에서 테스트 실행
  테스트 프로젝트를 빌드하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows**를 선택한 다음 **테스트 탐색기**를 선택합니다.
 
  ![단위 테스트 탐색기](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,30 +226,30 @@ public void My_Test ()
 
  또한 어떤 보기에서든 전역 수준에서 검색 상자에 텍스트를 입력하거나 미리 정의된 필터 중 하나를 선택하여 테스트를 필터링할 수 있습니다. 언제든지 원하는 테스트를 선택해서 실행할 수 있습니다. 테스트 실행 결과는 탐색기 창 맨 위에 있는 통과/실패 표시줄에 즉시 표시됩니다. 테스트를 선택하면 테스트 메서드 결과에 대한 세부 정보가 표시됩니다.
 
-### <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> 테스트 실행 및 보기
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>테스트 실행 및 보기
  테스트 탐색기 도구 모음을 사용하면 원하는 테스트를 검색, 구성 및 실행할 수 있습니다.
 
  ![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- 사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다. 일련의 테스트들을 실행한 다음에는 테스트 탐색기 창의 맨 아래에 테스트 실행의 요약이 나타납니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다. 컨텍스트 메뉴에서 **테스트 열기** 선택하여(키보드: F12) 선택된 테스트에 대한 소스 코드를 표시합니다.
+ **모두 실행** 을 선택 하 여 모든 테스트를 실행 **하거나 실행을 선택 하** 여 실행할 테스트 하위 집합을 선택할 수 있습니다. 일련의 테스트들을 실행한 다음에는 테스트 탐색기 창의 맨 아래에 테스트 실행의 요약이 나타납니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다. 상황에 맞는 메뉴에서 **테스트 열기** (키보드: F12)를 선택 하 여 선택한 테스트에 대 한 소스 코드를 표시 합니다.
 
  개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-작음") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
-### <a name="BKMK_Running_tests_after_every_build"></a> 각 빌드 후 테스트 실행
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a>각 빌드 후 테스트 실행
 
 > [!WARNING]
 > 각 빌드 후 단위 테스트 실행은 Visual Studio Enterprise에서만 지원됩니다.
 
-|||
+|이미지|설명|
 |-|-|
-|![빌드 후 실행](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|각 로컬 빌드 후 단위 테스트를 실행하려면 표준 메뉴에서 **테스트** 를 선택한 후 테스트 탐색기 도구 모음에서 **빌드 후 테스트 실행** 을 선택합니다.|
+|![빌드 후 실행](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|각 로컬 빌드 후 단위 테스트를 실행하려면 표준 메뉴에서 **테스트**를 선택하고 테스트 탐색기 도구 모음에서 **빌드 후 테스트 실행** 을 선택합니다.|
 
-### <a name="BKMK_Filtering_and_grouping_the_test_list"></a> 테스트 목록 필터링 및 그룹화
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>테스트 목록 필터링 및 그룹화
  많은 수의 테스트가 있으면 테스트 탐색기 검색 상자에 입력하여 지정된 문자열로 목록을 필터링할 수 있습니다. 필터 목록에서 선택하여 필터 이벤트를 더 제한할 수 있습니다.
 
  ![검색 필터 범주](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-|||
+|이미지|설명|
 |-|-|
 |![테스트 탐색기 그룹 단추](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|범주에 따라 테스트를 그룹화하려면 **그룹화 방법** 단추를 선택합니다.|
 
@@ -265,7 +265,7 @@ public void My_Test ()
    > [!NOTE]
    > 테스트 메서드는 순서에 관계 없이 실행할 수 있기 때문에 디버그하려는 모든 테스트 메서드에 중단점을 설정합니다.
 
-2. 테스트 탐색기에서 테스트 메서드를 선택한 다음 바로 가기 메뉴에서 **선택한 테스트 디버그** 를 선택합니다.
+2. 테스트 탐색기에서 테스트 메서드를 선택한 다음 바로 가기 메뉴에서 **선택한 테스트 디버그** 를 선택 합니다.
 
    자세한 내용은 [단위 테스트 디버그](../debugger/debugging-in-visual-studio.md)를 참조하세요.
 
@@ -277,12 +277,12 @@ public void My_Test ()
 
    **Q: 테스트를 실행하기 위한 입력으로 여러 데이터 집합을 사용하는 단위 테스트를 만들 수 있나요?**
 
-   **A:** 예. *데이터 기반 테스트 메서드* 를 사용하면 단일 단위 테스트 메서드에서 값 범위를 확인할 수 있습니다. 테스트하려는 변수 값이 포함된 데이터 소스 및 테이블을 지정하는 테스트 메서드에 대한 `DataSource` 특성을 사용합니다.  메서드 본문에서 `TestContext.DataRow[`*ColumnName*`]` 인덱서를 사용하여 변수에 행 값을 할당합니다.
+   **A:** 예. *데이터 기반 테스트 메서드* 를 사용하면 단일 단위 테스트 메서드에서 값 범위를 확인할 수 있습니다. 테스트하려는 변수 값이 포함된 데이터 소스 및 테이블을 지정하는 테스트 메서드에 대한 `DataSource` 특성을 사용합니다.  메서드 본문에서 ColumnName 인덱서를 사용 하 여 변수에 행 값을 할당 합니다 `TestContext.DataRow[` *ColumnName* `]` .
 
 > [!NOTE]
 > 이러한 절차는 관리 코드에 대한 Microsoft 단위 테스트 프레임워크를 사용하여 작성하는 테스트 메서드에만 적용됩니다. 다른 프레임워크를 사용하는 경우에는 동일한 기능에 대한 해당 프레임워크 설명서를 참조하세요.
 
- 예를 들어 `CheckingAccount` 라는 `AddIntegerHelper`클래스에 불필요한 메서드를 추가한다고 가정해보세요. `AddIntegerHelper` 는 두 개의 정수를 추가합니다.
+ 예를 들어 `CheckingAccount`라는 `AddIntegerHelper` 클래스에 불필요한 메서드를 추가한다고 가정해보세요. `AddIntegerHelper` 는 두 개의 정수를 추가합니다.
 
  `AddIntegerHelper` 메서드에 대해 데이터 기반 테스트를 만들려면 먼저 `AccountsTest.accdb` 라는 Access 데이터베이스와 `AddIntegerHelperData`라는 테이블을 만듭니다. `AddIntegerHelperData` 표는 추가에 대한 첫 번째 및 두 번째 피연산자를 지정하는 열과 예상 결과를 지정하기 위한 열을 정의합니다. 여러 행에 적절한 값을 채웁니다.
 
@@ -341,6 +341,6 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
    **A:** 예, 다음 단계에 따라 [다른 프레임워크를 찾아서 설치](../test/install-third-party-unit-test-frameworks.md)합니다. Visual Studio를 다시 시작한 후 솔루션을 다시 열어 단위 테스트를 만들고 여기서 설치된 프레임워크를 선택합니다.
 
-   ![기타 설치 된 단위 테스트 프레임 워크 선택](../test/media/createunittestsdialogextensions.png "Createbits Testsdialog확장")
+   ![다른 설치된 단위 테스트 프레임워크 선택](../test/media/createunittestsdialogextensions.png "Createbits Testsdialog확장")
 
    선택한 프레임워크를 사용하여 단위 테스트 스텁이 생성됩니다.

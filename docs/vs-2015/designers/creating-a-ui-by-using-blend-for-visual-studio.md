@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657999"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544289"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 > [!NOTE]
 > 아트보드, 문서 개요 창 및 디바이스 창과 같은 공유 디자인 기능을 둘러보려면 [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
 
- **항목 내용**:
+ **항목**내용
 
 - [도구 패널 둘러보기](#Tools)
 
@@ -40,45 +40,45 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 
 - [속성 패널 둘러보기](#Properties)
 
-## <a name="Tools"></a> 도구 패널 둘러보기
+## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a> 도구 패널 둘러보기
  Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이션의 개체를 만들고 수정할 수 있습니다. 도구를 선택한 다음 마우스로 아트보드에 그려 개체를 만들 수 있습니다.
 
  ![도구 패널](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
-|||||
+|이미지|도구 형식|이미지|도구 형식|
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|**선택 도구** 개체 및 패스를 선택합니다.<br /><br /> **직접 선택** 도구는 중첩된 개체 및 패스 세그먼트를 선택하는 데 사용합니다.|![설명선 A](../designers/media/b5-label-a.png "b5_label_A")|**그라데이션 및 브러시 도구**|
 |![](../designers/media/b1-2.png "B1_2")|**뷰 도구** 이동, 확대/축소 등 아트보드의 뷰를 조정합니다.|![설명선 B](../designers/media/b5-label-b.png "b5_label_B")|**패스 도구**|
 |![](../designers/media/b1-3.png "B1_3")|**브러시 도구** 브러시를 변형하거나, 개체를 칠하거나, 한 개체의 특성을 선택하여 다른 개체에 적용하는 등 개체의 시각적 특성에 대한 작업에 사용됩니다.|![설명선 C](../designers/media/b5-label-c.png "b5_label_C")|**도형 도구**|
 |![](../designers/media/b1-4.png "B1_4")|**개체 도구** 아트보드에서 패스, 도형, 레이아웃 패널, 텍스트, 컨트롤 등 가장 일반적으로 사용되는 개체를 그리는 데 사용합니다.|![설명선 D](../designers/media/b5-label-d.png "b5_label_D")|**레이아웃 패널**|
-|![](../designers/media/b1-5.png "B1_5")|**자산 도구** **자산** 패널에 액세스하고 라이브러리에서 가장 최근에 사용된 자산을 표시하는 데 사용합니다.|![설명선 E](../designers/media/b5-label-e.png "b5_label_E")|**텍스트 컨트롤**|
+|![](../designers/media/b1-5.png "B1_5")|**자산 도구****자산** 패널에 액세스하고 라이브러리에서 가장 최근에 사용된 자산을 표시하는 데 사용합니다.|![설명선 E](../designers/media/b5-label-e.png "b5_label_E")|**텍스트 컨트롤**|
 |||![설명선 F](../designers/media/b5-label-f.png "b5_label_F")|**공용 컨트롤**|
 
- **짧은 비디오 시청:** ![설치 된 기능](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [을 도구 모음에](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)구성 합니다.
+ **짧은 동영상 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-## <a name="Assets"></a> 자산 패널 둘러보기
- Visual Studio의 **도구 상자**와 비슷한 **자산** 패널에서 모든 컨트롤을 찾을 수 있습니다. 컨트롤 외에도, 스타일, 미디어, 동작, 효과 등 무엇이든 **자산** 패널의 아트보드에 추가할 수 있습니다.
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a> 자산 패널 둘러보기
+ Visual Studio의 **도구 상자**와 비슷한 **자산** 패널에서 모든 컨트롤을 찾을 수 있습니다. 컨트롤 외에도, 스타일, 미디어, 동작 및 효과를 포함 하 여 **자산** 패널에서 아트 보드에 추가할 수 있는 모든 항목을 찾을 수 있습니다.
 
  ![자산 패널](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
-|||
+|이미지|설명|
 |-|-|
-|![](../designers/media/b1-1.png "B1_1")|**검색 상자** **검색** 상자에 입력하여 자산 목록을 필터링합니다.|
+|![](../designers/media/b1-1.png "B1_1")|**검색 상자****검색** 상자에 입력하여 자산 목록을 필터링합니다.|
 |![](../designers/media/b1-2.png "B1_2")|**표 모드 및 목록 모드** 자산의 **표 모드** 보기와 **목록 모드** 보기 간에 전환합니다.|
 |![](../designers/media/b1-3.png "B1_3")|**자산 범주** 해당 범주의 자산 목록을 보려면 범주 또는 하위 범주를 클릭합니다.|
 |![](../designers/media/b1-4.png "B1_4")|**스타일** 리소스 사전에 포함된 모든 스타일을 표시합니다.|
 |![](../designers/media/b1-5.png "B1_5")|**설명** 선택한 자산 범주 또는 하위 범주에 대한 설명을 표시합니다.|
 
-## <a name="Objects"></a> 개체 및 타임라인 패널 둘러보기
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>개체 및 타임라인 패널 둘러보기
  이 패널에서는 아트보드에서 개체를 구성하고 원하는 경우 개체에 애니메이션 효과를 적용할 수 있습니다.
 
- ![애니메이션 모드의 개체 및 타임 라인 패널](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![애니메이션 모드의 개체 및 타임라인 패널](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
-|||
+|이미지|설명|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**개체 뷰** 문서의 시각적 트리를 표시합니다. 다양한 세부 수준으로 드릴다운할 수 있습니다. 레이어를 추가하여 아트보드의 개체를 자세히 구성하고 하나의 그룹으로 잠그거나 숨길 수 있습니다.|
-|![](../designers/media/b1-2.png "B1_2")|**기록 모드 표시기** 타임라인에 속성 변경을 기록하고 있는지 여부를 나타냅니다.|
-|![](../designers/media/b1-3.png "B1_3")|**스토리보드 선택** 사용자가 만든 스토리보드의 목록이 표시됩니다.|
+|![](../designers/media/b1-2.png "B1_2")|**레코드 모드 표시기** 타임 라인에 속성 변경을 기록 하 고 있는지 여부를 확인 합니다.|
+|![](../designers/media/b1-3.png "B1_3")|**스토리 보드 선택기** 만든 스토리 보드 목록을 표시 합니다.|
 |![](../designers/media/b1-4.png "B1_4")|**스토리보드 닫기** 현재 스토리보드를 닫습니다.|
 |![](../designers/media/b1-5.png "B1_5")|**스토리보드 옵션** 스토리보드의 만들기, 복제, 반전, 삭제, 이름 바꾸기 또는 닫기 작업을 수행합니다.|
 |![](../designers/media/b1-6.png "B1_6")|**재생 컨트롤** 타임라인을 탐색합니다. 플레이헤드를 끌어 타임라인 전체로 이동(*스크럽*)할 수도 있습니다.|
@@ -93,12 +93,12 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-15.png "B1_15")|**타임라인 확대/축소** 타임라인의 확대/축소 해상도를 설정합니다. 확대하면 애니메이션을 좀 더 자세하게 편집할 수 있고 축소하면 더 긴 시간 동안 발생하는 동작이 좀 더 간략하게 표시됩니다. 확대했지만 원하는 시점에 키 프레임을 설정할 수 없다면 맞춤 해상도가 충분히 높게 설정되어 있는지 확인하십시오.|
 |![설명선 16](../designers/media/b5-label-16.png "b5_label_16")|**타임라인 합성 영역** 타임라인이 표시됩니다. 키 프레임을 직접 끌거나 바로 가기 메뉴를 사용하여 이동할 수 있습니다.|
 
-## <a name="Properties"></a> 속성 패널 둘러보기
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>속성 패널 둘러보기
  이 패널에서는 개체의 속성을 보고 수정할 수 있으며, 아트보드에서 직접 수정하도록 설정할 수도 있습니다. 이렇게 하면 속성 변경 내용이 **속성** 패널에 반영됩니다.
 
  ![속성 패널](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **범주** 속성의 범주를 확장하고 축소합니다. 범주 세부 정보를 표시 하거나 숨기려면 **확장** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 및 **축소** ![축소](../designers/media/b5-collapse-button.png "b5_collapse_button") 를 클릭 합니다.
+ **범주** 속성의 범주를 확장하고 축소합니다. 범주 세부 정보를 표시하거나 숨기려면 **확장** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 및 **축소** ![축소](../designers/media/b5-collapse-button.png "b5_collapse_button")를 클릭합니다.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -113,14 +113,14 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |                                 ![](../designers/media/b1-9.png "B1_9")                                 |                                                         **검색 상자** 속성을 검색합니다. **검색** 상자에 텍스트를 입력하여 표시되는 속성을 필터링합니다.                                                          |
 | ![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png "97fa60b9-0caf-4387-9225-b57510d32209") |                                **브러시 편집기 탭** 브러시 편집기를 선택하는 데 사용합니다. **브러시 없음**, **단색 브러시**, **그라데이션 브러시**, **타일 브러시** 또는 **브러시 리소스** 중에서 선택할 수 있습니다.                                |
 |                                ![](../designers/media/b1-11.png "B1_11")                                |                                    **색 리소스** 서로 다른 속성에 동일한 색을 적용합니다. **색 리소스** 탭에는 **로컬 리소스** 및 **시스템 리소스**가 포함됩니다.                                    |
-|                                ![](../designers/media/b1-12.png "B1_12")                                |                                                 **RGB 색 공간** **R**, **G** 또는 **B**(빨강, 초록, 파랑) 숫자 편집기에 대한 값을 조정하여 색을 수정합니다.                                                  |
-|                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **알파 채널** **A** 옆의 숫자 편집기를 사용하여 알파 값을 수정합니다.                                                                        |
+|                                ![](../designers/media/b1-12.png "B1_12")                                |                                                 **RGB 색 공간****R**, **G** 또는 **B**(빨강, 초록, 파랑) 숫자 편집기에 대한 값을 조정하여 색을 수정합니다.                                                  |
+|                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **알파 채널****A** 옆의 숫자 편집기를 사용하여 알파 값을 수정합니다.                                                                        |
 | ![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe") |                                       **색을 리소스로 변환** 선택한 색을 색 리소스로 변환합니다. 색 리소스는 색 리소스 탭을 클릭하면 사용할 수 있습니다.                                        |
 |                                ![](../designers/media/b1-15.png "B1_15")                                |                                                                                 **16진수 값** 표시된 색의 16진수 값을 표시합니다.                                                                                 |
 |                     ![설명선 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **그라데이션 슬라이더** 그라데이션 브러시를 선택한 경우에만 나타납니다.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **고급 속성 표시** 자주 사용되지 않는 속성의 범주를 표시합니다.                                                                      |
 
- **짧은 비디오 시청:** ![설치 된 기능](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)을 구성 합니다.
+ **짧은 동영상 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [컨트롤을 삽입 하 고 해당 동작을 수정](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) 합니다. [개체](../designers/animate-objects-in-xaml-designer.md) [그리기 도형 및 패스 그리기](../designers/draw-shapes-and-paths.md) [Visual Studio에서 XAML 디자인 및 Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

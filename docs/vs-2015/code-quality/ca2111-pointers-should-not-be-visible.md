@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a0d5546c6f6a2f5dbd0c6063f4a1dfd40ce1d7bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658730"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544367"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: 포인터는 노출되면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
@@ -36,7 +36,7 @@ ms.locfileid: "72658730"
  공용 또는 보호 된 <xref:System.IntPtr?displayProperty=fullName> 또는 <xref:System.UIntPtr?displayProperty=fullName> 필드가 읽기 전용이 아닙니다.
 
 ## <a name="rule-description"></a>규칙 설명
- <xref:System.IntPtr> 및 <xref:System.UIntPtr>는 관리 되지 않는 메모리에 액세스 하는 데 사용 되는 포인터 형식입니다. 포인터가 전용, 내부 또는 읽기 전용이 아닌 경우 악성 코드는 포인터의 값을 변경 하 여 메모리의 임의 위치에 대 한 액세스를 허용 하거나 응용 프로그램 또는 시스템 오류를 발생 시킬 수 있습니다.
+ <xref:System.IntPtr>및 <xref:System.UIntPtr> 는 관리 되지 않는 메모리에 액세스 하는 데 사용 되는 포인터 형식입니다. 포인터가 전용, 내부 또는 읽기 전용이 아닌 경우 악성 코드는 포인터의 값을 변경 하 여 메모리의 임의 위치에 대 한 액세스를 허용 하거나 응용 프로그램 또는 시스템 오류를 발생 시킬 수 있습니다.
 
  포인터 필드를 포함 하는 형식에 대 한 액세스를 보호 하려는 경우 [CA2112: 보안 형식에서 필드를 노출 하면 안](../code-quality/ca2112-secured-types-should-not-expose-fields.md)됩니다 .를 참조 하세요.
 
@@ -54,7 +54,7 @@ ms.locfileid: "72658730"
 ## <a name="related-rules"></a>관련 규칙
  [CA2112: 보안 형식은 필드를 노출하면 안 됩니다.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051: 표시되는 인스턴스 필드를 선언하지 마십시오.](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

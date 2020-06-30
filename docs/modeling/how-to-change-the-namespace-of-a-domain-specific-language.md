@@ -1,20 +1,20 @@
 ---
 title: '방법: 도메인별 언어의 네임 스페이스 변경'
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653761"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542677"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>방법: 도메인별 언어의 네임 스페이스 변경
 
@@ -46,9 +46,9 @@ ms.locfileid: "72653761"
 
 10. Visual Studio 실험적 인스턴스를 다시 설정 합니다.
 
-    1. **\Users \\** _{your name}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**를 삭제 합니다.
+    1. ** \\ \Users**_{your name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**를 삭제 합니다.
 
-    2. Windows **시작** 메뉴에서 **모든 프로그램**  > **Microsoft Visual Studio 2010 SDK**  > **도구** 를 선택 하  > **실험적 인스턴스를 다시 설정**합니다.
+    2. Windows **시작** 메뉴에서 **모든 프로그램**  >  **Microsoft Visual Studio 2010 SDK**Tools를 선택 하  >  **Tools**  >  **여 실험적 인스턴스를 다시 설정**합니다.
 
 11. **빌드** 메뉴에서 **솔루션 다시 빌드**를 선택 합니다.
 

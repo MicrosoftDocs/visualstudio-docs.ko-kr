@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a05b7098d75d368f893b2504f7663675611bc0ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03918353b66c36698b5d17b332da052b6d95c87a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658718"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544393"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: 값 형식에서 선언적 보안을 검토하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
@@ -45,7 +45,7 @@ ms.locfileid: "72658718"
  호출자가 보안 위협에 노출 하지 않고 해당 기본 상태에서 값 형식의 인스턴스를 가져올 수 있는 경우이 규칙에서 경고를 표시 하지 않을 수 있습니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 값 형식이 포함 된 라이브러리를 보여 줍니다. @No__t_0 형식은 값 형식의 인스턴스를 전달 하는 호출자에 게 인스턴스를 만들거나 액세스할 수 있는 권한이 있다고 가정 합니다.
+ 다음 예제에서는이 규칙을 위반 하는 값 형식이 포함 된 라이브러리를 보여 줍니다. `StructureManager`형식은 값 형식의 인스턴스를 전달 하는 호출자에 게 인스턴스를 만들거나 액세스할 수 있는 권한이 있다고 가정 합니다.
 
  [!code-csharp[FxCop.Security.DemandOnValueType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.DemandOnValueType/cs/FxCop.Security.DemandOnValueType.cs#1)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "72658718"
  이 예제의 결과는 다음과 같습니다.
 
  **구조 사용자 지정 생성자: 요청이 실패 했습니다.** 
-**새 값 securedtypestructure 100 100** 
-**새 값 securedtypestructure 200 200**
-## <a name="see-also"></a>관련 항목:
+ **새 값 SecuredTypeStructure 100 100** 
+ **새 값 SecuredTypeStructure 200 200**
+## <a name="see-also"></a>참고 항목
  [링크 요청](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [데이터 및 모델링](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

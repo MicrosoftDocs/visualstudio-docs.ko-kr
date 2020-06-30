@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f95b33e1391ca755a6c0df261fa2bd05bd3c7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663072"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544315"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: 정적 생성자는 private이어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
@@ -38,7 +38,7 @@ ms.locfileid: "72663072"
 ## <a name="rule-description"></a>규칙 설명
  클래스 생성자 라고도 하는 정적 생성자는 형식을 초기화 하는 데 사용 됩니다. 시스템에서는 형식의 첫 번째 인스턴스가 만들어지거나 static 멤버가 참조되기 전에 static 생성자를 호출합니다. 사용자는 정적 생성자가 호출 되는 시기를 제어할 수 없습니다. static 생성자가 private이 아니면 시스템 이외의 코드에서 이를 호출할 수 있습니다. 이렇게 되면 생성자에서 수행하는 작업에 따라 예기치 않은 동작이 발생할 수 있습니다.
 
- 이 규칙은 C# 및 Visual Basic .net 컴파일러에 의해 적용 됩니다.
+ 이 규칙은 c # 및 Visual Basic .NET 컴파일러에 의해 적용 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  위반은 일반적으로 다음 작업 중 하나로 인해 발생 합니다.

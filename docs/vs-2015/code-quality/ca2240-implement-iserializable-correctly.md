@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0abc95811dc870abbfaa583fbaa7705302a70781
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 217f95b7d3658db107fc482040686eea9ee47604
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670162"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543665"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: ISerializable을 올바르게 구현하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ImplementISerializableCorrectly|
 |CheckId|CA2240|
@@ -33,19 +33,19 @@ ms.locfileid: "72670162"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 외부에서 볼 수 있는 형식은 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스에 할당할 수 있고 다음 조건 중 하나에 해당할 수 있습니다.
+ 외부에서 볼 수 있는 형식은 인터페이스에 할당할 수 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 있으며 다음 조건 중 하나에 해당 합니다.
 
-- 형식은를 상속 하지만 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 메서드를 재정의 하지 않으며 형식에서 <xref:System.NonSerializedAttribute?displayProperty=fullName> 특성으로 표시 되지 않은 인스턴스 필드를 선언 합니다.
+- 형식은를 상속 하지만 메서드를 재정의 하지 않으며 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 형식에서 특성으로 표시 되지 않은 인스턴스 필드를 선언 합니다 <xref:System.NonSerializedAttribute?displayProperty=fullName> .
 
-- 형식이 sealed가 아니고 형식이 외부적으로 표시 되지 않고 재정의 가능 하지 않은 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드를 구현 합니다.
+- 형식이 sealed가 아니고 형식이 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 외부적으로 표시 되지 않고 재정의할 수 있는 메서드를 구현 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- @No__t_0 인터페이스를 상속 하는 형식에서 선언 된 인스턴스 필드는 serialization 프로세스에 자동으로 포함 되지 않습니다. 필드를 포함 하려면 형식이 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드와 serialization 생성자를 구현 해야 합니다. 필드를 serialize 하지 않아야 하는 경우에는 필드에 <xref:System.NonSerializedAttribute> 특성을 적용 하 여 결정을 명시적으로 지정 합니다.
+ 인터페이스를 상속 하는 형식에서 선언 된 인스턴스 필드 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 는 serialization 프로세스에 자동으로 포함 되지 않습니다. 필드를 포함 하려면 형식이 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드 및 serialization 생성자를 구현 해야 합니다. 필드를 serialize 하지 않아야 하는 경우 <xref:System.NonSerializedAttribute> 필드에 특성을 적용 하 여 결정을 명시적으로 지정 합니다.
 
- Sealed 형식이 아닌 형식에서 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드의 구현은 외부에서 볼 수 있어야 합니다. 따라서 메서드는 파생 형식에 의해 호출 될 수 있으며 재정의할 수 있습니다.
+ 봉인 되지 않은 형식에서 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드의 구현은 외부에서 볼 수 있어야 합니다. 따라서 메서드는 파생 형식에 의해 호출 될 수 있으며 재정의할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드를 표시 하 고 재정의 가능 하 게 설정 하 고 모든 인스턴스 필드가 serialization 프로세스에 포함 되거나 <xref:System.NonSerializedAttribute> 특성으로 명시적으로 표시 되도록 합니다.
+ 이 규칙 위반 문제를 해결 하려면 메서드를 표시 하 고 재정의 가능 하 게 설정 하 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 고 모든 인스턴스 필드가 serialization 프로세스에 포함 되거나 명시적으로 특성으로 표시 되도록 합니다 <xref:System.NonSerializedAttribute> .
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
@@ -73,8 +73,8 @@ ms.locfileid: "72670162"
 
  [CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: 선택적 필드에 deserialization 메서드를 제공하십시오.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: serialization 생성자를 안전하게 하십시오.](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: serialization 생성자를 안전하게 하세요.](../code-quality/ca2120-secure-serialization-constructors.md)

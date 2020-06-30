@@ -1,24 +1,24 @@
 ---
 title: 하나의 솔루션에 여러 DSL 포함
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5d21d3954a402e7ce8eb26c34d6a6a5c237309a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658340"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542599"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>하나의 솔루션에 여러 DSL 포함
 
 여러 DSL이 함께 설치되도록 단일 솔루션의 일부분으로 패키지할 수 있습니다.
 
-다양한 기술을 통해 여러 DSL을 통합할 수 있습니다. 자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) 및 [How를 참조 하세요. @No__t_0 끌어서 놓기 처리기를 추가 하 고 [복사 동작을 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.
+다양한 기술을 통해 여러 DSL을 통합할 수 있습니다. 자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) 및 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) 및 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)을 참조 하세요.
 
 ## <a name="build-more-than-one-dsl-in-the-same-solution"></a>동일한 솔루션에 두 개 이상의 DSL 빌드
 
@@ -36,23 +36,23 @@ ms.locfileid: "72658340"
 
       `string dslProjectName = "Dsl2";`
 
-   - VSIX 솔루션에서 Dsl * 및 DslPackage \* 프로젝트를 추가 합니다. 각 쌍을 자체 솔루션 폴더에 배치할 수 있습니다.
+   - VSIX 솔루션에서 Dsl * 및 DslPackage 프로젝트를 추가 \* 합니다. 각 쌍을 자체 솔루션 폴더에 배치할 수 있습니다.
 
 2. DSL의 VSIX 매니페스트를 결합합니다.
 
-   1. _YourVsixProject_ **\source.extension.manifest**를 엽니다.
+   1. _YourVsixProject_**\source.extension.manifest**를 엽니다.
 
    2. 각 DSL에 대해 **콘텐츠 추가** 를 선택 하 고 추가 합니다.
 
-       - 프로젝트를 **MEF 구성 요소로** `Dsl*`
+       - `Dsl*`**MEF 구성 요소인** project
 
-       - 프로젝트를 **MEF 구성 요소로** `DslPackage*`
+       - `DslPackage*`**MEF 구성 요소인** project
 
-       - 프로젝트를 **VS 패키지로** `DslPackage*`
+       - `DslPackage*`**VS 패키지인** 프로젝트
 
 3. 솔루션을 빌드합니다.
 
-   그러면 생성되는 VSIX가 두 DSL을 모두 설치합니다. F5 키를 사용 하 여 테스트 하거나 _YourVsixProject_ **\bin\debug \\ \*** 을 배포할 수 있습니다.
+   그러면 생성되는 VSIX가 두 DSL을 모두 설치합니다. F5 키를 사용 하 여 테스트 하거나 _YourVsixProject_**를 배포할 수 \\ \* 있습니다.**
 
 ## <a name="see-also"></a>참고 항목
 

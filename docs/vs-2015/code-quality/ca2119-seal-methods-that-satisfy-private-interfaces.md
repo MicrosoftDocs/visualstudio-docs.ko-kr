@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: af41fc5576cbcd56589680d99c0cd5c0dfd6e6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0afa6950a6ad876cdcfdcc1a56dd143422b9d44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664763"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544354"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: private 인터페이스를 만족하는 메서드를 봉인하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|
 |CheckId|CA2119|
@@ -33,21 +33,21 @@ ms.locfileid: "72664763"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 상속 가능한 public 형식은 `internal` (`Friend` Visual Basic) 인터페이스의 재정의 가능한 메서드 구현을 제공 합니다.
+ 상속 가능한 public 형식은 `internal` (Visual Basic) 인터페이스의 재정의 가능한 메서드 구현을 제공 `Friend` 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 인터페이스 메서드에는 구현 형식으로 변경할 수 없는 public 액세스 가능성이 있습니다. 내부 인터페이스는 인터페이스를 정의 하는 어셈블리 외부에서 구현 하기에 적합 하지 않은 계약을 만듭니다. @No__t_0 (Visual Basic의 `Overridable`) 한정자를 사용 하 여 내부 인터페이스의 메서드를 구현 하는 공용 형식에서는 메서드를 어셈블리 외부의 파생 형식으로 재정의할 수 있습니다. 정의 하는 어셈블리의 두 번째 형식에서 메서드를 호출 하 고 내부 전용 계약이 필요한 경우에는 외부 어셈블리의 재정의 된 메서드가 대신 실행 될 때 동작이 손상 될 수 있습니다. 이렇게 하면 보안 취약성이 발생 합니다.
+ 인터페이스 메서드에는 구현 형식으로 변경할 수 없는 public 액세스 가능성이 있습니다. 내부 인터페이스는 인터페이스를 정의 하는 어셈블리 외부에서 구현 하기에 적합 하지 않은 계약을 만듭니다. (Visual Basic) 한정자를 사용 하 여 내부 인터페이스의 메서드를 구현 하는 공용 형식에서 `virtual` `Overridable` 메서드를 어셈블리 외부의 파생 형식으로 재정의할 수 있습니다. 정의 하는 어셈블리의 두 번째 형식에서 메서드를 호출 하 고 내부 전용 계약이 필요한 경우에는 외부 어셈블리의 재정의 된 메서드가 대신 실행 될 때 동작이 손상 될 수 있습니다. 이렇게 하면 보안 취약성이 발생 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 다음 중 하나를 사용 하 여 메서드가 어셈블리 외부에서 재정의 되지 않도록 합니다.
 
-- 선언 형식을 `sealed` (`NotInheritable` Visual Basic)으로 설정 합니다.
+- 선언 형식 `sealed` ( `NotInheritable` Visual Basic)을 만듭니다.
 
-- 선언 형식의 액세스 가능성을 `internal` (`Friend` Visual Basic)로 변경 합니다.
+- 선언 형식의 액세스 가능성을 `internal` (Visual Basic)로 변경 합니다 `Friend` .
 
 - 선언 형식에서 모든 public 생성자를 제거 합니다.
 
-- @No__t_0 한정자를 사용 하지 않고 메서드를 구현 합니다.
+- 한정자를 사용 하지 않고 메서드를 구현 `virtual` 합니다.
 
 - 메서드를 명시적으로 구현 합니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "72664763"
  신중 하 게 검토 한 후 메서드가 어셈블리 외부에서 재정의 되는 경우 악용 될 수 있는 보안 문제가 없는 경우에는이 규칙에서 경고를 표시 하지 않아도 됩니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 형식 `BaseImplementation`을 보여 줍니다.
+ 다음 예제에서는이 규칙을 위반 하는 형식을 보여 줍니다 `BaseImplementation` .
 
  [!code-cpp[FxCop.Security.SealMethods1#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cpp/FxCop.Security.SealMethods1.cpp#1)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cs/FxCop.Security.SealMethods1.cs#1)]
@@ -68,5 +68,5 @@ ms.locfileid: "72664763"
  [!code-csharp[FxCop.Security.SealMethods2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/cs/FxCop.Security.SealMethods2.cs#1)]
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [인터페이스](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [인터페이스](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

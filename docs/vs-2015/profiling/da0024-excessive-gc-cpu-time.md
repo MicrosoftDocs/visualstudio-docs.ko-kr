@@ -13,23 +13,23 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbe6da087d10d3373a1f5d7836d4fa5207801bc7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 945e934ce16c9e08209f89d8d2d2dcdfe166a4c6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586757"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542820"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: GC CPU 시간이 너무 깁니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|항목|값|  
 |-|-|  
 |규칙 ID|DA0024|  
-|Category|.NET Framework 사용|  
+|범주|.NET Framework 사용|  
 |프로파일링 방법|모두|  
 |메시지|% Time in GC가 매우 높습니다. 가비지 수집 오버헤드가 너무 많습니다.|  
-|규칙 유형|Warning|  
+|규칙 유형|경고|  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   

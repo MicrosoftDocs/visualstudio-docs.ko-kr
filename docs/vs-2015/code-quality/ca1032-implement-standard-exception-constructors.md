@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b471387db3ce52944ffad3841dc7e946c4d44873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 61b0157200ddff4cb8335118b30832a0c8950f65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661886"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542287"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: 표준 예외 생성자를 구현하십시오.
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: 표준 예외 생성자를 구현하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
@@ -33,7 +33,7 @@ ms.locfileid: "72661886"
 |변경 수준|최신이 아님|
 
 ## <a name="cause"></a>원인
- 형식은 <xref:System.Exception?displayProperty=fullName>를 확장 하 고 필요한 모든 생성자를 선언 하지 않습니다.
+ 형식은를 확장 <xref:System.Exception?displayProperty=fullName> 하 고 모든 필수 생성자를 선언 하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
  예외 형식은 다음 생성자를 구현 해야 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "72661886"
 
 - protected 또는 private NewException (SerializationInfo, StreamingContext)
 
-  이들 생성자 집합을 전부 제공하지 못하면 예외를 제대로 처리하기 어려울 수 있습니다. 예를 들어, 시그니처가 `NewException(string, Exception)` 인 생성자는 다른 예외에 의해 발생 한 예외를 만드는 데 사용 됩니다. 이 생성자를 사용 하지 않으면 이러한 상황에서 관리 코드를 수행 해야 하는 내부 (중첩 된) 예외가 포함 된 사용자 지정 예외의 인스턴스를 만들고 throw 할 수 없습니다. 처음 세 개의 예외 생성자는 규칙에 따라 public입니다. 네 번째 생성자는 봉인 되지 않은 클래스에서 보호 되 고 sealed 클래스에서는 private입니다. 자세한 내용은 [CA2229: serialization 생성자 구현](../code-quality/ca2229-implement-serialization-constructors.md) 을 참조 하세요.
+  이들 생성자 집합을 전부 제공하지 못하면 예외를 제대로 처리하기 어려울 수 있습니다. 예를 들어, 시그니처가 있는 생성자를 `NewException(string, Exception)` 사용 하 여 다른 예외에 의해 발생 하는 예외를 만듭니다. 이 생성자를 사용 하지 않으면 이러한 상황에서 관리 코드를 수행 해야 하는 내부 (중첩 된) 예외가 포함 된 사용자 지정 예외의 인스턴스를 만들고 throw 할 수 없습니다. 처음 세 개의 예외 생성자는 규칙에 따라 public입니다. 네 번째 생성자는 봉인 되지 않은 클래스에서 보호 되 고 sealed 클래스에서는 private입니다. 자세한 내용은 [CA2229: serialization 생성자 구현](../code-quality/ca2229-implement-serialization-constructors.md) 을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 예외에 누락 된 생성자를 추가 하 고 올바른 액세스 가능성이 있는지 확인 합니다.

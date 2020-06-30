@@ -1,7 +1,7 @@
 ---
 title: '방법: 워크시트에 NamedRange 컨트롤 추가'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0bd5f9763150cf526acca2dfdc2762b3f202950a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255620"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543522"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>방법: 워크시트에 NamedRange 컨트롤 추가
   디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다.
@@ -36,9 +36,9 @@ ms.locfileid: "71255620"
 
 - [런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 추가](#runtimeaddin)
 
-  컨트롤에 대 한 <xref:Microsoft.Office.Tools.Excel.NamedRange> 자세한 내용은 [NamedRange 컨트롤](../vsto/namedrange-control.md)을 참조 하세요.
+  컨트롤에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.NamedRange> [NamedRange 컨트롤](../vsto/namedrange-control.md)을 참조 하세요.
 
-## <a name="designtime"></a>디자인 타임에 NamedRange 컨트롤 추가
+## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a>디자인 타임에 NamedRange 컨트롤 추가
  디자인 타임에 문서 수준 프로젝트에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가하기 위한 여러 가지 방법이 있습니다. 즉, Excel, Visual Studio **도구 상자**및 **데이터 원본** 창에서 추가할 수 있습니다.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "71255620"
 
      데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 워크시트에 추가됩니다. 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)을 참조 하세요.
 
-## <a name="runtimedoclevel"></a>런타임에 문서 수준 프로젝트에서 NamedRange 컨트롤 추가
+## <a name="add-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>런타임에 문서 수준 프로젝트에서 NamedRange 컨트롤 추가
  런타임에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 워크시트에 프로그래밍 방식으로 추가할 수 있습니다. 이를 통해 이벤트에 대한 응답으로 호스트 컨트롤을 만들 수 있습니다. 동적으로 생성된 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 NamedRange 컨트롤을 추가하려면
@@ -83,7 +83,7 @@ ms.locfileid: "71255620"
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
 
-## <a name="runtimeaddin"></a>런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 추가
+## <a name="add-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 추가
  VSTO 추가 기능 프로젝트에서 열려 있는 워크시트에 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 NamedRange 컨트롤을 추가하려면

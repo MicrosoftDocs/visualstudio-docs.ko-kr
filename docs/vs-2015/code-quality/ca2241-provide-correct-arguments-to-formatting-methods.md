@@ -16,17 +16,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 112065b2a8b9a88241ce62dda7b32a2f2c22fc75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1dfd770efd4d690930155d2486b8ff1859065272
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672023"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543652"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: 형식 메서드에 올바른 인수를 제공하십시오.
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: 서식 지정 메서드에 올바른 인수를 제공하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
@@ -34,10 +34,10 @@ ms.locfileid: "72672023"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- @No__t_1, <xref:System.Console.Write%2A> 또는 <xref:System.String.Format%2A?displayProperty=fullName>과 같은 메서드에 전달 된 `format` 문자열 인수는 각 개체 인수에 해당 하는 형식 항목을 포함 하지 않으며 그 반대의 경우도 마찬가지입니다.
+ `format`, 또는와 같은 메서드에 전달 된 문자열 인수 <xref:System.Console.WriteLine%2A> 에 <xref:System.Console.Write%2A> <xref:System.String.Format%2A?displayProperty=fullName> 각 개체 인수에 해당 하는 형식 항목이 포함 되어 있지 않거나 그 반대의 경우도 마찬가지입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- @No__t_0, <xref:System.Console.Write%2A> 및 <xref:System.String.Format%2A>와 같은 메서드에 대 한 인수는 형식 문자열과 여러 <xref:System.Object?displayProperty=fullName> 인스턴스로 구성 됩니다. 서식 문자열은 {index [, alignment] [: formatString]} 형식의 텍스트 및 포함 된 서식 항목으로 구성 됩니다. 'index'는 형식을 지정할 개체 부분을 나타내는 0부터 시작하는 정수입니다. 개체에 형식 문자열의 해당 인덱스가 없는 경우 개체는 무시 됩니다. ' T r u e '로 지정 된 개체가 없는 경우 런타임에 <xref:System.FormatException?displayProperty=fullName> throw 됩니다.
+ ,, 등의 메서드에 대 한 인수는 <xref:System.Console.WriteLine%2A> <xref:System.Console.Write%2A> <xref:System.String.Format%2A> 형식 문자열과 여러 인스턴스로 구성 됩니다 <xref:System.Object?displayProperty=fullName> . 서식 문자열은 {index [, alignment] [: formatString]} 형식의 텍스트 및 포함 된 서식 항목으로 구성 됩니다. 'index'는 형식을 지정할 개체 부분을 나타내는 0부터 시작하는 정수입니다. 개체에 형식 문자열의 해당 인덱스가 없는 경우 개체는 무시 됩니다. ' Index '로 지정 된 개체가 없으면 <xref:System.FormatException?displayProperty=fullName> 런타임에이 throw 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 각 개체 인수에 형식 항목을 제공 하 고 각 형식 항목에 대 한 개체 인수를 제공 합니다.

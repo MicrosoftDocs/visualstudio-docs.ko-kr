@@ -15,23 +15,23 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe6b90ef971bd00392381f47860d85f34e10dc26
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919172"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544029"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: 식별자에는 밑줄을 사용할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대 한 최신 설명서는 [CA1707: 식별자에 밑줄을 사용할 수 없습니다](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).를 참조 하세요.
 
-|||
+|항목|값|
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|범주|Microsoft.Naming|
+|범주|Microsoft. 이름 지정|
 |변경 수준|중단-어셈블리에서 발생 하는 경우<br /><br /> 중단-형식 매개 변수에 대해 발생 하는 경우|
 
 ## <a name="cause"></a>원인

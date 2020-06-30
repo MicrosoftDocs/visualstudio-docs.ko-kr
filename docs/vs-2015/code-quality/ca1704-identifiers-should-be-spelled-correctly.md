@@ -15,17 +15,17 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5e078fc1bb7fe247d541e7695e98c2de76c2466
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669247"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544068"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: 식별자에는 정확한 철자를 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
@@ -44,14 +44,14 @@ ms.locfileid: "72669247"
 
 - 선행 및 후행 아포스트로피는 제거 됩니다. 예를 들어 ' sender '는 "sender"로 토큰화.
 
-- 밑줄은 토큰의 끝을 나타내고 제거 됩니다. 예를 들어, Hello_world 토큰화는 "Hello", "세계"입니다.
+- 밑줄은 토큰의 끝을 나타내고 제거 됩니다. 예를 들어, "Hello", "토큰화" Hello_world.
 
-- 포함 된 앰퍼샌드는 제거 됩니다. 예를 들어 & 대/토큰화의 경우 "format"입니다.
+- 포함 된 앰퍼샌드는 제거 됩니다. 예를 들어&대/토큰화의 경우 "format"입니다.
 
   기본적으로 영어 (en) 버전의 맞춤법 검사기가 사용 됩니다. 현재 다른 언어 사전을 사용할 수 없습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 단어의 철자를 수정 하거나 CustomDictionary .xml 이라는 사용자 지정 사전에 단어를 추가 합니다. 도구, 프로젝트 디렉터리 또는 사용자의 프로필 아래에 있는 도구와 연결 된 디렉터리 (%USERPROFILE%\Application Data \\ ...)의 설치 디렉터리에 사전을 추가 합니다. @No__t_1에서 프로젝트에 사용자 지정 사전을 추가 하는 방법에 대 한 자세한 내용은 [방법: 코드 분석 사전 사용자 지정](../code-quality/how-to-customize-the-code-analysis-dictionary.md) 을 참조 하세요.
+ 이 규칙 위반 문제를 해결 하려면 단어의 철자를 수정 하거나 CustomDictionary.xml 라는 사용자 지정 사전에 단어를 추가 합니다. 도구, 프로젝트 디렉터리 또는 사용자의 프로필 아래에 있는 도구와 연결 된 디렉터리 (%USERPROFILE%\Application Data ...)의 설치 디렉터리에 사전을 추가 합니다. \\ 에서 프로젝트에 사용자 지정 사전을 추가 하는 방법에 대 한 자세한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내용은 [방법: 코드 분석 사전 사용자 지정](../code-quality/how-to-customize-the-code-analysis-dictionary.md) 을 참조 하세요.
 
 - 사전/단어/인식 된 경로에서 위반을 발생 시 키 지 않아야 하는 단어를 추가 합니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "72669247"
  단어의 철자가 잘못 입력 되 고 word가 제한 된 라이브러리 집합에 적용 되는 경우에만이 규칙에서 경고를 표시 하지 않습니다. 철자가 잘못 된 단어를 입력 하면 새 소프트웨어 라이브러리에 필요한 학습 곡선이 줄어듭니다.
 
 ## <a name="related-rules"></a>관련 규칙
- [CA2204: 리터럴의 철자가 맞아야 합니다.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204: 리터럴의 맞춤법이 정확해야 합니다.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
  [CA1703: 리소스 문자열에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
@@ -100,7 +100,7 @@ ms.locfileid: "72669247"
 
  [CA1707: 식별자에는 밑줄을 사용할 수 없습니다.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726: 기본 설정 용어를 사용하십시오.](../code-quality/ca1726-use-preferred-terms.md)
+ [CA1726: 기본 설정 용어를 사용하세요.](../code-quality/ca1726-use-preferred-terms.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [방법: 코드 분석 사전 사용자 지정](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

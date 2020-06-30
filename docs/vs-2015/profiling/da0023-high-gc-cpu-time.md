@@ -13,20 +13,20 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf5e841fdccbd6a41d0e7ee61c9f5278c6a882e3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 667dc76019259faa12d41b7e4b7bf383bcda2258
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586874"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542924"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: 높은 GC CPU 시간
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|항목|값|  
 |-|-|  
 |규칙 ID|DA0023|  
-|Category|.NET Framework 사용|  
+|범주|.NET Framework 사용|  
 |프로파일링 방법|모두|  
 |메시지|% Time in GC가 상당히 높습니다. 이는 과다한 가비지 수집 오버헤드가 애플리케이션의 반응성에 영향을 줄 수 있음을 나타냅니다. .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 보다 효과적으로 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|  
 |규칙 유형|정보 제공|  

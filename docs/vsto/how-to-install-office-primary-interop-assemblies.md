@@ -1,7 +1,7 @@
 ---
 title: '방법: Office 주 interop 어셈블리 설치'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee6755a2d795d2018136785986a5a346ddc07dc6
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551798"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544783"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>방법: Office 주 interop 어셈블리 설치
   Office를 설치할 때 Microsoft Office PIA(주 interop 어셈블리)를 설치합니다.
@@ -34,10 +34,10 @@ ms.locfileid: "69551798"
     > [!WARNING]
     > 기본적으로 솔루션을 빌드할 때 PIA가 솔루션에 포함 되므로 VSTO 추가 기능 또는 사용자 지정을 사용 하기 위한 필수 구성 요소로 사용자에 게 Pia를 배포할 필요가 없습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
 - [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [방법: Office 솔루션을 개발할 수 있도록 컴퓨터 구성](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지를 설치 합니다.](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

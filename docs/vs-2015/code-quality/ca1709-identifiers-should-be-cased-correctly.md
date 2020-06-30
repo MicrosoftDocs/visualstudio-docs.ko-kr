@@ -15,23 +15,23 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919229"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544003"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대 한 최신 설명서는 [CA1709: 식별자](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)가 대/소문자를 올바르게 지정 해야 합니다.
 
-|||
+|항목|값|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|범주|Microsoft.Naming|
+|범주|Microsoft. 이름 지정|
 |변경 수준|중단-어셈블리, 네임 스페이스, 형식, 멤버 및 매개 변수에서 발생 합니다.<br /><br /> 일반 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
 
 ## <a name="cause"></a>원인
