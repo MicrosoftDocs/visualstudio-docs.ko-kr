@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4e77f3a4eec7495e6b4abe13bec93d341f961463
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec9be9dae502ec48570a85576f483518ed0d75d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662007"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534955"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: 특성 인수의 접근자를 정의하십시오.
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: 특성 인수의 접근자를 정의하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
@@ -74,7 +74,7 @@ ms.locfileid: "72662007"
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1813: 봉인되지 않은 특성을 사용하지 마십시오.](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813: 봉인되지 않은 특성을 사용하지 마세요.](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [특성](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

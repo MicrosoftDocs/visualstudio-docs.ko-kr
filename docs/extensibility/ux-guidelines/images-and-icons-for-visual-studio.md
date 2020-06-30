@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72d0ce7435a067ef9aa16ccc5b2daa7602926bf
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184824"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537542"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio의 이미지 및 아이콘
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Visual Studio에서 이미지 사용
@@ -60,44 +60,38 @@ ms.locfileid: "84184824"
 #### <a name="concept-development"></a>개념 개발
  Visual Studio의 UI 내에는 다양 한 아이콘 형식이 있습니다. 개발 하는 동안 아이콘 형식을 신중 하 게 고려해 야 합니다. 아이콘 요소에 명확 하지 않거나 드물게 발생 하는 UI 개체를 사용 하지 마세요. 이러한 경우에는 스마트 태그 아이콘을 사용 하는 등의 기호를 선택 합니다. 왼쪽에 있는 추상 태그의 의미는 오른쪽에 있는 모호한 UI 기반 버전 보다 더 명확 합니다.
 
-|||
-|-|-|
 |**기호화 된 이미지의 올바른 사용**|**기호화 된 이미지의 잘못 된 사용**|
+|-|-|
 |![올바른 스마트 태그 아이콘](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404-01_SmartTagCorrect")|![잘못된 스마트 태그 아이콘](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404-02_SmartTagIncorrect")|
 
  표준, 쉽게 인식할 수 있는 UI 요소가 아이콘에 대해 잘 작동 하는 경우가 있습니다. Add Window는 이러한 예입니다.
 
-|||
-|-|-|
 |**아이콘의 올바른 UI 요소**|**아이콘의 잘못 된 UI 요소**|
+|-|-|
 |![올바른 창 추가 아이콘](../../extensibility/ux-guidelines/media/0404-03_addwindowcorrect.png "0404-03_AddWindowCorrect")|![잘못된 창 추가 아이콘](../../extensibility/ux-guidelines/media/0404-04_addwindowincorrect.png "0404-04_AddWindowIncorrect")|
 
  아이콘의 의미를 반드시 지정 해야 하는 경우가 아니면 문서를 기본 요소로 사용 하지 마세요. 문서 추가 (아래)의 문서 요소를 사용 하지 않으면 의미가 손실 되며, 새로 고침을 사용 하면 문서 요소가 의미를 전달 하는 데 필요 하지 않습니다.
 
-|||
-|-|-|
 |**문서 아이콘 사용을 수정 합니다.**|**문서 아이콘 사용이 잘못 되었습니다.**|
+|-|-|
 |![올바른 문서 아이콘](../../extensibility/ux-guidelines/media/0404-05_documenticoncorrect.png "0404-05_DocumentIconCorrect")|![잘못된 문서 아이콘](../../extensibility/ux-guidelines/media/0404-06_documenticonincorrect.png "0404-06_DocumentIconIncorrect")|
 
  "표시"의 개념은 모든 파일 표시 예제와 같이 표시 되는 항목을 가장 잘 보여 주는 아이콘으로 표시 되어야 합니다. 리소스 뷰 예제와 같이 필요한 경우 "보기"의 개념을 나타내기 위해 렌즈 메타포를 사용할 수 있습니다.
 
-|||
-|-|-|
 |**표시**|**봅니다**|
+|-|-|
 |![표시 아이콘](../../extensibility/ux-guidelines/media/0404-07_show.png "0404-07_Show")|![뷰 아이콘](../../extensibility/ux-guidelines/media/0404-08_view.png "0404-08_View")|
 
  오른쪽에 연결 된 돋보기 아이콘은 검색, 찾기 및 찾아보기만 표시 해야 합니다. 더하기 기호 또는 빼기 기호가 있는 왼쪽 변형은 확대/축소만 표시 해야 합니다.
 
-|||
-|-|-|
 |**조건을**|**맞게**|
+|-|-|
 |![검색 아이콘](../../extensibility/ux-guidelines/media/0404-09_search.png "0404-09_Search")|![확대/축소 아이콘](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404-10_Zoom")|
 
  트리 뷰에서는 폴더 아이콘과 한정자를 모두 사용 하지 마세요. 사용할 수 있는 경우 한정자만 사용 합니다.
 
-|||
-|-|-|
 |**올바른 트리 뷰 아이콘**|**잘못 된 트리 뷰 아이콘**|
+|-|-|
 |![올바른 트리 뷰 아이콘 &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404-11_TreeViewCorrect1") ![올바른 트리 뷰 아이콘 &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404-12_TreeViewCorrect2")|![잘못 된 트리 뷰 아이콘 &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404-13_TreeViewIncorrect1") ![잘못 된 트리 뷰 아이콘 &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404-14_TreeViewIncorrect2")|
 
 ### <a name="style-details"></a>스타일 세부 정보
@@ -127,23 +121,20 @@ ms.locfileid: "84184824"
 
  이상적인 맞춤 및 균형을 유지 하려면 아이콘의 기본 요소를 작업 문자 모양으로 방해 하지 않는지 하지 마십시오. 기본 요소의 왼쪽 위 근처에 문자 모양을 삽입 합니다. 추가 요소를 추가할 때 아이콘의 맞춤 및 균형을 고려 합니다.
 
-|||
-|-|-|
 |**올바른 맞춤 및 잔액**|**잘못 된 맞춤 및 잔액**|
+|-|-|
 |![올바른 아이콘 균형 및 맞춤](../../extensibility/ux-guidelines/media/0404-22_alignbalancecorrect.png "0404-22_AlignBalanceCorrect")|![잘못된 아이콘 균형 및 맞춤](../../extensibility/ux-guidelines/media/0404-23_alignbalanceincorrect.png "0404-23_AlignBalanceIncorrect")|
 
  요소를 공유 하 고 집합에 사용 되는 아이콘에 대해 크기 패리티를 확인 합니다. 잘못 된 페어링에서 원과 화살표는 크기가 클 수 있으며 일치 하지 않습니다.
 
-|||
-|-|-|
 |**올바른 크기 패리티**|**잘못 된 크기 패리티**|
+|-|-|
 |![올바른 아이콘 크기 및 패리티](../../extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "0404-24_SizeParityCorrect")|![잘못된 아이콘 크기 및 패리티](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "0404-25_SizeParityIncorrect")|
 
  일관 된 선 및 시각적 가중치를 사용 합니다. Side-by-side 비교를 사용 하 여 빌드하는 아이콘이 다른 아이콘과 비교 되는 방식을 평가 합니다. 전체 16x16 프레임을 사용 하지 마세요. 15x15이 하를 사용 합니다. 음수-긍정 (짙은 대비) 비율은 50/50 이어야 합니다.
 
-|||
-|-|-|
 |**음수-긍정 비율 수정**|**음수-긍정 비율이 잘못 되었습니다.**|
+|-|-|
 |![아이콘의 시각적 가중치를 수정 &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![아이콘에 대 한 올바른 시각적 가중치 &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![아이콘에 대 한 올바른 시각적 가중치 &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![아이콘에 대한 잘못된 시각적 중량감](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404-29_VisualWeightIncorrect")|
 
  요소 무결성을 저하 시 키 지 않고 간단 하 고, 비교할 수 있는 도형 및 보조 각도를 사용 하 여 요소를 빌드합니다. 가능 하면 45 ° 또는 90 ° 각도를 사용 합니다.
@@ -163,16 +154,14 @@ ms.locfileid: "84184824"
 
  개체에 필요한 명확성을 추가 하는 경우에만 광원을 사용 합니다.
 
-|||
-|-|-|
 |**올바른 광원 원본**|**잘못 된 광원 원본**|
+|-|-|
 |![아이콘에 대한 올바른 광원](../../extensibility/ux-guidelines/media/0404-34_lightsourcescorrect.png "0404-34_LightSourcesCorrect")|![아이콘에 대한 잘못된 광원](../../extensibility/ux-guidelines/media/0404-35_lightsourcesincorrect.png "0404-35_LightSourcesIncorrect")|
 
  개요를 사용 하 여 가독성을 향상 시키거나 비유를 더 잘 전달 합니다. 음의 긍정 (짙은 조명) 잔액은 50/50입니다.
 
-|||
-|-|-|
 |**윤곽선의 올바른 사용**|**잘못 된 윤곽선 사용**|
+|-|-|
 |![올바른 윤곽선](../../extensibility/ux-guidelines/media/0404-36_outlinescorrect.png "0404-36_OutlinesCorrect")|![잘못된 윤곽선](../../extensibility/ux-guidelines/media/0404-37_outlinesincorrect.png "0404-37_OutlinesIncorrect")|
 
 #### <a name="icon-types"></a>아이콘 유형
@@ -258,7 +247,7 @@ ms.locfileid: "84184824"
 
 - IntelliSense 내에서 항목을 구분 하려면
 
-### <a name="accessibility"></a>액세스 가능성
+### <a name="accessibility"></a>접근성
  Visual Studio 규정 준수 지침을 적용 하려면 제품에 체크 인 한 모든 아이콘이 색 및 대비에 대 한 접근성 요구 사항을 통과 해야 합니다. 시각적 언어 팔레트의 색은 테스트 되었으며 이러한 요구 사항을 충족 합니다.
 
 #### <a name="color-inversion-for-dark-themes"></a>어두운 테마의 색 반전
@@ -269,7 +258,7 @@ ms.locfileid: "84184824"
 ### <a name="base-palette"></a>기본 색상표
  모든 표준 아이콘에는 세 가지 기본 색이 포함 되어 있습니다. 3D 도구 아이콘에 대해 하나 또는 두 개의 예외를 포함 하는 아이콘에는 그라데이션 또는 그림자가 포함 되지 않습니다.
 
-|사용량|이름|값 (밝은 테마)|[|예제|
+|사용량|Name|값 (밝은 테마)|[|예제|
 |-----------|----------|---------------------------|------------|-------------|
 |배경/어둡게|VS BG|424242/66, 66, 66|![견본 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![기본 색상표 예](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |전경/밝은|VS FG|F0EFF1/240239241|![견본 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -282,57 +271,57 @@ ms.locfileid: "84184824"
 #### <a name="action-modifiers"></a>동작 한정자
  아래 4 가지 색은 작업 한정자에 필요한 작업 유형을 표시 합니다.
 
-|사용량|이름|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
 |Positive|VS 동작 녹색|388A34/56138, 52|![견본 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negative|VS 동작 빨강|A1260D/161, 38, 13|![견본 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
 |무감정|VS 작업 Blue|00539C/0, 83156|![견본 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |만들기/새로 만들기|VS 작업 주황색|C27D1A/194156, 26|![견본 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 
-##### <a name="examples"></a>예
+##### <a name="examples"></a>예제
  녹색은 "Add", "Run", "Play" 및 "Validate"와 같은 긍정 작업 한정자에 사용 됩니다.
 
-|||||
+|WMIMgmt.msc|쿼리 실행|모든 단계 재생|컨트롤 추가|
 |-|-|-|-|
-|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />WMIMgmt.msc|![쿼리 실행 아이콘](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")<br />쿼리 실행|![모든 단계 재생 아이콘](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")<br />모든 단계 재생|![컨트롤 추가 아이콘](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")<br />컨트롤 추가|
+|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![쿼리 실행 아이콘](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")|![모든 단계 재생 아이콘](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")|![컨트롤 추가 아이콘](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")|
 
  빨간색은 "삭제", "중지", "취소" 및 "닫기"와 같은 음수 동작 한정자에 사용 됩니다.
 
-|||||
+|관계 삭제|열 삭제|쿼리 중지|오프 라인 연결|
 |-|-|-|-|
-|![관계 삭제 아이콘](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405-07_DeleteRelationship")<br />관계 삭제|![열 삭제 아이콘](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn")<br />열 삭제|![쿼리 중지 아이콘](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery")<br />쿼리 중지|![오프라인 연결 상태 아이콘](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405-10_ConnectionOffline")<br />오프 라인 연결|
+|![관계 삭제 아이콘](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405-07_DeleteRelationship")|![열 삭제 아이콘](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn")|![쿼리 중지 아이콘](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery")|![오프라인 연결 상태 아이콘](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405-10_ConnectionOffline")|
 
  Blue는 "열기", "다음", "이전", "가져오기" 및 "내보내기"와 같이 주로 화살표로 표시 되는 중립 작업 한정자에 적용 됩니다.
 
-|||||
+|이동 필드|일괄 처리 된 체크 인|주소 편집기|연결 편집기|
 |-|-|-|-|
-|![필드로 이동 아이콘](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")<br />이동 필드|![일괄 처리 된 check&#45;아이콘](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")<br />일괄 처리 된 체크 인|![주소 편집기 아이콘](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")<br />주소 편집기|![연결 편집기 아이콘](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")<br />연결 편집기|
+|![필드로 이동 아이콘](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")|![일괄 처리 된 check&#45;아이콘](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")|![주소 편집기 아이콘](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")|![연결 편집기 아이콘](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")|
 
  진한 황금색은 주로 "New" 한정자에 사용 됩니다.
 
-|||||
+|새 프로젝트|새 그래프 만들기|새 단위 테스트|새 목록 항목|
 |-|-|-|-|
-|![새 프로젝트 아이콘](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject")<br />새 프로젝트|![새 그래프 아이콘 만들기](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph")<br />새 그래프 만들기|![새 단위 테스트 아이콘](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405-17_NewUnitTest")<br />새 단위 테스트|![새 목록 항목 아이콘](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405-18_NewListItem")<br />새 목록 항목|
+|![새 프로젝트 아이콘](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject")|![새 그래프 아이콘 만들기](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph")|![새 단위 테스트 아이콘](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405-17_NewUnitTest")|![새 목록 항목 아이콘](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405-18_NewListItem")|
 
 #### <a name="special-cases"></a>특수 사례
  특수 한 경우에는 색이 지정 된 동작 한정자를 독립 실행형 아이콘으로 독립적으로 사용할 수 있습니다. 아이콘에 사용 되는 색은 아이콘이 연결 된 동작을 반영 합니다. 이 사용은 다음을 비롯 한 아이콘의 작은 하위 집합으로 제한 됩니다.
 
-||||||
+|WMIMgmt.msc|중지|삭제|저장|뒤로 탐색|
 |-|-|-|-|-|
-|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />WMIMgmt.msc|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")<br />중지|![삭제 아이콘](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")<br />DELETE|![저장 아이콘](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")<br />저장|![뒤로 탐색 아이콘](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")<br />뒤로 탐색|
+|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![삭제 아이콘](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![저장 아이콘](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![뒤로 탐색 아이콘](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>코드 계층 구조 팔레트
 
 #### <a name="folder"></a>폴더
 
-|사용량|이름|값 (모든 테마)|[|예제|
+|사용량|Name|값 (모든 테마)|[|예제|
 |-----------|----------|--------------------------|------------|-------------|
 |폴더|폴더|DCB67A/220182122|![견본 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![폴더 색 아이콘](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 언어
  Visual Studio에서 사용할 수 있는 각 공용 언어 또는 플랫폼에는 연결 된 색이 있습니다. 이러한 색은 기본 아이콘 또는 복합 아이콘의 오른쪽 위 모퉁이에 표시 되는 언어 한정자에 사용 됩니다.
 
-|사용량|이름|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF Blue|0095D/0149215|![견본 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP 자주|9B4F96/155, 79150|![견본 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,15 +335,18 @@ ms.locfileid: "84184824"
 
 ##### <a name="examples-of-icons-with-language-modifiers"></a>언어 한정자가 있는 아이콘의 예
 
-|||||||
+|VB|C#|F#|JavaScript|Python|
 |-|-|-|-|-|-|
-|![Visual Basic 아이콘](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")<br />VB|![C&#35; 아이콘](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; 아이콘](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; 아이콘](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![JavaScript 아이콘](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Python 아이콘](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|
+|![Visual Basic 아이콘](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")|![C&#35; 아이콘](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")|![C&#43;&#43; 아이콘](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")|![F&#35; 아이콘](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")|![JavaScript 아이콘](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")|![Python 아이콘](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")|
+
+|HTML|WPF|ASP|CSS|TypeScript|
+|-|-|-|-|-|-|
 |![HTML 아이콘](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF 아이콘](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP 아이콘](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS 아이콘](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript 아이콘](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
 
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 아이콘은 배타 색상표를 사용 합니다. 이러한 색은 사용자가 IntelliSense 팝업 목록의 여러 항목을 신속 하 게 구분할 수 있도록 하는 데 사용 됩니다.
 
-|사용량|이름|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
 |클래스, 이벤트|VS 작업 주황색|C27D1A/194125, 26|![견본 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |확장 메서드, 메서드, 모듈, 대리자|VS 동작 자주|652D90/101, 45144|![견본 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -364,15 +356,18 @@ ms.locfileid: "84184824"
 
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense 아이콘의 예
 
-||||||
+|클래스|Private 이벤트|대리자|메서드 Friend|필드|
 |-|-|-|-|-|
-|![IntelliSense 클래스 아이콘](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")<br />클래스|![IntelliSense Private 이벤트 아이콘](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")<br />Private 이벤트|![IntelliSense 대리자 아이콘](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")<br />대리자|![IntelliSense 메서드 친구 아이콘](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")<br />메서드 Friend|![필드 아이콘](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")<br />필드|
-|![IntelliSense 보호된 열거형 항목 아이콘](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")<br />Protected Enum 항목|![intellisense 개체 아이콘](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject")<br />Object|![IntelliSense 템플릿 아이콘](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")<br />템플릿|![IntelliSense 예외 바로 가기 아이콘](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")<br />예외 바로 가기||
+|![IntelliSense 클래스 아이콘](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")|![IntelliSense Private 이벤트 아이콘](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![IntelliSense 대리자 아이콘](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![IntelliSense 메서드 친구 아이콘](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![필드 아이콘](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")|
+
+|Protected Enum 항목|Object|템플릿|예외 바로 가기|
+|-|-|-|-|
+|![IntelliSense 보호된 열거형 항목 아이콘](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")|![intellisense 개체 아이콘](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject")|![IntelliSense 템플릿 아이콘](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")|![IntelliSense 예외 바로 가기 아이콘](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")|
 
 ### <a name="notifications"></a>알림
  Visual Studio의 알림은 상태를 나타내는 데 사용 됩니다. 알림 팔레트는 다음 네 가지 색 및 검은색 또는 흰색 전경 채우기 옵션을 사용 하 여 다음 상태 수준으로 알림을 정의 합니다.
 
-|사용량|이름|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
 |상태: 중립|알림 Blue (VS Blue)|1BA1E2/27161226|![견본 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |상태: 긍정|알림 녹색 (VS Green)|339933/51153, 51|![견본 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -383,6 +378,6 @@ ms.locfileid: "84184824"
 
 #### <a name="examples-of-notification-icons"></a>알림 아이콘의 예
 
-|||||
+|경고|경고|완료|중지|
 |-|-|-|-|
-|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")<br />경고|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")<br />경고|![완료 아이콘](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")<br />완료|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")<br />중지|
+|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![완료 아이콘](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|

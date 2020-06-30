@@ -1,5 +1,5 @@
 ---
-title: 명령줄 스위치 추가 | 마이크로 소프트 문서
+title: 명령줄 스위치 추가 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,49 +13,48 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f2df3a704c34d97c9d5acfa72249fe492b7f812
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c692787a63a7ab06fb3f0e0e94e2839190f58c9d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536281"
 ---
 # <a name="add-command-line-switches"></a>명령줄 스위치 추가
-*devenv.exe가* 실행될 때 VSPackage에 적용되는 명령줄 스위치를 추가할 수 있습니다. 스위치 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 및 해당 속성의 이름을 선언하는 데 사용합니다. 이 예제에서는 인수없이 VSPackage가 자동으로 로드된 **ADDCommandSwitchPackage라는** VSPackage의 하위 클래스에 대해 MySwitch 스위치가 추가됩니다.
+*devenv.exe* 실행 될 때 VSPackage에 적용 되는 명령줄 스위치를 추가할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>스위치 이름과 해당 속성을 선언 하는 데 사용 합니다. 이 예제에서는 인수 없이 **Addcommandswitchpackage** 라는 VSPackage 라는 하위 클래스에 대해 MySwitch 스위치를 추가 하 고 VSPackage를 자동으로 로드 합니다.
 
 ```csharp
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]
 ```
 
- 명명된 매개 변수는 다음 설명에 나와 있습니다.
+ 명명 된 매개 변수는 다음 설명에 나와 있습니다.
 
-||||
-|-|-|-|-|
-| 매개 변수 | 설명|
-| 인수 | 스위치에 대한 인수 수입니다. "*" 또는 인수 목록일 수 있습니다. |
-| 수요 로드 | VSPackage를 1로 설정한 경우 자동으로 로드하고 그렇지 않으면 0으로 설정합니다. |
-| Helpstring | **devenv /?**. |
-| 이름 | 스위치입니다. |
-| 패키지 가드 | 패키지의 GUID입니다. |
+|Name|설명|
+|-|-|
+| 인수 | 스위치에 대 한 인수 개수입니다. "*" 또는 인수 목록 일 수 있습니다. |
+| DemandLoad | VSPackage가 1로 설정 되어 있으면 자동으로 로드 하 고 그렇지 않으면 0으로 설정 합니다. |
+| HelpString | **Devenv/?** 를 사용 하 여 표시할 문자열의 도움말 문자열 또는 리소스 ID입니다. |
+| Name | 스위치입니다. |
+| PackageGuid | 패키지의 GUID입니다. |
 
- 인수의 첫 번째 값은 일반적으로 0 또는 1입니다. '*'의 특수 값을 사용하여 명령줄의 나머지 전체가 인수임을 나타낼 수 있습니다. 이 기능은 사용자가 디버거 명령 문자열을 전달해야 하는 시나리오를 디버깅하는 데 유용할 수 있습니다.
+ 인수의 첫 번째 값은 일반적으로 0 또는 1입니다. 특수 값 ' * '를 사용 하 여 명령줄의 전체 나머지가 인수 임을 나타낼 수 있습니다. 이는 사용자가 디버거 명령 문자열을 전달 해야 하는 디버깅 시나리오에 유용할 수 있습니다.
 
- 수요로드 값은 `true` (1) `false` 또는 (0)이며 VS패키지가 자동으로 로드되어야 음을 나타냅니다.
+ DemandLoad 값은 `true` (1) 또는 `false` (0) VSPackage가 자동으로 로드 되어야 함을 나타냅니다.
 
- HelpString 값은 **devenv /?** 도움말 표시. 이 값은 nnn이 정수인 "#nnn" 형식이어야 합니다. 리소스 파일의 문자열 값은 새 줄 문자로 끝나야 합니다.
+ HelpString 값은 **devenv/?** 에 표시 되는 문자열의 리소스 ID입니다. 도움말 표시. 이 값은 "#nnn" 형식 이어야 합니다. 여기서 nnn은 정수입니다. 리소스 파일의 문자열 값은 줄 바꿈 문자로 끝나야 합니다.
 
  이름 값은 스위치의 이름입니다.
 
- PackageGuid 값은 이 스위치를 구현하는 패키지의 GUID입니다. IDE는 이 GUID를 사용하여 명령줄 스위치가 적용되는 레지스트리에서 VSPackage를 찾습니다.
+ PackageGuid 값은이 스위치를 구현 하는 패키지의 GUID입니다. IDE는이 GUID를 사용 하 여 명령줄 스위치가 적용 되는 레지스트리의 VSPackage을 찾습니다.
 
 ## <a name="retrieve-command-line-switches"></a>명령줄 스위치 검색
- 패키지가 로드되면 다음 단계를 완료하여 명령줄 스위치를 검색할 수 있습니다.
+ 패키지가 로드 되 면 다음 단계를 완료 하 여 명령줄 스위치를 검색할 수 있습니다.
 
-1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> VSPackage 구현에서 인터페이스를 `QueryService` 얻으려면 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 호출합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
+1. VSPackage의 구현에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> `QueryService` 에 대해를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 하 여 인터페이스를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> .
 
-2. 호출하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 사용자가 입력한 명령줄 스위치를 검색합니다.
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>을 호출 하 여 사용자가 입력 한 명령줄 스위치를 검색 합니다.
 
-   다음 코드는 사용자가 MySwitch 명령줄 스위치를 입력했는지 여부를 확인하는 방법을 보여 주며 다음과 같은 방법을 보여 주며 다음과 같은 방법을 보여 주며,
+   다음 코드에서는 MySwitch 명령줄 스위치가 사용자에 의해 입력 되었는지 확인 하는 방법을 보여 줍니다.
 
 ```csharp
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));
@@ -66,11 +65,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 ```
 
- 패키지가 로드될 때마다 명령줄 스위치를 확인하는 것은 사용자의 책임입니다.
+ 패키지가 로드 될 때마다 명령줄 스위치를 확인 하는 것은 사용자의 책임입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)
-- [만들기PkgDef 유틸리티](../extensibility/internals/createpkgdef-utility.md)
-- [. Pkgdef 파일](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [CreatePkgDef 유틸리티](../extensibility/internals/createpkgdef-utility.md)
+- [. .Pkgdef 파일](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

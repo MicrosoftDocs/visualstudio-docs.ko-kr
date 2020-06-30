@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662904"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534461"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
@@ -45,13 +45,13 @@ ms.locfileid: "72662904"
  이 규칙에서는 경고를 표시해야 합니다. 가상 메서드에 대 한 호출을 제거 하려면 생성자를 다시 디자인 해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 경우의 영향을 보여 줍니다. 테스트 응용 프로그램은 기본 클래스 (`BadlyConstructedType`) 생성자가 실행 되도록 하는 `DerivedType`의 인스턴스를 만듭니다. `BadlyConstructedType`의 생성자가 가상 메서드를 잘못 호출 `DoSomething`입니다. 출력에 표시 된 대로 `DerivedType.DoSomething()` 실행 되 고 `DerivedType`의 생성자가 실행 되기 전에 수행 됩니다.
+ 다음 예제에서는이 규칙을 위반 하는 경우의 영향을 보여 줍니다. 테스트 응용 프로그램은 `DerivedType` 기본 클래스 ( `BadlyConstructedType` ) 생성자를 실행 하는 인스턴스를 만듭니다. `BadlyConstructedType`의 생성자가 가상 메서드를 잘못 호출 `DoSomething` 합니다. 출력에서을 표시 하 `DerivedType.DoSomething()` 고,를 실행 하 고,이를 위해 생성자가 실행 되기 전에 수행 `DerivedType` 합니다.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
 
  이 예제의 결과는 다음과 같습니다.
 
- **Base ctor를 호출 합니다.** **파생 된 DoSomething를 초기화 
-? ** **파생 Ctor를 호출** 하는 
- 없습니다.
+ **Base ctor를 호출 합니다.** 
+ **파생 된 DoSomething를 초기화 하 시겠습니까? ** 
+ **파생 ctor를 호출** 하지 않습니다.

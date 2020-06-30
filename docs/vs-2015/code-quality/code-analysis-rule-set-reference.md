@@ -11,22 +11,22 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a3c0b347f186c5adee6cf86a0e1720ebfa80f253
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670111"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535722"
 ---
 # <a name="code-analysis-rule-set-reference"></a>코드 분석 규칙 집합 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0에서 관리 코드 프로젝트에 대 한 코드 분석을 구성 하는 경우 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 또는 [!INCLUDE[vsPro](../includes/vspro-md.md)]you에 기본 제공 *규칙 집합*목록이 표시 됩니다. 표준 규칙 집합 중 하나를 사용하거나 프로젝트 요구 사항에 맞게 규칙 집합을 사용자 지정할 수 있습니다.
+, 또는에서 관리 코드 프로젝트에 대 한 코드 분석을 구성 하는 경우 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] [!INCLUDE[vsPro](../includes/vspro-md.md)] 기본 제공 *규칙 집합*목록이 표시 됩니다. 표준 규칙 집합 중 하나를 사용하거나 프로젝트 요구 사항에 맞게 규칙 집합을 사용자 지정할 수 있습니다.
 
 ## <a name="available-rule-sets"></a>사용 가능한 규칙 집합
  다음 표에는 기본 규칙 집합이 나열됩니다.
 
-|||
+|항목|값|
 |-|-|
 |[모든 규칙 규칙 집합](../code-quality/all-rules-rule-set.md)|이 규칙 집합에는 모든 규칙이 포함 됩니다. 이 규칙 집합을 실행 하면 많은 수의 경고가 보고 될 수 있습니다. 이 규칙 집합을 사용 하 여 코드의 모든 문제를 포괄적으로 파악할 수 있습니다. 이렇게 하면 프로젝트에 대해 실행 하는 데 가장 적합 한 추가 규칙 집합을 결정 하는 데 도움이 됩니다.|
 |[관리 코드에 대한 기본 수정 규칙 규칙 집합](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|이러한 규칙은 프레임 워크 Api 사용 시 발생 하는 논리 오류 및 일반적인 실수에 초점을 둡니다. 최소 권장 규칙에서 보고 하는 경고 목록에서 확장 하려면이 규칙 집합을 포함 합니다.|
@@ -36,8 +36,8 @@ ms.locfileid: "72670111"
 |[관리 코드에 대한 전역화 규칙 규칙 집합](../code-quality/globalization-rules-rule-set-for-managed-code.md)|이러한 규칙은 다양 한 언어, 로캘 및 문화권에서 사용 하는 경우 응용 프로그램의 데이터가 제대로 표시 되지 않도록 하는 문제에 중점을 둡니다. 응용 프로그램을 지역화 하거나 세계화 하는 경우이 규칙 집합을 포함 합니다.|
 |[관리 코드에 대한 관리 최소 규칙 규칙 집합](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)|이러한 규칙은 코드 분석이 가장 정확한 코드의 가장 중요 한 문제에 중점을 둡니다.  이러한 규칙은 작은 숫자 이며 제한 된 Visual Studio 버전 에서만 실행 됩니다.  다른 Visual Studio 버전과 함께 MinimumRecommendedRules를 사용 합니다.|
 |[관리 코드에 대한 관리 권장 규칙 규칙 집합](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)|이러한 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 비롯 하 여 코드의 가장 중요 한 문제에 초점을 둡니다. 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다.|
-|[혼합 최소 규칙 규칙 집합](../code-quality/mixed-minimum-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌 C++ 을 포함 하 여 공용 언어 런타임을 지 원하는 프로젝트의 가장 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 C++ 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다.|
-|[혼합 권장 규칙 규칙 집합](../code-quality/mixed-recommended-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 C++ 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 프로젝트의 가장 일반적이 고 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 C++ 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다.  이 규칙 집합은 Visual Studio Professional 버전 이상으로 구성 하도록 설계 되었습니다.|
+|[혼합 최소 규칙 규칙 집합](../code-quality/mixed-minimum-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트의 가장 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다.|
+|[혼합 권장 규칙 규칙 집합](../code-quality/mixed-recommended-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트의 가장 일반적이 고 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다.  이 규칙 집합은 Visual Studio Professional 버전 이상으로 구성 하도록 설계 되었습니다.|
 |[네이티브 최소 규칙 규칙 집합](../code-quality/native-minimum-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 포함 하 여 네이티브 코드의 가장 중요 한 문제에 중점을 둡니다. 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.|
 |[네이티브 권장 규칙 규칙 집합](../code-quality/native-recommended-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 포함 하 여 네이티브 코드의 가장 중요 한 문제 및 일반적인 문제에 중점을 둡니다.  네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.  이 규칙 집합은 Visual Studio Professional 버전 이상에서 사용할 수 있도록 설계 되었습니다.|
 |[관리 코드에 대한 보안 규칙 규칙 집합](../code-quality/security-rules-rule-set-for-managed-code.md)|이 규칙 집합에는 모든 Microsoft 보안 규칙이 포함 됩니다. 보고 되는 잠재적인 보안 문제 수를 최대화 하려면이 규칙 집합을 포함 합니다.|

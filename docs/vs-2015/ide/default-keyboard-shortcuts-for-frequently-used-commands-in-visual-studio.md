@@ -9,29 +9,42 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77214948609bd73a2a630a62b4c1b7db114cf8e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665788"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534240"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio에서 자주 사용되는 명령의 기본 바로 가기 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이러한 기본 바로 가기 키를 선택하여 Visual Studio의 자주 사용하는 명령에 액세스할 수 있습니다. 기본 바로 가기가 있는 명령의 전체 목록은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
+이러한 기본 바로 가기 키를 선택하여 Visual Studio의 자주 사용하는 명령에 액세스할 수 있습니다. 기본 바로 가기가 있는 명령의 전체 목록은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조 하세요.
 
 > [!NOTE]
 > **옵션** 대화 상자를 열고 **환경** 노드를 확장한 다음 **키보드**를 선택하여 모든 명령의 바로 가기를 확인할 수 있습니다.
 
  **항목 내용**
 
-||||||
-|-|-|-|-|-|
-|[빌드](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[편집](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[도구](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[창](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
-|[디버그](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[파일](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[리팩터링](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[보기](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+- [빌드](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
-## <a name="bkmk_build"></a> 빌드
+- [편집](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
+
+- [프로젝트](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)
+
+- [Tools](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)
+
+- [Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
+
+- [디버그](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
+
+- [최근에 사용한 파일](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
+
+- [리팩터링](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
+
+- [봅니다](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+
+## <a name="build"></a><a name="bkmk_build"></a>Build
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------|-------------------------------------|
@@ -40,7 +53,7 @@ ms.locfileid: "72665788"
 |빌드.컴파일|Ctrl+F7[전역]|
 |Build.RunCodeAnalysisonSolution|Alt+F11[전역]|
 
-## <a name="bkmk_debug"></a> 디버그
+## <a name="debug"></a><a name="bkmk_debug"></a>디버그
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------|-------------------------------------|
@@ -60,7 +73,7 @@ ms.locfileid: "72665788"
 |디버그.디버깅중지|Shift+F5[전역]|
 |디버그.중단점설정해제|F9[전역]|
 
-## <a name="bkmk_edit"></a> 편집
+## <a name="edit"></a><a name="bkmk_edit"></a> 편집
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------|-------------------------------------|
@@ -111,7 +124,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S[전역]|
 |편집.끝까지단어삭제|Ctrl+Delete[텍스트 편집기]|
 |편집.시작까지단어삭제|Ctrl+백스페이스[텍스트 편집기]|
 
-## <a name="bkmk_file"></a> 파일
+## <a name="file"></a><a name="bkmk_file"></a>파일과
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------|-------------------------------------|
@@ -127,26 +140,26 @@ dit.SurroundWith|Ctrl+K, Ctrl+S[전역]|
 |파일.선택한항목저장|Ctrl+S[전역]|
 |파일.브라우저에서보기|Ctrl+Shift+W[전역]|
 
-## <a name="bkmk_project"></a> 프로젝트
+## <a name="project"></a><a name="bkmk_project"></a> 프로젝트
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------|-------------------------------------|
 |프로젝트.기존항목추가|Shift+Alt+A[전역]|
 |프로젝트.새항목추가|Ctrl+Shift+A[전역]|
 
-## <a name="bkmk_refactor"></a> 리팩터링
+## <a name="refactor"></a><a name="bkmk_refactor"></a>리팩터링
 
 |명령|바로 가기 키[컨텍스트]|
 |-------------|-----------------------------------|
 |리팩터링.메서드추출|Ctrl+R, Ctrl+M[전역]|
 
-## <a name="bkmk_tools"></a> 도구
+## <a name="tools"></a><a name="bkmk_tools"></a> 도구
 
 |명령|바로 가기 키[컨텍스트]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P[전역]|
 
-## <a name="bkmk_view"></a> 보기
+## <a name="view"></a><a name="bkmk_view"></a>봅니다
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------|-------------------------------------|
@@ -167,7 +180,7 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M[전역]|
 |보기.코드보기|Enter[클래스 다이어그램]<br /><br /> 또는 F7[설정 디자이너]|
 |보기.디자이너보기|Shift+F7[HTML 편집기 소스 뷰]|
 
-## <a name="bkmk_window"></a> 창
+## <a name="window"></a><a name="bkmk_window"></a>창인
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------|-------------------------------------|

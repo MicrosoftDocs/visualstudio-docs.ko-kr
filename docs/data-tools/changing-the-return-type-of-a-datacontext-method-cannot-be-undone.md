@@ -3,17 +3,17 @@ title: DataContext 메서드의 반환 형식 변경은 취소할 수 없습니�
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5b24337c9233aeeb060029cb54cd661b7591309
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 80e7407472188ef25d6fd5127179c7ddbce54318
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282789"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536710"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>DataContext 메서드의 반환 형식 변경은 취소할 수 없습니다.
 
@@ -37,6 +37,6 @@ DataContext 메서드의 반환 형식을 변경하면 실행 취소할 수 없�
 
     원래 기본 반환 형식을 갖는 <xref:System.Data.Linq.DataContext> 메서드가 만들어집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

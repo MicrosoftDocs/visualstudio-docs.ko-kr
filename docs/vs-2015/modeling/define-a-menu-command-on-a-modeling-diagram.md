@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918842"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534214"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>모델링 다이어그램의 메뉴 명령 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴
 ## <a name="defining-the-menu-command"></a>메뉴 명령 정의
  UML 디자이너에 대한 메뉴 명령을 만들려면 명령의 동작을 정의하는 클래스를 만들고 해당 클래스를 VSIX(Visual Studio Integration Extension)에 포함해야 합니다. VSIX는 명령을 설치할 수 있는 컨테이너 역할을 합니다. 메뉴 명령을 정의하는 대신 다음 두 가지 방법을 사용할 수 있습니다.
 
-- **프로젝트 템플릿을 사용 하 여 자체 VSIX에서 메뉴 명령을 만듭니다.** 이는 더 빠른 방법입니다. 메뉴 명령을 유효성 검사 확장, 사용자 지정 도구 상자 또는 제스처 처리기와 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다.
+- **프로젝트 템플릿을 사용하여 자체 VSIX에서 메뉴 명령을 만듭니다.** 이는 더 빠른 방법입니다. 메뉴 명령을 유효성 검사 확장, 사용자 지정 도구 상자 또는 제스처 처리기와 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다.
 
 - **별도의 메뉴 명령 및 VSIX 프로젝트를 만듭니다.** 여러 확장 형식을 같은 VSIX로 결합하려면 이 방법을 사용합니다. 예를 들어 메뉴 명령에서 모델이 특정 제약 조건을 따르도록 요구하면 유효성 검사 방법과 동일한 VSIX에 해당 제스처 처리기를 포함할 수 있습니다.
 
@@ -47,7 +47,7 @@ Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴
 
 4. F5 키를 눌러 메뉴 명령을 테스트합니다. 자세한 내용은 [메뉴 명령 실행](#Executing)을 참조하세요.
 
-5. 프로젝트에 의해 빌드된 **\*\\\*파일 bin\\** 복사 하 여 다른 컴퓨터에 메뉴 명령을 설치 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.
+5. 프로젝트에서 빌드된 파일 **bin \\ \* \\ \* . vsix** 를 복사 하 여 다른 컴퓨터에 메뉴 명령을 설치 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.
 
    다음은 대체 절차입니다.
 
@@ -146,7 +146,7 @@ Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴
 
 2. 솔루션에 VSIX 프로젝트가 없으면 VSIX 프로젝트를 만듭니다.
 
-    1. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가**, **새 프로젝트**를 선택합니다.
+    1. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가**, **새 프로젝트**를 차례로 선택 합니다.
 
     2. **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **확장성**을 선택합니다. 가운데 열에서 **VSIX 프로젝트**를 선택합니다.
 
@@ -160,19 +160,19 @@ Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴
 
     3. **자산** 탭에서 **새로 만들기**를 선택하고 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **MEF 구성 요소**
+         **유형**  =  **MEF 구성 요소**
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *클래스 라이브러리 프로젝트*
+         **프로젝트**  =  *클래스 라이브러리 프로젝트*
 
-## <a name="Implementing"></a>메뉴 명령 구현
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>메뉴 명령 구현
  메뉴 명령 클래스는 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>에 필요한 메서드를 구현합니다.
 
-|||
+|서명|설명|
 |-|-|
 |`string Text { get; }`|메뉴 항목의 레이블을 반환합니다.|
-|`void QueryStatus(IMenuCommand command);`|사용자가 다이어그램을 마우스 오른쪽 단추로 클릭하면 호출됩니다.<br /><br /> 이 메서드는 모델을 변경하면 안 됩니다.<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` 를 사용하여 명령을 표시하고 사용할 수 있도록 할지 여부를 결정합니다.<br /><br /> 다음과 같이 설정합니다.<br /><br /> 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 명령이 메뉴에 표시 되어야 하는 경우 `true` `command.Visible` -   <br />사용자가 메뉴에서 명령을 클릭할 수 있는 경우 `true` `command.Enabled` -   <br />메뉴 레이블을 동적으로 설정 -   `command.Text`|
+|`void QueryStatus(IMenuCommand command);`|사용자가 다이어그램을 마우스 오른쪽 단추로 클릭하면 호출됩니다.<br /><br /> 이 메서드는 모델을 변경하면 안 됩니다.<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` 를 사용하여 명령을 표시하고 사용할 수 있도록 할지 여부를 결정합니다.<br /><br /> 다음과 같이 설정합니다.<br /><br /> -   `command.Visible``true`사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 명령이 메뉴에 표시 되어야 하는 경우<br />-   `command.Enabled``true`사용자가 메뉴에서 명령을 클릭할 수 있는 경우<br />-   `command.Text`메뉴 레이블을 동적으로 설정 하려면|
 |`void Execute (IMenuCommand command);`|표시되고 사용할 수 있는 경우 사용자가 메뉴 항목을 클릭할 때 호출됩니다.|
 
 ### <a name="accessing-the-model-in-code"></a>코드에서 모델 액세스
@@ -202,14 +202,14 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  API를 통해 요소의 속성을 변경하고, 요소 및 관계를 삭제하고, 새 요소 및 관계를 만들 수도 있습니다.
 
- 기본적으로 Execute 메서드의 각 변경 작업은 별도 트랜잭션에서 수행됩니다. 사용자가 각 변경 내용을 개별적으로 취소할 수 있습니다. 변경 내용을 단일 트랜잭션으로 그룹화 하려는 경우 [트랜잭션을 사용 하 여 UML 모델 업데이트 연결](../modeling/link-uml-model-updates-by-using-transactions.md)에 설명 된 대로 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction>를 사용 합니다.
+ 기본적으로 Execute 메서드의 각 변경 작업은 별도 트랜잭션에서 수행됩니다. 사용자가 각 변경 내용을 개별적으로 취소할 수 있습니다. 변경 내용을 단일 트랜잭션으로 그룹화 하려는 경우 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> [트랜잭션을 사용 하 여 UML 모델 업데이트 연결](../modeling/link-uml-model-updates-by-using-transactions.md)에 설명 된 대로을 사용 합니다.
 
 ### <a name="use-the-ui-thread-for-updates"></a>업데이트에 UI 스레드 사용
  백그라운드 스레드에서 모델을 업데이트하는 것이 유용한 경우도 있습니다. 예를 들어 명령이 속도가 느린 리소스에서 데이터를 로드하는 경우 작업이 진행되는 동안 사용자가 변경 내용을 보고 필요한 경우 작업을 취소할 수 있도록 백그라운드 스레드에서 로드를 수행할 수 있습니다.
 
  그러나 모델 저장소가 스레드로부터 안전하지 않은 것에 주의해야 합니다. 항상 UI(사용자 인터페이스) 스레드를 사용하여 업데이트해야 하며, 가능한 경우 백그라운드 작업이 진행되는 동안 사용자가 편집할 수 없도록 해야 합니다. 예제는 [백그라운드 스레드에서 UML 모델 업데이트](../modeling/update-a-uml-model-from-a-background-thread.md)를 참조 하세요.
 
-## <a name="Executing"></a>메뉴 명령 실행
+## <a name="executing-the-menu-command"></a><a name="Executing"></a>메뉴 명령 실행
  테스트를 위해 디버그 모드에서 명령을 실행합니다.
 
 #### <a name="to-test-the-menu-command"></a>메뉴 명령을 테스트하려면
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - 프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.
 
-    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 일반적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름 인지 확인 합니다.
+    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -236,11 +236,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - `Import` 및 `Export` 특성의 매개 변수가 유효합니다.
 
-    - `QueryStatus` 메서드가 `command`를 설정 하지 않습니다.`Enabled` 또는 `false`필드를 `Visible` 합니다.
+    - `QueryStatus`메서드가를 설정 하지 않습니다 `command` .`Enabled` 또는 `Visible` 필드를로 변환할 수 `false` 있습니다.
 
     - 사용 중인 모델 다이어그램 형식(UML 클래스, 시퀀스 등)이 메뉴 명령 클래스 특성 `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` 등의 하나로 나열됩니다.
 
-## <a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
  사용 중인 컴퓨터 및 다른 컴퓨터에서 모두 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장을 설치할 수 있습니다.
 
 #### <a name="to-install-an-extension"></a>확장을 설치하려면
@@ -249,11 +249,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. **솔루션 탐색기**의 VSIX 프로젝트 바로 가기 메뉴에서 **Windows 탐색기에서 폴더 열기**를 선택합니다.
 
-    2. 파일 **bin\\\*\\** _프로젝트_**vsix** 를 찾습니다.
+    2. 파일 ** \\ \* bin \\ **_을 찾습니다_**. vsix**
 
 2. 확장을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 
-     대상 컴퓨터에는 **source.extension.vsixmanifest**에서 지정한 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 버전 중 하나가 있어야 합니다.
+     대상 컴퓨터에는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **source.extension.vsixmanifest**에서 지정한 버전 중 하나가 있어야 합니다.
 
 3. 대상 컴퓨터에서 **.vsix** 파일을 두 번 클릭하여 엽니다.
 
@@ -271,9 +271,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \extensions**
 
-## <a name="MenuExample"></a> 예
+## <a name="example"></a><a name="MenuExample"></a> 예
  다음 예제에서는 클래스 다이어그램에서 두 요소의 이름은 교환하는 메뉴 명령에 대한 코드를 보여 줍니다. 이 코드는 이전 섹션에서 설명한 대로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 프로젝트로 빌드 및 설치해야 합니다.
 
 ```

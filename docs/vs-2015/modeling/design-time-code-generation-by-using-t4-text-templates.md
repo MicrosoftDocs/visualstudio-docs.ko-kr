@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5e817bc76a76c3d0af0e3509ef14312ac1b98acf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669796"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534149"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72669796"
 > [!NOTE]
 > *모델* 은 응용 프로그램의 특정 측면을 설명 하는 데이터 원본입니다. 모든 형태와 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 DSL(Domain-Specific Language) 모델 등의 특정 형태가 아니어도 됩니다. 일반적인 모델은 테이블 또는 XML 파일 형식입니다.
 
- 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. @No__t_1 솔루션의 **.resx** 파일에 리소스를 정의 하는 경우 클래스 및 메서드 집합이 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
+ 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. 솔루션의 **.resx** 파일에 리소스를 정의 하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 클래스 및 메서드 집합이 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
 
  텍스트 템플릿에는 생성하려는 텍스트와 텍스트의 변수 부분을 생성하는 프로그램 코드가 혼합되어 있습니다. 프로그램 코드를 사용하면 생성된 텍스트의 일부분을 반복하거나 조건부로 생략할 수 있습니다. 생성된 텍스트 자체는 애플리케이션 부분을 만드는 프로그램 코드일 수 있습니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "72669796"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio에서 디자인 타임 T4 텍스트 템플릿을 만들려면
 
-1. @No__t_0 프로젝트를 만들거나 기존 프로젝트를 엽니다.
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]프로젝트를 만들거나 기존 프로젝트를 엽니다.
 
      예를 들어 **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택 합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72669796"
 
      [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트에 템플릿을 추가한 경우 언어 특성은 "`VB`"입니다.
 
-4. 파일 끝에 원하는 텍스트를 추가합니다. 예:
+4. 파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.
 
     ```
     Hello, world!
@@ -125,12 +125,12 @@ ms.locfileid: "72669796"
 
    위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
 
-   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
+   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. `"C#"`은 기본 버전입니다.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>디자인 타임 T4 텍스트 템플릿 디버그
  텍스트 템플릿을 디버그하려면
 
-- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예:
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -276,8 +276,8 @@ ms.locfileid: "72669796"
 
  여기서 `this.Host`는 VB에서는 `Me.Host`이며, 해당 형식은 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`와 같습니다.
 
-### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 데이터 가져오기
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 제공되는 서비스를 사용하려면 `hostSpecific` 특성을 설정하고 `EnvDTE` 어셈블리를 로드합니다. 그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예:
+### <a name="getting-data-from-vsprvs"></a>[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 데이터 가져오기
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 제공되는 서비스를 사용하려면 `hostSpecific` 특성을 설정하고 `EnvDTE` 어셈블리를 로드합니다. 그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > 텍스트 템플릿은 자체 앱 도메인에서 실행되며 마샬링을 통해 서비스에 액세스합니다. 이 경우에는 GetCOMService()가 GetService()보다 안정적입니다.
 
-## <a name="Regenerating"></a>자동으로 코드 다시 생성
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>자동으로 코드 다시 생성
  일반적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션의 여러 파일은 입력 모델 하나를 사용하여 생성됩니다. 각 파일은 자체 템플릿에서 생성되지만 모든 템플릿은 같은 모델을 참조합니다.
 
  소스 모델이 변경되면 솔루션에서 모든 템플릿을 다시 실행해야 합니다. 이 작업을 수동으로 수행 하려면 **빌드** 메뉴에서 **모든 템플릿 변환** 을 선택 합니다.
@@ -320,8 +320,8 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>기존 파일을 템플릿으로 변환
- 템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 파일 등의 프로토타입으로 일반 파일을 만든 다음, 결과 파일을 변경 하는 생성 코드를 점차적으로 도입 합니다.
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>기존 파일을 템플릿으로 변환
+ 템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 파일 등의 프로토타입으로 일반 파일을 만든 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 다음, 결과 파일을 변경 하는 생성 코드를 점차적으로 도입 합니다.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
 
@@ -333,7 +333,7 @@ Warning("A warning message");
 
 4. **.Tt** 파일의 다음 속성을 확인 합니다.
 
-    |||
+    |속성|Value|
     |-|-|
     |**사용자 지정 도구 =**|**TextTemplatingFileGenerator**|
     |**빌드 작업 =**|**없음**|
@@ -370,5 +370,5 @@ Warning("A warning message");
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [T4 텍스트 템플릿 작성 지침](../modeling/guidelines-for-writing-t4-text-templates.md)

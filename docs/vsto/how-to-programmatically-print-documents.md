@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서 인쇄'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956046"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537828"
 ---
 # <a name="how-to-programmatically-print-documents"></a>방법: 프로그래밍 방식으로 문서 인쇄
   전체 Microsoft Office Word 문서 또는 일부 문서를 기본 프린터에 인쇄할 수 있습니다.
@@ -41,7 +41,7 @@ ms.locfileid: "62956046"
      [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]
 
-## <a name="print-a-document-by-using-a-vsto-add-in"></a>VSTO 추가 기능을 사용 하 여 문서를 인쇄 합니다.
+## <a name="print-a-document-by-using-a-vsto-add-in"></a>VSTO 추가 기능을 사용 하 여 문서 인쇄
 
 ### <a name="to-print-an-entire-document"></a>전체 문서를 인쇄하려면
 
@@ -57,5 +57,5 @@ ms.locfileid: "62956046"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

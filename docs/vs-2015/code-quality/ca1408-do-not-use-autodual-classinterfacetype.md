@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3ccd8f9fa201e2cdfabfb7f6354d6df4718c572e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b953a97d557e28cce50f554acc03797d4be38220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652750"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534877"
 ---
-# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: AutoDual ClassInterfaceType을 사용하지 마십시오.
+# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: AutoDual ClassInterfaceType을 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
@@ -33,7 +33,7 @@ ms.locfileid: "72652750"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- COM (구성 요소 개체 모델) 표시 형식은 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 특성을 <xref:System.Runtime.InteropServices.ClassInterfaceType>의 `AutoDual` 값으로 설정 하 여 표시 합니다.
+ COM (구성 요소 개체 모델) 표시 형식은 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 특성을 값으로 설정 하 여 표시 됩니다 `AutoDual` <xref:System.Runtime.InteropServices.ClassInterfaceType> .
 
 ## <a name="rule-description"></a>규칙 설명
  이중 인터페이스를 사용하는 형식에서는 클라이언트가 특정 인터페이스 레이아웃에 바인딩할 수 있습니다. 이후 버전에서 해당 형식이나 기본 형식의 레이아웃이 변경되면 인터페이스에 바인딩된 COM 클라이언트의 바인딩이 해제될 수 있습니다. 기본적으로 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 특성을 지정 하지 않으면 디스패치 전용 인터페이스가 사용 됩니다.
@@ -41,7 +41,7 @@ ms.locfileid: "72652750"
  달리 표시 되지 않는 한 모든 public 제네릭이 아닌 형식이 COM에 표시 됩니다. public이 아닌 모든 및 제네릭 형식은 COM에 표시 되지 않습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 특성의 값을 <xref:System.Runtime.InteropServices.ClassInterfaceType>의 `None` 값으로 변경 하 고 인터페이스를 명시적으로 정의 합니다.
+ 이 규칙 위반 문제를 해결 하려면 특성의 값 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 을의 값으로 변경 하 `None` <xref:System.Runtime.InteropServices.ClassInterfaceType> 고 인터페이스를 명시적으로 정의 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이후 버전에서 형식 및 해당 기본 형식의 레이아웃이 변경 되지 않는 경우에만이 규칙에서 경고를 표시 해야 합니다.
@@ -55,7 +55,7 @@ ms.locfileid: "72652750"
 ## <a name="related-rules"></a>관련 규칙
  [CA1403: 자동 레이아웃 형식은 COM 노출이면 안 됩니다.](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412: ComSource 인터페이스를 IDispatch로 표시하십시오.](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+ [CA1412: ComSource 인터페이스를 IDispatch로 표시하세요.](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [비관리 코드와](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) 상호 운용 하기 위해 [클래스 인터페이스의](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [정규화 된 .net 형식](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) 소개
