@@ -1,7 +1,7 @@
 ---
 title: 코드 맵
 ms.date: 05/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e4efbc0cf950781c84eadf974ea87943d9828c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594580"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532719"
 ---
 # <a name="map-dependencies-with-code-maps"></a>코드 맵으로 종속성 매핑
 
@@ -36,20 +36,20 @@ ms.locfileid: "75594580"
 
 다음 언어로 코드에 대한 종속성을 매핑할 수 있습니다.
 
-- 솔루션이 C# 나 어셈블리 ( *.dll* 또는 *.exe*)의 시각적 개체 또는 Visual Basic
+- 솔루션이 나 어셈블리 (*.dll* 또는 *.exe*)의 Visual c # 또는 Visual Basic
 
-- Visual C++ 프로젝트의 네이티브 또는 C++ 관리 되는 C 또는 코드, 헤더 파일 ( *.h* 또는 `#include`) 또는 이진 파일
+- Visual C++ 프로젝트의 네이티브 또는 관리 되는 C/c + + 코드, 헤더 파일 (*.h* 또는 `#include` ) 또는 이진 파일
 
 - Microsoft Dynamics AX용 .NET 모듈의 X++ 프로젝트 및 어셈블리
 
 > [!NOTE]
-> C# 또는 Visual Basic 이외의 프로젝트의 경우 코드 맵을 시작 하거나 기존 코드 맵에 항목을 추가 하는 옵션이 줄어듭니다. 예를 들어 C++ 프로젝트의 텍스트 편집기에서는 개체를 마우스 오른쪽 단추로 클릭하여 코드 맵에 추가할 수 없습니다. 그러나 **솔루션 탐색기**, **클래스 뷰**및 **개체 브라우저**에서 개별 코드 요소 또는 파일을 끌어서 놓을 수 있습니다.
+> C # 또는 Visual Basic 이외의 프로젝트의 경우 코드 맵을 시작 하거나 기존 코드 맵에 항목을 추가 하는 옵션이 줄어듭니다. 예를 들어 C++ 프로젝트의 텍스트 편집기에서는 개체를 마우스 오른쪽 단추로 클릭하여 코드 맵에 추가할 수 없습니다. 그러나 **솔루션 탐색기**, **클래스 뷰**및 **개체 브라우저**에서 개별 코드 요소 또는 파일을 끌어서 놓을 수 있습니다.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>코드 맵 및 라이브 종속성 유효성 검사 설치
 
 Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라이브 종속성 유효성 검사** 구성 요소를 설치 합니다.
 
-1. **Visual Studio 설치 관리자**를 엽니다. Windows 시작 메뉴에서 또는 Visual Studio 내에서 **도구** > 도구 **및 기능 가져오기**를 선택 하 여 열 수 있습니다.
+1. **Visual Studio 설치 관리자**를 엽니다. Windows 시작 메뉴에서 또는 **도구**  >  **도구 및 기능 가져오기**를 선택 하 여 Visual Studio 내에서 열 수 있습니다.
 
 1. **개별 구성 요소** 탭을 선택합니다.
 
@@ -67,7 +67,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
 빈 코드 맵을 추가 하려면 다음을 수행 합니다.
 
-1. **솔루션 탐색기**에서 최상위 솔루션 노드의 바로 가기 메뉴를 엽니다. **추가** > **새 항목**을 선택 합니다.
+1. **솔루션 탐색기**에서 최상위 솔루션 노드의 바로 가기 메뉴를 엽니다. **Add**  >  **새 항목**추가를 선택 합니다.
 
 2. **새 항목 추가** 대화 상자의 **설치 됨**에서 **일반** 범주를 선택 합니다.
 
@@ -78,13 +78,13 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
    솔루션의 **솔루션 항목** 폴더에 빈 지도가 표시 됩니다.
 
-마찬가지로 새 코드 **맵** 또는 **파일** > **새** > **파일** > **아키텍처** 를 선택 하 여 새 코드 맵 파일을 솔루션에 추가 하지 않고 만들 수 있습니다.
+마찬가지로 **아키텍처**  >  **새 코드 맵** 또는 **파일**  >  **새**  >  **파일**을 선택 하 여 새 코드 맵 파일을 솔루션에 추가 하지 않고 만들 수 있습니다.
 
 ## <a name="generate-a-code-map-for-your-solution"></a>솔루션에 대 한 코드 맵 생성
 
 솔루션의 모든 종속성을 보려면 다음을 수행 합니다.
 
-1. 메뉴 모음에서 **아키텍처** > **솔루션에 대 한 코드 맵 생성**을 선택 합니다. 코드를 마지막으로 빌드한 이후 변경 **되지 않은 경우에는 빌드를 사용 하지 않고 솔루션에 대 한 코드 맵을 생성** > **아키텍처** 를 선택할 수 있습니다.
+1. 메뉴 모음에서 **아키텍처**  >  **솔루션에 대 한 코드 맵 생성**을 선택 합니다. 코드를 마지막으로 빌드한 이후 변경 **Architecture**  >  **되지 않은 경우에는 빌드하는 대신 솔루션에 대 한 코드 맵 생성** 아키텍처를 선택할 수 있습니다.
 
    ![코드 맵 생성 명령](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -104,7 +104,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
    ![코드 맵에서 노드 확장](../modeling/media/dependencygraph_containment.png)
 
-   또는 항목을 선택하고 더하기 키( **+** )를 눌러서 키보드를 사용합니다. 코드를 더 자세히 살펴보려면 네임스페이스, 형식 및 멤버에 대해 같은 작업을 수행합니다.
+   또는 항목을 선택 하 고 더하기 키 ()를 눌러 키보드를 사용 **+** 합니다. 코드를 더 자세히 살펴보려면 네임스페이스, 형식 및 멤버에 대해 같은 작업을 수행합니다.
 
    > [!TIP]
    > 마우스, 키보드 및 터치를 사용 하 여 코드 맵으로 작업 하는 방법에 대 한 자세한 내용은 [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)을 참조 하세요.
@@ -149,7 +149,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 또한 다음을 참조하세요.
 
 - [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)
-- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - [분석기를 실행](../modeling/find-potential-problems-using-code-map-analyzers.md) 하 여 코드의 잠재적 문제 찾기
 
 ## <a name="view-specific-dependencies-in-a-code-map"></a>코드 맵에서 특정 종속성 보기
@@ -162,7 +162,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
    ![매핑할 항목 선택](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. **솔루션 탐색기** 도구 모음에서 **코드 맵에 표시** 를 선택 하 ![선택한 노드에서 새 그래프 만들기 단추](../modeling/media/createnewgraphfromselectedbutton.gif)합니다. 또는 항목 그룹 하나 또는 하나에 대 한 바로 가기 메뉴를 열고 **코드 맵에 표시**를 선택 합니다.
+1. **솔루션 탐색기** 도구 모음에서 **코드 맵에 표시** 를 선택 하 여 ![ 선택한 노드에서 새 그래프 만들기 단추를 선택 ](../modeling/media/createnewgraphfromselectedbutton.gif) 합니다. 또는 항목 그룹 하나 또는 하나에 대 한 바로 가기 메뉴를 열고 **코드 맵에 표시**를 선택 합니다.
 
    **솔루션 탐색기**, **클래스 뷰**또는 **개체 브라우저**에서 [신규](#add-a-code-map) 또는 기존 코드 맵으로 항목을 끌어올 수도 있습니다. 항목에 대 한 부모 계층 구조를 포함 하려면 항목을 끄는 동안 **ctrl** 키를 누르고, 코드 맵 도구 모음에서 **부모 포함** 단추를 사용 하 여 기본 작업을 지정 합니다. **Windows 탐색기**에서와 같이 Visual Studio 외부에서 어셈블리 파일을 끌어올 수도 있습니다.
 
@@ -177,19 +177,19 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
    ![코드 맵에서 노드 확장](../modeling/media/dependencygraph_containment.png)
 
-   모든 항목을 확장 하려면 **Ctrl**+**를**사용 하 여 항목을 선택한 다음 맵에 대 한 바로 가기 메뉴를 열고 **그룹** > **확장**을 선택 합니다. 그러나 이 옵션은 모든 그룹을 확장할 때 사용할 수 없는 맵 또는 메모리 문제가 발생하는 경우 사용할 수 없습니다.
+   모든 항목을 확장 하려면 **Ctrl**A를 사용 하 여 항목을 선택한 + **A**다음 맵에 대 한 바로 가기 메뉴를 열고 **그룹**  >  **확장**을 선택 합니다. 그러나 이 옵션은 모든 그룹을 확장할 때 사용할 수 없는 맵 또는 메모리 문제가 발생하는 경우 사용할 수 없습니다.
 
 5. 필요한 경우 클래스 및 멤버 수준 바로 아래에서 관심 있는 항목을 계속 확장 합니다.
 
    ![클래스 및 멤버 수준으로 그룹 확장](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   코드에 있지만 지도에 표시 되지 않는 멤버를 확인 하려면 그룹의 왼쪽 위 모퉁이에 있는 **다시 페치 자식** 아이콘 ![다시 페치 children 아이콘](../modeling/media/dependencygraph_deletednodesicon.png)을 클릭 합니다.
+   코드에 있지만 맵에 표시 되지 않는 멤버를 확인 하려면 그룹의 왼쪽 위 모퉁이에 있는 **다시 페치 자식** 아이콘 ![ 다시 페치 자식 아이콘을 클릭 합니다 ](../modeling/media/dependencygraph_deletednodesicon.png) .
 
-6. 맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 하나 이상의 항목을 선택 하 고 바로 가기 메뉴를 연 다음 맵에 추가할 관련 항목 형식에 대 한 **표시** 옵션을 선택 합니다. 예를 들면 다음과 같습니다.:
+6. 맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 하나 이상의 항목을 선택 하 고 바로 가기 메뉴를 연 다음 맵에 추가할 관련 항목 형식에 대 한 **표시** 옵션을 선택 합니다. 예를 들면 다음과 같습니다.
 
     **어셈블리**인 경우 다음을 선택합니다.
 
-    |||
+    |옵션|설명|
     |-|-|
     |**참조된 어셈블리 표시**|이 어셈블리가 참조하는 어셈블리를 추가합니다. **외부** 그룹에 외부 어셈블리가 나타납니다.|
     |**참조하는 어셈블리 표시**|솔루션에 이 어셈블리를 참조하는 어셈블리를 추가합니다.|
@@ -198,7 +198,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
     **클래스** 또는 **인터페이스**인 경우 다음을 선택합니다.
 
-    |||
+    |옵션|설명|
     |-|-|
     |**기본 형식 표시**|클래스의 경우 기본 클래스 및 구현된 인터페이스를 추가합니다.<br /><br /> 인터페이스의 경우 기본 인터페이스를 추가합니다.|
     |**파생 형식 표시**|클래스의 경우 파생된 클래스를 추가합니다.<br /><br /> 인터페이스의 경우 파생된 인터페이스와 구현 클래스 또는 구조체를 추가합니다.|
@@ -211,7 +211,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
      **메서드**인 경우 다음을 선택합니다.
 
-    |||
+    |옵션|설명|
     |-|-|
     |**호출된 메서드 표시**|이 메서드가 호출하는 메서드를 추가합니다.|
     |**참조된 필드 표시**|이 메서드가 참조하는 필드를 추가합니다.|
@@ -221,14 +221,14 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
      **필드** 또는 **속성**인 경우 다음을 선택합니다.
 
-    |||
+    |옵션|설명|
     |-|-|
     |**포함하는 형식 표시**|부모 형식을 추가합니다.|
     |**포함하는 형식, 네임스페이스 및 어셈블리 표시**|부모 컨테이너 계층 구조를 추가합니다.|
 
     ![이 멤버에 의해 호출된 메서드 표시](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. 맵에 관계가 표시됩니다. 이 예제에서 맵은 `Find` 메서드와 솔루션에서 또는 외부적으로 호출 된 메서드를 보여 줍니다.
+7. 맵에 관계가 표시됩니다. 이 예제에서 맵은 메서드에 의해 호출 되는 메서드와 `Find` 솔루션에서 또는 외부에서 해당 위치를 표시 합니다.
 
    ![코드 맵에 특성 종속성 표시](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -236,11 +236,11 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
    ![필터 창을 사용하여 디스플레이 단순화](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [비디오: Visual Studio 2015 코드 맵을 사용 하 여 코드에서 디자인 이해](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
-- [디버그하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [디버깅하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)
-- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

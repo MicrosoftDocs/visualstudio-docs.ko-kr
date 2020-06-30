@@ -1,7 +1,7 @@
 ---
 title: '연습: 사용자 지정 텍스트 템플릿 호스트 만들기'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593540"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532225"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
 
@@ -35,7 +35,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 - 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습을 완료하려면 다음이 필요합니다.
 
@@ -51,9 +51,9 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 2. 다음 어셈블리에 대한 참조를 추가합니다.
 
-   - **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **VisualStudio \* 입니다. 0**
 
-   - **VisualStudio-10.0 및 이후 버전**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 이상 버전**
 
 3. Program.cs 또는 Module1.vb 파일의 코드를 다음 코드로 바꿉니다.
 
@@ -714,7 +714,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
    End Namespace
    ```
 
-4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 경우 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
+4. 의 경우에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 만 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
 
 5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
 
@@ -726,11 +726,11 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>텍스트 템플릿을 만들어 사용자 지정 호스트를 테스트하려면
 
-1. 텍스트 파일을 만들고 이름을 `TestTemplate.tt`로 합니다.
+1. 텍스트 파일을 만들고 이름을로 `TestTemplate.tt` 합니다.
 
      메모장 등의 모든 텍스트 편집기를 사용하여 파일을 만들 수 있습니다.
 
-2. 파일에 다음 코드를 추가합니다.
+2. 파일에 다음을 추가합니다.
 
     > [!NOTE]
     > 텍스트 템플릿의 프로그래밍 언어는 사용자 지정 호스트의 프로그래밍 언어와 일치하지 않아도 됩니다.
@@ -773,7 +773,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
     ```
 
-3. 파일을 저장한 후 닫습니다.
+3. 파일을 저장하고 닫습니다.
 
 ### <a name="to-test-the-custom-host"></a>사용자 지정 호스트를 테스트하려면
 
@@ -786,7 +786,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 주소를 입력 하는 대신 **Windows 탐색기** 에서 customhost .exe로 이동 하 여 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
+    > 주소를 입력 하는 대신 **Windows 탐색기** 에서 CustomHost.exe 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
 
 3. 공백을 입력합니다.
 
@@ -821,6 +821,6 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성 된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

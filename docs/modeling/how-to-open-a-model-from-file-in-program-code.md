@@ -1,18 +1,18 @@
 ---
 title: '방법: 프로그램 코드로 파일에서 모델 열기'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594619"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532485"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 
@@ -39,9 +39,9 @@ Visual Studio 응용 프로그램 프로젝트에 다음 참조를 추가 합니
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - **참조 추가** 대화 상자의 **.net** 탭에 표시 되지 않는 경우 **찾아보기** 탭을 클릭 하 고 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`로 이동 합니다.
+  - **참조 추가** 대화 상자의 **.net** 탭에 표시 되지 않는 경우 **찾아보기** 탭을 클릭 하 고로 이동 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` 합니다.
 
-- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사*의 형식입니다. *프로젝트*`.Dsl.dll`.
+- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사*의 형식입니다. *프로젝트* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>DSL의 중요 한 클래스
 
@@ -49,11 +49,11 @@ DSL을 읽는 코드를 작성 하려면 먼저 DSL에 의해 생성 된 클래�
 
 다음은 식별 해야 하는 클래스입니다.
 
-- 해당 *클래스* -`DslDefinition.dsl`의 루트 클래스 이름입니다.
+- 해당 *클래스* -의 루트 클래스 이름입니다 `DslDefinition.dsl` .
 
-- 원하는 *이름* `SerializationHelper`-이 클래스는 DSL 프로젝트의 `SerializationHelper.cs`에 정의 됩니다.
+- *이름* `SerializationHelper` -이 클래스는 `SerializationHelper.cs` DSL 프로젝트에서에 정의 됩니다.
 
-- 원하는 *이름* `DomainModel`-이 클래스는 DSL 프로젝트의 `DomainModel.cs`에 정의 됩니다.
+- *이름* `DomainModel` -이 클래스는 `DomainModel.cs` DSL 프로젝트에서에 정의 됩니다.
 
 ## <a name="read-from-a-file"></a>파일에서 읽습니다.
 

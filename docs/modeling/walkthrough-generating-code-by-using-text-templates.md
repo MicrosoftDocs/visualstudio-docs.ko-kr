@@ -1,7 +1,7 @@
 ---
 title: '연습: 텍스트 템플릿을 사용하여 코드 생성'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593511"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532062"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 
@@ -83,7 +83,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 모든 코드 프로젝트에 이 방법을 적용할 수 있습니다. 이 연습에서는 C# 프로젝트를 사용하며, 테스트를 목적으로 콘솔 애플리케이션을 사용합니다.
 
-1. **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **프로젝트**를 클릭 합니다.
 
 2. **Visual C#** 노드를 클릭한 다음, **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.
 
@@ -93,7 +93,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 파일은 템플릿이 읽을 수 있도록 프로젝트의 일부여야 하지만, 컴파일된 애플리케이션에 빌드되지는 않습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** 를 클릭한 다음 **새 항목**을 클릭합니다.
+1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 **새 항목**을 클릭 합니다.
 
 2. **새 항목 추가** 대화 상자의 **템플릿** 창에서 **XML 파일** 을 선택합니다.
 
@@ -103,7 +103,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ### <a name="add-a-test-code-file"></a>테스트 코드 파일 추가
 
-C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들면 다음과 같습니다.:
+C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 using System;
@@ -270,7 +270,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>Visual Studio API에 액세스
 
-`<#@template#>` 지시문의 `hostspecific` 특성을 설정 하면 템플릿이 Visual Studio API에 대 한 액세스 권한을 얻을 수 있습니다. 템플릿에서는 이 특성을 사용하여 프로젝트 파일의 위치를 가져올 수 있는데, 이렇게 하면 템플릿 코드에서 절대 파일 경로를 사용하지 않아도 됩니다.
+`hostspecific`지시문의 특성을 설정 `<#@template#>` 하면 템플릿이 VISUAL Studio API에 대 한 액세스 권한을 얻을 수 있습니다. 템플릿에서는 이 특성을 사용하여 프로젝트 파일의 위치를 가져올 수 있는데, 이렇게 하면 템플릿 코드에서 절대 파일 경로를 사용하지 않아도 됩니다.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -428,7 +428,7 @@ XML 스키마가 변경되면 새 클래스를 쉽게 생성할 수 있습니다
 
 **오류 목록**에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)
