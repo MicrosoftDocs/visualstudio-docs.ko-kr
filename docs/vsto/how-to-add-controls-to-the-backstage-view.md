@@ -1,7 +1,7 @@
 ---
 title: '방법: Backstage 보기에 컨트롤 추가 '
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5b4ea5cdcd869f16f987e9431359511831af9573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986017"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538348"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>방법: Backstage 보기에 컨트롤 추가
   리본 디자이너를 사용 하 여 **파일** 탭을 클릭할 때 열리는 메뉴에 컨트롤을 추가할 수 있습니다. 응용 프로그램을 실행 하면 **파일** 탭에 추가 하는 컨트롤이 **추가 기능**이라는 그룹으로 표시 됩니다.
@@ -62,7 +62,7 @@ ms.locfileid: "72986017"
 
 4. 컨트롤을 끌어 메뉴의 새 위치로 이동 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [리본 XML](../vsto/ribbon-xml.md)

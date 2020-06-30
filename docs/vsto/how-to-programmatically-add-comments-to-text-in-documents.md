@@ -1,7 +1,7 @@
 ---
-title: '방법: 프로그래밍 방식으로 문서의 텍스트에 주석 추가'
+title: '방법: 프로그래밍 방식으로 문서의 텍스트에 메모 추가'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967672"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538115"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>방법: 프로그래밍 방식으로 문서의 텍스트에 주석 추가
-  문서 클래스의 주석 속성 다양 한 Microsoft Office Word 문서에서 텍스트에 메모를 추가 합니다.
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>방법: 프로그래밍 방식으로 문서의 텍스트에 메모 추가
+  문서 클래스의 Comments 속성은 Microsoft Office Word 문서에서 텍스트 범위에 주석을 추가 합니다.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -46,6 +46,6 @@ ms.locfileid: "62967672"
 ## <a name="robust-programming"></a>강력한 프로그래밍
  Word에서 메모에 추가하는 사용자 이니셜을 변경하려면 <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> 속성을 사용합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 문서에서 모든 메모 제거](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [문서 호스트 항목](../vsto/document-host-item.md)

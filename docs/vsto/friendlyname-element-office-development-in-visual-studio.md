@@ -1,9 +1,9 @@
 ---
-title: '&lt;friendlyName&gt; 요소 (Visual Studio에서 Office 개발)'
+title: '&lt;friendlyName &gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d038e825173f95ddfe4106022c7c9924090b3a5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6629212fcc981ba3decb3b02d63975bc9826dc1f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972358"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541663"
 ---
-# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; 요소 (Visual Studio에서 Office 개발)
+# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName &gt; 요소 (Visual Studio에서 Office 개발)
   `friendlyName` 네임스페이스의 `vstov4` 요소는 설치된 프로그램 목록에 표시되는 이름을 저장합니다.
 
 ## <a name="syntax"></a>구문
@@ -39,7 +39,7 @@ ms.locfileid: "62972358"
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 
 ### <a name="description"></a>설명
- 다음 코드 예제에서는 `friendlyName` 을 사용하여 배포된 애플리케이션 수준 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.
+ 다음 코드 예제에서는 `friendlyName` 을 사용하여 배포된 애플리케이션 수준 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드
 
@@ -51,6 +51,6 @@ ms.locfileid: "62972358"
 
 ## <a name="see-also"></a>참고 항목
 
-- [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
-- [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce 애플리케이션 매니페스트](../deployment/clickonce-application-manifest.md)
+- [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
+- [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d5dfe0d5e5e9af35334629bd2bcd27f414dac11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154180"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540311"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Visual Studio에서 스토어 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "68154180"
 
 ## <a name="in-this-section"></a>단원 내용
 
-|||
+|제목|설명|
 |-|-|
 |[로컬 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-the-local-machine.md)|Visual Studio 디바이스에서 Windows 스토어 앱을 실행합니다.|
 |[시뮬레이터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-in-the-simulator.md)|터치 및 방향과 같은 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 기능을 시뮬레이트하는 Windows 스토어 앱을 데스크톱에서 실행합니다.|
