@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289393"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547617"
 ---
 # <a name="user-accounts-and-updates"></a>사용자 계정 및 업데이트
 
@@ -27,7 +27,7 @@ Visual Studio는 그 자체로도 연결된 환경입니다. 로그인하면 사
 
 ## <a name="in-this-section"></a>단원 내용
 
-|||
+|제목|설명|
 |-|-|
 |[Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)|Visual Studio에 로그인하는 방법과 이유를 설명합니다.|
 |[여러 사용자 계정으로 작업](../ide/work-with-multiple-user-accounts.md)|여러 Microsoft 계정 및/또는 직장이나 학교 계정을 연결하여 모든 계정에서 리소스 및 서비스에 액세스할 수 있도록 하는 방법을 설명합니다.|

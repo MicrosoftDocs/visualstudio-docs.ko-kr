@@ -1,7 +1,7 @@
 ---
-title: Office 솔루션의 배포 매니페스트
+title: Office 솔루션에 대 한 배포 매니페스트
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972397"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547552"
 ---
-# <a name="deployment-manifests-for-office-solutions"></a>Office 솔루션의 배포 매니페스트
-  배포 매니페스트는 Office 솔루션의 배포 설정에 설명 하 고 응용 프로그램의 현재 버전을 식별 하는 XML 파일입니다.
+# <a name="deployment-manifests-for-office-solutions"></a>Office 솔루션에 대 한 배포 매니페스트
+  배포 매니페스트는 Office 솔루션의 배포 설정을 설명 하 고 현재 응용 프로그램 버전을 식별 하는 XML 파일입니다.
 
- Visual Studio에서 Office 개발에 사용 하는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 에 정의 된 배포 매니페스트 스키마를 [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md) 참조.
+ Visual Studio에서 Office 개발은 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md) 참조에 정의 된 배포 매니페스트 스키마를 사용 합니다.
 
 ## <a name="remarks"></a>설명
- Office 솔루션에 대 한 배포 매니페스트 파일에는 현재 버전 및 기타 배포 설정을 식별 합니다. 응용 프로그램 매니페스트를 참조 하 고 솔루션 및 솔루션의 모든 파일 내에서 현재 버전을 설명 합니다.
+ Office 솔루션에 대 한 배포 매니페스트 파일은 현재 버전과 기타 배포 설정을 식별 합니다. 응용 프로그램 매니페스트를 참조 하 고 솔루션의 내에 있는 솔루션 및 모든 파일의 현재 버전을 설명 합니다.
 
 ## <a name="file-name-syntax"></a>파일 이름 구문
- 배포 매니페스트 파일의 이름으로 끝나야 합니다 *.vsto* 확장 합니다. 표준 이지만 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 배포 매니페스트 파일을 처리 하도록 Visual Studio Tools for Office runtime 사용 하도록 설정 하려면 확장명이 달라 집니다.
+ 배포 매니페스트 파일의 이름은 *.vsto* 확장명으로 끝나야 합니다. 표준 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 배포 매니페스트 이지만 확장은 Visual Studio Tools for Office 런타임에서 파일을 처리할 수 있도록 하는 것과 다릅니다.
 
 ## <a name="example"></a>예제
- 다음 코드 예제는 Visual Studio Tools for Office 솔루션에 대 한 배포 매니페스트를 보여 줍니다.
+ 다음 코드 예제에서는 Visual Studio Tools for Office 솔루션에 대 한 배포 매니페스트를 보여 줍니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -183,6 +183,6 @@ ms.locfileid: "62972397"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
+- [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)

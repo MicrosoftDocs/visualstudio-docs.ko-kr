@@ -1,7 +1,7 @@
 ---
 title: '방법: 서비스의 데이터로 문서 채우기'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985865"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547149"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>방법: 서비스의 데이터로 문서 채우기
 
@@ -45,14 +45,14 @@ Windows Forms 프로젝트에서와 동일한 방식으로 Microsoft Office에 �
 
      사용 되는 메서드는 웹 서비스에서 제공 하는 기능에 따라 달라 집니다.
 
-6. 웹 서비스의 데이터 응답을 <xref:System.Windows.Forms.BindingSource>의 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 속성에 할당 합니다.
+6. 웹 서비스의 데이터 응답을의 속성에 할당 합니다 <xref:System.Windows.Forms.BindingSource.DataSource%2A> <xref:System.Windows.Forms.BindingSource> .
 
 프로젝트를 실행하면 컨트롤이 데이터 원본 첫 번째 레코드를 표시합니다. <xref:System.Windows.Forms.BindingSource>의 개체를 사용하여 통화 이벤트를 처리하여 레코드를 스크롤하게 할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)
+- [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [방법: 데이터베이스의 데이터로 워크시트 채우기](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)

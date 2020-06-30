@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c91a7c9833d3d9d5ae283c28ae4d437bd07734
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4267b4f55f78106a4d1e8f3b2f9b296be9ddf618
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658752"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546538"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: 보안 형식은 필드를 노출하면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|SecuredTypesShouldNotExposeFields|
 |CheckId|CA2112|
@@ -45,7 +45,7 @@ ms.locfileid: "72658752"
  보안 문제 및 좋은 디자인의 경우 모두 public 필드를 public으로 설정 하 여 위반 문제를 해결 해야 합니다. 필드에 보안을 유지 해야 하는 정보가 포함 되어 있지 않고 필드의 내용을 사용 하지 않을 경우이 규칙에서 경고를 표시 하지 않을 수 있습니다.
 
 ## <a name="example"></a>예제
- 다음 예제는 보안 되지 않은 필드, 라이브러리 형식의 인스턴스를 만들 수 있는 형식 (`Distributor`), 라이브러리 형식의 인스턴스를 만들 수 있는 형식 (), 해당 인스턴스를 만들 수 있는 권한이 없는 인스턴스를 만들 수 있는 응용 프로그램 코드 및이를 읽을 수 있는 응용 프로그램 코드와 함께 `SecuredTypeWithFields` 구성 됩니다. 인스턴스 필드에는 형식을 보호 하는 권한이 없는 경우에도 마찬가지입니다.
+ 다음 예제는 `SecuredTypeWithFields` 보안 되지 않은 필드가 있는 라이브러리 형식 (), `Distributor` 라이브러리 형식의 인스턴스를 만들 수 있는 형식 (), 라이브러리 형식의 인스턴스를 만들 수 있는 형식 (), 해당 형식에 대 한 인스턴스를 만들 수 있는 권한이 없는 경우에도 인스턴스 필드를 읽을 수 있는 응용 프로그램 코드 등의 형식으로 구성 되어 있습니다.
 
  다음 라이브러리 코드는 규칙을 위반 합니다.
 
@@ -64,11 +64,11 @@ ms.locfileid: "72658752"
  이 예제의 결과는 다음과 같습니다.
 
  **SecuredTypeWithFields의 인스턴스를 만듭니다.** 
-**보안 형식 필드: 22, 33** 
-**보안 형식의 필드를 변경** 하는 중입니다. 
-**캐시 된 개체 필드: 99, 33**
+ **보안 형식 필드: 22, 33** 
+ **보안 형식의 필드** 
+ 를 변경 하는 중 ... **캐시 된 개체 필드: 99, 33**
 ## <a name="related-rules"></a>관련 규칙
- [CA1051: 표시되는 인스턴스 필드를 선언하지 마십시오.](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [링크 요청](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [데이터 및 모델링](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

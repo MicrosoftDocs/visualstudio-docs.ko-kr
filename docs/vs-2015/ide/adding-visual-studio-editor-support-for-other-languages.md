@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620780"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548111"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,46 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
  Visual Studio는 현재 [TextMate 문법](https://manual.macromates.com/en/language_grammars)을 사용하여 다음 언어에 대해 구문 색 지정 및 기본 문 완성을 지원합니다. 자주 사용하는 언어가 표에 없는 경우 걱정하지 마세요. 직접 추가할 수 있습니다.
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|이동|JavaDoc|Objective-C|ShaderLab|Visual C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Make|Ruby|TypeScript|YAML|
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- 이동
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Make
+- Ruby
+- TypeScript
+- YAML
 
  구문 색 지정 및 기본 문 완성 기능 외에도 Visual Studio에는 [탐색](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) 기능이 있습니다. 이 기능을 사용하면 코드 파일, 파일 경로 및 코드 기호를 빠르게 검색할 수 있습니다. Visual Studio는 다음 언어에 대해 탐색 기능을 지원합니다.
 
-- 이동
+- Go
 
 - Java
 
@@ -74,13 +102,13 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
 |폴더 이름|설명|
 |-----------------|-----------------|
-|\\ *\<언어 이름>*|언어 폴더입니다. *\<언어 이름>* 을 해당 언어의 이름으로 바꿉니다. 예를 들어 **\Matlab**으로 바꿉니다.|
+|\\*\<language name>*|언어 폴더입니다. *\<language name>* 언어의 이름으로 대체 합니다. 예를 들어 **\Matlab**으로 바꿉니다.|
 |\Syntaxes|문법 폴더입니다. 언어의 문법 .json 파일(예: **Matlab.json**)이 들어 있습니다.|
 |\Snippets|코드 조각 폴더입니다. 언어의 코드 조각이 들어 있습니다.|
 
- Windows에서 %userprofile%은 c:\Users\\ *\<사용자 이름>* 으로 확인됩니다. 시스템에 extensions 폴더가 없는 경우 새로 만들어야 합니다. 폴더가 이미 있는 경우 숨겨집니다.
+ Windows 에서% userprofile%은 c:\Users 경로를 확인 합니다. \\ *\<user name>* 시스템에 extensions 폴더가 없는 경우 새로 만들어야 합니다. 폴더가 이미 있는 경우 숨겨집니다.
 
- TextMate 문법을 만드는 방법에 대 한 자세한 내용은 [TextMate – 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [Textmate 번들에 대한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조하세요.
+ TextMate 문법을 만드는 방법에 대 한 자세한 내용은 [textmate – 언어 문법 소개: HTML에 포함 된 소스 코드 구문 강조 표시를 추가 하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [textmate 번들에 대 한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대 한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
- [Visual Studio 2013 향상 된 [Walkthrough로 이동 합니다](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) . @No__t_1Walkthrough ](../ide/walkthrough-creating-a-code-snippet.md) 코드 조각 만들기: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)
+## <a name="see-also"></a>참고 항목
+ [Visual Studio 2013 탐색 향상](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md) [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)

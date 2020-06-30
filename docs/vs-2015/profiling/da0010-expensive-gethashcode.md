@@ -14,19 +14,19 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0a2947f0bd6758de62a4a11d78390d38a503271
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: af234cd130d06c2a76c5ddbc958a67eb064d9128
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919038"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547578"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode의 부담이 큽니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대 한 최신 설명서는 [DA0010: 값비싼 GetHashCode](/visualstudio/profiling/da0010-expensive-gethashcode)를 참조 하세요.  
 
-|||  
+|항목|값|  
 |-|-|  
 |규칙 ID|DA0010|  
 |범주|.NET Framework 사용|  

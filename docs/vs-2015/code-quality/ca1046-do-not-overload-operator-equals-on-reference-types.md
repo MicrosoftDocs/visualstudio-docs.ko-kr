@@ -15,21 +15,21 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 519faf2d49cb74d60d342d6bcf449f211076b0b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 118c29473db09d5ed0a4fa447e27e593a88f98b3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661092"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546759"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: 참조 형식에 같음 연산자를 오버로드하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
-|범주|Microsoft.Design|
+|범주|Microsoft 디자인|
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
@@ -56,12 +56,12 @@ ms.locfileid: "72661092"
 
  이 예제의 결과는 다음과 같습니다.
 
- **a = new (2, 2) 및 b = new (2, 2)가 동일 한가요?
-** **c와 a가 같지 않나요? 예**
-**b 및 a는 = =?
-** **c와 a가 = =? 예**
+ **a = new (2, 2) 및 b = new (2, 2)가 동일 한가요? ** 
+ **C와 a가 같지 않나요? 예** 
+ **b와 a는 = =? ** 
+ **C와 a가 = =? 예**
 ## <a name="related-rules"></a>관련 규칙
- [CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+ [CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.Object.Equals%2A?displayProperty=fullName> [같음 연산자](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ <xref:System.Object.Equals%2A?displayProperty=fullName>[같음 연산자](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

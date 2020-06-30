@@ -1,7 +1,7 @@
 ---
 title: '방법: 데이터베이스의 데이터로 문서 채우기'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 907b3deeadd0a56f9e47a6e17a40579a0c9ffa64
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985881"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547201"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>방법: 데이터베이스의 데이터로 문서 채우기
 
@@ -66,10 +66,10 @@ Windows Forms 프로젝트의 데이터에 액세스하는 것과 동일한 방�
 
 형식화 된 데이터 집합 및 데이터베이스에 업데이트를 보내는 방법에 대 한 자세한 내용은 [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)
+- [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

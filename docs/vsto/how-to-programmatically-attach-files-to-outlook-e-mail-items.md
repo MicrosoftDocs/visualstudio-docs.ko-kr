@@ -1,7 +1,7 @@
 ---
-title: '방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일을 첨부'
+title: '방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575626"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546135"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일을 첨부
-  이 예제에서는 파일을 새 메일 항목에 연결 및 Armando Pinto로 보냅니다. 받는 사람으로 Armando Pinto 사람의 있다고 가정 하는 합니다.
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부
+  이 예제에서는 새 메일 항목에 파일을 첨부 하 고 Armando에 전달 합니다. 이 예제에서는 Ar마나트 이라는 사용자가 받는 사람으로 존재 한다고 가정 합니다.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "62575626"
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [메일 항목 작업](../vsto/working-with-mail-items.md)
 - [방법: 프로그래밍 방식으로 전자 메일 보내기](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
 - [방법: 프로그래밍 방식으로 Outlook 전자 메일 항목의 첨부 파일 저장](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)

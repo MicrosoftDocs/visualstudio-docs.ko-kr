@@ -1,7 +1,7 @@
 ---
 title: 종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597232"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546927"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가
 
@@ -87,11 +87,11 @@ Visual Studio에서 사용자는 소스 코드가 종속성 다이어그램의 �
 
     2. **새 자산 추가** 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **Microsoft.VisualStudio.MefComponent**
+         **유형**  =  **VisualStudio 구성 요소**
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *유효성 검사기 프로젝트*
+         **프로젝트**  =  *유효성 검사기 프로젝트*
 
 5. 또한 레이어 유효성 검사로 추가해야 합니다.
 
@@ -99,11 +99,11 @@ Visual Studio에서 사용자는 소스 코드가 종속성 다이어그램의 �
 
     2. **새 자산 추가** 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**을 참조하세요. 이는 드롭다운 목록의 옵션 중 하나가 아닙니다. 키보드에서 입력해야 합니다.
+         **유형**  =  **VisualStudio. microsoft.visualstudio.architecturetools.layer.validator**. 이는 드롭다운 목록의 옵션 중 하나가 아닙니다. 키보드에서 입력해야 합니다.
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *유효성 검사기 프로젝트*
+         **프로젝트**  =  *유효성 검사기 프로젝트*
 
 6. 레이어 유효성 검사 프로젝트로 돌아가서 다음 프로젝트 참조를 추가합니다.
 
@@ -125,7 +125,7 @@ Visual Studio에서 사용자는 소스 코드가 종속성 다이어그램의 �
 
 9. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 VSIX를 설치 하려면 VSIX 프로젝트의 **bin** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기에서 VSIX 파일을 두 번 클릭합니다.
 
-## <a name="programming"></a> 프로그래밍 유효성 검사
+## <a name="programming-validation"></a><a name="programming"></a>프로그래밍 유효성 검사
 
 레이어 유효성 검사 확장을 정의하려면 다음 특징을 가진 클래스를 정의합니다.
 
@@ -194,7 +194,7 @@ Visual Studio에서 사용자는 소스 코드가 종속성 다이어그램의 �
 
 코드에서 레이어에서 요소로 연결된 링크에는 “Represents” 범주가 있습니다.
 
-## <a name="debugging"></a> 유효성 검사 디버그
+## <a name="debugging-validation"></a><a name="debugging"></a>디버깅 유효성 검사
 
 레이어 유효성 검사 확장을 디버그하려면 Ctrl+F5를 누릅니다. Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 레이어 모델을 열거나 만듭니다. 이 모델은 코드와 연결되어야 하고 종속성을 하나 이상 포함해야 합니다.
 
@@ -226,7 +226,7 @@ Visual Studio의 실험적 인스턴스를 처음으로 시작 하 여 유효성
 
 적합한 Visual Studio 버전이 설치된 컴퓨터에 유효성 검사 확장을 설치하려면 대상 컴퓨터에서 VSIX 파일을 엽니다.
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a>예제 코드
 
 ```csharp
 using System;
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램 확장](../modeling/extend-layer-diagrams.md)

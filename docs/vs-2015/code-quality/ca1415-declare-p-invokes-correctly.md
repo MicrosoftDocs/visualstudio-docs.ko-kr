@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9931d29c818d95785146558637c32237e2c5276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652678"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547851"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invoke를 올바르게 선언하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
@@ -36,7 +36,7 @@ ms.locfileid: "72652678"
  플랫폼 호출 메서드가 잘못 선언 되었습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 플랫폼 호출 메서드는 비관리 코드에 액세스 하 고 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 또는 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>의 `Declare` 키워드를 사용 하 여 정의 됩니다. 현재이 규칙은 겹친 구조체 매개 변수에 대 한 포인터를 포함 하는 Win32 함수를 대상으로 하는 플랫폼 호출 메서드 선언을 검색 하 고 해당 관리 되는 매개 변수는 <xref:System.Threading.NativeOverlapped?displayProperty=fullName> 구조체에 대 한 포인터가 아닙니다.
+ 플랫폼 호출 메서드는 비관리 코드에 액세스 하 고 또는의 키워드를 사용 하 여 정의 됩니다 `Declare` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . 현재이 규칙은 겹친 구조체 매개 변수에 대 한 포인터를 포함 하는 Win32 함수를 대상으로 하는 플랫폼 호출 메서드 선언을 검색 하 고 해당 관리 되는 매개 변수는 구조체에 대 한 포인터가 아닙니다 <xref:System.Threading.NativeOverlapped?displayProperty=fullName> .
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 플랫폼 호출 메서드를 올바르게 선언 합니다.
@@ -49,5 +49,5 @@ ms.locfileid: "72652678"
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DeclarePInvokes/cs/FxCop.Interoperability.DeclarePInvokes.cs#1)]
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [비관리 코드와의 상호 운용](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

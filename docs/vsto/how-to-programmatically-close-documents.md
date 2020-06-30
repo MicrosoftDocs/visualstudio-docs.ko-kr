@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서 닫기'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 504fe863c746a788e797d3a84c4cd0b3d6c3d19b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422467"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547461"
 ---
 # <a name="how-to-programmatically-close-documents"></a>방법: 프로그래밍 방식으로 문서 닫기
   활성 문서를 닫거나 닫을 문서를 지정할 수 있습니다.
@@ -48,7 +48,7 @@ ms.locfileid: "63422467"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
 
-## <a name="close-a-document-that-you-specify-by-name"></a>이름으로 지정 하는 문서 닫기
+## <a name="close-a-document-that-you-specify-by-name"></a>이름으로 지정한 문서를 닫습니다.
  이름으로 지정한 문서를 닫는 방법은 VSTO 추가 기능과 문서 수준 사용자 지정에서 동일합니다.
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>이름으로 지정한 문서를 닫으려면
@@ -61,9 +61,9 @@ ms.locfileid: "63422467"
      [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)
 - [방법: 프로그래밍 방식으로 문서 저장](../vsto/how-to-programmatically-save-documents.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
-- [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

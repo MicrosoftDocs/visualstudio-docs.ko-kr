@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967385"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546551"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 요소
-  키/값 형식의 SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목입니다. 키와 값을 모두 문자열 이어야 합니다.
+  SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목으로, 키/값 형식으로 되어 있습니다. 키와 값은 모두 문자열 이어야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,8 +36,8 @@ ms.locfileid: "62967385"
 
 |특성|설명|
 |---------------|-----------------|
-|**키**|필요한 **xs: string** 특성입니다.<br /><br /> 저장 및 검색 데이터 항목에 사용 되는 키입니다.|
-|**값**|필요한 **xs: string** 특성입니다.<br /><br /> 데이터 항목의 값입니다.|
+|**Key**|필수 **xs: string** 특성입니다.<br /><br /> 데이터 항목을 저장 하 고 검색 하는 데 사용 되는 키입니다.|
+|**값**|필수 **xs: string** 특성입니다.<br /><br /> 데이터 항목의 값입니다.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
@@ -46,19 +46,19 @@ ms.locfileid: "62967385"
 
 |요소|설명|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|SharePoint 프로젝트 항목에 연관 된 사용자 지정 데이터 항목의 컬렉션을 나타냅니다.|
+|[ExtensionData](../sharepoint/extensiondata-element.md)|SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목의 컬렉션을 나타냅니다.|
 
 ## <a name="remarks"></a>설명
- 사용 하 여 SharePoint 프로젝트 항목을 사용 하 여 사용자 지정 데이터를 연결 하는 경우는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 속성의는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 개체를 새 데이터를 저장 하는 Visual Studio **ExtensionDataItem** 요소에는 `.spdata` 파일는 프로젝트 항목입니다. 자세한 내용은 [SharePoint 프로젝트 시스템의 확장에 데이터를 저장](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)합니다.
+ 개체의 속성을 사용 하 여 사용자 지정 데이터를 SharePoint 프로젝트 항목과 연결 하면 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> Visual Studio에서 프로젝트 항목에 대 한 파일의 새 **extensiondataitem** 요소에 데이터를 저장 합니다 `.spdata` . 자세한 내용은 [SharePoint 프로젝트 시스템의 확장에 데이터 저장](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)을 참조 하세요.
 
 ## <a name="element-information"></a>요소 정보
 
-|||
+|속성|값|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**스키마 이름**|SharePoint 프로젝트 항목 스키마|
-|**유효성 검사 파일**|ProjectItemModelSchema.xsd|
-|**비어 있을 수 있습니다.**|아니요|
+|**유효성 검사 파일**|ProjectItemModelSchema|
+|**비워 둘 수 있음**|예|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)

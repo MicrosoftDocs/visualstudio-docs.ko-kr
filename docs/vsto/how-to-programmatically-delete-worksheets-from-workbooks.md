@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서에서 워크시트 삭제'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04c7eafd99d122c0b502e4b804b050bf7c59761f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985837"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547136"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서에서 워크시트 삭제
   통합 문서의 모든 워크시트를 삭제할 수 있습니다. 워크시트를 삭제하려면 워크시트 호스트 항목을 사용하거나 통합 문서의 시트 컬렉션을 통해 워크시트에 액세스합니다.
@@ -64,7 +64,7 @@ ms.locfileid: "72985837"
      [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [워크시트 작업](working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트 숨기기](how-to-programmatically-hide-worksheets.md)
 - [방법: 프로그래밍 방식으로 통합 문서 내에서 워크시트 이동](how-to-programmatically-move-worksheets-within-workbooks.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84809341d7898aeb3defe0447f2a2f1142eb460a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661976"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546629"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: 반복 인수를 매개 변수 배열로 바꾸십시오.
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: 반복 인수를 매개 변수 배열로 바꾸세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
@@ -36,7 +36,7 @@ ms.locfileid: "72661976"
  공용 형식의 public 또는 protected 메서드에는 세 개 이상의 매개 변수가 있으며 마지막 세 매개 변수는 동일한 형식입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 정확한 인수 수를 알 수 없고 변수 인수가 같은 형식 이거나 동일한 형식으로 전달 될 수 있는 경우 반복 되는 인수 대신 매개 변수 배열을 사용 합니다. 예를 들어 <xref:System.Console.WriteLine%2A> 메서드는 매개 변수 배열을 사용 하 여 임의 개수의 <xref:System.Object> 인수를 수락 하는 범용 오버 로드를 제공 합니다.
+ 정확한 인수 수를 알 수 없고 변수 인수가 같은 형식 이거나 동일한 형식으로 전달 될 수 있는 경우 반복 되는 인수 대신 매개 변수 배열을 사용 합니다. 예를 들어 <xref:System.Console.WriteLine%2A> 메서드는 매개 변수 배열을 사용 하 여 임의 개수의 인수를 허용 하는 범용 오버 로드를 제공 합니다 <xref:System.Object> .
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 반복 되는 인수를 매개 변수 배열로 바꿉니다.

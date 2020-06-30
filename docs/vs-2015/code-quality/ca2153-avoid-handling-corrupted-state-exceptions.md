@@ -8,17 +8,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d837c09e5f2f90796c149bf58d1114d7e6352d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667418"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546317"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: 손상된 상태 예외 처리 방지
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: 손상된 상태 예외를 처리하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
@@ -68,7 +68,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1"></a>솔루션 1
+### <a name="solution-1"></a>해결 방법 1
  HandleProcessCorruptedExceptions 특성을 제거하면 예외가 처리되지 않습니다.
 
 ```
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2"></a>솔루션 2
+### <a name="solution-2"></a>해결 방법 2
  일반 catch 처리기를 제거하고 특정 예외 형식만 catch합니다.
 
 ```
@@ -110,7 +110,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3"></a>솔루션 3
+### <a name="solution-3"></a>해결 방법 3
  예외를 다시 throw합니다.
 
 ```

@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64ac9835a085908645713f95f1f07c283d807852
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657055"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547981"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 소스 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "72657055"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 클래스를 사용하여 데이터 원본 액세스
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료하려면 다음 사항이 필요합니다.
 
 - Visual Studio Enterprise
@@ -47,7 +47,7 @@ ms.locfileid: "72657055"
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>프로젝트에 app.config 파일을 추가하려면
 
-1. 테스트 프로젝트에 이미 app.config 파일이 있는 경우 [사용자 지정 구성 섹션 정의](#DefineCustomConfigurationSection)로 이동합니다.
+1. 테스트 프로젝트에 이미 app.config 파일이 있는 경우 [사용자 지정 구성 섹션 정의](#DefineCustomConfigurationSection)로 이동 합니다.
 
 2. **솔루션 탐색기**에서 테스트 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음 **새 항목**을 클릭합니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "72657055"
 
 3. **애플리케이션 구성 파일** 템플릿을 선택하고 **추가**를 클릭합니다.
 
-## <a name="DefineCustomConfigurationSection"></a> 사용자 지정 구성 섹션 정의 Section
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>사용자 지정 구성 섹션 정의
  app.config 파일을 검토합니다. XML 선언과 루트 요소는 반드시 포함되어야 합니다.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>app.config 파일에 사용자 지정 구성 섹션을 추가하려면
@@ -86,7 +86,7 @@ ms.locfileid: "72657055"
 
 3. 첫 번째 `add` 요소에서 Microsoft Access 데이터베이스에 연결하기 위한 다음과 같은 특성 및 값을 만듭니다.
 
-|특성|값|
+|attribute|값|
 |---------------|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
@@ -94,7 +94,7 @@ ms.locfileid: "72657055"
 
  두 번째 `add` 요소에서 Microsoft Excel 스프레드시트에 연결하기 위한 다음과 같은 특성 및 값을 만듭니다.
 
-|||
+|특성|값|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +102,7 @@ ms.locfileid: "72657055"
 
  `connectionStrings` 요소는 다음과 유사하게 표시됩니다.
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -132,7 +132,7 @@ ms.locfileid: "72657055"
 
 4. 첫 번째 `add` 요소에서 Microsoft Access 데이터 원본에 대해 다음과 같은 특성 및 값을 만듭니다.
 
-|특성|값|
+|attribute|값|
 |---------------|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ ms.locfileid: "72657055"
 
  두 번째 `add` 요소에서 Microsoft Excel 데이터 원본에 대해 다음과 같은 특성 및 값을 만듭니다.
 
-|||
+|특성|값|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -150,7 +150,7 @@ ms.locfileid: "72657055"
 
  `microsoft.visualstudio.testtools` 요소는 다음과 유사하게 표시됩니다.
 
-```
+```xml
 <microsoft.visualstudio.testtools>
     <dataSources>
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>
@@ -161,7 +161,7 @@ ms.locfileid: "72657055"
 
  최종 app.config 파일은 다음과 유사하게 표시됩니다.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
@@ -223,7 +223,7 @@ ms.locfileid: "72657055"
 
 2. 자동 생성된 단위 테스트 콘텐츠를 다음 코드로 바꿉니다.
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -268,5 +268,5 @@ ms.locfileid: "72657055"
 > [!IMPORTANT]
 > 테스트에서 배포 디렉터리를 통해 액세스할 수 있도록 데이터 원본과 같은 항목을 배포합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [코드 단위 테스트](../test/unit-test-your-code.md) [기존 코드에 대 한 단위 테스트 만들기 및 실행](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) [응용 프로그램 테스트](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [방법: 데이터 기반 단위 테스트 만들기](../test/how-to-create-a-data-driven-unit-test.md)

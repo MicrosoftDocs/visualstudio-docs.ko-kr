@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 622d807da832c4c07baf8b62c902c2b1d25cc14d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f1978a280a26af3b2a21e0bc5a4c9a238a723a9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955703"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547123"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정
   <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> 메서드를 사용하여 Microsoft Office Word 문서에서 기존의 범위의 크기를 조정합니다.
@@ -57,13 +57,13 @@ ms.locfileid: "62955703"
 
 ### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 기존 범위를 다시 설정 하려면
 
-1. 다음 예제에서는 VSTO 추가 기능에 대 한 전체 예제를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
+1. 다음 예제에서는 VSTO 추가 기능의 전체 예를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#42)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [방법: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)

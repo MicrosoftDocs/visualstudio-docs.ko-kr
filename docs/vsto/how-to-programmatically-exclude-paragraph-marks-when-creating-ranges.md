@@ -1,7 +1,7 @@
 ---
 title: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 852dc6c51215e00c1fdc1571f51940a44f727794
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 20d91aff6b09e659375494c387eea94ef05cc682
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402148"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547435"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>방법: 프로그래밍 방식으로 제외 단락 표시 범위를 만들 때
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외
   단락을 기반으로 <xref:Microsoft.Office.Interop.Word.Range> 개체를 만들 때마다 단락 표시 등 인쇄할 수 없는 모든 문자가 범위에 포함됩니다. 원본 단락의 텍스트를 대상 단락에 삽입할 수 있습니다. 대상 단락을 개별 단락으로 분할하지 않으려면 먼저 원본 단락에서 단락 표시를 제거해야 합니다. 또한 단락 서식 설정 정보는 단락 표시에 저장되므로 범위를 기존 단락에 삽입할 때 서식 정보를 포함하지 않을 수 있습니다.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "66402148"
 
      두 범위의 원래 내용이 문자열로 저장되었으므로 문서를 원래 상태로 복원할 수 있습니다.
 
-8. 다시 조정할 `firstRange` 를 사용 하 여 단락 표시를 포함 하는 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 1 문자 위치에 대 한 메서드.
+8. `firstRange` <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 한 문자 위치에 대해 메서드를 사용 하 여 단락 표시를 포함 하도록 다시 조정 합니다.
 
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
      [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]
@@ -108,17 +108,17 @@ ms.locfileid: "66402148"
 
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 
-### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>VSTO 추가 기능에서 텍스트를 삽입할 때 단락 구조를 제어 하려면
+### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>VSTO 추가 기능에 텍스트를 삽입할 때 단락 구조를 제어 하려면
 
-1. 다음 예제에서는 VSTO 추가 기능에 대해 complete 메서드를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
+1. 다음 예제에서는 VSTO 추가 기능의 전체 메서드를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [방법: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
 - [방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

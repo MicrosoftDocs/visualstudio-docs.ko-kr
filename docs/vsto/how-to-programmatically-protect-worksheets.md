@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 보호'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254583"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545901"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 보호
   Microsoft Office Excel의 보호 기능은 사용자 및 코드가 워크시트의 개체를 수정할 수 없도록 차단합니다. 기본적으로 보호를 설정하면 모든 셀이 잠깁니다.

@@ -1,5 +1,5 @@
 ---
-title: 'CA1047: Protected 멤버를 sealed 형식으로 선언 하지 마세요. Microsoft Docs'
+title: 'CA1047: protected 멤버를 sealed 형식으로 선언 하지 마세요. Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e115b4d327f1ac45673de491ceaffc90941e1111
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668177"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546785"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: protected 멤버를 sealed 형식으로 선언하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
@@ -33,12 +33,12 @@ ms.locfileid: "72668177"
 |변경 수준|최신이 아님|
 
 ## <a name="cause"></a>원인
- Public 형식은 `sealed` (Visual basic의 `NotInheritable`) 이며 protected 멤버 또는 보호 된 중첩 형식을 선언 합니다. 이 규칙은이 패턴을 따라야 하는 <xref:System.Object.Finalize%2A> 메서드에 대 한 위반을 보고 하지 않습니다.
+ Public 형식은 `sealed` ( `NotInheritable` Visual basic의 경우) 이며 protected 멤버나 protected 중첩 형식을 선언 합니다. 이 규칙은 <xref:System.Object.Finalize%2A> 이 패턴을 따라야 하는 메서드에 대 한 위반을 보고 하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
  형식에서는 상속하는 형식에서 멤버에 액세스하거나 멤버를 재정의할 수 있도록 하기 위해 protected 멤버를 선언합니다. 정의에 따라 sealed 형식에서 상속할 수 없습니다 .이는 sealed 형식의 protected 메서드를 호출할 수 없음을 의미 합니다.
 
- 컴파일러 C# 에서이 오류에 대 한 경고를 발생 시킵니다.
+ C # 컴파일러에서이 오류에 대 한 경고를 발생 시킵니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 멤버의 액세스 수준을 private으로 변경 하거나 형식을 상속 가능 하 게 설정 합니다.

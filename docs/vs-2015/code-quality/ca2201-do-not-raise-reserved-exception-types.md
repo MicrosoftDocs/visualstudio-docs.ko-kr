@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a550226a5ea1edb3b30e317be6b5682f4c204d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667372"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546343"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: 예약된 예외 형식을 발생시키지 마십시오.
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: 예약된 예외 형식을 발생시키지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
@@ -56,9 +56,9 @@ ms.locfileid: "72667372"
 
   **일반 예외 Throw 안 함**
 
-  라이브러리나 프레임 워크의 <xref:System.Exception> 또는 <xref:System.SystemException>과 같은 일반 예외 형식을 throw 하는 경우 소비자는 처리 방법을 알지 못하는 알 수 없는 예외를 포함 하 여 모든 예외를 catch 합니다.
+  라이브러리 또는 프레임 워크에서 또는와 같은 일반 예외 형식을 throw 하는 경우 <xref:System.Exception> <xref:System.SystemException> 소비자는 처리 방법을 알지 못하는 알 수 없는 예외를 포함 하 여 모든 예외를 catch 합니다.
 
-  대신 프레임 워크에 이미 있는 더 많이 파생 된 형식을 throw 하거나 <xref:System.Exception>에서 파생 되는 고유한 형식을 만듭니다.
+  대신 프레임 워크에 이미 있는 더 많이 파생 된 형식을 throw 하거나에서 파생 되는 고유한 형식을 만듭니다 <xref:System.Exception> .
 
   **특정 예외 Throw**
 
@@ -66,21 +66,21 @@ ms.locfileid: "72667372"
 
 |매개 변수 설명|예외|
 |---------------------------|---------------|
-|`null` 참조|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null`참조일|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |허용 되는 값 범위 (예: 컬렉션 또는 목록의 인덱스)를 벗어납니다.|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|@No__t_0 값이 잘못 되었습니다.|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|메서드의 매개 변수 사양을 충족 하지 않는 형식 (예: `ToString(String)`에 대 한 형식 문자열)을 포함 합니다.|<xref:System.FormatException?displayProperty=fullName>|
+|잘못 된 `enum` 값|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|메서드의 매개 변수 사양을 충족 하지 않는 형식 (예:에 대 한 형식 문자열)을 포함 합니다. `ToString(String)`|<xref:System.FormatException?displayProperty=fullName>|
 |그렇지 않으면 유효 하지 않음|<xref:System.ArgumentException?displayProperty=fullName>|
 
- 작업이 개체의 현재 상태에 대해 유효 하지 않은 경우 throw <xref:System.InvalidOperationException?displayProperty=fullName>
+ 작업이 개체의 현재 상태에 대해 유효 하지 않은 경우 throw 됩니다.<xref:System.InvalidOperationException?displayProperty=fullName>
 
- 삭제 된 개체에 대 한 작업이 수행 되는 경우 <xref:System.ObjectDisposedException?displayProperty=fullName>
+ 삭제 된 throw 된 개체에서 작업이 수행 되는 경우<xref:System.ObjectDisposedException?displayProperty=fullName>
 
- 작업이 지원 되지 않는 경우 (예: 재정의 된 스트림의 경우 읽기 위해 열린 스트림에 쓰기) <xref:System.NotSupportedException?displayProperty=fullName>이 throw **됩니다.**
+ 작업이 지원 되지 않는 경우 (예: 재정의 된 스트림의 경우 읽기 위해 열린 스트림에 쓰기) throw **됩니다.**<xref:System.NotSupportedException?displayProperty=fullName>
 
- 변환으로 인해 오버플로가 발생 하는 경우 (예: 명시적인 캐스트 연산자 오버 로드) <xref:System.OverflowException?displayProperty=fullName>이 throw 됩니다.
+ 변환으로 인해 오버플로가 발생 하는 경우 (예: 명시적 캐스트 연산자 오버 로드) throw<xref:System.OverflowException?displayProperty=fullName>
 
- 다른 모든 경우에는 <xref:System.Exception>에서 파생 되는 고유한 형식을 만들어이를 throw 하는 것이 좋습니다.
+ 다른 모든 경우에는에서 파생 되는 고유한 형식을 만들어이를 throw 하는 것이 좋습니다 <xref:System.Exception> .
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 throw 된 예외의 유형을 예약 된 유형 중 하나가 아닌 특정 유형으로 변경 합니다.
@@ -89,4 +89,4 @@ ms.locfileid: "72667372"
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1031: 일반적인 예외 형식을 catch하지 마십시오.](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031: 일반적인 예외 형식을 catch하지 마세요.](../code-quality/ca1031-do-not-catch-general-exception-types.md)

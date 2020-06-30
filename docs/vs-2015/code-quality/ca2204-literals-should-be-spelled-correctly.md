@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ecf829251cbeab600cb95f8f0c0b0173cd7338d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659545"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546278"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: 리터럴의 철자가 맞아야 합니다.
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: 리터럴의 맞춤법이 정확해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
@@ -38,7 +38,7 @@ ms.locfileid: "72659545"
 ## <a name="rule-description"></a>규칙 설명
  이 규칙은 다음 중 하나 이상에 해당 하는 경우 매개 변수 또는 속성에 값으로 전달 되는 리터럴 문자열을 검사 합니다.
 
-- 매개 변수 또는 속성의 <xref:System.ComponentModel.LocalizableAttribute> 특성이 true로 설정 되어 있습니다.
+- <xref:System.ComponentModel.LocalizableAttribute>매개 변수 또는 속성의 특성이 true로 설정 되어 있습니다.
 
 - 매개 변수 또는 속성 이름에 "Text", "Message" 또는 "Caption"이 포함 되어 있습니다.
 

@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6b47254a80c9cdadab6ca18f2fb8c3e8540fbd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827346"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547929"
 ---
 # <a name="safecontrol-element"></a>SafeControl 요소
-  ASPX 컨트롤 또는 SharePoint 사이트의 모든 ASPX 페이지에 액세스 하려면 모든 사용자에 대 한 보안 지정 된 웹 파트를 나타냅니다.
+  모든 사용자가 SharePoint 사이트의 ASPX 페이지에서 액세스할 수 있도록 보안으로 지정 된 ASPX 컨트롤이 나 웹 파트를 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,12 +40,12 @@ ms.locfileid: "62827346"
 
 |특성|설명|
 |---------------|-----------------|
-|**어셈블리**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트 정의 되어 있는 어셈블리의 이름입니다. 이 특성이 기본적으로 사용 합니다 **$SharePoint.Project.AssemblyFullName$** 어셈블리 이름에 대 한 대체 가능 매개 변수입니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)합니다.|
-|**IsSafe**|선택적 **xs: boolean** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트 안전한 신뢰할 수 없는 사용자가 액세스할 수 있는지 여부를 지정 합니다.|
-|**IsSafeAgainstScript**|선택적 **xs: boolean** 특성입니다.<br /><br /> 신뢰할 수 없는 사용자가 볼 수 있습니다 또는 ASPX 컨트롤이 나 웹 파트의 속성을 편집 여부를 지정 합니다.|
-|**이름**|선택적 **xs: string** 특성입니다.<br /><br /> 컬렉션에서이 안전 컨트롤 항목의 이름입니다.|
-|**Namespace**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트의 네임 스페이스입니다.|
-|**TypeName**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트의 형식 이름입니다.|
+|**어셈블리**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트가 정의 된 어셈블리의 이름입니다. 기본적으로이 특성은 어셈블리 이름에 대해 **$SharePoint. AssemblyFullName $** 대체 (fullname) 매개 변수를 사용 합니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조 하세요.|
+|**IsSafe**|선택적 **xs: boolean** 특성입니다.<br /><br /> 신뢰할 수 없는 사용자가 액세스할 수 있도록 ASPX 컨트롤이 나 웹 파트를 안전 하 게 보호 하는지 여부를 지정 합니다.|
+|**Issafeagas 스크립트**|선택적 **xs: boolean** 특성입니다.<br /><br /> 신뢰할 수 없는 사용자가 ASPX 컨트롤이 나 웹 파트의 속성을 보거나 편집할 수 있는지 여부를 지정 합니다.|
+|**이름**|선택적 **xs: string** 특성입니다.<br /><br /> 컬렉션에 있는이 안전 컨트롤 항목의 이름입니다.|
+|**네임스페이스**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤 또는 웹 파트의 네임 스페이스입니다.|
+|**T**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤 또는 웹 파트의 형식 이름입니다.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
@@ -54,20 +54,20 @@ ms.locfileid: "62827346"
 
 |요소|설명|
 |-------------|-----------------|
-|[SafeControls](../sharepoint/safecontrols-element.md)|ASPX 컨트롤 및 SharePoint 사이트의 모든 ASPX 페이지에 액세스 하려면 모든 사용자에 대 한 안전한 것으로 지정 된 웹 파트의 컬렉션을 나타냅니다.|
+|[SafeControls](../sharepoint/safecontrols-element.md)|사용자가 SharePoint 사이트의 ASPX 페이지에서 액세스할 수 있도록 보안으로 지정 된 ASPX 컨트롤 및 웹 파트의 컬렉션을 나타냅니다.|
 
 ## <a name="remarks"></a>설명
- 안전 컨트롤에 대 한 자세한 내용은 참조 하세요. [프로젝트 항목에 패키징 및 배포 정보를 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)합니다.
+ 안전 컨트롤에 대 한 자세한 내용은 [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조 하세요.
 
 ## <a name="element-information"></a>요소 정보
 
-|||
+|속성|값|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**스키마 이름**|SharePoint 프로젝트 항목 스키마|
-|**유효성 검사 파일**|ProjectItemModelSchema.xsd|
-|**비어 있을 수 있습니다.**|아니요|
+|**유효성 검사 파일**|ProjectItemModelSchema|
+|**비워 둘 수 있음**|예|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [프로젝트 항목에 패키징 및 배포 정보를 제공 합니다.](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

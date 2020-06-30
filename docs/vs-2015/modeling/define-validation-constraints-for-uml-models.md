@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849733"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547591"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML 모델에 대한 유효성 검사 제약 조건 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "75849733"
 ## <a name="defining-a-validation-extension"></a>유효성 검사 확장 정의
  UML 디자이너에 대한 유효성 검사 확장을 만들려면 유효성 검사 제약 조건을 정의하는 클래스를 만들고 해당 클래스를 VSIX(Visual Studio Integration Extension)에 포함해야 합니다. VSIX는 제약 조건을 설치할 수 있는 컨테이너 역할을 합니다. 유효성 검사 확장을 정의하는 대신 다음 두 가지 방법을 사용할 수 있습니다.
 
-- **프로젝트 템플릿을 사용 하 여 자체 VSIX에서 유효성 검사 확장을 만듭니다.** 이는 더 빠른 방법입니다. 유효성 검사 제약 조건을 메뉴 명령, 사용자 지정 도구 상자 또는 제스처 처리기와 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다. 하나의 클래스에서 여러 제약 조건을 정의할 수 있습니다.
+- **프로젝트 템플릿을 사용하여 자체 VSIX에서 유효성 검사 확장을 만듭니다.** 이는 더 빠른 방법입니다. 유효성 검사 제약 조건을 메뉴 명령, 사용자 지정 도구 상자 또는 제스처 처리기와 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다. 하나의 클래스에서 여러 제약 조건을 정의할 수 있습니다.
 
 - **별도의 유효성 검사 클래스 및 VSIX 프로젝트를 만듭니다.** 여러 확장 형식을 같은 VSIX로 결합하려면 이 방법을 사용합니다. 예를 들어 메뉴 명령에서 모델이 특정 제약 조건을 따르도록 요구하면 유효성 검사 방법과 동일한 VSIX에 해당 제스처 처리기를 포함할 수 있습니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "75849733"
 
 4. F5 키를 눌러 제약 조건을 테스트합니다. 자세한 내용은 [유효성 검사 제약 조건 실행](#Executing)을 참조하세요.
 
-5. 프로젝트에 의해 빌드된 **\*\\\*파일 bin\\** 복사 하 여 다른 컴퓨터에 메뉴 명령을 설치 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.
+5. 프로젝트에서 빌드된 파일 **bin \\ \* \\ \* . vsix** 를 복사 하 여 다른 컴퓨터에 메뉴 명령을 설치 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.
 
    다른 **.cs** 파일을 추가하는 경우 일반적으로 다음 `using` 문이 필요합니다.
 
@@ -95,7 +95,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 3. VSIX 프로젝트를 솔루션의 시작 프로젝트로 설정합니다.
 
-    - 솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택합니다.
+    - 솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택 합니다.
 
 4. **source.extension.vsixmanifest**의 **콘텐츠**에서 클래스 라이브러리 프로젝트를 MEF 구성 요소로 추가합니다.
 
@@ -105,11 +105,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     3. **자산** 탭에서 **새로 만들기**를 선택하고 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **MEF 구성 요소**
+         **유형**  =  **MEF 구성 요소**
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *클래스 라이브러리 프로젝트*
+         **프로젝트**  =  *클래스 라이브러리 프로젝트*
 
 #### <a name="to-define-the-validation-class"></a>유효성 검사 클래스를 정의하려면
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="Executing"></a>유효성 검사 제약 조건 실행
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>유효성 검사 제약 조건 실행
  테스트를 위해 디버그 모드에서 유효성 검사 메서드를 실행합니다.
 
 #### <a name="to-test-the-validation-constraint"></a>유효성 검사 제약 조건을 테스트하려면
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.
 
-    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 일반적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름 인지 확인 합니다.
+    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 올바른 `Export` 및 `ValidationMethod` 특성이 유효성 검사 메서드에 연결되었습니다.
 
-    - `ValidationCategories.Menu`는 `ValidationMethod` 특성에 대 한 인수에 포함 되며 Logical OR (&#124;)를 사용 하 여 다른 값으로 구성 됩니다.
+    - `ValidationCategories.Menu`는 특성에 대 한 인수에 포함 `ValidationMethod` 되며 LOGICAL OR (&#124;)를 사용 하 여 다른 값으로 구성 됩니다.
 
     - 모든 `Import` 및 `Export` 특성의 매개 변수가 유효합니다.
 
-## <a name="Implementing"></a>제약 조건 평가
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>제약 조건 평가
  유효성 검사 메서드는 적용할 유효성 검사 제약 조건이 true 또는 false인지를 확인해야 합니다. true이면 아무 작업도 수행하면 안 됩니다. false이면 `ValidationContext` 매개 변수가 제공하는 메서드를 사용하여 오류를 보고해야 합니다.
 
 > [!NOTE]
@@ -256,10 +256,10 @@ public void ValidateSomething
 
  모든 유효성 검사 메서드의 특성과 매개 변수는 다음과 같습니다.
 
-|||
+|서명|설명|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|MEF(Managed Extensibility Framework)를 사용하여 메서드를 유효성 검사 제약 조건으로 정의합니다.|
-|`[ValidationMethod (ValidationCategories.Menu)]`|유효성 검사를 수행하는 시기를 지정합니다. 둘 이상의 옵션을&#124;결합 하려면 비트 or ()를 사용 합니다.<br /><br /> `Menu` = 유효성 검사 메뉴에 의해 호출됩니다.<br /><br /> `Save` = 모델을 저장할 때 호출됩니다.<br /><br /> `Open` = 모델을 열 때 호출됩니다. `Load` = 모델을 저장할 때 호출되지만, 위반이 있을 경우 모델을 다시 열지 못할 수도 있다고 사용자에게 경고합니다. 모델을 구문 분석하기 전에 로드 시에도 호출됩니다.|
+|`[ValidationMethod (ValidationCategories.Menu)]`|유효성 검사를 수행하는 시기를 지정합니다. 둘 이상의 옵션을 결합 하려면 비트 OR (&#124;)를 사용 합니다.<br /><br /> `Menu` = 유효성 검사 메뉴에 의해 호출됩니다.<br /><br /> `Save` = 모델을 저장할 때 호출됩니다.<br /><br /> `Open` = 모델을 열 때 호출됩니다. `Load` = 모델을 저장할 때 호출되지만, 위반이 있을 경우 모델을 다시 열지 못할 수도 있다고 사용자에게 경고합니다. 모델을 구문 분석하기 전에 로드 시에도 호출됩니다.|
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|제약 조건을 적용할 요소 형식으로 두 번째 매개 변수 `IElement` 를 바꿉니다. 지정한 형식의 모든 요소에 대해 제약 조건 메서드가 호출됩니다.<br /><br /> 메서드 이름은 중요하지 않습니다.|
 
  두 번째 매개 변수에 다른 형식을 사용하여 유효성 검사 메서드를 원하는 개수만큼 정의할 수 있습니다. 유효성 검사가 호출되면 매개 변수 형식을 준수하는 각 모델 요소에 대해 각 유효성 검사 메서드가 호출됩니다.
@@ -275,7 +275,7 @@ public void ValidateSomething
 
 - `elementsWithError`는 모델의 요소를 식별합니다. 사용자가 오류 보고서를 두 번 클릭하면 이 요소를 나타내는 모양이 선택됩니다.
 
-  `LogError(),` `LogWarning()` 하 고 오류 목록의 서로 다른 섹션에 메시지를 `LogMessage()` 합니다.
+  `LogError(),``LogWarning()`및는 `LogMessage()` 오류 목록의 서로 다른 섹션에 메시지를 저장 합니다.
 
 ## <a name="how-validation-methods-are-applied"></a>유효성 검사 메서드가 적용되는 방법
  유효성 검사는 클래스의 특성 및 작업의 매개 변수와 같은 더 큰 요소의 부분과 관계를 포함하여 모델의 모든 요소에 적용됩니다.
@@ -349,21 +349,21 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="ContextCache"></a>여러 유효성 검사 조정
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>여러 유효성 검사 조정
  예를 들어 사용자가 다이어그램 메뉴에서 유효성 검사를 호출하면 각 유효성 검사 메서드가 각 모델 요소에 적용됩니다. 즉, 유효성 검사 프레임워크의 단일 호출에서 동일한 메서드가 여러 요소에 여러 번 적용될 수 있습니다.
 
  이 경우 요소 간의 관계를 처리하는 유효성 검사에서 문제가 발생합니다. 예를 들어 사용 사례에서 시작되고 **include** 관계를 트래버스하여 루프가 없는지 확인하는 유효성 검사를 작성할 수 있습니다. 그러나 많은 **include** 링크를 포함하는 모델의 각 사용 사례에 메서드가 적용되는 경우 모델의 동일한 영역을 반복적으로 처리할 가능성이 큽니다.
 
  이러한 상황을 방지하기 위해 유효성 검사를 실행하는 동안 정보가 유지되는 컨텍스트 캐시가 있습니다. 컨텍스트 캐시를 사용하여 서로 다른 유효성 검사 메서드 실행 간에 정보를 전달할 수 있습니다. 예를 들어 이 유효성 검사 실행에서 이미 처리된 요소 목록을 저장할 수 있습니다. 캐시는 각 유효성 검사 실행을 시작할 때 생성되며, 서로 다른 유효성 검사 실행 간에 정보를 전달하는 데 사용할 수 없습니다.
 
-|||
+|구문|Description|
 |-|-|
 |`context.SetCacheValue<T> (name, value)`|값을 저장합니다.|
 |`context.TryGetCacheValue<T> (name, out value)`|값을 가져옵니다. 성공하면 true를 반환합니다.|
 |`context.GetValue<T>(name)`|값을 가져옵니다.|
 |`Context.GetValue<T>()`|지정된 형식의 값을 가져옵니다.|
 
-## <a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
  사용 중인 컴퓨터 및 다른 컴퓨터에서 모두 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장을 설치할 수 있습니다.
 
 #### <a name="to-install-an-extension"></a>확장을 설치하려면
@@ -372,11 +372,11 @@ context.LogError(... , usecase);
 
     1. **솔루션 탐색기**의 VSIX 프로젝트 바로 가기 메뉴에서 **Windows 탐색기에서 폴더 열기**를 선택합니다.
 
-    2. 파일 **bin\\\*\\** _프로젝트_**vsix** 를 찾습니다.
+    2. 파일 ** \\ \* bin \\ **_을 찾습니다_**. vsix**
 
 2. 확장을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 
-    - 대상 컴퓨터에는 **source.extension.vsixmanifest**에서 지정한 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 버전 중 하나가 있어야 합니다.
+    - 대상 컴퓨터에는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **source.extension.vsixmanifest**에서 지정한 버전 중 하나가 있어야 합니다.
 
 3. 대상 컴퓨터에서 **.vsix** 파일을 엽니다.
 
@@ -392,11 +392,11 @@ context.LogError(... , usecase);
 
 3. 확장을 선택하고 **제거**를 선택합니다.
 
-   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수 있습니다. 여기서 *% LocalAppData%* 는 일반적으로 *DriveName*: \Users\\*UserName*\AppData\Local입니다.
+   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수 있습니다. 여기서 *% LocalAppData%* 는 일반적으로 *DriveName*: \Users \\ *UserName*\AppData\Local입니다.
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \extensions**
 
-## <a name="Example"></a> 예
+## <a name="example"></a><a name="Example"></a> 예
  이 예제에서는 요소 간 종속성 관계에서 루프를 찾습니다.
 
  저장 시 및 유효성 검사 메뉴 명령에 의해 유효성을 검사합니다.

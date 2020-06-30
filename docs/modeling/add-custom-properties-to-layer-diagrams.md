@@ -1,7 +1,7 @@
 ---
 title: 종속성 다이어그램에 사용자 지정 속성 추가
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590594"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546918"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 속성 추가
 
@@ -22,7 +22,7 @@ ms.locfileid: "75590594"
 
 ## <a name="non-visible-properties"></a>표시 되지 않는 속성
 
-코드에서 종속성 다이어그램의 요소에 값을 연결 하려면 MEF 구성 요소를 정의 하지 않아도 됩니다. [Ilayerelement](/previous-versions/ff644511(v=vs.140))에 `Properties` 이라는 사전이 있습니다. 레이어 요소의 사전에 마샬링할 수 값을 추가하기만 하면 됩니다. 종속성 다이어그램의 일부로 저장 됩니다.
+코드에서 종속성 다이어그램의 요소에 값을 연결 하려면 MEF 구성 요소를 정의 하지 않아도 됩니다. `Properties` [Ilayerelement](/previous-versions/ff644511(v=vs.140))에 이라는 사전이 있습니다. 레이어 요소의 사전에 마샬링할 수 값을 추가하기만 하면 됩니다. 종속성 다이어그램의 일부로 저장 됩니다.
 
 ## <a name="editable-properties"></a>편집 가능한 속성
 
@@ -38,7 +38,7 @@ ms.locfileid: "75590594"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio 응용 프로그램 시작 메뉴의 **Visual Studio Tools** 섹션에서 **개발자 명령 프롬프트**를 엽니다. 입력:
+> 3. Visual Studio 응용 프로그램 시작 메뉴의 **Visual Studio Tools** 섹션에서 **개발자 명령 프롬프트**를 엽니다. 다음을 입력합니다.
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -73,7 +73,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 - `ILayerCommentLink`
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 일반적인 사용자 지정 속성 설명자입니다. 레이어 모델(`ILayerModel`)에서 사용자가 사용자 지정 유효성 검사 메서드의 값을 제공할 수 있게 해주는 부울 속성을 정의합니다.
 
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램 확장](../modeling/extend-layer-diagrams.md)

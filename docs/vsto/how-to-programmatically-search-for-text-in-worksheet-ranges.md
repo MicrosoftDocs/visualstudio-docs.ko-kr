@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ffc06c2f50f7a304ef76ac1451ee47419143afb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985813"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547032"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색
-  <xref:Microsoft.Office.Interop.Excel.Range> 개체의 <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> 메서드를 사용 하 여 범위 내의 텍스트를 검색할 수 있습니다. 이 텍스트는 `#NULL!` 또는 `#VALUE!`같은 워크시트 셀에 나타날 수 있는 오류 문자열 일 수도 있습니다. 오류 문자열에 대 한 자세한 내용은 [셀 오류 값](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)을 참조 하세요.
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>개체의 메서드를 <xref:Microsoft.Office.Interop.Excel.Range> 사용 하 여 범위 내에서 텍스트를 검색할 수 있습니다. 이 텍스트는 또는와 같은 워크시트 셀에 나타날 수 있는 오류 문자열 일 수도 있습니다 `#NULL!` `#VALUE!` . 오류 문자열에 대 한 자세한 내용은 [셀 오류 값](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)을 참조 하세요.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 다음 예에서는 `Fruits` 라는 범위를 검색 하 고 "사과" 라는 단어를 포함 하는 셀의 글꼴을 수정 합니다. 또한이 절차에서는 이전에 설정한 검색 설정을 사용 하 여 검색을 반복 하는 <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> 메서드를 사용 합니다. 검색 하기 전에 셀을 지정 하면 <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> 메서드가 나머지를 처리 합니다.
+ 다음 예에서는 라는 범위를 검색 `Fruits` 하 고 "사과" 라는 단어를 포함 하는 셀의 글꼴을 수정 합니다. 또한이 절차에서는 <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> 이전에 설정한 검색 설정을 사용 하 여 검색을 반복 하는 메서드를 사용 합니다. 검색 하기 전에 셀을 지정 하면 <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> 메서드는 나머지를 처리 합니다.
 
 > [!NOTE]
-> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> 메서드의 검색은 범위의 끝에 도달한 후 검색 범위의 시작 부분으로 다시 래핑됩니다. 코드가 무한 루프에서 검색 되지 않는지 확인 해야 합니다. 이 샘플 절차에서는 <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> 속성을 사용 하 여이를 처리 하는 한 가지 방법을 보여 줍니다.
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>메서드의 검색은 범위의 끝에 도달한 후 검색 범위의 시작 부분으로 다시 래핑됩니다. 코드가 무한 루프에서 검색 되지 않는지 확인 해야 합니다. 예제 절차에서는 속성을 사용 하 여이를 처리 하는 한 가지 방법을 보여 줍니다 <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> .
 
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>워크시트 범위에서 텍스트를 검색 하려면
 
@@ -48,7 +48,7 @@ ms.locfileid: "72985813"
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. 첫 번째 찾은 범위 (`firstFind`)를 **Nothing**과 비교 합니다. `firstFind`에 값이 포함 되어 있지 않으면 코드는 찾은 범위 (`currentFind`)를 저장 합니다.
+4. 첫 번째 찾은 범위 ( `firstFind` )를 **Nothing**과 비교 합니다. `firstFind`에 값이 없으면 코드는 찾은 범위 ()를 저장 합니다 `currentFind` .
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]
@@ -74,7 +74,7 @@ ms.locfileid: "72985813"
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
  [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [범위 작업](../vsto/working-with-ranges.md)
 - [방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)

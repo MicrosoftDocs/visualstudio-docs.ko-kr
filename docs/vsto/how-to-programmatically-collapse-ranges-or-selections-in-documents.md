@@ -1,7 +1,7 @@
 ---
-title: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소
+title: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7394e8703f0437493536655e11b00ed302e59cff
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 1575a130a525c169553598fd15acfa8ba8fc397a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402234"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546122"
 ---
-# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>방법: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소
-  <xref:Microsoft.Office.Interop.Word.Range> 또는 <xref:Microsoft.Office.Interop.Word.Selection> 개체를 사용하여 작업하는 경우 기존 텍스트를 덮어쓰지 않도록 텍스트를 삽입하기 전에 삽입 지점으로 선택을 변경해야 할 수 있습니다. 모두를 <xref:Microsoft.Office.Interop.Word.Range> 하 고 <xref:Microsoft.Office.Interop.Word.Selection> 개체에는 축소 메서드를 사용 하는 <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> 열거형 값:
+# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소
+  <xref:Microsoft.Office.Interop.Word.Range> 또는 <xref:Microsoft.Office.Interop.Word.Selection> 개체를 사용하여 작업하는 경우 기존 텍스트를 덮어쓰지 않도록 텍스트를 삽입하기 전에 삽입 지점으로 선택을 변경해야 할 수 있습니다. 및 개체에는 모두 <xref:Microsoft.Office.Interop.Word.Range> <xref:Microsoft.Office.Interop.Word.Selection> 열거형 값을 사용 하는 Collapse 메서드가 있습니다 <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> .
 
 - <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> 는 선택 영역의 시작 부분으로 선택을 축소합니다. 열거형 값을 지정하지 않는 경우 이 값이 기본값입니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "66402234"
    [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
    [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]
 
-   원래 범위에 단락 표식이 포함되어 있으므로 새 문장을 삽입할 때 단락 표식 앞에 삽입되지 않습니다. 자세한 내용은 [방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시를 제외](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)합니다.
+   원래 범위에 단락 표식이 포함되어 있으므로 새 문장을 삽입할 때 단락 표식 앞에 삽입되지 않습니다. 자세한 내용은 [방법: 범위를 만들 때 프로그래밍 방식으로 단락 표시 제외](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)를 참조 하세요.
 
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제
 
@@ -81,15 +81,15 @@ ms.locfileid: "66402234"
 
 ### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 범위를 축소 하려면
 
-1. 다음 예제에서는 VSTO 추가 기능에 대해 complete 메서드를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
+1. 다음 예제에서는 VSTO 추가 기능의 전체 메서드를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [방법: 프로그래밍 방식으로 제외 단락 표시 범위를 만들 때](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)

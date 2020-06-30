@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 인쇄 미리 보기로 문서 표시'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813038"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545914"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>방법: 프로그래밍 방식으로 인쇄 미리 보기로 문서 표시
   솔루션에서 보고서를 생성하는 경우 인쇄 미리 보기 모드로 사용자에게 보고서를 표시하려고 할 수 있습니다.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="procedures-for-document-level-customizations"></a>문서 수준 사용자 지정 하는 절차
+## <a name="procedures-for-document-level-customizations"></a>문서 수준 사용자 지정 절차
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>PrintPreview 메서드를 호출하여 인쇄 미리 보기로 문서를 표시하려면
 
@@ -36,7 +36,7 @@ ms.locfileid: "62813038"
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>PrintPreview 속성을 설정하여 인쇄 미리 보기로 문서를 표시하려면
 
-1. 설정 합니다 <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> 의 속성을 <xref:Microsoft.Office.Interop.Word.Application> 개체를 **true**합니다.
+1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>개체의 속성을 <xref:Microsoft.Office.Interop.Word.Application> **true**로 설정 합니다.
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
@@ -52,12 +52,12 @@ ms.locfileid: "62813038"
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>PrintPreview 속성을 설정하여 인쇄 미리 보기로 문서를 표시하려면
 
-1. 설정 합니다 <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> 의 속성을 <xref:Microsoft.Office.Interop.Word.Application> 개체를 **true**합니다.
+1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>개체의 속성을 <xref:Microsoft.Office.Interop.Word.Application> **true**로 설정 합니다.
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 문서 인쇄](../vsto/how-to-programmatically-print-documents.md)
 - [방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)
 - [방법: 프로그래밍 방식으로 새 문서 만들기](../vsto/how-to-programmatically-create-new-documents.md)

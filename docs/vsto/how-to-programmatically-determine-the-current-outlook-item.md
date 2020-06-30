@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 현재 Outlook 항목 확인'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814821"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547162"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>방법: 프로그래밍 방식으로 현재 Outlook 항목 확인
-  이 예제에서는 `Explorer.SelectionChange` 이름 현재 폴더 및 선택한 항목에 대 한 정보를 표시 하는 이벤트입니다. 다음 코드는 선택한 항목을 표시 합니다.
+  이 예제에서는 이벤트를 사용 하 여 `Explorer.SelectionChange` 현재 폴더의 이름과 선택한 항목에 대 한 일부 정보를 표시 합니다. 그런 다음 코드에서 선택한 항목을 표시 합니다.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "62814821"
 ## <a name="compile-the-code"></a>코드 컴파일
  이 예제에는 다음 사항이 필요합니다.
 
-- 일정, 연락처 및 Microsoft Office Outlook에서 전자 메일 항목.
+- Microsoft Office Outlook의 약속, 연락처 및 전자 메일 항목입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 이름으로 폴더 검색](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [방법: 프로그래밍 방식으로 특정 연락처 검색](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

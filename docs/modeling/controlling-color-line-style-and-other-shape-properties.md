@@ -1,18 +1,18 @@
 ---
 title: 색, 선 스타일 및 기타 모양 속성 제어
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bcc7e3a80650edff411506b9e651885b3852383
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eee36ad0361f40f23c29c5672b155fc5e5405dbe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654155"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546681"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
 
@@ -26,7 +26,7 @@ Color와 같은 일부 셰이프 속성은 ' 노출 ' 될 수 있습니다. 즉,
  이제 셰이프에는 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다.
 
 ## <a name="dynamically-updating-an-exposed-property"></a>노출 된 속성을 동적으로 업데이트
- 일반적으로 노출 되는 속성을 다른 속성에 따라 결정 하려고 합니다. 예를 들어 특정 도메인 속성이 0 보다 작은 경우 셰이프를 빨간색으로 설정 하려고 할 수 있습니다. 이 종속성을 설정 하려면 [규칙](../modeling/rules-propagate-changes-within-the-model.md)을 만듭니다. 예를 들면,
+ 일반적으로 노출 되는 속성을 다른 속성에 따라 결정 하려고 합니다. 예를 들어 특정 도메인 속성이 0 보다 작은 경우 셰이프를 빨간색으로 설정 하려고 할 수 있습니다. 이 종속성을 설정 하려면 [규칙](../modeling/rules-propagate-changes-within-the-model.md)을 만듭니다. 예를 들어:
 
 ```csharp
 using System;

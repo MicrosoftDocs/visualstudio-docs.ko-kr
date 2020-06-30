@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 212abc1fa5e2debfaf7ca81d82c8d94e9ddb0879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658881"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545225"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
@@ -44,11 +44,11 @@ ms.locfileid: "72658881"
 |---------|------------------|-----------|--------------------|
 |+ (이진)|+|+ (이진)|추가|
 |+=|+=|+=|추가|
-|&|그리고|&|BitwiseAnd|
+|&|And|&|BitwiseAnd|
 |&=|및 =|&=|BitwiseAnd|
-|&#124;|Or|&#124;|BitwiseOr|
+|&#124;|또는|&#124;|BitwiseOr|
 |&#124;=|또는 =|&#124;=|BitwiseOr|
-|--|해당 사항 없음|--|감소|
+|--|N/A|--|감소|
 |/|/|/|나누기|
 |/=|/=|/=|나누기|
 |==|=|==|같음|
@@ -56,34 +56,34 @@ ms.locfileid: "72658881"
 |^=|Xor =|^=|Xor|
 |>|>|>|비교|
 |>=|>=|>=|비교|
-|++|해당 사항 없음|++|증가|
+|++|N/A|++|ID 증가값|
 |<>|!=|같음|
 |<<|<<|<<|왼쪽 shift|
 |<<=|<<=|<<=|왼쪽 shift|
 |<|<|<|비교|
 |<=|<=|\<=|비교|
-|&&|해당 사항 없음|&&|LogicalAnd|
-|&#124;&#124;|해당 사항 없음|&#124;&#124;|LogicalOr|
-|!|해당 사항 없음|!|LogicalNot|
+|&&|N/A|&&|LogicalAnd|
+|&#124;&#124;|N/A|&#124;&#124;|LogicalOr|
+|!|N/A|!|LogicalNot|
 |%|Mod|%|Mod 또는 나머지가|
-|%=|해당 사항 없음|%=|Mod|
+|%=|N/A|%=|Mod|
 |* (이진)|*|*|곱하기|
-|*=|해당 사항 없음|*=|곱하기|
-|~|not|~|OnesComplement|
+|*=|N/A|*=|곱하기|
+|~|Not|~|OnesComplement|
 |>>|>>|>>|창에서|
-=|해당 사항 없음|>>=|창에서|
+=|N/A|>>=|창에서|
 |-(이진)|-(이진)|-(이진)|빼기|
-|-=|해당 사항 없음|-=|빼기|
-|true|IsTrue|해당 사항 없음|IsTrue (속성)|
-|- (단항)|해당 사항 없음|-|구할|
-|+ (단항)|해당 사항 없음|+|항목과|
-|False|IsFalse|False|IsTrue (속성)|
+|-=|N/A|-=|빼기|
+|true|IsTrue|N/A|IsTrue (속성)|
+| - (단항)   |N/A|-|Negate|
+|+ (단항)|N/A|+|더하기|
+|false|IsFalse|False|IsTrue (속성)|
 
  해당 없음 = = 선택한 언어로 오버 로드 될 수 없습니다.
 
- 또한이 규칙은 `ToSomeType` 및 `FromSomeType` 메서드를 확인 하 여 형식 (`SomeType`)에서 암시적 및 명시적 캐스트 연산자를 확인 합니다.
+ 또한이 규칙은 `SomeType` 및 라는 메서드를 확인 하 여 형식 ()에서 암시적 및 명시적 캐스트 연산자를 확인 합니다 `ToSomeType` `FromSomeType` .
 
- 에서 C#이항 연산자가 오버 로드 되 면 해당 할당 연산자 (있는 경우)도 암시적으로 오버 로드 됩니다.
+ C #에서 이항 연산자가 오버 로드 되 면 해당 할당 연산자 (있는 경우)도 암시적으로 오버 로드 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 연산자에 대 한 대체 메서드를 구현 합니다. 권장 되는 대체 이름을 사용 하 여 이름을로 합니다.
@@ -92,17 +92,17 @@ ms.locfileid: "72658881"
  공유 라이브러리를 구현 하는 경우에는이 규칙의 경고를 표시 하지 마십시오. 응용 프로그램은이 규칙의 경고를 무시할 수 있습니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 구조체를 정의 합니다. 예제를 수정 하려면 public `Add(int x, int y)` 메서드를 구조체에 추가 합니다.
+ 다음 예제에서는이 규칙을 위반 하는 구조체를 정의 합니다. 예제를 수정 하려면 구조체에 공용 메서드를 추가 합니다 `Add(int x, int y)` .
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorOverloadsHaveNamedAlternates/cs/FxCop.Usage.OperatorOverloadsHaveNamedAlternates.cs#1)]
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마세요.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
  [CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하십시오.](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하세요.](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: Equals를 재정의할 때 GetHashCode를 재정의하십시오.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Equals를 재정할 때 GetHashCode를 재정의하세요.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

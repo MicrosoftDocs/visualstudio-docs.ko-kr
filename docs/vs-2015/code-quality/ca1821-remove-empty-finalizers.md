@@ -14,17 +14,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3d340d69ee32de20142abf740f7fedc871c9733a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2e704202773447e353f041df66b05cb5f648c00
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657468"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545355"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: 빈 종료자를 제거하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
@@ -38,12 +38,12 @@ ms.locfileid: "72657468"
  개체 수명을 추적할 때에는 추가로 성능 오버헤드가 발생하므로 가능한 경우 종료자를 사용하지 마십시오. 가비지 수집기는 개체를 수집 하기 전에 종료자를 실행 합니다. 즉, 두 컬렉션은 개체를 수집 해야 합니다. 빈 종료자를 사용 하면 어떠한 이점도 없이 오버 헤드가 추가 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 빈 종료자를 제거 합니다. 디버깅에 종료자가 필요한 경우에는 `#if DEBUG / #endif` 지시문에 전체 종료자를 묶습니다.
+ 빈 종료자를 제거 합니다. 디버깅에 종료자가 필요한 경우 전체 종료자를 지시문으로 묶습니다 `#if DEBUG / #endif` .
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서 메시지를 표시 하지 마십시오. 종료를 표시 하지 않으면 성능이 저하 되 고 아무런 이점도 제공 되지 않습니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 제거 해야 하는 빈 종료자, `#if DEBUG / #endif` 지시문에 포함 되어야 하는 종료자 및 `#if DEBUG / #endif` 지시문을 올바르게 사용 하는 종료자를 보여 줍니다.
+ 다음 예제에서는 제거 해야 하는 빈 종료자, 지시문에 포함 되어야 하는 종료자 `#if DEBUG / #endif` 및 지시문을 올바르게 사용 하는 종료자를 보여 줍니다 `#if DEBUG / #endif` .
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]

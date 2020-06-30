@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서의 범위 확장'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26213477e7cec69da9171c5197371772973be5d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35ef0ea0352141f18945632f996237c2d9d90204
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812753"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547422"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>방법: 프로그래밍 방식으로 문서의 범위 확장
-  Microsoft Office Word 문서에서 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의한 후 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드를 사용하여 해당 개체의 시작점과 끝점을 변경합니다. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 하 고 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드는 동일한 두 개의 인수를 *단위* 및 *개수*합니다. 합니다 *개수* 인수는 이동할 단위의 수와 *단위* 인수는 다음 중 하나일 수 있습니다 <xref:Microsoft.Office.Interop.Word.WdUnits> 값:
+  Microsoft Office Word 문서에서 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의한 후 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드를 사용하여 해당 개체의 시작점과 끝점을 변경합니다. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드는 두 개의 인수, 즉 *Unit* 및 *Count*를 사용 합니다. *Count* 인수는 이동할 단위의 수이 고, *Unit* 인수는 다음 값 중 하나일 수 있습니다 <xref:Microsoft.Office.Interop.Word.WdUnits> .
 
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>
 
@@ -49,7 +49,7 @@ ms.locfileid: "62812753"
 
 ## <a name="to-extend-a-range"></a>범위를 확장하려면
 
-1. 문자의 범위를 정의합니다. 자세한 내용은 [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)합니다.
+1. 문자의 범위를 정의합니다. 자세한 내용은 [방법: 프로그래밍 방식으로 문서에서 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)을 참조 하세요.
 
      다음 코드 예제는 문서 수준 사용자 지정에서 사용할 수 있습니다.
 
@@ -89,9 +89,9 @@ ms.locfileid: "62812753"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#38)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [방법: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [방법: 프로그래밍 방식으로 제외 단락 표시 범위를 만들 때](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

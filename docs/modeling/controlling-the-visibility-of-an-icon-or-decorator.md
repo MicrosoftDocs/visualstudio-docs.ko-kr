@@ -1,18 +1,18 @@
 ---
 title: 아이콘 또는 데코레이터의 가시성 제어
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748496"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546648"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
 *데코레이터* 는 DSL (도메인별 언어)의 셰이프에 나타나는 아이콘이 나 텍스트 줄입니다. 모델의 속성 상태에 따라 데코레이터를 표시 하 고 사라지게 할 수 있습니다. 예를 들어 사람을 나타내는 도형에서 사용자의 성별, 자녀 수 등에 따라 다른 아이콘이 표시 될 수 있습니다.
@@ -58,13 +58,13 @@ ms.locfileid: "72748496"
 
 1. 도메인 클래스에 계산 된 도메인 속성을 추가 합니다. **속성** 창에서 다음 값을 설정 합니다.
 
-     **Isbrowsable 때 =** `False` **-사용자가 속성을 숨깁니다** .
+     **Isbrowsable 때 =** `False` **-사용자의 속성을 숨깁니다** .    
 
-     **Kind =** `Calculated` **-값을 계산 하는 코드를 제공** 합니다.
+     **Kind =** `Calculated` **-값을 계산 하는 코드를 제공** 합니다.    
 
      **이름** 예: **DecoratorControl**
 
-     **형식**  =  `Boolean`
+     **입력할** = `Boolean`
 
      자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.
 
@@ -76,7 +76,7 @@ ms.locfileid: "72748496"
 
     3. **필터 속성**에서 컨트롤 속성 **DecoratorControl**를 선택 합니다.
 
-    4. **표시 유형 항목**에서 `True`를 입력 합니다.
+    4. **표시 유형 항목**아래에을 입력 `True` 합니다.
 
 3. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
@@ -88,7 +88,7 @@ ms.locfileid: "72748496"
 
 6. 누락 된 네임 스페이스, 클래스 및 메서드를 확인 합니다.  예를 들면 FamilyTree. GetDecoratorControlValue ()입니다.
 
-7. 별도의 코드 파일에서 누락 된 메서드를 포함 하는 partial 클래스 정의를 작성 합니다. 예를 들면,
+7. 별도의 코드 파일에서 누락 된 메서드를 포함 하는 partial 클래스 정의를 작성 합니다. 예를 들면 다음과 같습니다.
 
     ```
     namespace Company.FamilyTree
@@ -103,7 +103,7 @@ ms.locfileid: "72748496"
 
 8. 솔루션을 다시 빌드하고 실행 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [다이어그램에 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546668"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: 적합한 속성을 사용하십시오.
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: 적합한 속성을 사용하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
@@ -33,7 +33,7 @@ ms.locfileid: "72661956"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- Public 또는 protected 메서드의 이름이 `Get` 시작 하 고, 매개 변수를 사용 하지 않으며, 배열이 아닌 값을 반환 합니다.
+ Public 또는 protected 메서드의 이름이로 시작 하 `Get` 고, 매개 변수를 사용 하지 않으며, 배열이 아닌 값을 반환 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
  대부분의 경우 속성은 데이터를 나타내고 메서드는 작업을 수행 합니다. 속성은 필드와 같은 액세스를 사용 하 여 더 쉽게 사용할 수 있습니다. 이러한 조건 중 하나가 있는 경우 메서드는 속성이 될 수 있는 좋은 후보입니다.
@@ -67,7 +67,7 @@ ms.locfileid: "72661956"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>디버거에서 속성 확장 제어
  프로그래머는 속성을 사용 하지 않는 한 가지 이유는 디버거가 자동으로 확장 하는 것을 원하지 않기 때문입니다. 예를 들어 속성에는 많은 개체를 할당 하거나 P/Invoke를 호출 하는 작업이 포함 될 수 있지만 실제로는 관찰 가능한 부작용이 없을 수 있습니다.
 
- @No__t_0를 적용 하 여 디버거가 자동 확장 속성을 방지할 수 있습니다. 다음 예에서는이 특성을 instance 속성에 적용 하는 방법을 보여 줍니다.
+ 를 적용 하 여 디버거의 속성 자동 확장을 방지할 수 있습니다 <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> . 다음 예에서는이 특성을 instance 속성에 적용 하는 방법을 보여 줍니다.
 
 ```vb
 Imports System

@@ -1,18 +1,18 @@
 ---
 title: Windows Forms에 다이어그램 포함
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94425c9f3bc586847f43589f7abdcef2295cf1b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114617"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547630"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Windows Forms에 다이어그램 포함
 
@@ -67,7 +67,7 @@ Visual Studio 창에 표시 되는 Windows 컨트롤에 DSL 다이어그램을 �
 
 ## <a name="update-the-form-using-store-events"></a>스토어 이벤트를 사용 하 여 양식 업데이트
 
-1. 폼 디자이너에서 이름이 `listBox1`인 **ListBox** 를 추가 합니다. 그러면 모델의 요소 목록이 표시 됩니다. *저장소 이벤트*를 사용 하 여 모델과 동기화 됩니다. 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
+1. 폼 디자이너에서 라는 **ListBox** 를 추가 `listBox1` 합니다. 그러면 모델의 요소 목록이 표시 됩니다. *저장소 이벤트*를 사용 하 여 모델과 동기화 됩니다. 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
 
 2. 사용자 지정 코드 파일에서 추가 메서드를 DocView 클래스로 재정의 합니다.
 
@@ -141,7 +141,7 @@ Visual Studio 창에 표시 되는 Windows 컨트롤에 DSL 다이어그램을 �
 
      목록 상자에는 모델의 요소 목록이 표시 되 고, 추가 또는 삭제 후, 실행 취소 및 다시 실행 후에도 올바른 것을 확인할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
