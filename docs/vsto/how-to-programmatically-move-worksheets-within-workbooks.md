@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서 내에서 워크시트 이동'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e62e397bd9f8c2a0e8e8c8b7ed6581e289a9efc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4594395eb887a950c9ff0ba41cd8d3c625d35dc3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812740"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519828"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 내에서 워크시트 이동
   통합 문서의 다른 워크시트를 기준으로 워크시트의 위치를 프로그래밍 방식으로 변경할 수 있습니다. 이동한 시트의 위치를 지정하지 않으면 Excel에서 이 시트가 포함된 새 통합 문서를 만듭니다.
@@ -39,7 +39,7 @@ ms.locfileid: "62812740"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트 숨기기](../vsto/how-to-programmatically-hide-worksheets.md)
 - [방법: 프로그래밍 방식으로 통합 문서에서 워크시트 삭제](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

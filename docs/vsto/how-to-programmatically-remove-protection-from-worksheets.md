@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트에서 보호 제거'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ccf7de70c3ef741119ec22f8fa9bc76868a47030
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72448f9d1e5c24c917459b8c2c59e317190e0a11
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955958"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519875"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>방법: 프로그래밍 방식으로 워크시트에서 보호 제거
   Microsoft Office Excel 워크시트에서 프로그래밍 방식으로 보호를 제거할 수 있습니다.
@@ -31,21 +31,21 @@ ms.locfileid: "62955958"
 
 ## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 워크시트를 보호 해제하려면
 
-1. 호출 된 <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> 메서드 워크시트 및 필요한 경우 암호를 전달 합니다. 이 예제에서는 `Sheet1`이라는 워크시트를 사용한다고 가정합니다.
+1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A>워크시트의 메서드를 호출 하 고 필요한 경우 암호를 전달 합니다. 이 예제에서는 `Sheet1`이라는 워크시트를 사용한다고 가정합니다.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
      [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]
 
 ## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>VSTO 추가 기능에서 워크시트의 보호를 해제 하려면
 
-1. 호출 된 <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> 메서드 활성 워크시트 및 필요한 경우 암호를 전달 합니다.
+1. <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A>활성 워크시트의 메서드를 호출 하 고 필요한 경우 암호를 전달 합니다.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트 보호](../vsto/how-to-programmatically-protect-worksheets.md)
-- [방법: 프로그래밍 방식으로 통합 문서를 보호](../vsto/how-to-programmatically-protect-workbooks.md)
+- [방법: 프로그래밍 방식으로 통합 문서 보호](../vsto/how-to-programmatically-protect-workbooks.md)
 - [방법: 프로그래밍 방식으로 워크시트 숨기기](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)

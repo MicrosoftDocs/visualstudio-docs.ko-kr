@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서에 머리글 및 바닥글 추가'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7859657b52e5d96280646387f70686d2804e6fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52724103df17a1eaaf364f255f127a576beda798
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519927"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>방법: 프로그래밍 방식으로 문서에 머리글 및 바닥글 추가
   <xref:Microsoft.Office.Interop.Word.Section>의 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 속성 및 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 속성을 사용하여 문서의 머리글 및 바닥글에 텍스트를 추가할 수 있습니다. 문서의 각 섹션에는 다음 세 개의 머리글과 바닥글이 포함됩니다.
@@ -69,7 +69,7 @@ ms.locfileid: "62967623"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 새 문서 만들기](../vsto/how-to-programmatically-create-new-documents.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 문서에서 찾은 항목 반복](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 38a1b7c00c79c7a2e89ef64598b8c409709561ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ddcab6e0f416837bcd7b01521a6d77ddce691b9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658714"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520980"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: 표시되는 이벤트 처리기를 검토하십시오.
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: 표시되는 이벤트 처리기를 검토하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
@@ -63,6 +63,6 @@ ms.locfileid: "72658714"
 
  [!code-csharp[FxCop.Security.EventSecLib#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.EventSecLib/cs/FxCop.Security.EventSecLib.cs#1)]
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [보안 요구 사항](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [보안 요청](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

@@ -1,5 +1,5 @@
 ---
-title: 코드 분석 응용 프로그램 오류
+title: 코드 분석 애플리케이션 오류
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587786"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521318"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 애플리케이션 오류
 
@@ -26,14 +26,14 @@ ms.locfileid: "75587786"
 
 ## <a name="in-this-section"></a>단원 내용
 
-|||
+|코드|Description|
 |-|-|
 |[CA0001](ca0001.md)|관리 코드 분석 도구 내에서 예기치 않은 오류 조건을 나타내지 않는 예외가 발생 했습니다.|
 |[CA0051](ca0051.md)|규칙을 선택 하지 않았습니다.|
 |[CA0052](ca0052.md)|분석할 대상을 선택 하지 않았습니다.|
 |[CA0053](ca0053.md)|규칙 어셈블리를 로드할 수 없습니다.|
 |[CA0054](ca0054.md)|사용자 지정 규칙 어셈블리에 잘못 된 XML 리소스가 있습니다.|
-|[CA0055](ca0055.md)|파일을 로드할 수 없습니다.\<경로 >|
+|[CA0055](ca0055.md)|파일을 로드할 수 없습니다.\<path>|
 |[CA0056](ca0056.md)|프로젝트 파일에 잘못 된 버전의 분석 도구가 있습니다.|
 |[CA0057](ca0057.md)|위반을 현재 대상 및 규칙 집합에 매핑할 수 없습니다.|
 |[CA0058](ca0058.md)|참조 된 어셈블리를 로드할 수 없습니다.|
@@ -58,5 +58,5 @@ ms.locfileid: "75587786"
 
 ## <a name="related-sections"></a>관련 단원
 
-- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
+- [코드 분석 정책 오류](../code-quality/code-analysis-policy-errors.md)
 - [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)

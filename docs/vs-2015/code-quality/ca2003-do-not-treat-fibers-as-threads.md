@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 943b52f9703e60f14756bde97ce6f27c0c6f5296
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a8172490b267949686dd3390c85ed6d86531b192
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672509"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521176"
 ---
-# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: 파이버를 스레드로 취급하지 마십시오.
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: 파이버를 스레드로 취급하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|

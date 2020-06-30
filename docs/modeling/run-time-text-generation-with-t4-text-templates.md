@@ -1,7 +1,7 @@
 ---
 title: T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595373"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520837"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 
@@ -53,9 +53,9 @@ This report is Company Confidential.
 
 ### <a name="to-create-a-run-time-text-template"></a>런타임 텍스트 템플릿을 만들려면
 
-1. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **추가** > **새 항목**을 선택 합니다.
+1. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **Add**  >  **새 항목**추가를 선택 합니다.
 
-2. **새 항목 추가** 대화 상자에서 **런타임 텍스트 템플릿**을 선택 합니다. Visual Basic 일반 **항목** 에서 **일반** > 확인 합니다.
+2. **새 항목 추가** 대화 상자에서 **런타임 텍스트 템플릿**을 선택 합니다. (Visual Basic **공통 항목**  >  을 검색 합니다. **일반**.)
 
 3. 템플릿 파일의 이름을 입력 합니다.
 
@@ -80,7 +80,7 @@ This report is Company Confidential.
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>기존 텍스트 파일을 런타임 템플릿으로 변환 하려면
 
-1. Visual Studio 프로젝트에 파일을 포함 합니다. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **기존 항목** > **추가** 를 선택 합니다.
+1. Visual Studio 프로젝트에 파일을 포함 합니다. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **Add**  >  **기존 항목**추가를 선택 합니다.
 
 2. 파일의 **사용자 지정 도구** 속성을 **Texttemplatingfilepreprocessor**로 설정 합니다. 솔루션 탐색기에서 파일의 바로 가기 메뉴에 있는 **속성**을 선택 합니다.
 
@@ -91,7 +91,7 @@ This report is Company Confidential.
 
 4. 파일 이름의 주 부분에서 공백이 나 문장 부호를 제거 합니다. 예를 들어 "My Web Page.tt"는 올바르지 않지만 "MyWebPage.tt"은 올바릅니다. 파일 이름은 생성 된 코드에서 클래스 이름으로 사용 됩니다.
 
-5. 파일의 시작 부분에 다음 줄을 삽입 합니다. Visual Basic 프로젝트에서 작업 하는 경우 "C#"를 "VB"로 바꿉니다.
+5. 파일의 시작 부분에 다음 줄을 삽입 합니다. Visual Basic 프로젝트에서 작업 하는 경우 "c #"을 "VB"로 바꿉니다.
 
     `<#@ template language="C#" #>`
 
@@ -107,7 +107,7 @@ Language 매개 변수는 프로젝트의 언어에 따라 달라 집니다.
 
 ### <a name="plain-content"></a>일반 콘텐츠
 
-응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예를 들면 다음과 같습니다.:
+응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예를 들면 다음과 같습니다.
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>포함 된 프로그램 코드
 
-`<#`와 `#>`사이에 프로그램 코드를 삽입할 수 있습니다. 예를 들면 다음과 같습니다.:
+및 사이에 프로그램 코드를 삽입할 수 있습니다 `<#` `#>` . 예를 들면 다음과 같습니다.
 
 ```csharp
 <table>
@@ -144,7 +144,7 @@ This report is Company Confidential.
 </table>
 ```
 
-`<# ... #>` 사이에 문이 삽입 되며 `<#= ... #>`사이에 식이 삽입 됩니다. 자세한 내용은 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
+문 사이에 문이 삽입 되 `<# ... #>` 고 사이에 식이 삽입 됩니다 `<#= ... #>` . 자세한 내용은 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
 
 ## <a name="using-the-template"></a>템플릿 사용
 
@@ -152,7 +152,7 @@ This report is Company Confidential.
 
 **.Tt** 파일을 저장 하면 자회사 또는 **.vb** 파일이 생성 **됩니다.** **솔루션 탐색기**에서이 파일을 보려면 **.tt** 파일 노드를 확장 합니다. Visual Basic 프로젝트에서 먼저 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택 합니다.
 
-자회사 파일은 `TransformText()`라는 메서드를 포함 하는 partial 클래스를 포함 합니다. 응용 프로그램에서이 메서드를 호출할 수 있습니다.
+자회사 파일에는 라는 메서드가 포함 된 partial 클래스가 포함 되어 있습니다 `TransformText()` . 응용 프로그램에서이 메서드를 호출할 수 있습니다.
 
 ### <a name="generating-text-at-run-time"></a>런타임에 텍스트 생성
 
@@ -262,7 +262,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 #### <a name="passing-data-in-template-properties"></a>템플릿 속성의 데이터 전달
 
-템플릿에 데이터를 전달 하는 다른 방법은 partial 클래스 정의에서 템플릿 클래스에 공용 속성을 추가 하는 것입니다. 응용 프로그램은 `TransformText()`를 호출 하기 전에 속성을 설정할 수 있습니다.
+템플릿에 데이터를 전달 하는 다른 방법은 partial 클래스 정의에서 템플릿 클래스에 공용 속성을 추가 하는 것입니다. 응용 프로그램은를 호출 하기 전에 속성을 설정할 수 있습니다 `TransformText()` .
 
 Partial 정의에서 템플릿 클래스에 필드를 추가할 수도 있습니다. 이렇게 하면 템플릿의 연속 실행 간에 데이터를 전달할 수 있습니다.
 
@@ -272,15 +272,15 @@ Partial 정의에서 템플릿 클래스에 필드를 추가할 수도 있습니
 
 ### <a name="assemblies-and-references"></a>어셈블리 및 참조
 
-템플릿 코드가 .NET 또는 다른 어셈블리 (예: **system.xml**)를 참조 하도록 하려면 일반적인 방법으로 프로젝트의 **참조** 에 추가 합니다.
+템플릿 코드가 .NET 또는 **System.Xml.dll**와 같은 다른 어셈블리를 참조 하도록 하려면 일반적인 방법으로 프로젝트의 **참조** 에 추가 합니다.
 
-`using` 문과 동일한 방법으로 네임 스페이스를 가져오려는 경우 `import` 지시문을 사용 하 여이 작업을 수행할 수 있습니다.
+문과 동일한 방법으로 네임 스페이스를 가져오려면 지시문을 사용 하 여 `using` 이 작업을 수행할 수 있습니다 `import` .
 
 ```
 <#@ import namespace="System.Xml" #>
 ```
 
-이러한 지시문은 파일의 시작 부분에 `<#@template` 지시문 바로 뒤에 배치 해야 합니다.
+이러한 지시문은 지시문 바로 뒤의 파일 시작 부분에 배치 해야 합니다 `<#@template` .
 
 ### <a name="shared-content"></a>공유 콘텐츠
 
@@ -296,19 +296,19 @@ Include 지시문은 템플릿 파일이 나 포함 된 파일의 텍스트에 �
 
 ### <a name="inheritance-between-run-time-text-templates"></a>런타임 텍스트 템플릿 간 상속
 
-추상 일 수 있는 기본 클래스 템플릿을 작성 하 여 런타임 템플릿 간에 콘텐츠를 공유할 수 있습니다. `<@#template#>` 지시문의 `inherits` 매개 변수를 사용 하 여 다른 런타임 템플릿 클래스를 참조 합니다.
+추상 일 수 있는 기본 클래스 템플릿을 작성 하 여 런타임 템플릿 간에 콘텐츠를 공유할 수 있습니다. `inherits`지시문의 매개 변수를 사용 `<@#template#>` 하 여 다른 런타임 템플릿 클래스를 참조 합니다.
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>상속 패턴: 기본 메서드의 조각
 
 뒤에 나오는 예제에서 사용 된 패턴에서 다음 사항을 확인 합니다.
 
-- `SharedFragments` 기본 클래스는 `<#+ ... #>`클래스 기능 블록 내에서 메서드를 정의 합니다.
+- 기본 클래스는 `SharedFragments` 클래스 기능 블록 내에서 메서드를 정의 합니다 `<#+ ... #>` .
 
 - 기본 클래스에는 자유 텍스트가 포함 되어 있지 않습니다. 대신 모든 텍스트 블록이 클래스 기능 메서드 내에서 발생 합니다.
 
-- 파생 클래스는 `SharedFragments`에 정의 된 메서드를 호출 합니다.
+- 파생 클래스는에 정의 된 메서드를 호출 합니다 `SharedFragments` .
 
-- 응용 프로그램은 파생 클래스의 `TextTransform()` 메서드를 호출 하지만 `SharedFragments`기본 클래스를 변환 하지 않습니다.
+- 응용 프로그램은 `TextTransform()` 파생 클래스의 메서드를 호출 하지만 기본 클래스를 변환 하지는 않습니다 `SharedFragments` .
 
 - 기본 클래스와 파생 클래스 모두 런타임 텍스트 템플릿입니다. 즉, **사용자 지정 도구** 속성이 **Texttemplatingfilepreprocessor**로 설정 됩니다.
 
@@ -433,7 +433,7 @@ End material for DerivedTemplate1.
 
 런타임 템플릿은 템플릿 및 해당 콘텐츠가 컴파일 타임에 결정 되는 모든 응용 프로그램에서 사용할 수 있습니다. 런타임에 변경 되는 템플릿에서 텍스트를 생성 하는 Visual Studio 확장을 작성 하려는 경우 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)

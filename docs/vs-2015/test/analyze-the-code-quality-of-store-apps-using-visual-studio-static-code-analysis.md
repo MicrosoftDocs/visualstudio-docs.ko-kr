@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3b2e1fd025d559889f0ea41d39879e251e80fa64
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: f837822e47c911e3c27d9d41e31ae9cd448d4fc5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586696"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520499"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 코드 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,16 +24,16 @@ Visual Studio의 코드 분석 도구는 코드에 일련의 일반적인 오류
 > [!NOTE]
 > JavaScript 코드에서는 코드 분석을 사용할 수 없습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
-|||
+|제목|설명|
 |-|-|
 |[Visual Basic 및 C# 코드 품질 분석](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Visual Basic 및 C# 프로젝트에서 코드 분석을 사용합니다.|
 |[C++ 코드 품질 분석](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|C++ 프로젝트에서 코드 분석을 사용합니다.|
 
 ## <a name="more-code-analysis-info"></a>추가 코드 분석 정보
 
-|||
+|제목|설명|
 |-|-|
 |[MSDN 라이브러리의 코드 분석](https://msdn.microsoft.com/library/dd264897.aspx)|Visual Studio Ultimate, Visual Studio Premium 및 Visual Studio Professional에서 코드 분석을 사용하는 방법에 대한 자세한 정보를 찾아봅니다.|
 |[MSDN 코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)|코드 분석 팀블로그에서 기술 문서 및 샘플을 비롯한 자세한 정보를 찾아봅니다.|
