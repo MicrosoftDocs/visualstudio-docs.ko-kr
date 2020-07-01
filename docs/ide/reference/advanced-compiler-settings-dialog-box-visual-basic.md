@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 author: TerryGLee
-ms.author: tglee
-manager: jillfra
+ms.author: ghogen
+manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596933"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419109"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>고급 컴파일러 설정 대화 상자(Visual Basic)
 

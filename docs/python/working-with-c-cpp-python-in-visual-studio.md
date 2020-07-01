@@ -2,7 +2,7 @@
 title: Python용 C++ 확장명 작성
 description: 혼합 모드 디버깅을 비롯하여 Visual Studio, CPython 및 PyBind11을 사용하여 Python에 대한 C++ 확장을 만드는 연습 과정입니다.
 ms.date: 11/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62956960"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543730"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 
@@ -38,7 +38,7 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
-- 기본 옵션에 **C++를 사용한 데스크톱 개발**과 **Python 개발** 두 워크로드가 설치된 Visual Studio 2017이나 그 이상 버전.
+- 기본 옵션과 함께 설치된 **C++를 사용한 데스크톱 개발** 및 **Python 개발** 워크로드를 모두 사용하는 Visual Studio 2017 이상.
 - **Python 개발** 워크로드에서 **Python 네이티브 개발 도구** 오른쪽에 있는 상자를 선택합니다. 이 옵션은 이 문서에 설명된 대부분의 구성을 설정합니다. 이 옵션에는 C++ 워크로드도 자동으로 포함됩니다.
 
     ![Python 네이티브 개발 도구 옵션 선택](media/cpp-install-native.png)

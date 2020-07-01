@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777844"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545615"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 메서드는 .*vsp* 파일에 타임스탬프 값, 숫자 기호 및 설명 문자열을 삽입합니다. 외부 이벤트를 동기화하는 데 타임스탬프 값을 사용할 수 있습니다. 삽입될 표시 및 주석의 경우 CommentMarkAtProfile 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.
@@ -47,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|매개 변수가 0보다 작거나 같습니다. 이러한 값은 예약되어 있습니다. 표시와 주석이 기록되지 않습니다.|
 |MARK_ERROR_MODE_NEVER|이 함수가 호출될 때 프로파일링 모드가 NEVER로 설정되었습니다. 표시와 주석이 기록되지 않습니다.|
@@ -68,9 +68,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 ## <a name="function-information"></a>함수 정보
 
-|||
+|항목|값|
 |-|-|
-|**머리글**|*VSPerf.h* 포함|
+|**헤더**|*VSPerf.h* 포함|
 |**라이브러리**|*VSPerf.lib* 사용|
 |**유니코드**|CommentMarkAtProfileW(유니코드) 및 CommentMarkAtProfileA(ANSI)로 구현됩니다.|
 
@@ -115,5 +115,5 @@ void ExerciseCommentMarkAtProfile(void)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

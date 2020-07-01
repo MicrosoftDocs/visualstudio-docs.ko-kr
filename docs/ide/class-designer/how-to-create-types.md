@@ -17,18 +17,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7bdbc255320a2d17eb3c51191b3a425500dd345c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590178"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533694"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>방법: 클래스 디자이너를 사용하여 형식 만들기
 
 새로운 형식의 C# 및 Visual Basic 프로젝트를 디자인하려면 클래스 다이어그램에서 해당 형식을 만듭니다. 기존 형식을 보려면 [방법: 기존 형식 보기](how-to-view-existing-types.md)를 참조하세요.
 
-## <a name="CreateType"></a> 새 형식 만들기
+## <a name="create-a-new-type"></a><a name="CreateType"></a> 새 형식 만들기
 
 1. **도구 상자**의 **클래스 디자이너**에서 이 중 하나를 클래스 다이어그램으로 끌어 옵니다.
 
@@ -56,9 +56,8 @@ ms.locfileid: "75590178"
 
 4. 이제 형식을 정의할 다른 항목을 추가합니다.
 
-    |||
-    |-|-|
     |**형식**|**추가**|
+    |-|-|
     |클래스, 추상 클래스, 구조체 또는 구조체|형식을 정의하는 메서드, 속성, 필드, 이벤트, 생성자(메서드), 소멸자(메서드) 및 상수|
     |열거형|열거형을 구성하고 있는 필드 값|
     |인터페이스|인터페이스를 구성하는 메서드, 속성 및 이벤트|
@@ -67,7 +66,7 @@ ms.locfileid: "75590178"
 
      [멤버 만들기](creating-and-configuring-type-members.md#create-members)를 참조하세요.
 
-## <a name="CustAttributeType"></a> 형식에 사용자 지정 특성 적용
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> 형식에 사용자 지정 특성 적용
 
 1. 클래스 다이어그램에서 형식의 모양을 클릭합니다.
 
@@ -77,7 +76,7 @@ ms.locfileid: "75590178"
 
    사용자 지정 특성이 해당 형식에 적용됩니다.
 
-## <a name="CustAttributeMember"></a> 형식 멤버에 사용자 지정 특성 적용
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> 형식 멤버에 사용자 지정 특성 적용
 
 1. 클래스 다이어그램에서 형식 모양에 있는 멤버의 이름을 클릭하거나 클래스 세부 내용 창에서 해당 행을 클릭합니다.
 

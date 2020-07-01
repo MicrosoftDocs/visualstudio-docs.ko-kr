@@ -11,17 +11,17 @@ helpviewer_keywords:
 - pre-build events
 - post-build events
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6629f41657a546ffb5fb48e0b6efb5f4f0dd50cb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596881"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419057"
 ---
 # <a name="build-events-page-project-designer-c"></a>프로젝트 디자이너, 빌드 이벤트 페이지(C#)
 

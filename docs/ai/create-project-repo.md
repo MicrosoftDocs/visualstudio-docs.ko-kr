@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: d146d801a1519d3282b4e2c5dd72fd23b0df7206
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 9bb3aa4a7aa9818f42f99860956e0e2ae73b2b7f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638640"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371588"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio에서 Python 코드의 리포지토리 복제
 

@@ -3,7 +3,7 @@ title: 라이브 ASP.NET Azure Kubernetes Service 디버그
 description: 스냅샷 디버거로 snappoint를 설정하고 스냅샷을 보는 방법을 알아봅니다.
 ms.custom: ''
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugger
 author: poppastring
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415743"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350656"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 라이브 ASP.NET Azure Kubernetes Service 디버그
 

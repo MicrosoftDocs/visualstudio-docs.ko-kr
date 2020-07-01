@@ -1,7 +1,7 @@
 ---
 title: 64비트 애플리케이션 디버그 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911581"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350773"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 애플리케이션 디버그
 로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 애플리케이션을 디버깅할 수 있습니다.

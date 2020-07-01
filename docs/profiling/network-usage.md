@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144692"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541715"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP 앱에서 네트워크 사용 분석
 Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/windows.web.http)를 사용하여 수행된 네트워크 작업에 대한 데이터를 수집합니다. 데이터를 분석하면 액세스 및 인증 문제, 잘못된 캐시 사용 및 저하된 디스플레이와 다운로드 성능을 해결하는 데 도움이 될 수 있습니다.
@@ -53,7 +53,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
 
  ![네트워크 도구 세부 정보 창](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|||
+|이름|설명|
 |-|-|
 |**헤더**|이벤트의 요청 헤더에 대한 정보입니다.|
 |**본문**|요청 및 응답 페이로드 데이터입니다.|

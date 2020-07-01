@@ -16,19 +16,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 87692c938462f166f93b4cfb8b223a45e2553ada
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771586"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546889"
 ---
-# <a name="summary-view"></a>요약 보기
+# <a name="summary-view"></a>요약 뷰
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수 또는 개체에 대한 정보가 표시됩니다. 이 뷰는 타임라인 그래프 및 프로파일링 방법의 성능 메트릭을 기반으로 가장 많은 비용이 소요된 함수 또는 개체의 두 개 이상의 목록을 제공합니다. 이 뷰의 데이터는 사용된 프로파일링 방법(샘플링, 계측 또는 동시성) 및 .NET 메모리 할당이 수집되었는지 여부에 따라 달라집니다.
 
  동시성 데이터의 요약 뷰를 제외한 모든 요약 뷰의 경우 요약 뷰의 시간 표시 막대 그래프에는 프로파일링이 수행된 시간 동안 프로파일링된 애플리케이션의 프로세서(CPU) 사용률이 표시됩니다.
 
-- 그래프에서 시간을 세그먼트를 지정하는 경우 해당 세그먼트에 대한 데이터를 다시 분석하거나 지정한 세그먼트에 대한 타임라인 디스플레이를 확대/축소할 수 있습니다. 자세한 내용은 [방법: 요약 시간 표시 막대에서 보고서 뷰 필터링](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)을 참조하세요.
+- 그래프에서 시간을 세그먼트를 지정하는 경우 해당 세그먼트에 대한 데이터를 다시 분석하거나 지정한 세그먼트에 대한 타임라인 디스플레이를 확대/축소할 수 있습니다. 자세한 내용은 [방법: 요약 타임라인에서 보고서 보기 필터링](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)을 참조하세요.
 
 - 요약 뷰 목록에서 함수를 클릭하여 함수에 대한 함수 정보 뷰를 열 수 있습니다. 또한 다른 뷰 옵션에 대한 함수를 마우스 오른쪽 단추로 클릭할 수도 있습니다.
 
@@ -37,15 +37,15 @@ ms.locfileid: "74771586"
 ## <a name="notifications-links"></a>알림 링크
  알림 목록에서 링크를 클릭하여 보고서에 대한 표시 옵션을 설정할 수 있습니다. 목록은 타임라인 그래프의 오른쪽에 있습니다.
 
-|||
+|옵션|설명|
 |-|-|
-|**사용자가 작성하지 않은 코드 표시**<br /><br /> **내 코드만 표시**|네이티브 코드 또는 계측 방법을 사용하여 수집된 프로파일링 데이터에 사용할 수 없습니다. 사용자 코드에서 데이터만 표시(**내 코드만 표시**)와 시스템 코드(**사용자가 작성하지 않은 코드 표시**)를 포함하는 모든 코드에서 데이터 표시 사이를 전환합니다. 기본적으로 데이터는 사용자 코드로 제한됩니다. 설정을 변경하려면 [방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)을 참조하세요.|
+|**사용자가 작성하지 않은 코드 표시**<br /><br /> **내 코드만 표시**|네이티브 코드 또는 계측 방법을 사용하여 수집된 프로파일링 데이터에 사용할 수 없습니다. 사용자 코드에서 데이터만 표시(**내 코드만 표시**)와 시스템 코드(**사용자가 작성하지 않은 코드 표시**)를 포함하는 모든 코드에서 데이터 표시 사이를 전환합니다. 기본적으로 데이터는 사용자 코드로 제한됩니다. 설정을 변경하려면 [방법: 내 코드만 표시하도록 프로파일링 도구 보고서 보기 필터링](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)을 참조하세요.|
 |**지침 보기**|**오류 목록** 창에 성능 규칙 경고를 표시합니다. 자세한 내용은 [성능 규칙을 사용하여 데이터 분석](../profiling/using-performance-rules-to-analyze-data.md)을 참조하세요.|
 
 ## <a name="report"></a>보고서
  보고서 목록에서 링크를 클릭하여 서로 다른 뷰를 열고 보고서를 비교, 저장 또는 필터링할 수 있습니다. 목록은 타임라인 그래프의 오른쪽에 있습니다.
 
-| | |
+|옵션 |설명 |
 |----------------------------| - |
 | **트리밍된 호출 트리 표시** | 호출 트리 보기에서 가장 많은 비용이 소요된 실행 경로를 표시합니다. 자세한 내용은 [호출 트리 뷰](../profiling/call-tree-view.md)를 참조하세요. |
 | **실행 부하 과다 라인 표시** | 계측 방법을 사용하여 수집된 프로파일링 데이터에 사용할 수 없습니다. 줄 뷰에서 가장 많은 비용이 소요된 소스 코드 줄을 표시합니다. 자세한 내용은 [줄 뷰](../profiling/lines-view.md)를 참조하세요. |
@@ -55,7 +55,7 @@ ms.locfileid: "74771586"
 | **보고서 데이터 필터링** | 보고서 뷰에서 데이터를 제한하도록 조건을 지정할 수 있는 프로파일링 보고서 필터 창을 표시합니다. 자세한 내용은 [성능 보고서 뷰 필터](../profiling/performance-report-view-filter.md)를 참조하세요. |
 | **전체 화면 설정/해제** | 보고서 뷰에 대한 전체 화면 모드를 설정/해제합니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [요약 뷰 - 샘플링 데이터](../profiling/summary-view-sampling-data.md)
 - [요약 뷰 - 계측 데이터](../profiling/summary-view-instrumentation-data.md)
 - [요약 뷰 - .NET 메모리 데이터](../profiling/summary-view-dotnet-memory-data.md)

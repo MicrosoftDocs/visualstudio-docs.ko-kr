@@ -2,19 +2,19 @@
 title: 혼합 모드 Python/C++ 디버깅에 대한 기호
 description: Visual Studio에서 완벽한 혼합 모드 C++ 및 Python 디버깅을 위해 기호 로드 기능을 제공하는 방법입니다.
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77dc73b0be050e5108f73d38dfbbaa763d236995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4a735c374216b1810b3abd99ffab89000cec8b8f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957616"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540922"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python 인터프리터에 대한 디버깅 기호 설치
 

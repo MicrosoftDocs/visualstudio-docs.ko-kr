@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595854"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418849"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 

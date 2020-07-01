@@ -2,7 +2,7 @@
 title: C++ 개체의 사용자 지정 뷰 만들기
 description: Natvis 프레임워크를 사용하여 Visual Studio에서 디버거의 네이티브 형식이 표시되는 방식 사용자 지정
 ms.date: 03/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - natvis
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f8bdd8d26ba450b1aedd790d644c183607c44af
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 5720511c15526a54a82018b2079b91aaf5dd6430
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224513"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350708"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis 프레임워크를 사용하여 디버거에서 C++ 개체의 사용자 지정 뷰 만들기
 

@@ -2,7 +2,7 @@
 title: .NET Framework 독립 실행형 앱에 프로파일러 연결, 앱 통계 가져오기
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
 ms.author: mikejo
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9084f2d1dd784172735c66d38da785dffb74d82c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779183"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531809"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET Framework 독립 실행형 애플리케이션에 프로파일러를 연결하여 애플리케이션 통계 수집
 이 문서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 실행 중인 .NET Framework 독립 실행형(클라이언트) 애플리케이션에 프로파일러를 연결하고 샘플링 방법을 사용하여 성능 통계를 수집하는 방법을 설명합니다.
@@ -73,9 +73,8 @@ ms.locfileid: "74779183"
 
    - 기본적으로 성능 데이터는 10,000,000번의 무중단 프로세서 클록 주기마다 샘플링됩니다. 1GH 프로세서의 경우 이는 대략 10초마다 한 번입니다. 다음 옵션 중 하나를 지정하여 클록 주기 간격을 변경하거나 다른 샘플링 이벤트를 지정할 수 있습니다. [/targetclr](../profiling/targetclr.md) **:** `Version` 애플리케이션에 둘 이상의 런타임 버전이 로드된 경우 프로파일링할 CLR의 버전을 지정합니다. 선택 사항입니다.
 
-   |||
-   |-|-|
    |샘플 이벤트|설명|
+   |-|-|
    |[/timer](../profiling/timer.md) **:** `Interval`|샘플링 간격을 `Interval`로 지정된 무중단 클록 주기 수로 변경합니다.|
    |[/pf](../profiling/pf.md) [ **:** `Interval`]|샘플링 이벤트를 페이지 폴트로 변경합니다. `Interval`이 지정되면 샘플 간의 페이지 폴트 수를 설정합니다. 기본값은 10입니다.|
    |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|샘플링 이벤트를 운영 체제 커널에 대한 프로세스의 시스템 호출로 변경합니다(syscalls). `Interval`이 지정되면 샘플 간의 호출 수를 설정합니다. 기본값은 10입니다.|

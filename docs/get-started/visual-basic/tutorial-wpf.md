@@ -5,7 +5,7 @@ ms.custom: seodec18, get-started
 ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
-ms.topic: conceptual
+ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77579955"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419213"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>자습서: Visual Basic으로 간단한 애플리케이션 만들기
 

@@ -2,7 +2,7 @@
 title: Python과 함께 CookieCutter 템플릿 사용
 description: Visual Studio는 Python 코드용 템플릿을 검색하고 해당 템플릿으로 프로젝트를 만들기 위한 그래픽 Cookiecutter 확장을 지원합니다.
 ms.date: 01/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62832195"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535150"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 확장 사용
 

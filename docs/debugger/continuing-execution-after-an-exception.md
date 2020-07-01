@@ -1,7 +1,7 @@
 ---
 title: 예외 후 실행 계속 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745653"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350682"
 ---
 # <a name="continuing-execution-after-an-exception"></a>예외 후 실행 계속
 예외로 인해 디버거가 실행을 중단하면 기본적으로 **예외 도우미**가 표시됩니다. **옵션** 대화 상자에서 **예외 도우미**를 사용하지 않도록 설정한 경우 **예외 도우미**(C# 또는 Visual Basic) 또는 **예외** 대화 상자(C+++)가 표시됩니다.

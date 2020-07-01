@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 컴퓨터에서 Visual Studio를 완전히 제거하는 방법을 단계별로 알아봅니다.
 ms.date: 12/19/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649200"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418927"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio 제거
 

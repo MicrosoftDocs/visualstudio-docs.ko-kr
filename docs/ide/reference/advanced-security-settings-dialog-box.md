@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Security Settings dialog box
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 033c8d9c97d54b972a7bf30e9e1e04171e5b505e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5d34d1b16f36c90f4200a091050d1646fc563d33
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595841"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419083"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>고급 보안 설정 대화 상자
 

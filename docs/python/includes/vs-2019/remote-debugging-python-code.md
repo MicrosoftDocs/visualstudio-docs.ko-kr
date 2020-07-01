@@ -2,7 +2,7 @@
 title: 원격 Linux 컴퓨터에서 Python 코드 디버그
 description: 필요한 구성 단계, 보안 및 문제 해결을 포함해서 Visual Studio를 사용하여 원격 Linux 컴퓨터에서 실행 중인 Python 코드를 디버그합니다.
 ms.date: 05/12/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ccc0f23663eb4f892c4eb5e4ab66d7cb526f100f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285687"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541081"
 ---
 Visual Studio는 Windows 컴퓨터에서 Python 애플리케이션을 로컬 및 원격으로 시작하고 디버그할 수 있습니다([Remote Debugging](../../../debugger/remote-debugging.md)(원격 디버깅) 참조). 또한 [debugpy 라이브러리](https://pypi.org/project/debugpy/)를 사용하여 CPython 이외의 다른 운영 체제, 디바이스 또는 Python 구현에서 원격으로 디버그할 수도 있습니다.
 

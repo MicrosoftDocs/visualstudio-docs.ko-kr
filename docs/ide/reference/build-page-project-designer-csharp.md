@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76923261"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419226"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 

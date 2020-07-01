@@ -2,7 +2,7 @@
 title: Python 개발자용 Visual Studio 개요
 titleSuffix: ''
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73661926"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520590"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
 

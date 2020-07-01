@@ -2,7 +2,7 @@
 title: Python 프로젝트에 대한 사용자 지정 메뉴 명령 정의
 description: 프로젝트 및 대상 파일을 편집하여 Visual Studio의 Python 프로젝트 컨텍스트 메뉴에 사용자 지정 명령을 추가하여 실행 가능 프로그램, 스크립트, 모듈, 인라인 코드 조각 및 pip를 호출할 수 있습니다.
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aee42648eb4a2de3611d20fc0ca83ff898ad1fa9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183082"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540870"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
 

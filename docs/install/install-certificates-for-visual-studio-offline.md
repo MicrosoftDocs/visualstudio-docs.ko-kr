@@ -3,7 +3,7 @@ title: 오프라인 설치에 필요한 인증서 설치
 description: Visual Studio 오프라인 설치에 대한 인증서를 설치하는 방법을 알아봅니다.
 ms.date: 08/08/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 525294d2cf3c33dfdb1c5796dabf1c2a7a78bf91
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114668"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418810"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 

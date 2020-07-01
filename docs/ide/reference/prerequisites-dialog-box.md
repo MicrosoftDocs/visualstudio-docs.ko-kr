@@ -7,17 +7,17 @@ f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecbba1a1c5e8670fd9adcafdfed8cec21dd3912
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf555a9a4b7c73e4e204bcc42e6b57d3ab96cd01
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567907"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419174"
 ---
 # <a name="prerequisites-dialog-box"></a>필수 조건 대화 상자
 

@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 759ee562e5d3648cf831c6a1247bc660596336a1
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: de0d2521f73da21ca7b6fc40edaecfadd5d703ed
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638586"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371562"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Visual Studio의 템플릿에서 AI 프로젝트 만들기
 

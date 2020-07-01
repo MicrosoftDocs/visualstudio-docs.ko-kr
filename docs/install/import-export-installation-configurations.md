@@ -3,7 +3,7 @@ title: 설치 구성 가져오기 또는 내보내기
 titleSuffix: ''
 description: 다른 사용자와 공유하기 위해 설치 구성을 .vsconfig 파일로 내보내고 가져와 복제하는 방법을 알아봅니다.
 ms.date: 05/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dcad21ce0a77e18bed0b077f731a509916e9e63
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114847"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418823"
 ---
 # <a name="import-or-export-installation-configurations"></a>설치 구성 가져오기 또는 내보내기
 

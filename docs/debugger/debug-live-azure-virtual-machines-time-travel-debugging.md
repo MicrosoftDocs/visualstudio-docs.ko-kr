@@ -3,7 +3,7 @@ title: 시간 이동 디버깅 라이브 ASP.NET Azure Virtual Machines
 description: 스냅샷 디버거를 사용하여 Azure Virtual Machines에서 라이브 ASP.NET 앱을 기록 및 재생하는 방법을 알아봅니다.
 ms.custom: ''
 ms.date: 04/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugger
 author: poppastring
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: a44ecd7faeb3ec4cea7665678050580d7e4063a9
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432221"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350630"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 Azure Virtual Machines에서 라이브 ASP.NET 앱 기록 및 재생
 

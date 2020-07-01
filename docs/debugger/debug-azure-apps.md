@@ -1,7 +1,7 @@
 ---
 title: Azure 서비스 디버그 | Microsoft Docs
 ms.date: 09/14/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugger
 ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: e7c7ba163010a14102aa3e1b0160e1c3cf294db1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fad1a7d1f07009b169480a9e071c5cae8498f600
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745558"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350760"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Visual Studio에서 Azure 서비스 디버그
 

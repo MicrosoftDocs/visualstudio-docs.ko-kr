@@ -5,7 +5,7 @@ ms.custom: seodec18, get-started
 ms.date: 08/09/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba8a29a75b21351d94c818837f07ff22785a07b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77579983"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419278"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>자습서: C\#으로 간단한 애플리케이션 만들기
 

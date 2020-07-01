@@ -1,7 +1,7 @@
 ---
 title: 여러 프로세스 디버그 | Microsoft Docs
 ms.date: 11/20/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301184"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350604"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>여러 프로세스 디버그(C#, Visual Basic, C++)
 

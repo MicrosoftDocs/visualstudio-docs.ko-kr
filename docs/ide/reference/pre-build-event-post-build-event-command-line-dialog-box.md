@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567920"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419200"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자
 

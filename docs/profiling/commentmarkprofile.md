@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772791"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546590"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 함수는 .*vsp* 파일에서 숫자 표식 및 텍스트 문자열을 삽입합니다. 삽입될 표시 및 주석의 경우 `CommentMarkProfile` 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.
@@ -42,7 +42,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|매개 변수가 0보다 작거나 같습니다. 이러한 값은 예약되어 있습니다. 표시와 주석이 기록되지 않습니다.|
 |MARK_ERROR_MODE_NEVER|이 함수가 호출될 때 프로파일링 모드가 NEVER로 설정되었습니다. 표시와 주석이 기록되지 않습니다.|
@@ -65,9 +65,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 ## <a name="function-information"></a>함수 정보
 
-|||
+|항목|값|
 |-|-|
-|**머리글**|VSPerf.h 포함|
+|**헤더**|VSPerf.h 포함|
 |**라이브러리**|VSPerf.lib 사용|
 |**유니코드**|`CommentMarkProfileW`(유니코드) 및 `CommentMarkProfileA`(ANSI)로 구현됐습니다.|
 
@@ -110,5 +110,5 @@ void ExerciseCommentMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

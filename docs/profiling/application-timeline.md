@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285984"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537282"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
 
@@ -100,7 +100,7 @@ ms.locfileid: "85285984"
 
 다음과 같은 이벤트가 지원됩니다.
 
-|||
+|Name|Description|
 |-|-|
 |**구문 분석**|XAML 파일을 구문 분석하고 개체를 만드는 데 걸린 시간입니다.<br /><br /> **타임라인 세부 정보**에서 **구문 분석** 노드를 확장하면 루트 이벤트 때문에 구문 분석된 모든 XAML 파일의 종속성 체인을 표시합니다. 이러한 팁을 통해 성능이 중요한 시나리오에서 불필요한 파일 구문 분석 및 개체 생성을 식별하고, 최적화할 수 있습니다.|
 |**레이아웃**|큰 애플리케이션에서는 수천 개의 요소가 동시에 화면에 표시될 수 있습니다. 이 디스플레이로 인해 UI 프레임 속도가 느려지고 애플리케이션의 응답성이 나빠질 수 있습니다. 레이아웃 이벤트는 각 요소의 레이아웃을 지정하는 비용(즉, Arrange, Measure, ApplyTemplate, ArrangeOverride 및 MeasureOverride에 소요되는 시간)을 정확하게 결정합니다. 또한 레이아웃 단계에 참여하는 시각적 트리를 빌드합니다. 이 시각화를 사용하여 정리할 논리 트리를 결정하거나 다른 지연 메커니즘을 평가하여 레이아웃 단계를 최적화할 수 있습니다.|
@@ -116,7 +116,7 @@ ms.locfileid: "85285984"
 
 **타임라인 세부 정보** 도구 모음을 사용하여 **타임라인 세부 정보** 뷰 항목의 주석을 정렬, 필터링 및 지정합니다.
 
-|||
+|Name|Description|
 |-|-|
 |**정렬 기준**|시작 시간 또는 이벤트의 길이로 정렬합니다.|
 |![프레임별 이벤트 그룹화](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|프레임으로 이벤트를 그룹화하는 최상위 **프레임** 범주를 추가하거나 제거합니다.|

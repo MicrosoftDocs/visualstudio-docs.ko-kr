@@ -2,7 +2,7 @@
 title: 변수 검사 - 자동 및 지역 창 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b159f631534135ac568fb03dbffa46ae0360fc47
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904102"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350747"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
 디버깅하는 동안 **자동** 및 **지역** 창에 변수 값이 표시됩니다. 창은 디버깅 세션 중에만 사용할 수 있습니다. **자동** 창에는 현재 중단점 주위에서 사용된 변수가 표시됩니다. **지역** 창에는 일반적으로 현재 함수 또는 메서드인 로컬 범위에 정의된 변수가 표시됩니다. 코드를 처음으로 디버그하는 경우 이 문서를 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 및 [디버깅 기술과 도구](../debugger/write-better-code-with-visual-studio.md)를 읽어보는 것이 좋습니다.
 
-**Autos** 창은 C#, Visual Basic, C++ 및 Python 코드에서는 사용할 수 있지만 JavaScript 또는 F#에서는 사용할 수 없습니다.
+ **자동** 창은 C#, Visual Basic, C++ 및 Python 코드에 사용할 수 있지만 JavaScript 또는 F#에는 사용할 수 없습니다.
 
 디버깅 중에 **자동** 창을 열려면 **디버그** > **Windows** > **자동**을 선택하거나 **Ctrl**+**Alt**+**V** > **A**를 누릅니다.
 
@@ -45,11 +45,12 @@ ms.locfileid: "74904102"
 
 디버거 창의 기본 숫자 형식은 10진수입니다. 16진수로 변경하려면 **지역** 또는 **자동** 창을 마우스 오른쪽 단추로 클릭하고 **16진수 표시**를 선택합니다. 이 변경 내용은 모든 디버거 창에 영향을 줍니다.
 
+## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>자동 또는 지역 창에서 변수 값 편집
+
 **자동** 또는 **지역** 창에서 대부분의 변수 값을 편집하려면 값을 두 번 클릭하고 새 값을 입력합니다.
 
 값에 대해 식을 입력할 수 있습니다(예: `a + b`). 디버거는 유효한 언어 식을 대부분 받아들입니다.
 
-값에 대해 식을 입력할 수 있습니다(예: `a + b`). 디버거는 유효한 언어 식을 대부분 받아들입니다.
 네이티브 C++ 코드에서 변수 이름의 컨텍스트를 한정해야 할 수 있습니다. 자세한 내용은 [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)를 참조하세요.
 
 >[!CAUTION]
@@ -69,20 +70,6 @@ ms.locfileid: "74904102"
 ![지역 창에서 검색](../debugger/media/ee-search-locals.png "지역 창에서 검색")
 
 검색을 보다 정밀하게 하려면 **자동** 또는 **지역** 창의 맨 위에 있는 **심층 검색** 드롭다운을 사용하여 중첩된 개체를 검색하려는 수준 깊이를 선택합니다. 
-
-## <a name="pin-properties-in-the-autos-or-locals-window"></a>자동 또는 지역 창에서 속성 고정
-
-> [!NOTE]
-> 이 기능은 .NET Core 3.0 이상에서 지원 됩니다.
-
-**Pinnable 속성** 도구를 사용 하 여 자동 및 지역 창에서 개체의 속성을 기준으로 개체를 신속 하 게 검사할 수 있습니다.  이 도구를 사용 하려면 속성 위로 마우스를 이동 하 고 표시 되는 고정 아이콘을 선택 하거나 마우스 오른쪽 단추를 클릭 하 고 결과 상황에 맞는 메뉴에서 **즐겨찾기로 멤버 고정** 옵션을 선택 합니다.  그러면 해당 속성이 개체의 속성 목록 맨 위에 표시 되 고 속성 이름 및 값이 **값** 열에 표시 됩니다.  속성을 고정 해제 하려면 고정 아이콘을 다시 선택 하거나 상황에 맞는 메뉴에서 **멤버를 즐겨찾기로 고정 해제** 옵션을 선택 합니다.
-
-![지역 창에서 속성 고정](../debugger/media/basic-pin.gif "지역 창에서 속성 고정")
-
-자동 또는 지역 창에서 개체의 속성 목록을 볼 때 속성 이름을 전환 하 고 고정 되지 않은 속성을 필터링 할 수도 있습니다.  자동 또는 지역 창 위의 도구 모음에서 단추를 선택 하 여 각 옵션에 액세스할 수 있습니다.
-
-![속성 이름 설정/해제](../debugger/media/toggle-property-names.gif "속성 이름 설정/해제")
-![즐겨찾기 속성](../debugger/media/filter-pinned-properties-locals.png "즐겨찾기 속성 필터링")
 
 ## <a name="pin-properties-in-the-autos-or-locals-window"></a>자동 또는 지역 창에서 속성 고정
 
