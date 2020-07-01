@@ -11,4 +11,4 @@ ms.lasthandoff: 04/02/2020
 ms.locfileid: "80573248"
 ---
 > [!NOTE]
-> 여러 플랫폼에서 Office 환경을 확장하는 솔루션을 개발하고 싶으신가요? 새로운 Office [추가 기능 모델을](/office/dev/add-ins/)확인하십시오. Office 추가 기능 VSTO 추가 기능 및 솔루션에 비해 작은 설치 공간을 가지고 있으며 HTML5, JavaScript, CSS3 및 XML과 같은 거의 모든 웹 프로그래밍 기술을 사용하여 빌드할 수 있습니다.
+> 여러 플랫폼에서 Office 환경을 확장 하는 솔루션을 개발 하는 데 관심이 있나요? 새 [Office 추가 기능 모델](/office/dev/add-ins/)을 확인 하세요. Office 추가 기능은 VSTO 추가 기능과 솔루션에 비해 약간의 공간을 차지 하며, HTML5, JavaScript, CSS3, XML 등 거의 모든 웹 프로그래밍 기술을 사용 하 여 빌드할 수 있습니다.
