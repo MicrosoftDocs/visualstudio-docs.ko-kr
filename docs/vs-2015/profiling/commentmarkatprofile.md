@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값  
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.  
   
-|Enumerator|Description|  
+|열거자|설명|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|매개 변수가 0보다 작거나 같습니다. 이러한 값은 예약되어 있습니다. 표시와 주석이 기록되지 않습니다.|  
 |MARK_ERROR_MODE_NEVER|이 함수가 호출될 때 프로파일링 모드가 NEVER로 설정되었습니다. 표시와 주석이 기록되지 않습니다.|  
@@ -72,7 +72,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 |항목|값|  
 |-|-|  
-|**머리글**|VSPerf.h 포함|  
+|**헤더**|VSPerf.h 포함|  
 |**라이브러리**|VSPerf.lib 사용|  
 |**유니코드**|CommentMarkAtProfileW(유니코드) 및 CommentMarkAtProfileA(ANSI)로 구현됩니다.|  
   

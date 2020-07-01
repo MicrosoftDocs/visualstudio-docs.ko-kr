@@ -1,21 +1,21 @@
 ---
 title: 종속성 다이어그램에 명령 및 제스처 추가
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747661"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531393"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>종속성 다이어그램에 명령 및 제스처 추가
 
@@ -38,7 +38,7 @@ Visual Studio에서 종속성 다이어그램에 대 한 마우스 오른쪽 단
 
    템플릿에서 작은 작업 예제가 포함된 프로젝트를 만듭니다.
 
-2. 확장을 테스트 하려면 **ctrl** +**f5** 또는 **f5**키를 누릅니다.
+2. 확장을 테스트 하려면 **ctrl** + **f5** 또는 **f5**키를 누릅니다.
 
     Visual Studio의 실험적 인스턴스가 시작 됩니다. 이 인스턴스에서 종속성 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.
 
@@ -102,13 +102,13 @@ Visual Studio에서 종속성 다이어그램에 대 한 마우스 오른쪽 단
 
      [제스처 처리기 정의](#gesture)
 
-7. 기능을 테스트 하려면 **ctrl** +**f5** 또는 **f5**키를 누릅니다.
+7. 기능을 테스트 하려면 **ctrl** + **f5** 또는 **f5**키를 누릅니다.
 
    Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 종속성 다이어그램을 만들거나 엽니다.
 
 8. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 VSIX를 설치 하려면 VSIX 프로젝트의 **bin** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. 파일 탐색기에서 VSIX 파일을 두 번 클릭 합니다.
 
-## <a name="command"></a> 메뉴 명령 정의
+## <a name="defining-a-menu-command"></a><a name="command"></a> 메뉴 명령 정의
 
 기존 제스처 또는 명령 프로젝트에 메뉴 명령 정의를 더 추가할 수 있습니다. 각 명령은 다음과 같은 특징이 있는 클래스에 의해 정의됩니다.
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> 제스처 처리기 정의
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a>제스처 처리기 정의
 
 제스처 처리기는 사용자가 항목을 종속성 다이어그램으로 끌 때 그리고 사용자가 다이어그램에서 아무 곳 이나 두 번 클릭할 때 응답 합니다.
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 사용자가 다이어그램에 항목을 놓을 때 호출됩니다.
 
-- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들면,
+- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들면 다음과 같습니다.
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -261,6 +261,6 @@ namespace MyLayerExtensions // change to your preference
 
 - 일부 형식의 끌어온 항목에 대한 처리기는 이미 정의되었습니다. 예를 들어 사용자가 솔루션 탐색기에서 종속성 다이어그램으로 항목을 끌어올 수 있습니다. 이러한 형식의 항목에 대한 끌기 처리기는 정의할 수 없습니다. 이 경우 `DragDrop` 메서드가 호출되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
