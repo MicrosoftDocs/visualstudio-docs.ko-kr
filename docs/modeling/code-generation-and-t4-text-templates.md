@@ -1,7 +1,7 @@
 ---
 title: 코드 생성 및 T4 텍스트 템플릿
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0eba8b4850ee845414084ef766fce30f9efd7e6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597206"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548241"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
 
@@ -42,7 +42,7 @@ T4 텍스트 템플릿에는 런타임 시간과 디자인 타임의 두 종류�
 
 또한 템플릿에는 프로그램 코드 조각이 포함됩니다. 이러한 조각을 사용하여 텍스트 섹션을 반복하고, 조건부 섹션을 만들고, 애플리케이션의 데이터를 표시할 수 있습니다.
 
-출력을 생성하기 위해 애플리케이션은 템플릿에 의해 생성된 함수를 호출합니다. 예를 들면 다음과 같습니다.:
+출력을 생성하기 위해 애플리케이션은 템플릿에 의해 생성된 함수를 호출합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
@@ -94,6 +94,6 @@ namespace Fabrikam.FirstJob
 
 텍스트 템플릿 변환 기능을 *T4*라고 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)

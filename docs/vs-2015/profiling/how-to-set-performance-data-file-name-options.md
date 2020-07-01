@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205794"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548397"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>방법: 성능 데이터 파일 이름 옵션 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ ms.locfileid: "68205794"
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-|||  
+|구문 요소|설명|  
 |-|-|  
-|*Path*|보고서가 포함된 디렉터리입니다. 기본 위치는 사용자의 프로젝트 및 솔루션에 대한 솔루션 폴더 또는 기본 위치입니다.|  
-|*VSP-File*|프로파일링 데이터 파일의 이름입니다. 기본 이름은 프로파일링되는 솔루션 또는 실행 파일의 이름입니다.|  
+|*경로*|보고서가 포함된 디렉터리입니다. 기본 위치는 사용자의 프로젝트 및 솔루션에 대한 솔루션 폴더 또는 기본 위치입니다.|  
+|*VSP-파일*|프로파일링 데이터 파일의 이름입니다. 기본 이름은 프로파일링되는 솔루션 또는 실행 파일의 이름입니다.|  
 |*YYMMDD*|프로파일링 데이터가 수집된 연도, 월 및 일을 표시하는 날짜 스탬프입니다.|  
-|*(N)*|두 개 이상의 프로파일링 데이터 파일이 있으면 괄호 사이의 파일 이름에 증분된 숫자가 추가됩니다.|  
+|*개의*|두 개 이상의 프로파일링 데이터 파일이 있으면 괄호 사이의 파일 이름에 증분된 숫자가 추가됩니다.|  
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>성능 세션에 대한 프로파일링 데이터 파일의 명명 구문을 변경하려면  
   
@@ -44,7 +44,7 @@ ms.locfileid: "68205794"
   
 3. **보고서**에서 다음 설정을 변경합니다.  
   
-    |||  
+    |Name|설명|  
     |-|-|  
     |**보고서 위치**|프로파일링 데이터 파일을 저장할 디렉터리를 지정합니다.|  
     |**보고서 이름**|파일의 기본 이름을 지정합니다.|  

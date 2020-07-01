@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850756"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548423"
 ---
 # <a name="network-usage"></a>네트워크 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
  ![네트워크 도구 세부 정보 창](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|||  
+|Name|설명|  
 |-|-|  
 |**헤더**|이벤트의 요청 헤더에 대한 정보입니다.|  
 |**본문**|요청 및 응답 페이로드 데이터입니다.|  
 |**매개 변수**|쿼리 문자열 매개 변수 이름 및 값입니다.|  
 |**쿠키**|응답 및 요청 쿠키 데이터입니다.|  
-|**타이밍**|선택한 리소스를 획득하기 위한 단계의 그래프입니다.|  
+|**Timings**|선택한 리소스를 획득하기 위한 단계의 그래프입니다.|  
   
  네트워크 **요약** 막대에는 지정된 지점에서 표시되는 네트워크 작업 수, 전송된 데이터의 양, 다운로드에 소요된 시간, 표시되는 오류의 수(요청과 4xx 또는 5xx개의 응답)가 표시됩니다.  
   
