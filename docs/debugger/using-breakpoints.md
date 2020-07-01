@@ -2,7 +2,7 @@
 title: 디버거에서 중단점 사용 | Microsoft Docs
 ms.custom: ''
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a8ee96834fc20186ba6719a7c4f377fea45d6b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: af53cdd368d129fc23c3596a4e20d6e95ceb7a18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301028"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536593"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 중단점 사용
 
@@ -50,7 +50,7 @@ ms.locfileid: "79301028"
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> 소스 코드에서 중단점 설정
 
-실행 코드의 임의의 줄에서 중단점을 설정할 수 있습니다. 예를 들어 다음 C# 코드에서는 변수 선언, `for` 루프 또는 `for` 루프 내의 모든 코드에 중단점을 설정할 수 있습니다. 네임스페이스 또는 클래스 선언 또는 메서드 시그니처에서는 중단점을 설정할 수 없습니다.
+실행 코드의 임의의 줄에서 중단점을 설정할 수 있습니다. 예를 들어 다음 C# 코드에서는 변수 선언, `for` 루프 또는 `for` 루프 내의 모든 코드에 중단점을 설정할 수 있습니다. 네임 스페이스에 대한 선언, 클래스 또는 변수 또는 메서드 시그니처의 선언에는 중단점을 설정할 수 없습니다.
 
 소스 코드에서 중단점을 설정하려면 코드 줄 옆에 있는 맨 왼쪽 여백을 클릭합니다. 또한 줄을 선택하고 **F9**를 누르거나 **디버그** > **중단점 설정/해제**를 선택하거나 마우스 오른쪽 단추를 클릭하여 **중단점** > **중단점 삽입**을 선택할 수 있습니다. 중단점이 왼쪽 여백에 빨간 점으로 나타납니다.
 
@@ -133,14 +133,14 @@ C#를 비롯한 대부분의 언어에서 중단점 및 현재 실행 줄은 자
 
 3. 조사하려는 지점(예: 컬렉션에 개체를 추가해야 하는 경우)에 새 중단점을 추가합니다. 마우스 오른쪽 단추로 중단점을 클릭하고 **조건**을 선택합니다.
 
-4. **조건부 식** 필드에 개체 ID를 사용합니다. 예를 들어 `item` 변수가 컬렉션에 추가될 개체이면 **Is true**를 선택하고 **항목 == $\<n >** 을 입력합니다. 여기서 \<n>은 개체 ID 번호입니다.
+4. **조건부 식** 필드에 개체 ID를 사용합니다. 예를 들어 `item` 변수가 컬렉션에 추가될 개체이면 **Is true**를 선택하고 **항목 == $\<n>** 을 입력합니다. 여기서 \<n>은 개체 ID 번호입니다.
 
    컬렉션에 개체를 추가해야 하는 지점에서 실행이 중단됩니다.
 
    개체 ID를 삭제하려면 **지역** 창에서 변수를 마우스 오른쪽 단추로 클릭하고 **개체 ID 삭제**를 선택합니다.
 
 > [!NOTE]
-> 개체 ID는 약한 참조를 만들고 개체가 가비지 수집되지 않도록 차단하지 않습니다. 현재 디버깅 세션에 대해서만 유효합니다. 
+> 개체 ID는 약한 참조를 만들고 개체가 가비지 수집되지 않도록 차단하지 않습니다. 현재 디버깅 세션에 대해서만 유효합니다.
 
 ### <a name="set-a-hit-count-condition"></a>적중 횟수 조건 설정
 

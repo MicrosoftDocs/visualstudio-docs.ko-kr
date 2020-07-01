@@ -2,7 +2,7 @@
 title: Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
-ms.topic: conceptual
+ms.topic: overview
 keywords: Dotfuscator, Dotfuscator CE, Dotfuscator Community, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 보호, community edition, 난독 처리, .NET, 무료, Visual Studio 2019, Visual Studio 2017, Visual Studio
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f1b2c0bfd4adbd4a952a64f20fc3d2639a8abb5f
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7a8602dc99ba63e6cba5035636af0fbd47263e58
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75918440"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769489"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -72,8 +72,8 @@ Dotfuscator를 강화하는 방법에 대한 자세한 내용은 [업그레이�
 
 Visual Studio에서 Dotfuscator Community 사용을 시작하려면 **검색 상자**(Ctrl+Q)에 `dotfuscator`를 입력합니다.
 
-* Dotfuscator Community가 이미 설치되어 있는 경우, **검색 상자**의 ‘메뉴’ 제목 아래에 Dotfuscator Community를 시작하는 옵션이 표시됩니다.  자세한 내용은 [전체 Dotfuscator Community 사용자 가이드의 시작하기][get-started] 페이지를 참조하세요.
-* Dotfuscator Community가 아직 설치되지 않은 경우, **검색 상자**의 ‘개별 구성 요소’ 제목 아래에 **PreEmptive Protection - Dotfuscator 설치**가 표시됩니다.  자세한 내용은 [설치 페이지][install]를 참조하세요.
+* Dotfuscator Community가 이미 설치되어 있는 경우, **검색 상자**의 ‘메뉴’ 제목 아래에 Dotfuscator Community를 시작하는 옵션이 표시됩니다. 자세한 내용은 [전체 Dotfuscator Community 사용자 가이드의 시작하기][get-started] 페이지를 참조하세요.
+* Dotfuscator Community가 아직 설치되지 않은 경우, **검색 상자**의 ‘개별 구성 요소’ 제목 아래에 **PreEmptive Protection - Dotfuscator 설치**가 표시됩니다. 자세한 내용은 [설치 페이지][install]를 참조하세요.
 
 ::: moniker-end
 
@@ -81,8 +81,8 @@ Visual Studio에서 Dotfuscator Community 사용을 시작하려면 **검색 상
 
 Visual Studio에서 Dotfuscator Community 사용을 시작하려면 **빠른 실행**(Ctrl+Q) 검색 창에 `dotfuscator`를 입력합니다.
 
-* Dotfuscator Community가 이미 설치되어 있으면 **빠른 실행**에 Dotfuscator Community 사용자 인터페이스를 시작하는 ‘메뉴’ 옵션이 표시됩니다.  자세한 내용은 [전체 Dotfuscator Community 사용자 가이드의 시작하기][get-started] 페이지를 참조하세요.
-* Dotfuscator Community가 아직 설치되어 있지 않은 경우 **빠른 실행**에 관련 ‘설치’ 옵션이 표시됩니다.  자세한 내용은 [설치 페이지][install]를 참조하세요.
+* Dotfuscator Community가 이미 설치되어 있으면 **빠른 실행**에 Dotfuscator Community 사용자 인터페이스를 시작하는 ‘메뉴’ 옵션이 표시됩니다. 자세한 내용은 [전체 Dotfuscator Community 사용자 가이드의 시작하기][get-started] 페이지를 참조하세요.
+* Dotfuscator Community가 아직 설치되어 있지 않은 경우 **빠른 실행**에 관련 ‘설치’ 옵션이 표시됩니다. 자세한 내용은 [설치 페이지][install]를 참조하세요.
 
 ::: moniker-end
 
