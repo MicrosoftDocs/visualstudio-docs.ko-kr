@@ -3,17 +3,17 @@ title: 필터 노드
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7627a5df1b3fcc5d26e33353e91f525b8083ccdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bfc74287706976f96a5e565bef3da1493cd44866
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72637304"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769273"
 ---
 # <a name="filter-nodes"></a>필터 노드
 

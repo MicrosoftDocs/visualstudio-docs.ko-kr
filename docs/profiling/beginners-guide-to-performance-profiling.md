@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638781"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537373"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 사용량을 분석하여 애플리케이션 성능 측정
 
@@ -134,7 +134,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
     ![진단 도구 호출 트리](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
-    |||
+    |이미지|설명|
     |-|-|
     |![1단계](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 사용량 호출 트리의 최상위 노드는 의사 노드입니다.|
     |![2단계](../profiling/media/ProcGuid_2.png "ProcGuid_2")|대다수 앱에서 [외부 코드 포시](#view-external-code) 옵션이 사용하지 않도록 설정되어 있는 경우 두 번째 수준 노드는 앱을 시작/중지하고, UI를 그리며, 스레드 일정을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 시스템과 프레임워크 코드가 포함된 **[External Code]** 노드입니다.|

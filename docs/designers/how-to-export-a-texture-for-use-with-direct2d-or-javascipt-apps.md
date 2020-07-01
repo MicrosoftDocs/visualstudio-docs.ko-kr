@@ -1,19 +1,19 @@
 ---
 title: Direct2D 및 JavaScript 애플리케이션에 대한 텍스처 내보내기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d163aafa8b00ce1d59b1fc7b597ab5ca535a1ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 546f7255b1c2846bdbd05bba0593b30bad9beacd
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72635507"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769003"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>방법: Direct2D 또는 JavaScript 앱과 함께 사용하기 위해 텍스처 내보내기
 

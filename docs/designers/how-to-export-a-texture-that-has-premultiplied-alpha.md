@@ -1,19 +1,19 @@
 ---
 title: '방법: 미리 증가된 알파를 사용하는 질감 내보내기'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a1325b5bc0009ba0c022d37be70ca6aab7cc8084
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72635478"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768916"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>방법: 미리 증가된 알파를 사용하는 질감 내보내기
 

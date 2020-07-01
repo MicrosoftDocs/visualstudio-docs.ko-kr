@@ -1,7 +1,7 @@
 ---
 title: '방법: Nullable 형식 만들기(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592232"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770987"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>방법: 클래스 디자이너에서 Nullable 형식 만들기
 
@@ -85,7 +85,7 @@ C#의 nullable 형식에 대한 자세한 내용은 [Nullable 형식](/dotnet/cs
 
 5. 클래스 모양을 마우스 오른쪽 단추로 클릭하고 **클래스 세부 내용**을 클릭합니다. **클래스 세부 내용** 창에서 새 형식의 속성을 보거나 수정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Nullable%601>
 - [Nullable 형식](/dotnet/csharp/programming-guide/nullable-types/index)

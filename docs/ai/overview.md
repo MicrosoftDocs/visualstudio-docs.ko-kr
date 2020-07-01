@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 388408f83fc18899ce34e2d58fdca05c713424bd
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: c138d09ec229343e38edc8bbba50a5cac73e000a
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386695"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371510"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI 개요
 

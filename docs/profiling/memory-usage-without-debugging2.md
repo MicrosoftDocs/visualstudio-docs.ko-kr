@@ -2,7 +2,7 @@
 title: 디버깅하지 않고 메모리 사용량 분석 | Microsoft Docs
 ms.custom: ''
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638820"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543353"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>디버거 없이 메모리 사용량 분석
 
@@ -76,7 +76,7 @@ ms.locfileid: "80638820"
 
   ![스냅샷 보기 링크](../profiling/media/memuse__snapshotview_numbered.png "스냅샷 보기 링크")
 
-|||
+|이미지|설명|
 |-|-|
 |![1단계](../profiling/media/procguid_1.png "ProcGuid_1")|스냅샷을 만들 때 메모리의 총 바이트 수입니다.<br /><br /> 이 링크를 선택하면 유형 인스턴스의 총 크기별로 정렬된 스냅샷 정보 보고서가 표시됩니다.|
 |![2단계](../profiling/media/procguid_2.png "ProcGuid_2")|스냅샷을 만들 때 메모리의 총 개체 수입니다.<br /><br /> 이 링크를 선택하면 유형 인스턴스의 개수별로 정렬된 스냅샷 정보 보고서가 표시됩니다.|
@@ -130,7 +130,7 @@ ms.locfileid: "80638820"
 
 스냅샷 정보 보고서의 **관리되는 힙** 트리에는 다음 열이 있습니다.
 
-|||
+|이름|설명|
 |-|-|
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|
 |**개수**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|
@@ -152,7 +152,7 @@ ms.locfileid: "80638820"
 
 스냅샷 정보 보고서의 **참조 형식** 트리에는 다음 열이 있습니다. **참조 개체** 트리에는 **참조 개수** 열이 없습니다.
 
-|||
+|이름|설명|
 |-|-|
 |**개체 형식** 또는 **인스턴스**|형식 또는 인스턴스의 이름입니다.|
 |**참조 개수**|유형의 경우 유형의 개체 인스턴스 수입니다.|
@@ -176,7 +176,7 @@ ms.locfileid: "80638820"
 
 스냅샷 차이 보고서의 **관리되는 힙** 트리에는 다음 열이 있습니다.
 
-|||
+|이름|설명|
 |-|-|
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|
 |**개수**|기본 스냅샷에 있는 유형의 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|
@@ -203,7 +203,7 @@ ms.locfileid: "80638820"
 
 스냅샷 차이 보고서의 **참조 형식** 트리에는 다음 열이 있습니다. **참조 개체** 트리에는 **인스턴스**, **크기(바이트)** , **포함 크기(바이트)** 및 **모듈** 열이 있습니다.
 
-|||
+|이름|설명|
 |-|-|
 |**개체 형식** 또는 **인스턴스**|유형 이름 또는 개체 인스턴스입니다.|
 |**참조 개수**|기본 스냅샷에 있는 유형의 인스턴스 수입니다.|

@@ -1,7 +1,7 @@
 ---
 title: 대상 .NET Framework
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472728"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770449"
 ---
 # <a name="framework-targeting-overview"></a>Framework 대상 지정 개요
 

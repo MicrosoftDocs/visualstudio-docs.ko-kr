@@ -4,17 +4,17 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Code_Fixes
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5c736be59c257d98085831971d6b7b9dc2a0ef3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c20646c8da4101ac674a64c5ca1ed23a3b1fd7b5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666275"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770930"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>옵션: 텍스트 편집기 > F# > 코드 수정
 

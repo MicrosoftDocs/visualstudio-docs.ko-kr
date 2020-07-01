@@ -1,7 +1,7 @@
 ---
 title: 작업 목록 사용
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594229"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768619"
 ---
 # <a name="use-the-task-list"></a>작업 목록 사용
 

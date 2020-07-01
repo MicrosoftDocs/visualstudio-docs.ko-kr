@@ -1,7 +1,7 @@
 ---
 title: '방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592245"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770995"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사
 

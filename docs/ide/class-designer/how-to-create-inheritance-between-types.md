@@ -1,7 +1,7 @@
 ---
 title: '방법: 형식 간의 상속 만들기(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.inheritanceline
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590373"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770201"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 상속 만들기
 

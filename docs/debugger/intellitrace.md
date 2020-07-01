@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be69003d14d2c246f95249b5db0b1fa7d470598
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911446"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536515"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise의 IntelliTrace(C#, Visual Basic, C++)
 
@@ -39,7 +39,7 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-|||
+|시나리오|제목|
 |-|-|
 |**IntelliTrace를 사용하여 애플리케이션 디버그:**<br /><br /> - 이전 이벤트를 보여 줍니다.<br />- 이전 이벤트의 호출 정보를 보여 줍니다.<br />- 내 IntelliTrace 세션을 저장합니다.<br />- IntelliTrace에서 수집하는 데이터를 제어합니다.|- [IntelliTrace를 사용하여 이전 앱 상태 검사](../debugger/view-historical-application-state.md)<br />- [연습: IntelliTrace 사용](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 기능](../debugger/intellitrace-features.md)<br />- [기록 디버깅](../debugger/historical-debugging.md)|
 |**배포된 애플리케이션에서 IntelliTrace 데이터 수집**|- [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -47,7 +47,7 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> IntelliTrace를 사용하여 어떤 앱을 디버깅할 수 있나요?
 
-| | |
+| 지원 수준| 애플리케이션 종류 |
 |---------------------| - |
 | **전체 지원** | - .NET Framework 2.0 이상 버전을 사용하는 Visual Basic 및 Visual C# 애플리케이션.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 애플리케이션을 디버깅할 수 있습니다.<br/>IntelliTrace를 사용하여 SharePoint 애플리케이션을 디버그하려면 [연습: IntelliTrace를 사용하여 SharePoint 애플리케이션 디버그](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)를 참조하세요.<br/> IntelliTrace를 사용하여 Microsoft Azure 앱을 디버그하려면 [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버그](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)를 참조하세요. |
 | **제한적 지원** | - IntelliTrace 뒤로 이동을 사용한 스냅샷 보기를 지원하는 Windows를 대상으로 하는 C++ 앱. 디버거 및 예외 이벤트만 지원됩니다.<br />- 로컬 디버깅에서 특정 이벤트(MVC 컨트롤러, ADO.NET 및 HTTPClient 이벤트)에만 지원되는 .NET Core 및 ASP.NET Core 앱. 독립 실행형 수집기는 .NET Core 또는 ASP.NET Core 앱에서 지원되지 않습니다.<br />- 시험 차원의 F# 앱<br />- 이벤트에만 지원되는 UWP 앱 |

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62776779"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537087"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
 동시성 시각화 도우미는 스레드 채널, 디스크 채널, 표식 채널 및 GPU 채널의 4가지 채널을 보여줍니다.
@@ -25,7 +25,7 @@ ms.locfileid: "62776779"
 ## <a name="thread-channels"></a>스레드 채널
  스레드 채널은 하나의 스레드에 대해서만 스레드 상태를 색으로 보여 줍니다. 채널 이름에서 일시 중지하면 지정된 스레드의 시작 함수가 표시됩니다. 동시성 시각화 도우미는 여러 종류의 스레드를 검색합니다. 가장 일반적인 종류가 다음 표에 나와 있습니다.
 
-|||
+|스레드|설명|
 |-|-|
 |주 스레드|응용 프로그램을 시작한 스레드입니다.|
 |작업자 스레드|애플리케이션의 주 스레드에 의해 생성된 스레드입니다.|
@@ -47,5 +47,5 @@ ms.locfileid: "62776779"
 ## <a name="gpu-channels"></a>GPU 채널
  GPU 채널에는 시스템의 DirectX 11 작업에 대한 정보가 표시됩니다.  그래픽 카드와 연결된 각 DirectX 엔진에는 개별 채널이 포함됩니다.  개별 세그먼트는 DMA 패킷 처리 시간을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [스레드 뷰](../profiling/threads-view-parallel-performance.md)

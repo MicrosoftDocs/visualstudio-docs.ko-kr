@@ -3,17 +3,17 @@ title: 상수 노드
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86fd5a9b2d179a27ec0cf34f5388b30ebb563ad4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72637352"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769314"
 ---
 # <a name="constant-nodes"></a>상수 노드
 

@@ -1,19 +1,19 @@
 ---
 title: 내 코드만을 사용하여 사용자 코드 디버그 | Microsoft Docs
 ms.date: 02/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536002"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536567"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>내 코드만을 사용하여 사용자 코드만 디버그
 
@@ -85,13 +85,13 @@ Visual Studio 2017 버전 15.8부터는 코드 스태핑을 위한 내 코드만
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> 사용자 코드로 분류되려면 사용자 코드가 포함된 바이너리의 PDB를 디버거에서 로드해야 합니다(**모듈** 창을 사용하여 확인).
 
-호출 스택 동작(예: **호출 스택** 창)의 경우 C++의 내 코드만 기능은 다음과 같은 함수만 사용자 코드가 아닌 코드로 간주합니다. 
+호출 스택 동작(예: **호출 스택** 창)의 경우 C++의 내 코드만 기능은 다음과 같은 함수만 사용자 코드가 아닌 코드로 간주합니다.
 
 - 기호 파일에서 소스 정보가 제거된 함수
 - 기호 파일에서 스택 프레임에 해당하는 소스 파일이 없음을 나타내는 함수
 - *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* 폴더의 *\*.natjmc* 파일에 지정된 함수
 
-코드 스태핑 동작의 경우 C++의 내 코드만 기능은 다음과 같은 함수만 사용자 코드가 아닌 코드로 간주합니다. 
+코드 스태핑 동작의 경우 C++의 내 코드만 기능은 다음과 같은 함수만 사용자 코드가 아닌 코드로 간주합니다.
 
 - 해당 PDB 파일이 디버거에 로드되지 않은 함수
 - *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* 폴더의 *\*.natjmc* 파일에 지정된 함수
@@ -196,7 +196,7 @@ C++ 프로젝트에서는 프로시저 단위로 실행할 함수를 *\*.natstep
 
 <a name="BKMK_JS_User_and_non_user_code"></a> JavaScript 내 코드만 옵션은 다음 분류 중 하나로 코드를 분류하여 단계별 실행 및 호출 스택 표시를 제어합니다.
 
-|||
+|분류|설명|
 |-|-|
 |**MyCode**|사용자가 소유하고 제어하는 사용자 코드입니다.|
 |**LibraryCode**|정기적으로 사용하며 앱이 제대로 작동하는 데 필요한, 사용자가 작성하지 않은 라이브러리의 코드(예: WinJS 또는 jQuery)입니다.|
@@ -279,7 +279,7 @@ JavaScript 디버거가 코드를 사용자 코드와 그렇지 않은 코드로
 
 **Eval**, **Function** 및 **ScriptBlock** 키 값 쌍은 동적으로 생성된 코드의 분류 방법을 결정합니다.
 
-|||
+|이름|설명|
 |-|-|
 |**Eval**|호스트에서 제공하는 `eval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Eval 스크립트는 **MyCode**로 분류됩니다.|
 |**Function**|`Function` 생성자에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Function 스크립트는 **LibraryCode**로 분류됩니다.|
@@ -295,7 +295,7 @@ JavaScript 디버거가 코드를 사용자 코드와 그렇지 않은 코드로
 
 **MyCode**, **Libraries** 및 **Unrelated** 키 값 쌍은 분류에 포함할 URL 또는 파일을 지정합니다.
 
-|||
+|이름|설명|
 |-|-|
 |**MyCode**|**MyCode**로 분류된 URL 또는 파일의 배열입니다.|
 |**라이브러리**|**LibraryCode**로 분류된 URL 또는 파일의 배열입니다.|

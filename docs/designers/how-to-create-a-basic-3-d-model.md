@@ -1,19 +1,19 @@
 ---
 title: '방법: 기본 3D 모델 만들기'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbd0b2a092e47eab053d4150fd2139fb0dbdf6ea
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589528"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769265"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>방법: 기본 3D 모델 만들기
 

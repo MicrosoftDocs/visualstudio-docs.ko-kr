@@ -1,7 +1,7 @@
 ---
 title: 작동 시간 향상
 ms.date: 11/15/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306838"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770965"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio 시작 시간 최적화
 
@@ -35,7 +35,7 @@ Visual Studio에서 시작 속도가 느린 것을 감지하면 속도 저하를
 
 이 대화 상자에는 시작 성능에 영향을 미치는 확장 및 도구 창이 나열됩니다. 확장 및 도구 창 설정을 변경하여 시작 성능을 향상할 수 있습니다.
 
-## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />시작, 솔루션 로드 및 성능 입력을 개선하기 위해 확장 설정을 변경하려면
+## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />시작, 솔루션 로드 및 성능 입력을 개선하기 위해 확장 설정을 변경하려면
 
 1. 메뉴 모음에서 **도움말** > **Visual Studio 성능 관리**를 차례로 선택하여 **Visual Studio 성능 관리** 대화 상자를 엽니다.
 
@@ -47,7 +47,7 @@ Visual Studio에서 시작 속도가 느린 것을 감지하면 속도 저하를
 
 **확장 관리자** 또는 **Visual Studio 성능 관리** 대화 상자를 통해 이후 세션에 확장을 언제든지 다시 사용할 수 있습니다.
 
-## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />시작 시간을 개선하도록 도구 창 설정을 변경하려면
+## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />시작 시간을 개선하도록 도구 창 설정을 변경하려면
 
 1. 메뉴 모음에서 **도움말** > **Visual Studio 성능 관리**를 차례로 선택하여 **Visual Studio 성능 관리** 대화 상자를 엽니다.
 

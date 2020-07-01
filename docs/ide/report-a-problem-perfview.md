@@ -1,7 +1,7 @@
 ---
 title: PerfView를 사용하여 ETL 추적 수집
 ms.date: 09/27/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - perfview
 - ETL Trace
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: 24d72e9630506ecc3d25fcc75e51eeb84f619e53
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9ac4d90a0da15fe2415ada02d6e8e1cdbe11af56
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77271158"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770817"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>PerfView를 사용하여 ETL 추적 수집
 

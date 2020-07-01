@@ -1,18 +1,18 @@
 ---
 title: Windows Forms 앱 디자인
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589892"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768756"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Forms 디자이너 개요
 

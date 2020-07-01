@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
 ms.assetid: 038da8dc-6126-4f3e-a361-a58cc04cafb3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 724c00a7462dd731193383ba374b5b35677823b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f538754110ed67d7b820ac49064188a08097c6f5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72610876"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771078"
 ---
 # <a name="options-dialog-box-environment--keyboard"></a>옵션 대화 상자: 환경 \> 키보드
 

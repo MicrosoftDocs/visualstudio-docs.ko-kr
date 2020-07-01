@@ -1,19 +1,19 @@
 ---
 title: '방법: 3D 모델에 셰이더 적용'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae04f4cc0afb1c24f391d140081040efe9db50e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1f1ae981704287a74bb4e37117190b8b6111d0a9
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112760"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769238"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>방법: 3D 모델에 셰이더 적용
 

@@ -1,7 +1,7 @@
 ---
 title: 새 프로젝트 만들기
 ms.date: 03/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.newproject
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7cecf6a68296b3bffd07cca13fc3a3d0d5bc836
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585472"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770732"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Visual Studio에서 새 프로젝트 만들기
 

@@ -3,7 +3,7 @@ title: 마우스 없이 Visual Studio 사용
 titleSuffix: ''
 description: 키보드만 사용하여 Visual Studio IDE(통합 개발 환경) 내에서 코드를 탐색하고 작성하는 방법을 알아봅니다.
 ms.date: 05/10/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569025"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770232"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>단독으로 키보드를 사용하는 방법
 

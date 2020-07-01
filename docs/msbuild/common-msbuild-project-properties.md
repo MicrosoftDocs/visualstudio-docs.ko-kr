@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288951"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770867"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 
@@ -51,7 +51,7 @@ ms.locfileid: "85288951"
 | CleanFile | 모두 | "정리 캐시"로 사용할 파일의 이름입니다. 정리 캐시는 생성 파일 중 정리 작업 시 삭제할 파일의 목록입니다. 이 파일은 빌드 프로세스에 의해 중간 출력 경로에 저장됩니다.<br /><br /> 이 속성은 경로 정보가 없는 파일 이름만 지정합니다. |
 | CodePage | .NET | 컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다. 이 속성은 `/codepage` 컴파일러 스위치와 동일합니다. |
 | CompilerResponseFile | .NET | 컴파일러 작업에 전달할 수 있는 선택적 지시 파일입니다. |
-| Configuration | 모두 | 빌드하고 있는 구성으로, "디버그" 또는 "릴리스"입니다. |
+| Configuration | 모두 | 빌드 중인 구성은 일반적으로 `Debug` 또는 `Release`하지만 솔루션 및 프로젝트 수준에서 구성할 수 있습니다. |
 | CscToolPath | C# | C# 컴파일러인 *csc.exe*의 경로입니다. |
 | CustomBeforeMicrosoftCommonTargets | 모두 | 공통 대상을 가져오기 전에 자동으로 가져올 프로젝트 파일 또는 대상 파일의 이름입니다. |
 | DebugSymbols | 모두 | 빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **-p:DebugSymbols=false**를 설정하면 프로그램 데이터베이스( *.pdb*) 기호 파일이 생성되지 않습니다. |

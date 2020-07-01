@@ -2,19 +2,19 @@
 title: CPU 사용량 분석 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638841"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543392"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 사용량 분석
 
@@ -35,7 +35,7 @@ ms.locfileid: "80638841"
 
 1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
 
-    ![릴리스 및 로컬 머신 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "릴리스 및 로컬 머신 선택")
+    ![릴리스 및 로컬 컴퓨터 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "릴리스 및 로컬 컴퓨터 선택")
 
 1. **디버그** > **성능 프로파일러**를 선택합니다.
 
@@ -61,7 +61,7 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> CPU 사용량 데이터 열
 
-|||
+|이름|설명|
 |-|-|
 |**총 CPU [단위, %]**|![총 % 데이터 수식](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 선택한 시간 범위에서 함수 호출 및 함수가 호출한 함수에 의해 사용되는 밀리초 및 CPU 백분율입니다. 이 값은 시간 범위의 총 CPU 활동을 사용 가능한 총 CPU와 비교하는 **CPU 사용률** 타임라인 그래프와 다릅니다.|
 |**셀프 CPU [단위, %]**|![자체 % 수식](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 함수에 의해 호출되는 함수를 제외하고 선택한 시간 범위에서 함수를 호출하는 데 사용되는 밀리초 및 CPU 백분율입니다.|
@@ -80,7 +80,7 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 ![호출 트리 구조](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "호출 트리 구조")
 ::: moniker-end
 
-|||
+|이미지|설명|
 |-|-|
 |![1단계](../profiling/media/procguid_1.png "ProcGuid_1")|CPU 사용량 호출 트리의 최상위 노드는 의사 노드입니다.|
 |![2단계](../profiling/media/procguid_2.png "ProcGuid_2")|대다수의 앱에서 **외부 코드 표시** 옵션을 사용하지 않도록 설정한 경우 두 번째 수준 노드가 **[External Code]** 노드입니다. 노드에는 앱 시작 및 중지, UI 그리기, 스레드 일정 제어 및 앱에 기타 낮은 수준 서비스를 제공하는 시스템과 프레임워크 코드가 포함되어 있습니다.|

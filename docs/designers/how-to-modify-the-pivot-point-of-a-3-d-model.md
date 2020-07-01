@@ -1,19 +1,19 @@
 ---
 title: '방법: 3D 모델의 피벗 점 수정'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c9f79f8f5a39a8721e433207f2fbb17fd85a1150
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589944"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768839"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>방법: 3D 모델의 피벗 점 수정
 

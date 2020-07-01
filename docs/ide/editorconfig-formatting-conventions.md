@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 136744514e5e2e49ec92a443ac590eb5cc34418a
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: 0490912683fd683398c89e8e69b62dd3824ee04b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892764"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533473"
 ---
 # <a name="formatting-conventions"></a>서식 지정 규칙
 
@@ -59,7 +59,7 @@ dotnet_separate_import_directive_groups = true
 
 #### <a name="dotnet_sort_system_directives_first"></a>dotnet\_sort\_system\_directives_first
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_sort_system_directives_first |
 | **해당 언어** | C# 및 Visual Basic |
@@ -82,7 +82,7 @@ using System.Threading.Tasks;
 
 #### <a name="dotnet_separate_import_directive_groups"></a>dotnet\_separate\_import\_directive\_groups
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_separate_import_directive_groups |
 | **해당 언어** | C# 및 Visual Basic |
@@ -174,7 +174,7 @@ csharp_new_line_between_query_expression_clauses = true
 
 이 규칙은 중괄호 `{`가 앞의 코드와 동일한 줄 또는 새 줄에 배치되어야 하는지를 다룹니다. 이 규칙의 경우 **모두**, **없음** 또는 하나 이상의 코드 요소(예: **메서드** 또는 **속성**)를 지정하여 이 규칙을 적용할 시점을 정의합니다. 여러 개의 코드 요소를 지정하려면 쉼표(,)로 구분합니다.
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_new_line_before_open_brace |
 | **해당 언어** | C# |
@@ -203,7 +203,7 @@ void MyMethod() {
 
 #### <a name="csharp_new_line_before_else"></a>csharp\_new\_line\_before_else
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_new_line_before_else |
 | **해당 언어** | C# |
@@ -231,7 +231,7 @@ if (...) {
 
 #### <a name="csharp_new_line_before_catch"></a>csharp\_new\_line\_before_catch
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_new_line_before_catch |
 | **해당 언어** | C# |
@@ -259,7 +259,7 @@ try {
 
 #### <a name="csharp_new_line_before_finally"></a>csharp\_new\_line\_before_finally
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_new_line_before_finally |
 | **해당 언어** | C# |
@@ -292,7 +292,7 @@ try {
 
 #### <a name="csharp_new_line_before_members_in_object_initializers"></a>csharp\_new\_line\_before\_members\_in\_object_initializers
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_new_line_before_members_in_object_initializers |
 | **해당 언어** | C# |
@@ -318,7 +318,7 @@ var z = new B()
 
 #### <a name="csharp_new_line_before_members_in_anonymous_types"></a>csharp\_new\_line\_before\_members\_in\_anonymous_types
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_new_line_before_members_in_anonymous_types |
 | **해당 언어** | C# |
@@ -344,7 +344,7 @@ var z = new
 
 #### <a name="csharp_new_line_between_query_expression_clauses"></a>csharp_new_line_between_query_expression_clauses
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_new_line_between_query_expression_clauses |
 | **해당 언어** | C# |
@@ -383,7 +383,7 @@ csharp_indent_case_contents_when_block = true
 
 #### <a name="csharp_indent_case_contents"></a>csharp\_indent\_case_contents
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_indent_case_contents |
 | **해당 언어** | C# |
@@ -425,7 +425,7 @@ switch(c) {
 
 #### <a name="csharp_indent_switch_labels"></a>csharp\_indent\_switch_labels
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_indent_switch_labels |
 | **해당 언어** | C# |
@@ -464,7 +464,7 @@ default:
 
 #### <a name="csharp_indent_labels"></a>csharp\_indent_labels
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_indent_labels |
 | **해당 언어** | C# |
@@ -516,7 +516,7 @@ class C
 
 #### <a name="csharp_indent_block_contents"></a>csharp_indent_block_contents
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_indent_block_contents |
 | **해당 언어** | C# |
@@ -540,7 +540,7 @@ Console.WriteLine("Hello");
 
 #### <a name="csharp_indent_braces"></a>csharp_indent_braces
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_indent_braces |
 | **해당 언어** | C# |
@@ -564,7 +564,7 @@ static void Hello()
 
 #### <a name="csharp_indent_case_contents_when_block"></a>csharp_indent_case_contents_when_block
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_indent_case_contents_when_block |
 | **해당 언어** | C# |
@@ -623,7 +623,7 @@ csharp_space_between_square_brackets = false
 
 #### <a name="csharp_space_after_cast"></a>csharp\_space\_after_cast
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_after_cast |
 | **해당 언어** | C# |
@@ -642,7 +642,7 @@ int y = (int)x;
 
 #### <a name="csharp_space_after_keywords_in_control_flow_statements"></a>csharp_space_after_keywords_in_control_flow_statements
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_after_keywords_in_control_flow_statements |
 | **해당 언어** | C# |
@@ -661,7 +661,7 @@ for(int i;i<x;i++) { ... }
 
 #### <a name="csharp_space_between_parentheses"></a>csharp_space_between_parentheses
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_parentheses |
 | **해당 언어** | C# |
@@ -685,7 +685,7 @@ int y = ( int )x;
 
 #### <a name="csharp_space_before_colon_in_inheritance_clause"></a>csharp\_space\_before\_colon\_in\_inheritance_clause
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_before_colon_in_inheritance_clause |
 | **해당 언어** | C# |
@@ -720,7 +720,7 @@ class C: I
 
 #### <a name="csharp_space_after_colon_in_inheritance_clause"></a>csharp\_space\_after\_colon\_in\_inheritance_clause
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_after_colon_in_inheritance_clause |
 | **해당 언어** | C# |
@@ -755,7 +755,7 @@ class C :I
 
 #### <a name="csharp_space_around_binary_operators"></a>csharp\_space\_around\_binary_operators
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_around_binary_operators |
 | **해당 언어** | C# |
@@ -779,7 +779,7 @@ return x  *  (x-y);
 
 #### <a name="csharp_space_between_method_declaration_parameter_list_parentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_method_declaration_parameter_list_parentheses |
 | **해당 언어** | C# |
@@ -798,7 +798,7 @@ void Bark(int x) { ... }
 
 #### <a name="csharp_space_between_method_declaration_empty_parameter_list_parentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_method_declaration_empty_parameter_list_parentheses |
 | **해당 언어** | C# |
@@ -833,7 +833,7 @@ void Goo(int x)
 
 #### <a name="csharp_space_between_method_declaration_name_and_open_parenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_method_declaration_name_and_open_parenthesis |
 | **해당 언어** | C# |
@@ -851,7 +851,7 @@ void M() { }
 
 #### <a name="csharp_space_between_method_call_parameter_list_parentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_method_call_parameter_list_parentheses |
 | **해당 언어** | C# |
@@ -870,7 +870,7 @@ MyMethod(argument);
 
 #### <a name="csharp_space_between_method_call_empty_parameter_list_parentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_method_call_empty_parameter_list_parentheses |
 | **해당 언어** | C# |
@@ -905,7 +905,7 @@ void Goo(int x)
 
 #### <a name="csharp_space_between_method_call_name_and_opening_parenthesis"></a>csharp_space_between_method_call_name_and_opening_parenthesis
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_method_call_name_and_opening_parenthesis |
 | **해당 언어** | C# |
@@ -940,7 +940,7 @@ void Goo(int x)
 
 #### <a name="csharp_space_after_comma"></a>csharp_space_after_comma
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_after_comma |
 | **해당 언어** | C# |
@@ -958,7 +958,7 @@ int[] x = new int[] { 1,2,3,4,5 }
 
 #### <a name="csharp_space_before_comma"></a>csharp_space_before_comma
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_before_comma |
 | **해당 언어** | C# |
@@ -976,7 +976,7 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 
 #### <a name="csharp_space_after_dot"></a>csharp_space_after_dot
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_after_dot |
 | **해당 언어** | C# |
@@ -994,7 +994,7 @@ this.Goo();
 
 #### <a name="csharp_space_before_dot"></a>csharp_space_before_dot
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_before_dot |
 | **해당 언어** | C# |
@@ -1012,7 +1012,7 @@ this.Goo();
 
 #### <a name="csharp_space_after_semicolon_in_for_statement"></a>csharp_space_after_semicolon_in_for_statement
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_after_semicolon_in_for_statement |
 | **해당 언어** | C# |
@@ -1030,7 +1030,7 @@ for (int i = 0;i < x.Length;i++)
 
 ##### <a name="csharp_space_before_semicolon_in_for_statement"></a>csharp_space_before_semicolon_in_for_statement
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_before_semicolon_in_for_statement |
 | **해당 언어** | C# |
@@ -1048,7 +1048,7 @@ for (int i = 0; i < x.Length; i++)
 
 #### <a name="csharp_space_around_declaration_statements"></a>csharp_space_around_declaration_statements
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_around_declaration_statements |
 | **해당 언어** | C# |
@@ -1066,7 +1066,7 @@ int x = 0;
 
 #### <a name="csharp_space_before_open_square_brackets"></a>csharp_space_before_open_square_brackets
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_before_open_square_brackets |
 | **해당 언어** | C# |
@@ -1084,7 +1084,7 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 
 #### <a name="csharp_space_between_empty_square_brackets"></a>csharp_space_between_empty_square_brackets
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_empty_square_brackets |
 | **해당 언어** | C# |
@@ -1102,7 +1102,7 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 
 #### <a name="csharp_space_between_square_brackets"></a>csharp_space_between_square_brackets
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_space_between_square_brackets |
 | **해당 언어** | C# |
@@ -1133,7 +1133,7 @@ csharp_preserve_single_line_blocks = true
 
 #### <a name="csharp_preserve_single_line_statements"></a>csharp_preserve_single_line_statements
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_preserve_single_line_statements |
 | **해당 언어** | C# |
@@ -1153,7 +1153,7 @@ string name = "John";
 
 #### <a name="csharp_preserve_single_line_blocks"></a>csharp_preserve_single_line_blocks
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_preserve_single_line_blocks |
 | **해당 언어** | C# |
@@ -1188,7 +1188,7 @@ csharp_using_directive_placement = inside_namespace
 
 #### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_using_directive_placement |
 | **해당 언어** | C# |

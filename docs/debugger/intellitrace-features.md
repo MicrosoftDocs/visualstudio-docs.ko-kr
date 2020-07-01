@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911413"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536580"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 기능(C#, Visual Basic, C++)
 
@@ -71,7 +71,7 @@ IntelliTrace가 설정되어 있는지 확인하려면 **도구 > 옵션 > Intel
 
 탐색 여백을 사용하면 기록 디버깅 모드에서 앞이나 뒤로 이동하며 메서드 호출 및 이벤트를 탐색할 수 있습니다. 기록 디버깅에 대한 자세한 내용은 [기록 디버깅](../debugger/historical-debugging.md)을 참조하세요. 다음과 같은 명령이 있습니다.
 
-|||
+|명령|설명|
 |-|-|
 |**여기에 디버거 컨텍스트 설정**|디버깅 컨텍스트를 표시되는 호출 기간으로 설정합니다.<br /><br /> 이 아이콘은 현재 호출 스택에만 나타납니다.|
 |**호출 사이트로 돌아가기**|포인터와 디버깅 컨텍스트를 현재 함수가 호출된 지점으로 다시 이동합니다.<br /><br /> 라이브 디버깅 모드에 있는 경우 이 명령은 기록 디버깅을 설정합니다. 원래 실행이 중단되었던 지점으로 다시 이동하면 기록 디버깅이 해제되고 라이브 디버깅이 설정됩니다.|

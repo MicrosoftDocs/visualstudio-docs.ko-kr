@@ -2,19 +2,19 @@
 title: Visual Studio에서 문제를 보고하는 방법
 description: Visual Studio에서 문제를 보고하는 방법 찾기
 ms.date: 03/11/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: madskristensen
 ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dcfd6351cfa3adde4c1825518dd2bea7ce9b34
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180560"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769930"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 

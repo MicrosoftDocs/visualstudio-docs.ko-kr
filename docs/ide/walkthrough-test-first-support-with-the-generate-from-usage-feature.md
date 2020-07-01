@@ -4,7 +4,7 @@ ms.date: 10/09/2017
 dev_langs:
 - VB
 - CSharp
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ceed19ab052584ea47629244372af4402835beb5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596894"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770800"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발
 

@@ -28,12 +28,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568206"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544094"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
 
@@ -43,7 +43,7 @@ ms.locfileid: "75568206"
 
 이 설정을 사용하여 태그 및 따옴표가 자동으로 생성되는 경우를 제어합니다.
 
-|||
+|이름|설명|
 |-|-|
 |**닫는 태그**|보다 큼 문자(>)로 여는 태그를 닫을 때 요소의 닫는 태그를 자동으로 생성할지 지정합니다.|
 |**특성 따옴표**|문 완성 드롭다운 목록에서 특성 값을 선택할 때 묶는 따옴표를 생성할지 지정합니다.|
@@ -54,6 +54,6 @@ ms.locfileid: "75568206"
 
 이 설정을 사용하여 오류 및 경고가 자동으로 생성되는 경우를 제어합니다. 자세한 내용은 [XAML 오류 및 경고](../../xaml-tools/xaml-errors-warnings.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF의 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

@@ -1,7 +1,7 @@
 ---
 title: '방법: 클래스를 부분 클래스로 분할(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 48672e2d316828019ede7097306517b270062327
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 623ac5269b78faee9f68580f0803576ad56c1233
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588683"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770038"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>방법: 클래스 디자이너에서 클래스를 부분 클래스로 분할
 

@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144738"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537243"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
 
@@ -104,7 +104,7 @@ if (performance && performance.mark) {
 
      ![데이터 수집 중지](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
-     Visual Studio에서는 수집된 데이터를 분석하고 결과를 표시합니다.
+     Visual Studio에서 수집된 데이터를 분석하고 결과를 표시합니다.
 
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>설치된 에너지 프로파일 데이터 수집
  에너지 소비 도구는 Visual Studio 솔루션에서 시작하거나 Microsoft Store에서 설치하는 UWP 앱에서만 실행할 수 있습니다. 솔루션을 Visual Studio에서 열 경우 기본 대상은 **시작 프로젝트**입니다. 설치된 앱을 대상으로 하려면
@@ -124,7 +124,7 @@ if (performance && performance.mark) {
 
  ![에너지 프로파일러 보고서 페이지](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|||
+|이미지|설명|
 |-|-|
 |![1단계](../profiling/media/procguid_1.png "ProcGuid_1")|보고서 파일의 이름은 Report*YYYYMMDD-HHMM*.diagsession입니다. 보고서를 저장할 경우 이름을 변경할 수 있습니다.|
 |![2단계](../profiling/media/procguid_2.png "ProcGuid_2")|타임라인에는 프로파일링 세션 길이, 응용 프로그램 수명 주기 시작 이벤트 및 사용자 표시가 표시됩니다.|
@@ -156,7 +156,7 @@ if (performance && performance.mark) {
 
 - **CPU 사용** 도구를 사용하면 비효율적 함수 때문에 발생하는 CPU 로드를 줄일 수 있습니다. [CPU 사용량 분석](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)
