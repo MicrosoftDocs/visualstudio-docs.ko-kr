@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fd81f9ea250cd1592f755a2aa6cb3ca09280a533
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff42cc2b8543fe8e1cf980a3574ae15922febf9b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666035"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521045"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: 변경 가능한 읽기 전용 참조 형식을 선언하지 마십시오.
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: 변경 가능한 읽기 전용 참조 형식을 선언하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
 |CheckId|CA2104|
@@ -36,9 +36,9 @@ ms.locfileid: "72666035"
  외부에서 볼 수 있는 형식에 변경 가능한 참조 형식인, 외부에서 볼 수 있는 읽기 전용 필드가 포함되었습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 변경 가능한 형식은 해당 인스턴스 데이터를 수정할 수 있는 형식을 말합니다. @No__t_0 클래스는 변경 가능한 참조 형식의 예입니다. 클래스의 인스턴스 값을 변경할 수 있는 멤버가 포함 되어 있습니다. 변경할 수 없는 참조 형식의 예는 <xref:System.String?displayProperty=fullName> 클래스입니다. 인스턴스화된 후에는 해당 값이 변경 되지 않습니다.
+ 변경 가능한 형식은 해당 인스턴스 데이터를 수정할 수 있는 형식을 말합니다. <xref:System.Text.StringBuilder?displayProperty=fullName>클래스는 변경 가능한 참조 형식의 예입니다. 클래스의 인스턴스 값을 변경할 수 있는 멤버가 포함 되어 있습니다. 변경할 수 없는 참조 형식의 예는 클래스입니다 <xref:System.String?displayProperty=fullName> . 인스턴스화된 후에는 해당 값이 변경 되지 않습니다.
 
- 참조 C++형식 필드 (의 C# [경우)에 대](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) 한 읽기 전용 한정자 (in, C++[!INCLUDE[vbprvb](../includes/vbprvb-md.md)][의 readonly 및](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) )는 필드가 참조 형식의 다른 인스턴스로 대체 되는 것을 방지 합니다. 그러나 한정자는 필드의 인스턴스 데이터가 참조 형식을 통해 수정 되는 것을 방지 하지 않습니다.
+ 참조 형식 필드 (c + +의 경우)에서 읽기 전용 한정자 (c #의 경우 readonly [, in c](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) + +의 경우[readonly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] )는 필드가 참조 형식의 다른 인스턴스로 대체 되지 않도록 방지 합니다. [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) 그러나 한정자는 필드의 인스턴스 데이터가 참조 형식을 통해 수정 되는 것을 방지 하지 않습니다.
 
  읽기 전용 배열 필드는이 규칙에서 제외 되지만 대신 [CA2105: array 필드를 읽기 전용](../code-quality/ca2105-array-fields-should-not-be-read-only.md) 규칙으로 위반 하 게 됩니다.
 

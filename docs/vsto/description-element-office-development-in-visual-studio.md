@@ -34,7 +34,7 @@ ms.locfileid: "85520269"
 ```
 
 ## <a name="elements-and-attributes"></a>요소 및 특성
- (선택 사항) `description` 요소는 `vstov4` 네임스페이스에 있습니다. Microsoft Office 애플리케이션의 COM 추가 기능 대화 상자에 표시되는 추가 기능에 대한 설명이 포함됩니다.
+ 선택 사항입니다. `description` 요소는 `vstov4` 네임스페이스에 있습니다. Microsoft Office 애플리케이션의 COM 추가 기능 대화 상자에 표시되는 추가 기능에 대한 설명이 포함됩니다.
 
  `description` 요소에는 특성 또는 요소가 없습니다.
 

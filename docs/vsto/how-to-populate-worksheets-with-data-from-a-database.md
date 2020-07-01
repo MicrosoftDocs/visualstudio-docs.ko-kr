@@ -1,7 +1,7 @@
 ---
 title: '방법: 데이터베이스의 데이터로 워크시트 채우기'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985856"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520122"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>방법: 데이터베이스의 데이터로 워크시트 채우기
 
@@ -41,9 +41,9 @@ Windows Forms 프로젝트의 데이터에 액세스 하는 것과 동일한 방
 
 다음 컨트롤 중 하나가 워크시트에 만들어집니다.
 
-- 필드를 끌면 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 생성 됩니다. 자세한 내용은 [NamedRange 컨트롤](../vsto/namedrange-control.md)을 참조 하세요.
+- 필드를 끌면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 워크시트에 만들어집니다. 자세한 내용은 [NamedRange 컨트롤](../vsto/namedrange-control.md)을 참조 하세요.
 
-- 테이블을 끌면 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 생성 됩니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)을 참조 하세요.
+- 테이블을 끌면 <xref:Microsoft.Office.Tools.Excel.ListObject> 워크시트에 컨트롤이 만들어집니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)을 참조 하세요.
 
 **데이터 소스** 창에서 테이블 또는 필드를 선택한 다음 드롭다운 목록에서 다른 컨트롤을 선택 하 여 다른 컨트롤을 추가할 수 있습니다.
 
@@ -67,10 +67,10 @@ Windows Forms 프로젝트의 데이터에 액세스 하는 것과 동일한 방
 
 형식화 된 데이터 집합 및 데이터베이스에 업데이트를 보내는 방법에 대 한 자세한 내용은 [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)
+- [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [방법: 데이터베이스의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-a-database.md)
