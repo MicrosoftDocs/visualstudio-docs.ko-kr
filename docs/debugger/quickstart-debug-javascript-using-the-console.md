@@ -1,7 +1,7 @@
 ---
 title: 콘솔을 사용하여 JavaScript 디버그 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ad037a0e71bc2156fe1c604d183a5e02ae914688
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187555"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348108"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용하여 JavaScript 디버그
 

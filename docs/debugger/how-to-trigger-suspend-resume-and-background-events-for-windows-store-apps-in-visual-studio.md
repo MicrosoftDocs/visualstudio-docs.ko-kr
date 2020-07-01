@@ -2,7 +2,7 @@
 title: UWP를 디버그할 때 일시 중단/다시 시작/백그라운드 이벤트 트리거
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: da634246bfa9f800779c761458028f55b9317f6f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187624"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348940"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱을 디버그하는 동안 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 

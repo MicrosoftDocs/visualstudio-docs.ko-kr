@@ -1,7 +1,8 @@
+---
 title: 디버거를 사용하여 코드 탐색 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301094"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348251"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거를 사용하여 코드 탐색
 

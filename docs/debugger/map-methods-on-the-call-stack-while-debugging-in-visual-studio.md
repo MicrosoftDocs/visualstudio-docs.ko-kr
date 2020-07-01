@@ -1,7 +1,7 @@
 ---
 title: 호출 스택의 시각적 맵 만들기 | Microsoft Docs
 ms.date: 11/26/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135c7c66c9c6602f8c2e32bbdc1ba6e2fd28f548
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 2cf0cda942241ca77aa750624b6de25b5ae39391
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911513"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348537"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>디버그하는 동안 호출 스택의 시각적 맵 만들기(C#, Visual Basic, C++, JavaScript)
 

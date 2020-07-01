@@ -2,7 +2,7 @@
 title: C++ 액세스 위반 디버그 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.access
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0235cc00a740069a77afd492cd585788ea666d2
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 803f81d1a26438c2134349a85369d341353e17cf
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911471"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350422"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>C++ 액세스 위반을 디버그하려면 어떻게 해야 하나요?
 

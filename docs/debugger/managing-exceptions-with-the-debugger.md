@@ -2,7 +2,7 @@
 title: 디버거를 사용한 예외 관리 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ad5b41dd0a11661d281f24474b7673ea0a342c
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301124"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348459"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 

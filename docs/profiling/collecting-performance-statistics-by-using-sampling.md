@@ -1,7 +1,7 @@
 ---
 title: 샘플링을 사용하여 성능 통계 수집 | Microsoft 문서
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Profiling Tools,sampling
 - sampling profiling method
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe03f52b31664c59cb7e59d448db7c6b96b6487
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: adf26a8a1bae495481106506208232ebb383d2ca
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772880"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331666"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>샘플링을 사용하여 성능 통계 수집
 

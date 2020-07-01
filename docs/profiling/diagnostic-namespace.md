@@ -1,23 +1,23 @@
 ---
 title: 진단 네임스페이스 | Microsoft 문서
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
-- cvmarkersobj/Concurrency::diagnostic
+- cvmarkersobj/Concurrency, diagnostic
 helpviewer_keywords:
-- Concurrency::diagnostic namespace
+- Concurrency, diagnostic namespace
 ms.assetid: ad786b19-7c4c-46ee-bfb6-c4752b373a09
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970085"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330252"
 ---
 # <a name="diagnostic-namespace"></a>진단 네임스페이스
 `diagnostics` 네임스페이스는 동시성 시각화 도우미 표식을 내보내는 기능을 제공합니다.

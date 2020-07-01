@@ -2,7 +2,7 @@
 title: 디버거에서 레지스터 값 보기 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.registers
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906003"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348576"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>레지스터 창에서 레지스터 값 보기(C#, C++, Visual Basic, F#)
 

@@ -1,7 +1,7 @@
 ---
 title: 실행 중인 ASP.NET 프로세스 찾기 | Microsoft Docs
 ms.date: 11/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: c14067d58289dd0b41fa526937a0553c10934ea7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187663"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349609"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>ASP.NET 프로세스의 이름 찾기
 

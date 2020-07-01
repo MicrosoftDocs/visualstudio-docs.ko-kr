@@ -1,19 +1,19 @@
 ---
 title: WPF란?
 ms.date: 04/16/2018
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb58a1a7bee7b07cc9b5434f7fa3e6bd295060d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589541"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328434"
 ---
 # <a name="get-started-with-wpf"></a>WPF 시작
 

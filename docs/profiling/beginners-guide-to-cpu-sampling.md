@@ -2,7 +2,7 @@
 title: CPU 샘플링 초보자를 위한 지침
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779807"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330590"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 샘플링 초보자를 위한 지침
 Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 다음 절차에서는 **샘플링** 데이터 사용 방법을 보여 줍니다.

@@ -1,7 +1,7 @@
 ---
 title: 디버깅 중에 .NET 코드 디컴파일 | Microsoft Docs
 ms.date: 2/2/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d63c05120842d52dd54359e128d0cc5f2a195817
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508747"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350565"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>디버깅 중에 .NET 어셈블리에서 소스 코드 생성
 

@@ -1,7 +1,7 @@
 ---
 title: 동시에 여러 프로파일러 도구 사용 | Microsoft Docs
 ms.date: 4/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Profiler, multiple tools
 author: Sagar-S-S
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 7844d81af02211d1c9f4e444c6367152e73392e9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290970"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332038"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>동시에 여러 프로파일러 도구 사용
 

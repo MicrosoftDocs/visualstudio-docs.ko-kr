@@ -1,7 +1,7 @@
 ---
 title: 계층 상호 작용 데이터 수집 | Microsoft 문서
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e01259fdd23e60a1408addc10a6af3a12479c9f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772820"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331592"
 ---
 # <a name="collect-tier-interaction-data"></a>계층 상호 작용 데이터 수집
 

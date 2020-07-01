@@ -2,7 +2,7 @@
 title: 디버거에서 변수에 대한 메모리 보기 | Microsoft Docs
 ms.custom: ''
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905580"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348323"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 메모리 창 사용(C#, C++, Visual Basic, F#)
 

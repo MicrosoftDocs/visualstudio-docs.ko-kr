@@ -1,7 +1,7 @@
 ---
 title: Counter | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779482"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331192"
 ---
 # <a name="counter"></a>카운터
 **Counter** 옵션은 프로세서(하드웨어) 성능 카운터에서 데이터를 수집합니다.

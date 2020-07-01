@@ -1,7 +1,7 @@
 ---
 title: CvIsEnabled 함수 | Microsoft 문서
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvIsEnabledEx
 - cvmarkers/CvIsEnabled
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92763e352d04d5aa3e88a68bad7adfcd05897027
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62945416"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330059"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 함수
 세션에서 지정된 ETW 공급자를 사용하도록 설정했는지 확인합니다.

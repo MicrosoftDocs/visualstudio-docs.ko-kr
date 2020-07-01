@@ -1,23 +1,23 @@
 ---
 title: marker_series::write_flag 메서드 | Microsoft 문서
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
-- cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
+- cvmarkersojb/Concurrency, diagnostic::marker_series::write_flag
 helpviewer_keywords:
-- Concurrency::diagnostic::marker_series::write_flag method
+- Concurrency, diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edd141f6b99dc3836d99ebdbc4aab9af7150e4ff
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62830813"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329226"
 ---
 # <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag 메서드
 동시성 시각화 도우미 추적 파일에 플래그를 씁니다.

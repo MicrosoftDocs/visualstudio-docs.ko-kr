@@ -2,7 +2,7 @@
 title: 앱에서 단계별로 실행하는 경우 포커스 유지 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.stepping
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c4bd882dd1704099b24f07f744a1615cf7d412
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734188"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350383"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>앱에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까?
 ## <a name="description"></a>설명

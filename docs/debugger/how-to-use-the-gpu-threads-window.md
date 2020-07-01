@@ -1,7 +1,7 @@
 ---
 title: 디버거에서 GPU 스레드 보기 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732094"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348719"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>방법: GPU 스레드 창 사용(C++)
 GPU 스레드 창에서 디버깅 중인 애플리케이션의 GPU에서 실행되는 스레드를 검사하고 관련 작업을 수행할 수 있습니다. GPU에서 실행되는 애플리케이션에 대한 자세한 내용은 [C++ AMP 개요](/cpp/parallel/amp/cpp-amp-overview)를 참조하세요.

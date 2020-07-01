@@ -2,7 +2,7 @@
 title: UWP 앱의 HTML UI 응답성 분석 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189380"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331416"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>유니버설 Windows 앱의 HTML UI 응답성 분석
 이 항목에서는 유니버설 Windows 앱에 사용할 수 있는 성능 도구인 UI 응답성 프로파일러를 사용하여 앱에서 성능 문제를 격리하는 방법에 대해 설명합니다.
@@ -71,7 +71,7 @@ ms.locfileid: "73189380"
 ## <a name="isolate-an-issue"></a>문제 격리
  다음 섹션에서는 성능 문제를 격리하는 데 도움이 되는 제안 사항을 제공합니다. 샘플 성능 테스트 앱을 사용하여 성능 문제를 확인 및 수정하는 방법에 대한 단계별 설명은 [연습: UI 응답성 향상(HTML)](html-ui-responsiveness.md)을 참조하세요.
 
-### <a name="Workflow"></a> UI 응답성 문제 격리
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a> UI 응답성 문제 격리
  다음 단계에서는 UI 응답성 프로파일러를 보다 효과적으로 사용할 수 있는 제안 워크플로를 제공합니다.
 
 1. Visual Studio에서 앱을 엽니다.
@@ -128,12 +128,12 @@ ms.locfileid: "73189380"
 
 13. 확대할 때는 CPU 사용률 또는 시각적 처리량 그래프의 한 부분을 선택합니다. 선택하면 프로파일러 아래쪽 창의 시간 표시 막대 정보 그래프가 선택한 기간에 대해서만 표시하도록 변경됩니다.
 
-### <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem
  CPU 사용률이 과도한 기간은 프레임 속도가 낮거나 일관적이지 않을 수 있습니다. 리치 미디어 응용 프로그램 및 게임을 개발하는 경우 시각적 처리량 그래프는 CPU 사용률 그래프보다 중요한 데이터를 제공할 수 있습니다.
 
  시각적 처리량 문제를 격리하려면 이전 섹션에 설명된 단계를 수행하지만 시각적 처리량 그래프를 주요 데이터 요소 중 하나로 사용합니다.
 
-### <a name="ProfileMark"></a> 분석을 위한 코드 표시
+### <a name="mark-code-for-analysis"></a><a name="ProfileMark"></a> 분석을 위한 코드 표시
  그래프에 표시되는 데이터 관련 앱 코드의 섹션을 분리하도록 하기 위해, 함수가 실행되는 순간 프로파일러가 사용자 표시(역삼각형)를 타임라인에 삽입하도록 지시하는 함수 호출을 응용 프로그램에 추가할 수 있습니다. CPU 사용률 그래프, 시각적 처리량 그래프 및 시간 표시 막대 정보 그래프의 타임라인에 추가한 모든 사용자 표시가 나타납니다.
 
  사용자 표식을 추가하려면 응용 프로그램에 다음 코드를 추가합니다. 이 예제에서는 이벤트 설명으로 "데이터 가져오기"가 사용됩니다.
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
 ## <a name="analyze-data"></a>데이터 분석
  다음 단원에서는 프로파일러에 표시되는 데이터를 해석하기 위한 정보를 제공합니다.
 
-### <a name="Ruler"></a> 진단 세션 타임라인 보기
+### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> 진단 세션 타임라인 보기
  프로파일러 위쪽에 있는 눈금자는 프로파일링된 정보의 타임라인을 보여 줍니다. 이 타임라인은 CPU 사용률 그래프 및 시각적 처리량 그래프 모두에 적용됩니다.
 
  여러 가지 응용 프로그램 수명 주기 이벤트에 대해 표시되는 도구 설명이 포함된 진단 세션 타임라인의 모양은 다음과 같습니다.
@@ -187,7 +187,7 @@ if (performance.mark && performance.measure) {
 
 - 다른 페이지를 탐색할 때 발생하는 탐색 이벤트. 이벤트에 대한 도구 설명으로 대상 페이지 URL을 표시합니다.
 
-### <a name="CPUUtilization"></a> CPU 사용률 보기
+### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> CPU 사용률 보기
  CPU 사용률 그래프에서는 과도한 CPU 작업이 있던 기간을 확인할 수 있습니다. 여기에서는 일정 기간에 걸쳐 응용 프로그램의 평균 CPU 사용에 대한 정보를 제공합니다. 정보는 **로드**, **스크립팅**, 가비지 수집(**GC**), **스타일 지정**, **렌더링**, **이미지 디코딩**과 같은 특정 범주를 나타내도록 색으로 구분되어 있습니다. 이러한 범주에 대한 자세한 내용은 이 항목 뒷부분에 나오는 [Profiler event reference](#profiler-event-reference) 를 참조하세요.
 
  CPU 사용률 그래프는 전체 앱 스레드에 소요된 시간을 하나 이상의 CPU에 대한 CPU 사용률 값을 단일 백분율 값으로 결합하여 보여 줍니다. 둘 이상의 CPU를 사용 중일 경우 CPU 사용률 값은 100%를 초과할 수 있습니다.
@@ -209,7 +209,7 @@ if (performance.mark && performance.measure) {
 
   그래프 사용에 대한 자세한 내용은 이 항목의 [Isolate a UI responsiveness problem](#Workflow) 를 참조하세요.
 
-### <a name="VisualThroughput"></a> 시각적 처리량 보기(FPS)
+### <a name="view-visual-throughput-fps"></a><a name="VisualThroughput"></a> 시각적 처리량 보기(FPS)
  시각적 처리량 그래프에서는 프레임이 손실된 기간을 확인할 수 있습니다. 응용 프로그램에 대한 FPS(초당 프레임 수)를 표시합니다. 이 그래프는 게임 및 리치 미디어 앱 개발에 매우 유용합니다.
 
  표시된 FPS 값은 실제 프레임 속도와 다를 수 있습니다. 이 그래프에서 데이터를 검토할 때는 다음 정보에 유의하세요.
@@ -232,7 +232,7 @@ if (performance.mark && performance.measure) {
 
 - **확대** 단추를 선택하여 선택한 기간에 대해 보다 자세한 보기를 표시합니다.
 
-### <a name="TimelineDetails"></a> 타임라인 세부 정보 보기
+### <a name="view-timeline-details"></a><a name="TimelineDetails"></a> 타임라인 세부 정보 보기
  타임라인 세부 정보 그래프는 UI 응답성 프로파일러의 하단 창에 표시됩니다. 여기에는 선택한 기간 중 CPU 시간 소비가 가장 높은 이벤트에 대한 순차적 및 계층적 정보가 제공됩니다. 이 그래프는 특정 이벤트를 트리거한 항목과 일부 이벤트에 대해 이벤트가 소스 코드로 다시 매핑되는 방법을 확인하는 데 도움이 됩니다. 또한 이 그래프로부터 화면에 시각적 개체 업데이트를 그리는 데 필요한 시간을 확인할 수도 있습니다.
 
  이 그래프는 시각적 개체 업데이트를 느려지게 할 수 있는 UI 스레드 작업 및 백그라운드 스레드 작업을 보여 줍니다. 이 그래프에는 JavaScript JIT 작업, 비동기 GPU 작업, 호스트 프로세스 외부에서 수행된 작업(예: RuntimeBroker.exe 및 dwm.exe 작업) 또는 프로파일링에 대해 아직 계측되지 않은 Windows 런타임 영역의 작업(예: 디스크 I/O)은 표시되지 않습니다.
@@ -271,12 +271,12 @@ if (performance.mark && performance.measure) {
   > [!TIP]
   > 시간 표시 막대 정보 그래프 및 **포괄 시간 요약** 을 통해 최적화할 영역을 식별할 수 있습니다. 이러한 뷰 중 하나에 작은 작업이 여러 개 표시되면 해당 이벤트를 최적화할 수 있습니다. 예를 들어 앱에서 DOM 요소를 자주 새로 고쳐서 레이아웃 및 HTML 구문 분석 이벤트가 많이 발생할 수 있습니다. 이 작업을 일괄 처리하여 성능을 최적화할 수 있습니다.
 
-### <a name="FilterTimelineDetails"></a> 타임라인 세부 정보 필터링
+### <a name="filter-timeline-details"></a><a name="FilterTimelineDetails"></a> 타임라인 세부 정보 필터링
  특정 이벤트의 상황에 맞는 메뉴에서 **이벤트 필터** 를 선택하여 타임 라인 세부 정보의 뷰를 특정 이벤트로 필터링할 수 있습니다. 이 옵션을 선택하면 타임라인 및 표 뷰가 선택된 이벤트로 범위가 정해집니다. CPU 사용률 그래프에서의 선택도 특정 이벤트로 범위가 정해집니다.
 
  ![이벤트에 대한 타임라인 필터링](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
-### <a name="FilterEvents"></a> 필터 이벤트
+### <a name="filter-events"></a><a name="FilterEvents"></a> 필터 이벤트
  타임라인 세부 정보 그래프에서 일부 이벤트를 필터링해 데이터의 노이즈를 줄이거나 성능 시나리오와 관련되지 않은 데이터를 제거할 수 있습니다. 이벤트 이름 또는 이벤트 기간으로 필터링하거나 여기서 설명하는 특정 필터로 필터링할 수 있습니다.
 
  이미지 디코딩, 잘못된 다운로드 및 GC 이벤트를 필터링하려면 아래쪽 창의 필터 아이콘에서 **백그라운드 작업** 옵션의 선택을 취소합니다. 이러한 이벤트는 실행 가능성이 높지 않지만 기본적으로 숨겨집니다.
@@ -292,7 +292,7 @@ if (performance.mark && performance.measure) {
 
  사용자 측정을 필터링하려면 **사용자 측정** 옵션의 선택을 취소합니다. 사용자 측정은 자식이 없는 최상위 이벤트입니다.
 
-### <a name="GroupFrames"></a> 프레임별 이벤트 그룹화
+### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> 프레임별 이벤트 그룹화
  타임라인 세부 정보 보기에서 개별 프레임에 나타나는 이벤트를 그룹화할 수 있습니다. 이러한 프레임 이벤트는 도구로 생성된 이벤트이며, paint 이벤트 간에 발생하는 모든 UI 스레드 작업의 최상위 이벤트 컨테이너를 나타냅니다. 이 뷰를 사용하도록 설정하려면 **프레임별 최상위 이벤트 그룹화**를 선택합니다.
 
  ![프레임별로 최상위 이벤트 그룹화](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")

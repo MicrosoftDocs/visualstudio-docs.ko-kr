@@ -2,7 +2,7 @@
 title: 디버거에서 디스어셈블리 코드 보기 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846392"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348706"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 디스어셈블리 코드 보기(C#, C++, Visual Basic, F#)
 
