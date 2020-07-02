@@ -3,7 +3,7 @@ title: 상수가 필요 합니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1031
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bb822b6b6224748c51da2220461a232cab6134b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573402"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816646"
 ---
 # <a name="expected-constant"></a>상수가 필요합니다.
 조건부 컴파일 테스트 문에서 (비 조건부 컴파일) 변수를 사용 하려고 했습니다. 조건부 컴파일 테스트 문은 상수로 계산 되어야 합니다.  

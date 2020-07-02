@@ -3,7 +3,7 @@ title: 식별자가 필요 합니다. (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1010
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8555ddde52602f5761be40cfcc752abd12697deb
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 71f5e4363481745887371e7d25e308b2856dc00c
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72577287"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816529"
 ---
 # <a name="expected-identifier-javascript"></a>식별자가 필요합니다.(JavaScript)
 필요한 컨텍스트에서 식별자 이외의 항목을 사용 했습니다. 식별자는 다음과 같을 수 있습니다.  
@@ -36,5 +36,5 @@ ms.locfileid: "72577287"
   
 - 식별자가 등호 왼쪽에 표시 되도록 식을 변경 합니다.  
   
-## <a name="see-also"></a>참조  
+## <a name="see-also"></a>참고 항목  
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)

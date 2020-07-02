@@ -1,19 +1,19 @@
 ---
 title: XAML 오류 및 경고
 ms.date: 03/06/2018
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b46bf15390f12e7fb0873c7e4c39abf94530821
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330417"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817270"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 오류 및 경고
 

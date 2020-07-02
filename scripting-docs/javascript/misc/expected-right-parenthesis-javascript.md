@@ -1,9 +1,9 @@
 ---
-title: 예상 ')' (JavaScript) | Microsoft Docs
+title: "') '가 필요 합니다. (JavaScript) | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1006
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: 2fb72012-0f83-40fa-b747-167940d90bdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7338ac776fababe5d1801708a0de5a305af78d1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d109f91e447bc96612dae82d0141d717eaa1f20c
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934722"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817582"
 ---
 # <a name="expected--javascript"></a>')'가 필요합니다.(JavaScript)
-괄호 안의 식이 포함 하려고 하는데 닫는 괄호가 포함 되어 있지 않습니다. 일부 식은 괄호 안에 묶어야 합니다. 다음 예제에서 괄호를 사용 하 여 확인 합니다.  
+괄호 안에 식을 묶어야 했지만 닫는 괄호가 포함 되지 않았습니다. 일부 식은 여는 괄호와 닫는 괄호 집합 안에 포함 되어야 합니다. 다음 예제에서는 괄호를 사용 합니다.  
   
 ```JavaScript  
 for (initialize; test; increment) {  

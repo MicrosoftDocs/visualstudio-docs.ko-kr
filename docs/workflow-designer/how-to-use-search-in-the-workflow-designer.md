@@ -1,19 +1,19 @@
 ---
 title: '방법: Workflow Designer에서 검색 사용'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 12bda4af085b8ab41d3e11841f24cd5dfd389738
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650303"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817478"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>방법: Workflow Designer에서 검색 사용
 
@@ -25,15 +25,15 @@ ms.locfileid: "72650303"
 
 - <xref:System.Activities.Activity> 개체, <xref:System.Activities.Statements.FlowNode> 개체, <xref:System.Activities.Statements.State> 개체, 전환 및 기타 사용자 지정 흐름 제어 항목의 속성
 
-- 변수
+- variables
 
 - 인수
 
-- 표현식
+- 식
 
 ### <a name="use-quick-find"></a>빠른 찾기 사용
 
-1. Workflow designer를 연 상태에서 **ctrl + F**를 누르거나  >  **편집** 을 선택**하  > ** **빠른 찾기**를 선택 합니다.
+1. Workflow designer를 연 상태에서 **ctrl + F**를 누르거나 찾기 **편집**  >  **을 선택 하 고**  >  **빠른 찾기**를 바꿉니다.
 
 2. **찾을 내용** 텍스트 상자에 검색 용어를 입력 하 고 **다음 찾기**를 클릭 합니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72650303"
 
 ### <a name="use-find-in-files"></a>파일에서 찾기 사용
 
-1. Visual Studio에서 **ctrl** +**shift** +**F**를 누르거나 **편집**  > **찾기 및 바꾸기** 를 선택 하  > **파일에서 찾기**를 선택 합니다.
+1. Visual Studio에서 **ctrl** + **Shift** + **F**를 누르거나, 찾기 **편집**  >  **을 선택 하 고**  >  **파일에서 찾기**를 바꾸기를 선택 합니다.
 
 2. **찾을 내용** 텍스트 상자에 검색 항목을 입력 하 고 **모두 찾기**를 클릭 합니다.
 

@@ -1,19 +1,19 @@
 ---
 title: '워크플로 디자이너-방법: 이동 경로 탐색 사용'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584571"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817465"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>방법: 이동 경로 탐색 사용
 
@@ -47,7 +47,7 @@ ms.locfileid: "75584571"
 2. 모두 확장 또는 모두 축소 상태를 적용 한 후에는 표시 되는 **복원** 단추를 클릭 하 여 이전에 각 작업에 적용 된 상태를 볼 수 있습니다.
 
     > [!WARNING]
-    > <xref:System.Activities.Statements.Flowchart>와 같은 활동이 현재 위치의 확장에서 옵트아웃 된 경우 **모두 확장** 및 **모두 축소** 단추와 연결 된 기능을 **순서도** 디자이너에서 사용할 수 없습니다. **순서도** 디자이너에 대 한 자세한 내용은 [flowchart](../workflow-designer/flowchart-activity-designer.md) 항목을 참조 하세요.
+    > 와 같은 활동이 <xref:System.Activities.Statements.Flowchart> 현재 위치의 확장에서 옵트아웃 된 경우 **모두 확장** 및 **모두 축소** 단추와 연결 된 기능을 **순서도** 디자이너에서 사용할 수 없습니다. **순서도** 디자이너에 대 한 자세한 내용은 [flowchart](../workflow-designer/flowchart-activity-designer.md) 항목을 참조 하세요.
 
     > [!WARNING]
     > 모두 확장은 **Switch** 및 **TryCatch** activity designer에서 특수 한 효과를 가집니다. **모두 확장**을 클릭 하면 모든 스위치 사례와 모든 try/catch/finally 블록이 표시 됩니다. **복원** 또는 **모두 축소** 를 클릭 하면 이러한 디자이너가 기본 상태로 돌아갑니다. 여기서 개별 case/블록을 클릭 하 여 해당 내용을 볼 수 있습니다.

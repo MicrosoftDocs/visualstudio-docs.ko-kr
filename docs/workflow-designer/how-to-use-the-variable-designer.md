@@ -1,7 +1,7 @@
 ---
 title: '워크플로 디자이너-방법: 변수 디자이너 사용'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593176"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817413"
 ---
 # <a name="how-to-use-the-variable-designer"></a>방법: 변수 디자이너 사용
 
@@ -36,7 +36,7 @@ ms.locfileid: "75593176"
     > [!NOTE]
     > 변수를 삭제 하려면 변수를 클릭 하 여 선택한 다음 **delete** 키를 누릅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)
 - [변수 및 인수](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
