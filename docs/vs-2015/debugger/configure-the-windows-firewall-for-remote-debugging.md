@@ -1,5 +1,5 @@
 ---
-title: 원격 디버깅용 Windows 방화벽 구성 | Microsoft Docs
+title: 원격 디버깅을 위해 Windows 방화벽 구성 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f232446ed699bd7cc034e4b6d6148b665830cf2d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68161546"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535527"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "68161546"
   
 3. **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버거 검색**을 찾습니다. 표시되는 경우 선택되었으며 하나 이상의 네트워크 종류도 선택되었는지 확인합니다.  
   
-4. **Visual Studio 원격 디버거 검색** 이 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 여전히 표시 되지 않는 경우에 **앱 추가** 창에서 클릭 **찾아보기** 이동한  **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Remote디버거**. 애플리케이션에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. **추가**를 클릭합니다.  
+4. **Visual Studio 원격 디버거 검색** 이 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 그래도 **앱 추가** 창에 표시 되지 않는 경우 **찾아보기** 를 클릭 하 고 ** \<Visual Studio installation directory> \Common7\IDE\Remote Debugger**로 이동 합니다. 애플리케이션에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. 그런 다음, **추가**를 클릭합니다.  
   
 5. **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버깅 모니터**를 선택합니다. 원격 디버깅 모니터에서 통신하려는 네트워크 종류(**도메인, 홈/회사(개인), 공용**)를 하나 이상 선택합니다. 종류는 Visual Studio 컴퓨터가 연결된 네트워크를 포함해야 합니다.  
   
@@ -60,7 +60,7 @@ ms.locfileid: "68161546"
 ## <a name="to-configure-the-windows-firewall-of-the-remote-computer-for-remote-debugging"></a>원격 디버깅을 위해 원격 컴퓨터의 Windows 방화벽을 구성하려면  
  원격 디버깅 구성 요소는 원격 컴퓨터에 설치하거나 공유 디렉터리에서 실행할 수 있습니다. 두 경우 모두 원격 컴퓨터의 방화벽을 구성해야 합니다. 원격 디버깅 구성 요소는 다음 위치에 있습니다.  
   
- **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Remote 디버거**  
+ **\<Visual Studio installation directory>\Common7\IDE\Remote 디버거**  
   
  Windows 방화벽을 구성하기 위한 지침은 운영 체제마다 약간 다릅니다. Windows 7 또는 Windows Server 2008에서는 **프로그램** 이란 단어가 사용되고, Windows 8/8.1, Windows 10 및 Windows Server 2012에서는 **앱** 이란 단어가 사용됩니다.  다음 단계에서는 **앱**이란 단어를 사용합니다.  
   
@@ -70,26 +70,24 @@ ms.locfileid: "68161546"
   
 3. **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버깅 모니터**를 찾습니다. 표시되는 경우 선택되었으며 하나 이상의 네트워크 종류도 선택되었는지 확인합니다.  
   
-4. **Visual Studio 원격 디버깅 모니터** 가 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 여전히 표시 되지 않는 경우에 **추가 된 앱 창의**, 클릭 **찾아보기** 이동한  **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Remote디버거**. 애플리케이션에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. **추가**를 클릭합니다.  
+4. **Visual Studio 원격 디버깅 모니터** 가 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 그래도 **앱 추가 창**에 표시 되지 않는 경우 **찾아보기** 를 클릭 하 고 ** \<Visual Studio installation directory> \Common7\IDE\Remote Debugger**로 이동 합니다. 애플리케이션에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. 그런 다음, **추가**를 클릭합니다.  
   
 5. **허용된 앱** 목록에서 **Visual Studio 원격 디버깅 모니터**를 선택합니다. 원격 디버깅 모니터에서 통신하려는 네트워크 종류(**도메인, 홈/회사(개인), 공용**)를 하나 이상 선택합니다. 종류는 Visual Studio 컴퓨터가 연결된 네트워크를 포함해야 합니다.  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>원격 디버깅을 사용할 수 있도록 하는 원격 컴퓨터의 포트  
   
-|||||  
-|-|-|-|-|  
 |**포트**|**들어오는/나가는 포트**|**프로토콜**|**설명**|  
+|-|-|-|-|
 |3702|나가는 포트|UDP|원격 디버거 검색에 필요합니다.|  
 |4020||TCP|VS 2015에 사용됩니다. 포트 번호는 각 Visual Studio 버전마다 2씩 증가합니다. 자세한 내용은 Visual Studio 원격 디버거 포트 할당을 참조하세요.|  
 |4021||TCP|VS 2015에 사용됩니다. 포트 번호는 각 Visual Studio 버전마다 2씩 증가합니다. 자세한 내용은 Visual Studio 원격 디버거 포트 할당을 참조하세요.|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>관리 또는 네이티브 호환성 모드로 원격 디버깅을 사용할 수 있도록 하는 원격 컴퓨터의 포트  
   
-|||||  
-|-|-|-|-|  
 |**포트**|**들어오는/나가는 포트**|**프로토콜**|**설명**|  
-|135, 139, 445|나가는 포트|TCP|필수.|  
-|137, 138|나가는 포트|UDP|필수.|  
+|-|-|-|-|  
+|135, 139, 445|나가는 포트|TCP|필수 요소.|  
+|137, 138|나가는 포트|UDP|필수 요소.|  
 |500, 4500|나가는 포트|UDP|도메인 정책에 따라 IPSec을 통해 네트워크 통신을 수행해야 하는 경우에 필요합니다.|  
 |80|나가는 포트|TCP|웹 서버 디버깅에 필요합니다.|  
   
@@ -99,17 +97,17 @@ ms.locfileid: "68161546"
   
 2. **인바운드 규칙** 또는 **아웃바운드 규칙** 을 클릭한 다음 **작업** 목록에서 **새 규칙** 을 클릭합니다.  
   
-3. **규칙 유형** 페이지에서 **포트** 를 선택하고 **다음**을 클릭합니다.  
+3. **규칙 유형** 페이지에서 **포트** 를 선택 하 고 **다음**을 클릭 합니다.  
   
-4. **프로토콜 및 포트** 페이지에서 포트 프로토콜(TCP 또는 UDP)을 선택합니다. **특정 로컬 포트** 를 선택하고 프로토콜에 사용하도록 설정할 포트 번호를 하나 이상 입력합니다. 번호를 쉼표로 구분합니다. **다음**을 클릭합니다.  
+4. **프로토콜 및 포트** 페이지에서 포트 프로토콜(TCP 또는 UDP)을 선택합니다. **특정 로컬 포트** 를 선택하고 프로토콜에 사용하도록 설정할 포트 번호를 하나 이상 입력합니다. 번호를 쉼표로 구분합니다. 그런 후 **Next** 를 클릭합니다.  
   
 5. **작업** 페이지에서 **연결 허용** 을 선택하고 **다음**을 클릭합니다.  
   
-6. **프로필** 페이지에서 포트에 사용하도록 설정할 네트워크 종류를 하나 이상 선택합니다. 선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다. **다음**을 클릭합니다.  
+6. **프로필** 페이지에서 포트에 사용하도록 설정할 네트워크 종류를 하나 이상 선택합니다. 선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다. 그런 후 **Next** 를 클릭합니다.  
   
 7. **이름** 페이지에서 규칙의 이름을 입력하고 **마침**을 클릭합니다.  
   
-8. **인바운드 규칙** 또는 **아웃바운드 규칙** 목록에 새 규칙이 표시됩니다.  
+8. **인바운드 규칙** 또는 **아웃 바운드 규칙** 목록에 새 규칙이 표시 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Remote Debugging](../debugger/remote-debugging.md)

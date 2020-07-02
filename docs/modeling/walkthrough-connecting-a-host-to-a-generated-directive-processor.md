@@ -1,7 +1,7 @@
 ---
 title: 생성 된 지시문 프로세서에 호스트 연결
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593982"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535865"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 
@@ -31,7 +31,7 @@ ms.locfileid: "75593982"
 
 이 연습에는 다음 작업이 포함됩니다.
 
-- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]를 사용 하 여 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 합니다.
+- 를 사용 하 여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 합니다.
 
 - 사용자 지정 텍스트 템플릿 호스트를 생성 된 지시문 프로세서에 연결 합니다.
 
@@ -96,17 +96,17 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 3. 다음 참조를 추가합니다.
 
-    - Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - VisualStudio입니다.
 
-    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - VisualStudio (영문).
 
-    - Microsoft.VisualStudio.TextTemplating.11.0
+    - VisualStudio. TextTemplating 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
+    - VisualStudio. * 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - VisualStudio. i.
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - VisualStudio. Vshost.exe.
 
 4. Program.cs 또는 module1.vb의 맨 위에 다음 코드 줄을 추가 합니다.
 
@@ -118,7 +118,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     Imports Microsoft.Win32
     ```
 
-5. `StandardAssemblyReferences`속성에 대 한 코드를 찾아 다음 코드로 바꿉니다.
+5. 속성에 대 한 코드를 찾아 `StandardAssemblyReferences` 다음 코드로 바꿉니다.
 
     > [!NOTE]
     > 이 단계에서는 호스트에서 지원 되는 생성 된 지시문 프로세서에 필요한 어셈블리에 대 한 참조를 추가 합니다.
@@ -154,7 +154,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     }
     ```
 
-6. `ResolveDirectiveProcessor`함수에 대 한 코드를 찾아 다음 코드로 바꿉니다.
+6. 함수에 대 한 코드를 찾아 `ResolveDirectiveProcessor` 다음 코드로 바꿉니다.
 
     > [!IMPORTANT]
     > 이 코드에는 연결 하려는 생성 된 지시문 프로세서의 이름에 대 한 하드 코딩 된 참조가 포함 되어 있습니다. 이 경우 레지스트리에 나열 된 모든 지시문 프로세서를 검색 하 고 일치 하는 항목을 찾으려고 시도 하는 것이 더 일반적입니다. 이 경우 호스트는 생성 된 모든 지시문 프로세서를 사용 합니다.
@@ -238,7 +238,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>텍스트 템플릿을 만들어 사용자 지정 호스트 테스트
 
-1. 텍스트 파일을 만들고 이름을 `TestTemplateWithDP.tt`로 합니다. 메모장과 같은 텍스트 편집기를 사용 하 여 파일을 만들 수 있습니다.
+1. 텍스트 파일을 만들고 이름을로 `TestTemplateWithDP.tt` 합니다. 메모장과 같은 텍스트 편집기를 사용 하 여 파일을 만들 수 있습니다.
 
 2. 텍스트 파일에 다음을 추가합니다.
 
@@ -312,9 +312,9 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     #>
     ```
 
-3. 코드에서 \<경로 >을 첫 번째 절차에서 만든 디자인 특정 언어의 샘플. min 파일 경로로 바꿉니다.
+3. 코드에서을 \<YOUR PATH> 첫 번째 절차에서 만든 디자인 특정 언어의 샘플. min 파일의 경로로 바꿉니다.
 
-4. 파일을 저장한 후 닫습니다.
+4. 파일을 저장하고 닫습니다.
 
 ### <a name="test-the-custom-host"></a>사용자 지정 호스트 테스트
 
@@ -327,7 +327,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 주소를 입력 하는 대신 **Windows 탐색기**에서 customhost .exe로 이동 하 여 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
+    > 주소를 입력 하는 대신 **Windows 탐색기**에서 CustomHost.exe 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
 
 3. 공백을 입력합니다.
 
@@ -338,13 +338,13 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > 주소를 입력 하는 대신 **Windows 탐색기**에서 test템플릿 파일을 찾은 다음 파일을 명령 프롬프트 창으로 끌 수 있습니다.
+    > 주소를 입력 하는 대신 **Windows 탐색기**에서 TestTemplateWithDP.txt 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
 
      사용자 지정 호스트 응용 프로그램이 실행 되어 텍스트 템플릿 변환 프로세스를 시작 합니다.
 
-5. **Windows 탐색기**에서 test템플릿 파일을 포함 하는 폴더를 찾습니다.
+5. **Windows 탐색기**에서 TestTemplateWithDP.txt 파일이 있는 폴더로 이동 합니다.
 
-     폴더에는 TestTemplateWithDP1 파일도 포함 되어 있습니다.
+     폴더에는 파일 TestTemplateWithDP1.txt 포함 되어 있습니다.
 
 6. 이 파일을 열어 텍스트 템플릿 변환의 결과를 확인합니다.
 
@@ -360,6 +360,6 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)

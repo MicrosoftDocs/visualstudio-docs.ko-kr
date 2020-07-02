@@ -21,19 +21,19 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983801"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535540"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC(High Performance Computing) 클러스터에서 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 또는 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 프로파일링 도구의 샘플링 방법을 사용하여 Microsoft Windows HPC 클러스터의 컴퓨팅 노드에서 프로파일링을 수행할 수 있습니다. HPC에 대 한 자세한 내용은 Microsoft 웹 사이트에서 [빅 계산: hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) 를 참조 하세요.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>사전 요구 사항  
  HPC 컴퓨팅 노드에서 프로파일링하려면 다음을 수행해야 합니다.  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]과 같은 컴퓨터에 Microsoft HPC 팩 2008을 설치합니다. 컴퓨터는 HPC 클러스터의 일부분이 아니어도 됩니다. HPC 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=2800)에서 설치할 수 있습니다.  
@@ -52,9 +52,9 @@ ms.locfileid: "73983801"
   
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
-|||  
+|구문 요소|설명|  
 |-|-|  
-|*%HeadNode%*|클러스터의 헤드 노드 이름입니다.|  
+|*헤드 노드에*|클러스터의 헤드 노드 이름입니다.|  
 |*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 설치 관리자의 경로입니다. [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 설치 미디어에서 경로는 WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe입니다.|  
 |*%ProfilerPath%*|프로파일링 도구 설치 관리자의 독립 실행형 버전 경로입니다. [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 설치 미디어에서 경로는 Standalone Profiler\x64\vs_profiler.exe입니다.|  
   
@@ -105,7 +105,7 @@ ms.locfileid: "73983801"
   
     - 프로파일링을 즉시 시작하려면 **마법사를 완료한 후 프로파일링을 시작합니다.** 를 선택하고, 수동으로 프로파일링을 시작하려면 확인란 선택을 취소합니다.  
   
-10. **마침**을 클릭합니다.  
+10. **Finish**를 클릭합니다.  
   
 ## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>성능 세션 속성 페이지를 사용하여 HPC 프로파일링 속성 설정  
  성능 세션 속성 페이지의 HPC 시작 속성 페이지에서 HPC 프로파일링 마법사에 대해 설정한 성능 세션 속성을 변경할 수 있습니다. HPC 고급 속성 페이지에서 추가 옵션을 설정합니다.  
@@ -141,7 +141,7 @@ ms.locfileid: "73983801"
 |--------------|-----------------|  
 |**프로젝트 이름**|현재 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 프로젝트 또는 솔루션의 이름입니다.|  
 |**프로파일러가 중지되면 정리**|true로 설정하면 실행 디렉터리에 배포된 이진 파일이 제거됩니다. 사용자 프로그램에서 만든 파일과 디렉터리는 이 단계에서 제거되지 않습니다. 실행 디렉터리와 배포 디렉터리를 IDE에서 만든 경우 IDE는 해당 디렉터리 제거를 시도하지만, IDE를 통해 배포되지 않은 파일이 포함되어 있는 경우에는 제거를 시도하지 않습니다.|  
-|**배포할 추가 파일**|컴퓨팅 노드에서 배포할 추가 파일의 세미콜론으로 구분된 목록을 지정합니다. 줄임표 단추( **...** )를 클릭하면 대화 상자를 통해 여러 파일을 선택할 수 있습니다.|  
+|**배포할 추가 파일**|컴퓨팅 노드에서 배포할 추가 파일의 세미콜론으로 구분된 목록을 지정합니다. 줄임표 단추(**...**)를 클릭하면 대화 상자를 통해 여러 파일을 선택할 수 있습니다.|  
 |**Mpiexec 명령**|MPI 애플리케이션을 시작 하는 애플리케이션을 지정합니다. 기본값은 **mpiexec.exe**입니다.|  
 |**Mpiexec 인수**|Mpiexec.exe 명령에 전달할 인수를 지정합니다.|  
 |**클러스터에서 요청된 노드**|애플리케이션을 실행할 클러스터의 노드 수를 지정합니다.|  

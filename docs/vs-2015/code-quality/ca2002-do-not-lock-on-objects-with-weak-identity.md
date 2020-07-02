@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 557f91d8b00274642accbbfc05b4a60789615bfc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79f97de740ace9ccb59b13b3e4e30b34f38eb2f4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667755"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534669"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: 약한 ID를 가진 개체를 잠그지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
@@ -36,7 +36,7 @@ ms.locfileid: "72667755"
  스레드가 약한 id를 가진 개체에 대 한 잠금을 획득 하려고 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 응용 프로그램 도메인 경계를 가로질러 직접 액세스할 수 있는 개체를 약한 ID를 가진 개체라고 합니다. 약한 ID를 가진 개체에 대해 잠금을 가져오려고 시도하는 스레드는 같은 개체에 대해 잠금을 가진 다른 응용 프로그램 도메인의 스레드에 의해 차단될 수 있습니다. 다음 형식은 약한 id를 가지 며 규칙에 따라 플래그가 지정 됩니다.
+ 애플리케이션 도메인 경계를 가로질러 직접 액세스할 수 있는 개체를 약한 ID를 가진 개체라고 합니다. 약한 ID를 가진 개체에 대해 잠금을 가져오려고 시도하는 스레드는 같은 개체에 대해 잠금을 가진 다른 애플리케이션 도메인의 스레드에 의해 차단될 수 있습니다. 다음 형식은 약한 id를 가지 며 규칙에 따라 플래그가 지정 됩니다.
 
 - <xref:System.MarshalByRefObject>
 
@@ -69,6 +69,6 @@ ms.locfileid: "72667755"
  [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/cs/FxCop.Reliability.LockWeakObjects.cs#1)]
  [!code-vb[FxCop.Reliability.LockWeakObjects#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/vb/FxCop.Reliability.LockWeakObjects.vb#1)]
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
  [Lock 문](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock 문](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

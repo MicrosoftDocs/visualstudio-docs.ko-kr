@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49a693224b6552340d2a01051318842749a84cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01ad9fc4fc57917c123404d8863d04240585793
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663670"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533434"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invoke를 NativeMethods 클래스로 이동
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
@@ -36,15 +36,15 @@ ms.locfileid: "72663670"
  메서드는 플랫폼 호출 서비스를 사용 하 여 비관리 코드에 액세스 하 고 **NativeMethods** 클래스 중 하나의 멤버가 아닙니다.
 
 ## <a name="rule-description"></a>규칙 설명
- @No__t_0 특성을 사용 하 여 표시 된 것과 같은 플랫폼 호출 메서드 또는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]의 `Declare` 키워드를 사용 하 여 정의 된 메서드를 사용 하 여 비관리 코드에 액세스할 수 있습니다. 이러한 메서드는 다음 클래스 중 하나에 있어야 합니다.
+ 특성을 사용 하 여 표시 된 것과 같은 플랫폼 호출 메서드 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 또는의 키워드를 사용 하 여 정의 된 메서드는 `Declare` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 비관리 코드에 액세스 합니다. 이러한 메서드는 다음 클래스 중 하나에 있어야 합니다.
 
-- **NativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. 이 클래스에는 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>을 적용 하지 않아야 합니다. 이 클래스는 스택 워크가 수행 되기 때문에 어디에서 나 사용할 수 있는 메서드에 대 한 것입니다.
+- **NativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>이 클래스에는 적용 되지 않아야 합니다. 이 클래스는 스택 워크가 수행 되기 때문에 어디에서 나 사용할 수 있는 메서드에 대 한 것입니다.
 
-- **SafeNativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. 이 클래스에는 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 적용 됩니다. 이 클래스는 모든 사용자가 호출 하는 데 안전 하 게 사용할 수 있는 메서드입니다. 이러한 메서드의 호출자는 모든 호출자가 아무 것도 무해 하므로 사용이 안전한 지 확인 하기 위해 전체 보안 검토를 수행 하는 데 필요 하지 않습니다.
+- **SafeNativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>이 클래스에 적용 됩니다. 이 클래스는 모든 사용자가 호출 하는 데 안전 하 게 사용할 수 있는 메서드입니다. 이러한 메서드의 호출자는 모든 호출자가 아무 것도 무해 하므로 사용이 안전한 지 확인 하기 위해 전체 보안 검토를 수행 하는 데 필요 하지 않습니다.
 
-- **UnsafeNativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. 이 클래스에는 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 적용 됩니다. 이 클래스는 잠재적으로 위험할 수 있는 메서드에 대 한 것입니다. 이러한 메서드의 모든 호출자는 스택 워크가 수행 되지 않기 때문에 사용이 안전한 지 확인 하기 위해 전체 보안 검토를 수행 해야 합니다.
+- **UnsafeNativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>이 클래스에 적용 됩니다. 이 클래스는 잠재적으로 위험할 수 있는 메서드에 대 한 것입니다. 이러한 메서드의 모든 호출자는 스택 워크가 수행 되지 않기 때문에 사용이 안전한 지 확인 하기 위해 전체 보안 검토를 수행 해야 합니다.
 
-  이러한 클래스는 `internal` (`Friend` Visual Basic)로 선언 되 고 private 생성자를 선언 하 여 새 인스턴스가 생성 되지 않도록 합니다. 이러한 클래스의 메서드는 `static` 하 고 `internal` 해야 합니다 (`Shared` 및 `Friend` Visual Basic).
+  이러한 클래스는 `internal` (Visual Basic)로 선언 되 `Friend` 고 private 생성자를 선언 하 여 새 인스턴스가 생성 되지 않도록 합니다. 이러한 클래스의 메서드는 `static` 및 `internal` ( `Shared` 및 `Friend` Visual Basic) 여야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 메서드를 적절 한 **NativeMethods** 클래스로 이동 합니다. 대부분의 응용 프로그램에서 P/Invoke를 **NativeMethods** 라는 새 클래스로 이동 하는 것은 충분 합니다.
@@ -91,11 +91,11 @@ ms.locfileid: "72663670"
 ### <a name="description"></a>설명
  안전 하 게 호출할 수 없고 부작용이 발생 하는 P/Invoke 메서드는 **UnsafeNativeMethods**라는 클래스에 배치 해야 합니다. 이러한 메서드는 사용자에 게 실수로 노출 되지 않도록 엄격 하 게 확인 해야 합니다. Rule [CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) 를 사용 하면 도움이 될 수 있습니다. 또는 메서드를 사용할 때 **UnmanagedCode** 대신 요청 된 다른 사용 권한이 있어야 합니다.
 
- 다음 예제에서는 user32.dll에서 **ShowCursor** 함수를 래핑하는 **커서를 숨기** 는 방법을 보여 줍니다.
+ 다음 예제에서는 user32.dll **ShowCursor** 함수를 래핑하는 Cursor 메서드를 보여 줍니다 **.**
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Design.NativeMethodsUnsafe#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethodsUnsafe/cs/FxCop.Design.NativeMethodsUnsafe.cs#1)]
  [!code-vb[FxCop.Design.NativeMethodsUnsafe#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.NativeMethodsUnsafe/vb/FxCop.Design.NativeMethodsUnsafe.vb#1)]
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [디자인 경고](../code-quality/design-warnings.md)

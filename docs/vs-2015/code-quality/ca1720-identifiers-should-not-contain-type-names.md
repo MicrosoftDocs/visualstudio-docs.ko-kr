@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 34ebe4848bbbe49b9a67449795f0aea7d104af8b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671634"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534851"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: 식별자에 형식 이름을 포함하면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
@@ -40,7 +40,7 @@ ms.locfileid: "72671634"
  외부에 표시 되는 멤버의 이름에는 언어별 데이터 형식 이름이 포함 됩니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 매개 변수 및 멤버 이름은 개발 도구에서 제공 해야 하는 형식을 설명 하는 것 보다 의미를 전달 하는 데 더 적합 합니다. 멤버의 이름으로 데이터 형식 이름을 사용 해야 하는 경우 언어 관련 이름을 사용 하는 대신 언어 독립적 이름을 사용 합니다. 예를 들어 C# 형식 이름 ' int ' 대신 언어 독립적 데이터 형식 이름인 Int32를 사용 합니다.
+ 매개 변수 및 멤버 이름은 개발 도구에서 제공 해야 하는 형식을 설명 하는 것 보다 의미를 전달 하는 데 더 적합 합니다. 멤버의 이름으로 데이터 형식 이름을 사용 해야 하는 경우 언어 관련 이름을 사용 하는 대신 언어 독립적 이름을 사용 합니다. 예를 들어 c # 형식 이름 ' int ' 대신 언어 독립적 데이터 형식 이름인 Int32를 사용 합니다.
 
  매개 변수 또는 멤버의 이름에 있는 각 불연속 토큰은 대/소문자를 구분 하지 않는 방식으로 다음과 같은 언어별 데이터 형식 이름에 대해 확인 됩니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "72671634"
 
 - UShort
 
-- 정수
+- Int
 
 - 단위
 
@@ -64,7 +64,7 @@ ms.locfileid: "72671634"
 
 - UInteger
 
-- Long
+- long
 
 - ULong
 
@@ -84,7 +84,7 @@ ms.locfileid: "72671634"
 
 - 인스턴스인
 
-- Boolean
+- 부울
 
 - Char
 
@@ -126,7 +126,7 @@ ms.locfileid: "72671634"
 
 - Decimal
 
-- GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  **매개 변수에 대해 발생 하는 경우:**

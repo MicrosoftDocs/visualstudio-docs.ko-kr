@@ -1,61 +1,60 @@
 ---
-title: 코드로 매니페스트 | Microsoft Docs
+title: Manifest to Code | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb9b02e10a2d263a39e7ae6a150e452ff8321d9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68192647"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537061"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-매니페스트 코드 도구를 Visual Studio 이미지 서비스에 대 한.imagemanifest 파일을 가져오고 래퍼 파일 또는 이미지 매니페스트의 값에서 참조 하는 것에 대 한 파일을 생성 하는 콘솔 응용 프로그램은 C++, C#, Visual Studio 용 VB 또는.vsct 파일 확장입니다. 이 도구를 직접 Visual Studio 이미지 서비스에서 요청 이미지 또는 코드는 자체 UI와 렌더링 중 하나를 처리 하지 않습니다 하는 경우 Api 통해 매니페스트 값을 전달 하는 데 사용할 수 있는 래퍼 파일을 생성 합니다.  
+Manifest to Code 도구는 Visual Studio 이미지 서비스에 대해 imagemanifest 파일을 사용 하 고 c + +, c #, VB 또는 Visual Studio 확장용 vsct 파일에서 이미지 매니페스트의 값을 참조 하기 위한 래퍼 파일을 생성 하는 콘솔 응용 프로그램입니다. 이 도구는 Visual Studio 이미지 서비스에서 직접 이미지를 요청 하는 데 사용할 수 있는 래퍼 파일을 생성 하거나 코드가 자체 UI 및 렌더링을 처리 하지 않는 경우 Api를 통해 매니페스트 값을 전달 하는 데 사용할 수 있습니다.  
   
 ## <a name="how-to-use-the-tool"></a>이 도구를 사용 하는 방법  
  **구문**  
   
- ManifestToCode /manifest:\<이미지 매니페스트 파일 > /language:\<코드 언어 > \<선택적 인수 >  
+ ManifestToCode/manifest: \<Image Manifest file> /language: \<Code Language>\<Optional Args>  
   
  **인수**  
   
-||||  
-|-|-|-|  
 |**스위치 이름**|**참고**|**필수 또는 선택**|  
-|/manifest|만들기 또는 코드 래퍼를 업데이트 하는 데 이미지 매니페스트에 대 한 경로입니다.|필수|  
-|/language|코드 래퍼를 생성 하는 언어입니다.<br /><br /> 유효한 값은 CPP를 C++, CS, CSharp, C#, VB, 또는 VSCT 값은 대/소문자 구분 합니다.<br /><br /> VSCT 언어에 대 한 옵션, /monikerClass, /classAccess, 및 /namespace 옵션이 무시 됩니다.|필수|  
-|/imageIdClass|imageIdClass 및 도구에서 만든 연결 된 파일의 이름입니다. 에 대 한는 C++ 언어 옵션에 파일이 생성 되는.h만 합니다.<br /><br /> 기본값: \<매니페스트 경로 > \MyImageIds 합니다. \<Ext l a n g >|Optional|  
-|/monikerClass|monikerClass 및 도구에서 만든 연결 된 파일의 이름입니다. 에 대 한는 C++ 언어 옵션에 파일이 생성 되는.h만 합니다. VSCT 언어에 대해 무시 됩니다.<br /><br /> 기본값: \<매니페스트 경로 > \MyMonikers 합니다. \<Ext l a n g >|Optional|  
-|/classAccess|파일의 액세스 한정자는 imageIdClass 및는 monikerClass입니다. 액세스 한정자는 해당된 언어에 사용할 수 있는지 확인 합니다. VSCT 언어 옵션에 대해 무시 됩니다.<br /><br /> 기본값: Public|Optional|  
-|/namespace|코드 래퍼에 정의 된 네임 스페이스입니다. VSCT 언어 옵션에 대해 무시 됩니다. 하거나 '.' 또는 ': '가 선택한 언어 옵션에 관계 없이 올바른 네임 스페이스 기호입니다.<br /><br /> 기본값: MyImages|Optional|  
-|/noLogo|인쇄에서 제품 및 저작권 정보를 중지이 플래그를 설정 합니다.|Optional|  
-|/?|도움말 정보를 인쇄 합니다.|Optional|  
-|/help|도움말 정보를 인쇄 합니다.|Optional|  
+|-|-|-|  
+|/manifest|코드 래퍼를 만들거나 업데이트 하는 데 사용할 이미지 매니페스트의 경로입니다.|필수|  
+|/language|코드 래퍼를 생성할 언어입니다.<br /><br /> 유효한 값: CPP, c + +, CS, CSharp, c #, VB 또는 VSCT 값은 대/소문자를 구분 하지 않습니다.<br /><br /> VSCT 언어 옵션의 경우/monikerClass,/classAccess 및/namespace 옵션이 무시 됩니다.|필수|  
+|/imageIdClass|도구에서 만든 imageIdClass 및 연결 된 파일의 이름입니다. C + + 언어 옵션의 경우 .h 파일만 생성 됩니다.<br /><br /> 기본값: \<Manifest Path> \MyImageIds.\<Lang Ext>|선택 사항|  
+|/monikerClass|도구에서 만든 monikerClass 및 연결 된 파일의 이름입니다. C + + 언어 옵션의 경우 .h 파일만 생성 됩니다. VSCT 언어에 대해서는 무시 됩니다.<br /><br /> 기본값: \<Manifest Path> \MyMonikers.\<Lang Ext>|선택 사항|  
+|/classAccess|ImageIdClass 및 monikerClass에 대 한 액세스 한정자입니다. 액세스 한정자가 지정 된 언어에 대해 유효한 지 확인 합니다. VSCT 언어 옵션에 대해서는이 옵션이 무시 됩니다.<br /><br /> 기본값: 공용|선택 사항|  
+|/namespace|코드 래퍼에 정의 된 네임 스페이스입니다. VSCT 언어 옵션에 대해서는이 옵션이 무시 됩니다. '. ' 또는 ':: '은 선택한 언어 옵션에 관계 없이 유효한 네임 스페이스 구분 기호입니다.<br /><br /> 기본값: MyImages|선택 사항|  
+|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|선택 사항|  
+|/?|도움말 정보를 인쇄 합니다.|선택 사항|  
+|/help|도움말 정보를 인쇄 합니다.|선택|  
   
  **예제**  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: CSharp  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: 내:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+- ManifestToCode/smanifest: D:\MyManifest.imagemanifest/language: c + +/namespace: My:: Namespace/imageIdClass: MyImageIds/monikerClass: MyMonikers/classAccess: friend  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: VSCT/imageIdClass: MyImageIds  
   
 ## <a name="notes"></a>참고  
   
-- 매니페스트 리소스 도구에서 생성 된 이미지 매니페스트를 사용 하 여이 도구를 사용 하는 것이 좋습니다.  
+- Manifest from Resources 도구에 의해 생성 된 이미지 매니페스트와 함께이 도구를 사용 하는 것이 좋습니다.  
   
-- 만 도구는 코드 래퍼를 생성할 기호 항목을 살펴봅니다. 이미지 매니페스트는 기호가 있으면 생성 된 코드 래퍼 비어 있게 됩니다. 이미지 또는 기호를 사용 하지 않는 이미지 매니페스트에서 이미지 집합이 없으면 코드 래퍼에서 제외 됩니다.  
+- 도구는 코드 래퍼를 생성 하는 기호 항목만 찾습니다. 이미지 매니페스트에 기호가 없으면 생성 된 코드 래퍼가 비어 있게 됩니다. 기호를 사용 하지 않는 이미지 또는 이미지 집합이 이미지 매니페스트에 있는 경우 코드 래퍼에서 제외 됩니다.  
   
 ## <a name="sample-output"></a>샘플 출력  
- **C# 래퍼**  
+ **C # 래퍼**  
   
- 한 쌍의 간단한 이미지 ID 및 이미지 모니커 클래스에 대해 C# 비슷합니다는 아래 코드:  
+ C #에 대 한 단순 이미지 ID 및 이미지 모니커 클래스 쌍은 아래 코드와 비슷합니다.  
   
 ```csharp  
 //-----------------------------------------------------------------------------  
@@ -96,9 +95,9 @@ namespace MyImages
 }  
 ```  
   
- **C++래퍼**  
+ **C + + 래퍼**  
   
- 간단한 이미지 ID 및에 대 한 이미지 모니커 클래스의 쌍을 C++ 비슷합니다는 아래 코드:  
+ C + +에 대 한 간단한 이미지 ID 및 이미지 모니커 클래스 쌍은 아래 코드와 비슷합니다.  
   
 ```cpp  
 //-----------------------------------------------------------------------------  
@@ -157,7 +156,7 @@ __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::As
   
  **Visual Basic 래퍼**  
   
- Visual Basic 비슷합니다에 대해 한 쌍의 간단한 이미지 ID 및 이미지 모니커 클래스는 아래 코드:  
+ Visual Basic에 대 한 단순 이미지 ID 및 이미지 모니커 클래스 쌍은 아래 코드와 비슷합니다.  
   
 ```vb  
 ' -----------------------------------------------------------------------------  
@@ -213,7 +212,7 @@ End Namespace
   
  **VSCT 래퍼**  
   
- .Vsct 파일에 대 한 이미지 Id의 집합은 다음과 유사 하 게 됩니다.  
+ Vsct 파일의 이미지 Id 집합은 다음과 유사 합니다.  
   
 ```xml  
 <?xml version='1.0' encoding='utf-8'?>  

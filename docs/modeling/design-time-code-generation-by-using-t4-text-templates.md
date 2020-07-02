@@ -1,7 +1,7 @@
 ---
 title: T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589632"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535995"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 
@@ -41,7 +41,7 @@ ms.locfileid: "75589632"
 
 2. 텍스트 템플릿 파일을 프로젝트에 추가 하 고 확장명이 **.tt**인 이름을 지정 합니다.
 
-    이렇게 하려면 **솔루션 탐색기**의 프로젝트 바로 가기 메뉴에서 **추가** > **새 항목**을 선택 합니다. **새 항목 추가** 대화 상자의 가운데 창에서 **텍스트 템플릿** 을 선택 합니다.
+    이렇게 하려면 **솔루션 탐색기**의 프로젝트 바로 가기 메뉴에서 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자의 가운데 창에서 **텍스트 템플릿** 을 선택 합니다.
 
     파일의 **사용자 지정 도구** 속성은 **Texttemplatingfilegenerator**입니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "75589632"
 
     [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에 템플릿을 추가한 경우 언어 특성은 "`VB`"입니다.
 
-4. 파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.:
+4. 파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.
 
    ```
    Hello, world!
@@ -75,7 +75,7 @@ ms.locfileid: "75589632"
 
 - 템플릿을 편집한 다음 다른 Visual Studio 창으로 포커스를 변경 합니다.
 
-- 템플릿을 저장합니다.
+- 템플릿을 저장하는 경우
 
 - **빌드** 메뉴에서 **모든 템플릿 변환** 을 클릭 합니다. 그러면 Visual Studio 솔루션의 모든 템플릿이 변환 됩니다.
 
@@ -117,13 +117,13 @@ ms.locfileid: "75589632"
 
    위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
 
-   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
+   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. `"C#"`은 기본 버전입니다.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>디자인 타임 T4 텍스트 템플릿 디버그
 
 텍스트 템플릿을 디버그하려면
 
-- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.:
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -219,7 +219,7 @@ ms.locfileid: "75589632"
 <#@ import namespace="System.IO" #>
 ```
 
-`assembly` 지시문을 사용 하면 Visual Studio 프로젝트의 참조 섹션과 동일한 방식으로 지정 된 어셈블리를 템플릿 코드에서 사용할 수 있습니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
+지시문을 사용 하면 `assembly` Visual Studio 프로젝트의 참조 섹션과 동일한 방식으로 지정 된 어셈블리를 템플릿 코드에서 사용할 수 있습니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
 
 예를 들어 **System.IO**를 가져온 후 다음을 작성할 수 있습니다.
 
@@ -272,7 +272,7 @@ ms.locfileid: "75589632"
 
 ### <a name="getting-data-from-visual-studio"></a>Visual Studio에서 데이터 가져오기
 
-Visual Studio에서 제공 하는 서비스를 사용 하려면 `hostSpecific` 특성을 설정 하 고 `EnvDTE` 어셈블리를 로드 합니다. `GetCOMService()` 확장 메서드를 포함 하는 `Microsoft.VisualStudio.TextTemplating`를 가져옵니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.:
+Visual Studio에서 제공 하는 서비스를 사용 하려면 특성을 설정 하 `hostSpecific` 고 어셈블리를 로드 `EnvDTE` 합니다. 가져오기 `Microsoft.VisualStudio.TextTemplating` - `GetCOMService()` 확장 메서드를 포함 합니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -290,7 +290,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > 텍스트 템플릿은 자체 앱 도메인에서 실행되며 마샬링을 통해 서비스에 액세스합니다. 이 경우에는 GetCOMService()가 GetService()보다 안정적입니다.
 
-## <a name="Regenerating"></a>자동으로 코드 다시 생성
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>자동으로 코드 다시 생성
 
 일반적으로 Visual Studio 솔루션의 여러 파일은 하나의 입력 모델을 사용 하 여 생성 됩니다. 각 파일은 자체 템플릿에서 생성되지만 모든 템플릿은 같은 모델을 참조합니다.
 
@@ -299,7 +299,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 Visual Studio 모델링 SDK를 설치한 경우 빌드를 수행할 때마다 모든 템플릿이 자동으로 변환 되도록 할 수 있습니다. 이렇게 하려면 프로젝트 파일(.csproj 또는 .vbproj)을 텍스트 편집기에서 편집하여 파일 끝부분의 다른 `<import>` 문 뒤에 다음 줄을 추가합니다.
 
 > [!NOTE]
-> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
+> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)을 참조하세요.
 
 ::: moniker range="vs-2017"
 
@@ -325,7 +325,7 @@ Visual Studio 모델링 SDK를 설치한 경우 빌드를 수행할 때마다 �
 
 ::: moniker-end
 
-자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)합니다.
+자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)을 참조 하세요.
 
 ## <a name="error-reporting"></a>오류 보고
 
@@ -336,13 +336,13 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>기존 파일을 템플릿으로 변환
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>기존 파일을 템플릿으로 변환
 
-템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 파일 등의 프로토타입으로 일반 파일을 만든 다음, 결과 파일을 변경 하는 생성 코드를 점차적으로 도입 합니다.
+템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 파일 등의 프로토타입으로 일반 파일을 만든 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 다음, 결과 파일을 변경 하는 생성 코드를 점차적으로 도입 합니다.
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
 
-1. Visual Studio 프로젝트에 `.cs`, `.vb`또는 `.resx` 파일과 같이 생성 하려는 형식의 파일을 추가 합니다.
+1. Visual Studio 프로젝트에, 또는 파일과 같이 생성 하려는 형식의 파일을 추가 `.cs` `.vb` `.resx` 합니다.
 
 2. 새 파일을 테스트하여 작동하는지 확인합니다.
 
@@ -388,6 +388,6 @@ Warning("A warning message");
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [T4 텍스트 템플릿 작성 지침](../modeling/guidelines-for-writing-t4-text-templates.md)
