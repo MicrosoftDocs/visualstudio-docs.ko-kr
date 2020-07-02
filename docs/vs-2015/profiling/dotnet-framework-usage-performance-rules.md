@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9c976560b39fd8a9146733d78cd3a094ed3b118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: afae57f3223d24a4524f89f1669883de6ef1dd18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68202458"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532810"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 사용 성능 규칙
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 .NET Framework 사용 범주의 성능 규칙은 최적화할 수 있는 특정 방법을 확인하고 성능 문제가 있는지 조사할 수 있는 가비지 수집 및 잠금 경합과 같은 더 일반적인 사용 패턴도 확인합니다.  
   
-|||  
+|규칙|설명|  
 |-|-|  
 |[DA0001: 연결에 StringBuilder 사용](../profiling/da0001-use-stringbuilder-for-concatenations.md)|<xref:System.String.Concat%28System.String%2CSystem.String%29?displayProperty=fullName> 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 여러 세그먼트에서 문자열을 구성할 때 <xref:System.Text.StringBuilder> 클래스를 사용해 보세요.|  
 |[DA0005: GC2 수집이 빈번합니다.](../profiling/da0005-frequent-gc2-collections.md)|비교적 많은 .NET 메모리 개체가 2세대 가비지 수집에서 회수됩니다. 너무 많은 단기 유지 개체가 1세대 수집에서 생존하면 메모리 관리 비용이 쉽게 과도해질 수 있습니다.|  
@@ -35,6 +35,6 @@ ms.locfileid: "68202458"
 |[DA0021: Gen 1 가비지 수집의 비율이 높습니다.](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|비교적 많은 .NET 메모리 개체가 1세대 가비지 수집에서 회수됩니다. 너무 많은 단기 유지 개체가 0세대 수집에서 생존하면 메모리 관리 비용이 쉽게 과도해질 수 있습니다.|  
 |[DA0022: Gen 2 가비지 수집의 비율이 높습니다.](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|많은 .NET 메모리 개체가 2세대 가비지 수집에서 회수됩니다. 너무 많은 단기 유지 개체가 1세대 수집에서 생존하면 메모리 관리 비용이 쉽게 과도해질 수 있습니다. 잠금 경합 비율이 규칙 DA0005의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|  
 |[DA0023: GC CPU 시간이 깁니다.](../profiling/da0023-high-gc-cpu-time.md)|프로파일링 중에 수집되는 시스템 성능 데이터가 가비지 수집에 걸린 시간이 총 애플리케이션 처리 시간에 비해 크다는 것을 나타냅니다.|  
-|[DA0024: GC CPU 시간이 너무 깁니다.](../profiling/da0024-excessive-gc-cpu-time.md)|프로파일링 중에 수집되는 시스템 성능 데이터가 가비지 수집에 걸린 시간이 총 애플리케이션 처리 시간에 비해 지나치게 크다는 것을 나타냅니다. 가비지 수집에 걸린 시간이 규칙 DA0023의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|  
+|[DA0024: 과도 한 GC CPU 시간](../profiling/da0024-excessive-gc-cpu-time.md)|프로파일링 중에 수집되는 시스템 성능 데이터가 가비지 수집에 걸린 시간이 총 애플리케이션 처리 시간에 비해 지나치게 크다는 것을 나타냅니다. 가비지 수집에 걸린 시간이 규칙 DA0023의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|  
 |[DA0038: 잠금 경합의 비율이 높습니다.](../profiling/da0038-high-rate-of-lock-contentions.md)|프로파일링 데이터와 함께 수집되는 시스템 성능 데이터가 애플리케이션 실행 중에 발생한 잠금 경합의 비율이 상당히 높다는 것을 나타냅니다. 동시성 프로파일링 방법을 통해 다시 프로파일링하여 경합의 원인을 찾아 보세요.|  
 |[DA0039: 잠금 경합의 비율이 매우 높습니다.](../profiling/da0039-very-high-rate-of-lock-contentions.md)|프로파일링 데이터와 함께 수집되는 시스템 성능 데이터가 애플리케이션 실행 중에 발생한 잠금 경합의 비율이 지나치게 높다는 것을 나타냅니다. 동시성 프로파일링 방법을 통해 다시 프로파일링하여 경합의 원인을 찾아 보세요. 잠금 경합 비율이 규칙 DA0038의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|

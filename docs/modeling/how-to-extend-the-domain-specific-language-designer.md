@@ -1,18 +1,18 @@
 ---
 title: '방법: 도메인별 언어 디자이너 확장'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605602"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532588"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
 
@@ -68,7 +68,7 @@ DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 �
 
 주 Visual Studio 및 다른 컴퓨터에 확장을 배포 하려면 다음 단계를 수행 합니다.
 
-1. Vsix 프로젝트의 vsix 프로젝트에서 vsix 설치 파일을 찾아 \* \\ * \\ 합니다.
+1. Vsix 프로젝트의 bin에서 vsix 설치 파일을 찾습니다 \\ * \\ \* .
 
 2. 이 파일을 대상 컴퓨터에 복사한 다음 Windows 탐색기 (또는 파일 탐색기)에서 해당 파일을 두 번 클릭 합니다.
 
@@ -84,7 +84,7 @@ DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 �
 
 바로 가기 메뉴 명령이 DSL 디자이너 화면 또는 DSL 탐색기 창에 표시 되도록 하려면 다음과 유사한 클래스를 작성 합니다.
 
-클래스는 `ICommandExtension`를 구현 해야 하며 `DslDefinitionModelCommandExtension` 특성이 있어야 합니다.
+클래스는를 구현 해야 `ICommandExtension` 하며 특성을 포함 해야 합니다 `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

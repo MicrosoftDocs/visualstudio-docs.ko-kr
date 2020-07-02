@@ -1,30 +1,30 @@
 ---
 title: '방법: 도메인별 언어를 새 버전으로 마이그레이션'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747548"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532613"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>방법: 도메인별 언어를 새 버전으로 마이그레이션
-도메인 특정 언어를 정의 하 고 사용 하는 프로젝트는 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]와 함께 배포 된 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 버전에서 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 수 있도록 마이그레이션할 수 있습니다.
+도메인 특정 언어를 정의 하 고 사용 하는 프로젝트는 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 와 함께 배포 된 버전에서로 마이그레이션할 수 있습니다 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
 
- 마이그레이션 도구는 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]의 일부로 제공 됩니다. 도구는 DSL 도구를 사용 하거나 정의 하는 Visual Studio 프로젝트 및 솔루션을 변환 합니다.
+ 마이그레이션 도구는의 일부로 제공 됩니다 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] . 도구는 DSL 도구를 사용 하거나 정의 하는 Visual Studio 프로젝트 및 솔루션을 변환 합니다.
 
  마이그레이션 도구는 명시적으로 실행 해야 합니다. Visual Studio에서 솔루션을 열 때 자동으로 시작 되지 않습니다. 도구 및 자세한 지침 문서는 다음 경로에서 찾을 수 있습니다.
 
  **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>DSL 프로젝트를 마이그레이션하기 전에
- 마이그레이션 도구는 Visual Studio 프로젝트 파일 ( **.csproj**) 및 솔루션 파일 ( **.sln**)을 수정 합니다.
+ 마이그레이션 도구는 Visual Studio 프로젝트 파일 (**.csproj**) 및 솔루션 파일 (**.sln**)을 수정 합니다.
 
 #### <a name="to-prepare-projects-for-migration"></a>마이그레이션을 위해 프로젝트를 준비 합니다.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72747548"
 
    1. **변환**을 클릭 합니다.
 
-        각 프로젝트 파일이 변환 되기 전에 _프로젝트_ **.csproj** 복사본이**vs2008** _로 저장 됩니다._
+        각 프로젝트 파일이 변환 되기 전에 _프로젝트_**.csproj** 복사본이**vs2008** _로 저장 됩니다._
 
-        각 솔루션의 복사본 **. sln** 은**vs2008** _로 저장 됩니다._
+        각 솔루션의 복사본 _solution_**. sln** 은**vs2008** _로 저장 됩니다._
 
    2. 보고 된 실패 한 변환을 조사 합니다.
 
@@ -84,6 +84,6 @@ ms.locfileid: "72747548"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [관련 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586954"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532043"
 ---
 # <a name="memory-usage-without-debugging"></a>디버그하지 않는 경우의 메모리 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "82586954"
   
   스냅샷 뷰 그림에서 번호가 있는 항목은 메모리 사용량 보고서 뷰를 여는 링크입니다.  
   
-|||  
+|이미지|설명|  
 |-|-|  
 |![1단계](../profiling/media/procguid-1.png "ProcGuid_1")|링크 텍스트는 스냅샷을 만들 때 메모리의 총 바이트 수를 보여 줍니다.<br /><br /> 이 링크를 선택하면 유형 인스턴스의 총 크기별로 정렬된 스냅샷 정보 보고서가 표시됩니다.|  
 |![2단계](../profiling/media/procguid-2.png "ProcGuid_2")|링크 텍스트는 스냅샷을 만들었을 때의 총 메모리 개체 수를 보여 줍니다.<br /><br /> 이 링크를 선택하면 유형 인스턴스의 개수별로 정렬된 스냅샷 정보 보고서가 표시됩니다.|  
@@ -135,10 +135,10 @@ ms.locfileid: "82586954"
   
  ![관리되는 힙 트리](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|Name|설명|  
 |-|-|  
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|  
-|**Count**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
+|**개수**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
 |**크기(바이트)**|유형의 경우 인스턴스에 포함된 개체 크기를 제외한 메모리 스냅샷 유형의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 개체 크기입니다.|  
 |**포함 크기(바이트)**|포함된 개체 크기를 비롯한 유형의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
@@ -154,7 +154,7 @@ ms.locfileid: "82586954"
   
  ![인스턴스에 대한 참조되는 개체 트리](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Name|설명|  
 |-|-|  
 |**개체 형식/인스턴스**|유형 이름 또는 개체 인스턴스입니다.|  
 |**크기(바이트)**|유형의 경우 유형에 포함된 개체 크기를 제외한 유형의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 개체에 포함된 개체 크기를 제외한 개체 크기입니다.|  
@@ -176,7 +176,7 @@ ms.locfileid: "82586954"
   
  그림에서 **개수**, **크기(바이트)** 및 **포함 크기(바이트)** 열은 축소되어 있습니다.  
   
-|||  
+|Name|설명|  
 |-|-|  
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|  
 |**개수**|기본 스냅샷에 있는 유형의 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|  
@@ -196,7 +196,7 @@ ms.locfileid: "82586954"
   
  ![인스턴스에 대한 참조되는 개체 트리](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Name|설명|  
 |-|-|  
 |**개체 형식/인스턴스**|유형 이름 또는 개체 인스턴스입니다.|  
 |**크기(바이트)**|인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷의 개체 크기입니다.<br /><br /> 유형의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷에 있는 유형의 총 인스턴스 크기입니다.|  

@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850490"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533070"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>모델링 다이어그램의 제스처 처리기 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 ## <a name="creating-a-gesture-handler"></a>제스처 처리기 만들기
  UML 디자이너에 대한 제스처 처리기를 정의하려면 제스처 처리기의 동작을 정의하는 클래스를 만들고 해당 클래스를 VSIX(Visual Studio Integration Extension)에 포함해야 합니다. VSIX는 처리기를 설치할 수 있는 컨테이너로 사용됩니다. 제스처 처리기를 정의하는 두 가지 대체 방법은 다음과 같습니다.
 
-- **프로젝트 템플릿을 사용 하 여 자체 VSIX에서 제스처 처리기를 만듭니다.** 이는 더 빠른 방법입니다. 처리기를 유효성 검사 확장, 사용자 지정 도구 상자 또는 메뉴 명령과 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다.
+- **프로젝트 템플릿을 사용하여 자체 VSIX에서 제스처 처리기를 만듭니다.** 이는 더 빠른 방법입니다. 처리기를 유효성 검사 확장, 사용자 지정 도구 상자 또는 메뉴 명령과 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다.
 
-- **별도의 제스처 처리기 및 VSIX 프로젝트를 만듭니다.** 여러 확장 형식을 같은 VSIX로 결합하려면 이 방법을 사용합니다. 예를 들어 제스처 처리기에서 모델이 특정 제약 조건을 따르도록 요구하면 유효성 검사 방법과 동일한 VSIX에 해당 제스처 처리기를 포함할 수 있습니다.
+- **개별 제스처 처리기 및 VSIX 프로젝트를 만듭니다.** 여러 확장 형식을 같은 VSIX로 결합하려면 이 방법을 사용합니다. 예를 들어 제스처 처리기에서 모델이 특정 제약 조건을 따르도록 요구하면 유효성 검사 방법과 동일한 VSIX에 해당 제스처 처리기를 포함할 수 있습니다.
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>자체 VSIX에서 제스처 처리기를 만들려면
 
@@ -48,7 +48,7 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
 3. F5 키를 눌러 제스처 처리기를 테스트합니다. 자세한 내용은 [제스처 처리기 실행](#Executing)을 참조하세요.
 
-4. 프로젝트에서 작성 한 **\*\*\\\\파일 bin** 을 복사 하 여 다른 컴퓨터에 제스처 처리기를 설치 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.
+4. 프로젝트에서 작성 한 파일 **bin \\ \* \\ \* . vsix** 를 복사 하 여 다른 컴퓨터에 제스처 처리기를 설치 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.
 
    다음은 대체 절차입니다.
 
@@ -208,7 +208,7 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
 2. 솔루션에 VSIX 프로젝트가 없으면 VSIX 프로젝트를 만듭니다.
 
-    1. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가**, **새 프로젝트**를 선택합니다.
+    1. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가**, **새 프로젝트**를 차례로 선택 합니다.
 
     2. **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **확장성**을 선택합니다. 가운데 열에서 **VSIX 프로젝트**를 선택합니다.
 
@@ -224,13 +224,13 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
     3. **자산** 탭에서 **새로 만들기**를 선택하고 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **MEF 구성 요소**
+         **유형**  =  **MEF 구성 요소**
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *클래스 라이브러리 프로젝트*
+         **프로젝트**  =  *클래스 라이브러리 프로젝트*
 
-## <a name="Executing"></a>제스처 처리기 실행
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>제스처 처리기 실행
  테스트를 위해 디버그 모드에서 제스처 처리기를 실행합니다.
 
 #### <a name="to-test-the-gesture-handler"></a>제스처 처리기를 테스트하려면
@@ -243,7 +243,7 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
    - 프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.
 
-   - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 일반적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름 인지 확인 합니다.
+   - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
 - 이 형식의 대상 및 삭제된 요소에 대해 정의된 기본 제공 기능이 없습니다.
 
-## <a name="Implementing"></a>제스처 처리기 구현
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>제스처 처리기 구현
 
 ### <a name="the-gesture-handler-methods"></a>제스처 처리기 메서드
  제스처 처리기 클래스는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>을 구현하고 내보냅니다. 정의해야 하는 메서드는 다음과 같습니다.
 
-|||
+|서명|설명|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|이 대상에서 삭제될 `true` 에서 참조되는 소스 요소를 허용하려면 `dragEvent` 를 반환합니다.<br /><br /> 이 메서드는 모델을 변경하면 안 됩니다. 사용자가 마우스를 이동할 때 화살표 상태를 결정하는 데 사용되므로 빠르게 작동해야 합니다.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|`dragEvent`에서 참조되는 소스 개체 및 대상에 따라 모델을 업데이트합니다.<br /><br /> 사용자가 마우스를 끌고 나서 놓을 때 호출됩니다.|
@@ -282,7 +282,7 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
 - `ShapeElement target`. 사용자가 항목을 끌어온 모양 또는 다이어그램.
 
-    `ShapeElement`는 UML 모델링 도구의 기반이 되는 구현의 클래스입니다. UML 모델 및 다이어그램이 불일치 상태로 전환되는 위험을 줄이려면 이 클래스의 메서드를 직접 사용하지 않는 것이 좋습니다. 대신 `IShape`에서 요소를 래핑하고 [다이어그램에 UML 모델 표시](../modeling/display-a-uml-model-on-diagrams.md)에 설명 된 메서드를 사용 합니다.
+    `ShapeElement`는 UML 모델링 도구의 기반이 되는 구현의 클래스입니다. UML 모델 및 다이어그램이 불일치 상태로 전환되는 위험을 줄이려면 이 클래스의 메서드를 직접 사용하지 않는 것이 좋습니다. 대신에서 요소를 래핑하고 `IShape` [다이어그램에 UML 모델 표시](../modeling/display-a-uml-model-on-diagrams.md)에 설명 된 메서드를 사용 합니다.
 
   - `IShape`를 가져오려면
 
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  자세한 내용은 [UML 모델 탐색](../modeling/navigate-the-uml-model.md)을 참조 하세요.
 
-## <a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
  사용 중인 컴퓨터 및 다른 컴퓨터에서 모두 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장을 설치할 수 있습니다.
 
 #### <a name="to-install-an-extension"></a>확장을 설치하려면
@@ -357,11 +357,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. **솔루션 탐색기**의 VSIX 프로젝트 바로 가기 메뉴에서 **Windows 탐색기에서 폴더 열기**를 선택합니다.
 
-    2. 파일 **bin\\\*\\** _프로젝트_**vsix** 를 찾습니다.
+    2. 파일 ** \\ \* bin \\ **_을 찾습니다_**. vsix**
 
 2. 확장을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 
-     대상 컴퓨터에는 **source.extension.vsixmanifest**에서 지정한 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 버전 중 하나가 있어야 합니다.
+     대상 컴퓨터에는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **source.extension.vsixmanifest**에서 지정한 버전 중 하나가 있어야 합니다.
 
 3. 대상 컴퓨터에서 **.vsix** 파일을 엽니다.
 
@@ -379,9 +379,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \extensions**
 
-## <a name="DragExample"></a> 예
+## <a name="example"></a><a name="DragExample"></a> 예
  다음 샘플에서는 구성 요소 다이어그램에서 끌어온 구성 요소의 파트 및 포트를 기반으로 시퀀스 다이어그램에서 수명선을 만드는 방법을 보여 줍니다.
 
  테스트하려면 F5 키를 누릅니다. Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 UML 모델을 열고 구성 요소 다이어그램에 구성 요소를 만듭니다. 이 구성 요소에 몇몇 인터페이스 및 내부 구성 요소 파트를 추가합니다. 인터페이스 및 파트를 선택합니다. 그다음에 인터페이스 및 파트를 시퀀스 다이어그램으로 끕니다. (구성 요소 다이어그램에서 시퀀스 다이어그램에 대 한 탭까지 끌어 오고 차례로 시퀀스 다이어그램으로 이동 합니다.) 각 인터페이스와 파트에 대 한 수명선이 표시 됩니다.
@@ -517,7 +517,7 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
 ```
 
- `GetModelElementsFromDragEvent()` 코드는 [IDataObject에서 UML 모델 요소 가져오기](../modeling/get-uml-model-elements-from-idataobject.md)에 설명 되어 있습니다.
+ 의 코드는 `GetModelElementsFromDragEvent()` [IDATAOBJECT에서 UML 모델 요소 가져오기](../modeling/get-uml-model-elements-from-idataobject.md)에 설명 되어 있습니다.
 
 ## <a name="see-also"></a>참고 항목
  [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) uml [API를 사용 하 여 프로그래밍 하는](../modeling/programming-with-the-uml-api.md) [uml 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)

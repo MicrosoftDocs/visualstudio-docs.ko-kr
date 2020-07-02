@@ -27,8 +27,8 @@ ms.locfileid: "85532277"
 |-|-|-|
 |색상|이 연결선의 색입니다.|검정|
 |대시 스타일|이 연결선의 선 대시 스타일입니다 (Solid, 대시, 점, 일점 Dot, DashDotDot 또는 사용자 지정).|단색|
-|원본 끝 스타일|이 연결선의 소스 끝 스타일 (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond 또는 None)입니다.|None|
-|대상 끝 스타일|이 연결선의 대상 끝 스타일 (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond 또는 None)입니다.|None|
+|원본 끝 스타일|이 연결선의 소스 끝 스타일 (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond 또는 None)입니다.|없음|
+|대상 끝 스타일|이 연결선의 대상 끝 스타일 (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond 또는 None)입니다.|없음|
 |텍스트 색|이 커넥터와 연결 된 텍스트 데코레이터에 사용 되는 색입니다.|검정|
 |Thickness|이 연결선의 선 두께 (인치)입니다.|0.03125|
 |액세스 한정자|클래스의 액세스 수준 ( `public` 또는 `internal` )입니다.|공용|
@@ -40,7 +40,7 @@ ms.locfileid: "85532277"
 |Name|이 커넥터의 이름입니다.|현재 이름|
 |네임스페이스|이 커넥터와 관련 된 네임 스페이스입니다.|현재 네임 스페이스|
 |도구 설명 형식|도구 설명을 정의 하는 방법 (고정, 변수 또는 없음)입니다. 고정 된 경우 `Fixed Tooltip Text` 속성 값이 도구 설명으로 사용 되 고, 변수 이면 도구 설명이 사용자 지정 코드에 정의 됩니다.|\<none>|
-|메모|이 커넥터와 연결 된 비공식 메모입니다.|\<none>|
+|참고|이 커넥터와 연결 된 비공식 메모입니다.|\<none>|
 |라우팅 스타일|커넥터를 라우팅하는 데 사용 되는 스타일입니다. `Rectilinear`커넥터는 필요에 따라 직각 회전을 수행 `Straight` 합니다. 연결선은 그렇지 않습니다.|직각선|
 |노출 된 색을 속성으로<br /><br /> 대시 스타일을 속성으로 노출<br /><br /> 노출 된 두께 (속성)<br /><br /> 텍스트 색을 노출 합니다.|이면 `True` 사용자가 셰이프의 설명 된 속성을 설정할 수 있습니다. 이를 설정 하려면 셰이프 정의를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 클릭 합니다.|False|
 |설명|생성 된 디자이너를 문서화 하는 데 사용 됩니다.|\<none>|
