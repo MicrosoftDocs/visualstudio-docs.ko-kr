@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ea4f9dc11d2cbb3100ca6e2e0b3177b1acec923a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 233e4366befd2a5a0d5690b14198ac13e2fcc957
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173576"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546486"
 ---
 # <a name="ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute"></a>CA2139: 투명 메서드는 HandleProcessCorruptingExceptions 특성을 사용할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|TransparentMethodsMustNotHandleProcessCorruptingExceptions|
 |CheckId|CA2139|

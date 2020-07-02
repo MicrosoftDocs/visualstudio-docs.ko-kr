@@ -5,19 +5,19 @@ description: 날짜별로 정렬된 Visual Studio의 릴리스 버전 및 빌드
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 06/25/2020
+ms.date: 06/30/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 4d56417a29bc374e0ceaf3e9452cf5339d9ca02b
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 08190b7c2109f8a5344264786b5c1e3906c4c7b5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419239"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770921"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -29,6 +29,7 @@ ms.locfileid: "85419239"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.3 | Release | 2020년 6월 30일 | 16.6.30225.117 |
 | 16.7.0 | 미리 보기 3.1 | 2020년 6월 25일 | 16.7.30223.230 |
 | 16.7.0 | Preview 3 | 2020년 6월 23일 | 16.7.30218.91 |
 | 16.0.15 | Release | 2020년 6월 9일 | 16.0.28803.753 |

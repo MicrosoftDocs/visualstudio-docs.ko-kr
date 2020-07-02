@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 디버그 | Microsoft Docs
+title: 애플리케이션 디버깅 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b689a3be22c9fec775cf42b9d26393a886174daf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 747f96a31ace1267512b9327a0d6aaaf07e02631
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197515"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545589"
 ---
 # <a name="debugging-applications"></a>애플리케이션 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "68197515"
   
 ## <a name="debugging-for-different-types-of-applications"></a>다양한 유형의 애플리케이션에 대한 디버그  
   
-|||  
+|제목|설명|  
 |-|-|  
 |[Windows 스토어 및 Windows 유니버설 앱 디버그](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Windows 스토어 앱과 Windows 유니버설 앱을 디버그하는 방법을 설명합니다.|  
 |[관리 코드 디버그](../debugger/debugging-managed-code.md)|관리 코드(Visual C#, Visual Basic 및 F3)를 디버그하는 방법을 설명합니다.|  

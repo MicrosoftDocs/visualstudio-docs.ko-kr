@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e85ac61e404ac9bc1afb9459716c2395233c5080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07f19cb9d4aa2ed118898a1816092479cbd16565
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607400"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545706"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: 클래스 결합을 지나치게 많이 사용하지 마십시오.
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: 클래스를 지나치게 많이 결합하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
@@ -46,5 +46,5 @@ ms.locfileid: "72607400"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  형식 또는 메서드가 다른 형식에 대 한 많은 종속성에도 불구 하 고 계속 유지 관리 되는 것으로 간주 되는 경우이 경고를 제외 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [관리 코드의 복잡성 및 유지 관리 용이성을 측정 하는](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) [유지 관리 경고](../code-quality/maintainability-warnings.md)

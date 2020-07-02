@@ -1,7 +1,7 @@
 ---
-title: 셰이프 복사 및 붙여넣기 Visio 문서에서 프로그래밍 방식으로
+title: 프로그래밍 방식으로 Visio 문서에서 셰이프 복사 및 붙여넣기
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074a276fe37ef713d38078f60c4bee95145c4d8b
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 05b0d20ba7bd560fc60090bba84b78691bb3e753
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402219"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546096"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>방법: 프로그래밍 방식으로 복사 하 고 Visio 문서에서 셰이프를 붙여 넣습니다.
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>방법: 프로그래밍 방식으로 Visio 문서에서 셰이프 복사 및 붙여넣기
   문서 한 페이지의 셰이프를 프로그래밍 방식으로 복사하고 동일한 문서의 새 페이지에 붙여넣을 수 있습니다. 기본 위치(활성 창의 가운데)에 붙여넣을 수도 있고 아니면 원래 페이지의 동일한 좌표 위치에 붙여넣을 수도 있습니다.
 
 ## <a name="copy-and-paste-shapes"></a>셰이프 복사 및 붙여넣기
@@ -36,7 +36,7 @@ ms.locfileid: "66402219"
 ## <a name="copy-and-paste-shapes-with-the-same-positions"></a>동일한 위치를 사용 하 여 셰이프 복사 및 붙여넣기
  개체 모델에 대한 세부 정보는 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle), [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval), [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy), [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) 메서드 및 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](/office/vba/api/Visio.viscutcopypastecodes) 플래그를 참조하세요.
 
- 붙여넣은 정보의 형식을 제어 하 고 (선택 사항) 원본 파일 (예: Microsoft Office Word 문서)에 대 한 링크를 설정 해야 할 경우 PasteSpecial 메서드를 사용 합니다.
+ 붙여넣은 정보의 형식을 제어 하 고 선택적으로 소스 파일에 대 한 링크를 설정 해야 하는 경우 (예: Microsoft Office Word 문서) PasteSpecial 메서드를 사용 합니다.
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>셰이프 및 셰이프 위치를 다른 페이지에 복사하려면
 
@@ -45,7 +45,7 @@ ms.locfileid: "66402219"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Visio 솔루션](../vsto/visio-solutions.md)
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 - [Visio 셰이프 작업](../vsto/working-with-visio-shapes.md)

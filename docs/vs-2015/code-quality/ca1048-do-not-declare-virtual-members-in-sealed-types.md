@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603322"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546798"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: 가상 멤버를 sealed 형식으로 선언하지 마십시오.
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: 가상 멤버를 sealed 형식으로 선언하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
@@ -33,12 +33,12 @@ ms.locfileid: "72603322"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- Public 형식은 sealed 이며 최종이 아닌 `virtual` (Visual Basic의 `Overridable`) 인 메서드를 선언 합니다. 이 규칙은이 패턴을 따라야 하는 대리자 형식에 대 한 위반을 보고 하지 않습니다.
+ Public 형식은 sealed 이며 `virtual` 최종이 아닌 (Visual Basic) 인 메서드를 선언 합니다 `Overridable` . 이 규칙은이 패턴을 따라야 하는 대리자 형식에 대 한 위반을 보고 하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
  상속 형식이 가상 메서드의 구현을 재정의할 수 있도록 하기 위해 형식은 메서드를 가상으로 선언합니다. 정의에 따라 sealed 형식에서 상속할 수 없습니다. sealed 형식의 가상 메서드는 의미가 없습니다.
 
- Visual Basic .NET 및 C# 컴파일러는 형식이이 규칙을 위반 하는 것을 허용 하지 않습니다.
+ Visual Basic .NET 및 c # 컴파일러에서는 형식이이 규칙을 위반 하는 것을 허용 하지 않습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 메서드를 비가상으로 설정 하거나 형식을 상속 가능 하 게 설정 합니다.

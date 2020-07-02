@@ -7,16 +7,16 @@ helpviewer_keywords:
 - run code analysis
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: mavasani
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 584ddc9953b6f1522d12722fdd9a24d71e4e1538
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 874d95b65b99af4b5a6b00d45101236f62db3df1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371835"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769365"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>방법: 관리 코드에 대해 수동으로 코드 분석 실행 (Visual Studio 2019 버전 16.5 이상이 필요 함)
 기본적으로 .NET Compiler Platform ("Roslyn") 코드 분석기는 실시간 분석을 수행 하 고 빌드 중에도 입력할 때 c # 또는 Visual Basic 코드를 분석 합니다. 따라서 일반적으로 코드 분석을 수동으로 트리거할 필요가 없습니다. 그러나 코드 분석을 수동으로 트리거할 수 있는 몇 가지 시나리오가 있습니다.

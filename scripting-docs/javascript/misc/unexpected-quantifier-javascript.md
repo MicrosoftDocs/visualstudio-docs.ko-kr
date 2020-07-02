@@ -3,7 +3,7 @@ title: 예기치 않은 수량자 (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5018
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2070ec6ad01eb62c6be9b6b9acfc91cba7bc863d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572533"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815333"
 ---
 # <a name="unexpected-quantifier-javascript"></a>예기치 않은 수량자입니다.(JavaScript)
 정규식 검색 패턴을 작성할 때 잘못 된 반복 요인이 있는 pattern 요소를 만들었습니다. 예를 들어 패턴  
@@ -39,7 +39,7 @@ ms.locfileid: "72572533"
 |*|0 개 이상의 반복|  
 |+|하나 이상의 반복|  
 |?|0 회 또는 1 회 반복|  
-|{n}|n 회 반복|  
+|개의|n 회 반복|  
 |{n,}|n 개 이상의 반복|  
 |{n, m}|N 개에서 m 회 반복 (포함)|  
   

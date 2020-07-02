@@ -1,8 +1,8 @@
 ---
-title: 폴더 요소(비주얼 스튜디오 프로젝트 템플릿) | 마이크로 소프트 문서
+title: Folder 요소 (Visual Studio 프로젝트 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
@@ -13,17 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb256b8be0dd9ce68f193750bf3ff5a383d5f073
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711460"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769586"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>폴더 요소(Visual Studio 프로젝트 템플릿)
-프로젝트에 추가될 폴더를 지정합니다.
+# <a name="folder-element-visual-studio-project-templates"></a>Folder 요소 (Visual Studio 프로젝트 템플릿)
+프로젝트에 추가 될 폴더를 지정 합니다.
 
- \<VS템플릿 \<> 템플릿콘텐츠 \< \<> 프로젝트> 폴더>
+ \<VSTemplate> \<TemplateContent>
+ \<Project>
+ \<Folder>
 
 ## <a name="syntax"></a>구문
 
@@ -39,30 +41,30 @@ ms.locfileid: "80711460"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Name`|필수 특성입니다.<br /><br /> 프로젝트 폴더의 이름입니다.|
-|`TargetFolderName`|선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 폴더를 지정합니다. 이 특성은 매개 변수 대체를 사용하여 폴더 이름을 만들거나 *.zip* 파일에서 직접 사용할 수 없는 국제 문자열로 폴더이름을 지정하는 데 유용합니다.|
+|`TargetFolderName`|선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 폴더에 지정할 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여 폴더 이름을 만들거나 *.zip* 파일에서 직접 사용할 수 없는 국제 문자열로 폴더 이름을 지정 하는 데 유용 합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|`Folder`|프로젝트에 추가할 폴더를 지정합니다. `Folder`요소에는 자식 `Folder` 요소가 포함될 수 있습니다.|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|프로젝트에 추가할 파일을 지정합니다.|
+|`Folder`|프로젝트에 추가할 폴더를 지정 합니다. `Folder`요소에는 자식 요소가 포함 될 수 있습니다 `Folder` .|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|프로젝트에 추가할 파일을 지정 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[프로젝트](../extensibility/project-element-visual-studio-templates.md)|템플릿의 선택적 자식 [요소콘텐츠](../extensibility/templatecontent-element-visual-studio-templates.md).|
+|[프로젝트](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)의 선택적 자식 요소입니다.|
 
 ## <a name="remarks"></a>설명
- `Folder`은 의 선택적 `Project`자식입니다.
+ `Folder`은의 선택적 자식 요소입니다 `Project` .
 
- 다음 방법 중 한 가지를 사용하여 프로젝트 항목을 템플릿의 폴더로 구성할 수 있습니다.
+ 다음 방법 중 하나를 사용 하 여 프로젝트 항목을 템플릿에서 폴더로 구성할 수 있습니다.
 
-- 템플릿 *.zip* 파일에 폴더를 포함하고 요소가 없는 `ProjectItem` `Folder` 요소의 파일에 대한 경로를 지정하여 *.vstemplate* 파일의 프로젝트에 추가합니다. 이것이 권장된 방법입니다. 다음은 그 예입니다.
+- 템플릿 *.zip* 파일에 폴더를 포함 하 고 요소 없이 요소에 파일의 경로를 지정 하 여 *.vstemplate* 파일의 프로젝트에 추가 합니다. `ProjectItem` `Folder` 이것이 권장된 방법입니다. 예를 들면 다음과 같습니다.
 
      `...`
 
@@ -72,7 +74,7 @@ ms.locfileid: "80711460"
 
      `...`
 
-- 템플릿 *.zip* 파일에 폴더를 포함하고 요소가 있는 `Folder` *.vstemplate* 파일의 프로젝트에 추가합니다. 다음은 그 예입니다.
+- 템플릿 *.zip* 파일에 폴더를 포함 하 고 *.vstemplate* 파일의 요소를 사용 하 여 프로젝트에 추가 합니다. `Folder` 예를 들면 다음과 같습니다.
 
      `...`
 
@@ -86,7 +88,7 @@ ms.locfileid: "80711460"
 
      `...`
 
-- 템플릿 *.zip* 파일에 폴더를 포함하지 말고 요소의 특성을 `TargetFileName` 사용하여 `ProjectItem` 폴더를 추가하십시오. 다음은 그 예입니다.
+- 템플릿 *.zip* 파일에 폴더를 포함 하지 않고 요소의 특성을 사용 하 여 폴더를 추가 `TargetFileName` `ProjectItem` 합니다. 예를 들어:
 
      `...`
 
@@ -97,7 +99,7 @@ ms.locfileid: "80711460"
      `...`
 
 ## <a name="example"></a>예제
- 다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다.
+ 다음 예제에서는 Windows 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -126,6 +128,6 @@ ms.locfileid: "80711460"
 ```
 
 ## <a name="see-also"></a>참조
-- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [ProjectItem 요소(비주얼 스튜디오 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [ProjectItem 요소 (Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)

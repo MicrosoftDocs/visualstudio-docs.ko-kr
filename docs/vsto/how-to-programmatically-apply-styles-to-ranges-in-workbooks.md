@@ -1,7 +1,7 @@
 ---
-title: '방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용'
+title: '방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817455"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546161"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용
   통합 문서의 영역에 명명된 스타일을 적용할 수 있습니다. Excel에서는 미리 정의된 다양한 스타일을 제공합니다.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -59,15 +59,15 @@ ms.locfileid: "62817455"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]
 
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 명명 된 범위의 스타일을 지우려면
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 명명 된 범위에서 스타일을 지우려면
 
 1. 범위에 표준 스타일을 적용합니다.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
 
-## <a name="see-also"></a>참고자료
-- [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)
+## <a name="see-also"></a>참고 항목
+- [범위 작업](../vsto/working-with-ranges.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)
 - [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

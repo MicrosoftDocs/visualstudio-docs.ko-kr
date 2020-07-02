@@ -1,7 +1,7 @@
 ---
 title: '방법: 바로 가기 메뉴에 명령 추가'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594736"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545719"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 
@@ -48,7 +48,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
    그 외의 경우에는 MEF 메서드를 사용하여 명령을 정의하는 것이 좋습니다. 자세한 내용은 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)을 참조 하세요.
 
-## <a name="VSCT"></a>명령에서 명령을 선언 합니다. Vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a>명령에서 명령을 선언 합니다. Vsct
  DslPackage\Commands.vsct에서 메뉴 명령을 선언합니다. 이러한 정의는 메뉴 항목의 레이블 및 메뉴에서 항목이 표시되는 위치를 지정합니다.
 
  편집 하는 파일의 명령인 vsct는 디렉터리 *Visual STUDIO SDK 설치 경로*\VisualStudioIntegration\Common\Inc.에 있는 여러 .h 파일에서 정의를 가져옵니다. 여기에는 DSL 정의에서 생성 되는 GeneratedVsct도 포함 됩니다.
@@ -86,7 +86,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
     ```
 
     > [!NOTE]
-    > 각 단추나 그룹은 GUID 및 정수 ID로 식별됩니다. 같은 GUID로 여러 그룹과 단추를 만들 수 있지만 이러한 항목의 ID는 각각 달라야 합니다. GUID 이름과 ID 이름은 `<Symbols>` 노드에서 실제 Guid와 숫자 Id로 변환 됩니다.
+    > 각 단추나 그룹은 GUID 및 정수 ID로 식별됩니다. 같은 GUID로 여러 그룹과 단추를 만들 수 있지만 이러한 항목의 ID는 각각 달라야 합니다. GUID 이름과 ID 이름은 노드의 실제 Guid와 숫자 Id로 변환 됩니다 `<Symbols>` .
 
 3. 명령이 DSL 컨텍스트에서만 로드되도록 명령에 대한 표시 유형 제약 조건을 추가합니다. 자세한 내용은 [VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)를 참조 하세요.
 
@@ -128,7 +128,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
     - `My Context Menu Command`
 
-## <a name="version"></a>Package.tt에서 패키지 버전 업데이트
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a>Package.tt에서 패키지 버전 업데이트
  명령을 추가하거나 변경할 때마다 새 DSL 버전을 릴리스하기 전에 패키지 클래스에 적용되는 `version`의 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 매개 변수를 업데이트합니다.
 
  패키지 클래스는 생성된 파일에서 정의되므로 Package.cs 파일을 생성하는 텍스트 템플릿 파일에서 특성을 업데이트합니다.
@@ -139,13 +139,13 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
 2. `ProvideMenuResource` 특성을 찾습니다.
 
-3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
+3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="CommandSet"></a>명령의 동작을 정의 합니다.
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a>명령의 동작을 정의 합니다.
 
-DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로`CommandSet` *\<* 합니다. 클래스의 이름을 확인 하 고 해당 내용을 검사 하 여를 시작 하는 것이 좋습니다.
+DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로 *\<YourDslName>* `CommandSet` 입니다. 클래스의 이름을 확인 하 고 해당 내용을 검사 하 여를 시작 하는 것이 좋습니다.
 
 명령 집합 클래스는 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.
 
@@ -157,9 +157,9 @@ DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에 `CommandSet.cs`라는 새 클래스 파일을 만듭니다.
+2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에서 라는 새 클래스 파일을 만듭니다 `CommandSet.cs` .
 
-3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.:
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -193,7 +193,7 @@ namespace Company.Language1 /* Make sure this is correct */
 두 가지 메서드를 정의 해야 합니다. 하나는 마우스 오른쪽 단추 클릭 (컨텍스트) 메뉴에 명령이 표시 되는 시기를 결정 하 고 다른 하나는 명령을 수행 하는 것입니다. 이러한 메서드는 재정의가 아니며, 명령 목록에 등록해야 합니다.
 
 ### <a name="define-when-the-command-will-be-visible"></a>명령이 표시되는 경우 정의
- 각 명령에 대해 명령이 메뉴에 표시 되는지 여부와 명령이 사용 되는지 또는 회색으로 표시 되는지 여부를 결정 하는 `OnStatus...` 메서드를 정의 합니다. 다음 예제와 같이 `MenuCommand`의 `Visible` 및 `Enabled` 속성을 설정 합니다. 이 메서드는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 바로 가기 메뉴를 생성하기 위해 호출되므로 빠르게 작동해야 합니다.
+ 각 명령에 대해 `OnStatus...` 명령이 메뉴에 표시 되는지 여부와 명령이 사용 되는지 또는 회색으로 표시 되는지 여부를 결정 하는 메서드를 정의 합니다. `Visible` `Enabled` `MenuCommand` 다음 예제와 같이의 및 속성을 설정 합니다. 이 메서드는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 바로 가기 메뉴를 생성하기 위해 호출되므로 빠르게 작동해야 합니다.
 
  이 예에서 명령은 사용자가 특정 형식의 모양을 선택한 경우에만 표시되며 선택한 요소 중 하나 이상이 특정 상태일 때만 사용하도록 설정됩니다. 이 명령은 클래스 다이어그램 DSL 템플릿을 기준으로 하며 ClassShape 및 ModelClass는 DSL에서 정의되는 형식입니다.
 
@@ -222,7 +222,7 @@ OnStatus 메서드에서는 다음 코드 조각이 유용하게 사용되는 �
 
 - `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
 
-- 사용자가 다이어그램의 빈 부분을 클릭 한 경우 `this.IsDiagramSelected()` - `true`.
+- `this.IsDiagramSelected()` - `true`사용자가 다이어그램의 빈 부분을 클릭 한 경우
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -230,7 +230,7 @@ OnStatus 메서드에서는 다음 코드 조각이 유용하게 사용되는 �
 
 - `this.SingleSelection`-사용자가 마우스 오른쪽 단추로 클릭 한 모양 또는 다이어그램
 
-- `shape.ModelElement as MyLanguageElement`-셰이프가 나타내는 모델 요소입니다.
+- `shape.ModelElement as MyLanguageElement`-도형이 나타내는 모델 요소입니다.
 
 일반적으로는 선택한 항목에 따라 `Visible` 속성이 설정되고 선택한 요소의 상태에 따라 `Enabled` 속성이 설정되도록 지정합니다.
 
@@ -331,7 +331,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ## <a name="troubleshoot"></a>문제 해결
 
-**메뉴에 명령이 표시 되지 않습니다.**
+**메뉴에 명령이 표시되지 않습니다.**
 
 - DSL 패키지를 설치할 때까지 명령은 Visual Studio의 디버깅 인스턴스에만 표시됩니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
@@ -357,7 +357,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 이전 버전 패키지를 제거했는지 확인합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

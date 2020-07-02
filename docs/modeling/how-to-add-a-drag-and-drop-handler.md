@@ -1,18 +1,18 @@
 ---
 title: '방법: 끌어서 놓기 처리기 추가'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594697"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545667"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 
@@ -22,9 +22,9 @@ ms.locfileid: "75594697"
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>ShapeElement 메서드를 재정의하여 제스처 처리기 정의
 
-`OnDragDrop`, `OnDoubleClick`, `OnDragOver`및 기타 메서드를 재정의할 수 있습니다.
+`OnDragDrop`, `OnDoubleClick` , `OnDragOver` 및 기타 메서드를 재정의할 수 있습니다.
 
-DSL 프로젝트에 새 코드 파일을 추가합니다. 제스처 처리기의 경우 일반적으로 다음 `using` 지시문이 하나 이상 있어야 합니다.
+DSL 프로젝트에 새 코드 파일을 추가합니다. 제스처 처리기의 경우 일반적으로 다음 지시문이 적어도 하나 이상 있어야 합니다 `using` .
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -34,7 +34,7 @@ using System.Linq;
 
 새 파일에서 끌기 작업에 응답해야 하는 모양 또는 다이어그램 클래스에 대해 partial 클래스를 정의합니다. 이렇게 하려면 다음 메서드를 재정의합니다.
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>-이 메서드는 끌기 작업 중에 마우스 포인터가 도형 안으로 들어가면 호출 됩니다. 메서드는 사용자가 끌어 온 항목을 검사한 다음 사용자가 이 모양에 해당 항목을 놓을 수 있는지 여부를 나타내도록 Effect 속성을 설정해야 합니다. Effect 속성은 해당 모양 위에 있는 커서의 모양을 결정하며 사용자가 마우스 단추를 놓을 때 `OnDragDrop()`을 호출할지도 결정합니다.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>-이 메서드는 끌기 작업 중에 마우스 포인터가 셰이프에 들어가면 호출 됩니다. 메서드는 사용자가 끌어 온 항목을 검사한 다음 사용자가 이 모양에 해당 항목을 놓을 수 있는지 여부를 나타내도록 Effect 속성을 설정해야 합니다. Effect 속성은 해당 모양 위에 있는 커서의 모양을 결정하며 사용자가 마우스 단추를 놓을 때 `OnDragDrop()`을 호출할지도 결정합니다.
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-이전에 `None`이외의 값으로 `e.Effect` 설정 `OnDragOver(DiagramDragEventArgs e)` 경우 사용자가 마우스 포인터를이 모양이 나 다이어그램 위에 놓았을 때 마우스 단추를 놓으면이 메서드가 호출 됩니다.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-이 메서드는 이전에가 `OnDragOver(DiagramDragEventArgs e)` `e.Effect` 이외의 값으로 설정 된 경우 마우스 포인터가이 모양 또는 다이어그램 위에 있는 동안 마우스 단추를 놓으면 호출 됩니다 `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -124,17 +124,17 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
 끌기 소스 정보를 사용할 수 있는 형식을 검색하려면 `OnDragOver()` 또는 `CanDragDrop()` 진입 위치에 중단점을 설정하여 디버깅 모드에서 코드를 실행합니다. `DiagramDragEventArgs` 매개 변수의 값을 검사합니다. 정보는 두 가지 형식으로 제공됩니다.
 
-- <xref:System.Windows.Forms.IDataObject>`Data`-이 속성은 일반적으로 둘 이상의 형식으로 원본 개체의 serialize 된 버전을 전달 합니다. 이 속성의 가장 유용한 기능은 다음과 같습니다.
+- <xref:System.Windows.Forms.IDataObject>  `Data`-이 속성은 일반적으로 여러 형식으로 된 원본 개체의 serialize 된 버전을 전달 합니다. 이 속성의 가장 유용한 기능은 다음과 같습니다.
 
   - diagramEventArgs. GetDataFormats ()-끌어온 개체를 디코딩할 수 있는 형식을 나열 합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.
 
-  - 끌어 온 개체를 지정 된 형식으로 `diagramEventArgs.Data.GetData(format)` 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.:
+  - `diagramEventArgs.Data.GetData(format)`-끌어온 개체를 지정 된 형식으로 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
     소스의 모델 버스 참조와 같은 개체를 고유한 사용자 지정 형식으로 전송할 수도 있습니다. 자세한 내용은 [끌어서 놓는 방법으로 모델 버스 참조를 보내는 방법](#to-send-an-object-from-a-source-dsl)을 참조 하세요.
 
-- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype`-사용자가 DSL 또는 UML 모델에서 항목을 끌 수 있도록 하려면이 속성을 사용 합니다. 요소 그룹 프로토타입은 하나 이상의 개체, 링크 및 해당 속성 값을 포함하며 붙여넣기 작업과 도구 상자에서 요소를 추가할 때도 사용됩니다. 프로토타입에서는 개체와 해당 형식을 GUID로 식별합니다. 예를 들어 다음 코드를 사용하면 UML 다이어그램 또는 UML 모델 탐색기에서 클래스 요소를 끌어 놓을 수 있습니다.
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`-사용자가 DSL 또는 UML 모델에서 항목을 끌 수 있도록 하려면이 속성을 사용 합니다. 요소 그룹 프로토타입은 하나 이상의 개체, 링크 및 해당 속성 값을 포함하며 붙여넣기 작업과 도구 상자에서 요소를 추가할 때도 사용됩니다. 프로토타입에서는 개체와 해당 형식을 GUID로 식별합니다. 예를 들어 다음 코드를 사용하면 UML 다이어그램 또는 UML 모델 탐색기에서 클래스 요소를 끌어 놓을 수 있습니다.
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -148,7 +148,7 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
      UML 셰이프를 수락 하려면 실험을 통해 UML 셰이프 클래스의 Guid를 확인 합니다. 일반적으로 모든 다이어그램에는 둘 이상의 요소 형식이 있습니다. 또한 DSL이나 UML 다이어그램에서 끄는 개체는 모델 요소가 아닌 모양입니다.
 
-현재 마우스 포인터 위치와 사용자가 CTRL, ALT 또는 SHIFT 키를 누르는 지 여부를 나타내는 속성도 `DiagramDragEventArgs` 있습니다.
+`DiagramDragEventArgs`또한에는 현재 마우스 포인터 위치와 사용자가 CTRL, ALT 또는 SHIFT 키를 누르는 지 여부를 나타내는 속성도 있습니다.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>끌어 온 요소의 원본을 가져오는 방법
 
@@ -160,7 +160,7 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
 Visual Studio 모델 버스에서 원본 DSL에 액세스할 수 있도록 설정 합니다.
 
-1. DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 누른 **Modelbus**합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인**을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
+1. DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인**을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
 
 2. **모든 템플릿 변환** 을 클릭 하 고 솔루션을 다시 빌드합니다.
 
@@ -569,7 +569,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)
 - [도메인별 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)

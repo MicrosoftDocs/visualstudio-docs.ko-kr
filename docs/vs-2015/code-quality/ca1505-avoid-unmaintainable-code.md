@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f2f731b1ac0d87b59c7690d0cf57ade3570ed5f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607583"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547825"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드는 사용하지 마십시오.
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드를 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
@@ -46,5 +46,5 @@ ms.locfileid: "72607583"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  형식 또는 메서드가 크기를 크게 유지 하거나 형식이 나 메서드를 분할할 수 없는 경우에도이 경고를 제외 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [관리 코드의 복잡성 및 유지 관리 용이성을 측정 하는](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) [유지 관리 경고](../code-quality/maintainability-warnings.md)

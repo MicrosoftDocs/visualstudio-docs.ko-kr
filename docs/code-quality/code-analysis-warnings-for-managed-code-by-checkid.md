@@ -145,6 +145,7 @@ f1_keywords:
 - CA1802
 - CA1803
 - CA1804
+- CA1805
 - CA1806
 - CA1809
 - CA1810
@@ -288,12 +289,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d9c4834604d4f77d53dc0ff7bb725eae3312779
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382681"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814813"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -432,6 +433,7 @@ ms.locfileid: "85382681"
 | CA1801 | [CA1801: 사용되지 않은 매개 변수를 검토하세요.](../code-quality/ca1801.md) | 메서드 시그니처에 메서드 본문에서 사용되지 않는 매개 변수가 있습니다. |
 | CA1802 |[CA1802: 가능하면 리터럴을 사용하세요.](../code-quality/ca1802.md) |필드가 static 및 read-only([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 경우 Shared 및 ReadOnly)로 선언되었으며 컴파일할 때 계산할 수 있는 값으로 초기화되어 있습니다. 컴파일 시간에 대상된 필드에 할당 되는 값을 계산할 이기 때문에 const 선언을 변경 (에서 Const [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 필드 값을 런타임 대신 컴파일 시간에 계산 되도록 합니다. |
 | CA1804 | [CA1804: 사용되지 않는 로컬 항목을 제거하세요.](../code-quality/ca1804.md) | 사용되지 않는 지역 변수와 불필요한 할당으로 어셈블리의 크기가 증가하고 성능이 저하될 수 있습니다. |
+| CA1805 | [CA1805: 불필요 하 게 초기화 하지 마십시오.](../code-quality/ca1805.md) | .NET 런타임은 생성자를 실행 하기 전에 참조 형식의 모든 필드를 기본값으로 초기화 합니다. 대부분의 경우 필드를 기본값으로 명시적으로 초기화 하면 유지 관리 비용이 증가 하 고 성능이 저하 될 수 있습니다 (예: 어셈블리 크기 증가). |
 | CA1806 | [CA1806: 메서드 결과를 무시하지 마세요.](../code-quality/ca1806.md) | 새 개체가 만들어지지만 사용되지 않거나, 새 문자열을 만들고 반환하는 메서드가 호출되고 새 문자열이 사용되지 않거나, COM 또는 P/Invoke 메서드가 사용되지 않는 오류 코드나 HRESULT를 반환합니다. |
 | CA1809 |[CA1809: 불필요한 로컬 항목을 사용하지 마세요.](../code-quality/ca1809.md) | 값을 메모리가 아닌 프로세서 레지스터에 저장하는 방법은 성능 최적화에 많이 사용되는 방법이며 "값의 레지스터 등록"이라고도 합니다. 모든 지역 변수에 레지스터는 가능성을 늘리려면 64 로컬 변수 수를 제한 합니다. |
 | CA1810 | [CA1810: 참조 형식 정적 필드를 인라인으로 초기화하세요.](../code-quality/ca1810.md) | 형식이 명시적인 정적 생성자를 선언하면 JIT(Just-in-Time) 컴파일러는 형식의 각 정적 메서드와 인스턴스 생성자에 검사를 추가하여 정적 생성자를 이전에 호출했는지 확인합니다. 정적 생성자 검사로 인해 성능이 저하될 수 있습니다. |
@@ -452,7 +454,7 @@ ms.locfileid: "85382681"
 | CA1827 |[CA1827: Any를 사용할 수 있는 경우 Count/LongCount를 사용하지 마세요.](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>또는 메서드가 <xref:System.Linq.Enumerable.LongCount%2A> 더 효율적으로 사용 되었습니다 <xref:System.Linq.Enumerable.Any%2A> . |
 | CA1828 |[CA1828: AnyAsync를 사용할 수 있는 경우 CountAsync/LongCountAsync를 사용하지 마세요.](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>또는 메서드가 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> 더 효율적으로 사용 되었습니다 <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> . |
 | CA1829 |[CA1829: Enumerable.Count 메서드 대신 Length/Count 속성을 사용하세요.](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ 메서드가 동등한, 보다 효율적인 또는 속성을 지 원하는 형식에서 사용 `Length` 되었습니다 `Count` . |
-| CA1830 |[CA1830: StringBuilder에서 강력한 형식의 추가 및 삽입 메서드 오버 로드를 선호 합니다.](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>및 <xref:System.Text.StringBuilder.Insert%2A> 는 이외의 여러 형식에 대 한 오버 로드를 제공 <xref:System.String> 합니다.  가능 하면 ToString () 및 문자열 기반 오버 로드를 사용 하는 것 보다 강력한 형식의 오버 로드를 사용 하는 것이 좋습니다. |
+| CA1830 |[CA1830: StringBuilder에서 강력한 형식의 추가 및 삽입 메서드 오버로드를 사용하세요.](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>및 <xref:System.Text.StringBuilder.Insert%2A> 는 이외의 여러 형식에 대 한 오버 로드를 제공 <xref:System.String> 합니다.  가능 하면 ToString () 및 문자열 기반 오버 로드를 사용 하는 것 보다 강력한 형식의 오버 로드를 사용 하는 것이 좋습니다. |
 | CA1831 |[CA1831: 적절한 경우 문자열에 대해 범위 기반 인덱서 대신 AsSpan을 사용하세요.](../code-quality/ca1831.md) | 문자열에 범위 인덱서를 사용 하 고 해당 값을 ReadOnlySpan char 형식에 암시적으로 할당 하는 경우 &lt; &gt; 이 메서드는 <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 문자열의 요청 된 부분 복사본을 생성 하는 대신 사용 됩니다. |
 | CA1832 |[CA1832: 배열의 ReadOnlySpan 또는 ReadOnlyMemory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.](../code-quality/ca1832.md) | 배열에 범위-인덱서를 사용 하 고 또는 형식에 값을 암시적으로 할당 하는 경우 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> 이 메서드는 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 배열에서 요청 된 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 부분의 복사본을 생성 하는 대신 사용 됩니다. |
 | CA1833 |[CA1833: 배열의 Span 또는 Memory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.](../code-quality/ca1833.md) | 배열에 범위-인덱서를 사용 하 고 또는 형식에 값을 암시적으로 할당 하는 경우 <xref:System.Span%601> <xref:System.Memory%601> 이 메서드는 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 배열에서 요청 된 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 부분의 복사본을 생성 하는 대신 사용 됩니다. |

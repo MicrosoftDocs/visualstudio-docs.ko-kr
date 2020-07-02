@@ -1,7 +1,7 @@
 ---
 title: Office 솔루션에 대 한 구성 정보 설정
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328895"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545810"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>방법: Office 솔루션에 대 한 구성 정보 설정
-  Office 솔루션에 관련 된 설정을 구성 하려면 구성 파일을 사용할 수 있습니다. 어셈블리 바인딩 정책, 원격 개체, 디버그 및 추적 설정이 같은 설정을 지정할 수 있습니다.
+  구성 파일을 사용 하 여 Office 솔루션과 관련 된 설정을 구성할 수 있습니다. 어셈블리 바인딩 정책, 원격 개체, 디버그 및 추적 설정과 같은 설정을 지정할 수 있습니다.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -31,19 +31,19 @@ ms.locfileid: "67328895"
 
 1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
 
-2. 에 **범주** 창 클릭 **일반**합니다.
+2. **범주** 창에서 **일반**을 클릭 합니다.
 
-3. 에 **템플릿을** 창 **응용 프로그램 구성 파일**합니다.
+3. **템플릿** 창에서 **응용 프로그램 구성 파일**을 선택 합니다.
 
-4. 에 **이름을** 상자 확장 어셈블리와 동일한 이름을 입력 합니다 *.config*합니다. Excel 프로젝트 어셈블리에 대 한 구성 파일을 호출 하는 예를 들어 *ExcelWorkbook1.dll* 이름은 *ExcelWorkbook1.dll.config*합니다.
+4. **이름** 상자에 어셈블리와 동일한 이름 및 확장명 *.config*를 입력 합니다. 예를 들어 *ExcelWorkbook1.dll* 이라는 Excel 프로젝트 어셈블리에 대 한 구성 파일의 이름은 *ExcelWorkbook1.dll.config*로 지정 됩니다.
 
 5. **추가**를 클릭합니다.
 
-6. 응용 프로그램 구성 파일 스키마에 따라 구성 파일을 만듭니다. 자세한 내용은 [.NET Framework의 구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)합니다.
+6. 응용 프로그램 구성 파일 스키마에 따라 구성 파일을 만듭니다. 자세한 내용은 [.NET Framework 구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)를 참조 하세요.
 
-   구성 파일을 사용 하 여 Office 프로젝트를 사용 하는 것에 대 한 없는 특별 한 고려 사항이 있습니다.
+   Office 프로젝트에서 구성 파일을 사용 하는 경우 특별 한 고려 사항은 없습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [.NET Framework의 구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)
-- [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)
+- [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)

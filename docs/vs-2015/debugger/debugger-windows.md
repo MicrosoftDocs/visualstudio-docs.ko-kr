@@ -1,5 +1,5 @@
 ---
-title: Windows 디버거 | Microsoft Docs
+title: 디버거 창 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,21 +9,20 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686765"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545628"
 ---
 # <a name="debugger-windows"></a>디버거 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-프로그램을 디버그하는 동안 대부분의 디버거 창을 열 수 있습니다. 디버거 창의 목록을 보려면 중단점을 설정하고 디버깅을 시작합니다. 중단점을 적중하고 실행이 중지되면 **디버그 / Windows**를 클릭합니다.  
+프로그램을 디버그하는 동안 대부분의 디버거 창을 열 수 있습니다. 디버거 창의 목록을 보려면 중단점을 설정하고 디버깅을 시작합니다. 중단점을 적중 하 고 실행이 중지 되 면 **디버그/Windows**를 클릭 합니다.  
   
-||||  
+|**Window**|**바로 가기 키**|**항목 참조**|  
 |-|-|-|  
-|**창**|**바로 가기 키**|**항목 참조**|  
 |중단점|Ctrl+Alt+B|[중단점 사용](../debugger/using-breakpoints.md)|  
 |예외 설정|Ctrl+Alt+E|[디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)|  
 |출력|Ctrl+Alt+O|[출력 창](../ide/reference/output-window.md)|  

@@ -1,7 +1,7 @@
 ---
 title: 디버거에서 중단점 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 10/28/2019
+ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af53cdd368d129fc23c3596a4e20d6e95ceb7a18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536593"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769403"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 중단점 사용
 
@@ -50,7 +50,7 @@ ms.locfileid: "85536593"
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> 소스 코드에서 중단점 설정
 
-실행 코드의 임의의 줄에서 중단점을 설정할 수 있습니다. 예를 들어 다음 C# 코드에서는 변수 선언, `for` 루프 또는 `for` 루프 내의 모든 코드에 중단점을 설정할 수 있습니다. 네임 스페이스에 대한 선언, 클래스 또는 변수 또는 메서드 시그니처의 선언에는 중단점을 설정할 수 없습니다.
+실행 코드의 임의의 줄에서 중단점을 설정할 수 있습니다. 예를 들어 다음 C# 코드에서는 변수 할당이 있는 코드 줄(`int testInt = 1`), `for` 루프 또는 `for` 루프 내의 모든 코드에 중단점을 설정할 수 있습니다. 할당 및 getter/setter가 없는 경우, 메서드 시그니처, 네임 스페이스 또는 클래스에 대한 선언, 변수 선언에는 중단점을 설정할 수 없습니다.
 
 소스 코드에서 중단점을 설정하려면 코드 줄 옆에 있는 맨 왼쪽 여백을 클릭합니다. 또한 줄을 선택하고 **F9**를 누르거나 **디버그** > **중단점 설정/해제**를 선택하거나 마우스 오른쪽 단추를 클릭하여 **중단점** > **중단점 삽입**을 선택할 수 있습니다. 중단점이 왼쪽 여백에 빨간 점으로 나타납니다.
 

@@ -17,17 +17,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602862"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546460"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: 투명 코드는 보안에 중요한 항목을 참조해서는 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
@@ -54,16 +54,16 @@ ms.locfileid: "72602862"
 - 보안 위험으로 표시 된 형식을 반환 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- @No__t_0 특성으로 표시 된 코드 요소는 보안에 중요 합니다. 투명 메서드는 보안에 중요한 요소를 사용할 수 없습니다. 투명 형식이 보안에 중요 한 형식을 사용 하려고 시도 하는 경우 <xref:System.TypeAccessException>, <xref:System.MethodAccessException> 또는 <xref:System.FieldAccessException> 발생 합니다.
+ 특성으로 표시 된 코드 요소는 <xref:System.Security.SecurityCriticalAttribute> 보안에 중요 합니다. 투명 메서드는 보안에 중요한 요소를 사용할 수 없습니다. 투명 형식이 보안에 중요 한 형식을 사용 하려고 시도 하는 경우, <xref:System.TypeAccessException> <xref:System.MethodAccessException> 또는 <xref:System.FieldAccessException> 이 발생 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 다음 중 하나를 수행 합니다.
 
-- 보안에 중요 코드를 사용 하는 코드 요소를 <xref:System.Security.SecurityCriticalAttribute> 특성으로 표시 합니다.
+- 보안에 중요 한 코드를 사용 하는 코드 요소를 특성으로 표시 합니다. <xref:System.Security.SecurityCriticalAttribute>
 
      \- 또는 -
 
-- 보안에 중요 한 것으로 표시 된 코드 요소에서 <xref:System.Security.SecurityCriticalAttribute> 특성을 제거 하 고 대신 <xref:System.Security.SecuritySafeCriticalAttribute> 또는 <xref:System.Security.SecurityTransparentAttribute> 특성으로 표시 합니다.
+- 보안에 <xref:System.Security.SecurityCriticalAttribute> 중요로 표시 된 코드 요소에서 특성을 제거 하 고 대신 또는 특성으로 표시 <xref:System.Security.SecuritySafeCriticalAttribute> 합니다 <xref:System.Security.SecurityTransparentAttribute> .
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
@@ -73,7 +73,7 @@ ms.locfileid: "72602862"
 
  [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2140.transparentmethodsmustnotreferencecriticalcode/cs/ca2140 - transparentmethodsmustnotreferencecriticalcode.cs#1)]
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute>
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>

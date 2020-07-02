@@ -1,7 +1,7 @@
 ---
-title: '방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.'
+title: '방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574861"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545953"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.
-  <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하여 Microsoft Office Word 문서의 범위를 정의할 수 있습니다. 사용 하 여 예를 들어, 다양 한 방법으로 전체 문서를 선택할 수 있습니다는 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 메서드를 <xref:Microsoft.Office.Interop.Word.Range> 개체 또는의 콘텐츠 속성을 사용 하 여는 <xref:Microsoft.Office.Tools.Word.Document> 클래스 (문서 수준 사용자 지정) 또는 <xref:Microsoft.Office.Interop.Word.Document> 클래스 (에 VSTO 추가 기능에).
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택
+  <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하여 Microsoft Office Word 문서의 범위를 정의할 수 있습니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 개체의 메서드를 사용 <xref:Microsoft.Office.Interop.Word.Range> 하거나 <xref:Microsoft.Office.Tools.Word.Document> 클래스 (문서 수준 사용자 지정) 또는 <xref:Microsoft.Office.Interop.Word.Document> 클래스 (VSTO 추가 기능)의 Content 속성을 사용 하 여 여러 가지 방법으로 전체 문서를 선택할 수 있습니다.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="define-a-range"></a>범위를 정의 합니다.
+## <a name="define-a-range"></a>범위 정의
  다음 예제에서는 인쇄할 수 없는 문자를 비롯하여 활성 문서의 처음 7자를 포함하는 새로운 <xref:Microsoft.Office.Interop.Word.Range> 개체를 만드는 방법을 보여 줍니다. 그런 다음 범위 내의 텍스트를 선택합니다.
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>문서 수준 사용자 지정의 범위를 정의하려면
@@ -45,7 +45,7 @@ ms.locfileid: "62574861"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
 
-## <a name="select-a-range-in-a-document-level-customization"></a>문서 수준 사용자 지정의 범위를 선택 합니다.
+## <a name="select-a-range-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 범위를 선택 합니다.
  다음 예제에서는 <xref:Microsoft.Office.Interop.Word.Range> 개체의 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 메서드를 사용하거나 <xref:Microsoft.Office.Tools.Word.Document> 클래스의 <xref:Microsoft.Office.Tools.Word.Document.Content%2A> 속성을 사용하여 전체 문서를 선택하는 방법을 보여 줍니다.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Select 메서드를 사용하여 전체 문서를 범위로 선택하려면
@@ -80,12 +80,12 @@ ms.locfileid: "62574861"
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2. 문서에서 둘 이상의 문장이 있는지 확인 설정 합니다 *시작* 하 고 *끝* 범위 및 범위 선택의 인수.
+2. 문서에 두 개 이상의 문장이 있는지 확인 하 고 범위의 *시작* 및 *끝* 인수를 설정한 다음 범위를 선택 합니다.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
 
-## <a name="select-a-range-by-using-a-vsto-add-in"></a>VSTO 추가 기능을 사용 하 여 범위를 선택 합니다.
+## <a name="select-a-range-by-using-a-vsto-add-in"></a>VSTO 추가 기능을 사용 하 여 범위 선택
  다음 예제에서는 <xref:Microsoft.Office.Interop.Word.Range> 개체의 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 메서드를 사용하거나 <xref:Microsoft.Office.Interop.Word.Document> 클래스의 <xref:Microsoft.Office.Interop.Word._Document.Content%2A> 속성을 사용하여 전체 문서를 선택하는 방법을 보여 줍니다.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Select 메서드를 사용하여 전체 문서를 범위로 선택하려면
@@ -120,16 +120,16 @@ ms.locfileid: "62574861"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2. 문서에서 둘 이상의 문장이 있는지 확인 설정 합니다 *시작* 하 고 *끝* 범위 및 범위 선택의 인수.
+2. 문서에 두 개 이상의 문장이 있는지 확인 하 고 범위의 *시작* 및 *끝* 인수를 설정한 다음 범위를 선택 합니다.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [방법: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [방법: 프로그래밍 방식으로 제외 단락 표시 범위를 만들 때](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

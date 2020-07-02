@@ -15,17 +15,17 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607870"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547838"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 지나치게 복잡하게 만들지 마십시오.
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 지나치게 복잡하게 만들지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
@@ -50,14 +50,14 @@ ms.locfileid: "72607870"
  이 규칙 위반 문제를 해결 하려면 메서드를 리팩터링하여 순환 복잡성을 줄입니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 복잡성을 쉽게 줄이고 메서드를 이해, 테스트 및 유지 관리할 수 있는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 특히 큼 `switch` ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)]의 `Select`) 문을 포함 하는 메서드는 제외에 대 한 후보입니다. 코드 베이스를 개발 주기에서 늦게 불안정 하거나 이전에 제공 된 코드에서 예기치 않은 런타임 동작이 발생 하는 위험이 코드를 리팩터링 하는 유지 관리 이점 보다 클 수 있습니다.
+ 복잡성을 쉽게 줄이고 메서드를 이해, 테스트 및 유지 관리할 수 있는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 특히, large (in) 문을 포함 하는 메서드는 `switch` `Select` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 제외의 후보입니다. 코드 베이스를 개발 주기에서 늦게 불안정 하거나 이전에 제공 된 코드에서 예기치 않은 런타임 동작이 발생 하는 위험이 코드를 리팩터링 하는 유지 관리 이점 보다 클 수 있습니다.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>순환 복잡성을 계산 하는 방법
  순환 복잡성은 다음에 1을 더하여 계산 됩니다.
 
-- 분기 수 (예: `if`, `while` 및 `do`)
+- 분기 수 (예: `if` , `while` 및 `do` )
 
-- @No__t_1 `case` 문 수
+- `case`의 문 수`switch`
 
   다음 예제에서는 다양 한 순환 복잡성이 있는 메서드를 보여 줍니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "72607870"
  [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.AvoidExcessiveComplexity/vb/FxCop.Maintainability.AvoidExcessiveComplexity.vb#4)]
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1501: 상속성을 너무 많이 사용하지 마십시오.](../code-quality/ca1501-avoid-excessive-inheritance.md)
+ [CA1501: 상속성을 너무 많이 사용하지 마세요.](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

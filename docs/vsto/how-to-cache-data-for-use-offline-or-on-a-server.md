@@ -1,7 +1,7 @@
 ---
 title: '방법: 오프 라인 이나 서버에서 사용할 데이터 캐시'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,28 +17,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 551d27cf8d40f2e6e9c996b031fa6c4e0a233355
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189568"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546187"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>방법: 오프 라인 이나 서버에서 사용할 데이터 캐시
   문서에서 캐시 되도록 데이터 항목을 표시 하 여 오프 라인에서 사용할 수 있게 할 수 있습니다. 또한 문서를 서버에 저장할 때 문서에 있는 데이터를 다른 코드에서 조작할 수 있습니다.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- 데이터 항목이 코드에서 선언 될 때 데이터 항목을 캐시 하도록 표시 하거나, **속성** 창에서 속성을 설정 하 여 <xref:System.Data.DataSet>를 사용 하는 경우에는 데이터 항목을 캐시할 수 있습니다. <xref:System.Data.DataSet> 또는 <xref:System.Data.DataTable>아닌 데이터 항목을 캐싱하는 경우 문서에 캐시 되는 조건을 충족 하는지 확인 합니다. 자세한 내용은 [데이터 캐시](../vsto/caching-data.md)를 참조 하세요.
+ 데이터 항목이 코드에서 선언 될 때 데이터 항목이 캐시 되도록 표시할 수 있으며,를 사용 하는 경우 <xref:System.Data.DataSet> **속성** 창에서 속성을 설정 하 여 표시할 수 있습니다. 또는가 아닌 데이터 항목을 캐시 하는 경우 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 문서에 캐시 되는 조건을 충족 하는지 확인 합니다. 자세한 내용은 [데이터 캐시](../vsto/caching-data.md)를 참조 하세요.
 
 > [!NOTE]
-> **CacheInDocument** 속성이 True로 설정 된 **데이터 소스** 창 또는 **도구 상자** 에서 끌어온 데이터 집합을 포함 하 여, **캐시** 된 및 **WithEvents** 로 표시 된 Visual Basic를 사용 하 여 만든 데이터 집합)는 캐시에서 이름 앞에 밑줄을 붙입니다. 예를 들어, 데이터 집합을 만들고 이름을 **customers**로 지정할 경우 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> 이름은 캐시에 있는 **고객 (_w)** 이 됩니다. <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>를 사용 하 여이 캐시 된 항목에 액세스 하는 경우 **고객**대신 **_cata** 를 지정 해야 합니다.
+> **CacheInDocument** 속성이 **True**로 설정 된 **데이터 소스** 창 또는 **도구 상자** 에서 끌고 있는 데이터 집합을 포함 하 여 **, 캐시 된 및** **WithEvents** 로 표시 된 Visual Basic를 사용 하 여 만든 데이터 집합은 캐시에서 이름 앞에 밑줄을 붙입니다. 예를 들어, 데이터 집합을 만들고 이름을 **Customers**로 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> 지정할 경우 이름이 캐시에 **_Customers** 됩니다. <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>를 사용 하 여이 캐시 된 항목에 액세스 하는 경우 **고객**대신 **_Customers** 를 지정 해야 합니다.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>코드를 사용 하 여 문서의 데이터를 캐시 하려면
 
-1. 데이터 항목의 공용 필드 또는 속성을 프로젝트의 호스트 항목 클래스 (예: Word 프로젝트의 `ThisDocumen`t 클래스 또는 Excel 프로젝트의 `ThisWorkbook` 클래스)의 멤버로 선언 합니다.
+1. 데이터 항목에 대 한 public 필드 또는 속성을 프로젝트의 호스트 항목 클래스 (예: `ThisDocumen` Word 프로젝트의 t 클래스 또는 Excel 프로젝트의 클래스)의 멤버로 선언 합니다 `ThisWorkbook` .
 
-2. 멤버에 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 특성을 적용 하 여 문서의 데이터 캐시에 저장 되는 데이터 항목을 표시 합니다. 다음 예에서는 <xref:System.Data.DataSet>에 대 한 필드 선언에이 특성을 적용 합니다.
+2. 특성을 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 멤버에 적용 하 여 데이터 항목이 문서의 데이터 캐시에 저장 되도록 표시 합니다. 다음 예제에서는이 특성을의 필드 선언에 적용 합니다 <xref:System.Data.DataSet> .
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
@@ -59,7 +59,7 @@ ms.locfileid: "73189568"
 
 4. **속성** 창에서 **Modifiers** 속성을 **Public** 으로 설정 합니다 (기본적으로 **내부**).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [데이터 캐시](../vsto/caching-data.md)
 - [방법: Office 문서에서 프로그래밍 방식으로 데이터 소스 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [방법: 암호로 보호 된 문서의 데이터 캐시](../vsto/how-to-cache-data-in-a-password-protected-document.md)

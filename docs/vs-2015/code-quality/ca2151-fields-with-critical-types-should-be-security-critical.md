@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e5dee78ef3c487541363e9e290e54a8f3d68cf3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48c3f55b60add1691fe31c764f31673bbf1ab47b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667424"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546356"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 함
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName||
 |CheckId|CA2151|
@@ -27,7 +27,7 @@ ms.locfileid: "72667424"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 보안 투명 필드 또는 안전 중요 필드가 선언되었습니다. 해당 형식은 보안에 중요한 것으로 지정되었습니다. 예를 들면,
+ 보안 투명 필드 또는 안전 중요 필드가 선언되었습니다. 해당 형식은 보안에 중요한 것으로 지정되었습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]

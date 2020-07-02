@@ -1,7 +1,7 @@
 ---
 title: '방법: Office 솔루션을 개발할 수 있도록 컴퓨터 구성'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb29dc4151bc457eb60ce836986817bc1b0137c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985959"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546174"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>방법: Office 솔루션을 개발할 수 있도록 컴퓨터 구성
   Visual Studio의 Microsoft Office 개발자 도구를 사용할 수 있도록 개발 컴퓨터를 구성하려면 이 항목의 지침을 따릅니다. 이러한 단계를 수행하려면 개발 컴퓨터에 대한 관리자 권한이 있어야 합니다.
@@ -31,10 +31,10 @@ ms.locfileid: "72985959"
 
      설치하는 Office 버전에 대한 PIA도 설치해야 합니다. PIA는 기본적으로 Office와 함께 설치됩니다. Office 설치 프로그램을 수정 하는 경우 대상으로 지정할 응용 프로그램에 대해 **.Net 프로그래밍 지원** 기능이 선택 되어 있는지 확인 합니다.
 
-3. 영어 버전의 Visual Studio가 있지만 영어가 아닌 Windows 설정을 사용 하는 경우 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩을 설치 하 여 Windows와 동일한 언어로 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 메시지를 볼 수 있습니다. 영어가 아닌 버전의 Visual Studio에서는 해당 언어 팩을 자동으로 설치합니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=54246)에서 언어 팩을 사용할 수 있습니다.
+3. 영어 버전의 Visual Studio가 있지만 영어가 아닌 Windows 설정을 사용 하는 경우 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩을 설치 하 여 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] windows와 동일한 언어로 메시지를 볼 수 있습니다. 영어가 아닌 버전의 Visual Studio에서는 해당 언어 팩을 자동으로 설치합니다. [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=54246)에서 언어 팩을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [방법: Office 주 interop 어셈블리 설치](../vsto/how-to-install-office-primary-interop-assemblies.md)

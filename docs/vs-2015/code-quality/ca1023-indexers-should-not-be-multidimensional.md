@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1b7c4c82add8644a1c2c213536c2ad3c0097c3a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 30eee67d54e4fc3c73b265240fff82b0729e1cfc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661985"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546653"
 ---
-# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: 다차원 인덱서는 사용하지 마십시오.
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: 다차원 인덱서를 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
@@ -45,13 +45,13 @@ ms.locfileid: "72661985"
  비표준 인덱서에 대 한 필요성을 신중 하 게 고려한 후에만이 규칙에서 경고를 표시 하지 않습니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 규칙을 위반 하는 다차원 인덱서가 포함 된 `DayOfWeek03` 형식을 보여 줍니다. 인덱서는 변환 형식으로 볼 수 있으므로 메서드로 보다 적절 하 게 노출 됩니다. 규칙을 충족 하는 `RedesignedDayOfWeek03`에서 형식이 다시 디자인 되었습니다.
+ 다음 예제에서는 `DayOfWeek03` 규칙을 위반 하는 다차원 인덱서가 포함 된 형식을 보여 줍니다. 인덱서는 변환 형식으로 볼 수 있으므로 메서드로 보다 적절 하 게 노출 됩니다. 규칙을 충족 하기 위해 형식이에서 다시 디자인 되었습니다 `RedesignedDayOfWeek03` .
 
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cpp/FxCop.Design.OneDimensionForIndexer.cpp#1)]
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cs/FxCop.Design.OneDimensionForIndexer.cs#1)]
  [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/vb/FxCop.Design.OneDimensionForIndexer.vb#1)]
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1043: 인덱서에 정수 또는 문자열 인수를 사용하십시오.](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+ [CA1043: 인덱서에 정수 또는 문자열 인수를 사용하세요.](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024: 적합한 속성을 사용하십시오.](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: 적합한 속성을 사용하세요.](../code-quality/ca1024-use-properties-where-appropriate.md)

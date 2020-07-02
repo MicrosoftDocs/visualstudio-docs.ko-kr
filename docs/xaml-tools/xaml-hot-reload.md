@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec1ca7ba801f4e3e0a7777e0cae62e78412dae6
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331966"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815892"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio에서 XAML 핫 다시 로드를 사용하여 XAML 코드 작성 및 실행 중인 XAML 코드 디버그
 
@@ -66,7 +66,7 @@ XAML 핫 다시 로드를 사용 하는 동안 다음 오류가 발생할 수 �
 |이벤트 실패 확인|오류는 응용 프로그램이 실행 되는 동안 지원 되지 않는 컨트롤 중 하나에 이벤트를 연결 하려고 시도 하 고 있음을 나타냅니다.|
 |이 변경은 XAML 핫 다시 로드에서 지원 되지 않으며 디버깅 세션 중에는 적용 되지 않습니다.|오류는 XAML 핫 다시 로드에서 시도 중인 변경을 지원 하지 않음을 나타냅니다. 디버깅 세션을 중지 하 고, 변경 하 고 나 서, 디버깅 세션을 다시 시작 합니다. 지원 되지 않는 시나리오를 발견 한 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html)에서 새로운 "기능 제안" 옵션을 사용 하세요. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [XAML 핫 다시 로드 문제 해결](xaml-hot-reload-troubleshooting.md)
 * [Xamarin.Forms용 XAML 핫 다시 로드](/xamarin/xamarin-forms/xaml/hot-reload)

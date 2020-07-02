@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 새 문서 만들기'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71610d0bd2e957d932e31d83d06aca914bf8b585
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251960"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545992"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>방법: 프로그래밍 방식으로 새 문서 만들기
   프로그래밍 방식으로 문서를 만드는 경우 새 문서는 네이티브 <xref:Microsoft.Office.Interop.Word.Document> 개체입니다. 이 개체에는 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목의 추가 이벤트 및 데이터 바인딩 기능이 없습니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤의 프로그래밍](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)에 대 한 제한 사항을 참조 하세요.
@@ -36,7 +36,7 @@ ms.locfileid: "71251960"
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
 ## <a name="use-custom-templates"></a>사용자 지정 템플릿 사용
- 메서드에 <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> 는 기본 템플릿 이외의 템플릿을 기반으로 새 문서를 만들기 위한 선택적 *템플릿* 인수가 있습니다. 서식 파일의 파일 이름 및 정규화된 경로를 제공해야 합니다.
+ <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>메서드에는 기본 템플릿 이외의 템플릿을 기반으로 새 문서를 만들기 위한 선택적 *템플릿* 인수가 있습니다. 서식 파일의 파일 이름 및 정규화된 경로를 제공해야 합니다.
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>사용자 지정 서식 파일을 기반으로 하여 새 문서를 만들려면
 
