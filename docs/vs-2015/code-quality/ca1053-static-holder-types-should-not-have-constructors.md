@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29cc322dd59dc0de66af8f92a46524d15b0022c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653818"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539583"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: 정적 소유자 형식에는 생성자를 사용하면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
@@ -48,6 +48,6 @@ ms.locfileid: "72653818"
  이 규칙에서는 경고를 표시해야 합니다. 생성자가 있으면 형식이 정적 형식이 아닌 것으로 제안 됩니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 형식을 보여 줍니다. 소스 코드에 기본 생성자가 없습니다. 이 코드를 어셈블리로 컴파일하면 컴파일러는 C# 이 규칙을 위반 하는 기본 생성자를 삽입 합니다. 이를 해결 하려면 private 생성자를 선언 합니다.
+ 다음 예제에서는이 규칙을 위반 하는 형식을 보여 줍니다. 소스 코드에 기본 생성자가 없습니다. 이 코드가 어셈블리로 컴파일될 때 c # 컴파일러는이 규칙을 위반 하는 기본 생성자를 삽입 합니다. 이를 해결 하려면 private 생성자를 선언 합니다.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

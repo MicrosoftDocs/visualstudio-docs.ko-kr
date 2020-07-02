@@ -8,12 +8,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34d1918522711f3070cf6988a83ebdbd1e80b2f4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659576"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540077"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>테스트 탐색기를 사용하여 기존 C++ 애플리케이션 유닛 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +49,11 @@ ms.locfileid: "72659576"
 
 ## <a name="creating-the-tests"></a>테스트 만들기
 
-### <a name="staticLink"></a> 테스트 중인 코드를 정적 라이브러리로 변경하려면
+### <a name="to-change-the-code-under-test-to-a-static-library"></a><a name="staticLink"></a> 테스트 중인 코드를 정적 라이브러리로 변경하려면
 
 - 테스트 중인 프로젝트에서 내보내지 않는 멤버를 테스트에 사용해야 하며 테스트 중인 프로젝트가 동적 라이브러리로 빌드되는 경우에는 정적 라이브러리로 변환하는 것을 고려해 보세요.
 
-  1. 솔루션 탐색기의 테스트 중인 프로젝트의 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 창이 열립니다.
+  1. 솔루션 탐색기에서 테스트 중인 프로젝트의 바로 가기 메뉴에서 **속성**을 선택 합니다. 프로젝트 속성 창이 열립니다.
 
   2. **구성 속성**, **일반**을 선택합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72659576"
 
   [개체 또는 라이브러리 파일에 테스트를 연결하려면](#objectRef) 절차를 계속 진행합니다.
 
-### <a name="projectRef"></a> 테스트 프로젝트에서 내보낸 함수를 참조하려면
+### <a name="to-reference-exported-functions-from-the-test-project"></a><a name="projectRef"></a> 테스트 프로젝트에서 내보낸 함수를 참조하려면
 
 - 테스트 중인 프로젝트에서 테스트할 함수를 내보내는 경우 테스트 프로젝트에서 코드 프로젝트에 대한 참조를 추가할 수 있습니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "72659576"
 
       1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**, **Visual C++, 테스트**, **C++ 단위 테스트 프로젝트**를 차례로 선택합니다.
 
-  2. 솔루션 탐색기의 테스트 프로젝트 바로 가기 메뉴에서 **참조**를 선택합니다. 프로젝트 속성 창이 열립니다.
+  2. 솔루션 탐색기의 테스트 프로젝트 바로 가기 메뉴에서 **참조**를 선택 합니다. 프로젝트 속성 창이 열립니다.
 
   3. **공용 속성**, **프레임워크 및 참조**를 선택하고 **새 참조 추가** 단추를 선택합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "72659576"
 
   [단위 테스트 작성](#addTests)으로 이동합니다.
 
-### <a name="objectRef"></a> 개체 또는 라이브러리 파일에 테스트를 연결하려면
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> 개체 또는 라이브러리 파일에 테스트를 연결하려면
 
 - 테스트 중인 코드에서 테스트할 함수를 내보내지 않는 경우 **.obj** 또는 **.lib** 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "72659576"
 
   [단위 테스트 작성](#addTests)으로 이동합니다.
 
-### <a name="sameProject"></a> 동일 프로젝트에 단위 테스트를 추가하려면
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> 동일 프로젝트에 단위 테스트를 추가하려면
 
 1. 유닛 테스트에 필요한 헤더 및 라이브러리 파일을 포함하도록 제품 코드 프로젝트 속성을 수정합니다.
 
@@ -119,7 +119,7 @@ ms.locfileid: "72659576"
 
    3. 포함 및 라이브러리 디렉터리를 편집합니다.
 
-       |||
+       |속성|값|
        |-|-|
        |**포함 디렉터리**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**라이브러리 디렉터리**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -130,11 +130,11 @@ ms.locfileid: "72659576"
 
    [단위 테스트 작성](#addTests)으로 이동합니다.
 
-## <a name="addTests"></a> 단위 테스트 작성
+## <a name="writing-the-unit-tests"></a><a name="addTests"></a> 단위 테스트 작성
 
 1. 각 단위 테스트 코드 파일에서 테스트 중인 프로젝트의 헤더에 대해 `#include` 문을 추가합니다.
 
-2. 테스트 클래스와 메서드를 단위 테스트 코드 파일에 추가합니다. 예를 들면,
+2. 테스트 클래스와 메서드를 단위 테스트 코드 파일에 추가합니다. 예를 들면 다음과 같습니다.
 
    ```cpp
    #include "stdafx.h"
@@ -160,6 +160,6 @@ ms.locfileid: "72659576"
 
 1. **보기** 메뉴에서 **다른 창**, **테스트 탐색기**를 선택합니다.
 
-2. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
    자세한 내용은 [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)을 참조하세요.

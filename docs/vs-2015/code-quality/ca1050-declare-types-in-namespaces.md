@@ -1,5 +1,5 @@
 ---
-title: 'CA1050: 네임 스페이스에서 형식 선언 | Microsoft Docs'
+title: 'CA1050: 네임 스페이스에서 형식을 선언 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c56de70daeabd05215f68024339d5855686d529b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0a4dcc53fac7dc9b7e189686a3b32e2fb4fd030
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653839"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539596"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: 네임스페이스에 형식을 선언하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
@@ -51,7 +51,7 @@ ms.locfileid: "72653839"
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TypesLiveInNamespaces/vb/FxCop.Design.TypesLiveInNamespaces.vb#1)]
 
 ## <a name="example"></a>예제
- 다음 응용 프로그램은 이전에 정의 된 라이브러리를 사용 합니다. 네임 스페이스 외부에 선언 된 형식은 네임 스페이스에 의해 정규화 되지 않은 이름 `Test` 경우에 생성 됩니다. 또한 `Goodspace`에서 `Test` 형식에 액세스 하려면 네임 스페이스 이름이 필요 합니다.
+ 다음 응용 프로그램은 이전에 정의 된 라이브러리를 사용 합니다. 네임 스페이스에 `Test` 의해 정규화 되지 않은 이름으로 네임 스페이스 외부에서 선언 된 형식이 만들어집니다. 또한의 형식에 액세스 하려면 `Test` `Goodspace` 네임 스페이스 이름이 필요 합니다.
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/cs/FxCop.Design.TestTypesLive.cs#1)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/vb/FxCop.Design.TestTypesLive.vb#1)]

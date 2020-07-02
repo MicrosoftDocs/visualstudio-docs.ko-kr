@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 인쇄'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490592"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537893"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 인쇄
 
@@ -36,7 +36,7 @@ ms.locfileid: "69490592"
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   메서드를 사용 하면 **인쇄 미리 보기** 창에 지정 된 개체를 표시할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> 다음 코드에서는 `Sheet1`이라는 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목이 있다고 가정합니다.
+   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>메서드를 사용 하면 **인쇄 미리 보기** 창에 지정 된 개체를 표시할 수 있습니다. 다음 코드에서는 `Sheet1`이라는 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목이 있다고 가정합니다.
 
 ### <a name="to-preview-a-page-before-printing"></a>인쇄 전에 페이지를 미리 보려면
 
@@ -54,7 +54,7 @@ ms.locfileid: "69490592"
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   메서드를 사용 하면 **인쇄 미리 보기** 창에 지정 된 개체를 표시할 수 있습니다. <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>
+   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>메서드를 사용 하면 **인쇄 미리 보기** 창에 지정 된 개체를 표시할 수 있습니다.
 
 ### <a name="to-preview-a-page-before-printing"></a>인쇄 전에 페이지를 미리 보려면
 
@@ -63,7 +63,7 @@ ms.locfileid: "69490592"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트에서 맞춤법 검사](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)

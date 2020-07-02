@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 124716f8c40a8adc0a0ae1a28cda21dcb5e00ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562704"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539817"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 요소
   매핑된 폴더를 나타냅니다.
@@ -39,8 +39,8 @@ ms.locfileid: "62562704"
 
 |특성|설명|
 |---------------|-----------------|
-|**Target**|필요한 **xs: string** 특성입니다.<br /><br /> 배포 루트 폴더를 기준으로, 해당 하는 매핑된 폴더는 SharePoint 설치 폴더의 경로입니다. 지정 된 배포 형식에 의해 결정 됩니다 배포 루트 폴더를 **형식** 특성입니다.<br /><br /> 자세한 내용은 설명을 참조 합니다 **배포 경로** 및 **Deployment Root** 속성을 SharePoint 프로젝트 항목에 [SharePoint 개발 솔루션](../sharepoint/developing-sharepoint-solutions.md)합니다.|
-|**Type**|필요한 **xs: string** 특성입니다.<br /><br /> 매핑된 폴더에 대 한 배포의 형식입니다. 가능한 값에 대 한 자세한 정보에 대 한 설명을 참조 합니다 **배포 유형** 에서 SharePoint 프로젝트 항목의 속성 [SharePoint 개발 솔루션](../sharepoint/developing-sharepoint-solutions.md)합니다.|
+|**Target**|필수 **xs: string** 특성입니다.<br /><br /> 배포 루트 폴더에 상대적인, 매핑된 폴더가 해당 하는 SharePoint 설치의 폴더 경로입니다. 배포 루트 폴더는 **type** 특성으로 지정 된 배포 유형에 따라 결정 됩니다.<br /><br /> 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 경로** 및 **배포 루트** 속성에 대 한 설명을 참조 하세요.|
+|**Type**|필수 **xs: string** 특성입니다.<br /><br /> 매핑된 폴더의 배포 유형입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
@@ -49,20 +49,20 @@ ms.locfileid: "62562704"
 
 |요소|설명|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint 프로젝트 항목을 나타냅니다. 이 요소는의 필수 루트 요소는 *.spdata* 파일입니다.|
+|[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint 프로젝트 항목을 나타냅니다. 이 요소는 *.spdata* 파일의 필수 루트 요소입니다.|
 
 ## <a name="remarks"></a>설명
- 매핑된 폴더에 대 한 자세한 내용은 참조 하세요. [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)합니다.
+ 매핑된 폴더에 대 한 자세한 내용은 [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)를 참조 하세요.
 
 ## <a name="element-information"></a>요소 정보
 
-|||
+|속성|값|
 |-|-|
-|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
 |**스키마 이름**|SharePoint 프로젝트 항목 스키마|
-|**유효성 검사 파일**|ProjectItemModelSchema.xsd|
-|**비어 있을 수 있습니다.**|아니요|
+|**유효성 검사 파일**|ProjectItemModelSchema|
+|**비워 둘 수 있음**|아니요|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)

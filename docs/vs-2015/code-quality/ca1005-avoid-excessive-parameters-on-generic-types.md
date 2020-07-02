@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7e75b2e295a561e026b437b3c62724536a3ac64e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56c69badf76a05351b37a7c8a41a9cacf54f9974
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671980"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539726"
 ---
-# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마십시오.
+# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
@@ -36,7 +36,7 @@ ms.locfileid: "72671980"
  외부에 노출 되는 제네릭 형식에는 두 개 이상의 형식 매개 변수가 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 제네릭 형식에 포함된 형식 매개 변수가 많을수록 각 형식 매개 변수가 무엇을 나타내는지를 파악하거나 기억하기가 더 어렵습니다. 일반적으로 `List<T>`와 같이 하나의 형식 매개 변수를 사용 하 고 `Dictionary<TKey, TValue>`와 같이 두 개의 형식 매개 변수를 사용 하는 것이 명확 합니다. 두 개 이상의 형식 매개 변수가 있는 경우 대부분의 사용자에 게 어려운 문제입니다 (예:의 C# `TooManyTypeParameters<T, K, V>` 또는 `TooManyTypeParameters(Of T, K, V)` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ 제네릭 형식에 포함된 형식 매개 변수가 많을수록 각 형식 매개 변수가 무엇을 나타내는지를 파악하거나 기억하기가 더 어렵습니다. 일반적으로에서와 같이 하나의 형식 매개 변수를 사용 하는 `List<T>` 경우와 같이 두 개의 형식 매개 변수를 사용 하는 것이 명확 `Dictionary<TKey, TValue>` 합니다. 세 개 이상의 형식 매개 변수가 있는 경우 대부분의 사용자에 게 어려움 (예: `TooManyTypeParameters<T, K, V>` c # 또는 `TooManyTypeParameters(Of T, K, V)` 의)이 너무 유용 합니다 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 두 개 이상의 형식 매개 변수를 사용 하도록 디자인을 변경 합니다.
@@ -47,17 +47,17 @@ ms.locfileid: "72671980"
 ## <a name="related-rules"></a>관련 규칙
  [CA1010: 컬렉션은 제네릭 인터페이스를 구현해야 합니다.](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마십시오.](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마세요.](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002: 제네릭 목록을 노출하지 마십시오.](../code-quality/ca1002-do-not-expose-generic-lists.md)
+ [CA1002: 제네릭 목록을 노출하지 마세요.](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: 멤버 시그니처에 제네릭 형식을 중첩하지 마십시오.](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA1006: 멤버 시그니처에 제네릭 형식을 중첩하지 마세요.](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
  [CA1004: 제네릭 메서드는 형식 매개 변수를 제공해야 합니다.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: 제네릭 이벤트 처리기 인스턴스를 사용하십시오.](../code-quality/ca1003-use-generic-event-handler-instances.md)
+ [CA1003: 제네릭 이벤트 처리기 인스턴스를 사용하세요.](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: 적합한 제네릭을 사용하십시오.](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: 적합한 제네릭을 사용하세요.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [제네릭](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
