@@ -8,17 +8,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7b4a15530a43937b4f73fba1779216391c862c11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669026"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545056"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 끊어진 암호화 알고리즘 사용 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
@@ -47,7 +47,7 @@ ms.locfileid: "72669026"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  보다 강력한 암호화 옵션을 사용합니다.
 
-- MD5의 경우 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 제품군(예: <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>)에 해시를 사용합니다.
+- MD5의 경우 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 제품군의 해시를 사용 합니다 (예:,, <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> ).
 
 - DES 및 RC2의 경우 <xref:System.Security.Cryptography.Aes> 암호화를 사용합니다.
 

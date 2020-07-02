@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e30dd2945820a61aa7c96d4e6c6fd59354e0c3ae
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651966"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540740"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: 종료자는 protected여야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
@@ -36,7 +36,7 @@ ms.locfileid: "72651966"
  Public 형식은 패밀리 (protected) 액세스를 지정 하지 않는 종료자를 구현 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 종료자에서는 패밀리 액세스 한정자를 사용해야 합니다. 이 규칙은 C#, Visual Basic 및 Visual C++ 컴파일러에 의해 적용 됩니다.
+ 종료자에서는 패밀리 액세스 한정자를 사용해야 합니다. 이 규칙은 c #, Visual Basic 및 Visual C++ 컴파일러에 의해 적용 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 종료자를 패밀리 액세스 가능 하도록 변경 합니다.
@@ -80,5 +80,5 @@ ms.locfileid: "72651966"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658889"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540844"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
@@ -45,7 +45,7 @@ ms.locfileid: "72658889"
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 MSIL (Microsoft 중간 언어)에서이 규칙을 위반 하는 형식을 보여 줍니다. 또는 Visual Basic .NET을 사용 하 C# 여이 규칙을 위반할 수 없습니다.
+ 다음 예제에서는 MSIL (Microsoft 중간 언어)에서이 규칙을 위반 하는 형식을 보여 줍니다. C # 또는 Visual Basic .NET을 사용 하 여이 규칙을 위반할 수 없습니다.
 
 ```
 

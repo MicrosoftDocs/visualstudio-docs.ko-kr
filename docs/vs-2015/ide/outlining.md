@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db619767725159900adf9b18075c45c020df888d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670368"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544965"
 ---
 # <a name="outlining"></a>개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "72670368"
 
  **편집/개요** 하위 메뉴에서 다음 명령을 찾을 수 있습니다.
 
-|||
+|명령|설명|
 |-|-|
 |선택 영역 숨기기|(Ctrl+M, Ctrl+H) - 정상적으로 개요에 사용할 수 없는 선택한 코드 블록(예: `if` 블록)을 축소합니다. 사용자 지정 영역을 제거하려면 **현재 숨기기 중지**(또는 Ctrl+M, Ctrl+U)를 사용합니다. Visual Basic에서 사용할 수 없습니다.|
 |개요 확장/축소|- 중첩된 축소 섹션에 커서가 있는 경우 가장 안쪽 개요 섹션의 현재 숨김 또는 확장 상태를 반대로 바꿉니다.|
@@ -48,7 +48,7 @@ ms.locfileid: "72670368"
 |개요 표시 중지|(Ctrl+M, Ctrl+P) - 문서 전체에 대한 개요 정보를 모두 제거합니다.|
 |현재 영역 숨기기 중지|(Ctrl+M, Ctrl+U) - 현재 선택한 사용자 정의 영역에 대한 개요 정보를 제거합니다. Visual Basic에서 사용할 수 없습니다.|
 |정의 부분만 보이기|(Ctrl+M, Ctrl+O) - 모든 형식의 멤버를 축소합니다.|
-|블록 축소: \<논리적 경계>|(Visual C++) 삽입 지점이 포함된 함수의 영역을 축소합니다. 예를 들어 삽입 지점이 루프 안에 있는 경우 루프가 숨겨집니다.|
-|모두 축소: \<논리적 구조>|(Visual C++) 함수 내부의 모든 구조를 축소합니다.|
+|블록 축소:\<logical boundary>|(Visual C++) 삽입 지점이 포함된 함수의 영역을 축소합니다. 예를 들어 삽입 지점이 루프 안에 있는 경우 루프가 숨겨집니다.|
+|모두 축소:\<logical structures>|(Visual C++) 함수 내부의 모든 구조를 축소합니다.|
 
  Visual Studio SDK를 사용하여 확장 또는 축소할 텍스트 영역을 정의할 수도 있습니다. [연습: 개요](../extensibility/walkthrough-outlining.md)를 참조하세요.

@@ -1,7 +1,7 @@
 ---
-title: '방법: 호스트 컨트롤의 데이터로 데이터 원본 업데이트'
+title: '방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255665"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541247"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>방법: 호스트 컨트롤의 데이터로 데이터 원본 업데이트
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트
   호스트 컨트롤을 데이터 원본에 바인딩하고 해당 데이터 원본을 컨트롤에 있는 데이터의 변경 내용으로 업데이트할 수 있습니다. 이 프로세스는 크게 다음과 같은 두 가지 단계로 구성되어 있습니다.
 
 1. 컨트롤에 있는 수정된 데이터로 메모리 내 데이터 원본을 업데이트합니다. 일반적으로 메모리 내 데이터 원본은 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>또는 일부 다른 데이터 개체입니다.
@@ -54,7 +54,7 @@ ms.locfileid: "71255665"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>코드를 사용하여 메모리 내 데이터 원본을 자동으로 업데이트하도록 컨트롤을 설정하려면
 
-1. 컨트롤을 데이터 소스에 바인딩하는 <xref:System.Windows.Forms.Binding> 개체의 OnPropertyChanged 모드를 사용 합니다. 다음 두 가지 옵션으로 데이터 원본을 업데이트할 수 있습니다.
+1. <xref:System.Windows.Forms.Binding>컨트롤을 데이터 소스에 바인딩하는 개체의 OnPropertyChanged 모드를 사용 합니다. 다음 두 가지 옵션으로 데이터 원본을 업데이트할 수 있습니다.
 
    - 컨트롤의 유효성을 검사할 때 데이터 원본을 업데이트 하려면이 속성을 DataSourceUpdateMode로 설정 합니다.
 
@@ -76,7 +76,7 @@ ms.locfileid: "71255665"
 
 3. **속성** 창에서 **(DataBindings)** 속성을 확장합니다.
 
-4. **(고급)** 속성 옆에 있는 줄임표 단추 (![VisualStudioEllipsesButton 스크린]샷(../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 스크린 샷"))를 클릭 합니다.
+4. **(고급)** 속성 옆에 있는 줄임표 단추 (![VisualStudioEllipsesButton 스크린 샷](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 스크린 샷"))를 클릭 합니다.
 
 5. **서식 지정 및 고급 바인딩** 대화 상자에서 **데이터 원본 업데이트 모드** 드롭다운 목록을 클릭하고 다음 값 중 하나를 선택합니다.
 
@@ -103,11 +103,11 @@ ms.locfileid: "71255665"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2. 프로젝트에서 `Update` 생성 된 TableAdapter의 메서드를 호출 합니다.
+2. `Update`프로젝트에서 생성 된 TableAdapter의 메서드를 호출 합니다.
 
      TableAdapter는 디자인 타임에 데이터 바인딩된 컨트롤을 문서 또는 통합 문서에 추가할 때 자동으로 생성 됩니다. TableAdapter는 프로젝트의 형식화 된 데이터 집합을 데이터베이스에 연결 합니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)를 참조 하세요.
 
-     다음 코드 예에서는 Northwind 데이터베이스의 Customers 테이블에 대 한 연결이 있고 프로젝트에 이름이 인 TableAdapter `customersTableAdapter` 와 이라는 형식화 된 `northwindDataSet`데이터 집합이 포함 되어 있다고 가정 합니다.
+     다음 코드 예에서는 Northwind 데이터베이스의 Customers 테이블에 대 한 연결이 있고 프로젝트에 이름이 인 TableAdapter와 이라는 형식화 된 데이터 집합이 포함 되어 있다고 가정 합니다 `customersTableAdapter` `northwindDataSet` .
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]

@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 98e825fd5543b928569b99218c9054aff666e0fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918758"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545147"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: serialization 메서드를 올바르게 구현하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를 올바르게 구현](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)을 참조 하세요.
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|범주|Microsoft.Usage|
+|범주|Microsoft 사용|
 |변경 수준|중단-메서드가 어셈블리 외부에 표시 되는 경우입니다.<br /><br /> 중단 되지 않습니다. 메서드가 어셈블리 외부에 표시 되지 않는 경우입니다.|
 
 ## <a name="cause"></a>원인
@@ -48,7 +48,7 @@ Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Serialization 이벤트 처리기는 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>형식의 단일 매개 변수를 사용 하 고 `void`를 반환 하며 `private` 표시 유형을 갖습니다.
+  Serialization 이벤트 처리기는 형식의 단일 매개 변수를 사용 하 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 고를 반환 `void` 하며 표시 유형을 갖습니다 `private` .
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 serialization 이벤트 처리기의 서명, 반환 형식 또는 표시 유형을 수정 합니다.
@@ -56,7 +56,7 @@ Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 올바르게 선언 된 serialization 이벤트 처리기를 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/cs/FxCop.Usage.SerializationEventHandlers.cs#1)]
@@ -71,8 +71,8 @@ Visual Studio에 대 한 최신 설명서는 [CA2238: serialization 메서드를
 
  [CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: 선택적 필드에 deserialization 메서드를 제공하십시오.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: serialization 생성자를 안전하게 하십시오.](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: serialization 생성자를 안전하게 하세요.](../code-quality/ca2120-secure-serialization-constructors.md)

@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2ed433612498a6b7d4b87291311d7fd6efcb0974
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: a66242554de28ab45cc797d523ea7b5a967e9e5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918378"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542976"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: CompareTo의 부담이 큽니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대 한 최신 설명서는 [DA0011: 값비싼 CompareTo](/visualstudio/profiling/da0011-expensive-compareto)를 참조 하세요.  
   
-|||  
+|항목|값|  
 |-|-|  
 |규칙 ID|DA0011|  
 |범주|.NET Framework 사용|  

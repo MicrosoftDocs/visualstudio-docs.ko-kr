@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661066"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545264"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke 선언은 이식 가능해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
@@ -38,12 +38,12 @@ ms.locfileid: "72661066"
 ## <a name="rule-description"></a>규칙 설명
  이 규칙을 위반 하는 다음 시나리오 중 하나가 발생 합니다.
 
-- 반환 값 또는 매개 변수는 `IntPtr`으로 형식화 되어야 하는 경우 고정 크기 정수로 형식화 됩니다.
+- 반환 값 또는 매개 변수는로 형식화 되어야 하는 경우 고정 크기 정수로 형식화 됩니다 `IntPtr` .
 
-- 반환 값 또는 매개 변수는 고정 크기 정수로 형식화 되어야 하는 경우 `IntPtr`으로 형식화 됩니다.
+- 반환 값 또는 매개 변수는 `IntPtr` 고정 크기 정수로 형식화 되어야 하는 경우로 형식화 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- @No__t_0 또는 `UIntPtr`를 사용 하 여 `Int32` 또는 `UInt32` 대신 핸들을 표시 하 여이 위반 문제를 해결할 수 있습니다.
+ 또는 `IntPtr` `UIntPtr` 대신 핸들을 나타내기 위해 또는를 사용 하 여이 위반 문제를 해결할 수 있습니다 `Int32` `UInt32` .
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 경고는 표시 하지 않아야 합니다.
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- 이 예제에서 `nIconIndex` 매개 변수는 32 비트 플랫폼의 경우 4 바이트이 고 64 비트 플랫폼에서는 8 바이트 너비의 `IntPtr`으로 선언 됩니다. 다음 관리 되지 않는 선언에서 `nIconIndex`은 모든 플랫폼에서 부호 없는 4 바이트 정수를 확인할 수 있습니다.
+ 이 예제에서 `nIconIndex` 매개 변수는 `IntPtr` 32 비트 플랫폼의 경우 4 바이트이 고 64 비트 플랫폼에서는 8 바이트 너비의로 선언 됩니다. 다음에 나오는 관리 되지 않는 선언에서 `nIconIndex` 가 모든 플랫폼에서 4 바이트 부호 없는 정수를 확인할 수 있습니다.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -78,5 +78,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [이식성 경고](../code-quality/portability-warnings.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193630"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545537"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "68193630"
 ## <a name="thread-channels"></a>스레드 채널  
  스레드 채널은 하나의 스레드에 대해서만 스레드 상태를 색으로 보여 줍니다. 채널 이름에서 일시 중지하면 지정된 스레드의 시작 함수가 표시됩니다. 동시성 시각화 도우미는 여러 종류의 스레드를 검색합니다. 가장 일반적인 종류가 다음 표에 나와 있습니다.  
   
-|||  
+|스레드|설명|  
 |-|-|  
 |주 스레드|응용 프로그램을 시작한 스레드입니다.|  
 |작업자 스레드|애플리케이션의 주 스레드에 의해 생성된 스레드입니다.|  

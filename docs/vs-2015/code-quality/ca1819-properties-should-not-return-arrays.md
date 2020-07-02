@@ -15,17 +15,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c85efc3e601eb9e0d887043c50b30587e51321e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96d2164cbd6c03cb0d191b2d0c3c4607468209c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668370"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545329"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: 속성은 배열을 반환해서는 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
@@ -42,7 +42,7 @@ ms.locfileid: "72668370"
  이 규칙 위반 문제를 해결 하려면 속성을 메서드로 설정 하거나 컬렉션을 반환 하도록 속성을 변경 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 특성에는 배열을 반환 하는 속성이 포함 될 수 있지만 컬렉션을 반환 하는 속성은 포함 될 수 없습니다. [System.object]에서 파생 된 특성의 속성에 대해 발생 하는 경고를 표시 하지 않을 수 있습니다.<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->클래스. 그렇지 않으면이 규칙에서 경고를 표시 하지 않습니다.
+ 특성에는 배열을 반환 하는 속성이 포함 될 수 있지만 컬렉션을 반환 하는 속성은 포함 될 수 없습니다. [System.object]에서 파생 된 특성의 속성에 대해 발생 하는 경고를 표시 하지 않을 수 있습니다.<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  --> 클래스. 그렇지 않으면이 규칙에서 경고를 표시 하지 않습니다.
 
 ## <a name="example-violation"></a>위반 예
 
@@ -70,7 +70,7 @@ ms.locfileid: "72668370"
 ### <a name="description"></a>설명
  다음 예제에서는를 반환 하도록 속성을 변경 하 여 위반을 수정 합니다.
 
- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+ <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedCollection/cs/FxCop.Performance.PropertyArrayFixedCollection.cs#1)]
@@ -86,11 +86,11 @@ ms.locfileid: "72668370"
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/vb/FxCop.Performance.PropertyModifyViolation.vb#1)]
 
 ### <a name="comments"></a>주석
- 다음 예제에서는 <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>을 반환 하도록 속성을 변경 하 여 위반을 수정 합니다.
+ 다음 예제에서는를 반환 하도록 속성을 변경 하 여 위반을 수정 합니다 <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> .
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/cs/FxCop.Performance.PropertyModifyFixed.cs#1)]
  [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/vb/FxCop.Performance.PropertyModifyFixed.vb#1)]
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1024: 적합한 속성을 사용하십시오.](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: 적합한 속성을 사용하세요.](../code-quality/ca1024-use-properties-where-appropriate.md)

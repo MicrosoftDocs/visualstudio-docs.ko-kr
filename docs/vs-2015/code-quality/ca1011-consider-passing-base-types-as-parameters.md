@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f689dfd6c1d39bbd03d522a33ed8c5639a3da9f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663247"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545485"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: 기본 형식을 매개 변수로 전달해 보십시오.
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: 기본 형식을 매개 변수로 전달해 보세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
@@ -53,7 +53,7 @@ ms.locfileid: "72663247"
   이러한 경우 컴파일러 및 런타임에서 제공 하는 강력한 형식 검사 때문에 코드가 더 강력 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 <xref:System.IO.FileStream> 개체에만 사용할 수 있는 `ManipulateFileStream` 메서드를 보여 줍니다. 두 번째 메서드인 `ManipulateAnyStream`는 <xref:System.IO.Stream>를 사용 하 여 <xref:System.IO.FileStream> 매개 변수를 대체 하 여 규칙을 충족 합니다.
+ 다음 예제에서는 `ManipulateFileStream` 이 규칙을 위반 하는 개체에만 사용할 수 있는 메서드를 보여 줍니다 <xref:System.IO.FileStream> . 두 번째 메서드인 `ManipulateAnyStream` <xref:System.IO.FileStream> 는를 사용 하 여 매개 변수를 대체 하 여 규칙을 충족 합니다 <xref:System.IO.Stream> .
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]

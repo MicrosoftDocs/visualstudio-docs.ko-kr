@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850445"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544991"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>모델링 확장 정의 및 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
 3. VSIX 프로젝트를 솔루션의 시작 프로젝트로 설정합니다.
 
-    - 솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택합니다.
+    - 솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택 합니다.
 
 4. **source.extension.vsixmanifest**를 엽니다. 파일이 매니페스트 편집기에서 열립니다.
 
@@ -72,12 +72,12 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
     2. 코드가 포함된 구성 요소의 경우 **새 자산 추가** 대화 상자에서 다음 필드를 설정합니다.
 
-        |||
+        |필드|값|
         |-|-|
-        |**형식** =|**Microsoft.VisualStudio.MefComponent**|
-        |**Source** =|**현재 솔루션의 프로젝트**|
+        |**입력할** =|**Microsoft.VisualStudio.MefComponent**|
+        |**원본** =|**현재 솔루션의 프로젝트**|
         |**Project** =|*클래스 라이브러리 프로젝트*|
-        |**이 폴더에 포함** =|*(empty)*|
+        |**이 폴더에 포함** =|*비우려면*|
 
          다른 구성 요소 형식의 경우 다음 섹션의 링크를 참조하세요.
 
@@ -97,7 +97,7 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
 #### <a name="to-run-an-extension-during-its-development"></a>개발 중에 확장을 실행하려면
 
-1. [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **디버그** 메뉴에서 **디버깅 시작**을 선택 합니다.
+1. [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **디버그** 메뉴에서 **Start 디버그ging**을 선택합니다.
 
      프로젝트가 빌드되고, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 의 새 인스턴스가 실험적 모드에서 시작됩니다.
 
@@ -109,14 +109,14 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
 3. **디버깅하지 않고 시작** 을 사용했지만 디버거를 사용하려는 경우 Visual Studio의 기본 인스턴스로 돌아갑니다. **디버그** 메뉴에서 **프로세스에 연결**을 클릭합니다. 대화 상자에서 프로그램 이름이 **devenv**인 Visual Studio의 실험적 인스턴스를 선택합니다.
 
-## <a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
  자신의 컴퓨터나 다른 컴퓨터의 Visual Studio 기본 인스턴스에서 확장을 실행하려면 다음 단계를 수행합니다.
 
 1. 사용 중인 컴퓨터에서 확장 프로젝트를 통해 빌드된 **.vsix** 파일을 찾습니다.
 
     1. **솔루션 탐색기**의 프로젝트 바로 가기 메뉴에서 **Windows 탐색기에서 폴더 열기**를 선택합니다.
 
-    2. 파일 **bin\\\*\\** _프로젝트_**vsix** 를 찾습니다.
+    2. 파일 ** \\ \* bin \\ **_을 찾습니다_**. vsix**
 
 2. 확장을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 
@@ -136,9 +136,9 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
 3. 확장을 선택하고 **제거**를 클릭합니다.
 
-   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수 있습니다. 여기서 *% LocalAppData%* 는 일반적으로 *DriveName*: \Users\\*UserName*\AppData\Local입니다.
+   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수 있습니다. 여기서 *% LocalAppData%* 는 일반적으로 *DriveName*: \Users \\ *UserName*\AppData\Local입니다.
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \extensions**
 
 ## <a name="see-also"></a>참고 항목
  [프로필을 정의 하 여 uml 확장](../modeling/define-a-profile-to-extend-uml.md) [사용자 지정 모델링 도구 상자 정의](../modeling/define-a-custom-modeling-toolbox-item.md) [uml 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md) [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

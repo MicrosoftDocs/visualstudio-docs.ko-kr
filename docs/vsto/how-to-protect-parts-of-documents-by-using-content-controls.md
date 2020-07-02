@@ -1,7 +1,7 @@
 ---
 title: '방법: 콘텐츠 컨트롤을 사용 하 여 문서 부분 보호'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 129962209d8cfa541a34bc1575a73382cd63d7c4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254672"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541351"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>방법: 콘텐츠 컨트롤을 사용 하 여 문서 부분 보호
   문서의 일부를 보호하는 경우 사용자가 문서의 해당 부분에서 내용을 변경하거나 삭제할 수 없습니다. 콘텐츠 컨트롤을 사용하여 Microsoft Office Word 문서 부분을 보호할 수 있는 여러 가지 방법이 있습니다.
@@ -34,10 +34,10 @@ ms.locfileid: "71254672"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="EditDeleteControl"></a>콘텐츠 컨트롤 보호
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>콘텐츠 컨트롤 보호
  디자인 타임 또는 런타임에 문서 수준 프로젝트에서 컨트롤의 속성을 설정하여 사용자가 콘텐츠 컨트롤을 편집하거나 삭제하는 것을 방지할 수 있습니다.
 
- VSTO 추가 기능 프로젝트를 사용하여 런타임에 문서에 추가하는 콘텐츠 컨트롤을 보호할 수도 있습니다. 자세한 내용은 [방법: Word 문서](../vsto/how-to-add-content-controls-to-word-documents.md)에 콘텐츠 컨트롤을 추가 합니다.
+ VSTO 추가 기능 프로젝트를 사용하여 런타임에 문서에 추가하는 콘텐츠 컨트롤을 보호할 수도 있습니다. 자세한 내용은 [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)를 참조 하세요.
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>디자인 타임에 콘텐츠 컨트롤을 보호하려면
 
@@ -53,7 +53,7 @@ ms.locfileid: "71254672"
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>런타임에 콘텐츠 컨트롤을 보호하려면
 
-1. 콘텐츠 컨트롤의 `LockContentControl` 속성을 true로 설정 하 여 사용자가 컨트롤을 편집 하지 못하도록 하 고 속성을 true로 설정 하 여 사용자가 컨트롤을 삭제 하지 못하도록 합니다 `LockContents` .
+1. `LockContents`콘텐츠 컨트롤의 속성을 **true** 로 설정 하 여 사용자가 컨트롤을 편집 하지 못하도록 하 고 속성을 `LockContentControl` **true** 로 설정 하 여 사용자가 컨트롤을 삭제 하지 못하도록 합니다.
 
      다음 코드 예제에서는 문서 수준 프로젝트에서 두 가지 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 개체의 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 및 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 속성을 사용하는 방법을 보여 줍니다. 이 코드를 실행하려면 프로젝트의 `ThisDocument` 클래스에 코드를 추가하고 `AddProtectedContentControls` 이벤트 처리기에서 `ThisDocument_Startup` 메서드를 호출합니다.
 
@@ -82,7 +82,7 @@ ms.locfileid: "71254672"
 2. 리본에서 **개발자** 탭을 클릭합니다.
 
     > [!NOTE]
-    > **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)메뉴에 개발자 탭을 표시 합니다.
+    > **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발자 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)를 참조 하세요.
 
 3. **컨트롤** 그룹에서 **그룹** 드롭다운 단추를 클릭 한 다음 **그룹**을 클릭 합니다.
 

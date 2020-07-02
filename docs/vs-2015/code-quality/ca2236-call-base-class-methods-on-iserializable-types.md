@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1d06d4acff24b724388e36de66038f563b1f5dc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a03192ac8a5b59558dc39a32f55e8177dc249365
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666703"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545186"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: ISerializable 형식에서 기본 클래스 메서드를 호출하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
 |CheckId|CA2236|
@@ -33,23 +33,23 @@ ms.locfileid: "72666703"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 형식은 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스를 구현 하는 형식에서 파생 되 고 다음 조건 중 하나에 해당 합니다.
+ 형식은 인터페이스를 구현 하는 형식에서 파생 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 되 고 다음 조건 중 하나에 해당 합니다.
 
-- 형식은 serialization 생성자를 구현 합니다. 즉, <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 매개 변수 시그니처를 사용 하는 생성자 이지만 기본 형식의 serialization 생성자는 호출 하지 않습니다.
+- 형식은 serialization 생성자, 즉, 매개 변수 시그니처를 사용 하는 생성자를 구현 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 하지만 기본 형식의 serialization 생성자를 호출 하지 않습니다.
 
-- 형식이 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 메서드를 구현 하지만 기본 형식의 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드를 호출 하지 않는 경우
+- 형식은 메서드를 구현 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 하지만 기본 형식의 메서드를 호출 하지 않습니다 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> .
 
 ## <a name="rule-description"></a>규칙 설명
- 사용자 지정 serialization 프로세스에서 형식은 필드를 serialize 하는 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드를 구현 하 고 serialization 생성자를 구현 하 여 필드를 역직렬화 합니다. 형식이 <xref:System.Runtime.Serialization.ISerializable> 인터페이스를 구현 하는 형식에서 파생 되는 경우 기본 형식 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드 및 serialization 생성자를 호출 하 여 기본 형식의 필드를 serialize/deserialize 합니다. 그렇지 않으면 형식이 serialize 되지 않고 올바르게 serialize 되지 않습니다. 파생 형식이 새 필드를 추가 하지 않는 경우 형식에서 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드나 serialization 생성자를 구현 하거나 해당 하는 기본 형식을 호출할 필요가 없습니다.
+ 사용자 지정 serialization 프로세스에서 형식은 메서드를 구현 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 하 여 해당 필드를 serialize 하 고 serialization 생성자를 구현 하 여 필드를 역직렬화 합니다. 형식이 인터페이스를 구현 하는 형식에서 파생 된 경우 기본 형식 <xref:System.Runtime.Serialization.ISerializable> <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드 및 serialization 생성자를 호출 하 여 기본 형식의 필드를 직렬화/역직렬화 해야 합니다. 그렇지 않으면 형식이 serialize 되지 않고 올바르게 serialize 되지 않습니다. 파생 형식이 새 필드를 추가 하지 않으면 형식이 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드 또는 serialization 생성자를 구현 하거나 해당 하는 기본 형식을 호출할 필요가 없습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 해당 파생 형식 메서드나 생성자에서 기본 형식 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드 또는 serialization 생성자를 호출 합니다.
+ 이 규칙 위반 문제를 해결 하려면 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 해당 파생 형식 메서드나 생성자에서 기본 형식 메서드 또는 serialization 생성자를 호출 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 기본 클래스의 serialization 생성자 및 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> 메서드를 호출 하 여 규칙을 충족 하는 파생 형식을 보여 줍니다.
+ 다음 예제에서는 기본 클래스의 serialization 생성자와 메서드를 호출 하 여 규칙을 충족 하는 파생 형식을 보여 줍니다 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> .
 
  [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CallBaseISerializable/cs/FxCop.Usage.CallBaseISerializable.cs#1)]
  [!code-vb[FxCop.Usage.CallBaseISerializable#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CallBaseISerializable/vb/FxCop.Usage.CallBaseISerializable.vb#1)]
@@ -63,8 +63,8 @@ ms.locfileid: "72666703"
 
  [CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: 선택적 필드에 deserialization 메서드를 제공하십시오.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: serialization 생성자를 안전하게 하십시오.](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: serialization 생성자를 안전하게 하세요.](../code-quality/ca2120-secure-serialization-constructors.md)

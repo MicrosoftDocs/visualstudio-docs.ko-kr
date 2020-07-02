@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 709bc3dea92752d9e18c3163fe43864f5896471c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fab79fd4daab98c6cade9271b32c45b5ae4b4332
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666767"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545199"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
 |CheckId|CA2235|
@@ -36,13 +36,13 @@ ms.locfileid: "72666767"
  serialize할 수 없는 형식의 인스턴스 필드가 serialize할 수 있는 형식에 정의되었습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- Serializable 형식은 <xref:System.SerializableAttribute?displayProperty=fullName> 특성으로 표시 된 형식입니다. 형식이 serialize 되 면 형식에 serialize 할 수 없는 형식의 인스턴스 필드가 포함 된 경우 <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 예외가 throw 됩니다.
+ Serialize 할 수 있는 형식은 특성으로 표시 되는 형식입니다 <xref:System.SerializableAttribute?displayProperty=fullName> . 형식이 serialize 될 때 <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 형식이 serialize 할 수 없는 형식의 인스턴스 필드를 포함 하는 경우 예외가 throw 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 직렬화 할 수 없는 필드에 <xref:System.NonSerializedAttribute?displayProperty=fullName> 특성을 적용 합니다.
+ 이 규칙 위반 문제를 해결 하려면 <xref:System.NonSerializedAttribute?displayProperty=fullName> 직렬화 할 수 없는 필드에 특성을 적용 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 필드의 인스턴스를 serialize 및 deserialize 할 수 있도록 하는 <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> 형식이 선언 된 경우에만이 규칙에서 경고를 표시 하지 않습니다.
+ <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName>필드의 인스턴스를 serialize 및 deserialize 할 수 있도록 하는 형식을 선언 하는 경우에만이 규칙에서 경고를 표시 하지 않습니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는 규칙을 위반 하는 형식 및 규칙을 충족 하는 형식을 보여 줍니다.
@@ -59,8 +59,8 @@ ms.locfileid: "72666767"
 
  [CA2238: serialization 메서드를 올바르게 구현하십시오.](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: 선택적 필드에 deserialization 메서드를 제공하십시오.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: serialization 생성자를 안전하게 하십시오.](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: serialization 생성자를 안전하게 하세요.](../code-quality/ca2120-secure-serialization-constructors.md)

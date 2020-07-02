@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669174"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544016"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
@@ -44,18 +44,18 @@ ms.locfileid: "72669174"
 |------------|--------------------------|
 |특성|<xref:System.Attribute?displayProperty=fullName>|
 |컬렉션|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
-|사전|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
+|Dictionary|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
-|이벤트|이벤트 처리기 대리자|
+|이벤트 처리기|이벤트 처리기 대리자|
 |예외|<xref:System.Exception?displayProperty=fullName>|
 |사용 권한|<xref:System.Security.IPermission?displayProperty=fullName>|
-|Queue|<xref:System.Collections.Queue?displayProperty=fullName>|
+|큐|<xref:System.Collections.Queue?displayProperty=fullName>|
 |스택|<xref:System.Collections.Stack?displayProperty=fullName>|
-|스트림|<xref:System.IO.Stream?displayProperty=fullName>|
+|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
 
  또한 다음 접미사를 사용 하면 안 **됩니다.**
 
-- 대리자(delegate)
+- 대리자
 
 - Enum
 
@@ -74,5 +74,5 @@ ms.locfileid: "72669174"
 ## <a name="related-rules"></a>관련 규칙
  [CA1710: 식별자에는 올바른 접미사를 사용해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [특성](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: 이벤트 및 대리자](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

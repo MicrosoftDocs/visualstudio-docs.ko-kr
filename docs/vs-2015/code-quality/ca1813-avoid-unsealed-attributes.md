@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fe5967ef099794b6c71029e9d03d959dd83b01dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d86f4a9ecbdfff451fed21f93c0fe6a7679d471
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647063"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543951"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: 봉인되지 않은 특성을 사용하지 마십시오.
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: 봉인되지 않은 특성을 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
@@ -33,10 +33,10 @@ ms.locfileid: "72647063"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- Public 형식은 <xref:System.Attribute?displayProperty=fullName>에서 상속 되 고, abstract가 아니고, 봉인 되지 않습니다 `NotInheritable` (Visual Basic).
+ 공용 형식이에서 상속 <xref:System.Attribute?displayProperty=fullName> 되 고,가 abstract가 아니고, Visual Basic에서 봉인 되지 않습니다 `NotInheritable` .
 
 ## <a name="rule-description"></a>규칙 설명
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 클래스 라이브러리는 사용자 지정 특성을 검색하는 메서드를 제공합니다. 기본적으로 이러한 메서드는 특성 상속 계층 구조를 검색 합니다. 예 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> 들어 지정 된 특성 유형 또는 지정 된 특성 유형을 확장 하는 특성 유형을 검색 합니다. 특성을 봉인 하면 상속 계층 구조를 통해 검색이 제거 되 고 성능이 향상 될 수 있습니다.
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 클래스 라이브러리는 사용자 지정 특성을 검색하는 메서드를 제공합니다. 기본적으로 이러한 메서드는 특성 상속 계층 구조를 검색 합니다. 예를 들어 지정 된 특성 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> 유형 또는 지정 된 특성 유형을 확장 하는 모든 특성 유형을 검색 합니다. 특성을 봉인 하면 상속 계층 구조를 통해 검색이 제거 되 고 성능이 향상 될 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 특성 유형을 봉인 하거나 abstract로 설정 합니다.
@@ -51,9 +51,9 @@ ms.locfileid: "72647063"
  [!code-vb[FxCop.Performance.AttributesSealed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.AttributesSealed/vb/FxCop.Performance.AttributesSealed.vb#1)]
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1019: 특성 인수의 접근자를 정의하십시오.](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019: 특성 인수의 접근자를 정의하세요.](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1018: 특성을 AttributeUsageAttribute로 표시하십시오.](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+ [CA1018: AttributeUsageAttribute로 특성을 표시하세요.](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [특성](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

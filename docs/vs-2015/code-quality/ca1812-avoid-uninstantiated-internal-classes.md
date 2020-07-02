@@ -15,17 +15,17 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5a36ee8cffc221d15243ff72e2e71558e867319
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 401fbfbccfeeeeec5cbdc0e791b110d1b5f0201b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645402"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543977"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
@@ -50,23 +50,23 @@ ms.locfileid: "72645402"
 
 - 컴파일러에서 내보낸 배열 형식
 
-- 인스턴스화할 수 없고 `static` (`Shared` Visual Basic) 메서드만 정의 하는 형식입니다.
+- 인스턴스화할 수 없고 `static` (Visual Basic) 메서드만 정의 하는 형식입니다 `Shared` .
 
-  분석 중인 어셈블리에 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>를 적용 하는 경우 다른 `friend` 어셈블리에서 필드를 사용 하 고 있는지 여부를 확인할 수 없으므로 `internal`으로 표시 된 생성자에서는이 규칙이 발생 하지 않습니다.
+  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>분석 중인 어셈블리에 적용 하는 경우 `internal` 다른 어셈블리에서 필드를 사용 하 고 있는지 여부를 확인할 수 없기 때문에로 표시 된 생성자에서이 규칙이 발생 하지 않습니다 `friend` .
 
-  @No__t_0 코드 분석에서 이러한 제한을 해결할 수는 없지만, 모든 `friend` 어셈블리가 분석에 있으면 내부 생성자에서 외부 독립형 FxCop가 발생 합니다.
+  코드 분석에서 이러한 제한을 해결할 수 없는 경우에도 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] `friend` 분석에 모든 어셈블리가 있는 경우 내부 생성자에서 외부 독립 실행형 FxCop가 발생 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 형식을 제거 하거나 해당 형식을 사용 하는 코드를 추가 합니다. 형식에 정적 메서드만 포함 된 경우 다음 중 하나를 형식에 추가 하 여 컴파일러가 기본 공용 인스턴스 생성자를 내보내지 않도록 합니다.
 
-- @No__t_0 버전 1.0 및 1.1를 대상으로 하는 형식의 전용 생성자입니다.
+- 버전 1.0 및 1.1를 대상으로 하는 형식의 전용 생성자 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 입니다.
 
-- @No__t_2를 대상으로 하는 형식에 대 한 `static` (Visual Basic의 `Shared`) 한정자입니다.
+- `static` `Shared` 을 대상으로 하는 형식에 대 한 (Visual Basic) 한정자 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] 입니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시 하지 않는 것이 안전 합니다. 다음과 같은 상황에서는이 경고를 표시 하지 않는 것이 좋습니다.
 
-- 클래스는 <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>와 같은 런타임에 바인딩된 리플렉션 메서드를 통해 생성 됩니다.
+- 클래스는와 같은 런타임에 바인딩된 리플렉션 메서드를 통해 만들어집니다 <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> .
 
 - 클래스는 런타임 또는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]에 의해 자동으로 만들어집니다. 이러한 예로 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 또는 <xref:System.Web.IHttpHandler?displayProperty=fullName>를 구현하는 클래스를 들 수 있습니다.
 
@@ -94,8 +94,8 @@ ms.locfileid: "72645402"
   이러한 상황에서는이 경고를 표시 하지 않는 것이 좋습니다.
 
 ## <a name="related-rules"></a>관련 규칙
- [CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: 호출되지 않는 전용 코드를 사용하지 마세요.](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: 사용되지 않은 매개 변수를 검토하십시오.](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: 사용되지 않은 매개 변수를 검토하세요.](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: 사용되지 않는 로컬 항목을 제거하십시오.](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: 사용되지 않는 로컬 항목을 제거하세요.](../code-quality/ca1804-remove-unused-locals.md)

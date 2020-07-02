@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5604b697af1716e918f3a0f6d9a26ddbe70fc0b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfbb9082d557c8e67ddebf0237293364d54a65cf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672963"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545134"
 ---
-# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: 선택적 필드에 deserialization 메서드를 제공하십시오.
+# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|항목|값|
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
@@ -33,10 +33,10 @@ ms.locfileid: "72672963"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 형식에 <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> 특성으로 표시 되는 필드가 있으며, 형식이 역직렬화 이벤트 처리 메서드를 제공 하지 않습니다.
+ 형식에는 특성으로 표시 되는 필드가 <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> 있으며,이 형식은 역직렬화 이벤트 처리 메서드를 제공 하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- @No__t_0 특성은 serialization에 영향을 주지 않습니다. 특성으로 표시 된 필드는 serialize 됩니다. 그러나 역직렬화에서 필드는 무시 되 고 해당 형식과 연결 된 기본값을 유지 합니다. 직렬화 해제 프로세스 중에 필드를 설정 하려면 역직렬화 이벤트 처리기를 선언 해야 합니다.
+ <xref:System.Runtime.Serialization.OptionalFieldAttribute>특성은 serialization에 영향을 주지 않습니다. 특성으로 표시 된 필드는 serialize 됩니다. 그러나 역직렬화에서 필드는 무시 되 고 해당 형식과 연결 된 기본값을 유지 합니다. 직렬화 해제 프로세스 중에 필드를 설정 하려면 역직렬화 이벤트 처리기를 선언 해야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 역직렬화 이벤트 처리 메서드를 형식에 추가 합니다.
@@ -61,6 +61,6 @@ ms.locfileid: "72672963"
 
  [CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2120: serialization 생성자를 안전하게 하십시오.](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: serialization 생성자를 안전하게 하세요.](../code-quality/ca2120-secure-serialization-constructors.md)
