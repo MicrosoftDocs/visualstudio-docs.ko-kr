@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: deac5827aa38039099f1d0f5e621d473db96743d
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574379"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835604"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>스마트 호스트 도우미 인터페이스 구현
 [IDebugDocumentHelper 인터페이스](../winscript/reference/idebugdocumenthelper-interface.md)는 스마트 호스팅에 필요한 많은 인터페이스에 대한 구현을 제공하기 때문에 활성 디버깅을 위한 스마트 호스트를 만드는 작업을 크게 간소화합니다.  

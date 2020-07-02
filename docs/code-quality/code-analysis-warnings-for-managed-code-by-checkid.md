@@ -187,6 +187,7 @@ f1_keywords:
 - CA2013
 - CA2014
 - CA2015
+- CA2016
 - CA2100
 - CA2101
 - CA2102
@@ -289,12 +290,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814813"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835435"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -475,6 +476,7 @@ ms.locfileid: "85814813"
 | CA2013 | [CA2013: 값 형식과 함께 ReferenceEquals를 사용하지 마세요.](ca2013.md) | 를 사용 하 여 값을 비교할 때 <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> objA와 Obja가 값 형식이 면 메서드로 전달 되기 전에 boxing 됩니다 <xref:System.Object.ReferenceEquals%2A> . 즉, objA와 Obja가 모두 값 형식의 동일한 인스턴스를 나타내는 경우에도 <xref:System.Object.ReferenceEquals%2A> 메서드에서 false를 반환 합니다. |
 | CA2014 | [CA2014: 루프에서 stackalloc을 사용 하지 마십시오.](ca2014.md) | Stackalloc에 의해 할당 된 스택 공간은 현재 메서드 호출의 끝 에서만 해제 됩니다.  루프에서이를 사용 하면 바인딩되지 않은 스택 증가 및 최종 스택 오버플로 조건이 발생할 수 있습니다. |
 | CA2015 | [CA2015: MemoryManager T에서 파생 된 형식에 대 한 종료자를 정의 하지 않습니다. &lt;&gt;](ca2015.md) | 에서 파생 된 형식에 종료자를 추가 하면에서 <xref:System.Buffers.MemoryManager%601> 아직 사용 중인 메모리를 해제할 수 있습니다 <xref:System.Span%601> . |
+| CA2016 | [CA2016: 하나를 사용 하는 메서드에 CancellationToken 매개 변수를 전달 합니다.](ca2016.md) | `CancellationToken`매개 변수를 사용 하 여 작업 취소 알림이 제대로 전파 되는지 확인 하거나 `CancellationToken.None` 의도적으로 토큰을 전파 하지 않도록 명시적으로 전달 하는 메서드에 매개 변수를 전달 합니다. |
 | CA2100 | [CA2100: 보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.](../code-quality/ca2100.md) | 메서드가 메서드에 대한 문자열 인수로부터 만들어진 문자열을 사용하여 System.Data.IDbCommand.CommandText 속성을 설정합니다. 이 규칙에서는 문자열 인수에 사용자 입력이 포함된 것으로 가정합니다. 사용자 입력으로부터 만들어진 SQL 명령 문자열은 SQL 삽입 공격에 취약합니다. |
 | CA2101 |[CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101.md) | 플랫폼 호출 멤버가 부분 신뢰 호출자를 허용하고, 문자열 매개 변수를 사용하고, 문자열을 명시적으로 마샬링하지 않습니다. 이렇게 하면 보안상 위험할 수 있습니다. |
 | CA2102 | [CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하세요.](../code-quality/ca2102.md) | RuntimeCompatibilityAttribute로 표시되지 않거나 RuntimeCompatibility(WrapNonExceptionThrows = false)로 표시된 어셈블리의 멤버에는 System.Exception을 처리하는 catch 블록이 포함되며 바로 뒤의 일반 catch 블록은 포함되지 않습니다. |
