@@ -1,7 +1,7 @@
 ---
-title: 프로젝트 항목의 속성 유지 | 마이크로 소프트 문서
+title: 프로젝트 항목의 속성 유지 | Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
@@ -11,23 +11,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15c280f15436a5e27bcc0dcc4d2fb9e9bdd82933
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702205"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906193"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>프로젝트 항목의 속성 유지
-원본 파일의 작성자등 프로젝트 항목에 추가하는 속성을 유지/할 수 있습니다. 프로젝트 파일에 속성을 저장하여 이 작업을 수행할 수 있습니다.
+프로젝트 항목에 추가 하는 속성 (예: 소스 파일의 작성자)을 유지 하려고 할 수 있습니다. 프로젝트 파일에 속성을 저장 하 여이 작업을 수행할 수 있습니다.
 
- 프로젝트 파일에 속성을 유지하는 첫 번째 단계는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 프로젝트의 계층 구조를 인터페이스로 가져오는 것입니다. 자동화를 사용하거나 을 사용하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>이 인터페이스를 가져올 수 있습니다. 인터페이스를 가져오면 이 인터페이스를 사용하여 현재 선택된 프로젝트 항목을 결정할 수 있습니다. 프로젝트 항목 ID가 있으면 속성을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 추가하는 데 사용할 수 있습니다.
+ 프로젝트 파일에서 속성을 유지 하는 첫 번째 단계는 프로젝트의 계층 구조를 인터페이스로 가져오는 것입니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . 자동화를 사용 하거나를 사용 하 여이 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . 인터페이스를 가져온 후에는이 인터페이스를 사용 하 여 현재 선택 된 프로젝트 항목을 확인할 수 있습니다. 프로젝트 항목 ID가 있으면를 사용 하 여 속성을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 추가할 수 있습니다.
 
- 다음 절차에서는 프로젝트 파일의 *VsPkg.cs* 값으로 `Author` `Tom` VsPkg.cs 속성을 유지합니다.
+ 다음 절차에서는 *VsPkg.cs* `Author` `Tom` 프로젝트 파일의 값을 사용 하 여 VsPkg.cs 속성을 유지 합니다.
 
-## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE 개체를 사용하여 프로젝트 계층구조를 가져오려면
+## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE 개체를 사용 하 여 프로젝트 계층 구조를 가져오려면
 
-1. VSPackage에 다음 코드를 추가합니다.
+1. VSPackage에 다음 코드를 추가 합니다.
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -39,9 +39,9 @@ ms.locfileid: "80702205"
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>DTE 개체를 사용하여 프로젝트 항목 속성을 유지하려면
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>DTE 개체를 사용 하 여 프로젝트 항목 속성을 유지 하려면
 
-1. 이전 프로시저의 메서드에 지정된 코드에 다음 코드를 추가합니다.
+1. 이전 절차의 메서드에 지정 된 코드에 다음 코드를 추가 합니다.
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -56,9 +56,9 @@ ms.locfileid: "80702205"
     }
     ```
 
-## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitor선택을 사용하여 프로젝트 계층구조를 가져오려면
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection을 사용 하 여 프로젝트 계층 구조를 가져오려면
 
-1. VSPackage에 다음 코드를 추가합니다.
+1. VSPackage에 다음 코드를 추가 합니다.
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -100,9 +100,9 @@ ms.locfileid: "80702205"
     }
     ```
 
-## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>프로젝트 계층 구조가 지정된 선택한 프로젝트 항목 속성을 유지하려면
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>프로젝트 계층 구조가 지정 된 경우 선택한 프로젝트 항목 속성을 유지 하려면
 
-1. 이전 프로시저의 메서드에 지정된 코드에 다음 코드를 추가합니다.
+1. 이전 절차의 메서드에 지정 된 코드에 다음 코드를 추가 합니다.
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -113,18 +113,18 @@ ms.locfileid: "80702205"
     }
     ```
 
-## <a name="to-verify-that-the-property-is-persisted"></a>속성이 유지되는지 확인하려면
+## <a name="to-verify-that-the-property-is-persisted"></a>속성이 유지 되는지 확인 하려면
 
-1. 먼저 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션을 열고 만들 수 있습니다.
+1. 를 시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 하 고 솔루션을 열거나 만듭니다.
 
-2. **솔루션 탐색기에서**VsPkg.cs 프로젝트 항목을 선택합니다.
+2. **솔루션 탐색기**에서 프로젝트 항목 VsPkg.cs를 선택 합니다.
 
-3. 중단점을 사용하거나 VSPackage가 로드되고 SetItemAttribute가 실행되는지 확인합니다.
+3. 중단점을 사용 하거나, VSPackage가 로드 되 고 SetItemAttribute가 실행 되는지 확인 합니다.
 
    > [!NOTE]
-   > UI 컨텍스트에서 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>VSPackage를 자동 로드할 수 있습니다. 자세한 내용은 [VS패키지 로드 를](../extensibility/loading-vspackages.md)참조하십시오.
+   > UI 컨텍스트에서 VSPackage을 autoload 수 있습니다 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> . 자세한 내용은 [Load vspackage](../extensibility/loading-vspackages.md)을 (를) 참조 하세요.
 
-4. 메모장에서 프로젝트 파일을 닫고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 엽니다. \<다음과 같이 Tom 값이 있는 작성자> 태그가 표시됩니다.
+4. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]메모장에서 프로젝트 파일을 닫았다가 엽니다. 다음과 \<Author> 같이 Tom 값을 가진 태그가 표시 됩니다.
 
    ```xml
    <Compile Include="VsPkg.cs">

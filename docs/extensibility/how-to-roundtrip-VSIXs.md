@@ -1,19 +1,19 @@
 ---
 title: 확장을 왕복 하는 방법
 ms.date: 06/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
 ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269059"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905780"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>방법: Visual Studio 2019/2017 및 Visual Studio 2015과 호환 되는 확장 만들기
 
@@ -29,11 +29,11 @@ Visual Studio 2019/2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visu
 1. 올바른 NuGet 패키지를 가져옵니다.
 2. 확장 매니페스트 업데이트:
     * 설치 대상
-    * 전제 조건
+    * 사전 요구 사항
 3. 업데이트 .Csproj:
     * `<MinimumVisualStudioVersion>`를 업데이트합니다.
     * `<VsixType>` 속성 추가
-    * 디버깅 속성 `($DevEnvDir)` 3 번 추가 합니다.
+    * 디버깅 속성을 `($DevEnvDir)` 3 번 추가 합니다.
     * 빌드 도구 및 대상 가져오기에 대 한 조건을 추가 합니다.
 
 4. 빌드 및 테스트
@@ -45,20 +45,20 @@ Visual Studio 2019/2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visu
 * VS SDK가 설치 된 Visual Studio 2015
 * 확장성 워크 로드가 설치 된 Visual Studio 2019 또는 2017
 
-## <a name="recommended-approach"></a>권장 방법
+## <a name="recommended-approach"></a>권장 접근 방식
 
 Visual Studio 2019 또는 2017 대신 Visual Studio 2015을 사용 하 여 업그레이드를 시작 하는 것이 좋습니다. Visual Studio 2015에서 개발 하는 주요 혜택은 Visual Studio 2015에서 사용할 수 없는 어셈블리를 참조 하지 않도록 하는 것입니다. Visual Studio 2019 또는 2017에서 개발 하는 경우 Visual Studio 2019 또는 2017에만 존재 하는 어셈블리에 대 한 종속성이 발생할 수 있습니다.
 
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>Project. json에 대 한 참조가 없는지 확인 합니다.
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>project.js에 대 한 참조가 없는지 확인
 
-이 문서의 뒷부분에서 * *.csproj* 파일에 조건부 import 문을 삽입 합니다. NuGet 참조가 *project. json*에 저장 된 경우에는이 작업이 수행 되지 않습니다. 따라서 모든 NuGet 참조를 *패키지 .config* 파일로 이동 하는 것이 좋습니다.
-프로젝트에 *프로젝트. json* 파일이 포함 되어 있는 경우:
+이 문서의 뒷부분에서 **.csproj* 파일에 조건부 import 문을 삽입 합니다. NuGet 참조가project.js에 저장 된 경우 *에*는이 작업이 수행 되지 않습니다. 따라서 모든 NuGet 참조를 *packages.config* 파일로 이동 하는 것이 좋습니다.
+프로젝트에 파일 *에 대 한project.js* 포함 되어 있는 경우:
 
-* *Project. json*의 참조를 기록해 둡니다.
-* **솔루션 탐색기**에서 프로젝트의 *프로젝트. json* 파일을 삭제 합니다. 이렇게 하면 *프로젝트에서 json* 파일이 삭제 되 고 프로젝트에서 제거 됩니다.
+* *project.js*의 참조를 기록해 둡니다.
+* **솔루션 탐색기**에서 파일 *의project.js* 를 프로젝트에서 삭제 합니다. 그러면 파일 *에서project.js* 삭제 되 고 프로젝트에서 제거 됩니다.
 * NuGet 참조를 프로젝트에 다시 추가 합니다.
   * **솔루션** 을 마우스 오른쪽 단추로 클릭 하 고 **솔루션용 NuGet 패키지 관리**를 선택 합니다.
-  * Visual Studio에서 자동으로 *패키지 .config* 파일을 만듭니다.
+  * Visual Studio에서 자동으로 *packages.config* 파일을 만듭니다.
 
 > [!NOTE]
 > 프로젝트에 EnvDTE 패키지가 포함 된 경우 **참조 추가** 를 선택 하 고 적절 한 참조를 추가 하 **여 참조를** 마우스 오른쪽 단추로 클릭 하 여 추가 해야 할 수 있습니다. NuGet 패키지를 사용 하면 프로젝트를 빌드하는 동안 오류가 발생할 수 있습니다.
@@ -69,10 +69,10 @@ Visual Studio 2019 또는 2017 대신 Visual Studio 2015을 사용 하 여 업�
 
 Visual Studio 2015 및 2019/2017에서 VSIXv3를 빌드 및 배포 하려면 다음 NuGet 패키지가 필요 합니다.
 
-Version | 빌드된 도구
+버전 | 빌드된 도구
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2019 또는 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2015 | VisualStudio입니다. 14.0
+Visual Studio 2019 또는 2017 | Microsoft.
 
 이를 수행하려면:
 
@@ -109,7 +109,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 </Prerequisites>
 ```
 
-* 파일을 저장한 후 닫습니다.
+* 파일을 저장하고 닫습니다.
 
 > [!NOTE]
 > 모든 버전의 Visual Studio 2019 또는 2017과 호환 되도록 필수 구성 요소 버전을 수동으로 편집 해야 할 수도 있습니다. 이는 디자이너가 현재 버전의 Visual Studio (예: 15.0.26208.0)로 최소 버전을 삽입 하기 때문입니다. 그러나 다른 사용자가 이전 버전을 가질 수 있으므로이를 15.0으로 수동으로 편집 하는 것이 좋습니다.
@@ -127,7 +127,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. MinimumVisualStudioVersion 업데이트
 
-* 최소 visual studio 버전을 `$(VisualStudioVersion)`로 설정 하 고 해당 버전에 대 한 조건문을 추가 합니다. 이러한 태그가 없는 경우 추가 합니다. 태그가 아래와 같이 설정 되었는지 확인 합니다.
+* 최소 visual studio 버전을로 설정 하 `$(VisualStudioVersion)` 고이에 대 한 조건문을 추가 합니다. 이러한 태그가 없는 경우 추가 합니다. 태그가 아래와 같이 설정 되었는지 확인 합니다.
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -136,10 +136,10 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 ### <a name="2-add-the-vsixtype-property"></a>2. VsixType 속성을 추가 합니다.
 
-* 속성 그룹에 다음 태그 `<VsixType>v3</VsixType>`를 추가 합니다.
+* 속성 그룹에 다음 태그를 추가 `<VsixType>v3</VsixType>` 합니다.
 
 > [!NOTE]
-> `<OutputType></OutputType>` 태그 아래에이를 추가 하는 것이 좋습니다.
+> 태그 아래에이를 추가 하는 것이 좋습니다 `<OutputType></OutputType>` .
 
 ### <a name="3-add-the-debugging-properties"></a>3. 디버깅 속성 추가
 
@@ -163,33 +163,33 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. 빌드 도구 가져오기에 조건 추가
 
-* Microsoft... n e t. n e t. n e t. n e t 참조가 있는 `<import>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' != '14.0' And`을 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
+* Microsoft... n e t. n e t. n e t 참조가 있는 태그에 조건문을 추가 `<import>` 합니다. `'$(VisualStudioVersion)' != '14.0' And`조건문 앞에 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.:
+예를 들어:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* VisualStudio 14.0를 포함 하는 `<import>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' == '14.0' And`을 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
+* VisualStudio 14.0를 포함 하는 태그에 추가 조건문을 추가 합니다. `<import>` `'$(VisualStudioVersion)' == '14.0' And`조건문 앞에 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.:
+예를 들어:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Microsoft... n e t. n e t. n e t. n e t 참조가 있는 `<Error>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' != '14.0' And` 삽입 하 여이 작업을 수행 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
+* Microsoft... n e t. n e t. n e t 참조가 있는 태그에 조건문을 추가 `<Error>` 합니다. 조건문 앞에를 삽입 하 여이 작업을 수행 `'$(VisualStudioVersion)' != '14.0' And` 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.:
+예를 들어:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* VisualStudio 14.0를 포함 하는 `<Error>` 태그에 추가 조건문을 추가 합니다. 조건문 앞에 `'$(VisualStudioVersion)' == '14.0' And`을 삽입 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
+* VisualStudio 14.0를 포함 하는 태그에 추가 조건문을 추가 합니다. `<Error>` `'$(VisualStudioVersion)' == '14.0' And`조건문 앞에 삽입 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
 
-예를 들면 다음과 같습니다.:
+예를 들어:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
@@ -207,7 +207,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 * 프로젝트 디렉터리로 이동 합니다.
 * *\Bin\debug* 폴더를 엽니다.
 * VSIX 파일을 두 번 클릭 하 고 Visual Studio 2015 및 Visual Studio 2019/2017에 확장을 설치 합니다.
-* **설치** 된 섹션의 **도구** > **확장 및 업데이트** 에서 확장을 볼 수 있는지 확인 합니다.
+* 설치 된 섹션의 **도구**  >  **확장 및 업데이트** 에서 확장을 볼 수 있는지 확인 **Installed** 합니다.
 * 확장을 실행/사용 하 여 작동 하는지 확인 합니다.
 
 ![VSIX 찾기](media/finding-a-VSIX-example.png)

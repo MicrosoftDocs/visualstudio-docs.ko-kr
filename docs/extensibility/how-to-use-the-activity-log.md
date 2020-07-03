@@ -1,7 +1,7 @@
 ---
-title: '방법: 활동 로그 사용 | 마이크로 소프트 문서'
+title: '방법: 활동 로그 사용 Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
@@ -11,22 +11,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710576"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905589"
 ---
 # <a name="how-to-use-the-activity-log"></a>방법: 활동 로그 사용
-VSPackage는 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 소매 환경에서 VSPackage를 디버깅하는 데 특히 유용합니다.
+Vspackage은 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 소매 환경에서 Vspackage를 디버깅 하는 데 특히 유용 합니다.
 
 > [!TIP]
-> 활동 로그는 항상 켜져 있습니다. Visual Studio는 일반적인 구성 정보가 있는 처음 10개의 항목뿐만 아니라 마지막 100개의 항목의 롤링 버퍼를 유지합니다.
+> 활동 로그는 항상 켜져 있습니다. Visual Studio는 일반 구성 정보를 포함 하는 처음 10 개 항목 뿐만 아니라 마지막 100 항목의 롤링 버퍼를 유지 합니다.
 
-## <a name="to-write-an-entry-to-the-activity-log"></a>활동 로그에 항목을 작성하려면
+## <a name="to-write-an-entry-to-the-activity-log"></a>활동 로그에 항목을 쓰려면
 
-1. VSPackage 생성자 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 제외 한 메서드 또는 다른 메서드에이 코드를 삽입 합니다.
+1. <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>VSPackage 생성자를 제외 하 고 메서드 또는 다른 메서드에이 코드를 삽입 합니다.
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,19 +38,19 @@ VSPackage는 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 �
         "Called for: {0}", this.ToString()));
     ```
 
-     이 코드는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 서비스를 받고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 인터페이스로 캐스팅합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>은 현재 문화적 컨텍스트를 사용하여 활동 로그에 정보 입력을 씁니다.
+     이 코드는 서비스를 가져와 <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 인터페이스로 캐스팅 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>현재 문화권 컨텍스트를 사용 하 여 활동 로그에 정보 항목을 씁니다.
 
-2. VSPackage가 로드되면(일반적으로 명령이 호출되거나 창이 열리는 경우) 텍스트가 활동 로그에 기록됩니다.
+2. VSPackage 로드 될 때 (일반적으로 명령이 호출 되거나 창이 열리면) 텍스트는 활동 로그에 기록 됩니다.
 
-## <a name="to-examine-the-activity-log"></a>활동 로그를 검사하려면
+## <a name="to-examine-the-activity-log"></a>활동 로그를 검사 하려면
 
-1. [/Log](../ide/reference/log-devenv-exe.md) 명령줄 스위치를 사용하여 Visual Studio를 실행하여 세션 중에 ActivityLog.xml을 디스크에 씁니다.
+1. [/Log](../ide/reference/log-devenv-exe.md) 명령줄 스위치를 사용 하 여 Visual Studio를 실행 하 여 세션 중에 디스크에 ActivityLog.xml을 씁니다.
 
 2. Visual Studio를 닫은 후 Visual Studio 데이터의 하위 폴더에서 활동 로그를 찾습니다.
 
-   <em> *%AppData%</em>\마이크로소프트\비주얼\\\<스튜디오 버전>\활동Log.xml*.
+   <em> *% AppData%</em>\Microsoft\VisualStudio \\ \<version>\ActivityLog.xml*.
 
-3. 텍스트 편집기에서 활동 로그를 엽니다. 다음은 일반적인 항목입니다.
+3. 텍스트 편집기를 사용 하 여 활동 로그를 엽니다. 일반적인 항목은 다음과 같습니다.
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
@@ -58,13 +58,13 @@ VSPackage는 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 �
 
 ## <a name="robust-programming"></a>강력한 프로그래밍
 
-활동 로그는 서비스이므로 VSPackage 생성자에서 활동 로그를 사용할 수 없습니다.
+활동 로그는 서비스 이므로 활동 로그는 VSPackage 생성자에서 사용할 수 없습니다.
 
-쓰기 직전에 활동 로그를 가져와야 합니다. 나중에 사용할 수 위해 활동 로그를 캐시하거나 저장하지 마십시오.
+활동 로그에 쓰기 전에 활동 로그를 가져와야 합니다. 나중에 사용 하기 위해 활동 로그를 캐시 하거나 저장 하지 마십시오.
 
 ## <a name="see-also"></a>참조
 
-- [/log(devenv.exe)](../ide/reference/log-devenv-exe.md)
+- [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [VSPackage 문제 해결](../extensibility/troubleshooting-vspackages.md)
