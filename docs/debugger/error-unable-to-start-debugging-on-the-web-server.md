@@ -1,7 +1,7 @@
 ---
-title: '오류: 웹 서버에서 디버깅을 시작할 수 없습니다. | Microsoft Docs'
+title: 오류 - 웹 서버에서 디버깅을 시작할 수 없음 | Microsoft Docs
 ms.date: 05/23/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 00d27dafd5e44b058cff05b3c478322e45242b3c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404346"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460041"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>오류: 웹 서버에서 디버깅을 시작할 수 없습니다.
 
@@ -134,7 +134,7 @@ URL 재작성을 수행하는 경우 URL 재작성 없이 기본 web.config를 �
 
 * IIS에 올바른 버전의 ASP.NET이 설치되도록 확인합니다.
 
-    IIS와 Visual Studio 프로젝트의 ASP.NET 버전이 일치하지 않으면 이 문제가 발생할 수 있습니다. web.config에서 프레임워크 버전을 설정해야 할 수도 있습니다. IIS에 ASP.NET을 설치하려면 [WebPI(를 웹 플랫폼 설치 관리자)](https://www.microsoft.com/web/downloads/platform.aspx)사용합니다. [ASP.NET 3.5 및 ASP.NET 4.5를 사용하는 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) 또는 ASP.NET Core인 경우 [IIS를 사용하여 Windows에 호스트](https://docs.asp.net/en/latest/publishing/iis.html)를 참조하세요.
+    IIS와 Visual Studio 프로젝트의 ASP.NET 버전이 일치하지 않으면 이 문제가 발생할 수 있습니다. web.config에서 프레임워크 버전을 설정해야 할 수 있습니다. IIS에 ASP.NET을 설치하려면 [WebPI(웹 플랫폼 설치 관리자)](https://www.microsoft.com/web/downloads/platform.aspx)를 사용합니다. [ASP.NET 3.5 및 ASP.NET 4.5를 사용하는 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) 또는 ASP.NET Core인 경우 [IIS를 사용하여 Windows에 호스트](https://docs.asp.net/en/latest/publishing/iis.html)를 참조하세요.
 
 * IP 주소만 사용하는 경우의 인증 오류 해결
 

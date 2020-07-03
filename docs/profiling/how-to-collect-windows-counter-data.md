@@ -1,7 +1,7 @@
 ---
-title: '방법: Windows 카운터 데이터 수집 | Microsoft 문서'
+title: 방법 - Windows 카운터 데이터 수집 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16e29d82d1cee2237886d88a24929b4c794464a5
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776321"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330874"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>방법: Windows 카운터 데이터 수집
 
@@ -47,7 +47,7 @@ Windows 카운터는 프로파일링 중에 설정된 간격으로 수집할 수
 
 8. **적용**을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [성능 세션 속성](../profiling/performance-session-properties.md)

@@ -1,7 +1,7 @@
 ---
-title: '방법: 찾기 도구 사용 | Microsoft Docs'
+title: 방법 - 찾기 도구 사용 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f96fe87137c6b14e32fb2648e93c54a1c5b094a0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732172"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348732"
 ---
 # <a name="how-to-use-the-finder-tool"></a>방법: 찾기 도구 사용
 **창 찾기**의 찾기 도구를 사용하여 창 속성 또는 메시지를 표시할 수 있습니다. 또한 찾기 도구는 사용할 수 없는 자식 창을 찾을 수 있으며 사용할 수 없는 자식 창이 겹치는 경우 강조 표시할 창을 파악할 수 있습니다.
@@ -41,7 +41,7 @@ ms.locfileid: "72732172"
      검사할 창의 핸들(예: 디버거에서 복사한 항목)이 있으면 **핸들** 텍스트 상자에 입력합니다.
 
    > [!TIP]
-   > 화면을 깔끔하게 유지하려면 **Spy 숨기기** 옵션을 선택합니다. 이 옵션을 사용하면 기본 Spy++ 창이 숨겨지고 다른 응용 프로그램 상단에 **창 찾기** 대화 상자만 표시되도록 유지됩니다. Spy++ 주 창은 **확인** 또는 **취소**를 클릭하거나 **Spy++ 숨기기** 옵션을 클릭하면 복원됩니다.
+   > 화면을 깔끔하게 유지하려면 **Spy 숨기기** 옵션을 선택합니다. 이 옵션을 사용하면 기본 Spy++ 창이 숨겨지고 다른 애플리케이션 상단에 **창 찾기** 대화 상자만 표시되도록 유지됩니다. Spy++ 주 창은 **확인** 또는 **취소**를 클릭하거나 **Spy++ 숨기기** 옵션을 클릭하면 복원됩니다.
 
 4. **표시**에서 **속성** 또는 **메시지**를 선택합니다.
 

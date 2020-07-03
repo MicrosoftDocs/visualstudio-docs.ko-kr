@@ -1,7 +1,7 @@
 ---
-title: '방법: 권한 설정 | Microsoft 문서'
+title: 방법 - 권한 설정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774591"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328950"
 ---
 # <a name="how-to-set-permissions"></a>방법: 권한 설정
 
@@ -36,7 +36,7 @@ ms.locfileid: "74774591"
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>사용자 권한을 가진 사용자 계정을 만들려면
 
-1. **내 컴퓨터**를 마우스 오른쪽 단추로 클릭한 다음 **관리**를 클릭합니다.
+1. **내 컴퓨터**를 마우스 오른쪽 단추로 클릭하고 **관리**를 클릭합니다.
 
      **컴퓨터 관리** 창이 열립니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "74774591"
 
 2. 폴더를 마우스 오른쪽 단추로 클릭하고**속성**을 클릭합니다.
 
-     **\<폴더 이름> 속성** 대화 상자가 나타납니다.
+     **\<folder name> 속성** 대화 상자가 나타납니다.
 
 3. **보안** 탭을 클릭합니다.
 
@@ -86,7 +86,7 @@ ms.locfileid: "74774591"
     <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
-3. 다음 명령 실행:
+3. 다음 명령을 실행합니다.
 
     ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
@@ -120,7 +120,7 @@ ms.locfileid: "74774591"
 
    이제 지정된 사용자는 로그온한 후 관리자 권한 없이 프로파일링 도구를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [VSPerfCmd](../profiling/vsperfcmd.md)

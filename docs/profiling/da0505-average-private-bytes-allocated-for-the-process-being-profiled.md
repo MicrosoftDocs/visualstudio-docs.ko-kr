@@ -1,7 +1,7 @@
 ---
-title: 'DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트 | Microsoft 문서'
+title: DA0505 - 프로파일링되고 있는 프로세스에 할당된 평균 전용 바이트 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
@@ -13,19 +13,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b905b0de69110f5f7cd684deb6fe6c5955bb4b0c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 79150cf63fb8177534d2e5cb0506a64c703e5d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777405"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532109"
 ---
-# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트
+# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링되고 있는 프로세스에 할당된 평균 전용 바이트
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0505|
-|Category|리소스 관리|
+|범주|리소스 관리|
 |프로파일링 방법|모두|
 |메시지|이 정보는 참고용으로만 수집됩니다. Process Private Bytes 카운터는 프로파일링하고 있는 프로세스에 의해 할당된 가상 메모리를 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|
 |규칙 유형|정보|

@@ -1,7 +1,7 @@
 ---
-title: '방법: 줄 수준 샘플링 데이터 수집 | Microsoft 문서'
+title: 방법 - 줄 수준 샘플링 데이터 수집 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776360"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330892"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>방법: 줄 수준 샘플링 데이터 수집
 줄 수준 샘플링은 전용 샘플 수가 많은 함수와 같이 프로세서를 많이 사용하는 함수의 코드에서 프로세서가 대부분의 시간을 사용하는 위치를 확인하는 프로파일러 기능입니다.
@@ -54,8 +54,8 @@ ms.locfileid: "74776360"
 
      — 또는 —
 
-- 애플리케이션을 시작할 때 **VSPerfCmd /lineoff \<기타 인수&gt;** 를 입력합니다.
+- 애플리케이션을 시작할 때 **VSPerfCmd /lineoff \<other arguments>** 를 입력합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 - [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)

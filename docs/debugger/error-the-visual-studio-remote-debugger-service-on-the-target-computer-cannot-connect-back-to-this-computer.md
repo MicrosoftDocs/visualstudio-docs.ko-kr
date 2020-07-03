@@ -1,9 +1,9 @@
 ---
-title: '오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가 이 컴퓨터에 다시 연결할 수 없습니다.'
+title: 오류 - 대상 컴퓨터의 Visual Studio 원격 디버거 서비스를 이 컴퓨터에 다시 연결할 수 없음
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -16,21 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737403"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536671"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가 이 컴퓨터에 다시 연결할 수 없습니다.
 이 오류는 디버깅에 사용하려는 컴퓨터에 연결할 때 인증되지 않는 사용자 계정으로 원격 디버거 서비스가 실행되고 있음을 의미합니다. 이 오류는 레거시 디버깅 엔진을 사용하여 원격 디버그하고 원격 디버거가 서비스로 실행되고 있는 경우 발생할 수 있습니다.
 
  다음 표에는 컴퓨터에 액세스할 수 있는 계정이 나와 있습니다.
 
-|||||
+|시나리오|LocalSystem 계정|도메인 계정|두 컴퓨터에서 사용자 이름과 암호가 동일한 로컬 계정|
 |-|-|-|-|
-||LocalSystem 계정|도메인 계정|두 컴퓨터에서 사용자 이름과 암호가 동일한 로컬 계정|
 |동일한 도메인의 두 컴퓨터|예|예|예|
 |도메인에서 양방향 트러스트가 있는 두 컴퓨터|아니요|아니요|예|
 |작업 그룹의 한 컴퓨터 또는 두 컴퓨터|아니요|아니요|예|

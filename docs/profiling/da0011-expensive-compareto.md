@@ -1,7 +1,7 @@
 ---
-title: 'DA0011: CompareTo의 부담이 큽니다. | Microsoft Docs'
+title: DA0011 - CompareTo의 부담이 큽니다. | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0011
 - vs.performance.rules.DAExpensiveCompareTo
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58c94e5a24eab1c638397d7b1391596e503207fa
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779430"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520668"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: CompareTo의 부담이 큽니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0011|
-|Category|.NET Framework 사용|
+|범주|.NET Framework 사용|
 |프로파일링 방법|샘플링<br /><br /> .NET 메모리|
 |메시지|CompareTo 함수는 정리되어야 하며 메모리를 할당하면 안 됩니다. 가능한 경우 CompareTo 함수의 복잡성을 줄입니다.|
-|규칙 유형|Warning|
+|규칙 유형|경고|
 
 ## <a name="cause"></a>원인
  해당 형식의 CompareTo 메서드가 부담이 크거나 메모리를 할당합니다.

@@ -1,7 +1,7 @@
 ---
-title: '방법: 메시지 뷰 제어 | Microsoft Docs'
+title: 방법 - 메시지 뷰 제어 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Spy++, Messages View
 - Messages view, controlling
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0007d1ad1e87b2e1f2d34b039b4105bb525578a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a95e257950a93ff61c27f7ea599b0de12e09677d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894635"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350253"
 ---
 # <a name="how-to-control-messages-view"></a>방법: 메시지 뷰 제어
 Spy++를 사용하면 [Messages View](../debugger/messages-view.md)(메시지 뷰) 창의 콘텐츠를 상당 부분 제어할 수 있습니다. 언제든지 메시지 표시를 [시작 및 중지](../debugger/how-to-start-and-stop-the-message-log-display.md)할 수 있고 다음 설정을 지정할 수 있습니다.

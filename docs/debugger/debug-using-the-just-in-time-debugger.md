@@ -1,7 +1,7 @@
 ---
 title: Just-In-Time 디버거를 사용하여 디버그 | Microsoft Docs
 ms.date: 09/24/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188675"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350578"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio에서 Just-In-Time 디버거를 사용하여 디버그
 
@@ -134,7 +134,7 @@ Just-In-Time 디버거를 사용하도록 설정했지만 앱이 충돌하거나
 
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
 
-   **사용 가능한 디버거**에서 **\<기본 설정된 Visual Studio 버전/에디션>의 새 인스턴스**를 선택합니다(아직 선택하지 않은 경우).
+   **사용 가능한 디버거**에서 **\<your preferred Visual Studio version/edition>의 새 인스턴스**를 선택합니다(아직 선택되지 않은 경우).
 
 1. **확인**을 선택합니다.
 

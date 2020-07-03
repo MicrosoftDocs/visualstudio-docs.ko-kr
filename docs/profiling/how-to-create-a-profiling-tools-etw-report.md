@@ -1,7 +1,7 @@
 ---
-title: '방법: 프로파일링 도구 ETW 보고서 만들기 | Microsoft Docs'
+title: 방법 - 프로파일링 도구 ETW 보고서 만들기 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7b02be682d825205fc5fa50d07c1ca817a24d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5fe610ea87c492e0bf562fe00145c3abaf76b8ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776403"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520629"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>방법: 프로파일링 도구 ETW 보고서 만들기
 ETW(Windows용 이벤트 추적) 보고서에는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 성능 세션에서 기록된 ETW 이벤트가 나열됩니다. ETW 데이터는 이진(.*etl*) 파일에 수집됩니다. 이 보고서에 대한 자세한 내용은 [ETW(Windows용 이벤트 추적) 보고서](../profiling/event-tracing-for-windows-etw-report.md)를 참조하세요.
@@ -34,7 +34,7 @@ ETW(Windows용 이벤트 추적) 보고서에는 [!INCLUDE[vsprvs](../code-quali
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
 
-    |||
+    |항목|설명|
     |-|-|
     |*ToolsPath*|프로파일링 도구 유틸리티의 경로입니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.|
     |*VSPFile*|프로파일링 데이터(.*vsp* 또는 .*vsps*) 파일입니다. 전체 및 부분 경로를 사용할 수 있습니다.|

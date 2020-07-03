@@ -1,7 +1,7 @@
 ---
-title: '오류: 방화벽 인증 안 함 | Microsoft Docs'
+title: 오류 - 방화벽 인증 안 함 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.firewall.noauth
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a72d16869c92b1965fae8db0ae32146a3a57e67
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 199e3b203ff73397a49c19a736a447f5823e5422
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64823942"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460767"
 ---
 # <a name="error-firewall-no-authentication"></a>오류: 방화벽 인증 안 함
 원격 컴퓨터의 인터넷 연결 방화벽이 원격 디버깅을 허용하도록 설정되어 있지 않습니다. `No Authentication`을 사용하여 원격으로 디버깅하는 경우 msvsmon.exe가 예외 목록에 추가되어 있어야 합니다. 일부 IPSEC 포트를 열어야 할 수도 있습니다.

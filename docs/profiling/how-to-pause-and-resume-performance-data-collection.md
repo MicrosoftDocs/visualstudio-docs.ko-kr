@@ -1,7 +1,7 @@
 ---
-title: '방법: 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft 문서'
+title: 방법 - 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778793"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331461"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>방법: 성능 데이터 수집 일시 중지 및 다시 시작
 프로파일링 세션 페이지 창에서 프로파일링 데이터의 컬렉션을 대화형으로 제어할 수 있습니다.
@@ -38,6 +38,6 @@ ms.locfileid: "74778793"
 
   - **프로파일링 중지**를 선택해서 프로파일링 세션을 종료하고 보고서를 생성합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [데이터 수집 제어](../profiling/controlling-data-collection.md)
 - [방법: 성능 데이터 수집 시작 및 종료](../profiling/how-to-start-and-end-performance-data-collection.md)

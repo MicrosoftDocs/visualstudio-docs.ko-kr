@@ -1,7 +1,7 @@
 ---
-title: '방법: CPU 카운터 데이터 수집 | Microsoft Docs'
+title: 방법 - CPU 카운터 데이터 수집 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.cpucounters
 helpviewer_keywords:
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c500316bd53ddce8bf731876e5963e6ef253bb27
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776373"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330922"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 

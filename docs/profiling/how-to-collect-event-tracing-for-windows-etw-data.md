@@ -1,7 +1,7 @@
 ---
-title: '방법: ETW(Windows용 이벤트 추적) 데이터 수집 | Microsoft 문서'
+title: 방법 - ETW(Windows용 이벤트 추적) 데이터 수집 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.events
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa0547682351d1a7ba4efe4ce3b4350b906462c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0545ee7fe64d26e21d2a9f34def8dd618c08e630
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779027"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330909"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>방법: ETW(Windows용 이벤트 추적) 데이터 수집
 
@@ -36,6 +36,6 @@ ETW(Windows용 이벤트 추적)는 프로파일러 로그 커널 이벤트나 �
 
 3. **데이터를 수집할 이벤트 추적 공급자 선택** 목록에서 애플리케이션을 프로파일링하는 데 사용할 이벤트 공급자를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)

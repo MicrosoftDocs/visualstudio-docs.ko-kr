@@ -1,7 +1,7 @@
 ---
-title: 'Web.Config 파일: 동적 컴파일된 ASP.NET 웹앱 계측 및 프로파일링'
+title: Web.Config 파일 - 동적 컴파일된 ASP.NET 웹앱 계측 및 프로파일링
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8ed2d8e8cc62d26f9d63a8a675301c78fc35c51a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775409"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331510"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 web.config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 애플리케이션 프로파일링
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 계측 방법을 사용하여 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에서 세부 타이밍 데이터, .NET 메모리 할당 데이터 및 .NET 개체 수명 데이터를 수집할 수 있습니다.

@@ -2,7 +2,7 @@
 title: Python 설치 지원
 description: 옵션 및 설치 위치를 포함하여 Visual Studio 2017, 2015, 2013, 2012 및 2010에서 PTVS(Visual Studio용 Python 도구)를 설치하는 방법입니다.
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15869119ea867e41d3b91a1f046d1ffb995cd4e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75398429"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540649"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 

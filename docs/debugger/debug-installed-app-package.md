@@ -2,7 +2,7 @@
 title: 설치된 UWP 앱 패키지 디버그 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/07/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c2e94e9fa80145489bddfb005b7136bdff8a71
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211296"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350734"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio에서 설치된 UWP 앱 패키지 디버그
 

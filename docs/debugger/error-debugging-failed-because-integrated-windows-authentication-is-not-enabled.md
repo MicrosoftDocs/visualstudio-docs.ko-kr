@@ -1,7 +1,7 @@
 ---
-title: '오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패 | Microsoft Docs'
+title: 오류 - Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911544"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460840"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패
 인증 오류로 인해 디버깅을 요청한 사용자를 인증할 수 없습니다. 웹 애플리케이션 또는 XML Web services를 한 단계씩 실행하려고 할 때 이 오류가 발생할 수 있습니다. 이 오류는 Windows 통합 인증이 사용할 수 없도록 설정되어 있기 때문에 발생할 수 있습니다. 이 인증을 사용하려면 "통합 Windows 인증을 사용하려면"의 단계를 따릅니다.

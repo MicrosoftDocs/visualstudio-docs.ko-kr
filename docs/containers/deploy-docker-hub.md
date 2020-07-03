@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283179"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536892"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub에 배포
 
@@ -29,17 +29,17 @@ Docker Hub 리포지토리가 없는 경우 [Docker Hub](https://hub.docker.com/
 
 1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **게시...** 를 선택합니다. 배포 옵션을 표시하는 화면이 나타납니다.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![배포 옵션 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. **게시 대상 선택**에서 **Container Registry**를 선택한 다음, **Docker Hub**를 선택합니다. **Docker Hub** 대화 상자가 나타납니다.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Docker Hub 대화 상자 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. 조직에 속하지 않는 사용자 고유의 리포지토리에 연결하는 경우에는 **개인 리포지토리에 게시** 확인란을 선택된 상태로 둡니다. 조직이 리포지토리를 소유하고 있는 경우, 확인란의 선택을 취소하고 조직 이름을 입력합니다. 연결 중인 리포지토리에 대한 액세스 권한이 있는 Docker 계정의 Docker 사용자 이름과 암호를 입력하고 **저장**을 선택합니다.  
 
-   Visual Studio에서 사용자 이미지를 Docker Hub에 배포하려고 합니다.  작업이 성공하면 리포지토리 이미지의 URL, 이미지 태그, 리포지토리 및 빌드 구성**(예: **릴리스**)이 포함된 **게시** 화면이 나타납니다.
+   Visual Studio에서 사용자 이미지를 Docker Hub에 배포하려고 합니다.  작업이 성공하면 리포지토리 이미지의 URL, 이미지 태그, 리포지토리 및 빌드 구성(예: **릴리스**)이 포함된 **게시** 화면이 나타납니다.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![게시 화면 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. 언제든지 이 페이지에서 **게시** 단추를 클릭하여 이미지를 업데이트할 수 있습니다.  또는 URL 아래에 있는 링크를 사용하여 프로필을 수정하거나 제거할 수 있습니다.
 

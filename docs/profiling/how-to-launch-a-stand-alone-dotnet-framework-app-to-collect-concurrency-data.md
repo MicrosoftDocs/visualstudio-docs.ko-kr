@@ -1,7 +1,7 @@
 ---
-title: '프로파일러 명령줄: 클라이언트 .NET 앱 열기, 동시성 데이터 가져오기'
+title: 프로파일러 명령줄 - 클라이언트 .NET 앱 열기, 동시성 데이터 가져오기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a52c65f8a53d62edde42c26fafef9940046ba5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e2c1b0a52429e74ad35cf0cad3acc44d064c9672
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775398"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327904"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 프로파일러와 함께 독립 실행형 .NET Framework 애플리케이션을 시작하여 동시성 데이터 수집
 이 항목은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 .NET Framework 독립 실행형(클라이언트) 애플리케이션을 시작하고 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.

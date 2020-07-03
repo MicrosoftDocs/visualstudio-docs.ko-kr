@@ -1,7 +1,7 @@
 ---
-title: '오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음 | Microsoft Docs'
+title: 오류 - 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.causality_no_server_response
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b298b299bb4911bfe64b362d94c3e90ecfa585
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fd85d5564bb6f8a0a5f4ead8c5a4ef8e1be48598
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736869"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460288"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음
 이 오류 메시지는 다음과 같습니다.

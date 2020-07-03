@@ -1,7 +1,7 @@
 ---
-title: '방법: 레지스터 그룹 표시 및 숨기기 | Microsoft Docs'
+title: 방법 - 레지스터 그룹 표시 및 숨기기 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.registergroups
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f08e31f67f9626c15dee0b6b4b8202a0370c976b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847800"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349902"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>방법: 레지스터 그룹 표시 및 숨기기(C#, C++, Visual Basic, F#)
 

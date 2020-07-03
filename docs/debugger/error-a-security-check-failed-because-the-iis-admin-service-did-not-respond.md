@@ -1,7 +1,7 @@
 ---
-title: '오류: IIS 관리자 서비스에서 응답하지 않아서 보안 검사 실패 | Microsoft Docs'
+title: 오류 - IIS 관리자 서비스에서 응답하지 않아서 보안 검사 실패 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f668de3d7c7e9a8bd075beb972199cf849feea65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b9620edf10d2d3cab8da8231e561fc77d7e6af5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737879"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460880"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>오류: IIS 관리자 서비스에서 응답하지 않아서 보안 검사 실패
 이 오류는 IIS 관리자 서비스에서 응답하지 않을 때 발생합니다. 일반적으로 이는 설치한 IIS에 문제가 있음을 나타냅니다. 먼저 **관리 도구**에서 **서비스** 도구를 사용하여 서비스가 실행 중인지 확인합니다.

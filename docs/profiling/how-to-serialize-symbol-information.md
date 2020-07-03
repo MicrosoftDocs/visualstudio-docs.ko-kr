@@ -1,7 +1,7 @@
 ---
-title: '방법: 기호 정보 직렬화 | Microsoft 문서'
+title: 방법 - 기호 정보 직렬화 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 202c30b1786e7e3ddb27583ddaeda9180d680b53
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d28df6d36b1b91974483ae793e6e57f064974183
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774889"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328531"
 ---
 # <a name="how-to-serialize-symbol-information"></a>방법: 기호 정보 직렬화
 애플리케이션을 분석하기 위해 포함해야 하는 기호를 직렬화할 수 있습니다. 기호를 직렬화하면 기호가 .*vsp* 파일에 추가됩니다. 기호 정보를 .*vsp* 파일에 추가하면 다른 사용자가 원래 기호에 대한 액세스 권한이 없어도 성능 보고서를 분석할 수 있습니다. 기호가 직렬화되지 않은 경우 .*vsp* 파일을 분석하려면 원래 계측된 .*exe* 및 .*pdb* 파일이 있어야 합니다.
@@ -34,7 +34,7 @@ ms.locfileid: "74774889"
 
 3. **일반 설정**에서 **자동으로 기호 정보 직렬화**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 - [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)
 - [방법: 분석된 보고서 파일 저장](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

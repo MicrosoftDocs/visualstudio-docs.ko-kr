@@ -1,7 +1,7 @@
 ---
-title: 'DA0013: String.Split 또는 String.Substring 사용률이 높습니다. | Microsoft 문서'
+title: DA0013 - String.Split 또는 String.Substring 사용률 높음 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -17,22 +17,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a475ef1f4d60d7dfb0d2ea7189295bad47426c0a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779409"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520616"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: String.Split 또는 String.Substring 사용률이 높습니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0013|
-|Category|.NET Framework 사용 지침|
+|범주|.NET Framework 사용 지침|
 |프로파일링 방법|샘플링|
 |메시지|String.Split 및 String.Substring 함수 사용을 줄여 보십시오.|
-|규칙 유형|Warning|
+|규칙 유형|경고|
 
 ## <a name="cause"></a>원인
  System.String.Split 또는 System.String.Substring 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 문자열에 부분 문자열이 있는지 테스트할 경우 System.String.IndexOf 또는 System.String.IndexOfAny를 사용해 보세요.

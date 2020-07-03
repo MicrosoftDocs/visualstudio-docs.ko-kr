@@ -1,7 +1,7 @@
 ---
-title: '방법: Spy++ 시작 | Microsoft Docs'
+title: 방법 - Spy++ 시작 | Microsoft Docs
 ms.date: 12/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Spy++, starting
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70874d70dd5f845e7b627f2aeb7ae51bafe45995
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: b659350adc39fd1088964976b8bcdef629bad44b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542622"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349006"
 ---
 # <a name="how-to-start-spy"></a>방법: Spy++ 시작
 
@@ -46,7 +46,7 @@ Spy++는 독립적으로 실행되므로 시작한 후 Visual Studio를 닫을 �
 
 ## <a name="start-spy-at-a-command-prompt"></a>명령 프롬프트에서 Spy++ 시작
 
-1. 명령 프롬프트 창에서 spyxx.exe가 있는 폴더로 디렉터리를 변경합니다. 일반적으로 이 폴더의 경로는 ..\\  Visual Studio 설치 폴더\Common7\Tools\\입니다.
+1. 명령 프롬프트 창에서 spyxx.exe가 있는 폴더로 디렉터리를 변경합니다. 일반적으로 이 폴더의 경로는 ..\\Visual Studio 설치 폴더\Common7\Tools\\입니다.
 
 2. **spyxx.exe**를 입력합니다.
 

@@ -1,9 +1,9 @@
 ---
-title: '오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.'
+title: 오류 - Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않음
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.server_machine_no_default
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9558ff4d470d30df19ea5982eb6acbcc708eea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916251"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460613"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
 이 오류 메시지는 Visual Studio가 원격 컴퓨터에서 Visual Studio 원격 디버깅 모니터의 올바른 인스턴스를 찾을 수 없음을 의미합니다. 원격으로 디버깅을 수행하려면 Visual Studio 원격 디버깅 모니터를 설치해야 합니다. 원격 디버거를 다운로드하고 설정하는 방법에 대한 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.
@@ -51,7 +51,7 @@ ms.locfileid: "75916251"
 
 - 원격 디버거를 중지하고 로컬 컴퓨터에서 사용 중인 계정으로 다시 시작할 수 있습니다.
 
-- **/allow \<사용자 이름>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다. `msvsmon /allow <username@computer>`
+- **/allow \<username>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다`msvsmon /allow <username@computer>`.
 
 - 원격 디버거의 사용 권한에 사용자를 추가할 수 있습니다(원격 디버거 창, **도구 > 사용 권한**).
 
@@ -70,9 +70,9 @@ ms.locfileid: "75916251"
  다른 시간에 원격 디버깅을 수행하거나 다른 시간에 네트워크 작업을 다시 예약해야 할 수도 있습니다.
 
 ## <a name="more-help"></a>자세한 도움말
- 명령줄 스위치를 포함하여 더 많은 원격 디버거 도움말을 가져오려면 원격 디버거 창에서 **도움말 > 사용법**을 클릭합니다. 웹 페이지가 열려 있지 않은 경우 **파일 탐색기** 창에 다음 줄을 복사하여 웹 페이지를 볼 수 있습니다. (\<Visual Studio 설치 디렉터리>를 Visual Studio 설치 위치로 바꿔야 합니다.)
+ 명령줄 스위치를 포함하여 더 많은 원격 디버거 도움말을 가져오려면 원격 디버거 창에서 **도움말 > 사용법**을 클릭합니다. 웹 페이지가 열려 있지 않은 경우 **파일 탐색기** 창에 다음 줄을 복사하여 웹 페이지를 볼 수 있습니다. (\<Visual Studio installation directory>를 Visual Studio 설치 위치로 바꿔야 합니다.)
 
- res:// *\<Visual Studio 설치 디렉터리>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 
 ## <a name="see-also"></a>참조
 - [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)

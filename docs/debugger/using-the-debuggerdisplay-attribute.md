@@ -1,7 +1,7 @@
 ---
 title: DebuggerDisplay를 사용하여 사용자 지정 정보 표시 | Microsoft Docs
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728668"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418784"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 특성을 사용하여 디버거에 표시할 내용 지시(C#, Visual Basic, F#, C++/CLI)
 
@@ -27,10 +27,10 @@ ms.locfileid: "72728668"
 
 클래스에 재정의된 `ToString()` 메서드가 있는 경우 디버거에서는 기본 `{<typeName>}`대신 재정의된 메서드를 사용합니다. 따라서 `ToString()` 메서드를 재정의한 경우 디버거는 기본`{<typeName>}`대신 재정의된 메서드를 사용하므로 `DebuggerDisplay`를 사용할 필요가 없습니다. 둘 다 사용하는 경우에는 `DebuggerDisplay` 특성이 재정의된 `ToString()` 메서드보다 우선합니다. 또한 `DebuggerDisplay` 특성은 서브클래스의 재정의된 `ToString()` 메서드보다 우선합니다.
 
-디버거가 이 암시적 `ToString()` 호출을 평가할지 여부는 **도구/옵션/디버깅** 대화 상자의 사용자 설정에 따라 결정됩니다. Visual Basic에서는 이 암시적 `ToString()` 평가를  구현하지 않습니다.
+디버거가 이 암시적 `ToString()` 호출을 평가할지 여부는 **도구/옵션/디버깅** 대화 상자의 사용자 설정에 따라 결정됩니다.
 
 > [!IMPORTANT]
-> **변수 창에서 개체의 원시 구조체 표시** 확인란이 **도구/옵션/디버깅** 대화 상자에서 선택되어 있는 경우 `DebuggerDisplay` 특성이 무시됩니다.
+> **변수 창에서 개체의 원시 구조체 표시** 확인란이 **도구/옵션/디버깅** 대화 상자에서 선택된 경우 `DebuggerDisplay` 특성이 무시됩니다.
 
 > [!NOTE]
 > 네이티브 코드의 경우 이 특성은 C++/CLI 코드에서만 지원됩니다.

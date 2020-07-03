@@ -1,7 +1,7 @@
 ---
-title: '방법: 추가 계측 옵션 지정 | Microsoft 문서'
+title: 방법 - 추가 계측 옵션 지정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.advanced
 helpviewer_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8390c4aab0624aa59f62397e0b41bcbcc1c80cdd
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778702"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331991"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>방법: 추가 계측 옵션 지정
 
@@ -40,7 +40,7 @@ Visual Studio IDE를 사용하거나 명령줄 도구를 사용하여 이진 파
 
 4. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)

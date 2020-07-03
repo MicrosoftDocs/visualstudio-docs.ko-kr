@@ -1,7 +1,7 @@
 ---
-title: '방법: 창 뷰에서 창 검색 | Microsoft Docs'
+title: 방법 - 창 뷰에서 창 검색 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba5c8469885fd62c99a672e894cde82700c980d
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: fb5fb871ebf03595c0baca0336e8449fe39029f3
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64831038"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349239"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>방법: 창 뷰에서 창 검색
 창 뷰에서 핸들, 캡션 텍스트, 클래스 또는 캡션 텍스트와 클래스의 조합을 검색 조건으로 사용하여 특정 창을 검색할 수 있습니다. 검색의 초기 방향을 지정할 수도 있습니다. 대화 상자의 필드에는 창 트리에서 선택한 창의 특성이 표시됩니다.

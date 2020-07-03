@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542687"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533721"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>“폴더 열기” 개발에 대한 빌드 및 디버그 작업 사용자 지정
 
@@ -28,7 +28,7 @@ Visual Studio는 여러 다른 언어 및 코드베이스를 실행하는 방법
 
 다음 *.json* 파일을 사용하여 프로젝트 없는 코드베이스를 사용자 지정합니다.
 
-|파일 이름|목적|
+|파일 이름|용도|
 |-|-|
 |*tasks.vs.json*|사용자 지정 빌드 명령 및 컴파일러 스위치와 임의(빌드와 관련되지 않은) 작업을 지정합니다.<br>**솔루션 탐색기**의 오른쪽 클릭 메뉴 항목 **작업 구성**을 통해 액세스합니다.|
 |*launch.vs.json*|디버깅을 위한 명령줄 인수를 지정합니다.<br>**솔루션 탐색기**의 오른쪽 클릭 메뉴 항목 **디버그 및 시작 설정**을 통해 액세스합니다.|
@@ -201,7 +201,7 @@ bin:
 
 `appliesTo` 필드에 이름을 지정하여 모든 파일 또는 폴더에 대한 작업을 만들 수 있습니다(예: `"appliesTo": "hello.js"`). 다음 파일 마스크를 값으로 사용할 수 있습니다.
 
-|||
+|파일 마스크|설명|
 |-|-|
 |`"*"`| 작업 영역의 모든 파일 및 폴더에서 작업을 사용할 수 있음|
 |`"*/"`| 작업 영역의 모든 폴더에서 작업을 사용할 수 있음|
@@ -213,7 +213,7 @@ bin:
 
 #### <a name="macros-for-tasksvsjson"></a>tasks.vs.json의 매크로
 
-|||
+|매크로|설명|
 |-|-|
 |`${env.<VARIABLE>}`| 개발자 명령 프롬프트에 대해 설정된 환경 변수(예: ${env.PATH}, ${env.COMSPEC} 등)를 지정합니다. 자세한 내용은 [Visual Studio용 개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 참조하세요.|
 |`${workspaceRoot}`| 작업 영역 폴더의 전체 경로(예: *C:\sources\hello*)|
@@ -309,7 +309,7 @@ Visual Studio는 *.vscode*라는 디렉터리에 있는 *settings.json* 파일�
 
 *.gitignore* 파일에서 읽은 설정은 부모 디렉터리 및 모든 하위 디렉터리에 적용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 또는 솔루션 없이 코드 개발](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [C++의 폴더 열기 프로젝트](/cpp/build/open-folder-projects-cpp)

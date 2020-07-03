@@ -1,7 +1,7 @@
 ---
-title: '프로파일러 명령줄: 네이티브 클라이언트 앱 열기, 동시성 데이터 가져오기'
+title: 프로파일러 명령줄 - 네이티브 클라이언트 앱 열기, 동시성 데이터 가져오기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb8baed0d9154c02f23738944de2d3e84b7402b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0aeebe82e3c7b574b65ab463a7bfd986d43d46ef
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76726037"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327656"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 프로파일러와 함께 독립 실행형 네이티브 애플리케이션을 시작하여 동시성 데이터 수집
 이 항목은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 네이티브 독립 실행형(클라이언트) 애플리케이션을 시작하고 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.

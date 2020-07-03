@@ -1,7 +1,7 @@
 ---
 title: 디버그 및 릴리스 구성 설정 | Microsoft Docs
 ms.date: 10/05/2018
-ms.topic: reference
+ms.topic: how-to
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75acf0a3a821b4d2561ea14e583e71761b8b476e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925463"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349161"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio에서 디버그 및 릴리스 구성 설정
 
@@ -89,7 +89,7 @@ C# 또는 Visual Basic의 디버그 구성을 위한 프로젝트 설정에 대�
 
    이식 가능한 형식은 .NET Core에 대한 최신 플랫폼 간 형식입니다. 옵션에 대한 자세한 내용은 [고급 빌드 설정 대화 상자(C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)를 참조하세요.
 
-   ![빌드용 PDB 생성(C#)](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![C#에서 빌드용 PDB 생성](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. 프로젝트를 빌드합니다.
 
@@ -111,7 +111,7 @@ C# 또는 Visual Basic의 디버그 구성을 위한 프로젝트 설정에 대�
 
    대부분의 C++ 프로젝트에서 기본값은 `$(OutDir)$(TargetName).pdb`입니다. 이 값은 출력 폴더에 .pdb 파일을 생성합니다.
 
-   ![빌드용 PDB 생성(C++)](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
+   ![C++에서 빌드용 PDB 생성](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
 
 6. 프로젝트를 빌드합니다.
 

@@ -1,7 +1,7 @@
 ---
-title: 'DA0007: 제어 흐름에는 예외를 사용하지 마십시오. | Microsoft 문서'
+title: DA0007 - 제어 흐름에 예외 사용 안 함 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
 - vs.performance.7
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a33d5b8d18f18fb6bf7a2420603d994d845ce8f2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777701"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520798"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: 제어 흐름에는 예외를 사용하지 마십시오.
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: 제어 흐름에 예외 사용 안 함
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0007|
-|Category|.NET Framework 사용|
+|범주|.NET Framework 사용|
 |프로파일링 방법|모두|
 |메시지|많은 예외가 지속적으로 throw되고 있습니다. 프로그램 논리에서 예외 사용을 줄여 보세요.|
-|메시지 유형|Warning|
+|메시지 유형|경고|
 
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 25개 이상의 샘플을 수집해야 합니다.
 

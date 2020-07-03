@@ -2,7 +2,7 @@
 title: ASP.NET 앱에 디버깅 사용 | Microsoft Docs
 ms.custom: ''
 ms.date: 09/21/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6f20a2272214a525b00ebf07ebc6e5e803b138c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911348"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349759"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio에서 ASP.NET 또는 ASP.NET Core 앱 디버그
 
@@ -62,9 +62,9 @@ IIS Express는 기본값이며 미리 구성되어 있습니다. 로컬 IIS에�
 
 1. **파일** > **선택한 항목 저장** 또는 **Ctrl**+**S**를 사용하여 변경 내용을 저장합니다.
 
-1. 앱을 디버그하려면 앱에서 일부 코드에서 중단점을 설정합니다. Visual Studio 도구 모음에서 구성이 **디버그**로 설정되어 있는지 확인하고, 원하는 브라우저가 에뮬레이터 필드에서 **IIS Express(\<브라우저 이름>)** 또는 **로컬 IIS(\<브라우저 이름>)** 에 표시되는지 확인합니다.
+1. 앱을 디버그하려면 앱에서 일부 코드에서 중단점을 설정합니다. Visual Studio 도구 모음에서 구성이 **디버그**로 설정되어 있는지 확인하고, 원하는 브라우저가 에뮬레이터 필드에서 **IIS Express(\<Browser name>)** 또는 **로컬 IIS(\<Browser name>)** 에 표시되는지 확인합니다.
 
-1. 디버깅을 시작하려면 도구 모음에서 **IIS Express(\<브라우저 이름>)** 또는 **로컬 IIS(\<브라우저 이름>)** 를 선택하고 **디버그** 메뉴에서 **디버깅 시작**을 선택하거나 **F5**를 누릅니다. 디버거가 중단점에서 일시 중지됩니다. 디버거가 중단점에 도달할 수 없는 경우 [디버깅 문제 해결](#troubleshoot-debugging)을 참조하세요.
+1. 디버깅을 시작하려면 도구 모음에서 **IIS Express(\<Browser name>)** 또는 **로컬 IIS(\<Browser name>)** 를 선택하고 **디버그** 메뉴에서 **디버깅 시작**을 선택하거나 **F5** 키를 누릅니다. 디버거가 중단점에서 일시 중지됩니다. 디버거가 중단점에 도달할 수 없는 경우 [디버깅 문제 해결](#troubleshoot-debugging)을 참조하세요.
 
 ## <a name="debug-aspnet-core-apps"></a>ASP.NET Core 앱 디버그
 
@@ -90,7 +90,7 @@ IIS Express는 기본값이며 미리 구성되어 있습니다. 로컬 IIS에�
 
 1. 앱을 디버그하려면 앱에서 일부 코드에서 중단점을 설정합니다. Visual Studio 도구 모음에서 구성이 **디버그**로 설정되어 있는지 확인하고 **IIS Express** 또는 새 IIS 프로필 이름이 에뮬레이터 필드에 나타나는지 확인합니다.
 
-1. 디버깅을 시작하려면 도구 모음에서 **IIS Express** 또는 **\<로컬 IIS 프로필 이름>** 을 선택하고 **디버그** 메뉴에서 **디버깅 시작**을 선택하거나 **F5**를 누릅니다. 디버거가 중단점에서 일시 중지됩니다. 디버거가 중단점에 도달할 수 없는 경우 [디버깅 문제 해결](#troubleshoot-debugging)을 참조하세요.
+1. 디버깅을 시작하려면 도구 모음에서 **IIS Express** 또는 **\<IIS profile name>** 을 선택하고 **디버그** 메뉴에서 **디버깅 시작**을 선택하거나 **F5** 키를 누릅니다. 디버거가 중단점에서 일시 중지됩니다. 디버거가 중단점에 도달할 수 없는 경우 [디버깅 문제 해결](#troubleshoot-debugging)을 참조하세요.
 
 ## <a name="troubleshoot-debugging"></a>디버깅 문제 해결
 

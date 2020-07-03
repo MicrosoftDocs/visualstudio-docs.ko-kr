@@ -1,19 +1,19 @@
 ---
 title: 배포 후 문제 진단 | Microsoft Docs
 ms.date: 04/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae6a7f5e95f2d853978cf1f8d9665a51ae80fd3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911381"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350591"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace(C#, Visual Basic)를 사용하여 배포 후의 문제 진단
 
@@ -73,7 +73,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
 5. 사용자 지정 템플릿을 사용하는 경우 이 MSBuild 인수를 추가하여 기호 파일을 저장할 위치를 지정합니다.
 
-     **/p:BuildSymbolStorePath=** \<*기호 경로*>
+     **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
      ![빌드 정의 TFS 2013에 빌드 서버 정보 포함](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
@@ -110,7 +110,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
     - **/p:IncludeServerNameInBuildInfo=True**
 
-    - **/p:BuildSymbolStorePath=** \<*기호 경로*>
+    - **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 4. 새 빌드를 실행합니다.
 
@@ -150,7 +150,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
  **/p:IncludeServerNameInBuildInfo=True**
 
- **/p:BuildSymbolStorePath=** \<*기호 경로*>
+ **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a> 2단계: 앱 릴리스
  빌드 프로세스에서 만들어진 [Web.Deploy 패키지](https://msdn.microsoft.com/library/dd394698.aspx) 를 사용하여 앱을 배포할 경우 빌드 매니페스트는 자동으로 "*ProjectName*.BuildInfo.config"에서 "BuildInfo.config"라는 이름으로 바뀌어 웹 서버에서 앱의 Web.config 파일과 같은 폴더에 저장됩니다.
@@ -384,4 +384,4 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> Q: 신뢰할 수 없는 기호에 대한 메시지를 받는 이유는 무엇인가요?
  ![신뢰할 수 없는 기호 경로로 디버그하나요?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **A:** 이 메시지는 빌드 매니페스트 파일(\<*ProjectName*>.BuildInfo.config)의 기호 경로가 신뢰하는 기호 경로의 목록에 포함되지 않을 때 나타납니다. 디버거 옵션에서 기호 경로 목록에 경로를 추가할 수 있습니다.
+ **A:** 이 메시지는 빌드 매니페스트 파일(\<*ProjectName*>.BuildInfo.config)의 기호 경로가 신뢰하는 기호 경로의 목록에 포함되지 않았을 때 나타납니다. 디버거 옵션에서 기호 경로 목록에 경로를 추가할 수 있습니다.

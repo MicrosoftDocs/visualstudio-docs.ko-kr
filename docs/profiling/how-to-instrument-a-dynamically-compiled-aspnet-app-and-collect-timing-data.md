@@ -1,19 +1,19 @@
 ---
-title: '프로파일러 명령줄: 동적 ASP.NET 앱 계측, 타이밍 데이터 가져오기'
+title: 프로파일러 명령줄 - 동적 ASP.NET 앱 계측, 타이밍 데이터 가져오기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: d8270c9948efe5f9c972f2e4f0eccb035c793953
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f510878c3952cb98bcbee3bfecedf05b87b2658f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775459"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327975"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>방법: 명령줄에서 프로파일러를 사용하여 동적으로 컴파일된 ASP.NET 웹 애플리케이션 계측 및 자세한 타이밍 데이터 수집
 

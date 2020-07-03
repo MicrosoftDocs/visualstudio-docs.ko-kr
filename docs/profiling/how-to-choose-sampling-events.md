@@ -1,7 +1,7 @@
 ---
-title: '방법: 샘플링 이벤트 선택 | Microsoft 문서'
+title: 방법 - 샘플링 이벤트 선택 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779053"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329279"
 ---
 # <a name="how-to-choose-sampling-events"></a>방법: 샘플링 이벤트 선택
 기본적으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구는 프로파일링된 프로세스에 사용되는 프로세서 주기 수로 지정된 간격으로 성능 데이터를 수집합니다. 간격의 기본 주기 수는 10,000,000이며, 1GH 컴퓨터에서 약 0.01초가 걸립니다. 간격의 주기 수를 변경하고 샘플 이벤트를 변경할 수 있습니다. 다음 샘플 이벤트를 사용할 수 있습니다.
@@ -59,7 +59,7 @@ ms.locfileid: "74779053"
 
 5. 샘플 이벤트를 선택하면 기본 샘플링 간격 값이 **샘플링 간격** 텍스트 상자에 표시됩니다. 필요한 경우 텍스트 상자에 원하는 값을 입력할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 - [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)
 - [CPU 및 Windows 카운터](../profiling/cpu-and-windows-counters.md)

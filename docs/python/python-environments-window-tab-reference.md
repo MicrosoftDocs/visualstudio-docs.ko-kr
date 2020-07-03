@@ -2,7 +2,7 @@
 title: Python 환경 창 참조
 description: Visual Studio의 [Python 환경] 창에 나타나는 각 탭에 대한 세부 정보입니다.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307120"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545498"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 환경 창 탭 참조
 
@@ -88,7 +88,7 @@ ms.locfileid: "79307120"
 
 ## <a name="packages-tab"></a>패키지 탭
 
-또한 이전 버전에서 “pip”로 레이블이 지정됩니다. 
+또한 이전 버전에서 “pip”로 레이블이 지정됩니다.
 
 환경에 설치된 패키지는 PIP(**패키지(PyPI)** 탭) 또는 Conda(**패키지(Conda)** 탭, Visual Studio 2017 버전 15.7 이상의 Conda 환경인 경우)를 사용하여 관리합니다. 이러한 탭에서는 종속성을 포함하여 새 패키지를 검색하고 설치할 수도 있습니다.
 
@@ -105,7 +105,7 @@ ms.locfileid: "79307120"
 ![“num” 검색이 있는 Python 환경 패키지 탭](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-위의 이미지에서 볼 수 있듯이 검색 결과에는 검색어와 일치하는 여러 패키지가 표시되지만 목록의 첫 번째 항목은 **pip install \<name>** 을 직접 실행하는 명령입니다. **패키지(Conda)** 탭에 있는 경우 대신 **conda install \<name>** 을 참조하세요.
+위의 이미지에서 볼 수 있듯이 검색 결과에는 검색 용어와 일치하는 여러 패키지가 표시되지만 목록의 첫 번째 항목은 **pip install \<name>** 을 직접 실행하는 명령입니다. **패키지(Conda)** 탭에 있는 경우 대신 **conda install \<name>** 이 표시됩니다.
 
 ::: moniker range="vs-2017"
 ![conda 설치 명령을 표시하는 conda 패키지 탭](media/environments/environments-conda-tab-install.png)

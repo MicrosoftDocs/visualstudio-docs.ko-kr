@@ -1,7 +1,7 @@
 ---
-title: '방법: 독립 실행형 프로파일러 설치 | Microsoft Docs'
+title: 방법 - 독립 실행형 프로파일러 설치 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
 - profiling tools, stand-alone profiler
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0f211db3d9906d83d9bcf7c7a0ab79ec3e1b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 950927510d4c7acd77db22e80dff59946c0d6c20
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557836"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330138"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>방법: 독립 실행형 프로파일러 설치
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]은(는) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 설치하지 않고 실행할 수 있는 명령줄 기반 독립 실행형 프로파일러를 제공합니다. 이 경우는 컴퓨터에 설치된 개발 환경이 없거나 설치할 수 없는 경우에 발생합니다. 예를 들어 프로덕션 웹 서버에 개발 환경을 설치하면 안 됩니다.
@@ -52,7 +52,7 @@ ms.locfileid: "77557836"
 
 6. [VSPerfReport](../profiling/vsperfreport.md) 도구를 사용하여 기호를 프로파일링 데이터(.vsp) 파일로 직렬화합니다. **VSPerfReport /summary:all /packsymbols** 스위치를 사용합니다. 데이터 파일에 삽입된 기호가 없는 경우 _NT_SYMBOL_PATH 환경 변수를 설정했는지 확인합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [연습: 계측을 사용하여 명령줄 프로파일링](command-line-profiling-of-stand-alone-applications.md)
 - [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)

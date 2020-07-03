@@ -1,6 +1,6 @@
 ---
 title: 솔루션 및 프로젝트
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285233"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468732"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
@@ -74,13 +74,16 @@ Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하
 
 대부분의 메뉴 명령은 **솔루션 탐색기**에 있는 다양한 항목의 오른쪽 클릭 메뉴에서 사용할 수 있습니다. 이러한 명령에는 프로젝트 빌드, NuGet 패키지 관리, 참조 추가, 파일 이름 바꾸기, 테스트 실행 등이 포함됩니다. **솔루션 탐색기**의 위쪽에 있는 도구 모음에는 솔루션 보기를 폴더 보기로 전환하고 숨겨진 파일을 표시하고 모든 노드를 축소하는 등의 작업을 위한 단추가 있습니다.
 
+> [!TIP]
+> 솔루션 탐색기를 닫은 후 다시 열려면 메뉴 모음에서 **창** > **창 레이아웃 다시 설정**을 선택합니다.
+
 ASP.NET Core 프로젝트의 경우에는 파일이 **솔루션 탐색기**에 중첩되는 방식을 사용자 지정할 수 있습니다. 자세한 내용은 [솔루션 탐색기에서 파일 중첩 사용자 지정](file-nesting-solution-explorer.md)을 참조하세요.
 
-> [!TIP]
-> 솔루션 탐색기에 표시되는 일부 아이콘의 목록을 보려면 [클래스 뷰 및 개체 브라우저 아이콘](class-view-and-object-browser-icons.md) 페이지를 참조하세요.
+솔루션 탐색기에 표시되는 일부 아이콘 목록을 보려면 [클래스 뷰 및 개체 브라우저 아이콘](class-view-and-object-browser-icons.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [프로젝트 포팅, 마이그레이션 및 업그레이드](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [프로젝트 및 솔루션(Mac용 Visual Studio)](/visualstudio/mac/projects-and-solutions)
 - [프로젝트 항목 추가 및 제거(Mac 용 Visual Studio)](/visualstudio/mac/add-and-remove-project-items)

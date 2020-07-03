@@ -1,7 +1,7 @@
 ---
-title: '오류: 데이터 중단점을 설정할 수 없습니다 | Microsoft Docs'
+title: 오류 - 데이터 중단점을 설정할 수 없음 | Microsoft Docs
 ms.date: 12/3/2019
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: dab5e146d510601c6e93582b6b128abcd964b4a7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404080"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459937"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>데이터 중단점 오류 문제 해결
 이 페이지에서는 “값이 변경되면 중단”을 사용할 때 표시되는 일반적인 오류를 해결하는 과정을 안내합니다.

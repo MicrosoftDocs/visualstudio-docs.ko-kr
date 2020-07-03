@@ -1,19 +1,19 @@
 ---
 title: 기록 디버깅을 사용하여 앱 검사 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848229"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350448"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Visual Studio에서 IntelliTrace 기록 디버깅을 사용하여 앱 검사(C#, Visual Basic, C++)
 

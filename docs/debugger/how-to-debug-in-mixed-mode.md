@@ -1,7 +1,7 @@
 ---
-title: '방법: 혼합 모드에서 디버그 | Microsoft Docs'
+title: 방법 - 혼합 모드에서 디버그 | Microsoft Docs
 ms.date: 11/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894380"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350110"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>방법: 혼합 모드에서 디버그(C#, C++, Visual Basic)
 
@@ -43,13 +43,13 @@ ms.locfileid: "62894380"
 
 1. **솔루션 탐색기**에서 C++ 프로젝트를 선택하고, **속성** 아이콘을 클릭하거나 **Alt**+**Enter**를 누르거나 마우스 오른쪽 단추를 클릭하여 **속성**을 선택합니다.
 
-1. **\<프로젝트> 속성 페이지** 대화 상자에서 **구성 속성**을 확장하고 **디버깅**을 선택합니다.
+1. **\<Project> 속성 페이지** 대화 상자에서 **구성 속성**을 확장하고 **디버깅**을 선택합니다.
 
 1. **디버거 형식**을 **혼합** 또는 **자동**으로 설정합니다.
 
 1. **확인**을 선택합니다.
 
-   ![혼합 모드 디버깅 사용](../debugger/media/dbg-mixed-mode-from-native.png "혼합 모드 디버깅 사용")
+   ![혼합 모드 디버깅 사용](../debugger/media/dbg-mixed-mode-from-native.png "혼합된 모드 디버깅 사용")
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>관리형 호출 앱에 혼합 모드 디버깅 사용
 

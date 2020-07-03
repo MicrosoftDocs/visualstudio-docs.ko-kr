@@ -1,7 +1,7 @@
 ---
-title: '오류: 웹 서버가 잠겨 있어 DEBUG 동사를 차단함 | Microsoft Docs'
+title: 오류 - 웹 서버가 잠겨 있어 DEBUG 동사를 차단함 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9564f077a5379f44d2beb4d7851453dd6b35fa48
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: abef1edefad63e340170e7934f4ad87cce268e46
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736949"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460366"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>오류: 웹 서버가 잠겨 있어 DEBUG 동사를 차단함
 IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있기 때문에 웹 애플리케이션 또는 XML Web services를 한 단계씩 실행하지 못했습니다. 이 상태가 되면 IIS에서 DEBUG 동사를 받을 수 없습니다.

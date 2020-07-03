@@ -1,7 +1,7 @@
 ---
 title: 원격 컴퓨터의 UWP 앱 디버그 | Microsoft Docs
 ms.date: 10/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902886"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348121"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Visual Studio에서 원격 컴퓨터의 UWP 앱 디버그
 
@@ -53,7 +53,7 @@ Visual Studio에서 원격 디바이스에 있는 UWP 앱을 디버깅하려면 
 
 1. 원격 컴퓨터의 경우 **원격 컴퓨터** 필드에 네트워크 이름 또는 IP 주소를 입력하거나 **원격 연결 대화 상자**에서 디바이스를 검색하려면 [검색](#remote-connections)을 선택합니다.
 
-    ![원격 디버깅의 관리되는 프로젝트 속성](../debugger/media/vsrun_managed_projprop_remote.png "원격 디버깅의 관리되는 프로젝트 속성")
+    ![원격 디버깅의 관리형 프로젝트 속성](../debugger/media/vsrun_managed_projprop_remote.png "관리형 디버그 프로젝트 속성")
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 원격 디버깅을 위한 C++ 프로젝트 구성하기
 
@@ -65,7 +65,7 @@ Visual Studio에서 원격 디바이스에 있는 UWP 앱을 디버깅하려면 
 
 1. 원격 컴퓨터의 경우 **컴퓨터 이름** 필드에 네트워크 이름 또는 IP 주소를 입력하거나 **원격 연결 대화 상자**에서 디바이스를 검색하려면 드롭다운에서 [찾기](#remote-connections)를 선택합니다.
 
-    ![원격 디버깅의 C++ 프로젝트 속성](../debugger/media/vsrun_cpp_projprop_remote.png "원격 디버깅의 C++ 프로젝트 속성")
+    ![원격 디버깅에 대한 C++ 프로젝트 속성](../debugger/media/vsrun_cpp_projprop_remote.png "C++ 디버깅 프로젝트 속성")
 
 ### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a>원격 연결 대화 상자 사용
 

@@ -1,7 +1,7 @@
 ---
-title: 'DA0002: VSPerfCorProf.dll이 없습니다. | Microsoft Docs'
+title: DA0002 - VSPerfCorProf.dll 누락 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0002
 - vs.performance.2
@@ -14,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f768a35e7c50ec55867ae49901718063ca39bd0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 36c9f3b33eab8428cd14aa26896c3813422d3dd7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777753"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537074"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll이 없습니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0002|
-|Category|프로파일링 도구 사용|
+|범주|프로파일링 도구 사용|
 |프로파일링 방법|VSPerfCmd 및 VSPerfASPNETCmd 명령줄 도구를 사용하는 프로파일링|
 |메시지|*VSPerfCLREnv.cmd*를 사용하여 환경 변수를 제대로 설정하지 않고 파일을 수집한 것 같습니다. 관리되는 이진에 대한 기호가 확인되지 않을 수 있습니다.|
 |규칙 유형|정보|

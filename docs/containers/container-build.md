@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027269"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536866"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio에서 컨테이너화된 앱을 빌드하는 방법
 
 Visual Studio IDE에서 빌드하거나 명령줄 빌드를 설정하는 경우, Visual Studio에서 Dockerfile을 사용하여 프로젝트를 빌드하는 방법을 알고 있어야 합니다.  성능상의 이유로, Visual Studio는 컨테이너화된 앱을 위해 특별한 프로세스를 따릅니다. Dockerfile을 수정하여 빌드 프로세스를 사용자 지정하는 경우에는 Visual Studio에서 프로젝트를 빌드하는 방법을 이해하는 것이 특히 중요합니다.
 
-Visual Studio는 Docker 컨테이너를 사용하지 않는 프로젝트를 빌드할 때, 로컬 컴퓨터에서 MSBuild를 호출하고 로컬 솔루션 폴더 아래에 있는 폴더(일반적으로 `bin`)에 출력 파일을 생성합니다. 그러나 컨테이너화된 프로젝트의 경우 빌드 프로세스에서 컨테이너화된 앱 빌드에 대한 Dockerfile의 지침을 고려합니다. Visual Studio에서 사용하는 Dockerfile은 여러 스테이지로 나누어져 있습니다. 이 프로세스는 Docker의 ‘다단계 빌드’ 기능을 사용합니다. 
+Visual Studio는 Docker 컨테이너를 사용하지 않는 프로젝트를 빌드할 때, 로컬 컴퓨터에서 MSBuild를 호출하고 로컬 솔루션 폴더 아래에 있는 폴더(일반적으로 `bin`)에 출력 파일을 생성합니다. 그러나 컨테이너화된 프로젝트의 경우 빌드 프로세스에서 컨테이너화된 앱 빌드에 대한 Dockerfile의 지침을 고려합니다. Visual Studio에서 사용하는 Dockerfile은 여러 스테이지로 나누어져 있습니다. 이 프로세스는 Docker의 ‘다단계 빌드’ 기능을 사용합니다.
 
 ## <a name="multistage-build"></a>다단계 빌드
 
@@ -66,7 +66,7 @@ Visual Studio 외부에서 빌드하려는 경우 `docker build` 또는 `MSBuild
 
 ### <a name="docker-build"></a>docker build
 
-명령줄에서 컨테이너화된 솔루션을 빌드하려는 경우, 일반적으로 솔루션의 각 프로젝트에 대해 `docker build <context>` 명령을 사용할 수 있습니다. ‘빌드컨텍스트’ 인수를 제공합니다.  Dockerfile의 ‘빌드 컨텍스트’는 이미지를 생성하기 위한 작업 폴더로 사용되는 로컬 컴퓨터의 폴더입니다.  예를 들어 컨테이너에 복사할 때, 복사할 파일이 들어 있는 폴더입니다.  .NET Core 프로젝트에서는 솔루션 파일(.sln)이 포함된 폴더를 사용합니다.  이 인수는 상대 경로로 표시되며, 일반적으로 프로젝트 폴더의 Dockerfile과 부모 폴더의 솔루션 파일은 “..”으로 지정됩니다.  .NET Framework 프로젝트의 빌드 컨텍스트는 솔루션 폴더가 아닌 프로젝트 폴더입니다.
+명령줄에서 컨테이너화된 솔루션을 빌드하려는 경우, 일반적으로 솔루션의 각 프로젝트에 대해 `docker build <context>` 명령을 사용할 수 있습니다. ‘빌드컨텍스트’ 인수를 제공합니다. Dockerfile의 ‘빌드 컨텍스트’는 이미지를 생성하기 위한 작업 폴더로 사용되는 로컬 컴퓨터의 폴더입니다. 예를 들어 컨테이너에 복사할 때, 복사할 파일이 들어 있는 폴더입니다.  .NET Core 프로젝트에서는 솔루션 파일(.sln)이 포함된 폴더를 사용합니다.  이 인수는 상대 경로로 표시되며, 일반적으로 프로젝트 폴더의 Dockerfile과 부모 폴더의 솔루션 파일은 “..”으로 지정됩니다.  .NET Framework 프로젝트의 빌드 컨텍스트는 솔루션 폴더가 아닌 프로젝트 폴더입니다.
 
 ```cmd
 docker build -f Dockerfile ..
@@ -76,7 +76,7 @@ docker build -f Dockerfile ..
 
 Visual Studio에서 만든 .NET Framework 프로젝트용(및 Visual Studio 2017 업데이트 4 이전의 Visual Studio 버전에서 만든 .NET Core 프로젝트용) Dockerfile은 다단계 Dockerfile이 아닙니다.  해당 Dockerfile의 단계에서는 코드를 컴파일하지 않습니다.  대신, Visual Studio에서 .NET Framework Dockerfile을 빌드할 때 먼저 MSBuild를 사용하여 프로젝트를 컴파일합니다.  작업이 성공하면 Visual Studio에서 Dockerfile을 빌드합니다. 이 프로세스에서는 MSBuild의 빌드 출력을 결과 Docker 이미지에 복사하기만 합니다.  코드를 컴파일하는 단계가 Dockerfile에 포함되지 않기 때문에, 명령줄에서 `docker build`를 사용하여 .NET Framework Dockerfile을 빌드할 수 없습니다. 이러한 프로젝트를 빌드하려면 MSBuild를 사용해야 합니다.
 
-단일 Docker 컨테이너 프로젝트용 이미지를 빌드하려는 경우, `/t:ContainerBuild` 명령 옵션과 함께 MSBuild를 사용할 수 있습니다. 다음은 그 예입니다.
+단일 Docker 컨테이너 프로젝트용 이미지를 빌드하려는 경우, `/t:ContainerBuild` 명령 옵션과 함께 MSBuild를 사용할 수 있습니다. 예를 들어:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
@@ -105,7 +105,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 컨테이너에서 디버깅이 작동하기 위해 Visual Studio에서는 볼륨 매핑을 사용하여 호스트 머신의 디버거 및 NuGet 폴더를 매핑합니다. 볼륨 매핑은 [여기](https://docs.docker.com/storage/volumes/) Docker 설명서에 설명되어 있습니다. 컨테이너에 탑재된 볼륨은 다음과 같습니다.
 
-|||
+|볼륨|설명|
 |-|-|
 | **원격 디버거** | 프로젝트 형식에 따라 컨테이너에서 디버거를 실행하는 데 필요한 비트를 포함합니다. 이 내용은 |[디버깅](#debugging) 섹션에 자세히 설명되어 있습니다.
 | **앱 폴더** | Dockerfile이 있는 프로젝트 폴더를 포함합니다.|
@@ -146,7 +146,7 @@ ASP.NET Core는 *Https* 폴더 아래에서 어셈블리 이름과 일치하는 
 
 ## <a name="debugging"></a>디버깅
 
-**디버그** 구성에서 빌드할 때, Visual Studio에서 컨테이너화된 프로젝트에 대한 빌드 프로세스의 성능 향상을 지원하는 여러 가지 최적화 기능이 있습니다. 컨테이너화된 앱의 빌드 프로세스는 Dockerfile에 설명된 단계만큼 간단하게 진행되지 않습니다. 컨테이너에서 빌드하는 경우 로컬 컴퓨터에서 빌드하는 것보다 훨씬 더 느립니다.  따라서 **디버그** 구성으로 빌드하는 경우, Visual Studio는 실제로 로컬 컴퓨터에서 프로젝트를 빌드한 다음, 볼륨 탑재를 사용하여 출력 폴더를 컨테이너에 공유합니다. 이 최적화 기능을 사용하는 빌드를 ‘고속’ 모드 빌드라고 합니다. 
+**디버그** 구성에서 빌드할 때, Visual Studio에서 컨테이너화된 프로젝트에 대한 빌드 프로세스의 성능 향상을 지원하는 여러 가지 최적화 기능이 있습니다. 컨테이너화된 앱의 빌드 프로세스는 Dockerfile에 설명된 단계만큼 간단하게 진행되지 않습니다. 컨테이너에서 빌드하는 경우 로컬 컴퓨터에서 빌드하는 것보다 훨씬 더 느립니다.  따라서 **디버그** 구성으로 빌드하는 경우, Visual Studio는 실제로 로컬 컴퓨터에서 프로젝트를 빌드한 다음, 볼륨 탑재를 사용하여 출력 폴더를 컨테이너에 공유합니다. 이 최적화 기능을 사용하는 빌드를 ‘고속’ 모드 빌드라고 합니다.
 
 **고속** 모드에서 Visual Studio는 `base` 스테이지만 빌드하도록 Docker에 지시하는 인수를 사용하여 `docker build`를 호출합니다.  Visual Studio는 Dockerfile의 내용에 관계없이 프로세스의 나머지 부분을 처리합니다. 따라서 컨테이너 환경을 사용자 지정하거나 추가 종속성을 설치하기 위해 Dockerfile을 수정하는 경우, 수정 내용을 첫 번째 스테이지에 배치해야 합니다.  Dockerfile의 `build`, `publish` 또는 `final` 스테이지에 배치된 사용자 지정 단계는 모두 실행되지 않습니다.
 
@@ -166,7 +166,7 @@ ASP.NET Core는 *Https* 폴더 아래에서 어셈블리 이름과 일치하는 
 
 디버거를 실행하는 프로세스는 프로젝트 및 컨테이너 운영 체제의 형식에 따라 달라집니다.
 
-|||
+|시나리오|디버거 프로세스|
 |-|-|
 | **.NET Core 앱(Linux 컨테이너)**| Visual Studio는 `vsdbg`를 다운로드하여 컨테이너에 매핑한 다음, 프로그램 및 인수(`dotnet webapp.dll`)를 사용하여 호출합니다. 그러면 디버거가 프로세스에 연결됩니다. |
 | **.NET Core 앱(Windows 컨테이너)**| Visual Studio는 `onecoremsvsmon`을 사용하여 컨테이너에 매핑하고 진입점으로 실행한 다음, Visual Studio에서 연결하여 프로그램에 연결합니다. 이는 일반적으로 다른 컴퓨터 또는 가상 머신에서 원격 디버깅을 설정하는 방법과 비슷합니다.|
@@ -178,7 +178,7 @@ ASP.NET Core는 *Https* 폴더 아래에서 어셈블리 이름과 일치하는 
 
 Visual Studio는 프로젝트 형식 및 컨테이너 운영 체제에 따라 사용자 지정 컨테이너 진입점을 사용합니다. 다음과 같은 다양한 조합이 있습니다.
 
-|||
+|컨테이너 유형|진입점|
 |-|-|
 | **Linux 컨테이너** | 진입점은 컨테이너를 계속 실행하기 위해 무한 대기하는 `tail -f /dev/null`입니다. 앱이 디버거를 통해 시작되면 앱 실행은 디버거에서 담당합니다(즉 `dotnet webapp.dll`). 디버그하지 않고 시작하는 경우 도구는 `docker exec -i {containerId} dotnet webapp.dll`을 실행하여 앱을 실행합니다.|
 | **Windows 컨테이너**| 진입점은 디버거를 실행하는 `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`와 비슷하기 때문에 연결을 수신 대기합니다. 디버그하지 않고 시작될 때, 디버거가 앱을 실행하고 `docker exec` 명령을 실행하는 경우도 마찬가지입니다. .NET Framework 웹앱의 경우 진입점은 `ServiceMonitor`가 명령에 추가되는 위치와 약간 다릅니다.|
@@ -189,7 +189,7 @@ Visual Studio는 프로젝트 형식 및 컨테이너 운영 체제에 따라 �
 
 프로젝트 파일에서 추가 MSBuild 속성을 설정하여 빌드를 추가로 사용자 지정하는 방법을 알아봅니다. [컨테이너 프로젝트에 대한 MSBuild 속성](container-msbuild-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [MSBuild](../msbuild/msbuild.md)
 [Windows의 Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

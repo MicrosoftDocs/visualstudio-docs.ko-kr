@@ -1,7 +1,7 @@
 ---
-title: '방법: OnStart 메서드 디버그 | Microsoft Docs'
+title: 방법 - OnStart 메서드 디버그 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 107ce6d5ca2b327d77fe588e1ac7ffda10a0a3a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7392b4185def34f38f0e183f2626bd648bb4b4ea
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733624"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350019"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>방법: OnStart 메서드 디버그
 서비스를 시작하고 디버거를 서비스 프로세스에 연결하여 Windows 서비스를 디버그할 수 있습니다. 자세한 내용은 [방법: Windows 서비스 애플리케이션 디버그](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)를 참조하세요. 그러나 Windows 서비스의 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 메서드를 디버그하려면 메서드 내에서 디버거를 시작해야 합니다.
@@ -44,7 +44,7 @@ ms.locfileid: "72733624"
 
     ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
 
-3. **예, \<서비스 이름> 디버그를 선택합니다.**
+3. **예, \<service name> 디버그**를 선택합니다.
 
 4. Just-In-Time 디버거 창에서 디버깅에 사용할 Visual Studio 버전을 선택합니다.
 

@@ -1,7 +1,7 @@
 ---
-title: '방법: Windows 기호 정보 참조 | Microsoft 문서'
+title: 방법 - Windows 기호 정보 참조 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88df7c676e6dbd95704716eb8a361f2fce7f66d4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774915"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328828"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>방법: Windows 기호 정보 참조
 Visual Studio 프로파일링 도구는 기호 파일(.*pdb*)을 사용하여 프로그램 바이너리의 함수 이름과 같은 기호 이름을 확인합니다. 로컬 컴퓨터에 설치된 Windows 버전에 대한 올바른 .*pdb* 파일을 자동으로 다운로드하고 업데이트하려면 다음 단계를 수행합니다.
@@ -47,6 +47,6 @@ Visual Studio 프로파일링 도구는 기호 파일(.*pdb*)을 사용하여 �
 
      줄임표 단추( **...** )를 클릭한 후 **폴더 찾아보기** 대화 상자에서 디렉터리를 선택할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 - [방법: 기호 정보 직렬화](../profiling/how-to-serialize-symbol-information.md)

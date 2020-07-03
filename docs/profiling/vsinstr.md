@@ -1,7 +1,7 @@
 ---
 title: VSInstr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - performance tools, instrumentation
 - instrumentation, VSInstr tool
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e51a8bd82a4bd79309dfe2a055c44d986e94c4
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760153"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330500"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 도구는 이진 파일을 계측하는 데 사용됩니다. 다음 구문을 사용하여 이 도구를 호출합니다.

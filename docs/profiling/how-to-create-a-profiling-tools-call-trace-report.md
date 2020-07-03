@@ -1,7 +1,7 @@
 ---
-title: '방법: 프로파일링 도구 호출 추적 보고서 만들기 | Microsoft Docs'
+title: 방법 - 프로파일링 도구 호출 추적 보고서 만들기 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, viewing ETW data
 - ETW [Visual Studio ALM], viewing data
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2fe1ae2870e2e48d092f303f3e7458e7498c0ba5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778988"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548163"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>방법: 프로파일링 도구 호출 추적 보고서 만들기
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구에 대한 *호출 추적 보고서*는 애플리케이션의 함수에 대한 각 진입 지점 및 종료 지점에 대한 타이밍 정보와 함수로 다른 함수에 대한 각 호출을 나열합니다. 호출 추적 보고서는 계측 방법으로 수집된 경우에만 프로파일링 데이터에 사용할 수 있습니다.
@@ -33,7 +33,7 @@ ms.locfileid: "74778988"
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
-    |||
+    |항목|설명|
     |-|-|
     |*ToolsPath*|프로파일링 도구 명령줄 도구의 경로입니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.|
     |*VSPFile*|프로파일링 데이터(.*vsp* 또는 .*vsps*) 파일입니다. 전체 및 부분 경로를 사용할 수 있습니다.|

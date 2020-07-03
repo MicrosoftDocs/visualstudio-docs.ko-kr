@@ -1,7 +1,7 @@
 ---
-title: '방법: 프로세스 뷰에서 프로세스 검색 | Microsoft Docs'
+title: 방법 - 프로세스 뷰에서 프로세스 검색 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6b57226b14963759bb4d78afff3beb5559a63e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e823ecb1f7523c1a6f094d5669f4a37a72e84f60
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798983"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349291"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>방법: 프로세스 뷰에서 프로세스 검색
 프로세스 뷰에서 프로세스 ID 또는 모듈 문자열을 검색 조건으로 사용하여 특정 프로세스를 검색할 수 있습니다. 검색의 초기 방향을 지정할 수도 있습니다. 대화 상자의 필드에는 프로세스 트리에서 선택한 프로세스의 특성이 표시됩니다.

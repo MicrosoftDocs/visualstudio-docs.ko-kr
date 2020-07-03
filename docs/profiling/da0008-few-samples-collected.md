@@ -1,7 +1,7 @@
 ---
-title: 'DA0008: 수집되는 샘플 수가 적습니다. | Microsoft 문서'
+title: DA0008 - 수집되는 샘플 수가 적습니다. | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DATooFewSamples
 - vs.performance.8
@@ -14,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5dd1114f4be0ed943c9a582c04d9917b03ca75c3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779443"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520785"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: 수집되는 샘플 수가 적습니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0008|
-|Category|프로파일링 도구 사용|
+|범주|프로파일링 도구 사용|
 |프로파일링 방법|샘플링|
 |메시지|샘플이 몇 개만 수집되었습니다. 보다 의미 있는 결과를 위해 실행 시간을 늘리거나 샘플링 주기를 더 빠르게 해보세요.|
 |규칙 유형|정보|

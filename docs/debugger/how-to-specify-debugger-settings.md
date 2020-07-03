@@ -1,7 +1,7 @@
 ---
-title: '방법: 디버거 설정 지정 | Microsoft Docs'
+title: 방법 - 디버거 설정 지정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e9d0fb5b7d63402c9add3ddf06b3997bc0d7d9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732719"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349109"
 ---
 # <a name="how-to-specify-debugger-settings"></a>방법: 디버거 설정 지정
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 변수 표시 방법, 특정 경고 표시 여부, 중단점 설정 방법, 프로그램 중단이 실행 프로그램에 미치는 영향 등을 포함하여 디버거 작동에 대한 여러 가지 설정을 지정할 수 있습니다. 디버거 설정은 **옵션** 대화 상자에서 지정합니다.

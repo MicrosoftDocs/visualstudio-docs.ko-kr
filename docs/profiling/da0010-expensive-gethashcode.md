@@ -1,7 +1,7 @@
 ---
-title: 'DA0010: GetHashCode의 부담이 큽니다. | Microsoft Docs'
+title: DA0010 - GetHashCode의 부담이 큽니다. | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExpensiveGetHashCode
 - vs.performance.DA0010
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8f94277822d1fcd4210f0f8d79591fc4e2ed3d9e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777688"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520681"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode의 부담이 큽니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0010|
-|Category|.NET Framework 사용|
+|범주|.NET Framework 사용|
 |프로파일링 방법|샘플링<br /><br /> .NET 메모리|
 |메시지|GetHashCode 함수는 정리되어야 하며 메모리를 할당하면 안 됩니다. 가능한 경우 해시 코드 함수의 복잡성을 줄입니다.|
-|메시지 유형|Warning|
+|메시지 유형|경고|
 
 ## <a name="cause"></a>원인
  해당 형식의 GetHashCode 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지하거나 메서드가 메모리를 할당합니다.

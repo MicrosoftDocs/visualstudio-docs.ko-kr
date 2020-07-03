@@ -1,7 +1,7 @@
 ---
-title: 'DA0026: 과도한 커널 CPU 처리 시간 | Microsoft 문서'
+title: DA0026 - 커널 CPU 시간 처리 시간이 너무 깁니다. | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -13,19 +13,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd3d96ccf3fc8463908ab5cf27b52e91fb1d05ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777491"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544627"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: 과도한 커널 CPU 처리 시간
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: 커널 CPU 시간 처리 시간이 너무 깁니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|TODO|
-|Category|프로파일링 도구 사용|
+|범주|프로파일링 도구 사용|
 |프로파일링 방법|샘플링|
 |메시지|커널 모드 CPU 시간이 비교적 긴 것으로 측정되었습니다. SysCall 샘플링을 사용하면서 원인을 조사해 보세요.|
 |규칙 유형|정보|
@@ -39,4 +39,4 @@ ms.locfileid: "74777491"
  커널 모드 실행에서 애플리케이션이 사용한 시간이 비교적 길면 추가 조사가 수행될 수 있습니다. 사용자 모드 애플리케이션이 커널 모드로 전환되어 I/O 작업을 수행하거나, 스레드 또는 프로세스 동기화 기본 형식을 기다리거나, 시스템 호출을 수행합니다. 애플리케이션이 수행하는 시스템 호출 종류 및 시스템 호출을 기반으로 샘플 호출 스택을 수집하는 옵션을 선택할 경우 이 시스템 호출을 처리하는 함수 종류를 조사할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 애플리케이션이 수행하는 시스템 호출 종류를 조사하려면 프로필을 다시 실행하고 시스템 호출을 기반으로 샘플을 수집하는 옵션을 선택합니다. 자세한 내용은 IDE 내부에서 프로파일링 도구를 실행 중인 경우 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요. 명령줄에서 프로파일링 도구를 실행할 경우 프로파일링 도구 명령줄 도구 참조에서 [VSPerfCmd](../profiling/vsperfcmd.md) 문서의 **샘플 간격 옵션** 섹션을 참조하세요.
+ 애플리케이션이 수행하는 시스템 호출 종류를 조사하려면 프로필을 다시 실행하고 시스템 호출을 기반으로 샘플을 수집하는 옵션을 선택합니다. [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요(자세한 내용은 IDE 내부에서 프로파일링 도구를 실행 중인 경우). 명령줄에서 프로파일링 도구를 실행할 경우 프로파일링 도구 명령줄 도구 참조에서 [VSPerfCmd](../profiling/vsperfcmd.md) 문서의 **샘플 간격 옵션** 섹션을 참조하세요.

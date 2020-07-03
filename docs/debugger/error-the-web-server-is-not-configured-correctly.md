@@ -1,7 +1,7 @@
 ---
-title: '오류: 웹 서버가 제대로 구성되어 있지 않습니다. | Microsoft Docs'
+title: 오류 - 웹 서버가 제대로 구성되어 있지 않음 | Microsoft Docs
 ms.date: 09/20/2017
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.remote.projnotconfigured
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be5db0a08a287e2611c29396e96e72719b5106a7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711297ef00c064c482ed3a86b896566b6e019534
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736920"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460327"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>오류: 웹 서버가 제대로 구성되어 있지 않습니다.
 

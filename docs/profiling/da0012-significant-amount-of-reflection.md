@@ -1,7 +1,7 @@
 ---
-title: 'DA0012: 리플렉션 양이 많습니다. | Microsoft 문서'
+title: DA0012 - 많은 양의 리플렉션 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAReflection
 - vs.performance.12
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c1b96e9a73b488ba9c9920e8ea43e27f78f67ed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: df8b9c80b3d3b12cb556947a7ca77b3141fb853d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777675"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520643"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: 리플렉션 양이 많습니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0012|
-|Category|.NET Framework 사용|
+|범주|.NET Framework 사용|
 |프로파일링 방법|샘플링|
 |메시지|리플렉션을 과도하게 사용하는 것 같습니다. 이 작업은 부담이 큰 작업입니다.|
-|규칙 유형|Warning|
+|규칙 유형|경고|
 
 ## <a name="cause"></a>원인
  InvokeMember, GetMember 등의 System.Reflection 메서드 호출이나 MemberInvoke 등의 Type 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 가능할 경우 이러한 메서드를 종속 어셈블리의 메서드에 대한 초기 바인딩으로 바꿔 보세요.

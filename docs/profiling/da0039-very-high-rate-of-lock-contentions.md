@@ -1,7 +1,7 @@
 ---
-title: 'DA0039: 매우 높은 비율의 잠금 경합 | Microsoft 문서'
+title: DA0039 - 매우 높은 비율의 잠금 경합 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.39
 - vs.performance.DA0039
@@ -13,22 +13,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64f717bf87fb4636c7c2f4e6f11a08236d08ada
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4cc2380402fd4c71756cf0a424853546a8f3e439
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779365"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544588"
 ---
-# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: 매우 높은 비율의 잠금 경합
+# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: 잠금 경합의 비율이 매우 높습니다.
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0039|
-|Category|.NET Framework 사용|
+|범주|.NET Framework 사용|
 |프로파일링 방법|샘플링<br /><br /> 계측<br /><br /> .NET 메모리|
 |메시지|.NET 잠금 경합의 비율이 매우 높습니다. 동시성 프로필을 실행하여 이 잠금 경합의 원인을 조사하세요.|
-|규칙 유형|Warning|
+|규칙 유형|경고|
 
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 25개 이상의 샘플을 수집해야 합니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "74779365"
  프로파일링 실행 중에 수집된 측정값이 잠금 경합 수가 지나치게 많다는 것을 나타낼 경우 이 규칙이 실행됩니다. 잠금 경합은 잠금을 기다리고 있는 스레드의 실행을 지연시킵니다. 저사양 하드웨어에서 실행되는 부하 테스트나 단위 테스트의 잠금 경합 수가 적더라도 잠금 경합을 조사해야 합니다.
 
 > [!NOTE]
-> 프로파일링 데이터에서 보고된 잠금 경합 비율이 높지만 과도하지 않으면 이 경고 메시지 대신 [DA0038: 높은 비율의 잠금 경합](../profiling/da0038-high-rate-of-lock-contentions.md) 경고 메시지가 실행됩니다.
+> 프로파일링 데이터에서 보고된 잠금 경합 비율이 높지만 지나치지 않으면 이 경고 메시지 대신 [DA0038: 잠금 경합의 비율이 높습니다.](../profiling/da0038-high-rate-of-lock-contentions.md) 경고 메시지가 발생합니다.
 
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법
  메시지를 두 번 클릭하여 프로파일링 데이터의 [표시](../profiling/marks-view.md) 뷰로 이동합니다.  **.NET CLR LocksAndThreads\Contention Rate / sec** 열을 찾습니다. 다른 단계보다 잠금 경합 수가 더 많은 특정 프로그램 실행 단계가 있는지 확인합니다.

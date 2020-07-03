@@ -1,7 +1,7 @@
 ---
-title: '방법: 계측된 이진 파일 재배치 | Microsoft Docs'
+title: 방법 - 계측된 이진 파일 재배치 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.binaries
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 92ec3bb107c5921c6ac0113e18f1dc35ec3dd07a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774902"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328815"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>방법: 계측된 이진 파일 재배치
 
@@ -36,7 +36,7 @@ ms.locfileid: "74774902"
 
 4. 계측된 이진 파일의 위치를 지정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [VSInstr](../profiling/vsinstr.md)

@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 업데이트
 description: --layout 명령을 사용하여 네트워크 기반 Visual Studio 설치를 업데이트하는 방법 알아보기
-ms.date: 01/08/2020
+ms.date: 06/29/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114968"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545433"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 
@@ -74,7 +74,7 @@ ms.locfileid: "76114968"
   ```
 
     > [!IMPORTANT]
-    > 업데이트 작업은 [응답 파일](automated-installation-with-response-file.md)의 "추가" 섹션에 이러한 구성 요소를 포함하더라도 새로 추가된 선택적 구성 요소를 설치하지 않습니다. 이는 업데이트하는 동안 추가 작업이 사용되지 않기 때문에 발생합니다.
+    > 업데이트 작업은 새로 추가된 선택적 구성 요소를 설치하지 않습니다. 새로 추가된 선택적 구성 요소가 필요한 경우 `Layout.JSON` [지시 파일](automated-installation-with-response-file.md)에서 이전 선택적 구성 요소를 제거하고 `Layout.JSON`의 “add” 섹션에 필요한 구성 요소를 포함하세요. 
     >
     > **해결 방법**: 업그레이드 후 별도의 수정 작업을 실행하여 누락된 구성 요소를 설치합니다.
 

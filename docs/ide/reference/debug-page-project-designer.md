@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649429"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418745"
 ---
 # <a name="debug-page-project-designer"></a>프로젝트 디자이너, 디버그 페이지
 

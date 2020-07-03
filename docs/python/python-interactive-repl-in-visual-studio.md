@@ -2,7 +2,7 @@
 title: Python 대화형 창(REPL)
 description: Visual Studio에서 빠른 Python 코드 개발을 위해 대화형 창(REPL)을 사용합니다.
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307114"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533551"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 대화형 창 작업
 
@@ -48,7 +48,7 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 ![보기 > 다른 창의 대화형 창 메뉴 항목](media/interactive-window-menu.png)
 
-셋째, **디버그** > **Python 대화형 창에서 \<프로젝트 | 파일> 실행** 메뉴 명령(**Shift**+**Alt**+**F5**)을 선택하여 프로젝트의 시작 파일 또는 독립 실행형 파일에서 **대화형** 창을 열 수 있습니다.
+셋째, **디버그** > **Python 대화형 창에서 \<Project | File> 실행** 메뉴 명령(**Shift**+**Alt**+**F5**)을 선택하여 프로젝트의 시작 파일 또는 독립 실행형 파일에서 **대화형** 창을 열 수 있습니다.
 
 ![Python 대화형 창에서 프로젝트 실행 메뉴](media/interactive-execute-project.png)
 

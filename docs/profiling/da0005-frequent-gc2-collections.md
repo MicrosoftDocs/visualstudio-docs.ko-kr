@@ -1,7 +1,7 @@
 ---
-title: 'DA0005: GC2 컬렉션이 많습니다. | Microsoft Docs'
+title: DA0005 - 많은 GC2 컬렉션 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a50567a101d77ed6498aaae13a5fe5556d9c1056
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28969dd6f5adf1d0f32fe419a17f14ac4069a298
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777714"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539921"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: GC2 컬렉션이 많습니다.
 
-|||
+|항목|값|
 |-|-|
 |RuleId|DA0005|
-|Category|.NET Framework 사용|
+|범주|.NET Framework 사용|
 |프로파일링 방법|.NET 메모리|
 |메시지|대부분의 개체는 2세대 가비지 수집에서 수집됩니다.|
-|메시지 유형|Warning|
+|메시지 유형|경고|
 
 ## <a name="cause"></a>원인
  많은 .NET 메모리 개체가 2세대 가비지 수집에서 회수됩니다.

@@ -1,7 +1,7 @@
 ---
-title: '방법: 네이티브 런타임 검사 사용 | Microsoft Docs'
+title: 방법 - 네이티브 런타임 검사 사용 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732151"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348849"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 사용
 Visual Studio C++ 프로젝트에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks)를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.

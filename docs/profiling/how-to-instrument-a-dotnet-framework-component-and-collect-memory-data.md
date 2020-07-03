@@ -1,7 +1,7 @@
 ---
-title: '프로파일러 명령줄: 클라이언트 .NET 구성 요소 계측, 메모리 데이터 가져오기'
+title: 프로파일러 명령줄 - 클라이언트 .NET 구성 요소 계측, 메모리 데이터 가져오기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76d216c4f112f88001b0314a23f22e689f729106
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29406d72fc54e15499a0936a78ebf693f8eca0b3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775903"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332067"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>방법: 명령줄에서 프로파일러를 사용하여 독립 실행형 .NET Framework 구성 요소 계측 및 메모리 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 .exe 또는 .dll 파일과 같은 독립 실행형 애플리케이션의 .NET Framework 구성 요소를 계측하고 프로파일러를 사용하여 메모리 정보를 수집하는 방법을 설명합니다.

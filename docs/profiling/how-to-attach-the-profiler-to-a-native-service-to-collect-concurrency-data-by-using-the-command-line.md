@@ -1,7 +1,7 @@
 ---
-title: 'VSPerfCmd: 네이티브 서비스에 프로파일러를 연결하여 동시성 데이터 가져오기'
+title: VSPerfCmd - 네이티브 서비스에 프로파일러를 연결하여 동시성 데이터 가져오기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 705e55363f4f8657da20fe66cd4369188f133cdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 202b7e3f51ff16af15e755ad070813c7c2777744
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776610"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329464"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 서비스에 프로파일러를 연결하여 동시성 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 네이티브 (C/C++) 서비스에 연결하고 샘플링 방법으로 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.

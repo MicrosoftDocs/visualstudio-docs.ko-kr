@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306820"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533642"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 
@@ -32,34 +32,50 @@ ms.locfileid: "79306820"
 
 Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md) 및 [방법: 단독으로 키보드 사용](../ide/reference/how-to-use-the-keyboard-exclusively.md)을 참조하세요.
 
-|||||
-|-|-|-|-|
-|[분석](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[편집](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[프로젝트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[아키텍처](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[편집기 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[프로젝트 및 솔루션 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[테스트 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[빌드](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[파일](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[리팩터링](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[도구](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[클래스 뷰 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[도움말](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[솔루션 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[보기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[디버그](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[부하 테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[팀](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[창](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[디버거 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[기타 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[진단 허브](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+- [분석](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
+- [편집](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
+- [프로젝트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
+- [테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [아키텍처](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
+- [편집기 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
+- [프로젝트 및 솔루션 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [테스트 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [빌드](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
+- [파일](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
+- [리팩터링](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
+- [도구](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
+- [클래스 뷰 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
+- [도움말](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
+- [솔루션 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
+- [보기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [디버그](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [부하 테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
+- [팀](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
+- [창](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
+- [디버거 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
+- [기타 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
+- [Team Foundation 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
+- [진단 허브](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
 ## <a name="global-shortcuts"></a>전역 바로 가기
 
 이러한 바로 가기 키는 *전역*이므로 Visual Studio 창에 포커스가 있을 때 사용할 수 있습니다.
 
-### <a name="bkmk_analyze"></a> 분석
+### <a name="analyze"></a><a name="bkmk_analyze"></a> 분석
 
 |명령|바로 가기 키|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
-### <a name="bkmk_architecture"></a> 아키텍처
+### <a name="architecture"></a><a name="bkmk_architecture"></a> 아키텍처
 
 |명령|바로 가기 키|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
-### <a name="bkmk_build"></a> 빌드
+### <a name="build"></a><a name="bkmk_build"></a> 빌드
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -69,13 +85,13 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |빌드.컴파일|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-### <a name="bkmk_classview"></a> 클래스 뷰 상황에 맞는 메뉴
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> 클래스 뷰 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
-### <a name="bkmk_debug"></a> 디버그
+### <a name="debug"></a><a name="bkmk_debug"></a> 디버그
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -144,7 +160,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |디버그.조사식3|**Ctrl+Alt+W, 3**|
 |디버그.조사식4|**Ctrl+Alt+W, 4**|
 
-### <a name="bkmk_debugger"></a> 디버거 상황에 맞는 메뉴
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> 디버거 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -152,13 +168,13 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |디버거상황에맞는메뉴.중단점창.디스어셈블리로이동|**Alt+F9, A**|
 |디버거상황에맞는메뉴.중단점창.소스코드로이동|**Alt+F9, S**|
 
-### <a name="bkmk_diagnostics"></a> 진단 허브
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> 진단 허브
 
 |명령|바로 가기 키|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
-### <a name="bkmk_edit"></a> 편집
+### <a name="edit"></a><a name="bkmk_edit"></a> 편집
 
 |명령|바로 가기 키|
 |--------------|-|
@@ -218,7 +234,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |편집.코드감싸기|**Ctrl+K, Ctrl+S**|
 |편집.실행취소|**Ctrl+Z**<br /><br /> 또는<br /><br /> **Alt+백스페이스**|
 
-### <a name="bkmk_editorContext"></a> 편집기 상황에 맞는 메뉴
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> 편집기 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -229,7 +245,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O**(문자 ‘O’)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> 또는<br /><br /> **Ctrl+K, T**|
 
-### <a name="bkmk_file"></a> 파일
+### <a name="file"></a><a name="bkmk_file"></a> 파일
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -245,7 +261,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |파일.선택한항목저장|**Ctrl+S**|
 |파일.브라우저에서보기|**Ctrl+Shift+W**|
 
-### <a name="bkmk_help"></a> 도움말
+### <a name="help"></a><a name="bkmk_help"></a> 도움말
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -254,19 +270,19 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |도움말.도움말보기|**Ctrl+F1**|
 |도움말.창도움말|**Shift+F1**|
 
-### <a name="bkmk_loadtest"></a> 부하 테스트
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> 부하 테스트
 
 |명령|바로 가기 키|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
-### <a name="bkmk_otherContext"></a> 기타 상황에 맞는 메뉴
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> 기타 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**삽입**|
 
-### <a name="bkmk_project"></a> 프로젝트
+### <a name="project"></a><a name="bkmk_project"></a> 프로젝트
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -278,14 +294,14 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |Project.Publishselectedfiles|**Alt+;** , **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**Alt+;** , **Alt+R**|
 
-### <a name="bkmk_projectContext"></a> 프로젝트 및 솔루션 상황에 맞는 메뉴
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> 프로젝트 및 솔루션 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+아래쪽 화살표**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+위쪽 화살표**|
 
-### <a name="bkmk_refactor"></a> 리팩터링
+### <a name="refactor"></a><a name="bkmk_refactor"></a> 리팩터링
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -296,7 +312,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |리팩터링.이름바꾸기|**Ctrl+R, Ctrl+R**|
 |리팩터링.매개변수다시정렬|**Ctrl+R, Ctrl+O**(문자 ‘O’)|
 
-### <a name="bkmk_solutionexplorerGLOBAL"></a> 솔루션 탐색기
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> 솔루션 탐색기
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -304,7 +320,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> 또는<br /><br /> **Ctrl+[** , **Ctrl+P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> 또는<br /><br /> **Ctrl+[** , **Ctrl+S**|
 
-### <a name="bkmk_team"></a> 팀
+### <a name="team"></a><a name="bkmk_team"></a> 팀
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -313,7 +329,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |Team.Git.GoToGitCommits|**Ctrl+0**(영), **Ctrl+O**(문자 ‘O’)<br /><br /> 또는<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
-### <a name="bkmk_TFcontext"></a> Team Foundation 상황에 맞는 메뉴
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Team Foundation 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -328,14 +344,14 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0**(영), **Ctrl+A**<br /><br /> 또는<br /><br /> **Ctrl+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0**(영), **Ctrl+W**<br /><br /> 또는<br /><br /> **Ctrl+0, W**|
 
-### <a name="bkmk_test"></a> 테스트
+### <a name="test"></a><a name="bkmk_test"></a> 테스트
 
 |명령|바로 가기 키|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
-### <a name="bkmk_testexplorerGLOBAL"></a> 테스트 탐색기
+### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> 테스트 탐색기
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -349,7 +365,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |LiveUnitTesting.OpenTab|**Ctrl+E, L**|
 |Test.CodeCoverageResults|**Ctrl+E, C**|
 
-### <a name="bkmk_tools"></a> 도구
+### <a name="tools"></a><a name="bkmk_tools"></a> 도구
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -357,7 +373,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |도구.코드조각관리자|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12**|
 
-### <a name="bkmk_view"></a> 보기
+### <a name="view"></a><a name="bkmk_view"></a> 보기
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -407,7 +423,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |View.ZoomOut|**Ctrl+Shift+,**|
 |TestExplorer.ShowTestExplorer|**Ctrl+E, T**|
 
-### <a name="bkmk_window"></a> 창
+### <a name="window"></a><a name="bkmk_window"></a> 창
 
 |명령|바로 가기 키|
 |--------------| - |
@@ -438,7 +454,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |Window.SolutionExplorerSearch|**Ctrl+;**|
 |Window.WindowSearch|**Alt+`**|
 
-### <a name="bkmk_windowsazure"></a> Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |명령|바로 가기 키|
 |--------------| - |

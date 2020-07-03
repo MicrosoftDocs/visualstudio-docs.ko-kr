@@ -1,7 +1,7 @@
 ---
-title: '방법: .NET Framework 소스 디버그 | Microsoft Docs'
+title: 방법 - .NET Framework 소스 디버그 | Microsoft Docs
 ms.date: 11/19/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25f40b0528b794863aabdb13ed9785d2b0c551b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f043aae44231608fb514e87a05717f4aeb924bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894276"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350097"
 ---
 # <a name="how-to-debug-net-framework-source"></a>방법: .NET Framework 소스 디버그
 

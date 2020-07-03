@@ -1,7 +1,7 @@
 ---
-title: '방법: ActiveX 컨트롤 디버그 | Microsoft Docs'
+title: 방법 - ActiveX 컨트롤 디버그 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vc.controls.debug
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76bc982db167624e567f88a1cf139b41cad9feb7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733875"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350214"
 ---
 # <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버그
 

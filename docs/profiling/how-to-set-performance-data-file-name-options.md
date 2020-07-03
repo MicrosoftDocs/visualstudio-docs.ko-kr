@@ -1,7 +1,7 @@
 ---
-title: '방법: 성능 데이터 파일 이름 옵션 설정 | Microsoft Docs'
+title: 방법 - 성능 데이터 파일 이름 옵션 설정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc42b63524a867c0893aa255180c740d03d4b5fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778767"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548124"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>방법: 성능 데이터 파일 이름 옵션 설정
 
@@ -24,7 +24,7 @@ ms.locfileid: "74778767"
 
 성능 세션에 대한 [속성] 대화 상자의 **일반** 페이지에서 명명 매개 변수를 변경할 수 있습니다.
 
-|||
+|매개 변수|설명|
 |-|-|
 |*경로*|보고서가 포함된 디렉터리입니다. 기본 위치는 사용자의 프로젝트 및 솔루션에 대한 솔루션 폴더 또는 기본 위치입니다.|
 |*VSP-File*|프로파일링 데이터 파일의 이름입니다. 기본 이름은 프로파일링되는 솔루션 또는 실행 파일의 이름입니다.|
@@ -39,7 +39,7 @@ ms.locfileid: "74778767"
 
 3. **보고서**에서 다음 설정을 변경합니다.
 
-    |||
+    |이름|설명|
     |-|-|
     |**보고서 위치**|프로파일링 데이터 파일을 저장할 디렉터리를 지정합니다.|
     |**보고서 이름**|파일의 기본 이름을 지정합니다.|

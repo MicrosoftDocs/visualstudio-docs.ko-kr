@@ -2,7 +2,7 @@
 title: UWP 앱에서 JavaScript 메모리 사용량 분석 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189389"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331269"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP 앱에서 JavaScript 메모리 사용량 분석
 Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 JavaScript를 사용하여 Windows용으로 작성된 UWP 앱의 메모리 사용량을 파악하고 메모리 누수를 찾을 수 있습니다. 지원되는 앱으로는 유니버설 Windows 앱을 위한 앱이 있습니다.
@@ -255,14 +255,14 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 
   스냅샷 간의 차이 정보를 필터링하려면 차이 뷰 상단에 있는 **범위** 필터 중 하나를 선택합니다.
 
-- **스냅샷 #\<number&gt;** 에서 남은 개체. 이 필터는 기본 스냅샷 및 이전 스냅샷과 비교하여 힙에 추가된 개체와 힙에서 제거된 개체 간의 차이를 보여줍니다. 예를 들어 스냅샷 요약에서 개체 수가 +205/-195로 표시된 경우 이 필터는 제거된 것이 아닌 추가된 개체 10개를 보여줍니다.
+- **스냅샷 #\<number>에서 남은 개체**. 이 필터는 기본 스냅샷 및 이전 스냅샷과 비교하여 힙에 추가된 개체와 힙에서 제거된 개체 간의 차이를 보여줍니다. 예를 들어 스냅샷 요약에서 개체 수가 +205/-195로 표시된 경우 이 필터는 제거된 것이 아닌 추가된 개체 10개를 보여줍니다.
 
   > [!TIP]
   > 이 필터에서 가장 유용한 정보를 표시하려면 [Isolate a memory leak](#isolate-a-memory-leak)에 설명된 단계를 따르세요.
 
-- **스냅샷 #\<number&gt; 및 #\<number&gt;** 사이에 추가된 개체. 이 필터는 이전 스냅샷에서 힙에 추가된 모든 개체를 보여줍니다.
+- **스냅샷 #\<number>와 #\<number> 사이에 추가된 개체**. 이 필터는 이전 스냅샷에서 힙에 추가된 모든 개체를 보여줍니다.
 
-- **스냅샷 #\<number&gt;** 의 모든 개체. 이 필터 설정은 힙에서 어떤 개체도 필터링하지 않습니다.
+- **스냅샷 #\<number>의 모든 개체**. 이 필터 설정은 힙에서 어떤 개체도 필터링하지 않습니다.
 
   현재 **범위** 필터와 일치하지 않는 개체 참조를 표시하려면 창의 오른쪽 상단에 있는 설정 목록 ![메모리 분석기의 설정 드롭다운 목록](../profiling/media/js_mem_settings.png "JS_Mem_Settings")에서 **일치하지 않는 참조 표시**를 선택합니다. 이 설정을 사용하도록 설정하는 경우 일치하지 않는 참조가 회색 텍스트로 표시됩니다.
 
@@ -347,7 +347,7 @@ if (performance && performance.mark) {
 
 ## <a name="tips-to-identify-memory-issues"></a>메모리 문제 식별 팁
 
-- 메모리 누수 가능성이 있는 개체를 식별하려면 [메모리 누수 격리](#isolate-a-memory-leak)에 설명된 워크플로를 따르고 차이 뷰에서 **스냅샷 #\<number&gt;에서 남은 개체** 필터를 사용합니다.
+- 메모리 누수 가능성이 있는 개체를 식별하려면 [메모리 누수 격리](#isolate-a-memory-leak)에 설명된 워크플로를 따르고 Diff 뷰에서 **스냅샷 #\<number>에서 남은 개체** 필터를 사용합니다.
 
 - [개체 트리에서 개체 찾기](#find-an-object-in-the-object-tree) 를 사용합니다. 루트 뷰는 개체의 루트 개체가 전역 개체가 되는 방식을 보여 줍니다. 이 경우 해당 개체는 가비지 수집되지 않습니다.
 

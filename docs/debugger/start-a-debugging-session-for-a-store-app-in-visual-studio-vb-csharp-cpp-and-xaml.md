@@ -2,7 +2,7 @@
 title: UWP 앱에 대한 디버깅 세션 시작 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4504dda362c8a50f33168a12839e894a14316d7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72436011"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536554"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP 앱에 대한 디버깅 세션 시작
 
@@ -76,7 +76,7 @@ Visual Studio 2017에서 이 문서에 표시된 대부분의 명령과 옵션�
 
 Visual Studio 도구 모음 또는 프로젝트의 디버깅 속성 페이지에서 디버깅 대상을 설정할 수 있습니다. 다음 옵션 중 하나를 선택합니다.
 
-|||
+|이름|설명|
 |-|-|
 |**로컬 컴퓨터**|로컬 컴퓨터의 현재 세션에서 응용 프로그램을 디버깅합니다.|
 |**시뮬레이터**|UWP 앱에 대한 Visual Studio 시뮬레이터에서 응용 프로그램을 디버깅합니다. 시뮬레이터는 로컬 컴퓨터에 없는 터치 제스처 및 디바이스 회전과 같은 디바이스 기능을 시뮬레이션하는 데스크톱 창입니다. 시뮬레이터 옵션은 앱의 **대상 플랫폼 최소 버전**이 로컬 컴퓨터의 운영 체제보다 작거나 같은 경우에만 사용할 수 있습니다. 자세한 내용은 [시뮬레이터에서 UWP 앱 실행](../debugger/run-windows-store-apps-in-the-simulator.md)을 참조하세요.|
@@ -114,7 +114,7 @@ C++ 앱에서 Visual Studio는 기본적으로 네이티브 코드를 디버그�
 
 - C++ 앱의 경우 **디버깅** 속성 페이지의 **디버거 형식** 드롭다운 목록에서 다음 디버거 중 하나를 선택합니다.
 
-|||
+|이름|설명|
 |-|-|
 |**관리 전용**|응용 프로그램에서 관리 코드를 디버깅합니다. JavaScript 코드와 네이티브 C/C++ 코드는 무시됩니다.|
 |**네이티브 전용**|응용 프로그램에서 네이티브 C/C++ 코드를 디버깅합니다. 관리 코드와 JavaScript 코드는 무시됩니다.|

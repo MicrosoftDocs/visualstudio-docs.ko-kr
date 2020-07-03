@@ -1,7 +1,7 @@
 ---
-title: 'DA0029: 지원되지 않는 CLR 버전 | Microsoft Docs'
+title: DA0029 - 지원되지 않는 CLR 버전 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.29
 - vs.performance.rules.DA0029
@@ -16,19 +16,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14e0bb4290ad155b7094c0f60810df4f86cb8d65
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777517"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544640"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: 지원되지 않는 CLR 버전
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0029|
-|Category|프로파일링 도구 사용|
+|범주|프로파일링 도구 사용|
 |프로파일링 방법|명령줄에서 프로파일링|
 |메시지|지원되지 않는 CLR 버전이 수집하는 동안 발견되었습니다. 관리되는 기호가 제대로 확인되지 않을 수 있습니다.|
 |규칙 유형|정보.|

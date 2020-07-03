@@ -1,7 +1,7 @@
 ---
-title: '방법: 현재 세션 설정 | Microsoft 문서'
+title: 방법 - 현재 세션 설정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778754"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328354"
 ---
 # <a name="how-to-set-the-current-session"></a>방법: 현재 세션 설정
 
@@ -35,7 +35,7 @@ ms.locfileid: "74778754"
 
      세션 이름이 굵게 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [성능 탐색기 창](../profiling/performance-explorer-window.md)

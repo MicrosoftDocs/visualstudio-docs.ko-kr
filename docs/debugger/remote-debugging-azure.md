@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184252"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536788"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 2017에서 Azure 및 IIS의 ASP.NET Core 원격 디버그
 
@@ -175,8 +175,8 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-    > [!NOTE]
-    > If you restart an Azure VM, the IP address may change.
+> [!NOTE]
+> Azure VM을 다시 시작하면 IP 주소가 변경될 수 있습니다.
 
 앱을 성공적으로 배포한 후 자동으로 시작해야 합니다. 앱이 Visual Studio에서 시작되지 않는 경우 IIS에서 앱을 시작하여 올바로 실행되는지 확인합니다. ASP.NET Core의 경우 **DefaultAppPool**에 대한 애플리케이션 풀 필드가 **관리 코드 없음**으로 설정되었는지도 확인해야 합니다.
 

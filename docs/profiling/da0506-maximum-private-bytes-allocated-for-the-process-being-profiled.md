@@ -1,7 +1,7 @@
 ---
-title: 'DA0506: 프로파일링 중인 프로세스에 할당되는 최대 전용 바이트 | Microsoft 문서'
+title: DA0506 - 프로파일링되고 있는 프로세스에 할당된 최대 전용 바이트 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0506
 - vs.performance.DA0506
@@ -13,19 +13,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7600e65beb3035fac6d5ea58b25f6965d681f83a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 663de229aa9d7d3dee22425347a3464c200b9d53
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779313"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532095"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: 프로파일링 중인 프로세스에 할당되는 최대 전용 바이트
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: 프로파일링되고 있는 프로세스에 할당된 최대 전용 바이트
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0506|
-|Category|리소스 모니터링|
+|범주|리소스 모니터링|
 |프로파일링 방법|모두|
 |메시지|이 정보는 참고용으로만 수집됩니다. Process Private Bytes 카운터는 프로파일링하고 있는 프로세스에 의해 할당된 가상 메모리를 측정합니다. 보고된 값은 모든 측정 간격에서 관찰되는 최대값입니다.|
 |규칙 유형|정보|

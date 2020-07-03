@@ -1,7 +1,7 @@
 ---
-title: '프로파일러 명령줄: 네이티브 서비스 계측, 타이밍 데이터 가져오기'
+title: 프로파일러 명령줄 - 네이티브 서비스 계측, 타이밍 데이터 가져오기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c738a5183a7708c967192cf201e38a4f9384710e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 123c9af48d93e23d4f582575848d981f57abd2f9
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778871"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327897"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 사용하여 네이티브 서비스 계측 및 자세한 타이밍 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 네이티브(C/C++) 서비스를 계측하고 자세한 타이밍 데이터를 수집하는 방법을 설명합니다.

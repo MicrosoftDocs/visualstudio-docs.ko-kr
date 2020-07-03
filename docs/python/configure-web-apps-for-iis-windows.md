@@ -2,7 +2,7 @@
 title: IIS용 Python 웹앱 구성
 description: Windows 가상 머신에서 인터넷 정보 서비스를 사용하여 실행할 Python 웹앱을 구성하는 방법입니다.
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957375"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540935"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS용 Python 웹앱 구성
 
@@ -139,7 +139,7 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    배열에 사용자 URL을 추가하지 않으면 **DisallowedHost/잘못된 HTTP_HOST 헤더: ‘\<site URL\>’. ‘\<site URL\>’을 ALLOWED_HOSTS에 추가해야 할 수도 있습니다.** 오류가 발생합니다.
+    배열에 사용자 URL을 추가하지 않으면 다음 오류가 표시됩니다. **DisallowedHost/잘못된 HTTP_HOST 헤더: '\<site URL\>'. '\<site URL\>'를 ALLOWED_HOSTS에 추가해야 할 수도 있습니다.**
 
     배열이 비어 있으면 Django는 ‘localhost’ 및 ‘127.0.0.1’을 자동으로 허용하지만 프로덕션 URL을 추가하면 해당 기능이 제거됩니다. 이러한 이유로 *settings.py*의 개발 및 프로덕션 복사본을 별도로 유지 관리하거나, 환경 변수를 사용하여 런타임 값을 제어하는 것이 좋습니다.
 

@@ -1,7 +1,7 @@
 ---
-title: '방법: 성능 세션 수동으로 만들기 | Microsoft 문서'
+title: 방법 - 성능 세션 수동으로 만들기 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.dllpage
 - vs.performance.wizard.exepage
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a1701322bec623c6bb2657f78ecdcc1dc16dde1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778832"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327674"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>방법: 성능 세션 수동으로 만들기
 성능 세션을 수동으로 만들 수 있습니다. 이 작업을 위해 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 프로젝트를 열 필요가 없습니다. 자세한 내용은 [성능 세션 구성](../profiling/configuring-performance-sessions.md)을 참조하세요.
@@ -37,6 +37,6 @@ ms.locfileid: "74778832"
 
      새 이진 파일이 추가됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [성능 탐색기](../profiling/performance-explorer.md)
 - [시작](../profiling/getting-started-with-performance-tools.md)

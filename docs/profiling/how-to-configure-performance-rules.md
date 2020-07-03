@@ -1,7 +1,7 @@
 ---
-title: '방법: 성능 규칙 구성 | Microsoft 문서'
+title: 방법 - 성능 규칙 구성 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.ruleseditor
 ms.assetid: a148b468-b849-4858-880a-808a6b47e596
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9bb9b07a0ae1fa19ae48408aa34a9dfb6577b6e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a1301161667d945fe4570eb8c7c9f0c2ce8bfffb
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779014"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328452"
 ---
 # <a name="how-to-configure-performance-rules"></a>방법: 성능 규칙 구성
 Visual Studio 프로파일링 도구의 성능 경고는 프로파일링된 애플리케이션에서 프로그램 실행 속도를 저하시킬 수 있는 문제를 나타냅니다. 또한 경고는 보다 유용한 데이터를 수집하기 위해 수집 방법을 변경해야 할 수 있음을 나타낼 수도 있습니다. 성능 경고는 프로파일링 세션에서 자동으로 생성되며 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에서 프로파일링 데이터 파일을 열 때 **오류 목록** 창에 표시됩니다. 특정 경고가 관심 있는 시나리오에 적용되지 않을 수도 있고 일부 경고가 부정확하게 발생할 수도 있습니다. 특정 경고를 표시하거나 숨기도록 성능 경고를 구성할 수 있습니다.

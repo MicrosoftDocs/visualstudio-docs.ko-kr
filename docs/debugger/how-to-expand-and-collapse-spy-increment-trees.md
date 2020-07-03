@@ -1,7 +1,7 @@
 ---
-title: '방법: Spy++ 트리 확장 및 축소 | Microsoft Docs'
+title: 방법 - Spy++ 트리 확장 및 축소 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733306"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349590"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>방법: Spy++ 트리 확장 및 축소
 창에서 아이콘을 클릭하거나 **트리** 메뉴를 사용하여 창, 프로세스 및 스레드 뷰를 확장하고 축소할 수 있습니다. 트리의 + 및- 아이콘은 C++ 프로젝트 창의 해당 아이콘과 동일하게 작동합니다.

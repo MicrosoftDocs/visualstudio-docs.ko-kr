@@ -1,6 +1,6 @@
 ---
 title: 테스트 탐색기 FAQ
-ms.date: 08/14/2019
+ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,24 +14,14 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf22c54da4af43c4953a8b92620031a14e25ec05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846816"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468745"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
-::: moniker range=">=vs-2019"
-
-## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019에서 특성별 그룹화 위치
-이 특성 그룹화는 이동하여 열이 되었습니다. Visual Studio 2019 버전 16.2의 사용자 지정 가능한 복수의 계층 구조에 대해, 특성을 그룹으로 포함한 것이 불필요한 시각적 복잡성을 만들어냈다고 생각했습니다. 이 디자인에 대한 사용자 의견에 귀를 기울이고 있습니다. [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
-
-지금은 테스트 탐색기에서 열을 마우스 오른쪽 단추로 클릭하고 열을 선택할 수 있습니다. 특성 열을 선택하면 테스트 탐색기에 표시됩니다. 이제 관심 있는 특성을 기준으로 이 열을 필터링할 수 있습니다.
-
-![특성 열 표시](media/vs-2019/trait-column.png)
-![특성 열 필터링](media/vs-2019/trait-column-filter.png)
-::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>동적 테스트 검색
 
@@ -91,9 +81,7 @@ UWP 테스트는 앱이 배포될 때 서로 다른 런타임을 대상으로 �
 
 **계층 보기에서 테스트 결과 정렬은 어떻게 작동하나요?**
 
-계층 보기는 테스트를 결과에 의해서가 아니라 알파벳순으로 정렬합니다. 설정에 의한 다른 그룹은 일반적으로 테스트 결과를 결과순으로 정렬한 다음, 알파벳순으로 정렬합니다. 비교를 위해 다음 이미지의 다양한 그룹화 방법 옵션을 참조하세요. [이 GitHub 문제](https://github.com/Microsoft/vstest/issues/1425)의 디자인에 관한 피드백을 제공할 수 있습니다.
-
-![정렬 예제](media/testex-sortingex.png)
+계층 보기는 테스트를 결과에 의해서가 아니라 알파벳순으로 정렬합니다. 이전 그룹화 기준 설정은 테스트 결과를 결과별로 정렬한 다음, 사전순으로 정렬합니다. 테스트 탐색기에서 열 헤더를 마우스 오른쪽 단추로 클릭하고, 상태 열을 사용하도록 설정한 다음, 상태 열 헤더를 클릭하여 해당 열에서 정렬을 적용하면 계속 결과별로 정렬할 수 있습니다. 이 [GitHub 문제](https://github.com/Microsoft/vstest/issues/1425)의 디자인에 관한 피드백을 제공할 수 있습니다.
 
 ## <a name="test-explorer-hierarchy-view"></a>테스트 탐색기 계층 구조 보기
 
@@ -153,7 +141,12 @@ Visual Studio 2019에서는 이전에 공개로 표시되었지만 공식적으�
 ```XML
 <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
 ```
+::: moniker range=">=vs-2019"
+## <a name="using-preview-features"></a>미리 보기 기능 사용
 
+Visual Studio 2019에서는 **도구 > 옵션 > 환경 > 미리 보기 기능**에서 미리 보기 기능을 옵트인할 수 있습니다.
+::: moniker-end
+::: moniker range=">=vs-2017"
 ## <a name="using-feature-flags"></a>기능 플래그 사용
 
 **새로운 테스트 기능을 사용하기 위해 기능 플래그를 켜려면 어떻게 할까요?**
@@ -170,7 +163,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > dword 뒤에 1 대신 0을 사용하면 동일한 명령으로 플래그를 끌 수 있습니다.
-
+::: moniker-end
 ## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>

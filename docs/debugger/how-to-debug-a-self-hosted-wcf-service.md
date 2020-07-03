@@ -1,7 +1,7 @@
 ---
-title: '방법: 셀프 호스티드 WCF 서비스 디버그 | Microsoft Docs'
+title: 방법 - 자체 호스팅 WCF 서비스 디버그 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12654a6aa1abb34c9813e8d29c7608814021a3f0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8eda0f8bc6ee20a706eb74336c43d86934a9e457
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733975"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350370"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>방법: 자체 호스팅 WCF 서비스 디버그
 *자체 호스팅 서비스*는 IIS, WCF 서비스 호스트 또는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server 내에서 실행되지 않는 WCF 서비스입니다. 셀프 호스티드 WCF를 디버그하는 가장 쉬운 방법은 **디버그** 메뉴에서 **디버깅 시작**을 선택할 때 클라이언트와 서버를 둘 다 시작하도록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 구성하는 것입니다.
@@ -45,7 +45,7 @@ ms.locfileid: "72733975"
 
    2. **시작 프로젝트 설정**을 클릭합니다.
 
-   3. **솔루션 \<이름> 속성** 대화 상자에서 **여러 시작 프로젝트**를 선택합니다.
+   3. **솔루션 \<name> 속성** 대화 상자에서 **여러 시작 프로젝트**를 선택합니다.
 
    4. **여러 개의 시작 프로젝트** 표의 서버 프로젝트에 해당하는 줄에서 **작업**을 클릭하고 **시작**을 선택합니다.
 

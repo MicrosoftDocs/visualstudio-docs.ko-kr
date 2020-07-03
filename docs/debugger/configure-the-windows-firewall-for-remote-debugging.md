@@ -1,19 +1,19 @@
 ---
 title: 원격 디버깅을 위해 Windows 방화벽 구성 | Microsoft Docs
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563723"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350695"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 
@@ -22,7 +22,7 @@ Windows 방화벽으로 보호되는 네트워크에서는 원격 디버깅을 �
 이 항목에서는 Windows 10, 8/8.1 및 7과 Windows Server 2012 R2, 2012 및 2008 R2 컴퓨터에서 원격 디버깅을 사용하도록 Windows 방화벽을 구성하는 방법을 설명합니다. Visual Studio 및 원격 컴퓨터에서 같은 운영 체제를 실행할 필요는 없습니다. 예를 들어 Visual Studio 컴퓨터는 Windows 10을 실행하고 원격 컴퓨터는 Windows Server 2012 R2를 실행할 수 있습니다.
 
 >[!NOTE]
->Windows 방화벽을 구성하는 지침은 다른 운영 체제와 이전 버전의 Windows에서 약간 다릅니다. Windows 8/8.1, Windows 10 및 Windows Server 2012 설정에서는 ‘앱’을 사용하지만 Windows 7 및 Windows Server 2008은 ‘프로그램’을 사용합니다.  
+>Windows 방화벽을 구성하는 지침은 다른 운영 체제와 이전 버전의 Windows에서 약간 다릅니다. Windows 8/8.1, Windows 10 및 Windows Server 2012 설정에서는 ‘앱’을 사용하지만 Windows 7 및 Windows Server 2008은 ‘프로그램’을 사용합니다. 
 
 ## <a name="configure-ports-for-remote-debugging"></a>원격 디버깅을 위한 포트 구성
 
@@ -94,7 +94,7 @@ Windows 방화벽을 통해 특정 앱을 허용하려면 [Windows 방화벽을 
 
 원격 컴퓨터에서 원격 디버깅 도구는 다음 위치에 있습니다.
 
-*\<Visual Studio 설치 디렉터리\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64* 또는 *Appx*\>
+*\<Visual Studio installation directory\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64*, or *Appx*\>
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Windows 방화벽을 통해 원격 디버거 허용 및 구성
 
@@ -104,7 +104,7 @@ Windows 방화벽을 통해 특정 앱을 허용하려면 [Windows 방화벽을 
 
 1. **원격 디버거** 또는 **Visual Studio 원격 디버거**가 **허용되는 앱 및 기능**에 표시되지 않는 경우 **설정 변경**을 선택한 다음 **다른 앱 허용**을 선택합니다.
 
-1. **앱 추가** 대화 상자에 원격 디버거 앱이 여전히 표시되어 있지 않으면 **찾아보기**를 선택하고 앱에 적절한 아키텍처에 따라 *\<Visual Studio 설치 디렉터리\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64* 또는 *Appx*\>로 이동합니다. *msvsmon.exe*를 선택하고 **추가**를 선택합니다.
+1. **앱 추가** 대화 상자에 원격 디버거 앱이 여전히 표시되어 있지 않으면 **찾아보기**를 선택하고 앱에 적절한 아키텍처에 따라 \<Visual Studio installation directory\>\\Common7\\IDE\\Remote Debugger\\\<x86*, *x64*, or *Appx*\>로 이동합니다. *msvsmon.exe*를 선택하고 **추가**를 선택합니다.
 
 1. **앱** 목록에서 방금 추가한 **원격 디버거**를 선택합니다. **네트워크 종류**를 선택한 후 원격 연결을 위한 네트워크 종류를 포함해 하나 이상의 네트워크 종류를 선택합니다.
 

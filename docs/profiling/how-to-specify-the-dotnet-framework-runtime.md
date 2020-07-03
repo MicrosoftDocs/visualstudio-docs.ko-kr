@@ -1,7 +1,7 @@
 ---
-title: '방법: .NET Framework 런타임 지정 | Microsoft 문서'
+title: 방법 - .NET Framework 런타임 지정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
 - .NET Framework versions,profililng
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ab53a6cf265b36ee423a2df176014187860f635
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2eddbe3602386e6a8f5c7e07e796b8c3b047603c
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778676"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331377"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>방법: .NET Framework 런타임 지정
 

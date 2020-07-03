@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544007"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533460"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
@@ -133,12 +133,12 @@ dotnet_style_qualification_for_event = false:suggestion
 
 #### <a name="dotnet_style_qualification_for_field"></a>dotnet\_style\_qualification\_for_field
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_qualification_for_field |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 필드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 필드 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 필드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 필드 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’ |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -161,12 +161,12 @@ capacity = 0
 
 #### <a name="dotnet_style_qualification_for_property"></a>dotnet\_style\_qualification\_for_property
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_qualification_for_property |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 속성 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 속성 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 속성 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 속성 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’ |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -189,12 +189,12 @@ ID = 0
 
 #### <a name="dotnet_style_qualification_for_method"></a>dotnet\_style\_qualification\_for_method
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_qualification_for_method |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 메서드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 메서드 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 메서드 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 메서드 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’ |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -217,12 +217,12 @@ Display()
 
 #### <a name="dotnet_style_qualification_for_event"></a>dotnet\_style\_qualification\_for_event
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_qualification_for_event |
 | **규칙 ID** | IDE0003 및 IDE0009 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 이벤트 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 이벤트 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’  |
+| **값** | `true` - 이벤트 앞에 `this.`(C#) 또는 `Me.`(Visual Basic) 추가<br /><br />`false` - 이벤트 앞에 `this.` 또는 `Me.`를 추가하지 ‘않음’ |
 | **Visual Studio 기본값** | `false:silent` |
 
 코드 예제:
@@ -258,7 +258,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="dotnet_style_predefined_type_for_locals_parameters_members"></a>dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_predefined_type_for_locals_parameters_members |
 | **규칙 ID** | IDE0012 및 IDE0014 |
@@ -286,7 +286,7 @@ Private _member As Int32
 
 #### <a name="dotnet_style_predefined_type_for_member_access"></a>dotnet\_style\_predefined\_type\_for\_member_access
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_predefined_type_for_member_access |
 | **규칙 ID** | IDE0013 및 IDE0015 |
@@ -335,7 +335,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="dotnet_style_require_accessibility_modifiers"></a>dotnet\_style\_require\_accessibility_modifiers
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_require_accessibility_modifiers |
 | **규칙 ID** | IDE0040 |
@@ -363,7 +363,7 @@ class MyClass
 
 #### <a name="csharp_preferred_modifier_order"></a>csharp_preferred_modifier_order
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_preferred_modifier_order |
 | **규칙 ID** | IDE0036 |
@@ -387,7 +387,7 @@ class MyClass
 
 #### <a name="visual_basic_preferred_modifier_order"></a>visual_basic_preferred_modifier_order
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | visual_basic_preferred_modifier_order |
 | **규칙 ID** | IDE0036 |
@@ -410,7 +410,7 @@ End Class
 
 #### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | visual_basic_style_unused_value_expression_statement_preference |
 | **규칙 ID** | IDE0058 |
@@ -428,7 +428,7 @@ Dim unused = Computation()
 
 #### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | visual_basic_style_unused_value_assignment_preference |
 | **규칙 ID** | IDE0059 |
@@ -447,7 +447,7 @@ Dim x = 1;
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_readonly_field |
 | **규칙 ID** | IDE0044 |
@@ -490,7 +490,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 #### <a name="dotnet_style_parentheses_in_arithmetic_binary_operators"></a>dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_parentheses_in_arithmetic_binary_operators |
 | **규칙 ID** | IDE0047 |
@@ -519,7 +519,7 @@ Dim v = a + b * c
 
 #### <a name="dotnet_style_parentheses_in_relational_binary_operators"></a>dotnet\_style\_parentheses\_in\_relational\_binary_operators
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_parentheses_in_relational_binary_operators |
 | **규칙 ID** | IDE0047 |
@@ -548,7 +548,7 @@ Dim v = a < b = c > d
 
 #### <a name="dotnet_style_parentheses_in_other_binary_operators"></a>dotnet\_style\_parentheses\_in\_other\_binary_operators
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_parentheses_in_other_binary_operators |
 | **규칙 ID** | IDE0047 |
@@ -577,7 +577,7 @@ Dim v = a OrElse b AndAlso c
 
 #### <a name="dotnet_style_parentheses_in_other_operators"></a>dotnet\_style\_parentheses\_in\_other_operators
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_parentheses_in_other_operators |
 | **규칙 ID** | IDE0047 |
@@ -626,12 +626,12 @@ dotnet_style_prefer_compound_assignment = true:suggestion
 
 #### <a name="dotnet_style_object_initializer"></a>dotnet\_style\_object_initializer
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_object_initializer |
 | **규칙 ID** | IDE0017 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 가능한 경우 개체 이니셜라이저를 사용하여 개체를 초기화합니다.<br /><br />`false` - 개체 이니셜라이저를 사용하여 개체를 초기화하지 ‘않습니다’.  |
+| **값** | `true` - 가능한 경우 개체 이니셜라이저를 사용하여 개체를 초기화합니다.<br /><br />`false` - 개체 이니셜라이저를 사용하여 개체를 초기화하지 ‘않습니다’. |
 | **Visual Studio 기본값** | `true:suggestion` |
 
 코드 예제:
@@ -656,12 +656,12 @@ c.Age = 21
 
 #### <a name="dotnet_style_collection_initializer"></a>dotnet\_style\_collection_initializer
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_collection_initializer |
 | **규칙 ID** | IDE0028 |
 | **해당 언어** | C# 및 Visual Basic |
-| **값** | `true` - 가능한 경우 컬렉션 이니셜라이저를 사용하여 컬렉션을 초기화합니다.<br /><br />`false` - 컬렉션 이니셜라이저를 사용하여 컬렉션을 초기화하지 ‘않습니다’.  |
+| **값** | `true` - 가능한 경우 컬렉션 이니셜라이저를 사용하여 컬렉션을 초기화합니다.<br /><br />`false` - 컬렉션 이니셜라이저를 사용하여 컬렉션을 초기화하지 ‘않습니다’. |
 | **Visual Studio 기본값** | `true:suggestion` |
 
 코드 예제:
@@ -690,7 +690,7 @@ list.Add(3)
 
 #### <a name="dotnet_style_explicit_tuple_names"></a>dotnet\_style\_explicit\_tuple_names
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_explicit_tuple_names |
 | **규칙 ID** | IDE0033 |
@@ -722,7 +722,7 @@ Dim name = customer.Item1
 
 #### <a name="dotnet_style_prefer_inferred_tuple_names"></a>dotnet\_style\_prefer\_inferred\_tuple_names
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_inferred_tuple_names |
 | **규칙 ID** | IDE0037 |
@@ -751,7 +751,7 @@ Dim tuple = (name:=name, age:=age)
 
 #### <a name="dotnet_style_prefer_inferred_anonymous_type_member_names"></a>dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_inferred_anonymous_type_member_names |
 | **규칙 ID** | IDE0037 |
@@ -780,7 +780,7 @@ Dim anon = New With {.name = name, .age = age}
 
 #### <a name="dotnet_style_prefer_auto_properties"></a>dotnet\_style\_prefer\_auto\_properties
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_auto_properties |
 | **규칙 ID** | IDE0032 |
@@ -823,7 +823,7 @@ End Property
 
 #### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **규칙 ID** | IDE0041 |
@@ -858,7 +858,7 @@ End If
 
 #### <a name="dotnet_style_prefer_conditional_expression_over_assignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_conditional_expression_over_assignment |
 | **규칙 ID** | IDE0045 |
@@ -900,7 +900,7 @@ End If
 
 #### <a name="dotnet_style_prefer_conditional_expression_over_return"></a>dotnet\_style\_prefer\_conditional\_expression\_over_return
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_conditional_expression_over_return |
 | **규칙 ID** | IDE0046 |
@@ -940,7 +940,7 @@ End If
 
 #### <a name="dotnet_style_prefer_compound_assignment"></a>dotnet\_style\_prefer\_compound\_assignment
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_compound_assignment |
 | **규칙 ID** | IDE0054 |
@@ -982,7 +982,7 @@ dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_coalesce_expression |
 | **규칙 ID** | IDE0029 |
@@ -1012,7 +1012,7 @@ Dim v = If(x IsNot Nothing, x, y)
 
 #### <a name="dotnet_style_null_propagation"></a>dotnet\_style\_null_propagation
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_null_propagation |
 | **규칙 ID** | IDE0031 |
@@ -1042,7 +1042,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 ### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **규칙 ID** | IDE0041 |
@@ -1071,7 +1071,7 @@ dotnet_code_quality_unused_parameters = all:suggestion
 
 #### <a name="dotnet_code_quality_unused_parameters"></a>dotnet\_code\_quality\_unused\_parameters
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | dotnet_code_quality_unused_parameters |
 | **규칙 ID** | IDE0060 |
@@ -1162,7 +1162,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 #### <a name="csharp_style_var_for_built_in_types"></a>csharp\_style\_var\_for\_built\_in_types
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_var_for_built_in_types |
 | **규칙 ID** | IDE0007 및 IDE0008 |
@@ -1182,7 +1182,7 @@ int x = 5;
 
 #### <a name="csharp_style_var_when_type_is_apparent"></a>csharp\_style\_var\_when\_type\_is_apparent
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_var_when_type_is_apparent |
 | **규칙 ID** | IDE0007 및 IDE0008 |
@@ -1202,7 +1202,7 @@ Customer obj = new Customer();
 
 #### <a name="csharp_style_var_elsewhere"></a>csharp\_style\_var_elsewhere
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_var_elsewhere |
 | **규칙 ID** | IDE0007 및 IDE0008 |
@@ -1241,7 +1241,7 @@ csharp_style_expression_bodied_local_functions = false:silent
 
 #### <a name="csharp_style_expression_bodied_methods"></a>csharp\_style\_expression\_bodied_methods
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_methods |
 | **규칙 ID** | IDE0022 |
@@ -1261,7 +1261,7 @@ public int GetAge() { return this.Age; }
 
 #### <a name="csharp_style_expression_bodied_constructors"></a>csharp\_style\_expression\_bodied_constructors
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_constructors |
 | **규칙 ID** | IDE0021 |
@@ -1281,7 +1281,7 @@ public Customer(int age) { Age = age; }
 
 #### <a name="csharp_style_expression_bodied_operators"></a>csharp\_style\_expression\_bodied_operators
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_operators |
 | **규칙 ID** | IDE0023 및 IDE0024 |
@@ -1303,7 +1303,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 #### <a name="csharp_style_expression_bodied_properties"></a>csharp\_style\_expression\_bodied_properties
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_properties |
 | **규칙 ID** | IDE0025 |
@@ -1323,7 +1323,7 @@ public int Age { get { return _age; }}
 
 #### <a name="csharp_style_expression_bodied_indexers"></a>csharp\_style\_expression\_bodied_indexers
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_indexers |
 | **규칙 ID** | IDE0026 |
@@ -1343,7 +1343,7 @@ public T this[int i] { get { return _values[i]; } }
 
 #### <a name="csharp_style_expression_bodied_accessors"></a>csharp\_style\_expression\_bodied_accessors
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_accessors |
 | **규칙 ID** | IDE0027 |
@@ -1363,7 +1363,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 #### <a name="csharp_style_expression_bodied_lambdas"></a>csharp\_style\_expression\_bodied_lambdas
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_lambdas |
 | **규칙 ID** | IDE0053 |
@@ -1384,7 +1384,7 @@ Func<int, int> square = x => { return x * x; };
 
 C# 7.0부터 C#에서는 [로컬 함수](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)를 지원합니다. 로컬 함수는 다른 멤버에 중첩된 형식의 private 메서드입니다.
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_expression_bodied_local_functions |
 | **규칙 ID** | IDE0061 |
@@ -1428,7 +1428,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 #### <a name="csharp_style_pattern_matching_over_is_with_cast_check"></a>csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **규칙 ID** | IDE0020 |
@@ -1448,7 +1448,7 @@ if (o is int) {var i = (int)o; ... }
 
 #### <a name="csharp_style_pattern_matching_over_as_with_null_check"></a>csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_pattern_matching_over_as_with_null_check |
 | **규칙 ID** | IDE0019 |
@@ -1473,7 +1473,7 @@ if (s != null) {...}
 
 #### <a name="csharp_style_inlined_variable_declaration"></a>csharp\_style\_inlined\_variable_declaration
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_inlined_variable_declaration |
 | **규칙 ID** | IDE0018 |
@@ -1516,7 +1516,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 이 스타일 규칙을 사용 하 여 관련는 [`default` 기본값 식에 대 한 리터럴](/dotnet/csharp/language-reference/operators/default#default-literal) 때 컴파일러는 식의 형식을 유추할 수 있습니다.
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_prefer_simple_default_expression |
 | **규칙 ID** | IDE0034 |
@@ -1549,7 +1549,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 #### <a name="csharp_style_throw_expression"></a>csharp\_style\_throw_expression
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_throw_expression |
 | **규칙 ID** | IDE0016 |
@@ -1570,7 +1570,7 @@ this.s = s;
 
 #### <a name="csharp_style_conditional_delegate_call"></a>csharp\_style\_conditional\_delegate_call
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_conditional_delegate_call |
 | **규칙 ID** | IDE0041 |
@@ -1602,7 +1602,7 @@ csharp_prefer_braces = true:silent
 
 #### <a name="csharp_prefer_braces"></a>csharp\_prefer\_braces
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_prefer_braces |
 | **규칙 ID** | IDE0011 |
@@ -1635,7 +1635,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 
 #### <a name="csharp_style_unused_value_expression_statement_preference"></a>csharp_style_unused_value_expression_statement_preference
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_unused_value_expression_statement_preference |
 | **규칙 ID** | IDE0058 |
@@ -1660,7 +1660,7 @@ var unused = Convert.ToInt32("35");
 
 #### <a name="csharp_style_unused_value_assignment_preference"></a>csharp_style_unused_value_assignment_preference
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_unused_value_assignment_preference |
 | **규칙 ID** | IDE0059 |
@@ -1701,7 +1701,7 @@ csharp_style_prefer_range_operator = true:suggestion
 
 #### <a name="csharp_style_prefer_index_operator"></a>csharp\_style\_prefer\_index_operator
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_prefer_index_operator |
 | **규칙 ID** | IDE0056 |
@@ -1723,7 +1723,7 @@ var index = names[names.Length - 1];
 
 #### <a name="csharp_style_prefer_range_operator"></a>csharp\_style\_prefer\_range_operator
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_prefer_range_operator |
 | **규칙 ID** | IDE0057 |
@@ -1762,7 +1762,7 @@ csharp_style_prefer_switch_expression = true:suggestion
 
 #### <a name="csharp_style_deconstructed_variable_declaration"></a>csharp\_style\_deconstructed\_variable_declaration
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_deconstructed_variable_declaration |
 | **규칙 ID** | IDE0042 |
@@ -1792,7 +1792,7 @@ Console.WriteLine($"{point.x} {point.y}");
 
 C# 7.0부터 C#에서는 [로컬 함수](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)를 지원합니다. 로컬 함수는 다른 멤버에 중첩된 형식의 private 메서드입니다.
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_pattern_local_over_anonymous_function |
 | **규칙 ID** | IDE0039 |
@@ -1819,7 +1819,7 @@ fibonacci = (int n) =>
 
 #### <a name="csharp_using_directive_placement"></a>csharp\_using\_directive_placement
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_using_directive_placement |
 | **규칙 ID** | IDE0065 |
@@ -1848,7 +1848,7 @@ namespace Conventions
 
 #### <a name="csharp_prefer_static_local_function"></a>csharp\_prefer\_static\_local_function
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_prefer_static_local_function |
 | **규칙 ID** | IDE0062 |
@@ -1882,7 +1882,7 @@ void M()
 
 #### <a name="csharp_prefer_simple_using_statement"></a>csharp\_prefer\_simple\_using_statement
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_prefer_simple_using_statement |
 | **규칙 ID** | IDE0063 |
@@ -1902,7 +1902,7 @@ using (var a = b) { }
 
 #### <a name="csharp_style_prefer_switch_expression"></a>csharp\_style\_prefer\_switch_expression
 
-|||
+|속성|값|
 |-|-|
 | **규칙 이름** | csharp_style_prefer_switch_expression |
 | **규칙 ID** | IDE0066 |

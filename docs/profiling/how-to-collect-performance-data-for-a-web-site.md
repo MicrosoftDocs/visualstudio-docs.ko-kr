@@ -1,7 +1,7 @@
 ---
-title: '방법: 웹 사이트에 대한 성능 데이터 수집 | Microsoft Docs'
+title: 방법 - 웹 사이트에 대한 성능 데이터 수집 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c2f8169716bda09e3c4d89ce06dc907c726adee2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307186"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330965"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>방법: 웹 사이트에 대한 성능 데이터 수집
 
@@ -100,7 +100,7 @@ ms.locfileid: "79307186"
 
      프로파일러는 데이터 파일을 생성하고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 주 창에 데이터의 요약 보기를 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [개요](../profiling/overviews-performance-tools.md)
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)

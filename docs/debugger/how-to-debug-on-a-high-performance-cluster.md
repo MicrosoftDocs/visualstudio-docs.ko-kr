@@ -1,7 +1,7 @@
 ---
-title: '방법: 고성능 클러스터에서 디버그 | Microsoft Docs'
+title: 방법 - 고성능 클러스터에서 디버그 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 905a196b0872ac0d8665293200837861adf49795
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733661"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350071"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>방법: 고성능 클러스터에서 디버그(C#, Visual Basic, C++)
 

@@ -1,7 +1,7 @@
 ---
-title: '방법: 레지스터 값 편집 | Microsoft Docs'
+title: 방법 - 레지스터 값 편집 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733413"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349824"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>방법: 레지스터 값 편집(C#, C++, Visual Basic, F#)
 

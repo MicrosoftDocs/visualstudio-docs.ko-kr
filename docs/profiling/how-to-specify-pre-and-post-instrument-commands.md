@@ -1,7 +1,7 @@
 ---
-title: '방법: 계측 전 명령 및 계측 후 명령 지정 | Microsoft 문서'
+title: 방법 - 계측 전 명령 및 계측 후 명령 지정 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778715"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328996"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>방법: 계측 전 명령 및 계측 후 명령 지정
 
@@ -70,6 +70,6 @@ ms.locfileid: "74778715"
 
      명령을 제거하지 않고 명령이 실행되지 않게 하려면 **계측에서 제외** 확인란을 선택합니다. 컴파일러 또는 링커 설정을 수정하려면 프로젝트 속성 페이지를 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)

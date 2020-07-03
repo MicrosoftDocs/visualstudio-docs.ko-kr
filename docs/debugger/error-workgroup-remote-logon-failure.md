@@ -1,7 +1,7 @@
 ---
-title: '오류: 작업 그룹 원격 로그온 실패 | Microsoft Docs'
+title: 오류 - 작업 그룹 원격 로그온 실패 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.workgroup_remote_logon_failure
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 97045215098b1f59d5f76a928e9e0a1ab8362756
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736266"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460094"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>오류: 작업 그룹 원격 로그온 실패
 이 오류의 의미는 다음과 같습니다.

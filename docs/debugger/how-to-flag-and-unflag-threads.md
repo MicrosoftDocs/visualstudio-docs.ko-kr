@@ -1,7 +1,7 @@
 ---
-title: '방법: 스레드 플래그 지정 및 플래그 해제 | Microsoft Docs'
+title: 방법 - 스레드 플래그 지정 및 플래그 해제 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733230"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349629"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>방법: 스레드 플래그 지정 및 플래그 해제(C#, Visual Basic, C++)
 
@@ -31,7 +31,7 @@ ms.locfileid: "72733230"
 ### <a name="to-flag-or-unflag-a-thread"></a>스레드에 플래그를 지정하거나 해제하려면
 
 - **스레드** 또는 **병렬 조사식** 창에서 원하는 스레드를 찾고 플래그 아이콘을 클릭하여 플래그를 선택하거나 선택 취소합니다.
-- **병렬 스택** 창에서 스레드 또는 스레드 그룹을 마우스 오른쪽 단추로 클릭하고 **플래그 지정 / \<스레드>** 또는 **플래그 해제 / \<스레드>** 를 선택합니다.
+- **병렬 스택** 창에서 스레드 또는 스레드 그룹을 마우스 오른쪽 단추로 클릭하고 **Flag / \<thread>** 또는 **Unflag / \<thread>** 를 선택합니다.
 
 ### <a name="to-unflag-all-threads"></a>모든 스레드의 플래그를 해제하려면
 

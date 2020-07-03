@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2489ae06e3ff5ffc362599018e4e95d58f92b2ad
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911280"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536411"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent 사용(C#, Visual Basic)
 
@@ -132,7 +132,7 @@ ms.locfileid: "72911280"
 
      ![MMA로 모니터링 시작 확인](../debugger/media/ffr_powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")
 
-    |||
+    |이름|설명|
     |-|-|
     |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예를 들어:<br /><br /> ![IIS 웹 사이트 및 웹앱 경로](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|
     |*\<monitoringMode>*|모니터링 모드를 지정합니다.<br /><br /> <ul><li>**모니터링**: 이 모드에서는 예외 이벤트 및 성능 이벤트에 대한 최소한의 세부 정보를 기록하며 기본 수집 계획을 사용합니다.</li><li>**추적**: 함수 수준 세부 정보를 기록하거나 지정된 컬렉션 계획을 사용하여 SharePoint 2010 및 SharePoint 2013 애플리케이션을 모니터링합니다. 이 모드를 사용하는 경우 앱 실행 속도가 느려질 수 있습니다.<br /><br /> <ul><li>[Q: 애플리케이션 풀에 대한 사용 권한을 설정하려면 어떻게 하나요?](#FullPermissionsITLog)</li><li>[Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)</li></ul><br />     아래 예제에서는 SharePoint 사이트에서 호스트되는 SharePoint 앱에 대한 이벤트를 기록합니다.<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**사용자 지정**: 지정된 사용자 지정 컬렉션 계획을 사용하여 사용자 지정 세부 정보를 기록합니다. 모니터링이 이미 시작된 후 수집 계획을 편집하는 경우에는 모니터링을 다시 시작해야 합니다.</li></ul>|

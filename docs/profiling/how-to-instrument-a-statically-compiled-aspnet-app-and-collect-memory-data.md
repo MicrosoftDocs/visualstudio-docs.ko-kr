@@ -1,7 +1,7 @@
 ---
-title: '프로파일러 명령줄: 정적 ASP.NET 앱 계측, 메모리 데이터 가져오기'
+title: 프로파일러 명령줄 - 정적 ASP.NET 앱 계측, 메모리 데이터 가져오기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 98fac9f01219cd398f1d5ec462e3f5165f4638d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74775433"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327932"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 통해 정적으로 컴파일된 ASP.NET 웹 애플리케이션 계측 및 메모리 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 미리 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 구성 요소 또는 웹 사이트를 계측하고 .NET 메모리 할당, 개체 수명 및 자세한 타이밍 데이터를 수집하는 방법을 설명합니다.

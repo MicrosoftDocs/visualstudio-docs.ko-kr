@@ -1,7 +1,7 @@
 ---
 title: VSPerfCmd | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
 - command-line tools, VSPerfCmd tool
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 53378c3d210ef9666df251d68a3eec570f8caa2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778000"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330006"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* 도구는 성능 데이터 수집을 시작하고 중지하는 데 사용됩니다. 이 도구는 다음 구문을 사용합니다.

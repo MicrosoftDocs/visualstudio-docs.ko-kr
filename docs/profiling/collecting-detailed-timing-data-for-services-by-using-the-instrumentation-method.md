@@ -1,7 +1,7 @@
 ---
-title: '프로파일러 명령줄: 서비스 타이밍 정보를 가져오기 위해 계측'
+title: 프로파일러 명령줄 - 서비스 타이밍 정보를 가져오기 위해 계측
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 915999dbad4cb24fe25fd182c093b8e83e11314e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 502ae620dc8641fabc8a5f6225b5673d5530c7f0
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779599"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331791"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>프로파일러 명령줄에서 계측 방법을 사용하여 서비스에 대한 자세한 타이밍 데이터 수집
 이 섹션에서는 명령줄 도구에서 계측 방법을 사용하여 Windows 서비스에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.

@@ -1,7 +1,7 @@
 ---
-title: '방법: 스크립트 문서 보기 | Microsoft Docs'
+title: 방법 - 스크립트 문서 보기 | Microsoft Docs
 ms.date: 11/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dcd9823e414005a1711ddccf9d972da929090920
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714434"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348446"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>방법: 스크립트 문서 보기(JavaScript)
 
@@ -33,7 +33,7 @@ ms.locfileid: "73714434"
 
 ### <a name="to-view-a-server-side-script-document"></a>서버 쪽 스크립트 문서를 보려면
 
-1. **솔루션 탐색기**에서 **\<웹 사이트 경로 이름>** 노드를 엽니다.
+1. **솔루션 탐색기**에서 **\<Website Pathname>** 노드를 엽니다.
 
 2. 보려는 스크립트 파일을 두 번 클릭합니다.
 

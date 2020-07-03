@@ -1,7 +1,7 @@
 ---
-title: 'DA0001: 연결에 StringBuilder를 사용하십시오. | Microsoft 문서'
+title: DA0001 - 연결에 StringBuilder 사용 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0001
 - vs.performance.rules.DAUseStringBuilder
@@ -14,22 +14,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6a645816ed046c2ce253a9f882c1425c48347573
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779508"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541741"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder를 사용하십시오.
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder 사용
 
-|||
+|항목|값|
 |-|-|
 |규칙 ID|DA0001|
-|Category|.NET Framework 사용|
+|범주|.NET Framework 사용|
 |프로파일링 방법|샘플링<br /><br /> 계측|
 |메시지|문자열 연결에 StringBuilder를 사용해 보세요.|
-|메시지 유형|Warning|
+|메시지 유형|경고|
 
 ## <a name="cause"></a>원인
  System.String.Concat 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 여러 세그먼트에서 문자열을 구성할 때 <xref:System.Text.StringBuilder> 클래스를 사용해 보세요.

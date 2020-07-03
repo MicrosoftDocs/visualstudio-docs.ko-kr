@@ -1,7 +1,7 @@
 ---
-title: '오류: 사이트에서 IP 주소 사용 | Microsoft Docs'
+title: 오류 - 사이트에서 IP 주소 사용 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_siteusesipaddress
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96786efad0349dec7c9e8e9a02cca40af3668341
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737496"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460548"
 ---
 # <a name="error-site-uses-ip-address"></a>오류: 사이트에서 IP 주소 사용
 이 오류는 디버거에서 IP 주소를 사용하는 웹 애플리케이션에 자동으로 연결하려고 할 때 발생합니다. IIS에서 **웹 사이트 확인**을 **특정 IP 주소 사용**으로 변경하는 경우 이 오류가 발생합니다.

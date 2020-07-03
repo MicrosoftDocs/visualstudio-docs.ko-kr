@@ -1,7 +1,7 @@
 ---
-title: '오류: ASP.NET이 설치되어 있지 않음 | Microsoft Docs'
+title: 오류 - ASP.NET이 설치되어 있지 않음 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.http_not_supported
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a768a1a3a0295190701cacc9bbf017baee507b7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737914"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460907"
 ---
 # <a name="error-aspnet-not-installed"></a>오류: ASP.NET이 설치되어 있지 않음
 이 오류는 디버깅하려는 컴퓨터에 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]이 제대로 설치되어 있지 않을 때 발생합니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]이 설치되지 않았거나 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]을 먼저 설치하고 나중에 IIS를 설치했을 수 있습니다.
