@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 메뉴 모음에 메뉴 추가 | Microsoft Docs
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - menus, creating top level
 - top-level menus
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b87fc73c1ed4b24ccfbd604e3bb08c9b02b62524
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 39dee051991efe05b9a661ce1d213e71b456590b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285389"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904252"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Visual Studio 메뉴 모음에 메뉴 추가
 
@@ -33,7 +33,7 @@ Visual Studio 메뉴 모음에 새 메뉴를 추가 하기 전에 기존 메뉴�
 > Visual Studio 2019부터 확장에서 제공 하는 최상위 메뉴는 **확장** 메뉴 아래에 배치 됩니다.
 :::moniker-end
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 

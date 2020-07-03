@@ -5,18 +5,18 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 141f3f0e60e797a4104c3e276775631f6e9196c5
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840033"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835409"
 ---
 # <a name="windows-script-interfaces"></a>Windows 스크립트 인터페이스
 
@@ -36,7 +36,7 @@ Windows 스크립트 설명서는 다음 섹션으로 구분됩니다.
 
 ## <a name="windows-script-background"></a>Windows 스크립트 배경 정보
 
-Windows 스크립트 인터페이스는 다음 두 가지 범주로 분류됩니다. 바로, Windows 스크립트 호스트와 Windows 스크립트 엔진입니다. 호스트는 스크립팅 엔진을 만들고 엔진을 호출하여 스크립트를 실행합니다. Windows 스크립트 호스트의 예는 다음과 같습니다.
+Windows 스크립트 인터페이스는 Windows 스크립트 호스트와 Windows 스크립트 엔진의 두 범주로 나뉩니다. 호스트는 스크립팅 엔진을 만들고 엔진을 호출하여 스크립트를 실행합니다. Windows 스크립트 호스트의 예는 다음과 같습니다.
 
 - Microsoft Internet Explorer
 
@@ -64,7 +64,7 @@ Windows 스크립트 디자인에서는 비제작 호스트(예: 브라우저 �
 
 1. 프로젝트를 만듭니다. 호스트에서 프로젝트 또는 문서를 로드합니다. (이 단계는 Windows 스크립트만으로 한정되지 않지만 완성도를 높이기 위해 여기에 포함되었습니다.)
 
-2. Windows 스크립트 엔진을 만듭니다. 호스트는 `CoCreateInstance`를 호출하여 새 Windows 스크립트 엔진을 만들고, 사용할 특정 스크립팅 엔진의 CLSID(클래스 식별자)를 지정합니다. 예를 들어 Internet Explorer의 HTML 브라우저는 HTML \<OBJECT> 태그의 CLSID = 특성을 통해 스크립팅 엔진의 클래스 식별자를 받습니다.
+2. Windows 스크립트 엔진을 만듭니다. 호스트는 `CoCreateInstance`를 호출하여 새 Windows 스크립트 엔진을 만들고, 사용할 특정 스크립팅 엔진의 CLSID(클래스 식별자)를 지정합니다. 예를 들어 Internet Explorer의 HTML 브라우저는 HTML 태그의 CLSID = 특성을 통해 스크립팅 엔진의 클래스 식별자를 받습니다 \<OBJECT> .
 
 3. 스크립트를 로드합니다. 스크립트 내용이 지속되면 호스트는 스크립트 스토리지, 스트림 또는 속성 모음을 제공하기 위해 스크립트 엔진의 `IPersist*::Load` 메서드를 호출합니다. 그렇지 않으면 호스트에서 `IPersist*::InitNew` 또는 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 메서드를 사용하여 Null 스크립트를 만듭니다. 스크립트를 텍스트로 유지하는 호스트는 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)를 사용하여 `IActiveScriptParse::InitNew`를 호출한 후 스크립팅 엔진에 스크립트의 텍스트를 제공할 수 있습니다.
 

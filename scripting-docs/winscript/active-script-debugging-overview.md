@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0181ee305c99a1d0af1d3e1e965c6ac8fe16f375
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572273"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835669"
 ---
 # <a name="active-script-debugging-overview"></a>액티브 스크립트 디버깅 개요
 액티브 스크립트 디버깅 인터페이스는 언어 중립적, 호스트 중립적 디버깅을 허용하고 다양한 개발 환경을 지원합니다.  
@@ -184,7 +184,7 @@ ms.locfileid: "72572273"
  프로젝트 트리 내에 컨텍스트를 제공하여 `IDebugDocumentProvider` 인터페이스의 기능을 확장합니다.  
   
 ## <a name="debugger-ide"></a>디버거 IDE  
- IDE는 언어 독립적 디버깅 UI입니다. 이 콘솔은 다음과 같은 기능을 제공합니다.  
+ IDE는 언어 독립적 디버깅 UI입니다. 다음과 같은 것을 제공합니다.  
   
 - 문서 뷰어/편집기  
   

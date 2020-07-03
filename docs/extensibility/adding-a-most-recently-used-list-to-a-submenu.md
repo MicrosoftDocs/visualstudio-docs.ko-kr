@@ -1,7 +1,7 @@
 ---
 title: 가장 최근에 사용한 목록을 하위 메뉴에 추가 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5624fe4a4f3c9ba774313e862f9e84a6f6d70862
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183277"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904206"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>가장 최근에 사용한 목록을 하위 메뉴에 추가
 이 연습은 [메뉴에 하위 메뉴 추가](../extensibility/adding-a-submenu-to-a-menu.md)의 데모를 기반으로 하 고, 동적 목록을 하위 메뉴에 추가 하는 방법을 보여 줍니다. 동적 목록은 MRU (가장 최근에 사용 됨) 목록을 만들기 위한 기본을 형성 합니다.
@@ -30,7 +30,7 @@ ms.locfileid: "84183277"
 
 메뉴 및 *vsct* 파일에 대 한 자세한 내용은 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension"></a>확장 만들기
@@ -199,5 +199,5 @@ ms.locfileid: "84183277"
 
 4. 하위 메뉴를 다시 엽니다. 이제 **항목 3** 이 목록의 맨 위에 있고 다른 항목은 한 위치 아래로 푸시 되었습니다. **항목 3** 을 다시 클릭 합니다. 그러면 메시지 상자에 **선택한 항목 3**이 표시 됩니다 .이는 텍스트를 명령 레이블과 함께 새 위치로 올바르게 이동 했음을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [동적으로 메뉴 항목 추가](../extensibility/dynamically-adding-menu-items.md)

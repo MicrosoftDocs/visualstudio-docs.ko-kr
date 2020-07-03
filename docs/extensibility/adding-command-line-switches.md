@@ -1,7 +1,7 @@
 ---
 title: 명령줄 스위치 추가 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c692787a63a7ab06fb3f0e0e94e2839190f58c9d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536281"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903473"
 ---
 # <a name="add-command-line-switches"></a>명령줄 스위치 추가
 *devenv.exe* 실행 될 때 VSPackage에 적용 되는 명령줄 스위치를 추가할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>스위치 이름과 해당 속성을 선언 하는 데 사용 합니다. 이 예제에서는 인수 없이 **Addcommandswitchpackage** 라는 VSPackage 라는 하위 클래스에 대해 MySwitch 스위치를 추가 하 고 VSPackage를 자동으로 로드 합니다.
@@ -29,12 +29,12 @@ ms.locfileid: "85536281"
 
  명명 된 매개 변수는 다음 설명에 나와 있습니다.
 
-|Name|설명|
+|이름|설명|
 |-|-|
 | 인수 | 스위치에 대 한 인수 개수입니다. "*" 또는 인수 목록 일 수 있습니다. |
 | DemandLoad | VSPackage가 1로 설정 되어 있으면 자동으로 로드 하 고 그렇지 않으면 0으로 설정 합니다. |
 | HelpString | **Devenv/?** 를 사용 하 여 표시할 문자열의 도움말 문자열 또는 리소스 ID입니다. |
-| Name | 스위치입니다. |
+| 이름 | 스위치입니다. |
 | PackageGuid | 패키지의 GUID입니다. |
 
  인수의 첫 번째 값은 일반적으로 0 또는 1입니다. 특수 값 ' * '를 사용 하 여 명령줄의 전체 나머지가 인수 임을 나타낼 수 있습니다. 이는 사용자가 디버거 명령 문자열을 전달 해야 하는 디버깅 시나리오에 유용할 수 있습니다.
@@ -67,7 +67,7 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 
  패키지가 로드 될 때마다 명령줄 스위치를 확인 하는 것은 사용자의 책임입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)
