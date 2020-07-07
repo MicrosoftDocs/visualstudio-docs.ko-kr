@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984149"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015756"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 
@@ -45,9 +44,9 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그�
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
 
-이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - 지원 되는 버전의 Windows 및 SharePoint
 
@@ -73,9 +72,9 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그�
 
 ## <a name="add-code-to-the-feature-receiver"></a>기능 수신기에 코드 추가
 
-다음으로 기능 수신기의 두 메서드에 코드를 추가 합니다. `FeatureActivated` 및 `FeatureDeactivating`. 이러한 메서드는 SharePoint에서 기능이 각각 활성화 또는 비활성화 될 때마다 트리거됩니다.
+그런 다음 기능 수신기의 두 메서드에 코드를 추가 합니다. `FeatureActivated` 및 `FeatureDeactivating` . 이러한 메서드는 SharePoint에서 기능이 각각 활성화 또는 비활성화 될 때마다 트리거됩니다.
 
-1. `Feature1EventReceiver` 클래스 맨 위에 SharePoint 사이트 및 하위 사이트를 지정 하는 변수를 선언 하는 다음 코드를 추가 합니다.
+1. 클래스 맨 위에 `Feature1EventReceiver` SharePoint 사이트 및 하위 사이트를 지정 하는 변수를 선언 하는 다음 코드를 추가 합니다.
 
     ```vb
     ' SharePoint site and subsite.
@@ -258,7 +257,7 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그�
 
 2. 알림 및 작업 목록의 내용을 표시 합니다.
 
-     알림 목록에는 **활성화 된 기능: IntelliTraceTest_Feature1**이라는 새 알림이 있어야 하며, 작업 목록에는 **Deactivate feature: IntelliTraceTest_Feature1**라는 새 태스크가 있어야 합니다. 이러한 항목 중 하나를 누락 하는 경우 기능이 활성화 되어 있는지 확인 합니다. 활성화 되지 않은 경우 활성화 합니다.
+     알림 목록에는 **IntelliTraceTest_Feature1 활성화 된 기능**이라는 새 알림이 있어야 하 고, 작업 목록에는 **Deactivate feature: IntelliTraceTest_Feature1**라는 새 태스크가 있어야 합니다. 이러한 항목 중 하나를 누락 하는 경우 기능이 활성화 되어 있는지 확인 합니다. 활성화 되지 않은 경우 활성화 합니다.
 
 3. 다음 단계를 수행 하 여 기능을 비활성화 합니다.
 
@@ -295,7 +294,7 @@ SharePoint를 실행 하는 시스템에 Microsoft Monitoring Agent를 설치 �
 
 3. PowerShell 창에서 [start-webapplicationmonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) 명령을 실행 하 여 .itrace 파일을 만들고, 모니터링을 중지 하 고, SharePoint 솔루션을 다시 시작 합니다.
 
-     **Start-webapplicationmonitoring**  *"\<SharePointSite >\\< SharePointAppName\>"*
+     **Start-webapplicationmonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>SharePoint 솔루션 디버그 및 수정
 
@@ -329,7 +328,7 @@ SharePoint를 실행 하는 시스템에 Microsoft Monitoring Agent를 설치 �
 
      이제 코드가 제대로 실행 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 코드 확인 및 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

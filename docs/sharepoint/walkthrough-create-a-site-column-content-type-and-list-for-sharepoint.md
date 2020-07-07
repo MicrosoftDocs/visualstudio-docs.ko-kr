@@ -1,7 +1,7 @@
 ---
 title: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
-ms.translationtype: MT
+ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879357"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015272"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
   다음 절차에서는 사용자 지정 SharePoint 사이트 열 또는 *필드*를 만드는 방법 및 사이트 열을 사용 하는 내용 유형을 보여 줍니다. 또한 새 콘텐츠 형식을 사용 하는 목록을 만드는 방법도 보여 줍니다.
@@ -41,27 +40,27 @@ ms.locfileid: "74879357"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
-- 지원되는 Windows 및 SharePoint 버전.
+- 지원 되는 버전의 Windows 및 SharePoint
 
 - [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>사용자 지정 사이트 열 만들기
- 이 예에서는 병원에서 환자를 관리 하기 위한 목록을 만듭니다. 먼저 다음과 같이 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 프로젝트를 만들고 사이트 열을 추가 해야 합니다.
+ 이 예에서는 병원에서 환자를 관리 하기 위한 목록을 만듭니다. 먼저 다음과 같이에서 SharePoint 프로젝트를 만들고 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 여기에 사이트 열을 추가 해야 합니다.
 
 #### <a name="to-create-the-project"></a>프로젝트를 만들려면
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택 합니다.
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 ::: moniker range="=vs-2017"
-2. **새 프로젝트** 대화 상자의  **C# 시각적 개체** 또는 **Visual Basic**에서 **Office/sharepoint** 노드를 확장 한 다음 **sharepoint 솔루션**을 선택 합니다.
+2. **새 프로젝트** 대화 상자의 **Visual c #** 또는 **Visual Basic**에서 **Office/SharePoint** 노드를 확장 한 다음 **SharePoint 솔루션**을 선택 합니다.
 
 3. **템플릿** 창에서 설치 된 sharepoint의 특정 버전에 대 한 **sharepoint 빈 프로젝트** 를 선택 합니다. 예를 들어 SharePoint 2016을 설치한 경우 **sharepoint 2016-빈 프로젝트** 템플릿을 선택 합니다.  
 
 4. 프로젝트의 이름을 **클리닉**으로 변경한 다음 **확인** 단추를 선택 합니다.
 
-5. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (`http://<`*SystemName*`>/)`를 사용 합니다.
+5. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (SystemName)를 사용 합니다 `http://<` *SystemName* `>/)` .
 
 6. **이 SharePoint 솔루션의 신뢰 수준을 선택** 하십시오. 섹션에서 기본 값인 **샌드박스 솔루션으로 배포**를 사용 합니다.
 
@@ -75,7 +74,7 @@ ms.locfileid: "74879357"
 
 3. 프로젝트의 이름을 **클리닉**로 변경한 다음 **만들기** 단추를 선택 합니다.
 
-4. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (`http://<`*SystemName*`>/)`를 사용 합니다.
+4. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (SystemName)를 사용 합니다 `http://<` *SystemName* `>/)` .
 
 5. **이 SharePoint 솔루션의 신뢰 수준을 선택** 하십시오. 섹션에서 기본 값인 **샌드박스 솔루션으로 배포**를 사용 합니다.
 
@@ -86,11 +85,11 @@ ms.locfileid: "74879357"
 
 #### <a name="to-add-site-columns"></a>사이트 열을 추가 하려면
 
-1. 새 사이트 열을 추가 합니다. 이렇게 하려면 **솔루션 탐색기**에서 **클리닉** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **추가** > **새 항목**을 선택 합니다.
+1. 새 사이트 열을 추가 합니다. 이렇게 하려면 **솔루션 탐색기**에서 **클리닉** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **Add**  >  **새 항목**추가를 선택 합니다.
 
 2. **새 항목 추가** 대화 상자에서 **사이트 열**을 선택 하 고 이름을 **PatientName**로 변경한 다음 **추가** 단추를 선택 합니다.
 
-3. 사이트 열의 *Elements .xml* 파일에서 **형식** 설정을 **텍스트로**그대로 두고 **그룹** 설정을 **클리닉 사이트 열**로 변경 합니다. 완료 되 면 사이트 열의 *Elements .xml* 파일은 다음 예제와 같습니다.
+3. 사이트 열의 *Elements.xml* 파일에서 **형식** 설정을 **텍스트로**그대로 두고 **그룹** 설정을 **클리닉 사이트 열**로 변경 합니다. 완료 되 면 사이트 열의 *Elements.xml* 파일은 다음 예제와 같습니다.
 
     ```xml
     <Field
@@ -116,9 +115,9 @@ ms.locfileid: "74879357"
 
 1. 프로젝트에 콘텐츠 형식을 추가 합니다. 이렇게 하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
+2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
 
-3. **C# 시각적 개체** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+3. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 4. **템플릿** 창에서 **콘텐츠 형식** 템플릿을 선택 하 고 이름을 **환자 정보**로 변경한 다음 **추가** 단추를 선택 합니다.
 
@@ -141,7 +140,7 @@ ms.locfileid: "74879357"
 
 10. **그룹 이름을** **클리닉 콘텐츠 형식**으로 변경 하 고 다른 설정은 기본값으로 둡니다.
 
-11. 메뉴 모음에서 **파일** > **모두 저장**을 선택 하 고 콘텐츠 형식 디자이너를 닫습니다.
+11. 메뉴 모음에서 **파일**  >  **모두 저장**을 선택 하 고 콘텐츠 형식 디자이너를 닫습니다.
 
 ## <a name="create-a-list"></a>목록 만들기
  이제 새 콘텐츠 형식 및 사이트 열을 사용 하는 목록을 만듭니다.
@@ -150,9 +149,9 @@ ms.locfileid: "74879357"
 
 1. 프로젝트에 목록을 추가 합니다. 이렇게 하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
+2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
 
-3. **시각적 개체 C#**  또는 **Visual Basic**에서 **SharePoint** 노드를 확장 합니다.
+3. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 합니다.
 
 4. **템플릿** 창에서 **목록** 템플릿을 선택 하 고 이름을 **환자**로 변경한 다음 **추가** 단추를 선택 합니다.
 
@@ -217,12 +216,12 @@ ms.locfileid: "74879357"
 
 15. **열 이름** 목록에서 **환자 이름**을 선택 하 고 **정렬** 열이 **오름차순**으로 설정 되었는지 확인 한 다음 **확인** 단추를 선택 합니다.
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
  이제 사용자 지정 사이트 열, 콘텐츠 형식 및 목록이 준비 되었으므로 SharePoint에 배포 하 고 응용 프로그램을 실행 하 여 테스트 합니다.
 
 #### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면
 
-1. 메뉴 모음에서 **파일** > **모두 저장**을 차례로 선택합니다.
+1. 메뉴 모음에서 **파일**  >  **모두 저장**을 선택 합니다.
 
 2. **F5** 키를 선택 하 여 응용 프로그램을 실행 합니다.
 
@@ -230,7 +229,7 @@ ms.locfileid: "74879357"
 
 3. 빠른 탐색 모음에서 **환자** 링크를 선택 하 여 **환자** 목록을 표시 합니다.
 
-     목록에 있는 열 이름은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 **보기** 탭에서 입력 한 이름과 일치 해야 합니다.
+     목록의 열 이름은의 **보기** 탭에서 입력 한 열과 일치 해야 합니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 4. **새 항목 추가** 링크를 선택 하 여 환자 정보 카드를 만듭니다.
 
@@ -238,7 +237,7 @@ ms.locfileid: "74879357"
 
      새 레코드가 목록에 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [방법: 사용자 지정 필드 형식 만들기](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))

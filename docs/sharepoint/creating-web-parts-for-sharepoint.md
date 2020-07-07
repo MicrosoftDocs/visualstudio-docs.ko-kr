@@ -1,7 +1,7 @@
 ---
 title: SharePoint에 대 한 웹 파트 만들기 | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -23,12 +23,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e0d860f21f0fe2744c8c05c4ebeb3590be68fc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984471"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015046"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint 용 웹 파트 만들기
   웹 파트를 사용 하면 브라우저를 사용 하 여 SharePoint 사이트 페이지의 콘텐츠, 모양 및 동작을 수정할 수 있습니다. 웹 파트는 웹 파트 페이지 내에서 실행 되는 서버 쪽 컨트롤이 며, SharePoint 사이트에 표시 되는 페이지의 빌딩 블록입니다. [문서 블록: 웹 파트](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))을 참조 하세요.
@@ -43,9 +42,9 @@ ms.locfileid: "72984471"
 ### <a name="web-part-item"></a>웹 파트 항목
  **웹 파트** 항목은 SharePoint 사이트의 웹 파트를 디자인 하는 데 사용할 수 있는 파일을 제공 합니다. **웹 파트** 항목을 추가 하면 Visual Studio에서 프로젝트에 폴더를 만든 다음 여러 개의 파일을 폴더에 추가 합니다. 다음 표에서는 각 파일에 대해 설명 합니다.
 
-|파일|설명|
+|파일|Description|
 |----------|-----------------|
-|*Elements .xml*|프로젝트의 기능 정의 파일에서 웹 파트를 배포 하는 데 사용 하는 정보를 포함 합니다.|
+|*Elements.xml*|프로젝트의 기능 정의 파일에서 웹 파트를 배포 하는 데 사용 하는 정보를 포함 합니다.|
 |webpart 파일|SharePoint에서 웹 파트 갤러리에 웹 파트를 표시 해야 하는 정보를 제공 합니다.|
 |코드 파일|웹 파트에 컨트롤을 추가 하 고 웹 파트 내에서 사용자 지정 콘텐츠를 생성 하는 메서드를 포함 합니다.|
 
@@ -57,7 +56,7 @@ ms.locfileid: "72984471"
 ## <a name="sharepoint-controls"></a>SharePoint 컨트롤
  Visual Studio는 응용 프로그램 페이지와 같은 SharePoint 페이지를 만들기 위한 몇 가지 컨트롤을 제공 합니다. 이러한 컨트롤은 **SharePoint 컨트롤**의 **도구 상자** 에 나타납니다. 이러한 컨트롤의 기능은 SharePoint 사이트 및 목록 페이지에 사용 되는 ASP.NET 서버 컨트롤을 포함 하는 [WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 네임 스페이스에서 파생 됩니다.
 
-|컨트롤 이름|설명|
+|컨트롤 이름|Description|
 |------------------|-----------------|
 |[기타 메뉴](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|ASP 메뉴를 삽입 합니다. 자세한 내용은 [Menu 컨트롤 개요](/previous-versions/ecs0x9w5(v=vs.140))를 참조 하세요.|
 |[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|*.Aspx* 페이지에 **링크** 요소를 삽입 하 고 **CssRegistration**로 정의 된 하나 이상의 외부 스타일 시트를 적용 합니다.|
@@ -91,16 +90,16 @@ ms.locfileid: "72984471"
 
    인라인 JavaScript를 서버 쪽 태그 파일에 추가할 수 있지만 태그에 추가 된 중단점에 대 한 디버깅은 지원 되지 않습니다. JavaScript를 디버깅 하려면 태그 파일에서 외부 JavaScript 파일을 참조 한 다음 JavaScript 파일에서 중단점을 설정 합니다.
 
-- 인라인 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 코드의 디버깅은 태그 파일 대신 생성 된 코드 파일에서 수행 해야 합니다.
+- 인라인 코드의 디버깅은 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 태그 파일 대신 생성 된 코드 파일에서 수행 해야 합니다.
 
-- 시각적 웹 파트는 `<@ Assembly Src=` 지시문 사용을 지원 하지 않습니다.
+- 시각적 웹 파트는 지시문 사용을 지원 하지 않습니다 `<@ Assembly Src=` .
 
-- Sharepoint 웹 컨트롤 및 일부 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 컨트롤은 SharePoint 샌드 박싱된 환경에서 지원 되지 않습니다. 샌드박스 솔루션의 시각적 웹 파트에서 지원 되지 않는 컨트롤을 사용 하는 경우 "' WebControls ' 네임 스페이스에 형식 또는 네임 스페이스 이름 ' 테마 '가 없습니다. 라는 오류가 나타납니다.
+- Sharepoint 웹 컨트롤 및 일부 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 컨트롤은 sharepoint 샌드 박싱된 환경에서 지원 되지 않습니다. 샌드박스 솔루션의 시각적 웹 파트에서 지원 되지 않는 컨트롤을 사용 하는 경우 "' WebControls ' 네임 스페이스에 형식 또는 네임 스페이스 이름 ' 테마 '가 없습니다. 라는 오류가 나타납니다.
 
   샌드박스 솔루션에 대 한 자세한 내용은 [샌드박스 솔루션과 팜 솔루션의 차이점](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)을 참조 하세요.
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>이전 스타일의 SharePoint 기반 웹 파트 만들기
- Visual Studio의 템플릿을 사용 하 여 SharePoint 용 사용자 지정 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] 웹 파트를 만들 수 있습니다. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] 웹 파트는 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 웹 파트 인프라를 기반으로 구축 되었으며 새 프로젝트에 권장 되는 형식입니다.
+ Visual Studio의 템플릿을 사용 하 여 SharePoint 용 사용자 지정 웹 파트를 만들 수 있습니다 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] . [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]웹 파트는 웹 파트 인프라를 기반으로 구축 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 되었으며 새 프로젝트에 권장 되는 형식입니다.
 
  경우에 따라 이전 스타일의 SharePoint 기반 웹 파트를 사용 하 여 웹 파트를 만들어야 할 수도 있습니다. Visual Studio를 사용 하 여 이러한 유형의 웹 파트를 만들 수 있지만 Visual Studio에서는 이러한 유형의 웹 파트를 만들 수 있도록 특별히 디자인 된 템플릿을 제공 하지 않습니다.
 
@@ -108,7 +107,7 @@ ms.locfileid: "72984471"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md)|SharePoint 페이지의 웹 파트를 만드는 방법을 보여 줍니다.|
 |[방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|시각적 디자인 화면을 사용 하 여 SharePoint 용 웹 파트를 만드는 방법을 보여 줍니다.|

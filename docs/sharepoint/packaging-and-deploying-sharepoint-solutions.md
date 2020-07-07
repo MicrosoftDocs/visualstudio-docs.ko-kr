@@ -1,7 +1,7 @@
 ---
 title: SharePoint 솔루션 패키징 및 배포 | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45815e03d887f4d22f2559acf741f612cab34c49
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986213"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015593"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>SharePoint 솔루션 패키징 및 배포
   일반적으로 SharePoint 솔루션은 솔루션 패키지 (.wsp) 파일을 사용 하 여 SharePoint 서버에 배포 됩니다. Visual Studio를 사용 하 여 SharePoint 프로젝트 항목을 기능으로 구성 하 고 SharePoint 기능을 배포 하는 패키지를 만들 수 있습니다.
 
- 이 항목에서는 다음 내용에 대해 설명합니다.
+ 이 항목에서는 다음 정보를 제공합니다.
 
 - [기능 및 패키지 만들기](#create-features-and-packages)
 
@@ -37,7 +36,7 @@ ms.locfileid: "72986213"
 ## <a name="create-features-and-packages"></a>기능 및 패키지 만들기
  Visual Studio를 사용 하 여 관련 SharePoint 요소를 *기능*으로 그룹화 할 수 있습니다. 예를 들어 연락처 목록 정의의 기능에는 목록 인스턴스 및 목록 정의가 포함 될 수 있습니다. 이러한 두 요소를 배포 목적으로 단일 기능으로 결합할 수 있습니다. 기능에 대 한 자세한 내용은 [문서 블록: 기능](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14))을 참조 하세요.
 
- 그런 다음 SharePoint 솔루션 패키지 ( *.wsp*)를 만들어 여러 기능, 사이트 정의, 어셈블리 및 기타 파일을 단일 패키지로 묶을 수 있습니다. 그러면 파일은 sharepoint에서 서버에 파일을 배포 하는 데 필요한 형식으로 저장 됩니다. 자세한 내용은 [빌딩 Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14))을 참조 하세요.
+ 그런 다음 SharePoint 솔루션 패키지 (*.wsp*)를 만들어 여러 기능, 사이트 정의, 어셈블리 및 기타 파일을 단일 패키지로 묶을 수 있습니다. 그러면 파일은 sharepoint에서 서버에 파일을 배포 하는 데 필요한 형식으로 저장 됩니다. 자세한 내용은 [빌딩 Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14))을 참조 하세요.
 
 ## <a name="feature-and-packaging-tool-support"></a>기능 및 패키징 도구 지원
  Visual Studio의 SharePoint 개발 도구를 사용 하 여 쉽게 배포할 수 있도록 SharePoint 파일을 기능 및 솔루션 패키지로 신속 하 게 구성할 수 있습니다. 다음 도구를 사용 하 여 기능 및 솔루션 패키지를 구성할 수 있습니다.
@@ -95,12 +94,12 @@ ms.locfileid: "72986213"
 
  예를 들어, SharePoint 프로젝트에 .xml 파일을 추가 하려면 다음 작업 중 하나를 수행 *합니다* .
 
-- SharePoint "레이아웃" 매핑된 폴더를 프로젝트에 추가 합니다. 이는 프로젝트에 대 한 하위 폴더가 있는 **레이아웃** 이라는 폴더를 **솔루션 탐색기** 에 만듭니다. 새 하위 폴더에 *.xml* 파일을 추가 합니다. 기본적으로 파일은의 SharePoint 파일 시스템에 배포 *됩니다. \\ATE\자판\\\<폴더 이름 >* 입니다. 매핑된 폴더를 추가 하는 방법에 대 한 자세한 내용은 [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)를 참조 하세요.
+- SharePoint "레이아웃" 매핑된 폴더를 프로젝트에 추가 합니다. 이는 프로젝트에 대 한 하위 폴더가 있는 **레이아웃** 이라는 폴더를 **솔루션 탐색기** 에 만듭니다. 새 하위 폴더에 *.xml* 파일을 추가 합니다. 기본적으로 파일은의 SharePoint 파일 시스템에 배포 *됩니다. \\ATE\레이아웃 \\ \<Folder Name> *. 매핑된 폴더를 추가 하는 방법에 대 한 자세한 내용은 [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)를 참조 하세요.
 
 - *.Xml* 파일을 SharePoint 프로젝트 항목의 폴더에 추가한 다음, *.Xml* 파일의 **배포 유형** 속성을 **Nodeployment** 에서 **rootfile** 또는 **elementfile**과 같은 다른 설정으로 변경 합니다. 적절 한 **배포 유형** 설정은 파일 및 프로젝트에 따라 다릅니다. **배포 유형** 속성 설정에 대 한 자세한 내용은 [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)을 참조 하세요.
 
   추가 된 파일이 솔루션의 특정 프로젝트에 적용 되지 않는 경우 솔루션에 빈 SharePoint 프로젝트를 추가한 다음 추가 파일을 추가할 수 있습니다. SharePoint에 파일을 배포 하는 또 다른 대안은 특히 콘텐츠 데이터베이스에 모듈을 추가한 다음 모듈에 추가 하는 것입니다. 자세한 내용은 [모듈을 사용 하 여 솔루션에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

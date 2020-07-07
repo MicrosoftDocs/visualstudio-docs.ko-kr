@@ -1,7 +1,7 @@
 ---
 title: SharePoint에 대 한 페이지 만들기 | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986349"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015172"
 ---
 # <a name="create-pages-for-sharepoint"></a>SharePoint에 대 한 페이지 만들기
   SharePoint 사이트에 대 한 응용 프로그램 페이지, 사이트 페이지, 마스터 페이지 및 페이지 레이아웃을 만들 수 있습니다.
@@ -34,12 +33,12 @@ ms.locfileid: "72986349"
 ## <a name="types-of-sharepoint-pages"></a>SharePoint 페이지 유형
  다음 표에서는 SharePoint 사이트에 포함 된 네 가지 주요 유형의 페이지에 대해 설명 합니다.
 
-|페이지 유형|설명|
+|페이지 유형|Description|
 |---------------|-----------------|
 |응용 프로그램 페이지|페이지에 사용자 지정 코드를 포함 하거나 페이지를 여러 사이트에서 공유 하려는 경우 응용 프로그램 페이지를 만듭니다. 그렇지 않으면 사이트 페이지가 가장 적합할 수 있습니다.|
 |사이트 페이지|다음 작업 중 하나를 수행 하려는 경우 사이트 페이지를 만듭니다.<br /><br /> -SharePoint 라이브러리에 페이지를 추가 합니다.<br />-동적 웹 파트 및 웹 파트 영역과 같은 기능을 호스트 하는 페이지를 사용 하도록 설정 합니다.<br />-사용자가 SharePoint Designer를 사용 하 여 페이지를 사용자 지정할 수 있도록 합니다.<br /><br /> 페이지에 사용자 지정 코드를 포함 하려면 사이트 페이지를 만들지 마세요. 사용자 지정 코드를 사이트 페이지에 추가할 수 있지만 사용자가 SharePoint Designer를 사용 하 여 페이지를 사용자 지정할 때 코드의 실행이 중지 됩니다.|
 |마스터 페이지|사이트 페이지 및 응용 프로그램 페이지에 대 한 공용 구조를 정의 하려면 마스터 페이지를 만듭니다.|
-|페이지 레이아웃|페이지 레이아웃은 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]에만 적용 되며 사이트 페이지 및 응용 프로그램 페이지의 공통 구조를 추가로 정의할 수 있습니다.|
+|페이지 레이아웃|페이지 레이아웃은에만 적용 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 되며 사이트 페이지 및 응용 프로그램 페이지의 공통 구조를 추가로 정의할 수 있습니다.|
 
  각 페이지 형식에 대 한 개요는 구성 요소 [: 페이지 및 사용자 인터페이스](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)), [페이지 레이아웃 및 마스터 페이지](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14))를 참조 하세요.
 
@@ -62,7 +61,7 @@ ms.locfileid: "72986349"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[SharePoint에 대 한 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)|응용 프로그램 페이지를 추가 하는 방법에 대해 설명 합니다. *.aspx* 콘텐츠는 SharePoint 마스터 페이지와 병합 됩니다.|
 |[방법: 응용 프로그램 페이지 만들기](../sharepoint/how-to-create-an-application-page.md)|SharePoint 사이트에서 실행 되는 ASP.NET 페이지를 만드는 방법을 보여 줍니다.|

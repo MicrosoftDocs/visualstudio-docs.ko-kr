@@ -1,7 +1,7 @@
 ---
 title: SharePoint 솔루션 만들기 | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97f5243b775f19d77bc8d5a5c1d29fddadd9f1c7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.openlocfilehash: 2a7aaa8a5e5c8e6079c04b05d887138d294116dd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541780"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016247"
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint 솔루션 만들기
   SharePoint 애플리케이션을 SharePoint Designer에서 만드는 대신 Visual Studio에서 만들 수 있습니다. Visual Studio에서는 고급 디버깅 도구, IntelliSense, 문 완성, 프로젝트 템플릿 등의 기능이 제공되므로 SharePoint 개발을 신속하게 수행할 수 있습니다. 또한 Visual Studio는 고급 .NET Framework 기반 도구 및 언어를 활용합니다. Visual Basic 또는 Visual C#을 사용하여 SharePoint 프로젝트를 개발할 수 있으며 JavaScript를 사용하여 SharePoint 프로젝트용 앱을 개발할 수 있습니다.

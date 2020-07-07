@@ -1,7 +1,7 @@
 ---
 title: '방법: 컨트롤을 안전 컨트롤로 표시 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982722"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016261"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>방법: 컨트롤을 안전 컨트롤로 표시
   보안을 위해 SharePoint는 스크립트 삽입에 대해 보호 되는 웹 컨트롤과 그렇지 않은 웹 컨트롤을 구별 합니다. 신뢰할 수 없는 사용자가 보호 된 컨트롤 또는 *안전 컨트롤*에 액세스할 수 있습니다. 패키지에 어셈블리를 추가할 때 SharePoint 프로젝트 항목 또는 **패키지 디자이너** 의 안전 컨트롤 항목 속성에서 컨트롤을 안전한 것으로 표시할 수 있습니다. 자세한 내용은 다음을 참조하세요.
 
-- web.config [파일 설정을 변경](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) 하 고 [웹 파트 어셈블리를 안전 컨트롤로 등록](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))합니다.
+- [web.config 파일 설정을 변경](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) 하 고 [웹 파트 어셈블리를 안전 컨트롤로 등록](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))합니다.
 
 > [!IMPORTANT]
 > 이러한 절차는 설명을 위한 목적으로 제공 됩니다. 컨트롤을 안전 하 게 보호 하는 경우에만 컨트롤을 안전 하 게 표시 합니다.
@@ -63,7 +62,7 @@ ms.locfileid: "72982722"
 
      컨트롤의 네임 스페이스는 나중에 사용 되기 때문에 기록해 둡니다.
 
-3. 메뉴 모음에서 **빌드** > **솔루션** 빌드를 선택 하 여 프로젝트를 빌드합니다.
+3. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택 하 여 프로젝트를 빌드합니다.
 
 4. 다른 SharePoint 솔루션을 만듭니다.
 
@@ -88,9 +87,9 @@ ms.locfileid: "72982722"
     |속성 이름|값|
     |-------------------|-----------|
     |네임스페이스|컨트롤의 정규화 된 네임 스페이스 (예: **BdcModelProject1. VisualWebPart1**)입니다.|
-    |형식 이름|Button1|
+    |유형 이름|Button1|
     |어셈블리 이름|강력한 어셈블리 이름 (예: 14.0.0.0, Version =, Culture = 중립, PublicKeyToken = 71e9bce111e9429c).|
-    |색상|**안전** 확인란의 선택을 취소 합니다.|
+    |안전|**안전** 확인란의 선택을 취소 합니다.|
     |스크립트에 대해 안전|스크립트를 **안전** 하 게 유지 확인란을 선택 취소 합니다.|
 
     > [!NOTE]
@@ -105,13 +104,13 @@ ms.locfileid: "72982722"
     |속성 이름|값|
     |-------------------|-----------|
     |네임스페이스|컨트롤의 정규화 된 네임 스페이스 (예: **BdcModelProject1. VisualWebPart1**)입니다.|
-    |형식 이름|TextBox1|
+    |유형 이름|TextBox1|
     |어셈블리 이름|강력한 어셈블리 이름 (예: 14.0.0.0, Version =, Culture = 중립, PublicKeyToken = 71e9bce111e9429c).|
-    |색상|**안전** 확인란을 선택 합니다.|
+    |안전|**안전** 확인란을 선택 합니다.|
     |스크립트에 대해 안전|**스크립트에 대해 안전** 확인란을 선택 합니다.|
 
 16. **Tab** 키를 선택 하 고 **확인** 단추를 선택 하 여 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

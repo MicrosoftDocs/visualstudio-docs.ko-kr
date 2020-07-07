@@ -1,7 +1,7 @@
 ---
 title: '방법: 특정 Finder 메서드 추가 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985258"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014813"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>방법: 특정 Finder 메서드 추가
   *특정 Finder* 메서드를 만들어 단일 엔터티 인스턴스를 반환할 수 있습니다. 사용자가 비즈니스 데이터 웹 파트 또는 외부 목록에서 엔터티를 선택 하면 BDC (비즈니스 데이터 연결) 서비스가 특정 Finder 메서드를 실행 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
@@ -33,7 +32,7 @@ ms.locfileid: "72985258"
 
     Visual Studio에서 **BDC 디자이너** 에 엔터티를 추가 하는 방법에 대 한 자세한 내용은 [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)를 참조 하세요.
 
-2. 메뉴 모음에서 **보기** > **다른 창**, **BDC 메서드 세부 정보**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  >  **다른 창**, **BDC 메서드 세부 정보**를 선택 합니다.
 
     **BDC 메서드 세부 정보** 창이 열립니다. 해당 창에 대 한 자세한 내용은 [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 
@@ -80,12 +79,12 @@ ms.locfileid: "72985258"
      다음 예에서는 SQL Server에 대 한 AdventureWorks 예제 데이터베이스의 연락처를 반환 합니다.
 
      > [!NOTE]
-     > `ServerName` 필드의 값을 서버의 이름으로 바꿉니다.
+     > 필드의 값을 `ServerName` 서버의 이름으로 바꿉니다.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)
 - [방법: Creator 메서드 추가](../sharepoint/how-to-add-a-creator-method.md)

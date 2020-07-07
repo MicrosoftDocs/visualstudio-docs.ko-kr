@@ -1,7 +1,7 @@
 ---
 title: SharePoint에 비즈니스 데이터 통합 | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -19,15 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06d9e8059db8daa1c27b8c1d5fecc50940b7facb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986387"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016315"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>SharePoint에 비즈니스 데이터 통합
-  비즈니스 데이터를 SharePoint에 통합할 수 있습니다. 비즈니스 데이터는 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel, SAP 등의 백 엔드 서버 응용 프로그램 또는 웹 서비스에서 가져올 수 있습니다. 사용자는 SharePoint에서 외부 목록 또는 비즈니스 데이터 웹 파트를 사용 하 여 비즈니스 데이터를 확인, 추가, 업데이트 또는 삭제할 수 있습니다.  사용자는 Microsoft Outlook과 같은 Microsoft Office 응용 프로그램에서이 데이터를 오프 라인으로 액세스할 수도 있습니다. 자세한 내용은 [외부 데이터를 표시할 수 있는 위치](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))를 참조 하세요.
+  비즈니스 데이터를 SharePoint에 통합할 수 있습니다. 비즈니스 데이터는, Siebel, SAP 등의 백 엔드 서버 응용 프로그램 또는 웹 서비스에서 가져올 수 있습니다 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] . 사용자는 SharePoint에서 외부 목록 또는 비즈니스 데이터 웹 파트를 사용 하 여 비즈니스 데이터를 확인, 추가, 업데이트 또는 삭제할 수 있습니다.  사용자는 Microsoft Outlook과 같은 Microsoft Office 응용 프로그램에서이 데이터를 오프 라인으로 액세스할 수도 있습니다. 자세한 내용은 [외부 데이터를 표시할 수 있는 위치](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))를 참조 하세요.
 
  데이터를 SharePoint에 통합 하려면 BDC (비즈니스 데이터 연결) 서비스용 모델을 만듭니다. BDC 서비스는 비즈니스 응용 프로그램의 데이터에 대 한 정보를 저장 하는 SharePoint의 응용 프로그램입니다. 자세한 내용은 [BDC (비즈니스 데이터 연결) 서비스](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14))를 참조 하세요.
 
@@ -45,13 +44,13 @@ ms.locfileid: "72986387"
  엔터티는 필드의 컬렉션을 설명 합니다. 예를 들어 엔터티는 데이터베이스의 테이블을 나타낼 수 있습니다. 엔터티는 SharePoint에서 외부 콘텐츠 형식으로 표시 됩니다. 외부 콘텐츠 형식에 대 한 자세한 내용은 [외부 콘텐츠 형식 이란?](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14)) 을 참조 하세요.
 
 ### <a name="methods"></a>메서드
- 메서드를 사용 하면 외부 콘텐츠 형식의 소비자가 엔터티의 필드에 대해 작업을 수행할 수 있습니다. 예를 들어 업데이트 프로그램 메서드를 사용 하 여 사용자가 주소를 변경 하 고, `Address` 및 `BirthDate`이 `Customer` 엔터티의 필드인 고객의 생년월일을 변경할 수 있습니다.
+ 메서드를 사용 하면 외부 콘텐츠 형식의 소비자가 엔터티의 필드에 대해 작업을 수행할 수 있습니다. 예를 들어 업데이트 프로그램 메서드를 사용 하 여 사용자가 주소를 변경 하 고 `Address` 및 `BirthDate` 가 엔터티의 필드인 고객의 생년월일을 변경할 수 있습니다 `Customer` .
 
  Visual Studio는 모델의 각 엔터티에 대 한 서비스 코드 파일을 생성 합니다. 모델에 메서드를 추가 하면 Visual Studio에서 서비스 코드 파일에 해당 메서드를 생성 합니다. 각 메서드에 코드를 추가 하 여 적절 한 작업을 수행 합니다. 예를 들어 작성자 메서드를 모델에 추가 하는 경우 Visual Studio는 서비스 코드 파일에 Creator 메서드를 생성 합니다. 사용자가 모델을 기반으로 하는 목록에서 **새 항목** 단추를 클릭 하면 BDC 서비스에서이 메서드를 호출 합니다. 따라서 데이터 원본에 새 데이터를 추가 하는 Creator 메서드에 코드를 추가 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)|새 모델을 만들거나 SharePoint에서 내보내는 모델을 가져오는 방법을 보여 줍니다.|
 |[비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)|Visual Studio 디자인 도구를 사용 하 여 모델의 요소를 디자인 하는 방법을 설명 합니다.|

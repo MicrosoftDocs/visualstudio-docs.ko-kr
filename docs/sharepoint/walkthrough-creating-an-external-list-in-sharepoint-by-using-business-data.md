@@ -1,7 +1,7 @@
 ---
 title: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d670215d6a46003315992201c64c23185be7d715
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984659"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015826"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -40,9 +39,9 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 - 특정 Finder 메서드 추가
 - 프로젝트를 테스트 합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
 
-이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - 지원 되는 버전의 Windows 및 SharePoint
 
@@ -50,11 +49,11 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 ## <a name="create-a-project-that-contains-a-bdc-model"></a>BDC 모델을 포함 하는 프로젝트 만들기
 
-1. Visual Studio의 메뉴 모음에서 **파일** > **새** > **프로젝트**를 선택 합니다.
+1. Visual Studio의 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
 
      **새 프로젝트** 대화 상자가 열립니다.
 
-2. ** C# 시각적 개체** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 항목을 선택 합니다.
+2. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 항목을 선택 합니다.
 
 3. **템플릿** 창에서 **SharePoint 2010 프로젝트**를 선택 하 고 프로젝트 이름을 **AdventureWorksTest**로 지정한 다음 **확인** 단추를 선택 합니다.
 
@@ -66,7 +65,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 6. **솔루션 탐색기**에서 SharePoint 프로젝트 노드를 선택 합니다.
 
-7. 메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
+7. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
 
      **새 항목 추가** 대화 상자가 열립니다.
 
@@ -74,7 +73,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 ## <a name="add-data-access-classes-to-the-project"></a>프로젝트에 데이터 액세스 클래스 추가
 
-1. 메뉴 모음에서 **도구** > **데이터베이스에 연결**을 선택 합니다.
+1. 메뉴 모음에서 **도구**  >  **데이터베이스에 연결**을 선택 합니다.
 
      **연결 추가** 대화 상자가 열립니다.
 
@@ -84,7 +83,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 3. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
 
-4. 메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
+4. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
 
 5. **설치 된 템플릿** 창에서 **데이터** 노드를 선택 합니다.
 
@@ -94,7 +93,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
      .dbml 파일이 프로젝트에 추가되고 O/R 디자이너(개체 관계형 디자이너)가 열립니다.
 
-8. 메뉴 모음에서 **보기** > **서버 탐색기**를 선택 합니다.
+8. 메뉴 모음에서 서버 탐색기 **보기**를 선택  >  **Server Explorer**합니다.
 
 9. **서버 탐색기**에서 AdventureWorks 예제 데이터베이스를 나타내는 노드를 확장 한 다음 **테이블** 노드를 확장 합니다.
 
@@ -112,21 +111,21 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 3. 디자이너에서 **Entity1**에 대 한 바로 가기 메뉴를 열고 **삭제**를 선택 합니다.
 
-4. **솔루션 탐색기**에서 *Entity1* (Visual Basic) 또는 *Entity1.cs* (의 C#경우)에 대 한 바로 가기 메뉴를 연 다음 **삭제**를 선택 합니다.
+4. **솔루션 탐색기**에서 *Entity1* (Visual Basic) 또는 *Entity1.cs* (c #)의 바로 가기 메뉴를 연 다음 **삭제**를 선택 합니다.
 
-5. *Entity1Service* Visual Basic () 또는 *Entity1Service.cs* (에서 C#)에 대 한 바로 가기 메뉴를 연 다음 **삭제**를 선택 합니다.
+5. *Entity1Service* (Visual Basic) 또는 *Entity1Service.cs* (c #)의 바로 가기 메뉴를 열고 **삭제**를 선택 합니다.
 
 ## <a name="add-an-entity-to-the-model"></a>모델에 엔터티 추가
 
 모델에 엔터티를 추가 합니다. Visual Studio **도구 상자** 의 엔터티를 BDC 디자이너에 추가할 수 있습니다.
 
-1. 메뉴 모음에서 **보기** > **도구 상자**를 선택합니다.
+1. 메뉴 모음에서 **View**  >  **도구 상자**보기를 선택 합니다.
 
 2. **도구 상자**의 **BusinessDataConnectivity** 탭에서 **엔터티** 를 BDC 디자이너에 추가 합니다.
 
-     새 엔터티가 디자이너에 표시 됩니다. Visual Studio는 *Entityservice .vb* (Visual Basic) 또는 *EntityService.cs* (의 C#경우) 라는 파일을 프로젝트에 추가 합니다.
+     새 엔터티가 디자이너에 표시 됩니다. Visual Studio는 *Entityservice .vb* (Visual Basic) 또는 *EntityService.cs* (c #의 경우) 라는 파일을 프로젝트에 추가 합니다.
 
-3. 메뉴 모음에서 **보기** > **속성** > **창**을 선택 합니다.
+3. 메뉴 모음에서 **보기**  >  **속성**  >  **창**을 선택 합니다.
 
 4. **속성** 창에서 **이름** 속성 값을 **Contact**로 설정 합니다.
 
@@ -146,7 +145,7 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
 1. BDC 디자이너에서 **Contact** 엔터티를 선택 합니다.
 
-2. 메뉴 모음에서 **보기** > **다른 창** > **BDC 메서드 세부 정보**를 선택 합니다.
+2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보**보기를 선택 합니다.
 
      BDC 메서드 세부 정보 창이 열립니다.
 
@@ -182,12 +181,12 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
 10. 6 단계를 반복 하 여 다음 각 필드에 대 한 형식 설명자를 만듭니다.
 
-    |name|형식 이름|
+    |Name|유형 이름|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |전화|System.String|
-    |emailAddress|System.String|
+    |Phone|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|
@@ -197,14 +196,14 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
      Contact service 코드 파일이 코드 편집기에서 열립니다.
 
-12. `ContactService` 클래스에서 `ReadItem` 메서드를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.
+12. 클래스에서 `ContactService` `ReadItem` 메서드를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.
 
     - AdventureWorks 데이터베이스의 Contact 테이블에서 레코드를 검색 합니다.
 
     - 연락처 엔터티를 BDC 서비스로 반환 합니다.
 
     > [!NOTE]
-    > `ServerName` 필드의 값을 서버의 이름으로 바꿉니다.
+    > 필드의 값을 `ServerName` 서버의 이름으로 바꿉니다.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
@@ -225,14 +224,14 @@ BDC 서비스에서 연락처를 목록에 표시할 수 있도록 하려면 Fin
 
      코드 편집기에서 Contact 서비스의 코드 파일이 열립니다.
 
-5. `ContactService` 클래스에서 `ReadList` 메서드를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.
+5. 클래스에서 `ContactService` `ReadList` 메서드를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.
 
    - AdventureWorks 데이터베이스의 Contacts 테이블에서 데이터를 검색 합니다.
 
    - BDC 서비스에 대 한 연락처 엔터티 목록을 반환 합니다.
 
      > [!NOTE]
-     > `ServerName` 필드의 값을 서버의 이름으로 바꿉니다.
+     > 필드의 값을 `ServerName` 서버의 이름으로 바꿉니다.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
@@ -274,9 +273,9 @@ BDC 서비스에서 연락처를 목록에 표시할 수 있도록 하려면 Fin
 - [방법: 업데이트 프로그램 메서드 추가](../sharepoint/how-to-add-an-updater-method.md)
 - [방법: Deleter 메서드 추가](../sharepoint/how-to-add-a-deleter-method.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-비즈니스 데이터 [연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
-비즈니스 데이터 [연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)
-[BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)
-[비즈니스 데이터를 SharePoint에 통합](../sharepoint/integrating-business-data-into-sharepoint.md)
+[비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md) 
+ [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md) 
+ [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md) 
+ [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)

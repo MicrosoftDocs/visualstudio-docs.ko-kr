@@ -1,7 +1,7 @@
 ---
 title: '방법: 추가 어셈블리 추가 및 제거 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdcc1c478bead4df89622a7311b074965cdc0226
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985230"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014832"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>방법: 추가 어셈블리 추가 및 제거
   SharePoint 패키지가 기능 또는 데이터의 다른 어셈블리에 종속 된 경우 솔루션 패키지 (.wsp)에 어셈블리를 추가할 수 있습니다. 이러한 방식으로 SharePoint 서버는 사용자 지정 어셈블리가 패키지와 함께 설치 되도록 합니다.
@@ -41,7 +40,7 @@ ms.locfileid: "72985230"
 
 4. 줄임표 (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 선택한 다음 추가 하려는 어셈블리를 선택 합니다. 이식성을 위해 선택한 어셈블리에 대 한 상대 경로를 사용 하는 것이 좋습니다.
 
-5. **배포 대상**의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 어셈블리를 SharePoint를 실행 하는 서버입니다.
+5. **배포 대상**의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 SharePoint를 실행 하는 서버의 webapplication 폴더에 어셈블리를 배포 합니다.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>프로젝트 출력에서 어셈블리를 추가 하려면
 
@@ -57,7 +56,7 @@ ms.locfileid: "72985230"
 
 4. **원본 프로젝트** 목록에서 추가 하려는 원본 프로젝트를 선택 합니다.
 
-5. **배포 대상**의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 어셈블리를 SharePoint를 실행 하는 서버입니다.
+5. **배포 대상**의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 SharePoint를 실행 하는 서버의 webapplication 폴더에 어셈블리를 배포 합니다.
 
 #### <a name="to-add-a-safe-control"></a>안전 컨트롤을 추가 하려면
 
@@ -90,7 +89,7 @@ ms.locfileid: "72985230"
 
 3. **추가 어셈블리** 창에서 삭제 하려는 사용자 지정 어셈블리를 선택 합니다.
 
-4. **삭제** 단추를 선택 합니다.
+4. **삭제** 단추를 선택합니다.
 
 #### <a name="to-delete-a-safe-control-for-an-assembly"></a>어셈블리에 대 한 안전 컨트롤을 삭제 하려면
 
@@ -108,7 +107,7 @@ ms.locfileid: "72985230"
 
 3. Delete 키를 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [SharePoint 기능 만들기](../sharepoint/creating-sharepoint-features.md)
 - [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [방법: SharePoint 기능에 항목 추가 및 제거](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
