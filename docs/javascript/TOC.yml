@@ -38,9 +38,9 @@
       href: nodejs-interactive-repl.md
     - name: JavaScript IntelliSense
       href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-    - name: JavaScript 애플리케이션 디버그
+    - name: 디버그
       href: debug-nodejs.md
-    - name: JavaScript 유닛 테스트
+    - name: 단위 테스트
       href: unit-testing-javascript-with-visual-studio.md
 - name: 리소스
   items:
