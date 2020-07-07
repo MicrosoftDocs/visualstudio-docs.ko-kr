@@ -1,7 +1,7 @@
 ---
 title: 시작 (Visual Studio에서 SharePoint 개발) | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc6d6083b9a764acc915e6c0f800cb70569652b7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
-ms.translationtype: MT
+ms.openlocfilehash: 999a23f8765a72feb22822120a11e1b38b9ac946
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586676"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017097"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>시작 (Visual Studio에서 SharePoint 개발)
   이 섹션은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 를 사용하여 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]을 활용하는 SharePoint 솔루션 개발을 시작하는 데 도움이 됩니다.
@@ -30,13 +29,13 @@ ms.locfileid: "82586676"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-|항목|설명|
+|항목|Description|
 |-----------|-----------------|
 |[SharePoint 오류에 대 한 추가 정보](../sharepoint/additional-information-for-sharepoint-errors.md)|SharePoint 개발 및 문제 해결 중에 도움말을 찾을 수 있는 위치를 설명합니다.|
 
 ## <a name="related-sections"></a>관련 단원
 
-|항목|설명|
+|항목|Description|
 |-----------|-----------------|
 |[SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 개발을 설명합니다.|
 |[SharePoint에 대한 일반 개발 환경 설정](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|SharePoint 솔루션을 만들기 위한 필수 설치에 대해 설명 합니다.|

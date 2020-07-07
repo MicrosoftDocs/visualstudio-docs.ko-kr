@@ -1,7 +1,7 @@
 ---
 title: '방법: SharePoint 솔루션에 기능 추가 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,19 +12,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 143ab857af7c48f711e47910df07b6c58d07bc31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 07d939a12e47f4ba63f51310efb36cc0a59d20e4
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967509"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017004"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>방법: SharePoint 솔루션에 기능 추가
-  SharePoint 솔루션을 만들 때 한 패키지 및 기능 중 하나는 솔루션에 추가 됩니다. 다양 한 유형의 SharePoint 파일 구성 기능 항목을 더 추가할 수 있습니다.
+  SharePoint 솔루션을 만들 때 하나의 기능과 하나의 패키지가 솔루션에 추가 됩니다. 기능 항목을 더 추가 하 여 다양 한 유형의 SharePoint 파일을 구성할 수 있습니다.
 
 ### <a name="to-add-a-feature-through-solution-explorer"></a>솔루션 탐색기를 통해 기능을 추가 하려면
 
-1. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 **기능**를 선택한 후 **기능 추가**합니다.
+1. **솔루션 탐색기**에서 **기능**에 대 한 바로 가기 메뉴를 열고 **기능 추가**를 선택 합니다.
 
-## <a name="see-also"></a>참고자료
-- [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>참고 항목
+- [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

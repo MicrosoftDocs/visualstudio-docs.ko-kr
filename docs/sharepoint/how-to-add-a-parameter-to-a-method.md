@@ -1,7 +1,7 @@
 ---
 title: '방법: 메서드에 매개 변수 추가 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986233"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016710"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>방법: 메서드에 매개 변수 추가
   매개 변수를 사용 하 여 메서드에 정보를 전달 하거나 메서드에서 정보를 반환 합니다. 모든 메서드에는 매개 변수가 하나 이상 있어야 합니다. 만들려는 메서드 유형을 지 원하는 매개 변수를 디자인 하는 방법에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
@@ -33,7 +32,7 @@ ms.locfileid: "72986233"
 
 1. 엔터티에 메서드를 추가 합니다.
 
-2. 메뉴 모음에서 **보기** > **다른 창** > **BDC 메서드 세부 정보**를 선택 합니다.
+2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보**보기를 선택 합니다.
 
      **BDC 메서드 세부 정보** 창이 열립니다. 자세한 내용은 [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 
@@ -43,7 +42,7 @@ ms.locfileid: "72986233"
 
      새 매개 변수가 **매개 변수** 노드 아래에 나타납니다.
 
-5. 메뉴 모음에서 **보기** > **속성 창**을 선택 합니다.
+5. 메뉴 모음에서 **보기**  >  **속성 창**을 선택 합니다.
 
 6. **속성** 창에서 **이름** 속성을 적절 한 이름으로 설정 합니다. 예를 들어 메서드가 고객을 반환 하는 경우 메서드 이름을 **GetCustomers**로 할 수 있습니다.
 
@@ -53,7 +52,7 @@ ms.locfileid: "72986233"
 
 8. 매개 변수의 형식 설명자를 수정 합니다. 자세한 내용은 [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)
 - [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)

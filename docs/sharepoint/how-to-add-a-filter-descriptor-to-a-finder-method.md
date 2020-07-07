@@ -1,7 +1,7 @@
 ---
 title: '방법: Finder 메서드에 필터 설명자 추가 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986245"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016735"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>방법: Finder 메서드에 필터 설명자 추가
   필터 설명자를 사용 하면 모델의 소비자가 실행 되기 전에 메서드에 값을 전달할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
@@ -33,7 +32,7 @@ ms.locfileid: "72986245"
 
 2. **메서드 세부 정보** 창에서 매개 변수의 형식 설명자를 선택 합니다.
 
-3. 메뉴 모음에서 **보기** > **속성 창**을 선택 합니다.
+3. 메뉴 모음에서 **보기**  >  **속성 창**을 선택 합니다.
 
 4. **속성** 창에서 **유형 이름** 속성을 필터에 적합 한 데이터 형식으로 설정 합니다.
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986245"
 
      새 필터 설명자가 **필터 설명자** 노드 아래에 나타납니다.
 
-7. 메뉴 모음에서 **보기** > **속성 창**을 선택 합니다.
+7. 메뉴 모음에서 **보기**  >  **속성 창**을 선택 합니다.
 
 8. **속성** 창에서 **형식** 속성을 선택 합니다.
 
@@ -62,12 +61,12 @@ ms.locfileid: "72986245"
      다음 예에서는 지정 된 주문 날짜의 판매 주문을 반환 합니다.
 
     > [!NOTE]
-    > `ServerName` 필드의 값을 서버의 이름으로 바꿉니다.
+    > 필드의 값을 `ServerName` 서버의 이름으로 바꿉니다.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)
 - [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [방법: 메서드에 매개 변수 추가](../sharepoint/how-to-add-a-parameter-to-a-method.md)

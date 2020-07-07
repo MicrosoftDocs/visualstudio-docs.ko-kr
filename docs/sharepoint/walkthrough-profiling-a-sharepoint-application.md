@@ -1,7 +1,7 @@
 ---
 title: '연습: SharePoint 응용 프로그램 프로 파일링 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MT
+ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77277655"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017102"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>연습: SharePoint 응용 프로그램 프로 파일링
   이 연습에서는 Visual Studio에서 프로파일링 도구를 사용하여 SharePoint 애플리케이션의 성능을 최적화하는 방법을 보여 줍니다. 예제 애플리케이션은 기능 이벤트 수신기의 성능을 저하시키는 유휴 루프가 포함된 SharePoint 기능 이벤트 수신기입니다. Visual Studio profiler를 사용 하면 프로젝트의 가장 비용이 많이 드는 (가장 느리게 수행 되는) 부분을 찾아서 제거할 수 있습니다 (실행 *부하 과다 경로*라고도 함).
@@ -37,8 +36,8 @@ ms.locfileid: "77277655"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>필수 조건
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
@@ -49,9 +48,9 @@ ms.locfileid: "77277655"
 
 ### <a name="to-create-a-sharepoint-project"></a>SharePoint 프로젝트를 만들려면
 
-1. 메뉴 모음에서 **파일** > **새** > **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
+1. 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
 
-2. **시각적 개체 C#**  또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+2. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 3. 템플릿 창에서 **SharePoint 2010 프로젝트** 템플릿을 선택 합니다.
 
@@ -151,7 +150,7 @@ ms.locfileid: "77277655"
     }
     ```
 
-5. `FeatureActivated`프로시저 아래에 다음 프로시저를 추가 합니다.
+5. 프로시저 아래에 다음 프로시저를 추가 `FeatureActivated` 합니다.
 
     ```vb
 
@@ -237,17 +236,17 @@ ms.locfileid: "77277655"
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>프로필 결과를 보고 해석 하려면
 
-1. 샘플 프로 파일링 보고서의 **개별 작업을 수행** 하는 함수 섹션에서 `TimeCounter`가 목록의 맨 위에 있는지 확인 합니다.
+1. 샘플 프로 파일링 보고서의 **개별 작업을 수행 하는 함수** 섹션에서 `TimeCounter` 가 목록의 맨 위 부근에 있음을 확인 합니다.
 
      이 위치는 `TimeCounter`가 샘플이 가장 많은 함수 중 하나이므로 애플리케이션에서 가장 큰 성능 병목 지점 중 하나임을 나타냅니다. 그러나 이 상황은 예시 목적으로 그렇게 의도적으로 설계되었기 때문에 놀라운 것은 아닙니다.
 
-2. **개별 작업을 수행** 하는 함수 섹션에서 `ProcessRequest` 링크를 선택 하 여 `ProcessRequest` 함수의 비용 분포를 표시 합니다.
+2. **개별 작업을 수행** 하는 함수 섹션에서 링크를 선택 `ProcessRequest` 하 여 함수에 대 한 비용 분포를 표시 `ProcessRequest` 합니다.
 
-     `ProcessRequest`에 대 한 **호출 된 함수** 섹션에서 가장 비용이 많이 드는 호출 된 함수로 **FeatureActiviated** 함수가 나열 되어 있는지 확인 합니다.
+     에 대 한 **호출 된 함수** 섹션에서 `ProcessRequest` **FeatureActiviated** 함수는 가장 비용이 많이 드는 호출 된 함수로 나열 됩니다.
 
 3. 호출 된 **함수** 섹션에서 **featureactivated** 됨 단추를 선택 합니다.
 
-     **Featureactivated**의 **호출 된 함수** 섹션에서 `TimeCounter` 함수는 가장 비용이 많이 드는 호출 된 함수로 나열 됩니다. **함수 코드 뷰** 창에서 강조 표시 된 코드 (`TimeCounter`)는 핫스폿이 며 수정이 필요한 위치를 나타냅니다.
+     **Featureactivated**됨에 대 한 **호출 된 함수** 섹션에서 `TimeCounter` 함수는 가장 비용이 많이 드는 호출 된 함수로 나열 됩니다. **함수 코드 뷰** 창에서 강조 표시 된 코드 ( `TimeCounter` )는 핫스폿이 며 수정이 필요한 위치를 나타냅니다.
 
 4. 샘플 프로파일링 보고서를 닫습니다.
 
@@ -274,5 +273,5 @@ ms.locfileid: "77277655"
 
 ## <a name="see-also"></a>참고 항목
 - [성능 세션 개요](../profiling/performance-session-overview.md)
-- [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)
-- [Visual Studio Profiler를 사용 하 여 응용 프로그램 병목 상태 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [초보자를 위한 성능 프로 파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)
+- [Visual Studio 프로파일러를 사용한 애플리케이션 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)

@@ -1,7 +1,7 @@
 ---
 title: '방법: 엔터티 간 연결 만들기 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981841"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016931"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>방법: 엔터티 간 연결 만들기
   연결을 만들어 BDC (비즈니스 데이터 연결) 모델의 엔터티 간 관계를 정의할 수 있습니다. Visual Studio는 모델의 소비자에 게 각 연결에 대 한 정보를 제공 하는 메서드를 생성 합니다. 이러한 메서드는 SharePoint 웹 파트, 목록 또는 사용자 지정 애플리케이션에서 사용되어 UI(사용자 인터페이스)에 데이터 관계를 표시할 수 있습니다.
@@ -45,7 +44,7 @@ ms.locfileid: "72981841"
 
     1. **식별자 매핑** 테이블의 **원본 ID** 열에서 **필드** 열에 표시 되는 일치 하는 각 형식 설명자 옆의 식별자를 선택 합니다.
 
-         예를 들어 **원본 ID** 열에서 `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 형식 설명자와 `ReadItem.salesOrder.SalesOrder.ContactID` 형식 설명자 옆에 `ContactID`를 선택 합니다.
+         예를 들어 **원본 ID** 열에서 `ContactID` `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 형식 설명자와 형식 설명자 옆에 있는를 선택 합니다 `ReadItem.salesOrder.SalesOrder.ContactID` .
 
 4. 외래 키가 없는 연결을 만들려면 **외래 키 연결** 확인란의 선택을 취소 합니다.
 
@@ -61,7 +60,7 @@ ms.locfileid: "72981841"
 
      연결 탐색기 메서드의 예는 [엔터티 간 연결 만들기](../sharepoint/creating-an-association-between-entities.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [엔터티 간 연결 만들기](../sharepoint/creating-an-association-between-entities.md)
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)
