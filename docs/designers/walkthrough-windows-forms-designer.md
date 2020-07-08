@@ -1,20 +1,20 @@
 ---
 title: Windows Forms 디자이너 자습서
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589840"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816464"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>연습: Windows Forms 디자이너 시작
+# <a name="tutorial-get-started-with-windows-forms-designer"></a>자습서: Windows Forms 디자이너 시작
 
 Windows Forms 디자이너는 Windows Forms 애플리케이션 빌드를 위한 다양한 도구를 제공합니다. 이 문서에서는 다음 작업을 포함하여 디자이너에서 제공하는 다양한 도구를 사용하여 앱을 빌드하는 방법을 보여 줍니다.
 

@@ -5,12 +5,13 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 591b21ee-8c3f-446b-9505-7d41bfc86701
-ms.openlocfilehash: e8c603c7a87bc402f8b61e2266aca2868f9464a7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: tutorial
+ms.openlocfilehash: 3dcd5dc3ae3a3a373d0fed471c4577b859acbf9e
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72749030"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85949953"
 ---
 # <a name="tutorial-getting-started-with-aspnet-core-in-visual-studio-for-mac"></a>자습서: Mac용 Visual Studio에서 ASP.NET Core 시작
 

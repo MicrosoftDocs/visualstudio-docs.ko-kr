@@ -1,17 +1,16 @@
 ---
 title: 방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치 및 사용
 description: 이 문서에서는 Mac용 Visual Studio(및 Xamarin을 포함하는 해당 워크로드)가 회사 환경에서 작동할 수 있도록 방화벽에서 허용해야 하는 호스트 목록을 제공합니다.
-ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
-ms.openlocfilehash: 717eb9cd58f213c3d2c31a18c546a83ab8feb645
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 817fce7958ce2b3e4bc3684e639197da8f69e40d
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984034"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938986"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치 및 사용
 

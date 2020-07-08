@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 664f2431de7702219ced2ae2af4bd908e814a689
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 4bfa6bdfbb4b27a849b4807c99ae9dc8b9bd6764
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985190"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950394"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Mac용 Visual Studio에 로그인
 
@@ -44,7 +45,7 @@ Mac용 Visual Studio는 개인 설정 계정에 여러 계정을 추가하는 �
 
 사용자 계정을 더 추가하려면 [Mac용 Visual Studio에 로그인하는 방법](#how-to-sign-in-to-visual-studio-for-mac) 섹션의 단계를 수행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows의 Visual Studio에 로그인](/visualstudio/ide/signing-in-to-visual-studio)
 - [여러 사용자 계정으로 작업(Windows의 Visual Studio)](/visualstudio/ide/work-with-multiple-user-accounts)

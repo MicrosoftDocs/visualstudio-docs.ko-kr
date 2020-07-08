@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 4d676f6109c97ae883473a35721f9207e72a6da4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68872354"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950069"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Mac용 Visual Studio의 여러 솔루션 또는 인스턴스 열기
 

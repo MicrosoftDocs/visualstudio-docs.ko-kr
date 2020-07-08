@@ -4,15 +4,15 @@ description: 이 문서에서는 실행 또는 디버그를 시작할 여러 프
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 02/21/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 55519960a6b84968ced43183833167a365e91b35
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1b015d9009dc813c50ef891a4a523ba497c254c2
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68872319"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950551"
 ---
 # <a name="set-multiple-startup-projects"></a>여러 시작 프로젝트 설정
 

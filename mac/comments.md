@@ -5,12 +5,13 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 2966d8b89a2609d3fbfc2b6b4561288433641ca1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: a0aa3de91f1a2c75d73409d89f3cbc8894faacab
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67693107"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939123"
 ---
 # <a name="comments"></a>주석
 
@@ -48,6 +49,6 @@ ms.locfileid: "67693107"
 *)
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 주석 처리(Windows에서)](/visualstudio/ide/quickstart-editor#comment-out-code)

@@ -1,19 +1,19 @@
 ---
 title: 디버그하는 동안 XPath 식 계산
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e0b6c84fa9447dc38aa7976fa59bb5aa67d5c3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 64113461cd081eb97e2eb927119f1cd67f8a8d6e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592726"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816256"
 ---
 # <a name="evaluate-xpath-expressions"></a>XPath 식 계산
 

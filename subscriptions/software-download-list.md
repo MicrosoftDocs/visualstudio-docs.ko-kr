@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Visual Studio 구독에 포함된 소프트웨어 다운로드 목록을 찾습니다.
-ms.openlocfilehash: cb66eb3bd90bbf26e5900a8286db78ecb12df707
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: debf1904fc502f15f4fd6f52cc38e29a84dc763a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233196"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906106"
 ---
 # <a name="what-software-is-available-for-download"></a>어떤 소프트웨어를 다운로드할 수 있나요?
 

@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 기업계약을 체결한 고객에게 제공되는 Azure DevTest 특가를 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: 09da80ad735548e9b0c450b9675cebece0b0c60c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232638"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903140"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 기업계약 DevTest 제안
 

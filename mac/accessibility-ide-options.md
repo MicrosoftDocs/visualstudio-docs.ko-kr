@@ -5,12 +5,13 @@ author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
-ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 265ad820ea478ac59d8209cc14ce4fe6be29c7af
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985127"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939150"
 ---
 # <a name="set-ide-accessibility-options"></a>IDE 접근성 옵션 설정
 

@@ -6,12 +6,13 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715880"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950526"
 ---
 # <a name="create-razor-web-apps"></a>Razor 웹앱 만들기
 
@@ -74,6 +75,6 @@ Razor 웹앱은 다음 구성 요소를 포함합니다.
 
 이 파일에는 앱에서 쿠키에 대한 동의 필요 여부 등의 앱 동작을 구성하는 코드가 포함되어 있습니다. 자세한 내용은 [ASP.NET Core에서 앱 시작](/aspnet/core/fundamentals/startup)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 Razor 웹앱을 만드는 방법에 대한 포괄적인 가이드는 [ASP.NET Core의 Razor Pages 소개](/aspnet/core/razor-pages/index)를 참조하세요.

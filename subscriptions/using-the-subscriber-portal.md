@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
-ms.topic: conceptual
+ms.topic: overview
 description: Visual Studio 구독 포털에서 사용할 수 있는 이점의 전체 범위에 대해 알아보기
-ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232193"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902880"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>구독자 포털 사용 - my.visualstudio.com
 

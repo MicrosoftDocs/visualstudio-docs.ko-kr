@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280253"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816698"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
+# <a name="first-look-at-profiling-tools"></a>프로파일링 도구 살펴보기
 
 Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할 수 있는 다양한 프로파일링 도구를 제공합니다. 이 문서에서는 가장 일반적인 프로파일링 도구를 간략하게 살펴봅니다.
 
@@ -204,9 +204,9 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |[.NET 개체 할당](../profiling/dotnet-alloc-tool.md)|예(.NET만 해당)|예|예|
 |[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|no|
 |[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|no|
-|[이벤트 뷰어](../profiling/perftips.md)|예|예|예|
-|[.NET Async](../profiling/perftips.md)|예(.NET만 해당)|예|예|
-|[데이터베이스](../profiling/perftips.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
+|[이벤트 뷰어](../profiling/events-viewer.md)|예|예|예|
+|[.NET Async](../profiling/analyze-async.md)|예(.NET만 해당)|예|예|
+|[데이터베이스](../profiling/analyze-database.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
 |[성능 탐색기](../profiling/performance-explorer.md)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 ::: moniker-end

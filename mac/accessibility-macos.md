@@ -5,12 +5,13 @@ author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
-ms.openlocfilehash: 095a65ab27bdcac6521eb771dcca1936b87409cd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: b74a150e21e29ddbee51d02be6dda91740a060f1
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985079"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938465"
 ---
 # <a name="accessibility-features-of-macos"></a>macOS의 접근성 옵션
 

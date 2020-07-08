@@ -5,12 +5,13 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: b0337f283fe5bb78f2f63e2f3da12eb9f2679450
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75398274"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939190"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 ASP.NET Core 애플리케이션 빌드
 

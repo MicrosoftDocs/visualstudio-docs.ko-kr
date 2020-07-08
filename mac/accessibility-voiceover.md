@@ -5,12 +5,13 @@ author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
-ms.openlocfilehash: 8f5cfc4c05ed3911370782185475b23112207c62
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 6b72209ea72d9fb6c875bf7aaad5c3a9d38b9c30
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985072"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938453"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>Mac용 Visual Studio를 통한 VoiceOver 사용
 

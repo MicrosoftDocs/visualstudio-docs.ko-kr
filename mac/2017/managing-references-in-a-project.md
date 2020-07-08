@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984868"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950560"
 ---
 # <a name="managing-references-in-a-project"></a>프로젝트에서 참조 관리
 
@@ -18,9 +19,9 @@ Mac용 Visual Studio에서는 프로젝트에 참조를 추가하기 위한 두 
 
 ![프로젝트 참조](media/projects-and-solutions-image10.png)
 
-다음과 같습니다.
+이러한 방법은 다음과 같습니다.
 
-* 참조
+* 참조 항목
 * NuGets(패키지 폴더를 통해 추가)
 
 또한 모든 프로젝트에 웹 참조 및 네이티브 참조를 추가할 수 있습니다.
@@ -43,7 +44,7 @@ NuGet은 가장 인기 있는 .NET 개발용 패키지 관리자입니다. Mac�
 
 NuGet 패키지를 사용하는 방법에 대한 자세한 내용은 [프로젝트에 NuGet 패키지 포함하기](nuget-walkthrough.md) 연습에서 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [참조 관리(Windows의 Visual Studio)](/visualstudio/ide/managing-references-in-a-project)
 - [NuGet을 사용한 참조 추가 및 확장 SDK를 사용한 참조 추가(Windows의 Visual Studio)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

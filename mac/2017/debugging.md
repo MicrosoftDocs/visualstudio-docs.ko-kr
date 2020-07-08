@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985020"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938797"
 ---
 # <a name="debugging-with-xamarin"></a>Xamarin을 사용한 디버깅
 
@@ -41,7 +42,7 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 
 ![중단점 목록](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>디버그 시작
+## <a name="start-debugging"></a>디버깅 시작
 
 디버깅을 시작하려면 IDE에서 대상 디바이스 또는 유사 디바이스/에뮬레이터를 선택합니다.
 
@@ -94,6 +95,6 @@ Xamarin 제품은 Mono 클래스 라이브러리에 대한 소스 코드와 함�
 
 ![프레임워크 코드는 한 단계씩 실행하지 마세요 옵션](media/debugging-image8.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 디버깅(Windows에서)](/visualstudio/debugger/)

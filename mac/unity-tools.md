@@ -5,12 +5,13 @@ author: therealjohn
 ms.author: johmil
 ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 03cae287f3b7094e61504d3baef7bfbd6a3575cd
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74797259"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950678"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity
 

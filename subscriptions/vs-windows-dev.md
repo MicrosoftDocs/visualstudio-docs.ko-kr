@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대해 알아봅니다.
-ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649719"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905995"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 선택한 Visual Studio 구독에 포함된 Windows 개발자 계정으로 무료 및 유료 Windows 앱을 Windows 스토어에 제출할 수 있습니다.

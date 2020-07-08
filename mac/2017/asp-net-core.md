@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.topic: how-to
+ms.openlocfilehash: 2e921ac1e9c85216bebf1626e1454b9fb764f129
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543751"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938931"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 

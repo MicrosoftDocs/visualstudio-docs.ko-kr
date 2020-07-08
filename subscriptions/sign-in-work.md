@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 회사 또는 학교 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233204"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906124"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>회사 또는 학교 계정으로 Visual Studio 구독 로그인 
 

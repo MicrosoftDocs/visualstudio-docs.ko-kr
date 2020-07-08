@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b63e1206624c5aab6af67d9e4fbd30473d4f7f5d
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70107818"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938599"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 프로젝트 및 솔루션
 
@@ -42,6 +42,6 @@ Mac용 Visual Studio에서 프로젝트가 로드되면 Solution Pad는 프로�
 
 이러한 옵션에 대한 자세한 내용은 [솔루션 및 프로젝트 속성 관리](managing-solutions-and-project-properties.md) 문서를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 솔루션 및 프로젝트(Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

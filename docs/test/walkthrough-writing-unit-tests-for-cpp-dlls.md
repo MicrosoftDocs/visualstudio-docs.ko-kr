@@ -1,18 +1,18 @@
 ---
 title: '방법: C++ DLL의 단위 테스트 작성'
 ms.date: 06/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275432"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816009"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>방법: C++ DLL의 단위 테스트 작성
 
@@ -34,7 +34,7 @@ ms.locfileid: "77275432"
 
 8. [외부 리소스로부터 단위 격리](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). 일반적으로 DLL은 다른 DLL, 데이터베이스 또는 원격 하위 시스템 등 개발 중인 시스템의 다른 구성 요소에 종속됩니다. 종속 항목과 격리된 상태에서 각 단위를 테스트하는 것이 좋습니다. 외부 구성 요소는 테스트 실행을 느리게 만들 수 있습니다. 개발 중에는 다른 구성 요소가 완전하지 않을 수 있습니다.
 
-## <a name="create_test_project"></a> 기본 단위 테스트 프로젝트 만들기
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> 기본 단위 테스트 프로젝트 만들기
 
 1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
@@ -82,7 +82,7 @@ ms.locfileid: "77275432"
 
          ![통과한 테스트 1개가 있는 단위 테스트 탐색기](../test/media/utecpp04.png)
 
-## <a name="create_dll_project"></a> DLL 프로젝트 만들기
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> DLL 프로젝트 만들기
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ ms.locfileid: "77275432"
 
 ::: moniker-end
 
-## <a name="make_functions_visible"></a> DLL 프로젝트에 테스트 프로젝트 연결
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> DLL 프로젝트에 테스트 프로젝트 연결
 
 1. DLL 프로젝트를 테스트 프로젝트의 프로젝트 참조에 추가합니다.
 
@@ -194,7 +194,7 @@ ms.locfileid: "77275432"
 
    테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
 
-## <a name="iterate"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
 
 1. 새 테스트 추가:
 
@@ -252,7 +252,7 @@ ms.locfileid: "77275432"
     > [!TIP]
     > 한 번에 하나씩 테스트를 추가하여 코드를 개발합니다. 각 반복 후 모든 테스트가 통과하는지 확인합니다.
 
-## <a name="debug"></a> 실패한 테스트 디버그
+## <a name="debug-a-failing-test"></a><a name="debug"></a> 실패한 테스트 디버그
 
 1. 다른 테스트 추가:
 
@@ -337,7 +337,7 @@ ms.locfileid: "77275432"
 
 ::: moniker-end
 
-## <a name="refactor"></a> 테스트를 변경하지 않고 코드 리팩터링
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> 테스트를 변경하지 않고 코드 리팩터링
 
 1. SquareRoot 함수에서 중앙 계산을 간소화합니다.
 

@@ -6,12 +6,13 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73716894"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938521"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>사용자 지정 EditorConfig 파일 만들기 및 편집
 
@@ -138,7 +139,7 @@ csharp_new_line_before_open_brace = none
 
 ## <a name="override-editorconfig-settings"></a>EditorConfig 설정 재정의
 
-각 솔루션에는 `.editorconfig` 파일이 여러 개 있을 수 있습니다. Mac용 Visual Studio는 `.editorconfig` 파일을 솔루션의 위쪽에서 아래쪽으로 읽으며 진행 중인 설정을 추가하고 재정의합니다. 즉, 편집 중인 파일에 ‘가장 가까운’ `.editorconfig`의 설정이 우선합니다.  설정은 `.editorconfig` 파일에서 동일한 폴더(있는 경우)로 가져온 다음, 부모 폴더의 `.editorconfig`(있는 경우) 등에서 가져옵니다. 찾을 때까지 `root=true`입니다.
+각 솔루션에는 `.editorconfig` 파일이 여러 개 있을 수 있습니다. Mac용 Visual Studio는 `.editorconfig` 파일을 솔루션의 위쪽에서 아래쪽으로 읽으며 진행 중인 설정을 추가하고 재정의합니다. 즉, 편집 중인 파일에 ‘가장 가까운’ `.editorconfig`의 설정이 우선합니다. 설정은 `.editorconfig` 파일에서 동일한 폴더(있는 경우)로 가져온 다음, 부모 폴더의 `.editorconfig`(있는 경우) 등에서 가져옵니다. 찾을 때까지 `root=true`입니다.
 
 모든 상위 수준 `.editorconfig` 파일에서 이 코드베이스 부분에 적용된 설정이 _없음_을 확인하려면 `root=true` 속성을 하위 수준 `.editorconfig` 파일의 최상위에 추가합니다.
 

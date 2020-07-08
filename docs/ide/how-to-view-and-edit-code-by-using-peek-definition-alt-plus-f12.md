@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770520"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092312"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)
 
@@ -62,7 +62,7 @@ ms.locfileid: "85770520"
 
 1. **피킹 보기에서 정의 열기** 옵션을 선택합니다.
 
-1. **확인** 을 클릭하여 **옵션** 대화 상자를 닫습니다.
+1. **확인**을 클릭하여 **옵션** 대화 상자를 닫습니다.
 
    ![마우스 클릭 정의 피킹 옵션 설정](../ide/media/editor_options_peek_view.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "85770520"
 |-------------------|:-----------------------:|
 |정의 창 열기|**Alt**+**F12**|
 |정의 창 닫기|**Esc**|
-|정의 창을 일반 문서 탭으로 승격|**Shift**+**Alt**+**Home**|
+|정의 창을 일반 문서 탭으로 승격|**Ctrl**+**Alt**+**Home**|
 |정의창 사이 탐색|**Ctrl**+**Alt**+ **-** 및 **Ctrl**+**Alt**+ **=**|
 |여러 결과 사이 이동|**F8** 및 **Shift**+**F8**|
 |코드 편집기 창 또는 정의 창으로 전환|**Shift**+**Esc**|
@@ -82,7 +82,7 @@ ms.locfileid: "85770520"
 > [!NOTE]
 > **정의 피킹(Peeking)** 창에서 코드를 편집하기 위해 Visual Studio의 다른 위치에서 사용할 때와 같은 바로 가기 키를 사용할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 탐색](../ide/navigating-code.md)
 - [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)

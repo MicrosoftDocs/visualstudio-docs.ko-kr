@@ -1,18 +1,19 @@
 ---
-title: 접근성
+title: 액세스 가능성
 description: 이 문서에서는 Mac용 Visual Studio의 액세스 가능성 기능과 사용하도록 설정하는 방법을 소개합니다.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: a2f151cbf593d2b8e26be7ac60eaf8ff3c687499
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306658"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938927"
 ---
-# <a name="accessibility"></a>접근성
+# <a name="accessibility"></a>액세스 가능성
 
 macOS의 기능 및 유틸리티 외에도, Mac용 Visual Studio에는 다음과 같은 기능이 포함되어 있어서 장애가 있는 사용자도 더욱 쉽게 액세스할 수 있습니다.
 
@@ -58,17 +59,17 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 스페이스바를 누르면 포커스가 있는 컨트롤이 활성화됩니다.
 
-## <a name="how-to-enable-and-use-voice-over"></a>방법: VoiceOver 설정 및 사용
+## <a name="how-to-enable-and-use-voice-over"></a>방법: Voice Over 설정 및 사용
 
 VoiceOver를 켜거나 끄려면 **Cmd+F5**를 누릅니다.
 
 UI VoiceOver 명령을 탐색하려면 다음 명령을 사용합니다.
 
-- 컨트롤 간에 VoiceOver 커서 이동: **Ctrl+Alt+왼쪽 화살표 키/오른쪽 화살표 키**
+- 컨트롤 간에 VoiceOver 커서를 이동합니다. **Ctrl + Alt + 왼쪽 화살표 키 / 오른쪽 화살표 키**
 
    VoiceOver는 컨트롤의 이름, 일부 세부 정보 및 사용자가 해당 컨트롤로 수행할 수 있는 작업을 읽어줍니다.
 
-- 그룹 및 컨트롤(예: Solution Pad, 도구 상자 및 기타 패드)로 이동: **Ctrl+Alt+Shift+아래쪽 화살표**
+- 그룹 및 컨트롤 입력(예: Solution Pad, 도구 상자 및 기타 패드): **Ctrl + Alt + Shift + 아래쪽 화살표**
 
    컨트롤 안에 있을 때 **Ctrl+Alt+화살표 키**를 사용하여 컨트롤 내부를 이동할 수 있습니다.
 
@@ -77,6 +78,6 @@ macOS에서의 VoiceOver 사용에 대한 일반적인 내용은 다음 설명�
 - [VoiceOver 시작](https://help.apple.com/voiceover/info/guide/10.12/)
 - [macOS의 VoiceOver 명령](https://lab.dotjay.com/notes/voiceover-commands/)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 액세스 가능성 기능(Windows에서)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

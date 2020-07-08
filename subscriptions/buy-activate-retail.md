@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Microsoft Store에서 Visual Studio 구독을 구매하고 Visual Studio 구독 포털에서 Visual Studio 구독을 활성화하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: f8102a10f049c04695ba1d5415febd9cee3d7130
-ms.sourcegitcommit: 960bab34e126c9ca449560a76a839a8f8c3263fb
+ms.openlocfilehash: 217c19ea0f8c4a793fc11a84eaa8f276960af3da
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82072506"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903100"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 구독은 Microsoft Store를 통해 구매할 수 있습니다.
 Visual Studio 구독은 [볼륨 라이선스](https://www.microsoft.com/licensing/default), 클라우드 솔루션 공급자, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 및 Microsoft Store를 비롯한 다양한 채널을 통해 사용할 수 있습니다.  이 문서에서는 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)를 통해 구독을 구매하고 활성화하는 방법을 알아봅니다.  

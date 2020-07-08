@@ -5,12 +5,13 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
-ms.openlocfilehash: db0d564a4ea2cdd641f03fc94df63eaf9fc3e3d0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: bed9991677377e665bd49193ee9b7c0ed3877da2
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62985976"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938444"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>ASP.NET Core 웹앱 배포
 

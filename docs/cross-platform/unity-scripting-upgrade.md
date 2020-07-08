@@ -3,17 +3,17 @@ title: Unity에서 .NET 4.x 사용
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75944231"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815138"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
 

@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 엔터프라이즈용 Microsoft 365 앱 알아보기 및 설치
-ms.openlocfilehash: 95eaece45d6d261605a653efbb80bc03d6199dbf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85364152"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902978"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 구독의 엔터프라이즈용 Microsoft 365 앱
 엔터프라이즈용 Microsoft 365 앱(이전 Office 365 Pro Plus)은 선택된 Visual Studio 구독에서 사용할 수 있습니다. 

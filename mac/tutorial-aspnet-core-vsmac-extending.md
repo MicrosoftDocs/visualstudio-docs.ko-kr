@@ -5,12 +5,13 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
-ms.openlocfilehash: 9fd030c5246908d578b49a9567c4e0f4cf1c16e8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: tutorial
+ms.openlocfilehash: 903d590658be6016cf58e83f981ceec2c3d1788f
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72749024"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85949968"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>자습서: 기존 ASP.NET Core 웹 애플리케이션 확장
 

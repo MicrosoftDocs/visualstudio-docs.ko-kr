@@ -1,18 +1,18 @@
 ---
 title: XML 편집기
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10741daffff2213e8ababde2395663e78241fdc4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592401"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815021"
 ---
 # <a name="xml-editor"></a>XML 편집기
 

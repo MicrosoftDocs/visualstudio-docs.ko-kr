@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 월간 구독에 대한 관리자 설정
-ms.openlocfilehash: c9a1303d4111f0ec4a0c1249a25e49fc40cf26de
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ef1536eb27beb501fc278d1a95521905c9d9485a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232653"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903113"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 월간 구독에 대한 관리자 설정
 
