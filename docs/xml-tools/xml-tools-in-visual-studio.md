@@ -1,7 +1,7 @@
 ---
 title: XML 편집기 및 스키마 디자이너
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -32,14 +32,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592310"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816425"
 ---
-# <a name="xml-tools-in-visual-studio"></a>Visual Studio의 XML 도구
+# <a name="overview-of-xml-tools-in-visual-studio"></a>Visual Studio의 XML 도구 개요
 
 *XML(Extensible Markup Language)* 은 데이터를 설명하는 형식을 제공하는 생성 언어입니다. XML에서는 XSL(Extensible Stylesheet Language) 및 CSS(CSS 스타일시트)와 같은 연결된 스타일시트를 사용하여 데이터와 데이터 표시를 구분합니다. Visual Studio에 포함된 도구와 기능을 사용하면 보다 쉽게 XML, XSLT 및 XML 스키마에 대한 작업을 수행할 수 있습니다.
 

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734764"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835656"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 프로그래밍 방식으로 캡처할 수 있습니다.
@@ -37,7 +37,7 @@ ms.locfileid: "72734764"
 - 그래픽 정보 캡처
 
 > [!NOTE]
-> 프로그래밍 방식 캡처의 이전 구현에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 Visual Studio용 원격 도구를 사용하여 캡처 기능을 제공했습니다.
+> 프로그래밍 방식 캡처의 이전 구현에서는 Visual Studio용 원격 도구를 사용하여 캡처 기능을 제공했습니다.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>프로그래밍 캡처를 사용하도록 앱 준비
 앱에서 프로그래밍 방식 캡처를 사용하려면 필요한 헤더를 포함해야 합니다. 이러한 헤더는 Windows 10 SDK의 일부입니다.

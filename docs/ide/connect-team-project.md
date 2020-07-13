@@ -1,16 +1,16 @@
 ---
 title: 팀 탐색기의 프로젝트에 연결
-ms.date: 05/19/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 31fab067ec9844b36c287b80ed481a68861b222e
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183706"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092325"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -42,6 +42,7 @@ ms.locfileid: "84183706"
 
 ## <a name="see-also"></a>참조
 
+- [자습서: 리포지토리에서 프로젝트 열기](../get-started/tutorial-open-project-from-repo.md)
 - [팀 탐색기 참조](reference/team-explorer-reference.md)
 - [프로젝트(Azure DevOps)에 연결](/azure/devops/organizations/projects/connect-to-projects)
 - [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)(프로젝트 연결 문제 해결)

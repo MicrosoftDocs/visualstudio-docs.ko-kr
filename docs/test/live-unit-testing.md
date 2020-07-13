@@ -1,19 +1,19 @@
 ---
 title: Live Unit Testing
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223707"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906223"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing를 구성 및 사용하는 방법
 
@@ -198,9 +198,9 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 
 코드 편집기 창을 사용하여 개별 테스트 메서드를 포함하거나 제외시킬 수 있습니다. 코드 편집기 창에서 테스트 메서드의 서명을 마우스 오른쪽 단추로 클릭하고 다음 옵션 중 하나를 선택합니다.
 
-- **라이브 테스트** >  **\<선택한 메서드> 포함**
-- **라이브 테스트** >  **\<선택한 메서드> 제외**
-- **라이브 테스트** >  **\<선택한 메서드> 외에 모두 제외**
+- **라이브 테스트** >  **\<selected method> 포함**
+- **라이브 테스트** >  **\<selected method> 제외**
+- **라이브 테스트** >  **\<selected method> 외에 모두 제외**
 
 ### <a name="exclude-tests-programmatically"></a>프로그래밍 방식으로 테스트 제외
 

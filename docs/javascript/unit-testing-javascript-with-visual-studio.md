@@ -1,7 +1,7 @@
 ---
 title: 유닛 테스트 JavaScript 및 TypeScript
 description: Visual Studio는 Visual Studio용 Node.js 도구를 사용하는 지원 유닛 테스트 JavaScript 및 TypeScript 코드를 제공합니다.
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289003"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033353"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio의 유닛 테스트 JavaScript 및 TypeScript
 
@@ -72,25 +72,32 @@ describe('Test Suite 1', function() {
 ![테스트 탐색기](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> 테스트 탐색기는 TypeScript 파일에서 단위 테스트를 찾을 수 없으므로 *tsconfig.json*에서 `outdir` 또는 `outfile` 옵션을 사용하지 않습니다.
+> TypeScript의 경우 테스트 탐색기는 단위 테스트를 찾을 수 없으므로 *tsconfig.json*에서 `outdir` 또는 `outfile` 옵션을 사용하지 않습니다.
 
 ## <a name="run-tests"></a>테스트 실행
 
-Visual Studio 2017 또는 명령줄에서 테스트를 실행할 수 있습니다.
+Visual Studio 또는 명령줄에서 테스트를 실행할 수 있습니다.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Visual Studio 2017에서 테스트 실행
+### <a name="run-tests-in-visual-studio"></a>Visual Studio에서 테스트 실행
 
+::: moniker range=">=vs-2019"
+테스트 탐색기에서 **모두 실행** 링크를 클릭하여 테스트를 실행할 수 있습니다. 또는 하나 이상의 테스트 또는 그룹을 선택하고, 마우스 오른쪽 단추를 클릭하고, 바로 가기 메뉴에서 **실행**을 선택하여 테스트를 실행할 수 있습니다. 백그라운드에서 테스트가 실행되고 테스트 탐색기에서 결과를 자동으로 업데이트하고 보여 줍니다. 또한 마우스 오른쪽 단추를 클릭하고 **디버그**를 선택하여 선택한 테스트를 디버그할 수도 있습니다.
+::: moniker-end
+::: moniker range="vs-2017"
 테스트 탐색기에서 **모두 실행** 링크를 클릭하여 테스트를 실행할 수 있습니다. 또는 하나 이상의 테스트 또는 그룹을 선택하고, 마우스 오른쪽 단추를 클릭하고, 바로 가기 메뉴에서 **선택한 테스트 실행**을 선택하여 테스트를 실행할 수 있습니다. 백그라운드에서 테스트가 실행되고 테스트 탐색기에서 결과를 자동으로 업데이트하고 보여 줍니다. 또한 **선택한 테스트 디버그**를 선택하여 선택한 테스트를 디버깅할 수도 있습니다.
+::: moniker-end
 
-> [!Warning]
-> 노드 8+를 사용한 단위 테스트 디버깅은 JavaScript 테스트 파일에 대해서만 작동하며, TypeScript 테스트 파일은 중단점을 적중하지 못합니다. 해결 방법으로 `debugger` 키워드를 사용합니다.
+TypeScript의 경우 생성된 JavaScript 코드에 대해 단위 테스트를 실행합니다.
+
+> [!NOTE]
+> 대부분 TypeScript 시나리오에서는 TypeScript 코드에서 중단점을 설정하고, 테스트 탐색기에서 테스트를 마우스 오른쪽 단추로 클릭한 다음, **디버그**를 선택하여 단위 테스트를 디버그할 수 있습니다. 소스 맵을 사용하는 몇 가지 시나리오와 같은 더 복잡한 시나리오에서는 TypeScript 코드에서 중단점에 적중하는 것이 어려울 수 있습니다. 해결 방법으로 `debugger` 키워드를 사용해 보세요.
 
 > [!NOTE]
 > 현재 테스트 프로파일링 또는 코드 검사를 지원하지 않습니다.
 
 ### <a name="run-tests-from-the-command-line"></a>명령줄에서 테스트 실행
 
-다음 명령을 사용하여 Visual Studio 2017용 [개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)에서 테스트를 실행할 수 있습니다.
+다음 명령을 사용하여 Visual Studio용 [개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)에서 테스트를 실행할 수 있습니다.
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
