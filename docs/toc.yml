@@ -335,6 +335,8 @@
                   href: ide/reference/generate-equals-structs.md
                 - name: 파일 헤더 추가
                   href: ide/reference/add-file-header.md
+                - name: 디버거 표시 특성 추가
+                  href: ide/reference/add-debugger-display-attribute.md
                 - name: 명시적 캐스트 추가
                   href: ide/reference/add-explicit-cast.md
                 - name: 메서드에 매개 변수 추가
@@ -567,7 +569,7 @@
           href: ide/class-designer/refactoring-classes-and-types.md
         - name: 인터페이스 구현
           href: ide/class-designer/how-to-implement-an-interface.md
-        - name: 클래스를 partial 클래스로 분할
+        - name: 클래스를 부분 클래스로 분할
           href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
         - name: nullable 형식 만들기
           href: ide/class-designer/how-to-create-a-nullable-type.md
@@ -1466,5 +1468,5 @@
       href: ide/suggest-a-feature.md
     - name: Developer Community 지침
       href: ide/developer-community-guidelines.md
-    - name: Developer Community 데이터 개인 정보
+    - name: 개발자 커뮤니티 데이터 개인 정보
       href: ide/developer-community-privacy.md
