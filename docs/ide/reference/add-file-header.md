@@ -1,20 +1,20 @@
 ---
 title: 파일 헤더 추가
-ms.date: 06/08/2020
+ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 24b0905eed167a99f8a75086c9b5ec6cbbdd8b6a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
+ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290915"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86374171"
 ---
-# <a name="add-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 추가
+# <a name="add-file-header"></a>파일 헤더 추가
 
 이 코드 생성은 다음에 적용됩니다.
 

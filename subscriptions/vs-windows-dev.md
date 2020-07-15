@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대해 알아봅니다.
-ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905995"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301462"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 선택한 Visual Studio 구독에 포함된 Windows 개발자 계정으로 무료 및 유료 Windows 앱을 Windows 스토어에 제출할 수 있습니다.
@@ -26,7 +26,7 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 2. 도구 섹션에서 Windows 개발자 계정 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.  클립보드에 코드를 복사한 다음 **활성화**를 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Windows 개발자 혜택 타일](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. [https://developer.microsoft.com](https://developer.microsoft.com) 사이트에서 등록 프로세스를 시작할 수 있습니다.  **등록**을 클릭하여 계속합니다.
+3. [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) 사이트에서 등록 프로세스를 시작할 수 있습니다.  **등록**을 클릭하여 계속합니다.
    > [!div class="mx-imgBorder"]
    > ![Windows 개발자 혜택 등록](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. 구독에 로그인합니다.  계정이 여러 개 있는 경우 Enterprise 구독과 연결된 계정을 선택합니다.
