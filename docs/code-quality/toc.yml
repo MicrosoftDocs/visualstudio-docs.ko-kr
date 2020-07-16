@@ -730,6 +730,20 @@
                   href: ca2328.md
                 - name: 'CA2329: 안전하지 않은 구성을 사용하여 JsonSerializer로 역직렬화하지 마세요.'
                   href: ca2329.md
+                - name: 'CA2350: DataTable.ReadXml()의 입력을 신뢰할 수 있는지 확인하세요.'
+                  href: ca2350.md
+                - name: 'CA2351: DataSet.ReadXml()의 입력을 신뢰할 수 있는지 확인하세요.'
+                  href: ca2351.md
+                - name: 'CA2352: 직렬화 가능 형식의 안전하지 않은 데이터 세트 또는 DataTable은 원격 코드 실행 공격에 취약할 수 있습니다.'
+                  href: ca2352.md
+                - name: 'CA2353: 직렬화 가능 형식의 안전하지 않은 데이터 세트 또는 DataTable입니다.'
+                  href: ca2353.md
+                - name: 'CA2354: 역직렬화된 개체 그래프의 안전하지 않은 데이터 세트 또는 DataTable은 원격 코드 실행 공격에 취약할 수 있습니다.'
+                  href: ca2354.md
+                - name: 'CA2355: 역직렬화된 개체 그래프의 안전하지 않은 데이터 세트 또는 DataTable'
+                  href: ca2355.md
+                - name: 'CA2356: 웹 역직렬화된 개체 그래프의 안전하지 않은 데이터 세트 또는 DataTable 형식'
+                  href: ca2356.md
                 - name: 'CA2330: 역직렬화할 때 JsonSerializer에 보안 구성이 있는지 확인하세요.'
                   href: ca2330.md
                 - name: 'CA3001: 코드에서 SQL 주입 취약점에 대해 검토합니다.'
