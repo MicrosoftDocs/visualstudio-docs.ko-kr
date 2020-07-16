@@ -5,16 +5,17 @@ metadata:
   title: Visual Studio에서 배포
   description: Visual Studio를 사용하여 애플리케이션, 서비스 및 구성 요소를 배포하는 방법을 알아봅니다.
   ms.topic: landing-page
+  ms.technology: vs-ide-deployment
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: a2fc975c390283104fc4aa2c79244dba7e4e669e
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: eb2ad45606c71687d3fdb7d95c09b656883551b6
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "71238097"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405381"
 landingContent:
 - title: 배포 정보
   linkLists:
@@ -24,7 +25,7 @@ landingContent:
       url: deploying-applications-services-and-components-resources.md
     - text: 배포 소개
       url: deploying-applications-services-and-components.md
-- title: 시작하기
+- title: 시작
   linkLists:
   - linkListType: quickstart
     links:

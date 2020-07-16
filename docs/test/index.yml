@@ -5,16 +5,17 @@ metadata:
   title: Visual Studio의 테스트 도구
   description: Visual Studio를 사용하여 코드를 테스트하는 방법을 알아보세요.
   ms.topic: landing-page
+  ms.technology: vs-ide-test
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: cb29c5219cb3ad73cf8a3efeecaf344c7af81968
-  ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+  ms.openlocfilehash: 345cc23893a335ba7876ca3d6aef202beaac693b
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/25/2020
-  ms.locfileid: "80256403"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405398"
 landingContent:
 - title: 테스트 도구 정보
   linkLists:
@@ -22,15 +23,15 @@ landingContent:
     links:
     - text: 테스트 도구 살펴보기
       url: improve-code-quality.md
-    - text: 단위 테스트 도구 개요
+    - text: 유닛 테스트 도구 개요
       url: unit-test-your-code.md
     - text: Live Unit Testing 개요
       url: live-unit-testing-intro.md
-- title: Unit Testing
+- title: 단위 테스트
   linkLists:
   - linkListType: tutorial
     links:
-    - text: 단위 테스트 시작
+    - text: 유닛 테스트 시작
       url: getting-started-with-unit-testing.md
     - text: 관리 코드에 대한 단위 테스트 만들기 및 실행
       url: walkthrough-creating-and-running-unit-tests-for-managed-code.md

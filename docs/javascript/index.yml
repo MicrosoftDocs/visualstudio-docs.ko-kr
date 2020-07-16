@@ -5,18 +5,19 @@ metadata:
   title: Visual Studio의 JavaScript 및 TypeScript
   description: Visual Studio를 사용하여 JavaScript 및 TypeScript 앱을 만드는 방법을 알아봅니다.
   ms.topic: landing-page
+  ms.technology: vs-javascript
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 01b4232b4933197f06bb77793fb638281e5b5748
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "75678950"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405380"
 landingContent:
-- title: 시작하기
+- title: 시작
   linkLists:
   - linkListType: overview
     links:
