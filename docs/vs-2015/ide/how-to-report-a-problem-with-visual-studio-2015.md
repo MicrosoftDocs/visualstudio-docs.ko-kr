@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: db9267fe9f06569dadea240e5d78c8b35c84b8c4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651776"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386552"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015의 문제를 보고하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Visual Studio에 대한 최신 설명서는 [Visual Studio에서 문제를 보�
 
 Visual Studio 2015에서 문제가 발생하는 경우 Microsoft에서 문제를 진단하여 해결할 수 있도록 알려 주시기 바랍니다.  **문제 보고** 도구에서 단추를 몇 번만 클릭하여 문제에 대한 자세한 정보를 수집한 후 Microsoft로 보낼 수 있습니다.
 
-Microsoft는 사용자의 개인 정보를 소중히 여깁니다. Microsoft에서 사용자가 보낸 데이터를 취급하는 방법에 대한 자세한 내용은 [Microsoft Visual Studio 제품군 개인정보처리방침](https://www.visualstudio.com/dn948229)을 참조하세요.
+Microsoft는 사용자의 개인 정보를 소중히 여깁니다. Microsoft에서 사용자가 보낸 데이터를 취급하는 방법에 대한 자세한 내용은 [Microsoft Visual Studio 제품군 개인 정보 취급 방침](https://www.visualstudio.com/dn948229)을 참조하세요.
 
 ## <a name="open-the-report-a-problem-tool"></a>문제 보고 도구 열기
 
@@ -45,7 +45,7 @@ Microsoft는 사용자의 개인 정보를 소중히 여깁니다. Microsoft에�
 
 ## <a name="provide-a-screenshot-optional"></a>스크린샷 제공(선택 사항)
 
-현재 화면을 Microsoft로 보내려면 **스크린샷 포함** 을 선택합니다. 이 도구를 사용하면 화면에서 문제가 있는 부분만 표시되도록 이미지를 자를 수 있습니다. **추가 파일 첨부** 단추를 클릭하여 추가 스크린샷 또는 다른 파일을 첨부할 수 있습니다.
+현재 화면을 Microsoft로 보내려면 **스크린샷 포함**을 선택합니다. 이 도구를 사용하면 화면에서 문제가 있는 부분만 표시되도록 이미지를 자를 수 있습니다. **추가 파일 첨부** 단추를 클릭하여 추가 스크린샷 또는 다른 파일을 첨부할 수 있습니다.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>추적 및 힙 덤프 제공(선택 사항)
 
@@ -53,7 +53,7 @@ Microsoft는 사용자의 개인 정보를 소중히 여깁니다. Microsoft에�
 
 1. 추적 및 힙 덤프 파일은 문제를 진단하는 데 매우 유용합니다.   문제 보고 도구를 사용하여 재현 단계를 기록하여 데이터를 Microsoft로 보내 주시면 감사하겠습니다.
 
-2. **문제를 재현할 수 있도록 작업을 기록하세요.** 옆에 있는 펼침 단추를 클릭합니다. 문제가 발생하여 Visual Studio가 정지하거나 충돌할 경우 Visual Studio의 다른 인스턴스를 열고 목록 보기에서 해당 인스턴스를 선택합니다.
+2. **문제를 재현할 수 있도록 작업을 기록하세요.** 옆에 있는 펼침 단추를 클릭합니다. 문제가 발생 하 여 Visual Studio에서 응답을 중지 하거나 충돌 하는 경우 Visual Studio의 다른 인스턴스를 열고 목록 보기에서 선택 합니다.
 
 3. **기록 시작** 을 클릭하고 문제를 재현하는 단계를 수행합니다. 완료되면 부동 창에서 **기록 중지** 단추를 클릭합니다.
 

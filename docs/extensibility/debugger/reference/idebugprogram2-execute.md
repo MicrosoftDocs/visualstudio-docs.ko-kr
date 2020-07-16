@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::실행 | 마이크로 소프트 문서
+title: 'IDebugProgram2:: Execute | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f34ebea67ff95d1da6d777cdd828604f4a2f56e8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80722977"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386747"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
-중지된 상태에서 이 프로그램을 계속 실행합니다. 이전 실행 상태(예: 단계)가 지워지고 프로그램이 다시 실행됩니다.
+중지 된 상태에서이 프로그램을 계속 실행 합니다. 모든 이전 실행 상태 (예: 단계)는 지워지고 프로그램의 실행이 다시 시작 됩니다.
 
 > [!NOTE]
-> 이 메서드는 더 이상 사용되지 않습니다. 대신 [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) 메서드를 사용합니다.
+> 이 메서드는 더 이상 사용되지 않습니다. 대신 [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) 메서드를 사용 해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,15 +41,15 @@ int Execute();
 ```
 
 ## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 사용자가 다른 프로그램의 스레드에서 중지된 상태에서 실행을 시작하면 이 메서드가 이 프로그램에서 호출됩니다. 이 메서드는 사용자가 IDE의 **디버그** 메뉴에서 **시작** 명령을 선택할 때도 호출됩니다. 이 메서드의 구현은 프로그램의 현재 스레드에서 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 메서드를 호출하는 것만큼 간단할 수 있습니다.
+ 사용자가 다른 프로그램의 스레드에서 중지 된 상태에서 실행을 시작 하면이 메서드가이 프로그램에서 호출 됩니다. 이 메서드는 사용자가 IDE의 **디버그** 메뉴에서 **시작** 명령을 선택 하는 경우에도 호출 됩니다. 이 메서드의 구현은 프로그램의 현재 스레드에서 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 메서드를 호출 하는 것 처럼 간단할 수 있습니다.
 
 > [!WARNING]
-> 이 호출을 처리하는 동안 중지 이벤트 또는 즉각적인(동기식) 이벤트를 [Event에](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 보내지 마십시오. 그렇지 않으면 디버거가 멈출 수 있습니다.
+> 이 호출을 처리 하는 동안 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 에 중지 이벤트 또는 즉각적인 (동기) 이벤트를 보내지 않습니다. 그렇지 않으면 디버거가 응답 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [다시 시작](../../../extensibility/debugger/reference/idebugthread2-resume.md)

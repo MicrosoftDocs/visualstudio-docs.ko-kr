@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905780"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387280"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>방법: Visual Studio 2019/2017 및 Visual Studio 2015과 호환 되는 확장 만들기
 
@@ -29,7 +29,7 @@ Visual Studio 2019/2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visu
 1. 올바른 NuGet 패키지를 가져옵니다.
 2. 확장 매니페스트 업데이트:
     * 설치 대상
-    * 사전 요구 사항
+    * 필수 구성 요소
 3. 업데이트 .Csproj:
     * `<MinimumVisualStudioVersion>`를 업데이트합니다.
     * `<VsixType>` 속성 추가
@@ -74,7 +74,7 @@ Visual Studio 2015 및 2019/2017에서 VSIXv3를 빌드 및 배포 하려면 다
 Visual Studio 2015 | VisualStudio입니다. 14.0
 Visual Studio 2019 또는 2017 | Microsoft.
 
-이를 수행하려면:
+이렇게 하려면 다음을 수행합니다.
 
 * 프로젝트에 NuGet 패키지 VisualStudio를 추가 합니다. 14.0
 * 프로젝트에 Microsoft. 사용자의 Uibuildbuilda가 포함 되어 있지 않으면이를 추가 합니다.
@@ -165,7 +165,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * Microsoft... n e t. n e t. n e t 참조가 있는 태그에 조건문을 추가 `<import>` 합니다. `'$(VisualStudioVersion)' != '14.0' And`조건문 앞에 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
 
-예를 들어:
+예를 들면 다음과 같습니다.
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * VisualStudio 14.0를 포함 하는 태그에 추가 조건문을 추가 합니다. `<import>` `'$(VisualStudioVersion)' == '14.0' And`조건문 앞에 삽입 합니다. 이러한 문은 .csproj 파일의 머리글과 바닥글에 표시 됩니다.
 
-예를 들어:
+예를 들면 다음과 같습니다.
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * Microsoft... n e t. n e t. n e t 참조가 있는 태그에 조건문을 추가 `<Error>` 합니다. 조건문 앞에를 삽입 하 여이 작업을 수행 `'$(VisualStudioVersion)' != '14.0' And` 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
 
-예를 들어:
+예를 들면 다음과 같습니다.
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 * VisualStudio 14.0를 포함 하는 태그에 추가 조건문을 추가 합니다. `<Error>` `'$(VisualStudioVersion)' == '14.0' And`조건문 앞에 삽입 합니다. 이러한 문은 .csproj 파일의 바닥글에 표시 됩니다.
 
-예를 들어:
+예를 들면 다음과 같습니다.
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
@@ -213,5 +213,4 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 ![VSIX 찾기](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> **파일이 파일을 여는**메시지와 함께 중단 되는 경우 Visual Studio를 강제로 종료 하 고, 프로젝트 디렉터리로 이동 하 고, 숨겨진 폴더를 표시 하 고, vs 폴더를 삭제 합니다 *.*
- 
+> 프로젝트에서 **파일을 여는**메시지와 함께 응답이 중지 되는 경우 Visual Studio를 강제로 종료 하 고, 프로젝트 디렉터리로 이동 하 고, 숨겨진 폴더를 표시 하 고, vs 폴더를 삭제 합니다 *.*

@@ -8,14 +8,14 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 380de9206b2dc4e78c3719919dfd78720de28129
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 27f69a3295deb8d3335878acc865314635af7c0e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297643"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387306"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터 문제 해결
+# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에는 Android용 Visual Studio 에뮬레이터를 사용하는 동안 발생할 수 있는 문제를 해결하는 데 도움이 되는 정보가 들어 있습니다.
@@ -25,7 +25,7 @@ ms.locfileid: "74297643"
 
  이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
 
-- [시작하기 전에](#BeforeYouStart)
+- [시작하기 전 주의 사항](#BeforeYouStart)
 
 - [에뮬레이터 설치 실패](#NoInstall)
 
@@ -43,7 +43,7 @@ ms.locfileid: "74297643"
 
 - [Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.](#ADB)
 
-- [에뮬레이터가 UDP 포트를 설정하지 못해서 중지됨](#XamarinPlayer)
+- [에뮬레이터가 UDP 포트를 설정 하지 못하여 응답을 중지 합니다.](#XamarinPlayer)
 
 - [Xamarin 프로젝트에 디버거를 연결할 수 없음](#Skylake)
 
@@ -59,12 +59,12 @@ ms.locfileid: "74297643"
 
 - [지원 리소스](#Support)
 
-## <a name="BeforeYouStart"></a> 시작하기 전에
+## <a name="before-you-start"></a><a name="BeforeYouStart"></a> 시작하기 전 주의 사항
  문제 해결을 시작하기 전에 다음 항목을 검토하는 것이 유용할 수 있습니다.
 
-- [Visual Studio Emulator for Android의 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Android 용 Visual Studio 에뮬레이터에 대 한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
-## <a name="NoInstall"></a> 에뮬레이터 설치 실패
+## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> 에뮬레이터 설치 실패
  Hyper-V를 설치하지 않은 경우 에뮬레이터를 설치하려고 할 때 다음과 같은 메시지가 나타납니다. HyperV를 지원하는 컴퓨터가 있어야 하고 HyperV를 사용하도록 설정해야 합니다.
 
  ![Android_Emu_Install_Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
@@ -72,9 +72,9 @@ ms.locfileid: "74297643"
 > [!NOTE]
 > 이 메시지는 Android용 Visual Studio 에뮬레이터 및 Windows Phone 에뮬레이터 모두에 적용됩니다. Windows 8.1 및 Windows 10에서 에뮬레이터를 지원합니다.
 
- 이 메시지가 표시되는 경우 [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) 에서 에뮬레이터를 실행할 수 있는지 여부를 확인하세요.
+ 이 메시지가 표시 되 면 에뮬레이터를 실행할 수 있는지 여부를 확인 하기 위해 [Visual Studio Emulator For Android의 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) 을 확인 합니다.
 
-## <a name="DomainNetwork"></a> 도메인 또는 회사 네트워크의 네트워크 대상에 연결할 수 없음
+## <a name="cannot-connect-to-network-destinations-on-a-domain-or-corporate-network"></a><a name="DomainNetwork"></a> 도메인 또는 회사 네트워크의 네트워크 대상에 연결할 수 없음
  Android용 Visual Studio 에뮬레이터는 네트워크에서 자체 IP 주소를 가진 별도 디바이스도 나타납니다. 이 에뮬레이터는 Windows 도메인에 연결되지 않고 호스트 컴퓨터와 도메인 또는 작업 그룹 자격 증명을 공유하지 않습니다.
 
  네트워크에 기본 네트워크 및 인터넷 연결을 위한 도메인 또는 작업 그룹 권한 부여가 필요한 경우 IT 관리자에게 예외에 대해 문의합니다. 이 예외를 사용하여 개발 컴퓨터는 경계 시스템으로 작동할 수 있고 에뮬레이터와 같은 도메인에 연결되지 않은 네트워크 디바이스에서의 연결을 허용할 수 있습니다.
@@ -91,7 +91,7 @@ ms.locfileid: "74297643"
 
 4. 네트워크 페이지에서 실제 주소 항목을 찾습니다.
 
-## <a name="ManualNetworkConfig"></a> 네트워크 설정에 수동 구성이 필요할 때 네트워크 대상에 연결할 수 없음
+## <a name="cannot-connect-to-network-destinations-when-network-settings-require-manual-configuration"></a><a name="ManualNetworkConfig"></a> 네트워크 설정에 수동 구성이 필요할 때 네트워크 대상에 연결할 수 없음
  에뮬레이터에서 네트워크 대상에 연결하려면 네트워크가 다음 요구 사항을 충족해야 합니다.
 
 - DHCP. 에뮬레이터는 네트워크에서 자체 IP 주소를 갖는 별도의 디바이스로 구성되므로 DHCP가 필요합니다.
@@ -100,7 +100,7 @@ ms.locfileid: "74297643"
 
   네트워크에 수동으로 구성된 설정이 필요한 경우 IT 관리자에게 에뮬레이터에 대한 네트워크 연결을 설정하는 방법을 확인합니다.
 
-## <a name="SlowStart"></a> 에뮬레이터가 느려지기 시작하거나, 시간 초과로 인해 시작되지 못하거나, 앱 배포가 실패함
+## <a name="emulator-starts-slowly-fails-to-start-due-to-a-timeout-or-app-deployment-fails"></a><a name="SlowStart"></a> 에뮬레이터가 느려지기 시작하거나, 시간 초과로 인해 시작되지 못하거나, 앱 배포가 실패함
  특정 상황에서 에뮬레이터는 시작하는 데 몇 분 정도 소요되거나 시간 초과로 인해 시작되지 않습니다. 에뮬레이터를 시작하지 못하면 다음 메시지가 나타납니다. `App deployment failed. Please try again`. 이 오류는 다음과 같은 상황에서 발생할 수 있습니다.
 
 - 부팅 가능 VHD에서 Android용 Visual Studio 에뮬레이터를 실행하고 있습니다. 이 구성은 지원되지 않습니다.
@@ -115,7 +115,7 @@ ms.locfileid: "74297643"
 
 - 일반적으로 시스템의 성능 저하는 다양한 요인에 의해 발생할 수 있습니다. 제어판의 성능 정보 및 도구 페이지에서 찾을 수 있는 Windows 체험 지수에서 항목별 점수가 가장 낮은 구성 요소의 문제부터 해결합니다.
 
-## <a name="NoStart2"></a> 에뮬레이터 시작 실패
+## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a> 에뮬레이터 시작 실패
  에뮬레이터가 기존에 작동했지만 지금은 작동하지 않는 경우 다음 작업을 수행합니다. 에뮬레이터를 처음으로 사용하는 경우 이 단계를 시도하기 전에 [Emulator fails to start (first use)](#NoStart) 를 참조하세요.
 
 - 에뮬레이터의 다른 Hyper-V 인스턴스를 제거합니다.
@@ -134,11 +134,11 @@ ms.locfileid: "74297643"
 
      ![Android_Emu_V_Switch_Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
 
-     설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 디바이스를 다시 설치](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) 할 수 있습니다(섹션 6).
+     설치 프로그램이 잘못 되 고 Windows 10을 사용 하는 경우 [netcfg – d 명령을 사용 하 여 네트워크 장치를 다시 설치](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) 해 볼 수 있습니다 (섹션 6).
 
 - 이러한 단계로도 문제가 해결되지 않으면 [Emulator fails to start (first use)](#NoStart) 에서 에뮬레이터에 방해가 될 수 있는 타사 소프트웨어에 대한 정보를 확인하세요.
 
-## <a name="NoStart"></a> Emulator fails to start (first use)
+## <a name="emulator-fails-to-start-first-use"></a><a name="NoStart"></a> Emulator fails to start (first use)
  에뮬레이터가 시작되지 않으면 다음 작업을 수행하여 문제를 확인하고 해결합니다.
 
 - 최소 하드웨어 요구 사항이 충족되는지와 BIOS 설정이 올바른지 확인합니다.
@@ -227,7 +227,7 @@ ms.locfileid: "74297643"
 
      - 연결 계층 토폴로지 검색 매퍼 I/O 드라이버
 
-     - 연결 계층 토폴로지 검색 응답자
+     - 연결 계층 토폴로지 검색 응답기
 
      - 인터넷 프로토콜 버전 6(TCP/IPv6)
 
@@ -237,7 +237,7 @@ ms.locfileid: "74297643"
 
      이 기법을 사용할 때의 단점은 새로운 타사 제품이 지원되지 않는 드라이버를 설치하거나, 에뮬레이터가 설치될 때마다 이러한 단계를 반복해야 한다는 것입니다.
 
-     타사 제품을 제거한 후 Windows Phone 에뮬레이터 내부 스위치를 복원해야 할 수 있습니다. 수행할 작업
+     타사 제품을 제거한 후 Windows Phone 에뮬레이터 내부 스위치를 복원해야 할 수 있습니다. 이러한 작업을 하려면 다음을 수행합니다.
 
   - Hyper-V를 열고 가상 스위치 관리자로 이동합니다. "Windows Phone 에뮬레이터 내부 스위치"라는 가상 스위치를 만들고 해당 연결 형식을 **내부 네트워크**로 설정합니다.
 
@@ -245,7 +245,7 @@ ms.locfileid: "74297643"
 
     이제 에뮬레이터를 시작합니다. 에뮬레이터가 작동됩니다.
 
-## <a name="NoBoot"></a> 에뮬레이터를 설치한 후 컴퓨터 부팅 실패
+## <a name="computer-fails-to-boot-after-installing-the-emulator"></a><a name="NoBoot"></a> 에뮬레이터를 설치한 후 컴퓨터 부팅 실패
  이 문제는 다음 조건에 해당되는 경우 발생할 수 있습니다.
 
 - 컴퓨터에 Gigabyte 마더보드가 있습니다.
@@ -256,7 +256,7 @@ ms.locfileid: "74297643"
 
   자세한 내용은 기술 자료 문서 [Gigabyte 시스템에서 Hyper-V 역할을 설치한 후 부팅 오류 발생](https://support.microsoft.com/kb/2693144)을 참조하세요.
 
-## <a name="ADB"></a> Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.
+## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.
  에뮬레이터를 실행하고 있지만 ADB(Android 디버그 브리지)에 연결된 것으로 나타나지 않거나 ADB를 사용하는 Android 도구(예: Android Studio 또는 Eclipse)에 나타나지 않는 경우 에뮬레이터가 ADB를 찾는 위치를 조정해야 할 수 있습니다. 에뮬레이터는 레지스트리 키를 사용하여 Android SDK의 기본 위치를 식별하고 해당 디렉터리에서 \platform-tools\adb.exe 파일을 찾습니다. 에뮬레이터에서 사용하는 Android SDK 경로를 수정하려면
 
 - 시작 단추 상황에 맞는 메뉴에서 **실행** 을 선택하고 대화 상자에 `regedit` 를 입력한 다음 **확인**을 선택하여 레지스트리 편집기를 엽니다.
@@ -267,8 +267,8 @@ ms.locfileid: "74297643"
 
   에뮬레이터를 다시 시작하면 에뮬레이터가 ADB 및 관련 Android 도구에 연결되어 있는 것을 확인할 수 있어야 합니다.
 
-## <a name="XamarinPlayer"></a> 에뮬레이터가 UDP 포트를 설정하지 못해서 중지됩니다.
- Xamarin Player와의 비호환성으로 인해 이 문제가 발생할 수 있습니다. 에뮬레이터가 응답하지 않거나 "에뮬레이터가 디바이스 운영 체제에 연결할 수 없음: UDP 포트를 설정할 수 없습니다.  일부 기능을 사용할 수 없습니다”와 같은 오류 메시지가 표시되는 경우 이 문제가 발생할 수 있습니다. 다음 단계를 수행합니다.
+## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a>에뮬레이터가 UDP 포트를 설정 하지 못하여 응답을 중지 합니다.
+ Xamarin Player와의 비호환성으로 인해 이 문제가 발생할 수 있습니다. 에뮬레이터가 응답 하지 않거나 "에뮬레이터가 장치 운영 체제에 연결할 수 없습니다.: UDP 포트를 설정할 수 없습니다." 라는 오류 메시지가 표시 되는 경우  일부 기능을 사용할 수 없습니다”와 같은 오류 메시지가 표시되는 경우 이 문제가 발생할 수 있습니다. 다음 단계를 수행합니다.
 
 1. Xamarin Player를 제거합니다.
 
@@ -278,7 +278,7 @@ ms.locfileid: "74297643"
 
 4. 실제 네트워크 어댑터 외의 장치를 모두 제거한 후 Hyper-V를 제거했다가 다시 설치해 볼 수 있습니다.
 
-## <a name="Skylake"></a> Xamarin 프로젝트에 디버거를 연결할 수 없음
+## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a> Xamarin 프로젝트에 디버거를 연결할 수 없음
  Intel Skylake 프로세서를 사용하여 Windows 10을 실행하는 경우 에뮬레이터에서 Xamarin 앱을 실행할 수 없거나 Visual Studio 디버거가 앱에 연결되지 않을 수 있습니다. 이러한 현상은 Hyper-V 및 Skylake 프로세서의 문제로 인해 발생합니다. 이러한 문제를 해결하려면 다음 단계를 수행합니다.
 
 1. Hyper-V 관리자를 열고 사용 중인 에뮬레이터 프로필용 VM을 선택합니다.
@@ -293,22 +293,22 @@ ms.locfileid: "74297643"
 
 6. **작업** 아래에서 서비스를 다시 시작한 후에 다시 시도합니다.
 
-## <a name="GooglePlay"></a> 에뮬레이터가 Google Play 서비스를 사용하는 앱을 실행하지 못함
+## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> 에뮬레이터가 Google Play 서비스를 사용하는 앱을 실행하지 못함
  에뮬레이터에 Google Play 서비스용 라이브러리가 함께 제공되지 않습니다. 그러나 에뮬레이터는 플래시 가능 zip 파일의 끌어서 놓기 설치를 지원합니다.
 
-## <a name="DragAndDrop"></a> 파일 끌어서 놓기, APK 또는 플래시 가능 zip 파일이 작동하지 않습니다.
+## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a> 파일 끌어서 놓기, APK 또는 플래시 가능 zip 파일이 작동하지 않습니다.
  사용자가 화면에 파일을 끌어다 놓으면 에뮬레이터는 ADB.exe를 사용하여 화면에 파일을 전송합니다. 파일을 끌어다 놓으려 할 때 오류가 발생하면 에뮬레이터가 ADB.exe에 연결되지 않은 것일 수 있습니다. 해결하려면 [Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.](#ADB)에서 확인할 수 있습니다.
 
-## <a name="Resolution"></a> 스크린샷의 해상도가 올바르지 않음
+## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> 스크린샷의 해상도가 올바르지 않음
  **추가 도구** 창에서 스크린샷 탭을 사용하여 스크린샷을 찍었으나 결과 이미지 크기가 예상과 다른 경우 **캡처**를 선택하기 전에 화면의 확대/축소 수준을 조정해야 할 수 있습니다. 에뮬레이터는 호스트 PC 모니터의 화면 해상도로 스크린샷을 찍습니다.
 
-## <a name="OpenGL"></a> 에뮬레이터가 OpenGL 콘텐츠를 렌더링하지 못함
+## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> 에뮬레이터가 OpenGL 콘텐츠를 렌더링하지 못함
  에뮬레이터는 호스트 컴퓨터의 GPU를 사용하여 OpenGL 콘텐츠를 렌더링하고 ANGLE 프로젝트를 사용하여 DirectX와의 사이에서 이러한 호출을 변환합니다. 애플리케이션이 디바이스에서는 올바르게 렌더링하지만 에뮬레이터에서는 그렇지 못할 경우 디바이스가 잘못된 OpenGL 호출을 완화시키는 것일 수 있습니다(예: 일치하지 않는 셰이더 변수 사용).
 
-## <a name="Multitouch"></a> 에뮬레이터가 멀티 터치 제스처에 응답하지 않음
+## <a name="emulator-does-not-respond-to-multi-touch-gestures"></a><a name="Multitouch"></a> 에뮬레이터가 멀티 터치 제스처에 응답하지 않음
  일부 경우에는 에뮬레이터가 시작되지만 터치 지원 디스플레이의 직접적인 조작을 통해 또는 에뮬레이터 도구 모음의 멀티 터치 도구를 사용하여 멀티 터치에 응답하지 않습니다. 이러한 경우 에뮬레이터 도구 모음에서 **회전** 단추를 선택하고 멀티 터치를 다시 사용해 봅니다. 문제가 계속되면 [에뮬레이터가 OpenGL 콘텐츠를 렌더링하지 못함](#OpenGL) 문제를 확인하세요.
 
-## <a name="Support"></a> 지원 리소스
+## <a name="support-resources"></a><a name="Support"></a> 지원 리소스
  호스트 컴퓨터가 시스템 요구 사항을 충족한 상태에서 이 문제 해결 가이드에서 다루지 않은 문제가 발생하는 경우:
 
 - [Android 에뮬레이터](https://stackoverflow.com/questions/tagged/android-emulator) 및 visual-studio 태그를 사용하여 StackOverflow에 대해 질문합니다.

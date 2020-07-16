@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298059"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386682"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>방법: Visual Studio Trial Edition에서 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-제품을 등록하지 않고 14일 동안 Visual Studio의 시험판 버전을 평가할 수 있습니다. Microsoft 계정으로 로그인하여 등록한 후에는 시험판 라이선스가 제한 날짜까지 유효합니다.
+제품을 등록하지 않고 14일 동안 Visual Studio의 시험판 버전을 평가할 수 있습니다. Microsoft 계정를 사용 하 여 로그인 하 여 등록 한 후에는 만료 날짜가 될 때까지 시험판 라이선스가 유효 합니다.
 
  Visual Studio Professional 및 Enterprise Edition의 릴리스 버전은 제품 설치 후 30일 동안 평가할 수 있습니다. [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)하면 평가 기간이 60일 추가되어 총 90일이 됩니다. Visual Studio의 평가판을 30일 내에 등록하지 않으면 설치 30일 후에 평가 기간이 만료됩니다.
 

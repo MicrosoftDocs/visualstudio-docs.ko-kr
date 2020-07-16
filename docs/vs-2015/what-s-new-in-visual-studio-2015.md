@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919250"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387111"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 기능
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
  Visual Studio 2015 설치 환경은 필요한 부분만 설치할 수 있도록 구성 요소화되어 있습니다. 따라서 .NET 또는 웹 개발과 관련된 많은 일반적인 시나리오에 맞게 빠른 설치가 가능합니다. 플랫폼 간 모바일 개발과 같은 다른 형식의 개발을 수행하는 경우나 C++ 또는 F#으로 작업하는 경우에는 **사용자 지정** 설치를 선택한 후 구성 요소와 선택적으로 필요한 타사 SDK를 선택합니다. 사용자 지정 구성 요소를 나중에 설치할 수도 있습니다. 예를 들어 기본 설치를 선택하는 경우 새 C++ 프로젝트를 만들려고 하면 C++ 개발 도구를 다운로드하라는 메시지가 표시됩니다.
 
- ![Visual Studio 2015 설치 대화 상자](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
+ ![Visual Studio 2015 설정 대화 상자](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>여러 계정에 로그인
  Visual Studio 2015에서는 단순화된 새로운 로그인 환경을 통해 Visual Studio 계정이 여러 개인 경우에도 온라인 리소스에 간편하게 액세스할 수 있습니다. Visual Studio에 로그인하면 컴퓨터의 Visual Studio 2015 및 Blend의 모든 인스턴스에 자동으로 로그인됩니다. 자동으로 로그인되면 설정 로밍이 자동으로 시작됩니다. Visual Studio 2015에서는 기능 간에 계정이 공유되므로 적절한 토큰이 있는 동안에는 **팀 탐색기**에서 Visual Studio Team Services 계정에 액세스하고 서버 탐색기에서 Microsoft Azure 구독의 리소스와 웹 사이트에 액세스할 수 있습니다. 또한 Application Insights 프로젝트의 새 프로젝트 대화 상자에 Azure 리소스가 표시되는 것은 물론, 새 [연결된 서비스 추가](https://msdn.microsoft.com/office/aa905340.aspx) 대화 상자에는 Azure 모바일, Azure 스토리지, [Microsoft Office 365](https://developer.salesforce.com/) 및 **Saleforce.com developer** 계정도 표시됩니다.
@@ -61,7 +61,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>네이티브 C++용 플랫폼 간 앱 및 라이브러리
  C++는 대부분의 모바일 디바이스에서 기본적으로 사용할 수 있는 언어입니다. 이 언어를 사용하여 여러 모바일 플랫폼 대상에 대해 빌드할 수 있는 플랫폼 간 공유 코드 라이브러리를 작성할 수 있습니다. C++를 사용하여 전체 모바일 앱을 만들 수도 있습니다. Visual C++를 사용하여 플랫폼 간 코드를 편집, 빌드, 배포 및 디버그할 수 있습니다. Windows 앱용 템플릿 외에도 Android Native-Activity 앱, iOS 앱용 템플릿을 사용하여 프로젝트를 만들거나 Xamarin 하이브리드 앱이 포함된 여러 플랫폼에 대해 공유 코드 라이브러리를 사용하여 프로젝트를 만들 수도 있습니다. 플랫폼별 IntelliSense를 사용하면 API를 탐색하고 Android, iOS 또는 Windows 대상에 대한 올바른 코드를 생성할 수 있습니다. x86 또는 ARM 네이티브 플랫폼에 대한 빌드를 구성하거나, 네트워크에 연결된 Mac의 iOS 시뮬레이터 또는 iOS 디바이스에 코드를 배포하거나 직접 연결된 Android 디바이스에 코드를 배포하거나, 높은 성능의 Android용 Microsoft Visual Studio 에뮬레이터를 사용하여 테스트할 수 있습니다. Visual Studio 디버거에서 중단점을 설정하고 변수를 조사하고 스택을 보고 단계별로 C++ 코드를 실행할 수 있습니다. 플랫폼에 가장 특정한 코드를 제외한 모든 코드를 여러 앱 플랫폼 간에 공유하고, Visual Studio에서 하나의 솔루션을 사용하여 이 코드를 모두 빌드할 수 있습니다.
 
- 플랫폼 C++간 작업을 시작 하려면 [시각적 개체 C++ 를 사용 하 여 플랫폼 간 모바일 앱 빌드](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md) 를 참조 하세요.
+ 플랫폼 간 c + +를 시작 하려면 [Visual C++를 사용 하 여 플랫폼 간 모바일 앱 빌드](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md) 를 참조 하세요.
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>Windows 10 디바이스용 유니버설 Windows 앱
  유니버설 Windows 플랫폼과 단일 Windows 코어를 사용하여 휴대폰에서 데스크톱에 이르는 모든 Windows 10 디바이스에서 동일한 앱을 실행할 수 있습니다. Visual Studio 2015 및 유니버설 Windows 앱 개발 도구를 사용하여 이러한 유니버설 Windows 앱을 만듭니다.
@@ -92,7 +92,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 #### <a name="c"></a>C++
  Visual C++에서는 C++11/14 언어 규칙이 대폭 개선된 것은 물론, 플랫폼 간 모바일 디바이스 개발과 다시 시작 가능한 함수 및 await(현재 C++17에서 표준화하기로 계획)가 지원되며, CRT(C 런타임 라이브러리) 및 C++ STL(표준 템플릿 라이브러리) 구현의 개선 사항 및 버그 수정, MFC의 크기 조정 가능한 대화 상자를 비롯해 새로운 컴파일러 최적화 기능, 향상된 빌드 성능, 새로운 진단 기능, 코드 편집기의 새로운 생산성 도구를 제공합니다.
 
- 자세한 내용은 [시각적 개체 C++ ](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) 및 시각적 [ C++ 블로그의](https://devblogs.microsoft.com/cppblog/)새로운 기능을 참조 하세요.
+ 자세한 내용은 Visual C++ 및 [Visual C++ 블로그의](https://devblogs.microsoft.com/cppblog/) [새로운 기능](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) 을 참조 하세요.
 
 ## <a name="device-preview-menu-bar"></a>디바이스 미리 보기 메뉴 모음
  유니버설 Windows 플랫폼 프로젝트에서 디바이스 미리 보기 메뉴 모음을 사용하면 XAML기반 UI가 다양한 화면 크기에서 렌더링되는 방식을 볼 수 있습니다.
@@ -105,9 +105,9 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 ## <a name="connect-to-services"></a>서비스 연결
  Visual Studio 2015를 사용하면 앱과 서비스를 그 어느 때보다 쉽게 연결할 수 있습니다.  새로운 '연결된 서비스 추가' 마법사는 프로젝트를 구성하고 필요한 인증 지원을 추가하며 필요한 NuGet 패키지를 다운로드하여 신속하고 어려움 없이 서비스에 대한 코딩을 시작할 수 있습니다. '연결된 서비스 추가' 마법사는 또한 새로운 계정 관리자와 통합되어 여러 사용자 계정 및 구독에 대한 작업을 간편하게 수행할 수 있습니다. Visual Studio 2015에서는 다음 서비스에 대한 지원이 기본적으로 제공됩니다(사용자에게 계정이 있다고 가정).
 
-1. Azure 모바일 서비스
+1. Azure Mobile Services
 
-2. Azure 저장소
+2. Azure Storage
 
 3. Office 365(메일, 연락처, 달력, 파일, 사용자 및 그룹)
 
@@ -151,7 +151,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 ## <a name="live-code-analysis-light-bulbs"></a>라이브 코드 분석(전구)
  새로운 C# 및 Visual Basic용 Roslyn 컴파일러는 컴파일 시간을 개선할 뿐 아니라, 라이브 코드 분석과 같은 완전히 새로운 시나리오를 지원하여 입력하는 내용에 따라 코드 편집기 내부에서 직접 다양한 사용자 지정 가능 피드백과 제안을 제공합니다. Visual Studio 2015에서 전구는 왼쪽 여백(키보드 사용 시) 또는 도구 설명(마우스 커서로 오류를 가리킬 경우)에 표시됩니다. 전구는 컴파일러(사용자 지정 규칙 집합을 사용할 수 있음)가 코드에서 문제를 감지했음을 실시간으로 알려주고 문제를 해결하는 방법에 대한 제안도 제공합니다. 전구가 나타나면 클릭하여 조치 가능한 제안을 확인합니다.
 
- ![Visual Studio Code 편집기의 Light 전구](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
+ ![Visual Studio Code 편집기의 전구](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
 
 ## <a name="enjoy-these-additional-ide-improvements"></a>이러한 추가 IDE 개선 사항 활용
 
@@ -186,11 +186,11 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
 - Visual Studio 편집기에서 전체 코드 파일의 기록을 가져옵니다.
 
-   ![CodeLens: 코드 파일 정보 가져오기](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: 코드 파일 세부 정보 가져오기](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 코드를 변경한 사용자를 보여 주는 그래프를 확인합니다. 이는 팀의 변경 내용에서 패턴을 찾고 해당 영향을 평가하는 데 도움이 될 수 있습니다.
 
-   ![CodeLens: 코드 변경 내용 기록을 그래프로 표시 합니다.](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: 코드 변경 내용 기록을 그래프로 보기](./ide/media/codelens.png "CodeLens")
 
 - 코드가 마지막으로 변경된 시기를 쉽게 확인합니다.
 
@@ -205,7 +205,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
  이 릴리스에서는 그룹 선택, 편집, 관리 및 그룹 콘텐츠 레이아웃 변경 등과 관련된 여러 섹션으로 명령을 그룹화하여 코드 포인트 및 링크에 대한 바로 가기 메뉴를 훨씬 더 쉽게 사용할 수 있도록 만들었습니다. 테스트 프로젝트는 다른 프로젝트와 다른 스타일로 표시되며, 맵의 요소에 대한 아이콘이 더 적절한 버전으로 업데이트되었습니다.
 
- ![새 코드 맵에 선택한 항목 표시](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![선택한 항목을 새 코드 맵에 표시](./ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  기타 기능 향상은 다음과 같습니다.
 
@@ -252,15 +252,15 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
  제목 표시줄에서 노란색의 웃는 얼굴을 클릭하고 마음에 든 부분에 대한 설명을 입력한 후 **웃는 얼굴 보내기** 단추를 클릭하기만 하면 됩니다.
 
- 됐습니다! 사용자의 피드백은 적절한 역량을 갖춘 팀으로 전달되며 해당 팀에서는 곧바로 사용자의 만족도를 높이기 위한 방법을 고안하기 시작합니다.
+ 끝났습니다. 사용자의 피드백은 적절한 역량을 갖춘 팀으로 전달되며 해당 팀에서는 곧바로 사용자의 만족도를 높이기 위한 방법을 고안하기 시작합니다.
 
 ### <a name="send-a-frown"></a>찡그린 얼굴 보내기
  제품에서 개선해야 할 부분에 대한 피드백을 받으면 고객에게 가장 중요한 부분에 가장 우선적으로 집중하게 되므로 백로그를 관리하는 데 도움이 됩니다. 거슬리거나 불편하게 하는 부분이 있는 경우 IDE 내에서 바로 **찡그린 얼굴 보내기** 기능을 사용하여 알려 주시기 바랍니다. 이 프로세스 역시 무척 간단합니다.
 
  우선 제목 표시줄에서 노란색 웃는 얼굴을 클릭한 후 **찡그린 얼굴 보내기**를 클릭합니다. 그런 다음 마음에 들지 않는 부분에 대한 설명을 입력한 후 찡그린 얼굴 보내기 단추를 클릭하면 됩니다. 자세한 내용은 [의견 보내기](./ide/talk-to-us.md)를 참조하세요.
 
-### <a name="report-crashes-hangs-and-performance-issues"></a>충돌, 중단 및 성능 문제 신고
- 때로는 찡그린 얼굴에 간략한 메모를 남기는 것만으로는 마음에 들지 않는 무언가가 미치는 온전한 영향을 충분히 전달할 수 없는 경우가 있습니다. 중단, 충돌 또는 성능 문제가 발생하는 경우 찡그린 얼굴을 보낸 후 표시되는 대화 상자를 사용하여 재현 단계, 크래시 덤프 및 추적 파일을 손쉽게 공유할 수 있습니다.
+### <a name="report-crashes-unresponsive-and-performance-issues"></a>충돌, 응답 하지 않음 및 성능 문제 보고
+ 때로는 찡그린 얼굴에 간략한 메모를 남기는 것만으로는 마음에 들지 않는 무언가가 미치는 온전한 영향을 충분히 전달할 수 없는 경우가 있습니다. Visual Studio가 응답을 중지 하거나 충돌 하거나 다른 성능 문제를 경험 하는 경우 찡그린 얼굴 보내기을 보낸 후 표시 되는 대화 상자를 사용 하 여 재현 단계, 크래시 덤프 및 추적 파일을 쉽게 공유할 수 있습니다.
 
  먼저, 위에서 설명한 대로 찡그린 얼굴을 보냅니다. 대화 상자가 나타나면 기본 태그 중 하나를 사용하여 피드백에 태그를 지정할 수도 있고 태그를 직접 만들 수도 있습니다. 태그는 Microsoft에서 사용자의 피드백을 적절한 기능 팀으로 전달하는 데 도움이 됩니다. **범주 선택** 드롭다운 목록에서 Microsoft에 알리려는 문제를 나타내는 옵션을 선택한 후 문제를 재현하기 위한 단계를 수행합니다. Visual Studio를 사용하여 피드백을 보내는 방법과 관련된 자세한 단계도 확인할 수 있습니다. 자세한 내용은 [Visual Studio 웃는 얼굴 보내기 지침](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)을 참조 하세요.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::단계 | 마이크로 소프트 문서
+title: 'IDebugProcess3:: Step | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5c4927f3f997b7fdbdca2b32977f2aa31a51219
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723557"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386695"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-프로세스가 한 단계의 명령이나 문을 단계별로 처리하게 합니다.
+프로세스에서 하나의 명령 또는 문을 단계별로 실행 합니다.
 
 > [!NOTE]
 > 이 메서드는 [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md)대신 사용 해야 합니다.
@@ -48,23 +48,23 @@ int Step(
 
 ## <a name="parameters"></a>매개 변수
 `pThread`\
-【인】 단계별 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
+진행 단계별 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
 `sk`\
-【인】 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) 값 중 하나입니다.
+진행 [Stkind](../../../extensibility/debugger/reference/stepkind.md) 값 중 하나입니다.
 
 `step`\
-【인】 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) 값 중 하나입니다.
+진행 [Stunit](../../../extensibility/debugger/reference/stepunit.md) 값 중 하나입니다.
 
 ## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- 스레드 간에 스레드 동기화 또는 통신이 있는 경우 특정 스레드가 스테핑될 때 프로세스의 다른 스레드가 실행되어야 합니다.
+ 스레드 동기화 또는 스레드 간 통신이 있는 경우 특정 스레드가 단계별로 실행 될 때 프로세스의 다른 스레드를 실행 해야 합니다.
 
- **경고 메시지** 이 호출을 처리하는 동안 중지 이벤트 또는 즉각적인(동기식) 이벤트를 [Event에](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 보내지 마십시오. 그렇지 않으면 디버거가 멈출 수 있습니다.
+ **경고** 이 호출을 처리 하는 동안 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 에 중지 이벤트 또는 즉각적인 (동기) 이벤트를 보내지 않습니다. 그렇지 않으면 디버거가 응답 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)
