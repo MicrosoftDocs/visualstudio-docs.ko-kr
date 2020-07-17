@@ -228,7 +228,7 @@
               href: checklist-creating-new-project-types.md
             - name: 프로젝트 팩터리를 사용하여 프로젝트 인스턴스 만들기
               href: creating-project-instances-by-using-project-factories.md
-            - name: '관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)'
+            - name: 관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)
               href: using-the-managed-package-framework-to-implement-a-project-type-csharp.md
             - name: 프로젝트 형식 등록
               href: registering-a-project-type.md

@@ -1,4 +1,4 @@
-- name: 'C# 자습서'
+- name: C# 자습서
   href: index.yml
 - name: 개요
   items:
@@ -13,7 +13,7 @@
 - name: 앱 만들기
   expanded: true
   items:
-    - name: '첫 번째 C# 앱 만들기'
+    - name: 첫 번째 C# 앱 만들기
       href: tutorial-console.md
     - name: 웹앱 만들기
       href: tutorial-aspnet-core.md
