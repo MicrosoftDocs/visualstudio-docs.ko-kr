@@ -10,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bfd94a55fe207f5c20e2ed1e5630d62c73c9ba2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
+ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904731"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86418066"
 ---
 # <a name="walkthrough-highlight-text"></a>연습: 텍스트 강조 표시
 MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집기에 다른 시각적 효과를 추가할 수 있습니다. 이 연습에서는 텍스트 파일에서 현재 단어의 모든 항목을 강조 표시 하는 방법을 보여 줍니다. 텍스트 파일에서 단어가 두 번 이상 발생 하는 경우 한 번에 캐럿을 배치 하면 모든 항목이 강조 표시 됩니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -104,7 +104,7 @@ MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집�
     ```csharp
     public HighlightWordFormatDefinition()
     {
-                this.BackgroundColor = Colors.LightBlue;
+        this.BackgroundColor = Colors.LightBlue;
         this.ForegroundColor = Colors.DarkBlue;
         this.DisplayName = "Highlight Word";
         this.ZOrder = 5;

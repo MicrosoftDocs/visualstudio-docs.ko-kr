@@ -1,17 +1,17 @@
 ---
 title: XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921108"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459296"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 
@@ -99,11 +99,9 @@ ms.locfileid: "82921108"
 
 확대/축소 컨트롤과 유사하게 개체의 비율 크기를 조정합니다. **Viewbox**에 하나의 개체만 추가할 수 있습니다. 둘 이상의 개체에 해당 효과를 적용하려면 레이아웃 패널을 **ViewBox**에 추가한 후 컨트롤을 해당 레이아웃 패널에 추가합니다.
 
-(WPF 프로젝트에만 사용 가능)
-
 ![ViewBox 레이아웃 컨트롤](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [XAML 디자이너의 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [XAML 디자이너를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
