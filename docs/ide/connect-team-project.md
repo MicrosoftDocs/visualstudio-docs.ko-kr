@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 31fab067ec9844b36c287b80ed481a68861b222e
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092325"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181055"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -38,7 +38,7 @@ ms.locfileid: "86092325"
    ![팀 탐색기의 프로젝트에 연결](media/team-explorer/connect-project.png)
 
 > [!TIP]
-> 새 프로젝트를 만들거나 프로젝트에 사용자를 추가해야 하는 경우 [프로젝트 만들기(Azure DevOps)](/azure/devops/organizations/projects/create-project) 및 [프로젝트 또는 팀에 사용자 추가(Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)를 참조하세요.
+> 리포지토리에서 프로젝트를 열려면 [리포지토리에서 프로젝트 열기](../get-started/tutorial-open-project-from-repo.md)를 참조하세요. 새 프로젝트를 만들거나 프로젝트에 사용자를 추가하려면 [프로젝트 만들기(Azure DevOps)](/azure/devops/organizations/projects/create-project) 및 [프로젝트 또는 팀에 사용자 추가(Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

@@ -5,19 +5,19 @@ description: 날짜별로 정렬된 Visual Studio의 릴리스 버전 및 빌드
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 06/30/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 08190b7c2109f8a5344264786b5c1e3906c4c7b5
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770921"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386188"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -29,11 +29,16 @@ ms.locfileid: "85770921"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Preview 4 | 2020년 7월 14일 | 16.7.30310.162 |
+| 16.6.4 | Release | 2020년 7월 14일 | 16.6.30309.148 |
+| 16.4.11 | Release | 2020년 7월 14일 | 16.4.30308.118 |
+| 16.0.16 | Release | 2020년 7월 14일 | 16.0.28803.791 |
 | 16.6.3 | Release | 2020년 6월 30일 | 16.6.30225.117 |
 | 16.7.0 | 미리 보기 3.1 | 2020년 6월 25일 | 16.7.30223.230 |
 | 16.7.0 | Preview 3 | 2020년 6월 23일 | 16.7.30218.91 |
 | 16.0.15 | Release | 2020년 6월 9일 | 16.0.28803.753 |
 | 16.6.2 | Release | 2020년 6월 9일 | 16.6.30204.135 |
+| 16.4.10 | Release | 2020년 6월 9일 | 16.4.30204.51 |
 | 16.7.0 | Preview 2 | 2020년 6월 2일 | 16.7.30128.36 |
 | 16.6.1 | Release | 2020년 6월 1일 | 16.6.30128.74 |
 | 16.4.9 | Release | 2020년 5월 27일 | 16.4.30120.98 |
@@ -156,6 +161,7 @@ ms.locfileid: "85770921"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.25 | Release | 2020년 7월 14일 | 15.9.28307.1216 |
 | 15.9.24 | Release | 2020년 6월 9일 | 15.9.28307.1177 |
 | 15.9.23 | Release | 2020년 5월 12일 | 15.9.28307.1146 |
 | 15.9.22 | Release | 2020년 4월 14일 | 15.9.28307.1093 |

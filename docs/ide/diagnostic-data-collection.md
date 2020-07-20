@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652470"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387254"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio에서 수집한 시스템에서 생성된 로그
 
@@ -20,11 +20,11 @@ Visual Studio는 [Visual Studio 사용자 환경 개선 프로그램](visual-stu
 
 ## <a name="types-of-collected-data"></a>수집되는 데이터의 유형
 
-Visual Studio에서는 크래시, 중단, UI 무응답 및 높은 CPU 또는 메모리 사용량에 대해 시스템에서 생성된 로그를 수집합니다. 제품 설치 또는 사용 중 발생하는 오류에 대한 정보도 수집합니다. 수집되는 데이터는 오류에 따라 다르며, 스택 추적, 메모리 덤프 및 예외 정보를 포함할 수 있습니다.
+Visual Studio에서는 크래시, UI 응답 없음 및 높은 CPU 또는 메모리 사용량에 대해 시스템에서 생성된 로그를 수집합니다. 제품 설치 또는 사용 중 발생하는 오류에 대한 정보도 수집합니다. 수집되는 데이터는 오류에 따라 다르며, 스택 추적, 메모리 덤프 및 예외 정보를 포함할 수 있습니다.
 
 - CPU 사용량이 많고 응답이 없는 경우 관련 Visual Studio 스레드의 스택 추적이 수집됩니다.
 
-- 일부 스레드의 스택 추적으로 문제의 근본 원인(예: 크래시, 중단 또는 상위 메모리 사용량)을 확인할 수 없는 경우 메모리 *덤프*를 수집합니다. 덤프는 오류가 발생한 프로세스의 상태를 나타냅니다.
+- 일부 스레드의 스택 추적으로 문제의 근본 원인(예: 크래시, 응답 없음 또는 높은 메모리 사용량)을 확인할 수 없는 경우 메모리 ‘덤프’를 수집합니다. 덤프는 오류가 발생한 프로세스의 상태를 나타냅니다.
 
 - 디스크의 파일에 쓰려고 시도하는 중에 발생한 오류와 같은 예기치 않은 오류 상황이 발생한 경우 예외에 대한 정보를 수집합니다. 정보에는 예외의 이름, 예외가 발생한 스레드의 스택 추적, 예외와 관련된 메시지 및 특정 예외와 관련된 기타 정보가 포함됩니다.
 
@@ -52,7 +52,7 @@ Visual Studio에서는 크래시, 중단, UI 무응답 및 높은 CPU 또는 메
 
 ### <a name="error-classification"></a>오류 분류
 
-로그에 따라 오류를 분류하고 계산하여 조사의 우선 순위를 지정합니다. 예를 들어 "System.IO.FileStream.Init"의 “System.IO.\__Error.WinIOError”가 \<x> 버전의 제품에서 500번 발생했으며 해당 버전에서 발생률이 가장 높은 경우가 있습니다.
+로그에 따라 오류를 분류하고 계산하여 조사의 우선 순위를 지정합니다. 예를 들어 “System.IO.FileStream.Init”의 “System.IO.\__Error.WinIOError”가 \<x> 버전의 제품에서 500번 발생했으며 해당 버전에서 발생률이 가장 높은 경우가 있습니다.
 
 ### <a name="work-items-for-tracking"></a>추적할 작업 항목
 
@@ -70,7 +70,7 @@ Visual Studio에서는 크래시, 중단, UI 무응답 및 높은 CPU 또는 메
 
 데이터 수집 목적과 데이터의 액세스 및 보존에 대한 제약 조건을 고려할 때 Visual Studio 및 Windows의 기본 개인 정보 설정을 사용하는 것이 좋습니다. 그러나 Visual Studio 환경 개선 프로그램을 [옵트아웃](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out)할 수 있습니다. 모든 프로그램에 대해 시스템에서 생성된 로그 수집을 옵트아웃하려면 [Windows 10의 진단, 피드백 및 개인 정보](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)를 참조하세요. 옵션은 사용 중인 Windows 버전에 따라 달라질 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 사용자 환경 개선 프로그램](visual-studio-experience-improvement-program.md)
 - [Windows 10의 진단, 피드백 및 개인 정보](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

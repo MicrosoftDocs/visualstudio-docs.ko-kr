@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906024"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211632"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 **“클라우드 구독”** 이라고 합니다.
@@ -40,7 +40,7 @@ Azure 구독에 대한 [소유자](https://docs.microsoft.com/azure/role-based-a
 
 4. 구입할 구독의 수를 선택합니다.
     > [!div class="mx-imgBorder"]
-    > ![구독 수 선택](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![구독 수 선택](_img/buy-vs-subscriptions/buy-vs-sub-users.png "구매할 구독 수 선택")
 
     자신에게 할당된 구독을 사용하지 않으려면 **이 구독을 내게 할당**을 지웁니다.
 
@@ -62,12 +62,18 @@ Azure 구독에 대한 [소유자](https://docs.microsoft.com/azure/role-based-a
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>구매한 클라우드 구독 갱신 취소
 
-* 구매한 구독의 수를 변경하려면 다음을 수행합니다.
+구독을 취소하려면 계약의 구독 수를 영(0)으로 설정하면 됩니다.  다음 단계를 수행하여 구독 수를 줄입니다.
+1. <https://manage.visualstudio.com>에 로그인
+1. 계약이 두 개 이상인 경우 드롭다운 목록에서 원하는 계약을 선택합니다.
+1. 왼쪽 위에 있는 **개요** 아이콘을 클릭하여 구독 정보를 표시합니다.  
+> [!div class="mx-imgBorder"]
+> ![구독 개요 표시](_img/buy-vs-subscriptions/overview-button.png "개요 단추를 클릭하여 구독 정보 표시")
+
+4. 취소하려는 구독 항목을 찾고 **수량 변경**을 클릭합니다.
+1. 수량을 영(0)으로 설정합니다. 구독은 예약된 청구 날짜까지 유지되지만 청구 날짜에 도달해도 갱신되지 않습니다.   
 
 > [!div class="mx-imgBorder"]
-> ![구독 변경](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* 이러한 구독을 취소하려면 구독 수를 0으로 줄입니다. 다음 청구 기간의 시작 시(월별 클라우드 구독의 경우 첫 번째 다음 달 및 연간 클라우드 구독의 경우 12개월 후)에 갱신되지 않습니다.
+> ![구독 변경](_img/buy-vs-subscriptions/manage-subscriptions.png "‘수량 변경’을 클릭하여 구독 취소")
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 

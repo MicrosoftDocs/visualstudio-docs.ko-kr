@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769930"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387319"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 
@@ -69,7 +69,7 @@ ms.locfileid: "85769930"
 
 1. **레코드** 탭을 선택합니다.
 
-1. 문제를 재현할 수 있는 경우 **작업 기록**에서 Visual Studio의 현재 인스턴스를 선택합니다. 예를 들어 Visual Studio가 정지되어 수행할 수 없는 경우 **\<Create a new instance>** 를 선택하여 Visual Studio의 새 인스턴스에서 작업을 기록합니다.
+1. 문제를 재현할 수 있는 경우 **작업 기록**에서 Visual Studio의 현재 인스턴스를 선택합니다. 예를 들어 Visual Studio가 응답을 중지하여 선택할 수 없는 경우에는 **\<Create a new instance>** 를 선택하여 Visual Studio의 새 인스턴스에서 동작을 기록합니다.
 
 1. **기록 시작**을 선택합니다. 도구를 실행할 수 있는 권한을 제공합니다.
 

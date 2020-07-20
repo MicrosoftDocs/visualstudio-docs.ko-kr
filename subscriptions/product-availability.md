@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 위한 소프트웨어 다운로드 내의 제품 가용성 알아보기
-ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 27950fa2a4589ee5068e7d5f294f651132c229ea
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232311"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387215"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독 내 소프트웨어 다운로드 관련 제품 가용성
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.
@@ -27,7 +27,7 @@ ms.locfileid: "80232311"
 - **제품이 구독에 포함되어 있지 않습니다.** 특별 사용 조건, 기술 제한 또는 개발자 관련성으로 인해 일부 Microsoft 제품이 구독에 포함되지 않습니다. 제품을 구독에 추가하도록 제안하려면 Visual Studio [고객 서비스 센터](https://visualstudio.microsoft.com/subscriptions/support/)로 전자 메일을 보내주세요.
 - **공개적으로 제공되는 제품입니다.** 일부 도구, SDK, DDK 및 서비스 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 공개적으로 제공됩니다. 이러한 제품 중 일부는 [다운로드]에 게시되지 않을 수 있습니다.
 - **아직 릴리스되지 않은 제품입니다.**  [다운로드]에서는 많은 시험판(베타) 버전 및 릴리스 후보가 제공됩니다. 그러나 모든 베타 버전이 포함될 수 있는 것은 아닙니다. 예를 들어 일부 베타 버전에는 특별한 등록이나 자격이 필요합니다. 공개 기술 베타 프로그램에 대한 자세한 내용은 [Microsoft Connect](https://connect.microsoft.com/)를 참조하세요.
-- **해당 국가에서 사용할 수 없는 제품입니다.** 일부 Microsoft 제품은 지역 제한으로 인해 사용할 수 없습니다.
+- **해당 국가/지역에서 사용할 수 없는 제품입니다.** 일부 Microsoft 제품은 지역 제한으로 인해 사용할 수 없습니다.
 - **중복 소프트웨어입니다.** Office 제품군, 독립 실행형 Office 다운로드 및 제품 키 선택은 Office가 포함된 구독에서 더 이상 사용할 수 없습니다. 다운로드 및 제품 키는 동일한 버전의 해당 최상위 Office 제품군에서 사용할 수 있습니다.  예를 들어 PowerPoint 2010을 검색하면 검색 결과가 생성되지 않습니다.  그러나 Office 2010(PowerPoint 2010이 포함된 Office 제품군)을 검색하면 해당 제품군을 다운로드할 수 있습니다.
 
 ## <a name="what-do-i-get"></a>무엇을 얻을 수 있나요?
@@ -38,7 +38,7 @@ ms.locfileid: "80232311"
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

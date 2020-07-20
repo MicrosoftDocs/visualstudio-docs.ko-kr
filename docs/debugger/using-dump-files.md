@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676366"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386955"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 덤프 파일
 
@@ -35,7 +35,7 @@ ms.locfileid: "65676366"
 
 Visual Studio에서 힙을 포함하는 덤프 파일을 여는 것은 디버그 세션의 중단점에서 중지하는 것과 같습니다. 실행을 계속할 수 없지만 덤프 시 앱의 스택, 스레드 및 변수 값을 검사할 수 있습니다.
 
-덤프는 개발자가 액세스할 수 없는 머신에서 발생하는 문제를 디버깅하는 데 주로 사용됩니다. 충돌이나 중단 문제를 자신의 머신에서 재현할 수 없는 경우 고객의 머신에서 덤프 파일을 사용할 수 있습니다. 또한 테스터는 추가 테스트에 사용할 크래시 또는 중단 데이터를 저장하는 덤프를 만듭니다.
+덤프는 개발자가 액세스할 수 없는 머신에서 발생하는 문제를 디버깅하는 데 주로 사용됩니다. 크래시 또는 응답하지 않는 프로그램을 자신의 머신에서 재현할 수 없는 경우 고객의 머신에서 덤프 파일을 사용할 수 있습니다. 또한 테스터는 추가 테스트에 사용할 크래시 또는 응답하지 않는 프로그램 데이터를 저장하는 덤프를 만듭니다.
 
 Visual Studio 디버거는 관리 코드 또는 네이티브 코드에 대한 덤프 파일을 저장할 수 있습니다. Visual Studio 또는 파일을 *미니덤프* 형식으로 저장하는 다른 앱에서 만든 덤프 파일을 디버그할 수 있습니다.
 

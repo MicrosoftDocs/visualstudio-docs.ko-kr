@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288769"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211609"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -67,7 +67,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
     </Project>
     ```
 
-- 솔루션의 루트에 ".runsettings"라는 실행 설정 파일을 배치합니다.
+- 솔루션의 루트에 *.runsettings*라는 실행 설정 파일을 배치합니다.
 
   실행 설정 파일의 자동 검색을 사용하도록 설정하면 이 파일의 설정이 모든 테스트 실행에 적용됩니다. runsettings 파일의 자동 검색은 다음 두 위치에서 켤 수 있습니다.
   
@@ -205,6 +205,11 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 
 다른 형식의 진단 데이터 어댑터를 사용자 지정하려면 [테스트 설정 파일](../test/collect-diagnostic-information-using-test-settings.md)을 사용합니다.
 
+
+### <a name="blame-data-collector"></a>원인 데이터 수집기
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+이 옵션을 사용하여 테스트 호스트 크래시가 발생하는 문제가 있는 테스트를 격리할 수 있습니다. 수집기를 실행하면 크래시가 발생하기 전에 테스트 실행 순서를 캡처하는 *TestResults*의 출력 파일(*Sequence.xml*)이 만들어집니다. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -386,6 +402,33 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
 |**MapInconclusiveToFailed**|false|테스트가 불충분한 상태로 완료되는 경우 **테스트 탐색기**에서 건너뛴 상태로 매핑됩니다. 결과가 불충분한 테스트를 실패로 표시하려는 경우 값을 **true**로 설정합니다.|
 |**InProcMode**|false|테스트를 MSTest 어댑터와 동일한 프로세스에서 실행하려면 이 값을 **true**로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|
 |**AssemblyResolution**|false|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다. 예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다. 경로를 지정하려면 **디렉터리 경로** 요소를 사용합니다. 경로는 환경 변수를 포함할 수 있습니다.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>*.runsettings* 파일에서 환경 변수를 지정합니다.
+
+환경 변수는 테스트 호스트와 직접 상호 작용할 수 있는 *.runsettings* 파일에서 설정할 수 있습니다. *DOTNET_ROOT* 같은 환경 변수를 설정해야 하는 중요한 프로젝트를 지원하려면 *.runsettings* 파일에 환경 변수를 지정해야 합니다. 해당 변수는 테스트 호스트 프로세스를 생성하는 동안 설정되며 호스트에서 사용할 수 있습니다.
+
+### <a name="example"></a>예제
+
+다음 코드는 환경 변수를 전달하는 샘플 *.runsettings* 파일입니다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+**RunConfiguration** 노드에는 **EnvironmentVariables** 노드가 포함되어야 합니다. 환경 변수는 요소 이름 및 해당 값으로 지정할 수 있습니다.
+
+> [!NOTE]
+> 테스트 호스트를 시작할 때 항상 해당 환경 변수를 설정해야 하므로 테스트를 항상 별도의 프로세스로 실행해야 합니다. 이를 위해 테스트 호스트가 항상 호출되도록 하는 환경 변수가 있는 경우 */InIsolation* 플래그가 지정됩니다.
 
 ## <a name="see-also"></a>참조
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540870"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386987"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
 
@@ -384,7 +384,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 
 정의되지 않은 특성을 참조하면 특성 값이 비어 있을 수 있습니다. 예를 들어 토큰 `$(StartupFile)`을 사용하지만 프로젝트에 시작 파일이 정의되어 있지 않으면 토큰이 빈 문자열로 확인됩니다. 그러한 경우 기본값을 정의하는 것이 좋습니다. 예를 들어 Bottle, Flask 및 Django 프로젝트 템플릿에 정의된 **Run server** 및 **Run debug server** 명령은 프로젝트 속성에 서버 시작 파일을 다른 방법으로 지정하지 않은 한 기본적으로 *manage.py*로 지정됩니다.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>명령을 실행할 때 Visual Studio가 중지하고 작동 중단
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>명령을 실행할 때 Visual Studio가 응답을 중지하고 크래시가 발생함
 
 `ExecuteIn="output"`을 사용하여 콘솔 명령의 실행을 시도했을 가능성이 있습니다. 이 경우 Visual Studio가 작동 중단되고 출력의 구문 분석을 시도할 수 있습니다. 대신 `ExecuteIn="console"`를 사용하세요. ([문제 3682](https://github.com/Microsoft/PTVS/issues/3681) 참조.)
 

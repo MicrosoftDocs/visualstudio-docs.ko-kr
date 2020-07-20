@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283595"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387046"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -220,7 +220,7 @@ Visual Studio 2019에서 진행 중인 다른 기능에 대해 더 알고 싶은
 
 * Visual Studio 개선 방안에 대한 의견이 있는 분들은 [기능 제안](suggest-a-feature.md) 도구를 사용하여 의견을 보내주세요.
 
-* 시스템 중단, 충돌 또는 기타 성능 문제가 발생하는 경우 [문제 보고](how-to-report-a-problem-with-visual-studio.md) 도구를 사용하여 간편하게 재현 단계 및 지원 파일을 공유할 수 있습니다.
+* Visual Studio가 응답을 중지하거나 크래시가 발생하는 문제 또는 기타 성능 문제가 발생하는 경우 [문제 신고](how-to-report-a-problem-with-visual-studio.md) 도구를 사용하여 쉽게 재현 단계 및 지원 파일을 공유할 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

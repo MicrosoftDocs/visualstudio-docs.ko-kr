@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903867"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386123"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Just-In-Time 디버거를 사용하지 않도록 설정
 
@@ -43,4 +43,4 @@ Visual Studio가 설치되어 있지 않으면 스크립트 디버깅 또는 서
 
 Just-In-Time 디버깅을 사용하지 않도록 설정한 이후에 앱에서 오류를 처리하고 정상적으로 실행할 수 있습니다.
 
-앱에 아직 처리되지 않은 오류가 있으면 오류 메시지가 표시되거나, 앱에서 크래시 또는 중단 현상이 발생할 수 있습니다. 오류가 해결될 때까지 앱이 정상적으로 실행되지 않습니다. 앱 소유자에게 연락하여 문제를 해결하도록 요청할 수 있습니다.
+앱에 아직 처리되지 않은 오류가 있으면 오류 메시지가 표시되거나, 앱에서 크래시 또는 응답 중지 현상이 발생할 수 있습니다. 오류가 해결될 때까지 앱이 정상적으로 실행되지 않습니다. 앱 소유자에게 연락하여 문제를 해결하도록 요청할 수 있습니다.

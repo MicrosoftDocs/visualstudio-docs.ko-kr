@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289042"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211561"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 
@@ -52,7 +52,7 @@ ms.locfileid: "85289042"
 |**/ListExecutors**|설치된 테스트 Executor를 나열합니다.|
 |**/ListLoggers**|설치된 테스트 로거를 나열합니다.|
 |**/ListSettingsProviders**|설치된 테스트 설정 공급자를 나열합니다.|
-|**/Blame**|테스트가 실행됨에 따라 추적하고, 테스트가 프로세스 크래시를 호스트하는 경우 크래시 발생 시 실행되었던 특정 테스트까지 포함하여 실행 시퀀스의 테스트 이름을 내보냅니다. 이 출력으로 더 손쉽게 잘못된 테스트를 격리하고 추가 항목을 진단할 수 있습니다. [추가 정보](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Blame**|테스트를 원인 모드로 실행합니다. 이 옵션은 테스트 호스트의 크래시를 유발하는 문제가 있는 테스트를 격리하는 데 유용합니다. 크래시가 감지되면 크래시 전에 실행된 테스트의 순서를 캡처하는 시퀀스 파일이 `TestResults/<Guid>/<Guid>_Sequence.xml`에 만들어집니다. 자세한 내용은 [원인 데이터 수집기](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)를 참조하세요.|
 |**/Diag:[*파일 이름*]**|지정된 파일에 진단 추적 로그를 기록합니다.|
 |**/ResultsDirectory:[*path*]**|테스트 결과 디렉터리가 존재하지 않는 경우 지정된 경로에 생성됩니다.<br />예: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|현재 프로세스를 시작하는 일을 담당하는 부모 프로세스의 프로세스 ID입니다.|
@@ -64,24 +64,44 @@ ms.locfileid: "85289042"
 
 ## <a name="examples"></a>예
 
-*VSTest.Console.exe*를 실행하는 구문은 다음과 같습니다.
+*vstest.console.exe* 실행 구문은 다음과 같습니다.
 
-`Vstest.console.exe [TestFileNames] [Options]`
+`vstest.console.exe [TestFileNames] [Options]`
 
-다음 명령은 테스트 라이브러리 **myTestProject.dll**에 대해 *VSTest.Console.exe*를 실행합니다.
+다음 명령은 테스트 라이브러리 *myTestProject.dll*에 대해 *vstest.console.exe*를 실행합니다.
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-다음 명령은 여러 테스트 파일을 통해 *VSTest.Console.exe*를 실행합니다. 테스트 파일 이름을 공백으로 구분합니다.
+다음 명령은 여러 테스트 파일을 통해 *vstest.console.exe*를 실행합니다. 테스트 파일 이름을 공백으로 구분합니다.
 
 ```cmd
-Vstest.console.exe myTestFile.dll myOtherTestFile.dll
+vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-다음 명령은 여러 옵션을 통해 *VSTest.Console.exe*를 실행합니다. 이 경우 격리된 프로세스의 *myTestFile.dll* 파일에서 테스트를 실행하고, *Local.RunSettings* 파일에서 지정된 설정을 사용합니다. 또한 “우선 순위=1”로 표시된 테스트만 실행하고, 결과를 *.trx* 파일에 기록합니다.
+다음 명령은 여러 옵션을 통해 *vstest.console.exe*를 실행합니다. 이 경우 격리된 프로세스의 *myTestFile.dll* 파일에서 테스트를 실행하고, *Local.RunSettings* 파일에서 지정된 설정을 사용합니다. 또한 “우선 순위=1”로 표시된 테스트만 실행하고, 결과를 *.trx* 파일에 기록합니다.
 
 ```cmd
-vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+```
+
+다음 명령은 테스트 라이브러리 *myTestProject.dll*에 대해 `/blame` 옵션을 사용하여 *vstest.console.exe*를 실행합니다.
+
+```cmd
+vstest.console.exe myTestFile.dll /blame
+```
+
+테스트 호스트 크래시가 발생한 경우 *sequence.xml* 파일이 생성됩니다. 파일에는 크래시 발생 시 실행 중이던 특정 테스트를 포함하여 실행 시퀀스대로 테스트의 정규화된 이름이 포함됩니다.
+
+테스트 호스트 크래시가 발생하지 않으면 *sequence.xml* 파일이 생성되지 않습니다.
+
+생성된 *sequence.xml* 파일의 예: 
+
+```xml
+<?xml version="1.0"?>
+<TestSequence>
+  <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+  <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+</TestSequence>
 ```

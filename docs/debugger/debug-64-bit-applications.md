@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350773"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386253"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 애플리케이션 디버그
 로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 애플리케이션을 디버깅할 수 있습니다.
@@ -50,7 +50,7 @@ ms.locfileid: "85350773"
 
 - 컴퓨터에 설치된 네트워킹 보안 소프트웨어로 인해 네트워킹 스택이 불안정하며 localhost를 통과하는 패킷이 삭제되었습니다. 모든 네트워크 보안 소프트웨어를 사용하지 않도록 설정하고 문제가 해결되는지 확인합니다. 이 방법으로 문제가 해결되면 소프트웨어가 localhost 트래픽을 방해한다고 네트워크 보안 소프트웨어 공급업체에 신고합니다.
 
-- Visual Studio에서 중단 또는 성능 문제가 발생합니다. 문제가 주기적으로 발생하는 경우 Visual Studio(devenv.exe) 및 작업자 프로세스(msvsmon.exe)의 덤프를 수집하여 Microsoft로 보낼 수 있습니다. 문제를 신고하는 방법에 대한 자세한 내용은 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)항목을 참조하세요.
+- Visual Studio가 응답하지 않는 문제나 다른 성능 문제가 발생하고 있습니다. 문제가 주기적으로 발생하는 경우 Visual Studio(devenv.exe) 및 작업자 프로세스(msvsmon.exe)의 덤프를 수집하여 Microsoft로 보낼 수 있습니다. 문제를 신고하는 방법에 대한 자세한 내용은 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)항목을 참조하세요.
 
 ## <a name="see-also"></a>참조
 

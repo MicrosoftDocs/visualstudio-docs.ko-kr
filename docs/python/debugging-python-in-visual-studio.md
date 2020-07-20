@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541156"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387033"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -253,7 +253,7 @@ ptvsd 설치를 관리하려면:
 
     ![출력 창의 디버거 로깅 출력](media/debugger-logging-output.png)
 
-1. Visual Studio가 중단되거나 달리 **출력** 창에 액세스할 수 없는 경우 Visual Studio를 다시 시작한 다음, 명령 창을 열고 다음 명령을 입력합니다.
+1. Visual Studio가 응답을 중지하거나 달리 **출력** 창에 액세스할 수 없는 경우 Visual Studio를 다시 시작한 다음, 명령 창을 열고 다음 명령을 입력합니다.
 
     ```ps
     DebugAdapterHost.Logging /On

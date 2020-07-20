@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f687672de4bc3511fa0c9198f7ad4145b26dcd11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460800"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386721"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>오류: &#39;function&#39; 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다.
 
 전체 메시지 텍스트: ‘function’ 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다. 이로 인해 대상 프로세스가 손상되었을 수 있습니다.
 
-.NET 개체의 상태를 더 쉽게 검사할 수 있도록 디버거는 디버그된 프로세스가 자동으로 추가 코드(일반적으로 속성 getter 메서드 및 ToString 함수)를 실행하도록 강제 적용합니다. 대부분의 시나리오에서는 이러한 함수가 신속하게 완료되며 디버깅을 훨씬 쉽게 수행할 수 있습니다. 하지만 샌드박스에서는 디버거가 애플리케이션을 실행하지 않습니다. 따라서 중단된 네이티브 함수로 호출되는 속성 getter 또는 ToString 메서드에 복구가 불가능한 오랜 시간 초과가 발생할 수 있습니다. 이 오류 메시지가 표시되면 오류가 발생한 것입니다.
+.NET 개체의 상태를 더 쉽게 검사할 수 있도록 디버거는 디버그된 프로세스가 자동으로 추가 코드(일반적으로 속성 getter 메서드 및 ToString 함수)를 실행하도록 강제 적용합니다. 대부분의 시나리오에서는 이러한 함수가 신속하게 완료되며 디버깅을 훨씬 쉽게 수행할 수 있습니다. 하지만 샌드박스에서는 디버거가 애플리케이션을 실행하지 않습니다. 따라서 응답을 중지하는 네이티브 함수로 호출되는 속성 getter 또는 ToString 메서드에 복구가 불가능한 오랜 시간 초과가 발생할 수 있습니다. 이 오류 메시지가 표시되면 오류가 발생한 것입니다.
 
 이 문제가 발생하는 일반적인 이유 중 하나는 디버거가 속성을 확인할 때 검사 중인 스레드만 실행되도록 허용하는 점입니다. 그래서 속성이 디버그된 애플리케이션 내에서 다른 스레드가 실행될 때까지 대기하고 있으며 .NET 런타임이 중단시킬 수 없는 방식으로 대기하고 있는 경우 이러한 문제가 발생합니다.
 

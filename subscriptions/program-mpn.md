@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는 구독의 수에 대한 세부 정보입니다.
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183056"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387150"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 
@@ -44,7 +44,7 @@ ms.locfileid: "84183056"
 
 | 실버 역량만 있는 파트너에 대한 최대 혜택                   | 하나 이상의 골드 역량 있는 파트너에 대한 최대 혜택               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 국가당 25개 Visual Studio Enterprise 구독 및 전세계 75개 구독          | 국가당 50개 Visual Studio Enterprise 구독 및 전세계 150개 구독         |
+| 국가/지역당 25개 Visual Studio Enterprise 구독 및 전 세계 75개 구독          | 국가/지역당 50개 Visual Studio Enterprise 구독 및 전 세계 150개 구독         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Action Pack을 구매하는 파트너에 대한 구독
 
@@ -77,7 +77,7 @@ MPN을 통해 제공된 Visual Studio 구독을 사용하여 라이선스 사용
 - [사용 약관 사용](https://www.microsoft.com/useterms/) - MPN를 통해 제공된 Visual Studio 구독은 (NFR)EULA 재판매용이 아닌 Visual Studio 구독을 조건으로 합니다.
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

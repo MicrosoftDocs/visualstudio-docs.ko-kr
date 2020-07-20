@@ -1,7 +1,7 @@
 ---
-title: 테스트 탐색기를 사용하여 단위 테스트 실행 및 디버그
-description: Visual Studio에서 테스트 탐색기를 사용하여 테스트를 실행하는 방법을 알아봅니다. 이 항목에서는 빌드 후 자동 테스트 실행을 사용하도록 설정하고, 테스트 결과를 보고, 테스트 목록을 그룹화 및 필터링하고, 재생 목록을 만들고, 테스트 를 디버그하고, 테스트 바로 가기를 사용하는 방법을 설명합니다.
-ms.date: 07/29/2019
+title: 테스트 탐색기를 사용하여 단위 테스트 실행
+description: Visual Studio에서 테스트 탐색기를 사용하여 테스트를 실행하는 방법을 알아봅니다. 이 항목에서는 빌드 후 자동 테스트 실행을 사용하도록 설정하고, 테스트 결과를 보고, 테스트 목록을 그룹화 및 필터링하고, 재생 목록을 만들고, 테스트 바로 가기를 사용하는 방법을 설명합니다.
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285636"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386643"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
-테스트 탐색기를 사용하여 Visual Studio 또는 타사 단위 테스트 프로젝트에서 단위 테스트를 실행합니다. 테스트를 범주로 그룹화하고 테스트 목록을 필터링하고 테스트 재생 목록을 만들고 저장하고 실행하기 위해 테스트 탐색기를 사용할 수 있습니다. 테스트를 디버그하고 테스트 성능 및 코드 검사를 분석할 수 있습니다.
+테스트 탐색기를 사용하여 Visual Studio 또는 타사 단위 테스트 프로젝트에서 단위 테스트를 실행합니다. 테스트를 범주로 그룹화하고 테스트 목록을 필터링하고 테스트 재생 목록을 만들고 저장하고 실행하기 위해 테스트 탐색기를 사용할 수 있습니다. 코드 검사를 분석하고 [단위 테스트를 디버그](../test/debug-unit-tests-with-test-explorer.md)할 수도 있습니다.
 
-Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft 단위 테스트 프레임워크가 있습니다. 그러나 테스트 탐색기도 테스트 탐색기 어댑터를 구현한 단위 테스트 프레임워크를 실행할 수 있습니다. 타사 단위 테스트 프레임워크를 설치하는 방법에 대한 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
+**테스트 탐색기**는 솔루션의 여러 테스트 프로젝트 및 프로덕션 코드 프로젝트의 일부인 테스트 클래스에서 테스트를 실행할 수 있습니다. 테스트 프로젝트에 서로 다른 단위 테스트 프레임워크를 사용할 수 있습니다. 테스트 중인 코드가 .NET용으로 작성된 경우 테스트 프로젝트는 대상 코드의 언어에 관계없이 .NET를 대상으로 하는 임의의 언어로 작성할 수 있습니다. 네이티브 C/C++ 코드 프로젝트는 C++ 단위 테스트 프레임워크를 사용하여 테스트해야 합니다.
 
-**테스트 탐색기**는 솔루션의 여러 테스트 프로젝트 및 프로덕션 코드 프로젝트의 일부인 테스트 클래스에서 테스트를 실행할 수 있습니다. 테스트 프로젝트에 서로 다른 단위 테스트 프레임워크를 사용할 수 있습니다. 테스트 중인 코드가 .NET용으로 작성된 경우 테스트 프로젝트는 대상 코드의 언어에 관계없이 .NET를 대상으로 하는 임의의 언어로 작성할 수 있습니다. 네이티브 C/C++ 코드 프로젝트는 C++ 단위 테스트 프레임워크를 사용하여 테스트해야 합니다. 자세한 내용은 [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)을 참조하세요.
+## <a name="build-your-test-project"></a>테스트 프로젝트 빌드
+
+Visual Studio 솔루션에서 아직 테스트 프로젝트를 설정하지 않은 경우 먼저 테스트 프로젝트를 만들고 빌드해야 합니다.
+
+- [유닛 테스트 시작(.NET)](../test/getting-started-with-unit-testing.md)
+- [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)
+
+Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft 유닛 테스트 프레임워크가 있습니다. 그러나 테스트 탐색기도 테스트 탐색기 어댑터를 구현한 단위 테스트 프레임워크를 실행할 수 있습니다. 타사 단위 테스트 프레임워크를 설치하는 방법에 대한 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
 
 ## <a name="run-tests-in-test-explorer"></a>테스트 탐색기에서 테스트 실행
 
-[테스트 프로젝트를 빌드](../test/getting-started-with-unit-testing.md)하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows**를 선택한 다음 **테스트 탐색기**를 선택합니다.
+테스트 프로젝트를 빌드하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows**를 선택한 다음 **테스트 탐색기**를 선택합니다.
 
 ::: moniker range="vs-2017"
 ![단위 테스트 탐색기](../test/media/ute_failedpassednotrunsummary.png)
@@ -171,7 +178,7 @@ Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하�
 
 특성(trait)은 일반적으로 범주 이름/값 쌍이지만 단일 범주일 수도 있습니다. 특성(trait)은 단위 테스트 프레임워크에서 테스트 메서드로 식별하는 메서드에 할당할 수 있습니다. 단위 테스트 프레임워크는 특성(trait) 범주를 정의할 수 있습니다. 특성(trait) 범주에 고유한 범주 이름/값 쌍을 정의하는 값을 추가할 수 있습니다. 특성(trait) 범주 및 값을 지정하는 구문은 단위 테스트 프레임워크에 의해 정의됩니다.
 
-**Microsoft 단위 테스트 프레임워크의 관리 코드 관련 특성(trait)**
+**Microsoft 유닛 테스트 프레임워크의 관리 코드 관련 특성(trait)**
 
 관리되는 앱에 대한 Microsoft 단위 테스트 프레임워크에서 특성(trait) 이름/값 쌍을  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 특성에 정의합니다. 테스트 프레임워크에는 다음과 같은 미리 정의된 특성(trait)이 있습니다.
 
@@ -183,7 +190,7 @@ Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하�
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty 특성을 사용하여 특성(trait) 범주/값 쌍을 정의할 수 있습니다.|
 
 
-**Microsoft 단위 테스트 프레임워크의 C++ 관련 특성(trait)**
+**Microsoft 유닛 테스트 프레임워크의 C++ 관련 특성(trait)**
 
 [Microsoft Unit Testing Framework for C++ 사용 방법](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
 
@@ -211,11 +218,21 @@ Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하�
 
 재생 목록이 새 테스트 탐색기 탭에서 열립니다. 이 재생 목록을 한 번만 사용한 후 삭제하거나 재생 목록 창의 도구 모음에서 **저장** 단추를 클릭한 다음 이름 및 위치를 선택하여 재생 목록을 저장할 수 있습니다.
 
-![재생 목록이 별도의 테스트 탐색기 탭에서 열립니다.](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+![재생 목록이 별도의 테스트 탐색기 탭에서 열립니다.](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
 **재생 목록을 만들려면**테스트 탐색기에서 하나 이상의 테스트를 선택합니다. 마우스 오른쪽 단추를 클릭하고 **재생 목록에 추가** > **새 재생 목록**을 선택합니다.
 
 **재생 목록을 열려면** Visual Studio 도구 모음에서 재생 목록 아이콘을 선택하고 메뉴에서 이전에 저장된 재생 목록 파일을 선택합니다.
+
+**재생 목록을 편집하려면** 테스트를 마우스 오른쪽 단추로 클릭하고 메뉴 옵션을 사용하여 재생 목록에서 추가하거나 제거할 수 있습니다.
+
+Visual Studio 2019 버전 16.7부터 도구 모음에서 **편집** 단추를 선택할 수 있습니다. 재생 목록에서 포함 및 제외되는 테스트를 보여 주는 확인란이 테스트 옆에 표시됩니다. 원하는 대로 그룹을 편집합니다.
+
+![재생 목록 편집 단추](../test/media/vs-2019/test-explorer-playlist-edit-16-7.png)
+
+계층 구조에서 부모 그룹의 확인란을 선택하거나 선택 취소할 수도 있습니다. 이 작업을 수행하면 항상 해당 그룹에 있는 테스트를 기준으로 재생 목록을 업데이트하는 동적 재생 목록이 만들어집니다. 예를 들어 클래스 옆에 확인 표시를 하면 해당 클래스에서 추가된 모든 테스트가 재생 목록에 포함됩니다. 해당 클래스에서 테스트를 삭제하면 테스트가 재생 목록에서 제거됩니다. 도구 모음에서 저장 단추를 사용하여 재생 목록을 저장하고 디스크에 생성된 *.playlist* 파일을 열어서 규칙을 자세히 알아볼 수 있습니다. 이 파일에는 재생 목록을 구성하는 모든 규칙 및 개별 테스트가 표시됩니다.
+
+![재생 목록 xml 파일](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -294,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 예를 들어 `FullName:"MyClass" - FullName:"PerfTest"`은 이름에 "PerfTest"가 들어 있는 경우를 제외하고 "MyClass"가 들어 있는 모든 테스트를 반환합니다.
 
-## <a name="debug-and-analyze-unit-tests"></a>단위 테스트 디버그 및 분석
-
-테스트 탐색기를 사용하여 테스트에 대한 디버깅 세션을 시작할 수 있습니다. Visual Studio 디버거에서 코드를 단계별로 실행하면 단위 테스트 및 테스트 중인 프로젝트 간을 앞뒤로 매끄럽게 이동할 수 있습니다. 디버깅을 시작하려면
-
-1. Visual Studio 편집기에서 디버그하려는 하나 이상의 테스트 메서드에서 중단점을 설정합니다.
-
-    > [!NOTE]
-    > 테스트 메서드는 순서에 관계 없이 실행할 수 있기 때문에 디버그하려는 모든 테스트 메서드에 중단점을 설정합니다.
-
-2. 테스트 탐색기에서 테스트 메서드를 선택한 후 오른쪽 클릭 메뉴에서 **선택한 테스트 디버그**를 선택합니다.
-
-   디버거에 대한 자세한 내용은 [Visual Studio에서 디버그](../debugger/debugger-feature-tour.md)를 참조하세요.
-
-### <a name="diagnose-test-method-performance-issues"></a>테스트 메서드 성능 문제 진단
-
-테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 오른쪽 클릭 메뉴에서 **선택한 테스트 프로파일링**을 선택합니다. [계측 프로파일링 보고서](../profiling/understanding-instrumentation-data-values.md?view=vs-2017)를 참조하세요.
-
 ### <a name="analyze-unit-test-code-coverage"></a>단위 테스트 코드 검사 분석
 
 Visual Studio Enterprise Edition에 제공되는 Visual Studio 코드 검사 도구를 사용하여 실제로 단위 테스트를 통해 테스트되는 제품 코드의 양을 결정할 수 있습니다. 솔루션의 선택된 테스트 또는 모든 테스트에 대해 코드 검사를 실행할 수 있습니다.
@@ -341,7 +341,7 @@ Visual Studio Enterprise Edition에 제공되는 Visual Studio 코드 검사 도
 
 ## <a name="test-shortcuts"></a>바로 가기 테스트
 
-테스트 코드 편집기에서 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택하거나 또는 Visual Studio에서 기본 [테스트 탐색기 바로 가기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)를 사용하여 테스트 탐색기에서 테스트를 실행할 수 있습니다. 바로 가기 중 일부는 컨텍스트를 기반으로 합니다. 이는 바로 가기가 코드 편집기에서 커서의 위치에 따라 테스트를 디버그하거나 실행하는 것을 의미합니다. 커서가 테스트 메서드 내에 있는 경우 해당 테스트 메서드가 실행됩니다. 커서가 클래스 수준에 있는 경우 해당 클래스의 모든 테스트가 실행됩니다. 이는 네임스페이스 수준에 대해서도 동일합니다.
+테스트 코드 편집기에서 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택하거나 또는 Visual Studio에서 기본 [테스트 탐색기 바로 가기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)를 사용하여 테스트 탐색기에서 테스트를 실행할 수 있습니다. 바로 가기 중 일부는 컨텍스트를 기반으로 합니다. 이는 바로 가기가 코드 편집기에서 커서의 위치에 따라 [테스트를 디버그](../test/debug-unit-tests-with-test-explorer.md)하거나 실행하는 것을 의미합니다. 커서가 테스트 메서드 내에 있는 경우 해당 테스트 메서드가 실행됩니다. 커서가 클래스 수준에 있는 경우 해당 클래스의 모든 테스트가 실행됩니다. 이는 네임스페이스 수준에 대해서도 동일합니다.
 
 |자주 사용하는 명령| 바로 가기 키|
 |-|------------------------|
@@ -356,5 +356,6 @@ Visual Studio Enterprise Edition에 제공되는 Visual Studio 코드 검사 도
 ## <a name="see-also"></a>참조
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)
+- [테스트 탐색기를 사용하여 단위 테스트 디버그](../test/debug-unit-tests-with-test-explorer.md)
 - [단위 테스트를 64비트 프로세스로 실행](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [테스트 탐색기 FAQ](test-explorer-faq.md)

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815060"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386266"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
 
@@ -50,9 +50,9 @@ MEF 캐시를 다시 설정하려면 다음 폴더를 제거해 보세요. 먼�
  devenv /setup
 ```
 
-## <a name="visual-studio-hangs"></a>Visual Studio 중지
+## <a name="visual-studio-stops-responding"></a>Visual Studio가 응답을 중지함
 
-Parse, FMOD, UMP(Universal Media Player), ZFBrowser 또는 Embedded Browser와 같이 몇 가지 Unity 플러그 인은 네이티브 스레드를 사용합니다. 플러그인에서 네이티브 스레드를 런타임에 연결할 때 발생하는 문제이며, 이는 OS에 대한 호출을 차단합니다. 즉 Unity에서 디버거(또는 도메인 다시 로드)에 대한 해당 스레드를 중단하고 정지할 수 없습니다.
+Parse, FMOD, UMP(Universal Media Player), ZFBrowser 또는 Embedded Browser와 같이 몇 가지 Unity 플러그 인은 네이티브 스레드를 사용합니다. 플러그인에서 네이티브 스레드를 런타임에 연결할 때 발생하는 문제이며, 이는 OS에 대한 호출을 차단합니다. 즉, Unity는 디버거(또는 도메인 다시 로드)에 대한 해당 스레드를 중단하고 응답을 중지할 수 없습니다.
 
 FMOD의 경우 일시적인 해결 방법이 있습니다. 즉, `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 초기화 [플래그](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags)를 전달하여 비동기 처리를 비활성화하고 주 스레드에서 모든 처리를 수행할 수 있습니다.
 
