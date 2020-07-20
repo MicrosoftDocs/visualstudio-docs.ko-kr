@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 30b97c42c3ead60859aed593a3ffbad6ed721227
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906083"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387176"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -28,7 +28,7 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
 3. 코드가 검색되었다는 메시지가 표시됩니다.  **활성화**를 클릭하여 계속합니다.  활성화 준비가 되지 않았어도 괜찮습니다.  언제든지 타일로 돌아가서 활성화할 수 있습니다.  코드를 검색한 후에는 “Get Code”(코드 가져오기) 링크가 “Activate”(활성화)로 바뀝니다.
    > [!div class="mx-imgBorder"]
    > ![CODE Magazine 코드 검색됨](_img/vs-code-magazine/vs-code-magazine-success.png "코드 검색됨")
-4. CODE Magazine 방문 페이지로 리디렉션됩니다. 국가를 선택하고 잡지를 받는 방법을 선택합니다. 
+4. CODE Magazine 방문 페이지로 리디렉션됩니다. 국가/지역을 선택하고 잡지를 받는 방법을 선택합니다. 
    > [!NOTE]
    > Visual Studio Dev Essentials 멤버는 디지털 버전 구독만 이용할 수 있습니다. 
 5. 선택 항목에 따라, 적용된 쿠폰 금액과 함께 구독 가격을 보여 주는 메모가 표시됩니다.

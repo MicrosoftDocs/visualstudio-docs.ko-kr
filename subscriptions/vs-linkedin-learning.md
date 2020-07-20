@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 LinkedIn 프리미엄 구독의 일부로 포함된 LinkedIn 학습 혜택에 대해 알아봅니다.
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904408"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387137"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 LinkedIn 학습 혜택
 
@@ -36,7 +36,7 @@ LinkedIn Premium 구독 및 LinkedIn Learning 혜택을 활성화하려면:
 
 5. 개인 정보를 입력하고 사용자 이름과 암호를 선택한 다음 **지금 가입**을 클릭합니다.
 
-6. 국가 및 우편 번호를 지정하고 **다음**을 클릭합니다.
+6. 국가/지역 및 우편 번호를 지정하고 **다음**을 클릭합니다.
 
 7. 이제 프로필에 대해 자신에 관한 몇 가지 정보를 제공합니다.  학생 여부를 표시하고 가장 최근의 직함, 회사, 업종을 입력합니다.
 
@@ -79,7 +79,7 @@ LinkedIn Premium 구독 및 LinkedIn Learning 혜택을 활성화하려면:
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              | 해당 없음         |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup>  포함:  NFR(전매 금지), VSIP(Visual Studio 업계 파트너).  제외:  MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Most Valuable Professional), RD(Regional Director),  MCT 소프트웨어 및 서비스.
+<sup>1</sup>  포함:  *NFR(전매 금지), VSIP(Visual Studio 업계 파트너).  제외:  MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Most Valuable Professional), RD(Regional Director),  MCT 소프트웨어 및 서비스.*
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
