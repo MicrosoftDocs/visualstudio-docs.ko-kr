@@ -11,15 +11,13 @@
           href: container-tools.md
         - name: 컨테이너의 React.js 단일 페이지 앱
           href: container-tools-react.md
-        - name: Azure Dev Spaces로 Kubernetes 개발 >>
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Kubernetes 개발
+          href: local-process-kubernetes.md
     - name: 자습서
       expanded: true
       items:
         - name: Docker Compose를 사용한 다중 컨테이너 앱
           href: tutorial-multicontainer.md
-        - name: Visual Studio의 Kubernetes
-          href: tutorial-kubernetes-tools.md
     - name: 방법
       items:
         - name: 로컬 Docker 컨테이너에서 앱 디버그
@@ -40,7 +38,7 @@
           href: container-build.md
     - name: 문제 해결
       href: troubleshooting-docker-errors.md
-    - name: 참조
+    - name: 참고
       items:
         - name: 컨테이너 프로젝트에 대한 MSBuild 속성
           href: container-msbuild-properties.md
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: 시작 설정
           href: container-launch-settings.md
+- name: Kubernetes를 사용하여 개발
+  items:
+    - name: Visual Studio의 Kubernetes
+      href: tutorial-kubernetes-tools.md
+    - name: Kubernetes를 사용한 로컬 프로세스(미리 보기)
+      href: local-process-kubernetes.md
+    - name: Kubernetes를 사용하는 로컬 프로세스의 작동 방식(미리 보기)
+      href: overview-local-process-kubernetes.md

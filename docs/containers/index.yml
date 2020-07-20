@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 43583c3e147c7c036e28670c153c9520e02ef232
+  ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "75400722"
+  ms.lasthandoff: 07/17/2020
+  ms.locfileid: "86454204"
 landingContent:
 - title: 컨테이너 도구
   linkLists:
@@ -75,3 +75,17 @@ landingContent:
       url: docker-compose-properties.md
     - text: 컨테이너 도구 구성
       url: container-tools-configure.md
+- title: Kubernetes 개발
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Visual Studio Tools for Kubernetes
+      url: tutorial-kubernetes-tools.md
+  - linkListType: quickstart
+    links:
+    - text: Visual Studio에서 Kubernetes와 함께 로컬 프로세스 사용
+      url: local-process-kubernetes.md
+  - linkListType: overview
+    links:
+    - text: Kubernetes를 사용하는 로컬 프로세스의 작동 방식
+      url: overview-local-process-kubernetes.md

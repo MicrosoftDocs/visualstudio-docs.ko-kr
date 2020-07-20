@@ -563,6 +563,8 @@
                   href: ca1833.md
                 - name: 'CA1835: Stream ReadAsync/WriteAsync 메서드의 메모리 오버로드를 사용하세요.'
                   href: ca1835.md
+                - name: 'CA1836: 가능한 경우 Count 대신 IsEmpty 사용'
+                  href: ca1836.md
             - name: 이식성 경고
               items:
                 - name: 개요
