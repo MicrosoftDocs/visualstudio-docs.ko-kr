@@ -3,17 +3,17 @@ title: 워크플로 디자이너 상태 시스템 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 8a2ad311c5ea9b992b8e68a8250433354ea48f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188911"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876062"
 ---
 # <a name="state-machine-activity-designers"></a>상태 시스템 활동 디자이너
 
@@ -33,18 +33,18 @@ ms.locfileid: "73188911"
 
  [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 
- [워크플로](../workflow-designer/flowchart-activity-designers.md)
+ [Flowchart](../workflow-designer/flowchart-activity-designers.md)
 
  [활동 디자이너 사용](control-flow-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [메시징](../workflow-designer/messaging-activity-designers.md)
 
  [런타임](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [기본 형식](../workflow-designer/primitives-activity-designers.md)
 
  [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 
- [수집](../workflow-designer/collection-activity-designers.md)
+ [컬렉션](../workflow-designer/collection-activity-designers.md)
 
  [오류 처리](../workflow-designer/error-handling-activity-designers.md)
