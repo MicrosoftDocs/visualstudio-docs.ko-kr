@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880314"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475993"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
@@ -34,13 +34,13 @@ ms.locfileid: "80880314"
 
 ::: moniker range="vs-2017"
 
-3. 실행 설정 파일을 선택하려면 **테스트** 메뉴에서 **테스트 설정** > **테스트 설정 파일 선택**을 선택합니다. 명령줄에서 테스트를 실행하기 위한 실행 설정 파일을 지정하려면 [단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)을 참조하세요.
+3. 실행 설정 파일을 선택하려면 **테스트** 메뉴에서 **테스트 설정** > **테스트 설정 파일 선택**을 선택합니다. 명령줄에서 테스트를 실행하기 위한 실행 설정 파일을 지정하려면 [단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)을 참조하세요.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 실행 설정 파일을 선택하려면 **테스트** 메뉴에서 **설정 파일 선택**을 선택합니다. 명령줄에서 테스트를 실행하기 위한 실행 설정 파일을 지정하려면 [단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)을 참조하세요.
+3. 실행 설정 파일을 선택하려면 **테스트** 메뉴에서 **설정 파일 선택**을 선택합니다. 명령줄에서 테스트를 실행하기 위한 실행 설정 파일을 지정하려면 [단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)을 참조하세요.
 
 ::: moniker-end
 
