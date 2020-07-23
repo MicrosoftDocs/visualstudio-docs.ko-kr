@@ -82,6 +82,8 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: 서비스 기준선에서 Visual Studio 업데이트
               href: install/update-servicing-baseline.md
+            - name: 최소한의 오프라인 레이아웃을 사용하여 Visual Studio 업데이트
+              href: install/update-minimal-layout.md
             - name: Visual Studio 배포에 대한 업데이트 제어
               href: install/controlling-updates-to-visual-studio-deployments.md
             - name: 패키지 페이로드 변경 관리
@@ -948,7 +950,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참고
+- name: 참조
   items:
     - name: 바로 가기 키
       items:
