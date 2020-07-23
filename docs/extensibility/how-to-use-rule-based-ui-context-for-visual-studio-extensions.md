@@ -7,12 +7,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1457b8178a48ac867ee8407df9501dee56afd45b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 4ee29937b11110ee6aae65628b81ea49588fdd22
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905570"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972311"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트 사용
 
@@ -105,7 +105,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
     name: "Test auto load",
     expression: "(SingleProject | MultipleProjects) & DotConfig",
     termNames: new[] { "SingleProject", "MultipleProjects","DotConfig" },
-    termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
+    termValues: new[] { VSConstants.UICONTEXT.SolutionHasSingleProject_string , VSConstants.UICONTEXT.SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
 ```
 
  이제 식이 3 개의 용어를 참조 합니다. 처음 두 용어 "SingleProject" 및 "MultipleProjects"는 해당 Guid로 잘 알려진 다른 UI 컨텍스트를 참조 합니다. 세 번째 용어 "DotConfig"은이 문서의 앞부분에서 정의한 규칙 기반 UI 컨텍스트입니다.

@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb143a611b1fb1f4278d28fdf9423a1f6613a68d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904178"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972324"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴 추가
 이 연습은 **Testmenu** 메뉴에 하위 메뉴를 추가 하는 방법을 보여 주기 [위해 Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 의 데모를 기반으로 합니다.
@@ -27,7 +27,7 @@ ms.locfileid: "85904178"
 
  이 연습에서는 Visual Studio 메뉴 모음의 메뉴에 하위 메뉴를 만들고 하위 메뉴에 새 명령을 삽입 합니다. 또한이 연습에서는 새 명령을 구현 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="add-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴 추가
@@ -128,7 +128,8 @@ ms.locfileid: "85904178"
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
     {
-        IVsUIShell uiShell = (IVsUIShell)this.ServiceProvider.GetServiceAsync(typeof(SVsUIShell));
+        ThreadHelper.ThrowIfNotOnUIThread();
+        IVsUIShell uiShell = this.package.GetService<SVsUIShell, IVsUIShell>();
         Guid clsid = Guid.Empty;
         int result;
         uiShell.ShowMessageBox(
@@ -152,7 +153,7 @@ ms.locfileid: "85904178"
 
 5. **Testmenu** 메뉴에서 **하위 메뉴** 를 클릭 한 다음 **Test sub Command**를 클릭 합니다. 메시지 상자가 나타나고 "TestCommand 내에 Test Command. SubItemCallback ()" 라는 텍스트가 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

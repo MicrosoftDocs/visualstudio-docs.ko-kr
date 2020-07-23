@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e9963e05b0991beaea7da4027f4db3df4e4eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903922"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972337"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
 
 이 연습에서는 메모장을 실행 하는 메뉴 명령을 사용 하 여 확장을 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -32,7 +32,17 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 1. **Firstmenucommand**라는 VSIX 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
+::: moniker range="vs-2017"
+
 2. 프로젝트가 열리면 **firstcommand**라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *FirstCommand.cs*로 변경 합니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 프로젝트가 열리면 **firstcommand**라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *FirstCommand.cs*로 변경 합니다.
+
+::: moniker-end
 
 3. 프로젝트를 빌드하고 디버깅을 시작합니다.
 
@@ -50,7 +60,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ::: moniker-end
 
-이제 실험적 인스턴스의 **도구** 메뉴로 이동 합니다. **FirstCommand 명령 호출** 을 확인 해야 합니다. 이 시점에서 명령은 **Firstcommandpackage MenuItemCallback () 내에 Firstcommandpackage**라는 메시지 상자를 표시 합니다. 다음 섹션에서이 명령을 실행 하 여 실제로 메모장을 시작 하는 방법을 알아봅니다.
+이제 실험적 인스턴스의 **도구** 메뉴로 이동 합니다. **FirstCommand 명령 호출** 을 확인 해야 합니다. 이 시점에서 명령은 **FirstMenuCommand MenuItemCallback () 내에 firstcommand**라는 메시지 상자를 표시 합니다. 다음 섹션에서이 명령을 실행 하 여 실제로 메모장을 시작 하는 방법을 알아봅니다.
 
 ## <a name="change-the-menu-command-handler"></a>메뉴 명령 처리기 변경
 
@@ -77,11 +87,13 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     }
     ```
 
-3. 메서드를 제거 `MenuItemCallback` 하 고 메서드를 추가 합니다 `StartNotepad` .이 메서드는 메모장만 시작 합니다.
+3. 메서드를 제거 `Execute` 하 고 메서드를 추가 합니다 `StartNotepad` .이 메서드는 메모장만 시작 합니다.
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
     {
+        ThreadHelper.ThrowIfNotOnUIThread();
+
         Process proc = new Process();
         proc.StartInfo.FileName = "notepad.exe";
         proc.Start();
@@ -102,7 +114,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 2. 명령줄에서 다음을 실행하세요.
 
-    ```xml
+    ```cmd
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
@@ -113,7 +125,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 이 확장에 대 한 *.vsix* 파일은 *firstmenucommand* bin 디렉터리에서 찾을 수 있습니다. 특히 릴리스 구성을 빌드한 경우에는 다음 위치에 있습니다.
 
-*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand. vsix*
+*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
 확장을 설치 하려면 *친구는 Visual* Studio의 모든 열린 인스턴스를 닫은 다음 vsix 파일을 두 번 클릭 하 여 **vsix 설치 관리자**를 표시 해야 합니다. 파일이 *%LocalAppData%\Microsoft\VisualStudio \<version> \extensions* 디렉터리에 복사 됩니다.
 
