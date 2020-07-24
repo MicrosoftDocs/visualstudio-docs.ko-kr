@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 85929f803733026dfbf7ced8cf8553c3e96ed1c3
+  ms.sourcegitcommit: 239a8ed2c4474769297b42b5ce1f7c8694d62856
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "77904063"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "86944596"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -31,7 +31,7 @@ highlightedContent:
     itemType: learn
     url: /learn/
 conceptualContent:
-  title: 시작하기
+  title: 시작
   items:
   - title: Visual Studio를 사용하는 방법 알아보기
     links:
@@ -136,7 +136,7 @@ additionalContent:
     - title: 테스트
       summary: 프로젝트에서 테스트를 실행합니다.
       url: ../test/improve-code-quality.md
-    - title: 배포
+    - title: '배포:'
       summary: 웹 배포, InstallShield, NuGet, 연속 통합 등을 사용하여 앱과 코드를 공유합니다.
       url: ../deployment/index.yml
     - title: 버전 제어
@@ -148,10 +148,10 @@ additionalContent:
     - title: 성능 측정
       summary: 병목 상태를 식별하고 진단 도구를 사용하여 코드 성능을 최적화합니다.
       url: ../profiling/index.yml
-    - title: Extend
+    - title: 확장
       summary: 개발 환경을 개선하기 위해 Visual Studio IDE에 고유한 기능을 추가합니다.
       url: ../extensibility/index.yml
-    - title: data
+    - title: 데이터
       summary: 로컬, 클라우드 등 어디서나 모든 데이터베이스 또는 서비스와 연결하는 데이터 앱을 만듭니다.
       url: ../data-tools/accessing-data-in-visual-studio.md
     - title: 공동 작업
@@ -160,7 +160,7 @@ additionalContent:
     - title: Docker 컨테이너를 사용하여 개발
       summary: Docker 컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.
       url: ../containers/index.yml
-  - title: 워크로드
+  - title: 작업
     items:
     - title: 웹 및 클라우드
       links:
@@ -207,4 +207,4 @@ additionalContent:
         url: /cpp/linux/
       - text: .NET Core 플랫폼 간 개발
         url: /dotnet/core/
-  footer: '[블로그](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [문제 보고](../ide/talk-to-us.md) - [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+  footer: '[블로그](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [문제 보고](../ide/talk-to-us.md) - [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) - [문제 해결](/troubleshoot/visualstudio/welcome-visual-studio)'
