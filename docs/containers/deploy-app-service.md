@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: db4d114b743484e651d12831cfbe639fe41246ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 43bd06fba795c09bfa341ce7b61a3ced0fe15214
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283284"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454165"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 ASP.NET Core 컨테이너 배포
 
@@ -137,7 +137,7 @@ Visual Studio 2019 버전 16.4 이상을 사용하는 경우 **컨테이너 설�
 
 이 자습서와 관련된 Azure 리소스를 모두 제거하려면 [Azure Portal](https://portal.azure.com)을 사용하여 해당 리소스 그룹을 삭제합니다. 게시된 웹 애플리케이션과 관련된 리소스 그룹을 찾으려면 **보기** > **다른 창** > **웹 게시 작업**을 선택한 다음, 기어 아이콘을 선택합니다. 리소스 그룹이 포함된 **게시** 탭이 열립니다.
 
-Azure Portal에서 **리소스 그룹**을 선택한 다음, 리소스 그룹을 선택하여 세부 정보 페이지를 엽니다. 올바른 리소스 그룹인지 확인하고 **리소스 그룹 제거**를 선택한 다음, 이름을 입력하고 **삭제**를 선택합니다.
+Azure Portal에서 **리소스 그룹**을 선택한 다음, 리소스 그룹을 선택하여 세부 정보 페이지를 엽니다. 올바른 리소스 그룹인지 확인한 다음, **리소스 그룹 제거**를 선택하고 이름을 입력한 후 **삭제**를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

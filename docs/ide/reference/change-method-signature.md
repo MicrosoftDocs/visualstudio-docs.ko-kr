@@ -1,7 +1,7 @@
 ---
 title: 메서드 시그니처 변경
 description: 메서드 매개 변수를 추가, 제거 또는 그 순서를 변경합니다. 메서드를 마우스 오른쪽 단추로 클릭하고 빠른 작업 및 리팩터링를 선택한 다음 시그니처 변경을 선택합니다.
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283884"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869570"
 ---
 # <a name="change-a-method-signature-refactoring"></a>메서드 시그니처 변경 리팩터링
 
@@ -75,18 +75,9 @@ ms.locfileid: "85283884"
 
     ![매개 변수 추가 대화 상자 - C#](media/add-parameter-dialog.png)
 
-5. 매개 변수 추가가 완료되면 **확인** 단추를 눌러 변경 내용을 미리봅니다.
+5. 매개 변수 추가가 완료되면 **확인**을 눌러 변경 내용을 미리 봅니다.
 
     ![시그니처 변경 대화 상자](media/change-signature.png)
-
-6. **확인**을 눌러 변경 내용을 확인합니다.
-   - C#:
-
-      ![시그니처 변경 결과 - C#](media/changesignature-result-cs.png)
-
-   - Visual Basic:
-
-      ![시그니처 변경 결과 - Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>참조
 

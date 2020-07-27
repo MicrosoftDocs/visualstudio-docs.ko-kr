@@ -1,6 +1,6 @@
 ---
 title: 오류 문제 해결을 위한 리소스
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593618"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459283"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
 
@@ -109,7 +109,7 @@ ms.locfileid: "75593618"
 
 ## <a name="knowledge-base-articles"></a>기술 자료 문서
 
-KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색할 수 있습니다. 일부 문제에는 해당하는 KB 문서가 없지만 많은 고객에게 발생한 오류는 일반적으로 문서화되어 있습니다. [Microsoft 지원](https://support.microsoft.com) 웹 사이트에서 기술 자료 문서에 액세스할 수 있습니다.
+KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색할 수 있습니다. 일부 문제에는 해당하는 KB 문서가 없지만 많은 고객에게 발생한 오류는 일반적으로 문서화되어 있습니다. [Microsoft 지원](https://support.microsoft.com) 웹 사이트에서 기술 자료 문서에 액세스할 수 있습니다. [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/) 페이지에서 Visual Studio에 대한 기술 자료 문서 컬렉션을 볼 수도 있습니다.
 
 ## <a name="developer-forums"></a>개발자 포럼
 
@@ -121,7 +121,7 @@ KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색
 
 다른 리소스를 확인한 후에도 궁금한 점이 있는 경우 [Microsoft 지원](https://support.microsoft.com/en-us) 웹 사이트를 방문하여 Microsoft 지원 서비스에 문의할 수 있습니다. 해당 지역에서 사용 가능한 제품 지원에 대한 자세한 내용은 [Visual Studio 피드백 옵션](../../ide/feedback-options.md) 페이지를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [네트워크 관련 또는 프록시 오류 문제 해결](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [문제 해결(Mac용 Visual Studio)](/visualstudio/mac/troubleshooting)

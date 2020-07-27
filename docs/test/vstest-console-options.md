@@ -1,6 +1,6 @@
 ---
 title: VSTest.Console.exe 명령줄 옵션
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211561"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869596"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 
@@ -35,7 +35,7 @@ ms.locfileid: "86211561"
 | 옵션 | 설명 |
 |---|---|
 |**[*테스트 파일 이름*]**|지정한 파일에서 테스트를 실행합니다. 여러 테스트 파일 이름을 공백으로 구분합니다.<br />예제: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*파일 이름*]**|데이터 수집기 등의 추가 설정을 사용하여 테스트를 실행합니다.<br />예: `/Settings:Local.RunSettings`|
+|**/Settings:[*파일 이름*]**|데이터 수집기 등의 추가 설정을 사용하여 테스트를 실행합니다. 자세한 내용은 [.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)을 참조하세요.<br />예: `/Settings:local.runsettings`|
 |**/Tests:[*테스트 이름*]**|제공된 값을 포함하는 이름의 테스트를 실행합니다. 다중 값을 제공하려면 각각의 값을 쉼표로 구분합니다.<br />예: `/Tests:TestMethod1,testMethod2`<br />**/Tests** 명령줄 옵션은 **/TestCaseFilter** 명령줄 옵션과 함께 사용할 수 없습니다.|
 |**/Parallel**|테스트를 병렬로 실행하도록 지정합니다. 기본적으로 머신의 사용 가능한 모든 코어를 사용할 수 있습니다. 설정 파일에서 사용할 코어 수를 구성할 수 있습니다.|
 |**/Enablecodecoverage**|테스트 실행에서 데이터 진단 어댑터 CodeCoverage를 활성화합니다.<br />설정 파일을 사용하여 지정하지 않은 경우 기본 설정이 사용됩니다.|
