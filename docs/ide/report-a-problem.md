@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
+ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276477"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87330962"
 ---
 # <a name="report-a-problem-states-and-faq"></a>문제 보고: 상태 및 FAQ
 
@@ -95,12 +95,6 @@ ms.locfileid: "81276477"
 ![종결 - 개발자 커뮤니티의 문제 보고에 대한 다른 제품 상태](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
 **종결 - 다른 제품**은 문제가 다른 제품에 적용되는 것으로 확인했음을 나타냅니다. 외부 제품 및 모든 관련 링크에 대한 Microsoft의 주석을 참조하세요.
-
-- - -
-
-![종결 - 개발자 커뮤니티의 문제 보고에 대해 수정하지 않음 상태](../ide/media/ProblemStates/ClosedWontFix.jpg)
-
-**닫힘 - 수정하지 않음**은 제품 방향 맞춤 또는 커뮤니티 영향 부족 등과 같은 요인으로 인해 이 문제를 진행하지 않음을 나타냅니다. 자세한 내용은 Microsoft의 주석을 참조하세요.  이 특정 문제를 해결할 수 없지만, 모든 피드백은 소중하며 Visual Studio를 개선하는 데 도움이 됩니다.
 
 - - -
 

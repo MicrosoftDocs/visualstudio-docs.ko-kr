@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543730"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972363"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 
@@ -183,7 +183,7 @@ Python 2.7로 작업하는 경우 [Extending Python 2.7 with C or C++](https://d
     #include <Python.h>
     ```
 
-1. Python 형식을 허용하고 반환하도록 `tanh_impl` 메서드를 수정합니다(즉, `PyOjbect*`).
+1. Python 형식을 허용하고 반환하도록 `tanh_impl` 메서드를 수정합니다(즉, `PyObject*`).
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {
