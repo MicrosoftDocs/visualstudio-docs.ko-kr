@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679a6e753e61ecb1af9097692a741c35e531c7cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545745"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234980"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 솔루션 배포 문제 해결
   이 항목에는 Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결하는 방법에 대한 정보가 포함되어 있습니다.
@@ -129,3 +129,4 @@ ms.locfileid: "85545745"
 
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)
+- [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

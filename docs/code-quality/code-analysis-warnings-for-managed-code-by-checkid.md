@@ -100,6 +100,7 @@ f1_keywords:
 - CA1413
 - CA1414
 - CA1415
+- CA1417
 - CA1500
 - CA1501
 - CA1502
@@ -291,12 +292,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454191"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235097"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -397,6 +398,7 @@ ms.locfileid: "86454191"
 | CA1413 | [CA1413: COM 노출 값 형식에 public이 아닌 필드를 사용하지 마세요.](../code-quality/ca1413.md) | public이 아니며 값 형식이 COM에 노출되는 인스턴스 필드는 COM 클라이언트에서 볼 수 있습니다. 필드의 내용을 검토하여 노출되지 않아야 하거나 디자인 또는 보안에 의도하지 않은 영향을 줄 수 있는 정보가 있는지 확인합니다. |
 | CA1414 | [CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시 합니다.](../code-quality/ca1414.md) | 부울 데이터 형식은 비관리 코드에서 여러 가지로 표현됩니다. |
 | CA1415 | [CA1415: P/Invoke를 올바르게 선언 하십시오.](../code-quality/ca1415.md) | 이 규칙에서는 OVERLAPPED 구조체 매개 변수에 대한 포인터가 있는 [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] 함수를 대상으로 하는 운영 체제 호출 메서드 선언을 찾는데 관리되는 해당 매개 변수가 System.Threading.NativeOverlapped 구조체에 대한 포인터가 아닙니다. |
+| CA1417 | [CA1417: `OutAttribute` P/invoke에 문자열 매개 변수를 사용 하지 마십시오.](../code-quality/ca1417.md) | 로 값으로 전달 되는 문자열 매개 변수는 `OutAttribute` 문자열이 인턴 문자열이 면 런타임을 불안정 하 게 만들 수 있습니다. |
 | CA1500 | [CA1500: 변수 이름은 필드 이름과 달라야 합니다.](../code-quality/ca1500.md) | 인스턴스 메서드에서 선언 형식의 인스턴스 필드와 이름이 같은 매개 변수나 지역 변수를 선언합니다. 이로 인해 오류가 발생합니다. |
 | CA1501 | [CA1501: 상속성을 너무 많이 사용하지 마세요.](../code-quality/ca1501.md) | 형식이 상속 계층 구조에서 네 단계보다 아래에 있습니다. 여러 번 중첩된 형식 계층 구조는 추적하고, 이해하고, 유지 관리하기가 어렵습니다. |
 | CA1502 | [CA1502: 지나치게 복잡하게 만들지 마세요.](../code-quality/ca1502.md) | 이 규칙은 메서드를 통과하는 선형 독립 경로의 수를 측정하며 조건부 분기의 수와 복잡성에 의해 결정됩니다. |

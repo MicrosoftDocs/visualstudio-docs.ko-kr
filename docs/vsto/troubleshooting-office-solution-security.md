@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76cd454cd66e31db8c521d71183aa479da1fe2a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537412"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234811"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office 솔루션 보안 문제 해결
   이 항목에는 Office 솔루션 보안으로 작업할 때 발생할 수 있는 일반적인 문제를 해결 하기 위한 팁이 포함 되어 있습니다.
@@ -50,3 +50,4 @@ ms.locfileid: "85537412"
 
 ## <a name="see-also"></a>참고 항목
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)
+- [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

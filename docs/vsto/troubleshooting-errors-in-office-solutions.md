@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537321"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234694"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office 솔루션의 오류 문제 해결
   Visual Studio에서 Office 솔루션을 개발하는 동안 다음 작업을 수행할 때 문제가 발생할 수 있습니다.
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Word 또는 Excel 네임 스페이스를 가져오고 그 안에 있는 모든 클래스에 액세스할 수 있는 경우에도 Word 또는 Excel을 사용 하 여 모든 형식을 정규화 하 여 네임 스페이스 모호성을 제거 해야 합니다.
 
-## <a name="build-projects"></a><a name="building"></a> 프로젝트 빌드
+## <a name="build-projects"></a><a name="building"></a>빌드 프로젝트
  Office 프로젝트를 빌드하면 다음과 같은 오류가 발생할 수 있습니다.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>권한이 제한 된 문서를 기반으로 하는 문서 수준 프로젝트는 빌드할 수 없습니다.
@@ -217,3 +217,4 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 - [Office 솔루션 문제 해결](../vsto/troubleshooting-office-solutions.md)
 - [Office 솔루션 보안 문제 해결](../vsto/troubleshooting-office-solution-security.md)
 - [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)
+- [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)
