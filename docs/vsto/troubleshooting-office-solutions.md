@@ -24,7 +24,7 @@ ms.locfileid: "87234720"
 # <a name="troubleshoot-office-solutions"></a>Office 솔루션 문제 해결
   이 섹션에는 Visual Studio의 Office 개발 도구를 사용하여 솔루션을 만들 때 발생할 수 있는 일반적인 문제를 해결하기 위한 팁이 들어 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Office 솔루션의 오류 문제 해결](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  Visual Studio에서 Office 솔루션을 디자인하고 실행하고 테스트하는 동안 발생할 수 있는 일반적인 문제에 대해 설명합니다.
