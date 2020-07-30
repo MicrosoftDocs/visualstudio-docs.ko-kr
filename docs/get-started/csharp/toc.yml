@@ -14,7 +14,12 @@
   expanded: true
   items:
     - name: 첫 번째 C# 앱 만들기
-      href: tutorial-console.md
+      expanded: true
+      items:
+        - name: '1부: C# 콘솔 앱 만들기'
+          href: tutorial-console.md
+        - name: '2부: C# 콘솔 앱 확장'
+          href: tutorial-console-part-2.md
     - name: 웹앱 만들기
       href: tutorial-aspnet-core.md
     - name: UWP 앱 만들기

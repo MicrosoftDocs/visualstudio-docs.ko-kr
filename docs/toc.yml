@@ -402,8 +402,8 @@
                   href: ide/reference/extract-local-function.md
                 - name: 인라인 임시 변수
                   href: ide/reference/inline-temporary-variable.md
-                - name: 가져오지 않은 형식에 대한 Intellisense 완성
-                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: IntelliSense 완료 가져오지 않은 형식 및 확장 메서드
+                  href: ide/reference/intellisense-completion-unimported-types-extension-methods.md
                 - name: 조건식 및 논리 연산 반전
                   href: ide/reference/invert-conditional-logical.md
                 - name: if 문 반전

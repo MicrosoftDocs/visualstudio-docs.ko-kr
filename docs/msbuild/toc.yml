@@ -449,6 +449,8 @@
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild 지시 파일
           href: msbuild-response-files.md
+        - name: MSBuild의 솔루션 필터
+          href: solution-filters.md
         - name: WPF 참조
           items:
             - name: 개요

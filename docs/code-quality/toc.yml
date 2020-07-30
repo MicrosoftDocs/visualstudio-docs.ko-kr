@@ -415,6 +415,8 @@
                   href: ca1414.md
                 - name: 'CA1415: P/Invoke를 올바르게 선언하세요.'
                   href: ca1415.md
+                - name: 'CA1417: P/Invokes에 대한 문자열 매개 변수에는 OutAttribute를 사용하지 마세요.'
+                  href: ca1417.md
             - name: 유지 관리 경고
               items:
                 - name: 개요
