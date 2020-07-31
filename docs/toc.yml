@@ -42,6 +42,8 @@
       items:
         - name: 개요
           href: install/visual-studio-administrator-guide.md
+        - name: Visual Studio 엔터프라이즈 가이드
+          href: install/visual-studio-enterprise-guide.md
         - name: 명령줄 사용
           items:
             - name: 명령줄 매개 변수를 사용하여 Visual Studio 설치
