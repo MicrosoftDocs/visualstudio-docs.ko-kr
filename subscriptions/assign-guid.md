@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: 관리자가 구독자에 대해 특정 구독 GUID를 지정할 수 있는 방법 알아보기
-ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072595"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235188"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 특정 구독 할당
 
@@ -32,7 +32,7 @@ ms.locfileid: "82072595"
 1. [관리 포털](https://manage.visualstudio.com)에 로그인합니다.
 2. **내보내기** 탭을 선택하면 파일이 로컬 컴퓨터에 다운로드됩니다. 파일에는 내보내기 날짜뿐만 아니라 사용자 구독을 포함하는 계약의 이름이 포함됩니다.
 > [!div class="mx-imgBorder"]
-> ![구독자 내보내기](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![구독자 내보내기](_img/exporting-subscriptions/exporting-subscriptions.png "할당된 구독의 목록과 구독자 정보를 저장하려면 내보내기를 클릭합니다.")
 
 ### <a name="identify-the-guids-you-want-to-assign"></a>할당할 GUID 식별
 

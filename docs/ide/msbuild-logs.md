@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85768699"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235071"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild의 문제 해결 및 로그 만들기
 
@@ -131,3 +131,7 @@ Msbuild.binlog 파일이 MSBuild를 실행한 디렉터리에 만들어집니다
     ```
 
     Msbuild.log 파일이 msbuild를 실행한 디렉터리에 만들어집니다.
+
+## <a name="see-also"></a>참조
+
+- [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

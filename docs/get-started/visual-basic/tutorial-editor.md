@@ -12,16 +12,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 695b1600aedb30a9e75a7829af4bac400f069922
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75584610"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235149"
 ---
-# <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
+# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>코드 편집기를 사용하여 Visual Basic을 작업하는 방법 알아보기
 
-Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파일에 추가하여 Visual Studio에서 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 살펴봅니다.
+Visual Studio의 코드 편집기에 대한 이 10분 소개에서 코드를 파일에 추가하여 Visual Studio에서 Visual Basic 코드를 더욱 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 살펴봅니다.
 
 ::: moniker range="vs-2017"
 

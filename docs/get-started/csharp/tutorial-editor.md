@@ -12,16 +12,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75590438"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234967"
 ---
-# <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
+# <a name="learn-to-use-the-code-editor-with-c"></a>코드 편집기를 사용하여 C#를 작업하는 방법 알아보기
 
-Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파일에 추가하여 Visual Studio에서 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 살펴봅니다.
+Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파일에 추가하여 Visual Studio에서 C# 코드를 더욱 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 살펴봅니다.
 
 ::: moniker range="vs-2017"
 

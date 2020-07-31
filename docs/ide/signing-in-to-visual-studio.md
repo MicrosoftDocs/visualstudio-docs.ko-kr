@@ -2,7 +2,7 @@
 title: Visual Studio에 로그인
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285298"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235201"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -38,7 +38,7 @@ ms.locfileid: "85285298"
 다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.
 - **Visual Studio 평가 기간 연장** – 평가 기간을 30일로 제한하지 않고 추가로 90일 동안 Visual Studio Professional 또는 Visual Studio Enterprise를 사용할 수 있습니다. 자세한 내용은 [평가판 버전 확장 또는 라이선스 업데이트](../ide/how-to-unlock-visual-studio.md)를 참조하세요.
 
-- **Visual Studio Community 버전 잠금 해제** - Community Edition 설치에서 라이선스를 입력하라는 메시지가 표시되는 경우 IDE에 로그인하여 직접 잠금을 해제합니다.
+- **Visual Studio Community 버전 계속 사용** - Community Edition 설치에서 라이선스를 입력하라는 메시지가 표시되는 경우 IDE에 로그인하여 Visual Studio Community를 **무료**로 계속 사용합니다. 
 
 - **Visual Studio 구독 또는 Azure DevOps 조직과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. 자세한 지침은 [평가판 버전 확장 또는 라이선스 업데이트](../ide/how-to-unlock-visual-studio.md)를 참조하세요.
 

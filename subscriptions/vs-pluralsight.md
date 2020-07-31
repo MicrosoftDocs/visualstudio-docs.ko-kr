@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
+ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902818"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87375900"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -82,13 +82,7 @@ ms.locfileid: "85902818"
 A: 일부 Visual Studio Enterprise 구독에는 Pluralsight 혜택이 포함되어 있지 않습니다.  [자격 테이블](#eligibility)을 확인하여 구독이 적합한지 확인하세요.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Q: 맞춤화된 학습 재생 목록이나 채널에 액세스할 수 있나요?
-A: 예, Visual Studio 구독자는 Pluralsight 교육 혜택의 일부로 전문가 채널에 액세스할 수 있습니다. 이러한 채널은 Microsoft 전문가가 특별히 큐레이팅한 것으로, .Net, Azure, DevOps 및 Mobility 분야의 학습을 목표로 합니다. Pluralsight 방문 페이지에서 이러한 채널에 액세스하려면 Visual Studio 구독 포털 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)을 통해 Pluralsight 혜택을 활성화합니다.
-
-•   Scott Hanselmann(.Net, Azure) - [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
-
-•   Donovan Brown(DevOps) - [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
-
-•   James Montemagno(Mobility) - [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+A: 예. Visual Studio 구독자는 Pluralsight 교육 혜택의 일부로 추천 역할, 학습 경로 및 사용자 지정 채널(재생 목록)에 액세스할 수 있습니다. 추천 콘텐츠는 Microsoft와 Pluralsight에서 특별히 준비했으며 관심 있는 주요 영역의 학습에 초점을 둡니다. Pluralsight 홈페이지에서 이 콘텐츠 및 다른 콘텐츠에 액세스하려면 Visual Studio 구독 포털(<https://my.visualstudio.com/benefits>)을 통해 Pluralsight 혜택을 활성화합니다.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Q: Pluralsight 구독이 만료되면 어떻게 되나요?
 A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 구매할 수 있습니다.  자세한 내용은 [Pluralsight](https://www.pluralsight.com)에 문의하세요.
@@ -98,7 +92,7 @@ A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 �
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

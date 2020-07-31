@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: 관리 포털에서 언어, 연락처, 구독 수준 등에 대한 기본 설정을 지정하는 방법 알아보기
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183498"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234616"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>관리 포털에서 계약 기본 설정 지정
 슈퍼 관리자는 관리 포털에서 각 계약에 전역으로 적용될 특정 기본 설정을 지정할 수 있습니다.  이 기본 설정은 관리자가 구독자를 추가할 때 구독 세부 정보를 자동으로 채우며 슈퍼 관리자만 전역으로 수정할 수 있습니다.  
@@ -24,13 +24,13 @@ ms.locfileid: "84183498"
 1. 슈퍼 관리자 권한이 있는 ID로 관리 포털에 로그인합니다.
 2. **관리자 관리** 탭을 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![관리자 기본 설정 단추](_img/admin-prefs/admin-prefs-button.png)
+   > ![관리자 기본 설정 단추](_img/admin-prefs/admin-prefs-button.png "관리자 관리 및 계약 기본 설정을 차례로 클릭하여 기본 설정을 표시합니다.")
 
 3. **계약 기본 설정**을 클릭합니다.
 패널이 오른쪽에서 열리고 사용 가능한 기본 설정이 표시됩니다. 
 
    > [!div class="mx-imgBorder"]
-   > ![관리자 기본 설정 플라이아웃 대화 상자](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![관리자 기본 설정 플라이아웃 대화 상자](_img/admin-prefs/admin-prefs-flyout.png "기본 설정을 지정하고 저장을 클릭합니다.")
 
 ## <a name="set-your-preferences"></a>기본 설정 지정
 사용 가능한 각 기본 설정과 해당 결과를 살펴보겠습니다. 
@@ -86,6 +86,3 @@ Visual Studio 구독 관리에 대해 자세히 알아보세요.
 - [여러 구독 할당](assign-license-bulk.md)
 - [구독 편집](edit-license.md)
 - [최대 사용량 확인](maximum-usage.md)
-
-
-

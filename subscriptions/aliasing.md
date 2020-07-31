@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패할 수 있습니다.
-ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509059"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234642"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 로그인에 사용되는 계정 유형에 따라 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인할 때 사용 가능한 구독이 제대로 표시되지 않을 수 있습니다. 한 가지 원인은 구독이 할당된 로그인 ID 대신 “별칭” 또는 “이름”을 사용하기 때문일 수 있습니다. 이것을 “별칭 지정”이라고 합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "79509059"
 2. 페이지의 오른쪽 위에 나열된 로그인 전자 메일 주소가 로그인에 사용한 주소와 일치하는지 확인합니다.  일치하지 않으면 UPN이 불일치하는 것이며 구독을 볼 수 없습니다. 
 
 > [!div class="mx-imgBorder"]
-> ![로그인 전자 메일 주소](_img//aliasing/sign-in-email.png)
+> ![로그인 전자 메일 주소](_img//aliasing/sign-in-email.png "오른쪽 위에 표시되는 전자 메일 주소가 로그인에 사용하는 주소와 일치해야 합니다.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>UPN 불일치 해결 방법
 
@@ -69,7 +69,7 @@ Visual Studio 플랫폼은 기본 별칭의 우선 순위를 지정하여 구독
 2. 계정 별칭에서 구독을 할당하는 데 사용된 전자 메일 주소 옆에 있는 **기본 별칭으로 지정**을 선택합니다. 
 
 > [!div class="mx-imgBorder"]
-> ![기본 전자 메일 주소 설정](_img//aliasing/account-aliases.png)
+> ![기본 전자 메일 주소 설정](_img//aliasing/account-aliases.png "기본 항목으로 만들기 링크를 사용하여 구독의 기본 별칭을 선택합니다.")
 
 3. Visual Studio 구독 포털(https://my.visualstudio.com) )에서 로그아웃 
 

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903284"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235136"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -30,7 +30,7 @@ ms.locfileid: "85903284"
 
 1. 일괄 추가는 Microsoft Excel 템플릿을 사용하여 구독자 정보를 업로드합니다. [여러 구독자 업로드] 대화 상자에서 **다운로드**를 클릭하여 템플릿을 다운로드합니다.
    > [!div class="mx-imgBorder"]
-   > ![Excel 템플릿을 다운로드하여 여러 구독자 업로드](media/download-template-upload-subscribers.png)
+   > ![Excel 템플릿을 다운로드하여 여러 구독자 업로드](media/download-template-upload-subscribers.png "빈 Excel 템플릿을 다운로드하여 대량 할당 프로세스를 시작합니다.")
    >
    > [!NOTE]
    > 항상 이 템플릿의 최신 버전을 다운로드합니다. 이전 버전을 사용하는 경우 대량 업로드가 실패할 수 있습니다.
@@ -50,17 +50,17 @@ ms.locfileid: "85903284"
 
 1. Visual Studio 구독 관리 포털로 돌아갑니다. **여러 구독자 업로드** 대화 상자에서 **찾아보기**를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![저장된 템플릿으로 이동하여 여러 구독자 업로드](media/bulk-add-browse-saved-template.png)
+   > ![저장된 템플릿으로 이동하여 여러 구독자 업로드](media/bulk-add-browse-saved-template.png "파일 위치로 이동하거나 이 대화 상자로 끌어서 놓을 수 있습니다.")
 
 1. 저장한 Excel 파일로 이동한 다음, **확인**을 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Excel 템플릿을 업로드하여 여러 구독자 업로드](media/bulk-upload-subscribers.png)
+   > ![Excel 템플릿을 업로드하여 여러 구독자 업로드](media/bulk-upload-subscribers.png "데이터가 포함된 템플릿이 여기에 표시됩니다.  확인을 클릭하여 업로드를 시작합니다.")
 
     업로드 진행률 대화 상자가 표시됩니다.
 
     템플릿에 오류가 있는 경우 업로드가 실패합니다. 그러면 템플릿을 수정하고 대량 업로드를 다시 시도할 수 있도록 오류 메시지가 표시됩니다.
    > [!div class="mx-imgBorder"]
-   > ![여러 구독자 업로드에 실패한 경우 오류 메시지](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![여러 구독자 업로드에 실패한 경우 오류 메시지](_img/assign-license-bulk/bulk-add-upload-failure.png "업로드한 파일에 오류가 있는 경우 이 메시지가 표시됩니다.  오류를 해결하고 대량 추가 프로세스를 다시 수행합니다.")
 
    오류가 발생하는 경우 다음 단계를 수행합니다.
    1. 만든 Excel 파일을 열고 문제를 해결한 후 파일을 저장합니다.
@@ -72,7 +72,7 @@ ms.locfileid: "85903284"
 
     업로드가 성공적으로 완료되면 구독자 목록과 확인 메시지가 표시됩니다.
    > [!div class="mx-imgBorder"]
-   > ![여러 구독자 업로드에 성공한 경우 확인 메시지](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![여러 구독자 업로드에 성공한 경우 확인 메시지](_img/assign-license-bulk/bulk-add-upload-success.png "업로드가 완료되면 확인 메시지가 표시됩니다.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Azure Active Directory 그룹을 사용하여 구독 할당 
 이 기능을 사용하면 구독 할당을 쉽게 파악할 수 있습니다. 구독 관리 포털에서 Azure Active Directory 보안 그룹을 추가하면 그룹의 모든 사용자에게 구독을 할당할 수 있습니다. 조직을 떠나 Azure Active Directory에서 제거되는 사용자는 구독에 대한 액세스 권한도 제거되므로 편리합니다. 
@@ -100,14 +100,14 @@ ms.locfileid: "85903284"
 3. **추가** 탭을 선택한 다음 드롭다운에서 **Azure Active Directory 그룹**을 선택합니다.  
 
    > [!div class="mx-imgBorder"]
-   > ![Azure AD를 사용하여 일괄 추가 선택](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Azure AD를 사용하여 일괄 추가 선택](_img/assign-license-bulk/bulk-add-aad.png "Azure AD를 사용하는 대량 추가 기능을 선택하여 Azure Active Directory 그룹에서 구독자를 가져옵니다.")
 
 4. 양식 필드에 추가할 Azure AD 그룹의 이름을 입력하기 시작합니다. 이렇게 하면 조직 내에서 사용할 수 있는 Azure AD 그룹이 검색됩니다. 
 
 5. 그룹을 선택하면 필드에 자동으로 그룹 이름이 채워집니다. 추가하기 전에 해당 그룹의 사용자를 볼 수 있는 옵션이 있습니다. 다음으로 그룹의 구독 수준, 다운로드 권한, 통신 기본 설정을 선택할 수 있습니다. 원한다면 참조 필드에 세부 정보를 추가할 수 있습니다. 
 
    > [!div class="mx-imgBorder"]
-   > ![Azure AD를 사용하여 일괄 추가 선택](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Azure AD 그룹 선택](_img/assign-license-bulk/bulk-add-aad-details.png "Azure AD 그룹의 이름을 선택하여 해당 그룹에서 구독자를 추가합니다.")
 
 6. **추가**를 클릭한 다음 **확인**을 클릭합니다. 
 

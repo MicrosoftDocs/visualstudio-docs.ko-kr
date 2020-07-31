@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: 슈퍼 관리자 및 관리자 역할과 관리자를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808382"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234629"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio 구독 계약을 위한 슈퍼 관리자 및 관리자
 
@@ -30,10 +30,10 @@ ms.locfileid: "80808382"
 2. **관리자 관리** 탭을 클릭합니다.
 3. **추가**를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![관리자 추가](_img/admin-roles/add-admins.png)
+   > ![관리자 추가](_img/admin-roles/add-admins.png "관리자 관리 블레이드를 클릭한 다음 추가를 클릭하여 새 관리자를 할당합니다.")
 4. 새 관리자의 정보로 양식을 완성합니다.  
    > [!div class="mx-imgBorder"]
-   > ![관리자 양식 추가](_img/admin-roles/add-form.png)
+   > ![관리자 양식 추가](_img/admin-roles/add-form.png "새 관리자의 로그인 정보를 입력하고 이 관리자를 슈퍼 관리자로 지정할지 여부를 선택합니다.  그런 다음 추가를 클릭합니다.")
 
    > [!NOTE]
    > 이 관리자가 추가 관리자를 할당할 수 있도록 하려면 **슈퍼 관리자** 상자를 선택해야 합니다.

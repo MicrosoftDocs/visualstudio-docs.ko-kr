@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 버전 side-by-side 설치
-ms.date: 03/05/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114651"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234993"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전 side-by-side 설치
 
@@ -45,6 +45,22 @@ ms.locfileid: "76114651"
 * 둘 이상의 버전이 설치된 컴퓨터에서 Visual Studio 버전을 제거하면 Visual Studio의 파일 연결이 모든 버전에 대해 제거됩니다.
 
 * 모든 확장이 호환되는 것은 아니므로 Visual Studio에서는 확장을 자동으로 업그레이드하지 않습니다. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 또는 소프트웨어 게시자에서 확장을 다시 설치해야 합니다.
+
+## <a name="install-minor-visual-studio-versions-side-by-side"></a>Visual Studio 부 버전 동시 설치
+
+하나의 Visual Studio 부 버전에서 다음 부 버전으로 업그레이드하는 경우 Visual Studio 설치 관리자는 기본적으로 현재 설치를 해당 채널의 다음 버전으로 업데이트합니다. 예를 들어 16.6.4 미리 보기를 설치할 때 설치 관리자는 현재 설치된 16.6.3 미리 보기를 바꾸려고 시도합니다. 두 버전이 모두 16.6 미리 보기 채널에 속하기 때문입니다. 이렇게 대체하면 이전 버전의 Visual Studio가 머신의 공간을 차지하지 않습니다. 일부 특정한 경우에는 부 버전을 함께 설치하는 것이 유용할 수도 있습니다. 이 예에서는 16.6.3과 16.6.4를 모두 동일한 머신에 설치하는 것을 의미합니다.
+
+1. 기존 버전의 Visual Studio와 함께 설치하려는 부 버전용 [Visual Studio 부트스트래퍼 파일](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)을 다운로드합니다.
+2. 관리자 모드로 명령 프롬프트를 엽니다. 그러려면 Windows 시작 메뉴를 열고 “cmd”를 입력한 다음 명령 프롬프트 검색 결과를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다. 명령 프롬프트에서 Visual Studio 부트스트래퍼 파일이 있는 폴더로 디렉터리를 변경합니다.
+3. 다음 명령을 실행하여 설치 위치에 대한 새 폴더 경로를 지정하고 .exe 파일 이름을 설치하는 Visual Studio 버전의 해당 부트스트래퍼 이름으로 바꿉니다. .exe 파일 이름은 다음 파일 중 하나와 일치하거나 유사해야 합니다.
+   * vs_community.exe(Visual Studio Community의 경우)
+   * vs_professional.exe(Visual Studio Professional의 경우)
+   * vs_enterprise.exe(Visual Studio Enterprise의 경우)
+
+```
+vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+```
+4. 설치 관리자 대화 상자에 따라 설치에 필요한 구성 요소를 선택합니다. 자세한 내용은 [Visual Studio 설치](install-visual-studio.md#step-4---choose-workloads)를 참조하세요.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 버전 및 side-by-side 설치
 

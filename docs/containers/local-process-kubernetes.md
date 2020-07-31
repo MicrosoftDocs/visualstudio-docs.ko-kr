@@ -1,17 +1,17 @@
 ---
-title: Visual Studio에서 Kubernetes와 함께 로컬 프로세스 사용(미리 보기)
+title: Visual Studio에서 Kubernetes와 함께 로컬 프로세스를 사용(미리 보기)
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: conceptual
 description: Visual Studio에서 Kubernetes와 함께 로컬 프로세스를 사용하여 개발 컴퓨터를 Kubernetes 클러스터에 연결하는 방법을 알아봅니다.
 keywords: Kubernetes와 함께 로컬 프로세스 사용, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, 컨테이너
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b057670f60554a066356ad34525f0276d8dc826c
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454369"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133998"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Kubernetes와 함께 로컬 프로세스 사용(미리 보기)
 
@@ -126,14 +126,14 @@ Visual Studio에서 [자전거 공유 애플리케이션 예제][bike-sharing-gi
 
 ## <a name="set-a-break-point"></a>중단점 설정
 
-[BikesHelper.cs][bikeshelper-cs-breakpoint]를 열고 줄 26에서 아무 곳이나 클릭하여 커서를 놓습니다. *F9* 키를 누르거나 ‘디버그’, ‘중단점 설정/해제’를 차례로 클릭하여 중단점을 설정합니다. 
+[BikesHelper.cs][bikeshelper-cs-breakpoint]를 열고 줄 26에서 아무 곳이나 클릭하여 커서를 놓습니다. *F9* 키를 누르거나 ‘디버그’, ‘중단점 설정/해제’를 차례로 클릭하여 중단점을 설정합니다.
 
 공용 URL을 열어 애플리케이션 예제로 이동합니다. 사용자로 ‘Aurelia Briggs(고객)’를 선택하고 대여할 자전거를 선택합니다. ‘자전거 대여’를 클릭합니다. Visual Studio로 돌아가서 줄 26이 강조 표시된 것을 확인합니다. 설정한 중단점으로 인해 서비스가 줄 26에서 일시 중지되었습니다. 서비스를 다시 시작하려면 *F5* 키를 누르거나 *디버그*, *계속*을 차례로 클릭합니다. 브라우저로 돌아가서 자전거를 대여했다고 페이지에 표시되는지 확인합니다.
 
 `BikesHelper.cs`에서 줄 26에 커서를 놓고 *F9* 키를 눌러 중단점을 제거합니다.
 
 > [!NOTE]
-> 기본적으로 디버깅 작업을 중지하면 Kubernetes 클러스터에서 개발 컴퓨터의 연결이 끊어집니다. 디버깅 옵션의 ‘Kubernetes 디버깅 도구’ 섹션에서 ‘디버깅 후 연결 끊기’를 *false*로 변경하면 이 동작을 변경할 수 있습니다.  이 설정을 업데이트하면 디버깅을 중지하고 시작할 때 개발 컴퓨터가 연결된 상태를 유지합니다. 클러스터에서 개발 컴퓨터의 연결을 끊으려면 도구 모음에서 ‘연결 끊기’ 단추를 클릭합니다.
+> 기본적으로 디버깅 작업을 중지하면 Kubernetes 클러스터에서 개발 컴퓨터의 연결이 끊어집니다. 디버깅 옵션의 ‘Kubernetes 디버깅 도구’ 섹션에서 ‘디버깅 후 연결 끊기’를 *false*로 변경하면 이 동작을 변경할 수 있습니다. 이 설정을 업데이트하면 디버깅을 중지하고 시작할 때 개발 컴퓨터가 연결된 상태를 유지합니다. 클러스터에서 개발 컴퓨터의 연결을 끊으려면 도구 모음에서 ‘연결 끊기’ 단추를 클릭합니다.
 >
 > Visual Studio가 갑자기 종료되거나 클러스터 연결을 종료할 경우 리디렉션 중인 서비스가 Kubernetes와 함께 로컬 프로세스를 사용하여 연결하기 전의 원래 상태로 복원되지 않을 수 있습니다. 이 문제를 해결하려면 [문제 해결 가이드][troubleshooting]를 참조하세요.
 
