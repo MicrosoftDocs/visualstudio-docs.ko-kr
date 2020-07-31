@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371874"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453646"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 
@@ -266,12 +266,12 @@ Dictionary/머리글자어/CasingExceptions 노드의 용어는 다음 코드 �
 
 1. **솔루션 탐색기**에서 다음 절차 중 하나를 사용 합니다.
 
-2. 단일 프로젝트에 사전을 추가 하려면 프로젝트 이름을 마우스 오른쪽 단추로 클릭 한 다음 **기존 항목 추가**를 클릭 합니다. **기존 항목 추가** 대화 상자에서 파일을 지정 합니다.
+    - 단일 프로젝트에 사전을 추가 하려면 프로젝트 이름을 마우스 오른쪽 단추로 클릭 한 다음 **기존 항목 추가**를 클릭 합니다. **기존 항목 추가** 대화 상자에서 파일을 지정 합니다.
+  
+    - 둘 이상의 프로젝트 간에 공유 되는 사전을 추가 하려면 **기존 항목 추가** 대화 상자에서 공유할 파일을 찾고 **추가** 단추에서 아래쪽 화살표를 클릭 한 다음 **링크로 추가**를 클릭 합니다.
 
-3. 둘 이상의 프로젝트 간에 공유 되는 사전을 추가 하려면 **기존 항목 추가** 대화 상자에서 공유할 파일을 찾고 **추가** 단추에서 아래쪽 화살표를 클릭 한 다음 **링크로 추가**를 클릭 합니다.
+2. **솔루션 탐색기**에서 **CustomDictionary.xml** 파일 이름을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 클릭 합니다.
 
-4. **솔루션 탐색기**에서 **CustomDictionary.xml** 파일 이름을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 클릭 합니다.
+3. **빌드 작업** 목록에서 **CodeAnalysisDictionary**를 선택 합니다.
 
-5. **빌드 작업** 목록에서 **CodeAnalysisDictionary**를 선택 합니다.
-
-6. **출력 디렉터리에 복사** 목록에서 **복사 안 함**을 선택 합니다.
+4. **출력 디렉터리에 복사** 목록에서 **복사 안 함**을 선택 합니다.
