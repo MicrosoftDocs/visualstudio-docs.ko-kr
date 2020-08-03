@@ -8,16 +8,17 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
+ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "82921354"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507965"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML 디자이너를 사용하여 UI 만들기
 
@@ -122,8 +123,8 @@ Visual Studio의 문서 개요 창은 Blend for Visual Studio의 [개체 및 타
 
 - [애니메이션을 만듭니다](animate-objects-in-xaml-designer.md)(Blend for Visual Studio에만 해당).
 
-Visual Studio에서 문서 개요 창을 보려면 메뉴 모음에서**다른 창** > **문서 개요** **보기** > 를 선택 합니다.
-Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 모음에서**문서 개요** **보기** > 를 선택 합니다.
+Visual Studio에서 문서 개요 창을 보려면 메뉴 모음에서 **View**  >  **다른 창**  >  **문서 개요**보기를 선택 합니다.
+Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 모음에서 **View**  >  **문서 개요**보기를 선택 합니다.
 
 ![Visual Studio의 문서 개요 창](media/document-outline-window.png)
 
@@ -131,11 +132,11 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 **표시/숨기기**
 
-아트보드 요소를 표시하거나 숨깁니다. 표시된 경우 눈 기호로 표시됩니다. **Ctrl**+**h** 를 **Shift**+눌러 요소를 숨기고**ctrl**+**h** 를 눌러 표시할 수도 있습니다.
+아트보드 요소를 표시하거나 숨깁니다. 표시된 경우 눈 기호로 표시됩니다. **Ctrl** + **h** 를 눌러 요소를 숨기고 **Shift** + **ctrl** + **h** 를 눌러 표시할 수도 있습니다.
 
 **잠금/잠금해제**
 
-아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠겨 있는 경우 자물쇠 기호로 표시됩니다. **Ctrl**+**l** 을 눌러 요소 **Shift**+를 잠그고**ctrl**+**l** 키를 눌러 잠금을 해제할 수도 있습니다.
+아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠겨 있는 경우 자물쇠 기호로 표시됩니다. **Ctrl** + **l** 을 눌러 요소를 잠그고 **Shift** + **ctrl** + **l** 키를 눌러 잠금을 해제할 수도 있습니다.
 
 **범위를 pageRoot로 되돌립니다.**
 
@@ -143,7 +144,7 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 ## <a name="properties-window"></a>속성 창
 
-**속성** 창에서 컨트롤에 대 한 속성 값을 설정할 수 있습니다. 다음과 같이 나타납니다.
+**속성** 창에서 컨트롤에 대 한 속성 값을 설정할 수 있습니다. 다음과 같습니다.
 
 ![속성 창](media/xaml-designer-properties-window.png)
 
