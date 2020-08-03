@@ -5,6 +5,11 @@ ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 - vs.codeanalysis.propertypages.solution
+- vs.codeanalysis.propertypages.asp
+dev_langs:
+- CSharp
+- VB
+- FSharp
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
@@ -13,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8c922f0fc952cede53b9961e2e772e71a19cbb9
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371952"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507861"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 레거시 분석 구성
 
@@ -92,6 +97,6 @@ Visual Studio에서 코드 분석 [규칙 집합](../code-quality/rule-set-refer
 
 5. 프로젝트의 **규칙 집합** 필드를 선택한 다음 적용 하려는 규칙 집합의 이름을 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)
