@@ -5,17 +5,20 @@ ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
+f1_keywords:
+- vs.csharp.refactoring.preview
+ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02c4b00ce4ebdfc253735783d20fb90c62bae49b
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585719"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507926"
 ---
 # <a name="refactor-code"></a>코드 리팩터링
 

@@ -4,6 +4,7 @@ ms.date: 05/08/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
+- vs.classdesigner.enum
 helpviewer_keywords:
 - Class Designer [Visual Studio]
 - Class Designer, about Class Designer
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 80668f3b999d9e022de3d22abb383f2dbd10730a
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590399"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507913"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Class Designer를 사용하여 클래스와 형식 디자인 및 보기
 
