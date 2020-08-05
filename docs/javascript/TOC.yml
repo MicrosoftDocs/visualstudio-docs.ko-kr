@@ -26,18 +26,26 @@
       href: publish-nodejs-app-azure.md
 - name: 방법 가이드
   items:
-    - name: 코드 작성 및 편집
-      href: write-and-edit-code.md
-    - name: Vue.js 애플리케이션 만들기
-      href: create-application-with-vuejs.md
+    - name: 편집기
+      items:
+        - name: 코드 작성 및 편집
+          href: write-and-edit-code.md
+        - name: JavaScript IntelliSense
+          href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+    - name: 빌드
+      items:
+        - name: tsc를 사용하여 TypeScript 코드 컴파일
+          href: compile-typescript-code-npm.md
+        - name: NuGet을 사용하여 TypeScript 코드 컴파일
+          href: compile-typescript-code-nuget.md
     - name: npm 패키지 관리
       href: npm-package-management.md
     - name: 프로젝트 또는 솔루션 없이 개발(“폴더 열기”)
       href: develop-javascript-code-without-solutions-projects.md
+    - name: Vue.js 애플리케이션 만들기
+      href: create-application-with-vuejs.md
     - name: Node.js 대화형 REPL 사용
       href: nodejs-interactive-repl.md
-    - name: JavaScript IntelliSense
-      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
     - name: 디버그
       href: debug-nodejs.md
     - name: 단위 테스트
