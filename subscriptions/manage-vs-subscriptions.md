@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444879"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453689"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -26,14 +26,14 @@ Visual Studio 구독 포털은 향상된 단일 포털 환경에서 모든 Visua
 
 [혜택] 페이지에서 사용 중인 구독은 파란색 배너에 눈에 띄게 표시됩니다. 또한 페이지의 오른쪽 위에도 표시됩니다.
 > [!div class="mx-imgBorder"]
-> ![활성 구독](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![활성 구독](_img/manage-vs-subscriptions/current-subscription-cropped.png "현재 구독은 페이지상단과 구독 드롭다운 목록에 표시됩니다.")
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>구독 간에 전환하려면 다음을 수행할 수 있습니다.
 
 - 오른쪽 위의 드롭다운을 클릭하고 목록에서 구독을 선택합니다.
 - [구독] 탭을 클릭한 다음 원하는 구독을 클릭합니다.
   > [!div class="mx-imgBorder"]
-  > ![구독 전환](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![구독 전환](_img/manage-vs-subscriptions/change-subscription-resized.png "구독 탭을 클릭하여 모든 구독에 대한 자세한 정보를 확인하고 구독을 전환할 수 있습니다.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>구독이 표시되지 않는 경우
 
@@ -78,7 +78,7 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 월간 Visual Studio 구독 뉴스레터를 포함하여 구독 및 혜택의 정기 업데이트를 받으려는 경우 Visual Studio 프로필에서 Visual Studio 구독의 확인란을 선택하여 [기본 설정을 업데이트](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)합니다. 언제든지 이러한 기본 설정을 변경하고 구독을 취소할 수 있습니다. 
 
    > [!div class="mx-imgBorder"]
-   > ![기본 설정 지정](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![기본 설정 지정](_img/manage-vs-subscriptions/change-prefs.png "Visual Studio 구독 프로그램 이메일 확인란을 클릭하여 업데이트를 수신할 수 있습니다.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>내 구독을 기존 Azure DevOps Services 또는 Azure 구독에 연결
 개인 MSA(Microsoft 계정)를 사용하여 구독에 로그인하는 경우 Azure에서 관리하는 회사 또는 학교 계정을 사용하는 Azure DevOps Services 또는 Microsoft Azure를 포함한 구독이 있으면 두 구독을 연결할 수 있습니다. 이를 "대체 계정"이라고 하며, 학교 또는 회사 계정과 연결된 기존 Azure, Azure DevOps Services 또는 IDE 리소스에 액세스하는 동안 MSA를 계속 사용하여 구독에 로그인할 수 있게 해줍니다.

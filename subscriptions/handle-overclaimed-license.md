@@ -6,16 +6,16 @@ manager: lank
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
-description: 관리자가 초과 할당된 구독을 해결하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+description: 관리자가 초과 할당된 구독을 해결하는 방법을 알아봅니다.
+ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232446"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453717"
 ---
-# <a name="overallocated-subscriptions"></a>초과 할당된 구독
-구독자가 추가된 후 주문자가 변경되어 결국 회사가 소유하는 라이선스보다 더 많은 구독이 할당되는 경우가 간혹 있습니다. 이를 “초과 할당”이라고 합니다.  
+# <a name="over-allocated-subscriptions"></a>초과 할당된 구독
+구독자가 추가된 후 주문자가 변경되어 결국 회사가 소유하는 라이선스보다 더 많은 구독이 할당되는 경우가 간혹 있습니다. 이를 "초과 할당"이라고 합니다.  
 
 구독 할당을 보려면 왼쪽에서 맨 위 아이콘을 클릭하여 할당 창을 엽니다.  
 
@@ -23,11 +23,11 @@ ms.locfileid: "80232446"
 > 오픈 라이선스 프로그램에서는 초과 할당이 허용되지 않습니다.  또한 다른 프로그램이 이 정보를 포털에 다르게 표시할 수 있습니다.
 >
 > [!div class="mx-imgBorder"]
-> ![과도하게 요청된 구독 알림](_img/over-claimed/over-claimed-alert.png)
+> ![과도하게 요청된 구독 알림](_img/over-claimed/over-claimed-alert.png "초과 할당 수는 개요에 나열되며 각 구독 유형의 그래프에 해시된 막대로 표시됩니다.")
 
-표시에서는 해시된 막대를 사용하여 초과 할당된 구독을 나타냅니다.  모든 구독 유형의 초과 할당 수가 맨 위의 개요 섹션에 포함되고 각 구독 수준에도 자체 할당 상태가 표시됩니다.  
+디스플레이는 해시된 막대를 사용하여 초과 할당된 구독을 나타냅니다.  모든 구독 유형의 초과 할당 수가 맨 위의 개요 섹션에 포함되며, 각 구독 수준에도 자체 할당 상태가 표시됩니다.  
 
-## <a name="resolve-overallocated-subscriptions"></a>초과 할당된 구독 해결
+## <a name="resolve-over-allocated-subscriptions"></a>초과 할당된 구독 해결
 초과 할당을 해결하는 몇 가지 방법은 다음과 같습니다.
 - 대리점에 문의하여 추가 구독을 구매합니다.
 - 연간 true-up 기간까지 기다렸다가 그 시점에 초과 할당된 구독에 대해 요금을 지불합니다. 

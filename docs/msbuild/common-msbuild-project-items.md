@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182913"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425396"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 
@@ -170,3 +170,4 @@ Visual Basic 컴파일러가 네임스페이스를 가져올 어셈블리를 나
 
 - [일반적인 MSBuild 프로젝트 속성](../msbuild/common-msbuild-project-properties.md)
 - [.NET Core SDK 프로젝트의 MSBuild 속성](/dotnet/core/project-sdk/msbuild-props)
+- [공통 MSBuild 항목 메타데이터](common-msbuild-item-metadata.md)

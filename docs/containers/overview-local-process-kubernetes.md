@@ -6,12 +6,15 @@ ms.topic: conceptual
 description: Kubernetes와 함께 로컬 프로세스를 사용하여 개발 컴퓨터를 Kubernetes 클러스터에 연결하는 프로세스에 대해 설명합니다.
 keywords: Kubernetes와 함께 로컬 프로세스 사용, Docker, Kubernetes, Azure, 컨테이너
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+manager: jillfra
+author: ghogen
+ms.author: ghogen
+ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133980"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507887"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Kubernetes를 사용하는 로컬 프로세스의 작동 방식
 
@@ -20,6 +23,9 @@ Kubernetes와 함께 로컬 프로세스를 사용하면 나머지 애플리케�
 Kubernetes와 함께 로컬 프로세스를 사용하면 코드를 빌드하여 클러스터에 배포할 필요 없이 개발 컴퓨터와 클러스터 간에 직접 연결할 수 있습니다. 디버그하는 동안 개발 컴퓨터를 클러스터에 연결하면 Docker 또는 Kubernetes 구성을 만들지 않고도 전체 애플리케이션의 컨텍스트에서 서비스를 신속하게 테스트하고 개발할 수 있습니다.
 
 Kubernetes와 함께 로컬 프로세스를 사용하면 연결된 Kubernetes 클러스터와 개발 컴퓨터 간에 트래픽이 리디렉션됩니다. 이러한 트래픽 리디렉션을 통해 Kubernetes 클러스터에서 실행되는 서비스와 개발 컴퓨터의 코드가 동일한 Kubernetes 클러스터에 있는 것처럼 통신할 수 있습니다. Kubernetes와 함께 로컬 프로세스를 사용하면 Kubernetes 클러스터의 Pod에서 사용할 수 있는 환경 변수 및 탑재 볼륨을 개발 컴퓨터에 복제할 수도 있습니다. 개발 컴퓨터의 환경 변수 및 탑재 볼륨에 대한 액세스를 제공함으로써 해당 종속성을 수동으로 복제하지 않고도 코드 작업을 빠르게 수행할 수 있습니다.
+
+> [!WARNING]
+> Kubernetes용 로컬 프로세스는 개발 및 테스트 시나리오에서만 사용하도록 되어 있으며, 프로덕션 클러스터 또는 활성 상태 라이브 서비스에 사용하기에는 적합하지 않거나 지원되지 않습니다.
 
 ## <a name="using-local-process-with-kubernetes"></a>Kubernetes와 함께 로컬 프로세스를 사용
 
@@ -39,6 +45,12 @@ Kubernetes와 함께 로컬 프로세스를 사용하여 클러스터에 연결�
 * 개발 컴퓨터에서 코드 실행 및 디버깅을 시작합니다. Kubernetes와 함께 로컬 프로세스를 사용하는 경우 필요하다면 현재 개발 컴퓨터에서 필요한 포트를 사용 중인 서비스나 프로세스를 중지하여 해당 포트를 해제합니다.
 
 클러스터에 연결한 후에는 컨테이너화하지 않고 컴퓨터에서 기본적으로 코드를 실행하고 디버그할 수 있으며, 코드가 클러스터의 나머지 부분과 직접 상호 작용할 수 있습니다. 기본적으로 실행되는 코드가 트래픽을 수락하고 처리할 수 있도록 원격 에이전트가 수신하는 모든 네트워크 트래픽이 연결 중에 지정한 로컬 포트로 리디렉션됩니다. 개발 컴퓨터에서 실행되는 코드가 클러스터의 환경 변수, 볼륨, 비밀을 사용할 수 있습니다. 또한 Kubernetes와 함께 로컬 프로세스를 사용하는 경우 개발자 컴퓨터에 추가되는 hosts 파일 항목 및 포트 전달 기능 때문에 코드에 클러스터의 서비스 이름을 사용하여 네트워크 트래픽을 클러스터에서 실행되는 서비스로 보낼 수 있으며, 해당 트래픽은 클러스터에서 실행되는 서비스로 전달됩니다. 연결된 시간 동안 계속해서 개발 컴퓨터와 클러스터 간에 트래픽이 라우팅됩니다.
+
+또한 Kubernetes용 로컬 프로세스는 `KubernetesLocalProcessConfig.yaml` 파일을 통해 개발용 컴퓨터에서 클러스터의 Pod에 사용할 수 있는 환경 변수 및 탑재된 파일을 복제하는 방법을 제공합니다. 이 파일을 사용하여 새 환경 변수 및 볼륨 탑재를 만들 수도 있습니다.
+
+## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml을 사용하는 추가 구성
+
+`KubernetesLocalProcessConfig.yaml` 파일을 사용하면 클러스터의 Pod에 사용할 수 있는 환경 변수 및 탑재된 파일을 복제할 수 있습니다. 추가 구성 옵션에 대한 자세한 내용은 [Kubernetes용 로컬 프로세스 구성][using-config-yaml]을 참조하세요.
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>격리 상태로 개발하기 위한 라우팅 기능 사용
 
@@ -108,3 +120,4 @@ Kubernetes와 함께 로컬 프로세스를 사용하여 로컬 개발 컴퓨터
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[using-config-yaml]: configure-local-process-with-kubernetes.md

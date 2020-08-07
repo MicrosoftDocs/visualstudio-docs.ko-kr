@@ -2,17 +2,17 @@
 title: Visual Studio 구독에서 제품 키 찾고 요청하기 | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 03/09/2020
+ms.date: 07/30/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 찾고 요청하며 내보내는 방법을 알아봅니다.
-ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 8ee21c544a44bfd5eca831cdc9fd1c8e00adb35b
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232493"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453751"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 찾고 요청하기
 이 문서에서는 https://my.visualstudio.com/productkeys 에서 제품 키를 찾고 요청하며 내보내는 방법을 설명합니다.  일반 정품 및 볼륨 라이선스 버전의 키, 일일 제품 키 요청 제한, 키를 사용한 제품 정품 인증 방법에 대한 자세한 내용은 [제품 키 개요](product-keys.md)를 참조하세요.
@@ -20,7 +20,7 @@ ms.locfileid: "80232493"
 ## <a name="locating-and-claiming-product-keys"></a>제품 키 찾기 및 요청
 제품 키를 보려면 Visual Studio 구독에 로그인해야 합니다. 개별 제품 키는 아래 표시된 것처럼 [다운로드](https://my.visualstudio.com/downloads) 페이지에서 특정 제품에 대한 파란색 **키 가져오기** 링크를 선택하여 확인할 수 있습니다.  또한 모든 키는 [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 페이지에서 전체적으로 사용할 수도 있습니다. 단일 제품에 대해 여러 키가 있는 경우 다운로드를 위해 [메모] 열에 해당 정보가 표시되어 사용해야 할 키를 식별하는 데 도움이 됩니다.
 > [!div class="mx-imgBorder"]
-> ![다운로드 페이지에서 키 가져오기](_img/product-keys/download-get-key.png)
+> ![다운로드 페이지에서 키 가져오기](_img/product-keys/download-get-key.png "임의의 다운로드 정보 페이지에서 키 가져오기를 클릭하여 해당 제품에 대한 키를 가져옵니다.")
 
 일부 제품은 한 번에 다운로드할 수 있도록 여러 버전이 번들로 구성되어 있습니다. 이러한 경우 입력하는 제품 키에 따라 설치되는 제품 버전이 결정됩니다.
 일부 키는 "정적" 키와 같이 자동으로 제공되며, 정품 인증이 필요하지 않으므로 필요한 만큼 여러 번 사용할 수 있습니다. 다른 키는 제품에 대한 **키 가져오기** 링크를 선택하여 요청해야 합니다.
@@ -53,7 +53,7 @@ ms.locfileid: "80232493"
 2. [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 탭을 클릭합니다.
 3. 제품 키는 제품 이름별 사전순으로 나열됩니다.  원하는 제품의 이름으로 스크롤하거나 페이지 위쪽의 검색 표시줄을 사용하여 검색할 수 있습니다.
 > [!div class="mx-imgBorder"]
-> ![제품 키 검색](_img/product-keys/search-keys.png)
+> ![제품 키 검색](_img/product-keys/search-keys.png "원하는 제품으로 스크롤하거나 검색 상자를 사용하여 제품을 빠르게 찾을 수 있습니다.")
    
 이 예에서는 검색 표시줄을 사용하여 Visual Studio Enterprise 2019에 대한 제품 키를 찾습니다.
 여기에는 몇 가지 버전이 나열되어 있습니다.  각각의 키는 이미 Visual Studio Enterprise 2019 버전 16.0 및 16.1에 대해 요청된 상태입니다.  두 버전에 대해 서로 다른 유형의 키를 여전히 추가로 사용할 수 있습니다. **메모** 열에서 요청한 키에 대한 간단한 메모를 기록할 수 있습니다.  **요청됨** 열의 날짜와 함께 이 메모를 사용하면 요청한 키를 추적할 수 있습니다.  예를 들어 키를 사용하여 제품 설치를 정품 인증할 때 메모를 만들 수 있습니다.

@@ -2,7 +2,7 @@
 title: Visual Studio 관리자 가이드
 titleSuffix: ''
 description: 엔터프라이즈 환경에 Visual Studio를 배포하는 방법을 자세히 알아봅니다.
-ms.date: 03/09/2020
+ms.date: 07/29/2020
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419265"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425409"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
@@ -40,13 +40,17 @@ ms.locfileid: "85419265"
 
 * 서비스 요구 사항을 결정합니다.
 
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 ***Enterprise 및 Professional 고객용 지원 옵션*** 섹션 및 [방법: 서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 ****** Enterprise 및 Professional 고객용 지원 옵션 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
   누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
 * 업데이트 모델을 결정합니다.
 
   업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
+
+  최신 제품 업데이트를 사용하여 Visual Studio의 네트워크 설치 레이아웃을 업데이트할 수 있으므로, 해당 레이아웃을 Visual Studio의 최신 업데이트에 대한 설치 지점으로 사용하거나 이미 클라이언트 워크스테이션에 배포된 설치를 유지 관리하는 데 사용할 수 있습니다. 자세한 내용은 [Visual Studio의 네트워크 기반 설치 업데이트](../install/update-a-network-installation-of-visual-studio.md)를 참조하세요.
+
+  인터넷에 연결되지 않은 컴퓨터의 경우 최소 레이아웃을 만드는 것이 오프라인 Visual Studio 인스턴스를 업데이트하는 가장 쉽고 빠른 방법입니다. 자세한 내용은 [최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](update-minimal-layout.md)를 참조하세요.
 
 * 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2019)를 결정합니다.
 
@@ -62,13 +66,17 @@ ms.locfileid: "85419265"
 
 * 서비스 요구 사항을 결정합니다.
 
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 ***이전 버전의 Visual Studio 지원*** 섹션 및 [방법: 서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 ****** 이전 버전의 Visual Studio 지원 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
   누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
 * 업데이트 모델을 결정합니다.
 
   업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
+
+  최신 제품 업데이트를 사용하여 Visual Studio의 네트워크 설치 레이아웃을 업데이트할 수 있으므로, 해당 레이아웃을 Visual Studio의 최신 업데이트에 대한 설치 지점으로 사용하거나 이미 클라이언트 워크스테이션에 배포된 설치를 유지 관리하는 데 사용할 수 있습니다. 자세한 내용은 [Visual Studio의 네트워크 기반 설치 업데이트](../install/update-a-network-installation-of-visual-studio.md)를 참조하세요.
+
+  인터넷에 연결되지 않은 컴퓨터의 경우 최소 레이아웃을 만드는 것이 오프라인 Visual Studio 인스턴스를 업데이트하는 가장 쉽고 빠른 방법입니다. 자세한 내용은 [최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](update-minimal-layout.md)를 참조하세요.
 
 * 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2017)를 결정합니다.
 

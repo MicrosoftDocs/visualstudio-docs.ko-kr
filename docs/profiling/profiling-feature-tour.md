@@ -3,7 +3,11 @@ title: 프로파일링 도구를 사용하여 성능 측정
 description: Visual Studio에서 사용할 수 있는 다른 진단 도구에 대해 간략히 살펴봅니다.
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816698"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507991"
 ---
 # <a name="first-look-at-profiling-tools"></a>프로파일링 도구 살펴보기
 
@@ -168,7 +172,7 @@ UWP 앱에서 UI 응답성, 느린 로드 시간 및 느린 시각적 업데이�
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>네트워크 사용량 분석(UWP)
 
-UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행된 네트워크 작업을 분석할 수 있습니다. 이 도구를 사용하면 액세스 및 인증 문제, 잘못된 캐시 사용, 잘못된 표시 및 다운로드 성능 등과 같은 문제를 해결할 수 있습니다. 이 도구를 사용하려면 성능 프로파일러에서 **네트워크**를 선택한 다음 **시작**을 선택합니다. 앱에서 `Windows.Web.Http`를 사용하는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
+UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행되는 네트워크 작업을 분석할 수 있습니다. 이 도구는 액세스 및 인증 문제, 잘못된 캐시 사용, 저하된 디스플레이 및 다운로드 성능과 같은 문제를 해결하는 데 도움이 될 수 있습니다. 이 도구를 사용하려면 성능 프로파일러에서 **네트워크**를 선택한 다음 **시작**을 선택합니다. 앱에서 `Windows.Web.Http`를 사용하는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
 
 ![네트워크 사용량 프로파일링 도구](../profiling/media/prof-tour-network-usage.png "Diag Network Usage")
 
@@ -196,7 +200,7 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 다음 테이블에는 Visual Studio가 제안하는 다양한 도구 및 그와 함께 사용할 수 있는 다양한 프로젝트 형식이 나열되어 있습니다.
 
 ::: moniker range=">=vs-2019"
-|성능 도구|Windows 바탕 화면|UWP|ASP.NET/ASP.NET Core|
+|성능 도구|Windows 데스크톱|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[PerfTips](../profiling/perftips.md)|예|예|예|
 |[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
@@ -207,12 +211,12 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |[이벤트 뷰어](../profiling/events-viewer.md)|예|예|예|
 |[.NET Async](../profiling/analyze-async.md)|예(.NET만 해당)|예|예|
 |[데이터베이스](../profiling/analyze-database.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
-|[성능 탐색기](../profiling/performance-explorer.md)|no|no|no|
+|[성능 탐색기](../profiling/performance-explorer.md)|no|no|아니요|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-|성능 도구|Windows 바탕 화면|UWP|ASP.NET/ASP.NET Core|
+|성능 도구|Windows 데스크톱|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
@@ -227,5 +231,5 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 ::: moniker-end
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

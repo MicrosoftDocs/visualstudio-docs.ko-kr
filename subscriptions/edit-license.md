@@ -2,17 +2,17 @@
 title: 관리자 포털에서 구독 편집 | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 ms.topic: how-to
 description: 관리자가 구독 할당을 편집하는 방법을 알아봅니다.
-ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902931"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453735"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio 구독 할당 편집
 구독 관리자는 조직 내에서 개인에게 할당된 구독을 변경할 수 있습니다.  이 문서에서는 관리자가 변경할 수 있는 유형에 대해 설명하고 필요한 단계를 제공합니다.
@@ -25,7 +25,7 @@ ms.locfileid: "85902931"
 
 구독자를 편집하려면 마우스로 위를 가리킬 때 구독자의 이메일 주소 옆에 나타나는 줄임표(...)를 선택합니다. 드롭다운이 표시됩니다.  **편집**을 선택하여 구독자 세부 정보를 수정합니다. 
 > [!div class="mx-imgBorder"]
-> ![편집할 구독자 선택](_img/edit-license/select-subscriber.png)
+> ![편집할 구독자 선택](_img/edit-license/select-subscriber.png "줄임표를 클릭하고 편집을 선택합니다.")
 
 구독자의 이름, 성, 구독 수준, 이메일 주소, 국가, 언어, 다운로드 및 참조 필드를 업데이트할 수 있습니다. 구독자 정보를 편집하고 **저장**을 클릭합니다.
 
@@ -45,13 +45,13 @@ ms.locfileid: "85902931"
 
 2. 대량 편집은 Excel 템플릿을 사용하여 구독자 정보를 편집합니다. [대량 편집] 상자에서 **이 Excel 내보내기**를 클릭하여 모든 정보가 포함된 현재 구독자 목록을 다운로드합니다.
    > [!div class="mx-imgBorder"]
-   > ![라이선스 편집 - 대량 편집 목록 내보내기](_img/edit-license/edit-license-bulk-edit-export.png)
+   > ![라이선스 편집 - 대량 편집 목록 내보내기](_img/edit-license/edit-license-bulk-edit-export.png "Excel로 내보내기를 클릭하여 현재 구독 목록을 만듭니다.")
 
 3. 다음으로 파일을 쉽게 찾을 수 있고 업로드하기 전에 필요한 변경을 수행할 수 있도록 해당 파일을 로컬로 저장합니다. 업로드를 성공적으로 수행하려면 대량 편집 파일에서 **구독 수준 또는 구독 GUID를 편집하지 마세요**. 편집하면 업로드가 실패합니다.
 
 4. Visual Studio 구독 관리 포털로 돌아가고, [대량 편집] 대화 상자에서 **찾아보기**를 클릭합니다. 저장한 Excel 파일을 선택하고 **확인**을 클릭합니다. 업로드 진행률이 화면에 표시됩니다.
    > [!div class="mx-imgBorder"]
-   > ![라이선스 편집 - 대량 편집 파일 업로드](_img/edit-license/edit-license-bulk-file-upload1.png)
+   > ![라이선스 편집 - 대량 편집 파일 업로드](_img/edit-license/edit-license-bulk-file-upload1.png "완성된 Excel 파일의 위치로 이동하여 파일을 선택한 뒤 확인을 클릭합니다.")
 
 5. 파일이 업로드되면 성공했음을 알려주는 알림이 표시됩니다. 이 시점에서 편집한 내용이 구독자 정보에 반영됩니다.
 
@@ -65,5 +65,3 @@ ms.locfileid: "85902931"
 - 특정 구독 ID를 할당해야 하나요? 구독 ID 할당을 체크 아웃합니다. 
 - 특정 구독을 찾는 데 도움이 필요하면 [구독 검색](search-license.md)을 체크 아웃하세요.
 - 모든 구독 목록을 만들어야 하나요?  [구독 내보내기](exporting-subscriptions.md)를 체크 아웃하세요.
-
-

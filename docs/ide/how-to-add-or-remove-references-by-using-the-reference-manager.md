@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284728"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390264"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 
@@ -47,6 +47,9 @@ ms.locfileid: "85284728"
 - **Windows**에는 **핵심** 및 **확장** 하위 그룹이 포함됩니다. **개체 브라우저**를 사용하여 Windows SDK 또는 확장명 SDK에서 참조를 탐색할 수 있습니다.
 
 - **찾아보기**에는 **최근 항목** 하위 그룹이 포함됩니다.
+ 
+    > [!NOTE]
+    > C++ 프로젝트를 개발하는 경우 참조 관리자 대화 상자에 **찾아보기**가 표시되지 않을 수 있습니다.
 
 ## <a name="add-a-reference"></a>참조 추가
 

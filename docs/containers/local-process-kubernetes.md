@@ -2,16 +2,19 @@
 title: Visual Studio에서 Kubernetes와 함께 로컬 프로세스를 사용(미리 보기)
 ms.technology: vs-azure
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Visual Studio에서 Kubernetes와 함께 로컬 프로세스를 사용하여 개발 컴퓨터를 Kubernetes 클러스터에 연결하는 방법을 알아봅니다.
 keywords: Kubernetes와 함께 로컬 프로세스 사용, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, 컨테이너
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+ms.author: ghogen
+author: ghogen
+manager: jillfra
+ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133998"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507900"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Kubernetes와 함께 로컬 프로세스 사용(미리 보기)
 
@@ -137,6 +140,10 @@ Visual Studio에서 [자전거 공유 애플리케이션 예제][bike-sharing-gi
 >
 > Visual Studio가 갑자기 종료되거나 클러스터 연결을 종료할 경우 리디렉션 중인 서비스가 Kubernetes와 함께 로컬 프로세스를 사용하여 연결하기 전의 원래 상태로 복원되지 않을 수 있습니다. 이 문제를 해결하려면 [문제 해결 가이드][troubleshooting]를 참조하세요.
 
+## <a name="additional-configuration"></a>추가 구성
+
+Kubernetes와 함께 로컬 프로세스를 사용하면 추가 구성 없이 라우팅 트래픽을 처리하고 환경 변수를 복제할 수 있습니다. Kubernetes 클러스터의 컨테이너에 탑재된 파일(예: ConfigMap 파일)을 다운로드해야 하는 경우 `KubernetesLocalProcessConfig.yaml`을 만들어 해당 파일을 개발용 컴퓨터에 다운로드할 수 있습니다. 자세한 내용은 [KubernetesLocalProcessConfig.yaml을 사용하여 Kubernetes용 로컬 프로세스 추가 구성][kubernetesLocalProcessConfig-yaml]을 참조하세요.
+
 ## <a name="using-logging-and-diagnostics"></a>로깅 및 진단 사용
 
 [개발 컴퓨터의 *TEMP* 디렉터리][azds-tmp-dir]에 있는 `Azure Dev Spaces` 디렉터리에서 진단 로그를 찾을 수 있습니다.
@@ -170,3 +177,4 @@ Visual Studio에서 [자전거 공유 애플리케이션 예제][bike-sharing-gi
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[kubernetesLocalProcessConfig-yaml]: configure-local-process-with-kubernetes.md

@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289094"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453763"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
 
 Visual Studio의 코드 편집기에 대한 간략한 소개에서는 Visual Studio에서 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 보여줍니다.
 
 > [!TIP]
-> 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다. 수행 중인 앱 개발 형식에 따라 Visual Studio와 함께 **Node.js 개발 워크로드**를 설치해야 할 수 있습니다.
+> 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다. 수행 중인 앱 개발 형식에 따라 Visual Studio와 함께 **Node.js 개발 워크로드**를 설치해야 할 수 있습니다. TypeScript용 언어 서비스를 가져오는 방법에 대한 자세한 내용은 [TypeScript 지원](../javascript/javascript-in-vs-2019.md#typescript-support)을 참조하세요.
 
 이 문서에서는 이미 JavaScript 개발에 친숙하다고 가정합니다. 그렇지 않은 경우 먼저 [Node.js 및 Express 앱 만들기](../javascript/tutorial-nodejs.md)와 같은 자습서를 살펴보는 것이 좋습니다.
 
@@ -65,6 +65,8 @@ IntelliSense 정보를 제공하기 위해 언어 서비스는 TypeScript *d.ts*
 ![오류 목록 보기](../javascript/media/write-code-error-list.png)
 
 `"data"` 앞에 쉼표(`,`)를 추가하여 이 코드를 수정할 수 있습니다.
+
+린팅에 대한 자세한 내용은 [린팅](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md)을 참조하세요.
 
 ## <a name="comment-out-code"></a>코드 주석 처리
 
@@ -116,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 **편집** > **IntelliSense** > **코드 조각 삽입**을 선택한 다음, 언어의 폴더를 선택하여 언어에 사용 가능한 코드 조각을 확인할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 조각](../ide/code-snippets.md)
 - [코드 탐색](../ide/navigating-code.md)
