@@ -441,6 +441,8 @@
           href: common-msbuild-project-properties.md
         - name: 일반적인 MSBuild 프로젝트 항목
           href: common-msbuild-project-items.md
+        - name: 공통 MSBuild 항목 메타데이터
+          href: common-msbuild-item-metadata.md
         - name: MSBuild 명령줄 참조
           href: msbuild-command-line-reference.md
         - name: MSBuild .Targets 파일
