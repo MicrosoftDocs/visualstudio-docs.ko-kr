@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e7a21a010cf98da3d7adb9627105c2847b7571e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 9b5a03c9cb7ae7c5a5c81bd452dbb04d8db4c09d
+ms.sourcegitcommit: ed17ca9ae5f92c229c4e46233bcfe0a49d29ec43
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386357"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88052624"
 ---
 # <a name="security-warnings"></a>보안 경고
 
 보안 경고는 더 안전한 라이브러리 및 애플리케이션을 지원합니다. 이들 경고는 프로그램의 보안 결함을 방지하는 데 도움이 됩니다. 이들 경고를 비활성화하는 경우 코드에 그 이유를 명확하게 표시하고 개발 프로젝트의 지정된 보안 담당자에게 이 사실을 알려야 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 |규칙|설명|
 |----------|-----------------|
@@ -96,6 +96,8 @@ ms.locfileid: "86386357"
 |[CA2354: 역직렬화된 개체 그래프의 안전하지 않은 데이터 세트 또는 DataTable은 원격 코드 실행 공격에 취약할 수 있습니다.](ca2354.md)|Serialize 된로 deserialize <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> 하 고, 캐스트 된 형식의 개체 그래프에 또는가 포함 될 수 있습니다 <xref:System.Data.DataSet> <xref:System.Data.DataTable> .|
 |[CA2355: 역직렬화된 개체 그래프의 안전하지 않은 데이터 세트 또는 DataTable](ca2355.md)|캐스팅 되거나 지정 된 형식의 개체 그래프에 또는가 포함 될 수 있는 경우 deserialize <xref:System.Data.DataSet> <xref:System.Data.DataTable>|
 |[CA2356: 웹 deserialize 된 개체 그래프의 안전 하지 않은 데이터 집합 또는 DataTable](ca2356.md)|또는를 사용 하는 메서드에 <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> 또는를 참조할 수 있는 매개 변수가 있습니다 <xref:System.Data.DataSet> <xref:System.Data.DataTable> .|
+|[CA2361: ReadXml ()를 포함 하는 자동 생성 된 클래스가 신뢰할 수 없는 데이터와 함께 사용 되지 않는지 확인 합니다.](ca2361.md)|신뢰할 수 없는 입력으로를 deserialize 할 때 <xref:System.Data.DataSet> 공격자는 서비스 거부 공격을 수행할 악성 입력을 만들 수 있습니다. 알 수 없는 원격 코드 실행 취약점이 있을 수 있습니다.|
+|[CA2362: 자동 생성 serialize 할 수 있는 형식에서 안전 하지 않은 데이터 집합 또는 DataTable은 원격 코드 실행 공격에 취약할 수 있습니다.](ca2362.md)|를 사용 하 여 신뢰할 수 없는 입력 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 을 deserialize 하 고 deserialize 된 개체 그래프에 또는가 포함 된 경우 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 공격자는 악의적인 페이로드를 만들어 원격 코드 실행 공격을 수행할 수 있습니다.|
 |[CA3001: 코드에서 SQL 주입 취약점에 대해 검토합니다.](../code-quality/ca3001.md)|신뢰할 수 없는 입력 및 SQL 명령으로 작업 하는 경우 SQL 삽입 공격에 유의 해야 합니다. SQL 삽입 공격은 악의적인 SQL 명령을 실행 하 여 응용 프로그램의 보안 및 무결성을 손상 시킬 수 있습니다.|
 |[CA3002: 코드에서 XSS 취약점에 대해 검토합니다.](../code-quality/ca3002.md)|웹 요청에서 신뢰할 수 없는 입력으로 작업할 때는 XSS (사이트 간 스크립팅) 공격에 주의 해야 합니다. XSS 공격은 신뢰할 수 없는 입력을 원시 HTML 출력에 삽입 하 여 공격자가 악의적인 스크립트를 실행 하거나 웹 페이지의 콘텐츠를 악의적으로 수정할 수 있도록 합니다.|
 |[CA3003: 코드에서 파일 경로 삽입 취약성에 대해 검토합니다.](../code-quality/ca3003.md)|웹 요청에서 신뢰할 수 없는 입력으로 작업 하는 경우 파일에 대 한 경로를 지정 하는 경우 사용자가 제어 하는 입력을 사용할 수 있습니다.|

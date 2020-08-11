@@ -16,6 +16,7 @@
 ### [Microsoft 계정으로 로그인](sign-in-msa.md)
 ### [회사 또는 학교 계정으로 로그인](sign-in-work.md)
 ### [GitHub로 로그인](sign-in-github.md)
+### [연결된 ID](use-connected-identities.md)
 ### [대체 ID](vs-alternate-identity.md)
 ### [로그인 문제](sign-in-issues.md)
 ### [구독자 데이터 익명화](anonymization.md)
