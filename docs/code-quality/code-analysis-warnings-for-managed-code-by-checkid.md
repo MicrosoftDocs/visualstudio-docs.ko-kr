@@ -286,18 +286,19 @@ f1_keywords:
 - CA2247
 - CA5122
 - CA5374
+- IL3000
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235097"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114151"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -603,3 +604,4 @@ ms.locfileid: "87235097"
 | CA5400 | [CA5400 HttpClient 인증서 해지 목록 확인이 사용 하도록 설정 되지 않았는지 확인 합니다.](../code-quality/ca5400.md) | 해지 된 인증서를 더 이상 신뢰할 수 없습니다. 공격자는 악성 데이터를 전달 하거나 HTTPS 통신에서 중요 한 데이터를 도용 하는 데 사용할 수 있습니다. |
 | CA5401 | [CA5401는 기본값이 아닌 IV와 함께 CreateEncryptor를 사용 하지 않습니다.](../code-quality/ca5401.md) | 대칭 암호화는 항상 반복 되지 않는 초기화 벡터를 사용 하 여 사전 공격을 방지 해야 합니다. |
 | CA5402 | [CA5402는 기본 IV와 함께 CreateEncryptor를 사용 합니다.](../code-quality/ca5402.md) | 대칭 암호화는 항상 반복 되지 않는 초기화 벡터를 사용 하 여 사전 공격을 방지 해야 합니다. |
+| IL3000 | [IL3000 단일 파일로 게시할 때 어셈블리 파일 경로 액세스를 사용 하지 않습니다.](../code-quality/il3000.md) | 단일 파일로 게시할 때 어셈블리 파일 경로 액세스를 사용 하지 마십시오. |

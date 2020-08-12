@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536190"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114260"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 
@@ -360,7 +360,7 @@ IDE의 도움말 메뉴 항목에서 **디버그 도움말 컨텍스트**를 선
 
 다음 표에서 대괄호 사이에 표시 되는 모든 문자열은 인식 된 값으로 바꾸어야 하는 자리 표시자입니다. 예를 들어에서 \<meta name="Microsoft.Help.Locale" content="[language code]" /> "[언어 코드]"는 "en-us"와 같은 값으로 바꾸어야 합니다.
 
-| 속성 (HTML 표시) | 설명 |
+| 속성 (HTML 표시) | Description |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 하며 다른 Microsoft 도움말 태그 위에 삽입 해야 합니다. 이 태그를 사용 하지 않으면 제품 로캘과 연결 된 단어 분리기 (지정 된 경우)를 사용 하 여 항목의 본문 텍스트가 인덱싱됩니다. 그렇지 않으면 en-us 단어 분리기가 사용 됩니다. 이 태그는 ISOC RFC 4646을 준수 합니다. Microsoft 도움말이 제대로 작동 하도록 하려면 일반 언어 특성 대신이 속성을 사용 합니다. |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 다른 로캘이 사용 될 때이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 합니다. 카탈로그에 둘 이상의 언어로 된 콘텐츠가 포함 된 경우이 태그를 사용 합니다. 카탈로그의 여러 항목은 동일한 ID를 가질 수 있지만 각 항목은 고유한 TopicLocale를 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목은 목차에 표시 되는 항목입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다. |
@@ -445,7 +445,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 
 **Branding.xml**
 
-| | |
+| 기능 | Description |
 | - | - |
 | 기능: | **CollapsibleArea** |
 | 사용: | 축소 콘텐츠 컨트롤 텍스트 확장 |
@@ -563,7 +563,7 @@ branding.js 파일에는 Visual Studio 도움말 뷰어 브랜딩 요소에 사�
 
 브랜딩 패키지에는 콘텐츠 사용자에 게 유용한 정보를 제공 하는 기능을 지 원하는 HTM 파일 집합이 포함 되어 있습니다. 예를 들어, 설치 되는 콘텐츠 집합을 설명 하는 섹션과 항목의 로컬 항목에서 항목을 찾을 수 없는 경우 사용자에 게 알려 주는 페이지가 포함 된 홈 페이지가 있습니다. 이러한 HTM 파일은 제품 별로 수정할 수 있습니다.  ISO 셸 공급 업체는 기본 브랜딩 패키지를 사용 하 여 이러한 페이지의 동작과 콘텐츠를 요구 사항에 맞게 변경할 수 있습니다.  이러한 파일은 브랜딩 태그가 branding.xml 파일에서 해당 콘텐츠를 가져오기 위해 각 브랜딩 패키지를 참조 합니다.
 
-|**최근에 사용한 파일**|**사용**|**표시 된 콘텐츠 원본**|
+|**파일**|**사용**|**표시 된 콘텐츠 원본**|
 |-|-|-|
 |homepage.htm|현재 설치 된 콘텐츠를 표시 하는 페이지 및 해당 콘텐츠에 대 한 사용자에 게 제공 되는 기타 모든 메시지입니다.  이 파일에는이 콘텐츠를 로컬 콘텐츠 TOC의 맨 위에 배치 하는 추가 메타 데이터 특성 "Microsoft.Help.Id" content = "-1"이 있습니다.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, 태그\<HomePageTitle>|
@@ -597,7 +597,7 @@ Visual Studio 도움말 뷰어 브랜딩 패키지에는 일관성 있는 Visual
 
 Visual Studio 콘텐츠는 Visual Studio 로고 및 기타 그래픽을 표시 합니다.  Visual Studio 도움말 뷰어 브랜딩 패키지의 전체 그래픽 파일 목록은 아래와 같습니다.
 
-|**최근에 사용한 파일**|**사용**|**예**|
+|**파일**|**사용**|**예**|
 |-|-|-|
 |clear.gif|축소 가능한 영역을 렌더링 하는 데 사용 됩니다.||
 |footer_slice.gif|바닥글 프레젠테이션||
@@ -826,7 +826,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
 
 12. Contoso IDE 내에서 f1 키를 선택 하 여 F1 기능을 테스트 합니다.
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 
 런타임 API에 대 한 자세한 내용은 [Windows 도움말 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)를 참조 하세요.
 
