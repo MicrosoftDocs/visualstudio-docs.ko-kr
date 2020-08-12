@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093936"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041040"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 
@@ -32,7 +32,6 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 ## <a name="override-predefined-targets"></a>미리 정의된 대상 재정의
 
 공통 대상은 빌드 프로세스의 일부 주요 대상의 전후에 호출되는 미리 정의된 빈 대상 집합을 포함합니다. 예를 들어 MSBuild는 메인 `CoreBuild` 대상 전에 `BeforeBuild` 대상을 호출하고 `CoreBuild` 대상 후에 `AfterBuild` 대상을 호출합니다. 기본적으로 공통 대상의 빈 대상은 아무것도 수행하지 않지만 공통 대상을 가져오는 프로젝트 파일에서 원하는 대상을 정의하여 해당 기본 동작을 재정의할 수 있습니다. 미리 정의된 대상을 재정의하면 MSBuild 작업을 사용하여 빌드 프로세스를 더 세부적으로 제어할 수 있습니다.
-공통 대상은 빌드 프로세스의 일부 주요 대상의 전후에 호출되는 미리 정의된 빈 대상 집합을 포함합니다. 예를 들어 MSBuild는 메인 `CoreBuild` 대상 전에 `BeforeBuild` 대상을 호출하고 `CoreBuild` 대상 후에 `AfterBuild` 대상을 호출합니다. 기본적으로 공통 대상의 빈 대상은 아무것도 수행하지 않지만 공통 대상을 가져오는 프로젝트 파일에서 원하는 대상을 정의하여 해당 기본 동작을 재정의할 수 있습니다. 미리 정의된 대상을 재정의하면 MSBuild 작업을 사용하여 빌드 프로세스를 더 세부적으로 제어할 수 있습니다.
 
 > [!NOTE]
 > SDK 스타일 프로젝트에는 *프로젝트 파일의 마지막 줄 뒤*에 대상의 암시적 가져오기가 있습니다. 즉, [방법: MSBuild 프로젝트 SDK 사용](how-to-use-project-sdk.md)의 설명대로 가져오기를 수동으로 지정하지 않는 한 기본 대상을 재정의할 수 없습니다.
@@ -41,7 +40,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 
 1. 재정의하려는 공통 대상에서 미리 정의된 대상을 식별합니다. 안전하게 재정의할 수 있는 대상의 전체 목록은 아래 표를 참조하세요.
 
-2. `</Project>` 태그 바로 앞에, 프로젝트 파일의 끝에 하나 이상의 대상을 정의합니다. 예를 들어:
+2. `</Project>` 태그 바로 앞에, 프로젝트 파일의 끝에 하나 이상의 대상을 정의합니다. 예를 들면 다음과 같습니다.
 
     ```xml
     <Project>
@@ -59,10 +58,10 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 
 다음 표는 안전하게 재정의할 수 있는 공통 대상에서 모든 대상을 표시합니다.
 
-|대상 이름|설명|
+|대상 이름|Description|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|이러한 대상 중 하나에 삽입된 작업은 핵심 컴파일이 완료되기 전이나 후에 실행됩니다. 대부분의 사용자 지정은 이러한 두 개의 대상 중 하나에서 수행됩니다.|
-|`BeforeBuild`, `AfterBuild`|이러한 대상 중 하나에 삽입된 작업은 빌드의 모든 작업 전이나 후에 실행됩니다. **참고:**  `BeforeBuild` 및 `AfterBuild` 대상은 프로젝트 파일 대부분의 끝에 삽입된 주석에서 이미 정의되어 있습니다. 따라서 프로젝트 파일에 빌드 전후 이벤트를 쉽게 추가할 수 있습니다.|
+|`BeforeBuild`, `AfterBuild`|이러한 대상 중 하나에 삽입된 작업은 빌드의 모든 작업 전이나 후에 실행됩니다. **참고:**`BeforeBuild` 및 `AfterBuild` 대상은 프로젝트 파일 대부분의 끝에 삽입된 주석에서 이미 정의되어 있습니다. 따라서 프로젝트 파일에 빌드 전후 이벤트를 쉽게 추가할 수 있습니다.|
 |`BeforeRebuild`, `AfterRebuild`|이러한 대상 중 하나에 삽입된 작업은 핵심 다시 빌드 기능이 호출되기 전 또는 후에 실행됩니다. *Microsoft.Common.targets*에서 대상 실행 순서는 차례로 `BeforeRebuild`, `Clean`, `Build` 및 `AfterRebuild`입니다.|
 |`BeforeClean`, `AfterClean`|이러한 대상 중 하나에 삽입된 작업은 핵심 정리 기능이 호출되기 전 또는 후에 실행됩니다.|
 |`BeforePublish`, `AfterPublish`|이러한 대상 중 하나에 삽입된 작업은 핵심 게시 기능이 호출되기 전 또는 후에 실행됩니다.|
@@ -112,7 +111,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 
 미리 정의된 대상 재정의는 빌드 프로세스를 확장하는 쉬운 방법이지만 MSBuild에서 대상의 정의를 순차적으로 평가하므로 프로젝트를 가져오는 다른 프로젝트에서 이미 재정의한 대상을 재정의하는 것을 방지할 방법이 없습니다. 따라서 예를 들어 다른 모든 프로젝트를 가져온 후 프로젝트에서 정의된 마지막 `AfterBuild` 대상은 빌드 중 사용되는 대상이 됩니다.
 
-공통 대상 전체의 `DependsOnTargets` 특성에서 사용되는 DependsOn 속성을 재정의하여 의도하지 않은 대상의 재정의를 방지할 수 있습니다. 예를 들어 `Build` 대상은 `"$(BuildDependsOn)"`의 `DependsOnTargets` 특성 값을 포함합니다. 고려 사항:
+공통 대상 전체의 `DependsOnTargets` 특성에서 사용되는 DependsOn 속성을 재정의하여 의도하지 않은 대상의 재정의를 방지할 수 있습니다. 예를 들어 `Build` 대상은 `"$(BuildDependsOn)"`의 `DependsOnTargets` 특성 값을 포함합니다. 고려할 사항은 다음과 같습니다.
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -130,7 +129,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 </PropertyGroup>
 ```
 
-프로젝트 파일의 끝에서 `BuildDependsOn`이라는 다른 속성을 선언하여 이 속성 값을 재정의할 수 있습니다. 새 속성에서 이전 `BuildDependsOn` 속성을 포함하여 대상 목록의 시작과 끝에 새 대상을 추가할 수 있습니다. 예를 들어:
+프로젝트 파일의 끝에서 `BuildDependsOn`이라는 다른 속성을 선언하여 이 속성 값을 재정의할 수 있습니다. 새 속성에서 이전 `BuildDependsOn` 속성을 포함하여 대상 목록의 시작과 끝에 새 대상을 추가할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```xml
 <PropertyGroup>
@@ -163,7 +162,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 
 ### <a name="commonly-overridden-dependson-properties"></a>일반적으로 재정의된 DependsOn 속성
 
-|속성 이름|설명|
+|속성 이름|Description|
 |-------------------|-----------------|
 |`BuildDependsOn`|전체 빌드 프로세스 앞이나 뒤에 사용자 지정 대상을 삽입하려는 경우 재정의할 속성입니다.|
 |`CleanDependsOn`|사용자 지정 빌드 프로세스에서 출력을 정리하려는 경우 재정의할 속성입니다.|
@@ -223,7 +222,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 
 요소의 순서가 중요합니다. `BuildDependsOn` 및 `CleanDependsOn` 요소는 표준 SDK 대상 파일을 가져온 후에 표시되어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 통합](../msbuild/visual-studio-integration-msbuild.md)
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
