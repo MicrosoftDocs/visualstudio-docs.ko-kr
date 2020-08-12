@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: 'IDispatchEx:: GetNextDispID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,16 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8811e828a6701769badf45ca7c37f9c53529150f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997337"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144431"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 
-개체의 멤버를 열거합니다.
+개체의 멤버를 열거 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,29 +41,29 @@ HRESULT GetNextDispID(
 ## <a name="parameters"></a>매개 변수
 
 `grfdex`\
-열거할 항목의 집합 결정 합니다. 다음 값의 조합 수 있습니다.
+열거할 항목 집합을 결정 합니다. 다음 값을 조합 하 여 사용할 수 있습니다.
 
 |값|의미|
 |-----------|-------------|
-|fdexEnumDefault|요청 개체는 기본 요소를 열거 합니다. 개체 요소 집합을 열거할 수 있습니다.|
-|fdexEnumAll|개체의 모든 요소를 열거 하는 요청입니다. 개체 요소 집합을 열거할 수 있습니다.|
+|fdexEnumDefault|개체가 기본 요소를 열거 하도록 요청 합니다. 개체는 모든 요소 집합을 열거할 수 있습니다.|
+|fdexEnumAll|개체가 모든 요소를 열거 하도록 요청 합니다. 개체는 모든 요소 집합을 열거할 수 있습니다.|
 
 `id`\
-현재 멤버를 식별합니다. GetNextDispID이 열거형의 항목을 검색합니다. 이 식별자를 가져오려면 GetDispID 또는 GetNextDispID에 대 한 이전 호출을 사용 합니다. 첫 번째 항목의 첫 번째 식별자를 가져오는 DISPID_STARTENUM 값을 사용 합니다.
+현재 멤버를 식별 합니다. GetNextDispID는 열거에서 항목을 검색 합니다. GetDispID 또는 GetNextDispID에 대 한 이전 호출을 사용 하 여이 식별자를 가져옵니다. DISPID_STARTENUM 값을 사용 하 여 첫 번째 항목의 첫 번째 식별자를 가져옵니다.
 
 `pid`\
-열거형의 다음 항목의 식별자를 수신 하는 DISPID 변수의 주소입니다.
+열거형의 다음 항목에 대 한 식별자를 수신 하는 DISPID 변수의 주소입니다.
 
-멤버에서 삭제 되 면 `DeleteMemberByName` 또는 `DeleteMemberByDispID`의 `DISPID` 에 대 한 유효한 상태를 유지 해야 하는 경우 `GetNextDispID`합니다.
+멤버가 또는에서 삭제 되는 `DeleteMemberByName` 경우 `DeleteMemberByDispID` 은 `DISPID` 에 대해 유효한 상태로 유지 되어야 `GetNextDispID` 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 다음 값 중 하나를 반환합니다.
 
-|||
+|값|의미|
 |-|-|
-|`S_OK`|명령 실행 성공|
-|`S_FALSE`|열거형이 수행 됩니다.|
+|`S_OK`|성공|
+|`S_FALSE`|열거가 완료 되었습니다.|
 
 ## <a name="example"></a>예제
 
@@ -88,7 +88,7 @@ HRESULT GetNextDispID(
    }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)
 - [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)

@@ -10,12 +10,12 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: e26b5cb1790cab38a6544a04307b7e336a952519
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 9fd497dcda7e40cf0dbe6409193019ddae84c80b
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835370"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144404"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 지정 된 코드 scriptlet를 구문 분석 하 여 네임 스페이스에 선언을 추가 하 고 코드를 적절 하 게 평가 합니다.  
@@ -38,7 +38,7 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>매개 변수  
   
-|||  
+| 매개 변수 | 설명 |  
 |-|-|  
 |`pstrCode`|진행 평가할 scriptlet 텍스트의 주소입니다. 이 문자열의 해석은 스크립팅 언어에 따라 달라 집니다.|  
 |`pstrItemName`|진행 Scriptlet을 평가할 컨텍스트를 제공 하는 항목 이름의 주소입니다. 이 매개 변수가 NULL 이면 스크립팅 엔진의 전역 컨텍스트에서 코드가 평가 됩니다.|  
@@ -54,17 +54,17 @@ HRESULT ParseScriptText(
 |SCRIPTTEXT_ISPERSISTENT|이 호출 중에 추가 된 코드는 스크립팅 엔진이 저장 된 경우 (예:에 대 한 호출을 통해 `IPersist*::Save` ) 또는 스크립팅 엔진이 초기화 된 상태로 다시 전환 되는 방식으로 다시 설정 된 경우 저장 되어야 함을 나타냅니다.|  
 |SCRIPTTEXT_ISVISIBLE|스크립트 텍스트를 스크립트의 이름 공간에서 전역 메서드로 표시 하 고, 따라서 이름으로 호출할 수 있음을 나타냅니다.|  
   
-|||  
+| 매개 변수 | 설명 |  
 |-|-|  
 |`pvarResult`|제한이 Scriptlet 처리 결과를 수신 하는 버퍼의 주소 이거나 `NULL` , 호출자가 결과를 예상 하지 않는 경우 (즉, SCRIPTTEXT_ISEXPRESSION 값이 설정 되지 않은 경우)입니다.|  
 |`pexcepinfo`|제한이 예외 정보를 받는 구조체의 주소입니다. 이 구조체는 DISP_E_EXCEPTION을 반환 하는 경우 채워집니다 `IActiveScriptParse::ParseScriptText` .|  
   
-## <a name="return-value"></a>반환 값  
+## <a name="return-value"></a>Return Value  
  다음 값 중 하나를 반환합니다.  
   
-|반환 값|의미|  
+|Return Value|의미|  
 |------------------|-------------|  
-|`S_OK`|성공.|  
+|`S_OK`|성공|  
 |`DISP_E_EXCEPTION`|Scriptlet를 처리 하는 동안 예외가 발생 했습니다. `pexcepinfo`매개 변수에는 예외에 대 한 정보가 포함 됩니다.|  
 |`E_INVALIDARG`|인수가 잘못된 경우.|  
 |`E_POINTER`|잘못 된 포인터가 지정 되었습니다.|  
@@ -81,5 +81,5 @@ HRESULT ParseScriptText(
   
  스크립트 상태에 대 한 자세한 내용은 [Windows 스크립트](../../winscript/windows-script-engines.md)엔진의 스크립트 엔진 상태 섹션을 참조 하십시오.  
   
-## <a name="see-also"></a>참조  
+## <a name="see-also"></a>참고 항목  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

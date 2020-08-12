@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8dbfb82e986ed6d1738bcc0cffeec35e5ba4515c
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574103"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144612"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 멤버의 이름을 검색 합니다.  
@@ -38,17 +38,17 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>매개 변수  
  `id`  
- 멤버를 식별합니다. `GetDispID` 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
+ 멤버를 식별합니다. `GetDispID`또는 `GetNextDispID` 를 사용 하 여 디스패치 식별자를 가져옵니다.  
   
  `pbstrName`  
- 멤버의 이름을 받는 `BSTR` 주소입니다. 호출 응용 프로그램은이 값을 해제 해야 합니다.  
+ `BSTR`멤버의 이름을 받는의 주소입니다. 호출 응용 프로그램은이 값을 해제 해야 합니다.  
   
-## <a name="return-value"></a>반환 값  
- 는 다음 값 중 하나를 반환 합니다.  
+## <a name="return-value"></a>Return Value  
+ 다음 값 중 하나를 반환합니다.  
   
-|||  
+|값|의미|
 |-|-|  
-|`S_OK`|명령 실행 성공|  
+|`S_OK`|성공|  
 |`DISP_E_UNKNOWNNAME`|이름을 알 수 없습니다.|  
   
 ## <a name="example"></a>예제  
@@ -76,5 +76,5 @@ HRESULT hr;
   
 ## <a name="see-also"></a>참고 항목  
  [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

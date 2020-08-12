@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 488f8790ec25532fb611f18e8b24e7e7dba2e2f4
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574091"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144552"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 멤버의 속성을 검색 합니다.  
@@ -39,10 +39,10 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>매개 변수  
  `id`  
- 멤버를 식별합니다. `GetDispID` 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
+ 멤버를 식별합니다. `GetDispID`또는 `GetNextDispID` 를 사용 하 여 디스패치 식별자를 가져옵니다.  
   
  `grfdexFetch`  
- 검색할 속성을 결정 합니다. `pgrfdex` 및/또는 다음 값의 조합에 나열 된 값을 조합 하 여 사용할 수 있습니다.  
+ 검색할 속성을 결정 합니다. `pgrfdex`및/또는 다음 값의 조합에 나열 된 값을 조합 하 여 사용할 수 있습니다.  
   
 |값|의미|  
 |-----------|-------------|  
@@ -52,7 +52,7 @@ HRESULT GetMemberProperties(
 |grfdexPropAll|GrfdexPropCanAll, grfdexPropCannotAll 및 grfdexPropExtraAll를 결합 합니다.|  
   
  `pgrfdex`  
- 요청 된 속성을 수신 하는 `DWORD`의 주소입니다. 다음 값을 조합 하 여 사용할 수 있습니다.  
+ 요청 된 속성을 받는의 주소입니다 `DWORD` . 다음 값을 조합 하 여 사용할 수 있습니다.  
   
 |값|의미|  
 |-----------|-------------|  
@@ -71,12 +71,12 @@ HRESULT GetMemberProperties(
 |fdexPropCanSourceEvents|멤버가 이벤트를 발생 시킬 수 있습니다.|  
 |fdexPropCannotSourceEvents|멤버가 이벤트를 발생 시킬 수 없습니다.|  
   
-## <a name="return-value"></a>반환 값  
- 는 다음 값 중 하나를 반환 합니다.  
+## <a name="return-value"></a>Return Value  
+ 다음 값 중 하나를 반환합니다.  
   
-|||  
+|값|의미|
 |-|-|  
-|`S_OK`|명령 실행 성공|  
+|`S_OK`|성공|  
 |`DISP_E_UNKNOWNNAME`|이름을 알 수 없습니다.|  
   
 ## <a name="example"></a>예제  
@@ -98,5 +98,5 @@ BSTR bstrName;
   
 ## <a name="see-also"></a>참고 항목  
  [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)
