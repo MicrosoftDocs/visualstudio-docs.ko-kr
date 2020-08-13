@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114260"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168738"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 
@@ -445,16 +445,16 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 
 **Branding.xml**
 
-| 기능 | Description |
+| 요소 | Description |
 | - | - |
 | 기능: | **CollapsibleArea** |
 | 사용: | 축소 콘텐츠 컨트롤 텍스트 확장 |
-| **요소** | **값** |
+| **Element** | **값** |
 | ExpandText | Expand |
 | CollapseText | 축소 |
 | 기능: | **CodeSnippet** |
 | 사용: | 코드 조각 컨트롤 텍스트입니다.  참고: "중단 없는" 공간이 있는 코드 조각 콘텐츠가 공백으로 변경 됩니다. |
-| **요소** | **값** |
+| **Element** | **값** |
 | CopyToClipboard | 클립보드로 복사 |
 | ViewColorizedText | 색 보기 |
 | CombinedVBTabDisplayLanguage | Visual Basic (샘플) |
@@ -462,7 +462,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | VBUsage | 사용 |
 | 기능: | **사용자 의견, 바닥글 및 로고** |
 | 사용: | 고객이 전자 메일을 통해 현재 항목에 대 한 피드백을 제공할 수 있도록 피드백 컨트롤을 제공 합니다.  콘텐츠의 저작권 텍스트입니다.  로고 정의. |
-| **요소** | **값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)** |
+| **Element** | **값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)** |
 | 저작권이 | © 2013 Microsoft Corporation. All rights reserved. |
 | SendFeedback | \<a href="{0}" {1}>\</a>Microsoft에이 항목에 대 한 사용자 의견을 보냅니다. |
 | No-results-found-feedbacklink | |
@@ -471,7 +471,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | LogoFileNameHC | vs_logo_wh.gif |
 | 기능: | **고지 사항** |
 | 사용: | 기계 번역 콘텐츠에 대 한 대/소문자 관련 대/소문자 집합입니다. |
-| **요소** | **값** |
+| **Element** | **값** |
 | MT_Editable | 이 문서는 기계 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다. |
 | MT_NonEditable | 이 문서는 기계 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다. |
 | MT_QualityEditable | 이 문서는 수동으로 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다. |
@@ -480,14 +480,14 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | MT_BetaRecycledContents | 이 문서는 예비 릴리스에 대해 수동으로 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다. |
 | 기능: | **LinkTable** |
 | 사용: | 온라인 항목 링크에 대 한 지원 |
-| **요소** | **값** |
+| **Element** | **값** |
 | LinkTableTitle | 테이블 연결 |
 | TopicEnuLinkText | \</a>컴퓨터에서 사용할 수 있는이 항목의 영어 버전을 확인 합니다. |
 | TopicOnlineLinkText | 온라인으로이 항목 보기 \<a href="{0}" {1}>\</a> |
 | OnlineText | 온라인 |
 | 기능: | **비디오 오디오 컨트롤** |
 | 사용: | 비디오 콘텐츠의 표시 요소 및 텍스트 |
-| **요소** | **값** |
+| **Element** | **값** |
 | Multimedian이상 지원 됨 | 콘텐츠를 지원 하려면 Internet Explorer 9 이상이 설치 되어 있어야 합니다 {0} . |
 | 비디오 텍스트 | 비디오 표시 |
 | 텍스트 텍스트 | 오디오 스트리밍 |
@@ -495,25 +495,25 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | OnlineAudioLinkText | \<p>이 항목과 연결 된 오디오를 수신 하려면 여기를 클릭 {0} \<a href="{1}"> {2} \</a> 하세요.\</p> |
 | 기능: | **콘텐츠가 설치 되지 않은 컨트롤** |
 | 사용: | contentnotinstalled.htm 렌더링에 사용 되는 텍스트 요소 (문자열) |
-| **요소** | **값** |
+| **Element** | **값** |
 | ContentNotInstalledTitle | 컴퓨터에서 콘텐츠를 찾을 수 없습니다. |
 | ContentNotInstalledDownloadContentText | \<p>컴퓨터에 콘텐츠를 다운로드 하려면 \<a href="{0}" {1}> 관리 탭을 클릭 \</a> 합니다.\</p> |
 | ContentNotInstalledText | \<p>컴퓨터에 콘텐츠가 설치 되어 있지 않습니다. 로컬 도움말 콘텐츠 설치는 관리자에 게 문의 하십시오.\</p> |
 | 기능: | **항목을 찾을 수 없음 컨트롤** |
 | 사용: | topicnotfound.htm 렌더링에 사용 되는 텍스트 요소 (문자열) |
-| **요소** | **값** |
+| **Element** | **값** |
 | TopicNotFoundTitle | 컴퓨터에서 요청한 항목을 찾을 수 없습니다. |
 | TopicNotFoundViewOnlineText | \<p>요청한 항목을 컴퓨터에서 찾을 수 없지만 온라인에서 항목을 볼 수 있습니다 \<a href="{0}" {1}> \</a> .\</p> |
 | TopicNotFoundDownloadContentText | \<p>유사한 항목에 대 한 링크를 보려면 탐색 창을 참조 하거나, \<a href="{0}" {1}> [관리] 탭을 클릭 \</a> 하 여 컴퓨터에 콘텐츠를 다운로드 하십시오.\</p> |
 | TopicNotFoundText | \<p>요청한 항목을 컴퓨터에서 찾을 수 없습니다.\</p> |
 | 기능: | **항목 손상 된 컨트롤** |
 | 사용: | topiccorrupted.htm 렌더링에 사용 되는 텍스트 요소 (문자열) |
-| **요소** | **값** |
+| **Element** | **값** |
 | TopicCorruptedTitle | 요청한 항목을 표시할 수 없습니다. |
 | TopicCorruptedViewOnlineText | \<p>도움말 뷰어에서 요청한 항목을 표시할 수 없습니다. 항목의 내용 또는 기본 시스템 종속성에 오류가 있을 수 있습니다.\</p> |
 | 기능: | **홈 페이지 컨트롤** |
 | 사용: | 도움말 뷰어 최상위 노드 콘텐츠의 표시를 지 원하는 텍스트입니다. |
-| **요소** | **값** |
+| **Element** | **값** |
 | HomePageTitle | 도움말 뷰어 홈 |
 | HomePageIntroduction | \<p>Microsoft 도구, 제품, 기술 및 서비스를 사용 하는 모든 사용자에 게 필수적인 정보 원본인 Microsoft 도움말 뷰어를 시작 합니다. 도움말 뷰어를 사용 하면 방법 및 참조 정보, 샘플 코드, 기술 문서 등에 액세스할 수 있습니다. 필요한 콘텐츠를 찾으려면 목차를 찾아보거나 전체 텍스트 검색을 사용 하거나 키워드 인덱스를 사용 하 여 콘텐츠를 탐색 합니다.\</p> |
 | HomePageContentInstallText | \<p>\<br />\<a href="{0}" {1}>콘텐츠 관리 \</a> 탭을 사용 하 여 다음 작업을 수행할 수 \<ul> \<li> 있습니다. 컴퓨터에 콘텐츠를 추가 합니다. \</li> \<li> 로컬 콘텐츠에 대 한 업데이트를 확인 합니다. \</li> \<li> 컴퓨터에서 콘텐츠를 제거 합니다.\</li>\</ul>\</p> |
@@ -563,7 +563,7 @@ branding.js 파일에는 Visual Studio 도움말 뷰어 브랜딩 요소에 사�
 
 브랜딩 패키지에는 콘텐츠 사용자에 게 유용한 정보를 제공 하는 기능을 지 원하는 HTM 파일 집합이 포함 되어 있습니다. 예를 들어, 설치 되는 콘텐츠 집합을 설명 하는 섹션과 항목의 로컬 항목에서 항목을 찾을 수 없는 경우 사용자에 게 알려 주는 페이지가 포함 된 홈 페이지가 있습니다. 이러한 HTM 파일은 제품 별로 수정할 수 있습니다.  ISO 셸 공급 업체는 기본 브랜딩 패키지를 사용 하 여 이러한 페이지의 동작과 콘텐츠를 요구 사항에 맞게 변경할 수 있습니다.  이러한 파일은 브랜딩 태그가 branding.xml 파일에서 해당 콘텐츠를 가져오기 위해 각 브랜딩 패키지를 참조 합니다.
 
-|**파일**|**사용**|**표시 된 콘텐츠 원본**|
+|**최근에 사용한 파일**|**사용**|**표시 된 콘텐츠 원본**|
 |-|-|-|
 |homepage.htm|현재 설치 된 콘텐츠를 표시 하는 페이지 및 해당 콘텐츠에 대 한 사용자에 게 제공 되는 기타 모든 메시지입니다.  이 파일에는이 콘텐츠를 로컬 콘텐츠 TOC의 맨 위에 배치 하는 추가 메타 데이터 특성 "Microsoft.Help.Id" content = "-1"이 있습니다.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, 태그\<HomePageTitle>|
@@ -597,7 +597,7 @@ Visual Studio 도움말 뷰어 브랜딩 패키지에는 일관성 있는 Visual
 
 Visual Studio 콘텐츠는 Visual Studio 로고 및 기타 그래픽을 표시 합니다.  Visual Studio 도움말 뷰어 브랜딩 패키지의 전체 그래픽 파일 목록은 아래와 같습니다.
 
-|**파일**|**사용**|**예**|
+|**최근에 사용한 파일**|**사용**|**예**|
 |-|-|-|
 |clear.gif|축소 가능한 영역을 렌더링 하는 데 사용 됩니다.||
 |footer_slice.gif|바닥글 프레젠테이션||
@@ -826,7 +826,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
 
 12. Contoso IDE 내에서 f1 키를 선택 하 여 F1 기능을 테스트 합니다.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 런타임 API에 대 한 자세한 내용은 [Windows 도움말 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)를 참조 하세요.
 
