@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: 자동 기능 일시 중단
               href: automatic-feature-suspension.md
+            - name: 경고 게시
+              items:
+                - name: 개요
+                  displayName: publish warnings
+                - name: 'IL3000: 단일 파일로 게시할 때 어셈블리 파일 경로 액세스를 사용하지 마세요.'
+                  href: il3000.md
