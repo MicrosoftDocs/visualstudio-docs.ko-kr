@@ -92,6 +92,10 @@
       href: data-visualizations.md
     - name: 소스 링크를 사용하여 NuGet 패키지 디버깅
       href: source-link.md
+- name: 테스트
+  items:
+    - name: 개요
+      href: testing.md
 - name: 컴파일 및 빌드
   items:
     - name: 개요
