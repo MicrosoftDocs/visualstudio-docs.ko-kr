@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547318"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238363"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
 
@@ -30,10 +30,8 @@ DSL 다이어그램을 사용 하는 대신 Windows Forms를 사용 하 여 DSL 
 
     이 연습에서는 다음 이름이 가정 됩니다.
 
-   | | |
-   |-|-|
-   | 솔루션 및 DSL 이름 | FarmApp |
-   | 네임스페이스 | FarmApp |
+    - 솔루션 및 DSL 이름: `FarmApp`
+    - 네임스페이스: `Company.FarmApp`
 
 2. 템플릿이 제공 하는 초기 예제를 실험 합니다.
 
@@ -51,9 +49,9 @@ DSL 다이어그램을 사용 하는 대신 Windows Forms를 사용 하 여 DSL 
 
    Visual Studio의 기본 인스턴스에서 DSL 솔루션에 대 한 다음 사항에 유의 하세요.
 
-- `DslDefinition.dsl`에는 다이어그램 요소가 없습니다. 이는 DSL 다이어그램을 사용 하 여이 DSL의 인스턴스 모델을 보는 것이 아니기 때문입니다. 대신 Windows Form을 모델에 바인딩하면 폼의 요소에 모델이 표시 됩니다.
+- `DslDefinition.dsl` 에는 다이어그램 요소가 없습니다. 이는 DSL 다이어그램을 사용 하 여이 DSL의 인스턴스 모델을 보는 것이 아니기 때문입니다. 대신 Windows Form을 모델에 바인딩하면 폼의 요소에 모델이 표시 됩니다.
 
-- 및 프로젝트 외에 `Dsl` 도 `DslPackage` 솔루션에는 `UI.` **UI** 프로젝트에 Windows Forms 컨트롤의 정의가 포함 된 세 번째 프로젝트가 포함 되어 있습니다. `DslPackage`에 따라 다르며 `UI` `UI` 에 따라 결정 `Dsl` 됩니다.
+- 및 프로젝트 외에 `Dsl` 도 `DslPackage` 솔루션에는 `UI.` **UI** 프로젝트에 Windows Forms 컨트롤의 정의가 포함 된 세 번째 프로젝트가 포함 되어 있습니다. `DslPackage` 에 따라 다르며 `UI` `UI` 에 따라 결정 `Dsl` 됩니다.
 
 - 프로젝트에는 `DslPackage` `UI\DocView.cs` 프로젝트에 정의 된 Windows Forms 컨트롤을 표시 하는 코드가 포함 되어 있습니다 `UI` .
 
@@ -86,9 +84,9 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 4. **명명 된 도메인 클래스** 도구를 사용 하 여 다음 도메인 클래스를 만듭니다.
 
-    - `Field`-이 추가 도메인 속성을 지정 `Size` 합니다.
+    - `Field` -이 추가 도메인 속성을 지정 `Size` 합니다.
 
-    - `Animal`-속성 창에서 **상속 한정자** 를 **Abstract**로 설정 합니다.
+    - `Animal` -속성 창에서 **상속 한정자** 를 **Abstract**로 설정 합니다.
 
 5. **도메인 클래스** 도구를 사용 하 여 다음 클래스를 만듭니다.
 
@@ -162,7 +160,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
      **DataMember** 속성을 **동물** 또는 **필드로**설정 합니다.
 
-10. 의 **DataSource** 속성을으로 설정 하 고을로 설정 합니다 `AnimalGridView` `AnimalBinding` `FieldGridView` `FieldBinding` .
+10. 의 **DataSource** 속성을으로 설정 하 고을로 설정 합니다 `AnimalGridView` `AnimalBinding`  `FieldGridView` `FieldBinding` .
 
 11. 팜 컨트롤의 레이아웃을 원하는 대로 조정 합니다.
 

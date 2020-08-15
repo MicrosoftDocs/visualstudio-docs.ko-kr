@@ -7,19 +7,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596569"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238545"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
 
 이 항목에서는 Visual Studio 용 모델링 SDK를 사용 하 여 만든 DSL (도메인별 언어)을 정의 하 고 사용 하는 기본 개념을 설명 합니다.
 
 > [!NOTE]
-> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
+> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)을 참조하세요.
 
 Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [시각화 및 모델링 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
@@ -37,11 +37,11 @@ Dsl의 주요 응용 프로그램 중 하나는 프로그램 코드, 구성 파�
 
 이 개요의 나머지 부분에서는 Visual Studio에서 도메인별 언어를 만들고 사용 하는 기본 작업을 소개 하는 연습입니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
-| | |
+| 구성 요소 | 링크 |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
@@ -100,7 +100,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 - **Dslpackage 프로젝트** 이 프로젝트에는 Visual Studio에서 DSL 인스턴스를 열고 편집할 수 있는 코드가 포함 되어 있습니다.
 
-## <a name="Debugging"></a>DSL 실행
+## <a name="running-the-dsl"></a><a name="Debugging"></a> DSL 실행
 
 DSL 솔루션을 만든 후 바로 실행할 수 있습니다. 나중에 DSL 정의를 점진적으로 수정 하 여 각 변경 후에 솔루션을 다시 실행할 수 있습니다.
 
@@ -119,7 +119,7 @@ DSL 솔루션을 만든 후 바로 실행할 수 있습니다. 나중에 DSL 정
 
 3. Visual Studio의 실험적 인스턴스에서 **솔루션 탐색기**에서 **Test** 라는 모델 파일을 엽니다.
 
-     \- 또는 -
+     \- 또는-
 
      디버깅 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **항목**을 클릭 합니다. **항목 추가** 대화 상자에서 DSL의 파일 형식을 선택 합니다.
 
@@ -147,13 +147,13 @@ DSL 정의는 다이어그램에 모델을 표시 하는 방법을 지정할 수
 
 모델을 편집 하는 동안 **탐색기** 보기에서 트리로 모델을 볼 수 있습니다. 다이어그램에 셰이프를 추가 하면 모델 요소도 탐색기에 표시 됩니다. 다이어그램이 없는 경우에도 탐색기를 사용할 수 있습니다.
 
-Visual Studio의 디버깅 인스턴스에서 탐색기가 표시 되지 않으면 **보기** 메뉴에서 **다른 창**을 가리키고 *언어 >* **탐색기**\<를 클릭 합니다.
+Visual Studio의 디버깅 인스턴스에서 탐색기가 표시 되지 않으면 **보기** 메뉴에서 **다른 창**을 가리킨 다음 *\<Your Language>* **탐색기**를 클릭 합니다.
 
 ### <a name="the-api-of-your-dsl"></a>DSL의 API
 
 DSL은 DSL 인스턴스인 모델을 읽고 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. API의 한 가지 응용 프로그램은 모델에서 텍스트 파일을 생성 하는 것입니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조 하세요.
 
-디버깅 솔루션에서 확장명이 ".tt" 인 템플릿 파일을 엽니다. 이러한 샘플은 모델에서 텍스트를 생성 하는 방법을 보여 주며 DSL의 API를 테스트 하는 데 사용할 수 있습니다. 샘플 중 하나는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]의 다른 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]작성 됩니다.
+디버깅 솔루션에서 확장명이 ".tt" 인 템플릿 파일을 엽니다. 이러한 샘플은 모델에서 텍스트를 생성 하는 방법을 보여 주며 DSL의 API를 테스트 하는 데 사용할 수 있습니다. 샘플 중 하나가에 작성 되어 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 있습니다.
 
 각 템플릿 파일은 생성 되는 파일입니다. 솔루션 탐색기에서 템플릿 파일을 확장 하 고 생성 된 파일을 엽니다.
 
@@ -171,7 +171,7 @@ DSL은 DSL 인스턴스인 모델을 읽고 업데이트 하는 데 사용할 �
 
 3. **솔루션 탐색기**도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
-     \- 또는 -
+     \- 또는-
 
      다시 생성 하려는 템플릿을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행**을 클릭 합니다.
 
@@ -209,7 +209,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
     2. 속성 창를 열고 DSL 탐색기와 속성을 동시에 볼 수 있도록 배치 합니다.
 
-    3. DSL 탐색기에서 **편집기**, **도구 상자 탭**, *DSL >\<* , **도구**를 차례로 확장 합니다.
+    3. DSL 탐색기에서 **편집기**, **도구 상자 탭**, *\<your DSL>* , **도구**를 차례로 확장 합니다.
 
     4. **ExampleElement**을 클릭 합니다. 요소를 만드는 데 사용 되는 도구 상자 항목입니다.
 
@@ -309,7 +309,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
 3. 모델 다이어그램에서 도시를 나타내는 셰이프를 추가 합니다.
 
-    1. **Geometry 셰이프** 를 도구 상자에서 다이어그램으로 끌고 이름을 TownShape 합니다 (예:).
+    1. **Geometry 셰이프** 를 도구 상자에서 다이어그램으로 끌고 이름을 TownShape 합니다 (예: **TownShape**).
 
     2. 속성 창에서 채우기 색, 기 하 도형 등의 새 모양의 모양 필드를 설정 합니다.
 
@@ -333,7 +333,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
     1. **DSL 탐색기**에서 **편집기** , **도구 상자 탭**을 차례로 확장 합니다.
 
-    2. *DSL >\<* 을 마우스 오른쪽 단추로 클릭 한 다음 **새 요소 도구 추가**를 클릭 합니다.
+    2. 마우스 오른쪽 단추 *\<your DSL>* 를 클릭 한 다음 **새 요소 도구 추가**를 클릭 합니다.
 
     3. 새 도구의 **Name** 속성을 설정 하 고 **Class** 속성을 타운으로 설정 합니다.
 
@@ -341,7 +341,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
 7. 도시와 사람 간에 링크를 만들기 위한 연결선 도구를 만듭니다.
 
-    1. *DSL >\<* 을 마우스 오른쪽 단추로 클릭 한 다음 **새 커넥터 도구 추가**를 클릭 합니다.
+    1. 마우스 오른쪽 단추로 클릭 한 *\<your DSL>* 다음 **새 커넥터 도구 추가**를 클릭 합니다.
 
     2. 새 도구의 이름 속성을 설정 합니다.
 
@@ -378,7 +378,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
     ```
 
-     \* .Tt 파일을 저장 하면 사용자 및 해당 residences 목록이 포함 된 자회사 파일이 생성 됩니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
+     * .Tt 파일을 저장 하면 사용자 및 해당 residences 목록이 포함 된 자회사 파일이 생성 됩니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 
 ## <a name="validation-and-commands"></a>유효성 검사 및 명령
  유효성 검사 제약 조건을 추가 하 여이 DSL을 추가로 개발할 수 있습니다. 이러한 제약 조건은 모델이 올바른 상태 인지 확인 하기 위해 정의할 수 있는 메서드입니다. 예를 들어 자식의 출생 날짜가 부모 항목 보다 최신 인지 확인 하기 위한 제약 조건을 정의할 수 있습니다. DSL 사용자가 제약 조건을 위반 하는 모델을 저장 하려고 하면 유효성 검사 기능이 경고를 표시 합니다. 자세한 내용은 [도메인별 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.
@@ -394,7 +394,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
  자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
-## <a name="Reset"></a>이전 실험적 Dsl 제거
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> 이전 실험적 Dsl 제거
  더 이상 원치 않는 실험적 Dsl을 만든 경우에는 Visual Studio 실험적 인스턴스를 다시 설정 하 여 컴퓨터에서 제거할 수 있습니다.
 
  그러면 모든 실험적 Dsl 및 기타 실험적 Visual Studio 확장을 컴퓨터에서 제거 합니다. 이러한 확장은 디버깅 모드에서 실행 된 확장입니다.
@@ -407,7 +407,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
 2. 계속 사용 하려는 실험적 Dsl 또는 기타 실험적 Visual Studio 확장을 다시 빌드합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
