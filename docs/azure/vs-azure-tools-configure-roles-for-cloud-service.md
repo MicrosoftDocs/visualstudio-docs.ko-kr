@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: d90567e86d782a64f42f7fdbd06f295a5f130b3a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280865"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250854"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 역할 구성
 Azure 클라우드 서비스에는 하나 이상의 작업자 또는 웹 역할이 포함될 수 있습니다. 각 역할에 대해 해당 역할을 설정하는 방법을 정의하고 해당 역할을 실행하는 방법을 구성해야 합니다. 클라우드 서비스의 역할에 대한 자세한 내용은 [Azure Cloud Services 소개](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)를 참조하세요.
@@ -90,7 +90,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. **설정** 탭을 선택 합니다.
+1. **설정** 탭을 선택합니다.
 
     ![설정 탭](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -112,7 +112,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. **스토리지 연결 문자열 만들기** 대화 상자에서 **다음을 사용하여 연결** 옵션을 선택합니다. 그런 다음 선택한 옵션에 대한 지침을 따릅니다.
 
-    - **Microsoft Azure Storage 에뮬레이터** - 이 옵션을 선택하면 Azure에만 적용되므로 대화 상자의 나머지 설정이 비활성화됩니다. **확인**을 선택합니다.
+    - **Microsoft Azure Storage 에뮬레이터** -이 옵션을 선택 하는 경우 Azure에만 적용 되므로 대화 상자의 나머지 설정은 사용할 수 없습니다. **확인**을 선택합니다.
     - **구독** - 이 옵션을 선택하면 드롭다운 목록을 사용하여 Microsoft 계정을 선택하고 로그인하거나 Microsoft 계정을 추가합니다. Azure 구독 및 스토리지 계정을 선택합니다. **확인**을 선택합니다.
     - **수동으로 입력한 자격 증명** - 스토리지 계정 이름과 기본 또는 보조 키를 입력합니다. **연결** 에 대 한 옵션을 선택 합니다. 대부분의 시나리오에는 HTTPS를 권장 합니다. **확인을**선택 합니다.
 
@@ -152,7 +152,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. **설정** 탭을 선택 합니다.
+1. **설정** 탭을 선택합니다.
 
     ![설정 탭](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 

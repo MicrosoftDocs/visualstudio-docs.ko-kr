@@ -12,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7c4d14f2970f9d77e78fd90dd58efcdac100e4c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: cb0f0e66d623f53c641126f1e07edaa476d831ae
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903954"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248602"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows Forms 도구 상자 컨트롤 만들기
 
 Visual Studio 확장성 도구에 포함 된 Windows Forms 도구 상자 컨트롤 항목 템플릿 (VS SDK)을 사용 하면 확장을 설치할 때 자동으로 추가 되는 **도구 상자** 컨트롤을 만들 수 있습니다. 이 연습에서는 템플릿을 사용 하 여 다른 사용자에 게 배포할 수 있는 간단한 카운터 컨트롤을 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -35,7 +35,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 1. 이라는 VSIX 프로젝트를 만듭니다 `MyWinFormsControl` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 프로젝트가 열리면 이라는 **Windows Forms 도구 상자 컨트롤** 항목 템플릿을 추가 합니다 `Counter` . **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **Windows Forms 도구 상자 컨트롤** 을 선택 합니다.
+2. 프로젝트가 열리면 이라는 **Windows Forms 도구 상자 컨트롤** 항목 템플릿을 추가 합니다 `Counter` . **솔루션 탐색기**에서 프로젝트 노드를 선택 하 고 길게 클릭 하 고 **추가**  >  **새 항목**을 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **Windows Forms 도구 상자 컨트롤** 을 선택 합니다.
 
 3. 그러면 사용자 정의 컨트롤이 추가 되 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> 고, **도구 상자**에 컨트롤을 배치 하 고, 배포를 위한 VSIX 매니페스트의 **VisualStudio. ToolboxControl** Asset 항목이 추가 됩니다.
 
@@ -45,7 +45,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 #### <a name="to-build-the-user-interface"></a>사용자 인터페이스를 작성하려면
 
-1. **솔루션 탐색기**에서 *Counter.cs* 를 두 번 클릭 하 여 디자이너에서 엽니다.
+1. **솔루션 탐색기**에서 *Counter.cs* 를 두 번 누르거나 두 번 클릭 하 여 디자이너에서 엽니다.
 
 2. 여기를 **클릭 하세요.** Windows Forms 도구 상자 컨트롤 항목 템플릿을 추가할 때 기본적으로 포함 되는 단추입니다.
 
@@ -55,7 +55,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 5. **속성** 창에서 디자인 화면의 컨트롤에 대해 다음 값을 설정 합니다.
 
-    |컨트롤|속성|값|
+    |제어|속성|값|
     |-------------|--------------|-----------|
     |`Label1`|**텍스트**|""|
     |`Button1`|**이름**|btnReset|
@@ -67,7 +67,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 #### <a name="to-code-the-user-control"></a>사용자 정의 컨트롤을 코딩 하려면
 
-1. 폼을 두 번 클릭 하 여 코드 창에서 해당 로드 이벤트 처리기를 엽니다.
+1. 폼을 두 번 클릭 하거나 두 번 클릭 하 여 코드 창에서 해당 로드 이벤트 처리기를 엽니다.
 
 2. 다음 예제와 같이 이벤트 처리기 메서드 위에 있는 컨트롤 클래스에서 카운터 값을 저장 하는 정수와 표시 텍스트를 저장할 문자열을 만듭니다.
 
@@ -130,7 +130,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
     호출자는이 이벤트에 처리기를 추가 하 여 카운터 값의 변경 내용에 응답할 수 있습니다.
 
-7. 디자인 뷰로 돌아가서 **다시 설정** 단추를 두 번 클릭 하 여 `btnReset_Click` 이벤트 처리기를 생성 한 후 다음 예제와 같이에 채웁니다.
+7. 디자인 뷰로 돌아가서 **다시 설정** 단추를 두 번 클릭 하거나 다시 설정 단추를 두 번 클릭 하 여 `btnReset_Click` 이벤트 처리기를 생성 합니다. 그런 다음, 다음 예제와 같이 입력 합니다.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -162,7 +162,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 2. Visual Studio의 실험적 인스턴스에서 **Windows Forms 응용 프로그램** 프로젝트를 만듭니다.
 
-3. **솔루션 탐색기**에서 *Form1.cs* 를 두 번 클릭 하 여 디자이너에서 엽니다 (아직 열려 있지 않은 경우).
+3. **솔루션 탐색기**에서 *Form1.cs* 를 두 번 누르거나 두 번 클릭 하 여 디자이너에서 엽니다 (아직 열려 있지 않은 경우).
 
 4. **도구 상자**에서 `Counter` 컨트롤이 **일반** 섹션에 표시 되어야 합니다.
 
@@ -172,7 +172,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 7. 컨트롤을 <xref:System.Windows.Forms.Button> 폼으로 끈 다음 단추의 이름 및 텍스트 속성을로 설정 `Test` 합니다.
 
-8. 단추를 두 번 클릭 하 여 코드 보기에서 *Form1.cs* 을 열고 클릭 처리기를 만듭니다.
+8. 단추를 두 번 클릭 하거나 두 번 클릭 하 여 코드 보기에서 *Form1.cs* 을 열고 클릭 처리기를 만듭니다.
 
 9. 클릭 처리기에서를 호출 `counter1.Increment()` 합니다.
 
@@ -195,7 +195,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
     **개수: 0**
 
-14. **테스트**를 클릭합니다.
+14. **테스트**를 선택합니다.
 
     카운터가 증가 하 고 Visual Studio는 메시지 상자를 표시 합니다.
 
@@ -203,11 +203,11 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
     **다시 설정** 단추가 사라집니다.
 
-16. 매번 메시지 상자를 닫을 때까지 카운터가 **5** 에 도달할 때까지 **테스트** 를 클릭 합니다.
+16. 매번 메시지 상자를 닫을 때까지 카운터가 **5** 에 도달할 때까지 **테스트** 를 선택 합니다.
 
     **다시 설정 단추가 다시** 나타납니다.
 
-17. **재설정**을 클릭합니다.
+17. **재설정**을 선택합니다.
 
     카운터가 **0**으로 다시 설정 됩니다.
 
@@ -215,7 +215,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 **도구 상자** 컨트롤을 빌드할 때 Visual Studio는 프로젝트의 \bin\debug\ 폴더에 *ProjectName .vsix* 라는 파일을 만듭니다. 네트워크 또는 웹 사이트에 *.vsix* 파일을 업로드 하 여 컨트롤을 배포할 수 있습니다. 사용자가 *.vsix* 파일을 열면 컨트롤이 설치 되 고 사용자 컴퓨터의 Visual Studio **도구 상자** 에 추가 됩니다. 또는 사용자가 **도구** *.vsix* [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  >  **확장 및 업데이트** 대화 상자에서 검색 하 여 찾을 수 있도록 Visual Studio Marketplace에 .vsix 파일을 업로드할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)
 - [WPF 도구 상자 컨트롤 만들기](../extensibility/creating-a-wpf-toolbox-control.md)
