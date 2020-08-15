@@ -14,11 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "86014577"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247659"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint 용 웹 파트 만들기
 
@@ -203,7 +204,7 @@ ms.locfileid: "86014577"
 
 ## <a name="test-the-web-part-verb"></a>웹 파트 동사 테스트
 
-웹 파트 동사 메뉴에 표시 되는 항목을 클릭 하 여 관리자가 아닌 직원을 표시 하 고 숨깁니다.
+웹 파트 동사 메뉴에 표시 되는 항목을 선택 하 여 관리자가 아닌 직원을 표시 하 고 숨깁니다.
 
 1. 웹 파트의 오른쪽에 나타나는 화살표를 선택한 다음 나타나는 메뉴에서 **관리자만 표시** 를 선택 합니다.
 
