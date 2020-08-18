@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276490"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114215"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio에 대한 기능 제안
 
@@ -86,6 +86,13 @@ ms.locfileid: "81276490"
 **닫힘 - 정보 부족** 상태는 여러 번 시도했지만 기능 제안을 완전히 이해하기에 충분한 정보를 받지 못했음을 나타냅니다. 이 단계에서는 추가 작업을 수행할 수 없기 때문에 새로운 기능 제안을 종결해야 합니다.
 
 요청된 정보를 찾으셨나요? 추가 정보가 있으면 티켓을 다시 활성화하도록 요청할 수 있습니다.
+
+- - -
+
+![Developer Community에 대한 제안의 종결 - 범위 외 상태](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**종결 - 범위 외** 전반적인 제품 방향과 일치하지 않는 제안은 범위 외로 종결 처리합니다. 예를 들어 Visual Studio 제품군의 다른 제품에서 유사한 투자가 진행 중일 수 있습니다. 또는 제안된 기능이 소수의 사용자만 관련이 있어 확장을 통해 해당 기능을 제공하는 것이 더 적합할 수 있습니다.
+
 
 - - -
 

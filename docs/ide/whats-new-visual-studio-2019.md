@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387046"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818588"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.6 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.7 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ IntelliCode에 대한 자세한 내용은 [IntelliCode 및 미리 보기의 일�
 
 ### <a name="code-cleanup"></a>코드 정리
 
-새로운 문서 상태 표시기와 새로운 코드 정리 명령이 쌍으로 제공됩니다. 이 새 명령을 사용하여 단추 클릭 한 번으로 경고 및 제한 사항을 식별하고 수정할 수 있습니다.
+새로운 문서 상태 표시기와 새로운 코드 정리 명령이 쌍으로 제공됩니다. 이 새 명령을 사용하여 한 번의 동작(또는 단추 클릭)으로 경고 및 제한 사항을 식별하고 수정할 수 있습니다.
 
 정리는 코드를 포맷하고 [현재 설정](code-styles-and-code-cleanup.md) 및 [.editorconfig 파일](create-portable-custom-editor-options.md)에서 제안하는 코드 수정 사항을 적용합니다.
 
@@ -178,7 +178,7 @@ Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
    ![Visual Studio 2019의 디버그 검색 창을 보여 주는 애니메이션](media/vs-2019/debug-window-search.gif)
 
-조사식, 로컬 및 자동 창 내에서 값을 표시하는 방법도 지정할 수 있습니다.  아무 창에서 항목 중 하나를 두 번 클릭하고 쉼표(",")를 추가하면 사용 가능한 포맷 지정자 드롭다운 목록에 액세스할 수 있으며, 각각에는 의도하는 효과에 대한 설명이 포함되어 있습니다.
+조사식, 로컬 및 자동 창 내에서 값을 표시하는 방법도 지정할 수 있습니다. 아무 창에서 항목 중 하나를 두 번 클릭하여 선택하고 쉼표(",")를 추가하면 사용 가능한 형식 지정자 드롭다운 목록에 액세스할 수 있으며, 각각에는 의도하는 효과에 대한 설명이 포함되어 있습니다.
 
    ![Visual Studio 2019의 새로운 조사식 창 및 포맷 값 기능](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Azure VM에서 실행되는 ASP.NET(Core 및 데스크톱) 애플리케이션을
 
 Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 최신 혁신 기능을 자세히 알아보려면 [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)를 확인하세요. 미리 보기에서 현재까지 릴리스된 내용에 대한 기록은 [미리 보기 릴리스 정보](/visualstudio/releases/2019/release-notes-preview/)를 살펴보세요. 다음 출시 예정 목록은 [Visual Studio 로드맵](/visualstudio/productinfo/vs-roadmap)을 참조하세요.
 
-Visual Studio 2019에서 진행 중인 다른 기능에 대해 더 알고 싶은가요? [Visual Studio 로드맵](/visualstudio/productinfo/vs-roadmap/)을 참조하세요.
+다음은 현재 진행 중인 몇 가지 새로운 기능입니다.
+
+- **Visual Studio 2019의 Visual Studio Codespaces 지원(미리 보기)**
+
+  그 어느 때보다 개발자들이 직장 및 자택에서 여러 프로젝트를 번갈아 실행하고 있습니다. 새 기능, 버그 수정, PR 리뷰, 프로토타입은 모두 시간을 다투고 지속적인 컨텍스트 전환이 필요합니다. [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)가 도움이 될 수 있습니다. 각 프로젝트마다 전용 사용자 지정 환경을 전적으로 클라우드에서 개발하고 생성하는 데 몇 초밖에 걸리지 않습니다. Visual Studio 2019를 사용하여 코드 공간에 연결하고 로컬처럼 작업할 수 있습니다.
+
+  자세한 내용은 [Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) 페이지를 참조하세요.
+
+- **Visual Studio 2019의 향상된 Git 환경(미리 보기)**
+
+   Microsoft에서는 GitHub, Azure Repos 및 기타 원격 호스팅 서비스에서 코드를 사용할 때 생산성을 향상하도록 지속적으로 Git 환경을 개선하고 있습니다. 한 번의 동작(또는 클릭)으로 Visual Studio 2019 내에서 초기화하고 푸시할 수 있습니다. 새 분기를 만들고, 현재 분기를 관리하고, 병합 충돌을 해결할 수도 있습니다.
+
+   자세한 내용은 [Visual Studio의 Git 환경에 대한 흥미로운 새 업데이트](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) 블로그 게시물을 참조하세요.
+
+미리 보기 릴리스에 대한 자세한 내용 및 다운로드 링크는 **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** 페이지를 참조하세요.
 
 ## <a name="give-us-feedback"></a>피드백 보내기
 

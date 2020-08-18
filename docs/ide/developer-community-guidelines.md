@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137566"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972475"
 ---
 # <a name="developer-community-guidelines"></a>Developer Community 지침
 
@@ -89,12 +89,15 @@ Microsoft는 비용과 혜택 간에 불균형이 발생하면 일부 버그를 
 
 의사 결정 프로세스에서 Microsoft는 기능 제안에 관한 다음 특성을 확인합니다.
 
+- 전반적인 제품 방향과 일치하나요?
 - 해당 제안을 빌드하고 유지 관리할 수 있습니까?
 - 전반적인 [로드맵](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) 전략에 부합합니까?
 - 투표 및 댓글로 표시된 커뮤니티 지원이 있습니까?
 - 커뮤니티 지원이 적더라도 만족합니까?
 
 해당 질문에 “예”로 답변할 수 없다면 해당 제안을 닫습니다. 그러나 종종 더 많은 커뮤니티 피드백을 수집하기 위해 제안은 ‘검토 중’ 상태로 열려 있습니다.
+
+전반적인 제품 방향과 일치하지 않는 제안은 범위 외로 종결 처리합니다. 예를 들어 Visual Studio 제품군의 다른 제품에서 유사한 투자가 진행 중일 수 있습니다. 또는 제안된 기능이 소수의 사용자만 관련이 있어 확장을 통해 해당 기능을 제공하는 것이 더 적합할 수 있습니다.
 
 [제안 상태 및 FAQ](https://docs.microsoft.com/visualstudio/ide/report-a-problem)를 참조하여 기능 제안의 진행 상황을 추적합니다.
 

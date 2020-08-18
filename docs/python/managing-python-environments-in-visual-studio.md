@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8deed53d2789afb964989e4e995e3120e9842bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543847"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913312"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -262,7 +262,7 @@ Visual Studio에서 환경에 대한 레지스트리 항목을 찾았지만 인�
 복구 옵션이 포함되지 않은 환경을 수정하거나 잘못된 환경을 제거하려면 다음 단계를 사용하여 레지스트리를 직접 수정합니다. Visual Studio는 레지스트리를 변경하는 경우 **Python 환경** 창을 자동으로 업데이트합니다.
 
 1. *regedit.exe*를 실행합니다.
-1. **HKEY_LOCAL_MACHINE\SOFTWARE\Python**으로 이동합니다. IronPython의 경우 대신 **IronPython**을 찾습니다.
+1. **HKEY_LOCAL_MACHINE\SOFTWARE\Python** 또는 **HKEY_CURRENT_USER\SOFTWARE\Python**로 이동합니다. IronPython의 경우 대신 **IronPython**을 찾습니다.
 1. CPython의 경우 **Python Core**, Anaconda의 경우 **ContinuumAnalytics**와 같이 배포와 일치하는 노드를 확장합니다. IronPython의 경우 버전 번호 노드를 확장합니다.
 1. **InstallPath** 노드 아래의 값을 검사합니다.
 
@@ -270,7 +270,8 @@ Visual Studio에서 환경에 대한 레지스트리 항목을 찾았지만 인�
 
     - 컴퓨터에 여전히 환경이 있는 경우 **ExecutablePath**의 값을 현재 위치로 변경합니다. 필요에 따라 **(기본값)** 및 **WindowedExecutablePath** 값을 수정합니다.
     - 환경이 컴퓨터에 더 이상 존재하지 않고 **Python 환경** 창에서 제거하려는 경우 위의 이미지에서 **3.6**과 같은 **InstallPath**의 부모 노드를 삭제합니다.
-
+    - **HKEY_CURRENT_USER\SOFTWARE\Python**의 잘못된 설정은 **HKEY_LOCAL_MACHINE\SOFTWARE\Python**의 설정을 재정의합니다.
+    
 ## <a name="see-also"></a>참조
 
 - [Python 인터프리터 설치](installing-python-interpreters.md)

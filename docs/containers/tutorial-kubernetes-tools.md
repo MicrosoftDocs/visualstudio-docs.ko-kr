@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283192"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913299"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
@@ -123,7 +123,7 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
 - *azds.yaml*. 이 파일에는 Azure Kubernetes Service에서 빠르고 반복적인 디버깅 환경을 제공하는 Azure Dev Spaces의 설정이 포함되어 있습니다. 자세한 내용은 [Azure Dev Spaces 설명서](/azure/dev-spaces/azure-dev-spaces)를 참조하세요.
 
-::: moniker range="vs-2017"
+:::moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>AKS(Azure Kubernetes Service)에 게시
 
@@ -166,6 +166,16 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 ::: moniker-end
 
 지금까지 이제 모든 Kubernetes 앱 개발에서 Visual Studio의 전체 기능을 사용할 수 있습니다.
+
+## <a name="remove-kubernetes-support"></a>Kubernetes 지원 제거
+
+1. **솔루션 탐색기**의 **속성**에서 *launchSettings.json*을 엽니다.
+
+1. **Container in Kubernetes** 섹션을 삭제합니다.
+
+1. Docker Compose로 다시 전환하는 경우 **솔루션 탐색기**에서 해당 프로젝트를 선택하고 마우스 오른쪽 단추를 클릭한 다음 **시작 프로젝트로 설정**을 선택합니다.
+
+1. (선택 사항) 앞서 언급한 대로 나열된 다른 아티팩트(예: **charts** 폴더 및 *azds.yaml*)도 삭제할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507900"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913275"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Kubernetes와 함께 로컬 프로세스 사용(미리 보기)
 
@@ -146,7 +146,7 @@ Kubernetes와 함께 로컬 프로세스를 사용하면 추가 구성 없이 �
 
 ## <a name="using-logging-and-diagnostics"></a>로깅 및 진단 사용
 
-[개발 컴퓨터의 *TEMP* 디렉터리][azds-tmp-dir]에 있는 `Azure Dev Spaces` 디렉터리에서 진단 로그를 찾을 수 있습니다.
+개발 컴퓨터의 *TEMP* 디렉터리에 있는 `Local Process with Kubernetes` 디렉터리에서 진단 로그를 찾을 수 있습니다. 
 
 ## <a name="remove-the-sample-application-from-your-cluster"></a>클러스터에서 애플리케이션 예제 제거
 
@@ -164,7 +164,6 @@ Kubernetes와 함께 로컬 프로세스를 사용하면 추가 구성 없이 �
 > [Kubernetes와 함께 로컬 프로세스를 사용하는 경우의 작동 방식](overview-local-process-kubernetes.md)
 
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
-[azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates
 [azure-cloud-shell]: /azure/cloud-shell/w.md

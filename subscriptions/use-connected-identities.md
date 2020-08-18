@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 연결된 Microsoft 계정 및 Azure Active Directory ID를 사용하는 방법 알아보기
-ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233182"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805615"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 연결된 ID를 사용하는 방법
 사용자가 회사 또는 학교를 통해 Visual Studio 구독을 받고 Microsoft 계정(MSA)을 사용하여 로그인하는 경우, 구독 관리자는 조직의 Azure Active Directory(Azure AD)에서 사용자의 ID에 MSA를 연결할 수 있습니다.  이렇게 하면 구독에 포함된 일부 혜택에 액세스하는 방법이 변경됩니다. 
@@ -39,7 +39,10 @@ Pluralsight, LinkedIn, CloudPilot 등의 Visual Studio 구독에서 제공되는
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>Q: 이에 대해 관리자에게 문의하려면 어떻게 해야 하나요?
 A:  관리자에게 연락하는 방법에 대한 자세한 내용은 [구독 관리자에게 문의](contact-my-admin.md)를 참조하세요.  
 
-## <a name="see-also"></a>참조
+### <a name="q-im-an-admin--how-do-i-use-this"></a>Q: 저는 관리자입니다.  어떻게 사용합니까?
+A:  연결된 ID를 구현하는 것은 간단합니다.  자세한 내용은 [이 문서](personal-email-sign-ins.md)를 참조하세요. 
+
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)
