@@ -390,6 +390,8 @@
                   href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: LINQ 쿼리를 foreach 문으로 변환
                   href: ide/reference/convert-linq-to-foreach.md
+                - name: typeof를 nameof로 변환
+                  href: ide/reference/convert-typeof-to-nameof.md
                 - name: switch 문을 switch 식으로 변환
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
                 - name: DateTime 및 TimeSpan 완성
@@ -430,6 +432,8 @@
                   href: ide/reference/rename.md
                 - name: 조건식 간소화
                   href: ide/reference/simplify-conditional-expression.md
+                - name: LINQ 식 간소화
+                  href: ide/reference/simplify-linq-expression.md
                 - name: 문자열 보간 간소화
                   href: ide/reference/simplify-string-interpolation.md
                 - name: using 정렬
