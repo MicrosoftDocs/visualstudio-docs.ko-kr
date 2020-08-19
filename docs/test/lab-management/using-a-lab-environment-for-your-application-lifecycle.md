@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286832"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144690"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -34,9 +34,14 @@ ms.locfileid: "85286832"
 |![클라우드 랩 환경](../media/topology_cloud.png)| 이 랩 환경에서는 _서버 토폴로지_와 비슷한 기능과 특징을 제공하지만 로컬 환경에서 실행되는 실제 또는 가상 컴퓨터에 대한 요구 사항이 제거되므로 설정 시간이 단축되고, 유지 관리가 간소화되고, 비용이 최소화됩니다. Microsoft Azure와 같은 클라우드 환경에서는 여러 웹 사이트와 가상 컴퓨터를 사용자 지정 네트워킹과 함께 설정하는 것이 빠르고 간편합니다.|
 |![클라이언트 서버 랩 환경](../media/topology_clientserver.png)| 이 랩 환경에는 서버 및 클라이언트 구성 요소를 갖는 애플리케이션을 테스트하는 데 주로 사용되는 *클라이언트-서버 토폴로지*가 있습니다. 클라이언트/서버 토폴로지에서는 애플리케이션을 테스트하는 데 사용되는 모든 서버 및 클라이언트 컴퓨터가 랩 환경에 있습니다. 이 토폴로지를 사용하면 테스트에 영향을 주는 모든 컴퓨터에서 테스트 데이터를 수집할 수 있습니다.|
 
-| | |
-|---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../../install/media/video-icon.png) | 테스트할 랩 환경 관리에 대한 [동영상을 시청](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)하세요. |
+:::row:::
+    :::column:::
+        ![동영상에 대한 비디오 카메라 아이콘](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        테스트할 랩 환경 관리에 대한 [동영상을 시청](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)하세요.
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Azure Pipelines 또는 Team Foundation Server의 빌드 및 릴리스와 함께 클라우드 사용
 

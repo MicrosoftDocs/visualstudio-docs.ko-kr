@@ -8,14 +8,14 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969456"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238727"
 ---
-# <a name="code-snippets"></a>코드 조각
+# <a name="code-snippets-for-r"></a>R에 대한 코드 조각
 
 Visual Studio의 코드 조각은 임의 길이의 코드 블록을 빠르게 삽입하여 비슷한 코드를 반복해서 다시 입력하지 않도록 도와주는 바로 가기를 제공합니다. RTVS(Visual Studio용 R 도구)는 Visual Studio 컬렉션에 수십 개의 유용한 R 코드 조각을 추가합니다.
 

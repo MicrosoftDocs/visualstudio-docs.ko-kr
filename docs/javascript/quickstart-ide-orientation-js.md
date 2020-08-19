@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IDE 둘러보기
+title: 먼저 Visual Studio IDE 살펴보기
 titleSuffix: ''
 ms.date: 02/05/2019
 ms.topic: quickstart
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a05f62685509a69fd5dfe8f758b4e5599b9324
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: 41d5d40cc7951f09a8106426f603d42628c61846
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527934"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238870"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>먼저 Visual Studio IDE 살펴보기
 

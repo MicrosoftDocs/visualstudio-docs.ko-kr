@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise 제품에서 구독 관리
-ms.openlocfilehash: d7100c2b9cfdd12579419927fd0bf8885038048b
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509007"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249843"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 관리
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
@@ -46,8 +46,8 @@ GitHub.com 관리에 대한 자세한 내용은 [GitHub 도움말](https://help.
 + [도움말 항목의 전체 목록](https://help.github.com/en)
 + [조직의 멤버 자격 관리](https://help.github.com/en/articles/managing-membership-in-your-organization)
 + [조직에 조인하도록 사용자 초대](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-    - [팀/조직에서 사용자 제거](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-    - [조직의 이전 멤버 복원](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
+  - [팀/조직에서 사용자 제거](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+  - [조직의 이전 멤버 복원](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
 + [역할을 사용하여 액세스 관리](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
 + [사용자를 팀으로 구성](https://help.github.com/en/articles/organizing-members-into-teams)
 + [조직의 리포지토리에 대한 액세스 관리](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
@@ -57,15 +57,16 @@ GitHub 도움말은 질문에 답하고 조직의 GitHub Enterprise 서버 구�
 
 + [모든 관리자 가이드 보기](https://help.github.com/en/enterprise/2.16/admin)
 + [사용자 관리](https://help.github.com/en/enterprise/2.16/admin/user-management)
-    - [조직 및 팀](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-        - [조직 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-        - [팀 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-        - [팀에 사용자 추가](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-        - [팀 및 조직에서 사용자 제거](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-    - [사용자 보안](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
+  - [조직 및 팀](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
+    - [조직 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+    - [팀 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
+    - [팀에 사용자 추가](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+    - [팀 및 조직에서 사용자 제거](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+  - [사용자 보안](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
 + [GitHub Enterprise 서버 설치 및 구성](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>지원 리소스
+
 - [GitHub 도움말](https://help.github.com/en)에서 다양한 GitHub 항목에 대한 질문의 답을 찾을 수 있습니다.
 - [GitHub 커뮤니티 포럼](https://github.community/)에서 다른 GitHub 사용자의 도움을 받으세요.
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
@@ -73,12 +74,14 @@ GitHub 도움말은 질문에 답하고 조직의 GitHub Enterprise 서버 구�
 - GitHub Enterprise에 대한 [기술 지원](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)을 받으세요.   
 
 ## <a name="see-also"></a>참조
+
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)
 - [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
+
 Visual Studio 구독 관리에 대해 자세히 알아보세요.
 - [개별 구독 할당](assign-license.md)
 - [여러 구독 할당](assign-license-bulk.md)
@@ -87,5 +90,3 @@ Visual Studio 구독 관리에 대해 자세히 알아보세요.
 - [최대 사용량 확인](maximum-usage.md)
 
 GitHub Enterprise가 포함된 Visual Studio Subscriptions를 관리하는 방법에 대한 자세한 내용은 Visual Studio [구독 관리자 포털](https://visualstudio.microsoft.com/subscriptions-administration/)을 참조하세요.
-
-

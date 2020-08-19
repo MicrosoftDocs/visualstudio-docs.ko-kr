@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Studio 및 C#를 사용하여 UWP(유니버설 Windows 플랫폼) 앱 만들기
 description: Visual Studio에서 XAML 및 C#을 사용하여 UWP 앱 만들기
 titleSuffix: ''
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543936"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249251"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>자습서: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 애플리케이션 만들기
 
@@ -160,7 +160,6 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 코드는 일부 Windows API를 사용하여 음성 합성 개체를 만든 다음, 텍스트를 제공하여 읽게 합니다. (`SpeechSynthesis`을 사용하는 방법에 대한 자세한 내용은 <xref:System.Speech.Synthesis>를 참하세요.)
 
 ## <a name="run-the-application"></a>애플리케이션 실행
-
 
 ::: moniker range="vs-2017"
 "Hello World" UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.

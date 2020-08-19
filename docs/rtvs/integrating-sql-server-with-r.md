@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888450"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144716"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server 및 R 사용
 
@@ -24,9 +24,14 @@ Visual Studio의 뛰어난 SQL Server 지원은 SQL 쿼리를 생성 및 실행�
 > - Visual Studio 2017: Visual Studio 설치 관리자를 실행하고 데이터 스토리지와 처리 워크로드를 선택합니다(SQL Server Data Tools 포함).
 > - Visual Studio 2015: [Download SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)(SQL Server Data Tools 다운로드)의 지침을 따릅니다.
 
-|   |   |
-|---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | SQL Server 및 R의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=n4AYr0QIwdQ)하세요(3분 03초). |
+:::row:::
+    :::column:::
+        ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청")
+    :::column-end:::
+    :::column:::
+        SQL Server 및 R의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=n4AYr0QIwdQ)하세요(3분 03초).
+    :::column-end:::
+:::row-end:::
 
 ## <a name="create-and-run-sql-queries"></a>SQL 쿼리 만들기 및 실행
 
@@ -57,9 +62,14 @@ RTVS는 다음 섹션의 설명대로 SQL 및 R 코드를 단일 SQL 문으로 �
 - [SQL 저장 프로시저 작성 및 테스트](#write-and-test-a-sql-stored-procedure)
 - [SQL 저장 프로시저 게시](#publish-a-sql-stored-procedure)
 
-|   |   |
-|---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | R 및 SQL 저장 프로시저의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=dFKIT2OitWQ)하세요(6분 09초). |
+:::row:::
+    :::column:::
+        ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청")
+    :::column-end:::
+    :::column:::
+        R 및 SQL 저장 프로시저의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=dFKIT2OitWQ)하세요(6분 09초).
+    :::column-end:::
+:::row-end:::
 
 ### <a name="add-a-database-connection"></a>데이터베이스 연결 추가
 

@@ -1,7 +1,7 @@
 ---
 title: 파일 및 폴더에 대한 신뢰 설정
 description: Visual Studio를 안전하게 유지하기 위해 파일 및 폴더에 대한 신뢰 설정을 변경하는 방법을 알아봅니다.
-author: abuchholtzau
+author: 2percentsilk
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 492a94962d255a9d18dcabdababf7fa6a540ada1
+ms.sourcegitcommit: 935e1388281df0f04147802606b5cb7f513d45ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62789644"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88197386"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>파일 및 폴더에 대한 신뢰 설정 구성
 

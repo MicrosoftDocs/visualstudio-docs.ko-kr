@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ec98f8d17465e95369eb6e2ecd88051f8daa59
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330458"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247792"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>.NET 개체 할당 도구를 사용하여 메모리 사용량 분석
 
@@ -118,11 +118,11 @@ ms.locfileid: "85330458"
 - **Name** 열에는 프로세스가 최상위 노드로 표시됩니다. 프로세스 아래에는 모듈이 있고, 모듈 아래에는 함수가 있습니다.
 - 이러한 열은 **할당** 및 **호출 트리** 뷰에서와 동일한 정보를 표시합니다.
 
-   - **합계(할당)**
-   - **자체(할당)**
-   - **총 크기(바이트)**
-   - **자체 크기(바이트)**
-   - **평균 크기(바이트)**
+  - **합계(할당)**
+  - **자체(할당)**
+  - **총 크기(바이트)**
+  - **자체 크기(바이트)**
+  - **평균 크기(바이트)**
 
 ### <a name="collection"></a>컬렉션
 

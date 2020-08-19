@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IDE 둘러보기
+title: '빠른 시작: Visual Studio IDE 둘러보기'
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75596972"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238857"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>빠른 시작: 먼저 Visual Studio IDE 살펴보기
 

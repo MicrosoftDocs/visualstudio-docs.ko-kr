@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 4e38084d4dc1e5095581846d0810ad44b742bcdf
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938956"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250553"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
 
@@ -53,18 +53,16 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
 
    일부 플랫폼을 설치하지 않으려는 경우 아래 가이드를 사용하면 설치할 플랫폼을 결정할 수 있습니다.
 
-
-|앱 유형  |Target  |선택  |참고  |
-|---------|---------|---------|---------|
-|**Xamarin을 사용한 앱**:| Xamarin.Forms|**Android** 및 **iOS** 플랫폼을 선택합니다. |[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다. |
-||iOS만|**iOS** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
-||Android만|**Android** 플랫폼을 선택합니다.|관련 종속성도 선택해야 합니다.|
-||Mac만|**macOS(Cocoa)** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
-|**.NET Core 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
-|**ASP.NET Core 웹 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
-|**Azure 기능**|         |**.NET Core** 플랫폼을 선택합니다.|         |
-|**플랫폼 간 Unity 게임 개발**|         |Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다.| Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](/visualstudio/mac/setup-vsmac-tools-unity)를 참조하세요.|
-
+   |앱 유형  |Target  |선택  |참고  |
+   |---------|---------|---------|---------|
+   |**Xamarin을 사용한 앱**:| Xamarin.Forms|**Android** 및 **iOS** 플랫폼을 선택합니다. |[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다. |
+   ||iOS만|**iOS** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
+   ||Android만|**Android** 플랫폼을 선택합니다.|관련 종속성도 선택해야 합니다.|
+   ||Mac만|**macOS(Cocoa)** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
+   |**.NET Core 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
+   |**ASP.NET Core 웹 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
+   |**Azure 기능**|         |**.NET Core** 플랫폼을 선택합니다.|         |
+   |**플랫폼 간 Unity 게임 개발**|         |Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다.| Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](/visualstudio/mac/setup-vsmac-tools-unity)를 참조하세요.|
 
 7. 원하는 항목을 선택한 후 **설치** 단추를 누릅니다.
 8. 설치 관리자는 Mac용 Visual Studio 및 사용자가 선택한 워크로드를 다운로드하고 설치하는 동안 진행률을 표시합니다. 설치에 필요한 권한을 부여하려면 암호를 입력하라는 메시지가 표시됩니다.

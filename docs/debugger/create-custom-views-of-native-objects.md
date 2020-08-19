@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5720511c15526a54a82018b2079b91aaf5dd6430
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350708"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248059"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis 프레임워크를 사용하여 디버거에서 C++ 개체의 사용자 지정 뷰 만들기
 
@@ -99,6 +99,7 @@ Visual Studio 디버거는 C++ 프로젝트에서 *.natvis* 파일을 자동으�
 VSIX 패키지는 *.natvis* 파일을 설치하고 등록할 수 있습니다. 설치된 위치에 관계없이 등록된 모든 *.natvis* 파일은 디버깅 중에 자동으로 선택됩니다.
 
 1. VSIX 패키지에 *.natvis* 파일을 포함합니다. 예를 들어 다음 프로젝트 파일의 경우
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
@@ -109,6 +110,7 @@ VSIX 패키지는 *.natvis* 파일을 설치하고 등록할 수 있습니다. �
    ```
 
 2. *source.extension.vsixmanifest* 파일에 *.natvis* 파일을 등록합니다.
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
@@ -702,7 +704,7 @@ UIVisualizer 요소의 예는 다음과 같습니다.
 
  `CustomVisualizer` 요소에 `Condition`, `IncludeView` 및 `ExcludeView` 특성을 사용할 수 있습니다.
 
- ## <a name="limitations"></a>제한 사항
+## <a name="limitations"></a>제한 사항
 
 Natvis 사용자 지정은 클래스 및 구조체에서 작동하지만 typedef에는 적용되지 않습니다.
 

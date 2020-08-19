@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
-ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
+ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87330962"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584504"
 ---
 # <a name="report-a-problem-states-and-faq"></a>문제 보고: 상태 및 FAQ
 
@@ -52,7 +52,7 @@ ms.locfileid: "87330962"
 
 ![개발자 커뮤니티의 문제 보고를 위한 추가 정보 필요 상태](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**추가 정보 필요**는 조사를 계속 진행할 수 있도록 더 많은 진단 정보가 필요함을 나타냅니다.  [추가 정보 필요 요청에 응답하는 방법을 알아봅니다.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
+**추가 정보 필요**는 조사를 계속 진행할 수 있도록 더 많은 진단 정보가 필요함을 나타냅니다.  [추가 정보 필요 요청에 응답하는 방법을 알아봅니다.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)
 
 - - -
 

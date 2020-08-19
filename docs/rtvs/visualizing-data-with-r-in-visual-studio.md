@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62811190"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144703"
 ---
 # <a name="create-visual-data-plots-with-r"></a>R을 사용하여 시각적 데이터 플롯 만들기
 
@@ -21,9 +21,14 @@ ms.locfileid: "62811190"
 
 ![영웅 이미지 그리기](media/plotting-hero-image.png)
 
-|   |   |
-|---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | R을 사용한 그리기에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=ZTbKmz5RSgY)하세요(2분 02초). |
+:::row:::
+    :::column:::
+        ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")
+    :::column-end:::
+    :::column:::
+        R을 사용한 그리기에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=ZTbKmz5RSgY)하세요(2분 02초).
+    :::column-end:::
+:::row-end:::
 
 ## <a name="the-plot-window"></a>플롯 창
 

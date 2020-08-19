@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281008"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249219"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 
@@ -199,15 +199,13 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
         ![원격 시스템에 연결](../debugger/media/connect-remote-system.png "원격 시스템에 연결")
         1. SSH 또는 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 **확인**을 누릅니다.
 
-    
     1. ***[Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면***
         1. **Docker 호스트(선택 사항)** 에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
         1. 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 **확인**을 누릅니다.
 
 4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 Visual Studio에서 C# 컨테이너 프로세스 디버깅을 시작합니다.
 
-    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete.png "완료된 Linux Docker 연결 메뉴")
-    
+    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete.png "완료된 Linux Docker 연결 메뉴")    
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Windows Docker 컨테이너에서 실행되는 프로세스에 연결
 
@@ -238,10 +236,8 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
 4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.
 
     ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete-windows.png "완료된 Windows Docker 연결 메뉴")
-    
 
 5.  사용 가능한 프로세스 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.
-
 
 ::: moniker-end
 

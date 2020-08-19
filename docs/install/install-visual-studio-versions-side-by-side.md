@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234993"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250259"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전 side-by-side 설치
 
@@ -57,9 +57,10 @@ ms.locfileid: "87234993"
    * vs_professional.exe(Visual Studio Professional의 경우)
    * vs_enterprise.exe(Visual Studio Enterprise의 경우)
 
-```
-vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
-```
+   ```
+   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+   ```
+
 4. 설치 관리자 대화 상자에 따라 설치에 필요한 구성 요소를 선택합니다. 자세한 내용은 [Visual Studio 설치](install-visual-studio.md#step-4---choose-workloads)를 참조하세요.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 버전 및 side-by-side 설치

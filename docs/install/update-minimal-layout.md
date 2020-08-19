@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869916"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168751"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트
 
@@ -56,12 +56,13 @@ ms.locfileid: "86869916"
 #### <a name="commands"></a>명령
 * **미리 보기**: 이 명령을 사용하면 다운로드하는 패키지 수와 이 레이아웃을 만드는 데 사용하는 총 공간을 미리 볼 수 있습니다. 
 * **Generate**: 이 명령을 사용하면 Visual Studio를 업데이트하기 위한 최소 레이아웃을 생성할 수 있습니다.
-* **Regenerate**: 이 명령을 사용하면 기존의 최소 레이아웃 지시 파일로 레이아웃을 다시 생성할 수 있습니다. 모든 최소 레이아웃은 원본 최소 레이아웃 입력 매개 변수가 포함된 `MinimalLayout.json` 지시 파일을 생성합니다. **Regenerate** 명령과 `MinimalLayout.json` 지시 파일을 사용하여 최소 레이아웃을 다시 생성할 수 있습니다. 이 명령은 이전의 최소 레이아웃 지시 파일을 기준으로 새 Visual Studio 업데이트의 최소 레이아웃을 만들려는 경우에 유용합니다. 
-   - 이 명령을 사용하려면 이미 생성된 레이아웃의 `MinimalLayout.json` 파일 경로가 필요합니다. 
+* **Regenerate**: 이 명령을 사용하면 기존의 최소 레이아웃 지시 파일로 레이아웃을 다시 생성할 수 있습니다. 모든 최소 레이아웃은 원본 최소 레이아웃 입력 매개 변수가 포함된 `MinimalLayout.json` 지시 파일을 생성합니다. **Regenerate** 명령과 `MinimalLayout.json` 지시 파일을 사용하여 최소 레이아웃을 다시 생성할 수 있습니다. 이 명령은 이전의 최소 레이아웃 지시 파일을 기준으로 새 Visual Studio 업데이트의 최소 레이아웃을 만들려는 경우에 유용합니다.
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   이 명령을 사용하려면 이미 생성된 레이아웃의 `MinimalLayout.json` 파일 경로가 필요합니다. 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Verify**: 이 명령을 사용하면 레이아웃 폴더가 손상되었는지 여부를 확인할 수 있습니다.
 * **Fix**: 이 명령을 사용하면 레이아웃 폴더에서 누락된 패키지를 다시 배치하는 등 손상된 레이아웃 폴더를 수정할 수 있습니다.

@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: d35bfed901dca960ae21b4e2cf2fa75067c1b3ee
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: df702b5d49e5204e65675c1c57d222e490a33824
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715939"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247928"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 
@@ -30,8 +30,8 @@ Mac용 Visual Studio에서 launchSettings.json 파일을 직접 편집하거나,
 
 여기에서 주로 다음 두 가지를 구성합니다.
 
- - 환경 변수
- - 프로젝트의 앱 URL
+- 환경 변수
+- 프로젝트의 앱 URL
 
 ## <a name="configure-environment-variables"></a>환경 변수 구성
 

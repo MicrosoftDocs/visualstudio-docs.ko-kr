@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edcea12eee28a4f3fa918b90311c9f4c4b2c2792
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888566"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250656"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown 문서 만들기
 
@@ -38,6 +38,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
 
 1. 새 파일의 기본 콘텐츠는 다음과 같습니다.
 
+    <!-- markdownlint-disable MD048 -->
     ~~~markdown
     ---
     title: "Untitled"
@@ -61,6 +62,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
     Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
     ~~~
+    <!-- markdownlint-disable MD048 -->
 
 ## <a name="previews"></a>미리 보기
 

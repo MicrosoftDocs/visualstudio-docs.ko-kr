@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580072"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250798"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>3단계: Entity Framework를 사용하여 데이터 작업
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<AppDbContext>();
+            var context = services.GetRequiredService<Data.AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)

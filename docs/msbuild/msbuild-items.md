@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183667"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247587"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>대상 외부에 있는 ItemGroup의 항목에서 메타데이터 업데이트
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>대상 외부에 있는 ItemGroup의 항목에서 메타데이터 업데이트
 
 대상 외부의 항목에서는 `Update` 특성을 통해 기존 메타데이터를 업데이트할 수 있습니다. 이 특성은 대상 아래의 항목에 사용할 수 **없습니다**.
 

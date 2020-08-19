@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285753"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250775"
 ---
 # <a name="understand-performance-collection-methods"></a>성능 데이터 수집 방법 이해
 
@@ -86,21 +86,21 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 5가지
 
 동시성 프로파일링은 다중 스레드 앱에 대한 정보를 수집합니다. 리소스 경합 프로파일링에서는 경쟁하는 스레드가 공유 리소스에 액세스하기 위해 대기할 때마다 자세한 호출 스택 정보를 수집합니다. 또한 동시성 시각화는 다중 스레드 앱이 다음과 상호 작용하는 방법에 대한 보다 일반적인 정보를 수집합니다.
 
-  - 앱 자체
-  - 하드웨어
-  - 운영 체제입니다.
-  - 호스트 컴퓨터의 다른 프로세스
+- 앱 자체
+- 하드웨어
+- 운영 체제입니다.
+- 호스트 컴퓨터의 다른 프로세스
 
 리소스 경합 보고서에는 총 경합 수가 표시됩니다. 또한 모듈, 함수, 소스 코드 줄 및 명령이 리소스를 대기한 총 시간을 보고합니다. 경합이 발생하면 시간 표시 막대 그래프에 표시됩니다.
 
 동시성 시각화 도우미는 다음을 찾는 데 도움이 되는 그래픽 정보를 표시합니다.
 
-  - 성능 병목 상태
-  - CPU 미달 사용
-  - 스레드 경합
-  - 스레드 마이그레이션
-  - 동기화 지연
-  - 중첩된 I/O의 영역
+- 성능 병목 상태
+- CPU 미달 사용
+- 스레드 경합
+- 스레드 마이그레이션
+- 동기화 지연
+- 중첩된 I/O의 영역
 
   가능한 경우 그래픽 출력은 호출 스택 및 소스 코드의 데이터에 연결됩니다. 명령줄 앱과 Windows 앱에 대해서만 동시성 시각화 데이터를 수집할 수 있습니다.
 
