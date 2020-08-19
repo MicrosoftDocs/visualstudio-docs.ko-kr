@@ -288,18 +288,19 @@ f1_keywords:
 - CA5122
 - CA5374
 - IL3000
+- IL3001
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040df1edf85f2879cd2666e79768e76969464522
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: daaf6854b56b31419408691c27af245c4001ea42
+ms.sourcegitcommit: 328ab0d8e5770f1067e37dcc266c2b50ea07783c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214599"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88612879"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -375,7 +376,7 @@ ms.locfileid: "88214599"
 | CA1070 | [CA1070: 이벤트 필드를 가상으로 선언하지 마세요.](../code-quality/ca1070.md) | [필드와 유사한 이벤트가](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) 가상으로 선언 되었습니다. |
 | CA1200 | [CA1200: 접두사를 사용하여 cref 태그 사용 방지](../code-quality/ca1200.md) | XML 문서 태그의 [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 특성은 "코드 참조"를 의미 합니다. 태그의 내부 텍스트를 형식, 메서드, 속성 등의 코드 요소로 지정합니다. `cref`컴파일러가 참조를 확인 하는 것을 방지 하므로 접두사와 함께 태그를 사용 하지 마십시오. 또한 Visual Studio IDE (통합 개발 환경)에서 리팩터링 중에 이러한 기호 참조를 찾아 업데이트할 수 없습니다. |
 | CA1300 | [CA1300: MessageBoxOptions를 지정하세요.](../code-quality/ca1300.md) | 오른쪽에서 왼쪽으로 읽기 순서를 사용하는 문화권에 대해 메시지 상자를 올바로 표시하려면 MessageBoxOptions 열거형의 RightAlign 및 RtlReading 멤버를 Show 메서드로 전달해야 합니다. |
-| CA1301 | [CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.](../code-quality/ca1301.md) | 액셀러레이터 키라고도 하는 선택키를 사용하면 Alt 키를 사용하여 키보드로 컨트롤에 액세스할 수 있습니다. 여러 컨트롤에 중복 된 액세스 키가 있는 경우에는 액세스 키의 동작이 제대로 정의 되지 않습니다. |
+| CA1301 | [CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.](../code-quality/ca1301.md) | 액셀러레이터 키라고도 하는 선택키를 사용하면 Alt 키를 사용하여 키보드로 컨트롤에 액세스할 수 있습니다. 여러 컨트롤에 중복되는 선택키가 있으면 선택키의 동작이 제대로 정의되지 않은 경우입니다. |
 | CA1302 | [CA1302: 로캘별 문자열을 하드코드하지 마세요.](../code-quality/ca1302.md) | System.Environment.SpecialFolder 열거형에는 특수 시스템 폴더를 참조하는 멤버가 포함되어 있습니다. 이러한 폴더의 위치는 운영 체제에 따라 값이 다를 수 있으며, 사용자가 위치 일부를 변경할 수 있고, 위치는 지역화됩니다. Environment.GetFolderPath 메서드는 Environment.SpecialFolder 열거형과 연관된 위치를 반환하며 이 위치는 지역화되므로 현재 실행되고 있는 컴퓨터에 적합합니다. |
 | CA1303 | [CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마세요.](../code-quality/ca1303.md) | 외부에서 볼 수 있는 메서드는 문자열 리터럴을 .NET 생성자 또는 메서드에 대 한 매개 변수로 전달 하 고 해당 문자열을 지역화할 수 있어야 합니다. |
 | CA1304 | [CA1304: CultureInfo를 지정하세요.](../code-quality/ca1304.md) | 메서드 또는 생성자가 System.Globalization.CultureInfo 매개 변수를 받아들이는 오버로드가 있는 멤버를 호출하지만 CultureInfo 매개 변수를 사용하는 오버로드는 호출하지 않습니다. CultureInfo 또는 System.IFormatProvider 개체가 제공되지 않으면 오버로드된 멤버에서 제공하는 기본값이 모든 로캘에서 원하는 효과를 나타내지 않을 수 있습니다. |
@@ -606,4 +607,5 @@ ms.locfileid: "88214599"
 | CA5400 | [CA5400 HttpClient 인증서 해지 목록 확인이 사용 하도록 설정 되지 않았는지 확인 합니다.](../code-quality/ca5400.md) | 해지 된 인증서를 더 이상 신뢰할 수 없습니다. 공격자는 악성 데이터를 전달 하거나 HTTPS 통신에서 중요 한 데이터를 도용 하는 데 사용할 수 있습니다. |
 | CA5401 | [CA5401는 기본값이 아닌 IV와 함께 CreateEncryptor를 사용 하지 않습니다.](../code-quality/ca5401.md) | 대칭 암호화는 항상 반복 되지 않는 초기화 벡터를 사용 하 여 사전 공격을 방지 해야 합니다. |
 | CA5402 | [CA5402는 기본 IV와 함께 CreateEncryptor를 사용 합니다.](../code-quality/ca5402.md) | 대칭 암호화는 항상 반복 되지 않는 초기화 벡터를 사용 하 여 사전 공격을 방지 해야 합니다. |
-| IL3000 | [IL3000 단일 파일로 게시할 때 어셈블리 파일 경로 액세스를 사용 하지 않습니다.](../code-quality/il3000.md) | 단일 파일로 게시할 때 어셈블리 파일 경로 액세스를 사용 하지 마십시오. |
+| IL3000 | [단일 파일로 게시할 때 어셈블리 파일 경로에 액세스 하지 IL3000](../code-quality/il3000.md) | 단일 파일로 게시할 때 어셈블리 파일 경로 액세스를 사용 하지 마십시오. |
+| IL3001 | [단일 파일로 게시할 때 어셈블리 파일 경로에 액세스 하지 IL3001](../code-quality/il3001.md) | 단일 파일로 게시할 때 어셈블리 파일 경로에 액세스 하지 않습니다. |
