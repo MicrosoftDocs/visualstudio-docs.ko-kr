@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
+  ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "76022309"
+  ms.lasthandoff: 08/20/2020
+  ms.locfileid: "88639330"
 landingContent:
 - title: Azure App Service에 배포
   linkLists:
@@ -71,20 +71,20 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Azure Storage
-      url: vs-azure-tools-connected-services-storage.md
-    - text: Azure Key Vault
-      url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure Active Directory
       url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-    - text: Cognitive Services - Text Analytics
-      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-    - text: Cognitive Services - Bing News Search
-      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-    - text: Cognitive Services - Face API
-      url: /azure/cognitive-services/face/vs-face-connected-service
-    - text: Cognitive Services - Computer Vision
-      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+    - text: Azure Cache for Redis
+      url: azure-cache-for-redis-add-connected-service.md
+    - text: Azure CosmosDB
+      url: azure-cosmosdb-add-connected-service.md
+    - text: Azure Key Vault
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure SignalR
+      url: azure-signalr-add-connected-service.md
+    - text: Azure SQL Database
+      url: azure-sql-database-add-connected-service.md
+    - text: Azure Storage
+      url: vs-azure-tools-connected-services-storage.md
 - title: Azure Cloud Services
   linkLists:
   - linkListType: how-to-guide
@@ -107,7 +107,7 @@ landingContent:
       url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - text: Visual Studio에서 Virtual Machines에 액세스
       url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-- title: 관련 자료
+- title: 기타 리소스
   linkLists:
   - linkListType: how-to-guide
     links:
