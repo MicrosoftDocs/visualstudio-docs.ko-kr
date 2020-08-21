@@ -989,5 +989,7 @@
               items:
                 - name: 개요
                   displayName: publish warnings
-                - name: 'IL3000: 단일 파일로 게시할 때 어셈블리 파일 경로 액세스를 사용하지 마세요.'
+                - name: 'IL3000: 단일 파일로 게시할 때 어셈블리 파일 경로에 액세스하지 마세요.'
                   href: il3000.md
+                - name: 'IL3001: 단일 파일로 게시할 때 어셈블리 파일 경로에 액세스하지 마세요.'
+                  href: il3001.md

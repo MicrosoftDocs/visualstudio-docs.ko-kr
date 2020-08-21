@@ -17,12 +17,22 @@
 - name: Azure 서비스에 연결
   expanded: false
   items:
-    - name: Azure 스토리지 추가
-      href: vs-azure-tools-connected-services-storage.md
-    - name: Azure Key Vault 추가
-      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Azure AD(Active Directory) 추가
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Azure App Insights 추가
+      href: azure-app-insights-add-connected-service.md
+    - name: Azure Cache for Redis 추가
+      href: azure-cache-for-redis-add-connected-service.md
+    - name: Azure CosmosDB 추가
+      href: azure-cosmosdb-add-connected-service.md
+    - name: Azure Key Vault 추가
+      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Azure SignalR 추가
+      href: azure-signalr-add-connected-service.md
+    - name: Azure SQL Database 추가
+      href: azure-sql-database-add-connected-service.md
+    - name: Azure Storage 추가
+      href: vs-azure-tools-connected-services-storage.md
 - name: Azure Cloud Services 개발
   expanded: false
   items:
