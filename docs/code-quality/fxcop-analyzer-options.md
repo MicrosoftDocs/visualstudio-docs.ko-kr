@@ -1,5 +1,5 @@
 ---
-title: FxCop 분석기 구성 옵션
+title: .NET 코드 품질 분석기 구성 옵션
 ms.date: 09/23/2019
 ms.topic: reference
 author: mikejo5000
@@ -7,21 +7,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6b56bec2174ca71cc66f5424b7bdc309330d95
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248793"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706570"
 ---
-# <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop 분석기에 대 한 규칙 범위 옵션
+# <a name="rule-scope-options-for-net-code-quality-analyzers"></a>.NET 코드 품질 분석기에 대 한 규칙 범위 옵션
 
-일부 FxCop analyzer 규칙을 사용 하 여 코드 베이스에서 적용 해야 하는 부분을 구체화할 수 있습니다. 이 페이지에서는 사용 가능한 범위 구성 옵션, 허용 되는 값 및 적용할 수 있는 규칙을 나열 합니다. 이러한 옵션을 사용 하려면 [Editorconfig 파일](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)에서 지정 합니다.
-
-이러한 구성 옵션은 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 패키지의 버전 2.6.3부터 사용할 수 있습니다.
+일부 .NET 코드 품질 분석기 규칙을 사용 하 여 코드 베이스에서 적용 해야 하는 부분을 구체화할 수 있습니다. 이 페이지에서는 사용 가능한 범위 구성 옵션, 허용 되는 값 및 적용할 수 있는 규칙을 나열 합니다. 이러한 옵션을 사용 하려면 [Editorconfig 파일](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)에서 지정 합니다.
 
 > [!TIP]
-> 지정 된 버전의 FxCopAnalyzers 패키지에 사용할 수 있는 옵션의 전체 목록을 보려면 패키지의 *문서* 폴더에서 *Analyzer Configuration.md* 파일을 확인 합니다. 이 파일은 *% USERPROFILE% \\ . Nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \documentation\analyzer*에 있습니다. 이 구성 문서 파일은 버전 2.6.5에서 시작 하 여 패키지의 각 버전에 포함 되어 있습니다. 다음은 *Analyzer Configuration.md* 파일에 옵션을 설명 하는 방법의 예입니다.
+> 사용할 수 있는 옵션의 전체 목록을 보려면이 [Analyzer Configuration.md 파일](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)을 참조 하세요. 다음은 *Analyzer Configuration.md* 파일에 옵션을 설명 하는 방법의 예입니다.
 >
 > 옵션 이름: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > 옵션 값: 정수 값 \

@@ -11,26 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250534"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706518"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
 다음 세 가지 방법으로 코드 메트릭 데이터를 생성할 수 있습니다.
 
-- [FxCop 분석기](#fxcop-analyzers-code-metrics-rules) 를 설치 하 고 여기에 포함 된 4 개의 코드 메트릭 (유지 관리) 규칙을 사용 하도록 설정 합니다.
+- [.Net 코드 품질 분석기](#net-code-quality-analyzers-code-metrics-rules) 를 사용 하도록 설정 하 고 여기에 포함 된 4 개의 코드 메트릭 (유지 관리) 규칙을 사용 하도록 설정 합니다.
 
 - Visual Studio 내에서 [ **분석**  >  **코드 메트릭 계산** ](#calculate-code-metrics-menu-command) 메뉴 명령을 선택 합니다.
 
 - C# 및 Visual Basic 프로젝트에 대한 [명령줄](#command-line-code-metrics)에서
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop 분석기 코드 메트릭 규칙
+## <a name="net-code-quality-analyzers-code-metrics-rules"></a>.NET 코드 품질 분석기 코드 메트릭 규칙
 
-[FxCopAnalyzers NuGet 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) 는 다음과 같은 몇 가지 코드 메트릭 [분석기](roslyn-analyzers-overview.md) 규칙을 포함 합니다.
+.NET 코드 품질 분석기에는 다음과 같은 여러 코드 메트릭 [분석기](roslyn-analyzers-overview.md) 규칙이 포함 되어 있습니다.
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
@@ -48,9 +48,9 @@ ms.locfileid: "88250534"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>구성
+### <a name="configuration"></a>Configuration
 
-FxCop 분석기 패키지의 코드 메트릭 규칙에서 발생 하는 임계값을 구성할 수 있습니다.
+코드 메트릭 규칙이 발생 하는 임계값을 구성할 수 있습니다.
 
 1. 텍스트 파일을 만듭니다. 예를 들어 *CodeMetricsConfig.txt*이름을 지정할 수 있습니다.
 
@@ -62,7 +62,7 @@ FxCop 분석기 패키지의 코드 메트릭 규칙에서 발생 하는 임계�
 
    이 예제에서 rule [CA1502](ca1502.md) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
 
-3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예:
+3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들면 다음과 같습니다.
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ C #에 대 한 명령줄에서 코드 메트릭 데이터를 생성 하 고 .NET
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft CodeAnalysis. 메트릭 NuGet 패키지
 
-명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후에는 `msbuild /t:Metrics` 프로젝트 파일이 포함 된 디렉터리에서를 실행 합니다. 예:
+명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후에는 `msbuild /t:Metrics` 프로젝트 파일이 포함 된 디렉터리에서를 실행 합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-을 지정 하 여 출력 파일 이름을 재정의할 수 있습니다 `/p:MetricsOutputFile=<filename>` . 을 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다 `/p:LEGACY_CODE_METRICS_MODE=true` . 예:
+을 지정 하 여 출력 파일 이름을 재정의할 수 있습니다 `/p:MetricsOutputFile=<filename>` . 을 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다 `/p:LEGACY_CODE_METRICS_MODE=true` . 예를 들면 다음과 같습니다.
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -293,7 +293,7 @@ NuGet 패키지를 설치 하지 않으려면 *Metrics.exe* 실행 파일을 직
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 사용
 
-*Metrics.exe*를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예:
+*Metrics.exe*를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
