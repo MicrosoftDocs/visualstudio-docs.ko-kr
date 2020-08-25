@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88639456"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800517"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 연결 서비스를 사용하여 Azure Storage 추가
 
 Visual Studio를 사용 하 여 다음 중 하나를 **연결된 서비스** 기능을 사용 하 여 Azure Storage에 연결할 수 있습니다.
 
 - .NET Framework 콘솔 앱
-- ASP.NET MVC (.NET Framework) 
+- ASP.NET MVC (.NET Framework)
 - ASP.NET Core
 - .NET Core (콘솔 앱, WPF, Windows Forms, 클래스 라이브러리 포함)
 - .NET Core 작업자 역할

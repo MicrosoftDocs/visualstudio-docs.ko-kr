@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573289"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800218"
 ---
 # <a name="enable-a-category-of-rules"></a>규칙 범주 사용
 
@@ -29,16 +29,16 @@ FxCop analyzer NuGet 패키지에는 다음 규칙 범주에 대 한 미리 정�
 - 모든 규칙
 - 데이터 흐름
 - 디자인
-- Documentation
+- 설명서
 - 전역화
 - 상호 운용성
-- 유지 관리성
-- 명명
+- 유지 관리
+- 이름 지정
 - 성능
 - FxCop에서 이식
 - 안정성
 - 보안
-- 용도
+- 사용
 
 이러한 각 규칙 범주에는 다음에 대 한 EditorConfig 또는 rule set 파일이 있습니다.
 
@@ -53,13 +53,13 @@ FxCop analyzer NuGet 패키지에는 다음 규칙 범주에 대 한 미리 정�
 
 ## <a name="predefined-editorconfig-files"></a>미리 정의 된 EditorConfig 파일
 
-FxCopAnalyzers analyzer 패키지에 대해 미리 정의 된 EditorConfig 파일은 *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<버전\>\editorconfig* 디렉터리에 있습니다. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 editorconfig 파일은 *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\editorconfig\\\* securitystststststststststststststststststst
+FxCopAnalyzers analyzer 패키지에 대해 미리 정의 된 EditorConfig 파일은 *% USERPROFILE% \\ . nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \editorconfig* 디렉터리에 있습니다. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 EditorConfig 파일은 *% USERPROFILE% \\ . Nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \\ Orom\omom\securityststststststst\securitystc\securityst\*
 
 선택한 editorconfig 파일을 프로젝트의 루트 디렉터리에 복사 합니다.
 
 ## <a name="predefined-rule-sets"></a>미리 정의된 규칙 집합
 
-FxCopAnalyzers analyzer 패키지에 대 한 미리 정의 된 규칙 집합 파일은 *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<버전\>\\ststoml* 디렉터리에 있습니다. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 규칙 집합 파일은 *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<버전\>\rulesets\SecurityRulesEnabled.ruleset*에 있습니다.
+FxCopAnalyzers analyzer 패키지에 대 한 미리 정의 된 규칙 집합 파일은 *% USERPROFILE% \\ . nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \\ststl* 디렉터리에 있습니다. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 규칙 집합 파일은 *% USERPROFILE% \\ . nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \rulesets\SecurityRulesEnabled.ruleset*에 있습니다.
 
 하나 이상의 규칙 집합을 복사 하 고 Visual Studio 프로젝트를 포함 하는 디렉터리 또는 **솔루션 탐색기**에 직접 붙여 넣습니다.
 
@@ -71,7 +71,7 @@ FxCopAnalyzers analyzer 패키지에 대 한 미리 정의 된 규칙 집합 파
 
 #### <a name="net-core"></a>.NET Core
 
-규칙을 .NET Core 또는 .NET Standard 프로젝트의 분석에 대해 활성 규칙 집합으로 설정 하려면 **CodeAnalysisRuleSet** 속성을 프로젝트 파일에 수동으로 추가 합니다. 예를 들어 다음 코드 조각에서는 `HelloWorld.ruleset`을 활성 규칙 집합으로 설정 합니다.
+규칙을 .NET Core 또는 .NET Standard 프로젝트의 분석에 대해 활성 규칙 집합으로 설정 하려면 **CodeAnalysisRuleSet** 속성을 프로젝트 파일에 수동으로 추가 합니다. 예를 들어 다음 코드 조각은 `HelloWorld.ruleset` 활성 규칙 집합으로 설정 됩니다.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -84,7 +84,7 @@ FxCopAnalyzers analyzer 패키지에 대 한 미리 정의 된 규칙 집합 파
 
 규칙을 .NET Framework 프로젝트의 분석을 위한 활성 규칙 집합으로 설정 하려면 다음을 수행 합니다.
 
-- **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다.
+- **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
 - 프로젝트 속성 페이지에서 **코드 분석** 탭을 선택 합니다.
 
@@ -102,7 +102,7 @@ FxCopAnalyzers analyzer 패키지에 대 한 미리 정의 된 규칙 집합 파
 
    이제 선택한 규칙 집합에서 사용 하도록 설정 된 규칙에 대 한 규칙 위반만 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [분석기 FAQ](analyzers-faq.md)
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)

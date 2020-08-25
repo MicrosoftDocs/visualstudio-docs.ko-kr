@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706518"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800959"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -48,7 +48,7 @@ ms.locfileid: "88706518"
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a>구성
 
 코드 메트릭 규칙이 발생 하는 임계값을 구성할 수 있습니다.
 
@@ -72,15 +72,15 @@ ms.locfileid: "88706518"
 
 ## <a name="calculate-code-metrics-menu-command"></a>코드 메트릭 계산 메뉴 명령
 
-**분석**  >  **코드 메트릭 계산** 메뉴를 사용 하 여 IDE에서 열려 있는 하나 이상의 프로젝트에 대 한 코드 메트릭을 생성 합니다.
+**분석**  >  **코드 메트릭 계산** 메뉴로 이동 하 여 IDE에서 열려 있는 하나 이상의 프로젝트에 대 한 코드 메트릭을 생성 합니다.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>전체 솔루션에 대 한 코드 메트릭 결과 생성
 
 다음 방법 중 하나를 통해 전체 솔루션에 대 한 코드 메트릭 결과를 생성할 수 있습니다.
 
-- 메뉴 모음에서 **분석**을 선택 하 여  >  솔루션에 대 한**코드 메트릭 계산**을 선택  >  **For Solution**합니다.
+- 메뉴 모음에서 **분석**에서  >  솔루션에 대 한**코드 메트릭 계산**을 선택  >  **For Solution**합니다.
 
-- **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭 한 다음 **코드 메트릭 계산**을 선택 합니다.
+- **솔루션 탐색기**에서 솔루션을 선택 하 고 저장 하거나 마우스 오른쪽 단추로 클릭 한 다음 **코드 메트릭 계산**을 선택 합니다.
 
 - **코드 메트릭 결과** 창에서 **솔루션에 대 한 코드 메트릭 계산** 단추를 선택 합니다.
 

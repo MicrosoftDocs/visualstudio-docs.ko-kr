@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 06344d536f0bb6db5f13329ece2c5202205bcefb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280715"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800491"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 또는 가상 머신 디버깅
 
@@ -29,7 +29,7 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 머신에서 클라우드
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>로컬 컴퓨터에서 클라우드 서비스를 디버그 하려면
 
-1. 메뉴 모음에서 **디버그**, **디버깅 시작**을 선택하여 Azure 클라우드 서비스 프로젝트를 실행합니다. F5를 눌러도 디버깅을 시작할 수 있습니다. 컴퓨팅 에뮬레이터가 시작한다는 메시지가 표시됩니다. 에뮬레이터를 시작할 때 시스템 트레이 아이콘을 확인합니다.
+1. 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 하 여 Azure 클라우드 서비스 프로젝트를 실행 합니다. F5를 눌러도 디버깅을 시작할 수 있습니다. 컴퓨팅 에뮬레이터가 시작한다는 메시지가 표시됩니다. 에뮬레이터를 시작할 때 시스템 트레이 아이콘을 확인합니다.
 
     ![시스템 트레이의 Azure 에뮬레이터](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -37,7 +37,7 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 머신에서 클라우드
 
     UI의 왼쪽 창에서는 현재 컴퓨팅 에뮬레이터와 각 서비스를 실행하는 역할 인스턴스가 배포되는 서비스를 보여줍니다. 오른쪽 창에서 수명 주기, 로깅 및 진단 정보를 표시하는 서비스 또는 역할을 선택할 수 있습니다. 포함된 창의 위쪽 여백에 포커스를 맞추면 오른쪽 창에 맞게 확장됩니다.
 
-3. **디버그** 메뉴의 명령을 선택하고 코드의 중단점을 설정하여 애플리케이션의 단계를 진행합니다. 디버거에서 애플리케이션을 통해 단계를 진행하면 애플리케이션의 현재 상태로 창이 업데이트됩니다. 디버깅을 중지하면 애플리케이션 배포가 삭제됩니다. 애플리케이션이 웹 역할을 포함하고 웹 브라우저를 시작하도록 시작 동작 속성을 설정하면, Visual Studio는 브라우저에서 웹 애플리케이션을 시작합니다. 서비스 구성에서 역할의 인스턴스 수를 변경한 경우, 클라우드 서비스를 중지하고 역할의 이러한 새 인스턴스를 디버깅할 수 있도록 디버깅을 다시 시작해야 합니다.
+3. **디버그** 메뉴에서 명령을 선택 하 고 코드에 중단점을 설정 하 여 응용 프로그램을 단계별로 실행 합니다. 디버거에서 애플리케이션을 통해 단계를 진행하면 애플리케이션의 현재 상태로 창이 업데이트됩니다. 디버깅을 중지하면 애플리케이션 배포가 삭제됩니다. 애플리케이션이 웹 역할을 포함하고 웹 브라우저를 시작하도록 시작 동작 속성을 설정하면, Visual Studio는 브라우저에서 웹 애플리케이션을 시작합니다. 서비스 구성에서 역할의 인스턴스 수를 변경한 경우, 클라우드 서비스를 중지하고 역할의 이러한 새 인스턴스를 디버깅할 수 있도록 디버깅을 다시 시작해야 합니다.
 
     > [!NOTE]
     > 서비스 실행이나 디버깅을 중지해도 로컬 컴퓨팅 에뮬레이터 및 스토리지 에뮬레이터는 중지되지 않습니다. 알림 영역에서 이 에뮬레이터들을 명시적으로 중지해야 합니다.
@@ -79,7 +79,7 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 머신에서 클라우드
 
     ![코드 형식 선택 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. 프로세스에 연결된 디버거를 식별하려면 메뉴 모음의 디버그, Windows, 프로세스를 차례대로 선택하여 프로세스 대화 상자를 엽니다. (키보드: Ctrl+Alt+Z) 특정 프로세스와 연결을 분리하려면 해당 바로 가기를 열고 **프로세스 분리**를 선택하세요. 또는, 서버 탐색기에서 인스턴스 노드의 위치를 찾고, 프로세스를 찾고 해당 바로 가기를 열고 **프로세스 분리**를 선택합니다.
+4. 디버거가 연결 된 프로세스를 확인 하려면 메뉴 모음에서 **디버그**  >  **Windows**  >  **프로세스**를 선택 하 고 **프로세스** 대화 상자를 엽니다. (키보드: Ctrl+Alt+Z) 특정 프로세스와 연결을 분리하려면 해당 바로 가기를 열고 **프로세스 분리**를 선택하세요. 또는, 서버 탐색기에서 인스턴스 노드의 위치를 찾고, 프로세스를 찾고 해당 바로 가기를 열고 **프로세스 분리**를 선택합니다.
 
     ![디버그 프로세스](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -120,7 +120,7 @@ Visual Studio의 서버 탐색기를 사용하여 Azure 가상 머신에서 실�
 
 3. 원격 디버깅 확장 설치가 끝나면, 가상 머신의 상황에 맞는 메뉴를 열고 **디버거 연결...**
 
-    Azure가 가상 머신에서 프로세스 목록을 가져오고 프로세스에 연결 대화 상자에 이를 표시합니다.
+    Azure에서는 가상 컴퓨터에 프로세스 목록을 가져와서 **프로세스에 연결** 대화 상자에 표시합니다.
 
     ![디버거 연결 명령](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -128,7 +128,7 @@ Visual Studio의 서버 탐색기를 사용하여 Azure 가상 머신에서 실�
 
     ![코드 형식 선택 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. 가상 머신에서 디버그하려는 프로세스를 선택하고 **연결**을 선택합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio에서 하나 이상의 프로세스 디버그](https://msdn.microsoft.com/library/jj919165.aspx) 및 [Azure 역할 아키텍쳐](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)를 참조하세요.
+5. 가상 머신에서 디버깅할 프로세스를 선택한 다음 **연결**을 선택 합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio에서 하나 이상의 프로세스 디버그](https://msdn.microsoft.com/library/jj919165.aspx) 및 [Azure 역할 아키텍쳐](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)를 참조하세요.
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>디버깅을 위한 웹 프로젝트 및 가상 머신 만들기
 
@@ -140,7 +140,7 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
 1. Visual Studio에서 새 ASP.NET 웹 애플리케이션을 만듭니다.
 
-2. Azure 섹션의 새 ASP.NET 프로젝트 대화 상자에서 드롭 다운 목록 상자의 **가상 머신** 를 선택합니다. **원격 리소스 만들기** 확인란을 선택한 상태로 둡니다. **확인** 을 선택하여 계속합니다.
+2. 새 ASP.NET 프로젝트 대화 상자의 Azure 섹션에 있는 드롭다운 목록 상자에서 **가상 머신** 를 선택 합니다. **원격 리소스 만들기** 확인란을 선택한 상태로 둡니다. **확인** 을 선택하여 계속합니다.
 
     **Azure에 가상 컴퓨터 만들기** 대화 상자가 표시됩니다.
 
@@ -149,13 +149,13 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
     > [!NOTE]
     > Azure 계정에 로그인하지 않은 경우, 로그인하라는 메시지가 표시됩니다.
 
-3. 가상 머신에 대한 다양한 설정을 선택하고 **확인**을 선택합니다. 자세한 내용은 [Virtual Machines](/azure/virtual-machines/)를 참조하세요.
+3. 가상 컴퓨터에 대 한 다양 한 설정을 선택 하 고 **확인**을 선택 합니다. 자세한 내용은 [Virtual Machines](/azure/virtual-machines/)를 참조하세요.
 
     DNS 이름으로 입력한 이름이 가상 컴퓨터의 이름이 됩니다.
 
     ![Azure 대화 상자에 가상 컴퓨터 만들기](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746724.png)
 
-    Azure는 가상 머신을 만들고 원격 데스크톱과 웹 배포와 같은 엔드포인트를 프로비전하고 구성합니다.
+    Azure에서 가상 머신을 만든 다음, 원격 데스크톱 및 웹 배포와 같은 끝점을 프로 비전 하 고 구성 합니다.
 
 4. 가상 머신을 완벽히 구현한 후에 서버 탐색기에서 가상 머신의 노드를 선택합니다.
 
@@ -175,7 +175,7 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
 8. 서버 탐색기의 가상 머신의 상황에 맞는 메뉴에서 프로젝트를 게시 한 후 **디버거 연결...**
 
-    Azure가 가상 머신에서 프로세스 목록을 가져오고 프로세스에 연결 대화 상자에 이를 표시합니다.
+    Azure에서는 가상 컴퓨터에 프로세스 목록을 가져와서 **프로세스에 연결** 대화 상자에 표시합니다.
 
     ![디버거 연결 명령](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
     ![코드 형식 선택 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. 가상 머신에서 디버그하려는 프로세스를 선택하고 **연결**을 선택합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio의 하나 이상의 프로세스 디버그](https://msdn.microsoft.com/library/jj919165.aspx) 를 참조하세요.
+10. 가상 머신에서 디버깅할 프로세스를 선택한 다음 **연결**을 선택 합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio의 하나 이상의 프로세스 디버그](https://msdn.microsoft.com/library/jj919165.aspx) 를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

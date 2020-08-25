@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbd30859c5ee3dbbea80c6d88d68c0211da62c88
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: a131b7d69eec61f9b9106f7a4274b3882c51f0ff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706583"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800738"
 ---
 # <a name="configure-net-code-quality-analyzers"></a>.NET 코드 품질 분석기 구성
 

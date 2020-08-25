@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7ff64d43714fa69c2543a9bb12bb3cd12826c8
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706492"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800855"
 ---
 # <a name="suppress-code-analysis-warnings"></a>코드 분석 경고 표시 안 함
 
@@ -35,7 +35,7 @@ C + +/CLI에서는 헤더 파일에서 매크로 CA를 사용 \_ \_ 하 여 메�
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> 프로젝트를 Visual Studio 2017로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 수정할 준비가 되지 않은 경우 **분석**  >  **실행 코드 분석을 선택 하 고 활성 문제를 표시**하지 않도록 설정 하 여 모든 경고를 표시 하지 않을 수 있습니다.
+> 프로젝트를 Visual Studio 2017로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 수정할 준비가 되지 않은 경우 **분석**  >  **실행 코드 분석을 선택 하 고 활성 문제를 억제**하 여 모든 경고를 표시 하지 않을 수 있습니다.
 >
 > ![Visual Studio에서 코드 분석을 실행 하 고 문제를 표시 하지 않습니다.](media/suppress-active-issues.png)
 
@@ -44,13 +44,13 @@ C + +/CLI에서는 헤더 파일에서 매크로 CA를 사용 \_ \_ 하 여 메�
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 프로젝트를 Visual Studio 2019로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 수정할 준비가 되지 않은 경우 빌드 **분석**  >  **및 활성 문제 표시 안**함을 선택 하 여 모든 경고를 표시 하지 않을 수 있습니다.
+> 프로젝트를 Visual Studio 2019로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 수정할 준비가 되지 않은 경우 빌드 **분석**을 선택 하  >  **고 활성 문제를 표시**하지 않으면 모든 경고를 표시 하지 않을 수 있습니다.
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 특성
 
-**오류 목록**에서 코드 분석 경고의 상황에 맞는 메뉴 또는 오른쪽 클릭 메뉴에서 **표시 안 함** 을 선택 하면 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 코드 또는 프로젝트의 전역 비 표시 오류 (suppression) 파일에 특성이 추가 됩니다.
+**오류 목록**에서 코드 분석 경고의 컨텍스트에서 **표시 안 함** 또는 마우스 오른쪽 단추를 클릭 하거나 선택 하 고 유지를 선택 하면 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 코드 또는 프로젝트의 전역 비 표시 해제 파일에 특성이 추가 됩니다.
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>특성의 형식은 다음과 같습니다.
 

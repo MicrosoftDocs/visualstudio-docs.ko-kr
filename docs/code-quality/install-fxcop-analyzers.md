@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286655"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800972"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio에서 FxCop 분석기 설치
 
@@ -28,7 +28,7 @@ Microsoft는 레거시 분석에서 가장 중요 한 "FxCop" 규칙을 포함 �
 
 Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속성 페이지에서 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 패키지를 직접 설치할 수 있습니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택한 다음 **코드 분석** 탭을 선택 합니다.
+1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 (또는 선택 및 유지) 하 고 **속성**을 선택한 다음 **코드 분석** 탭으로 이동 합니다.
 
    ![Visual Studio의 속성 페이지에서 FxCop 분석기 패키지 설치](media/install-fxcop-properties-page.png)
 
@@ -59,7 +59,7 @@ Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속
 
 ### <a name="custom-installation"></a>사용자 지정 설치
 
-사용자 지정 설치의 경우와 같이 다른 버전의 패키지를 지정 하려면 프로젝트의 코드 분석 속성 페이지에서 줄임표 (...) 단추를 선택 합니다. 이 단추를 클릭 하면 "FxCopAnalyzers"를 검색 문자열로 사용 하 여 NuGet 패키지 관리자가 열립니다.
+예를 들어 사용자 지정 설치의 경우 다른 버전의 패키지를 지정 하려면 프로젝트의 코드 분석 속성 페이지에서 줄임표 (...) 단추를 선택 합니다. 이 단추를 클릭 하면 "FxCopAnalyzers"를 검색 문자열로 사용 하 여 NuGet 패키지 관리자가 열립니다.
 
 ![Visual Studio의 속성 페이지에서 사용자 지정 FxCop 분석기 패키지 설치](media/install-fxcop-properties-page-ellipsis.png)
 
@@ -72,7 +72,7 @@ Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속
 
 | Visual Studio 버전 | FxCop analyzer 패키지 버전 |
 | - | - |
-| Visual Studio 2019 (모든 버전) | [최신](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
+| Visual Studio 2019 (모든 버전) | [마지막](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
 | Visual Studio 2017 버전 15.9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Visual Studio 2017 버전 15.5에서 15.8로 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Visual Studio 2017 버전 15.3에서 15.4로 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |

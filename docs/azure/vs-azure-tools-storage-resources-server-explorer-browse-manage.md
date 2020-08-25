@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911709"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800478"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
 
@@ -22,15 +22,15 @@ ms.locfileid: "72911709"
 
 ## <a name="overview"></a>개요
 
-Microsoft Visual Studio용 Azure 도구를 설치한 경우 Azure 스토리지 계정에서 Blob, 큐 및 테이블 데이터를 볼 수 있습니다. 서버 탐색기의 Azure **스토리지** 노드는 로컬 스토리지 에뮬레이터 계정 및 다른 Azure Storage 계정에 있는 데이터를 보여 줍니다.
+Microsoft Visual Studio용 Azure 도구를 설치한 경우 Azure 스토리지 계정에서 Blob, 큐 및 테이블 데이터를 볼 수 있습니다. 서버 탐색기의 Azure **storage** 노드는 로컬 저장소 에뮬레이터 계정 및 다른 azure storage 계정에 있는 데이터를 표시 합니다.
 
-Visual Studio에서 서버 탐색기를 보려면 메뉴 모음에서 **보기** > **서버 탐색기**를 선택합니다. **스토리지** 노드는 연결된 각 Azure 구독 또는 인증서 아래에 존재하는 모든 스토리지 계정을 보여줍니다. 스토리지 계정이 나타나지 않으면 [이 문서 뒷부분](#add-storage-accounts-by-using-server-explorer)의 지침을 따라 추가할 수 있습니다.
+Visual Studio에서 서버 탐색기 보려면 메뉴 모음에서 **보기**  >  **서버 탐색기**를 선택 합니다. **스토리지** 노드는 연결된 각 Azure 구독 또는 인증서 아래에 존재하는 모든 스토리지 계정을 보여줍니다. 스토리지 계정이 나타나지 않으면 [이 문서 뒷부분](#add-storage-accounts-by-using-server-explorer)의 지침을 따라 추가할 수 있습니다.
 
-Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확인 및 관리할 수 있습니다. 자세한 내용은 [클라우드 탐색기를 사용하여 Azure 리소스 관리](vs-azure-tools-resources-managing-with-cloud-explorer.md)를 참조하세요.
+Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확인 및 관리할 수 있습니다. 자세한 내용은 [클라우드 탐색기를 사용 하 여 Azure 리소스 관리](vs-azure-tools-resources-managing-with-cloud-explorer.md)를 참조 하세요.
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Visual Studio에서 스토리지 리소스를 확인 및 관리합니다.
 
-서버 탐색기는 스토리지 에뮬레이터 계정에 있는 Blob, 큐, 테이블 목록을 자동으로 보여줍니다. 스토리지 에뮬레이터 계정은 **스토리지** 노드의 서버 탐색기에 **개발** 노드로 나열됩니다.
+서버 탐색기는 스토리지 에뮬레이터 계정에 있는 Blob, 큐, 테이블 목록을 자동으로 보여줍니다. 저장소 에뮬레이터 계정은 **저장소** 노드 아래 서버 탐색기에 **개발** 노드로 나열 됩니다.
 
 스토리지 에뮬레이터 계정의 리소스를 보려면 **개발** 노드를 확장하세요. **개발** 노드를 확장했을 때 스토리지 에뮬레이터가 시작하지 않으면 자동으로 시작될 것입니다. 이 프로세스는 몇 초 정도 걸릴 수 있습니다. 스토리지 에뮬레이터가 시작하는 동안 Visual Studio의 다른 영역에서 작업을 계속할 수 있습니다.
 
@@ -38,7 +38,7 @@ Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확�
 
 ## <a name="work-with-blob-resources"></a>Blob 리소스로 작업
 
-**Blob** 노드는 선택된 스토리지 계정의 컨테이너 목록을 표시합니다. Blob 컨테이너는 Blob 파일을 포함하고 있으며 이러한 Blob을 폴더와 하위 폴더로 구성할 수 있습니다. 자세한 내용은 [.NET에서 Blob Storage를 사용하는 방법](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)(영문)을 참조하세요.
+**Blob** 노드에는 선택한 저장소 계정에 대한 컨테이너 목록이 표시됩니다. Blob 컨테이너는 Blob 파일을 포함하고 있으며 이러한 Blob을 폴더와 하위 폴더로 구성할 수 있습니다. 자세한 내용은 [.NET에서 Blob Storage를 사용하는 방법](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)(영문)을 참조하세요.
 
 ### <a name="to-create-a-blob-container"></a>Blob 컨테이너를 생성하려면
 
@@ -72,7 +72,7 @@ Blob 컨테이너 보기의 오른쪽 위 모서리에 있는 단추를 사용�
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>Blob 컨테이너에 폴더 또는 하위 폴더를 만들려면
 
-1. 클라우드 탐색기에서 Blob 컨테이너를 선택합니다. 컨테이너 창에서 **Blob 업로드** 단추를 선택합니다.
+1. **클라우드 탐색기**에서 blob 컨테이너를 선택 합니다. 컨테이너 창에서 **Blob 업로드** 단추를 선택합니다.
 
 1. **새 파일 업로드** 대화 상자에서 **찾아보기** 단추를 선택하여 업로드하려는 파일을 지정한 다음 **폴더(선택 사항)** 상자에 폴더 이름을 입력합니다.
 
@@ -94,7 +94,7 @@ Blob 컨테이너의 폴더는 가상 폴더이기 때문에 빈 폴더를 만�
 
 공통 접두사를 지정하여 표시되는 Blob를 필터링할 수 있습니다.
 
-예를 들어 필터 텍스트 상자에 접두사 **hello**를 입력한 다음 **실행**( **!** ) 단추를 선택하면 “hello”로 시작하는 Blob만 나타납니다.
+예를 들어 필터 텍스트 상자에 접두사 **hello**를 입력한 다음 **실행**(**!**) 단추를 선택하면 “hello”로 시작하는 Blob만 나타납니다.
 
 ![필터 텍스트 상자](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,7 +102,7 @@ Blob 컨테이너의 폴더는 가상 폴더이기 때문에 빈 폴더를 만�
 
 ### <a name="to-download-blob-data"></a>Blob 데이터를 다운로드하려면
 
-클라우드 탐색기에서 다음 방법 중 하나를 사용합니다.
+**클라우드 탐색기**에서 다음 방법 중 하나를 사용 합니다.
 
 * 하나 이상의 Blob에 대한 바로 가기 메뉴를 연 다음 **열기**를 선택합니다.
 * Blob 이름을 선택한 다음 **열기** 단추를 선택합니다.
@@ -134,7 +134,7 @@ Blob의 바로 가기 메뉴를 열고 **URL 복사**를 선택합니다.
 
 ### <a name="to-edit-a-blob"></a>Blob을 편집하려면
 
-Blob을 선택한 다음 **Blob 열기** 단추를 선택합니다.
+Blob을 선택한 다음 **Blob 열기** 단추를 선택 합니다.
 
 파일은 임시 위치로 다운로드되고 로컬 컴퓨터에서 열립니다. 변경한 후 BLOB을 다시 업로드합니다.
 
@@ -158,20 +158,20 @@ Blob을 선택한 다음 **Blob 열기** 단추를 선택합니다.
 스토리지 서비스 큐에 대한 자세한 내용은 [.NET을 사용하여 Azure Queue Storage 시작](/azure/storage/queues/storage-dotnet-how-to-use-queues)을 참조하세요. 스토리지 서비스 큐의 웹 서비스에 대한 자세한 내용은 [큐 서비스 개념](/rest/api/storageservices/Queue-Service-Concepts)을 참조하세요. Visual Studio를 사용하여 Storage 서비스 큐에 메시지를 보내는 방법에 대한 자세한 내용은 [Storage 서비스 큐에 메시지 보내기](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)를 참조하세요.
 
 > [!NOTE]
-> 스토리지 서비스 큐는 Azure Service Bus 큐와 구별됩니다. Service Bus 큐에 대한 자세한 내용은 [Service Bus 큐, 항목 및 구독](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)을 참조하세요.
+> 스토리지 서비스 큐는 Azure Service Bus 큐와 구별됩니다. Service Bus 큐에 대 한 자세한 내용은 [큐, 토픽 및 구독 Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)을 참조 하세요.
 
 ## <a name="work-with-table-resources"></a>테이블 리소스로 작업
 
 Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 이 서비스는 Azure 클라우드 내부 및 외부에서 인증된 호출을 수락하는 NoSQL 데이터 저장소입니다. Azure 테이블은 구조화된 비관계형 데이터를 저장하는 데 적합합니다.
 
-### <a name="to-create-a-table"></a>테이블을 만들려면
+### <a name="to-create-a-table"></a>테이블 형식 보고서를 만들려면
 
-1. 클라우드 탐색기에서 스토리지 계정의 **테이블** 노드를 선택한 다음 **테이블 만들기**를 선택합니다.
+1. **클라우드 탐색기**에서 저장소 계정의 **테이블** 노드를 선택한 다음 **테이블 만들기**를 선택 합니다.
 1. **테이블 만들기** 대화 상자에서 테이블의 이름을 입력합니다.
 
 ### <a name="to-view-table-data"></a>테이블 데이터를 보려면
 
-1. 클라우드 탐색기에서 **Azure** 노드를 연 다음 **스토리지** 노드를 엽니다.
+1. **클라우드 탐색기**에서 **Azure** 노드를 연 다음 **저장소** 노드를 엽니다.
 1. 관심 있는 스토리지 계정 노드를 연 다음 **테이블** 노드를 열어 스토리지 계정에 대한 테이블 목록을 확인합니다.
 1. 테이블의 바로 가기 메뉴를 연 다음 **테이블 보기**를 선택합니다.
 
@@ -181,20 +181,20 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 
 ### <a name="to-edit-table-data"></a>테이블 데이터를 편집하려면
 
-테이블 디자이너에서 엔터티(단일 행) 또는 속성(단일 셀)에 대한 바로 가기 메뉴를 열고 **편집**을 선택합니다.
+**테이블 디자이너**에서 엔터티 (단일 행) 또는 속성 (단일 셀)에 대 한 바로 가기 메뉴를 연 다음 **편집**을 선택 합니다.
 
 ![테이블 엔터티 추가 또는 편집](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 단일 테이블의 엔터티는 속성 (열)과 동일한 집합을 가질 필요가 없습니다. 테이블 데이터 보기 및 편집에 대한 다음의 제한 사항에 유의하십시오.
 
 * 이진 데이터(`type byte[]`)를 보거나 편집할 수 없지만 테이블에 저장할 수는 있습니다.
-* Azure의 Table Storage는 **PartitionKey** 또는 **RowKey** 값의 편집을 지원하지 않으므로 해당 작업을 할 수 없습니다.
+* Azure Table storage는 해당 작업을 지원 하지 않으므로 **PartitionKey** 또는 **rowkey** 값을 편집할 수 없습니다.
 * **Timestamp**라는 속성을 만들 수 없습니다. Azure Storage 서비스는 해당 이름의 속성을 사용합니다.
 * **DateTime** 값을 입력하는 경우 컴퓨터의 지역 및 언어 설정에 부합하는 형식을 따라야 합니다(예: 미국 영어의 경우 MM/DD/YYYY HH:MM:SS [AM|PM]).
 
 ### <a name="to-add-entities"></a>엔터티를 추가하려면
 
-1. 테이블 디자이너에서 **엔터티 추가** 단추를 선택합니다.
+1. **테이블 디자이너**에서 **엔터티 추가** 단추를 선택 합니다.
 
     ![엔터티 추가 단추](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
@@ -211,13 +211,13 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 1. 쿼리 작성기를 열려면 테이블을 열어 확인합니다.
 1. 테이블 보기의 도구 모음에서 **쿼리 작성기** 단추를 선택합니다.
 
-    **쿼리 작성기** 대화 상자가 나타납니다. 다음 그림에서는 쿼리 작성기에서 작성되고 있는 쿼리를 보여줍니다.
+    그러면 **쿼리 작성기** 대화 상자가 나타납니다. 다음 그림에서는 쿼리 작성기에서 작성되고 있는 쿼리를 보여줍니다.
 
     ![쿼리 작성기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. 쿼리 작성을 마친 경우 대화 상자를 닫습니다. 쿼리의 결과 텍스트 형식이 WCF Data Services 필터로 텍스트 상자에 나타납니다.
 1. 쿼리를 실행하려면 녹색 삼각형 아이콘을 선택합니다.
 
-또한 필터 텍스트 상자에 WCF Data Services 필터 문자열을 직접 입력한 경우 테이블 디자이너에 표시되는 엔터티 데이터를 필터링할 수 있습니다. 이러한 종류의 문자열은 SQL WHERE 절과 유사하지만 HTTP 요청으로 서버에 전송됩니다. 필터 문자열을 생성하는 방법에 대한 자세한 내용은 [테이블 디자이너에 대한 필터 문자열 생성](vs-azure-tools-table-designer-construct-filter-strings.md)을 참조하세요.
+또한 필터 텍스트 상자에 WCF Data Services 필터 문자열을 직접 입력한 경우 테이블 디자이너에 표시되는 엔터티 데이터를 필터링할 수 있습니다. 이러한 종류의 문자열은 SQL WHERE 절과 유사하지만 HTTP 요청으로 서버에 전송됩니다. 필터 문자열을 생성 하는 방법에 대 한 자세한 내용은 [테이블 디자이너에 대 한 필터 문자열 생성](vs-azure-tools-table-designer-construct-filter-strings.md)을 참조 하세요.
 
 다음 그림에서는 유효한 필터 문자열의 예를 보여줍니다.
 
@@ -235,7 +235,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 ### <a name="to-refresh-table-data"></a>테이블 데이터를 새로 고치려면
 
 * **스토리지** 아래의 **테이블** 노드를 선택하고 서버 탐색기 도구 모음에서 **새로 고침** 단추를 선택합니다.
-* 테이블 디자이너에 표시된 엔터티 목록을 새로 고치려면 테이블 디자이너에서 **실행** 단추를 선택합니다.
+* **테이블 디자이너**에 표시 된 엔터티 목록을 새로 고치려면 테이블 디자이너에서 **실행** 단추를 선택 합니다.
 
 ### <a name="to-refresh-queue-data"></a>큐 데이터를 새로 고치려면
 

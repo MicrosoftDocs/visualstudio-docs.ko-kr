@@ -5,12 +5,12 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371887"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801024"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 이진 코드 분석 사용 및 사용 안 함
 
@@ -21,9 +21,9 @@ ms.locfileid: "85371887"
 
 레거시 코드 분석을 사용 하거나 사용 하지 않도록 설정 하려면:
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
+1. **솔루션 탐색기**에서 프로젝트를 선택 하 고 저장 하거나 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
 
-2. 프로젝트에 대 한 속성 대화 상자에서 **코드 분석** 탭을 선택 합니다.
+2. 프로젝트에 대 한 속성 대화 상자에서 **코드 분석** 탭으로 이동 합니다.
 
 3. **구성** 의 빌드 형식과 **플랫폼**의 대상 플랫폼을 지정 합니다. (Non-.NET Core/.NET Standard 프로젝트에만 해당)
 

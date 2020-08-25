@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918635"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801505"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office의 COM, VSTO 및 VBA 추가 기능에 대 한 개발 모범 사례
   Office 용 COM, VSTO 또는 VBA 추가 기능을 개발 하는 경우이 문서에 설명 된 개발 모범 사례를 따릅니다.   이렇게 하면 다음과 같은 이점을 얻을 수 있습니다.
@@ -57,7 +57,7 @@ VBA 코드를 작성 하는 경우 64 비트 safe 선언 문을 사용 하 고 �
 솔루션에서 이진 파일의 버전 번호를 설정 하 고 각 업데이트를 사용 하 여 늘립니다. 이렇게 하면 사용자가 버전 간 변경 내용을 쉽게 파악 하 고 호환성을 평가할 수 있습니다.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>최신 버전의 Office에 대 한 지원 문 제공
-고객은 Isv에 게 Office에서 실행 되는 COM, VSTO 및 VBA 추가 기능에 대 한 지원 문을 제공 하도록 요청 합니다. 명시적 지원 문을 나열 하면 Office 365 ProPlus 준비 도구를 사용 하 여 고객의 지원을 이해할 수 있습니다.
+고객은 Isv에 게 Office에서 실행 되는 COM, VSTO 및 VBA 추가 기능에 대 한 지원 문을 제공 하도록 요청 합니다. 명시적 지원 문을 나열 하면 고객이 엔터프라이즈 준비 도구에 대 한 Microsoft 365 앱을 사용 하 여 지원을 이해할 수 있습니다.
 
 Office 클라이언트 응용 프로그램에 대 한 지원 문을 제공 하려면 (예: Word 또는 Excel) 먼저 현재 Office 릴리스에서 추가 기능이 실행 되는지 확인 한 다음 추가 기능이 이후 버전에서 중단 되는 경우 업데이트 제공을 커밋합니다. Microsoft에서 새 빌드 또는 Office 업데이트를 릴리스할 때 추가 기능을 테스트할 필요가 없습니다. Microsoft는 Office에서 COM, VSTO 및 VBA 확장성 플랫폼을 거의 변경 하지 않으며 이러한 변경 내용은 잘 설명 되어 있습니다.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507861"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801050"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 레거시 분석 구성
 
@@ -91,9 +91,9 @@ Visual Studio에서 코드 분석 [규칙 집합](../code-quality/rule-set-refer
 
     - 개별 프로젝트에 대 한 규칙 집합을 지정 하려면 프로젝트 이름을 선택 합니다.
 
-    - 여러 프로젝트에 대 한 규칙 집합을 지정 하려면 **Ctrl 키** 를 누른 상태에서 프로젝트 이름을 선택 합니다.
+    - 여러 프로젝트에 대 한 규칙 집합을 지정 하려면 **Ctrl** 및 프로젝트 이름을 선택 합니다.
 
-    - 솔루션의 모든 프로젝트를 지정 하려면 **Shift 키** 를 누른 채 프로젝트 목록을 클릭 합니다.
+    - 솔루션의 모든 프로젝트를 지정 하려면 **Shift** 및 프로젝트 목록을 선택 합니다.
 
 5. 프로젝트의 **규칙 집합** 필드를 선택한 다음 적용 하려는 규칙 집합의 이름을 선택 합니다.
 
