@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248578"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801258"
 ---
 # <a name="create-custom-project-and-item-templates"></a>사용자 지정 프로젝트 및 항목 템플릿 만들기
 
@@ -72,7 +72,7 @@ NuGet 패키지를 설치할 템플릿을 구성할 수도 있습니다. 자세�
 
 1. VSIX 프로젝트를 만듭니다. 자세한 내용은 [VSIX 프로젝트 템플릿](../extensibility/vsix-project-template.md)을 참조하세요.
 
-2. VSIX 프로젝트를 시작 프로젝트로 설정합니다. **솔루션 탐색기**에서 VSIX 프로젝트 노드를 선택하고 누른 채(또는 마우스 오른쪽 단추로 클릭하고) **시작 프로젝트로 설정**을 선택합니다.
+2. VSIX 프로젝트를 시작 프로젝트로 설정합니다. **솔루션 탐색기**에서 VSIX 프로젝트 노드를 선택하고 마우스 오른쪽 단추를 클릭하여 **시작 프로젝트로 설정**을 선택합니다.
 
 3. 프로젝트 템플릿 프로젝트를 VSIX 프로젝트의 자산으로 설정합니다. *.vsixmanifest* 파일을 엽니다. **자산** 탭으로 이동하고 **새로 만들기**를 선택합니다.
 
