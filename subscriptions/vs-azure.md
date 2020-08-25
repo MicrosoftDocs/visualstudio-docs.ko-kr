@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902917"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247324"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -20,19 +20,19 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
 ## <a name="activation-steps"></a>활성화 단계
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
-2. 혜택 페이지의 도구 섹션에서 Azure 타일을 찾고 혜택 타일 아래쪽에 있는 **활성화** 링크를 클릭합니다.
+2. 혜택 페이지의 도구 섹션에서 Azure 타일을 찾고 혜택 타일 아래쪽에 있는 **활성화** 링크를 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![Azure 타일](_img/vs-azure/vs-azure-tile.png)
 
-3. 기존 Azure 구독이 없는 경우 Azure 구독을 만드는 데 필요한 정보를 입력하라는 메시지가 표시됩니다.  첫 번째 단계로 개인 정보를 제공하고 **다음**을 클릭합니다.
+3. 기존 Azure 구독이 없는 경우 Azure 구독을 만드는 데 필요한 정보를 입력하라는 메시지가 표시됩니다.  첫 번째 단계로 개인 정보를 제공하고 **다음**을 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![Azure 등록](_img/vs-azure/vs-azure-about-you.png)
 
-4. 다음으로, 간단한 확인 코드를 사용하여 ID를 확인해야 합니다. 전화번호를 입력하고 문자 또는 전화를 통해 코드를 받을지 선택합니다.  받은 코드를 입력하고 **코드 확인**을 클릭합니다.   
+4. 다음으로, 간단한 확인 코드를 사용하여 ID를 확인해야 합니다. 전화번호를 입력하고 문자 또는 전화를 통해 코드를 받을지 선택합니다.  받은 코드를 입력하고 **코드 확인**을 선택합니다.   
    > [!div class="mx-imgBorder"]
    > ![Azure 준비](_img/vs-azure/vs-azure-identity.png)
 
-5. 마지막 단계로 확인란을 클릭하여 약관에 동의한 다음 **등록**를 클릭합니다.  이것이 전부입니다!
+5. 마지막 단계로 확인란을 선택하여 약관에 동의한 다음 **가입**을 선택합니다.  이것이 전부입니다!
    > [!div class="mx-imgBorder"]
    > ![Azure 준비](_img/vs-azure/vs-azure-agreement.png)
 

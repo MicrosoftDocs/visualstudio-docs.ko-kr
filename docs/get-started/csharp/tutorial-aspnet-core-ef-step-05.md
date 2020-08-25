@@ -2,7 +2,7 @@
 title: '5단계: Azure에 ASP.NET Core 앱 배포'
 description: 이 동영상 자습서 및 단계별 지침을 사용하여 Azure에 ASP.NET Core 웹앱을 배포합니다.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 08/14/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580024"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248694"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>5단계: Azure에 ASP.NET Core 앱 배포
 
@@ -37,17 +37,43 @@ Visual Studio 2019에서 ASP.NET Core 앱을 엽니다. [이 자습서 시리즈
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service에 게시
 
-솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. **App Service** 및 **새로 만들기**의 기본 설정을 그대로 사용하고 **게시** 단추를 클릭합니다. Azure 계정이 아직 없는 경우 **Azure 체험 계정 만들기**를 클릭하고 간단한 등록 프로세스를 완료합니다.
+1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. **게시** 마법사에서 대상으로 **Azure**를 선택합니다.
 
-SQL Server를 추가합니다. 관리자 사용자 이름 및 암호를 지정합니다.
+   ![Azure App Service 1의 스크린샷](media/vs-2019/app-service-screen-1.png)
 
-![Visual Studio 2019 Azure SQL Server 만들기](media/vs-2019/vs2019-azure-sql-server.png)
+1. 특정 대상에 대해 **Azure App Service(Windows)** 를 선택합니다.
 
-Application Insights를 추가합니다.
+   ![Azure App Service 2의 스크린샷](media/vs-2019/app-service-screen-2.png)
 
-**만들기** 단추를 클릭하여 계속합니다.
+1. **새 Azure App Service 만들기**를 선택합니다. Azure 계정이 아직 없는 경우 **Azure 체험 계정 만들기**를 클릭하고 간단한 등록 프로세스를 완료합니다.
 
-![Visual Studio 2019 새 Azure App Service 만들기](media/vs-2019/vs2019-azure-create-new-app-service.png)
+   ![Azure App Service 3의 스크린샷](media/vs-2019/app-service-screen-3.png)
+
+1. 이름 및 리소스 그룹을 지정하거나 기본값을 그대로 적용하고 **만들기**를 선택합니다. 리소스 그룹은 Azure에서 스토리지 계정, 키 자격 증명 모음, 데이터베이스와 함께 작동하는 서비스와 같은 관련 리소스를 구성하는 방법입니다.
+
+   ![Azure App Service 4의 스크린샷](media/vs-2019/app-service-screen-4.png)
+
+1. **마침**을 선택합니다. 리소스가 Azure에서 만들어지고, 앱이 배포되고, **게시** 탭이 방금 만든 항목에 대한 정보로 채워집니다. **게시** 탭에서는 클릭 한 번으로 동일한 구성으로 게시할 단추가 제공되거나, 구성 세부 정보가 표시되거나, 데이터베이스와 같은 서비스를 추가할 수 있습니다.
+
+이제 Azure SQL Server 데이터베이스를 추가합니다.
+
+1. **게시** 탭의 **서비스 종속성**에서 **SQL Server 데이터베이스** 옆에 있는 **구성**을 선택합니다.
+
+1. 다음 화면에서 **Azure SQL Database**를 선택합니다.
+
+   ![Azure SQL Database 화면의 스크린샷](media/vs-2019/app-service-azure-sql-db.png)
+
+1. **SQL Database 구성** 화면에서 **SQL Database 만들기**를 선택합니다.
+
+   ![SQL Database 구성 화면의 스크린샷](media/vs-2019/app-service-azure-sql-db-2.png)
+
+1. **Azure SQL Database: 새로 만들기** 화면에서 새 데이터베이스 서버를 만듭니다.
+
+   ![스크린샷 Azure SQL Database: 새로 만들기](media/vs-2019/app-service-azure-sql-db-3.png)
+
+1. **SQL Server: 새로 만들기** 화면에서 이름 및 위치를 선택하고 관리자 사용자 이름 및 암호를 지정합니다.
+
+   ![Visual Studio 2019 Azure SQL Server 만들기](media/vs-2019/app-service-azure-sql-db-overlayed.png)
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Azure Portal 및 호스트된 앱 살펴보기
 
@@ -75,7 +101,7 @@ Azure를 사용하여 앱을 호스트하는 또 다른 이점은 보안 및 규
 
 */Games* 경로로 이동하여 새 게임을 추가하고 나열된 게임을 확인할 수 있습니다. 그런 다음, */swagger* 경로로 이동하고 여기서 웹 API 엔드포인트를 사용하여 앱 API가 작동하는지 확인합니다.
 
-지금까지 이 동영상 자습서 시리즈를 완료했습니다.
+축하합니다. 이 동영상 자습서 시리즈를 완료했습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -83,6 +109,6 @@ Azure를 사용하여 앱을 호스트하는 또 다른 이점은 보안 및 규
 
 [ASP.NET Core 애플리케이션 아키텍처](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio를 사용하여 Azure에 ASP.NET Core 앱 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)

@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273831"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249377"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.
@@ -34,7 +34,7 @@ A: 전혀 그렇지 않습니다. Azure를 통해 Visual Studio 클라우드 구
 A: 예, 가능합니다. EA를 위해 만들어진 Azure 구독에 대한 소유자 또는 참가자여야 합니다. Visual Studio Marketplace에서 직접 Visual Studio 클라우드 구독을 구매하는지 확인하십시오. 구매 주문을 사용하여 Visual Studio 클라우드 구독을 구매할 수 없습니다.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Q: 조직의 기업 계약을 통해 Visual Studio Marketplace에서 서비스를 구입하는 데 필요한 권한이 있는지 여부는 어떻게 확인할 수 있나요?
-A: 적절한 권한이 있는지 확인하는 가장 쉬운 방법은 Visual Studio Marketplace에서 제공된 서비스에 대해 **구입** 단추를 클릭하는 것입니다.
+A: 적절한 권한이 있는지 확인하는 가장 쉬운 방법은 Visual Studio Marketplace에서 제공된 서비스에 대해 **구입** 단추를 선택하는 것입니다.
 현재 사용자의 로그인에 연결된 Azure 구독 목록에서 Azure 구독(청구 계정)을 선택해야 합니다.
 Azure 구독 이름은 청구 계정 유형("종량제", "기업 계약" 등)을 기본값으로 하기 때문에 Azure 구독이 기업 계약의 일부인 경우 명확합니다.
 

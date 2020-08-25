@@ -1,6 +1,6 @@
 ---
 title: 옵션, 텍스트 편집기, 기본(VB), 고급
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431477"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214646"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>옵션, 텍스트 편집기, 기본(Visual Basic), 고급
 **옵션**(**도구** 메뉴), **텍스트 편집기**의 **Basic** 폴더에 있는 **VB 관련** 속성 페이지 대화 상자에는 다음 속성이 포함되어 있습니다.
@@ -78,6 +78,13 @@ ms.locfileid: "79431477"
 선택할 경우 세로 선이 편집기에 개별 코드 블록을 쉽게 식별할 수 있는 정형 코드 블록과 함께 일렬로 표시됩니다. 예를 들어 `Sub` 문에서 `Sub`와 `EndSub` 사이에 줄이 하나 보일 것입니다.
 
 ## <a name="editor-help"></a>편집기 도움말
+
+::: moniker range=">=vs-2019"
+**인라인 매개 변수 이름 힌트**    
+선택하면 함수호출의 각 인수 앞에 리터럴, 캐스팅된 리터럴 및 개체 인스턴스화에 대한 매개 변수 이름 힌트가 삽입됩니다.  
+
+![Visual Basic의 인라인 매개 변수 이름 힌트](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
 **코드 서식 다시 적용** 텍스트 편집기는 코드 서식을 적절하게 다시 지정합니다. 이 옵션을 선택하면 코드 편집기는 다음을 수행합니다.
 

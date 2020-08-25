@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817205"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249510"
 ---
 # <a name="how-to-edit-xml-files"></a>방법: XML 파일 편집
 
@@ -22,7 +22,7 @@ XML 편집기는 XML 파일을 위한 새 편집기입니다. 이 편집기는 �
 > [!NOTE]
 > XHTML 문서는 HTML 편집기에서 처리됩니다.
 
-XML 파일을 편집하려면 편집할 파일을 두 번 클릭합니다.
+XML 파일을 편집하려면 편집할 파일을 엽니다.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>프로젝트에 새 XML 파일 추가
 
@@ -50,7 +50,7 @@ XML 파일을 편집하려면 편집할 파일을 두 번 클릭합니다.
 
 2. 새 XML 파일을 만들려면 **XML 파일**을 선택하고 새 XSLT 스타일시트를 만들려면 **XSLT 파일**을 선택합니다.
 
-3. **열기**를 클릭합니다.
+3. **열기**를 선택합니다.
 
 ## <a name="create-an-empty-project-for-xml-files"></a>XML 파일에 대한 빈 프로젝트 만들기
 
@@ -62,7 +62,7 @@ XML 파일을 편집하려면 편집할 파일을 두 번 클릭합니다.
 
 2. 원하는 코드 언어를 선택한 다음, **빈 프로젝트(.NET Framework)** 템플릿을 선택합니다.
 
-3. **확인**을 클릭합니다.
+3. **확인**을 선택합니다.
 
 ::: moniker-end
 
@@ -70,9 +70,9 @@ XML 파일을 편집하려면 편집할 파일을 두 번 클릭합니다.
 
 1. **파일 메뉴**에서 **새로 만들기** > **프로젝트**를 선택합니다.
 
-2. 템플릿 검색 상자에 **빈 프로젝트**를 입력하고 **빈 프로젝트(.NET Framework)** 템플릿을 선택한 후 **다음**을 클릭합니다.
+2. 템플릿 검색 상자에 **빈 프로젝트**를 입력하고 **빈 프로젝트(.NET Framework)** 템플릿을 선택한 후 **다음**을 선택합니다.
 
-3. **만들기**를 클릭합니다.
+3. **만들기**를 선택합니다.
 
 ::: moniker-end
 

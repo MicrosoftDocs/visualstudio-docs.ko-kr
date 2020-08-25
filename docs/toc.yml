@@ -902,7 +902,7 @@
     - name: IDE 사용자 지정
       displayName: Personalize
       href: ide/personalizing-the-visual-studio-ide.md
-    - name: '빠른 시작: 테마 및 텍스트 색 개인 설정'
+    - name: 색 테마 및 텍스트 개인 설정
       href: ide/quickstart-personalize-the-ide.md
     - name: 환경 설정
       displayName: profiles
@@ -1409,6 +1409,8 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Visual Studio 2019의 새로운 기능
       href: ide/whats-new-visual-studio-2019.md
+    - name: Visual Studio의 새로운 기능 문서
+      href: ide/whats-new-visual-studio-docs.md
     - name: 릴리스 정보 및 시스템 요구 사항
       items:
         - name: 릴리스 리듬

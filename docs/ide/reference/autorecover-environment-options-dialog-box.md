@@ -1,6 +1,6 @@
 ---
 title: 옵션 대화 상자, 환경, 자동 저장
-ms.date: 11/04/2016
+ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
 - VS.DialogAutoRestore
@@ -17,22 +17,37 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585667"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250295"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>자동 복구, 환경, 옵션 대화 상자
 
 **옵션** 대화 상자의 이 페이지를 사용하여 파일을 자동으로 백업할지 여부를 지정합니다. Visual Studio가 예기치 않게 종료된 경우 수정된 파일을 복원할지 여부를 지정할 수도 있습니다.
 
-**도구** 메뉴를 선택하고 **옵션**을 선택한 다음, **환경** > **자동 복구**를 선택하여 이 대화 상자에 액세스합니다. 이 페이지가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.
+이 대화 상자에 액세스하려면 **도구** > **옵션** > **환경** > **자동 복구**로 이동합니다.
+
+:::image type="content" source="media/autorecover-options.png" alt-text="옵션 대화 상자의 자동 복구 섹션 스크린샷":::
 
 **자동 복구 정보 저장 간격: [n]분**
 
-편집기에서 파일이 자동으로 저장되는 빈도를 사용자 지정하려면 이 옵션을 사용합니다. 이전에 저장된 파일의 경우 파일 복사본은 *%USERPROFILE%\Documents\Visual Studio\\[version]\Backup Files\\[projectname]* 에 저장됩니다. 파일을 새로 만들고 아직 저장하지 않은 경우 임의로 생성된 파일 이름을 사용하여 파일이 자동 저장됩니다.
+::: moniker range="vs-2019"
+
+편집기에서 파일이 자동으로 저장되는 빈도를 사용자 지정하려면 이 옵션을 사용합니다. 이전에 저장된 파일의 경우 Visual Studio 2019 버전 16.2 이상에서는 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[projectname]*** 에 파일 사본이 저장됩니다. 파일을 새로 만들고 아직 저장하지 않은 경우 Visual Studio에서는 임의로 생성된 파일 이름을 사용하여 파일이 자동 저장됩니다.
+
+> [!NOTE]
+> Visual Studio 2019 버전 16.1 이상을 사용하는 경우 파일 위치는 *%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[projectname]* 입니다. 자세한 내용은 [Visual Studio 2019 릴리스 정보 기록](/visualstudio/releases/2019/release-notes-history/) 페이지를 참조하세요.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+편집기에서 파일이 자동으로 저장되는 빈도를 사용자 지정하려면 이 옵션을 사용합니다. 이전에 저장된 파일의 경우 Visual Studio 2017에서는 *%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[projectname]* 에 파일 사본이 저장됩니다. 파일을 새로 만들고 아직 저장하지 않은 경우 Visual Studio에서는 임의로 생성된 파일 이름을 사용하여 파일이 자동 저장됩니다.
+
+::: moniker-end
 
 **자동 복구 정보 보관 기간: [n]일**
 

@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235136"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249618"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -28,7 +28,7 @@ ms.locfileid: "87235136"
 
 1. 여러 구독자를 한 번에 추가하려면 **구독자 관리** 탭으로 이동합니다. **추가** 탭을 선택한 다음 드롭다운에서 **일괄 추가**를 선택합니다.  
 
-1. 일괄 추가는 Microsoft Excel 템플릿을 사용하여 구독자 정보를 업로드합니다. [여러 구독자 업로드] 대화 상자에서 **다운로드**를 클릭하여 템플릿을 다운로드합니다.
+1. 일괄 추가는 Microsoft Excel 템플릿을 사용하여 구독자 정보를 업로드합니다. 여러 구독자 업로드 대화 상자에서 **다운로드**를 선택하여 템플릿을 다운로드합니다.
    > [!div class="mx-imgBorder"]
    > ![Excel 템플릿을 다운로드하여 여러 구독자 업로드](media/download-template-upload-subscribers.png "빈 Excel 템플릿을 다운로드하여 대량 할당 프로세스를 시작합니다.")
    >
@@ -48,13 +48,13 @@ ms.locfileid: "87235136"
     - 모든 필수 필드가 완료되었는지 확인합니다. 
     - **오류 메시지** 열을 확인합니다.  나열된 오류가 있다면 파일을 업로드하기 전에 오류를 해결합니다. 
 
-1. Visual Studio 구독 관리 포털로 돌아갑니다. **여러 구독자 업로드** 대화 상자에서 **찾아보기**를 클릭합니다.
+1. Visual Studio 구독 관리 포털로 돌아갑니다. **여러 구독자 업로드** 대화 상자에서 **찾아보기**를 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![저장된 템플릿으로 이동하여 여러 구독자 업로드](media/bulk-add-browse-saved-template.png "파일 위치로 이동하거나 이 대화 상자로 끌어서 놓을 수 있습니다.")
 
-1. 저장한 Excel 파일로 이동한 다음, **확인**을 클릭합니다.
+1. 저장한 Excel 파일로 이동한 다음, **확인**을 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![Excel 템플릿을 업로드하여 여러 구독자 업로드](media/bulk-upload-subscribers.png "데이터가 포함된 템플릿이 여기에 표시됩니다.  확인을 클릭하여 업로드를 시작합니다.")
+   > ![Excel 템플릿을 업로드하여 여러 구독자 업로드](media/bulk-upload-subscribers.png "데이터가 포함된 템플릿이 여기에 표시됩니다.  확인을 선택하여 업로드를 시작합니다.")
 
     업로드 진행률 대화 상자가 표시됩니다.
 
@@ -66,8 +66,8 @@ ms.locfileid: "87235136"
    1. 만든 Excel 파일을 열고 문제를 해결한 후 파일을 저장합니다.
    0. 관리 포털로 돌아가서 **추가**를 선택합니다.
    0. **대량 추가**를 선택합니다.
-   0. Excel 파일을 이미 저장했으므로 템플릿을 다운로드할 필요가 없습니다.  **찾아보기**를 클릭하고 방금 저장한 파일을 찾은 다음 **열기**를 클릭합니다.
-   0. **확인**을 클릭합니다.
+   0. Excel 파일을 이미 저장했으므로 템플릿을 다운로드할 필요가 없습니다.  **찾아보기**를 선택하고 방금 저장한 파일을 찾은 다음 **열기**를 선택합니다.
+   0. **확인**을 선택합니다.
 
 
     업로드가 성공적으로 완료되면 구독자 목록과 확인 메시지가 표시됩니다.
@@ -109,7 +109,7 @@ ms.locfileid: "87235136"
    > [!div class="mx-imgBorder"]
    > ![Azure AD 그룹 선택](_img/assign-license-bulk/bulk-add-aad-details.png "Azure AD 그룹의 이름을 선택하여 해당 그룹에서 구독자를 추가합니다.")
 
-6. **추가**를 클릭한 다음 **확인**을 클릭합니다. 
+6. **추가**를 선택한 다음 **확인**을 선택합니다. 
 
 7. 추가된 그룹을 보려면 사용자 목록 아래로 스크롤합니다.  
 

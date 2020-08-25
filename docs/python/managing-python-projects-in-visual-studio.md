@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307150"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238792"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio의 Python 프로젝트
 
@@ -39,9 +39,7 @@ Visual Studio는 기존 폴더 트리에서 프로젝트를 만드는 템플릿�
 >
 > [기존 파일에서 프로젝트 만들기](#create-project-from-existing-files)에 설명된 대로 기존 코드에서 Visual Studio 프로젝트를 만드는 것이 간단합니다.
 
-|   |   |
-|---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | [심층 분석: Python 프로젝트에서 소스 제어 사용](https://youtu.be/Aq8eqApnugM)(youtube.com, 8분 55초)도 시청하세요. |
+![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") [심층 분석: Python 프로젝트에서 소스 제어 사용](https://youtu.be/Aq8eqApnugM)(youtube.com, 8분 55초)도 시청하세요.
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>파일 추가. 시작 파일 할당. 환경 설정
 
@@ -77,7 +75,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 
 다음 표에서는 Visual Studio 2017 이상에서 사용 가능한 템플릿을 요약하여 보여줍니다(일부 템플릿만 이전 모든 버전에서 사용 가능).
 
-| 템플릿 | 설명 |
+| 템플릿 | Description |
 | --- | --- |
 | [**기존 Python 코드에서**](#create-project-from-existing-files) | 폴더 구조의 기존 Python 코드에서 Visual Studio 프로젝트를 만듭니다.  |
 | **Python 애플리케이션** | 하나의 비어있는 소스 파일을 포함하는 새로운 Python 애플리케이션에 대한 기본 프로젝트 구조입니다. 기본적으로 프로젝트는 기본 글로벌 환경의 콘솔 인터프리터에서 실행되며 [서로 다른 환경을 할당](selecting-a-python-environment-for-a-project.md)하여 변경할 수 있습니다. |
@@ -104,7 +102,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 
 ## <a name="linked-files"></a>연결된 파일
 
-연결된 파일은 프로젝트로 가져온 파일이지만 일반적으로 애플리케이션의 프로젝트 폴더 외부에 상주합니다. **솔루션 탐색기**에 오버레이드된 바로 가기 아이콘이 있는 일반 파일로 나타납니다. ![연결된 파일 아이콘](media/projects-linked-file-icon.png)
+연결된 파일은 프로젝트로 가져온 파일이지만 일반적으로 애플리케이션의 프로젝트 폴더 외부에 상주합니다. **솔루션 탐색기**에서 오버레이드된 바로 가기 아이콘이 있는 일반 파일로 나타납니다. ![연결된 파일 아이콘](media/projects-linked-file-icon.png)
 
 연결된 파일은 `<Compile Include="...">` 요소를 사용하여 *.pyproj* 파일에 지정됩니다. 연결된 파일은 디렉터리 구조 외부에 상대 경로를 사용하는 경우 암시적이고, **솔루션 탐색기** 내에서 경로를 사용하는 경우 명시적입니다.
 
@@ -131,7 +129,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 
 연결된 파일의 이름을 바꿀 수 없습니다.
 
-## <a name="references"></a>참조 항목
+## <a name="references"></a>참고자료
 
 Visual Studio 프로젝트는 프로젝트 및 확장에 참조 추가를 지원하며 이 내용은 **솔루션 탐색기**의 **참조** 노드 아래 나타납니다.
 

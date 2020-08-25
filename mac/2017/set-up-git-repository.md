@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 1d381bbfd0e83008b962968816c77f540e6a52f5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950457"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238558"
 ---
 # <a name="set-up-a-git-repository"></a>Git 리포지토리 설정
 
@@ -55,7 +55,7 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
 3. **등록된 리포지토리** 탭을 선택하고 **추가** 단추를 클릭합니다.
 
-    ![](media/version-control-git5.png)
+    ![리포지토리 선택 대화 상자의 등록된 리포지토리 탭에는 추가, 제거 및 편집 단추와 모듈 이름 및 메시지를 입력할 상자가 있습니다.](media/version-control-git5.png)
 
 4. 로컬에 표시하고 싶은 리포지토리 이름을 입력하고 3단계에서 복사한 URL을 붙여넣습니다. [리포지토리 구성] 대화 상자가 다음과 같이 표시됩니다. [확인]을 누릅니다.
 

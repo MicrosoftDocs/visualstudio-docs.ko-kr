@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 새로운 Visual Studio + GitHub 제품에 대해 알아봅니다.
-ms.openlocfilehash: d2d4e3d3bef5b4e9c6f7cb4ba93f8b62cc13275a
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232792"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248186"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 소개  
 
@@ -66,7 +66,7 @@ GitHub를 처음 사용하는 경우 다음과 같은 몇 가지 유용한 리�
 A:  GitHub 구독을 설정하는 프로세스는 시간이 다소 걸릴 수 있습니다.  기다리고 있다가 아무 소식도 받지 못했다면 GitHub 관리자에게 연락하는 것이 좋습니다.  관리자가 계속 작업 중이거나 GitHub 구독을 할당하지 않기로 결정했을 수도 있습니다. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Q:  내 GitHub 관리자에게 연락하는 방법은?
-A:  GitHub Enterprise 서버를 사용하는 경우 클라이언트 하단에 표시되는 **지원** 링크를 클릭하면 관리자와 연결할 수 있습니다.
+A:  GitHub Enterprise 서버를 사용하는 경우 클라이언트 하단에 표시되는 **지원** 링크를 선택하면 관리자와 연결할 수 있습니다.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Q: 전체 Visual Studio 구독(Professional 또는 Enterprise)을 제공받을 수 있나요? 아니면 이 제품으로 IDE를 가져올 수 있나요?
 A:  GitHub Enterprise 구독과 함께 전체 Visual Studio 구독을 받게 됩니다.  구독을 별도록 구매한 경우와 동일하게 소프트웨어 다운로드, 클라우드 서비스, 기술 지원 및 파트너 혜택 등 모든 혜택을 받을 수 있습니다.

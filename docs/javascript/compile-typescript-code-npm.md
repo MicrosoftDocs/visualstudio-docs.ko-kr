@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d7bd89f8e7840db8615c74170bb5cb9998aeb678
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454621"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250176"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript 코드 컴파일(Node.js)
 
@@ -109,7 +109,7 @@ ASP.NET Core 프로젝트의 경우 [NuGet 패키지](../javascript/compile-type
 
    앱은 실행할 때 자동으로 빌드되지만, 빌드 프로세스 도중 발생하는 작업을 살펴보겠습니다.
 
-   소스 맵을 생성한 경우 *outDir* 옵션에 지정된 폴더를 열고 생성된 *js 파일과 생성된 *js.map 파일을 찾습니다.
+   소스 맵을 생성한 경우 *outDir* 옵션에 지정된 폴더를 열고 생성된 \*.js 파일과 생성된 \*js.map 파일을 찾습니다.
 
    소스 맵 파일은 [디버깅](../javascript/debug-nodejs.md)에 필요합니다.
 

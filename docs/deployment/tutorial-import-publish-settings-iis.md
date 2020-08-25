@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183303"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247558"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 IIS에 애플리케이션 게시
 
@@ -58,15 +58,15 @@ ms.locfileid: "84183303"
 
 1. Visual Studio를 실행하는 컴퓨터에서 새 프로젝트를 선택합니다.
 
-    올바른 템플릿을 선택합니다. 이 예제에서 **ASP.NET 웹 애플리케이션(.NET Framework)** 또는 (C# 전용인 경우) **ASP.NET Core 웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
+    올바른 템플릿을 선택합니다. 이 예제에서 **ASP.NET 웹 애플리케이션(.NET Framework)** 또는 (C# 전용인 경우) **ASP.NET Core 웹 애플리케이션**을 선택한 다음, **확인**을 선택합니다.
 
-    지정된 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 설치합니다.
+    지정된 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크로 이동합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 설치합니다.
 
     선택한 프로젝트 템플릿(ASP.NET 또는 ASP.NET Core)은 웹 서버에 설치된 ASP.NET의 버전과 일치해야 합니다.
 
-1. **MVC**(.NET Framework) 또는 **웹 애플리케이션(Model-View-Controller)** (.NET Core용)을 선택하고, **인증 안 함**이 선택되었는지 확인한 다음, **확인**을 클릭합니다.
+1. **MVC**(.NET Framework) 또는 **웹 애플리케이션(Model-View-Controller)** (.NET Core용)을 선택하고, **인증 안 함**이 선택되었는지 확인한 다음, **확인**을 선택합니다.
 
-1. **MyWebApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+1. **MyWebApp**과 같은 이름을 입력하고 **확인**을 선택합니다.
 
     Visual Studio가 프로젝트를 생성합니다.
 

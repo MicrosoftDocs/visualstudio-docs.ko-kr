@@ -10,20 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541082"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88246396"
 ---
 Visual Studio는 Windows 컴퓨터에서 Python 애플리케이션을 로컬 및 원격으로 시작하고 디버그할 수 있습니다([Remote Debugging](../../../debugger/remote-debugging.md)(원격 디버깅) 참조). 또한 [ptvsd 라이브러리](https://pypi.python.org/pypi/ptvsd)를 사용하여 CPython 이외의 다른 운영 체제, 디바이스 또는 Python 구현에서 원격으로 디버그할 수도 있습니다.
 
 ptvsd를 사용하는 경우 디버그되는 Python 코드는 Visual Studio에서 연결할 수 있는 디버그 서버를 호스팅합니다. 이 호스팅을 사용하려면 서버를 가져오고 사용할 수 있도록 코드를 약간 수정해야 하며, TCP 연결을 허용하기 위해 원격 컴퓨터에 네트워크 또는 방화벽 구성이 필요할 수 있습니다.
 
-|   |   |
-|---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../../../install/media/video-icon.png "비디오 시청") | 원격 디버깅에 대한 소개는 [심층 분석: (Visual Studio 2015 및 2017에 모두 적용되는) 플랫폼 간 원격 디버깅](https://youtu.be/y1Qq7BrV6Cc)(youtube.com, 6분 22초)을 참조하세요. |
+![동영상에 대한 비디오 카메라 아이콘](../../../install/media/video-icon.png "비디오 시청") 원격 디버깅에 대한 소개는 [심층 분석: (Visual Studio 2015 및 2017에 모두 적용되는) 플랫폼 간 원격 디버깅](https://youtu.be/y1Qq7BrV6Cc)(youtube.com, 6분 22초)을 참조하세요.
 
 ## <a name="set-up-a-linux-computer"></a>Linux 컴퓨터 설정
 

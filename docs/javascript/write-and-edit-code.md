@@ -10,14 +10,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453763"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238182"
 ---
-# <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
+# <a name="learn-to-use-the-code-editor-for-javascript"></a>JavaScript용 코드 편집기를 사용하는 방법 알아보기
 
 Visual Studio의 코드 편집기에 대한 간략한 소개에서는 Visual Studio에서 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 보여줍니다.
 

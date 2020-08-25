@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: how-to
 description: Visual Studio 구독을 MPN 파트너에 대한 최종 사용자에게 할당하는 방법입니다.
-ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902873"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250717"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)를 통해 제공된 Visual Studio 구독 관리
 역량을 구하거나 MPN에서 Action Pack을 구매하는 파트너는 Visual Studio 구독을 사용할 자격이 있습니다. 이러한 구독은 사용자별로 라이선스가 발급되며 파트너 회사에 근무하는 특정 지명 사용자에게 할당된 경우만 유효합니다.
@@ -29,7 +29,7 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 6. **권한**을 선택합니다.
 7. **Visual Studio 구독**을 선택합니다. (참고: Visual Studio 구독 업데이트 보류 중)
 8. 원하는 **개인**을 선택합니다.
-9. **제출**을 클릭합니다.
+9. **제출**을 선택합니다.
 10. 개인이 전자 메일을 받습니다.
 11. 할당된 개인은 로그인하려면 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 액세스
 12. 다음을 포함하여 Visual Studio 프로필 페이지가 표시될 수 있습니다.
@@ -43,7 +43,7 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 2. **권한**을 선택합니다.
 3. **MSDN 구독** 선택(참고: MSDN은 곧 “Visual Studio 구독”으로 레이블 재지정)
 4. 원하는 **개인**을 찾습니다.
-5. **제출**을 클릭합니다.
+5. **제출**을 선택합니다.
 6. 개인이 전자 메일을 받습니다.
 7. 할당된 개인은 로그인하려면 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 액세스
 8. Visual Studio 프로필 페이지가 표시될 수 있습니다.

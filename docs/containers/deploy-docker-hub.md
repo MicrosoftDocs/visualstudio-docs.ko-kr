@@ -8,12 +8,13 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536892"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168653"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub에 배포
 
@@ -29,9 +30,13 @@ Docker Hub 리포지토리가 없는 경우 [Docker Hub](https://hub.docker.com/
 
 1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **게시...** 를 선택합니다. 배포 옵션을 표시하는 화면이 나타납니다.
 
-   ![배포 옵션 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![배포 옵션 스크린샷](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. **게시 대상 선택**에서 **Container Registry**를 선택한 다음, **Docker Hub**를 선택합니다. **Docker Hub** 대화 상자가 나타납니다.
+1. **Docker 컨테이너 레지스트리**를 선택한 다음 **Docker Hub**를 선택합니다.
+
+   ![게시 대화 상자 - Docker Hub 선택 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+
+1. Docker 자격 증명을 입력합니다.
 
    ![Docker Hub 대화 상자 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 

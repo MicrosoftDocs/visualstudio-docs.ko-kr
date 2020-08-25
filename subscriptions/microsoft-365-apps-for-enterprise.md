@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: 엔터프라이즈용 Microsoft 365 앱 알아보기 및 설치
-ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902978"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250750"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 구독의 엔터프라이즈용 Microsoft 365 앱
 엔터프라이즈용 Microsoft 365 앱(이전 Office 365 Pro Plus)은 선택된 Visual Studio 구독에서 사용할 수 있습니다. 
@@ -26,29 +26,29 @@ ms.locfileid: "85902978"
 엔터프라이즈용 Microsoft 365 앱 구독을 활성화하는 프로세스는 간단합니다.  다음 단계를 수행하여 구독을 활성화하고 애플리케이션을 설치합니다.
 
 1. [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에서 Visual Studio 구독에 로그인합니다.
-1. 엔터프라이즈용 Microsoft 365 앱 타일을 찾고 **활성화**를 클릭합니다.
+1. 엔터프라이즈용 Microsoft 365 앱 타일을 찾고 **활성화**를 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![엔터프라이즈용 Microsoft 365 앱 타일](_img/microsoft-365-apps-for-enterprise/tile-activate.png "‘활성화’를 클릭하여 구독을 시작합니다.")
+   > ![엔터프라이즈용 Microsoft 365 앱 타일](_img/microsoft-365-apps-for-enterprise/tile-activate.png "‘활성화’를 선택하여 구독을 시작합니다.")
 
-1. “환영합니다. 본인 정보를 입력하세요.” 대화 상자에서 요청된 개인 연락처 정보를 제공하고 **다음**을 클릭합니다.
+1. “환영합니다. 본인 정보를 입력하세요.” 대화 상자에서 요청된 개인 연락처 정보를 제공하고 **다음**을 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱 고객 정보](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "연락처 정보를 입력합니다.")
 
-1. “사용자 ID 만들기” 대화 상자에서 테넌트의 사용자 이름 및 암호를 만든 다음, **내 계정 만들기**를 클릭합니다.
+1. “사용자 ID 만들기” 대화 상자에서 테넌트의 사용자 이름 및 암호를 만든 다음, **내 계정 만들기**를 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱 사용자 ID 만들기](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "사용자 ID 및 암호를 만듭니다.")
 
-1. 다음으로, 로봇이 아님을 증명하는 코드를 제공하라는 메시지가 표시됩니다.  코드를 문자 메시지로 받을 수 있습니다.  코드를 입력하고 **다음**을 클릭합니다. 
+1. 다음으로, 로봇이 아님을 증명하는 코드를 제공하라는 메시지가 표시됩니다.  코드를 문자 메시지로 받을 수 있습니다.  코드를 입력하고 **다음**을 선택합니다. 
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱이 사용자가 로봇이 아님을 증명함](_img/microsoft-365-apps-for-enterprise/prove-youre-not-a-robot.png "코드를 요청하고 입력하여 계속 진행합니다.")
 
-1. 계정이 만들어진 후 Office 포털의 로그인 페이지를 표시하는 대화 상자와 새 사용자 ID가 표시됩니다.  나중에 사용하기 위해 이 정보를 기록해 두고 **설치 시작**을 클릭하여 Microsoft 365 앱 설치를 시작합니다.
+1. 계정이 만들어진 후 Office 포털의 로그인 페이지를 표시하는 대화 상자와 새 사용자 ID가 표시됩니다.  나중에 사용하기 위해 이 정보를 기록해 두고 **설치 시작**을 선택하여 Microsoft 365 앱 설치를 시작합니다.
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱 이 정보 저장](_img/microsoft-365-apps-for-enterprise/save-this-info.png "새 사용자 ID 및 Office 포털의 링크를 저장합니다.")
 
-1. Office 포털에 자동으로 로그인되며 이제 애플리케이션을 설치할 준비가 되었습니다.  **설치** 단추를 클릭하여 시작합니다.
+1. Office 포털에 자동으로 로그인되며 이제 애플리케이션을 설치할 준비가 되었습니다.  **설치** 단추를 선택하여 시작합니다.
    > [!div class="mx-imgBorder"]
-   > ![엔터프라이즈용 Microsoft 365 앱 설치](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "‘설치’ 단추를 클릭하여 애플리케이션을 설치합니다.")
+   > ![엔터프라이즈용 Microsoft 365 앱 설치](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "‘설치’ 단추를 선택하여 애플리케이션을 설치합니다.")
 1. 프롬프트에 따라 선택한 앱을 설치합니다.  
 
 ## <a name="eligibility"></a>자격

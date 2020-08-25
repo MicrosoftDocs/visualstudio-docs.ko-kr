@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285846"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508001"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>명령줄에서 애플리케이션 성능 측정
 
@@ -41,9 +41,9 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
 1. 메모장을 시작한 다음, 작업 관리자를 열어 프로세스 ID(PID)를 가져옵니다. 작업 관리자의 **세부 정보** 탭에서 PID를 찾습니다.
 
-1. 명령 프롬프트를 열고 일반적으로 여기에 컬렉션 에이전트 실행 파일을 사용하여 디렉터리로 변경합니다.
+1. 명령 프롬프트를 열고 컬렉션 에이전트 실행 파일을 사용하여 디렉터리로 변경합니다(Visual Studio Enterprise의 경우).
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. 다음 명령을 입력하여 *VSDiagnostics.exe*를 시작합니다.
 
@@ -57,6 +57,12 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
    * \<*pid*>, 프로파일링하려는 프로세스의 PID입니다(이 경우 1단계에서 찾은 PID).
    * \<*configFile*>, 시작하려는 컬렉션 에이전트의 구성 파일입니다. 자세한 내용은 [에이전트의 구성 파일](#config_file)을 참조하세요.
 
+   예를 들어 앞에서 설명한 대로 *pid*를 대체하여 CPUUsageBase 에이전트에 다음 명령을 사용할 수 있습니다.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
+
 1. 메모장의 크기를 조정하거나 몇 가지 흥미로운 프로파일링 정보가 수집되는지 확인하기 위해 항목을 입력합니다.
 
 1. 컬렉션 세션을 중지하고 다음 명령을 입력하여 출력을 파일로 보냅니다.
@@ -65,7 +71,9 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. 이전 명령의 파일 출력으로 이동하여 Visual Studio에서 열어 수집된 정보를 검사합니다.
+1. 이전 명령의 *.diagsession* 파일 출력을 찾고 Visual Studio에서(**파일** > **열기**) 열어 수집된 정보를 검사합니다.
+
+   결과를 분석하려면 해당 성능 도구에 대한 설명서를 참조하세요. 예를 들어 [CPU 사용량](../profiling/cpu-usage.md), [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md) 또는 [데이터베이스](../profiling/analyze-database.md) 도구가 있습니다.
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> 에이전트 구성 파일
 

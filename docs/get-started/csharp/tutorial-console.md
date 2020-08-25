@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183290"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508180"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -600,10 +600,10 @@ namespace Calculator
 
 ## <a name="next-steps"></a>다음 단계
 
-축하합니다. 이 자습서를 마쳤습니다. 자세히 알아보려면 다음 자습서를 계속 진행하세요.
+이 자습서의 두 번째 부분을 진행합니다.
 
 > [!div class="nextstepaction"]
-> [추가 C# 자습서 계속 진행](/dotnet/csharp/tutorials/)
+> [2부로 계속](tutorial-console-part-2.md)
 
 ## <a name="see-also"></a>참조
 

@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72985178"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238744"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>3단계: Flask 앱을 사용하여 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
 **이전 단계: [보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기](learn-flask-visual-studio-step-02-create-app.md)**
 

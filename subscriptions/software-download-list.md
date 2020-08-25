@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 소프트웨어 다운로드 목록을 찾습니다.
-ms.openlocfilehash: debf1904fc502f15f4fd6f52cc38e29a84dc763a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906106"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250698"
 ---
 # <a name="what-software-is-available-for-download"></a>어떤 소프트웨어를 다운로드할 수 있나요?
 
@@ -23,10 +23,10 @@ ms.locfileid: "85906106"
 2. 구독에 로그인합니다. ([Microsoft 계정](sign-in-msa.md), [회사 또는 학교 계정](sign-in-work.md) 또는 [GitHub](sign-in-github.md) 자격 증명 로그인 방법에 대해 자세히 알아보세요.)
 3. 로그인에 성공하면 원하는 다운로드를 검색할 수 있습니다.  몇 가지 기준으로 정렬할 수 있는 인기 다운로드 목록을 볼 수도 있습니다.
 
-제품을 빠르게 찾으려면 페이지 위쪽에서 “검색” 기능을 사용하거나 왼쪽에 있는 다른 제품 유형을 클릭합니다.
+제품을 빠르게 찾으려면 페이지 위쪽에서 “검색” 기능을 사용하거나 왼쪽에 있는 다른 제품 유형을 선택합니다.
 
 > [!TIP]
-> 제품 키를 찾고 있는 경우 페이지 맨 위에서 **제품 키**를 클릭합니다.
+> 제품 키를 찾고 있는 경우 페이지 맨 위에서 **제품 키** 탭을 선택합니다.
 
 또한 각 구독 유형에 대해 [사용 가능한 소프트웨어 타이틀](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)의 광범위한 목록이 들어 있는 Excel 스프레드시트를 다운로드할 수 있습니다.
 

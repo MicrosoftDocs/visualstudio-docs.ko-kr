@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62957279"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250569"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4단계: 전체 Flask 웹 프로젝트 템플릿 사용
 
@@ -235,5 +235,5 @@ Jinja 및 Jade 구문 모두를 원하는 대로 실험해 보고 어떤 것이 
 ## <a name="go-deeper"></a>자세히 알아보기
 
 - [Writing your first Flask app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/)(첫 번째 Flask 앱 작성, 4부 - 양식 및 일반 보기)(docs.djangoproject.com)
-- [GitHib의 Jade(문서)](https://github.com/liuliqiang/pyjade)(github.com)
+- [GitHub의 Jade(설명서)](https://github.com/liuliqiang/pyjade)(github.com)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

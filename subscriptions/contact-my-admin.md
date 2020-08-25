@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434256"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247427"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>구독 관리자의 도움 받기
 회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자나 “관리자”가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
@@ -21,13 +21,13 @@ ms.locfileid: "87434256"
 
 ## <a name="how-to-contact-your-admin"></a>관리자에게 문의하는 방법
 1. <https://my.visualstudio.com> 에 방문하여 구독자 포털에 로그인합니다.
-2. **구독** 탭을 클릭합니다. 
-3. 오른쪽 위에 있는 **내 관리자에게 문의** 단추를 클릭합니다. 
+2. **구독** 탭을 선택합니다. 
+3. 오른쪽 위에 있는 **내 관리자에게 문의** 단추를 선택합니다. 
    > [!div class="mx-imgBorder"]
-   > ![내 관리자에게 문의](_img/contact-my-admin/contact-my-admin-button.png "내 관리자에게 문의 단추를 클릭하고 메시지를 입력한 다음 보내기를 클릭합니다.")
+   > ![내 관리자에게 문의](_img/contact-my-admin/contact-my-admin-button.png "내 관리자에게 문의 단추를 선택하고 메시지를 입력한 다음 보내기를 선택합니다.")
 4. 관리자의 메시지를 입력합니다.
-5. 관리자에게 전송된 메시지의 복사본을 받으려면 **나에게 복사본 보내기** 확인란을 클릭합니다. 
-6. 마지막으로 **저장**을 클릭합니다.
+5. 관리자에게 전송된 메시지의 복사본을 받으려면 **나에게 복사본 보내기** 확인란을 선택합니다. 
+6. 마지막으로 **보내기**를 선택합니다.
 
 > [!NOTE]
 > **슈퍼 관리자:**  “내 관리자에게 문의” 요청을 보내는 전자 메일 주소를 설정하려면 [계약 기본 설정](admin-prefs.md#contact-email-address)에서 해당 주소를 지정합니다.

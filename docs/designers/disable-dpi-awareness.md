@@ -6,12 +6,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589567"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249965"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio에서 DPI 인식 사용 안 함
 
@@ -54,7 +54,7 @@ Visual Studio가 DPI를 인식하지 않는 프로세스로 실행되면 디자�
 > - DPI를 인식하지 않는 프로세스를 다시 시작하는 옵션을 선택하고 Visual Studio에서 도구 창을 도킹 해제한 경우 해당 도구 창의 위치가 변경될 수 있습니다.
 > - 기본 Visual Basic 프로필을 사용하는 경우 또는 **도구** > **옵션** > **프로젝트 및 솔루션**에서 **만들어질 때 새 프로젝트 저장** 옵션을 선택 취소한 경우 Visual Studio는 DPI를 인식하지 않는 프로세스로 다시 시작될 때 프로젝트를 다시 열 수 없습니다. 그러나 **파일** > **최근에 사용한 프로젝트 및 솔루션**에서 프로젝트를 선택하여 열 수 있습니다.
 
-**Windows Forms 디자이너**에서 작업이 완료되면 Visual Studio를 DPI를 인식하는 프로세스로 다시 시작해야 합니다. DPI를 인식하지 않는 프로세스로 실행되는 경우 글꼴이 흐리게 표시되고 **XAML 디자이너**와 같은 디자이너에서 문제가 발생할 수 있습니다. DPI를 인식하지 않는 모드에서 실행되는 Visual Studio를 닫았다가 다시 열면 DPI를 다시 인식하게 됩니다. 알림 표시줄에서 **Visual Studio를 DPI 인식 프로세스로 다시 시작** 옵션을 클릭할 수도 있습니다.
+**Windows Forms 디자이너**에서 작업이 완료되면 Visual Studio를 DPI를 인식하는 프로세스로 다시 시작해야 합니다. DPI를 인식하지 않는 프로세스로 실행되는 경우 글꼴이 흐리게 표시되고 **XAML 디자이너**와 같은 디자이너에서 문제가 발생할 수 있습니다. DPI를 인식하지 않는 모드에서 실행되는 Visual Studio를 닫았다가 다시 열면 DPI를 다시 인식하게 됩니다. 알림 표시줄에서 **Visual Studio를 DPI 인식 프로세스로 다시 시작** 옵션을 선택할 수도 있습니다.
 
 ### <a name="add-a-registry-entry"></a>레지스트리 항목 추가
 

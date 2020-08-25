@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 953ff26a6094a9de9dcf974d5e4cb5a02aaa503f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533564"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238662"
 ---
 # <a name="debug-python-and-c-together"></a>Python과 C++ 함께 디버그
 
@@ -36,9 +36,8 @@ Visual Studio에서는 Python 및 네이티브 C/C++에 대한 통합된 동시 
 
 ![Visual Studio에서 Python에 대한 혼합 모드 디버깅](media/mixed-mode-debugging.png)
 
-|   |   |
-|---|---|
-| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") | Visual Studio로 네이티브 C 모듈을 빌드, 테스트 및 디버그하는 방법에 대한 소개는 [심층 분석: 네이티브 모듈 만들기](https://youtu.be/D9RlT06a1EI) (youtube.com, 9분 09초)를 시청하세요. 이 동영상은 Visual Studio 2015 및 2017 모두에 적용됩니다. |
+![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청") Visual Studio로 네이티브 C 모듈을 빌드, 테스트 및 디버그하는 방법에 대한 소개는 [심층 분석: 네이티브 모듈 만들기](https://youtu.be/D9RlT06a1EI) (youtube.com, 9분 09초)를 시청하세요. 이 동영상은 Visual Studio 2015 및 2017 모두에 적용됩니다.
+
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Python 프로젝트에서 혼합 모드 디버깅 사용
 
@@ -171,7 +170,7 @@ static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
 
 - 지원되지 않는 기능: 조건부 중단점, **대화형 디버그** 창 및 플랫폼 간 원격 디버깅
 - **직접 실행** 창: 사용 가능하지만 여기서 나열하는 모든 제한을 포함하여 기능의 하위 집합이 제한됩니다.
-- 지원되는 Python 버전: CPython 2.7 및 3.3+만 해당.
+- 지원되는 Python 버전: CPython 2.7 및 3.3만
 - Visual Studio Shell: Visual Studio Shell에서 Python을 사용하는 경우(예: 통합 설치 관리자를 사용하여 설치한 경우) Visual Studio에서 C++ 프로젝트를 열 수 없으며 C++ 파일에 대한 편집 환경은 기본 텍스트 편집기의 환경입니다. 그러나 C/C++ 디버깅 및 혼합 모드 디버깅은 셸에서 원본 코드, 네이티브 코드 단계별 실행 및 디버거 창의 C++ 식 계산을 통해 완벽하게 지원됩니다.
 - 개체 보기 및 확장: **로컬** 및 **조사식** 디버거 도구 창에서 Python 개체를 볼 때 혼합 모드 디버거는 개체의 구조만 표시합니다. 속성을 자동으로 평가하거나 계산된 특성을 표시하지 않습니다. 컬렉션의 경우 기본 제공 컬렉션 형식(`tuple`, `list`, `dict`, `set`)에 대한 요소만 표시합니다. 일부 기본 제공 컬렉션 형식에서 상속되지 않는 한 사용자 지정 컬렉션 형식은 컬렉션으로 시각화되지 않습니다.
 - 식 계산: 아래 참조

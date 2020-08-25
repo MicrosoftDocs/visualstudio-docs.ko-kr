@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 424b325b244499a18077cc1df0ff9164c41763d2
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: a190790b915ac8dd011bc9843fe8abdf2d7381ae
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815463"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249572"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>방법: XSD 스키마를 기반으로 XML 문서 만들기
 
@@ -43,7 +43,7 @@ ms.locfileid: "85815463"
 
 1. [:방법 XSD 스키마 파일 만들기 및 편집](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)의 단계를 수행합니다.
 
-2. [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)에서 `PurchaseOrder` 전역 요소를 마우스 오른쪽 단추로 클릭합니다. **샘플 XML 생성**을 선택합니다.
+2. [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)에서 `PurchaseOrder` 전역 요소를 길게 선택(또는 마우스 오른쪽 단추로 클릭)한 다음 **샘플 XML 생성**을 선택합니다.
 
      이 옵션을 선택하면 다음 샘플 XML 콘텐츠를 포함하는 PurchaseOrder.*xml* 파일이 XML 편집기에서 생성되고 열립니다.
 

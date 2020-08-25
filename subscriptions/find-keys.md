@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 찾고 요청하며 내보내는 방법을 알아봅니다.
-ms.openlocfilehash: 8ee21c544a44bfd5eca831cdc9fd1c8e00adb35b
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453751"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250736"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 찾고 요청하기
 이 문서에서는 https://my.visualstudio.com/productkeys 에서 제품 키를 찾고 요청하며 내보내는 방법을 설명합니다.  일반 정품 및 볼륨 라이선스 버전의 키, 일일 제품 키 요청 제한, 키를 사용한 제품 정품 인증 방법에 대한 자세한 내용은 [제품 키 개요](product-keys.md)를 참조하세요.
@@ -20,7 +20,7 @@ ms.locfileid: "87453751"
 ## <a name="locating-and-claiming-product-keys"></a>제품 키 찾기 및 요청
 제품 키를 보려면 Visual Studio 구독에 로그인해야 합니다. 개별 제품 키는 아래 표시된 것처럼 [다운로드](https://my.visualstudio.com/downloads) 페이지에서 특정 제품에 대한 파란색 **키 가져오기** 링크를 선택하여 확인할 수 있습니다.  또한 모든 키는 [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 페이지에서 전체적으로 사용할 수도 있습니다. 단일 제품에 대해 여러 키가 있는 경우 다운로드를 위해 [메모] 열에 해당 정보가 표시되어 사용해야 할 키를 식별하는 데 도움이 됩니다.
 > [!div class="mx-imgBorder"]
-> ![다운로드 페이지에서 키 가져오기](_img/product-keys/download-get-key.png "임의의 다운로드 정보 페이지에서 키 가져오기를 클릭하여 해당 제품에 대한 키를 가져옵니다.")
+> ![다운로드 페이지에서 키 가져오기](_img/product-keys/download-get-key.png "임의의 다운로드 정보 페이지에서 키 가져오기를 선택하여 해당 제품에 대한 키를 가져옵니다.")
 
 일부 제품은 한 번에 다운로드할 수 있도록 여러 버전이 번들로 구성되어 있습니다. 이러한 경우 입력하는 제품 키에 따라 설치되는 제품 버전이 결정됩니다.
 일부 키는 "정적" 키와 같이 자동으로 제공되며, 정품 인증이 필요하지 않으므로 필요한 만큼 여러 번 사용할 수 있습니다. 다른 키는 제품에 대한 **키 가져오기** 링크를 선택하여 요청해야 합니다.
@@ -50,7 +50,7 @@ ms.locfileid: "87453751"
 
 제품 키를 요청하려면
 1. Visual Studio 구독에 로그인합니다.  제품을 다운로드하거나 제품 키를 요청하려면 로그인해야 합니다.
-2. [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 탭을 클릭합니다.
+2. [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 탭을 선택합니다.
 3. 제품 키는 제품 이름별 사전순으로 나열됩니다.  원하는 제품의 이름으로 스크롤하거나 페이지 위쪽의 검색 표시줄을 사용하여 검색할 수 있습니다.
 > [!div class="mx-imgBorder"]
 > ![제품 키 검색](_img/product-keys/search-keys.png "원하는 제품으로 스크롤하거나 검색 상자를 사용하여 제품을 빠르게 찾을 수 있습니다.")
@@ -64,7 +64,7 @@ ms.locfileid: "87453751"
 > [!IMPORTANT]
 > 구독이 만료되면 더 이상 새 키를 요청하거나 요청한 키를 내보낼 수 없습니다.
 
-키를 내보내려면 [제품 키] 페이지의 오른쪽 끝에 있는 **모든 키 내보내기** 링크를 클릭하기만 하면 됩니다.  KeysExport.xml이라는 제목의 .xml 파일이 만들어지고, 파일을 열거나 저장할 수 있는 옵션이 표시됩니다.  .xml 파일을 처리할 수 있는 애플리케이션으로 파일을 열어야 합니다.  예를 들어 Excel에서 파일을 읽기 전용 통합 문서로 열 수 있습니다.
+키를 내보내려면 제품 키 페이지의 오른쪽 끝에 있는 **모든 키 내보내기** 링크를 선택하면 됩니다.  KeysExport.xml이라는 제목의 .xml 파일이 만들어지고, 파일을 열거나 저장할 수 있는 옵션이 표시됩니다.  .xml 파일을 처리할 수 있는 애플리케이션으로 파일을 열어야 합니다.  예를 들어 Excel에서 파일을 읽기 전용 통합 문서로 열 수 있습니다.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)

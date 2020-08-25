@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 19eca9747fa4e9ef80f7de05799a2cee685ce821
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 461b99261eb88d5267b062cb5d471f1b6ed4ee60
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285524"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248032"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 웹앱 게시
 
@@ -39,7 +39,7 @@ ASP.NET, ASP.NET Core, Node.js 및 .NET Core 앱의 경우, 다음 방법 중 �
 
     ![게시 대상 선택](../deployment/media/quickstart-publish-azure-new.png)
 
-1. **Azure App Service(Windows)**를 선택하고 **다음**을 선택합니다.
+1. **Azure App Service(Windows)** 를 선택하고 **다음**을 선택합니다.
 
     ![Azure App Service on Linux 선택](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 

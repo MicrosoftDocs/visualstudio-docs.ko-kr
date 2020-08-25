@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389982"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186369"
 ---
 Visual Studio를 사용하여 컨테이너화된 NET, ASP.NET 및 ASP.NET Core 앱을 쉽게 빌드, 디버그, 실행하고 ACR(Azure Container Registry), Docker Hub, Azure App Service 또는 사용자 고유 컨테이너 레지스트리에 게시할 수 있습니다. 이 문서에서는 ASP.NET Core 앱을 ACR에 게시합니다.
 
@@ -42,27 +42,27 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 
 최종 Docker 이미지를 만들기 위한 레시피인 *Dockerfile*은 프로젝트에 생성됩니다. 그 안의 명령을 이해하려면 [Dockerfile 참조](https://docs.docker.com/engine/reference/builder/)를 참조하세요.
 
-```
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
+```dockerfile
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM microsoft/dotnet:2.2-sdk-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
 WORKDIR /src
-COPY ["HelloDockerTools/HelloDockerTools.csproj", "HelloDockerTools/"]
-RUN dotnet restore "HelloDockerTools/HelloDockerTools.csproj"
+COPY ["WebApplication1/WebApplication1.csproj", "WebApplication1/"]
+RUN dotnet restore "WebApplication1/WebApplication1.csproj"
 COPY . .
-WORKDIR "/src/HelloDockerTools"
-RUN dotnet build "HelloDockerTools.csproj" -c Release -o /app
+WORKDIR "/src/WebApplication1"
+RUN dotnet build "WebApplication1.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "HelloDockerTools.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication1.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
 위의 *Dockerfile*은 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 이미지를 기반으로 하며, 프로젝트를 빌드하고 컨테이너에 추가하여 기본 이미지를 수정하는 방법을 포함하고 있습니다. .NET Framework를 사용하는 경우 기본 이미지가 달라집니다.
@@ -98,11 +98,17 @@ IDE에서 검색 상자를 사용하여(사용하려면 **Ctrl**+**Q**를 누름
 
 1. 구성 드롭다운을 **릴리스**로 변경하고 앱을 빌드합니다.
 1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
-1. 게시 대상 대화 상자에서 **컨테이너 레지스트리** 탭을 선택합니다.
-1. **새 Azure Container Registry 만들기**를 선택하고 **게시**를 클릭합니다.
+1. **게시** 대화 상자에서 **Docker 컨테이너 레지스트리** 탭을 선택합니다.
+
+   ![게시 대화 상자 - Docker 컨테이너 레지스트리 선택 스크린샷](../../media/container-tools/vs-2019/docker-container-registry.png)
+
+1. **새 Azure Container Registry 만들기**를 선택합니다.
+
+   ![게시 대화 상자 - 새 Azure Container Registry 만들기 선택 스크린샷](../../media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+
 1. **새 Azure Container Registry 만들기**에 원하는 값을 채웁니다.
 
-    | 설정      | 제안 값  | Description                                |
+    | 설정      | 제안 값  | 설명                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
     | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |
@@ -112,9 +118,13 @@ IDE에서 검색 상자를 사용하여(사용하려면 **Ctrl**+**Q**를 누름
 
     ![Visual Studio의 Azure Container Registry 만들기 대화 상자][0]
 
-1. **만들기**
+1. **만들기**를 클릭합니다. 이제 **게시** 대화 상자에 생성된 레지스트리가 표시됩니다.
 
-   ![성공적인 게시를 보여 주는 스크린샷](../../media/container-tools/publish-succeeded.png)
+   ![생성된 Azure Container Registry를 보여 주는 게시 대화 상자의 스크린샷](../../media/container-tools/vs-2019/created-azure-container-registry.png)
+
+1. **마침**을 선택하여 Azure에서 새로 만든 레지스트리에 컨테이너 이미지를 게시하는 프로세스를 완료합니다.
+
+   ![성공적인 게시를 보여 주는 스크린샷](../../media/container-tools/vs-2019/publish-succeeded.png)
 
 ## <a name="next-steps"></a>다음 단계
 

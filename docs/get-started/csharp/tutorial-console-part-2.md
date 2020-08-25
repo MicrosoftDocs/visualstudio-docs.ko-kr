@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aae83c43a106fd68b03a83124ad2ddcea4652c8d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375954"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507958"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>자습서: 간단한 C# 콘솔 앱 확장
 
-이 자습서에서는 첫 부분에서 만든 콘솔 앱을 Visual Studio를 사용해 확장하는 방법을 알아봅니다. 고급 편집기 기능을 사용하고 디버깅하는 등, 개발자의 생산성 향상에 도움이 되는 일부 Visual Studio 기능에 대해 알아봅니다.
+이 자습서에서는 첫 부분에서 만든 콘솔 앱을 Visual Studio를 사용해 확장하는 방법을 알아봅니다. 여러 프로젝트를 관리하고 타사 패키지를 참조하는 등의 일상적인 개발 작업에 필요한 Visual Studio의 일부 기능에 대해 알아봅니다.
 
 이 시리즈의 [첫 부분](tutorial-console.md)을 완료했다면 Calculator 콘솔 앱이 이미 있습니다.  1부를 건너뛰려면 먼저 GitHub 리포지토리에서 프로젝트를 열어 시작하면 됩니다. C# Calculator 앱은 [vs-tutorial-samples 리포지토리](https://github.com/MicrosoftDocs/vs-tutorial-samples)에 있습니다. [자습서: 리포지토리에서 프로젝트 열기](../tutorial-open-project-from-repo.md)의 단계에 따라 시작하세요.
 

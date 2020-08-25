@@ -302,3 +302,7 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: ClickOnce 관리되지 않는 API 참조
           href: clickonce-unmanaged-api-reference.md
+    - name: Visual Studio 설치 관리자 프로젝트 참조
+      items:
+        - name: Visual Studio 설치 관리자 프로젝트 확장 및 .NET Core 3.1
+          href: installer-projects-net-core.md

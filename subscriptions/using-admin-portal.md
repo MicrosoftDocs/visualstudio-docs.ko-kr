@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: 구독 관리 포털을 사용하여 조직의 Visual Studio 구독 관리를 시작하는 방법을 알아봅니다.
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902940"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249865"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio Subscriptions Administrator 포털 개요
 
@@ -42,7 +42,7 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 
 페이지 왼쪽 위에는 구독 할당 개요, 계약 정보 및 최대 사용량 보고서를 표시하기 위해 선택할 수 있는 몇 가지 아이콘이 있습니다.
 
-구입 및 할당되었고 각 계약에 대해 조직에서 아직 사용 가능한 구독 라이선스의 수에 대한 추가 정보를 확인하려면 맨 위 아이콘을 클릭하여 슬라이드 아웃 패널을 사용 가능하도록 설정합니다.
+구입 및 할당되었고 각 계약에 대해 조직에서 아직 사용 가능한 구독 라이선스의 수에 대한 추가 정보를 확인하려면 맨 위 아이콘을 선택하여 슬라이드 아웃 패널을 사용 가능하도록 설정합니다.
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png)
 

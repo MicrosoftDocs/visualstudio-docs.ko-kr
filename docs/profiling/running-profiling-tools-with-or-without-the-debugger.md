@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45632967c39348e8dc78dc3e2fb95227dcd86d7d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285915"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508082"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
 
@@ -89,88 +89,4 @@ Visual Studio는 성능 측정 및 프로파일링 도구 중에서 선택할 �
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>명령줄에서 프로파일링 데이터 수집
 
-명령줄에서 성능 데이터를 측정하기 위해 Visual Studio 또는 원격 도구와 함께 제공되는 VSDiagnostics.exe를 사용할 수 있습니다. 이는 Visual Studio가 설치되지 않은 시스템에서 성능 추적을 캡처하거나, 성능 추적 컬렉션을 스크립팅하는 데 유용합니다. VSDiagnostics.exe를 사용하는 경우 도구가 중지될 때까지 프로파일링 데이터를 캡처하고 저장하는 진단 세션을 시작합니다. 이 시점에서 해당 데이터를 .diagsession 파일로 내보내고 Visual Studio에서 이 파일을 열어 결과를 분석할 수 있습니다.
-
-### <a name="launch-an-application"></a>애플리케이션 시작
-
-1. 명령 프롬프트를 열고 VSDiagnostics.exe가 포함된 디렉터리로 변경합니다.
-
-   ```
-   <Visual Studio Install Folder>\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-2. 다음 명령을 사용하여 VSDiagnostics.exe를 시작합니다.
-
-   ```
-   VSDiagnostics.exe start <id> /launch:<appToLaunch> /loadConfig:<configFile>
-   ```
-
-   다음 인수를 포함해야 합니다.
-
-   - \<id\>: 수집 세션을 식별합니다. ID는 1~255 사이의 숫자여야 합니다.
-   - \<appToLaunch\>: 시작하고 프로파일링할 실행 파일입니다.
-   - \<configFile\>: 시작하려는 수집 에이전트의 구성 파일입니다.
-
-3. 수집을 중지하고 결과를 보려면 이 문서의 뒷부분에 나오는 "수집 중지" 섹션의 단계를 따르세요.
-
-### <a name="attach-to-an-existing-application"></a>기존 애플리케이션에 연결
-
-1. 메모장과 같은 애플리케이션을 연 다음 **작업 관리자**를 열어 PID(프로세스 ID)를 가져옵니다. 작업 관리자의 **세부 정보** 탭에서 PID를 찾습니다.
-2. 명령 프롬프트를 열고 수집 에이전트 실행 파일이 포함된 디렉터리로 변경합니다. 일반적으로 다음 위치에 있습니다.
-
-   ```
-   <Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-3. 다음 명령을 입력하여 VSDiagnostics.exe 파일을 시작합니다.
-
-   ```
-   VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
-   ```
-
-   다음 인수를 포함해야 합니다.
-
-   - \<id\>: 수집 세션을 식별합니다. ID는 1~255 사이의 숫자여야 합니다.
-   - \<pid\>: 프로파일링할 프로세스의 PID입니다(이 경우 1단계에서 찾은 PID).
-   - \<configFile\>: 시작하려는 수집 에이전트의 구성 파일입니다. 자세한 내용은 [에이전트의 구성 파일](../profiling/profile-apps-from-command-line.md)을 참조하세요.
-
-4. 수집을 중지하고 결과를 확인하려면 다음 섹션의 단계를 수행합니다.
-
-### <a name="stop-collection"></a>수집 중지
-
-1. 수집 세션을 중지하고 다음 명령을 입력하여 출력을 파일로 보냅니다.
-
-   ```
-   VSDiagnostics.exe stop <id> /output:<path to file>
-   ```
-
-2. 이전 명령의 파일 출력으로 이동하여 Visual Studio에서 열어 수집된 정보를 검사합니다.
-
-## <a name="agent-configuration-files"></a>에이전트 구성 파일
-
-수집 에이전트는 측정하려는 항목에 따라 서로 다른 유형의 데이터를 수집하는 상호 교환이 가능한 구성 요소입니다.
-편의를 위해 에이전트 구성 파일에 해당 정보를 저장할 수 있습니다. 구성 파일은 최소한 .dll 파일의 이름과 해당 COM CLSID를 포함하는 .json 파일입니다. 다음 폴더에서 찾을 수 있는 구성 파일의 예제는 다음과 같습니다.
-
-```
-<Visual Studio installation folder>\Team Tools\DiagnosticsHub\Collector\AgentConfigs\
-```
-
-에이전트 구성 파일을 다운로드하고 보려면 다음 링크를 참조하세요.
-
-- https://aka.ms/vs/diaghub/agentconfig/cpubase
-- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
-- https://aka.ms/vs/diaghub/agentconfig/cpulow
-- https://aka.ms/vs/diaghub/agentconfig/database
-- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
-
-CpuUsage 구성(기본/높음/낮음)은 [CPU 사용량](../profiling/cpu-usage.md) 프로파일링 도구에 대해 수집된 데이터에 해당합니다.
-DotNetObjectAlloc 구성(기본/낮음)은 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)에 대해 수집된 데이터에 해당합니다.
-
-기본/낮음/높음 구성은 샘플링 주기를 참조하세요. 예를 들어 낮음은 100 샘플/초이고 높음은 4000 샘플/초입니다.
-VSDiagnostics.exe 도구가 수집 에이전트에서 작동하려면 해당 에이전트의 DLL 및 COM CLSID가 모두 필요합니다. 에이전트에도 추가 구성 옵션이 있을 수 있습니다. 구성 파일 없이 에이전트를 사용하는 경우 다음 명령의 형식을 사용합니다.
-
-```
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+명령줄에서 성능 데이터를 측정하기 위해 Visual Studio 또는 원격 도구와 함께 제공되는 VSDiagnostics.exe를 사용할 수 있습니다. 이는 Visual Studio가 설치되지 않은 시스템에서 성능 추적을 캡처하거나, 성능 추적 컬렉션을 스크립팅하는 데 유용합니다. 자세한 내용은 [명령줄에서 애플리케이션 성능 측정](../profiling/profile-apps-from-command-line.md)을 참조하세요.

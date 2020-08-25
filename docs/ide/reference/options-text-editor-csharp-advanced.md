@@ -1,21 +1,21 @@
 ---
 title: 옵션, 텍스트 편집기, C#, 고급
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181068"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214688"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 
@@ -128,7 +128,13 @@ ms.locfileid: "86181068"
 코드에서 중괄호( **{}** ) 사이에 세로 점선을 표시하려면 이 확인란을 선택합니다. 그러면 선언 수준 및 코드 수준 구문의 개별 코드 블록을 쉽게 확인할 수 있습니다.
 
 ## <a name="editor-help"></a>편집기 도움말
-
+::: moniker range=">=vs-2019"
+- 인라인 매개 변수 이름 힌트 
+    
+    선택하면 함수호출의 각 인수 앞에 리터럴, 캐스팅된 리터럴 및 개체 인스턴스화에 대한 매개 변수 이름 힌트가 삽입됩니다.  
+    
+    ![CSharp의 인라인 매개 변수 이름 힌트](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - ///에 대해 XML 문서 주석 생성
 
    이 옵션을 선택한 경우 `///` 주석 도입부를 입력한 후 XML 문서 주석에 대한 XML 요소를 삽입합니다. XML 문서에 대한 자세한 내용은 [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)을 참조하세요.
