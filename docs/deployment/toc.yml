@@ -2,12 +2,12 @@
   href: index.yml
 - name: 개요
   items:
-    - name: 배포 개요
+    - name: 배포 소개
+      href: deploying-applications-services-and-components.md
+    - name: '폴더, IIS 또는 Azure에 배포'
       href: deploying-applications-services-and-components-resources.md
 - name: 빠른 시작
   items:
-    - name: 배포 소개
-      href: deploying-applications-services-and-components.md
     - name: Azure App Service에 배포
       href: quickstart-deploy-to-azure.md
     - name: Linux용 App Service에 배포

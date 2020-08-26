@@ -10,21 +10,21 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: eb2ad45606c71687d3fdb7d95c09b656883551b6
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.openlocfilehash: 6ca826d6bf02ee87523c1a5269328e8fd3aaf850
+  ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 07/15/2020
-  ms.locfileid: "86405381"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88800179"
 landingContent:
 - title: 배포 정보
   linkLists:
   - linkListType: overview
     links:
-    - text: 배포 개요
-      url: deploying-applications-services-and-components-resources.md
     - text: 배포 소개
       url: deploying-applications-services-and-components.md
+    - text: 폴더, IIS 또는 Azure에 배포
+      url: deploying-applications-services-and-components-resources.md
 - title: 시작
   linkLists:
   - linkListType: quickstart
@@ -51,15 +51,7 @@ landingContent:
     links:
     - text: Windows Store용 데스크톱 앱 패키지
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: NuGet.org에 .NET 패키지 배포
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: NuGet.org에 게시(.NET Standard)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
-    - text: NuGet.org에 게시(.NET Framework)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
-- title: ASP.NET 앱 배포
+- title: ASP.NET Core 앱 배포
   linkLists:
   - linkListType: tutorial
     links:
@@ -89,3 +81,11 @@ landingContent:
     links:
     - text: Linux App Service에 게시
       url: ../javascript/publish-nodejs-app-azure.md
+- title: NuGet.org에 .NET 패키지 배포
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: NuGet.org에 게시(.NET Standard)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+    - text: NuGet.org에 게시(.NET Framework)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
