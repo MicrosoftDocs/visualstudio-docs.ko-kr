@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638581"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800205"
 ---
 # <a name="installation"></a>설치
 
@@ -34,10 +34,9 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 2. **확장 및 업데이트** 대화 상자의 왼쪽에서 **온라인**을 선택합니다.
 3. 오른쪽 위에 있는 검색 상자에 “AI 도구”를 입력합니다.
 4. 결과에서 **Visual Studio Tools for AI**를 선택합니다.
-5. **다운로드**를 클릭합니다.
+5. **다운로드**를 선택합니다.
 
 ## <a name="prepare-your-local-machine"></a>로컬 머신 준비
-
 로컬 컴퓨터에서 심층 학습 모델을 교육하기 전에 해당하는 필수 구성 요소가 설치되어 있는지 확인합니다. 여기에는 NVIDIA GPU용 최신 드라이버 및 라이브러리가 있는지 확인하는 작업도 포함됩니다(해당하는 경우). Python 및 Python 라이브러리(예: NumPy, SciPy 등)와, 프로젝트에서 사용하려는 적합한 심층 학습 프레임워크(예: Microsoft CNTK(Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch, Chainer 등)를 설치했는지도 확인합니다.
 
 > [!NOTE]

@@ -1,17 +1,17 @@
 ---
 title: macOS 접근성 옵션 사용
 description: 고대비, 키보드 탐색, VoiceOver 등의 macOS 접근성 옵션 및 기능 사용
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
 ms.topic: how-to
-ms.openlocfilehash: b74a150e21e29ddbee51d02be6dda91740a060f1
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 18bf3b0e36efda193c341993f9c2a88f04430922
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938465"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801765"
 ---
 # <a name="accessibility-features-of-macos"></a>macOS의 접근성 옵션
 

@@ -1,17 +1,17 @@
-﻿---
+---
 title: IDE 사용자 지정
 description: Mac용 Visual Studio를 다양한 방식으로 사용자 지정하여 사용자가 효율성과 미적 요구를 모두 충족하는 환경에서 앱을 개발하도록 할 수 있습니다. 이 문서에서는 Mac용 Visual Studio를 요구에 맞게 조정할 수 있는 여러 가지 방법을 살펴봅니다.
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306682"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801778"
 ---
 # <a name="customizing-the-ide"></a>IDE 사용자 지정
 

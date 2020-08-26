@@ -1,17 +1,17 @@
 ---
 title: Mac용 Visual Studio의 키보드 탐색
 description: 키보드 명령을 통해 Mac용 Visual Studio 사용
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
-ms.openlocfilehash: 8f77c9e3410517e0d2e2285cf455b901ec066246
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938665"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801791"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 키보드 탐색
 

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520590"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801648"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
 
@@ -95,8 +95,8 @@ Windows의 세 가지 Visual Studio 버전은 다음과 같습니다. Community,
 ::: moniker-end
 
 - [Visual Studio를 사용하여 공동 작업](/visualstudio/liveshare/)
-  
-    Visual Studio Live Share를 사용하면 사용 중인 프로그래밍 언어나 빌드 중인 앱 유형에 관계없이 다른 사람과 공동으로 실시간 편집 및 디버깅이 가능합니다. 
+
+    Visual Studio Live Share를 사용하면 사용 중인 프로그래밍 언어나 빌드 중인 앱 유형에 관계없이 다른 사람과 공동으로 실시간 편집 및 디버깅이 가능합니다.
 
 - [Python 대화형 REPL](python-interactive-repl-in-visual-studio.md)
 

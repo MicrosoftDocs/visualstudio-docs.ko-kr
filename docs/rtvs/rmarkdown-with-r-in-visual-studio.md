@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: edcea12eee28a4f3fa918b90311c9f4c4b2c2792
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 2cfad81c44822e59abb704e5e830357bfd32067d
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250656"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801557"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown 문서 만들기
 
@@ -47,7 +47,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
 
     This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-    When you click the **R Tools | Publish | Preview** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+    When you select the **R Tools | Publish | Preview** button, a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
     ```{r}
     summary(cars)
