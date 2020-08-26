@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801609"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893426"
 ---
 # <a name="use-code-analyzers"></a>코드 분석기 사용
 
@@ -28,11 +28,11 @@ ms.locfileid: "88801609"
 
 ![솔루션 탐색기의 분석기 노드](media/analyzers-expanded-in-solution-explorer.png)
 
-**속성** 창에서 설명 및 기본 심각도를 포함 하 여 진단 속성을 볼 수 있습니다. 속성을 보려면 규칙에서를 마우스 오른쪽 단추로 클릭 (또는 선택 및 유지) 하 고 **속성**을 선택 하거나 규칙을 선택 하 고 **Alt** + **Enter**를 선택 합니다.
+**속성** 창에서 설명 및 기본 심각도를 포함 하 여 진단 속성을 볼 수 있습니다. 속성을 보려면 해당 규칙을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하거나 규칙을 선택 하 고 **Alt** + **enter**를 누릅니다.
 
 ![속성 창의 진단 속성](media/analyzer-diagnostic-properties.png)
 
-진단에 대 한 온라인 설명서를 보려면 진단에서 마우스 오른쪽 단추를 클릭 (또는 선택 및 유지) 하 고 **도움말 보기**를 선택 합니다.
+진단에 대 한 온라인 설명서를 보려면 진단을 마우스 오른쪽 단추로 클릭 하 고 **도움말 보기**를 선택 합니다.
 
 **솔루션 탐색기** 의 각 진단 옆에 있는 아이콘은 편집기에서 열 때 규칙 집합에 표시 되는 아이콘에 해당 합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "88801609"
 | 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
 | 정보 | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 회색 상자로 표시 됩니다. |
 | 숨김 | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
-| None | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
+| 없음 | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
 | 기본값 | `default` | 규칙의 기본 심각도에 해당 합니다. 규칙의 기본값을 확인 하려면 속성 창를 확인 합니다. | 규칙의 기본 심각도에 해당 합니다. |
 
 코드 편집기의 다음 스크린샷에서는 심각도가 서로 다른 세 가지 위반을 보여 줍니다. 오른쪽의 스크롤 막대에서 물결 모양의 색 및 작은 색 사각형을 확인 합니다.
@@ -225,7 +225,7 @@ Visual Studio는 [빠른 작업](../ide/quick-actions.md) 전구 메뉴에서 �
 
 Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
 
-1. 위반이 발생 한 후 오류 목록에서 진단 항목을 마우스 오른쪽 단추로 클릭 하거나 선택 하 고 저장 합니다.
+1. 위반이 발생 한 후 오류 목록에서 진단 항목을 마우스 오른쪽 단추로 클릭 합니다.
 
 2. 상황에 맞는 메뉴에서 **심각도 설정**을 선택 합니다.
 
@@ -242,12 +242,12 @@ Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 �
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>솔루션 탐색기에서 규칙 심각도 설정
 
-1. 솔루션 탐색기에서 **참조**  >  **분석기** (또는 **Dependencies**  >  .net Core 프로젝트에 대 한 종속성**분석기** )를 선택 합니다.
+1. 솔루션 탐색기에서 **참조**  >  **분석기** (또는 **Dependencies**  >  .net Core 프로젝트에 대 한 종속성**분석기** )를 확장 합니다.
 
 2. 심각도를 설정 하려는 규칙이 포함 된 어셈블리를 확장 합니다.
 
 ::: moniker range=">=vs-2019"
-3. 규칙을 마우스 오른쪽 단추로 클릭 하거나 선택 하 고 선택 하 고 **심각도 설정**을 선택 합니다. 상황에 맞는 메뉴에서 심각도 옵션 중 하나를 선택 합니다.
+3. 규칙을 마우스 오른쪽 단추로 클릭 하 고 **심각도 설정**을 선택 합니다. 상황에 맞는 메뉴에서 심각도 옵션 중 하나를 선택 합니다.
 
    Visual Studio에서 EditorConfig 파일에 항목을 추가 하 여 요청 된 수준에 대 한 규칙을 구성 합니다. 프로젝트에서 EditorConfig 파일 대신 규칙 집합 파일을 사용 하는 경우 심각도 항목이 규칙 집합 파일에 추가 됩니다.
 
@@ -256,7 +256,7 @@ Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 �
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. 규칙을 마우스 오른쪽 단추로 클릭 하거나 선택 하 고 적용을 선택 하 고 **규칙 집합 심각도 설정**을 선택 합니다. 상황에 맞는 메뉴에서 심각도 옵션 중 하나를 선택 합니다.
+3. 규칙을 마우스 오른쪽 단추로 클릭 하 고 **규칙 집합 심각도 설정**을 선택 합니다. 상황에 맞는 메뉴에서 심각도 옵션 중 하나를 선택 합니다.
 
    규칙에 대 한 심각도는 활성 규칙 집합 파일에 저장 됩니다.
 ::: moniker-end
@@ -267,7 +267,7 @@ Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 �
 
 1. 다음 방법 중 하나로 활성 규칙 집합 파일을 엽니다.
 
-- **솔루션 탐색기**에서 파일을 두 번 클릭 하 고 **참조**분석기 노드를 마우스 오른쪽 단추로 클릭 한 다음,  >  **Analyzers** **활성 규칙 집합 열기**를 선택 합니다.
+- **솔루션 탐색기**에서 파일을 두 번 클릭 하 고 **참조**  >  **분석기** 노드를 마우스 오른쪽 단추로 클릭 한 다음 **활성 규칙 집합 열기**를 선택 합니다.
 - 프로젝트에 대 한 **코드 분석** 속성 페이지에서 **열기** 를 선택 합니다.
 
   처음으로 규칙 집합을 편집 하는 경우 Visual Studio에서 기본 규칙 집합 파일의 복사본을 만들고 이름을. a s t a .로 설정 하 고 프로젝트에 추가 합니다 * \<projectname> .* 또한이 사용자 지정 규칙 집합은 프로젝트에 대 한 활성 규칙 집합이 됩니다.
@@ -336,13 +336,13 @@ Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://
 
 - **코드 편집기** 에서
 
-  위반 하는 코드 줄에 커서를 놓고 **Ctrl** + **마침표 (.)** 를 선택 하 여 **빠른 작업** 메뉴를 엽니다. 원본/비 표시 제거 파일에서 **caxxxx를 표시 하지 않습니다**  >  **in Source/in Suppression File**.를 선택 합니다.
+  위반 하는 코드 줄에 커서를 놓고 **Ctrl** + **마침표 (.)** 를 눌러 **빠른 작업** 메뉴를 엽니다. 원본/비 표시 제거 파일에서 **caxxxx를 표시 하지 않습니다**  >  **in Source/in Suppression File**.를 선택 합니다.
 
   ![빠른 작업 메뉴에서 진단 표시 안 함](media/suppress-diagnostic-from-editor.png)
 
 - **오류 목록** 에서
 
-  표시 하지 않을 규칙을 선택한 다음 마우스 오른쪽 단추를 클릭 (또는 선택 및 유지) 하 고 소스/비 **표시 안 함 파일에서 표시 안 함**을 선택  >  **In Source/In Suppression File**합니다.
+  표시 하지 않을 규칙을 선택한 다음 마우스 오른쪽 단추를 클릭 하 고 소스/비 **표시 안 함 파일에서 표시 안 함**을 선택  >  **In Source/In Suppression File**합니다.
 
   - **소스에서**표시 하지 않는 경우 **변경 내용 미리 보기** 대화 상자가 열리고 소스 코드에 추가 된 c # [#pragma 경고](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 또는 Visual Basic [#Disable 경고](/dotnet/visual-basic/language-reference/directives/directives) 지시문의 미리 보기가 표시 됩니다.
 
@@ -392,7 +392,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)

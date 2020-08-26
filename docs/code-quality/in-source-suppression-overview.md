@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800855"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893374"
 ---
 # <a name="suppress-code-analysis-warnings"></a>코드 분석 경고 표시 안 함
 
@@ -50,7 +50,7 @@ C + +/CLI에서는 헤더 파일에서 매크로 CA를 사용 \_ \_ 하 여 메�
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 특성
 
-**오류 목록**에서 코드 분석 경고의 컨텍스트에서 **표시 안 함** 또는 마우스 오른쪽 단추를 클릭 하거나 선택 하 고 유지를 선택 하면 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 코드 또는 프로젝트의 전역 비 표시 해제 파일에 특성이 추가 됩니다.
+**오류 목록**에서 코드 분석 경고의 상황에 맞는 메뉴 또는 오른쪽 클릭 메뉴에서 **표시 안 함** 을 선택 하면 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 코드 또는 프로젝트의 전역 비 표시 오류 (suppression) 파일에 특성이 추가 됩니다.
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>특성의 형식은 다음과 같습니다.
 
@@ -98,11 +98,11 @@ Visual Studio에서 경고가 표시 되 `SuppressMessage` [는 경우 전역 �
 
 코드 분석 경고는 특성이 적용 되는 수준에서 표시 되지 않습니다 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> . 예를 들어, 특성을 어셈블리, 모듈, 형식, 멤버 또는 매개 변수 수준에서 적용할 수 있습니다. 이는 위반이 발생 하는 코드에 비 표시 정보를 긴밀 하 게 두는 것입니다.
 
-일반 표시 형식에는 규칙 범주 및 규칙 식별자 (사람이 읽을 수 있는 규칙 이름)가 포함 되어 있습니다. 예를 들면 다음과 같습니다.
+일반 표시 형식에는 규칙 범주 및 규칙 식별자 (사람이 읽을 수 있는 규칙 이름)가 포함 되어 있습니다. 예를 들면
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-원본 비 표시 메타 데이터를 최소화 하는 엄격한 성능상의 이유가 있는 경우 규칙 이름을 생략할 수 있습니다. 규칙 범주와 해당 규칙 ID는 모두 충분히 고유한 규칙 식별자를 구성 합니다. 예를 들면 다음과 같습니다.
+원본 비 표시 메타 데이터를 최소화 하는 엄격한 성능상의 이유가 있는 경우 규칙 이름을 생략할 수 있습니다. 규칙 범주와 해당 규칙 ID는 모두 충분히 고유한 규칙 식별자를 구성 합니다. 예를 들면
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -195,7 +195,7 @@ dotnet_diagnostic.CS1591.severity = none
 > [!NOTE]
 > 코드 분석 `GeneratedCodeAttribute` 은 전체 어셈블리나 단일 매개 변수에 적용 되는 경우를 무시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

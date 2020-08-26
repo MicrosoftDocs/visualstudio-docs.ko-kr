@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801037"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893270"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합 사용자 지정
 
@@ -26,9 +26,9 @@ ms.locfileid: "88801037"
 
 사용자 지정 규칙 집합을 만들려면 **규칙 집합 편집기**에서 기본 제공 규칙 집합을 열 수 있습니다. 여기에서 특정 규칙을 추가 또는 제거 하 고, 규칙을 위반할 때 발생 하는 동작을 변경할 수 있습니다 &mdash; . 예를 들어 경고 또는 오류를 표시할 수 있습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 선택 하 고 저장 하거나 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
+1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
 
-2. **속성** 페이지에서 **코드 분석** 탭으로 이동 합니다.
+2. **속성** 페이지에서 **코드 분석** 탭을 선택 합니다.
 
 ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ ms.locfileid: "88801037"
 
 **새 파일** 대화 상자에서 새 규칙 집합 파일을 만들 수 있습니다.
 
-1. **파일**  >  **새로 만들기**  >  **파일**을 선택 하거나 **Ctrl** + **N**을 선택 합니다.
+1. **파일**  >  **새로 만들기**  >  **파일**을 선택 하거나 **ctrl** + **N**을 누릅니다.
 
 2. **새 파일** 대화 상자에서 왼쪽의 **일반** 범주를 선택한 다음 **코드 분석 규칙 집합**을 선택 합니다.
 
@@ -70,9 +70,9 @@ ms.locfileid: "88801037"
 > [!NOTE]
 > 다음 절차는 **코드 분석** 속성 탭이 없는 .net Core 프로젝트에는 적용 되지 않습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 선택 하 고 저장 하거나 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
+1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
 
-2. **속성** 페이지에서 **코드 분석** 탭으로 이동 합니다.
+2. **속성** 페이지에서 **코드 분석** 탭을 선택 합니다.
 
 ::: moniker range="vs-2017"
 
@@ -98,7 +98,7 @@ ms.locfileid: "88801037"
 
 ## <a name="rule-precedence"></a>규칙 우선 순위
 
-- 심각도가 다른 규칙 집합에서 같은 규칙이 두 번 이상 나열 되는 경우 컴파일러에서 오류를 생성 합니다. 예를 들면 다음과 같습니다.
+- 심각도가 다른 규칙 집합에서 같은 규칙이 두 번 이상 나열 되는 경우 컴파일러에서 오류를 생성 합니다. 예를 들면
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ ms.locfileid: "88801037"
 
    **CA0063: 규칙 집합 파일 ' your \[ ]. 규칙 집합 또는 종속 규칙 집합 파일 중 하나를 로드 하지 못했습니다. 파일이 규칙 집합 스키마를 따르지 않습니다.**
 
-- 규칙 집합에 **include** 태그를 사용 하 여 자식 규칙 집합이 포함 되어 있고 자식 및 부모 규칙에서 둘 다 동일한 규칙을 나열 하지만 심각도가 다른 경우 부모 규칙 집합의 심각도가 우선적으로 적용 됩니다. 예를 들면 다음과 같습니다.
+- 규칙 집합에 **include** 태그를 사용 하 여 자식 규칙 집합이 포함 되어 있고 자식 및 부모 규칙에서 둘 다 동일한 규칙을 나열 하지만 심각도가 다른 경우 부모 규칙 집합의 심각도가 우선적으로 적용 됩니다. 예를 들면
 
    ```xml
    <!-- Parent rule set -->
@@ -145,7 +145,7 @@ ms.locfileid: "88801037"
 > [!div class="nextstepaction"]
 > [규칙 집합 편집기에서 규칙 수정](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 관리 코드 프로젝트에 대한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)

@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1077e2cdae790fe8a7b7309b1e6427cd3ef81b48
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: bbd3d2023310b9412310fc86f419c2e8c4a127c4
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800166"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893400"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>방법: 관리 코드에 대해 수동으로 코드 분석 실행 (Visual Studio 2019 버전 16.5 이상이 필요 함)
 기본적으로 .NET Compiler Platform ("Roslyn") 코드 분석기는 실시간 분석을 수행 하 고 빌드 중에도 입력할 때 c # 또는 Visual Basic 코드를 분석 합니다. 따라서 일반적으로 코드 분석을 수동으로 트리거할 필요가 없습니다. 그러나 코드 분석을 수동으로 트리거할 수 있는 몇 가지 시나리오가 있습니다.
 
 - 기본적으로 라이브 코드 분석은 Visual Studio에서 열려 있는 파일에 대해서만 분석기를 실행 합니다. 그러나 특정 프로젝트 또는 솔루션의 모든 파일에 대 한 코드 분석 경고를 보는 데 관심이 있을 수 있습니다. 이 경우 프로젝트 또는 솔루션에서 코드 분석을 한 번 트리거할 수 있습니다. 또는 연속 라이브 코드 분석을 사용 하 여 전체 솔루션에서 실행할 수 있습니다. 자세한 내용은 [방법: 관리 코드에 대한 실시간 코드 분석 범위를 구성합니다](./configure-live-code-analysis-scope-managed-code.md).
-- 연속 라이브 분석 또는 빌드 시간 분석에 대해 주문형 코드 분석 실행 워크플로를 선호 하는 경우가 있습니다. 이 경우 라이브 분석 및/또는 빌드 중에 분석기 실행을 사용 하지 않도록 설정할 수 있습니다. 분석을 사용 하지 않도록 설정 하는 방법에 대 한 자세한 내용은 [소스 코드 분석을 사용 하지 않도록 설정](disable-code-analysis.md) 그런 다음 프로젝트 또는 솔루션에 대해 코드 분석을 수동으로 트리거 하려고 합니다. 
+- 연속 라이브 분석 또는 빌드 시간 분석에 대해 주문형 코드 분석 실행 워크플로를 선호 하는 경우가 있습니다. 이 경우 라이브 분석 및/또는 빌드 중에 분석기 실행을 사용 하지 않도록 설정할 수 있습니다. 분석을 사용 하지 않도록 설정 하는 방법에 대 한 자세한 내용은 [소스 코드 분석을 사용 하지 않도록 설정](disable-code-analysis.md) 그런 다음 프로젝트 또는 솔루션에 대해 코드 분석을 수동으로 트리거 하려고 합니다.
 
 ### <a name="run-code-analysis-manually"></a>수동으로 코드 분석 실행
 

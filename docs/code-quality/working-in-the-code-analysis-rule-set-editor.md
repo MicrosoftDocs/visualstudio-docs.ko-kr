@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801544"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893309"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
 
@@ -29,7 +29,7 @@ ms.locfileid: "88801544"
 |오류|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
 |정보|**오류 목록**에서 메시지를 생성 합니다.|
 |숨김|위반은 사용자에 게 표시 되지 않습니다. 그러나 IDE에 위반에 대 한 알림이 표시 됩니다.|
-|None|규칙이 표시 되지 않습니다. 규칙이 규칙 집합에서 제거 된 것과 동일한 동작입니다.|
+|없음|규칙이 표시 되지 않습니다. 규칙이 규칙 집합에서 제거 된 것과 동일한 동작입니다.|
 
 사용자가 지정한 규칙 집합 필드를 기준으로 규칙을 그룹화 하는 트리 구조의 규칙이 편집기에 표시 됩니다. 규칙 집합에서 규칙을 추가 하거나 제거 하려면 다음 단계 중 하나 이상을 수행 합니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "88801544"
    > [!TIP]
    > **그룹화** 방법 드롭다운에서 규칙을 그룹화 하는 방법을 변경할 수 있습니다.
 
-- 그룹의 **작업** 필드에서 그룹의 모든 규칙에 적용할 작업을 지정 합니다.
+- 그룹의 **작업** 필드를 클릭 하 고 그룹의 모든 규칙에 적용할 작업을 지정 합니다.
 
 - 개별 규칙의 확인란을 선택 하거나 선택 취소 합니다. 규칙에 대 한 확인란을 선택 하면 규칙이 **경고** 동작으로 설정 됩니다.
 
@@ -85,6 +85,6 @@ ms.locfileid: "88801544"
 
 - 필드 값을 기준으로 규칙 집합을 필터링 하려면 필터링 할 필드의 열 머리글에서 필터 단추를 선택 합니다. 표시 하려는 값의 확인란을 선택 하 고 숨기려는 값의 확인란을 선택 취소 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [사용자 지정 규칙 집합 만들기](../code-quality/how-to-create-a-custom-rule-set.md)

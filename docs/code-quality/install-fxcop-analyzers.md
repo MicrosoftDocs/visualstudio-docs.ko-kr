@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800972"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893348"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio에서 FxCop 분석기 설치
 
@@ -28,7 +28,7 @@ Microsoft는 레거시 분석에서 가장 중요 한 "FxCop" 규칙을 포함 �
 
 Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속성 페이지에서 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 패키지를 직접 설치할 수 있습니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 (또는 선택 및 유지) 하 고 **속성**을 선택한 다음 **코드 분석** 탭으로 이동 합니다.
+1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택한 다음 **코드 분석** 탭을 선택 합니다.
 
    ![Visual Studio의 속성 페이지에서 FxCop 분석기 패키지 설치](media/install-fxcop-properties-page.png)
 
@@ -72,7 +72,7 @@ Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속
 
 | Visual Studio 버전 | FxCop analyzer 패키지 버전 |
 | - | - |
-| Visual Studio 2019 (모든 버전) | [마지막](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
+| Visual Studio 2019 (모든 버전) | [마지막](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 버전 15.9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Visual Studio 2017 버전 15.5에서 15.8로 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Visual Studio 2017 버전 15.3에서 15.4로 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
@@ -153,7 +153,7 @@ Visual Studio 2017 버전 15.5 이상에서는 관리 되는 프로젝트에 대
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [Visual Studio에서 코드 분석기 사용](../code-quality/use-roslyn-analyzers.md)
