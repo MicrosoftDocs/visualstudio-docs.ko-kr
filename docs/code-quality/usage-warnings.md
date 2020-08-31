@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ff6ba1f654f3a9b909012f159cd3daaf2892f3
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382629"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176080"
 ---
 # <a name="usage-warnings"></a>사용법 경고
 
@@ -75,5 +75,6 @@ ms.locfileid: "85382629"
 |[CA2244: 인덱싱된 요소의 초기화는 복제하면 안 됩니다.](../code-quality/ca2244.md)|개체 이니셜라이저에 동일한 상수 인덱스를 사용 하는 두 개 이상의 인덱싱된 요소 이니셜라이저가 있습니다. 마지막 이니셜라이저가 아닌 모두 중복 됩니다.|
 |[CA2245: 속성을 자체에 할당하지 마세요.](../code-quality/ca2245.md)|속성이 실수로 자신에 게 할당 되었습니다.|
 |[CA2246: 동일한 문에 기호 및 해당 멤버를 할당하지 마세요.](../code-quality/ca2246.md)|동일한 문에서 기호와 해당 멤버, 즉 필드 또는 속성을 할당 하는 것은 권장 되지 않습니다. 멤버 액세스에서 할당 전 기호의 이전 값을 사용 하거나이 문의 할당에서 새 값을 사용 하기 위한 것은 분명 하지 않습니다.|
-|[CA2247: Task Source 생성자에 전달 된 인수는 System.threading.tasks.taskcontinuationoptions enum 대신 TaskCreationOptions 열거형 이어야 합니다.](../code-quality/ca2246.md)|TaskTaskCreationOptions Source에는 기본 작업을 제어 하는 생성자와 작업에 저장 된 개체 상태를 사용 하는 생성자가 있습니다.  실수로 TaskCreationOptions 대신 System.threading.tasks.taskcontinuationoptions를 전달 하면 호출은 옵션을 state로 처리 합니다.|
+|[CA2247: TaskCompletionSource 생성자로 전달된 인수는 TaskContinuationOptions 열거형이 아닌 TaskCreationOptions 열거형이어야 합니다.](../code-quality/ca2246.md)|TaskTaskCreationOptions Source에는 기본 작업을 제어 하는 생성자와 작업에 저장 된 개체 상태를 사용 하는 생성자가 있습니다.  실수로 TaskCreationOptions 대신 System.threading.tasks.taskcontinuationoptions를 전달 하면 호출은 옵션을 state로 처리 합니다.|
 |[CA2248: ' Enum. HasFlag '에 올바른 ' enum ' 인수를 제공 하십시오.](../code-quality/ca2248.md)|메서드 호출에 인수로 전달 된 열거형 형식이 호출 하는 `HasFlag` 열거형 형식과 다릅니다.|
+|[CA2249: string.format 대신 String. Contains를 사용 하는 것이 좋습니다.](../code-quality/ca2249.md)|결과를 `string.IndexOf` 사용 하 여 부분 문자열의 존재 여부를 확인 하는 호출을로 바꿀 수 있습니다 `string.Contains` .|

@@ -295,12 +295,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091488"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176067"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -440,7 +440,7 @@ ms.locfileid: "89091488"
 | CA1801 | [CA1801: 사용되지 않은 매개 변수를 검토하세요.](../code-quality/ca1801.md) | 메서드 시그니처에 메서드 본문에서 사용되지 않는 매개 변수가 있습니다. |
 | CA1802 |[CA1802: 가능하면 리터럴을 사용하세요.](../code-quality/ca1802.md) |필드가 static 및 read-only([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 경우 Shared 및 ReadOnly)로 선언되었으며 컴파일할 때 계산할 수 있는 값으로 초기화되어 있습니다. 컴파일 시간에 대상된 필드에 할당 되는 값을 계산할 이기 때문에 const 선언을 변경 (에서 Const [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 필드 값을 런타임 대신 컴파일 시간에 계산 되도록 합니다. |
 | CA1804 | [CA1804: 사용되지 않는 로컬 항목을 제거하세요.](../code-quality/ca1804.md) | 사용되지 않는 지역 변수와 불필요한 할당으로 어셈블리의 크기가 증가하고 성능이 저하될 수 있습니다. |
-| CA1805 | [CA1805: 불필요하게 초기화하지 마세요.](../code-quality/ca1805.md) | .NET 런타임은 생성자를 실행 하기 전에 참조 형식의 모든 필드를 기본값으로 초기화 합니다. 대부분의 경우 필드를 기본값으로 명시적으로 초기화 하면 유지 관리 비용이 증가 하 고 성능이 저하 될 수 있습니다 (예: 어셈블리 크기 증가). |
+| CA1805 | [CA1805: 불필요 하 게 초기화 하지 마십시오.](../code-quality/ca1805.md) | .NET 런타임은 생성자를 실행 하기 전에 참조 형식의 모든 필드를 기본값으로 초기화 합니다. 대부분의 경우 필드를 기본값으로 명시적으로 초기화 하면 유지 관리 비용이 증가 하 고 성능이 저하 될 수 있습니다 (예: 어셈블리 크기 증가). |
 | CA1806 | [CA1806: 메서드 결과를 무시하지 마세요.](../code-quality/ca1806.md) | 새 개체가 만들어지지만 사용되지 않거나, 새 문자열을 만들고 반환하는 메서드가 호출되고 새 문자열이 사용되지 않거나, COM 또는 P/Invoke 메서드가 사용되지 않는 오류 코드나 HRESULT를 반환합니다. |
 | CA1809 |[CA1809: 불필요한 로컬 항목을 사용하지 마세요.](../code-quality/ca1809.md) | 값을 메모리가 아닌 프로세서 레지스터에 저장하는 방법은 성능 최적화에 많이 사용되는 방법이며 "값의 레지스터 등록"이라고도 합니다. 모든 지역 변수에 레지스터는 가능성을 늘리려면 64 로컬 변수 수를 제한 합니다. |
 | CA1810 | [CA1810: 참조 형식 정적 필드를 인라인으로 초기화하세요.](../code-quality/ca1810.md) | 형식이 명시적인 정적 생성자를 선언하면 JIT(Just-in-Time) 컴파일러는 형식의 각 정적 메서드와 인스턴스 생성자에 검사를 추가하여 정적 생성자를 이전에 호출했는지 확인합니다. 정적 생성자 검사로 인해 성능이 저하될 수 있습니다. |
@@ -577,6 +577,7 @@ ms.locfileid: "89091488"
 | CA2245 | [CA2245: 속성을 자체에 할당하지 마세요.](../code-quality/ca2245.md) | 속성이 실수로 자신에 게 할당 되었습니다. |
 | CA2246 | [CA2246: 동일한 문에 기호 및 해당 멤버를 할당하지 마세요.](../code-quality/ca2246.md) | 동일한 문에서 기호와 해당 멤버, 즉 필드 또는 속성을 할당 하는 것은 권장 되지 않습니다. 멤버 액세스에서 할당 전 기호의 이전 값을 사용 하거나이 문의 할당에서 새 값을 사용 하기 위한 것은 분명 하지 않습니다. |
 | CA2247 | [CA2247: Task Source 생성자에 전달 된 인수는 System.threading.tasks.taskcontinuationoptions enum이 아니라 TaskCreationOptions 열거형 이어야 합니다.](../code-quality/ca2247.md) | TaskTaskCreationOptions Source에는 기본 작업을 제어 하는 생성자와 작업에 저장 된 개체 상태를 사용 하는 생성자가 있습니다.  실수로 TaskCreationOptions 대신 System.threading.tasks.taskcontinuationoptions를 전달 하면 호출은 옵션을 state로 처리 합니다. |
+| CA2249 | [CA2249: CA2249: string.format 대신 String. Contains를 사용 하는 것이 좋습니다.](../code-quality/ca2249.md) | 결과를 `string.IndexOf` 사용 하 여 부분 문자열의 존재 여부를 확인 하는 호출을로 바꿀 수 있습니다 `string.Contains` . |
 | CA5122 | [CA5122 P/Invoke 선언이 안전 하 게 중요 한 것은 아닙니다.](../code-quality/ca5122.md) | 메서드는 보안에 중요한 작업을 수행할 때 SecuritySafeCritical로 표시되지만, 투명 코드에서도 안전하게 사용할 수 있습니다. 투명 코드는 P/Invoke를 통해 절대 네이티브 코드를 직접 호출할 수 없습니다. 따라서 P/Invoke를 SecuritySafeCritical로 표시할 경우 투명 코드가 P/Invoke를 호출할 수 없으며, 보안 분석에서 잘못 해석하는 원인이 됩니다. |
 | CA5359 | [CA5359 인증서 유효성 검사를 사용 하지 않도록 설정 안 함](../code-quality/ca5359.md) | 인증서는 서버의 id를 인증 하는 데 도움이 될 수 있습니다. 클라이언트는 서버 인증서의 유효성을 검사 하 여 요청이 원하는 서버로 전송 되도록 해야 합니다. ServerCertificateValidationCallback에서 항상를 반환 `true` 하는 경우 모든 인증서가 유효성 검사를 통과 합니다. |
 | CA5360 | [CA5360는 deserialization에서 위험한 메서드를 호출 하지 않습니다.](../code-quality/ca5360.md) | 안전 하지 않은 deserialization은 신뢰할 수 없는 데이터를 사용 하 여 응용 프로그램의 논리를 남용 하거나, DoS (서비스 거부) 공격을 수행 하거나, deserialize 될 때 임의의 코드를 실행할 때 발생 하는 취약성입니다. 응용 프로그램에서 제어 하는 신뢰할 수 없는 데이터를 deserialize 하는 경우 악의적인 사용자가 이러한 deserialization 기능을 악용할 수 있습니다. 특히 deserialization 프로세스에서 위험한 메서드를 호출 합니다. 안전 하지 않은 deserialization 공격에 성공 하면 공격자가 DoS 공격, 인증 바이패스 및 원격 코드 실행과 같은 공격을 수행할 수 있습니다. |
