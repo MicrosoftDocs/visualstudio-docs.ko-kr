@@ -1,24 +1,24 @@
 ---
-title: Roslyn 분석기 설치
-ms.date: 08/03/2018
-ms.topic: how-to
+title: 타사 분석기 설치
+ms.date: 08/27/2020
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce30dd25c43f1ac8254dbdb6b04b747a976f3557
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371757"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091453"
 ---
-# <a name="install-net-compiler-platform-code-analyzers"></a>.NET Compiler Platform 코드 분석기 설치
+# <a name="install-third-party-analyzers"></a>타사 분석기 설치
 
 Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 되어 있습니다. 이러한 분석기는 항상 켜져 있습니다. NuGet 패키지로 추가 분석기를 설치 하거나 *VSIX* 파일에 Visual Studio 확장으로 설치할 수 있습니다.
 
@@ -26,7 +26,7 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 
 1. Www.nuget.org에 설치 하려는 분석기 패키지를 찾습니다.
 
-   예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#nuget-package) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다. 또는 [StyleCop](https://www.nuget.org/packages/stylecop.analyzers/) 를 설치 하 여 코드 베이스에서 스타일 문제를 찾습니다.
+   예를 들어 [StyleCop](https://www.nuget.org/packages/stylecop.analyzers/) 를 설치 하 여 코드 베이스에서 스타일 문제를 찾을 수 있습니다.
 
 2. 패키지 [관리자 콘솔](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) 또는 [패키지 관리자 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)를 사용 하 여 Visual Studio에서 패키지를 설치 합니다.
 
@@ -96,7 +96,7 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 > [!div class="nextstepaction"]
 > [Visual Studio에서 코드 분석기 사용](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [FxCop 분석기 설치](../code-quality/install-fxcop-analyzers.md)

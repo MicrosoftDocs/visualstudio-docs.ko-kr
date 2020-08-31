@@ -7,16 +7,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027601"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800231"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
-여러 Microsoft 계정 및/또는 회사나 학교 계정이 있는 경우 별도로 로그인하지 않고도 모든 계정에서 리소스에 액세스할 수 있도록 모든 계정을 Visual Studio에 추가할 수 있습니다. Azure, Application Insights, Azure DevOps 및 Office 365 서비스는 모두 간소화된 로그인 환경을 지원합니다.
+여러 Microsoft 계정 및/또는 회사나 학교 계정이 있는 경우 별도로 로그인하지 않고도 모든 계정에서 리소스에 액세스할 수 있도록 모든 계정을 Visual Studio에 추가할 수 있습니다. Azure, Application Insights, Azure DevOps 및 Microsoft 365 서비스는 모두 간소화된 로그인 환경을 지원합니다.
 
 한 대의 머신에서 여러 계정을 추가한 후 다른 머신에서 Visual Studio에 로그인하면 해당 계정 집합이 사용자와 함께 로밍됩니다.
 
@@ -53,7 +53,7 @@ Microsoft 계정 또는 조직 계정으로 Visual Studio에 로그인합니다.
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>웹 프로젝트에서 Azure Active Directory 액세스
 
-AAD(Azure Active Directory)는 ASP.NET MVC 웹앱에서의 최종 사용자 Single Sign-In 또는 웹 API 서비스에서의 AD 인증을 지원합니다. 도메인 인증은 개별 사용자 계정 인증과 다릅니다. Active Directory 도메인에 액세스할 수 있는 사용자는 기존 AAD 계정을 사용하여 웹 애플리케이션에 연결할 수 있습니다. Office 365 앱은 도메인 인증도 사용할 수 있습니다.
+AAD(Azure Active Directory)는 ASP.NET MVC 웹앱에서의 최종 사용자 Single Sign-In 또는 웹 API 서비스에서의 AD 인증을 지원합니다. 도메인 인증은 개별 사용자 계정 인증과 다릅니다. Active Directory 도메인에 액세스할 수 있는 사용자는 기존 AAD 계정을 사용하여 웹 애플리케이션에 연결할 수 있습니다. Microsoft 365 앱은 도메인 인증도 사용할 수 있습니다.
 
 ::: moniker range="vs-2017"
 

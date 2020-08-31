@@ -1,22 +1,24 @@
 ---
-title: 색 테마 및 글꼴 설정
-ms.date: 03/23/2020
-ms.topic: quickstart
+title: Visual Studio 어두운 테마를 설정하고 텍스트 색을 변경합니다.
+description: 기본 Visual Studio 색 테마를 어두운 모드로 변경하고 코드 편집기에서 글꼴 색을 변경하는 방법에 대해 알아봅니다.
+ms.date: 08/20/2020
+ms.topic: how-to
+ms.custom: contperfq1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233146"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801401"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Visual Studio IDE 및 편집기 개인 설정
+# <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>방법: Visual Studio IDE 및 편집기 개인 설정
 
-5~10분이 걸리는 이 자습서에서는 어두운 테마를 선택하여 Visual Studio 색 테마를 사용자 지정하겠습니다. 또한 텍스트 편집기에서 두 가지 형식의 텍스트에 대한 색을 사용자 지정합니다.
+이 방법 문서에서는 Visual Studio 색 테마를 기본 파란색 테마에서 어두운 테마로 사용자 지정해 보겠습니다. 그런 다음 코드 편집기에서 두 가지 형식의 텍스트에 대한 색을 사용자 지정합니다.
 
 ::: moniker range="vs-2017"
 
@@ -30,7 +32,7 @@ ms.locfileid: "80233146"
 
 ::: moniker-end
 
-## <a name="set-the-color-theme"></a>색 테마 설정
+## <a name="set-the-color-theme-for-the-ide"></a>IDE의 색 테마 설정
 
 Visual Studio의 기본 색 테마는 **파랑**이라고 합니다. **어두운**으로 변경해 보겠습니다.
 
@@ -66,7 +68,7 @@ Visual Studio의 기본 색 테마는 **파랑**이라고 합니다. **어두운
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>텍스트 색 변경
+## <a name="change-text-colors-in-the-editor"></a>편집기에서 텍스트 색 변경
 
 이제 편집기의 일부 텍스트 색을 사용자 지정해 보겠습니다. 먼저 XML 파일을 만들어 기본 색을 확인하겠습니다.
 
@@ -124,9 +126,10 @@ Visual Studio의 기본 색 테마는 **파랑**이라고 합니다. **어두운
 
    ![새 글꼴 색이 적용된 XML 파일](media/quickstart-personalize-xml-file-new-colors.png)
 
-Visual Studio에서 색을 사용자 지정하는 몇 가지 방법을 살펴보았습니다. **옵션** 대화 상자에서 다른 사용자 지정 옵션도 탐색하여 자신에게 맞게 Visual Studio를 설정하시기 바랍니다.
+Visual Studio에서 색을 사용자 지정하는 몇 가지 방법을 살펴보았습니다. [**옵션**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 대화 상자에서 다른 사용자 지정 옵션도 탐색하여 자신에게 맞게 Visual Studio를 설정하시기 바랍니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [편집기 사용자 지정](../ide/how-to-change-text-case-in-the-editor.md)
+- [방법: Visual Studio에서 글꼴, 색상, 테마 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [방법: 편집기에서 텍스트 대/소문자 변경](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)

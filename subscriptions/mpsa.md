@@ -7,23 +7,23 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
-ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247319"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801466"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
 MPSA 프로그램을 통해 Visual Studio 구독을 구매한 경우 Visual Studio 구독 관리자가 되어 구독을 다른 사용자에게 할당하기 전에 기억해야 할 몇 가지가 있습니다. 이미 관리자로 설정되어 있으면 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com/)로 직접 이동할 수 있습니다.
 
-이제 MPSA 고객은 VLSC(볼륨 라이선스 서비스 센터)와 유사한 기능을 지원하는 [비즈니스 센터](https://businessaccount.microsoft.com/Customer)라는 새 포털에서 MPSA를 통해 구매한 자산을 관리합니다. 이러한 기능에는 라이선스 요약, 주문, 다운로드, 키, 사용자 등의 보기가 포함됩니다. 그러나 MPSA에서 Visual Studio 구독은 마치 클라우드 서비스처럼 동작합니다. 또한 비즈니스 센터는 MSA(Microsoft 계정) 대신 회사 계정을 사용하여 로그인합니다. 조직이 Office 365 또는 Azure Active Directory같은 클라우드 서비스를 사용하고 사용자 전자 메일이 이러한 두 서비스 중 하나에 속한 경우 이는 이미 회사 계정입니다. 이 계정을 사용하면 기존 암호를 사용하여 비즈니스 센터에 등록할 수 있습니다. 조직에서 클라우드 서비스를 사용하지 않고 전자 메일도 회사 계정이 아닌 경우라도 기존 암호를 사용해 비즈니스 센터에 등록할 수 있습니다.
+이제 MPSA 고객은 VLSC(볼륨 라이선스 서비스 센터)와 유사한 기능을 지원하는 [비즈니스 센터](https://businessaccount.microsoft.com/Customer)라는 새 포털에서 MPSA를 통해 구매한 자산을 관리합니다. 이러한 기능에는 라이선스 요약, 주문, 다운로드, 키, 사용자 등의 보기가 포함됩니다. 그러나 MPSA에서 Visual Studio 구독은 마치 클라우드 서비스처럼 동작합니다. 또한 비즈니스 센터는 MSA(Microsoft 계정) 대신 회사 계정을 사용하여 로그인합니다. 조직이 Microsoft 365 또는 Azure Active Directory같은 클라우드 서비스를 사용하고 있으며, 사용자 전자 메일이 이러한 두 서비스 중 하나에 속한 경우 이는 이미 회사 계정입니다. 이 계정을 사용하면 기존 암호를 사용하여 비즈니스 센터에 등록할 수 있습니다. 조직에서 클라우드 서비스를 사용하지 않고 전자 메일도 회사 계정이 아닌 경우라도 기존 암호를 사용해 비즈니스 센터에 등록할 수 있습니다.
 
 또한 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com/)에서는 일단 Visual Studio 구독 관리자가 되면 구독을 구독자에게 할당할 수 있습니다. MPSA에서 Visual Studio 구독자는 Visual Studio 구독 관리 포털인 해당 관리 포털에 프로비저닝해야 합니다. 이렇게 하려면 테넌트(예: contoso.onmicrosoft.com)에 구매 계정을 연결해야 합니다.
 
 테넌트에는 두 가지 유형(관리형 테넌트 및 비관리형 테넌트)이 있습니다. 관리형 테넌트는 조직에서 관리자가 이미 관리하고 있는 테넌트를 가리킵니다.
 
-비관리형 테넌트는 관리자가 할당되지 않은 테넌트로서 Office 365 같은 온라인 서비스에는 사용할 수 없습니다. 또한 비관리형 테넌트는 회사 계정이 아닌 전자 메일을 사용하여 비즈니스 센터에 등록할 때 만들어집니다. 비즈니스 센터에 등록할 때 암호를 만들도록 요청받는 경우 이는 전자 메일이 회사 계정이 아니며 비관리형 테넌트를 만들었다는 의미입니다.
+비관리형 테넌트는 관리자가 할당되지 않은 테넌트로서 Microsoft 365 같은 온라인 서비스에는 사용할 수 없습니다. 또한 비관리형 테넌트는 회사 계정이 아닌 전자 메일을 사용하여 비즈니스 센터에 등록할 때 만들어집니다. 비즈니스 센터에 등록할 때 암호를 만들도록 요청받는 경우 이는 전자 메일이 회사 계정이 아니며 비관리형 테넌트를 만들었다는 의미입니다.
 
 테넌트 연결을 완료하기 전에 Visual Studio 구독 관리자가 되는 데 필요한 몇 가지 요구 사항/단계가 있습니다.
 

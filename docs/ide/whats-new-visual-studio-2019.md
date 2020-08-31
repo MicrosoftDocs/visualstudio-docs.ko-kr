@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 08/05/2020
+ms.date: 08/21/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
-ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
+ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87818588"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801063"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -152,7 +152,7 @@ Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
 다운로드하여 Visual Studio 2019와 함께 사용할 수 있는 새로운 확장이 곧 도입됩니다. 이 새로운 확장을 사용하면 Visual Studio를 벗어나지 않고도 팀의 끌어오기 요청을 검토, 실행 및 디버그할 수 있습니다. GitHub 및 Azure DevOps 리포지토리 둘 다에서 코드를 지원합니다.
 
-   ![Visual Studio 2019의 새 시작 창 스크린샷](media/vs-2019/pr-experience.png)
+   ![Visual Studio 2019에서 새 끌어오기 요청 확장의 스크린샷](media/vs-2019/pr-experience.png)
 
 자세한 내용은 [Visual Studio 끌어오기 요청 확장을 사용하여 코드 검토](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) 블로그 게시물을 참조하세요.
 
@@ -241,9 +241,9 @@ Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있�
 * [Visual Studio 2019 릴리스 정보](/visualstudio/releases/2019/release-notes/)
 * [Mac용 Visual Studio 2019 릴리스 정보](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK의 새로운 기능](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
-* [C# 8.0의 새로운 기능](/dotnet/csharp/whats-new/csharp-8.md)
-* [.NET Core 3.1의 새로운 기능](/dotnet/core/whats-new/dotnet-core-3-1.md)
-* [.NET Framework의 새로운 기능](/dotnet/framework/whats-new.md)
+* [Visual Studio의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
+* [C# 8.0의 새로운 기능](/dotnet/csharp/whats-new/csharp-8/)
+* [.NET Core 3.1의 새로운 기능](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [.NET Framework의 새로운 기능](/dotnet/framework/whats-new/)
 * [Microsoft Build 컨퍼런스](https://www.microsoft.com/build)
 * [Microsoft Ignite 컨퍼런스](https://www.microsoft.com/ignite)

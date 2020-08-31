@@ -7,18 +7,18 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 로그인할 때 발생할 수 있는 문제에 대해 알아보기
-ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233236"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801882"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio 구독에 로그인할 때의 문제
 Visual Studio 구독을 사용하려면 먼저 로그인해야 합니다.  구독에 따라 Microsoft 계정(MSA) 또는 AAD(Azure Active Directory) ID로 설정했을 수 있습니다.  이 문서에서는 구독에 로그인하는 동안 발생할 수 있는 몇 가지 문제에 대해 설명합니다.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>회사/학교 이메일 주소를 사용하여 Microsoft 계정(MSA)을 만들 수 없습니다.
-Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주소를 사용하여 새 개인 Microsoft 계정(MSA)을 만드는 기능을 더 이상 사용할 수 없습니다. 무슨 의미인가요? 조직에서 Azure AD를 사용하는 Microsoft의 Office 365 또는 기타 다른 비즈니스 서비스를 사용하는 경우, Azure AD 테넌트에 도메인 이름을 추가하면 사용자는 더 이상 도메인의 이메일 주소를 사용하여 새 개인 Microsoft 계정을 만들 수 없습니다.
+Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주소를 사용하여 새 개인 Microsoft 계정(MSA)을 만드는 기능을 더 이상 사용할 수 없습니다. 무슨 의미인가요? 조직에서 Azure AD에 기반한 Microsoft의 Microsoft 365 또는 기타 다른 비즈니스 서비스를 사용하는 경우, Azure AD 테넌트에 도메인 이름을 추가하면 사용자가 더 이상 도메인의 이메일 주소로 새로운 개인 Microsoft 계정을 만들 수 없습니다.
 
 ### <a name="why-was-this-change-made"></a>이런 변화가 왜 일어났나요?
 회사 주소가 있는 개인 Microsoft 계정을 사용자 이름으로 사용하는 것은 최종 사용자와 IT 부서 모두에게 많은 문제를 일으킵니다. 다음은 그 예입니다.
@@ -40,7 +40,7 @@ Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주�
    > ![회사/학교 계정 지원](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>기존 계정에 영향을 주나요?
-여기에 설명된 등록 블록만 새 계정 생성을 방지합니다. 이미 회사/학교 이메일 주소가 있는 Microsoft 계정을 가진 사용자에게는 영향을 주지 않습니다. 이미 이러한 상황에 있는 경우 개인 Microsoft 계정의 이름을 쉽게 변경할 수 있습니다. 이 [지원 문서](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)는 간단한 단계별 지침을 제공합니다. 개인 Microsoft 계정의 이름을 바꾸면 사용자 이름을 변경한다는 의미이며, 회사 이메일이나 Office 365와 같은 비즈니스 서비스에 로그인하는 방법에 영향을 주지 않습니다. 또한 개인적인 것에 영향을 주지 않습니다. 단지 로그인하는 방식만 변경됩니다. 다른(개인) 이메일 주소를 사용하거나, Microsoft에서 새 @outlook.com 이메일 주소를 가져오거나, 전화 번호를 새 사용자 이름으로 사용할 수 있습니다.
+여기에 설명된 등록 블록만 새 계정 생성을 방지합니다. 이미 회사/학교 이메일 주소가 있는 Microsoft 계정을 가진 사용자에게는 영향을 주지 않습니다. 이미 이러한 상황에 있는 경우 개인 Microsoft 계정의 이름을 쉽게 변경할 수 있습니다. 이 [지원 문서](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)는 간단한 단계별 지침을 제공합니다. 개인 Microsoft 계정의 이름을 바꾸는 것은 사용자 이름을 변경하는 것으로, 회사 이메일이나 Microsoft 365와 같은 비즈니스 서비스에 로그인하는 방법에 영향을 주지 않습니다. 또한 개인적인 것에 영향을 주지 않습니다. 단지 로그인하는 방식만 변경됩니다. 다른(개인) 이메일 주소를 사용하거나, Microsoft에서 새 @outlook.com 이메일 주소를 가져오거나, 전화 번호를 새 사용자 이름으로 사용할 수 있습니다.
 
 > [!NOTE]
 > IT 부서에서 회사/학교 이메일로 개인 Microsoft 계정을 만들도록 요청한 경우(예: 프리미엄 지원과 같은 Microsoft 비즈니스 서비스에 액세스하기 위해) 계정 이름을 변경하기 전에 관리 팀에 문의하세요.

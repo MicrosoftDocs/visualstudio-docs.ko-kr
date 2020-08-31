@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85531848"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801310"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows의 Azure App Service에 게시
 
@@ -34,7 +34,7 @@ Visual Studio는 Python 웹앱을 Windows의 Azure App Service에 직접 게시�
 
 이 연습에서는 Bottle, Flask 또는 Django 프레임워크를 기반으로 하는 웹앱 프로젝트가 필요합니다. 프로젝트가 아직 없거나 게시 프로세스를 사용해보려는 경우 다음과 같이 간단한 테스트 프로젝트를 만듭니다.
 
-1. Visual Studio에서 **파일 > 새로 만들기 > 프로젝트**를 선택하고, “Bottle”을 검색하여 **Bottle 웹 프로젝트**를 선택한 다음, 프로젝트에 사용할 이름 및 경로를 지정하고, **확인**을 클릭합니다. (Bottle 템플릿은 Python 개발 작업에 포함됩니다. [설치](installing-python-support-in-visual-studio.md)를 참조하세요.)
+1. Visual Studio에서 **파일 > 새로 만들기 > 프로젝트**를 선택하고, "Bottle"을 검색하여 **Bottle 웹 프로젝트**를 선택한 다음, 프로젝트에 사용할 이름 및 경로를 지정하고 **확인**을 선택합니다. (Bottle 템플릿은 Python 개발 작업에 포함됩니다. [설치](installing-python-support-in-visual-studio.md)를 참조하세요.)
 
 1. **가상 환경에 설치** 및 가상 환경에 대한 사용자의 기본 설정된 기준 인터프리터를 선택하여 지침에 따라 외부 패키지를 설치합니다. 일반적으로 이 선택은 App Service에 설치된 Python의 버전과 일치합니다.
 

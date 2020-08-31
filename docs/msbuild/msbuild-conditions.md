@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289237"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711705"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 조건
 
@@ -58,7 +58,13 @@ MSBuild는 `Condition` 특성이 허용될 때마다 적용할 수 있는 특정
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+MSBuild 프로젝트 파일에는 true 부울 형식이 없습니다. 부울 데이터는 비어 있거나 임의의 값으로 설정할 수 있는 속성으로 표시됩니다. 따라서 `'$(Prop)' == 'true'`는 "Prop이 `true`인 경우"를 의미하지만 `'$(Prop)' != 'false'`는 "Prop이 `true` 또는 설정되지 않았거나 다른 항목으로 설정된 경우"를 의미합니다.
+
+부울 논리는 조건 컨텍스트에서만 평가되므로 `<Prop2>'$(Prop1)' == 'true'</Prop>`와 같은 속성 설정은 부울 값으로 평가되지 않고 변수 확장 후 문자열로 표시됩니다.  
+
+MSBuild는 부울 값으로 사용되는 문자열 속성을 보다 쉽게 사용할 수 있도록 몇 가지 특수 처리 규칙을 구현합니다. 부울 리터럴은 허용되므로 `Condition="true"` 및 `Condition="false"`는 예상대로 작동합니다. MSBuild에는 부울 부정 연산자를 지원하는 특수 규칙도 포함됩니다. 따라서 `$(Prop)`이 'true'인 경우 `!$(Prop)`이 `!true`로 확장되고,이는 사용자가 예상한 대로 `false`와 동일하게 비교됩니다.
+
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [조건부 구문](../msbuild/msbuild-conditional-constructs.md)

@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2074c4f15daf6a5ee5986a473ad98d7868409a3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a393afa3346b42786ff352dc0c2d48ea6c8b1152
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289263"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639382"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 명령줄 참조
 
@@ -47,7 +47,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |스위치|약식|설명|
 |------------|----------------|-----------------|
 |-detailedSummary|-ds|빌드된 구성과 노드에 대한 해당 구성의 예약 상태와 관련된 자세한 정보를 빌드 로그 끝에 표시합니다.|
-|-graphBuild[:`True` 또는 `False`]|-graph[:`True` 또는 `False`]|MSBuild가 프로젝트 그래프를 생성 및 빌드합니다. 그래프를 생성하려면 프로젝트 참조를 식별하여 종속성을 구성해야 합니다. 해당 그래프를 빌드하려면 기존 MSBuild 예약과는 달리, 프로젝트 참조를 참조하는 프로젝트보다 먼저 프로젝트 참조를 빌드해야 합니다.|
+|-graphBuild[:`True` 또는 `False`]|-graph[:`True` 또는 `False`]|MSBuild가 프로젝트 그래프를 생성 및 빌드합니다. 그래프를 생성하려면 프로젝트 참조를 식별하여 종속성을 구성해야 합니다. 해당 그래프를 빌드하려면 기존 MSBuild 예약과는 달리, 프로젝트 참조를 참조하는 프로젝트보다 먼저 프로젝트 참조를 빌드해야 합니다. MSBuild 16 이상이 필요합니다.|
 |-help|/? 또는 -h|사용 정보를 표시합니다. 다음 명령을 예로 들 수 있습니다.<br /><br /> `msbuild.exe -?`|
 |-ignoreProjectExtensions: `extensions`|-ignore: `extensions`|빌드할 프로젝트 파일을 결정할 때 지정된 확장명을 무시합니다. 다음 예제에서와 같이 여러 확장명은 세미콜론이나 쉼표로 구분합니다.<br /><br /> `-ignoreprojectextensions:.vcproj,.sln`|
 |-interactive[:`True` 또는 `False`]|-|빌드의 작업이 사용자와 상호 작용할 수 있음을 나타냅니다.  대화형 작업이 필요하지 않은 자동화된 시나리오에서는 이 인수를 사용하지 마세요. -Interactive를 지정하는 것은- interactive:true를 지정하는 것과 같습니다.  매개 변수를 사용하여 지시 파일에서 제공되는 값을 재정의합니다.

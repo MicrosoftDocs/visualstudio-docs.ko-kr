@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 Microsoft 소프트웨어 타이틀을 찾고 다운로드하는 방법을 알아봅니다.
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248226"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801830"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio 구독의 소프트웨어 타이틀 다운로드
 어떤 Visual Studio 구독을 보유하느냐에 따라 매우 다양한 Microsoft 소프트웨어 타이틀을 사용할 수 있습니다.  이 문서에서는 구독을 최대한 활용하는 데 필요한 소프트웨어를 찾고 다운로드하는 방법을 개괄적으로 소개합니다. 
@@ -22,7 +22,7 @@ ms.locfileid: "88248226"
 회사 또는 학교에서 구독을 제공하는 경우 구독 관리자가 다운로드에 액세스할 수 있는지 여부를 제어합니다. 다운로드에 대한 액세스를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다. 다운로드 및 제품 키에 액세스할 수 없으면 [관리자에게 문의](contact-my-admin.md)하세요.
 
 > [!NOTE]
-> Office 365 제품 키의 가용성과 관련된 문제에 대해 알고 있습니다.  원인을 조사하고 있으며, 문제가 해결되면 이 문서를 업데이트하겠습니다. 
+> Microsoft 365 제품 키의 가용성과 관련된 문제에 대해 알고 있습니다.  원인을 조사하고 있으며, 문제가 해결되면 이 문서를 업데이트하겠습니다. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>구독자 포털에서 다운로드를 찾으려면 어떻게 할까요?
 [다운로드](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) 페이지를 방문하면 인기 있는 다운로드가 제품 유형별 그룹으로 정렬되어 표시됩니다.  표시된 인기 있는 다운로드 중 하나를 선택하거나 페이지 위쪽의 검색 표시줄을 사용하여 모든 제품을 검색할 수 있습니다.

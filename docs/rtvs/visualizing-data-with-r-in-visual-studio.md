@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144703"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801622"
 ---
 # <a name="create-visual-data-plots-with-r"></a>R을 사용하여 시각적 데이터 플롯 만들기
 
@@ -23,7 +23,7 @@ ms.locfileid: "88144703"
 
 :::row:::
     :::column:::
-        ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")
+        ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 시청")
     :::column-end:::
     :::column:::
         R을 사용한 그리기에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=ZTbKmz5RSgY)하세요(2분 02초).
@@ -82,7 +82,7 @@ ms.locfileid: "88144703"
 
 ![플롯 기록 창](media/plotting-plot-history-window.png)
 
-플롯을 연결된 창에서 열려면 해당 플롯을 두 번 클릭하여 선택하고 **플롯 표시** 도구 모음 단추를 선택하거나, 마우스 오른쪽 단추를 클릭하고 **플롯 표시**를 선택합니다. 개별 플롯을 선택하고 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴 또는 **편집** 메뉴에서 복사, 잘라내기 또는 삭제할 수도 있습니다.
+플롯을 연결된 창에서 열려면 해당 플롯을 두 번 클릭하여 선택하고 **플롯 표시** 도구 모음 단추를 선택합니다. 플롯을 마우스 오른쪽 단추로 클릭하고 **플롯 표시**를 선택할 수도 있습니다. 개별 플롯을 선택하고 바로 가기 메뉴 또는 **편집** 메뉴에서 복사, 잘라내기 또는 삭제하는 것도 가능합니다.
 
 모든 창에 대한 플롯 기록의 수명은 대화형 R 세션의 수명으로 제한됩니다. R 세션을 다시 설정하거나 Visual Studio를 종료하고 다시 시작하면 플롯 기록이 다시 설정됩니다.
 

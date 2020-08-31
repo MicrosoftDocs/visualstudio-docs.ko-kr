@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 통해 Microsoft Windows Virtual Desktop을 활용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183589"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800608"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>구독에서 Windows Virtual Desktop 액세스 
 이제 Visual Studio 구독자는 Microsoft Windows Virtual Desktop 서비스에 대해 Azure 개발/테스트 개별 크레딧을 사용할 수 있습니다.  
-Windows Virtual Desktop은 클라우드에서 실행되는 포괄적인 데스크톱 및 앱 가상화 서비스입니다. 간소화된 관리, 다중 세션 Windows 10, Office 365 ProPlus에 대한 최적화, Remote Desktop Services(RDS) 환경에 대한 지원을 제공하는 유일한 VDI(가상 데스크톱 인프라)입니다. 몇 분 내에 Azure에서 Windows 데스크톱 및 앱을 배포하고 크기를 조정하며 기본 제공 보안 및 규정 준수 기능을 사용합니다.
+Windows Virtual Desktop은 클라우드에서 실행되는 포괄적인 데스크톱 및 앱 가상화 서비스입니다. 간소화된 관리, 다중 세션 Windows 10, 엔터프라이즈용 Microsoft 365에 대한 최적화, Remote Desktop Services(RDS) 환경에 대한 지원을 제공하는 유일한 VDI(가상 데스크톱 인프라)입니다. 몇 분 내에 Azure에서 Windows 데스크톱 및 앱을 배포하고 크기를 조정하며 기본 제공 보안 및 규정 준수 기능을 사용합니다.
 Azure에서 Windows Virtual Desktop을 실행하면 다음과 같은 작업이 가능합니다.
 - 확장 가능한 완전한 Windows 10을 제공하는 다중 세션 Windows 10 배포 설정
-- Office 365 ProPlus를 가상화하고 다중 사용자 가상 시나리오에서 실행되도록 최적화
+- 엔터프라이즈용 Office 365 앱을 가상화하고 다중 사용자 가상 시나리오에서 실행되도록 최적화
 - Windows 7 가상 데스크톱에 무료 기간 연장 보안 업데이트 제공
 - 기존 RDS(원격 데스크톱 서비스)와 Windows Server 데스크톱 및 앱을 컴퓨터로 가져오기
 - 데스크톱 및 앱 가상화

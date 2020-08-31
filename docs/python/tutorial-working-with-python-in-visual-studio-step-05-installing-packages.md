@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e2644ccfff0e7c653f4ce2680299aea95a55ef9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79372931"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801661"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>5단계: Python 환경에서 패키지 설치
 
@@ -31,11 +31,11 @@ Python 개발자 커뮤니티에서는 사용자 소유의 프로젝트에 통�
    ![Python 환경 창](media/environments/environments-default-view-2019.png)
 
    > [!NOTE]
-   > 솔루션 탐색기 창을 클릭하고 Ctrl+K, Ctrl+’ 바로 가기 키를 사용하여 Python 환경 창을 열 수도 있습니다. 바로 가기가 작동하지 않고 메뉴에서 Python 환경 창을 찾을 수 없는 경우 Python 워크로드를 설치하지 않았을 수 있습니다. Python을 설치하는 방법에 대한 지침은 [Visual Studio에서 Python 지원을 설치하는 방법](installing-python-support-in-visual-studio.md)을 참조하세요.
+   > 솔루션 탐색기 창을 선택하고 **Ctrl+K, Ctrl+`** 바로 가기 키를 사용하여 Python 환경 창을 열 수도 있습니다. 바로 가기가 작동하지 않고 메뉴에서 Python 환경 창을 찾을 수 없는 경우 Python 워크로드를 설치하지 않았을 수 있습니다. Python을 설치하는 방법에 대한 지침은 [Visual Studio에서 Python 지원을 설치하는 방법](installing-python-support-in-visual-studio.md)을 참조하세요.
 
 2. 환경의 **개요** 탭에서는 환경의 설치 폴더 및 인터프리터와 함께 해당 환경에 대한 **대화형** 창에 빠르게 액세스할 수 있습니다. 예를 들어 **대화형 창 열기**를 선택하면 Visual Studio에서 해당 특정 환경에 대한 **대화형** 창이 나타납니다.
 
-3. 이제 **파일** > **새로 만들기** > **프로젝트**에서 **Python 애플리케이션** 템플릿을 선택하여 새 프로젝트를 만듭니다. 표시되는 코드 파일에서 이전 자습서 단계와 같이 코사인 웨이브를 만드는, 이번에만 그래픽으로 표시된 다음 코드를 붙여넣습니다. 또는 이전에 만든 프로젝트를 사용하고 코드를 바꿀 수 있습니다. 
+3. 이제 **파일** > **새로 만들기** > **프로젝트**에서 **Python 애플리케이션** 템플릿을 선택하여 새 프로젝트를 만듭니다. 표시되는 코드 파일에서 이전 자습서 단계와 같이 코사인 웨이브를 만드는, 이번에만 그래픽으로 표시된 다음 코드를 붙여넣습니다. 또는 이전에 만든 프로젝트를 사용하고 코드를 바꿀 수 있습니다.
 
     ```python
     from math import radians
@@ -50,7 +50,7 @@ Python 개발자 커뮤니티에서는 사용자 소유의 프로젝트에 통�
     main()
     ```
 
-4. Python 프로젝트를 연 상태에서 Python 환경을 마우스 오른쪽 단추로 클릭하고 **모든 Python 환경 보기**를 선택하여 솔루션 탐색기에서 Python 환경 창을 열 수도 있습니다.
+4. Python 프로젝트를 연 상태에서 **Python 환경**을 마우스 오른쪽 단추로 클릭하고 **모든 Python 환경 보기**를 선택하여 솔루션 탐색기에서 Python 환경 창을 열 수도 있습니다.
 
    ![환경](media/environments/environments-view-all-2019.png)
 
@@ -60,7 +60,7 @@ Python 개발자 커뮤니티에서는 사용자 소유의 프로젝트에 통�
 
 ## <a name="install-packages-using-the-python-environments-window"></a>Python 환경 창을 사용하여 패키지 설치
 
-1. Python 환경 창에서 새 Python 프로젝트에 대한 기본 환경을 클릭하고 **패키지** 탭을 선택합니다. 그러면 환경에 현재 설치된 패키지 목록이 표시됩니다.
+1. Python 환경 창에서 새 Python 프로젝트에 대한 기본 환경을 선택하고 **패키지** 탭을 선택합니다. 그러면 환경에 현재 설치된 패키지 목록이 표시됩니다.
 
    ![환경에 설치된 패키지](media/environments/environments-installed-packages-2019.png)
 
@@ -76,7 +76,7 @@ Python 개발자 커뮤니티에서는 사용자 소유의 프로젝트에 통�
 
    > [!NOTE]
    > 작은 진행률 표시줄이 환경 아래에 표시되어 Visual Studio에서 새로 설치된 패키지에 대한 IntelliSense 데이터베이스를 빌드 중임을 나타낼 수 있습니다. **IntelliSense** 탭에 더 자세한 정보가 표시됩니다. 해당 데이터베이스가 완료될 때까지 자동 완성 및 구문 검사와 같은 IntelliSense 기능은 해당 패키지에 대한 편집기에서 활성화되지 않습니다.
-   > 
+   >
    > Visual Studio 2017 버전 15.6 이상에서는 IntelliSense 작업에 더 빠른 다른 방법을 사용하며, **IntelliSense** 탭에 해당 효과에 대한 메시지를 표시합니다.
 
 ## <a name="run-the-program"></a>프로그램 실행

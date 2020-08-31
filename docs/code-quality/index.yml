@@ -10,12 +10,12 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 2bafba53a131ca440b7d1e9cb68d18ac0ac833dd
-  ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+  ms.openlocfilehash: 94dcd1cf66ed1893a8cdfd069314d689cb1e9329
+  ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "85462098"
+  ms.lasthandoff: 08/29/2020
+  ms.locfileid: "89091406"
 landingContent:
 - title: C 및 C++ 코드 분석
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: C++ 코드 분석 경고
       url: code-analysis-for-c-cpp-warnings.md
-- title: 관리 코드 품질 분석
+- title: .NET 코드 품질 분석
   linkLists:
   - linkListType: overview
     links:
@@ -41,17 +41,17 @@ landingContent:
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
-    - text: FxCop 분석기 설치
+    - text: 코드 품질 분석 구성
       url: install-fxcop-analyzers.md
   - linkListType: reference
     links:
-    - text: 관리 코드 분석 경고
+    - text: .NET 코드 품질 규칙
       url: code-analysis-for-managed-code-warnings.md
-- title: 관리 코드 스타일 분석
+- title: .NET 코드 스타일 분석
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 코드 스타일 분석
+    - text: 코드 스타일 분석 구성
       url: ../ide/create-portable-custom-editor-options.md
 - title: 코드 복잡성 측정
   linkLists:

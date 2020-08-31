@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580094"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801804"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>자습서: Visual Studio 2019와 함께 Entity Framework를 사용하여 첫 번째 ASP.NET Core 앱 만들기
 
@@ -85,7 +85,7 @@ Visual Studio를 여러 종류의 개발에 사용할 수 있으며, 워크로�
 
 - 인증 없음.
 - 개별 사용자 계정. 이 항목은 로컬 또는 Azure 기반 데이터베이스에 저장됩니다.
-- 회사 또는 학교 계정. 이 옵션은 인증에 Active Directory, Azure AD 또는 Office 365를 사용합니다.
+- 회사 또는 학교 계정. 이 옵션은 인증에 Active Directory, Azure AD 또는 Microsoft 365를 사용합니다.
 - Windows 인증. 인트라넷 애플리케이션에 적합합니다.
 
 인증 없음과 함께 표준 웹 애플리케이션 템플릿을 선택하고 **만들기**를 클릭합니다.

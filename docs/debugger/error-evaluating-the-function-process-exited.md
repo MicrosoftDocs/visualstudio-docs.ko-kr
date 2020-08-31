@@ -1,5 +1,5 @@
 ---
-title: 오류 - 대상 프로세스가 &#39;function&#39; 함수를 확인하는 중 &#39;code&#39; 코드로 종료됨 | Microsoft Docs
+title: '오류: 대상 프로세스가 &apos;function&apos; 함수를 평가하는 동안 &apos;code&apos; 코드로 종료되었습니다 | Microsoft Docs'
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 94effc8a5f75e7b38fb7275d175eb324c479a7a9
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460780"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711640"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>오류: 대상 프로세스가 &#39;function&#39; 함수를 확인하는 중 &#39;code&#39; 코드로 종료되었습니다.
 

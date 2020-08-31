@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816464"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801297"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>자습서: Windows Forms 디자이너 시작
 
@@ -43,7 +43,7 @@ Windows Forms 디자이너는 Windows Forms 애플리케이션 빌드를 위한 
 
    ::: moniker-end
 
-2. 파일의 이름을 바꾸려면 **솔루션 탐색기**에서 **UserControl1.vb** 또는 **UserControl1.cs**를 마우스 오른쪽 단추로 선택하고 **이름 바꾸기**를 선택한 후 파일 이름을 DemoCalculator.vb 또는 DemoCalculator.cs로 변경합니다. 코드 요소 “UserControl1”에 대한 모든 참조 이름을 변경할지 묻는 메시지가 표시되면 **예**를 선택합니다.
+2. 파일의 이름을 바꾸려면 **솔루션 탐색기**에서 **UserControl1.vb** 또는 **UserControl1.cs**를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택한 후 파일 이름을 DemoCalculator.vb 또는 DemoCalculator.cs로 변경합니다. 코드 요소 “UserControl1”에 대한 모든 참조 이름을 변경할지 묻는 메시지가 표시되면 **예**를 선택합니다.
 
 Windows Forms 디자이너는 DemoCalculator 컨트롤에 대한 디자이너 화면을 표시합니다. 이 뷰에서는 도구 상자에서 컨트롤 및 구성 요소를 선택하고 디자이너 화면에 배치하여 컨트롤의 모양을 그래픽으로 디자인할 수 있습니다. 사용자 지정 컨트롤에 대한 자세한 내용은 [사용자 지정 컨트롤의 종류](/dotnet/framework/winforms/controls/varieties-of-custom-controls)를 참조하세요.
 
@@ -111,7 +111,7 @@ DemoCalculator 컨트롤에는 여러 Windows Forms 컨트롤이 포함되어 �
 
 이제 컨트롤의 레이아웃을 설정했으므로 단추와 표시로 DemoCalculator 컨트롤을 채울 수 있습니다.
 
-1. **도구 상자**에서 `TextBox` 컨트롤 아이콘을 두 번 클릭합니다.
+1. **도구 상자**에서 `TextBox` 컨트롤 아이콘을 선택합니다.
 
    `TextBox` 컨트롤이 `TableLayoutPanel` 컨트롤의 첫 번째 셀에 배치됩니다.
 
@@ -129,11 +129,11 @@ DemoCalculator 컨트롤에는 여러 Windows Forms 컨트롤이 포함되어 �
 
 6. `TableLayoutPanel` 컨트롤을 선택합니다.
 
-7. **도구 상자**에서 `Button` 아이콘을 두 번 클릭합니다.
+7. **도구 상자**에서 `Button` 아이콘을 선택합니다.
 
    `Button` 컨트롤이 `TableLayoutPanel` 컨트롤의 열린 다음 셀에 배치됩니다.
 
-8. **도구 상자**에서 `Button` 아이콘을 네 번 더 두 번 클릭하여 `TableLayoutPanel` 컨트롤의 두 번째 행을 채웁니다.
+8. **도구 상자**에서 `Button` 아이콘을 네 번 더 선택하여 `TableLayoutPanel` 컨트롤의 두 번째 행을 채웁니다.
 
 9. **Shift** 키를 `Button` 컨트롤을 선택하여 5개의 컨트롤을 모두 선택합니다. **Ctrl**+**C**를 눌러 `Button` 컨트롤을 클립보드로 복사합니다.
 
@@ -247,11 +247,11 @@ DemoCalculator 컨트롤에는 여러 Windows Forms 컨트롤이 포함되어 �
 
 ## <a name="implement-event-handlers"></a>이벤트 처리기 구현
 
-DemoCalculator 컨트롤의 단추에는 대부분의 계산기 논리를 구현하는 데 사용할 수 있는 이벤트 처리기가 있습니다. Windows Forms 디자이너를 사용하여 더블 클릭 한 번으로 모든 단추의 모든 이벤트 처리기 스텁을 구현할 수 있습니다.
+DemoCalculator 컨트롤의 단추에는 대부분의 계산기 논리를 구현하는 데 사용할 수 있는 이벤트 처리기가 있습니다. Windows Forms 디자이너를 사용하여 선택 한 번으로 모든 단추의 모든 이벤트 처리기 스텁을 구현할 수 있습니다.
 
 1. 디자이너 화면에서 **Shift** 키를 누른 채 `Button` 컨트롤을 선택하여 모든 컨트롤을 선택합니다.
 
-2. `Button` 컨트롤 중 하나를 두 번 클릭합니다.
+2. `Button` 컨트롤 중 하나를 선택합니다.
 
    디자이너에서 생성된 이벤트 처리기에 대해 코드 편집기가 열립니다.
 
@@ -277,7 +277,7 @@ DemoCalculator 컨트롤은 다른 복합 컨트롤이나 폼에서 사용할 �
 
 2. **솔루션 탐색기**에서 **DemoCalculatorTest** 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **참조 추가**를 선택하여 **참조 추가** 대화 상자를 엽니다.
 
-3. **프로젝트** 탭을 선택하고 DemoCalculatorLib 프로젝트를 두 번 클릭하여 테스트 프로젝트에 참조를 추가합니다.
+3. **프로젝트**로 이동하고 DemoCalculatorLib 프로젝트를 선택하여 테스트 프로젝트에 참조를 추가합니다.
 
 4. **솔루션 탐색기**에서 **DemoCalculatorTest**를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택합니다.
 
@@ -297,7 +297,7 @@ DemoCalculator 컨트롤은 다른 복합 컨트롤이나 폼에서 사용할 �
 
 4. `Button` 컨트롤을 DemoCalculator 컨트롤 주위로 이동하고 맞춤선이 나타나는 위치를 확인합니다. 이 기능을 사용하여 컨트롤을 정확하고 쉽게 정렬할 수 있습니다. 완료되면 `Button` 컨트롤을 삭제합니다.
 
-5. DemoCalculator 컨트롤을 마우스 오른쪽 단추로 선택하고 **속성**을 선택합니다.
+5. DemoCalculator 컨트롤을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
 6. `Dock` 속성의 값을 `Fill`로 변경합니다.
 

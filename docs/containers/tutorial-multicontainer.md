@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027326"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711666"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
@@ -55,7 +55,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 
 ## <a name="create-a-web-api-project"></a>Web API 프로젝트 만들기
 
-동일한 솔루션에 프로젝트를 추가하고 이름을 *MyWebAPI*로 지정합니다. 프로젝트 형식으로 **API**를 선택하고 **HTTPS에 대한 구성** 확인란의 선택을 취소합니다. 이 설계에서는 클라이언트와의 통신에만 SSL을 사용하고, 동일한 웹 애플리케이션의 컨테이너 간 통신에는 사용하지 않습니다. `WebFrontEnd`는 HTTPS만 필요하며 이 예제의 코드에서는 해당 확인란의 선택을 취소했다고 가정합니다.
+동일한 솔루션에 프로젝트를 추가하고 이름을 *MyWebAPI*로 지정합니다. 프로젝트 형식으로 **API**를 선택하고 **HTTPS에 대한 구성** 확인란의 선택을 취소합니다. 이 설계에서는 클라이언트와의 통신에만 SSL을 사용하고, 동일한 웹 애플리케이션의 컨테이너 간 통신에는 사용하지 않습니다. `WebFrontEnd`는 HTTPS만 필요하며 이 예제의 코드에서는 해당 확인란의 선택을 취소했다고 가정합니다. 일반적으로 Visual Studio에서 사용하는 .NET 개발자 인증서는 컨테이너-컨테이너 요청이 아닌 외부-컨테이너 요청에 대해서만 지원됩니다.
 
 ::: moniker range="vs-2017"
    ![Web API 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -192,7 +192,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 
 [Azure에 컨테이너](/azure/containers)를 배포하는 옵션을 확인합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [컨테이너 도구](/visualstudio/containers/)

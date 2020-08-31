@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431160"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801674"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>빠른 시작: 폴더에서 Python 코드 열기 및 실행
 
@@ -77,7 +77,7 @@ ms.locfileid: "62431160"
     ![Python 파일의 디버그 및 시작 설정 명령](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > 선택 항목으로 **기본값**이 표시되지 않는 경우 **디버그 및 시작 설정** 명령을 선택할 때 Python *.py* 파일을 마우스 오른쪽 단추로 클릭했는지 확인하세요. Visual Studio는 파일 형식을 사용하여 표시할 디버거 옵션을 결정합니다.
+    > 선택 항목으로 **기본값**이 표시되지 않는 경우 **디버그 및 시작 설정** 명령을 선택할 때 Python *.py* 파일을 선택했는지 확인하세요. Visual Studio는 파일 형식을 사용하여 표시할 디버거 옵션을 결정합니다.
 
 1. Visual Studio는 숨겨진 *.vs* 폴더에 있는 *launch.vs.json* 파일을 엽니다. 이 파일은 프로젝트의 디버깅 컨텍스트를 설명합니다. 작업 디렉터리를 지정하려면 python-koans 예제의 `"workingDirectory": "python3"`와 같이 `"workingDirectory"`에 대한 값을 추가하세요.
 

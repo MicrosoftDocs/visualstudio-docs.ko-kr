@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63000573"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801180"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio용 R 도구 시작
 
@@ -137,7 +137,7 @@ Visual Studio의 키 수준 중 하나는 디버깅 UI입니다. RTVS는 이 강
 
 1. 시작하려면 **R 도구** > **세션** > **다시 설정** 메뉴 명령을 통해 현재 작업 영역을 다시 설정하여 지금까지 수행한 모든 작업을 지웁니다. 기본적으로 대화형 창에서 수행한 모든 작업은 현재 세션에서 생성된 후 디버거에서 사용됩니다. 세션을 다시 설정하면 디버깅 세션이 기존 데이터 없이 시작됩니다. 그러나 **다시 설정** 명령은 *script.R* 원본 파일에 영향을 주지 않습니다. 소스 파일이 작업 영역 외부에서 관리 및 저장되기 때문입니다.
 
-1. 이전 섹션에서 생성된 *script.R* 파일을 사용하여 `pop <-`로 시작하는 줄에 캐럿을 배치한 다음, **F9**를 누르거나 **디버그** > **중단점 설정/해제** 메뉴 명령을 선택하여 해당 줄에서 중단점을 설정합니다. 또는 빨간색 중단점이 나타나는 줄의 왼쪽 여백을 클릭하면 됩니다.
+1. 이전 섹션에서 생성된 *script.R* 파일을 사용하여 `pop <-`로 시작하는 줄에 캐럿을 배치한 다음, **F9**를 누르거나 **디버그** > **중단점 설정/해제** 메뉴 명령을 선택하여 해당 줄에서 중단점을 설정합니다. 또는 빨간색 중단점이 나타나는 줄의 왼쪽 여백을 클릭합니다.
 
     ![편집기에서 중단점 설정](media/getting-started-11-debug1.png)
 

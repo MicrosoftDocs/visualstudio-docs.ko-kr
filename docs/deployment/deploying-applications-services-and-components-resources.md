@@ -1,7 +1,8 @@
 ---
-title: 배포 개요 | Microsoft Docs
-ms.custom: seodec18
-ms.date: 06/22/2018
+title: 폴더, IIS, Azure 또는 다른 대상에 Visual Studio 앱을 배포합니다.
+description: 게시 마법사를 사용하여 앱 게시 옵션 자세히 알아보기
+ms.custom: contperfq1
+ms.date: 08/21/2020
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -13,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173731"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800837"
 ---
-# <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio에서 배포 개요
+# <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>폴더, IIS, Azure 또는 다른 대상에 앱 배포
 
 다른 컴퓨터, 디바이스, 서버 또는 클라우드에 설치할 수 있도록 애플리케이션, 서비스 또는 구성 요소를 배포할 수 있습니다. Visual Studio에서 필요한 배포 유형에 적합한 방법을 선택할 수 있습니다.
 
@@ -35,19 +36,27 @@ Visual Studio 내에서 애플리케이션을 다음 대상에 직접 게시할 
 - [Azure](#azure)
 - [Docker 컨테이너 레지스트리](#docker-container-registry)
 - [폴더](#folder)
-- [사용자 지정 대상(IIS, FTP)](#Custom targets (IIS, FTP))
-
-**게시** 탭에서 기존 게시 프로필을 선택하거나, 기존 게시 프로필을 가져오거나, 여기에 설명된 옵션을 사용하여 새로 만들 수 있습니다. 다양한 앱 형식에 대한 IDE에서 게시 옵션을 둘러보려면 [배포 소개](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
+- [FTP/FTPS 서버](#ftpftps-server)
+- [웹 서버(IIS)](#web-server-iis)
+- [프로필 가져오기](#import-profile)
 
 ## <a name="azure"></a>Azure 
 
+Azure를 선택하면 다음 중에서 선택할 수 있습니다.
+
+- Windows, Linux 또는 Docker 이미지로 실행되는 Azure App Service
+- Azure Container Registry에 배포되는 Docker 이미지
+- Azure Virtual Machine
+
+![Azure 서비스 선택](../deployment/media/quickstart-choose-azure-service.png)
+
 ### <a name="azure-app-service"></a>Azure App Service
 
-[Azure App Service](/azure/app-service/app-service-web-overview)는 개발자가 인프라를 유지 관리하지 않고 확장 가능한 웹 애플리케이션과 서비스를 빠르게 만드는 데 도움이 됩니다. App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되지만 이러한 가상 컴퓨터가 자동으로 관리됩니다. App Service의 각 앱에는 고유한 \*.azurewebsites.net URL이 할당됩니다. 무료 이외의 모든 가격 책정 계층에서는 사용자 지정 도메인 이름을 사이트에 할당할 수 있습니다.
+[Azure App Service](/azure/app-service/app-service-web-overview)는 개발자가 인프라를 유지 관리하지 않고도 확장 가능한 웹 애플리케이션과 서비스를 빠르게 만드는 데 도움이 됩니다. App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되지만 이러한 가상 컴퓨터가 자동으로 관리됩니다. App Service의 각 앱에는 고유한 \*.azurewebsites.net URL이 할당됩니다. 무료 이외의 모든 가격 책정 계층에서는 사용자 지정 도메인 이름을 사이트에 할당할 수 있습니다.
 
 포함하는 App Service에 대한 [가격 책정 계층 또는 계획](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)을 선택하여 App Service의 컴퓨팅 성능을 확인합니다. 가격 책정 계층을 변경하지 않고 여러 웹앱(및 기타 앱 유형)에서 동일한 App Service를 공유하도록 할 수도 있습니다. 예를 들어 개발, 스테이징 및 프로덕션 웹앱을 동일한 App Service에서 함께 호스트할 수 있습니다.
 
-### <a name="when-to-choose-azure-app-service"></a>Azure App Service를 선택해야 하는 경우
+#### <a name="when-to-choose-azure-app-service"></a>Azure App Service를 선택해야 하는 경우
 
 - 인터넷을 통해 액세스할 수 있는 웹 애플리케이션을 배포하려고 합니다.
 - 다시 배포할 필요가 없도록 수요에 따라 웹 애플리케이션을 자동으로 크기를 조정하려고 합니다.
@@ -56,7 +65,18 @@ Visual Studio 내에서 애플리케이션을 다음 대상에 직접 게시할 
 
 > 사용자 고유의 데이터 센터 또는 다른 온-프레미스 컴퓨터에서 Azure App Service를 사용하려는 경우 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)을 사용하면 됩니다.
 
-App Service에 게시에 대한 자세한 내용은 [빠른 시작 - Azure App Service에 게시](quickstart-deploy-to-azure.md) 및 [빠른 시작 - Linux에 ASP.NET Core 게시](quickstart-deploy-to-linux.md)를 참조하세요.
+App Service 게시에 대한 자세한 내용은 다음을 참조하세요.
+- [빠른 시작 - Azure App Service에 게시](quickstart-deploy-to-azure.md) 및 [빠른 시작 - Linux에 ASP.NET Core 게시](quickstart-deploy-to-linux.md)
+- [Azure App Service 및 IIS에서 ASP.NET Core 문제 해결](/aspnet/core/test/troubleshoot-azure-iis)
+
+### <a name="azure-container-registry"></a>Azure Container Registry
+
+[Azure Container Registry](/azure/container-registry/)를 사용하면 모든 유형의 컨테이너 배포를 위해 Docker 컨테이너 이미지와 아티팩트를 프라이빗 레지스트리에 빌드, 저장 및 관리할 수 있습니다.
+
+#### <a name="when-to-choose-azure-container-registry"></a>Azure Container Registry를 선택하는 경우
+
+- 기존 Docker 컨테이너 배포 및 배포 파이프라인이 있는 경우
+- Azure에서 Docker 컨테이너 이미지를 빌드하려는 경우
 
 ### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
@@ -66,7 +86,7 @@ App Service에 게시에 대한 자세한 내용은 [빠른 시작 - Azure App S
 
 자세한 내용은 Azure App Service, Azure Virtual Machines 및 Visual Studio의 사용자 지정 옵션을 통해 배포 대상으로 사용할 수 있는 다른 Azure 서비스 간의 [상세 비교](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/)를 참조하세요.
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>Azure App Virtual Machines를 선택해야 하는 경우
+#### <a name="when-to-choose-azure-virtual-machines"></a>Azure Virtual Machines를 선택해야 하는 경우
 
 - 인터넷을 통해 액세스할 수 있고, 할당된 IP 주소의 수명 주기 동안 모든 권한을 가진 웹 애플리케이션을 배포하려고 합니다.
 - 특수 데이터베이스 시스템, 특정 네트워킹 구성, 디스크 파티션 등의 추가 소프트웨어를 포함하는 컴퓨터 수준 사용자 지정이 서버에 필요합니다.
@@ -99,26 +119,61 @@ App Service에 게시에 대한 자세한 내용은 [빠른 시작 - Azure App S
 
 자세한 내용은 [빠른 시작 - 로컬 폴더에 배포](quickstart-deploy-to-local-folder.md)를 참조하세요.
 
-## <a name="custom-targets-iis-ftp"></a>사용자 지정 대상(IIS, FTP)
+## <a name="ftpftps-server"></a>FTP/FTPS 서버
 
-사용자 지정 대상을 사용하면 Azure App Service, Azure Virtual Machines 또는 로컬 파일 시스템 이외의 대상에 애플리케이션을 배포할 수 있습니다. 파일 시스템 또는 다른 클라우드 서비스의 서버를 포함하여 액세스 권한이 있는 다른 서버(인터넷 또는 인트라넷)에 배포할 수 있습니다. 웹 배포(파일 또는 .ZIP) 및 FTP에서 작동합니다.
+FTP/FTPS 서버를 사용하면 Azure 이외의 서버에 애플리케이션을 배포할 수 있습니다. 파일 시스템 또는 다른 클라우드 서비스의 서버를 포함하여 액세스 권한이 있는 다른 서버(인터넷 또는 인트라넷)에 배포할 수 있습니다. 웹 배포(파일 또는 .ZIP) 및 FTP에서 작동합니다.
 
-사용자 지정 대상을 선택하는 경우 Visual Studio에서 프로필 이름을 묻는 메시지를 표시한 다음 대상 서버 또는 위치, 사이트 이름, 자격 증명 등의 **연결** 정보를 추가로 수집합니다. **설정** 탭에서 다음 동작을 제어할 수 있습니다.
+FTP/FTPS 서버를 선택하는 경우 Visual Studio에서 프로필 이름을 묻는 메시지를 표시한 다음 대상 서버 또는 위치, 사이트 이름, 자격 증명 등의 **연결** 정보를 추가로 수집합니다. **설정** 탭에서 다음 동작을 제어할 수 있습니다.
 
 - 배포하려는 구성
 - 대상에서 기존 파일을 제거할지 여부
 - 게시 중에 미리 컴파일할지 여부
 - 배포에서 App_Data 폴더의 파일을 제외할지 여부
 
-Visual Studio에서 원하는 수의 사용자 지정 배포 프로필을 만들 수 있으므로 다른 설정으로 프로필을 관리할 수 있습니다.
+Visual Studio에서 원하는 수의 FTP/FTPS 배포 프로필을 만들 수 있으므로 다른 설정으로 프로필을 관리할 수 있습니다.
 
-### <a name="when-to-choose-custom-deployment"></a>사용자 지정 배포를 선택해야 하는 경우
+### <a name="when-to-choose-ftpftps-server-deployment"></a>FTP/FTPS 서버 배포를 선택하는 경우
 
 - URL을 통해 액세스할 수 있는 Azure 이외의 공급자에서 클라우드 서비스를 사용하고 있습니다.
 - Visual Studio 내에서 사용하거나 Azure 계정에 직접 연결된 것 이외의 자격 증명을 사용하여 배포하려고 합니다.
 - 배포할 때마다 대상에서 파일을 삭제하려고 합니다.
 
-자세한 내용은 [빠른 시작 - 웹 사이트에 배포](quickstart-deploy-to-a-web-site.md)를 참조하세요.
+## <a name="web-server-iis"></a>웹 서버(IIS)
+
+IIS 웹 서버를 사용하면 Azure 이외의 웹 서버에 애플리케이션을 배포할 수 있습니다. 다른 클라우드 서비스의 서버를 포함하여 액세스 권한이 있는 IIS 서버(인터넷 또는 인트라넷)에 배포할 수 있습니다. 웹 배포 또는 웹 배포 패키지와 함께 작동할 수 있습니다.
+
+IIS 웹 서버를 선택하는 경우 Visual Studio에서 프로필 이름을 묻는 메시지를 표시한 다음 대상 서버 또는 위치, 사이트 이름, 자격 증명 등의 **연결** 정보를 추가로 수집합니다. **설정** 탭에서 다음 동작을 제어할 수 있습니다.
+
+- 배포하려는 구성
+- 대상에서 기존 파일을 제거할지 여부
+- 게시 중에 미리 컴파일할지 여부
+- 배포에서 App_Data 폴더의 파일을 제외할지 여부
+
+Visual Studio에서 원하는 수의 IIS 웹 서버 배포 프로필을 만들 수 있으므로 다른 설정으로 프로필을 관리할 수 있습니다.
+
+### <a name="when-to-choose-web-server-iis-deployment"></a>웹 서버(IIS) 배포를 선택하는 경우
+
+- URL을 통해 액세스할 수 있는 사이트 또는 서비스를 게시하는 데 IIS를 사용하고 있습니다.
+- Visual Studio 내에서 사용하거나 Azure 계정에 직접 연결된 것 이외의 자격 증명을 사용하여 배포하려고 합니다.
+- 배포할 때마다 대상에서 파일을 삭제하려고 합니다.
+
+자세한 내용은 [빠른 시작 - 웹 사이트에 배포](quickstart-deploy-to-a-web-site.md)를 참조하세요. IIS의 ASP.NET Core 문제 해결에 관한 도움말은 [Azure App Service 및 IIS의 ASP.NET Core 문제 해결](/aspnet/core/test/troubleshoot-azure-iis)을 참조하세요.
+
+## <a name="import-profile"></a>프로필 가져오기
+
+IIS 또는 Azure App Service에 게시할 때 프로필을 가져올 수 있습니다. 게시 설정 파일( *\*.publishsettings*)을 사용하여 배포를 구성할 수 있습니다. 게시 설정 파일은 IIS 또는 Azure App Service에서 만들어지거나 수동으로 만들어질 수 있습니다. 그런 다음, Visual Studio로 가져올 수 있습니다.
+
+게시 설정 파일 사용 시, 각 배포 프로필을 수동으로 구성하는 것에 비해 배포 구성이 간소화되며 팀 환경에서의 효율성이 증가합니다.
+
+### <a name="when-to-choose-import-profile"></a>프로필 가져오기를 선택해야 하는 경우
+
+- IIS에 게시하고 있으며 배포 구성을 간소화하려고 합니다.
+- IIS 또는 Azure App Service에 게시하고 있으며, 재사용하거나 팀 멤버가 동일한 서비스에 게시하는 데 필요한 배포 구성을 가속화하려고 합니다.
+
+자세한 내용은
+
+- [게시 설정 가져오기 및 IIS에 배포](tutorial-import-publish-settings-iis.md)
+- [게시 설정 가져오기 및 Azure에 배포](tutorial-import-publish-settings-azure.md)
 
 ## <a name="next-steps"></a>다음 단계
 

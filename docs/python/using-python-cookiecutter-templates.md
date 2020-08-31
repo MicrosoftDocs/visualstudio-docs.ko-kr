@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535150"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801583"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 확장 사용
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)는 템플릿을 검색하고, 템플릿 옵션을 입력하며, 프로젝트와 파일을 만들 수 있는 그래픽 사용자 인터페이스를 제공합니다. Visual Studio 2017 이상에 포함되어 있으며, 이전 버전의 Visual Studio에서는 개별적으로 설치할 수 있습니다.
 
-Cookiecutter에는 Python 3.3 이상(32비트 또는 64비트) 또는 Anaconda 3 4.2 이상(32비트 또는 64비트)이 필요합니다. 적합한 Python 인터프리터를 사용할 수 없는 경우 Visual Studio에서 경고가 표시됩니다. Visual Studio를 실행하는 중에 Python 인터프리터를 설치하는 경우 Cookiecutter 도구 모음에서 **홈** 단추를 클릭하여 새로 설치된 인터프리터를 검색합니다. (일반적으로 환경에 대한 자세한 내용은 [Python 환경](managing-python-environments-in-visual-studio.md)을 참조하세요.)
+Cookiecutter에는 Python 3.3 이상(32비트 또는 64비트) 또는 Anaconda 3 4.2 이상(32비트 또는 64비트)이 필요합니다. 적합한 Python 인터프리터를 사용할 수 없는 경우 Visual Studio에서 경고가 표시됩니다. Visual Studio를 실행하는 중에 Python 인터프리터를 설치하는 경우 Cookiecutter 도구 모음에서 **홈** 단추를 선택하여 새로 설치된 인터프리터를 검색합니다. (일반적으로 환경에 대한 자세한 내용은 [Python 환경](managing-python-environments-in-visual-studio.md)을 참조하세요.)
 
 설치되면 **보기** > **Cookiecutter 탐색기**를 선택하여 다음 창을 엽니다.
 
@@ -99,7 +99,7 @@ Visual Studio와 관련된 *cookiecutter.json* 파일에 추가 메타데이터�
 | --- | --- |
 | 레이블 | 변수 이름 대신 변수의 편집기 위에 표시되는 항목을 지정합니다. |
 | Description | 해당 변수의 기본값 대신 편집 컨트롤에 표시되는 도구 설명을 지정합니다. |
-| URL | URL을 표시하는 도구 설명을 사용하여 레이블을 하이퍼링크로 변경합니다. 하이퍼링크를 클릭하면 사용자의 기본 브라우저를 해당 URL로 엽니다. |
+| URL | URL을 표시하는 도구 설명을 사용하여 레이블을 하이퍼링크로 변경합니다. 하이퍼링크를 선택하면 사용자의 기본 브라우저로 해당 URL을 엽니다. |
 | 선택기 | 변수에 대한 편집기의 사용자 지정을 허용합니다. 현재 지원되는 선택기는 다음과 같습니다.<ul><li>`string`: 문자열에 대한 기본 표준 텍스트 상자입니다.</li><li>`list`: 목록에 대한 기본 표준 콤보 상자입니다.</li><li>`yesno`: 문자열에 대해 `y`와 `n` 중에서 선택하는 콤보 상자입니다.</li><li>`odbcConnection`: 데이터베이스 연결 대화 상자를 호출하는 **...** 단추가 있는 텍스트 상자입니다.</li></ul> |
 
 예제:

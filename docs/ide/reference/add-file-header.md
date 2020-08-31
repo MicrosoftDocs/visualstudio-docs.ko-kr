@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374171"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801323"
 ---
 # <a name="add-file-header"></a>파일 헤더 추가
 
@@ -34,12 +34,12 @@ ms.locfileid: "86374171"
 
 2. EditorConfig 파일에 다음 규칙을 추가합니다. *file_header_template*.
 
-3. 규칙 값을 적용하려는 헤더 텍스트와 같게 설정합니다.
+3. 규칙 값을 적용하려는 헤더 텍스트와 같게 설정합니다. `{fileName}`을 파일 이름의 자리 표시자로 사용할 수 있습니다.
 
     ![EditorConfig 파일 헤더 규칙](media/add-file-header-rule.png)
 
-> [!NOTE]
-> EditorConfig에 명시적 multiline을 사용할 수 없으며 Unix 줄 바꿈 문자를 사용하여 새 줄을 삽입해야 합니다.
+    > [!NOTE]
+    > EditorConfig에 명시적 multiline을 사용할 수 없으며 Unix 줄 바꿈 문자를 사용하여 새 줄을 삽입해야 합니다.
 
 4. 또는 C# 또는 Visual Basic 파일의 첫 번째 줄에 캐럿을 추가합니다.
 

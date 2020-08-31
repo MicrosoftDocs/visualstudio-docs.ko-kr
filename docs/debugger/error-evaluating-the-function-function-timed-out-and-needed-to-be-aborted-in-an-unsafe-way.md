@@ -1,5 +1,5 @@
 ---
-title: 오류 - &#39;function&#39; 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했음 | Microsoft Docs
+title: 오류 - &apos;function&apos; 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 3d1b5860729b55f1c4ede253cd0f881e0ab56fcc
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386721"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706557"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>오류: &#39;function&#39; 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다.
 

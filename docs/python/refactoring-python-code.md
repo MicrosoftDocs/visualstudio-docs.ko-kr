@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520564"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801336"
 ---
 # <a name="refactor-python-code"></a>Python 코드 리팩터링
 
@@ -71,7 +71,7 @@ Visual Studio는 모듈에서 실제로 정의되지 않은 멤버(예: 다른 �
 
 코드를 작성할 때 전혀 사용되지 않는 모듈에 대해 `import` 문으로 끝나는 것은 쉽습니다. Visual Studio는 코드를 분석하므로 문이 나타나는 위치 아래의 범위 내에서 가져온 이름을 사용하는지 확인하여 `import` 문이 필요한지를 자동으로 결정할 수 있습니다.
 
-편집기의 아무 곳이나 마우스 오른쪽 단추로 클릭하고 **모든 범위** 또는 **현재 범위**에서 제거할 수 있는 옵션을 제공하는 **가져오기 제거**를 선택합니다.
+편집기의 아무 곳이나 마우스 오른쪽 단추로 클릭하고 **가져오기 제거**를 선택해 **모든 범위** 또는 **현재 범위**를 제거합니다.
 
 ![가져오기 제거 메뉴](media/code-refactor-remove-imports-1.png)
 

@@ -1,7 +1,9 @@
 ---
-title: 글꼴 및 색 변경
-ms.date: 06/01/2020
+title: 접근성 옵션의 테마, 글꼴, 텍스트, 대비 변경
+description: 사용 편의성과 및 접근성 옵션에 맞춰 Visual Studio의 색상 테마, 글꼴 색, 텍스트 크기, 추가 대비 색상을 변경하는 방법을 알아보세요.
+ms.date: 08/20/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb2373117b382cb19f374581ada45a5732b9c4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284690"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801440"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>방법: Visual Studio에서 글꼴 및 색 변경
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>방법: Visual Studio에서 글꼴, 색상, 테마 변경
 
-여러 가지 방법으로 Visual Studio에서 글꼴과 색을 변경할 수 있습니다. 예를 들어 기본 파란색 테마를 짙은 테마("어둡게 모드"라고도 함)로 변경할 수 있습니다. 그리고 기본 글꼴 및 텍스트 크기를 다른 글꼴 및 크기로 변경할 수 있습니다.
+여러 가지 방법으로 Visual Studio에서 글꼴과 색을 변경할 수 있습니다. 예를 들어, 파란색 기본 테마를 어두운 테마("어두운 테마" 참조)로 변경할 수 있습니다. 사용자의 요구에 가장 적합하도록 추가 대비 테마를 선택할 수도 있습니다. IDE와 코드 편집기에서 기본 글꼴과 텍스트 크기 또한 변경할 수 있습니다.
 
 ## <a name="change-the-color-theme"></a>색 테마 변경
 
@@ -122,5 +124,6 @@ Visual Studio에서 IDE 프레임 및 도구 창의 색 테마를 변경하는 �
 
 ## <a name="see-also"></a>참조
 
-- [코드 편집기 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [방법: Visual Studio에서 편집기의 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Visual Studio 코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Visual Studio IDE 및 편집기 개인 설정](../ide/quickstart-personalize-the-ide.md)

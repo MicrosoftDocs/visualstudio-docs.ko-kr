@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235201"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800764"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio의 기능
 
@@ -90,7 +90,7 @@ Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 디바이스](h
 
 ## <a name="connect-to-databases"></a>데이터베이스에 연결
 
-**서버 탐색기**를 사용하면 원격으로, 로컬로, Azure, Salesforce.com, Office 365 및 웹 사이트에서 SQL Server 인스턴스와 자산을 찾아보고 관리할 수 있습니다. **서버 탐색기**를 열려면 주 메뉴에서 **보기** > **서버 탐색기**를 선택합니다. 서버 탐색기 사용에 대한 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)를 참조하세요.
+**서버 탐색기**를 사용하면 로컬이나 원격으로, 또는 Azure, Salesforce.com, Microsoft 365 및 웹 사이트에서 SQL Server 인스턴스와 자산을 찾아보고 관리할 수 있습니다. **서버 탐색기**를 열려면 주 메뉴에서 **보기** > **서버 탐색기**를 선택합니다. 서버 탐색기 사용에 대한 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)를 참조하세요.
 
 [SSDT(SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt)는 SQL Server, Azure SQL Database 및 Azure SQL Data Warehouse를 위한 강력한 개발 환경입니다. 이 도구를 사용하면 데이터베이스를 빌드, 디버그, 유지 관리 및 리팩터링할 수 있습니다. 데이터베이스 프로젝트에 대해 작업하거나, 온-프레미스 또는 오프-프레미스로 연결된 데이터베이스 인스턴스에 대해 직접 작업할 수 있습니다.
 
