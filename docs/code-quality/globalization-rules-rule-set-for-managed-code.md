@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5502989e3866cb28d05e36d4c88e38574e5987c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587604"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219675"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>관리 코드에 대한 전역화 규칙 규칙 집합
 
@@ -28,7 +28,8 @@ Microsoft 전역화 규칙 규칙 집합을 사용 하 여 응용 프로그램�
 |[CA1304](../code-quality/ca1304.md)|CultureInfo를 지정하세요.|
 |[CA1305](../code-quality/ca1305.md)|IFormatProvider를 지정하세요.|
 |[CA1306](../code-quality/ca1306.md)|데이터 형식에 맞는 로캘을 설정하세요.|
-|[CA1307](../code-quality/ca1307.md)|StringComparison 지정하세요.|
+|[CA1307](../code-quality/ca1307.md)|명확성을 위해 StringComparison 지정|
 |[CA1308](../code-quality/ca1308.md)|대문자로 문자열을 정규화하세요.|
 |[CA1309](../code-quality/ca1309.md)|서수 StringComparison을 사용하세요.|
+|[CA1310](../code-quality/ca1310.md)|정확성을 위해 StringComparison 지정|
 |[CA2101](../code-quality/ca2101.md)|P/Invoke 문자열 인수에 대해 마샬링을 지정하십시오.|
