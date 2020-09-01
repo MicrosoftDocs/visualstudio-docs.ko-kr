@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 983a5d91fee40245f6a7d6877ccf38e666fa586e
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114156"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284420"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio의 복합 패턴
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "88114156"
 
 - [터치식 입력](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>데이터 시각화
+## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a> 데이터 시각화
 
 ### <a name="overview"></a>개요
  차트는 의사 결정을 개선 하기 위해 데이터를 집계 하 고 시각화 하는 시각적 방법입니다. 사용자가 많은 데이터를 사용 하는 데 도움이 될 수 있지만 중요 한 주의가 필요한 작업을 볼 수 있습니다.
@@ -70,7 +70,7 @@ ms.locfileid: "88114156"
 
 ### <a name="other-charting-considerations"></a>기타 차트 고려 사항
 
-#### <a name="color"></a>색
+#### <a name="color"></a>색상
  Visual Studio에서 사용 하도록 정의 된 차트 색의 특정 색상표가 있습니다. 색상표는 주요 색의 주요 형식에 액세스할 수 있으며 색의 좁은 조각으로 사용 되는 경우에도 색을 구분할 수 있습니다. 이러한 색은 UI의 모든 종류의 차트 또는 그래프에 대해 조합 하 여 사용할 수 있습니다. 고유한 색이 많이 필요 하지 않은 경우에는 7 가지 색을 모두 사용할 필요가 없습니다. 이러한 색은 모든 전경 요소와 함께 사용 하도록 설계 되지 않았으므로 이러한 색 위에 텍스트나 문자 모양을 두지 않습니다. 이러한 색은 하드 코딩 되 고 **도구 > 옵션** 에서 사용자 지정에 노출 되어야 합니다 ( [최종 사용자를 위한 색 노출](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)참조).
 
 |[|Hex|RGB|
@@ -83,7 +83,7 @@ ms.locfileid: "88114156"
 |![견본 79D7F2](../../extensibility/ux-guidelines/media/0711-79d7f2.png "0711_79D7F2")|#79D7F2|121215242|
 |![견본 B5B5B5](../../extensibility/ux-guidelines/media/0711-b5b5b5.png "0711_B5B5B5")|#B5B5B5|181181181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>개체 내 UI 및 보기
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a> 개체 내 UI 및 보기
  이 섹션에서는 코드 피킹 (peeking)이 라고도 하는 보기에 대 한 컨텍스트를 제공 합니다 .이는 Visual Studio에 고유한 온-개체 UI 형식입니다.
 
 ### <a name="overview"></a>개요
@@ -249,7 +249,7 @@ ms.locfileid: "88114156"
 
 - 편집 가능 또는 사용자 상호 작용 초대로 표시 되는 콘텐츠를 가리키기로 표시 **하지 않습니다** . 이 동작은 사용자가 커서를 세부 내용 위로 이동 하려고 할 때 사용자에 게 불편 수 있습니다. 도구 설명의 표준 동작은 커서를 생성 한 마스터 내용 위에 더 이상 없는 경우 즉시 해제 하는 것입니다.
 
-## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>선택 모델
+## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a> 선택 모델
 
 ### <a name="overview"></a>개요
  선택 모델은 사용자 인터페이스 내에서 원하는 하나 이상의 개체에 대 한 작업을 표시 하 고 확인 하는 데 사용 되는 메커니즘입니다. 이 항목에서는 Visual Studio 문서 편집기 내에서의 선택 상호 작용 패턴, 텍스트 편집기, 디자인 화면 및 모델링 화면에 대해 설명 합니다.
@@ -272,7 +272,7 @@ ms.locfileid: "88114156"
 
 - 따로
 
-- Azure 지역
+- 지역
 
 #### <a name="scope"></a>범위
  가장 중요 한 선택 구성 요소는 사용자가 작업 중인 창 (활성화)과 포커스가 있는 위치 (선택)를 알고 있는지 확인 하는 것입니다. Visual Studio는 Windows에서 창 관리 기능을 확장 하지만 활성화 체계는 동일 합니다. 창과 상호 작용 하면 창으로 포커스가 이동 합니다. Visual Studio에는 두 가지 활성화 표시기가 있습니다. 하나는 문서 창을 위한 것이 고 다른 하나는 도구 창입니다.
@@ -392,7 +392,7 @@ ms.locfileid: "88114156"
 
  **두 개의 보조 선택 항목을 사용 하는 기본 선택**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>그래픽 개체 선택 모양
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> 그래픽 개체 선택 모양
  선택 핸들은 개체의 경계 상자 주위에서 사각형 패턴으로 그린 사각형입니다. 아래 차트에서는 그래픽 개체에 포함 될 수 있는 다양 한 상태의 예를 핸들, 크기 조정 및 내부 편집 모양으로 보여 줍니다. 핸들 크기는 **Getsystemmetrics** API를 사용 하 여 창 테두리 및 가장자리 메트릭에 연결 해야 합니다.
 
 |          시스템 상태          |  모양   |                                                                  시각적 정보                                                                  |
@@ -437,11 +437,11 @@ ms.locfileid: "88114156"
 
  목록에서 선택 항목은 인접, 비연속 또는 지역이 될 수 있습니다. 여러 항목을 선택할 수 있는 경우 인접 및 비연속 선택은 항상 지원 해야 하지만 영역 (box) 선택 항목에 대 한 지원은 선택 사항입니다. 지역 선택은 목록 본문의 공백에서 끌어서 시작 됩니다.
 
-| Object | 선택  |
+| 개체 | 선택  |
 |--------|------------|
 |  목록  | 인접해 |
 |  목록  |  따로  |
-|  목록  |   Azure 지역   |
+|  목록  |   지역   |
 
  목록에서 한 번을 클릭 하면 클릭이 발생 한 행이 선택 됩니다. 사용자가 내부 편집을 지 원하는 목록 셀을 클릭 하는 경우 내부 편집을 위해 셀도 즉시 활성화 됩니다. 그렇지 않으면 전체 행이 즉시 선택 되 고 강조 표시 됩니다.
 
@@ -473,18 +473,18 @@ ms.locfileid: "88114156"
 
 - F2 키는 현재 선택 된 셀에 대 한 내부 편집을 활성화 합니다.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>유지 및 설정 저장
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a> 유지 및 설정 저장
 
 ### <a name="overview"></a>개요
  Visual Studio의 각 소프트웨어 구성 요소는 일반적으로 자신의 상태와 지 속성을 담당 하지만, Visual Studio는 창 크기 및 위치와 같은 일부 경우에 설정을 자동으로 저장 합니다. 다음 표에서는 자동으로 저장 된 설정 및 명시적 사용자 또는 프로그래밍 된 작업을 수행 해야 하는 설정의 조합입니다.
 
-|Object|저장할 내용|저장 시기|저장 위치|
+|개체|저장할 내용|저장 시기|저장 위치|
 |------------|------------------|------------------|-------------------|
 |선택할 수 있는 개체 (예: 코드 줄)|코드 줄에 중단점 설정<br /><br /> 코드 줄과 연결 된 사용자 바로 가기입니다.|프로젝트가 저장 되는 경우|프로젝트에 대 한 **사용자 옵션 (.suo)** 파일|
 |대화 상자|이동 된 경우 대화 상자의 위치입니다.<br /><br /> 사용자가 대화 상자에서 마지막으로 사용한 뷰입니다.|대화 상자를 닫을 때<br /><br /> Visual Studio 세션이 종료 되는 경우|메모리<br /><br /> **HKEY_Current_User** 의 레지스트리|
 |시간 범위|창의 크기 및 위치|창이 닫힐 때<br /><br /> Visual Studio 모드가 변경 되는 경우<br /><br /> Visual Studio 세션이 종료 되는 경우|프로젝트에 대 한 **사용자 옵션 (.suo)** 파일<br /><br /> 창 설정에 대 한 사용자 지정 옵션 파일|
 |문서|문서의 현재 선택 영역입니다.<br /><br /> 문서 보기<br /><br /> 사용자가 방문한 마지막 여러 위치|문서를 저장 하는 경우|프로젝트에 대 한 **사용자 옵션 (.suo)** 파일|
-|Project|파일에 대 한 참조<br /><br /> 디스크에 있는 디렉터리에 대 한 참조<br /><br /> 다른 소프트웨어에 대 한 참조<br /><br /> 구성 요소<br /><br /> 프로젝트 자체에 대 한 상태 정보|프로젝트가 저장 되는 경우|프로젝트 파일|
+|프로젝트|파일에 대 한 참조<br /><br /> 디스크에 있는 디렉터리에 대 한 참조<br /><br /> 다른 소프트웨어에 대 한 참조<br /><br /> 구성 요소<br /><br /> 프로젝트 자체에 대 한 상태 정보|프로젝트가 저장 되는 경우|프로젝트 파일|
 |해결 방법|프로젝트에 대 한 참조<br /><br /> 파일에 대 한 참조|프로젝트 또는 솔루션을 저장 하는 경우|**솔루션 (.sln)** 파일|
 |**도구 > 옵션** 의 설정|키보드 사용자 지정<br /><br /> 도구 모음 사용자 지정<br /><br /> 색 구성표|**도구 > 옵션** 대화 상자를 닫을 때<br /><br /> Visual Studio 세션이 종료 되는 경우|**HKEY_Current_User** 의 레지스트리|
 
@@ -508,7 +508,7 @@ ms.locfileid: "88114156"
 #### <a name="profile-specific-layouts"></a>프로필 관련 레이아웃
  각 프로필에는 특정 개발자 가상 사용자에 게 친숙 한 방식으로 구성 된 도구 창 레이아웃이 포함 되어 있습니다 (Visual C++ 개발자는 IDE의 왼쪽에 **솔루션 탐색기** 를 표시 하 고, c # 개발자는 오른쪽에 **솔루션 탐색기** 을 볼 것으로 간주 합니다. 사용자가 시작 시 프로필을 선택 하면 프로필 관련 창 레이아웃이 로드 됩니다. 패키지 작성자는 고객의 경험에 가장 적합 한 창 레이아웃을 결정 해야 합니다. 그러면 사용자가 창 구성에 대 한 변경 내용이 유지 됩니다.
 
-## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>터치식 입력
+## <a name="touch-input"></a><a name="BKMK_TouchInput"></a> 터치식 입력
  사용자는 점점 더 많은 터치 장치에서 Microsoft 개발 제품을 사용 하 고 있습니다. 그러나 터치 장치에서 개발 도구를 사용 하기 어렵게 하는 장벽을 있습니다. 사용자는 제품이 안정적이 고 정확한 터치 환경을 제공할 것으로 간주 합니다. 이러한 지침은 통합 하는 터치 기능을 결정 하 고 Visual Studio 및 관련 제품 간에 일관 된 터치 환경을 제공 하기 위한 것입니다.
 
 ### <a name="levels-of-experience"></a>환경 수준
@@ -522,13 +522,13 @@ ms.locfileid: "88114156"
 
 ||기본 환경|최적화 된 환경|높은 환경|
 |-|----------------------|--------------------------|-------------------------|
-|**사용자가 다음을 수행할 수 있습니다.**|데드 종료 없이 코드 및 솔루션/프로젝트 수준 읽기 수정|유지 관리, 리팩터링 및 탐색 작업 수행|안정적이 고 직관적 이며 자연스럽 게 자연스럽 게 운영 됩니다.|
-|**편집기**|터치 패닝 및 선택<br /><br /> 점프 하 고 누를 때 스크롤 막대 터치|확대/축소<br /><br /> 빠른 스크롤<br /><br /> 선택<br /><br /> 상황에 맞는 메뉴의 간편한 사용||
-|**최상위 도구 창**|패닝 나열<br /><br /> 항목 선택<br /><br /> 점프 하 고 누를 때 스크롤 막대 터치|간편한 항목 스크롤 및 선택||
-|**기간 이동**||창 크기 조정<br /><br /> 빠른 액세스||
-|**문서 웰**||열린 파일 간의 간편한 탐색||
-|**제스처**||일반 제스처가 IDE 전체에서 작동 하는지 확인|제스처 기반 작업<br /><br /> 끌어서 놓기 및 디자이너 지원|
-|**기타 고려 사항**|||사용자 지정 화면 키보드|
+|사용자가 다음을 수행할 수 있습니다.|데드 종료 없이 코드 및 솔루션/프로젝트 수준 읽기 수정|유지 관리, 리팩터링 및 탐색 작업 수행|안정적이 고 직관적 이며 자연스럽 게 자연스럽 게 운영 됩니다.|
+|편집기|터치 패닝 및 선택<br /><br /> 점프 하 고 누를 때 스크롤 막대 터치|확대/축소<br /><br /> 빠른 스크롤<br /><br /> 선택<br /><br /> 상황에 맞는 메뉴의 간편한 사용||
+|최상위 도구 창|패닝 나열<br /><br /> 항목 선택<br /><br /> 점프 하 고 누를 때 스크롤 막대 터치|간편한 항목 스크롤 및 선택||
+|기간 이동||창 크기 조정<br /><br /> 빠른 액세스||
+|문서 웰||열린 파일 간의 간편한 탐색||
+|제스처||일반 제스처가 IDE 전체에서 작동 하는지 확인|제스처 기반 작업<br /><br /> 끌어서 놓기 및 디자이너 지원|
+|기타 고려 사항|||사용자 지정 화면 키보드|
 
 #### <a name="gestures"></a>제스처
  제스처는 사용자에 게 더 복잡 한 상호 작용을 필요로 할 수 있는 명령의 바로 가기를 제공 합니다. [데스크톱 응용 프로그램에 대 한 일반적인 터치 제스처](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)에 대 한 Windows 지침을 참조 하 고 패닝 및 확대/축소와 같은 간단한 제스처를 비롯 한 대부분의 제스처에 대해이 지침을 따르세요.

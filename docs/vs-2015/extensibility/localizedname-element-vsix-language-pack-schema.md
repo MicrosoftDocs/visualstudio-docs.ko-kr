@@ -8,17 +8,17 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 64d8430dbcf563ca232d1b8d850678925770219f
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114184"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284354"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>LocalizedName 요소(VSIX 언어 팩 스키마)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-필수 사항입니다. 설치할 확장의 지역화 된 이름입니다.  
+필수 요소. 설치할 확장의 지역화 된 이름입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,59 +31,33 @@ ms.locfileid: "88114184"
   
 ### <a name="attributes"></a>특성  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
 |없음||  
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |없음||  
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|[VSIX LanguagePack 요소](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|필수 사항입니다. VSIX 언어 팩의 루트 요소를 제공 합니다.|  
+|[VSIX LanguagePack 요소](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|필수 요소. VSIX 언어 팩의 루트 요소를 제공 합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
- 필수 사항입니다. 대상 언어의 언어 팩 이름입니다.  
+ 필수 요소. 대상 언어의 언어 팩 이름입니다.  
   
 ## <a name="element-information"></a>요소 정보  
-
-:::row:::
-    :::column:::
-        네임스페이스
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Schema Name
-    :::column-end:::
-    :::column:::
-        VSIX 언어 팩 스키마
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        유효성 검사 파일
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        비워 둘 수 있음
-    :::column-end:::
-    :::column:::
-        해당 없음
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    네임스페이스    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Schema Name   |                 VSIX 언어 팩 스키마                 |
+| 유효성 검사 파일 |                VSIXLanguagePackSchema                 |
+|  비워 둘 수 있음   |                      해당 사항 없음                       |
   
 ## <a name="see-also"></a>참고 항목  
  [VSX 언어 팩 스키마 참조](../extensibility/vsx-language-pack-schema-reference.md)   

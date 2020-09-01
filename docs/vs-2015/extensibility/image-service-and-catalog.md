@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114125"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284371"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ ms.locfileid: "88114125"
 </ImageManifest>  
 ```  
 
- **기호만**  
+ **Symbols**  
 
  가독성 및 유지 관리를 돕기 위해 이미지 매니페스트는 특성 값에 기호를 사용할 수 있습니다. 기호는 다음과 같이 정의 됩니다.  
 
@@ -118,7 +118,7 @@ ms.locfileid: "88114125"
 
  일부 기호는 모든 매니페스트에 대해 미리 정의 됩니다. 이러한 속성은 또는 요소의 Uri 특성에 사용 \<Source> 하 여 \<Import> 로컬 컴퓨터에서 경로를 참조할 수 있습니다.  
 
-|**Symbol**|**설명**|  
+|**기호**|**설명**|  
 |-|-|  
 |CommonProgramFiles|% CommonProgramFiles% 환경 변수의 값입니다.|  
 |LocalAppData|% LocalAppData% 환경 변수의 값입니다.|  
@@ -128,7 +128,7 @@ ms.locfileid: "88114125"
 |시스템|Windows\System32 폴더|  
 |I|% WinDir% 환경 변수의 값입니다.|  
 
- **Image**  
+ **이미지**  
 
  \<Image>요소는 모니커가 참조할 수 있는 이미지를 정의 합니다. 함께 사용 된 GUID 및 ID는 이미지 모니커를 형성 합니다. 이미지의 모니커는 전체 이미지 라이브러리에서 고유 해야 합니다. 하나 이상의 이미지가 지정 된 모니커를 포함 하는 경우 라이브러리를 빌드하는 동안 발생 한 첫 번째 이미지는 유지 되는 것입니다.  
 
@@ -141,7 +141,7 @@ ms.locfileid: "88114125"
 </Image>  
 ```  
 
-|**특성**|**정의**|  
+|**Attribute**|**정의**|  
 |-|-|  
 |GUID|하다 이미지 모니커의 GUID 부분입니다.|  
 |ID|하다 이미지 모니커의 ID 부분입니다.|  
@@ -157,14 +157,16 @@ ms.locfileid: "88114125"
  </Source>  
 ```  
 
-|**특성**|**정의**|  
-|-|-|  
-| URI | 하다 이미지를 로드할 수 있는 위치를 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -Application:///authority를 사용 하는 [PACK URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일의 경로 |
-| 배경  | 필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *광원:* 원본은 밝은 배경에 사용할 수 있습니다.<br /><br /> <em>어둡게:</em> 원본은 어두운 배경에서 사용할 수 있습니다.<br /><br /> *System.windows.forms.systeminformation.highcontrast:* 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 소스는 고대비 모드에서 짙은 배경으로 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*, *어둡게*, *HighContrastLight*또는 *HighContrastDark*인 경우 소스의 색은 반전 되지 않습니다. 배경이 생략 되거나 *system.windows.forms.systeminformation.highcontrast*로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Attribute** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **정의**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      URI      |                                                                                                                                                                                                                                                                                                               하다 이미지를 로드할 수 있는 위치를 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -Application:///authority를 사용 하는 [PACK URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)<br />-절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일의 경로                                                                                                                                                                                                                                                                                                               |
+|  배경   | 필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *광원:* 원본은 밝은 배경에 사용할 수 있습니다.<br /><br /> <em>어둡게:</em> 원본은 어두운 배경에서 사용할 수 있습니다.<br /><br /> *System.windows.forms.systeminformation.highcontrast:* 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 소스는 고대비 모드에서 짙은 배경으로 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*, *어둡게*, *HighContrastLight*또는 *HighContrastDark*인 경우 소스의 색은 반전 되지 않습니다. 배경이 생략 되거나 *system.windows.forms.systeminformation.highcontrast*로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  요소에는 \<Source> 다음과 같은 선택적 하위 요소 중 하나만 있을 수 있습니다.  
 
-|**요소**|**특성 (모두 필수)**|**정의**|  
+|**Element**|**특성 (모두 필수)**|**정의**|  
 |-|-|-|  
 |\<Size>|값|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|  
 |\<SizeRange>|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|  
@@ -177,9 +179,9 @@ ms.locfileid: "88114125"
 <NativeResource Type="type" ID="int" />  
 ```  
 
-|**특성**|**정의**|  
+|**Attribute**|**정의**|  
 |-|-|  
-|Type|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|  
+|유형|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|  
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|  
 
  **ImageList**  
@@ -193,7 +195,7 @@ ms.locfileid: "88114125"
  </ImageList>  
 ```  
 
-|**특성**|**정의**|  
+|**Attribute**|**정의**|  
 |-|-|  
 |GUID|하다 이미지 모니커의 GUID 부분입니다.|  
 |ID|하다 이미지 모니커의 ID 부분입니다.|  
@@ -569,7 +571,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - 각 **ContainedImage**의 GUID를 $ (ImageCatalogGuid)로 바꾸고 각 **ContainedImage**의 ID를 $ ()로 바꾸고 \<moniker> External = "True" 특성을 각 **ContainedImage** 에 추가 합니다.  
 
-       - \<moniker>이미지와 일치 하지만 "Knownmoniker"와 일치 하는 **Knownmoniker** 로 바꾸어야 합니다. 이름에서 제거 되었습니다.  
+       - \<moniker> 이미지와 일치 하지만 "Knownmoniker"와 일치 하는 **Knownmoniker** 로 바꾸어야 합니다. 이름에서 제거 되었습니다.  
 
    - \Microsoft.VisualStudio.ImageCatalog.imagemanifest에 대 한 <가져오기 매니페스트 = "$ (ManifestFolder) \\<상대 설치 디렉터리 경로를 \> \> 섹션의 맨 위에 추가 \<Symbols> 합니다.  
 
