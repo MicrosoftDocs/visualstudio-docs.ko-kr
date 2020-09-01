@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893426"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219779"
 ---
 # <a name="use-code-analyzers"></a>코드 분석기 사용
 
@@ -102,6 +102,9 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 - 모든 분석기 규칙의 규칙 심각도를 설정 합니다.
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> 한 번에 여러 분석기 규칙을 구성 하는 항목은 *기본적으로 사용*되는 규칙에만 적용 됩니다. 분석기 패키지에서 기본적으로 사용 하지 않도록 설정 된 것으로 표시 된 분석기 규칙은 명시적 항목을 통해 사용 하도록 설정 해야 합니다 `dotnet_diagnostic.<rule ID>.severity = <severity>` .
 
 특정 규칙 ID에 적용 되는 항목이 여러 개 있는 경우 해당 항목을 선택 하는 우선 순위는 다음과 같습니다.
 
@@ -392,7 +395,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)

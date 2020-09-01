@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189478"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219727"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -68,14 +68,14 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1063](ca1063.md) | IDisposable을 올바르게 구현 하십시오.
 [CA1064](ca1064.md) | 예외는 public이어야 합니다.
 [CA1065](ca1065.md) | 예기치 않은 위치에서 예외를 발생시키지 마십시오.
-[CA1066](ca1066.md) | 형식은 {0} Equals를 재정의\<하기 때문에 IEquatable T>를 구현 해야 합니다.
-[CA1067](ca1067.md) | IEquatable\<T를 구현할 때 개체 Equals (개체)를 재정의>
+[CA1066](ca1066.md) | 형식은 {0} \<T> Equals를 재정의 하기 때문에 IEquatable을 구현 해야 합니다.
+[CA1067](ca1067.md) | IEquatable를 구현할 때 개체 Equals (object)를 재정의 합니다.\<T>
 [CA1068](ca1068.md) | CancellationToken 매개 변수는 마지막에 위치해야 합니다.
 CA1200 | 접두사를 사용하여 cref 태그 사용 방지
 [CA1303](ca1303.md) | 리터럴을 지역화된 매개 변수로 전달하지 마세요.
 [CA1304](ca1304.md) | CultureInfo를 지정하세요.
 [CA1305](ca1305.md) | IFormatProvider를 지정하세요.
-[CA1307](ca1307.md) | StringComparison 지정하세요.
+[CA1307](ca1307.md) | 명확성을 위해 StringComparison 지정
 [CA1308](ca1308.md) | 대문자로 문자열을 정규화하세요.
 [CA1309](ca1309.md) | 서 수 문자열 비교 사용
 [CA1401](ca1401.md) | P/Invoke는 노출되지 않아야 합니다.
@@ -119,7 +119,7 @@ CA1826 | 인덱싱할 수 있는 컬렉션에 대해 열거 가능한 메서드�
 [CA2000](ca2000.md) | 범위를 벗어나기 전에 개체를 삭제하세요.
 [CA2002](ca2002.md) | 약한 ID를 가진 개체를 잠그지 마십시오.
 [CA2007](ca2007.md) | 대기 작업에서 System.threading.tasks.task.configureawait를 호출 하는 것이 좋습니다.
-CA2008 | TaskScheduler를 전달 하지 않고 작업을 만들지 않습니다.
+[CA2008](ca2008.md) | TaskScheduler를 전달 하지 않고 작업을 만들지 않습니다.
 CA2009 | ImmutableCollection 값에 대해 ToImmutableCollection를 호출 하지 마십시오.
 CA2010 | 항상 PreserveSigAttribute로 표시 된 메서드에서 반환 된 값을 사용 합니다.
 [CA2100](ca2100.md) | 보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.
