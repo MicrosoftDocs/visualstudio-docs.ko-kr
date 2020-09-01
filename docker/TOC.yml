@@ -1,2 +1,34 @@
-- name: 인덱스
-  href: index.md
+- name: Docker
+  expanded: true
+  items:
+    - name: VS Code 사용자를 위한 Docker 소개
+      expanded: true
+      items:
+        - name: 시작
+          href: tutorials/docker-tutorial.md
+        - name: '1부: 애플리케이션'
+          href: tutorials/your-application.md
+        - name: '2부: 앱 업데이트'
+          href: tutorials/update-your-app.md
+        - name: '3부: 앱 공유'
+          href: tutorials/share-your-app.md
+        - name: '4부: 데이터베이스 유지'
+          href: tutorials/persist-your-data.md
+        - name: '5부: 바인드 탑재 사용'
+          href: tutorials/use-bind-mounts.md
+        - name: '6부: 다중 컨테이너 앱'
+          href: tutorials/multi-container-apps.md
+        - name: '7부: Docker Compose 사용'
+          href: tutorials/use-docker-compose.md
+        - name: '8부: 이미지 빌드 모범 사례'
+          href: tutorials/image-building-best-practices.md
+        - name: '9부: 클라우드에 배포'
+          href: tutorials/deploy-to-cloud.md
+        - name: 다음 작업
+          href: tutorials/whats-next.md
+        - name: 원본
+          items:
+            - name: 예
+              href: 'https://github.com/docker/awesome-compose'
+            - name: Docker ACI 통합
+              href: 'https://github.com/docker/aci-integration-beta/'
