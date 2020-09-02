@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249187"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>방법: 관리 코드에 대 한 라이브 코드 분석 범위 구성
@@ -43,7 +43,7 @@ Visual Studio는 편집기에서 소스 파일을 편집 하는 동안 *백그�
 
 ## <a name="custom-analysis-scope"></a>사용자 지정 분석 범위
 
-대부분의 고객 시나리오와 솔루션에 대 한 최적의 사용자 환경, 기능 및 성능을 위해 각 백그라운드 분석의 기본 범위가 조정 되었습니다. 그러나 고객이 배경 분석을 낮추거나 늘리기 위해이 범위를 사용자 지정 하려는 경우가 있습니다. 예:
+대부분의 고객 시나리오와 솔루션에 대 한 최적의 사용자 환경, 기능 및 성능을 위해 각 백그라운드 분석의 기본 범위가 조정 되었습니다. 그러나 고객이 배경 분석을 낮추거나 늘리기 위해이 범위를 사용자 지정 하려는 경우가 있습니다. 예를 들면 다음과 같습니다.
 
 - 절전 모드: 사용자가 노트북 배터리를 실행 하는 경우 더 긴 배터리 수명 동안 전원 소비를 최소화 하는 것이 좋습니다. 이 시나리오에서는 백그라운드 분석을 최소화 하려고 합니다.
 - 주문형 코드 분석: 사용자가 라이브 분석기 실행을 해제 하 고 요청 시 수동으로 코드 분석을 실행 하는 것을 선호 하는 경우 백그라운드 분석을 최소화 하려고 합니다. [방법: 요청 시 수동으로 코드 분석 실행을](./how-to-run-code-analysis-manually-for-managed-code.md)참조 하세요.
@@ -74,7 +74,7 @@ Visual Studio에서 200 MB 이하의 시스템 메모리를 사용할 수 있음
 
 ![경고 텍스트 분석 범위 최소화](./media/fsa_alert.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [자동 기능 일시 중단](./automatic-feature-suspension.md)
 - [절전 모드 기능 요청](https://github.com/dotnet/roslyn/issues/38429)

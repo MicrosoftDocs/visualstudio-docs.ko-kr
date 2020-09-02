@@ -14,49 +14,49 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b26a638c1ac8bd808bae6fa78aaa3cc24dedede5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151964"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-콜백 프로시저 찾기, 위치 시도의 진행률을 보고 하기 위한 사용자 인터페이스를 지원할 DIA 기호에서 받습니다.  
+DIA 기호 찾기 프로시저에서 콜백을 수신 하므로 사용자 인터페이스를 사용 하 여 위치 시도의 진행 상황을 보고할 수 있습니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaLoadCallback : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 메서드는이 인터페이스에 의해 노출 됩니다.  
+ 이 인터페이스에 의해 노출 되는 메서드는 다음과 같습니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|.Exe 파일에서을 디버그 디렉터리를 찾을 때 호출 됩니다.|  
-|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|후보.dbg 파일 열린 때 호출 됩니다.|  
-|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|후보.pdb 파일을 연 경우 호출 됩니다.|  
-|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|레지스트리 쿼리 기호 검색 경로 찾을 수 하는 경우를 결정 합니다.|  
-|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|기호를 확인 하도록 기호 서버에 대 한 액세스 허용 된 경우를 결정 합니다.|  
+|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|.Exe 파일에서 디버그 디렉터리가 발견 될 때 호출 됩니다.|  
+|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|지망자 파일이 열려 있을 때 호출 됩니다.|  
+|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|후보 .pdb 파일이 열려 있을 때 호출 됩니다.|  
+|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|레지스트리 쿼리를 사용 하 여 기호 검색 경로를 찾을 수 있는지 여부를 결정 합니다.|  
+|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|기호를 확인 하기 위해 기호 서버에 대 한 액세스가 허용 되는지 여부를 결정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 클라이언트 응용 프로그램이이 인터페이스를 구현 및 호출에 대 한 참조를 제공 합니다 [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 메서드.  
+ 클라이언트 응용 프로그램은이 인터페이스를 구현 하 고 [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 메서드에 대 한 호출에서이 인터페이스에 대 한 참조를 제공 합니다.  
   
- 로드 프로세스에 적용할 수 있는 추가 제한 사항에 대 한 참조를 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) 인터페이스입니다.  
+ 로드 프로세스에 적용 될 수 있는 추가 제한 사항은 [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) 인터페이스를 참조 하세요.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: Dia2  
   
- 라이브러리: diaguids.lib  
+ 라이브러리: diaguids  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>관련 항목  
- [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [인터페이스 (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

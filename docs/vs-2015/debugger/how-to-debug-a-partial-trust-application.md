@@ -1,5 +1,5 @@
 ---
-title: '방법: 부분 신뢰 응용 프로그램 디버그 | Microsoft Docs'
+title: '방법: 부분 신뢰 응용 프로그램 디버깅 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704479"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>방법: 부분 신뢰 응용 프로그램 디버그
+# <a name="how-to-debug-a-partial-trust-application"></a>How to: Debug a Partial Trust Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows 및 콘솔 애플리케이션에 적용됩니다.  
   
- [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md) 쉽게 활용 하는 부분 신뢰 응용 프로그램을 배포 [코드 액세스 보안](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) 컴퓨터에서 리소스에 대 한 액세스를 제한 합니다.  
+ [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md) 를 사용 하면 [코드 액세스 보안](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) 을 활용 하는 부분 신뢰 응용 프로그램을 쉽게 배포 하 여 컴퓨터의 리소스에 대 한 액세스를 제한할 수 있습니다.  
   
  부분 신뢰 애플리케이션은 어떠한 경로를 통해 설치했는지에 따라 보안 권한 및 동작이 달라지므로 디버깅하기가 어려울 수 있습니다. 부분 신뢰 애플리케이션을 인터넷을 통해 설치한 경우에는 애플리케이션에 권한이 거의 없습니다. 로컬 인트라넷에서 설치한 경우에는 좀 더 많은 권한이 부여되고, 로컬 컴퓨터에서 설치하면 모든 권한이 부여됩니다. 사용자 지정 권한으로 사용자 지정 영역을 설정할 수도 있습니다. 부분 신뢰 애플리케이션은 이러한 임의의 조건 아래에서 디버깅해야 할 수 있습니다. Visual Studio를 사용하면 이와 같은 복잡한 디버깅 작업도 쉽게 수행할 수 있습니다.  
   
@@ -45,42 +45,42 @@ Windows 및 콘솔 애플리케이션에 적용됩니다.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>부분 신뢰 애플리케이션의 영역을 선택하려면  
   
-1. **프로젝트** 메뉴 선택 _Projectname_**속성**합니다.  
+1. **프로젝트** 메뉴에서 _Projectname_**속성**을 선택 합니다.  
   
-2. 에 *Projectname* 속성 페이지를 클릭 합니다 **보안** 페이지입니다.  
+2. *Projectname* 속성 페이지에서 **보안** 페이지를 클릭 합니다.  
   
-3. 선택 **ClickOnce 보안 설정 사용**합니다.  
+3. **ClickOnce 보안 설정 사용**을 선택 합니다.  
   
-4. 아래 **영역에서 응용 프로그램을 설치할**, 드롭다운 목록 상자를 클릭 하 고 응용 프로그램을 설치 중인 시뮬레이션 하려는 영역을 선택 합니다.  
+4. **응용 프로그램이 설치**되는 영역 아래에서 드롭다운 목록 상자를 클릭 하 고 설치할 응용 프로그램을 시뮬레이트할 영역을 선택 합니다.  
   
-     합니다 **응용 프로그램에 필요한 사용 권한에** 표 형식으로 사용할 수 있는 모든 권한을 표시 합니다. 확인 표시는 애플리케이션에 해당 권한이 부여되어 있음을 나타냅니다.  
+     **응용 프로그램에 필요한 사용 권한** 표에는 사용 가능한 모든 권한이 표시 됩니다. 확인 표시는 애플리케이션에 해당 권한이 부여되어 있음을 나타냅니다.  
   
-5. 선택한 영역이 경우 **(사용자 지정)** 에서 올바른 사용자 지정 설정을 선택 합니다 **설정** 열의 **권한을** 표.  
+5. 선택한 영역이 **(사용자 지정)** 인 경우 **사용 권한** 표의 **설정** 열에서 올바른 사용자 지정 설정을 선택 합니다.  
   
 6. **확인**을 클릭하여 속성 페이지를 닫습니다.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>보안 예외가 발생한 경우 필요한 권한을 추가하려면  
   
-1. 합니다 **예외 도우미** 메시지와 함께 대화 상자가 나타납니다. **SecurityException 처리 되지 않았습니다.**  
+1. **보안 예외를 처리 하지 않은** 메시지와 함께 **예외 도우미** 대화 상자가 나타납니다.  
   
-2. 에 **예외 도우미** 대화 상자의 **동작**, 클릭 **프로젝트에 추가 권한**합니다.  
+2. **예외 도우미** 대화 상자의 **작업**에서 **프로젝트에 대 한 사용 권한 추가**를 클릭 합니다.  
   
-3. 합니다 **디버깅 다시 시작** 대화 상자가 나타납니다.  
+3. **디버그 다시 시작** 대화 상자가 나타납니다.  
   
-    - 새 사용 권한 사용 하 여 디버깅 세션을 다시 시작 하려면 클릭 **예**합니다.  
+    - 새 사용 권한을 사용 하 여 디버깅 세션을 다시 시작 하려면 **예**를 클릭 합니다.  
   
-    - 아직 다시 시작 하지 않으려는 경우 클릭 **No**합니다.  
+    - 아직 다시 시작 하지 않으려면 **아니요**를 클릭 합니다.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>디버깅하는 동안 추가된 권한을 보려면  
   
-1. **프로젝트** 메뉴 선택 _Projectname_**속성**합니다.  
+1. **프로젝트** 메뉴에서 _Projectname_**속성**을 선택 합니다.  
   
-2. 에 *Projectname* 속성 페이지를 클릭 합니다 **보안** 페이지입니다.  
+2. *Projectname* 속성 페이지에서 **보안** 페이지를 클릭 합니다.  
   
-3. 확인 합니다 **응용 프로그램에 필요한 사용 권한에** 표입니다. 추가한 모든 추가 사용 권한을 두 아이콘에는 **포함 된** 열: 포함 된 모든 사용 권한을 적용 되는 일반적인 확인 하 고 "i" 문자가 포함 된 풍선 모양의 추가 아이콘이 있습니다.  
+3. **응용 프로그램 표에 필요한 사용 권한을** 확인 합니다. 추가 된 추가 사용 권한에는 **포함** 된 열에 두 개의 아이콘이 있습니다. 여기에는 포함 된 모든 권한에 대 한 일반 확인 표시와 문자 "i"를 포함 하는 풍선이 표시 되는 추가 아이콘이 있습니다.  
   
-4. 세로 스크롤 막대를 사용 하 여 전체를 볼 **응용 프로그램에 필요한 사용 권한에** 표입니다.  
+4. 세로 스크롤 막대를 사용 하 여 **응용 프로그램 표에 필요한 전체 사용 권한을** 볼 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
  [디버거 보안](../debugger/debugger-security.md)

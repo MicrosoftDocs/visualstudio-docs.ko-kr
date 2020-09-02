@@ -18,20 +18,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702685"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>방법: 고성능 클러스터에서 디버그
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>방법: 고성능 클러스터에서 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-고성능 클러스터에서 다중 처리 프로그램을 디버깅하는 방법은 원격 컴퓨터에서 일반적인 프로그램을 디버깅하는 방법과 비슷합니다. 그러나 여기에는 몇 가지 추가로 고려해야 할 사항이 있습니다. 일반적인 원격 설치 요구 사항에 대 한 참조 [원격 디버깅](../debugger/remote-debugging.md)합니다.  
+고성능 클러스터에서 다중 처리 프로그램을 디버깅하는 방법은 원격 컴퓨터에서 일반적인 프로그램을 디버깅하는 방법과 비슷합니다. 그러나 여기에는 몇 가지 추가로 고려해야 할 사항이 있습니다. 일반적인 원격 설치 요구 사항은 [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.  
   
  고성능 클러스터에서 디버깅하는 경우 원격 디버깅에 제공되는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버깅 창과 기술을 모두 사용할 수 있습니다. 그러나 디버깅을 원격으로 수행하므로 외부 콘솔 창은 사용할 수 없습니다.  
   
- **스레드** 창과 **프로세스** 창은 병렬 애플리케이션을 디버깅하는 데 특히 유용합니다. 이러한 창을 사용 하는 방법에 대 한 팁을 참조 하세요. [방법: 프로세스 창 사용](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) 고 [방법: 스레드 창 사용](../debugger/how-to-use-the-threads-window.md)합니다.  
+ **스레드** 창과 **프로세스** 창은 병렬 애플리케이션을 디버깅하는 데 특히 유용합니다. 이러한 창을 사용 하는 방법에 대 한 팁은 [방법: 프로세스 창 사용](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) 및 [방법: 스레드 창 사용](../debugger/how-to-use-the-threads-window.md)을 참조 하세요.  
   
  다음 절차에서는 고성능 클러스터에서 디버깅을 수행할 때 특히 유용한 몇 가지 방법을 보여 줍니다.  
   
@@ -65,7 +65,7 @@ ms.locfileid: "65702685"
   
 3. **중단점 필터** 대화 상자에 다음을 입력합니다.  
   
-     `ProcessName =` *yourprocessname*  
+     `ProcessName =`  *yourprocessname*  
   
      또는  
   
@@ -100,8 +100,8 @@ ms.locfileid: "65702685"
 (MachineName = marvin) & (ThreadName = fourier1)  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+## <a name="see-also"></a>관련 항목  
+ [다중 스레드 응용 프로그램 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [원격 디버깅](../debugger/remote-debugging.md)   
  [방법: 프로세스 창 사용](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [방법: 스레드 창 사용](../debugger/how-to-use-the-threads-window.md)   

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 560587e70365a485c3391a0623b959f88d417698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671062"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
@@ -34,13 +34,13 @@ ms.locfileid: "72671062"
 > 매개 변수가 있는 쿼리를 생성할 때 코딩 하는 데이터베이스와 관련 된 매개 변수 표기법을 사용 합니다. 예를 들어 Access 및 OleDb 데이터 소스는 물음표 '?'를 사용하여 매개 변수를 표기하므로 WHERE 절은 `WHERE City = ?`와 같습니다.
 
 > [!NOTE]
-> 표시 되는 대화 상자와 메뉴 명령은 사용 중인 활성 설정 또는 버전에 따라 도움말에 설명 된 것과 다를 수 있습니다. 설정을 변경 하려면 **도구** 메뉴로 이동 하 여 **설정 가져오기 및 내보내기**를 선택 합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 표시 되는 대화 상자와 메뉴 명령은 사용 중인 활성 설정 또는 버전에 따라 도움말에 설명 된 것과 다를 수 있습니다. 설정을 변경 하려면 **도구** 메뉴로 이동 하 여 **설정 가져오기 및 내보내기**를 선택 합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.
 
 ## <a name="create-a-parameterized-tableadapter-query"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
 
 - 원하는 매개 변수가 포함된 WHERE 절을 SQL 문에 추가하여 새 TableAdapter를 만듭니다. 자세한 내용은 [Tableadapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)을 참조 하세요.
 
-     -또는-
+     또는
 
 - 원하는 매개 변수가 포함된 WHERE 절을 SQL 문에 추가하여 기존 TableAdapter에 쿼리를 추가합니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "72671062"
 
 4. 새 쿼리를 만드는 경우 **새 쿼리 이름** 상자에 이름을 입력합니다.
 
-    -또는-
+    또는
 
     **기존 쿼리 이름** 상자에서 쿼리를 선택합니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "72671062"
 
     매개 변수를 입력하기 위한 컨트롤과 **로드** 단추가 <xref:System.Windows.Forms.ToolStrip> 컨트롤의 폼에 추가됩니다.
 
-   현재 값이 없는 레코드를 쿼리하려면 TableAdapter 매개 변수에 null 값을 할당할 수 있습니다. 예를 들어 `WHERE` 절에 `ShippedDate` 매개 변수가 있는 다음 쿼리를 살펴보세요.
+   현재 값이 없는 레코드를 쿼리하려면 TableAdapter 매개 변수에 null 값을 할당할 수 있습니다. 예를 들어, `ShippedDate` 절에 매개 변수가 있는 다음 쿼리를 살펴보세요 `WHERE` .
 
    ```sql
    SELECT CustomerID, OrderDate, ShippedDate
@@ -93,10 +93,10 @@ TableAdapter에 대 한 쿼리 인 경우 다음 코드와 함께 제공 되지 
 
 1. **데이터 세트 디자이너**에서 null 매개 변수 값을 허용 해야 하는 TableAdapter 쿼리를 선택 합니다.
 
-2. **속성** 창에서 **매개 변수**를 선택 합니다. 그런 다음 줄임표 ( **...** ) 단추를 눌러 **매개 변수 컬렉션 편집기**를 엽니다.
+2. **속성** 창에서 **매개 변수**를 선택 합니다. 그런 다음 줄임표 (**...**) 단추를 눌러 **매개 변수 컬렉션 편집기**를 엽니다.
 
-3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을 `true`로 설정 합니다.
+3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을로 설정 `true` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-- [TableAdapter를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

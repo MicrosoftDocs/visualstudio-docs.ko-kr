@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547630"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Windows Forms에 다이어그램 포함
@@ -141,7 +141,7 @@ Visual Studio 창에 표시 되는 Windows 컨트롤에 DSL 다이어그램을 �
 
      목록 상자에는 모델의 요소 목록이 표시 되 고, 추가 또는 삭제 후, 실행 취소 및 다시 실행 후에도 올바른 것을 확인할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

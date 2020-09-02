@@ -1,5 +1,5 @@
 ---
-title: '연습: Web Form 디버그 | Microsoft Docs'
+title: '연습: 웹 폼 디버깅 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704929"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>연습: Web Form 디버그
@@ -38,7 +38,7 @@ ms.locfileid: "65704929"
 > [!NOTE]
 > 이 연습을 수행하려면 서버 컴퓨터에 대한 관리자 권한이 있어야 합니다. 기본적으로 aspnet_wp.exe나 w3wp.exe 같은 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스로 실행됩니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]을 디버깅하려면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]이 실행되는 컴퓨터에서 관리자 권한이 있어야 합니다. 자세한 내용은 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)항목을 참조하세요.  
   
- 표시되는 대화 상자와 메뉴 명령은 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+ 표시되는 대화 상자와 메뉴 명령은 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.  
   
 ### <a name="to-create-the-web-form"></a>Web Form을 만들려면  
   
@@ -50,7 +50,7 @@ ms.locfileid: "65704929"
   
 3. **템플릿** 창에서 **ASP.NET 웹 사이트**를 클릭합니다.  
   
-4. 에 **위치** 줄, 클릭 **HTTP** 목록에서 및 텍스트 상자에 입력 **http://localhost/WebSite** 합니다.  
+4. **위치** 줄의 목록에서 **HTTP**를 클릭하고 텍스트 상자에 **http://localhost/WebSite** 를 입력합니다.  
   
 5. **언어** 목록에서 **Visual C#** 또는 **Visual Basic**을 클릭합니다.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "65704929"
   
 11. 끌어 놓은 단추 컨트롤을 두 번 클릭합니다.  
   
-     이렇게 하면 코드 페이지: Default.aspx.cs에 대 한 C# 의 경우 default.aspx.vb [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]합니다. 커서는 `Button1_Click` 함수에 있어야 합니다.  
+     이렇게 하면 다음의 코드 페이지로 이동합니다. C#에 대해 Default.aspx.cs 또는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에 대해 Default.aspx.vb입니다. 커서는 `Button1_Click` 함수에 있어야 합니다.  
   
 12. `Button1_Click` 함수에 다음 코드를 추가합니다.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "65704929"
   
      Web Form이 Internet Explorer에서 실행되지만 디버거가 연결되지는 않습니다.  
   
-4. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스에 연결합니다. 자세한 내용은 [배포 된 웹 응용 프로그램 디버깅](../debugger/debugging-deployed-web-applications.md)합니다.  
+4. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스에 연결합니다. 자세한 내용은 [배포된 웹 애플리케이션 디버깅](../debugger/debugging-deployed-web-applications.md)을 참조하세요.  
   
 5. Internet Explorer에서 폼의 단추를 클릭합니다.  
   
@@ -168,5 +168,5 @@ ms.locfileid: "65704929"
   
 6. 디버깅이 완료되면 **디버그** 메뉴에서 **디버깅 중지**를 클릭합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ASP.NET 및 AJAX 응용 프로그램 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)
+## <a name="see-also"></a>관련 항목  
+ [ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)

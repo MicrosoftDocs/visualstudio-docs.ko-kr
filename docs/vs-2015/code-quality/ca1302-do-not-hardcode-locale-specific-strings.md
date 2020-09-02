@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 18da0471b1ac62f0e61b303c60b46c15cdc2e428
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539011"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: 로캘별 문자열을 하드코드하지 마세요.
@@ -46,7 +46,7 @@ ms.locfileid: "85539011"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  문자열 리터럴이 열거와 연결 된 시스템 위치 중 하나를 참조 하는 데 사용 되지 않는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 <xref:System.Environment.SpecialFolder> 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙에서 3 개의 경고를 생성 하는 공용 응용 프로그램 데이터 폴더의 경로를 작성 합니다. 그런 다음 메서드를 사용 하 여 경로를 검색 합니다 <xref:System.Environment.GetFolderPath%2A> .
 
  [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.HardcodedLocaleStrings/cs/FxCop.Globalization.HardcodedLocaleStrings.cs#1)]

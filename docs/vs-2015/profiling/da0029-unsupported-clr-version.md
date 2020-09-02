@@ -17,19 +17,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 532427618f476e1e187d8a1c88749810f9d157c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152657"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: 지원되지 않는 CLR 버전
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0029 |  
-| 범주 | 프로 파일링 도구 사용 |  
-| 프로 파일링 방법을 | 명령줄에서 프로 파일링 |  
-| 메시지 | 지원 되지 않는 CLR 버전이 수집 하는 동안 발견 되었습니다. 관리되는 기호가 제대로 확인되지 않을 수 있습니다.|  
+| 범주 | 프로파일링 도구 사용 |  
+| 프로 파일링 방법 | 명령줄에서 프로 파일링 |  
+| 메시지 | 수집 하는 동안 지원 되지 않는 CLR 버전이 검색 되었습니다. 관리되는 기호가 제대로 확인되지 않을 수 있습니다.|  
 | 규칙 유형 | 정보. |  
   
 ## <a name="cause"></a>원인  

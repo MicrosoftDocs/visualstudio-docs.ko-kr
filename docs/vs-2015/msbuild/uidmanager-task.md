@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703691"
 ---
 # <a name="uidmanager-task"></a>UidManager 작업
@@ -57,10 +57,10 @@ ms.locfileid: "65703691"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)   
  [작업 참조](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
- [WPF 응용 프로그램 빌드(WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF 응용 프로그램 빌드 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [방법: 응용 프로그램 지역화](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

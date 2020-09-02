@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0d5818186fed4570d2b1fc7065d413e0a5a07d1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703612"
 ---
 # <a name="how-to-specify-debugger-settings"></a>방법: 디버거 설정 지정
@@ -47,8 +47,8 @@ ms.locfileid: "65703612"
   
 4. 원하는 옵션을 선택하거나 해제합니다. 옵션에 대한 도움말을 보려면 F1 키를 누르십시오.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [옵션 대화 상자, 디버깅, 일반](../debugger/general-debugging-options-dialog-box.md)   
- [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [옵션 대화 상자, 디버깅, 편집 하며 계속 하기](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   
  [빌드 명령 및 속성에 대한 일반 매크로](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)

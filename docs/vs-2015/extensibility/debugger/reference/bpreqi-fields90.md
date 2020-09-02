@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 97a38b4296668cb287f34e5b1afcbd7c90477011
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153217"
 ---
-# <a name="bpreqifields90"></a>BPREQI_FIELDS90
+# <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-중단점 요청에 대 한 정보를 검색할 수를 지정 하는 유효한 값을 열거 합니다. 이 열거형을 확장 합니다 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 열거형입니다.  
+중단점 요청에 대해 검색할 정보를 지정 하는 유효한 값을 열거 합니다. 이 열거형은 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 열거형을 확장 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -77,54 +77,54 @@ public enum enum_BPREQI_FIELDS90
   
 #### <a name="parameters"></a>매개 변수  
  BPREQI90_BPLOCATION  
- 초기화 또는 사용 하 여 합니다 `bpLocation` (중단점 위치) 필드를 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 또는 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조입니다.  
+ `bpLocation` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 또는 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조체의 (중단점 위치) 필드를 초기화 하거나 사용 합니다.  
   
  BPREQI90_LANGUAGE  
- 초기화 하거나 사용 합니다 `guidLanguage` 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `guidLanguage`또는 구조체의 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_PROGRAM  
- 초기화 하거나 사용 합니다 `pProgram` 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `pProgram`또는 구조체의 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_PROGRAMNAME  
- 초기화 하거나 사용 합니다 `bstrProgramName` 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `bstrProgramName`또는 구조체의 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_THREAD  
- 초기화 하거나 사용 합니다 `pThread` 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `pThread`또는 구조체의 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_THREADNAME  
- 초기화 하거나 사용 합니다 `bstrThreadName` 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `bstrThreadName`또는 구조체의 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_PASSCOUNT  
- 초기화 하거나 사용 합니다 `bpPassCount` 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `bpPassCount`또는 구조체의 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_CONDITION  
- 초기화 또는 사용 합니다 `bpCondition` (중단점 조건) 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `bpCondition`또는 구조체의 (중단점 조건) 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_FLAGS  
- 초기화 하거나 사용 합니다 `dwFlags` 필드를 `BP_REQUEST_INFO` 또는 `BP_REQUEST_INFO2` 구조입니다.  
+ `dwFlags`또는 구조체의 필드를 초기화 하거나 `BP_REQUEST_INFO` 사용 `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_ALLOLDFIELDS  
- 초기화 또는 사용에 대 한 모든 필드의의 `BP_REQUEST_INFO` 구조입니다.  
+ 구조체의에 대 한 모든 필드를 초기화 하거나 사용 `BP_REQUEST_INFO` 합니다.  
   
  BPREQI90_VENDOR  
- 초기화 하거나 사용 합니다 `guidVendor` 필드에 `BP_REQUEST_INFO2` 구조입니다.  
+ 구조체의 필드를 초기화 하거나 사용 `guidVendor` `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_CONSTRAINT  
- 초기화 하거나 사용 합니다 `bstrConstraint` 필드에 `BP_REQUEST_INFO2` 구조입니다.  
+ 구조체의 필드를 초기화 하거나 사용 `bstrConstraint` `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_TRACEPOINT  
- 초기화 하거나 사용 합니다 `bstrTracepoint` 필드에 `BP_REQUEST_INFO2` 구조입니다.  
+ 구조체의 필드를 초기화 하거나 사용 `bstrTracepoint` `BP_REQUEST_INFO2` 합니다.  
   
  BPREQI90_MACROTRACEPOINT  
- 초기화 하거나 사용 합니다 `bstrMacroTracepoint` 필드에 `BP_REQUEST_INFO2` 구조입니다. BPREQI_ALLFIELDS이이 필드를 포함 하지 않습니다.  
+ 구조체의 필드를 초기화 하거나 사용 `bstrMacroTracepoint` `BP_REQUEST_INFO2` 합니다. BPREQI_ALLFIELDS는이 필드를 포함 하지 않습니다.  
   
  BPREQI90_ALLFIELDS  
- 에 대 한 모든 필드를 지정 합니다 `BP_REQUEST_INFO2` 구조입니다.  
+ 구조체의 모든 필드를 지정 합니다 `BP_REQUEST_INFO2` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Msdbg90.h  
+ 헤더: Msdbg90  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

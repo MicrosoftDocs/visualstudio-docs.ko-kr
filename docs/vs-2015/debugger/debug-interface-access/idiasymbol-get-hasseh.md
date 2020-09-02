@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasseh | Microsoft Docs'
+title: 'IDiaSymbol:: get_hasSEH | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72e8d428df4796c34c5ac20447e7bf8121f259d2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703775"
 ---
-# <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
+# <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-함수 하나 포함 되는지 여부를 지정 하는 플래그를 검색 [구조적 예외 처리 (C /C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (예를 들어 __try /\__except 블록).  
+함수가 [구조화 된 예외 처리 (C/c + +)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) 를 포함 하는지 여부를 지정 하는 플래그를 검색 합니다 (예: __try/ \_ _except 블록).  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,13 +35,13 @@ HRESULT get_hasSEH(
   
 #### <a name="parameters"></a>매개 변수  
  `pFlag`  
- [out] 반환 `TRUE` 함수에 모든 구조적된 예외 처리 블록;이 고, 그렇지 반환 `FALSE`합니다.  
+ 제한이 `TRUE` 함수에 구조화 된 예외 처리 블록이 있으면를 반환 하 고, 그렇지 않으면를 반환 `FALSE` 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -50,6 +50,6 @@ HRESULT get_hasSEH(
 |헤더:|dia2.h|  
 |버전:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [구조적 예외 처리(C/C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976)

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4de23d462136ad417859d7064fef6b4ace7e59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153246"
 ---
-# <a name="bpstate"></a>BP_STATE
+# <a name="bp_state"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-바인딩된 중단점의 존재 여부를 지정 하 고 또한 사용 되는지 여부를 지정 합니다.  
+바인딩된 중단점의 존재를 지정 하 고 사용 하도록 설정할지 여부도 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,27 +47,27 @@ public enum enum_BP_STATE { 
   
 ## <a name="members"></a>멤버  
  BPS_NONE  
- 중단점이 있는지를 지정 합니다.  
+ 중단점이 존재 하지 않도록 지정 합니다.  
   
  BPS_DELETED  
- 중단점 삭제 된 것을 지정 합니다.  
+ 중단점이 삭제 되었음을 지정 합니다.  
   
  BPS_DISABLED  
- 중단점은 사용 되지 않음을 지정 합니다.  
+ 중단점을 사용 하지 않도록 지정 합니다.  
   
  BPS_ENABLED  
- 중단점이 설정 되었음을 지정 합니다.  
+ 중단점을 사용 하도록 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 반환 된 [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 메서드.  
+ [Getstate](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 메서드에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

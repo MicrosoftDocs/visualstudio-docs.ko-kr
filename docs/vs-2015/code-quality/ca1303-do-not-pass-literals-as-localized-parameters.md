@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f3ad1f56215d002c03d346b38ce6155e8df7412b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539115"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마세요.
@@ -55,12 +55,12 @@ ms.locfileid: "85539115"
 
  사용자는 이름이 인 매개 변수나 속성의 이름을 바꾸거나 이러한 항목을 조건으로 표시 하 여 지역화 된 문자열을 전달 하면 안 되는 메서드에 대해 노이즈를 제거할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 두 인수 중 하나가 범위를 벗어나는 경우 예외를 throw 하는 메서드를 보여 줍니다. 첫 번째 인수에 대해 예외 생성자는이 규칙을 위반 하는 리터럴 문자열로 전달 됩니다. 두 번째 인수의 경우 생성자는를 통해 검색 된 문자열을 올바르게 전달 합니다 <xref:System.Resources.ResourceManager> .
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cpp/FxCop.Globalization.DoNotPassLiterals.cpp#1)]
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cs/FxCop.Globalization.DoNotPassLiterals.cs#1)]
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/vb/FxCop.Globalization.DoNotPassLiterals.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [데스크톱 앱의 리소스](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
