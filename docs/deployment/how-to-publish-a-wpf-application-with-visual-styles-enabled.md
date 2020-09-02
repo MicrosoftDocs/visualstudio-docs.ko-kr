@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21c94cc7ab97070b138cbae108c617094faf09b5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382213"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시
@@ -119,7 +119,7 @@ ms.locfileid: "85382213"
    > - 솔루션은 다음 디렉터리에 `%UserProfile%\Documents\Visual Studio 2010\Projects\` 있습니다.
    >
    > - 솔루션은 다음 디렉터리에 게시 `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` 됩니다.
-   > - 게시 된 응용 프로그램 파일의 최신 버전은 다음 디렉터리에 있습니다.`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
+   > - 게시 된 응용 프로그램 파일의 최신 버전은 다음 디렉터리에 있습니다. `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
    > 위에서 설명한 이름 또는 디렉터리 위치를 사용 하지 않아도 됩니다. 위에 설명 된 이름과 위치는 솔루션을 게시 하는 데 필요한 단계를 설명 하는 데만 사용 됩니다.
 

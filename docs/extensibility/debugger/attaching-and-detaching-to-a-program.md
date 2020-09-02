@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 42a751e6aa70c1aacd5df598e0c0e62da3b9d14b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903156"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>프로그램에 연결 및 분리
@@ -49,5 +49,5 @@ ms.locfileid: "85903156"
 
 6. DE는 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)을 보냅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

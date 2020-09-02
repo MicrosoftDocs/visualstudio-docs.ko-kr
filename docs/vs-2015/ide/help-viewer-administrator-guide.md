@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645570"
 ---
 # <a name="help-viewer-administrator-guide"></a>도움말 뷰어 관리자 가이드
@@ -27,7 +27,7 @@ ms.locfileid: "72645570"
 
  기본 구문은 다음과 같습니다.
 
- \< *>* \HlpCtntmgr.exe/operation \<*인수*>/catalogname \<*name*>/sn\< >*locale*\</sourceuri 0 *. msha 경로 또는 URL*
+ \<*path to*>\HlpCtntmgr.exe/작업 \<*argument*> /catalogname \<*name*> \<*locale*> /sourceuri \<*.msha path or URL*>
 
  HlpCtntMgr.exe 명령줄 구문에 대한 자세한 내용은 [도움말 콘텐츠 관리자 명령줄 인수](../ide/command-line-arguments-for-the-help-content-manager.md)를 참조하세요.
 
@@ -36,7 +36,7 @@ ms.locfileid: "72645570"
 ## <a name="deploying-local-help-content-from-the-internet"></a>인터넷에서 로컬 도움말 콘텐츠 배포
  MSDN 콘텐츠 패키지 서비스를 사용하여 인터넷에서 클라이언트 컴퓨터로 로컬 도움말 콘텐츠를 배포할 수 있습니다. 다음 구문을 사용합니다.
 
- \\<*대상 경로*>\v2.2\HlpCtntmgr.exe /operation \<*이름*> /catalogname \<*카탈로그 이름*> /locale \<*로캘*>
+ \\<*path to* # C0\v2.2\HlpCtntmgr.exe/작업 \<*name*> /catalogname \<*catalog name*> /로캘의 경로\<*locale*>
 
  HlpCtntMgr.exe 명령줄 구문에 대한 자세한 내용은 [도움말 콘텐츠 관리자 명령줄 인수](../ide/command-line-arguments-for-the-help-content-manager.md)를 참조하세요.
 
@@ -55,7 +55,7 @@ ms.locfileid: "72645570"
 
 - 클라이언트에서 Visual Studio를 처음 시작할 때 기본 도움말 콘텐츠를 설치하라는 메시지가 계속 표시됩니다. HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 레지스트리 키를 수정하여 이 메시지가 표시되지 않도록 설정할 수 있습니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
  다음 예제에서는 클라이언트 컴퓨터에 Visual Studio에 대한 영어 콘텐츠를 설치합니다.
 
 ##### <a name="to-install-english-content-from-the-internet"></a>인터넷에서 영어 콘텐츠를 설치하려면
@@ -127,9 +127,9 @@ ms.locfileid: "72645570"
 
 4. 다음과 같이 입력합니다.
 
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*폴더 이름*>\ /y /e /k /o
+     Xcopy%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*> \/y/e/k/o
 
-     예를 들면 다음과 같습니다: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
+     예: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 
 ### <a name="deploying-the-content"></a>콘텐츠 배포
 
@@ -141,7 +141,7 @@ ms.locfileid: "72645570"
 
 2. 도움말 콘텐츠에 대한 배포 스크립트를 포함할 .bat 파일을 만듭니다. 클라이언트에서 푸시의 일부로 삭제될 파일에 대한 읽기 잠금이 있을 수 있으므로 업데이트를 푸시하기 전에 클라이언트를 종료해야 합니다.
 
-     예를 들면,
+     예를 들면 다음과 같습니다.
 
     ```
     REM - copy pre-ripped content to ProgramData
@@ -201,5 +201,5 @@ ms.locfileid: "72645570"
 
 3. 도움말 콘텐츠가 설치될 로컬 컴퓨터에서 bat 파일을 실행합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도움말 콘텐츠 관리자](../ide/command-line-arguments-for-the-help-content-manager.md) [도움말 내용 관리자에서 재정의할](../ide/help-content-manager-overrides.md) 수 있는 명령줄 인수

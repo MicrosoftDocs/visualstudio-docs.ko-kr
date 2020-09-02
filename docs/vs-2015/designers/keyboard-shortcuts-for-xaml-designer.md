@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46adab828eea0ffb821147ba9c711634e1899a85
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664309"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML 디자이너에 대한 바로 가기 키
@@ -24,7 +24,7 @@ XAML 디자이너의 바로 가기 키를 사용하면 마우스 단추를 여�
 ## <a name="element-shortcuts"></a>요소 바로 가기
  이 표에서는 아트 보드의 요소 작업에 사용할 수 있는 바로 가기 키를 보여줍니다.
 
-|**수행할 작업**|**수행하는 방법**|
+|**수행할 작업**|**수행할 작업**|
 |--------------------------------|-----------------|
 |요소 만들기|Ctrl+N을 누릅니다.|
 |요소 복제|Alt 키를 누르고 화살표 키를 누릅니다.|
@@ -42,12 +42,12 @@ XAML 디자이너의 바로 가기 키를 사용하면 마우스 단추를 여�
 ## <a name="document-outline-window-shortcuts"></a>문서 개요 창 바로 가기
  다음 표에서는 문서 개요 창에서 요소 작업을 할 때 사용 가능한 바로 가기 키를 나열합니다.
 
-|**수행할 작업**|**수행하는 방법**|
+|**수행할 작업**|**수행할 작업**|
 |--------------------------------|-----------------|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 숨기기|Ctrl + H|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 표시|Shift + Ctrl + H|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 잠금|Ctrl + L|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 잠금 해제|Shift + Ctrl + L|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -8,10 +8,10 @@ ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
 ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283127"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio에서 컨테이너와 이미지를 보고 진단하는 방법

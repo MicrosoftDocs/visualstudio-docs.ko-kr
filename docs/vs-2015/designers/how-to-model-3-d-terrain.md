@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ab202ed97ce2056313eb661d51d7150bb9689829
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664418"
 ---
 # <a name="how-to-model-3-d-terrain"></a>방법: 3차원 지형 모델 만들기
@@ -38,7 +38,7 @@ ms.locfileid: "72664418"
 
  작업을 완료하면 모델이 다음과 같이 나타납니다.
 
- ![지형&#45;모델을 보여 주는 3 차원 장면](../designers/media/digit-terrain-model.png "Digit-지형 모델")
+ ![지형 모델을 보여 주는 3&#45;D 장면](../designers/media/digit-terrain-model.png "Digit-지형 모델")
 
  시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인합니다.
 
@@ -66,9 +66,9 @@ ms.locfileid: "72664418"
 
    지형 모델이 완료되었습니다. 다음은 다시 퐁 음영이 적용된 최종 모델입니다.
 
-   ![지형&#45;모델을 보여 주는 3 차원 장면](../designers/media/digit-terrain-model.png "Digit-지형 모델")
+   ![지형 모델을 보여 주는 3&#45;D 장면](../designers/media/digit-terrain-model.png "Digit-지형 모델")
 
-   이 지형 모델을 사용하여 [방법: 기하 도형 기반 그라데이션 셰이더 만들기](../designers/how-to-create-a-geometry-based-gradient-shader.md)에 설명된 그라데이션 셰이더의 효과를 표시할 수 있습니다.
+   이 지형 모델을 사용 하 여 [방법: 기 하 도형 기반 그라데이션 셰이더 만들기](../designers/how-to-create-a-geometry-based-gradient-shader.md)에 설명 된 그라데이션 셰이더의 효과를 보여줄 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [모델 편집기](../designers/model-editor.md)

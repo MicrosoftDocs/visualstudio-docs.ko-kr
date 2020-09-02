@@ -1,5 +1,5 @@
 ---
-title: '방법: 리소스를 사용하는 프로젝트 빌드 | Microsoft 문서'
+title: '방법: 리소스를 사용하는 프로젝트 빌드 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686523"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>방법: 리소스를 사용하는 프로젝트 빌드
@@ -79,7 +79,7 @@ ms.locfileid: "65686523"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
 [MSBuild](msbuild.md)  
  [GenerateResource 작업](../msbuild/generateresource-task.md)   
  [Csc 작업](../msbuild/csc-task.md)   

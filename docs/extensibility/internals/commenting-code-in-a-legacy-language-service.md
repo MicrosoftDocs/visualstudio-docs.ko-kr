@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스에서 코드 주석 달기 | 마이크로 소프트 문서
+title: 레거시 언어 서비스의 코드 주석 달기 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709434"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 주석 코드
-프로그래밍 언어는 일반적으로 코드에 주석을 달거나 주석을 달 수 있는 수단을 제공합니다. 주석은 코드에 대한 추가 정보를 제공하지만 컴파일 또는 해석 중에 무시되는 텍스트 섹션입니다.
+프로그래밍 언어는 일반적으로 코드에 주석을 달고 주석을 추가할 수 있는 수단을 제공 합니다. 주석은 코드에 대 한 추가 정보를 제공 하는 텍스트 섹션 이지만 컴파일 또는 해석 중에는 무시 됩니다.
 
- MPF(관리되는 패키지 프레임워크) 클래스는 선택한 텍스트에 주석 을 달고 주석을 달지 않는 지원을 제공합니다.
+ MPF (관리 되는 패키지 프레임 워크) 클래스는 선택한 텍스트를 주석으로 처리 하 고 주석 처리 수 있도록 지원 합니다.
 
 ## <a name="comment-styles"></a>주석 스타일
-주석에는 두 가지 일반적인 스타일이 있습니다.
+설명에는 다음과 같은 두 가지 일반적인 스타일이 있습니다.
 
-1. 주석이 한 줄에 있는 줄 주석입니다.
+1. 줄 주석-주석이 한 줄에 있습니다.
 
-2. 주석에 여러 줄이 포함될 수 있는 주석을 차단합니다.
+2. 주석이 여러 줄을 포함할 수 있는 블록입니다.
 
-Line 주석에는 일반적으로 시작 문자(또는 문자)가 있는 반면 블록 주석에는 시작 문자와 끝 문자가 모두 있습니다. 예를 들어 C#에서 줄 주석은 `//`에서 시작하고 블록 `/*` 주석은 `*/`에서 시작하고 로 끝납니다.
+일반적으로 줄 주석에는 시작 문자 (또는 문자)가 있으며, 블록 주석에는 시작과 끝 문자가 모두 있습니다. 예를 들어 c #에서 줄 주석은로 시작 하 `//` 고, 블록 주석은로 시작 `/*` 하 고로 끝납니다 `*/` .
 
-사용자가**고급** **편집** > 메뉴에서 **주석 선택** 명령을 선택하면 명령이 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> 클래스의 메서드로 라우팅됩니다. 사용자가 **주석 해제 선택**명령을 선택하면 명령이 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 메서드로 라우팅됩니다.
+사용자가 고급 **편집**메뉴에서 명령 **주석 선택 항목** 을 선택 하면  >  **Advanced** 명령은 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 클래스의 메서드로 라우팅됩니다 <xref:Microsoft.VisualStudio.Package.Source> . 사용자가 명령 **주석 제거**를 선택 하면 명령이 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 메서드로 라우팅됩니다.
 
 ## <a name="support-code-comments"></a>지원 코드 주석
- 의 명명된 매개 변수를 통해 언어 `EnableCommenting` 서비스 지원 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 코드 주석을 가질 수 있습니다. 이렇게 하면 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 클래스의 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 속성이 설정됩니다. 언어 서비스 기능 설정에 대한 자세한 내용은 [레거시 언어 서비스 등록을](../../extensibility/internals/registering-a-legacy-language-service1.md)참조하십시오.
+ 의 명명 된 매개 변수를 통해 언어 서비스에서 코드 주석을 지원할 수 있습니다 `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . 이 속성은 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 클래스의 속성을 설정 합니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . 언어 서비스 기능을 설정 하는 방법에 대 한 자세한 내용은 [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)을 참조 하세요.
 
- 또한 해당 언어에 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 대한 주석 <xref:Microsoft.VisualStudio.Package.CommentInfo> 문자가 있는 구조를 반환하는 메서드를 재정의해야 합니다. C#스타일 선 주석 문자가 기본값입니다.
+ 또한 메서드를 재정의 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 하 여 <xref:Microsoft.VisualStudio.Package.CommentInfo> 언어에 대 한 주석 문자를 포함 하는 구조체를 반환 해야 합니다. C # 스타일 줄 주석 문자는 기본값입니다.
 
-### <a name="example"></a>예제
- 메서드의 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 예제 구현은 다음과 같습니다.
+### <a name="example"></a>예
+ 다음은 메서드의 구현 예제입니다 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> .
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -61,6 +61,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903431"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>기본 프로젝트 시스템 만들기, 1 부
@@ -55,7 +55,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 
 - 기본 템플릿 매개 변수 대체를 구현 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
  또한 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](https://github.com/tunnelvisionlabs/MPFProj10)의 소스 코드도 다운로드 해야 합니다. 만들려는 솔루션에서 액세스할 수 있는 위치에 파일을 추출 합니다.
@@ -520,7 +520,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  인스턴스를 생성 하는 동안 `ProjectNode` 기본 클래스는 *Resources\imagelis.bmp*에서 일반적으로 사용 되는 16 x 16 비트맵을 포함 하는 *Resources.imagelis.bmp*를 로드 합니다. 이 비트맵 목록은에서로 사용할 수 `SimpleProjectNode` 있습니다 `ImageHandler.ImageList` . `SimpleProjectNode`프로젝트 노드 비트맵을 목록에 추가 합니다. 이미지 목록에서 프로젝트 노드 비트맵의 오프셋은 나중에 공용 속성의 값으로 사용 하기 위해 캐시 됩니다 `ImageIndex` . Visual Studio는이 속성을 사용 하 여 프로젝트 노드 아이콘으로 표시할 비트맵을 결정 합니다.
+  인스턴스를 생성 하는 동안 `ProjectNode` 기본 클래스는 *Resources\imagelis.bmp*에서 일반적으로 사용 되는 16 x 16 비트맵을 포함 하는 *Resources.imagelis.bmp*를 로드 합니다. 이 비트맵 목록은에서로 사용할 수 `SimpleProjectNode` 있습니다 `ImageHandler.ImageList` . `SimpleProjectNode` 프로젝트 노드 비트맵을 목록에 추가 합니다. 이미지 목록에서 프로젝트 노드 비트맵의 오프셋은 나중에 공용 속성의 값으로 사용 하기 위해 캐시 됩니다 `ImageIndex` . Visual Studio는이 속성을 사용 하 여 프로젝트 노드 아이콘으로 표시할 비트맵을 결정 합니다.
 
 ## <a name="test-the-custom-project-node-icon"></a>사용자 지정 프로젝트 노드 아이콘 테스트
  프로젝트 팩터리를 테스트 하 여 사용자 지정 프로젝트 노드 아이콘이 있는 프로젝트 계층 구조를 만드는 지 여부를 확인 합니다.
@@ -601,9 +601,9 @@ Templates
 
 3. `nameSpace`및 매개 변수의 값을 검사 `className` 합니다.
 
-   - `nameSpace`에는 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj* 프로젝트 템플릿 파일의 요소 값이 지정 됩니다. 이 경우 값은 `MyRootNamespace`입니다.
+   - `nameSpace` 에는 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj* 프로젝트 템플릿 파일의 요소 값이 지정 됩니다. 이 경우 값은 `MyRootNamespace`입니다.
 
-   - `className`에는 파일 이름 확장명이 없는 클래스 소스 파일 이름의 값이 지정 됩니다. 이 경우 대상 폴더에 복사 되는 첫 번째 파일은 *AssemblyInfo.cs*입니다. 따라서 className의 값은 `AssemblyInfo` 입니다.
+   - `className` 에는 파일 이름 확장명이 없는 클래스 소스 파일 이름의 값이 지정 됩니다. 이 경우 대상 폴더에 복사 되는 첫 번째 파일은 *AssemblyInfo.cs*입니다. 따라서 className의 값은 `AssemblyInfo` 입니다.
 
 4. 중단점을 제거 하 고 **f5** 키를 눌러 실행을 계속 합니다.
 
@@ -636,4 +636,4 @@ Templates
 
     ![간단한 프로젝트 명령](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   지금까지 기본 관리 되는 프로젝트 시스템을 구현 했습니다.
+   축하합니다! 기본 관리 되는 프로젝트 시스템을 구현 했습니다.

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3:GetENC사용 가능 상태 | 마이크로 소프트 문서
+title: 'IDebugProcess3:: Getenc 상태 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723649"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-이 메서드는 프로세스의 현재 편집 및 계속 상태를 가져옵니다. 사용자 지정 포트 공급자는 항상 반환해야 `E_NOTIMPL`합니다.
+이 메서드는 프로세스의 현재 편집 하며 계속 하기 상태를 가져옵니다. 사용자 지정 포트 공급자는 항상를 반환 해야 합니다 `E_NOTIMPL` .
 
 ## <a name="syntax"></a>구문
 
@@ -41,18 +41,18 @@ int GetENCAvailableState(
 
 ## <a name="parameters"></a>매개 변수
 `pReason`\
-【아웃】 [EncUnavailable에서 값이유](../../../extensibility/debugger/reference/encunavailablereason.md) 열거.
+제한이 [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) 열거형의 값입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 > [!NOTE]
-> 사용자 지정 포트 공급자는 항상 반환해야 `E_NOTIMPL`합니다.
+> 사용자 지정 포트 공급자는 항상를 반환 해야 합니다 `E_NOTIMPL` .
 
 ## <a name="remarks"></a>설명
- 이 상태는 [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)의 영향을 받을 수 있습니다.
+ 이 상태는 [Disableenc](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)의 영향을 받을 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

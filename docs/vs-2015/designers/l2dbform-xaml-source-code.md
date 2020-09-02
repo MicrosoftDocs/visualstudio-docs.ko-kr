@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc0ec53c35f87751efe78359f582e5f4297143c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664272"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 원본 코드
@@ -241,5 +241,5 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="comments"></a>주석
  WPF UI 요소와 연결된 이벤트 처리기의 C# 소스 코드는 [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [연습: LinqToXmlDataBinding 예제](../designers/walkthrough-linqtoxmldatabinding-example.md) [L2DBForm.xaml.cs 소스 코드](../designers/l2dbform-xaml-cs-source-code.md)

@@ -1,5 +1,5 @@
 ---
-title: 바로 가기 키 (HTML 및 JavaScript) | Microsoft Docs
+title: 바로 가기 키(HTML 및 JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199676"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>바로 가기 키(HTML 및 JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  HTML 및 JavaScript를 사용하는 스토어 앱을 디버깅하기 위한 Visual Studio의 바로 가기 키입니다.  
   
@@ -59,6 +59,6 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |선택한 CSS 값 1씩 증가|위쪽 화살표|  
 |선택한 CSS 값 1씩 감소|아래쪽 화살표|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)   
  [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)

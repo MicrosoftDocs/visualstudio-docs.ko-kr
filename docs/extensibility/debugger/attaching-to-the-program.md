@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903215"
 ---
 # <a name="attach-to-the-program"></a>프로그램에 연결
@@ -57,7 +57,7 @@ ms.locfileid: "85903215"
     > [!NOTE]
     > 이 `IDebugProgram2` 개체가 메서드로 전달 된 것과 동일한 개체가 아닌 경우 `IDebugEngine2::Attach` 이전에 전달 된 `IDebugProgram2` 개체는 포트 에서만 인식 되며 별도의 개체입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [시작 기반 첨부 파일](../../extensibility/debugger/launch-based-attachment.md)
 - [이벤트 전송](../../extensibility/debugger/sending-events.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

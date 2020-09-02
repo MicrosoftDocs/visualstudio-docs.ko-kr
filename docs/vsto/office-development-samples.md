@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985733"
 ---
 # <a name="office-development-samples"></a>Office 개발 샘플
@@ -28,7 +28,7 @@ ms.locfileid: "72985733"
 
 ## <a name="office-development-samples"></a>Office 개발 샘플
 
-|예제|설명|
+|샘플|Description|
 |------------|-----------------|
 |Excel 마스터 세부 데이터 샘플|관계형 데이터베이스 또는 XML 파일에서 데이터를 검색하고 Excel에서 해당 데이터를 사용하는 방법을 보여 줍니다.|
 |Excel 문서 보호 기술 샘플|사용자가 컨트롤을 실수로 삭제하거나 그렇지 않은 경우 솔루션 문서의 중요한 부분을 변경하지 못하도록 워크시트의 구조적 구성 요소를 보호하는 데 사용할 수 있는 다양한 기술을 설명합니다.|
@@ -40,5 +40,5 @@ ms.locfileid: "72985733"
 |UI 관리자 샘플|VSTO 추가 기능에서 확장성 인터페이스를 구현하여 Outlook에 대한 리본 메뉴 사용자 지정, 사용자 지정 작업창 및 사용자 지정 양식 영역을 만드는 방법을 보여 줍니다. 리본, 작업창 및 양식 영역의 각 인스턴스는 서로 올바르게 통신할 수 있습니다.|
 |VBA 및 VSTO 상호 운용성 샘플|통합 문서의 VBA(Visual Basic for Applications) 코드에서 Excel에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다.<br /><br /> 이 샘플은 온라인에서만 사용할 수 있습니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)

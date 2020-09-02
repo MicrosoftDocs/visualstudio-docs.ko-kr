@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382356"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 대한 업데이트 관리
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 자동으로 또는 프로그래밍 방식으로 업데이트를 확인할 수 있습니다. 개발자는 업데이트 확인을 수행 하는 시기와 방법, 업데이트가 필수 인지 여부 및 응용 프로그램이 업데이트를 확인 해야 하는 위치를 지정 하는 데 많은 유연성을 발휘할 수 있습니다.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 자동으로 또는 프로그래밍 방식으로 업데이트를 확인할 수 있습니다. 개발자는 업데이트 확인을 수행 하는 시기와 방법, 업데이트가 필수 인지 여부 및 응용 프로그램이 업데이트를 확인 해야 하는 위치를 지정 하는 데 많은 유연성을 발휘할 수 있습니다.
 
  응용 프로그램이 시작 되기 전이나 응용 프로그램이 시작 된 후 설정 된 간격으로 업데이트를 자동으로 확인 하도록 응용 프로그램을 구성할 수 있습니다. 또한 필요한 최소 버전을 지정할 수 있습니다. 즉, 사용자의 버전이 필요한 버전 보다 낮은 경우 업데이트가 설치 됩니다.
 
@@ -105,10 +105,10 @@ ms.locfileid: "85382356"
 
 7. 응용 프로그램을 빌드합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [애플리케이션 업데이트 대화 상자](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
-- [방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [방법: ClickOnce 배포 API를 사용하여 프로그래밍 방식으로 애플리케이션 업데이트 확인](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

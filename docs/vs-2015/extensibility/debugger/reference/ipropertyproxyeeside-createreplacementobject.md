@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs
+title: 'IPropertyProxyEESide:: CreateReplacementObject | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3a21e640d6661f8066609bdc344299ccbd63d52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147503"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-식 계산기 (EE) 특정 데이터 개체의 복사본을 만듭니다.  
+식 계산기 (EE)와 관련 된 데이터 개체의 복사본을 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,18 +42,18 @@ int CreateReplacementObject(
   
 #### <a name="parameters"></a>매개 변수  
  `dataIn`  
- [in] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 복사할 데이터를 보유 하는 개체입니다.  
+ 진행 복사할 데이터를 보유 하는 [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) 개체입니다.  
   
  `dataOut`  
- [out] 반환 된 새 `IEEDataStorage` 개체입니다.  
+ 제한이 새 개체를 반환 `IEEDataStorage` 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에 제공 되는 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 바이트 배열을 나타내는 개체입니다. 이 들어오는 데이터 개체는 일반적으로 EE에서 구현 되지 않습니다. 그러나이 메서드에서 반환 되는 개체는 항상 EE 구현에 있어는 EE에서 구현 된 `IEEDataStorage` 어떤 클래스가 필요한 인터페이스입니다.  
+ 이 메서드에는 바이트 배열을 나타내는 [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) 개체가 제공 됩니다. 이 들어오는 데이터 개체는 일반적으로 EE에서 구현 하지 않습니다. 그러나이 메서드에서 반환 하는 개체는 항상 EE에서 구현 되므로 EE에서 `IEEDataStorage` 원하는 클래스에 대해 인터페이스를 구현할 수 있습니다.  
   
- 들어오는 제공한 데이터 참고 `IEEDataStorage` 개체는 동일한 데이터를 보내는 이어야 `IEEDataStorage` 개체입니다.  
+ 들어오는 개체가 제공 하는 데이터는 `IEEDataStorage` 나가는 개체의 데이터와 같아야 합니다 `IEEDataStorage` .  
   
 ## <a name="see-also"></a>관련 항목  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

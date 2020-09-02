@@ -1,5 +1,5 @@
 ---
-title: 시각적 개체에서 디버그 기능 활성화 C++ (-/d_debug) | Microsoft Docs
+title: Visual C++에서 디버그 기능 사용 (-D_DEBUG) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,13 +26,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cffa8592c2048c6c6b39eee5c4ca654c41448933
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686698"
 ---
-# <a name="enabling-debug-features-in-visual-c-ddebug"></a>Visual C++에서 디버그 기능 활성화(/D_DEBUG)
+# <a name="enabling-debug-features-in-visual-c-d_debug"></a>Visual C++에서 디버그 기능 활성화(/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]에서 **_DEBUG** 기호를 정의하고 프로그램을 컴파일하면 어설션과 같은 디버깅 기능을 사용할 수 있습니다. **_DEBUG**는 다음 두 가지 방법 중 하나를 통해 정의할 수 있습니다.  
@@ -45,6 +45,6 @@ ms.locfileid: "65686698"
   
   MFC 프로그램의 디버그 구성은 MFC 라이브러리의 디버그 버전과 링크해야 합니다. **_DEBUG** 및 **_UNICODE**와 같이 정의한 기호에 따라 MFC 헤더 파일에서 링크할 MFC 라이브러리 버전이 결정됩니다. 자세한 내용은 [MFC 라이브러리 버전](https://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [네이티브 코드 디버그](../debugger/debugging-native-code.md)   
+## <a name="see-also"></a>관련 항목  
+ [네이티브 코드 디버깅](../debugger/debugging-native-code.md)   
  [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)

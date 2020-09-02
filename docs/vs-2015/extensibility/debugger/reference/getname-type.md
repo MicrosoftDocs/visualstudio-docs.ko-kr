@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 648f84b106dab7aa6e38cc3e45e59162a216a875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160134"
 ---
-# <a name="getnametype"></a>GETNAME_TYPE
+# <a name="getname_type"></a>GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-검색할 파일 이름 형식을 지정 합니다.  
+검색할 파일의 이름 유형을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,37 +53,37 @@ public enum enum_GETNAME_TYPE { 
   
 ## <a name="members"></a>멤버  
  GN_NAME  
- 문서 또는 상황에 맞는 이름을 지정합니다.  
+ 문서 또는 컨텍스트의 이름을 지정 합니다.  
   
  GN_FILENAME  
- 문서 또는 상황에 맞는의 전체 경로 지정합니다.  
+ 문서 또는 컨텍스트의 전체 경로를 지정 합니다.  
   
  GN_BASENAME  
- 문서 또는 상황에 맞는의 전체 경로 대신 기본 파일 이름을 지정합니다.  
+ 문서 또는 컨텍스트의 전체 경로 대신 기본 파일 이름을 지정 합니다.  
   
  GN_MONIKERNAME  
- 모니커의 형식 문서 또는 상황에 맞는의 고유한 이름을 지정합니다.  
+ 모니커 형식의 문서 또는 컨텍스트의 고유 이름을 지정 합니다.  
   
  GN_URL  
- 문서 또는 컨텍스트 URL 이름을 지정합니다.  
+ 문서 또는 컨텍스트의 URL 이름을 지정 합니다.  
   
  GN_TITLE  
- 있을 경우 문서의 제목을 지정 합니다.  
+ 문서의 제목을 지정 합니다 (있는 경우).  
   
  GN_STARTPAGEURL  
- 프로세스에 대 한 시작 페이지 URL을 가져옵니다.  
+ 프로세스의 시작 페이지 URL을 가져옵니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값을 매개 변수로 전달 되는 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)를 [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), 및 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 반환할 이름의 종류를 지정 하는 방법입니다.  
+ 이러한 값은 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)및 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 메서드에 매개 변수로 전달 되어 반환할 이름 유형을 지정 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   

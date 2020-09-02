@@ -16,10 +16,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: fdc12f0938d3296cf1bfca37d0b9b01e0f2a704a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903568"
 ---
 # <a name="add-and-remove-property-pages"></a>속성 페이지 추가 및 제거
@@ -206,6 +206,6 @@ ms.locfileid: "85903568"
     }
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [프로젝트 하위 형식](../extensibility/internals/project-subtypes.md)

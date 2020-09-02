@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283049"
 ---
 # <a name="add-new-data-sources"></a>새 데이터 원본 추가
@@ -118,6 +118,6 @@ Entity Framework 모델을 데이터 원본으로 만들려면 다음을 수행 
 
 **데이터 소스 구성 마법사** 를 실행 하 고 **sharepoint** 데이터 원본 유형을 선택 하 여 sharepoint 목록에서 데이터 원본을 만들 수 있습니다. SharePoint는 WCF Data Services를 통해 데이터를 노출 하므로 SharePoint 데이터 소스를 만드는 것은 서비스에서 데이터 원본을 만드는 것과 동일 합니다. **데이터 소스 구성 마법사** 에서 **sharepoint** 항목을 선택 하면 SharePoint 서버를 가리켜 sharepoint 데이터 서비스에 연결 하는 **서비스 참조 추가** 대화 상자가 열립니다. 이를 위해서는 SharePoint SDK가 필요 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

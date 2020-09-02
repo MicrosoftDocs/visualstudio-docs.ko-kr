@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985709"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 주 Interop 어셈블리
@@ -63,11 +63,11 @@ Visual Studio 2017부터 이러한 Pia 복사본은 개발 컴퓨터의 다음 �
 
 - `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (또는 64 비트 운영 체제의 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`)
+- (또는 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` 64 비트 운영 체제)
 
 > [!NOTE]
-> 이전 버전의 Visual Studio에서는 이러한 Pia가 해당 버전의 Visual Studio에 대 한 `%ProgramFiles%` 폴더 아래의 Office\PIA에 대 한 Visual Studio Tools 폴더에 설치 됩니다.
-> 예: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
+> 이전 버전의 Visual Studio에서는 이러한 Pia가 `%ProgramFiles%` 해당 버전의 Visual studio 폴더 아래에 있는 Office\PIA 폴더의 Visual Studio Tools에 설치 됩니다.
+> 예를 들어: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>전역 어셈블리 캐시의 주 interop 어셈블리
 
@@ -81,18 +81,18 @@ Visual Studio 2017부터 이러한 Pia 복사본은 개발 컴퓨터의 다음 �
 
 Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office 애플리케이션에서 사용하도록 설계되어 있습니다. 여러 Microsoft Office 애플리케이션에서 기능을 사용하거나 Visual Studio에 프로젝트가 없는 애플리케이션 또는 구성 요소에서 기능을 사용하려면 필요한 PIA에 대한 참조를 추가해야 합니다.
 
-대부분의 경우 Visual Studio에서 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` 디렉터리 아래에 설치 된 Pia에 대 한 참조를 추가 해야 합니다. 이러한 어셈블리 버전은 **참조 관리자** 대화 상자의 **프레임 워크** 탭에 나타납니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)을 참조 하세요.
+대부분의 경우 Visual Studio에서 디렉터리 아래에 설치 된 Pia에 대 한 참조를 추가 해야 합니다 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` . 이러한 어셈블리 버전은 **참조 관리자** 대화 상자의 **프레임 워크** 탭에 나타납니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)을 참조 하세요.
 
 전역 어셈블리 캐시에서 PIA를 설치 및 등록한 경우 이러한 어셈블리 버전은 **참조 관리자** 대화 상자의 **COM** 탭에 표시됩니다. 이러한 어셈블리 버전에 대한 참조는 추가해서는 안 됩니다. 해당 버전을 사용하는 경우 몇 가지 개발 문제가 발생할 수 있습니다. 예를 들어 전역 어셈블리 캐시에 여러 PIA 버전을 등록한 경우에는 **참조 관리자** 대화 상자의 **COM** 탭에서 다른 어셈블리 버전을 지정하더라도 프로젝트는 마지막으로 등록된 어셈블리 버전에 자동으로 바인딩됩니다.
 
 > [!NOTE]
-> 일부 어셈블리는 해당 어셈블리를 참조하는 어셈블리를 추가할 때 프로젝트에 자동으로 추가됩니다. 예를 들어 `Office.dll` 및 `Microsoft.Vbe.Interop.dll` 어셈블리에 대 한 참조는 Word, Excel, Outlook, Microsoft Forms 또는 Graph 어셈블리에 대 한 참조를 추가할 때 자동으로 추가 됩니다.
+> 일부 어셈블리는 해당 어셈블리를 참조하는 어셈블리를 추가할 때 프로젝트에 자동으로 추가됩니다. 예를 들어, `Office.dll` `Microsoft.Vbe.Interop.dll` Word, Excel, Outlook, Microsoft Forms 또는 Graph 어셈블리에 대 한 참조를 추가 하면 및 어셈블리에 대 한 참조가 자동으로 추가 됩니다.
 
 <a name="pialist"></a>
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Microsoft Office 응용 프로그램용 주 interop 어셈블리
 
-다음 표에서는 [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에 사용할 수 있는 주 interop 어셈블리를 보여 줍니다.
+다음 표에서는, 및에 사용할 수 있는 주 interop 어셈블리를 보여 줍니다 [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)] [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] .
 
 <br/>
 
@@ -100,23 +100,23 @@ Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office �
 |-------------------------------------|-----------------------------------|
 |Microsoft Access 14.0 개체 라이브러리<br /><br /> Microsoft Access 15.0 개체 라이브러리|Microsoft.Office.Interop.Access.dll|
 |Microsoft Office 14.0 Access 데이터베이스 엔진 개체 라이브러리<br /><br /> Microsoft Office 15.0 Access 데이터베이스 엔진 개체 라이브러리|Microsoft.Office.Interop.Access.Dao.dll|
-|Microsoft Excel 14.0 개체 라이브러리<br /><br /> Microsoft Excel 15.0 개체 라이브러리|[Microsoft.](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Microsoft Excel 14.0 개체 라이브러리<br /><br /> Microsoft Excel 15.0 개체 라이브러리|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
 |Microsoft Graph 14.0 개체 라이브러리(PowerPoint, Access 및 Word에서 그래프에 사용됨)<br /><br /> Microsoft Graph 15.0 개체 라이브러리|Microsoft.Office.Interop.Graph.dll|
-|Microsoft InfoPath 2.0 형식 라이브러리(InfoPath 2007에만 해당함)|[Microsoft.](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Microsoft InfoPath 2.0 형식 라이브러리(InfoPath 2007에만 해당함)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
 |Microsoft InfoPath XML Interop 어셈블리(InfoPath 2007에만 해당함)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Microsoft Office 14.0 개체 라이브러리(Office 공유 기능)<br /><br /> Microsoft Office 15.0 개체 라이브러리(Office 공유 기능)|office.dll|
 |Microsoft Office Outlook 뷰 컨트롤(웹 페이지와 애플리케이션에서 받은 편지함에 액세스하는 데 사용할 수 있음)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Microsoft Outlook 14.0 개체 라이브러리<br /><br /> Microsoft Outlook 15.0 개체 라이브러리|[Microsoft. m d.](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Microsoft Outlook 14.0 개체 라이브러리<br /><br /> Microsoft Outlook 15.0 개체 라이브러리|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
 |Microsoft PowerPoint 14.0 개체 라이브러리<br /><br /> Microsoft PowerPoint 15.0 개체 라이브러리|Microsoft.Office.Interop.PowerPoint.dll|
-|Microsoft Project 14.0 개체 라이브러리<br /><br /> Microsoft Project 15.0 개체 라이브러리|[MSProject입니다.](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Microsoft Project 14.0 개체 라이브러리<br /><br /> Microsoft Project 15.0 개체 라이브러리|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
 |Microsoft Publisher 14.0 개체 라이브러리<br /><br /> Microsoft Publisher 15.0 개체 라이브러리|Microsoft.Office.Interop.Publisher.dll|
 |Microsoft SharePoint Designer 14.0 웹 개체 참조 라이브러리|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Microsoft SharePoint Designer 14.0 페이지 개체 참조 라이브러리|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Microsoft 스마트 태그 2.0 형식 라이브러리 **참고:** 스마트 태그는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 및 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]에서 더 이상 사용 되지 않습니다.|Microsoft.Office.Interop.SmartTag.dll|
+|Microsoft 스마트 태그 2.0 형식 라이브러리 **참고:** 스마트 태그는 및에서 더 이상 사용 되지 않습니다. [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]|Microsoft.Office.Interop.SmartTag.dll|
 |Microsoft Visio 14.0 형식 라이브러리<br /><br /> Microsoft Visio 15.0 형식 라이브러리|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14.0 웹으로 저장 형식 라이브러리<br /><br /> Microsoft Visio 15.0 웹으로 저장 형식 라이브러리|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Microsoft Visio 14.0 드로잉 컨트롤 형식 라이브러리<br /><br /> Microsoft Visio 15.0 드로잉 컨트롤 형식 라이브러리|Microsoft.Office.Interop.VisOcx.dll|
-|Microsoft Word 14.0 개체 라이브러리<br /><br /> Microsoft Word 15.0 개체 라이브러리|[Microsoft. m d.](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Microsoft Word 14.0 개체 라이브러리<br /><br /> Microsoft Word 15.0 개체 라이브러리|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
 |Microsoft Visual Basic for Applications Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>바인딩 리디렉션 어셈블리
@@ -127,7 +127,7 @@ Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설�
 
 자세한 내용은 [방법: 자동 바인딩 리디렉션 사용 및 사용 안 함](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)
@@ -137,4 +137,4 @@ Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설�
 - [프로젝트 솔루션](../vsto/project-solutions.md)
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
-- [Visual Studio &#40;에서 일반 참조 Office 개발&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Visual Studio에서 Office 개발 &#40;일반 참조&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

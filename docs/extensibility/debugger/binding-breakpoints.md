@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903226"
 ---
 # <a name="bind-breakpoints"></a>중단점 바인딩
@@ -53,5 +53,5 @@ ms.locfileid: "85903226"
 
  DE가 중단점을 처리 하는 경우에는 바인딩할 수 없지만 다른 DE는이를 바인딩할 수 있지만 경고를 반환 합니다. IDE는 소스 코드 줄의 왼쪽에 있는 중단점 문자 모양 안에 물음표 문자 모양을 배치 하 여 응답 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

@@ -7,10 +7,10 @@ ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
 ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283153"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
