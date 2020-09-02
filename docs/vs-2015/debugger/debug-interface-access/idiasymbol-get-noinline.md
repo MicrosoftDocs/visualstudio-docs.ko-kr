@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_noinline | Microsoft Docs'
+title: 'IDiaSymbol:: get_noInline | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6ee1e21b46e1906b4872e9598e75ac283b013ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698450"
 ---
-# <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
+# <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-함수를 인라인 되지 않은 것으로 표시 되었는지 여부를 지정 하는 플래그를 검색 (사용 하는 [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) 특성).  
+함수가 [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) 특성을 사용 하 여 인라인이 아닌 것으로 표시 되었는지 여부를 지정 하는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,17 +35,17 @@ HRESULT get_noInline(
   
 #### <a name="parameters"></a>매개 변수  
  `pFlag`  
- [out] 반환 `TRUE` 함수에 있으면 합니다 `noinline` 반환이 고, 그렇지 않으면 특성 `FALSE`합니다.  
+ 제한이 `TRUE` 함수에 특성이 있으면를 반환 `noinline` 하 고, 그렇지 않으면를 반환 `FALSE` 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
-|요구 사항|설명|  
+|요구 사항|Description|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
 |버전:|DIA SDK v8.0|  

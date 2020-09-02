@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702312"
 ---
 # <a name="com-and-activex-debugging"></a>COM 및 ActiveX 디버깅
@@ -44,11 +44,11 @@ ms.locfileid: "65702312"
  [COM 디버깅 도구](../debugger/com-debugging-tools.md)  
  COM 애플리케이션을 디버깅하는 데 유용한 뷰어 및 샘플 애플리케이션을 소개합니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)  
  자세한 디버깅 설명서 단원으로 연결되는 링크를 제공합니다. 디버거의 새로운 기능, 설정 및 준비, 중단점, 예외 처리, 편집하며 계속하기, 관리 코드 디버깅, Visual C++ 프로젝트 디버깅, COM 및 ActiveX 디버깅, DLL 디버깅, SQL 디버깅, 사용자 인터페이스 참조 등의 정보를 다룹니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [COM 소개](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
  [ActiveX 컨트롤](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   

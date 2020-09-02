@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697486"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>방법: 병렬 조사식 창 사용
@@ -37,9 +37,9 @@ ms.locfileid: "65697486"
 - 컴퓨터, 프로세스, 타일, 작업 및 스레드를 표시할 수 있는 구성 가능한 열  
   
   > [!TIP]
-  > 열어야 합니다는 **병렬 태스크** 창에서 작업 정보를 표시 하는 **병렬 조사식** 창.  
+  > 병렬 **조사식** 창에 작업 정보를 표시 하려면 **병렬 작업** 창을 열어야 합니다.  
   
-- 합니다  **\<조사식 추가 >** 열에서 조사할 식을 입력할 수 있습니다.  
+- **\<Add Watch>** 조사할 식을 입력할 수 있는 열입니다.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -53,19 +53,19 @@ ms.locfileid: "65697486"
   
 ### <a name="to-add-a-watch-expression"></a>조사식을 추가하려면  
   
-- 선택  **\<조사식 추가 >** 조사식을 지정 합니다.  
+- **\<Add Watch>** 조사식 식을 선택 하 고 지정 합니다.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>스레드에 플래그를 지정하거나 해제하려면  
   
-- 행의 플래그 열을 선택 하거나 스레드에 대 한 바로 가기 메뉴를 열고 선택한 **플래그** 하거나 **플래그 해제**합니다.  
+- 행에 대 한 플래그 열을 선택 하거나 스레드에 대 한 바로 가기 메뉴를 열고 **플래그** 또는 플래그 **해제를 선택**합니다.  
   
 ### <a name="to-display-only-flagged-threads"></a>플래그가 지정된 스레드만 표시하려면  
   
-- 왼쪽 위 모퉁이에 스레드만 표시 단추를 선택 합니다 **병렬 조사식** 창입니다.  
+- **병렬 조사식** 창의 왼쪽 위 모퉁이에서 플래그가 지정 된 항목만 표시 단추를 선택 합니다.  
   
 ### <a name="to-switch-frames"></a>프레임을 전환하려면  
   
-- 프레임 열을 두 번 클릭합니다. (키보드: 행을 선택 하 고 Enter 키를 누릅니다.)  
+- 프레임 열을 두 번 클릭합니다. (키보드: 행을 선택하고 Enter 키를 누릅니다.)  
   
 ### <a name="to-sort-a-column"></a>열을 정렬하려면  
   
@@ -87,7 +87,7 @@ ms.locfileid: "65697486"
   
 - **부울 식으로 필터링** 상자에 부울 식을 입력합니다. 디버거는 각 스레드 컨텍스트에 대한 식을 평가합니다. 값이 `true`인 행만 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+## <a name="see-also"></a>관련 항목  
+ [다중 스레드 응용 프로그램 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)   
  [연습: C++ AMP 애플리케이션 디버깅](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

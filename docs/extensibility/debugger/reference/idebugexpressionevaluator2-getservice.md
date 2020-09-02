@@ -1,5 +1,5 @@
 ---
-title: IDebug표현평가자2::GetService | 마이크로 소프트 문서
+title: 'IDebugExpressionEvaluator2:: GetService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729354"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-고유 식별자가 지정된 서비스 개체를 검색합니다.
+고유 식별자가 지정 된 서비스 개체를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,16 +42,16 @@ int GetService (
 
 ## <a name="parameters"></a>매개 변수
 `uid`\
-【인】 검색할 서비스의 고유 식별자입니다.
+진행 검색할 서비스의 고유 식별자입니다.
 
 `ppService`\
-【아웃】 서비스를 나타내는 개체를 반환합니다.
+제한이 서비스를 나타내는 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 타사 식 평가기에서 다른 식 계산기에서 서비스를 가져오는 데 사용할 수 있습니다. 예를 들어 이 메서드는 기본 식 계산기에서 시각화 도우미 서비스에 대 한 인터페이스를 가져오는 데 사용할 수 있습니다. 타사 식 평가자는 이 인터페이스를 구현할 필요가 없습니다.
+ 타사 식 계산기에서이를 사용 하 여 다른 식 계산기에서 서비스를 가져올 수 있습니다. 예를 들어이 메서드를 사용 하 여 기본 식 계산기에서 시각화 도우미 서비스의 인터페이스를 가져올 수 있습니다. 타사 식 계산기는이 인터페이스를 구현 해야 할 가능성이 거의 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

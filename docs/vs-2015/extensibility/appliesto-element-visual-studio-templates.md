@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698933"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 요소(Visual Studio 템플릿)
@@ -22,7 +22,7 @@ ms.locfileid: "65698933"
   
  이 요소는 선택적입니다. 템플릿 파일에는 최대 하나의 인스턴스만 있을 수 있습니다. 이 요소는 현재 선택된 활성 프로젝트의 기능에 따라 가능한 경우 옵트인하도록 항목 템플릿을 활성화합니다. 항목 템플릿을 적용할 수 없도록 만드는 데 사용할 수는 없습니다. `AppliesTo`가 없거나 식에 성공적으로 옵트인하지 못한 경우, `TemplateID` 또는 `TemplateGroupID`를 사용하여 템플릿을 제품의 이전 버전에 적용할 수 있게 합니다.  
   
- 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 버전을 참조 하려면 참조 [를 참조 하는 Visual Studio 2013 SDK 업데이트 2에 전달 된 어셈블리](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)합니다.  
+ 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 버전을 참조 하려면 [VISUAL STUDIO 2013 SDK 업데이트 2에서 제공 된 어셈블리 참조](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)를 참조 하세요.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,7 +54,7 @@ ms.locfileid: "65698933"
   
  올바른 식 구문은 다음과 같이 정의됩니다.  
   
-- 기능 식과 같은 "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- 기능 식입니다 (예: "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)").  
   
 - "&#124;"는 OR 연산자입니다.  
   
@@ -66,10 +66,10 @@ ms.locfileid: "65698933"
   
 - Null 또는 비어 있는 식은 일치하는 항목으로 계산됩니다.  
   
-- 프로젝트 기능에는 이러한 예약 된 문자를 제외한 모든 문자일 수 있습니다. "':;,+-*/\\! ~&#124;& %$@^() ={}<>? \t\b\n\r  
+- 프로젝트 기능에는 다음 예약 문자를 제외한 모든 문자 ("' ':;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>?)가 있을 수 있습니다. \t\b\n\r  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 세 개의 서로 다른 템플릿을 보여줍니다. `Template1`은 모든 C# 프로젝트 형식 또는 `WindowsAppContainer` 기능을 지원하는 모든 기타 프로젝트 형식에 적용됩니다. `Template2`는 모든 종류의 전체 C# 프로젝트에 적용됩니다. `Template3`은 `WindowsAppContainer` 프로젝트가 아닌 C# 프로젝트에 적용됩니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 세 개의 서로 다른 템플릿을 보여줍니다. `Template1` 모든 c # 프로젝트 형식 또는 기능을 지 원하는 다른 프로젝트 형식에 적용 됩니다 `WindowsAppContainer` . `Template2` 모든 종류의 c # 프로젝트에 적용 됩니다. `Template3`은 `WindowsAppContainer` 프로젝트가 아닌 C# 프로젝트에 적용됩니다.  
   
 ```xml  
 <!--  Template 1 -->  
@@ -98,6 +98,6 @@ ms.locfileid: "65698933"
   
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

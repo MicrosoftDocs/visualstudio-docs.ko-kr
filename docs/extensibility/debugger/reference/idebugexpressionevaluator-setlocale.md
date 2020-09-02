@@ -1,5 +1,5 @@
 ---
-title: IDebug표현평가자::세트로컬 | 마이크로 소프트 문서
+title: 'IDebugExpressionEvaluator:: SetLocale | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57ddee6e1796159c505b67982f25d1ba09684561
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729464"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-이 메서드는 인쇄 가능한 결과를 만드는 데 사용할 언어를 설정합니다.
+이 메서드는 인쇄 가능한 결과를 만드는 데 사용할 언어를 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int SetLocale(
 
 ## <a name="parameters"></a>매개 변수
 `wLangID`\
-【인】 언어 식별자입니다.
+진행 언어 식별자입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 식 평가기(EE)가 로드되는 동안 이 메서드를 여러 번 호출할 수 있으므로 EE는 즉시 언어를 전환할 수 있어야 합니다. EE는 이 로캘을 사용하여 오류 메시지와 문자열을 적절한 언어로 반환합니다.
+ 이 메서드는 식 계산기 (EE)가 로드 되는 동안 여러 번 호출 될 수 있으므로 EE에서 언어를 즉시 전환할 수 있어야 합니다. EE는이 로캘을 사용 하 여 오류 메시지 및 문자열을 적절 한 언어로 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

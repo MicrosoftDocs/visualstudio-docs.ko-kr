@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6816b7465b8a3271ec6ebc0db5046d76e60ec5b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657419"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 애플리케이션에서 조회 테이블 만들기
@@ -34,7 +34,7 @@ ms.locfileid: "72657419"
 
 용어 *조회 테이블* ( *조회 바인딩*이라고 함)은 다른 테이블의 외래 키 필드 값을 기반으로 한 데이터 테이블의 정보를 표시 하는 컨트롤을 설명 합니다. **데이터 소스** 창에서 부모 테이블 또는 개체의 주 노드를 관련 자식 테이블의 열 또는 속성에 이미 바인딩된 컨트롤로 끌어 조회 테이블을 만들 수 있습니다.
 
- 예를 들어 sales 데이터베이스에 `Orders` 테이블이 있다고 가정 합니다. @No__t_0 테이블의 각 레코드에는 주문이 배치 된 고객을 나타내는 `CustomerID` 포함 되어 있습니다. @No__t_0은 `Customers` 테이블의 고객 레코드를 가리키는 외래 키입니다. @No__t_0 테이블의 주문 목록을 표시 하는 경우 `CustomerID` 대신 실제 고객 이름을 표시 하는 것이 좋습니다. 고객 이름이 `Customers` 테이블에 있으므로 고객 이름을 표시 하는 조회 테이블을 만들어야 합니다. 조회 테이블은 `Orders` 레코드의 `CustomerID` 값을 사용 하 여 관계를 탐색 하 고 고객 이름을 반환 합니다.
+ 예를 들어 sales 데이터베이스의 테이블을 생각해 보겠습니다 `Orders` . 테이블의 각 레코드에 `Orders` 는 `CustomerID` 주문에 배치 된 고객을 나타내는가 포함 됩니다. 는 `CustomerID` 테이블의 고객 레코드를 가리키는 외래 키입니다 `Customers` . 테이블의 주문 목록을 표시 하는 경우 `Orders` 대신 실제 고객 이름을 표시 하는 것이 좋습니다 `CustomerID` . 고객 이름이 테이블에 있으므로 `Customers` 고객 이름을 표시 하는 조회 테이블을 만들어야 합니다. 조회 테이블은 레코드의 값을 사용 하 여 `CustomerID` `Orders` 관계를 탐색 하 고 고객 이름을 반환 합니다.
 
 ## <a name="to-create-a-lookup-table"></a>조회 테이블을 만들려면
 
@@ -68,21 +68,21 @@ ms.locfileid: "72657419"
 
     - **ComboBox**
 
-    - **ListBox**
+    - **상자가**
 
     - **ListView**
 
         > [!NOTE]
         > 목록에 **ListBox** 또는 **ListView** 컨트롤이 표시 되지 않는 경우 목록에 이러한 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)을 참조 하세요.
 
-    - @No__t_0에서 파생 되는 모든 사용자 지정 컨트롤입니다.
+    - 에서 파생 되는 모든 사용자 지정 컨트롤 <xref:System.Windows.Controls.Primitives.Selector> 입니다.
 
         > [!NOTE]
         > **데이터 소스** 창에서 항목에 대해 선택할 수 있는 컨트롤 목록에 사용자 지정 컨트롤을 추가 하는 방법에 대 한 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.
 
 8. 자식 노드를 **데이터 소스** 창에서 WPF 디자이너의 컨테이너로 끌어 옵니다. 앞의 예제에서 자식 노드는 **Orders** 노드입니다.
 
-     Visual Studio는 끌어 온 각 항목에 대해 새로운 데이터 바인딩된 컨트롤을 만드는 XAML을 생성 합니다. 또한 XAML은 자식 테이블 또는 개체의 새 <xref:System.Windows.Data.CollectionViewSource>를 놓기 대상의 리소스에 추가 합니다. 일부 데이터 원본의 경우에는 Visual Studio에서 테이블 또는 개체에 데이터를 로드 하는 코드도 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
+     Visual Studio는 끌어 온 각 항목에 대해 새로운 데이터 바인딩된 컨트롤을 만드는 XAML을 생성 합니다. 또한 XAML은 <xref:System.Windows.Data.CollectionViewSource> 자식 테이블이 나 개체에 대 한 새를 놓기 대상의 리소스에 추가 합니다. 일부 데이터 원본의 경우에는 Visual Studio에서 테이블 또는 개체에 데이터를 로드 하는 코드도 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
 
 9. **데이터 소스** 창에서 이전에 만든 조회 바인딩 컨트롤로 부모 노드를 끌어 옵니다. 앞의 예제에서 부모 노드는 **Customers** 노드입니다.
 
@@ -90,10 +90,10 @@ ms.locfileid: "72657419"
 
     |속성|설정 설명|
     |--------------|----------------------------|
-    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|이 속성은 컨트롤에 표시 되는 데이터를 가져오는 데 사용 되는 컬렉션 또는 바인딩을 지정 합니다. Visual Studio는 컨트롤로 끌어 온 부모 데이터의 <xref:System.Windows.Data.CollectionViewSource>으로이 속성을 설정 합니다.|
+    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|이 속성은 컨트롤에 표시 되는 데이터를 가져오는 데 사용 되는 컬렉션 또는 바인딩을 지정 합니다. Visual Studio는 <xref:System.Windows.Data.CollectionViewSource> 컨트롤로 끌어 온 부모 데이터의로이 속성을 설정 합니다.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|이 속성은 컨트롤에 표시 되는 데이터 항목의 경로를 지정 합니다. Visual Studio는 기본 키 뒤에 문자열 데이터 형식이 있는 부모 데이터의 첫 번째 열 또는 속성으로이 속성을 설정 합니다.<br /><br /> 부모 데이터에 다른 열 이나 속성을 표시 하려는 경우이 속성을 다른 속성의 경로로 변경 합니다.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio는이 속성을 디자이너로 끌어 온 자식 데이터의 열 또는 속성에 바인딩합니다. 부모 데이터의 외래 키입니다.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio는 부모 데이터의 외래 키인 자식 데이터의 열 또는 속성 경로에이 속성을 설정 합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual studio에서 데이터에 wpf 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) visual [studio에서 데이터에 wpf 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) wpf [응용 프로그램에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md) [연습: wpf 응용 프로그램에서 관련 데이터 표시](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

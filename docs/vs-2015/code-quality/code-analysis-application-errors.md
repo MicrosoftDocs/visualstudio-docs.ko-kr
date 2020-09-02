@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef5ccc0cf432a5c6782b76c4623bfdc55f66a8b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538557"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 애플리케이션 오류
@@ -57,7 +57,7 @@ ms.locfileid: "85538557"
 |[CA0505](ca0505.md)|속성은 사용 되지 않습니다. Superceding 속성 사용|
 |[FxCopCmd 오류](fxcopcmd-errors.md)|관리 코드 분석 오류입니다.|
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
 
 - [보안 코드 작성에 대 한 지침](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

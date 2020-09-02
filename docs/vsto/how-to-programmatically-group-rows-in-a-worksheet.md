@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537880"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>방법: 프로그래밍 방식으로 워크시트에서 행 그룹화
@@ -58,7 +58,7 @@ ms.locfileid: "85537880"
     > [!NOTE]
     > 행의 그룹을 해제 하려면 <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)
 - [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)

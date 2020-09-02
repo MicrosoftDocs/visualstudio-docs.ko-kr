@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192902"
 ---
 # <a name="item-functions"></a>항목 함수
@@ -54,7 +54,7 @@ MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대�
 ## <a name="intrinsic-item-functions"></a>내장 항목 함수  
  아래 표는 항목에 사용할 수 있는 내장 함수를 나열합니다.  
   
-|함수|예|설명|  
+|기능|예제|설명|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|항목 수를 반환합니다.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|각 항목에 대한 해당 `Path.DirectoryName`을 반환합니다.|  
@@ -102,5 +102,5 @@ MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대�
   -->  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [항목](../msbuild/msbuild-items.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedField::IsclosedType | 마이크로 소프트 문서
+title: 'IDebugExtendedField:: IsClosedType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4524d7c899480518e669f1f77a4756a83e0cf52f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729057"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
-필드가 닫힌 형식을 나타내는지 여부를 결정합니다.
+필드가 폐쇄형 형식을 나타내는지 여부를 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,7 +37,7 @@ int IsClosedType();
 ```
 
 ## <a name="return-value"></a>Return Value
- 필드가 닫힌 형식인 경우 `S_OK`반환합니다. 그렇지 않으면 `S_FALSE`을 반환합니다.
+ 필드가 닫힌 형식이 면는를 반환 하 `S_OK` 고, 그렇지 않으면를 반환 `S_FALSE` 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

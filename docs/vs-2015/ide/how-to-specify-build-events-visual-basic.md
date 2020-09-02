@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670673"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>방법: 빌드 이벤트 지정(Visual Basic)
@@ -144,7 +144,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. 프로젝트 디자이너에서 **컴파일** 탭으로 이동하고 **빌드 이벤트** 단추를 클릭하여 **빌드 이벤트** 대화 상자를 엽니다.
+6. 프로젝트 디자이너에서 **컴파일** 탭으로 이동 하 고 **빌드 이벤트** 단추를 클릭 하 여 **빌드 이벤트** 대화 상자를 엽니다.
 
 7. **빌드 후 이벤트 명령줄** 상자에서 다음 명령을 입력합니다.
 
@@ -164,5 +164,5 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>관련 항목:
- [컴파일 속성 관리](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [게시 페이지, 프로젝트 디자이너](../ide/reference/publish-page-project-designer.md) [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [방법: 빌드 이벤트 지정C#() ](../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>관련 항목
+ [컴파일 속성 관리](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [게시 페이지, 프로젝트 디자이너](../ide/reference/publish-page-project-designer.md) [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [방법: 빌드 이벤트 지정 (c #)](../ide/how-to-specify-build-events-csharp.md)

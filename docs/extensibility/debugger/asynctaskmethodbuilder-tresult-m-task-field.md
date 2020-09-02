@@ -1,5 +1,5 @@
 ---
-title: 비동기TaskMethodBuilder&lt;TResult&gt;.m_task 필드 | 마이크로 소프트 문서
+title: AsyncTaskMethodBuilder &lt; &gt; m_task 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43822417a000a51b11c18e282860dc0dbfb08332
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739363"
 ---
-# <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>비동기 TaskMethod빌더&lt;&gt;TResult .m_task 필드
-느리게 초기화된 빌드 작업을 나타냅니다.
+# <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>AsyncTaskMethodBuilder &lt; &gt; m_task 필드
+초기화 지연 된 빌드된 작업을 나타냅니다.
 
- **네임스페이스:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **네임스페이스:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **어셈블리:** mscorlib (mscorlib.dll)
 
- .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
+ .NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,6 +32,6 @@ ms.locfileid: "80739363"
 .field private class System.Threading.Tasks.Task`1<!TResult> m_task
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [.NET 프레임워크에 대한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework에 대 한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

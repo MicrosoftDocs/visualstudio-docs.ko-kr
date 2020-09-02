@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e7dfc2b1137b30a03425f663d70e12c528dad39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657408"
 ---
 # <a name="data-class-inheritance-or-designer"></a>데이터 클래스 상속(O/R 디자이너)
@@ -40,7 +40,7 @@ ms.locfileid: "72657408"
 |항목|설명|
 |-----------|-----------------|
 |[방법: O/R 디자이너를 사용하여 상속 구성](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]를 사용하여 단일 테이블 상속을 사용하는 엔터티 클래스를 구성하는 방법을 설명합니다.|
-|[연습: 단일 테이블 상속을 사용하여 LINQ to SQL 클래스 만들기(O/R 디자이너)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]를 사용하여 단일 테이블 상속을 사용하는 엔터티 클래스를 구성하는 방법에 대한 단계별 지침을 제공합니다.|
+|[연습: 단일 테이블 상속을 사용 하 여 LINQ to SQL 클래스 만들기 (O/R 디자이너)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]를 사용하여 단일 테이블 상속을 사용하는 엔터티 클래스를 구성하는 방법에 대한 단계별 지침을 제공합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [연습: LINQ to SQL 클래스 만들기 (o-r 디자이너)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [연습: 단일 테이블 상속을 사용 하 여 LINQ to SQL 클래스 만들기 (o/r 디자이너)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md) [시작](https://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)

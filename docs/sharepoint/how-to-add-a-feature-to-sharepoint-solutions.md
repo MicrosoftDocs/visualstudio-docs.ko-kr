@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 07d939a12e47f4ba63f51310efb36cc0a59d20e4
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017004"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>방법: SharePoint 솔루션에 기능 추가
@@ -25,5 +26,5 @@ ms.locfileid: "86017004"
 
 1. **솔루션 탐색기**에서 **기능**에 대 한 바로 가기 메뉴를 열고 **기능 추가**를 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

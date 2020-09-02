@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538638"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하세요.
@@ -50,12 +50,12 @@ ms.locfileid: "85538638"
 ## <a name="examples-of-inconsistent-equality-definitions"></a>일치 하지 않는 같음 정의의 예
 
 ### <a name="description"></a>설명
- 다음 예제에서는 일치 하는 정의가 일치 하지 않는 형식을 보여 줍니다. `BadPoint`같음 연산자의 사용자 지정 구현을 제공 하 여 같음의 의미를 변경 하지만 동일 하 게 동작 하도록를 재정의 하지는 않습니다 <xref:System.Object.Equals%2A> .
+ 다음 예제에서는 일치 하는 정의가 일치 하지 않는 형식을 보여 줍니다. `BadPoint` 같음 연산자의 사용자 지정 구현을 제공 하 여 같음의 의미를 변경 하지만 동일 하 게 동작 하도록를 재정의 하지는 않습니다 <xref:System.Object.Equals%2A> .
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드에서는의 동작을 테스트 합니다 `BadPoint` .
 
  [!code-csharp[FxCop.Usage.TestOperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestOperatorEqualsRequiresEquals/cs/FxCop.Usage.TestOperatorEqualsRequiresEquals.cs#1)]
@@ -68,12 +68,12 @@ ms.locfileid: "85538638"
  **a1 = = a? 예** 
  **b와 bcopy는 동일 합니까? ** 
  **B = = bcopy가 없나요? 예**
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 기술적으로이 규칙을 위반 하지만 일관 되지 않은 방식으로 동작 하지 않는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.ValueTypeEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ValueTypeEquals/cs/FxCop.Usage.ValueTypeEquals.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드에서는의 동작을 테스트 합니다 `GoodPoint` .
 
  [!code-csharp[FxCop.Usage.TestValueTypeEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestValueTypeEquals/cs/FxCop.Usage.TestValueTypeEquals.cs#1)]
@@ -94,7 +94,7 @@ ms.locfileid: "85538638"
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsClassViolation/cs/FxCop.Usage.OverrideEqualsClassViolation.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는를 재정의 하 여 위반을 수정 합니다 <xref:System.Object.Equals%2A?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Usage.OverrideEqualsClassFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsClassFixed/cs/FxCop.Usage.OverrideEqualsClassFixed.cs#1)]
@@ -107,7 +107,7 @@ ms.locfileid: "85538638"
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructViolation/cs/FxCop.Usage.OverrideEqualsStructViolation.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는를 재정의 하 여 위반을 수정 합니다 <xref:System.ValueType.Equals%2A?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructFixed/cs/FxCop.Usage.OverrideEqualsStructFixed.cs#1)]

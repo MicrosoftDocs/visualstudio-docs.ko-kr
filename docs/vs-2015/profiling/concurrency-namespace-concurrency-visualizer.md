@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700479"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>동시성 네임스페이스(동시성 시각화 도우미)
@@ -31,16 +31,16 @@ ms.locfileid: "65700479"
 namespace Concurrency;  
 ```  
   
-## <a name="members"></a>멤버  
+## <a name="members"></a>구성원  
   
 ### <a name="namespaces"></a>네임스페이스  
   
-|이름|설명|  
+|속성|Description|  
 |----------|-----------------|  
-|[diagnostic 네임스페이스](../profiling/diagnostic-namespace.md)|`diagnostics` 네임스페이스는 동시성 시각화 도우미 표식을 내보내는 기능을 제공합니다.|  
+|[진단 네임스페이스](../profiling/diagnostic-namespace.md)|`diagnostics` 네임스페이스는 동시성 시각화 도우미 표식을 내보내는 기능을 제공합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** cvmarkersobj.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [C 라이브러리 참조](../profiling/c-library-reference.md)
