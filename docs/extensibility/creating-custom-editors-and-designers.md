@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0ddfe2b61c8ef08d77fbb7c841b3bb69c167af2f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903732"
 ---
 # <a name="create-custom-editors-and-designers"></a>사용자 지정 편집기 및 디자이너 만들기
@@ -102,6 +102,6 @@ Visual Studio 핵심 편집기에 대 한 자세한 내용은 [편집기 및 언
 [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)\
 의 나머지와 일치 하는 UI 요소를 만드는 방법을 설명 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

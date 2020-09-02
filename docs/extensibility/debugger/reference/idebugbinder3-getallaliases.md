@@ -1,5 +1,5 @@
 ---
-title: 이데버그바인더3:겟알리아스 | 마이크로 소프트 문서
+title: 'IDebugBinder3:: GetAllAliases | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2d512fa6eb7529e11c766d7c173b318aa6f8f2f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735814"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
-이 메서드는 프로그램에서 별칭 목록을 검색합니다.
+이 메서드는 프로그램에서 별칭 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,16 +45,16 @@ int GetAllAliases(
 
 ## <a name="parameters"></a>매개 변수
 `uRequest`\
-【인】 반환할 별칭의 최대 수(전달된 배열의 길이를 `ppAliases`지정함).
+진행 반환할 별칭의 최대 수입니다 (로 전달 되는 배열의 길이를 지정 `ppAliases` ).
 
 `ppAliases`\
-【인, 아웃】 별칭으로 채울 배열(null 값이고 `uRequest` 0인 경우 반환할 수 있는 별칭 수가 `puFetched`반환됨).
+[in, out] 별칭으로 채울 배열입니다 .이 값이 null 값이 고 `uRequest` 가 0 이면에서 반환 될 수 있는 별칭 수가 반환 됩니다 `puFetched` .
 
 `puFetched`\
-【아웃】 가져온 별칭 수를 반환합니다.
+제한이 가져온 별칭의 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

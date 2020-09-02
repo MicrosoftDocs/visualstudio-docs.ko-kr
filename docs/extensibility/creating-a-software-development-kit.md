@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904114"
 ---
 # <a name="create-a-software-development-kit"></a>소프트웨어 개발 키트 만들기
@@ -135,7 +135,7 @@ Sdk에는 다음과 같은 두 가지 유형이 있습니다.
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-*SDKManifest.xml* 파일은 Visual STUDIO에서 SDK를 사용 하는 방법을 설명 합니다. 다음은 예입니다.
+*SDKManifest.xml* 파일은 Visual STUDIO에서 SDK를 사용 하는 방법을 설명 합니다. 다음은 이에 대한 예입니다.
 
 ```
 <FileList>
@@ -195,7 +195,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. 파일 참조: 컨트롤을 포함 하거나 네이티브 Winmd 참조에 대해서만 지정 됩니다. 참조에 컨트롤이 포함 되는지 여부를 지정 하는 방법에 대 한 자세한 내용은 아래 [도구 상자 항목의 위치 지정](#ToolboxItems) 을 참조 하세요.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>도구 상자 항목의 위치 지정
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> 도구 상자 항목의 위치 지정
 
 *SDKManifest.xml* 스키마의 **ToolBoxItems** 요소는 플랫폼과 확장 sdk 둘 다에서 도구 상자 항목의 범주 및 위치를 지정 합니다. 다음 예에서는 다른 위치를 지정 하는 방법을 보여 줍니다. 이는 WinMD 또는 DLL 참조에 적용 됩니다.
 
@@ -267,7 +267,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [연습: c # 또는 Visual Basic를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

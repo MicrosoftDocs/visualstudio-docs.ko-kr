@@ -1,5 +1,5 @@
 ---
-title: '방법: 기술 지원에 대 한 링크를 지정 합니다. | Microsoft Docs'
+title: '방법: 기술 지원을 위한 링크 지정 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,18 +22,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148093"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>방법: 기술 지원을 위한 링크 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-게시 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 **지원 URL** 웹 페이지 또는 사용자가 응용 프로그램에 대 한 정보를 이동할 파일 공유를 식별 하는 속성입니다. 이 속성은 선택 사항입니다. URL을 제공 하는 경우 응용 프로그램의 항목에 표시 됩니다 **프로그램 추가 / 제거** 대화 상자.  
+응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **지원 URL** 속성은 사용자가 응용 프로그램에 대 한 정보를 얻기 위해 이동할 수 있는 웹 페이지 또는 파일 공유를 식별 합니다. 이 속성은 선택 사항입니다. 제공 된 경우 URL은 응용 프로그램의 항목 **추가/제거** 대화 상자에 표시 됩니다.  
   
- **지원 URL** 속성에 설정할 수 있습니다 합니다 **게시** 페이지를 **프로젝트 디자이너**합니다.  
+ **지원 URL** 속성은 **프로젝트 디자이너**의 **게시** 페이지에서 설정할 수 있습니다.  
   
 ### <a name="to-specify-a-support-url"></a>지원 URL을 지정 하려면  
   
@@ -41,11 +41,11 @@ ms.locfileid: "68148093"
   
 2. **게시** 탭을 클릭합니다.  
   
-3. 클릭 합니다 **옵션** 버튼을 클릭 합니다 **게시 옵션** 대화 상자.  
+3. **옵션** 단추를 클릭 하 여 **게시 옵션** 대화 상자를 엽니다.  
   
-4. 클릭 **설명을**합니다.  
+4. **설명**을 클릭 합니다.  
   
-5. 에 **지원 URL** 필드에 웹 사이트, 웹 페이지 또는 UNC 공유에는 정규화 된 경로 입력 합니다.  
+5. **지원 URL** 필드에 웹 사이트, 웹 페이지 또는 UNC 공유의 정규화 된 경로를 입력 합니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)   

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986050"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 솔루션 세계화 및 지역화
@@ -47,7 +47,7 @@ ms.locfileid: "72986050"
  문서 텍스트와 상호 작용하는 일부 코드가 텍스트의 언어와 계속 일치하는지 그리고 책갈피, 명명된 범위, 기타 표시 필드가 다른 문법 및 텍스트 길이에 맞도록 조정하는 데 필요한 Office 문서의 서식을 다시 지정하는 것을 수용하는지는 여전히 확인해야 합니다. 비교적 적은 양의 텍스트가 포함된 문서 템플릿의 경우 리소스 파일에 텍스트를 저장한 다음 런타임에 텍스트를 로드하는 것이 좋습니다.
 
 ### <a name="text-direction"></a>텍스트 방향
- Excel에서는 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 워크시트의 속성을 설정할 수 있습니다. 호스트 컨트롤 또는 `RightToLeft` 속성이 있는 모든 컨트롤은 런타임에 자동으로 이러한 설정과 일치 합니다. Word에는 양방향 텍스트에 대 한 문서 설정이 없으므로 컨트롤을이 설정에 매핑할 수 없습니다. 대신 각 컨트롤에 대한 텍스트 맞춤을 설정해야 합니다. 모든 컨트롤을 안내하는 코드를 작성하고 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 할 수 있습니다.
+ Excel에서는 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 워크시트의 속성을 설정할 수 있습니다. 호스트 컨트롤 또는 속성을 가진 모든 컨트롤 `RightToLeft` 은 런타임에 자동으로 이러한 설정과 일치 합니다. Word에는 양방향 텍스트에 대 한 문서 설정이 없으므로 컨트롤을이 설정에 매핑할 수 없습니다. 대신 각 컨트롤에 대한 텍스트 맞춤을 설정해야 합니다. 모든 컨트롤을 안내하는 코드를 작성하고 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 할 수 있습니다.
 
 ### <a name="change-culture"></a>문화권 변경
  문서 수준 사용자 지정 코드는 일반적으로 Excel의 주 UI 스레드를 공유하므로 스레드 문화권을 변경하면 해당 스레드에서 실행되는 그 밖의 모든 부분에 영향을 미칩니다. 즉, 변경 내용이 사용자 지정에 제한되는 것이 아닙니다.
@@ -55,7 +55,7 @@ ms.locfileid: "72986050"
  Windows Forms 컨트롤은 애플리케이션 수준 VSTO 추가 기능을 호스트 애플리케이션에서 시작하기 전에 초기화됩니다. 이러한 상황에서 문화권은 UI 컨트롤을 설정하기 전에 변경되어야 합니다.
 
 ## <a name="install-the-language-packs"></a>언어 팩 설치
- Windows에 대해 영어가 아닌 설정이 있는 경우 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩을 설치하여 Windows와 동일한 언어로 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 메시지를 볼 수 있습니다. 최종 사용자가 Windows에 대해 영어가 아닌 설정으로 솔루션을 실행하는 경우 Windows와 동일한 언어로 런타임 메시지를 보려면 올바른 언어 팩이 있어야 합니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 다운로드할 수 있습니다.
+ Windows에 대해 영어가 아닌 설정이 있는 경우 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩을 설치하여 Windows와 동일한 언어로 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 메시지를 볼 수 있습니다. 최종 사용자가 Windows에 대해 영어가 아닌 설정으로 솔루션을 실행하는 경우 Windows와 동일한 언어로 런타임 메시지를 보려면 올바른 언어 팩이 있어야 합니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]언어 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 다운로드할 수 있습니다.
 
  또한 ClickOnce 메시지를 위해 재배포 가능한 .NET Framework 언어 팩이 필요합니다. .NET Framework 언어 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 다운로드할 수 있습니다.
 
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Visual Studio의 Office 개발 도구를 사용하여 만든 솔루션에서 사용되고 COM interop를 통해 Excel로 전달되는 경우 날짜 서식이 en-US 스타일로 지정될 때 동일한 코드는 동일한 결과를 생성합니다.
 
- 예를 들면,
+ 예를 들면 다음과 같습니다.
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
@@ -95,7 +95,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>외부 데이터를 사용 하는 응용 프로그램
  레거시 시스템에서 내보낸 쉼표로 구분된 값이 포함된 파일(CSV 파일)과 같이 외부 데이터를 사용하거나 열려 있는 모든 코드는 en-US 이외의 서식을 사용하여 이러한 파일을 내보내는 경우에도 영향을 받을 수 있습니다. 데이터베이스가 날짜를 문자열로 저장하지 않거나 이진 형식을 사용하는 작업만 수행하면 모든 값이 이진 형식이 되기 때문에 데이터베이스 액세스가 영향을 받지 않을 수 있습니다. 또한 Excel의 데이터를 사용하여 SQL 쿼리를 구성하는 경우 사용하는 함수에 따라 해당 쿼리가 en-US 형식인지 확인해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: Office 다국어 사용자 인터페이스 대상](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)

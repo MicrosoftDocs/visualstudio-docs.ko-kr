@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac2ce4f823d82d8a0d8569e15c4ba8920d91d36c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686829"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>방법: IIS 속성 설정 확인
@@ -33,11 +33,11 @@ ms.locfileid: "65686829"
 IIS 관리 도구를 사용하여 웹 애플리케이션의 속성을 설정할 수 있습니다. 이러한 속성이 제대로 설정되어 있어야 애플리케이션이 실행되므로 일반적으로 문제를 해결하는 데는 이러한 설정을 확인하는 단계가 필요합니다.  
   
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.  
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>웹 애플리케이션에 대한 IIS 설정을 확인하려면  
   
-1. 엽니다는 **관리 도구** 창: 에 **시작** 메뉴에서 **프로그램**를 클릭 하 고 **관리 도구**합니다. **관리 도구**가 **프로그램** 메뉴에 없으면 **제어판**에서 찾습니다.  
+1. **관리 도구** 창을 엽니다. **시작** 메뉴에서 **프로그램**을 가리킨 다음 **관리 도구**를 클릭합니다. **관리 도구**가 **프로그램** 메뉴에 없으면 **제어판**에서 찾습니다.  
   
     - Windows 2000에서는 **인터넷 서비스 관리자**를 선택합니다.  
   
@@ -61,7 +61,7 @@ IIS 관리 도구를 사용하여 웹 애플리케이션의 속성을 설정할 
   
     3. **확인**을 클릭하여 **인증 방법** 대화 상자를 닫습니다.  
   
-5. ATL 서버 애플리케이션의 경우 DEBUG 동사가 ISAPI 확장과 관련이 있는지 여부를 확인합니다. 자세한 내용은 [방법: DEBUG 동사 확장이 연결](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e)합니다.  
+5. ATL 서버 애플리케이션의 경우 DEBUG 동사가 ISAPI 확장과 관련이 있는지 여부를 확인합니다. 자세한 내용은 [방법: DEBUG 동사를 확장과 연결](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e)을 참조하세요.  
   
 6. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 애플리케이션의 경우, 해당 애플리케이션의 가상 폴더에 **IIS(인터넷 정보 서비스) 관리자**, **인터넷 서비스 관리자** 또는 **인터넷 정보 서비스**에 설정된 애플리케이션 이름이 있는지 확인합니다.  
   
@@ -79,5 +79,5 @@ IIS 관리 도구를 사용하여 웹 애플리케이션의 속성을 설정할 
   
 9. **확인**을 클릭하여 **IIS(인터넷 정보 서비스) 관리자**, **인터넷 서비스 관리자** 또는 **인터넷 정보 서비스** 대화 상자를 닫습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [문제 해결](../debugger/debugging-web-applications-troubleshooting.md)

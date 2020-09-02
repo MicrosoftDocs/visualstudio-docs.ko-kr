@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904018"
 ---
 # <a name="create-a-settings-category"></a>설정 범주 만들기
@@ -25,7 +25,7 @@ ms.locfileid: "85904018"
 
 이 연습을 시작 하려면 먼저 [옵션 만들기 페이지](../extensibility/creating-an-options-page.md)의 첫 번째 섹션을 완료 해야 합니다. 결과 옵션 속성 표를 사용 하 여 범주의 속성을 검토 하 고 변경할 수 있습니다. 속성 범주를 설정 파일에 저장 한 후 파일을 검사 하 여 속성 값이 저장 되는 방법을 확인 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-settings-category"></a>설정 범주 만들기
@@ -37,7 +37,7 @@ ms.locfileid: "85904018"
 
 2. *VSPackage* 파일을 열고 다음 세 개의 문자열 리소스를 추가 합니다.
 
-    |이름|값|
+    |Name|값|
     |----------|-----------|
     |106|내 범주|
     |107|내 설정|
@@ -114,7 +114,7 @@ ms.locfileid: "85904018"
 
      **설정 파일 이름** 페이지가 나타납니다.
 
-9. 새 설정 파일의 이름을 *Mysettings* 로 설정 하 고 해당 디렉터리에 저장 합니다. **Finish**를 클릭합니다.
+9. 새 설정 파일의 이름을 *Mysettings* 로 설정 하 고 해당 디렉터리에 저장 합니다. **마침**을 클릭합니다.
 
      **내보내기 완료** 페이지에서 설정을 성공적으로 내보냈습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: '연습: Visual Basic에서 시각화 도우미 작성 | Microsoft Docs'
+title: '연습: Visual Basic에서 시각화 도우미 작성 Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 954bd976317f5b5ad577b1236c9d7421c2d50315
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688213"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>연습: Visual Basic에서 시각화 도우미 작성
@@ -30,7 +30,7 @@ ms.locfileid: "65688213"
 이 연습에서는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]을 사용하여 간단한 시각화 도우미를 작성하는 방법을 보여 줍니다. 이 연습에서 만들 시각화 도우미는 Windows Forms 메시지 상자를 사용하여 문자열의 내용을 표시합니다. 이 간단한 문자열 시각화 도우미는 프로젝트에 더 유용하게 사용할 수 있는 다른 형식에 대한 시각화 도우미를 만드는 방법을 보여 주는 기본 예제입니다.  
   
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴로 이동하여 **가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴로 이동하여 **가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.  
   
  시각화 도우미 코드는 디버거에서 읽을 DLL에 배치해야 합니다. 따라서 가장 먼저 할 일은 DLL의 클래스 라이브러리 프로젝트를 만드는 것입니다.  
   
@@ -40,9 +40,9 @@ ms.locfileid: "65688213"
   
 1. **파일** 메뉴에서 **새로 만들기**를 선택하고 **새 프로젝트**를 클릭합니다.  
   
-2. 에 **새 프로젝트** 대화 상자의 **프로젝트 형식**를 클릭 **Visual Basic**합니다.  
+2. **새 프로젝트** 대화 상자의 **프로젝트 형식**에서 **Visual Basic**를 클릭 합니다.  
   
-3. 에 **템플릿을** 상자를 클릭 합니다 **클래스 라이브러리**합니다.  
+3. **템플릿** 상자에서 **클래스 라이브러리**를 클릭 합니다.  
   
 4. **이름** 상자에 **MyFirstVisualizer** 같이 적절한 클래스 라이브러리 이름을 입력합니다.  
   
@@ -57,7 +57,7 @@ ms.locfileid: "65688213"
 2. 이름을 Class1.vb에서 DebuggerSide.vb 같은 의미 있는 이름으로 변경합니다.  
   
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 새 파일 이름과 일치하도록 DebuggerSide.vb의 클래스 선언이 자동으로 변경됩니다.  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 새 파일 이름과 일치하도록 DebuggerSide.vb의 클래스 선언이 자동으로 변경됩니다.  
   
 3. **솔루션 탐색기**에서 **내 첫 번째 시각화 도우미**를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **참조 추가**를 클릭합니다.  
   
@@ -89,7 +89,7 @@ ms.locfileid: "65688213"
    Inherits DialogDebuggerVisualizer  
    ```  
   
-   `DialogDebuggerVisualizer`에는 재정의해야 할 추상 메서드 하나(`Show`)가 있습니다.  
+   `DialogDebuggerVisualizer`에는 재정의해야 할 한 가지 추상 메서드 `Show`가 있습니다.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>DialogDebuggerVisualizer.Show 메서드를 재정의하려면  
   
@@ -167,7 +167,7 @@ ms.locfileid: "65688213"
   
 1. **파일** 메뉴에서 **추가**를 클릭한 다음, **새 프로젝트**를 클릭합니다.  
   
-2. 에 **새 프로젝트 추가** 대화 상자의 합니다 **템플릿** 상자를 클릭 합니다 **콘솔 응용 프로그램**합니다.  
+2. **새 프로젝트 추가** 대화 상자의 **템플릿** 상자에서 **콘솔 응용 프로그램**을 클릭 합니다.  
   
 3. **이름** 상자에서 **MyTestConsole** 같은 의미 있는 이름을 콘솔 애플리케이션에 부여합니다.  
   
@@ -200,7 +200,7 @@ ms.locfileid: "65688213"
   
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 새 파일 이름과 일치하도록 TestConsole.vb의 클래스 선언이 자동으로 변경된다는 점에 유의해야 합니다.  
   
-3. TestConsole에서. vb에 다음 추가 `Imports` 문:  
+3. TestConsole. vb에서 다음 `Imports` 문을 추가합니다.  
   
    ```  
    Imports MyFirstVisualizer  
@@ -227,7 +227,7 @@ ms.locfileid: "65688213"
   
    시각화 도우미를 테스트 환경에서 호출하는 대신 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 사용하려면 이를 설치해야 합니다. 자세한 내용은 [방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [시각화 도우미 아키텍처](../debugger/visualizer-architecture.md)   
  [방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)   
  [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)

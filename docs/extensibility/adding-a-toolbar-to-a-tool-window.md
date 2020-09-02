@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904130"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>도구 창에 도구 모음 추가
@@ -27,7 +27,7 @@ ms.locfileid: "85904130"
 
  도구 모음을 추가 하는 방법에 대 한 자세한 내용은 [도구 모음 추가](../extensibility/adding-a-toolbar.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>도구 창에 대 한 도구 모음 만들기
@@ -113,5 +113,5 @@ ms.locfileid: "85904130"
 
 3. 도구 모음에서 아이콘을 클릭 하 여 **TwMenuItemCallback () 내의 Twtestcommandpackage**메시지를 표시 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [도구 모음 추가](../extensibility/adding-a-toolbar.md)

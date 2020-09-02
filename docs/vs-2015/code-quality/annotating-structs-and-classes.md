@@ -25,10 +25,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271576"
 ---
 # <a name="annotating-structs-and-classes"></a>구조체 및 클래스에 주석 지정
@@ -40,25 +40,25 @@ ms.locfileid: "77271576"
   
 - `_Field_range_(low, high)`  
   
-     필드는 `low`에서 `high`까지의 범위 (포함)에 있습니다.  적절 한 사전 또는 사후 조건을 사용 하 여 주석이 달린 개체에 적용 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`와 동일 합니다.  
+     필드가의 범위 (포함)에 있는 경우 `low` `high`  `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`적절 한 사전 또는 사후 조건을 사용 하 여 주석이 달린 개체에 적용 되는 것과 동일 합니다.  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
-     `size`에 지정 된 대로 (또는 바이트) 요소에 쓰기 가능한 크기가 있는 필드입니다.  
+     로 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드 `size` 입니다.  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
-     `size`에 의해 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드 및 읽을 수 있는 요소 (바이트)의 `count`입니다.  
+     로 지정 된 요소 (또는 바이트) `size` 와 `count` 읽을 수 있는 요소 (바이트)의 쓰기 가능 크기를 갖는 필드입니다.  
   
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
-     `size`에 지정 된 대로 읽을 수 있는 크기와 쓰기 가능한 크기의 요소 (또는 바이트)가 모두 있는 필드입니다.  
+     에 지정 된 대로 읽을 수 있는 크기와 쓰기 가능한 크기의 요소 (또는 바이트)가 모두 있는 필드입니다 `size` .  
   
 - `_Struct_size_bytes_(size)`  
   
-     `size`에 지정 된 대로 읽을 수 있는 크기와 쓰기 가능한 크기의 요소 (또는 바이트)가 모두 있는 필드입니다.  
+     에 지정 된 대로 읽을 수 있는 크기와 쓰기 가능한 크기의 요소 (또는 바이트)가 모두 있는 필드입니다 `size` .  
   
-     구조체 또는 클래스 선언에 적용 됩니다.  `size`에 지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  다음은 그 예입니다.  
+     구조체 또는 클래스 선언에 적용 됩니다.  에서 지정 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다 `size` .  예를 들면 다음과 같습니다.  
   
     ```cpp  
   
@@ -70,16 +70,16 @@ ms.locfileid: "77271576"
   
     ```  
   
-     `MyStruct *` 형식의 매개 변수 `pM` 버퍼 크기 (바이트)는 다음과 같습니다.  
+     형식의 매개 변수 버퍼 크기 (바이트)는 `pM` `MyStruct *` 다음과 같습니다.  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [CC++ /코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL  이해](../code-quality/understanding-sal.md)  
- [함수 매개 변수 및 반환 값에 주석을 추가](../code-quality/annotating-function-parameters-and-return-values.md)   
+## <a name="see-also"></a>관련 항목  
+ [C/c + + 코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL 이해](../code-quality/understanding-sal.md)   
+ [함수 매개 변수 및 반환 값에 주석 달기](../code-quality/annotating-function-parameters-and-return-values.md)   
  [함수 동작에 주석 달기](../code-quality/annotating-function-behavior.md)   
  [잠금 동작에 주석 달기](../code-quality/annotating-locking-behavior.md)   
  [주석이 적용 되는 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)   

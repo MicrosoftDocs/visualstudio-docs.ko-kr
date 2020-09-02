@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: baeae2af825edc6a0032445288de7311b1ab1ae1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664398"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>방법: 3차원 모델의 피벗 점 수정
@@ -32,7 +32,7 @@ ms.locfileid: "72664398"
 
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>3D 모델의 피벗 점을 수정하려면
 
-1. [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)에 설명된 모델과 같은 기존 3D 모델로 시작합니다.
+1. [방법: 기본 3 차원 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)에 설명 된 것과 같은 기존 3d 모델로 시작 합니다.
 
 2. 피벗 모드를 시작합니다. **모델 편집기 모드** 도구 모음에서 **피벗 모드** 단추를 선택하여 피벗 모드를 활성화합니다. 모델 편집기가 현재 피벗 모드임을 나타내는 **피벗 모드** 단추가 상자 주변에 나타납니다. 피벗 모드에서 좌표 이동 등의 작업은 세계 좌표 위치에 있는 개체의 구조가 아니라 개체의 피벗 점에 영향을 미칩니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72664398"
 
    수정된 피벗 점이 있는 모델은 다음과 같습니다.
 
-   ![수정 된 피벗 점이 있는 집의 모델입니다.](../designers/media/digit-modified-model.png "숫자 수정 됨-모델")
+   ![수정된 피벗 점이 있는 집 모델](../designers/media/digit-modified-model.png "숫자 수정 됨-모델")
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 기본 3 차원 모델](../designers/how-to-create-a-basic-3-d-model.md) [모델 편집기](../designers/model-editor.md) 만들기

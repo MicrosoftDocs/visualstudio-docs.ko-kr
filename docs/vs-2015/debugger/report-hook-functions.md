@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a492a1db8b65cad74d02cec0f43bf0c81461730
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687505"
 ---
 # <a name="report-hook-functions"></a>보고서 후크 함수
@@ -41,16 +41,16 @@ ms.locfileid: "65687505"
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- 에 전달 하는 포인터 **_CrtSetReportHook** 유형의 **_CRT_REPORT_HOOK**CRTDBG에 정의 된 대로 합니다. H:  
+ **_CrtSetReportHook**에 전달한 포인터는 CRTDBG.H에 정의된 대로 **_CRT_REPORT_HOOK** 형식입니다.  
   
 ```  
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- 런타임 라이브러리가 후크 함수를 호출하면, *nRptType* 인수는 보고서의 범주(**_CRT_WARN**, **_CRT_ERROR** 또는 **_CRT_ASSERT**)를 포함하고, *szMsg*는 완전히 어셈블된 보고서 메시지 문자열에 대한 포인터를 포함하며, *retVal*은 보고서 생성 후에 `_CrtDbgReport`가 계속 정상적으로 실행되어야 할 것인지 또는 디버거를 시작해야 할 것인지 지정합니다. (*retVal* 값이 0이면 계속 실행하고 값이 1이면 디버거를 시작합니다.)  
+ 런타임 라이브러리가 후크 함수를 호출하면, *nRptType* 인수는 보고서의 범주( **_CRT_WARN**, **_CRT_ERROR** 또는 **_CRT_ASSERT**)를 포함하고, *szMsg*는 완전히 어셈블된 보고서 메시지 문자열에 대한 포인터를 포함하며, *retVal*은 보고서 생성 후에 `_CrtDbgReport`가 계속 정상적으로 실행되어야 할 것인지 또는 디버거를 시작해야 할 것인지 지정합니다. (*retVal* 값이 0이면 계속 실행하고 값이 1이면 디버거를 시작합니다.)  
   
  요청한 메시지를 후크가 완전히 처리하여 더 이상 보고할 필요가 없으면 **TRUE**를 반환해야 합니다. **FALSE**를 반환하면 `_CrtDbgReport`가 정상적으로 메시지를 보고합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버그 후크 함수 작성](../debugger/debug-hook-function-writing.md)   
  [crt_dbg2 샘플](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

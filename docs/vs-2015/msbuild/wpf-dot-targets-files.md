@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2839cce2a49eb4be8e72f370fe60be3d81529da1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687129"
 ---
 # <a name="wpf-targets-files"></a>WPF .Targets 파일
@@ -30,7 +30,7 @@ ms.locfileid: "65687129"
 
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)]는 특수 .targets 파일인 **Microsoft.WinFX.targets**에 결합되는 [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)] 관련 작업 집합을 추가하여 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)]를 확장합니다. 이 파일은 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)]에서 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 프로젝트를 빌드하는 데 필요한 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 작업 집합을 조합합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [.Targets 파일](../msbuild/msbuild-dot-targets-files.md)   
+## <a name="see-also"></a>관련 항목  
+ [. 대상 파일](../msbuild/msbuild-dot-targets-files.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [WPF 애플리케이션 빌드(WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

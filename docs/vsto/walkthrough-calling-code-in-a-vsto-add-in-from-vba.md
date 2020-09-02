@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650780"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>연습: VBA에서 VSTO 추가 기능의 코드 호출
@@ -42,8 +42,8 @@ ms.locfileid: "72650780"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -123,7 +123,7 @@ ms.locfileid: "72650780"
 
      `ThisWorkbook` 개체의 코드 파일이 열립니다.
 
-6. 다음 VBA 코드를 코드 파일에 추가합니다. 이 코드는 먼저 **ExcelImportData** VSTO 추가 기능을 나타내는 COMAddIn 개체를 가져옵니다. 그런 다음 코드는 COMAddIn 개체의 개체 속성을 사용 하 여 `ImportData` 메서드를 호출 합니다.
+6. 다음 VBA 코드를 코드 파일에 추가합니다. 이 코드는 먼저 **ExcelImportData** VSTO 추가 기능을 나타내는 COMAddIn 개체를 가져옵니다. 그런 다음 코드는 COMAddIn 개체의 개체 속성을 사용 하 여 메서드를 호출 합니다 `ImportData` .
 
     ```vb
     Sub CallVSTOMethod()
@@ -150,10 +150,10 @@ ms.locfileid: "72650780"
 
 - VSTO 추가 기능에서 리본을 사용자 지정 합니다. 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md) 및 [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [VSTO 추가 기능 아키텍처](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

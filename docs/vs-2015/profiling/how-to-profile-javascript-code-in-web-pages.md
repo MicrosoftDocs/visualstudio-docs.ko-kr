@@ -1,5 +1,5 @@
 ---
-title: '방법: 웹 페이지에서 JavaScript 코드 프로파일링 | Microsoft Docs'
+title: '방법: 웹 페이지에서 JavaScript 코드 프로파일링 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688140"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>방법: 웹 페이지의 JavaScript 코드 프로 파일링
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>방법: 웹 페이지에서 JavaScript 코드 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구는 계측 프로파일링 방법을 사용하여 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램, 임의 웹 페이지 또는 JavaScript 응용 프로그램에서 실행되는 JavaScript 코드에 대한 성능 데이터를 수집할 수 있습니다.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로 파일링 도구는 계측 프로파일링 방법을 사용하여 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 애플리케이션, 임의 웹 페이지 또는 JavaScript 애플리케이션에서 실행되는 JavaScript 코드에 대한 성능 데이터를 수집할 수 있습니다.  
   
  **요구 사항**  
   
@@ -34,7 +34,7 @@ ms.locfileid: "65688140"
 > [!WARNING]
 > Windows 스토어 응용 프로그램에서 JavaScript를 프로파일링하려면 다음 항목 중 하나를 참조하십시오.  
 > 
-> - [JavaScript 함수 타이밍](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [원격 장치에서 JavaScript 함수 타이밍](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - 원격 장치에서 [Javascript 함수 타이밍](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [javascript 함수 타이밍](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [JavaScript 함수 타이밍 데이터 분석](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
@@ -42,7 +42,7 @@ ms.locfileid: "65688140"
   
  JavaScript 프로파일링을 지정하면 브라우저에서 실행되는 JavaScript 코드 및 서버에서 실행되는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 코드가 둘 다 프로파일링됩니다.  
   
-- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램의 경우 브라우저에서 실행되는 JavaScript 코드 및 서버에서 실행되는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 코드가 둘 다 프로파일링됩니다.  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 애플리케이션의 경우 브라우저에서 실행되는 JavaScript 코드 및 서버에서 실행되는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 코드가 둘 다 프로파일링됩니다.  
   
 - 임의 웹 페이지의 경우 브라우저에서 실행되는 JavaScript 코드가 프로파일링됩니다.  
   
@@ -58,7 +58,7 @@ ms.locfileid: "65688140"
   
 5. 마법사의 세 번째 페이지에서 **JavaScript 프로파일링** 확인란을 선택하고 **다음**을 클릭합니다.  
   
-6. 마법사의 네 번째 페이지에서 **마침** 을 클릭하여 브라우저에서 웹 애플리케이션을 시작합니다.  
+6. 마법사의 네 번째 페이지에서 **마침** 을 클릭 하 여 브라우저에서 웹 응용 프로그램을 시작 합니다.  
   
 7. 프로파일링하려는 기능을 실행합니다.  
   
@@ -76,11 +76,11 @@ ms.locfileid: "65688140"
   
 5. 마법사의 세 번째 페이지에서 다음을 수행합니다.  
   
-    1. **응용 프로그램을 실행할 URL 또는 경로** 상자에 페이지의 URL을 입력합니다.  
+    1. **애플리케이션을 실행할 URL 또는 경로** 상자에 페이지의 URL을 입력합니다.  
   
     2. **JavaScript 프로파일링** 확인란을 선택하고 **다음**을 클릭합니다.  
   
-6. 마법사의 네 번째 페이지에서 **마침** 을 클릭하여 브라우저에서 웹 페이지를 시작합니다.  
+6. 마법사의 네 번째 페이지에서 **마침** 을 클릭 하 여 브라우저에서 웹 페이지를 시작 합니다.  
   
 7. 프로파일링하려는 기능을 실행합니다.  
   
