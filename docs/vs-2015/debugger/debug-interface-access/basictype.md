@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 38de89b9774ac20f67b91e4ba864534122f4cdb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580839"
 ---
 # <a name="basictype"></a>BasicType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-기호 기본 형식을 지정합니다.  
+기호의 기본 유형을 지정 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum BasicType {   
@@ -52,66 +52,66 @@ enum BasicType { 
   
 ## <a name="elements"></a>요소  
  btNoType  
- 기본 형식이 지정 되지 않은 합니다.  
+ 기본 형식을 지정 하지 않았습니다.  
   
  btVoid  
- 기본 형식은 `void`합니다.  
+ 기본 형식은 `void` 입니다.  
   
  btChar  
- 기본 형식은 `char` (C /C++ 형식).  
+ 기본 형식은 `char` (c/c + + 형식)입니다.  
   
  btWChar  
- 기본 형식은 와이드 (유니코드) 문자 (`WCHAR`).  
+ 기본 형식은 와이드 (유니코드) 문자 ( `WCHAR` )입니다.  
   
  btInt  
- 기본 형식은 `signed int` (C /C++ 형식).  
+ 기본 형식은 `signed int` (C/c + + 형식)입니다.  
   
  btUInt  
- 기본 형식은 `unsigned int` (C /C++ 형식).  
+ 기본 형식은 `unsigned int` (C/c + + 형식)입니다.  
   
  btFloat  
- 기본 형식은 부동 소수점 숫자로 (`FLOAT`).  
+ 기본 형식은 부동 소수점 숫자 ( `FLOAT` )입니다.  
   
  btBCD  
- 기본 형식은 이진 코딩 된 10 진수 (`BCD`).  
+ 기본 형식은 이진으로 코딩 된 10 진수 ( `BCD` )입니다.  
   
  btBool  
- 기본 형식은 부울 (`BOOL`).  
+ 기본 형식은 부울 ( `BOOL` )입니다.  
   
  btLong  
- 기본 형식은 `long int` (C /C++ 형식).  
+ 기본 형식은 `long int` (c/c + + 형식)입니다.  
   
  btULong  
- 기본 형식은 `unsigned long int` (C /C++ 형식).  
+ 기본 형식은 `unsigned long int` (C/c + + 형식)입니다.  
   
  btCurrency  
- 기본 형식은 통화입니다.  
+ 기본 형식은 currency입니다.  
   
  btDate  
- 기본 형식은 날짜/시간 (`DATE`).  
+ 기본 형식은 날짜/시간 ( `DATE` )입니다.  
   
  btVariant  
- 기본 형식은 변수 형식 구조 (`VARIANT`).  
+ 기본 유형은 변수 유형 구조 ()입니다 `VARIANT` .  
   
  btComplex  
  기본 형식은 복소수입니다.  
   
  btBit  
- 기본 형식은 약간입니다.  
+ 기본 형식은 bit입니다.  
   
  btBSTR  
- 기본 형식은 기본 또는 이진 문자열 (`BSTR`).  
+ 기본 형식은 기본 또는 이진 문자열 ()입니다 `BSTR` .  
   
  btHresult  
- 기본 형식은 `HRESULT`합니다.  
+ 기본 형식은 `HRESULT` 입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에서 반환 되는 [idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) 메서드.  
+ 이 열거형의 값은 [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) 메서드에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: cvconst.h  
+ 헤더: cvconst  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

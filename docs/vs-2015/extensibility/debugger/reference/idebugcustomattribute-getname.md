@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Microsoft Docs
+title: 'IDebugCustomAttribute:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4463fc4f9d321b26487e885255843a7acd945f76
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569272"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
@@ -40,13 +40,13 @@ int GetName(
   
 #### <a name="parameters"></a>매개 변수  
  `bstrName`  
- [out] 사용자 지정 특성의 이름을 포함 하는 문자열을 반환 합니다.  
+ 제한이 사용자 지정 특성의 이름을 포함 하는 문자열을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 명명 된이 메서드에서 반환 되는 특성을 선언 하는 데 사용 하는 클래스의 이름에 해당 합니다. C#-선언에 사용 될 때 사용자 지정 특성 이름에서 삭제할 "특성" 접미사를 허용 하는 중 정확히 자체 사용자 지정 특성 클래스의 이름에 해당 합니다.  
+ 이 메서드에서 반환 되는 이름은 특성을 선언 하는 데 사용 되는 클래스의 이름에 해당 합니다. 이는 선언에 사용 될 때 사용자 지정 특성 이름에서 "특성" 접미사를 삭제할 수 있으므로 사용자 지정 특성 클래스 자체의 이름과 정확 하 게 일치 하지 않을 수 있습니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

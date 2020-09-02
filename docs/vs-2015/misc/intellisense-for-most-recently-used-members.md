@@ -1,5 +1,5 @@
 ---
-title: 최근에 사용한 멤버 대부분에 대 한 IntelliSense | Microsoft Docs
+title: 가장 최근에 사용한 멤버를 위한 IntelliSense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -14,11 +14,11 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: 20dfe17c2051ddcbffc30df5661535ad61102512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62838661"
 ---
 # <a name="intellisense-for-most-recently-used-members"></a>가장 최근에 사용한 멤버를 위한 IntelliSense
-이 콘텐츠를 움직인 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)합니다.
+이 콘텐츠는 [Visual c # IntelliSense](../ide/visual-csharp-intellisense.md)로 이동 되었습니다.

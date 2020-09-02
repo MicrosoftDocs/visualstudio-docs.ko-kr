@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551266"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 요소(MSBuild)
@@ -57,10 +57,10 @@ ms.locfileid: "62551266"
 |-------------|-----------------|  
 |[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
   
-## <a name="remarks"></a>주의  
+## <a name="remarks"></a>설명  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트에서는 `ProjectExtensions` 요소를 하나만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 코드 예제에서는 통합 개발 환경의 정보가 `ProjectExtensions` 요소에 저장되는 방식을 보여 줍니다.  
   
 ```  
@@ -75,6 +75,6 @@ ms.locfileid: "62551266"
 </ProjectExtensions>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)

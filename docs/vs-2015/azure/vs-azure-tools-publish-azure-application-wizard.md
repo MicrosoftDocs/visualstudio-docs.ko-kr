@@ -1,5 +1,5 @@
 ---
-title: 사용 하 여 Azure 응용 프로그램 게시 마법사 | Microsoft Docs
+title: Azure 애플리케이션 게시 마법사 사용 | Microsoft Docs
 description: Visual Studio Azure 애플리케이션 게시 마법사에서 다양한 설정을 구성하는 방법에 대해 알아봅니다.
 author: ghogen
 manager: jillfra
@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: a75e83e3fb2ac43b4fa1d658c7e2a08ec1ae3c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62831345"
 ---
-# <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio [Azure 애플리케이션 게시] 마법사 사용
+# <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure 애플리케이션 게시 마법사 사용
 
 Visual Studio에서 웹 애플리케이션을 개발한 후 **Azure 애플리케이션 게시** 마법사를 사용하여 해당 애플리케이션을 Azure 클라우드 서비스에 게시할 수 있습니다.
 
@@ -65,7 +65,7 @@ Visual Studio에서 웹 애플리케이션을 개발한 후 **Azure 애플리케
 
 **모든 역할에 대해 원격 데스크톱 사용** - 원격으로 서비스에 연결하려면 이 옵션을 선택합니다. 이 옵션은 주로 문제 해결을 위해 사용됩니다. 자세한 내용은 [Visual Studio를 사용하여 Azure Cloud Services에서 역할에 대한 원격 데스크톱 연결 사용](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)을 참조하세요.
 
-**모든 웹 역할에 대해 웹 배포 사용** - 서비스에 웹 배포를 사용하도록 설정하려면 이 옵션을 선택합니다. 이 기능을 사용하려면 **모든 역할에 대해 원격 데스크톱 사용** 옵션도 선택해야 합니다. 자세한 내용은 [Visual Studio를 사용하여 Cloud Service 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조하세요.
+**모든 웹 역할에 대해 웹 배포 사용** - 서비스에 웹 배포를 사용하도록 설정하려면 이 옵션을 선택합니다. 이 기능을 사용하려면 **모든 역할에 대해 원격 데스크톱 사용** 옵션도 선택해야 합니다. 자세한 내용은 [Visual Studio를 사용 하 여 클라우드 서비스 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조 하세요.
 
 ## <a name="settings-page---advanced-settings-tab"></a>설정 페이지 - 고급 설정 탭
 
@@ -85,7 +85,7 @@ Azure Storage 계정은 애플리케이션 배포용 패키지를 저장합니�
 
 ![배포 설정](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
-**IntelliTrace 사용** - IntelliTrace를 사용하도록 설정할지 여부를 지정합니다. IntelliTrace를 사용하여 Azure에서 실행할 때 역할 인스턴스에 대한 광범위한 정보를 기록할 수 있습니다. 문제의 원인을 찾아야 하는 경우 Azure에서 실행 중인 것처럼 Visual Studio에서 코드를 단계별로 거쳐 IntelliTrace 로그를 사용할 수 있습니다. IntelliTrace 사용에 대한 자세한 내용은 [IntelliTrace 및 Visual Studio를 사용하여 게시된 Azure 클라우드 서비스 디버깅](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)을 참조하세요.
+**IntelliTrace 사용** - IntelliTrace를 사용하도록 설정할지 여부를 지정합니다. IntelliTrace를 사용하여 Azure에서 실행할 때 역할 인스턴스에 대한 광범위한 정보를 기록할 수 있습니다. 문제의 원인을 찾아야 하는 경우 Azure에서 실행 중인 것처럼 Visual Studio에서 코드를 단계별로 실행하는 데 IntelliTrace 로그를 사용할 수 있습니다. IntelliTrace 사용에 대한 자세한 내용은 [IntelliTrace 및 Visual Studio를 사용하여 게시된 Azure 클라우드 서비스 디버깅](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)을 참조하세요.
 
 **프로파일링 사용** - 성능 프로파일링을 사용하도록 설정할지 여부를 지정합니다. Visual Studio 프로파일러를 사용하면 클라우드 서비스가 실행되는 방식의 계산 측면을 자세히 분석할 수 있습니다. Visual Studio 프로파일러 사용에 대한 자세한 내용은 [Azure 클라우드 서비스의 성능 테스트](./vs-azure-tools-performance-profiling-cloud-services.md)를 참조하세요.
 
@@ -101,7 +101,7 @@ Azure Storage 계정은 애플리케이션 배포용 패키지를 저장합니�
 
 ![요약](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**대상 프로필** - 선택한 설정에서 게시 프로필을 만들도록 선택할 수 있습니다. 예를 들어, 테스트 환경에 대한 하나의 프로필을 만들고 프로덕션용으로 다른 하나를 만들 수 있습니다. 이 프로필을 저장하려면 **저장** 아이콘을 선택합니다. 마법사는 프로필을 만들고 Visual Studio 프로젝트에 저장합니다. 프로필 이름을 수정하려면 **대상 프로필** 목록을 연 다음 **&lt;관리...&gt;** 를 선택합니다.
+**대상 프로필** - 선택한 설정에서 게시 프로필을 만들도록 선택할 수 있습니다. 예를 들어, 테스트 환경에 대한 하나의 프로필을 만들고 프로덕션용으로 다른 하나를 만들 수 있습니다. 이 프로파일을 저장하려면 **저장** 아이콘을 선택합니다. 마법사는 프로필을 만들고 Visual Studio 프로젝트에 저장합니다. 프로필 이름을 수정하려면 **대상 프로필** 목록을 연 다음 **&lt;관리...&gt;** 를 선택합니다.
 
    > [!Note]
    > 게시 프로필은 Visual Studio의 솔루션 탐색기에 나타나며 프로필 설정은 확장명이 .azurePubxml인 파일로 기록됩니다. 설정은 XML 태그의 특성으로 저장됩니다.
@@ -120,6 +120,6 @@ Azure Storage 계정은 애플리케이션 배포용 패키지를 저장합니�
 
 - [Azure 클라우드 서비스의 성능 테스트](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Azure Cloud Services 및 Virtual Machines에서 진단 구성](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Azure Cloud Services 및 Virtual Machines에 대 한 진단 구성](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
 
 - [Application Insights란?](/azure/application-insights/app-insights-overview)

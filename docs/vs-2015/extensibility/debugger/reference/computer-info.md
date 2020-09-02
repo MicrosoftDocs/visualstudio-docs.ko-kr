@@ -11,18 +11,18 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7b5c49aea62ff1f7cb6416f7e02f7e7a3c0a166
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561696"
 ---
-# <a name="computerinfo"></a>COMPUTER_INFO
+# <a name="computer_info"></a>COMPUTER_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-디버거를 실행 중인 컴퓨터를 설명 합니다.  
+디버거가 실행 되 고 있는 컴퓨터에 대해 설명 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef struct tagCOMPUTER_INFO  
@@ -44,24 +44,24 @@ public struct COMPUTER_INFO
   
 ## <a name="terms"></a>용어  
  wProcessorArchitecture  
- 마이크로프로세서의 아키텍처를 식별합니다.  
+ 마이크로프로세서의 아키텍처를 식별 합니다.  
   
  wSuiteMask  
- 도구 모음 마스크를 식별합니다.  
+ 도구 모음 마스크를 식별 합니다.  
   
  dwOperatingSystemVersion  
  운영 체제 버전 번호입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에서 반환 되는 [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) 메서드.  
+ 이 구조는 [Getcomputerinfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) 메서드에 의해 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Msdbg.h  
+ 헤더: Msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

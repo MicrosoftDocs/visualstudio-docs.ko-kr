@@ -11,26 +11,26 @@ ms.assetid: 6003607e-fc19-4bf9-a299-9f6adf8e92eb
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 1d20b865c6f07d76320a7df8402810c82869ddfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62822388"
 ---
 # <a name="hiding-properties-that-have-child-properties"></a>자식 속성을 가진 속성 숨기기
-자식 속성을 가진 속성 숨기기 하려고 합니다.  
+자식 속성을 포함 하는 속성을 숨길 수 있습니다.  
   
-- 프로젝트 중첩 된 경우 부모 프로그래밍 방식으로 프로젝트 자식 프로젝트의 일부 측면을 제어 합니다.  
+- 부모 프로젝트가 자식 프로젝트의 일부 측면을 프로그래밍 방식으로 제어 하는 중첩 된 프로젝트가 있는 경우  
   
-- 컨트롤을 사용 하 여 특수 한 디자이너를 사용 하 여 컨트롤의 모든 속성에 대 한 모든 권한을 개발자에 게를 제공 하지 않을 경우.  
+- 특수 디자이너에서 컨트롤을 사용 하는 경우 개발자에 게 컨트롤의 모든 속성에 대 한 모든 권한을 부여 하지 않으려는 경우  
   
-- 개체의 소유권 범위 속성 보기를 제한 하려는 경우.  
+- 개체의 범위를 소유 하 고 있고 속성의 뷰를 제한 하려는 경우  
   
-### <a name="to-hide-properties-that-have-child-properties"></a>자식 속성을 가진 속성을 숨기려면  
+### <a name="to-hide-properties-that-have-child-properties"></a>자식 속성을 포함 하는 속성을 숨기려면  
   
-1. 설정 된 `pfDisplay` 에서 매개 변수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> 에 `FALSE`입니다.  
+1. `pfDisplay`의 매개 변수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A> 로 설정 `FALSE` 합니다.  
   
-2. 설정 된 `pfHide` 에서 매개 변수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> 에 `TRUE`입니다.  
+2. `pfHide`의 매개 변수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> 로 설정 `TRUE` 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [속성 눈금 표시](../extensibility/internals/properties-display-grid.md)
+## <a name="see-also"></a>관련 항목  
+ [속성 표시 그리드](../extensibility/internals/properties-display-grid.md)

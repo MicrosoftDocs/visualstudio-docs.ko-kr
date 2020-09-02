@@ -11,18 +11,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa9c87065130e0b539e49c314648fa5b3944089b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572337"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-메서드 또는 형식에 사용자 지정 특성에 대 한 쿼리를 나타냅니다.  
+메서드 또는 형식에 대 한 사용자 지정 특성에 대 한 쿼리를 나타냅니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCustomAttributeQuery : IUnknown  
@@ -33,12 +33,12 @@ IDebugCustomAttributeQuery : IUnknown
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|이름이 지정 된 사용자 지정 특성을 검색 합니다.|  
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|지정 된 결정 사용자 지정 특성이 정의 되어 있습니다.|  
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|해당 이름이 지정 된 사용자 지정 특성을 검색 합니다.|  
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|지정 된 사용자 지정 특성이 정의 되어 있는지 여부를 확인 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Sh.h  
+ 헤더: Sh  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

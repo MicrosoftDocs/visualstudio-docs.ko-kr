@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92db719f8af2688dc70ddb5ac253c17095302766
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563274"
 ---
 # <a name="measure-mode-onoff"></a>측정 모드 켜기/끄기
@@ -27,7 +27,7 @@ ms.locfileid: "62563274"
   
  측정 프로세스를 반복할 수 있지만 가장 최근의 측정값만 표시됩니다. 측정 단추를 다시 클릭하여 측정 모드를 끕니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [채널 관리](../profiling/manage-channels.md)   
- [확대/축소 컨트롤(스레드 뷰)](../profiling/zoom-control-threads-view.md)   
+ [확대/축소 컨트롤 (스레드 뷰)](../profiling/zoom-control-threads-view.md)   
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

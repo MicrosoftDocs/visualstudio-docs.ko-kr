@@ -13,11 +13,11 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: fba37e15cfef218d680edbab7909fe774d823c46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62822528"
 ---
 # <a name="organizing-using-directives"></a>Using 지시문 구성
-이 콘텐츠를 움직인 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)합니다.
+이 콘텐츠는 [Visual c # IntelliSense](../ide/visual-csharp-intellisense.md)로 이동 되었습니다.

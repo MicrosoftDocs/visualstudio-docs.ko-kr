@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573068"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>플랫폼 간 모바일 개발용 Visual C++
@@ -33,11 +33,11 @@ ms.locfileid: "62573068"
   
 3. **통합된 디버깅 환경.** Visual Studio에 있는 세계적 수준의 디버깅 도구를 사용하여 Android 디바이스 및 에뮬레이터, iOS 시뮬레이터 및 디바이스, Windows 또는 Windows Phone 디바이스 및 에뮬레이터를 비롯한 모든 플랫폼에서 C++ 코드를 감시하고 단계별로 실행합니다.  
   
-## <a name="get-the-tools"></a>도구 다운로드  
+## <a name="get-the-tools"></a>도구 얻기  
  플랫폼 간 모바일 개발용 Visual C++는 Visual Studio 2015와 함께 제공되는 설치 가능한 옵션입니다. 필수 조건과 설치 지침은 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)를 참조하세요. iOS용 코드를 빌드하려면 Mac 컴퓨터와 Apple iOS 개발자 계정도 필요합니다. 자세한 내용은 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요.  
   
 ## <a name="come-up-to-speed"></a>속도 개선  
- Android 또는 iOS 개발에서 전환하는 경우 시작 방법에 대한 훌륭한 자료가 있습니다. Visual Studio는 표현 능력과 기능을 갖춘 개발 환경입니다. 사용 방법을 알아보려면 [Android 개발자를 위한 시작](https://msdn.microsoft.com/library/windows/apps/dn275875.aspx) 또는 [iOS 개발자를 위한 시작](https://msdn.microsoft.com/library/windows/apps/xaml/jj657966.aspx)을 참조하세요. 이 항목에서는 Windows 및 Windows Phone용 플랫폼 간 앱을 개발하는 데 필요한 개념과 Visual Studio를 안내합니다. iOS 및 Android용 첫 플랫폼 간 앱 작성을 시작하려면 [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)를 참조하세요.  
+ Android 또는 iOS 개발에서 전환하는 경우 시작 방법에 대한 훌륭한 자료가 있습니다. Visual Studio는 표현 능력과 기능을 갖춘 개발 환경입니다. 사용 방법을 알아보려면 [Android 개발자를 위한 시작](https://msdn.microsoft.com/library/windows/apps/dn275875.aspx) 또는 [iOS 개발자를 위한 시작](https://msdn.microsoft.com/library/windows/apps/xaml/jj657966.aspx)을 참조하세요. 이 항목에서는 Windows 및 Windows Phone용 플랫폼 간 앱을 개발하는 데 필요한 개념과 Visual Studio를 안내합니다. iOS 및 Android용 첫 플랫폼 간 앱 작성을 시작하려면 [Android 및 iOS에서 OpenGL ES 애플리케이션 빌드](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)를 참조하세요.  
   
  플랫폼 간 모바일 개발용 Visual C++에는 앱에서 시작하는 데 도움이 되는 여러 템플릿이 포함되어 있습니다.  
   
@@ -96,14 +96,14 @@ ms.locfileid: "62573068"
 ## <a name="try-out-sample-code"></a>샘플 코드 체험  
  Windows, Android 및 iOS 앱에서 사용할 수 있는 공유 코드 라이브러리를 만드는 방법 및 Android용 전체 Native Activity 앱을 만드는 방법을 보여 주는 샘플을 다운로드합니다. 시작하려면 [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)를 참조하세요.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
   
-1. [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1. [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2. [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2. [IOS를 사용 하 여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
 3. [Android Native Activity 앱 만들기](../cross-platform/create-an-android-native-activity-app.md)  
   
-4. [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4. [Android 및 iOS에서 OpenGL ES 응용 프로그램 빌드](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5. [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [플랫폼 간 모바일 개발 예제](../cross-platform/cross-platform-mobile-development-examples.md)

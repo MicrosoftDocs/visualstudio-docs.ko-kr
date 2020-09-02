@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576410"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-썽크 형식을 지정합니다.  
+썽크 유형을 지정 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef enum THUNK_ORDINAL {   
@@ -43,32 +43,32 @@ typedef enum THUNK_ORDINAL { 
   
 ## <a name="elements"></a>요소  
  THUNK_ORDINAL_NOTYPE  
- 표준 썽크 합니다.  
+ 표준 썽크.  
   
  THUNK_ORDINAL_ADJUSTOR  
- `this` 조정기 썽크 합니다.  
+ `this`Adjustor 썽크입니다.  
   
  THUNK_ORDINAL_VCALL  
- 가상 호출 썽크 합니다.  
+ 가상 호출 썽크입니다.  
   
  THUNK_ORDINAL_PCODE  
- P-코드 썽크 합니다.  
+ P-코드 썽크  
   
  THUNK_ORDINAL_LOAD  
- 지연 로드 썽크 합니다.  
+ 로드 썽크를 지연 합니다.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- 증분 trampoline 썽크 (trampoline 썽크를 다른 메모리 공간에서 호출 반송에 사용 됨).  
+ 증분 trampoline 썽크 (한 메모리 공간에서 다른 메모리 공간으로 호출을 바운스 하는 데 사용 됨)  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- 분기 지점 trampoline 썽크 합니다.  
+ 분기 지점 trampoline 썽크입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에 대 한 호출에서 반환 되는 [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) 메서드.  
+ 이 열거형의 값은 [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) 메서드에 대 한 호출에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: cvconst.h  
+ 헤더: cvconst  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

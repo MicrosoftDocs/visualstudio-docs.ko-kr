@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf8a9de5f2a7e520a745fab81197016d6e1bd15d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568193"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>스레드 및 프로세스 동시성 데이터 수집
@@ -36,12 +36,12 @@ ms.locfileid: "62568193"
   
 - **성능 탐색기** 도구 모음의 **메서드** 목록에서 **동시성**을 클릭합니다.  
   
-## <a name="common-tasks"></a>일반 작업  
+## <a name="common-tasks"></a>일반 태스크  
  성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면  
   
-- **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
+- **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.  
   
-  다음 표의 작업에서는 동시성 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.  
+  다음 표의 작업에서는 동시성 방법을 사용 하 여 프로 파일링 할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션에 대해 설명 합니다.  
   
 |작업|관련 내용|  
 |----------|---------------------|  
@@ -49,4 +49,4 @@ ms.locfileid: "62568193"
 |**시작** 페이지에서 코드 솔루션에.여러 .exe 프로젝트가 있는 경우 시작할 애플리케이션을 지정합니다.|-   [방법: 시작할 이진 파일 지정](../profiling/how-to-specify-the-binary-to-start.md)|  
 |**계층 상호 작용** 페이지에서 프로파일링 실행에 ADO.NET 호출 데이터를 추가합니다.|-   [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)|  
 |**Windows 카운터** 페이지에서 프로파일링 데이터에 표시로 추가할 운영 체제 성능 카운터를 하나 이상 지정합니다.|-   [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)|  
-|**고급** 페이지에서, 애플리케이션 모듈이 여러 버전을 사용하는 경우 프로파일링할 .NET Framework 런타임의 버전을 지정합니다. 기본적으로 첫 번째 로드된 버전이 프로파일링됩니다.|-   [방법: .NET Framework 런타임 지정](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|**고급** 페이지에서, 응용 프로그램 모듈이 여러 버전을 사용 하는 경우 프로 파일링 할 런타임 .NET Framework 버전을 지정 합니다. 기본적으로 첫 번째 로드된 버전이 프로파일링됩니다.|-   [방법: .NET Framework 런타임 지정](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

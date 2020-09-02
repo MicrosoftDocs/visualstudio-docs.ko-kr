@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 등록 특성을 사용 하 여 확장명 등록 | Microsoft Docs
+title: 사용자 지정 등록 특성을 사용 하 여 확장 등록 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,17 +8,17 @@ ms.assetid: 98068fa7-bda1-4922-b3f6-28680de58c3d
 caps.latest.revision: 3
 manager: jillfra
 ms.openlocfilehash: a619c5d418df3b9b85ab09cf9b907617ebd81b67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62935786"
 ---
 # <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>사용자 지정 등록 특성을 사용하여 확장 등록
-특정 한 경우 확장 프로그램에 대해 새 등록 특성을 만드는 해야 합니다. 새 레지스트리 키를 추가 하거나 기존 키를 새 값을 추가 하려면 등록 특성을 사용할 수 있습니다. 새 특성에서 파생 되어야 합니다 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>를 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> 및 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> 메서드.  
+특정 한 경우에는 확장에 대 한 새 등록 특성을 만들어야 할 수 있습니다. 등록 특성을 사용 하 여 새 레지스트리 키를 추가 하거나 기존 키에 새 값을 추가할 수 있습니다. 새 특성은에서 파생 되 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> 고 및 메서드를 재정의 해야 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> 합니다 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> .  
   
 ## <a name="creating-a-custom-attribute"></a>사용자 지정 특성 만들기  
- 다음 코드에는 새 등록 특성을 만드는 방법을 보여 줍니다.  
+ 다음 코드에서는 새 등록 특성을 만드는 방법을 보여 줍니다.  
   
 ```  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
@@ -28,10 +28,10 @@ ms.locfileid: "62935786"
   
 ```  
   
- <xref:System.AttributeUsageAttribute> 특성 클래스에는 프로그램 요소 (클래스, 메서드 등)를 특성 관계가 있는,이 사용할 수 있는지 여부를 두 번 이상 상속할 수 있는지 여부를 지정 하는 데 사용 됩니다.  
+ 는 특성 <xref:System.AttributeUsageAttribute> 클래스에서 특성을 사용 하는 프로그램 요소 (클래스, 메서드 등)를 지정 하는 데 사용 되며, 두 번 이상 사용할 수 있는지 여부 및 상속 될 수 있는지 여부를 지정 합니다.  
   
 ### <a name="creating-a-registry-key"></a>레지스트리 키 만들기  
- 다음 코드에서는 사용자 지정 특성 만듭니다는 **사용자 지정** 등록 되는 VSPackage에 대 한 키 아래 하위 키입니다.  
+ 다음 코드에서 사용자 지정 특성은 등록 되는 VSPackage에 대 한 키 아래에 **사용자 지정** 하위 키를 만듭니다.  
   
 ```  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -56,8 +56,8 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-### <a name="creating-a-new-value-under-an-existing-registry-key"></a>기존 레지스트리 키 아래에 새 값 만들기  
- 기존 키를 사용자 지정 값을 추가할 수 있습니다. 다음 코드를 VSPackage 등록 키를 새 값을 추가 하는 방법을 보여 줍니다.  
+### <a name="creating-a-new-value-under-an-existing-registry-key"></a>기존 레지스트리 키 아래에 새 값을 만듭니다.  
+ 기존 키에 사용자 지정 값을 추가할 수 있습니다. 다음 코드에서는 VSPackage 등록 키에 새 값을 추가 하는 방법을 보여 줍니다.  
   
 ```  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
