@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547266"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
@@ -230,7 +230,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 5. **Dsl\generated Files\DomainClasses.cs**의 콘텐츠를 검사 합니다. 이라는 메서드를 검색 `MergeRelate` 하 고 해당 내용을 검사 합니다. 이렇게 하면 고유한 버전을 작성 하는 데 도움이 됩니다.
 
-6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 메서드를 재정의 `MergeRelate` 합니다. 기본 메서드를 호출 해야 합니다. 예를 들면 다음과 같습니다.
+6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 메서드를 재정의 `MergeRelate` 합니다. 기본 메서드를 호출 해야 합니다. 예:
 
     ```csharp
     partial class ExampleModel
@@ -316,7 +316,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
      사용할 수 없는 포인터는 표시 되지 않으며 기존 **입력 포트에 새 입력 포트** 를 삭제할 수 있어야 합니다. 새 **입력 포트** 를 선택 하 고 **구성 요소의**다른 위치로 끕니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)

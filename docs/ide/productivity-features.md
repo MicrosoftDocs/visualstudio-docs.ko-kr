@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184083"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89219766"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 생산성 가이드
 
@@ -24,7 +24,7 @@ ms.locfileid: "84184083"
 
 명령, 설정, 설명서, 설치 옵션 등 필요한 항목을 빠르게 검색함으로써 메뉴를 찾아 헤매는 시간을 절약하세요. Visual Studio의 검색 결과 내에서 명령의 바로 가기 키를 확인하여 좀 더 쉽게 기억할 수 있습니다. 
 
-- **작업 목록을 사용하여 모의 코드 생성**. 코드 조각을 완료하기 위한 요구 사항이 부족한 경우 작업 목록을 사용하여 `TODO` 및 `HACK` 같은 토큰 또는 사용자 지정 토큰을 사용하는 코드 주석을 추적하고 코드에서 미리 정의된 위치로 직접 연결되는 바로 가기를 관리합니다. 자세한 내용은 [작업 목록 사용](../ide/using-the-task-list.md.)을 참조하세요.
+- **작업 목록을 사용하여 모의 코드 생성**. 코드 조각을 완료하기 위한 요구 사항이 부족한 경우 작업 목록을 사용하여 `TODO` 및 `HACK` 같은 토큰 또는 사용자 지정 토큰을 사용하는 코드 주석을 추적하고 코드에서 미리 정의된 위치로 직접 연결되는 바로 가기를 관리합니다. 자세한 내용은 [작업 목록 사용](../ide/using-the-task-list.md)을 참조하세요.
 
 - **솔루션 탐색기 바로 가기 사용**. Visual Studio를 처음 사용하는 경우 이러한 바로 가기가 유용하며 새 코드베이스에 익숙해지는 시간을 줄일 수 있습니다. 바로 가기의 전체 목록은 [Visual Studio의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)를 참조하세요.
 

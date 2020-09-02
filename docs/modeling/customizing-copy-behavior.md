@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547344"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
@@ -211,7 +211,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **사용자가 요소를 끌어서 놓을 수 있도록 합니다.**
 [방법: 끌어서 놓기 처리기 추가를](../modeling/how-to-add-a-drag-and-drop-handler.md)참조 하세요.
 
-## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a>링크 복사 동작 사용자 지정
+## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a> 링크 복사 동작 사용자 지정
  사용자가 요소를 복사할 때의 표준 동작은 포함된 요소도 모두 복사하는 것입니다. 이러한 표준 복사 동작을 수정할 수 있습니다. DSL 정의에서 관계의 한 쪽에 있는 역할을 선택 하 고 속성 창 **전파 복사** 값을 설정 합니다.
 
  ![도메인 역할의 복사 속성 전파](../modeling/media/dslpropagatescopy.png)
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  ElementOperations 클래스에서 두 메서드를 정의합니다.
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`소스 요소를 대상 셰이프, 연결선 또는 다이어그램으로 끌 수 있는지 여부를 결정 하는입니다.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` 소스 요소를 대상 셰이프, 연결선 또는 다이어그램으로 끌 수 있는지 여부를 결정 하는입니다.
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`원본 요소를 대상으로 결합 하는입니다.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` 원본 요소를 대상으로 결합 하는입니다.
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()`사용자가 다이어그램을 이동할 때 사용자에 게 제공 해야 하는 피드백을 확인 하기 위해가 호출 됩니다. 이 메서드의 매개 변수는 마우스로 가리키는 요소와 끌기 작업을 수행한 소스에 대한 데이터입니다. 사용자는 화면의 어느 위치에서나 끌기를 수행할 수 있습니다. 그러므로 소스 개체는 다양한 형식이 될 수 있으며 여러 형식으로 serialize할 수 있습니다. 소스가 DSL 또는 UML 모델이면 데이터 매개 변수는 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>의 serialization입니다. 끌기, 복사 및 도구 상자 작업에서는 ElementGroupPrototypes를 사용하여 모델의 코드 조각을 표시합니다.
+ `CanMerge()` 사용자가 다이어그램을 이동할 때 사용자에 게 제공 해야 하는 피드백을 확인 하기 위해가 호출 됩니다. 이 메서드의 매개 변수는 마우스로 가리키는 요소와 끌기 작업을 수행한 소스에 대한 데이터입니다. 사용자는 화면의 어느 위치에서나 끌기를 수행할 수 있습니다. 그러므로 소스 개체는 다양한 형식이 될 수 있으며 여러 형식으로 serialize할 수 있습니다. 소스가 DSL 또는 UML 모델이면 데이터 매개 변수는 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>의 serialization입니다. 끌기, 복사 및 도구 상자 작업에서는 ElementGroupPrototypes를 사용하여 모델의 코드 조각을 표시합니다.
 
  요소 그룹 프로토타입은 요소와 링크를 수에 제한 없이 포함할 수 있습니다. 요소 형식은 해당 GUID로 식별할 수 있습니다. 여기서 GUID는 기본 모델 요소의 GUID가 아닌 끌어 온 모양의 GUID입니다. 다음 예에서는 UML 다이어그램의 클래스 모양을 이 다이어그램으로 끌면 `CanMerge()`가 true를 반환합니다.
 
@@ -552,7 +552,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)

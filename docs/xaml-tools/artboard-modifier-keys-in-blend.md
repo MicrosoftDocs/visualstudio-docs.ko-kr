@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329580"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend의 아트보드 보조 키
@@ -39,7 +39,7 @@ ms.locfileid: "85329580"
 |열린 문서 간 전환|**Ctrl** + **tab** 키를 누릅니다.|
 |**자산** 패널 열기|**Ctrl** + **Period** 누르기|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [바로 가기 키](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [펜 도구 보조 키](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

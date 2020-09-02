@@ -8,10 +8,10 @@ ms.assetid: 6aefb510-64cd-4a16-882b-58ada1db02bf
 caps.latest.revision: 17
 manager: jillfra
 ms.openlocfilehash: 3ad69fe4909e358c395c7cd8a4abfea3f3003161
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844797"
 ---
 # <a name="vssdk-samples"></a>VSSDK 샘플
@@ -21,5 +21,5 @@ Visual Studio 확장성 샘플의 공식 홈은 [MSDN 코드 갤러리](https://
   
  IronPython 샘플도 사용할 수 있습니다. 이 샘플은 CodePlex 웹 사이트의 [IronPython Studio 프로젝트](https://ironpythonstudio.codeplex.com/) 에 통합되어 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

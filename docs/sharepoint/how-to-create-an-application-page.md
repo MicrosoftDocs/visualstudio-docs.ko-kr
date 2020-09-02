@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 32e6fbb7cece4c3b7513dfc1f5de3aca22f145ee
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016944"
 ---
 # <a name="how-to-create-an-application-page"></a>방법: 응용 프로그램 페이지 만들기
@@ -46,6 +47,6 @@ ms.locfileid: "86016944"
 
      ASP.NET 페이지 파일에 대 한 노드를 확장 하 고 프로젝트의 언어에 따라 확장명이 *.cs* 또는 *.vb* 인 경우 코드 파일이 표시 됩니다. 응용 프로그램 페이지를 만드는 방법에 대 한 종단 간 예제는 [연습: SharePoint 응용 프로그램 만들기 페이지](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint에 대 한 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [연습: SharePoint 응용 프로그램 페이지 만들기](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

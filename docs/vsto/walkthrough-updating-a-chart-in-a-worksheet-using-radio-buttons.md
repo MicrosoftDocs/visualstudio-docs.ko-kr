@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238818"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>연습: 워크시트에서 라디오 단추를 사용하여 차트 업데이트
@@ -42,7 +42,7 @@ ms.locfileid: "88238818"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 또는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]입니다.
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 또는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]
 
 ## <a name="add-a-chart-to-a-worksheet"></a>워크시트에 차트 추가
  기존 통합 문서를 사용자 지정 하는 Excel 통합 문서 프로젝트를 만들 수 있습니다. 이 연습에서는 통합 문서에 차트를 추가한 다음 새 Excel 솔루션에서이 통합 문서를 사용 합니다. 이 연습의 데이터 원본은 **차트의 data**라는 워크시트입니다.
@@ -135,28 +135,28 @@ ms.locfileid: "88238818"
    | 속성 | 값 |
    |----------|------------------|
    | **이름** | **columnChart** |
-   | **텍스트** | **세로 막대형 차트** |
+   | **Text** | **세로 막대형 차트** |
 
 3. 사용자 정의 컨트롤에 두 번째 라디오 단추를 추가 하 고 다음 속성을 변경 합니다.
 
    | 속성 | 값 |
    |----------|---------------|
    | **이름** | **barChart** |
-   | **텍스트** | **가로 막대형 차트** |
+   | **Text** | **가로 막대형 차트** |
 
 4. 세 번째 라디오 단추를 사용자 정의 컨트롤에 추가 하 고 다음 속성을 변경 합니다.
 
    | 속성 | 값 |
    |----------|----------------|
    | **이름** | **lineChart** |
-   | **텍스트** | **꺾은선형 차트** |
+   | **Text** | **꺾은선형 차트** |
 
 5. 네 번째 라디오 단추를 사용자 정의 컨트롤에 추가 하 고 다음 속성을 변경 합니다.
 
    |속성|값|
    |--------------|-----------|
    |**이름**|**areaBlockChart**|
-   |**텍스트**|**영역 블록 차트**|
+   |**Text**|**영역 블록 차트**|
 
    다음으로 라디오 단추를 클릭 하면 차트를 업데이트 하는 코드를 작성 합니다.
 
@@ -249,5 +249,5 @@ ms.locfileid: "88238818"
 
 - 확인란을 사용 하 여 워크시트의 서식을 변경 합니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)

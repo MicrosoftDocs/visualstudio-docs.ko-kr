@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 644676393a606dfd7fbf6aa400a625dce2db3697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656886"
 ---
 # <a name="creating-legacy-workflow-projects"></a>레거시 워크플로 프로젝트 만들기
@@ -41,9 +41,9 @@ ms.locfileid: "72656886"
 
  [방법: 워크플로 활동 라이브러리 만들기(레거시)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
 
- [방법: 상태 머신 워크플로 콘솔 애플리케이션 만들기(레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
+ [방법: 상태 시스템 워크플로 콘솔 애플리케이션 만들기(레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
 
- [방법: 상태 머신 워크플로 라이브러리 만들기(레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
+ [방법: 상태 시스템 워크플로 라이브러리 만들기(레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
 
  [방법: 빈 워크플로 프로젝트 만들기(레거시)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
 
@@ -51,5 +51,5 @@ ms.locfileid: "72656886"
 
  [방법: 워크플로 프로젝트에 새 항목 추가(레거시)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [순차 워크플로 뷰 (레거시)](../workflow-designer/sequential-workflow-views-legacy.md) [Visual Studio 워크플로 창 (레거시)](../workflow-designer/visual-studio-workflow-windows-legacy.md)

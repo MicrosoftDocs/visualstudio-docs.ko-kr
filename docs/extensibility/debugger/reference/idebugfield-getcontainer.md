@@ -1,5 +1,5 @@
 ---
-title: 아이디버그필드::겟컨테이너 | 마이크로 소프트 문서
+title: 'IDebugField:: GetContainer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728913"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
@@ -41,14 +41,14 @@ int GetContainer(
 
 ## <a name="parameters"></a>매개 변수
 `ppContainerField`\
-【아웃】 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스로 표시되는 대로 컨테이너를 반환합니다.
+제한이 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스가 나타내는 컨테이너를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 이 필드에 컨테이너가 없는 경우 `ppContainerField` 반환된 값은 null 값입니다.
+ 이 필드에 컨테이너가 없는 경우 반환 되는은 `ppContainerField` null 값입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

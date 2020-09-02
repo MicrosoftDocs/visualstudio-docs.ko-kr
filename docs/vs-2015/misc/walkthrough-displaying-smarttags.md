@@ -10,14 +10,14 @@ ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
 ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436506"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64805576"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>연습: 스마트 태그 표시
-스마트 태그는 전구로 대체되었습니다. [연습: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)합니다.  
+스마트 태그는 전구로 대체되었습니다. [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)을 참조하세요.  
   
  스마트 태그는 일련의 동작을 표시하도록 확장되는 텍스트 태그입니다. 예를 들어 Visual Basic 또는 Visual C# 프로젝트에서 변수 이름과 같은 식별자의 이름을 바꾸면 단어 아래에 빨간색 선이 나타납니다. 밑줄 위로 포인터를 이동하면 포인터 근처에 단추가 표시됩니다. 단추를 클릭하면 제안 동작이 표시됩니다(예: **IsRead의 이름을 IsReady로 바꾸기**). 동작을 클릭하면 프로젝트에서 **IsRead** 에 대한 모든 참조의 이름이 **IsReady**로 바뀝니다.  
   
@@ -26,10 +26,10 @@ ms.locfileid: "63436506"
 > [!NOTE]
 > 비슷한 방식으로 다른 종류의 태그를 구현할 수 있습니다.  
   
- 다음 연습에서는 현재 단어에 표시 되는 두 가지 제안 된 작업에 스마트 태그를 만드는 방법을 보여 줍니다. **대문자로 변환할** 하 고 **소문자로 변환할**합니다.  
+ 다음 연습에서는 현재 단어에 표시되고 두 개의 제안 동작( **대문자로 변환** 및 **를 소문자로 변환**)이 있는 스마트 태그를 만드는 방법을 보여 줍니다.  
   
-## <a name="prerequisites"></a>전제 조건  
- 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
+## <a name="prerequisites"></a>필수 구성 요소  
+ 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>MEF(Managed Extensibility Framework) 프로젝트 만들기  
   
@@ -180,7 +180,7 @@ ms.locfileid: "63436506"
   
      포인터 근처에 단추가 표시됩니다.  
   
-5. 단추를 클릭 하면 두 가지 제안 된 작업 표시 됩니다. **대문자로 변환할** 하 고 **소문자로 변환할**합니다. 첫 번째 동작을 클릭하면 현재 단어의 모든 텍스트가 대문자로 변환됩니다. 두 번째 동작을 클릭하면 모든 텍스트가 소문자로 변환됩니다.  
+5. 단추를 클릭하면 두 가지 제안 동작( **대문자로 변환** 및 **소문자로 변환**)이 표시됩니다. 첫 번째 동작을 클릭하면 현재 단어의 모든 텍스트가 대문자로 변환됩니다. 두 번째 동작을 클릭하면 모든 텍스트가 소문자로 변환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

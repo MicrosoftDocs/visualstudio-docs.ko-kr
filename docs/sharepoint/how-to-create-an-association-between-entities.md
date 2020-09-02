@@ -22,9 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016931"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>방법: 엔터티 간 연결 만들기
@@ -60,7 +61,7 @@ ms.locfileid: "86016931"
 
      연결 탐색기 메서드의 예는 [엔터티 간 연결 만들기](../sharepoint/creating-an-association-between-entities.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [엔터티 간 연결 만들기](../sharepoint/creating-an-association-between-entities.md)
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)

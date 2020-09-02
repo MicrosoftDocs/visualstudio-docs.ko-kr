@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238545"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
@@ -119,7 +119,7 @@ DSL 솔루션을 만든 후 바로 실행할 수 있습니다. 나중에 DSL 정
 
 3. Visual Studio의 실험적 인스턴스에서 **솔루션 탐색기**에서 **Test** 라는 모델 파일을 엽니다.
 
-     \- 또는-
+     \- 또는 -
 
      디버깅 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **항목**을 클릭 합니다. **항목 추가** 대화 상자에서 DSL의 파일 형식을 선택 합니다.
 
@@ -171,7 +171,7 @@ DSL은 DSL 인스턴스인 모델을 읽고 업데이트 하는 데 사용할 �
 
 3. **솔루션 탐색기**도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
-     \- 또는-
+     \- 또는 -
 
      다시 생성 하려는 템플릿을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행**을 클릭 합니다.
 
@@ -407,7 +407,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
 2. 계속 사용 하려는 실험적 Dsl 또는 기타 실험적 Visual Studio 확장을 다시 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)

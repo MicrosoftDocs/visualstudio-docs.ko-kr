@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656764"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Workflow Designer의 오류 메시지
@@ -36,7 +36,7 @@ ms.locfileid: "72656764"
 
    잘못된 식과 충족되지 않은 유효성 검사 제약 조건으로도 워크플로가 작성됩니다. 워크플로는 작성되지만 런타임 시 <xref:System.Activities.InvalidWorkflowException>이 throw됩니다. XAML 파일에 오류가 있으면 빌드가 수행되지 않습니다.
 
-   @No__t_0 내에서 워크플로가 로드 되 면 해당 오류가 **오류 목록**에 표시 됩니다. 오류의 원본인 활동으로 이동 하려면 **오류 목록**에서 오류를 두 번 클릭 합니다.
+   내에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 워크플로가 로드 되 면 해당 오류가 **오류 목록**표시 됩니다. 오류의 원본인 활동으로 이동 하려면 **오류 목록**에서 오류를 두 번 클릭 합니다.
 
 ### <a name="expression-errors"></a>식 오류
  잘못된 식에는 식 앞에 빨간색 원과 흰색 느낌표가 표시됩니다. 하지만 이 아이콘 위로 마우스를 가져가면 오류의 원인을 설명하는 도구 설명이 표시됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내부에서 식을 클릭하면 오류 원인을 나타내는 줄(밑줄로 표시됨)을 볼 수 있습니다. 밑줄이 그어진 텍스트 위로 마우스를 가져가면 오류의 원인을 설명하는 도구 설명이 표시됩니다.
