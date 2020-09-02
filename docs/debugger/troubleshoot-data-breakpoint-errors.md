@@ -16,10 +16,10 @@ manager: caslan
 ms.workload:
 - multiple
 ms.openlocfilehash: 20e3ea1cb0124e6bdfb93e023021673ca2e34602
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248740"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>데이터 중단점 오류 문제 해결

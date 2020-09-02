@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e2db8596c1c16f5c9fb54a8c7c867b06e997b7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657704"
 ---
 # <a name="evaluate-statement-command"></a>문 실행 명령
@@ -54,7 +54,7 @@ Debug.EvaluateStatement text
 
  명령은 `a` 변수에 `b` 변수의 값을 할당합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 >Debug.EvaluateStatement(a+b)

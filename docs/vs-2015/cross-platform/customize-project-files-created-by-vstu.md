@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150994"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU에서 만든 프로젝트 파일 사용자 지정
@@ -21,7 +21,7 @@ ms.locfileid: "68150994"
 
 Visual Studio Tools for Unity는 프로젝트 파일을 생성하는 동안 Unity 스타일의 콜백을 제공합니다. `VisualStudioIntegration.ProjectFileGeneration` 이벤트로 등록하여 다시 생성될 때마다 프로젝트 파일을 수정합니다.  
   
-## <a name="demonstrates"></a>세부 항목  
+## <a name="demonstrates"></a>데모  
  Visual Studio Tools for Unity에서 생성한 Visual Studio 프로젝트 파일을 사용자 지정하는 방법  
   
 ## <a name="example"></a>예제  
@@ -69,4 +69,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [예제: 로그 콜백](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [예: 로그 콜백](../cross-platform/share-the-unity-log-callback-with-vstu.md)

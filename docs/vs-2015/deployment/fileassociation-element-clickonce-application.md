@@ -1,5 +1,5 @@
 ---
-title: '&lt;fileAssociation&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
+title: '&lt;fileAssociation &gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150836"
 ---
-# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; 요소 (ClickOnce 응용 프로그램)
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation &gt; 요소 (ClickOnce 응용 프로그램)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 응용 프로그램과 연결할 파일 확장명을 식별 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <fileAssociation  
@@ -46,17 +46,17 @@ ms.locfileid: "68150836"
 |특성|설명|  
 |---------------|-----------------|  
 |`extension`|필수 요소. 응용 프로그램과 연결할 파일 확장명입니다.|  
-|`description`|필수 요소. 셸에 사용할 파일 형식을 설명입니다.|  
+|`description`|필수 요소. 셸에서 사용할 파일 형식에 대 한 설명입니다.|  
 |`progid`|필수 요소. 파일 형식을 고유 하 게 식별 하는 이름입니다.|  
-|`defaultIcon`|필수 요소. 이 확장을 사용 하 여 파일에 사용할 아이콘을 지정 합니다. 아이콘 파일을 사용 하 여 지정 해야 합니다 [ \<파일 > 요소](../deployment/file-element-clickonce-application.md) 내에서 합니다 [ \<어셈블리 > 요소](../deployment/assembly-element-clickonce-application.md) 이 요소를 포함 하는 합니다.|  
+|`defaultIcon`|필수 요소. 이 확장명을 가진 파일에 사용할 아이콘을 지정 합니다. 이 요소를 포함 하는 [ \<assembly> 요소](../deployment/assembly-element-clickonce-application.md) 내에서 [ \<file> 요소](../deployment/file-element-clickonce-application.md) 를 사용 하 여 아이콘 파일을 지정 해야 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 요소에 대 한 XML 네임 스페이스 참조를 포함 해야 합니다 "urn: 스키마-microsoft-com:clickonce.v1"입니다. 경우는 `<fileAssociation>` 요소는 뒤에 야 합니다는 `<application>` 요소에서 부모 [ \<어셈블리 > 요소](../deployment/assembly-element-clickonce-application.md)합니다.  
+ 이 요소는 "urn: 스키마-microsoft-com: clickonce"에 대 한 XML 네임 스페이스 참조를 포함 해야 합니다. 요소를 사용 하는 경우 해당 요소는 `<fileAssociation>` `<application>` 부모 [ \<assembly> 요소의](../deployment/assembly-element-clickonce-application.md)요소 뒤에와 야 합니다.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 기존 파일 연결을 덮어쓰지 않습니다. 그러나 ClickOnce 응용 프로그램은 현재 사용자의 파일 확장명을 재정의할 수 있습니다. ClickOnce 응용 프로그램을 제거한 후 사용자에 대해 파일 연결을 삭제 하는 ClickOnce 및 컴퓨터별 연결을 다시 활성화 되는 합니다.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 는 기존 파일 연결을 덮어쓰지 않습니다. 그러나 ClickOnce 응용 프로그램은 현재 사용자에 대해서만 파일 확장명을 재정의할 수 있습니다. ClickOnce 응용 프로그램이 제거 되 고 나면 ClickOnce에서 사용자에 대 한 파일 연결을 삭제 하 고 컴퓨터별 연결이 다시 활성화 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 코드 예제를 보여 줍니다 `fileAssociation` 응용 프로그램의 요소를 사용 하 여를 배포 하는 텍스트 편집기 응용 프로그램에 대 한 매니페스트 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]합니다. 이 코드 예제도 포함 되어는 [ \<파일 > 요소](../deployment/file-element-clickonce-application.md) 필요는 `defaultIcon` 특성입니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제에서는를 `fileAssociation` 사용 하 여 배포 된 텍스트 편집기 응용 프로그램에 대 한 응용 프로그램 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . 이 코드 예제에는 특성에 필요한 [ \<file> 요소도](../deployment/file-element-clickonce-application.md) 포함 되어 있습니다 `defaultIcon` .  
   
 ```  
 <file name="text.ico" size="4286">  
@@ -82,4 +82,4 @@ ms.locfileid: "68150836"
 ```  
   
 ## <a name="see-also"></a>관련 항목  
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

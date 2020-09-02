@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670794"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>방법: C# 리팩터링 코드 조각 복원
@@ -56,5 +56,5 @@ C# 리팩터링 작업은 다음 디렉터리에 있는 코드 조각을 사용�
 
 6. **코드 조각 디렉터리** 대화 상자에서 **열기**를 클릭하고 코드 조각 관리자에서 **확인**을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
- [시각적 C# 코드 조각](../ide/visual-csharp-code-snippets.md) [리팩터링 (C#)](../csharp-ide/refactoring-csharp.md) [코드 조각](../ide/code-snippets.md)
+## <a name="see-also"></a>관련 항목
+ [Visual c # 코드 조각](../ide/visual-csharp-code-snippets.md) [리팩터링 (c #)](../csharp-ide/refactoring-csharp.md) [코드 조각](../ide/code-snippets.md)

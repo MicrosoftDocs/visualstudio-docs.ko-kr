@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547604"
 ---
 # <a name="export-diagrams-as-images"></a>다이어그램을 이미지로 내보내기
 
 Visual Studio에서 동일한 버전의 Visual Studio를 사용하지 않는 이해 관계자, 사용자 또는 프로젝트 팀 멤버와 공유할 수 있도록 모델링 다이어그램을 읽기 전용 형식으로 저장할 수 있습니다.
 
-이 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
+이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
 ## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>다이어그램 또는 다이어그램의 일부를 다른 응용 프로그램에 복사
 

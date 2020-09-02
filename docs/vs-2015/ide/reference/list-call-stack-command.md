@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c44ac18468fbd26adab2cf973a21df58ebb28c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657653"
 ---
 # <a name="list-call-stack-command"></a>호출 스택 목록 표시 명령
@@ -42,25 +42,25 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="switches"></a>스위치
  각 스위치는 전체 양식 및 약식을 사용하여 호출될 수 있습니다.
 
- /Ccount: `number` [또는]/C: `number` 옵션입니다. 표시할 최대 호출 스택 수입니다. 기본값은 제한되지 않습니다.
+ /Count: `number` [또는]/c: `number` 선택 사항입니다. 표시할 최대 호출 스택 수입니다. 기본값은 제한되지 않습니다.
 
- /ShowTypes: `yes`&#124; `no` [또는]/t: `yes`&#124; `no` 선택적입니다. 매개 변수 형식을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
+ /ShowTypes: `yes`&#124;`no` [또는]/t: `yes`&#124;`no` 옵션입니다. 매개 변수 형식을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
 
- /ShowNames: `yes`&#124; `no` [또는]/n: `yes`&#124; `no` 선택적입니다. 매개 변수 이름을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
+ /ShowNames: `yes`&#124;`no` [또는]/n: `yes`&#124;`no` 옵션입니다. 매개 변수 이름을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
 
- /ShowValues: `yes`&#124; `no` [또는]/v: `yes`&#124; `no` 선택적입니다. 매개 변수 값을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
+ /ShowValues: `yes`&#124;`no` [또는]/v: `yes`&#124;`no` 옵션입니다. 매개 변수 값을 표시할지 여부를 지정합니다. 기본값은 `yes`입니다.
 
- /ShowModule: `yes`&#124; `no` [또는]/m: `yes`&#124; `no` 옵션입니다. 모듈 이름을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
+ /ShowModule: `yes`&#124;`no` [또는]/M: `yes` `no` 선택 사항&#124;합니다. 모듈 이름을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
 
- /ShowLineOffset: `yes`&#124; `no` [또는]/#: `yes`&#124; `no` 옵션입니다. 줄 오프셋을 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
+ /ShowLineOffset: `yes`&#124;`no` [또는]/#: `yes`&#124;`no` 옵션입니다. 줄 오프셋을 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
 
- /ShowByteOffset: `yes`&#124; `no` [또는]/b: `yes`&#124; `no` 선택적입니다. 바이트 오프셋을 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
+ /ShowByteOffset: `yes`&#124;`no` [또는]/B: `yes` `no` 선택 사항&#124;합니다. 바이트 오프셋을 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
 
- /ShowLanguage: `yes`&#124; `no` [또는]/l: `yes`&#124; `no` 선택적입니다. 언어를 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
+ /ShowLanguage: `yes`&#124;`no` [또는]/l: `yes`&#124;`no` 옵션입니다. 언어를 표시할지 여부를 지정합니다. 기본값은 `no`입니다.
 
- /IncludeCallsAcrossThreads: `yes`&#124; `no` [또는]/i: `yes`&#124; `no` 선택적입니다. 호출을 포함할지 아니면 또는 다른 스레드에서 가져올지를 지정합니다. 기본값은 `no`여야 합니다.
+ /IncludeCallsAcrossThreads: `yes`&#124;`no` [또는]/I: `yes` `no` 선택 사항&#124;합니다. 호출을 포함할지 아니면 또는 다른 스레드에서 가져올지를 지정합니다. 기본값은 `no`여야 합니다.
 
- /ShowExternalCode: `yes`&#124; `no` 선택적입니다. 호출 스택에 대해 내 코드만 표시할지를 지정합니다. 내 코드만을 해제하는 경우 모든 비사용자 코드가 표시됩니다. 내 코드만을 사용하는 경우 비사용자 코드는 호출 스택 출력에서 `[external]`로 표시됩니다.
+ /ShowExternalCode: `yes`&#124;`no` 옵션입니다. 호출 스택에 대해 내 코드만 표시할지를 지정합니다. 내 코드만을 해제하는 경우 모든 비사용자 코드가 표시됩니다. 내 코드만을 사용하는 경우 비사용자 코드는 호출 스택 출력에서 `[external]`로 표시됩니다.
 
  Thread: `n` 선택 사항입니다. 스레드 `n`에 대한 호출 스택을 표시합니다. 스레드가 지정된 경우 현재 스레드에 대한 호출 스택을 표시합니다.
 
@@ -81,7 +81,7 @@ kb 2
 
  현재 스택 프레임을 두 번째 프레임으로 설정할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 >Debug.CallStack /Count:4 /ShowTypes:yes

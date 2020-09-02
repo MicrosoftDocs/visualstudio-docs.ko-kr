@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: de59aac6bc40e58b6da9b71fd0cc81d432fe41bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670837"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>방법: 그래프 뷰 및 콘텐츠 모델 뷰에서 다이어그램 인쇄
@@ -31,5 +31,5 @@ ms.locfileid: "72670837"
 
 3. XPS 뷰어를 사용하여 XPS 파일에서 저장된 이미지를 인쇄합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [그래프 뷰](../xml-tools/graph-view.md) [콘텐츠 모델 뷰](../xml-tools/content-model-view.md) [XML 스키마 디자이너 작업 영역](../xml-tools/xml-schema-designer-workspace.md)

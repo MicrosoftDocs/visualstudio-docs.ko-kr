@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30b13610cc59b8a0225e52abf47f9a4f2cc97d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657572"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>버전 제어에서 모델 및 다이어그램 관리
@@ -28,7 +28,7 @@ ms.locfileid: "72657572"
 > [!IMPORTANT]
 > 같은 모델링 프로젝트에서 여러 사용자가 작업할 경우 주의하세요. [중간 규모 또는 대규모 프로젝트에서 모델을 구성](../modeling/structure-your-modeling-solution.md)하는 방법을 살펴보세요.
 
-## <a name="ModelingProjects"></a>모델링 프로젝트의 파일
+## <a name="files-in-a-modeling-project"></a><a name="ModelingProjects"></a> 모델링 프로젝트의 파일
  다른 파일에 대한 작업을 수행하는 둘 이상의 사용자가 동시에 한 모델링 프로젝트에서 작업을 수행할 수 있습니다.
 
  여러 사용자가 수행한 변경 간에 발생하는 충돌을 방지하거나 해결하려면 모델이 파일에 저장되는 방식을 이해해야 합니다.
@@ -42,9 +42,9 @@ ms.locfileid: "72657572"
   - **DiagramName.classdiagram.layout** - 이 파일이 삭제되면 모양도 다이어그램에 계속 나타나지만 크기 및 위치가 손실됩니다. 각 레이아웃 파일은 다이어그램 파일을 보조합니다. 레이아웃 파일을 확인하려면 솔루션 탐색기에서 다이어그램 파일 옆에 있는 [+]를 클릭합니다.
 
 > [!NOTE]
-> 파일 간에 일관성을 유지해야 합니다. 예를 들어 소스 제어를 사용하여 .uml 파일에서 변경 내용을 롤백하면 동시에 .*diagram 및 .layout 파일에서 해당 변경 내용을 롤백해야 합니다. 에 표시 되는 요소입니다. \*diagram 파일은 uml 파일에도 표시 되지 않을 경우 손실 됩니다.
+> 파일 간에 일관성을 유지해야 합니다. 예를 들어 소스 제어를 사용하여 .uml 파일에서 변경 내용을 롤백하면 동시에 .*diagram 및 .layout 파일에서 해당 변경 내용을 롤백해야 합니다. 에 표시 되는 요소입니다. \* uml 파일에 표시 되지 않는 다이어그램 파일은 손실 됩니다.
 
-## <a name="Shared"></a>공유 모델링 프로젝트 작업
+## <a name="working-on-shared-modeling-projects"></a><a name="Shared"></a> 공유 모델링 프로젝트 작업
  프로젝트의 다른 부분에서 수행되는 동시 작업 간 충돌을 최소화하려면:
 
 - 모델링 프로젝트를 서로 다른 작업 영역을 나타내는 패키지로 나눕니다. 전체 모델을 루트 모델에 유지하는 것이 아니라 패키지로 이동합니다. 자세한 내용은 [패키지 및 네임 스페이스 정의](../modeling/define-packages-and-namespaces.md)를 참조 하세요.
@@ -70,7 +70,7 @@ ms.locfileid: "72657572"
     > [!NOTE]
     > **가져오기**를 수행할 때 파일이 열려 있고 작업으로 인해 로컬 변경이 발생하면 파일을 다시 로드할지 묻는 메시지가 표시됩니다. 이 경우 **아니요**를 클릭하고 전체 프로젝트를 다시 로드합니다. **솔루션 탐색기**에서 모델링 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 업로드**, **프로젝트 다시 로드**를 차례로 클릭합니다.
 
-### <a name="Exclusive"></a>모델에 대 한 단독 액세스를 필요로 하는 변경 내용
+### <a name="changes-requiring-exclusive-access-to-the-model"></a><a name="Exclusive"></a> 모델에 대 한 단독 액세스를 필요로 하는 변경 내용
  다음과 같은 변경을 수행하기 전에 전체 프로젝트에 체크 아웃 잠금이 있는지 확인하세요.
 
 - 다른 패키지에서 참조되는 요소 이름 바꾸기 및 삭제.
@@ -96,7 +96,7 @@ ms.locfileid: "72657572"
     > [!NOTE]
     > 파일을 다른 프로젝트로 이동할 수는 없습니다.
 
-## <a name="Merging"></a>모델 파일 및 다이어그램에서 변경 내용 병합
+## <a name="merging-changes-in-model-files-and-diagrams"></a><a name="Merging"></a> 모델 파일 및 다이어그램에서 변경 내용 병합
  둘 이상의 사용자가 한 모델에서 동시에 작업하고 나면 [!INCLUDE[esprscc](../includes/esprscc-md.md)] 에서는 모델 파일에서 변경 내용을 병합할지 묻는 메시지를 표시합니다. 이전 섹션에서 설명된 대로 개별 프로젝트에서 작업하면 대부분 병합할 필요가 없습니다. 보통 나머지 충돌은 자동으로 안전하게 병합될 수 있습니다. 다음과 같은 변경 내용은 문제를 일으키지 않습니다.
 
 - 수명선 형식. 기존 형식에서 수명선을 만든 경우가 아니면 수명선을 상호 작용(시퀀스 다이어그램)에 추가할 경우 형식이 루트 모델에 저장됩니다.
@@ -107,5 +107,5 @@ ms.locfileid: "72657572"
 
 - 패키지 내에서만 참조되는 요소 이름 바꾸기 또는 삭제.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [아키텍처 분석 및 모델링 아키텍처](../modeling/analyze-and-model-your-architecture.md) [공유 모델 및 내보내기 다이어그램](../modeling/share-models-and-exporting-diagrams.md)

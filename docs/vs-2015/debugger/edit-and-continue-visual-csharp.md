@@ -1,5 +1,5 @@
 ---
-title: 편집 하며 계속 하기 (Visual C#) | Microsoft Docs
+title: 편집하며 계속하기(Visual C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151424"
 ---
 # <a name="edit-and-continue-visual-c"></a>편집하며 계속하기(Visual C#)
@@ -31,7 +31,7 @@ ms.locfileid: "68151424"
 
 C#에서 편집하며 계속하기를 사용하면 디버깅하는 동안 중단 모드에서 코드를 변경할 수 있습니다. 디버깅 세션을 중지하고 다시 시작하지 않고도 변경 내용을 적용할 수 있습니다. 실행 모드에서 소스 편집기는 읽기 전용입니다.  
   
- 편집하며 계속하기에서는 디버깅 세션 중에 수행할 수 있는 대부분의 변경 내용을 지원하지만 몇 가지 예외가 있습니다. 자세한 내용은 [지원 되는 코드 변경 (C#)](../debugger/supported-code-changes-csharp.md)합니다.  
+ 편집하며 계속하기에서는 디버깅 세션 중에 수행할 수 있는 대부분의 변경 내용을 지원하지만 몇 가지 예외가 있습니다. 자세한 내용은 [지원 되는 코드 변경 내용 (c #)](../debugger/supported-code-changes-csharp.md)을 참조 하세요.  
   
  편집하며 계속하기는 .NET Framework 4.5.1을 대상으로 하는 64비트 프로젝트에 대해 지원됩니다.  
   
@@ -39,6 +39,6 @@ C#에서 편집하며 계속하기를 사용하면 디버깅하는 동안 중단
   
  자세한 내용은 [방법: 편집하며 계속하기를 사용합니다(C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 편집하며 계속하기 사용(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
- [지원되는 코드 변경(C#)](../debugger/supported-code-changes-csharp.md)
+## <a name="see-also"></a>관련 항목  
+ [방법: 편집 하며 계속 하기 사용 (c #)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [지원 되는 코드 변경 내용 (c #)](../debugger/supported-code-changes-csharp.md)

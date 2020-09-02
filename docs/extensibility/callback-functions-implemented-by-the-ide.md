@@ -1,5 +1,5 @@
 ---
-title: IDE에서 구현한 콜백 기능 | 마이크로 소프트 문서
+title: IDE에서 구현 하는 콜백 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,37 +12,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739900"
 ---
-# <a name="callback-functions-implemented-by-the-ide"></a>IDE에서 구현한 콜백 함수
-통합 개발 환경(IDE)과 가능한 한 원활하게 통합하고 통합된 최종 사용자 환경을 제공하기 위해 소스 제어 플러그인은 IDE에서 구현한 콜백 기능을 사용할 수 있습니다. 플러그인은 소스 제어 작업 중에 적절한 시간에 이러한 함수를 호출하여 IDE에 정보를 전달할 수 있습니다. 그런 다음 IDE는 이 정보를 기본 UI에 포함된 요소로 표시할 수 있습니다. 사용자는 플러그인이 자체 UI를 사용하는 경우보다 이 시나리오에서 덜 조각화된 환경을 가지고 있습니다.
+# <a name="callback-functions-implemented-by-the-ide"></a>IDE에서 구현 하는 콜백 함수
+IDE (통합 개발 환경)와 최대한 원활 하 게 통합 하 고 통합 최종 사용자 환경을 제공 하기 위해 소스 제어 플러그 인은 IDE에서 구현 하는 콜백 함수를 사용할 수 있습니다. 플러그 인은 소스 제어 작업 중에 적절 한 시간에 이러한 함수를 호출 하 여 IDE로 정보를 전달할 수 있습니다. 그러면 IDE는이 정보를 네이티브 UI에 포함 된 요소로 표시할 수 있습니다. 사용자는 플러그 인에서 자체 UI를 사용 하는 경우 보다 조각화 된 환경이이 시나리오에서 더 낮습니다.
 
- 필요한 헤더 파일은 *scc.h.* 기본 위치는 *\프로그램 파일\VSIP 8.0\EnvSDK\common\inc.\\* 또한 *\프로그램 파일\VSIP 8.0\MSSCCI에서\\*소스 제어 플러그인 샘플이 있는 VSIP 폴더에 있습니다.
+ 필요한 헤더 파일은 *scc. h입니다.* 기본 위치는 c # *Files\VSIP 8.0 \ EnvSDK\common\inc \\ *입니다. 또한 c #에서 소스 제어 플러그 인 샘플이 포함 된 VSIP 폴더 ( *Files\VSIP 8.0 \MSSCCI \\ *)에 있습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) [SccOpenProject에서](../extensibility/sccopenproject-function.md) IDE를 통해 소스 제어 플러그인의 메시지를 표시하는 데 사용되는 콜백 함수에 대해 설명합니다.
+- [Lptextoutproc](../extensibility/lptextoutproc.md) IDE를 통해 소스 제어 플러그 인의 메시지를 표시 하기 위해 [Sccopenproject](../extensibility/sccopenproject-function.md) 에서 사용 하는 콜백 함수에 대해 설명 합니다.
 
-- [팝리스트푼크](../extensibility/poplistfunc.md) IDE가 버전 제어 하에 있는 파일의 전체 목록과 같이 소스 제어 플러그인에서만 사용할 수 있는 정보에 대한 완전한 액세스 권한이 없는 경우 [SccPopulateList에서](../extensibility/sccpopulatelist-function.md) 사용하는 콜백 함수에 대해 설명합니다.
+- [POPLISTFUNC](../extensibility/poplistfunc.md) [SccPopulateList](../extensibility/sccpopulatelist-function.md) 에서 사용 하는 콜백 함수에 대해 설명 합니다 .이는 IDE가 소스 제어 플러그 인 에서만 사용할 수 있는 정보 (예: 버전 제어에서 전체 파일 목록)에 대 한 완전 한 액세스 권한을가지고 있지 않은 경우에 사용 됩니다.
 
-- [쿼리 변경FUNC](../extensibility/querychangesfunc.md) [SccQueryChanges](../extensibility/sccquerychanges-function.md) 작업에서 사용되는 콜백 함수에 대해 설명합니다.
+- [Query인 함수](../extensibility/querychangesfunc.md) [Sccquerychanges](../extensibility/sccquerychanges-function.md) 작업에서 사용 하는 콜백 함수에 대해 설명 합니다.
 
-- [팝디리스트푼크](../extensibility/popdirlistfunc.md) [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 작업에서 사용되는 콜백 함수에 대해 설명합니다.
+- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 작업에서 사용 하는 콜백 함수에 대해 설명 합니다.
 
-- [옵트네임 체인지PFN](../extensibility/optnamechangepfn.md) 소스 제어 플러그인이 이름 변경 내용을 IDE로 다시 전달할 수 있도록 [하는 SccSetOption](../extensibility/sccsetoption-function.md) 호출에 의해 설정된 콜백 함수에 대해 설명합니다.
+- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 소스 제어 플러그 인이 이름 변경을 IDE에 다시 전달할 수 있도록 하는 [Sccsetoption](../extensibility/sccsetoption-function.md) 호출로 설정 된 콜백 함수에 대해 설명 합니다.
 
 ## <a name="related-sections"></a>관련 단원
-- [스시오픈프로젝트](../extensibility/sccopenproject-function.md) 프로젝트를 엽니다.
+- [Sccopenproject](../extensibility/sccopenproject-function.md) 프로젝트를 엽니다.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) 파일의 현재 상태를 검사합니다. 또한 이 함수를 사용하여 파일이 `pfnPopulate` `nCommand`의 조건과 일치하지 않을 때 호출자에게 알립니다.
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) 현재 상태에 대 한 파일 목록을 검사 합니다. 또한은 함수를 사용 하 여 `pfnPopulate` 파일이의 조건과 일치 하지 않는 경우 호출자에 게 알립니다 `nCommand` .
 
-- [스클레스디리스트](../extensibility/sccpopulatedirlist-function.md) 소스 제어하에 있는 프로젝트 또는 프로젝트의 디렉터리 및 파일 목록을 검사합니다. 발견된 각 디렉터리 및 파일 이름은 콜백 함수에 전달됩니다.
+- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 소스 제어에서 사용할 프로젝트 또는 프로젝트의 디렉터리 및 파일 목록을 검사 합니다. 찾은 각 디렉터리와 파일 이름이 콜백 함수에 전달 됩니다.
 
-- [Scc쿼리 변경](../extensibility/sccquerychanges-function.md) 파일 목록에 변경된 이름 변경 내용을 검사합니다. 각 파일 이름은 변경 상태와 함께 콜백 함수에 전달됩니다.
+- [Sccquerychanges](../extensibility/sccquerychanges-function.md) 파일 목록에 대 한 이름 변경을 검사 합니다. 각 파일 이름은 해당 변경 상태와 함께 콜백 함수에 전달 됩니다.
 
-- [SccSet옵션](../extensibility/sccsetoption-function.md) 다양한 옵션을 설정합니다. 각 옵션에서 `SCC_OPT_xxx` 시작하여 자체적으로 정의된 값 집합을 가짐
+- [Sccsetoption](../extensibility/sccsetoption-function.md) 다양 한 옵션을 설정 합니다. 각 옵션은로 시작 `SCC_OPT_xxx` 하 고 고유 하 게 정의 된 값 집합을 가집니다.
 
-- [소스 제어 플러그인](../extensibility/source-control-plug-ins.md) 소스 제어 플러그인 SDK의 참조 섹션의 내용을 설명합니다.
+- [소스 제어 플러그](../extensibility/source-control-plug-ins.md) 인 소스 제어 플러그 인 SDK의 참조 섹션 콘텐츠를 설명 합니다.

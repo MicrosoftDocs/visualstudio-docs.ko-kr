@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151013"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>플랫폼 간 모바일 개발 예제
@@ -23,15 +23,15 @@ ms.locfileid: "68151013"
 
 플랫폼 간 모바일 개발용 Visual C++에 의해 설치된 템플릿 중 일부는 학습에 사용할 수 전체 예제를 생성합니다. 또한 Windows 개발자 센터에는 다운로드하여 Visual Studio에서 사용해 볼 수 있는 여러 가지 예제 애플리케이션이 있습니다.  
   
-- [hello-jni Android 응용 프로그램 샘플](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
+- [hello-jni Android 애플리케이션 샘플](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
   
-   이 샘플은 Android NDK hello-jni 애플리케이션의 포트입니다. 샘플에서는 종단 간 Java 기본 인터페이스 "Hello World" 앱을 보여 줍니다. 공유 라이브러리에 구현된 네이티브 메서드에서 문자열을 로드하여 앱에 표시합니다.  
+   이 샘플은 Android NDK hello-jni 애플리케이션의 포트입니다. 샘플에서는 엔드투엔드 Java 기본 인터페이스 &quot;Hello World&quot; 앱을 보여 줍니다. 공유 라이브러리에 구현된 네이티브 메서드에서 문자열을 로드하여 앱에 표시합니다.  
   
-- [hello-gl2 Android 응용 프로그램 샘플](https://code.msdn.microsoft.com/hello-gl2-Android-3b61896c)  
+- [hello-gl2 Android 애플리케이션 샘플](https://code.msdn.microsoft.com/hello-gl2-Android-3b61896c)  
   
    이 샘플은 Android NDK hello-gl2 애플리케이션의 포트입니다. 샘플에서는 엔드투엔드 Java 기본 인터페이스 Android OpenGL 앱을 보여 줍니다. OpenGL ES 2.0 셰이더 API를 사용하여 삼각형을 렌더링합니다.  
   
-- [Bitmap Plasma Android 응용 프로그램 샘플](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
+- [Bitmap Plasma Android 애플리케이션 샘플](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
    이 샘플은 Android NDK Bitmap Plasma 애플리케이션의 포트입니다. 샘플에서는 엔드투엔드 Java 기본 인터페이스 Android OpenGL ES 2.0 애플리케이션을 보여 줍니다. Android 비트맵 픽셀 버퍼를 직접 조작하여 플라즈마 효과를 생성하는 것을 보여 줍니다.  
   
@@ -39,11 +39,11 @@ ms.locfileid: "68151013"
   
    이 샘플은 Android NDK TwoLibs 샘플의 포트입니다. 샘플에서는 동적으로 로드된 공유 라이브러리 및 정적 C++ Android 기본 라이브러리를 모두 사용하여 Java 기본 인터페이스 앱에서 호출된 메서드를 구현합니다. 이 샘플은 개발자가 정적/동적 공유 라이브러리를 사용하여 Visual Studio 2015에서 엔드투엔드 JNI Android 애플리케이션을 빌드하는 방법을 이해할 수 있는 좋은 시작 지점입니다.  
   
-- [Tea Pot Android 응용 프로그램 샘플](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)  
+- [Tea Pot Android 애플리케이션 샘플](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)  
   
    이 샘플은 Android NDK TeaPot 애플리케이션의 포트입니다. 샘플에서는 엔드투엔드 Java 기본 인터페이스 Android OpenGL ES 2.0 애플리케이션을 보여 줍니다.  
   
-- [MoreTeaPots Android 응용 프로그램 샘플](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549)  
+- [MoreTeaPots Android 애플리케이션 샘플](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549)  
   
    이 샘플은 Android NDK MoreTeaPots 애플리케이션의 포트입니다. 샘플에서는 엔드투엔드 Java 기본 인터페이스 Android OpenGL 애플리케이션을 보여 줍니다.  
   

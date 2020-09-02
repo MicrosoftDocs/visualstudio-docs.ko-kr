@@ -1,5 +1,5 @@
 ---
-title: 'DA0026: 커널 CPU 처리 시간이 너무 깁니다. | Microsoft Docs'
+title: 'DA0026: 과도한 커널 CPU 처리 시간 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152668"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: 커널 CPU 시간 처리 시간이 너무 깁니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-규칙 Id | 할 일 |  
-| 범주 | 프로 파일링 도구 사용 |  
-| 프로 파일링 방법을 | 샘플링 |  
-| 메시지 | 커널 모드 CPU 시간이 상대적으로 높은 크기 측정 되었습니다. SysCall 샘플링을 사용하면서 소스를 조사해 보세요.|  
+규칙 Id | TODO |  
+| 범주 | 프로파일링 도구 사용 |  
+| 프로 파일링 방법 | 샘플링 |  
+| 메시지 | 비교적 높은 양의 커널 모드 CPU 시간이 측정 되었습니다. SysCall 샘플링을 사용하면서 소스를 조사해 보세요.|  
 | 규칙 유형 | 정보 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f8599348d204d149f3e28d17d681941ddf476b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849324"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>방법: PolicyActivity 규칙 집합 만들기(레거시)
@@ -36,15 +36,15 @@ ms.locfileid: "75849324"
 
 2. **Rulesetreference** 속성을 클릭 합니다.
 
-3. 다음 작업 중 하나를 수행합니다.
+3. 다음 중 하나를 수행합니다.
 
     - **Rulesetreference** 줄임표 **[...]** 를 클릭 한 다음, [규칙 집합 선택 대화 상자 (레거시)](../workflow-designer/select-rule-set-dialog-box-legacy.md)에서 기존 규칙 집합을 선택 합니다. 10단계로 이동합니다.
 
-         -또는-
+         또는
 
     - 규칙 집합의 이름을 입력합니다. **Rulesetreference** 줄임표 **[...]** 를 클릭 한 다음, [규칙 집합 선택 대화 상자 (레거시)](../workflow-designer/select-rule-set-dialog-box-legacy.md)에서 **편집** 을 선택 합니다.
 
-         -또는-
+         또는
 
     - 규칙 집합의 이름을 입력합니다. **Rulesetreference** 속성을 확장 하 고 **규칙 집합 정의** 속성에서 줄임표 **[...]** 를 선택 합니다.
 
@@ -62,5 +62,5 @@ ms.locfileid: "75849324"
 
 9. 작업을 마쳤으면 **확인**을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Policyactivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) 정책 활동 [레거시 워크플로 활동](../workflow-designer/legacy-workflow-activities.md) [을 사용 하 여](https://msdn2.microsoft.com/library/bb675229.aspx) [규칙 집합 선택 대화 상자 (](../workflow-designer/select-rule-set-dialog-box-legacy.md) 레거시) [규칙 집합 편집기 대화 상자 (레거시)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)
