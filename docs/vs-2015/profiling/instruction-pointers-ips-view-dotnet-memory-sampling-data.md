@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143681"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>IP(명령 포인터) 뷰 - .NET 메모리 샘플링 데이터
@@ -25,14 +25,14 @@ ms.locfileid: "68143681"
   
  전용 값만 나열됩니다.  
   
-|열|설명|  
+|열|Description|  
 |------------|-----------------|  
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|  
 |**프로세스 이름**|프로세스의 이름입니다.|  
 |**모듈 이름**|명령이 포함된 모듈의 이름입니다.|  
 |**모듈 경로**|명령이 포함된 모듈의 경로입니다.|  
-|**소스 파일**|명령이 포함된 소스 파일입니다.|  
-|**함수 이름**|함수의 이름.|  
+|**원본 파일**|명령이 포함된 소스 파일입니다.|  
+|**함수 이름**|함수의 이름입니다.|  
 |**함수 줄 번호**|소스 파일에서 이 함수가 시작되는 줄 번호입니다.|  
 |**함수 주소**|함수의 시작 주소입니다.|  
 |**소스 줄 시작**|할당이 발생한 소스 파일의 시작 줄 번호입니다.|  
@@ -45,5 +45,5 @@ ms.locfileid: "68143681"
 |**제외 바이트**|명령에서 할당되고 프로파일링 실행 시에 할당된 메모리의 바이트 수입니다.|  
 |**제외 바이트(%)**|명령에서 할당되고 프로파일링 실행 시에 할당된 모든 메모리 바이트의 백분율입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IP(명령 포인터) 뷰](../profiling/instruction-pointers-ips-view-sampling-data.md)

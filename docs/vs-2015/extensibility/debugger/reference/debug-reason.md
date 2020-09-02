@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143018"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-디버깅에 대 한 프로세스를 실행 하는 이유를 지정 합니다.  
+디버깅을 위해 프로세스가 시작 된 이유를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,30 +49,30 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>매개 변수  
  DEBUG_REASON_ERROR  
- 관련 되지 않은 오류가 발생 했습니다 (이 기본 조건으로 맞춤 이유는 다른 경우).  
+ 특정 하지 않은 오류가 발생 했습니다 .이는 다른 이유로 적합 하지 않을 때 기본 조건으로 사용 됩니다.  
   
  DEBUG_REASON_USER_LAUNCHED  
- 프로세스는 사용자의 요청 시 시작 되었습니다.  
+ 프로세스가 사용자 요청에서 시작 되었습니다.  
   
  DEBUG_REASON_USER_ATTACHED  
- 이미 실행 중인 프로세스에 사용자가 연결 되었습니다.  
+ 사용자가 이미 실행 중인 프로세스를 연결 했습니다.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- 프로세스를 시작 될 때 자동으로 연결 됩니다.  
+ 프로세스가 시작 될 때 자동으로 연결 되었습니다.  
   
  DEBUG_REASON_CAUSALITY  
- 로 인해 프로세스가 시작 된를 *Just In Time* (JIT) 디버깅 이벤트입니다.  
+ JIT ( *just-in-time* ) 디버깅 이벤트로 인해 프로세스가 시작 되었습니다.  
   
 ## <a name="remarks"></a>설명  
- 반환 된 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) 메서드.  
+ [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) 메서드에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

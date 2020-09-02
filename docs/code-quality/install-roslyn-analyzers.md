@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89091453"
 ---
 # <a name="install-third-party-analyzers"></a>타사 분석기 설치
@@ -96,7 +96,7 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 > [!div class="nextstepaction"]
 > [Visual Studio에서 코드 분석기 사용](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [FxCop 분석기 설치](../code-quality/install-fxcop-analyzers.md)

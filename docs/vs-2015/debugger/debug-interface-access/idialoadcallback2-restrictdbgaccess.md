@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c40aca343821f26213ee9e609a341918b9a7ba9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187323"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-.Dbg 파일에서 디버그 정보를 찾고 허용 되는지 여부를 결정 합니다.  
+Dbg 파일에서 디버그 정보를 찾을 수 있는지 여부를 확인 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,11 +31,11 @@ ms.locfileid: "68187323"
 HRESULT RestrictDBGAccess();  
 ```  
   
-## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+## <a name="return-value"></a>Return Value  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이외의 다른 모든 반환 값 `S_OK` .dbg 파일에서 디버그 정보를 찾으시나요 방지 하기 위해.  
+ `S_OK`Dbg 파일에서 디버그 정보를 찾을 수 없도록 하는 이외의 반환 값입니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

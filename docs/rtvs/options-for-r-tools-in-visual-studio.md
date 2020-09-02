@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307066"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315085"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio용 R 도구 옵션
 

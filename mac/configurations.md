@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71128406"
 ---
 # <a name="understanding-build-configurations"></a>빌드 구성 이해
@@ -37,7 +37,7 @@ ms.locfileid: "71128406"
 
 ## <a name="run-configuration"></a>실행 구성
 
-Mac용 Visual Studio를 사용하여 ‘실행 구성’을 설정할 수 있습니다.  실행 구성은 아래 그림과 같이 도구 모음에서 빌드 구성 선택기 옆에 있는 드롭다운 목록에 표시됩니다.
+Mac용 Visual Studio를 사용하여 ‘실행 구성’을 설정할 수 있습니다.__ 실행 구성은 아래 그림과 같이 도구 모음에서 빌드 구성 선택기 옆에 있는 드롭다운 목록에 표시됩니다.
 
 ![실행 구성 드롭다운](media/projects-and-solutions-image8.png)
 
@@ -72,6 +72,6 @@ Android 프로젝트의 실행 구성을 사용하면 프로젝트를 실행하�
   * 모드(한눈에 보기, 알림)
   * 알림 페이로드
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [빌드 구성 이해(Windows의 Visual Studio)](/visualstudio/ide/understanding-build-configurations)

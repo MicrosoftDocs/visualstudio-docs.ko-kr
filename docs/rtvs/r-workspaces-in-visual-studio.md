@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307018"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89314942"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>작업 영역에서 R 코드가 실행되는 위치 제어
 

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197629"
 ---
 # <a name="datakind"></a>DataKind
@@ -25,7 +25,7 @@ ms.locfileid: "68197629"
 
 데이터 값의 특정 범위를 나타냅니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum DataKind {   
@@ -47,38 +47,38 @@ enum DataKind { 
  데이터 기호를 확인할 수 없습니다.  
   
  DataIsLocal  
- 데이터 항목에는 지역 변수입니다.  
+ 데이터 항목은 지역 변수입니다.  
   
  DataIsStaticLocal  
- 데이터 항목에는 정적 지역 변수입니다.  
+ 데이터 항목은 정적 지역 변수입니다.  
   
  DataIsParam  
- 데이터 항목에는 정식 매개 변수입니다.  
+ 데이터 항목은 정식 매개 변수입니다.  
   
  DataIsObjectPtr  
- 데이터 항목 개체 포인터는 (`this`).  
+ 데이터 항목이 개체 포인터 ()입니다 `this` .  
   
  DataIsFileStatic  
- 데이터 항목에는 파일 범위 변수입니다.  
+ 데이터 항목은 파일 범위 변수입니다.  
   
  DataIsGlobal  
- 데이터 항목에는 전역 변수입니다.  
+ 데이터 항목이 전역 변수입니다.  
   
  DataIsMember  
- 데이터 항목 개체 멤버 변수입니다.  
+ 데이터 항목은 개체 멤버 변수입니다.  
   
  DataIsStaticMember  
- 데이터 항목에는 정적 클래스 변수입니다.  
+ 데이터 항목은 클래스 정적 변수입니다.  
   
  DataIsConstant  
- 데이터 항목에는 상수 값입니다.  
+ 데이터 항목은 상수 값입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에서 반환 되는 [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) 메서드.  
+ 이 열거형의 값은 [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) 메서드에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: cvconst.h  
+ 헤더: cvconst  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

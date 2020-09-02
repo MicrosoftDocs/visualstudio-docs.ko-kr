@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538322"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>방법: 워크시트에 ListObject 컨트롤 추가
@@ -37,7 +37,7 @@ ms.locfileid: "85538322"
 
   컨트롤에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.ListObject> [ListObject 컨트롤](../vsto/listobject-control.md)을 참조 하세요.
 
-## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a>디자인 타임에 ListObject 컨트롤 추가
+## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> 디자인 타임에 ListObject 컨트롤 추가
  디자인 타임에 문서 수준 프로젝트에서 워크시트에 컨트롤을 추가 하는 방법에는 여러 가지가 있습니다 <xref:Microsoft.Office.Tools.Excel.ListObject> . 즉, Excel, Visual Studio **도구 상자**및 **데이터 소스** 창에서 사용할 수 있습니다.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "85538322"
 
      데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 워크시트에 추가됩니다. 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)을 참조 하세요.
 
-## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 추가
+## <a name="add-listobject-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 추가
  런타임에 동적으로 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가할 수 있습니다. 이를 통해 이벤트에 대한 응답으로 호스트 컨트롤을 만들 수 있습니다. 동적으로 생성된 리스트 개체는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 ListObject 컨트롤을 추가하려면
@@ -76,7 +76,7 @@ ms.locfileid: "85538322"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 추가
+## <a name="add-listobject-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 추가
  VSTO 추가 기능 프로젝트에서 열려 있는 워크시트에 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 리스트 개체는 워크시트를 저장한 다음 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 ListObject 컨트롤을 추가하려면
@@ -86,7 +86,7 @@ ms.locfileid: "85538322"
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [ListObject 컨트롤](../vsto/listobject-control.md)

@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197782"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
@@ -45,13 +45,13 @@ int GetDimensions(
  진행 검색할 차원의 수입니다.  
   
  `dwDimensions`  
- [in, out] 각 차원의 크기로 채워진 배열입니다. `dwCount``dwDimensions` 배열의 최대 크기를 지정 합니다.  
+ [in, out] 각 차원의 크기로 채워진 배열입니다. `dwCount` 배열의 최대 크기를 지정 합니다 `dwDimensions` .  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 다차원 배열에는 각 차원에 대해 서로 다른 크기를 사용할 수 있습니다. 예를 들어 3 차원 배열이 `myarray[3][2][6]`지정 된 경우이 메서드는 `dwDimensions` 매개 변수에서 3, 2, 6을 순서 대로 반환 합니다.  
+ 다차원 배열에는 각 차원에 대해 서로 다른 크기를 사용할 수 있습니다. 예를 들어 3 차원 배열이 지정 된 경우 `myarray[3][2][6]` 이 메서드는 매개 변수에서 3, 2, 6을 순서 대로 반환 `dwDimensions` 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

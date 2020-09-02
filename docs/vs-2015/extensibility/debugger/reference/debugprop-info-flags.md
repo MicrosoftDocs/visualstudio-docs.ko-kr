@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d28972575e8da9ef499e6d33a4a4a1deb3b07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143006"
 ---
-# <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
+# <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-디버그 속성 개체에 대 한 검색 정보를 지정 합니다.  
+디버그 속성 개체에 대해 검색할 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -71,55 +71,55 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
   
 ## <a name="members"></a>멤버  
  DEBUGPROP_INFO_FULLNAME  
- 초기화/사용 된 `bstrFullName` 필드입니다.  
+ 필드를 초기화/사용 `bstrFullName` 합니다.  
   
  DEBUGPROP_INFO_NAME  
- 초기화/사용 된 `bstrName` 필드입니다.  
+ 필드를 초기화/사용 `bstrName` 합니다.  
   
  DEBUGPROP_INFO_TYPE  
- 초기화/사용 된 `bstrType` 필드입니다.  
+ 필드를 초기화/사용 `bstrType` 합니다.  
   
  DEBUGPROP_INFO_VALUE  
- 초기화/사용 된 `bstrValue` 필드입니다.  
+ 필드를 초기화/사용 `bstrValue` 합니다.  
   
  DEBUGPROP_INFO_ATTRIB  
- 초기화/사용 된 `dwAttrib` 필드입니다.  
+ 필드를 초기화/사용 `dwAttrib` 합니다.  
   
  DEBUGPROP_INFO_PROP,  
- 초기화/사용 된 `pProperty` 포함 된 필드를 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스입니다.  
+ `pProperty` [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 포함 하는 필드를 초기화/사용 합니다.  
   
  DEBUGPROP_INFO_VALUE_AUTOEXPAND  
- 값 필드는이 형식의 개체에 대 한 사용 가능한 경우 자동 확장 값이 포함 됩니다 지정 합니다.  
+ 값 필드에이 형식의 개체에 대 한 자동 확장 값 (사용 가능한 경우)을 포함 하도록 지정 합니다.  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
  더 이상 사용되지 않습니다.  
   
  DEBUGPROP_INFO_VALUE_RAW  
- 또한 값 이나 멤버를 반환 하지 않습니다 (즉, 포맷 안 함 값).  
+ Beautified 값 또는 멤버를 반환 하지 않습니다. 즉, 값의 형식을 지정 하지 마십시오.  
   
  DEBUGPROP_INFO_VALUE_NO_TOSTRING  
- 합성 된 특수 한 값을 반환 하지 않습니다 (예를 들어 호출 하지 마십시오 `ToString()` 값을 생성 하는 개체).  
+ 특수 한 합성 값을 반환 하지 않습니다. 예를 들어 `ToString()` 개체에 대해를 호출 하 여 값을 생성 하지 마십시오.  
   
  DEBUGPROP_INFO_NONE  
- 플래그가 설정 되어 있는지를 지정 합니다.  
+ 플래그가 설정 되지 않도록 지정 합니다.  
   
  DEBUGPROP_INFO_STANDARD  
- 초기화/사용 된 `dwAttrib`, `bstrName`, `bstrType`, 및 `bstrValue` 필드입니다.  
+ ,, 및 필드를 초기화/사용 `dwAttrib` `bstrName` `bstrType` `bstrValue` 합니다.  
   
  DEBUGPROP_INFO_All  
- 모든 플래그 마스크를 나타냅니다.  
+ 모든 플래그의 마스크를 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 전달 되는 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)를 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), 및 [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) 를 초기화할 수 있는 필드를 나타내는 방법을 [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조입니다.  
+ 이러한 값은 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [Enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)및 [enumchildren](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) 메서드에 전달 되어 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조를 초기화할 필드를 표시 합니다.  
   
- 이러한 값에도 사용 됩니다 합니다 `dwFields` 의 멤버는 `DEBUG_PROPERTY_INFO` 구조 반환 되 면 유효 하 고 사용 되는 구조체의 필드는 구조체.  
+ 이러한 값은 구조체의 멤버를 사용 하 여 구조체의 `dwFields` `DEBUG_PROPERTY_INFO` 필드를 사용 하 고 구조가 반환 될 때 유효한 지를 나타내는 데도 사용 됩니다.  
   
- 이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
+ 이러한 값은 비트와 함께 사용할 수 있습니다 `OR` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

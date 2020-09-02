@@ -18,31 +18,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d33e99d11007ca4684f3d875620e2baeb7ddc1e7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285496"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 보안 및 배포
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]는 최소한의 사용자 조작으로 설치 하 고 실행할 수 있는 자동 업데이트 Windows 기반 응용 프로그램을 만들 수 있도록 하는 배포 기술입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visual Basic 및 Visual c #을 사용 하 여 프로젝트를 개발한 경우 ClickOnce 기술을 사용 하 여 배포 된 응용 프로그램 게시 및 업데이트에 대 한 완전 한 지원을 제공 합니다. Visual C++ 응용 프로그램 배포에 대 한 자세한 내용은 [Visual C++ 응용 프로그램에 대 한 ClickOnce 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조 하세요.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 최소한의 사용자 조작으로 설치 하 고 실행할 수 있는 자동 업데이트 Windows 기반 응용 프로그램을 만들 수 있도록 하는 배포 기술입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visual Basic 및 Visual c #을 사용 하 여 프로젝트를 개발한 경우 ClickOnce 기술을 사용 하 여 배포 된 응용 프로그램 게시 및 업데이트에 대 한 완전 한 지원을 제공 합니다. Visual C++ 응용 프로그램 배포에 대 한 자세한 내용은 [Visual C++ 응용 프로그램에 대 한 ClickOnce 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조 하세요.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]배포는 배포에서 세 가지 주요 문제를 극복 합니다.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포는 배포에서 세 가지 주요 문제를 극복 합니다.
 
-- **애플리케이션 업데이트의 어려움.** Microsoft Windows Installer 배포를 사용 하면 응용 프로그램이 업데이트 될 때마다 사용자가 업데이트와 msp 파일을 설치 하 여 설치 된 제품에 적용할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]배포를 사용 하면 업데이트를 자동으로 제공할 수 있습니다. 응용 프로그램에서 변경 된 부분만 다운로드 한 다음 전체 업데이트 된 응용 프로그램이 새 side-by-side 폴더에서 다시 설치 됩니다.
+- **애플리케이션 업데이트의 어려움.** Microsoft Windows Installer 배포를 사용 하면 응용 프로그램이 업데이트 될 때마다 사용자가 업데이트와 msp 파일을 설치 하 여 설치 된 제품에 적용할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용 하면 업데이트를 자동으로 제공할 수 있습니다. 응용 프로그램에서 변경 된 부분만 다운로드 한 다음 전체 업데이트 된 응용 프로그램이 새 side-by-side 폴더에서 다시 설치 됩니다.
 
-- **사용자의 컴퓨터에 영향을 줍니다.** Windows Installer 배포를 사용 하는 경우 응용 프로그램은 종종 공유 구성 요소를 사용 하므로 버전 관리 충돌이 발생할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]배포를 사용 하는 경우 각 응용 프로그램은 자체 포함 되며 다른 응용 프로그램을 방해할 수 없습니다.
+- **사용자의 컴퓨터에 영향을 줍니다.** Windows Installer 배포를 사용 하는 경우 응용 프로그램은 종종 공유 구성 요소를 사용 하므로 버전 관리 충돌이 발생할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용 하는 경우 각 응용 프로그램은 자체 포함 되며 다른 응용 프로그램을 방해할 수 없습니다.
 
-- **보안 권한.** Windows Installer 배포에는 관리 권한이 필요 하 고 제한 된 사용자만 설치할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]배포를 통해 관리자가 아닌 사용자가 설치 하 고 응용 프로그램에 필요한 코드 액세스 보안 권한만 부여할 수 있습니다.
+- **보안 권한.** Windows Installer 배포에는 관리 권한이 필요 하 고 제한 된 사용자만 설치할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 통해 관리자가 아닌 사용자가 설치 하 고 응용 프로그램에 필요한 코드 액세스 보안 권한만 부여할 수 있습니다.
 
   이전에는 이러한 문제로 인해 개발자가 Windows 기반 응용 프로그램 대신 웹 응용 프로그램을 만들어 쉽게 설치할 수 있도록 다양 한 사용자 인터페이스를 사용 하는 경우가 있습니다. 를 사용 하 여 배포 된 응용 프로그램을 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 두 가지 기술을 모두 활용할 수 있습니다.
 
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce 애플리케이션이란?
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 기술을 사용 하 여 게시 된 모든 Windows Presentation Foundation (*xbap*), Windows Forms (*.exe*), 콘솔 응용 프로그램 (*.exe*) 또는 Office 솔루션 (*.dll*)입니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 웹 페이지, 네트워크 파일 공유 또는 cd-rom 등의 미디어에서 세 가지 방법으로 게시할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 최종 사용자의 컴퓨터에 설치 하 고 컴퓨터가 오프 라인 상태인 경우에도 로컬로 실행 하거나, 최종 사용자의 컴퓨터에 아무것도 설치 하지 않고 온라인 전용 모드에서 실행할 수 있습니다. 자세한 내용은 [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)을 참조 하세요.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램을 자동으로 업데이트할 수 있습니다. 사용 가능한 최신 버전을 확인 하 고 업데이트 된 파일을 자동으로 바꿀 수 있습니다. 개발자는 업데이트 동작을 지정할 수 있으며, 네트워크 관리자는 강제 업데이트 지정과 같은 업데이트 전략을 제어할 수 있습니다. 최종 사용자나 관리자가 업데이트를 이전 버전으로 롤백할 수도 있습니다. 자세한 내용은 [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)을 참조 하세요.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 자동으로 업데이트할 수 있습니다. 사용 가능한 최신 버전을 확인 하 고 업데이트 된 파일을 자동으로 바꿀 수 있습니다. 개발자는 업데이트 동작을 지정할 수 있으며, 네트워크 관리자는 강제 업데이트 지정과 같은 업데이트 전략을 제어할 수 있습니다. 최종 사용자나 관리자가 업데이트를 이전 버전으로 롤백할 수도 있습니다. 자세한 내용은 [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)을 참조 하세요.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램이 격리 되어 있으므로 응용 프로그램을 설치 하거나 실행 하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 기존 응용 프로그램을 중단할 수 없습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 자체 포함 됩니다. 각 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은에 설치 되 고 보안 사용자별, 응용 프로그램 별 캐시에서 실행 됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 인터넷 또는 인트라넷 보안 영역에서 실행 됩니다. 필요한 경우 애플리케이션이 승격된 보안 권한을 요청할 수 있습니다. 자세한 내용은 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)을 참조 하세요.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램이 격리 되어 있으므로 응용 프로그램을 설치 하거나 실행 하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 기존 응용 프로그램을 중단할 수 없습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 자체 포함 됩니다. 각 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은에 설치 되 고 보안 사용자별, 응용 프로그램 별 캐시에서 실행 됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 인터넷 또는 인트라넷 보안 영역에서 실행 됩니다. 필요한 경우 애플리케이션이 승격된 보안 권한을 요청할 수 있습니다. 자세한 내용은 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)을 참조 하세요.
 
 ## <a name="how-clickonce-security-works"></a>ClickOnce 보안 작동 방법
  핵심 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 보안은 인증서, 코드 액세스 보안 정책 및 ClickOnce 신뢰 프롬프트를 기반으로 합니다.
@@ -111,7 +111,7 @@ ms.locfileid: "85285496"
 |Chrome|3.5|
 |Microsoft Edge|3.5|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Windows Vista의 ClickOnce 배포](../deployment/clickonce-deployment-on-windows-vista.md)
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

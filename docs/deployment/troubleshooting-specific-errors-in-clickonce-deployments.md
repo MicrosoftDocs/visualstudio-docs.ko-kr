@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235162"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
@@ -47,7 +47,7 @@ ms.locfileid: "87235162"
 
 - `deploymentProvider`배포 매니페스트의 url이 활성화에 사용 된 url과 다른 위치를 가리키기 때문에이 오류가 발생 했는지 여부를 확인 합니다.
 
-- 모든 파일이 서버에 존재 하는지 확인 합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]로그에서 찾을 수 없는 파일을 알려 줍니다.
+- 모든 파일이 서버에 존재 하는지 확인 합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 로그에서 찾을 수 없는 파일을 알려 줍니다.
 
 - 네트워크 연결 문제가 있는지 여부를 확인 합니다. 다운로드 하는 동안 클라이언트 컴퓨터가 오프 라인 상태가 되 면이 메시지를 수신할 수 있습니다.
 
@@ -68,13 +68,13 @@ ms.locfileid: "87235162"
 
 - 배포 매니페스트에서 업데이트 간격을 확인 합니다. 이 간격이 정기적 간격으로 설정 된 경우 (예: 6 시간 마다 한 번)는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이 간격이 경과할 때까지 업데이트를 검색 하지 않습니다. 응용 프로그램이 시작 될 때마다 업데이트를 검색 하도록 매니페스트를 변경할 수 있습니다. 업데이트 간격을 변경 하는 것은 업데이트를 설치 하는 것을 확인 하는 개발 시간 동안 편리한 옵션 이지만 응용 프로그램 활성화 속도가 느려집니다.
 
-- 시작 메뉴에서 응용 프로그램을 다시 시작 해 보세요. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]백그라운드에서 업데이트를 검색 했을 수 있지만 다음 활성화 시 비트를 설치할지 묻는 메시지가 표시 됩니다.
+- 시작 메뉴에서 응용 프로그램을 다시 시작 해 보세요. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 백그라운드에서 업데이트를 검색 했을 수 있지만 다음 활성화 시 비트를 설치할지 묻는 메시지가 표시 됩니다.
 
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>업데이트 중에 "배포의 참조가 응용 프로그램 매니페스트에 정의 된 id와 일치 하지 않습니다."와 같은 오류 메시지가 표시 됩니다.
  이 오류는 배포 및 응용 프로그램 매니페스트를 수동으로 편집 하 여 한 매니페스트의 어셈블리 id에 대 한 설명이 다른 매니페스트의 동기화 되지 않기 때문에 발생할 수 있습니다. 어셈블리의 id는 해당 이름, 버전, 문화권 및 공개 키 토큰으로 구성 됩니다. 매니페스트에서 id 설명을 검사 하 고 차이점을 수정 합니다.
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>로컬 디스크 또는 CD-ROM에서 처음으로 정품 인증에 성공 했지만 시작 메뉴의 후속 활성화에 성공 하지 않음
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]는 배포 공급자 URL을 사용 하 여 응용 프로그램에 대 한 업데이트를 수신 합니다. URL이 가리키는 위치가 올바른지 확인 합니다.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 배포 공급자 URL을 사용 하 여 응용 프로그램에 대 한 업데이트를 수신 합니다. URL이 가리키는 위치가 올바른지 확인 합니다.
 
 #### <a name="error-cannot-start-the-application"></a>오류: "응용 프로그램을 시작할 수 없습니다."
  이 오류 메시지는 일반적으로 저장소에이 응용 프로그램을 설치 하는 데 문제가 있음을 나타냅니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 응용 프로그램에 오류가 있거나 저장소가 손상 되었습니다. 로그 파일에서 오류가 발생 한 위치를 알 수 있습니다.
@@ -122,21 +122,21 @@ ms.locfileid: "87235162"
 ## <a name="additional-errors"></a>추가 오류
  다음 표에서는 사용자가 응용 프로그램을 설치할 때 클라이언트 컴퓨터 사용자가 받을 수 있는 몇 가지 일반적인 오류 메시지를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 오류의 가장 가능성이 높은 원인에 대 한 설명 옆에 각 오류 메시지가 나열 됩니다.
 
-| 오류 메시지 | Description |
+| 오류 메시지 | 설명 |
 | - | - |
 | 응용 프로그램을 시작할 수 없습니다. 응용 프로그램 게시자에 게 문의 하십시오.<br /><br /> 응용 프로그램을 시작할 수 없습니다. 응용 프로그램 공급 업체에 지원을 문의 하십시오. | 이러한 메시지는 응용 프로그램을 시작할 수 없을 때 발생 하는 일반적인 오류 메시지 이며 다른 특정 이유를 찾을 수 없습니다. 이는 응용 프로그램이 손상 되었거나 저장소가 손상 된 것을 의미 하는 경우가 많습니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . |
 | 계속할 수 없습니다. 응용 프로그램의 형식이 잘못 되었습니다. 도움이 필요 하면 응용 프로그램 게시자에 게 문의 하십시오.<br /><br /> 응용 프로그램 유효성 검사에 실패 했습니다. 계속할 수 없습니다.<br /><br /> 응용 프로그램 파일을 검색할 수 없습니다. 배포에서 파일이 손상 되었습니다. | 배포의 매니페스트 파일 중 하나가 구문상 잘못 되었거나 해당 파일을 사용 하 여 조정할 수 없는 해시가 포함 되어 있습니다. 이 오류는 어셈블리 내에 포함 된 매니페스트가 손상 되었음을 나타낼 수도 있습니다. 배포를 다시 만들고 응용 프로그램을 다시 컴파일하거나 매니페스트에서 오류를 수동으로 찾아서 수정 합니다. |
 | 응용 프로그램을 검색할 수 없습니다. 인증 오류입니다.<br /><br /> 응용 프로그램을 설치 하지 못했습니다. 서버에서 응용 프로그램 파일을 찾을 수 없습니다. 도움이 필요 하면 응용 프로그램 게시자 또는 관리자에 게 문의 하십시오. | 배포에 있는 하나 이상의 파일에 액세스할 수 있는 권한이 없어서 해당 파일을 다운로드할 수 없습니다. 웹 서버에서 403 금지 오류가 반환 되는 경우이 오류가 발생할 수 있습니다 .이는 배포의 파일 중 하나가 웹 서버에서 해당 파일을 보호 된 파일로 처리 하는 확장명으로 끝나는 경우에 발생할 수 있습니다. 또한 하나 이상의 응용 프로그램 파일을 포함 하는 디렉터리는에 액세스 하기 위해 사용자 이름과 암호를 요구할 수 있습니다. |
 | 응용 프로그램을 다운로드할 수 없습니다. 응용 프로그램에 필요한 파일이 없습니다. 도움이 필요 하면 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 하십시오. | 응용 프로그램 매니페스트에 나열 된 파일 중 하나 이상을 서버에서 찾을 수 없습니다. 모든 배포의 종속 파일을 업로드 했는지 확인 한 후 다시 시도 하십시오. |
-| 응용 프로그램 다운로드에 실패 했습니다. 네트워크 연결을 확인 하거나 시스템 관리자나 네트워크 서비스 공급자에 게 문의 하십시오. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]서버에 대 한 네트워크 연결을 설정할 수 없습니다. 서버의 가용성 및 네트워크 상태를 확인 합니다. |
+| 응용 프로그램 다운로드에 실패 했습니다. 네트워크 연결을 확인 하거나 시스템 관리자나 네트워크 서비스 공급자에 게 문의 하십시오. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 서버에 대 한 네트워크 연결을 설정할 수 없습니다. 서버의 가용성 및 네트워크 상태를 확인 합니다. |
 | URLDownloadToCacheFile에서 HRESULT ' '이 (가) 발생 했습니다 \<number> . ' '을 (를) 다운로드 하는 동안 오류가 발생 했습니다 \<file> . | 사용자가 배포 대상 컴퓨터에서 Internet Explorer 고급 보안 옵션인 "보안 모드를 변경 하는 경우 경고"를 설정 하 고 설치 되는 ClickOnce 응용 프로그램의 설치 URL이 안전 하지 않은 사이트에서 안전한 사이트로 리디렉션되는 경우 (또는 그 반대의 경우), Internet Explorer 경고에서 중단 하기 때문에 설치가 실패 합니다.<br /><br /> 이 오류를 해결 하려면 다음 작업 중 하나를 수행 하면 됩니다.<br /><br /> -보안 옵션을 선택 취소 합니다.<br />-보안 모드를 변경 하는 방식으로 설치 URL이 리디렉션되지 않는지 확인 합니다.<br />-리디렉션을 완전히 제거 하 고 실제 설치 URL을 가리킵니다. |
 | 하드 디스크에 쓰는 동안 오류가 발생 했습니다. 디스크에 사용 가능한 공간이 부족할 수 있습니다. 도움이 필요 하면 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 하십시오. | 이는 응용 프로그램을 저장 하는 데 충분 한 디스크 공간이 없다는 것을 나타낼 수 있지만 응용 프로그램 파일을 드라이브에 저장 하려고 할 때 더 일반적인 i/o 오류를 나타낼 수도 있습니다. |
 | 응용 프로그램을 시작할 수 없습니다. 디스크에 사용 가능한 공간이 부족 합니다. | 하드 디스크가 꽉 찼습니다. 공간을 해제 하 고 응용 프로그램을 다시 실행 해 보십시오. |
-| 배포 된 활성화를 한 번에 너무 많이 로드 하려고 합니다. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]동시에 시작할 수 있는 다른 응용 프로그램의 수를 제한 합니다. 이것은 로컬 서비스에 대해 서비스 거부 공격을 instigate 하는 악의적인 시도 로부터 보호 하는 데 주로 사용 됩니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 동일한 응용 프로그램을 반복적으로 신속 하 게 시작 하는 사용자는 응용 프로그램의 단일 인스턴스만 종료 합니다. |
+| 배포 된 활성화를 한 번에 너무 많이 로드 하려고 합니다. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 동시에 시작할 수 있는 다른 응용 프로그램의 수를 제한 합니다. 이것은 로컬 서비스에 대해 서비스 거부 공격을 instigate 하는 악의적인 시도 로부터 보호 하는 데 주로 사용 됩니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 동일한 응용 프로그램을 반복적으로 신속 하 게 시작 하는 사용자는 응용 프로그램의 단일 인스턴스만 종료 합니다. |
 | 네트워크를 통해 바로 가기를 활성화할 수 없습니다. | 응용 프로그램에 대 한 바로 가기는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 로컬 하드 디스크 에서만 시작할 수 있습니다. 원격 서버에서 바로 가기 파일을 가리키는 URL을 열어 시작할 수 없습니다. |
 | 응용 프로그램이 너무 커서 부분 신뢰로 온라인에서 실행할 수 없습니다. 도움이 필요 하면 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 하십시오. | 부분 신뢰로 실행 되는 응용 프로그램은 온라인 응용 프로그램 할당량 크기의 절반 (기본적으로 250 MB) 보다 클 수 없습니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

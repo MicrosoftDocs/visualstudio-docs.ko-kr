@@ -1,5 +1,5 @@
 ---
-title: '&lt;패키지&gt; 요소 (부트스트래퍼) | Microsoft Docs'
+title: '&lt;Package &gt; 요소 (부트스트래퍼) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157687"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;패키지&gt; 요소 (부트스트래퍼)
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package &gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Package` 요소는 패키지 파일 내에서 최상위 XML 요소입니다.  
+`Package`요소는 패키지 파일 내의 최상위 XML 요소입니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Package  
@@ -144,16 +144,16 @@ ms.locfileid: "68157687"
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `Package` 요소는 필수입니다. 다음 특성을 가집니다.  
+ `Package`요소가 필요 합니다. 여기에는 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Culture`|필수 요소. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다.|  
-|`Name`|필수 요소. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`.|  
-|`LicenseAgreement`|선택 사항입니다. 최종 사용자 사용권 계약 (EULA)을 포함 하는 배포 패키지에 파일의 이름을 지정 합니다.  이 파일은 일반 텍스트 (.txt) 또는 서식 있는 텍스트 수 있습니다. (.rtf)|  
+|`Culture`|필수 요소. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 `Strings` 설치 중에 제품 이름 및 오류 메시지에 대 한 문화권별 문자열을 나열 하는 요소에 대 한 키입니다.|  
+|`Name`|필수 요소. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름입니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 이 특성은 요소에 대 한 키로 `Strings` , `String` 및 속성이 `Name` `Culture` `Name` 의 및 속성과 일치 하도록 설정 된 `Culture` 요소를 `Package` 포함 해야 합니다.|  
+|`LicenseAgreement`|선택 사항입니다. EULA (최종 사용자 사용권 계약)를 포함 하는 배포 패키지의 파일 이름을 지정 합니다.  이 파일은 일반 텍스트 (.txt) 또는 서식 있는 텍스트 형식일 수 있습니다. (.rtf)|  
   
-## <a name="example"></a>예제  
- 다음 코드 예제에는 재배포에 대 한 완전 한 패키지 파일을 보여 줍니다는 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]합니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제에서는를 재배포 하기 위한 전체 패키지 파일을 보여 줍니다 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -190,5 +190,5 @@ ms.locfileid: "68157687"
 </Package>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

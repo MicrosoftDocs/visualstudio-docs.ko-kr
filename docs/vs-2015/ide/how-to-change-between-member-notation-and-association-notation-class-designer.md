@@ -1,5 +1,5 @@
 ---
-title: '방법: 멤버 표기법과 연결 표기법 간 변경 (클래스 디자이너) | Microsoft Docs'
+title: '방법: 멤버 표기법과 연결 표기법 간 변경(클래스 디자이너) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6a9a15b7284c647cb115c34b5655bdcaa7402ce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663576"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>방법: 멤버 표시와 연결 표시 간 변경(클래스 디자이너)
@@ -27,7 +27,7 @@ ms.locfileid: "72663576"
 클래스 디자이너에서 클래스 다이어그램이 두 형식 사이의 연결 관계를 나타내는 방법을 멤버 표기법에서 연결 표기법으로, 또는 그 반대로 변경할 수 있습니다. 형식 연결 선으로 표시된 멤버는 형식이 어떻게 관련되어 있는지 효과적으로 시각화하여 보여 주는 경우가 많습니다.
 
 > [!NOTE]
-> 연결 관계는 멤버 속성 또는 필드로 나타낼 수 있습니다. 멤버 표기법을 연결 표기법으로 변경하려면 한 형식에 다른 형식의 멤버가 있어야 합니다. 연결 표기법을 멤버 표기법으로 변경하려면 두 형식이 형식 연결 선으로 연결되어 있어야 합니다. 자세한 내용은 [방법: 형식 (클래스 디자이너) ](../ide/how-to-create-associations-between-types-class-designer.md) 간에 연결을 만듭니다. 프로젝트에 클래스 다이어그램이 여러 개 있는 경우 한 다이어그램에서 연결 관계 표시 방법을 변경하면 변경 내용이 해당 다이어그램에만 영향을 줍니다. 다른 다이어그램의 연결 관계 표시 방법을 변경하려면 해당 다이어그램을 열거나 표시하고 변경 단계를 수행합니다.
+> 연결 관계는 멤버 속성 또는 필드로 나타낼 수 있습니다. 멤버 표기법을 연결 표기법으로 변경하려면 한 형식에 다른 형식의 멤버가 있어야 합니다. 연결 표기법을 멤버 표기법으로 변경하려면 두 형식이 형식 연결 선으로 연결되어 있어야 합니다. 자세한 내용은 [방법: 형식 간의 연결 만들기(클래스 디자이너)](../ide/how-to-create-associations-between-types-class-designer.md)를 참조하세요. 프로젝트에 클래스 다이어그램이 여러 개 있는 경우 한 다이어그램에서 연결 관계 표시 방법을 변경하면 변경 내용이 해당 다이어그램에만 영향을 줍니다. 다른 다이어그램의 연결 관계 표시 방법을 변경하려면 해당 다이어그램을 열거나 표시하고 변경 단계를 수행합니다.
 
 ### <a name="to-change-member-notation-to-association-notation"></a>멤버 표기법을 연결 표기법으로 변경하려면
 
@@ -46,5 +46,5 @@ ms.locfileid: "72663576"
 
      형식 연결 선이 사라지고 다이어그램의 해당 형식 도형 내 적합한 구획에 속성이 표시됩니다.
 
-## <a name="see-also"></a>관련 항목:
- [방법: 형식 (클래스 디자이너) ](../ide/how-to-create-inheritance-between-types-class-designer.md) [How 간에 상속을 만듭니다. 형식 간의 상속 보기 (클래스 디자이너) ](../ide/how-to-view-inheritance-between-types-class-designer.md) [형식 및 관계 보기 (클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md) [How에 대해 다음을 수행 합니다. 컬렉션 연결 시각화(클래스 디자이너)](../ide/how-to-visualize-a-collection-association-class-designer.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 형식 간의 상속 만들기 (클래스 디자이너)](../ide/how-to-create-inheritance-between-types-class-designer.md) [방법: 형식 간의 상속 보기 (클래스 디자이너)](../ide/how-to-view-inheritance-between-types-class-designer.md) [형식 및 관계 보기 (클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md) [방법: 컬렉션 연결 시각화 (클래스 디자이너)](../ide/how-to-visualize-a-collection-association-class-designer.md)

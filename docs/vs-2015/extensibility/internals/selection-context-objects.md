@@ -12,38 +12,38 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187423"
 ---
 # <a name="selection-context-objects"></a>선택 컨텍스트 개체
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE) 전역 선택 컨텍스트 개체를 사용 하 여 IDE에서 표시 되어야 할 사항을 결정 합니다. IDE의 각 창 전역 선택 컨텍스트에 푸시된 자체 선택 컨텍스트 개체를 가질 수 있습니다. IDE는 해당 창에 포커스가 있는 경우 창에서 값을 사용 하 여 전역 선택 항목 컨텍스트를 업데이트 합니다. 자세한 내용은 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Ide (통합 개발 환경)는 전역 선택 컨텍스트 개체를 사용 하 여 ide에 표시 되는 항목을 결정 합니다. IDE의 각 창에는 전역 선택 컨텍스트에 푸시되는 자체 선택 컨텍스트 개체가 있을 수 있습니다. IDE는 창에 포커스가 있을 때 창의 값을 사용 하 여 전역 선택 컨텍스트를 업데이트 합니다. 자세한 내용은 [사용자에 대 한 피드백](../../extensibility/internals/feedback-to-the-user.md)을 참조 하세요.  
   
- 각 창 프레임 또는 IDE에서 사이트에 라는 서비스 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>합니다. 창 프레임에 배치 되는 VSPackage로 생성 된 개체를 호출 해야 합니다 `QueryService` 에 대 한 포인터를 가져올 메서드를는 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 인터페이스입니다.  
+ IDE의 각 창 프레임이 나 사이트에는 라는 서비스가 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . 창 프레임에 있는 VSPackage에서 만든 개체는 메서드를 호출 `QueryService` 하 여 인터페이스에 대 한 포인터를 가져와야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .  
   
- 프레임 창 시작 될 때 전역 선택 항목 컨텍스트 전파 되지 않도록 해당 선택 컨텍스트 정보 부분을 유지할 수 있습니다. 이 기능은 빈 선택 영역을 사용 하 여 시작 해야 할 수 있는 도구 창에 유용 합니다.  
+ 프레임 창은 선택 컨텍스트 정보의 일부가 시작 될 때 전역 선택 컨텍스트로 전파 되지 않도록 유지할 수 있습니다. 이 기능은 빈 선택 항목으로 시작 해야 할 수 있는 도구 창에 유용 합니다.  
   
- Vspackage를 모니터링할 수 있는 전역 선택 컨텍스트 트리거 이벤트를 수정 합니다. Vspackage를 구현 하 여 다음 작업을 수행할 수 있습니다 `IVsTrackSelectionEx` 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> 인터페이스:  
+ 전역 선택 컨텍스트를 수정 하면 Vspackage에서 모니터링할 수 있는 이벤트가 트리거됩니다. Vspackage는 및 인터페이스를 구현 하 여 다음 작업을 수행할 수 있습니다 `IVsTrackSelectionEx` <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> .  
   
-- 계층에서 현재 활성 파일을 업데이트 합니다.  
+- 계층의 현재 활성 파일을 업데이트 합니다.  
   
-- 모니터는 특정 유형의 요소를 변경합니다. 예를 들어 VSPackage는 특별 한을 사용 하는 경우 **속성** 창에서 활성에서 변경 내용을 모니터링할 수 있습니다 **속성** 창 고 필요한 경우 사용자를 다시 시작 합니다.  
+- 특정 형식의 요소에 대 한 변경 내용을 모니터링 합니다. 예를 들어 VSPackage 특수 **속성** 창을 사용 하는 경우 활성 **속성** 창에서 변경 내용을 모니터링 하 고 필요한 경우 다시 시작할 수 있습니다.  
   
-  다음 순서 대로 선택 영역 추적의 일반적인 과정을 보여 줍니다.  
+  다음 시퀀스에서는 일반적인 선택 추적 과정을 보여 줍니다.  
   
-1. IDE는 새로 열린된 창에서 선택 항목 컨텍스트를 검색 하 고 전역 선택 컨텍스트에 넣습니다. 선택 항목 컨텍스트 HIERARCHY_DONTPROPAGATE 또는 SELCONTAINER_DONTPROPAGATE을 사용 하는 경우 해당 정보는 전역 컨텍스트를 전파 되지 않습니다. 자세한 내용은 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  
+1. IDE는 새로 열린 창에서 선택 컨텍스트를 검색 하 여 전역 선택 컨텍스트에 넣습니다. 선택 컨텍스트에서 HIERARCHY_DONTPROPAGATE 또는 SELCONTAINER_DONTPROPAGATE를 사용 하는 경우 해당 정보는 전역 컨텍스트에 전파 되지 않습니다. 자세한 내용은 [사용자에 대 한 피드백](../../extensibility/internals/feedback-to-the-user.md)을 참조 하세요.  
   
-2. 알림 이벤트를 요청한 모든 VSPackage에 브로드캐스트 됩니다.  
+2. 알림 이벤트는 요청 된 모든 VSPackage에 브로드캐스트 됩니다.  
   
-3. VSPackage는 도구 또는 기타 유사한 작업을 다시 활성화 계층을 업데이트 하는 등의 작업을 수행 하 여 수신한 이벤트에서 작동 합니다.  
+3. VSPackage는 계층 업데이트, 도구 다시 활성화 또는 기타 유사한 작업과 같은 작업을 수행 하 여 수신 하는 이벤트에 대해 작동 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>   
- [Visual Studio에서 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)   
+ [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [IDE의 선택 및 통화](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [프로젝트 형식](../../extensibility/internals/project-types.md)
+ [프로젝트 형식](../../extensibility/internals/project-types.md):

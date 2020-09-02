@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893270"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합 사용자 지정
@@ -51,7 +51,7 @@ ms.locfileid: "88893270"
 4. **열기** 를 선택 하 여 규칙 집합 편집기에서 규칙을 표시 합니다.
 
 > [!NOTE]
-> .NET Core 또는 .NET Standard 프로젝트가 있는 경우 **코드 분석** 속성 탭이 없으므로 프로세스는 약간 다릅니다. [미리 정의 된 규칙 집합을 프로젝트에 복사 하 고 활성 규칙 집합으로 설정](analyzer-rule-sets.md)하는 단계를 수행 합니다. 규칙 집합을 복사한 후에는 **솔루션 탐색기**에서 열어 [Visual Studio 규칙 집합 편집기에서 편집할](working-in-the-code-analysis-rule-set-editor.md) 수 있습니다.
+> .NET Core 또는 .NET Standard 프로젝트인 경우 **코드 분석** 속성 탭이 없기 때문에 프로세스는 약간 다릅니다. 단계에 따라 [미리 정의 된 규칙 집합을 프로젝트에 복사 하 고 활성 규칙 집합으로 설정](analyzer-rule-sets.md)합니다. 규칙 집합을 복사한 후에는 **솔루션 탐색기**에서 열어 [Visual Studio 규칙 집합 편집기에서 편집할](working-in-the-code-analysis-rule-set-editor.md) 수 있습니다.
 
 ## <a name="create-a-new-rule-set"></a>새 규칙 집합 만들기
 
@@ -98,7 +98,7 @@ ms.locfileid: "88893270"
 
 ## <a name="rule-precedence"></a>규칙 우선 순위
 
-- 심각도가 다른 규칙 집합에서 같은 규칙이 두 번 이상 나열 되는 경우 컴파일러에서 오류를 생성 합니다. 예를 들면
+- 심각도가 다른 규칙 집합에서 같은 규칙이 두 번 이상 나열 되는 경우 컴파일러에서 오류를 생성 합니다. 예를 들면 다음과 같습니다.
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ ms.locfileid: "88893270"
 
    **CA0063: 규칙 집합 파일 ' your \[ ]. 규칙 집합 또는 종속 규칙 집합 파일 중 하나를 로드 하지 못했습니다. 파일이 규칙 집합 스키마를 따르지 않습니다.**
 
-- 규칙 집합에 **include** 태그를 사용 하 여 자식 규칙 집합이 포함 되어 있고 자식 및 부모 규칙에서 둘 다 동일한 규칙을 나열 하지만 심각도가 다른 경우 부모 규칙 집합의 심각도가 우선적으로 적용 됩니다. 예를 들면
+- 규칙 집합에 **include** 태그를 사용 하 여 자식 규칙 집합이 포함 되어 있고 자식 및 부모 규칙에서 둘 다 동일한 규칙을 나열 하지만 심각도가 다른 경우 부모 규칙 집합의 심각도가 우선적으로 적용 됩니다. 예를 들면 다음과 같습니다.
 
    ```xml
    <!-- Parent rule set -->
@@ -145,7 +145,7 @@ ms.locfileid: "88893270"
 > [!div class="nextstepaction"]
 > [규칙 집합 편집기에서 규칙 수정](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: 관리 코드 프로젝트에 대한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)

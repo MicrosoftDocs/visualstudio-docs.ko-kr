@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157567"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp 렌더링 대상 형식 변형
@@ -47,7 +47,7 @@ ms.locfileid: "68157567"
  B5G6R5 형식에는 알파 채널이 없으므로 이 변형은 알파 콘텐츠를 유지하지 않습니다. 앱에서 렌더링하려면 렌더링 대상에 알파 채널이 있어야 하는 경우 간단히 B5G6R5 형식으로 전환할 수 있는 것이 아닙니다.  
   
 ## <a name="example"></a>예제  
- 합니다 **16bpp 렌더링 대상 형식** 사용 하 여 만든 렌더링 대상에 대 한 변형을 재현할 수 있는 `CreateTexture2D` 다음과 같은 코드를 사용 하 여:  
+ 다음과 같은 코드를 사용 하 여를 사용 하 여 만든 렌더링 대상에 대해 **16bpp 렌더링 대상 형식** 변형을 재현할 수 있습니다 `CreateTexture2D` .  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

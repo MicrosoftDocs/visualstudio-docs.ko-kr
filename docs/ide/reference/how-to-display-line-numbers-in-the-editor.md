@@ -1,6 +1,6 @@
 ---
 title: 코드에 줄 번호 표시
-ms.date: 03/28/2019
+ms.date: 08/28/2020
 ms.topic: how-to
 helpviewer_keywords:
 - line numbers, displaying
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6e0c50ab41f3d18458c736e48b0a4360b8b286
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 02d26a452315f144e52a78d7fcea737d39052f59
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770363"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89091475"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>방법: 편집기에 줄 번호 표시
 
@@ -32,9 +32,9 @@ ms.locfileid: "85770363"
 
    ![VS 편집기에 줄 번호를 표시하는 옵션](../../ide/reference/media/line-numbers-option.png)
 
-> [!TIP]
-> 줄 번호는 코드에 추가되지 않으며 참조용으로만 사용됩니다. 줄 번호를 인쇄하려면 **인쇄** 대화 상자에서 **줄 번호 포함** 확인란을 선택합니다.
+> [!NOTE]
+> 줄 번호는 코드에 추가되지 않으며 참조용으로만 사용됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 편집기의 기능](../../ide/writing-code-in-the-code-and-text-editor.md)
