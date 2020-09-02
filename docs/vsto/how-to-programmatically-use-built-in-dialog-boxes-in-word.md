@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537620"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>방법: 프로그래밍 방식으로 Word의 기본 제공 대화 상자 사용
@@ -45,7 +45,7 @@ ms.locfileid: "85537620"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [방법: 프로그래밍 방식으로 숨겨진 모드에서 Word 대화 상자 사용](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

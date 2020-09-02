@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537594"
 ---
 # <a name="how-to-programmatically-save-documents"></a>방법: 프로그래밍 방식으로 문서 저장
@@ -88,7 +88,7 @@ Word 문서 Microsoft Office 저장 하는 방법에는 여러 가지가 있습�
 
 - 새 이름으로 문서를 저장 하려면 C 드라이브에 *Test* 라는 디렉터리가 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 프로그래밍 방식으로 문서 닫기](../vsto/how-to-programmatically-close-documents.md)
 - [방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)

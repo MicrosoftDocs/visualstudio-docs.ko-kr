@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6e4aef02a2bb320112d7d268da28cf66b1ec6751
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657443"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>방법: 사용자 지정 규칙 집합 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0, [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 및 [!INCLUDE[vsPro](../includes/vspro-md.md)]에서 코드 분석과 관련 된 특정 프로젝트 요구 사항을 충족 하도록 사용자 지정 *규칙 집합* 을 만들고 수정할 수 있습니다. 사용자 지정 규칙 집합을 만들려면 규칙 집합 편집기에서 하나 이상의 표준 규칙 집합을 엽니다. 그런 다음 특정 규칙을 추가 하거나 제거 하 고, 코드 분석에서 규칙이 위반 된 것으로 확인 될 때 발생 하는 작업을 변경할 수 있습니다.
+[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 및에서는 [!INCLUDE[vsPro](../includes/vspro-md.md)] 코드 분석과 관련 된 특정 프로젝트 요구 사항에 맞게 사용자 지정 *규칙 집합* 을 만들고 수정할 수 있습니다. 사용자 지정 규칙 집합을 만들려면 규칙 집합 편집기에서 하나 이상의 표준 규칙 집합을 엽니다. 그런 다음 특정 규칙을 추가 하거나 제거 하 고, 코드 분석에서 규칙이 위반 된 것으로 확인 될 때 발생 하는 작업을 변경할 수 있습니다.
 
  새 사용자 지정 규칙 집합을 만들려면 새 파일 이름을 사용 하 여 저장 합니다. 사용자 지정 규칙 집합이 프로젝트에 자동으로 할당 됩니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "72657443"
 
 #### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>규칙 집합 편집기에서 빈 규칙 집합 파일을 열려면
 
-1. @No__t_1의 **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **파일**을 클릭 합니다.
+1. 의 **파일** 메뉴에서 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **새로 만들기** 를 가리킨 다음 **파일**을 클릭 합니다.
 
 2. **새 파일** 대화 상자의 **설치 된 템플릿** 목록에서 **일반** 을 클릭 한 다음 **코드 분석 규칙 집합**을 선택 합니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "72657443"
 
      \- 또는 -
 
-   - @No__t_1Browse 선택 ...  **>** 하 여 목록에 없는 기존 규칙 집합을 지정 합니다.
+   - **\<Browse...>** 목록에 없는 기존 규칙 집합을 지정 하려면 선택 합니다.
 
 4. **열기** 를 클릭 하 여 규칙 집합 편집기에서 규칙을 표시 합니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "72657443"
 
 2. **속성** 탭에서 **코드 분석**을 클릭 합니다.
 
-3. **여러 규칙 집합 \<Choose 선택 ...**  **이 규칙 집합 실행**을 > 합니다.
+3. **\<Choose multiple rule sets...>** **이 규칙 집합 실행**에서 선택 합니다.
 
 4. **규칙 집합 추가 또는 제거** 대화 상자에서 새 규칙 집합의 기반으로 사용할 규칙 집합을 선택 하 고 **확인**을 클릭 합니다.
 
@@ -97,7 +97,7 @@ ms.locfileid: "72657443"
 
 - 모든 그룹의 규칙을 축소 하려면 **모두 축소**를 클릭 합니다.
 
-- 규칙을 그룹화 하는 필드를 변경 하려면 **그룹화** 방법 목록에서 필드를 선택 합니다. 규칙을 그룹화 하지 않고 표시 하려면 **\<None >** 를 선택 합니다.
+- 규칙을 그룹화 하는 필드를 변경 하려면 **그룹화** 방법 목록에서 필드를 선택 합니다. 규칙을 그룹화 하지 않고 표시 하려면를 선택 **\<None>** 합니다.
 
 - 규칙 열에서 필드를 추가 하거나 제거 하려면 **열 옵션**를 클릭 합니다.
 
@@ -111,5 +111,5 @@ ms.locfileid: "72657443"
 
 - 현재 규칙 집합에 Microsoft 기본 규칙 집합을 추가 하거나 제거 하려면 **자식 규칙 집합 추가 또는 제거**를 클릭 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 관리 코드에 대 한 코드 분석 구성 프로젝트](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [코드 분석 규칙 집합 참조](../code-quality/code-analysis-rule-set-reference.md)

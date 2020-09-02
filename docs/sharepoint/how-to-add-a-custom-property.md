@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017073"
 ---
 # <a name="how-to-add-a-custom-property"></a>방법: 사용자 지정 속성 추가
@@ -42,7 +43,7 @@ ms.locfileid: "86017073"
 
 6. 사용자 지정 속성의 **값** 필드에서 값을 지정한 다음 **확인** 단추를 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)

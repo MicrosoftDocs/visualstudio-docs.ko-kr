@@ -1,5 +1,5 @@
 ---
-title: 혼합된 모드 디버깅 Microsoft.NET Framework 4를 사용 하는 경우에 프로세스는 x64 이상을 | Microsoft Docs
+title: x64 프로세스의 혼합 모드 디버깅은 Microsoft .NET Framework 4 이상을 사용할 때만 지원됨 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,26 +17,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e974269cccb65db66ee59735f7acc5de494e2106
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697828"
 ---
-# <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 프로세스의 혼합 모드 디버깅은 Microsoft.NET Framework 4 이상을 사용할 때만 지원됩니다.
+# <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 프로세스의 혼합 모드 디버깅은 Microsoft .NET Framework 4 이상을 사용할 때만 지원됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-NET Framework 버전 이전 4 보다 지원을 제공 하지 않습니다 x64 혼합 모드 디버깅에 대 한 처리 합니다. 따라서 디버깅하는 동안 네이티브 코드에서 관리 코드로 또는 그 반대로 실행할 수 없습니다.  
+.NET Framework 버전 4 이전 버전에서는 x64 프로세스의 혼합 모드 디버깅을 지원 하지 않습니다. 따라서 디버깅하는 동안 네이티브 코드에서 관리 코드로 또는 그 반대로 실행할 수 없습니다.  
   
 ### <a name="workarounds"></a>해결 방법  
   
 - Microsoft .NET Framework 4 이상을 사용하도록 프로젝트를 업데이트합니다.  
   
-     – 또는 –  
+     -또는-  
   
      관리 코드와 네이티브 코드를 별도의 디버깅 세션에서 디버깅합니다.  
   
-     – 또는 –  
+     -또는-  
   
      다음 절차에 설명된 대로 혼합 코드를 32비트 프로세스로 디버깅합니다.  
   
@@ -58,7 +58,7 @@ NET Framework 버전 이전 4 보다 지원을 제공 하지 않습니다 x64 �
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 참조 [SQL 디버깅 설정](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)합니다.  
+- [SQL 디버깅 설정](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)
+## <a name="see-also"></a>관련 항목  
+ [64비트 애플리케이션 디버그](../debugger/debug-64-bit-applications.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219779"
 ---
 # <a name="use-code-analyzers"></a>코드 분석기 사용
@@ -395,7 +395,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)

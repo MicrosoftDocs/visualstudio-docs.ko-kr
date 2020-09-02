@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848380"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -48,13 +48,13 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 
 - XML 문서 주석 및 JavaScript IntelliSense 확장성을 사용하여 사용자 지정 IntelliSense를 지원합니다.
 
-  이 항목에는 다음과 같은 단원이 포함되어 있습니다.
+  이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
 
 - [IntelliSense 컨텍스트 확인](#DeterminingIntelliSenseContext)
 
 - [IntelliSense 정보 처리](#ProcessingIntelliSenseInformation)
 
-- [JavaScript IntelliSense의 기능](#Features)
+- [JavaScript IntelliSense 기능](#Features)
 
 - [JavaScript IntelliSense의 확장성](#Extensibility)
 
@@ -62,7 +62,7 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 
   [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]의 IntelliSense 기능에 대한 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.
 
-## <a name="DeterminingIntelliSenseContext"></a> IntelliSense 컨텍스트 확인
+## <a name="determining-intellisense-context"></a><a name="DeterminingIntelliSenseContext"></a> IntelliSense 컨텍스트 확인
  JavaScript IntelliSense는 현재 스크립트 컨텍스트와 관련된 모든 스크립트를 기준으로 코딩 옵션을 제공합니다. 여기에는 현재 파일의 스크립팅 요소뿐만 아니라 스크립트 파일 참조, 어셈블리 스크립트 참조, 서비스 참조, 페이지 연관 참조 등 스크립트에서 직간접으로 참조되는 모든 코드가 포함됩니다.
 
  현재 스크립트 컨텍스트는 다음과 같은 항목을 기준으로 결정됩니다.
@@ -84,7 +84,7 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
     > [!NOTE]
     > HTML 요소의 이벤트 처리기 특성에 있는 스크립트나 `href` 특성에 정의되어 있는 스크립트에서는 IntelliSense가 지원되지 않습니다.
 
-## <a name="ProcessingIntelliSenseInformation"></a> IntelliSense 정보 처리
+## <a name="processing-intellisense-information"></a><a name="ProcessingIntelliSenseInformation"></a> IntelliSense 정보 처리
  JavaScript IntelliSense를 제공하기 위해 언어 서비스는 다음 작업을 수행합니다.
 
 - 활성 문서의 참조와 참조된 파일의 스크립트 참조에 대한 재귀적 검사를 기반으로 하는 종속 JavaScript 파일의 목록을 만듭니다.
@@ -95,7 +95,7 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 
 - IntelliSense 목록에 영향을 미칠 수 있는 변경 내용이 있는지 파일을 모니터링하여 필요한 경우 목록을 업데이트합니다. 원격 저장소(예: HTTP를 사용하여 참조된 저장소)의 스크립트는 모니터링되지 않습니다.
 
-## <a name="Features"></a> JavaScript IntelliSense의 기능
+## <a name="javascript-intellisense-features"></a><a name="Features"></a> JavaScript IntelliSense의 기능
  JavaScript IntelliSense는 다음과 같은 개체를 지원합니다.
 
 - [DOM(문서 개체 모델) 요소](#HTMLDom)
@@ -118,21 +118,21 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 
   IntelliSense가 개체의 형식을 확인할 수 없는 경우 활성 문서의 식별자를 사용하여 문 완성 옵션을 제공합니다. 자세한 내용은 [식별자에 대한 문 완성](../ide/statement-completion-for-identifiers.md)을 참조하세요.
 
-### <a name="HTMLDom"></a> HTML DOM 요소
+### <a name="html-dom-elements"></a><a name="HTMLDom"></a> HTML DOM 요소
  JavaScript IntelliSense는 `body`, `form` 및 `div` 같은 DHTML(Dynamic HTML) DOM 요소에 대한 프로그래밍 참조를 제공합니다. IntelliSense는 현재 문서와 마스터 페이지에 포함된 요소만 표시합니다. 또한 JavaScript IntelliSense는 `window` 및 `document` 개체와 그 멤버를 지원합니다.
 
-### <a name="IntrinsicObjects"></a> 내장 개체
+### <a name="intrinsic-objects"></a><a name="IntrinsicObjects"></a> 내장 개체
  JavaScript IntelliSense는 네이티브 `Array`, `String`, `Math`, `Date` 및 `Number` 등의 개체에 대한 프로그래밍 참조를 제공합니다. 내장 개체에 대한 자세한 내용은 [표준 기본 제공 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)를 참조하세요.
 
-### <a name="UserDefined"></a> 사용자 정의 변수, 함수 및 개체
+### <a name="user-defined-variables-functions-and-objects"></a><a name="UserDefined"></a> 사용자 정의 변수, 함수 및 개체
  JavaScript 파일을 변경하면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서 열린 문서와 참조된 문서를 검색하여 사용 가능한 모든 코드 리소스를 확인합니다. 여기에는 사용자가 만든 변수, 함수 및 개체가 포함됩니다. 그런 후에는 JavaScript IntelliSense에서 해당 리소스를 사용할 수 있습니다.
 
  사용자 정의 변수, 함수 및 개체에 대한 자세한 내용은 MSDN 웹 사이트에서 [Creating Your Own Objects](https://msdn.microsoft.com/library/202863ha.aspx)(사용자 고유 개체 만들기)를 참조하세요.
 
-### <a name="External"></a> 외부 파일 참조
+### <a name="external-file-references"></a><a name="External"></a> 외부 파일 참조
  코드에 IntelliSense 지원을 달성하기 위해 다양한 형식의 외부 파일 참조를 포함할 수 있습니다. 외부 파일 참조는 스크립트 참조, 참조 지시문이거나 참조 그룹을 사용하여 지정할 수 있습니다.
 
-#### <a name="Script"></a> 스크립트 참조
+#### <a name="script-references"></a><a name="Script"></a> 스크립트 참조
  모든 클라이언트 스크립트를 한 페이지에 작성하는 대신 스크립팅 코드를 포함하는 외부 파일을 참조할 수 있습니다. 그렇게 하면 다른 페이지에서도 코드를 쉽게 재사용할 수 있고 브라우저에서 클라이언트 스크립트를 캐시할 수 있습니다.
 
  ASP.NET AJAX 사용 웹 페이지에서 작업하는 경우가 아니라면 `src` 요소의 여는 태그에서 `script` 특성을 사용하여 외부 스크립트 파일을 참조할 수 있습니다. `src` 특성은 소스 코드나 데이터가 들어 있는 외부 파일의 URL을 지정합니다.
@@ -157,9 +157,9 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 </asp:ScriptManager>
 ```
 
- IntelliSense는 ASP.NET AJAX 웹 애플리케이션에서 어셈블리의 리소스로 포함된 스크립트 파일도 지원합니다. 포함된 스크립트 리소스에 대한 자세한 내용은 [연습: 어셈블리에서 JavaScript 파일을 리소스로 포함](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)을 참조하세요.
+ IntelliSense는 ASP.NET AJAX 웹 애플리케이션에서 어셈블리의 리소스로 포함된 스크립트 파일도 지원합니다. 포함된 스크립트 리소스에 대한 자세한 내용은 [연습: JavaScript 파일을 어셈블리에 리소스로 포함](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)을 참조하세요.
 
-#### <a name="ReferenceDirectives"></a> 참조 지시문
+#### <a name="reference-directives"></a><a name="ReferenceDirectives"></a> 참조 지시문
  `reference` 지시문을 사용하면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서 현재 편집하고 있는 스크립트와 다른 스크립트 사이에 관계를 설정할 수 있습니다. `reference` 지시문을 사용하면 현재 스크립트 파일의 스크립팅 컨텍스트에 스크립트 파일을 포함시킬 수 있습니다. 그러면 코드를 작성할 때 외부에서 정의된 함수, 형식 및 필드를 참조할 수 있습니다.
 
  `reference` 지시문은 XML 주석 형태로 작성합니다. 이 지시문은 파일에서 다른 스크립트보다 먼저 선언해야 합니다. `reference` 지시문은 디스크 기반 스크립트 참조, 어셈블리 기반 스크립트 참조, 서비스 기반 스크립트 참조 또는 페이지 기반 스크립트 참조를 포함할 수 있습니다
@@ -219,7 +219,7 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 
 - 참조된 페이지의 참조 지시문은 처리되지 않습니다. 즉, 참조 지시문이 페이지에 대해 재귀적으로 해석되지 않고 페이지에서 직접 참조하는 스크립트만 포함됩니다.
 
-#### <a name="ReferenceGroups"></a> 참조 그룹
+#### <a name="reference-groups"></a><a name="ReferenceGroups"></a> 참조 그룹
  미리 정의된 참조 그룹을 사용하여 다른 JavaScript 프로젝트의 범위에 있는 특정 IntelliSense .js 파일을 지정할 수 있습니다. 다음과 같은 참조 그룹 형식을 사용할 수 있습니다.
 
 - 암시적(Windows), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱용 이 그룹에 포함된 파일은 지정된 형식의 프로젝트용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
@@ -246,7 +246,7 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 > [!WARNING]
 > 이 기능을 사용하고 코드 편집기의 성능이 저하되면 사용하지 않는 것이 좋습니다.
 
-### <a name="XMLDocComments"></a> XML 문서 주석
+### <a name="xml-documentation-comments"></a><a name="XMLDocComments"></a> XML 문서 주석
  XML 문서 주석은 코드 요소 스크립트에 추가하는 텍스트 설명입니다. 이러한 텍스트 설명은 주석 처리된 스크립트를 참조할 때 IntelliSense를 통해 표시됩니다. 예를 들어 함수의 매개 변수 및 반환 값에 대한 정보를 제공할 수 있습니다. 참조된 파일, 어셈블리 및 서비스에서만 XML 문서 주석을 사용할 수 있습니다. 자세한 내용은 [XML 문서 주석](../ide/xml-documentation-comments-javascript.md) 및 [XML 문서 주석 만들기](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)를 참조하세요.
 
  IntelliSense는 다음과 같은 시나리오에서 XML 문서 주석을 표시할 수 있습니다.
@@ -259,16 +259,16 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 
   한 .aspx 파일이 다른 .aspx 파일을 참조하는 경우 IntelliSense를 사용할 수 없습니다.
 
-### <a name="ASPNet"></a> ASP.NET AJAX 개체
+### <a name="aspnet-ajax-objects"></a><a name="ASPNet"></a> ASP.NET AJAX 개체
  ASP.NET AJAX도 JavaScript IntelliSense를 지원합니다. ASP.NET AJAX에는 ECMAScript(JavaScript)에서 사용할 수 있는 표준 형식을 확장하는 클라이언트 프레임워크가 포함됩니다. JavaScript IntelliSense에서 ASP.NET AJAX 개체에 대한 세부 정보를 제공할 수 있도록 하기 위해 [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 전체에 XML 문서 주석이 추가되었습니다. 이러한 XML 문서 주석은 ASP.NET AJAX 라이브러리에 들어 있는 형식과 멤버를 사용할 때 표시됩니다.
 
 > [!NOTE]
 > 전용 멤버는 JavaScript IntelliSense에서 표시되지 않습니다. ASP.NET AJAX에서 전용 멤버는 밑줄(_)로 시작하는 멤버로 나타납니다.
 
-## <a name="Extensibility"></a> JavaScript IntelliSense의 확장성
+## <a name="javascript-intellisense-extensibility"></a><a name="Extensibility"></a> JavaScript IntelliSense 확장성
  JavaScript Language Service는 타사 라이브러리를 사용하는 개발자용 IntelliSense 환경을 수정할 수 있는 개체와 함수를 제공합니다. 이러한 기능은 기본 언어 서비스가 고객에게 제공할 모든 정보를 제공할 수 없는 경우에 특히 유용합니다. 자세한 내용은 [JavaScript IntelliSense 확장](../ide/extending-javascript-intellisense.md)을 참조하세요.
 
-## <a name="Validation"></a> JavaScript 유효성 검사
+## <a name="javascript-validation"></a><a name="Validation"></a> JavaScript 유효성 검사
  JavaScript 스크립트 유효성 검사는 백그라운드에서 계속 이루어집니다. [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]가 JavaScript 코드에서 구문 오류를 감지하면 다음과 같은 방법으로 피드백이 제공됩니다.
 
 - 편집기에서 요소에 밑줄 표시. 물결 모양의 빨간색 밑줄은 오류를 나타냅니다. 오류 위에 마우스 포인터를 놓으면 오류를 설명하는 도구 설명이 표시됩니다.
@@ -284,5 +284,5 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 - [식별자 문 완성](../ide/statement-completion-for-identifiers.md)
 - [XML 문서 주석](../ide/xml-documentation-comments-javascript.md)
 - [About the DHTML Object Model](https://msdn2.microsoft.com/library/ms533022.aspx)(DHTML 개체 모델 정보)
-- [멤버 목록](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [구성원 나열](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [SRC 특성 &#124; src 속성](https://msdn2.microsoft.com/library/ms534642.aspx)

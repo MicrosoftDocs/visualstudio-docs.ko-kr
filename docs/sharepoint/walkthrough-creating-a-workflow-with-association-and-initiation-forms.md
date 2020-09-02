@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017125"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>연습: 연결 및 초기화 폼이 있는 워크플로 만들기
@@ -167,7 +168,7 @@ ms.locfileid: "86017125"
 
 2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 하 여 **새 항목 추가** 대화 상자를 표시 합니다.
 
-3. 대화 상자 트리 보기에서 프로젝트 언어에 따라 **Visual c #** 또는 **Visual Basic** 을 확장 하 고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+3. 대화 상자 트리 보기에서 프로젝트 언어에 따라 **Visual c #** 또는 **Visual Basic**  을 확장 하 고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 4. 템플릿 목록에서 **워크플로 시작 양식** 템플릿을 선택 합니다.
 
@@ -444,6 +445,6 @@ ms.locfileid: "86017125"
 
 - SharePoint 워크플로에 대 한 자세한 내용은 [Windows Sharepoint Services의 워크플로](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14))를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [연습: 워크플로에 응용 프로그램 페이지 추가](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)
