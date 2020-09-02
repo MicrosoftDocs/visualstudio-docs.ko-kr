@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656870"
 ---
 # <a name="debug-stepping-options-legacy"></a>단계별 디버깅 옵션(레거시)
@@ -35,5 +35,5 @@ ms.locfileid: "72656870"
 
   레거시 상태 시스템 워크플로를 디버깅할 때는 인스턴스 단계별 실행 옵션을 선택해야 합니다.
 
-## <a name="see-also"></a>관련 항목:
- [레거시 워크플로 디버깅](../workflow-designer/debugging-legacy-workflows.md) [How: 단계별 디버깅 옵션 변경(레거시)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+## <a name="see-also"></a>관련 항목
+ [레거시 워크플로 디버깅](../workflow-designer/debugging-legacy-workflows.md) [방법: 단계별 디버깅 옵션 변경 (레거시)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

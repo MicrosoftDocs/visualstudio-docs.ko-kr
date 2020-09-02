@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844727"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리되는 메모리 한도로 실행 중인 32비트 애플리케이션
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0018 |  
@@ -54,13 +54,13 @@ ms.locfileid: "75844727"
   
 - 애플리케이션의 관리되는 메모리 리소스 사용 최적화  
   
-   -또는-  
+   또는  
   
 - 32비트 프로세스의 최대 가상 메모리 크기에 대한 아키텍처 제약 조건을 완화하는 단계 수행  
   
-  애플리케이션의 관리되는 메모리 리소스 사용을 최적화하려면 .NET 메모리 할당 프로파일링 실행에서 관리되는 메모리 할당 데이터를 수집합니다. [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md) 보고서를 검토하여 애플리케이션의 메모리 할당 패턴을 파악합니다.  
+  애플리케이션의 관리되는 메모리 리소스 사용을 최적화하려면 .NET 메모리 할당 프로파일링 실행에서 관리되는 메모리 할당 데이터를 수집합니다. [.Net 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md) 보고서를 검토 하 여 응용 프로그램의 메모리 할당 패턴을 파악 합니다.  
   
-  [개체 수명 뷰](../profiling/object-lifetime-view.md)를 사용하여 프로그램의 어떤 데이터 개체가 세대로 생존하고 세대에서 회수되는지 확인합니다.  
+  [개체 수명 뷰](../profiling/object-lifetime-view.md) 를 사용 하 여 세대에 남아 있는 프로그램의 데이터 개체를 확인 한 다음 해당 개체에서 회수할 수 있습니다.  
   
   [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 사용하여 이러한 할당이 시작된 실행 경로를 확인합니다.  
   

@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 336a02927374e856a2d6f5a55eb03c5ae1ac7037
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845184"
 ---
 # <a name="midl-task"></a>MIDL 작업
@@ -52,9 +52,9 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **AdditionalOptions**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
-     명령줄 옵션의 목록입니다. 예를 들어 **"** _/option1 /option2 /option#_ "과 같습니다. 이 매개 변수를 사용하여 다른 MIDL 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.  
+     명령줄 옵션의 목록입니다. 예를 들면 **"**_/ch1/option1/option #_"입니다. 이 매개 변수를 사용하여 다른 MIDL 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.  
   
      자세한 내용은 [MSDN](https://msdn.microsoft.com/) 웹 사이트에서 "MIDL 명령줄 참조"를 참조하세요.  
   
@@ -68,7 +68,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **ClientStubFile**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      RPC 인터페이스에 대한 클라이언트 스텁 파일의 이름을 지정합니다.  
   
@@ -76,7 +76,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **CPreprocessOptions**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      C/C++ 전처리기로 전달될 옵션을 지정합니다. 전처리기 옵션 목록을 공백으로 구분하여 지정합니다.  
   
@@ -84,7 +84,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **DefaultCharType**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      C 컴파일러에서 생성된 코드를 컴파일하는 데 사용할 기본 문자 형식을 지정합니다.  
   
@@ -100,7 +100,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **DllDataFileName**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      프록시 DLL에 대해 생성된 *dlldata* 파일의 파일 이름을 지정합니다.  
   
@@ -108,7 +108,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **EnableErrorChecks**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      생성된 스텁이 런타임에 수행할 오류 검사의 유형을 지정합니다.  
   
@@ -118,7 +118,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
     |-----------|--------------------------|  
     |**없음**|**/error none**|  
     |**EnableCustom**|**/error**|  
-    |**All**|**/error all**|  
+    |**모두**|**/error all**|  
   
      자세한 내용은 [MSDN](https://msdn.microsoft.com/) 웹 사이트의 "MIDL 명령줄 참조"에서 **/error** 옵션을 참조하세요.  
   
@@ -144,7 +144,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
      `true`인 경우 열거형 값이 허용되는 범위에 있는지 확인합니다.  
   
-     자세한 내용은 midl.exe에 대한 명령줄 도움말( **/?** )에서 **/error enum** 옵션을 참조하세요.  
+     자세한 내용은 midl.exe에 대 한 명령줄 도움말 (**/?**)의 **/cerror enum** 옵션을 참조 하십시오.  
   
 - **ErrorCheckRefPointers**  
   
@@ -164,7 +164,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **GenerateClientFiles**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      컴파일러에서 RPC 인터페이스에 대해 클라이언트 쪽 C 소스 파일을 생성하는지 여부를 지정합니다.  
   
@@ -179,7 +179,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **GenerateServerFiles**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      컴파일러에서 RPC 인터페이스에 대해 서버 쪽 C 소스 파일을 생성하는지 여부를 지정합니다.  
   
@@ -210,7 +210,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **HeaderFileName**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      생성된 헤더 파일의 이름을 지정합니다.  
   
@@ -226,7 +226,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **InterfaceIdentifierFileName**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      COM 인터페이스에 대한 *인터페이스 식별자 파일*의 이름을 지정합니다. 이 이름은 IDL 파일 이름에 "_i.c"를 추가하여 얻은 기본 이름을 재정의합니다.  
   
@@ -250,7 +250,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **OutputDirectory**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      MIDL 작업이 출력 파일을 쓰는 기본 디렉터리를 지정합니다.  
   
@@ -266,7 +266,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **ProxyFileName**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      COM 인터페이스에 대한 인터페이스 프록시 파일의 이름을 지정합니다.  
   
@@ -274,7 +274,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **RedirectOutputAndErrors**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      오류 메시지 및 경고와 같은 출력을 표준 출력에서 지정된 파일로 리디렉션합니다.  
   
@@ -282,13 +282,13 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **ServerStubFile**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      RPC 인터페이스에 대한 서버 스텁 파일의 이름을 지정합니다.  
   
      자세한 내용은 [MSDN](https://msdn.microsoft.com/) 웹 사이트의 "MIDL 명령줄 참조"에서 **/sstub** 옵션을 참조하세요. 이 표의 **ClientStubFile** 매개 변수도 참조하세요.  
   
-- **Source**  
+- **원본**  
   
      필수 `ITaskItem[]` 매개 변수입니다.  
   
@@ -296,7 +296,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **StructMemberAlignment**  
   
-     선택적 **문자열** 매개 변수입니다.  
+     선택적 **String** 매개 변수입니다.  
   
      대상 시스템에 있는 구조체의 맞춤(*압축 수준*)을 지정합니다.  
   
@@ -314,7 +314,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **SuppressCompilerWarnings**  
   
-     선택적 **Boolean** 매개 변수입니다.  
+     선택적 **부울** 매개 변수입니다.  
   
      `true`인 경우 MIDL 작업에서 경고 메시지를 표시하지 않습니다.  
   
@@ -341,7 +341,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
     |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
     |**Itanium**|**/env ia64**|  
-    |**X64**|**/env x64**|  
+    |**(X64**|**/env x64**|  
   
      자세한 내용은 [MSDN](https://msdn.microsoft.com/) 웹 사이트의 "MIDL 명령줄 참조"에서 **/env** 옵션을 참조하세요.  
   
@@ -376,7 +376,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를
   
 - **UndefinePreprocessorDefinitions**  
   
-     선택적 **String[]** 매개 변수입니다.  
+     선택적 **String []** 매개 변수입니다.  
   
      `#undefine` 지시문을 사용하는 것처럼 C 전처리기에 이름을 전달하여 이름의 이전 정의를 제거합니다. 이전에 정의된 이름을 하나 이상 지정합니다.  
   

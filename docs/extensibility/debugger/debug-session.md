@@ -1,5 +1,5 @@
 ---
-title: 디버그 세션 | 마이크로 소프트 문서
+title: 디버그 세션 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 664bcc4790d642ec5ea006cc42b3cf29885e9018
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739000"
 ---
 # <a name="debug-session"></a>디버그 세션
-디버거 아키텍처의 관점에서 *세션*:
+디버거 아키텍처 측면에서 *세션*은 다음과 같습니다.
 
-- IDE의 단일 인스턴스에서 시작되거나 연결된 관련 또는 관련없는 모든 프로세스의 집합입니다.
+- 는 IDE의 단일 인스턴스에서 시작 되거나 연결 된 모든 프로세스 (관련 되거나 관련 되지 않음)의 집합입니다.
 
-- 세션 디버그 관리자(SDM)에 의해 구현됩니다. 자세한 내용은 [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)를 참조하십시오.
+- 는 세션 디버그 관리자 (SDM)에 의해 구현 됩니다. 자세한 내용은 [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

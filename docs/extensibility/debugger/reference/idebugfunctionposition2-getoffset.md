@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::Getoffset | 마이크로 소프트 문서
+title: 'IDebugFunctionPosition2:: GetOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aaa5c13822322084c68aaf0453cb2707f79ddc05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728367"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
-원본 문서에서 함수의 위치를 검색합니다.
+소스 문서에서 함수 위치를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int GetOffset(
 
 ## <a name="parameters"></a>매개 변수
 `pPosition`\
-【인, 아웃】 문서에서 함수의 위치로 채워진 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조입니다.
+[in, out] 문서에서 함수 위치로 채워지는 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670486"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
@@ -37,7 +37,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 - 바로 가기를 선택한 컨텍스트 위치. 예를 들어, F2 바로 가기는 설정 디자이너를 사용 중인 경우 Edit.EditCell 명령을 호출하고, 팀 탐색기를 사용 중인 경우 File.Rename 명령을 호출합니다.
 
-  설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. 또한 [자주 사용되는 명령의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 가지 명령에 대한 기본 바로 가기 키를 확인할 수 있으며, 모든 기본 바로 가기의 전체 목록(일반 개발 설정 기준)은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)에서 찾을 수 있습니다.
+  설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. 또한 [자주 사용 되는 명령의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 개의 명령에 대 한 기본 바로 가기 키를 조회할 수 있으며, [기본 바로 가기](../ide/default-keyboard-shortcuts-in-visual-studio.md)키의 모든 기본 바로 가기의 전체 목록 (일반 개발 설정 기준)을 찾을 수 있습니다.
 
   **항목 내용**
 
@@ -52,13 +52,13 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 > [!NOTE]
 > 사용자 설정 및 Visual Studio 버전에 따라 메뉴 명령과 대화 상자에 표시되는 옵션의 이름 및 위치가 변경될 수 있습니다. 이 항목에서는 **일반 개발 설정**을 기반으로 합니다.
 
-## <a name="bkmk_identify"></a>바로 가기 키 식별
+## <a name="identifying-a-keyboard-shortcut"></a><a name="bkmk_identify"></a> 바로 가기 키 식별
 
-1. 메뉴 모음에서 **도구**, **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구**, **옵션**을 선택 합니다.
 
 2. **환경**을 확장한 다음 **키보드**를 선택합니다.
 
-     ![옵션 대화 상자에 바로 가기 키를 표시합니다.](../ide/media/optionskeyboard.png "|::ref1::|")
+     ![옵션 대화 상자에 바로 가기 키를 표시합니다.](../ide/media/optionskeyboard.png "기타 키보드")
 
 3. **다음 문자열을 포함하는 명령 표시** 상자에 명령 이름의 전부 또는 일부를 공백 없이 입력합니다.
 
@@ -70,15 +70,15 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 5. 명령에 바로 가기 키가 있는 경우, **선택한 명령의 바로 가기** 목록에 표시됩니다.
 
-     ![지정한 명령의 바로 가기 보기](../ide/media/viewshortcut.png "|::ref2::|")
+     ![지정한 명령의 바로 가기 보기](../ide/media/viewshortcut.png "ViewShortcut")
 
-## <a name="bkmk_assign"></a>바로 가기 키 사용자 지정
+## <a name="customizing-a-keyboard-shortcut"></a><a name="bkmk_assign"></a>바로 가기 키 사용자 지정
 
-1. 메뉴 모음에서 **도구**, **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구**, **옵션**을 선택 합니다.
 
 2. **환경** 폴더를 확장한 다음 **키보드**를 선택합니다.
 
-     ![옵션 대화 상자에 바로 가기 키를 표시합니다.](../ide/media/optionskeyboard.png "|::ref3::|")
+     ![옵션 대화 상자에 바로 가기 키를 표시합니다.](../ide/media/optionskeyboard.png "기타 키보드")
 
 3. **다음 문자열을 포함하는 명령 표시** 상자에 명령 이름의 전부 또는 일부를 공백 없이 입력합니다.
 
@@ -100,14 +100,14 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
      다른 명령에 이미 할당된 바로 가기의 경우 **이 바로 가기 키를 사용하는 명령** 상자에 나타납니다. 이 경우, 다른 바로 가기를 넣어 보기 전에 백스페이스 키를 선택하여 해당 바로 가기를 삭제하십시오.
 
-     ![명령에 다른 바로 가기를 지정합니다.](../ide/media/reassignshortcut.png "|::ref4::|")
+     ![명령에 다른 바로 가기를 지정합니다.](../ide/media/reassignshortcut.png "바로 가기 키")
 
 7. **할당** 단추를 선택합니다.
 
     > [!NOTE]
     > 명령에 다른 바로 가기를 지정하는 경우 **할당** 단추를 클릭한 다음 **취소** 단추를 선택하면 대화 상자가 닫히지만 변경 사항은 취소되지 않습니다.
 
-## <a name="bkmk_transfer"></a>사용자 지정 바로 가기 키 공유
+## <a name="sharing-custom-keyboard-shortcuts"></a><a name="bkmk_transfer"></a> 사용자 지정 바로 가기 키 공유
  사용자 지정 바로 가기 키를 파일로 내보낸 다음 데이터를 가져올 수 있도록 다른 사용자에게 이 파일을 제공하여 공유할 수 있습니다.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>바로 가기 키만 내보내려면
@@ -120,7 +120,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 4. **키보드** 확인란을 선택하고 **다음** 단추를 선택합니다.
 
-     ![사용자 지정 바로 가기 키만 내보냅니다.](../ide/media/exportshortcuts.png "|::ref5::|")
+     ![사용자 지정 바로 가기 키만 내보냅니다.](../ide/media/exportshortcuts.png "ExportShortcuts")
 
 5. **설정 파일 이름을 지정하시겠습니까?** 및 **이 디렉터리에 사용자 설정 파일 저장** 상자에서 기본값을 그대로 두거나 다른 값을 지정한 다음 **마침** 단추를 선택합니다.
 
@@ -142,7 +142,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 7. **키보드** 확인란을 선택하고 **마침** 단추를 선택합니다.
 
-     ![사용자 지정 바로 가기 키만 가져옵니다.](../ide/media/importshortcuts.png "|::ref6::|")
+     ![사용자 지정 바로 가기 키만 가져옵니다.](../ide/media/importshortcuts.png "ImportShortcuts")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md)

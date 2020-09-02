@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845042"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
@@ -37,9 +37,9 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
   
 |Direct3D 12 큐|색|  
 |-----------------------|-----------|  
-|렌더링 큐|Green|  
-|컴퓨팅 큐|Yellow|  
-|복사 큐|Orange|  
+|렌더링 큐|녹색|  
+|컴퓨팅 큐|노랑|  
+|복사 큐|주황|  
   
  Direct3D 11은 여러 큐를 표시하지 않으므로 Direct3D 11 앱의 캡처 작업을 수행할 대 이벤트 목록의 이벤트가 색으로 구분되지 않습니다.  
   
@@ -72,8 +72,8 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 |----------|-----------------------|  
 |(아이콘 없음)|일반 이벤트<br /> 사용자 정의 이벤트, 사용자 정의 이벤트 그룹 또는 그리기 이벤트가 아닌 모든 이벤트입니다.|  
 |![그리기 이벤트 아이콘](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|그리기 이벤트<br /> 캡처된 프레임 중 발생한 그리기 이벤트를 표시합니다.|  
-|![사용자&#45;정의 이벤트 표식 아이콘](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 그룹<br /> 앱에서 정의한 것처럼 그룹 관련 이벤트입니다.|  
-|![사용자&#45;정의 이벤트 표식 아이콘](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 표식<br /> 앱에서 정의한 것처럼 특정 위치를 표시합니다.|  
+|![사용자 정의 이벤트 마커 아이콘](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 그룹<br /> 앱에서 정의한 것처럼 그룹 관련 이벤트입니다.|  
+|![사용자 정의 이벤트 마커 아이콘](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 표식<br /> 앱에서 정의한 것처럼 특정 위치를 표시합니다.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>앱에서 사용자 정의 이벤트 표시  
  사용자 정의 이벤트는 앱에 고유합니다. 이러한 이벤트를 사용하여 앱에서 발생한 중요한 이벤트를 그래픽 이벤트 목록의 이벤트와 연관시킬 수 있습니다. 예를 들어 사용자 정의 이벤트 그룹을 만들어 관련 이벤트(예: 사용자 인터페이스를 렌더링하는 이벤트)를 그룹 또는 계층 구조로 그룹화하여 이벤트 목록을 보다 쉽게 찾을 수 있습니다. 또는 특정 종류의 개체를 그릴 때 표식을 만들어 이벤트 목록에서 그래픽 이벤트를 쉽게 찾을 수 있습니다.  
@@ -101,5 +101,5 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
   
  사용 중인 Direct3D 버전에서 지원하는 API 중 하나를 사용할 수 있습니다. 예를 들어 Direct3D 11.1 API를 대상으로 하는 경우 `SetMarker` 또는 `D3DPerf_SetMarker` 를 사용하여 이벤트 표식을 만들 수 있지만 `SetMarkerInt` 는 Direct3D 11.2에서만 사용할 수 있으므로 사용하지 마세요. 그리고 다른 버전의 Direct3D를 지원하는 API를 동일한 앱에서 함께 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: 디바이스 상태로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-device-state.md)

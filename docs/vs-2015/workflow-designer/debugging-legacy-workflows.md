@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656862"
 ---
 # <a name="debugging-legacy-workflows"></a>레거시 워크플로 디버깅
@@ -45,7 +45,7 @@ ms.locfileid: "72656862"
 
 - 디자이너 화면의 조건부 중단점
 
-- 간략한 조사식
+- 간략한 조사식.
 
 - 다음 문 설정
 
@@ -57,7 +57,7 @@ ms.locfileid: "72656862"
 
 - 혼합 모드 디버깅
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [Visual Studio Debugger for Windows Workflow Foundation 호출(레거시)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
 
  [Visual Studio Debugger for Windows Workflow Foundation을 사용하지 않도록 설정(레거시)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

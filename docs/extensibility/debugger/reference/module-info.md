@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | 마이크로 소프트 문서
+title: MODULE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714309"
 ---
 # <a name="module_info"></a>MODULE_INFO
-특정 모듈(DLL, EXE 또는 어셈블리)에 대해 설명합니다.
+특정 모듈 (DLL, EXE 또는 어셈블리)을 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>멤버
  `dwValidFields`\
- 입력할 필드를 지정하는 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 열거형의 플래그 조합입니다.
+ 입력 하는 필드를 지정 하는 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 열거형의 플래그 조합입니다.
 
  `m_bstrName`\
  모듈 이름입니다.
@@ -75,7 +75,7 @@ public struct MODULE_INFO { 
  모듈 버전입니다.
 
  `m_bstrDebugMessage`\
- 모듈에 대한 선택적 메시지(예: "기호를 로드할 수 없습니다.").
+ 모듈에 대 한 선택적 메시지 (예: "기호를 로드할 수 없습니다.")
 
  `m_addrLoadAddress`\
  모듈 로드 주소입니다.
@@ -90,27 +90,27 @@ public struct MODULE_INFO { 
  모듈 로드 순서입니다.
 
  `m_TimeStamp`\
- 기호 파일이 마지막으로 수정된 시간입니다.
+ 기호 파일을 마지막으로 수정한 시간입니다.
 
  `m_bstrUrlSymbolLocation`\
- 모듈에 지정된 기호 파일의 위치(예:\\".")입니다. 모듈의 기호를 찾기 위한 시작 위치로 사용됩니다.
+ 모듈에 지정 된 기호 파일의 위치 (예: ". \\ ")입니다. 모듈에 대 한 기호를 찾기 위한 시작 위치로 사용 됩니다.
 
  `m_dwModuleFlags`\
- 모듈을 설명하는 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) 열거형의 플래그 조합입니다.
+ 모듈을 설명 하는 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) 열거형의 플래그 조합입니다.
 
 ## <a name="remarks"></a>설명
- 이 구조는 채워진 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 메서드에 전달됩니다.
+ 이 구조는 입력 된 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 메서드에 전달 됩니다.
 
- 이 구조는 모듈 창에 나열된 각 모듈에 **해당합니다.**
+ 이 구조는 **모듈** 창에 나열 된 각 모듈에 해당 합니다.
 
 ## <a name="requirements"></a>요구 사항
- 헤더: msdbg.h
+ 헤더: msdbg .h
 
- 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+ 네임 스페이스: VisualStudio
 
- 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

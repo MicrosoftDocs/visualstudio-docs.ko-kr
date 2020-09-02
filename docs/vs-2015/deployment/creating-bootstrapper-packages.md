@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845528"
 ---
 # <a name="creating-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
@@ -102,7 +102,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
 |속성|설명|  
 |--------------|-----------------|  
-|ApplicationName|응용 프로그램의 이름입니다.|  
+|ApplicationName|애플리케이션 이름입니다.|  
 |ProcessorArchitecture|실행 파일의 대상인 플랫폼의 단어당 비트 및 프로세서입니다. 여기에는 다음 값이 포함됩니다.<br /><br /> - Intel<br />- IA64<br />- AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95, Windows 98 또는 Windows ME 운영 체제의 버전 번호. 버전의 구문은 Major.Minor.ServicePack입니다.|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 또는 Windows 7 운영 체제의 버전 번호. 버전의 구문은 Major.Minor.ServicePack입니다.|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- 재배포 가능 파일 목록은 *회사 이름*.*구성 요소 이름*.RedistList.xml 형식을 사용하여 이름을 지정해야 하는 XML 파일입니다. 예를 들어 Acme에서 만든 Datawidgets 구성 요소의 경우 Acme.DataWidgets.RedistList.xml을 사용합니다. 아래에는 재배포 가능 파일 목록 내용의 예제가 나와 있습니다.  
+ 재배포 가능 목록은 *회사 이름*형식을 사용 하 여 이름을 지정 해야 하는 XML 파일입니다. *구성 요소 이름*.RedistList.xml입니다. 예를 들어 Acme에서 만든 Datawidgets 구성 요소의 경우 Acme.DataWidgets.RedistList.xml을 사용합니다. 아래에는 재배포 가능 파일 목록 내용의 예제가 나와 있습니다.  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [방법: ClickOnce 애플리케이션을 사용하여 필수 조건 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [필수 조건 대화 상자](../ide/reference/prerequisites-dialog-box.md)   
+## <a name="see-also"></a>관련 항목  
+ [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [필수 구성 요소 대화 상자](../ide/reference/prerequisites-dialog-box.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)   
  [Visual Studio 2005 부트스트래퍼를 사용하여 설치 시작](https://msdn.microsoft.com/magazine/cc163899.aspx)
