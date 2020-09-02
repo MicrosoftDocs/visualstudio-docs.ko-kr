@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f23ca72f8251cca26e2b636978fdb25ab302962d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667933"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>방법: 클래스 다이어그램을 이미지로 내보내기(클래스 디자이너)
@@ -37,5 +37,5 @@ ms.locfileid: "72667933"
 
      다른 문서에서 연결된 내보낸 이미지를 자동으로 업데이트하려면 Visual Studio에서 다이어그램을 다시 내보냅니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 클래스 다이어그램 인쇄 (클래스 디자이너)](../ide/how-to-print-class-diagrams-class-designer.md) [클래스 다이어그램 작업 (클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: 'DA0013: String.Split 또는 String.Substring 사용률이 높습니다. | Microsoft Docs'
+title: 'DA0013: String.Split 또는 String.Substring 사용률이 높습니다. | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,19 +18,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159197"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: String.Split 또는 String.Substring 사용률이 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0013 |  
-| 범주. NET Framework 사용 지침 |  
+| 범주 |. NET Framework 사용 지침 |  
 | 프로 파일링 방법 | 샘플링 |  
-| 메시지 | String.Split 및 String.Substring 함수 사용을 줄여 보십시오. |  
+| 메시지 | 문자열. Split 및 Substring 함수를 사용 하는 것을 줄여 보세요. |  
 | 규칙 유형 | 경고 |  
   
 ## <a name="cause"></a>원인  
@@ -42,4 +42,4 @@ ms.locfileid: "68159197"
  애플리케이션에서 메모리 할당 관리가 중요할 경우 String.Split 및 String.Substr 메서드의 대안을 사용해 보세요. 예를 들어 String 클래스의 새 인스턴스를 만들지 않고 IndexOf 또는 IndexOfAny 메서드를 사용하여 문자열 내에서 특정 부분 문자열을 찾을 수 있습니다.  
   
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
- [오류 목록] 창에서 메시지를 두 번 클릭하여 샘플링 프로필 데이터의 [함수 정보 뷰](../profiling/function-details-view.md)로 이동합니다. 호출 함수를 검사하여 System.String.Split 또는 System.String.Substr 메서드를 가장 빈번히 사용하는 프로그램의 섹션을 찾습니다. 가능할 경우 String 클래스의 새 인스턴스를 만들지 않고 IndexOf 또는 IndexOfAny 메서드를 사용하여 문자열 내에서 특정 부분 문자열을 찾으세요.
+ 오류 목록 창에서 메시지를 두 번 클릭하여 샘플링 프로필 데이터의 [함수 정보 뷰](../profiling/function-details-view.md)로 이동합니다. 호출 함수를 검사하여 System.String.Split 또는 System.String.Substr 메서드를 가장 빈번히 사용하는 프로그램의 섹션을 찾습니다. 가능할 경우 String 클래스의 새 인스턴스를 만들지 않고 IndexOf 또는 IndexOfAny 메서드를 사용하여 문자열 내에서 특정 부분 문자열을 찾으세요.

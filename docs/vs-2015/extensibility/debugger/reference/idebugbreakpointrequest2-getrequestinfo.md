@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: 'IDebugBreakpointRequest2:: GetRequestInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 998312e9f6dcf16e5afedb22cec870acdcd0efa1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158801"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
@@ -42,16 +42,16 @@ int GetRequestInfo( 
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 플래그의 조합을 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 에서 필드를 결정 하는 열거형을 `pBPRequestInfo` 작성 해야 할 매개 변수는.  
+ 진행 채울 매개 변수의 필드를 결정 하는 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 열거형의 플래그 조합입니다 `pBPRequestInfo` .  
   
  `pBPRequestInfo`  
- [out] 지정 된 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 중단점 요청에 대 한 설명을로 채워질 구조입니다.  
+ 제한이 중단점 요청에 대 한 설명으로 채울 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조체를 지정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugBreakpointRequest` 노출 하는 개체를 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

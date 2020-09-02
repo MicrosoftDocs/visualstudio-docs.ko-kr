@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2481693961dd03815381e9f71ee67cb73464bdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646936"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가
@@ -41,6 +41,6 @@ ms.locfileid: "72646936"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [9단계: 기타 기능 사용](../ide/step-9-try-other-features.md)를 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [9 단계: 기타 기능 시도](../ide/step-9-try-other-features.md)를 참조 하세요.
 
-- 이전 자습서 단계로 돌아가려면 [7단계: 쌍 표시](../ide/step-7-keep-pairs-visible.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [7 단계: 쌍 표시](../ide/step-7-keep-pairs-visible.md)를 참조 하세요.

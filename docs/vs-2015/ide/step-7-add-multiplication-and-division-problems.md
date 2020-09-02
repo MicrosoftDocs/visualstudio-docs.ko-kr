@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7f7efb0acf6611346abe67a7a94e5c221919665
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646968"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>7단계: 곱하기 및 나누기 문제 추가
@@ -53,6 +53,6 @@ ms.locfileid: "72646968"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [8단계: 퀴즈 사용자 지정](../ide/step-8-customize-the-quiz.md)을 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [8 단계: 퀴즈 사용자 지정](../ide/step-8-customize-the-quiz.md)을 참조 하세요.
 
-- 이전 자습서 단계로 돌아가려면 [6단계: 빼기 문제 추가](../ide/step-6-add-a-subtraction-problem.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [6 단계: 빼기 문제 추가](../ide/step-6-add-a-subtraction-problem.md)를 참조 하세요.

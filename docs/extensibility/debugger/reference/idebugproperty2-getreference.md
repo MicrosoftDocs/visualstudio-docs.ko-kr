@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetReference | 마이크로 소프트 문서
+title: 'IDebugProperty2:: GetReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f119a00139e2af44f771fa0903c73b8003dd77f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721361"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
-속성 값에 대한 참조를 반환합니다.
+속성 값에 대 한 참조를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int GetReference(
 
 ## <a name="parameters"></a>매개 변수
 `ppRererence`\
-【아웃】 속성 값에 대한 참조를 나타내는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체를 반환합니다.
+제한이 속성 값에 대 한 참조를 나타내는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 `E_NOTIMPL` 코드(일반적으로 `E_GETREFERENCE_NO_REFERENCE`또는 .)를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드 (일반적으로 또는)가 반환 됩니다 `E_NOTIMPL` `E_GETREFERENCE_NO_REFERENCE` .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

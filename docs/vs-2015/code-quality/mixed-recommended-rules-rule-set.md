@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ffff52722fe27f2761307dcb2acd874d3849fdbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72647015"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>혼합 권장 규칙 규칙 집합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 C++ 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 프로젝트의 가장 일반적이 고 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 C++ 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다. 이 규칙 집합은 Visual Studio Professional 버전 이상으로 구성 하도록 설계 되었습니다.
+Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트의 가장 일반적이 고 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다. 이 규칙 집합은 Visual Studio Professional 버전 이상으로 구성 하도록 설계 되었습니다.
 
 |                                                              규칙                                                              |                                                             설명                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -144,7 +144,7 @@ Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 �
 |                                               [C6705](../code-quality/c6705.md)                                                |                필요한 주석 인수 개수가 실제 주석 인수 개수와 일치하지 않습니다.                 |
 |                                               [C6706](../code-quality/c6706.md)                                                |                                             예기치 않은 주석 오류가 발생했습니다.                                              |
 |                                               [C6995](../code-quality/c6995.md)                                                |                                                     XML 로그 파일을 저장 하지 못했습니다.                                                     |
-|                                              [C26100](../code-quality/c26100.md)                                               |                                                           경합 상태                                                            |
+|                                              [C26100](../code-quality/c26100.md)                                               |                                                           경합 조건                                                            |
 |                                              [C26101](../code-quality/c26101.md)                                               |                                            연동 작업을 제대로 사용 하지 못함                                            |
 |                                              [C26110](../code-quality/c26110.md)                                               |                                                     호출자가 잠금 유지에 실패 했습니다.                                                     |
 |                                              [C26111](../code-quality/c26111.md)                                               |                                                   호출자가 잠금 해제에 실패 했습니다.                                                    |
@@ -156,7 +156,7 @@ Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 �
 |                                              [C28020](../code-quality/c28020.md)                                               |                                               이 식은이 호출에서 true가 아닙니다.                                               |
 |                                              [C28021](../code-quality/c28021.md)                                               |                                           주석이 달린 매개 변수는 포인터여야 합니다.                                           |
 |                                              [C28022](../code-quality/c28022.md)                                               |            이 함수의 함수 클래스는 해당 클래스를 정의 하는 데 사용 된 typedef의 함수 클래스와 일치 하지 않습니다.            |
-|                                              [C28023](../code-quality/c28023.md)                                               |         할당 되거나 전달 되는 함수는 클래스 중 하나 이상에 대 한 \_Function_class \_ 주석을 포함 해야 합니다.         |
+|                                              [C28023](../code-quality/c28023.md)                                               |         할당 되거나 전달 되는 함수는 \_ \_ 클래스 중 하나 이상에 대 한 Function_class 주석을 포함 해야 합니다.         |
 |                                              [C28024](../code-quality/c28024.md)                                               | 할당 되는 함수 포인터는 함수 클래스 (es) 목록에 포함 되지 않은 함수 클래스를 사용 하 여 주석 처리 됩니다. |
 |                                              [C28039](../code-quality/c28039.md)                                               |                                     실제 매개 변수의 형식은 형식과 정확히 일치 해야 합니다.                                      |
 |                                              [C28112](../code-quality/c28112.md)                                               |            연동 함수를 통해 액세스 되는 변수는 항상 연동 함수를 통해 액세스 해야 합니다.            |

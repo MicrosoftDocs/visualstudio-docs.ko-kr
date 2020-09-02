@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
+title: 'IDebugCustomAttributeQuery:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 392067356cdc50b55ddf99b7342d76e1dcd02b09
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568462"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-지정된 된 사용자 지정 특성은 정의 된 경우를 결정 합니다.  
+지정 된 사용자 지정 특성이 정의 되어 있는지 여부를 확인 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,13 +39,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>매개 변수  
  `pszCustomAttributeName`  
- [in] 사용자 지정 특성의 이름입니다.  
+ 진행 사용자 지정 특성의 이름입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 사용자 지정 특성에 정의 된 경우 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE`합니다.  
+ 사용자 지정 특성이 정의 된 경우는를 반환 하 `S_OK` 고 그렇지 않으면를 반환 `S_FALSE` 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugClassFieldSymbol** 노출 하는 개체를 [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 [Idebugcustomattributequery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) 인터페이스를 제공 하는 **Cdebugclassfieldsymbol** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
@@ -84,5 +84,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

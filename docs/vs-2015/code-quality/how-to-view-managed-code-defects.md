@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3fe1c6440f76e358ccde22129cbd413bb229b77e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646265"
 ---
 # <a name="how-to-view-managed-code-defects"></a>방법: 관리 코드 오류 보기
@@ -27,7 +27,7 @@ ms.locfileid: "72646265"
 
  분석 코드 창에서 다음을 수행할 수 있습니다.
 
-- **경고 제목을 선택 합니다.**
+- **경고 제목을 선택합니다.**
 
      경고에 대한 추가 정보는 코드 분석 창에 표시됩니다. 소스 파일에서 경고를 일으킨 줄이 표시되고 소스 코드 편집기에서 강조 표시됩니다.
 

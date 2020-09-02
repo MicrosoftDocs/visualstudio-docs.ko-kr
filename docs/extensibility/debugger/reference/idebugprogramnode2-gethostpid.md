@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로그램노드2::겟호스트피드 | 마이크로 소프트 문서
+title: 'IDebugProgramNode2:: GetHostPid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722028"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
-프로그램을 호스팅하는 프로세스에 대한 시스템 프로세스 식별자를 가져옵니다.
+프로그램을 호스트 하는 프로세스의 시스템 프로세스 식별자를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int GetHostPid ( 
 
 ## <a name="parameters"></a>매개 변수
 `pdwHostPid`\
-【아웃】 호스팅 프로세스에 대한 시스템 프로세스 식별자를 반환합니다.
+제한이 호스팅 프로세스에 대 한 시스템 프로세스 식별자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
- 다음 예제에서는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) `CProgram` 인터페이스를 구현 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+ 다음 예제에서는 IDebugProgramNode2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
@@ -62,5 +62,5 @@ HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

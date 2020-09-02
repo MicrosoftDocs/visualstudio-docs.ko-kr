@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301460"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312745"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>여러 서비스 구성을 사용하여 Visual Studio에서 Azure 프로젝트 구성
 
@@ -41,13 +41,13 @@ Visual Studio의 Azure 클라우드 서비스 프로젝트에는 `ServiceDefinit
 
 **인스턴스** 횟수 속성을 이 역할에 대해 서비스를 실행해야 하는 인스턴스 수로 설정합니다.
 
-**VM 크기** 속성을 **매우 작음**, **작음**, **보통**, **큼** 또는 **매우 큼**으로 설정합니다.  자세한 내용은 [클라우드 서비스의 크기를](/azure/cloud-services/cloud-services-sizes-specs)참조하십시오.
+**VM 크기** 속성을 **매우 작음**, **작음**, **보통**, **큼** 또는 **매우 큼**으로 설정합니다.  자세한 내용은 [Cloud Services의 크기](/azure/cloud-services/cloud-services-sizes-specs)를 참조 하세요.
 
 ### <a name="startup-action-web-role-only"></a>시작 작업(웹 역할만)
 
 디버깅을 시작할 때 Visual Studio가 HTTP 엔드포인트 또는 HTTPS 엔드포인트 또는 모두에 대한 웹 브라우저를 시작하도록 이 속성을 설정합니다.
 
-**HTTPS 끝점** 옵션은 역할에 대한 HTTPS 끝점을 이미 정의한 경우에만 사용할 수 있습니다. **엔드포인트** 속성 페이지에서 HTTPS 엔드포인트를 정의할 수 있습니다.
+**Https 끝점** 옵션은 사용자의 역할에 대 한 https 끝점을 이미 정의한 경우에만 사용할 수 있습니다. **엔드포인트** 속성 페이지에서 HTTPS 엔드포인트를 정의할 수 있습니다.
 
 HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션은 기본적으로 사용되고 HTTP 엔드포인트에 대한 브라우저 외에도 디버깅을 시작하면 Visual Studio에서 이 엔드포인트에 대한 브라우저를 시작합니다(둘 다 시작 옵션이 활성화되어 있다고 가정).
 

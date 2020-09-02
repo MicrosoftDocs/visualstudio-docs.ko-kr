@@ -13,13 +13,13 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8239afd1cf4e8c0a5e702f2b0e4ed64408cada09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645746"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>연습: 사용자 지정 규칙 세트 구성 및 사용
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>연습: 사용자 지정 규칙 집합 구성 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 클래스 라이브러리에 대해 사용자 지정 된 *규칙 집합* 을 사용 하도록 구성 된 코드 분석 도구를 사용 하는 방법을 보여 줍니다. 솔루션에 대해 지정한 프로젝트 형식과 관련 된 규칙 집합을 선택 하거나, 다른 규칙 집합을 선택 하 여 다른 방법으로 수정할 수 있는 문제에 대 한 레거시 코드 검색과 같은 특정 요구 사항을 충족 시킬 수 있습니다. 두 경우 모두, 규칙 집합을 사용자 지정 하 여 프로젝트 요구 사항에 맞게 조정할 수도 있습니다.
@@ -38,7 +38,7 @@ ms.locfileid: "72645746"
 
 - 코드 분석을 실행 하 고 규칙 집합 사용자 지정 동작의 작동 방식을 확인 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]또는 [!INCLUDE[vsPro](../includes/vspro-md.md)]
 
@@ -47,11 +47,11 @@ ms.locfileid: "72645746"
 
 #### <a name="create-a-class-library"></a>클래스 라이브러리 만들기
 
-1. **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다.
+1. **파일** 메뉴에서 **새로 만들기**를 클릭하고 **프로젝트**를 클릭합니다.
 
-2. **새 프로젝트** 대화 상자의 **프로젝트 형식**에서 **C#시각적 개체**를 클릭 합니다.
+2. **새 프로젝트** 대화 상자의 **프로젝트 형식**에서 **Visual c #** 을 클릭 합니다.
 
-3. **시각적 개체 C#** 에서 **클래스 라이브러리**를 선택 합니다.
+3. **Visual c #** 에서 **클래스 라이브러리**를 선택 합니다.
 
 4. **이름** 텍스트 상자에 **rulesetsample** 을 입력 한 다음 **확인**을 클릭 합니다.
 
@@ -70,9 +70,9 @@ ms.locfileid: "72645746"
     파일 메뉴에서 선택한 **항목 저장** 을 클릭 하 여 선택한 규칙 집합 및 해당 설정에 대 한 정보를 사용 하 여 프로젝트 파일을 업데이트 합니다.
 
    > [!TIP]
-   > 실제 상황에서 코드 분석을 사용 하 여 대상으로 지정할 문제를 우선 순위를 정하는 데 사용 하는 것이 좋은 방법입니다. **권장 되는 최소 규칙** 규칙 집합으로 시작 하 고 원하는 문제를 수정한 다음 규칙 또는 규칙 집합을 증분 방식으로 추가 하는 것입니다. 추가 문제를 찾아 해결 합니다.
+   > 실제 상황에서 코드 분석을 사용 하 여 대상으로 지정할 문제를 우선 순위를 정하는 데 사용 하는 것이 좋은 방법입니다. **권장 되는 최소 규칙** 규칙 집합으로 시작 하 여 원하는 문제를 해결 한 다음, 더 많은 규칙 또는 규칙 집합을 추가 하 여 추가 문제를 찾아 수정 하는 것입니다.
 
-   다음으로, "식별자의 철자가 정확 해야 합니다." 코드 분석 규칙의 위반을 설명 하는 데 사용 되는 일부 코드를 클래스 라이브러리에 추가 합니다. 자세한 내용은 [CA1704를 참조 하세요. @No__t_0 식별자의 철자가 정확한 지 확인 해야 합니다.
+   다음으로, "식별자의 철자가 정확 해야 합니다." 코드 분석 규칙의 위반을 설명 하는 데 사용 되는 일부 코드를 클래스 라이브러리에 추가 합니다. 자세한 내용은 [CA1704: identifier의 철자가](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)정확한 지 확인 하세요.
 
 #### <a name="add-your-own-code"></a>사용자 고유의 코드 추가
 
@@ -128,7 +128,7 @@ ms.locfileid: "72645746"
 
     이제 다양 한 도구 모음 단추 및 필터링 옵션을 시험해 보고이에 익숙해질 수 있습니다. 예를 들어 **묶는 방법** 드롭다운 목록을 사용 하 여 특정 규칙 또는 규칙 범주를 쉽게 찾을 수 있습니다. 또 다른 예는 규칙 집합 페이지 도구 모음에서 **사용할 수 없는 규칙 숨기기** 단추를 사용 하 여 **작업** 열이 **없음**으로 설정 된 모든 규칙을 숨기 거 나 표시할 수 있다는 것입니다. 이는 사용 하지 않도록 설정 된 규칙을 검색 하 여 사용 하지 않도록 설정 하려는 경우에 유용할 수 있습니다.
 
-5. 보기 메뉴에서 속성 창을 클릭합니다. 속성 도구 창의 이름 상자에 **내 사용자 지정 규칙 집합** 을 입력 합니다. 그러면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE에 설정 된 새 규칙의 표시 이름이 변경 됩니다.
+5. 보기 메뉴에서 속성 창을 클릭합니다. 속성 도구 창의 이름 상자에 **내 사용자 지정 규칙 집합** 을 입력 합니다. 이렇게 하면 IDE에서 새 규칙 집합의 표시 이름이 변경 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 됩니다.
 
 6. **파일** 메뉴에서 **Microsoft 모든 규칙을 저장 합니다.** 규칙 집합을 클릭 하 여 사용자 지정 규칙 집합을 저장 합니다. 프로젝트의 루트 폴더로 이동 합니다. **파일 이름** 텍스트 상자에 **mycustomruleset 집합**을 입력 합니다. 이제 사용자 지정 규칙 집합을 프로젝트에 사용할 수 있도록 선택할 수 있습니다.
 
@@ -140,7 +140,7 @@ ms.locfileid: "72645746"
 
 2. **속성** 탭에서 **코드 분석**을 클릭 합니다.
 
-    **이 규칙 집합 실행** 드롭다운 목록에서 \<Browse을 클릭 합니다.  **>** . 코드 프로젝트의 루트 폴더로 이동한 다음 **Mycustomruleset**집합을 선택 합니다. 이전 절차에서 만든 새 규칙 집합입니다.
+    **이 규칙 집합 실행** 드롭다운 목록에서을 클릭 **\<Browse..>** 합니다. 코드 프로젝트의 루트 폴더로 이동한 다음 **Mycustomruleset**집합을 선택 합니다. 이전 절차에서 만든 새 규칙 집합입니다.
 
 3. **파일** 메뉴에서 **저장** 을 클릭 하 여 프로젝트 구성을 저장 합니다. 이제 사용자 지정 규칙 집합을 프로젝트와 함께 사용할 수 있습니다.
 
@@ -152,5 +152,5 @@ ms.locfileid: "72645746"
 
 2. 오류 목록 창에서 **경고**를 클릭 하면 "식별자에 올바른 철자를 입력 해야 합니다." 규칙에 대 한 CA1704 warning 위반이 더 이상 표시 되지 않습니다.
 
-## <a name="see-also"></a>관련 항목:
- [방법: 관리 코드 프로젝트에 대 한 코드 분석 구성 ](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [코드 분석 규칙 집합 참조](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 관리 코드에 대 한 코드 분석 구성 프로젝트](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [코드 분석 규칙 집합 참조](../code-quality/code-analysis-rule-set-reference.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145365"
 ---
 # <a name="utilization-view"></a>사용률 뷰
@@ -29,7 +29,7 @@ ms.locfileid: "68145365"
   
  그래프의 대상 프로세스/유휴 프로세스/시스템 프로세스에서 사용하는 평균 논리 코어와 시간(x축)이 표시됩니다. 유휴 프로세스는 유휴 코어를 표시합니다. 시스템 프로세스는 다른 프로세스 대신 작업을 수행할 수 있는 Windows의 프로세스입니다. 시스템에서 실행 중인 나머지 프로세스는 나머지 코어의 사용률 계산에 포함됩니다.  
   
- 논리 코어 수는 y축에 표시됩니다. Windows는 하이퍼스레딩과 같은 하드웨어의 동시 멀티스레딩 지원을 논리 코어로 처리합니다. 따라서 코어당 2개 하드웨어 스레드를 지원하는 쿼드 코어 프로세서가 포함된 시스템은 논리 코어가 8개인 시스템으로 표시됩니다. 이 규칙은 코어 뷰에도 적용됩니다. 자세한 내용은 [코어 뷰](../profiling/cores-view.md)를 참조하세요.  
+ 논리 코어 수는 y축에 표시됩니다. Windows는 하이퍼스레딩과 같은 하드웨어의 동시 멀티스레딩 지원을 논리 코어로 처리합니다. 따라서 코어당 2개 하드웨어 스레드를 지원하는 쿼드 코어 프로세서가 포함된 시스템은 논리 코어가 8개인 시스템으로 표시됩니다. 이 규칙은 코어 뷰에도 적용됩니다. 자세한 내용은 [코어 뷰](../profiling/cores-view.md)를 참조 하세요.  
   
  GPU 활동 차트에는 시간별로 사용된 DirectX 엔진의 수가 표시됩니다.  엔진은 DMA 패킷을 처리 중인 경우 사용 중인 것입니다.  3D 엔진, 비디오 엔진 등의 특정 DirectX 엔진은 차트에 표시되지 않습니다.  
   
@@ -51,6 +51,6 @@ ms.locfileid: "68145365"
 ## <a name="zooming"></a>확대/축소  
  CPU 사용률 그래프 또는 GPU 활동 그래프에서 확대하려면 특정 섹션을 선택하거나 그래프 위쪽에 있는 확대/축소 슬라이더 도구를 사용합니다. 확대/축소 설정은 다른 뷰로 전환해도 유지됩니다. 다시 축소하려면 확대/축소 슬라이더 도구를 사용합니다. Ctrl 키를 누른 상태로 스크롤하여 확대/축소할 수도 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Concurrency 시각화](../profiling/concurrency-visualizer.md)   
+## <a name="see-also"></a>관련 항목  
+ [동시성 시각화 도우미](../profiling/concurrency-visualizer.md)   
  [코어 뷰](../profiling/cores-view.md)

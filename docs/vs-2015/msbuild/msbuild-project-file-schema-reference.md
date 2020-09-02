@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158859"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 프로젝트 파일 스키마 참조
@@ -35,30 +35,30 @@ ms.locfileid: "68158859"
   
 |요소|자식 요소|특성|  
 |-------------|--------------------|----------------|  
-|[Choose 요소(MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> When|--|  
-|[Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)|--|조건<br /><br /> 프로젝트|  
+|[Choose 요소 (MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> When|--|  
+|[Import 요소 (MSBuild)](../msbuild/import-element-msbuild.md)|--|조건<br /><br /> Project|  
 |[ImportGroup 요소](../msbuild/importgroup-element.md)|가져오기|조건|  
-|[Item 요소(MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|조건<br /><br /> 제외<br /><br /> 포함<br /><br /> 제거|  
-|[ItemDefinitionGroup 요소(MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Item*|조건|  
-|[ItemGroup 요소(MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Item*|조건|  
-|[ItemMetadata 요소(MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Item*|조건|  
-|[OnError 요소(MSBuild)](../msbuild/onerror-element-msbuild.md)|--|조건<br /><br /> ExecuteTargets|  
-|[Otherwise 요소(MSBuild)](../msbuild/otherwise-element-msbuild.md)|선택<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
-|[Output 요소(MSBuild)](../msbuild/output-element-msbuild.md)|--|조건<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|  
-|[Parameter 요소](../msbuild/parameter-element.md)|--|Output<br /><br /> ParameterType<br /><br /> 필수|  
-|[ParameterGroup 요소](../msbuild/parametergroup-element.md)|*Parameter*|--|  
-|[Project 요소(MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> 가져오기<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> 대상<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
+|[Item 요소 (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|조건<br /><br /> 제외<br /><br /> 포함<br /><br /> 제거|  
+|[ItemDefinitionGroup 요소 (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*항목*|조건|  
+|[ItemGroup 요소 (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*항목*|조건|  
+|[ItemMetadata 요소 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*항목*|조건|  
+|[OnError 요소 (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|조건<br /><br /> ExecuteTargets|  
+|[그렇지 않으면 요소 (MSBuild)](../msbuild/otherwise-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
+|[Output 요소 (MSBuild)](../msbuild/output-element-msbuild.md)|--|조건<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|  
+|[Parameter 요소](../msbuild/parameter-element.md)|--|출력<br /><br /> ParameterType<br /><br /> 필수|  
+|[ParameterGroup 요소](../msbuild/parametergroup-element.md)|*매개 변수*|--|  
+|[Project 요소 (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> 가져오기<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> 대상<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
 |[ProjectExtensions 요소(MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
-|[Property 요소(MSBuild)](../msbuild/property-element-msbuild.md)|--|조건|  
-|[PropertyGroup 요소(MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|조건|  
-|[Target 요소(MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 조건<br /><br /> DependsOnTargets<br /><br /> Inputs<br /><br /> KeepDuplicateOutputs<br /><br /> name<br /><br /> 출력<br /><br /> 반환 값|  
-|[Task 요소(MSBuild)](../msbuild/task-element-msbuild.md)|Output|조건<br /><br /> ContinueOnError<br /><br /> *Parameter*|  
-|[TaskBody 요소(MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|Evaluate|  
-|[UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 조건<br /><br /> TaskFactory<br /><br /> TaskName|  
-|[When 요소(MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|조건|  
+|[Property 요소 (MSBuild)](../msbuild/property-element-msbuild.md)|--|조건|  
+|[PropertyGroup 요소 (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*속성*|조건|  
+|[Target 요소 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 조건<br /><br /> DependsOnTargets<br /><br /> 입력<br /><br /> KeepDuplicateOutputs<br /><br /> Name<br /><br /> 출력<br /><br /> 반환|  
+|[Task 요소 (MSBuild)](../msbuild/task-element-msbuild.md)|출력|조건<br /><br /> ContinueOnError<br /><br /> *매개 변수*|  
+|[TaskBody 요소 (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|평가|  
+|[UsingTask 요소 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 조건<br /><br /> TaskFactory<br /><br /> TaskName|  
+|[When 요소 (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|조건|  
   
-## <a name="see-also"></a>참고 항목  
- [요소](../msbuild/msbuild-task-reference.md)   
- [조건](../msbuild/msbuild-conditions.md)   
+## <a name="see-also"></a>관련 항목  
+ [작업 참조](../msbuild/msbuild-task-reference.md)   
+ [만족](../msbuild/msbuild-conditions.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)

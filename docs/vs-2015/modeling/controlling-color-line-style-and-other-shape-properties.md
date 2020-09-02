@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5d296f5ab3f5c584558b373b57c175fb2bacef4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667852"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
@@ -29,7 +29,7 @@ Color와 같은 일부 셰이프 속성은 ' 노출 ' 될 수 있습니다. 즉,
  이제 셰이프에는 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다.
 
 ## <a name="dynamically-updating-an-exposed-property"></a>노출 된 속성을 동적으로 업데이트
- 일반적으로 노출 되는 속성을 다른 속성에 따라 결정 하려고 합니다. 예를 들어 특정 도메인 속성이 0 보다 작은 경우 셰이프를 빨간색으로 설정 하려고 할 수 있습니다. 이 종속성을 설정 하려면 [규칙](../modeling/rules-propagate-changes-within-the-model.md)을 만듭니다. 예를 들면,
+ 일반적으로 노출 되는 속성을 다른 속성에 따라 결정 하려고 합니다. 예를 들어 특정 도메인 속성이 0 보다 작은 경우 셰이프를 빨간색으로 설정 하려고 할 수 있습니다. 이 종속성을 설정 하려면 [규칙](../modeling/rules-propagate-changes-within-the-model.md)을 만듭니다. 예를 들어:
 
 ```csharp
 using System;

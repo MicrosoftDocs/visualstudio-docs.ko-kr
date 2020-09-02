@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | 마이크로 소프트 문서
+title: 'IDebugBreakpointChecksumRequest2:: IsChecksumEnabled | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c30dbdbc3c75f22331c61f42dbe9aa829020725
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735114"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
-이 문서에 대해 체크섬이 활성화되어 있는지 여부를 결정합니다.
+이 문서에 체크섬을 사용할 수 있는지 여부를 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,10 +39,10 @@ public int IsChecksumEnabled(
 
 ## <a name="parameters"></a>매개 변수
 `pfChecksumEnabled`\
-【아웃】 체크섬이 활성화된 경우 TRUE를 반환합니다. 그렇지 않으면 FALSE를 반환합니다.
+제한이 체크섬이 사용 되 면 TRUE를 반환 합니다. 그렇지 않으면 FALSE를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

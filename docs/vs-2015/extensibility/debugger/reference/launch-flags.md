@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f209ed773a72c3925661bd81ecfe2685408b3189
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147459"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
+# <a name="launch_flags"></a>LAUNCH_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-디버그 시작 플래그를 지정합니다.  
+디버그 시작 플래그를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,29 +47,29 @@ public enum enum_LAUNCH_FLAGS { 
   
 ## <a name="members"></a>멤버  
  LAUNCH_DEBUG  
- 디버깅에 대 한 프로세스를 시작 합니다.  
+ 디버깅 프로세스를 시작 합니다.  
   
  LAUNCH_NODEBUG  
- 디버그 하지 않고 프로세스를 시작 합니다.  
+ 디버깅 하지 않고 프로세스를 시작 합니다.  
   
  LAUNCH_ENABLE_ENC  
- 사용 되지 않으며, 사용 하지 마십시오.  
+ 사용 되지 않습니다 .를 사용 하지 마십시오.  
   
  LAUNCH_MERGE_ENV  
- 프로세스를 시작 하 고 시작 하는 호스트를 사용 하 여 환경을 병합 합니다.  
+ 프로세스를 시작 하 고 환경을 시작 호스트와 병합 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값을 인수로 전달 되는 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드.  
+ 이러한 값은 [Launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드에 인수로 전달 됩니다.  
   
- 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
+ 이러한 플래그는 비트와 함께 사용할 수 있습니다 `OR` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

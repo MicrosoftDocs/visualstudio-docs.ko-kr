@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565905"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
@@ -128,9 +128,9 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
  DSL 정의에서 관계를 만들 때 속성 및 관계 이름에 기본값이 지정 됩니다. 그러나이를 변경할 수 있습니다.
 
 ## <a name="multiplicities"></a>복합성
- 복합성 도메인 관계에서 동일한 역할을 가질 수 있는 요소 수를 지정 합니다. 이 예제에서 **카탈로그** 역할에 대 한 0-다 (0\*) 다중성 설정은 **게시자** 도메인 클래스의 모든 인스턴스에 게 지정할 수 있는 **PublisherCatalog** relationship 링크를 포함할 수 있도록 지정 합니다.
+ 복합성 도메인 관계에서 동일한 역할을 가질 수 있는 요소 수를 지정 합니다. 이 예제에서 카탈로그 역할에 대 한 일 대 다 (0 ... \* ) 다중성 설정은 **게시자** 도메인 **Catalog** 클래스의 모든 인스턴스가 **PublisherCatalog** 관계 링크를 제공할 수 있도록 지정 합니다.
 
- 다이어그램에를 입력 하거나 **속성** 창에서 `Multiplicity` 속성을 수정 하 여 역할의 복합성을 구성 합니다. 다음 표에서는이 속성에 대 한 설정을 설명 합니다.
+ 다이어그램에를 입력 하거나 `Multiplicity` **속성** 창에서 속성을 수정 하 여 역할의 복합성을 구성 합니다. 다음 표에서는이 속성에 대 한 설정을 설명 합니다.
 
 |복합성 형식|설명|
 |-|-|
@@ -148,6 +148,6 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
 
  파생 관계는 기본 관계를 특수화 합니다. 이 클래스와 연결 된 도메인 클래스는 기본 관계에 의해 연결 된 클래스와 동일한 또는에서 파생 되어야 합니다. 파생 관계에 대 한 링크는 모델에서 생성 될 때 파생 된 관계와 기본 관계의 인스턴스입니다. 프로그램 코드에서 기본 또는 파생 클래스에 의해 생성 된 속성을 사용 하 여 링크의 반대쪽 끝으로 이동할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

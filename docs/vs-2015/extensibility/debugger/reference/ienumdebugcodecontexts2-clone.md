@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Clone | Microsoft Docs
+title: 'IEnumDebugCodeContexts2:: Clone | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 46861570f5d874a0071fb3d3e67210b2b54e3fff
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551781"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-별도 개체와 현재 열거형의 복사본을 반환합니다.  
+현재 열거형의 복사본을 별도의 개체로 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,13 +40,13 @@ int Clone(
   
 #### <a name="parameters"></a>매개 변수  
  `ppEnum`  
- [out] 이 열거형은 개별 개체로 복사본을 반환 합니다.  
+ 제한이 이 열거형의 복사본을 별도의 개체로 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 열거형의 복사본을이 메서드는 시간에 원본과 동일한 상태를 있습니다. 그러나 복사본의 및는 원래 상태는 각각 별도 이며 개별적으로 변경할 수 있습니다.  
+ 열거형의 복사본은이 메서드가 호출 될 때의 원래 상태와 동일 합니다. 그러나 복사본과 원래 상태는 별개 이며 개별적으로 변경할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

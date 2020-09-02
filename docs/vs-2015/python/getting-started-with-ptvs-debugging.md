@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: b636dd4f3a5c5265231898573bfdf52de2dff84e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197707"
 ---
 # <a name="getting-started-with-ptvs-debugging"></a>PTVS 시작: 디버깅
@@ -54,6 +54,6 @@ if __name__ == "__main__":
   
  짧은 [youtube 동영상](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4)을 통해 이러한 지침을 확인할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Wiki 문서](https://github.com/Microsoft/PTVS/wiki/Debugging)   
+## <a name="see-also"></a>관련 항목  
+ [Wiki 설명서](https://github.com/Microsoft/PTVS/wiki/Debugging)   
  [PTVS Getting Started and Deep Dive Videos](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)(PTVS 시작 및 자세히 알아보기 동영상)

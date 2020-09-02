@@ -1,5 +1,5 @@
 ---
-title: '방법: 계측에서 간단한 함수 제외 또는 포함 | Microsoft Docs'
+title: '방법: 계측에서 간단한 함수 제외 또는 포함 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146114"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>방법: 계측에서 간단한 함수 제외 또는 포함
@@ -33,7 +33,7 @@ ms.locfileid: "68146114"
   
 2. **속성 페이지**에서 **계측** 속성을 클릭합니다.  
   
-3. 계측에서 간단한 함수를 제외하려면 **계측에서 간단한 함수 제외**를 선택합니다. 이것이 기본 설정입니다.  
+3. 계측에서 간단한 함수를 제외하려면 **계측에서 간단한 함수 제외**를 선택합니다. 이 값은 기본 설정입니다.  
   
      또는  
   

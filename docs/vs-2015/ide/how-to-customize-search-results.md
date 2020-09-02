@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 379debcfc1a3c9e6529563ebbf1d4b8f6397dad3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667988"
 ---
 # <a name="how-to-customize-search-results"></a>방법: 검색 결과 사용자 지정
@@ -49,5 +49,5 @@ ms.locfileid: "72667988"
 
 2. **모든 탐색 탭과 F1 요청에 영어 콘텐츠 포함** 확인란을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [전체 텍스트 검색 팁](../ide/full-text-search-tips.md)
