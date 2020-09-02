@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6468e14e3ed588386440e992d9a570e735123bab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65678900"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>방법: 런타임 오류 보고 함수 작성
@@ -67,7 +67,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```  
   
 ## <a name="example"></a>예제  
- 다음 예제는 좀 더 복잡한 사용자 지정 보고 함수를 보여 줍니다. 이 예제에서 switch 문은 `reportType`의 `_CrtDbgReportW` 매개 변수에서 정의한 여러 가지 오류 형식을 처리합니다. `_CrtDbgReportW`를 바꾸는 것이므로 `_CrtSetReportMode`는 사용할 수 없습니다. 사용자 지정 함수에서 출력을 처리해야 합니다. 이 함수의 첫째 가변 인수는 런타임 오류 번호를 사용합니다. 자세한 내용은 [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06)합니다.  
+ 다음 예제는 좀 더 복잡한 사용자 지정 보고 함수를 보여 줍니다. 이 예제에서 switch 문은 `reportType`의 `_CrtDbgReportW` 매개 변수에서 정의한 여러 가지 오류 형식을 처리합니다. `_CrtDbgReportW`를 바꾸는 것이므로 `_CrtSetReportMode`는 사용할 수 없습니다. 사용자 지정 함수에서 출력을 처리해야 합니다. 이 함수의 첫째 가변 인수는 런타임 오류 번호를 사용합니다. 자세한 내용은 [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06)을 참조하세요.  
   
 ```  
 #include <windows.h>  
@@ -127,5 +127,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [네이티브 런타임 검사 사용자 지정](../debugger/native-run-time-checks-customization.md)

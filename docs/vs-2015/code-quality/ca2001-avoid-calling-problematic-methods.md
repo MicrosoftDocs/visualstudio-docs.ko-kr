@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ba64c27cde5f335f32cca362417078a5c9ed13e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538582"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: 문제가 있는 메서드는 호출하지 마세요.
@@ -54,5 +54,5 @@ ms.locfileid: "85538582"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  문제가 있는 방법에 대 한 대안을 사용할 수 없는 경우에만이 규칙에서 메시지를 표시 하지 않아야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [안정성 경고](../code-quality/reliability-warnings.md)

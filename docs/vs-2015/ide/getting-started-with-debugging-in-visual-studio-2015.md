@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca3f3806f9097082d71dd80e74ccf48cd78c951b
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386890"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015에서 디버그 시작
@@ -28,7 +28,7 @@ Visual Studio 2015에서는 프로젝트 빌드 및 디버깅 도구의 강력�
  지금까지 편집기를 살펴보고 일부 코드를 만들었습니다. 이제 해당 코드의 디버그를 시작하려고 합니다. Visual Studio 2015에서는 대부분의 IDE와 마찬가지로 디버깅이 두 단계로 이루어집니다. 먼저 프로젝트 및 컴파일러 오류를 catch하고 해결하는 코드를 빌드한 다음 환경에서 해당 코드를 실행하여 런타임 및 동적 오류를 catch하고 해결합니다.
 
 ### <a name="configuring-a-build"></a>빌드 구성
- 빌드 구성에는 **디버그** 및 **릴리스**의 두 가지 기본 유형이 있습니다. 첫 번째 구성은 보다 풍부한 대화형 런타임 디버깅 환경을 허용하지만 배송하면 안 되는 더 느리고 큰 실행 파일을 생성합니다. 두 번째 구성은 적어도 컴파일러의 관점에서 배송하기에 적합한 더 빠르고 최적화된 실행 파일을 빌드합니다.
+ 빌드 구성에는 다음 두 가지 기본 유형이 있습니다. **디버그** 및 **릴리스**. 첫 번째 구성은 보다 풍부한 대화형 런타임 디버깅 환경을 허용하지만 배송하면 안 되는 더 느리고 큰 실행 파일을 생성합니다. 두 번째 구성은 적어도 컴파일러의 관점에서 배송하기에 적합한 더 빠르고 최적화된 실행 파일을 빌드합니다.
 
  기본 빌드 구성은 **디버그**입니다.
 
@@ -60,7 +60,7 @@ Visual Studio 2015에서는 프로젝트 빌드 및 디버깅 도구의 강력�
  ![Visual Studio 성공적인 빌드 출력](../ide/media/vs-ide-gs-debug-success-build.PNG "vs_ide_gs_debug_success_build")
 
 ### <a name="reviewing-the-error-list"></a>오류 목록 검토
- 이전에 성공적으로 컴파일한 코드를 수정했다면 오류가 있을 수 있습니다. 처음 코딩하는 경우 많은 오류가 있을 것입니다. 오류는 간단한 구문 오류나 잘못된 변수 이름과 같이 명확한 경우도 있고, 암호화 코드만 제공되어 이해하기 어려운 경우도 있습니다. 문제를 더 자세히 보려면 빌드 **출력** 창의 아래쪽으로 이동 하 여 **오류 목록** 탭을 클릭 합니다. 그러면 프로젝트에 대 한 오류 및 경고를 보다 체계적으로 볼 수 있으며 몇 가지 추가 옵션도 제공 됩니다.
+ 이전에 성공적으로 컴파일한 코드를 수정했다면 오류가 있을 수 있습니다. 처음 코딩하는 경우 많은 오류가 있을 것입니다. 오류는 간단한 구문 오류나 잘못된 변수 이름과 같이 명확한 경우도 있고, 암호화 코드만 제공되어 이해하기 어려운 경우도 있습니다. 문제를 더 자세히 보려면 빌드 **출력** 창의 아래쪽으로 이동한 다음 **오류 목록** 탭을 클릭합니다. 프로젝트에 대한 오류 및 경고가 보다 체계적으로 표시되며 몇 가지 추가 옵션도 제공됩니다.
 
  ![Visual Studio 2015 출력 및 오류 목록](../ide/media/vs-ide-gs-debug-bad-build-error-list.PNG "Vs_ide_gs_debug_bad_build_error_list")
 
@@ -190,5 +190,5 @@ Visual Studio 2015에서는 프로젝트 빌드 및 디버깅 도구의 강력�
 
  Visual Studio 2015의 단위 테스트 및 단위 테스트를 통해 더 나은 품질의 코드를 만드는 방법에 대한 자세한 내용은 [단위 테스트 기본 사항](../test/unit-test-basics.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md) [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md) [디버그 64 비트 응용 프로그램](../debugger/debug-64-bit-applications.md) [디버거 기본 사항](../debugger/debugger-basics.md)

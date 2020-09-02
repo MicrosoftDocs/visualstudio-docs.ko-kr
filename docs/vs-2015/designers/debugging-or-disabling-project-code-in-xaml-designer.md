@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657925"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>XAML 디자이너에서 프로젝트 코드 디버그 또는 사용하지 않도록 설정
@@ -33,7 +33,7 @@ ms.locfileid: "72657925"
 
   프로젝트 코드를 사용하지 않도록 설정한 경우 Visual Studio에서 데이터를 더 이상 사용할 수 없는 바인딩에 대한 속성 이름과 같은 자리 표시자를 보여 주거나 더 이상 실행하지 않는 컨트롤에 대한 자리 표시자를 보여 줍니다.
 
-  ![처리 되지 않은 예외 대화 상자](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")
+  ![처리되지 않은 예외 대화 상자](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")
 
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>프로젝트 코드가 예외를 발생시키는지 확인하려면
 
@@ -49,7 +49,7 @@ ms.locfileid: "72657925"
 
 2. Windows 작업 관리자에서 **작업 끝내기** 단추를 선택하여 현재 실행 중인 Visual Studio XAML 디자이너의 모든 인스턴스를 닫습니다.
 
-     ![TaskManager의 XAML 디자이너 인스턴스](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
+     ![태스크 관리자의 XAML 디자이너 인스턴스](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
 
 3. Visual Studio에서 디버그하려는 코드 또는 컨트롤이 포함된 XAML 페이지를 엽니다.
 
@@ -87,5 +87,5 @@ ms.locfileid: "72657925"
     > [!NOTE]
     > 프로젝트 코드를 사용하지 않도록 설정하면 디자인 타임 데이터가 손실될 수 있습니다. 그러므로 디자이너에서 실행되는 코드를 디버그하는 것이 좋습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)

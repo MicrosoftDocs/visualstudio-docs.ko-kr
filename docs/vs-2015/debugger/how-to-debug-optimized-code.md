@@ -1,5 +1,5 @@
 ---
-title: '방법: 최적화 된 코드 디버깅 | Microsoft Docs'
+title: '방법: 최적화된 코드 디버그 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,17 +24,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675607"
 ---
 # <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 참고]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.  
   
 > [!NOTE]
 > [/Zo(최적화된 디버깅 향상)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 컴파일러 옵션(Visual Studio 업데이트 3에 추가)은 최적화된 프로젝트 코드에 대한 보다 다양한 디버깅 정보를 생성합니다. **/Od** 컴파일러 옵션으로 빌드하지 않은 프로젝트의 경우 [/O 옵션(코드 최적화)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)을 참조하세요. 여기에는 지역 변수 및 인라인된 함수 디버깅에 대한 향상된 지원이 포함됩니다.  
@@ -77,7 +77,7 @@ ms.locfileid: "65675607"
   
 8. `Custom`에 대해 `Optimization` 옵션을 선택한 경우 속성 목록에 있는 다른 속성에도 옵션을 설정할 수 있습니다.  
   
-9. 구성 속성, C를 선택 /C++, 줄 노드의 프로젝트 속성 페이지 명령 및 추가 `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` 하는 **추가 옵션** 텍스트 상자입니다.  
+9. 구성 속성, C/C++, 프로젝트 속성 페이지의 명령줄 노드를 선택하고 `(`[/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)`)`를 **추가 옵션** 텍스트 상자에 추가합니다.  
   
     > [!WARNING]
     > `/Zo`를 사용하려면 Visual Studio 2013 업데이트 3 이상이 필요합니다.  
@@ -92,6 +92,6 @@ for (x=0; x<10; x++)
   
  이 줄에 중단점을 설정할 경우, 중단점이 열 번 적중될 것으로 기대하겠지만 코드가 최적화되면 중단점은 한 번만 적중됩니다. 이는 첫 번째 명령에서 `x` 값을 0으로 설정하기 때문입니다. 컴파일러는 이 명령이 한 번만 수행되는 것으로 인식하여 루프 밖으로 명령을 이동합니다. 중단점도 함께 이동합니다. `x`를 비교하고 증가시키는 명령은 루프 내에 남아 있습니다. **디스어셈블리** 창에서는 더 효과적으로 제어하기 위해 [단계별 실행](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)이 명령으로 자동 설정되며, 이는 최적화된 코드를 단계별로 실행하는 데 유용합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [네이티브 코드 디버그](../debugger/debugging-native-code.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 025d76f8e946dd3021141d6736c6b4bd40d57170
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539088"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider를 지정하세요.
@@ -60,12 +60,12 @@ ms.locfileid: "85539088"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  기본 culture/형식 공급자가 올바른 선택이 고 코드 유지 관리는 중요 한 개발 우선 순위가 아닌 것이 확실 한 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="example"></a>예제
- 다음 예에서는에서 `BadMethod` 이 규칙의 두 위반을 발생 시킵니다. `GoodMethod`는에 고정 문화권을 전달 하 여 첫 번째 위반을 수정 <xref:System.String.Compare%2A> 하 고,가 <xref:System.String.ToLower%2A> 사용자에 게 표시 되기 때문에 현재 문화권을에 전달 하 여 두 번째 위반을 수정 합니다 `string3` .
+## <a name="example"></a>예
+ 다음 예에서는에서 `BadMethod` 이 규칙의 두 위반을 발생 시킵니다. `GoodMethod` 는에 고정 문화권을 전달 하 여 첫 번째 위반을 수정 <xref:System.String.Compare%2A> 하 고,가 <xref:System.String.ToLower%2A> 사용자에 게 표시 되기 때문에 현재 문화권을에 전달 하 여 두 번째 위반을 수정 합니다 `string3` .
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 형식에 의해 선택 되는 기본값에 대 한 현재 문화권의 영향을 보여 줍니다 <xref:System.IFormatProvider> <xref:System.DateTime> .
 
  [!code-csharp[FxCop.Globalization.IFormatProvider#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.IFormatProvider/cs/FxCop.Globalization.IFormatProvider.cs#1)]
@@ -77,5 +77,5 @@ ms.locfileid: "85539088"
 ## <a name="related-rules"></a>관련 규칙
  [CA1304: CultureInfo를 지정하세요.](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [NIB: CultureInfo 클래스 사용](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

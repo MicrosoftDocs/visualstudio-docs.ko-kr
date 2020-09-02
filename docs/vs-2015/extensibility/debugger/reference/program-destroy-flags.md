@@ -11,18 +11,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 16933eb409f55be209d54c26d0c077ed96f53cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205005"
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
+# <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-유효한 열거 값을 프로그램의 플래그를 삭제 합니다.  
+프로그램 소멸 플래그의 유효한 값을 열거 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_PPROGRAM_DESTROY_FLAGS  
@@ -41,15 +41,15 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>용어  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- 프로그램을 삭제 하지만 디버깅을 계속 합니다.  
+ 프로그램을 제거 하 고 디버그를 계속 합니다.  
   
 ## <a name="remarks"></a>설명  
- 열거형에서 반환 되는 [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) 메서드.  
+ 열거형은 [Getflags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) 메서드에 의해 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Msdbg.h  
+ 헤더: Msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

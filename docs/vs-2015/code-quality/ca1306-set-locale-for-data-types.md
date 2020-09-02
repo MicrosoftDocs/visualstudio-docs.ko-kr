@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: edd1d6a7623f96f03403883ee2585d245414bb3b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539024"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: 데이터 형식에 맞는 로캘을 설정하세요.
@@ -44,12 +44,12 @@ ms.locfileid: "85539024"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  라이브러리나 응용 프로그램이 제한 된 로컬 대상에 대 한 것 이거나, 데이터가 공유 되지 않거나, 기본 설정이 지원 되는 모든 시나리오에서 원하는 동작을 생성 하는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는 두 개의 <xref:System.Data.DataTable> 인스턴스를 만듭니다.
 
  [!code-csharp[FxCop.Globalization.DataTable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DataTable/cs/FxCop.Globalization.DataTable.cs#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Data.DataTable?displayProperty=fullName> <xref:System.Data.DataSet?displayProperty=fullName>
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>
  <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>

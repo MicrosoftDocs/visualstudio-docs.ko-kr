@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547565"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>방법: Visual Studio에서 Office 프로젝트 만들기
@@ -159,7 +159,7 @@ ms.locfileid: "85547565"
 
      문서를 신뢰할 수 있는 위치에 추가 하는 방법에 대 한 자세한 내용은 온라인 웹 사이트 Microsoft Office [파일의 신뢰할 수 있는 위치 만들기, 제거 또는 변경](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)
 - [Office 솔루션 공동 개발](../vsto/collaborative-development-of-office-solutions.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)

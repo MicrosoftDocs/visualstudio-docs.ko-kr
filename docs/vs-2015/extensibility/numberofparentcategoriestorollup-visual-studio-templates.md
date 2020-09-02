@@ -14,16 +14,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 278d8537ee253d8c79024d5e866befa1d65ded0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194207"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-부모 범주에 템플릿 표시 하는 횟수를 지정 합니다 **새 프로젝트** 대화 상자.  
+**새 프로젝트** 대화 상자에 템플릿이 표시 되는 부모 범주 수를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -53,15 +53,15 @@ ms.locfileid: "68194207"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
- `integer` 값이 필요 합니다.  
+ `integer`값은 필수입니다.  
   
- 이 값에서 템플릿을 표시 하는 부모 범주 수를 지정 합니다 **새 프로젝트** 대화 상자.  
+ 이 값은 **새 프로젝트** 대화 상자에 템플릿이 표시 되는 부모 범주 수를 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
  `NumberOfParentCategoriesToRollUp`는 선택적 요소입니다.  
   
-## <a name="example"></a>예제  
- 이 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows 응용 프로그램입니다. 이 메타 데이터를 사용 하 여 템플릿 최상위 수준 아래 두 수준 폴더에 배치 되 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 노드를 서식 파일에서 최상위 노드에 나타납니다 합니다 **새 프로젝트** 대화 상자. 경우는 `NumberOfParentCategoriesToRollUp` 템플릿을 나타나는 노드는에서 실제로 설정 하지 않으면.  
+## <a name="example"></a>예  
+ 이 예제에서는 Windows 응용 프로그램에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] . 이 메타 데이터가 포함 된 템플릿이 최상위 노드 아래에 두 개의 폴더 수준으로 배치 되는 경우 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 템플릿은 **새 프로젝트** 대화 상자의 최상위 노드에 표시 됩니다. `NumberOfParentCategoriesToRollUp`가 설정 되지 않은 경우 템플릿이 실제로 위치한 노드에만 표시 됩니다.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,6 +88,6 @@ ms.locfileid: "68194207"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10e4a865774798792a386a4736058b0a5068db85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194246"
 ---
 # <a name="menus-element"></a>Menus 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-모든 메뉴 및 VSPackage 구현 하는 도구 모음을 정의 합니다.  
+VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,15 +37,15 @@ ms.locfileid: "68194246"
   
 ### <a name="attributes"></a>특성  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|[Menus 요소](../extensibility/menus-element.md)|모든 메뉴 및 VSPackage 구현 하는 도구 모음을 정의 합니다.|  
+|[Menus 요소](../extensibility/menus-element.md)|VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.|  
 |[Menu 요소](../extensibility/menu-element.md)|단일 메뉴 또는 도구 모음을 나타냅니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
@@ -80,5 +80,5 @@ ms.locfileid: "68194246"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

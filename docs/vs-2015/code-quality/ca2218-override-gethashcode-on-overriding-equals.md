@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538803"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Equals를 재정할 때 GetHashCode를 재정의하세요.
@@ -36,7 +36,7 @@ ms.locfileid: "85538803"
  Public 형식은를 재정의 <xref:System.Object.Equals%2A?displayProperty=fullName> 하지만는 재정의 하지 않습니다 <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>규칙 설명
- <xref:System.Object.GetHashCode%2A>해시 알고리즘 및 해시 테이블과 같은 데이터 구조에 적합 한 현재 인스턴스를 기반으로 값을 반환 합니다. 동일한 형식이 고 동일한 두 개체가 동일한 해시 코드를 반환 하 여 다음 형식의 인스턴스가 제대로 작동 하는지 확인 해야 합니다.
+ <xref:System.Object.GetHashCode%2A> 해시 알고리즘 및 해시 테이블과 같은 데이터 구조에 적합 한 현재 인스턴스를 기반으로 값을 반환 합니다. 동일한 형식이 고 동일한 두 개체가 동일한 해시 코드를 반환 하 여 다음 형식의 인스턴스가 제대로 작동 하는지 확인 해야 합니다.
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538803"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- 을 구현 하는 형식<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- 을 구현 하는 형식 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면의 구현을 제공 <xref:System.Object.GetHashCode%2A> 합니다. 형식이 같은 개체 쌍의 경우 구현에서 <xref:System.Object.Equals%2A> 쌍에 대해를 반환 하는 경우 구현이 같은 값을 반환 하는지 확인 해야 합니다 `true` .
@@ -101,7 +101,7 @@ ms.locfileid: "85538803"
 
  [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
