@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05e1f2360b3257e44fde1af8be3554dd7fd95115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537184"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -35,16 +35,16 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ## <a name="valid-options"></a>유효한 옵션  
  다른 세션에서 프로파일링을 활성화하기 위해 **CrossSession** 옵션은 **Start** 옵션에서 지정되어야 합니다. 또한 **CrossSession**은 다음 **VSPerfCmd Attach** 및 **Detach** 명령에 지정되어야 합니다.  
   
- **Start:** `Method`  
+ **시작:**`Method`  
  **Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화합니다.  
   
- **Attach:** _PID_[**,**_PID_]  
+ **연결:** _pid_[**,**_pid_]  
  지정된 프로세스의 프로파일링을 시작합니다.  
   
- **Detach**[**:**_PID_[,_PID_]]  
+ **Detach**[ **:** _PID_[,_PID_]]  
  지정된 프로세스의 프로파일링을 중지합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서 **CrossSession** 옵션은 다른 콘솔 세션에서 시작된 애플리케이션에 연결하는 데 사용됩니다.  
   
 ```  
@@ -52,8 +52,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

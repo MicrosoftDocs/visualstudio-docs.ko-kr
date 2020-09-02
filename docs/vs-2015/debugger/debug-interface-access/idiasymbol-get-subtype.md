@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 705bbb952436c9e87e16fe0a5901472b0bbb71be
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428288"
 ---
-# <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
+# <a name="idiasymbolget_subtype"></a>IDiaSymbol::get_subType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-하위 유형을 검색합니다.  
+하위 형식을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,10 +32,10 @@ HRESULT get_subType(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 하위 형식에 대 한 포인터입니다.  
+ 제한이 하위 형식에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

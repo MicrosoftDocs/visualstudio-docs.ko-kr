@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f018388abc91bc26f1bef30d066a9b6d8aa6f097
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422671"
 ---
 # <a name="zoom-control-utilization-view"></a>확대/축소 컨트롤(사용률 뷰)
@@ -27,5 +27,5 @@ ms.locfileid: "62422671"
   
  CPU 사용률 차트 및 GPU 작업 차트에서 마우스 포인터를 끌어 강조 표시된 영역을 만들 수 있습니다. 마우스 단추를 놓으면 선택된 범위로 뷰가 확대됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [사용률 뷰](../profiling/utilization-view.md)

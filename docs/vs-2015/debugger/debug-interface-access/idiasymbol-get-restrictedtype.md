@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 332ed15c4a6bb9a759e18e1df1e7c456c1303754
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62430772"
 ---
-# <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
+# <a name="idiasymbolget_restrictedtype"></a>IDiaSymbol::get_restrictedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-지정 여부는 `this` 포인터 플래그가 지정 되어 제한으로.  
+포인터가 제한으로 플래그 지정 되는지 여부를 지정 합니다 `this` .  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,10 +32,10 @@ HRESULT get_restrictedType(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터를 `BOOL` 지정 하는 여부를 `this` 포인터 플래그가 지정 된 제한으로 합니다.  
+ 제한이 `BOOL` 포인터가 제한으로 플래그가 지정 되었는지 여부를 지정 하는에 대 한 포인터입니다 `this` .  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -14,31 +14,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9453b9132543060819bbdabd0e504ec5dbae69e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62424026"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-사용 가능한 다양 한 스택 프레임을 열거합니다.  
+사용 가능한 다양 한 스택 프레임을 열거 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|열거형 시퀀스에서 지정 된 개수의 스택 프레임 요소를 검색합니다.|  
-|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|열거형 시퀀스에서 지정 된 수의 스택 프레임 요소를 검색 합니다.|  
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|  
   
 ## <a name="remarks"></a>설명  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 호출 하 여이 인터페이스를 가져올는 [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) 하거나 [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) 메서드.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) 또는 [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) 메서드를 호출 하 여이 인터페이스를 가져옵니다.  
   
-## <a name="example"></a>예제  
- 다운로드 하 고 사용 하는 방법을 보여 주는이 예제는 `IDiaEnumStackFrames` 인터페이스입니다. 참조를 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 의 구현에 대 한 인터페이스를 `PrintStackFrame` 함수입니다.  
+## <a name="example"></a>예  
+ 이 예제에서는 인터페이스를 가져오고 사용 하는 방법을 보여 줍니다 `IDiaEnumStackFrames` . 함수 구현에 대 한 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 인터페이스를 참조 하세요 `PrintStackFrame` .  
   
 ```cpp#  
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,  
@@ -66,14 +66,14 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: Dia2  
   
- 라이브러리: diaguids.lib  
+ 라이브러리: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>참고 항목  
- [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>관련 항목  
+ [인터페이스 (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

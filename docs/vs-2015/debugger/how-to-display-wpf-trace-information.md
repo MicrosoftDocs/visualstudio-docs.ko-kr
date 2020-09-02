@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537972"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>방법: WPF 추적 정보 표시
@@ -49,7 +49,7 @@ ms.locfileid: "62537972"
   
      드롭다운 목록 컨트롤이 **데이터 바인딩** 또는 클릭한 범주 옆의 설정 열에 나타납니다.  
   
-8. 드롭다운 목록을 클릭 하 고 표시할 추적 정보의 유형 선택: **모든**, **중요 한**, **오류**를 **경고**, **정보**를 **Verbose**, 또는 **ActivityTracing**합니다.  
+8. 드롭다운 목록을 클릭하고 다음과 같이 보려는 추적 정보 형식을 선택합니다. **All**, **Critical**, **Error**, **Warning**, **Information**, **Verbose** 또는 **ActivityTracing**.  
   
      **Critical**은 중요 이벤트만 추적하도록 설정합니다.  
   

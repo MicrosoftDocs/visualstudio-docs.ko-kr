@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
+title: IDebugExpressionEvaluator2::P reloadModules | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d6d7236f19032fa0767a050ac84afe4b4e1585f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540253"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-지정 된 기호 공급자로 지정 된 모듈을 미리 로드 합니다.  
+지정 된 기호 공급자에 지정 된 모듈을 미리 로드 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,16 +39,16 @@ int PreloadModules (
   
 #### <a name="parameters"></a>매개 변수  
  `pSym`  
- [in] 기호 공급자는 모듈을 미리 설치 됩니다.  
+ 진행 모듈이 미리 로드 되는 기호 공급자입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 선택적 메서드는 호스팅 프로세스 연결을 할 때 사용 됩니다. EE ' 준비 ' 연결의 일부로 기회를 제공 합니다.  
+ 이 선택적 메서드는 호스팅 프로세스 연결을 수행할 때 사용 됩니다. EE는 연결의 일부로 ' 준비 ' 할 수 있는 기회를 제공 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **ExpressionEvaluatorPackage** 노출 하는 개체를 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) 인터페이스를 노출 하는 **ExpressionEvaluatorPackage** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  
@@ -76,5 +76,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

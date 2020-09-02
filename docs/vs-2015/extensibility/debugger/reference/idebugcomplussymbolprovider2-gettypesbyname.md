@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: GetTypesByName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 40eb29bab07e657d22cd9559fa53fa3ced2139ff
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540582"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이름이 지정 된 형식을 검색 합니다.  
+해당 이름이 지정 된 형식을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,22 +43,22 @@ int GetTypesByName(
   
 #### <a name="parameters"></a>매개 변수  
  `pszClassName`  
- [in] 형식의 이름입니다.  
+ 진행 형식의 이름입니다.  
   
  `nameMatch`  
- [in] 형식을 일치, 예를 들어, 대/소문자 구분을 선택합니다. 값을 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 열거형입니다.  
+ 진행 일치 유형 (예: 대/소문자 구분)을 선택 합니다. [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 열거형의 값입니다.  
   
  `ppEnum`  
- [out] 지정 된 이름의 형식을 포함 하는 열거자입니다.  
+ 제한이 지정 된 이름을 가진 형식이 포함 된 열거자입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 제네릭 형식의 경우에 대해 검색할 이름 ' 목록\<int >' 또는 ' 목록\<int, int >' 'List' 됩니다. 이름이 같은 유형의 여러 모듈에서 표시 하는 경우는 `ppEnum` 매개 변수 복사본을 모두 포함 됩니다. 사용 해야 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 구분에 따라 및는 `guidModule` 매개 변수입니다.  
+ 제네릭 형식의 경우 ' List \<int> ' 또는 ' list '에 대해 조회할 이름은 \<int,int> ' i n g '입니다. 동일한 이름의 형식이 여러 모듈에 표시 되는 경우 `ppEnum` 매개 변수는 모든 복사본을 포함 합니다. [Gettypeinfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 를 사용 하 고 매개 변수를 기반으로 구분 해야 `guidModule` 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetTypesByName(  

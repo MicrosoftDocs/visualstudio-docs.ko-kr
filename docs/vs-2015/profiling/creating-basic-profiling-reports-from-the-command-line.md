@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537189"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>명령줄에서 기본 프로파일링 보고서 만들기
@@ -27,7 +27,7 @@ ms.locfileid: "62537189"
  **VSPerfReport** `VSPFile` **/Summary:All**  
  .vsp 또는 .vsps 파일에 사용할 수 있는 모든 보고서를 생성합니다.  
   
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
+ **VSPerfReport** `VSPFile` **/요약:** `ReportType` [,`ReportType`...]  
  지정된 보고서 형식을 생성합니다.  
   
  **VSPerfReport** `VSPFile` **/CallTrace**  
@@ -39,18 +39,18 @@ ms.locfileid: "62537189"
 |요약 매개 변수|보고서 설명|보고서 참조|  
 |-----------------------|------------------------|----------------------|  
 |**CallerCallee**|함수 간의 부모/자식 관계를 나타냅니다.|-   [샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)<br />-   [계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [.NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [경합 데이터](../profiling/caller-callee-view-contention-data.md)|  
-|**Function**|함수별로 프로파일링 데이터를 나열합니다.|-   [샘플링 데이터](../profiling/functions-view-sampling-data.md)<br />-   [계측 데이터](../profiling/functions-view-instrumentation-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [.NET 메모리 계측 데이터](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [경합 데이터](../profiling/functions-view-contention-data.md)|  
+|**함수**|함수별로 프로파일링 데이터를 나열합니다.|-   [샘플링 데이터](../profiling/functions-view-sampling-data.md)<br />-   [계측 데이터](../profiling/functions-view-instrumentation-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [.NET 메모리 계측 데이터](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [경합 데이터](../profiling/functions-view-contention-data.md)|  
 |**CallTree**|프로파일링 실행 시 함수의 실행 경로 및 프로파일링 데이터를 나타냅니다.|-   [계측 데이터](../profiling/call-tree-view-instrumentation-data.md)<br />-   [샘플링 데이터](../profiling/call-tree-view-sampling-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [.NET 메모리 계측 데이터](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [경합 데이터](../profiling/call-tree-view-contention-data.md)|  
-|**Counter**|프로파일링 실행 중에 수집된 프로파일링 표시 및 Windows 성능 카운터 값을 나열합니다.|-   [표시 뷰](../profiling/marks-view.md)|  
-|**Ip**|계측별로 프로파일링 데이터를 나열합니다.|-   [샘플링 데이터](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [경합 데이터](../profiling/instruction-pointers-ips-view-contention-data.md)|  
+|**카운터**|프로파일링 실행 중에 수집된 프로파일링 표시 및 Windows 성능 카운터 값을 나열합니다.|-   [표시 뷰](../profiling/marks-view.md)|  
+|**Tcp/ip**|계측별로 프로파일링 데이터를 나열합니다.|-   [샘플링 데이터](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [경합 데이터](../profiling/instruction-pointers-ips-view-contention-data.md)|  
 |**Life**|할당된 개체의 수명을 나열합니다.|-   [개체 수명 뷰](../profiling/object-lifetime-view.md)|  
-|**Line**|소스 코드 줄별로 프로파일링 데이터를 나열합니다.|-   [샘플링 데이터](../profiling/lines-view-sampling-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [경합 데이터](../profiling/lines-view-contention-data.md)|  
-|**Header**|프로파일링 데이터 파일 헤더 정보입니다.|파일에만 한정됩니다.|  
-|**Mark**|프로파일링 실행 시 수집된 프로파일링 표시입니다.|-   [표시 뷰](../profiling/marks-view.md)|  
+|**선**|소스 코드 줄별로 프로파일링 데이터를 나열합니다.|-   [샘플링 데이터](../profiling/lines-view-sampling-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [경합 데이터](../profiling/lines-view-contention-data.md)|  
+|**머리글**|프로파일링 데이터 파일 헤더 정보입니다.|파일에만 한정됩니다.|  
+|**표시**|프로파일링 실행 시 수집된 프로파일링 표시입니다.|-   [표시 뷰](../profiling/marks-view.md)|  
 |**모듈**|모듈에 대한 프로파일링 데이터를 나열합니다.|-   [샘플링 데이터](../profiling/modules-view-sampling-data.md)<br />-   [계측 데이터](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET 메모리 샘플링 데이터](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET 메모리 계측 데이터](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [경합 데이터](../profiling/modules-view-contention-data.md)|  
-|**Process**|프로세스에 대한 프로파일링 데이터를 나열합니다.|-   [프로세스 뷰](../profiling/process-view.md)<br />-   [경합 데이터](../profiling/process-view-contention-data.md)|  
+|**처리**|프로세스에 대한 프로파일링 데이터를 나열합니다.|-   [프로세스 뷰](../profiling/process-view.md)<br />-   [경합 데이터](../profiling/process-view-contention-data.md)|  
 |**스레드**|스레드에 대한 프로파일링 데이터를 나열합니다.|-   [프로세스 뷰](../profiling/process-view.md)|  
-|**Type**|형식별로 할당 프로파일링 데이터를 나열합니다.|-   [할당 뷰](../profiling/dotnet-memory-allocations-view.md)|  
-|**경합**|리소스 경합입니다.|-   [리소스 경합](../profiling/resource-contentions-view-contention-data.md)|  
+|**유형**|형식별로 할당 프로파일링 데이터를 나열합니다.|-   [할당 뷰](../profiling/dotnet-memory-allocations-view.md)|  
+|**경쟁이**|리소스 경합입니다.|-   [리소스 경합](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|성능 규칙 문제를 나열합니다.|-   CheckId, 설명 및 규칙 문제의 소스 코드 위치를 나열합니다.|  
 |**ETW**|프로파일링 실행 시 수집된 ETW(Windows용 이벤트 추적) 이벤트를 나열합니다.|-   [ETW 보고서](../profiling/event-tracing-for-windows-etw-report.md)|

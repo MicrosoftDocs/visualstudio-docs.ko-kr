@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Microsoft Docs
+title: 'IDebugBinder:: Bind | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 547f94cb4534bcb281cce0fdc2ff7db5fefe3593
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423545"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 메서드는 메모리 컨텍스트 또는 기호의 현재 값이 포함 된 개체를 가져옵니다.  
+이 메서드는 기호의 현재 값을 포함 하는 메모리 컨텍스트 또는 개체를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,18 +44,18 @@ int Bind(
   
 #### <a name="parameters"></a>매개 변수  
  `pContainer`  
- [in] 합니다 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 자식에서 참조를 포함 하는 `pField`합니다.  
+ 진행 에서 참조 하는 자식을 포함 하는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 입니다 `pField` .  
   
  `pField`  
- [in] 합니다 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 기호를 나타내는입니다.  
+ 진행 기호를 나타내는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 입니다.  
   
  `ppObject`  
- [out] 반환 된 `IDebugObject` 기호의 인스턴스를 나타내는입니다.  
+ 제한이 `IDebugObject` 기호의 인스턴스를 나타내는을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

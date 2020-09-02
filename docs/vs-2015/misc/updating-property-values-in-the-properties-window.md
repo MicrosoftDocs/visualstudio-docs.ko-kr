@@ -11,10 +11,10 @@ ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
 manager: jillfra
 ms.openlocfilehash: 18ecf0a21c5b2d73bdf8e439d25765b6b275cbd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434191"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>속성 창에서 속성 값을 업데이트합니다.
@@ -26,7 +26,7 @@ ms.locfileid: "62434191"
   
 1. VSPackages, 프로젝트 또는 편집기가 도구 또는 문서 창을 만들거나 열거해야 할 때 언제라도 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>을 호출합니다(<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 서비스를 통해).  
   
-2. 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> 유지 하는 **속성** 프로젝트에 대 한 속성 변경과 동기화 창 (또는 된 다른 개체에서 검색 되는 **속성** 창) 구현하지않고<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 발생 하 고 <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> 이벤트입니다.  
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A>이벤트를 구현 하 고 발생 시 키 지 않고 프로젝트 (또는 **속성** 창에서 탐색 하는 다른 모든 선택 된 개체)에 대 한 속성 변경 내용과 **속성** 창을 동기화 된 상태로 유지 하려면 구현 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> 합니다.  
   
 3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>를 구현하여 계층이 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>를 구현할 필요 없이 계층  이벤트의 클라이언트 알림을 설정 및 비활성화합니다.  
   
@@ -43,8 +43,8 @@ ms.locfileid: "62434191"
   
 4. 클라이언트는 `IConnection` 인터페이스를 호출하여 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 인터페이스를 통해 열거자 하위 개체에 대한 액세스를 얻습니다. 그러면 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> 인터페이스를 호출하여 각 송신 인터페이스 ID(IID)에 대한 연결점을 열거할 수 있습니다.  
   
-5. 또한 `IConnection`를 호출하여 각 송신 IID에 대한 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 인터페이스를 통해 연결점 하위 개체에 대한 액세스를 얻을 수도 있습니다. 클라이언트는 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 인터페이스를 통해 연결 가능 개체 및 클라이언트 자체 동기화로 통지 루프를 시작하거나 종료합니다. 또한 클라이언트는 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 인터페이스를 호출하여 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> 인터페이스로 열거자 개체를 가져오고 인식 가능한 연결을 열거할 수도 있습니다.  
+5. 또한 `IConnection`를 호출하여 각 송신 IID에 대한 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 인터페이스를 통해 연결점 하위 개체에 대한 액세스를 얻을 수도 있습니다. 클라이언트는 인터페이스를 통해 연결 가능 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 개체 및 클라이언트의 자체 동기화를 사용 하 여 advise 루프를 시작 하거나 종료 합니다. 클라이언트는 인터페이스를 호출 하 여 인터페이스를 사용 하 여 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 열거자 개체를 가져와 해당 개체가 인식 하는 연결을 열거할 수도 있습니다 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> .  
   
-## <a name="see-also"></a>참고 항목  
- [속성 창 선택 영역 추적 발표](../misc/announcing-property-window-selection-tracking.md)   
+## <a name="see-also"></a>관련 항목  
+ [속성 창 선택 항목 추적 발표](../misc/announcing-property-window-selection-tracking.md)   
  [속성 확장](../extensibility/internals/extending-properties.md)

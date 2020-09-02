@@ -25,21 +25,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431630"
 ---
 # <a name="macros-for-reporting"></a>보고서 매크로
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-사용할 수는 **_RPTn**, 및 **_RPTFn** crtdbg 매크로입니다. 사용을 대체 하려면 H `printf` 문을 디버깅 합니다. 이러한 매크로 사용 중인 버전에 자동으로 나타나지 빌드에서 **_DEBUG** 묶습니다 필요가 없습니다 이므로 정의 되지 않은 **#ifdef**s입니다.  
+CRTDBG.H에 정의 된 **_RPTn**및 **_RPTFn** 매크로를 사용할 수 있습니다. H-디버깅을 위해 문 사용을 대체 합니다 `printf` . 이러한 매크로는 **_DEBUG** 정의 되지 않은 경우 릴리스 빌드에서 자동으로 사라지고 **#ifdef**s로 묶을 필요가 없습니다.  
   
 |매크로|설명|  
 |-----------|-----------------|  
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|메시지 문자열과 0을 네 개의 인수로 출력합니다. _RPT1부터 **_RPT4**까지는 메시지 문자열이 인수에 대해 printf 스타일의 서식 문자열로 사용됩니다.|  
-|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|동일 **_RPTn** , 있지만 이러한 매크로 매크로 위치한 파일 이름과 줄 번호를 출력 합니다.|  
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|**_RPTn** 와 동일 하지만 이러한 매크로는 매크로가 위치한 파일 이름과 줄 번호를 출력 하기도 합니다.|  
   
  다음 예제를 참조하세요.  
   
@@ -74,7 +74,7 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- 한 번 호출 **ALERT_IF2** 의 모든 기능을 수행할 수는 **printf** 이 항목의 시작 부분에 대 한 코드:  
+ **ALERT_IF2** 에 대 한 한 번의 호출은이 항목의 시작 부분에 있는 **printf** 코드의 모든 기능을 수행할 수 있습니다.  
   
 ```  
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
@@ -83,5 +83,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
  사용자 지정 매크로를 보다 편리하게 변경하여 여러 대상에 다소간의 정보를 보고할 수 있기 때문에, 디버깅이 필요할 때 특히 유용한 방법입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md)

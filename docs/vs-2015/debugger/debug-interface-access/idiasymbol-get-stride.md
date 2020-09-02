@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3eb93749a3190bf2468c8d12e1ca906dc40f0cbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428224"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-행렬 또는 strided 배열의 stride를 검색합니다.  
+행렬 또는 strided 배열의 스트라이드를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,10 +32,10 @@ HRESULT get_stride(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터를 `DWORD` stride를 보유 하는 합니다.  
+ 제한이 Stride를 보유 하는에 대 한 포인터 `DWORD` 입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,23 +9,23 @@ manager: jillfra
 ms.workload:
 - greggm
 ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62433697"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>64 비트 디버거 COM 클래스 등록 마이그레이션
 
-COM 등록 하는 디버거 확장에 대 한 클래스의 HKEY_CLASSES_ROOT regasm을 regsvr32를 사용 하 여 레지스트리 및 로드를 직접 작성 *msvsmon.exe* (원격 디버거) 아니며 이제이 제공할 수 HKEY_CLASSES_ROOT 쓸 필요 없이 msvsmon에 등록 합니다. 레거시.NET 디버거 식 계산기 또는 디버그 엔진을 로드 하도록 구성 된이 영향을 줍니다 합니다 *msvsmon.exe* 프로세스입니다.
+Regasm, regsvr32를 사용 하 여 HKEY_CLASSES_ROOT에 COM 클래스를 등록 하거나 레지스트리에 직접 쓰고 *msvsmon.exe* (원격 디버거)에 로드 된 디버거 확장의 경우, 이제 HKEY_CLASSES_ROOT에 쓰지 않고도이 등록을 msvsmon에 제공할 수 있습니다. 이는 *msvsmon.exe* 프로세스에서 로드 하도록 구성 된 레거시 .net 디버거 식 계산기 또는 디버그 엔진에 영향을 줍니다.
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
-이 기법을 사용 하려면 추가 된  **.msvsmon-comclass-def.json* msvsmon 옆에 있는 파일 (InstallDir:* \Common7\IDE\Remote Debugger\x64*).
+이 방법을 사용 하려면 *msvsmon (InstallDir: \Common7\IDE\Remote debugger\x64 or *) 옆에 *있는 파일에.msvsmon-comclass-def.js* * 를 추가 합니다.
 
-다음은 관리 되는 하나를 등록 하는 예제 msvsmon-comclass-def 파일 및 하나의 기본 클래스입니다.
+다음은 관리 되는 클래스와 네이티브 클래스 하나를 등록 하는 msvsmon-comclass def 파일의 예입니다.
 
-FileName: *MyCompany.MyExample.msvsmon-comclass-def.json*
+파일 이름: *MyCompany.MyExample.msvsmon-comclass-def.js*
 
 ```json
 {

@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetOwner | Microsoft Docs
+title: 'IDebugGenericParamField:: GetOwner | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e78ee30b1fb351e2c2c5682d372a9aa9704caf3
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421139"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 제네릭 매개 변수의 형식 또는 메서드의 소유자를 검색합니다.  
+이 제네릭 매개 변수의 형식 또는 메서드 소유자를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,13 +38,13 @@ int GetOwner(
   
 #### <a name="parameters"></a>매개 변수  
  `ppOwner`  
- [out] 반환 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 이 제네릭 매개 변수를 소유 하는 개체입니다.  
+ 제한이 이 제네릭 매개 변수를 소유 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugGenericParamFieldType** 노출 하는 개체를 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)  
@@ -94,5 +94,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

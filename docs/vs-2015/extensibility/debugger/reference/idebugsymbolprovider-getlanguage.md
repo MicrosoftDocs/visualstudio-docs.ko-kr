@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: 'Idebug Provider:: GetLanguage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8124e0c6328695da9773edbfd949ec2634dbfdb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421774"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
@@ -44,20 +44,20 @@ int GetLanguage(
   
 #### <a name="parameters"></a>매개 변수  
  `pAddress`  
- [in] Address 개체 표시는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스입니다.  
+ 진행 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스가 나타내는 주소 개체입니다.  
   
  `pguidLanguage`  
- [out] 반환 된 `GUID` 언어를 지정 하는 합니다.  
+ 제한이 `GUID` 언어를 지정 하는을 반환 합니다.  
   
  `pguidLanguageVendor`  
- [out] 반환 된 `GUID` 언어 공급 업체를 지정 하는 합니다.  
+ 제한이 `GUID` 언어 공급 업체를 지정 하는을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 디버그 엔진 올바른 식 계산기를 선택 하는 데 필요한 정보를 가져오려면이 메서드를 호출 합니다.  
+ 디버그 엔진은이 메서드를 호출 하 여 올바른 식 계산기를 선택 하는 데 필요한 정보를 가져옵니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+## <a name="see-also"></a>관련 항목  
+ [Idebug기호 공급자](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

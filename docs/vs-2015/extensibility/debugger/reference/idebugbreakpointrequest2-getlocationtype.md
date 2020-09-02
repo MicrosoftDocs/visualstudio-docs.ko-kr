@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
+title: 'IDebugBreakpointRequest2:: GetLocationType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef335232b20fbc74c323fe96ab283280e9d2aad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431513"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
@@ -40,13 +40,13 @@ int GetLocationType( 
   
 #### <a name="parameters"></a>매개 변수  
  `pBPLocationType`  
- [out] 값을 반환 합니다 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 이 중단점 요청의 위치를 설명 하는 열거형입니다.  
+ 제한이 이 중단점 요청의 위치를 설명 하는 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 열거형의 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_FAIL` 경우는 `bpLocation` 연결 된 필드 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조가 잘못 되었습니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_FAIL` `bpLocation` 연결 된 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조의 필드가 유효 하지 않으면를 반환 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugBreakpointRequest` 노출 하는 개체를[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    
@@ -79,7 +79,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 }    
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
  [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   

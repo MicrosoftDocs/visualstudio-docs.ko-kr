@@ -10,22 +10,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 489ebd4e5aff3ef9b93ef0d8fe18f9ae8cc85011
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537204"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>명령줄에서 프로파일러 보고서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**VSPerfReport** 명령줄 도구를 통해 프로파일링 데이터(.vsp) 파일에서 .xml 또는 쉼표로 구분된 값(.csv) 보고서를 만들 수 있습니다. VSPerfReport 보고서 유형은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 대한 인터페이스의 테이블 기반 뷰와 일치합니다. 코드만 표시하고 프로파일링 데이터 파일의 세그먼트만 표시하도록 보고서를 필터링할 수 있습니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
+**VSPerfReport** 명령줄 도구를 사용 하면 프로 파일링 데이터 (.vsp) 파일에서 .xml 또는 쉼표로 구분 된 값 (.csv) 보고서를 만들 수 있습니다. VSPerfReport 보고서 유형은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 대한 인터페이스의 테이블 기반 뷰와 일치합니다. 코드만 표시하고 프로파일링 데이터 파일의 세그먼트만 표시하도록 보고서를 필터링할 수 있습니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
   
  또한 .vsp 파일에 기호를 포함하고 열 더 작고 더 빠른 미리 분석된 보고서(.vsps) 파일을 만들어 프로파일링 데이터 파일을 더 쉽게 공유할 수 있습니다.  
   
-## <a name="common-tasks"></a>일반 작업  
+## <a name="common-tasks"></a>일반 태스크  
   
-|작업|관련 내용|  
+|Task|관련 내용|  
 |----------|---------------------|  
 |**기본 보고서를 만듭니다.** VSPerfReport 보고서 유형의 전체 또는 하위 집합을 만듭니다.|-   [기본 보고서 만들기](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|  
 |**두 가지 프로파일링 데이터 파일을 비교합니다.** 두 가지 프로파일링 데이터 파일에서 성능 데이터를 비교하는 "diff" 보고서를 만듭니다.|-   [방법: 명령 프롬프트에서 프로파일러 비교 보고서 만들기](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|  

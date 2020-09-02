@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
+title: '&lt;trustInfo &gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -24,18 +24,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420087"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 요소 (ClickOnce 응용 프로그램)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo &gt; 요소 (ClickOnce 응용 프로그램)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 애플리케이션을 클라이언트 컴퓨터에서 실행하는 데 필요한 최소 보안 권한을 설명합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -72,14 +72,14 @@ ms.locfileid: "62420087"
 ## <a name="elements-and-attributes"></a>요소 및 특성  
  `trustInfo` 요소는 필수이며 `asm.v2` 네임스페이스에 있습니다. 특성이 없으며 다음 요소를 포함합니다.  
   
-## <a name="security"></a>보안  
- 필수. 이 요소는 `trustInfo` 요소의 자식입니다. `applicationRequestMinimum` 요소를 포함하며 특성이 없습니다.  
+## <a name="security"></a>security  
+ 필수 요소. 이 요소는 `trustInfo` 요소의 자식입니다. `applicationRequestMinimum` 요소를 포함하며 특성이 없습니다.  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- 필수. 이 요소는 `security` 요소의 자식이며 `PermissionSet`, `assemblyRequest`및 `defaultAssemblyRequest`요소를 포함합니다. 이 요소에는 특성이 없습니다.  
+ 필수 요소. 이 요소는 `security` 요소의 자식이며 `PermissionSet`, `assemblyRequest`및 `defaultAssemblyRequest`요소를 포함합니다. 이 요소에는 특성이 없습니다.  
   
 ## <a name="permissionset"></a>PermissionSet  
- 필수. 이 요소는 `applicationRequestMinimum` 요소의 자식이며 `IPermission` 요소를 포함합니다. 이 요소에는 다음 특성이 있습니다.  
+ 필수 요소. 이 요소는 `applicationRequestMinimum` 요소의 자식이며 `IPermission` 요소를 포함합니다. 이 요소에는 다음 특성이 있습니다.  
   
 - `ID`  
   
@@ -87,7 +87,7 @@ ms.locfileid: "62420087"
   
 - `version`  
   
-     필수. 권한의 버전을 알려 줍니다. 일반적으로 이 값은 `1`입니다.  
+     필수 요소. 권한의 버전을 알려 줍니다. 일반적으로 이 값은 `1`입니다.  
   
 ## <a name="ipermission"></a>IPermission  
  선택 사항입니다. 이 요소는 `PermissionSet` 요소의 자식입니다. `IPermission` 요소는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 권한 클래스를 완전히 알려 줍니다. `IPermission` 요소에는 다음 특성이 있지만 권한 클래스의 속성에 해당하는 추가 특성이 있을 수 있습니다. 특정 권한에 대한 구문을 확인하려면 Security.config 파일에 나열된 예제를 참조하세요.  
@@ -100,11 +100,11 @@ ms.locfileid: "62420087"
   
 - `version`  
   
-     필수. 권한의 버전을 알려 줍니다. 일반적으로 이 값은 `1`입니다.  
+     필수 요소. 권한의 버전을 알려 줍니다. 일반적으로 이 값은 `1`입니다.  
   
 - `Unrestricted`  
   
-     필수. 애플리케이션에 이 권한을 무제한으로 부여할 필요가 있는지 식별합니다. `true`인 경우 권한 부여에 조건이 없습니다. `false`또는 이 특성이 정의되지 않은 경우에는 `IPermission` 태그에 정의된 권한별 특성에 따라 제한됩니다. 다음 권한을 사용합니다.  
+     필수 요소. 애플리케이션에 이 권한을 무제한으로 부여할 필요가 있는지 식별합니다. `true`인 경우 권한 부여에 조건이 없습니다. `false`또는 이 특성이 정의되지 않은 경우에는 `IPermission` 태그에 정의된 권한별 특성에 따라 제한됩니다. 다음 권한을 사용합니다.  
   
     ```  
     <IPermission  
@@ -135,7 +135,7 @@ ms.locfileid: "62420087"
   
 - `permissionSetReference`  
   
-     필수. 이 어셈블리에서 필요로 하는 권한 집합의 ID를 식별합니다. 권한 집합은 `PermissionSet` 요소에서 선언됩니다.  
+     필수 요소. 이 어셈블리에서 필요로 하는 권한 집합의 ID를 식별합니다. 권한 집합은 `PermissionSet` 요소에서 선언됩니다.  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
  선택 사항입니다. 이 요소는 `security` 요소의 자식이며 `requestedExecutionLevel` 요소를 포함합니다. 이 요소에는 특성이 없습니다.  
@@ -145,7 +145,7 @@ ms.locfileid: "62420087"
   
 - `Level`  
   
-     필수. 애플리케이션이 요청하는 보안 수준을 나타냅니다. 가능한 값은 다음과 같습니다.  
+     필수 요소. 애플리케이션이 요청하는 보안 수준을 나타냅니다. 가능한 값은 다음과 같습니다.  
   
      `asInvoker`, 추가 권한을 요청하지 않습니다. 이 수준에서는 추가 신뢰 프롬프트를 요구하지 않습니다.  
   
@@ -153,18 +153,18 @@ ms.locfileid: "62420087"
   
      `requireAdministrator`, 전체 관리자 권한을 요청합니다.  
   
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램은 `asInvoker`의 값으로만 설치됩니다. 다른 모든 값을 사용하는 설치는 실패합니다.  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션은 `asInvoker`의 값으로만 설치됩니다. 다른 모든 값을 사용하는 설치는 실패합니다.  
   
 - `uiAccess`  
   
      선택 사항입니다. 애플리케이션에서 보호된 사용자 인터페이스 요소에 대한 액세스를 필요로 하는지 여부를 나타냅니다. 값은 `true` 또는 `false`이며, 기본값은 false입니다. 서명된 애플리케이션만 true 값을 가집니다.  
   
 ## <a name="remarks"></a>설명  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에서 클라이언트 컴퓨터에서 기본적으로 부여하는 권한보다 많은 권한을 요청하는 경우, 공용 언어 런타임의 트러스트 관리자는 응용 프로그램에 이 관리자 권한 수준의 트러스트를 부여할지를 사용자에게 묻습니다. 관리자 권한 수준의 트러스트를 부여하지 않는 경우 애플리케이션은 실행되지 않으며, 부여하는 경우 요청된 권한으로 실행됩니다.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션에서 클라이언트 컴퓨터에서 기본적으로 부여하는 권한보다 많은 권한을 요청하는 경우, 공용 언어 런타임의 트러스트 관리자는 애플리케이션에 이 관리자 권한 수준의 트러스트를 부여할지를 사용자에게 묻습니다. 관리자 권한 수준의 트러스트를 부여하지 않는 경우 애플리케이션은 실행되지 않으며, 부여하는 경우 요청된 권한으로 실행됩니다.  
   
  `defaultAssemblyRequest` 및 `assemblyRequest` 을(를) 사용하여 요청된 모든 권한은 배포 매니페스트에 유효한 트러스트 라이선스가 있는 경우 사용자 프롬프트 없이 부여됩니다.  
   
- 권한 상승에 대 한 자세한 내용은 참조 하세요. [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)합니다. 정책 배포에 대한 자세한 내용은 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)의 내용을 를 참조하세요.  
+ 권한 상승에 대 한 자세한 내용은 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)을 참조 하세요. 정책 배포에 대한 자세한 내용은 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)의 내용을 를 참조하세요.  
   
 ## <a name="examples"></a>예제  
  다음 세 가지 코드 예제는 `trustInfo` 배포의 애플리케이션 매니페스트에서 사용할 수 있는 기본 명명된 보안 영역(Internet, LocalIntranet, FullTrust)에 대한 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 요소를 설명합니다.  
@@ -270,6 +270,6 @@ ms.locfileid: "62420087"
 </trustInfo>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

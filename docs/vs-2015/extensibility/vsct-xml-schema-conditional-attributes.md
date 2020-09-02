@@ -12,33 +12,33 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6294ee8027b61840149096561efc91b8a4a3c3ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422164"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 스키마 조건부 특성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-모든 목록 및 항목에 조건부 특성을 적용할 수 있습니다. 논리 연산자 및 기호 확장 식에는 true 또는 false로 평가합니다. True 이면 연결 된 목록이 나 항목이 결과 출력에 포함 됩니다.  
+모든 목록 및 항목에 조건부 특성을 적용할 수 있습니다. 논리 연산자 및 기호 확장 식은 true 또는 false로 계산 됩니다. True 이면 연결 된 목록 또는 항목이 결과 출력에 포함 됩니다.  
   
- 다른 토큰 확장 또는 상수에 대 한 토큰 확장을 테스트할 수 있습니다. Defined() 함수는 값이 없는 경우에 특정 이름을 정의 되어 있는지 여부를 테스트에 사용 됩니다.  
+ 토큰 확장은 다른 토큰 확장 또는 상수에 대해 테스트할 수 있습니다. 정의 된 함수 ()는 값이 없는 경우에도 특정 이름이 정의 되었는지 여부를 테스트 하는 데 사용 됩니다.  
   
- Condition 특성을 목록에 적용 하면 조건 목록에서 모든 자식 요소에 적용 됩니다. 자식 요소 자체의 Condition 특성에 있으면 다음 조건이 결합 됩니다 부모 식을 사용 하 여 AND 연산에 의해.  
+ 조건 특성이 목록에 적용 되 면 해당 조건이 목록의 모든 자식 요소에 적용 됩니다. 자식 요소 자체에 조건 특성이 포함 된 경우 해당 조건이 AND 연산에 의해 부모 식과 결합 됩니다.  
   
- 1, '1' 및 'true' 값을 true로 평가 하 고 0, '0' 및 'f a l'이 false로 평가 됩니다.  
+ 값 1, ' 1 ' 및 ' t r u e '는 true로 평가 되 고 0, ' 0 ' 및 ' f a l s e '는 false로 평가 됩니다.  
   
 ## <a name="operators"></a>연산자  
- 조건부 식을 평가 하는 다음 연산자를 사용할 수 있습니다.  
+ 다음 연산자는 조건식을 평가 하는 데 사용할 수 있습니다.  
   
 |연산자|정의|  
 |--------------|----------------|  
 |(,)|그룹화|  
 |!|논리 NOT|  
 |\<, >, \<=, >=, ==, !=|관계형 및 같음|  
-|및|Boolean|  
-|또는|Boolean|  
+|및|부울|  
+|또는|부울|  
   
 ## <a name="examples"></a>예제  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElements | Microsoft Docs
+title: 'IDebugArrayObject:: GetElements | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cad81d76e2fcec01fa50a37fa6ab6cb49cfc79be
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423701"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-배열의 모든 요소는 열거자를 가져옵니다.  
+배열의 모든 요소에 대 한 열거자를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,13 +40,13 @@ int GetElements(
   
 #### <a name="parameters"></a>매개 변수  
  `ppEnum`  
- [out] 반환 된 [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) 모든 요소를 열거할 수 있는 개체입니다.  
+ 제한이 모든 요소에 대해 열거를 허용 하는 [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 대신 사용 합니다 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 및 [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) 요소를 반복 하는 방법입니다.  
+ 대신 [Getcount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 및 [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) 메서드를 사용 하 여 요소를 반복 합니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
