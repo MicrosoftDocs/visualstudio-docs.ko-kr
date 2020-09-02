@@ -1,5 +1,5 @@
 ---
-title: '오류: 디버깅 되었습니다&#39;수는 커널 디버거가 사용 중 이므로 시스템에서 t | Microsoft Docs'
+title: '오류: 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버깅할 수 없음 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197071"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 디버깅 되었습니다&#39;t 수 있으므로 시스템에 커널 디버거가 사용 가능
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버깅할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 관리 코드를 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.  
@@ -49,15 +49,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 - CLR 버전 4.0 또는 4.5를 사용하도록 애플리케이션을 업그레이드합니다.  
   
-     —또는—  
+     또는  
   
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 커널 디버깅을 비활성화하고 디버깅합니다.  
   
-     —또는—  
+     또는  
   
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 대신 커널 디버거를 사용하여 디버깅합니다.  
   
-     —또는—  
+     또는  
   
 - 커널 디버거에서 사용자 모드 예외를 비활성화합니다.  
   
@@ -105,6 +105,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
      `gn`  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [관리 코드 디버그](../debugger/debugging-managed-code.md)

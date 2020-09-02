@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Terminate | Microsoft Docs
+title: 'IDebugProgram2:: Terminate | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4673259e4a8ca0d4354037efbc35b63bedfcbc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146340"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-프로그램을 종료합니다.  
+프로그램을 종료 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,14 +36,14 @@ HRESULT Terminate( 
 int Terminate();  
 ```  
   
-## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+## <a name="return-value"></a>Return Value  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 가능한 경우 프로그램이 종료 되며; 프로세스에서 언로드 그렇지 않은 경우 디버그 엔진 (DE)는 필요한 정리를 수행 합니다.  
+ 가능 하면 프로그램이 종료 되 고 프로세스에서 언로드됩니다. 그렇지 않으면 디버그 엔진 (DE)이 필요한 정리를 수행 합니다.  
   
- 이 메서드 또는 [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) 모든 디버깅을 중지 하는 사용자에 대 한 응답에서 일반적으로 IDE에서 호출 됩니다. 이 메서드의 구현은 프로세스 내에서 프로그램을 종료 이상적으로 해야 합니다. 없는 경우는 DE 해야 프로그램에서이 프로세스에서 더 이상 실행 되지 않도록 (및 필요한 정리 작업을 수행). 경우는 `IDebugProcess2::Terminate` IDE에서 메서드를 호출한, 전체 프로세스가 완료 된 후 종료 됩니다는 `IDebugProgram2::Terminate` 메서드가 호출 됩니다.  
+ 이 메서드나 [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) 메서드는 일반적으로 모든 디버깅을 중지 하는 사용자에 대 한 응답으로 IDE에 의해 호출 됩니다. 이 메서드의 구현에서는 프로세스 내에서 프로그램을 종료 하는 것이 가장 좋습니다. 가능 하지 않은 경우에는이 프로세스에서 프로그램이 더 이상 실행 되지 않도록 방지 해야 합니다. `IDebugProcess2::Terminate`IDE에서 메서드를 호출한 경우 메서드가 호출 된 후 전체 프로세스가 종료 됩니다 `IDebugProgram2::Terminate` .  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

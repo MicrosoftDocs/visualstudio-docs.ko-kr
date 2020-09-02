@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharLength | Microsoft Docs
+title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7fa9d6a440f0e7ad1f4c55463b025965621a21e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157417"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-연결된 된 속성의 문자열의 문자 수를 반환합니다.  
+연결 된 속성의 문자열에 있는 문자 수를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,18 +40,18 @@ int GetStringCharLength(
   
 #### <a name="parameters"></a>매개 변수  
   
-|매개 변수|Description|  
+|매개 변수|설명|  
 |---------------|-----------------|  
-|`pLen`|[out] 속성의 문자열의 문자 수를 반환합니다.|  
+|`pLen`|제한이 속성의 문자열에 있는 문자 수를 반환 합니다.|  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 버퍼에 대 한 호출에 대 한 할당에 대해 궁금할이 메서드는 일반적으로 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 메서드.  
+ 일반적으로이 메서드는 [Getstringchars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 메서드에 대 한 호출에 대 한 버퍼를 할당 하는 prelude 사용 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 노출 하는 개체를 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 노출 하는 **cproperty** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  
@@ -93,6 +93,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cb837c9b3d465d229f64fac08dac02af8d50f5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652013"
 ---
 # <a name="properties-of-decorators"></a>데코레이터의 속성
@@ -30,8 +30,8 @@ ms.locfileid: "72652013"
 |속성|설명|기본값|
 |--------------|-----------------|-------------|
 |DisplayName|생성 된 디자이너에 표시 될 데코레이터의 이름입니다.|확장 축소 데코레이터|
-|name|데코레이터의 이름입니다.|ExpandCollapseDecorator|
-|참고|이 데코레이터와 연결 된 비공식 메모입니다.|\<none >|
+|Name|데코레이터의 이름입니다.|ExpandCollapseDecorator|
+|참고|이 데코레이터와 연결 된 비공식 메모입니다.|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|데코레이터의 기본 위치를 기준으로 하는 가로 오프셋 (인치)입니다. (도형만 해당)|0|
 |VerticalOffset|데코레이터의 기본 위치를 기준으로 하는 세로 오프셋 (인치)입니다. (도형만 해당)|0|
 |OffsetFromLine|기본 위치를 기준으로 하는 선의 데코레이터 오프셋 (인치)입니다. (커넥터에만 해당)|0|
@@ -42,10 +42,10 @@ ms.locfileid: "72652013"
 
 |속성|설명|기본값|
 |--------------|-----------------|-------------|
-|DefaultIcon|표시할 아이콘 또는 이미지 파일의 경로입니다.|\<none >|
+|DefaultIcon|표시할 아이콘 또는 이미지 파일의 경로입니다.|\<none>|
 |DisplayName|생성 된 디자이너에 표시할 데코레이터의 이름입니다.|아이콘 데코레이터|
-|name|데코레이터의 이름입니다.|{0} 도형의 icondecorator|
-|참고|데코레이터와 연결 된 비공식 메모입니다.|\<none >|
+|Name|데코레이터의 이름입니다.|{0} 도형의 icondecorator|
+|참고|데코레이터와 연결 된 비공식 메모입니다.|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|데코레이터의 기본 위치를 기준으로 하는 가로 오프셋 (인치)입니다. (도형만 해당)|0|
 |VerticalOffset|데코레이터의 기본 위치를 기준으로 하는 세로 오프셋 (인치)입니다. (도형만 해당)|0|
 |OffsetFromLine|기본 위치를 기준으로 하는 선의 데코레이터 오프셋 (인치)입니다. (커넥터에만 해당)|0|
@@ -59,14 +59,14 @@ ms.locfileid: "72652013"
 |DefaultText|표시할 기본 텍스트입니다.|레이블|
 |DisplayName|생성 된 디자이너에 표시할 데코레이터의 이름입니다.|레이블|
 |FontSize|데코레이터에 표시 되는 텍스트의 글꼴 크기입니다.|8|
-|FontStyle|데코레이터에 표시 되는 텍스트의 글꼴 스타일입니다.|기본|
-|name|데코레이터의 이름입니다.|레이블|
-|참고|데코레이터와 연결 된 비공식 메모입니다.|\<none >|
+|FontStyle|데코레이터에 표시 되는 텍스트의 글꼴 스타일입니다.|주기적|
+|Name|데코레이터의 이름입니다.|레이블|
+|참고|데코레이터와 연결 된 비공식 메모입니다.|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|데코레이터의 기본 위치를 기준으로 하는 가로 오프셋 (인치)입니다. (도형만 해당)|0|
 |VerticalOffset|데코레이터의 기본 위치를 기준으로 하는 세로 오프셋 (인치)입니다. (도형만 해당)|0|
 |OffsetFromLine|기본 위치를 기준으로 하는 선의 데코레이터 오프셋 (인치)입니다. (커넥터에만 해당)|0|
 |OffsetFromShape|기본 위치를 기준으로 하는 도형의 데코레이터 오프셋 (인치)입니다. (커넥터에만 해당)|0|
 |위치|데코레이터의 기본 위치입니다.|TargetBottom|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

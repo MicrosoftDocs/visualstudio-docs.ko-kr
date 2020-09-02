@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157865"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>방법: 사용자 계정으로 작업자 프로세스 실행
@@ -34,7 +34,7 @@ ms.locfileid: "68157865"
   
 ## <a name="procedure"></a>프로시저  
   
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>aspnet_wp.exe를 사용자 계정에서 실행하려면  
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>aspnet_wp.exe를 사용자 계정에서 실행하려면  
   
 1. 컴퓨터에서 런타임을 설치한 경로에 있는 CONFIG 폴더의 machine.config 파일을 엽니다.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "68157865"
   
     **사용자, 컴퓨터 또는 그룹 선택** 대화 상자가 나타납니다.  
   
-10. **선택할 개체 이름 입력** 상자에 사용자 이름을 입력하고 **확인**을 클릭합니다. 사용자 이름에는 다음이 형식을 따라야 합니다. DomainName\UserName.  
+10. **선택할 개체 이름 입력** 상자에 사용자 이름을 입력하고 **확인**을 클릭합니다. 사용자 이름은 다음 형식을 따라야 합니다. DomainName\UserName.  
   
 11. **Temporary ASP.NET Files 권한 항목** 대화 상자에서 사용자에게 **모든 권한**을 부여한 다음 **확인** 을 클릭하여 **Temporary ASP.NET Files 권한 항목** 대화 상자를 닫습니다.  
   
@@ -85,5 +85,5 @@ ms.locfileid: "68157865"
   
 13. **확인** 을 클릭하여 **Temporary ASP.NET Files 속성** 대화 상자를 닫습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
 [ASP.NET 디버깅: 시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)  

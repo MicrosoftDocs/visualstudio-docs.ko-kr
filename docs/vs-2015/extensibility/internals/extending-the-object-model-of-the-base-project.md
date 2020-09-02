@@ -13,24 +13,24 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7723881bce81824b66a936793175077a0ec67666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187159"
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>기본 프로젝트의 개체 모델 확장
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-프로젝트 하위 형식에는 다음 위치에서 기본 프로젝트의 자동화 개체 모델을 확장 될 수 있습니다.  
+프로젝트 하위 형식이 다음 위치에서 기본 프로젝트의 자동화 개체 모델을 확장할 수 있습니다.  
   
-- Project.Extender ("\<ProjectSubtypeName >")-이 통해 프로젝트 하위 형식에서 사용자 지정 메서드를 사용 하 여 개체를 제공 하는 <xref:EnvDTE.Project>합니다. 프로젝트 하위 형식 Automation Extender를 사용 하 여 노출할 수는 `Project` 개체입니다. <xref:EnvDTE80.IInternalExtenderProvider>주 프로젝트 하위 형식 aggregator에서 구현 된 인터페이스에 대 한 해당 개체를 제공 해야 합니다 `VSHPROPID_ExtObjectCATID` 에서 <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (해당 하는 `itemid` VSITEMID_ROOT의 값에서 `VSITEMID`) CATID입니다.  
+- Project. Extender (" \<ProjectSubtypeName> ") – 프로젝트 하위 형식에서의 사용자 지정 메서드를 사용 하 여 개체를 제공할 수 있습니다 <xref:EnvDTE.Project> . 프로젝트 하위 유형은 Automation Extender를 사용 하 여 개체를 노출할 수 있습니다 `Project` . <xref:EnvDTE80.IInternalExtenderProvider>주 프로젝트 하위 형식 집계에 구현 된 인터페이스는 `VSHPROPID_ExtObjectCATID` from <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> ( `itemid` 값 VSITEMID_ROOT, from) CATID에 해당 하는의 개체를 제공 해야 합니다 `VSITEMID` .  
   
-- ProjectItem.Extender ("\<ProjectSubtypeName >")-이 통해 특정에서 사용자 지정 메서드를 사용 하 여 개체를 제공 하는 프로젝트 하위 형식 <xref:EnvDTE.ProjectItem> 프로젝트 내에서 개체입니다. 프로젝트 하위 형식 Automation Extender를 사용 하 여이 개체를 노출 하 수 있습니다. 합니다 <xref:EnvDTE80.IInternalExtenderProvider> 주 프로젝트 하위 형식 aggregator에서 구현 된 인터페이스에 대 한 해당 개체를 제공 해야 합니다 `VSHPROPID_ExtObjectCATID` 에서 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (에 해당 하는 원하는 `VSITEMID`) CATID입니다.  
+- ProjectItem. Extender (" \<ProjectSubtypeName> ") – 프로젝트 하위 형식에서 프로젝트 내의 특정 개체에 대 한 사용자 지정 메서드를 사용 하 여 개체를 제공할 수 있습니다 <xref:EnvDTE.ProjectItem> . 프로젝트 하위 유형은 Automation Extender를 사용 하 여이 개체를 노출할 수 있습니다. <xref:EnvDTE80.IInternalExtenderProvider>주 프로젝트 하위 형식 집계에 구현 된 인터페이스는 `VSHPROPID_ExtObjectCATID` from <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (desired) CATID에 대 한 개체를 제공 해야 합니다 `VSITEMID` .  
   
-- Project.Properties –이 컬렉션의 구성 독립 속성을 표시 합니다 `Project` 개체입니다. 프로젝트 속성에 대 한 자세한 내용은 참조 하세요. <xref:EnvDTE.Project.Properties%2A>합니다. 프로젝트 하위 형식 Automation Extender를 사용 하 여이 컬렉션에 해당 속성을 추가할 수 있습니다. <xref:EnvDTE80.IInternalExtenderProvider> 주 프로젝트 하위 형식 aggregator에서 구현 된 인터페이스에 대 한 해당 개체를 제공 해야 합니다 `VSHPROPID_BrowseObjectCATID` VSHPROPID2에서 (에 해당 하는 `itemid` VSITEMID_ROOT의 값에서 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>) CATID입니다.  
+- Project. 속성 –이 컬렉션은 개체의 구성 독립적 속성을 노출 합니다 `Project` . 프로젝트 속성에 대 한 자세한 내용은을 참조 하십시오 <xref:EnvDTE.Project.Properties%2A> . 프로젝트 하위 유형은 Automation Extender를 사용 하 여 해당 속성을이 컬렉션에 추가할 수 있습니다. <xref:EnvDTE80.IInternalExtenderProvider>주 프로젝트 하위 형식 집계에서 구현 되는 인터페이스는 `VSHPROPID_BrowseObjectCATID` VSHPROPID2의 값에 해당 하는 ( `itemid` 에서 VSITEMID_ROOT, from) CATID의 개체를 제공 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> .  
   
-- Configuration.Properties –이 컬렉션의 프로젝트 (예: 디버그) 특정 구성에 대 한 구성 종속 속성을 노출합니다. 자세한 내용은 <xref:EnvDTE.Configuration>를 참조하세요. 프로젝트 하위 형식 Automation Extender를 사용 하 여이 컬렉션에 해당 속성을 추가할 수 있습니다. 합니다 <xref:EnvDTE80.IInternalExtenderProvider> 주 프로젝트 하위 형식 aggregator에서 구현 된 인터페이스의 CATID를 해당 개체를 제공 `VSHPROPID_CfgBrowseObjectCATID` (해당 하는 `itemid` 의 값 <xref:Microsoft.VisualStudio.VSConstants.VSITEMID>). <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>인터페이스 하나 구성 찾아보기 개체를 구분 하기 위해서 사용 됩니다.  
+- 구성 속성 –이 컬렉션은 특정 구성에 대 한 프로젝트의 구성 종속 속성 (예: 디버그)을 노출 합니다. 자세한 내용은 <xref:EnvDTE.Configuration>를 참조하세요. 프로젝트 하위 유형은 Automation Extender를 사용 하 여 해당 속성을이 컬렉션에 추가할 수 있습니다. <xref:EnvDTE80.IInternalExtenderProvider>주 프로젝트 하위 형식 집계에 구현 된 인터페이스는 CATID `VSHPROPID_CfgBrowseObjectCATID` (의 값에 해당)에 대 한 개체를 제공 합니다 `itemid` <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>인터페이스를 사용 하 여 하나의 구성 찾아보기 개체를 서로 구별할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

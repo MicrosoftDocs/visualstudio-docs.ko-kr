@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3c6e7550940f9d2efa5ca228123310f1b861ee76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651594"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>방법: 코드 프로젝트 규칙 집합을 팀 프로젝트 체크 인 정책과 동기화
@@ -35,7 +35,7 @@ ms.locfileid: "72651594"
 
 1. **솔루션 탐색기**에서 코드 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
-2. **코드 분석**을 클릭 합니다.
+2. **코드 분석**을 클릭합니다.
 
 3. **이 규칙 집합 실행** 목록에서 체크 인 정책 규칙 집합을 클릭 합니다.
 
@@ -45,9 +45,9 @@ ms.locfileid: "72651594"
 
 2. **솔루션 탐색기**에서 코드 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
-3. **코드 분석**을 클릭 합니다.
+3. **코드 분석**을 클릭합니다.
 
-4. **이 규칙 집합 실행** 목록에서 \<Browse ...을 클릭 합니다.  **>** .
+4. **이 규칙 집합 실행** 목록에서을 클릭 **\<Browse...>** 합니다.
 
 5. **열기** 대화 상자에서 체크 인 정책 규칙 집합 파일을 지정 합니다.
 
@@ -65,6 +65,6 @@ ms.locfileid: "72651594"
 
 5. 코드 프로젝트에 대 한 속성 대화 상자를 열고 **코드 분석** 페이지를 표시 합니다.
 
-6. **이 규칙 집합 실행** 목록에서 \<Browse ...을 클릭 합니다.  **>** .
+6. **이 규칙 집합 실행** 목록에서을 클릭 **\<Browse...>** 합니다.
 
 7. **열기** 대화 상자에서 규칙 집합 파일을 지정 합니다.

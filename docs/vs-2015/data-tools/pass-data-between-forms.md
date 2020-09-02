@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e14165ba2111f40898c00b3d01950425c042070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652905"
 ---
 # <a name="pass-data-between-forms"></a>폼 간에 데이터 전달
@@ -51,7 +51,7 @@ ms.locfileid: "72652905"
 
 - 폼 간에 데이터를 전달합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료하려면 다음 사항이 필요합니다.
 
 - Northwind 샘플 데이터베이스에 대한 액세스.
@@ -146,7 +146,7 @@ ms.locfileid: "72652905"
 
 6. **다음**을 클릭합니다.
 
-7. **Fill a DataTableMethod Name**에 `FillByCustomerID`을 입력 합니다.
+7. **Fill a DataTableMethod Name**에를 입력 `FillByCustomerID` 합니다.
 
 8. **DataTable 반환** 옵션 선택을 취소한 후, **다음**을 클릭합니다.
 
@@ -195,5 +195,5 @@ ms.locfileid: "72652905"
 
 - 데이터를 데이터베이스로 다시 보내는 기능을 추가합니다. 자세한 내용은 [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

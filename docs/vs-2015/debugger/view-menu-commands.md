@@ -1,5 +1,5 @@
 ---
-title: 메뉴 명령 보기 | Microsoft Docs
+title: 도움말 메뉴 명령 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f8efd65c60b28c0ba50419770351d62cb615dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146470"
 ---
 # <a name="view-menu-commands"></a>보기 메뉴 명령
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-합니다 **보기** 메뉴 명령 제어 Spy + +에 대 한 사용자 인터페이스를 제공 합니다.  
+**보기** 메뉴는 Spy++ 사용자 인터페이스를 제어하기 위한 명령을 제공합니다.  
   
  **글꼴**  
- 열립니다는 **글꼴** 대화 상자에서 현재 Spy + + 보기에 사용할 글꼴을 선택할 수 있습니다.  
+ 현재 Spy + + 뷰에서 사용할 글꼴을 선택할 수 있는 **글꼴** 대화 상자를 엽니다.  
   
  **도구 모음**  
- 도구 모음을 표시 하거나 숨깁니다.  
+ 도구 모음을 숨기 거 나 표시 합니다.  
   
  **상태 표시줄**  
- 상태 표시줄을 표시 하거나 숨깁니다.  
+ 상태 표시줄을 숨기 거 나 표시 합니다.  
   
- **Properties**  
- 열립니다는 **속성** 현재 보기에 대 한 대화 상자.
+ **속성**  
+ 활성 보기의 **속성** 대화 상자를 엽니다.

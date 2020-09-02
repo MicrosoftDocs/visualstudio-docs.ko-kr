@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 277164ea3dfcdabbe24622bb5148ebd75d54f8c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561854"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
+# <a name="canstop_reason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-프로그램 실행의 특정 지점에 도달한 후 실행을 중지할 수 있습니다 하는 경우를 결정 하는 데 사용 합니다.  
+실행의 특정 지점에 도달한 후 프로그램이 실행을 중지할 수 있는지 여부를 확인 하는 데 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,21 +43,21 @@ public enum enum_CANSTOP_REASON { 
   
 ## <a name="members"></a>멤버  
  CANSTOP_ENTRYPOINT  
- 지정 된 프로그램의 진입점을 지정합니다.  
+ 지정 된 프로그램의 진입점을 지정 합니다.  
   
  CANSTOP_STEPIN  
- 함수를 한 단계씩 실행을 지정 합니다.  
+ 함수를 한 단계씩 실행 하도록 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 인수로 전달 된 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 프로그램의 진입점에 도달한 후 또는 함수나 메서드를 한 단계씩 실행 한 후 중지 하 되는 경우 세션 디버그 관리자 SDM (과)를 확인 하는 방법입니다.  
+ 프로그램의 진입점에 도달 하거나 함수 또는 메서드를 한 단계씩 코드 실행 한 후에 중지할 수 있는 경우 [Getreason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 메서드에 인수로 전달 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 페이지 위쪽에서에서 위 또는 아래로 메모리 | Microsoft Docs'
+title: '방법: 메모리에서 페이지 위 또는 아래로 이동 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157850"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>방법: 메모리에서 페이지 위 또는 아래로 이동
@@ -51,7 +51,7 @@ ms.locfileid: "68157850"
   
 - 세로 스크롤 막대 맨 위나 맨 아래에 있는 화살표를 클릭합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [메모리 창](../debugger/memory-windows.md)   
  [방법: 디스어셈블리 창 사용](../debugger/how-to-use-the-disassembly-window.md)   
  [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)

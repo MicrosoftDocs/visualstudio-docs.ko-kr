@@ -13,54 +13,54 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9fc229a353655aeae06460c32b5233888f22dd6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555812"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 인터페이스는 모듈을 나타냅니다-프로그램에서 실행 파일 단위 이므로, DLL 등입니다.  
+이 인터페이스는 모듈 즉, DLL과 같은 프로그램의 실행 가능한 단위를 나타냅니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugModule2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 디버그 엔진 (DE) 모듈을 나타내는 하 고 해당 모듈에 대 한 정보에 대 한 액세스를 제공 하기에이 인터페이스를 구현 합니다.  
+ DE (디버그 엔진)는이 인터페이스를 구현 하 여 모듈을 나타내고 해당 모듈에 대 한 정보에 대 한 액세스를 제공 합니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 에 대 한 호출 [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) 이 인터페이스를 반환 합니다. DE 보냅니다 합니다 [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) 인터페이스를 사용 하 여 세션 디버그 관리자 (SDM)에 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 메서드.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) 에 대 한 호출은이 인터페이스를 반환 합니다. DE는 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 메서드를 사용 하 여 [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.  
   
- 이 인터페이스에서 반환 될 수도 있습니다는 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조 (에 대 한 호출에서 반환 된 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)).  
+ 이 인터페이스는 [enuminfo](../../../extensibility/debugger/reference/frameinfo.md) 구조에서 반환 될 수도 있습니다 ( [enum프레임 정보](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)에 대 한 호출에서 반환 됨).  
   
- [다음](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) 또한이 인터페이스를 반환 합니다 ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) 반환 된 [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) 인터페이스).  
+ [다음](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) 도이 인터페이스를 반환 합니다.[Enummodules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) 은 [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) 인터페이스를 반환 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDebugModule2`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDebugModule2` .  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|가져옵니다 합니다 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 는이 모듈에 설명 합니다.|  
-|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|사용되지 않습니다. 사용 하지 마세요. 이 모듈의 기호를 다시 로드합니다.|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|이 모듈을 설명 하는 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 을 가져옵니다.|  
+|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|사용되지 않습니다. 사용 하지 마십시오. 이 모듈에 대 한 기호를 다시 로드 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 모듈 정보를 표시할 합니다 **모듈** IDE의 창.  
+ 모듈 정보는 IDE의 **모듈** 창에 표시 될 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
- [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>관련 항목  
+ [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
+ [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

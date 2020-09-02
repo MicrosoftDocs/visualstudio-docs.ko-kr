@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d5e611c2a964fcbb78a387a09989436e672ecd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551236"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 함수
@@ -43,5 +43,5 @@ HRESULT CvReleaseProvider(
 ## <a name="requirements"></a>요구 사항  
  **헤더:** cvmarkers.h  
   
-## <a name="see-also"></a>참고 항목  
- [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>관련 항목  
+ [C + + 라이브러리 참조](../profiling/cpp-library-reference.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157795"
 ---
 # <a name="status"></a>상태
@@ -55,7 +55,7 @@ VSPerfCmd.exe /Status
   
  **Status** 옵션은 현재 프로파일링되고 있는 각 프로세스에 대한 다음 상태 정보를 표시합니다.  
   
- **Process**  
+ **처리**  
  프로파일링된 프로세스의 이름입니다.  
   
  **프로세스 ID**  
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Status
  **모니터에 액세스할 수 있는 권한을 가진 사용자**  
  프로파일러에 대한 액세스 권한이 있는 사용자의 이름을 나열합니다. VSPerfCmd.exe **Admin** 옵션을 사용하여 추가 사용자에게 액세스를 부여할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

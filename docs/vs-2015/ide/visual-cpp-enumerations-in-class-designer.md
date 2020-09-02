@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f967420e37d6337ce6d86cc56524f2751218f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651658"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>클래스 디자이너의 Visual C++ 열거형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-클래스 디자이너는 C++ `enum` 및 범위가 지정된 `enum class` 형식을 지원합니다. 예를 들면 다음과 같습니다.
+클래스 디자이너는 C++ `enum` 및 범위가 지정된 `enum class` 형식을 지원합니다. 다음은 예제입니다.
 
 ```
 enum CardSuit {
@@ -45,5 +45,5 @@ enum class CardSuit {
 
  `enum` 형식을 사용하는 방법에 대한 자세한 내용은 [열거형](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [시각적 C++ 코드 (클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md) [열거형](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) 작업
+## <a name="see-also"></a>관련 항목
+ [클래스 디자이너 (Visual C++ 코드)](../ide/working-with-visual-cpp-code-class-designer.md) [열거형](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) 사용

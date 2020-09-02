@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145652"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터
@@ -31,7 +31,7 @@ ms.locfileid: "68145652"
   
  호출자 또는 호출 수신자 함수 행을 두 번 클릭하면 해당 행이 현재 함수가 됩니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|  
 |**프로세스 이름**|프로세스의 이름입니다.|  
@@ -52,8 +52,8 @@ ms.locfileid: "68145652"
 |**제외 바이트**|- 현재 함수의 경우 프로파일링 실행 시 함수가 할당한 메모리의 바이트 수입니다. 이 수에는 현재 함수에서 호출된 함수가 할당한 메모리는 포함되지 않습니다.<br />- 호출자 함수의 경우 호출자 함수의 호출에 의해 생성된 현재 함수의 제외 바이트 수입니다.<br />- 호출 수신자 함수의 경우 현재 함수의 호출에 의해 생성된 함수의 인스턴스가 할당한 바이트 수입니다. 이 수에는 호출 수신자 함수가 호출한 함수에서 할당한 바이트가 포함되지 않습니다.|  
 |**제외 바이트(%)**|이 함수의 제외 할당으로, 프로파일링 실행 시 할당된 모든 메모리 바이트의 비율입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
- [호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
- [호출자/호출 수신자 뷰 - 계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)
+ [호출자/호출 수신자 뷰-.NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [호출자/호출 수신자 뷰-샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
+ [호출자/호출 수신자 뷰-계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)

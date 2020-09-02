@@ -1,5 +1,5 @@
 ---
-title: '방법: 실행 취소 스택을 지웁니다. | Microsoft Docs'
+title: '방법: 실행 취소 스택 지우기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549171"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>방법: 실행 취소 스택을 지웁니다.
+# <a name="how-to-clear-the-undo-stack"></a>방법: 실행 취소 스택 정리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-아래에 다음 프로시저 실행 취소 스택을 지웁니다. 하는 방법에 설명 합니다.  
+다음 절차에서는 실행 취소 스택을 지우는 방법을 설명 합니다.  
   
-### <a name="to-clear-the-undo-stack"></a>실행 취소 스택을 지웁니다.  
+### <a name="to-clear-the-undo-stack"></a>실행 취소 스택을 지우려면  
   
-1. 실행 취소 스택을 사용의 선택을 취소 하는 [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) 메서드. 다음은이 예제입니다.  
+1. 실행 취소 스택을 지우려면 [IOleUndoManager::D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) 메서드를 사용 합니다. 이에 대 한 예는 다음과 같습니다.  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -44,5 +44,5 @@ ms.locfileid: "62549171"
     }  
     ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 실행 취소 관리 구현](../extensibility/how-to-implement-undo-management.md)

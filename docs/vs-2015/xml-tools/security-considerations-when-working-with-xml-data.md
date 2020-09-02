@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 491e8cf8f9441180e66259ed295e04e8a1a90493
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656134"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML 데이터 사용 시 보안 고려 사항
@@ -24,7 +24,7 @@ ms.locfileid: "72656134"
 ## <a name="xml-editor"></a>XML 편집기
  XML 편집기는 Visual Studio 텍스트 편집기를 기반으로 하며 <xref:System.Xml> 및 <xref:System.Xml.Xsl> 클래스를 사용하여 많은 XML 프로세스를 처리합니다.
 
-- 새 애플리케이션 도메인에서 XSLT 변형이 실행됩니다. XSLT 변환이 *샌드 박싱*됩니다. 즉, 컴퓨터의 코드 액세스 보안 정책은 XSLT 스타일 시트가 있는 위치에 따라 제한 된 권한을 결정 하는 데 사용 됩니다. 예를 들어, 인터넷 위치에 있는 스타일시트는 가장 제한된 권한을 갖지만 하드 드라이브에 복사된 스타일시트는 완전 신뢰로 실행됩니다.
+- 새 애플리케이션 도메인에서 XSLT 변형이 실행됩니다. XSLT 변형은 ‘샌드박스가 적용’됩니다. 즉, 컴퓨터의 코드 액세스 보안 정책은 XSLT 스타일시트가 있는 위치를 기반으로 제한된 권한을 결정하는 데 사용됩니다. 예를 들어, 인터넷 위치에 있는 스타일시트는 가장 제한된 권한을 갖지만 하드 드라이브에 복사된 스타일시트는 완전 신뢰로 실행됩니다.
 
 - 실행 속도를 향상시키기 위해 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스를 사용하여 XSLT를 MSIL(Microsoft Intermediate Language)로 변환할 수 있습니다.
 
@@ -41,5 +41,5 @@ ms.locfileid: "72656134"
 
 - 관리되는 디버그 엔진에서 XSLT 식 계산기를 로드합니다. 관리되는 디버그 엔진은 모든 코드가 사용자의 로컬 컴퓨터에서 실행된다고 가정합니다. 따라서 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 XSLT 파일을 사용자의 로컬 컴퓨터로 다운로드합니다. 제한된 권한으로 새 애플리케이션 도메인에서 모든 XSLT 변형을 실행하면 실행 권한을 높일 수 있는 가능성이 적어집니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [애플리케이션 도메인](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

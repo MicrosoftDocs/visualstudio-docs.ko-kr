@@ -1,5 +1,5 @@
 ---
-title: 디버거 탐색 샘플 코드 (Xaml 및 C#) | Microsoft Docs
+title: '디버거 탐색 샘플 코드 (Xaml 및 c #) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88193fc4ec7061771ebba53139cdc0ecce67dbfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552082"
 ---
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>디버거 탐색 샘플 코드(Xaml 및 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 코드에 대 한 샘플 파일이 합니다 [(Xaml 및 C#) 디버그 세션 탐색](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 항목입니다.  
+이 항목의 코드는 [디버그 세션 탐색 (Xaml 및 c #)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 항목에 대 한 샘플 파일입니다.  
   
 ## <a name="sample-code"></a>샘플 코드  
   

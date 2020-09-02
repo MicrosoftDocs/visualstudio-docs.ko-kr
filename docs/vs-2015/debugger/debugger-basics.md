@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145714"
 ---
 # <a name="debugger-basics"></a>디버거 기본 사항
@@ -54,11 +54,11 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
  [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  디버깅을 위해 기호 및 소스 파일을 지정하는 방법을 설명합니다.  
   
- [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)  
+ [64비트 애플리케이션 디버그](../debugger/debug-64-bit-applications.md)  
  64비트 애플리케이션을 디버그하는 방법 및 문제 해결 방법을 설명합니다.  
   
  [디버거 보안](../debugger/debugger-security.md)  
  디버거에 대한 보안 방법을 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)

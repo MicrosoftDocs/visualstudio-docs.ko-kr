@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157356"
 ---
 # <a name="modules-view---contention-data"></a>모듈 뷰 - 경합 데이터
@@ -27,7 +27,7 @@ ms.locfileid: "68157356"
   
  다음 표는 경합 데이터의 모듈 뷰에서 열의 값을 설명합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**차단된 전용 시간**|-   함수의 경우 이 함수에서 함수 본문의 코드 실행이 차단되는 시간입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.<br />-   모듈의 경우 모듈 내 함수의 차단된 전용 시간의 합입니다.<br />-   줄 또는 명령의 경우 이 줄 또는 명령이 실행에서 차단된 시간입니다.|  
 |**차단된 전용 시간 비율(%)**|-   함수 또는 모듈의 경우 프로파일링 실행의 모든 차단된 시간 중 이 함수 또는 모듈의 차단된 전용 시간의 백분율입니다.<br />-   줄 또는 명령의 경우 이 줄이나 명령이 실행에서 차단되었던 프로파일링 실행의 차단된 모든 시간의 백분율입니다.|  
@@ -45,10 +45,10 @@ ms.locfileid: "68157356"
 |**프로세스 이름**|프로세스의 이름입니다.|  
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [모듈 뷰](../profiling/modules-view.md)   
- [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [모듈 뷰 - 샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [모듈 뷰-계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [모듈 뷰-샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [모듈 뷰](../profiling/modules-view-instrumentation-data.md)   
  [모듈 뷰](../profiling/modules-view-sampling-data.md)

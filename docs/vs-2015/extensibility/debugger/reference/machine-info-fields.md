@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cce5300a795922162f2e0b979e553f4235ceacc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147454"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-특정 컴퓨터에 대 한 검색할 정보의 종류를 지정 합니다.  
+특정 컴퓨터에 대해 검색할 정보의 종류를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,29 +45,29 @@ public enum enum_MACHINE_INFO_FIELDS { 
   
 ## <a name="members"></a>멤버  
  MCIF_NAME  
- 초기화/사용 된 `bstrName` 구조의 필드입니다.  
+ 구조에서 필드를 초기화/사용 `bstrName` 합니다.  
   
  MCIF_FLAGS  
- 초기화/사용 된 `Flags` 구조의 필드입니다.  
+ 구조에서 필드를 초기화/사용 `Flags` 합니다.  
   
  MIF_ALL  
- 모든 구조에 필드를 초기화/사용 합니다.  
+ 구조체의 모든 필드를 초기화/사용 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 전달 되는 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 멤버를 나타내도록 메서드는 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조는 초기화할 합니다.  
+ 이러한 값은 [Getmachineinfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 메서드에 전달 되어 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조체에서 초기화할 멤버를 표시 합니다.  
   
- 에서도 사용 합니다 `Fields` 소속을 `MACHINE_INFO` 에 유효 하 고 사용 되는 필드는 구조체.  
+ 또한 `Fields` 구조체의 멤버에서 사용 `MACHINE_INFO` 되어 사용 되는 필드와 유효한 필드를 표시 합니다.  
   
- 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
+ 이러한 플래그는 비트와 함께 사용할 수 있습니다 `OR` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

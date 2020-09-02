@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Microsoft Docs
+title: IDebugProgramPublisher2::P ublishProgram | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 21bc6e558eff662874ac35eb8557f01838914ca9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547340"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 메서드는 디버그 엔진 (DEs)에 사용할 수 있는 프로그램 및 세션 디버그 관리자를 만듭니다.  
+이 메서드는 디버그 엔진 (DEs) 및 세션 디버그 관리자에 사용할 수 있는 프로그램을 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,20 +44,20 @@ int PublishProgram(
   
 #### <a name="parameters"></a>매개 변수  
  `Engines`  
- [in] Des 시작 하거나이 프로그램을 연결할 수 있는 Guid의 배열입니다.  
+ 진행 이 프로그램을 시작 하거나 연결할 수 있는 DEs의 Guid 배열입니다.  
   
  `szFriendlyName`  
- [in] \(메뉴 또는 대화 상자에는 사용자에 게 표시) 프로그램에 대 한 이름입니다.  
+ 진행 프로그램의 친숙 한 이름입니다 (사용자에 게 표시 되는 메뉴 또는 대화 상자에 표시).  
   
  `pDebuggeeInterface`  
- [in] `IUnknown` 프로그램에 대 한 인터페이스 (이 값은 고유 하 게 프로그램을 식별 하는 쿠키로 사용;이 동일한 값이 "프로그램을 게시 취소"를 사용)  
+ [in] `IUnknown` 프로그램에 대 한 인터페이스입니다 .이 값은 프로그램을 고유 하 게 식별 하는 쿠키로 사용 됩니다 .이 값은 프로그램을 "게시 취소" 하는 데 사용 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 프로그램을 디버깅을 위해 더 이상 사용할 수 있도록 하려면 호출 [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)합니다.  
+ 프로그램을 디버깅에 더 이상 사용할 수 없게 하려면 [Unpublishprogram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)을 호출 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

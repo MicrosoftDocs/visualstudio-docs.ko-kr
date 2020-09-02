@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159614"
 ---
 # <a name="instrumentation-method-data-views"></a>계측 방법 데이터 뷰
@@ -47,7 +47,7 @@ ms.locfileid: "68159614"
  [프로세스 뷰](../profiling/process-view.md)  
  프로파일링된 모든 프로세스에 대한 프로세스 시작, 종료 및 수명 시간을 나열합니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [샘플링 방법 데이터 뷰](../profiling/profiler-sampling-method-data-views.md)  
  샘플링 방법을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보입니다.  
   
@@ -57,5 +57,5 @@ ms.locfileid: "68159614"
  [리소스 경합 데이터 뷰](../profiling/resource-contention-data-views.md)  
  스레드 경합 방법을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [계측 데이터 값 이해](../profiling/understanding-instrumentation-data-values.md)

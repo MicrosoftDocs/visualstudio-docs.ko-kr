@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae51d604f455b12fd6933a54954b75a97aea4eb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547470"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-모듈에 설명 하는 데 사용 합니다.  
+모듈을 설명 하는 데 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,35 +51,35 @@ public enum enum_MODULE_FLAGS { 
   
 ## <a name="members"></a>멤버  
  MODULE_FLAG_NONE  
- 모듈이 없는 지정합니다.  
+ 모듈을 지정 하지 않습니다.  
   
  MODULE_FLAG_SYSTEM  
- 시스템 모듈을 지정합니다.  
+ 시스템 모듈을 지정 합니다.  
   
  MODULE_FLAG_SYMBOLS  
- 기호 모듈을 지정합니다.  
+ 기호 모듈을 지정 합니다.  
   
  MODULE_FLAG_64BIT  
- 64 비트 모듈을 지정합니다.  
+ 64 비트 모듈을 지정 합니다.  
   
  MODULE_FLAG_OPTIMIZED  
- 최적화 된 모듈을 지정 합니다. 이 상태에 반영 되는 **모듈** 창입니다.  
+ 모듈이 최적화 되었는지 여부를 지정 합니다. 이 상태는 **모듈** 창에 반영 됩니다.  
   
  MODULE_FLAG_UNOPTIMIZED  
- 최적화 되지 않은 모듈을 지정 합니다. 이 상태에 반영 되는 **모듈** 창입니다. 기본 상태입니다.  
+ 모듈이 최적화 되지 않은 것으로 지정 합니다. 이 상태는 **모듈** 창에 반영 됩니다. 이 설정이 기본 상태입니다.  
   
 ## <a name="remarks"></a>설명  
- 에 사용 되는 합니다 `m_dwModuleFlags` 의 멤버는 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조입니다.  
+ `m_dwModuleFlags` [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조체의 멤버에 사용 됩니다.  
   
- 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
+ 이러한 플래그는 비트와 함께 사용할 수 있습니다 `OR` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
