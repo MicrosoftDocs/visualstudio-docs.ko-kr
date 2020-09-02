@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670346"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>전구를 사용하여 빠른 작업 수행
@@ -31,14 +31,14 @@ ms.locfileid: "72670346"
 
 2. **Ctrl +** 줄의 임의 위치를 눌러 전구를 호출하고 잠재적 해결 방법 목록으로 바로 이동합니다.
 
-   ![마우스 호버가 있는 전구](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+   ![마우스로 가리킨 전구](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
 ## <a name="to-see-potential-fixes"></a>잠재적 해결 방법을 보려면
  아래쪽 화살표나 잠재적 해결 방법 표시 링크를 클릭하여 전구가 수행할 수 있는 빠른 작업 목록을 표시합니다.
 
- ![전구 확장 됨](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
+ ![확장된 전구](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
 
 ## <a name="to-do-a-refactoring"></a>리팩터링을 수행하려면
  마우스 오른쪽 단추를 클릭하고 상황에 맞는 메뉴를 표시하여 리팩터링을 수행할 수 있지만 Ctrl+.를 눌러 리팩터링 옵션을 표시할 수도 있습니다. 다음 그림에서는 Ctrl+.를 누른 후 `Math.Abs` 호출이 포함된 줄의 임의 위치에서 메서드 추출 리팩터링이 제공됩니다.
 
- ![리팩터링 옵션을 보여 주는 전구](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
+ ![리팩터링 옵션이 표시된 전구](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

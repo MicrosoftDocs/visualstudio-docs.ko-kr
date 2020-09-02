@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd2b2723a5ecfe66e9471cfea1e8eb55ed7ced59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547448"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio의 일반 컨트롤 패턴
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>공용 컨트롤
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 공용 컨트롤
 
 ### <a name="overview"></a>개요
  공용 컨트롤은 Visual Studio에서 대부분의 사용자 인터페이스를 구성 합니다. Visual Studio 인터페이스에서 가장 일반적으로 사용 되는 컨트롤은 [Windows 데스크톱 상호 작용 지침](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)을 따라야 합니다. 이 문서는 Visual Studio와 관련 되어 있으며, 이러한 Windows 지침을 보완 하는 특별 한 상황이 나 세부 정보를 다룹니다.
@@ -50,10 +50,10 @@ ms.locfileid: "85547448"
 
 - **도구 창, 문서 편집기, 디자인 화면 및 테마가 적용 되는 대화 상자:** 색 서비스를 사용 하 여 특수 테마 모양을 사용 합니다.
 
-### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a>스크롤
+### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a> 스크롤
  스크롤 막대는 코드 편집기에서와 같은 콘텐츠 정보를 사용 하 여 확대 되지 않는 한 [Windows 스크롤 막대에 대 한 일반적인 상호 작용 패턴](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) 을 따라야 합니다.
 
-### <a name="input-fields"></a><a name="BKMK_InputFields"></a>입력 필드
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a> 입력 필드
  일반적인 상호 작용 동작의 경우 [텍스트 상자에 대 한 Windows 바탕 화면 지침](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx)을 따릅니다.
 
 #### <a name="visual-style"></a>비주얼 스타일
@@ -76,7 +76,7 @@ ms.locfileid: "85547448"
 
      ![올바른 입력 필드 컨트롤 너비](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl") **올바른 입력 필드 길이: 입력 필드는 예상 되는 콘텐츠의 적절 한 너비입니다.**
 
-### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>콤보 상자 및 드롭다운 목록
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> 콤보 상자 및 드롭다운 목록
  일반적인 상호 작용 동작의 경우 [드롭다운 목록 및 콤보 상자에 대 한 Windows 바탕 화면 지침](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx)을 따릅니다.
 
 #### <a name="visual-style"></a>비주얼 스타일
@@ -96,7 +96,7 @@ ms.locfileid: "85547448"
 
  **드롭다운 컨트롤의 필드 길이 수정**
 
-### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>확인란
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> 확인란
  일반적인 상호 작용 동작의 경우 [확인란에 대 한 Windows 바탕 화면 지침](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx)을 따릅니다.
 
 #### <a name="visual-style"></a>비주얼 스타일
@@ -115,7 +115,7 @@ ms.locfileid: "85547448"
 
      ![올바른 확인란 맞춤](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign") **올바른 확인란 맞춤: 확인란이 첫 번째 텍스트 줄의 기준선에 맞춰집니다** .
 
-### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>라디오 단추
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> 라디오 단추
  일반적인 상호 작용 동작의 경우 [라디오 단추에 대 한 Windows 바탕 화면 지침](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx)을 따릅니다.
 
 #### <a name="visual-style"></a>비주얼 스타일
@@ -124,7 +124,7 @@ ms.locfileid: "85547448"
 #### <a name="specialized-interactions"></a>특수 한 상호 작용
  그룹 프레임을 사용 하 여 라디오 옵션을 묶을 필요는 없습니다.
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>프레임 그룹화
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> 프레임 그룹화
  일반적인 상호 작용 동작의 경우 [그룹 프레임에 대 한 Windows 바탕 화면 지침](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx)을 따릅니다.
 
 #### <a name="visual-style"></a>비주얼 스타일
@@ -138,9 +138,9 @@ ms.locfileid: "85547448"
 
 - 그룹 프레임 컨테이너 대신 수평선 규칙을 사용 하는 것이 허용 되는 경우도 있습니다.
 
-## <a name="text-controls"></a><a name="BKMK_TextControls"></a>텍스트 컨트롤
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a> 텍스트 컨트롤
 
-### <a name="labels"></a>레이블입니다.
+### <a name="labels"></a>레이블
 
 #### <a name="active-label-state"></a>활성 레이블 상태
 
@@ -174,7 +174,7 @@ ms.locfileid: "85547448"
 
 - 필요한 경우에만 사용 지침 텍스트를 사용 합니다.
 
-##### <a name="formatting"></a>서식
+##### <a name="formatting"></a>서식 지정
  지침 텍스트는 환경 글꼴, 표준 (테마가 지정 되지 않은) 컨트롤 텍스트 여야 합니다. [Visual Studio의 글꼴 및 서식 지정을](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)참조 하세요.
 
  지침 텍스트 작성에 대 한 자세한 내용은 [UI 텍스트 및 용어](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)를 참조 하세요.
@@ -193,7 +193,7 @@ ms.locfileid: "85547448"
 
  **컨텍스트에 따라 동적 정보 텍스트가 변경 됩니다.**
 
-##### <a name="formatting"></a>서식
+##### <a name="formatting"></a>서식 지정
  읽기 전용 텍스트 필드를 표시 하는 방법에는 두 가지가 있습니다. 즉, UI 화면에 직접 (위 참조) 또는 그룹 프레임이 나 텍스트 상자와 같은 다른 컨트롤 내에 포함 되어 있습니다. 상태는 상황에 따라 올바릅니다. 읽기 전용 정보를 표시 하는 방법을 결정 하는 것은 기능 디자이너에 게 있습니다.
 
  텍스트는 읽기 전용 텍스트 상자 내에 있을 수 있습니다. 일반적으로 콘텐츠를 편집할 수는 없지만 콘텐츠를 선택 하 여 복사할 수 있음을 나타냅니다.
@@ -227,7 +227,7 @@ ms.locfileid: "85547448"
 
   **Visual Studio의 워터 마크 텍스트 예**
 
-## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>단추 및 하이퍼링크
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> 단추 및 하이퍼링크
 
 ### <a name="overview"></a>개요
  단추 및 링크 컨트롤 (하이퍼링크)은 사용, 단어, 크기 조정 및 간격에 대 한 [하이퍼링크의 기본 Windows 바탕 화면 지침](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) 을 따라야 합니다.
@@ -358,7 +358,7 @@ ms.locfileid: "85547448"
 
 - 호버에는 밑줄이 표시 되지 않습니다. 대신 링크가 활성화 된 사용자에 대 한 피드백은 약간의 색 변경 및 적절 한 링크 커서입니다.
 
-## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>트리 뷰
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a> 트리 뷰
 
 ### <a name="overview"></a>개요
  트리 뷰는 복합 목록을 부모-자식 그룹으로 구성 하는 방법을 제공 합니다. 사용자는 부모 그룹을 확장 하거나 축소 하 여 기본 자식 항목을 표시 하거나 숨길 수 있습니다. 트리 뷰 내의 각 항목을 선택 하 여 추가 작업을 제공할 수 있습니다.
@@ -371,7 +371,7 @@ ms.locfileid: "85547448"
 
 - [상호 작용](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>비주얼 스타일
+### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> 비주얼 스타일
 
 #### <a name="expanders"></a>확장 기가
  트리 뷰 컨트롤은 Windows 및 Visual Studio에서 사용 하는 확장기 디자인을 준수 해야 합니다. 각 노드는 확장 컨트롤을 사용 하 여 기본 항목을 표시 하거나 숨깁니다. 확장기 컨트롤을 사용 하면 Windows 및 Visual Studio 내에서 다른 트리 보기를 발견할 수 있는 사용자에 게 일관성이 제공 됩니다.
@@ -405,7 +405,7 @@ ms.locfileid: "85547448"
 
  **내용이 tree view 컨트롤의 제한을 초과 하 여 세로 및 가로 스크롤 막대가 모두 표시 됩니다.**
 
-### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a>확인할
+### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a> 확인할
 
 #### <a name="context-menus"></a>상황에 맞는 메뉴
  트리 뷰 노드는 상황에 맞는 메뉴의 하위 메뉴 옵션을 표시할 수 있습니다. 일반적으로이는 사용자가 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 항목을 사용 하 여 Windows 키보드에서 메뉴 키를 누를 때 발생 합니다. 노드가 포커스를 획득 하 고 선택 하는 것이 중요 합니다. 이렇게 하면 하위 메뉴가 속한 항목을 사용자가 식별할 수 있습니다.
@@ -414,7 +414,7 @@ ms.locfileid: "85547448"
 
  **상황에 맞는 메뉴를 생성 하는 항목은 선택 된 항목을 사용자에 게 알리기 위해 포커스를 얻습니다.**
 
-#### <a name="keyboard"></a>키보드
+#### <a name="keyboard"></a>Keyboard
  트리 뷰에서는 항목을 선택 하 고 키보드를 사용 하 여 노드를 확장/축소할 수 있는 기능을 제공 해야 합니다. 이렇게 하면 탐색이 접근성 요구 사항을 충족 합니다.
 
 ##### <a name="tree-view-control"></a>트리 뷰 컨트롤

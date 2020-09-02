@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670588"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio 잠금을 해제하는 방법
@@ -50,7 +50,7 @@ ms.locfileid: "72670588"
 ### <a name="updating-stale-licenses"></a>부실 라이선스 업데이트
  라이선스가 Visual Studio에서 부실하게 된다는 아래 메시지가 표시됩니다.
 
- ![Visual Studio 사용자 정보 대화 상자](../ide/media/vs2013-userinfo.png "|::ref1::|")
+ ![Visual Studio 사용자 정보 대화 상자](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
 
  이 메시지는 구독이 여전히 유효할 수 있지만 Visual Studio에서 구독을 최신으로 유지하는 데 사용하는 라이선스 토큰이 새로 고쳐지지 않았으므로 다음 이유 중 하나로 인해 부실해졌음을 나타냅니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "72670588"
 
 1. 구독을 갱신합니다. 사용 중인 라이선스에 대한 자세한 정보를 보려면 파일 > 계정 설정 대화 상자로 이동하고 대화 상자의 오른쪽에 있는 라이선스 정보를 살펴봅니다.
 
-2. 다른 계정에 연결된 다른 구독이 있는 경우 "계정 추가..." 링크를 클릭하여 파일 > 계정 설정 대화 상자의 왼쪽에 있는 모든 계정 목록에 해당 계정을 추가합니다.
+2. 다른 계정에 연결된 다른 구독이 있는 경우 "계정 추가..." 링크를 클릭하여 파일 > 계정 설정 대화 상자의 왼쪽에 있는 모든 계정 목록에 해당 계정을 링크를 사용하여 비용 없이 계정을 만들 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)

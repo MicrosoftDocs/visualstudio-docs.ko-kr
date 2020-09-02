@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 1c658d97ed678950869c9a011af04e04eeacf5b1
-ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86156821"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio의 오프라인 설치 만들기

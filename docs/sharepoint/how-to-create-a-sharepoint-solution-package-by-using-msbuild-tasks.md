@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017019"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>방법: MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 만들기
@@ -104,7 +105,7 @@ ms.locfileid: "86017019"
     msbuild /property:WarningLevel = 2
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 기능 만들기](../sharepoint/creating-sharepoint-features.md)
 - [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [방법: SharePoint 기능에 항목 추가 및 제거](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

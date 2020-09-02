@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54036b985c90be926eaa56f6ebe60d1f3903e0b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657319"
 ---
 # <a name="uml-model-element-types"></a>UML 모델 요소 형식
@@ -194,5 +194,5 @@ Classes.IElement
              : Classes.IRedefinableElement
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로필 정의](../modeling/define-a-profile-to-extend-uml.md) uml [모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md) uml [모델링 확장성에 대 한 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)

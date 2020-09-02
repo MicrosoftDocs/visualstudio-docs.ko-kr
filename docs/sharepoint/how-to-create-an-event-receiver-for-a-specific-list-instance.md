@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016965"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>방법: 특정 목록 인스턴스에 대 한 이벤트 수신기 만들기
@@ -84,6 +85,6 @@ ms.locfileid: "86016965"
 
      수신기가 사용자 지정 알림 목록 인스턴스인 **Testannouncements**이벤트에만 응답 하도록 구성 되어 있으므로 이벤트 수신기는 새 알림에서 트리거되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547240"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>방법: 암호로 보호 된 문서의 데이터 캐시
@@ -40,7 +40,7 @@ ms.locfileid: "85547240"
 
      문서를 저장 한 후에는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 메서드를 호출 하 여 문서에 보호를 다시 적용할 수 있는 기회를 제공 합니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
  다음 코드 예제에서는 암호로 보호 되는 Word 문서에 데이터를 캐시 하는 방법을 보여 줍니다. 코드는 메서드에서 보호를 제거 하기 전에 <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> 현재 <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> 값을 저장 하므로 동일한 형식의 보호가 메서드에서 다시 적용 될 수 있습니다 <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> .
 
  [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
@@ -64,7 +64,7 @@ ms.locfileid: "85547240"
 
      통합 문서를 저장 한 후에는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 메서드를 호출 하 여 통합 문서에 대 한 보호를 다시 적용할 수 있는 기회를 제공 합니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
  다음 코드 예제에서는 암호로 보호 되는 Excel 통합 문서에서 데이터를 캐시 하는 방법을 보여 줍니다. 코드는 메서드에서 보호를 제거 하기 전에 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> 현재 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> 및 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> 값을 저장 하므로 메서드에서 동일한 형식의 보호를 다시 적용할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> .
 
  [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
@@ -73,7 +73,7 @@ ms.locfileid: "85547240"
 ### <a name="compile-the-code"></a>코드 컴파일
  프로젝트의 클래스에이 코드를 추가 `ThisWorkbook` 합니다. 이 코드에서는 암호가 이라는 필드에 저장 되어 있다고 가정 `securelyStoredPassword` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [데이터 캐시](../vsto/caching-data.md)
 - [방법: 오프 라인 이나 서버에서 사용할 데이터 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [방법: Office 문서에서 프로그래밍 방식으로 데이터 소스 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

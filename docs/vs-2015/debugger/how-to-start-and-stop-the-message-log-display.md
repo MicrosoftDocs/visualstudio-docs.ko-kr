@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176549"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>방법: 메시지 로그 표시 시작 및 중지
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-경우는 [메시지 뷰](../debugger/messages-view.md) 창이 활성 상태일를 **로깅 시작** 또는 **로깅 중지** Spy + +에 선택 표시 **메시지** 메뉴 및 해당 **로깅 시작** 하거나 **로깅 중지** 도구 모음 단추가 활성화 됩니다.  
+[메시지 뷰](../debugger/messages-view.md) 창이 활성 상태이면 Spy++ **메시지** 메뉴에 **로깅 시작** 또는 **로깅 중지** 옵션이 나타나고 해당하는 **로깅 시작** 또는 **로깅 중지** 도구 모음 단추가 활성화됩니다.  
   
-### <a name="to-start-the-message-log-display"></a>메시지 로그 표시 시작  
+### <a name="to-start-the-message-log-display"></a>메시지 로그 표시를 시작하려면  
   
-1. **메시지** 메뉴 선택 **로깅 시작**합니다.  
+1. **메시지** 메뉴에서 **로깅 시작**을 선택합니다.  
   
-### <a name="to-stop-the-message-log-display"></a>메시지 로그 표시를 중지 하려면  
+### <a name="to-stop-the-message-log-display"></a>메시지 로그 표시를 중지하려면  
   
-1. **메시지** 메뉴 선택 **로깅 중지**합니다.
+1. **메시지** 메뉴에서 **로깅 중지**를 선택합니다.

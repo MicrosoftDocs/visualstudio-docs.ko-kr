@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192885"
 ---
 # <a name="incremental-builds"></a>증분 빌드
@@ -81,5 +81,5 @@ ms.locfileid: "68192885"
   
  대상이 실행되는 경우에만 속성 CompileRan을 만들고 `true` 값을 제공합니다. 대상을 건너뛰는 경우 CompileRan은 생성되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [대상](../msbuild/msbuild-targets.md)

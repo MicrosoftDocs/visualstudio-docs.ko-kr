@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176628"
 ---
 # <a name="callercallee-view"></a>호출자/호출 수신자 뷰
@@ -38,11 +38,11 @@ ms.locfileid: "68176628"
   
  뷰의 다른 두 부분에 나열되는 함수 중 하나를 두 번 클릭하여 다른 함수를 선택하면 보고서 뷰의 가운데 부분에 현재 함수가 표시되도록 할 수 있습니다. 보고서 뷰는 자동으로 업데이트되어 변경 내용을 반영합니다.  
   
- 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)합니다.  
+ 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.  
   
 ## <a name="see-also"></a>관련 항목  
- [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
- [호출자/호출 수신자 뷰 - 계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)   
- [호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [호출자/호출 수신자 뷰 - 경합 데이터](../profiling/caller-callee-view-contention-data.md)
+ [호출자/호출 수신자 뷰-샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
+ [호출자/호출 수신자 뷰-계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)   
+ [호출자/호출 수신자 뷰-.NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [호출자/호출 수신자 뷰-.NET 메모리 샘플링 데이터](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [호출자/호출 수신자 뷰-경합 데이터](../profiling/caller-callee-view-contention-data.md)

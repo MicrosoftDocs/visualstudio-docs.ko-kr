@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670681"
 ---
 # <a name="how-to-specify-build-events-c"></a>방법: 빌드 이벤트 지정(C#)
@@ -49,12 +49,12 @@ ms.locfileid: "72670681"
 5. **빌드 후 이벤트 명령줄** 상자에서 빌드 이벤트의 구문을 지정합니다.
 
     > [!NOTE]
-    > .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
+    > .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
 
 6. **빌드 후 이벤트 실행** 상자에서 빌드 후 이벤트를 실행할 조건을 지정합니다.
 
     > [!NOTE]
-    > 긴 구문을 추가하거나 [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)에서 임의의 빌드 매크로를 선택하려면, 줄임표 단추( **...** )를 클릭하여 편집 상자를 표시합니다.
+    > 긴 구문을 추가 하거나 빌드 [전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)에서 빌드 매크로를 선택 하려면 줄임표 단추 (**...**)를 클릭 하 여 편집 상자를 표시 합니다.
 
      빌드 이벤트 구문에는 명령 프롬프트 또는 .bat 파일에서 유효한 모든 명령이 포함될 수 있습니다. 일괄 처리 파일의 이름 앞에 `call`을 사용하여 모든 후속 명령이 실행되도록 합니다.
 
@@ -183,5 +183,5 @@ ms.locfileid: "72670681"
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>관련 항목:
- [빌드 이벤트 페이지, 프로젝트 디자이너 (C#)](../ide/reference/build-events-page-project-designer-csharp.md) [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [방법: 빌드 이벤트 지정 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [컴파일 및](../ide/compiling-and-building-in-visual-studio.md) 빌드
+## <a name="see-also"></a>관련 항목
+ [빌드 이벤트 페이지, 프로젝트 디자이너 (c #)](../ide/reference/build-events-page-project-designer-csharp.md) [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [방법: 빌드 이벤트 지정 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [컴파일 및](../ide/compiling-and-building-in-visual-studio.md) 빌드
