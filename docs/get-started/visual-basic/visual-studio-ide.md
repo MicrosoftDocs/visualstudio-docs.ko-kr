@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306934"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312004"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE 시작 | Visual Basic
 
-Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio에서는 대부분의 IDE가 제공하는 표준 편집기 및 디버거를 능가하여 컴파일러, 코드 완성 도구, 그래픽 디자이너 및 소프트웨어 개발 프로세스를 간편하게 하는 많은 기능을 포함합니다.
+Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
 ::: moniker range="vs-2017"
 
@@ -34,21 +34,21 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드�
 
 ::: moniker-end
 
-이 이미지는 프로젝트와 사용할 만한 몇 가지 주요 도구 창이 열려 있는 Visual Studio를 보여줍니다.
+이 이미지는 열려 있는 프로젝트와 사용할 가능성이 있는 몇 가지 주요 도구 창과 함께 Visual Studio를 보여줍니다.
 
-- [솔루션 탐색기](../../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
+- ‘솔루션 탐색기’(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
 
-- [편집기 창](../../ide/writing-code-in-the-code-and-text-editor.md)(가운데) - 대부분 작업을 수행하는 곳으로 파일 콘텐츠가 표시됩니다. 코드를 편집하거나 단추 및 텍스트 상자를 사용하여 창과 같은 사용자 인터페이스를 디자인할 수 있습니다.
+- ‘편집기 창’(가운데) - 대부분 작업을 수행하는 곳으로 파일 콘텐츠가 표시됩니다. 코드를 편집하거나 단추 및 텍스트 상자를 사용하여 창과 같은 사용자 인터페이스를 디자인할 수 있습니다.
 
-- [출력 창](../../ide/reference/output-window.md)(가운데 아래) - 디버깅 및 오류 메시지, 컴파일러 경고, 게시 상태 메시지 등의 Visual Studio 알림이 표시됩니다. 각 메시지 원본에 해당하는 탭이 있습니다.
+- [출력 창](../../ide/reference/output-window.md)(가운데 아래) - 디버깅 및 오류 메시지, 컴파일러 경고, 게시 상태 메시지 등의 Visual Studio 알림이 표시됩니다. 각 메시지 소스에는 고유한 탭이 있습니다.
 
 - [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
-## <a name="editions"></a>에디션
+## <a name="editions"></a>버전
 
 Visual Studio는 Windows 및 Mac에 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2017에 중점을 둡니다.
 
-Visual Studio 2017에는 Community, Professional 및 Enterprise의 세 가지 버전이 있습니다. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+세 가지 Visual Studio 2017 버전은 다음과 같습니다. Community, Professional 및 Enterprise. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ## <a name="popular-productivity-features"></a>주요 생산성 향상 기능
 
@@ -290,7 +290,7 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
    > [!NOTE]
    > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
-   Visual Studio가 프로젝트를 만듭니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
+   Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
@@ -357,7 +357,7 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
 
    ![Visual Studio에서 새 프로젝트 구성](media/vs-2019/configure-new-project.png)
 
-   Visual Studio가 프로젝트를 만듭니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
+   Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
@@ -509,7 +509,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 추가 기능](../../ide/advanced-feature-overview.md)을 검색하세요.
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)을 방문하세요.

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Microsoft Docs
+title: 'IDebugProperty2:: SetValueAsString | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d50057570b5b067447321f975d4d33da8aa3de43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193432"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-지정된 된 문자열에서 속성의 값을 설정 합니다.  
+지정 된 문자열에서 속성 값을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,20 +44,20 @@ int SetValueAsString ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pszValue`  
- [in] 설정할 값이 들어 있는 string입니다.  
+ 진행 설정할 값을 포함 하는 문자열입니다.  
   
  `nRadix`  
- [in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다. 이 0을 기 수를 자동으로 확인 하도록 수 있습니다.  
+ 진행 숫자 정보를 해석 하는 데 사용할 기 수입니다. 이는 기 수를 자동으로 결정 하는 0이 될 수 있습니다.  
   
  `dwTimeout`  
- [in] 이 메서드에서 반환 되기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
+ 진행 이 메서드에서 반환 될 때까지 대기할 최대 시간 (밀리초)을 지정 합니다. `INFINITE`무기한 대기 하려면를 사용 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서 가능한 다른 값을 보여 줍니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음 표에서는 다른 가능한 값을 보여 줍니다.  
   
-|값|Description|  
+|값|설명|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|문자열 속성 값으로 변환할 수 없습니다 또는 속성 값을 설정할 수 없습니다.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|문자열을 속성 값으로 변환할 수 없거나 속성 값을 설정할 수 없는 경우|  
 |`E_SETVALUE_VALUE_IS_READONLY`|속성이 읽기 전용입니다.|  
   
 ## <a name="see-also"></a>관련 항목  

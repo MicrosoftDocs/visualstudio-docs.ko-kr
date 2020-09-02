@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702375"
 ---
 # <a name="client-side-script-debugging"></a>클라이언트 쪽 스크립트 디버깅
@@ -38,7 +38,7 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
 ## <a name="manually-or-automatically-attaching-to-script"></a>스크립트에 자동 또는 수동으로 연결  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 스크립트를 디버깅하려면 디버거를 디버깅할 스크립트에 연결해야 합니다. 이 작업은 수동 또는 자동으로 수행할 수 있습니다.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거 인터페이스를 통해 연결할 실행 스크립트 프로세스를 선택하면 디버거를 수동으로 연결할 수 있습니다. 자세한 내용은 [방법: 스크립트에 연결](../debugger/how-to-attach-to-script.md)을 참조하세요.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거 인터페이스를 통해 연결할 실행 스크립트 프로세스를 선택하면 디버거를 수동으로 연결할 수 있습니다. 자세한 내용은 [How to: Attach to Script](../debugger/how-to-attach-to-script.md)을 참조하세요.  
   
  다음 중 한 가지가 발생하면 디버거가 스크립트에 자동으로 연결됩니다.  
   
@@ -62,9 +62,9 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)에서는 원하는 모든 스크립트 문서를 열 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [스크립트 디버깅의 제한 사항](../debugger/limitations-on-script-debugging.md)   
+## <a name="see-also"></a>관련 항목  
+ [ASP.NET 및 AJAX 응용 프로그램 디버깅](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [스크립트 디버깅에 대 한 제한 사항](../debugger/limitations-on-script-debugging.md)   
  [변수 창](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [직접 실행 창](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Ajax 응용 프로그램 디버깅 및 추적 개요](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7009e5772b4f4c6977d58d2c52d733999a0d9369
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670890"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>방법: 그래프 뷰를 사용하여 스키마 집합의 개요 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목에서는 [그래프 뷰](../xml-tools/graph-view.md) 를 사용 하 여 스키마 집합의 노드 및 노드 간의 관계를 개략적으로 확인 하는 방법에 대해 설명 합니다.
+이 항목에서는 [그래프 뷰](../xml-tools/graph-view.md)를 사용하여 스키마 집합의 노드 및 이러한 노드 간 관계를 간략하게 설명합니다.
 
 ### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>콘텐츠 모델 뷰에서 새 XSD 파일을 만들고 루트 요소를 표시하려면
 

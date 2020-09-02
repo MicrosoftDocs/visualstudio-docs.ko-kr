@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합 시각화 도우미 대화 상자 | Microsoft Docs
+title: 데이터 세트 시각화 도우미 대화 상자 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829363dcbf5e8cc4a9151f369d6b0191fc282d44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697849"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>데이터 세트 시각화 도우미 대화 상자
@@ -40,10 +40,10 @@ ms.locfileid: "65697849"
  이 시각화 도우미에서 개체를 변경할 수 있습니다. 변경 내용은 행을 커밋하는 즉시 저장됩니다.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
- 표  
+ 테이블  
  데이터 세트 내에서 시각화할 테이블을 선택하려면 이 드롭다운 목록 상자를 사용합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [사용자 지정 시각화 도우미 만들기](../debugger/create-custom-visualizers-of-data.md)   
  [변수 창](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   

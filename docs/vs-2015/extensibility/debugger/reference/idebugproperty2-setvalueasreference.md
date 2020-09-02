@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Microsoft Docs
+title: 'IDebugProperty2:: SetValueAsReference | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a94e3767ee05e39e847af27dc5999fa8bbbe2d44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193446"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-지정한 참조의 값이 속성의 값을 설정 합니다.  
+이 속성의 값을 지정 된 참조의 값으로 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,26 +46,26 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>매개 변수  
  `rgpArgs`  
- [in] 관리 되는 코드 속성 setter에 전달할 인수 배열입니다. 속성 setter 인수를 사용 하지 않는 경우 또는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체는 이러한 속성 setter를 나타내지 않습니다 `rgpArgs` null 값 이어야 합니다. 이 매개 변수는 일반적으로 null 값입니다.  
+ 진행 관리 코드 속성 setter에 전달할 인수 배열입니다. 속성 setter가 인수를 사용 하지 않거나이 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체가 이러한 속성 setter를 참조 하지 않는 경우는 `rgpArgs` null 값 이어야 합니다. 이 매개 변수는 일반적으로 null 값입니다.  
   
  `dwArgCount`  
- [in] 인수 개수는 `rgpArgs` 배열입니다.  
+ 진행 배열의 인수 개수 `rgpArgs` 입니다.  
   
  `pValue`  
- [in] 형식의 참조는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체를 사용 하 여이 속성을 설정할 값입니다.  
+ 진행 이 속성을 설정 하는 데 사용할 값에 대 한 참조 ( [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체 형식)입니다.  
   
  `dwTimeout`  
- [in] 기간 밀리초에서 값을 설정 하는 데 있습니다. 일반적인 값은 `INFINITE`합니다. 이 가능한 모든 계산을 사용할 수 있는 시간에 영향을 줍니다.  
+ 진행 값을 설정 하는 데 소요 되는 시간 (밀리초)입니다. 일반적인 값은 `INFINITE` 입니다. 이는 가능한 평가에서 수행할 수 있는 시간에 영향을 줍니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 반환 코드, 일반적으로 다음 중 하나:  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 일반적으로 다음 중 하나를 반환 합니다.  
   
-|Error|Description|  
+|오류|설명|  
 |-----------|-----------------|  
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|참조에서 값을 설정 하는 것은 지원 되지 않습니다.|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|이 속성 메서드를 참조 하는 대로 값을 설정할 수 없습니다.|  
-|`E_SETVALUE_VALUE_IS_READONLY`|값을 읽기 전용 이며 설정할 수 없습니다.|  
-|`E_NOTIMPL`|메서드가 구현 되지 않았습니다.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|이 속성은 메서드를 참조 하므로 값을 설정할 수 없습니다.|  
+|`E_SETVALUE_VALUE_IS_READONLY`|값은 읽기 전용 이며 설정할 수 없습니다.|  
+|`E_NOTIMPL`|메서드가 구현되지 않았습니다.|  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

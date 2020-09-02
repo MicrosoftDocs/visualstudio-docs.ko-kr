@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657074"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>관리 코드용 Microsoft 단위 테스트 프레임워크를 사용하여 .NET Framework용 단위 테스트 작성
@@ -28,7 +28,7 @@ ms.locfileid: "72657074"
 
  [방법: 데이터 기반 단위 테스트 만들기](../test/how-to-create-a-data-driven-unit-test.md)
 
- [제네릭 메서드의 단위 테스트](../test/unit-tests-for-generic-methods.md)
+ [제네릭 메서드에 대 한 단위 테스트](../test/unit-tests-for-generic-methods.md)
 
  [방법: 이전 버전의 .NET을 대상으로 사용](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)
 

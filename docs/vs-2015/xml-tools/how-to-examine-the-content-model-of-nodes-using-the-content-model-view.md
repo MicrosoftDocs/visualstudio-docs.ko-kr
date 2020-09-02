@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670851"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>방법: 콘텐츠 모델 뷰를 사용하여 노드의 콘텐츠 모델 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목에서는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)를 사용 하 여 노드를 탐색 하는 방법에 대해 설명 합니다.
+이 항목에서는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)를 사용하여 노드를 탐색하는 방법에 대해 설명합니다.
 
 ### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>콘텐츠 모델 뷰에서 새 XSD 파일을 만들고 루트 요소를 표시하려면
 
@@ -29,9 +29,9 @@ ms.locfileid: "72670851"
 
 3. [샘플 Xml 스키마: 구매 주문 스키마](../xml-tools/sample-xsd-file-purchase-order-schema.md) 에서 xml 스키마 샘플 코드를 복사 하 고 붙여넣어 새 XSD 파일에 추가 된 코드를 기본적으로 바꿉니다.
 
-4. XML 편집기에서 `purchaseOrder` 요소를 마우스 오른쪽 단추로 클릭 하 고 **Xml 탐색기에 표시**를 선택 하 여 스키마 탐색기에서 `purchaseOrder` 요소를 선택 합니다.
+4. `purchaseOrder`Xml 편집기에서 요소를 마우스 오른쪽 단추로 클릭 하 `purchaseOrder` 고 **Xml 탐색기에 표시**를 선택 하 여 스키마 탐색기에서 요소를 선택 합니다.
 
-5. XML 탐색기에서 `purchaseOrder`을 마우스 오른쪽 단추로 클릭 하 고 **콘텐츠 모델 뷰에서 표시**를 선택 합니다.
+5. XML 탐색기에서 `purchaseOrder`를 마우스 오른쪽 단추로 클릭하고 **콘텐츠 모델 뷰로 표시**를 선택합니다.
 
      콘텐츠 모델 뷰는 해당 디자인 화면에 `purchaseOrder` 요소를 표시합니다.
 
@@ -43,4 +43,4 @@ ms.locfileid: "72670851"
 
 8. XSD 도구 모음에서 **설명서 표시** 단추를 클릭 하 여 설명서을 설정/해제 합니다. 또한 디자인 화면을 마우스 오른쪽 단추로 클릭하여 설명서를 표시하거나 숨길 수 있습니다.
 
-9. @No__t_0 노드를 Rick 클릭 하 고 **샘플 Xml 생성** 을 선택 하 여 xml 인스턴스 문서를 확인 합니다.
+9. Rick 노드를 클릭 `purchaseOrder` 하 고 **샘플 xml 생성** 을 선택 하 여 xml 인스턴스 문서를 확인 합니다.

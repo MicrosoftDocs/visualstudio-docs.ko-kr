@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702547"
 ---
 # <a name="capturing-graphics-information"></a>그래픽 정보 캡처
@@ -30,26 +30,26 @@ Visual Studio Graphics Analyzer를 사용하여 렌더링 문제 및 성능 문�
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>그래픽 진단 모드로 응용 프로그램을 실행하려면  
   
-- 메뉴 모음에서 **디버그**, **그래픽**, **진단 시작**을 선택합니다. (키보드: Alt + f5)  
+- 메뉴 모음에서 **디버그**, **그래픽**, **진단 시작**을 선택합니다. (키보드: Alt+F5 누름).  
   
-- 에 **그래픽** 도구 모음을 선택 합니다 **진단 시작** 단추.  
+- **그래픽** 도구 모음에서 **진단 시작** 단추를 선택 합니다.  
   
-  그래픽 진단 모드로 애플리케이션을 실행하는 동안에는 특정 종류의 그래픽 정보가 항상 캡처됩니다. 여기에는 디바이스 설정, 스왑 체인의 생성, 그래픽 개체 및 리소스의 생성, 둘 이상의 프레임에 영향을 주는 기타 중요 이벤트가 포함됩니다. 이와 동시에, 특정 프레임에 대한 세부 정보를 캡처할 수 있습니다. 여기에는 그리기 호출, 계산 셰이더 디스패치, Direct3D 개체 및 지원 리소스가 포함됩니다.  
+  그래픽 진단 모드로 애플리케이션을 실행하는 동안에는 특정 종류의 그래픽 정보가 항상 캡처됩니다. 여기에는 디바이스 설정, 스왑 체인의 생성, 그래픽 개체 및 리소스의 생성, 둘 이상의 프레임에 영향을 주는 기타 중요 이벤트가 포함됩니다. 이와 동시에, 특정 프레임에 대한 세부 정보를 캡처할 수 있습니다. 여기에는 그리기 호출, 컴퓨팅 셰이더 디스패치, Direct3D 개체 및 지원 리소스가 포함됩니다.  
   
 #### <a name="to-capture-a-frame"></a>프레임을 캡처하려면  
   
-- Visual Studio에서에 **그래픽** 도구 모음을 선택 합니다 **프레임 캡처** 단추![그래픽 캡처 단추 아이콘](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- Visual Studio의 **그래픽** 도구 모음에서 **프레임 캡처** 단추![그래픽 캡처 단추 아이콘](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")을 선택 합니다.  
   
 - 키보드에서 Print Screen 키를 누릅니다.  
   
   > [!NOTE]
   > **그래픽 진단** 모드로 애플리케이션이 실행되는 동안에는 Print Screen 키를 그래픽 정보 프레임의 캡처에만 사용할 수 있으며, 일반 기능이 작동하지 않습니다. 이러한 상태는 그래픽 정보 캡처를 중지할 때까지 유지되며, 일반적으로 디버깅 중지 또는 애플리케이션 정상 종료 시까지 유지됩니다. 이는 다른 애플리케이션에 포커스가 있더라도 마찬가지입니다.  
   
-- Visual Studio 캡처 인터페이스를 선택 합니다 **프레임 캡처** 위에 있는 단추를 **진단 세션** 타임 라인 큰 선택 하거나 **프레임 캡처** 단추 아래에 **초당 프레임** 스윔 레인 및 모든 이전에 캡처한 프레임 오른쪽에 있습니다. 아래 그림에서는 이 두 단추가 모두 강조 표시되어 있습니다.  
+- Visual Studio 캡처 인터페이스에서 **진단 세션** 타임 라인 위에 있는 **프레임 캡처** 단추를 선택 하거나, **초당 프레임** 수 스윔에서 이전에 캡처한 프레임의 오른쪽에 있는 large **capture 프레임** 단추를 선택 합니다. 아래 그림에서는 이 두 단추가 모두 강조 표시되어 있습니다.  
   
-   ![GPU 사용량 도구를 사용 하 여 프레임을 캡처하십시오. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![GPU 사용 도구를 사용하여 프레임을 캡처합니다.](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-   캡처한 프레임을 검사할 준비가 시작 합니다 **Visual Studio Graphics Analyzer** 수행 하 여는 **프레임...** 이미지 축소판 그림을 초과 하거나 축소판을 두 번 클릭 하 여 연결 합니다.  
+   캡처한 프레임을 검사할 준비가 되 면 **프레임** 을 따라 **Visual Studio Graphics Analyzer** 를 시작 합니다. 이미지 미리 보기 위의 링크를 클릭 하거나 축소판 그림을 두 번 클릭 하 여 연결 합니다.  
   
   전체 프레임만 캡처할 수 있으므로, 캡처를 시작하면 기록된 다음 프레임부터 실제 그래픽 정보입니다. 기록은 캡처를 시작할 때의 프레임이 제시된 직후부터 시작되고 캡처된 프레임이 제시될 때 종료됩니다. 그래픽 진단 모드로 응용 프로그램을 실행하는 동안 원하는 만큼의 프레임을 캡처할 수 있습니다. 아무 프레임도 캡처하지 않으면 그래픽 로그는 삭제됩니다.  
   
@@ -79,12 +79,12 @@ Visual Studio Graphics Analyzer를 사용하여 렌더링 문제 및 성능 문�
 ## <a name="capturing-graphics-information-remotely"></a>원격으로 그래픽 정보 캡처  
  그래픽 정보는 로컬 컴퓨터, 원격 컴퓨터 또는 원격 디바이스에서 실행되는 애플리케이션에서 캡처할 수 있습니다. 원격 캡처는 [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] 컴퓨터 및 [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)] 디바이스에서 지원됩니다. 원격으로 실행되는 응용 프로그램에서 그래픽 정보를 캡처하려면 원격 디버깅을 위해 프로젝트를 구성하고 앞에서 설명한 대로 그래픽 진단 모드로 응용 프로그램을 실행합니다. 원격 컴퓨터에서 실행되는 응용 프로그램 및 캡처한 그래픽 정보를 개발 시스템에 기록합니다.  
   
- 원격 디버깅을 위한 프로젝트 구성 방법은 개발 중인 응용 프로그램 종류와 사용 중인 프로그래밍 언어의 종류에 따라 달라집니다. Windows 스토어 앱 원격 디버깅을 구성 하는 방법에 대 한 정보를 참조 하세요 [Windows 스토어 앱 실행을 원격 컴퓨터에서](../debugger/run-windows-store-apps-on-a-remote-machine.md)합니다. Windows 데스크톱 앱에 대 한 원격 디버깅을 구성 하는 방법에 대 한 자세한 내용은 [설정 원격 디버깅 Visual Studio 프로젝트에 대 한](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)합니다.  
+ 원격 디버깅을 위한 프로젝트 구성 방법은 개발 중인 응용 프로그램 종류와 사용 중인 프로그래밍 언어의 종류에 따라 달라집니다. Windows 스토어 앱에 대 한 원격 디버깅을 구성 하는 방법에 대 한 자세한 내용은 [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조 하세요. Windows 데스크톱 응용 프로그램에 대 한 원격 디버깅을 구성 하는 방법에 대 한 자세한 내용은 [Visual Studio 프로젝트에 대 한 원격 디버깅 설정](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)을 참조 하세요.  
   
  이후에는 정보가 캡처된 위치에 관계없이 원격 컴퓨터 또는 디바이스를 사용하여 그래픽 정보를 재생할 수 있습니다. 자세한 내용은 [방법: 그래픽 진단 재생 머신 변경](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)을 참조하세요.  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>명령줄에서 그래픽 정보 캡처  
  명령줄 도구를 사용하여 앱에서 그래픽 정보를 캡처할 수 있습니다. DXCap.exe라는 이 도구를 통해 Visual Studio 또는 프로그래밍 방식 캡처 기능을 사용하지 않고도 그래픽 정보를 빠르게 캡처하고 재생할 수 있습니다. 특히 자동화 수행 시 또는 테스트 환경에서 DXCap.exe를 사용할 수 있습니다. DXCap.exe에 대한 자세한 내용은 [명령줄 캡처 도구](../debugger/command-line-capture-tool.md) 참조  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: 그래픽 정보 캡처](../debugger/walkthrough-capturing-graphics-information.md)

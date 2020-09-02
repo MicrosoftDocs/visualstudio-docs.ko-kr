@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID | Microsoft Docs
+title: IDebugProperty3::D estroyObjectID | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a610cd5c947d77048e86b31c92298f6cc18607d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193427"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-호출자에 게 고유 하 게 다른 모든 속성에서에서이 속성을 식별 하는 데 더 이상 관심이 있는지를 나타내는이 속성과 연결 된 고유 ID를 제거 합니다.  
+이 속성에 연결 된 고유 ID를 소멸 시킵니다 .이는 호출자가이 속성을 다른 모든 속성에서 고유 하 게 식별 하는 데 더 이상 관심이 없음을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,14 +36,14 @@ HRESULT DestroyObjectID(
 int DestroyObjectID();  
 ```  
   
-## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+## <a name="return-value"></a>Return Value  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 디버그 엔진 (이 이미 추적 하므로 해당 내부적으로 고유 하 게) 속성에 대 한 고유 Id를 지 원하는 데 필요 하지 않은 경우에 반환할 수 있습니다 다음 `E_NOTIMPL` 이 메서드에 대 한 합니다.  
+ 디버그 엔진이 속성의 고유 Id를 지원할 필요가 없는 경우 (이미 고유 하 게 내부적으로 추적 하기 때문에)이 메서드에 대해를 반환 하기만 하면 됩니다 `E_NOTIMPL` .  
   
- 고유 Id에 대 한 호출을 사용 하 여 만들어진 합니다 [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) 메서드 호출자에 게 다른 모든 속성과 함께이 속성은 고유 하 게 식별 하 고 있는지 확인 하려는 경우.  
+ 호출자가이 속성이 다른 모든 속성에서 고유 하 게 식별 되는지 확인 하려는 경우 [Createobjectid](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) 메서드를 호출 하 여 고유한 id를 만듭니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

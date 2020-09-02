@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ef7ef7f4ec930b8aa338a8be33c4009b3009b20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193229"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 작업
@@ -34,7 +34,7 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `UnregisterAssembly` 작업의 매개 변수에 대해 설명합니다.  
   
-|매개 변수|설명|  
+|매개 변수|Description|  
 |---------------|-----------------|  
 |`Assemblies`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 등록을 취소할 어셈블리를 지정합니다.|  
 |`AssemblyListFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> `RegisterAssembly` 작업 및 `UnregisterAssembly` 작업 간의 상태 정보를 포함합니다. 이를 통해 작업이 `RegisterAssembly` 작업에서 등록되지 못한 어셈블리의 등록을 취소하려고 하는 시도를 방지합니다.<br /><br /> 이 매개 변수를 지정하는 경우 `Assemblies` 및 `TypeLibFiles` 매개 변수는 무시됩니다.|  
@@ -45,7 +45,7 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
   
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:System.MarshalByRefObject> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 클래스의 매개 변수도 상속합니다. `MarshalByRefObject` 클래스는 <xref:Microsoft.Build.Utilities.Task> 클래스와 동일한 기능을 제공하지만 해당 애플리케이션 도메인에서 인스턴스화될 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `UnregisterAssembly` 작업을 사용하여 `OutputPath` 및 `FileName` 속성으로 지정된 경로에서 어셈블리(있는 경우)의 등록을 취소합니다.  
   
 ```  
@@ -63,7 +63,7 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [RegisterAssembly 작업](../msbuild/registerassembly-task.md)   
- [작업](../msbuild/msbuild-tasks.md)   
+ [임무](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)

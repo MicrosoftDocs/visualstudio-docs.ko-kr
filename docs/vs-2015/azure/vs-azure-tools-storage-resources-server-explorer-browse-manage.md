@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
 ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849866"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
@@ -24,15 +24,15 @@ ms.locfileid: "75849866"
 
 ## <a name="overview"></a>개요
 
-Microsoft Visual Studio용 Azure 도구를 설치한 경우 Azure 스토리지 계정에서 Blob, 큐 및 테이블 데이터를 볼 수 있습니다. 서버 탐색기의 Azure **스토리지** 노드는 로컬 스토리지 에뮬레이터 계정 및 다른 Azure Storage 계정에 있는 데이터를 보여 줍니다.
+Microsoft Visual Studio용 Azure 도구를 설치한 경우 Azure 스토리지 계정에서 Blob, 큐 및 테이블 데이터를 볼 수 있습니다. 서버 탐색기의 Azure **storage** 노드는 로컬 저장소 에뮬레이터 계정 및 다른 azure storage 계정에 있는 데이터를 표시 합니다.
 
-Visual Studio에서 서버 탐색기를 보려면 메뉴 모음에서 **보기** > **서버 탐색기**를 선택합니다. **스토리지** 노드는 연결된 각 Azure 구독 또는 인증서 아래에 존재하는 모든 스토리지 계정을 보여줍니다. 스토리지 계정이 나타나지 않으면 [이 문서 뒷부분](#add-storage-accounts-by-using-server-explorer)의 지침을 따라 추가할 수 있습니다.
+Visual Studio에서 서버 탐색기 보려면 메뉴 모음에서 **보기**  >  **서버 탐색기**를 선택 합니다. **스토리지** 노드는 연결된 각 Azure 구독 또는 인증서 아래에 존재하는 모든 스토리지 계정을 보여줍니다. 스토리지 계정이 나타나지 않으면 [이 문서 뒷부분](#add-storage-accounts-by-using-server-explorer)의 지침을 따라 추가할 수 있습니다.
 
-Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확인 및 관리할 수 있습니다. 자세한 내용은 [클라우드 탐색기를 사용하여 Azure 리소스 관리](vs-azure-tools-resources-managing-with-cloud-explorer.md)를 참조하세요.
+Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확인 및 관리할 수 있습니다. 자세한 내용은 [클라우드 탐색기를 사용 하 여 Azure 리소스 관리](vs-azure-tools-resources-managing-with-cloud-explorer.md)를 참조 하세요.
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Visual Studio에서 스토리지 리소스를 확인 및 관리합니다.
 
-서버 탐색기는 저장소 에뮬레이터 계정의 Blob, 큐 및 테이블 목록을 자동으로 표시합니다. 스토리지 에뮬레이터 계정은 **스토리지** 노드의 서버 탐색기에 **개발** 노드로 나열됩니다.
+서버 탐색기는 스토리지 에뮬레이터 계정에 있는 Blob, 큐, 테이블 목록을 자동으로 보여줍니다. 저장소 에뮬레이터 계정은 **저장소** 노드 아래 서버 탐색기에 **개발** 노드로 나열 됩니다.
 
 스토리지 에뮬레이터 계정의 리소스를 보려면 **개발** 노드를 확장하세요. **개발** 노드를 확장했을 때 스토리지 에뮬레이터가 시작하지 않으면 자동으로 시작될 것입니다. 이 프로세스는 몇 초 정도 걸릴 수 있습니다. 스토리지 에뮬레이터가 시작하는 동안 Visual Studio의 다른 영역에서 작업을 계속할 수 있습니다.
 
@@ -40,7 +40,7 @@ Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확�
 
 ## <a name="work-with-blob-resources"></a>Blob 리소스로 작업
 
-**Blob** 노드는 선택된 스토리지 계정의 컨테이너 목록을 표시합니다. Blob 컨테이너는 Blob 파일을 포함하고 있으며 이러한 Blob을 폴더와 하위 폴더로 구성할 수 있습니다. 자세한 내용은 [.NET에서 Blob Storage를 사용하는 방법](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)(영문)을 참조하세요.
+**Blob** 노드에는 선택한 저장소 계정에 대한 컨테이너 목록이 표시됩니다. Blob 컨테이너는 Blob 파일을 포함하고 있으며 이러한 Blob을 폴더와 하위 폴더로 구성할 수 있습니다. 자세한 내용은 [.NET에서 Blob Storage를 사용하는 방법](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)(영문)을 참조하세요.
 
 ### <a name="to-create-a-blob-container"></a>Blob 컨테이너를 생성하려면
 
@@ -78,11 +78,11 @@ Blob 컨테이너 보기의 오른쪽 위 모서리에 있는 단추를 사용�
 
 1. **새 파일 업로드** 대화 상자에서 **찾아보기** 단추를 선택하여 업로드하려는 파일을 지정한 다음 **폴더(선택 사항)** 상자에 폴더 이름을 입력합니다.
 
-   ![Blob 폴더에 파일 업로드 중](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![Blob 폴더에 파일 업로드하기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
    동일한 절차를 수행하여 컨테이너 폴더에 하위 폴더를 추가할 수 있습니다. 폴더 이름을 지정하지 않으면 파일은 Blob 컨테이너의 최상위 수준으로 업로드됩니다. 파일은 컨테이너의 지정된 폴더에 나타납니다.
 
-   ![Blob 컨테이너에 폴더 추가됨](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![Blob 컨테이너에 폴더 추가하기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
 1. 폴더를 두 번 클릭하거나 Enter 키를 눌러 폴더의 콘텐츠를 확인합니다. 컨테이너의 폴더에 있는 경우 **부모 디렉터리 열기**(화살표) 단추를 선택하여 컨테이너의 루트로 다시 이동할 수 있습니다.
 
@@ -96,7 +96,7 @@ Blob 컨테이너의 폴더는 가상 폴더이기 때문에 빈 폴더를 만�
 
 공통 접두사를 지정하여 표시되는 Blob를 필터링할 수 있습니다.
 
-예를 들어 필터 텍스트 상자에 접두사 **hello**를 입력한 다음 **실행**( **!** ) 단추를 선택하면 “hello”로 시작하는 Blob만 나타납니다.
+예를 들어 필터 텍스트 상자에 접두사 **hello**를 입력한 다음 **실행**(**!**) 단추를 선택하면 “hello”로 시작하는 Blob만 나타납니다.
 
 ![필터 텍스트 상자](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -142,11 +142,11 @@ Blob을 선택한 다음 **Blob 열기** 단추를 선택합니다.
 
 ## <a name="work-with-queue-resources"></a>큐 리소스로 작업
 
-스토리지 서비스 큐는 Azure Storage 계정에 호스트됩니다. 클라우드 서비스 역할이 메시지 전달 메커니즘에 의해 서로 및 다른 서비스와 통신할 수 있도록 사용할 수 있습니다. 클라우드 서비스 및 외부 클라이언트에 대한 웹 서비스를 통해 프로그래밍 방식으로 큐에 액세스할 수 있습니다. Visual Studio에서 서버 탐색기를 사용하여 큐에 직접 액세스할 수도 있습니다.
+스토리지 서비스 큐는 Azure Storage 계정에 호스트됩니다. 클라우드 서비스 역할이 메시지 전달 메커니즘에 의해 서로 및 다른 서비스와 통신할 수 있도록 사용할 수 있습니다. 클라우드 서비스 및 외부 클라이언트에 대한 웹 서비스를 통해 프로그래밍 방식으로 큐에 액세스할 수 있습니다. 또한 Visual Studio에서 서버 탐색기를 사용하여 직접 큐에 액세스할 수 있습니다.
 
 큐를 사용하는 클라우드 서비스를 개발할 때 Visual Studio를 사용하여 큐를 생성하여 코드를 개발 및 테스트하는 동안 대화형으로 작업하는 것이 좋습니다.
 
-서버 탐색기에서는 저장소 계정의 큐를 보고, 큐를 생성 및 삭제하고, 큐를 열어 메시지를 보고, 큐에 메시지를 추가할 수 있습니다. 큐를 확인하기 위해 열 때 개별 메시지를 볼 수 있으며 왼쪽 위 모서리의 단추를 사용하여 큐에서 다음의 작업을 수행할 수 있습니다.
+서버 탐색기에서는 스토리지 계정의 큐 보기, 큐 생성 및 삭제, 큐를 열어 메시지 보기, 큐에 메시지 추가하기가 가능합니다. 큐를 확인하기 위해 열 때 개별 메시지를 볼 수 있으며 왼쪽 위 모서리의 단추를 사용하여 큐에서 다음의 작업을 수행할 수 있습니다.
 
 * 큐 보기를 새로 고칩니다.
 * 큐에 메시지 추가.
@@ -160,13 +160,13 @@ Blob을 선택한 다음 **Blob 열기** 단추를 선택합니다.
 스토리지 서비스 큐에 대한 자세한 내용은 [.NET을 사용하여 Azure Queue Storage 시작](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/)을 참조하세요. 스토리지 서비스 큐의 웹 서비스에 대한 자세한 내용은 [큐 서비스 개념](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx)을 참조하세요. Visual Studio를 사용하여 Storage 서비스 큐에 메시지를 보내는 방법에 대한 자세한 내용은 [Storage 서비스 큐에 메시지 보내기](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)를 참조하세요.
 
 > [!NOTE]
-> 스토리지 서비스 큐는 Azure Service Bus 큐와 구별됩니다. Service Bus 큐에 대한 자세한 내용은 [Service Bus 큐, 항목 및 구독](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)을 참조하세요.
+> 스토리지 서비스 큐는 Azure Service Bus 큐와 구별됩니다. Service Bus 큐에 대 한 자세한 내용은 [큐, 토픽 및 구독 Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)을 참조 하세요.
 
 ## <a name="work-with-table-resources"></a>테이블 리소스로 작업
 
 Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 이 서비스는 Azure 클라우드 내부 및 외부에서 인증된 호출을 수락하는 NoSQL 데이터 저장소입니다. Azure 테이블은 구조화된 비관계형 데이터를 저장하는 데 적합합니다.
 
-### <a name="to-create-a-table"></a>테이블을 만들려면
+### <a name="to-create-a-table"></a>테이블 형식 보고서를 만들려면
 
 1. 클라우드 탐색기에서 스토리지 계정의 **테이블** 노드를 선택한 다음 **테이블 만들기**를 선택합니다.
 1. **테이블 만들기** 대화 상자에서 테이블의 이름을 입력합니다.
@@ -177,7 +177,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 1. 관심 있는 스토리지 계정 노드를 연 다음 **테이블** 노드를 열어 스토리지 계정에 대한 테이블 목록을 확인합니다.
 1. 테이블의 바로 가기 메뉴를 연 다음 **테이블 보기**를 선택합니다.
 
-    ![솔루션 탐색기의 Azure 테이블](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
+    ![솔루션 탐색기에 있는 Azure 테이블](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
 
 테이블은 엔터티 (행에 표시) 및 속성 (열에 표시) 별로 구성됩니다. 예를 들어 다음 그림은 테이블 디자이너에 나열된 엔터티를 보여 줍니다.
 
@@ -190,7 +190,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 단일 테이블의 엔터티는 속성 (열)과 동일한 집합을 가질 필요가 없습니다. 테이블 데이터 보기 및 편집에 대한 다음의 제한 사항에 유의하십시오.
 
 * 이진 데이터(`type byte[]`)를 보거나 편집할 수 없지만 테이블에 저장할 수는 있습니다.
-* Azure의 Table Storage는 **PartitionKey** 또는 **RowKey** 값의 편집을 지원하지 않으므로 해당 작업을 할 수 없습니다.
+* Azure의 테이블 저장소는 해당 작업을 지원 하지 않으므로 **PartitionKey** 또는 **rowkey** 값을 편집할 수 없습니다.
 * **Timestamp**라는 속성을 만들 수 없습니다. Azure Storage 서비스는 해당 이름의 속성을 사용합니다.
 * **DateTime** 값을 입력하는 경우 컴퓨터의 지역 및 언어 설정에 부합하는 형식을 따라야 합니다(예: 미국 영어의 경우 MM/DD/YYYY HH:MM:SS [AM|PM]).
 
@@ -213,13 +213,13 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 1. 쿼리 작성기를 열려면 테이블을 열어 확인합니다.
 1. 테이블 보기의 도구 모음에서 **쿼리 작성기** 단추를 선택합니다.
 
-    **쿼리 작성기** 대화 상자가 나타납니다. 다음 그림에서는 쿼리 작성기에서 작성되고 있는 쿼리를 보여줍니다.
+    그러면 **쿼리 작성기** 대화 상자가 나타납니다. 다음 그림에서는 쿼리 작성기에서 작성되고 있는 쿼리를 보여줍니다.
 
     ![쿼리 작성기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. 쿼리 작성을 마친 경우 대화 상자를 닫습니다. 쿼리의 결과 텍스트 형식이 WCF Data Services 필터로 텍스트 상자에 나타납니다.
 1. 쿼리를 실행하려면 녹색 삼각형 아이콘을 선택합니다.
 
-또한 필터 텍스트 상자에 WCF Data Services 필터 문자열을 직접 입력한 경우 테이블 디자이너에 표시되는 엔터티 데이터를 필터링할 수 있습니다. 이러한 종류의 문자열은 SQL WHERE 절과 유사하지만 HTTP 요청으로 서버에 전송됩니다. 필터 문자열을 생성하는 방법에 대한 자세한 내용은 [테이블 디자이너에 대한 필터 문자열 생성](/azure/vs-azure-tools-table-designer-construct-filter-strings)을 참조하세요.
+또한 필터 텍스트 상자에 WCF Data Services 필터 문자열을 직접 입력한 경우 테이블 디자이너에 표시되는 엔터티 데이터를 필터링할 수 있습니다. 이러한 종류의 문자열은 SQL WHERE 절과 유사하지만 HTTP 요청으로 서버에 전송됩니다. 필터 문자열을 생성 하는 방법에 대 한 자세한 내용은 [테이블 디자이너에 대 한 필터 문자열 생성](/azure/vs-azure-tools-table-designer-construct-filter-strings)을 참조 하세요.
 
 다음 그림에서는 유효한 필터 문자열의 예를 보여줍니다.
 
@@ -249,7 +249,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 
 ## <a name="add-storage-accounts-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 계정 추가
 
-서버 탐색기를 사용하여 저장소 계정을 추가하는 방법은 두 가지가 있습니다. Azure 구독에서 스토리지 계정을 만들거나 기존 스토리지 계정을 연결할 수 있습니다.
+서버 탐색기를 사용하여 스토리지 계정을 추가하는 방법은 두 가지가 있습니다. Azure 구독에서 스토리지 계정을 만들거나 기존 스토리지 계정을 연결할 수 있습니다.
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 계정을 만들려면 다음을 수행합니다.
 
@@ -259,7 +259,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 
    * 스토리지 계정을 추가할 Azure 구독입니다.
    * 새 스토리지 계정에 대해 사용하려는 이름입니다.
-   * 지역 또는 선호도 그룹(예: 미국 서부 또는 동아시아)
+   * 지역 또는 선호도 그룹 (예: 미국 서부 또는 동아시아)입니다.
    * 스토리지 계정에 대해 사용하려는 복제의 유형입니다(예: 지역 중복).
 
    ![Azure Storage 계정 만들기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
@@ -272,12 +272,12 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 
 1. 서버 탐색기에서 Azure **스토리지** 노드에 대한 바로 가기 메뉴를 연 다음 **외부 스토리지 연결**을 선택합니다.
 
-    ![기존 저장소 계정 추가](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
+    ![기존 스토리지 계정 추가](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
 1. **스토리지 계정 만들기** 대화 상자에서 다음 정보를 선택하거나 입력합니다.
 
    * 연결하려는 기존 스토리지 계정의 이름입니다.
    * 선택한 스토리지 계정에 대한 키입니다. 스토리지 계정을 선택할 때 일반적으로 이 값이 제공됩니다. Visual Studio가 스토리지 계정 키를 기억하기를 원하는 경우 **계정 키 기억하기** 확인란을 선택합니다.
-   * 저장소 계정에 연결하는 데 사용할 프로토콜(예: HTTP, HTTPS 또는 사용자 지정 엔드포인트). 사용자 지정 엔드포인트에 대한 자세한 내용은 [연결 문자열을 구성하는 방법](https://msdn.microsoft.com/library/azure/ee758697.aspx)을 참조하세요.
+   * 스토리지 계정에 연결하기 위해 사용하는 프로토콜입니다 - 예: HTTP, HTTPS, 또는 사용자 지정 엔드포인트. 사용자 지정 엔드포인트에 대한 자세한 내용은 [연결 문자열을 구성하는 방법](https://msdn.microsoft.com/library/azure/ee758697.aspx)을 참조하세요.
 
 ### <a name="to-view-the-secondary-endpoints"></a>보조 엔드포인트를 확인하려면
 

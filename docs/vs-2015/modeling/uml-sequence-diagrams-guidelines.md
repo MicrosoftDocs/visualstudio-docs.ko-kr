@@ -24,13 +24,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850131"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML 시퀀스 다이어그램: 지침
+# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램* 을 그릴 수 있습니다. 상호 작용은 클래스, 구성 요소, 하위 시스템 또는 행위자의 일반적인 인스턴스 간 메시지 시퀀스입니다.
@@ -39,7 +39,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-## <a name="in-this-topic"></a>이 항목의 내용
+## <a name="in-this-topic"></a>항목 내용
  [UML 시퀀스 다이어그램 사용](#Using)
 
  [시퀀스 다이어그램을 그리는 기본 단계](#BasicSteps)
@@ -48,13 +48,13 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
  [클래스 및 수명선](#ClassesAndLifelines)
 
- [재사용 가능한 상호 작용 시퀀스 만들기](#Multiple)
+ [다시 사용할 수 있는 상호 작용 시퀀스 만들기](#Multiple)
 
  [수명선 그룹 축소](#Collapse)
 
- [조각을 사용 하 여 제어 구조 설명](#Fragments)
+ [조각을 사용하여 제어 구조 설명](#Fragments)
 
-## <a name="Using"></a>UML 시퀀스 다이어그램 사용
+## <a name="using-uml-sequence-diagrams"></a><a name="Using"></a> UML 시퀀스 다이어그램 사용
  각기 다른 프로그램 세부 수준에서 다양한 용도로 시퀀스 다이어그램을 사용할 수 있습니다. 시퀀스 다이어그램을 그리는 일반적인 경우는 다음과 같습니다.
 
 - 시스템 사용자 및 사용자 목표를 요약하는 사용 사례 다이어그램이 있는 경우 시스템의 주요 구성 요소가 각 사용 사례의 목표를 달성하기 위해 상호 작용하는 방식을 설명하는 시퀀스 다이어그램을 그릴 수 있습니다. 자세한 내용은 [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)을 참조 하세요.
@@ -73,13 +73,13 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 #### <a name="lifelines-and-types"></a>수명선 및 형식
  시퀀스 다이어그램에서 그리는 수명선은 시스템 구성 요소 또는 클래스의 일반적인 인스턴스를 나타낼 수 있습니다. 형식에서 수명선을 만들거나 수명선에서 형식을 만들 수 있으며, UML 클래스 다이어그램 및 UML 구성 요소 다이어그램에 형식을 표시할 수 있습니다. 자세한 내용은 [클래스 및 수명선](#ClassesAndLifelines)을 참조 하세요.
 
-#### <a name="parameter-types"></a>매개 변수 형식
+#### <a name="parameter-types"></a>매개 변수 유형
  UML 클래스 다이어그램에서 수명선 간에 전송된 메시지에 사용된 매개 변수 형식과 반환 값을 설명할 수도 있습니다.
 
 #### <a name="use-case-details"></a>사용 사례 정보
  사용 사례는 목표를 달성하기 위한 단계 시퀀스와 함께 사용자 목표를 나타냅니다. 여러 가지 방법으로 단계 시퀀스를 설명할 수 있습니다. 한 가지 옵션은 사용자와 시스템의 주요 구성 요소 간 상호 작용을 보여 주는 시퀀스 다이어그램을 그리는 것입니다. 자세한 내용은 [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)을 참조 하세요.
 
-## <a name="BasicSteps"></a>시퀀스 다이어그램을 그리는 기본 단계
+## <a name="basic-steps-for-drawing-sequence-diagrams"></a><a name="BasicSteps"></a> 시퀀스 다이어그램을 그리는 기본 단계
  시퀀스 다이어그램의 전체 요소 목록은 [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)를 참조 하세요.
 
 > [!NOTE]
@@ -115,7 +115,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 3. 알 수 없는 이벤트 소스에서 들어오거나(9) 알 수 없는 받는 사람에게 브로드캐스트(10)되는 메시지를 표시하려면 다이어그램의 빈 공간에서 보내거나 받는 비동기 메시지를 그립니다. 이러한 메시지를 *찾은 메시지* (9) 및 *손실 메시지* (10) 라고 합니다.
 
     > [!NOTE]
-    > 손실 되거나 검색 된 메시지를 포함 하는 수명선 그룹을 이동 하려면 다음 단계를 따라 이동 하기 전에 수명선을 선택 합니다. 이러한 수명선 주위에 사각형을 그리거나 **ctrl** 키를 누른 채 각 수명선을 클릭 합니다. **모두 선택** 또는 **CTRL**+를 사용 하 **여 모든** 수명선을 선택한 후 이동 하면 이러한 수명선에 연결 된 손실 또는 찾기 메시지가 이동 하지 않습니다. 이 경우에는 해당 메시지를 개별적으로 이동할 수 있습니다.
+    > 손실 되거나 검색 된 메시지를 포함 하는 수명선 그룹을 이동 하려면 다음 단계를 따라 이동 하기 전에 수명선을 선택 합니다. 이러한 수명선 주위에 사각형을 그리거나 **ctrl** 키를 누른 채 각 수명선을 클릭 합니다. 모두 **선택** 또는 **CTRL** + **A** 를 사용 하 여 모든 수명선을 선택한 후 이동 하면 이러한 수명선에 연결 된 손실 또는 찾기 메시지가 이동 하지 않습니다. 이 경우에는 해당 메시지를 개별적으로 이동할 수 있습니다.
 
 4. 동일한 구성 요소 또는 시스템으로 보내는 각 주요 메시지에 대해 시퀀스 다이어그램을 그립니다.
 
@@ -144,7 +144,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
   - 수명선을 마우스 오른쪽 단추로 클릭 한 다음 **클래스 만들기**를 선택 합니다.
 
-     -또는-
+     또는
 
   - 수명선을 선택 하 고 **F4**키를 누른 다음 **속성** 창에서 **형식** 속성을 기존 형식으로 설정 하거나 새 형식의 이름을 지정 합니다. 메시지 레이블을 마우스 오른쪽 단추로 클릭 한 다음 **작업 만들기**를 선택 합니다.
 
@@ -169,7 +169,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
      상호 작용을 마우스 오른쪽 단추로 클릭 한 다음 **잘라내기**를 클릭 합니다. 패키지를 마우스 오른쪽 단추로 클릭 한 다음 **붙여넣기**를 클릭 합니다.
 
-## <a name="Simple"></a>간단한 시퀀스 다이어그램 만들기 및 사용
+## <a name="creating-and-using-simple-sequence-diagrams"></a><a name="Simple"></a> 간단한 시퀀스 다이어그램 만들기 및 사용
  가장 간단하고 널리 사용되는 형식의 시퀀스 다이어그램은 수명선과 메시지만 포함합니다. 이러한 종류의 다이어그램을 사용하면 디자인의 개체 간 또는 시스템과 사용자 간의 일반적인 상호 작용 시퀀스를 명확하게 표시할 수 있습니다. 이렇게 하면 디자인을 논의하고 전달하는 데 도움이 되는 경우가 많습니다.
 
  다음은 간단한 시퀀스 다이어그램을 그릴 때 고려해야 하는 몇 가지 사항입니다.
@@ -179,7 +179,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
 - **동기** 도구를 사용 하 여 받는 사람이 응답을 반환할 때까지 기다리는 상호 작용을 설명 합니다 (3).
 
-     실행 발생의 끝에 **<\<반환 > >** 화살표가 표시 됩니다. 보낸 사람에게 제어가 반환됨을 나타냅니다.
+     **<\<return>>** 실행 발생의 끝에 화살표가 표시 됩니다. 보낸 사람에게 제어가 반환됨을 나타냅니다.
 
 - **비동기** 도구를 사용 하 여 받는 사람이 수신자 (4)를 기다리지 않고 즉시 계속할 수 있는 상호 작용을 설명할 수 있습니다.
 
@@ -256,12 +256,12 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
 - 일부 수명선이 두 종류 이상의 작업을 처리하는 것 같습니다. 각 수명선의 책임을 설명하고 받은 각 메시지에 대한 응답으로 수행하는 작업을 요약하는 하나의 간결한 문장을 찾기 쉬워야 합니다.
 
-## <a name="ClassesAndLifelines"></a>클래스 및 수명선
+## <a name="classes-and-lifelines"></a><a name="ClassesAndLifelines"></a> 클래스 및 수명선
  시퀀스 다이어그램의 수명선은 클래스 또는 구성 요소 인터페이스의 인스턴스를 표시합니다. 다음 두 가지 방법으로 수명선에 이름을 지정할 수 있습니다.
 
-|**이 목적을 위해**|**이 형식 사용**|
+|**용도**|**이 형식 사용**|
 |--------------------------|-------------------------|
-|형식의 익명 인스턴스.<br /><br /> 각 형식의 수명선이 하나만 있는 경우에 사용합니다.|*typeName*|
+|형식의 익명 인스턴스.<br /><br /> 각 형식의 수명선이 하나만 있는 경우에 사용합니다.|*t*|
 |형식의 명명된 인스턴스.<br /><br /> 동일한 형식의 인스턴스를 두 개 이상 포함하는 시퀀스를 표시하려는 경우에 사용합니다.|*objectName*:*typeName*|
 
 ### <a name="creating-lifelines-from-types"></a>형식에서 수명선 만들기
@@ -332,7 +332,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 ### <a name="creating-classes-for-parameters"></a>매개 변수에 대한 클래스 만들기
  시퀀스 다이어그램의 메시지에 매개 변수를 포함할 수 있습니다. UML 클래스 다이어그램을 사용하여 매개 변수 형식을 설명할 수 있습니다.
 
-## <a name="Multiple"></a>재사용 가능한 상호 작용 시퀀스 만들기
+## <a name="creating-reusable-interaction-sequences"></a><a name="Multiple"></a> 재사용 가능한 상호 작용 시퀀스 만들기
  별도 다이어그램을 사용하여 분리하려고 하거나 여러 다이어그램 간에 공통된, 세부 정보가 포함된 시퀀스를 설명할 수 있습니다.
 
  한 다이어그램에서 다른 다이어그램의 세부 정보를 가리키는 상호 작용 사용 사각형(12)을 만들 수 있습니다.
@@ -391,7 +391,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 ### <a name="creating-a-placeholder-with-an-interaction-use"></a>상호 작용 사용으로 자리 표시자 만들기
  다른 다이어그램에 연결하지 않고 상호 작용 사용을 만들 수 있습니다. 이러한 정보를 아직 작업을 수행 하지 않는 시퀀스의 일부에 대 한 자리 표시자로 사용할 수 있습니다. 상호 작용 사용 이름을 사용 하 여 원하는 결과를 표시 합니다.
 
-## <a name="Collapse"></a>수명선 그룹 축소
+## <a name="collapsing-groups-of-lifelines"></a><a name="Collapse"></a> 수명선 그룹 축소
  그룹이 하나의 수명선으로 나타나도록 수명선 집합을 함께 축소할 수 있습니다. 이렇게 하면 개체 그룹을 단일 구성 요소로 시각화하는 데 도움이 됩니다. 축소된 그룹에서 수명선 간의 메시지 및 상호 작용 사용은 숨겨집니다. 다른 수명선을 포함하는 메시지 및 상호 작용 시퀀스는 표시됩니다.
 
 #### <a name="to-collapse-a-group-of-lifelines-together"></a>수명선 그룹을 함께 축소하려면
@@ -416,7 +416,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
     > [!NOTE]
     > 그룹과 주석 또는 작업 항목 간의 모든 링크와 함께 그룹 이름이 손실됩니다.
 
-## <a name="Fragments"></a>조각을 사용 하 여 제어 구조 설명
+## <a name="describing-control-structures-with-fragments"></a><a name="Fragments"></a> 조각을 사용 하 여 제어 구조 설명
  결합 조각(13)을 사용하여 시퀀스 다이어그램에서 루프, 분기 및 동시 처리를 정의할 수 있습니다. 또는 동작 다이어그램을 대신 사용하는 것이 좋습니다. 동작 다이어그램은 행위자 간의 메시지를 표시할 때는 그만큼 유용하지 않지만 일부 경우에서 루프, 분기 및 동시성을 표시할 때 보다 효과적입니다.
 
  조각 형식의 전체 목록은 [UML 시퀀스 다이어그램의 조각으로 제어 흐름 설명](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)을 참조 하세요.
@@ -442,5 +442,5 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
 5. 조각에 새 메시지를 추가하려면 메시지 도구를 사용하거나 복사하여 붙여넣습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Uml 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md) [편집 uml 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md) [uml 사용 사례 다이어그램](../modeling/uml-use-case-diagrams-reference.md) : uml [클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) 참조: Uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: Uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: 참조 [비디오: 시퀀스 다이어그램을 사용 하 여 상호 작용 스케치](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)
