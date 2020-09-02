@@ -1,5 +1,5 @@
 ---
-title: Windows API 함수를 어떻게 디버깅할 수 있습니까? | Microsoft 문서
+title: Windows API 함수를 어떻게 디버깅할 수 있습니까? | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704589"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 함수를 어떻게 디버깅할 수 있습니까?
@@ -37,14 +37,14 @@ NT 기호가 로드된 Windows API 함수를 디버깅하려면 다음 작업을
   
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>NT 기호가 있는 Windows API 함수에 중단점을 설정하려면  
   
-- 함수가 상주하는 DLL 이름과 함수 이름을 함께 입력합니다. 32비트 코드에서는 함수 이름의 데코레이팅된 형식을 사용합니다. 예를 들어 **MessageBeep**에 중단점을 설정하려면 다음을 입력해야 합니다.  
+- 함수가 상주하는 DLL 이름과 함수 이름을 함께 입력합니다. 32비트 코드에서는 함수 이름의 데코레이트된 형식을 사용합니다. 예를 들어 **MessageBeep**에 중단점을 설정하려면 다음을 입력해야 합니다.  
   
     ```  
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     데코레이팅된 이름을 가져오려면를 참조 하세요 [데코레이팅된 이름 보기](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0)합니다.  
+     데코레이트된 이름을 가져오려면 [데코레이트된 이름 보기](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [네이티브 코드 디버깅 FAQ](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>관련 항목  
+ [네이티브 코드 디버그 Faq](../debugger/debugging-native-code-faqs.md)   
  [네이티브 코드 디버그](../debugger/debugging-native-code.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189722"
 ---
 # <a name="migration-activity-designers"></a>마이그레이션 활동 디자이너
@@ -27,18 +27,18 @@ ms.locfileid: "73189722"
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 
-- [워크플로](../workflow-designer/flowchart-activity-designers.md)
+- [순서도](../workflow-designer/flowchart-activity-designers.md)
 
 - [활동 디자이너 사용](control-flow-activity-designers.md)
 
-- [Messaging](../workflow-designer/messaging-activity-designers.md)
+- [메시징](../workflow-designer/messaging-activity-designers.md)
 
 - [런타임](../workflow-designer/runtime-activity-designers.md)
 
-- [Primitives](../workflow-designer/primitives-activity-designers.md)
+- [기본 요소](../workflow-designer/primitives-activity-designers.md)
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 
-- [수집](../workflow-designer/collection-activity-designers.md)
+- [컬렉션](../workflow-designer/collection-activity-designers.md)
 
 - [오류 처리](../workflow-designer/error-handling-activity-designers.md)

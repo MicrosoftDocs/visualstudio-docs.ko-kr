@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd66c62d74bfe63d8376b5520b42cb20c8c0a3a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651615"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
@@ -21,12 +21,12 @@ ms.locfileid: "72651615"
 
 트랜잭션은 저장소에 대 한 변경 내용이 하나의 그룹으로 처리 되는지 확인 합니다. 그룹화 된 변경 내용은 단일 단위로 커밋되거나 롤백될 수 있습니다.
 
- 프로그램 코드는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시각화 및 모델링 SDK의 저장소에 있는 모든 요소를 수정, 추가 또는 삭제할 때마다 트랜잭션 내에서이 작업을 수행 해야 합니다. 변경이 발생 하는 경우 저장소와 연결 된 <xref:Microsoft.VisualStudio.Modeling.Transaction>의 활성 인스턴스가 있어야 합니다. 이는 모든 모델 요소, 관계, 모양, 다이어그램 및 해당 속성에 적용 됩니다.
+ 프로그램 코드에서 시각화 및 모델링 SDK의 저장소에 있는 모든 요소를 수정, 추가 또는 삭제할 때마다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 트랜잭션 내에서이 작업을 수행 해야 합니다. <xref:Microsoft.VisualStudio.Modeling.Transaction>변경이 발생 하는 경우 저장소와 연결 된의 활성 인스턴스가 있어야 합니다. 이는 모든 모델 요소, 관계, 모양, 다이어그램 및 해당 속성에 적용 됩니다.
 
  트랜잭션 메커니즘은 일관 되지 않은 상태를 방지 하는 데 도움이 됩니다. 트랜잭션 중에 오류가 발생 하면 모든 변경 내용이 롤백됩니다. 사용자가 실행 취소 명령을 수행 하면 각 최근 트랜잭션이 단일 단계로 처리 됩니다. 사용자가 별도의 트랜잭션에 명시적으로 배치 하지 않는 한 사용자는 최근 변경 내용의 일부를 실행 취소할 수 없습니다.
 
 ## <a name="opening-a-transaction"></a>트랜잭션 열기
- 트랜잭션을 관리 하는 가장 편리한 방법은 `try...catch` 문으로 묶인 `using` 문을 사용 하는 것입니다.
+ 트랜잭션을 관리 하는 가장 편리한 방법은 문에 포함 된 문을 사용 하는 것입니다 `using` `try...catch` .
 
 ```
 Store store; ...
@@ -52,11 +52,11 @@ catch (Exception ex)
 }
 ```
 
- 변경 하는 동안 최종 `Commit()`이 발생 하지 않도록 하는 예외가 발생 하면 저장소는 이전 상태로 다시 설정 됩니다. 이렇게 하면 오류가 모델을 일관 되지 않은 상태로 유지 하지 않도록 할 수 있습니다.
+ 변경 하는 동안 최종을 방지 하는 예외가 `Commit()` 발생 하면 저장소는 이전 상태로 다시 설정 됩니다. 이렇게 하면 오류가 모델을 일관 되지 않은 상태로 유지 하지 않도록 할 수 있습니다.
 
- 한 트랜잭션 내에서 원하는 수의 변경 작업을 수행할 수 있습니다. 활성 트랜잭션 내에서 새 트랜잭션을 열 수 있습니다. 중첩 된 트랜잭션은 포함 하는 트랜잭션이 끝나기 전에 커밋되거나 롤백해야 합니다. 자세한 내용은 <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> 속성의 예제를 참조 하세요.
+ 한 트랜잭션 내에서 원하는 수의 변경 작업을 수행할 수 있습니다. 활성 트랜잭션 내에서 새 트랜잭션을 열 수 있습니다. 중첩 된 트랜잭션은 포함 하는 트랜잭션이 끝나기 전에 커밋되거나 롤백해야 합니다. 자세한 내용은 속성의 예제를 참조 하세요 <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> .
 
- 변경 내용을 영구적으로 적용 하려면 삭제 하기 전에 트랜잭션을 `Commit` 해야 합니다. 트랜잭션 내에서 catch 되지 않는 예외가 발생 하면 저장소는 변경 전 상태로 다시 설정 됩니다.
+ 변경 내용을 영구적으로 적용 하려면 `Commit` 트랜잭션이 삭제 되기 전에 수행 해야 합니다. 트랜잭션 내에서 catch 되지 않는 예외가 발생 하면 저장소는 변경 전 상태로 다시 설정 됩니다.
 
 ## <a name="rolling-back-a-transaction"></a>트랜잭션 롤백
  저장소를 트랜잭션 전 상태로 유지 하거나 해당 상태로 되돌리기 위해 다음 방법 중 하나를 사용할 수 있습니다.

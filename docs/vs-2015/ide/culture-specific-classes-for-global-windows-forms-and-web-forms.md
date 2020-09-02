@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c2d048387e4e81763a63b5bf010c36c87beeacf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665916"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>전역 Windows Forms 및 Web Forms을 위한 문화권 관련 클래스
@@ -70,10 +70,10 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
 
  `$100.00`
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName> <xref:System.Globalization.DateTimeFormatInfo>
  <xref:System.Globalization.NumberFormatInfo>
  <xref:System.Globalization.Calendar>
  <xref:System.Console.WriteLine%2A?displayProperty=fullName>
  <xref:System.String.Format%2A?displayProperty=fullName>
- [애플리케이션 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)
+ [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

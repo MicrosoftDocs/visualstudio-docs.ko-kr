@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541637"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>방법: 포함 목록 보안 구성
@@ -56,9 +56,9 @@ ms.locfileid: "85541637"
     |-------------------------|-----------|
     |**인터넷**|**AuthenticodeRequired**|
     |**없는 사이트**|**사용 안 함**|
-    |**MyComputer**|**Enabled**|
-    |**LocalIntranet**|**Enabled**|
-    |**사이트**|**Enabled**|
+    |**MyComputer**|**사용**|
+    |**LocalIntranet**|**사용**|
+    |**사이트**|**사용**|
 
      기본적으로 **인터넷** 에는 AuthenticodeRequired 및 **un** **사이트** 의 값이 **사용 안 함으로 설정**되어 있습니다.
 
@@ -207,6 +207,6 @@ ms.locfileid: "85541637"
 
 3. 애플리케이션을 빌드 및 실행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6da744b0db9e41cd1e5039a1bd0d5c93bc4c734a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651683"
 ---
 # <a name="alias-command"></a>별칭 명령
@@ -55,7 +55,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  `/reset` 스위치는 별칭을 복원하기 전에 확인을 요청합니다. `/reset`의 약식은 없습니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
  이 예제에서는 Edit.MakeUpperCase 전체 명령에 대해 `upper`라는 새 별칭을 만듭니다.
 
 ```
@@ -74,5 +74,5 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [명령 창](../../ide/reference/command-window.md) [찾기/명령 상자](../../ide/find-command-box.md) [visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
