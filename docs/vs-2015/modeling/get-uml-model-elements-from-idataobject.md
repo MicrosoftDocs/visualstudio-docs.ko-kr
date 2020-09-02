@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 66b4ffc312af89aa5852a1f4dad62fd328176df3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666083"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>IDataObject에서 UML 모델 요소 가져오기
@@ -27,13 +27,13 @@ ms.locfileid: "72666083"
 > UML 모델에서 수행 해야 하는 대부분의 작업은 **VisualStudio** 및 **VisualStudio**어셈블리에 정의 된 형식을 사용 하 여 수행할 수 있습니다. 하지만 이 예제에서는 UML 모델링 도구 구현의 파트인 일부 클래스를 사용해야 합니다. 예를 들어 이 조각의 `ShapeElement`는 UML `IShape`와 같지 않습니다. UML 모델 및 다이어그램이 불일치 상태로 전환되는 위험을 줄이려면 대체 방법이 없는 경우를 제외하고 이들 구현 클래스에서 메서드를 사용하지 않는 것이 좋습니다.
 
 ## <a name="code-sample"></a>코드 예제
- 프로젝트는 다음 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 어셈블리를 참조 해야 합니다.
+ 프로젝트는 다음 어셈블리를 참조 해야 합니다 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] .
 
- **VisualStudio입니다. 버전**
+ **Microsoft.VisualStudio.Modeling.Sdk.[version]**
 
- **VisualStudio을 (를). 버전**
+ **Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]**
 
- **System.object**
+ **System.Windows.Forms**
 
 ```
 using Microsoft.VisualStudio.Modeling;
@@ -78,7 +78,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 ```
 
- UML 모델링 도구를 구현 하는 `ElementGroupPrototype` 및 `Store`에 대 한 자세한 내용은 [Visual Studio 용 모델링 SDK-도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)를 참조 하세요.
+ UML 모델링 도구를 구현 하는 및에 대 한 자세한 내용은 `ElementGroupPrototype` `Store` [Visual STUDIO 용 모델링 SDK-도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md) 은 [모델링 다이어그램에서 메뉴 명령을 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) 합니다.

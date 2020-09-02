@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683932"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 사용
@@ -41,7 +41,7 @@ ms.locfileid: "65683932"
   
  다음 표에서는 `DebuggerDisplay` 특성의 사용 예와 예제 출력을 보여 줍니다.  
   
-|특성|**값** 열에 표시되는 출력|  
+|특성|**값** 열에 표시 되는 출력|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> `x` 및 `y`필드가 있는 형식에서 사용됩니다.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`매개 변수 구문은 언어에 따라 다를 수 있으므로 주의하여 사용하십시오.|`String value is [5, 6, 6]`|  
@@ -179,5 +179,5 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md) [디버거 표시 특성을 사용 하 여 디버깅 향상](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+## <a name="see-also"></a>관련 항목  
+ [DebuggerTypeProxy 특성을 사용 하](../debugger/using-debuggertypeproxy-attribute.md) 여 [디버거 표시 특성을 사용 하 여 디버깅 향상](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

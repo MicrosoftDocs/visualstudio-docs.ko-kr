@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332228"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio의 바로 가기 키
@@ -35,7 +35,7 @@ ms.locfileid: "85332228"
 
 |원하는 작업|단계|
 |----------------|-------------|
-|열린 문서 간 전환|**Ctrl** + **탭**|
+|열린 문서 간 전환|**Ctrl**+**Tab**|
 |활성 문서 저장|**Ctrl** + **S**|
 |모든 문서 저장|**Ctrl** + **Shift** + **S**|
 |활성 문서 닫기|**Ctrl** + **W**|

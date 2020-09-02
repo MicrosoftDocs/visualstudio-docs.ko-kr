@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7e485bc6289634e1bb6d4b4106d54c8dc82096b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683695"
 ---
 # <a name="profiling-and-windows-vista-security"></a>프로파일링 및 Windows Vista 보안
@@ -45,7 +45,7 @@ ms.locfileid: "65683695"
   
      이 옵션을 선택하지 않으면 현재 세션의 프로세스가 목록에 표시됩니다. 이 옵션을 선택하면 모든 세션의 프로세스가 목록에 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [개요](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>관련 항목  
+ [간단한](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [방법: 실행 중인 프로세스에 연결](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

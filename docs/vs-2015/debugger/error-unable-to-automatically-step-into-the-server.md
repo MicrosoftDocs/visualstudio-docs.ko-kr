@@ -1,5 +1,5 @@
 ---
-title: '오류: 서버에 자동으로 단계 수 없습니다. | Microsoft Docs'
+title: '오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8dcb8fa757f1cccf2f3aef6c2520e0c61da0b9f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682671"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음
@@ -44,6 +44,6 @@ ms.locfileid: "65682671"
   
 - Visual Studio가 설치된 후 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 버전이 설치되었습니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 은 Visual Studio보다 먼저 설치해야 합니다. 이 문제를 해결하려면 Windows **제어판**, **프로그램 및 기능** 을 사용하여 Visual Studio 설치를 복구합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

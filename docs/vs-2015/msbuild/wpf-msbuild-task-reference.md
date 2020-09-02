@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687087"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 작업 참조
@@ -57,7 +57,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
  소스 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 포함된 모든 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 요소를 지역화하기 위해 UID(고유 식별자)를 확인, 업데이트 또는 제거합니다.  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 프로젝트를 빌드할 때 애플리케이션 매니페스트(*projectname*.exe.manifest)에 **\<hostInBrowser /&gt;** 요소를 추가하기 위해 실행합니다.  
+ 프로젝트를 **\<hostInBrowser />** 빌드할 때 응용 프로그램 매니페스트 (*projectname*)에 요소를 추가 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5300af2bc011cb6ae5255d2d55aa425ca9f1925
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875919"
 ---
 # <a name="primitives-activity-designers"></a>기본 형식 활동 디자이너
@@ -22,7 +22,7 @@ ms.locfileid: "86875919"
 ## <a name="related-sections"></a>관련 섹션
  [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 
- [Flowchart](../workflow-designer/flowchart-activity-designers.md)
+ [순서도](../workflow-designer/flowchart-activity-designers.md)
 
  [메시징](../workflow-designer/messaging-activity-designers.md)
 

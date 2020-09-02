@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705841"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>명령줄에서 계층 상호 작용 데이터 추가
@@ -34,7 +34,7 @@ ms.locfileid: "65705841"
   
  **원격 컴퓨터에서 TIP 데이터 수집**  
   
- 원격 머신에서 계층 상호 작용 데이터를 수집하려면 **vs\_profiler\_**_\<Platform>_**\_**_\<Language>_**.exe** 파일을 Visual Studio 머신의 _%VSInstallDir_**%\Team Tools\Performance Tools\Setups** 폴더에서 원격 컴퓨터로 복사하여 설치해야 합니다. [Visual Studio 원격 도구](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 다운로드 패키지의 프로파일링 도구를 사용할 수 없습니다.  
+ 원격 컴퓨터에 대 한 계층 상호 작용 데이터를 수집 하려면 ** \_ \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio 컴퓨터의 _% VSInstallDir%_**\team tooltoolss\ststoms** 폴더에 있는 vs profiler **.exe** 파일을 원격 컴퓨터에 복사 하 여 설치 해야 합니다. [Visual Studio 원격 도구](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 다운로드 패키지의 프로파일링 도구를 사용할 수 없습니다.  
   
  **TIP 보고서**  
   
@@ -79,12 +79,12 @@ ms.locfileid: "65705841"
    vsperfclrenv /off  
    ```  
   
-   자세한 내용은 [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)을 참조하세요.  
+   자세한 내용은 [독립 실행형 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)을 참조 하세요.  
   
 ### <a name="profiling-services"></a>서비스 프로파일링  
- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램을 포함하여 서비스를 프로파일링하려면 **VSPerfClrEnv /GlobalInteractionOn** 옵션을 사용하여 환경 변수를 설정하고 **VSPerfClrEnv /GlobalInteractionOff** 옵션을 사용하여 제거합니다.  
+ [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 애플리케이션을 포함하여 서비스를 프로파일링하려면 **VSPerfClrEnv /GlobalInteractionOn** 옵션을 사용하여 환경 변수를 설정하고 **VSPerfClrEnv /GlobalInteractionOff** 옵션을 사용하여 제거합니다.  
   
- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램을 포함하여 서비스를 프로파일링하는 경우, 프로파일링을 사용하도록 설정하기 위해 컴퓨터를 자주 다시 시작해야 합니다.  
+ [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 애플리케이션을 포함하여 서비스를 프로파일링하는 경우, 프로파일링을 사용하도록 설정하기 위해 컴퓨터를 자주 다시 시작해야 합니다.  
   
  다음 예제에서는 계측 방법을 사용하여 Windows 서비스를 프로파일링하고 계층 상호 작용 데이터를 수집합니다.  
   
@@ -140,7 +140,7 @@ ms.locfileid: "65705841"
   
     자세한 내용은 다음 항목 중 하나를 참조하십시오.  
   
-    [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
     [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)  
   
@@ -153,4 +153,4 @@ ms.locfileid: "65705841"
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- VSPerfASPNETCmd에 대한 자세한 내용은 [VSPerfASPNETCmd를 사용한 빠른 웹 사이트 프로파일링](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)을 참조하세요.
+ VSPerfASPNETCmd에 대 한 자세한 내용은 [VSPerfASPNETCmd로 신속한 웹 사이트 프로 파일링](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)을 참조 하세요.

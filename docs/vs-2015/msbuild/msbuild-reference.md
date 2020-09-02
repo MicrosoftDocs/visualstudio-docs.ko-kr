@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683009"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
@@ -41,7 +41,7 @@ ms.locfileid: "65683009"
  [조건부 구문](../msbuild/msbuild-conditional-constructs.md)  
  `Choose`, `When` 및 `Otherwise` 요소를 사용하는 방법을 설명합니다.  
   
- [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ [MSBuild의 예약 된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 예약된 속성에 대해 설명합니다.  
   
  [일반적인 MSBuild 프로젝트 속성](../msbuild/common-msbuild-project-properties.md)  
@@ -53,10 +53,10 @@ ms.locfileid: "65683009"
  [명령줄 참조](../msbuild/msbuild-command-line-reference.md)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].exe와 함께 사용할 수 있는 인수와 스위치에 대해 설명합니다.  
   
- [.Targets 파일](../msbuild/msbuild-dot-targets-files.md)  
+ [. 대상 파일](../msbuild/msbuild-dot-targets-files.md)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 포함된 .Targets 파일에 대해 설명합니다.  
   
- [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)  
+ [잘 알려진 항목 메타 데이터](../msbuild/msbuild-well-known-item-metadata.md)  
  모든 항목과 함께 만들어지는 메타데이터의 목록을 제공합니다.  
   
  [지시 파일](../msbuild/msbuild-response-files.md)  
@@ -71,8 +71,8 @@ ms.locfileid: "65683009"
  [이스케이프할 특수 문자](../msbuild/special-characters-to-escape.md)  
  올바르게 해석하려면 "이스케이프"해야 하는 문자의 목록을 제공합니다. 이스케이프 시퀀스는 뒤에 오는 내용이 대체 해석임을 나타내는 일련의 문자입니다.  
   
-## <a name="related-sections"></a>관련 단원  
- [MSBuild 개요](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 소개하고 프로젝트를 빌드하는 데 사용하는 방법을 설명하는 항목에 대한 링크를 제공합니다.  
+## <a name="related-sections"></a>관련 섹션  
+ [MSBuild 개요](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 소개하고 프로젝트를 빌드하는 데 사용하는 방법을 설명하는 항목에 대한 링크를 제공합니다.  
   
  <xref:Microsoft.Build.Conversion>  
  변환 네임스페이스 참조를 포함합니다.  

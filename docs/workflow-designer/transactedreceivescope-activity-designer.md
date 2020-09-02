@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875932"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 활동 디자이너
@@ -37,9 +37,9 @@ ms.locfileid: "86875932"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동의 선택적 이름입니다. 기본값은 TransactedReceiveScope입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> 이름이 꼭 필요하지 않더라도 표시 이름을 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동의 선택적 이름입니다. 기본값은 TransactedReceiveScope입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> 이름이 꼭 필요하지 않더라도 표시 이름을 사용하는 것이 좋습니다.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|활동 <xref:System.ServiceModel.Activities.Receive> 디자이너 화면의 **요청** 블록에 활동을 놓습니다.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|거짓|<xref:System.Activities.Activity>활동 디자이너 화면의 **본문** 블록에를 놓습니다.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|<xref:System.Activities.Activity>활동 디자이너 화면의 **본문** 블록에를 놓습니다.|
 
 ## <a name="see-also"></a>추가 정보
 

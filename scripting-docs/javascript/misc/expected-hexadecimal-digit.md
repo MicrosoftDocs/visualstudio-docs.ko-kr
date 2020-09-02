@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c0797d44115fb5b44cb0c670153e8476356bd533
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816568"
 ---
 # <a name="expected-hexadecimal-digit"></a>16진수가 필요합니다.
@@ -35,5 +35,5 @@ z = "\u1A5F";
     > [!NOTE]
     > 문자열에서 리터럴 텍스트 \u를 사용 하려면 두 개의 백슬래시 ( \\ \u)를 사용 하 여 첫 번째 백슬래시를 이스케이프 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [데이터 형식](../../javascript/data-types-javascript.md)

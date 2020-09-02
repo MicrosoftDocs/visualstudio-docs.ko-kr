@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 318ae5314fe8a33e2c421c9532dafc08ceee3ca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651760"
 ---
 # <a name="how-to-print-class-diagrams-class-designer"></a>방법: 클래스 다이어그램 인쇄(클래스 디자이너)
@@ -32,5 +32,5 @@ Visual Studio의 인쇄 기능을 사용하여 클래스 다이어그램을 인�
 
      전체 클래스 다이어그램이 인쇄됩니다. 적절한 크기로 인쇄하려면 페이지 설정 대화 상자에서 설정을 조정해야 할 수도 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사 (클래스 디자이너)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md) [방법: 클래스 다이어그램을 이미지로 내보내기 (클래스 디자이너)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
