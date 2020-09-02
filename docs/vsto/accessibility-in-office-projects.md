@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189628"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 프로젝트의 내게 필요한 옵션
@@ -84,9 +84,9 @@ Visual Studio에는 디스플레이 모드와 관련 된 다음과 같은 제한
 
 돋보기를 사용 하 여 이러한 제한을 극복할 수 있습니다. 돋보기는 화면의 확대 된 부분을 표시 하는 별도의 창을 만드는 창에 표시 되는 유틸리티입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [장애가 있는 사용자를 위한 내게 필요한 옵션](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Visual Studio의 내게 필요한 옵션 기능](../ide/reference/accessibility-features-of-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: CD 설치를 위한 자동 시작 사용 | Microsoft Docs'
+title: '방법: CD 설치를 위한 자동 시작 사용 Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,35 +18,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153778"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>방법: CD 설치를 위한 자동 시작 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-배포 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 설정할 수 있습니다. 예: CD-ROM 또는 DVD-ROM 이동식 미디어를 사용 하 여 응용 프로그램 `AutoStart` 있도록는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 에 미디어를 삽입 하는 경우 응용 프로그램은 자동으로 시작 됩니다.  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Cd-rom 또는 dvd-rom과 같은 이동식 미디어를 사용 하 여 응용 프로그램을 배포할 때 `AutoStart` [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 미디어가 삽입 될 때 응용 프로그램이 자동으로 실행 되도록를 사용 하도록 설정할 수 있습니다.  
   
- `AutoStart` 사용할 수 있습니다 합니다 **게시** 페이지의 **프로젝트 디자이너**합니다.  
+ `AutoStart`**프로젝트 디자이너**의 **게시** 페이지에서 사용 하도록 설정할 수 있습니다.  
   
-### <a name="to-enable-autostart"></a>자동 시작 기능을 사용 하도록 설정 하려면  
+### <a name="to-enable-autostart"></a>자동 시작을 사용 하도록 설정 하려면  
   
-1. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
+1. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴의 **속성**을 클릭 합니다.  
   
 2. **게시** 탭을 클릭합니다.  
   
 3. **옵션** 단추를 클릭합니다.  
   
-     합니다 **게시 옵션** 대화 상자가 나타납니다.  
+     **게시 옵션** 대화 상자가 나타납니다.  
   
-4. 클릭 **배포**합니다.  
+4. **배포**를 클릭합니다.  
   
-5. 선택 된 **CD 설치는 자동으로 설치를 시작 CD를 삽입 하면** 확인란 합니다.  
+5. Cd **설치의 경우 cd를 삽입 하면 자동으로 설치 시작 확인란을** 선택 합니다.  
   
-     Autorun.inf 파일을 응용 프로그램을 게시할 때 게시 위치에 복사 됩니다.  
+     응용 프로그램이 게시 될 때 자동 실행 .inf 파일이 게시 위치로 복사 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)   
  [방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

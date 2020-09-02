@@ -1,5 +1,5 @@
 ---
-title: 이데버그다이나믹필드컴플러스::겟타입프로부터 원시적 | 마이크로 소프트 문서
+title: 'IDebugDynamicFieldCOMPlus:: GetTypeFromPrimitive | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 89a0e559fbdf2824d334903a668bbdef8dbb6fff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731280"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
-기본 형식이 지정된 형식을 검색합니다.
+기본 형식이 지정 된 형식을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,13 +42,13 @@ int GetTypeFromPrimitive(
 
 ## <a name="parameters"></a>매개 변수
 `dwCorElementType`\
-【인】 기본 형식을 나타내는 [CorElementType 열거형의](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 값입니다.
+진행 기본 형식을 나타내는 [Corelementtype 열거형](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 의 값입니다.
 
 `ppType`\
-【아웃】 형식을 나타내는 [IDebugField를](../../../extensibility/debugger/reference/idebugfield.md) 반환합니다.
+제한이 유형을 나타내는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

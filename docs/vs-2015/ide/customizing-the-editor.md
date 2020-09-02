@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87a27cdb6b278a01434662017e05e5dca38b8c9d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665864"
 ---
 # <a name="customizing-the-editor"></a>편집기 사용자 지정
@@ -27,11 +27,11 @@ ms.locfileid: "72665864"
 ## <a name="in-this-section"></a>섹션 내용
  다음 항목에서는 텍스트 및 코드 편집기의 모양 및 동작을 조정하는 방법을 설명합니다.
 
- [방법: 편집기에서 텍스트 대/소문자 변경 ](../ide/how-to-change-text-case-in-the-editor.md) 코드에서 텍스트의 대/소문자를 변경 하는 방법을 설명 합니다.
+ [방법: 편집기에서 텍스트의 대/소문자 변경](../ide/how-to-change-text-case-in-the-editor.md) 코드에서 텍스트의 대/소문자를 변경 하는 방법을 설명 합니다.
 
- [방법: 편집기 창 관리 ](../ide/how-to-manage-editor-windows.md) 편집기 창을 조작 하는 방법을 보여 줍니다.
+ [방법: 편집기 창 관리](../ide/how-to-manage-editor-windows.md) 편집기 창을 조작 하는 방법을 보여 줍니다.
 
- [방법: 편집기 모드 관리 ](../ide/how-to-manage-editor-modes.md) 전체 화면 및 가상 공간 모드를 사용 하는 방법을 설명 합니다.
+ [방법: 편집기 모드 관리](../ide/how-to-manage-editor-modes.md) 전체 화면 및 가상 공간 모드를 사용 하는 방법을 설명 합니다.
 
-## <a name="see-also"></a>관련 항목:
- [코드 작성](../ide/writing-code-in-the-code-and-text-editor.md) [코드로 Bookmarks 설정](../ide/setting-bookmarks-in-code.md) [일반, 환경, 대화상자 옵션](../ide/reference/general-environment-options-dialog-box.md) [문서 환경, 대화상자 옵션](../ide/reference/documents-environment-options-dialog-box.md) [폰트 및 색상, 환경, 대화상자 옵션](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+## <a name="see-also"></a>관련 항목
+ 코드 [작성](../ide/writing-code-in-the-code-and-text-editor.md) [Setting Bookmarks in Code](../ide/setting-bookmarks-in-code.md) [, 환경](../ide/reference/general-environment-options-dialog-box.md) , 옵션 [대화 상자,](../ide/reference/documents-environment-options-dialog-box.md) 환경, 옵션 대화 상자, 환경, 옵션 대화 상자, 환경, 옵션 대화 상자, 환경, 환경 [, 옵션 대화](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) 상자

@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 63d405b0e62735c0c1e3d7bb716ea2db29bc19fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651570"
 ---
 # <a name="in-source-suppression-overview"></a>ISS 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-소스 비 표시 제거는 위반을 발생 시키는 코드 세그먼트에 **SuppressMessage** 특성을 추가 하 여 관리 코드에서 코드 분석 위반을 억제 하거나 무시 하는 기능입니다. **SuppressMessage** 특성은 CODE_ANALYSIS 컴파일 기호가 컴파일 타임에 정의 된 경우에만 관리 코드 어셈블리의 IL 메타 데이터에 포함 되는 조건부 특성입니다.
+소스 비 표시 제거는 위반을 발생 시키는 코드 세그먼트에 **SuppressMessage** 특성을 추가 하 여 관리 코드에서 코드 분석 위반을 억제 하거나 무시 하는 기능입니다. **SuppressMessage** 특성은 컴파일 시간에 CODE_ANALYSIS 컴파일 기호가 정의 된 경우에만 관리 코드 어셈블리의 IL 메타 데이터에 포함 되는 조건부 특성입니다.
 
  C++/CLI에서 CA_SUPPRESS_MESSAGE 또는 CA_GLOBAL_SUPPRESS_MESSAGE 매크로를 헤더 파일에 사용하여 특성을 추가합니다.
 
  소스 비 표시 제거 메타 데이터를 실수로 전달 하지 않도록 릴리스 빌드에서 소스 비 표시 오류를 사용 하면 안 됩니다. 원본 비 표시 제거의 처리 비용으로 인해 원본 비 표시 메타 데이터를 포함 하 여 응용 프로그램의 성능이 저하 될 수도 있습니다.
 
 > [!NOTE]
-> 이러한 특성을 직접 코딩할 필요가 없습니다. 자세한 내용은 [방법: 메뉴 항목을 사용 하 여 경고 표시 안 함](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)을 참조 하세요. 코드에 C++ 메뉴 항목을 사용할 수 없습니다.
+> 이러한 특성을 직접 코딩할 필요가 없습니다. 자세한 내용은 [방법: 메뉴 항목을 사용 하 여 경고 표시 안 함](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)을 참조 하세요. 메뉴 항목은 c + + 코드에 사용할 수 없습니다.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 특성
  **오류 목록** 에서 코드 분석 경고를 마우스 오른쪽 단추로 클릭 한 다음 **메시지 표시 안 함**을 클릭 하면 코드 또는 프로젝트의 전역 비 표시 오류 (Suppression) 파일에 **SuppressMessage** 특성이 추가 됩니다.
@@ -52,7 +52,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 ```
 
- 여기서
+ 위치:
 
 - **규칙 범주** -규칙이 정의 된 범주입니다. 코드 분석 규칙 범주에 대 한 자세한 내용은 [관리 코드 경고에 대 한 코드 분석](../code-quality/code-analysis-for-managed-code-warnings.md)을 참조 하세요.
 
@@ -64,13 +64,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **범위** -경고가 표시 되지 않는 대상입니다. 대상이 지정 되지 않은 경우 특성의 대상으로 설정 됩니다. 지원 되는 범위는 다음과 같습니다.
 
-  - Module
+  - 모듈
 
   - 네임스페이스
 
   - 리소스
 
-  - Type
+  - 형식
 
   - 멤버
 
@@ -79,11 +79,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="suppressmessage-usage"></a>SuppressMessage 사용
  **SuppressMessage** 특성의 인스턴스가 적용 되는 수준에서 코드 분석 경고가 표시 되지 않습니다. 이는 위반이 발생 하는 코드에 비 표시 정보를 긴밀 하 게 두는 것입니다.
 
- 일반 표시 형식에는 규칙 범주와 규칙 이름에 대 한 사람이 읽을 수 있는 선택적 표현이 포함 된 규칙 식별자가 포함 되어 있습니다. 예를 들어 개체에 적용된
+ 일반 표시 형식에는 규칙 범주와 규칙 이름에 대 한 사람이 읽을 수 있는 선택적 표현이 포함 된 규칙 식별자가 포함 되어 있습니다. 예를 들면 다음과 같습니다.
 
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
- 원본 비 표시 메타 데이터를 최소화 하는 엄격한 성능상의 이유가 있는 경우 규칙 이름 자체를 남겨둘 수 있습니다. 규칙 범주와 해당 규칙 ID는 모두 충분히 고유한 규칙 식별자를 구성 합니다. 예를 들어 개체에 적용된
+ 원본 비 표시 메타 데이터를 최소화 하는 엄격한 성능상의 이유가 있는 경우 규칙 이름 자체를 남겨둘 수 있습니다. 규칙 범주와 해당 규칙 ID는 모두 충분히 고유한 규칙 식별자를 구성 합니다. 예를 들면 다음과 같습니다.
 
  `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -123,5 +123,5 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="global-suppression-file"></a>전역 비 표시 파일
  전역 비 표시 오류 (suppression) 파일은 대상을 지정 하지 않는 전역 수준 비 표시 오류 (suppression) 또는 비 표시 오류 (suppression)를 유지 합니다. 예를 들어 어셈블리 수준 위반에 대 한 비 표시 오류는이 파일에 저장 됩니다. 또한 일부 ASP.NET 비 표시 오류는이 파일에 저장 됩니다 .이는 프로젝트 수준 설정을 폼의 코드에 사용할 수 없기 때문입니다. 오류 목록 창에서 **메시지 표시 안 함** 명령의 **Project 비 표시 오류 (suppression) 파일** 옵션을 처음으로 선택 하면 전역 비 표시 제거가 만들어지고 프로젝트에 추가 됩니다. 자세한 내용은 [방법: 메뉴 항목을 사용 하 여 경고 표시 안 함](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  <xref:System.Diagnostics.CodeAnalysis>

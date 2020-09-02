@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875490"
 ---
 # <a name="runtime-activity-designers"></a>런타임 활동 디자이너
@@ -21,11 +21,11 @@ Runtime 활동 디자이너는 워크플로 활동을 지속하고 종료하는 
 ## <a name="related-sections"></a>관련 섹션
  [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 
- [Flowchart](../workflow-designer/flowchart-activity-designers.md)
+ [순서도](../workflow-designer/flowchart-activity-designers.md)
 
  [메시징](../workflow-designer/messaging-activity-designers.md)
 
- [기본 형식](../workflow-designer/primitives-activity-designers.md)
+ [기본 요소](../workflow-designer/primitives-activity-designers.md)
 
  [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 

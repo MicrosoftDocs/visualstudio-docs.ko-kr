@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0548e1e791c41d806ccc222176ee571b037389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153735"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion 메서드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-디버거에서 중단점 대상으로 사용 된 자리 표시자 메서드. 이 메서드가 인라인 또는 최적화 된 아니어야 합니다.  
+디버거에서 중단점 대상으로 사용 되는 자리 표시자 메서드입니다. 이 메서드는 인라인 또는 최적화 되지 않아야 합니다.  
   
  **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
@@ -33,9 +33,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```  
   
 ## <a name="remarks"></a>설명  
- 작업을 사용 하 여 모든 조인 연산이 해당 디버거 알림 비트가 설정 되 면이 메서드를 호출 해야 합니다.  
+ 작업에 대 한 모든 조인 작업은 디버거 알림 비트가 설정 된 경우이 메서드를 호출 해야 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 ## <a name="see-also"></a>참고 항목  
- [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)
+ [작업 클래스](../../extensibility/debugger/task-class-internal-members.md)

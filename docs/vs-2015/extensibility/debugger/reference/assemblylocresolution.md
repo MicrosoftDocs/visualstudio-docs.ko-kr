@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153606"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-어셈블리 찾을 위치를 지정 합니다.  
+어셈블리가 있는 위치를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,23 +50,23 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
  어셈블리는 현재 네임 스페이스에 있습니다.  
   
  ALR_USERDIR  
- 어셈블리는 사용자 디렉터리에 있습니다.  
+ 어셈블리가 사용자 디렉터리에 있습니다.  
   
  ALR_SHAREDDIR  
  어셈블리는 공유 디렉터리에 있습니다.  
   
  ALR_REMOTEDIR  
- 어셈블리는 원격 디렉터리에 있습니다.  
+ 어셈블리가 원격 디렉터리에 있습니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에서 반환 되는 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) 및 [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) 메서드.  
+ 이러한 값은 [Resolveassemblyref](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) 및 [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) 메서드에서 반환 됩니다.  
   
- 이러한 값을 결합할 수는 `OR` 작업 합니다.  
+ 이러한 값은 작업과 함께 사용할 수 있습니다 `OR` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

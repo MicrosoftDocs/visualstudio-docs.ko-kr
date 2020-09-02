@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704361"
 ---
 # <a name="concurrency-visualizer-markers"></a>동시성 시각화 도우미 표식
@@ -63,7 +63,7 @@ ms.locfileid: "65704361"
 ## <a name="markers-from-eventsource"></a>EventSource의 표식  
  동시성 시각화 도우미는 EventSource 이벤트도 표시할 수 있습니다.  자세한 내용은 [EventSource 이벤트를 표식으로 시각화](../profiling/visualizing-eventsource-events-as-markers.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [플래그 표식](../profiling/flag-markers.md)   
  [메시지 표식](../profiling/message-markers.md)   
  [범위 표식](../profiling/span-markers.md)   

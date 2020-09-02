@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec24e9ee3079d3b02ac13759b6ab5bdee8c07a84
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706453"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>소스 제어 플러그 인 API 버전 1.3의 새로운 기능&#39;
@@ -34,6 +34,6 @@ ms.locfileid: "88706453"
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|지정 된 파일의 자동 "Get"을 수행 합니다. 사용자 인터페이스가 표시 되지 않습니다.|
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|사용자 관련 옵션에 대 한 액세스를 허용 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [시작](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

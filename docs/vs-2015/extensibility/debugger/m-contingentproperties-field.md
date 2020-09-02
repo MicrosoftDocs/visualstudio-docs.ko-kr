@@ -11,22 +11,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ccc99657b43fa53b8bf4f7d78ece61da8e7069cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153764"
 ---
-# <a name="mcontingentproperties-field"></a>m_contingentProperties 필드
+# <a name="m_contingentproperties-field"></a>m_contingentProperties 필드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-추가 속성을 저장 합니다 <xref:System.Threading.Tasks.Task> 개체입니다.  
+개체의 추가 속성을 저장 <xref:System.Threading.Tasks.Task> 합니다.  
   
  **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.  
+ .NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,5 +36,5 @@ ms.locfileid: "68153764"
   
 ## <a name="remarks"></a>설명  
   
-## <a name="see-also"></a>참고 항목  
- [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>관련 항목  
+ [작업 클래스](../../extensibility/debugger/task-class-internal-members.md)

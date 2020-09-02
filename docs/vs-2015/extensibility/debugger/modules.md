@@ -12,23 +12,23 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a2b2f04e1088b9b06cb05015a6b0b4da5d60927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153742"
 ---
 # <a name="modules"></a>모듈
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-디버거 아키텍처 측면을 **모듈**:  
+디버거 아키텍처 측면에서 **모듈**은 다음과 같습니다.  
   
-- 코드 예: 실행 파일 또는 DLL의 물리적 컨테이너입니다.  
+- 는 실행 파일 또는 DLL과 같은 코드의 물리적 컨테이너입니다.  
   
-- 해당 기호를 다시 로드 하 고 스스로 설명할 수 있습니다. 모듈 설명 IDE의 모듈 창에 표시 됩니다.  
+- 기호를 다시 로드 하 고 자체를 설명할 수 있습니다. 모듈 설명은 IDE의 모듈 창에 표시 됩니다.  
   
-- 로 표시 됩니다는 [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) 모듈을 설명 하는 디버그 엔진에 의해 생성 된 인터페이스입니다.  
+- 는 디버그 엔진에서 모듈을 설명 하기 위해 만든 [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) 인터페이스로 표시 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 개념](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

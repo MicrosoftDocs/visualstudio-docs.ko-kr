@@ -31,10 +31,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682431"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT 라이브러리를 사용하여 메모리 누수 찾기
@@ -121,7 +121,7 @@ Object dump complete.
   
   그 외에도 메모리 누수 보고서에 표시되지 않는 두 가지 메모리 블록 형식이 있습니다. *빈 블록* 은 해제된 메모리로, 정의에 따라 누수되지 않은 메모리를 나타냅니다. *무시 블록* 은 메모리 누수 보고서에서 제외하도록 사용자가 명시적으로 지정한 메모리입니다.  
   
-  이러한 기술은 표준 CRT `malloc` 함수를 사용하여 할당된 메모리에 대해 작동합니다. 하지만 프로그램이 사용 하 여 메모리를 할당 하는 경우는 C++ `new` 연산자, 표시 될 수 있습니다만 파일 및 줄 번호 위치 전역 구현의 `operator new` 호출 `_malloc_dbg` 메모리 누수 보고서에. 해당 동작을 매우 유용한 아니므로 다음과 같은 매크로 사용 하 여 할당을 수행한 줄을 보고 변경할 수 있습니다. 
+  이러한 기술은 표준 CRT `malloc` 함수를 사용하여 할당된 메모리에 대해 작동합니다. 그러나 프로그램에서 c + + 연산자를 사용 하 여 메모리를 할당 하는 경우 `new` `operator new` `_malloc_dbg` 메모리 누수 보고서에서 전역 호출의 구현이 파일 및 줄 번호를 볼 수 있습니다. 이 동작은 그다지 유용 하지 않기 때문에 다음과 같은 매크로를 사용 하 여 할당 한 줄을 보고 하도록 변경할 수 있습니다. 
  
 ```cpp  
 #ifdef _DEBUG
@@ -133,7 +133,7 @@ Object dump complete.
 #endif
 ```  
   
-바꾸면 이제 합니다 `new` 연산자를 사용 하 여는 `DBG_NEW` 코드에서 매크로입니다. 전역 오버 로드를 사용이 디버그 빌드에서 `operator new` 블록 형식, 파일 및 줄 번호에 대 한 추가 매개 변수를 사용 하는 합니다. 이 오버 로드 `new` 호출 `_malloc_dbg` 추가 정보를 기록 합니다. 사용 하는 경우 `DBG_NEW`, 메모리 누수 보고서는 누수 된 개체가 할당 된 위치에 파일 이름과 줄 번호를 표시 합니다. 일반 정품 빌드에서 사용 하 여 기본 `new`입니다. (권장 하지는 않습니다 라는 전처리기 매크로 만들면 `new`, 또는 다른 언어 키워드입니다.) 기술의 예는 다음과 같습니다.  
+이제 코드에서 `DBG_NEW` 매크로를 사용하여 `new` 연산자를 바꿀 수 있습니다. 디버그 빌드에서는 `operator new` 블록 형식, 파일 및 줄 번호에 대 한 추가 매개 변수를 사용 하는 global의 오버 로드를 사용 합니다. `new` `_malloc_dbg` 추가 정보를 기록 하는 호출의이 오버 로드입니다. 를 사용 하는 경우 `DBG_NEW` 메모리 누수 보고서에는 누수 된 개체가 할당 된 파일 이름 및 줄 번호가 표시 됩니다. 정품 빌드에서는 기본값을 사용 `new` 합니다. (라는 전처리기 매크로 또는 다른 언어 키워드를 만들지 않는 것이 좋습니다 `new` .) 다음은이 방법의 예입니다.  
   
 ```cpp  
 // debug_new.cpp
@@ -163,7 +163,7 @@ void main() {
 }
 ```  
   
-Visual Studio에 대 한 호출의 디버거에서이 코드를 실행 하면 `_CrtDumpMemoryLeaks` 에서 보고서를 생성 합니다 **출력** 다음과 유사 하 게 보이는 창:  
+Visual Studio의 디버거에서이 코드를 실행 하는 경우에 대 한 호출은 `_CrtDumpMemoryLeaks` **출력** 창에 다음과 비슷한 보고서를 생성 합니다.  
   
 ```Output  
 Detected memory leaks!
@@ -174,7 +174,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-그러면 debug_new.cpp의 20 번 줄에서 유출된 할당 되었는지 합니다.  
+이는 debug_new의 20 번째 줄에 유출 된 할당이 있음을 나타냅니다.  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>메모리 할당 번호에 중단점 설정  
  메모리 할당 번호는 누수된 메모리 블록이 할당된 시기를 알려 줍니다. 예를 들어 메모리 할당 번호가 18인 블록은 애플리케이션 실행 도중 18번째로 할당된 메모리 블록입니다. CRT 보고서에서는 실행 중의 모든 메모리 블록 할당 횟수를 계산합니다. 여기에는 CRT 라이브러리와 MFC 등의 다른 라이브러리에 의한 할당이 포함됩니다. 따라서 메모리 할당 번호가 18인 블록은 코드에서 18번째로 할당된 메모리 블록이 아닐 수도 있습니다. 대개는 이 경우에 해당됩니다.  
@@ -187,7 +187,7 @@ Object dump complete.
   
 2. 애플리케이션이 중단점에서 중단되면 **조사식** 창을 실행합니다.  
   
-3. 에 **조사식** 창, 형식 `_crtBreakAlloc` 에 **이름** 열입니다.  
+3. **조사식** 창에서 **이름** 열에 `_crtBreakAlloc`를 입력합니다.  
   
     CRT 라이브러리의 다중 스레드 DLL 버전을 사용할 경우(/MD 옵션) `{,,ucrtbased.dll}_crtBreakAlloc`과 같이 컨텍스트 연산자를 포함해야 합니다.  
   
@@ -199,15 +199,15 @@ Object dump complete.
   
    메모리 할당 번호에 중단점을 설정한 후 디버깅을 계속할 수 있습니다. 이전과 같은 조건에서 프로그램을 실행하려면 메모리 할당 순서가 변경되지 않도록 주의하세요. 지정된 메모리 할당에서 프로그램이 중단되면 **호출 스택** 창과 다른 디버거 정보를 사용하여 메모리가 할당된 조건을 확인할 수 있습니다. 그런 다음 실행을 계속하여 개체에 발생한 상황을 살펴보고 메모리가 올바르게 할당 해제되지 않은 원인을 확인할 수 있습니다.  
   
-   개체에 데이터 중단점을 설정하는 것도 유용합니다. 자세한 내용은 [Using Breakpoints](../debugger/using-breakpoints.md)을 참조하세요.  
+   개체에 데이터 중단점을 설정하는 것도 유용합니다. 자세한 내용은 [중단점 사용](../debugger/using-breakpoints.md)을 참조 하세요.  
   
-   코드에서 메모리 할당 중단점을 설정할 수도 있습니다. 여기에는 두 가지 방법이 있습니다.  
+   코드에서 메모리 할당 중단점을 설정할 수도 있습니다. 이때 다음과 같은 두 가지 방법을 사용할 수 있습니다.  
   
 ```  
 _crtBreakAlloc = 18;  
 ```  
   
- 또는  
+ 또는:  
   
 ```  
 _CrtSetBreakAlloc(18);  
@@ -257,12 +257,12 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
   
  `_CrtMemDifference` 는 메모리 상태 `s1` 과 `s2` 를 비교하고,`s3`과 `s1` 의 차이를 나타내는 결과를 `s2`에 반환합니다.  
   
- 메모리 누수를 찾는 한 가지 기술은 응용 프로그램의 처음과 마지막에 `_CrtMemCheckpoint` 호출을 배치한 다음 `_CrtMemDifference`를 사용하여 결과를 비교하는 작업으로 시작됩니다. `_CrtMemDifference` 가 메모리 누수를 표시하는 경우, `_CrtMemCheckpoint` 호출을 추가하여 누수 원인을 확인할 때까지 이진 검색을 통해 프로그램을 나눌 수 있습니다.  
+ 메모리 누수를 찾는 한 가지 기술은 애플리케이션의 처음과 마지막에 `_CrtMemCheckpoint` 호출을 배치한 다음 `_CrtMemDifference` 를 사용하여 결과를 비교하는 작업으로 시작됩니다. `_CrtMemDifference` 가 메모리 누수를 표시하는 경우, `_CrtMemCheckpoint` 호출을 추가하여 누수 원인을 확인할 때까지 이진 검색을 통해 프로그램을 나눌 수 있습니다.  
   
 ## <a name="false-positives"></a>가양성(false positive)  
  간혹 `_CrtDumpMemoryLeaks` 가 메모리 누수를 잘못 표시하는 경우도 있습니다. 이러한 오류는 내부 할당을 `_CRT_BLOCK`이나 `_CLIENT_BLOCK`대신 _NORMAL_BLOCK으로 표시하는 라이브러리를 사용할 때 발생할 수 있습니다. 이 경우 `_CrtDumpMemoryLeaks` 가 사용자 할당과 내부 라이브러리 할당을 구별할 수 없게 됩니다. `_CrtDumpMemoryLeaks`를 호출한 이후에 라이브러리 할당을 위한 전역 소멸자가 실행되면 모든 내부 라이브러리 할당이 메모리 누수로 보고됩니다. Visual Studio .NET 이전 버전의 표준 템플릿 라이브러리에서는 `_CrtDumpMemoryLeaks` 가 이러한 가양성(false positive)을 보고했지만, 최신 릴리스에서는 이 문제가 해결되었습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [CRT 디버그 힙 정보](../debugger/crt-debug-heap-details.md)   
  [디버거 보안](../debugger/debugger-security.md)   
  [네이티브 코드 디버그](../debugger/debugging-native-code.md)

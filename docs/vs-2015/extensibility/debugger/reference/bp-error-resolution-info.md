@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 246cdc245d6b6828eee7cd60e1aa94c487b77905
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153551"
 ---
-# <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
+# <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-위치, 프로그램 및 스레드를 포함 하 여 오류 중단점을 해상도 설명 합니다.  
+위치, 프로그램 및 스레드를 포함 한 오류 중단점의 해결 방법을 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,34 +50,34 @@ public struct BP_ERROR_RESOLUTION_INFO { 
   
 ## <a name="members"></a>멤버  
  `dwFields`  
- 값을 조합 합니다 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) 채워진이 구조의 필드를 지정 하는 열거형입니다.  
+ 이 구조체의 필드를 입력 하는 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) 열거형 값의 조합입니다.  
   
  `bpResLocation`  
- 합니다 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 중단점 해결 위치를 지정 하는 공용 구조체입니다.  
+ 중단점 확인 위치를 지정 하는 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 공용 구조체입니다.  
   
  `pProgram`  
- 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 중단점 오류가 발생 한 응용 프로그램을 나타내는 개체입니다.  
+ 중단점 오류가 발생 한 응용 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.  
   
  `pThread`  
- 합니다 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 중단점 오류를 발생 시킨 응용 프로그램이 실행 되는 스레드를 나타내는 개체입니다.  
+ 중단점 오류를 생성 한 응용 프로그램이 실행 되 고 있는 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.  
   
  `bstrMessage`  
- 모든 경고 또는 오류 메시지에서이 오류 해결 결과 포함 하는 문자열입니다.  
+ 이 오류 해결 결과로 발생 하는 경고 또는 오류 메시지를 포함 하는 문자열입니다.  
   
  `dwType`  
- 값을 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) 중단점 오류 형식을 지정 하는 열거형입니다.  
+ 중단점 오류 유형을 지정 하는 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) 열거형의 값입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에서 반환 되는 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) 메서드.  
+ 이 구조체는 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) 메서드에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   

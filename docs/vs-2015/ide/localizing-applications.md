@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7fa9aa7a4a19ebd5ae45ee84364e71043a28f6be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651468"
 ---
 # <a name="localizing-applications"></a>애플리케이션 지역화
@@ -36,8 +36,8 @@ ms.locfileid: "72651468"
 
  [지역화를 위한 중립 리소스 언어](../ide/neutral-resources-languages-for-localization.md) 애플리케이션의 주 어셈블리에 포함된 리소스의 문화권을 지정하는 <xref:System.Resources.NeutralResourcesLanguageAttribute> 클래스를 소개합니다.
 
-## <a name="related-sections"></a>관련 단원
- [.NET Framework을 기반으로 하는 국가별 응용 프로그램 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Basic 또는 시각적 개체 C#를 사용 하 여 국제 시장을 위한 소프트웨어 개발과 관련 된 개념을 설명 합니다.
+## <a name="related-sections"></a>관련 섹션
+ [.NET Framework을 기반으로 하는 국가별 응용 프로그램 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Basic 또는 Visual c #을 사용 하 여 국제 시장을 위한 소프트웨어 개발과 관련 된 개념을 설명 합니다.
 
  [Windows Forms 전역화](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) 여러 문화권을 지원하는 Windows 애플리케이션을 만드는 방법에 대한 페이지의 링크를 제공합니다.
 
