@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547084"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 저장
@@ -82,7 +82,7 @@ ms.locfileid: "85547084"
 ## <a name="robust-programming"></a>강력한 프로그래밍
  통합 문서를 저장하거나 복사하는 메서드를 대화형으로 취소하면 코드에서 런타임 오류가 발생합니다. 예를 들어 프로시저에서 메서드를 호출 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 하지만 excel에서 프롬프트를 사용 하지 않는 경우 사용자가 메시지가 표시 되 면 **취소** 를 클릭 하면 excel에서 런타임 오류가 발생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [통합 문서 작업](../vsto/working-with-workbooks.md)
 - [통합 문서 호스트 항목](../vsto/workbook-host-item.md)
 - [방법: 프로그래밍 방식으로 통합 문서 닫기](../vsto/how-to-programmatically-close-workbooks.md)

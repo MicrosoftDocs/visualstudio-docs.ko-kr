@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547188"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>방법: 기본 제공 탭 사용자 지정
@@ -66,7 +66,7 @@ ms.locfileid: "85547188"
 
      컨트롤 Id 목록은 [office 2010 도움말 파일: office 흐름 사용자 인터페이스 제어 식별자](https://www.microsoft.com/download/details.aspx?id=6627)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [리본 XML](../vsto/ribbon-xml.md)

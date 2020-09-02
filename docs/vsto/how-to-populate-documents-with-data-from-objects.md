@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547175"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>방법: 개체의 데이터로 문서 채우기
@@ -66,7 +66,7 @@ VSTO 추가 기능 프로젝트에서 컨트롤을 만들고 런타임에 바인
 
 4. 데이터 원본을 데이터 바인딩으로 컨트롤에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

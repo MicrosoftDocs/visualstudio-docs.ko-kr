@@ -19,14 +19,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 77bb2c7abb49dbf6fe973ebc80f8340000e4afbd
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846000"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>레거시 상태 시스템 워크플로 디자이너 사용
-[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 새 상태 시스템 워크플로 프로젝트를 만드는 경우 **상태 시스템 워크플로 콘솔 응용 프로그램** 또는 **상태 시스템 워크플로 라이브러리** 레거시 프로젝트 템플릿을 사용 하도록 선택할 수 있습니다. 이러한 상태 시스템 프로젝트 템플릿 중 하나를 선택하면 상태 시스템 디자이너가 레거시 Workflow Designer 사용자 인터페이스로 나타납니다. 레거시 상태 시스템 프로젝트 템플릿에 대 한 자세한 내용은 [방법: 상태 시스템 워크플로 콘솔 응용 프로그램 만들기 (레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 및 [방법: 상태 시스템 워크플로 라이브러리 만들기 (레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)를 참조 하세요.
+또는 중 하나를 대상으로 하는 새 상태 시스템 워크플로 프로젝트를 만드는 경우 [!INCLUDE[vs2010](../includes/vs2010-md.md)] [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] **상태 시스템 워크플로 콘솔 응용 프로그램** 또는 **상태 시스템 워크플로 라이브러리** 레거시 프로젝트 템플릿을 사용 하도록 선택할 수 있습니다. 이러한 상태 시스템 프로젝트 템플릿 중 하나를 선택하면 상태 시스템 디자이너가 레거시 Workflow Designer 사용자 인터페이스로 나타납니다. 레거시 상태 시스템 프로젝트 템플릿에 대 한 자세한 내용은 [방법: 상태 시스템 워크플로 콘솔 응용 프로그램 만들기 (레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 및 [방법: 상태 시스템 워크플로 라이브러리 만들기 (레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)를 참조 하세요.
 
  상태 시스템 워크플로는 상태 집합으로 구성됩니다. 하나의 상태가 초기 상태로 표시됩니다. 각 상태는 특정 이벤트 집합을 받을 수 있으며 이벤트에 따라 다른 상태로 전환될 수 있습니다. 상태 시스템 워크플로는 최종 상태를 가질 수 있으며, 최종 상태로 전환되면 워크플로가 완료됩니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "75846000"
 ## <a name="state-machine-workflow-activities"></a>상태 시스템 워크플로 활동
  다음 표에서는 상태 시스템 Workflow Designer에서 사용되는 핵심 활동에 대해 설명합니다.
 
-|도구 상자 이름|활동|설명|
+|도구 상자 이름|작업|설명|
 |------------------|--------------|-----------------|
 |**상태**|[StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx)|상태 시스템의 상태를 나타냅니다. 추가 **Stateactivity** 활동을 포함할 수 있습니다. 자세한 내용은 [StateActivity 활동 사용](https://msdn2.microsoft.com/library/bb628612.aspx)을 참조 하세요.|
 |**SetState**|[SetStateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.setstateactivity.aspx)|새 상태로의 전환을 지정합니다. 자세한 내용은 [SetStateActivity 활동 사용](https://msdn2.microsoft.com/library/bb628469.aspx)을 참조 하세요.|
@@ -57,5 +57,5 @@ ms.locfileid: "75846000"
 >
 > **문서 개요** 창을 열려면 **보기** 메뉴에서 **다른 창**을 가리킨 다음 **문서 개요**를 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [방법: 상태 시스템 워크플로 콘솔 응용 프로그램 만들기 (레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 방법: [StateFinalizationActivity 활동](https://msdn2.microsoft.com/library/bb675278.aspx) 을 사용 하 여 [StateInitializationActivity 활동](https://msdn2.microsoft.com/library/bb675253.aspx) 을 사용 하 여 [상태 시스템 워크플로 라이브러리 (레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [상태 시스템](https://msdn2.microsoft.com/library/bb628601.aspx) [워크플로](https://msdn2.microsoft.com/library/bb628612.aspx) 만들기 [EventDrivenActivity 활동을 사용](https://msdn2.microsoft.com/library/bb628466.aspx) 하 여 [setstateactivity](https://msdn2.microsoft.com/library/bb628469.aspx) 활동 사용

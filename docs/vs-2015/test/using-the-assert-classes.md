@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657131"
 ---
 # <a name="using-the-assert-classes"></a>Assert 클래스 사용
@@ -59,5 +59,5 @@ UnitTestingFramework 네임스페이스의 Assert 클래스를 사용하여 특�
 
  개발 코드의 메서드가 throw할 것으로 예상했던 예외가 실제로 해당 메서드에서 throw됨을 테스트 메서드가 확인하도록 하려는 경우 ExpectedExceptionAttribute 특성으로 테스트 메서드를 데코레이팅합니다.
 
-## <a name="see-also"></a>관련 항목:
- [기존 코드에 대 한 단위 테스트 만들기 및 실행](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) <xref:Microsoft.VisualStudio.TestTools.UnitTesting>
+## <a name="see-also"></a>관련 항목
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [기존 코드에 대한 단위 테스트 만들기 및 실행](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

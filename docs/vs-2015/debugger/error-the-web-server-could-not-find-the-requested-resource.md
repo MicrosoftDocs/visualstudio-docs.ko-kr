@@ -1,5 +1,5 @@
 ---
-title: '오류: 웹 서버에서 요청 된 리소스를 찾을 수 없습니다. Microsoft Docs'
+title: '오류: 웹 서버에서 요청한 리소스를 찾을 수 없음 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845124"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>오류: 요청한 리소스를 웹 서버에서 찾지 못했습니다.
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>오류: 웹 서버에서 요청한 리소스를 찾을 수 없습니다
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 보안 고려 사항 때문에 IIS에서 일반 오류를 반환했습니다.  
@@ -34,6 +34,6 @@ ms.locfileid: "75845124"
   
  IIS 문제 해결에 대한 자세한 내용은 [IIS 관리](https://www.iis.net/learn/manage/provisioning-and-managing-iis/iis-management-and-administration)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [UrlScan 보안 도구](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
- [오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+ ‘오류:[ 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

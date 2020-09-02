@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547149"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>방법: 서비스의 데이터로 문서 채우기
@@ -49,7 +49,7 @@ Windows Forms 프로젝트에서와 동일한 방식으로 Microsoft Office에 �
 
 프로젝트를 실행하면 컨트롤이 데이터 원본 첫 번째 레코드를 표시합니다. <xref:System.Windows.Forms.BindingSource>의 개체를 사용하여 통화 이벤트를 처리하여 레코드를 스크롤하게 할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)

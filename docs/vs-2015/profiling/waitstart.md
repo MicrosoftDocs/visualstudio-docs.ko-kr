@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1737f13a5271b2c4012ff6ee957fa08b0b8b7799
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164550"
 ---
 # <a name="waitstart"></a>WaitStart
@@ -36,12 +36,12 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
 ## <a name="required-options"></a>필수 옵션  
  WaitStart 옵션은 Start 하위 명령과만 함께 사용할 수 있습니다.  
   
- **Output:** `filename`  
+ **출력:**`filename`  
  출력 파일 이름을 지정합니다.  
   
 ## <a name="remarks"></a>설명  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 배치 파일 예제에서 Start 명령은 프로파일러가 초기화될 때까지 5초 동안 대기합니다.  
   
 ```  

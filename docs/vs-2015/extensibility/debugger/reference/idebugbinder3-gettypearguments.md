@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Microsoft Docs
+title: 'IDebugBinder3:: GetTypeArguments | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,15 +13,15 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f7b6038013370ad85a665d9899d367e621aa991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192278"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
-이 메서드는이 개체와 연결 된 인수 형식 목록을 검색 합니다.
+이 메서드는이 개체와 연결 된 인수 형식의 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,25 +47,25 @@ int GetTypeArguments(
 
  `skip`
 
- [in] 인수 형식 가져오기 전에 건너뛸 필드 수입니다.
+ 진행 인수 형식을 가져오기 전에 건너뛸 필드 수입니다.
 
  `count`
 
- [in] 반환할 인수 필드 수 (도의 크기를 지정 된 `ppFields` 배열)입니다.
+ 진행 반환할 인수 필드의 수입니다 (도 배열의 크기를 지정 `ppFields` ).
 
  `ppFields`
 
- [out에서] 이 메서드는 반환 시 채울 수 있는 필드의 배열입니다.
+ [in, out] 이 메서드가 반환 될 때 채워질 필드의 배열입니다.
 
  `pFetched`
 
- [out] 인수 형식 필드의 수는 실제로 (선택 사항)을 반환 합니다.
+ 제한이 실제로 반환 된 인수 형식 필드의 수입니다 (선택 사항).
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 된 수의 인수 형식 미리 얻을 수 있습니다 [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)합니다.
+ 인수 형식의 수는 [Gettypeargumentcount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)를 사용 하 여 미리 가져올 수 있습니다.
 
 ## <a name="see-also"></a>관련 항목
 

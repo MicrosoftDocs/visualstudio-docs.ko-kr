@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스의 코드 조각에 대 한 지원 | Microsoft Docs
+title: 레거시 언어 서비스의 코드 조각 지원 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,54 +13,54 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691782"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 조각 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-코드 조각은 소스 파일에 삽입 되는 코드입니다. 코드 조각 자체는 XML 기반 서식 파일 필드 집합이 포함 된 경우 이러한 필드에는 코드 조각이 삽입 되 고 코드 조각 삽입 되는 컨텍스트에 따라 다른 값을 가질 수 후 강조 표시 됩니다. 코드 조각을 삽입 한 후에 즉시 코드 조각 언어 서비스에 서식을 지정할 수 있습니다.  
+코드 조각은 소스 파일에 삽입 되는 코드 조각입니다. 코드 조각은 필드 집합을 사용 하는 XML 기반 템플릿입니다. 이러한 필드는 코드 조각이 삽입 된 후 강조 표시 되며 조각이 삽입 된 컨텍스트에 따라 다른 값을 가질 수 있습니다. 코드 조각이 삽입 된 직후에 언어 서비스는 코드 조각의 서식을 지정할 수 있습니다.  
   
- TAB 키를 사용 하 여 탐색할 수 조각의 필드를 허용 하는 특별 한 편집 모드에서 코드 조각을 삽입 됩니다. 필드는 IntelliSense 스타일 드롭다운 메뉴를 지원할 수 있습니다. 사용자는 ENTER 또는 ESC 키를 입력 하 여 소스 파일에 코드 조각을 커밋합니다. 조각에 대 한 자세한 내용은 참조 하세요 [코드 조각](../../ide/code-snippets.md)합니다.  
+ 코드 조각은 TAB 키를 사용 하 여 코드 조각의 필드를 탐색할 수 있도록 하는 특수 편집 모드에서 삽입 됩니다. 필드는 IntelliSense 스타일 드롭다운 메뉴를 지원할 수 있습니다. 사용자는 ENTER 키 또는 ESC 키를 입력 하 여 소스 파일에 코드 조각을 커밋합니다. 코드 조각에 대 한 자세한 내용은 [코드 조각](../../ide/code-snippets.md)을 참조 하세요.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 알아보려면 참조 [연습: 코드 조각 구현](../../extensibility/walkthrough-implementing-code-snippets.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 자세히 알아보려면 [연습: 코드 조각 구현](../../extensibility/walkthrough-implementing-code-snippets.md)을 참조 하세요.  
   
 > [!NOTE]
-> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
-## <a name="managed-package-framework-support-for-code-snippets"></a>관리 되는 코드 조각에 대 한 패키지 프레임 워크 지원  
- (MPF)에서 관리 되는 패키지 프레임 워크에서 코드 조각을 삽입 하려면 템플릿의 읽을 대부분의 코드 조각 기능을 지원 하 고 편집 모드에 특수 한을 사용 하도록 설정 합니다. 지원을 통해 관리 되는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 클래스입니다.  
+## <a name="managed-package-framework-support-for-code-snippets"></a>코드 조각에 대 한 관리 되는 패키지 프레임 워크 지원  
+ MPF (관리 되는 패키지 프레임 워크)는 템플릿을 읽어 코드 조각을 삽입 하 고 특수 편집 모드를 사용 하는 것부터 대부분의 조각 기능을 지원 합니다. 지원은 클래스를 통해 관리 됩니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> .  
   
- 경우는 <xref:Microsoft.VisualStudio.Package.Source> 클래스가 인스턴스화되면 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> 에서 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스 얻기 위해 호출 됩니다는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 개체 (는 기본 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스는 항상 새 반환 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 각각에 대 한 개체 <xref:Microsoft.VisualStudio.Package.Source> 개체)입니다.  
+ <xref:Microsoft.VisualStudio.Package.Source>클래스가 인스턴스화되면 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> 클래스의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 호출 하 여 개체를 가져옵니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.LanguageService> . 기본 클래스는 항상 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 각 개체에 대 한 새 개체를 반환 합니다 <xref:Microsoft.VisualStudio.Package.Source> .  
   
- MPF는 확장 기능을 지원 하지 않습니다. 확장 기능은 코드 조각 템플릿에 포함 된 필드에 배치 될 하나 이상의 값을 반환 하는 명명된 된 함수입니다. 언어에서 반환 된 값은 서비스를 통해 자체는 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 개체입니다. <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 개체 확장 기능을 지원 하도록 언어 서비스에 의해 구현 되어야 합니다.  
+ MPF는 확장 기능을 지원 하지 않습니다. 확장 함수는 코드 조각 템플릿에 포함 된 명명 된 함수 이며 필드에 배치할 하나 이상의 값을 반환 합니다. 값은 언어 서비스 자체에서 개체를 통해 반환 됩니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> . <xref:Microsoft.VisualStudio.Package.ExpansionFunction>확장 함수를 지원 하려면 언어 서비스에서 개체를 구현 해야 합니다.  
   
-## <a name="providing-support-for-code-snippets"></a>코드 조각에 대 한 지원을 제공합니다.  
- 코드 조각에 대 한 지원을 사용 하려면 제공 하거나 코드를 설치 해야 하 고 이러한 조각을 삽입 하려면 사용자에 대 한 의미를 제공 해야 합니다. 코드 조각에 대 한 지원을 사용 하도록 설정 하는 방법은 세 가지 단계가 있습니다.  
+## <a name="providing-support-for-code-snippets"></a>코드 조각에 대 한 지원 제공  
+ 코드 조각에 대 한 지원을 사용 하도록 설정 하려면 코드 조각을 제공 하거나 설치 해야 하며 사용자가 코드 조각을 삽입할 수 있는 방법을 제공 해야 합니다. 코드 조각에 대 한 지원을 사용 하도록 설정 하는 세 가지 단계가 있습니다.  
   
 1. 조각 파일을 설치 합니다.  
   
-2. 언어 서비스에 대 한 코드 조각을 사용 하도록 설정 합니다.  
+2. 언어 서비스에 코드 조각을 사용 하도록 설정 합니다.  
   
-3. 호출 된 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 개체입니다.  
+3. 개체를 호출 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 합니다.  
   
 ### <a name="installing-the-snippet-files"></a>조각 파일 설치  
- 언어에 대 한 모든 코드 조각은 파일당 일반적으로 하나의 코드 조각 템플릿 XML 파일에 템플릿으로 저장 됩니다. 코드 조각 템플릿을 사용 하는 XML 스키마에 대 한 내용은 참조 하세요 [코드 조각 스키마 참조](../../ide/code-snippets-schema-reference.md)합니다. 언어 ID를 사용 하 여 각 코드 조각 템플릿은 식별 되며 이 언어 ID 레지스트리에 지정 되 고 배치 됩니다는 `Language` 특성을 \<코드 > 템플릿에 태그입니다.  
+ 언어에 대 한 모든 코드 조각은 XML 파일에 템플릿으로 저장 됩니다. 일반적으로 파일 별로 하나의 코드 조각 템플릿을 저장 합니다. 코드 조각 템플릿에 사용 되는 XML 스키마에 대 한 자세한 내용은 [코드 조각 스키마 참조](../../ide/code-snippets-schema-reference.md)를 참조 하세요. 각 코드 조각 템플릿은 언어 ID로 식별 됩니다. 이 언어 ID는 레지스트리에 지정 되어 있으며 `Language` 템플릿에서 태그의 특성에 포함 됩니다 \<Code> .  
   
- 코드 조각 템플릿 파일이 저장 되어 있는 두 위치는 일반적으로: 언어를 설치 하는 1) 위치 하 고 2) 사용자의 폴더에 있습니다. 이러한 위치는 레지스트리에 추가 되므로 Visual Studio **코드 조각 관리자** 조각을 찾을 수 있습니다. 사용자의 폴더는 사용자가 만든 조각을 저장 됩니다.  
+ 일반적으로 코드 조각 템플릿 파일을 저장 하는 위치는 1) 사용자의 폴더에 저장 됩니다. 이러한 위치는 Visual Studio **코드 조각 관리자** 가 코드 조각을 찾을 수 있도록 레지스트리에 추가 됩니다. 사용자의 폴더는 사용자가 만든 코드 조각이 저장 되는 위치입니다.  
   
- 설치 된 코드 조각 템플릿 파일에 대 한 일반적인 폴더 레이아웃은 다음과 같습니다: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID*\Snippets 합니다.  
+ 설치 된 코드 조각 템플릿 파일의 일반적인 폴더 레이아웃은 다음과 같습니다. *[installroot]* \\ *[testlanguage]* \snippets \\ *[LCID]* \snippets)  
   
- *[InstallRoot]*  언어에 설치 된 폴더입니다.  
+ *[Installroot]* 는 언어가 설치 된 폴더입니다.  
   
- *[TestLanguage]*  폴더 이름으로 언어의 이름입니다.  
+ *[Testlanguage]* 은 (는) 폴더 이름으로 서의 언어 이름입니다.  
   
- *[LCID]*  로캘 ID입니다. 이 어떻게 지역화 된 버전의 코드 조각 저장 됩니다. 예를 들어 영어에 대 한 로캘 ID가 1033 이면 따라서 *[LCID]* 1033으로 바뀝니다.  
+ *[LCID]* 는 로캘 ID입니다. 이는 지역화 된 버전의 코드 조각을 저장 하는 방법입니다. 예를 들어 영어에 대 한 로캘 ID는 1033 이므로 *[LCID]* 는 1033로 바뀝니다.  
   
- 추가 파일을 제공 해야 하는 인덱스 파일이 며, 일반적으로 SnippetsIndex.xml 또는 ExpansionsIndex.xml (.xml으로 끝나는 유효한 파일을 사용할 수 있음)를 호출 하며 이 파일은 일반적으로에 저장 합니다 *[InstallRoot]*\\ *[TestLanguage]* 폴더 코드 조각 폴더와 언어 ID의 정확한 위치 및 언어의 GUID를 지정 합니다. 코드 조각을 사용 하는 서비스입니다. 인덱스 파일의 정확한 경로 "레지스트리 항목 설치"의 뒷부분에 설명 된 대로 레지스트리에 배치 됩니다. SnippetsIndex.xml 파일의 예는 다음과 같습니다.  
+ 추가 파일 하나를 제공 해야 하며, 인덱스 파일 (일반적으로 SnippetsIndex.xml 또는 ExpansionsIndex.xml 이라고 함)입니다. xml로 끝나는 유효한 파일 이름을 사용할 수 있습니다. 이 파일은 일반적으로 *[installroot]* \\ *[testlanguage]* 폴더에 저장 되며, 코드 조각을 사용 하는 언어 서비스의 언어 ID 및 GUID 뿐만 아니라 코드 조각 폴더의 정확한 위치를 지정 합니다. 인덱스 파일의 정확한 경로는 나중에 "레지스트리 항목 설치"의 설명에 따라 레지스트리에 저장 됩니다. SnippetsIndex.xml 파일의 예는 다음과 같습니다.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -77,26 +77,26 @@ ms.locfileid: "65691782"
 </SnippetCollection>  
 ```  
   
- \<언어 > 언어 ID를 지정 하는 태그 (의 `Lang` 특성) 및 언어 서비스 GUID.  
+ \<Language>태그는 언어 ID ( `Lang` 특성)와 언어 서비스 GUID를 지정 합니다.  
   
- 이 예제에서는 Visual Studio 설치 폴더에 언어 서비스를 설치 했다고 가정 합니다. 사용자의 현재 로캘 id % LCID % 바뀝니다. 여러 \<SnippetDir > 태그를 추가할 수 있습니다 각 로캘과 다른 디렉터리에 대 한 합니다. 또한 코드 조각 폴더 사용 하 여 인덱스 파일에서 식별 된 각 하위 폴더를 포함할 수 있습니다 합니다 \<SnippetSubDir >에 포함 된 태그는 \<SnippetDir > 태그입니다.  
+ 이 예제에서는 Visual Studio 설치 폴더에 언어 서비스를 설치 했다고 가정 합니다. % LCID%는 사용자의 현재 로캘 ID로 바뀝니다. \<SnippetDir>서로 다른 디렉터리와 로캘에 대해 하나씩 여러 태그를 추가할 수 있습니다. 또한 조각 폴더에는 하위 폴더가 포함 될 수 있으며, 각 하위 폴더는 태그에 포함 된 태그를 사용 하 여 인덱스 파일에서 식별 됩니다 \<SnippetSubDir> \<SnippetDir> .  
   
- 사용자 언어에 대 한 자신의 코드 조각을 만들 수도 있습니다. 이 일반적으로 사용자의 설정 폴더에 저장 예를 들어 *[TestDocs]* \Code 조각\\ *[TestLanguage]* \Test 코드 조각, 여기서 *[TestDocs]* Visual Studio에 대 한 사용자의 설정 폴더의 위치입니다.  
+ 사용자는 해당 언어에 대 한 고유한 코드 조각을 만들 수도 있습니다. 일반적으로 사용자의 settings 폴더에 저장 됩니다 (예: *[testdocs]* \Code 코드 조각 \\ *[testdocs]* \test 코드 조각). 여기서 *[testdocs]* 는 Visual Studio에 대 한 사용자 설정 폴더의 위치입니다.  
   
- 다음 대체 요소에 저장 된 경로에 배치할 수는 \<DirPath > 인덱스 파일의 태그입니다.  
+ 인덱스 파일의 태그에 저장 된 경로에 다음 대체 요소를 배치할 수 있습니다 \<DirPath> .  
   
 |요소|설명|  
 |-------------|-----------------|  
-|%LCID%|로캘 id입니다.|  
-|%InstallRoot%|예를 들어, C:\Program Files\Microsoft Visual Studio 8 Visual Studio에 대 한 루트 설치 폴더입니다.|  
+|LCID|로캘 ID입니다.|  
+|InstallRoot|Visual Studio의 루트 설치 폴더 (예: C:\Program Files\Microsoft Visual Studio 8).|  
 |%ProjDir%|현재 프로젝트를 포함 하는 폴더입니다.|  
 |%ProjItem%|현재 프로젝트 항목을 포함 하는 폴더입니다.|  
-|%TestDocs%|사용자의 설정 폴더, 예: C:\Documents and Settings 폴더\\ *[username]* documents\visual Studio\8 합니다.|  
+|% TestDocs%|사용자의 settings 폴더에 있는 폴더 (예: C:\Documents \\ *[username]* \My Documents\visual Studio\8.|  
   
-### <a name="enabling-code-snippets-for-your-language-service"></a>언어 서비스에 대 한 코드 조각 사용  
- 언어 서비스에 대 한 코드 조각을 추가 하 여 설정할 수 있습니다.는 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> VSPackage 특성 (참조 [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md) 세부 정보에 대 한). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> 및 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 매개 변수는 선택적 이지만 포함 해야 합니다 `SearchPaths` 에 알리기 위해 명명 된 매개 변수를 **코드 조각 관리자** 조각의 위치입니다.  
+### <a name="enabling-code-snippets-for-your-language-service"></a>언어 서비스에 코드 조각 사용  
+ VSPackage에 특성을 추가 하 여 언어 서비스에 코드 조각을 사용 하도록 설정할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> (자세한 내용은 [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md) 참조). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>및 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 매개 변수는 선택 사항 이지만 `SearchPaths` **코드 조각 관리자에 코드** 조각 위치를 알리기 위해 명명 된 매개 변수를 포함 해야 합니다.  
   
- 다음은이 특성을 사용 하는 방법의 예제입니다.  
+ 다음은이 특성을 사용 하는 방법의 예입니다.  
   
 ```  
 [ProvideLanguageCodeExpansion(  
@@ -108,18 +108,18 @@ ms.locfileid: "65691782"
          SearchPaths = @"%InstallRoot%\Test Snippet Language\Snippets\%LCID%\")]    // Path to snippets  
 ```  
   
-### <a name="calling-the-expansion-provider"></a>확장 공급자를 호출합니다.  
- 언어 서비스는 삽입이 호출 하는 방식 뿐만 아니라 모든 코드 조각 삽입을 제어 합니다.  
+### <a name="calling-the-expansion-provider"></a>확장 공급자 호출  
+ 언어 서비스는 삽입이 호출 되는 방식 뿐만 아니라 모든 코드 조각의 삽입을 제어 합니다.  
   
-## <a name="calling-the-expansion-provider-for-code-snippets"></a>코드 조각에 대 한 확장 공급자를 호출합니다.  
- 확장 공급자를 호출 하는 방법은 두 가지: 메뉴 명령을 사용 하 여 또는 완성 목록에서 바로 가기를 사용 하 여 합니다.  
+## <a name="calling-the-expansion-provider-for-code-snippets"></a>코드 조각에 대 한 확장 공급자 호출  
+ 확장 공급자를 호출 하는 방법에는 메뉴 명령을 사용 하거나 완성 목록의 바로 가기를 사용 하는 두 가지 방법이 있습니다.  
   
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>메뉴 명령을 사용 하 여 코드 조각 삽입  
- 메뉴 명령의 사용 하 여 코드 조각을 브라우저를 표시 하려면 메뉴 명령을 추가 하 고이 호출 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> 에서 메서드를 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 인터페이스는 메뉴 명령에 응답에서 합니다.  
+ 메뉴 명령을 사용 하 여 코드 조각 브라우저를 표시 하려면 메뉴 명령을 추가한 다음 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 해당 메뉴 명령에 대 한 응답으로 인터페이스에서 메서드를 호출 합니다.  
   
-1. .Vsct 파일에 명령 및 단추를 추가 합니다. 작업을 수행 하는 지침을 찾을 수 있습니다 [연습: Visual Studio 패키지 템플릿을 사용 하 여 메뉴 명령 만들기](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)합니다.  
+1. 명령 및 단추를 vsct 파일에 추가 합니다. [연습: Visual Studio 패키지 템플릿을 사용 하 여 메뉴 명령 만들기](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)에서이 작업을 수행 하는 방법에 대 한 지침을 찾을 수 있습니다.  
   
-2. 클래스를 파생 합니다 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스를 재정의 <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> 메서드 새 메뉴 명령에 대 한 지원을 나타냅니다. 이 예에서는 메뉴 명령에 항상 사용 하도록 설정 합니다.  
+2. 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.ViewFilter> 메서드를 재정의 <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> 하 여 새 메뉴 명령에 대 한 지원을 표시 합니다. 이 예에서는 항상 메뉴 명령을 사용 하도록 설정 합니다.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -155,7 +155,7 @@ ms.locfileid: "65691782"
     }  
     ```  
   
-3. 재정의 <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> 에서 메서드를 <xref:Microsoft.VisualStudio.Package.ViewFilter> 가져오려고 클래스는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 개체와 호출을 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> 개체에서 메서드.  
+3. <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>클래스의 메서드를 재정의 <xref:Microsoft.VisualStudio.Package.ViewFilter> 하 여 개체를 가져오고 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> 해당 개체에 대해 메서드를 호출 합니다.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -205,7 +205,7 @@ ms.locfileid: "65691782"
   
     ```  
   
-     다음 메서드는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 클래스는 지정 된 순서 대로 Visual Studio에서 코드 조각을 삽입 하는 동안 호출 됩니다.  
+     클래스의 다음 메서드는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 코드 조각을 삽입 하는 과정에서 지정 된 순서에 따라 Visual Studio에 의해 호출 됩니다.  
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
@@ -217,16 +217,16 @@ ms.locfileid: "65691782"
   
 8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-     후 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> 메서드가 호출 되 면 코드 조각 삽입 된 및 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 개체는 방금 삽입 된 코드 조각을 수정 하는 데는 특별 한 편집 모드입니다.  
+     <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>메서드가 호출 되 면 코드 조각이 삽입 되 고 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 개체가 방금 삽입 된 코드 조각을 수정 하는 데 사용 되는 특수 편집 모드로 사용 됩니다.  
   
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>바로 가기를 사용 하 여 코드 조각 삽입  
- 완성 목록에서 바로 가기의 구현은 메뉴 명령 구현 보다 훨씬 더 복잡 합니다. 먼저 코드 조각 바로 가기 IntelliSense 단어 완성 목록에 추가 해야 합니다. 다음 코드 조각 바로 가기 이름을 완성 결과로 삽입 경우을 검색 해야 합니다. 조각 제목 및 바로 가기 이름을 사용 하 여 경로 가져오려면 해당 정보를 전달 하며는 마지막으로, 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 메서드.  
+ 완성 목록에서 바로 가기를 구현 하는 것은 메뉴 명령을 구현 하는 것 보다 훨씬 더 복잡 합니다. 먼저 IntelliSense 단어 완성 목록에 코드 조각 바로 가기를 추가 해야 합니다. 그런 다음 완성 된 결과로 조각 바로 가기 이름이 삽입 된 시기를 감지 해야 합니다. 마지막으로 바로 가기 이름을 사용 하 여 코드 조각 제목과 경로를 가져온 다음이 정보를 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 메서드의 메서드에 전달 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> .  
   
- 코드 조각 바로 가기 단어 완성 목록에 추가 하려면 추가할 합니다 <xref:Microsoft.VisualStudio.Package.Declarations> 개체에 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 클래스입니다. 코드 조각 이름으로 바로 가기의 식별할 수 있는지 확인 해야 합니다. 예제를 보려면 [연습: 코드 조각 (레거시 구현)를 설치 목록을 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
+ 단어 완성 목록에 코드 조각 바로 가기를 추가 하려면 <xref:Microsoft.VisualStudio.Package.Declarations> 클래스의 개체에 추가 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 합니다. 바로 가기를 코드 조각 이름으로 식별할 수 있는지 확인 해야 합니다. 예제는 [연습: 설치 된 코드 조각 목록 가져오기 (레거시 구현)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)를 참조 하세요.  
   
- 코드 조각 바로 가기 삽입을 검색할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.Declarations> 클래스입니다. 코드 조각 이름을 소스 파일에 이미 삽입, 때문에 확장을 삽입할 때 제거 해야 합니다. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 메서드는 코드 조각을 삽입 지점에 설명 하는 범위; 소스 파일의 전체 코드 조각 이름을 포함 하는 범위, 해당 이름의 코드 조각으로 대체 됩니다.  
+ 클래스의 메서드에서 코드 조각 바로 가기 삽입을 검색할 수 있습니다 <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> <xref:Microsoft.VisualStudio.Package.Declarations> . 소스 파일에 코드 조각 이름이 이미 삽입 되었으므로 확장이 삽입 될 때 해당 이름이 제거 되어야 합니다. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>메서드는 코드 조각의 삽입 지점을 설명 하는 범위를 사용 합니다. 범위에 소스 파일의 전체 코드 조각 이름이 포함 된 경우 해당 이름이 조각으로 바뀝니다.  
   
- 다음은의 버전을 <xref:Microsoft.VisualStudio.Package.Declarations> 바로 가기 이름을 지정 하는 코드 조각 삽입을 처리 하는 클래스입니다. 다른 메서드는 <xref:Microsoft.VisualStudio.Package.Declarations> 클래스 명확성을 위해 생략 되었습니다. 이 클래스의 생성자는 한 <xref:Microsoft.VisualStudio.Package.LanguageService> 개체입니다. 이 버전에서 전달할 수 있습니다는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 개체 (의 구현 예를 들어 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 클래스 걸릴 수 있습니다를 <xref:Microsoft.VisualStudio.Package.LanguageService> 생성자에서 개체 및 해당 개체에 전달에 `TestDeclarations` 클래스 생성자).  
+ 다음은 <xref:Microsoft.VisualStudio.Package.Declarations> 바로 가기 이름이 지정 된 경우 코드 조각 삽입을 처리 하는 클래스 버전입니다. 클래스의 다른 메서드 <xref:Microsoft.VisualStudio.Package.Declarations> 는 명확 하 게 나타내기 위해 생략 되었습니다. 이 클래스의 생성자는 개체를 사용 <xref:Microsoft.VisualStudio.Package.LanguageService> 합니다. 이는 개체의 버전에서 전달 될 수 있습니다 <xref:Microsoft.VisualStudio.Package.AuthoringScope> . 예를 들어 클래스의 구현이 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 생성자에서 개체를 사용 하 <xref:Microsoft.VisualStudio.Package.LanguageService> 고 해당 개체를 클래스 생성자에 전달할 수 있습니다 `TestDeclarations` .  
   
 ```  
 [C#]  
@@ -328,7 +328,7 @@ namespace TestLanguagePackage
 }  
 ```  
   
- 언어 서비스의 바로 가기 이름을 가져오면 호출한는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> 파일 이름 및 코드 조각 제목을 가져오는 방법입니다. 언어 서비스를 호출 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 코드 조각을 삽입 하는 클래스입니다. 지정 된 순서 대로 Visual Studio에서 다음 방법 이라고는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 코드 조각을 삽입 하는 프로세스 중 클래스:  
+ 언어 서비스에서 바로 가기 이름을 가져올 때 메서드를 호출 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> 하 여 파일 이름 및 코드 조각 제목을 가져옵니다. 그런 다음 언어 서비스는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 클래스의 메서드를 호출 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 하 여 코드 조각을 삽입 합니다. 다음 메서드는 코드 조각을 삽입 하는 과정에서 클래스의 지정 된 순서에 따라 Visual Studio에서 호출 됩니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> .  
   
 1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
@@ -338,15 +338,15 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   언어 서비스에 대해 설치 된 코드 조각 목록 가져오기에 대 한 자세한 내용은 참조 하세요. [연습: 코드 조각 (레거시 구현)를 설치 목록을 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
+   언어 서비스에 대해 설치 된 코드 조각 목록을 가져오는 방법에 대 한 자세한 내용은 [연습: 설치 된 코드 조각 목록 가져오기 (레거시 구현)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)를 참조 하세요.  
   
 ## <a name="implementing-the-expansionfunction-class"></a>ExpansionFunction 클래스 구현  
- 확장 기능은 코드 조각 템플릿에 포함 된 필드에 배치 될 하나 이상의 값을 반환 하는 명명된 된 함수입니다. 언어 서비스에서 확장 함수를 지원 하기 위해 클래스에서 파생 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 클래스 및 구현 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> 메서드. 다음 재정의 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 버전의 새 인스턴스를 반환 하는 클래스는 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 지 원하는 각 확장 함수에 대 한 클래스입니다. 확장 함수에서 가능한 값 목록을 지 원하는 경우 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 해당 값의 목록을 반환 하는 클래스입니다.  
+ 확장 함수는 코드 조각 템플릿에 포함 된 명명 된 함수 이며 필드에 배치할 하나 이상의 값을 반환 합니다. 언어 서비스에서 확장 함수를 지원 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 메서드를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> . 그런 다음 클래스의 메서드를 재정의 하 여 지원 되는 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 각 확장 함수에 대해 클래스 버전의 새 인스턴스를 반환 해야 합니다. 확장 함수에서 사용할 수 있는 값 목록을 지 원하는 경우 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> 클래스의 메서드를 재정의 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 하 여 해당 값의 목록을 반환 해야 합니다.  
   
- 확장 공급자 초기화 되지 않았습니다. 완전히 확장 함수를 호출 하는 시간을 기준으로 하는 대로 인수를 사용 하거나 다른 필드에 액세스 해야 하는 확장 함수를 편집 가능한 필드를 사용 하 여 연결 되지 않아야 합니다. 결과적으로, 확장 함수 인수 또는 다른 필드의 값을 가져올 수 없는 합니다.  
+ 확장 공급자가 확장 함수가 호출 될 때까지 완전히 초기화 되지 않았을 수 있으므로 인수를 사용 하거나 다른 필드에 액세스 해야 하는 확장 함수를 편집 가능한 필드와 연결 해서는 안 됩니다. 따라서 확장 함수는 해당 인수 또는 다른 필드의 값을 가져올 수 없습니다.  
   
-### <a name="example"></a>예제  
- 간단한 확장 함수를 호출 하는 방법의 예로 `GetName` 구현할 수 있습니다. 이 확장 함수 번호를 추가 하는 기본 클래스 이름을 확장 함수를 인스턴스화할 때마다 (삽입은 각 시간에 해당 하는 관련된 코드 조각).  
+### <a name="example"></a>예  
+ 다음은 라는 간단한 확장 함수를 구현할 수 있는 방법의 예입니다 `GetName` . 이 확장 함수는 확장 함수가 인스턴스화될 때마다 기본 클래스 이름에 숫자를 추가 합니다 .이는 연결 된 코드 조각이 삽입 될 때마다 해당 됩니다.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -391,7 +391,7 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)   
  [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [코드 조각](../../ide/code-snippets.md)   

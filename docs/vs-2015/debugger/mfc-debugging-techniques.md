@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c795e978de3911b3c5e815583c32e878fd7b173
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696907"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
@@ -39,7 +39,7 @@ ms.locfileid: "65696907"
 
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.  
   
-## <a name="BKMK_In_this_topic"></a> 항목 내용  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 항목 내용  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [TRACE 매크로](#BKMK_The_TRACE_macro)  
@@ -64,7 +64,7 @@ ms.locfileid: "65696907"
   
   - [선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
+## <a name="afxdebugbreak"></a><a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC를 사용하면 소스 코드의 하드 코드 중단점에 특별한 [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 함수를 사용할 수 있습니다.  
   
 ```  
@@ -84,7 +84,7 @@ _asm int 3
   
  [항목 내용](#BKMK_In_this_topic)  
   
-## <a name="BKMK_The_TRACE_macro"></a> TRACE 매크로  
+## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> TRACE 매크로  
  디버거 [출력 창](../ide/reference/output-window.md)에 프로그램 메시지를 표시하기 위해 [ATLTRACE](https://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) 매크로나 MFC [TRACE](https://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 매크로를 사용할 수 있습니다. [어설션](../debugger/c-cpp-assertions.md)과 마찬가지로 추적 매크로는 프로그램의 디버그 버전에서만 활성화되며 릴리스 버전에서 컴파일하면 사라집니다.  
   
  다음 예제에서는 **TRACE** 매크로 사용법을 몇 가지 보여 줍니다. `printf`와 같이 **TRACE** 매크로도 많은 인수를 처리할 수 있습니다.  
@@ -117,10 +117,10 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [항목 내용](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Memory_leak_detection_in_MFC"></a> MFC의 메모리 누수 탐지  
+## <a name="detecting-memory-leaks-in-mfc"></a><a name="BKMK_Memory_leak_detection_in_MFC"></a> MFC의 메모리 누수 탐지  
  MFC는 할당할 수는 있어도 할당을 취소할 수 없는 메모리를 탐지하는 클래스와 함수를 가지고 있습니다.  
   
-### <a name="BKMK_Tracking_memory_allocations"></a> 메모리 할당 추적  
+### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> 메모리 할당 추적  
  MFC에서 [new](https://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 연산자 자리에 **DEBUG_NEW** 매크로를 사용하면 메모리 누수를 찾는 데 도움이 됩니다. 프로그램의 디버그 버전에서 `DEBUG_NEW` 는 할당된 각 개체의 파일 이름과 줄 번호를 추적합니다. 프로그램의 릴리스 버전을 컴파일할 경우 `DEBUG_NEW` 는 파일 이름과 줄 번호 정보 없이 간단한 **new** 연산자를 확인합니다. 따라서 프로그램의 릴리스 버전에서는 속도가 저하되지 않습니다.  
   
  `DEBUG_NEW` new **자리에**를 사용하기 위해 프로그램 전체를 다시 작성하는 대신, 다음과 같이 소스 파일에서 이 매크로를 정의할 수 있습니다.  
@@ -135,7 +135,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [항목 내용](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Enabling_memory_diagnostics"></a> 메모리 진단 사용  
+### <a name="enabling-memory-diagnostics"></a><a name="BKMK_Enabling_memory_diagnostics"></a> 메모리 진단 사용  
  메모리 진단 기능을 사용하려면 진단 추적을 활성화해야 합니다.  
   
  **메모리 진단을 활성화하거나 비활성화하려면**  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   [항목 내용](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_memory_snapshots"></a> 메모리 스냅샷 만들기  
+### <a name="taking-memory-snapshots"></a><a name="BKMK_Taking_memory_snapshots"></a> 메모리 스냅샷 만들기  
   
 1. [CMemoryState](https://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 만들고 [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 멤버 함수를 호출합니다. 그러면 첫 번째 메모리 스냅샷이 만들어집니다.  
   
@@ -191,13 +191,13 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    메모리를 검사하는 문은 프로그램의 디버그 버전에서만 컴파일되도록 `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** 블록으로 묶어야 합니다.  
+    메모리 검사 문은 `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) /  프로그램의 디버그 버전 에서만 컴파일되도록 _DEBUG **#endif** 블록으로 대괄호로 묶입니다.  
   
     이제 메모리 누수가 확인되었으므로 다른 멤버 함수인 [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 를 사용하여 해당 위치를 찾을 수 있습니다.  
   
    [항목 내용](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Viewing_memory_statistics"></a> 메모리 통계 보기  
+### <a name="viewing-memory-statistics"></a><a name="BKMK_Viewing_memory_statistics"></a> 메모리 통계 보기  
  [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 함수는 두 메모리 상태 개체를 살펴 상태의 시작과 끝 사이의 힙에서 할당 취소되지 않은 모든 개체를 검색합니다. 메모리 스냅샷을 만들고 `CMemoryState::Difference`를 사용하여 스냅샷을 비교한 후 [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 를 호출하여 할당이 취소되지 않은 개체에 대한 정보를 가져올 수 있습니다.  
   
  다음 예제를 참조하세요.  
@@ -232,8 +232,8 @@ Total allocations: 67 bytes
   
  [항목 내용](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_object_dumps"></a> 개체 덤프 수행  
- MFC 프로그램에서 사용할 수 있습니다 [cmemorystate:: Dumpallobjectssince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 할당이 취소 되지 않은 힙에서 모든 개체의 설명을 덤프할 수 있습니다. `DumpAllObjectsSince` 는 마지막 [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)를 단순히 호출할 뿐입니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.  
+### <a name="taking-object-dumps"></a><a name="BKMK_Taking_object_dumps"></a> 개체 덤프 수행  
+ MFC 프로그램에서는 [CMemoryState::DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)를 사용하여 힙에서 할당 취소되지 않은 모든 개체의 설명을 덤프할 수 있습니다. `DumpAllObjectsSince` 는 마지막 [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)를 단순히 호출할 뿐입니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.  
   
 > [!NOTE]
 > MFC 개체를 덤프하려면 먼저 [진단 추적을 활성화](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)해야 합니다.  
@@ -278,7 +278,7 @@ Phone #: 581-0215
   
  [항목 내용](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Interpreting_memory_dumps"></a> 메모리 덤프 해석  
+#### <a name="interpreting-memory-dumps"></a><a name="BKMK_Interpreting_memory_dumps"></a> 메모리 덤프 해석  
  이 개체 덤프를 자세히 살펴보면 다음과 같습니다.  
   
 ```  
@@ -361,7 +361,7 @@ Phone #: 581-0215
   
  [항목 내용](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Customizing_object_dumps"></a> 개체 덤프 사용자 지정  
+#### <a name="customizing-object-dumps"></a><a name="BKMK_Customizing_object_dumps"></a> 개체 덤프 사용자 지정  
  [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)에서 클래스를 파생시키는 경우 `Dump` DumpAllObjectsSince [를 사용하여](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 출력 창 [으로 개체를 덤프할 때](../ide/reference/output-window.md)멤버 함수를 재정의하여 추가 정보를 제공할 수 있습니다.  
   
  `Dump` 함수는 덤프 컨텍스트([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa))에 개체 멤버 변수의 텍스트 표현을 작성합니다. 덤프 컨텍스트는 I/O 스트림과 유사합니다. 추가 연산자( **<<** )를 사용하여 `CDumpContext`를 단순히 호출할 뿐입니다.  
@@ -416,18 +416,18 @@ pMyPerson->Dump( afxDump );
   
  [항목 내용](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> MFC 디버그 빌드 크기 줄이기  
+## <a name="reducing-the-size-of-an-mfc-debug-build"></a><a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> MFC 디버그 빌드 크기 줄이기  
  대형 MFC 애플리케이션의 디버그 정보는 디스크 공간을 많이 차지할 수 있습니다. 다음 절차 중 하나를 사용하여 크기를 줄일 수 있습니다.  
   
-1. 사용 하 여 MFC 라이브러리를 다시 작성 합니다 [/z7, /Zi, /ZI (디버그 정보 형식)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션을 대신 **/z7**합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.  
+1. **/Z7** 대신 [/Z7, /Zi, /ZI(디버그 정보 형식)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션을 사용하여 MFC 라이브러리를 다시 빌드합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.  
   
-2. 디버그 정보 없이 MFC 라이브러리를 다시 작성 (없습니다 [/z7, /Zi, /ZI (디버그 정보 형식)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션). 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.  
+2. 디버그 정보 없이 MFC 라이브러리를 다시 빌드합니다([/Z7, /Zi, /ZI(디버그 정보 형식)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션 없음). 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.  
   
 3. 아래에 설명된 대로 선택한 모듈의 디버그 정보로 사용자 고유의 애플리케이션을 빌드합니다.  
   
    [항목 내용](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드  
+### <a name="building-an-mfc-app-with-debug-information-for-selected-modules"></a><a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드  
  MFC 디버그 라이브러리를 사용하여 선택한 모듈을 빌드하면 이 모듈에서 단계별 실행 및 다른 디버그 기능을 사용할 수 있습니다. 이 프로시저는 Visual C++ 메이크파일의 디버그 모드와 릴리스 모드를 모두 사용하기 때문에 다음 단계와 같이 변경해야 하며 전체 릴리스 빌드가 필요한 경우에는 "모두 다시 빌드"해야 합니다.  
   
 1. 솔루션 탐색기에서 프로젝트를 선택합니다.  
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
 3. 먼저 새 프로젝트 구성을 만듭니다.  
   
-   1. **\<프로젝트> 속성 페이지** 대화 상자에서 **구성 관리자** 단추를 클릭합니다.  
+   1. ** \<Project> 속성 페이지** 대화 상자에서 **Configuration Manager** 단추를 클릭 합니다.  
   
-   2. [구성 관리자 대화 상자](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)의 표에서 원하는 프로젝트를 찾습니다. **구성** 열에서 **\<새로 만들기...>** 를 선택합니다.  
+   2. [구성 관리자 대화 상자](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)의 표에서 원하는 프로젝트를 찾습니다. **구성** 열에서을 선택 **\<New...>** 합니다.  
   
    3. [새 프로젝트 구성 대화 상자](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)의 **새 프로젝트 구성** 상자에 새 구성의 이름을 ?부분 디버그?등과 같이 입력합니다.  
   
@@ -478,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6. **디버깅 정보 형식** 설정을 클릭하고 디버그 정보에 대해 원하는 옵션(대개 **/ZI**)을 선택합니다.  
   
-   7. 애플리케이션 마법사로 만든 애플리케이션을 사용하거나 헤더를 미리 컴파일한 경우, 다른 모듈을 컴파일하기 전에 미리 컴파일한 헤더를 사용하지 않도록 하거나 다시 컴파일해야 합니다. 그렇지 않으면 경고 C4650과 오류 메시지 C2855를 받게 됩니다. **\<프로젝트> 속성** 대화 상자(**구성 속성** 폴더, **C/C++** 하위 폴더, **미리 컴파일된 헤더** 범주)에서 **미리 컴파일된 헤더 만들기/사용** 설정을 변경하여 미리 컴파일된 헤더를 해제할 수 있습니다.  
+   7. 애플리케이션 마법사로 만든 애플리케이션을 사용하거나 헤더를 미리 컴파일한 경우, 다른 모듈을 컴파일하기 전에 미리 컴파일한 헤더를 사용하지 않도록 하거나 다시 컴파일해야 합니다. 그렇지 않으면 경고 C4650과 오류 메시지 C2855를 받게 됩니다. ** \<Project> 속성** 대화 상자 (**구성 속성** 폴더, **c/c + +** 하위 폴더, **미리 컴파일된 헤더** 범주)에서 **미리 컴파일된 헤더 만들기/사용** 설정을 변경 하 여 미리 컴파일된 헤더를 해제할 수 있습니다.  
   
 7. **빌드** 메뉴에서 **빌드** 를 선택하여 날짜가 지난 프로젝트 파일을 다시 빌드합니다.  
   
@@ -486,5 +486,5 @@ pMyPerson->Dump( afxDump );
   
    [항목 내용](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual C++ 디버깅](../debugger/debugging-native-code.md)

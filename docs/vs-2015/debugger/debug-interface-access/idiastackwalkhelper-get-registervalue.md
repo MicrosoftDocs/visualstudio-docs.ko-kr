@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4dde30ebcda46d75271b15ec5b7f7c1ac49f384b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150108"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 레지스터의 값을 검색 합니다.  
@@ -36,16 +36,16 @@ HRESULT get_registerValue ( 
   
 #### <a name="parameters"></a>매개 변수  
  `index`  
- [in] 값을 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 를에서 값을 얻기 위해 등록 하는 지정 하는 열거형입니다.  
+ 진행 값을 가져올 레지스터를 지정 하 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 열거형의 값입니다.  
   
  `pRetVal`  
- [out] 등록의 현재 값을 반환합니다.  
+ 제한이 레지스터의 현재 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 크기에도 불구 하 고는 `pRetVal` 매개 변수를 구현만 무엇입니까 레지스터 일반적으로 보유 저장 해야 합니다. 예를 들어는 8 비트 레지스터만 가장 낮은 8-의 비트를 지정된 된 값을 보유합니다. 이 8 비트 값이 메서드에서 반환 하는 경우 64 비트로 확장 됩니다.  
+ 매개 변수의 크기에도 불구 하 고 `pRetVal` 구현은 일반적으로 등록에 포함 된 내용만 저장 해야 합니다. 예를 들어 8 비트 레지스터는 지정 된 값의 가장 낮은 8 비트만 보유 합니다. 이 8 비트 값은이 메서드에서 반환 될 때 64 비트로 확장 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

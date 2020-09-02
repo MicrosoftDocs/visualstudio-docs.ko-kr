@@ -9,10 +9,10 @@ caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 029b547102863f4798ad261deb678c4d98596916
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657199"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>코딩된 UI 테스트에서 HTML5 컨트롤 사용
@@ -20,7 +20,7 @@ ms.locfileid: "72657199"
 
 코딩된 UI 테스트에는 Internet Explorer 9 및 Internet Explorer 10에 포함된 일부 HTML5 컨트롤에 대한 지원이 포함됩니다.
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise
 
@@ -48,9 +48,9 @@ ms.locfileid: "72657199"
 
 |작업|기록 중|생성된 코드|
 |------------|---------------|--------------------|
-|**오디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00부터 \<name> 오디오 재생|HtmlAudio.Play(TimeSpan)|
+|**오디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00에서 \<name> 오디오 재생|HtmlAudio.Play(TimeSpan)|
 |**오디오의 특정 시간까지 검색**|00:01:48까지 \<name> 오디오 검색|HtmlAudio.Seek(TimeSpan)|
-|**오디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에 \<name> 오디오 일시 중지|HtmlAudio.Pause(TimeSpan)|
+|**오디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에서 \<name>오디오 일시 중지|HtmlAudio.Pause(TimeSpan)|
 |**오디오 음소거**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|\<name> 오디오 음소거|HtmlAudio.Mute()|
 |**오디오 음소거 해제**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|\<name> 오디오 음소거 해제|HtmlAudio.Unmute()|
 |**오디오 볼륨 변경**|\<name> 오디오 볼륨을 79%로 설정|HtmlAudio.SetVolume(float)|
@@ -78,7 +78,7 @@ string Volume
 
  **검색 속성:** `HtmlAudio`에 대한 검색 속성은 `Id`, `Name` 및 `Title`입니다.
 
- **필터 속성:** `HtmlAudio`에 대한 필터 속성은 `Src`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
+ **필터 속성:** `HtmlAudio`에 대한 검색 속성은 `Src`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
 
 > [!NOTE]
 > 검색 및 일시 중지에 대한 시간은 중요할 수 있습니다. 재생하는 동안 코딩된 UI 테스트는 `(TimeSpan)`에 지정된 시간까지 기다린 후 오디오를 일시 중지합니다. 특수한 경우 일시 중지 명령을 누르기 전에 지정된 시간이 경과하면 예외가 throw됩니다.
@@ -90,9 +90,9 @@ string Volume
 
 |작업|기록 중|생성된 코드|
 |------------|---------------|--------------------|
-|**비디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00부터 \<name> 비디오 재생|HtmlVideo.Play(TimeSpan)|
+|**비디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00에서 \<name> 비디오 재생|HtmlVideo.Play(TimeSpan)|
 |**비디오의 특정 시간까지 검색**|00:01:48까지 \<name> 비디오 검색|HtmlVideo.Seek(TimeSpan)|
-|**비디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에 \<name> 비디오 일시 중지|HtmlVideo.Pause(TimeSpan)|
+|**비디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에서 \<name>비디오 일시 중지|HtmlVideo.Pause(TimeSpan)|
 |**비디오 음소거**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|\<name> 비디오 음소거|HtmlVideo.Mute()|
 |**비디오 음소거 해제**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|\<name> 비디오 음소거 해제|HtmlVideo.Unmute()|
 |**비디오의 볼륨 변경**|\<name> 비디오 볼륨을 79%로 설정||
@@ -108,7 +108,7 @@ string VideoWidth
 
  **검색 속성:** `HtmlVideo`에 대한 검색 속성은 `Id`, `Name` 및 `Title`입니다.
 
- **필터 속성:** `HtmlVideo`에 대한 필터 속성은 `Src`, `Poster`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
+ **필터 속성:** `HtmlVideo`에 대한 검색 속성은 `Src`, `Poster`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
 
 > [!NOTE]
 > -30s 또는 +30s 레이블을 사용하여 비디오를 되감거나 빨리 감으면 적절한 시간까지 검색하도록 집계됩니다.
@@ -120,7 +120,7 @@ string VideoWidth
 
 |작업|기록 중|생성된 코드|
 |------------|---------------|--------------------|
-|**슬라이더의 위치 설정**|위치를 \<name> 슬라이더의 \<x>로 설정|HtmlSlider.ValueAsNumber=\<x>|
+|**슬라이더의 위치 설정**|\<x>슬라이더에서 위치 설정 \<name>|HtmlSlider. 값 =\<x>|
 
  다음과 같은 속성을 HtmlSlider에 사용할 수 있으며 모든 속성에 어설션을 추가할 수 있습니다.
 
@@ -141,7 +141,7 @@ string ValueAsNumber
 ## <a name="see-also"></a>참조
 
 - [HTML 요소](https://www.w3schools.com/HTML/html_elements.asp)
-- [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
-- [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
+- [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
+- [코딩 된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [코딩된 UI 테스트 사용자 지정](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)
-- [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [코딩 된 UI 테스트 및 작업 기록에 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

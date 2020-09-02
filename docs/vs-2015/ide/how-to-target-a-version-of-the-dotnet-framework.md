@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7aae21e2c959939262b88db3b90367c4860d8a74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670616"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>방법: 한 버전의 .NET Framework를 대상으로 지정
@@ -33,7 +33,7 @@ ms.locfileid: "72670616"
 
 - [대상 버전 변경](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing)
 
-## <a name="bkmk_new"></a> 프로젝트를 만들 때 버전 대상 지정
+## <a name="targeting-a-version-when-you-create-a-project"></a><a name="bkmk_new"></a> 프로젝트를 만들 때 버전 대상 지정
  프로젝트를 만들 때 대상으로 지정하는 .NET Framework 버전에 따라 사용할 수 있는 템플릿 종류가 결정됩니다.
 
 > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "72670616"
 
      템플릿 목록에는 선택한 .NET Framework 버전에서 지원하는 프로젝트만 표시됩니다.
 
-## <a name="bkmk_existing"></a> 대상 버전 변경
+## <a name="changing-the-target-version"></a><a name="bkmk_existing"></a> 대상 버전 변경
  이 절차를 수행하여 Visual Basic, Visual C# 또는 Visual F# 프로젝트에서 .NET Framework의 대상 버전을 변경할 수 있습니다.
 
 #### <a name="to-change-the-targeted-version"></a>대상 버전을 변경하려면
@@ -64,9 +64,9 @@ ms.locfileid: "72670616"
     > [!IMPORTANT]
     > C++ 프로젝트의 대상 버전을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)을 참조하세요.
 
-2. [속성] 창의 왼쪽 열에서 **애플리케이션** 탭을 선택합니다.
+2. 속성 창의 왼쪽 열에서 **응용 프로그램** 탭을 선택 합니다.
 
-     ![Visual Studio 응용 프로그램 속성 응용 프로그램 탭](../ide/media/vs-slnexplorer-properties-applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
+     ![Visual Studio 애플리케이션 속성 애플리케이션 탭](../ide/media/vs-slnexplorer-properties-applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
     > [!NOTE]
     > Windows 스토어 앱을 만든 후에는 Windows 또는 .NET Framework의 대상 버전을 변경할 수 없습니다.
@@ -80,5 +80,5 @@ ms.locfileid: "72670616"
     > [!NOTE]
     > 코드에 사용자가 대상으로 지정한 것과 다른 버전의 .NET Framework에 대한 참조가 포함된 경우, 코드를 컴파일하거나 실행할 때 오류 메시지가 나타날 수 있습니다. 이러한 오류를 해결하려면 참조를 수정해야 합니다. [.NET Framework 대상 지정 오류 문제 해결](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)을 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
- [Visual Studio 다중 대상 지정 개요](../ide/visual-studio-multi-targeting-overview.md) [.NET Framework ASP.NET 웹 프로젝트에 대 한 다중 대상](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) 지정 [오류 문제 해결 .NET Framework 대상 오류](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md) [응용 프로그램C#페이지, 프로젝트 디자이너 ()](../ide/reference/application-page-project-designer-csharp.md) [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [프로젝트 구성](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526) [방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio 다중 대상 지정 개요](../ide/visual-studio-multi-targeting-overview.md) [.NET Framework ASP.NET 웹 .NET Framework 프로젝트에 대 한 다중 대상 지정](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [오류](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md) [응용 프로그램 페이지, 프로젝트 디자이너 (c #)](../ide/reference/application-page-project-designer-csharp.md) [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [프로젝트 구성](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526) [방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

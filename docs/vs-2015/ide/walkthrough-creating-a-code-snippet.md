@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845572"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>연습: 코드 조각 만들기
@@ -75,7 +75,7 @@ ms.locfileid: "75845572"
 
 1. 코드 조각 관리자를 사용하여 Visual Studio 설치에 사용자 고유의 코드 조각을 추가할 수 있습니다. 코드 조각 관리자(**도구/코드 조각 관리자**)를 엽니다.
 
-2. **내보내기** 단추를 클릭합니다.
+2. **가져오기** 단추를 클릭합니다.
 
 3. 이전 절차에서 코드 조각을 저장한 위치로 이동하고, 선택하고, **열기**를 클릭합니다.
 
@@ -87,11 +87,11 @@ ms.locfileid: "75845572"
 
 6. Visual Basic 프로젝트를 열고 코드 파일을 열어 코드 조각을 테스트합니다. 파일의 상황에 맞는 메뉴에서 코드 **조각 삽입** 을 클릭 한 다음 **내 코드 조각**을 클릭 합니다. **내 Visual Basic 코드 조각**이라는 코드 조각이 나타납니다. 폴더를 두 번 클릭합니다.
 
-7. 코드에 `Console.WriteLine("Hello, World!")` 삽입 된 것을 볼 수 있습니다.
+7. 코드에 삽입 됨이 표시 됩니다 `Console.WriteLine("Hello, World!")` .
 
 ### <a name="adding-description-and-shortcut-fields"></a>설명 및 바로 가기 필드 추가
 
-1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`파일을 열어 추가한 코드 조각을 편집 합니다.
+1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. 파일을 열어 추가한 코드 조각을 편집 `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` 합니다.
 
 2. Header 요소에 Author 및 Description 요소를 추가하고 채웁니다.
 
@@ -122,11 +122,11 @@ ms.locfileid: "75845572"
 
 6. 코드 조각 파일을 다시 저장합니다.
 
-7. 바로 가기를 테스트하려면 Visual Basic 프로젝트를 열고 코드 파일을 엽니다. 파일에 `hello`를 입력 하 고 TAB 키를 누릅니다. 코드 조각 코드를 삽입 해야 합니다.
+7. 바로 가기를 테스트하려면 Visual Basic 프로젝트를 열고 코드 파일을 엽니다. `hello`파일에를 입력 하 고 tab 키를 누릅니다. 코드 조각 코드를 삽입 해야 합니다.
 
 ### <a name="to-add-references-and-imports"></a>참조 및 가져오기를 추가하려면
 
-1. Visual Basic 코드 조각을 사용 하면 References 요소를 사용 하 여 프로젝트에 참조를 추가 하 고 Imports 요소를 사용 하 여 Imports 선언을 추가할 수 있습니다. (다른 언어의 코드 조각에는이 기능이 없습니다.) 예를 들어 코드 예제의 `Console.WriteLine`를 `MessageBox.Show`으로 변경 하는 경우 프로젝트에 System.object 어셈블리를 추가 해야 할 수 있습니다.
+1. Visual Basic 코드 조각을 사용 하면 References 요소를 사용 하 여 프로젝트에 참조를 추가 하 고 Imports 요소를 사용 하 여 Imports 선언을 추가할 수 있습니다. (다른 언어의 코드 조각에는이 기능이 없습니다.) 예를 들어 `Console.WriteLine` 코드 예제에서을로 변경 하는 경우 `MessageBox.Show` System.Windows.Forms.dll 어셈블리를 프로젝트에 추가 해야 할 수 있습니다.
 
 2. 코드 조각을 엽니다.
 
@@ -261,5 +261,5 @@ ms.locfileid: "75845572"
 
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)

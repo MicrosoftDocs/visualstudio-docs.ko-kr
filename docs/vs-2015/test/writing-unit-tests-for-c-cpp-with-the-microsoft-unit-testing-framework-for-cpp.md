@@ -9,10 +9,10 @@ caps.latest.revision: 16
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b6f358f43dcace230e1d58773e58be011d9033e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657089"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++용 Microsoft 유닛 테스트 프레임워크를 사용하여 C/C++용 유닛 테스트 작성
@@ -60,7 +60,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
     - `Assert`에는 테스트 결과를 확인하는 데 사용할 수 있는 몇 가지 정적 함수가 포함됩니다.
 
-    - `LINE_INFO()` 매개 변수는 선택적 요소입니다. PDB 파일이 없는 경우에는 Test Runner가 오류 위치를 식별할 수 있습니다.
+    - `LINE_INFO()` 매개 변수는 선택 사항입니다. PDB 파일이 없는 경우에는 Test Runner가 오류 위치를 식별할 수 있습니다.
 
     - 또한 테스트 설정 및 정리 메서드를 작성할 수 있습니다. 자세한 내용을 보려면 `TEST_METHOD` 매크로의 정의를 열고 CppUnitTest.h의 주석을 읽으세요.
 
@@ -72,7 +72,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
     2. Visual Studio 솔루션을 빌드합니다.
 
-    3. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+    3. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
     4. 테스트 탐색기에서 테스트를 자세히 조사하려면:
 
@@ -82,7 +82,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
         3. 테스트에 대한 바로 가기 메뉴에서 **선택한 테스트 디버그** 를 선택하여 디버거에서 테스트를 실행합니다.
 
-## <a name="walkthrough"></a> 연습: 테스트 탐색기를 사용하여 관리되지 않는 DLL 개발
+## <a name="walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> 연습: 테스트 탐색기를 사용 하 여 관리 되지 않는 DLL 개발
  이 연습을 활용해서 사용자의 고유 DLL을 개발할 수 있습니다. 기본 단계는 다음과 같습니다.
 
 1. [기본 테스트 프로젝트 만들기](#unitTestProject). 테스트는 개발 중인 DLL과 별도의 프로젝트로 생성됩니다.
@@ -101,23 +101,23 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
 8. [외부 리소스로부터 단위 격리](https://msdn.microsoft.com/library/hh549174.aspx). 일반적으로 DLL은 다른 DLL, 데이터베이스 또는 원격 하위 시스템 등 개발 중인 시스템의 다른 구성 요소에 종속됩니다. 종속 항목과 격리된 상태에서 각 단위를 테스트하는 것이 좋습니다. 외부 구성 요소는 테스트 실행을 느리게 만들 수 있습니다. 개발 중에는 다른 구성 요소가 완전하지 않을 수 있습니다.
 
-### <a name="unitTestProject"></a> 기본 단위 테스트 프로젝트 만들기
+### <a name="create-a-native-unit-test-project"></a><a name="unitTestProject"></a> 기본 단위 테스트 프로젝트 만들기
 
 1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
 
-     대화 상자에서 **설치됨**, **템플릿**, **Visual C++** , **테스트**를 차례로 확장합니다.
+     대화 상자에서 **설치됨**, **템플릿**, **Visual C++**, **테스트**를 차례로 확장합니다.
 
      **기본 테스트 프로젝트** 템플릿을 선택합니다.
 
      이 연습에서 테스트 프로젝트 이름은 `NativeRooterTest`입니다.
 
-     ![C&#43; &#43; 단위 테스트 프로젝트 만들기](../test/media/utecpp01.png "만들기 utecpp01")
+     ![C&#43;&#43; 단위 테스트 프로젝트 만들기](../test/media/utecpp01.png "만들기 utecpp01")
 
 2. 새 프로젝트에서 **unittest1.cpp**를 조사합니다.
 
      ![테스트&#95;클래스 및 테스트&#95;메서드를 사용 하 여 프로젝트 테스트](../test/media/utecpp2.png "UteCpp2")
 
-     다음 사항을 참고하세요.
+     다음에 유의합니다.
 
     - 각 테스트는 `TEST_METHOD(YourTestName){...}`를 사용하여 정의됩니다.
 
@@ -148,21 +148,21 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
          **테스트에 통과함**아래에 테스트가 나타납니다.
 
-         ![통과 한 테스트가 있는 단위 테스트 탐색기](../test/media/utecpp04.png "UteCpp04")
+         ![통과한 테스트 1개가 있는 단위 테스트 탐색기](../test/media/utecpp04.png "UteCpp04")
 
-### <a name="createDllProject"></a> 관리되지 않는 DLL 프로젝트 만들기
+### <a name="create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> 관리 되지 않는 DLL 프로젝트 만들기
 
 1. **Win32 프로젝트** 템플릿을 사용해서 **Visual C++** 프로젝트를 만듭니다.
 
      이 연습에서 프로젝트 이름은 `RootFinder`입니다.
 
-     ![C&#43; &#43; Win32 프로젝트 만들기](../test/media/utecpp05.png "만들기 utecpp05")
+     ![C&#43;&#43; Win32 프로젝트 만들기](../test/media/utecpp05.png "만들기 utecpp05")
 
 2. Win32 애플리케이션 마법사에서 **DLL** 및 **내보내기 기호** 를 선택합니다.
 
      **내보내기 기호** 옵션은 내보낸 메서드를 선언하는 데 사용할 수 있는 편리한 매크로를 생성합니다.
 
-     ![DLL&#43; &#43; 에 대 한 C 프로젝트 마법사 집합 및 기호 내보내기](../test/media/utecpp06.png "UteCpp06")
+     ![DLL에 대 한 C&#43;&#43; 프로젝트 마법사 집합 및 기호 내보내기](../test/media/utecpp06.png "UteCpp06")
 
 3. 주 .h 파일에서 내보낸 함수를 선언합니다.
 
@@ -180,19 +180,19 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
     }
     ```
 
-### <a name="coupleProjects"></a> DLL 프로젝트에 테스트 프로젝트 연결
+### <a name="couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> DLL 프로젝트에 테스트 프로젝트를 두 번
 
 1. DLL 프로젝트를 테스트 프로젝트의 프로젝트 참조에 추가합니다.
 
    1. 테스트 프로젝트의 속성을 열고 **공용 속성**, **프레임워크 및 참조**를 선택합니다.
 
-        ![C&#43; &#43; 프로젝트 속성 &#45; 프레임 워크 및 참조](../test/media/utecpp08.png "UteCpp08")
+        ![C&#43;&#43; 프로젝트 속성 &#45; 프레임 워크 및 참조](../test/media/utecpp08.png "UteCpp08")
 
    2. **새 참조 추가**를 선택합니다.
 
         **참조 추가** 대화 상자에서 DLL 프로젝트를 선택하고 **추가**를 선택합니다.
 
-        ![C&#43; &#43; 프로젝트 속성 &#45; 새 참조 추가](../test/media/utecpp09.png "추가 utecpp09")
+        ![C&#43;&#43; 프로젝트 속성 &#45; 새 참조 추가](../test/media/utecpp09.png "추가 utecpp09")
 
 2. 주 단위 테스트 .cpp 파일에서 DLL 코드의 .h 파일을 포함합니다.
 
@@ -224,13 +224,13 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
     새 테스트가 테스트 탐색기에 나타납니다.
 
-5. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+5. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
     ![단위 테스트 탐색기 &#45; 기본 테스트 통과](../test/media/utecpp10.png "UteCpp10")
 
    테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
 
-### <a name="iterate"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
+### <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
 
 1. 새 테스트 추가:
 
@@ -251,7 +251,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
     >
     >  사용자가 요구 사항을 변경할 경우, 더 이상 올바르지 않은 테스트는 비활성화합니다. 새 테스트를 작성하고, 동일한 증분 방식으로 한 번에 하나씩 작동합니다.
 
-2. 솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2. 솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      새 테스트가 실패합니다.
 
@@ -279,7 +279,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
     }
     ```
 
-4. 솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택합니다.
+4. 솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      두 테스트가 모두 통과합니다.
 
@@ -288,7 +288,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
     > [!TIP]
     > 한 번에 하나씩 테스트를 추가하여 코드를 개발합니다. 각 반복 후 모든 테스트가 통과하는지 확인합니다.
 
-### <a name="debug"></a> 실패한 테스트 디버그
+### <a name="debug-a-failing-test"></a><a name="debug"></a> 실패한 테스트 디버그
 
 1. 다른 테스트 추가:
 
@@ -363,7 +363,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 > [!TIP]
 > 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-작음") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
-### <a name="refactor"></a> 테스트를 변경하지 않고 코드 리팩터링
+### <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> 테스트를 변경하지 않고 코드 리팩터링
 
 1. SquareRoot 함수에서 중앙 계산을 간소화합니다.
 
@@ -384,7 +384,7 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
 ## <a name="next-steps"></a>다음 단계
 
-- **격리.** 대부분의 DLL은 데이터베이스 및 기타 DLL과 같은 하위 시스템에 의존합니다. 이러한 다른 구성 요소는 종종 병렬로 개발됩니다. 다른 구성 요소를 아직 사용할 수 없을 때 단위 테스트를 수행할 수 있도록 하려면 대체 모의 항목이 필요합니다.
+- **구분할.** 대부분의 DLL은 데이터베이스 및 기타 DLL과 같은 하위 시스템에 의존합니다. 이러한 다른 구성 요소는 종종 병렬로 개발됩니다. 다른 구성 요소를 아직 사용할 수 없을 때 단위 테스트를 수행할 수 있도록 하려면 대체 모의 항목이 필요합니다.
 
 - **확인 테스트 빌드.** 설정한 간격에 따라 팀의 빌드 서버에서 테스트가 수행되도록 할 수 있습니다. 이렇게 하면 여러 팀 멤버의 작업을 통합할 때 버그가 유입되지 않도록 보장됩니다.
 
@@ -392,5 +392,5 @@ Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단
 
      또한 최소한의 코드 검사 수준을 강제로 지정할 수도 있습니다.
 
-## <a name="see-also"></a>관련 항목:
- [VisualStudio를 사용 하 여 C++ 기존 응용 프로그램에 단위 테스트 추가](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [Microsoft.visualstudio.testtools.uitest.common.uimap.uimap>를 사용 하 여](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [관리/비관리 코드 상호 운용성](https://msdn.microsoft.com/library/ms973872.aspx) [디버깅 네이티브 코드](../debugger/debugging-native-code.md) [연습: 동적 연결 라이브러리 만들기 및 사용 (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [가져오기 및 내보내기](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+## <a name="see-also"></a>관련 항목
+ [VisualStudio를 사용 하 여](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [기존 c + + 응용 프로그램에 단위 테스트 추가 Microsoft.visualstudio.testtools.uitest.common.uimap.uimap>를 사용 하 여 기존 c + + 응용 프로그램에](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [대 한 개요](https://msdn.microsoft.com/library/ms973872.aspx) [네이티브 코드 디버깅 네이티브 코드](../debugger/debugging-native-code.md) [연습: 동적 연결 라이브러리 만들기 및 사용 (c + +)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [가져오기 및 내보내기](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

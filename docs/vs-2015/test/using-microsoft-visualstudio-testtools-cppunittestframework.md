@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c561555df40bc02c3c9f3090ee1de4c0f329bcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657179"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용
@@ -20,11 +20,11 @@ ms.locfileid: "72657179"
 
 이 항목에서는 `Microsoft::VisualStudio::CppUnitTestFramework` 네임스페이스의 public 구성원 목록을 제공합니다.
 
- 헤더 파일은 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include** 폴더에 있습니다.
+ 헤더 파일은  _VisualStudio2012 [x86] installfolder_**\VC\UnitTest\include** 폴더에 있습니다.
 
- lib 파일은 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib** 폴더에 있습니다.
+ Lib 파일은  _VisualStudio2012 [x86] installfolder_**\VC\UnitTest\lib** 폴더에 있습니다.
 
-## <a name="BKMK_In_this_topic"></a> 항목 내용
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 항목 내용
  [CppUnitTest.h](#BKMK_CppUnitTest_h)
 
 - [테스트 클래스와 메서드 만들기](#BKMK_Create_test_classes_and_methods)
@@ -93,9 +93,9 @@ ms.locfileid: "72657179"
 
     - [메시지 작성](#BKMK_Write_Message)
 
-## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppunittesth"></a><a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h
 
-### <a name="BKMK_Create_test_classes_and_methods"></a> 테스트 클래스와 메서드 만들기
+### <a name="create-test-classes-and-methods"></a><a name="BKMK_Create_test_classes_and_methods"></a> 테스트 클래스와 메서드 만들기
 
 ```cpp
 TEST_CLASS(className)
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
 
  *methodName*을 테스트 메서드로 정의합니다. 메서드의 클래스 범위에서 `TEST_METHOD`를 선언해야 합니다.
 
-### <a name="BKMK_Initialize_and_cleanup"></a> 초기화 및 정리
+### <a name="initialize-and-cleanup"></a><a name="BKMK_Initialize_and_cleanup"></a> 초기화 및 정리
 
-#### <a name="BKMK_Test_methods"></a> 테스트 메서드
+#### <a name="test-methods"></a><a name="BKMK_Test_methods"></a> 테스트 메서드
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -137,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
 
  각 테스트 메서드를 실행한 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_CLEANUP`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
-#### <a name="BKMK_Test_classes"></a> 테스트 클래스
+#### <a name="test-classes"></a><a name="BKMK_Test_classes"></a> 테스트 클래스
 
 ```cpp
 TEST_CLASS_INITIALIZE(methodName)
@@ -147,7 +147,7 @@ TEST_CLASS_INITIALIZE(methodName)
 
 ```
 
- 각 테스트 클래스를 만든 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_CLASS_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+ 각 테스트 클래스를 만든 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_CLASS_INITIALIZE`은 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -159,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
 
  각 테스트 클래스를 만든 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_CLASS_CLEANUP`은 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
-#### <a name="BKMK_Test_modules"></a> 테스트 모듈
+#### <a name="test-modules"></a><a name="BKMK_Test_modules"></a> 테스트 모듈
 
 ```cpp
 TEST_MODULE_INITIALIZE(methodName)
@@ -176,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
 
  모듈을 언로드할 때 실행되는 메서드 *methodName*을 정의합니다. `TEST_MODULE_CLEANUP`은 테스트 모듈에서 한 번만 정의할 수 있으며 네임스페이스 범위에서 선언해야 합니다.
 
-### <a name="BKMK_Create_test_attributes"></a> 테스트 특성 만들기
+### <a name="create-test-attributes"></a><a name="BKMK_Create_test_attributes"></a> 테스트 특성 만들기
 
-#### <a name="BKMK_Test_method_attributes"></a> 테스트 메서드 특성
+#### <a name="test-method-attributes"></a><a name="BKMK_Test_method_attributes"></a> 테스트 메서드 특성
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -191,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
 
  `TEST_METHOD_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue*를 사용하여 특성을 정의합니다.
 
-#### <a name="BKMK_Test_class_attributes"></a> 테스트 클래스 특성
+#### <a name="test-class-attributes"></a><a name="BKMK_Test_class_attributes"></a> 테스트 클래스 특성
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -204,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
 
  `TEST_CLASS_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue*를 사용하여 특성을 정의합니다.
 
-#### <a name="BKMK_Test_module_attributes"></a> 테스트 모듈 특성
+#### <a name="test-module-attributes"></a><a name="BKMK_Test_module_attributes"></a> 테스트 모듈 특성
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -217,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
 
  `TEST_MODULE_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue*를 사용하여 특성을 정의합니다.
 
-#### <a name="BKMK_Pre_defined_attributes"></a> 미리 정의된 특성
+#### <a name="pre-defined-attributes"></a><a name="BKMK_Pre_defined_attributes"></a> 미리 정의된 특성
  위에서 설명한 매크로 `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE` 또는 `TEST_MODULE_ATTRIBUTE` 매크로를 이러한 미리 정의된 특성 매크로로 대체할 수 있습니다.
 
 ```cpp
@@ -250,11 +250,11 @@ TEST_IGNORE()
 
  이름 `Ignore` 및 특성 값 `true`를 사용하여 특성을 정의합니다.
 
-## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppunittestasserth"></a><a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
-### <a name="BKMK_General_Asserts"></a> 일반 어설션
+### <a name="general-asserts"></a><a name="BKMK_General_Asserts"></a> 일반 어설션
 
-#### <a name="BKMK_General_Are_Equal"></a> AreEqual
+#### <a name="are-equal"></a><a name="BKMK_General_Are_Equal"></a> AreEqual
  두 개체가 같은지 확인합니다.
 
 ```cpp
@@ -310,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Are_Not_Equal"></a> AreNotEqual
+#### <a name="are-not-equal"></a><a name="BKMK_General_Are_Not_Equal"></a> AreNotEqual
  두 double이 같지 않은지 확인합니다.
 
 ```cpp
@@ -366,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Are_Same"></a> AreSame
+#### <a name="are-same"></a><a name="BKMK_General_Are_Same"></a> AreSame
  두 참조가 같은 개체 인스턴스(ID)를 참조하는지 확인합니다.
 
 ```cpp
@@ -378,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Are_Not_Same"></a> AreNotSame
+#### <a name="are-not-same"></a><a name="BKMK_General_Are_Not_Same"></a> AreNotSame
  두 참조가 같은 개체 인스턴스(ID)를 참조하지 않는지 확인합니다.
 
 ```cpp
@@ -390,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_Null"></a> IsNull
+#### <a name="is-null"></a><a name="BKMK_General_Is_Null"></a> IsNull
  포인터가 NULL인지 확인합니다.
 
 ```cpp
@@ -401,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_Not_Null"></a> IsNotNull
+#### <a name="is-not-null"></a><a name="BKMK_General_Is_Not_Null"></a> IsNotNull
  포인터가 NULL이 아닌지 확인합니다.
 
 ```cpp
@@ -412,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_True"></a> IsTrue
+#### <a name="is-true"></a><a name="BKMK_General_Is_True"></a> IsTrue
  조건이 true인지 확인합니다.
 
 ```cpp
@@ -422,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Is_False"></a> IsFalse
+#### <a name="is-false"></a><a name="BKMK_General_Is_False"></a> IsFalse
  조건이 false인지 확인합니다.
 
 ```cpp
@@ -432,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="BKMK_General_Fail"></a> Fail
+#### <a name="fail"></a><a name="BKMK_General_Fail"></a> Fail
  테스트 사례가 실패한 것으로 강제 지정합니다.
 
 ```cpp
@@ -441,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-### <a name="BKMK_WinRT_Asserts"></a> Windows 런타임 어설션
+### <a name="windows-runtime-asserts"></a><a name="BKMK_WinRT_Asserts"></a> Windows 런타임 어설션
 
-#### <a name="BKMK_WinRT_Are_Equal"></a> AreEqual
+#### <a name="are-equal"></a><a name="BKMK_WinRT_Are_Equal"></a> AreEqual
  두 Windows 런타임 포인터가 같은지 확인합니다.
 
 ```
@@ -466,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Are_Same"></a> AreSame
+#### <a name="are-same"></a><a name="BKMK_WinRT_Are_Same"></a> AreSame
  두 Windows 런타임 참조가 같은 개체를 참조하는지 확인합니다.
 
 ```
@@ -478,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Are_Not_Equal"></a> AreNotEqual
+#### <a name="are-not-equal"></a><a name="BKMK_WinRT_Are_Not_Equal"></a> AreNotEqual
  두 Windows 런타임 포인터가 같지 않은지 확인합니다.
 
 ```
@@ -501,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Are_Not_Same"></a> AreNotSame
+#### <a name="are-not-same"></a><a name="BKMK_WinRT_Are_Not_Same"></a> AreNotSame
  두 Windows 런타임 참조가 같은 개체를 참조하지 않는지 확인합니다.
 
 ```
@@ -513,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Is_Null"></a> IsNull
+#### <a name="is-null"></a><a name="BKMK_WinRT_Is_Null"></a> IsNull
  Windows 런타임 포인터가 nullptr인지 확인합니다.
 
 ```
@@ -524,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="BKMK_WinRT_Is_Not_Null"></a> IsNotNull
+#### <a name="is-not-null"></a><a name="BKMK_WinRT_Is_Not_Null"></a> IsNotNull
  Windows 런타임 포인터가 nullptr이 아닌지 확인합니다.
 
 ```
@@ -535,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-### <a name="BKMK_Exception_Asserts"></a> 예외 어설션
+### <a name="exception-asserts"></a><a name="BKMK_Exception_Asserts"></a> 예외 어설션
 
-#### <a name="BKMK_Expect_Exception"></a> EXPECTEXCEPTION
+#### <a name="expect-exception"></a><a name="BKMK_Expect_Exception"></a> EXPECTEXCEPTION
  함수에서 예외가 발생하는지 확인합니다.
 
 ```
@@ -558,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestloggerh"></a><a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h
 
-### <a name="BKMK_Logger"></a> Logger
+### <a name="logger"></a><a name="BKMK_Logger"></a> Logger
  Logger 클래스는 기록 대상 정적 메서드를 포함합니다.
 
 ```
 class Logger
 ```
 
-### <a name="BKMK_Write_Message"></a> 메시지 작성
+### <a name="write-message"></a><a name="BKMK_Write_Message"></a> 메시지 작성
 
 ```
 static void
@@ -579,7 +579,7 @@ static void
 Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  아래 코드는 이 문서에서 설명한 VSCppUnit 사용법의 예입니다.
 
 ```
@@ -650,5 +650,5 @@ public:
 };
 ```
 
-## <a name="see-also"></a>관련 항목:
- [코드 단위 테스트](../test/unit-test-your-code.md) [테스트 탐색기를 사용 하 여 네이티브 코드 테스트](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c) [기존 C++ 응용 프로그램에 단위 테스트 추가](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+## <a name="see-also"></a>관련 항목
+ [코드 단위 테스트](../test/unit-test-your-code.md) [테스트 탐색기를 사용 하 여 네이티브 코드 테스트](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c) [기존 c + + 응용 프로그램에 단위 테스트 추가](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)

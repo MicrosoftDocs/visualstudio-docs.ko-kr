@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::평가 | 마이크로 소프트 문서
+title: 'IDebugFunctionObject:: Evaluate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 529a5f67c808efa258bc0cb9899f546dbb90d431
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728501"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-함수를 호출하고 결과 값을 개체로 반환합니다.
+함수를 호출 하 고 결과 값을 개체로 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,22 +47,22 @@ int Evaluate(
 
 ## <a name="parameters"></a>매개 변수
 `ppParams`\
-【인】 입력 매개 변수를 나타내는 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체의 배열입니다. 이러한 각 매개 변수는 `Create` [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스의 메서드 중 하나로 만들어졌습니다.
+진행 입력 매개 변수를 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체의 배열입니다. 이러한 각 매개 변수는 `Create` [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스의 메서드 중 하나를 사용 하 여 생성 되었습니다.
 
 `dwParams`\
-【인】 배열의 매개 변수 `ppParams` 수입니다.
+진행 배열에 있는 매개 변수의 수 `ppParams` 입니다.
 
 `dwTimeout`\
-【인】 이 메서드에서 반환하기 전에 기다릴 최대 시간(밀리초)을 지정합니다. 무기한 `INFINITE` 대기하는 데 사용합니다.
+진행 이 메서드에서 반환 될 때까지 대기할 최대 시간 (밀리초)을 지정 합니다. `INFINITE`무기한 대기 하려면를 사용 합니다.
 
 `ppResult`\
-【아웃】 함수값을 개체로 나타내는 [IDebugObject를](../../../extensibility/debugger/reference/idebugobject.md) 반환합니다.
+제한이 함수 값을 개체로 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 개체로 표시되는 함수에 대한 호출을 설정하고 실행합니다.
+ 이 메서드는 [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 개체로 표시 되는 함수에 대 한 호출을 설정 하 고 실행 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
