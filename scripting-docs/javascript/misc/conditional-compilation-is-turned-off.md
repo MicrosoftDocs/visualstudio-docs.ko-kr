@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816126"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>조건부 컴파일이 해제되었습니다.
@@ -36,9 +36,9 @@ ms.locfileid: "85816126"
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
  [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on선언문](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if선언문](../../javascript/reference/at-if-statement-javascript.md)   
- [@set선언문](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_on 선언문](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if 선언문](../../javascript/reference/at-if-statement-javascript.md)   
+ [@set 선언문](../../javascript/reference/at-set-statement-javascript.md)

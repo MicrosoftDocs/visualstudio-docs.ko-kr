@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816178"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>소수 자릿수가 범위를 벗어납니다.
@@ -28,5 +28,5 @@ ms.locfileid: "85816178"
   
 - **Toexponential 수 ()** 의 인수가 너무 크거나 크지 않은지 확인 하십시오.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [toExponential 메서드(Number)](../../javascript/reference/toexponential-method-number-javascript.md)

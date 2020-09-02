@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3de7f224b6ff40f1606f9593704f799cd64d32da
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816061"
 ---
 # <a name="undefined-identifier"></a>식별자가 정의되지 않았습니다.
@@ -34,6 +34,6 @@ ms.locfileid: "85816061"
   
 - **Var** 문 (x;)을 사용 하 여 변수를 선언 `var` 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [변수](../../javascript/variables-javascript.md)   
  [변수 범위](../../javascript/advanced/variable-scope-javascript.md)

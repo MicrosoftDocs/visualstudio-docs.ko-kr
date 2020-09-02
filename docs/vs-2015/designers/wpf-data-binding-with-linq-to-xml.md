@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419686756fb996a44cb6355a9776cc08baed576d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663878"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>LINQ to XML로 WPF 데이터 바인딩
@@ -27,7 +27,7 @@ ms.locfileid: "72663878"
 |-----------|-----------------|
 |[LINQ to XML로 WPF 데이터 바인딩 개요](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|<xref:System.Xml.Linq> 네임스페이스에서 제공하는 동적 데이터 바인딩 기능을 소개하고 이러한 기능을 WPF에서 사용자 인터페이스 구성 요소의 데이터 소스로 사용하는 방법에 대해 설명합니다.|
 |[LINQ to XML 동적 속성](../designers/linq-to-xml-dynamic-properties.md)|<xref:System.Xml.Linq.XAttribute> 및 <xref:System.Xml.Linq.XElement> 클래스에서 노출하는 동적 속성에 대한 참조 정보를 제공합니다.|
-|[LINQ to XML 예제를 사용한 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md)|사용자 인터페이스 구성 요소를 XML 데이터 소스에 바인딩하는 WPF 예제를 제공합니다.|
+|[LINQ to XML 예제를 사용 하 여 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md)|사용자 인터페이스 구성 요소를 XML 데이터 소스에 바인딩하는 WPF 예제를 제공합니다.|
 
 ## <a name="reference"></a>참조
  <xref:System.Xml.Linq>
@@ -36,5 +36,5 @@ ms.locfileid: "72663878"
 
  <xref:System.Xml.Linq.XAttribute>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [고급 LINQ to XML 프로그래밍](https://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)

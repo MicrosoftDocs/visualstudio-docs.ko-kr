@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 192f9a5ca9928e4c325d67c340276ef12de14686
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816191"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>정규식에 구문 오류가 있습니다.(JavaScript)
@@ -28,7 +28,7 @@ ms.locfileid: "85816191"
   
 - 정규식 검색 문자열의 구조가 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 정규식 구문을 따르는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile 메서드(Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 98d2ee08a52e86c435c58502da1ab4f68b594905
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816165"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>디코딩할 URI가 올바른 인코딩이 아닙니다.
@@ -36,6 +36,6 @@ ms.locfileid: "85816165"
   
 - 유효한 Uri만 디코딩하 려 고 하는지 확인 합니다. 일반 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문자열에는 잘못 된 문자가 포함 될 수 있으므로 디코딩할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [decodeURI 함수](../../javascript/reference/decodeuri-function-javascript.md)   
  [decodeURIComponent 함수](../../javascript/reference/decodeuricomponent-function-javascript.md)

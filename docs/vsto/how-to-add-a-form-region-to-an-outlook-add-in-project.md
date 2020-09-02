@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538400"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>방법: Outlook 추가 기능 프로젝트에 양식 영역 추가
@@ -64,7 +64,7 @@ ms.locfileid: "85538400"
 
 11. **이 양식 영역을 표시할 메시지 클래스를 지정하세요.** 페이지에서 표준 Outlook 메시지 클래스를 선택하거나 하나 이상의 사용자 지정 메시지 클래스의 이름을 입력한 다음 **마침**을 클릭합니다. 자세한 내용은 [Outlook 메시지 클래스에 양식 영역 연결](../vsto/associating-a-form-region-with-an-outlook-message-class.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook 솔루션](../vsto/outlook-solutions.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)

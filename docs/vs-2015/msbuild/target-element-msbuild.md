@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144311"
 ---
 # <a name="target-element-msbuild"></a>Target 요소(MSBuild)
@@ -63,27 +63,27 @@ ms.locfileid: "68144311"
 |---------------|-----------------|  
 |`Name`|필수 특성입니다.<br /><br /> 대상의 이름입니다.|  
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 조건이 `false`로 평가되면 해당 대상 또는 `DependsOnTargets` 특성에 설정되어 있는 대상의 본문이 실행되지 않습니다. 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|  
-|`Inputs`|선택적 특성입니다.<br /><br /> 이 대상에 대한 입력을 구성하는 파일입니다. 파일이 여러 개인 경우 세미콜론으로 구분합니다. 파일의 타임스탬프를 `Outputs`에 있는 파일의 타임스탬프와 비교하여 `Target`이 최신 상태인지를 확인합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md), [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md), 및 [변환](../msbuild/msbuild-transforms.md)합니다.|  
-|`Outputs`|선택적 특성입니다.<br /><br /> 이 대상에 대한 출력을 구성하는 파일입니다. 파일이 여러 개인 경우 세미콜론으로 구분합니다. 파일의 타임스탬프를 `Inputs`에 있는 파일의 타임스탬프와 비교하여 `Target`이 최신 상태인지를 확인합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md), [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md), 및 [변환](../msbuild/msbuild-transforms.md)합니다.|  
+|`Inputs`|선택적 특성입니다.<br /><br /> 이 대상에 대한 입력을 구성하는 파일입니다. 파일이 여러 개인 경우 세미콜론으로 구분합니다. 파일의 타임스탬프를 `Outputs`에 있는 파일의 타임스탬프와 비교하여 `Target`이 최신 상태인지를 확인합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md), [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md)및 [변환](../msbuild/msbuild-transforms.md)을 참조 하세요.|  
+|`Outputs`|선택적 특성입니다.<br /><br /> 이 대상에 대한 출력을 구성하는 파일입니다. 파일이 여러 개인 경우 세미콜론으로 구분합니다. 파일의 타임스탬프를 `Inputs`에 있는 파일의 타임스탬프와 비교하여 `Target`이 최신 상태인지를 확인합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md), [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md)및 [변환](../msbuild/msbuild-transforms.md)을 참조 하세요.|  
 |`Returns`|선택적 특성입니다.<br /><br /> 이 대상을 호출하는 작업(예: MSBuild 작업)에 대해 제공할 항목 집합입니다. 대상이 여러 개인 경우 세미콜론으로 구분합니다. 파일의 대상에 `Returns` 특성이 없으면 Outputs 특성이 이 용도로 대신 사용됩니다.|  
 |`KeepDuplicateOutputs`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 대상의 Returns에서 같은 항목에 대한 여러 참조가 기록됩니다.  기본적으로 이 특성은 `false`입니다.|  
-|`BeforeTargets`|선택적 특성입니다.<br /><br /> 대상 이름의 세미콜론으로 구분된 목록입니다.  지정하는 경우 하나 이상의 지정된 대상을 실행하기 전에 이 대상을 실행해야 함을 나타납니다. 이렇게 하면 프로젝트 작성자가 기존 대상 집합을 직접 수정하지 않고 확장할 수 있습니다. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.|  
-|`AfterTargets`|선택적 특성입니다.<br /><br /> 대상 이름의 세미콜론으로 구분된 목록입니다. 지정하는 경우 하나 이상의 지정된 대상을 실행한 후에 이 대상을 실행해야 함을 나타납니다. 이렇게 하면 프로젝트 작성자가 기존 대상 집합을 직접 수정하지 않고 확장할 수 있습니다. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.|  
+|`BeforeTargets`|선택적 특성입니다.<br /><br /> 대상 이름의 세미콜론으로 구분된 목록입니다.  지정하는 경우 하나 이상의 지정된 대상을 실행하기 전에 이 대상을 실행해야 함을 나타납니다. 이렇게 하면 프로젝트 작성자가 기존 대상 집합을 직접 수정하지 않고 확장할 수 있습니다. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조 하세요.|  
+|`AfterTargets`|선택적 특성입니다.<br /><br /> 대상 이름의 세미콜론으로 구분된 목록입니다. 지정하는 경우 하나 이상의 지정된 대상을 실행한 후에 이 대상을 실행해야 함을 나타납니다. 이렇게 하면 프로젝트 작성자가 기존 대상 집합을 직접 수정하지 않고 확장할 수 있습니다. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조 하세요.|  
 |`DependsOnTargets`|선택적 특성입니다.<br /><br /> 이 대상을 실행하거나 최상위 종속성 분석을 수행하려면 실행해야 하는 대상입니다. 대상이 여러 개인 경우 세미콜론으로 구분합니다.|  
 |`Label`|선택적 특성입니다.<br /><br /> 시스템 및 사용자 요소를 식별하거나 정렬할 수 있는 식별자입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
-|[태스크](../msbuild/task-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다.|  
+|[Task](../msbuild/task-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|사용자 정의 `Property` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `PropertyGroup` 요소를 포함할 수 있습니다.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|사용자 정의 `Item` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `ItemGroup` 요소를 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|실패한 작업의 `ContinueOnError` 특성이 ErrorAndStop 또는 `false`인 경우 하나 이상의 대상이 실행되도록 합니다. 대상에는 `OnError` 요소가 없을 수도 있고 하나 이상 있을 수도 있습니다. `OnError` 요소는 있는 경우 `Target` 요소의 마지막 요소여야 합니다.<br /><br /> `ContinueOnError` 특성에 대한 자세한 내용은 [Task 요소(MSBuild)](../msbuild/task-element-msbuild.md)를 참조하세요.|  
+|[OnError](../msbuild/onerror-element-msbuild.md)|실패한 작업의 `ContinueOnError` 특성이 ErrorAndStop 또는 `false`인 경우 하나 이상의 대상이 실행되도록 합니다. 대상에는 `OnError` 요소가 없을 수도 있고 하나 이상 있을 수도 있습니다. `OnError` 요소는 있는 경우 `Target` 요소의 마지막 요소여야 합니다.<br /><br /> 특성에 대 한 자세한 내용은 `ContinueOnError` [Task 요소 (MSBuild)](../msbuild/task-element-msbuild.md)를 참조 하세요.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
   
@@ -119,6 +119,6 @@ ms.locfileid: "68144311"
 </Target>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [대상](../msbuild/msbuild-targets.md)   
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

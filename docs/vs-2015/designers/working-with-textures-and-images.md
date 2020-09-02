@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93813aa734c615e7f045c98c776e600be4ee3fab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663932"
 ---
 # <a name="working-with-textures-and-images"></a>질감 및 이미지 작업
@@ -45,5 +45,5 @@ ms.locfileid: "72663932"
 
 |제목|설명|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
+|[이미지 편집기](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
 |[이미지 편집기 예제](../designers/image-editor-examples.md)|일반적인 이미지 처리 작업을 수행하기 위해 이미지 편집기 사용 방법을 보여주는 항목에 대한 링크를 제공합니다.|

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c794d79d62fc580001efc5cf16993d4ac5fef48b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663841"
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml(XElement 동적 속성)
@@ -23,7 +23,7 @@ ms.locfileid: "72663841"
 
 요소의 서식이 지정되지 않은 XML 내용을 가져옵니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 elem.Xml
@@ -35,5 +35,5 @@ elem.Xml
 ## <a name="remarks"></a>설명
  이 속성은 <xref:System.Xml.Linq.XNode.ToString%28System.Xml.Linq.SaveOptions%29> 매개 변수가 <xref:System.Xml.Linq.XNode?displayProperty=fullName>으로 설정된 `SaveOptions` 클래스의 <xref:System.Xml.Linq.SaveOptions> 메서드와 동일합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [XElement 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md) [값](../designers/value-xelement-dynamic-property.md)
