@@ -15,10 +15,10 @@ caps.latest.revision: 85
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 631a180789f5fff373799b78222c25a50ab32912
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657097"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
@@ -26,7 +26,7 @@ ms.locfileid: "72657097"
 
 이 연습에서는 관리 코드에 대한 Microsoft 단위 테스트 프레임워크 및 Visual Studio 테스트 탐색기를 사용하여 일련의 단위 테스트를 생성, 실행 및 사용자 지정하는 방법을 안내합니다. 개발 중인 C# 프로젝트로 시작하여 해당 코드를 실행해 보는 테스트를 만들어 테스트를 실행하고 결과를 검사합니다. 그런 다음 프로젝트 코드를 변경하고 테스트를 다시 실행할 수 있습니다.
 
- 이 항목에는 다음과 같은 단원이 포함되어 있습니다.
+ 이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
 
  [연습 준비](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)
 
@@ -47,16 +47,16 @@ ms.locfileid: "72657097"
   [단위 테스트를 사용하여 코드 개선](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
-> 이 연습에서는 관리 코드에 Microsoft 단위 테스트 프레임워크를 사용합니다. 테스트 탐색기에서는 테스트 탐색기용 어댑터가 포함된 타사 단위 테스트 프레임워크의 테스트도 실행할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
+> 이 연습에서는 관리 코드에 Microsoft 단위 테스트 프레임워크를 사용합니다. 테스트 탐색기에서는 테스트 탐색기용 어댑터가 포함된 타사 단위 테스트 프레임워크의 테스트도 실행할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임 워크 설치](../test/install-third-party-unit-test-frameworks.md) 를 참조 하세요.
 
 > [!NOTE]
 > 명령줄에서 테스트를 실행하는 방법에 대한 자세한 내용은 [연습: 명령줄 테스트 유틸리티 사용](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)을 참조하세요.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
-- Bank 프로젝트. [단위 테스트를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-unit-tests.md)를 참조하세요.
+- Bank 프로젝트. [단위 테스트를 만들기 위한 샘플 프로젝트를](../test/sample-project-for-creating-unit-tests.md)참조 하세요.
 
-## <a name="BKMK_Prepare_the_walkthrough"></a> 연습 준비
+## <a name="prepare-the-walkthrough"></a><a name="BKMK_Prepare_the_walkthrough"></a> 연습 준비
 
 1. Visual Studio를 엽니다.
 
@@ -107,14 +107,14 @@ public void Debit(double amount)
 
 ```
 
-## <a name="BKMK_Create_a_unit_test_project"></a> 단위 테스트 프로젝트 만들기
+## <a name="create-a-unit-test-project"></a><a name="BKMK_Create_a_unit_test_project"></a> 단위 테스트 프로젝트 만들기
  **필수 조건**: [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)절차의 단계를 따릅니다.
 
 #### <a name="to-create-a-unit-test-project"></a>단위 테스트 프로젝트를 만들려면
 
 1. **파일** 메뉴에서 **추가**를 선택한 다음 **새 프로젝트...** 를 선택합니다.
 
-2. 새 프로젝트 대화 상자에서 **설치됨**, **Visual C#** 을 확장한 다음 **테스트**를 선택합니다.
+2. 새 프로젝트 대화 상자에서 **설치됨** 및 **Visual C#** 을 확장한 다음, **테스트**를 선택합니다.
 
 3. 템플릿 목록에서 **단위 테스트 프로젝트**를 선택합니다.
 
@@ -124,11 +124,11 @@ public void Debit(double amount)
 
 5. **BankTests** 프로젝트에서 **Bank** 솔루션에 대한 참조를 추가합니다.
 
-     솔루션 탐색기에서 **BankTests** 프로젝트의 **참조** 를 선택하고 상황에 맞는 메뉴에서 **참조 추가...** 를 선택합니다.
+     솔루션 탐색기에서 **BankTests** 프로젝트의 **참조** 를 선택 하 고 상황에 맞는 메뉴에서 **참조 추가** ...를 선택 합니다.
 
-6. 참조 관리자 대화 상자에서 **솔루션** 을 확장한 다음 **Bank** 항목을 선택합니다.
+6. 참조 관리자 대화 상자에서 **솔루션**을 확장한 다음, **Bank** 항목을 선택합니다.
 
-## <a name="BKMK_Create_the_test_class"></a> 테스트 클래스 만들기
+## <a name="create-the-test-class"></a><a name="BKMK_Create_the_test_class"></a> 테스트 클래스 만들기
  `BankAccount` 클래스를 확인하려면 테스트 클래스가 필요합니다. 프로젝트 템플릿에서 생성된 UnitTest1.cs를 사용할 수 있지만 파일 및 클래스에 설명이 포함된 이름을 제공해야 합니다. 솔루션 탐색기에서 파일 이름을 바꾸면 한 번에 수행할 수 있습니다.
 
  **클래스 파일 이름 변경**
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;
 ```
 
-### <a name="BKMK_Test_class_requirements"></a> 테스트 클래스 요구 사항
+### <a name="test-class-requirements"></a><a name="BKMK_Test_class_requirements"></a> 테스트 클래스 요구 사항
  테스트 클래스의 최소 요구 사항은 다음과 같습니다.
 
 - `[TestClass]` 특성은 테스트 탐색기에서 실행하려는 단위 테스트 메서드가 포함된 모든 클래스의 관리 코드에 대한 Microsoft 단위 테스트 프레임워크에 필요합니다.
@@ -172,7 +172,7 @@ using BankAccountNS;
 
   `[TestClass]` 특성이 없는 단위 테스트 프로젝트에 다른 클래스를 사용하거나 `[TestMethod]` 특성이 없는 테스트 클래스에 다른 메서드를 사용할 수 있습니다. 테스트 메서드에서 이러한 다른 클래스와 메서드를 사용할 수 있습니다.
 
-## <a name="BKMK_Create_the_first_test_method"></a> 첫 번째 테스트 메서드 만들기
+## <a name="create-the-first-test-method"></a><a name="BKMK_Create_the_first_test_method"></a> 첫 번째 테스트 메서드 만들기
  이 절차에서는 단위 테스트 메서드를 작성하여 `Debit` 클래스의 `BankAccount` 메서드 동작을 확인합니다. 이 메서드가 위에 나열되어 있습니다.
 
  테스트 중인 메서드를 분석한 결과, 세 가지 이상의 동작을 확인하기로 결정했습니다.
@@ -181,7 +181,7 @@ using BankAccountNS;
 
 2. 또한 대변 금액이 0보다 작을 경우에도 `ArgumentOutOfRangeException` 을 발생시킵니다.
 
-3. 1\)과 2)의 검사가 충족될 경우 이 메서드는 계정 잔액에서 금액을 뺍니다.
+3. 1)과 2)의 검사가 충족될 경우 이 메서드는 계정 잔액에서 금액을 뺍니다.
 
    첫 번째 테스트에서는 유효 금액(계정 잔액보다 작고 0보다 큰 값)이 계정으로부터 올바른 금액을 인출하는지 확인합니다.
 
@@ -213,7 +213,7 @@ using BankAccountNS;
 
    이 메서드는 상당히 간단합니다. 기초 잔액으로 새 `BankAccount` 개체를 만든 다음 유효한 금액을 인출합니다. 관리 코드 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> 메서드에 Microsoft 단위 테스트 프레임워크를 사용하여 마감 잔액이 기대한 것과 같은지 확인합니다.
 
-### <a name="BKMK_Test_method_requirements"></a> 테스트 메서드 요구 사항
+### <a name="test-method-requirements"></a><a name="BKMK_Test_method_requirements"></a> 테스트 메서드 요구 사항
  테스트 메서드는 다음 요구 사항을 충족해야 합니다.
 
 - 이 메서드를 `[TestMethod]` 특성으로 데코레이팅해야 합니다.
@@ -222,7 +222,7 @@ using BankAccountNS;
 
 - 메서드에 매개 변수를 사용할 수 없습니다.
 
-## <a name="BKMK_Build_and_run_the_test"></a> 테스트 빌드 및 실행
+## <a name="build-and-run-the-test"></a><a name="BKMK_Build_and_run_the_test"></a> 테스트 빌드 및 실행
 
 #### <a name="to-build-and-run-the-test"></a>테스트를 빌드 및 실행하려면
 
@@ -234,10 +234,10 @@ using BankAccountNS;
 
 3. 이러한 경우 테스트가 실패할 수 있습니다. 테스트 메서드가 **실패한 테스트**그룹으로 와 함께 UnitTestExplorer 창이 나타납니다. 창 하단에서 세부 정보를 보려면 테스트 탐색기에서 메서드를 선택합니다.
 
-## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> 코드를 수정하고 테스트 다시 실행
+## <a name="fix-your-code-and-rerun-your-tests"></a><a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> 코드를 수정 하 고 테스트 다시 실행
  **테스트 결과 분석**
 
- 테스트 결과에 실패를 설명하는 메시지가 포함됩니다. `AreEquals` 메서드의 경우 메시지에 예상 값(<strong>Expected\<*XXX*></strong> 매개 변수)과 실제 값(**Actual\<*YYY*>** 매개 변수)이 표시됩니다. 기초 잔액보다 줄어든 잔액을 예상했지만, 인출액만큼 늘어났습니다.
+ 테스트 결과에 실패를 설명하는 메시지가 포함됩니다. 메서드의 경우 `AreEquals` 메시지에 예상 된 항목 (<strong> \<*XXX*> 예상</strong>매개 변수)과 실제 수신 된 항목 ( **실제 \<*YYY*> ** 매개 변수)이 표시 됩니다. 기초 잔액보다 줄어든 잔액을 예상했지만, 인출액만큼 늘어났습니다.
 
  다시 검사한 Debit 코드에 단위 테스트를 통해 버그를 찾는 데 성공한 것으로 나타납니다. 차감해야 할 경우 계정 잔액에 인출금이 추가됩니다.
 
@@ -249,7 +249,7 @@ using BankAccountNS;
 m_balance += amount;
 ```
 
- 을(를) 다음으로 바꾸면 됩니다.
+ 다음과 같이 바꿉니다.
 
 ```csharp
 m_balance -= amount;
@@ -257,9 +257,9 @@ m_balance -= amount;
 
  **테스트 다시 실행**
 
- 테스트 탐색기에서 **모두 실행** 을 선택하여 테스트를 다시 실행합니다. 빨강/녹색 막대가 녹색으로 바뀌고 테스트는 **통과한 테스트** 그룹으로 이동합니다.
+ 테스트 탐색기에서 **모두 실행** 을 선택 하 여 테스트를 다시 실행 합니다. 빨강/녹색 막대가 녹색으로 바뀌고 테스트는 **통과한 테스트** 그룹으로 이동합니다.
 
-## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> 단위 테스트를 사용하여 코드 개선
+## <a name="use-unit-tests-to-improve-your-code"></a><a name="BKMK_Use_unit_tests_to_improve_your_code"></a> 단위 테스트를 사용 하 여 코드 개선
  이 섹션에서는 반복적인 분석 프로세스, 단위 테스트 개발 및 리팩터링을 통해 프로덕션 코드를 보다 강력하고 효과적으로 만드는 방법을 설명합니다.
 
  **문제 분석**

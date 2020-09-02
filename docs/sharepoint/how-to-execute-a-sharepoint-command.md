@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 789b77f3161b5fe566ea033060e8cab16cbaecc7
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016988"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>방법: SharePoint 명령 실행
@@ -50,7 +51,7 @@ ms.locfileid: "86016988"
     |명령에는 두 개의 매개 변수 (기본 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 매개 변수와 사용자 지정 매개 변수)와 반환 값이 없습니다.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|
     |명령에는 두 개의 매개 변수와 반환 값이 있습니다.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드 예제에서는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> `Contoso.Commands.UpgradeSolution` [방법: SharePoint 명령 만들기](../sharepoint/how-to-create-a-sharepoint-command.md)에 설명 된 명령을 호출 하는 오버 로드를 사용 하는 방법을 보여 줍니다.
 
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
@@ -69,7 +70,7 @@ ms.locfileid: "86016988"
 ## <a name="compile-the-code"></a>코드 컴파일
  이 예에는 VisualStudio 어셈블리에 대 한 참조가 필요 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [방법: SharePoint 명령 만들기](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

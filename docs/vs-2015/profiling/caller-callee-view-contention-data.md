@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164563"
 ---
 # <a name="caller--callee-view----contention-data"></a>호출자/호출 수신자 뷰 - 경합 데이터
@@ -29,7 +29,7 @@ ms.locfileid: "68164563"
   
  **현재 함수에서 호출된 함수**는 아래쪽 표에 표시되며, 현재 함수가 자식 함수를 호출한 경우 선택한 함수의 호출 수신자(자식) 함수에 대한 경합 정보를 보여 줍니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**Type**|함수의 컨텍스트:<br /><br /> -   **0** - 현재 함수<br />-   **1** - 현재 함수를 호출하는 함수<br />-   **2** - 현재 함수가 호출하는 함수<br /><br /> [VSPerfReport](../profiling/vsperfreport.md) 명령줄 보고서에서만 사용됩니다.|  
 |**차단된 전용 시간**|-   현재 함수의 경우 이 함수에서 함수 본문의 코드 실행이 차단되는 시간입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.<br />-   호출자 함수의 경우 이 함수가 현재 함수를 호출했을 때 발생한 현재 함수의 차단된 전용 시간 부분입니다.<br />-   호출 수신자 함수의 경우 이 함수가 현재 함수에 의해 호출되었을 때 자체 코드를 실행할 수 없도록 차단된 시간입니다. 호출 수신자 함수가 호출한 하위 함수의 차단된 시간은 포함되지 않습니다.|  
@@ -50,10 +50,10 @@ ms.locfileid: "68164563"
 |**루트 함수 이름**|현재 함수의 이름입니다. [VSPerfReport](../profiling/vsperfreport.md) 명령줄 보고서에서만 사용됩니다.|  
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)   
- [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
- [호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [호출자/호출 수신자 뷰 - 계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)
+ [호출자/호출 수신자 뷰-샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
+ [호출자/호출 수신자 뷰-.NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [호출자/호출 수신자 뷰-.NET 메모리 샘플링 데이터](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [호출자/호출 수신자 뷰-계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)

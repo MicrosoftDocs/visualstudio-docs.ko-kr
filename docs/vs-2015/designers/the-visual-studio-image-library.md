@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4880f2907584504ba659c9a887173e6cd365c241
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846452"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 이미지 라이브러리
@@ -33,5 +33,5 @@ Visual Studio 이미지 라이브러리에는 Microsoft Visual Studio, Microsoft
 
  이미지 라이브러리는 공통 요소, 작업, 주석, 아이콘 및 개체 등 5개 범주로 나뉩니다. 공통 요소 및 아이콘 형식에 대한 PDF 형식의 Readme 파일이 포함되어 있습니다. 여기에는 애플리케이션에서 이러한 이미지를 적절하게 사용하는 방법에 대한 정보가 포함되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [이미지, 비트맵 및 메타파일](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

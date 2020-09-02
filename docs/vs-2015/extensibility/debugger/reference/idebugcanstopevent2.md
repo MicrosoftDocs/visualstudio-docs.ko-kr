@@ -13,51 +13,51 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bc4ac1f3a8d9b470fbb3734f822601a7dce08a44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696676"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 인터페이스는 세션 디버그 관리자 (SDM) 현재 코드 위치에서 중지를 요청에 사용 됩니다.  
+이 인터페이스는 현재 코드 위치에서 중지할지 여부를 세션 디버그 관리자 (SDM)에 게 표시 하는 데 사용 됩니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCanStopEvent2 : IUknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 디버그 엔진 (DE) 소스 코드를 한 단계씩 실행을 지원 하기 위해이 인터페이스를 구현 합니다. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이 인터페이스와 동일한 개체에서 인터페이스를 구현 해야 (SDM 사용 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 액세스 하는 `IDebugEvent2` 인터페이스).  
+ DE (디버그 엔진)는이 인터페이스를 구현 하 여 소스 코드의 단계별 실행을 지원 합니다. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 인터페이스는이 인터페이스와 동일한 개체에서 구현 되어야 합니다. 즉, SDM에서 인터페이스에 액세스 하는 데 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 를 사용 합니다 `IDebugEvent2` .  
   
- SDM의 호출을 통신 해야 하는이 인터페이스의 구현을 [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) 디버그 엔진에 있습니다. 예를 들어 스레드를 처리 하는 디버그 엔진의 메시지를 게시 하는 메시지를 사용 하 여이 작업을 수행할 수 있습니다 또는이 인터페이스를 구현 하는 개체 수 디버그 엔진에 대 한 참조를 저장 및 콜백할 디버그 엔진에 전달 하는 플래그를 사용 하 여 `IDebugCanStopEvent2::CanStop`입니다.  
+ 이 인터페이스의 구현은 SDM의 [Canstop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) 호출을 디버그 엔진에 전달 해야 합니다. 예를 들어 디버그 엔진의 메시지 처리 스레드에 게시 된 메시지를 사용 하 여이 작업을 수행 하거나,이 인터페이스를 구현 하는 개체에서 디버그 엔진에 대 한 참조를 보유 하 고 플래그가 전달 된 디버그 엔진에 콜백할 수 있습니다 `IDebugCanStopEvent2::CanStop` .  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- DE이이 메서드는 DE는 계속 실행 하 고는 DE 라는 메시지가 표시 될 때마다 실행 하는 단계별 코드를 통해 보낼 수 있습니다. 이 이벤트를 사용 하 여 보냅니다 합니다 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM를 디버깅 중인 프로그램에 연결할 때 제공한 콜백 함수입니다.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ De는 실행을 계속 하 라는 메시지가 표시 되 고 DE가 코드를 단계별로 실행 하 게 될 때마다이 메서드를 보낼 수 있습니다. 이 이벤트는 디버깅 중인 프로그램에 연결 될 때 SDM에서 제공 하는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 함수를 사용 하 여 보냅니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDebugCanStopEvent2`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDebugCanStopEvent2` .  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|이 이벤트에 대 한 이유를 가져옵니다.|  
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|디버그 중인 프로그램을이 이벤트와 송신 중지 이유를 설명 하는 이벤트의 위치에서 중지, 방금 실행을 계속 지정 합니다.|  
+|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|이 이벤트의 이유를 가져옵니다.|  
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|디버그할 프로그램을이 이벤트의 위치에서 중지할지, 아니면 중지 이유를 설명 하는 이벤트를 보낼지, 아니면 계속 실행할지를 지정 합니다.|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|이 이벤트의 위치를 설명 하는 문서 컨텍스트를 가져옵니다.|  
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|이 이벤트의 위치를 설명 하는 코드 컨텍스트를 가져옵니다.|  
   
 ## <a name="remarks"></a>설명  
- DE 함수에는 DE 사용자 단계 찾습니다 없는 디버그 정보 또는 디버그 정보 존재 하지만 DE 모르는 경우 해당 위치에 대 한 소스 코드를 표시할 수 있습니다 하는 경우이 인터페이스를 보냅니다.  
+ 사용자가 함수를 단계별로 수행 하 고, 디버그 정보를 찾을 수 없거나 디버그 정보가 있는 경우 de가이 인터페이스를 보내고, 해당 위치에 대 한 소스 코드를 표시할 수 있는지 여부를 알 수 없습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 성능 세션 수동으로 만들기 | Microsoft Docs'
+title: '방법: 성능 세션 수동으로 만들기 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192837"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>방법: 성능 세션 수동으로 만들기
@@ -39,6 +39,6 @@ ms.locfileid: "68192837"
   
      새 이진 파일이 추가됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 탐색기](../profiling/performance-explorer.md)   
  [시작](../profiling/getting-started-with-performance-tools.md)

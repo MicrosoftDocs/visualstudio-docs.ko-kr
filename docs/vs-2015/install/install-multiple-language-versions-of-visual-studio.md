@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165454"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>여러 언어 버전의 Visual Studio 설치
@@ -34,7 +34,7 @@ Visual Studio에 대한 최신 설명서는 [언어 팩 설치](/visualstudio/in
 
 - Visual Studio 설치 프로그램의 유지 관리 모드를 사용하여 언어 패키지를 제거할 수 있습니다. **제어판**을 열고 **프로그램 및 기능**을 연 다음 Visual Studio의 해당 버전 및 **제거/변경**을 차례로 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [Microsoft LIP(언어 인터페이스 팩) 및 Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
 - [Visual Studio 설치](../install/install-visual-studio-2015.md)

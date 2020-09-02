@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192868"
 ---
 # <a name="item-metadata-in-target-batching"></a>대상 일괄 처리의 항목 메타데이터
@@ -68,8 +68,8 @@ ms.locfileid: "68192868"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md)   
- [일괄 처리](../msbuild/msbuild-batching.md)   
- [Target 요소(MSBuild)](../msbuild/target-element-msbuild.md)   
- [작업 일괄 처리의 항목 메타데이터](../msbuild/item-metadata-in-task-batching.md)
+ [일괄](../msbuild/msbuild-batching.md)   
+ [Target 요소 (MSBuild)](../msbuild/target-element-msbuild.md)   
+ [작업 일괄 처리의 항목 메타 데이터](../msbuild/item-metadata-in-task-batching.md)

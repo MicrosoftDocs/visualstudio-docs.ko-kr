@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::EnumProperties | Microsoft Docs
+title: 'IDebugStackFrame2:: EnumProperties | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f92db2c2fbafcd5be991281d7da4f594dcfb2c85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164797"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-스택 프레임을 로컬 변수와 같은 연관 된 속성에 대 한 열거자를 만듭니다.  
+로컬 변수와 같은 스택 프레임과 연결 된 속성에 대 한 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,30 +50,30 @@ int EnumProperties ( 
   
 #### <a name="parameters"></a>매개 변수  
  `dwFieldSpec`  
- [in] 플래그의 조합을 합니다 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형의 열거 된 필드를 지정 하는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 채울 구조체가 합니다.  
+ 진행 열거 된 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체에서 채울 필드를 지정 하는 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형의 플래그 조합입니다.  
   
  `nRadix`  
- [in] 모든 숫자 정보를 서식 지정 하는 데 사용할 기 수입니다.  
+ 진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.  
   
  `refiid`  
- [in] 선택 하는 데 사용 하는 필터의 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체가 같은 열거 되도록 `guidFilterLocals`합니다.  
+ 진행 열거 될 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조를 선택 하는 데 사용 되는 필터의 GUID입니다 (예:) `guidFilterLocals` .  
   
  `dwTimeout`  
- [in] 이 메서드에서 반환 되기 전에 대기할 밀리초에서는 최대 시간입니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
+ 진행 이 메서드에서 반환 될 때까지 대기 하는 최대 시간 (밀리초)입니다. `INFINITE`무기한 대기 하려면를 사용 합니다.  
   
  `pcelt`  
- [out] 열거 속성의 수를 반환 합니다. 호출할 때와 동일 합니다 [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) 메서드.  
+ 제한이 열거 된 속성의 수를 반환 합니다. 이는 [Getcount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) 메서드를 호출 하는 것과 같습니다.  
   
  `ppEnum`  
- [out] 반환 된 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) desired 속성의 목록을 포함 하는 개체입니다.  
+ 제한이 원하는 속성의 목록을 포함 하는 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 선택한 모든 속성을 단일 호출으로 검색할 수를 허용 하므로 보다는 빠르지만 순차적으로 호출 합니다 [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) 하 고 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드.  
+ 이 메서드는 단일 호출로 선택한 모든 속성을 검색할 수 있도록 허용 하므로 [Getdebugproperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) 및 [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드를 순차적으로 호출 하는 것 보다 빠릅니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)   

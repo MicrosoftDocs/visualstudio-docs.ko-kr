@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b56cf11057957b0eb99fc065ed26af10d8adfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670580"
 ---
 # <a name="how-to-update-existing-templates"></a>방법: 기존 템플릿 업데이트
@@ -51,7 +51,7 @@ ms.locfileid: "72670580"
 
 3. 현재 템플릿 파일을 수정 또는 삭제하거나 템플릿에 새 파일을 추가합니다.
 
-4. .vstemplate XML 파일을 열어서 수정한 다음 저장하여 업데이트된 동작 또는 새 파일을 처리합니다. .vstemplate 스키마에 대한 자세한 내용은 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요. 원본 파일에서 매개 변수화할 수 있는 항목에 대한 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.
+4. .vstemplate XML 파일을 열어서 수정한 다음 저장하여 업데이트된 동작 또는 새 파일을 처리합니다. .vstemplate 스키마에 대한 자세한 내용은 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요. 소스 파일에서 매개 변수화 할 수 있는 항목에 대 한 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md) 를 참조 하세요.
 
 5. 템플릿에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭하고 **보내기**를 클릭한 다음, **압축(ZIP) 폴더**를 클릭합니다. 선택한 파일이 .zip 파일로 압축됩니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72670580"
 
 8. 시작 메뉴의 **Visual Studio 2010/Visual Studio Tools/개발자 명령 프롬프트**에서 개발자 명령 프롬프트의 인스턴스를 시작(관리자로 실행)합니다.
 
-9. `devenv /installvstemplates` 명령을 실행합니다.
+9. 명령 `devenv /installvstemplates`를 실행합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md) [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) [템플릿 매개 변수](../ide/template-parameters.md) [방법: 시작 키트 만들기](../ide/how-to-create-starter-kits.md)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846147"
 ---
 # <a name="using-the-legacy-activity-designer"></a>레거시 활동 디자이너 사용
@@ -46,9 +46,9 @@ ms.locfileid: "75846147"
 ## <a name="configuring-an-activity"></a>활동 구성
  활동 디자이너가 활성 상태일 때 속성 브라우저를 사용하여 다음 표에 나열된 속성을 구성할 수 있습니다.
 
-|속성|설명|
+|속성|주석|
 |--------------|--------------|
-|**Name**|활동 이름입니다.|
+|**이름**|활동의 이름입니다.|
 |**기본 클래스**|활동이 파생되는 기본 클래스입니다. 기본 클래스는 [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx)입니다. **속성** 창에서 **기본 클래스** 줄임표 **[...]** 를 클릭 하 여 [.net 형식 찾아보기 및 선택 대화 상자 (레거시)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)에서 다른 기본 클래스를 선택 합니다.|
 |**설명**|활동의 사용자 정의 설명입니다.|
 |**사용**|활동 실행 및 유효성 검사를 사용 하도록 설정 하려면 기본적으로 **True** 로 설정 합니다. 활동 실행 및 유효성 검사를 사용 하지 않으려면 **False** 로 설정 합니다. 활동 실행 및 유효성 검사에 대 한 자세한 내용은 [워크플로 활동 개발](https://msdn2.microsoft.com/library/ms734413.aspx)을 참조 하세요.|
@@ -56,5 +56,5 @@ ms.locfileid: "75846147"
 ## <a name="adding-child-activities"></a>자식 활동 추가
  도구 상자에서 디자인 중인 활동으로 자식 활동을 끌어 놓을 수 있습니다. 그런 다음 속성 브라우저를 사용하여 각 자식 활동을 구성할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [워크플로 작업 개발](https://msdn2.microsoft.com/library/ms734413.aspx) [사용자 지정 활동 만들기](https://msdn2.microsoft.com/library/bb675228.aspx) [레거시 워크플로 활동](../workflow-designer/legacy-workflow-activities.md) [사용자 지정 활동 샘플](https://msdn2.microsoft.com/library/bb472471.aspx) 방법: [레거시 워크플로 디자이너를 사용 하 여](../workflow-designer/using-the-legacy-workflow-designer.md) [워크플로 활동 라이브러리 만들기 (레거시)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)

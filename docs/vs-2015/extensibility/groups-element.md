@@ -12,10 +12,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9199ea7a74f92fec5d26c1b2a3e178224780f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204258"
 ---
 # <a name="groups-element"></a>Groups 요소
@@ -37,9 +37,9 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
   
 ### <a name="attributes"></a>특성  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -52,7 +52,7 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다.|  
+|[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다.|  
   
 ## <a name="example"></a>예제  
   
@@ -64,6 +64,6 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
 </Groups>  
 ```  
   
-## <a name="see-also"></a>관련 항목  
- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>참고 항목  
+ [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
