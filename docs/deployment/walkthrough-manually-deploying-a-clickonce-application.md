@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249978"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>연습: 수동으로 ClickOnce 애플리케이션 배포
@@ -192,7 +192,7 @@ Visual Studio를 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/nd
 ## <a name="next-steps"></a>다음 단계
  응용 프로그램의 새 버전을 배포 해야 하는 경우 새 버전 (예: 1.0.0.1) 다음에 라는 새 디렉터리를 만들고 새 응용 프로그램 파일을 새 디렉터리에 복사 합니다. 다음으로, 이전 단계를 수행 하 여 새 응용 프로그램 매니페스트를 만들고 서명 하 고 배포 매니페스트를 업데이트 하 고 서명 해야 합니다. Mage.exe및 호출 모두에서 더 높은 버전을 지정 해야 *Mage.exe* `-New` `-Update` 합니다 .이 경우에는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 더 높은 버전만 업데이트 하 고 가장 낮은 정수는 가장 중요 합니다. *MageUI.exe*사용 하는 경우 배포 매니페스트를 열고 **응용 프로그램 참조** 탭을 선택 하 여 **매니페스트 선택** 단추로 이동한 후 업데이트 된 응용 프로그램 매니페스트를 선택 하 여 업데이트할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

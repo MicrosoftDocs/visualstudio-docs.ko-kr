@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ec07e71e57c0b3875d690773b7ff2618269b8f4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250006"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
@@ -94,7 +94,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>응용 프로그램 설치에 지원 되지 않는 FTP 프로토콜
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 모든 HTTP 1.1 웹 서버 또는 파일 서버에서 응용 프로그램을 설치할 수 있습니다. 파일 전송 프로토콜 FTP는 응용 프로그램을 설치 하는 데 지원 되지 않습니다. FTP를 사용 하 여 응용 프로그램을 게시할 수 있습니다. 다음 표에는 이러한 차이점이 요약 되어 있습니다.
 
-| URL 형식 | Description |
+| URL 형식 | 설명 |
 |----------| - |
 | ftp:// | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 프로토콜을 사용 하 여 응용 프로그램을 게시할 수 있습니다. |
 | http:// | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 프로토콜을 사용 하 여 응용 프로그램을 설치할 수 있습니다. |
@@ -132,7 +132,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 
  IIS에 대 한 자세한 지침은 [HTTP 압축을 위한 추가 문서 유형을 지정 하는 방법](https://support.microsoft.com/help/234497)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)

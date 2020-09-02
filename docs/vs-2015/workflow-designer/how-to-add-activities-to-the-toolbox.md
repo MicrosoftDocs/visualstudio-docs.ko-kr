@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8fc2af704ab587480913c51cdbc593e6cc0f483a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663463"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>방법: 도구 상자에 활동 추가
@@ -21,11 +21,11 @@ ms.locfileid: "72663463"
 
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>현재 프로젝트에서 활동을 추가하려면
 
-1. 현재 워크플로 프로젝트에 새 사용자 지정 활동을 추가합니다. 프로젝트에 새 사용자 지정 활동을 추가 하는 [!INCLUDE[crabout](../includes/crabout-md.md)] [방법: 워크플로 프로젝트에 새 항목 추가](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)를 참조 하세요.
+1. 현재 워크플로 프로젝트에 새 사용자 지정 활동을 추가합니다. [!INCLUDE[crabout](../includes/crabout-md.md)] 프로젝트에 새 사용자 지정 활동 추가 [방법: 워크플로 프로젝트에 새 항목 추가](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)를 참조 하세요.
 
 2. 활동에 사용자 지정 논리를 추가합니다.
 
-3. 프로젝트를 빌드합니다. 빌드가 성공적으로 완료 되 면 "\<*project name*>" 이라는 **도구 상자** 에 해당 범주에 포함 된 사용자 지정 활동과 함께 새 범주가 표시 됩니다.
+3. 프로젝트를 빌드합니다. 빌드에 성공 하면 "" 이라는 **도구 상자** 에서 \<*project name*> 해당 범주에 포함 된 사용자 지정 활동과 함께 새 범주가 표시 됩니다.
 
     > [!NOTE]
     > 도구 상자를 다시 설정하는 경우 솔루션을 다시 빌드하더라도 사용자 지정 활동은 제거됩니다. 다시 설정한 후에 도구 상자를 사용자 지정 활동으로 다시 채우려면 [!INCLUDE[vs2010](../includes/vs2010-md.md)]을 다시 시작합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "72663463"
 
 1. 하나 이상의 워크플로 프로젝트와 사용자 지정 활동 라이브러리 프로젝트 또는 사용자 지정 활동을 정의하는 다른 워크플로 프로젝트가 포함된 솔루션을 엽니다.
 
-2. 프로젝트를 모두 빌드합니다. 빌드가 성공적으로 완료 되 면 "\<*project name*>" 이라는 **도구 상자** 에 해당 범주에 포함 된 사용자 지정 활동과 함께 새 범주가 표시 됩니다.
+2. 프로젝트를 모두 빌드합니다. 빌드가 성공 하면 "" 이라는 **도구 상자** 에 \<*project name*> 해당 범주에 포함 된 사용자 지정 활동과 함께 새 범주가 표시 됩니다.
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>어셈블리에서 도구 상자에 활동을 추가하려면
 
@@ -52,11 +52,11 @@ ms.locfileid: "72663463"
 
 4. 어셈블리를 선택 하 고 **확인을**클릭 합니다. 사용자 지정 활동 구성 요소가 구성 요소 목록에 추가되고 자동으로 선택됩니다.
 
-    1. **확인** 을 클릭 하 여 대화 상자를 닫습니다.
+    1. **확인**을 클릭하여 대화 상자를 닫습니다.
 
 5. 도구 상자를 표시 하려면 **보기** 메뉴에서 **도구 상자** 를 선택 합니다.
 
 6. 사용자 지정 작업은 **도구 상자** 에서 항목이 추가 되기 전에 포커스가 있던 범주 아래에 나타납니다. 예를 들어 도구 상자 항목을 추가 하기 전에 **도구 상자** 에서 **일반** 범주를 선택 하면 활동이 **일반** 범주 아래에 나타납니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [워크플로 디자이너 사용](../workflow-designer/using-the-workflow-designer.md)

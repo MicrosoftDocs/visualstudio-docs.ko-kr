@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663445"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>방법: 단계별 디버깅 옵션 변경(레거시)
@@ -29,7 +29,7 @@ ms.locfileid: "72663445"
 
  레거시 워크플로 프로젝트에서 단계별 디버깅 옵션을 변경하려면 다음 단계를 따르세요.
 
-## <a name="procedures"></a>절차
+## <a name="procedures"></a>프로시저
 
 #### <a name="to-change-the-debug-stepping-option"></a>디버그 단계별 옵션을 변경하려면
 
@@ -37,9 +37,9 @@ ms.locfileid: "72663445"
 
 2. 기존 레거시 워크플로 프로젝트를 열거나 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하며 동시 활동을 사용하는 새 프로젝트를 만듭니다.
 
-3. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]의 **워크플로** 메뉴에서 **디버그**를 가리킨 다음 **단계별 옵션**을 가리킵니다.
+3. 레거시의 **워크플로** 메뉴에서 [!INCLUDE[wfd2](../includes/wfd2-md.md)] **디버그**를 가리킨 다음 **단계별 옵션**을 가리킵니다.
 
 4. **인스턴스** 또는 **분기**중 하나를 선택 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [레거시 워크플로 디버깅](../workflow-designer/debugging-legacy-workflows.md) [단계별 실행 옵션 (레거시)](../workflow-designer/debug-stepping-options-legacy.md)

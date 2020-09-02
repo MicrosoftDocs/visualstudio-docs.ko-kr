@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 675373ae1728bbca2cc7a89fdaa8014e6286d8b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159320"
 ---
-# <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
+# <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-참조를 설명합니다.  
+참조를 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,37 +52,37 @@ public struct DEBUG_REFERENCE_INFO { 
   
 ## <a name="members"></a>멤버  
  dwFields  
- 플래그의 조합 된 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 채워진 필드를 지정 하는 열거형입니다.  
+ 입력 하는 필드를 지정 하는 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 열거형의 플래그 조합입니다.  
   
  bstrName  
- 사용자가 지정한 이름의 합니다 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체입니다.  
+ [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체의 사용자 지정 이름입니다.  
   
  bstrType  
- 서식이 지정 된 문자열로 참조 형식입니다.  
+ 형식이 지정 된 문자열로 된 참조 형식입니다.  
   
  bstrValue  
- 서식이 지정 된 문자열로 참조 값  
+ 형식이 지정 된 문자열로 된 참조 값입니다.  
   
  dwAttrib  
- 플래그의 조합 된 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 디버그 속성 특성에 대 한 플래그를 지정 하는 열거형입니다.  
+ 디버그 속성 특성에 대 한 플래그를 지정 하는 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 열거형의 플래그 조합입니다.  
   
  dwRefType  
- 값을 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 강 하거나 약한 참조 형식 인지 여부를 지정 하는 열거형입니다.  
+ 참조 형식이 강력 하거나 weak 인지 여부를 지정 하는 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 열거형의 값입니다.  
   
  m_pReference  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 참조 정보를 지정 하는 개체입니다.  
+ 참조 정보를 지정 하는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 대 한 호출에 전달 되는 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 메서드를 채울 수 있습니다. 이 구조에서 목록의 일부로 반환 됩니다 합니다 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 차례로 호출에서 반환 되는 인터페이스를 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 메서드.  
+ 이 구조체는 채워질 [Getreferenceinfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 메서드에 대 한 호출에 전달 됩니다. 이 구조체는 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 인터페이스에서 목록의 일부로도 반환 됩니다 .이는 차례로 [enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 메서드 호출에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663427"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>방법: 워크플로 프로젝트 속성 구성(레거시)
@@ -29,11 +29,11 @@ ms.locfileid: "72663427"
 
 1. **솔루션 탐색기** 창이 표시 되지 않으면 **보기** 메뉴에서 **솔루션 탐색기** 를 선택 합니다.
 
-2. **솔루션 탐색기**에서 프로젝트를 선택합니다.
+2. **솔루션 탐색기**에서 프로젝트를 선택 합니다.
 
 3. **속성** 창이 표시 되지 않으면 **보기** 메뉴에서 **속성 창** 을 선택 합니다.
 
 4. 프로젝트 **속성** 창에서 변경 하려는 속성을 보고 수정 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [레거시 워크플로 프로젝트 만들기](../workflow-designer/creating-legacy-workflow-projects.md)
