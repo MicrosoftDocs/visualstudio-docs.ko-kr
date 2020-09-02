@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159236"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>디자인 타임에 어셈블리 확인
@@ -39,5 +39,5 @@ ms.locfileid: "68159236"
   
  이제 .NET Framework SDK가 포함된 타기팅 팩에는 해당 버전의 Framework에 있는 모든 런타임 어셈블리 목록(재배포 목록이라고도 함)이 포함됩니다. 따라서 빌드 시스템이 어셈블리의 잘못된 버전에 대해 형식을 확인할 가능성은 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [고급 개념](../msbuild/msbuild-advanced-concepts.md)

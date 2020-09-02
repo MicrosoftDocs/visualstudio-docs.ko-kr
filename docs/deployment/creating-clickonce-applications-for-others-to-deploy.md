@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3307fc124f50e8c9f73749293c36f53be36c5e3c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71252455"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>다른 사용자가 배포할 수 있는 ClickOnce 애플리케이션 만들기
@@ -41,7 +41,7 @@ ClickOnce 배포를 만드는 일부 개발자는 응용 프로그램 자체를 
 
  예를 들어, 놀이 동산에는 재무 부서와 인적 자원 부서가 있습니다. 두 부서 모두 SQL 데이터베이스에 저장 된 데이터에서 보고서를 생성 하는 Microsoft Corporation의 ClickOnce 응용 프로그램을 라이선스 합니다. Microsoft는 각 부서에 해당 데이터에 맞게 사용자 지정 된 응용 프로그램 버전을 제공 합니다. 응용 프로그램이 동일한 Authenticode 인증서로 서명 된 경우 두 응용 프로그램을 사용 하려고 시도 하는 사용자는 두 번째 응용 프로그램을 첫 번째 응용 프로그램과 동일 하 게 간주 하므로 오류가 발생 합니다. 이 경우 고객은 응용 프로그램에 의해 로컬로 저장 된 데이터의 손실을 예측할 수 없으며 원치 않는 부작용이 발생할 수 있습니다.
 
- 코드 서명과 관련 된 추가 문제는 응용 프로그램 `deploymentProvider` 업데이트를 검색할 위치를 ClickOnce에 알려 주는 배포 매니페스트의 요소입니다. 이 요소는 서명 하기 전에 배포 매니페스트에 추가 해야 합니다. 이 요소를 나중에 추가 하는 경우 배포 매니페스트를 다시 서명 해야 합니다.
+ 코드 서명과 관련 된 추가 문제는 `deploymentProvider` 응용 프로그램 업데이트를 검색할 위치를 ClickOnce에 알려 주는 배포 매니페스트의 요소입니다. 이 요소는 서명 하기 전에 배포 매니페스트에 추가 해야 합니다. 이 요소를 나중에 추가 하는 경우 배포 매니페스트를 다시 서명 해야 합니다.
 
 ### <a name="require-the-customer-to-sign-the-deployment-manifest"></a>고객이 배포 매니페스트에 서명 하도록 요구
  고유 하지 않은 배포 문제에 대 한 한 가지 해결책은 개발자가 응용 프로그램 매니페스트에 서명 하 고 고객은 배포 매니페스트에 서명 하는 것입니다. 이 접근 방식은 작동 하지만 다른 문제를 야기 합니다. Authenticode 인증서가 보호 된 자산을 유지 해야 하므로 고객은 인증서를 개발자에 게 제공 하 여 배포에 서명할 수 없습니다. 고객이 .NET Framework SDK에서 무료로 제공 되는 도구를 사용 하 여 배포 매니페스트 자체에 서명할 수 있지만, 고객이 제공 하거나 제공할 수 있는 것 보다 더 많은 기술 정보가 필요할 수 있습니다. 이러한 경우 개발자는 일반적으로 응용 프로그램, 웹 사이트 또는 응용 프로그램의 버전을 서명 하기 위해 제출할 수 있는 기타 메커니즘을 만듭니다.
@@ -50,20 +50,20 @@ ClickOnce 배포를 만드는 일부 개발자는 응용 프로그램 자체를 
  개발자와 고객이 응용 프로그램 매니페스트에 서명 해야 한다는 것에 동의 하더라도 특히 신뢰할 수 있는 응용 프로그램 배포에 적용 되는 응용 프로그램의 id를 포함 하는 다른 문제가 발생 합니다. 이 기능에 대 한 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조 하세요. Microsoft Corporation에서 제공 하는 모든 응용 프로그램이 완전 신뢰로 실행 되도록 놀이 Works에서 클라이언트 컴퓨터를 구성 하려는 경우를 가정해 보겠습니다. 놀이 Works가 배포 매니페스트에 서명 하는 경우 ClickOnce는 놀이 Work의 보안 서명을 사용 하 여 응용 프로그램의 신뢰 수준을 결정 합니다.
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>신뢰에 응용 프로그램 매니페스트를 사용 하 여 고객 배포 만들기
- .NET Framework 3.5의 ClickOnce에는 개발자와 고객이 매니페스트에 서명 하는 방법에 대 한 새로운 솔루션을 제공 하는 새로운 기능이 포함 되어 있습니다. ClickOnce 응용 프로그램 매니페스트는 개발자가 응용 프로그램 `<useManifestForTrust>` 매니페스트의 디지털 서명이 신뢰 결정을 내리는 데 사용 되어야 함을 나타낼 수 있는 라는 새 요소를 지원 합니다. 개발자는 *mage.exe*, *Mageui.exe*, Visual Studio 등의 ClickOnce 패키징 도구를 사용 하 여 응용 프로그램 매니페스트에이 요소를 포함 하 고 해당 게시자 이름과 응용 프로그램의 이름을 매니페스트에 포함 합니다.
+ .NET Framework 3.5의 ClickOnce에는 개발자와 고객이 매니페스트에 서명 하는 방법에 대 한 새로운 솔루션을 제공 하는 새로운 기능이 포함 되어 있습니다. ClickOnce 응용 프로그램 매니페스트는 `<useManifestForTrust>` 개발자가 응용 프로그램 매니페스트의 디지털 서명이 신뢰 결정을 내리는 데 사용 되어야 함을 나타낼 수 있는 라는 새 요소를 지원 합니다. 개발자는 *Mage.exe*, *MageUI.exe*, Visual Studio 등의 ClickOnce 패키징 도구를 사용 하 여 응용 프로그램 매니페스트에이 요소를 포함 하 고 해당 게시자 이름과 응용 프로그램의 이름을 매니페스트에 포함 합니다.
 
- 를 사용 `<useManifestForTrust>`하는 경우 인증 기관에서 발급 한 Authenticode 인증서를 사용 하 여 배포 매니페스트를 서명할 필요가 없습니다. 대신 자체 서명 된 인증서로 알려진 항목을 사용 하 여 서명할 수 있습니다. 자체 서명 된 인증서는 표준 .NET Framework SDK 도구를 사용 하 여 고객 또는 개발자가 생성 한 다음 표준 ClickOnce 배포 도구를 사용 하 여 배포 매니페스트에 적용 됩니다. 자세한 내용은 [makecert.exe](/windows/desktop/SecCrypto/makecert)를 참조 하세요.
+ 를 사용 하는 경우 `<useManifestForTrust>` 인증 기관에서 발급 한 Authenticode 인증서를 사용 하 여 배포 매니페스트를 서명할 필요가 없습니다. 대신 자체 서명 된 인증서로 알려진 항목을 사용 하 여 서명할 수 있습니다. 자체 서명 된 인증서는 표준 .NET Framework SDK 도구를 사용 하 여 고객 또는 개발자가 생성 한 다음 표준 ClickOnce 배포 도구를 사용 하 여 배포 매니페스트에 적용 됩니다. 자세한 내용은 [makecert.exe](/windows/desktop/SecCrypto/makecert)를 참조 하세요.
 
- 배포 매니페스트에 자체 서명 된 인증서를 사용 하면 여러 가지 이점이 있습니다. 고객이 자신의 Authenticode 인증서 `<useManifestForTrust>` 를 얻거나 만들 필요가 없도록 하 여 고객에 대 한 배포를 간소화 하는 동시에 개발자가 응용 프로그램에서 자신의 브랜딩 id를 유지 관리할 수 있도록 합니다. 그 결과, 더 안전 하 고 고유한 응용 프로그램 id를 갖는 서명 된 배포 집합이 있습니다. 이렇게 하면 동일한 응용 프로그램을 여러 고객에 게 배포할 때 발생할 수 있는 잠재적인 충돌을 방지할 수 있습니다.
+ 배포 매니페스트에 자체 서명 된 인증서를 사용 하면 여러 가지 이점이 있습니다. 고객이 자신의 Authenticode 인증서를 얻거나 만들 필요가 없도록 하 여 `<useManifestForTrust>` 고객에 대 한 배포를 간소화 하는 동시에 개발자가 응용 프로그램에서 자신의 브랜딩 id를 유지 관리할 수 있도록 합니다. 그 결과, 더 안전 하 고 고유한 응용 프로그램 id를 갖는 서명 된 배포 집합이 있습니다. 이렇게 하면 동일한 응용 프로그램을 여러 고객에 게 배포할 때 발생할 수 있는 잠재적인 충돌을 방지할 수 있습니다.
 
- 을 사용 `<useManifestForTrust>` [하 여 ClickOnce 배포를 만드는 방법에 대 한 단계별 정보는 연습: 다시 서명할 필요가 없고 브랜딩 정보](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)를 유지 하는 ClickOnce 응용 프로그램을 수동으로 배포 합니다.
+ 을 사용 하 여 ClickOnce 배포를 만드는 방법에 대 한 단계별 정보는 `<useManifestForTrust>` [연습: 다시 서명할 필요가 없고 브랜딩 정보를 유지 하는 clickonce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)를 참조 하세요.
 
 ### <a name="how-application-manifest-for-trust-works-at-run-time"></a>런타임에 신뢰의 응용 프로그램 매니페스트 작동 방법
- 런타임에 신뢰에 응용 프로그램 매니페스트를 사용 하는 방법을 더 잘 이해 하려면 다음 예제를 참조 하세요. .NET Framework 3.5를 대상으로 하는 ClickOnce 응용 프로그램은 Microsoft에서 만듭니다. 응용 프로그램 매니페스트는 요소 `<useManifestForTrust>` 를 사용 하 고 Microsoft에서 서명 합니다. 놀이 Works는 자체 서명 된 인증서를 사용 하 여 배포 매니페스트에 서명 합니다. 놀이 Works 클라이언트는 Microsoft에서 서명 된 모든 응용 프로그램을 신뢰 하도록 구성 됩니다.
+ 런타임에 신뢰에 응용 프로그램 매니페스트를 사용 하는 방법을 더 잘 이해 하려면 다음 예제를 참조 하세요. .NET Framework 3.5를 대상으로 하는 ClickOnce 응용 프로그램은 Microsoft에서 만듭니다. 응용 프로그램 매니페스트는 요소를 사용 하 `<useManifestForTrust>` 고 Microsoft에서 서명 합니다. 놀이 Works는 자체 서명 된 인증서를 사용 하 여 배포 매니페스트에 서명 합니다. 놀이 Works 클라이언트는 Microsoft에서 서명 된 모든 응용 프로그램을 신뢰 하도록 구성 됩니다.
 
  사용자가 배포 매니페스트에 대 한 링크를 클릭 하면 ClickOnce가 사용자의 컴퓨터에 응용 프로그램을 설치 합니다. 인증서 및 배포 정보는 클라이언트 컴퓨터에서 ClickOnce에 대해 고유 하 게 응용 프로그램을 식별 합니다. 사용자가 다른 위치에서 동일한 응용 프로그램을 다시 설치 하려고 하면 ClickOnce에서이 id를 사용 하 여 응용 프로그램이 클라이언트에 이미 있는지 확인할 수 있습니다.
 
- 그런 다음 ClickOnce는 응용 프로그램 매니페스트에 서명 하는 데 사용 되는 Authenticode 인증서를 검사 하 여 ClickOnce에서 부여할 신뢰 수준을 결정 합니다. 놀이 Works는 Microsoft에서 서명한 응용 프로그램을 신뢰 하도록 클라이언트를 구성 했으므로이 ClickOnce 응용 프로그램에는 완전 신뢰가 부여 됩니다. 자세한 내용은 [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조하세요.
+ 그런 다음 ClickOnce는 응용 프로그램 매니페스트에 서명 하는 데 사용 되는 Authenticode 인증서를 검사 하 여 ClickOnce에서 부여할 신뢰 수준을 결정 합니다. 놀이 Works는 Microsoft에서 서명한 응용 프로그램을 신뢰 하도록 클라이언트를 구성 했으므로이 ClickOnce 응용 프로그램에는 완전 신뢰가 부여 됩니다. 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조 하세요.
 
 ## <a name="create-customer-deployments-for-earlier-versions"></a>이전 버전에 대 한 고객 배포 만들기
  개발자가 이전 버전의 .NET Framework를 사용 하는 고객에 게 ClickOnce 응용 프로그램을 배포 하는 경우 어떻게 되나요? 다음 섹션에서는 몇 가지 권장 솔루션과 각 권장 사항에 대 한 장점과 단점을 요약 합니다.
@@ -73,7 +73,7 @@ ClickOnce 배포를 만드는 일부 개발자는 응용 프로그램 자체를 
 
  이 방법의 한 가지 단점은 구현 하는 데 필요한 시간과 비용입니다. 이러한 서비스는 .NET Framework SDK에서 제공 하는 도구를 사용 하 여 작성할 수 있지만 제품 수명 주기에 더 많은 개발 시간을 추가 합니다.
 
- 이 항목의 앞부분에서 설명한 것 처럼, 각 고객의 응용 프로그램 버전은 동일한 응용 프로그램 id를 갖게 되므로 충돌이 발생할 수 있습니다. 이 문제가 발생 하는 경우 개발자는 배포 매니페스트를 생성할 때 사용 되는 이름 필드를 변경 하 여 각 응용 프로그램에 고유한 이름을 지정할 수 있습니다. 그러면 응용 프로그램의 각 버전에 대해 별도의 id가 생성 되 고 잠재적 id 충돌은 제거 됩니다. 이 필드는 mage.exe의 `-Name` 인수 및 mageui.exe의 **이름** 탭에 있는 **이름** 필드에 해당 합니다.
+ 이 항목의 앞부분에서 설명한 것 처럼, 각 고객의 응용 프로그램 버전은 동일한 응용 프로그램 id를 갖게 되므로 충돌이 발생할 수 있습니다. 이 문제가 발생 하는 경우 개발자는 배포 매니페스트를 생성할 때 사용 되는 이름 필드를 변경 하 여 각 응용 프로그램에 고유한 이름을 지정할 수 있습니다. 그러면 응용 프로그램의 각 버전에 대해 별도의 id가 생성 되 고 잠재적 id 충돌은 제거 됩니다. 이 필드는 `-Name` Mage.exe의 인수 및 MageUI.exe의 **이름** 탭에 있는 **이름** 필드에 해당 합니다.
 
  예를 들어 개발자가 응용 프로그램 1 이라는 응용 프로그램을 만들었다고 가정 합니다. 응용 프로그램 1로 설정 된 이름 필드를 사용 하 여 단일 배포를 만드는 대신 개발자는 응용 프로그램 1-CustomerA, 응용 프로그램 1 등의이 이름에 대 한 고객과 관련 된 변형을 사용 하 여 여러 배포를 만들 수 있습니다.
 
@@ -97,7 +97,7 @@ ClickOnce 배포를 만드는 일부 개발자는 응용 프로그램 자체를 
 
  이 방법의 단점은 고객이 .NET Framework SDK 도구를 설치 하 고 해당 도구를 사용 하는 데 숙련 된 개발자 또는 시스템 관리자가 있어야 한다는 것입니다. 일부 고객은 해당 파트에 대 한 기술적인 노력이 거의 필요 하지 않은 솔루션을 요구할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [다시 서명 하지 않고 테스트 및 프로덕션 서버용 ClickOnce 응용 프로그램 배포](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 - [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [연습: 다시 서명할 필요가 없고 브랜드 정보가 유지되는 ClickOnce 애플리케이션 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

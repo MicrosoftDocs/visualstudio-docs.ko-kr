@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893348"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio에서 FxCop 분석기 설치
@@ -153,7 +153,7 @@ Visual Studio 2017 버전 15.5 이상에서는 관리 되는 프로젝트에 대
 
 ::: moniker-end
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [Visual Studio에서 코드 분석기 사용](../code-quality/use-roslyn-analyzers.md)

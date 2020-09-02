@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951946"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 솔루션에 대 한 이벤트 로깅
@@ -27,14 +27,14 @@ ms.locfileid: "62951946"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="read-the-event-log"></a>이벤트 로그를 읽으려면
+## <a name="read-the-event-log"></a>이벤트 로그 읽기
  **이벤트 뷰어** 를 열고 확인하려는 이벤트를 필터링합니다.
 
-### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Windows Server 2003 및 Windows XP의 이벤트 로그를 읽으려면
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Windows Server 2003 및 Windows XP에서 이벤트 로그를 읽으려면
 
 1. 제어판에서 **관리 도구**를 엽니다.
 
-2. **이벤트 뷰어**를 시작합니다.
+2. **이벤트 뷰어**를 시작 합니다.
 
 3. 이벤트 로그의 목록에서 **애플리케이션**을 선택합니다.
 
@@ -46,17 +46,17 @@ ms.locfileid: "62951946"
 
 7. **확인** 을 클릭하여 필터링된 보기를 확인합니다.
 
-### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Windows 7, Windows Vista 및 Windows Server 2008 이벤트 로그를 읽으려면
+### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Windows 7, Windows Vista 및 Windows Server 2008에서 이벤트 로그를 읽으려면
 
 1. 제어판에서 **관리 도구**를 엽니다.
 
-2. **이벤트 뷰어**를 시작합니다.
+2. **이벤트 뷰어**를 시작 합니다.
 
 3. **Windows 로그**를 확장합니다.
 
 4. 이벤트 로그의 목록에서 **애플리케이션**을 선택합니다.
 
-5. **동작** 메뉴에서 **현재 로그 필터링**을 클릭합니다.
+5. **작업** 메뉴에서 **현재 로그 필터링**을 클릭합니다.
 
 6. **이벤트 원본** 목록에서 **VSTO 4.0**을 선택합니다.
 
@@ -74,15 +74,15 @@ ms.locfileid: "62951946"
 
   Office 솔루션을 제거한 후에도 예외 메시지는 이벤트 로그에 남아있습니다.
 
-  을 표시 하거나 Office 솔루션 실행 중일 때 예외 메시지를 로그를 참조 하세요 [디버그 하는 Office 프로젝트](../vsto/debugging-office-projects.md) 하 고 [디버그 Office 프로젝트](../vsto/debugging-office-projects.md)합니다.
+  Office 솔루션이 실행 될 때 예외 메시지를 표시 하거나 기록 하려면 [office 프로젝트 디버그](../vsto/debugging-office-projects.md) 및 [office 프로젝트 디버그](../vsto/debugging-office-projects.md)를 참조 하세요.
 
 ### <a name="localization"></a>지역화
- 예외 메시지의 언어는 Visual Studio Tools for Office Runtime 도구에 의해 결정됩니다. 예를 들어 최종 사용자 컴퓨터에 일본어 언어 팩을 설치 하는 경우 예외 메시지 일본어로 이벤트 로그에 쓰여집니다.
+ 예외 메시지의 언어는 Visual Studio Tools for Office Runtime 도구에 의해 결정됩니다. 예를 들어 최종 사용자 컴퓨터에 일본어 언어 팩이 설치 되어 있는 경우 예외 메시지는 일본어로 이벤트 로그에 기록 됩니다.
 
 ## <a name="disable-the-event-logger"></a>이벤트로 거를 사용 하지 않도록 설정
  기본적으로 이벤트 로거는 Office 솔루션을 설치하거나 제거할 때 사용됩니다. VSTO_EVENTLOGDISABLED 환경 변수를 “1”로 설정하여 이벤트 로거를 사용하지 않도록 설정할 수 있습니다.
 
-### <a name="to-disable-the-event-log"></a>이벤트 로그를 사용 하지 않도록 설정
+### <a name="to-disable-the-event-log"></a>이벤트 로그를 사용 하지 않도록 설정 하려면
 
 1. 제어판에서 **시스템**을 엽니다.
 
@@ -96,6 +96,6 @@ ms.locfileid: "62951946"
 
 6. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)
 - [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)

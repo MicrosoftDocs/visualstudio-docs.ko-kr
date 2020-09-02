@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595269"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
@@ -184,7 +184,7 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 조각](../ide/code-snippets.md)
 - [코드 탐색](../ide/navigating-code.md)

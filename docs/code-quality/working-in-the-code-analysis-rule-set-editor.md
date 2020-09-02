@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893309"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
@@ -85,6 +85,6 @@ ms.locfileid: "88893309"
 
 - 필드 값을 기준으로 규칙 집합을 필터링 하려면 필터링 할 필드의 열 머리글에서 필터 단추를 선택 합니다. 표시 하려는 값의 확인란을 선택 하 고 숨기려는 값의 확인란을 선택 취소 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [사용자 지정 규칙 집합 만들기](../code-quality/how-to-create-a-custom-rule-set.md)

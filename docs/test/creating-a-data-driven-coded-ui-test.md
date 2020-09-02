@@ -201,7 +201,7 @@ ms.locfileid: "75595360"
 
 ## <a name="q--a"></a>Q&A
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express 또는 XML과 같은 기타 데이터 소스 형식에는 어떤 데이터 소스 특성이 있나요?
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express 또는 XML과 같은 기타 데이터 소스 형식에는 어떤 데이터 소스 특성이 있나요?
 
 **A:** 아래 테이블의 샘플 데이터 소스 문자열을 코드에 복사하고 필요한 항목을 사용자 지정하여 사용할 수 있습니다.
 

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198388"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance 열거형
+# <a name="marker_importance-enumeration"></a>marker_importance 열거형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.  
@@ -35,7 +35,7 @@ enum marker_importance;
   
 ### <a name="values"></a>값  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |`critical_importance`|표식의 중요도를 매우 중요로 지정합니다.|  
 |`high_importance`|표식의 중요도를 높음으로 지정합니다.|  
@@ -47,5 +47,5 @@ enum marker_importance;
   
  **네임스페이스:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>참고 항목  
- [diagnostic 네임스페이스](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>관련 항목  
+ [진단 네임 스페이스](../profiling/diagnostic-namespace.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594645"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>방법: 이스케이프 시퀀스를 사용하여 템플릿에서 템플릿 생성
@@ -21,7 +21,7 @@ ms.locfileid: "75594645"
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>텍스트 템플릿 내에서 텍스트 템플릿을 생성 하려면
 
-- 이스케이프 문자로 백슬래시 (\\)를 사용 하 여 별도 텍스트 템플릿 파일의 지시문, 문, 식 및 클래스 기능에 대 한 텍스트 템플릿 내에 필요한 태그를 생성 합니다.
+- 백슬래시 ()를 \\ 이스케이프 문자로 사용 하 여 개별 텍스트 템플릿 파일의 지시문, 문, 식 및 클래스 기능에 대 한 텍스트 템플릿 내에서 필요한 태그를 생성 합니다.
 
     ```
     \<#@ directive \#>
@@ -30,8 +30,8 @@ ms.locfileid: "75594645"
     \<#+ classfeature \#>
     ```
 
-## <a name="example"></a>예
- 다음 예에서는 이스케이프 문자를 사용 하 여 텍스트 템플릿에서 텍스트 템플릿을 생성 합니다. `output` 지시어는 대상 파일 형식을 텍스트 템플릿 파일 형식 (.tt)으로 설정 합니다.
+## <a name="example"></a>예제
+ 다음 예에서는 이스케이프 문자를 사용 하 여 텍스트 템플릿에서 텍스트 템플릿을 생성 합니다. `output`지시문은 대상 파일 형식을 텍스트 템플릿 파일 형식 (.tt)으로 설정 합니다.
 
 ```csharp
 \<#@ output extension=".tt" \#>

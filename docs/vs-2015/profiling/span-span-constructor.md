@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df6df731de90a9aad9e6cc637b3f218e481b66b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198291"
 ---
 # <a name="spanspan-constructor"></a>span::span 생성자
@@ -71,6 +71,6 @@ span(
 
 **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 [span 클래스](../profiling/span-class.md)

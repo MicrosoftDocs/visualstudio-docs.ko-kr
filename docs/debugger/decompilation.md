@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350565"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>디버깅 중에 .NET 어셈블리에서 소스 코드 생성

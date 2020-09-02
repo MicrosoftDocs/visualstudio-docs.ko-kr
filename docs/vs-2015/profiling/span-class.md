@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198356"
 ---
 # <a name="span-class"></a>span 클래스
@@ -35,7 +35,7 @@ class span;
   
 ### <a name="public-constructors"></a>Public 생성자  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[span::span 생성자](../profiling/span-span-constructor.md)|`span` 클래스의 새 인스턴스를 초기화합니다.|  
 |[span::~span 소멸자](../profiling/span-tilde-span-destructor.md)|`span` 개체를 제거하고 해당 리소스를 해제합니다.|  
@@ -48,5 +48,5 @@ class span;
   
  **네임스페이스:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>참고 항목  
- [diagnostic 네임스페이스](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>관련 항목  
+ [진단 네임 스페이스](../profiling/diagnostic-namespace.md)

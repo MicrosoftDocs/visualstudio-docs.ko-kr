@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546850"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: 제네릭 목록을 노출하지 마세요.
@@ -36,7 +36,7 @@ ms.locfileid: "85546850"
  형식에는 외부에서 볼 수 있는 멤버가 포함 되어 있으며 <xref:System.Collections.Generic.List%601?displayProperty=fullName> , 형식을 반환 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 하거나, 해당 시그니처에 매개 변수가 포함 되어 있습니다 <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>규칙 설명
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>는 상속 및 상속을 위해 디자인 된 제네릭 컬렉션입니다. <xref:System.Collections.Generic.List%601?displayProperty=fullName>에는 상속 된 클래스의 동작을 보다 쉽게 변경할 수 있도록 하는 가상 멤버가 포함 되어 있지 않습니다. 다음 제네릭 컬렉션은 상속을 위해 디자인 되었으며 대신 노출 되어야 합니다 <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> 는 상속 및 상속을 위해 디자인 된 제네릭 컬렉션입니다. <xref:System.Collections.Generic.List%601?displayProperty=fullName> 에는 상속 된 클래스의 동작을 보다 쉽게 변경할 수 있도록 하는 가상 멤버가 포함 되어 있지 않습니다. 다음 제네릭 컬렉션은 상속을 위해 디자인 되었으며 대신 노출 되어야 합니다 <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -65,5 +65,5 @@ ms.locfileid: "85546850"
 
  [CA1007: 적합한 제네릭을 사용하세요.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [제네릭](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

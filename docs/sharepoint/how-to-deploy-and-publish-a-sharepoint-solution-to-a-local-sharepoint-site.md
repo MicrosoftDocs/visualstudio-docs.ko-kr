@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016812"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>방법: 로컬 SharePoint 사이트에 SharePoint 솔루션 배포 및 게시
@@ -40,7 +41,7 @@ ms.locfileid: "86016812"
 
      게시 진행률이 Visual Studio **출력** 창에 표시 됩니다. 프로세스가 완료 되 면 솔루션 (*.wsp*) 파일이 로컬 SharePoint 서버에 설치 됩니다. 그러나 SharePoint에서 사용 하려면 아직 활성화 되어 있어야 합니다. 솔루션 파일이 이미 있으면 오류가 발생 하 고 기존 파일을 덮어쓸지 여부를 묻는 메시지가 표시 됩니다. 패키지 업그레이드에 대 한 자세한 내용은 [방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)에서 원격 패키지 업그레이드 섹션을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)
 - [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

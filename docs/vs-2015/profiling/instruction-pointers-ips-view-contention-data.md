@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187846"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>IP(명령 포인터) 뷰 - 경합 데이터
@@ -25,7 +25,7 @@ ms.locfileid: "68187846"
   
  다음 표에서는 명령 포인터 뷰에 있는 열의 값에 대해 설명합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**차단된 전용 시간**|이 함수에서 차단된 시간입니다.|  
 |**차단된 전용 시간 비율(%)**|명령이 실행되는 동안 차단된 시간의 백분율입니다.|  
@@ -45,8 +45,8 @@ ms.locfileid: "68187846"
 |**소스 줄 시작**|이 명령이 시작되는 소스 파일의 줄 번호입니다.|  
 |**소스 줄 끝**|이 명령이 끝나는 소스 파일의 줄 번호입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
- [IP(명령 포인터) 뷰](../profiling/instruction-pointers-ips-view.md)   
- [IP(명령 포인터) 뷰 - 샘플링](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+ [Ip (명령 포인터) 뷰](../profiling/instruction-pointers-ips-view.md)   
+ [Ip (명령 포인터) 뷰-샘플링](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [IP(명령 포인터) 뷰](../profiling/instruction-pointers-ips-view-sampling-data.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2ca0fb61c0973553ee6d410bc8b2718d19aeb28c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546863"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: 속성은 쓰기 전용이면 안 됩니다.
@@ -44,8 +44,8 @@ ms.locfileid: "85546863"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시 하지 않는 것이 좋습니다.
 
-## <a name="example"></a>예제
- 다음 예제에서 `BadClassWithWriteOnlyProperty` 는 쓰기 전용 속성을 사용 하는 형식입니다. `GoodClassWithReadWriteProperty`수정 된 코드를 포함 합니다.
+## <a name="example"></a>예
+ 다음 예제에서 `BadClassWithWriteOnlyProperty` 는 쓰기 전용 속성을 사용 하는 형식입니다. `GoodClassWithReadWriteProperty` 수정 된 코드를 포함 합니다.
 
  [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/cs/FxCop.Design.PropertiesNotWriteOnly.cs#1)]
  [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/vb/PropertiesNotWriteOnly.vb#1)]

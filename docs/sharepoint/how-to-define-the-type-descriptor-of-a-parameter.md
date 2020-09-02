@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016850"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>방법: 매개 변수의 형식 설명자 정의
@@ -116,7 +117,7 @@ ms.locfileid: "86016850"
 
     새 형식 설명자는 컬렉션 형식 설명자에 자식으로 추가됩니다. 이 형식 설명자를 엔터티로 구성합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)
 - [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [방법: 메서드에 매개 변수 추가](../sharepoint/how-to-add-a-parameter-to-a-method.md)

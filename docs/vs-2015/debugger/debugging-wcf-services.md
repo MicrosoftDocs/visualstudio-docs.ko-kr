@@ -1,5 +1,5 @@
 ---
-title: WCF 서비스 디버그 | Microsoft Docs
+title: WCF 서비스 디버깅 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 13202f8eb266c82cdd57c227ed4c480a0c871cf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141998"
 ---
 # <a name="debugging-wcf-services"></a>WCF 서비스 디버깅
@@ -37,6 +37,6 @@ ms.locfileid: "68141998"
  [방법: 자체 호스팅 WCF 서비스 디버그](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  IIS 또는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server 외부에서 실행되는 WCF 서비스를 디버깅하는 방법에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)

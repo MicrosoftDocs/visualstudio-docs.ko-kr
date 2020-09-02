@@ -1,5 +1,5 @@
 ---
-title: 지원언어 드롭다운 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: SupportsLanguageDropDown 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1230b493fe746a272cf4ca4cffe9d197afd8ba1b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699463"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 요소(Visual Studio 템플릿)
-웹 항목 템플릿이 여러 언어에 대해 동일한지 여부와 새 항목 **추가** 대화 상자에서 **언어** 옵션이 활성화되어 있는지 여부를 지정합니다.
+웹 항목 템플릿이 여러 언어에 대해 동일한 지 여부 및 **새 항목 추가** 대화 상자에서 **언어** 옵션을 사용할 수 있는지 여부를 지정 합니다.
 
- \<VS템플릿 \<> 템플릿데이터> \<지원언어 드롭다운>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsLanguageDropDown>
 
 ## <a name="syntax"></a>구문
 
@@ -43,24 +44,24 @@ ms.locfileid: "80699463"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 새 **항목** 추가 `true` `false`대화 상자에서 **언어** 옵션을 사용할 수 있는지 여부를 나타내는 텍스트 또는 이중 하나여야 합니다.
+ 텍스트는 `true` `false` **새 항목 추가** 대화 상자에서 **언어** 옵션을 사용할 수 있는지 여부를 나타내는 또는 중 하나 여야 합니다.
 
 ## <a name="remarks"></a>설명
  `SupportsLanguageDropDown`는 선택적 요소입니다. 기본값은 `false`입니다.
 
- 이 `SupportsLanguageDropDown` 요소는 웹 항목 템플릿에서만 사용할 수 있습니다.
+ `SupportsLanguageDropDown`요소는 웹 항목 템플릿에만 사용할 수 있습니다.
 
- 이 요소의 값이 `true`로 설정된 경우 항목 템플릿은 모든 프로그래밍 언어에 대해 동일하며 새 항목 **추가** 대화 상자에서 **언어** 옵션이 활성화됩니다. 이 옵션을 사용하면 템플릿에서 만들 새 항목의 프로그래밍 언어를 선택할 수 있습니다.
+ 이 요소의 값을로 설정 하면 `true` 모든 프로그래밍 언어에 대해 항목 템플릿이 동일 하 고 **새 항목 추가** 대화 상자에서 **언어** 옵션을 사용할 수 있습니다. 이 옵션을 사용 하면 템플릿에서 만들려는 새 항목의 프로그래밍 언어를 선택할 수 있습니다.
 
-## <a name="example"></a>예제
- 다음 예제는 **언어** 드롭다운 옵션을 표시하도록 지정합니다.
+## <a name="example"></a>예
+ 다음 예에서는 **언어** 드롭다운 옵션을 표시 하도록를 지정 합니다.
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -84,6 +85,6 @@ ms.locfileid: "80699463"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

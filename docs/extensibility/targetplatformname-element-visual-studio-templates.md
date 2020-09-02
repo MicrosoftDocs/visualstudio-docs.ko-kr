@@ -1,5 +1,5 @@
 ---
-title: 대상 플랫폼 이름 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: TargetPlatformName 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699273"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 요소(Visual Studio 템플릿)
@@ -28,20 +28,20 @@ ms.locfileid: "80699273"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
  없음
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|프로젝트 템플릿의 대상 운영 체제 버전을 지정합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
@@ -51,7 +51,7 @@ ms.locfileid: "80699273"
 ## <a name="remarks"></a>설명
  텍스트는 **Windows**여야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서는 프로젝트 템플릿이 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 이상을 대상으로 하도록 지정합니다.
 
 ```xml
@@ -64,6 +64,6 @@ ms.locfileid: "80699273"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

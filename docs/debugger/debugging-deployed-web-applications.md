@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350552"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>배포된 ASP.NET 애플리케이션 디버그

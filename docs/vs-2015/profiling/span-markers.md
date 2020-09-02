@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f733ccec12e422a11532b8012836422d14d93b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198307"
 ---
 # <a name="span-markers"></a>범위 표식
@@ -38,6 +38,6 @@ ms.locfileid: "68198307"
  ![Concurrency 시각화의 집계 범위 표식](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 범위 집계 표식  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)   
  [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)

@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546941"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction &gt; 요소 (Visual Studio에서 Office 개발)
   `postAction` 네임스페이스의 `vstav3` 요소에는 `entrypoint` 요소 및 배포 후 작업과 관련된 모든 `postActionData` 요소가 포함되며 Office 솔루션 설치 후 실행됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```xml
 <postAction>
@@ -43,10 +43,10 @@ ms.locfileid: "85546941"
  `postAction` 에는 다음 요소가 있습니다.
 
 ### <a name="entrypoint"></a>entryPoint
- (선택 사항) `entryPoint`네임 스페이스에 있는 요소의 역할은 `vstav3` [Visual Studio&#41;에서 Office 개발 &#40;&#60;진입점&#62; 요소 ](../vsto/entrypoints-element-office-development-in-visual-studio.md)에 정의 됩니다.
+ 선택 사항입니다. `entryPoint`네임 스페이스에 있는 요소의 역할은 `vstav3` [Visual Studio&#41;에서 Office 개발 &#40;&#60;진입점&#62; 요소 ](../vsto/entrypoints-element-office-development-in-visual-studio.md)에 정의 됩니다.
 
 ### <a name="postactiondata"></a>postActionData
- (선택 사항) `postActionData`네임 스페이스에 있는 요소의 역할은 `vstav3` [Visual Studio&#41;에서 Office 개발 &#40;&#60;postactiondata&#62; 요소 ](../vsto/postactiondata-element-office-development-in-visual-studio.md)에 정의 됩니다.
+ 선택 사항입니다. `postActionData`네임 스페이스에 있는 요소의 역할은 `vstav3` [Visual Studio&#41;에서 Office 개발 &#40;&#60;postactiondata&#62; 요소 ](../vsto/postactiondata-element-office-development-in-visual-studio.md)에 정의 됩니다.
 
 ## <a name="post-deployment-action-example"></a>배포 후 작업 예제
 
@@ -70,7 +70,7 @@ ms.locfileid: "85546941"
 </vstav3:postAction>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
 - [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)

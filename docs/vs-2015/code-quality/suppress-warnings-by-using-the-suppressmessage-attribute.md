@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a5d64a27759cf844550297beb19b026bbeaa0e40
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546824"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>SuppressMessage 특성을 사용하여 경고 표시 안 함
@@ -38,5 +38,5 @@ ms.locfileid: "85546824"
 |[ISS(In Source Suppression) 개요](../code-quality/in-source-suppression-overview.md)|ISS 및 코드에서이를 사용 하는 방법에 대해 알아봅니다.|
 |[방법: 메뉴 항목을 사용하여 경고 표시 안 함](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]바로 가기 메뉴를 사용 하 여 IDE에서 경고를 표시 하지 않는 방법에 대해 알아봅니다.|
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
  [관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595022"
 ---
 # <a name="options-page-environment-node-properties"></a>옵션 페이지, 환경 노드 속성
@@ -100,12 +100,12 @@ ms.locfileid: "75595022"
 |------------------------|-----------|-----------------|
 |언어|Get/Set(문자열)|Visual Studio에 대한 현재 언어의 LCID 값입니다.|
 
-## <a name="keyboard"></a>키보드
+## <a name="keyboard"></a>Keyboard
  `DTE.Properties("Environment", "Keyboard")`
 
-|속성 항목 이름|값|설명|
+|속성 항목 이름|값|Description|
 |------------------------|-----------|-----------------|
-|Scheme|Get/Set(문자열)|기본 제공 스키마, 로드된 .vsk 파일의 전체 경로가 포함된 문자열 또는 .vsk 파일이 로드되지 않은 경우 "(기본값)"이 포함된 문자열을 반환합니다.|
+|구성표|Get/Set(문자열)|기본 제공 스키마, 로드된 .vsk 파일의 전체 경로가 포함된 문자열 또는 .vsk 파일이 로드되지 않은 경우 "(기본값)"이 포함된 문자열을 반환합니다.|
 
 ## <a name="projects-and-solution"></a>프로젝트 및 솔루션
  `DTE.Properties("Environment", "ProjectsAndSolution")`
@@ -130,7 +130,7 @@ ms.locfileid: "75595022"
 |DefaultBehaviorForStartupProjects|Get/Set(문자열)||
 |MSBuildOutputVerbosity|Get/Set(문자열)|빌드 출력의 세부 정보 표시 수준을 지정합니다.|
 
-## <a name="startup"></a>시작
+## <a name="startup"></a>Startup 클래스
  `DTE.Properties("Environment", "Startup")`
 
 |속성 항목 이름|값|설명|
@@ -166,4 +166,4 @@ ms.locfileid: "75595022"
 - [옵션 페이지에서 속성 항목의 이름 확인](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [옵션 페이지, 텍스트 편집기 노드 속성](../../ide/reference/options-page-text-editor-node-properties.md)
-- [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)
+- [환경 옵션 대화 상자](../../ide/reference/environment-options-dialog-box.md)

@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6102fd8eace3db19e44a0214ce7ce98278b53eea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198200"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>디버거 탐색 샘플 코드(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 코드에 대 한 샘플 파일이 합니다 [(JavaScript) 디버그 세션에서 실행 제어](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) 항목입니다.  
+이 항목의 코드는 [디버그 세션 (JavaScript) 항목에서 제어를 실행](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) 하기 위한 샘플 파일입니다.  
   
 ## <a name="defaultjs-sample-code"></a>default.js 샘플 코드  
   

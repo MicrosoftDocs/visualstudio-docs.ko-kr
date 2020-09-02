@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985608"
 ---
 # <a name="ribbon-overview"></a>리본 개요
@@ -35,7 +35,7 @@ ms.locfileid: "72985608"
 ## <a name="customize-the-microsoft-office-ribbon"></a>Microsoft Office 리본 사용자 지정
  리본 메뉴를 사용자 지정 하려면 다음 리본 항목 중 하나를 Office 프로젝트에 추가 합니다.
 
-- **리본 (비주얼 디자이너)**
+- **리본(비주얼 디자이너)**
 
 - **리본 (XML)**
 
@@ -103,7 +103,7 @@ ms.locfileid: "72985608"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>런타임에 표시할 리본을 선택 합니다.
  프로젝트에 둘 이상의 리본이 포함 될 수 있으므로 런타임에 표시할 리본을 선택할 수 있습니다.
 
- 런타임에 표시할 리본을 선택 하려면 프로젝트의 `ThisAddin`, `ThisWorkbook`또는 `ThisDocument` 클래스에서 `CreateRibbonExtensibilityObject` 메서드를 재정의 하 고 표시 하려는 리본을 반환 합니다. 다음 예에서는 `myCondition` 라는 필드의 값을 확인 하 고 적절 한 리본을 반환 합니다.
+ 런타임에 표시할 리본을 선택 하려면 `CreateRibbonExtensibilityObject` `ThisAddin` 프로젝트의, 또는 클래스에서 메서드를 재정의 하 `ThisWorkbook` `ThisDocument` 고 표시 하려는 리본을 반환 합니다. 다음 예에서는 라는 필드의 값을 확인 `myCondition` 하 고 적절 한 리본을 반환 합니다.
 
 > [!NOTE]
 > 이 예제에 사용 된 구문은 **리본 (비주얼 디자이너)** 항목을 사용 하 여 만든 리본을 반환 합니다. **리본 (XML)** 항목을 사용 하 여 만든 리본을 반환 하는 구문은 약간 다릅니다. **리본 (xml)** 항목을 반환 하는 방법에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.

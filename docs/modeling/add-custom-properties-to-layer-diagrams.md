@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546918"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 속성 추가
@@ -63,17 +63,17 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 [Ilayerelement](/previous-versions/ff644511(v=vs.140)) 또는 해당 파생 클래스 (다음을 포함)에 대 한 속성을 정의할 수 있습니다.
 
-- `ILayerModel`-모델
+- `ILayerModel` -모델
 
-- `ILayer`-각 계층
+- `ILayer` -각 계층
 
-- `ILayerDependencyLink`-레이어 간 링크
+- `ILayerDependencyLink` -레이어 간 링크
 
 - `ILayerComment`
 
 - `ILayerCommentLink`
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 코드는 일반적인 사용자 지정 속성 설명자입니다. 레이어 모델(`ILayerModel`)에서 사용자가 사용자 지정 유효성 검사 메서드의 값을 제공할 수 있게 해주는 부울 속성을 정의합니다.
 
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [종속성 다이어그램 확장](../modeling/extend-layer-diagrams.md)

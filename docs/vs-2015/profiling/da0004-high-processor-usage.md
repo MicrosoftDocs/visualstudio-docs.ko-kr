@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158705"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: 프로세서 사용률이 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0004 |  
-| 범주 | 프로 파일링 도구 사용 |  
+| 범주 | 프로파일링 도구 사용 |  
 | 프로 파일링 방법 | 계측 샘플링 |  
-| 메시지 | 프로세서 사용률이 75% 이상 일관 되 게 됩니다. CPU 바인딩된 애플리케이션에 샘플링 모드를 사용해 보세요.|  
+| 메시지 | 프로세서 사용률이 지속적으로 75%를 초과 합니다. CPU 바인딩된 애플리케이션에 샘플링 모드를 사용해 보세요.|  
 | 규칙 유형 | 정보 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
