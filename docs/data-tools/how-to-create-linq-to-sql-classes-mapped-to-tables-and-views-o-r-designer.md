@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282126"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>방법: 테이블 및 뷰에 매핑된 LINQ to SQL 클래스 만들기(O/R 디자이너)
 
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]데이터베이스 테이블 및 뷰에 매핑된 클래스를 *엔터티 클래스*라고 합니다. 엔터티 클래스는 레코드에 매핑되고 엔터티 클래스의 개별 속성은 레코드를 구성 하는 개별 열에 매핑됩니다. **서버 탐색기** 또는 **데이터베이스 탐색기** 의 테이블이 나 뷰를 [Visual Studio의 LINQ to SQL 도구로](../data-tools/linq-to-sql-tools-in-visual-studio2.md)끌어 데이터베이스 테이블 또는 뷰를 기반으로 하는 엔터티 클래스를 만듭니다. **O/R 디자이너** 는 클래스를 생성 하 고 특정 특성을 적용 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 하 여 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 기능 (의 데이터 통신 및 편집 기능)을 사용 하도록 설정 합니다 <xref:System.Data.Linq.DataContext> . 클래스에 대 한 자세한 내용은 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] [LINQ to SQL 개체 모델](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)을 참조 하세요.
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 데이터베이스 테이블 및 뷰에 매핑된 클래스를 *엔터티 클래스*라고 합니다. 엔터티 클래스는 레코드에 매핑되고 엔터티 클래스의 개별 속성은 레코드를 구성 하는 개별 열에 매핑됩니다. **서버 탐색기** 또는 **데이터베이스 탐색기** 의 테이블이 나 뷰를 [Visual Studio의 LINQ to SQL 도구로](../data-tools/linq-to-sql-tools-in-visual-studio2.md)끌어 데이터베이스 테이블 또는 뷰를 기반으로 하는 엔터티 클래스를 만듭니다. **O/R 디자이너** 는 클래스를 생성 하 고 특정 특성을 적용 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 하 여 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 기능 (의 데이터 통신 및 편집 기능)을 사용 하도록 설정 합니다 <xref:System.Data.Linq.DataContext> . 클래스에 대 한 자세한 내용은 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] [LINQ to SQL 개체 모델](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)을 참조 하세요.
 
 > [!NOTE]
 > **O/R 디자이너** 는 1:1 매핑 관계만 지 원하는 단순 개체 관계형 매퍼입니다. 즉, 엔터티 클래스는 데이터베이스 테이블 또는 뷰와 1:1 매핑 관계만 갖습니다. 엔터티 클래스를 여러 테이블에 매핑하는 복잡한 매핑은 지원되지 않습니다. 그러나 엔터티 클래스를 여러 관련 테이블을 연결하는 뷰에 매핑할 수 있습니다.
@@ -61,7 +61,7 @@ ms.locfileid: "85282126"
 
 7. 항목을 **데이터 원본** 창에서 폼으로 끌어 옵니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기(O-R 디자이너)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

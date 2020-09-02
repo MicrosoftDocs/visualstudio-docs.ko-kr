@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190468"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 배포 매니페스트
@@ -32,7 +32,7 @@ ms.locfileid: "68190468"
   
 |요소|설명|특성|  
 |-------------|-----------------|----------------|  
-|[\<assembly> 요소](../deployment/assembly-element-clickonce-deployment.md)|필수. 최상위 요소입니다.|`manifestVersion`|  
+|[\<assembly> 요소](../deployment/assembly-element-clickonce-deployment.md)|필수 요소. 최상위 요소입니다.|`manifestVersion`|  
 |[\<assemblyIdentity> 요소](../deployment/assemblyidentity-element-clickonce-deployment.md)|필수 요소. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션에 대한 애플리케이션 매니페스트를 식별합니다.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
 |[\<description> 요소](../deployment/description-element-clickonce-deployment.md)|필수 요소. 제어판에서 셸 존재 및 **프로그램 추가/제거** 항목을 만드는 데 사용되는 애플리케이션 정보를 식별합니다.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
 |[\<deployment> 요소](../deployment/deployment-element-clickonce-deployment.md)|선택 사항입니다. 업데이트를 배포하고 시스템에 노출하는 데 사용되는 특성을 식별합니다.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
@@ -55,7 +55,7 @@ ms.locfileid: "68190468"
 ## <a name="file-name-syntax"></a>파일 이름 구문  
  배포 매니페스트 파일의 이름은 .application 확장명으로 끝나야 합니다.  
   
-## <a name="examples"></a>예  
+## <a name="examples"></a>예제  
  다음 코드 예제에서는 배포 매니페스트를 보여 줍니다.  
   
 ```  
@@ -121,4 +121,4 @@ ms.locfileid: "68190468"
 ```  
   
 ## <a name="see-also"></a>관련 항목  
- [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)
+ [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

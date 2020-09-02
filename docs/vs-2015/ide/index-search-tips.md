@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7994f1c0c7281fc9902e15a3fd60293905abc4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670447"
 ---
 # <a name="index-search-tips"></a>색인 검색 팁
@@ -60,5 +60,5 @@ ms.locfileid: "72670447"
 
      예를 들어 gerund "빌딩"을 입력 한 경우 대신 "만들기"를 시도 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [전체 텍스트 검색 팁](../ide/full-text-search-tips.md) [정보 찾기](../ide/locate-information.md)

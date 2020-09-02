@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c4daf3d92aa08e6dbbb81eac79112772900d08d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964043"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 프로젝트 만들기
@@ -26,7 +26,7 @@ Azure Tools for Visual Studio는 [Azure 클라우드 서비스](/azure/cloud-ser
 
 1. 관리자 권한으로 Visual Studio를 시작합니다.
 
-1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+1. 주 메뉴에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
 
 1. Visual C# 또는 Visual Basic 프로젝트 템플릿 노드에서 **클라우드**를 선택한 다음 템플릿 목록에서 **Azure 클라우드 서비스**를 선택합니다.
 

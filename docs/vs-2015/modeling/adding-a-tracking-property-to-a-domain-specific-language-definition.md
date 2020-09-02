@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545576"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인별 언어 정의에 추적 속성 추가
@@ -45,10 +45,10 @@ ms.locfileid: "85545576"
 
 - **속성** 창에서 추적 속성이 사용자에 의해 업데이트 됨 상태에 있는 경우 해당 값은 굵은 글꼴로 표시 됩니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 시작 하려면 먼저 다음 구성 요소를 설치 해야 합니다.
 
-|Product|다운로드 링크|
+|제품|다운로드 링크|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
@@ -59,7 +59,7 @@ ms.locfileid: "85545576"
 
 #### <a name="to-create-the-project"></a>프로젝트를 만들려면
 
-1. 도메인 특정 언어 디자이너 프로젝트를 만듭니다. 이름을 `TrackingPropertyDSL`이라고 지정합니다.
+1. 도메인 특정 언어 디자이너 프로젝트를 만듭니다. 이름을 `TrackingPropertyDSL`로 지정합니다.
 
 2. **도메인 특정 언어 디자이너 마법사**에서 다음 옵션을 설정 합니다.
 
@@ -759,6 +759,6 @@ ms.locfileid: "85545576"
 ## <a name="next-steps"></a>다음 단계
  둘 이상의 추적 속성을 사용 하거나 둘 이상의 DSL에서 추적 속성을 구현할 계획인 경우 텍스트 템플릿을 만들어 각 추적 속성을 지 원하는 공통 코드를 생성할 수 있습니다. 텍스트 템플릿에 대 한 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor> <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
  [도메인 특정 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md) [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md) [연습: 도메인 특정 언어 정의 사용자 지정](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

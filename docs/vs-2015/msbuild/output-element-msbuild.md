@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52b8ef11e295d60e71a59820a48bca5e477c639d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163598"
 ---
 # <a name="output-element-msbuild"></a>Output 요소(MSBuild)
@@ -52,8 +52,8 @@ ms.locfileid: "68163598"
 |특성|설명|  
 |---------------|-----------------|  
 |`TaskParameter`|필수 특성입니다.<br /><br /> 태스크 출력 매개 변수의 이름입니다.|  
-|`PropertyName`|`PropertyName` 또는 `ItemName` 특성이 필요합니다.<br /><br /> 태스크의 출력 매개 변수 값을 수신하는 속성입니다. 프로젝트는 `$(`*PropertyName*`)` 구문을 사용하여 속성을 참조할 수 있습니다. 이 속성 이름은 새 속성 이름 또는 프로젝트에 이미 정의된 이름일 수 있습니다.<br /><br /> `ItemName`을 이미 사용한 경우 이 특성을 사용할 수 없습니다.|  
-|`ItemName`|`PropertyName` 또는 `ItemName` 특성이 필요합니다.<br /><br /> 태스크의 출력 매개 변수 값을 수신하는 항목입니다. 프로젝트는 `@(`*ItemName*`)` 구문을 사용하여 항목을 참조할 수 있습니다. 항목 이름은 새 항목 이름 또는 프로젝트에 이미 정의되어 있는 다른 이름일 수 있습니다.<br /><br /> `PropertyName`을 이미 사용한 경우 이 특성을 사용할 수 없습니다.|  
+|`PropertyName`|`PropertyName` 또는 `ItemName` 특성이 필요합니다.<br /><br /> 태스크의 출력 매개 변수 값을 수신하는 속성입니다. 그런 다음 프로젝트는 PropertyName 구문을 사용 하 여 속성을 참조할 수 있습니다 `$(` *PropertyName* `)` . 이 속성 이름은 새 속성 이름 또는 프로젝트에 이미 정의된 이름일 수 있습니다.<br /><br /> `ItemName`을 이미 사용한 경우 이 특성을 사용할 수 없습니다.|  
+|`ItemName`|`PropertyName` 또는 `ItemName` 특성이 필요합니다.<br /><br /> 태스크의 출력 매개 변수 값을 수신하는 항목입니다. 그러면 프로젝트에서 ItemName 구문을 사용 하 여 항목을 참조할 수 있습니다 `@(` *ItemName* `)` . 항목 이름은 새 항목 이름 또는 프로젝트에 이미 정의되어 있는 다른 이름일 수 있습니다.<br /><br /> `PropertyName`을 이미 사용한 경우 이 특성을 사용할 수 없습니다.|  
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -61,7 +61,7 @@ ms.locfileid: "68163598"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 작업의 인스턴스를 만들고 실행합니다.|  
   
@@ -85,6 +85,6 @@ ms.locfileid: "68163598"
 </Target>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)

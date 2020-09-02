@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1e76d45847d0887b47746c60b836c7acf19d03b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670524"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>방법: 형식 간의 상속 보기(클래스 디자이너)
@@ -47,5 +47,5 @@ ms.locfileid: "72670524"
 
    파생 형식을 확인할 형식을 마우스 오른쪽 단추로 클릭하고 **파생 클래스 표시** 또는 **파생 인터페이스 표시**를 선택해도 됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 형식 간의 연결 만들기 (클래스 디자이너)](../ide/how-to-create-associations-between-types-class-designer.md) [형식 및 관계 보기 (클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md)

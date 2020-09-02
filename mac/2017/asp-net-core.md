@@ -8,10 +8,10 @@ ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 2e921ac1e9c85216bebf1626e1454b9fb764f129
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938931"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작

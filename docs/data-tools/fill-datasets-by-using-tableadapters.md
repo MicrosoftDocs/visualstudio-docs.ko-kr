@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282438"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters를 사용하여 데이터 세트 채우기
@@ -35,7 +35,7 @@ TableAdapter 구성 요소는 지정 된 하나 이상의 쿼리나 저장 프�
 
 TableAdapter 작업에 대 한 자세한 내용은 다음 항목 중 하나를 직접 건너뛸 수 있습니다.
 
-|항목|Description|
+|항목|설명|
 |-----------|-----------------|
 |[TableAdapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)|디자이너를 사용 하 여 Tableadapter를 만들고 구성 하는 방법|
 |[매개 변수가 있는 TableAdapter 쿼리 만들기](../data-tools/create-parameterized-tableadapter-queries.md)|사용자가 TableAdapter 프로시저 또는 쿼리에 인수를 제공할 수 있게 하는 방법|
@@ -52,7 +52,7 @@ Tableadapter는 데이터베이스에 연결 하 고, 쿼리 또는 저장 프�
 
 ![클라이언트 애플리케이션의 데이터 흐름](../data-tools/media/clientdatadiagram.gif)
 
-Tableadapter는 **데이터 세트 디자이너**를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다 <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는 <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예:
+Tableadapter는 **데이터 세트 디자이너**를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다  <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들면 다음과 같습니다.
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -137,6 +137,6 @@ TableAdapterManager 클래스는 .NET 형식이 아닙니다. 따라서 설명�
 
 CommandType 속성이로 설정 된 데이터 명령을 사용 하는 경우 <xref:System.Data.CommandType.Text> 클라이언트에서 전송 된 정보를 데이터베이스에 전달 하기 전에 신중 하 게 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 사용자 입력을 데이터베이스로 전송 하기 전에 항상 정보가 유효한 지 확인 하십시오. 가능 하면 매개 변수가 있는 쿼리나 저장 프로시저를 항상 사용 하는 것이 가장 좋습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)

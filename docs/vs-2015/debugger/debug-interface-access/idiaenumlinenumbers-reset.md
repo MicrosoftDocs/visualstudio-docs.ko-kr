@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e407a91914b034cbf7739c50effe76fd02d6957c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190084"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-열거형 시퀀스를 처음으로 다시 설정합니다.  
+열거형 시퀀스를 시작 부분으로 다시 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,8 +31,8 @@ ms.locfileid: "68190084"
 HRESULT Reset();  
 ```  
   
-## <a name="return-value"></a>반환 값  
+## <a name="return-value"></a>Return Value  
  `S_OK`를 반환합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

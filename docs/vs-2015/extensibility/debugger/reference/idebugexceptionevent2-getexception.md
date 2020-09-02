@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Microsoft Docs
+title: 'IDebugExceptionEvent2:: GetException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a0e19dc924101fcceb93948272fc1e83353e2815
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163791"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
@@ -40,13 +40,13 @@ int GetException( 
   
 #### <a name="parameters"></a>매개 변수  
  `pExceptionInfo`  
- [out에서] [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조 설명은 예외를 사용 하 여 입력 됩니다.  
+ [in, out] 예외에 대 한 설명과 함께 채워지는 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- [C++ 만] 호출자가에서 모든 문자열을 해제 하는 일을 담당 합니다 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 해제와 구조체를 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 구조의 개체.  
+ [C + + 전용] 호출자는 구조체에서 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체를 해제 하는 것 외에도 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조에서 문자열을 해제 해야 합니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

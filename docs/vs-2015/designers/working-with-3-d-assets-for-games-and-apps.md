@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852189"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>게임 및 응용 프로그램을 위한 3D 자산 작업
@@ -44,16 +44,16 @@ ms.locfileid: "75852189"
  그래프 기반 셰이더 디자인 도구인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 HLSL 프로그래밍을 알 필요 없이 사용자 지정 시각적 효과를 만들 수 있습니다.
 
 > [!NOTE]
-> DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](https://msdn.microsoft.com/library/ee663274(VS.85).aspx)를 참조하세요. DirectX 기반 앱을 디버그하는 방법에 대한 자세한 내용은 [그래픽 진단(DirectX 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)을 참조하세요.
+> DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](https://msdn.microsoft.com/library/ee663274(VS.85).aspx)를 참조하세요. DirectX 기반 앱을 디버깅 하는 방법에 대 한 자세한 내용은 [그래픽 진단 (Directx 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)를 참조 하세요.
 
 ## <a name="directx-version-compatibility"></a>DirectX 버전 호환성
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 DirectX를 사용하여 2차원 및 3차원 자산을 렌더링합니다. DirectX 11 렌더러 또는 WARP(Windows Advanced Rasterization Platform) 소프트웨어 렌더러를 선택할 수 있습니다. DirectX 11 렌더러는 DirectX 11 및 DirectX 10 GPU에서 고성능 하드웨어 가속 렌더링을 제공합니다. WARP 렌더러는 자산이 광범위한 컴퓨터에서 작동하는지 확인하는 데 도움이 됩니다. 여기에는 최신 그래픽 하드웨어가 없는 컴퓨터와 통합 그래픽 하드웨어가 있는 컴퓨터가 포함됩니다. WARP에 대한 자세한 내용은 [WARP(Windows Advanced Rasterization Platform) 가이드](https://msdn.microsoft.com/library/gg615082(VS.85).aspx)를 참조하세요.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 DirectX를 사용하여 2차원 및 3차원 자산을 렌더링합니다. DirectX 11 렌더러 또는 WARP(Windows Advanced Rasterization Platform) 소프트웨어 렌더러를 선택할 수 있습니다. DirectX 11 렌더러는 DirectX 11 및 DirectX 10 GPU에서 고성능 하드웨어 가속 렌더링을 제공합니다. WARP 렌더러는 자산이 광범위한 컴퓨터에서 작동하는지 확인하는 데 도움이 됩니다. 여기에는 최신 그래픽 하드웨어가 없는 컴퓨터와 통합 그래픽 하드웨어가 있는 컴퓨터가 포함됩니다. 구부리기에 대 한 자세한 내용은 [Windows 고급 래스터화 플랫폼 (구부리기) 가이드](https://msdn.microsoft.com/library/gg615082(VS.85).aspx)를 참조 하세요.
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[질감 및 이미지 작업](../designers/working-with-textures-and-images.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하여 이미지와 질감을 사용하는 방법을 설명합니다.|
-|[3차원 모델 작업](../designers/working-with-3-d-models.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하여 3차원 모델을 사용하는 방법을 설명합니다.|
+|[3 차원 모델 작업](../designers/working-with-3-d-models.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하여 3차원 모델을 사용하는 방법을 설명합니다.|
 |[셰이더 작업](../designers/working-with-shaders.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 사용자 지정 셰이더 효과를 만들고 수정하는 방법을 설명합니다.|
-|[게임 또는 응용 프로그램에 3차원 자산 사용](../designers/using-3-d-assets-in-your-game-or-app.md)|이미지 편집기, 모델 편집기 또는 셰이더 디자이너를 사용하여 만든 자산을 게임 또는 앱에서 사용하는 방법을 설명합니다.|
+|[게임 또는 앱에서 3 차원 자산 사용](../designers/using-3-d-assets-in-your-game-or-app.md)|이미지 편집기, 모델 편집기 또는 셰이더 디자이너를 사용하여 만든 자산을 게임 또는 앱에서 사용하는 방법을 설명합니다.|

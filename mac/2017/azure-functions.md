@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938858"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 소개
@@ -47,11 +47,11 @@ Mac용 Visual Studio는 기본 함수가 포함된 .NET Standard 프로젝트를
 
 ![템플릿의 새 Azure 함수를 표시하는 Mac용 Visual Studio 편집기](media/azure-functions-newproj.png)
 
-새 프로젝트에는 다음 파일이 포함됩니다.
+새 프로젝트는 다음 파일을 포함합니다.
 
 * **your-function-name.cs** – 이 클래스에는 선택한 함수에 대한 상용구 코드를 포함합니다. 여기에는 함수 이름이 있는 **FunctionName** 특성 및 이 함수를 트리거하는 대상을 지정하는 트리거 특성( 예: HTTP 요청)을 포함합니다. 함수 메서드에 대한 자세한 내용은 [Azure Functions C# 개발자 참조](/azure/azure-functions/functions-dotnet-class-library) 문서를 참조하세요.
 * **host.json** – 이 파일은 함수 호스트에 대한 전역 구성 옵션을 설명합니다. 이 파일의 예제 파일과 사용 가능한 설정 정보는 [Azure Functions에 대한 host.json 참조](/azure/azure-functions/functions-host-json)를 참조하세요.
-* **local.settings.json** – 이 파일은 함수를 로컬로 실행하기 위한 모든 설정을 포함합니다. 이러한 설정은 Azure Functions Core Tools에서 사용됩니다. 자세한 내용은 Azure Functions 핵심 도구 문서의 [로컬 설정 파일](/azure/azure-functions/functions-run-local#local-settings-file)을 참조하세요.
+* **local.settings.json** – 이 파일은 함수를 로컬로 실행하기 위한 모든 설정을 포함합니다. 이러한 설정은 Azure Functions Core Tools에서 사용됩니다. 자세한 내용은 Azure Functions Core Tools 문서의 [로컬 설정 파일](/azure/azure-functions/functions-run-local#local-settings-file)을 참조하세요.
 
 Mac용 Visual Studio에서 새 Azure Functions 프로젝트를 만들었으므로 이제 로컬 컴퓨터에서 기본 HTTP 트리거 함수를 테스트할 수 있습니다.
 
@@ -69,7 +69,7 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
 
     출력에서 URL을 복사합니다.
 
-3. HTTP 요청에 대한 URL을 브라우저의 주소 표시줄에 붙여 넣습니다. `?name=<yourname>` 쿼리 문자열을 URL의 마지막에 추가하고 요청을 실행합니다. 다음 이미지에서는 함수가 반환한 로컬 GET 요청에 대한 응답을 브라우저에 보여 줍니다.
+3. 브라우저의 주소 표시줄에 HTTP 요청에 대한 URL을 붙여 넣습니다. `?name=<yourname>` 쿼리 문자열을 URL의 마지막에 추가하고 요청을 실행합니다. 다음 이미지에서는 함수가 반환한 로컬 GET 요청에 대한 응답을 브라우저에 보여 줍니다.
 
     ![브라우저의 http 요청](media/azure-functions-httpreq.png)
 
@@ -87,26 +87,26 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
 
     Azure 함수 템플릿 목록은 [사용 가능한 함수 템플릿](#available-function-templates) 섹션에 나와 있습니다.
 
-위의 절차를 사용하여 함수 앱 프로젝트에 더 많은 함수를 추가할 수 있습니다. 프로젝트에서 각 함수는 다른 트리거를 가질 수 있지만 함수에는 정확히 하나의 트리거만 있어야 합니다. 자세한 내용은 [Azure Functions 트리거 및 바인딩 개념](/azure/azure-functions/functions-triggers-bindings)을 참조하세요.
+위의 절차를 사용하여 함수 앱 프로젝트에 많은 함수를 추가할 수 있습니다. 프로젝트의 각 함수는 다른 트리거를 가질 수 있지만 함수에는 정확히 하나의 트리거가 있어야 합니다. 자세한 내용은 [Azure Functions 트리거 및 바인딩 개념](/azure/azure-functions/functions-triggers-bindings)을 참조하세요.
 
 ## <a name="publish-to-azure"></a>Azure에 게시
 
-1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시 > Azure에 게시**(![Azure 메뉴 옵션에 게시](media/azure-functions-image5.png))를 선택합니다.
+1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시 > Azure에 게시**를 선택합니다.  ![Azure 메뉴 옵션에 게시](media/azure-functions-image5.png)
 2. Azure 계정을 Mac용 Visual  Studio에 이미 연결한 경우 사용 가능한 앱 서비스 목록이 표시됩니다. 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다.
 3. **Azure App Service 게시** 대화 상자에서 기존 앱 서비스를 선택하거나 **새로 만들기**를 클릭하여 새 앱을 만들 수 있습니다.
-4. **새 App Service 만들기** 대화 상자에서 ![Azure 메뉴 옵션에 게시](media/azure-functions-image7.png) 설정을 입력합니다.
+4. **새 App Service 만들기** 대화 상자에서 다음과 같은 설정을 입력합니다.  ![Azure 메뉴 옵션에 게시](media/azure-functions-image7.png)
 
-    |설정  |Description  |
+    |설정  |설명  |
     |---------|---------|
     |**App Service 이름**|새 함수 앱을 식별하는 전역적으로 고유한 이름입니다.|
-    |**구독**|사용할 Azure 구독입니다.|
+    |**구독**|Azure 구독을 사용합니다.|
     |**[리소스 그룹](/azure/azure-resource-manager/resource-group-overview)**|함수 앱을 만들 리소스 그룹의 이름입니다. **+** 를 선택하여 새 리소스 그룹을 만듭니다.|
     |**[서비스 계획](/azure/azure-functions/functions-scale)**|기존 계획을 선택하거나 사용자 지정 계획을 만듭니다. 가까운 지역 또는 함수에 액세스하는 다른 서비스 근처의 위치를 선택합니다.|
 
     > [!CAUTION]
     > **가격 책정**을 **소비**로 설정된 상태에서 사용자 저정 서비스 계획을 만들려는 경우 프로비전 오류로 인해 게시가 실패하는 Mac용 Visual Studio 7.6 버전의 버그가 있습니다. 이는 다음 서비스 릴리스에서 수정될 예정입니다.
 
-5. **다음**을 클릭하여 스토리지 계정을 만듭니다. Functions 런타임에는 Azure Storage 계정이 필요합니다. **사용자 지정**을 클릭하여 범용 스토리지 계정을 만들거나 기존 스토리지 계정을 사용합니다.
+5. **다음**을 클릭하여 스토리지 계정을 만듭니다. Azure 스토리지 계정은 함수 런타임에서 필요합니다. **사용자 지정**을 클릭하여 범용 스토리지 계정을 만들거나 기존 스토리지 계정을 사용합니다.
 
     ![Azure 메뉴 옵션에 게시](media/azure-functions-image8.png)
 
@@ -121,7 +121,7 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
 
 ## <a name="function-app-settings"></a>함수 앱 설정
 
-local.settings.json에서 추가한 모든 설정을 Azure의 함수 앱에도 추가해야 합니다. 이러한 설정은 프로젝트를 게시할 때 자동으로 업로드되지 않습니다.
+local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 추가해야 합니다. 이러한 설정은 프로젝트를 게시할 때 자동으로 업로드되지 않습니다.
 
 앱 설정에 액세스하려면 [https://ms.portal.azure.com/](https://ms.portal.azure.com/)의 Azure Portal로 이동합니다. **Function App** 아래에서 **Function App**을 선택하고 함수 이름을 강조 표시합니다.
 

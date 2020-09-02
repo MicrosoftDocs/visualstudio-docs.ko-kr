@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: 6e055e02141eb2b6113e1b925cc8d7a1693a32cf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983531"
 ---
 # <a name="update-visual-studio-for-mac"></a>Mac용 Visual Studio 업데이트
@@ -52,6 +52,6 @@ Mac용 Visual Studio는 다음 세 가지 채널을 통해 최신 버전을 제�
 
 설치해야 하는 구성 요소에 따라 추가 라이선스를 수락하거나 컴퓨터 관리자의 사용자 이름과 암호를 입력해야 할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Windows의 Visual Studio 업데이트](/visualstudio/install/update-visual-studio)

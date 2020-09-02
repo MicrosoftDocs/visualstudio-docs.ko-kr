@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984815"
 ---
 # <a name="code-snippets"></a>코드 조각
@@ -88,6 +88,6 @@ _코드 템플릿_이라고도 하는 코드 조각은 미리 작성된 코드 �
 
 자세한 내용은 [Visual Studio code snippets reference](/visualstudio/ide/code-snippets-schema-reference#keywords)(Visual Studio 코드 조각 참조)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [코드 조각(Windows의 Visual Studio)](/visualstudio/ide/code-snippets)

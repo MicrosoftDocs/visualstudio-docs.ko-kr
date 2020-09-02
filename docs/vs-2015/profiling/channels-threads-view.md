@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545537"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
@@ -50,5 +50,5 @@ ms.locfileid: "85545537"
 ## <a name="gpu-channels"></a>GPU 채널  
  GPU 채널에는 시스템의 DirectX 11 작업에 대한 정보가 표시됩니다.  그래픽 카드와 연결된 각 DirectX 엔진에는 개별 채널이 포함됩니다.  개별 세그먼트는 DMA 패킷 처리 시간을 나타냅니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus 기호 제공자::GetLocal변수레이아웃 | 마이크로 소프트 문서
+title: 'IDebugComPlusSymbolProvider:: GetLocalVariablelayout | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f805249a3736b1191ae3218f8fcd41ffae2c686a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733855"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-메서드 집합에 대 한 로컬 변수의 레이아웃을 검색합니다.
+메서드 집합에 대 한 지역 변수의 레이아웃을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,25 +48,25 @@ int GetLocalVariablelayout(
 
 ## <a name="parameters"></a>매개 변수
 `ulAppDomainID`\
-【인】 응용 프로그램 도메인의 식별자입니다.
+진행 응용 프로그램 도메인의 식별자입니다.
 
 `guidModule`\
-【인】 모듈의 고유 식별자입니다.
+진행 모듈의 고유 식별자입니다.
 
 `cMethods`\
-【인】 배열의 메서드 토큰 `rgMethodTokens` 수입니다.
+진행 배열의 메서드 토큰 수 `rgMethodTokens` 입니다.
 
 `rgMethodTokens`\
-【인】 메서드 토큰의 배열입니다.
+진행 메서드 토큰의 배열입니다.
 
 `pStreamLayout`\
-【아웃】 변수 레이아웃을 포함하는 텍스트 스트림입니다.
+제한이 변수 레이아웃을 포함 하는 텍스트 스트림입니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugComPlusSymbol공급자](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **CDebugSymbolProvider** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
@@ -113,5 +113,5 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

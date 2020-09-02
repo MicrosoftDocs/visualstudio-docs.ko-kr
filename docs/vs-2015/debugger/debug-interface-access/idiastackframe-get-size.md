@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0f646dd6bfe93835d2d30280c7e57e7de2fbefa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190499"
 ---
-# <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
+# <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-바이트의 스택 프레임의 크기를 검색합니다.  
+스택 프레임의 크기 (바이트)를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,10 +35,10 @@ HRESULT get_size ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 스택 프레임의 크기 (바이트)를 반환합니다.  
+ 제한이 스택 프레임의 크기 (바이트)를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 속성이 지원 되지 않는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. `S_FALSE`속성이 지원 되지 않으면를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
