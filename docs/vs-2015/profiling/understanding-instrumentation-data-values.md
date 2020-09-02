@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145470"
 ---
 # <a name="understanding-instrumentation-data-values"></a>계측 데이터 값 이해
@@ -98,6 +98,6 @@ ms.locfileid: "68145470"
   
  100 * 함수 애플리케이션 전용 시간/세션 애플리케이션 포괄 시간  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)   
  [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)

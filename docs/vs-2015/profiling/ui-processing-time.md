@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bbed9d8c4725b6bd497377d4a9dee22f2f8573d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145490"
 ---
 # <a name="ui-processing-time"></a>UI 처리 시간
@@ -29,5 +29,5 @@ ms.locfileid: "68145490"
   
  UI 처리 범주는 GUI 애플리케이션의 응답성을 이해하는 데 중요하며 UI 응답성에 종속된 애플리케이션에서 유용합니다. 예를 들어 애플리케이션의 UI 스레드가 UI 처리에서 100% 시간을 달성하는 경우 매우 반응이 빠릅니다. 그러나 UI 스레드가 다른 범주에서 상당한 시간을 소요하는 경우 근본 원인을 찾고 해당 스레드에서 UI가 아닌 범주를 줄이기 위한 옵션을 고려합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

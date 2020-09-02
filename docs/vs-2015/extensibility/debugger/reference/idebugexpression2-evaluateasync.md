@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateAsync | Microsoft Docs
+title: 'IDebugExpression2:: EvaluateAsync | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e084152f6215878816739f46dc91fa322cf9c94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158436"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 메서드는 비동기적으로 식을 계산 합니다.  
+이 메서드는 식을 비동기식으로 계산 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,23 +42,23 @@ int EvaluateAsync(
   
 #### <a name="parameters"></a>매개 변수  
  `dwFlags`  
- [in] 플래그의 조합 된 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 식 계산을 제어 하는 열거형입니다.  
+ 진행 식 계산을 제어 하는 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 열거형의 플래그 조합입니다.  
   
  `pExprCallback`  
- [in] 이 매개 변수는 항상 null 값입니다.  
+ 진행 이 매개 변수는 항상 null 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 일반적인 오류 코드가입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 일반적인 오류 코드는 다음과 같습니다.  
   
-|Error|Description|  
+|오류|설명|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|다른 식이 계산 되는 현재 및 동시 식 계산에 사용할 수 없습니다.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|현재 다른 식이 계산 중 이며 동시 식 계산이 지원 되지 않습니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 식 평가 시작 된 후에 즉시 반환 해야 합니다. 식이 성공적으로 계산 하는 경우는 [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 보내야 합니다 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 이벤트 콜백을 통해 제공 [연결 ](../../../extensibility/debugger/reference/idebugprogram2-attach.md) 나 [연결](../../../extensibility/debugger/reference/idebugengine2-attach.md)합니다.  
+ 이 메서드는 식 계산을 시작한 직후에 반환 해야 합니다. 식이 성공적으로 계산 되 면 [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 는 [attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) 또는 [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)를 통해 제공 된 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 이벤트 콜백으로 전송 되어야 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` 를 구현 하는 개체를 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 IDebugExpression2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` . [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
   
 ```cpp#  
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,  

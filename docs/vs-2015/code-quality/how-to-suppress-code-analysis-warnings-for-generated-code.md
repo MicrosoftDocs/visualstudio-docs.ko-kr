@@ -1,5 +1,5 @@
 ---
-title: '방법: 생성 된 코드에 대 한 코드 분석 경고 표시 안 함 | Microsoft Docs'
+title: '방법: 생성 된 코드에 대 한 코드 분석 경고 표시 안 함 Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 52caadd7f4dd9349eccb80a366a1458212aba5ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646269"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성된 코드에 대한 코드 분석 경고 표시 안 함
@@ -32,6 +32,6 @@ ms.locfileid: "72646269"
 
 1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
-2. **코드 분석**을 클릭 합니다.
+2. **코드 분석**을 클릭합니다.
 
 3. 생성 된 **코드에서 결과 표시 안 함** 확인란을 선택 합니다.

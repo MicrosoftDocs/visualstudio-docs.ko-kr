@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591894"
 ---
 # <a name="t4-assembly-directive"></a>T4 Assembly 지시문
@@ -36,7 +36,7 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문은
 
 - 어셈블리의 절대 경로
 
-  `$(variableName)` 구문을 사용 하 여 `$(SolutionDir)`와 같은 Visual Studio 변수를 참조 하 고 `%VariableName%` 환경 변수를 참조할 수 있습니다. 예를 들면 다음과 같습니다.:
+  구문을 사용 하 여와 `$(variableName)` 같은 Visual Studio 변수를 참조 하 `$(SolutionDir)` 고 `%VariableName%` 환경 변수를 참조할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -63,7 +63,7 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문은
 
 - DSL이 들어 있는 어셈블리
 
-## <a name="msbuild"></a>MSBuild 및 Visual Studio에서 프로젝트 속성 사용
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용
  $ (솔루션 디렉터리)와 같은 Visual Studio 매크로는 MSBuild에서 작동 하지 않습니다. 빌드 컴퓨터에서 템플릿을 변형하려는 경우 대신 프로젝트 속성을 사용해야 합니다.
 
  프로젝트 속성을 정의하기 위해 .csproj 또는 .vbproj 파일을 편집합니다. 이 예제에서는 `myLibFolder`라는 속성을 정의합니다.
@@ -88,6 +88,6 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문은
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [T4 Include 지시문](../modeling/t4-include-directive.md)

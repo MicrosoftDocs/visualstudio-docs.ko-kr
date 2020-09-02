@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551943"
 ---
 # <a name="zoom-control-threads-view"></a>확대/축소 컨트롤(스레드 뷰)
@@ -31,7 +31,7 @@ ms.locfileid: "62551943"
 ## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>마우스 휠을 사용하여 확대 및 축소  
  시간 표시 막대에서 임의의 점을 클릭하여 마우스 포커스를 설정한 다음 Ctrl 키를 누르고 마우스 휠을 움직입니다. 휠을 앞으로 움직이면 확대되고 뒤로 움직이면 축소됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [채널 관리](../profiling/manage-channels.md)   
  [측정 모드 켜기/끄기](../profiling/measure-mode-on-off.md)   
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)   

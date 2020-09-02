@@ -1,5 +1,5 @@
 ---
-title: 'Vsgdbg:: Vsgdbg (생성자) | Microsoft Docs'
+title: VsgDbg::VsgDbg(생성자) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3bd179aea7d961df6145b7af2f074927fcdc3e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157435"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg(생성자)
@@ -31,15 +31,15 @@ VsgDbg(
   
 #### <a name="parameters"></a>매개 변수  
  `bDefaultInit`  
- 그래픽 정보를 캡처하고 기록하기 위해 그래픽 진단의 사용자 앱 구성 요소가 준비되도록 지정하려면 `true`이고, 이번에 그래픽 정보를 캡처하고 기록하기 위해 앱을 준비해서는 안 되도록 지정하려면 `false`입니다.  
+ `true` 그래픽 정보를 적극적으로 캡처하고 기록 하도록 그래픽 진단의 앱 내 구성 요소를 준비 하도록 지정 하려면 지금은 `false` 응용 프로그램에서 그래픽 정보를 적극적으로 캡처하고 기록 하도록 준비 하지 않도록 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 사용 하 여 생성자가 호출 하는 경우 `bDefaultInit` 로 설정 `true`, 그래픽 로그 파일의 파일 이름 방식에 따라 결정 됩니다 `DONT_SAVE_VSGLOG_TO_TEMP` 하 고 `VSG_DEFAULT_RUN_FILENAME` 하기 전에 정의 된 전처리기 기호 `vsgcapture.h` 앱에 포함 됩니다.  
+ 생성자가 `true`로 설정된 `bDefaultInit`로 호출되는 경우 그래픽 로그 파일의 파일 이름이 앱에 `vsgcapture.h`가 포함되기 전에 `DONT_SAVE_VSGLOG_TO_TEMP` 및 `VSG_DEFAULT_RUN_FILENAME` 전처리기 기호가 정의되는 방식에 따라 결정됩니다.  
   
  `bDefaultInit`이 `false`로 설정된 상태로 생성자가 호출되면 `Init` 함수를 호출하여 나중에 그래픽 정보를 캡처하고 기록하도록 그래픽 진단의 사용자 앱 구성 요소를 준비할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [VsgDbg::~VsgDbg(소멸자)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
- [Init](../debugger/init.md)   
+## <a name="see-also"></a>관련 항목  
+ [VsgDbg:: ~ VsgDbg (소멸자)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
+ [Cloud-init](../debugger/init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)   
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)

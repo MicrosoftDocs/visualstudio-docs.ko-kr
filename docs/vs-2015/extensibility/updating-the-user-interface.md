@@ -12,18 +12,18 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db5be965119d1564f2a4bf8a15892af7142663e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186351"
 ---
 # <a name="updating-the-user-interface"></a>사용자 인터페이스 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-명령을 구현한 후에 새 명령의 상태를 사용 하 여 사용자 인터페이스를 업데이트 하는 코드를 추가할 수 있습니다.  
+명령을 구현한 후 새 명령의 상태로 사용자 인터페이스를 업데이트 하는 코드를 추가할 수 있습니다.  
   
- 일반적인 Win32 응용 프로그램을 명령 집합을 지속적으로 폴링할 수 있습니다 하 고 해당 사용자를 볼 경우에 개별 명령의 상태를 조정할 수 있습니다. 그러나 때문에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셸 Vspackage의 무제한을 호스트할 수 있습니다, 광범위 한 폴링 응답성, 특히 관리 코드와 COM. interop 어셈블리에서 폴링 저하 될 수 있습니다  
+ 일반적인 Win32 응용 프로그램에서는 명령 집합이 지속적으로 폴링 될 수 있으며 사용자가이를 볼 때 개별 명령의 상태를 조정할 수 있습니다. 그러나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셸은 vspackage 수를 무제한으로 호스트할 수 있으므로 광범위 한 폴링은 특히 관리 코드와 COM 간의 상호 운용성 어셈블리 간 폴링을 통해 응답성을 저하 시킬 수 있습니다.  
   
 ### <a name="to-update-the-ui"></a>UI를 업데이트 하려면  
   
@@ -31,7 +31,7 @@ ms.locfileid: "68186351"
   
     - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 메서드를 호출합니다.  
   
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 인터페이스에서 가져올 수 있습니다는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 서비스를 다음과 같이 합니다.  
+         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>다음과 같이 서비스에서 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> .  
   
         ```csharp  
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)  
@@ -46,12 +46,12 @@ ms.locfileid: "68186351"
   
         ```  
   
-         하는 경우의 매개 변수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 0이 아닌 (`TRUE`)를 동기적으로 한 즉시 업데이트가 수행 됩니다. 0을 전달 하는 것이 좋습니다 (`FALSE`) 좋은 성능을 유지 하기 위해이 매개 변수에 대 한 합니다. 캐시 하지 않도록 하려는 경우 적용 된 `DontCache` .vsct 파일에서 명령을 만들 때 플래그입니다. 그럼에도 불구 하 고 플래그를 신중 하 게 사용 또는 성능 저하 될 수 있습니다. 명령 플래그에 대 한 자세한 내용은 참조는 [Command Flag 요소](../extensibility/command-flag-element.md) 설명서.  
+         의 매개 변수가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 0이 아닌 경우 ( `TRUE` ) 업데이트는 동기적으로 즉시 수행 됩니다. `FALSE`좋은 성능을 유지 하기 위해이 매개 변수에 대해 0 ()을 전달 하는 것이 좋습니다. 캐싱을 방지 하려면 `DontCache` . vsct 파일에서 명령을 만들 때 플래그를 적용 합니다. 그럼에도 불구 하 고 주의 해 서 플래그를 사용 하면 성능이 저하 될 수 있습니다. 명령 플래그에 대 한 자세한 내용은 [명령 플래그 요소](../extensibility/command-flag-element.md) 설명서를 참조 하세요.  
   
-    - 창에서 바로 활성화 모델을 사용 하 여 ActiveX 컨트롤을 호스트 하는 vspackage에서 더 편리할 수 있습니다 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 메서드. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 인터페이스 및 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 에서 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 인터페이스는 기능적으로 동일 합니다. 모두 다시 모든 명령의 상태를 쿼리하려면 환경을 발생 합니다. 일반적으로 업데이트를 즉시 수행 되지 않습니다. 대신, 업데이트 하는 유휴 시간까지 지연 됩니다. 셸 좋은 성능을 유지 하기 위해 명령 상태를 캐시 합니다. 캐시 하지 않도록 하려는 경우 적용 된 `DontCache` .vsct 파일에서 명령을 만들 때 플래그입니다. 그럼에도 불구 하 고 사용 하 여 플래그를 신중 하 게 성능 저하 될 수 있습니다.  
+    - 창에서 내부 활성화 모델을 사용 하 여 ActiveX 컨트롤을 호스트 하는 Vspackage 메서드를 사용 하는 것이 더 편리할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> . 인터페이스의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 메서드와 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 인터페이스의 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 기능적으로 동일 합니다. 둘 다 환경에서 모든 명령의 상태를 다시 쿼리 합니다. 일반적으로 업데이트는 즉시 수행 되지 않습니다. 대신 유휴 시간까지 업데이트가 지연 됩니다. Shell은 좋은 성능을 유지 하는 데 도움이 되도록 명령 상태를 캐시 합니다. 캐싱을 방지 하려면 `DontCache` . vsct 파일에서 명령을 만들 때 플래그를 적용 합니다. 그럼에도 불구 하 고 성능이 저하 될 수 있으므로 주의 해 서 플래그를 사용 합니다.  
   
-         통지를 가져올 수 있습니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 인터페이스를 호출 하 여는 `QueryInterface` 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 개체 또는에서 인터페이스를 가져오는 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 서비스.  
+         <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> `QueryInterface` 개체에 대해 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 하거나 서비스에서 인터페이스를 가져와서 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> .  
   
 ## <a name="see-also"></a>관련 항목  
- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [구현](../extensibility/internals/command-implementation.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646814"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
@@ -27,7 +27,7 @@ ms.locfileid: "72646814"
 템플릿에 매개 변수를 사용하여 템플릿이 인스턴스화될 때 클래스 이름 및 네임스페이스 등 템플릿의 주요 부분 값을 바꿀 수 있습니다. 사용자가 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 **확인**을 클릭하는 경우 이러한 매개 변수는 백그라운드에서 실행되는 템플릿 마법사로 바뀝니다.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>템플릿 매개 변수 선언 및 사용
- 템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 예:
+ 템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 예를 들면 다음과 같습니다.
 
 - $safeprojectname$
 
@@ -123,5 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)

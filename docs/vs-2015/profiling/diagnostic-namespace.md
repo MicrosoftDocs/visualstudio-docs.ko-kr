@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157584"
 ---
 # <a name="diagnostic-namespace"></a>진단 네임스페이스
@@ -35,14 +35,14 @@ namespace diagnostic;
   
 ### <a name="classes"></a>클래스  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[marker_series 클래스](../profiling/marker-series-class.md)|단일 공급자가 생성한 이벤트의 직렬 채널을 나타냅니다.|  
 |[span 클래스](../profiling/span-class.md)|애플리케이션의 단계를 정의합니다.|  
   
 ### <a name="enumerations"></a>열거형  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[marker_importance 열거형](../profiling/marker-importance-enumeration.md)|동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.|  
   
@@ -51,5 +51,5 @@ namespace diagnostic;
   
  **네임스페이스:** 동시성  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [동시성 네임스페이스(동시성 시각화 도우미)](../profiling/concurrency-namespace-concurrency-visualizer.md)

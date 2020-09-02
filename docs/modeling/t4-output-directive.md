@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591816"
 ---
 # <a name="t4-output-directive"></a>T4 Output 지시문
@@ -39,7 +39,7 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환 된 파일�
 
  기본값은 .cs입니다 **.**
 
- 예: `<#@ output extension=".txt" #>`
+ 예제: `<#@ output extension=".txt" #>`
 
  `<#@ output extension=".htm" #>`
 
@@ -50,7 +50,7 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환 된 파일�
  허용 되는 값: 유효한 모든 파일 이름 확장명입니다.
 
 ## <a name="encoding-attribute"></a>encoding 특성
- 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들면 다음과 같습니다.:
+ 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들면 다음과 같습니다.
 
  `<#@ output encoding="utf-8"#>`
 

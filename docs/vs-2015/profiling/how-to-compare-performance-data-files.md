@@ -1,5 +1,5 @@
 ---
-title: '방법: 성능 데이터 파일 비교 | Microsoft Docs'
+title: '방법: 성능 데이터 파일 비교 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185946"
 ---
 # <a name="how-to-compare-performance-data-files"></a>방법: 성능 데이터 파일 비교
@@ -34,7 +34,7 @@ ms.locfileid: "68185946"
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>[성능 탐색기]에서 프로젝트에 대한 비교 파일 뷰를 만들려면  
   
-1. **성능 탐색기**의 **보고서** 아래에서 비교를 위한 기준선 값으로 사용할 .vsp 또는 .vsps 보고서 파일을 선택합니다.  
+1. **성능 탐색기**의 **보고서**에서 비교할 기본 값으로 사용할 .vsp 또는 .vsps 보고서 파일을 선택 합니다.  
   
 2. 비교할 .vsp 또는 .vsps 보고서 파일을 선택합니다.  
   
@@ -56,6 +56,6 @@ ms.locfileid: "68185946"
   
 1. **분석** 메뉴에서 **성능 보고서 비교**를 선택합니다.  
   
-2. In the **비교할 분석 파일을 선택합니다.** 창에서 **기본 파일** 분석 파일(.vsp 또는 .vsps) 및 **비교 파일**(.vsp 또는 .vsps)을 선택합니다.  
+2. **비교할 분석 파일 선택** 창에서 **기준 파일** 분석 파일 (.vsp 또는 .Vsps) 및 **비교 파일** (.vsp 또는 .vsps)을 찾아 선택 합니다.  
   
 3. **확인**을 클릭합니다.

@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cc3560c1cbcebea9f61465240cd4e2c7a0f811f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667461"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>에뮬레이터를 사용하여 Sharepoint 2010 애플리케이션용 단위 테스트 격리
@@ -22,8 +22,8 @@ Microsoft.SharePoint.Emulators 패키지는 Microsoft SharePoint 2010 애플리�
 
  기존 테스트 메서드 및 클래스는 에뮬레이터 컨텍스트에서 실행되도록 쉽게 변환될 수 있습니다. 이 기능을 통해 이중 사용 테스트를 만들 수 있습니다. 이중 사용 테스트는 실제 SharePoint API에 대한 통합 테스트와 에뮬레이터를 사용하는 격리된 단위 테스트 간에 전환할 수 있습니다.
 
-## <a name="BKMK_In_this_topic"></a> 항목 내용
- [Requirements](#BKMK_Requirements)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 항목 내용
+ [요구 사항](#BKMK_Requirements)
 
  [AppointmentsWebPart 예제](#BKMK_The_AppointmentsWebPart_example)
 
@@ -33,19 +33,19 @@ Microsoft.SharePoint.Emulators 패키지는 Microsoft SharePoint 2010 애플리�
 
 - [에뮬레이션을 통해 테스트 메서드 실행](#BKMK__Running_a_test_method_in_the_emulation_context)
 
-  [이중 사용할 클래스 및 메서드 만들기](#BKMK_Creating_dual_use_classes_and_methods)
+  [이중 사용 클래스 및 메서드 만들기](#BKMK_Creating_dual_use_classes_and_methods)
 
   [TestInitialize 및 TestCleanup 특성을 사용하여 이중 사용 테스트 클래스 만들기](#BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class)
 
   [에뮬레이트되지 않은 SharePoint 메서드 처리](#BKMK_Handling_non_emulated_SharePoint_methods)
 
-  [에뮬레이션 테스트를 처음부터 다시 작성하고 요약 작성](#BKMK_Writing_emulation_tests_from_scratch__and_a_summary)
+  [에뮬레이션 테스트를 처음부터 새로 작성 하 고 요약 작성](#BKMK_Writing_emulation_tests_from_scratch__and_a_summary)
 
-  [예](#BKMK_Example)
+  [예제](#BKMK_Example)
 
   [에뮬레이트된 SharePoint 형식](#BKMK_Emulated_SharePoint_types)
 
-## <a name="BKMK_Requirements"></a> 요구 사항
+## <a name="requirements"></a><a name="BKMK_Requirements"></a> 요구 사항
 
 - Microsoft SharePoint 2010(SharePoint 2010 Server 또는 SharePoint 2010 Foundation)
 
@@ -55,7 +55,7 @@ Microsoft.SharePoint.Emulators 패키지는 Microsoft SharePoint 2010 애플리�
 
   [Visual Studio의 유닛 테스트에 대한 기본 사항](../test/unit-test-basics.md)과 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)를 잘 알고 있어야 합니다.
 
-## <a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart 예제
+## <a name="the-appointmentswebpart-example"></a><a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart 예제
  AppointmentsWebPart를 사용하여 약속의 SharePoint 목록을 보고 관리할 수 있습니다.
 
  ![약속 웹 파트](../test/media/ut-emulators-appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
@@ -68,7 +68,7 @@ Microsoft.SharePoint.Emulators 패키지는 Microsoft SharePoint 2010 애플리�
 
   [항목 내용](#BKMK_In_this_topic)
 
-## <a name="BKMK_Converting_an_existing_test"></a> 기존 테스트 변환
+## <a name="converting-an-existing-test"></a><a name="BKMK_Converting_an_existing_test"></a> 기존 테스트 변환
  SharePoint 구성 요소의 일반적인 메서드 테스트에서 테스트 메서드는 SharePoint Foundation에서 임시 사이트를 만들고 테스트 중인 코드에 필요한 SharePoint 구성 요소를 사이트에 추가합니다. 그다음에 테스트 메서드는 구성 요소 인스턴스를 만들고 실행합니다. 테스트가 끝나면 사이트가 삭제됩니다.
 
  테스트 중인 코드의 `ScheduleAppointment` 메서드는 구성 요소에 대해 작성된 첫 번째 메서드의 하나일 수 있습니다.
@@ -138,7 +138,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  [항목 내용](#BKMK_In_this_topic)
 
-### <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> 테스트 프로젝트에 에뮬레이터 패키지 추가
+### <a name="adding-the-emulators-package-to-a-test-project"></a><a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> 테스트 프로젝트에 에뮬레이터 패키지 추가
  테스트 프로젝트에 SharePoint 에뮬레이터를 추가하려면
 
 1. 솔루션 탐색기에서 테스트 프로젝트를 선택합니다.
@@ -151,10 +151,10 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
    [항목 내용](#BKMK_In_this_topic)
 
-### <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> 에뮬레이션을 통해 테스트 메서드 실행
+### <a name="running-a-test-method-with-emulation"></a><a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> 에뮬레이션을 통해 테스트 메서드 실행
  패키지를 설치하면 필요한 라이브러리에 대한 참조가 프로젝트에 추가됩니다. 기존 테스트 클래스에서 에뮬레이터를 쉽게 사용하려면 네임스페이스 `Microsoft.SharePoint.Emulators` 및 `Microsoft.QualityTools.Testing.Emulators`를 추가합니다.
 
- 테스트 메서드에서 에뮬레이션을 사용하려면 `SharePointEmulationScope` 개체를 만드는 `using` 문으로 메서드 본문을 래핑합니다. 예를 들면,
+ 테스트 메서드에서 에뮬레이션을 사용하려면 `SharePointEmulationScope` 개체를 만드는 `using` 문으로 메서드 본문을 래핑합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 
@@ -190,7 +190,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  [항목 내용](#BKMK_In_this_topic)
 
-## <a name="BKMK_Creating_dual_use_classes_and_methods"></a> 이중 사용할 클래스 및 메서드 만들기
+## <a name="creating-dual-use-classes-and-methods"></a><a name="BKMK_Creating_dual_use_classes_and_methods"></a> 이중 사용할 클래스 및 메서드 만들기
  실제 SharePoint API에 대한 통합 테스트 및 에뮬레이터를 사용하는 격리된 단위 테스트에 둘 다 사용할 수 있는 메서드를 만들려면 오버로드된 생성자 `SharePointEmulationScope(EmulationMode)`를 사용하여 테스트 메서드 코드를 래핑합니다. `EmulationMode` 열거형의 두 값은 범위에서 에뮬레이터를 사용할지 여부(`EmulationMode.Enabled`) 또는 범위에서 SharePoint API를 사용할지 여부(`EmulationMode.Passthrough`)를 지정합니다.
 
  예를 들어 다음은 이전 테스트를 이중 사용으로 수정하는 방법입니다.
@@ -227,7 +227,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  [항목 내용](#BKMK_In_this_topic)
 
-## <a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> TestInitialize 및 TestCleanup 특성을 사용하여 이중 사용 테스트 클래스 만들기
+## <a name="using-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a><a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> TestInitialize 및 TestCleanup 특성을 사용 하 여 이중 사용 테스트 클래스 만들기
  `SharePointEmulationScope`를 사용하여 클래스의 모든 또는 대부분 테스트를 실행하면 클래스 수준 방법을 사용하여 에뮬레이션 모드를 설정할 수 있습니다.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> 및 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> 특성을 사용하는 테스트 클래스 메서드는 범위를 만들고 제거할 수 있습니다.
@@ -294,7 +294,7 @@ namspace MySPAppTests
 
  [항목 내용](#BKMK_In_this_topic)
 
-## <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> 에뮬레이트되지 않은 SharePoint 메서드 처리
+## <a name="handling-non-emulated-sharepoint-methods"></a><a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> 에뮬레이션 되지 않은 SharePoint 메서드 처리
  일부 SharePoint 형식이 에뮬레이트되지 않고 일부 에뮬레이트된 형식의 일부 메서드는 에뮬레이트되지 않습니다. 테스트 중인 코드가 에뮬레이트되지 않은 SharePoint 메서드를 호출하면 메서드는 `NotSupportedException` 예외를 throw합니다. 예외가 발생하면 SharePoint 메서드에 대한 Fakes shim을 추가합니다.
 
  **SharePoint Fakes 설정**
@@ -385,7 +385,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 
  [항목 내용](#BKMK_In_this_topic)
 
-## <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> 에뮬레이션 테스트를 처음부터 다시 작성하고 요약 작성
+## <a name="writing-emulation-tests-from-scratch-and-a-summary"></a><a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> 에뮬레이션 테스트를 처음부터 다시 작성하고 요약 작성
  이전 섹션에 설명된 에뮬레이션 및 이중 사용 테스트를 만드는 방법에서는 기존 테스트를 변환한다고 가정하지만 테스트를 처음부터 작성하는 방법을 사용할 수도 있습니다. 다음 목록에서는 이들 방법을 요약하여 보여 줍니다.
 
 - 테스트 프로젝트에서 에뮬레이터를 사용하려면 Microsoft.SharePoint.Emulators NuGet 패키지를 프로젝트에 추가합니다.
@@ -402,7 +402,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 
   [항목 내용](#BKMK_In_this_topic)
 
-## <a name="BKMK_Example"></a> 예제
+## <a name="example"></a><a name="BKMK_Example"></a> 예제
  다음은 위에 설명된 SharePoint 에뮬레이터 방법을 통합하는 마지막 예제입니다.
 
 ```csharp
@@ -522,7 +522,7 @@ namspace MySPAppTests
 
 ```
 
-## <a name="BKMK_Emulated_SharePoint_types"></a> 에뮬레이트된 SharePoint 형식
+## <a name="emulated-sharepoint-types"></a><a name="BKMK_Emulated_SharePoint_types"></a> 에뮬레이트된 SharePoint 형식
  [Microsoft.SharePoint.SPField](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPField)
 
  [Microsoft.SharePoint.SPFieldIndex](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldIndex)
@@ -587,5 +587,5 @@ namspace MySPAppTests
 
  [항목 내용](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [코드 단위 테스트](../test/unit-test-your-code.md) [코딩 된 UI 테스트를 사용 하 여 Sharepoint 2010 응용 프로그램 테스트](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md) [웹 성능 및 부하 테스트 sharepoint 2010 및 2013 응용 프로그램](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [sharepoint 솔루션 개발](https://msdn.microsoft.com/library/059bce0f-c301-4234-a0b4-9c14b7cdfa3e)

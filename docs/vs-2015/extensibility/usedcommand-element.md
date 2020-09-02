@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186373"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-다른.vsct 파일에 정의 된 명령에 액세스 하기 위해 VSPackage를 사용 하도록 설정 합니다. 예를 들어 VSPackage는 표준을 **복사본** 명령에 정의 된는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셸을 추가할 수 명령을 메뉴나 도구 모음을 다시 구현 하지 않고도 합니다.  
+VSPackage에서 다른. vsct 파일에 정의 된 명령에 액세스할 수 있습니다. 예를 들어 VSPackage에서 셸에서 정의한 표준 **복사** 명령을 사용 하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 다시 구현 하지 않고 메뉴 또는 도구 모음에 명령을 추가할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,11 +34,11 @@ ms.locfileid: "68186373"
   
 ### <a name="attributes"></a>특성  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
 |guid|필수 요소. 명령을 식별 하는 GUID ID 쌍의 GUID입니다.|  
 |id|필수 요소. 명령을 식별 하는 GUID ID 쌍의 ID입니다.|  
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -50,10 +50,10 @@ ms.locfileid: "68186373"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[UsedCommands 요소](../extensibility/usedcommands-element.md)|UsedCommand 요소를 그룹화 하 고 기타 UsedCommands 그룹화 합니다.|  
+|[UsedCommands 요소](../extensibility/usedcommands-element.md)|UsedCommand 요소 및 기타 UsedCommands 그룹화를 그룹화 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 명령을 추가 하 여는 `<UsedCommands>` 요소인 VSPackage 알립니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 환경 VSPackage의 명령에 필요 합니다. 추가 해야는 `<UsedCommand>` 요소는 패키지에 필요한 모든 명령에 대 한 모든 버전 및 Visual Studio의 구성에 포함 되지 않을 수 있습니다. 예를 들어 패키지 visual 특정 명령을 호출 하는 경우 C++를 포함 하지 않으면이 명령은 Visual Web Developer의 사용자에 게 사용할 수 없습니다는 `<UsedCommand>` 명령에 대 한 요소입니다.  
+ VSPackage는 요소에 명령을 추가 하 여 `<UsedCommands>` [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage에 명령이 필요 함을 환경에 알립니다. `<UsedCommand>`패키지에 필요한 모든 명령에 요소를 추가 해야 합니다 .이는 Visual Studio의 모든 버전 및 구성에 포함 될 수 없습니다. 예를 들어 패키지에서 Visual C++와 관련 된 명령을 호출 하는 경우 명령 `<UsedCommand>` 에 대 한 요소를 포함 하지 않으면 Visual Web Developer 사용자가이 명령을 사용할 수 없습니다.  
   
 ## <a name="example"></a>예제  
   

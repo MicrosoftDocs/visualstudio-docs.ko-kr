@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147235"
 ---
 # <a name="blocking-time-profile-report"></a>차단 시간 프로필 보고서
@@ -34,9 +34,9 @@ ms.locfileid: "68147235"
 ## <a name="blocking-time-report-columns"></a>차단 시간 보고서 열  
  다음 표에서는 각 차단 시간 보고서에 대한 열을 보여 줍니다.  
   
-|열 이름|설명|  
+|열 이름|Description|  
 |-----------------|-----------------|  
-|name|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
+|Name|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
 |인스턴스|보이는 기간에 대한 차단 호출의 인스턴스 수입니다.|  
 |포함 차단 시간|호출 스택 트리의 이 수준까지 이르는 모든 스택에 소요된 총 차단 시간입니다. 포함 수는 이 함수에 대한 제외 차단 시간과 모든 하위 노드에 대한 제외 차단 시간의 합입니다.|  
 |제외 차단 시간|이 함수가 호출 스택에서 최하위 수준에 있는 동안 소요된 총 차단 시간입니다. 제외 차단 시간 값이 높은 고유한 호출 스택 항목이 관심 함수일 수 있습니다.|  
@@ -44,13 +44,13 @@ ms.locfileid: "68147235"
 |세부 정보|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|  
   
 ### <a name="synchronization"></a>동기화  
- 동기화 보고서에는 동기화에서 차단되는 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [동기화 시간](../profiling/synchronization-time.md)을 참조하세요.  
+ 동기화 보고서에는 동기화에서 차단되는 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [동기화 시간](../profiling/synchronization-time.md) 을 참조 하세요.  
   
-### <a name="sleep"></a>Sleep  
- 중지 보고서에는 중지에 사용된 시간으로 전환된 차단 시간을 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [중지 시간](../profiling/sleep-time.md)을 참조하세요.  
+### <a name="sleep"></a>절전  
+ 중지 보고서에는 중지에 사용된 시간으로 전환된 차단 시간을 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [절전 모드 시간](../profiling/sleep-time.md)을 참조하세요.  
   
 ### <a name="io"></a>I/O  
- I/O 보고서에는 I/O에서 차단되는 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [I/O 시간(스레드 뷰)](../profiling/i-o-time-threads-view.md)를 참조하세요.  
+ I/O 보고서에는 I/O에서 차단되는 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 i/o [시간 (스레드 뷰)](../profiling/i-o-time-threads-view.md)을 참조 하세요.  
   
 ### <a name="memory-management"></a>메모리 관리  
  메모리 관리 보고서에는 메모리 관리 작업에서 차단되는 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [메모리 관리 시간](../profiling/memory-management-time.md)을 참조하세요.  
@@ -61,5 +61,5 @@ ms.locfileid: "68147235"
 ### <a name="ui-processing"></a>UI 처리  
  UI 처리 보고서에는 UI 처리 블록에서 차단되는 차단 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [UI 처리 시간](../profiling/ui-processing-time.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

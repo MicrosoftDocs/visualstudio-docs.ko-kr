@@ -1,5 +1,5 @@
 ---
-title: 인터페이스 추출 리팩터링 (C#) | Microsoft Docs
+title: '인터페이스 추출 리팩터링 (c #) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667559"
 ---
 # <a name="extract-interface-refactoring-c"></a>인터페이스 추출 리팩터링(C#)
@@ -34,7 +34,7 @@ ms.locfileid: "72667559"
 
 ### <a name="to-use-extract-interface"></a>Extract 인터페이스를 사용 하려면
 
-1. @No__t_0 이라는 콘솔 응용 프로그램을 만든 후 `Program`을 다음 코드로 바꿉니다.
+1. 이라는 콘솔 응용 프로그램을 만들고 `ExtractInterface` 를 `Program` 다음 코드로 바꿉니다.
 
     ```csharp
     // Invoke Extract Interface on ProtoA.
@@ -45,7 +45,7 @@ ms.locfileid: "72667559"
     }
     ```
 
-2. 커서를 `MethodB`에 배치 하 고 **리팩터링** 메뉴에서 **인터페이스 추출** 을 클릭 합니다.
+2. 에 커서가 배치 된 상태에서 `MethodB` **리팩터링** 메뉴에서 **인터페이스 추출** 을 클릭 합니다.
 
      **인터페이스 추출** 대화 상자가 나타납니다.
 
@@ -70,10 +70,10 @@ ms.locfileid: "72667559"
     }
     ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 기능은 추출 하려는 멤버를 포함 하는 클래스, 구조체 또는 인터페이스에 커서가 있을 때에만 액세스할 수 있습니다. 커서가이 위치에 있으면 인터페이스 추출 리팩터링 작업을 호출 합니다.
 
  클래스 또는 구조체에서 extract 인터페이스를 호출 하는 경우 기본 및 인터페이스 목록이 새 인터페이스 이름을 포함 하도록 수정 됩니다. 인터페이스에서 extract 인터페이스를 호출 하면 기본 및 인터페이스 목록이 수정 되지 않습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [리팩터링(C#)](../csharp-ide/refactoring-csharp.md)

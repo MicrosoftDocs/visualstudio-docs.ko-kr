@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText | Microsoft Docs
+title: IDebugExpressionContext2::P arseText | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fbd9252663f766035f628946e6aa93b1c00322a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158386"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이후 평가 대 한 텍스트 형태로 식을 구문 분석합니다.  
+나중에 계산할 때 텍스트 형식으로 식을 구문 분석 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,33 +50,33 @@ int ParseText( 
   
 #### <a name="parameters"></a>매개 변수  
  `pszCode`  
- [in] 구문 분석할 식입니다.  
+ 진행 구문 분석할 식입니다.  
   
  `dwFlags`  
- [in] 플래그의 조합 된 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) 구문 분석을 제어 하는 열거형입니다.  
+ 진행 구문 분석을 제어 하는 [parseflags](../../../extensibility/debugger/reference/parseflags.md) 열거형의 플래그 조합입니다.  
   
  `nRadix`  
- [in] 숫자 정보를 구문 분석 하는 데 사용할 기 수 `pszCode`입니다.  
+ 진행 에서 숫자 정보를 구문 분석 하는 데 사용할 기 수 `pszCode` 입니다.  
   
  `ppExpr`  
- [out] 반환 된 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 바인딩 및 평가 되지 않은 구문 분석된 된 식을 나타내는 개체입니다.  
+ 제한이 바인딩 및 평가에 사용할 수 있는 구문 분석 된 식을 나타내는 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 개체를 반환 합니다.  
   
  `pbstrError`  
- [out] 식에 오류가 포함 된 오류 메시지를 반환 합니다.  
+ 제한이 식에 오류가 있는 경우 오류 메시지를 반환 합니다.  
   
  `pichError`  
- [out] 오류 메시지의 문자 인덱스를 반환 `pszCode` 식에 오류가 포함 되어 있습니다.  
+ 제한이 식에 오류가 포함 된 경우에서 오류의 문자 인덱스를 반환 합니다 `pszCode` .  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 호출 하는 경우 디버그 엔진 (DE) 식을 구문 분석 하 고 올바른지 유효성을 검사 해야 합니다. 합니다 `pbstrError` 고 `pichError` 식이 유효 하지 않은 경우 매개 변수를 채울 수 있습니다.  
+ 이 메서드가 호출 되 면 디버그 엔진 (DE)이 식을 구문 분석 하 여 정확성을 확인 해야 합니다. `pbstrError` `pichError` 식이 잘못 된 경우 및 매개 변수가 채워질 수 있습니다.  
   
- Note 구문 분석만 식이 계산 됩니다. 이후의 호출을 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 하거나 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 메서드 구문 분석 된 식을 계산 합니다.  
+ 식은 계산 되지 않고 구문 분석 됩니다. [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 또는 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 메서드를 나중에 호출 하면 구문 분석 된 식이 평가 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CEnvBlock` 노출 하는 개체를 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스입니다. 이 예제에서는 환경 변수의 이름으로 구문 분석할 식으로 간주 하 고 해당 변수에서 값을 검색 합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `CEnvBlock` [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다. 이 예에서는 식이 환경 변수의 이름으로 구문 분석 되 고 해당 변수에서 값을 검색 하는 것으로 간주 합니다.  
   
 ```cpp#  
 HRESULT CEnvBlock::ParseText(  
@@ -124,7 +124,7 @@ HRESULT CEnvBlock::ParseText(
 }    
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

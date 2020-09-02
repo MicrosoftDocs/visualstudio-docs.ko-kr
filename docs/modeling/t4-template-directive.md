@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591842"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
 
-Visual Studio T4 텍스트 템플릿은 일반적으로 템플릿을 처리 하는 방법을 지정 하는 `template` 지시문으로 시작 합니다. 하나의 텍스트 템플릿 및 템플릿이 포함된 파일에는 템플릿 지시문이 하나만 있어야 합니다.
+Visual Studio T4 텍스트 템플릿은 일반적으로 `template` 템플릿을 처리 하는 방법을 지정 하는 지시문으로 시작 합니다. 하나의 텍스트 템플릿 및 템플릿이 포함된 파일에는 템플릿 지시문이 하나만 있어야 합니다.
 
 텍스트 템플릿 작성에 대 한 일반적인 개요는 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
 
@@ -34,7 +34,7 @@ Visual Studio T4 텍스트 템플릿은 일반적으로 템플릿을 처리 하�
 
 `compilerOptions="optimize+"`
 
-유효한 값:
+유효한 값은
 
 유효한 컴파일러 옵션입니다.
 
@@ -48,7 +48,7 @@ Visual Studio T4 텍스트 템플릿은 일반적으로 템플릿을 처리 하�
 
 `culture="de-CH"`
 
-유효한 값:
+유효한 값은
 
 "", 기본값인 고정 문화권입니다.
 
@@ -64,11 +64,11 @@ xx-XX 형식의 문자열로 표현된 문화권. 예를 들어 en-US, ja-JP, de
 debug="true"
 ```
 
-유효한 값:
+유효한 값은
 
 `true`
 
-`false`(기본)
+`false`(기본값)
 
 `debug` 특성이 `true`인 경우 중간 코드 파일에 디버거가 중단 또는 예외가 발생한 템플릿의 위치를 정확하게 식별할 수 있도록 하는 정보가 포함됩니다.
 
@@ -84,11 +84,11 @@ debug="true"
 hostspecific="true"
 ```
 
-유효한 값:
+유효한 값은
 
 `true`
 
-`false`(기본)
+`false`(기본값)
 
 `trueFromBase`
 
@@ -96,7 +96,7 @@ hostspecific="true"
 
 이 속성의 형식이 호스트의 형식에 따라 달라지기 때문에 이 속성은 특정 호스트에서만 작동하는 텍스트 템플릿을 작성하는 경우에만 유용합니다. [디자인 타임 템플릿에](../modeling/design-time-code-generation-by-using-t4-text-templates.md)는 적용 되지만 [런타임 템플릿에](../modeling/run-time-text-generation-with-t4-text-templates.md)는 적용 되지 않습니다.
 
-`hostspecific` `true` 되 고 Visual Studio를 사용 하는 경우 Visual Studio 기능에 액세스 하기 위해 `this.Host`을 IServiceProvider으로 캐스팅할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면 다음과 같습니다.:
+`hostspecific`가이 `true` 고 visual studio를 사용 하는 경우 `this.Host` IServiceProvider로 캐스팅 하 여 visual studio 기능에 액세스할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -126,15 +126,15 @@ Content of myFile is:
 
 `language="VB"`
 
-유효한 값:
+유효한 값은
 
-`C#`(기본)
+`C#`(기본값)
 
 `VB`
 
-`language` 특성은 문과 식 블록의 소스 코드에 사용할 언어 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 또는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)])를 지정 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
+`language`특성은 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 문과 식 블록의 소스 코드에 사용할 언어 (또는)를 지정 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
 
-예를 들면 다음과 같습니다.:
+예를 들면 다음과 같습니다.
 
 ```vb
 <#@ template language="VB" #>
@@ -243,9 +243,9 @@ This is the common footer.
 
 `linePragmas="false"`
 
-유효한 값:
+유효한 값은
 
-`true`(기본)
+`true`(기본값)
 
 `false`
 
@@ -259,9 +259,9 @@ This is the common footer.
 
 `visibility="internal"`
 
-유효한 값:
+유효한 값은
 
-`public`(기본)
+`public`(기본값)
 
 `internal`
 

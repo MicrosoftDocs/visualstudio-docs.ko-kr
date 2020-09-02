@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546904"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
@@ -57,7 +57,7 @@ Visual Studio에 대한 최신 설명서는 [Visual Studio 제거](/visualstudio
 
 2. 다음 매개 변수를 입력합니다.
 
-     *DVDRoot* \\<Installation File\> \</quiet&#124;/passive> [/norestart]/uninstall
+     *DVDRoot* \\<설치 파일 \> \</quiet&#124;/passive> [/norestart]/uninstall
 
 ## <a name="roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Visual Studio의 이전 버전 또는 릴리스로 롤백
 
@@ -74,6 +74,6 @@ Visual Studio에 대한 최신 설명서는 [Visual Studio 제거](/visualstudio
 
    이전 버전의 Visual Studio를 설치한 경우에도 설치 프로그램에서는 사용 가능한 최신 버전이나 릴리스를 사용하려고 시도합니다. 자세한 내용은 [방법: Visual Studio의 특정 릴리스 설치](../install/how-to-install-a-specific-release-of-visual-studio.md) 항목을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 설치](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

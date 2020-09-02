@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7c5f9c19573a04b1d9a8d7b8c6e9450aef9bc44
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645724"
 ---
 # <a name="findcommand-box"></a>찾기/명령 상자
@@ -29,13 +29,13 @@ ms.locfileid: "72645724"
 
  **찾기/명령** 상자는 입력된 마지막 20개 항목을 유지하고 드롭다운 목록에 표시합니다. 화살표 키를 선택하여 목록을 이동할 수 있습니다.
 
- ![찾기&#47;명령 상자](../ide/media/findcommandbox.png "|::ref1::|") 찾기/명령 상자
+ ![&#47;명령 상자 찾기](../ide/media/findcommandbox.png "FindCommandBox") 찾기/명령 상자
 
 ## <a name="searching-for-text"></a>텍스트 검색
- 기본적으로 **찾기/명령** 상자에 텍스트를 지정한 다음 Enter 키를 선택하면 Visual Studio는 **파일에서 찾기** 대화 상자에 지정된 옵션을 사용하여 현재 문서 또는 도구 창을 검색합니다. 자세한 내용은 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)를 참조하세요.
+ 기본적으로 **찾기/명령** 상자에 텍스트를 지정한 다음 ENTER 키를 선택 하면 Visual Studio는 **파일에서 찾기** 대화 상자에 지정 된 옵션을 사용 하 여 현재 문서 또는 도구 창을 검색 합니다. 자세한 내용은 [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)를 참조 하십시오.
 
 ## <a name="entering-commands"></a>명령 입력
- 텍스트 검색보다는 **찾기/명령** 상자를 사용하여 단일 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령이나 별칭을 실행하려면 앞에 보다 큼(>) 기호를 배치하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 입력합니다. 예:
+ 텍스트 검색보다는 **찾기/명령** 상자를 사용하여 단일 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령이나 별칭을 실행하려면 앞에 보다 큼(>) 기호를 배치하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 입력합니다. 다음은 그 예입니다.
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -52,5 +52,5 @@ ms.locfileid: "72645724"
 
  캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [명령 창](../ide/reference/command-window.md) [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)

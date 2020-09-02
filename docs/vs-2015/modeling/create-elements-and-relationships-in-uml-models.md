@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667819"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>UML 모델에서 요소 및 관계 만들기
@@ -35,7 +35,7 @@ Visual Studio 확장에 대한 프로그램 코드에서 요소 및 관계를 �
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>만들려는 요소의 소유자를 가져옵니다.
  모델은 단일 트리를 구성하므로 모든 항목에는 모델 루트를 제외한 하나의 소유자가 포함됩니다. 모델 루트는 `IModel` 형식인 `IPackage` 형식입니다.
 
- 사용자의 현재 다이어그램과 같은 특정 다이어그램에 표시될 요소를 만들고 있으면 대개 해당 다이어그램에 연결된 패키지에서 요소를 만들어야 합니다. 예를 들면,
+ 사용자의 현재 다이어그램과 같은 특정 다이어그램에 표시될 요소를 만들고 있으면 대개 해당 다이어그램에 연결된 패키지에서 요소를 만들어야 합니다. 예를 들면 다음과 같습니다.
 
 ```
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
@@ -43,7 +43,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 
  이 표에서는 일반적인 모델 요소의 소유권을 간략히 설명합니다.
 
-|만들 요소|Owner|
+|만들 요소|소유자|
 |---------------------------|-----------|
 |`IActor, IUseCase, IComponent, IClass, IInterface, IEnumeration`<br /><br /> `IActivity, IInteraction`|`IPackage, IModel`|
 |`IAttribute, IOperation`|`IClass, IInterface`|
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>소유자에 대해 Create 메서드 호출
- 메서드 이름은 `Create`*OwnedType* `()` 형식입니다. 예를 들면,
+ 메서드 이름의 형식은 `Create` *OwnedType* `()` 입니다. 예를 들면 다음과 같습니다.
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
@@ -68,7 +68,7 @@ IUseCase usecase1 = linkedPackage.CreateUseCase();
 usecase1.Name = "user logs in";
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
 
 3. 이름과 같은 관계의 속성을 설정합니다.
 
-     예를 들면,
+     예를 들면 다음과 같습니다.
 
     ```
     IAssociation association = subject.Package.CreateAssociation(subject, observer);
     association .Name = "Observes";
     ```
 
-4. 관계의 각 끝에 대한 속성을 설정합니다. 항상 `MemberEnds` 두 개가 있습니다. 예를 들면,
+4. 관계의 각 끝에 대한 속성을 설정합니다. 항상 `MemberEnds` 두 개가 있습니다. 예를 들면 다음과 같습니다.
 
     ```
     association .MemberEnds[0].Name = "subject";   // role name
@@ -129,5 +129,5 @@ anElement.Delete();
 
 - 다이어그램에서 요소를 나타낸 모든 모양도 삭제됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [다이어그램에 uml 모델 표시](../modeling/display-a-uml-model-on-diagrams.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c17564c992f4c8855d8a96165975a5d0e132755c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547210"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-메시지 유형 및 이유를 지정합니다.  
+메시지 유형 및 이유를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,36 +51,36 @@ public enum enum_MESSAGETYPE { 
   
 ## <a name="members"></a>멤버  
  MT_OUTPUTSTRING  
- 출력 창에 메시지를 보낼 수 해야 나타냅니다. 이 상호 배타적인에서 `MT_MESSAGEBOX`합니다.  
+ 메시지를 출력 창으로 보내야 함을 나타냅니다. 이는와 함께 사용할 수 없습니다 `MT_MESSAGEBOX` .  
   
  MT_MESSAGEBOX  
- 메시지를 메시지 상자에 표시 됨을 나타냅니다. 이 상호 배타적인에서 `MT_OUTPUTSTRING`합니다.  
+ 메시지 상자에 메시지를 표시 해야 함을 나타냅니다. 이는와 함께 사용할 수 없습니다 `MT_OUTPUTSTRING` .  
   
  MT_TYPE_MASK  
- 대상에 메시지를 격리 하는 마스크 값입니다.  
+ 메시지의 대상을 격리할 마스크 값입니다.  
   
  MT_REASON_EXCEPTION  
- 예외 결과로 메시지 상자를 표시 되는 것을 나타냅니다. 이 상호 배타적인에서 `MT_REASON_TRACEPOINT`합니다.  
+ 메시지 상자가 예외의 결과로 표시 됨을 나타냅니다. 이는와 함께 사용할 수 없습니다 `MT_REASON_TRACEPOINT` .  
   
  MT_REASON_TRACEPOINT  
- 추적점에 도달 하는 결과로 메시지 상자를 표시 되는 것을 나타냅니다. 이 상호 배타적으로 `MT_REASON_EXCEPTION`입니다.  
+ 추적점을 적중 한 결과로 메시지 상자가 표시 됨을 나타냅니다. 이는와 함께 사용할 수 없습니다 `MT_REASON_EXCEPTION` .  
   
  MT_REASON_MASK  
- 표시 되는 메시지에 대 한 이유를 격리 하는 마스크 값입니다.  
+ 표시 되는 메시지의 원인을 격리 하는 마스크 값입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값이 반환 된 [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) 하 고 [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) 메서드.  
+ 이러한 값은 [Getmessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) 및 [getmessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) 메서드에서 반환 됩니다.  
   
- 비트를 사용 하 여 출력 대상 값 중 하나를 사용 하 여 결합할 수 이유 값 중 하나로 `OR`합니다.  
+ 이유 값 중 하나를 비트를 사용 하 여 출력 대상 값 중 하나로 결합할 수 있습니다 `OR` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)   
  [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

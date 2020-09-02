@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646141"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>VS 확장명에서 텍스트 변형 호출
@@ -140,8 +140,8 @@ Sample text.
  <xref:System.MarshalByRefObject>에서 파생되는 매개 변수 클래스를 사용하여 텍스트 템플릿의 값을 전달할 수 있습니다.
 
 ## <a name="related-topics"></a>관련 항목
- 전처리 된 텍스트 템플릿에서 텍스트를 생성 하려면: 생성 된 클래스의 `TransformText()` 메서드를 호출 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+ 전처리 된 텍스트 템플릿에서 텍스트를 생성 하려면: 생성 된 `TransformText()` 클래스의 메서드를 호출 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
 
- @No__t_0 확장 외부에서 텍스트를 생성 하려면: 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)를 참조 하세요.
+ 확장 외부에서 텍스트를 생성 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] : 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)를 참조 하세요.
 
  나중에 컴파일 및 실행할 수 있는 소스 코드를 생성 하려면 [Itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))의 [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) 메서드를 호출 합니다.

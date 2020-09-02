@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646820"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio의 동기화된 설정
@@ -44,7 +44,7 @@ ms.locfileid: "72646820"
 
 - XAML 디자이너의 옵션 페이지의 모든 설정
 
-- 사용자 정의 명령 별칭. 명령 별칭을 정의하는 방법에 대한 자세한 내용은 [Visual Studio 명령 별칭](../ide/reference/visual-studio-command-aliases.md)을 참조하세요.
+- 사용자 정의 명령 별칭. 명령 별칭을 정의 하는 방법에 대 한 자세한 내용은 [Visual Studio 명령 별칭](../ide/reference/visual-studio-command-aliases.md)을 참조 하세요.
 
 - **창 &#124; 창 레이아웃 관리** 페이지의 사용자 정의 창 레이아웃
 
@@ -57,5 +57,5 @@ ms.locfileid: "72646820"
 > [!WARNING]
 > Visual Studio 2013과 Visual Studio 2015 간에 설정이 동기화되지 않습니다. Visual Studio 2015를 처음 열 때 Visual Studio 2013의 설정이 마이그레이션되지만 그 후 Visual Studio 2013으로 다시 마이그레이션할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157608"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
@@ -60,7 +60,7 @@ ms.locfileid: "68157608"
   
   대상은 빌드의 후속 대상이 종속되더라도 단일 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
   
-  대상 빌드 순서에 대한 세부 내용 및 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.  
+  대상 빌드 순서에 대 한 자세한 내용 및 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조 하세요.  
   
 ## <a name="target-batching"></a>대상 일괄 처리  
  대상 요소에는 %(메타데이터) 형식에서 메타데이터를 지정하는 `Outputs` 특성이 있을 수 있습니다. 이 경우 MSBuild는 해당 메타데이터 값을 가진 항목을 그룹화 또는 "일괄 처리"하여 각 고유 메타데이터 값에 대해 한 번씩 대상을 실행합니다. 예를 들면 다음과 같습니다.  
@@ -98,6 +98,6 @@ Reference: 4.0
   
  모든 출력 항목이 최신 상태인 경우 MSBuild는 대상을 건너뜁니다. 이로 인해 빌드 속도가 크게 향상됩니다. 이를 대상의 증분 빌드라고 합니다. 일부 파일만 최신 상태인 경우 MSBuild는 최신 항목 없이 대상을 실행합니다. 이를 대상의 부분 증분 빌드라고 합니다. 자세한 내용은 [증분 빌드](../msbuild/incremental-builds.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
  [방법: 여러 프로젝트 파일에서 동일한 대상 사용](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

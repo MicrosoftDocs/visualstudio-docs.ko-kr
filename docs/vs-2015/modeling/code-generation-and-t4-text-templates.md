@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f34422dfd47efdce9bf837f923da0e139a13398
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667914"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
@@ -44,7 +44,7 @@ ms.locfileid: "72667914"
 
  또한 템플릿에는 프로그램 코드 조각이 포함됩니다. 이러한 조각을 사용하여 텍스트 섹션을 반복하고, 조건부 섹션을 만들고, 애플리케이션의 데이터를 표시할 수 있습니다.
 
- 출력을 생성하기 위해 애플리케이션은 템플릿에 의해 생성된 함수를 호출합니다. 예를 들면,
+ 출력을 생성하기 위해 애플리케이션은 템플릿에 의해 생성된 함수를 호출합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
@@ -97,12 +97,12 @@ namespace Fabrikam.FirstJob
 
  텍스트 템플릿 변환 기능을 *T4*라고 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md) 텍스트 파일을 생성 하는 응용 프로그램에서 미리 컴파일된 텍스트 템플릿을 통해 쉽게 텍스트를 정의할 수 있습니다. 그러나 런타임에 변경되는 텍스트 템플릿에는 이 방법을 사용할 수 없습니다.
 
  [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md) 모델에서 코드 및 기타 리소스를 생성 하면 모델을 업데이트 하 여 응용 프로그램을 업데이트할 수 있습니다.
 
- [빌드 프로세스의 코드 생성](../modeling/code-generation-in-a-build-process.md) @No__t_1 시각화 및 모델링 SDK를 설치한 경우 생성 된 소프트웨어가 모델의 변경 내용으로 최신 상태를 유지 하도록 할 수 있습니다.
+ [빌드 프로세스의 코드 생성](../modeling/code-generation-in-a-build-process.md) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시각화 및 모델링 SDK를 설치한 경우 생성 된 소프트웨어가 모델의 변경 내용으로 최신 상태를 유지 하도록 할 수 있습니다.
 
  [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md) 텍스트 템플릿 파일의 구문입니다.
 
@@ -114,5 +114,5 @@ namespace Fabrikam.FirstJob
 
  [T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md) 고유한 데이터 원본에 대 한 지시문 프로세서 및 사용자 지정 템플릿 호스트를 작성 하는 방법입니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인 특정 언어에서 코드를 생성 하](../modeling/generating-code-from-a-domain-specific-language.md) [는 UML 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md)

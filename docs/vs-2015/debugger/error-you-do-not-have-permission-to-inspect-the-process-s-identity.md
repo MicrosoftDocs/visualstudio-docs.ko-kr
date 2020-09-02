@@ -1,5 +1,5 @@
 ---
-title: '오류: 프로세스를 검사할 수 있는 권한이 없습니다&#39;s identity | Microsoft Docs'
+title: '오류: 프로세스의 ID를 검사할 수 있는 권한이 없음 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157514"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>오류: 프로세스를 검사할 수 있는 권한이 없습니다&#39;s identity
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>오류: 프로세스의 ID를 검사할 수 있는 권한이 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 프로세스의 ID를 검사할 수 있는 권한이 없습니다. 시스템의 구성에 문제가 있는 것 같습니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "68157514"
   
 6. **서비스** 목록에서 **터미널 서비스**를 마우스 오른쪽 단추로 클릭한 다음, **속성**을 선택합니다.  
   
-7. 에 **Terminal Services 속성** 창으로 돌아가서 합니다 **일반** 탭 및 설정 **시작 유형** 에 **수동**합니다.  
+7. **터미널 서비스 속성** 창의 **일반** 탭으로 이동하고 **시작 유형**을 **수동**으로 설정합니다.  
   
 8. **확인**을 클릭합니다.  
   
@@ -66,5 +66,5 @@ ms.locfileid: "68157514"
   
 5. **확인**을 클릭합니다.  
   
-## <a name="see-also"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -12,19 +12,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186390"
 ---
 # <a name="tool-window-display-configuration"></a>도구 창 표시 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPackage는 도구 창, 기본 위치, 크기, 도킹 스타일 및 다른 표시 유형 정보를 등록 하는 경우 옵션 값에 지정 됩니다. 도구 창 등록에 대 한 자세한 내용은 참조 하세요. [레지스트리에서 Windows 도구](../extensibility/tool-windows-in-the-registry.md)  
+VSPackage가 도구 창을 등록 하면 기본 위치, 크기, 도킹 스타일 및 기타 표시 유형 정보가 선택적 값에 지정 됩니다. 도구 창 등록에 대 한 자세한 내용은 [레지스트리의 도구 창](../extensibility/tool-windows-in-the-registry.md) 을 참조 하세요.  
   
-## <a name="window-display-information"></a>정보 창 표시  
- 도구 창의 기본 표시 구성 옵션 값에 최대 6 개에 저장 됩니다.  
+## <a name="window-display-information"></a>창 표시 정보  
+ 도구 창의 기본 표시 구성은 최대 6 개의 선택적 값에 저장 됩니다.  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -37,19 +37,19 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|이름|형식|보기|설명|  
+|Name|형식|데이터|Description|  
 |----------|----------|----------|-----------------|  
-|이름|REG_SZ|"짧은 이름"|도구 창을 설명 하는 짧은 이름입니다. 레지스트리에서 참조용 으로만 사용 합니다.|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|4 개의 쉼표로 구분 된 값입니다. X1, Y1는 도구 창의 왼쪽 위 모퉁이의 좌표입니다. X2 Y2은 오른쪽 아래 모퉁이의 좌표입니다. 모든 값은 화면 좌표입니다.|  
-|스타일|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "연결"<br /><br /> "탭"<br /><br /> "AlwaysFloat"|도구 창의 상태를 표시 하는 초기를 지정 하는 키워드입니다.<br /><br /> "MDI" = MDI 창을 사용 하 여 도킹 합니다.<br /><br /> "부동" 부동 =.<br /><br /> "연결" = 다른 창 (창 항목에 지정 됨)를 사용 하 여 연결 합니다.<br /><br /> "탭" = 다른 도구 창을 사용 하 여 결합 합니다.<br /><br /> "AlwaysFloat" = 도킹 될 수 없습니다.<br /><br /> 자세한 내용은 아래 의견 섹션을 참조 하세요.|  
-|창|REG_SZ|*\<GUID>*|GUID는 도구 창 수 연결 되거나 탭 창입니다. GUID는 고유한 창 중 하나 또는 창 중 하나에 속할 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
-|방향|REG_SZ|"왼쪽"<br /><br /> "오른쪽"<br /><br /> "Top"<br /><br /> "아래쪽"|아래 설명 섹션을 참조 하세요.|  
-|DontForceCreate|REG_DWORD|0 또는 1|이 항목은 있는 0이 아닌 값을 창 로드 되었지만 즉시 표시 됩니다.|  
+|Name|REG_SZ|"짧은 이름 이동"|도구 창을 설명 하는 짧은 이름입니다. 레지스트리의 참조에만 사용 됩니다.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|쉼표로 구분 된 네 개의 값입니다. X1, Y1은 도구 창의 왼쪽 위 모퉁이에 대 한 좌표입니다. X2, Y2는 오른쪽 아래 모퉁이의 좌표입니다. 모든 값은 화면 좌표에 있습니다.|  
+|스타일|REG_SZ|M<br /><br /> F<br /><br /> #B0<br /><br /> 탭<br /><br /> "AlwaysFloat"|도구 창의 초기 표시 상태를 지정 하는 키워드입니다.<br /><br /> "MDI" = MDI 창에 도킹 되었습니다.<br /><br /> "Float" = 부동 소수점입니다.<br /><br /> "연결 됨" = 다른 창 (창 항목에 지정 됨)과 연결 되어 있습니다.<br /><br /> "탭" = 다른 도구 창과 결합 되었습니다.<br /><br /> "AlwaysFloat" =를 고정할 수 없습니다.<br /><br /> 자세한 내용은 아래의 설명 섹션을 참조 하세요.|  
+|시간 범위|REG_SZ|*\<GUID>*|도구 창을 연결 하거나 탭 할 수 있는 창의 GUID입니다. GUID는 사용자 고유의 창이 나 IDE의 창 중 하나에 속할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|방향|REG_SZ|비어<br /><br /> 오른쪽<br /><br /> 왼쪽<br /><br /> 하위별|아래의 설명 섹션을 참조 하세요.|  
+|DontForceCreate|REG_DWORD|0 또는 1|이 항목이 있고 해당 값이 0이 아니면 창이 로드 되지만 즉시 표시 되지 않습니다.|  
   
-### <a name="comments"></a>주석  
- 방향 항목 도구 창 제목 표시줄 두 번 클릭할 때 도킹 하는 있는 위치를 정의 합니다. 창 항목에 지정 된 창의 상대적 위치가입니다. 스타일 항목을 "연결"로 설정 하면 "왼쪽", "오른쪽", "Top" 또는 "아래쪽" 방향 항목 수 있습니다. 스타일 항목 "탭", 방향을 항목 유지할 수 있습니다"" 또는 "오른쪽" 이며 탭은 추가 하는 위치를 지정 합니다. 스타일 항목을 "고정" 하는 경우 먼저 도구 창을 부동 합니다. 제목 표시줄 두 번 클릭할 때 방향 및 창 항목에 적용 하 고 창 "탭" 스타일을 사용 합니다. "AlwaysFloat" 스타일 항목을 사용 하는 경우 도구 창을 고정할 수 없습니다. "MDI" 스타일 항목을 사용 하는 경우 도구 창이 MDI 영역에 연결 하 고 창 항목 무시 됩니다.  
+### <a name="comments"></a>의견  
+ 방향 항목은 제목 표시줄을 두 번 클릭할 때 도구 창이 도킹 하는 위치를 정의 합니다. 위치는 창 항목에 지정 된 기간을 기준으로 합니다. 스타일 항목이 "연결 됨"으로 설정 된 경우 방향 항목은 "왼쪽", "오른쪽", "위쪽" 또는 "아래쪽"이 될 수 있습니다. 스타일 항목이 "탭" 인 경우 방향 항목은 "왼쪽" 또는 "오른쪽" 일 수 있으며 탭이 추가 되는 위치를 지정 합니다. 스타일 항목이 "Float" 이면 도구 창이 먼저 배치 됩니다. 제목 표시줄을 두 번 클릭 하면 방향 및 창 항목이 적용 되 고 창에는 "탭" 스타일이 사용 됩니다. 스타일 항목이 "AlwaysFloat" 인 경우 도구 창을 도킹할 수 없습니다. 스타일 항목이 "MDI" 인 경우 도구 창은 MDI 영역에 연결 되 고 창 항목은 무시 됩니다.  
   
-### <a name="example"></a>예제  
+### <a name="example"></a>예  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -68,8 +68,8 @@ HKEY_LOCAL_MACHINE\
               Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
 ```  
   
-## <a name="tool-window-visibility"></a>도구 창 표시  
- 선택적 가시성 하위 키 값에는 도구 창의 표시 여부 설정을 결정합니다. 창의 표시 해야 하는 명령의 Guid를 저장 하는 값의 이름은 사용 됩니다. 명령이 실행 되는 경우 IDE 도구 창을 생성 되어 표시할 보장 합니다.  
+## <a name="tool-window-visibility"></a>도구 창 표시 유형  
+ 선택적인 표시 하위 키의 값에 따라 도구 창의 표시 유형 설정이 결정 됩니다. 값의 이름은 창의 표시 유형이 필요한 명령의 Guid를 저장 하는 데 사용 됩니다. 명령이 실행 되는 경우 IDE는 도구 창이 만들어지고 표시 되도록 합니다.  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -86,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|이름|형식|보기|설명|  
+|Name|형식|데이터|Description|  
 |----------|----------|----------|-----------------|  
 |(기본값)|REG_SZ|없음|비워 둡니다.|  
-|*\<GUID>*|REG_DWORD 또는 REG_SZ|0 또는 설명 문자열입니다.|선택 사항입니다. 항목의 이름에는 가시성 요구 명령의 GUID 여야 합니다. 방금 값 정보를 제공 하는 문자열을 포함합니다. 값은 일반적으로 `reg_dword` 0으로 설정 합니다.|  
+|*\<GUID>*|REG_DWORD 또는 REG_SZ|0 또는 설명이 포함 된 문자열입니다.|선택 사항입니다. 항목의 이름은 표시 유형이 필요한 명령의 GUID 여야 합니다. 값은 정보 문자열을 포함 합니다. 일반적으로이 값은 `reg_dword` 0으로 설정 된입니다.|  
   
 ### <a name="example"></a>예제  
   
@@ -108,5 +108,5 @@ HKEY_LOCAL_MACHINE\
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
   
-## <a name="see-also"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
  [VSPackage Essentials](../misc/vspackage-essentials.md)

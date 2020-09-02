@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187010"
 ---
 # <a name="choose-element-msbuild"></a>Choose 요소(MSBuild)
@@ -59,16 +59,16 @@ ms.locfileid: "68187010"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|선택적 요소입니다.<br /><br /> 모든 `When` 요소의 조건이 `false`로 평가될 경우 평가할 코드 `PropertyGroup` 및 `ItemGroup` 요소의 블록을 지정합니다. `Choose` 요소에 0개 이상의 `Otherwise` 요소가 있을 수 있으며 마지막 요소여야 합니다.|  
-|[When](../msbuild/when-element-msbuild.md)|필수적 요소입니다.<br /><br /> `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다. `Choose` 요소에는 `When` 요소가 하나 이상 있을 수 있습니다.|  
+|[그렇지](../msbuild/otherwise-element-msbuild.md)|선택적 요소입니다.<br /><br /> 모든 `When` 요소의 조건이 `false`로 평가될 경우 평가할 코드 `PropertyGroup` 및 `ItemGroup` 요소의 블록을 지정합니다. `Choose` 요소에 0개 이상의 `Otherwise` 요소가 있을 수 있으며 마지막 요소여야 합니다.|  
+|[클릭할](../msbuild/when-element-msbuild.md)|필수적 요소입니다.<br /><br /> `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다. `Choose` 요소에는 `When` 요소가 하나 이상 있을 수 있습니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|모든 `When` 요소가 `false`로 평가될 경우 실행할 코드 블록을 지정합니다.|  
-|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
-|[When](../msbuild/when-element-msbuild.md)|`Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.|  
+|[그렇지](../msbuild/otherwise-element-msbuild.md)|모든 `When` 요소가 `false`로 평가될 경우 실행할 코드 블록을 지정합니다.|  
+|[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
+|[클릭할](../msbuild/when-element-msbuild.md)|`Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.  
@@ -121,6 +121,6 @@ ms.locfileid: "68187010"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [조건부 구문](../msbuild/msbuild-conditional-constructs.md)   
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
