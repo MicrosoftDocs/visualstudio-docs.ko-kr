@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f7192eb7b2fa6d8bc886c0e601788ecba8eebcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153504"
 ---
-# <a name="bpflags90"></a>BP_FLAGS90
+# <a name="bp_flags90"></a>BP_FLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-선택적 플래그에 대 한 유효한 값을 열거합니다. 중단점을 설정 하는 경우 추가 정보를 지정 하는 선택적 플래그를 사용할 수 있습니다. 이 열거형을 확장 합니다 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 열거형입니다.  
+선택적 플래그의 유효한 값을 열거 합니다. 선택적 플래그는 중단점을 설정할 때 추가 정보를 지정 하는 데 사용할 수 있습니다. 이 열거형은 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 열거형을 확장 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,21 +53,21 @@ public enum enum_BP_FLAGS90
   
 #### <a name="parameters"></a>매개 변수  
  BP90_FLAG_NONE  
- 중단점 플래그가 지정합니다.  
+ 중단점 플래그를 지정 하지 않습니다.  
   
  BP90_FLAG_MAP_DOCPOSITION  
- 디버그 엔진 (DE) 문서 위치를 사용 하 여 중단점을 매핑하는 것을 지정 합니다. 스크립트 기반 소스 파일 등 ASP Active Server Pages ()에서 설정 된 중단점에만 적용 됩니다.  
+ 디버그 엔진 (DE)이 문서 위치를 사용 하 여 중단점을 매핑하도록 지정 합니다. 이는 ASP (Active Server 페이지)와 같은 스크립트 지향 소스 파일에 설정 된 중단점에만 적용 됩니다.  
   
  BP90_FLAG_DONT_STOP  
- 중단점 디버그 엔진에 의해 처리 되어야 한다는 지정 디버그 엔진 궁극적으로 중지 해야 함을 하지 있습니다. 즉, 한 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 이벤트 개체 보내지 않아야 합니다. 이 플래그는 추적 지점과 기본적으로 사용 하도록 설계 되었습니다.  
+ 디버그 엔진에서 중단점을 처리 해야 하지만 디버그 엔진이 궁극적으로이를 중지 해서는 안 됨을 지정 합니다. 즉, [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 이벤트 개체를 전송 해서는 안 됩니다. 이 플래그는 주로 추적 지점과 함께 사용 하도록 설계 되었습니다.  
   
  BP90_FLAG_TRACEPOINT_CONTINUE  
- 네이티브 디버그 엔진 단계별 실행 상태를 지워야 하는지 여부를 결정 하기 위해 사용 합니다. BP90_FLAG_DONT_STOP 추적 지점 매크로 실행 하는 경우 설정 되어 있지 않으므로 BP90_FLAG_DONT_STOP에서 다릅니다.  
+ 네이티브 디버그 엔진에서 단계별 상태를 지워야 하는지 여부를 확인 하는 데 사용 됩니다. 추적 지점에서 매크로를 실행 하는 경우 BP90_FLAG_DONT_STOP 설정 되지 않으므로 BP90_FLAG_DONT_STOP와 다릅니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Msdbg90.h  
+ 헤더: Msdbg90  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

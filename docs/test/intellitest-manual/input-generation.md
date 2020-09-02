@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306994"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315202"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>동적 기호 실행을 사용하여 입력 생성
 

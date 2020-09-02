@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816646"
 ---
 # <a name="expected-constant"></a>상수가 필요합니다.
@@ -30,6 +30,6 @@ ms.locfileid: "85816646"
   
 - 변수를 조건부 컴파일 변수로 바꿉니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
  [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)

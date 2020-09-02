@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1d60090ca16907e16bb58970d793124c5bb2dec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665953"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>방법: O/R 디자이너에서 생성된 코드 확장
@@ -27,9 +27,9 @@ ms.locfileid: "72665953"
 
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Partial 클래스를 만들고 엔터티 클래스에 코드를 추가하려면
 
-1. @No__t_1에서 새 LINQ to SQL 클래스 파일 ( **.dbml** 파일)을 열거나 만듭니다. **솔루션 탐색기** /**데이터베이스 탐색기**에서 **.dbml** 파일을 두 번 클릭 합니다.
+1. 에서 새 LINQ to SQL 클래스 파일 (**.dbml** 파일)을 열거나 만듭니다 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . ( **솔루션 탐색기** **.dbml** / 에서 .dbml 파일을 두 번 클릭 합니다. **데이터베이스 탐색기**)
 
-2. @No__t_0에서 유효성 검사를 추가 하려는 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+2. 에서 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 유효성 검사를 추가 하려는 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
 
      선택한 엔터티 클래스의 partial 클래스와 함께 코드 편집기가 열립니다.
 
@@ -39,13 +39,13 @@ ms.locfileid: "72665953"
 
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Partial 클래스를 만들고 DataContext에 코드를 추가하려면
 
-1. @No__t_1에서 새 LINQ to SQL 클래스 파일 ( **.dbml** 파일)을 열거나 만듭니다. **솔루션 탐색기** /**데이터베이스 탐색기**에서 **.dbml** 파일을 두 번 클릭 합니다.
+1. 에서 새 LINQ to SQL 클래스 파일 (**.dbml** 파일)을 열거나 만듭니다 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . ( **솔루션 탐색기** **.dbml** / 에서 .dbml 파일을 두 번 클릭 합니다. **데이터베이스 탐색기**)
 
-2. @No__t_0에서 디자이너의 빈 영역을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+2. 에서 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 디자이너의 빈 영역을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
 
      DataContext의 partial 클래스와 함께 코드 편집기가 열립니다.
 
 3. DataContext의 partial 클래스 선언에 사용자 코드를 추가합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [연습: LINQ to SQL 클래스 만들기 (O-R 디자이너)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [연습: 엔터티 클래스에 유효성 검사 추가](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)

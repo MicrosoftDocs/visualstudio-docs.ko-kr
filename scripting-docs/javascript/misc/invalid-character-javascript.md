@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816945"
 ---
 # <a name="invalid-character-javascript"></a>잘못된 문자입니다.(JavaScript)
@@ -34,7 +34,7 @@ ms.locfileid: "85816945"
   
 - 언어 정의의 일부가 아닌 문자를 사용 하지 마십시오 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [변수](../../javascript/variables-javascript.md)   
  [특수 문자](../../javascript/advanced/special-characters-javascript.md)   
  [데이터 형식](../../javascript/data-types-javascript.md)

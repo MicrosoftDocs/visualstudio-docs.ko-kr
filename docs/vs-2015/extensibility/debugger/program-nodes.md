@@ -1,5 +1,5 @@
 ---
-title: 노드 프로그램 | Microsoft Docs
+title: 프로그램 노드 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,30 +14,30 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a06be4ef0a69ec173f171ba202f1f479448b1ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153654"
 ---
 # <a name="program-nodes"></a>프로그램 노드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-디버거 아키텍처 측면을 **프로그램 노드**:  
+디버거 아키텍처 측면에서 **프로그램 노드**는 다음과 같습니다.  
   
-- 프로그램의 간단한 설명이입니다.  
+- 은 프로그램에 대 한 간단한 설명입니다.  
   
-- 자체 및 프로세스에서 실행 되 고에서 분리 하 고 있는 경우 생성 된 디버그 엔진 (DE) 설명에 첨부할 수를 식별할 수 있습니다.  
+- 는 자신 및 프로세스가 실행 되 고 있는 프로세스를 식별 하 고, 연결 하 고, 분리 하 고,이를 만든 디버그 엔진 (있는 경우)을 설명할 수 있습니다.  
   
-- 로 표시 됩니다는 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스를 일반적으로 DE 또는 포트에 의해 만들어집니다. 프로그램 노드는 호출 하 여 포트를 추가할 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)합니다. 프로그램 노드 포트에 추가 되 면이 프로그램 노드가 나타내는 프로그램을 포함 하는 프로세스에 추가 됩니다.  
+- 는 일반적으로 DE 또는 포트에서 만든 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스로 표시 됩니다. 프로그램 노드는 [add프로그래밍할 node](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)를 호출 하 여 포트에 추가 됩니다. 프로그램 노드는 포트에 추가 될 때이 프로그램 노드가 나타내는 프로그램을 포함 하는 프로세스에 추가 됩니다.  
   
-  디버그 패키지의 구현에 따라 디버그 세션 시작 된 후에 잠시 프로그램 노드는 해당 프로그램을 만드는 사용 됩니다. 해당 프로그램에 대 한 프로세스를 쿼리하면 프로그램 열거 되지만 프로그램 노드마다 하나입니다.  
+  디버그 세션이 시작 된 후에는 디버그 패키지의 구현에 따라 프로그램 노드를 사용 하 여 해당 프로그램을 만듭니다. 프로그램에 대 한 프로세스를 쿼리하면 프로그램이 각 프로그램 노드에 대해 하나씩 열거 됩니다.  
   
-  프로그램에 연결 된 전에 IDE는 프로그램의 간단한 설명만을 요구 합니다. 프로그램 노드에서이 정보를 얻을 수 있습니다. 프로그램에 연결 된 후 IDE는 프로그램에서 실행 중인 모든 스레드의 목록 등의 자세한 정보를 표시 해야 합니다. 이 정보는 프로그램 자체에서 가져옵니다.  
+  프로그램이에 연결 되기 전에는 IDE에 프로그램에 대 한 간단한 설명만 필요 합니다. 이 정보는 프로그램 노드에서 가져올 수 있습니다. 프로그램이에 연결 되 면 IDE는 프로그램에서 실행 중인 모든 스레드의 목록과 같은 자세한 정보를 표시 해야 합니다. 이 정보는 프로그램 자체에서 가져옵니다.  
   
-## <a name="see-also"></a>참고 항목  
- [프로그램](../../extensibility/debugger/programs.md)   
- [프로세스](../../extensibility/debugger/processes.md)   
+## <a name="see-also"></a>관련 항목  
+ [프로그램인](../../extensibility/debugger/programs.md)   
+ [프로세스만](../../extensibility/debugger/processes.md)   
  [디버그 엔진](../../extensibility/debugger/debug-engine.md)   
  [디버거 개념](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   

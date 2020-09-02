@@ -14,42 +14,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5b9c9f85ffbf4eed2fdc305a64bd3f32822dacd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682783"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-DIA 데이터 원본 테이블을 열거합니다.  
+DIA 데이터 원본 테이블을 열거 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaTable : IEnumUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDiaTable`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDiaTable` .  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|검색 된 [IEnumVARIANT 인터페이스](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) 이 열거자의 버전입니다.|  
-|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|테이블의 이름을 검색합니다.|  
-|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|테이블에서 항목을 검색합니다.|  
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|특정 항목 인덱스에 대 한 참조를 검색합니다.|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|이 열거자의 [IEnumVARIANT 인터페이스](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) 버전을 검색 합니다.|  
+|[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|테이블의 이름을 검색 합니다.|  
+|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|테이블의 항목 수를 검색 합니다.|  
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|특정 엔트리 인덱스에 대 한 참조를 검색 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 인터페이스를 구현 하는 `IEnumUnknown` Microsoft.VisualStudio.OLE.Interop 네임 스페이스에서 열거형 메서드. `IEnumUnknown` 열거형 인터페이스 보다 목차를 반복 하기 위한 훨씬 더 효율적입니다 합니다 [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md) 하 고 [idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md) 메서드.  
+ 이 인터페이스는 `IEnumUnknown` VisualStudio 네임 스페이스의 열거형 메서드를 구현 합니다. `IEnumUnknown`열거형 인터페이스는 [IDiaTable:: Get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) 및 [IDiaTable:: Item](../../debugger/debug-interface-access/idiatable-item.md) 메서드를 제외 하 고 테이블 콘텐츠를 반복 하는 데 훨씬 더 효율적입니다.  
   
- 해석은 합니다 `IUnknown` 인터페이스 중 하나에서 반환 된를 `IDiaTable::Item` 메서드 또는 `Next` (Microsoft.VisualStudio.OLE.Interop 네임 스페이스)에서 메서드는 테이블의 유형에 따라 달라 집니다. 예를 들어 경우는 `IDiaTable` 인터페이스 삽입된 원본 목록을 나타냅니다는 `IUnknown` 인터페이스를 쿼리해야 합니다 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스.  
+ `IUnknown` `IDiaTable::Item` 메서드 또는 `Next` 메서드 (VisualStudio 네임 스페이스)에서 반환 된 인터페이스의 해석은 테이블의 형식에 따라 달라 집니다. 예를 들어 `IDiaTable` 인터페이스가 삽입 된 소스 목록을 나타내는 경우 `IUnknown` [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스에 대해 인터페이스를 쿼리해야 합니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 호출 하 여이 인터페이스를 가져올는 [idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md) 하거나 [idiaenumtables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md) 메서드.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ [IDiaEnumTables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md) 또는 [IDiaEnumTables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md) 메서드를 호출 하 여이 인터페이스를 가져옵니다.  
   
- 다음 인터페이스는 사용 하 여 구현 합니다 `IDiaTable` 인터페이스 (즉, 쿼리할 수 있습니다는 `IDiaTable` 다음 인터페이스 중 하나에 대 한 인터페이스):  
+ 다음 인터페이스는 인터페이스를 사용 하 여 구현 됩니다 `IDiaTable` . 즉, `IDiaTable` 인터페이스에서 다음 인터페이스 중 하나를 쿼리할 수 있습니다.  
   
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
@@ -65,11 +65,11 @@ IDiaTable : IEnumUnknown
   
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
-## <a name="example"></a>예제  
- 첫 번째 함수 `ShowTableNames`, 세션에 있는 모든 테이블의 이름을 표시 합니다. 두 번째 함수를 `GetTable`, 모든 지정된 된 인터페이스를 구현 하는 테이블에 대 한 테이블을 검색 합니다. 세 번째 함수 `UseTable`를 사용 하는 방법을 보여 줍니다는 `GetTable` 함수입니다.  
+## <a name="example"></a>예  
+ 첫 번째 함수인는 `ShowTableNames` 세션에 있는 모든 테이블의 이름을 표시 합니다. 두 번째 함수인는 `GetTable` 모든 테이블에서 지정 된 인터페이스를 구현 하는 테이블을 검색 합니다. 세 번째 함수인는 `UseTable` 함수를 사용 하는 방법을 보여 줍니다 `GetTable` .  
   
 > [!NOTE]
-> `CDiaBSTR` 래핑하는 클래스를 `BSTR` 인스턴스화 범위를 벗어나면 문자열이 해제를 자동으로 처리 하 고 있습니다.  
+> `CDiaBSTR` 는를 래핑하고 `BSTR` 인스턴스화가 범위를 벗어날 때 문자열 해제를 자동으로 처리 하는 클래스입니다.  
   
 ```cpp#  
 void ShowTableNames(IDiaSession *pSession)  
@@ -134,14 +134,14 @@ void UseTable(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: Dia2  
   
- 라이브러리: diaguids.lib  
+ 라이브러리: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>참고 항목  
- [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>관련 항목  
+ [인터페이스 (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [IDiaEnumTables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

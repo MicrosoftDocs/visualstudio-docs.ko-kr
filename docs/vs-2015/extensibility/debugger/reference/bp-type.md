@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a0c479182f1ff9efd4b35f2fed2de35d3536202
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153258"
 ---
-# <a name="bptype"></a>BP_TYPE
+# <a name="bp_type"></a>BP_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-중단점이 코드 위치, 데이터 위치, 여부는 다른 유형의 중단점을 지정 합니다.  
+중단점이 코드 위치에 있는지, 데이터 위치에 있는지 또는 다른 중단점 형식 인지를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,28 +47,28 @@ public enum enum_BP_TYPE { 
   
 ## <a name="members"></a>멤버  
  BPT_NONE  
- 없는 중단점 유형을 지정합니다.  
+ 중단점 형식을 지정 하지 않습니다.  
   
  BPT_CODE  
- 코드 중단점을 지정합니다.  
+ 코드 중단점을 지정 합니다.  
   
  BPT_DATA  
- 데이터 중단점을 지정합니다.  
+ 데이터 중단점을 지정 합니다.  
   
  BPT_SPECIAL  
- 코드 또는 데이터 형식이 모두 중단점을 지정 합니다. 이 형식은 사용 되지 않습니다 하며 사용할 수 없습니다.  
+ 코드와 데이터 형식이 아닌 중단점을 지정 합니다. 이 형식은 더 이상 사용 되지 않으므로 사용 하면 안 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 매개 변수로 전달 합니다 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 하 고 [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) 메서드.  
+ [Get간 pointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 및 [getto pointtype](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) 메서드에 매개 변수로 전달 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
+ [Get로 Pointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

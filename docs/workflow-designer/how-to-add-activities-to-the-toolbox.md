@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815827"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>방법: 도구 상자에 활동 추가
@@ -58,6 +58,6 @@ ms.locfileid: "85815827"
 
 6. 사용자 지정 작업은 **도구 상자** 에서 항목이 추가 되기 전에 포커스가 있던 범주 아래에 나타납니다. 예를 들어 도구 상자 항목을 추가 하기 전에 **도구 상자** 에서 **일반** 범주를 선택 하면 활동이 **일반** 범주 아래에 나타납니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)

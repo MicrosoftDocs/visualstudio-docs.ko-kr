@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9dc3436412fc75fc2879ad855a369f8207e0ae49
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816958"
 ---
 # <a name="illegal-assignment-javascript"></a>잘못된 할당입니다.(JavaScript)
@@ -28,5 +28,5 @@ ms.locfileid: "85816958"
   
 - 읽기 전용 식별자에 값을 할당 하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [대입 연산자(=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

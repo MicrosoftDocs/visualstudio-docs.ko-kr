@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68d1c0705ae7d27bf281f5d65e9385228cd36bc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153339"
 ---
-# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
+# <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-데이터 중단점 에뮬레이트 여부 또는에서 구현 된 하드웨어를 지정 합니다.  
+데이터 중단점이 하드웨어에서 에뮬레이션 되는지 또는 구현 되는지 여부를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,18 +41,18 @@ public enum enum_BP_RES_DATA_FLAGS { 
   
 ## <a name="members"></a>멤버  
  BP_RES_DATA_EMULATED  
- 데이터 중단점 에뮬레이트를 지정 합니다.  
+ 데이터 중단점을 에뮬레이션 하도록 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 사용 되는 합니다 `dwFlags` 의 멤버는 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 구조입니다.  
+ `dwFlags` [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 구조체의 멤버에 사용 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

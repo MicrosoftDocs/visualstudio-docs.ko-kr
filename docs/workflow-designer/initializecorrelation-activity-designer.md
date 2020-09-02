@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aadb526e50351c8344c8b265dca3364637d1ff0c
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875568"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 활동 디자이너
@@ -41,9 +41,9 @@ ms.locfileid: "86875568"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 이름입니다. 기본값은 InitializeCorrelation입니다.<br /><br /> 친숙 한에 기본값이 아닌 값을 사용 하는 것은 반드시 필요한 것은 아니지만 <xref:System.Activities.Activity.DisplayName%2A> 권장 됩니다.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|거짓|상관 관계에서 워크플로 활동을 연결하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|거짓|메시지를 워크플로 인스턴스와 연결하는 상관 관계 데이터의 사전입니다.<br /><br /> **상관 관계 초기화** 대화 상자를 사용 하 여를 구성할 수 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 있습니다. 이 대화 상자 사용에 대 한 자세한 내용은 [형식 컬렉션 편집기 대화 상자](../workflow-designer/type-collection-editor-dialog-box.md) 문서를 참조 하세요.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 이름입니다. 기본값은 InitializeCorrelation입니다.<br /><br /> 친숙 한에 기본값이 아닌 값을 사용 하는 것은 반드시 필요한 것은 아니지만 <xref:System.Activities.Activity.DisplayName%2A> 권장 됩니다.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|상관 관계에서 워크플로 활동을 연결하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|메시지를 워크플로 인스턴스와 연결하는 상관 관계 데이터의 사전입니다.<br /><br /> **상관 관계 초기화** 대화 상자를 사용 하 여를 구성할 수 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 있습니다. 이 대화 상자 사용에 대 한 자세한 내용은 [형식 컬렉션 편집기 대화 상자](../workflow-designer/type-collection-editor-dialog-box.md) 문서를 참조 하세요.|
 
 ## <a name="see-also"></a>추가 정보
 

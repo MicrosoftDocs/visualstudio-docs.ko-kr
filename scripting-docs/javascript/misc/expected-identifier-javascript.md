@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 71f5e4363481745887371e7d25e308b2856dc00c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816529"
 ---
 # <a name="expected-identifier-javascript"></a>식별자가 필요합니다.(JavaScript)
@@ -36,5 +36,5 @@ ms.locfileid: "85816529"
   
 - 식별자가 등호 왼쪽에 표시 되도록 식을 변경 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)

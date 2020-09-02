@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306664"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315007"
 ---
 # <a name="customizing-the-ide"></a>IDE 사용자 지정
 
@@ -72,13 +72,13 @@ Mac용 Visual Studio에서 표시되는 언어를 변경하려면 다음 이미�
 
 ## <a name="workspace-layout"></a>작업 영역 레이아웃
 
-Mac용 Visual Studio 작업 영역은 문서 주요 기능 영역(일반적으로 편집기나 디자이너 화면, 옵션 파일)을 중심으로 애플리케이션 파일 액세스 및 관리, 테스트, 디버그에 유용한 정보가 포함된 '패드'들이 부수적으로 배치되어 있습니다. 
+Mac용 Visual Studio 작업 영역은 주 문서 영역(일반적으로 편집기, 디자이너 화면 또는 옵션 파일)으로 구성되고, 애플리케이션 파일 액세스 및 관리, 테스트, 디버그에 유용한 정보를 포함하는 무료 ‘패드’로 둘러싸여 있습니다.**
 
  ![작업 영역 레이아웃](media/customizing-the-ide-image1a.png)
 
 ### <a name="viewing-and-arranging-pads"></a>패드 보기 및 정렬
 
-Mac용 Visual Studio에서 새 솔루션이나 파일을 열면 Solution Pad, 문서 개요, 오류 등 여러 가지 ‘패드’가 작업 영역에 표시됩니다. 
+Mac용 Visual Studio에서 새 솔루션이나 파일을 열면 Solution Pad, 문서 개요, 오류 등 여러 가지 ‘패드’가 작업 영역에 표시됩니다.**
 
 ![Solution Pad](media/customizing-the-ide-image2a.png)
 
@@ -132,6 +132,6 @@ Mac용 Visual Studio에서는 텍스트 편집기를 Side-by-Side로 열거나 �
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio IDE 개인 설정(Windows에서)](/visualstudio/ide/personalizing-the-visual-studio-ide)

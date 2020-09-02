@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816828"
 ---
 # <a name="invalid-replacer-argument"></a>치환 인수가 잘못되었습니다.
@@ -29,7 +29,7 @@ ms.locfileid: "85816828"
   
 - 인수를 `replacer` 함수 또는 배열로 변경 합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제의 코드에서는 `memberfilter` 가 함수 또는 배열이 아닌 개체 이기 때문에 런타임 오류가 발생 합니다.  
   
 ```JavaScript  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [JSON 개체](../../javascript/reference/json-object-javascript.md)   
  [JSON 함수](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript 런타임 오류](../../javascript/reference/javascript-run-time-errors.md)

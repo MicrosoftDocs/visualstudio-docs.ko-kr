@@ -11,10 +11,10 @@ ms.assetid: 43db03ef-ceb5-4c13-875f-90259f470cc7
 caps.latest.revision: 18
 manager: jillfra
 ms.openlocfilehash: 72eb9df3eda2535339cb7950578fd6a640a5a493
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681589"
 ---
 # <a name="installing-vspackages"></a>VSPackage 설치
@@ -27,8 +27,8 @@ ms.locfileid: "65681589"
  [Windows Installer를 사용하여 VSPackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md)  
  설치 가능한 제품으로 VSPackage를 릴리스하는 방법을 설명합니다.  
   
-## <a name="related-sections"></a>관련 단원  
- [Visual Studio SDK를 사용 하 여 테스트에 대 한 사용자 지정](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
+## <a name="related-sections"></a>관련 섹션  
+ [Visual Studio SDK를 사용하여 테스트 사용자 지정](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
  새로운 형식의 테스트를 지원하도록 [!INCLUDE[vsprvstte](../includes/vsprvstte-md.md)] 를 확장하는 방법을 설명합니다.  
   
  [Visual Studio 통합 테스트](https://msdn.microsoft.com/8d741735-7d93-46c2-ab93-01da7a0e016d)  

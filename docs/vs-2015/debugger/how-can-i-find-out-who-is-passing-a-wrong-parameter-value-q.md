@@ -1,5 +1,5 @@
 ---
-title: 무엇이 잘못된 매개 변수 값을 전달하는지 어떻게 알 수 있습니까? | Microsoft 문서
+title: 무엇이 잘못된 매개 변수 값을 전달하는지 어떻게 알 수 있습니까? | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b0787a0d700859e7728762fd7846911fcd41e369
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704546"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>무엇이 잘못된 매개 변수 값을 전달하는지 어떻게 알 수 있습니까?
@@ -44,7 +44,7 @@ ms.locfileid: "65704546"
   
 2. 마우스 오른쪽 단추로 중단점을 클릭하고 **조건**을 선택합니다.  
   
-3. **중단점 조건** 대화 상자에서 **조건** 확인란을 클릭합니다. 참조 [중단점 고급](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)합니다.  
+3. **중단점 조건** 대화 상자에서 **조건** 확인란을 클릭합니다. [고급 중단점](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)을 참조하세요.  
   
 4. 텍스트 상자에 `Var==3` 같은 식을 입력합니다. 여기서 `Var`은 잘못된 값을 포함하는 매개 변수의 이름이고 `3`은 이 매개 변수에 전달된 잘못된 값입니다.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "65704546"
   
 7. 호출 스택 창을 사용하여 호출하는 함수를 찾고 함수의 소스 코드를 탐색합니다. 자세한 내용은 [방법: 호출 스택 창 사용](../debugger/how-to-use-the-call-stack-window.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [네이티브 코드 디버깅 FAQ](../debugger/debugging-native-code-faqs.md)   
- [중단점](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+## <a name="see-also"></a>관련 항목  
+ [네이티브 코드 디버그 Faq](../debugger/debugging-native-code-faqs.md)   
+ [줄바꿈](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [네이티브 코드 디버그](../debugger/debugging-native-code.md)

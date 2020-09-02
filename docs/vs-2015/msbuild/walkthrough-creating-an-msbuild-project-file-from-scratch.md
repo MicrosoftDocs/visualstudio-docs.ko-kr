@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682368"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기
@@ -56,7 +56,7 @@ ms.locfileid: "65682368"
   
 1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: \내 문서\ 또는 \바탕 화면\\).  
   
-2. **md HelloWorld**를 입력하여 \HelloWorld\\라는 하위 폴더를 만듭니다.  
+2. **md HelloWorld**를 입력하여 \HelloWorld\\ 라는 하위 폴더를 만듭니다.  
   
 3. **cd HelloWorld**를 입력하여 새 폴더로 변경합니다.  
   
@@ -173,7 +173,7 @@ ms.locfileid: "65682368"
   
 #### <a name="to-build-the-application"></a>애플리케이션을 빌드하려면  
   
-1. 명령 프롬프트에 **msbuild helloworld.csproj /t:Build**를 입력합니다.  
+1. 명령 프롬프트에서 **msbuild helloworld. .csproj/t: Build**를 입력 합니다.  
   
      그러면 Helloworld 애플리케이션을 만들기 위해 Visual C# 컴파일러를 호출하여 Helloworld 프로젝트 파일의 Build 대상이 빌드됩니다.  
   
@@ -184,7 +184,7 @@ ms.locfileid: "65682368"
 > [!NOTE]
 > 자세한 정도를 높여 빌드에 대한 자세한 정보를 볼 수 있습니다. 자세한 정도를 "자세히"로 설정하려면 명령 프롬프트에서 다음 명령 중 하나를 입력합니다.  
 >   
-> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld. .csproj/t: Build/verbosity: detailed**  
   
 ## <a name="adding-build-properties"></a>빌드 속성 추가  
  프로젝트 파일에 빌드 속성을 추가하여 빌드에 대한 제어를 강화할 수 있습니다. 이제 다음 속성을 추가합니다.  
@@ -260,11 +260,11 @@ ms.locfileid: "65682368"
   
 #### <a name="to-test-the-build-properties"></a>빌드 속성을 테스트하려면  
   
-1. 명령 프롬프트에 **msbuild helloworld.csproj /t:Build**를 입력합니다.  
+1. 명령 프롬프트에서 **msbuild helloworld. .csproj/t: Build**를 입력 합니다.  
   
      그러면 \Bin\ 폴더가 만들어진 다음 Visual C# 컴파일러가 호출되어 MSBuildSample 애플리케이션이 만들어져 \Bin\ 폴더에 배치됩니다.  
   
-2. \Bin\ 폴더가 만들어져 MSBuildSample 애플리케이션을 포함하고 있는지 확인하려면 **dir Bin**을 입력합니다.  
+2. \Bin\ 폴더가 만들어졌는지 확인 하 고 MSBuildSample 응용 프로그램이 포함 되어 있는지 확인 하려면 **Dir Bin**을 입력 합니다.  
   
 3. **Bin\MSBuildSample**을 입력하여 애플리케이션을 테스트합니다.  
   
@@ -335,31 +335,31 @@ ms.locfileid: "65682368"
   
 #### <a name="to-test-the-build-targets"></a>빌드 대상을 테스트하려면  
   
-1. 명령 프롬프트에 **msbuild helloworld.csproj /p:AssemblyName=Greetings**를 입력합니다.  
+1. 명령 프롬프트에서 **msbuild helloworld. .csproj/p: AssemblyName = 인사말**을 입력 합니다.  
   
-     **/t** 스위치를 사용하여 대상을 명시적으로 설정하지 않았으므로 MSBuild가 기본 Build 대상을 실행합니다. **/p** 스위치는 `AssemblyName` 속성을 재정의하고 이 속성에 새 값 `Greetings`를 제공합니다. 따라서 새 애플리케이션 Greetings.exe가 \Bin\ 폴더에 만들어집니다.  
+     **/T** 스위치를 사용 하 여 대상을 명시적으로 설정 하지 않았으므로 MSBuild가 기본 빌드 대상을 실행 합니다. **/P** 스위치는 속성을 재정의 `AssemblyName` 하 고이 속성에 새 값을 제공 `Greetings` 합니다. 따라서 새 애플리케이션 Greetings.exe가 \Bin\ 폴더에 만들어집니다.  
   
-2. \Bin\ 폴더에 MSBuildSample 애플리케이션과 새 Greetings 애플리케이션이 둘 다 포함되어 있는지 확인하려면 **dir Bin**을 입력합니다.  
+2. \Bin\ 폴더에 MSBuildSample 응용 프로그램과 새 인사말 응용 프로그램이 모두 포함 되어 있는지 확인 하려면 **Dir Bin**을 입력 합니다.  
   
 3. **Bin\Greetings**를 입력하여 Greetings 애플리케이션을 테스트합니다.  
   
      **Hello, world!** 메시지가 표시됩니다.  
   
-4. **msbuild helloworld.csproj /t:clean**을 입력하여 MSBuildSample 애플리케이션을 삭제합니다.  
+4. **Msbuild helloworld. .csproj/t: clean**을 입력 하 여 MSBuildSample 응용 프로그램을 삭제 합니다.  
   
      그러면 Clean 작업이 실행되어 기본 `AssemblyName` 속성값 `MSBuildSample`이 포함되어 있는 애플리케이션이 제거됩니다.  
   
-5. **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**를 입력하여 Greetings 애플리케이션을 삭제합니다.  
+5. Msbuild helloworld를 입력 하 여 인사말 응용 프로그램을 삭제 **합니다. .csproj/t: clean/p: AssemblyName = 인사말**.  
   
      그러면 Clean 작업이 실행되어 지정된 **AssemblyName** 속성값 `Greetings`가 포함되어 있는 애플리케이션이 제거됩니다.  
   
-6. 이제 \Bin\ 폴더가 비어 있는지 확인하려면 **dir Bin**을 입력합니다.  
+6. \Bin\ 폴더가 비어 있는지 확인 하려면 **Dir Bin**을 입력 합니다.  
   
 7. **msbuild**를 입력합니다.  
   
      프로젝트 파일이 지정되어 있지 않더라도 현재 폴더에 프로젝트 파일이 하나뿐이므로 MSBuild는 helloworld.csproj 파일을 빌드합니다. 따라서 MSBuildSample 애플리케이션이 \Bin\ 폴더에 만들어집니다.  
   
-     \Bin\ 폴더에 MSBuildSample 애플리케이션이 포함되어 있는지 확인하려면 **dir Bin**을 입력합니다.  
+     \Bin\ 폴더에 MSBuildSample 응용 프로그램이 포함 되어 있는지 확인 하려면 **Dir Bin**을 입력 합니다.  
   
 ## <a name="building-incrementally"></a>증분 방식으로 빌드  
  대상이 의존하는 소스 파일 또는 대상 파일이 변경된 경우에만 대상을 빌드하라고 MSBuild에 지시할 수 있습니다. MSBuild는 파일의 타임스탬프를 사용하여 파일이 변경되었는지 여부를 확인합니다.  
@@ -383,11 +383,11 @@ ms.locfileid: "65682368"
     </Target>  
     ```  
   
-2. 명령 프롬프트에서 **msbuild /v:d**를 입력하여 Build 대상을 테스트합니다.  
+2. 명령 프롬프트에서 **msbuild/v: d** 를 입력 하 여 빌드 대상을 테스트 합니다.  
   
      helloworld.csproj는 기본 프로젝트 파일이고, 해당 Build는 기본 대상이라는 사실을 기억하세요.  
   
-     **/v:d** 스위치는 빌드 프로세스에 대한 자세한 설명을 지정합니다.  
+     **/V: d** 스위치는 빌드 프로세스에 대 한 자세한 설명을 지정 합니다.  
   
      다음과 같은 줄이 표시됩니다.  
   
@@ -437,7 +437,7 @@ ms.locfileid: "65682368"
 </Project>  
 ```  
   
-### <a name="comments"></a>설명  
+### <a name="comments"></a>주석  
   
 ## <a name="example"></a>예제  
   
@@ -477,9 +477,9 @@ ms.locfileid: "65682368"
 </Project>  
 ```  
   
-## <a name="whats-next"></a>새로운 기능  
+## <a name="whats-next"></a>다음 단계  
  Visual Studio는 이 연습에 표시된 작업의 많은 부분을 자동으로 수행할 수 있습니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들고, 편집하고, 빌드하고, 테스트하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
 [MSBuild 개요](msbuild.md)  
  [MSBuild 참조](../msbuild/msbuild-reference.md)

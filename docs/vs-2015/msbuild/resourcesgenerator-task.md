@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682145"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 작업
@@ -55,7 +55,7 @@ ms.locfileid: "65682145"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)   
  [작업 참조](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   

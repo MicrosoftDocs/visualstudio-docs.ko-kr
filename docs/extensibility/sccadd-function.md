@@ -1,5 +1,5 @@
 ---
-title: SccAdd 기능 | 마이크로 소프트 문서
+title: SccAdd 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 23a6226b0d3cc2441a509c16b2e4672a766f3329
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701307"
 ---
-# <a name="sccadd-function"></a>SccAdd 기능
-이 함수는 소스 제어 시스템에 새 파일을 추가합니다.
+# <a name="sccadd-function"></a>SccAdd 함수
+이 함수는 소스 제어 시스템에 새 파일을 추가 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,66 +39,66 @@ SCCRTN SccAdd(
 ### <a name="parameters"></a>매개 변수
  pvContext
 
-【인】 소스 제어 플러그인 컨텍스트 구조입니다.
+진행 소스 제어 플러그 인 컨텍스트 구조입니다.
 
- Hwnd
+ hWnd
 
-【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
+진행 소스 제어 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.
 
- n파일
+ n
 
-【인】 배열에 지정된 대로 현재 프로젝트에 추가하도록 선택한 `lpFileNames` 파일 수입니다.
+진행 배열에 지정 된 대로 현재 프로젝트에 추가 되도록 선택한 파일 수입니다 `lpFileNames` .
 
- lpFile 이름
+ lpFileNames 이름
 
-【인】 추가할 파일의 정규화된 로컬 이름 배열입니다.
+진행 추가할 파일의 정규화 된 로컬 이름 배열입니다.
 
  lpComment
 
-【인】 추가되는 모든 파일에 적용할 주석입니다.
+진행 추가 되는 모든 파일에 적용 될 설명입니다.
 
- pf옵션
+ pfOptions
 
-【인】 파일단위로 제공되는 명령 플래그배열입니다.
+진행 파일 별로 제공 되는 명령 플래그의 배열입니다.
 
- pv옵션
+ pvOptions
 
-【인】 소스 제어 플러그인 관련 옵션.
+진행 원본 제어 플러그 인 관련 옵션입니다.
 
 ## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|SCC_OK|추가 작업이 성공했습니다.|
-|SCC_E_FILEALREADYEXISTS|선택한 파일이 이미 소스 제어하에 있습니다.|
-|SCC_E_TYPENOTSUPPORTED|파일 유형(예: 바이너리)은 소스 제어 시스템에서 지원되지 않습니다.|
-|SCC_E_OPNOTSUPPORTED|소스 제어 시스템은 이 작업을 지원하지 않습니다.|
-|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 소스 제어 시스템에 액세스하는 데 문제가 있었습니다. 다시 시도하는 것이 좋습니다.|
-|SCC_E_NOTAUTHORIZED|사용자는 이 작업을 수행할 수 없습니다.|
-|SCC_E_NONSPECIFICERROR|비특이적 오류; 추가하지 않습니다.|
-|SCC_I_OPERATIONCANCELED|작업이 완료되기 전에 취소되었습니다.|
-|SCC_I_RELOADFILE|파일 또는 프로젝트를 다시 로드해야 합니다.|
+|SCC_OK|추가 작업이 성공 했습니다.|
+|SCC_E_FILEALREADYEXISTS|선택한 파일은 이미 소스 제어에 있습니다.|
+|SCC_E_TYPENOTSUPPORTED|파일의 형식 (예: 이진)은 소스 제어 시스템에서 지원 되지 않습니다.|
+|SCC_E_OPNOTSUPPORTED|소스 제어 시스템에서이 작업을 지원 하지 않습니다.|
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 원본 제어 시스템에 액세스 하는 동안 문제가 발생 했습니다. 다시 시도 하는 것이 좋습니다.|
+|SCC_E_NOTAUTHORIZED|사용자가이 작업을 수행할 수 없습니다.|
+|SCC_E_NONSPECIFICERROR|일반 오류입니다. 추가를 수행 하지 않습니다.|
+|SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|
+|SCC_I_RELOADFILE|파일이 나 프로젝트를 다시 로드 해야 합니다.|
 |SCC_E_FILENOTEXIST|로컬 파일을 찾을 수 없습니다.|
 
 ## <a name="remarks"></a>설명
- 일반적으로 `fOptions` 여기에 배열로 `pfOptions`대체되며 파일당 `LONG` 하나의 옵션 사양이 있습니다. 이는 파일 형식이 파일마다 다를 수 있기 때문입니다.
+ 일반적인는 `fOptions` `pfOptions` 파일 마다 하나의 옵션 사양을 사용 하 여 배열에 의해 여기로 바뀝니다 `LONG` . 이는 파일 형식이 파일에 따라 다를 수 있기 때문입니다.
 
 > [!NOTE]
-> 동일한 파일에 대한 `SCC_FILETYPE_TEXT` 옵션과 `SCC_FILETYPE_BINARY` 둘 다 지정하는 것은 유효하지 않지만 둘 다 지정하는 것은 유효합니다. 둘 다 설정은 `SCC_FILETYPE_AUTO`설정과 동일하지 않습니다.
+> `SCC_FILETYPE_TEXT`동일한 파일에 대해 및 옵션을 모두 지정할 수는 없으며 `SCC_FILETYPE_BINARY` , 둘 다 지정할 수는 없습니다. 둘 다 설정 하는 것은 설정과 동일 하지 않습니다 `SCC_FILETYPE_AUTO` .이 경우 소스 제어 플러그 인에서 파일 형식을 자동으로 검색 합니다.
 
- 다음은 배열에 사용되는 플래그 `pfOptions` 목록입니다.
+ 다음은 배열에서 사용 된 플래그 목록입니다 `pfOptions` .
 
 |옵션|값|의미|
 |------------|-----------|-------------|
-|SCC_FILETYPE_AUTO|0x00|소스 제어 플러그인은 파일 형식을 검색해야 합니다.|
+|SCC_FILETYPE_AUTO|0x00|소스 제어 플러그 인에서 파일 형식을 검색 해야 합니다.|
 |SCC_FILETYPE_TEXT|0x01|ASCII 텍스트 파일을 나타냅니다.|
-|SCC_FILETYPE_BINARY|0x02|ASCII 텍스트 이외의 파일 형식을 나타냅니다.|
-|SCC_ADD_STORELATEST|0x04|파일의 최신 복사본만 저장하고 델타는 저장하지 않습니다.|
-|SCC_FILETYPE_TEXT_ANSI|0x08|파일을 ANSI 텍스트로 처리합니다.|
-|SCC_FILETYPE_UTF8|0x10|파일을 UTF8 형식으로 유니코드 텍스트로 처리합니다.|
-|SCC_FILETYPE_UTF16LE|0x20|파일을 UTF16 리틀 엔디안 형식으로 유니코드 텍스트로 처리합니다.|
-|SCC_FILETYPE_UTF16BE|0x40|파일을 UTF16 Big Endian 형식으로 유니코드 텍스트로 처리합니다.|
+|SCC_FILETYPE_BINARY|0x02|ASCII 텍스트가 아닌 파일 형식을 나타냅니다.|
+|SCC_ADD_STORELATEST|0x04|파일의 최신 복사본만 저장 하 고 델타는 저장 하지 않습니다.|
+|SCC_FILETYPE_TEXT_ANSI|0x08|는 파일을 ANSI 텍스트로 처리 합니다.|
+|SCC_FILETYPE_UTF8|0x10|는 파일을 UTF8 형식의 유니코드 텍스트로 처리 합니다.|
+|SCC_FILETYPE_UTF16LE|0x20|는 파일을 UTF16 작은 Endian 형식의 유니코드 텍스트로 처리 합니다.|
+|SCC_FILETYPE_UTF16BE|0x40|는 파일을 UTF16 Big Endian 형식의 유니코드 텍스트로 처리 합니다.|
 
-## <a name="see-also"></a>참조
-- [소스 제어 플러그인 API 기능](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>추가 정보
+- [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

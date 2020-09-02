@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816737"
 ---
 # <a name="return-statement-outside-of-function"></a>함수 외부에 'return' 문이 있습니다.
 `return`코드의 전역 범위에서 문을 사용 했습니다. `return`문은 함수 본문 내에만 표시 되어야 합니다.  
   
- 연산자를 사용 하 여 함수를 호출 하 `()` 는 것은 식입니다. 모든 식에는 값이 있습니다. `return`문은 함수에서 반환 되는 값을 지정 하는 데 사용 됩니다. 일반적인 형식은 다음과 같습니다.  
+ 연산자를 사용 하 여 함수를 호출 하 `()` 는 것은 식입니다. 모든 식에는 값이 있습니다. `return` 문은 함수에서 반환 되는 값을 지정 하는 데 사용 됩니다. 일반적인 형식은 다음과 같습니다.  
   
 ```js
   
@@ -41,7 +41,7 @@ return [ expression ];
   
 - `return`코드의 주 본문 (전역 범위)에서 문을 제거 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [return 문](../../javascript/reference/return-statement-javascript.md)   
  [Function 개체](../../javascript/reference/function-object-javascript.md)   
  [caller 속성(Function)](../../javascript/reference/caller-property-function-javascript.md)

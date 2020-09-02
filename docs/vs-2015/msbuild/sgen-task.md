@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3be3aa5426c2d1283b8b4cded51cc9c2772642ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682105"
 ---
 # <a name="sgen-task"></a>SGen 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(Sgen.exe)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6)를 참조하세요.  
+지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(Sgen.exe)를 래핑합니다. 자세한 내용은 [XML Serializer Generator Tool (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6)를 참조 하세요.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `SGen` 작업의 매개 변수에 대해 설명합니다.  
@@ -52,10 +52,10 @@ ms.locfileid: "65682105"
 |`Types`|선택적 `String[]` 매개 변수입니다.<br /><br /> serialization 코드를 생성하기 위한 특정 형식의 목록을 가져오거나 설정합니다. SGen은 해당 형식에 대해서만 serialization 코드를 생성합니다.|  
 |`UseProxyTypes`|필수 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 SGen 작업은 XML Web services 프록시 형식에 대해서만 serialization 코드를 생성합니다.|  
   
-## <a name="remarks"></a>주의  
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.  
+## <a name="remarks"></a>설명  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명의 목록은 [Tooltaskextension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조 하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
- [작업](../msbuild/msbuild-tasks.md)   
+ [임무](../msbuild/msbuild-tasks.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)

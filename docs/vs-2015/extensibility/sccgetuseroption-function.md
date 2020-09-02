@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200079"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 함수는 다양 한 사용자별 옵션을 가져옵니다.  
+이 함수는 다양 한 사용자별 옵션을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,30 +36,30 @@ SCCRTN SccGetUserOption(
   
 #### <a name="parameters"></a>매개 변수  
  pContext  
- [in] 원본 제어 플러그 인 컨텍스트 포인터입니다.  
+ 진행 소스 제어 플러그 인 컨텍스트 포인터입니다.  
   
  nOption  
- [in] \(가능한 옵션에 대 한 설명 참조)를 검색 하는 옵션입니다.  
+ 진행 검색할 옵션입니다 (가능한 옵션에 대 한 설명 참조).  
   
  lpVal  
- [out] 옵션을 사용 하 여 연결 된 값입니다.  
+ 제한이 옵션과 관련 된 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.  
   
-|값|Description|  
+|값|설명|  
 |-----------|-----------------|  
-|SCC_OK|옵션은 성공적으로 검색 되었습니다.|  
-|SCC_E_OPNOTSUPPORTED|옵션이 지원 되지 않습니다.|  
+|SCC_OK|옵션을 검색 했습니다.|  
+|SCC_E_OPNOTSUPPORTED|옵션은 지원 되지 않습니다.|  
 |SCC_E_NONSPECIFICERROR|지정되지 않은 오류가 발생했습니다.|  
   
 ## <a name="remarks"></a>설명  
- 다음 옵션은이 명령에 의해 지원 됩니다.  
+ 다음 옵션은이 명령에서 지원 됩니다.  
   
-|사용자 옵션|Description|  
+|사용자 옵션|설명|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|사용자가 파일의 로컬 버전 체크 아웃 하려고 하는지 여부를 결정 합니다. `lpVal` 할당 된 `SCC_USEROPT_COLV_YES` (사용자가 로컬 파일을 체크 아웃) 또는 `SCC_USEROPT_COLV_NO`합니다.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|사용자가 파일의 로컬 버전을 체크 아웃 하려고 할지 여부를 결정 합니다. `lpVal` 이 할당 된 경우 `SCC_USEROPT_COLV_YES` (사용자는 로컬 파일을 체크 아웃 하려고 `SCC_USEROPT_COLV_NO` 합니다.) 또는입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>관련 항목  
+ [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [오류 코드](../extensibility/error-codes.md)

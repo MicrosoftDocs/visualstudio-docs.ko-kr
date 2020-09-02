@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199940"
 ---
 # <a name="overriding-toolsversion-settings"></a>ToolsVersion 설정 재정의
@@ -31,7 +31,7 @@ ms.locfileid: "68199940"
 3. 솔루션 내의 프로젝트에서 `$(ProjectToolsVersion)` 속성 설정. 이 방법에서는 다른 프로젝트와는 다른 도구 집합 버전을 사용하여 솔루션에서 프로젝트를 빌드할 수 있습니다.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>명령줄 빌드에서 프로젝트 및 솔루션의 ToolsVersion 설정 재정의  
- 일반적으로 Visual Studio 프로젝트는 프로젝트 파일에 지정된 ToolsVersion을 사용하여 빌드되지만 명령줄에서 `/ToolsVersion`(또는 `/tv`) 스위치를 사용하여 해당 값을 재정의하고 다른 도구 집합을 사용하여 모든 프로젝트 및 프로젝트 간 종속성을 빌드할 수 있습니다. 예:  
+ 일반적으로 Visual Studio 프로젝트는 프로젝트 파일에 지정된 ToolsVersion을 사용하여 빌드되지만 명령줄에서 `/ToolsVersion`(또는 `/tv`) 스위치를 사용하여 해당 값을 재정의하고 다른 도구 집합을 사용하여 모든 프로젝트 및 프로젝트 간 종속성을 빌드할 수 있습니다. 다음은 그 예입니다.  
   
 ```  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
@@ -126,8 +126,8 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. 이외에는 현재 `ToolsVersion`을 사용합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)   
+## <a name="see-also"></a>관련 항목  
+ [다중](../msbuild/msbuild-multitargeting-overview.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
- [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
+ [도구 집합 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)
