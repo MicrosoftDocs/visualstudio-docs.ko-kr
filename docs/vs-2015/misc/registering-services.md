@@ -10,16 +10,16 @@ ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62971292"
 ---
 # <a name="registering-services"></a>서비스 등록
 요청 시 로드를 지원하려면 서비스 공급자가 글로벌 서비스를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 등록해야 합니다.  
   
- 개발 중에 관리되는 서비스 공급자는 패키지에 대한 소스 코드에 특성을 추가한 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에서 패키지를 빌드하여 서비스 및 서비스 재정의를 등록합니다. 이렇게 하면 결과 어셈블리에서 RegPkg.exe 유틸리티가 실행되어 패키지를 등록하고 배포 준비를 합니다. 자세한 내용은 [방법: 서비스 등록](../misc/how-to-register-a-service.md)합니다.  
+ 개발 중에 관리되는 서비스 공급자는 패키지에 대한 소스 코드에 특성을 추가한 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에서 패키지를 빌드하여 서비스 및 서비스 재정의를 등록합니다. 이렇게 하면 결과 어셈블리에서 RegPkg.exe 유틸리티가 실행되어 패키지를 등록하고 배포 준비를 합니다. 자세한 내용은 [방법: 서비스 등록](../misc/how-to-register-a-service.md)을 참조 하세요.  
   
  관리되지 않는 서비스 공급자는 시스템 레지스트리의 서비스 섹션 또는 서비스 재정의 섹션에서 제공하는 서비스를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 등록해야 합니다. 다음 .reg 파일 조각은 SVsTextManager 서비스를 등록하는 방법을 보여 줍니다.  
   
@@ -47,6 +47,6 @@ ms.locfileid: "62971292"
 regasm /tlb MyAssembly.dll  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [사용 하 고 서비스를 제공 합니다.](../extensibility/using-and-providing-services.md)   
+## <a name="see-also"></a>관련 항목  
+ [서비스 사용 및 제공](../extensibility/using-and-providing-services.md)   
  [서비스 필수 항목](../extensibility/internals/service-essentials.md)

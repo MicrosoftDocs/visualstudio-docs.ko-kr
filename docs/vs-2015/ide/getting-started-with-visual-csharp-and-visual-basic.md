@@ -1,5 +1,5 @@
 ---
-title: 시각적 개체 C# 및 Visual Basic 시작 | Microsoft Docs
+title: 'Visual c # 및 Visual Basic 시작 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 460349231b050a84b7f6bf5bace8c0aa48ac5fbb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645584"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 및 Visual Basic 시작
@@ -30,7 +30,7 @@ ms.locfileid: "72645584"
 
  Visual C++에 대한 자세한 내용은 [Visual C++ 리소스](https://msdn.microsoft.com/vstudio/hh386302.aspx)를 참조하세요.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [연습: 간단한 응용 프로그램 만들기](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) Visual Studio IDE에서 기본 창을 확인 하 고, 설정을 구성 하 여 개발 환경을 최적화 하 고, 간단한 프로그램을 빌드합니다.
 
  [자습서 1: 사진 뷰어 만들기](../ide/tutorial-1-create-a-picture-viewer.md) 파일에서 그림을 로드 하 여 창에 표시 하는 프로그램을 빌드합니다. 또한 단추와 그림 상자 같은 컨트롤을 폼으로 끌어서 놓고, 이러한 컨트롤의 속성을 설정하고, 컨테이너를 사용하여 폼의 크기를 자연스럽게 조정하는 방법에 대해 배우고 코드 작성을 시작합니다.

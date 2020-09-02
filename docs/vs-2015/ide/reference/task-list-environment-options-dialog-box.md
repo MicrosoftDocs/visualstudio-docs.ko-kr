@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72e5f82fa3ca4b7ca909ee07e5b77a31b3e20879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650968"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 작업 목록
@@ -65,5 +65,5 @@ ms.locfileid: "72650968"
 > [!NOTE]
 > 기본 주석 토큰을 삭제하거나 그 이름을 바꿀 수는 없지만 해당 우선 순위 수준은 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  코드 [환경 옵션 대화 상자](../../ide/reference/environment-options-dialog-box.md) [에서 책갈피 설정](../../ide/setting-bookmarks-in-code.md) [작업 목록 사용](../../ide/using-the-task-list.md)

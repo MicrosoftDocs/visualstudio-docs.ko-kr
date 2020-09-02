@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 571079b7de52c4dbebbe842b232e4f889a9f0eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62989795"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio에서 클라우드 서비스 게시 또는 배포 준비
@@ -59,7 +59,7 @@ Azure 환경에서 역할을 실행하는 클라우드 서비스 다음 섹션�
 
 1. [Azure Portal](https://portal.azure.com/)에 로그인합니다.
 1. 왼쪽 위에서 **+ 새로 만들기**를 선택합니다.
-1. "Azure Marketplace" 아래에서 **저장소**를 선택한 다음, 오른쪽에서 **저장소 계정 - Blob,파일, 테이블, 큐**를 선택합니다.
+1. &quot;Azure Marketplace&quot; 아래에서 **스토리지**를 선택한 다음, 오른쪽에서 **스토리지 계정 - Blob,파일, 테이블, 큐**를 선택합니다.
 1. 필요한 정보(이름, 배포 모델 등)를 제공합니다.
 1. **만들기**를 선택하여 프로세스를 완료합니다.
 

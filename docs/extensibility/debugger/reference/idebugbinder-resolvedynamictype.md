@@ -1,5 +1,5 @@
 ---
-title: 아이디버그바인더::리졸브다이내믹스타입 | 마이크로 소프트 문서
+title: 'IDebugBinder:: ResolveDynamicType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a3e490d06444d555625136d6b7ba2a8e99169f59
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735983"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
-이 메서드는 변수의 정확한 형식을 반환합니다.
+이 메서드는 정확한 형식의 변수를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,15 +43,15 @@ int ResolveDynamicType(
 
 ## <a name="parameters"></a>매개 변수
 `pDynamic`\
-【인】 변수의 형식을 나타내는 [IDebugDynamicField입니다.](../../../extensibility/debugger/reference/idebugdynamicfield.md)
+진행 변수의 형식을 나타내는 [Idebugdynamicfield](../../../extensibility/debugger/reference/idebugdynamicfield.md) 입니다.
 
 `ppResolved`\
-【아웃】 변수의 형식에 대한 특정 정보를 제공하는 [IDebugField를](../../../extensibility/debugger/reference/idebugfield.md) 반환합니다.
+제한이 변수의 형식에 대 한 특정 정보를 제공 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

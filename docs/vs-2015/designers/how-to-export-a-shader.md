@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2225ce416fed4e97e998a50f70a0dc4c25908476
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664462"
 ---
 # <a name="how-to-export-a-shader"></a>방법: 셰이더 내보내기
@@ -32,7 +32,7 @@ ms.locfileid: "72664462"
 
 1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 **시각적 셰이더 그래프(.dgsl)** 파일을 엽니다.
 
-     열 수 있는 **시각적 셰이더 그래프(.dgsl)** 파일이 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명된 대로 파일을 만듭니다.
+     열려는 **시각적 셰이더 그래프 (dgsl)** 파일이 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명 된 대로 하나를 만듭니다.
 
 2. **셰이더 디자이너** 도구 모음에서 **고급**, **내보내기**, **다른 이름으로 내보내기**를 선택합니다. **셰이더 내보내기** 대화 상자가 표시됩니다.
 
@@ -48,5 +48,5 @@ ms.locfileid: "72664462"
 
 4. **파일 이름** 콤보 상자에서 내보낸 셰이더의 이름을 지정하고 **저장** 단추를 선택합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 기본 색 셰이더](../designers/how-to-create-a-basic-color-shader.md) [셰이더 디자이너](../designers/shader-designer.md) 만들기

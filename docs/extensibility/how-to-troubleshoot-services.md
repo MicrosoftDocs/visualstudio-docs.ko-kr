@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234954"
 ---
 # <a name="how-to-troubleshoot-services"></a>방법: 서비스 문제 해결
@@ -56,7 +56,7 @@ if (log == null) return;
 
    2. 인터페이스에 명시적으로 할당 된 GUID가 없습니다. 따라서 시스템은 필요에 따라 개체에 대 한 기본 GUID를 만듭니다.
 
-3. 서비스를 요청 하는 VSPackage가 배치 되었는지를 확인할 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 구성 하 고를 호출 하기 전에 VSPackage를 사이트에 만듭니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
+3. 서비스를 요청 하는 VSPackage가 배치 되었는지를 확인할 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 구성 하 고를 호출 하기 전에 VSPackage를 사이트에 만듭니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
     서비스를 필요로 하는 VSPackage 생성자에 코드가 있는 경우이를 `Initialize` 메서드로 이동 합니다.
 
@@ -66,7 +66,7 @@ if (log == null) return;
 
     도구 창이 사용자 정의 컨트롤 또는 다른 컨트롤 컨테이너를 호스트 하는 경우 컨테이너는 Windows 구성 요소 모델에 의해 배치 되며 어떤 서비스에도 액세스할 수 없습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>를 호출 하 여 컨트롤 컨테이너 내에서 VSPackage 서비스 공급자를 가져올 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [사용 가능한 서비스 목록](../extensibility/internals/list-of-available-services.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)
 - [서비스 essentials](../extensibility/internals/service-essentials.md)

@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53703d6178c81758650fdd00aada0a5952734caa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160480"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-웹 항목 템플릿이 적용 되는 여러 언어에 대해 동일한 여부를 지정 합니다 **언어** 옵션이 설정 되었는지는 **새 항목 추가** 대화 상자.  
+웹 항목 템플릿이 여러 언어에 대해 동일한 지 여부 및 **새 항목 추가** 대화 상자에서 **언어** 옵션을 사용할 수 있는지 여부를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -53,17 +53,17 @@ ms.locfileid: "68160480"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 여야 `true` 또는 `false`나타내는 여부는 **언어** 옵션에서 사용할 수는 **새 항목 추가** 대화 상자.  
+ 텍스트는 `true` `false` **새 항목 추가** 대화 상자에서 **언어** 옵션을 사용할 수 있는지 여부를 나타내는 또는 중 하나 여야 합니다.  
   
 ## <a name="remarks"></a>설명  
  `SupportsLanguageDropDown`는 선택적 요소입니다. 기본값은 `false`입니다.  
   
- `SupportsLanguageDropDown` 요소는 웹 항목 템플릿을 사용할 수 있습니다.  
+ `SupportsLanguageDropDown`요소는 웹 항목 템플릿에만 사용할 수 있습니다.  
   
- 이 요소의 값 설정 된 경우 `true`, 항목 템플릿에 모든 프로그래밍 언어에 대해 동일 하며 **언어** 옵션은 사용할 수를 **새 항목 추가** 대화 상자. 이 옵션을 사용 하면 템플릿에서 만들려고 할 수 있는 새 항목의 프로그래밍 언어를 선택할 수 있습니다.  
+ 이 요소의 값을로 설정 하면 `true` 모든 프로그래밍 언어에 대해 항목 템플릿이 동일 하 고 **새 항목 추가** 대화 상자에서 **언어** 옵션을 사용할 수 있습니다. 이 옵션을 사용 하면 템플릿에서 만들려는 새 항목의 프로그래밍 언어를 선택할 수 있습니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 표시 하도록 지정 합니다 **언어** 옵션 드롭다운 합니다.  
+## <a name="example"></a>예  
+ 다음 예에서는 **언어** 드롭다운 옵션을 표시 하도록를 지정 합니다.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160436"
 ---
 # <a name="build-loggers"></a>빌드 로거
@@ -44,14 +44,14 @@ ms.locfileid: "68160436"
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>로거 자세한 정도 값에 대한 응답  
- 일부 경우에 MSBuild.exe **/verbosity** 스위치에 특정 값이 포함되어 있을 때만 이벤트의 정보를 로깅하려고 할 수 있습니다. 이 예제에서 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 이벤트 처리기는 **/verbosity** 스위치에 의해 설정된 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 속성이 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`인 경우에만 메시지를 로깅합니다.  
+ 경우에 따라 MSBuild.exe **/verbosity** 스위치에 특정 값이 포함 되어 있는 경우에만 이벤트의 정보를 기록할 수 있습니다. 이 예제에서 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 이벤트 처리기는 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> **/verbosity** 스위치에 의해 설정 된 속성이와 동일한 경우에만 메시지를 기록 합니다 <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>로거 지정  
- 로거가 어셈블리로 컴파일되면 빌드하는 동안 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 해당 로거를 사용하도록 지시해야 합니다. 이 작업은 MSBuild.exe와 함께 **/logger** 스위치를 사용하여 수행합니다. MSBuild.exe에 대해 사용할 수 있는 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
+ 로거가 어셈블리로 컴파일되면 빌드하는 동안 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 해당 로거를 사용하도록 지시해야 합니다. MSBuild.exe와 함께 **/logger** 스위치를 사용 하 여 수행 됩니다. MSBuild.exe에 대해 사용할 수 있는 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
   
- 다음 명령줄은 프로젝트 `MyProject.csproj`를 빌드하고 `SimpleLogger.dll`에서 구현된 로거 클래스를 사용합니다. **/nologo** 스위치는 배너 및 저작권 메시지를 숨기고 **/noconsolelogger** 스위치는 기본 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 콘솔 로거를 사용하지 않도록 설정합니다.  
+ 다음 명령줄은 프로젝트 `MyProject.csproj`를 빌드하고 `SimpleLogger.dll`에서 구현된 로거 클래스를 사용합니다. **/Nologo** 스위치는 배너 및 저작권 메시지를 숨기고 **/noconsolelogger** 스위치는 기본 콘솔로 거를 사용 하지 않도록 설정 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 합니다.  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
@@ -63,7 +63,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
  다음 예제에서는 로거에 대한 전체 코드를 보여 줍니다.  
@@ -71,9 +71,9 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="code"></a>코드  
  [!code-csharp[msbuild_SimpleConsoleLogger#1](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#1)]  
   
-### <a name="comments"></a>설명  
+### <a name="comments"></a>주석  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
  다음 예제에서는 로그를 콘솔 창에 표시하지 않고 파일에 쓰는 로거를 구현하는 방법을 보여 줍니다.  
@@ -81,8 +81,8 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="code"></a>코드  
  [!code-csharp[msbuild_BasicLogger#1](../snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
   
-### <a name="comments"></a>설명  
+### <a name="comments"></a>주석  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)

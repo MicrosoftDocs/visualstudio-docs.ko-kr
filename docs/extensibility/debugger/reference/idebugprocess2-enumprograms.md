@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::에넘프로그램 | 마이크로 소프트 문서
+title: 'IDebugProcess2:: EnumPrograms | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 56b1c939802406394bdf09e3cfa8c76f5103d974
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724088"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
-이 프로세스에 포함된 모든 프로그램 목록을 검색합니다.
+이 프로세스에 포함 된 모든 프로그램의 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int EnumPrograms( 
 
 ## <a name="parameters"></a>매개 변수
 `ppEnum`\
-【아웃】 프로세스의 모든 프로그램 목록을 포함하는 [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) 개체를 반환합니다.
+제한이 프로세스의 모든 프로그램 목록을 포함 하는 [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

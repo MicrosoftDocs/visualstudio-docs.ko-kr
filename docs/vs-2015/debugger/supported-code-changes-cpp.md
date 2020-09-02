@@ -1,5 +1,5 @@
 ---
-title: 코드 변경 내용을 지원 (C++) | Microsoft Docs
+title: 지원되는 코드 변경(C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684906"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C++)
@@ -38,7 +38,7 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
   
  Visual Studio에서 C++용 편집하며 계속하기를 사용하는 방법에 대한 자세한 내용은 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 를 참조하세요.  
   
-## <a name="BKMK_Unsupported_changes"></a> 지원되지 않는 변경 사항  
+## <a name="unsupported-changes"></a><a name="BKMK_Unsupported_changes"></a> 지원되지 않는 변경 사항  
 
 디버깅 세션 중에 적용할 수 없는 C/C++ 변경 내용은 다음과 같습니다.  
   
@@ -68,12 +68,12 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
   
 - 편집하며 계속하기는 정적 라이브러리를 업데이트하지 않습니다. 정적 라이브러리에서 변경하면 이전 버전을 사용하여 실행이 계속되고 경고가 발생하지 않습니다.  
   
-## <a name="BKMK_Unsupported_scenarios"></a> 지원되지 않는 시나리오  
+## <a name="unsupported-scenarios"></a><a name="BKMK_Unsupported_scenarios"></a> 지원되지 않는 시나리오  
  다음과 같은 디버깅 시나리오에서는 C/C++의 편집하며 계속하기를 사용할 수 없습니다.  
   
--  [/Zo(최적화된 디버깅 향상)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)로 컴파일한 네이티브 앱 디버그  
+- [/Zo(최적화된 디버깅 향상)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)로 컴파일한 네이티브 앱 디버그  
   
-- Visual Studio 2015 업데이트 1 이전의 Visual Studio 버전에서 Windows 스토어 앱 또는 구성 요소를 디버그합니다. Visual Studio 2015 업데이트 1부터는 `/ZI` 스위치로  `/bigobj` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.  `/FASTLINK` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.  
+- Visual Studio 2015 업데이트 1 이전의 Visual Studio 버전에서 Windows 스토어 앱 또는 구성 요소를 디버그합니다. Visual Studio 2015 업데이트 1부터는 `/ZI` 스위치로  `/bigobj` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다. `/FASTLINK` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.  
   
 - Windows 98에서 디버깅  
   
@@ -93,26 +93,26 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
   
 - 빌드 오류가 발생하여 새 버전을 빌드하는 데 실패한 후 이전 버전의 코드 디버깅  
   
-## <a name="BKMK_Linking_limitations"></a> 링크 제한 사항  
+## <a name="linking-limitations"></a><a name="BKMK_Linking_limitations"></a> 링크 제한 사항  
   
-### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 편집하며 계속하기를 사용하지 않도록 설정하는 링커 옵션  
+### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 편집하며 계속하기를 사용하지 않도록 설정하는 링커 옵션  
  다음 링커 옵션을 사용하면 편집하며 계속하기가 비활성화됩니다.  
   
 - **/OPT:REF**, **/OPT:ICF**또는 **/INCREMENTAL:NO** 를 설정하면 다음 경고가 나타나고 편집하며 계속하기가 비활성화됩니다.  
   
      LINK : warning LNK4075: /EDITANDCONTINUE이(가) /OPT 사양으로 인해  
   
-     specification  
+     사양  
   
 - **/ORDER**, **/RELEASE**또는 **/FORCE** 를 설정하면 다음 경고가 나타나고 편집하며 계속하기가 비활성화됩니다.  
   
      LINK : warning LNK4075: /INCREMENTAL이(가) /option 사양으로 인해  
   
-     specification  
+     사양  
   
 - 프로그램 데이터베이스 파일(.pdb)을 작성하지 않는 옵션을 설정하면 특별한 경고 없이 편집하며 계속하기가 비활성화됩니다.  
   
-### <a name="BKMK_Auto_relinking_limitations"></a> 자동 다시 링크 제한 사항  
+### <a name="auto-relinking-limitations"></a><a name="BKMK_Auto_relinking_limitations"></a> 자동 다시 링크 제한 사항  
  기본적으로 편집하며 계속하기는 디버깅 섹션의 끝에서 프로그램을 다시 링크하여 실행 가능한 업데이트를 만듭니다.  
   
  편집하며 계속하기를 사용하면 원래 빌드 위치 이외의 위치에서 디버깅하는 경우 프로그램을 다시 링크할 수 없으며 수동으로 다시 빌드해야 한다는 메시지가 나타납니다.  
@@ -129,7 +129,7 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
   
 3. **디버깅 후 코드 변경 내용 다시 링크** 확인란의 선택을 취소합니다.  
   
-## <a name="BKMK_Precompiled_Header_Limitations"></a> 미리 컴파일된 헤더 제한  
+## <a name="precompiled-header-limitations"></a><a name="BKMK_Precompiled_Header_Limitations"></a> 미리 컴파일된 헤더 제한 사항  
  기본적으로 편집하며 계속하기는 코드 변경 처리 속도를 높이기 위해 미리 컴파일된 헤더를 백그라운드에서 로드한 다음 처리합니다. 미리 컴파일된 헤더를 로드하려면 실제 메모리를 할당해야 하는데, RAM이 한정된 시스템에서 컴파일하는 경우 문제가 될 수 있습니다. Windows 작업 관리자를 사용하여 디버그하는 동안 사용 가능한 실제 메모리의 양을 확인하면 이 작업이 문제가 될 수 있는지 확인할 수 있습니다. 실제 메모리 양이 미리 컴파일된 헤더의 크기보다 큰 경우에 편집하며 계속하기에는 문제가 없습니다. 실제 메모리 양이 미리 컴파일된 헤더의 크기보다 작은 경우에는 미리 컴파일된 헤더를 백그라운드에서 로드하지 않고 편집하며 계속하기를 할 수 있습니다.  
   
  **편집하며 계속하기가 사용하는 미리 컴파일된 헤더를 백그라운드에 로드하지 않으려면**  
@@ -140,8 +140,8 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
   
 3. **미리 컴파일 허용** 확인란 선택을 취소합니다.  
   
-## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 특성 제한 사항  
+## <a name="idl-attribute-limitations"></a><a name="BKMK_IDL_Attribute_Limitations"></a> IDL 특성 제한 사항  
  편집하며 계속하기는 IDL(인터페이스 정의) 파일을 다시 생성하지 않습니다. 따라서 디버깅하는 동안 IDL 특성의 변경 내용이 반영되지 않습니다. IDL 특성을 변경한 결과를 확인하려면 디버깅을 중단하고 앱을 다시 빌드해야 합니다. 편집하며 계속하기는 IDL 특성이 변경되어도 오류나 경고를 생성하지 않습니다. 자세한 내용은 [IDL 특성](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+## <a name="see-also"></a>관련 항목  
+ [편집 하며 계속 하기 (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

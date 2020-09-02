@@ -1,5 +1,5 @@
 ---
-title: 아이데버그바인더3:겟메모리컨텍스트6 | 마이크로 소프트 문서
+title: 'IDebugBinder3:: GetMemoryContext64 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735730"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-개체 위치 또는 64비트 메모리 주소를 메모리 컨텍스트로 변환합니다.
+개체 위치 또는 64 비트 메모리 주소를 메모리 컨텍스트로 변환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>매개 변수
 `pField`\
-【인】 찾을 개체를 설명하는 [IDebugField입니다.](../../../extensibility/debugger/reference/idebugfield.md) If `NULL`, `dwConstant` 대신 사용합니다.
+진행 찾을 개체를 설명 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 입니다. 이면 `NULL` 를 대신 사용 `dwConstant` 합니다.
 
 `uConstant`\
-【인】 0x50000000과 같은 64비트 메모리 주소입니다.
+진행 64 비트 메모리 주소 (예: 0x50000000)입니다.
 
 `ppMemCxt`\
-【아웃】 개체의 주소 또는 메모리의 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 인터페이스를 반환합니다.
+제한이 개체의 주소 또는 메모리의 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) 인터페이스를 구현 하는 개체를 만들고 이 메서드를 사용 하 여 메모리 컨텍스트를 검색 합니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) 인터페이스를 구현 하 고이 메서드를 사용 하 여 메모리 컨텍스트를 검색 하는 개체를 만듭니다.
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )
@@ -129,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

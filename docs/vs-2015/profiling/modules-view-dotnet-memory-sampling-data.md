@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160858"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>모듈 뷰 - .NET 메모리 샘플링 데이터
@@ -25,7 +25,7 @@ ms.locfileid: "68160858"
   
  메모리를 할당하는 문의 소스 파일 줄 번호는 함수 노드 아래에 나열되며 할당을 수행하는 명령의 주소는 줄 노드 아래에 나열됩니다. 포괄 및 전용 값은 줄 데이터와 명령 데이터에 대해 항상 동일합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**이름**|모듈, 함수, 줄 번호 또는 명령 주소의 이름입니다.|  
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|  
@@ -43,8 +43,8 @@ ms.locfileid: "68160858"
 |**제외 바이트**|-   함수의 경우 함수에 의해 할당된 총 바이트 수입니다. 이 수에는 이 함수가 호출한 함수에서 할당된 바이트는 포함되지 않습니다.<br />-   모듈의 경우 모듈 내 함수에 의해 할당된 제외 바이트의 합계입니다.<br />-   줄이나 명령의 경우 이 줄 또는 명령에 의해 할당된 총 개체 수입니다.|  
 |**제외 바이트(%)**|모듈, 함수, 줄 또는 명령의 제외 바이트인 프로파일링 실행에서 할당된 모든 바이트의 비율입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
- [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [모듈 뷰-계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [모듈 뷰](../profiling/modules-view-sampling-data.md)   
  [모듈 뷰](../profiling/modules-view-instrumentation-data.md)

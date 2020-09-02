@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382473"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 기본 웹 페이지 사용자 지정
@@ -45,9 +45,9 @@ ClickOnce 응용 프로그램을 웹에 게시 하면 웹 페이지가 자동으
 
 3. 원하는 대로 페이지를 사용자 지정 하 고 저장 합니다.
 
-4. (선택 사항) Visual Studio에서 사용자 지정 게시 웹 페이지를 덮어쓰지 않도록 하려면 게시 **옵션** 대화 상자에서 **모든 게시 후 자동으로 배포 웹 페이지 생성** 을 선택 취소 합니다.
+4. 선택 사항입니다. Visual Studio에서 사용자 지정 게시 웹 페이지를 덮어쓰지 않도록 하려면 게시 **옵션** 대화 상자에서 **모든 게시 후 자동으로 배포 웹 페이지 생성** 을 선택 취소 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)
 - [방법: ClickOnce 애플리케이션을 사용하여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

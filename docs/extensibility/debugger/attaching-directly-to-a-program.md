@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc78234b31b98865f1779dd65d743d4196f9cbf5
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903269"
 ---
 # <a name="attach-directly-to-a-program"></a>프로그램에 직접 연결
@@ -40,6 +40,6 @@ ms.locfileid: "85903269"
 
    두 번째 예외는 이미 실행 중인 프로그램에 연결 해제를 통해 전송 되는 시작 이벤트에는 일반적으로 진입점 이벤트가 포함 되지 않기 때문입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [시작 후 시작 이벤트 보내기](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 수집 방법 선택 | Microsoft Docs'
+title: '방법: 수집 방법 선택 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199803"
 ---
-# <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
+# <a name="how-to-choose-collection-methods"></a>방법: 컬렉션 방법 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구는 성능 데이터를 수집하는 세 가지 방법, 샘플링, 계측 및 동시성을 지원합니다. 샘플링 또는 계측 방법을 사용하여 .NET 메모리 할당 및 수명 데이터를 수집할 수도 있습니다.  
@@ -96,7 +96,7 @@ ms.locfileid: "68199803"
   
 3. **동시성**을 클릭합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
  [샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)   
  [성능 세션 속성](../profiling/performance-session-properties.md)

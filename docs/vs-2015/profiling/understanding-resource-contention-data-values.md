@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5983396924f38c31b6dafcd42b762042e1880e8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145429"
 ---
 # <a name="understanding-resource-contention-data-values"></a>리소스 경합 데이터 값 이해
@@ -38,6 +38,6 @@ ms.locfileid: "68145429"
   
 - [스레드 정보 뷰](../profiling/thread-details-view-contention-data.md)  
   
-- [리소스 정보 뷰](../profiling/resource-details-view-contention-data.md)  
+- [리소스 정보 보기](../profiling/resource-details-view-contention-data.md)  
   
   동시성 프로파일링의 두 번째 모드에 대한 자세한 내용은 [Concurrency 시각화](../profiling/concurrency-visualizer.md)를 참조하세요.

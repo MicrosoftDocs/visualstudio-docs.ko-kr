@@ -1,5 +1,5 @@
 ---
-title: IDebugBefore 기호검색이벤트2::GetModule네임 | 마이크로 소프트 문서
+title: 'IDebugBeforeSymbolSearchEvent2:: GetModuleName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d97e78b3238b0efababb3fd4782743d03595387
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736126"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
-현재 디버깅 중인 모듈의 이름을 검색합니다.
+현재 디버깅 중인 모듈의 이름을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,13 +40,13 @@ public int GetModuleName (
 
 ## <a name="parameters"></a>매개 변수
 `pbstrModuleName`\
-【아웃】 모듈의 이름입니다.
+제한이 모듈의 이름입니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugBeforeSymbolSearchEventEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스를 노출하는 **CDebugBeforeSymbolSearchEventBase** 개체에 대해 이 메서드를 구현하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스를 노출 하는 **CDebugBeforeSymbolSearchEventBase** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)
@@ -68,5 +68,5 @@ STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleN
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)

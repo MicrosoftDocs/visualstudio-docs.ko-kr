@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1a0d10dabdace7ef7ab3805a59b892548cf6556
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645526"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)
@@ -38,7 +38,7 @@ ms.locfileid: "72645526"
 
 ### <a name="to-add-a-class-diagram-based-on-existing-types"></a>기존 형식을 기반으로 클래스 다이어그램을 추가하려면
 
-1. 솔루션 탐색기에서 클래스 파일 상황에 맞는 메뉴를 연 다음 **클래스 다이어그램 보기**를 선택합니다.
+1. 솔루션 탐색기에서 클래스 파일 상황에 맞는 메뉴를 연 다음 **클래스 다이어그램 보기**를 선택 합니다.
 
      또는
 
@@ -46,9 +46,9 @@ ms.locfileid: "72645526"
 
 ### <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>클래스 다이어그램에 전체 프로젝트의 내용을 표시하려면
 
-1. 솔루션 탐색기나 클래스 뷰에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **보기**, **클래스 다이어그램 보기**를 차례로 선택합니다.
+1. 솔루션 탐색기 또는 클래스 뷰에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **보기**, **클래스 다이어그램 보기**를 차례로 선택 합니다.
 
      자동으로 채워진 클래스 다이어그램이 만들어집니다.
 
-## <a name="see-also"></a>관련 항목:
- [방법: 클래스 디자이너를 사용 하 여 형식 만들기](../ide/how-to-create-types-by-using-class-designer.md) [방법: 기존 형식 보기 (클래스 디자이너)](../ide/how-to-view-existing-types-class-designer.md) 클래스 [및 형식 디자인 (클래스 디자이너)](../ide/designing-classes-and-types-class-designer.md) 클래스 다이어그램 작업 ( [클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md) [클래스 다이어그램 작업 ( 클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 클래스 디자이너를 사용 하 여 형식 만들기](../ide/how-to-create-types-by-using-class-designer.md) [방법: 기존 형식 보기 (클래스 디자이너)](../ide/how-to-view-existing-types-class-designer.md) 클래스 [및 형식 디자인 (클래스 디자이너)](../ide/designing-classes-and-types-class-designer.md) 클래스 다이어그램 작업 ( [클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md) [클래스 다이어그램 작업 (클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md)

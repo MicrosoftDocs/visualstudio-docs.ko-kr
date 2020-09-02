@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99d2b07a64781929962ff37823ddcbf219598331
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664475"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>방법: MIP 수준 만들기 및 수정
@@ -44,5 +44,5 @@ ms.locfileid: "72664475"
 > [!NOTE]
 > 특정 효과를 얻기 위해 수행할 수 있는 것처럼 개별 MIP 수준의 콘텐츠를 수정할 필요가 없는 경우 빌드할 때 원본 질감에서 MIP 맵을 생성하는 것이 좋습니다. 이렇게 하면 MIP 수준 수정이 자동으로 다른 수준으로 전파되지 않으므로 MIP 수준이 원본 질감과 동기화되도록 할 수 있습니다. 빌드 시간에 MIP 맵을 생성하는 방법에 대한 자세한 내용은 [방법: MIP 맵을 포함하는 질감 내보내기](../designers/how-to-export-a-texture-that-contains-mipmaps.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)

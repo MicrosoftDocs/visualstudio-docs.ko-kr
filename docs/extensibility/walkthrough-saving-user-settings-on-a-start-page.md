@@ -10,10 +10,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903171"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>연습: 시작 페이지에 사용자 설정 저장
@@ -26,7 +26,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 설정을 유지 하는 방법에 대 한 자세한 내용은 [사용자 설정 및 옵션 확장](../extensibility/extending-user-settings-and-options.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 > [!NOTE]
 > 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
@@ -196,7 +196,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 다른 이벤트 처리기의 다른 값을 사용 하 여 속성을 가져오고 설정 하 여 원하는 수의 사용자 지정 설정을 저장 하 고 검색 하도록이 사용자 정의 컨트롤을 수정할 수 있습니다 `SettingsStore` . `propertyName`에 대 한 각 호출에 다른 매개 변수를 사용 하는 한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , 값은 레지스트리의 다른 매개 변수를 덮어쓰지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [시작 페이지에 Visual Studio 명령 추가](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

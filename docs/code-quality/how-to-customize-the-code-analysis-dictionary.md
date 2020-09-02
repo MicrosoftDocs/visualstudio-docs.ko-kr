@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453646"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
@@ -74,7 +74,7 @@ ms.locfileid: "87453646"
 
 - [사전/머리글자어/CasingExceptions/머리글자어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>사전/단어/인식/단어
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a> 사전/단어/인식/단어
 
 코드 분석이 올바른 철자를 식별 하는 용어 목록에 용어를 포함 하려면 용어를 사전/단어/인식/단어 요소의 내부 텍스트로 추가 합니다. Dictionary/Words/인식할 수 있는/Word 요소의 용어는 대/소문자를 구분 하지 않습니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "87453646"
 
 - [CA2204: 리터럴의 맞춤법이 정확해야 합니다.](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>사전/단어/인식할 수 없음/단어
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a> 사전/단어/인식할 수 없음/단어
 
 코드 분석이 올바른 철자를 식별 하는 용어 목록에서 용어를 제외 하려면 a s o/Words/인식할 수 없는/Word 요소의 내부 텍스트로 제외할 용어를 추가 합니다. 사전/단어/인식할 수 없는/Word 요소의 용어는 대/소문자를 구분 하지 않습니다.
 
@@ -144,7 +144,7 @@ ms.locfileid: "87453646"
 
 - [CA2204: 리터럴의 맞춤법이 정확해야 합니다.](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>사전/단어/사용 되지 않음/용어 [ @PreferredAlternate ]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> 사전/단어/사용 되지 않음/용어 [ @PreferredAlternate ]
 
 코드 분석이 더 이상 사용 되지 않는 것으로 식별 하는 용어 목록에 용어를 포함 하려면 용어를 사전/단어/사용 되지 않음/기간 요소의 내부 텍스트로 추가 합니다. 사용 되지 않는 용어는 철자가 올바르지만 사용 하면 안 되는 단어입니다.
 
@@ -181,7 +181,7 @@ ms.locfileid: "87453646"
 
 - [CA1726: 기본 설정 용어를 사용하세요.](../code-quality/ca1726.md)
 
-### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>사전/단어/복합/단어 [ @CompoundAlternate ]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 사전/단어/복합/단어 [ @CompoundAlternate ]
 
 기본 제공 사전은 일부 용어를 복합 용어가 아닌 단일 불연속 용어로 식별 합니다. 코드 분석이 복합 단어로 식별 하는 용어 목록에 용어를 포함 하 고 용어의 정확한 대/소문자를 지정 하려면 용어를 사전/단어/복합/용어 요소의 내부 텍스트로 추가 합니다. Term 요소의 CompoundAlternate 특성에서 개별 단어의 첫 글자를 대문자로 하 여 복합 용어를 구성 하는 개별 단어를 지정 합니다 (파스칼식 대/소문자). 내부 텍스트에 지정 된 용어는 Dictionary/Words/DiscreteExceptions 목록에 자동으로 추가 됩니다.
 
@@ -214,7 +214,7 @@ ms.locfileid: "87453646"
 
 - [CA1704: 식별자에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1704.md)
 
-### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/DiscreteExceptions/Term
 
 복합 단어에 대 한 대/소문자 규칙에 따라 용어를 확인할 때 코드 분석이 단일의 불연속 단어로 식별 하는 용어 목록에서 용어를 제외 하려면 용어를 Dictionary/Words/DiscreteExceptions/Term 요소의 내부 텍스트로 추가 합니다. Dictionary/Words/DiscreteExceptions/Term 요소의 용어는 대/소문자를 구분 하지 않습니다.
 
@@ -239,7 +239,7 @@ Dictionary/Words/DiscreteExceptions 노드의 용어는 다음 코드 분석 규
 
 - [CA1702: 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1702.md)
 
-### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>사전/머리글자어/CasingExceptions/머리글자어
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> 사전/머리글자어/CasingExceptions/머리글자어
 
 코드 분석이 올바른 철자를 확인 하는 용어 목록에 머리글자어를 포함 하 고 복합 단어에 대 한 대/소문자 규칙에 따라 용어를 선택 하는 방법을 표시 하려면 용어를 Dictionary/머리글자어/CasingExceptions/머리글자어 요소의 내부 텍스트로 추가 합니다. Dictionary/머리글자어/CasingExceptions/머리글자어 요소의 머리글자어는 대/소문자를 구분 합니다.
 
@@ -262,7 +262,7 @@ Dictionary/머리글자어/CasingExceptions 노드의 용어는 다음 코드 �
 
 - [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709.md)
 
-## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>프로젝트에 사용자 지정 사전을 적용 하려면
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> 프로젝트에 사용자 지정 사전을 적용 하려면
 
 1. **솔루션 탐색기**에서 다음 절차 중 하나를 사용 합니다.
 

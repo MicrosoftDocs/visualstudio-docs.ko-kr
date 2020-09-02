@@ -8,10 +8,10 @@ ms.date: 02/23/2020
 ms.topic: how-to
 description: 기업계약을 체결한 고객에게 제공되는 Azure DevTest 특가를 활용하는 방법을 알아봅니다.
 ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903140"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 기업계약 DevTest 제안

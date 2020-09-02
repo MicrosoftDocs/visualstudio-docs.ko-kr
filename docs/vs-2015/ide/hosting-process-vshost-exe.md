@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a998246f514f13a575f6a7fef850f9f705f92553
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645539"
 ---
 # <a name="hosting-process-vshostexe"></a>호스팅 프로세스(vshost.exe)
@@ -34,7 +34,7 @@ ms.locfileid: "72645539"
  **프로젝트 디자이너**의 [보안 페이지](../ide/reference/security-page-project-designer.md)에서 애플리케이션을 부분 신뢰 애플리케이션으로 지정할 수 있습니다. 부분 신뢰 애플리케이션을 디버깅하려면 애플리케이션에 대한 특별한 초기화가 필요합니다. 이 초기화는 호스팅 프로세스에서 처리됩니다.
 
 ## <a name="design-time-expression-evaluation"></a>디자인 타임 식 계산
- 디자인 타임 식 계산을 사용하면 애플리케이션을 실행할 필요 없이 **직접 실행** 창에서 코드를 테스트할 수 있습니다. 호스팅 프로세스는 디자인 타임 식 계산 중에 이 코드를 실행합니다. 자세한 내용은 [직접 실행 창](../ide/reference/immediate-window.md)을 참조하세요.
+ 디자인 타임 식 계산을 사용하면 애플리케이션을 실행할 필요 없이 **직접 실행** 창에서 코드를 테스트할 수 있습니다. 호스팅 프로세스는 디자인 타임 식 계산 중에 이 코드를 실행합니다. 자세한 내용은 [직접 실행 창](../ide/reference/immediate-window.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md) [방법: 호스팅 프로세스](../ide/how-to-disable-the-hosting-process.md) [직접 실행 창](../ide/reference/immediate-window.md) [응용 프로그램 도메인](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8) 사용 안 함

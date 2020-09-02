@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 818ab634d48fb666ecab5d89464ea017040bd250
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382486"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>방법: 디자이너를 사용하여 ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정
@@ -30,7 +30,7 @@ ms.locfileid: "85382486"
 
  이 절차에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 사용 합니다. 을 사용 하 여이 작업을 수행할 수도 있습니다 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . 자세한 내용은 [방법: ClickOnce 응용 프로그램의 URL 활성화 사용 안 함](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)을 참조 하세요.
 
-## <a name="procedure"></a>절차
+## <a name="procedure"></a>프로시저
 
 #### <a name="to-disable-url-activation-for-your-application"></a>애플리케이션의 URL 활성화를 사용하지 않도록 설정하려면
 
@@ -46,5 +46,5 @@ ms.locfileid: "85382486"
 
 6. 애플리케이션을 배포합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)

@@ -12,10 +12,10 @@ ms.author: zorio
 author: zoeyr
 manager: jillfra
 ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169341"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 언어 팩 스키마 2.0 참조
@@ -24,21 +24,21 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 
 ## <a name="language-pack-schema"></a>언어 팩 스키마
 
-언어 팩 파일의 루트 요소는 `<PackageLanguagePackManifest>`되며 언어 팩 형식의 버전인 `Version`특성을 사용 합니다. 이 문서에서는 `Version` 특성을 `Version="2.0.0"`값으로 설정 하 여 매니페스트에 지정 된 언어 팩 형식의 버전 2.0을 설명 합니다. 루트 요소는 정확히 하나의 자식 `<Metadata>` 요소를 포함 합니다.
+언어 팩 파일의 루트 요소는 이며 `<PackageLanguagePackManifest>` `Version` 언어 팩 형식의 버전인 특성을 사용 합니다. 이 문서에서는 특성을 값으로 설정 하 여 매니페스트에 지정 된 언어 팩 형식의 버전 2.0을 설명 합니다 `Version` `Version="2.0.0"` . 루트 요소는 정확히 하나의 자식 요소를 포함 합니다 `<Metadata>` .
 
 ### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest 요소
 
-`<PackageLanguagePackManifest>` 요소 내에 다음 요소가 있어야 합니다.
+요소 내에 `<PackageLanguagePackManifest>` 다음 요소가 있어야 합니다.
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |`<Metadata>`| 모든 지역화 된 패키지 메타 데이터에 대 한 포함 요소입니다.
 
 ### <a name="metadata-element"></a>Metadata 요소
 
-`<Metadata>` 요소 내에서 다음 요소를 사용할 수 있습니다.
+요소 내에 `<Metadata>` 다음 요소를 사용할 수 있습니다.
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |`<DisplayName>`|설치할 확장의 지역화 된 이름입니다.|
 |`<Description>`|설치할 확장에 대 한 지역화 된 설명입니다.|
@@ -63,9 +63,9 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)|VSIX 패키지에 대해 지역화 된 설치 지원을 제공 하는 방법을 보여 줍니다.|
 |[VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 매니페스트는 *.vsix* 배포 파일의 콘텐츠를 설명 합니다. 배포 파일을 사용 하면 **확장 및 업데이트** 대화 상자를 사용 하 여 Visual Studio 확장을 설치할 수 있습니다.|

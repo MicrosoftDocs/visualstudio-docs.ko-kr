@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160643"
 ---
 # <a name="execution-profile-report"></a>실행 프로필 보고서
@@ -31,9 +31,9 @@ ms.locfileid: "68160643"
   
   다음 표에서는 보고서에 있는 열을 보여 줍니다.  
   
-|열|설명|  
+|열|Description|  
 |------------|-----------------|  
-|name|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
+|속성|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
 |포괄 샘플|호출 스택 트리의 이 수준으로 롤업되는 모든 스택에 대해 수집된 총 샘플 수입니다. 포괄 수는 이 함수에 대한 전용 샘플 및 모든 하위 노드에 대한 포괄 카운터의 합계입니다.|  
 |전용 샘플|이 함수가 호출 스택의 최하위 수준에 있는 경우 수집된 총 샘플 수입니다.|  
 |% 포함|포괄 샘플 열에 표시된 총 샘플의 백분율입니다. 백분율은 소수점 이하 두 자리까지 반올림됩니다.|  
@@ -42,5 +42,5 @@ ms.locfileid: "68160643"
   
  이 보고서 테이블은 [실행 시간(스레드 뷰)](../profiling/execution-time-threads-view.md) 뷰에서 볼 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

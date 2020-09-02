@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986155"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
@@ -28,8 +28,8 @@ ms.locfileid: "72986155"
 
  Office 개발에 대 한 최신 정보는 [Microsoft Office 개발자 센터](https://developer.microsoft.com/office/docs)를 참조 하세요.
 
-## <a name="in-this-section"></a>이 섹션의 내용
-- [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](getting-started-office-development-in-visual-studio.md)
+## <a name="in-this-section"></a>섹션 내용
+- [Visual Studio에서 Office 개발 &#40;시작&#41;](getting-started-office-development-in-visual-studio.md)
 
  Office 솔루션을 만들기 위해 개발 컴퓨터를 구성하는 방법, Office 솔루션 만들기를 시작하는 방법 및 Visual Studio에 포함된 Office 개발용 새 기능에 대한 정보 링크를 제공합니다.
 
@@ -97,15 +97,15 @@ ms.locfileid: "72986155"
 
  일반적인 작업을 수행하기 위한 단계별 지침을 제공하는 항목과 샘플 애플리케이션에 대한 링크를 제공합니다.
 
-- [Visual Studio &#40;에서 일반 참조 Office 개발&#41;](general-reference-office-development-in-visual-studio.md)
+- [Visual Studio에서 Office 개발 &#40;일반 참조&#41;](general-reference-office-development-in-visual-studio.md)
 
  Office 주 interop 어셈블리, 매니페스트, 사용자 인터페이스 요소 및 오류 메시지에 대 한 자세한 정보를 제공 하는 링크를 제공 합니다.
 
-- [Visual Studio &#40;에서 관리 되는 참조 Office 개발&#41;](managed-reference-office-development-in-visual-studio.md)
+- [Visual Studio에서 Office 개발을 &#40;관리 되는 참조&#41;](managed-reference-office-development-in-visual-studio.md)
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]를 대상으로 하는 Office 프로젝트에서 사용되는 API 네임스페이스 및 형식 관련 정보의 링크를 제공합니다. .NET Framework 3.5를 대상으로 하는 Office 프로젝트에서 사용 되는 네임 스페이스 및 형식에 대 한 API 참조 설명서를 보려면 Visual Studio 2008 설명서: [2007 시스템 관리 참조](managed-reference-office-development-in-visual-studio.md)에서 다음 참조 섹션을 참조 하세요.
 
-- [Visual Studio에서 &#40;관리 되지 않는 API 참조 Office 개발&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Visual Studio에서 Office 개발을 &#40;관리 되지 않는 API 참조&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Office 애플리케이션의 관리되는 VSTO 추가 기능 로드/언로드와 같은 작업을 수행하는 데 사용할 수 있는 COM 인터페이스 관련 정보에 대한 링크를 제공합니다.
 
@@ -118,4 +118,4 @@ ms.locfileid: "72986155"
 
 - [Visual Studio에서 응용 프로그램 개발](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Visual Studio를 사용 하 여 웹 응용 프로그램, XML 웹 서비스 및 기존의 클라이언트 응용 프로그램을 디자인, 개발, 디버그 및 배포 하는 방법을 설명 하는 항목의 링크를 포함 합니다.
 
-- [Visual Studio의 .NET Framework 프로그래밍](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Visual Basic 및 시각적 개체 C#의 .NET Framework를 사용 하 여 응용 프로그램을 개발 하는 방법을 설명 합니다.
+- [Visual Studio의 .NET Framework 프로그래밍](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Visual Basic 및 Visual c #에서 .NET Framework 사용 하 여 응용 프로그램을 개발 하는 방법을 설명 합니다.

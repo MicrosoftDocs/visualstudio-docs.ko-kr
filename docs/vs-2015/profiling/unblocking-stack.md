@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c3561c9aa82589c6362620ef0fe0464af7fc2e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145457"
 ---
 # <a name="unblocking-stack"></a>차단 해제 스택
@@ -25,5 +25,5 @@ ms.locfileid: "68145457"
 
 현재 선택된 스레드 요소가 현재 프로세스의 다른 스레드에 의해 차단이 해제된 후 나중에 실행되기 시작한 차단된 세그먼트를 나타내는 경우, 차단 해제를 수행한 스레드의 호출 스택이 이 탭에 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

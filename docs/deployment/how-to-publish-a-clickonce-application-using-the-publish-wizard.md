@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382304"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시
@@ -59,7 +59,7 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
 
    - 게시 위치에서 애플리케이션을 직접 실행하려면 **아니요, 이 애플리케이션은 온라인으로만 사용할 수 있습니다.** 를 클릭합니다. **시작** 메뉴에 바로 가기가 만들어지지 않습니다.
 
-     **다음** 을 클릭하여 계속합니다.
+     **다음**을 클릭하여 계속합니다.
 
 6. **마침**을 클릭하여 애플리케이션을 게시합니다.
 
@@ -88,7 +88,7 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
 
    - 애플리케이션이 업데이트를 확인하지 않도록 하려면 **애플리케이션이 업데이트를 확인하지 않음**을 클릭합니다.
 
-     **다음** 을 클릭하여 계속합니다.
+     **다음**을 클릭하여 계속합니다.
 
 6. **마침**을 클릭하여 애플리케이션을 게시합니다.
 
@@ -97,7 +97,7 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
    > [!NOTE]
    > 게시가 완료되면 CD 재작성기 또는 DVD 재작성기를 사용하여 3단계에서 지정한 위치에서 CD-ROM 또는 DVD-ROM 미디어로 파일을 복사합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

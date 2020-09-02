@@ -11,18 +11,18 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0465188cd44ad14ef3f7df9f5eda619a5ecb6d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160105"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
+# <a name="guid_array"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-사용할 디버그 엔진에 대 한 고유 식별자의 배열을 설명합니다.  
+사용 가능한 디버그 엔진에 대 한 고유 식별자 배열을 설명 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef struct tagGUID_ARRAY  
@@ -42,21 +42,21 @@ public struct GUID_ARRAY
   
 ## <a name="terms"></a>용어  
  dwCount  
- 배열에 있는 고유 식별자의 수입니다.  
+ 배열의 고유 식별자 수입니다.  
   
  멤버  
  고유 식별자가 포함 된 배열입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에서 반환 되는 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) 메서드.  
+ 이 구조체는 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) 메서드에서 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Msdbg.h  
+ 헤더: Msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
