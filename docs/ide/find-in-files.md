@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595477"
 ---
 # <a name="find-in-files"></a>파일에서 찾기
@@ -106,7 +106,7 @@ ms.locfileid: "75595477"
 
 검색 결과를 이전 검색 결과에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)
 - [파일에서 바꾸기](../ide/replace-in-files.md)

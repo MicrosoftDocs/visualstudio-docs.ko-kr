@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875594"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 활동 디자이너
@@ -29,11 +29,11 @@ ms.locfileid: "86875594"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|거짓|머리글에 <xref:System.Activities.Statements.State> 활동 디자이너의 이름을 지정합니다. 기본값은 **State**입니다. 속성 표에서 또는 활동 디자이너의 머리글에서 직접 값을 편집할 수 있습니다. <xref:System.Activities.Statements.State.DisplayName%2A>은 워크플로 디자이너 상단에 표시되는 이동 경로 탐색에 사용됩니다.<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.State.Entry%2A>|거짓|이 상태가 전환될 때 발생하는 동작을 지정합니다. **도구 상자** 에서 활동을 끌어 상태 섹션에 놓으면이 값을 설정할 수 있습니다 <xref:System.Activities.Statements.State.Entry%2A> .|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|False|머리글에 <xref:System.Activities.Statements.State> 활동 디자이너의 이름을 지정합니다. 기본값은 **State**입니다. 속성 표에서 또는 활동 디자이너의 머리글에서 직접 값을 편집할 수 있습니다. <xref:System.Activities.Statements.State.DisplayName%2A>은 워크플로 디자이너 상단에 표시되는 이동 경로 탐색에 사용됩니다.<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|이 상태가 전환될 때 발생하는 동작을 지정합니다. **도구 상자** 에서 활동을 끌어 상태 섹션에 놓으면이 값을 설정할 수 있습니다 <xref:System.Activities.Statements.State.Entry%2A> .|
 
 ## <a name="see-also"></a>추가 정보
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
-- [상태](../workflow-designer/state-activity-designer.md)
+- [State](../workflow-designer/state-activity-designer.md)
 - [전환](../workflow-designer/transition-activity-designer.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189208"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint 응용 프로그램의 성능 프로 파일링
@@ -49,7 +49,7 @@ Visual Studio에서 부하 테스트 및 웹 성능 테스트를 만들어 응�
 
 그림 1: 부하 테스트 결과 예제
 
-![부하 테스트 그래프 뷰 실행](../sharepoint/media/load-webgraphs.png "실행 중인 부하 테스트 그래프 뷰")
+![실행 중인 부하 테스트 그래프 뷰](../sharepoint/media/load-webgraphs.png "실행 중인 부하 테스트 그래프 뷰")
 
 웹 성능 테스트는 최종 사용자가 SharePoint 응용 프로그램과 상호 작용할 수 있는 방법을 시뮬레이션 합니다. 브라우저 세션에서 HTTP 요청을 기록 하거나 **웹 성능 테스트 레코더**를 사용 하 여 웹 성능 테스트를 만들 수 있습니다. 브라우저 세션이 완료 된 후 웹 요청이 **웹 성능 테스트 편집기** 에 표시 됩니다. 그런 다음 **웹 성능 테스트 결과 뷰어에서**결과를 디버그할 수 있습니다. **웹 성능 테스트 편집기**를 사용 하 여 웹 성능 테스트를 수동으로 빌드할 수도 있습니다.
 
@@ -66,7 +66,7 @@ Visual Studio에서 부하 테스트 및 웹 성능 테스트를 만들어 응�
 |[코드 단위 테스트](../test/unit-test-your-code.md)|단위 테스트를 사용 하 여 코드에서 논리 오류를 찾는 방법을 설명 합니다.|
 |[코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|SharePoint 응용 프로그램의 사용자 인터페이스를 테스트 하는 방법을 설명 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [코드 품질 향상](../test/improve-code-quality.md)

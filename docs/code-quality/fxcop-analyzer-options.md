@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706570"
 ---
 # <a name="rule-scope-options-for-net-code-quality-analyzers"></a>.NET 코드 품질 분석기에 대 한 규칙 범위 옵션
@@ -85,28 +85,28 @@ ms.locfileid: "88706570"
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 메서드에 전달 된 인수의 유효성을 검사 하는 null 검사 유효성 검사 메서드의 이름이 null이 아닙니다. | 허용 되는 메서드 이름 형식 (로 구분 `|` ):<br/> -메서드 이름만 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 메서드 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)에 있는 정규화 된 이름 (옵션 접두사 포함) `M:` | None | [CA1062](ca1062.md) |
+| 메서드에 전달 된 인수의 유효성을 검사 하는 null 검사 유효성 검사 메서드의 이름이 null이 아닙니다. | 허용 되는 메서드 이름 형식 (로 구분 `|` ):<br/> -메서드 이름만 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 메서드 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)에 있는 정규화 된 이름 (옵션 접두사 포함) `M:` | 없음 | [CA1062](ca1062.md) |
 
 ## <a name="additional_string_formatting_methods"></a>additional_string_formatting_methods
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 추가 문자열 형식 지정 메서드의 이름 | 허용 되는 메서드 이름 형식 (로 구분 `|` ):<br/> -메서드 이름만 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 메서드 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)에 있는 정규화 된 이름 (옵션 접두사 포함) `M:` | None | [CA2241](ca2241.md) |
+| 추가 문자열 형식 지정 메서드의 이름 | 허용 되는 메서드 이름 형식 (로 구분 `|` ):<br/> -메서드 이름만 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 메서드 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)에 있는 정규화 된 이름 (옵션 접두사 포함) `M:` | 없음 | [CA2241](ca2241.md) |
 
 ## <a name="excluded_type_names_with_derived_types"></a>excluded_type_names_with_derived_types
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 형식 이름 (형식 및 모든 파생 형식이 분석에 대해 제외 됨) | 허용 되는 기호 이름 형식 (로 구분 `|` ):<br/> -형식 이름만 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 형식 포함).<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)에 있는 정규화 된 이름 (옵션 접두사 포함) `T:` | None | [CA1303](ca1303.md) |
+| 형식 이름 (형식 및 모든 파생 형식이 분석에 대해 제외 됨) | 허용 되는 기호 이름 형식 (로 구분 `|` ):<br/> -형식 이름만 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 형식 포함).<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)에 있는 정규화 된 이름 (옵션 접두사 포함) `T:` | 없음 | [CA1303](ca1303.md) |
 
 ## <a name="excluded_symbol_names"></a>excluded_symbol_names
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 분석을 위해 제외 된 기호 이름 | 허용 되는 기호 이름 형식 (로 구분 `|` ):<br/> -기호 이름에만 해당 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 기호 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)으로 정규화 된 이름입니다. 각 기호 이름에는 "M:" 메서드의 접두사, "T:" 형식의 접두사, "N:" 네임 스페이스에 대 한 접두사 등의 기호 종류 접두사가 필요 합니다.<br/> - `.ctor` 생성자 및 `.cctor` for static 생성자의 경우 | None | [CA1062](ca1062.md) [CA1303](ca1303.md) [CA2000](ca2000.md) [CA2100](ca2100.md) [CA2301](ca2301.md) [CA2302](ca2302.md)<br/>[CA2311](ca2311.md) [CA2312](ca2312.md) [CA2321](ca2321.md) [CA2322](ca2322.md) [CA2327](ca2327.md) [CA2328](ca2328.md)<br/>[CA2329](ca2329.md) [CA2330](ca2330.md) [CA3001](ca3001.md) [CA3002](ca3002.md) [CA3003](ca3003.md) [CA3004](ca3004.md)<br/>[CA3005](ca3005.md) [CA3006](ca3006.md) [CA3007](ca3007.md) [CA3008](ca3008.md) [CA3009](ca3009.md) [CA3010](ca3010.md)<br/>[CA3011](ca3011.md) [CA3012](ca3012.md) [CA5361](ca5361.md) [CA5376 CA5377 CA5378](ca5378.md)<br/>[CA5380](ca5380.md) [CA5381](ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](ca5389.md) CA5390 |
+| 분석을 위해 제외 된 기호 이름 | 허용 되는 기호 이름 형식 (로 구분 `|` ):<br/> -기호 이름에만 해당 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 기호 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)으로 정규화 된 이름입니다. 각 기호 이름에는 "M:" 메서드의 접두사, "T:" 형식의 접두사, "N:" 네임 스페이스에 대 한 접두사 등의 기호 종류 접두사가 필요 합니다.<br/> - `.ctor` 생성자 및 `.cctor` for static 생성자의 경우 | 없음 | [CA1062](ca1062.md) [CA1303](ca1303.md) [CA2000](ca2000.md) [CA2100](ca2100.md) [CA2301](ca2301.md) [CA2302](ca2302.md)<br/>[CA2311](ca2311.md) [CA2312](ca2312.md) [CA2321](ca2321.md) [CA2322](ca2322.md) [CA2327](ca2327.md) [CA2328](ca2328.md)<br/>[CA2329](ca2329.md) [CA2330](ca2330.md) [CA3001](ca3001.md) [CA3002](ca3002.md) [CA3003](ca3003.md) [CA3004](ca3004.md)<br/>[CA3005](ca3005.md) [CA3006](ca3006.md) [CA3007](ca3007.md) [CA3008](ca3008.md) [CA3009](ca3009.md) [CA3010](ca3010.md)<br/>[CA3011](ca3011.md) [CA3012](ca3012.md) [CA5361](ca5361.md) [CA5376 CA5377 CA5378](ca5378.md)<br/>[CA5380](ca5380.md) [CA5381](ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](ca5389.md) CA5390 |
 
 ## <a name="disallowed_symbol_names"></a>disallowed_symbol_names
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 분석 컨텍스트에서 허용 되지 않는 기호의 이름입니다. | 허용 되는 기호 이름 형식 (로 구분 `|` ):<br/> -기호 이름에만 해당 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 기호 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)으로 정규화 된 이름입니다. 각 기호 이름에는 "M:" 메서드의 접두사, "T:" 형식의 접두사, "N:" 네임 스페이스에 대 한 접두사 등의 기호 종류 접두사가 필요 합니다.<br/> - `.ctor` 생성자 및 `.cctor` for static 생성자의 경우 | None | [CA1031](ca1031.md) |
+| 분석 컨텍스트에서 허용 되지 않는 기호의 이름입니다. | 허용 되는 기호 이름 형식 (로 구분 `|` ):<br/> -기호 이름에만 해당 (포함 하는 형식 또는 네임 스페이스에 관계 없이 이름이 인 모든 기호 포함)<br/> -기호의 [설명서 ID 형식](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)으로 정규화 된 이름입니다. 각 기호 이름에는 "M:" 메서드의 접두사, "T:" 형식의 접두사, "N:" 네임 스페이스에 대 한 접두사 등의 기호 종류 접두사가 필요 합니다.<br/> - `.ctor` 생성자 및 `.cctor` for static 생성자의 경우 | 없음 | [CA1031](ca1031.md) |

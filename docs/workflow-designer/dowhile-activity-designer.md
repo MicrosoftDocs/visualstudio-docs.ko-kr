@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c56a9ab8b46f8f7ee36875dda507cb9f288136cf
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875607"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile 활동 디자이너
@@ -27,7 +27,7 @@ ms.locfileid: "86875607"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|거짓|조건이 **true**인 동안 실행할 작업입니다. 활동을 추가 하려면 <xref:System.Activities.Statements.DoWhile.Body%2A> 도구 상자의 활동을 "여기에 작업 놓기" 힌트 텍스트가 있는 **DoWhile** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|조건이 **true**인 동안 실행할 작업입니다. 활동을 추가 하려면 <xref:System.Activities.Statements.DoWhile.Body%2A> 도구 상자의 활동을 "여기에 작업 놓기" 힌트 텍스트가 있는 **DoWhile** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
 |<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|루프를 반복할 때마다 평가할 조건입니다. 을 설정 하려면 <xref:System.Activities.Statements.DoWhile.Condition%2A> **DoWhile** Activity 디자이너의 **조건** 상자 또는 속성 표에 Visual Basic 식을 입력 합니다.|
 
 ## <a name="see-also"></a>추가 정보

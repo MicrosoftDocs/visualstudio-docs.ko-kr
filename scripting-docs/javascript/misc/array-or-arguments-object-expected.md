@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 266eed585f1d45e15c084e424d441220f6e671ee
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815775"
 ---
 # <a name="array-or-arguments-object-expected"></a>Array 또는 Arguments 개체가 필요합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "85815775"
   
 - `Array`또는 **Arguments** 개체를 두 번째 인수로 지정 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)   
  [apply 메서드 (Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [함수](../../javascript/functions-javascript.md)

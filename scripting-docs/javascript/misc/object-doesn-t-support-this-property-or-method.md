@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7a63b73e27de4e33aaa5c833c79f339da66954d3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815736"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>개체에서 이 속성 또는 메서드를 지원하지 않음
@@ -32,6 +32,6 @@ ms.locfileid: "85815736"
   
 - 자세한 내용은 개체 설명서를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [Object 개체](../../javascript/reference/object-object-javascript.md)   
  [JavaScript 개체](../../javascript/reference/javascript-objects.md)

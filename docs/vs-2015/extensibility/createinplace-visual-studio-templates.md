@@ -14,16 +14,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184244"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-프로젝트를 만듭니다 및 지정 된 위치의 매개 변수 대체를 수행 하거나 임시 위치에 매개 변수 대체를 수행 하 고 다음 지정된 된 위치에 프로젝트를 저장 여부를 지정 합니다.  
+프로젝트를 만들고 지정 된 위치에서 매개 변수 대체를 수행 하거나 임시 위치에서 매개 변수 대체를 수행 하 고 지정 된 위치에 프로젝트를 저장할 것인지 여부를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -53,12 +53,12 @@ ms.locfileid: "68184244"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트는 `true` 또는 `false`여야 합니다. 하는 경우 `true`프로젝트가 생성 되 고 지정 된 위치에서 매개 변수 대체가 수행 됩니다 합니다 **새 프로젝트** 대화 상자. 경우 `false`, 매개 변수를 대체 임시 위치에서 수행 되 고 프로젝트 후 지정된 된 위치에 복사 됩니다.  
+ 텍스트는 `true` 또는 `false`여야 합니다. 인 경우 `true` 프로젝트가 만들어지고 **새 프로젝트** 대화 상자에 지정 된 위치에서 매개 변수 대체가 수행 됩니다. 인 경우 `false` 매개 변수 대체가 임시 위치에서 수행 되 고 프로젝트는 지정 된 위치에 복사 됩니다.  
   
 ## <a name="remarks"></a>설명  
  `CreateInPlace`는 선택적 요소입니다. 기본값은 `true`입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 템플릿의 메타데이터를 보여 줍니다.  
   
 ```  
@@ -86,6 +86,6 @@ ms.locfileid: "68184244"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

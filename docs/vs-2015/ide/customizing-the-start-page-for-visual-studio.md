@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665846"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio 시작 페이지 사용자 지정
@@ -31,7 +31,7 @@ Visual Studio의 시작 페이지를 사용자 지정할 수 있는 기본 방�
 
 ## <a name="customizing-the-default-start-page"></a>기본 시작 페이지 사용자 지정
 
-1. 메뉴 모음에서 **도구**, **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구**, **옵션**을 선택 합니다.
 
 2. **환경**을 확장한 다음 **시작**을 선택합니다.
 
@@ -52,7 +52,7 @@ Visual Studio의 시작 페이지를 사용자 지정할 수 있는 기본 방�
 
          [고유한 시작 페이지 만들기](../misc/creating-your-own-start-page.md)를 참조하세요.
 
-2. 메뉴 모음에서 **도구**, **옵션**을 선택합니다.
+2. 메뉴 모음에서 **도구**, **옵션**을 선택 합니다.
 
 3. **환경**을 확장한 다음 **시작**을 선택합니다.
 
@@ -61,5 +61,5 @@ Visual Studio의 시작 페이지를 사용자 지정할 수 있는 기본 방�
 > [!NOTE]
 > 사용자 지정 시작 페이지에 오류가 있어 Visual Studio에 충돌이 발생하면 안전 모드에서 Visual Studio를 시작한 다음 기본 시작 페이지를 사용하도록 설정할 수 있습니다. [/SafeMode(devenv.exe)](../ide/reference/safemode-devenv-exe.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [고유한 시작 페이지 만들기](../misc/creating-your-own-start-page.md)

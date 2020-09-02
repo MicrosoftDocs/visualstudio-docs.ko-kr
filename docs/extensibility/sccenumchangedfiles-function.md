@@ -1,5 +1,5 @@
 ---
-title: SccEnum변경파일 함수 | 마이크로 소프트 문서
+title: SccEnumChangedFiles 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700913"
 ---
-# <a name="sccenumchangedfiles-function"></a>SccEnum변함없파일 함수
-로컬 파일 목록이 주어지면 이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 결정합니다.
+# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 함수
+로컬 파일 목록이 지정 된 경우이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,31 +37,31 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>매개 변수
  pContext
 
-【인】 소스 제어 플러그인 컨텍스트 포인터입니다.
+진행 소스 제어 플러그 인 컨텍스트 포인터입니다.
 
- Hwnd
+ hWnd
 
-【인】 소스 제어 플러그인이 제공하는 모든 대화 상자에 대한 상위로 사용할 수 있는 IDE 창에 대한 핸들입니다.
+진행 소스 제어 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.
 
- c파일
+ cFiles
 
-【인】 배열에 지정된 파일 `lpFileNames` 이름 수입니다. 또한 배열의 `plIsFileDifferent` 크기를 지정합니다.
+진행 배열에 지정 된 파일 이름의 수 `lpFileNames` 입니다. 또한 배열의 크기를 지정 합니다 `plIsFileDifferent` .
 
- lpFile 이름
+ lpFileNames 이름
 
-【인】 확인할 로컬 파일 이름 배열입니다.
+진행 확인할 로컬 파일 이름 배열입니다.
 
- plIsFile다른
+ plIsFileDifferent
 
-【인, 아웃】 각 파일의 차이 상태를 나타내는 값 의 배열(배열에는 최소한 `cFiles` 항목이 있어야 함). 비영은 파일이 다르다는 것을 의미합니다.
+[in, out] 각 파일의 차이점 상태를 나타내는 값의 배열입니다. 배열에는 최소한의 항목이 있어야 합니다 `cFiles` . 0이 아닌 값은 파일이 다른 것을 의미 합니다.
 
 ## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그인 구현은 다음 값 중 하나를 반환해야 합니다.
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|작업이 완료되었습니다.|
 |SCC_UNSPECIFIEDERROR|일반 오류.|
 
-## <a name="see-also"></a>참조
-- [소스 제어 플러그인 API 기능](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>추가 정보
+- [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

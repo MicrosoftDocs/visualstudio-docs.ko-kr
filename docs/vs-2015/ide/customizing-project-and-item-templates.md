@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd88191baf15837a7862fc447471744977bdf60b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665869"
 ---
 # <a name="customizing-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 사용자 지정
@@ -28,17 +28,17 @@ ms.locfileid: "72665869"
 
 - 기존 템플릿을 사용자 지정 템플릿으로 수정 및 내보냅니다.
 
-     자세한 내용은 [방법: 기존 템플릿 업데이트](../ide/how-to-update-existing-templates.md)를 참조하세요.
+     자세한 내용은 [방법: 기존 템플릿 업데이트](../ide/how-to-update-existing-templates.md)를 참조 하세요.
 
 - 기존 값을 바꾸기 위해 사용자 지정 매개 변수를 템플릿에 전달합니다.
 
-     자세한 내용은 [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
+     자세한 내용은 [방법: 템플릿에서 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조 하세요.
 
 - 템플릿에서 프로젝트를 만드는 마법사를 사용자 지정합니다.
 
      자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)을 참조하세요.
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 
  [방법: 템플릿 문제 해결](../ide/how-to-troubleshoot-templates.md)

@@ -17,14 +17,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3b58f772387c09078c6086883a7c9322090c3df7
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816451"
 ---
 # <a name="true-keyword"></a>True 키워드
 **True** 키워드의 값은-1과 같습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [False(Windows Script Technologies)](../../javascript/misc/false-windows-script-technologies.md)
