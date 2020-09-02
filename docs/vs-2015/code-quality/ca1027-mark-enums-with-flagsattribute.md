@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 774279dd05bd14c34df7f1d450f00599812d6a5b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544510"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: 열거형을 FlagsAttribute로 표시하세요.
@@ -46,7 +46,7 @@ ms.locfileid: "85544510"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  열거형 값을 결합할 수 없도록 하려면이 규칙에서 경고를 표시 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는를 `DaysEnumNeedsFlags` 사용 하기 위한 요구 사항을 충족 하는 열거형입니다 <xref:System.FlagsAttribute> . `ColorEnumShouldNotHaveFlag`열거형의 값이 2의 거듭제곱 이지만 잘못 된 값을 지정 하는 <xref:System.FlagsAttribute> 경우 이 [는 열거형을 FlagsAttribute로 표시 하지 않습니다. 규칙 CA2217를](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)위반 합니다.
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
@@ -54,5 +54,5 @@ ms.locfileid: "85544510"
 ## <a name="related-rules"></a>관련 규칙
  [CA2217: 열거형을 FlagsAttribute로 표시하지 마세요.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.FlagsAttribute?displayProperty=fullName>

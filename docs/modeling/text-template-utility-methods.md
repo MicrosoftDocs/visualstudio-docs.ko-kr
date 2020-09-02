@@ -119,7 +119,7 @@ Hello
 
 `<#@template ... hostspecific="true" #>`
 
-의 유형은 `this.Host` 템플릿이 실행 되는 호스트 유형에 따라 달라 집니다. Visual Studio에서 실행 되는 템플릿에서로 캐스팅 하 여 `this.Host` `IServiceProvider` IDE와 같은 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
+의 유형은 `this.Host` 템플릿이 실행 되는 호스트 유형에 따라 달라 집니다. Visual Studio에서 실행 되는 템플릿에서로 캐스팅 하 여 `this.Host` `IServiceProvider` IDE와 같은 서비스에 액세스할 수 있습니다. 예:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

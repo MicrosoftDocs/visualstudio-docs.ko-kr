@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148155"
 ---
 # <a name="sdi-server-applications"></a>SDI 서버 애플리케이션
@@ -34,6 +34,6 @@ SDI 서버 애플리케이션을 디버깅할 때는 C/C++, C# 또는 Visual Bas
 ## <a name="finding-the-command-line-arguments-property"></a>명령줄 인수 속성 찾기  
  *프로젝트* 속성 페이지 대화 상자에 액세스하려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, 바로 가기 메뉴에서 속성을 선택합니다. 명령줄 인수 속성을 찾으려면 구성 속성 범주를 확장하고 디버깅 페이지를 클릭하십시오.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [COM 및 ActiveX 디버깅](../debugger/com-and-activex-debugging.md)   
  [방법: COM 서버 디버그](../debugger/how-to-debug-com-servers.md)

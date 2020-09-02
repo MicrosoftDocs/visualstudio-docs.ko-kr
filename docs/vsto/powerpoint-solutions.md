@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985664"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 솔루션
   Visual Studio에서는 Microsoft Office PowerPoint용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 PowerPoint를 자동화하거나, PowerPoint 기능을 확장하거나, PowerPoint UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.
 
- VSTO 추가 기능에 대 한 자세한 내용은 vsto 추가 [기능 프로그래밍 시작](getting-started-programming-vsto-add-ins.md) 및 [Vsto 추가 기능 아키텍처](architecture-of-vsto-add-ins.md)를 참조 하세요. Microsoft Office를 사용한 프로그래밍을 처음 접하는 경우 [Visual Studio &#40;&#41;에서 Office 개발 시작](getting-started-office-development-in-visual-studio.md)을 참조 하세요.
+ VSTO 추가 기능에 대 한 자세한 내용은 vsto 추가 [기능 프로그래밍 시작](getting-started-programming-vsto-add-ins.md) 및 [Vsto 추가 기능 아키텍처](architecture-of-vsto-add-ins.md)를 참조 하세요. Microsoft Office를 사용한 프로그래밍을 처음 접하는 경우 [Visual Studio&#41;에서 Office 개발 시작 &#40;](getting-started-office-development-in-visual-studio.md)을 참조 하세요.
 
  [!INCLUDE[appliesto_pptallapp](includes/appliesto-pptallapp-md.md)]
 
@@ -42,11 +42,11 @@ ms.locfileid: "72985664"
 
 - 슬라이드에 도형을 추가하거나 변경합니다.
 
-  VSTO 추가 기능에서 PowerPoint 개체 모델에 액세스 하려면 프로젝트에서 `ThisAddIn` 클래스의 `Application` 필드를 사용 합니다. `Application` 필드는 PowerPoint의 현재 인스턴스를 나타내는 [응용 프로그램](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) 개체를 반환 합니다. 자세한 내용은 [VSTO 추가 기능 프로그래밍](programming-vsto-add-ins.md)을 참조 하세요.
+  VSTO 추가 기능에서 PowerPoint 개체 모델에 액세스 하려면 `Application` 프로젝트에서 클래스의 필드를 사용 `ThisAddIn` 합니다. `Application`필드는 PowerPoint의 현재 인스턴스를 나타내는 [응용 프로그램](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) 개체를 반환 합니다. 자세한 내용은 [VSTO 추가 기능 프로그래밍](programming-vsto-add-ins.md)을 참조 하세요.
 
-  PowerPoint 개체 모델을 호출할 때 PowerPoint의 주 Interop 어셈블리에서 제공되는 형식을 사용합니다. 주 interop 어셈블리는 VSTO 추가 기능의 관리 코드와 PowerPoint의 COM 개체 모델 간의 다리 역할을 합니다. PowerPoint 주 interop 어셈블리의 모든 형식은 [Microsoft의 Microsoft](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) 네임 스페이스에 정의 되어 있습니다. 주 interop 어셈블리에 대 한 자세한 내용은 [office 솔루션 개발 &#40;개요 VSTO&#41; ](office-solutions-development-overview-vsto.md) 및 [office 주 interop 어셈블리](office-primary-interop-assemblies.md)를 참조 하세요.
+  PowerPoint 개체 모델을 호출할 때 PowerPoint의 주 Interop 어셈블리에서 제공되는 형식을 사용합니다. 주 interop 어셈블리는 VSTO 추가 기능의 관리 코드와 PowerPoint의 COM 개체 모델 간의 다리 역할을 합니다. PowerPoint 주 interop 어셈블리의 모든 형식은 [Microsoft의 Microsoft](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) 네임 스페이스에 정의 되어 있습니다. 주 interop 어셈블리에 대 한 자세한 내용은 [office 솔루션 개발 개요 &#40;VSTO&#41;](office-solutions-development-overview-vsto.md) 및 [office 주 interop 어셈블리](office-primary-interop-assemblies.md)를 참조 하세요.
 
-## <a name="WordOMDocumentation"></a>PowerPoint 개체 모델 설명서 사용
+## <a name="use-the-powerpoint-object-model-documentation"></a><a name="WordOMDocumentation"></a> PowerPoint 개체 모델 설명서 사용
  PowerPoint 개체 모델에 대한 자세한 내용은 PowerPoint PIA(주 interop 어셈블리) 참조 및 VBA 개체 모델 참조를 참조할 수 있습니다.
 
 ### <a name="primary-interop-assembly-reference"></a>주 interop 어셈블리 참조
@@ -62,7 +62,7 @@ ms.locfileid: "72985664"
 ## <a name="customize-the-user-interface-of-powerpoint"></a>PowerPoint의 사용자 인터페이스 사용자 지정
  다음과 같은 방법으로 PowerPoint의 UI를 수정할 수 있습니다.
 
-|작업|추가 정보|
+|Task|참조 항목|
 |----------|--------------------------|
 |사용자 지정 작업창을 만듭니다.|[사용자 지정 작업 창](custom-task-panes.md)|
 |리본에 사용자 지정 탭을 추가합니다.|[리본 개요](ribbon-overview.md)|
@@ -70,11 +70,11 @@ ms.locfileid: "72985664"
 
  PowerPoint 및 기타 Microsoft Office 응용 프로그램의 UI를 사용자 지정 하는 방법에 대 한 자세한 내용은 [OFFICE ui 사용자 지정](office-ui-customization.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [연습: PowerPoint 용 첫 VSTO 추가 기능 만들기](walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 - [VSTO 추가 기능 프로그래밍 시작](getting-started-programming-vsto-add-ins.md)
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](office-solutions-development-overview-vsto.md)
-- [VSTO 추가 기능 아키텍처](architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](architecture-of-vsto-add-ins.md)
 - [방법: Visual Studio에서 Office 프로젝트 만들기](how-to-create-office-projects-in-visual-studio.md)
 - [VSTO 추가 기능 프로그램](programming-vsto-add-ins.md)
 - [Office 솔루션에서 코드 작성](writing-code-in-office-solutions.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41c3fd765977a1f92f5cf125bb64bb7f5b0cd2cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664293"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend의 바로 가기 키
@@ -21,27 +21,27 @@ ms.locfileid: "72664293"
 
 프로젝트 바로 가기
 
-|이러한 기능은 다음과 같습니다.|수행할 작업|
+|원하는 작업|단계|
 |----------------|-------------|
 |새 프로젝트 만들기|Ctrl+Shift+N|
-|프로젝트 또는 솔루션(사이트 아님) 열기|Ctrl+Shift+O|
+|프로젝트 또는 솔루션(사이트 아님) 열기|CTRL+SHIFT+O|
 |솔루션 닫기|Ctrl+Shift+C|
-|솔루션 또는 사이트의 복사본 저장|Ctrl+Shift+P|
-|프로젝트에 기존 항목 추가|Ctrl+I|
+|솔루션 또는 사이트의 복사본 저장|CTRL+SHIFT+P|
+|프로젝트에 기존 항목 추가|CTRL+I|
 |DLL에 참조 추가(WPF)|Alt+Shift+R|
 |프로젝트 빌드|Ctrl+Shift+B|
 |프로젝트 또는 사이트 테스트|F5|
 
 ## <a name="document-shortcuts"></a>문서 바로 가기
 
-|이러한 기능은 다음과 같습니다.|수행할 작업|
+|원하는 작업|단계|
 |----------------|-------------|
 |열린 문서 간 전환|Ctrl+Tab|
 |활성 문서 저장|Ctrl+S|
 |모든 문서 저장|Ctrl+Shift+S|
 |활성 문서 닫기|Ctrl+W|
 |열린 문서 모두 닫기|Ctrl+Shift+W|
-|마지막 작업 실행 취소|Ctrl+Z|
+|마지막 작업 실행 취소|CTRL+Z|
 |실행 취소한 마지막 작업 다시 실행|Ctrl+Y 또는 Ctrl+Shift+Z|
 |디자인 타임 주석 만들기|Ctrl+Shift+T|
 |잘라내기|Ctrl+X|
@@ -53,9 +53,9 @@ ms.locfileid: "72664293"
 
 ## <a name="object-shortcuts"></a>개체 바로 가기
 
-|이러한 기능은 다음과 같습니다.|수행할 작업|
+|원하는 작업|단계|
 |----------------|-------------|
-|새 항목 만들기|Ctrl+N|
+|새 항목 만들기|CTRL+N|
 |개체 복제|Alt 키를 누른 채로 개체 끌기|
 |개체 부모 재지정|Alt 키를 누른 상태에서 개체를 레이아웃 패널 위로 끌기|
 |컨트롤의 텍스트 편집|F2(끝내려면 Esc 키 누르기)|
@@ -75,7 +75,7 @@ ms.locfileid: "72664293"
 |개체를 레이아웃 패널로 그룹화|Ctrl+G|
 |개체 그룹 해제|Ctrl+Shift+G|
 |선택한 개체를 맨 앞으로 가져오기|Ctrl+Shift+]|
-|앞으로 가져오기|Ctrl+]|
+|앞으로 가져오기|CTRL+]|
 |선택한 개체를 뒤로 보내기|Ctrl+Shift+[|
 |뒤로 보내기|Ctrl+[|
 |선택한 개체에서 사용자 컨트롤 만들기(WPF)|F8|
@@ -86,15 +86,15 @@ ms.locfileid: "72664293"
 |복합형 패스 만들기|Ctrl+8|
 |복합형 패스 해제|Ctrl+Shift+8|
 |선택 항목 잠금|Ctrl+L|
-|모든 개체 잠금 해제|Ctrl+Shift+L|
-|선택 항목 표시|Ctrl+T|
-|선택영역 숨기기|Ctrl+3|
+|모든 개체 잠금 해제|CTRL+SHIFT+L|
+|선택 항목 표시|CTRL+T|
+|선택영역 숨기기|CTRL+3|
 |모든 개체 선택|Ctrl+A|
 |모든 개체 선택 지우기|Ctrl+Shift+A|
 
 ## <a name="view-shortcuts"></a>보기 바로 가기
 
-|이러한 기능은 다음과 같습니다.|수행할 작업|
+|원하는 작업|단계|
 |----------------|-------------|
 |**디자인**, **코드** 및 **분할** 보기 간 전환|F11|
 |아트보드 확대|Ctrl+등호|
@@ -103,14 +103,14 @@ ms.locfileid: "72664293"
 |아트보드를 왼쪽/오른쪽으로 이동|Shift 키를 누른 채로 마우스 휠 돌리기|
 |아트보드를 위/아래로 이동|Ctrl 키를 누른 채로 마우스 휠 돌리기|
 |선택 영역을 화면 크기에 맞추기|Ctrl+0|
-|아트 보드를 실제 크기로 보기|Ctrl+1|
+|아트 보드를 실제 크기로 보기|CTRL+1|
 |핸들 표시/숨기기|F9|
 |개체 경계선 표시 또는 숨기기|Ctrl+Shift+H|
 |**디자인**, **XAML** 및 **분할** 보기 간 전환|F11|
 
 ## <a name="workspace-shortcuts"></a>작업 영역 바로 가기
 
-|이러한 기능은 다음과 같습니다.|수행할 작업|
+|원하는 작업|단계|
 |----------------|-------------|
 |**애니메이션** 작업 영역과 **디자인** 작업 영역 간 전환|Ctrl+F11|
 |**자산** 패널 표시/숨기기|Ctrl+마침표|

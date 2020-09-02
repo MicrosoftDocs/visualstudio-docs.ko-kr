@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651012"
 ---
 # <a name="symbol-path-command"></a>기호 경로 명령
@@ -39,19 +39,19 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="remarks"></a>설명
  `pathname`을 지정하지 않으면 이 명령은 현재 기호 경로를 나열합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 기호 디렉터리 목록에 두 개의 경로를 추가합니다.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 현재 기호 경로의 세미콜론으로 구분된 목록을 표시합니다.
 
 ```
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [명령 창](../../ide/reference/command-window.md) [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)

@@ -13,49 +13,49 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 22ad0a7e1b14b036239d7b6a5931badb5787b752
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684813"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 인터페이스는 보류 중인 중단점을 바인딩할 수 없습니다는 로드 프로그램 경고 또는 오류 때문에 세션 디버그 관리자 SDM ()를 알려 줍니다.  
+이 인터페이스는 경고 또는 오류로 인해 보류 중인 중단점을 로드 된 프로그램에 바인딩할 수 없음을 세션 디버그 관리자 (SDM)에 게 알립니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugBreakpointErrorEvent2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- DE 중단점에 대 한 지원의 일부로이 인터페이스를 구현합니다. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이 인터페이스와 동일한 개체에서 인터페이스를 구현 해야 (SDM 사용 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 액세스 하는 `IDebugEvent2` 인터페이스).  
+ DE는 중단점에 대 한 지원의 일부로이 인터페이스를 구현 합니다. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 인터페이스는이 인터페이스와 동일한 개체에서 구현 되어야 합니다. 즉, SDM에서 인터페이스에 액세스 하는 데 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 를 사용 합니다 `IDebugEvent2` .  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- DE을 만들어 디버깅 중인 프로그램에 보류 중인 중단점을 바인딩할 수 없습니다 하는 경우이 이벤트 개체를 보냅니다. 이벤트를 사용 하 여 전송 되는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM를 디버깅 중인 프로그램에 연결할 때 제공한 콜백 함수.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ DE는 보류 중인 중단점을 디버깅 중인 프로그램에 바인딩할 수 없는 경우이 이벤트 개체를 만들고 보냅니다. 이벤트는 디버깅 중인 프로그램에 연결 될 때 SDM에서 제공 하는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 함수를 사용 하 여 보냅니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDebugBreakpointErrorEvent2`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointErrorEvent2` .  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|가져옵니다 합니다 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 경고 또는 오류를 설명 하는 인터페이스입니다.|  
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|경고 또는 오류를 설명 하는 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 인터페이스를 가져옵니다.|  
   
 ## <a name="remarks"></a>설명  
- 중단점이 바인딩된, 때마다 SDM에 이벤트가 전송 됩니다. 중단점을 바인딩할 수 없는 경우는 `IDebugBreakpointErrorEvent2` 이 고, 그렇지 않으면 보낸는 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 보내집니다.  
+ 중단점이 바인딩될 때마다 이벤트는 SDM으로 전송 됩니다. 중단점을 바인딩할 수 없으면 `IDebugBreakpointErrorEvent2` 이 전송 되 고, 그렇지 않으면 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 전송 됩니다.  
   
- 예를 들어, 구문 분석 또는 평가 위한 관련 된 보류 중인 중단점 조건이 실패 하면 경고 지금은 보류 중인 중단점을 바인딩할 수 없습니다 전송 됩니다. 이 중단점에 대 한 코드를 아직 로드 되지 않은 경우 발생할 수 있습니다.  
+ 예를 들어 보류 중인 중단점과 연결 된 조건이 구문 분석 또는 평가에 실패 하면 현재 보류 중인 중단점을 바인딩할 수 없다는 경고가 전송 됩니다. 중단점에 대 한 코드가 아직 로드 되지 않은 경우이 문제가 발생할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

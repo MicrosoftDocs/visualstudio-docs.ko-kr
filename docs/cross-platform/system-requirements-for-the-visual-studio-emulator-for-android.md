@@ -28,7 +28,7 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 > [!IMPORTANT]
 > 에뮬레이터에 대한 설치 프로그램은 Android용 Visual Studio 에뮬레이터를 실행하기 위한 필수 조건을 확인합니다. 필수 조건이 없는 경우 경고가 표시되지만 이러한 필수 조건을 필수로 요구하지는 않습니다.
 
-## <a name="Checklist"></a> 빠른 검사 목록
+## <a name="quick-checklist"></a><a name="Checklist"></a> 빠른 검사 목록
 
 다음은 Android용 Visual Studio 에뮬레이터를 실행하기 위한 요구 사항의 빠른 검사 목록입니다. 자세한 내용은 이 항목의 후속 섹션을 참조하세요.
 

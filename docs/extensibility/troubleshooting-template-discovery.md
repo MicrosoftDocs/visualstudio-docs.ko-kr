@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235045"
 ---
 # <a name="troubleshooting-template-installation"></a>템플릿 설치 문제 해결
@@ -70,7 +70,7 @@ ms.locfileid: "87235045"
 > [!NOTE]
 > 로깅을 사용 하지 않도록 설정 하려면 .pkgdef 파일을 제거 하거나의 값을 `EnableTemplateDiscoveryLog` 로 변경한 `dword:00000000` 다음를 다시 실행 `devenv /updateConfiguration` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [사용자 지정 프로젝트 및 항목 템플릿 만들기](creating-custom-project-and-item-templates.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f783161865092f714955b65e6f2fa4791741cbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664282"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
@@ -62,7 +62,7 @@ ms.locfileid: "72664282"
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 ### <a name="code"></a>코드
 
@@ -135,7 +135,7 @@ namespace LinqToXmlDataBinding {
 ```
 
 ### <a name="comments"></a>주석
- 이러한 처리기와 관련된 XAML 소스는 [L2DBForm.xaml 소스 코드](../designers/l2dbform-xaml-source-code.md)를 참조하세요.
+ 이러한 처리기에 연결 된 XAML 소스는 [L2dbform.xaml 소스 코드](../designers/l2dbform-xaml-source-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [연습: LinqToXmlDataBinding 예제](../designers/walkthrough-linqtoxmldatabinding-example.md) [l2dbform.xaml 소스 코드](../designers/l2dbform-xaml-source-code.md)
