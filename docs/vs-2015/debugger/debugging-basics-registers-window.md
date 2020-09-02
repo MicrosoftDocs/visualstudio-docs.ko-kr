@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5c9380ccc9a21270da3c5832222976e4c7121e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686712"
 ---
 # <a name="debugging-basics-registers-window"></a>디버깅 기본 사항: 레지스터 창
@@ -45,7 +45,7 @@ ms.locfileid: "65686712"
   
  **레지스터** 창 표시에 대한 자세한 내용은 [레지스터 창 사용](../debugger/how-to-use-the-registers-window.md)을 참조하세요.  
   
- 볼 때 합니다 **등록** 창이 예제 같은 항목이 표시 됩니다.  
+ **레지스터** 창을 보면 다음 예제와 같은 항목이 표시 됩니다.  
   
 ```  
 EAX = 003110D8  
@@ -58,6 +58,6 @@ EAX = 003110D8
 ## <a name="register-groups"></a>레지스터 그룹  
  **레지스터** 창에서는 레지스터를 그룹으로 구성하여 간단하게 표시합니다. **레지스터** 창을 마우스 오른쪽 단추로 클릭하면 그룹 목록이 들어 있는 바로 가기 메뉴가 나타나며, 이 메뉴는 필요에 따라 표시하거나 숨길 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 레지스터 창 사용](../debugger/how-to-use-the-registers-window.md)   
  [디버거 기본 사항](../debugger/debugger-basics.md)
