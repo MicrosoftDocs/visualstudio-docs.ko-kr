@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698634"
 ---
 # <a name="cl-task"></a>CL 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행(.exe) 파일, 동적 연결 라이브러리(.dll) 파일 또는 코드 모듈(.netmodule) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)을 참조하세요.  
+Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행(.exe) 파일, 동적 연결 라이브러리(.dll) 파일 또는 코드 모듈(.netmodule) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)을 참조 하세요.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 **CL** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.  
@@ -43,15 +43,15 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    포함 파일을 검색할 디렉터리 목록에 디렉터리를 추가합니다.  
   
-   자세한 내용은 [/I(추가 포함 디렉터리)](https://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49)를 참조하세요.  
+   자세한 내용은 [/i (추가 포함 디렉터리)](https://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49)를 참조 하세요.  
   
 - **AdditionalOptions**  
   
    선택적 문자열 매개 변수입니다.  
   
-   명령줄 옵션의 목록입니다. 예를 들어 "/*option1* /*option2* /*option#*"과 같습니다. 이 매개 변수를 사용하여 다른 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.  
+   명령줄 옵션의 목록입니다. 예: "/*옵션 1 마이그레이션*  / *옵션 2 마이그레이션*  / *option #*". 이 매개 변수를 사용하여 다른 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.  
   
-   자세한 내용은 [컴파일러 옵션](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)을 참조하세요.  
+   자세한 내용은 [컴파일러 옵션](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)을 참조 하세요.  
   
 - **AdditionalUsingDirectories** 선택적 String[] 매개 변수입니다.  
   
@@ -69,7 +69,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    어셈블리 코드가 포함된 목록 파일을 만듭니다.  
   
-   자세한 내용은 [/FA, /Fa(목록 파일)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402)의 **/Fa** 옵션을 참조하세요.  
+   자세한 내용은 [/fa,/fa (목록 파일)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402)의 **/fa** 옵션을 참조 하세요.  
   
 - **AssemblerOutput**  
   
@@ -79,17 +79,17 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NoListing** - *\<없음>*  
+  - **NoListing** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **Assemblycode**  -  **/Fa**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **AssemblyAndMachineCode**  -  **/FAc**  
   
-  - **AssemblyAndSourceCode** - **/FAs**  
+  - **AssemblyAndSourceCode**  -  **/FAs**  
   
-  - **All** - **/FAcs**  
+  - **모두**  -  **/FAcs**  
   
-    자세한 내용은 [/FA, /Fa(목록 파일)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402)의 **/FA**, **/FAc**, **/FAs** 및 **/FAcs** 옵션을 참조하세요.  
+    자세한 내용은/fa [,/fa (목록 파일)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402)의 **/fa**, **/FAc**, **/FAs**및 **/FAcs** 옵션을 참조 하세요.  
   
 - **BasicRuntimeChecks**  
   
@@ -99,13 +99,13 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **기본값** -                          *\<없음>*  
+  - **기본** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** - **/RTCs**  
+  - **StackFrameRuntimeCheck**  -  **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **UninitializedLocalUsageCheck**  -  **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **Enablefastchecks**  -                           **/RTC1**  
   
     자세한 내용은 [/RTC(런타임 오류 검사)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368)를 참조하세요.  
   
@@ -147,11 +147,11 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **Cdecl** - **/Gd**  
+  - **Cdecl**  -  **/Gd**  
   
-  - **FastCall** -                          **/Gr**  
+  - **FastCall**  -                           **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **StdCall**  -                           **/Gz**  
   
     자세한 내용은 [/Gd, /Gr, /Gv, /Gz(호출 규칙)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3)를 참조하세요.  
   
@@ -163,11 +163,11 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **기본값** - *\<없음>*  
+  - **기본** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **CompileAsC**  -  **/Tc**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **CompileAsCpp**  -  **/Tp**  
   
     자세한 내용은 [/Tc, /Tp, /TC, /TP(소스 파일 형식 지정)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b)를 참조하세요.  
   
@@ -179,17 +179,17 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **false** - *\<없음>*  
+  - **허위** - *\<none>*  
   
-  - **true** - **/clr**  
+  - **true**  -  **/clr**  
   
-  - **Pure** - **/clr:pure**  
+  - **순수**  -  **/clr: pure**  
   
-  - **Safe** - **/clr:safe**  
+  - **안전**  -  **/clr: safe**  
   
-  - **OldSyntax** - **/clr:oldSyntax**  
+  - **OldSyntax**  -  **/clr: oldSyntax**  
   
-    자세한 내용은 [/clr(공용 언어 런타임 컴파일)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)을 참조하세요.  
+    자세한 내용은 [/clr (공용 언어 런타임 컴파일)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)를 참조 하세요.  
   
 - **CreateHotpatchableImage**  
   
@@ -207,11 +207,11 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **OldStyle** - **/Z7**  
+  - **이전 스타일 raiseerror**  -  **/Z7**  
   
-  - **ProgramDatabase** - **/Zi**  
+  - 프로그래밍 **데이터베이스**  -  **/Zi**  
   
-  - **EditAndContinue** - **/ZI**  
+  - **Editandcontinue**  -  **/Zi**  
   
     자세한 내용은 [/Z7, /Zi, /ZI(디버그 정보 형식)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)를 참조하세요.  
   
@@ -239,9 +239,9 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **StreamingSIMDExtensions**  -  **/arch: SSE**  
   
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**  
+  - **StreamingSIMDExtensions2**  -  **/arch: SSE2**  
   
     자세한 내용은 [/arch(x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d)를 참조하세요.  
   
@@ -269,13 +269,13 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **None** - **/errorReport:none**  
+  - **없음**  -  **/errorReport: 없음**  
   
-  - **Prompt** - **/errorReport:prompt**  
+  - **프롬프트**  -  **/errorReport: prompt**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **큐**  -  **/errorReport: queue**  
   
-  - **Send** - **/errorReport:send**  
+  - **보내기**  -  **/errorReport: 송신**  
   
     자세한 내용은 [/errorReport(내부 컴파일러 오류 보고)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667)를 참조하세요.  
   
@@ -287,13 +287,13 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **false** - *\<없음>*  
+  - **허위** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **Async**  -  **/Eha**  
   
-  - **Sync** - **/EHsc**  
+  - **동기화**  -  **/Ehsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **Synccthrow**  -  **/EHs**  
   
     자세한 내용은 [/EH(예외 처리 모델)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d)를 참조하세요.  
   
@@ -313,11 +313,11 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **Neither** - *\<없음>*  
+  - **아니면** - *\<none>*  
   
-  - **Size** - **/Os**  
+  - **크기**  -  **/Os**  
   
-  - **Speed** - **/Ot**  
+  - **속도**  -  **/Ot**  
   
     자세한 내용은 [/Os, /Ot(코드 크기 우선, 코드 속도 우선)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2)를 참조하세요.  
   
@@ -337,11 +337,11 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **Precise** - **/fp:precise**  
+  - **정확도**  -  **/fp: precise**  
   
-  - **Strict** - **/fp:strict**  
+  - **Strict**  -  **/fp: strict**  
   
-  - **Fast** - **/fp:fast**  
+  - **Fast**  -  **/fp: fast**  
   
     자세한 내용은 [/fp(부동 소수점 동작 지정)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e)를 참조하세요.  
   
@@ -363,7 +363,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
 - **ForcedUsingFiles**  
   
-   선택적 **String[]** 매개 변수입니다.  
+   선택적 **String []** 매개 변수입니다.  
   
    전처리기가 하나 이상의 지정된 **#using** 파일을 처리하게 합니다.  
   
@@ -401,13 +401,13 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **기본값** - *\<없음>*  
+  - **기본** - *\<none>*  
   
-  - **Disabled** - **/Ob0**  
+  - **사용 안 함**  -  **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **OnlyExplicitInline**  -  **/Ob1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **Anysuitable**  -  **/Ob2**  
   
     자세한 내용은 [/Ob(인라인 함수 확장)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a)를 참조하세요.  
   
@@ -445,7 +445,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
 - **ObjectFiles**  
   
-   선택적 **String[]** 매개 변수입니다.  
+   선택적 **String []** 매개 변수입니다.  
   
    개체 파일의 목록입니다.  
   
@@ -473,7 +473,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    자세한 내용은 [/openmp(OpenMP 2.0 지원 활성화)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13)를 참조하세요.  
   
-- **Optimization**  
+- **최적화**  
   
    선택적 **문자열** 매개 변수입니다.  
   
@@ -481,13 +481,13 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **Disabled** - **/Od**  
+  - **사용 안 함**  -  **/Od**  
   
-  - **MinSpace** - **/O1**  
+  - **Minspace**  -  **/O1**  
   
-  - **MaxSpeed** - **/O2**  
+  - **MaxSpeed**  -  **/O2**  
   
-  - **Full** - **/Ox**  
+  - **전체**  -  **/Ox**  
   
     자세한 내용은 [/O 옵션(코드 최적화)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)을 참조하세요.  
   
@@ -499,11 +499,11 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotUsing** - *\<없음>*  
+  - **NotUsing** - *\<none>*  
   
-  - **Create** - **/Yc**  
+  - **만들기**  -  **/Yc**  
   
-  - **Use** - **/Yu**  
+  - **사용**  -  **/Yu**  
   
     자세한 내용은 [/Yc(미리 컴파일된 헤더 파일 만들기)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) 및 [/Yu(미리 컴파일된 헤더 파일 사용)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f)를 참조하세요. 또한 이 표의 **PrecompiledHeaderFile** 및 **PrecompiledHeaderOutputFile** 매개 변수도 참조하세요.  
   
@@ -591,13 +591,13 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **MultiThreaded** - **/MT**  
+  - **다중 스레드**  -  **/Mt**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **MultiThreadedDebug**  -  **/MTd**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **MultiThreadedDLL**  -  **/Md**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **MultiThreadedDebugDLL**  -  **/Mdd**  
   
     자세한 내용은 [/MD, /MT, /LD(런타임 라이브러리 사용)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)를 참조하세요.  
   
@@ -625,7 +625,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    자세한 내용은 [/RTC(런타임 오류 검사)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368)의 **/RTCc** 옵션을 참조하세요.  
   
-- **Sources**  
+- **원본**  
   
    필수 `ITaskItem[]` 매개 변수입니다.  
   
@@ -647,17 +647,17 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **Default** - **/Zp1**  
+  - **기본값**  -  **/Zp1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1 바이트**  -  **/Zp1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2Bytes**  -  **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4Bytes**  -  **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8Bytes**  -  **/Zp8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16Bytes**  -  **/Zp16**  
   
     자세한 내용은 [/Zp(구조체 멤버 맞춤)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f)를 참조하세요.  
   
@@ -679,11 +679,11 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
 - **TreatSpecificWarningsAsErrors**  
   
-   선택적 **String[]** 매개 변수입니다.  
+   선택적 **String []** 매개 변수입니다.  
   
    지정된 컴파일러 경고 목록을 오류로 처리합니다.  
   
-   자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)의 **/we**`n` 옵션을 참조하세요.  
+   자세한 내용은 **/we** `n` [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/wd,/We,/WO,/Wv,/wx (경고 수준)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)의/we 옵션을 참조 하세요.  
   
 - **TreatWarningAsError**  
   
@@ -741,19 +741,19 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - **TurnOffAllWarnings**  -  **/W0**  
   
-  - **Level1** - **/W1**  
+  - **Level1**  -  **/W1**  
   
-  - **Level2** - **/W2**  
+  - **Level2**  -  **/W2**  
   
-  - **Level3** - **/W3**  
+  - **Level3**  -  **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  -  **/W4**  
   
-  - **EnableAllWarnings** - **/Wall**  
+  - **Enableallwarnings**  -  **/Wall**  
   
-    자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)의 **/W**_n_ 옵션을 참조하세요.  
+    자세한 내용은 [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/wd,/we,/wo,/Wv,/wx (경고 수준)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)에서 **/w**_n_ 옵션을 참조 하세요.  
   
 - **WholeProgramOptimization**  
   
@@ -801,7 +801,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    자세한 내용은 이 표의 **TLogReadFiles** 및 **TLogWriteFiles** 매개 변수를 참조하세요.  
   
-## <a name="remarks"></a>주의  
+## <a name="remarks"></a>설명  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)

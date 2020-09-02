@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547786"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: 사용되지 않은 매개 변수를 검토하세요.
@@ -61,7 +61,7 @@ Visual Studio에 대 한 최신 설명서는 [CA1801: 사용 하지 않는 매�
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이전에 제공 된 코드에 대 한 경고를 수정 하 여 주요 변경 내용을 적용할 수 있는 것은 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 두 개의 메서드를 보여 줍니다. 하나는 규칙을 위반 하 고 다른 메서드는 규칙을 충족 합니다.
 
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]

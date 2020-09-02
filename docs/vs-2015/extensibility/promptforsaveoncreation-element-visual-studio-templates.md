@@ -13,16 +13,16 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675365"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-저장 위치를 통해 프로젝트에 대해 묻는 여부를 지정 합니다 **새 프로젝트** 프로젝트를 만들 때 대화 상자. 이 요소 설정 된 경우 `true`에 저장 된 사용자가 입력 한 다음 위치 같으면 `false`을 묻는 메시지가 나타나지 않습니다. (즉, 임시 프로젝트가 만들어집니다.)  
+프로젝트를 만들 때 **새 프로젝트** 대화 상자를 통해 프로젝트 저장 위치를 묻는 메시지를 사용자에 게 표시할지 여부를 지정 합니다. 이 요소를로 설정 하면 `true` 저장 위치를 묻는 메시지가 표시 됩니다. 이면 사용자에 `false` 게 메시지가 표시 되지 않습니다. 즉, 임시 프로젝트가 생성 됩니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -52,15 +52,15 @@ ms.locfileid: "65675365"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 여야 `true` 또는 `false`, `true` 저장에 대 한 사용자 메시지가 있는지를 나타내는 새 프로젝트를 만들 때 위치 합니다.  
+ 텍스트는 또는 여야 합니다 `true` `false` `true` . 즉, 새 프로젝트를 만들 때 저장 위치를 묻는 메시지가 사용자에 게 표시 됩니다.  
   
 ## <a name="remarks"></a>설명  
  `PromptForSaveOnCreation`는 선택적 요소입니다. 기본값은 `false`입니다.  
   
- 임시 프로젝트는 프로젝트를 만들고 해당 프로젝트의 내용을 디스크에 저장 하지 않고 수정할 수 있습니다. 자세한 내용은 [NIB 임시 프로젝트](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)합니다.  
+ 임시 프로젝트는 해당 프로젝트의 내용을 디스크에 저장 하지 않고 만들고 수정할 수 있는 프로젝트입니다. 자세한 내용은 [NIB 임시 프로젝트](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)를 참조 하세요.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 값을 설정 `PromptForSaveOnCreation` 같음 `false`, 프로젝트를 임시 프로젝트로 만들 수 있도록 지정 합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `PromptForSaveOnCreation` `false` 프로젝트를 임시 프로젝트로 만들 수 있도록를 지정 하는 값을로 설정 합니다.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ ms.locfileid: "65675365"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

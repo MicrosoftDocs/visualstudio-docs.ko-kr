@@ -13,18 +13,18 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aaed99b669946f4d2885009ff328ce4e2e62fcae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204755"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 구조는 기준으로 하는 주소를 나타내는 `this` 포인터 (`Me` Visual basic에서).  
+이 구조체는 `this` Visual Basic의 포인터를 기준으로 하는 주소를 나타냅니다 `Me` .  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef struct _tagUNMANAGED_THIS_RELATIVE {  
@@ -44,24 +44,24 @@ public struct UNMANAGED_THIS_RELATIVE {
   
 ## <a name="terms"></a>용어  
  dwOffset  
- 기본 위치 (예: 클래스 vtable의 시작 부분)에서 오프셋을 바이트입니다.  
+ 기본 위치 로부터의 바이트 오프셋입니다 (예: 클래스 vtable의 시작).  
   
  dwBitOffset  
- 기본 위치에서 비트에서 오프셋 (항상 0 비트 필드 참조 하지 않는 한).  
+ 기본 위치에서의 오프셋 (비트 필드를 참조 하지 않는 한 항상 0)입니다.  
   
  dwBitLength  
- 주소를 나타내는 비트 수 (항상 0 비트 필드 참조 하지 않는 한).  
+ 주소를 나타내는 비트 수입니다 (비트 필드를 참조 하지 않는 한 항상 0).  
   
 ## <a name="remarks"></a>설명  
- 이 구조체의 공용 구조체의 일부인를 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 경우 구조체를 `dwKind` 필드를 `DEBUG_ADDRESS_UNION` 구조로 설정 되어 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (의 값을 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형)입니다.  
+ 이 구조체는 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 구조체의 필드가 `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형의 값)로 설정 된 경우 DEBUG_ADDRESS_UNION 구조체의 공용 구조체의 일부입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: sh.h  
+ 헤더: sh  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

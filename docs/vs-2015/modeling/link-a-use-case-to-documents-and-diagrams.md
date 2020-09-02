@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657647"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>문서 및 다이어그램에 사용 사례 연결
@@ -74,14 +74,14 @@ ms.locfileid: "72657647"
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>공유 문서, OneNote 요소 또는 웹 페이지에 연결하려면
 
-1. 공유 요소의 URL을 가져옵니다. 예를 들어 ' \\ \\ '로 시작 하는 네트워크 파일 경로 또는 ' http://'로 시작 하는 웹 페이지 또는 Sharepoint URL 이거나, ' onenote: '로 시작 하는 OneNote 섹션, 페이지 또는 단락에 대 한 링크가 될 수 있습니다.
+1. 공유 요소의 URL을 가져옵니다. 예를 들어 ' '로 시작 하는 네트워크 파일 경로 또는 ' http://'로 시작 하는 \\ \\ 웹 페이지 또는 Sharepoint URL 이거나, ' onenote: '를 시작 하는 onenote 섹션, 페이지 또는 단락에 대 한 링크 일 수 있습니다.
 
 2. 도구 상자에서 **아티팩트** 를 클릭 한 다음 사용 사례 다이어그램을 클릭 합니다.
 
 3. 새 아티팩트가 선택 된 상태에서 **하이퍼링크** 속성에 URL을 입력 하거나 붙여 넣습니다.
 
     > [!NOTE]
-    > 파일 경로를 제공 하려면 공용 작업 영역 (' \\ \\ '로 시작) 또는 Visual Studio 솔루션 내에서 파일을 선택 하는 것이 가장 좋습니다. 이렇게 하면 파일 경로가 다른 팀 멤버의 컴퓨터에서 또는 솔루션이 이동된 경우에도 유효한 상태로 유지됩니다. Word 문서와 같은 문서를 솔루션에 추가 하려면 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **기존 항목**을 클릭 합니다.
+    > 파일 경로를 제공 하려면 일반 작업 영역 (' '로 시작 \\ \\ ) 또는 Visual Studio 솔루션 내의 파일 중 하나에서 파일을 선택 하는 것이 가장 좋습니다. 이렇게 하면 파일 경로가 다른 팀 멤버의 컴퓨터에서 또는 솔루션이 이동된 경우에도 유효한 상태로 유지됩니다. Word 문서와 같은 문서를 솔루션에 추가 하려면 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **기존 항목**을 클릭 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Uml 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md) [Uml 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md) [편집 uml 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md) [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)

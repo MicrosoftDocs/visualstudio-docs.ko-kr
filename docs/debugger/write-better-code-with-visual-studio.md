@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301022"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89311393"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>더 나은 코드를 작성하는 데 도움이 되는 디버깅 기술 및 도구
 

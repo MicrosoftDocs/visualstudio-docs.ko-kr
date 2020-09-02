@@ -1,5 +1,5 @@
 ---
-title: 이넘디버그프로세스2 | 마이크로 소프트 문서
+title: IEnumDebugProcesses2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,48 +13,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715754"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
-이 인터페이스는 디버그 포트에서 실행되는 프로세스를 개명합니다.
+이 인터페이스는 디버그 포트에서 실행 되는 프로세스를 열거 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugProcesses : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>구현자를 위한 참고 사항
- 사용자 지정 포트 공급자는 이 인터페이스를 구현하여 포트에서 실행되는 프로세스 목록을 제공합니다.
+## <a name="notes-for-implementers"></a>구현자 참고 사항
+ 사용자 지정 포트 공급자는이 인터페이스를 구현 하 여 포트에서 실행 중인 프로세스 목록을 제공 합니다.
 
-## <a name="notes-for-callers"></a>발신자에 대한 참고 사항
- 비주얼 스튜디오는 이 인터페이스를 얻기 위해 [EnumProcesses를](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) 호출합니다.
+## <a name="notes-for-callers"></a>호출자 참고 사항
+ Visual Studio는이 인터페이스를 얻기 위해 [enumprocesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) 를 호출 합니다.
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
- 다음 표에서는 의 `IEnumDebugProcesses2`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
+ 다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugProcesses2` .
 
-|방법|설명|
+|메서드|설명|
 |------------|-----------------|
-|[다음](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|열거 순서에서 지정된 수의 프로세스를 검색합니다.|
-|[건너뛸](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|열거 순서에서 지정된 수의 프로세스를 건너뜁니다.|
-|[다시 설정](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|열거 순서를 시작 부분으로 재설정합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|현재 열거체와 동일한 열거 상태를 포함하는 열거형 을 만듭니다.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|열거형의 프로세스 수를 가져옵니다.|
+|[다음](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|열거형 시퀀스에서 지정 된 수의 프로세스를 검색 합니다.|
+|[skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|열거형 시퀀스에서 지정 된 수의 프로세스를 건너뜁니다.|
+|[재설정](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|
+|[복제](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|열거자의 프로세스 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
- Visual Studio는 이 인터페이스를 사용하여 **프로세스** 창을 채웁니다.
+ Visual Studio에서는이 인터페이스를 사용 하 여 **프로세스** 창을 채웁니다.
 
 ## <a name="requirements"></a>요구 사항
- 헤더: msdbg.h
+ 헤더: msdbg .h
 
- 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+ 네임 스페이스: VisualStudio
 
- 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
-- [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>추가 정보
+- [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

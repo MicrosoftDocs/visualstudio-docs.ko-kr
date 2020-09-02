@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: cf797ad67b7df2eb1f3ba1246e965ed6ebbd586d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547864"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: 상속성을 너무 많이 사용하지 마세요.
@@ -44,7 +44,7 @@ ms.locfileid: "85547864"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시 하지 않는 것이 안전 합니다. 그러나 코드를 유지 관리 하기가 더 어려울 수 있습니다. 기본 형식의 표시 여부에 따라이 규칙 위반을 해결 하는 것은 주요 변경 내용을 만들 수 있습니다. 예를 들어 공용 기본 형식을 제거 하는 것은 주요 변경 사항입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.ExcessiveInheritance/cs/FxCop.Maintainability.ExcessiveInheritance.cs#1)]

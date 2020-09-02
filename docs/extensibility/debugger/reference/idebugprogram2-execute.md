@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386747"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
@@ -49,7 +49,7 @@ int Execute();
 > [!WARNING]
 > 이 호출을 처리 하는 동안 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 에 중지 이벤트 또는 즉각적인 (동기) 이벤트를 보내지 않습니다. 그렇지 않으면 디버거가 응답 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-- [다시 시작](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [재개](../../../extensibility/debugger/reference/idebugthread2-resume.md)
