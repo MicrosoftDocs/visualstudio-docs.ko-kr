@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904077"
 ---
 # <a name="add-a-toolbar"></a>도구 모음 추가
@@ -27,7 +27,7 @@ ms.locfileid: "85904077"
 
  메뉴에 대 한 자세한 내용은 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-toolbar"></a>도구 모음을 사용 하 여 확장 만들기
@@ -89,5 +89,5 @@ ms.locfileid: "85904077"
 
 7. 이제 도구 모음이 파일에서 찾기 아이콘의 오른쪽에 아이콘으로 표시 됩니다. 아이콘을 클릭 하면 ToolbarTestCommandPackage 라는 메시지 상자가 표시 됩니다 **. ToolbarTestCommand. MenuItemCallback () 내부 IDEToolbar**.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

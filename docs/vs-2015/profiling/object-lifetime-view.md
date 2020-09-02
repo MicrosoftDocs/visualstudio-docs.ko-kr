@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195561"
 ---
 # <a name="object-lifetime-view"></a>개체 수명 뷰
@@ -35,7 +35,7 @@ ms.locfileid: "68195561"
   
 ## <a name="general"></a>일반  
   
-|열|설명|  
+|열|Description|  
 |------------|-----------------|  
 |**클래스 이름**|할당된 형식의 클래스 이름입니다.|  
 |**프로세스 ID**|프로파일링 실행의 프로세스 ID입니다.|  
@@ -46,7 +46,7 @@ ms.locfileid: "68195561"
 ## <a name="instance-data"></a>인스턴스 데이터  
  인스턴스 데이터는 프로파일링 실행 시에 생성된 형식의 개체 수 및 가비지 수집기에 의해 할당이 해제된 개체의 세대를 나타냅니다.  
   
-|열|설명|  
+|열|Description|  
 |------------|-----------------|  
 |**인스턴스**|이 형식의 개체의 할당 수입니다.|  
 |**총 인스턴스 비율(%)**|프로파일링 실행 시 만든 총 할당 수의 비율입니다.|  
@@ -58,7 +58,7 @@ ms.locfileid: "68195561"
 ## <a name="size-byte-data"></a>크기(바이트) 데이터  
  크기(바이트) 데이터는 프로파일링 실행 시에 생성된 형식의 개체 크기 및 할당이 해제된 개체의 각 세대에서 회수된 메모리의 양을 나타냅니다.  
   
-|열|설명|  
+|열|Description|  
 |------------|-----------------|  
 |**할당된 총 바이트**|형식의 모든 인스턴스에 대한 총 바이트 수입니다.|  
 |**총 바이트 비율(%)**|이 형식의 인스턴스에 대해 할당된 프로파일링 실행에서 할당된 바이트의 총 수 백분율입니다.|  
@@ -69,10 +69,10 @@ ms.locfileid: "68195561"
 ## <a name="large-object-heap-data"></a>대형 개체 힙 데이터  
  .NET 메모리 할당자는 표준 관리되는 힙에서 별도인 위치에서 대형 개체를 관리합니다. 대형 개체 힙 데이터는 이 위치에서 관리되는 형식의 개체 수 및 크기를 나타냅니다.  
   
-|열|설명|  
+|열|Description|  
 |------------|-----------------|  
 |**수집한 대형 개체 힙 인스턴스**|대형 개체 힙에 있었고 프로파일링 실행 시 수집된 이 형식의 인스턴스 수입니다.|  
 |**수집한 대형 개체 힙 바이트**|대형 개체 힙에 있었고 프로파일링 실행 시 수집된 이 형식의 인스턴스 크기(바이트)입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)

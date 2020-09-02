@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903820"
 ---
 # <a name="create-an-options-page"></a>옵션 페이지 만들기
@@ -25,7 +25,7 @@ ms.locfileid: "85903820"
 
  MPF는 도구 옵션 페이지, 클래스 및 클래스를 만드는 데 도움이 되는 두 가지 클래스를 제공 합니다 <xref:Microsoft.VisualStudio.Shell.Package> <xref:Microsoft.VisualStudio.Shell.DialogPage> . 클래스를 서브클래싱 하 여 이러한 페이지에 대 한 컨테이너를 제공 하는 VSPackage를 만듭니다 `Package` . 클래스에서 파생 하 여 각 도구 옵션 페이지를 만듭니다 `DialogPage` .
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -245,7 +245,7 @@ ms.locfileid: "85903820"
 
     ```
 
-     이 코드 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 는를 호출 하 여 인스턴스를 만들거나 검색 `OptionPageGrid` 합니다. `OptionPageGrid`는 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 를 호출 하 여 해당 옵션을 로드 합니다 .이는 공용 속성입니다.
+     이 코드 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 는를 호출 하 여 인스턴스를 만들거나 검색 `OptionPageGrid` 합니다. `OptionPageGrid` 는 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 를 호출 하 여 해당 옵션을 로드 합니다 .이는 공용 속성입니다.
 
 2. 이제 **MyToolsOptionsCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 하 여 값을 표시 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolsOptionsCommand.cs*로 변경 합니다.
 
@@ -266,6 +266,6 @@ ms.locfileid: "85903820"
 
      메시지 상자에의 현재 값이 표시 됩니다 `OptionInteger` .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [옵션 및 옵션 페이지](../extensibility/internals/options-and-options-pages.md)

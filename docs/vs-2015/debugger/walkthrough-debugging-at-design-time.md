@@ -1,5 +1,5 @@
 ---
-title: '연습: 디자인 타임에 디버그 | Microsoft Docs'
+title: '연습: 디자인 타임에 디버깅 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,16 +24,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149423"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>연습: 디자인 타임에 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio를 사용할 수 있습니다 **직접 실행** 응용 프로그램이 실행 되지 않는 상태 함수나 서브루틴을 실행 하는 창입니다. 함수 또는 서브루틴에 중단점이 포함 된, Visual Studio는 해당 시점에서 실행을 중단 합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 이 기능은 디자인 타임에 디버깅 호출 됩니다.  
+응용 프로그램이 실행 되 고 있지 않을 때 Visual Studio **직접** 실행 창을 사용 하 여 함수나 서브루틴을 실행할 수 있습니다. 함수나 서브루틴이 중단점을 포함 하는 경우 Visual Studio는 적절 한 지점에서 실행을 중단 합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 이 기능을 ‘디자인 타임에 디버깅’이라고 합니다.  
   
  다음 절차에서는이 기능을 사용 하는 방법을 보여 줍니다.  
   
@@ -63,24 +63,24 @@ Visual Studio를 사용할 수 있습니다 **직접 실행** 응용 프로그�
     End Module  
     ```  
   
-2. 읽기는 줄에 중단점을 설정할 `s="Add BreakPoint Here"`합니다.  
+2. 를 읽는 줄에 중단점을 설정 `s="Add BreakPoint Here"` 합니다.  
   
-3. 다음을 입력 합니다 **직접 실행** 창: `?MyFunction<enter>`  
+3. **직접 실행** 창에 다음을 입력 합니다.`?MyFunction<enter>`  
   
-4. 중단점에 도달 했는지, 호출 스택을 정확한 지 확인 합니다.  
+4. 중단점이 적중 되었으며 호출 스택이 정확한 지 확인 합니다.  
   
-5. 에 **디버그** 메뉴에서 클릭 **계속**, 디자인 모드에 여전히 있는지 확인 합니다.  
+5. **디버그** 메뉴에서 **계속**을 클릭 하 고 여전히 디자인 모드에 있는지 확인 합니다.  
   
-6. 다음을 입력 합니다 **직접 실행** 창: `?MyFunction<enter>`  
+6. **직접 실행** 창에 다음을 입력 합니다.`?MyFunction<enter>`  
   
-7. 다음을 입력 합니다 **직접 실행** 창: `?MySub<enter>`  
+7. **직접 실행** 창에 다음을 입력 합니다.`?MySub<enter>`  
   
-8. 중단점에 도달 하 고 정적 변수의 값을 검사 하는 확인 `i` 에 **지역** 창입니다. 값 3 있어야 합니다.  
+8. 중단점에 도달 했는지 확인 하 고 `i` **지역** 창에서 정적 변수의 값을 검사 합니다. 값은 3 이어야 합니다.  
   
-9. 호출 스택의 정확한 지 확인 합니다.  
+9. 호출 스택이 정확한 지 확인 합니다.  
   
-10. 에 **디버그** 메뉴에서 클릭 **계속**, 디자인 모드에 여전히 있는지 확인 합니다.  
+10. **디버그** 메뉴에서 **계속**을 클릭 하 고 여전히 디자인 모드에 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [디버거 기본 사항](../debugger/debugger-basics.md)

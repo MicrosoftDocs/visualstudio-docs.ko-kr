@@ -1,5 +1,5 @@
 ---
-title: IEnumDebug 사용자 정의 속성::GetCount | 마이크로 소프트 문서
+title: 'IEnumDebugCustomAttributes:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c06ddf3d87c88003ad227edfbe3437a342667b2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717245"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
-열거형에서 사용자 지정 특성 수를 가져옵니다.
+열거자에 있는 사용자 지정 특성의 수를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>매개 변수
 `pcelt`\
-【아웃】 열거형의 요소 수를 반환합니다.
+제한이 열거형의 요소 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 `Next`". `Clone` `Skip`및 구현 `Reset` 해야 하는 사용자 지정 COM 열거 인터페이스의 일부가 아닙니다.
+ 이 메서드는 `Next` ,, `Clone` 및만 `Skip` `Reset` 구현 해야 함을 지정 하는 일반적인 COM 열거 인터페이스의 일부가 아닙니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

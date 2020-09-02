@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180200"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 및 ProcessOff
@@ -50,19 +50,19 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ## <a name="valid-subcommands"></a>유효한 하위 명령  
  **ProcessOn** 및 **ProcessOff**를 다음 하위 명령도 포함하는 명령줄에서 지정할 수 있습니다.  
   
- **Start:** `Method`  
+ **시작:**`Method`  
  명령줄 프로파일링 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
   
- **Launch:** `AppName`  
+ **시작:**`AppName`  
  지정된 애플리케이션을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.  
   
- **Attach:** `PID`  
+ **연결:**`PID`  
  지정된 프로세스의 프로파일링을 시작합니다.  
   
  **GlobalOff**&#124;**GlobalOn**  
  명령줄 프로파일링 세션에서 모든 프로세스에 대한 프로파일링을 중지하거나 시작합니다.  
   
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
+ {**Threadoff**&#124;**threadoff**} **:**`TID`  
  지정된 스레드에 대한 프로파일링을 중지 또는 시작합니다(계측 방법만 해당).  
   
 ## <a name="example"></a>예  
@@ -80,8 +80,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

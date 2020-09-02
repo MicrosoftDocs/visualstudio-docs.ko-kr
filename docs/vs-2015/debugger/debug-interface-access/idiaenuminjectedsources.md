@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e710e586f3ece4fdf0cdbf9bee2bcc70f4ab87b5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687210"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
@@ -25,32 +25,32 @@ ms.locfileid: "65687210"
 
 데이터 원본에 포함 된 다양 한 삽입 된 소스를 열거 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaEnumInjectedSources : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDiaEnumInjectedSources`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDiaEnumInjectedSources` .  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|검색 된 [IEnumVARIANT 인터페이스](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) 이 열거자의 버전입니다.|  
-|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|삽입된 원본 수를 검색합니다.|  
-|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|인덱스를 사용 하 여 삽입 된 소스를 검색합니다.|  
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|열거형 시퀀스에서 삽입 된 원본의 지정된 된 수를 검색 합니다.|  
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|열거형 시퀀스에서 삽입 된 원본의 지정한 수를 건너뜁니다.|  
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
-|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|이 열거자의 [IEnumVARIANT 인터페이스](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) 버전을 검색 합니다.|  
+|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|삽입 된 소스 수를 검색 합니다.|  
+|[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|인덱스를 사용 하 여 삽입 된 소스를 검색 합니다.|  
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|열거 시퀀스에서 지정 된 수의 삽입 된 소스를 검색 합니다.|  
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|열거 시퀀스에서 지정 된 수의 삽입 된 소스를 건너뜁니다.|  
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|  
+|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|  
   
 ## <a name="remarks"></a>설명  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 이 인터페이스를 호출 하 여 가져온 합니다 [idiasession:: Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) 메서드를 호출 하거나 특정 원본 파일의 이름으로는 [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 의 GUID 사용 하 여 메서드를 `IDiaEnumInjectedSources` 인터페이스입니다.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ 이 인터페이스는 특정 소스 파일의 이름을 사용 하 여 [IDiaSession:: findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) 메서드를 호출 하거나 인터페이스의 GUID를 사용 하 여 [IDiaSession:: getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 메서드를 호출 하 여 가져옵니다. `IDiaEnumInjectedSources`  
   
-## <a name="example"></a>예제  
- 이 예제에서는 가져오는 방법을 보여 줍니다 (를 `GetEnumInjectedSources` 함수) 사용 하 여 (합니다 `DumpAllInjectedSources` 함수)는 `IDiaEnumInjectedSources` 인터페이스. 참조를 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) 의 구현에 대 한 인터페이스를 `PrintPropertyStorage` 함수입니다. 대체 출력에 대 한 참조를 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 이 예제에서는 (함수)를 가져오고 `GetEnumInjectedSources` ( `DumpAllInjectedSources` 함수) 인터페이스를 사용 하는 방법을 보여 줍니다 `IDiaEnumInjectedSources` . 함수 구현에 대 한 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) 인터페이스를 참조 하세요 `PrintPropertyStorage` . 대체 출력은 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스를 참조 하세요.  
   
 ```cpp#  
   
@@ -109,15 +109,15 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: Dia2  
   
- 라이브러리: diaguids.lib  
+ 라이브러리: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>참고 항목  
- [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+## <a name="see-also"></a>관련 항목  
+ [인터페이스 (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession:: findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
+ [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

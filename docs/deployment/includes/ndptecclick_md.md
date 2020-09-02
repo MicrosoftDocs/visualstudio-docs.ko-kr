@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 0d7cdb4487464eccfebd09792c1cbb4d78acd56a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68143504"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315439"
 ---
 ClickOnce

@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903853"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>VSPackage를 사용 하 여 확장 만들기
 
 이 연습에서는 VSIX 프로젝트를 만들고 VSPackage 프로젝트 항목을 추가 하는 방법을 보여 줍니다. VSPackage를 사용 하 여 메시지 상자를 표시 하기 위해 UI Shell 서비스를 가져옵니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -49,7 +49,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     public sealed class FirstPackage : Package
     ```
 
-2. VSPackage가 로드 되었음을 알리는 메시지를 추가 해 보겠습니다. `Initialize()`VSPackage가 배치 된 후에만 Visual Studio 서비스를 가져올 수 있으므로 VSPackage의 메서드를 사용 하 여이 작업을 수행 합니다. 서비스를 가져오는 방법에 대 한 자세한 내용은 [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)를 참조 하세요. `Initialize()`의 메서드를 `FirstPackage` 서비스를 가져오고 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> , <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 인터페이스를 가져오고, 해당 메서드를 호출 하는 코드로 바꿉니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> .
+2. VSPackage가 로드 되었음을 알리는 메시지를 추가 해 보겠습니다. `Initialize()`VSPackage가 배치 된 후에만 Visual Studio 서비스를 가져올 수 있으므로 VSPackage의 메서드를 사용 하 여이 작업을 수행 합니다. 서비스를 가져오는 방법에 대 한 자세한 내용은 [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)를 참조 하세요. `Initialize()` 의 메서드를 `FirstPackage` 서비스를 가져오고 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> , <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 인터페이스를 가져오고, 해당 메서드를 호출 하는 코드로 바꿉니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> .
 
     ```csharp
     protected override void Initialize()

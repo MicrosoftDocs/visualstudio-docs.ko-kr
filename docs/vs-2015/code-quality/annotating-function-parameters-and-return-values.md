@@ -127,10 +127,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 71854388f3fb1c5eaea7d40ed2757af9cecacf1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543808"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
@@ -187,7 +187,7 @@ ms.locfileid: "85543808"
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     이 예제에서 호출자는의 요소 버퍼를 제공 합니다 `size` `p1` .  `MyStringCopy`이러한 요소 중 일부를 사용할 수 있도록 합니다. 무엇 보다도, `_Null_terminated_` 의 주석은 `PWSTR` `p1` 사후 상태에서 null로 종료 됨을 의미 합니다.  이러한 방식으로 올바른 요소 수는 여전히 잘 정의 되어 있지만 특정 요소 수는 필요 하지 않습니다.  
+     이 예제에서 호출자는의 요소 버퍼를 제공 합니다 `size` `p1` .  `MyStringCopy` 이러한 요소 중 일부를 사용할 수 있도록 합니다. 무엇 보다도, `_Null_terminated_` 의 주석은 `PWSTR` `p1` 사후 상태에서 null로 종료 됨을 의미 합니다.  이러한 방식으로 올바른 요소 수는 여전히 잘 정의 되어 있지만 특정 요소 수는 필요 하지 않습니다.  
   
      `_bytes_`변형은 요소 대신 크기 (바이트)를 제공 합니다. 크기를 요소로 표현할 수 없는 경우에만이를 사용 합니다.  예를 들어 `char` 문자열은에서 `_bytes_` 사용 하는 유사한 함수에서 variant를 사용 `wchar_t` 합니다.  
   
@@ -491,7 +491,7 @@ ms.locfileid: "85543808"
 ## <a name="related-resources"></a>관련 리소스  
  [코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [C/c + + 코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [SAL 이해](../code-quality/understanding-sal.md)   
  [함수 동작에 주석 달기](../code-quality/annotating-function-behavior.md)   

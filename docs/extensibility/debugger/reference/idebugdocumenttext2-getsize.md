@@ -1,5 +1,5 @@
 ---
-title: 아이디버그문서텍스트2:겟사이즈 | 마이크로 소프트 문서
+title: 'IDebugDocumentText2:: GetSize | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731585"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
-문서의 이 위치에서 텍스트 크기를 검색합니다.
+문서의이 위치에 있는 텍스트의 크기를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,19 +43,19 @@ int GetSize( 
 
 ## <a name="parameters"></a>매개 변수
 `pcNumLines`\
-【아웃】 텍스트 줄 수를 반환합니다.
+제한이 텍스트의 줄 수를 반환 합니다.
 
 `pcNumChars`\
-【아웃】 텍스트 의 문자 수를 반환합니다.
+제한이 텍스트의 문자 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 
- [C++ 전용] 특정 값이 필요하지 않은 경우 매개 변수에 대해 NULL을 전달합니다.
+ [C + + 전용] 특정 값을 원하지 않는 경우 매개 변수에 대해 NULL을 전달 합니다.
 
- [C# 만] 두 매개 변수를 모두 지정해야 합니다.
+ [C #만 해당] 두 매개 변수를 모두 지정 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

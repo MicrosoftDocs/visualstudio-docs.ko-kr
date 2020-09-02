@@ -19,20 +19,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690590"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제를 보려면 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)합니다. 이 항목의 내용은 Windows 스토어 앱, Windows Phone 스토어 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 적용됩니다. Cordova 앱에서 지원되는 콘솔 명령에 대한 자세한 내용은 [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)를 참조하세요. Internet Explorer F12 도구에서 콘솔을 사용하는 방법에 대한 자세한 내용은 [이 항목](https://msdn.microsoft.com/library/ie/dn255006.aspx)을 참조하세요.  
+ 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제는 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)를 참조 하세요. 이 항목의 내용은 Windows 스토어 앱, Windows Phone 스토어 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 적용됩니다. Cordova 앱에서 지원되는 콘솔 명령에 대한 자세한 내용은 [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)를 참조하세요. Internet Explorer F12 도구에서 콘솔을 사용하는 방법에 대한 자세한 내용은 [이 항목](https://msdn.microsoft.com/library/ie/dn255006.aspx)을 참조하세요.  
   
- JavaScript 콘솔 창이 닫혀 있는 경우 열 수 있습니다 선택 하 여 Visual Studio에서 디버그 하는 동안 **디버깅할** > **Windows** > **JavaScript 콘솔**합니다.  
+ JavaScript 콘솔 창이 닫혀 있는 경우 Visual Studio에서 디버그하는 동안 **디버그** > **창** > **JavaScript 콘솔**을 선택하여 콘솔 창을 열 수 있습니다.  
   
 > [!NOTE]
 > 디버깅 세션 중에 창을 사용할 수 없는 경우 프로젝트의 디버그 속성에서 디버거 형식이 **Script** 로 설정되었는지 확인하세요.  
@@ -59,8 +59,8 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |`groupEnd()`|현재 그룹을 종료합니다.<br /><br /> 요구 사항:<br /><br /> Visual Studio 2013|`group` 명령의 예를 참조하세요.|  
 |`info(message)`|콘솔 창에 `message` 를 보냅니다. 메시지 앞에 정보 기호가 옵니다.|`console.info("info message");`<br /><br /> 추가 예제는 이 항목의 뒷부분에 나오는 [Formatting console.log output](#ConsoleLog) 을 참조하세요.|  
 |`log(message)`|콘솔 창에 `message` 를 보냅니다.<br /><br /> 개체를 전달하는 경우 이 명령은 해당 개체를 콘솔 창으로 보내고 개체 시각화 도우미에 표시합니다. 시각화 도우미를 사용하여 콘솔 창에서 속성을 검사할 수 있습니다.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|웹 앱에서 사용됩니다. JavaScript를 사용하는 스토어 앱에서는 지원되지 않습니다.|지원되지 않음|  
-|`profile(reportName)`|웹 앱에서 사용됩니다. JavaScript를 사용하는 스토어 앱에서는 지원되지 않습니다.|지원되지 않음|  
+|`msIsIndependentlyComposed(element)`|웹 앱에서 사용됩니다. JavaScript를 사용하는 스토어 앱에서는 지원되지 않습니다.|지원되지 않습니다.|  
+|`profile(reportName)`|웹 앱에서 사용됩니다. JavaScript를 사용하는 스토어 앱에서는 지원되지 않습니다.|지원되지 않습니다.|  
 |`profileEnd()`|웹 앱에서 사용됩니다. JavaScript를 사용하는 스토어 앱에서는 지원되지 않습니다.|지원되지 않습니다.|  
 |`select(element)`|`element` DOM 탐색기 [에서 지정한 HTML](../debugger/quickstart-debug-html-and-css.md)를 선택합니다.|console.select(요소);|  
 |`time (name)`|선택적 `name` 매개 변수에서 식별하는 타이머를 시작합니다. `console.timeEnd`와 함께 사용할 경우 `time` 과 `timeEnd`사이에 경과된 시간을 계산하고 `name` 문자열을 접두사로 사용하여 결과(단위: ms)를 콘솔에 보냅니다. 성능을 측정하기 위한 앱 코드 계측을 활성화하는 데 사용됩니다.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>JavaScript 콘솔 창에서 개체 검사  
  JavaScript 콘솔 창을 사용하면 범위 내에 있는 개체와 상호 작용할 수 있습니다. 콘솔 창에서 범위 외부의 개체를 검토하려면 코드에서 `console.log` , `console.dir`또는 기타 명령을 사용하세요. 또는 개체가 범위 내에 있는 경우 코드에 중단점을 설정(**중단점** > **Insert 중단점**)하여 콘솔 창에서 이 개체와 상호 작용할 수 있습니다.  
   
-## <a name="ConsoleLog"></a> console.log 출력 서식 지정  
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> console.log 출력 서식 지정  
  여러 인수를 `console.log`에 전달하는 경우 콘솔은 인수를 배열로 처리하고 출력을 연결합니다.  
   
 ```javascript  
@@ -137,6 +137,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)

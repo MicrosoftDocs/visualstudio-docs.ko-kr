@@ -1,5 +1,5 @@
 ---
-title: '&lt;문자열&gt; 요소 (부트스트래퍼) | Microsoft Docs'
+title: '&lt;Strings &gt; 요소 (부트스트래퍼) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,16 +19,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747406"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;문자열&gt; 요소 (부트스트래퍼)
-제품 이름, 패키지 이름 및 설치 오류 메시지에 대 한 지역화 된 문자열을 정의합니다.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; 요소 (부트스트래퍼)
+제품 이름, 패키지 이름 및 설치 오류 메시지에 대 한 지역화 된 문자열을 정의 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Strings>
@@ -40,19 +40,19 @@ ms.locfileid: "66747406"
 ```
 
 ## <a name="elements-and-attributes"></a>요소 및 특성
- 합니다 `Strings` 요소인 자식은 `Package` 요소입니다. 특성이 없습니다.
+ 요소는 `Strings` 요소의 자식입니다 `Package` . 특성이 없습니다.
 
-## <a name="string"></a>문자열
- 합니다 `String` 요소인 자식은 `Strings` 요소입니다. A `Strings` 하나 이상의 요소를 가질 수 `String` 요소입니다.
+## <a name="string"></a>String
+ 요소는 `String` 요소의 자식입니다 `Strings` . 요소에는 `Strings` 하나 이상의 요소가 있을 수 있습니다 `String` .
 
- `String` 다음과 같은 특성이 있습니다.
+ `String` 에는 다음과 같은 특성이 있습니다.
 
 |특성|설명|
 |---------------|-----------------|
 |`Name`|필수 요소. 문자열의 이름입니다.|
 
-## <a name="example"></a>예제
- 다음 코드 예제에서는.NET Framework 설치 관리자에 대 한 모든 영어 문자열을 지정합니다.
+## <a name="example"></a>예
+ 다음 코드 예제에서는 .NET Framework 설치 관리자에 대 한 모든 영어 문자열을 지정 합니다.
 
 ```xml
 <Strings>
@@ -73,5 +73,5 @@ ms.locfileid: "66747406"
 </Strings>
 ```
 
-## <a name="see-also"></a>참고자료
-- [\<패키지 > 요소](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>추가 정보
+- [\<Package> 요소인](../deployment/package-element-bootstrapper.md)

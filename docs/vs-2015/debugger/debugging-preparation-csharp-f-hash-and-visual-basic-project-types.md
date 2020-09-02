@@ -1,5 +1,5 @@
 ---
-title: '디버깅 준비 중: C#F#, 및 Visual Basic 프로젝트 형식 | Microsoft Docs'
+title: '디버깅 준비: c #, F # 및 Visual Basic 프로젝트 형식 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195313"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>디버깅 준비 중: C#, F# 및 Visual Basic 프로젝트 형식
@@ -35,13 +35,13 @@ ms.locfileid: "68195313"
 
 이 단원의 항목에서는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트 템플릿으로 만든 C#, F# 및 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.  
   
- 참고로 그룹화 된 출력으로 Dll을 만드는 프로젝트 형식과 [DLL 프로젝트 디버깅](../debugger/debugging-dll-projects.md) 의 공통적인 특징 때문입니다.  
+ 빌드 결과로 DLL을 생성하는 프로젝트 형식은 공통적인 특징을 갖고 있기 때문에 모두 [DLL 프로젝트 디버그](../debugger/debugging-dll-projects.md)로 그룹화되었습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [권장되는 속성 설정](../debugger/managed-debugging-recommended-property-settings.md)  
  이 단원에서는 C#, F# 및 Visual Basic 프로젝트에 권장되는 디버깅 관련 속성 설정에 대해 설명합니다.  
   
- [Windows Forms 응용 프로그램](../debugger/debugging-preparation-windows-forms-applications.md)  
+ [Windows Forms 애플리케이션](../debugger/debugging-preparation-windows-forms-applications.md)  
  Windows 애플리케이션 프로젝트에 대해 설명하고 디버깅, 기본 디버그 구성 변경, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 외부에서 애플리케이션을 시작한 후에 애플리케이션에 연결 등에 대한 지침을 제공합니다.  
   
  [콘솔 프로젝트](../debugger/debugging-preparation-console-projects.md)  
@@ -50,7 +50,7 @@ ms.locfileid: "68195313"
  [Windows 서비스](../debugger/debugging-preparation-windows-services.md)  
  Windows 서비스에 대해 설명하고 Windows 서비스 애플리케이션 디버깅으로 연결되는 링크를 제공합니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거를 사용하여 프로그램을 디버깅하기 위해 필요한 설정 및 준비 방법을 다룹니다.  
   

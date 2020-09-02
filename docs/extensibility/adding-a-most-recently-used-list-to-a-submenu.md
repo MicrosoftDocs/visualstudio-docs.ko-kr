@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904206"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>가장 최근에 사용한 목록을 하위 메뉴에 추가
@@ -30,7 +30,7 @@ ms.locfileid: "85904206"
 
 메뉴 및 *vsct* 파일에 대 한 자세한 내용은 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension"></a>확장 만들기
@@ -199,5 +199,5 @@ ms.locfileid: "85904206"
 
 4. 하위 메뉴를 다시 엽니다. 이제 **항목 3** 이 목록의 맨 위에 있고 다른 항목은 한 위치 아래로 푸시 되었습니다. **항목 3** 을 다시 클릭 합니다. 그러면 메시지 상자에 **선택한 항목 3**이 표시 됩니다 .이는 텍스트를 명령 레이블과 함께 새 위치로 올바르게 이동 했음을 나타냅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [동적으로 메뉴 항목 추가](../extensibility/dynamically-adding-menu-items.md)

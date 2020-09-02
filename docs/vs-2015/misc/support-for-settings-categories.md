@@ -11,14 +11,14 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689090"
 ---
 # <a name="support-for-settings-categories"></a>설정 범주에 대한 지원
-설정 범주는 IDE(통합 개발 환경)를 사용자 지정하는 옵션 그룹으로 구성됩니다. 예를 들어 설정은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창의 레이아웃과 메뉴의 내용을 제어할 수 있습니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+설정 범주는 IDE(통합 개발 환경)를 사용자 지정하는 옵션 그룹으로 구성됩니다. 예를 들어 설정은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창의 레이아웃과 메뉴의 내용을 제어할 수 있습니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.  
   
  **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 클릭하여 **설정 가져오기 및 내보내기 마법사**를 시작합니다. 마법사는 설정 내보내기, 가져오기 또는 다시 설정의 세 가지 옵션을 제공합니다. 예를 들어 내보내기를 선택하면 마법사의 **내보낼 설정 선택** 페이지가 열립니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "65689090"
 > 정식 이름은 UI(사용자 인터페이스)에 나타나지 않습니다. 정식 이름은 읽을 수 있는 이름을 ProgID(프로그래밍 ID) 같은 설정 범주와 연결하는 데 사용됩니다.  
   
 ### <a name="settings-category-attribute"></a>설정 범주 특성  
- 합니다 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 의 사용자 지정 설정 지점 범주의 매핑을 결정 합니다 **설정 가져오기 및 내보내기 마법사** 제공 하는 VSPackage와 범주를 연결 하 여 합니다. 다음과 같은 코드 조각을 생각해 봅시다.  
+ 는 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 범주를 제공 하는 VSPackage와 범주를 연결 하 여 **설정 가져오기 및 내보내기 마법사** 에서 사용자 지정 설정 지점과 범주의 매핑을 결정 합니다. 다음과 같은 코드 조각을 생각해 봅시다.  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
@@ -60,8 +60,8 @@ ms.locfileid: "65689090"
   
  **설정 가져오기 및 내보내기 마법사**에서 설정 지점의 이름은 My Settings입니다. 설정 지점을 선택하면 **Various Options**설명이 나타납니다. 설정 지점 이름 및 설명은 지역화된 문자열 리소스에서 가져옵니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [옵션 페이지 만들기](../extensibility/creating-an-options-page.md)   
- [VSSDK 샘플](../misc/vssdk-samples.md)   
- [VSPackage State](../misc/vspackage-state.md)   
+ [가 나 진한 샘플](../misc/vssdk-samples.md)   
+ [VSPackage 상태](../misc/vspackage-state.md)   
  [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
