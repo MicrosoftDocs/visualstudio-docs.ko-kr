@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017171"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
@@ -229,6 +230,6 @@ ms.locfileid: "86017171"
     > [!NOTE]
     > 도메인 간에 Silverlight의 데이터에 액세스 하는 경우 Silverlight는 웹 응용 프로그램을 악용 하는 데 사용할 수 있는 보안 취약성을 방지 합니다. Silverlight에서 원격 데이터에 액세스할 때 문제가 발생 하면 [도메인 경계에서 서비스를 사용할 수 있도록 설정](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [SharePoint 솔루션 패키지 배포, 게시 및 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

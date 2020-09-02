@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547643"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
@@ -26,7 +26,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
 1. **Dslpackage** 프로젝트 내에 **mefextension** 이라는 새 폴더를 만듭니다. 다음 파일을 추가 합니다.
 
-     파일 이름:`CommandExtensionVSCT.tt`
+     파일 이름: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > 이 파일의 GUID를 DslPackage\GeneratedCode\Constants.tt에 정의 된 GUID CommandSetId와 동일 하 게 설정 합니다.
@@ -42,21 +42,21 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    파일 이름:`CommandExtensionRegistrar.tt`
+    파일 이름: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    파일 이름:`ValidationExtensionEnablement.tt`
+    파일 이름: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    파일 이름:`ValidationExtensionRegistrar.tt`
+    파일 이름: `ValidationExtensionRegistrar.tt`
 
     이 파일을 추가 하는 경우 DSL 탐색기의 **Editorvalidation** 에서 하나 이상의 스위치를 사용 하 여 dsl에서 유효성 검사를 사용 하도록 설정 해야 합니다.
 
@@ -65,7 +65,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    파일 이름:`PackageExtensionEnablement.tt`
+    파일 이름: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
 2. **Dsl** 프로젝트 내에 **mefextension** 이라는 새 폴더를 만듭니다. 다음 파일을 추가 합니다.
 
-     파일 이름:`DesignerExtensionMetaDataAttribute.tt`
+     파일 이름: `DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    파일 이름:`GestureExtensionEnablement.tt`
+    파일 이름: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    파일 이름:`GestureExtensionController.tt`
+    파일 이름: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -177,7 +177,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
 메뉴 명령을 작성 하려면를 구현 하는 클래스를 정의 하 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 고 dsl에 정의 된 특성 ( *dsl*이라고 명명 됨)을 사용 하 여 클래스에 접두사를 지정 합니다 `CommandExtension` . 둘 이상의 메뉴 명령 클래스를 작성할 수 있습니다.
 
-`QueryStatus()`는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출 됩니다. 현재 선택 영역을 검사 하 고 `command.Enabled` 명령이 적용 되는 시점을 나타내도록 설정 해야 합니다.
+`QueryStatus()` 는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출 됩니다. 현재 선택 영역을 검사 하 고 `command.Enabled` 명령이 적용 되는 시점을 나타내도록 설정 해야 합니다.
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -372,7 +372,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)
 - [MEF(Managed Extensibility Framework)](/dotnet/framework/mef/index)

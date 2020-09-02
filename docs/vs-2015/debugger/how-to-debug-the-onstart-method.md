@@ -1,5 +1,5 @@
 ---
-title: '방법: OnStart 메서드 디버깅 | Microsoft Docs'
+title: '방법: OnStart 메서드 디버그 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 391b906889dcbe422f7ec227b1d375be82e7ac91
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700203"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>방법: OnStart 메서드 디버그
@@ -47,7 +47,7 @@ ms.locfileid: "65700203"
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3. **예, \<서비스 이름> 디버그를 선택합니다.**  
+3. **예, \<service name> 디버그**를 선택합니다.  
   
 4. Just-In-Time 디버거 창에서 디버깅에 사용할 Visual Studio 버전을 선택합니다.  
   
@@ -55,6 +55,6 @@ ms.locfileid: "65700203"
   
 5. Visual Studio의 새 인스턴스가 시작되고 `Debugger.Launch()` 메서드에서 실행이 중지됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [관리 코드 디버그](../debugger/debugging-managed-code.md)

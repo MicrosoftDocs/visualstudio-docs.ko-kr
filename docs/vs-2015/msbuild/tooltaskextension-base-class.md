@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 41ac1db7348ff993671623214b59113d6210b83e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193329"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 기본 클래스
@@ -50,6 +50,6 @@ ms.locfileid: "68193329"
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|선택적 `bool` 매개 변수입니다.<br /><br /> `true`로 설정된 경우 이 작업은 명령줄에 대한 배치 파일을 만들고 명령을 직접 실행하는 대신 명령 처리기를 사용하여 실행합니다.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A>|선택적 `bool` 매개 변수입니다.<br /><br /> `true`로 설정된 경우 작업이 실행 중이면 이 작업이 노드를 발생시킵니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)
