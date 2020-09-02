@@ -1,5 +1,5 @@
 ---
-title: 내부 활성화 | Microsoft Docs
+title: 현재 위치의 활성화 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,11 +10,11 @@ ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: jillfra
 ms.openlocfilehash: 192274d087731f68cb7e01c1da20e80cbfef0360
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446423"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64802930"
 ---
 # <a name="in-place-activation"></a>내부 활성화
 편집기 뷰에서 ActiveX 또는 기타 활성 컨트롤을 호스트하는 경우 바로 활성화 모델을 사용하여 ActiveX 컨트롤 또는 활성 문서 데이터 개체로 편집기 뷰를 구현해야 합니다.  
@@ -27,20 +27,20 @@ ms.locfileid: "63446423"
 > [!NOTE]
 > <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> 인터페이스를 사용하여 데이터와 뷰를 분리할 수 있습니다. 그러나 Visual Studio는 이 기능을 지원하지 않으며, 이러한 인터페이스는 문서 뷰 개체를 나타내는 데만 사용됩니다.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 서비스를 사용하는 편집기는 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 서비스에서 구현된 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 인터페이스의 메서드를 호출하여 메뉴, 도구 모음 및 명령을 통합할 수 있습니다. 편집기는 선택 추적 및 실행 취소 관리와 같은 다른 Visual Studio 기능도 제공할 수 있습니다. 자세한 내용은 [만들기 사용자 지정 편집기 및 디자이너](../extensibility/creating-custom-editors-and-designers.md)합니다.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 서비스를 사용하는 편집기는 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 서비스에서 구현된 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 인터페이스의 메서드를 호출하여 메뉴, 도구 모음 및 명령을 통합할 수 있습니다. 편집기는 선택 추적 및 실행 취소 관리와 같은 다른 Visual Studio 기능도 제공할 수 있습니다. 자세한 내용은 [사용자 지정 편집기 및 디자이너 만들기](../extensibility/creating-custom-editors-and-designers.md)를 참조 하세요.  
   
 ## <a name="objects-and-interfaces-used"></a>사용되는 개체 및 인터페이스  
  바로 활성화를 만드는 데 사용되는 개체는 다음 그림에 나와 있습니다.  
   
- ![&#45;활성화 편집기를 배치할](../misc/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
+ ![&#45;환경 활성화 편집기에서](../misc/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 바로 활성화 편집기  
   
 > [!NOTE]
-> 이 그림의 개체 중에서 `CYourEditorFactory` 개체만 표준 편집기를 만드는 데 필요합니다. 사용자 지정 편집기를 만드는 경우 대체로 편집기에 자체 전용 지속성 메커니즘이 있기 때문에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> 를 구현할 필요가 없습니다. 자세한 내용은 [만들기 사용자 지정 편집기 및 디자이너](../extensibility/creating-custom-editors-and-designers.md)합니다.  
+> 이 그림의 개체 중에서 `CYourEditorFactory` 개체만 표준 편집기를 만드는 데 필요합니다. 사용자 지정 편집기를 만드는 경우 대체로 편집기에 자체 전용 지속성 메커니즘이 있기 때문에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> 를 구현할 필요가 없습니다. 자세한 내용은 [사용자 지정 편집기 및 디자이너 만들기](../extensibility/creating-custom-editors-and-designers.md)를 참조 하세요.  
   
  바로 활성화 편집기를 만들기 위해 구현되는 모든 인터페이스가 단일 `CYourEditorDocument` 개체에 표시되지만 이 구성에서는 문서 데이터의 단일 보기만 지원합니다. 문서 데이터의 여러 보기를 지원하는 방법에 대한 자세한 내용은 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)을 참조하세요.  
   
-|인터페이스|개체 형식|사용|  
+|인터페이스|개체 유형|기능|  
 |---------------|--------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>|보기|<xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 서비스를 사용하여 내부 VSPackage 개체가 완전히 통합된 IDE 구성 요소로 작동할 수 있게 합니다. 이 서비스는 개체의 메뉴, 도구 모음 및 명령을 IDE에 통합하고 상태 변경 알림을 실행합니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|보기|포함 개체가 컨테이너에 기본 기능을 제공하고 통신하는 주요 수단입니다.|  

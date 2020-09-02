@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536944"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Visual Studio를 사용 하 여 모델 통합 Modelbus
@@ -31,10 +31,10 @@ ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="providing-access-to-a-dsl"></a><a name="provide"></a>DSL에 대 한 액세스 제공
+## <a name="providing-access-to-a-dsl"></a><a name="provide"></a> DSL에 대 한 액세스 제공
  모델이나 모델의 요소에 대한 ModelBus 참조를 만들려면 DSL에 대해 ModelBusAdapter를 정의해야 합니다. 이 작업을 수행 하는 가장 쉬운 방법은 Visual Studio 모델 버스 확장을 사용 하 여 DSL 디자이너에 명령을 추가 하는 것입니다.
 
-### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a>모델 버스에 DSL 정의를 노출 하려면
+### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a> 모델 버스에 DSL 정의를 노출 하려면
 
 1. DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다.
 
@@ -82,7 +82,7 @@ Visual Studio ModelBus 어댑터는 기본적으로 요소의 guid를 사용 하
 
 - ModelBus 참조에서 올바른 요소를 찾도록 `ResolveElementReference`를 재정의합니다.
 
-## <a name="accessing-a-dsl-from-another-dsl"></a><a name="editRef"></a>다른 DSL에서 DSL 액세스
+## <a name="accessing-a-dsl-from-another-dsl"></a><a name="editRef"></a> 다른 DSL에서 DSL 액세스
 
 DSL의 도메인 속성에 ModelBus 참조를 저장할 수 있으며 해당 참조를 사용하는 사용자 지정 코드를 작성할 수 있습니다. 사용자가 모델 파일과 파일 내의 요소를 선택하여 ModelBus 참조를 만들도록 할 수도 있습니다.
 
@@ -386,7 +386,7 @@ ModelBusReference elementReferenceRestored =
 
  MBR은 두 단계로 역직렬화됩니다.
 
-- `ModelBusReferencePropertySerializer`는 MBR 헤더를 처리 하는 표준 serializer입니다. 이 항목은 `SerializationContext` 키를 사용하여 `ReferenceContext`에 저장되는 표준 DSL `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 속성 모음을 사용합니다. 특히 `SerializationContext`는 `ModelBus` 인스턴스를 포함해야 합니다.
+- `ModelBusReferencePropertySerializer` 는 MBR 헤더를 처리 하는 표준 serializer입니다. 이 항목은 `SerializationContext` 키를 사용하여 `ReferenceContext`에 저장되는 표준 DSL `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 속성 모음을 사용합니다. 특히 `SerializationContext`는 `ModelBus` 인스턴스를 포함해야 합니다.
 
 - ModelBus 어댑터는 MBR의 어댑터 관련 부분을 처리하며 MBR의 ReferenceContext에 저장된 추가 정보를 사용할 수 있습니다. 단순 파일 기반 어댑터는 및 키를 사용 하 여 루트 파일 경로를 유지 합니다 `FilePathLoadContextKey` `FilePathSaveContextKey` .
 
@@ -510,11 +510,11 @@ DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **Mod
 
 - 새 프로젝트(`ModelBusAdapter`)가 솔루션에 추가됩니다.
 
-- `ModelBusAdapter`에 대한 참조가 `DslPackage` 프로젝트에 추가됩니다. `ModelBusAdapter`에는 프로젝트에 대 한 참조가 있습니다 `Dsl` .
+- `ModelBusAdapter`에 대한 참조가 `DslPackage` 프로젝트에 추가됩니다. `ModelBusAdapter` 에는 프로젝트에 대 한 참조가 있습니다 `Dsl` .
 
 - **DslPackage\source.extention.tt**에서 `|ModelBusAdapter|` 는 MEF 구성 요소로 추가 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)

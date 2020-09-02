@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329085"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Blend for Visual Studio에서 데이터 표시
@@ -45,6 +45,6 @@ ms.locfileid: "85329085"
 
 **짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [일부 데이터 바인딩을 Blend와 혼합](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Blend for Visual Studio를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -13,22 +13,22 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696082"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-자체 관리 되는 VSPackage 또는 네이티브 위성 UI Dll을 관리 되는 위성 Dll에서에서 지역화 된 리소스를 포함할 수 있습니다.  
+지역화 된 리소스를 네이티브 위성 UI Dll, 관리 되는 위성 Dll 또는 관리 되는 VSPackage 자체에 포함할 수 있습니다.  
   
- Vspackage의 일부의 리소스를 포함할 수 없습니다. 관리 되는 유형은 포함할 수 있습니다.  
+ 일부 리소스는 Vspackage에 포함할 수 없습니다. 다음 관리 되는 형식을 포함할 수 있습니다.  
   
 - 문자열  
   
-- 패키지 로드 키 (또한 문자열)  
+- 패키지 로드 키 (문자열 이기도)  
   
 - 도구 창 아이콘  
   
@@ -38,19 +38,19 @@ ms.locfileid: "65696082"
   
 - 명령줄 도움말  
   
-- 대화 상자 데이터에 대 한  
+- 대화 상자 데이터 정보  
   
-  리소스 관리 되는 패키지의 리소스 id 선택 예외는 CTO 파일이 며, CTMENU 이름을 지정 해야 합니다. CTO 파일 리소스 테이블에 표시 해야 합니다는 `byte[]`합니다. 다른 모든 리소스 항목 유형으로 식별 됩니다.  
+  관리 되는 패키지의 리소스는 리소스 ID로 선택 됩니다. 단, CTO 파일은 CTMENU로 이름을 지정 해야 합니다. CTO 파일은 리소스 테이블에으로 나타나야 합니다 `byte[]` . 다른 모든 리소스 항목은 유형으로 식별 됩니다.  
   
-  사용할 수는 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 특성에 알리기 위해 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 관리 되는 리소스는 사용할 수 있습니다.  
+  특성을 사용 하 여 관리 되는 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 리소스를 사용할 수 있음을 나타낼 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
   [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
   [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
-  설정 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 나타냅니다 이렇게에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 검색할 때 리소스에 대 한 예를 들어, 사용 하 여 관리 되지 않는 위성 Dll을 무시할지 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>합니다. 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동일한 리소스 id는 두 개 이상의 리소스를 발견 하면 찾은 첫 번째 리소스를 사용 합니다.  
+  이러한 방식으로를 설정 하면에서를 사용 하는 등의 방법으로 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 리소스를 검색할 때 관리 되지 않는 위성 dll을 무시 해야 함을 나타냅니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . 는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동일한 리소스 ID를 가진 둘 이상의 리소스를 발견 하면 찾은 첫 번째 리소스를 사용 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제는 관리 되는 도구 창 아이콘을 표시 합니다.  
+## <a name="example"></a>예  
+ 다음 예제는 도구 창 아이콘의 관리 되는 표현입니다.  
   
 ```  
 <data name="1001"  
@@ -66,7 +66,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
- 다음 예제에서는 CTMENU 이름이 cto 인 바이트 배열에 포함 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 CTMENU로 명명 되어야 하는 CTO 바이트 배열을 포함 하는 방법을 보여 줍니다.  
   
 ```  
 <data name="CTMENU"  
@@ -82,13 +82,13 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
-## <a name="implementation-notes"></a>구현 참고 사항  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 가능 하면 Vspackage의 지연 로드 합니다. VSPackage에서 CTO 파일 포함의 결과 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 설치 하는 경우 병합된 명령 테이블을 작성 하는 동안 메모리에서 이러한 모든 Vspackage를 로드 해야 합니다. VSPackage에서 코드를 실행 하지 않고 메타 데이터를 검사 하 여 VSPackage의 리소스를 추출할 수 있습니다. VSPackage의 성능 손실은 최소 이므로 지금은 초기화 되지 않았습니다.  
+## <a name="implementation-notes"></a>구현 노트  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 가능할 때마다 Vspackage의 로드를 지연 합니다. VSPackage에 CTO 파일을 포함 하면 설치 하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동안 (병합 된 명령 테이블을 작성할 때) 모든 vspackage을 메모리에 로드 해야 합니다. VSPackage에서 코드를 실행 하지 않고 메타 데이터를 검사 하 여 VSPackage에서 리소스를 추출할 수 있습니다. VSPackage이 지금은 초기화 되지 않으므로 성능 손실이 최소화 됩니다.  
   
- 때 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 설치가 VSPackage의 리소스 요청을 해당 패키지 이므로 이미 로드 되 고 초기화 하는 일을 할 성능 저하는 미미 합니다.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에서 설치 후 VSPackage의 리소스를 요청 하면 해당 패키지가 이미 로드 되 고 초기화 될 수 있으므로 성능 손실은 최소화 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [관리 되는 Vspackage](../../misc/managed-vspackages.md)   
  [Vspackage 관리](../../extensibility/managing-vspackages.md)   
- [MFC 애플리케이션의 지역화된 리소스: 위성 Dll](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [MFC 응용 프로그램의 지역화 된 리소스: 위성 Dll](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [관리되는 VSPackage](../../misc/managed-vspackages.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdb635854d298b8a1eabc81019f7b18c2f50eecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670555"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>방법: 코드 감싸기 코드 조각 사용
@@ -30,7 +30,7 @@ ms.locfileid: "72670555"
 
 2. 코드 편집기에서 감싸기 할 텍스트를 선택합니다.
 
-3. CTRL+K, CTRL+S를 입력합니다.
+3. Ctrl+K, Ctrl+S를 누릅니다.
 
 4. 코드 조각 목록에서 마우스를 사용하거나 코드 조각 이름을 입력하고 Tab 키 또는 Enter 키를 눌러 코드 조각을 선택합니다.
 
@@ -58,5 +58,5 @@ ms.locfileid: "72670555"
 
      또는 코드 조각의 이름을 입력한 다음 Tab 키 또는 Enter 키를 누릅니다.
 
-## <a name="see-also"></a>관련 항목:
- [시각적 C# 코드 조각](../ide/visual-csharp-code-snippets.md) [코드 조각 선택](../ide/reference/code-snippet-picker.md)
+## <a name="see-also"></a>관련 항목
+ [Visual c # 코드 조각](../ide/visual-csharp-code-snippets.md) [코드 조각 선택](../ide/reference/code-snippet-picker.md)

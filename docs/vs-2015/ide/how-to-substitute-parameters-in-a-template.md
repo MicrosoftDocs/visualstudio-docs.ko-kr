@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670656"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>방법: 템플릿 매개 변수 대체
@@ -29,7 +29,7 @@ ms.locfileid: "72670656"
 
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>매개 변수를 사용하여 네임스페이스 이름을 프로젝트 이름으로 바꾸려면
 
-1. 템플릿의 하나 이상 코드 파일에 매개 변수를 삽입합니다. 예를 들면,
+1. 템플릿의 하나 이상 코드 파일에 매개 변수를 삽입합니다. 다음은 그 예입니다.
 
     ```
     namespace $safeprojectname$
@@ -40,11 +40,11 @@ ms.locfileid: "72670656"
 
 2. 템플릿에 대한 .vstemplate 파일에서 이 파일을 포함하는 `ProjectItem` 요소를 찾습니다.
 
-3. `ProjectItem` 요소에 대해 `ReplaceParameters` 특성을 `true`로 설정합니다. 예를 들면,
+3. `ProjectItem` 요소에 대해 `ReplaceParameters` 특성을 `true`로 설정합니다. 예를 들면 다음과 같습니다.
 
     ```
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [프로젝트 및 항목 템플릿](../ide/creating-project-and-item-templates.md) [템플릿 매개 변수](../ide/template-parameters.md) 만들기 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) [ProjectItem 요소 (visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)

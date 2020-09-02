@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247659"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint 용 웹 파트 만들기
@@ -42,7 +42,7 @@ ms.locfileid: "88247659"
     > [!NOTE]
     > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
@@ -214,7 +214,7 @@ ms.locfileid: "88247659"
 
      모든 직원이 웹 파트에 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 SharePoint 용 웹 [파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

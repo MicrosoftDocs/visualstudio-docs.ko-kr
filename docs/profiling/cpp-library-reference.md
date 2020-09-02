@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d15b749d0564010cf6a67527f456a76a9db885cc
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329197"
 ---
 # <a name="c-library-reference"></a>C++ 라이브러리 참조

@@ -14,17 +14,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b042c9d389a1639b4a898f8d091fbd1832e56e25
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670286"
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>장애인을 위한 내게 필요한 옵션
+# <a name="accessibility-for-people-with-disabilities"></a>기능 제약을 느끼는 사용자를 위한 내게 필요한 옵션
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자가 Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]을(를) 좀 더 쉽게 이용할 수 있도록 돕는 기능, 제품 및 서비스에 대해 다룹니다.
+Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자가 Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]을(를) 좀 더 쉽게 이용할 수 있도록 돕는 기능, 제품 및 서비스에 대해 다룹니다.
 
 - [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)
 
-- [도움말 뷰어의 접근성 기능](../../ide/accessibility-features-of-the-help-viewer.md)
+- [도움말 뷰어의 내게 필요한 옵션 기능](../../ide/accessibility-features-of-the-help-viewer.md)

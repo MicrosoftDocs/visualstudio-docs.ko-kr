@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 569254c9df668c7755116f37a819fe65a3ecaa59
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670468"
 ---
 # <a name="install-and-manage-local-content"></a>로컬 콘텐츠 설치 및 관리
@@ -36,7 +36,7 @@ ms.locfileid: "72670468"
 
 Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항에 따라 컴퓨터에 설치된 도움말 콘텐츠를 추가, 제거, 업데이트 및 이동할 수 있습니다.
 
- 로컬 컴퓨터에서 콘텐츠를 관리하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 또한 엔터프라이즈 환경에서 작업하는 경우에는 로컬 콘텐츠를 관리하지 못할 수도 있습니다. 시스템 관리자가 조직을 위해 해당 결정을 내릴 수도 있기 때문입니다. 자세한 내용은 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)를 참조하세요.
+ 로컬 컴퓨터에서 콘텐츠를 관리하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 또한 엔터프라이즈 환경에서 작업하는 경우에는 로컬 콘텐츠를 관리하지 못할 수도 있습니다. 시스템 관리자가 조직을 위해 해당 결정을 내릴 수도 있기 때문입니다. 자세한 내용은 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)를 참조 하세요.
 
 ## <a name="changing-the-content-installation-source"></a>콘텐츠 설치 소스 변경
  기본적으로 도움말 뷰어는 Microsoft 온라인 서비스를 소스로 사용하여 콘텐츠를 설치합니다. 시스템 관리자가 다른 위치에 이미 콘텐츠를 설치한 엔터프라이즈 환경에서 작업하지 않는 한 일반적으로 콘텐츠 소스를 변경하지 않아야 합니다.
@@ -46,13 +46,13 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 1. **콘텐츠 관리** 탭에서 **디스크** 옵션 단추를 선택합니다.
 
     > [!NOTE]
-    > **디스크** 옵션은 관리자가 콘텐츠 설치 소스를 수정하지 못하게 한 경우 사용할 수 없습니다. 자세한 내용은 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)를 참조하세요.
+    > **디스크** 옵션은 관리자가 콘텐츠 설치 소스를 수정하지 못하게 한 경우 사용할 수 없습니다. 자세한 내용은 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)를 참조 하세요.
 
 2. 다음 단계 중 하나를 수행합니다.
 
     - .msha 파일의 경로 또는 서비스 엔드포인트의 URL을 입력합니다.
 
-    - 찾아보기( **...** ) 단추를 선택하여 .msha 파일로 이동합니다.
+    - 찾아보기(**...**) 단추를 선택하여 .msha 파일로 이동합니다.
 
     - 목록에서 가장 최근에 사용된 항목을 선택합니다.
 
@@ -100,7 +100,7 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
  설치된 콘텐츠의 업데이트를 사용할 수 있을 때 상태 표시줄에 알림이 표시됩니다.
 
 > [!IMPORTANT]
-> 도움말 뷰어에서 온라인 업데이트를 자동으로 확인하도록 하려면 **뷰어 옵션** 대화 상자를 연 다음 **Go online to check for content updates**(온라인으로 콘텐츠 업데이트 확인) 확인란을 선택해야 합니다.
+> 도움말 뷰어에서 온라인 업데이트를 자동으로 확인하도록 하려면 **뷰어 옵션** 대화 상자를 연 다음, **온라인으로 콘텐츠 업데이트 확인** 확인란을 선택해야 합니다.
 
 #### <a name="to-update-local-content"></a>로컬 콘텐츠를 업데이트하려면
 
@@ -124,5 +124,5 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
 3. 콘텐츠가 이동되면 **닫기** 단추를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Microsoft 도움말 뷰어](../ide/microsoft-help-viewer.md)

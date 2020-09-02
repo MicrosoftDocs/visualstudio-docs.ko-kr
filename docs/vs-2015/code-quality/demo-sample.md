@@ -13,24 +13,24 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277889"
 ---
 # <a name="demo-sample"></a>데모 샘플
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-다음 절차에서는 [연습: 오류에 대 한 C/C++ 코드 분석](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)샘플을 만드는 방법을 보여 줍니다. 이 절차에서는 다음을 생성합니다.  
+다음 절차에서는 [연습: 오류에 대 한 c/c + + 코드 분석](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)샘플을 만드는 방법을 보여 줍니다. 이 절차에서는 다음을 생성합니다.  
   
-- CppDemo 라는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]CppDemo 라는 솔루션.  
   
 - CodeDefects라는 정적 라이브러리 프로젝트  
   
 - Annotations라는 정적 라이브러리 프로젝트  
   
-  또한이 절차에서는 정적 라이브러리의 헤더 및 .cpp 파일에 대 한 코드를 제공 합니다.  
+  절차에서는 헤더에 대해 코드를 제공하고, 정적 라이브러리에 대해 .cpp 파일을 제공합니다.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo 솔루션 및 CodeDefects 프로젝트 만들기  
   
@@ -46,7 +46,7 @@ ms.locfileid: "77277889"
   
 6. **솔루션용 디렉터리 만들기** 확인란을 선택합니다.  
   
-7. **솔루션 이름** 텍스트 상자에 **CppDemo**를 입력합니다.  
+7. **솔루션 이름** 텍스트 상자에 **CppDemo**을 입력 합니다.  
   
 ### <a name="configure-the-codedefects-project-as-a-static-library"></a>정적 라이브러리 형태로 CodeDefects 프로젝트 구성  
   
@@ -66,7 +66,7 @@ ms.locfileid: "77277889"
   
 3. **이름** 상자에 **Bug.cpp**를 입력한 다음, **추가**를 클릭합니다.  
   
-4. 다음 코드를 복사 하 여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 편집기의 **버그 .cpp** 파일에 붙여넣습니다.  
+4. 다음 코드를 복사 하 여 편집기의 **버그 .cpp** 파일에 붙여넣습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
     ```  
     #include <windows.h>  
@@ -94,7 +94,7 @@ ms.locfileid: "77277889"
   
 7. **이름** 상자에 **Bug.cpp**를 입력한 다음, **추가**를 클릭합니다.  
   
-8. 다음 코드를 복사 하 여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 편집기의 Bug .h 파일에 붙여넣습니다.  
+8. 다음 코드를 복사 하 여 편집기의 Bug .h 파일에 붙여넣습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
     ```  
     #include <stdlib.h>  
@@ -180,7 +180,7 @@ ms.locfileid: "77277889"
   
 3. **이름** 상자에 **annotations.h**를 입력한 다음, **추가**를 클릭합니다.  
   
-4. 다음 코드를 복사 하 여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 편집기의 **주석과** 파일에 붙여넣습니다.  
+4. 다음 코드를 복사 하 여 편집기의 **주석과** 파일에 붙여넣습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -203,7 +203,7 @@ ms.locfileid: "77277889"
   
 7. **이름** 상자에 **annotations.cpp**를 입력한 다음, **추가**를 클릭합니다.  
   
-8. 다음 코드를 복사 하 여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 편집기의 **annotation 파일에 붙여넣습니다.**  
+8. 다음 코드를 복사 하 여 편집기에 있는 annotation **.cpp** 파일에 붙여넣습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

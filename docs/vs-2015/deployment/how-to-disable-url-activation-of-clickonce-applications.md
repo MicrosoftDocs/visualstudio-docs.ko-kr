@@ -1,5 +1,5 @@
 ---
-title: '방법: ClickOnce 응용 프로그램의 URL 활성화 해제 | Microsoft Docs'
+title: '방법: ClickOnce 응용 프로그램의 URL 활성화 사용 안 함 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 75a98706858323693ec01ec3c3420a6d2d25ffef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697222"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>방법: ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정
@@ -37,7 +37,7 @@ ms.locfileid: "65697222"
   
 #### <a name="to-disable-url-activation-for-your-application"></a>애플리케이션의 URL 활성화를 사용하지 않도록 설정하려면  
   
-1. MageUI.exe에서 배포 매니페스트를 엽니다. 단계를 수행 하면 아직 만들지 않은, 경우 [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
+1. MageUI.exe에서 배포 매니페스트를 엽니다. 아직 만들지 않은 경우 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)의 단계를 따릅니다.  
   
 2. **배포 옵션** 탭을 선택합니다.  
   
@@ -45,5 +45,5 @@ ms.locfileid: "65697222"
   
 4. 매니페스트를 저장하고 여기에 서명합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>관련 항목  
+ [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238883"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>레거시 언어 서비스 등록 1
@@ -38,7 +38,7 @@ MPF (관리 되는 패키지 프레임 워크)에서 언어 서비스는 VSPacka
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute
  이 특성은 언어 서비스를 서비스로 등록 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -57,7 +57,7 @@ namespace TestLanguagePackage
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute
  이 특성은 언어 서비스를 특정 언어 서비스로 등록 합니다. 언어 서비스에서 제공 하는 기능을 지정 하는 옵션을 설정할 수 있습니다. 이 예제에서는 언어 서비스에서 제공할 수 있는 옵션의 하위 집합을 보여 줍니다. 언어 서비스 옵션의 전체 집합은을 참조 하십시오 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -82,7 +82,7 @@ namespace TestLanguagePackage
 ### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute
  이 특성은 언어 서비스를 파일 확장명에 연결 합니다. 이 확장명을 가진 파일이 로드 될 때마다 모든 프로젝트에서 언어 서비스가 시작 되어 파일 내용을 표시 하는 데 사용 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -101,7 +101,7 @@ namespace TestLanguagePackage
 ### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute
  이 특성은 코드 확장 또는 코드 조각 템플릿을 가져오는 위치를 등록 합니다. 이 정보는 코드 조각 **브라우저** 및 코드 조각이 소스 파일에 삽입 될 때 편집기에서 사용 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```csharp
 using Microsoft.VisualStudio.Shell;
@@ -127,7 +127,7 @@ namespace TestLanguagePackage
 ### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute
  이 특성은 **옵션** 대화 상자의 **텍스트 편집기** 범주에 표시 되는 속성 페이지를 등록 합니다. 각 페이지에 대해 이러한 특성 중 하나를 사용 하 여 언어 서비스에 대해 표시 합니다. 트리 구조에서 페이지를 구성 해야 하는 경우 추가 특성을 사용 하 여 트리의 각 노드를 정의 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  이 예제에서는 두 개의 속성 페이지, **옵션** 및 **들여쓰기**와 두 번째 속성 페이지를 포함 하는 하나의 노드를 보여 줍니다.
 
 ```csharp
@@ -162,7 +162,7 @@ namespace TestLanguagePackage
 ## <a name="proffer-the-language-service-at-run-time"></a>런타임에 언어 서비스 Proffer
  언어 패키지가 로드 될 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 언어 서비스가 준비 되었음을 알려 주어 야 합니다. 이렇게 하려면 서비스를 proffering 합니다. 이 작업은 메서드에서 수행 됩니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> . 또한 유휴 기간 동안 언어 서비스를 호출 하는 타이머를 시작 해야 백그라운드 구문 분석을 수행할 수 있습니다. 클래스를 통해를 구현한 경우이 유휴 타이머는 문서 속성을 업데이트 하는 데도 사용 됩니다 <xref:Microsoft.VisualStudio.Package.DocumentProperties> . 타이머를 지원 하기 위해 패키지는 인터페이스를 구현 해야 합니다. <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> 메서드는 완전히 구현 되어야 하며 나머지 메서드는 기본값을 반환할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  이 예제에서는 서비스를 proffering 하 고 유휴 타이머를 제공 하는 일반적인 방법을 보여 줍니다.
 
 ```csharp

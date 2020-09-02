@@ -11,87 +11,87 @@ caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0312d98dd6959cb5d67d593c4bf0af39fa1889eb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65693353"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>연습: 편집기 확장에서 셸 명령 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습니다. 이 연습에서는 adornment 메뉴 명령을 호출 하 여 편집기에서 텍스트 뷰를 추가 하는 방법을 보여 줍니다.  
+VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있습니다. 이 연습에서는 메뉴 명령을 호출 하 여 편집기에서 텍스트 뷰에 장식을 추가 하는 방법을 보여 줍니다.  
   
- 이 연습에서는 vspackage Framework MEF (Managed Extensibility) 구성 요소 파트를 함께 사용 하는 방법을 보여 줍니다. Visual Studio shell을 사용 하 여 메뉴 명령을 등록 하는 VSPackage를 사용 해야 하 고 명령을 사용 하 여 MEF 구성 요소 파트에 액세스할 수 있습니다.  
+ 이 연습에서는 MEF (Managed Extensibility Framework) 구성 요소 부분과 함께 VSPackage를 사용 하는 방법을 보여 줍니다. Visual Studio shell을 사용 하 여 메뉴 명령을 등록 하려면 VSPackage를 사용 해야 합니다. 그런 다음 명령을 사용 하 여 MEF 구성 요소 부분에 액세스할 수 있습니다.  
   
-## <a name="prerequisites"></a>전제 조건  
- Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
+## <a name="prerequisites"></a>필수 구성 요소  
+ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.  
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>메뉴 명령을 사용하여 확장 만들기  
- 라는 메뉴 명령을 배치 하는 VSPackage를 만듭니다 **Adornment 추가** 에 **도구** 메뉴.  
+ **도구** 메뉴에 **장식 추가** 라는 메뉴 명령을 배치 하는 VSPackage를 만듭니다.  
   
-1. 라는 C# VSIX 프로젝트를 만듭니다 `MenuCommandTest`, 사용자 지정 명령 항목 템플릿 이름은 추가한 **AddAdornment**합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
+1. 이라는 c # VSIX 프로젝트를 만들고 `MenuCommandTest` 사용자 지정 명령 항목 템플릿 이름 **addadornment**을 추가 합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.  
   
-2. MenuCommandTest 이라는 솔루션 열려 있습니다. MenuCommandTestPackage 파일에 메뉴 명령을 만들고에 저장 하는 코드를 **도구** 메뉴. 이 시점에서 명령 메시지 상자를 표시 하 게 합니다. 이후 단계에는 주석 adornment 표시 하려면이 옵션을 변경 하는 방법을 보여 줍니다.  
+2. MenuCommandTest 라는 솔루션이 열립니다. MenuCommandTestPackage 파일은 메뉴 명령을 만들고 **도구** 메뉴에 배치 하는 코드를 포함 합니다. 이 시점에서 명령은 메시지 상자를 표시 하기만 하면 됩니다. 이후 단계에서는이를 변경 하 여 주석 장식을 표시 하는 방법을 보여 줍니다.  
   
-3. VSIX 매니페스트 편집기에서 source.extension.vsixmanifest 파일을 엽니다. `Assets` 는 Microsoft.VisualStudio.VsPackage MenuCommandTest 라는 탭 행 있어야 합니다.  
+3. VSIX 매니페스트 편집기에서 source.extension.vsixmanifest 파일을 엽니다. 이 `Assets` 탭에는 MenuCommandTest 라는 VsPackage VisualStudio 행이 있어야 합니다.  
   
-4. 저장 하 고 Source.extension.vsixmanifest 파일을 닫습니다.  
+4. Source.extension.vsixmanifest 파일을 저장 하 고 닫습니다.  
   
-## <a name="adding-a-mef-extension-to-the-command-extension"></a>MEF 확장 명령 확장에 추가  
+## <a name="adding-a-mef-extension-to-the-command-extension"></a>명령 확장에 MEF 확장 추가  
   
-1. **솔루션 탐색기**솔루션 노드를 마우스 오른쪽 단추로 클릭, 클릭 **추가**를 클릭 하 고 **새 프로젝트**합니다. 에 **새 프로젝트 추가** 대화 상자, 클릭 **확장성** 아래 **Visual C#**, 다음 **VSIX 프로젝트**합니다. 프로젝트 이름을 `CommentAdornmentTest`로 지정합니다.  
+1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 클릭 한 다음 **새 프로젝트**를 클릭 합니다. **새 프로젝트 추가** 대화 상자에서 **Visual c #** 의 **확장성** 을 클릭 한 다음 **VSIX 프로젝트**를 클릭 합니다. 프로젝트 이름을 `CommentAdornmentTest`로 지정합니다.  
   
-2. 이 프로젝트를 VSPackage 강력한 이름의 어셈블리와 상호 작용을 하기 때문에 어셈블리를 서명 해야 합니다. VSPackage 어셈블리에 대해 이미 만들어진 키 파일을 재사용할 수 있습니다.  
+2. 이 프로젝트는 강력한 이름의 VSPackage 어셈블리와 상호 작용 하므로 어셈블리에 서명 해야 합니다. VSPackage 어셈블리에 대해 이미 생성 된 키 파일을 다시 사용할 수 있습니다.  
   
-    1. 프로젝트 속성을 열고 선택 합니다 **서명** 탭 합니다.  
+    1. 프로젝트 속성을 열고 **서명** 탭을 선택 합니다.  
   
-    2. 선택 **어셈블리에 서명할**합니다.  
+    2. **어셈블리 서명**을 선택 합니다.  
   
-    3. 아래 **강력한 이름 키 파일 선택**, MenuCommandTest 어셈블리에 대해 생성 된 Key.snk 파일을 선택 합니다.  
+    3. **강력한 이름 키 파일 선택**에서 MenuCommandTest 어셈블리에 대해 생성 된 key.snk 파일을 선택 합니다.  
   
 ## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>VSPackage 프로젝트에서 MEF 확장 참조  
- MEF 구성 요소를 추가 하는 VSPackage에 있으므로 매니페스트에 두 종류의 자산을 지정 해야 합니다.  
+ VSPackage에 MEF 구성 요소를 추가 하기 때문에 매니페스트에서 두 종류의 자산을 모두 지정 해야 합니다.  
   
 > [!NOTE]
-> MEF에 대 한 자세한 내용은 참조 하세요. [Framework MEF (Managed Extensibility)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.  
+> MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)를 참조 하세요.  
   
-#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage 프로젝트를 MEF 구성 요소에 대 한 참조  
+#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage 프로젝트에서 MEF 구성 요소를 참조 하려면  
   
-1. MenuCommandTest 프로젝트에서 VSIX 매니페스트 편집기에서 source.extension.vsixmanifest 파일을 엽니다.  
+1. MenuCommandTest 프로젝트의 VSIX 매니페스트 편집기에서 source.extension.vsixmanifest 파일을 엽니다.  
   
-2. 에 **자산** 탭을 클릭 **새로 만들기**합니다.  
+2. **자산** 탭에서 **새로 만들기**를 클릭 합니다.  
   
-3. 에 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
+3. **유형** 목록에서 **VisualStudio**을 선택 합니다.  
   
-4. 에 **소스** 목록에서 선택 **현재 솔루션의 프로젝트**합니다.  
+4. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.  
   
-5. 에 **프로젝트** 목록에서 선택 **CommentAdornmentTest**합니다.  
+5. **프로젝트** 목록에서 **CommentAdornmentTest**를 선택 합니다.  
   
-6. 저장 하 고 source.extension.vsixmanifest 파일을 닫습니다.  
+6. Source.extension.vsixmanifest 파일을 저장 하 고 닫습니다.  
   
-7. MenuCommandTest 프로젝트 CommentAdornmentTest 프로젝트에 대 한 참조가 있는지 확인 합니다.  
+7. MenuCommandTest 프로젝트에 CommentAdornmentTest 프로젝트에 대 한 참조가 있는지 확인 합니다.  
   
-8. CommentAdornmentTest 프로젝트에서 어셈블리를 생성 하려면 프로젝트를 설정 합니다. 에 **솔루션 탐색기**, 프로젝트를 선택 하 고 찾는 위치를 **속성** 창에 대 한를 **OutputDirectory 빌드 출력 복사** 속성 로설정**true**합니다.  
+8. CommentAdornmentTest 프로젝트에서 프로젝트를 설정 하 여 어셈블리를 생성 합니다. **솔루션 탐색기**에서 프로젝트를 선택 하 고 **속성** 창에서 **OutputDirectory로 빌드 출력 복사** 속성을 찾은 다음 **true**로 설정 합니다.  
   
-## <a name="defining-a-comment-adornment"></a>주석 Adornment 정의  
- 자체 주석 adornment 이루어져는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 작성자 및 텍스트에 대 한 설명을 표시 하는 일부 문자열과 선택한 텍스트를 추적 하는 합니다.  
+## <a name="defining-a-comment-adornment"></a>주석 장식 정의  
+ 주석 장식 자체는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 선택한 텍스트를 추적 하는와 텍스트의 작성자와 설명을 나타내는 일부 문자열로 구성 됩니다.  
   
-#### <a name="to-define-a-comment-adornment"></a>주석 adornment를 정의 하려면  
+#### <a name="to-define-a-comment-adornment"></a>주석 장식을 정의 하려면  
   
-1. CommentAdornmentTest 프로젝트에서 새 클래스 파일을 추가 하 고 이름을 `CommentAdornment`입니다.  
+1. CommentAdornmentTest 프로젝트에서 새 클래스 파일을 추가 하 고 이름을로 추가 `CommentAdornment` 합니다.  
   
-2. 다음 참조를 추가 합니다.  
+2. 다음 참조를 추가합니다.  
   
-    1. Microsoft.VisualStudio.CoreUtility  
+    1. VisualStudio. CoreUtility  
   
-    2. Microsoft.VisualStudio.Text.Data  
+    2. VisualStudio. 데이터  
   
-    3. Microsoft.VisualStudio.Text.Logic  
+    3. VisualStudio.  
   
-    4. Microsoft.VisualStudio.Text.UI  
+    4. VisualStudio.  
   
-    5. Microsoft.VisualStudio.Text.UI.Wpf  
+    5. VisualStudio. Wpf  
   
     6. System.ComponentModel.Composition  
   
@@ -101,19 +101,19 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
   
     9. WindowsBase  
   
-3. 다음 추가 `using` 문입니다.  
+3. 다음 `using` 문을 추가합니다.  
   
     ```vb  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-4. 파일에 클래스가 있어야 `CommentAdornment`합니다.  
+4. 파일은 라는 클래스를 포함 해야 합니다 `CommentAdornment` .  
   
     ```  
     internal class CommentAdornment  
     ```  
   
-5. 세 필드를 추가 합니다 `CommentAdornment` 클래스는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, 작성자 및 설명 합니다.  
+5. `CommentAdornment`클래스에 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , 작성자 및 설명의 3 개 필드를 추가 합니다.  
   
     ```csharp  
     public readonly ITrackingSpan Span;  
@@ -132,10 +132,10 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-## <a name="creating-a-visual-element-for-the-adornment"></a>장식에 대 한 시각적 요소를 만들기  
- 또한 프로그램 adornment 시각적 요소를 정의 해야 합니다. 이 연습에서는 Windows Presentation Foundation (WPF) 클래스에서 상속 되는 컨트롤 정의 <xref:System.Windows.Controls.Canvas>합니다.  
+## <a name="creating-a-visual-element-for-the-adornment"></a>장식의 시각적 요소 만들기  
+ 또한 장식의 시각적 요소를 정의 해야 합니다. 이 연습에서는 Windows Presentation Foundation (WPF) 클래스에서 상속 되는 컨트롤을 정의 <xref:System.Windows.Controls.Canvas> 합니다.  
   
-1. CommentAdornmentTest 프로젝트에서 클래스를 만들고 이름을 `CommentBlock`입니다.  
+1. CommentAdornmentTest 프로젝트에서 클래스를 만들고 이름을로 만듭니다 `CommentBlock` .  
   
 2. 다음 `using` 문을 추가합니다.  
   
@@ -151,14 +151,14 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3. 확인 합니다 `CommentBlock` 클래스에서 상속 <xref:System.Windows.Controls.Canvas>합니다.  
+3. 클래스를 `CommentBlock` 에서 상속 하도록 설정 <xref:System.Windows.Controls.Canvas> 합니다.  
   
     ```csharp  
     internal class CommentBlock : Canvas  
     { }  
     ```  
   
-4. 장식의 시각적 측면을 정의 하려면 일부 개인 필드를 추가 합니다.  
+4. 일부 전용 필드를 추가 하 여 장식의 시각적 측면을 정의 합니다.  
   
     ```csharp  
     private Geometry textGeometry;  
@@ -168,7 +168,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     private static Pen dashPen;  
     ```  
   
-5. 주석 adornment를 정의 하 고 관련 텍스트를 추가 하는 생성자를 추가 합니다.  
+5. 주석 장식을 정의 하는 생성자를 추가 하 고 관련 텍스트를 추가 합니다.  
   
     ```csharp  
     public CommentBlock(double textRightEdge, double viewRightEdge,   
@@ -237,7 +237,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-6. 또한 구현는 <xref:System.Windows.Controls.Panel.OnRender%2A> 장식을 그릴 수 있는 이벤트 처리기입니다.  
+6. 또한 <xref:System.Windows.Controls.Panel.OnRender%2A> 장식을 그리는 이벤트 처리기를 구현 합니다.  
   
     ```csharp  
     protected override void OnRender(DrawingContext dc)  
@@ -257,9 +257,9 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     ```  
   
 ## <a name="adding-an-iwpftextviewcreationlistener"></a>IWpfTextViewCreationListener 추가  
- <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 생성 이벤트를 보기 위해 수신 하는 데 사용할 수 있는 MEF 구성 요소 파트가 됩니다.  
+ 는 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 보기 생성 이벤트를 수신 하는 데 사용할 수 있는 MEF 구성 요소 부분입니다.  
   
-1. CommentAdornmentTest 프로젝트에 클래스 파일을 추가 하 고 이름을 `Connector`입니다.  
+1. CommentAdornmentTest 프로젝트에 클래스 파일을 추가 하 고 이름을로 추가 `Connector` 합니다.  
   
 2. 다음 `using` 문을 추가합니다.  
   
@@ -269,12 +269,12 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3. 구현 하는 클래스 선언 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>를 사용 하 여 내보내기 및는 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" 및 <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 의 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>합니다. 구성 요소가 적용 되는 콘텐츠의 종류를 지정 하는 콘텐츠 형식 특성입니다. 텍스트 형식은 모든 이진이 아닌 파일 형식에 대 한 기본 형식이입니다. 따라서 작성 되는 거의 모든 텍스트 뷰에이 형식이 됩니다. 텍스트 보기 역할 특성 텍스트 뷰 구성 요소가 적용 되는 종류를 지정 합니다. 문서 텍스트 보기 역할에는 일반적으로 텍스트 줄의 구성 파일에 저장 되며를 보여 줍니다.  
+3. 을 구현 하는 클래스를 선언 하 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 고 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" 및의를 사용 하 여 내보냅니다 <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> . Content type 특성은 구성 요소가 적용 되는 콘텐츠의 종류를 지정 합니다. 텍스트 형식은 이진이 아닌 모든 파일 형식에 대 한 기본 형식입니다. 따라서 생성 된 거의 모든 텍스트 보기는이 형식이 됩니다. Text view role 특성은 구성 요소가 적용 되는 텍스트 뷰의 종류를 지정 합니다. 문서 텍스트 뷰 역할은 일반적으로 줄로 구성 되 고 파일에 저장 되는 텍스트를 표시 합니다.  
   
      [!code-csharp[VSSDKMenuCommandTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/connector.cs#11)]
      [!code-vb[VSSDKMenuCommandTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/connector.vb#11)]  
   
-4. 구현 된 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 정적 호출 하도록 메서드 `Create()` 의 이벤트를 `CommentAdornmentManager`합니다.  
+4. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>의 정적 이벤트를 호출 하도록 메서드를 구현 합니다 `Create()` `CommentAdornmentManager` .  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -305,12 +305,12 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-## <a name="defining-an-adornment-layer"></a>Adornment 계층을 정의합니다.  
- 새 adornment 추가할 adornment 계층을 정의 해야 합니다.  
+## <a name="defining-an-adornment-layer"></a>장식 계층 정의  
+ 새 장식을 추가 하려면 장식 계층을 정의 해야 합니다.  
   
-#### <a name="to-define-an-adornment-layer"></a>Adornment 계층을 정의 하려면  
+#### <a name="to-define-an-adornment-layer"></a>장식 계층을 정의 하려면  
   
-1. 에 `Connector` 클래스 형식의 공용 필드를 선언 <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>, 및 사용 하 여 내보내기는 <xref:Microsoft.VisualStudio.Utilities.NameAttribute> adornment 계층에 대 한 고유 이름을 지정 하는 및 <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> 다른 텍스트에이 adornment 계층의 Z 순서 관계를 정의 하는 레이어 (텍스트, 캐럿 및 선택)를 봅니다.  
+1. 클래스에서 `Connector` 형식의 public 필드를 선언 <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> 하 고, <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 장식 계층의 고유 이름을 지정 하는와 <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> 이 장식 계층의 Z-순서 관계를 정의 하는를 사용 하 여 내보냅니다 (텍스트, 캐럿 및 선택).  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -320,10 +320,10 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
   
     ```  
   
-## <a name="providing-comment-adornments"></a>주석 선의 도구 영역을 제공합니다.  
- Adornment를 정의할 때 주석 adornment 관리자 및 주석 adornment 공급자를 구현할 수도 있습니다. 주석 adornment 공급자 주석 선의 도구 영역 목록, 수신 대기 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> 기본 텍스트를 삭제할 때 삭제 주석 선의 도구 영역 내부 텍스트 버퍼에는 이벤트입니다.  
+## <a name="providing-comment-adornments"></a>주석 장식 제공  
+ 장식을 정의할 때 주석 장식 공급자와 주석 장식 관리자도 구현 합니다. 주석 장식 공급자는 주석 장식 목록을 유지 하 고 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> 기본 텍스트 버퍼에서 이벤트를 수신 하 고 내부 텍스트가 삭제 될 때 주석 장식을 삭제 합니다.  
   
-1. CommentAdornmentTest 프로젝트에 새 클래스 파일을 추가 하 고 이름을 `CommentAdornmentProvider`입니다.  
+1. CommentAdornmentTest 프로젝트에 새 클래스 파일을 추가 하 고 이름을로 만듭니다 `CommentAdornmentProvider` .  
   
 2. 다음 `using` 문을 추가합니다.  
   
@@ -335,7 +335,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     using Microsoft.VisualStudio.Text.Editor;  
     ```  
   
-3. 라는 클래스를 추가 `CommentAdornmentProvider`합니다.  
+3. `CommentAdornmentProvider`(이)라는 클래스를 추가합니다.  
   
     ```csharp  
     internal class CommentAdornmentProvider  
@@ -343,7 +343,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-4. 텍스트 버퍼와 버퍼와 관련 된 주석 도구 영역 목록에 대 한 전용 필드를 추가 합니다.  
+4. 텍스트 버퍼에 대 한 전용 필드와 버퍼와 관련 된 주석 장식의 목록을 추가 합니다.  
   
     ```csharp  
     private ITextBuffer buffer;  
@@ -351,7 +351,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
   
     ```  
   
-5. 생성자에 대 한 추가 `CommentAdornmentProvider`합니다. 공급자에서 인스턴스화한 때문에이 생성자에서 개인 액세스를 해야 합니다 `Create()` 메서드. 생성자를 추가 합니다 `OnBufferChanged` 이벤트 처리기를 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> 이벤트입니다.  
+5. 에 대 한 생성자를 추가 `CommentAdornmentProvider` 합니다. 공급자가 메서드에 의해 인스턴스화되기 때문에이 생성자는 전용 액세스 권한이 있어야 합니다 `Create()` . 생성자는 이벤트 `OnBufferChanged` 에 이벤트 처리기를 추가 합니다 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> .  
   
     ```csharp  
     private CommentAdornmentProvider(ITextBuffer buffer)  
@@ -387,7 +387,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-8. 추가 된 `OnBufferChanged` 이벤트 처리기입니다.  
+8. `OnBufferChanged`이벤트 처리기를 추가 합니다.  
   
     ```csharp  
     private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
@@ -413,13 +413,13 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
      [!code-csharp[VSSDKMenuCommandTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentprovider.cs#21)]
      [!code-vb[VSSDKMenuCommandTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentprovider.vb#21)]  
   
-9. 에 대 한 선언을 추가 `CommentsChanged` 이벤트입니다.  
+9. 이벤트에 대 한 선언을 추가 `CommentsChanged` 합니다.  
   
     ```csharp  
     public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
     ```  
   
-10. 만들기는 `Add()` 메서드를 장식을 추가 합니다.  
+10. 메서드를 만들어 `Add()` 장식을 추가 합니다.  
   
     ```csharp  
     public void Add(SnapshotSpan span, string author, string text)  
@@ -445,7 +445,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
   
     ```  
   
-11. 추가 된 `RemoveComments()` 메서드.  
+11. 메서드를 추가 `RemoveComments()` 합니다.  
   
     ```csharp  
     public void RemoveComments(SnapshotSpan span)  
@@ -472,7 +472,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-12. 추가 된 `GetComments()` 스냅숏 지정 된 범위에서 모든 메모를 반환 하는 메서드입니다.  
+12. 지정 된 `GetComments()` 스냅숏 범위의 모든 주석을 반환 하는 메서드를 추가 합니다.  
   
     ```csharp  
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
@@ -488,7 +488,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-13. 라는 클래스를 추가 `CommentsChangedEventArgs`다음과 같이 합니다.  
+13. 다음과 같이 라는 클래스를 추가 `CommentsChangedEventArgs` 합니다.  
   
     ```csharp  
     internal class CommentsChangedEventArgs : EventArgs  
@@ -505,10 +505,10 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-## <a name="managing-comment-adornments"></a>주석 선의 도구 영역 관리  
- 주석 adornment manager 장식 만들고 adornment 계층에 추가 합니다. 수신 합니다.는 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 고 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 이벤트를 이동 하거나 장식을 삭제할 수 있도록 합니다. 또한를 수신 대기를 `CommentsChanged` 의견을 추가 하거나 제거할 때 주석 adornment 공급자가 실행 되는 이벤트입니다.  
+## <a name="managing-comment-adornments"></a>주석 장식 관리  
+ 설명 장식 관리자는 장식을 만들어 장식 계층에 추가 합니다. 이 메서드는 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 장식을 이동 하거나 삭제할 수 있도록 및 이벤트를 수신 대기 합니다. 또한 `CommentsChanged` 주석이 추가 되거나 제거 될 때 주석 장식 공급자에서 발생 하는 이벤트를 수신 대기 합니다.  
   
-1. CommentAdornmentTest 프로젝트에 클래스 파일을 추가 하 고 이름을 `CommentAdornmentManager`입니다.  
+1. CommentAdornmentTest 프로젝트에 클래스 파일을 추가 하 고 이름을로 추가 `CommentAdornmentManager` 합니다.  
   
 2. 다음 `using` 문을 추가합니다.  
   
@@ -521,7 +521,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     using Microsoft.VisualStudio.Text.Formatting;  
     ```  
   
-3. 라는 클래스를 추가 `CommentAdornmentManager`합니다.  
+3. `CommentAdornmentManager`(이)라는 클래스를 추가합니다.  
   
     ```csharp  
     internal class CommentAdornmentManager  
@@ -529,7 +529,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
         }  
     ```  
   
-4. 일부 개인 필드를 추가 합니다.  
+4. 일부 전용 필드를 추가 합니다.  
   
     ```csharp  
     private readonly IWpfTextView view;  
@@ -537,7 +537,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     private readonly CommentAdornmentProvider provider;  
     ```  
   
-5. 관리자를 구독 하는 생성자를 추가 합니다 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 및 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 이벤트도는 `CommentsChanged` 이벤트입니다. 관리자는 정적 인스턴스화될 때문에 생성자가 private `Create()` 메서드.  
+5. 관리자를 구독 하는 생성자를 및 이벤트에 추가 하 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 고 이벤트에도 추가 `CommentsChanged` 합니다. 관리자가 정적 메서드에 의해 인스턴스화되기 때문에 생성자는 private입니다 `Create()` .  
   
     ```csharp  
     private CommentAdornmentManager(IWpfTextView view)  
@@ -553,7 +553,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-6. 추가 된 `Create()` 메서드는 공급자를 가져오거나 필요한 경우 하나 만듭니다.  
+6. `Create()`공급자를 가져오는 메서드를 추가 하거나 필요한 경우 하나를 만듭니다.  
   
     ```csharp  
     public static CommentAdornmentManager Create(IWpfTextView view)  
@@ -562,7 +562,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-7. 추가 된 `CommentsChanged` 처리기입니다.  
+7. 처리기를 추가 `CommentsChanged` 합니다.  
   
     ```csharp  
     private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
@@ -577,7 +577,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-8. 추가 된 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 처리기입니다.  
+8. 처리기를 추가 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 합니다.  
   
     ```csharp  
     private void OnClosed(object sender, EventArgs e)  
@@ -588,7 +588,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-9. 추가 된 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 처리기입니다.  
+9. 처리기를 추가 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 합니다.  
   
     ```csharp  
     private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
@@ -619,23 +619,23 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-10. 메모를 그릴 수 있는 개인 메서드를 추가 합니다.  
+10. 주석을 그리는 전용 메서드를 추가 합니다.  
   
      [!code-csharp[VSSDKMenuCommandTest#35](../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentmanager.cs#35)]
      [!code-vb[VSSDKMenuCommandTest#35](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentmanager.vb#35)]  
   
-## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>메뉴 명령을 사용 하 여 주석 Adornment 추가  
- 메뉴 명령을 사용 하 여 주석 adornment 구현 하 여 만들 수 있습니다는 `MenuItemCallback` VSPackage의 메서드.  
+## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>메뉴 명령을 사용 하 여 주석 장식 추가  
+ 메뉴 명령을 사용 하 여 VSPackage의 메서드를 구현 하 여 주석 장식을 만들 수 있습니다 `MenuItemCallback` .  
   
 1. MenuCommandTest 프로젝트에 다음 참조를 추가 합니다.  
   
-    - Microsoft.VisualStudio.TextManager.Interop  
+    - VisualStudio입니다.  
   
-    - Microsoft.VisualStudio.Editor  
+    - VisualStudio  
   
-    - Microsoft.VisualStudio.Text.UI.Wpf  
+    - VisualStudio. Wpf  
   
-2. AddAdornment.cs 파일을 열고 다음을 추가 `using` 문입니다.  
+2. AddAdornment.cs 파일을 열고 다음 문을 추가 합니다 `using` .  
   
     ```csharp  
     using Microsoft.VisualStudio.TextManager.Interop;  
@@ -644,7 +644,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     using CommentAdornmentTest;  
     ```  
   
-3. ShowMessageBox() 메서드를 삭제 하 고 다음 명령 처리기를 추가 합니다.  
+3. ShowMessageBox () 메서드를 삭제 하 고 다음 명령 처리기를 추가 합니다.  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -652,7 +652,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-4. 현재 보기를 가져오는 코드를 추가 합니다. 가져와야 합니다 `SVsTextManager` 가져오려면 활성 Visual Studio shell의 `IVsTextView`합니다.  
+4. 활성 뷰를 가져오는 코드를 추가 합니다. `SVsTextManager`활성 상태를 가져오려면 Visual Studio 셸의를 가져와야 합니다 `IVsTextView` .  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -664,7 +664,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-5. 이 텍스트 뷰 편집기 텍스트 보기의 인스턴스인 경우 되도록를 캐스팅할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> 인터페이스 및 다음 합니다 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> 및 관련 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>합니다. 사용 합니다 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> 를 호출 하는 `Connector.Execute()` 메서드를 장식 추가 및 주석 adornment 공급자를 가져옵니다. 명령 처리기 이제 다음과 같이 표시 됩니다.  
+5. 이 텍스트 뷰가 편집기 텍스트 뷰의 인스턴스이면 인터페이스로 캐스팅 한 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> 다음 및 연결 된를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> . 를 사용 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> 하 여 메서드를 호출 합니다 `Connector.Execute()` .이 메서드는 주석 장식 공급자를 가져오고 장식을 추가 합니다. 이제 명령 처리기는 다음과 같습니다.  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -688,7 +688,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     }  
     ```  
   
-6. AddAdornment 명령 AddAdornment 생성자에 대 한 처리기로 AddAdornmentHandler 메서드를 설정 합니다.  
+6. AddAdornmentHandler 메서드를 AddAdornment 생성자의 AddAdornment 명령에 대 한 처리기로 설정 합니다.  
   
     ```csharp  
     private AddAdornment(Package package)  
@@ -713,15 +713,15 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
   
 ## <a name="building-and-testing-the-code"></a>코드 빌드 및 테스트  
   
-1. 솔루션을 빌드하고 디버깅을 시작합니다. 실험적 인스턴스에서 표시 됩니다.  
+1. 솔루션을 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 되어야 합니다.  
   
 2. 텍스트 파일을 만듭니다. 텍스트를 입력 한 다음 선택 합니다.  
   
-3. 에 **도구** 메뉴에서 클릭 **추가 Adornment 호출**합니다. 풍선은 텍스트 창의 오른쪽에 표시 되 고 다음 텍스트와 유사한 텍스트를 포함 해야 합니다.  
+3. **도구** 메뉴에서 **장식 추가 호출**을 클릭 합니다. 풍선을 텍스트 창의 오른쪽에 표시 하 고 다음 텍스트와 유사한 텍스트를 포함 해야 합니다.  
   
      YourUserName  
   
      Fourscore...  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a852b0e5ac6c6a677caab97279a0b0cb0299d27f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670632"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>How to: Track Your Code by Customizing the Scrollbar
@@ -33,11 +33,11 @@ ms.locfileid: "72670632"
 
      문자열을 검색한 후 스크롤 막대가 표시되는 모양은 다음과 같습니다. 문자열의 모든 인스턴스가 표시되는지 확인합니다.
 
-     ![문자열을 검색 한 후의 스크롤 막대입니다.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+     ![문자열을 찾은 후 스크롤 막대](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
 
      문자열의 모든 인스턴스를 바꾼 후 스크롤 막대는 다음과 같습니다. 작업으로 인해 일부 문제가 발생했음을 즉시 확인할 수 있습니다.
 
-     ![오류와 함께 문자열을 바꾼 후 스크롤 막대](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+     ![오류가 있는 문자열을 바꾼 후 스크롤 막대](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
 
 ### <a name="to-set-the-display-mode-for-the-scroll-bar"></a>스크롤 막대의 디스플레이 모드를 설정하려면
 
@@ -47,9 +47,9 @@ ms.locfileid: "72670632"
 
      지도 모드가 설정되고 너비가 보통으로 설정된 경우 검색 예제가 표시되는 모양은 다음과 같습니다.
 
-     ![지도 모드의 스크롤 막대](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+     ![맵 모드의 스크롤 막대](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
-2. 지도 모드에서 스크롤 막대 위/아래로 커서를 이동할 때 코드 미리 보기를 사용하도록 설정하려면 **미리 보기 도구 설명 표시** 옵션을 선택합니다. 표시되는 모양은 다음과 같습니다.
+2. 지도 모드에서 스크롤 막대 위/아래로 커서를 이동할 때 코드 미리 보기를 사용하도록 설정하려면 **미리 보기 도구 설명 표시** 옵션을 선택합니다. 다음과 같이 표시됩니다.
 
      ![도구 설명이 있는 스크롤 막대](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
 

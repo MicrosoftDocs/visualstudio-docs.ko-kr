@@ -1,5 +1,5 @@
 ---
-title: 정렬 순서 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: SortOrder 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699965"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 요소(Visual Studio 템플릿)
-**새 프로젝트** 또는 **새 항목 추가** 대화 상자에 나타나는 것과 같이 동일한 범주의 다른 템플릿 중에서 템플릿을 정렬하는 데 사용되는 값을 지정합니다.
+**새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 된 것 처럼 동일한 범주의 다른 템플릿 간에 템플릿을 정렬 하는 데 사용 되는 값을 지정 합니다.
 
- \<VS템플릿 \<> 템플릿데이터> \<정렬 순서>
+ \<VSTemplate> \<TemplateData>
+ \<SortOrder>
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +34,7 @@ ms.locfileid: "80699965"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
  없음
@@ -43,24 +44,24 @@ ms.locfileid: "80699965"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 정렬 `integer` 순서 값을 나타내는 A입니다.
+ `integer`정렬 순서 값을 나타내는입니다.
 
 ## <a name="remarks"></a>설명
- `SortOrder`는 선택적 요소입니다. 기본값은 100이고 모든 값은 10의 배수여야 합니다.
+ `SortOrder`는 선택적 요소입니다. 기본값은 100이 고 모든 값은 10의 배수 여야 합니다.
 
- 사용자가 `SortOrder` 만든 템플릿에 대해 요소는 무시됩니다. 사용자가 만든 모든 템플릿은 사전순으로 정렬됩니다.
+ `SortOrder`사용자가 만든 템플릿의 요소는 무시 됩니다. 사용자가 만든 모든 템플릿은 사전순으로 정렬 됩니다.
 
- 정렬 순서 값이 낮은 템플릿은 정렬 순서 값이 높은 템플릿 앞에 **새 프로젝트** 또는 새 **항목 추가** 대화 상자에 나타납니다.
+ 정렬 순서가 낮은 템플릿이 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 정렬 순서 값이 높은 템플릿 앞에 표시 됩니다.
 
-## <a name="example"></a>예제
- 다음 예제에서는 표준 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스 템플릿에 대한 메타데이터를 보여 줍니다.
+## <a name="example"></a>예
+ 다음 예제에서는 표준 클래스 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,8 +80,8 @@ ms.locfileid: "80699965"
 </VSTemplate>
 ```
 
- 이 예제에서는 `SortOrder` 요소가 상대적으로 높습니다. 다른 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 항목 템플릿의 `SortOrder` 값이 새 `290` **항목** 대화 상자의 이 템플릿 앞에 표시될 가능성이 높습니다.
+ 이 예제에서 요소는 `SortOrder` 상대적으로 높습니다. 다른 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 항목 템플릿의 `SortOrder` 값은 보다 낮고 `290` **새 항목** 대화 상자에서이 템플릿 앞에 표시 될 가능성이 높습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

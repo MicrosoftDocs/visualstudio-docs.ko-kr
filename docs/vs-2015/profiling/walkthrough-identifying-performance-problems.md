@@ -1,5 +1,5 @@
 ---
-title: '연습: 성능 문제 확인 | Microsoft Docs'
+title: '연습: 성능 문제 확인 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695010"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>연습: 성능 문제 확인
@@ -38,7 +38,7 @@ ms.locfileid: "65695010"
   
 - 성능 문제를 찾아서 해결하기 위해 계측된 프로파일링 결과 분석  
   
-## <a name="prerequisites"></a>전제 조건  
+## <a name="prerequisites"></a>사전 요구 사항  
   
 - C#에 대한 중간 정도의 이해도  
   
@@ -46,7 +46,7 @@ ms.locfileid: "65695010"
   
   프로파일링을 통해 제공되는 정보를 사용하려면 디버깅 기호 정보를 준비해 두는 것이 가장 좋습니다.  
   
-## <a name="profiling-by-using-the-sampling-method"></a>샘플링 방법을 사용하여 프로 파일링  
+## <a name="profiling-by-using-the-sampling-method"></a>샘플링 방법을 사용하여 프로파일링  
  샘플링은 해당하는 프로세스를 주기적으로 폴링하여 활성 함수를 확인하는 프로파일링 방법입니다. 결과 데이터는 프로세스를 샘플링할 때 확인하려는 함수가 호출 스택 위에 있었던 빈도에 해당하는 수를 제공합니다.  
   
 #### <a name="to-profile-an-application-by-using-the-sampling-method"></a>샘플링 방법을 사용하여 애플리케이션을 프로파일링하려면  
@@ -67,9 +67,9 @@ ms.locfileid: "65695010"
   
 5. **CPU 샘플링(권장)** 이 선택되어 있는지 확인하고 **다음**을 클릭합니다.  
   
-6. **다음 응용 프로그램 중 프로파일링할 대상을 선택하십시오.** 에서 PeopleTrax를 선택하고 **다음**을 클릭합니다.  
+6. **다음 애플리케이션 중 프로파일링할 대상을 선택하십시오.** 에서 PeopleTrax를 선택하고 **다음**을 클릭합니다.  
   
-     [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서 프로젝트를 빌드하고 응용 프로그램 프로파일링을 시작합니다. **PeopleTrax** 응용 프로그램 창이 나타납니다.  
+     [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서 프로젝트를 빌드하고 애플리케이션 프로파일링을 시작합니다. **PeopleTrax** 애플리케이션 창이 나타납니다.  
   
 7. **사용자 가져오기**를 클릭합니다.  
   
@@ -103,8 +103,8 @@ ms.locfileid: "65695010"
   
      GetPeople 및 GetNames 메서드의 성능이 크게 향상되었음을 확인할 수 있습니다.  
   
-## <a name="profiling-by-using-the-instrumentation-method"></a>계측 방법을 사용하여 프로 파일링  
- 계측은 프로파일러가 프로브 함수를 프로파일링된 이진 파일의 특수하게 빌드된 버전에 삽입하는 프로파일링 방법입니다.  프로브는 계측된 모듈에서 함수의 진입 및 종료 시에, 그리고 해당 함수의 모든 호출 사이트에서 타이밍 정보를 수집합니다. 계측 프로세스는 네트워크에서 통신하고 디스크에 쓰는 등의 입/출력 작업과 관련된 문제를 조사하는 데 유용합니다. 계측에서는 샘플링에 비해 더 자세한 정보를 제공하지만, 프로세스 실행이 보다 주입식이며 오버헤드가 더 많이 발생합니다. 계측된 이진 파일도 디버그 또는 릴리스 이진 파일보다 더 크므로 배포할 수 없습니다.  
+## <a name="profiling-by-using-the-instrumentation-method"></a>계측 방법을 사용하여 프로파일링  
+ 계측은 프로파일러가 프로브 함수를 프로파일링된 이진 파일의 특수하게 빌드된 버전에 삽입하는 프로파일링 방법입니다. 프로브는 계측된 모듈에서 함수의 진입 및 종료 시에, 그리고 해당 함수의 모든 호출 사이트에서 타이밍 정보를 수집합니다. 계측 프로세스는 네트워크에서 통신하고 디스크에 쓰는 등의 입/출력 작업과 관련된 문제를 조사하는 데 유용합니다. 계측에서는 샘플링에 비해 더 자세한 정보를 제공하지만, 프로세스 실행이 보다 주입식이며 오버헤드가 더 많이 발생합니다. 계측된 이진 파일도 디버그 또는 릴리스 이진 파일보다 더 크므로 배포할 수 없습니다.  
   
  연습의 이 섹션에서는 계측 방법을 사용하여 앞에서 프로파일링한 PeopleTrax 애플리케이션에서 최적화할 수 있는 코드를 추가로 검색합니다. 그리고 요약 뷰 시간 표시 막대의 필터를 사용하여 사용자 목록이 메모장 파일에 작성되는 프로파일링된 애플리케이션의 데이터 내보내기 시나리오에 대한 분석을 중점적으로 수행합니다.  
   
@@ -158,7 +158,7 @@ ms.locfileid: "65695010"
   
    애플리케이션을 다시 실행하면 성능이 현저히 향상 되었음을 확인할 수 있습니다. 성능이 사용자가 체감할 수 있도록 향상되더라도 프로파일링 세션을 다시 실행하는 것이 좋습니다. 첫 번째 문제로 인해 다른 문제는 명확하게 드러나지 않았을 수도 있으므로, 문제를 해결한 후에 데이터를 검토해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [개요](../profiling/overviews-performance-tools.md)   
- [시작](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI(디버깅 정보 형식)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+## <a name="see-also"></a>관련 항목  
+ [간단한](../profiling/overviews-performance-tools.md)   
+ [시작 하기](../profiling/getting-started-with-performance-tools.md)   
+ [/Z7,/Zi,/ZI (디버그 정보 형식)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

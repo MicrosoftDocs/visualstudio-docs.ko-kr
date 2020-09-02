@@ -1,5 +1,5 @@
 ---
-title: SDKReference 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: SDKReference 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700170"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 요소(Visual Studio 템플릿)
@@ -30,7 +30,7 @@ ms.locfileid: "80700170"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
  없음
@@ -40,7 +40,7 @@ ms.locfileid: "80700170"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[참조](../extensibility/reference-element-visual-studio-templates.md)|항목이 프로젝트에 추가될 때 추가할 어셈블리 참조를 지정합니다.|
 
@@ -60,7 +60,7 @@ ms.locfileid: "80700170"
 ...
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [References 요소(Visual Studio 템플릿)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 요소(Visual Studio 템플릿)](../extensibility/reference-element-visual-studio-templates.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

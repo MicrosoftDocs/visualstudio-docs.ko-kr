@@ -1,5 +1,5 @@
 ---
-title: 요소 (Visual Studio 템플릿)을 숨겨진 | Microsoft Docs
+title: Hidden 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f5150cda1b1285132fd70cd7bd7fa4572121057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204248"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
+**새 프로젝트** 또는 **새 항목 추가** 대화 상자에 템플릿이 나타나는지 여부를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<숨김 >  
+ \<Hidden>  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,14 +52,14 @@ ms.locfileid: "68204248"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 여야 `true` 또는 `false`나타내는 템플릿이 표시 됩니다 여부는 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  
+ 텍스트는 `true` `false` **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 템플릿이 나타나는지 여부를 나타내는 또는 여야 합니다.  
   
 ## <a name="remarks"></a>설명  
  `Hidden`는 선택적 요소입니다.  
   
- 다른 자식 요소가 없습니다를 지정 하는 경우는 `TemplateData` 요소는 필요 합니다.  
+ 지정 된 경우 요소의 다른 자식 요소 `TemplateData` 는 필요 하지 않습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 템플릿의 메타데이터를 보여 줍니다.  
   
 ```  

@@ -1,5 +1,5 @@
 ---
-title: 템플릿그룹ID 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: Templates Groupid 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699073"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 요소(Visual Studio 템플릿)
-항목 템플릿이 표시되는 프로젝트 종류를 지정합니다. 이 요소는 [ShowByDefault(시각적 스튜디오 템플릿)를](../extensibility/showbydefault-visual-studio-templates.md) 로 `false`설정할 때 중요합니다. [ShowByDefault(Visual Studio 템플릿)가](../extensibility/showbydefault-visual-studio-templates.md) `true`로 설정되면 모든 프로젝트 유형에서 항목 템플릿을 사용할 수 있습니다.
+항목 템플릿이 표시되는 프로젝트 종류를 지정합니다. 이 요소는 [Showbydefault (Visual Studio 템플릿)](../extensibility/showbydefault-visual-studio-templates.md) 가로 설정 된 경우에 중요 `false` 합니다. [Showbydefault (Visual Studio 템플릿)](../extensibility/showbydefault-visual-studio-templates.md) 가로 설정 된 경우 `true` 모든 프로젝트 형식에서 항목 템플릿을 사용할 수 있습니다.
 
- \<VS템플릿 \<> 템플릿데이터> \<템플릿 그룹ID>
+ \<VSTemplate> \<TemplateData>
+ \<TemplateGroupID>
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +34,7 @@ ms.locfileid: "80699073"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
  없음
@@ -43,7 +44,7 @@ ms.locfileid: "80699073"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
@@ -55,7 +56,7 @@ ms.locfileid: "80699073"
 ## <a name="remarks"></a>설명
  `TemplateGroupID`는 요소입니다.
 
- `TemplateGroupID` 요소의 값은 프로젝트 시스템 등록(HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<버전 번호 *>\\\Project)와 함께 새 **항목 추가** 대화 상자에 나타나는 템플릿을 필터링하는 데 사용됩니다.
+ 요소 값은 `TemplateGroupID` 프로젝트 시스템 등록 (HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \projects)과 함께 \\ **새 항목 추가** 대화 상자에 표시 되는 템플릿을 필터링 하는 데 사용 됩니다.
 
 |Visual C++ 값|의미|
 |------------------------|-------------|
@@ -69,6 +70,6 @@ ms.locfileid: "80699073"
 |WinRT-Native|Windows 8.0 스토어 프로젝트에 사용됩니다.|
 |VC-Android|Android 프로젝트에 사용됩니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

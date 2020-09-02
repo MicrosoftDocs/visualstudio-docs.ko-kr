@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault 요소(비주얼 스튜디오 템플릿)
+title: ShowByDefault 요소 (Visual Studio 템플릿)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700105"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 요소(비주얼 스튜디오 템플릿)
-을 `false`통해 템플릿이 지정된 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)에서만 표시되도록 지정합니다.
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 요소 (Visual Studio 템플릿)
+인 경우 `false` 템플릿이 지정 된 템플릿 [groupid](../extensibility/templategroupid-element-visual-studio-templates.md)에만 표시 되도록 지정 합니다.
 
- \<VS템플릿 \<> 템플릿데이터> \<ShowByDefault>
+ \<VSTemplate> \<TemplateData>
+ \<ShowByDefault>
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +34,7 @@ ms.locfileid: "80700105"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
  없음
@@ -43,7 +44,7 @@ ms.locfileid: "80700105"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
@@ -55,7 +56,7 @@ ms.locfileid: "80700105"
 ## <a name="remarks"></a>설명
  `ShowByDefault`는 선택적 요소입니다. 기본값은 `true`입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.
 
 ```xml
@@ -83,7 +84,7 @@ ms.locfileid: "80700105"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID 요소(Visual Studio 템플릿)](../extensibility/templategroupid-element-visual-studio-templates.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219610"
 ---
 # <a name="reliability-warnings"></a>안정성 경고
@@ -34,7 +34,7 @@ ms.locfileid: "89219610"
 |[CA2004: GC.KeepAlive에 대한 호출을 제거하세요.](../code-quality/ca2004.md)|SafeHandle 사용으로 변환 하는 경우 GC에 대 한 모든 호출을 제거 합니다. KeepAlive (개체). 이 경우 클래스는 GC를 호출할 필요가 없습니다. KeepAlive는 종료 자가 없지만 SafeHandle을 사용 하 여이에 대 한 OS 핸들을 마무리 한다고 가정 합니다.|
 |[CA2006: SafeHandle을 사용하여 네이티브 리소스를 캡슐화하세요.](../code-quality/ca2006.md)|관리 코드에 IntPtr을 사용하는 것은 잠재적인 보안 및 안정성 문제를 나타냅니다. IntPtr을 사용할 때마다 SafeHandle 또는 유사한 기술을 대신 사용해야 하는지 여부를 결정하도록 검토해야 합니다.|
 |[CA2007: 작업을 직접 대기하지 마세요.](../code-quality/ca2007.md)|비동기 메서드는를 직접 [기다립니다](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> 합니다.|
-|[CA2008: TaskScheduler를 전달 하지 않고 작업을 만들지 않습니다.](../code-quality/ca2008.md)|작업 만들기 또는 연속 작업에서 매개 변수를 지정 하지 않는 메서드 오버 로드를 사용 <xref:System.Threading.Tasks.TaskScheduler> 합니다.|
+|[CA2008: TaskScheduler를 전달하지 않은 상태에서 작업을 만들지 않음](../code-quality/ca2008.md)|작업 만들기 또는 연속 작업에서 매개 변수를 지정 하지 않는 메서드 오버 로드를 사용 <xref:System.Threading.Tasks.TaskScheduler> 합니다.|
 |[CA2009: ImmutableCollection 값의 ToImmutableCollection을 호출하지 마세요.](../code-quality/ca2009.md)|`ToImmutable` 네임 스페이스의 변경할 수 없는 컬렉션에 대해 메서드를 불필요 하 게 호출 했습니다 <xref:System.Collections.Immutable> .|
 |[CA2011: Setter 내에서 속성을 할당하지 마세요.](../code-quality/ca2011.md) | 속성에 해당 하는 자체 [set 접근자](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)내에 값이 실수로 할당 되었습니다. |
 |[CA2012: ValueTasks를 올바르게 사용하세요.](../code-quality/ca2012.md) | 멤버 호출에서 반환 되는 ValueTasks는 직접 대기 합니다.  는 특정 기능을 여러 번 사용 하거나 완료 되기 전에 한 결과에 직접 액세스 하려고 시도 하 여 예외 또는 손상이 발생할 수 있습니다.  이러한 것을 무시 하면 기능적 버그를 나타낼 수 있으며 성능이 저하 될 수 있습니다. |
