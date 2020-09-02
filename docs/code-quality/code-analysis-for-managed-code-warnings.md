@@ -1,6 +1,6 @@
 ---
 title: 관리 코드 경고에 대한 코드 분석
-ms.date: 11/04/2016
+ms.date: 08/31/2020
 ms.topic: reference
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
@@ -10,26 +10,26 @@ helpviewer_keywords:
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 383f488fcc9ebe614257b035732162100b9c7fd2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a72512eef8490f18f1179ae149b9a39c2ddaad4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85521058"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285712"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>관리 코드 경고에 대한 코드 분석
+# <a name="net-code-analysis-rules"></a>.NET 코드 분석 규칙
 관리 코드 분석 도구는 관리 코드 라이브러리의 규칙 위반을 나타내는 경고를 제공합니다. 경고는 디자인, 지역화, 성능, 보안 등의 규칙 영역으로 구성됩니다. 각 경고는 관리 코드 분석 규칙을 위반했음을 나타냅니다. 이 섹션에서는 각 관리 코드 분석 경고에 대한 자세한 논의와 예제를 제공합니다.
 
  다음 표에서 각 경고에 대해 제공되는 정보의 형식을 보여 줍니다.
 
 |항목|설명|
 |----------|-----------------|
-|Type|규칙의 TypeName입니다.|
+|형식|규칙의 TypeName입니다.|
 |CheckId|규칙의 고유 식별자입니다. 소스에서 경고를 표시하지 않으려는 경우에 사용되는 CheckId 및 범주입니다.|
 |범주|경고의 범주입니다.|
 |주요 변경 내용|규칙의 위반에 대한 수정이 주요 변경 내용인지 여부입니다. 주요 변경 내용은 위반의 원인이 된 대상에 대해 종속성이 있으며 새로 수정된 버전으로 다시 컴파일되지 않거나 변경으로 인해 런타임에 실패할 수 있는 어셈블리를 의미합니다. 여러 픽스를 사용할 수 있고 하나 이상의 수정이 주요 변경 사항이 며 한 가지 픽스는 그렇지 않으면 ' 중단 ' 및 ' 중단 '이 모두 지정 됩니다.|
@@ -42,7 +42,7 @@ ms.locfileid: "85521058"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-|범주|Description|
+|범주|설명|
 |-|-|
 |[CheckId 별 경고](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|CheckId별로 모든 경고 나열|
 |[암호화 경고](../code-quality/cryptography-warnings.md)|암호화를 올바르게 사용하여 더 안전한 라이브러리 및 애플리케이션을 지원하는 경고입니다.|
