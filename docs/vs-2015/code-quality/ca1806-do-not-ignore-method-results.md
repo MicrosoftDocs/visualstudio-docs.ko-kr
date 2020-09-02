@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543873"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: 메서드 결과를 무시하지 마세요.
@@ -59,17 +59,17 @@ ms.locfileid: "85543873"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  개체를 만드는 작업을 수행 하는 경우를 제외 하 고는이 규칙에서 경고를 표시 하지 마십시오.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 호출 된 String.format의 결과를 무시 하는 클래스를 보여 줍니다.
 
 <!-- TODO: review snippet reference  [!CODE [FxCop.Usage.DoNotIgnoreMethodResults#1](FxCop.Usage.DoNotIgnoreMethodResults#1)]  -->
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는 문자열의 결과를 할당 하 여 이전 위반을 수정 합니다 .를 호출한 변수로 다시 트리밍합니다.
 
 <!-- TODO: review snippet reference  [!CODE [FxCop.Usage.DoNotIgnoreMethodResults2#1](FxCop.Usage.DoNotIgnoreMethodResults2#1)]  -->
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 만든 개체를 사용 하지 않는 메서드를 보여 줍니다.
 
 > [!NOTE]
@@ -79,20 +79,20 @@ ms.locfileid: "85543873"
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cs/FxCop.Usage.DoNotIgnoreMethodResults3.cs#1)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/vb/FxCop.Usage.DoNotIgnoreMethodResults3.vb#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 불필요 한 개체 생성을 제거 하 여 이전 위반을 수정 합니다.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults4/cpp/FxCop.Usage.DoNotIgnoreMethodResults4.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults4/cs/FxCop.Usage.DoNotIgnoreMethodResults4.cs#1)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults4/vb/FxCop.Usage.DoNotIgnoreMethodResults4.vb#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 네이티브 메서드에서 GetShortPathName 반환 하는 오류 코드를 무시 하는 메서드를 보여 줍니다.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults5/cpp/FxCop.Usage.DoNotIgnoreMethodResults5.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults5/cs/FxCop.Usage.DoNotIgnoreMethodResults5.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 오류 코드를 확인 하 고 호출이 실패할 때 예외를 throw 하 여 이전 위반을 수정 합니다.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults6/cpp/FxCop.Usage.DoNotIgnoreMethodResults6.cpp#1)]

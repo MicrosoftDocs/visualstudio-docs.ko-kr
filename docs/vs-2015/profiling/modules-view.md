@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195606"
 ---
 # <a name="modules-view"></a>모듈 뷰
@@ -29,13 +29,13 @@ ms.locfileid: "68195606"
   
  모듈 성능 데이터의 뷰를 표시하거나 닫으려면 모듈 이름을 확장하거나 축소합니다.  
   
- 열을 추가 또는 제거하려면 보고서 창을 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)합니다.  
+ 열을 추가 또는 제거하려면 보고서 창을 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.  
   
  모듈 뷰에서 사용할 수 있는 열은 데이터를 수집하는 데 사용된 프로파일링 방법(샘플링 또는 계측) 및 프로파일링 실행 시 .NET 메모리 데이터가 수집되었는지 여부에 따라 달라집니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [모듈 뷰](../profiling/modules-view-sampling-data.md)   
  [모듈 뷰](../profiling/modules-view-instrumentation-data.md)   
- [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [모듈 뷰 - 샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [모듈 뷰-계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [모듈 뷰-샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [모듈 뷰](../profiling/modules-view-contention-data.md)

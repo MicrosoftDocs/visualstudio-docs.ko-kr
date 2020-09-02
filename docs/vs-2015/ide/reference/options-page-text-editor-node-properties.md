@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662408"
 ---
 # <a name="options-page-text-editor-node-properties"></a>옵션 페이지, 텍스트 편집기 노드 속성
@@ -58,12 +58,12 @@ ms.locfileid: "72662408"
 |WordWrapGlyphs|Get/Set (Boolean)|줄 끝의 문자 모양을 표시합니다. 이 값은 줄이 다음 줄로 줄바꿈됨을 나타냅니다.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|편집기에서 URL에 밑줄을 사용할지 여부와 마우스 왼쪽 단추를 한 번 클릭하여 시스템 등록 웹 브라우저에 있는 URL로 이동하는 동작을 사용할지 여부를 지정합니다.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|다음 들여쓰기 스타일을 지정합니다. 기본, 스마트 또는 없음|
-|TabSize|Get/Set (Long)|탭 하나에 해당하는 공백 수를 나타냅니다. 범위는 1에서 60까지의 정수이고, 이를 벗어난 값을 설정하면 동작이 실패합니다.|
+|TabSize|Get/Set (Long)|탭과 같은 공백 수를 나타냅니다. 1 ~ 60 (포함) 범위를 벗어나는 정수를 설정 하지 못했습니다.|
 |InsertTabs|Get/Set (Boolean)|`True`인 경우 들여쓰기에 탭 문자를 사용합니다.|
 |IndentSize|Get/Set (Long)|들여쓰기 수준 하나에 해당하는 공백 수를 나타냅니다. 범위는 1에서 60까지의 정수이고, 이를 벗어난 값을 설정하면 동작이 실패합니다.|
 |ShowLineNumbers|Get/Set (Boolean)|코어 편집기 문서의 뷰에서 왼쪽 여백을 따라 줄 번호가 표시되는지 여부를 지정합니다.|
 |ShowNavigationBar|Get/Set (Boolean)|드롭다운 목록과 단추가 편집기 창의 상단에 나타나는지 여부를 지정합니다.|
 |CutCopyBlankLines|Get/Set (Boolean)|선택하면 빈 줄을 잘라 내거나 복사합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  옵션 [설정 제어](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) 옵션 페이지 옵션 페이지에서 [속성 항목의 이름 결정](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [, 환경 노드 속성](../../ide/reference/options-page-environment-node-properties.md) [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

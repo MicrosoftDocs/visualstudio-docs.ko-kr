@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703783"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework 대상 지정 오류 문제 해결
@@ -56,8 +56,8 @@ ms.locfileid: "65703783"
 > [!NOTE]
 > 프로젝트를 닫았다가 다시 연 후에도 다시 빌드해야 모든 참조가 제대로 확인됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: .NET Framework의 버전 대상](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
+## <a name="see-also"></a>관련 항목  
+ [방법: 특정 버전의 .NET Framework 대상](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [.NET Framework 클라이언트 프로필](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [특정 .NET Framework 버전을 대상으로 지정](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)

@@ -14,10 +14,10 @@ caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543717"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
@@ -110,13 +110,13 @@ ms.locfileid: "85543717"
 
 - [Python](./python/getting-started-with-python.md)
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - [Visual Studio 2015의 새로운 기능](./what-s-new-in-visual-studio-2015.md)
 
 - [Visual Studio 2015 설치](./install/install-visual-studio-2015.md)
 
-- [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [Visual Studio 프로젝트 포트, 마이그레이션 및 업그레이드](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
 - [Visual Studio IDE](./ide/visual-studio-ide.md)
 

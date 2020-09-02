@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd5a6edc2f89470b4aacf05ef0a416c060cf23df
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703572"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 작업
@@ -50,7 +50,7 @@ ms.locfileid: "65703572"
 |`GeneratedLocalizationFiles`|선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> 지역화할 수 있는 각 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 대해 생성된 지역화 파일의 목록을 포함합니다.|  
 |`HostInBrowser`|선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 어셈블리가 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)]인지 여부를 지정합니다. 유효한 옵션은 **true** 및 **false**입니다. **true**이면 브라우저 호스팅을 지원하기 위한 코드가 생성됩니다.|  
 |`KnownReferencePaths`|선택적 **String[]** 매개 변수입니다.<br /><br /> 빌드 프로세스 중에 변경되지 않는 어셈블리에 대한 참조를 지정합니다. [!INCLUDE[TLA#tla_gac](../includes/tlasharptla-gac-md.md)], [!INCLUDE[TLA#tla_netframewk](../includes/tlasharptla-netframewk-md.md)] 설치 디렉터리 등에 있는 어셈블리를 포함합니다.|  
-|`Language`|필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#**, **VB**, **JScript** 및 **C++** 입니다.|  
+|`Language`|필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#** , **VB**, **JScript** 및 **C++** 입니다.|  
 |`LanguageSourceExtension`|선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 관리되는 코드 파일의 확장에 추가되는 확장명을 지정합니다.<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** 매개 변수가 특정 값으로 설정되지 않으면 언어에 대한 기본 소스 파일 이름 확장명이 사용됩니다. 즉, [!INCLUDE[TLA#tla_visualb](../includes/tlasharptla-visualb-md.md)]의 경우 **.vb**이고, [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)]의 경우 **.csharp**입니다.|  
 |`LocalizationDirectivesToLocFile`|선택적 **문자열** 매개 변수입니다.<br /><br /> 각 소스 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 대한 지역화 정보를 생성하는 방법을 지정입니다. 유효한 옵션은 **None**, **CommentsOnly** 및 **All**입니다.|  
 |`OutputPath`|필수 **String** 매개 변수입니다.<br /><br /> 생성된 관리 코드 파일 및 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 이진 형식 파일이 생성되는 디렉터리를 지정합니다.|  
@@ -64,7 +64,7 @@ ms.locfileid: "65703572"
 |`UICulture`|선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 이진 형식 파일이 포함되는 UI 문화권에 대한 위성 어셈블리를 지정합니다. **UICulture**가 설정되지 않은 경우 생성된 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 이진 형식 파일은 주 어셈블리에 포함됩니다.|  
 |`XAMLDebuggingInformation`|선택적 **Boolean** 매개 변수입니다.<br /><br /> **true**이면 디버깅에 도움을 주기 위해 진단 정보가 생성되고 컴파일된 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]에 포함됩니다.|  
   
-## <a name="remarks"></a>주의  
+## <a name="remarks"></a>설명  
  <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 작업은 일반적으로 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]를 이진 형식으로 컴파일한 후 코드 파일을 생성합니다. [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 같은 프로젝트에 정의된 형식에 대한 참조가 포함되면 이진 형식에 대한 컴파일이 **MarkupCompilePass1**에 의해 두 번째 태그 컴파일 패스(**MarkupCompilePass2**)로 연기됩니다. 이러한 파일은 참조된 로컬로 정의된 형식이 컴파일될 때까지 기다려야 하므로 컴파일이 연기되어야 합니다. 그러나 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 `x:Class` 특성이 있으면 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>은 언어별 코드 파일을 생성합니다.  
   
  [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일은 `x:Uid` 특성을 사용하는 요소가 포함된 경우 지역화가 가능합니다.  
@@ -120,10 +120,10 @@ ms.locfileid: "65703572"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)   
  [작업 참조](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
- [WPF 애플리케이션 빌드(WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF 응용 프로그램 빌드 (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [WPF XAML 브라우저 애플리케이션 개요](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

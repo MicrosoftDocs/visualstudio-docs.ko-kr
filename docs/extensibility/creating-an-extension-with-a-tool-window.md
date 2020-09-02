@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 597b84854dd398abee9dc21090e085273bc94c75
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903889"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>도구 창을 사용 하 여 확장 만들기
 
 이 절차에서는 VSIX 프로젝트 템플릿 및 **사용자 지정 도구 창** 항목 템플릿을 사용 하 여 도구 창을 사용 하 여 확장을 만드는 방법에 대해 알아봅니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 

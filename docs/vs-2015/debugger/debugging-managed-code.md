@@ -22,16 +22,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691442"
 ---
 # <a name="debugging-managed-code"></a>관리 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 단원에서는 Visual Basic, C# 및 C++ 등 공용 언어 런타임을 대상으로 하는 언어로 작성된 관리되는 애플리케이션의 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. 자세한 내용은 [디버거를 사용 하 여](../debugger/debugger-basics.md)입니다.  
+이 단원에서는 Visual Basic, C# 및 C++ 등 공용 언어 런타임을 대상으로 하는 언어로 작성된 관리되는 애플리케이션의 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. 자세한 내용은 [디버거 사용](../debugger/debugger-basics.md)을 참조 하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [출력 창에 표시되는 진단 메시지](../debugger/diagnostic-messages-in-the-output-window.md)  
@@ -49,10 +49,10 @@ ms.locfileid: "65691442"
  [OnStart 메서드 디버깅](../debugger/how-to-debug-the-onstart-method.md)  
  관리되는 Windows 서비스의 `OnStart` 메서드를 디버깅할 수 있는 코드 예제를 제공합니다. Windows 서비스의 `OnStart` 메서드를 디버깅하려면 몇 줄의 코드를 추가하여 서비스를 시뮬레이션해야 합니다.  
   
- [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
+ [혼합 모드 디버깅](../debugger/debugging-mixed-mode-applications.md)  
  혼합 모드 애플리케이션을 디버깅하는 방법에 대해 설명합니다. 혼합 모드 애플리케이션은 네이티브 코드와 관리 코드가 결합된 애플리케이션입니다.  
   
- [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ ‘오류:[ 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버깅할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  디버그 모드로 시작된 [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)] 또는 Windows NT 시스템에서 관리 코드를 디버깅할 때 발생하는 오류 메시지에 대해 설명합니다.  
   
  [JIT 최적화 및 디버깅](../debugger/jit-optimization-and-debugging.md)  
@@ -68,7 +68,7 @@ ms.locfileid: "65691442"
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace로 응용 프로그램의 실행 내역을 기록하여 보다 빠르고 쉽게 버그를 찾습니다. 기록된 이벤트 및 호출에서 앞뒤로 이동하며 주요 시점의 응용 프로그램 상태를 확인합니다. 여러 중단점을 설정하거나 자주 응용 프로그램을 다시 시작하지 않고 코드를 디버깅합니다. Visual Studio Ultimate가 있어야 합니다.  
   
- [응용 프로그램 추적 및 조율](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [애플리케이션 추적 및 조율](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  실행 중인 애플리케이션의 실행을 모니터링하는 방법인 추적과 코드의 전략적 위치에 추적 문을 배치하는 방법인 조율에 대해 설명합니다. 이 항목에서는 계측 및 추적, 추적 스위치, 추적 수신기, 애플리케이션의 코드 추적, 애플리케이션 코드에 추적 문 추가, <xref:System.Diagnostics.Debug> 및 <xref:System.Diagnostics.Trace>를 사용하는 조건부 컴파일 등을 소개하는 정보로 연결되는 링크도 제공합니다.  
   
  [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
@@ -87,7 +87,7 @@ ms.locfileid: "65691442"
  [디버깅 홈페이지](../debugger/debugging-in-visual-studio.md)  
  자세한 디버깅 설명서 단원으로 연결되는 링크를 제공합니다. 이 정보에는 디버거의 새로운 기능, 설정 및 준비, 중단점, 예외 처리, 편집 및 계속, 관리 코드 디버깅, Visual C++ 프로젝트 디버깅, COM 및 ActiveX 디버깅, DLL 디버깅, SQL 디버깅, 사용자 인터페이스 참조 등이 포함됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [연습: 디자인 타임에 디버깅 사용자 지정 Windows Forms 컨트롤](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+## <a name="see-also"></a>관련 항목  
+ [연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버깅](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [디버거 보안](../debugger/debugger-security.md)   
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)

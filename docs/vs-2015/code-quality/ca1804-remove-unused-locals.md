@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4bd57d76acd0c46e39bb2c01449146715abc0666
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543886"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: 사용되지 않는 로컬 항목을 제거하세요.
@@ -44,7 +44,7 @@ ms.locfileid: "85543886"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  변수가 컴파일러에서 발생 한 경우이 규칙에서 경고를 표시 하지 않습니다. 또한이 규칙에서 경고를 표시 하지 않거나 성능 및 코드 유지 관리가 주요 관심사가 아닐 경우 규칙을 사용 하지 않도록 설정 하는 것이 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 사용 되지 않는 여러 지역 변수를 보여 줍니다.
 
  [!code-csharp[FxCop.Performance.UnusedLocals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/cs/FxCop.Performance.UnusedLocals.cs#1)]

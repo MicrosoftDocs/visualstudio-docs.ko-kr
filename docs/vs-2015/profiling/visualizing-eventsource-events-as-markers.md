@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690212"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>EventSource 이벤트를 표식으로 시각화
@@ -37,18 +37,18 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
   
 |ETW 수준|Concurrency 시각화의 중요도|  
 |---------------|---------------------------------------|  
-|win:LogAlways|보통|  
-|win:Critical|중요|  
+|win:LogAlways|정상|  
+|win:Critical|위험|  
 |win:Error|위험|  
 |win:Warning|높음|  
-|win:Informational|보통|  
+|win:Informational|정상|  
 |win:Verbose|낮음|  
 |win:verbose보다 높은 수준|낮음|  
   
-### <a name="series-name"></a>계열 이름입니다.  
+### <a name="series-name"></a>계열 이름  
  이벤트의 작업 이름이 계열 이름에 사용됩니다. 이벤트에 대해 작업이 정의되지 않은 경우 계열 이름은 비어 있습니다.  
   
-### <a name="category"></a>범주  
+### <a name="category"></a>Category  
  Level이 win:Critical 또는 win:Error이면 범주는 Alert(-1)입니다. 그렇지 않으면 범주는 기본값(0)입니다.  
   
 ### <a name="text"></a>텍스트  
@@ -73,18 +73,18 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
   
 |cvImportance 값|Concurrency 시각화의 중요도|  
 |------------------------|---------------------------------------|  
-|0|보통|  
-|1|중요|  
+|0|정상|  
+|1|위험|  
 |2|높음|  
 |3|높음|  
-|4|보통|  
+|4|정상|  
 |5|낮음|  
 |기타 모든 값|낮음|  
   
-### <a name="series-name"></a>계열 이름입니다.  
+### <a name="series-name"></a>계열 이름  
  `cvSeries` 이벤트 필드(문자열)를 사용하여 Concurrency 시각화가 EventSource 이벤트에 제공하는 계열 이름을 제어합니다.  
   
-### <a name="category"></a>범주  
+### <a name="category"></a>Category  
  `cvCategory` 필드(바이트)를 사용하여 Concurrency 시각화가 EventSource 이벤트에 제공하는 범주를 제어합니다.  
   
 ### <a name="text"></a>텍스트  
@@ -96,5 +96,5 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
 > [!NOTE]
 > SpanID를 사용하여 범위를 중첩하거나, 같은 스레드에서 해당 범위를 일부분 겹치거나, 시작되는 스레드와 끝나는 스레드를 서로 다르게 지정할 수는 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)

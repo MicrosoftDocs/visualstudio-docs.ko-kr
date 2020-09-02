@@ -1,5 +1,5 @@
 ---
-title: 아이디버그다이나믹필드컴플러스::겟타입FromTypeDef | 마이크로 소프트 문서
+title: 'IDebugDynamicFieldCOMPlus:: GetTypeFromTypeDef | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8e212f53467c25ca6084eaa5a91b37031baedf4a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731240"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
-토큰이 지정된 형식을 검색합니다.
+해당 토큰이 지정 된 형식을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,19 +46,19 @@ int GetTypeFromTypeDef(
 
 ## <a name="parameters"></a>매개 변수
 `ulAppDomainID`\
-【인】 응용 프로그램 도메인의 식별자입니다.
+진행 응용 프로그램 도메인의 식별자입니다.
 
 `guidModule`\
-【인】 모듈의 고유 식별자입니다.
+진행 모듈의 고유 식별자입니다.
 
 `tokClass`\
-【인】 형식을 나타내는 토큰입니다.
+진행 형식을 나타내는 토큰입니다.
 
 `ppType`\
-【아웃】 형식을 포함하는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환합니다.
+제한이 형식을 포함 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

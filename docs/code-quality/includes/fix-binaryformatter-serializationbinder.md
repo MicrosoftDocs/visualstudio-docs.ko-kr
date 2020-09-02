@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 557d811e2eeaf926cb958471d214fc23c50a25f2
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87471581"
 ---
 - 대신 보안 serializer를 사용 하 고 **공격자가 deserialize 할 임의의 형식을 지정할 수 없도록**합니다. 자세한 내용은 [기본 설정 대체](/dotnet/standard/serialization/binaryformatter-security-guide#preferred-alternatives)항목을 참조 하세요.

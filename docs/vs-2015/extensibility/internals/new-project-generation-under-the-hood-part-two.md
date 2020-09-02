@@ -1,5 +1,5 @@
 ---
-title: '새 프로젝트 생성: 내부적으로 2 부 | Microsoft Docs'
+title: '새 프로젝트 생성: 내부에서 2 부 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687495"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>새 프로젝트 생성: 내부 살펴보기, 2부
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[새 프로젝트 생성: 내부적으로 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) 살펴보았습니다 하는 방법을 **새 프로젝트** 대화 상자가 채워집니다. 선택한를 가정해 보겠습니다를 **Visual C# Windows 응용 프로그램**작성, 합니다 **이름** 및 **위치** 텍스트 상자 및 확인을 클릭된 합니다.  
+[새 프로젝트 생성 시:](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) **새 프로젝트** 대화 상자를 채우는 방법에 대해 설명 합니다. **Visual c # Windows 응용 프로그램**을 선택 하 고 **이름** 및 **위치** 텍스트 상자를 채운 다음 확인을 클릭 했다고 가정해 보겠습니다.  
   
 ## <a name="generating-the-solution-files"></a>솔루션 파일 생성  
- 지시 하는 응용 프로그램 템플릿을 선택 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 압축을 풀고 해당.vstemplate 파일을 열에이 파일의 XML 명령을 해석 하기 위한 템플릿을 시작 합니다. 이러한 명령은 새로운 또는 기존의 솔루션에서 프로젝트 및 프로젝트 항목을 만듭니다.  
+ 응용 프로그램 템플릿을 선택 하면 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 해당 .vstemplate 파일의 압축을 풀고 해당 .vstemplate 파일을 열고이 파일의 XML 명령을 해석 하는 템플릿을 시작 합니다. 이러한 명령은 새 솔루션이 나 기존 솔루션에서 프로젝트 및 프로젝트 항목을 만듭니다.  
   
- 템플릿의는.vstemplate 파일을 포함 하는 동일한.zip 폴더에서 항목 템플릿을 호출 하는 소스 파일을 압축을 풉니다. 서식 파일을 적절 하 게 사용자 지정 새 프로젝트에 이러한 파일을 복사 합니다. 프로젝트 및 항목 템플릿의 개요를 참조 하세요. [NIB: Visual Studio 템플릿](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)합니다.  
+ 템플릿은 .vstemplate 파일을 보관 하는 동일한 .zip 폴더에서 항목 템플릿 이라는 소스 파일의 압축을 풉니다. 템플릿은 이러한 파일을 새 프로젝트에 복사 하 여 적절 하 게 사용자 지정 합니다. 프로젝트 및 항목 템플릿에 대 한 개요는 [NIB: Visual Studio 템플릿](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)을 참조 하세요.  
   
-### <a name="template-parameter-replacement"></a>템플릿 매개 변수 대체  
- 항목 템플릿을 새 프로젝트에 복사 하는 서식 파일, 모든 템플릿 매개 변수 파일을 사용자 지정 하는 문자열을 사용 하 여 대체 합니다. 템플릿 매개 변수는 특수 한 토큰은 앞뒤에 달러 기호를 예를 들어입니다 $date$입니다.  
+### <a name="template-parameter-replacement"></a>템플릿 매개 변수 바꾸기  
+ 템플릿이 새 프로젝트에 항목 템플릿을 복사 하면 템플릿 매개 변수를 문자열로 바꿔서 파일을 사용자 지정 합니다. 템플릿 매개 변수는 $와 같이 달러 $date 기호가 앞에 오고 그 뒤에 오는 특수 토큰입니다.  
   
- 일반적인 프로젝트 항목 템플릿을 살펴보겠습니다. 추출 하 고 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 폴더에서 Program.cs를 검사 합니다.  
+ 일반적인 프로젝트 항목 템플릿을 살펴보겠습니다. Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 폴더에서 Program.cs를 추출 하 고 검사 합니다.  
   
 ```  
 using System;  
@@ -47,7 +47,7 @@ namespace $safeprojectname$
 }  
 ```  
   
- 템플릿을 대체 하는 간단한 라는 새 Windows 응용 프로그램 프로젝트를 만드는 경우는 `$safeprojectname$` 매개 변수를 프로젝트의 이름입니다.  
+ Simple 이라는 새 Windows 응용 프로그램 프로젝트를 만드는 경우 템플릿이 `$safeprojectname$` 매개 변수를 프로젝트의 이름으로 바꿉니다.  
   
 ```  
 using System;  
@@ -65,8 +65,8 @@ namespace Simple
   
  템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../../ide/template-parameters.md)를 참조하세요.  
   
-## <a name="a-look-inside-a-vstemplate-file"></a>살펴보기를 합니다. VSTemplate 파일  
- 이 형식은 기본.vstemplate 파일을  
+## <a name="a-look-inside-a-vstemplate-file"></a>내에서 찾습니다. .Vstemplate 파일  
+ 기본 .vstemplate 파일의 형식은 다음과 같습니다.  
   
 ```  
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
@@ -77,9 +77,9 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- 살펴보았습니다 합니다 \<TemplateData > 섹션을 [새 프로젝트 생성: 내부적으로 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)합니다. 이 섹션의 태그의 모양을 제어 되는 **새 프로젝트** 대화 상자.  
+ \<TemplateData> [새 프로젝트 생성](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)의 섹션에서 설명 하 고 있습니다. 이 단원의 태그는 **새 프로젝트** 대화 상자의 모양을 제어 하는 데 사용 됩니다.  
   
- 태그는 \<TemplateContent > 새 프로젝트 및 프로젝트 항목의 생성 제어 섹션입니다. 다음은 \<TemplateContent > \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 폴더 cswindowsapplication.vstemplate 파일에서 섹션입니다.  
+ 섹션의 태그는 \<TemplateContent> 새 프로젝트 및 프로젝트 항목의 생성을 제어 합니다. \<TemplateContent>Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 폴더의 cswindowsapplication .vstemplate 파일에 있는 섹션은 다음과 같습니다.  
   
 ```  
 <TemplateContent>  
@@ -113,26 +113,26 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- 합니다 \<프로젝트 > 프로젝트의 생성을 제어 하는 태그 및 \<ProjectItem > 태그 프로젝트 항목의 생성을 제어 합니다. ReplaceParameters 매개 변수가 true 인 경우 서식 파일 프로젝트 파일 또는 항목에 모든 템플릿 매개 변수 사용자 지정 합니다. 이 경우 모든 프로젝트 항목 사용자 지정 된를 Settings.settings 제외 하 고 합니다.  
+ \<Project>태그는 프로젝트의 생성을 제어 하 고 태그는 \<ProjectItem> 프로젝트 항목의 생성을 제어 합니다. ReplaceParameters 매개 변수가 true 이면 템플릿에서 프로젝트 파일이 나 항목의 모든 템플릿 매개 변수를 사용자 지정 합니다. 이 경우 설정의 경우를 제외 하 고 모든 프로젝트 항목이 사용자 지정 됩니다.  
   
- TargetFileName 매개 변수 이름 및 결과 프로젝트 파일 또는 항목의 상대 경로 지정합니다. 이 프로젝트에 대 한 폴더 구조를 만들 수 있습니다. 이 인수를 지정 하지 않으면, 프로젝트 항목의 이름은 프로젝트 항목 템플릿 해야 합니다.  
+ TargetFileName 매개 변수는 결과 프로젝트 파일 또는 항목의 이름 및 상대 경로를 지정 합니다. 그러면 프로젝트에 대 한 폴더 구조를 만들 수 있습니다. 이 인수를 지정 하지 않으면 프로젝트 항목은 프로젝트 항목 템플릿과 동일한 이름을 갖게 됩니다.  
   
  결과 Windows 응용 프로그램 폴더 구조는 다음과 같습니다.  
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- 첫 번째이자 유일한 \<프로젝트 > 템플릿 읽기가 태그:  
+ 템플릿의 첫 번째 및 유일한 \<Project> 태그는 다음과 같습니다.  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
 ```  
   
- 이렇게 하면 템플릿 항목 windowsapplication.csproj를 지정 하 고 복사 함으로써 Simple.csproj 프로젝트 파일을 만들려면 새 프로젝트 템플릿.  
+ 이렇게 하면 템플릿 항목 windowsapplication 프로그램 .csproj를 복사 하 고 사용자 지정 하 여 간단한 .csproj 프로젝트 파일을 만들도록 새 프로젝트 템플릿에 지시 합니다.  
   
 ### <a name="designers-and-references"></a>디자이너 및 참조  
- Properties 폴더 있는지, 그리고 파일이 예상 되는 솔루션 탐색기에서 볼 수 있습니다. 하지만 참조 프로젝트에 대 한 자세한 내용 및 디자이너 파일 Resources.resx에 Resources.Designer.cs 등 Form1.Designer.cs Form1.cs 종속성?  생성 되 면 Simple.csproj 파일에서 설정이 됩니다.  
+ 솔루션 탐색기에서 속성 폴더가 있고 필요한 파일을 포함 하 고 있음을 볼 수 있습니다. 하지만 프로젝트 참조 및 디자이너 파일 종속성 (예: Resources.Designer.cs에 대 한 Form1.Designer.cs 및 Form1.cs에 대 한)은 무엇 인가요?  이러한 파일은 생성 될 때 간단한 .csproj 파일에 설정 됩니다.  
   
- 다음은 \<ItemGroup > 프로젝트 참조를 만드는 Simple.csproj에서:  
+ \<ItemGroup>프로젝트 참조를 만드는 간단한 .csproj의는 다음과 같습니다.  
   
 ```  
 <ItemGroup>  
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>  
 ```  
   
- 이 솔루션 탐색기에 표시 되는 6 개의 프로젝트 참조를 확인할 수 있습니다. 다음은 다른 섹션 \<ItemGroup >. 여러 줄 코드의 명확성을 위해 삭제 되었습니다. 이 절에서는 Settings.Designer.cs를 Settings.settings에 따라 달라 집니다.  
+ 이러한 참조가 솔루션 탐색기에 표시 되는 여섯 개의 프로젝트 참조 임을 확인할 수 있습니다. 다른 섹션은 다음과 같습니다 \<ItemGroup> . 명확성을 위해 많은 코드 줄이 삭제 되었습니다. 이 섹션에서는 Settings.Designer.cs를 설정에 따라 결정 합니다. 설정:  
   
 ```  
 <ItemGroup>  
@@ -155,6 +155,6 @@ namespace Simple
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [새 프로젝트 생성: 내부 살펴보기, 1부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

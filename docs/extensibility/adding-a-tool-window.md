@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904141"
 ---
 # <a name="add-a-tool-window"></a>도구 창 추가
@@ -32,7 +32,7 @@ ms.locfileid: "85904141"
 
 - 도구 창에 대 한 기본 위치를 설정 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -280,5 +280,5 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
     Chime 소리가 들려야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

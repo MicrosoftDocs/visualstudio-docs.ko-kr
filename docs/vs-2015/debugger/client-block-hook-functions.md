@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5b1c754255ba0bc659c9b6968ad8ba0dea629ec
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702331"
 ---
 # <a name="client-block-hook-functions"></a>클라이언트 블록 후크 함수
@@ -51,7 +51,7 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
    (void *, size_t);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버그 후크 함수 작성](../debugger/debug-hook-function-writing.md)   
  [crt_dbg2 샘플](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
  [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)

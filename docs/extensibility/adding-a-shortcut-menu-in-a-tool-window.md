@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904189"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>도구 창에서 바로 가기 메뉴 추가
@@ -29,7 +29,7 @@ ms.locfileid: "85904189"
 
 또는 바로 가기 메뉴에서 Visual Studio 기능에 액세스 하지 않는 경우 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 사용자 정의 컨트롤에서 XAML 요소의 속성을 사용할 수 있습니다. 자세한 내용은 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>도구 창 바로 가기 메뉴 패키지 만들기
@@ -276,6 +276,6 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 4. 바로 가기 메뉴에서 색을 클릭 합니다. 도구 창의 배경색을 선택한 색으로 변경 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
 - [서비스 사용 및 제공](../extensibility/using-and-providing-services.md)

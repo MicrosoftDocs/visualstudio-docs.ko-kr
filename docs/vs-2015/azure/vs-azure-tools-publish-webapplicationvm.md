@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70739317"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell 스크립트)
@@ -38,76 +38,76 @@ Publish-WebApplicationVM
 | 별칭 | 없음 |
 | --- | --- |
 | 필수 여부 |true |
-| 위치 |named |
+| 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |false |
-| 와일드카드 문자 허용 |False |
+| 파이프라인 입력 허용 |false |
+| 와일드카드 문자 허용 |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 가상 머신을 만들려는 Azure 구독의 이름입니다.
 
 | 별칭 | 없음 |
 | --- | --- |
-| 필수 여부 |False |
-| Position |named |
+| 필수 여부 |false |
+| 위치 |명명됨 |
 | 기본값 |구독 파일의 첫 번째 구독을 사용합니다. |
-| Accept Pipeline Input? |false |
-| 와일드카드 문자 허용 |False |
+| 파이프라인 입력 허용 |false |
+| 와일드카드 문자 허용 |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
 가상 컴퓨터에 게시하는 웹 배포 패키지에 대한 경로입니다. Visual Studio에서 웹 게시 마법사를 사용하여 이 패키지를 만들 수 있습니다. [방법: Visual Studio에서 웹 배포 패키지 만들기](https://msdn.microsoft.com/library/dd465323.aspx)를 참조하세요.
 
 | 별칭 | 없음 |
 | --- | --- |
-| 필수 여부 |False |
-| Position |named |
+| 필수 여부 |false |
+| 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |false |
-| 와일드카드 문자 허용 |False |
+| 파이프라인 입력 허용 |false |
+| 와일드카드 문자 허용 |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 True인 경우 신뢰할 수 있는 루트 인증 기관에서 서명되지 않은 인증서 사용을 허용합니다.
 
 | 별칭 | 없음 |
 | --- | --- |
-| 필수 여부 |False |
-| Position |named |
+| 필수 여부 |false |
+| 위치 |명명됨 |
 | 기본값 |false |
 | 파이프라인 입력 허용 |false |
-| 와일드카드 문자 허용 |False |
+| 와일드카드 문자 허용 |false |
 
 ### <a name="vmpassword"></a>VMPassword
 가상 머신 계정에 대한 자격 증명입니다. 예: -VMPassword @{Name = "admin"; Password = "password"}
 
 | 별칭 | 없음 |
 | --- | --- |
-| 필수 여부 |False |
-| Position |named |
+| 필수 여부 |false |
+| 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |false |
-| 와일드카드 문자 허용 |False |
+| 파이프라인 입력 허용 |false |
+| 와일드카드 문자 허용 |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Azure에서 SQL 데이터베이스에 대한 자격 증명입니다. 예: -DatabaseServerPassword @{Name = "admin"; Password = "password"}
 
 | 별칭 | 없음 |
 | --- | --- |
-| 필수 여부 |False |
-| Position |named |
+| 필수 여부 |false |
+| 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |false |
-| 와일드카드 문자 허용 |False |
+| 파이프라인 입력 허용 |false |
+| 와일드카드 문자 허용 |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 True이면 스크립트에서 출력 스트림으로 메시지를 프린트합니다.
 
 | 별칭 | 없음 |
 | --- | --- |
-| 필수 여부 |False |
-| Position |named |
+| 필수 여부 |false |
+| 위치 |명명됨 |
 | 기본값 |false |
 | 파이프라인 입력 허용 |false |
-| 와일드카드 문자 허용 |False |
+| 와일드카드 문자 허용 |false |
 
 ## <a name="remarks"></a>설명
 스크립트를 사용하여 개발 및 테스트 환경을 만드는 방법에 대한 전체 설명은 [Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시](vs-azure-tools-publishing-using-powershell-scripts.md)를 참조하세요.

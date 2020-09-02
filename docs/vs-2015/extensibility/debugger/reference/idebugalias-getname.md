@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetName | Microsoft Docs
+title: 'IDebugAlias:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a52f44caa896a528557e9e2ac362c47584e47f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149349"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
@@ -40,10 +40,10 @@ int GetName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrName`  
- [out] 별칭의 이름입니다.  
+ 제한이 별칭의 이름입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195519"
 ---
 # <a name="performance-explorer-window"></a>성능 탐색기 창
@@ -54,7 +54,7 @@ IDE(통합 개발 환경) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 **성�
   
 - **보고서** - 세션에 대해 생성되는 프로파일러 데이터 파일의 이름이 표시됩니다. **보고서**를 마우스 오른쪽 단추로 클릭하여 기존 보고서를 추가하거나 두 프로파일러 데이터 파일을 비교합니다. 보고서 이름을 마우스 오른쪽 단추로 클릭하여 프로파일러 데이터 파일을 열거나 제거하거나 내보냅니다.  
   
-## <a name="see-also"></a>참고 항목  
- [개요](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>관련 항목  
+ [간단한](../profiling/overviews-performance-tools.md)   
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
  [데이터 수집 제어](../profiling/controlling-data-collection.md)

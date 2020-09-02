@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903841"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>편집기 항목 템플릿을 사용 하 여 확장 만들기
 Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 분류자, 장식 및 여백을 추가 하는 기본 편집기 확장을 만들 수 있습니다. 편집기 항목 템플릿은 Visual c # 또는 Visual Basic VSIX 프로젝트에 사용할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-classifier-extension"></a>분류자 확장 만들기
@@ -36,7 +36,7 @@ Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 
 
     - *EditorClassifier1ClassificationDefinition.cs* 에는 클래스가 포함 되어 있습니다 `EditorClassifier1ClassificationDefinition` .
 
-    - *EditorClassifier1Format.cs* 에는 클래스가 포함 되어 있습니다 `EditorClassifier1Format` .
+    - *EditorClassifier1Format.cs* 에는 클래스가 포함 되어 있습니다 `EditorClassifier1Format`  .
 
     - *EditorClassifier1Provider.cs* 에는 클래스가 포함 되어 있습니다 `EditorClassifier1Provider` .
 
@@ -96,5 +96,5 @@ Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 
 
 4. 이 프로젝트를 빌드하고 디버깅을 시작 합니다. 실험적 인스턴스가 나타납니다. 텍스트 파일을 열면 **Hello EditorMargin1** 라는 단어가 있는 녹색 여백이 가로 스크롤 막대 아래에 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e6ee00402c13b2a79e4e6757a127211eda9c3c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149380"
 ---
 # <a name="evalflags"></a>EVALFLAGS
@@ -53,35 +53,35 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>멤버  
  EVAL_RETURNVALUE  
- 있는 경우 반환 값을 평가 하는 것을 지정 합니다.  
+ 반환 값 (있는 경우)을 계산 하도록 지정 합니다.  
   
  EVAL_NOSIDEEFFECTS  
- 파생 작업이 허용 되지 않음을 지정 합니다.  
+ 의도 하지 않은 결과를 허용 하지 않도록 지정 합니다.  
   
  EVAL_ALLOWBPS  
- 중단점에서 중지를 지정합니다.  
+ 중단점에 대 한 중지를 지정 합니다.  
   
  EVAL_ALLOWERRORREPORT  
- 오류 수를 보고 호스트를 지정 합니다. Internet Explorer에서 스크립트의 식 평가 위해 주로 사용 됩니다.  
+ 허용 되는 호스트에 대 한 오류 보고를 지정 합니다. 주로 Internet Explorer의 스크립트에서 식 계산에 사용 됩니다.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- 함수를 호출 하는 대신 주소로 평가할 강제로 함수입니다.  
+ 함수를 호출 하는 대신 함수를 주소로 계산 합니다.  
   
  EVAL_NOFUNCEVAL  
- 함수를에서 확인할 수 없습니다. 예를 들어 합니다 `int` 식에서 토큰 `myExpression(int) + 10`합니다. 이 함수는 주소로 아니지만 값을 올바르게 평가할 수 있습니다.  
+ 함수가 계산 되지 않도록 합니다. 예를 들어 `int` 식의 토큰을 고려 `myExpression(int) + 10` 합니다. 이 함수는 값이 아니라 주소로 올바르게 계산 될 수 있습니다.  
   
  EVAL_NOEVENTS  
- 식 평가 중 발생 하는 이벤트를 보내지 세션 디버그 관리자 (SDM) 또는 IDE를 표시 하는 플래그입니다.  
+ 식 평가 중에 발생 하는 이벤트를 세션 디버그 관리자 (SDM) 또는 IDE로 보내지 않아야 함을 나타내는 플래그입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 플래그에 대 한 인수로 전달 되는 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 하 고 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 메서드.  
+ 이러한 플래그는 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 및 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 메서드에 인수로 전달 됩니다.  
   
- 이러한 플래그는 비트 OR 연산자를 사용 하 여 결합할 수 있습니다.  
+ 이러한 플래그는 비트 or와 함께 사용할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
