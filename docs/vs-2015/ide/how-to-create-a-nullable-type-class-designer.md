@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 438f84a172c7e0a2d0dc957c578adc568a46495f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668153"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>방법: Nullable 형식 만들기(클래스 디자이너)
@@ -81,5 +81,5 @@ ms.locfileid: "72668153"
 
 5. 클래스 모양을 마우스 오른쪽 단추로 클릭하고 **클래스 세부 내용**을 클릭합니다. **클래스 세부 내용** 창에서 새 형식의 속성을 보거나 수정할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
- nullable 형식을 [사용한](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [nullable](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) 형식 <xref:System.Nullable%601> [방법: Nullable 형식](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [nullable 값 형식](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6) 식별
+## <a name="see-also"></a>관련 항목
+ <xref:System.Nullable%601>Nullable 형식을 [사용 하](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) 는 [nullable](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) 형식 [방법: Nullable 형식](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [nullable 값 형식](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6) 식별

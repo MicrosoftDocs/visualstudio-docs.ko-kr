@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 633ed9c37e8ccde0844205910a8fa2dc12d91414
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817621"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>값 인수에 순환 참조를 사용하는 것은 지원되지 않습니다.
@@ -29,7 +29,7 @@ ms.locfileid: "85817621"
   
 - 인수에서 순환 참조를 제거 합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제의 코드는에 대 한 참조를 포함 하 고가에 대 한 참조를 포함 하기 때문에 런타임 오류가 발생 합니다 `john` `mary` `mary` `john` . 순환 참조를 제거 하려면 개체의 속성 또는 개체의 속성을 제거 하거나 설정 해제 `brother` `mary` `sister` `john` 합니다.  
   
 ```JavaScript  
@@ -42,7 +42,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [JSON 개체](../../javascript/reference/json-object-javascript.md)   
  [JSON 함수](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript 런타임 오류](../../javascript/reference/javascript-run-time-errors.md)

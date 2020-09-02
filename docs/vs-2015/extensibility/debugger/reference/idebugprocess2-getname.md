@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetName | Microsoft Docs
+title: 'IDebugProcess2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6070e530726c4b21a9f4f123df431941a4b1801e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188011"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-제목, 이름 또는 프로세스의 파일 이름을 가져옵니다.  
+프로세스의 제목, 이름 또는 파일 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,14 +42,14 @@ int GetName( 
   
 #### <a name="parameters"></a>매개 변수  
  `gnType`  
- [in] 값을 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 반환할 이름의 형식을 지정 하는 열거형입니다.  
+ 진행 반환할 이름 유형을 지정 하는 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 열거형의 값입니다.  
   
  `pbstrName`  
- [out] 프로세스의 이름을 반환합니다.  
+ 제한이 프로세스의 이름을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

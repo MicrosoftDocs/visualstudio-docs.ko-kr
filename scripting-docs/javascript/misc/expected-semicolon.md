@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 741f347a5b5d9f9268604d76afac2ace051faefa
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817387"
 ---
 # <a name="expected-"></a>';'이 필요합니다.
@@ -32,5 +32,5 @@ ms.locfileid: "85817387"
   
 - **For** 루프의 헤더 내에서 세미콜론을 잊지 않았는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [JavaScript 코드 작성](../../javascript/writing-javascript-code.md)

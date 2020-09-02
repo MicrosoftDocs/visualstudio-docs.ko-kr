@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667969"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
@@ -44,5 +44,5 @@ ms.locfileid: "72667969"
 
 - 부분 신뢰 디버깅을 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
- [응용 프로그램을 개발 하는 동안](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6) [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md) [호스팅 프로세스 (vshost.exe)](../ide/hosting-process-vshost-exe.md) 빌드
+## <a name="see-also"></a>관련 항목
+ [응용 프로그램 개발 중](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6) [에 디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md) [호스팅 프로세스 (vshost.exe)](../ide/hosting-process-vshost-exe.md) 빌드

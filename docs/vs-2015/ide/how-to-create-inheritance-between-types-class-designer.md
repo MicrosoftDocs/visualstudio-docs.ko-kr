@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba27b32cc322da2e14cec86b878a7dd42dae0039
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668099"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>방법: 형식 간의 상속 만들기(클래스 디자이너)
@@ -49,5 +49,5 @@ ms.locfileid: "72668099"
     >
     >  기존 제네릭 형식을 시각화할 수는 있지만 새 제네릭 형식을 만들 수는 없습니다. 또한 기존 제네릭 형식의 형식 매개 변수를 변경할 수도 없습니다.
 
-## <a name="see-also"></a>관련 항목:
- [상속](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [상속 기본 사항](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) [방법: 클래스 디자이너에서 형식 (클래스 디자이너)](../ide/how-to-view-inheritance-between-types-class-designer.md) [의 시각적 C++ 클래스](../ide/visual-cpp-classes-in-class-designer.md) 간 상속 보기
+## <a name="see-also"></a>관련 항목
+ [상속](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [상속 기본 사항](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) 방법: [클래스 디자이너의 클래스 Visual C++](../ide/visual-cpp-classes-in-class-designer.md) [형식 간의 상속 보기 (클래스 디자이너)](../ide/how-to-view-inheritance-between-types-class-designer.md)

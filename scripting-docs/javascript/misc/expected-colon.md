@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bcb5d395ac322b6fd1daed2bfd9da1fe76f57e3a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816672"
 ---
 # <a name="expected-"></a>':'이 필요합니다.
@@ -28,6 +28,6 @@ ms.locfileid: "85816672"
   
 - 두 번째와 세 번째 피연산자 사이에 콜론을 삽입 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [조건부 (삼항) 연산자 (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [연산자](../../javascript/operators-javascript.md)

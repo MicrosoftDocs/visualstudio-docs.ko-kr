@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CanDetach | Microsoft Docs
+title: 'IDebugProcess2:: CanDetach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd96442ad3639aa03fa894facbbc9e6dbe3bbd21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188094"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-세션 디버그 관리자 (SDM) 프로세스를 분리할 수 있습니다 하는 경우를 결정 합니다.  
+세션 디버그 관리자 (SDM)가 프로세스를 분리할 수 있는지 여부를 확인 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,9 +36,9 @@ HRESULT CanDetach(
 int CanDetach();  
 ```  
   
-## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK.` 반환 `S_FALSE` 경우 디버거 프로세스에서 분리할 수 없습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+## <a name="return-value"></a>Return Value  
+ 성공 하면 `S_OK.` `S_FALSE` 디버거가 프로세스에서 분리 될 수 없는 경우이 반환 됩니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

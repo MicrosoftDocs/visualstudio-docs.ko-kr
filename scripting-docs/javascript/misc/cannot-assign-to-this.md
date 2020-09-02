@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f5c52153da64ff477d89b09d4af17169da18e4e1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817322"
 ---
 # <a name="cannot-assign-to-this"></a>'this'에 할당할 수 없습니다.
@@ -37,9 +37,9 @@ ms.locfileid: "85817322"
 - **이**에 할당 하려고 하지 않습니다. 인스턴스화된 개체의 속성 또는 메서드에 액세스 하려면 점 연산자 (예: **circle. radius**)를 사용 합니다.
 
   > [!NOTE]
-  > 사용자가 **만든 변수의 이름을**지정할 수 없습니다. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]예약어입니다.
+  > 사용자가 **만든 변수의 이름을**지정할 수 없습니다. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 예약어입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [this 문](../../javascript/reference/this-statement-javascript.md)
 - [스크립트 문제 해결](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

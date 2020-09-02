@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1cf759e01e5f152f2220124c90f145bfbbe3c01d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651582"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현
@@ -39,7 +39,7 @@ ms.locfileid: "72651582"
 
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>체크 인 정책 규칙 집합에 대 한 버전 제어 폴더를 만들려면
 
-1. @No__t_0에서 팀 프로젝트 노드를 확장 한 다음 **소스 제어**를 클릭 합니다.
+1. 에서 [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] 팀 프로젝트 노드를 확장 한 다음 **소스 제어**를 클릭 합니다.
 
 2. **폴더** 창에서 팀 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **새 폴더**를 클릭 합니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72651582"
 
 #### <a name="to-create-the-check-in-policy-rule-set"></a>체크 인 정책 규칙 집합을 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **파일**을 클릭 합니다.
+1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **파일**을 클릭합니다.
 
 2. **범주** 목록에서 **일반**을 클릭 합니다.
 
@@ -82,7 +82,7 @@ ms.locfileid: "72651582"
 
 3. 체크 인 **정책** 목록에서 **코드 분석**을 두 번 클릭 하 고 **관리 코드에 대 한 코드 분석 적용** 확인란을 선택 했는지 확인 합니다.
 
-4. **이 규칙 집합 실행** 목록에서 **원본 제어 > \<Select 규칙 집합**을 클릭 합니다.
+4. **이 규칙 집합 실행** 목록에서을 클릭 **\<Select Rule Set from Source Control>** 합니다.
 
 5. 버전 제어에서 체크 인 정책 규칙 집합 파일의 경로를 입력 합니다.
 
@@ -116,6 +116,6 @@ ms.locfileid: "72651582"
 
 6. 다른 회사의 구성 요소에서 코드를 무시 하려면 **생성 된 코드에서 결과 표시 안 함** 확인란을 선택 합니다.
 
-7. **이 규칙 집합 실행** 목록에서 \<Browse ...을 클릭 합니다.  **>** .
+7. **이 규칙 집합 실행** 목록에서을 클릭 **\<Browse...>** 합니다.
 
 8. 체크 인 정책 규칙 집합 파일의 로컬 버전을 지정 합니다.

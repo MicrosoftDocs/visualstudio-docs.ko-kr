@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f9df8d85c600cd383a9a9059e689e6cb9f232d8f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668035"
 ---
 # <a name="how-to-create-starter-kits"></a>방법: 시작 키트 만들기
@@ -51,5 +51,5 @@ ms.locfileid: "72668035"
 
  [방법: 기존 템플릿 업데이트](../ide/how-to-update-existing-templates.md) 내보낸 템플릿을 편집 하는 방법을 설명 합니다. 이 절차를 사용하여 .vstemplate 파일을 수정하고 시작 키트를 사용자 지정합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

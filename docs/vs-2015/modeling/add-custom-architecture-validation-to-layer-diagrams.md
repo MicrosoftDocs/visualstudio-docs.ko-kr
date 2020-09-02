@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b5ebe4e38878df209ab6065b1dbca88cd8404b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655300"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가
@@ -60,7 +60,7 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
    > [!NOTE]
    > 메서드는 특정 상황에서만 호출되고 중단점은 자동으로 작동하지 않습니다. 자세한 내용은 [레이어 유효성 검사 디버그](#debugging)를 참조하세요.
 
-5. @No__t_0의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 *bin \\* 에서 **.vsix** 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.
+5. 의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] *bin \\ *에서 **.vsix** 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>개별 VSIX에 레이어 유효성 검사기 추가
  레이어 유효성 검사기, 명령 및 기타 확장이 포함된 하나의 VSIX를 만들려면 VSIX를 정의하는 프로젝트 하나와 처리기에 대한 개별 프로젝트를 만드는 것이 좋습니다. 모델링 확장의 다른 형식에 대 한 자세한 내용은 [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)을 참조 하세요.
@@ -71,7 +71,7 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 
 2. 솔루션에서 VSIX 프로젝트를 식별하거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함됩니다. VSIX 프로젝트에 추가하려면 다음 단계를 따릅니다.
 
-    1. **새 프로젝트** 대화 상자에서 **Visual C#** , **확장성**, **VSIX 프로젝트**를 선택합니다.
+    1. **새 프로젝트** 대화 상자에서 **Visual C#**, **확장성**, **VSIX 프로젝트**를 선택합니다.
 
     2. **솔루션 탐색기**의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택합니다.
 
@@ -81,11 +81,11 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 
     2. **새 자산 추가** 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **Microsoft.VisualStudio.MefComponent**
+         **유형**  =  **VisualStudio 구성 요소**
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *유효성 검사기 프로젝트*
+         **프로젝트**  =  *유효성 검사기 프로젝트*
 
 4. 또한 레이어 유효성 검사로 추가해야 합니다.
 
@@ -93,11 +93,11 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 
     2. **새 자산 추가** 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**을 참조하세요. 이는 드롭다운 목록의 옵션 중 하나가 아닙니다. 키보드에서 입력해야 합니다.
+         **유형**  =  **VisualStudio. microsoft.visualstudio.architecturetools.layer.validator**. 이는 드롭다운 목록의 옵션 중 하나가 아닙니다. 키보드에서 입력해야 합니다.
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *유효성 검사기 프로젝트*
+         **프로젝트**  =  *유효성 검사기 프로젝트*
 
 5. 레이어 유효성 검사 프로젝트로 돌아가서 다음 프로젝트 참조를 추가합니다.
 
@@ -121,7 +121,7 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 
      파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.
 
-## <a name="programming"></a> 프로그래밍 유효성 검사
+## <a name="programming-validation"></a><a name="programming"></a> 프로그래밍 유효성 검사
  레이어 유효성 검사 확장을 정의하려면 다음 특징을 가진 클래스를 정의합니다.
 
 - 전체 선언 형식은 다음과 같습니다.
@@ -190,7 +190,7 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 
   코드에서 레이어에서 요소로 연결된 링크에는 “Represents” 범주가 있습니다.
 
-## <a name="debugging"></a> 유효성 검사 디버그
+## <a name="debugging-validation"></a><a name="debugging"></a> 디버깅 유효성 검사
  레이어 유효성 검사 확장을 디버그하려면 Ctrl+F5를 누릅니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 열립니다. 이 인스턴스에서 레이어 모델을 열거나 만듭니다. 이 모델은 코드와 연결되어야 하고 종속성을 하나 이상 포함해야 합니다.
 
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>종속성이 포함된 솔루션으로 테스트
@@ -217,7 +217,7 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 ### <a name="deploying-a-validation-extension"></a>유효성 검사 확장 배포
  적합한 Visual Studio 버전이 설치된 컴퓨터에 유효성 검사 확장을 설치하려면 대상 컴퓨터에서 VSIX 파일을 엽니다. [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 가 설치된 컴퓨터에 설치하려면 VSIX 콘텐츠를 Extensions 폴더로 수동으로 추출해야 합니다. 자세한 내용은 [레이어 모델 확장 배포](../modeling/deploy-a-layer-model-extension.md)를 참조 하세요.
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a> 예제 코드
 
 ```csharp
 using System;
@@ -278,5 +278,5 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
- [레이어 다이어그램 확장](../modeling/extend-layer-diagrams.md)
+## <a name="see-also"></a>관련 항목
+ [Extend layer diagrams](../modeling/extend-layer-diagrams.md)

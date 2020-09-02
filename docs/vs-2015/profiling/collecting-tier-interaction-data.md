@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568049"
 ---
 # <a name="collecting-tier-interaction-data"></a>계층 상호 작용 데이터 수집
@@ -48,5 +48,5 @@ ms.locfileid: "62568049"
   
 3. 성능 탐색기에서, **대상** 노드를 선택한 다음 프로파일링하려는 프로젝트, 실행 파일 또는 웹 사이트를 지정합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [계층 상호 작용 뷰](../profiling/tier-interactions-view.md)

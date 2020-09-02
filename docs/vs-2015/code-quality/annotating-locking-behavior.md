@@ -34,10 +34,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271596"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
@@ -67,7 +67,7 @@ ms.locfileid: "77271596"
 ## <a name="locking-annotations"></a>주석 잠금  
  다음 표에서는 잠금 주석을 보여 줍니다.  
   
-|주석|Description|  
+|주석|설명|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 증가시킴을 나타냅니다.|  
 |`_Acquires_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 증가시킴을 나타냅니다.|  
@@ -91,7 +91,7 @@ ms.locfileid: "77271596"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>노출되지 않은 잠금 개체에 대한 SAL 내장 함수  
  특정 잠금 개체는 연결된 잠금 함수의 구현에 의해 노출되지 않습니다.  다음 표에서는 이러한 노출되지 않는 잠금 개체에서 작동하는 함수에 주석을 사용하도록 설정하는 SAL 내장 변수를 보여 줍니다.  
   
-|주석|Description|  
+|주석|설명|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|취소 스핀 잠금을 설명합니다.|  
 |`_Global_critical_region_`|임계 영역을 설명합니다.|  
@@ -101,19 +101,19 @@ ms.locfileid: "77271596"
 ## <a name="shared-data-access-annotations"></a>공유 데이터 액세스 주석  
  다음 표에서는 공유 데이터 액세스에 대한 주석을 보여 줍니다.  
   
-|주석|Description|  
+|주석|설명|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|변수에 주석을 추가하고 변수가 엑세스될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|  
 |`_Interlocked_`|변수에 주석을 추가하며 `_Guarded_by_(_Global_interlock_)`와 동일합니다.|  
 |`_Interlocked_operand_`|주석이 추가된 함수 매개 변수는 다양한 연동 함수 중 하나의 대상 피연산자입니다.  해당 피연산자에는 특정 추가 속성이 있어야 합니다.|  
 |`_Write_guarded_by_(expr)`|변수에 주석을 추가하고 변수가 수정될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [CC++ /코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL  이해](../code-quality/understanding-sal.md)  
- [함수 매개 변수 및 반환 값에 주석을 추가](../code-quality/annotating-function-parameters-and-return-values.md)   
+## <a name="see-also"></a>관련 항목  
+ [C/c + + 코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL 이해](../code-quality/understanding-sal.md)   
+ [함수 매개 변수 및 반환 값에 주석 달기](../code-quality/annotating-function-parameters-and-return-values.md)   
  [함수 동작에 주석 달기](../code-quality/annotating-function-behavior.md)   
- [구조체 및 클래스  주석 달기](../code-quality/annotating-structs-and-classes.md)  
+ [구조체 및 클래스에 주석 달기](../code-quality/annotating-structs-and-classes.md)   
  [주석이 적용 되는 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [내장 함수](../code-quality/intrinsic-functions.md)   
  [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)   

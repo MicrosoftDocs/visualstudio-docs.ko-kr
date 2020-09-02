@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::LoadSymbols | Microsoft Docs
+title: 'IDebugModule3:: LoadSymbols | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 46385a61c5cc8cc30f75fd06a55bbe155e045f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157280"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-현재 모듈에 대 한 기호를 로드합니다.  
+현재 모듈에 대 한 기호를 로드 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,13 +36,13 @@ HRESULT LoadSymbols(
 int LoadSymbols();  
 ```  
   
-## <a name="return-value"></a>반환 값  
- 메서드가 성공 하는 경우 반환 `S_OK`합니다. 실패 한 경우 오류 코드를 반환 합니다.  
+## <a name="return-value"></a>Return Value  
+ 메서드가 성공하면 `S_OK`가 반환되고, 그렇지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 현재 검색 경로에서 기호 로드 (호출 하 여 변경할 수 있습니다 합니다 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) 메서드).  
+ 이 메서드는 현재 검색 경로에서 기호를 로드 합니다 .이 기호는 [Setsymbol path](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) 메서드를 호출 하 여 변경할 수 있습니다.  
   
- 이 메서드는 보다 선호 합니다 [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) 메서드.  
+ 이 메서드는 [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) 방법 보다 선호 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   

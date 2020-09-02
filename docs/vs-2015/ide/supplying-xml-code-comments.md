@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62ece3a7a56f931f949fc13124af430ce24e622f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646829"
 ---
 # <a name="supplying-xml-code-comments"></a>XML 코드 주석 제공
@@ -33,5 +33,5 @@ ms.locfileid: "72646829"
 
  C++에서 코드를 문서로 만드는 방법에 대한 자세한 내용은 [주석](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) 및 [XML 문서](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [IntelliSense 사용](../ide/using-intellisense.md)

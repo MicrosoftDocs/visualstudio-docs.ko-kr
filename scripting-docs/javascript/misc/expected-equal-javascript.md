@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: acc91513cc7f230a150ca87eea5cddc4681e43d3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816594"
 ---
 # <a name="expected--javascript"></a>'='가 필요합니다.(JavaScript)
@@ -26,7 +26,7 @@ ms.locfileid: "85816594"
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 등호를 추가 합니다. 예를 들어:  
+- 등호를 추가 합니다. 예를 들면 다음과 같습니다.  
   
     ```JavaScript  
     @set @myvar1 = 1  

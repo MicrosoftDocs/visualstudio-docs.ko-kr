@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651865"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>방법: 프로젝트 템플릿과 항목 템플릿 찾기 및 구성
@@ -172,5 +172,5 @@ Visual Studio에서 인식할 수 있는 위치에 템플릿 파일이 있어야
 
 8. 새 .zip 파일을 삭제된 .zip 파일이 있던 디렉터리에 넣습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) [NumberOfParentCategoriesToRollUp (visual Studio 템플릿)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md) [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)

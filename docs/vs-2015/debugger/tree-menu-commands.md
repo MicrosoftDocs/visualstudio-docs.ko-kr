@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66ac968f21ef28916f038f8abf54331bea2b972f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144562"
 ---
 # <a name="tree-menu-commands"></a>트리 메뉴 명령
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-합니다 **트리** 메뉴 명령을 확장 또는 축소 뷰를 제공 합니다.  
+**트리** 메뉴는 보기를 확장하거나 축소하는 명령을 제공합니다.  
   
  **한 수준 확장**  
- 한 수준 아래에 표시 하 여 시스템 뷰에서 현재 선택한 항목을 확장 합니다.  
+ 시스템 뷰에서 현재 선택 된 항목을 확장 하 여 한 수준 아래에 표시 합니다.  
   
- **분기를 확장 합니다.**  
- 현재 선택된 된 항목 아래에 있는 모든 수준을 확장합니다.  
+ **분기 확장**  
+ 현재 선택 된 항목 아래의 모든 수준을 확장 합니다.  
   
  **모두 확장**  
- 확장 하 고 시스템의 모든 수준을 표시 합니다.  
+ 시스템 뷰의 모든 수준을 확장 하 고 표시 합니다.  
   
  **축소**  
- 현재 선택된 된 항목 아래에 있는 모든 수준을 축소합니다.
+ 현재 선택 된 항목 아래의 모든 수준을 축소 합니다.
