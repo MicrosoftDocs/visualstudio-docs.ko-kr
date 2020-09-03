@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e8d82712a2fb8e30b13f9f369bf87be5292c199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659484"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
@@ -31,17 +31,17 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
 
  이 솔루션 템플릿을 사용해 본 적이 없다면 F5 키를 누르고 해당 기능을 사용해 봅니다. 특히 구성 요소로 포트 도구를 끌어 포트를 만들고 포트를 연결할 수 있는지 확인합니다.
 
- ![구성 요소 및 상호 연결 된 포트](../modeling/media/componentsample.png "ComponentSample")
+ ![구성 요소 및 상호 연결된 포트](../modeling/media/componentsample.png "ComponentSample")
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 솔루션의 구조
- Dsl **프로젝트는** dsl에 대 한 API를 정의 합니다. **Dslpackage** 프로젝트는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]와 통합 하는 방법을 정의 합니다. 모델에서 생성되는 코드를 포함할 수도 있는 프로젝트를 직접 추가할 수도 있습니다.
+ Dsl **프로젝트는** dsl에 대 한 API를 정의 합니다. **Dslpackage** 프로젝트는와 통합 하는 방법을 정의 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 모델에서 생성되는 코드를 포함할 수도 있는 프로젝트를 직접 추가할 수도 있습니다.
 
 ### <a name="the-code-directories"></a>코드 디렉터리
  이러한 각 프로젝트의 코드는 대부분 **Dsl\dsldefinitiondsl**에서 생성 됩니다. 생성 된 코드는 생성 된 **코드** 폴더에 있습니다. 생성 된 파일을 보려면 생성 하는 **.tt** 파일 옆에 있는 **[+]** 를 클릭 합니다.
 
  생성된 코드를 검사하여 DSL을 파악하는 것이 좋습니다. 생성된 파일을 확인하려면 솔루션 탐색기에서 *.tt 파일을 확장합니다.
 
- @No__t_0 .tt 파일은 거의 생성 하지 않는 코드를 포함 합니다. 대신 `<#include>` 지시문을 사용하여 공유 템플릿 파일을 포함합니다. 공유 파일은 **Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates** 에서 찾을 수 있습니다.
+ .Tt 파일은 거의 생성 하지 않는 \* 코드를 포함 합니다. 대신 `<#include>` 지시문을 사용하여 공유 템플릿 파일을 포함합니다. 공유 파일은 **Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates** 에서 찾을 수 있습니다.
 
  고유한 프로그램 코드를 DSL 솔루션에 추가할 때는 Generated Code 폴더 외부에 있는 별도의 파일에 추가합니다. **사용자 지정 코드** 폴더를 만들 수 있습니다. 사용자 지정 폴더에 새 코드 파일을 추가할 때는 초기 코드 골격에서 네임스페이스를 수정해야 합니다.
 
@@ -60,7 +60,7 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
 ## <a name="generated-files-in-dsl"></a>DSL의 생성된 파일
  다음 생성 된 파일은 **Dsl** 프로젝트에 표시 됩니다.
 
- 모든 *dsl* `Schema.xsd`
+ 모든 *dsl*`Schema.xsd`
 
  DSL 인스턴스를 포함하는 파일의 스키마입니다. 이 파일은 컴파일 (**bin**) 디렉터리에 복사 됩니다. DSL을 설치할 때 모델 파일의 유효성을 검사할 수 있도록이 파일을 **Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** 에 복사할 수 있습니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
@@ -72,7 +72,7 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
 
  구성 요소 솔루션 예제에서는 연결 작성기 중 하나의 이름이 ConnectionBuilder입니다. 도메인 관계의 이름이 Connection이므로 이는 우연의 일치입니다.
 
- 관계는 *relationship* `Builder.Connect()` 메서드에서 생성 됩니다. 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들면,
+ 관계는 관계 메서드에서 생성 됩니다 *Relationship* `Builder.Connect()` . 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들면 다음과 같습니다.
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -124,7 +124,7 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
 
 - EGP(Element Group Prototype) 처리기 메서드. 사용자가이 클래스의 인스턴스에 다른 요소를 *병합* (추가) 할 수 있는 경우에 필요 합니다. 사용자는 일반적으로 요소 도구나 다른 모양에서 끌기 또는 붙여넣기를 통해 이 작업을 수행합니다.
 
-   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. Component
+   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. 이
 
    클래스의 EGP 처리기 메서드를 사용하면 Component가 Port는 수락하되 Comment는 수락하지 않도록 지정할 수 있습니다. 루트 모델 클래스의 EGP 처리기는 Comment와 Component는 수락하지만 Port는 수락하지 않습니다.
 
@@ -202,13 +202,13 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
 
  `DocData.cs`
 
- *Dsl* `DocData`는 파일에 대 한 모델 로드 및 저장을 관리 하 고 저장소 인스턴스를 만듭니다.
+ 모든 *dsl* `DocData` 모델을 로드 하 여 파일에 저장 하 고 저장소 인스턴스를 만듭니다.
 
  예를 들어 파일이 아닌 데이터베이스에 DSL을 저장하려면 `Load` 및 `Save` 메서드를 재정의할 수 있습니다.
 
  `DocView.cs`
 
- 모든 *dsl* `DocView`는 다이어그램이 표시 되는 창을 관리 합니다. 예를 들어 Windows Form 내부에 다이어그램을 포함할 수 있습니다.
+ 모든 *dsl* `DocView` 다이어그램이 표시 되는 창을 관리 합니다. 예를 들어 Windows Form 내부에 다이어그램을 포함할 수 있습니다.
 
  DslPackage 프로젝트에 사용자 정의 컨트롤 파일, 다이어그램을 표시할 수 있는 패널 그리고 단추 및 기타 컨트롤을 추가합니다. 이렇게 하려면 Form의 코드 보기에서 다음 코드를 추가하고 DSL에 맞게 이름을 조정합니다.
 
@@ -344,9 +344,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  이 파일을 사용자 지정하려면 `.tt` 파일을 편집합니다.
 
 > [!WARNING]
-> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 **VSIX에 포함** 속성이 `True` 인지 확인 합니다.
+> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 **VSIX에 포함** 속성이 인지 확인 합니다 `True` .
 
  이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md) [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md) 도메인별 언어 [사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md) 도메인 특정 언어를 사용자 지정 [하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

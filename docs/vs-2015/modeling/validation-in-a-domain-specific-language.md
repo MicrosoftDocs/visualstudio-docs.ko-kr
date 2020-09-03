@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a19ebab7b0c820e336965b4020eff2c2f9726cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659361"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>도메인별 언어에서 유효성 검사
@@ -62,7 +62,7 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
 
    2. DSL 탐색기에서 **편집기** 노드를 확장 하 고 **유효성 검사**를 선택 합니다.
 
-   3. 속성 창에서 **사용** 속성을 `true`로 설정 합니다. 이러한 속성을 모두 설정하는 것이 가장 편리합니다.
+   3. 속성 창에서 **사용**  속성을로 설정 합니다 `true` . 이러한 속성을 모두 설정하는 것이 가장 편리합니다.
 
    4. 솔루션 탐색기 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
@@ -86,7 +86,7 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
 
     ValidationCategories는 메서드가 실행되는 시기를 지정합니다.
 
-   예를 들면,
+   예:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -129,7 +129,7 @@ public partial class ParentsHaveChildren
 
  이 코드에서는 다음 사항에 주의하세요.
 
-- 도메인 클래스나 도메인 관계에 유효성 검사 메서드를 추가할 수 있습니다. 이러한 형식의 코드는 **Dsl\generated Code\Domain \*. cs**에 있습니다.
+- 도메인 클래스나 도메인 관계에 유효성 검사 메서드를 추가할 수 있습니다. 이러한 형식에 대 한 코드는 **Dsl\generated Code\Domain \* .cs**에 있습니다.
 
 - 각 유효성 검사 메서드는 해당 클래스와 하위 클래스의 모든 인스턴스에 적용됩니다. 도메인 관계의 경우 각 인스턴스는 두 모델 요소 간의 링크입니다.
 
@@ -178,11 +178,11 @@ public partial class Person
 
 ```
 
- **유효성 검사 제약 조건 집계** 예측 가능한 순서로 유효성 검사를 적용 하려면 모델의 루트 요소와 같은 소유자 클래스에 대해 단일 유효성 검사 메서드를 정의 합니다. 이 기술을 사용하면 여러 오류 보고서를 단일 메시지에 집계할 수도 있습니다.
+ **유효성 검사 제약 조건 집계.**  예측 가능한 순서로 유효성 검사를 적용하려면 모델의 루트 요소와 같은 소유자 클래스에 대해 단일 유효성 검사 메서드를 정의합니다. 이 기술을 사용하면 여러 오류 보고서를 단일 메시지에 집계할 수도 있습니다.
 
  그러나 메서드를 결합하면 관리하기가 더 어렵고 모든 제약 조건의 `ValidationCategories`가 같아야 한다는 단점이 있습니다. 그러므로 가능한 경우에는 각 제약 조건을 별도의 메서드에 포함하는 것이 좋습니다.
 
- **컨텍스트 캐시에 값을 전달 합니다.** Context 매개 변수에는 임의의 값을 저장할 수 있는 사전이 있습니다. 사전은 유효성 검사 실행 기간 동안 유지됩니다. 예를 들어 특정 유효성 검사 메서드는 컨텍스트에 오류 수를 저장한 다음 반복되는 메시지가 오류 창에 과다하게 표시되는 현상을 방지하는 데 사용할 수 있습니다. 예를 들면,
+ **컨텍스트 캐시에서 값 전달.**  컨텍스트 매개 변수에는 임의의 값을 저장할 수 있는 사전이 있습니다. 사전은 유효성 검사 실행 기간 동안 유지됩니다. 예를 들어 특정 유효성 검사 메서드는 컨텍스트에 오류 수를 저장한 다음 반복되는 메시지가 오류 창에 과다하게 표시되는 현상을 방지하는 데 사용할 수 있습니다. 예:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -199,7 +199,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  도메인 관계 역할의 복합성을 1..* 또는 1..1로 설정했는데 사용자가 이 관계의 링크를 만들지 않으면 유효성 검사 오류 메시지가 표시됩니다.
 
- 예를 들어, DSL에 사람 및 타운 클래스가 있고 PersonLivesInTown가 관계 **1.. \\** * 인 관계를 사용 하는 경우 타운 역할의 각 사용자에 대해 오류 메시지가 표시 됩니다.
+ 예를 들어 DSL에 Person과 타운 클래스가 있고 relationship PersonLivesInTown relationship **1.. \\ ** * 마을 역할에서 타운이 없는 각 사용자에 대해 오류 메시지가 표시 됩니다.
 
 ## <a name="running-validation-from-program-code"></a>프로그램 코드에서 유효성 검사 실행
  ValidationController를 만들거나 액세스하여 유효성 검사를 실행할 수 있습니다. 오류 창을 통해 사용자에게 오류를 표시하려면 다이어그램의 DocData에 연결된 ValidationController를 사용합니다. 예를 들어 메뉴 명령을 작성하는 경우에는 명령 집합 클래스에서 `CurrentDocData.ValidationController`를 사용할 수 있습니다.
@@ -220,7 +220,7 @@ partial class MyLanguageCommandSet
 
  자세한 내용은 [방법: 바로 가기 메뉴에 명령 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)를 참조 하세요.
 
- 별도의 유효성 검사 컨트롤러를 만들어 오류를 직접 관리할 수도 있습니다. 예를 들면,
+ 별도의 유효성 검사 컨트롤러를 만들어 오류를 직접 관리할 수도 있습니다. 예:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
 
  링크나 요소에 영향을 주는 실행 취소 또는 다시 실행 작업 후에도 처리기가 호출됩니다.
 
-## <a name="custom"></a>사용자 지정 유효성 검사 범주
+## <a name="custom-validation-categories"></a><a name="custom"></a> 사용자 지정 유효성 검사 범주
  메뉴, 열기 등의 표준 유효성 검사 범주 외에 원하는 범주를 직접 정의할 수 있습니다. 이러한 범주는 프로그램 코드에서 호출할 수 있으며 사용자가 범주를 직접 호출할 수는 없습니다.
 
  사용자 지정 범주는 일반적으로 모델이 특정 도구의 사전 조건을 충족하는지를 테스트하는 범주를 정의하는 데 사용됩니다.
@@ -332,17 +332,17 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-## <a name="alternatives"></a>유효성 검사의 대안
+## <a name="alternatives-to-validation"></a><a name="alternatives"></a> 유효성 검사의 대안
  유효성 검사 제약 조건은 오류를 보고만 하며 모델을 변경하지는 않습니다. 모델이 잘못된 상태가 되지 않도록 하려면 다른 기술을 대신 사용할 수 있습니다.
 
  그러나 이러한 기술은 사용하지 않는 것이 좋습니다. 일반적으로는 사용자가 잘못된 모델을 수정하는 방법을 결정하도록 하는 것이 더 효율적입니다.
 
- **모델을 유효성에 맞게 복원 하기 위해 변경 내용을 조정 합니다.** 예를 들어 사용자가 허용 되는 최대값을 초과 하는 속성을 설정 하는 경우 속성을 최 댓 값으로 다시 설정할 수 있습니다. 이렇게 하려면 규칙을 정의해야 합니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
+ **변경 내용을 조정하여 모델을 유효한 상태로 복원.**  예를 들어 사용자가 허용되는 최대값을 초과하여 속성을 설정하면 해당 속성을 최대값으로 다시 설정할 수 있습니다. 이렇게 하려면 규칙을 정의해야 합니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
 
- **잘못 된 변경을 시도 하는 경우 트랜잭션을 롤백합니다.** 이 목적을 위해 규칙을 정의할 수도 있지만, 경우에 따라 속성 처리기 **OnValueChanging ()** 를 재정의 하거나, 트랜잭션을 롤백하는 `this.Store.TransactionManager.CurrentTransaction.Rollback().`를 사용 하는 `OnDeleted().` 등의 메서드를 재정의할 수 있습니다. 자세한 내용은 도메인 속성을 참조 하세요. [ 값 변경 처리기](../modeling/domain-property-value-change-handlers.md)입니다.
+ **잘못된 변경을 시도하는 경우 트랜잭션 롤백.** 이 목적을 위해 규칙을 정의할 수도 있지만, 경우에 따라 속성 처리기 **OnValueChanging ()** 를 재정의 하거나, 등의 메서드를 재정의 하 여 트랜잭션을 롤백할 수 있습니다 `OnDeleted().` `this.Store.TransactionManager.CurrentTransaction.Rollback().` . 자세한 내용은 [도메인 속성 값 변경 처리기](../modeling/domain-property-value-change-handlers.md)를 참조 하세요.
 
 > [!WARNING]
 > 변경 내용이 조정되었거나 롤백되었음을 사용자에게 알려야 합니다. 예를 들어 `System.Windows.Forms.MessageBox.Show("message").`를 사용합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md) [이벤트 처리기는 모델 외부에서 변경 내용을 전파 합니다](../modeling/event-handlers-propagate-changes-outside-the-model.md) .

@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Next | Microsoft Docs
+title: 'IEnumCodePaths2:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f94a0a225f19584e9a922192bcb402aa3287b2da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192043"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-열거형에서 다음 요소 집합을 반환합니다.  
+열거형에서 다음 요소 집합을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,17 +44,17 @@ int Next(
   
 #### <a name="parameters"></a>매개 변수  
  `celt`  
- [in] 검색할 요소의 수입니다. 또한 최대 크기를 지정 된 `rgelt` 배열입니다.  
+ 진행 검색할 요소의 수입니다. 또한 배열의 최대 크기를 지정 합니다 `rgelt` .  
   
  `rgelt`  
- [out에서] 배열을 [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) 채울 요소입니다.  
+ [in, out] 채워질 [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) 요소의 배열입니다.  
   
  `pceltFetched`  
- [out] 에 실제로 반환 된 요소의 수를 반환 합니다. `rgelt`합니다.  
+ 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .  
   
 ## <a name="return-value"></a>반환 값  
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 요소의 요청 된 수보다 적은; 반환 될 수 있으면이 고, 그렇지 오류 코드를 반환 합니다.  
+ 성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
  [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)

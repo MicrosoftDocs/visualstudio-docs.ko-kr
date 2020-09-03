@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161232"
 ---
 # <a name="graphics-log-document"></a>그래픽 로그 문서
@@ -27,7 +27,7 @@ ms.locfileid: "68161232"
   
  다음은 Graphics Analyzer에서 나타나는 그래픽 로그 문서입니다.  
   
- ![두 가지 캡처된 프레임이 포함 된 그래픽 로그입니다. ](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
+ ![두 가지 캡처된 프레임이 포함되는 그래픽 로그입니다.](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
   
 ## <a name="understanding-graphics-log-documents"></a>그래픽 로그 문서 이해하기  
  Graphics Analyzer를 사용하여 그래픽 로그 문서를 검토하면 캡처 중 발생한 렌더링 대상에 대한 Direct3D 이벤트의 영향을 시각화할 수 있습니다. 렌더링 대상에서 예기치 않은 출력이 포함된 영역을 확인할 수 있습니다. 영향을 받은 영역에 있는 픽셀을 선택하면 그래픽 진단을 사용하여 선택한 픽셀, 픽셀의 셰이더, 영향을 준 Direct3D 이벤트, 이러한 이벤트로 이어진 애플리케이션 호출 스택 및 이러한 이벤트를 지원하는 DirectX 개체를 검사할 수 있습니다. 이러한 정보를 사용하여 게임 또는 앱에서 렌더링 문제를 진단할 수 있습니다.  
@@ -40,12 +40,12 @@ ms.locfileid: "68161232"
   
 #### <a name="to-inspect-a-pixel"></a>픽셀을 검사하려면  
   
-- 그래픽 로그 문서의 상단 부분의 렌더링 대상 출력에서 원하는 픽셀을 선택합니다. 픽셀을 선택하면 **그래픽 픽셀 기록** 창을 사용하여 선택한 픽셀에 대한 자세한 정보를 볼 수 있습니다. 자세한 내용은 [픽셀 기록](../debugger/graphics-pixel-history.md)합니다.  
+- 그래픽 로그 문서의 상단 부분의 렌더링 대상 출력에서 원하는 픽셀을 선택합니다. 픽셀을 선택하면 **그래픽 픽셀 기록** 창을 사용하여 선택한 픽셀에 대한 자세한 정보를 볼 수 있습니다. 자세한 내용은 [픽셀 기록](../debugger/graphics-pixel-history.md)을 참조하세요.  
   
 ## <a name="playback-machine"></a>재생 컴퓨터  
  **프레임 목록**의 오른쪽 위 모퉁이에는 **재생 머신**도 표시됩니다. 재생 컴퓨터는 이후 그래픽 진단 세션 중 그래픽 로그 파일에서 그래픽 이벤트를 재생하는 데 사용되는 컴퓨터 또는 디바이스입니다. 개발 컴퓨터 대신 다른 디바이스를 사용하여 캡처된 이벤트를 재생하면 문제가 발생한 실행 환경을 보다 정확하게 재현할 수 있습니다. 예를 들어 개발 컴퓨터에서 사용하는 것과 다른 그래픽 하드웨어 또는 드라이버가 있는 컴퓨터나 ARM 기반 Windows RT 태블릿 또는 Windows Phone 디바이스와 같은 다른 종류의 디바이스를 사용할 수 있습니다.  
   
- 재생 컴퓨터를 지정 하는 방법에 대 한 정보를 참조 하세요. [방법: 그래픽 진단 재생 머신 변경](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)을 참조하세요.  
+ 재생 머신을 지정하는 방법에 관한 자세한 내용은 [방법: 그래픽 진단 재생 머신 변경](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)을 참조하세요.  
   
 ## <a name="graphics-log-summary-information"></a>그래픽 로그 요약 정보  
  그래픽 로그 파일이 활성 문서인 경우 **속성** 창에는 그래픽 진단 캡처 세션을 호스팅하는 환경에 대한 정보가 표시됩니다. 여러 정보 범주가 표시됩니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "68161232"
  **Direct3D 정보**  
  캡처 세션 중 사용된 디스플레이 어댑터의 하드웨어 및 드라이버 기능에 대한 정보를 나열합니다.  
   
-|속성|Description|  
+|속성|설명|  
 |--------------|-----------------|  
 |**10비트 XR 하이 컬러 형식**|10비트 XR 하이 컬러 형식이 지원되면 **True**이고 그렇지 않은 경우 **False**입니다.|  
 |**DirectCompute CS 4.x**|컴퓨팅 셰이더 4.0이 지원되면 **True**이고 그렇지 않으면 **False**입니다.|  
@@ -87,7 +87,7 @@ ms.locfileid: "68161232"
  **시스템 정보**  
  캡처 세션 중 앱을 호스팅한 하드웨어 및 운영 체제에 대한 정보를 나열합니다.  
   
-|속성|Description|  
+|속성|설명|  
 |--------------|-----------------|  
 |**메모리**|컴퓨터에 설치된 메모리의 양입니다.|  
 |**OS 아키텍처**|운영 체제의 대상 CPU 아키텍처입니다.|  
@@ -95,10 +95,10 @@ ms.locfileid: "68161232"
 |**프로세서**|컴퓨터에 설치된 프로세서입니다.|  
 |**대상 애플리케이션 아키텍처**|앱의 대상 CPU 아키텍처입니다. 이 아키텍처는 **OS 아키텍처**와 다를 수 있습니다.|  
   
- **대상 애플리케이션**  
+ **대상 응용 프로그램**  
  캡처 세션의 제목인 앱에 대한 정보를 나열합니다.  
   
-|속성|Description|  
+|속성|설명|  
 |--------------|-----------------|  
 |**마지막으로 수정한 날짜/시간**|앱이 빌드된 날짜 및 시간입니다.|  
 |**경로**|앱의 경로입니다.|  
@@ -114,6 +114,6 @@ ms.locfileid: "68161232"
 |**세션 시작 시간**|캡처 세션이 시작된 날짜 및 시간입니다.|  
 |**Size**|그래픽 로그 문서의 크기입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [연습: 꼭짓점 음영으로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+## <a name="see-also"></a>관련 항목  
+ [연습: 꼭 짓 점 음영으로 인해 누락 된 개체](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [연습: 음영으로 인한 렌더링 오류 디버그](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

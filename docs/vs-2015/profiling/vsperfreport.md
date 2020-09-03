@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148225"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -45,7 +45,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2`는 유효한 .vsp 또는 .vsps 파일이어야 합니다.  
   
 ## <a name="symbol-files"></a>기호 파일  
- 함수 이름 및 줄 번호와 같은 기호 정보를 표시하려면 VSPerfReport가 프로파일링된 구성 요소의 기호(.PDB) 파일과 Windows 기호 파일에 액세스할 수 있어야 합니다. 자세한 내용은 [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)합니다.  
+ 함수 이름 및 줄 번호와 같은 기호 정보를 표시하려면 VSPerfReport가 프로파일링된 구성 요소의 기호(.PDB) 파일과 Windows 기호 파일에 액세스할 수 있어야 합니다. 자세한 내용은 [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)을 참조 하세요.  
   
 ## <a name="general-report-options"></a>일반 보고서 옵션  
  다음 표에서는 일반 보고서 서식 옵션과 보고할 데이터를 선택하는 옵션에 대해 설명합니다.  
@@ -72,7 +72,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |옵션|설명|  
 |-------------|-----------------|  
-|**JustMyCode**[ **:** [`caller`][,`callee`]]|사용자 애플리케이션 함수 호출만 표시하고 시스템 호출은 숨깁니다.<br /><br /> - 매개 변수 없음 - 시스템 함수를 모두 숨깁니다.<br />-   `caller` - 응용 프로그램 함수를 호출하는 한 수준의 시스템 함수를 표시합니다.<br />-   `callee` - 사용자 응용 프로그램 함수가 호출하는 한 수준의 시스템 함수를 표시합니다.|  
+|**JustMyCode**[ **:** [`caller`][,`callee`]]|사용자 애플리케이션 함수 호출만 표시하고 시스템 호출은 숨깁니다.<br /><br /> - 매개 변수 없음 - 시스템 함수를 모두 숨깁니다.<br />-   `caller` - 애플리케이션 함수를 호출하는 한 수준의 시스템 함수를 표시합니다.<br />-   `callee` - 사용자 애플리케이션 함수가 호출하는 한 수준의 시스템 함수를 표시합니다.|  
 |**StartTime:** [*value*]|value 이후에 수집된 데이터만 표시합니다(밀리초).|  
 |**EndTime:** [*value*]|value 이전에 수집된 데이터만 표시합니다(밀리초).|  
 |**FilterFile:** `VSPFFile`|Visual Studio 성능 보고서 창에서 생성된 필터 파일의 위치를 지정합니다.|  
@@ -92,5 +92,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:** [*columnname*]|이 특정 열 비교 값을 사용합니다. 기본값은 전용 샘플 백분율 열입니다.|  
 |**QueryDiffTables**|제공한 두 보고서 파일의 올바른 테이블 및 열을 나열합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 보고서 뷰](../profiling/performance-report-views.md)

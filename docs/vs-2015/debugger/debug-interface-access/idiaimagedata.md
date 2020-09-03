@@ -14,40 +14,40 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54d09a037fff08b1c34f9a0b5e1fbf018cd10bc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161404"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-모듈 또는 이미지의 기본 위치와 메모리 오프셋의 세부 정보를 표시합니다.  
+모듈 또는 이미지의 기본 위치 및 메모리 오프셋에 대 한 세부 정보를 표시 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaImageData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDiaImageData`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDiaImageData` .  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|응용 프로그램에 상대적인 모듈의 가상 메모리의 위치를 검색합니다.|  
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|이미지의 가상 메모리의 위치를 검색합니다.|  
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|여기서 이미지를 기반으로 하는 메모리 위치를 검색 합니다.|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|응용 프로그램을 기준으로 모듈의 가상 메모리에서 위치를 검색 합니다.|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|이미지의 가상 메모리에서 위치를 검색 합니다.|  
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|이미지를 기반으로 하는 메모리 위치를 검색 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 일부 디버그 스트림 (XDATA, PDATA) 이미지에도 저장 된 데이터의 복사본을 포함 합니다. 이 스트림 개체를 쿼리할 수 데이터는 `IDiaImageData` 인터페이스입니다. 자세한 내용은이 항목의 "호출자에 대 한 참고 사항" 섹션을 참조 합니다.  
+ 일부 디버그 스트림 (.XDATA, .PDATA)은 이미지에도 저장 된 데이터의 복사본을 포함 합니다. 이러한 스트림 데이터 개체는 인터페이스에 대해 쿼리할 수 있습니다 `IDiaImageData` . 자세한 내용은이 항목의 "호출자 참고 사항" 섹션을 참조 하세요.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 호출 하 여이 인터페이스를 가져올 `QueryInterface` 에 [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 개체입니다. 모든 디버그는 스트림 지원은 `IDiaImageData` 인터페이스입니다. 예를 들어 현재 XDATA 및 PDATA 스트림을 지원 합니다 `IDiaImageData` 인터페이스입니다.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ `QueryInterface` [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) 개체에 대해를 호출 하 여이 인터페이스를 가져옵니다. 모든 디버그 스트림은 인터페이스를 지원 하지 않습니다 `IDiaImageData` . 예를 들어 현재 .XDATA 및 .PDATA 스트림도 인터페이스를 지원 합니다 `IDiaImageData` .  
   
-## <a name="example"></a>예제  
- 이 예에서는 검색을 지 원하는 모든 스트림에 대 한 디버그 스트림의 모든는 `IDiaImageData` 인터페이스입니다. 이러한 스트림이 있으면 해당 스트림에 대 한 일부 정보가 표시 됩니다.  
+## <a name="example"></a>예  
+ 이 예제에서는 인터페이스를 지 원하는 모든 스트림에 대해 모든 디버그 스트림을 검색 `IDiaImageData` 합니다. 이러한 스트림을 찾으면 해당 스트림에 대 한 일부 정보가 표시 됩니다.  
   
 ```cpp#  
 void ShowImageData(IDiaSession *pSession)  
@@ -114,12 +114,12 @@ void ShowImageData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: Dia2  
   
- 라이브러리: diaguids.lib  
+ 라이브러리: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>참고 항목  
- [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>관련 항목  
+ [인터페이스 (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
