@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08442d6044ca978e69f199e76c4668db63c319da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196582"
 ---
 # <a name="copy-task"></a>Copy 작업
@@ -37,7 +37,7 @@ ms.locfileid: "68196582"
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `Copy` 작업의 매개 변수에 대해 설명합니다.  
   
-|매개 변수|설명|  
+|매개 변수|Description|  
 |---------------|-----------------|  
 |`CopiedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 복사된 항목을 계산합니다.|  
 |`DestinationFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 소스 파일을 복사할 파일의 목록을 지정합니다. 이 목록은 `SourceFiles` 매개 변수에 지정된 목록이 포함된 일대일 매핑이어야 합니다. 즉, `SourceFiles`에 지정된 첫 번째 파일이 `DestinationFiles` 등에 지정된 첫 번째 위치에 복사됩니다.|  
@@ -71,9 +71,9 @@ ms.locfileid: "68196582"
 ## <a name="remarks"></a>설명  
  `DestinationFolder` 또는 `DestinationFiles` 매개 변수 중 하나(둘 다가 아닌)를 지정해야 합니다. 둘 다를 지정하는 경우 작업이 실패하고 오류가 기록됩니다.  
   
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명의 목록은 [Taskextension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조 하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `MySourceFiles` 항목 컬렉션의 항목을 c:\MyProject\Destination 폴더로 복사합니다.  
   
 ```  
@@ -93,7 +93,7 @@ ms.locfileid: "68196582"
 </Project>  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 재귀적 복사를 수행하는 방법을 보여 줍니다. 이 프로젝트는 디렉터리 구조를 유지하면서 c:\MySourceTree의 모든 파일을 재귀적으로 c:\MyDestinationTree에 복사합니다.  
   
 ```  
@@ -113,6 +113,6 @@ ms.locfileid: "68196582"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [작업](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>관련 항목  
+ [임무](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)

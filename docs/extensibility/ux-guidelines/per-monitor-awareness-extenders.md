@@ -15,15 +15,15 @@ dev_langs:
 - CSharp
 - CPP
 ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69585378"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio extender에 대 한 모니터 당 인식 지원
 
-Visual Studio 2019 이전 버전에서는 모니터 당 DPI 인식 (PMA)이 아니라 DPI 인식 컨텍스트가 시스템 인식으로 설정 되었습니다. 시스템 인식에서를 실행 하면 Visual Studio에서 다양 한 크기 조정 요소를 사용 하는 모니터에서 렌더링 하거나 다양 한 표시 구성이 있는 컴퓨터 (예: 다른 컴퓨터)에 원격으로 렌더링 해야 할 때마다 Windows 크기 조정).
+Visual Studio 2019 이전 버전에서는 모니터 당 DPI 인식 (PMA)이 아니라 DPI 인식 컨텍스트가 시스템 인식으로 설정 되었습니다. 시스템 인식에서를 실행 하면 Visual Studio에서 다양 한 크기 조정 요소를 사용 하는 모니터에서 렌더링 하거나 다양 한 디스플레이 구성 (예: 다양 한 창 크기 조정)을 사용 하는 컴퓨터에 원격으로 렌더링 해야 할 때마다 시각적 환경 (예: 흐리게 표시)이 저하 됩니다.
 
 Visual Studio 2019의 DPI 인식 컨텍스트는 환경에서 지원할 때 PMA로 설정 되며, 단일 시스템 정의 구성이 아니라 호스팅된 디스플레이의 구성에 따라 Visual Studio를 렌더링할 수 있습니다. 궁극적으로 PMA 모드를 지 원하는 노출 영역에 대해 항상 선명한 UI로 변환 합니다.
 
@@ -126,7 +126,7 @@ UI 크기나 위치 (장치 단위로 저장 된 경우)가에 저장 된 것과
 ![올바른 부모로 동작의 스크린샷](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> 스레드 호스팅 동작 ( [Dpi_Hosting_Behavior 열거형](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)참조)을 설정 하 여이 동작을 변경할 수 있습니다.
+> 스레드 호스팅 동작을 설정 하 여이 동작을 변경할 수 있습니다 ( [Dpi_Hosting_Behavior 열거형](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)참조).
 
 따라서 지원 되지 않는 모드 간에 부모-자식 관계를 설정 하는 경우 실패 하 고 컨트롤이 나 창이 예상 대로 렌더링 되지 않을 수 있습니다.
 
@@ -168,7 +168,7 @@ PMA 관련 문제를 식별 하는 경우 고려해 야 할 여러 요인이 있
 
 ### <a name="replace-dpihelper-calls"></a>DpiHelper 호출 바꾸기
 
-대부분의 경우 PMA 모드에서 UI 문제를 수정 하면 관리 코드의 호출을 구축으로 대체 하 여 새 *에 대 한 호출을 통해 관리 코드의 호출을 이전 VisualStudio. VisualStudio* 도우미 클래스입니다. 
+대부분의 경우 PMA 모드에서 UI 문제를 수정 하면 관리 코드의 호출을 구축으로 대체 하 여 새 *VisualStudio* 클래스에 대 한 호출을 사용 하 여 관리 코드의 호출을 이전 *VisualStudio* 및 *VisualStudio* 로 바꿀 수 있습니다. 
 
 ```cs
 // Remove this kind of use:
@@ -178,7 +178,7 @@ Point deviceTopLeft = new Point(window.Left, window.Top).LogicalToDeviceUnits();
 Point deviceTopLeft = window.LogicalToDevicePoint(new Point(window.Left, window.Top));
 ```
 
-네이티브 코드의 경우 이전 Vsui:: CDpiHelper 클래스에 대 한 호출을 새 *Vsui:: Cdpihelper* class에 대 한 호출로 바꾸는 것이 적절 합니다. 
+네이티브 코드의 경우 이전 Vsui:: *CDpiHelper* 클래스에 대 한 호출을 새 *Vsui:: cdpihelper* class에 대 한 호출로 바꾸는 것이 적절 합니다. 
 
 ```cpp
 // Remove this kind of use:
@@ -211,7 +211,7 @@ Windows 기본 동작 때문에 다른 DpiAwarenessContexts를 사용 하 여 wi
 주 메시징 루프 또는 이벤트 체인의 일부로 발생 하는 대부분의 UI 계산 작업은 올바른 DPI 인식 컨텍스트에서 이미 실행 되 고 있어야 합니다. 그러나 이러한 주 워크플로 외부에서 좌표 또는 크기 조정 계산이 수행 된 경우 (예: 유휴 시간 작업 중 또는 UI 스레드 외부에서) 현재 DPI 인식 컨텍스트가 잘못 되어 UI 잘못 배치 또는 잘못 된 크기 조정 문제를 발생 시킬 수 있습니다. UI 작업에 대 한 올바른 상태에 스레드를 배치 하면 일반적으로 문제가 해결 됩니다.
  
 #### <a name="opt-out-of-clmm"></a>CLMM 옵트아웃 (Opt out)
-PMA를 완전히 지원 하기 위해 비 WPF 도구 창이 마이그레이션되는 경우에는 CLMM를 옵트아웃 해야 합니다. 이렇게 하려면 새 인터페이스를 구현 해야 합니다. IVsDpiAware.
+PMA를 완전히 지원 하기 위해 비 WPF 도구 창이 마이그레이션되는 경우에는 CLMM를 옵트아웃 해야 합니다. 이렇게 하려면 새 인터페이스를 구현 해야 합니다. IVsDpiAware 수 있습니다.
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -230,9 +230,9 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-관리 되는 언어의 경우이 인터페이스를 구현 하는 가장 좋은 방법은 VisualStudio에서 파생 되는 동일한 클래스에 있는 것입니다. *ToolWindowPane*. 의 C++경우이 인터페이스를 구현 하는 가장 좋은 방법은 vsshell. h에서 *IVsWindowPane* 을 구현 하는 동일한 클래스에 있는 것입니다.
+관리 되는 언어의 경우이 인터페이스를 구현 하는 가장 좋은 방법은 VisualStudio에서 파생 되는 동일한 클래스에 있는 것입니다. *ToolWindowPane*. C + +의 경우이 인터페이스를 구현 하는 가장 좋은 방법은 vsshell. h에서 *IVsWindowPane* 을 구현 하는 동일한 클래스에 있는 것입니다.
 
-인터페이스의 Mode 속성에서 반환 되는 값은 __VSDPIMODE (관리 되는의 uint로 캐스트)입니다.
+인터페이스에서 Mode 속성에 의해 반환 되는 값은 __VSDPIMODE (관리 되는의 uint로 캐스트)입니다.
 
 ```cs
 enum __VSDPIMODE

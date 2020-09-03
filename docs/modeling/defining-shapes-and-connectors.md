@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589671"
 ---
 # <a name="define-shapes-and-connectors"></a>모양 및 연결선 정의
 
 DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 데 사용할 수 있는 다양한 기본 모양 형식이 있습니다.
 
-## <a name="shapeTypes"></a>도형 및 연결선의 기본 형식
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 도형 및 연결선의 기본 형식
 
 DSL 다이어그램은 선 또는 *커넥터로*interlinked *셰이프* 컬렉션을 보여 줍니다. 이러한 모양에는 일반적으로 다음 사항이 적용됩니다(항상은 아님).
 
@@ -41,7 +41,7 @@ DSL 다이어그램은 선 또는 *커넥터로*interlinked *셰이프* 컬렉�
 |이미지 모양|이미지를 표시하는 모양입니다.|
 |포트 모양|다른 모양의 윤곽에 연결되는 작은 사각형입니다. 대개 구성 요소 모델에 사용됩니다.<br /><br /> 포트로 표시되는 모델 요소는 일반적으로 부모 모양으로 표시되는 요소 아래에 포함됩니다. 구성 요소 솔루션 템플릿에서 DSL을 만드는 경우를 예로 들 수 있습니다.<br /><br /> 기본적으로 포트 모양은 부모의 측면을 따라 슬라이드할 수 있습니다. 부울 규칙을 정의해 이 모양을 특정 위치로 제약할 수 있습니다.<br /><br /> 포트 모양을 매우 작고 투명하게 만들면 부모 모양의 표면에서 고정 연결점을 제공하는 데 사용할 수 있습니다.|
 |스윔 레인|스윔 레인은 다이어그램을 수평 또는 수직 세그먼트로 분할하며, 항상 다이어그램의 다른 모양 아래에 있습니다.<br /><br /> 일반적으로 스윔 레인 모델 요소의 부모는 모델 루트이고 자식은 다른 요소입니다. 예를 들어 작업 흐름 솔루션 템플릿에서 DSL을 만들 수 있습니다.|
-|연결선|모양 간에 그려지는 선은 보통 참조 관계를 나타냅니다. 연결선을 직선이나 직각선으로 만들고 여러 화살촉 형식을 사용하는 옵션을 설정할 수 있습니다.|
+|커넥터|모양 간에 그려지는 선은 보통 참조 관계를 나타냅니다. 연결선을 직선이나 직각선으로 만들고 여러 화살촉 형식을 사용하는 옵션을 설정할 수 있습니다.|
 
 ## <a name="shape-inheritance"></a>셰이프 상속
 

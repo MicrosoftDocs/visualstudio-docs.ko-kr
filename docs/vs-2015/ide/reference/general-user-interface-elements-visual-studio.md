@@ -1,5 +1,5 @@
 ---
-title: 일반 사용자 인터페이스 요소 | Microsoft Docs
+title: 일반 사용자 인터페이스 요소 | Microsoft 문서
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,17 +10,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff25c7b03f9287afe9b8070a656643d34d5ec478
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661240"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>일반 사용자 인터페이스 요소(Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 이 섹션에서는 IDE(통합 개발 환경)의 일부 사용자 인터페이스 요소에 대해 설명합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [호출 계층 구조](../../ide/reference/call-hierarchy.md) 코드의 호출자/호출 수신자 관계 집합을 나타냅니다.
 
  [코드 조각 선택](../../ide/reference/code-snippet-picker.md) 언어의 코드 조각 집합에서 코드 조각을 선택할 수 있습니다.
@@ -41,15 +41,15 @@ ms.locfileid: "72661240"
 
  [옵션, 텍스트 편집기, 기본 (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Visual Basic 파일에 대 한 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기, C/C++, 서식](../../ide/reference/options-text-editor-c-cpp-formatting.md) 지정을 통해 c 또는 C++ 파일에 대 한 서식 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기, C/c + +, 서식](../../ide/reference/options-text-editor-c-cpp-formatting.md) C 또는 c + + 파일에 대 한 서식 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기, C/C++, 고급](../../ide/reference/options-text-editor-c-cpp-advanced.md) 을 사용 하면 c 또는 C++ 파일에 대 한 고급 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기, C/c + +, 고급](../../ide/reference/options-text-editor-c-cpp-advanced.md) C 또는 c + + 파일에 대 한 고급 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기, C#서식](../../ide/reference/options-text-editor-csharp-formatting.md) 지정을 사용 하 여 파일에 대 C# 한 서식 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기, c #, 서식](../../ide/reference/options-text-editor-csharp-formatting.md) C # 파일에 대 한 서식 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기, C#고급](../../ide/reference/options-text-editor-csharp-advanced.md) 을 사용 하 여 파일에 대 한 C# 고급 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기, c #, 고급](../../ide/reference/options-text-editor-csharp-advanced.md) C # 파일에 대 한 고급 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기, C#intellisense](../../ide/reference/options-text-editor-csharp-intellisense.md) 를 사용 하 여 파일에 대 한 C# intellisense 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기, c #, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) C # 파일에 대 한 IntelliSense 옵션을 지정할 수 있습니다.
 
  [옵션, 텍스트 편집기, XAML, 서식](../../ide/reference/options-text-editor-xaml-formatting.md) XAML 파일에 대 한 서식 옵션을 지정할 수 있습니다.
 

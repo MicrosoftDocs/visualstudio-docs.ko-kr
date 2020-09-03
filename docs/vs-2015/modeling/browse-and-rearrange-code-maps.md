@@ -29,7 +29,7 @@ ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312121"
+ms.locfileid: "89316113"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>코드 맵 찾아보기 및 다시 정렬
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

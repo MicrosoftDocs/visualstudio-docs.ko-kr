@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a310de2e1fd754f16fd701f264f8d5ee8aac4166
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660940"
 ---
 # <a name="build-events-page-project-designer-c"></a>프로젝트 디자이너, 빌드 이벤트 페이지(C#)
@@ -41,7 +41,7 @@ ms.locfileid: "72660940"
  **빌드 후 이벤트 명령줄** 빌드가 종료된 후에 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 후 편집**을 클릭하여 **빌드 전 이벤트/빌드 후 이벤트 명령줄** 대화 상자를 표시합니다.
 
 > [!NOTE]
-> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
+> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
 
  **빌드 후 이벤트 실행** 다음 표에 나와 있는 것처럼 실행할 빌드 후 이벤트에 대한 다음 조건을 지정합니다.
 
@@ -51,5 +51,5 @@ ms.locfileid: "72660940"
 |**빌드가 성공한 경우**|빌드에 성공하면 빌드 후 이벤트가 실행됩니다. 따라서 이벤트는 빌드가 성공하는 한 최신 프로젝트에도 실행됩니다.|
 |**빌드에서 프로젝트 출력을 업데이트한 경우**|컴파일러의 출력 파일(.exe 또는.dll)이 이전 컴파일러 출력 파일과 다른 경우에만 빌드 후 이벤트가 실행됩니다. 따라서 프로젝트가 최신 상태이면 빌드 후 이벤트가 실행되지 않습니다.|
 
-## <a name="see-also"></a>관련 항목:
- [방법: 빌드 이벤트 (Visual Basic) ](../../ide/how-to-specify-build-events-visual-basic.md) [How를 지정 합니다. 빌드 이벤트 지정 (C#) ](../../ide/how-to-specify-build-events-csharp.md) [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md) [컴파일 및 빌드](../../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 빌드 이벤트 지정 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [방법: 빌드 이벤트 지정 (c #)](../../ide/how-to-specify-build-events-csharp.md) [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md) [컴파일 및 빌드](../../ide/compiling-and-building-in-visual-studio.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419716d750771908a43318d051cb0b4681d35149
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660990"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -57,5 +57,5 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio Devenv에서 프로젝트 및 솔루션 빌드 및 정리](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv.exe](../../ide/reference/rebuild-devenv-exe.md) ) [/Clean (](../../ide/reference/clean-devenv-exe.md) devenv.exe) [/out (devenv.exe](../../ide/reference/out-devenv-exe.md) )
+## <a name="see-also"></a>관련 항목
+ [Visual Studio Devenv에서 프로젝트 및 솔루션 빌드 및 정리](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

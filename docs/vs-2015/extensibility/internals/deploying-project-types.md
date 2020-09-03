@@ -12,19 +12,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0fda84d5f7467a65b254d3b12b0466b6ab415d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196873"
 ---
 # <a name="deploying-project-types"></a>프로젝트 형식 배포
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 새 프로젝트 형식 aggregator (ProjectAggregator2.dll) 및 재배포 (ProjectAggregator2.msi)에 대 한 Windows Installer 패키지를 설치합니다. 관리 코드 프로젝트 형식에 대해 새 집계가 사용 해야 합니다. ProjectAggregator2 작동 방법 제한 된 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] aggregator 관리 코드 프로젝트 형식을 올바르게 작동 하지 못하도록 하는 프로젝트입니다. 다음 단계를 새 집계를 사용 하 여 VSPackage를 변경 하는 방법에 설명 합니다.  
+[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 새 ProjectAggregator2.dll (프로젝트 형식 집계)와 재배포할 Windows Installer 패키지 (ProjectAggregator2.msi)를 설치 합니다. 관리 코드 프로젝트 형식에 새 집계를 사용 해야 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]관리 코드 프로젝트 형식이 제대로 작동 하는 것을 방지 하는 프로젝트 집계의 ProjectAggregator2의 해결 방법에 대해 알아봅니다. 다음 단계에서는 새 집계를 사용 하도록 VSPackage를 변경 하는 방법을 설명 합니다.  
   
 1. 솔루션에서 NativeHierarchyWrapper 프로젝트를 제거 합니다.  
   
 2. 설치 프로그램에서 NativeHierarchyWrapper 이진 파일을 제거 합니다.  
   
-3. ProjectAggregator2.msi 설치에 추가 합니다.
+3. 설정에 ProjectAggregator2.msi를 추가 합니다.

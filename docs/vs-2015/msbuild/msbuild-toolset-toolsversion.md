@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf22fdf3d0cd9196794aa3929e9952f57bbfa2f0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871993"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
@@ -38,7 +38,7 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 
  `ToolsVersion` 값이 프로젝트 파일에 정의되면 MSBuild는 해당 값을 사용하여 프로젝트에 사용 가능한 도구 집합 속성의 값을 확인합니다. 도구 집합 속성 하나는 `$(MSBuildToolsPath)`이며, 이 속성은 .NET Framework 도구의 경로를 지정합니다. 이 도구 집합 속성(또는 `$(MSBuildBinPath)`)만 필수입니다.
 
- Visual Studio 2013부터 MSBuild 도구 집합 버전은 Visual Studio 버전 번호와 동일합니다. MSBuild는 프로젝트 파일에 지정된 도구 집합 버전과 관계없이 Visual Studio 내에서와 명령줄에서 기본값인 이 도구 집합으로 설정됩니다.  /ToolsVersion 플래그를 사용하여 이 동작을 재정의할 수 있습니다. 자세한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.
+ Visual Studio 2013부터 MSBuild 도구 집합 버전은 Visual Studio 버전 번호와 동일합니다. MSBuild는 프로젝트 파일에 지정된 도구 집합 버전과 관계없이 Visual Studio 내에서와 명령줄에서 기본값인 이 도구 집합으로 설정됩니다.  /ToolsVersion 플래그를 사용하여 이 동작을 재정의할 수 있습니다. 자세한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조 하세요.
 
  다음 예제에서 MSBuild는 예약된 속성 `MSBuildToolsPath`를 사용하여 Microsoft.CSharp.targets 파일을 찾습니다.
 
@@ -46,9 +46,9 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- 사용자 지정 도구 집합을 정의하여 `MSBuildToolsPath`의 값을 수정할 수 있습니다. 자세한 내용은 [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)을 참조하세요.
+ 사용자 지정 도구 집합을 정의하여 `MSBuildToolsPath`의 값을 수정할 수 있습니다. 자세한 내용은 [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md) 을 참조 하세요.
 
- 명령줄에서 솔루션을 빌드하고 msbuild.exe에 대해 `ToolsVersion`을 지정하면 솔루션의 각 프로젝트에서 자체 `ToolsVersion`을 지정하더라도 모든 프로젝트 및 해당 프로젝트 간 종속성이 해당 `ToolsVersion`에 따라 빌드됩니다. 프로젝트별로 `ToolsVersion` 값을 정의하려면 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.
+ 명령줄에서 솔루션을 빌드하고 msbuild.exe에 대해 `ToolsVersion`을 지정하면 솔루션의 각 프로젝트에서 자체 `ToolsVersion`을 지정하더라도 모든 프로젝트 및 해당 프로젝트 간 종속성이 해당 `ToolsVersion`에 따라 빌드됩니다. 프로젝트별로 값을 정의 하려면 `ToolsVersion` [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조 하세요.
 
  `ToolsVersion` 특성은 프로젝트 마이그레이션에도 사용됩니다. 예를 들어, Visual Studio 2010에서 Visual Studio 2008 프로젝트를 열면 프로젝트 파일이 ToolsVersion=”4.0”을 포함하도록 업데이트됩니다. 그런 다음 Visual Studio 2008에서 해당 프로젝트를 열려고 하면 업그레이드된 `ToolsVersion`이 인식되지 않으므로 이 특성이 여전히 3.5로 설정된 것처럼 프로젝트가 빌드됩니다.
 
@@ -71,7 +71,7 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper> 메서드 사용
 
-  도구 집합 속성은 도구의 경로를 지정합니다. MSBuild는 프로젝트 파일의 `ToolsVersion` 특성 값을 사용하여 해당 레지스트리 키를 찾은 다음 레지스트리 키의 정보를 사용하여 도구 집합 속성을 설정합니다. 예를 들어, `ToolsVersion`의 값이 `12.0`인 경우 MSBuild는 이 레지스트리 키에 따라 도구 세트 속성을 설정합니다. HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.
+  도구 집합 속성은 도구의 경로를 지정합니다. MSBuild는 프로젝트 파일의 `ToolsVersion` 특성 값을 사용하여 해당 레지스트리 키를 찾은 다음 레지스트리 키의 정보를 사용하여 도구 집합 속성을 설정합니다. 예를 들어, `ToolsVersion`의 값이 `12.0`인 경우 MSBuild는 HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0 레지스트리 키에 따라 도구 집합 속성을 설정합니다.
 
   다음은 도구 집합 속성입니다.
 
@@ -91,7 +91,7 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>은 일반적으로 관리되는 도구 폴더에 있는 파일의 경로를 반환합니다.
 
-- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) 는 빌드 도구의 경로를 반환 합니다.
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121))는 빌드 도구의 경로를 반환합니다.
 
 ### <a name="sub-toolsets"></a>하위 도구 집합
  이 항목의 앞부분에서 설명한 것처럼, MSBuild는 레지스트리 키를 사용하여 기본 도구의 경로를 지정합니다. 키에 하위 키가 포함된 경우 MSBuild는 하위 키를 사용하여 추가 도구가 포함되어 있는 하위 도구 집합의 경로를 지정합니다. 이 경우 도구 집합은 두 키 모두에 정의되어 있는 속성 정의를 결합하여 정의됩니다.
@@ -115,7 +115,7 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 
   하위 도구 집합은 .NET Framework 4.5에서 도입되었습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>추가 정보
 
 - [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)
 - [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)

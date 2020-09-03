@@ -1,5 +1,5 @@
 ---
-title: 메시지 열거자 | 마이크로 소프트 문서
+title: 메시지 열거자 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702502"
 ---
 # <a name="message-enumerator"></a>메시지 열거자
-다음 플래그는 IDE가 `TEXTOUTPROC` [SccOpenProject를](../extensibility/sccopenproject-function.md) 호출할 때 제공하는 콜백 함수인 함수에 사용됩니다(콜백 함수에 대한 자세한 내용은 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 참조).
+다음 플래그는 함수에 사용 됩니다 `TEXTOUTPROC` .이 함수는 IDE에서 [Sccopenproject](../extensibility/sccopenproject-function.md) 를 호출할 때 제공 하는 콜백 함수입니다 (콜백 함수에 대 한 자세한 내용은 [lptextoutproc](../extensibility/lptextoutproc.md) 참조).
 
- IDE가 프로세스를 취소하라는 메시지가 지정되면 취소 메시지 중 하나가 나타날 수 있습니다. 이 경우 소스 제어 플러그인은 `SCC_MSG_STARTCANCEL` IDE에 **취소** 단추를 표시하도록 요청하는 데 사용합니다. 이 후에는 모든 일반 메시지 집합을 보낼 수 있습니다. 이러한 반환 `SCC_MSG_RTN_CANCEL`중 어느 한 개가 있으면 플러그인이 작업을 종료하고 반환합니다. 또한 플러그인은 사용자가 `SCC_MSG_DOCANCEL` 작업을 취소했는지 확인하기 위해 주기적으로 폴링을 수행합니다. 모든 작업이 완료되거나 사용자가 취소한 경우 플러그인이 전송됩니다. `SCC_MSG_STOPCANCEL` SCC_MSG_WARNING `SCC_MSG_INFO`및 SCC_MSG_ERROR 유형은 메시지 스크롤 목록에 표시되는 메시지에 사용됩니다. `SCC_MSG_STATUS`은 텍스트가 상태 표시줄 또는 임시 표시 영역에 표시되어야 한다는 것을 나타내는 특수 형식입니다. 목록에 영구적으로 남아 있지 않습니다.
+ 프로세스를 취소 하 라는 메시지가 IDE에 표시 되 면 취소 메시지 중 하나가 표시 될 수 있습니다. 이 경우 소스 제어 플러그 인은를 사용 하 여 `SCC_MSG_STARTCANCEL` IDE에 **취소** 단추를 표시 하도록 요청 합니다. 그러면 모든 일반 메시지 집합이 전송 될 수 있습니다. 이러한 값이 반환 되 면 플러그 인이 `SCC_MSG_RTN_CANCEL` 작업을 종료 하 고를 반환 합니다. 또한 플러그 인은 `SCC_MSG_DOCANCEL` 사용자가 작업을 취소 했는지 여부를 주기적으로 폴링합니다. 모든 작업이 완료 되거나 사용자가 취소 한 경우 플러그 인은를 보냅니다 `SCC_MSG_STOPCANCEL` . `SCC_MSG_INFO`, SCC_MSG_WARNING 및 SCC_MSG_ERROR 유형은 메시지의 스크롤 목록에 표시 되는 메시지에 사용 됩니다. `SCC_MSG_STATUS` 는 상태 표시줄이 나 임시 표시 영역에 텍스트가 표시 되어야 함을 나타내는 특수 한 형식입니다. 목록에서 영구적으로 유지 되지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,24 +40,24 @@ enum { 
 ```
 
 ## <a name="members"></a>멤버
- SCC_MSG_RTN_CANCEL 콜백에서 취소를 나타내기 위해 반환합니다.
+ 콜백에서 반환 SCC_MSG_RTN_CANCEL 취소를 표시 합니다.
 
- SCC_MSG_RTN_OK 콜백에서 계속합니다.
+ 계속 하려면 콜백에서 반환 SCC_MSG_RTN_OK.
 
- SCC_MSG_INFO 메시지는 정보입니다.
+ SCC_MSG_INFO 메시지는 정보 제공 용입니다.
 
  SCC_MSG_WARNING 메시지는 경고입니다.
 
  SCC_MSG_ERROR 메시지는 오류입니다.
 
- SCC_MSG_STATUS 메시지는 상태 표시줄에 대한 것입니다.
+ SCC_MSG_STATUS 메시지는 상태 표시줄에 대 한 것입니다.
 
- SCC_MSG_DOCANCEL 텍스트 없음; IDE `SCC_MSG_RTN_OK` 반환 `SCC_MSG_RTN_CANCEL`또는 .
+ 텍스트를 SCC_MSG_DOCANCEL 하지 않습니다. IDE는 `SCC_MSG_RTN_OK` 또는 `SCC_MSG_RTN_CANCEL` 를 반환 합니다.
 
- SCC_MSG_STARTCANCEL 취소 루프를 시작합니다.
+ SCC_MSG_STARTCANCEL 취소 루프를 시작 합니다.
 
- SCC_MSG_STOPCANCEL 취소 루프를 중지합니다.
+ SCC_MSG_STOPCANCEL 취소 루프를 중지 합니다.
 
-## <a name="see-also"></a>참조
-- [소스 제어 플러그인](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>추가 정보
+- [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

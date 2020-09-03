@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255998"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office 문서에서 동적 컨트롤 유지
@@ -51,7 +51,7 @@ ms.locfileid: "71255998"
 
 사용자가 문서를 열 때마다 기존 네이티브 컨트롤 대신 동적 호스트 컨트롤을 다시 만들 수 있습니다. 문서를 열 때 이런 방식으로 호스트 컨트롤을 만들면 사용자가 예상하는 환경이 시뮬레이트됩니다.
 
-Word 용 호스트 컨트롤이 나 <xref:Microsoft.Office.Tools.Excel.NamedRange> Excel <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> `Add` <xref:Microsoft.Office.Tools.Excel.ListObject> <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> 용 또는 호스트 컨트롤을 다시 만들려면 *컨트롤 클래스*> 또는 개체의 메서드를 사용 합니다.\< 네이티브 Office 개체에 대한 매개 변수가 있는 메서드를 사용합니다.
+Word 용 호스트 컨트롤 또는 <xref:Microsoft.Office.Tools.Excel.NamedRange> Excel 용 또는 호스트 컨트롤을 다시 만들려면 <xref:Microsoft.Office.Tools.Excel.ListObject> `Add` \<*control class*> 또는 개체의 메서드를 사용 <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> 합니다. 네이티브 Office 개체에 대한 매개 변수가 있는 메서드를 사용합니다.
 
 예를 들어 문서를 열 때 기존 네이티브 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 에서 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> 호스트 컨트롤을 만들려는 경우 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> 메서드를 사용하고 기존 <xref:Microsoft.Office.Interop.Excel.ListObject>를 전달합니다. 다음 코드 예제에서는 Excel용 문서 수준 프로젝트에서 이 과정을 보여 줍니다. 코드는 <xref:Microsoft.Office.Tools.Excel.ListObject> 클래스의 <xref:Microsoft.Office.Interop.Excel.ListObject> 라는 기존 `MyListObject` 를 기반으로 하는 동적 `Sheet1` 를 다시 만듭니다.
 
@@ -60,9 +60,9 @@ Word 용 호스트 컨트롤이 나 <xref:Microsoft.Office.Tools.Excel.NamedRang
 
 ### <a name="re-create-chart"></a>차트 다시 만들기
 
-<xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> 호스트 컨트롤을 다시 만들려면 먼저 네이티브 <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>를 삭제 한 다음 메서드를 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> 사용 하 여를 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> 다시 만들어야 합니다. `Add` \< 기존<xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>을 기반으로 새을 만들 수 있도록 하는 컨트롤 클래스 > 메서드가 없습니다. <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>
+호스트 컨트롤을 다시 만들려면 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> 먼저 네이티브를 삭제 한 <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> 다음 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> 메서드를 사용 하 여를 다시 만들어야 합니다 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> . `Add` \<*control class*> 기존을 기반으로 새을 만들 수 있는 메서드는 없습니다 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> .
 
-네이티브 <xref:Microsoft.Office.Interop.Excel.Chart>를 먼저 삭제 하지 않으면를 다시 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>만들 때 두 번째 중복 차트를 만듭니다.
+네이티브를 먼저 삭제 하지 않으면를 <xref:Microsoft.Office.Interop.Excel.Chart> 다시 만들 때 두 번째 중복 차트를 만듭니다 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> .
 
 ## <a name="persist-windows-forms-controls-in-documents"></a>문서의 Windows Forms 컨트롤 유지
 
@@ -78,9 +78,9 @@ VSTO 추가 기능에서는 컨트롤이 제거되지만 ActiveX 래퍼가 문�
 
 1. 문서를 저장하거나 닫을 때 컨트롤의 크기, 위치 및 상태에 대한 정보를 저장합니다. 문서 수준 사용자 지정에서 문서의 데이터 캐시에 데이터를 저장할 수 있습니다. VSTO 추가 기능에서 문서의 사용자 지정 XML 부분에 데이터를 저장할 수 있습니다.
 
-2. 문서를 열 때 발생하는 이벤트에서 컨트롤을 다시 만듭니다. 문서 수준 프로젝트에서는 `Sheet`*n*`_Startup` 또는 `ThisDocument_Startup` 이벤트 처리기에서 이 작업을 수행할 수 있습니다. VSTO 추가 기능 프로젝트에서는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> 또는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 이벤트에 대한 이벤트 처리기에서 이 작업을 수행할 수 있습니다.
+2. 문서를 열 때 발생하는 이벤트에서 컨트롤을 다시 만듭니다. 문서 수준 프로젝트에서는 `Sheet` *n* `_Startup` 또는 이벤트 처리기에서이 작업을 수행할 수 있습니다 `ThisDocument_Startup` . VSTO 추가 기능 프로젝트에서는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> 또는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 이벤트에 대한 이벤트 처리기에서 이 작업을 수행할 수 있습니다.
 
-### <a name="removingActiveX"></a>추가 기능에서 ActiveX 래퍼 제거
+### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> 추가 기능에서 ActiveX 래퍼 제거
 
 VSTO 추가 기능을 사용 하 여 문서에 동적 Windows Forms 컨트롤을 추가 하는 경우 다음과 같은 방법으로 다음에 열 때 컨트롤에 대 한 ActiveX 래퍼가 문서에 표시 되지 않도록 방지할 수 있습니다.
 
@@ -95,9 +95,9 @@ VSTO 추가 기능을 사용 하 여 문서에 동적 Windows Forms 컨트롤을
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
-`GetVstoObject` 메서드는 주로 런타임에 새 호스트 항목을 생성하는 데 사용되지만 특정 문서에 대해 이 메서드를 처음 호출하면 문서에서 모든 ActiveX 래퍼가 지워집니다. `GetVstoObject` 메서드를 사용 하는 방법에 대 한 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
+메서드는 `GetVstoObject` 런타임에 새 호스트 항목을 생성 하는 데 주로 사용 되지만,이 메서드는 특정 문서에 대해 처음 호출 될 때 문서에서 모든 ActiveX 래퍼를 지웁니다. 메서드를 사용 하는 방법에 대 한 자세한 내용은 `GetVstoObject` [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
-문서를 열 때 vsto 추가 기능에서 동적 컨트롤을 만드는 경우 vsto 추가 기능에서는 이미 컨트롤을 만드는 프로세스의 일부로 `GetVstoObject` 메서드를 호출 합니다. 이 시나리오에서는 ActiveX 래퍼를 제거하기 위해 `GetVstoObject` 메서드에 대한 별도 호출을 추가할 필요가 없습니다.
+문서를 열 때 VSTO 추가 기능에서 동적 컨트롤을 만드는 경우 VSTO 추가 기능에서는 이미 `GetVstoObject` 컨트롤을 만드는 프로세스의 일부로 메서드를 호출 합니다. 이 시나리오에서는 ActiveX 래퍼를 제거하기 위해 `GetVstoObject` 메서드에 대한 별도 호출을 추가할 필요가 없습니다.
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>문서를 닫기 전에 동적 컨트롤 제거
 
@@ -108,6 +108,6 @@ VSTO 추가 기능을 사용 하 여 문서에 동적 Windows Forms 컨트롤을
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

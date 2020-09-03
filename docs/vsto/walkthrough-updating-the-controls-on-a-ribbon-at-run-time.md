@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255342"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>연습: 런타임에 리본 메뉴의 컨트롤 업데이트
@@ -45,9 +45,9 @@ ms.locfileid: "71255342"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
-이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -59,13 +59,13 @@ ms.locfileid: "71255342"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>새 Outlook VSTO 추가 기능 프로젝트를 만들려면
 
-1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]이름이 **Ribbon_Update_At_Runtime**인 Outlook VSTO 추가 기능 프로젝트를 만듭니다.
+1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Ribbon_Update_At_Runtime**이름으로 Outlook VSTO 추가 기능 프로젝트를 만듭니다.
 
 2. **새 프로젝트** 대화 상자에서 **솔루션용 디렉터리 만들기**를 선택합니다.
 
 3. 기본 프로젝트 디렉터리에 프로젝트를 저장합니다.
 
-     자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
 ## <a name="design-a-custom-ribbon-group"></a>사용자 지정 리본 그룹 디자인
 
@@ -83,7 +83,7 @@ ms.locfileid: "71255342"
 
 4. 리본 디자이너를 클릭하여 선택합니다.
 
-5. **속성** 창에서 RibbonType 속성 옆에 있는 드롭다운 화살표를 클릭 한 다음 **를 클릭 합니다.**
+5. **속성** 창에서 RibbonType 속성 옆에 있는 드롭다운 화살표를 클릭 한 다음 **RibbonType** **를 클릭 합니다.**
 
      이렇게 하면 사용자가 Outlook에서 새 메일 메시지를 작성할 때 리본이 표시 됩니다.
 
@@ -153,9 +153,9 @@ ms.locfileid: "71255342"
 
     2. **주문 정보**
 
-    3. **주문과**
+    3. **Orders**
 
-    4. **상품**
+    4. **제품**
 
 9. **마침**을 클릭합니다.
 
@@ -188,7 +188,7 @@ ms.locfileid: "71255342"
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
 
-6. `CustomerRibbon` 클래스 내에 다음 코드를 추가 합니다. 이 코드는 Northwind 데이터베이스의 Customer, Orders, Order Details 및 Product 테이블 정보를 저장하는 데 사용할 데이터 테이블 및 테이블 어댑터를 선언합니다.
+6. 클래스 내에 다음 코드를 추가 `CustomerRibbon` 합니다. 이 코드는 Northwind 데이터베이스의 Customer, Orders, Order Details 및 Product 테이블 정보를 저장하는 데 사용할 데이터 테이블 및 테이블 어댑터를 선언합니다.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
@@ -291,7 +291,7 @@ Outlook에서 새 메일 양식을 열면 리본 메뉴의 **메시지** 탭에 
 
 - 문서 수준 사용자 지정에 컨텍스트 기반 UI를 추가합니다. 자세한 내용은 [작업 창 개요](../vsto/actions-pane-overview.md)를 참조 하세요.
 
-- 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 자세한 내용은 [연습: Outlook 양식 영역](../vsto/walkthrough-designing-an-outlook-form-region.md)을 디자인 합니다.
+- 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 자세한 내용은 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)을 참조 하세요.
 
 - Outlook에 사용자 지정 작업창을 추가합니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
@@ -305,7 +305,7 @@ Outlook에서 새 메일 양식을 열면 리본 메뉴의 **메시지** 탭에 
 - [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [리본 개체 모델 개요](../vsto/ribbon-object-model-overview.md)
 - [Outlook에 대 한 리본 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)
-- [방법: 리본에서 탭의 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [방법: 리본의 탭 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)
 - [방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)

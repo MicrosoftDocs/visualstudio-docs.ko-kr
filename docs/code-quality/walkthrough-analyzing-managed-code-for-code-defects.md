@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72535695"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>연습: 정적 코드 분석을 사용 하 여 코드 오류 찾기
@@ -93,25 +93,25 @@ ms.locfileid: "72535695"
 
 1. 다음 팁을 사용 하 여 경고를 수정 하십시오.
 
-   [CA1014: CLSCompliantAttribute를 사용 하 여 어셈블리 표시](../code-quality/ca1014.md): AssemblyInfo.cs 파일의 끝에 코드 `[assembly: CLSCompliant(true)]`를 추가 합니다.
+   [CA1014: CLSCompliantAttribute를 사용 하 여 어셈블리 표시](../code-quality/ca1014.md): `[assembly: CLSCompliant(true)]` AssemblyInfo.cs 파일의 끝에 코드를 추가 합니다.
 
-   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): 생성자 `public demo (String s) : base(s) { }`을 클래스 `demo`에 추가 합니다.
+   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): 클래스에 생성자를 추가 `public demo (String s) : base(s) { }` `demo` 합니다.
 
-   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): 생성자 `public demo (String s, Exception e) : base(s, e) { }`을 클래스 `demo`에 추가 합니다.
+   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): 클래스에 생성자를 추가 `public demo (String s, Exception e) : base(s, e) { }` `demo` 합니다.
 
-   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): 클래스 데모에 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` 생성자를 추가 합니다. @No__t_1에 대 한 `using` 문도 추가 해야 합니다.
+   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` 클래스 데모에 생성자를 추가 합니다. 또한 `using` 에 대 한 문을 추가 해야 <xref:System.Runtime.Serialization?displayProperty=fullName> 합니다.
 
-   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): 생성자 `public demo () : base() { }`을 클래스 `demo`에 추가 합니다.
+   [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032.md): 클래스에 생성자를 추가 `public demo () : base() { }` `demo` 합니다.
 
-   [CA1709: 식별자](../code-quality/ca1709.md)의 대/소문자를 올바르게 지정 해야 합니다. 네임 스페이스 `testCode`의 대/소문자를 `TestCode` 변경 합니다.
+   [CA1709: 식별자](../code-quality/ca1709.md)의 대/소문자를 올바르게 지정 해야 합니다. 네임 스페이스의 대/소문자를로 변경 합니다 `testCode` `TestCode` .
 
-   [CA1709: 식별자](../code-quality/ca1709.md)의 대/소문자를 올바르게 지정 해야 합니다. 멤버의 이름을 `Demo`로 변경 합니다.
+   [CA1709: 식별자](../code-quality/ca1709.md)의 대/소문자를 올바르게 지정 해야 합니다. 멤버의 `Demo` 이름을로 변경 합니다.
 
-   [CA1709: 식별자](../code-quality/ca1709.md)의 대/소문자를 올바르게 지정 해야 합니다. 멤버의 이름을 `Item`로 변경 합니다.
+   [CA1709: 식별자](../code-quality/ca1709.md)의 대/소문자를 올바르게 지정 해야 합니다. 멤버의 `Item` 이름을로 변경 합니다.
 
-   [CA1710: 식별자에 올바른 접미사가 있어야 합니다](../code-quality/ca1710.md). 클래스의 이름과 생성자를 `DemoException`로 변경 합니다.
+   [CA1710: 식별자에 올바른 접미사가 있어야](../code-quality/ca1710.md)합니다. 클래스 및 생성자의 이름을로 변경 합니다 `DemoException` .
 
-   [CA2237: ISerializable 형식을 SerializableAttribute로 표시](../code-quality/ca2237.md): 클래스 `demo`에 `[Serializable ()]` 특성을 추가 합니다.
+   [CA2237: ISerializable 형식을 SerializableAttribute로 표시](../code-quality/ca2237.md) `[Serializable ()]` 합니다. 특성을 클래스에 추가 `demo` 합니다.
 
    CA2210: 어셈블리에는 강력한 이름 키를 사용 하 여 ' CodeAnalysisManagedDemo ' 서명에 [올바른 강력한 이름을 사용 해야 합니다](../code-quality/ca2210.md).
 
@@ -123,7 +123,7 @@ ms.locfileid: "72535695"
 
    1. **어셈블리 서명** 확인란을 선택 합니다.
 
-   1. **문자열 이름 키 파일 선택** 목록에서 **\<new >** 를 선택 합니다.
+   1. **문자열 이름 키 파일 선택** 목록에서을 선택 **\<New>** 합니다.
 
       **강력한 이름 키 만들기** 대화 상자가 나타납니다.
 
@@ -164,12 +164,12 @@ ms.locfileid: "72535695"
 
     1. **오류 목록**에서 경고를 선택 합니다.
 
-    1. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)에서 비 표시 제거**파일에서** >  **표시 안 함**을 선택 합니다.
+    1. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)에서 비 **표시 표시 안 함 파일에서 표시 안 함**을 선택  >  **In Suppression File**합니다.
 
 1. 프로젝트를 다시 빌드합니다.
 
      프로젝트는 경고 또는 오류 없이 빌드됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-[관리 코드에 대 한 코드 분석](../code-quality/code-analysis-for-managed-code-overview.md)
+[관리 코드에 대한 코드 분석](../code-quality/code-analysis-for-managed-code-overview.md)

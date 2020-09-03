@@ -1,5 +1,5 @@
 ---
-title: 명령 창 | Microsoft Docs
+title: 명령 창 | Microsoft 문서
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c3bcac9f320840faaed32d0622f30e4cbd288ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660838"
 ---
 # <a name="command-window"></a>명령 창
@@ -47,7 +47,7 @@ ms.locfileid: "72660838"
 ## <a name="entering-commands"></a>명령 입력
  보다 큼 기호(`>`)는 명령 창의 왼쪽 가장자리에 새 줄 프롬프트로 표시됩니다. 위쪽 화살표 및 아래쪽 화살표 키를 사용해서 이전에 실행된 명령을 스크롤합니다.
 
-|작업|솔루션|예|
+|Task|해결 방법|예제|
 |----------|--------------|-------------|
 |식을 계산합니다.|식 앞에 물음표(`?`)를 추가합니다.|`? myvar`|
 |직접 실행 창으로 전환합니다.|`immed`를 보다 큼 기호(>) 없이 창에 입력합니다.|`immed`|
@@ -93,7 +93,7 @@ ms.locfileid: "72660838"
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
- 이 예제에서,
+ 이 예제에서는 다음이 적용됩니다.
 
 - `Edit.ReplaceInFiles`는 명령입니다.
 
@@ -122,7 +122,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다. 여기 표시된 예제는 “^t” 패턴을 검색하는 방법을 보여줍니다.
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>공백이 있는 경로 이름에 따옴표 사용
- 예를 들어 경로에 공백이 포함된 파일을 열려면 공백이 포함된 경로 또는 경로 세그먼트 주위에 큰따옴표를 넣어야 합니다(예: **C:\\"Program Files"** 또는 **"C:\Program Files"** ).
+ 예를 들어 경로에 공백이 포함된 파일을 열려면 공백이 포함된 경로 또는 경로 세그먼트 주위에 큰따옴표를 넣어야 합니다(예: **C:\\"Program Files"** 또는 **"C:\Program Files"**).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  Visual [Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md) [visual studio 명령](../../ide/reference/visual-studio-commands.md)
