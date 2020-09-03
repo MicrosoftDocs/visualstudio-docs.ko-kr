@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81876493d48407549237ed626fc6ec5d2175fcd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659602"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>스토어 앱의 Visual C# 코드 유닛 테스트
@@ -34,22 +34,22 @@ ms.locfileid: "72659602"
 >
 >   자세한 내용은 MSDN 라이브러리의 [단위 테스트를 사용하여 코드 확인](https://msdn.microsoft.com/library/dd264975.aspx)을 참조하세요.
 
-## <a name="BKMK_In_this_topic"></a> 항목 내용
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 항목 내용
  [솔루션 및 단위 테스트 프로젝트 만들기](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [테스트 탐색기에서 테스트가 실행되는지 확인](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [테스트 탐색기에서 테스트가 실행 되는지 확인](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
- [Maths 프로젝트에 Rooter 클래스 추가](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
+ [Maths 프로젝트에 Rooter 클래스를 추가 합니다.](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
 
- [응용 프로그램 프로젝트에 테스트 프로젝트 연결](#BKMK_Couple_the_test_project_to_the_app_project)
+ [응용 프로그램 프로젝트에 테스트 프로젝트 두 개](#BKMK_Couple_the_test_project_to_the_app_project)
 
- [반복적으로 테스트를 확장하고 통과하도록 만들기](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
+ [반복적으로 테스트를 확장 하 고 통과 하도록 만들기](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
- [실패한 테스트 디버그](#BKMK_Debug_a_failing_test)
+ [실패 한 테스트 디버그](#BKMK_Debug_a_failing_test)
 
  [코드 리팩터링](#BKMK_Refactor_the_code_)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> 솔루션 및 단위 테스트 프로젝트 만들기
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> 솔루션 및 단위 테스트 프로젝트 만들기
 
 1. **파일** 메뉴에서 **새로 만들기**를 선택하고 **새 프로젝트**를 선택합니다.
 
@@ -57,7 +57,7 @@ ms.locfileid: "72659602"
 
 3. 프로젝트의 이름을 `Maths`로 지정하고 **솔루션용 디렉터리 만들기**가 선택되어 있는지 확인합니다.
 
-4. 솔루션 탐색기에서 솔루션 이름을 선택하고 바로 가기 메뉴에서 **추가**를 선택한 다음 **새 프로젝트**를 선택합니다.
+4. 솔루션 탐색기에서 솔루션 이름을 선택 하 고 바로 가기 메뉴에서 **추가** 를 선택한 다음 **새 프로젝트**를 선택 합니다.
 
 5. **새 프로젝트** 대화 상자에서 **설치됨** 및 **Visual C#** 을 확장하고 **Windows 스토어**를 선택합니다. 그런 다음 프로젝트 템플릿 목록에서 **단위 테스트 라이브러리(Windows 스토어 앱)** 를 선택합니다.
 
@@ -87,7 +87,7 @@ ms.locfileid: "72659602"
 
     ```
 
-     다음 사항에 유의합니다.
+     다음 사항에 유의하십시오.
 
     1. 각 테스트는 `[TestMethod]`를 사용하여 정의됩니다. 테스트 메서드는 void를 반환해야 하고 매개 변수를 사용할 수 없습니다.
 
@@ -97,7 +97,7 @@ ms.locfileid: "72659602"
 
     3. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 MSDN 라이브러리의 [단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 멤버 사용](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)을 참조하세요.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> 테스트 탐색기에서 테스트가 실행되는지 확인
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> 테스트 탐색기에서 테스트가 실행되는지 확인
 
 1. **UnitTest1.cs** 파일의 `TestMethod1`에 테스트 코드를 삽입합니다.
 
@@ -119,9 +119,9 @@ ms.locfileid: "72659602"
 
      ![테스트 탐색기](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Maths 프로젝트에 Rooter 클래스 추가
+## <a name="add-the-rooter-class-to-the-maths-project"></a><a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Maths 프로젝트에 Rooter 클래스 추가
 
-1. 솔루션 탐색기에서 **Maths** 프로젝트 이름을 선택합니다. 바로 가기 메뉴에서 **추가**를 선택한 다음 **클래스**를 선택합니다.
+1. 솔루션 탐색기에서 **Maths** 프로젝트 이름을 선택 합니다. 바로 가기 메뉴에서 **추가**를 선택한 다음 **클래스**를 선택합니다.
 
 2. 클래스 파일의 이름을 `Rooter.cs`로 지정합니다.
 
@@ -145,15 +145,15 @@ ms.locfileid: "72659602"
 
 4. `SqareRoot` 메서드는 테스트 설정의 기본 구조를 테스트할 정도의 최소 구현일 뿐입니다.
 
-## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> 응용 프로그램 프로젝트에 테스트 프로젝트 연결
+## <a name="couple-the-test-project-to-the-app-project"></a><a name="BKMK_Couple_the_test_project_to_the_app_project"></a> 응용 프로그램 프로젝트에 테스트 프로젝트 연결
 
 1. Maths 응용 프로그램에 대한 참조를 RooterTests 프로젝트에 추가합니다.
 
-   1. 솔루션 탐색기에서 **RooterTests** 프로젝트를 선택한 다음 바로 가기 메뉴에서 **참조 추가...** 를 선택합니다.
+   1. 솔루션 탐색기에서 **RooterTests** 프로젝트를 선택 하 고 바로 가기 메뉴에서 **참조 추가** ...를 선택 합니다.
 
    2. **참조 추가 - RooterTests** 대화 상자에서 **솔루션**을 확장하고 **프로젝트**를 선택한 다음 **Maths** 항목을 선택합니다.
 
-        ![Maths 프로젝트에 대 한 참조 추가](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")
+        ![Maths 프로젝트에 참조 추가](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")
 
 2. using 문을 UnitTest1.cs 파일에 추가합니다.
 
@@ -165,7 +165,7 @@ ms.locfileid: "72659602"
        using Maths;
        ```
 
-3. Rooter 함수를 사용하는 테스트를 추가합니다. **UnitTest1.cpp**에 다음 코드를 추가합니다.
+3. Rooter 함수를 사용하는 테스트를 추가합니다. Unittest1.cpp에 다음 코드를 추가 **합니다**.
 
    ```csharp
    [TestMethod]
@@ -184,13 +184,13 @@ ms.locfileid: "72659602"
 
     새 테스트가 테스트 탐색기의 **실행하지 않은 테스트** 노드에 표시됩니다.
 
-5. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+5. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
     ![기본 테스트 통과](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
 
 1. 새 테스트 추가:
 
@@ -215,7 +215,7 @@ ms.locfileid: "72659602"
     >
     >  사용자가 요구 사항을 변경할 경우, 더 이상 올바르지 않은 테스트는 비활성화합니다. 새 테스트를 작성하고, 동일한 증분 방식으로 한 번에 하나씩 작동합니다.
 
-2. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
 3. 테스트가 실패합니다.
 
@@ -242,14 +242,14 @@ ms.locfileid: "72659602"
 
     ```
 
-5. 솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택합니다.
+5. 솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      이제 세 테스트가 모두 통과합니다.
 
 > [!TIP]
 > 한 번에 하나씩 테스트를 추가하여 코드를 개발합니다. 각 반복 후 모든 테스트가 통과하는지 확인합니다.
 
-## <a name="BKMK_Debug_a_failing_test"></a> 실패한 테스트 디버그
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> 실패한 테스트 디버그
 
 1. **UnitTest1.cs**
 
@@ -284,7 +284,7 @@ ms.locfileid: "72659602"
 
    ```
 
-2. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
     테스트가 실패합니다. 테스트 탐색기에서 테스트 이름을 선택합니다. 실패한 어설션이 강조 표시됩니다. 오류 메시지는 테스트 탐색기의 세부 정보 창에 표시됩니다.
 
@@ -310,13 +310,13 @@ ms.locfileid: "72659602"
 
        ```
 
-   1. 테스트 탐색기에서 **모두 실행**을 선택하여 수정된 메서드를 테스트하고 실패가 재발하지 않는지 확인합니다.
+   1. 테스트 탐색기에서 **모두 실행** 을 선택 하 여 수정 된 메서드를 테스트 하 고 회귀를 도입 하지 않았는지 확인 합니다.
 
    이제 모든 테스트가 통과합니다.
 
    ![모든 테스트 통과](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_"></a> 코드 리팩터링
+## <a name="refactor-the-code"></a><a name="BKMK_Refactor_the_code_"></a> 코드 리팩터링
  **SquareRoot 함수에서 중앙 계산을 간소화합니다.**
 
 1. 결과 구현을 변경합니다.

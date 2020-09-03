@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659458"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>백그라운드 스레드에서 UML 모델 업데이트
@@ -27,12 +27,12 @@ ms.locfileid: "72659458"
 
 - 일련의 변경 내용을 단일 트랜잭션으로 그룹화하는 경우 트랜잭션이 진행되는 동안 사용자가 모델을 편집할 수 없도록 하는 것이 좋습니다. 그렇지 않으면 사용자의 편집 내용이 모두 동일한 트랜잭션에 포함됩니다. 모달 대화 상자를 표시하여 사용자가 변경하지 못하도록 차단할 수 있습니다. 원하는 경우 대화 상자에 취소 단추를 제공할 수 있습니다. 변경 시 사용자가 변경 내용을 확인할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서는 백그라운드 스레드를 사용하여 모델에 대한 여러 가지 변경을 수행합니다. 대화 상자는 스레드가 실행되는 동안 사용자를 제외하는 데 사용됩니다. 이 간단한 예제에서는 대화 상자에 취소 단추가 제공되지 않습니다. 그러나 해당 기능을 쉽게 추가할 수 있습니다.
 
 #### <a name="to-run-the-example"></a>예제를 실행하려면
 
-1. C# [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)에 설명 된 대로 프로젝트에서 명령 처리기를 만듭니다.
+1. [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)에 설명 된 대로 c # 프로젝트에서 명령 처리기를 만듭니다.
 
 2. 프로젝트에 아래 어셈블리에 대한 참조가 포함되어 있는지 확인합니다.
 
@@ -187,5 +187,5 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 
  `uiThreadHolder.Invoke()`를 사용하여 UI 스레드에서 작업을 수행할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  모델링 [다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [모델링 다이어그램의 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)

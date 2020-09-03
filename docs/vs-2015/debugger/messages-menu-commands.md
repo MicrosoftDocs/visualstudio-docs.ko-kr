@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 689ae78a5409a37fa6251044172f9108f296235b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206113"
 ---
 # <a name="messages-menu-commands"></a>메시지 메뉴 명령
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-합니다 **메시지** 메뉴 메시지 뷰 제어 하기 위한 명령을 제공 합니다.  
+**메시지** 메뉴에는 메시지 뷰를 제어하는 명령이 있습니다.  
   
  **로깅 시작/중지**  
- 시작 하거나 메시지 보기를 중지 합니다.  
+ 메시지 뷰를 시작 하거나 중지 합니다.  
   
  **로깅 옵션**  
- 열립니다는 **메시지 옵션** 대화 상자에서 메시지 검색 조건을 지정할 수 있습니다.  
+ 메시지 검색 조건을 지정할 수 있는 **MessageOptions** 대화 상자를 엽니다.  
   
  **로그 지우기**  
- 현재 메시지 보기의 내용을 지웁니다.
+ 활성 메시지 뷰의 내용을 지웁니다.

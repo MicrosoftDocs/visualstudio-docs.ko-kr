@@ -13,51 +13,51 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6cc6a0ff332fd6feac72ce4abf38b5319e63c913
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161021"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 인터페이스를 열거 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조입니다.  
+이 인터페이스는 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조를 열거 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IEnumDebugFrameInfo2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 디버그 엔진 (DE)는 현재 호출 스택을 설명 하는 구조체의 목록을 제공 하기 위해이 인터페이스를 구현 합니다.  
+ DE (디버그 엔진)는이 인터페이스를 구현 하 여 현재 호출 스택을 설명 하는 구조체 목록을 제공 합니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- Visual Studio 호출 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 중단점 될 때마다이 인터페이스를 가져오려면 예외 또는 중단 발생 디버깅 중인 프로그램입니다.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ Visual Studio는 디버깅 중인 프로그램에서 중단점, 예외 또는 중단을 발생 시킬 때마다 [Enum프레임 정보](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 를 호출 하 여이 인터페이스를 가져옵니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IEnumDebugFrameInfo2`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugFrameInfo2` .  
   
-|메서드|Description|  
+|메서드|설명|  
 |------------|-----------------|  
-|[다음](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|지정된 된 수의 검색 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 열거형 시퀀스에는 구조입니다.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|지정 된 개수의 건너뜁니다 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 열거형 시퀀스에는 구조입니다.|  
-|[다시 설정](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|개수를 가져옵니다 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 열거자 구조입니다.|  
+|[다음](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|열거형 시퀀스에서 지정 된 수의 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조를 검색 합니다.|  
+|[skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|열거형 시퀀스에서 지정 된 수의 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조를 건너뜁니다.|  
+|[재설정](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|  
+|[복제](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|열거자의 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조 수를 가져옵니다.|  
   
 ## <a name="remarks"></a>설명  
- Visual Studio 중단점, 예외 또는 디버그 중인 프로그램에서 사용자 생성 일시 중지를 처리 하는 첫 번째 단계로이 인터페이스를 가져옵니다. 목록을 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조 현재 호출 스택을 나타냅니다, 목록 및 가장 오래 된 함수의 시작 부분에 현재 함수 호출 목록의 끝에서 호출 합니다. 각 `FRAMEINFO` 컨텍스트는 식을 계산할 수 있습니다 하 고 로컬 변수를 살펴 스택 프레임을 나타냅니다.  
+ Visual Studio는 디버깅 중인 프로그램에서 중단점, 예외 또는 사용자 생성 일시 중지를 처리 하기 위한 첫 번째 단계로이 인터페이스를 가져옵니다. [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조 목록은 현재 호출 스택을 나타내며 목록의 시작 부분에 현재 함수를 호출 하 고 목록의 끝에서 가장 오래 된 함수 호출을 사용 합니다. 각는 `FRAMEINFO` 스택 프레임, 식이 계산 될 수 있는 컨텍스트 및 지역 변수가 표시 되는 컨텍스트를 나타냅니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>관련 항목  
- [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
+ [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Enum프레임 정보](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

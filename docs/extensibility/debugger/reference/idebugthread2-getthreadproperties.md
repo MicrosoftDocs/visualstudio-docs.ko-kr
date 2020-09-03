@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::겟스레드프로퍼티 | 마이크로 소프트 문서
+title: 'IDebugThread2:: GetThreadProperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718695"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
-이 스레드를 설명하는 속성을 가져옵니다.
+이 스레드를 설명 하는 속성을 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,19 +43,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-【인】 채울 필드를 결정하는 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 열거형의 `ptp` 플래그 조합입니다.
+진행 에서 채울 필드를 결정 하는 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 열거형의 플래그 조합입니다 `ptp` .
 
 `ptp`\
-【인, 아웃】 스레드의 속성으로 채워진 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조입니다.
+[in, out] 스레드의 속성으로 채워진 [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
-이 메서드에서 반환된 정보는 일반적으로 **스레드** 디버그 창에 표시됩니다.
+이 메서드에서 반환 되는 정보는 일반적으로 **스레드** 디버그 창에 표시 됩니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 `CProgram` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 인터페이스를 구현 하는 간단한 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 IDebugThread2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
@@ -93,7 +93,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

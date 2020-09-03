@@ -1,5 +1,5 @@
 ---
-title: '&lt;일정&gt; 요소 (부트스트래퍼) | Microsoft Docs'
+title: '&lt;일정 &gt; 요소 (부트스트래퍼) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85ffab2272a55bfe77c5f2a73c6e25967a203c85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206100"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;일정&gt; 요소 (부트스트래퍼)
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;일정 &gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Schedules` 요소에 포함 되어 `Schedule` 특정 시간의 정의한 명령 정의 하는 요소는 `Command` 요소를 실행 해야 합니다.  
+요소에는 요소로 `Schedules` `Schedule` 정의 된 명령을 실행 해야 하는 특정 시간을 정의 하는 요소가 포함 되어 있습니다 `Command` .  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Schedules>  
@@ -43,28 +43,28 @@ ms.locfileid: "68206100"
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- 합니다 `Schedules` 요소인 자식은 `Product` 요소입니다. 각 `Product` 요소 하나만 있을 `Schedules` 요소입니다. `Schedules` 요소에는 특성이 없습니다.  
+ 요소는 `Schedules` 요소의 자식입니다 `Product` . 각 `Product` 요소에는 요소가 최대 하나만 있을 수 있습니다 `Schedules` . `Schedules` 요소에는 특성이 없습니다.  
   
-## <a name="schedule"></a>일정  
- 합니다 `Schedule` 요소인 자식은 `Schedules` 요소입니다. A `Schedules` 요소 하나 이상이 있어야 `Schedule` 요소입니다.  
+## <a name="schedule"></a>예약  
+ 요소는 `Schedule` 요소의 자식입니다 `Schedules` . 요소에는 `Schedules` 요소가 하나 이상 있어야 합니다 `Schedule` .  
   
- `Schedule` 다음과 같은 특성이 있습니다.  
+ `Schedule` 에는 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수 요소. 일정 항목의 이름입니다. 이에 해당 합니다 `ScheduleName` 의 속성을 `Command` 요소. 경우는 `Command` 명명 된 일정을 참조 하 여 지정한 시간에만 실행 된다는 것 `Schedule` 요소입니다. 일정와 연결 될 수도 합니다 `FailIf` 및 `BypassIf` 지정된 된 일정에서 실행 하려면 이러한 조건부 테스트를 제한 하는 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
+|`Name`|필수 요소. 일정 항목의 이름입니다. 이는 `ScheduleName` 요소의 속성에 해당 `Command` 합니다. 가 명명 된 일정을 참조 하는 경우 해당 `Command` 요소에 지정 된 시간에만 실행 됩니다 `Schedule` . 일정 `FailIf` `BypassIf` 은 지정 된 일정에 따라 이러한 조건부 테스트가 실행 되도록 제한 하는 및 요소와 연결 될 수도 있습니다. 자세한 내용은 [\<Commands> 요소](../deployment/commands-element-bootstrapper.md)를 참조하세요.|  
   
- 지정 된 `Schedule` 요소는 다음과 같은 자식이 하나만 있을 수 있습니다.  
+ 지정 된 `Schedule` 요소에는 다음 자식 중 하나만 있을 수 있습니다.  
   
 ## <a name="buildlist"></a>BuildList  
- `BuildList` 요소 설치 관리자를 부트스트래핑 응용 프로그램을 시작한 후에 즉시 명령을 실행 하도록 지시 합니다.  
+ `BuildList`요소는 부트스트래핑 응용 프로그램이 시작 된 직후에 명령을 실행 하도록 설치 관리자에 지시 합니다.  
   
 ## <a name="beforepackage"></a>BeforePackage  
- `BeforePackage` 요소 설치 관리자를 지정된 된 패키지를 설치 하기 전에 명령을 실행 하도록 지시 합니다.  
+ `BeforePackage`요소는 지정 된 패키지를 설치 하기 전에 설치 관리자에 게 명령을 실행 하도록 지시 합니다.  
   
 ## <a name="afterpackage"></a>AfterPackage  
- `AfterPackage` 요소 설치 관리자를 지정된 된 패키지를 설치한 후 명령을 실행 하도록 지시 합니다.  
+ `AfterPackage`요소는 지정 된 패키지가 설치 된 후 설치 관리자에 게 명령을 실행 하도록 지시 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [\<제품 > 요소](../deployment/product-element-bootstrapper.md)   
+## <a name="see-also"></a>관련 항목  
+ [\<Product> 요소인](../deployment/product-element-bootstrapper.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

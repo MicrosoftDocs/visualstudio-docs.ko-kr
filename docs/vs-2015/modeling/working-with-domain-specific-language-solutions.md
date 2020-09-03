@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3dfc40b8489e774572b5ac157ebdaec9c71ad5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659225"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>도메인별 언어 솔루션 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 솔루션을 사용 하 여 DSL (도메인별 언어)을 만듭니다. 이 섹션에서는 솔루션을 설정 하 고 사용자 지정 하는 방법을 설명 합니다.
+도메인 특정 언어 (DSL)는 솔루션을 사용 하 여 만듭니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 이 섹션에서는 솔루션을 설정 하 고 사용자 지정 하는 방법을 설명 합니다.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>섹션 내용
  [도메인별 언어 정보](../modeling/about-domain-specific-languages.md) Dsl을 개발 하는 방법과이를 적용 하는 방법을 설명 합니다.
 
  [도메인 특정 언어 도구 개요](../modeling/overview-of-domain-specific-language-tools.md) DSL을 개발 하 고 배포 하는 주요 작업에 대해 설명 합니다.

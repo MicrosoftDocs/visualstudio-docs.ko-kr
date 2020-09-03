@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetName | Microsoft Docs
+title: 'IDebugProgram2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c9873e7b179df5639c4f169811977c3f39e4415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148700"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
@@ -40,13 +40,13 @@ int GetName( 
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrName`  
- [out] 프로그램의 이름을 반환합니다.  
+ 제한이 프로그램의 이름을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에서 반환 된 이름은 항상 프로그램을 설명 하는 친숙 하 고 사용자 표시 이름이입니다.  
+ 이 메서드에서 반환 되는 이름은 항상 프로그램을 설명 하는 친숙 하 고 사용자가 표시할 수 있는 이름입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

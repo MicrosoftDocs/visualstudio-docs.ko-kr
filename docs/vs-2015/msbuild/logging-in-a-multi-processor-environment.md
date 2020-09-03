@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205969"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>다중 프로세서 환경에서의 로깅
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  전달 로거에서 이벤트를 전달하려면 <xref:Microsoft.Build.Framework.IEventRedirector> 인터페이스의 <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> 메서드를 호출합니다. 매개 변수로 적절한 <xref:Microsoft.Build.Framework.BuildEventArgs> 또는 파생 개체를 전달합니다.  
   
- 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.  
+ 자세한 내용은 [전달로 거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조 하세요.  
   
 ### <a name="attaching-a-distributed-logger"></a>분산된 로거 연결  
  명령줄 빌드에서 분산된 로거를 연결하려면 `/distributedlogger`(또는 간단히 `/dl`) 스위치를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산된 로거가 두 개의 로깅 클래스(전달 로거 및 중앙 로거)로 구성된 것을 제외하고 `/logger` 스위치에 대한 것과 동일합니다. 다음은 분산된 로거 연결의 예입니다.  
@@ -73,6 +73,6 @@ Culture=neutral
   
  별표(*)는 `/dl` 스위치에서 두 개의 로거 이름을 구분합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [빌드 로거](../msbuild/build-loggers.md)   
- [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)
+## <a name="see-also"></a>관련 항목  
+ [빌드로 거](../msbuild/build-loggers.md)   
+ [전달로 거 만들기](../msbuild/creating-forwarding-loggers.md)

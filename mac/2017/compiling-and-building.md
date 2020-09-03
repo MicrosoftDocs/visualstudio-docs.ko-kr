@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.topic: overview
 ms.openlocfilehash: 532a245b8e217ea278bf5a3424a194ce87ae43f4
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950038"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 컴파일 및 빌드

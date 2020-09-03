@@ -11,22 +11,22 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f2b216b937eccd102f4a9d80b58bbb858845e63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149035"
 ---
-# <a name="mtaskid-field"></a>m_taskId 필드
+# <a name="m_taskid-field"></a>m_taskId 필드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-에 대 한 지원 필드를 <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 속성입니다.  
+속성의 지원 필드 <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 입니다.  
   
  **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.  
+ .NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,5 +36,5 @@ ms.locfileid: "68149035"
   
 ## <a name="remarks"></a>설명  
   
-## <a name="see-also"></a>참고 항목  
- [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>관련 항목  
+ [작업 클래스](../../extensibility/debugger/task-class-internal-members.md)

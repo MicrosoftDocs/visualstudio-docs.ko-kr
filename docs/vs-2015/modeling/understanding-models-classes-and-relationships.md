@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5426c6f8e9c4a932430a0c3bd3df6d98400c3562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659552"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
@@ -26,7 +26,7 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
  이 항목에서는 DSL 정의의 중앙 기능에 대해 설명 합니다.
 
 ## <a name="the-dsl-definition"></a>DSL 정의
- @No__t_0를 열면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창이 다음 그림과 같이 표시 됩니다.
+ `Dsl\DslDefinition.dsl`를 열면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창이 다음 그림과 같이 표시 됩니다.
 
  ![dsl 디자이너](../modeling/media/dsl-designer.png "dsl_designer")
 
@@ -48,13 +48,13 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
 
  이 그림은 음악 라이브러리 DSL의 사용자가 만든 모델을 보여 줍니다. 음악 앨범은 노래 목록을 포함 하는 상자로 표시 됩니다. 음악가는 둥근 상자로 표현 되며, 제공 된 앨범에 연결 됩니다.
 
- ![생성 된 DSL의 인스턴스 모델](../modeling/media/music-instance.png "Music_Instance")
+ ![생성된 DSL의 인스턴스 모델](../modeling/media/music-instance.png "Music_Instance")
 
  DSL 정의는 두 가지 측면을 구분 합니다. 모델 다이어그램에서 모델 요소의 모양은 모양 클래스 및 연결선 클래스를 사용 하 여 정의 됩니다. 모델에 전달 되는 정보는 도메인 클래스 및 도메인 관계를 사용 하 여 정의 됩니다.
 
  다음 그림에서는 음악 라이브러리의 DSL 정의에서 도메인 클래스와 관계를 보여 줍니다.
 
- ![포함 및 참조 관계](../modeling/media/music-classes.png "Music_Classes")
+ ![관계 포함 및 참조](../modeling/media/music-classes.png "Music_Classes")
 
  그림은 음악, 앨범, 음악가 및 노래의 네 가지 도메인 클래스를 보여 줍니다. 도메인 클래스는 이름, 제목 등의 도메인 속성을 정의 합니다. 인스턴스 모델에서는 이러한 속성 중 일부의 값이 다이어그램에 표시 됩니다.
 
@@ -107,7 +107,7 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
 ### <a name="the-explorer-displays-the-embedding-tree"></a>탐색기에 포함 트리가 표시 됩니다.
  DSL 정의는 사용자가 모델 다이어그램과 함께 표시 되는 탐색기도 만듭니다.
 
- ![생성 된 DSL 탐색기](../modeling/media/music-explorer.png "Music_Explorer")
+ ![생성된 DSL 탐색기](../modeling/media/music-explorer.png "Music_Explorer")
 
  셰이프를 정의 하지 않은 경우에도 탐색기에는 모델의 모든 요소가 표시 됩니다. 요소와 포함 관계를 표시 하지만 참조 관계는 표시 하지 않습니다.
 
@@ -132,9 +132,9 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
  DSL 정의에서 관계를 만들 때 속성 및 관계 이름에 기본값이 지정 됩니다. 그러나이를 변경할 수 있습니다.
 
 ## <a name="multiplicities"></a>복합성
- 복합성 도메인 관계에서 동일한 역할을 가질 수 있는 요소 수를 지정 합니다. 이 예제에서 **카탈로그** 역할에 대 한 0-다 (0 \*) 다중성 설정은 **게시자** 도메인 클래스의 모든 인스턴스에 게 지정할 수 있는 **PublisherCatalog** relationship 링크를 포함할 수 있도록 지정 합니다.
+ 복합성 도메인 관계에서 동일한 역할을 가질 수 있는 요소 수를 지정 합니다. 이 예제에서 카탈로그 역할에 대 한 일 대 다 (0 ... \* ) 다중성 설정은 **게시자** 도메인 **Catalog** 클래스의 모든 인스턴스가 **PublisherCatalog** 관계 링크를 제공할 수 있도록 지정 합니다.
 
- 다이어그램에를 입력 하거나 **속성** 창에서 `Multiplicity` 속성을 수정 하 여 역할의 복합성을 구성 합니다. 다음 표에서는이 속성에 대 한 설정을 설명 합니다.
+ 다이어그램에를 입력 하거나 `Multiplicity` **속성** 창에서 속성을 수정 하 여 역할의 복합성을 구성 합니다. 다음 표에서는이 속성에 대 한 설정을 설명 합니다.
 
 |복합성 형식|설명|
 |-----------------------|-----------------|
@@ -152,5 +152,5 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
 
  파생 관계는 기본 관계를 특수화 합니다. 이 클래스와 연결 된 도메인 클래스는 기본 관계에 의해 연결 된 클래스와 동일한 또는에서 파생 되어야 합니다. 파생 관계에 대 한 링크는 모델에서 생성 될 때 파생 된 관계와 기본 관계의 인스턴스입니다. 프로그램 코드에서 기본 또는 파생 클래스에 의해 생성 된 속성을 사용 하 여 링크의 반대쪽 끝으로 이동할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [생성 된 API의 도메인 관계](../misc/domain-relationships-in-the-generated-api.md) [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

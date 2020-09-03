@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4600f27f62d6e840041a65b4128df128e4d36873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659523"
 ---
 # <a name="list-modules-command"></a>모듈 목록 표시 명령
@@ -40,17 +40,17 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 
  /Name:`yes|no` 선택 사항입니다. 모듈의 이름을 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
 
- /Order: `yes|no` 옵션입니다. 모듈의 순서를 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
+ /Order: `yes|no` 선택 사항입니다. 모듈의 순서를 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
 
- /Path:`yes|no` 선택 사항입니다. 모듈의 경로를 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
+ /Path:`yes|no` 선택 사항입니다. 모듈의 경로를 표시할지 여부를 지정합니다. 기본값은 `yes`입니다.
 
- /프로세스: 옵션 `yes|no` 합니다. 모듈의 프로세스를 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
+ /프로세스: `yes|no` 선택 사항입니다. 모듈의 프로세스를 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
 
  /기호 파일: `yes|no` 선택 사항입니다. 모듈의 기호 파일을 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
 
  /기호 상태: `yes|no` 선택 사항입니다. 모듈의 기호 상태를 표시할지 여부를 지정합니다. 기본값은 `yes`여야 합니다.
 
- TimeStamp `yes|no` 옵션 모듈의 타임스탬프를 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
+ /Otimestamp: `yes|no` 선택 사항입니다. 모듈의 타임스탬프를 표시할지 여부를 지정합니다. 기본값은 `no`입니다.
 
  /Version:`yes|no` 선택 사항입니다. 모듈의 버전을 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
 
@@ -63,5 +63,5 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
 ```
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio 명령 ](../../ide/reference/visual-studio-commands.md) [Command 창 ](../../ide/reference/command-window.md) [How: 모듈 창 사용](../../debugger/how-to-use-the-modules-window.md)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [명령 창](../../ide/reference/command-window.md) [방법: 모듈 창 사용](../../debugger/how-to-use-the-modules-window.md)

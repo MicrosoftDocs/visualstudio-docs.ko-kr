@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586798"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>조회 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
@@ -36,11 +36,11 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 |데이터 목록 또는 테이블을 표시하는 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 등의 컨트롤에 대해 <xref:System.Windows.Forms.DataGridView>를 구현합니다. 자세한 내용은 [복합 데이터 바인딩을 지 원하는 사용자 정의 컨트롤 Windows Forms 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)를 참조 하세요.|
 |데이터 목록 또는 테이블을 표시하는 동시에 단일 열이나 속성도 제공해야 하는 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 등의 컨트롤에 대해 <xref:System.Windows.Forms.ComboBox>를 구현합니다. 이 연습 페이지에서 해당 프로세스에 대해 설명합니다.|
 
-이 연습에서는 두 테이블의 데이터에 바인딩되는 조회 컨트롤을 만듭니다. 이 예에서는 Northwind 샘플 데이터베이스의 `Customers` 및 `Orders` 테이블을 사용합니다. 조회 컨트롤은 `Orders` 테이블의 `CustomerID` 필드에 바인딩됩니다. 이 값을 사용 하 여 `Customers` 테이블에서 `CompanyName`를 조회 합니다.
+이 연습에서는 두 테이블의 데이터에 바인딩되는 조회 컨트롤을 만듭니다. 이 예에서는 Northwind 샘플 데이터베이스의 `Customers` 및 `Orders` 테이블을 사용합니다. 조회 컨트롤은 테이블의 필드에 바인딩됩니다 `CustomerID` `Orders` . 이 값을 사용 하 여 테이블에서를 조회 합니다 `CompanyName` `Customers` .
 
 이 연습에서는 다음 작업을 수행 하는 방법에 대해 알아봅니다.
 
-- 새 **Windows Forms 애플리케이션**을 만듭니다.
+- 새 **Windows Forms 응용 프로그램**을 만듭니다.
 
 - 프로젝트에 새 **사용자 정의 컨트롤**을 추가합니다.
 
@@ -54,7 +54,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 - 새 컨트롤에 데이터를 표시할 폼을 만듭니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -78,7 +78,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -92,13 +92,13 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 1. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가**를 선택합니다.
 
-2. **이름** 영역에 `LookupBox`를 입력 한 다음 **추가**를 클릭 합니다.
+2. `LookupBox` **이름** 영역에를 입력 한 다음 **추가**를 클릭 합니다.
 
      **LookupBox** 컨트롤이 **솔루션 탐색기**에 추가되고 디자이너에서 열립니다.
 
 ## <a name="design-the-lookupbox-control"></a>LookupBox 컨트롤 디자인
 
-LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox>를 **도구 상자** 에서 사용자 컨트롤의 디자인 화면으로 끌어 옵니다.
+LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox> **도구 상자** 에서 사용자 컨트롤의 디자인 화면으로를 끌어 옵니다.
 
 ## <a name="add-the-required-data-binding-attribute"></a>필요한 데이터 바인딩 특성 추가
 
@@ -123,7 +123,7 @@ LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox>�
 
 3. **데이터 소스 형식 선택** 페이지에서 **데이터베이스** 를 선택하고 **다음**을 클릭합니다.
 
-4. **데이터 연결 선택** 페이지에서 다음 중 한 가지를 수행합니다.
+4. **데이터 연결 선택** 페이지에서 다음 중 하나를 수행 합니다.
 
     - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
@@ -163,7 +163,7 @@ LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox>�
 
 **데이터 원본** 창에서 **Form1**로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
 
-Windows Form에서 데이터 바인딩된 컨트롤을 만들려면 **Orders** 노드를 **데이터 소스** 창에서 Windows Form으로 끌고, **lookupbox** 컨트롤이 `CustomerID` 열의 데이터를 표시 하는 데 사용 되는지 확인 합니다.
+Windows Form에서 데이터 바인딩된 컨트롤을 만들려면 **Orders** 노드를 **데이터 소스** 창에서 Windows Form으로 끌고, **lookupbox** 컨트롤이 열의 데이터를 표시 하는 데 사용 되는지 확인 합니다 `CustomerID` .
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Customers 테이블에서 CompanyName을 조회 하는 컨트롤 바인딩
 
@@ -177,6 +177,6 @@ Windows Form에서 데이터 바인딩된 컨트롤을 만들려면 **Orders** �
 
 - 일부 레코드를 탐색해 보고 `CompanyName`이 `LookupBox` 컨트롤에 표시되는지 확인합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

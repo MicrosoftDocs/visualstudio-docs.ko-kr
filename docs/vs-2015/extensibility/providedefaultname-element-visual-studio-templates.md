@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193882"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-지정 여부는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 시스템의 템플릿에 대 한 기본 이름이 생성 됩니다는 **새 항목 추가** 또는 **새 프로젝트** 대화 상자.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]프로젝트 시스템이 **새 항목 추가** 또는 **새 프로젝트** 대화 상자에서 템플릿의 기본 이름을 생성할지 여부를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -45,24 +45,24 @@ ms.locfileid: "68193882"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 여야 `true` 또는 `false`의 템플릿에 대 한 기본 이름을 생성할 것인지 여부를 나타내는 합니다 **새 항목 추가** 또는 **새 프로젝트** 대화 상자.  
+ 텍스트는 또는 중 하나 여야 합니다 `true` `false` . **새 항목 추가** 또는 **새 프로젝트** 대화 상자에서 템플릿의 기본 이름을 생성할지 여부를 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
  `ProvideDefaultName`는 선택적 요소입니다. 기본값은 `true`입니다.  
   
- 경우는 `ProvideDefaultName` 요소는 `false`의 **이름** 상자에는 **새 항목 추가** 및 **새 프로젝트** 값을 포함 하는 대화 상자 `<Enter_name>`합니다.  
+ 요소가 이면 `ProvideDefaultName` `false` **새 항목 추가** 및 **새 프로젝트** 대화 상자의 **이름** 상자에 값이 포함 `<Enter_name>` 됩니다.  
   
- 사용 된 [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) 항목 또는 프로젝트의 기본 이름을 지정 하는 요소는 **새 항목 추가** 및 **새 프로젝트** 대화 상자.  
+ [Defaultname](../extensibility/defaultname-element-visual-studio-templates.md) 요소를 사용 하 여 **새 항목 추가** 및 **새 프로젝트** 대화 상자에서 프로젝트 또는 항목의 기본 이름을 지정 합니다.  
   
-## <a name="example"></a>예제  
- 다음 코드 예제에서는 합니다 `ProvideDefaultName` 요소를 `false`입니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제에서는 요소를 `ProvideDefaultName` 로 설정 합니다 `false` .  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  

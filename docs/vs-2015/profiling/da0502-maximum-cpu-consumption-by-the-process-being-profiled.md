@@ -1,5 +1,5 @@
 ---
-title: 'DA0502: 프로파일링되고 있는 프로세스의 최대 CPU 사용량 | Microsoft Docs'
+title: 'DA0502: 프로파일링 중인 프로세스의 최대 CPU 사용 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a47a9c5964ccf15d2c609233eb600f39bc3ad2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205931"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: 프로파일링되고 있는 프로세스의 최대 CPU 사용량
@@ -25,9 +25,9 @@ ms.locfileid: "68205931"
 
 규칙 Id | DA0502 |  
 | 범주 | 리소스 모니터링 |  
-| 프로 파일링 방법을 | 모든 |  
-| 메시지 | 이 규칙은 참고용 으로만 합니다. Process()\\% Processor Time 카운터는 프로파일링 중인 프로세스의 CPU 사용량을 측정합니다. 보고된 값은 모든 측정 간격에서 관찰되는 최댓값입니다.|  
-| 규칙 유형 | 정보 제공 용 이므로 |  
+| 프로 파일링 방법 | 모두 |  
+| 메시지 | 이 규칙은 정보를 위한 것입니다. Process()\\% Processor Time 카운터는 프로파일링 중인 프로세스의 CPU 사용량을 측정합니다. 보고된 값은 모든 측정 간격에서 관찰되는 최댓값입니다.|  
+| 규칙 유형 | 정보 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   
