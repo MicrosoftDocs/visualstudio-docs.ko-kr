@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520837"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
@@ -107,7 +107,7 @@ Language 매개 변수는 프로젝트의 언어에 따라 달라 집니다.
 
 ### <a name="plain-content"></a>일반 콘텐츠
 
-응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예를 들면 다음과 같습니다.
+응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예:
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>포함 된 프로그램 코드
 
-및 사이에 프로그램 코드를 삽입할 수 있습니다 `<#` `#>` . 예를 들면 다음과 같습니다.
+및 사이에 프로그램 코드를 삽입할 수 있습니다 `<#` `#>` . 예:
 
 ```csharp
 <table>
@@ -433,7 +433,7 @@ End material for DerivedTemplate1.
 
 런타임 템플릿은 템플릿 및 해당 콘텐츠가 컴파일 타임에 결정 되는 모든 응용 프로그램에서 사용할 수 있습니다. 런타임에 변경 되는 템플릿에서 텍스트를 생성 하는 Visual Studio 확장을 작성 하려는 경우 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)

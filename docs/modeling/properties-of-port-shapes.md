@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520862"
 ---
 # <a name="properties-of-port-shapes"></a>포트 모양의 속성
@@ -29,7 +29,7 @@ ms.locfileid: "85520862"
 |-|-|-|
 |채우기 색|이 도형의 채우기 색입니다.|흰색|
 |채우기 그라데이션 모드|이 도형의 채우기 그라데이션 모드입니다.|수평적 크기 조정|
-|geometry|이 도형 (사각형, 둥근 사각형, 타원 또는 원)의 기 하 도형입니다.|사각형|
+|기하 도형|이 도형 (사각형, 둥근 사각형, 타원 또는 원)의 기 하 도형입니다.|직사각형|
 |기본 연결 지점이 있음|이면 `True` 셰이프는 생성 된 디자이너에서 위쪽, 아래쪽, 왼쪽 및 오른쪽 연결 위치를 사용 합니다.|False|
 |윤곽선 색|이 도형의 윤곽선 색입니다.|검정|
 |윤곽선 파선 스타일|이 도형의 윤곽선 대시 스타일 (Solid, 대시, 점, 일점 Dot, DashDotDot 또는 Custom)입니다.|단색|
@@ -53,6 +53,6 @@ ms.locfileid: "85520862"
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none>|
 |Help Keyword|이 모양에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none>|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

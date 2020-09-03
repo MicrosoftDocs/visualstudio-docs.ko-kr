@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5e3c8e8c49f1fb34e40daca0844f3260e36567e9
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149680"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89324979"
 ---
 MSBuild(Microsoft Build Engine)

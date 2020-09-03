@@ -10,40 +10,40 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4998fbc530cf4350f4a64b0fd527e0764eafce27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656270"
 ---
 # <a name="how-to-use-xml-snippets"></a>방법: XML 조각 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML 조각을 호출할 수 있습니다. **코드 조각 삽입** 명령은 커서 위치에 XML 조각을 삽입 합니다. **코드 감싸기** 명령은 선택한 텍스트 주위에 XML 조각을 래핑합니다. 각 XML 조각에는 조각 형식이 지정되어 있습니다. 조각 형식은 조각 **삽입** 명령, 코드 **감싸기** 명령 또는 둘 다와 함께 사용할 수 있는지 여부를 결정 합니다.
+XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML 조각을 호출할 수 있습니다. **코드 조각 삽입** 명령을 사용하면 커서 위치에 XML 코드 조각을 삽입합니다. **포함** 명령을 사용하면 선택한 텍스트 주위의 XML 코드 조각을 래핑합니다. 각 XML 조각에는 조각 형식이 지정되어 있습니다. 코드 조각 형식은 코드 조각에 **코드 조각 삽입** 명령이나 **포함** 명령 또는 둘 다를 사용할 수 있는지 여부를 결정합니다.
 
  XML 조각을 편집기에 추가한 후 조각에서 편집 가능한 필드가 노란색으로 강조되며 편집 가능한 첫 번째 필드에 커서가 놓입니다.
 
 ## <a name="insert-snippet"></a>조각 삽입
- 다음 절차에서는 **코드 조각 삽입** 명령에 액세스 하는 방법을 설명 합니다.
+ 다음 절차에서는 **코드 조각 삽입** 명령에 액세스하는 방법을 설명합니다.
 
 > [!NOTE]
 > **코드 조각 삽입** 명령은 바로 가기 키 (Ctrl + K, Ctrl + X)를 통해서도 사용할 수 있습니다.
 
-#### <a name="to-insert-snippets-from-the-shortcut-menu"></a>바로 가기 메뉴에서 조각을 삽입하려면
+#### <a name="to-insert-snippets-from-the-shortcut-menu"></a>바로 가기 메뉴에서 조각을 삽입하는 방법
 
 1. XML 조각을 삽입할 커서의 위치를 지정합니다.
 
-2. 마우스 오른쪽 단추를 클릭 하 고 **조각 삽입**을 선택 합니다.
+2. 마우스 오른쪽 단추를 클릭하고 **코드 조각 삽입**을 선택합니다.
 
      사용 가능한 XML 조각의 목록이 표시됩니다.
 
 3. 목록에서 마우스를 사용하거나 조각 이름을 입력하고 Tab 키 또는 Enter 키를 눌러 조각을 선택합니다.
 
-#### <a name="to-insert-snippets-using-the-intellisense-menu"></a>IntelliSense 메뉴를 사용하여 조각을 삽입하려면
+#### <a name="to-insert-snippets-using-the-intellisense-menu"></a>IntelliSense 메뉴를 사용하여 조각을 삽입하는 방법
 
 1. XML 조각을 삽입할 커서의 위치를 지정합니다.
 
-2. **편집** 메뉴에서 **IntelliSense**를 가리킨 다음 **조각 삽입**을 선택 합니다.
+2. **편집** 메뉴에서 **IntelliSense**를 가리키고 **코드 조각 삽입**을 선택합니다.
 
      사용 가능한 XML 조각의 목록이 표시됩니다.
 
@@ -62,7 +62,7 @@ XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML �
 > [!NOTE]
 > XML 조각이 호출되지 않는 경우도 있습니다. 예를 들어, `xs:complexType` 요소를 `xs:element` 노드 안에 삽입하려고 시도하면 편집기에서 XML 조각이 생성되지 않습니다. `xs:complexType` 노드 안에서 `xs:element` 요소를 사용하면 필수 특성 또는 하위 요소가 없으므로 편집기에서 삽입할 데이터가 없습니다.
 
-#### <a name="to-insert-snippets-using-the-shortcut-name"></a>바로 가기 이름을 사용하여 조각을 삽입하려면
+#### <a name="to-insert-snippets-using-the-shortcut-name"></a>바로 가기 이름을 사용하여 조각을 삽입하는 방법
 
 1. XML 조각을 삽입할 커서의 위치를 지정합니다.
 
@@ -73,7 +73,7 @@ XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML �
 4. 조각의 바로 가기 이름을 입력하고 Tab 키를 눌러 XML 조각을 호출합니다.
 
 ## <a name="surround-with"></a>포함
- 다음 절차에서는 **코드 감싸기** 명령에 액세스 하는 방법을 설명 합니다.
+ 다음 절차에서는 **포함** 명령에 액세스하는 방법을 설명합니다.
 
 > [!NOTE]
 > **코드 감싸기** 명령을 바로 가기 키 (Ctrl + K, Ctrl + S)를 통해 사용할 수도 있습니다.
@@ -82,7 +82,7 @@ XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML �
 
 1. XML 편집기에 포함시킬 텍스트를 선택합니다.
 
-2. 마우스 오른쪽 단추를 클릭 하 고 **코드 감싸기**를 선택 합니다.
+2. 마우스 오른쪽 단추를 클릭하고 **포함**을 선택합니다.
 
      사용 가능한 XML 조각 포함 항목의 목록이 표시됩니다.
 
@@ -92,7 +92,7 @@ XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML �
 
 1. XML 편집기에 포함시킬 텍스트를 선택합니다.
 
-2. **편집** 메뉴에서 **IntelliSense**를 가리킨 다음 **코드 감싸기**를 선택 합니다.
+2. **편집** 메뉴에서 **IntelliSense**를 가리키고 **포함**을 선택합니다.
 
      사용 가능한 XML 조각 포함 항목의 목록이 표시됩니다.
 
@@ -107,7 +107,7 @@ XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML �
 
  Enter 키 또는 Esc 키를 누르면 필드 편집이 취소되고 편집기가 일반 상태로 돌아갑니다.
 
- 편집 가능한 코드 조각 필드의 기본 색은 **옵션** 대화 상자의 **글꼴 및 색** 창에서 코드 조각 필드 설정을 수정 하 여 변경할 수 있습니다. 자세한 내용은 [방법: 편집기에서 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)을 참조 하세요.
+ 옵션 대화 상자의 **글꼴 및 색** 창에서 **코드 조각 필드** 설정을 수정하면 편집 가능한 코드 조각 필드의 기본색을 변경할 수 있습니다. 자세한 내용은 [방법: 편집기에서 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Xml 코드 조각](../xml-tools/xml-snippets.md) [방법: XML 스키마에서 xml 조각 생성](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md) [방법: xml 조각 만들기](../xml-tools/how-to-create-xml-snippets.md)

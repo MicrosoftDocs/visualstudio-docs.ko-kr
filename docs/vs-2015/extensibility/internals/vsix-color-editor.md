@@ -7,10 +7,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea5695c41b19cbd77c56a63f22b52fca5ee6f1eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295439"
 ---
 # <a name="vsix-color-editor"></a>VSIX 색 편집기
@@ -18,7 +18,7 @@ ms.locfileid: "74295439"
 
 Visual Studio 확장 색 편집기 도구를 통해 Visual Studio에 대 한 사용자 지정 색을 만들고 편집할 수 있습니다. 이 도구는 코드에서 색을 사용할 수 있도록 테마 리소스 키를 생성할 수도 있습니다. 이 도구는 테마를 지 원하는 Visual Studio 확장에 대 한 색을 만드는 데 유용 합니다. 이 도구는 .pkgdef 및 .xml 파일을 열 수 있습니다. Visual studio 테마 (vstheme 파일)는 파일 확장명을 .xml로 변경 하 여 Visual Studio 확장 색 편집기에서 사용할 수 있습니다. 또한 vstheme 파일을 현재 .xml 파일로 가져올 수 있습니다.  
   
- ![VSIX 색 편집기 주인공](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX 색 편집기 Hero")  
+ ![VSIX 색 편집기 Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX 색 편집기 Hero")  
   
  **패키지 정의 파일**  
   
@@ -67,13 +67,13 @@ Visual Studio 확장 색 편집기 도구를 통해 Visual Studio에 대 한 사
   
 - 활성  
   
-- Inactive  
+- 비활성  
   
 - MouseOver  
   
 - MouseDown  
   
-- Selected  
+- 선택됨  
   
 - 포커스 있음  
   
@@ -85,7 +85,7 @@ Visual Studio 확장 색 편집기 도구를 통해 Visual Studio에 대 한 사
   
 - ListItemMouseOver  
   
-- ListItemMouseOverBorder  
+- Listitemmouse과잉 테두리  
   
 - ListItemSelected  
   
@@ -111,7 +111,7 @@ Visual Studio 확장 색 편집기 도구를 통해 Visual Studio에 대 한 사
   
   새 범주는 **새 색** 범주 드롭다운 메뉴에서 사용할 수 있게 됩니다. 범주를 선택한 후 각 새 색 토큰에 대해 줄당 하나의 이름을 입력 하 고 완료 되 면 "만들기"를 선택 합니다.  
   
-  ![VSIX 색 편집기 새 색 채우기](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX 색 편집기 새 색 채워짐")  
+  ![VSIX 색 편집기 새 색 채워짐](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX 색 편집기 새 색 채워짐")  
   
   색 값은 배경/전경 쌍으로 표시 되 고, "없음"은 색이 정의 되지 않았음을 나타냅니다. 참고: 색에 텍스트 색/배경 색 쌍이 없으면 배경만 정의 해야 합니다.  
   
@@ -133,13 +133,13 @@ Visual Studio 확장 색 편집기 도구를 통해 Visual Studio에 대 한 사
   
   새 색 토큰을 정의한 후에는 프로젝트 파일의 "빌드 작업"을 "내용"으로 설정 하 고 "VSIX에 포함"을 "True"로 설정 하 여 .pkgdef를 포함 합니다.  
   
-  ![VSIX 색 편집기 .pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX 색 편집기 pkgdef")  
+  ![VSIX 색 편집기 pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX 색 편집기 pkgdef")  
   
   Visual Studio 확장 색 편집기에서 파일 > 리소스 코드 보기를 선택 하 여 WPF 기반 UI의 사용자 지정 색에 액세스 하는 데 사용 되는 코드를 봅니다.  
   
   ![VSIX 색 편집기 리소스 코드 뷰어](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX 색 편집기 리소스 코드 뷰어")  
   
-  프로젝트의 정적 클래스에이 코드를 포함 합니다. VisualStudio에 대 한 참조를 프로젝트에 추가 하 여 **ThemeResourceKey** 형식을 사용 해야 합니다. **\<vsversion > .0** 를 프로젝트에 추가 해야 합니다.  
+  프로젝트의 정적 클래스에이 코드를 포함 합니다. **ThemeResourceKey** 형식을 사용 하려면 ** \<VSVersion>.0.dllVisualStudio** 에 대 한 참조를 프로젝트에 추가 해야 합니다.  
   
 ```csharp  
 namespace MyCustomColors  
@@ -238,7 +238,7 @@ namespace MyCustomColors
   
 ```  
   
- **C#리소스 키 래퍼**  
+ **C # 리소스 키 래퍼**  
   
  도구에서 생성 되는 색 리소스 키는 다음과 유사 합니다.  
   

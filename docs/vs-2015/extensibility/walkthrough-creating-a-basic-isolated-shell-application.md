@@ -13,18 +13,18 @@ caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850345"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>연습: 기본 격리 셸 응용 프로그램 만들기
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>연습: 기본 격리 셸 애플리케이션 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 격리 된 셸 솔루션을 만들고, 도구 창에 대 한 도움말을 사용자 지정 하 고, 격리 된 셸을 설치 하는 설치 프로그램을 만드는 방법을 보여 줍니다.  
   
-## <a name="prerequisites"></a>전제 조건  
+## <a name="prerequisites"></a>사전 요구 사항  
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요. 격리 된 셸을 배포 하려면 Visual Studio Shell (격리) 재배포 가능 패키지도 사용 해야 합니다.  
   
 ## <a name="creating-an-isolated-shell-solution"></a>격리 셸 솔루션 만들기  
@@ -59,7 +59,7 @@ ms.locfileid: "75850345"
   
 1. MyVSShellStub 프로젝트에서 \Shell Customization\MyVSShellStub.Application.pkgdef.을 엽니다.  
   
-2. `AppName` 요소 값을 **"AppName" = "Fabrikam Music Editor"** 로 변경 합니다.  
+2. `AppName`요소 값을 **"AppName" = "Fabrikam Music Editor"** 로 변경 합니다.  
   
 3. 응용 프로그램 아이콘을 변경 하려면 다른 아이콘을 \MyVSShellStub\MyVSShellStub\MyVSShellStub\ 디렉터리에 복사 합니다. 기존 ApplicationIcon .ico 파일의 이름을 ApplicationIcon1로 바꿉니다. 새 파일의 이름을 ApplicationIcon .ico로 바꿉니다.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "75850345"
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>기본 웹 브라우저 홈 페이지를 사용자 지정 하려면  
   
-1. MyVSShellStub 파일에서 `DefaultHomePage` 요소 값을 "<https://www.microsoft.com>"로 변경 합니다.  
+1. MyVSShellStub 파일에서 `DefaultHomePage` 요소 값을 ""로 변경 <https://www.microsoft.com> 합니다.  
   
 2. MyVSShellStub 프로젝트를 다시 빌드합니다.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "75850345"
 4. **보기/기타 창**에서 **웹 브라우저**를 클릭 합니다. **웹 브라우저** 창에 Microsoft Corporation 홈 페이지가 표시 됩니다.  
   
 ## <a name="removing-the-print-command"></a>인쇄 명령 제거  
- 격리 된 셸 UI 프로젝트의. vsct 파일은 *요소*`>``<Define name=No_`폼의 선언 집합으로 구성 됩니다. 여기서 *요소* 는 표준 Visual Studio 메뉴 및 명령 중 하나입니다.  
+ 격리 된 셸 UI 프로젝트의. vsct 파일은 form 요소의 선언 집합으로 구성 됩니다. `<Define name=No_` *Element* `>` 여기서 *요소* 는 표준 Visual Studio 메뉴 및 명령 중 하나입니다.  
   
  선언이 주석 처리가 제거 인 경우 해당 메뉴 또는 명령은 격리 된 셸에서 제외 됩니다. 반대로, 선언이 주석 처리 된 경우 메뉴 또는 명령이 격리 된 셸에 포함 됩니다.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "75850345"
   
 2. 다음 줄의 주석 처리를 제거 합니다.  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages \\ {87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. 솔루션을 다시 빌드하고 격리 된 셸 디버깅을 시작 합니다. XML 파일 (예: \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct.)을 엽니다. 파일의 XML 키워드에 색이 지정 되지 않고 줄에 "<"을 입력 해도 XML 도구 설명이 표시 되지 않는지 확인 합니다.  
   
@@ -126,7 +126,7 @@ ms.locfileid: "75850345"
   
 1. 회사 이름, 저작권 정보, 제품 버전 및 제품 설명은 \Properties\AssemblyInfo.cs 파일의 MyVSShellStub 프로젝트에 있습니다. 이 파일을 엽니다.  
   
-2. `AssemblyCompany` 값을 **fabrikam**, `AssemblyProduct` 및 `AssemblyTitle` **fabrikam 음악 편집기**로, `AssemblyCopyright` 값을 **저작권 © fabrikam 2015**으로 변경 합니다.  
+2. 값을 `AssemblyCompany` **fabrikam**, `AssemblyProduct` 및 값을 fabrikam `AssemblyTitle` **음악 편집기**로, `AssemblyCopyright` 값을 **저작권 © fabrikam 2015**으로 변경 합니다.  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ ms.locfileid: "75850345"
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. 제품에 대 한 설명을 추가 하려면 `AssemblyDescription` 값을 **Fabrikam 음악 편집기의 설명으로 변경 합니다.**  
+3. 제품에 대 한 설명을 추가 하려면 `AssemblyDescription` 값을 **Fabrikam Music editor의 설명으로 변경 합니다.**  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. 디버깅을 시작 하 고 격리 된 셸 응용 프로그램에서 **도움말/정보** 상자를 엽니다. 변경 된 문자열이 표시 되어야 합니다. 도움말/정보 상자의 제목은 AssemblyInfo.cs의 `AssemblyTitle` 값과 동일 합니다.  
+4. 디버깅을 시작 하 고 격리 된 셸 응용 프로그램에서 **도움말/정보** 상자를 엽니다. 변경 된 문자열이 표시 되어야 합니다. 도움말/정보 상자의 제목은 `AssemblyTitle` AssemblyInfo.cs의 값과 동일 합니다.  
   
-5. **도움말/정보** 상자 자체의 속성은 MyVSShellStub 파일에 있습니다. 도움말/정보 상자의 너비를 변경 하려면 `AboutDialogStyle` 블록으로 이동 하 `Width` 속성을 200으로 설정 합니다.  
+5. **도움말/정보** 상자 자체의 속성은 MyVSShellStub 파일에 있습니다. 도움말/정보 상자의 너비를 변경 하려면 블록으로 이동 하 여 `AboutDialogStyle` `Width` 속성을 200으로 설정 합니다.  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -178,7 +178,7 @@ ms.locfileid: "75850345"
   
 1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 한 다음 **새 프로젝트 추가**를 클릭 합니다.  
   
-2. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 을 확장 한 다음 **설치 및 배포**를 선택 합니다. InstallShield 템플릿을 선택 합니다. 새 프로젝트의 이름을 `MySetup`로 지정한 다음 **확인을**클릭 합니다.  
+2. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 을 확장 한 다음 **설치 및 배포**를 선택 합니다. InstallShield 템플릿을 선택 합니다. 새 프로젝트의 이름을 `MySetup` 지정한 다음 **확인을**클릭 합니다.  
   
 3. InstallShield 제한 된 버전이 이미 설치 되어 있는 경우 다음 단계를 계속 합니다.  
   
@@ -206,15 +206,15 @@ ms.locfileid: "75850345"
   
     2. DebuggerProxy.dll  
   
-    3. DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll 매니페스트  
   
-    4. MyVSShellStub.pkgdef  
+    4. MyVSShellStub  
   
-    5. MyVSShellStub.pkgundef  
+    5. MyVSShellStub  
   
-    6. MyVSShellStub.winprf  
+    6. MyVSShellStub. winprf  
   
-    7. 시작 .bmp  
+    7. Splash.bmp  
   
 5. **프로젝트 출력 추가** 단추를 클릭 하 고 **Myvsshellstub/기본 출력**을 추가 합니다. **확인**을 클릭합니다.  
   
@@ -226,9 +226,9 @@ ms.locfileid: "75850345"
   
 9. **파일 추가** 단추를 클릭 하 고 \MyVSShellStub\Release\Extensions\Application\ 폴더에서 다음 파일을 추가 합니다.  
   
-    - MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub. .pkgdef  
   
-    - MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub  
   
 10. 왼쪽 창에서 **Fabrikam 음악 편집기 [INSTALLDIR]** 노드를 마우스 오른쪽 단추로 클릭 하 고 이름이 **1033**인 새 폴더를 추가 합니다.  
   

@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295529"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>UML 모델 및 다이어그램 편집
@@ -37,9 +37,9 @@ ms.locfileid: "74295529"
 
  이 항목에서는 다양한 다이어그램 형식에서 공통된 모델을 편집하는 기술에 대해 설명합니다. 특정 유형의 다이어그램에 대 한 자세한 내용은 [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)를 참조 하세요.
 
-## <a name="in-this-topic"></a>이 항목의 내용
+## <a name="in-this-topic"></a>항목 내용
 
-- [Uml 다이어그램은 UML 모델의 뷰입니다.](#Views)
+- [UML 다이어그램은 UML 모델의 뷰임](#Views)
 
 - [UML 모델링 다이어그램 만들기](#Creating)
 
@@ -47,21 +47,21 @@ ms.locfileid: "74295529"
 
 - [모양 및 연결선 편집](#Editing)
 
-- [모델에 대 한 변경 내용 취소](#Undo)
+- [모델에 대한 변경 내용 취소](#Undo)
 
-- [다이어그램 간 요소 공유](#Sharing)
+- [다이어그램 간에 요소 공유](#Sharing)
 
-- [요소 및 관련 된 요소 그룹 복사](#Copying)
+- [요소 및 관련된 요소 그룹 복사](#Copying)
 
 - [모델 요소 또는 해당 뷰 삭제](#Deleting)
 
 - [다이어그램에서 텍스트 검색](#Searching)
 
-- [프레젠테이션을 위한 다이어그램 준비](#presentation)
+- [프레젠테이션을 위해 다이어그램 준비](#presentation)
 
 - [UML 디자이너 확장](#extensions)
 
-## <a name="Views"></a>Uml 다이어그램은 UML 모델의 뷰입니다.
+## <a name="uml-diagrams-are-views-of-a-uml-model"></a><a name="Views"></a> Uml 다이어그램은 UML 모델의 뷰입니다.
  모델링 프로젝트에서만 UML 다이어그램을 만들고 사용할 수 있습니다. 다이어그램 및 프로젝트를 만드는 방법에 대 한 자세한 내용은 [UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)를 참조 하세요.
 
 - 모델링 프로젝트에는 단일 UML 모델이 포함됩니다. 프로젝트의 모든 UML 다이어그램은 UML 모델의 뷰입니다.
@@ -70,9 +70,9 @@ ms.locfileid: "74295529"
 
 - 다이어그램의 각 모양은 모델의 요소 뷰입니다. 다이어그램에 새 모양을 배치하면 모델에 새 요소가 생성됩니다.
 
-- 모든 다이어그램을 저장 하면 Visual Studio에서 전체 모델, 모든 다이어그램 및 모델링 프로젝트 파일을 저장 합니다.
+- 다이어그램을 저장하면 전체 모델, 모든 다이어그램 및 모델링 프로젝트 파일이 저장됩니다.
 
-## <a name="Creating"></a>UML 모델링 다이어그램 만들기
+## <a name="creating-uml-modeling-diagrams"></a><a name="Creating"></a> UML 모델링 다이어그램 만들기
 
 1. Visual Studio의 **아키텍처** 메뉴에서 **새 UML 또는 레이어 다이어그램**을 클릭 합니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "74295529"
 
   모델링 프로젝트를 관리 하는 방법에 대 한 자세한 내용은 [UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)를 참조 하세요.
 
-## <a name="Drawing"></a>UML 모델링 다이어그램 그리기
+## <a name="drawing-uml-modeling-diagrams"></a><a name="Drawing"></a> UML 모델링 다이어그램 그리기
  모델링 다이어그램에는 관계로 연결된 모델 요소 컬렉션이 표시됩니다. 각 요소는 모양으로 표시되고 각 관계는 두 모양 간의 연결선으로 표시됩니다.
 
  요소와 관계에 대해 하나씩, 두 종류의 도구가 있습니다. 예를 들어 UML 클래스 다이어그램 도구 상자에서 **클래스** 는 요소 도구 이며 **연결은** 관계 도구입니다.
@@ -117,7 +117,7 @@ ms.locfileid: "74295529"
 
    일부 종류의 다이어그램에서는 단순 도형을 그릴 수도 있습니다. 이러한 모양은 모델의 일부가 아니라 다이어그램의 일부로 관심을 끌거나 다양한 영역으로 나누는 데 사용할 수 있습니다.
 
-## <a name="Editing"></a>모양 및 연결선 편집
+## <a name="editing-shapes-and-connectors"></a><a name="Editing"></a> 모양 및 연결선 편집
  모양의 크기 또는 색을 조정하거나 연결선을 바꾸는 경우 기본 모델에는 영향을 주지 않습니다. 그러나 다이어그램 또는 UML 모델 탐색기에서 모양의 이름을 바꾸는 경우 UML 모델 탐색기 및 해당 요소를 표시하는 다른 모든 다이어그램에서 요소의 이름이 바뀝니다.
 
 > [!NOTE]
@@ -132,11 +132,11 @@ ms.locfileid: "74295529"
 
  다음 그림에서는 연결선이나 해당 레이블의 경로와 위치를 조정하는 방법을 보여 줍니다.
 
- ![커넥터 조정](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
+ ![연결선 조정](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>연결선의 한쪽 끝을 다른 모양으로 이동하려면
 
-1. 다음 작업 중 하나를 수행합니다.
+1. 다음 중 하나를 수행합니다.
 
    - **Ctrl** 키를 누르고 끝을 이동 합니다.
 
@@ -166,7 +166,7 @@ ms.locfileid: "74295529"
 
 - **아키텍처 디자이너** 도구 모음에서 더하기 기호 ( **+** ) 또는 빼기 기호 ( **-** )를 클릭 하거나 확대/축소 수준을 선택 합니다.
 
-## <a name="Searching"></a>다이어그램에서 검색
+## <a name="searching-in-a-diagram"></a><a name="Searching"></a> 다이어그램에서 검색
  빠른 찾기 함수는 다이어그램에서 항목을 찾습니다. **찾는 위치:** 를 **현재 문서로**설정 해야 합니다.
 
 #### <a name="to-search-for-text-in-a-modeling-diagram"></a>모델링 다이어그램에서 텍스트를 검색하려면
@@ -185,20 +185,20 @@ ms.locfileid: "74295529"
     > [!NOTE]
     > 찾으려는 텍스트가 축소된 모양 안에 있으면 모양이 강조 표시됩니다. 셰이프를 확장 하 고 **다음 찾기** 를 다시 클릭 합니다.
 
-## <a name="Undo"></a>모델에 대 한 변경 내용 취소
+## <a name="undoing-changes-to-the-model"></a><a name="Undo"></a> 모델에 대 한 변경 내용 취소
  **편집** 메뉴의 **실행 취소** 및 **다시 실행** 명령을 사용 하 여 모델 및 다이어그램에 대 한 변경 내용을 실행 취소 하 고 다시 실행할 수 있습니다.
 
  **각 모델링 프로젝트에는 단일 변경 스택이 있습니다.** 모델 및 다이어그램에 수행한 모든 변경 내용이 이 스택에 유지됩니다. 스택에는 다이어그램 간의 포커스 변경도 포함됩니다. 실행 취소 명령은 이 스택의 변경 내용을 취소합니다.
 
  예를 들어 Diagram1 변경, 포커스를 Diagram2로 변경, Diagram2 변경 작업을 수행한다고 가정합니다. 변경 내용을 취소하는 경우 첫 번째 실행 취소는 마지막 변경을 취소하고, 다음 실행 취소는 포커스를 다시 Diagram1로 전환하고, 세 번째 실행 취소는 Diagram1 변경 내용을 취소합니다.
 
- **다이어그램을 닫으면 변경 스택이 잘립니다.** 다이어그램을 닫으면 해당 다이어그램에서 수행한 변경 내용을 취소할 수 없으며, 모델 또는 해당 다이어그램에 대한 이전 변경 내용을 취소할 수 없습니다.
+ **다이어그램을 닫으면 변경 내용 스택이 잘립니다.** 다이어그램을 닫으면 해당 다이어그램에서 수행한 변경 내용을 취소할 수 없으며, 모델 또는 해당 다이어그램에 대한 이전 변경 내용을 취소할 수 없습니다.
 
  **속성을 편집 하는 동안에는 실행 취소할 수 없습니다.** 속성 창이나 다이어그램의 레이블에서 속성을 편집하는 경우 해당 속성에 대한 변경 내용만 취소할 수 있습니다. Enter 키를 눌러 속성 변경을 완료하거나 Esc 키를 눌러 취소합니다. 그런 다음 모델 및 다이어그램의 변경 내용을 취소할 수 있습니다.
 
- **저장 하지 않고 다이어그램을 닫으면 원하는 효과를 얻을 수 없습니다.** 변경 작업을 수행한 후 저장하지 않고 다이어그램을 닫는 경우 변경 내용이 모델에 그대로 유지됩니다. 저장하지 않고 닫으려면 전체 모델을 닫는 것이 좋습니다.
+ **저장하지 않고 다이어그램을 닫을 경우 나타나는 결과가 예상과 다를 수 있습니다.** 변경 작업을 수행한 후 저장하지 않고 다이어그램을 닫는 경우 변경 내용이 모델에 그대로 유지됩니다. 저장하지 않고 닫으려면 전체 모델을 닫는 것이 좋습니다.
 
-## <a name="Sharing"></a>다이어그램 간 요소 공유
+## <a name="sharing-elements-between-diagrams"></a><a name="Sharing"></a> 다이어그램 간 요소 공유
  모델 요소의 특정 인스턴스가 다이어그램에 두 번 이상 표시되도록 만들 수 있습니다. 클래스, 인터페이스, 구성 요소, 사용 사례 및 행위자에 적용됩니다.
 
  이 기능은 각 다이어그램에 다른 관계 그룹을 표시하려는 경우에 유용합니다. 예를 들어 한 다이어그램에 Customer 및 Address 클래스 간의 연결을 표시할 수 있습니다. 다른 다이어그램에는 Postal Area에 대한 연결과 함께 Address 클래스를 다시 표시할 수 있습니다.
@@ -234,7 +234,7 @@ ms.locfileid: "74295529"
 > [!NOTE]
 > 관계로 이미 연결된 두 모델 요소의 뷰를 다이어그램에 추가하는 경우 관계 뷰도 다이어그램에 표시됩니다. 다이어그램에서 요소 중 하나를 제거하거나 모델에서 관계를 삭제해야만 이 뷰를 삭제할 수 있습니다.
 
-## <a name="Copying"></a>요소 및 관련 된 요소 그룹 복사
+## <a name="copying-elements-and-groups-of-related-elements"></a><a name="Copying"></a> 요소 및 관련 된 요소 그룹 복사
  모델 요소를 복사하여 붙여넣을 수 있으며, 요소 간의 관계와 함께 요소 그룹을 복사하여 붙여넣을 수 있습니다.
 
 > [!NOTE]
@@ -247,11 +247,11 @@ ms.locfileid: "74295529"
     > [!NOTE]
     > 요소 그룹에 포함된 경우를 제외하고 관계는 복사할 수 없습니다.
 
-2. **편집** 메뉴에서 **복사**를 클릭 합니다.
+2. **편집** 메뉴에서 **복사**를 클릭합니다.
 
 3. 다른 다이어그램에 요소를 복사하려는 경우 새 다이어그램을 만들거나 기존 다이어그램을 엽니다.
 
-4. **편집** 메뉴에서 **붙여넣기**를 클릭 합니다.
+4. **편집** 메뉴에서 **붙여넣기**를 클릭합니다.
 
     - 서로 연결하는 모든 관계의 복사본과 함께 요소의 복사본이 나타납니다.
 
@@ -270,7 +270,7 @@ ms.locfileid: "74295529"
 
    솔루션 탐색기에서 복사 및 붙여넣어 다이어그램을 복제할 수는 없습니다.
 
-## <a name="Deleting"></a>모델 요소 또는 해당 뷰 삭제
+## <a name="deleting-a-model-element-or-its-views"></a><a name="Deleting"></a> 모델 요소 또는 해당 뷰 삭제
  일부 종류의 요소, 특히 분류자는 모델에서 삭제하지 않고 다이어그램에서 제거할 수 있습니다. 분류자는 클래스 다이어그램, 구성 요소 다이어그램 및 사용 사례 다이어그램에 표시되는 주요 요소입니다. 두 개 이상의 다이어그램에 표시될 수 있습니다. 이러한 형식의 요소에는 두 가지 별도의 명령인 **다이어그램에서 제거** 와 **모델에서 삭제**가 있습니다.
 
  반면, 다이어그램에서 관계를 삭제하는 경우 항상 모델에서 삭제됩니다.
@@ -307,7 +307,7 @@ ms.locfileid: "74295529"
 
      관계가 모델에서 삭제되고 표시되는 모든 다이어그램에서 삭제됩니다.
 
-## <a name="presentation"></a>프레젠테이션을 위한 다이어그램 준비
+## <a name="preparing-a-diagram-for-presentation"></a><a name="presentation"></a> 프레젠테이션을 위한 다이어그램 준비
  다음 기능은 다이어그램의 특정 부분으로 주의를 끌거나, 설명을 추가하거나, 다이어그램을 관심 있는 여러 영역으로 나누는 데 도움이 됩니다.
 
 - Word, PowerPoint 또는 기타 문서에 다이어그램의 일부를 복사할 수 있습니다. 원하는 셰이프 및 연결선을 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **복사**를 클릭 합니다.
@@ -323,8 +323,8 @@ ms.locfileid: "74295529"
 ### <a name="to-export-a-diagram-as-an-image"></a>다이어그램을 이미지로 내보내려면
  자세한 내용은 [다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)를 참조 하세요.
 
-## <a name="extensions"></a>UML 디자이너 확장
+## <a name="extending-the-uml-designers"></a><a name="extensions"></a> UML 디자이너 확장
  UML 도구에 새 기능을 추가하고 사용자 고유의 요구에 따라 다이어그램 표기법을 조정할 수 있습니다. 자세한 내용은 [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md) [아키텍처 분석 및 모델링 아키텍처](../modeling/analyze-and-model-your-architecture.md) [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)

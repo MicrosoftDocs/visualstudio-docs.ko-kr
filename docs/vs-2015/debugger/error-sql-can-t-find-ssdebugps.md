@@ -1,5 +1,5 @@
 ---
-title: '오류: SQL 수&#39;t에서 SSDEBUGPS를 찾을 | Microsoft Docs'
+title: '오류: SQL에서 SSDEBUGPS를 찾을 수 없음 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185205"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>오류: SQL 수&#39;t에서 SSDEBUGPS를 찾을
+# <a name="error-sql-can39t-find-ssdebugps"></a>오류: SQL에서 SSDEBUGPS를 찾을 수 없음
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SSDEBUGPS.dll은 SQL Server 디버깅 호스트 구성 요소입니다.  
@@ -33,9 +33,9 @@ SSDEBUGPS.dll은 SQL Server 디버깅 호스트 구성 요소입니다.
   
  이 오류를 해결하는 데에는 두 가지 방법이 있습니다. 즉, 원격 디버깅 설치 프로그램을 다시 실행하거나 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 머신에 해당 파일을 복사합니다.  
   
- 원격 디버깅 설치 프로그램을 다시 실행 하려면의 지침을 따르세요 [원격 디버깅](../debugger/remote-debugging.md)합니다.  
+ 원격 디버깅 설치를 다시 실행하려면 [원격 디버깅](../debugger/remote-debugging.md)에 나와 있는 지침을 따르세요.  
   
- ssdebugps.dll의 복사본을 찾을 수 있으면 이 파일을 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 머신에 복사할 수 있습니다. 이 파일이 있는 경우 위치는 \Program Files\Common Files\Microsoft Shared\SQL Debugging 디렉터리입니다. 다른 할 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 컴퓨터나 컴퓨터 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 설치 합니다.  
+ ssdebugps.dll의 복사본을 찾을 수 있으면 이 파일을 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 머신에 복사할 수 있습니다. 이 파일이 있는 경우 위치는 \Program Files\Common Files\Microsoft Shared\SQL Debugging 디렉터리입니다. 다른 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 컴퓨터 또는가 설치 된 컴퓨터에서 찾을 수 있습니다 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] .  
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>SQL Server 2005 컴퓨터에 SSDEBUGPS.dll을 복사하려면  
   
