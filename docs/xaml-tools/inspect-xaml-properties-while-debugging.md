@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331081"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>디버그하는 동안 XAML 속성 검사
@@ -24,13 +24,13 @@ ms.locfileid: "85331081"
 |앱 유형|운영 체제 및 도구|
 |-----------------|--------------------------------|
 |Windows Presentation Foundation(4.0 이상) 애플리케이션|Windows 7 이상|
-|유니버설 Windows 앱|Windows 10 이상 ( [windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk) 포함)|
+|Universal Windows 앱|Windows 10 이상 ( [windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk) 포함)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>라이브 시각적 트리의 요소 살펴보기
 
 목록 보기 및 단추가 있는 매우 간단한 WPF 애플리케이션을 시작하겠습니다. 단추를 클릭할 때마다 다른 항목이 목록에 추가됩니다. 짝수 번호 항목은 회색으로 표시되고 홀수 번호 항목은 노란색으로 표시됩니다.
 
-### <a name="create-the-project"></a>프로젝트 만들기
+### <a name="create-the-project"></a>프로젝트를 만듭니다.
 
 1. 새 c # wpf 응용 프로그램을 만들고 (**파일**  >  **새로**만들기)  >  **Project**"c # wpf"를 입력 한 다음 **wpf 앱 (.net Core)** 또는 **wpf 앱 (.NET Framework)** 을 선택 합니다. **TestXAML**로 이름을 지정합니다.
 
@@ -150,6 +150,6 @@ ms.locfileid: "85331081"
 
 4. Visual Studio의 두 번째 인스턴스에서 **라이브 시각적 트리**(**디버그 > 창 > 라이브 시각적 트리**)를 엽니다. **TestXaml** UI 요소가 표시되어야 하고 애플리케이션을 직접 디버그하는 동안 했던 것처럼 해당 요소를 조작할 수 있어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 [XAML 핫 다시 로드를 사용 하 여 실행 중인 XAML 코드 작성 및 디버그](xaml-hot-reload.md)

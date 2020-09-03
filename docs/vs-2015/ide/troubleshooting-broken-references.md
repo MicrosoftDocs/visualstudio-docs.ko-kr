@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1dd1312fc5728fbb68994fb6e70e253fa19172e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654795"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
@@ -88,7 +88,7 @@ ms.locfileid: "72654795"
  파일에 액세스할 수 없는 경우 네트워크 연결 실패 또는 인증 실패 등의 다양한 원인이 있을 수 있습니다. 각 원인에는 고유한 복구 방법이 있습니다. 예를 들어 필요한 리소스에 액세스하려면 로컬 관리자에게 문의해야 합니다. 하지만 참조를 삭제하고 참조를 사용한 코드를 수정할 수도 있습니다. 자세한 내용은 [NIB 방법: 참조 추가 대화 상자를 사용하여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)를 참조하세요.
 
 ## <a name="com-component-is-not-installed-on-computer"></a>COM 구성 요소가 컴퓨터에 설치되지 않음
- 사용자가 COM 구성 요소에 대한 참조를 추가했고 두 번째 사용자가 이 구성 요소가 설치되지 않은 컴퓨터에서 코드를 실행하려고 하면 두 번째 사용자에게 참조가 끊어졌다는 오류 메시지가 표시됩니다. 두 번째 컴퓨터에 구성 요소를 설치하면 오류가 수정됩니다. 프로젝트에서 COM 구성 요소 참조를 사용하는 방법에 대한 자세한 내용은 [.NET Framework 애플리케이션의 COM 상호 운용성](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)을 참조하세요.
+ 사용자가 COM 구성 요소에 대한 참조를 추가했고 두 번째 사용자가 이 구성 요소가 설치되지 않은 컴퓨터에서 코드를 실행하려고 하면 두 번째 사용자에게 참조가 끊어졌다는 오류 메시지가 표시됩니다. 두 번째 컴퓨터에 구성 요소를 설치하면 오류가 수정됩니다. 프로젝트에서 COM 구성 요소에 대 한 참조를 사용 하는 방법에 대 한 자세한 내용은 [.NET Framework 응용 프로그램의 Com 상호 운용성](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  프로젝트 디자이너 참조 [소개](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md) [NIB 방법: 참조 추가 대화 상자를 사용 하 여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

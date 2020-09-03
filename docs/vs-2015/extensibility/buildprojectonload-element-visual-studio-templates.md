@@ -9,16 +9,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184658"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-만들고 솔루션에 추가할 때만 새 프로젝트를 빌드합니다. 전체 솔루션 빌드되지 않습니다.  
+는 새 프로젝트를 만들고 솔루션에 추가 하는 경우에만 빌드합니다. 전체 솔루션이 빌드되지 않습니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -41,20 +41,20 @@ ms.locfileid: "68184658"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|TemplateData|템플릿을 분류 하 고 둘 다에 표시 되는 방식을 정의 합니다 **새 프로젝트** 하며 **새 항목 추가** 대화 상자.|  
+|TemplateData|템플릿을 분류 하 고 **새 프로젝트** 및 **새 항목 추가** 대화 상자에서 템플릿을 표시 하는 방법을 정의 합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 여야 `true` 또는 `false` 템플릿에서 만들어질 때 새 프로젝트의 빌드를 여부를 나타내는입니다.  
+ 텍스트는 `true` `false` 새 프로젝트를 템플릿에서 만들 때만 빌드하도록 할지 여부를 나타내는 또는 중 하나 여야 합니다.  
   
 ## <a name="remarks"></a>설명  
  `BuildProjectOnLoad`는 선택적 요소입니다. 기본값은 `false`입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 Visual C# 템플릿에 대 한 메타 데이터를 보여 줍니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 Visual c # 템플릿에 대 한 메타 데이터를 보여 줍니다.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,6 +81,6 @@ ms.locfileid: "68184658"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

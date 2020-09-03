@@ -14,16 +14,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184124"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-하는 경우 `false`, 템플릿을 표시 됨을 지정 합니다. 지정 된 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)합니다.  
+인 경우 `false` 템플릿이 지정 된 템플릿 [groupid](../extensibility/templategroupid-element-visual-studio-templates.md)에만 표시 되도록 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -46,7 +46,7 @@ ms.locfileid: "68184124"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
@@ -58,7 +58,7 @@ ms.locfileid: "68184124"
 ## <a name="remarks"></a>설명  
  `ShowByDefault`는 선택적 요소입니다. 기본값은 `true`입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 템플릿의 메타데이터를 보여 줍니다.  
   
 ```  

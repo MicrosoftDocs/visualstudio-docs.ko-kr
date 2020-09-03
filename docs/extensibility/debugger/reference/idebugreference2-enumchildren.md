@@ -1,5 +1,5 @@
 ---
-title: IDebug참조2::에넘어린이 | 마이크로 소프트 문서
+title: 'IDebugReference2:: EnumChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720624"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-참조의 선택한 자식 목록을 가져옵니다. 다음에 사용하도록 예약됩니다.
+참조의 선택 된 자식 목록을 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,27 +51,27 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-【인】 열거된 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체의 필드를 지정하는 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 열거형의 플래그 조합입니다.
+진행 열거 된 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체에서 채울 필드를 지정 하는 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 열거형의 플래그 조합입니다.
 
 `dwRadix`\
-【인】 숫자 정보를 서식 지정하는 데 사용할 radix입니다.
+진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.
 
 `dwAttribFilter`\
-【인】 매개변수와 함께 필터로 사용되는 DBG_ATTRIB_FLAGS 열거형의 플래그 를 조합하여 열거할 구조를 선택합니다. [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) `pszNameFilter`
+진행 열거 되는 구조를 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) `pszNameFilter` 선택 하기 위해 매개 변수와 함께 필터로 사용 되는 DBG_ATTRIB_FLAGS 열거형의 플래그 조합입니다.
 
 `pszNameFilter`\
-【인】 `dwAttribFilter` "MyX"와 같은 필터를 지정하는 문자열은 매개 변수와 함께 사용하여 줄바도록 구조를 선택합니다.
+진행 `dwAttribFilter` 열거할 구조를 선택 하기 위해 매개 변수와 함께 사용 되는 필터 (예: "MyX")를 지정 하는 문자열입니다.
 
 `dwTimeout`\
-【인】 이 메서드에서 반환하기 전에 기다릴 수 있는 최대 시간(밀리초)입니다. 무기한 `INFINITE` 대기하는 데 사용합니다.
+진행 이 메서드에서 반환 될 때까지 대기 하는 최대 시간 (밀리초)입니다. `INFINITE`무기한 대기 하려면를 사용 합니다.
 
 `ppEnum`\
-【아웃】 요청된 자식 속성 의 목록을 포함하는 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 개체를 반환합니다.
+제한이 요청 된 자식 속성의 목록을 포함 하는 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

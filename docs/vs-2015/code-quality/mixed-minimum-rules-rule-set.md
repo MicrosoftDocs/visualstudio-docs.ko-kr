@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654864"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Mixed Minimum 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 C++ 포함 하 여 공용 언어 런타임을 지 원하는 프로젝트의 가장 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 C++ 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다.
+Microsoft Mixed Minimum 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트의 가장 중요 한 문제에 중점을 둡니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 해야 합니다.
 
 |                                            규칙                                             |                                                  설명                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

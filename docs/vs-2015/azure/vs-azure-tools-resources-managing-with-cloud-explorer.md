@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
 ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850003"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
@@ -30,7 +30,7 @@ ms.locfileid: "75850003"
 * Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)하거나 [Visual Studio 구독자 혜택을 활성화](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)할 수 있습니다.
 
 > [!NOTE]
-> 클라우드 탐색기를 보려면 메뉴 모음에서 **보기** > **클라우드 탐색기**를 선택합니다.
+> 클라우드 탐색기 보려면 **View**  >  메뉴 모음에서**클라우드 탐색기** 보기를 선택 합니다.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>클라우드 탐색기에 Azure 계정 추가
 

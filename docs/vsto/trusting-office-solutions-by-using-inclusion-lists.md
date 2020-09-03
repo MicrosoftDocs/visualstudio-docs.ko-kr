@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a4787831be31e2f91d668d4e3e7ca91496d7595a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985543"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>포함 목록을 사용 하 여 Office 솔루션 신뢰
@@ -42,6 +42,6 @@ ms.locfileid: "72985543"
 ## <a name="structure-of-the-inclusion-list"></a>포함 목록의 구조
  올바른 포함 목록 항목에는 두 부분이 포함됩니다. 배포 매니페스트에 대한 경로와 솔루션 서명에 사용되는 공개 키입니다. 포함 목록에 추가된 솔루션은 신뢰할 수 있는 것으로 간주됩니다. Office 솔루션이 실행될 때 Office 애플리케이션은 포함 목록의 공개 키를 배포 매니페스트의 서명 키와 비교하여 현재 실행 중인 솔루션이 원래 신뢰된 버전과 동일한지 확인합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

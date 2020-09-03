@@ -19,10 +19,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844444"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>방법: 실패한 Visual Studio 프로젝트 업그레이드 문제 해결
@@ -42,7 +42,7 @@ ms.locfileid: "75844444"
 3. 새 대상을 가리키도록 잘못 된 파일 경로를 수정 합니다.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>참조가 유효 하지 않기 때문에 프로젝트가 빌드되지 않습니다.
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 업그레이드 하는 경우 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]버전을 업그레이드할 수도 있습니다. 프로젝트에 최신 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에서 중지된 참조가 포함되어 있는 경우 올바르게 해결할 수 없을 수 있습니다. 이는 특히 `Microsoft.VisualStudio.Shell.Interop.8.0`와 같은 버전 번호를 포함 하는 참조에 사용할 수 있습니다.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 업그레이드 하는 경우 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]버전을 업그레이드할 수도 있습니다. 프로젝트에 최신 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에서 중지된 참조가 포함되어 있는 경우 올바르게 해결할 수 없을 수 있습니다. 이는 특히 버전 번호를 포함 하는 참조에 사용할 수 있습니다 `Microsoft.VisualStudio.Shell.Interop.8.0` .
 
  코드에 잘못된 참조가 많이 있는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 멀티 타기팅 기능을 사용하여 이전 버전의 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]를 대상하는 하는 것이 가장 쉬운 해결 방법일 수 있습니다.
 
@@ -56,5 +56,5 @@ ms.locfileid: "75844444"
 
    프로젝트를 업그레이드된 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에서 실행하려면 프로젝트에 대한 참조를 업데이트하고 참조를 호출하는 `Imports` 또는 `Using` 문도 업데이트해야 합니다. IDE에서 프로젝트가 로드되는 경우 **솔루션 탐색기** 또는 **참조 관리자** 대화 상자를 사용하여 참조를 업데이트할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [ASP.NET 4로 변환](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844280"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>연습: WPF 및 Entity Framework를 사용하여 WCF 데이터 서비스 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 연습에서는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램에서 호스팅되는 간단한 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 만든 다음 Windows Forms 응용 프로그램에서 액세스 하는 방법을 보여 줍니다.
+이 연습에서는 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 웹 응용 프로그램에서 호스팅되는 간단한를 만든 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 다음 Windows Forms 응용 프로그램에서 액세스 하는 방법을 보여 줍니다.
 
  이 연습에서는 다음과 같은 작업을 수행합니다.
 
@@ -40,8 +40,8 @@ ms.locfileid: "75844280"
 
 - 필요한 경우 애플리케이션에 필터링 기능을 추가합니다.
 
-## <a name="prerequisites"></a>전제 조건
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - Northwind 샘플 데이터베이스
 
@@ -56,7 +56,7 @@ ms.locfileid: "75844280"
 
 #### <a name="to-create-the-web-project"></a>웹 프로젝트를 만들려면
 
-1. 메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 선택 합니다.
+1. 메뉴 모음에서 **파일**, **새로 만들기**,  **프로젝트**를 선택 합니다.
 
 2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **Visual C#** 및 **웹** 노드를 확장한 다음, **ASP.NET 웹 애플리케이션** 템플릿을 선택합니다.
 
@@ -72,7 +72,7 @@ ms.locfileid: "75844280"
 
 2. **새 항목 추가** 대화 상자에서 **데이터** 노드를 선택한 다음, **ADO.NET 엔터티 데이터 모델** 항목을 선택합니다.
 
-3. **이름** 텍스트 상자에 `NorthwindModel`를 입력 한 다음 **추가** 단추를 선택 합니다.
+3. **이름** 텍스트 상자에를 입력 한 `NorthwindModel` 다음 **추가** 단추를 선택 합니다.
 
     엔터티 데이터 모델 마법사가 나타납니다.
 
@@ -82,7 +82,7 @@ ms.locfileid: "75844280"
 
    - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
-        -또는-
+        또는
 
    - **새 연결** 단추를 선택하여 새 데이터 연결을 구성합니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)를 참조 하세요.
 
@@ -108,9 +108,9 @@ ms.locfileid: "75844280"
 
 2. **새 항목 추가** 대화 상자에서 **웹** 노드를 선택한 다음, **WCF Data Service 5.6** 항목을 선택합니다.
 
-3. **이름** 텍스트 상자에 `NorthwindCustomers`를 입력 한 다음 **추가** 단추를 선택 합니다.
+3. **이름** 텍스트 상자에를 입력 한 `NorthwindCustomers` 다음 **추가** 단추를 선택 합니다.
 
-    NorthwindCustomers 파일이 **코드 편집기**에 표시 됩니다.
+    **코드 편집기**에 NorthwindCustomers.svc 파일이 표시됩니다.
 
 4. **코드 편집기**에서 첫 번째 `TODO:` 주석을 찾아 다음 코드로 바꿉니다.
 
@@ -124,7 +124,7 @@ ms.locfileid: "75844280"
 
 6. 메뉴 모음에서 **디버그**, **디버깅 하지 않고 시작** 을 선택 하 여 서비스를 실행 합니다. 브라우저 창이 열리고 서비스에 대한 XML 스키마가 표시됩니다.
 
-7. **주소** 표시줄에 NorthwindCustomers에 대 한 URL의 끝에 `Customers`를 입력 한 다음 **enter** 키를 선택 합니다.
+7. **주소** 표시줄에 `Customers` NorthwindCustomers에 대 한 URL의 끝에를 입력 한 다음 **enter** 키를 선택 합니다.
 
     Customers 테이블에 있는 데이터의 XML 표현이 표시됩니다.
 
@@ -144,7 +144,7 @@ ms.locfileid: "75844280"
 
 1. 메뉴 모음에서 파일, **추가**, **새 프로젝트**를 차례로 선택 합니다.
 
-2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **시각적 C#**  노드를 확장 하 고 **Windows** 노드를 선택한 다음 **Windows Forms 응용 프로그램**을 선택 합니다.
+2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **Visual c #** 노드를 확장 하 고 **Windows** 노드를 선택한 다음 **Windows Forms 응용 프로그램**을 선택 합니다.
 
 3. **이름** 텍스트 상자에 `NorthwindClient`를 입력하고 **확인** 단추를 선택합니다.
 
@@ -219,7 +219,7 @@ ms.locfileid: "75844280"
 
    ```
 
-6. **솔루션 탐색기**에서 NorthwindCustomers 파일에 대 한 바로 가기 메뉴를 열고 **브라우저에서 보기**를 선택 합니다. Internet Explorer가 열리고 서비스에 대한 XML 스키마가 표시됩니다.
+6. **솔루션 탐색기**에서 NorthwindCustomers.svc 파일에 대한 바로 가기 메뉴를 열고 **브라우저에서 보기**를 선택합니다. Internet Explorer가 열리고 서비스에 대한 XML 스키마가 표시됩니다.
 
 7. Internet Explorer 주소 표시줄에서 URL을 복사합니다.
 
@@ -238,9 +238,9 @@ ms.locfileid: "75844280"
 
 1. **솔루션 탐색기**에서 **Form1.vb** 또는 **Form1.cs** 노드의 바로 가기 메뉴를 열고 **열기**를 선택합니다.
 
-2. <xref:System.Windows.Forms.Button>도구 상자**에서 <xref:System.Windows.Forms.TextBox> 컨트롤 및**  컨트롤을 폼에 추가합니다.
+2. <xref:System.Windows.Forms.Button>도구 상자**에서 <xref:System.Windows.Forms.TextBox> 컨트롤 및 ** 컨트롤을 폼에 추가합니다.
 
-3. <xref:System.Windows.Forms.Button> 컨트롤에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택한 후 `Button1_Click` 이벤트 처리기에서 다음 코드를 추가 합니다.
+3. 컨트롤에 대 한 바로 가기 메뉴 <xref:System.Windows.Forms.Button> 를 열고 **코드 보기**를 선택한 다음 이벤트 처리기에서 다음 코드를 추가 합니다 `Button1_Click` .
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -275,5 +275,5 @@ ms.locfileid: "75844280"
 
 6. 텍스트 상자에 **London**을 입력한 다음, 단추를 선택합니다. London의 고객만 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 Windows Communication Foundation Services 및 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) [방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

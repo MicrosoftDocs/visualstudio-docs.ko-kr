@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 892e9615599a8881e219c00f748a0cc1567d996d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850039"
 ---
 # <a name="configuring-targets-and-tasks"></a>대상 및 작업 구성
@@ -31,5 +31,5 @@ MSBuild 대상 및 작업을 구성하여 MSBuild를 통해 out-of-process로 �
   
  대상 컨텍스트를 직접 만들려면 이러한 인수 및 매개 변수를 적절하게 설정해야 합니다. .NET Framework 4.5 Microsoft.Common.targets 파일과 Microsoft.Common.Tasks 파일에서 예제를 살펴봅니다.  여러 대상 컨텍스트를 사용하여 작업할 수 있는 사용자 지정 작업 만들기 또는 기존 작업을 수정하는 방법에 대한 자세한 내용은 [방법: 대상 및 작업 구성](../msbuild/how-to-configure-targets-and-tasks.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)

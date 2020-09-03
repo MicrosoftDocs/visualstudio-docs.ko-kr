@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 7290ba820c9b678e0b87bdbeaadf9c025162e8ae
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844470"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
@@ -30,24 +30,24 @@ ms.locfileid: "75844470"
   
  [전제 조건](#Prerequisites)  
   
- [iOS용 원격 에이전트 설치](#Install)  
+ [IOS 용 원격 에이전트 설치](#Install)  
   
  [원격 에이전트 시작](#Start)  
   
  [Visual Studio에서 원격 에이전트 구성](#ConfigureVS)  
   
- [Generate a new security PIN](#GeneratePIN)  
+ [새 보안 PIN 생성](#GeneratePIN)  
   
  [새 서버 인증서 생성](#GenerateCert)  
   
- [Configure the remote agent on the Mac](#ConfigureMac)  
+ [Mac에서 원격 에이전트 구성](#ConfigureMac)  
   
-## <a name="Prerequisites"></a> 필수 구성 요소  
+## <a name="prerequisites"></a><a name="Prerequisites"></a> 필수 조건  
  원격 에이전트를 설치 및 사용하여 iOS용 코드를 개발하려면 다음 필수 조건이 있어야 합니다.  
   
 - OS X Mavericks 이상을 실행하는 Mac 컴퓨터  
   
-- [Apple ID](https://appleid.apple.com/)  
+- [APPLE ID](https://appleid.apple.com/)  
   
 - Apple의 활성 [iOS 개발자 프로그램](https://developer.apple.com/programs/ios/) 계정  
   
@@ -69,7 +69,7 @@ ms.locfileid: "75844470"
   
      프로비저닝 프로필을 만드는 방법에 대한 자세한 내용은 iOS 개발자 라이브러리에서 [회원 센터를 사용하여 프로비저닝 프로필 만들기](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) 를 참조하세요.  
   
-- [Node.js](https://nodejs.org/en/)  
+- [Node.JS](https://nodejs.org/en/)  
   
 - npm의 업데이트된 버전  
   
@@ -77,18 +77,18 @@ ms.locfileid: "75844470"
   
      `sudo npm install -g npm@latest`  
   
-## <a name="Install"></a> iOS용 원격 에이전트 설치  
+## <a name="install-the-remote-agent-for-ios"></a><a name="Install"></a> iOS용 원격 에이전트 설치  
  플랫폼 간 모바일 개발용 Visual C++를 설치하는 경우 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](https://www.npmjs.com/package/vcremote)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.  
   
- 원격 에이전트를 설치하기 전에 [필수 조건](#Prerequisites) 을 충족하고 [플랫폼 간 모바일 개발용 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)를 설치했는지 확인합니다.  
+ 원격 에이전트를 설치 하기 전에 [필수 구성 요소](#Prerequisites) 를 충족 하 고 [플랫폼 간 모바일 개발용 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)를 설치 했는지 확인 합니다.  
   
-### <a name="DownloadInstall"></a> 원격 에이전트를 다운로드하여 설치하려면  
+### <a name="to-download-and-install-the-remote-agent"></a><a name="DownloadInstall"></a> 원격 에이전트를 다운로드하여 설치하려면  
   
 - Mac의 터미널 앱에서 다음 명령을 입력합니다.  
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   전역 설치( **-g**) 스위치는 사용하는 것이 좋지만 반드시 사용할 필요는 없습니다.  
+   전역 설치(**-g**) 스위치는 사용하는 것이 좋지만 반드시 사용할 필요는 없습니다.  
   
    설치하는 동안 vcremote가 설치되고 Mac에서 개발자 모드가 활성화됩니다. [Homebrew](https://brew.sh/) 및 vcremote-lib 및 vcremote-utils의 두 npm 패키지도 설치됩니다.  
   
@@ -97,10 +97,10 @@ ms.locfileid: "75844470"
   
   Visual Studio를 새 버전으로 업데이트하는 경우 현재 원격 에이전트 버전도 업데이트해야 합니다. 원격 에이전트를 업데이트하려면 원격 에이전트 다운로드 및 설치 단계를 반복합니다.  
   
-## <a name="Start"></a> 원격 에이전트 시작  
+## <a name="start-the-remote-agent"></a><a name="Start"></a> 원격 에이전트 시작  
  Visual Studio에서 iOS 코드를 빌드 및 실행하려면 원격 에이전트가 실행되고 있어야 합니다. Visual Studio가 원격 에이전트와 쌍으로 연결되어야 통신할 수 있습니다. 기본적으로 원격 에이전트는 Visual Studio와 쌍으로 연결되기 위해 PIN이 필요한 보안된 연결 모드로 실행됩니다.  
   
-### <a name="RemoteAgentStartServer"></a> 원격 에이전트를 시작하려면  
+### <a name="to-start-the-remote-agent"></a><a name="RemoteAgentStartServer"></a> 원격 에이전트를 시작하려면  
   
 - Mac의 터미널 앱에서 다음 명령을 입력합니다.  
   
@@ -136,7 +136,7 @@ ms.locfileid: "75844470"
   
 - vcremote가 실행되는 터미널 창에서 `Control+C`를 입력합니다.  
   
-## <a name="ConfigureVS"></a> Visual Studio에서 원격 에이전트 구성  
+## <a name="configure-the-remote-agent-in-visual-studio"></a><a name="ConfigureVS"></a> Visual Studio에서 원격 에이전트 구성  
  Visual Studio에서 원격 에이전트에 연결하려면 Visual Studio 옵션에서 원격 구성을 지정해야 합니다.  
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio에서 원격 에이전트를 구성하려면  
@@ -149,7 +149,7 @@ ms.locfileid: "75844470"
   
 3. Visual Studio 메뉴 모음에서 **도구**, **옵션**을 차례로 선택합니다.  
   
-4. **옵션** 대화 상자에서 **플랫폼 간**, **C++** , **iOS**를 확장합니다.  
+4. **옵션** 대화 상자에서 **플랫폼 간**, **C++**, **iOS**를 확장합니다.  
   
 5. **호스트 이름** 및 **포트** 필드에서 시작할 때 원격 에이전트에 의해 지정된 값을 입력합니다. 호스트 이름은 Mac의 DNS 이름 또는 IP 주소일 수 있습니다. 기본 포트는 3030입니다.  
   
@@ -166,13 +166,13 @@ ms.locfileid: "75844470"
   
     연결이 성공하지 못한 경우 [Start the remote agent](#Start)의 단계에 따라 원격 에이전트가 실행되고 있는지 확인합니다. 원격 에이전트 PIN이 생성된 이후 너무 많은 시간이 경과한 경우 Mac에서 [Generate a new security PIN](#GeneratePIN) 의 단계를 따른 후 다시 시도합니다. Mac의 호스트 이름을 사용하는 경우 **호스트 이름** 필드에 대신 IP 주소를 사용하여 시도합니다.  
   
-8. **원격 루트** 필드의 폴더 이름을 업데이트하여 Mac의 홈(~) 디렉터리에서 원격 에이전트에 사용되는 폴더를 지정합니다. 기본적으로 원격 에이전트는 /Users/`username`/vcremote를 원격 루트로 사용합니다.  
+8. **원격 루트** 필드의 폴더 이름을 업데이트 하 여 Mac의 홈 (~) 디렉터리에서 원격 에이전트에 사용 되는 폴더를 지정 합니다. 기본적으로 원격 에이전트는 /Users/`username`/vcremote를 원격 루트로 사용합니다.  
   
 9. **확인** 을 선택하여 원격 연결 설정을 저장합니다.  
   
    Visual Studio는 사용할 때마다 동일한 정보를 사용하여 Mac의 원격 에이전트에 연결합니다. Mac에서 새 보안 인증서를 생성하거나 해당 호스트 이름 또는 IP 주소가 변경되지 않는 한 Visual Studio를 원격 에이전트와 쌍으로 다시 연결할 필요가 없습니다.  
   
-## <a name="GeneratePIN"></a> Generate a new security PIN  
+## <a name="generate-a-new-security-pin"></a><a name="GeneratePIN"></a> Generate a new security PIN  
  원격 에이전트를 처음 시작하는 경우 생성된 PIN은 제한된 시간(기본적으로 10분) 동안만 유효합니다. 시간이 만료되기 전에 Visual Studio를 원격 에이전트와 쌍으로 연결하지 않으면 새 PIN을 생성해야 합니다.  
   
 #### <a name="to-generate-a-new-pin"></a>새 PIN을 생성하려면  
@@ -185,7 +185,7 @@ ms.locfileid: "75844470"
   
      원격 에이전트가 새 임시 PIN을 생성합니다. 새 PIN을 사용하여 Visual Studio를 쌍으로 연결하려면 [Visual Studio에서 원격 에이전트 구성](#ConfigureVS)의 단계를 반복합니다.  
   
-## <a name="GenerateCert"></a> 새 서버 인증서 생성  
+## <a name="generate-a-new-server-certificate"></a><a name="GenerateCert"></a> 새 서버 인증서 생성  
  보안을 위해, Visual Studio를 원격 에이전트와 연결하는 서버 인증서는 Mac의 IP 주소 또는 호스트 이름에 연결되어 있습니다. 이러한 값이 변경되면 새 서버 인증서를 생성한 후 Visual Studio를 새 값으로 다시 구성해야 합니다.  
   
 #### <a name="to-generate-a-new-server-certificate"></a>새 서버 인증서를 생성하려면  
@@ -206,7 +206,7 @@ ms.locfileid: "75844470"
   
 5. 새 PIN을 사용하여 Visual Studio를 쌍으로 연결하려면 [Visual Studio에서 원격 에이전트 구성](#ConfigureVS)의 단계를 반복합니다.  
   
-## <a name="ConfigureMac"></a> Configure the remote agent on the Mac  
+## <a name="configure-the-remote-agent-on-the-mac"></a><a name="ConfigureMac"></a> Configure the remote agent on the Mac  
  다양한 명령줄 옵션을 사용하여 원격 에이전트를 구성할 수 있습니다. 예를 들어 빌드 요청을 수신할 포트와 파일 시스템에 유지할 최대 빌드 수를 지정할 수 있습니다. 기본적으로 해당 제한은 10개 빌드입니다. 원격 에이전트는 종료 시 최대값을 초과하는 빌드를 제거합니다.  
   
 #### <a name="to-configure-the-remote-agent"></a>원격 에이전트를 구성하려면  
@@ -225,7 +225,7 @@ ms.locfileid: "75844470"
   
      `vcremote --serverDir directory_path`  
   
-     여기서 *directory_path* 는 로그 파일, 빌드 및 서버 인증서를 배치할 Mac의 위치입니다. 기본적으로 이 위치는 /Users/*사용자 이름*/vcremote입니다. 빌드는 이 위치에 빌드 번호를 기준으로 구성됩니다.  
+     여기서 *directory_path* 는 로그 파일, 빌드 및 서버 인증서를 배치할 Mac의 위치입니다. 기본적으로이 위치는/*사용자/사용자 이름*/vcremote 인입니다. 빌드는 이 위치에 빌드 번호를 기준으로 구성됩니다.  
   
 - 백그라운드 프로세스를 사용하여 `stdout` 및 `stderr` 을 server.log라는 파일에 캡처하려면 다음을 입력합니다.  
   
@@ -239,5 +239,5 @@ ms.locfileid: "75844470"
   
      여기서 *config_file_path* 는 JSON 형식의 구성 파일 경로입니다. 시작 옵션과 해당 값에 대시가 포함되어서는 안 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+## <a name="see-also"></a>관련 항목  
+ [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

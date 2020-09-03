@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849264"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>방법: 워크플로 디버거 호출
@@ -26,7 +26,7 @@ ms.locfileid: "75849264"
 - 원격 디버깅을 사용합니다. 원격 디버깅 사용에 대 한 자세한 내용은 [방법: 원격 디버깅 사용](https://msdn.microsoft.com/library/febz73k0.aspx)을 참조 하세요.
 
     > [!NOTE]
-    > 워크플로 응용 프로그램에서 x86 아키텍처를 대상으로 하 고 64 비트 운영 체제를 실행 하는 컴퓨터에서 호스트 되는 경우 원격 컴퓨터에 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 설치 되지 않았거나 워크플로 응용 프로그램의 대상이 **모든 CPU**로 변경 되지 않으면 원격 디버깅은 작동 하지 않습니다.
+    > 워크플로 응용 프로그램에서 x86 아키텍처를 대상으로 하 고 64 비트 운영 체제를 실행 하는 컴퓨터에서 호스트 되는 경우 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 가 원격 컴퓨터에 설치 되지 않았거나 워크플로 응용 프로그램의 대상이 **모든 CPU**로 변경 되지 않으면 원격 디버깅이 작동 하지 않습니다.
 
 ### <a name="stepping-through-code"></a>단계별 코드 실행
 
@@ -40,5 +40,5 @@ ms.locfileid: "75849264"
 
 - 워크플로 콘솔 응용 프로그램 프로젝트를 빌드하는 경우에는 **F5** 키를 눌러 응용 프로그램 및 워크플로에 대 한 디버깅을 시작 하면 됩니다. 활동 라이브러리를 자체적으로 빌드하려는 경우 시작 프로젝트인 실행 가능 호스트 애플리케이션이 있어야 합니다. **솔루션 탐색기**에서 시작 프로젝트를 설정 하려면 호스트의 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정**을 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [방법: 워크플로에 중단점 설정](../workflow-designer/how-to-set-breakpoints-in-workflows.md) [워크플로 디자이너 사용 하 여 워크플로 디버깅](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

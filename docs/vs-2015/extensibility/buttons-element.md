@@ -1,5 +1,5 @@
 ---
-title: 요소 단추 | Microsoft Docs
+title: Buttons 요소 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8e0a17e3580b238c63a23e5943e98afbbb9268b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184559"
 ---
 # <a name="buttons-element"></a>Buttons 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-그룹 [단추](../extensibility/button-element.md) 개별 명령을 나타내는 요소입니다.  
+개별 명령을 나타내는 [단추](../extensibility/button-element.md) 요소를 그룹화 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,22 +37,22 @@ ms.locfileid: "68184559"
   
 ### <a name="attributes"></a>특성  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|[Buttons 요소](../extensibility/buttons-element.md)|단추 요소를 그룹화합니다.|  
-|[Button 요소](../extensibility/button-element.md)|사용자가 상호 작용할 수 있는 명령을 정의 합니다.|  
+|[Buttons 요소](../extensibility/buttons-element.md)|단추 요소를 그룹화 합니다.|  
+|[Button 요소](../extensibility/button-element.md)|사용자가 조작할 수 있는 명령을 정의 합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다.|  
+|[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다.|  
   
 ## <a name="example"></a>예제  
   
@@ -69,5 +69,5 @@ ms.locfileid: "68184559"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

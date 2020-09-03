@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184095"
 ---
 # <a name="comparing-properties-and-items"></a>속성 및 항목 비교
@@ -56,7 +56,7 @@ MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을
   
  위의 코드는 대상 목록에 CustomBuild 대상을 추가하면서 `BuildDependsOn`에 `BeforeBuild;CoreBuild;AfterBuild;CustomBuild` 값을 제공합니다.  
   
- MSBuild 4.0부터는 대상 종속성 주입이 더 이상 사용되지 않습니다. 대신 `AfterTargets` 및 `BeforeTargets` 특성을 사용하세요. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.  
+ MSBuild 4.0부터는 대상 종속성 주입이 더 이상 사용되지 않습니다. 대신 `AfterTargets` 및 `BeforeTargets` 특성을 사용하세요. 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조 하세요.  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>문자열과 항목 목록 간의 변환  
  MSBuild는 필요에 따라 항목 종류 및 문자열 값 간의 변환을 수행합니다. 항목 목록이 문자열 값이 되는 방법을 알아보려면 항목 종류가 MSBuild 속성의 값으로 사용되는 경우 발생하는 상황을 고려해야 합니다.  
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [고급 개념](../msbuild/msbuild-advanced-concepts.md)

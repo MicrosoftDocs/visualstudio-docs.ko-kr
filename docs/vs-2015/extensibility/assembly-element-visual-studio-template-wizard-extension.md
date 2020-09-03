@@ -1,5 +1,5 @@
 ---
-title: Assembly 요소 (Visual Studio 템플릿 마법사 확장명) | Microsoft Docs
+title: Assembly 요소 (Visual Studio 템플릿 마법사 확장) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184728"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소(Visual Studio 템플릿 마법사 확장)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이름 또는 구현 하는 어셈블리의 강력한 이름을 지정 합니다 `IWizard` 인터페이스입니다.  
+인터페이스를 구현 하는 어셈블리의 이름 또는 강력한 이름을 지정 합니다 `IWizard` .  
   
  \<VSTemplate>  
 \<WizardExtension>  
-\<어셈블리 >  
+\<Assembly>  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,18 +48,18 @@ ms.locfileid: "68184728"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|템플릿 마법사를 사용자 지정에 대 한 등록 요소를 포함 합니다.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|템플릿 마법사를 사용자 지정 하기 위한 등록 요소를 포함 합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 구현 하는 어셈블리를 지정 하는이 텍스트는 `IWizard` 인터페이스입니다. 전체 어셈블리 이름으로이 어셈블리 이름을 지정 해야 합니다. `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` )을 입력합니다.  
+ 이 텍스트는 인터페이스를 구현 하는 어셈블리를 지정 합니다 `IWizard` . 이 어셈블리 이름은 전체 어셈블리 이름으로 지정 해야 합니다. 예들 들어 `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`입니다.  
   
 ## <a name="remarks"></a>설명  
  `Assembly`은 `WizardExtension`의 필수 자식 요소입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows 응용 프로그램입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 Windows 응용 프로그램에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] .  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -89,7 +89,7 @@ ms.locfileid: "68184728"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)

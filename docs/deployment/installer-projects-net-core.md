@@ -12,10 +12,10 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88714400"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio 설치 관리자 프로젝트 확장 및 .NET Core 3.1
@@ -54,7 +54,7 @@ WPF/WinForms 응용 프로그램에 대해 .net **Core runtime** ... 옵션을 �
 >[!NOTE]
 >이러한 항목은 Visual Studio 2019 업데이트 7 릴리스부터 제공 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [필수 조건 대화 상자](../ide/reference/prerequisites-dialog-box.md)
 - [응용 프로그램 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)

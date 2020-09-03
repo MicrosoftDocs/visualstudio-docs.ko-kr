@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184610"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-생성 된 후 즉시 프로젝트를 빌드할 것인지 지정 합니다.  
+프로젝트를 만든 직후에 프로젝트를 빌드할 것인지 여부를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -46,19 +46,19 @@ ms.locfileid: "68184610"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 여야 `true` 또는 `false`를 만든 후에 즉시 프로젝트 빌드를 나타내는입니다.  
+ 텍스트는 `true` `false` 생성 직후 프로젝트를 빌드 하는지 여부를 나타내는 또는 여야 합니다.  
   
 ## <a name="remarks"></a>설명  
- `BuildProjectOnLoad` 선택적 특성이입니다. 기본값은 `false`입니다.  
+ `BuildProjectOnLoad` 는 선택적 특성입니다. 기본값은 `false`입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 템플릿의 메타데이터를 보여 줍니다.  
   
 ```  
@@ -86,7 +86,7 @@ ms.locfileid: "68184610"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [TemplateContent 요소 (Visual Studio 템플릿)](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

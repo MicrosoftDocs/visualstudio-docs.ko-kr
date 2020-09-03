@@ -1,5 +1,5 @@
 ---
-title: IDebug참조2::GetReferenceInfo | 마이크로 소프트 문서
+title: 'IDebugReference2:: GetReferenceInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720427"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-참조를 설명하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조를 가져옵니다. 다음에 사용하도록 예약됩니다.
+참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,27 +51,27 @@ int GetReferenceInfo ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-【인】 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조에서 입력할 필드를 결정하는 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 열거형의 플래그 조합입니다.
+진행 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조에서 채울 필드를 결정 하는 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 열거형의 플래그 조합입니다.
 
 `nRadix`\
-【인】 숫자 정보를 서식 지정하는 데 사용할 radix입니다.
+진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.
 
 `dwTimeout`\
-【인】 이 메서드에서 반환하기 전에 기다릴 수 있는 최대 시간(밀리초)입니다. 무기한 `INFINITE` 대기하는 데 사용합니다.
+진행 이 메서드에서 반환 될 때까지 대기 하는 최대 시간 (밀리초)입니다. `INFINITE`무기한 대기 하려면를 사용 합니다.
 
 `rgpArgs`\
-【인】 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체의 배열입니다. 향후 사용을 위해 예약; null 값으로 설정합니다.
+진행 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체의 배열입니다. 나중에 사용 하도록 예약 되어 있습니다. 을 null 값으로 설정 합니다.
 
 `dwArgCount`\
-【인】 배열의 참조 인수 수입니다. `rgpArgs` 향후 사용을 위해 예약; 0으로 설정합니다.
+진행 배열에 있는 참조 인수의 수 `rgpArgs` 입니다. 나중에 사용 하도록 예약 되어 있습니다. 을 0으로 설정 합니다.
 
 `pReferenceInfo`\
-【아웃】 속성에 대한 설명으로 채워진 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조입니다.
+제한이 속성에 대 한 설명과 함께 채워지는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

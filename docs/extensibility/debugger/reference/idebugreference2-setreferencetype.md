@@ -1,5 +1,5 @@
 ---
-title: IDebug참조2::설정 참조 유형 | 마이크로 소프트 문서
+title: 'IDebugReference2:: SetReferenceType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 346a95f553b8bb7f246a37555dc191b0fb22ac9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720359"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-참조 유형을 설정합니다. 다음에 사용하도록 예약됩니다.
+참조 형식을 설정 합니다. 나중에 사용하기 위해 예약되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int SetReferenceType ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwRefType`\
-【인】 참조 형식을 지정하는 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 열거형의 값입니다.
+진행 참조 형식을 지정 하는 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 열거형의 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

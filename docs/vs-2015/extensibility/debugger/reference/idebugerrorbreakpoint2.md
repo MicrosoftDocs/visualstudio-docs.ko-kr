@@ -13,48 +13,48 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9895caedebfba637eb47198c408e973e6609fcc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183953"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 인터페이스에는 오류 또는 잘못 된 위치, 잘못 된 식, 이유는 보류 중인 중단점에 바인딩되지 (코드 등, 아직 로드 되지 않은) 하는 이유 등 경고 중단점을 나타냅니다.  
+이 인터페이스는 잘못 된 위치, 잘못 된 식 등의 오류 또는 경고 중단점 또는 보류 중인 중단점이 바인딩되지 않은 이유 (코드는 아직 로드 되지 않은 경우)를 나타냅니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugErrorBreakpoint2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 디버그 엔진을 중단점에 대 한 지원의 일부로이 인터페이스를 구현합니다. 이 인터페이스는 중단점 바인딩을 사용 하 여 문제를 보고에 사용 됩니다.  
+ 디버그 엔진은 중단점에 대 한 지원의 일부로이 인터페이스를 구현 합니다. 이 인터페이스는 중단점 바인딩에 대 한 문제를 보고 하는 데 사용 됩니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 에 대 한 호출 [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) 이 인터페이스를 가져옵니다. 이 인터페이스를 반환할 수도 있습니다 (나타내는 목록의 일부로 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 인터페이스)를 호출 하 여 [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 하거나 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)합니다.  
+## <a name="notes-for-callers"></a>호출자 참고 사항  
+ [Geterrorbreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) 호출 되 면이 인터페이스가 획득 됩니다. 이 인터페이스는 [Canbind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 또는 [enumerrorbreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)을 호출 하 여 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 인터페이스가 나타내는 목록의 일부로 반환 될 수도 있습니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDebugErrorBreakpoint2`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDebugErrorBreakpoint2` .  
   
-|메서드|Description|  
+|메서드|설명|  
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|오류를 발생 시킨 보류 중인 중단점을 가져옵니다.|  
-|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|오류를 설명 하는 중단점 오류 해상도를 가져옵니다.|  
+|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|오류를 설명 하는 중단점 오류 확인을 가져옵니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)   
  [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
- [다음](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)   
+ [그런](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)

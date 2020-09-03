@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850068"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM 탐색기를 사용하여 레이아웃 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content .png "windows_and_phone_content")  
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  DOM 탐색기의 **레이아웃** 탭에는 [앱, Windows Phone 스토어 앱 또는 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에서 선택한 요소에 대한](https://www.w3.org/TR/CSS2/box.html) CSS 상자 모델 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 을 보여 줍니다. 상자 모델의 이 시각적 표현을 사용하여 요소의 모양을 좌우하는 레이아웃 관련 값을 식별하고 수정할 수 있습니다.  
   
@@ -87,7 +87,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
   
 9. Phone 에뮬레이터 또는 시뮬레이터에서 절반이 잘린 이미지 중 하나의 오른쪽 회색 절반을 선택합니다. 다음과 같이 Windows Phone 에뮬레이터에 표시된 대로 선택한 요소 주위가 강조 표시됩니다.  
   
-     ![DOM 요소 선택](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
+     ![DOM 요소 선택 중](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
     > 시뮬레이터에서는 요소를 선택하기 전에 요소를 마우스로 가리키면 DOM 요소 주위에 강조 표시 상자가 표시됩니다. Windows Phone 에뮬레이터에서는 이 기능을 지원하지 않습니다.  
@@ -105,7 +105,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
   
      이 뷰에서는 요소에 대한 몇 가지 유용한 정보를 제공합니다.  
   
-    - 색은 요소를 마우스로 가리킬 때 시뮬레이터에 나타나는 상자 강조 표시에 해당합니다. 파랑 색은 \<img > 요소 차원을 나타냅니다. 태닝 색은 여백 값을 의미합니다.  
+    - 색은 요소를 마우스로 가리킬 때 시뮬레이터에 나타나는 상자 강조 표시에 해당합니다. 파랑 색은 \<img> 요소 차원을 나타냅니다. 태닝 색은 여백 값을 의미합니다.  
   
     - 왼쪽 여백(margin-left)이 설정되어 있으며, 이것은 증상(이미지 왼쪽이 검은색)과 일치하기 때문에 문제의 원인을 암시합니다.  
   
@@ -114,19 +114,19 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 11. margin-left 규칙이 적용되는 방식을 보려면 **계산됨** 탭을 선택하고 margin-left 규칙 아래를 봅니다. 이 규칙이 5em 값으로 설정되어 있는 것을 볼 수 있지만 대상 디바이스에 따라 계산된 값은 66.66px 또는 146.66px가 됩니다.  
   
     > [!TIP]
-    > **계산** 됨 탭에는 여백 왼쪽 규칙이 `..hubpage .hub. section4 .sub-image-row img` css 선택기에 설정 되어 있습니다. 여기에는 허브가 있습니다. 이 데모 응용 프로그램에서 수정해야 합니다.  
+    > **계산** 됨 탭에는 `..hubpage .hub. section4 .sub-image-row img` .Css에 있는 css 선택기에 설정 된 여백 왼쪽 규칙이 표시 됩니다. 이 데모 응용 프로그램에서 수정해야 합니다.  
   
      레이아웃 값의 수정 사항을 테스트할 때도 **레이아웃** 탭을 이용할 수 있습니다.  
   
 12. **레이아웃** 탭에서 상자 왼쪽의 **여백** 상자에 표시되는 **66.66**또는 **146.66** 중 하나를 선택합니다.  
   
-13. `0` 을 입력하고 Enter 키를 누릅니다. (또한 위쪽 화살표 및 아래쪽 화살표 키를 사용해서 값을 변경할 수 있습니다.)  
+13. `0`을 입력하고 Enter 키를 누릅니다. (또한 위쪽 화살표 및 아래쪽 화살표 키를 사용해서 값을 변경할 수 있습니다.)  
   
-14. DOM 탐색기에서 다른 \<img > 요소를 선택 하 고 여백 왼쪽 값을 0으로 변경 합니다.  
+14. \<img>DOM 탐색기에서 다른 요소를 선택 하 고 여백 왼쪽 값을 0으로 변경 합니다.  
   
 15. Phone 에뮬레이터 또는 시뮬레이터로 전환합니다. 업데이트된 margin-left 값이 섹션 4 이미지에 적용되었습니다. 이러한 값은 **계산됨** 탭의 margin-left 규칙에서도 업데이트됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [빠른 시작: HTML 및 CSS  디버그](../debugger/quickstart-debug-html-and-css.md)  
+## <a name="see-also"></a>관련 항목  
+ [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)   
  [DOM 탐색기를 사용 하 여 CSS 스타일 디버그](../debugger/debug-css-styles-using-dom-explorer.md)   
  [DOM 이벤트 수신기 보기](../debugger/view-dom-event-listeners.md)

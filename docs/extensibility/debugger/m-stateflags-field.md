@@ -1,5 +1,5 @@
 ---
-title: m_stateFlags 필드 | 마이크로 소프트 문서
+title: m_stateFlags 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738383"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags 필드
-개체의 현재 상태에 대한 <xref:System.Threading.Tasks.Task> 정보를 저장합니다.
+개체의 현재 상태에 대 한 정보를 저장 <xref:System.Threading.Tasks.Task> 합니다.
 
- **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **조립:** mscorlib *(mscorlib.dll)*
+ **어셈블리:** mscorlib ( *mscorlib.dll*)
 
- .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
+ .NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,9 +33,9 @@ ms.locfileid: "80738383"
 ```
 
 ## <a name="remarks"></a>설명
- 일반적으로 이 <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> 값을 액세스하려면 속성을 사용합니다.
+ 일반적으로 속성을 사용 <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> 하 여이 값에 액세스 합니다.
 
- 이 멤버는 다음 값의 조합일 수 있습니다.
+ 이 멤버는 다음 값을 임의로 조합 하 여 사용할 수 있습니다.
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 
@@ -47,5 +47,5 @@ ms.locfileid: "80738383"
 
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

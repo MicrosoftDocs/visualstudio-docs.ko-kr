@@ -13,24 +13,24 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea37c105114e915e812a470474ccd8f52609056f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184344"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>명령줄 스위치(Visual Studio SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Devenv.exe를 시작 하는 실행 파일을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE), 특히 vspackage 개발에 대 한 명령줄 스위치를 지원 합니다. Vspackage 수 또한 자신의 스위치에서 사용할 수 있도록 Devenv 명령줄입니다. 다음 항목에서는 IDE에서 명령줄 스위치를 사용 하는 방법에 대 한 정보를 제공 합니다.  
+IDE (통합 개발 환경)를 시작 하는 실행 파일인 Devenv.exe는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vspackage 개발을 위한 명령줄 스위치도 지원 합니다. 또한 Vspackage는 Devenv 명령줄에서 사용할 수 있는 고유한 스위치를 만들 수 있습니다. 다음 항목에서는 IDE에서 명령줄 스위치를 사용 하는 방법에 대 한 정보를 제공 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [VSPackage 개발을 위한 Devenv 명령줄 스위치](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
- VSPackage 개발, 디버깅 및 배포를 간소화 하기 위해 사용할 수는 Devenv 명령줄 스위치를 설명 합니다.  
+ [VSPackage 개발용 Devenv 명령줄 스위치](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
+ VSPackage 개발, 디버깅 및 배포를 간소화 하는 데 사용할 수 있는 Devenv 명령줄 스위치에 대해 설명 합니다.  
   
  [명령줄 스위치 추가](../extensibility/adding-command-line-switches.md)  
- 구현, 검색할 및 패키지에 대 한 사용자가 입력 한 명령줄 스위치를 읽는 방법을 설명 합니다.  
+ 패키지에 대 한 사용자가 입력 한 명령줄 스위치를 구현 하 고 찾고 검색 하는 방법을 설명 합니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)  
- IDE 및 컴파일하는 방법에 대 한 다양 한 옵션을 설정한 Devenv 있습니다 빌드 및 명령줄에서 프로젝트를 디버그 하는 방법을 설명 합니다. 또한 Devenv 스위치의 구문 및 스위치의 테이블에 대 한 정보는.
+ Devenv를 사용 하 여 IDE에 대 한 다양 한 옵션을 설정 하는 방법 및 명령줄에서 프로젝트를 컴파일, 빌드 및 디버그할 수 있는 방법에 대해 설명 합니다. 또한 Devenv 스위치 및 스위치 테이블의 구문에 대 한 정보도 있습니다.

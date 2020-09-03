@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 113f420aa4cbbed9454df1ee0c0dd8aafd09a548
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184327"
 ---
 # <a name="commandname-element"></a>CommandName 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`CommandName` 키보드 범주에 표시 되는 텍스트를 지정 하는 요소는 **옵션** 대화 상자에서 및를 **명령** 목록에 **사용자 지정** 대화 상자입니다.  
+`CommandName`요소는 **옵션** 대화 상자의 키보드 범주에 표시 되는 텍스트와 **사용자 지정** 대화 상자의 **명령** 목록에 표시 되는 텍스트를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,9 +40,9 @@ ms.locfileid: "68184327"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|[Strings 요소](../extensibility/strings-element.md)|텍스트 요소와 같은 그룹화 `ButtonText` 고 `CommandName`입니다.|  
+|[Strings 요소](../extensibility/strings-element.md)|및 등의 텍스트 요소를 `ButtonText` 그룹화 `CommandName` 합니다.|  
   
 ## <a name="see-also"></a>관련 항목  
  [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

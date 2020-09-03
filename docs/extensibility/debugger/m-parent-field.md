@@ -1,5 +1,5 @@
 ---
-title: m_parent 필드 | 마이크로 소프트 문서
+title: m_parent 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d9d21cdd7fd89e075d15c0db1b0696deaa5cb46
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738403"
 ---
 # <a name="m_parent-field"></a>m_parent 필드
 
-작업의 상위에 <xref:System.Threading.Tasks.Task>대한 백업 필드입니다.
+작업 부모에 대 한 지원 필드 <xref:System.Threading.Tasks.Task> 입니다.
 
-**네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
+**네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
-**조립:** mscorlib *(mscorlib.dll)*
+**어셈블리:** mscorlib ( *mscorlib.dll*)
 
-.NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
+.NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,6 +33,6 @@ ms.locfileid: "80738403"
 .field private initonly class System.Threading.Tasks.Task m_parent
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

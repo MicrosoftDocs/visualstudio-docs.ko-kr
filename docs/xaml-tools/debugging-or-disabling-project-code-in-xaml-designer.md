@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331059"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML 디자이너에서 프로젝트 코드 디버그 또는 사용하지 않도록 설정
@@ -96,6 +96,6 @@ XAML 디자이너에서 Windows SDK의 플랫폼 컨트롤만 표시하도록 �
 
 **플랫폼 컨트롤만 표시**를 선택하면 SDK, 고객 사용자 정의 컨트롤 등에서 제공되는 모든 사용자 지정 컨트롤이 완벽하게 렌더링되지 않습니다. 대신, 대체 컨트롤로 바뀌어 컨트롤의 크기와 위치를 보여 줍니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](designing-xaml-in-visual-studio.md)

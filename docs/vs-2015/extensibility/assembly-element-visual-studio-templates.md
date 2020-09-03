@@ -14,22 +14,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184698"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-서식 파일 프로젝트에 해당 어셈블리 참조를 추가 하는 어셈블리에 대 한 정보를 지정 합니다.  
+템플릿에서 해당 어셈블리의 참조를 프로젝트에 추가 하는 데 사용 하는 어셈블리에 대 한 정보를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateContent>  
- \<참조 >  
- \<참조 >  
- \<어셈블리 >  
+ \<References>  
+ \<Reference>  
+ \<Assembly>  
   
 ## <a name="syntax"></a>구문  
   
@@ -55,9 +55,9 @@ ms.locfileid: "68184698"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 이 텍스트는 항목 템플릿이 인스턴스화될 때 프로젝트에 추가할 어셈블리를 지정 합니다. 다음 방법 중 하나에서이 어셈블리 이름을 지정 해야 합니다.  
+ 이 텍스트는 항목 템플릿이 인스턴스화될 때 프로젝트에 추가할 어셈블리를 지정 합니다. 이 어셈블리 이름은 다음 방법 중 하나로 지정 해야 합니다.  
   
-- 전체 어셈블리 이름입니다. 예를 들어:  
+- 전체 어셈블리 이름으로 예를 들면 다음과 같습니다.  
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ ms.locfileid: "68184698"
     </Assembly>  
     ```  
   
-- 단순한 텍스트 참조 합니다. 예를 들어:  
+- 단순 텍스트 참조로. 다음은 그 예입니다.  
   
     ```  
     <Assembly> System </Assembly>  
@@ -74,10 +74,10 @@ ms.locfileid: "68184698"
 ## <a name="remarks"></a>설명  
  `Assembly`은 `Reference`의 필수 자식 요소입니다.  
   
- `Reference`, `References,` 하 고 `Assembly` 요소.vstemplate 파일에서 사용할 수 있습니다를 `Type` 특성 값 `Item`.  
+ `Reference`, `References,` 및 요소는 `Assembly` `Type` 특성 값이 인 .vstemplate 파일에만 사용할 수 있습니다 `Item` .  
   
-## <a name="example"></a>예제  
- 다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML에는 System.dll 및 System.Data.dll 어셈블리에 대 한 참조를 추가합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `TemplateContent` 항목 템플릿의 요소를 보여 줍니다. 이 XML은 System.dll 및 System.Data.dll 어셈블리에 대 한 참조를 추가 합니다.  
   
 ```  
 <TemplateContent>  
@@ -97,6 +97,6 @@ ms.locfileid: "68184698"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
