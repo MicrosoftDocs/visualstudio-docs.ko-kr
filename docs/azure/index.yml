@@ -11,10 +11,10 @@ metadata:
   ms.date: 12/05/2019
   ms.author: ghogen
   ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
-  ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 08/20/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "88639330"
 landingContent:
 - title: Azure App Service에 배포
@@ -99,7 +99,7 @@ landingContent:
       url: vs-azure-tools-publishing-a-cloud-service.md
     - text: Azure에서 실행 중인 클라우드 서비스 및 가상 머신 모니터링 및 진단
       url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-- title: Cloud Explorer
+- title: 클라우드 탐색기
   linkLists:
   - linkListType: how-to-guide
     links:

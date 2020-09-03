@@ -50,21 +50,21 @@
       items:
         - name: 플랫폼 간 모바일 개발용 Visual C++
           href: visual-cpp-for-cross-platform-mobile-development.md
-        - name: Install Visual C++ for Cross-Platform Mobile Development
+        - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
           items:
-            - name: Install Visual C++ for Cross-Platform Mobile Development
+            - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
               href: install-visual-cpp-for-cross-platform-mobile-development.md
             - name: Install and Configure Tools to Build using iOS
               href: install-and-configure-tools-to-build-using-ios.md
         - name: Android Native Activity 앱 만들기
           href: create-an-android-native-activity-app.md
-        - name: Android 및 iOS에서 OpenGL ES 애플리케이션 빌드
+        - name: Build an OpenGL ES Application on Android and iOS
           href: build-an-opengl-es-application-on-android-and-ios.md
         - name: XCode 프로젝트 가져오기
           href: import-an-xcode-project.md
         - name: XCode와 Visual Studio 간에 변경 내용 동기화
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: Cross-Platform Mobile Development Examples
+        - name: 플랫폼 간 모바일 개발 예제
           href: cross-platform-mobile-development-examples.md
     - name: UWP(유니버설 Windows 플랫폼)용 앱 개발
       href: develop-apps-for-the-universal-windows-platform-uwp.md

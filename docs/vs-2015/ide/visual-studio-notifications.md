@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10cc00fb3067727f2f7ec58182e7b5cf5215e91b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667084"
 ---
 # <a name="visual-studio-notifications"></a>Visual Studio 알림
@@ -31,7 +31,7 @@ Visual Studio에는 다양한 이벤트를 알리는 알림 시스템이 있습�
 
    항상 알림을 무시하도록 선택한 경우 Visual Studio에서 알림 표시를 중지합니다. [알림, 환경, 옵션 대화 상자](../ide/reference/notifications-environment-options-dialog-box.md)에서 무시된 알림 목록을 다시 설정할 수 있습니다.
 
-   ![Visual Studio 알림 아이콘](../ide/media/vs2015-notificationicon.png "|::ref1::|")
+   ![Visual Studio 알림 아이콘](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio IDE](../ide/visual-studio-ide.md)

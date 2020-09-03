@@ -50,7 +50,7 @@
               href: dowhile-activity-designer.md
             - name: ForEach\<T>
               href: foreach-t-activity-designer.md
-            - name: 다음과 같은 경우
+            - name: 조건
               href: if-activity-designer.md
             - name: 병렬
               href: parallel-activity-designer.md
@@ -60,9 +60,9 @@
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
-            - name: 시퀀스
+            - name: 순서
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: 스위치\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -110,15 +110,15 @@
           items:
             - name: 런타임
               href: runtime-activity-designers.md
-            - name: 유지
+            - name: Persist
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
-        - name: 기본 형식
+        - name: 기본 요소
           items:
-            - name: 기본 형식
+            - name: 기본 요소
               href: primitives-activity-designers.md
-            - name: 할당
+            - name: 대입
               href: assign-activity-designer.md
             - name: Delay
               href: delay-activity-designer.md
@@ -138,7 +138,7 @@
               href: compensableactivity-activity-designer.md
             - name: Compensate
               href: compensate-activity-designer.md
-            - name: Confirm
+            - name: 확인
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md

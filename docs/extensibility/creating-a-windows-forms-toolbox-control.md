@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801869"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows Forms 도구 상자 컨트롤 만들기
 
 Visual Studio 확장성 도구에 포함 된 Windows Forms 도구 상자 컨트롤 항목 템플릿 (VS SDK)을 사용 하면 확장을 설치할 때 자동으로 추가 되는 **도구 상자** 컨트롤을 만들 수 있습니다. 이 연습에서는 템플릿을 사용 하 여 다른 사용자에 게 배포할 수 있는 간단한 카운터 컨트롤을 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -58,9 +58,9 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
     |제어|속성|값|
     |-------------|--------------|-----------|
-    |`Label1`|**텍스트**|""|
+    |`Label1`|**Text**|""|
     |`Button1`|**이름**|btnReset|
-    |`Button1`|**텍스트**|다시 설정|
+    |`Button1`|**Text**|다시 설정|
 
 ### <a name="code-the-user-control"></a>사용자 정의 컨트롤 코딩
 
@@ -216,7 +216,7 @@ Windows Forms 도구 상자 컨트롤 템플릿은 정의 되지 않은 사용�
 
 **도구 상자** 컨트롤을 빌드할 때 Visual Studio는 프로젝트의 \bin\debug\ 폴더에 *ProjectName .vsix* 라는 파일을 만듭니다. 네트워크 또는 웹 사이트에 *.vsix* 파일을 업로드 하 여 컨트롤을 배포할 수 있습니다. 사용자가 *.vsix* 파일을 열면 컨트롤이 설치 되 고 사용자 컴퓨터의 Visual Studio **도구 상자** 에 추가 됩니다. 또는 사용자가 **도구** *.vsix* [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  >  **확장 및 업데이트** 대화 상자에서 검색 하 여 찾을 수 있도록 Visual Studio Marketplace에 .vsix 파일을 업로드할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)
 - [WPF 도구 상자 컨트롤 만들기](../extensibility/creating-a-wpf-toolbox-control.md)

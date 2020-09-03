@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668662"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>방법: ASP.NET 기반 워크플로 디버깅(레거시)
@@ -28,7 +28,7 @@ ms.locfileid: "72668662"
 
 ### <a name="to-debug-an-aspnet-based-workflow"></a>ASP.NET 기반 워크플로를 디버깅하려면
 
-1. Web.config 파일에서 **debug = true** 를 설정 하 여 ASP.NET 응용 프로그램에 대 한 디버깅을 사용 하도록 설정 합니다.
+1. web.config 파일에서 **debug = true** 를 설정 하 여 ASP.NET 응용 프로그램에 대 한 디버깅을 사용 하도록 설정 합니다.
 
 2. 워크플로 라이브러리를 시작 프로젝트로 설정하고 워크플로에 중단점을 설정합니다.
 
@@ -52,5 +52,5 @@ ms.locfileid: "72668662"
 
 10. 브라우저에서 기본 웹 페이지를 열고 워크플로를 시작합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Windows Workflow Foundation에 대 한 Visual Studio 디버거 호출 (레거시)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [방법: 워크플로에 중단점 설정 (레거시)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [레거시 워크플로 디버깅](../workflow-designer/debugging-legacy-workflows.md)

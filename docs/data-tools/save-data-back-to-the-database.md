@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281749"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
@@ -72,21 +72,21 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 |DataRowVersion|대상 데이터 세트|원본 데이터 세트|
 | - | - | - |
-|Original|James Wilson|James C. Wilson|
+|원래 이름|James Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
 
 <xref:System.Data.DataSet.Merge%2A>이전 테이블에서 메서드를 호출 하면 `preserveChanges=false targetDataset.Merge(sourceDataset)` 다음 데이터가 반환 됩니다.
 
 |DataRowVersion|대상 데이터 세트|원본 데이터 세트|
 | - | - | - |
-|Original|James C. Wilson|James C. Wilson|
+|원래 이름|James C. Wilson|James C. Wilson|
 |현재|James C. Wilson|James C. Wilson|
 
 <xref:System.Data.DataSet.Merge%2A>를 사용 하 여 메서드를 호출 하면 `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 다음 데이터가 반환 됩니다.
 
 |DataRowVersion|대상 데이터 세트|원본 데이터 세트|
 | - | - | - |
-|Original|James C. Wilson|James C. Wilson|
+|원래 이름|James C. Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
@@ -162,7 +162,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 `GetChanges`데이터 테이블 ( <xref:System.Data.DataTable.GetChanges%2A> ) 또는 데이터 집합 ()의 메서드를 사용 하 여 변경 된 레코드의 하위 집합을 만들 수 있습니다 <xref:System.Data.DataSet.GetChanges%2A> . 데이터 테이블에 대해 메서드를 호출 하면 변경 된 레코드만 포함 된 테이블의 복사본을 반환 합니다. 마찬가지로, 데이터 집합에서 메서드를 호출 하는 경우 변경 된 레코드만 포함 된 새 데이터 집합을 가져옵니다.
 
-`GetChanges`는 자체 변경 된 모든 레코드를 반환 합니다. 반면, 원하는을 <xref:System.Data.DataRowState> 메서드에 매개 변수로 전달 하 여 `GetChanges` 새로 추가 된 레코드, 삭제 하도록 표시 된 레코드, 분리 된 레코드 또는 수정 된 레코드 중에서 변경 된 레코드의 하위 집합을 지정할 수 있습니다.
+`GetChanges` 는 자체 변경 된 모든 레코드를 반환 합니다. 반면, 원하는을 <xref:System.Data.DataRowState> 메서드에 매개 변수로 전달 하 여 `GetChanges` 새로 추가 된 레코드, 삭제 하도록 표시 된 레코드, 분리 된 레코드 또는 수정 된 레코드 중에서 변경 된 레코드의 하위 집합을 지정할 수 있습니다.
 
 변경 된 레코드의 하위 집합을 가져오는 작업은 처리를 위해 다른 구성 요소로 레코드를 전송 하려는 경우에 유용 합니다. 전체 데이터 집합을 전송 하는 대신 구성 요소에 필요한 레코드만 가져옴으로써 다른 구성 요소와 통신 하는 오버 헤드를 줄일 수 있습니다.
 

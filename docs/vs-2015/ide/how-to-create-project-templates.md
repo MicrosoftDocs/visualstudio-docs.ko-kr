@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f358d5b95349fe99b2a2e01df5158d2c0aa10a11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668047"
 ---
 # <a name="how-to-create-project-templates"></a>방법: 프로젝트 템플릿 만들기
@@ -54,7 +54,7 @@ ms.locfileid: "72668047"
 
 10. **마침**을 클릭합니다. 프로젝트는 .zip 파일로 내보내고 지정된 출력 위치에 배치되며 선택할 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]로 가져옵니다.
 
-     [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]를 설치한 경우 **VSIX 프로젝트** 템플릿을 사용하여 완료된 템플릿을 .vsix 파일로 래핑하여 배포할 수 있습니다. 자세한 내용은 [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)을 참조하세요.
+     [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]를 설치한 경우 **VSIX 프로젝트** 템플릿을 사용하여 완료된 템플릿을 .vsix 파일로 래핑하여 배포할 수 있습니다. 자세한 내용은 [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)

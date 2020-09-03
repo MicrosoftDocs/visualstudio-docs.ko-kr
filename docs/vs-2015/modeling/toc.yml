@@ -138,9 +138,9 @@
           href: develop-tests-from-a-model.md
         - name: 레이어 다이어그램에 대해 코드 유효성 검사
           href: validate-code-with-layer-diagrams.md
-    - name: Extend UML models and diagrams
+    - name: UML 모델 및 다이어그램 확장
       items:
-        - name: Extend UML models and diagrams
+        - name: UML 모델 및 다이어그램 확장
           href: extend-uml-models-and-diagrams.md
         - name: 모델링 확장 정의 및 설치
           href: define-and-install-a-modeling-extension.md

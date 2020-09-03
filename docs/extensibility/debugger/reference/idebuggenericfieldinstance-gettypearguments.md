@@ -1,5 +1,5 @@
 ---
-title: 아이디버그제네릭필드인스턴스::GetType인수 | 마이크로 소프트 문서
+title: 'IDebugGenericFieldInstance:: GetTypeArguments | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728185"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-이 인스턴스에 대한 형식 매개 변수 인수를 검색합니다.
+이 인스턴스에 대 한 형식 매개 변수 인수를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,16 +44,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>매개 변수
 `cArgs`\
-【인】 형식 매개 변수의 수입니다.
+진행 형식 매개 변수 수입니다.
 
 `ppArgs`\
-【아웃】 형식 매개 변수의 배열을 반환합니다.
+제한이 형식 매개 변수의 배열을 반환 합니다.
 
 `pcArgs`\
-【인, 아웃】 배열의 멤버 `ppArgs` 수입니다.
+[in, out] 배열에 있는 멤버의 수 `ppArgs` 입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

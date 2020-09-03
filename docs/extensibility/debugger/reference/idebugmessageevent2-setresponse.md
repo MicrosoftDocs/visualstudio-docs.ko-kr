@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::설정 응답 | 마이크로 소프트 문서
+title: 'IDebugMessageEvent2:: SetResponse | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727383"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-메시지 상자에서 응답을 설정합니다(있는 경우).
+메시지 상자에서 응답을 설정 합니다 (있는 경우).
 
 ## <a name="syntax"></a>구문
 
@@ -42,11 +42,11 @@ int SetResponse( 
 
 ## <a name="parameters"></a>매개 변수
 `dwResponse`\
-【인】 Win32 `MessageBox` 함수의 규칙을 사용하여 응답을 지정합니다. 자세한 내용은 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 기능을 참조하십시오.
+진행 Win32 함수의 규칙을 사용 하 여 응답을 지정 합니다 `MessageBox` . 자세한 내용은 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 함수를 참조 하세요.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8755b1b70051c54157fa87ee0b66dbc9340b5024
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668462"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
@@ -27,24 +27,24 @@ DslDefinition 속성은 버전 번호 매기기와 같은 *도메인별 언어* 
 
  DslDefinition에는 다음 표의 속성이 있습니다.
 
-|속성|설명|기본|
+|속성|설명|기본값|
 |--------------|-----------------|-------------|
 |액세스 한정자|도메인 클래스의 액세스 한정자가 public 또는 internal 인지 여부를 확인 합니다.|public|
-|사용자 지정 특성|도메인 클래스에 대해 정의 된 사용자 지정 특성입니다.<br /><br /> **참고** 찾아보기 단추를 사용 하 여 특성을 추가 합니다.|\<none >|
+|사용자 지정 특성|도메인 클래스에 대해 정의 된 사용자 지정 특성입니다.<br /><br /> **참고** 찾아보기 단추를 사용 하 여 특성을 추가 합니다.|\<none>|
 |회사 이름|시스템 레지스트리의 현재 회사 이름 이름입니다.|현재 회사 이름|
-|name|이 도메인 클래스의 이름입니다.|현재 이름|
+|Name|이 도메인 클래스의 이름입니다.|현재 이름|
 |네임스페이스|이 도메인 클래스와 관련 된 네임 스페이스입니다.|현재 네임 스페이스|
-|패키지 Guid|이 DSL에 대해 생성 된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 패키지의 guid입니다.|\<none >|
-|패키지 네임 스페이스|이 DSL에 대해 생성 된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 패키지의 네임 스페이스입니다.|\<none >|
-|제품 이름|이 DSL에 대해 생성 되는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 패키지에 등록할 제품의 이름입니다.|\<none >|
-|노트|이 도메인 클래스와 연결 된 메모입니다.|\<none >|
-|설명|이 도메인 클래스에 대 한 설명입니다.|\<none >|
-|표시 이름|이 도메인 클래스에 대해 생성 된 디자이너에 표시 되는 이름입니다.|\<none >|
-|Help Keyword|이 도메인 클래스와 연결 된 도움말 키워드입니다.|\<none >|
+|패키지 Guid|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]이 DSL에 대해 생성 된 패키지의 guid입니다.|\<none>|
+|패키지 네임 스페이스|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]이 DSL에 대해 생성 된 패키지의 네임 스페이스입니다.|\<none>|
+|제품 이름|이 DSL에 대해 생성 되는 패키지에 등록할 제품의 이름 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 입니다.|\<none>|
+|참고|이 도메인 클래스와 연결 된 메모입니다.|\<none>|
+|설명|이 도메인 클래스에 대 한 설명입니다.|\<none>|
+|표시 이름|이 도메인 클래스에 대해 생성 된 디자이너에 표시 되는 이름입니다.|\<none>|
+|Help Keyword|이 도메인 클래스와 연결 된 도움말 키워드입니다.|\<none>|
 |빌드|이 도메인별 언어 정의에 대 한 증분 빌드 번호입니다.|0|
 |주 버전|이 도메인별 언어 정의에 대 한 증분 주 빌드 번호입니다.|1|
 |부 버전|이 도메인별 언어 정의의 증분 부 빌드 번호입니다.|0|
-|Revision|이 도메인별 언어 정의에 대 한 증분 수정 버전 빌드 번호입니다.|0|
+|수정 버전|이 도메인별 언어 정의에 대 한 증분 수정 버전 빌드 번호입니다.|0|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

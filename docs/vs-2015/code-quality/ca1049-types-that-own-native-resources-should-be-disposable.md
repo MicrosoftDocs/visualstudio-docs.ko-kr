@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49c56b98e3be01675c2c21cd11c2961dd75f4877
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546811"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: 네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "85546811"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  형식이 관리 되지 않는 리소스를 참조 하지 않는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 그렇지 않으면를 구현 하는 데 실패 <xref:System.IDisposable> 하면 관리 되지 않는 리소스가 사용할 수 없게 되거나 사용할 수 없게 될 수 있으므로이 규칙에서 경고를 표시 하지 마십시오.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 <xref:System.IDisposable> 관리 되지 않는 리소스를 정리 하기 위해를 구현 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Design.UnmanagedResources#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/cs/FxCop.Design.UnmanagedResources.cs#1)]
@@ -61,5 +61,5 @@ ms.locfileid: "85546811"
 
  [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
   [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

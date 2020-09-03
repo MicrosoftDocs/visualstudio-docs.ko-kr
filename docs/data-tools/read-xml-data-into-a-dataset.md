@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281788"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 데이터 세트에 읽어오기
@@ -140,11 +140,11 @@ C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만
     |제어|속성|설정|
     |-------------|--------------|-------------|
     |`TextBox1`|**여러 줄**|`true`|
-    ||**ScrollBars**|**Vertical**|
+    ||**ScrollBars**|**세로**|
     |`Button1`|**이름**|`ReadXmlButton`|
-    ||**텍스트**|`Read XML`|
+    ||**Text**|`Read XML`|
     |`Button2`|**이름**|`ShowSchemaButton`|
-    ||**텍스트**|`Show Schema`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>XML 데이터를 수신 하는 데이터 집합 만들기
 

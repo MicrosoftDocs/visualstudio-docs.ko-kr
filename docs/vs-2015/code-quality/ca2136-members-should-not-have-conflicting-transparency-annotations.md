@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a3a17a0db7dd4ad1c57d23104a313a78cd1289ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547695"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: 멤버는 충돌하는 투명도 주석을 포함할 수 없습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "85547695"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서 경고를 표시 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서 메서드는 특성으로 표시 되며, <xref:System.Security.SecuritySafeCriticalAttribute> 특성으로 표시 된 클래스의 멤버입니다 <xref:System.Security.SecurityCriticalAttribute> . 보안 안전 특성을 제거 해야 합니다.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2136.transparencyannotationsshouldnotconflict/cs/ca2136 - transparencyannotationsshouldnotconflict.cs#1)]

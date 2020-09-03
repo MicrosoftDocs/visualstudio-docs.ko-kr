@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1de155b71e82bb7561030cae2e1d0d4d777c9586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668068"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
@@ -49,14 +49,14 @@ ms.locfileid: "72668068"
 
   다중 프로젝트 템플릿의 루트 .vstemplate 파일은 다음과 같은 점에서 단일 프로젝트 템플릿과 다릅니다.
 
-- `VSTemplate` 요소의 `Type` 특성에는 `ProjectGroup` 값이 포함됩니다. 예를 들면,
+- `VSTemplate` 요소의 `Type` 특성에는 `ProjectGroup` 값이 포함됩니다. 예를 들면 다음과 같습니다.
 
   ```
   <VSTemplate Version="2.0.0" Type="ProjectGroup"
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   ```
 
-- `TemplateContent` 요소에는 포함된 프로젝트의 .vstemplate 파일에 대한 경로를 정의하는 하나 이상의 `ProjectTemplateLink` 요소를 가진 `ProjectCollection` 요소가 포함됩니다. 예를 들면,
+- `TemplateContent` 요소에는 포함된 프로젝트의 .vstemplate 파일에 대한 경로를 정의하는 하나 이상의 `ProjectTemplateLink` 요소를 가진 `ProjectCollection` 요소가 포함됩니다. 예를 들면 다음과 같습니다.
 
   ```
   <TemplateContent>
@@ -81,7 +81,7 @@ ms.locfileid: "72668068"
 
 1. 다중 프로젝트 템플릿에 포함할 프로젝트를 만듭니다.
 
-2. 모든 프로젝트에 .vstemplate 파일을 만듭니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)를 참조하세요.
+2. 모든 프로젝트에 .vstemplate 파일을 만듭니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)를 참조 하세요.
 
 3. 다중 프로젝트 템플릿의 메타데이터를 포함하는 루트 .vstemplate 파일을 만듭니다. 자세한 내용은 다음 섹션의 첫 번째 예제를 참조하세요.
 
@@ -89,7 +89,7 @@ ms.locfileid: "72668068"
 
 5. .Zip 템플릿 파일을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서는 기본 다중 프로젝트 루트 .vstemplate 파일을 보여줍니다. 이 예제에서 템플릿에는 `My Windows Application` 프로젝트와 `My Class Library` 프로젝트가 들어 있습니다. `ProjectName` 요소의 `ProjectTemplateLink` 특성은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 이 프로젝트에 할당할 이름을 설정합니다. `ProjectName` 특성이 없으면 .vstemplate 파일의 이름이 프로젝트 이름으로 사용됩니다.
 
 ```
@@ -114,7 +114,7 @@ ms.locfileid: "72668068"
 </VSTemplate>
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서는 `SolutionFolder` 요소를 사용하여 프로젝트를 `Math Classes` 및 `Graphics Classes`의 두 그룹으로 나눕니다. 이 템플릿에는 각 솔루션 폴더에 2개가 포함되는 4개의 프로젝트가 포함되어 있습니다.
 
 ```
@@ -149,5 +149,5 @@ ms.locfileid: "72668068"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>관련 항목:
- [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md) [Visual studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) [솔루션 폴더 요소 (visual studio 템플릿)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ ProjectTemplateLink 요소 (Visual Studio 템플릿)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+## <a name="see-also"></a>관련 항목
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md) [Visual studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) [솔루션 폴더 요소 (Visual Studio 템플릿)](../extensibility/solutionfolder-element-visual-studio-templates.md) [projecttemplatelink 요소 (visual studio 템플릿)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

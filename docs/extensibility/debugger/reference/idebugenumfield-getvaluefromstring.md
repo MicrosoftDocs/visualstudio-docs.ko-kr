@@ -1,5 +1,5 @@
 ---
-title: 이데버그에넘필드::겟밸류스트스트링 | 마이크로 소프트 문서
+title: 'IDebugEnumField:: GetValueFromString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bb340721c9f446b740c2723dc3f6dc05452e74de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730264"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
-이 메서드는 열거형 상수의 이름과 연결된 값을 반환합니다.
+이 메서드는 열거형 상수의 이름과 연결 된 값을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,17 +43,17 @@ int GetValueFromString(
 
 ## <a name="parameters"></a>매개 변수
 `pszValue`\
-【인】 값을 얻을 이름을 지정하는 문자열입니다. C++의 경우 이 문자열은 넓은 문자 문자열입니다.
+진행 값을 가져올 이름을 지정 하는 문자열입니다. C + +의 경우이는 와이드 문자열입니다.
 
 `pValue`\
-【아웃】 연결된 숫자 값을 반환합니다.
+제한이 연결 된 숫자 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 `S_FALSE`이름이 열거형 또는 오류 코드의 일부가 아닌 경우 을 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 이름이 열거형의 일부가 아니면가 반환 되 고, 그렇지 않으면이 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 이 방법은 대/소문자를 구분합니다. 대/소문자를 구분하지 않는 검색이 필요한 경우(예: 이름이 대/소문자를 구분하지 않는 Visual Basic과 같은 언어에서) [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)을 사용합니다.
+ 이 메서드는 대/소문자를 구분 합니다. 이름에 대/소문자를 구분 하지 않는 Visual Basic와 같은 언어에서 대/소문자를 구분 하지 않고 검색 해야 하는 경우 [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)를 사용 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)

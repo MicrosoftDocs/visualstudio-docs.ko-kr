@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ea9e28c55b608235d49096e4ef99cd30081eda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666170"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>모델에서 앱 생성 및 구성
@@ -24,7 +24,7 @@ ms.locfileid: "72666170"
  모델은 코드보다 더 직접적으로 요구 사항을 나타냅니다. 모델에서 직접 애플리케이션의 동작을 파생시키면 코드를 업데이트하는 것보다 훨씬 더 빠르고 안정적으로 변경된 요구 사항에 응답할 수 있습니다. 파생을 설정하려면 일부 초기 작업이 필요하지만 요구 사항 변경이 예상되거나 제품의 여러 변형을 계획하는 경우 이 투자는 가치가 있습니다.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>모델에서 애플리케이션 코드 생성
- 코드를 생성하는 가장 쉬운 방법은 텍스트 템플릿을 사용하는 것입니다. 모델을 유지 하는 동일한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션에서 코드를 생성할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+ 코드를 생성하는 가장 쉬운 방법은 텍스트 템플릿을 사용하는 것입니다. 모델을 유지 하는 동일한 솔루션에서 코드를 생성할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 자세한 내용은 다음을 참조하십시오.
 
 - [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -66,7 +66,7 @@ ms.locfileid: "72666170"
 
      예를 들어 한 모델을 사용하여 웹 페이지 간의 탐색을 정의하고, 다른 모델을 사용하여 페이지의 레이아웃을 정의합니다. 자세한 내용은 [UML 모델을 다른 모델 및 도구와 통합](../modeling/integrate-uml-models-with-other-models-and-tools.md)을 참조 하세요.
 
-- **솔루션이 아니라 요구 사항을 모델링 합니다.** 사용자 요구 사항을 설명하도록 DSL을 디자인하거나 UML을 조정합니다. 반대로, 구현의 가변 측면에 따라 표기법을 디자인하지 마세요.
+- **솔루션이 아니라 요구 사항을 모델링합니다.** 사용자 요구 사항을 설명하도록 DSL을 디자인하거나 UML을 조정합니다. 반대로, 구현의 가변 측면에 따라 표기법을 디자인하지 마세요.
 
      예를 들어 웹 탐색 모델은 웹 페이지 및 웹 페이지 간의 하이퍼링크를 나타내야 합니다. 웹 탐색 모델에서 HTML 조각이나 애플리케이션의 클래스를 나타내면 안 됩니다.
 
@@ -78,5 +78,5 @@ ms.locfileid: "72666170"
 
      예를 들어 UML 클래스 다이어그램이 상자와 화살표의 컬렉션인 경우 이론상 이 표기법을 사용하여 무엇이든 정의할 수 있습니다. 그러나 실제로 형식 집합을 설명하는 경우를 제외하고 클래스 다이어그램을 사용하지 않는 것이 좋습니다. 예를 들어 클래스 다이어그램을 조정하여 다양한 형식의 웹 페이지를 설명할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Uml 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md) [프로그램 코드에서 UML 모델 읽기](../modeling/read-a-uml-model-in-program-code.md) [도메인별 언어에서 코드](../modeling/generating-code-from-a-domain-specific-language.md) 생성 [방법: 프로그램 코드에서 파일 로부터 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md) [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

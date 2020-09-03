@@ -1,5 +1,5 @@
 ---
-title: 아이데버그엔진프로그램2::워치포스레드스텝 | 마이크로 소프트 문서
+title: 'IDebugEngineProgram2:: WatchForThreadStep | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730347"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-지정된 스레드에서 실행(또는 실행 감시 중지)을 감시합니다.
+지정 된 스레드에서 실행을 감시 하거나 실행에 대 한 감시를 중지 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,25 +47,25 @@ int WatchForThreadStep( 
 
 ## <a name="parameters"></a>매개 변수
 `pOriginatingProgram`\
-【인】 단계별 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.
+진행 단계별 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.
 
 `dwTid`\
-【인】 시청할 스레드의 식별자를 지정합니다.
+진행 감시할 스레드의 식별자를 지정 합니다.
 
 `fWatch`\
-【인】 0이 아닌`TRUE`() 은 로 식별된 `dwTid`스레드에서 실행을 감시하기 시작합니다. 그렇지 않으면`FALSE`0 () 에서 `dwTid`실행을 감시중지하는 것을 의미합니다.
+진행 0이 아닌 값 ( `TRUE` )은로 식별 된 스레드에서 실행을 감시 하기 시작 하는 것 `dwTid` 을 의미 합니다. 그렇지 않으면 0 ( `FALSE` )은에서 실행을 감시 하지 않음을 의미 `dwTid` 합니다.
 
 `dwFrame`\
-【인】 단계 유형을 제어하는 프레임 인덱스를 지정합니다. 값이 0(0)이면 단계 형식은 "단계 입력"이며 스레드가 `dwTid` 실행될 때마다 프로그램이 중지되어야 합니다. 0이 아닌 경우 `dwFrame` 단계 유형은 "단계 별"이며 인덱스가 스택에서 `dwTid` 보다 `dwFrame`높거나 높은 프레임에서 식별된 스레드가 실행되는 경우에만 프로그램이 중지되어야 합니다.
+진행 단계 유형을 제어 하는 프레임 인덱스를 지정 합니다. 이 값이 0 이면 단계 형식이 "한 단계씩 코드 실행" 이며로 식별 되는 스레드가 실행 될 때마다 프로그램이 중지 됩니다 `dwTid` . `dwFrame`가 0이 아닌 경우 단계 유형은 "프로시저 단위 실행" 이며,로 식별 된 스레드가 `dwTid` 와 스택에서 같은 인덱스의 프레임에서 실행 중인 경우에만 프로그램을 중지 해야 합니다 `dwFrame` .
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 세션 디버그 관리자(SDM)가 `pOriginatingProgram` 매개 변수로 식별된 프로그램을 단계별로 수행하면 이 메서드를 호출하여 연결된 다른 모든 프로그램에 알게 됩니다.
+ 세션 디버그 관리자 (SDM)는 매개 변수로 식별 되는 프로그램의 단계를 수행 하는 경우 `pOriginatingProgram` 이 메서드를 호출 하 여 다른 모든 연결 된 프로그램에 알립니다.
 
- 이 메서드는 동일한 스레드 스테핑에만 적용할 수 있습니다.
+ 이 메서드는 동일한 스레드 단계별 실행에만 적용 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

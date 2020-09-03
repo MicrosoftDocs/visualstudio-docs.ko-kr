@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6ba899fd1b17fa5a82c64d5c5e44e67f0d5eb97
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668196"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>방법: 플랫폼을 대상으로 한 프로젝트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 애플리케이션을 설정할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 64비트 플랫폼 지원에 대한 자세한 내용은 [64비트 애플리케이션](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)을 참조하세요.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 애플리케이션을 설정할 수 있습니다. 의 64 비트 플랫폼 지원에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [64 비트 응용 프로그램](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)을 참조 하세요.
 
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>구성 관리자에서 대상 플랫폼 지정
  **구성 관리자**는 프로젝트의 대상이 될 새 플랫폼을 신속하게 추가할 수 있는 방법을 제공합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 포함되어 있는 플랫폼 중 하나를 선택하면 프로젝트의 속성이 선택된 플랫폼에 맞는 프로젝트를 빌드하도록 수정됩니다.
@@ -39,7 +39,7 @@ ms.locfileid: "72668196"
 
 2. **활성 솔루션 플랫폼** 목록에서 대상으로 지정할 솔루션으로 64비트 플랫폼을 선택한 다음 **닫기** 단추를 선택합니다.
 
-   1. **활성 솔루션 플랫폼** 목록에 원하는 플랫폼이 없는 경우 **새로 만들기**를 선택합니다.
+   1. 원하는 플랫폼이 **활성 솔루션 플랫폼** 목록에 표시 되지 않는 경우 **새로 만들기**를 선택 합니다.
 
         **새 솔루션 플랫폼** 대화 상자가 나타납니다.
 
@@ -59,9 +59,9 @@ ms.locfileid: "72668196"
 
 - [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트의 경우 [/platform(Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)을 참조하세요.
 
-- [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트의 경우 [프로젝트 디자이너, 빌드 페이지(C#)](../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.
+- 프로젝트의 경우 [!INCLUDE[csprcs](../includes/csprcs-md.md)] [프로젝트 디자이너, 빌드 페이지 (c #)](../ide/reference/build-page-project-designer-csharp.md)를 참조 하세요.
 
-- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 프로젝트의 경우 [/clr(공용 언어 런타임 컴파일)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)를 참조하세요.
+- 프로젝트의 경우 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] [/Clr (공용 언어 런타임 컴파일)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
- [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) [/Platform (C# 컴파일러 옵션)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64 비트 응용 프로그램](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64 비트 지원](../ide/visual-studio-ide-64-bit-support.md)
+## <a name="see-also"></a>관련 항목
+ [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) [/Platform (c # 컴파일러 옵션)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64 비트 응용 프로그램](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64 비트 지원](../ide/visual-studio-ide-64-bit-support.md)

@@ -1,5 +1,5 @@
 ---
-title: 아이데버그제네릭파라필드::겟제약 | 마이크로 소프트 문서
+title: 'IDebugGenericParamField:: GetConstraints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728018"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-이 제네릭 매개 변수와 연결된 제약 조건을 검색합니다.
+이 제네릭 매개 변수와 연결 된 제약 조건을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,19 +44,19 @@ int GetConstraints(
 
 ## <a name="parameters"></a>매개 변수
 `cConstraints`\
-【인】 구속조건 수입니다.
+진행 제약 조건 수입니다.
 
 `ppConstraints`\
-【아웃】 이 필드와 연결된 제약 조건을 포함하는 배열을 반환합니다.
+제한이 이 필드와 연결 된 제약 조건을 포함 하는 배열을 반환 합니다.
 
 `pcConstraints`\
-【인, 아웃】 배열의 제약 조건 `ppConstraints` 수입니다.
+[in, out] 배열의 제약 조건 수 `ppConstraints` 입니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamField 개체에** 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(
@@ -151,5 +151,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

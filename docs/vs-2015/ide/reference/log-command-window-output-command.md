@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666871"
 ---
 # <a name="log-command-window-output-command"></a>명령 창 출력 로그 명령
@@ -43,12 +43,12 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
  /off 선택 사항입니다. **명령** 창에 대한 로그를 중지합니다.
 
- 덮어쓰기 옵션: `filename` 인수에서 지정된 파일이 기존 파일과 일치하는 경우 파일을 덮어씁니다.
+ /overwrite 선택 사항입니다. `filename` 인수에서 지정된 파일이 기존 파일과 일치하는 경우 파일을 덮어씁니다.
 
 ## <a name="remarks"></a>설명
  파일이 지정되지 않은 경우 기본적으로 cmdline.log 파일이 만들어집니다. 기본적으로 이 명령에 대한 별칭은 Log입니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
  이 예제에서는 cmdlog라는 새 로그 파일을 만들고 명령 로그를 시작합니다.
 
 ```
@@ -67,5 +67,5 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio 명령 ](../../ide/reference/visual-studio-commands.md) [Command 창 ](../../ide/reference/command-window.md) [Find/명령 상자 ](../../ide/find-command-box.md) [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [명령 창](../../ide/reference/command-window.md) [찾기/명령 상자](../../ide/find-command-box.md) [visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

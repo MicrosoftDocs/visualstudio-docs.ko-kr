@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 483267e2e570efbcc3cc1842560014ee9ba73d11
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281450"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>디버깅하는 동안에는 디자이너를 수정할 수 없습니다.
@@ -21,6 +21,6 @@ ms.locfileid: "85281450"
 
 이 오류를 해결 하려면 **디버그** 메뉴에서 **디버깅 중지** 를 선택 합니다. 응용 프로그램에서 디버깅을 중지 하 고 **O/R 디자이너**에서 항목을 수정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

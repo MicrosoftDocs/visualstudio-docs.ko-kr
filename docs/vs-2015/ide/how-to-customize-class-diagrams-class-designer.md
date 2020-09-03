@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff78bea6759359d3703f5fed6157f051c89befb0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668016"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>방법: 클래스 다이어그램 사용자 지정(클래스 디자이너)
@@ -49,24 +49,24 @@ ms.locfileid: "72668016"
 
 - [숨겨진 관계 표시](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)
 
-- [클래스 다이어그램에서 도형 제거](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)
+- [클래스 다이어그램에서 모양 제거](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)
 
-- [형식 도형 및 해당 내부 코드 삭제](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)
+- [형식 모양과 해당 내부 코드 삭제](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)
 
-## <a name="ZoomInOut"></a> 클래스 다이어그램 확대/축소
+## <a name="zoom-in-and-out-of-the-class-diagram"></a><a name="ZoomInOut"></a> 클래스 다이어그램 확대/축소
 
 1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.
 
 2. 클래스 디자이너 도구 모음에서 **확대** 또는 **축소** 단추를 클릭하여 디자이너 화면의 확대/축소 수준을 변경합니다.
 
-     or
+     또는
 
      특정 확대/축소 값을 지정합니다. **확대/축소** 드롭다운 목록을 사용하거나 유효한 확대/축소 수준(유효 범위: 10%~400%)을 입력할 수 있습니다.
 
     > [!NOTE]
     > 확대/축소 수준을 변경해도 클래스 다이어그램의 출력 배율에는 영향을 주지 않습니다.
 
-## <a name="CustomizeGroupingSorting"></a> 형식 멤버의 그룹화 및 정렬 사용자 지정
+## <a name="customize-grouping-and-sorting-of-type-members"></a><a name="CustomizeGroupingSorting"></a> 형식 멤버의 그룹화 및 정렬 사용자 지정
 
 1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.
 
@@ -80,7 +80,7 @@ ms.locfileid: "72668016"
 
     3. **사전순 정렬**을 선택하면 엔터티를 구성하는 항목이 사전순으로 나열된 단일 목록으로 표시됩니다. 이 목록은 오름차순으로 정렬됩니다.
 
-## <a name="HideCompartments"></a> 형식의 구획 숨기기
+## <a name="hide-compartments-on-a-type"></a><a name="HideCompartments"></a> 형식의 구획 숨기기
 
 1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "72668016"
 
      선택한 구획이 형식 컨테이너에서 사라집니다.
 
-## <a name="HideMembers"></a> 형식의 개별 멤버 숨기기
+## <a name="hide-individual-members-on-a-type"></a><a name="HideMembers"></a> 형식의 개별 멤버 숨기기
 
 1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.
 
@@ -100,7 +100,7 @@ ms.locfileid: "72668016"
 
      선택한 멤버가 형식 컨테이너에서 사라집니다.
 
-## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> 형식의 숨겨진 구획 및 멤버 표시
+## <a name="show-hidden-compartments-and-members-on-a-type"></a><a name="DisplayHiddenCompartmentsAndMemberrs"></a> 형식에 숨겨진 구획 및 멤버 표시
 
 1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "72668016"
 
      숨겨진 모든 구획 및 멤버가 형식 컨테이너에 표시됩니다.
 
-## <a name="HideAssociationAndInheritance"></a> 관계 숨기기
+## <a name="hide-relationships"></a><a name="HideAssociationAndInheritance"></a> 관계 숨기기
 
 1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.
 
@@ -122,7 +122,7 @@ ms.locfileid: "72668016"
 
      숨겨진 모든 구획 및 멤버가 형식 컨테이너에 표시됩니다.
 
-## <a name="DisplayAssociationAndInheritance"></a> 숨겨진 관계 표시
+## <a name="show-hidden-relationships"></a><a name="DisplayAssociationAndInheritance"></a> 숨겨진 관계 표시
 
 1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72668016"
 
    형식 연결 선에 대해 **모든 멤버 표시**를 클릭하고 형식 상속 선에 대해 **기본 클래스 표시** 또는 **파생 클래스 표시**를 클릭합니다.
 
-## <a name="RemoveCodeAndShape"></a> 클래스 다이어그램에서 도형 제거
+## <a name="remove-a-shape-from-a-class-diagram"></a><a name="RemoveCodeAndShape"></a> 클래스 다이어그램에서 도형 제거
  형식의 내부 코드에 영향을 주지 않으면서도 클래스 다이어그램에서 형식 모양을 제거할 수 있습니다. 클래스 다이어그램에서 형식 모양을 제거하면 해당 다이어그램만 영향을 받습니다. 해당 형식을 정의하는 기본 코드와 해당 형식을 표시하는 다른 다이어그램은 영향을 받지 않습니다.
 
 1. 클래스 다이어그램에서 제거할 형식 모양을 선택합니다.
@@ -139,7 +139,7 @@ ms.locfileid: "72668016"
 
      형식 모양과 해당 모양에 연결된 연결 선이나 상속 선이 다이어그램에 더 이상 표시되지 않습니다.
 
-## <a name="DeleteTypeShapeAndCode"></a> 형식 도형 및 해당 내부 코드 삭제
+## <a name="delete-a-type-shape-and-its-underlying-code"></a><a name="DeleteTypeShapeAndCode"></a> 형식 모양과 해당 내부 코드 삭제
 
 1. 디자인 화면에서 모양을 마우스 오른쪽 단추로 클릭합니다.
 
@@ -147,5 +147,5 @@ ms.locfileid: "72668016"
 
      모양이 다이어그램에서 제거되고 해당 기본 코드가 프로젝트에서 삭제됩니다.
 
-## <a name="see-also"></a>관련 항목:
- [클래스 다이어그램 작업 (클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md) [방법: 멤버 표기법과 연결 표기법 사이 변경 (클래스 디자이너)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [방법: 기존 형식 보기 (클래스 디자이너)](../ide/how-to-view-existing-types-class-designer.md) [형식 및 관계 보기 (클래스 디자이너) ](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="see-also"></a>관련 항목
+ [클래스 다이어그램 작업 (클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md) [방법: 멤버 표기법과 연결 표기법 사이 변경 (클래스 디자이너)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [방법: 기존 형식 보기 (클래스 디자이너)](../ide/how-to-view-existing-types-class-designer.md) [형식 및 관계 보기 (클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md)

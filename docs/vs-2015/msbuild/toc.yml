@@ -112,7 +112,7 @@
               href: item-metadata-in-task-batching.md
             - name: 대상 일괄 처리의 항목 메타데이터
               href: item-metadata-in-target-batching.md
-        - name: 변환
+        - name: 변형
           href: msbuild-transforms.md
         - name: Visual Studio 통합
           items:
@@ -122,7 +122,7 @@
               href: how-to-extend-the-visual-studio-build-process.md
             - name: IDE에서 빌드 시작
               href: starting-a-build-from-within-the-ide.md
-            - name: .NET Framework 확장 등록
+            - name: .NET Framework 확장명 등록
               href: registering-extensions-of-the-dotnet-framework.md
         - name: 병렬로 여러 프로젝트 빌드
           items:

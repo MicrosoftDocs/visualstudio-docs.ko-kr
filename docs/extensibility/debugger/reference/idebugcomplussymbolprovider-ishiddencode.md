@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus 기호 제공자::IsHiddenCode | 마이크로 소프트 문서
+title: 'IDebugComPlusSymbolProvider:: IsHiddenCode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1ede1cbd8c2a69d45a8c653aa97d0bfb618f821
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733670"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-지정된 디버거 주소의 코드가 숨겨져 있는지 확인합니다.
+지정 된 디버거 주소에서 코드를 숨길지 여부를 결정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,13 +39,13 @@ int IsHiddenCode(
 
 ## <a name="parameters"></a>매개 변수
 `pAddress`\
-【인】 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스로 표시되는 디버그 주소입니다.
+진행 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스로 표시 되는 디버그 주소입니다.
 
-## <a name="return-value"></a>Return Value
-코드가 숨겨져 있으면 반환합니다. `S_OK` 그렇지 않으면 `S_FALSE`을 반환합니다.
+## <a name="return-value"></a>반환 값
+코드가 숨겨진 경우는를 반환 하 `S_OK` 고 그렇지 않으면를 반환 `S_FALSE` 합니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugComPlusSymbol공급자](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **CDebugSymbolProvider** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsHiddenCode(
@@ -92,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282022"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>방법: 연결 문자열 저장 및 편집
@@ -28,7 +28,7 @@ Windows 통합 보안을 사용하도록 선택하지 않았는데 데이터베�
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>연결 문자열을 애플리케이션 설정에 직접 저장하려면
 1. **솔루션 탐색기**에서 **내 프로젝트** 아이콘(Visual Basic) 또는 **속성** 아이콘(C#)을 두 번 클릭하여 **프로젝트 디자이너**를 엽니다.
-1. **설정** 탭을 선택 합니다.
+1. **설정** 탭을 선택합니다.
 1. 연결 문자열의 **이름**을 입력합니다. 코드에서 연결 문자열에 액세스할 때 이 이름을 참조합니다.
 1. **형식**을 **연결 문자열**로 설정합니다.
 1. **범위**는 **애플리케이션**으로 설정된 상태로 유지합니다.
@@ -39,7 +39,7 @@ Windows 통합 보안을 사용하도록 선택하지 않았는데 데이터베�
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>애플리케이션 설정에 저장된 연결 문자열을 편집하려면
 1. **솔루션 탐색기**에서 **내 프로젝트** 아이콘(Visual Basic) 또는 **속성** 아이콘(C#)을 두 번 클릭하여 **프로젝트 디자이너**를 엽니다.
-1. **설정** 탭을 선택 합니다.
+1. **설정** 탭을 선택합니다.
 1. 편집 하려는 연결을 찾아 **값** 필드에서 텍스트를 선택 합니다.
 1. **값** 필드에서 연결 문자열을 편집 하거나 **값** 필드에서 **줄임표** (...) 단추를 클릭 하 여 연결 **속성** 대화 상자를 사용 하 여 연결을 편집 합니다.
 
@@ -56,6 +56,6 @@ Windows 통합 보안을 사용하도록 선택하지 않았는데 데이터베�
 암호와 같은 중요한 정보를 연결 문자열 내에 저장하면 애플리케이션 보안 문제가 발생할 수 있습니다. 데이터베이스 액세스를 제어할 경우에는 Windows 통합 보안을 사용하는 방법이 더 안전합니다.
 자세한 내용은 [연결 정보 보호](/dotnet/framework/data/adonet/protecting-connection-information)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [연결 추가](../data-tools/add-new-connections.md)

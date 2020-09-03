@@ -52,15 +52,15 @@
       items:
         - name: Azure 클라우드 서비스 또는 가상 머신 디버그
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Azure 클라우드 서비스를 디버그하는 다양한 방법을 알아봅니다.
+        - name: Azure 클라우드 서비스를 디버그하는 다양한 방법 알아보기
           href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: Azure Cloud Services 및 가상 머신에 대한 진단 설정
+        - name: Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
         - name: Emulator Express를 사용하여 로컬 컴퓨터에서 Azure 클라우드 서비스 실행 및 디버그
           href: vs-azure-tools-emulator-express-debug-run.md
         - name: IntelliTrace로 게시된 Azure 클라우드 서비스 디버그
           href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-        - name: 클라우드 서비스 성능 테스트
+        - name: 클라우드 서비스의 성능 테스트
           href: vs-azure-tools-performance-profiling-cloud-services.md
         - name: Azure 코드 최적화
           href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
@@ -98,9 +98,9 @@
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Storage Explorer 접근성
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-- name: Cloud Explorer
+- name: 클라우드 탐색기
   items:
-    - name: 서버 탐색기로 스토리지 리소스 찾아보기 및 관리
+    - name: 서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
       href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - name: 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
       href: vs-azure-tools-resources-managing-with-cloud-explorer.md
