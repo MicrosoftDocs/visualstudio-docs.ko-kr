@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24bb6160f9895f129c4d7d36c2b0aa8a56ca282a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657906"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -50,5 +50,5 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>참고 항목
- [방법: 실패 한 Visual Studio 프로젝트 업그레이드 ](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [Devenv 명령줄 스위치에 대 한 문제 해결](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 실패 한 Visual Studio 프로젝트 업그레이드에 대 한 문제 해결](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)

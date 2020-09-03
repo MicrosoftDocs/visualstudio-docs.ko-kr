@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 635a872372ab775eceb00854a616884f3fc19fef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155524"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA 함수
@@ -49,11 +49,11 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
  `ppMarkerSeries`  
  표식 계열 컨텍스트를 저장할 출력 변수의 주소입니다. NULL일 수 없습니다.  
   
-## <a name="return-value"></a>Return Value  
+## <a name="return-value"></a>반환 값  
  표식 계열이 성공적으로 생성된 경우 S_OK이고, 오류가 발생한 경우 오류 코드입니다. SUCCEEDED/FAILED 매크로를 사용하여 오류 조건을 확인할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** cvmarkers.h  
   
-## <a name="see-also"></a>참고 항목  
- [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>관련 항목  
+ [C + + 라이브러리 참조](../profiling/cpp-library-reference.md)

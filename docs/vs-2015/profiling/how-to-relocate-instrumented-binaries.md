@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155510"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>방법: 계측된 이진 파일 재배치
@@ -42,6 +42,6 @@ ms.locfileid: "68155510"
   
 4. 계측된 이진 파일의 위치를 지정합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)

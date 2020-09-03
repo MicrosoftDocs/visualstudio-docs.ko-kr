@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7726379258ef474b57f1ca4a924413cd93cf80bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672787"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>UML 모델 요소에 참조 문자열 연결
@@ -42,5 +42,5 @@ ms.locfileid: "72672787"
 |`reference.Delete()`|이 `IReference`를 삭제합니다.|
 |`ReferenceConstants.WorkItem`|작업 항목 참조에 이름을 지정하는 데 사용되는 값입니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [작업 항목 링크 처리기 정의](../modeling/define-a-work-item-link-handler.md) [UML API를 사용 하 여](../modeling/programming-with-the-uml-api.md) [모델링 확장 프로그램 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md)

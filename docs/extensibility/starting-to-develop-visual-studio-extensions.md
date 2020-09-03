@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286195"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Extensions 확장 기능 개발 시작
@@ -63,7 +63,7 @@ Visual studio 확장을 개발 하려면 visual studio 외에도 visual studio S
 
 - [Visual Studio Shell(격리)](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>이상에서 제공 하는 프로젝트 템플릿은 무엇 인가요?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> 이상에서 제공 하는 프로젝트 템플릿은 무엇 인가요?
  두 가지 주요 확장 유형은 Vspackage 및 MEF 확장입니다. 일반적으로 VSPackage 확장은 명령, 도구 창 및 프로젝트를 사용 하거나 확장 하는 확장에 사용 됩니다. MEF 확장은 Visual Studio 편집기를 확장 하거나 사용자 지정 하는 데 사용 됩니다.
 
  Visual c # 및 Visual Basic 확장의 경우 새 항목은 메뉴 명령, 도구 창 및 편집기 확장을 만드는 새 항목 템플릿과 함께 사용할 수 있는 빈 VSIX 프로젝트 템플릿을 제공 합니다. 이 템플릿을 사용 하 여 다른 사용자에 게 배포 하기 위해 프로젝트 템플릿, 코드 조각 및 기타 아티팩트를 패키지할 수도 있습니다.

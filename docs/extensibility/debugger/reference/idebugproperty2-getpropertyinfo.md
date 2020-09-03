@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로퍼티2::겟프로퍼티정보 | 마이크로 소프트 문서
+title: 'IDebugProperty2:: GetPropertyInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6ec1c3e29e0dbb6ca069dec696e6645a159ec7e6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721372"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
-속성을 설명하는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조를 가져옵니다.
+속성을 설명 하는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,27 +51,27 @@ int GetPropertyInfo ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-【인】 구조에 입력할 필드를 지정하는 DEBUGPROP_INFO_FLAGS 열거형의 값 조합입니다. [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) `pPropertyInfo`
+진행 구조체에서 채울 필드를 지정 하는 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형 값의 조합입니다 `pPropertyInfo` .
 
 `nRadix`\
-【인】 숫자 정보를 서식지정하는 데 사용할 Radix입니다.
+진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.
 
 `dwTimeout`\
-【인】 이 메서드에서 반환하기 전에 기다릴 최대 시간(밀리초)을 지정합니다. 무기한 `INFINITE` 대기하는 데 사용합니다.
+진행 이 메서드에서 반환 될 때까지 대기할 최대 시간 (밀리초)을 지정 합니다. `INFINITE`무기한 대기 하려면를 사용 합니다.
 
 `rgpArgs`\
-【인, 아웃】 향후 사용을 위해 예약; null 값으로 설정합니다.
+[in, out] 나중에 사용 하도록 예약 되어 있습니다. 을 null 값으로 설정 합니다.
 
 `dwArgCount`\
-【인】 향후 사용을 위해 예약; 0으로 설정됩니다.
+진행 나중에 사용 하도록 예약 되어 있습니다. 을 0으로 설정 합니다.
 
 `pPropertyInfo`\
-【아웃】 속성 설명으로 채워진 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조입니다.
+제한이 속성에 대 한 설명과 함께 채워지는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

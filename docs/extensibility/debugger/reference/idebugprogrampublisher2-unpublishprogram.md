@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram게시자2::게시 취소 프로그램 | 마이크로 소프트 문서
+title: 'IDebugProgramPublisher2:: UnpublishProgram | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721592"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-프로그램을 디버깅할 수 없게 만듭니다.
+프로그램을 디버그할 수 없게 만듭니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,14 +41,14 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>매개 변수
 `pDebuggeeInterface`\
-【인】 프로그램에 `IUnknown` 대한 인터페이스입니다. 이 값은 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드에 제공된 값과 동일하며 제거되는 프로그램(즉, 쿠키로 사용됨)을 고유하게 식별합니다.
+진행 `IUnknown` 프로그램에 대 한 인터페이스입니다. 이 값은 # [program](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드에 제공 되는 값과 같으며 제거 되는 프로그램을 고유 하 게 식별 합니다. 즉, 쿠키로 사용 됩니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 디버그 엔진 및 세션 디버그 관리자가 프로그램을 사용할 수 있도록 하려면 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드를 사용합니다.
+ 디버그 엔진 및 세션 디버그 관리자가 프로그램을 사용할 수 있도록 하려면 # [program](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드를 사용 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

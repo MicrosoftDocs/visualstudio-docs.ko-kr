@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155499"
 ---
 # <a name="performance-explorer"></a>성능 탐색기
@@ -32,11 +32,11 @@ ms.locfileid: "68155499"
   
  성능 및 프로파일링과 관련된 현재 및 고급 항목에 대한 자세한 내용을 보려면 Microsoft Developer Network에서 항목 및 Microsoft 블로그를 검색하세요. “엔터프라이즈 성능 도구 팀” 키워드를 사용하세요.  
   
-## <a name="common-tasks"></a>일반 작업  
+## <a name="common-tasks"></a>일반 태스크  
   
-|작업|관련 내용|  
+|Task|관련 내용|  
 |----------|---------------------|  
-|**Windows 8에 대한 새로운 기술**|[Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
+|**Windows 8에 대한 새로운 기술**|[Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**프로파일링 개념 이해:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석하는 데 사용하는 개념 및 용어에 대해 알아봅니다.|[개요](../profiling/overviews-performance-tools.md)|  
 |**시작 및 작업:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석할 때 사용하는 기본적인 절차에 대해 알아봅니다. 실전 연습을 수행해 보세요.|[시작](../profiling/getting-started-with-performance-tools.md)|  
 |**프로파일링 세션 구성:** 프로파일링할 프로젝트 또는 이진 파일을 지정하고, 프로파일링 방법을 선택하고, 수집할 성능 데이터를 선택하고, 기타 프로파일링 세션 옵션을 설정하는 고급 방법을 알아봅니다.|[성능 세션 구성](../profiling/configuring-performance-sessions.md)|  
@@ -48,5 +48,5 @@ ms.locfileid: "68155499"
 |**프로그래밍 방식으로 프로파일링 제어:** 관리 및 네이티브 프로파일링 도구 API를 사용하여 소스 코드에서 직접 데이터 컬렉션을 제어하는 방법을 알아봅니다.|[프로파일링 도구 API](../profiling/profiling-tools-apis.md)|  
 |**프로파일링 문제 해결**|[성능 도구 문제 해결](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로파일링 도구](../profiling/profiling-tools.md)

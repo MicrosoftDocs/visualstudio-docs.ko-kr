@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d967bd1f7a425ccd9dda5a938535788d961352f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672886"
 ---
 # <a name="security-in-visual-studio"></a>Visual Studio의 보안
@@ -32,6 +32,6 @@ ms.locfileid: "72672886"
 ## <a name="coding-for-security"></a>보안 코딩
  보안 문제를 일으키는 대부분의 코딩 오류는 개발자가 사용자 입력에 대해 잘못 가정하거나 개발 중인 플랫폼을 완전히 이해하지 못하기 때문에 발생합니다.
 
- [보안 코딩 지침](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) 보안 문제를 해결하기 위해 구성 요소를 분류하는 데 필요한 지침을 제공합니다.
+ [보안 코딩 지침](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) 구성 요소를 분류 하 여 보안 문제를 해결 하기 위한 지침을 제공 합니다.
 
- [보안 모범 사례](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) /GS 컴파일 시간 플래그에서 제공하는 Microsoft Visual C++ 보안 검사 기능의 전체 개요 및 버퍼 오버런에 대해 설명합니다.
+ [보안 모범 사례](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) /GS 컴파일 시간 플래그에서 제공 하는 Microsoft Visual C++ 보안 검사 기능의 전체 개요 및 버퍼 오버런에 대해 설명 합니다.

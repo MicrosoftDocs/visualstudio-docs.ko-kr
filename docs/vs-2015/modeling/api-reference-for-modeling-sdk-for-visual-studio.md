@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 65f8703597d6297afde6e2685594784fdd1d755c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672837"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio용 모델링 SDK에 대한 API 참조
@@ -26,7 +26,7 @@ Visual Studio 시각화 및 모델링 SDK는 DSL (도메인별 언어) 및 UML �
 
  이 섹션에는 이름이 "VisualStudio"로 시작 하는 네임 스페이스에 대 한 참조 자료가 포함 되어 있습니다.
 
-|네임스페이스|콘텐츠|
+|네임스페이스|Content|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|ModelElement와 같은 클래스-DSL에서 정의 하는 모든 도메인 클래스의 기본 클래스입니다.|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|DSL 정의의 일부를 구성 하는 클래스입니다.|
@@ -42,13 +42,13 @@ Visual Studio 시각화 및 모델링 SDK는 DSL (도메인별 언어) 및 UML �
 |[VisualStudio. 통합](/previous-versions/ee904412(v=vs.140))|Modelbus API는 여러 모델을 통합 하는 데 도움이 됩니다.|
 |[VisualStudio를 선택 합니다.](/previous-versions/ee904394(v=vs.140))|사용자가 모델 및 요소로 이동 하 여 Modelbus 참조를 만들 수 있는 대화 상자입니다.|
 |`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|선택 서비스입니다.|
-|[VisualStudio입니다.](/previous-versions/ee869435(v=vs.140))|@No__t_0 Modelbus 어댑터 프레임 워크입니다.|
+|[VisualStudio입니다.](/previous-versions/ee869435(v=vs.140))|용 Modelbus 어댑터 프레임 워크 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|
 |[VisualStudio를 선택 합니다.](/previous-versions/ee886769(v=vs.140))|사용자가 모델 및 요소로 이동 하 여 Modelbus 참조를 만들 수 있는 선택 대화 상자입니다.|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl과 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 간의 인터페이스입니다.|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl과 간의 인터페이스 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 입니다.|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|바로 가기 (상황에 맞는) 메뉴 명령을 정의할 수 있습니다.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|유효성 검사 제약 조건을 정의할 수 있습니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [UML 모델링 확장성을 위한 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)
 - [T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)

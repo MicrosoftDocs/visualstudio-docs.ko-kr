@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: af0017a7ee6918a80a93ca90c7cf3de78885d61f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539193"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions를 지정하세요.
@@ -44,11 +44,11 @@ ms.locfileid: "85539193"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  오른쪽에서 왼쪽 읽기 순서를 사용 하는 문화권에 대해 코드 라이브러리를 지역화 하지 않을 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 문화권의 읽기 순서에 적합 한 옵션이 있는 메시지 상자를 표시 하는 메서드를 보여 줍니다. 예제를 빌드하려면 리소스 파일 (표시 되지 않음)이 필요 합니다. 예제의 주석을 따라 리소스 파일 없이 예제를 빌드하고 오른쪽에서 왼쪽으로 기능을 테스트 합니다.
 
  [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/cs/FxCop.Globalization.SpecifyMBOptions.cs#1)]
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Resources.ResourceManager?displayProperty=fullName> [데스크톱 앱의 리소스](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

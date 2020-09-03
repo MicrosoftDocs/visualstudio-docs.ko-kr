@@ -1,5 +1,5 @@
 ---
-title: 원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다. | Microsoft Docs
+title: 원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다. | Microsoft 문서
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156526"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다.
@@ -33,11 +33,11 @@ ms.locfileid: "68156526"
 
 원격 디버깅은 다음과 같은 상황에서 원격 컴퓨터와 로컬 컴퓨터 간의 통신에 DCOM을 사용합니다.  
   
-- 디버거가 **기본 호환성 모드** 로 설정되거나 **도구 / 옵션 / 디버깅** 페이지에서 **관리되는 호환성 모드** 가 선택된 경우  
+- 디버거는 **도구/옵션/디버깅** 페이지에서 **네이티브 호환성 모드로** 설정 되거나 관리 되는 **호환성 모드가** 선택 됩니다.  
   
 - 관리되는 C++(C++/CLI) 코드를 디버깅하는 경우  
   
-- Visual Studio 2013의 **도구 / 옵션 / 디버깅** 페이지에서 **네이티브 편집하며 계속하기 사용** 을 선택하는 경우  
+- Visual Studio 2013에서 **도구/옵션/디버깅** 페이지에서 **네이티브 편집 하며 계속 하기 사용** 을 선택 하는 경우  
   
 - 일부 타사 디버깅 시나리오  
   
@@ -51,6 +51,6 @@ ms.locfileid: "68156526"
   
 - 원격 디버깅을 수행하려면 자격 증명을 입력해야 하는 경우 자격 증명을 저장하는 옵션을 선택합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

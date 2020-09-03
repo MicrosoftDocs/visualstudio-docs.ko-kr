@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189575"
 ---
 # <a name="debugger-project-settings"></a>디버거 프로젝트 설정
@@ -53,7 +53,7 @@ ms.locfileid: "68189575"
  [Visual Basic 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
  **프로젝트의** 속성 페이지 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 대화 상자에서 사용할 수 있는 속성이 나와 있습니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  디버거가 기호 파일과 소스 파일을 사용하여 디버깅 정보를 표시하는 방법을 설명합니다.  
   

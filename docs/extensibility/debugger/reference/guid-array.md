@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY | 마이크로 소프트 문서
+title: GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736648"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
-사용 가능한 디버그 엔진에 대한 고유 식별자 배열에 대해 설명합니다.
+사용 가능한 디버그 엔진에 대 한 고유 식별자 배열을 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,18 +46,18 @@ public struct GUID_ARRAY
 배열의 고유 식별자 수입니다.
 
 `Members`\
-고유 식별자가 포함된 배열입니다.
+고유 식별자가 포함 된 배열입니다.
 
 ## <a name="remarks"></a>설명
-이 구조는 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) 메서드에 의해 반환 됩니다.
+이 구조체는 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) 메서드에서 반환 됩니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: Msdbg.h
+헤더: Msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

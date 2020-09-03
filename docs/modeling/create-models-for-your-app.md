@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590529"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
@@ -42,7 +42,7 @@ ms.locfileid: "75590529"
 |코드 맵<br /><br /> [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)|기존 코드의 종속성 및 기타 관계|
 |코드에서 생성된 클래스 다이어그램<br /><br /> [클래스 다이어그램 사용(클래스 디자이너)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET 코드의 형식 및 해당 관계|
 
-## <a name="related-tasks"></a>관련 태스크
+## <a name="related-tasks"></a>관련 작업
 
 |**항목**|**Task**|
 |-|-|
@@ -53,7 +53,7 @@ ms.locfileid: "75590529"
 |[개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)<br /><br /> [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|모델을 사용하여 개발하는 동안 시스템을 이해하고 변경하도록 도와줍니다.|
 |[모델링 솔루션 구성](../modeling/structure-your-modeling-solution.md)|대규모 또는 중간 규모 프로젝트에서 모델을 구성합니다.|
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 - [Visual Studio 시각화 & 모델링 도구 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
 - [Visual Studio 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

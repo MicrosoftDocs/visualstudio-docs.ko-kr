@@ -13,16 +13,16 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189535"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이전에 체크 아웃 된 파일이 원본 제어 시스템에 변경 내용을 저장 하 고 새 버전을 만드는이 함수를 확인 합니다. 이 함수는 개수 및 체크 인 파일의 이름 배열을 사용 하 여 호출 됩니다.  
+이 함수는 이전에 체크 아웃 한 파일을 소스 제어 시스템으로 체크 인하고 변경 내용을 저장 하 고 새 버전을 만듭니다. 이 함수는 체크 인할 파일의 개수 및 이름 배열을 사용 하 여 호출 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,48 +40,48 @@ SCCRTN SccCheckin (
   
 #### <a name="parameters"></a>매개 변수  
  pvContext  
- [in] 원본 제어 플러그 인 상황에 맞는 구조입니다.  
+ 진행 소스 제어 플러그 인 컨텍스트 구조입니다.  
   
  hWnd  
- [in] 플러그 인 SCC 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.  
+ 진행 SCC 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.  
   
- nFiles  
- [in] 체크 인을 선택 하는 파일 수입니다.  
+ n  
+ 진행 체크 인 되도록 선택한 파일 수입니다.  
   
- lpFileNames  
- [in] 배열 검사할 파일의 정규화 된 로컬 경로 이름입니다.  
+ lpFileNames 이름  
+ 진행 체크 인할 파일의 정규화 된 로컬 경로 이름 배열입니다.  
   
  lpComment  
- [in] 각 체크 인 되 고 선택한 파일에 적용할 주석 처리 합니다. 이것이 `NULL` 주석에 대 한 소스 제어 플러그 인에서 메시지를 표시 하는 경우.  
+ 진행 체크 인 되는 선택한 각 파일에 적용할 설명입니다. `NULL`소스 제어 플러그 인에서 주석을 요청 해야 하는 경우입니다.  
   
- 옵션이  
- [in] 명령 플래그, 0 또는 `SCC_KEEP_CHECKEDOUT`합니다.  
+ fOptions  
+ 진행 명령 플래그 (0 또는) `SCC_KEEP_CHECKEDOUT` 입니다.  
   
  pvOptions  
- [in] SCC 플러그 인에 대 한 옵션입니다.  
+ 진행 SCC 플러그 인 관련 옵션입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.  
   
-|값|Description|  
+|값|설명|  
 |-----------|-----------------|  
-|SCC_OK|파일이는 성공적으로 체크 인 되었습니다.|  
-|SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 코드 제어 없습니다.|  
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다. 재시도 사용 하는 것이 좋습니다.|  
-|SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다. 파일 체크 인 되었습니다.|  
-|SCC_E_NOTCHECKEDOUT|사용자가 하지 파일을 체크 아웃, 확인할 수 없습니다.|  
-|SCC_E_CHECKINCONFLICT|때문에 체크 인을 수행할 수 없습니다.<br /><br /> -다른 사용자가 체크 인 계속 해 서 및 `bAutoReconcile` false입니다.<br /><br /> 또는<br /><br /> (예를 들어 경우 이진 파일이)-자동 병합을 수행할 수 없습니다.|  
-|SCC_E_VERIFYMERGE|파일 자동 병합 되었지만 사용자 확인이 늦어질 검사 하지 않았습니다.|  
-|SCC_E_FIXMERGE|파일 자동 병합 되었지만 수동으로 해결 해야 하는 병합 충돌로 인해 검사 하지 않았습니다.|  
-|SCC_E_NOTAUTHORIZED|사용자는이 작업을 수행할 수 없습니다.|  
+|SCC_OK|파일이 체크 인 되었습니다.|  
+|SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어에 있지 않습니다.|  
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 원본 제어 시스템에 액세스 하는 동안 문제가 발생 했습니다. 다시 시도 하는 것이 좋습니다.|  
+|SCC_E_NONSPECIFICERROR|일반 오류입니다. 파일이 체크 인 되지 않았습니다.|  
+|SCC_E_NOTCHECKEDOUT|사용자가 파일을 체크 아웃 하지 않았으므로 체크 인할 수 없습니다.|  
+|SCC_E_CHECKINCONFLICT|다음 이유로 인해 체크 인을 수행할 수 없습니다.<br /><br /> -다른 사용자가 미리 체크 인하고 `bAutoReconcile` false 였습니다.<br /><br /> 또는<br /><br /> -자동 병합을 수행할 수 없습니다 (예: 파일이 이진 인 경우).|  
+|SCC_E_VERIFYMERGE|파일이 자동으로 병합 되었지만 사용자 확인 보류 중에 체크 인 되지 않았습니다.|  
+|SCC_E_FIXMERGE|파일이 자동으로 병합 되었지만 수동으로 해결 해야 하는 병합 충돌로 인해 체크 인 되지 않았습니다.|  
+|SCC_E_NOTAUTHORIZED|사용자가이 작업을 수행할 수 없습니다.|  
 |SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|  
-|SCC_I_RELOADFILE|파일 또는 프로젝트 다시 로드 해야 합니다.|  
+|SCC_I_RELOADFILE|파일이 나 프로젝트를 다시 로드 해야 합니다.|  
 |SCC_E_FILENOTEXIST|로컬 파일을 찾을 수 없습니다.|  
   
 ## <a name="remarks"></a>설명  
- 메모는 체크 인 모든 파일에 적용 됩니다. 주석 인수 수를 `null` 문자열, 소스 제어 플러그 인에서 각 파일에 대 한 설명 문자열에 대 한 사용자를 입력할 수는 경우.  
+ 주석은 체크 인 된 모든 파일에 적용 됩니다. 주석 인수는 문자열일 수 있습니다 `null` .이 경우 소스 제어 플러그 인은 각 파일에 대 한 주석 문자열을 사용자에 게 표시할 수 있습니다.  
   
- 합니다 `fOptions` 인수 값이 지정 될 수는 `SCC_KEEP_CHECKEDOUT` 파일을 확인 하 고 다시 체크 아웃 하는 사용자의 의도 나타내기 위해 플래그입니다.  
+ `fOptions`인수에 플래그 값을 지정 `SCC_KEEP_CHECKEDOUT` 하 여 파일을 확인 하 고 다시 체크 아웃할 사용자의 의도를 나타낼 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d660189ede0848216eb44d6ef49fe9c93a06ec8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672721"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules로 모양 위치 및 크기 제한
@@ -25,7 +25,7 @@ ms.locfileid: "72672721"
 
  다음 예제에서는 사각형 도형을 가로 또는 세로의 고정 크기 막대로 제한 합니다. 사용자가 모서리나 옆면을 끌면 윤곽선은 높이와 너비의 두 허용 된 구성 사이에서 대칭 이동 됩니다.
 
- 범위 규칙은 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>에서 파생 된 클래스입니다. 규칙의 인스턴스는 다음 모양으로 만들어집니다.
+ 범위 규칙은에서 파생 된 클래스입니다 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> . 규칙의 인스턴스는 다음 모양으로 만들어집니다.
 
 ```
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -67,5 +67,5 @@ public class BarBoundsRule: BoundsRules
 
  원하는 경우 위치와 크기를 모두 제한할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
- [변경 내용에 대 한 응답 및 전파](../modeling/responding-to-and-propagating-changes.md) <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>
+## <a name="see-also"></a>관련 항목
+ <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [변경 내용에 대한 대응 및 전파](../modeling/responding-to-and-propagating-changes.md)

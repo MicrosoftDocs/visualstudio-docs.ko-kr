@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673042"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 컨트롤 바인딩
@@ -38,9 +38,9 @@ ms.locfileid: "72673042"
 
 |데이터 원본|**Windows Forms 디자이너**에서의 끌어서 놓기 지원|**WPF 디자이너**에서의 끌어서 놓기 지원|**Silverlight 디자이너**에서의 끌어서 놓기 지원|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|데이터 세트|예|예|아니요|
+|데이터 세트|예|예|예|
 |엔터티 데이터 모델|예<sup>1</sup>|예|예|
-|LINQ to SQL 클래스|No<sup>2</sup>|No<sup>2</sup>|No<sup>2</sup>|
+|LINQ to SQL 클래스|아니요<sup>2</sup>|아니요<sup>2</sup>|아니요<sup>2</sup>|
 |[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], WCF 서비스, 웹 서비스 등의 서비스|예|예|예|
 |Object|예|예|예|
 |SharePoint|예|예|예|
@@ -59,10 +59,10 @@ ms.locfileid: "72673042"
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>컨트롤을 데이터에 바인딩하는 것과 관련된 작업
  다음 표에서는 컨트롤을 데이터에 바인딩하기 위해 수행 하는 가장 일반적인 몇 가지 작업을 보여 줍니다.
 
-|작업|추가 정보|
+|Task|추가 정보|
 |----------|----------------------|
-|**데이터 원본** 창을 엽니다.|편집기에서 디자인 화면을 열고  > **데이터 원본** **보기** 를 선택 합니다.|
-|프로젝트에 데이터 원본을 추가합니다.|[새 데이터 소스 추가](../data-tools/add-new-data-sources.md)|
+|**데이터 원본** 창을 엽니다.|편집기에서 디자인 화면을 열고 **View**  >  **데이터 원본**보기를 선택 합니다.|
+|프로젝트에 데이터 원본을 추가합니다.|[새 데이터 원본 추가](../data-tools/add-new-data-sources.md)|
 |**데이터 원본** 창의 항목을 디자이너로 끌 때 만들어지는 컨트롤을 설정합니다.|[데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |**데이터 원본** 창의 항목과 연결되는 컨트롤 목록을 수정합니다.|[데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
 |데이터 바인딩된 컨트롤을 만듭니다.|[Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)|
@@ -70,5 +70,5 @@ ms.locfileid: "72673042"
 |UI에 표시 되는 데이터를 필터링 합니다.|[Windows Forms 애플리케이션에서 데이터 필터링 및 정렬](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |컨트롤의 캡션을 사용자 지정 합니다.|[Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [.Net 용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms 데이터 바인딩](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

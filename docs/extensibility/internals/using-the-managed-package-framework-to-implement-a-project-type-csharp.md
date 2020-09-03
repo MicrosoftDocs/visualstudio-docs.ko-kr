@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 유형(C#)에 관리되는 패키지 프레임워크 사용 | 마이크로 소프트 문서
+title: '프로젝트 형식에 대해 관리 되는 패키지 프레임 워크 사용 (c #) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca9dda0b699e0f70b0c945ab9ecfe9f9f4dcda6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704117"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)
-MPF(관리되는 패키지 프레임워크)는 사용자 고유의 프로젝트 형식을 구현하기 위해 사용하거나 상속할 수 있는 C# 클래스를 제공합니다. MPF는 Visual Studio에서 제공하는 프로젝트 형식이 기대하는 많은 인터페이스를 구현하므로 프로젝트 형식의 세부 사항을 구현하는 데 집중할 수 있습니다.
+MPF (관리 되는 패키지 프레임 워크)는 사용자 고유의 프로젝트 형식을 구현 하기 위해에서 사용 하거나 상속할 수 있는 c # 클래스를 제공 합니다. MPF는 Visual Studio에서 제공 하는 프로젝트 형식이 필요한 많은 인터페이스를 구현 하며 프로젝트 형식의 인스턴스와 관련 사항을 구현에 집중할 수 있습니다.
 
 ## <a name="using-the-mpf-project-source-code"></a>MPF 프로젝트 소스 코드 사용
- MPFProj(프로젝트용 관리되는 패키지 프레임워크)는 새 프로젝트 시스템을 만들고 관리하기 위한 도우미 클래스를 제공합니다. MPF의 다른 클래스와 달리 프로젝트 클래스는 Visual Studio와 함께 제공된 어셈블리에 포함되지 않습니다. 대신 프로젝트 클래스는 [프로젝트 2013에 대 한 MPF에서](https://github.com/tunnelvisionlabs/MPFProj10)소스 코드로 제공 됩니다.
+ 프로젝트에 대 한 관리 패키지 프레임 워크 (MPFProj)는 새 프로젝트 시스템을 만들고 관리 하기 위한 도우미 클래스를 제공 합니다. MPF의 다른 클래스와 달리 프로젝트 클래스는 Visual Studio와 함께 제공 되는 어셈블리에 포함 되지 않습니다. 대신 프로젝트 클래스는 프로젝트 [2013에 대 한 MPF](https://github.com/tunnelvisionlabs/MPFProj10)에서 소스 코드로 제공 됩니다.
 
- 이 프로젝트를 VSPackage 솔루션에 추가하려면 다음을 수행합니다.
+ VSPackage 솔루션에이 프로젝트를 추가 하려면 다음을 수행 합니다.
 
-1. MPFProj 파일을 *MPFProjectDir에*다운로드합니다.
+1. *Mpfprojectdir*에 MPFProj 파일을 다운로드 합니다.
 
-2. *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file에서 다음 블록을 변경합니다.
+2. *Mpfprojectdir*\Dev10\Src\CSharp\ProjectBase.file에서 다음 블록을 변경 합니다.
 
 ```
 <!-- Provide a default value for $(ProjectBasePath) -->
@@ -40,9 +40,9 @@ MPF(관리되는 패키지 프레임워크)는 사용자 고유의 프로젝트 
 
 1. VSPackage 프로젝트를 만듭니다.
 
-2. VS패키지 프로젝트를 언로드합니다.
+2. VSPackage 프로젝트를 언로드합니다.
 
-3. VSPackage .csproj 파일을 편집하여 다음 블록을 다른 `<Import>` 블록 앞에 추가합니다.
+3. 다른 블록 앞에 다음 블록을 추가 하 여 VSPackage 파일을 편집 합니다 `<Import>` .
 
 ```
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />
@@ -56,18 +56,18 @@ MPF(관리되는 패키지 프레임워크)는 사용자 고유의 프로젝트 
 
 1. 프로젝트를 저장합니다.
 
-2. VSPackage 솔루션을 닫고 다시 엽니다.
+2. VSPackage 솔루션을 닫았다가 다시 엽니다.
 
-3. VSPackage 프로젝트를 다시 엽니다. ProjectBase라는 새 디렉터리가 표시됩니다.
+3. VSPackage 프로젝트를 다시 엽니다. ProjectBase 라는 새 디렉터리가 표시 되어야 합니다.
 
-4. VSPackage 프로젝트에 다음 참조를 추가합니다.
+4. VSPackage 프로젝트에 다음 참조를 추가 합니다.
 
-     마이크로소프트.빌드.작업.4.0
+     Microsoft. 빌드. 작업 4.0
 
 5. 프로젝트를 빌드합니다.
 
-## <a name="hierarchy-classes"></a>계층 구조 클래스
- 다음 표에서는 프로젝트 계층구조를 지원하는 MPFProj의 클래스를 요약합니다. 자세한 내용은 [계층 구조 및 선택](../../extensibility/internals/hierarchies-and-selection.md)을 참조하십시오.
+## <a name="hierarchy-classes"></a>계층 클래스
+ 다음 표에서는 프로젝트 계층 구조를 지 원하는 MPFProj의 클래스를 요약 합니다. 자세한 내용은 [계층 및 선택](../../extensibility/internals/hierarchies-and-selection.md)을 참조 하세요.
 
 |클래스 이름|
 |----------------|
@@ -84,7 +84,7 @@ MPF(관리되는 패키지 프레임워크)는 사용자 고유의 프로젝트 
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
 ## <a name="document-handling-classes"></a>문서 처리 클래스
- 다음 표에는 문서 처리를 지원하는 MPF의 클래스가 나열되어 있습니다. 자세한 내용은 [프로젝트 항목 열기 및 저장을](../../extensibility/internals/opening-and-saving-project-items.md)참조하십시오.
+ 다음 표에서는 문서 처리를 지 원하는 MPF의 클래스를 나열 합니다. 자세한 내용은 [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)을 참조 하세요.
 
 |클래스 이름|
 |----------------|
@@ -92,7 +92,7 @@ MPF(관리되는 패키지 프레임워크)는 사용자 고유의 프로젝트 
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|
 
 ## <a name="configuration-and-output-classes"></a>구성 및 출력 클래스
- 다음 표에는 MPF의 클래스가 나열되어 있으며, 프로젝트 형식은 디버그 및 릴리스 및 프로젝트 출력 컬렉션과 같은 여러 구성을 지원할 수 있도록 합니다. 자세한 내용은 [구성 옵션 관리를](../../extensibility/internals/managing-configuration-options.md)참조하십시오.
+ 다음 표에서는 프로젝트 형식에서 디버그 및 릴리스와 같은 여러 구성 및 프로젝트 출력 컬렉션을 지원할 수 있도록 하는 MPF의 클래스를 나열 합니다. 자세한 내용은 [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)를 참조 하세요.
 
 |클래스 이름|
 |----------------|
@@ -103,7 +103,7 @@ MPF(관리되는 패키지 프레임워크)는 사용자 고유의 프로젝트 
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
 ## <a name="automation-support-classes"></a>자동화 지원 클래스
- 다음 표에는 프로젝트 유형의 사용자가 추가 기능을 쓸 수 있도록 자동화를 지원하는 MPF의 클래스가 나열되어 있습니다.
+ 다음 표에서는 프로젝트 형식의 사용자가 추가 기능을 쓸 수 있도록 자동화를 지 원하는 MPF의 클래스를 나열 합니다.
 
 |클래스 이름|
 |----------------|
@@ -114,7 +114,7 @@ MPF(관리되는 패키지 프레임워크)는 사용자 고유의 프로젝트 
 |`Microsoft.VisualStudio.Package.Automation.OANestedProjectItem`|
 
 ## <a name="properties-classes"></a>속성 클래스
- 다음 표에는 프로젝트 형식이 사용자가 속성 브라우저에서 찾아보고 수정할 수 있는 속성을 추가할 수 있도록 하는 MPF의 클래스가 나열되어 있습니다.
+ 다음 표에서는 프로젝트 형식에서 사용자가 속성 브라우저에서 찾아보고 수정할 수 있는 속성을 추가할 수 있게 해 주는 MPF의 클래스를 나열 합니다.
 
 |클래스 이름|
 |----------------|

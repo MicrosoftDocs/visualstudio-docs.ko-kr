@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155271"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -24,7 +24,7 @@ ms.locfileid: "68155271"
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity  
  **Unity**는 플랫폼 간 게임을 만들기 위한 게임 엔진 및 개발 환경입니다. Unity 엔진은 강력한 PC에서 게임 콘솔, 터치 기반 태블릿과 휴대폰, 심지어는 웹까지 여러 플랫폼에서 실행됩니다. Unity 편집기는 풍부한 게임 세계를 빌드할 수 있는 친숙한 인터페이스를 제공합니다. Unity의 기능, 사용 편의성 및 도달 범위는 오늘날의 게임 개발자 사이에서 Unity가 인기를 끄는 이유입니다.  
   
- Unity 편집기는 게임 세계를 하나로 통합하는 데 탁월하지만, 편집기에서 코드를 작성할 수는 없습니다. **Visual Studio Tools for Unity**를 사용하면 Visual Studio의 친숙한 코드 편집, 디버깅 및 생산성 기능을 통해 C#을 사용하여 Unity 프로젝트에 대한 편집기 및 게임 스크립트를 만들 수 있으며, Visual Studio의 강력한 디버깅 기능을 사용하여 디버그할 수 있습니다.  
+ Unity 편집기는 게임 세계를 하나로 통합하는 데 탁월하지만, 편집기에서 코드를 작성할 수는 없습니다. **Visual Studio Tools for Unity**을 사용 하면 visual studio의 친숙 한 코드 편집, 디버깅 및 생산성 기능을 사용 하 여 c #을 사용 하 여 Unity 프로젝트용 편집기 및 게임 스크립트를 만들 수 있으며 visual studio의 강력한 디버깅 기능을 사용 하 여 디버그할 수 있습니다.  
   
  하지만 Visual Studio Tools for Unity는 그 이상의 기능을 제공합니다. Unity 편집기와의 긴밀한 통합으로 단순한 작업을 수행하며 앞뒤로 전환하는 시간을 줄이고, Unity 특정 생산성 향상 기능을 제공하고, 필요할 때면 언제든지 Unity 설명서를 볼 수 있게 도와줍니다.  
   
