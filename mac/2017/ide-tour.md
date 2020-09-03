@@ -7,10 +7,10 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984977"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Mac용 Visual Studio 2017 둘러보기
@@ -41,7 +41,7 @@ Mac용 Visual Studio는 애플리케이션 파일 및 설정 관리, 애플리�
 
 ## <a name="welcome-screen"></a>시작 화면
 
-Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다. 
+Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다.**
 
 ![시작 화면](media/ide-tour-image1.png)
 
@@ -122,6 +122,6 @@ Visual Studio에서 버전 제어를 사용하는 방법에 대한 자세한 내
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows의 Visual Studio IDE](/visualstudio/ide/visual-studio-ide)

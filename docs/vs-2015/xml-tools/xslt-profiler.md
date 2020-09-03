@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406729"
 ---
 # <a name="xslt-profiler"></a>XSLT 프로파일러
@@ -30,5 +30,5 @@ XSLT 프로파일러는 XSLT 문서를 개발하고 디버깅하는 데 도움�
 > [!NOTE]
 > Visual Studio 2008 이후 일부 시각적 요소가 변경되었기 때문에 일부 화면이 이러한 문서에서 나타나는 것과 다르게 Visual Studio 2010에서 나타날 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [연습: XSLT 프로파일러](../xml-tools/walkthrough-xslt-profiler.md)

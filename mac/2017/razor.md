@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: 40ecc0dce7692742b1024cbd323f1d10b4c9516b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74985253"
 ---
 # <a name="razor-support"></a>Razor 지원
@@ -26,6 +26,6 @@ Mac용 Visual Studio의 Razor를 시작할 때는 ASP.NET Core와 ASP.NET Core M
 - [Mac용 Visual Studio를 사용하여 macOS에서 ASP.NET Core의 Razor 페이지 시작](/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1)
 - [ASP.NET Core MVC 및 Mac용 Visual Studio 시작](/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Windows의 Visual Studio에서 C# 및 ASP.NET Core 시작](/visualstudio/ide/tutorial-csharp-aspnet-core)

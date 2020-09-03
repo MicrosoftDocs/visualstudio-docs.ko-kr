@@ -6,10 +6,10 @@ author: bytesguy
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: c0d51c0b458a1d4079eb935d40b09c260cf01186
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983634"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 기본 바로 가기 키
@@ -45,10 +45,10 @@ ms.locfileid: "74983634"
 |한 단계씩 코드 실행|**⇧⌘I**, **⌘F11**|
 |프로시저 나가기|**⇧⌘U**, **⇧⌘F11**|
 |프로시저 단위 실행|**⇧⌘O**, **F10**|
-|중단점 설정/해제|**⌘\\** , **F9**|
+|중단점 설정/해제|**⌘\\**, **F9**|
 |중단점 보기|**⌥⌘B**|
 
-## <a name="designer"></a>Designer
+## <a name="designer"></a>디자이너
 
 |명령|바로 가기 키|
 |-|-|
@@ -61,7 +61,7 @@ ms.locfileid: "74983634"
 |제약 조건 편집 모드|**⌘E**|
 |복사|**⌘C**|
 |잘라내기|**⌘X**|
-|삭제|**⌘⌫**|
+|DELETE|**⌘⌫**|
 |문서 서식|**⌃I**|
 |선택 영역 들여쓰기|**⌘]**|
 |붙여넣기|**⌘V**|
@@ -83,7 +83,7 @@ ms.locfileid: "74983634"
 |명령|바로 가기 키|
 |-|-|
 |F# 대화형 지우기|**⌃⌥C**|
-|F# 대화형|**⌃⌥F**|
+|F# Interactive|**⌃⌥F**|
 |F# 대화형 다시 시작|**⌃⌥R**|
 |F# 대화형으로 줄 보내기|**⌃⌥L**|
 |F# 대화형으로 참조 보내기|**⌃⌥P**|
@@ -99,8 +99,8 @@ ms.locfileid: "74983634"
 |새 파일|**⌘N**|
 |새 솔루션|**⇧⌘N**|
 |열기|**⌘O**|
-|용|**⌘P**|
-|끝내기|**⌘Q**|
+|인쇄|**⌘P**|
+|Quit|**⌘Q**|
 |되돌리기|**⌘U**|
 |저장|**⌘S**|
 |모두 저장|**⇧⌘S**|
@@ -130,8 +130,8 @@ ms.locfileid: "74983634"
 |다시 빌드|**⌃⌘K**|
 |모두 다시 빌드|**⌃⌘B**|
 |디버깅 시작|**⌘⏎**, **F5**|
-|디버깅 없이 시작|**⌥⌘⏎**, **⌃F5**|
-|Stop|**⇧⌘⏎**, **⇧F5**|
+|디버깅하지 않고 시작|**⌥⌘⏎**, **⌃F5**|
+|중지|**⇧⌘⏎**, **⇧F5**|
 
 ## <a name="refactoring"></a>리팩터링
 
@@ -150,13 +150,13 @@ ms.locfileid: "74983634"
 |선택 영역과 유사한 다음 찾기|**⌘E**, **⌘F3**|
 |이전 찾기|**⇧⌘G**, **⇧F3**|
 |선택 영역과 유사한 이전 찾기|**⇧⌘F3**|
-|Find|**⌘F**|
+|찾기|**⌘F**|
 |파일로 이동|**⇧⌘D**|
 |줄로 이동|**⌘L**|
 |형식으로 이동|**⇧⌘T**|
-|탐색|**⌘.**|
+|다음 탐색|**⌘.**|
 |파일에서 바꾸기|**⌥⇧⌘F**|
-|Replace|**⌥⌘F**|
+|바꾸기|**⌥⌘F**|
 
 ## <a name="text-editor"></a>텍스트 편집기
 
@@ -228,7 +228,7 @@ ms.locfileid: "74983634"
 |확대|**⌘+** , **⌘=**|
 |축소|**⌘-** , **⌘_**|
 
-## <a name="window"></a>창
+## <a name="window"></a>시간 범위
 
 |명령|바로 가기 키|
 |-|-|
@@ -245,7 +245,7 @@ ms.locfileid: "74983634"
 |Visual Studio 숨기기|**⌘H**|
 |최소화|**⌘M**|
 |다음 문서|**⌘}** , **⌘F6**|
-|이전 문서|**⌘{** , **⇧⌘F6**|
+|이전 문서|**⌘{**, **⇧⌘F6**|
 |다음 문서로 전환|**⌃⇥**|
 |다음 패드로 전환|**⌃⌥⇥**|
 |이전 문서로 전환|**⌃⇧⇥**|
@@ -253,7 +253,7 @@ ms.locfileid: "74983634"
 
 ## <a name="macos-key-symbols-lookup"></a>macOS 키 기호 조회
 
-|Symbol|Key|
+|기호|키|
 |-|-|
 |⌘|**명령**(**cmd**)|
 |⌥|**옵션**(**alt**)|
@@ -270,6 +270,6 @@ ms.locfileid: "74983634"
 |␣|**스페이스바**|
 |⇥|**Tab**|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 바로 가기 키(Windows에서)](/visualstudio/ide/tips-and-tricks-for-visual-studio)
