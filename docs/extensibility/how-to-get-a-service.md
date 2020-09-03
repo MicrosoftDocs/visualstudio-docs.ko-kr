@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905826"
 ---
 # <a name="how-to-get-a-service"></a>방법: 서비스 가져오기
@@ -85,7 +85,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: 서비스 제공](../extensibility/how-to-provide-a-service.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)

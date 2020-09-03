@@ -1,5 +1,5 @@
 ---
-title: 아이디버그스택프레임2::겟랭정보 | 마이크로 소프트 문서
+title: 'IDebugStackFrame2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719708"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-이 스택 프레임과 연결된 언어를 가져옵니다.
+이 스택 프레임과 연결 된 언어를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>매개 변수
 
 `pbstrLanguage`\
-【아웃】 이 스택 프레임과 연결된 메서드를 구현하는 언어의 이름을 반환합니다.
+제한이 이 스택 프레임과 연결 된 메서드를 구현 하는 언어의 이름을 반환 합니다.
 
 `pguidLanguage`\
-【아웃】 언어의 `GUID` 반환합니다. 예를 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 들어 언어의 경우 다음을 반환할 수 있습니다.
+제한이 언어의를 반환 합니다 `GUID` . 예를 들어 언어의 경우 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 다음이 반환 될 수 있습니다.
 
 - `guidVBScriptLang`\
 
@@ -62,10 +62,10 @@ int GetLanguageInfo ( 
 
 - `guidScriptLang`\
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

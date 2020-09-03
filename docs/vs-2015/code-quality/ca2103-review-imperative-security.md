@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ade0d10e203752c7412929c6f5f44d9cbfaacfa6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521266"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: 명령적 보안을 검토하세요.
@@ -46,5 +46,5 @@ ms.locfileid: "85521266"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  사용 권한이 변경 데이터에 의존 하지 않는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 그러나 명령적 수요를 선언적으로 변경 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [보안 코딩 지침](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [데이터 및 모델링](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905462"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대 한 레지스트리 정보 생성
@@ -181,7 +181,7 @@ ms.locfileid: "85905462"
     </Include>
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Vspackage 등록](../../extensibility/registering-and-unregistering-vspackages.md)
-- [VSPackage](../../extensibility/internals/vspackages.md)
+- [VSPackages](../../extensibility/internals/vspackages.md)

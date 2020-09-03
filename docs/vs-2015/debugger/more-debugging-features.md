@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300535"
 ---
 # <a name="more-debugging-features"></a>추가 디버그 기능
@@ -38,10 +38,10 @@ ms.locfileid: "74300535"
  [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)  
  다양한 디버그 창에 대해 설명하고  
   
- [Just-In-Time Debugging in Visual Studio](../debugger/just-in-time-debugging-in-visual-studio.md)(Visual Studio의 Just-In-Time 디버깅)  
+ [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Visual Studio의 외부에서 실행하는 동안 프로그램이 충돌할 때 자동으로 디버거를 시작할 수 있는 Just-In-Time 디버깅에 대해 설명합니다.  
   
- [연습: 디자인 타임에 디버그](../debugger/walkthrough-debugging-at-design-time.md)  
+ [연습: 디자인 타임에 디버깅](../debugger/walkthrough-debugging-at-design-time.md)  
  애플리케이션이 실행되지 않을 때 Visual Studio 직접 실행 창을 사용하여 함수나 서브루틴을 실행하는 방법을 보여 줍니다. 
   
  [편집하며 계속하기](../debugger/edit-and-continue.md)  

@@ -12,10 +12,10 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58529dabbb52ceb751c67be24beb1d21285a1de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301138"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows Installer 패키지 작성
@@ -26,15 +26,15 @@ ms.locfileid: "74301138"
 ## <a name="database-entries"></a>데이터베이스 항목  
  VSPackage를 설치 하려면 Windows Installer 패키지에 다음 태스크를 수행 하는 데이터베이스 항목이 포함 되어 있어야 합니다.  
   
-- 시스템을 검색 하 여 VSPackage에서 지 원하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 버전을 찾습니다 (AppSearch, CompLocator, RegLocator, DrLocator 및 서명이 포함 된 Windows Installer 테이블 사용).  
+- 시스템을 검색 하 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage에서 지 원하는 버전을 찾습니다 (AppSearch, CompLocator, RegLocator, drlocator 및 서명이 포함 된 Windows Installer 테이블 사용).  
   
-- 지원 되는 버전의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 설치 되지 않았거나 VSPackage의 다른 시스템 요구 사항이 충족 되지 않는 경우 (LaunchCondition 테이블 사용) 설치를 취소 합니다.  
+- 지원 되는 버전이 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 설치 되어 있지 않거나 VSPackage의 다른 시스템 요구 사항이 충족 되지 않는 경우 (LaunchCondition 테이블 사용) 설치를 취소 합니다.  
   
 - 디렉터리, 구성 요소 및 파일 테이블을 사용 하 여 VSPackage 및 종속 파일을 설치 합니다.  
   
 - 레지스트리 테이블을 사용 하 여 VSPackage에 대 한 적절 한 정보를 레지스트리에 추가 합니다.  
   
-- CustomAction 테이블을 사용 하 여 VSPackage **를 호출 하** 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에 있는를 통합 합니다.  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]CustomAction 테이블을 사용 하 여 **devenv.exe/설치 프로그램** 을 호출 하 여의 VSPackage를 통합 합니다.  
   
   자세한 내용은 [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)를 참조 하세요.  
   
@@ -47,9 +47,9 @@ ms.locfileid: "74301138"
   
 - Windows Installer XML 도구 집합  
   
-   도구 집합은 XML 원본 파일에서 패키지 Windows Installer 작성 합니다. 도구 집합은 Microsoft 오픈 소스 프로젝트입니다. [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/)에서 소스 코드 및 실행 파일을 다운로드할 수 있습니다.  
+   도구 집합은 XML 원본 파일에서 패키지 Windows Installer 작성 합니다. 도구 집합은 Microsoft 오픈 소스 프로젝트입니다. 에서 소스 코드 및 실행 파일을 다운로드할 수 있습니다 [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/) .  
   
-  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]를 사용 하 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에 통합 되는 상용 제품은 [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/)를 참조 하세요.  
+  를 사용 하 여에 통합 되는 상용 제품은 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 를 참조 하십시오 [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/) .  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Windows Installer를 사용하여 VSPackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

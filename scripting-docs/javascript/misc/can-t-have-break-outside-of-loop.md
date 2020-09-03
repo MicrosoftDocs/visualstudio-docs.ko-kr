@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817660"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>루프 외부에서 'break'를 사용할 수 없습니다.
@@ -34,7 +34,7 @@ break labelname;
   
 - **Break** 키워드가 바깥쪽 루프 또는 switch 문 내에 표시 되는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [break 문](../../javascript/reference/break-statement-javascript.md)   
  [프로그램 흐름 제어](../../javascript/controlling-program-flow-javascript.md)   
  [스크립트 문제 해결](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

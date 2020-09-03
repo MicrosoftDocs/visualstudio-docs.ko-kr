@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905617"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>방법: Visual Studio 확장 업데이트
@@ -60,6 +60,6 @@ ms.locfileid: "85905617"
     > [!NOTE]
     > Visual Studio 2015 업데이트 2부터 **Tools**  >  **Options**  >  **Environment**  >  사용자별 확장, 모든 사용자 확장 또는 둘 다 (기본 설정)에 대해 자동 업데이트를 사용할지 여부를 도구 옵션 환경**확장 및 업데이트**에서 지정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)
 - [Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)

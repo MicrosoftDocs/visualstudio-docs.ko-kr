@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905589"
 ---
 # <a name="how-to-use-the-activity-log"></a>방법: 활동 로그 사용
@@ -38,7 +38,7 @@ Vspackage은 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 �
         "Called for: {0}", this.ToString()));
     ```
 
-     이 코드는 서비스를 가져와 <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 인터페이스로 캐스팅 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>현재 문화권 컨텍스트를 사용 하 여 활동 로그에 정보 항목을 씁니다.
+     이 코드는 서비스를 가져와 <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 인터페이스로 캐스팅 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> 현재 문화권 컨텍스트를 사용 하 여 활동 로그에 정보 항목을 씁니다.
 
 2. VSPackage 로드 될 때 (일반적으로 명령이 호출 되거나 창이 열리면) 텍스트는 활동 로그에 기록 됩니다.
 
@@ -62,10 +62,10 @@ Vspackage은 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 �
 
 활동 로그에 쓰기 전에 활동 로그를 가져와야 합니다. 나중에 사용 하기 위해 활동 로그를 캐시 하거나 저장 하지 마십시오.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [VSPackage 문제 해결](../extensibility/troubleshooting-vspackages.md)
-- [VSPackage](../extensibility/internals/vspackages.md)
+- [VSPackages](../extensibility/internals/vspackages.md)
