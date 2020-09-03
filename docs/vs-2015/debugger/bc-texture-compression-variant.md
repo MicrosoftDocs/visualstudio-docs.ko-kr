@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161697"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 텍스처 압축 변형
@@ -63,5 +63,5 @@ B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감�
 ## <a name="example"></a>예제  
  `CreateTexture2D` 호출 전 런타임 시 이 변형은 질감을 블록으로 압축합니다. 압축되지 않은 질감은 더 많은 디스크 공간을 사용하고, 블록 기반 압축에는 인코딩에 상당한 계산 리소스가 필요하므로 추가 단계에서 앱에서의 로드 시간이 상당히 길어질 수 있기 때문에 프로덕션 코드에는 이러한 접근 방식을 사용하는 것이 좋습니다. 대신 빌드 파이프라인의 일부인 이미지 편집기 또는 이미지 프로세서를 사용하여 질감을 오프라인으로 압축하는 것이 좋습니다. 이러한 접근 방식은 디스크 공간 요구 사항을 줄이고 앱에서 런타임 오버헤드를 없애며 더 긴 처리 시간을 허용하므로 최상의 이미지 품질을 유지할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [반기/분기 텍스처 차원 변형](../debugger/half-quarter-texture-dimensions-variant.md)

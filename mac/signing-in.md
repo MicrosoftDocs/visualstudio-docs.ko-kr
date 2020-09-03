@@ -7,10 +7,10 @@ ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
 ms.openlocfilehash: 86d701e50b4d9f5b8e4c9af0c736c117cd2e91be
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950530"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Mac용 Visual Studio에 로그인
@@ -50,7 +50,7 @@ Mac용 Visual Studio를 처음 시작하면 Microsoft 계정으로 로그인하�
 
 Mac용 Visual Studio는 개인 설정 계정에 여러 계정을 추가하는 기능을 지원합니다. 이렇게 추가한 여러 계정으로 Azure와 같은 리소스에 액세스할 수 있습니다.
 
-추가 사용자 계정을 추가하려면 Mac용 Visual Studio에서 **Visual Studio > 계정...** 메뉴를 선택합니다. **추가...**  단추를 클릭하여 추가 계정 자격 증명을 입력합니다.
+추가 사용자 계정을 추가하려면 Mac용 Visual Studio에서 **Visual Studio > 계정...** 메뉴를 선택합니다. **추가... ** 단추를 클릭하여 추가 계정 자격 증명을 입력합니다.
 
 ![계정 관리](media/user-accounts-login.png)
 
@@ -62,7 +62,7 @@ Mac용 Visual Studio는 개인 설정 계정에 여러 계정을 추가하는 �
 
 3. 완료되면 **변경 내용 저장**을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows의 Visual Studio에 로그인](/visualstudio/ide/signing-in-to-visual-studio)
 - [여러 사용자 계정으로 작업(Windows의 Visual Studio)](/visualstudio/ide/work-with-multiple-user-accounts)

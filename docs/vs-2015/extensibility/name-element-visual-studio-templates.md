@@ -13,20 +13,20 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194196"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-에 표시 된 대로 템플릿의 이름을 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
+**새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 템플릿의 이름을 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<이름 >  
+ \<Name>  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,7 +43,7 @@ ms.locfileid: "68194196"
   
 ### <a name="attributes"></a>특성  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
 |`Package`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 패키지를 ID를 지정하는 GUID입니다.|  
 |`ID`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 리소스 ID를 지정합니다.|  
@@ -65,8 +65,8 @@ ms.locfileid: "68194196"
 ## <a name="remarks"></a>설명  
  `Name`은 `TemplateData`의 필수 자식 요소입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 응용 프로그램입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] .  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -92,6 +92,6 @@ ms.locfileid: "68194196"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

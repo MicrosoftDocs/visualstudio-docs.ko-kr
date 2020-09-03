@@ -8,10 +8,10 @@ ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: eb3ceed624e3bbba67564bb8f7c359841c0e496d
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939179"
 ---
 # <a name="creating-and-editing-build-configurations"></a>빌드 구성 만들기 및 편집

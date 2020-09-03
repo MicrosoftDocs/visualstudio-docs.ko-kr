@@ -1,5 +1,5 @@
 ---
-title: 아이디버그문서2:GetDocumentClassID | 마이크로 소프트 문서
+title: 'IDebugDocument2:: GetDocumentClassID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 71683c91082f477da530ec1be1fdc7627d6a7635
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732034"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
@@ -40,13 +40,13 @@ int GetDocumentClassID( 
 ```
 
 ## <a name="parameters"></a>매개 변수
-`pclsid`【아웃】 문서의 클래스 ID인 GUID를 반환합니다.
+`pclsid` 제한이 문서의 클래스 ID 인 GUID를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 클래스 GUID는 문서를 나타내는 각 클래스를 인스턴스화하는 데 사용할 수 있습니다.
+ 클래스 GUID는 각각 문서를 나타내는 개별 클래스를 인스턴스화하는 데 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

@@ -1,5 +1,5 @@
 ---
-title: 아이디버그문서2:GetName | 마이크로 소프트 문서
+title: 'IDebugDocument2:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731964"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
@@ -43,17 +43,17 @@ int GetName( 
 
 ## <a name="parameters"></a>매개 변수
 `gnType`\
-【인】 반환할 이름의 유형을 결정하는 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 열거형의 값입니다.
+진행 반환할 이름 유형을 결정 하는 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 열거형의 값입니다.
 
 `pbstrFileName`\
-【아웃】 문서 이름이 포함된 문자열을 반환합니다.
+제한이 문서 이름을 포함 하는 문자열을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 예를 들어 이 메서드는 문서 이름을 제목또는 파일 이름 또는 파일 이름의 일부로 반환할 수 있습니다.
+ 예를 들어이 메서드는 문서 이름을 제목으로 반환 하거나 파일 이름 또는 파일 이름의 일부로 반환할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

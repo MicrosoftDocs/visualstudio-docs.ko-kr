@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161307"
 ---
 # <a name="cores-view-legend"></a>코어 뷰 범례
@@ -38,5 +38,5 @@ ms.locfileid: "68161307"
 |전체 컨텍스트 전환|샘플링 기간 동안 지정된 스레드에 대한 컨텍스트 전환의 총 수입니다. 스레드가 컨텍스트를 변경할 때마다(예를 들어 실행에서 동기화로 변경) 한 번의 컨텍스트 전환으로 계산됩니다.|  
 |코어 간 컨텍스트 전환 비율|코어 간 컨텍스트 전환 횟수를 총 컨텍스트 전환 수를 나눠 백분율로 계산합니다. 이 비율이 높을수록 이 특정 스레드의 성능에 대한 코어 간 컨텍스트 전환의 전반적인 오버헤드 영향이 커집니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [코어 뷰](../profiling/cores-view.md)

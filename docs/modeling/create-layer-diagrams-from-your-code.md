@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545732"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>코드에서 종속성 다이어그램 만들기
 
-소프트웨어 시스템의 상위 수준 논리적 아키텍처를 시각화 하려면 Visual Studio에서 *종속성 다이어그램* 을 만듭니다. 코드가이 디자인과 일관 되 게 유지 되도록 하려면 종속성 다이어그램으로 코드의 유효성을 검사 합니다. Visual c # 및 Visual Basic 프로젝트에 대 한 종속성 다이어그램을 만들 수 있습니다. 이 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)을 참조 하세요.
+소프트웨어 시스템의 상위 수준 논리적 아키텍처를 시각화 하려면 Visual Studio에서 *종속성 다이어그램* 을 만듭니다. 코드가이 디자인과 일관 되 게 유지 되도록 하려면 종속성 다이어그램으로 코드의 유효성을 검사 합니다. Visual c # 및 Visual Basic 프로젝트에 대 한 종속성 다이어그램을 만들 수 있습니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)을 참조하세요.
 
 ![종속성 다이어그램 만들기](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -29,7 +29,7 @@ ms.locfileid: "85545732"
 
 [비디오: 실시간으로 아키텍처 종속성 유효성 검사](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
-## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a>종속성 다이어그램 만들기
+## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a> 종속성 다이어그램 만들기
 
 종속성 다이어그램을 만들기 전에 솔루션에 모델링 프로젝트가 있는지 확인 합니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "85545732"
 
 ![코드 맵에서 생성 된 종속성 다이어그램](media/dependency-validation-01.png)
 
-## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a>아티팩트에서 레이어 만들기
+## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a> 아티팩트에서 레이어 만들기
  프로젝트, 코드 파일, 네임스페이스, 클래스, 메서드 등 Visual Studio 솔루션 항목에서 레이어를 만들 수 있습니다. 이렇게 하면 레이어와 항목 간에 링크가 자동으로 만들어지고 레이어 유효성 검사 프로세스에 포함됩니다.
 
  또한 Word 문서 또는 PowerPoint 프레젠테이션과 같이 유효성 검사를 지원하지 않는 항목에 레이어를 연결하여 레이어에 사양 또는 계획을 연결할 수 있습니다. 또한 여러 앱에 공유되는 프로젝트의 파일에 레이어를 연결할 수 있지만, 유효성 검사 프로세스에는 "레이어 1", "레이어 2"와 같이 제네릭 이름으로 나타나는 레이어는 포함되지 않습니다.
@@ -91,8 +91,8 @@ ms.locfileid: "85545732"
 |선택한 모든 아티팩트에 대한 단일 레이어 만들기|모든 아티팩트를 동시에 종속성 다이어그램으로 끌어 옵니다.<br /><br /> 레이어가 다이어그램에 나타나고 모든 아티팩트에 연결됩니다.|
 |선택한 각 아티팩트마다 레이어 만들기|**SHIFT** 키를 누른 채로 동시에 모든 아티팩트를 종속성 다이어그램으로 끕니다. **참고:**  **SHIFT** 키를 사용 하 여 항목 범위를 선택 하는 경우 아티팩트를 선택한 후 키를 해제 합니다. 그런 다음 이 키를 다시 누른 상태로 아티팩트를 다이어그램으로 끌어 옵니다. <br /><br /> 각 아티팩트에 대한 레이어가 다이어그램에 나타나고 각 아티팩트에 연결됩니다.|
 |레이어에 아티팩트 추가|아티팩트를 레이어로 끌어 옵니다.|
-|연결되지 않은 새 레이어 만들기|**도구 상자**에서 **종속성 다이어그램** 섹션을 확장 한 다음 **계층** 을 종속성 다이어그램으로 끌어 옵니다.<br /><br /> 레이어를 여러 개 추가하려면 이 도구를 두 번 클릭합니다. 작업이 완료 되 면 **포인터** 도구를 선택 하거나 **esc** 키를 누릅니다.<br /><br /> 또는<br /><br /> 종속성 다이어그램에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **레이어**를 선택 합니다.|
-|중첩된 레이어 만들기|기존 레이어를 다른 아티팩트로 끌어 옵니다.<br /><br /> 또는<br /><br /> 레이어에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **레이어**를 선택 합니다.|
+|연결되지 않은 새 레이어 만들기|**도구 상자**에서 **종속성 다이어그램** 섹션을 확장 한 다음 **계층** 을 종속성 다이어그램으로 끌어 옵니다.<br /><br /> 레이어를 여러 개 추가하려면 이 도구를 두 번 클릭합니다. 작업이 완료 되 면 **포인터** 도구를 선택 하거나 **esc** 키를 누릅니다.<br /><br /> -또는-<br /><br /> 종속성 다이어그램에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **레이어**를 선택 합니다.|
+|중첩된 레이어 만들기|기존 레이어를 다른 아티팩트로 끌어 옵니다.<br /><br /> -또는-<br /><br /> 레이어에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **레이어**를 선택 합니다.|
 |기존 레이어를 두 개 이상 포함하는 새 레이어 만들기|계층을 선택 하 고 선택 항목에 대 한 바로 가기 메뉴를 연 다음 **그룹**을 선택 합니다.|
 |레이어 색 변경|**Color** 속성을 원하는 색으로 설정 합니다.|
 |레이어와 연결된 아티팩트가 지정된 네임스페이스에 속하지 않도록 지정합니다.|레이어의 사용할 수 없는 **네임 스페이스** 속성에 네임 스페이스를 입력 합니다. 세미콜론 (**;**)을 사용 하 여 네임 스페이스를 구분 합니다.|
@@ -107,7 +107,7 @@ ms.locfileid: "85545732"
 
 - 레이어가 아티팩트에 연결된 다른 레이어를 포함하면 컨테이너 레이어가 이 아티팩트에도 연결됩니다. 단, 컨테이너 레이어의 숫자에는 이러한 아티팩트가 포함되지 않습니다.
 
-## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a>레이어와 아티팩트 간의 링크 관리
+## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> 레이어와 아티팩트 간의 링크 관리
 
 1. 종속성 다이어그램에서 계층에 대 한 바로 가기 메뉴를 열고 **링크 보기**를 선택 합니다.
 
@@ -118,12 +118,12 @@ ms.locfileid: "85545732"
 |**수행할 작업**|**레이어 탐색기에서 수행할 단계**|
 |-|-|
 |레이어와 아티팩트 간의 링크 삭제|아티팩트 링크에 대 한 바로 가기 메뉴를 열고 **삭제**를 선택 합니다.|
-|한 레이어에서 다른 레이어로 링크 이동|아티팩트 링크를 다이어그램의 기존 레이어로 끌어 옵니다.<br /><br /> 또는<br /><br /> 1. 아티팩트 링크에 대 한 바로 가기 메뉴를 열고 **잘라내기**를 선택 합니다.<br />2. 종속성 다이어그램에서 계층에 대 한 바로 가기 메뉴를 열고 **붙여넣기**를 선택 합니다.|
+|한 레이어에서 다른 레이어로 링크 이동|아티팩트 링크를 다이어그램의 기존 레이어로 끌어 옵니다.<br /><br /> -또는-<br /><br /> 1. 아티팩트 링크에 대 한 바로 가기 메뉴를 열고 **잘라내기**를 선택 합니다.<br />2. 종속성 다이어그램에서 계층에 대 한 바로 가기 메뉴를 열고 **붙여넣기**를 선택 합니다.|
 |한 레이어에서 다른 레이어로 링크 복사|1. 아티팩트 링크에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 합니다.<br />2. 종속성 다이어그램에서 계층에 대 한 바로 가기 메뉴를 열고 **붙여넣기**를 선택 합니다.|
 |기존 아티팩트 링크에서 새 레이어 만들기|아티팩트 링크를 다이어그램의 빈 영역으로 끌어 옵니다.|
 |연결 된 아티팩트가 종속성 다이어그램에 대 한 유효성 검사를 지원 하는지 확인 합니다.|아티팩트 링크에 대 한 **유효성 검사 지원** 열을 확인 합니다.|
 
-## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a>기존 종속성 리버스 엔지니어링
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> 기존 종속성 리버스 엔지니어링
  한 레이어와 연결된 아티팩트에 다른 레이어와 연결된 아티팩트에 대한 참조가 있을 때마다 종속성이 존재합니다. 예를 들어 한 레이어의 클래스가 다른 레이어의 클래스를 포함하는 변수를 선언하는 경우입니다. 다이어그램의 레이어에 연결된 아티팩트에 대한 기존 종속성을 리버스 엔지니어링할 수 있습니다.
 
 > [!NOTE]
@@ -133,7 +133,7 @@ ms.locfileid: "85545732"
 
   일반적으로 존재할 수 없는 일부 종속성이 나타나는데, 이러한 종속성을 편집하여 계획된 디자인에 맞출 수 있습니다.
 
-## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a>레이어 및 종속성을 편집 하 여 의도 된 디자인 표시
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> 레이어 및 종속성을 편집 하 여 의도 된 디자인 표시
  시스템이 나 계획 된 아키텍처에 대 한 변경 내용을 설명 하려면 종속성 다이어그램을 편집 합니다.
 
 |**수행할 작업**|**수행할 단계**|
@@ -144,10 +144,10 @@ ms.locfileid: "85545732"
 |레이어와 연결된 아티팩트가 지정된 네임스페이스에 속하지 않도록 지정합니다.|레이어의 사용할 수 없는 **네임 스페이스** 속성에 네임 스페이스를 입력 합니다. 세미콜론 (**;**)을 사용 하 여 네임 스페이스를 구분 합니다.|
 |레이어와 연결된 아티팩트가 지정된 네임스페이스 중 하나에 속해야 하도록 지정합니다.|계층의 **필수 네임 스페이스** 속성에 네임 스페이스를 입력 합니다. 세미콜론 (**;**)을 사용 하 여 네임 스페이스를 구분 합니다.|
 
-## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a>요소가 다이어그램에 표시 되는 방식 변경
+## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> 요소가 다이어그램에 표시 되는 방식 변경
  해당 속성을 편집하여 레이어의 크기, 모양, 색, 위치 또는 종속성의 색을 변경할 수 있습니다.
 
-## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a>코드 맵에 대 한 패턴 및 종속성 검색
+## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a> 코드 맵에 대 한 패턴 및 종속성 검색
  종속성 다이어그램을 만들 때 **코드 맵**도 만들 수 있습니다. 이러한 다이어그램은 코드를 탐색하는 동안 패턴 및 종속성을 검색하는 데 도움이 됩니다. 솔루션 탐색기, 클래스 뷰 또는 개체 브라우저를 사용하여 어셈블리, 네임스페이스 및 클래스를 탐색합니다. 이러한 요소는 기존 레이어에 해당하는 경우가 많습니다. 코드 맵에 대한 자세한 내용은 다음을 참조하세요.
 
 - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
@@ -156,7 +156,7 @@ ms.locfileid: "85545732"
 
 - [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [비디오: 실시간으로 아키텍처 종속성 유효성 검사](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

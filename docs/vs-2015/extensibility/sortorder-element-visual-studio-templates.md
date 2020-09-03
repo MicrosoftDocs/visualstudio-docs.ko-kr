@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 825ec785a83cae0aaa8a31ae1375e956228b634e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205522"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-표시 된 대로 동일한 범주의 다른 템플릿 간에 템플릿을 정렬 하는 데 사용 되는 값을 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
+**새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 된 것 처럼 동일한 범주의 다른 템플릿 간에 템플릿을 정렬 하는 데 사용 되는 값을 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -46,24 +46,24 @@ ms.locfileid: "68205522"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- `integer` 정렬 순서 값을 나타내는입니다.  
+ `integer`정렬 순서 값을 나타내는입니다.  
   
 ## <a name="remarks"></a>설명  
- `SortOrder`는 선택적 요소입니다. 기본값은 100 및 모든 값에는 10의 배수 여야 합니다.  
+ `SortOrder`는 선택적 요소입니다. 기본값은 100이 고 모든 값은 10의 배수 여야 합니다.  
   
- `SortOrder` 사용자가 만든 템플릿에 대 한 요소는 무시 됩니다. 모든 사용자가 만든 템플릿 사전순으로 정렬 됩니다.  
+ `SortOrder`사용자가 만든 템플릿의 요소는 무시 됩니다. 사용자가 만든 모든 템플릿은 사전순으로 정렬 됩니다.  
   
- 낮은 정렬 순서 값이 있는 템플릿 중 하나에 표시 합니다 **새 프로젝트** 하거나 **새 항목 추가** 높은 정렬 순서 값이 있는 템플릿보다 먼저 대화 상자.  
+ 정렬 순서가 낮은 템플릿이 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 정렬 순서 값이 높은 템플릿 앞에 표시 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 표준에 대 한 메타 데이터를 보여 줍니다. [!INCLUDE[csprcs](../includes/csprcs-md.md)] 클래스 템플릿.  
+## <a name="example"></a>예  
+ 다음 예제에서는 표준 클래스 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] .  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -82,8 +82,8 @@ ms.locfileid: "68205522"
 </VSTemplate>  
 ```  
   
- 이 예제는 `SortOrder` 요소는 상대적으로 높습니다. 가능성이 다른 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 항목 템플릿의 `SortOrder` 보다 낮은 값 `290` 에서이 템플릿을 앞에 표시 되 고 합니다 **새 항목** 대화 상자.  
+ 이 예제에서 요소는 `SortOrder` 상대적으로 높습니다. 다른 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 항목 템플릿의 `SortOrder` 값은 보다 낮고 `290` **새 항목** 대화 상자에서이 템플릿 앞에 표시 될 가능성이 높습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

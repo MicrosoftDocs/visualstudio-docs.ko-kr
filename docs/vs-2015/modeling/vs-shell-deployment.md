@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a42ec6a762655589bfd589ae9dc0354e3a7d1cb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659312"
 ---
 # <a name="vs-shell-deployment"></a>VS 셸 배포
@@ -25,7 +25,7 @@ ms.locfileid: "72659312"
 
 1. **Dslpackage** 프로젝트에서 **source.extension.tt**를 엽니다.
 
-2. @No__t_0 삽입에서 다음을 수행 합니다.
+2. 삽입 아래에서 `<SupportedProducts>` 다음을 수행 합니다.
 
     ```
     <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>

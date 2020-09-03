@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586811"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>데이터 검색을 위한 Windows Form 만들기
@@ -43,7 +43,7 @@ ms.locfileid: "75586811"
 
 - 매개 변수를 폼에 입력 하 고 매개 변수가 있는 쿼리를 실행 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "75586811"
 
 ## <a name="create-the-windows-forms-application"></a>Windows Forms 응용 프로그램 만들기
 
-또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만듭니다. C# 프로젝트 이름을 **WindowsSearchForm**로 지정합니다.
+C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만듭니다. 프로젝트 이름을 **WindowsSearchForm**로 지정합니다.
 
 ## <a name="create-the-data-source"></a>데이터 원본 만들기
 
@@ -75,7 +75,7 @@ ms.locfileid: "75586811"
 
 3. **데이터 소스 형식 선택** 페이지에서 **데이터베이스** 를 선택하고 **다음**을 클릭합니다.
 
-4. **데이터 연결 선택** 페이지에서 다음 중 한 가지를 수행합니다.
+4. **데이터 연결 선택** 페이지에서 다음 중 하나를 수행 합니다.
 
     - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "75586811"
 
      **NorthwindDataSet**가 프로젝트에 추가되면 **고객** 테이블이 **데이터 원본** 창에 나타납니다.
 
-## <a name="create-the-form"></a>양식 만들기
+## <a name="create-the-form"></a> 폼 만들기
 
 **데이터 원본** 창에서 양식으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
 
@@ -121,13 +121,13 @@ ms.locfileid: "75586811"
      ```
 
     > [!NOTE]
-    > Access 및 OLE DB 데이터 원본은 물음표 ('? ')를 사용 하 여 매개 변수를 표시 하므로 WHERE 절은 `WHERE City = ?`와 같습니다.
+    > Access 및 OLE DB 데이터 원본은 물음표 ('? ')를 사용 하 여 매개 변수를 표시 하므로 WHERE 절은와 `WHERE City = ?` 같습니다.
 
 4. **확인**을 클릭하여 **검색 조건 작성기** 대화 상자를 닫습니다.
 
      **FillByCityToolStrip**이 양식에 추가됩니다.
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
 
 응용 프로그램을 실행 하면 양식이 열리고 매개 변수를 입력으로 사용할 수 있습니다.
 
@@ -145,6 +145,6 @@ ms.locfileid: "75586811"
 
 - 데이터 세트을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

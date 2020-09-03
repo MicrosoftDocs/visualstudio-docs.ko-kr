@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: GetFunctionLineOffset | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b141d7014850076b039afafc1d4637f95360f12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194708"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-지정 된 줄 오프셋을 나타내는 함수 내에서 주소를 검색 합니다.  
+지정 된 선 오프셋을 나타내는 함수 내의 주소를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,19 +43,19 @@ int GetFunctionLineOffset(
   
 #### <a name="parameters"></a>매개 변수  
  `pAddress`  
- [in] 함수를 나타내는 주소입니다.  
+ 진행 함수를 나타내는 주소입니다.  
   
  `dwLine`  
- [in] 함수의 시작 부분에서 오프셋을 줄.  
+ 진행 함수 시작의 줄 오프셋입니다.  
   
  `ppNewAddress`  
- [out] 함수의 시작 부분에서 오프셋 되는 줄을 나타내는 새 주소입니다.  
+ 제한이 함수 시작의 줄 오프셋을 나타내는 새 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  
@@ -102,5 +102,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

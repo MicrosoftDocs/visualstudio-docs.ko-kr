@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586850"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>복합 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
@@ -51,7 +51,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 - 새 컨트롤을 **데이터 원본** 창에서 **Form1**으로 끌어 추가합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -71,7 +71,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 ## <a name="create-a-windows-forms-app-project"></a>Windows Forms 앱 프로젝트 만들기
 
-첫 번째 단계는 C# 또는 Visual Basic에 대 한 **Windows Forms 앱** 프로젝트를 만드는 것입니다. 프로젝트 이름을 **ComplexControlWalkthrough**로 지정합니다.
+첫 번째 단계는 c # 또는 Visual Basic에 대 한 **Windows Forms 앱** 프로젝트를 만드는 것입니다. 프로젝트 이름을 **ComplexControlWalkthrough**로 지정합니다.
 
 ## <a name="add-a-user-control-to-the-project"></a>프로젝트에 사용자 정의 컨트롤 추가
 
@@ -85,7 +85,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 ## <a name="design-the-complexdatagridview-control"></a>ComplexDataGridView 컨트롤 디자인
 
-사용자 정의 컨트롤에 <xref:System.Windows.Forms.DataGridView>를 추가 하려면 **도구 상자** 에서 사용자 컨트롤의 디자인 화면으로 <xref:System.Windows.Forms.DataGridView>을 끌어 옵니다.
+<xref:System.Windows.Forms.DataGridView>사용자 정의 컨트롤에를 추가 하려면 <xref:System.Windows.Forms.DataGridView> **도구 상자** 에서 사용자 컨트롤의 디자인 화면으로를 끌어 옵니다.
 
 ## <a name="add-the-required-data-binding-attribute"></a>필요한 데이터 바인딩 특성 추가
 
@@ -102,7 +102,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 ## <a name="create-a-data-source-from-your-database"></a>데이터베이스에서 데이터 원본 만들기
 
-**데이터 소스 구성** 마법사를 사용 하 여 Northwind 샘플 데이터베이스의 `Customers` 테이블을 기반으로 데이터 원본을 만듭니다.
+**데이터 소스 구성** 마법사를 사용 하 여 `Customers` Northwind 샘플 데이터베이스의 테이블을 기반으로 데이터 원본을 만듭니다.
 
 1. 데이터 **소스** 창을 열려면 **데이터** 메뉴에서 **데이터 소스 표시**를 클릭 합니다.
 
@@ -110,7 +110,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 3. **데이터 소스 형식 선택** 페이지에서 **데이터베이스** 를 선택하고 **다음**을 클릭합니다.
 
-4. **데이터 연결 선택** 페이지에서 다음 중 한 가지를 수행합니다.
+4. **데이터 연결 선택** 페이지에서 다음 중 하나를 수행 합니다.
 
    - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
@@ -124,11 +124,11 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 8. `Customers` 테이블을 선택한 다음, **마침**을 클릭합니다.
 
-   **NorthwindDataSet**가 프로젝트에 추가되고 `Customers` 테이블이 **데이터 원본** 창에 나타납니다.
+   **NorthwindDataSet** 가 프로젝트에 추가 되 고 `Customers` 테이블이 **데이터 소스** 창에 표시 됩니다.
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>ComplexDataGridView 컨트롤을 사용 하도록 Customers 테이블 설정
 
-**데이터 원본** 창 내에서 항목을 폼으로 끌기 전에 만들 컨트롤을 설정할 수 있습니다.
+**데이터 소스** 창에서 항목을 폼으로 끌기 전에 만들 컨트롤을 설정할 수 있습니다.
 
 1. 디자이너에서 **Form1**을 엽니다.
 
@@ -142,7 +142,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 ## <a name="add-controls-to-the-form"></a>폼에 컨트롤 추가
 
-**데이터 원본** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다. 주 **Customers** 노드를 **데이터 원본** 창에서 폼으로 끌어서 놓습니다. **Complexdatagridview** 컨트롤이 테이블의 데이터를 표시 하는 데 사용 되는지 확인 합니다.
+**데이터 소스** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다. 주 **Customers** 노드를 **데이터 원본** 창에서 폼으로 끌어서 놓습니다. **Complexdatagridview** 컨트롤이 테이블의 데이터를 표시 하는 데 사용 되는지 확인 합니다.
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 
@@ -156,7 +156,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 - 조회 시나리오를 지원하는 컨트롤을 만듭니다. 자세한 내용은 [조회 데이터 바인딩을 지 원하는 사용자 정의 컨트롤 Windows Forms 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

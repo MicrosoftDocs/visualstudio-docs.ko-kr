@@ -26,25 +26,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161621"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>중단점 선택 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-합니다 **중단점 선택** 모호한 입력에서 중단점을 설정 하려고 할 때 대화 상자가 열립니다 합니다 **새 중단점** 대화 상자. 모호한 입력의 일반적인 예로 오버 로드 된 함수 이름.  
+**새 중단점** 대화 상자에서 모호한 입력의 중단점을 설정하려고 시도하면 **중단점 선택** 대화 상자가 열립니다. 모호한 입력의 일반적인 예로는 오버로드된 함수 이름이 있습니다.  
   
  **중단점**  
- 모호한 입력을 기반으로 설정할 수 있는 중단점을 나열 합니다. 하나 이상의 중단점을 선택할 수 있습니다.  
+ 모호한 입력에 따라 설정할 수 있는 가능한 중단점을 나열 합니다. 설정할 하나 이상의 중단점을 선택할 수 있습니다.  
   
- **All**  
- 에 나열 된 모든 중단점을 선택 합니다 **중단점** 상자입니다.  
+ **모두**  
+ **중단점** 상자에 나열 된 모든 중단점을 선택 합니다.  
   
  **없음**  
- 에 나열 된 모든 중단점을 지웁니다 합니다 **중단점** 상자입니다.  
+ **중단점** 상자에 나열 된 모든 중단점을 지웁니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [중단점 사용](../debugger/using-breakpoints.md)

@@ -11,20 +11,20 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162109"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-표시 된 대로 템플릿의 설명을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  
+**새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 템플릿에 대 한 설명을 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<설명 >  
+ \<Description>  
   
 ## <a name="syntax"></a>구문  
   
@@ -60,13 +60,13 @@ ms.locfileid: "68162109"
 ## <a name="text-value"></a>텍스트 값  
  `Package` 및 `ID` 특성이 사용되는 경우가 아니면 텍스트 값은 필수입니다.  
   
- 텍스트 서식 파일에 대 한 설명을 제공합니다.  
+ 텍스트는 템플릿에 대 한 설명을 제공 합니다.  
   
 ## <a name="remarks"></a>설명  
- `Description`는 `TemplateData`요소 의 필수 자식 요소입니다.  
+ `Description` 는 요소의 필수 자식 요소입니다 `TemplateData` .  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 응용 프로그램입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] .  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

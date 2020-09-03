@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659507"
 ---
 # <a name="list-registers-command"></a>레지스터 목록 표시 명령
@@ -36,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>스위치
- /Display [{`register`&#124; `registerGroup`} ...] 지정 된 `register` 또는 `registerGroup`의 값을 표시 합니다. `register` 또는 `registerGroup`를 지정하지 않은 경우 레지스터의 기본 목록이 표시됩니다. 스위치를 지정하지 않은 경우 동작은 동일합니다. 예를 들면,
+ /Display [{ `register`&#124;`registerGroup` } ...] 지정 된 또는의 값을 표시 합니다 `register` `registerGroup` . `register` 또는 `registerGroup`를 지정하지 않은 경우 레지스터의 기본 목록이 표시됩니다. 스위치를 지정하지 않은 경우 동작은 동일합니다. 예를 들면 다음과 같습니다.
 
  `Debug.ListRegisters /Display eax`
 
@@ -46,19 +46,19 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  /List 목록의 모든 레지스터 그룹을 표시 합니다.
 
- /조사식 [{`register`&#124; `registerGroup`} ...] 하나 이상의 `register` 또는 `registerGroup` 값을 목록에 추가 합니다.
+ /조사식 [{ `register`&#124;`registerGroup` } ...] 하나 이상의 `register` 또는 `registerGroup` 값을 목록에 추가 합니다.
 
- /Unwatch [{`register`&#124; `registerGroup`} ...] 목록에서 하나 이상의 `register` 또는 `registerGroup` 값을 제거 합니다.
+ /Unwatch [{ `register`&#124;`registerGroup` } ...] 목록에서 하나 이상의 `register` 또는 `registerGroup` 값을 제거 합니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  별칭 `r`을 `Debug.ListRegisters` 대신 사용할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서는 `Debug.ListRegisters` 별칭 `r`을 사용하여 `Flags` 레지스터 그룹의 값을 표시합니다.
 
 ```
 r /Display Flags
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [디버깅 기본 사항: 레지스터 창](../../debugger/debugging-basics-registers-window.md) [방법: 레지스터 창 사용](../../debugger/how-to-use-the-registers-window.md)

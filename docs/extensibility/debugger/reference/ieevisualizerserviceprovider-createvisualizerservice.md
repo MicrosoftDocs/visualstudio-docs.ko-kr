@@ -1,5 +1,5 @@
 ---
-title: IEE비주얼라이저서비스제공자::비주얼라이저 서비스 만들기 | 마이크로 소프트 문서
+title: 'IEEVisualizerServiceProvider:: CreateVisualizerService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e05677122b7d4e4eb025a9382ede1509374de894
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717912"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
@@ -49,27 +49,27 @@ int CreateVisualizerService(
 
 ## <a name="parameters"></a>매개 변수
 `binder`\
-【인】 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 개체는 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
+진행 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)에 전달 된 [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) 개체입니다.
 
 `pSymProv`\
-【인】 [IDebug SymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 개체가 `IDebugParsedExpression::EvaluateSync`에 전달되었습니다.
+진행 에 전달 된 [Idebug 공급자](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 개체 `IDebugParsedExpression::EvaluateSync` 입니다.
 
 `pAddress`\
-【인】 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체가 `IDebugParsedExression::EvaluateSync`로 전달되었습니다.
+진행 에 전달 된 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체 `IDebugParsedExression::EvaluateSync` 입니다.
 
 `dataProvider`\
-【인】 [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) 인터페이스를 구현하는 개체입니다(식 계산기에서 제공).
+진행 식 계산기에서 제공 하는 [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) 인터페이스를 구현 하는 개체입니다.
 
 `ppService`\
-【아웃】 생성된 서비스입니다.
+제한이 만든 서비스입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 의 `binder` `pSymProv`에서 `pAddress` 및 매개 변수는 `IDebugParsedExpression::EvaluateSync` 모두 메서드에 전달되었습니다. `CreateVisualizerService`는 식 평가기의 형식 시각화 도우미 지원의 일부로만 `IDebugParsedExpression::EvaluateSync` 호출됩니다.
+ `binder`, `pSymProv` 및 `pAddress` 매개 변수가 모두 메서드에 전달 되었습니다 `IDebugParsedExpression::EvaluateSync` . `CreateVisualizerService` 는 `IDebugParsedExpression::EvaluateSync` 형식 시각화 도우미에 대 한 식 계산기의 지원의 일부로 서만 호출 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

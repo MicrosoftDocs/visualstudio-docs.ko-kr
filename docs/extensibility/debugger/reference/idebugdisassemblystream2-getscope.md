@@ -1,5 +1,5 @@
 ---
-title: '[이디버그디스어셈블리스트림2:겟스코프 | 마이크로 소프트 문서'
+title: 'IDebugDisassemblyStream2:: GetScope | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 222a3b2c6110f1998a4848f382694b6b999cd632
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732141"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
@@ -41,14 +41,14 @@ int GetScope( 
 
 ## <a name="parameters"></a>매개 변수
 `pdwScope`\
-【아웃】 이 디스어셈블리 스트림의 범위를 설명하는 [DISASSEMBLY_STREAM_SCOPE 열거형에서](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 값을 반환합니다.
+제한이 이 디스어셈블리 스트림의 범위를 설명 하는 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 열거형의 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 예를 들어 분해 범위는 함수 또는 전체 모듈일 수 있습니다.
+ 디스어셈블리의 범위는 함수 또는 전체 모듈 일 수 있습니다 (예:).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)

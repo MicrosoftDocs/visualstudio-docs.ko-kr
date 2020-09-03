@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba9f9b605d4f82f5244dbc68fb37f96d8ccce51d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673164"
 ---
 # <a name="setting-bookmarks-in-code"></a>코드에 책갈피 설정
@@ -23,7 +23,7 @@ ms.locfileid: "72673164"
 
 코드의 줄에 책갈피를 표시하여 특정 위치로 신속하게 돌아가거나 여러 위치 간에 앞뒤로 이동할 수 있습니다.
 
- 책갈피 명령 및 아이콘은 책갈피 창(**보기/책갈피 창**) 및 텍스트 편집기 도구 모음 두 곳에서 사용할 수 있습니다.
+ 책갈피 명령 및 아이콘은 책갈피 창 (**보기/책갈피 창**) 및 텍스트 편집기 도구 모음 두 곳에서 사용할 수 있습니다.
 
 ## <a name="managing-bookmarks"></a>책갈피 관리
  책갈피를 추가하려면 책갈피를 설정할 줄에 커서를 놓습니다. **설정/해제** 단추를 클릭하거나 Ctrl+K를 누릅니다. 그러면 책갈피가 추가됩니다. 설정/해제 단추를 다시 클릭하거나 Ctrl+K를 다시 누르면 책갈피가 제거됩니다. 책갈피 창에서 **삭제** 단추를 클릭하여 책갈피를 제거할 수도 있습니다.

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161193"
 ---
 # <a name="graphics-object-table"></a>그래픽 개체 테이블
@@ -27,7 +27,7 @@ Visual Studio Graphics Analysis의 그래픽 개체 테이블은 게임이나 �
   
  다음은 개체 테이블입니다.  
   
- ![앱에서 생성 된 Direct3D 개체](../debugger/media/gfx-diag-demo-object-table-orientation.png "gfx_diag_demo_object_table_orientation")  
+ ![앱에서 생성한 Direct3D 개체입니다.](../debugger/media/gfx-diag-demo-object-table-orientation.png "gfx_diag_demo_object_table_orientation")  
   
 ## <a name="understanding-the-graphics-object-table"></a>그래픽 개체 테이블 이해  
  개체 테이블을 사용하면 특정 프레임의 렌더링을 지원하는 Direct3D 개체를 분석할 수 있습니다. 해당 속성 및 데이터를 검사하여 렌더링 문제를 특정 개체로 파악할 수 있습니다(진단 초기에 다른 그래픽 진단 도구를 사용하여 불필요하게 포함되었을 수 있는 개체 목록의 범위를 좁힐 수 있음). 이처럼 불필요하게 포함된 개체가 발견되면 해당 형식과 관련된 시각화를 사용하여 개체를 검사할 수 있습니다. 예를 들어 이미지 편집기를 사용하여 텍스처를 확인하거나 *버퍼 시각화 도우미*를 사용하여 버퍼 내용을 확인할 수 있습니다.  
@@ -41,7 +41,7 @@ Visual Studio Graphics Analysis의 그래픽 개체 테이블은 게임이나 �
 |------------|-----------------|  
 |**식별자**|개체 ID입니다.|  
 |**이름**|보통 개체에 대한 추가 식별 정보를 제공하기 위해 Direct3D 함수 `SetPrivateData`를 사용하여 개체에 대해 설정된 애플리케이션 관련 정보입니다.|  
-|**Type**|개체 형식입니다.|  
+|**Type**|개체 유형입니다.|  
 |**활성**|캡처된 프레임 중에 D3D10Device 또는 D3D11DeviceContext에서 설정된 개체의 경우 "*"가 표시됩니다.<br /><br /> 이러한 개체는 회색 텍스트로 표시되는 개체에 해당합니다. 그러나 개체 테이블을 정렬할 수 있도록 열 항목이 제공됩니다.|  
 |**Size**|개체의 크기(바이트)입니다.|  
 |**Format**|개체의 형식입니다. 예를 들어 텍스처 개체의 형식이거나 셰이더 개체의 셰이더 모델일 수 있습니다.|  
@@ -57,7 +57,7 @@ Visual Studio Graphics Analysis의 그래픽 개체 테이블은 게임이나 �
   
  다음은 출력 병합기 파이프라인 단계의 내용을 보여 주는 텍스처 뷰어입니다.  
   
- ![출력 병합기를 표시 한 질감 미리 보기](../debugger/media/gfx-diag-texture-preview.png "gfx_diag_texture_preview")  
+ ![출력 병합기를 표시한 질감 미리 보기](../debugger/media/gfx-diag-texture-preview.png "gfx_diag_texture_preview")  
   
 ### <a name="d3d12-command-list"></a>D3D12 명령 목록  
  Direct3D 12에서 명령 목록은 단일 요청으로 GPU에 전송될 수 있도록 명령 할당자에 명령을 기록하는 개체입니다. 명령 목록은 일반적으로 일련의 상태 설정, 그리기, 지우기 및 복사 명령을 수행합니다. Direct3D 12의 기본 렌더링 방법이며 성능 향상을 위해 프레임 간에 다시 사용할 수 있기 때문에 명령 목록은 특히 중요합니다. 명령 목록 세부 정보는 새 문서 창에 표시되며 각 파이프라인 단계와 관련된 정보가 자체 탭에 표시됩니다.  
@@ -72,7 +72,7 @@ Visual Studio Graphics Analysis의 그래픽 개체 테이블은 게임이나 �
  Direct3D 12에서 리소스는 렌더링 파이프라인에 데이터를 제공하는 범용 개체입니다. 다양한 종류와 차원의 리소스에 대한 많은 특정 개체를 정의한 Direct3D11과는 대조됩니다. Direct3D 12 리소스에는 텍스처 데이터, 꼭짓점 데이터, 셰이더 데이터 등이 포함될 수 있습니다. 깊이 버퍼와 같은 렌더링 대상을 나타낼 수도 있습니다. Direct3D 12 리소스의 세부 정보는 새 문서 창에 표시됩니다. Graphics Analysis는 해당 형식을 확인할 수 있는 경우 리소스 개체의 내용에 적합한 뷰어를 사용합니다. 예를 들어 텍스처 데이터를 포함하는 리소스 개체는 D3D11 Texture2D 개체와 마찬가지로 텍스처 뷰어를 사용하여 표시됩니다.  
   
 ### <a name="device-context-object"></a>디바이스 컨텍스트 개체  
- Direct3D 11 및 Direct3D 10에서 디바이스 컨텍스트(**D3D11 디바이스 컨텍스트** 또는 **D3D10 디바이스**) 개체는 가장 중요한 상태 정보를 포함하며 현재 설정되어 있는 다른 상태 개체에 연결되므로 특히 중요합니다. 장치 컨텍스트 세부 정보는 새 문서 창에 표시되며 이 창에서는 각 정보 범주가 자체 탭에 표시됩니다. 새 이벤트를 선택하면 현재 장치 상태를 반영하도록 장치 컨텍스트가 변경됩니다.  
+ Direct3D 11 및 Direct3D 10에서 디바이스 컨텍스트(**D3D11 디바이스 컨텍스트** 또는 **D3D10 디바이스**) 개체는 가장 중요한 상태 정보를 포함하며 현재 설정되어 있는 다른 상태 개체에 연결되므로 특히 중요합니다. 디바이스 컨텍스트 세부 정보는 새 문서 창에 표시되며 이 창에서는 각 정보 범주가 자체 탭에 표시됩니다. 새 이벤트를 선택하면 현재 디바이스 상태를 반영하도록 디바이스 컨텍스트가 변경됩니다.  
   
 ### <a name="buffer-object"></a>버퍼 개체  
  버퍼 개체 세부 정보(D3D11 버퍼 또는 D3D10 버퍼)는 테이블에 버퍼 내용을 표시하며 버퍼 내용 표시 방식을 변경할 수 있는 인터페이스를 제공하는 새 문서 창에 표시됩니다. **버퍼 데이터** 테이블에서는 Microsoft Excel 등의 다른 도구를 사용하여 해당 내용을 검사할 수 있도록 복사 및 붙여넣기가 지원됩니다. 버퍼의 내용은 **버퍼 데이터** 테이블 위쪽에 있는 **형식** 콤보 상자의 값에 따라 해석됩니다. 다음 테이블에 나와 있는 데이터 형식으로 구성된 복합 데이터 형식을 상자에 입력할 수 있습니다. 예를 들어 "float int"는 32비트 부동 소수점 값과 32비트 부호 있는 정수 값이 차례로 포함된 구조체 목록을 표시합니다. 지정한 복합 데이터 형식은 나중에 사용할 수 있도록 콤보 상자에 추가됩니다.  
@@ -110,6 +110,6 @@ Visual Studio Graphics Analysis의 그래픽 개체 테이블은 게임이나 �
 |**uint64**|64비트 부호 없는 정수 값입니다. **u8byte**와 같습니다.|  
 |**bool**|부울(`true` 또는 `false`) 값입니다. 각 부울 값은 32비트 값으로 표시됩니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [그래픽 진단(DirectX 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>관련 항목  
+ [그래픽 진단 (DirectX 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)   
  [연습: 디바이스 상태로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-device-state.md)

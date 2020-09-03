@@ -1,5 +1,5 @@
 ---
-title: '방법: 현재 세션 설정 | Microsoft Docs'
+title: '방법: 현재 세션 설정 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205707"
 ---
 # <a name="how-to-set-the-current-session"></a>방법: 현재 세션 설정
@@ -41,7 +41,7 @@ ms.locfileid: "68205707"
   
      세션 이름이 굵게 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
  [성능 탐색기 창](../profiling/performance-explorer-window.md)   
  [성능 세션 속성](../profiling/performance-session-properties.md)   

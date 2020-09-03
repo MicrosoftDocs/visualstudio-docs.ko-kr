@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 794ab8baac441fc14d41c2d30b9db4b0894e88e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149092"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags 필드
+# <a name="m_stateflags-field"></a>m_stateFlags 필드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-현재 상태에 대 한 정보를 저장 합니다 <xref:System.Threading.Tasks.Task> 개체입니다.  
+개체의 현재 상태에 대 한 정보를 저장 <xref:System.Threading.Tasks.Task> 합니다.  
   
  **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   
- .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.  
+ .NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,9 +35,9 @@ ms.locfileid: "68149092"
 ```  
   
 ## <a name="remarks"></a>설명  
- 일반적으로 사용 하 여 <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> 속성을이 값에 액세스 합니다.  
+ 일반적으로 속성을 사용 <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> 하 여이 값에 액세스 합니다.  
   
- 이 멤버는 다음 값의 조합일 수 있습니다.  
+ 이 멤버는 다음 값을 임의로 조합 하 여 사용할 수 있습니다.  
   
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)  
   
@@ -50,4 +50,4 @@ ms.locfileid: "68149092"
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
 ## <a name="see-also"></a>관련 항목  
- [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)
+ [작업 클래스](../../extensibility/debugger/task-class-internal-members.md)

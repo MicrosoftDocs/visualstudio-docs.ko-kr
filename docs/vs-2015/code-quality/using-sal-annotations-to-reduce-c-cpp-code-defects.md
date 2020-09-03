@@ -1,5 +1,5 @@
 ---
-title: CC++ 코드 오류를 줄이기 위한 SAL 주석 사용 | Microsoft Docs
+title: C-C + + 코드 오류를 줄이기 위해 SAL 주석 사용 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,10 +14,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 66da17a31f6287bea810fc29fdb9c12d95cc94b2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275416"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용
@@ -62,5 +62,5 @@ SAL은 Microsoft 소스 코드 주석 언어입니다. 소스 코드 주석을 �
 ## <a name="related-resources"></a>관련 리소스  
  [코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Windows 드라이버에 대 한 SAL 2.0 주석](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

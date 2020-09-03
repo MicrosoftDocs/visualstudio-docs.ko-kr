@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545693"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>방법: 현재 선택 항목 액세스 및 제약
@@ -107,7 +107,7 @@ ms.locfileid: "85545693"
 
      속성의 기본 구현에서는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 선택 항목을 수정 하지 않는 선택 규칙 개체를 가져옵니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 다음 코드 파일은 선택 영역을 확장 하 여 처음 선택 된 각 도메인 셰이프의 모든 인스턴스를 포함 하는 선택 규칙을 만듭니다.
 
