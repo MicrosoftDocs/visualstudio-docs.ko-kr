@@ -12,23 +12,23 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e5333f6133dd3fd56077c14d6e56cd6fdada4404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656418"
 ---
-# <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>방법: 솔루션의 여러 프로젝트에 대 한 관리 코드 규칙 집합 지정
+# <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>방법: 솔루션의 여러 프로젝트에 대한 관리 코드 규칙 집합 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 기본적으로 솔루션의 모든 관리 되는 프로젝트에는 Microsoft 최소 권장 규칙 코드 분석 *규칙 집합이*할당 됩니다. 솔루션에 대 한 속성 대화 상자에서 솔루션의 프로젝트에 할당 된 규칙 집합을 변경할 수 있습니다.
 
 > [!NOTE]
-> 기본적으로 프로젝트 코드 분석은 빌드 단계로 실행 되지 않습니다. 빌드 단계로 코드 분석을 사용 하도록 설정 하려면 [How를 참조 하세요. @No__t_0 관리 코드 프로젝트에 대 한 코드 분석을 구성 합니다.
+> 기본적으로 프로젝트 코드 분석은 빌드 단계로 실행 되지 않습니다. 빌드 단계로 코드 분석을 사용 하도록 설정 하려면 [방법: 관리 코드 프로젝트에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)을 참조 하세요.
 
 ### <a name="to-specify-a-rule-set-for-multiple-projects-in-a-managed-code--solution"></a>관리 코드 솔루션의 여러 프로젝트에 대 한 규칙 집합을 지정 하려면
 
-1. @No__t_0. [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 하거나 솔루션 [!INCLUDE[vsPro](../includes/vspro-md.md)] 엽니다.
+1. [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 문서 내 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]또는 [!INCLUDE[vsPro](../includes/vspro-md.md)] 솔루션을 엽니다.
 
 2. **분석** 메뉴에서 **솔루션에 대 한 코드 분석 구성**을 클릭 합니다.
 

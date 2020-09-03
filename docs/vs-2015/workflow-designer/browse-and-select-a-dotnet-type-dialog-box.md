@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851430"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET 유형 선택 대화 상자
@@ -39,7 +39,7 @@ ms.locfileid: "75851430"
 
 1. **유형 이름** 상자에 사용 하려는 유형의 이름을 입력 합니다.
 
-2. 다음 작업 중 하나를 수행합니다.
+2. 다음 중 하나를 수행합니다.
 
     - 사용할 형식 이름이 **형식 이름** 상자의 트리에 표시 되 면 형식을 두 번 클릭 하 여 선택 합니다.
 
@@ -61,14 +61,14 @@ ms.locfileid: "75851430"
 ## <a name="filtering-search-results-in-the-type-browser"></a>형식 브라우저에서 검색 결과 필터링
  일치 항목을 찾기 위해 더 많은 문자를 입력 하면 **유형 이름** 상자의 유형 목록이 더 짧아집니다. 필터링된 목록에는 정규화된 이름 또는 약식 이름이 입력한 문자열로 시작되는 형식만 표시됩니다.
 
- 예를 들면 다음과 같습니다.:
+ 예를 들면 다음과 같습니다.
 
-1. 입력 **작업** 은 <xref:System.OperationCanceledException> 일치 하지만 <xref:System.InvalidOperationException>는 일치 하지 않습니다. <xref:System.InvalidOperationException>을 찾으려면 System.I 또는 Invalid를 입력해야 합니다.
+1. 입력 **작업이** 일치 <xref:System.OperationCanceledException> 하지만 일치 하지 않습니다 <xref:System.InvalidOperationException> . <xref:System.InvalidOperationException>을 찾으려면 System.I 또는 Invalid를 입력해야 합니다.
 
-2. **제네릭** 를 입력 <xref:System.GenericUriParser> <xref:System.Collections.Generic> 네임 스페이스의 형식은 아닙니다. <xref:System.Collections.Generic> 네임스페이스의 형식을 검색하려면 해당 네임스페이스의 정규화된 이름을 입력해야 합니다.
+2. 네임 스페이스에서 **제네릭** 일치 항목을 입력 <xref:System.GenericUriParser> 하지만 형식이 아닙니다 <xref:System.Collections.Generic> . <xref:System.Collections.Generic> 네임스페이스의 형식을 검색하려면 해당 네임스페이스의 정규화된 이름을 입력해야 합니다.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>형식 브라우저 대화 상자를 사용하여 서비스 계약 선택
  서비스 계약 형식을 선택할 때 형식 브라우저는 <xref:System.ServiceModel.ServiceContractAttribute> 특성이 있는 형식만 보여줍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)

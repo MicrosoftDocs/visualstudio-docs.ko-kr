@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852017"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
@@ -71,19 +71,19 @@ ms.locfileid: "75852017"
 |코드 맵<br /><br /> [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)|기존 코드의 종속성 및 기타 관계|
 |코드에서 생성된 클래스 다이어그램<br /><br /> [클래스 다이어그램 사용(클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md)|.NET 코드의 형식 및 해당 관계|
 
-## <a name="common-tasks"></a>일반 작업
+## <a name="common-tasks"></a>일반 태스크
 
 |**항목**|**Task**|
 |---------------|--------------|
 |[UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)|**모델을 만들고** 다이어그램을 추가 합니다.|
 |[UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)|**다이어그램을 그려** 모델을 편집 합니다.|
 |[패키지 및 네임스페이스 정의](../modeling/define-packages-and-namespaces.md)|다른 팀 멤버가 작업할 수 있는 단위로 모델을 분할 하는 **패키지를 만듭니다** .|
-|[UML 클래스 다이어그램에서 코드 생성](../modeling/generate-code-from-uml-class-diagrams.md)|**클래스 C# 다이어그램에서 코드를 생성** 하 여 구현을 시작 합니다.|
+|[UML 클래스 다이어그램에서 코드 생성](../modeling/generate-code-from-uml-class-diagrams.md)|**클래스 다이어그램에서 c # 코드를 생성** 하 여 구현을 시작 합니다.|
 |[프로필 및 스테레오타입을 사용하여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|스테레오 타입을 사용 하 여 **모델 요소를 사용자 지정** 하 여 특정 용도에 맞게 표준 UML 모델 요소를 확장 합니다.|
 |[모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)|작업, 테스트 사례, 버그, 요구 사항, 문제 또는 모델의 특정 부분과 연결 된 다른 종류의 작업을 추적 하는 데 도움이 되도록 **모델 요소와 작업 항목 간에 링크를 만듭니다** .|
-|[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]사용 하지 않는 사용자를 포함 하 여 다른 사용자와 공유할 수 있도록 **모델 및 다이어그램을 저장** 합니다.|
+|[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|를 사용 하지 않는 사용자를 포함 하 여 다른 사용자와 공유할 수 있도록 **모델 및 다이어그램을 저장** [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 합니다.|
 
-## <a name="related-tasks"></a>관련 태스크
+## <a name="related-tasks"></a>관련 작업
 
 |**항목**|**Task**|
 |---------------|--------------|
@@ -96,6 +96,6 @@ ms.locfileid: "75852017"
 
 ## <a name="external-resources"></a>외부 리소스
 
-|**범주**|**링크**|
+|**범주**|**연결**|
 |------------------|---------------|
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

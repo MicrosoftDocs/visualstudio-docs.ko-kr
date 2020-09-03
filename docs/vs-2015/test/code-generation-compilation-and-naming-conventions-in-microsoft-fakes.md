@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffcab2800168ab6d66426c2e7beb77a158ced1eb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851826"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
@@ -24,7 +24,7 @@ ms.locfileid: "75851826"
 
 - Visual Studio Enterprise
 
-## <a name="BKMK_In_this_topic"></a> 항목 내용
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 항목 내용
  [코드 생성 및 컴파일](#BKMK_Code_generation_and_compilation)
 
 - [스텁의 코드 생성 구성](#BKMK_Configuring_code_generation_of_stubs) • [형식 필터링](#BKMK_Type_filtering) • [구체적인 클래스 및 가상 메서드 스텁](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [내부 형식](#BKMK_Internal_types) • [빌드 시간 최적화](#BKMK_Optimizing_build_times) • [어셈블리 이름 충돌 방지](#BKMK_Avoiding_assembly_name_clashing)
@@ -37,9 +37,9 @@ ms.locfileid: "75851826"
 
 - [지침](#BKMK_Guidance)
 
-## <a name="BKMK_Code_generation_and_compilation"></a> 코드 생성 및 컴파일
+## <a name="code-generation-and-compilation"></a><a name="BKMK_Code_generation_and_compilation"></a> 코드 생성 및 컴파일
 
-### <a name="BKMK_Configuring_code_generation_of_stubs"></a> 스텁의 코드 생성 구성
+### <a name="configuring-code-generation-of-stubs"></a><a name="BKMK_Configuring_code_generation_of_stubs"></a> 스텁의 코드 생성 구성
  스텁 형식의 생성은 .fakes 파일 확장명을 가진 XML 파일에서 구성됩니다. Fakes 프레임워크는 사용자 지정 MSBuild 작업을 통해 빌드 프로세스에서 통합되고 빌드 시 해당 파일을 검색합니다. Fakes 코드 생성기는 스텁 형식을 어셈블리로 컴파일하고 프로젝트에 대한 참조를 추가합니다.
 
  다음 예제에서는 FileSystem.dll에 정의된 스텁 형식을 보여 줍니다.
@@ -51,7 +51,7 @@ ms.locfileid: "75851826"
 
 ```
 
-### <a name="BKMK_Type_filtering"></a> 형식 필터링
+### <a name="type-filtering"></a><a name="BKMK_Type_filtering"></a> 형식 필터링
  .fakes 파일에서 필터를 설정하여 스텁해야 하는 형식을 제한할 수 있습니다. StubGeneration 요소 아래에 Clear, Add, Remove 요소를 무제한으로 추가하여 선택한 형식 목록을 빌드할 수 있습니다.
 
  예를 들어 이 .fakes 파일은 형식에 대한 스텁을 System 및 System.IO 네임스페이스에 생성하지만 System에서 "Handle"을 포함하는 형식은 제외합니다.
@@ -74,13 +74,13 @@ ms.locfileid: "75851826"
 
 - 필터는 기본적으로 대/소문자를 구분하지 않으며 부분 문자열 일치를 수행합니다.
 
-     `el`은 "hello"와 일치합니다.
+     `el`는 "hello"와 일치합니다.
 
 - 필터의 끝에 `!`를 추가하여 정확하게 대/소문자를 구분하여 일치하도록 합니다.
 
-     `el!`은 "hello"와 일치하지 않습니다.
+     `el!`는 "hello"와 일치하지 않습니다.
 
-     `hello!`은 "hello"와 일치합니다.
+     `hello!`는 "hello"와 일치합니다.
 
 - 필터의 끝에 `*`를 추가하여 문자열의 접두사가 일치하도록 합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "75851826"
 
      `el;wo`는 "hello" 및 "world"와 일치합니다.
 
-### <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> 구체적인 클래스 및 가상 메서드 스텁
+### <a name="stubbing-concrete-classes-and-virtual-methods"></a><a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> 구체적인 구체적인 클래스 및 가상 메서드
  기본적으로 스텁 형식은 봉인되지 않은 모든 클래스에 대해 생성됩니다. .fakes 구성 파일을 통해 스텁 형식을 추상 클래스로 제한할 수 있습니다.
 
 ```xml
@@ -109,7 +109,7 @@ ms.locfileid: "75851826"
 </Fakes>
 ```
 
-### <a name="BKMK_Internal_types"></a> 내부 형식
+### <a name="internal-types"></a><a name="BKMK_Internal_types"></a> 내부 형식
  Fakes 코드 생성기는 생성된 Fakes 어셈블리에 표시되는 형식에 대해 shim 형식 및 스텁 형식을 생성합니다. Fakes에 표시되는 shim된 어셈블리 및 테스트 어셈블리의 내부 형식을 만들려면 생성된 Fakes 어셈블리 및 테스트 어셈블리에 표시 유형을 지정하는 shim된 어셈블리 코드에 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 추가합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
@@ -142,7 +142,7 @@ ms.locfileid: "75851826"
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
- 대체 키를 `KeyFile` 특성 값으로 **.fakes** 파일의 `Fakes`\\`Compilation` 요소에 포함하는 **.snk** 파일의 전체 경로를 지정하면 shim된 어셈블리에 대해 만든 키와 같은 다른 공용 키를 Fakes 어셈블리에 지정할 수 있습니다. 예:
+ **.snk** `KeyFile` `Fakes` \\ `Compilation` **Fakes** 파일의 요소에서 대체 키를 특성 값으로 포함 하는 .snk 파일의 전체 경로를 지정 하 여 shim 어셈블리에 대해 만든 키와 같은 Fakes 어셈블리에 대해 다른 공개 키를 지정할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -164,7 +164,7 @@ ms.locfileid: "75851826"
 
  위의 예제에서 `Alternate_public_key` 및 `Test_assembly_public_key` 값은 같을 수 있습니다.
 
-### <a name="BKMK_Optimizing_build_times"></a> 빌드 시간 최적화
+### <a name="optimizing-build-times"></a><a name="BKMK_Optimizing_build_times"></a> 빌드 시간 최적화
  Fakes 어셈블리를 컴파일하면 빌드 시간이 현저하게 길어질 수 있습니다. .NET 시스템 어셈블리 및 타사 어셈블리에 대한 Fakes 어셈블리를 별도의 중앙 집중식 프로젝트에 생성하면 빌드 시간을 최소화할 수 있습니다. 이러한 어셈블리는 컴퓨터에서 거의 변경되지 않으므로 생성된 Fakes 어셈블리를 다른 프로젝트에서 다시 사용할 수 있습니다.
 
  단위 테스트 프로젝트에서 프로젝트 폴더의 FakesAssemblies 아래에 배치된 컴파일된 Fakes 어셈블리에 대한 참조를 사용할 수 있습니다.
@@ -183,7 +183,7 @@ ms.locfileid: "75851826"
 
     - Fakes를 만든 각 어셈블리에 대해 프로젝트의 Fakes.Prebuild\FakesAssemblies 폴더에서 해당 DLL 파일에 대한 참조를 추가합니다.
 
-### <a name="BKMK_Avoiding_assembly_name_clashing"></a> 어셈블리 이름 충돌 방지
+### <a name="avoiding-assembly-name-clashing"></a><a name="BKMK_Avoiding_assembly_name_clashing"></a> 어셈블리 이름 충돌 방지 방지
  팀 빌드 환경에서는 모든 빌드 출력이 단일 디렉터리에 병합됩니다. Fakes를 사용하는 프로젝트가 여러 개인 경우 서로 다른 버전의 Fakes 어셈블리가 서로를 재정의할 수 있습니다. 예를 들어 .NET Framework 2.0의 TestProject1 fakes mscorlib.dll과 .NET Framework 4의 TestProject2 fakes mscorlib.dll 모두 mscorlib.Fakes.dll Fakes 어셈블리를 생성할 수 있습니다.
 
  이 문제를 방지하려면 Fakes가 .fakes 파일을 추가할 때 프로젝트 이외 참조에 대해 버전 정규화된 Fakes 어셈블리 이름을 자동으로 만들어야 합니다. 버전 정규화된 Fakes 어셈블리 이름은 Fakes 어셈블리 이름을 만들 때 버전 번호를 포함합니다.
@@ -201,9 +201,9 @@ attribute of the Assembly element in the .fakes:
 
 ```
 
-## <a name="BKMK_Fakes_naming_conventions"></a> Fakes 명명 규칙
+## <a name="fakes-naming-conventions"></a><a name="BKMK_Fakes_naming_conventions"></a> Fakes 명명 규칙
 
-### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> shim 형식 및 스텁 형식 명명 규칙
+### <a name="shim-type-and-stub-type-naming-conventions"></a><a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Shim 형식 및 스텁 형식 명명 규칙
  **네임스페이스**
 
 - 네임스페이스에 .Fakes 접미사를 추가합니다.
@@ -228,7 +228,7 @@ attribute of the Assembly element in the .fakes:
 
 - 중첩된 형식 구조는 shim 형식에 대해 복사됩니다.
 
-### <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> shim 대리자 속성 또는 스텁 대리자 필드 명명 규칙
+### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a><a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Shim 대리자 속성 또는 스텁 대리자 필드 명명 규칙
  필드 명명에 대한 **기본 규칙**이며, 빈 이름에서 시작합니다.
 
 - 메서드 이름을 추가합니다.
@@ -237,9 +237,9 @@ attribute of the Assembly element in the .fakes:
 
 - 메서드가 제네릭인 경우 `Of`*n*이 추가됩니다. 여기서 *n*은 제네릭 메서드 인수 수입니다.
 
-  getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.
+  속성 getter 또는 setter와 같은 **특수 메서드 이름은** 다음 표에 설명 된 대로 처리 됩니다.
 
-|메서드 특성...|예제|추가되는 메서드 이름|
+|메서드 특성...|예|추가되는 메서드 이름|
 |-------------------|-------------|--------------------------|
 |**생성자**|`.ctor`|`Constructor`|
 |정적 **생성자**|`.cctor`|`StaticConstructor`|
@@ -260,32 +260,32 @@ attribute of the Assembly element in the .fakes:
 
 - **반환 형식**은 오버로드 모호성이 제거될 때까지 무시됩니다. 이런 경우 반환 형식은 이름의 끝에 추가됩니다.
 
-### <a name="BKMK_Parameter_type_naming_conventions"></a> 매개 변수 형식 명명 규칙
+### <a name="parameter-type-naming-conventions"></a><a name="BKMK_Parameter_type_naming_conventions"></a> 매개 변수 형식 명명 규칙
 
 |조건|추가되는 문자열...|
 |-----------|-------------------------|
 |**형식**`T`|T<br /><br /> 네임스페이스, 중첩 구조 및 제네릭 tics가 삭제됩니다.|
-|**out 매개 변수**`out T`|`TOut`|
+|**Out 매개 변수**`out T`|`TOut`|
 |**ref 매개 변수** `ref T`|`TRef`|
 |**배열 형식**`T[]`|`TArray`|
 |**다차원 배열** 형식 `T[ , , ]`|`T3`|
 |**포인터** 형식 `T*`|`TPtr`|
 |**제네릭 형식**`T<R1, …>`|`TOfR1`|
-|`C<TType>` 형식의 **제네릭 형식 인수**`!i`|`Ti`|
-|`M<MMethod>` 메서드의 **제네릭 메서드 인수**`!!i`|`Mi`|
+|형식의 **제네릭 형식 인수** `!i``C<TType>`|`Ti`|
+|메서드의 **제네릭 메서드 인수** `!!i``M<MMethod>`|`Mi`|
 |**중첩 형식**`N.T`|`N`이 추가된 다음 `T`|
 
-### <a name="BKMK_Recursive_rules"></a> 재귀적 규칙
+### <a name="recursive-rules"></a><a name="BKMK_Recursive_rules"></a> 재귀 규칙
  다음 규칙은 재귀적으로 적용됩니다.
 
 - Fakes는 C#을 사용하여 Fakes 어셈블리를 생성하므로 잘못된 C# 토큰을 생성하는 모든 문자는 "_"(밑줄)로 이스케이프됩니다.
 
 - 결과 이름이 선언 형식의 멤버와 충돌하는 경우 01부터 시작하는 두 자리 카운터를 추가하여 번호 매기기 구성표를 사용합니다.
 
-## <a name="BKMK_External_resources"></a> 외부 리소스
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> 외부 리소스
 
-### <a name="BKMK_Guidance"></a> 지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 – 2장: 유닛 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> 지침
+ [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>관련 항목
  [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

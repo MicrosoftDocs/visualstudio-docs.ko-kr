@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238376"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Visual Studio에서 관리 코드에 대 한 레거시 분석 개요
@@ -86,7 +86,7 @@ Public class MyClass
 
 빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [.NET Compiler Platform 기반 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [규칙 집합을 사용하여 코드 분석 규칙 그룹화](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

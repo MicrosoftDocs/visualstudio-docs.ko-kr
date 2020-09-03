@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851760"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장
@@ -20,7 +20,7 @@ ms.locfileid: "75851760"
 
 코딩된 UI 테스트 및 작업 기록에 대한 테스트 프레임워크는 가능한 사용자 인터페이스를 일부 지원하지 않습니다. 테스트하려는 특정 UI를 지원하지 않을 수 있습니다. 예를 들어 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 스프레드시트에 대한 작업 기록 또는 코딩된 UI 테스트는 바로 만들 수 없습니다. 그러나 코딩된 UI 테스트 프레임워크의 확장성을 이용하여 특정 UI를 지원할 코딩된 UI 테스트 프레임워크에 대한 고유한 확장을 만들 수 있습니다. 다음 항목에서는 프레임워크를 확장하여 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]에 대한 작업 기록 및 코딩된 UI 테스트 생성을 지원하는 방법을 제공합니다. 지원되는 플랫폼에 대한 자세한 내용은 [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)을 참조하세요.
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise
 
@@ -70,12 +70,12 @@ ms.locfileid: "75851760"
 ### <a name="testing-excel-with-the-sampletestproject"></a>SampleTestProject를 사용하여 Excel 테스트
  가지고 있거나 가지고 있지 않은 특정 버전의 Excel을 사용하는 제공된 테스트 프로젝트에서 테스트를 실행하거나 고유한 테스트 프로젝트를 만들어 자신만의 테스트를 기록할 수 있습니다. 자세한 내용은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
+- [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
-- [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [코딩 된 UI 테스트 및 작업 기록에 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851696"
 ---
 # <a name="options-text-editor-cc-experimental"></a>옵션, 텍스트 편집기, C/C++, 실험적
@@ -36,7 +36,7 @@ ms.locfileid: "75851696"
 ## <a name="intellisense"></a>IntelliSense
  **멤버 목록 점-화살표** 멤버 목록에 적용할 수 있는 경우 '. '을 '-> '로 바꿉니다.
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>리팩터링
  **Extract 함수 사용** 선택한 코드를 자체 함수로 추출 하 고 코드를 새 함수 호출로 바꿉니다. 이 기능에 액세스하려면 선택한 코드를 마우스 오른쪽 단추로 클릭하고 **빠른 작업**을 선택하거나, 간단히 기본 바로 가기인 Ctrl+.[Ctrl+점]을 누릅니다.
 
  **서명 변경 사용** 함수의 매개 변수를 추가, 순서 바꾸기 및 삭제 하 고 변경 내용을 모든 호출 사이트에 전파 합니다. 이 기능에 액세스하려면 모든 함수 사용을 마우스 오른쪽 단추로 클릭하고 **빠른 작업**을 선택하거나, 간단히 기본 바로 가기 Ctrl+.[Ctrl+점]을 누릅니다.
@@ -58,5 +58,5 @@ ms.locfileid: "75851696"
 
   물결선을 가리켜서 전구를 표시하거나 기본 바로 가기 키 Ctrl+.(Ctrl+점)을 사용할 수 있습니다. 바로 가기 키의 경우 특정 오류나 토큰에 캐럿을 배치할 필요가 없으며 오류와 같은 줄에 있기만 하면 해당 줄의 모든 항목에 대한 제안을 호출할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
- [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md) [리팩터링 C++ (VC 블로그)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+## <a name="see-also"></a>관련 항목
+ C + +에서 [언어 관련 편집기 옵션 리팩터링 설정](../../ide/reference/setting-language-specific-editor-options.md) [(VC 블로그)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

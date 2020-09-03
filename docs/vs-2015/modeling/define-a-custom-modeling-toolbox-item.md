@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851514"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>사용자 지정 모델링 도구 상자 항목 정의
@@ -34,7 +34,7 @@ ms.locfileid: "75851514"
 > [!NOTE]
 > 이 방법을 사용하여 요소 도구를 만들 수 있습니다. 즉, 도구 상자에서 다이어그램으로 끌어오는 도구를 만들 수 있습니다. 연결선 도구는 만들 수 없습니다.
 
-## <a name="DefineTool"></a>사용자 지정 모델링 도구 정의
+## <a name="defining-a-custom-modeling-tool"></a><a name="DefineTool"></a> 사용자 지정 모델링 도구 정의
 
 #### <a name="to-define-a-custom-modeling-tool"></a>사용자 지정 모델링 도구를 정의하려면
 
@@ -42,7 +42,7 @@ ms.locfileid: "75851514"
 
     - 이러한 요소는 요소 간에 관계가 있을 수 있으며 포트, 특성, 작업 또는 핀과 같은 보조 요소를 포함할 수 있습니다.
 
-2. 새 도구에 지정하려는 이름을 사용하여 다이어그램을 저장합니다. **파일** 메뉴에서 저장 ...을 사용 합니다.  **As**.
+2. 새 도구에 지정하려는 이름을 사용하여 다이어그램을 저장합니다. **파일** 메뉴에서 저장 ...을 사용 합니다. ** As**.
 
 3. Windows 탐색기를 사용하여 다음 폴더나 하위 폴더에 두 개의 다이어그램 파일을 복사합니다.
 
@@ -83,8 +83,8 @@ ms.locfileid: "75851514"
 
 - 연결선 경로 지정. 연결선 경로를 수동으로 지정하는 경우 도구를 사용할 때 경로 지정이 유지되지 않습니다. 포트와 같은 일부 중첩된 모양의 위치는 소유자를 기준으로 유지되지 않습니다.
 
-## <a name="tbxinfo"></a>사용자 지정 도구의 속성을 정의 하는 방법
- 도구 상자 정보 ( **. .tbxinfo**) 파일을 사용 하면 하나 이상의 사용자 지정 도구에 대해 도구 상자 이름, 아이콘, 도구 설명, 탭 및 도움말 키워드를 지정할 수 있습니다. **MyTools. .tbxinfo**와 같은 이름을 지정 합니다.
+## <a name="how-to-define-the-properties-of-custom-tools"></a><a name="tbxinfo"></a> 사용자 지정 도구의 속성을 정의 하는 방법
+ 도구 상자 정보 (**. .tbxinfo**) 파일을 사용 하면 하나 이상의 사용자 지정 도구에 대해 도구 상자 이름, 아이콘, 도구 설명, 탭 및 도움말 키워드를 지정할 수 있습니다. **MyTools. .tbxinfo**와 같은 이름을 지정 합니다.
 
  일반적인 파일 형식은 다음과 같습니다.
 
@@ -129,7 +129,7 @@ ms.locfileid: "75851514"
 |---------------|-------------|
 |displayName|도구 상자 항목의 이름입니다.|
 |tabName|항목이 표시되어야 하는 도구 상자 탭입니다. 이 다이어그램 형식에 대한 일반 탭의 이름이나 별도 이름을 지정할 수 있습니다.|
-|image|높이와 너비가 16이 고 색 깊이가 24 비트인 비트맵 ( **.bmp**) 파일의 위치입니다.|
+|이미지|높이와 너비가 16이 고 색 깊이가 24 비트인 비트맵 (**.bmp**) 파일의 위치입니다.|
 |f1Keyword|도움말 항목을 찾는 키워드입니다.|
 |도구 설명|이 도구에 대한 도구 설명입니다.|
 
@@ -138,8 +138,8 @@ ms.locfileid: "75851514"
 > [!NOTE]
 > 자체적으로 다이어그램 파일을 사용하여 실험한 후 .tbxinfo 파일 사용을 시작하는 경우 도구 상자에 기존 및 새 버전의 도구 상자 항목이 모두 포함될 수도 있습니다. 이 문제는 .tbxinfo 파일에 다이어그램 파일의 이름을 잘못 입력한 경우에도 발생할 수 있습니다. 이 문제가 발생 하는 경우 도구 상자의 바로 가기 메뉴에서 **도구 상자 다시 설정**을 선택 합니다. 사용자 지정 도구 상자 항목이 사라집니다. Visual Studio를 다시 시작하면 올바른 사용자 지정 항목이 나타납니다.
 
-## <a name="Extension"></a>Visual Studio 확장에서 도구 상자 항목을 배포 하는 방법
- 도구 상자 항목을 VSIX (Visual Studio Extension)에 패키지화 하 여 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자에 게 배포할 수 있습니다. 동일한 VSIX 파일에 명령, 프로필 및 기타 확장을 패키징할 수 있습니다. 자세한 내용은 [Visual Studio 확장 배포](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)를 참조 하세요.
+## <a name="how-to-distribute-toolbox-items-in-a-visual-studio-extension"></a><a name="Extension"></a> Visual Studio 확장에서 도구 상자 항목을 배포 하는 방법
+ 도구 상자 항목을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX (Visual Studio Extension)로 패키지 하 여 다른 사용자에 게 배포할 수 있습니다. 동일한 VSIX 파일에 명령, 프로필 및 기타 확장을 패키징할 수 있습니다. 자세한 내용은 [Visual Studio 확장 배포](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)를 참조 하세요.
 
  Visual Studio 확장을 빌드하는 일반적인 방법은 VSIX 프로젝트 템플릿을 사용하는 것입니다. 이렇게 하려면 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]가 설치되어 있어야 합니다.
 
@@ -157,7 +157,7 @@ ms.locfileid: "75851514"
 
     1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
 
-    2. **새 프로젝트** 대화 상자의 **설치 된 템플릿**에서 **시각적 개체 C#** , **확장성**, **VSIX 프로젝트**를 선택 합니다.
+    2. **새 프로젝트** 대화 상자의 **설치 된 템플릿**에서 **Visual c #**, **확장성**, **VSIX 프로젝트**를 선택 합니다.
 
 4. 프로젝트에 도구 상자 정의를 추가합니다. .Tbxinfo 파일, 다이어그램 파일, 비트맵 파일 및 모든 리소스 파일을 포함 하 고 VSIX에 포함 되는지 확인 **합니다** .
 
@@ -168,11 +168,11 @@ ms.locfileid: "75851514"
 
 5. 방금 추가한 모든 파일의 다음 속성을 설정합니다. 솔루션 탐색기에서 모두 선택하여 동시에 해당 속성을 설정할 수 있습니다. 프로젝트에 있는 다른 파일의 속성을 변경하지 않도록 주의하세요.
 
-     **출력 디렉터리에 복사** = **항상 복사**
+     **출력 디렉터리**  =  에 복사 **항상 복사**
 
-     **빌드 작업** = **콘텐츠**
+     **빌드 작업**  =  **콘텐츠**
 
-     **VSIX에 포함** = **true**
+     **VSIX**  =  에 포함 **true**
 
 6. **source.extension.vsixmanifest**를 엽니다. 확장 매니페스트 편집기에서 열립니다.
 
@@ -180,14 +180,14 @@ ms.locfileid: "75851514"
 
      **자산**에서 **새로 만들기** 를 선택 하 고 대화 상자의 필드를 다음과 같이 설정 합니다.
 
-    - **형식** = **사용자 지정 확장 형식**
+    - **유형**  =  **사용자 지정 확장 프로그램 유형**
 
     - 형식 = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > 이는 드롭다운 목록의 옵션 중 하나가 아닙니다. 키보드를 사용하여 입력해야 합니다.
 
-    - **파일 시스템의** **원본** = 파일입니다.
+    - **원본**  =  **파일 시스템의 파일**입니다.
 
     - **Path** = **.tbxinfo** 파일 (예: **MyTools. .tbxinfo**
 
@@ -214,7 +214,7 @@ ms.locfileid: "75851514"
 
 1. 사용자 지정 도구를 하나 이상 포함하는 Visual Studio 확장 프로젝트를 만듭니다.
 
-    **.Tbxinfo** 파일에서 리소스 파일 메서드를 사용 하 여 도구의 `displayName`, 도구 상자 `tabName`및 도구 설명을 정의 합니다. 이러한 문자열이 정의된 리소스 파일을 만들고 어셈블리로 컴파일한 다음 tbxinfo 파일에서 참조합니다.
+    **.Tbxinfo** 파일에서 리소스 파일 메서드를 사용 하 여 도구의 `displayName` , 도구 상자 및 도구 설명을 정의 합니다 `tabName` . 이러한 문자열이 정의된 리소스 파일을 만들고 어셈블리로 컴파일한 다음 tbxinfo 파일에서 참조합니다.
 
 2. 다른 언어의 문자열이 있는 리소스 파일을 포함하는 추가 어셈블리를 만듭니다.
 
@@ -233,5 +233,5 @@ ms.locfileid: "75851514"
 
  또한 **도구 상자 다시 설정** 명령을 수행 하는 경우 사용자 지정 도구는 사라집니다. 그러나 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]를 다시 시작하면 다시 나타납니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) uml [확장을 위한 프로필 정의](../modeling/define-a-profile-to-extend-uml.md) [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [uml 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)

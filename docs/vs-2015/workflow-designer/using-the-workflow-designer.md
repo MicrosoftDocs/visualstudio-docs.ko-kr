@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1490708dc3dce4120d79879ded69283dd6108f67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656373"
 ---
 # <a name="using-the-workflow-designer"></a>워크플로 디자이너 사용
 이 단원에서는 기본 제공 디자이너와 몇몇 활동 디자이너에서 호스트되는 식 편집기를 사용하여 새로운 활동 및 워크플로 프로젝트를 만드는 방법에 대해 설명합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [워크플로 프로젝트 만들기](../workflow-designer/creating-a-workflow-project.md) 이러한 템플릿을 사용 하 여 라이브러리를 만드는 방법을 설명 하는 항목입니다.
 
  [방법: 도구 상자에 활동 추가](../workflow-designer/how-to-add-activities-to-the-toolbox.md) 도구 상자에 활동을 추가 하는 다양 한 방법을 보여 줍니다.

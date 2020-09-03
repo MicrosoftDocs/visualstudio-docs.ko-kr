@@ -17,18 +17,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7537c3007f54480874047f52f186996cf663508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656413"
 ---
 # <a name="using-the-task-list"></a>작업 목록 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**작업 목록** 을 사용하여 `TODO` 및 `HACK`같은 토큰 또는 사용자 지정 토큰을 사용하는 코드 주석을 추적하고 코드에서 미리 정의된 위치로 직접 연결되는 바로 가기를 관리합니다. 목록의 항목을 클릭하면 소스 코드의 해당 위치로 이동합니다.
+**작업 목록** 을 사용하여 `TODO` 및 `HACK`, or custom tokens, 및 to manage shortcuts that will take you directly to a predefined location in the code. 목록의 항목을 클릭하면 소스 코드의 해당 위치로 이동합니다.
 
- 항목 내용
+ 이 항목의 내용:
 
 - [작업 목록 창](../ide/using-the-task-list.md#taskListWindow)
 
@@ -40,16 +40,16 @@ ms.locfileid: "72656413"
 
 - [C++ TODO 주석](../ide/using-the-task-list.md#cppComments)
 
-- [바로 가기](../ide/using-the-task-list.md#shortcuts)
+- [아이콘이](../ide/using-the-task-list.md#shortcuts)
 
-## <a name="taskListWindow"></a> 작업 목록 창
+## <a name="the-task-list-window"></a><a name="taskListWindow"></a> 작업 목록 창
  **작업 목록** 이 열리면서 애플리케이션 창의 아래쪽에 나타납니다.
 
 #### <a name="to-open-the-task-list"></a>작업 목록을 열려면
 
-- **보기** 메뉴에서 **작업 목록**(키보드: Ctrl+\\,T)을 선택합니다.
+- **보기** 메뉴에서 **작업 목록** (키보드: Ctrl + \\ , T)를 선택 합니다.
 
-     ![작업 목록 창](../ide/media/vs2015-task-list.png "|::ref1::|")
+     ![작업 목록 창](../ide/media/vs2015-task-list.png "vs2015_task_list")
 
 #### <a name="to-change-the-sort-order-of-the-list"></a>목록의 정렬 순서를 변경하려면
 
@@ -65,12 +65,12 @@ ms.locfileid: "72656413"
 
 - 열 머리글을 원하는 위치로 끕니다.
 
-## <a name="userTasks"></a> 사용자 작업
+## <a name="user-tasks"></a><a name="userTasks"></a> 사용자 작업
  사용자 작업 기능이 Visual Studio 2015에서 제거되었습니다. Visual Studio 2015에서 Visual Studio 2013 이전 버전의 사용자 작업 데이터가 들어 있는 솔루션을 열 경우 .suo 파일의 사용자 작업 데이터는 영향을 받지 않지만, 사용자 작업이 작업 목록에 표시되지 않습니다.
 
  사용자 작업 데이터에 계속 액세스하여 업데이트하려면 Visual Studio 2013에서 프로젝트를 열고 사용자 작업 내용을 기본 프로젝트 관리 도구(예: Team Foundation Server)에 복사해야 합니다.
 
-## <a name="tokensComments"></a> 토큰 및 주석
+## <a name="tokens-and-comments"></a><a name="tokensComments"></a> 토큰 및 주석
  주석 마커 뒤에 오는 코드의 주석과 미리 정의된 토큰도 **작업 목록** 창에 나타납니다. 예를 들어 다음 C# 주석은 세 개의 구분된 부분으로 되어 있습니다.
 
 - 주석 마커(`//`)
@@ -85,7 +85,7 @@ ms.locfileid: "72656413"
 
  `TODO` 는 미리 정의된 토큰이므로 이 주석은 목록에 `TODO` 작업으로 표시됩니다.
 
-### <a name="customTokens"></a> 사용자 지정 토큰
+### <a name="custom-tokens"></a><a name="customTokens"></a> 사용자 지정 토큰
  기본적으로 Visual Studio에는 HACK, TODO, UNDONE, NOTE 토큰이 포함됩니다. 이러한 토큰은 대/소문자를 구분하지 않습니다.
 
  또한 사용자가 직접 토큰을 만들 수도 있습니다.
@@ -98,14 +98,14 @@ ms.locfileid: "72656413"
 
      [Task List, Environment, Options Dialog Box](../ide/reference/task-list-environment-options-dialog-box.md) 가 표시됩니다.
 
-     ![Visual Studio 작업 목록](../ide/media/vs2015-task-list-options.png "|::ref2::|")
+     ![Visual Studio 작업 목록](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")
 
-3. **토큰** 범주에서 **이름** 텍스트 상자에 토큰 이름(예: “BUG”)을 입력합니다.
+3. **토큰** 범주에서 **이름** 텍스트 상자에 토큰 이름 (예: "BUG")을 입력 합니다.
 
 4. **우선 순위** 드롭다운 목록에서 새 토큰의 기본 우선 순위를 선택합니다. **추가** 단추를 선택합니다.
 
-### <a name="cppComments"></a> C++ TODO 주석
- 기본적으로 C++ TODO 주석은 **작업 목록** 창에 표시됩니다. 이 동작을 변경할 수 있습니다.
+### <a name="c-todo-comments"></a><a name="cppComments"></a> C + + TODO 주석
+ 기본적으로 C++ TODO 주석은 **작업 목록** 창에 표시됩니다. 이 동작은 변경할 수 있습니다.
 
 ##### <a name="to-turn-off-c-todo-comments"></a>C++ TODO 주석을 끄려면
 
@@ -115,10 +115,10 @@ ms.locfileid: "72656413"
 
 3. **C/C++** 에서 **보기**를 선택한 다음 **주석 작업 열거** 를 **False**로 설정합니다.
 
-## <a name="shortcuts"></a> 바로 가기
+## <a name="shortcuts"></a><a name="shortcuts"></a> 아이콘이
  *바로 가기* 는 **작업 목록**에서 추적되는 코드의 책갈피이며, 일반 책갈피와 다른 아이콘이 사용됩니다. **작업 목록** 의 바로 가기를 두 번 클릭하여 코드의 해당 위치로 이동합니다.
 
- ![Visual Studio 작업 목록 바로 가기 아이콘](../ide/media/vs2015-task-list-bookmark.png "|::ref3::|")
+ ![Visual Studio 작업 목록 바로 가기 아이콘](../ide/media/vs2015-task-list-bookmark.png "vs2015_task_list_bookmark")
 
 #### <a name="to-create-a-shortcut"></a>바로 가기를 만들려면
 
@@ -126,5 +126,5 @@ ms.locfileid: "72656413"
 
      코드에서 바로 가기를 탐색하려면 목록에서 바로 가기를 선택한 다음 바로 가기 메뉴에서 **다음 작업** 또는 **이전 작업** 을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [옵션 대화 상자, 환경, 작업 목록](../ide/reference/task-list-environment-options-dialog-box.md)

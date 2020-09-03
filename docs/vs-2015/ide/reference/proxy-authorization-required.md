@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297822"
 ---
 # <a name="proxy-authorization-required"></a>프록시 권한 필요
@@ -37,7 +37,7 @@ ms.locfileid: "74297822"
 
   - *.live.com
 
-- Visual Studio를 다시 시작할 때 https://go.microsoft.com 주소와 서버 끝점 모두에 대해 프록시 인증 대화 상자가 표시 되도록 허용 목록에서 https://go.microsoft.com 주소를 제거할 수 있습니다.
+- https://go.microsoft.com https://go.microsoft.com Visual Studio가 다시 시작 될 때 주소 및 서버 끝점 모두에 대해 프록시 인증 대화 상자가 표시 되도록 허용 목록에서 주소를 제거할 수 있습니다.
 
 - 프록시를 사용 하 여 기본 자격 증명을 사용 하려면 다음을 수행 합니다.
 
@@ -51,6 +51,6 @@ ms.locfileid: "74297822"
       </defaultProxy>
       ```
 
-      `proxyaddress="<http://<yourproxy:port#>`에서 네트워크에 대 한 올바른 프록시 주소를 삽입 합니다.
+      에서 네트워크에 대 한 올바른 프록시 주소를 삽입 `proxyaddress="<http://<yourproxy:port#>` 합니다.
 
 - [이 블로그 게시물](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) 의 지침에 따라 프록시를 사용할 수 있는 코드를 추가 합니다.

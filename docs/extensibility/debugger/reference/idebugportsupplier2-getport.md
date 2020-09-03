@@ -1,5 +1,5 @@
 ---
-title: 아이디버그포트공급업체2:겟포트 | 마이크로 소프트 문서
+title: 'IDebugPortSupplier2:: GetPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be3f53c12b5562377cd79267d6e216a1435859a5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724659"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
-포트 공급자로부터 포트를 가져옵니다.
+포트 공급자에서 포트를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,14 +43,14 @@ int GetPort( 
 
 ## <a name="parameters"></a>매개 변수
 `guidPort`\
-【인】 포트의 전역 고유 식별자(GUID)입니다.
+진행 포트의 GUID (Globally unique identifier)입니다.
 
 `ppPort`\
-【아웃】 포트를 나타내는 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 개체를 반환합니다.
+제한이 포트를 나타내는 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 지정된 `E_PORTSUPPLIER_NO_PORT` 식별자가 있는 포트가 없는 경우 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_PORTSUPPLIER_NO_PORT`지정 된 식별자의 포트가 없으면를 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
