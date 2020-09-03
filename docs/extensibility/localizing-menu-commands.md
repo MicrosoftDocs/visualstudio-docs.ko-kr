@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904551"
 ---
 # <a name="localize-menu-commands"></a>메뉴 명령 지역화
@@ -40,7 +40,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
     이러한 *파일 이름입니다. Locale. vsct* 파일에는 패키지에 대 한 지역화 된 메뉴 텍스트가 포함 됩니다.
 
-3. 각 *파일 이름을 엽니다. *텍스트를 지역화 하는 Locale vsct 파일입니다.
+3. 각 *파일 이름을 엽니다. * 텍스트를 지역화 하는 Locale vsct 파일입니다.
 
    1. 특정 언어에 맞게 [Buttontext](../extensibility/buttontext-element.md) 요소 값을 적절 하 게 수정 합니다.
 
@@ -147,7 +147,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
     </EmbeddedResource>
     ```
 
-8. 지역화 된 각 언어에 대해 요소를 복사 하 `EmbeddedResource` `VsPackage.en-US` 고 복사본의 **Include** 특성 및 **logicalname** 요소를 대상 로캘로 설정 합니다.
+8. 지역화 된 각 언어에 대해 요소를 복사 하  `EmbeddedResource` `VsPackage.en-US` 고 복사본의 **Include** 특성 및 **logicalname** 요소를 대상 로캘로 설정 합니다.
 
 9. `VSCTCompile` `ResourceName` 다음 예제와 같이 지역화 된 각 요소에를 가리키는 요소를 추가 합니다 `Menus.ctmenu` .
 
@@ -165,7 +165,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
      그러면 주 어셈블리와 각 언어에 대 한 리소스 어셈블리가 생성 됩니다. 배포 프로세스를 지역화 하는 방법에 대 한 자세한 내용은 [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
 - [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

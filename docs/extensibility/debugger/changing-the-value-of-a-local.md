@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904272"
 ---
 # <a name="change-the-value-of-a-local"></a>로컬의 값 변경
@@ -42,9 +42,9 @@ ms.locfileid: "85904272"
 
    이 프로시저는 **Watch** `IDebugProperty2` `IDebugProperty2` 로컬 자체와 연결 된 개체 대신 사용 되는 로컬의 값과 연결 된 개체를 제외 하 고 조사식 창에서 변수 값을 변경 하는 데도 사용 됩니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [변경 값의 샘플 구현](../../extensibility/debugger/sample-implementation-of-changing-values.md) MyCEE 샘플을 사용 하 여 값을 변경 하는 과정을 단계별로 실행 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)

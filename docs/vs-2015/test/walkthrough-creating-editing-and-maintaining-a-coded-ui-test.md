@@ -9,10 +9,10 @@ caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586909"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
@@ -20,7 +20,7 @@ ms.locfileid: "82586909"
 
 이 연습에서는 간단한 WPF(Windows Presentation Foundation) 웹 애플리케이션을 만들어, 코딩된 UI 테스트를 만들고 편집하고 유지 관리하는 방법을 보여 줍니다. 이 연습에서는 여러 타이밍 문제 및 제어 리팩터링으로 인해 중단된 테스트를 해결하기 위한 방법을 제공합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 수행하려면 다음이 필요합니다.
 
 - Visual Studio Enterprise
@@ -49,11 +49,11 @@ ms.locfileid: "82586909"
 
 9. **모든 WPF 컨트롤** 섹션에서 **Button**, **CheckBox** 및 **ProgressBar** 컨트롤을 디자인 화면의 MainWindow로 끌어옵니다.
 
-10. Button 컨트롤을 선택합니다. 속성 창에 **Name** 속성의 값을 \<이름 없음>에서 button1으로 변경합니다. 그런 다음 **Content** 속성 값을 Button에서 Start로 변경합니다.
+10. Button 컨트롤을 선택합니다. 속성 창에서 **이름** 속성의 값을에서 button1로 변경 합니다 \<No Name> . 그런 다음 **Content** 속성 값을 Button에서 Start로 변경합니다.
 
-11. ProgressBar 컨트롤을 선택합니다. 속성 창에 **Name** 속성의 값을 \<이름 없음>에서 progressBar1로 변경합니다. 그런 다음 **Maximum** 속성 값을 **100**에서 **10000**으로 변경합니다.
+11. ProgressBar 컨트롤을 선택합니다. 속성 창에서 **Name** 속성의 값을에서 \<No Name> progressBar1로 변경 합니다. 그런 다음 **Maximum** 속성 값을 **100**에서 **10000**으로 변경합니다.
 
-12. Checkbox 컨트롤을 선택합니다. 속성 창에서 **Name** 속성을 \<이름 없음>에서 checkBox1로 변경하고 **IsEnabled** 속성의 선택을 취소합니다.
+12. Checkbox 컨트롤을 선택합니다. 속성 창에서 **이름** 속성의 값을 \<No Name> checkBox1로 변경 하 고 **IsEnabled** 속성을 선택 취소 합니다.
 
      ![간단한 WPF 애플리케이션](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
@@ -118,7 +118,7 @@ ms.locfileid: "82586909"
 
 ### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>SimpleWPFApp에 대해 코딩된 UI 테스트 만들기 및 실행
 
-1. 앞에서 만든 SimpleWPFApp 애플리케이션을 찾습니다. 기본적으로 애플리케이션은 C:\Users\\&lt;사용자 이름\>\Documents\Visual Studio \<버전&gt;\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe에 있습니다.
+1. 앞에서 만든 SimpleWPFApp 애플리케이션을 찾습니다. 기본적으로 응용 프로그램은 C:\Users \\<username \> \Documents\visual Studio에 있습니다 \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
 2. SimpleWPFApp 애플리케이션에 대한 바탕 화면 바로 가기를 만듭니다. SimpleWPFApp.exe를 마우스 오른쪽 단추로 클릭한 다음 **복사**를 선택합니다. 바탕 화면에서 마우스 오른쪽 단추를 클릭하고 **바로 가기 붙여넣기**를 선택합니다.
 
@@ -182,7 +182,7 @@ ms.locfileid: "82586909"
 
 1. **테스트** 메뉴에서 **창** 을 선택한 다음 **테스트 탐색기**를 선택 합니다.
 
-2. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
+2. **빌드** 메뉴에서 **솔루션 빌드**를 선택 합니다.
 
 3. CodedUITest1.cs 파일에서 **CodedUITestMethod** 메서드를 찾아 마우스 오른쪽 단추로 클릭한 다음 **테스트 실행**을 선택하거나 테스트 탐색기에서 테스트를 실행합니다.
 
@@ -219,7 +219,7 @@ ms.locfileid: "82586909"
 
      테스트 메서드가 UIMap.uitest 파일에서 제거되고 더 이상 UI 작업 창에 표시되지 않습니다. 이동한 테스트 파일을 편집하려면 솔루션 탐색기에서 UIMap.cs 파일을 엽니다.
 
-9. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 도구 모음에서 **저장**을 선택 합니다.
+9. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]도구 모음에서 **저장**을 선택 합니다.
 
      테스트 메서드 업데이트가 UIMap.Designer 파일에 저장됩니다.
 
@@ -386,5 +386,5 @@ ms.locfileid: "82586909"
 ### <a name="forum"></a>포럼
  [Visual Studio UI 자동화 테스트(CodedUI 포함)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) 코딩 [된](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [ui 테스트 및 작업 기록에 대해 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 코딩 된 Ui 테스트 [편집기를 사용 하 여 코딩 된 ui 테스트 편집](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

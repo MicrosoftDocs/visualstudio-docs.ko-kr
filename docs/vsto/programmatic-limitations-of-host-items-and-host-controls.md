@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 97b94291a3fd057e82bd79aa4f6c3220020bc24a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255808"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항

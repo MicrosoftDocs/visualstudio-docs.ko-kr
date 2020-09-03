@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254724"
 ---
 # <a name="namedrange-control"></a>NamedRange 컨트롤
@@ -32,7 +32,7 @@ ms.locfileid: "71254724"
 ## <a name="create-the-control"></a>컨트롤 만들기
  디자인 타임 또는 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다.
 
- 런타임에 VSTO 추가 기능에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다. 자세한 내용은 [방법: 워크시트](../vsto/how-to-add-namedrange-controls-to-worksheets.md)에 NamedRange 컨트롤을 추가 합니다.
+ 런타임에 VSTO 추가 기능에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다. 자세한 내용은 [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)를 참조 하세요.
 
 > [!NOTE]
 > 기본적으로 동적으로 만들어진 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
@@ -46,7 +46,7 @@ ms.locfileid: "71254724"
 
  바인딩된 데이터 세트의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 변경 내용을 반영합니다.
 
-## <a name="formatting"></a>서식
+## <a name="formatting"></a>서식 지정
  <xref:Microsoft.Office.Interop.Excel.Range> 에 적용할 수 있는 서식은 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤에 적용할 수 있습니다. 여기에는 테두리, 글꼴, 숫자 서식 및 스타일이 포함 됩니다.
 
 ## <a name="rename-the-control"></a>컨트롤 이름 바꾸기
@@ -81,5 +81,5 @@ ms.locfileid: "71254724"
 - [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [방법: NamedRange 컨트롤 크기 조정](../vsto/how-to-resize-namedrange-controls.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [연습: NamedRange 컨트롤의 이벤트에 대 한 프로그램](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

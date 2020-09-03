@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255299"
 ---
 # <a name="chart-control"></a>차트 컨트롤
@@ -29,14 +29,14 @@ ms.locfileid: "71255299"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>컨트롤 만들기
- 디자인 타임 또는 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 <xref:Microsoft.Office.Tools.Excel.Chart> 컨트롤을 추가할 수 있습니다.
+ <xref:Microsoft.Office.Tools.Excel.Chart>디자인 타임 또는 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 컨트롤을 추가할 수 있습니다.
 
- 런타임에 VSTO 추가 기능에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.Chart> 컨트롤을 추가할 수 있습니다. 자세한 내용은 [방법: 워크시트](../vsto/how-to-add-chart-controls-to-worksheets.md)에 차트 컨트롤을 추가 합니다.
+ 런타임에 VSTO 추가 기능에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.Chart> 컨트롤을 추가할 수 있습니다. 자세한 내용은 [방법: 워크시트에 차트 컨트롤 추가](../vsto/how-to-add-chart-controls-to-worksheets.md)를 참조 하세요.
 
 > [!NOTE]
 > 동적으로 생성된 차트 개체는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
 
-## <a name="formatting"></a>서식
+## <a name="formatting"></a>서식 지정
  <xref:Microsoft.Office.Interop.Excel.Chart>에 적용할 수 있는 모든 서식은 <xref:Microsoft.Office.Tools.Excel.Chart> 컨트롤에도 적용할 수 있습니다. 여기에는 테두리, 글꼴, 차트 종류, 눈금선, 범례 및 데이터 레이블이 포함됩니다.
 
 ## <a name="events"></a>이벤트

@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904737"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>연습: Visual Studio 확장 게시
 
 이 연습에서는 Visual Studio Marketplace에 Visual Studio 확장을 게시 하는 방법을 보여 줍니다. Marketplace에 확장을 추가 하면 개발자가 **확장 및 업데이트** 를 사용 하 여 새 확장과 업데이트 된 확장을 찾아볼 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>전제 조건
 
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -68,7 +68,7 @@ ms.locfileid: "85904737"
 
 6. 확장을 업로드 하는 데 사용 하려는 게시자를 선택 합니다. 왼쪽에 나열 된 게시자 이름을 클릭 하 여 게시자를 변경할 수 있습니다. **새 확장** 을 클릭 하 고 **Visual Studio**를 선택 합니다.
 
-7. **1: 업로드 확장**에서 VSIX 파일을 Visual Studio Marketplace에 직접 업로드 하거나 자체 웹 사이트에 링크를 추가 하도록 선택할 수 있습니다. 이 예제에서는 *Testpublish .vsix* 확장을 업로드 합니다. 확장을 끌어서 놓거나 **클릭** 링크를 사용 하 여 파일을 찾습니다. 프로젝트의 \bin\Release 폴더에서 확장을 찾습니다.  **Continue(계속)** 를 클릭합니다.
+7. **1: 업로드 확장**에서 VSIX 파일을 Visual Studio Marketplace에 직접 업로드 하거나 자체 웹 사이트에 링크를 추가 하도록 선택할 수 있습니다. 이 예제에서는 *Testpublish .vsix* 확장을 업로드 합니다. 확장을 끌어서 놓거나 **클릭** 링크를 사용 하 여 파일을 찾습니다. 프로젝트의 \bin\Release 폴더에서 확장을 찾습니다.  **계속**을 클릭합니다.
 
 8. **2: 확장 세부 정보 제공**에서 일부 필드는 확장의 *source.extension.vsixmanifest* 파일에서 자동으로 채워집니다. 아래 각 항목에 대 한 자세한 내용을 확인 하세요.
 
@@ -90,7 +90,7 @@ ms.locfileid: "85904737"
 
     * * * 지원 되는 Visual Studio 버전에서는 확장이 작동 하는 Visual Studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
 
-    * **유형** - 가장 일반적인 확장 유형은 **도구**입니다.
+    * **Type**. 가장 일반적인 확장 유형은 **도구**입니다.
 
     * **범주**. 확장에 가장 적합 한 최대 3 개까지 선택 합니다.
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255513"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath에 대 한 리본 사용자 지정
@@ -29,7 +29,7 @@ ms.locfileid: "71255513"
 
 - 인쇄 미리 보기 창입니다.
 
-  **적용 대상:** 이 항목의 정보는 InfoPath 2010의 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조 하세요.
+  **적용 대상:** 이 항목의 정보는 InfoPath 2010의 VSTO 추가 기능 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조 하세요.
 
   사용자와 디자이너는 디자이너 모드에서 양식 템플릿을 열고 템플릿의 모양과 레이아웃을 수정합니다. 사용자는 양식 템플릿에 기반을 둔 양식을 열고 콘텐츠를 추가합니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "71255513"
  프로젝트에 리본을 두 개 이상 추가할 수 있습니다. 리본 두 개 이상이 리본 ID를 공유하면 프로젝트의 `ThisAddin` 클래스에서 런타임에 표시할 `CreateRibbonExtensibilityObject` 메서드를 재정의합니다. 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md)를 참조 하세요.
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>리본 XML을 사용 하 여 리본 형식 지정
- **리본 (XML)** 항목을 사용 하는 경우 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 메서드에서 *ribbonID* 매개 변수의 값을 확인 하 고 적절 한 리본을 반환 합니다.
+ **리본 (XML)** 항목을 사용 하는 경우 메서드에서 *ribbonID* 매개 변수의 값을 확인 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 하 고 적절 한 리본을 반환 합니다.
 
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 메서드는 Visual Studio를 통해 리본 코드 파일에서 자동으로 생성됩니다. *ribbonID* 매개 변수는 열려 있는 InfoPath 창의 형식을 식별하는 문자열입니다.
 
@@ -61,8 +61,8 @@ ms.locfileid: "71255513"
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
+- [리본 XML](../vsto/ribbon-xml.md)

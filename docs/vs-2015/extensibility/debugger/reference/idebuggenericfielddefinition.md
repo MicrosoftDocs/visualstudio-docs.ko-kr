@@ -11,18 +11,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 224b9a5c0e2412b9ae89c1767348b8fbd1a528be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180860"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-관리 코드 제네릭 형식에 대 한 필드의 정의 나타냅니다.  
+관리 코드 제네릭 형식에 대 한 필드의 정의를 나타냅니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugGenericFieldDefinition : IUnknown  
@@ -33,13 +33,13 @@ IDebugGenericFieldDefinition : IUnknown
   
 |메서드|설명|  
 |------------|-----------------|  
-|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|지정 된 형식 인수 배열을 필드 인스턴스를 생성 합니다.|  
-|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|매개 변수 개수를 지정 된 형식 매개 변수를 검색 합니다.|  
-|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|일반 필드와 연결 된 형식 매개 변수 개수를 검색 합니다.|  
+|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|형식 인수 배열이 지정 된 경우 필드 인스턴스를 생성 합니다.|  
+|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|매개 변수 수를 지정 하 여 형식 매개 변수를 검색 합니다.|  
+|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|제네릭 필드와 연결 된 형식 매개 변수의 수를 검색 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Sh.h  
+ 헤더: Sh  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254449"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 양식 영역의 사용자 지정 작업
@@ -28,7 +28,7 @@ ms.locfileid: "71254449"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>양식 영역에 사용자 지정 작업 추가
- 양식 영역에 사용자 지정 작업을 추가 하려면 **사용자 지정 동작** 대화 상자를 사용 합니다. **솔루션 탐색기**에서 양식 영역을 선택 하 고, **속성 창**에서 **매니페스트** 노드를 확장 하 고, **customactions** 속성을 선택 하 고, 다음을 클릭 하 여 **사용자 지정 작업** 대화 상자를 열 수 있습니다. 줄임표 단추 (![ASP.NET mobile designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET mobile designer ellipse")).
+ 양식 영역에 사용자 지정 작업을 추가 하려면 **사용자 지정 동작** 대화 상자를 사용 합니다. **솔루션 탐색기**에서 양식 영역을 선택 하 고, **속성 창**에서 **매니페스트** 노드를 확장 하 고, **customactions** 속성을 선택 하 고, 줄임표 단추 (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 클릭 하 여 **사용자 지정 작업** 대화 상자를 열 수 있습니다.
 
  **사용자 지정 동작** 대화 상자를 사용 하 여 *대상 양식을*지정할 수 있습니다. 대상 폼은 사용자가 사용자 지정 작업을 실행할 때 표시 되는 양식입니다.
 
@@ -44,8 +44,8 @@ ms.locfileid: "71254449"
 |**메서드**|사용자 지정 작업을 실행할 때 사용할 수 있는 응답 유형을 지정 합니다. 사용자 지정 작업은 양식을 보내거나 양식을 열거나 사용자에 게 양식을 보낼지 아니면 사용자에 게 표시할 수 있습니다.|
 |**이름**|코드에서이 사용자 지정 작업을 참조 하는 데 사용할 수 있는 내부 이름을 지정 합니다.|
 |**ShowOnRibbon**|원래 항목의 리본 메뉴에 사용자 지정 작업을 표시할지 여부를 나타냅니다.|
-|**SubjectPrefix**|대상 폼의 제목 줄 시작 부분에 삽입 되는 텍스트를 지정 합니다.|
-|**TargetForm**|대상 양식의 메시지 클래스 이름을 지정 합니다. 예를 들어 IPM를 입력 **합니다.** 작업 폼을 여는 작업입니다.|
+|**주제 접두사**|대상 폼의 제목 줄 시작 부분에 삽입 되는 텍스트를 지정 합니다.|
+|**TargetForm**|대상 양식의 메시지 클래스 이름을 지정 합니다. 예를 들어 IPM를 입력 **합니다. ** 작업 폼을 여는 작업입니다.|
 |**제목**|사용자 지정 작업 단추의 레이블을 지정 합니다.|
 
 ## <a name="customize-a-custom-action-at-run-time"></a>런타임에 사용자 지정 작업 사용자 지정

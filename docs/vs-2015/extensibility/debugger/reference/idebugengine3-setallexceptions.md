@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Microsoft Docs
+title: 'IDebugEngine3:: SetAllExceptions | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 48abbfb47e346ad9acbfac7b92642e6638f67df3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195896"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 메서드는 모든 처리 중인 예외 상태를 설정합니다.  
+이 메서드는 처리 중인 모든 예외의 상태를 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,10 +40,10 @@ int SetAllExceptions(
   
 #### <a name="parameters"></a>매개 변수  
  `dwState`  
- [in] 중 하나는 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 값입니다.  
+ 진행 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 값 중 하나입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   

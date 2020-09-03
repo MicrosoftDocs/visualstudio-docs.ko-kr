@@ -28,10 +28,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254026"
 ---
 # <a name="program-document-level-customizations"></a>문서 수준 사용자 지정 프로그램
@@ -53,7 +53,7 @@ ms.locfileid: "71254026"
 
   문서 수준 프로젝트에서 코드 작성의 일부 측면은 Visual Studio의 다른 프로젝트 유형과 다릅니다. 이러한 차이점 대부분은 Office 개체 모델이 관리 코드에 표시되는 방식에 기인합니다. 자세한 내용은 [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)을 참조 하세요.
 
-  문서 수준 사용자 지정 및 Visual Studio의 Office 개발 도구를 사용 하 여 만들 수 있는 다른 유형의 솔루션에 대 한 일반적인 내용은 [office 솔루션 개발 &#40;개요 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
+  문서 수준 사용자 지정 및 Visual Studio에서 Office 개발 도구를 사용 하 여 만들 수 있는 다른 유형의 솔루션에 대 한 일반적인 내용은 [office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
 
 ## <a name="use-the-generated-classes-in-document-level-projects"></a>문서 수준 프로젝트에서 생성 된 클래스 사용
  문서 수준 프로젝트를 만들 때 Visual Studio에서 프로젝트에서 코드 작성을 시작하기 위해 사용할 수 있는 클래스를 자동으로 생성합니다. Visual Studio에서는 다양한 Word 및 Excel용 클래스를 생성합니다.
@@ -79,7 +79,7 @@ ms.locfileid: "71254026"
 
 - `ThisWorkbook`: <xref:Microsoft.Office.Tools.Excel.WorkbookBase>에서 파생됩니다.
 
-- `Sheet`*n*:에서 <xref:Microsoft.Office.Tools.Excel.WorksheetBase>파생 됩니다.
+- `Sheet`*n*:에서 파생 <xref:Microsoft.Office.Tools.Excel.WorksheetBase> 됩니다.
 
   이러한 기본 클래스는 해당 멤버에 대한 모든 호출을 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에 있는 해당 호스트 항목 인터페이스의 내부 구현으로 리디렉션합니다. 예를 들어 <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> 클래스의 `ThisDocument` 메서드를 호출하는 경우 <xref:Microsoft.Office.Tools.Word.DocumentBase> 클래스는 이 호출을 <xref:Microsoft.Office.Tools.Word.Document> 에 있는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]인터페이스의 내부 구현으로 리디렉션합니다.
 
@@ -110,7 +110,7 @@ Globals.ThisDocument.Save();
 
  Word 및 Excel의 개체 모델을 사용 하는 방법에 대 한 자세한 내용은 [word 개체 모델 개요](../vsto/word-object-model-overview.md) 및 [excel 개체 모델 개요](../vsto/excel-object-model-overview.md)를 참조 하세요.
 
- `Globals` 개체에 대 한 자세한 내용은 [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)를 참조 하세요.
+ 개체에 대 한 자세한 내용은 `Globals` [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)를 참조 하세요.
 
 ## <a name="add-controls-to-documents"></a>문서에 컨트롤 추가
  문서의 UI를 사용자 지정하려면 Windows Forms 컨트롤 또는 *호스트 컨트롤* 을 문서 화면에 추가하면 됩니다. 다양한 컨트롤 집합을 결합하고 코드를 작성하여 컨트롤을 데이터에 바인딩하고, 사용자로부터 정보를 수집하고, 사용자 작업에 응답할 수 있습니다.
@@ -146,7 +146,7 @@ Globals.ThisDocument.Save();
 
 - 리본의 기본 제공 탭에 사용자 지정 그룹을 추가합니다.
 
-   자세한 내용은 [방법: 기본 제공 탭](../vsto/how-to-customize-a-built-in-tab.md)을 사용자 지정 합니다.
+   자세한 내용은 [방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)을 참조 하세요.
 
   Microsoft Office 응용 프로그램의 UI를 사용자 지정 하는 방법에 대 한 자세한 내용은 [OFFICE ui 사용자 지정](../vsto/office-ui-customization.md)을 참조 하세요.
 
@@ -162,12 +162,12 @@ Globals.ThisDocument.Save();
 
 - 네이티브 Office 개체에 대한 확장 개체를 가져오려면 `GetVstoObject` 메서드를 사용합니다. 지정한 네이티브 Office 개체에 <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>또는 <xref:Microsoft.Office.Tools.Word.Document> 개체가 있는 경우 이 메서드는 해당 개체를 반환합니다. 그렇지 않으면 `GetVstoObject` **null**을 반환 합니다. 예를 들어 지정된 <xref:Microsoft.Office.Interop.Word.Document>가 Word 문서 프로젝트의 문서에 대한 기본 개체인 경우 `GetVstoObject` 메서드는 <xref:Microsoft.Office.Tools.Word.Document>를 반환합니다.
 
-  문서 수준 프로젝트에서는 런타임에 `GetVstoObject` 메서드를 사용하여 새 <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet> 또는 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 만들 수 없습니다. 이 메서드는 디자인 타임에 프로젝트에서 생성된 기존 호스트 항목에 액세스할 때만 사용할 수 있습니다. 런타임에 새 호스트 항목을 만들려면 VSTO 추가 기능 프로젝트를 개발 해야 합니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 및 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
+  문서 수준 프로젝트에서는 런타임에 메서드를 사용 하 여 `GetVstoObject` 새 <xref:Microsoft.Office.Tools.Excel.Workbook> , <xref:Microsoft.Office.Tools.Excel.Worksheet> 또는 호스트 항목을 만들 수 없습니다 <xref:Microsoft.Office.Tools.Word.Document> . 이 메서드는 디자인 타임에 프로젝트에서 생성된 기존 호스트 항목에 액세스할 때만 사용할 수 있습니다. 런타임에 새 호스트 항목을 만들려면 VSTO 추가 기능 프로젝트를 개발 해야 합니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 및 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>GetVstoObject 및 HasVstoObject 메서드 사용
- `HasVstoObject` 및 <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Excel.Worksheet>메서드를 호출 하려면 `Globals.Factory.GetVstoObject` 또는 `Globals.Factory.HasVstoObject` 메서드를 사용 하 고 테스트 하려는 네이티브 Word 또는 Excel 개체 (예: 또는)를 전달 합니다. `GetVstoObject`
+ 및 메서드를 호출 하려면 `HasVstoObject` `GetVstoObject` 또는 메서드를 사용 하 `Globals.Factory.GetVstoObject` `Globals.Factory.HasVstoObject` 고 테스트 하려는 네이티브 Word 또는 Excel 개체 (예: <xref:Microsoft.Office.Interop.Word.Document> 또는)를 전달 <xref:Microsoft.Office.Interop.Excel.Worksheet> 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)
 - [ServerDocument 클래스를 사용 하 여 서버에서 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

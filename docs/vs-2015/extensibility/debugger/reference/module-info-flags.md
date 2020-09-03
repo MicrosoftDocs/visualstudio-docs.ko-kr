@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14c9f36c82445f5279615591d38b110163a0829d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181128"
 ---
-# <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
+# <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-모듈의 기호를의 상태를 지정 합니다.  
+모듈의 기호 상태를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,15 +41,15 @@ public enum enum_MODULE_INFO_FLAGS {
   
 ## <a name="members"></a>멤버  
  MIF_SYMBOLS_LOADED  
- 모듈에 의해 로드 된 하나 이상의 일련의 기호로 (그렇지 않으면 된 로드 된 기호가 없음).  
+ 모듈에서 하나 이상의 기호 집합을 로드 했습니다 (그렇지 않으면 기호가 로드 되지 않음).  
   
 ## <a name="remarks"></a>설명  
- 이 값은 반환 된 [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) 메서드.  
+ 이 값은 [Get기호 Searchinfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) 메서드에 의해 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

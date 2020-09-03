@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586340"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
@@ -99,7 +99,7 @@ ms.locfileid: "82586340"
  다양한 웹 브라우저를 사용하여 코딩된 UI 테스트를 지원하지 않는 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 버전을 사용하는 중일 수 있습니다. 코딩된 UI 테스트를 사용하려면 Visual Studio Enterprise를 사용해야 합니다.
 
  *그 외 무엇을 알아야 하나요?*
- **참고 사항**
+ **참고**
 
 - ![Prereq](../test/media/prereq.png "필수 구성 요소") Apple Safari 웹 브라우저는 지원 되지 않습니다.
 
@@ -151,5 +151,5 @@ ms.locfileid: "82586340"
 ### <a name="forum"></a>포럼
  [Visual Studio UI 자동화 테스트(Coded UI 포함)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Ui 자동화를 사용](../test/use-ui-automation-to-test-your-code.md) 하 여 코딩 된 ui 테스트 [및 작업 기록에 대해 지원 되는 코드 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 테스트 코딩 된 Ui [테스트 로그를 사용 하 여 코딩 된 ui 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

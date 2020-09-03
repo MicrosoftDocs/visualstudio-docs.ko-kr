@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253584"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 추가 기능 프로그래밍 시작
@@ -30,10 +30,10 @@ ms.locfileid: "71253584"
 ## <a name="create-vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트 만들기
  **새 프로젝트** 대화 상자의 vsto 추가 기능 프로젝트 템플릿 중 하나를 사용 하 여 vsto 추가 기능 프로젝트를 만듭니다. 이러한 템플릿에는 필요한 어셈블리 참조 및 프로젝트 파일이 포함되어 있습니다. Visual Studio에서는 대부분의 Office 애플리케이션용 VSTO 추가 기능 프로젝트 템플릿을 제공합니다.
 
- VSTO 추가 기능 프로젝트 [를 만드는 방법에 대 한 자세한 내용은 방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다. 프로젝트 템플릿에 대 한 자세한 내용은 [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)를 참조 하세요.
+ VSTO 추가 기능 프로젝트를 만드는 방법에 대 한 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요. 프로젝트 템플릿에 대 한 자세한 내용은 [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)를 참조 하세요.
 
 ## <a name="develop-vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트 개발
- VSTO 추가 기능 프로젝트를 만들면 Visual Studio에서 자동으로 *ThisAddIn* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 또는 *ThisAddIn.cs* ( C#) 코드 파일을 만듭니다. 이 파일에는 `ThisAddIn` VSTO 추가 기능에 대 한 토대를 제공 하는 클래스가 포함 되어 있습니다. 이 클래스의 멤버를 사용하여 VSTO 추가 기능이 로드되거나 언로드될 때 코드를 실행하고, 호스트 애플리케이션의 개체 모델에 액세스하고, 애플리케이션의 기능을 확장할 수 있습니다. 자세한 내용은 [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
+ VSTO 추가 기능 프로젝트를 만들면 Visual Studio에서 자동으로 *ThisAddIn* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ) 또는 *ThisAddIn.cs* (c #) 코드 파일을 만듭니다. 이 파일에는 `ThisAddIn` VSTO 추가 기능에 대 한 토대를 제공 하는 클래스가 포함 되어 있습니다. 이 클래스의 멤버를 사용하여 VSTO 추가 기능이 로드되거나 언로드될 때 코드를 실행하고, 호스트 애플리케이션의 개체 모델에 액세스하고, 애플리케이션의 기능을 확장할 수 있습니다. 자세한 내용은 [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
 
 ## <a name="automate-applications-by-using-the-object-models"></a>개체 모델을 사용 하 여 응용 프로그램 자동화
  Microsoft Office 애플리케이션의 개체 모델은 VSTO 추가 기능에서 프로그래밍의 대상이 될 수 있는 많은 형식을 노출합니다. 이러한 형식을 사용하여 애플리케이션을 자동화할 수 있습니다. 예를 들어 프로그래밍 방식으로 Outlook에서 메일 메시지를 만들고 보내거나, 문서를 열고 Word에서 콘텐츠를 추가할 수 있습니다. 코드에서 호스트 응용 프로그램의 개체 모델에 액세스 하는 방법에 대 한 자세한 내용은 [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
@@ -86,9 +86,9 @@ ms.locfileid: "71253584"
 
   Office 프로젝트의 일반적인 작업 중 일부를 안내 하는 항목의 목록은 [office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)
-- [VSTO 추가 기능 아키텍처](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)

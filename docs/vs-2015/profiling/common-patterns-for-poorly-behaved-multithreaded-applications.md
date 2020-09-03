@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586634"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴
@@ -66,5 +66,5 @@ ms.locfileid: "82586634"
   
  애플리케이션이 선착순으로 잠금을 획득하고 잠금의 도착률이 잠금 획득률보다 높은 경우 잠금 호송이 발생합니다. 이러한 두 조건이 결합되면 잠금에서 백업을 시작하라는 요청이 발생합니다. 이 문제를 해결하는 방법은 "불공정" 잠금 또는 잠금 해제된 상태의 스레드를 찾을 수 있도록 첫 번째 스레드에 대한 액세스를 제공하는 잠금을 사용하는 것입니다. 위의 그림에서는 이 호송 동작을 보여 줍니다. 이 문제를 해결하려면 동기화 개체에 대한 경합을 줄이고 불공정 잠금을 사용해 보세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)
