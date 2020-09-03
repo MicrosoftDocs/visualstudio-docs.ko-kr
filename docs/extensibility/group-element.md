@@ -1,5 +1,5 @@
 ---
-title: 그룹 요소 | 마이크로 소프트 문서
+title: Group 요소 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711227"
 ---
 # <a name="group-element"></a>Group 요소
-VSPackage 명령 그룹을 정의합니다.
+VSPackage 명령 그룹을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,25 +34,25 @@ VSPackage 명령 그룹을 정의합니다.
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
-|guid|필수 사항입니다. GUID/ID 명령 식별자의 GUID입니다.|
-|id|필수 사항입니다. GUID/ID 명령 식별자의 ID입니다.|
-|priority|(선택 사항) 우선 순위를 지정하는 숫자 값입니다.|
-|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
+|guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
+|id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
+|priority|선택 사항입니다. 우선 순위를 지정 하는 숫자 값입니다.|
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|Parent|(선택 사항) 단추의 상위 요소입니다.|
-|주석|선택적 주석.|
+|Parent|선택 사항입니다. 단추의 부모 요소입니다.|
+|주석|선택적 설명입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[요소 그룹](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의하는 항목을 포함합니다.|
+|[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|
 
 ## <a name="example"></a>예제
 
@@ -62,5 +62,5 @@ VSPackage 명령 그룹을 정의합니다.
 </Group>
 ```
 
-## <a name="see-also"></a>참조
-- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참고 항목
+- [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

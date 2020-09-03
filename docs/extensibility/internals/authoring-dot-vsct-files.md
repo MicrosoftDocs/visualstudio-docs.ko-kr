@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173605"
 ---
 # <a name="author-vsct-files"></a>. Vsct 파일 작성
@@ -229,11 +229,11 @@ ms.locfileid: "84173605"
 
    일부 메뉴 및 단추 형식에는 특수 동작이 포함 되어 있습니다. 다음 목록에서는 특수 메뉴 및 단추 형식에 대해 설명 합니다. 다른 형식에 대해서는 `types` [메뉴](../../extensibility/menu-element.md), [단추](../../extensibility/button-element.md)및 [콤보](../../extensibility/combo-element.md) 요소에서 특성 설명을 참조 하십시오.
 
-   - 콤보 상자: 콤보 상자는 도구 모음에서 사용할 수 있는 드롭다운 목록입니다. UI에 콤보 상자를 추가 하려면 요소에 [Combos](../../extensibility/combos-element.md) 요소를 만듭니다 `Commands` . 그런 다음 `Combos` `Combo` 추가할 각 콤보 상자에 대 한 요소를 요소에 추가 합니다. `Combo`요소는 요소와 동일한 특성 및 자식을 가지 `Button` 며 `DefaultWidth` 및 특성도 포함 `idCommandList` 합니다. `DefaultWidth`특성은 너비를 픽셀 단위로 설정 하 고, `idCommandList` 특성은 콤보 상자를 채우는 데 사용 되는 명령 ID를 가리킵니다.
+   - 콤보 상자: 콤보 상자는 도구 모음에서 사용할 수 있는 드롭다운 목록입니다. UI에 콤보 상자를 추가 하려면 요소에 [Combos](../../extensibility/combos-element.md) 요소를 만듭니다 `Commands` . 그런 다음 `Combos` `Combo` 추가할 각 콤보 상자에 대 한 요소를 요소에 추가 합니다. `Combo` 요소는 요소와 동일한 특성 및 자식을 가지 `Button` 며 `DefaultWidth` 및 특성도 포함 `idCommandList` 합니다. `DefaultWidth`특성은 너비를 픽셀 단위로 설정 하 고, `idCommandList` 특성은 콤보 상자를 채우는 데 사용 되는 명령 ID를 가리킵니다.
 
    - 메뉴 컨트롤러: 메뉴 컨트롤러는 옆에 화살표를 포함 하는 단추입니다. 화살표를 클릭 하면 목록이 열립니다. 메뉴 컨트롤러를 UI에 추가 하려면 `Menu` `type` `MenuController` 원하는 동작에 따라 요소를 만들고 해당 특성을 or로 설정 `MenuControllerLatched` 합니다. 메뉴 컨트롤러를 채우려면 요소의 부모로 설정 `Group` 합니다. 메뉴 컨트롤러는 드롭다운 목록에서 해당 그룹의 모든 자식을 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)

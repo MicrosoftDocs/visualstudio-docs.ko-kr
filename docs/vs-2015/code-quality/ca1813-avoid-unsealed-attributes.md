@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8d86f4a9ecbdfff451fed21f93c0fe6a7679d471
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543951"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: 봉인되지 않은 특성을 사용하지 마세요.
@@ -44,7 +44,7 @@ ms.locfileid: "85543951"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시 하지 않는 것이 안전 합니다. 특성 계층을 정의 하는 경우에만이 작업을 수행 해야 하며 특성을 봉인 하거나 추상으로 만들 수 없습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 충족 하는 사용자 지정 특성을 보여 줍니다.
 
  [!code-csharp[FxCop.Performance.AttributesSealed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.AttributesSealed/cs/FxCop.Performance.AttributesSealed.cs#1)]
@@ -55,5 +55,5 @@ ms.locfileid: "85543951"
 
  [CA1018: AttributeUsageAttribute로 특성을 표시하세요.](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [특성](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

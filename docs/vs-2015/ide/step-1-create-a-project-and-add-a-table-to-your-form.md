@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 05a7f9930dc1619d6f35a6024bd0f754f7caeeb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643512"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1단계: 프로젝트 만들기 및 폼에 테이블 추가
@@ -52,7 +52,7 @@ ms.locfileid: "72643512"
 
    5. 작업 메뉴에서 **행 추가**를 두 번 선택하여 행을 두 개 이상 추가한 다음, **열 추가**를 두 번 선택하여 열을 두 개 이상 추가합니다.
 
-   6. 작업 메뉴에서 **행 및 열 편집**을 선택하여 **열 및 행 스타일** 창을 엽니다. 각 열을 선택하고 **백분율** 옵션 단추를 선택한 후 각 열의 너비를 전체 너비의 25%로 설정합니다. 그런 다음 창의 맨 위에 있는 드롭다운 상자에서 **행**을 선택하고 각 행의 높이를 25%로 설정합니다. 완료되면 **확인** 단추를 선택합니다.
+   6. 작업 메뉴에서 **행 및 열 편집**을 선택하여 **열 및 행 스타일** 창을 엽니다. 각 열을 선택하고 **백분율** 옵션 단추를 선택한 후 각 열의 너비를 전체 너비의 25%로 설정합니다. 그런 다음 창의 맨 위에 있는 드롭다운 상자에서 **행**을 선택하고 각 행의 높이를 25%로 설정합니다. 작업을 마치면 **확인** 단추를 선택합니다.
 
       이제 TableLayoutPanel이 크기가 같은 사각형 셀이 16개 포함된 4x4 모눈이 됩니다. 이러한 행과 열은 나중에 아이콘 이미지가 표시될 위치입니다.
 
@@ -90,6 +90,6 @@ ms.locfileid: "72643512"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)를 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [2 단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)를 참조 하세요.
 
-- 개요 항목으로 돌아가려면 [자습서 3: 일치 게임 만들기](../ide/tutorial-3-create-a-matching-game.md)를 참조하세요.
+- 개요 항목으로 돌아가려면 [자습서 3: 일치 게임 만들기](../ide/tutorial-3-create-a-matching-game.md)를 참조 하세요.

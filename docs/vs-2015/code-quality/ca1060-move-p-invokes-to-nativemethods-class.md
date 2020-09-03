@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e01ad9fc4fc57917c123404d8863d04240585793
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533434"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invoke를 NativeMethods 클래스로 이동
@@ -58,7 +58,7 @@ ms.locfileid: "85533434"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 메서드를 선언 합니다. 위반 문제를 해결 하기 위해 P/Invoke만 포함 하도록 디자인 된 적절 한 클래스로 **Removedirectory** p/Invoke를 이동 해야 합니다.
 
  [!code-csharp[FxCop.Design.DllImportNativeMethods#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.DllImportNativeMethods/cs/FxCop.Design.DllImportNativeMethods.cs#1)]
@@ -66,7 +66,7 @@ ms.locfileid: "85533434"
 
 ## <a name="nativemethods-example"></a>NativeMethods 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  **NativeMethods** 클래스는 **SuppressUnmanagedCodeSecurityAttribute**를 사용 하 여 표시 해서는 안 됩니다 .이 클래스에 배치 되는 P/invoke에는 **UnmanagedCode** 권한이 있어야 합니다. 대부분의 응용 프로그램은 로컬 컴퓨터에서 실행 되 고 완전 신뢰와 함께 실행 되기 때문에 일반적으로 문제가 되지 않습니다. 그러나 재사용 가능한 라이브러리를 개발 하는 경우 **SafeNativeMethods** 또는 **UnsafeNativeMethods** 클래스를 정의 하는 것이 좋습니다.
 
  다음 예제에서는 user32.dll에서 **messagebeep** 함수를 래핑하는 **상호 작용** 메서드를 보여 줍니다. **Messagebeep** P/Invoke는 **NativeMethods** 클래스에 배치 됩니다.
@@ -77,7 +77,7 @@ ms.locfileid: "85533434"
 
 ## <a name="safenativemethods-example"></a>SafeNativeMethods 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  모든 응용 프로그램에 안전 하 게 노출 될 수 있고 부작용이 없는 P/Invoke 메서드는 **SafeNativeMethods**라는 클래스에 배치 해야 합니다. 권한을 요구할 필요는 없으며, 사용자가 호출 되는 위치에 대해 많은 주의가 필요 하지 않습니다.
 
  다음 예제에서는 kernel32.dll에서 **GetTickCount** 함수를 래핑하는 **TickCount** 속성을 보여 줍니다.
@@ -88,7 +88,7 @@ ms.locfileid: "85533434"
 
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  안전 하 게 호출할 수 없고 부작용이 발생 하는 P/Invoke 메서드는 **UnsafeNativeMethods**라는 클래스에 배치 해야 합니다. 이러한 메서드는 사용자에 게 실수로 노출 되지 않도록 엄격 하 게 확인 해야 합니다. Rule [CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) 를 사용 하면 도움이 될 수 있습니다. 또는 메서드를 사용할 때 **UnmanagedCode** 대신 요청 된 다른 사용 권한이 있어야 합니다.
 
  다음 예제에서는 user32.dll **ShowCursor** 함수를 래핑하는 Cursor 메서드를 보여 줍니다 **.**

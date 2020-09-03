@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015764"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>연습: 프로젝트 작업 목록 정의 배포
@@ -155,11 +156,11 @@ Visual Studio는 IIS 응용 프로그램 풀을 재활용 하 고, 기존 버전
 
 5. PowerShell 명령을 사용 `Add-SPUserSolution` 하 여 원격 SharePoint 설치에 패키지를 설치 합니다. (팜 솔루션의 경우 명령을 사용 `Add-SPSolution` 합니다.)
 
-     예들 들어 `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`입니다.
+     예: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`
 
 6. PowerShell 명령을 사용 `Install-SPUserSolution` 하 여 솔루션을 배포 합니다. (팜 솔루션의 경우 명령을 사용 `Install-SPSolution` 합니다.)
 
-     예들 들어 `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`입니다.
+     예: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`
 
      원격 배포에 대 한 자세한 내용은 [솔루션 사용](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) 및 [SharePoint 2010의 PowerShell을 사용 하 여 솔루션 추가 및 배포](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)를 참조 하세요.
 
@@ -173,5 +174,5 @@ Visual Studio는 IIS 응용 프로그램 풀을 재활용 하 고, 기존 버전
 
 - [SharePoint Server 2010 용 Windows PowerShell](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532498"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
@@ -55,7 +55,7 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
 
 2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에서 라는 새 클래스 파일을 만듭니다 `CommandSet.cs` .
 
-3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예:
 
     ```csharp
     using System;
@@ -131,15 +131,15 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 모양 및 연결선 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
 
-- `this.IsDiagramSelected()` - `true`사용자가 다이어그램의 빈 부분을 클릭 한 경우
+- `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분을 클릭 한 경우
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-사용자가 여러 셰이프를 선택 하지 않았습니다.
+- `this.IsSingleSelection()` -사용자가 여러 셰이프를 선택 하지 않았습니다.
 
-- `this.SingleSelection`-사용자가 마우스 오른쪽 단추로 클릭 한 모양 또는 다이어그램
+- `this.SingleSelection` -사용자가 마우스 오른쪽 단추로 클릭 한 모양 또는 다이어그램
 
-- `shape.ModelElement as MyLanguageElement`-도형이 나타내는 모델 요소입니다.
+- `shape.ModelElement as MyLanguageElement` -도형이 나타내는 모델 요소입니다.
 
 요소에서 요소로 이동 하는 방법과 개체 및 링크를 만드는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 

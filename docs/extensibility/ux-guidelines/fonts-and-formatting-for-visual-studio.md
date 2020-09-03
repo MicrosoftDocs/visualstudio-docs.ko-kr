@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536112"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio의 글꼴 및 서식 지정
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>환경 글꼴
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
  사용자 지정을 위해 Visual Studio 내의 모든 글꼴을 사용자에 게 노출 해야 합니다. 이는 주로 **도구 > 옵션** 대화 상자의 **글꼴 및 색** 페이지를 통해 수행 됩니다. 글꼴 설정의 세 가지 주요 범주는 다음과 같습니다.
 
 - **환경 글꼴** -대화 상자, 메뉴, 도구 창 및 문서 창을 포함 하 여 모든 인터페이스 요소에 사용 되는 IDE (통합 개발 환경)의 기본 글꼴입니다. 기본적으로 환경 글꼴은 현재 버전의 Windows에서 9 포인트 맑은 고딕로 표시 되는 시스템 글꼴에 연결 됩니다. 모든 인터페이스 요소에 대해 글꼴 하나를 사용 하면 IDE 전체에서 일관 된 글꼴 모양을 유지할 수 있습니다.
@@ -32,7 +32,7 @@ ms.locfileid: "85536112"
 
 1. 편집기의 코드 텍스트에 대해 코드 텍스트 글꼴 설정으로 크기를 조정 하 고 편집기 텍스트의 확대/축소 수준에 응답 합니다.
 
-2. 인터페이스의 다른 모든 요소는 환경 글꼴 설정에 연결 되 고 환경의 모든 전역 변경 내용에 응답 해야 합니다. 여기에는 다음이 포함 됩니다 (이에 국한 되지 않음).
+2. 인터페이스의 다른 모든 요소는 환경 글꼴 설정에 연결 되 고 환경의 모든 전역 변경 내용에 응답 해야 합니다. 여기에는 다음이 포함되지만 이에 제한되지 않습니다.
 
     - 상황에 맞는 메뉴의 텍스트
 
@@ -69,7 +69,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (를 `Microsoft.VisualStudio.Shell.11.0` 현재 버전의 MPF dll로 대체 합니다.)
 
- 대화 상자를 표시 하려면 `ShowModal()` 클래스에서 ""를 호출 `ShowDialog()` 합니다. `ShowModal()`셸에서 올바른 모달 상태를 설정 하 고, 대화 상자가 부모 창에서 가운데 맞춤 되도록 합니다.
+ 대화 상자를 표시 하려면 `ShowModal()` 클래스에서 ""를 호출 `ShowDialog()` 합니다. `ShowModal()` 셸에서 올바른 모달 상태를 설정 하 고, 대화 상자가 부모 창에서 가운데 맞춤 되도록 합니다.
 
  코드는 다음과 같습니다.
 
@@ -78,7 +78,7 @@ MyWindow window = new MyWindow();
 window.ShowModal()
 ```
 
- `ShowModal`bool을 반환 하나요? (nullable 부울)를 사용 하 여 `DialogResult` 필요한 경우 사용할 수 있습니다. 대화 상자가 **정상**으로 닫히면 반환 값은 true입니다.
+ `ShowModal` bool을 반환 하나요? (nullable 부울)를 사용 하 여 `DialogResult` 필요한 경우 사용할 수 있습니다. 대화 상자가 **정상**으로 닫히면 반환 값은 true입니다.
 
  `HwndSource`팝업 창이 나 Win32/WinForms 부모 창의 wpf 자식 창과 같이, 대화 상자가 아닌 다른 WPF UI를 표시 해야 하는 경우에는 `FontFamily` `FontSize` wpf 요소의 루트 요소에서 및를 설정 해야 합니다. (셸은 주 창에서 속성을 설정 하지만 이전에는 상속 되지 않습니다 `HWND` .) Shell은 다음과 같이 속성을 바인딩할 수 있는 리소스를 제공 합니다.
 
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>서식 지정 (배율/굵은 글꼴) 참조
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> 서식 지정 (배율/굵은 글꼴) 참조
  일부 대화 상자에서는 특정 텍스트를 굵게 하거나 환경 글꼴 이외의 크기를 설정 해야 합니다. 이전에는 환경 글꼴 보다 큰 글꼴이 " `environment font +2` " 또는 이와 유사 하 게 코딩 되었습니다. 제공 된 코드 조각을 사용 하 여 높은 DPI 모니터를 지원 하 고 표시 텍스트가 항상 올바른 크기와 무게 (예: 빛 또는 좋아요)로 표시 되는지 확인 합니다.
 
 > [!NOTE]
@@ -301,7 +301,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  글꼴을 다시 설정 하려면 **도구 > 옵션 > 환경 > 글꼴 및 색**에서 "기본값 사용"을 클릭 합니다.
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>텍스트 스타일
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> 텍스트 스타일
  텍스트 스타일은 글꼴 크기, 무게 및 대/소문자를 나타냅니다. 구현 지침은 [환경 글꼴](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)을 참조 하세요.
 
 ### <a name="text-casing"></a>텍스트 대/소문자 구분
@@ -414,7 +414,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="375-environment-font--light"></a>375% 환경 글꼴 + 라이트
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용:** 하지만. 고유한 브랜드 UI만 해당 합니다.<br /><br /> **시겠습니까**<br /><br /> -문장 사례 사용<br />-항상 경량 가중치 사용<br /><br /> **안 함:**<br /><br /> -시작 페이지와 같은 서명 UI 이외의 UI 사용<br />-굵게, 기울임꼴 또는 굵은 기울임꼴<br />-본문 텍스트에 사용<br />-도구 창에서 사용|34 pt 맑은 고딕 Light **로 표시 됩니다.**<br /><br /> **시각적 예제:**<br /><br /> *현재 사용 되지 않습니다. Visual Studio 2017 시작 페이지에서 사용할 수 있습니다.*|
 
@@ -422,7 +422,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ::: moniker range="vs-2017"
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용법:**<br /><br /> -서명 대화 상자에서 더 큰 제목<br />-주 보고서 머리글<br /><br /> **시겠습니까**<br /><br /> -문장 사례 사용<br />-항상 경량 가중치 사용<br /><br /> **안 함:**<br /><br /> -시작 페이지와 같은 서명 UI 이외의 UI 사용<br />-굵게, 기울임꼴 또는 굵은 기울임꼴<br />-본문 텍스트에 사용<br />-도구 창에서 사용|**다음과 같이 표시 됩니다.** 28pt 맑은 고딕 Light<br /><br /> **시각적 예제:**<br /><br /> ![310% 환경 글꼴 &#43; 밝은 제목의 예](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
@@ -430,7 +430,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ::: moniker range=">=vs-2019"
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용법:**<br /><br /> -서명 대화 상자에서 더 큰 제목<br />-주 보고서 머리글<br /><br /> **시겠습니까**<br /><br /> -문장 사례 사용<br />-항상 경량 가중치 사용<br /><br /> **안 함:**<br /><br /> -서명 UI 이외의 UI를 사용 합니다.<br />-굵게, 기울임꼴 또는 굵은 기울임꼴<br />-본문 텍스트에 사용<br />-도구 창에서 사용|**다음과 같이 표시 됩니다.** 28pt 맑은 고딕 Light<br /><br /> **시각적 예제:**<br /><br /> ![310% 환경 글꼴 &#43; 밝은 제목의 예](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
@@ -438,37 +438,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="200-environment-font--semilight"></a>200% 환경 글꼴 + 기타
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용법:**<br /><br /> -부제목<br />-작은 및 보통 대화 상자의 제목<br /><br /> **시겠습니까**<br /><br /> -문장 사례 사용<br />-항상 사용 가중치를 사용 합니다.<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵은 기울임꼴<br />-본문 텍스트에 사용<br />-도구 창에서 사용|18 pt 맑은 고딕 Semillight **로 표시 됩니다.**<br /><br /> **시각적 예제:**<br /><br /> ![200% 환경 글꼴 &#43;의 예](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% 환경 글꼴
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용법:**<br /><br /> -문서 웰 UI의 섹션 제목<br />-보고서<br /><br /> **Do:** 문장 사례 사용<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵은 기울임꼴<br />-본문 텍스트에 사용<br />-표준 Visual Studio 컨트롤에서 사용<br />-도구 창에서 사용|**다음과 같이 표시 됩니다.** 14 pt 맑은 고딕<br /><br /> **시각적 예제:**<br /><br /> ![155% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>133% 환경 글꼴
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용법:**<br /><br /> -서명 대화 상자의 작은 부제목<br />-문서 웰 UI의 작은 부제목<br /><br /> **Do:** 문장 사례 사용<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵은 기울임꼴<br />-본문 텍스트에 사용<br />-표준 Visual Studio 컨트롤에서 사용<br />-도구 창에서 사용|12 pt 맑은 고딕 **로 표시 됩니다.**<br /><br /> **시각적 예제:**<br /><br /> ![133% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>122% 환경 글꼴
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용법:**<br /><br /> -서명 대화 상자의 섹션 제목<br />-트리 뷰의 최상위 노드<br />-세로 탭 탐색<br /><br /> **Do:** 문장 사례 사용<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵은 기울임꼴<br />-본문 텍스트에 사용<br />-표준 Visual Studio 컨트롤에서 사용<br />-도구 창에서 사용|**다음과 같이 표시 됩니다.** 11pt 맑은 고딕<br /><br /> **시각적 예제:**<br /><br /> ![122% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
 #### <a name="environment-font--bold"></a>환경 글꼴 + 굵게
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용법:**<br /><br /> -서명 대화 상자의 레이블 및 부제<br />-보고서의 레이블 및 부제<br />-문서 웰 UI의 레이블 및 부제<br /><br /> **시겠습니까**<br /><br /> -문장 사례 사용<br />-굵은 두께 사용<br /><br /> **안 함:**<br /><br /> -기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트에 사용<br />-표준 Visual Studio 컨트롤에서 사용<br />-도구 창에서 사용|굵게 **표시 되는** 9 pt 맑은 고딕<br /><br /> **시각적 예제:**<br /><br /> ![환경 글꼴 &#43; 굵은 제목 예](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>환경 글꼴
 
-|사용|모양|
+|사용량|모양|
 |-|-|
 |**사용:** 기타 모든 텍스트<br /><br /> **Do:** 문장 사례 사용<br /><br /> **안 함:** 기울임꼴 또는 굵게 기울임꼴|**다음과 같이 표시 됩니다.** 9 pt 맑은 고딕<br /><br /> **시각적 예제:**<br /><br /> ![환경 글꼴의 예](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
 
@@ -481,7 +481,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 굵게 표시 되는 환경 글꼴 텍스트는 기본 선 높이 간격과 안쪽 여백을 따라야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [글꼴 (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [사용자 인터페이스 텍스트 (Windows)](/windows/desktop/uxguide/text-ui)

@@ -8,7 +8,7 @@
           href: create-vsto-add-ins-for-office-by-using-visual-studio.md
         - name: 시작
           items:
-            - name: 시작
+            - name: 시작하기
               href: getting-started-office-development-in-visual-studio.md
             - name: Office 솔루션 개발 개요
               href: office-solutions-development-overview-vsto.md
@@ -42,9 +42,9 @@
           items:
             - name: Office 솔루션 업그레이드 및 마이그레이션
               href: upgrading-and-migrating-office-solutions.md
-            - name: .NET Framework 4 이상으로 Office 솔루션 마이그레이션
+            - name: Migrating Office Solutions to the .NET Framework 4 or later
               items:
-                - name: .NET Framework 4 이상으로 Office 솔루션 마이그레이션
+                - name: Migrating Office Solutions to the .NET Framework 4 or later
                   href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
                 - name: Office 프로젝트를 실행하는 데 필요한 변경
                   href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
@@ -60,17 +60,17 @@
               href: architecture-of-office-solutions-in-visual-studio.md
             - name: 문서 수준 사용자 지정 아키텍처
               href: architecture-of-document-level-customizations.md
-            - name: VSTO 추가 기능의 아키텍처
+            - name: Architecture of VSTO Add-ins
               href: architecture-of-vsto-add-ins.md
-            - name: Visual Studio Tools for Office 런타임 개요
+            - name: Visual Studio Tools for Office Runtime Overview
               items:
-                - name: Visual Studio Tools for Office 런타임 개요
+                - name: Visual Studio Tools for Office Runtime Overview
                   href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Visual Studio Tools for Office Runtime Installation Scenarios
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
                 - name: Visual Studio Tools for Office 런타임의 어셈블리
                   href: assemblies-in-the-visual-studio-tools-for-office-runtime.md
-            - name: VSTO 추가 기능에 대한 레지스트리 항목
+            - name: Registry Entries for VSTO Add-ins
               href: registry-entries-for-vsto-add-ins.md
             - name: Custom Document Properties Overview
               href: custom-document-properties-overview.md
@@ -86,7 +86,7 @@
               href: running-solutions-in-different-versions-of-microsoft-office.md
             - name: Visual Studio 환경의 Office 프로젝트
               href: office-projects-in-the-visual-studio-environment.md
-            - name: Office 프로젝트의 속성
+            - name: Properties in Office Projects
               href: properties-in-office-projects.md
             - name: Office 솔루션의 애플리케이션 및 배포 매니페스트
               href: application-and-deployment-manifests-in-office-solutions.md
@@ -134,7 +134,7 @@
                   href: programming-vsto-add-ins.md
                 - name: VSTO 추가 기능의 성능 향상
                   href: improving-the-performance-of-a-vsto-add-in.md
-                - name: 런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장
+                - name: Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time
                   href: extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md
                 - name: 다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출
                   href: calling-code-in-vsto-add-ins-from-other-office-solutions.md
@@ -152,7 +152,7 @@
                       href: combining-vba-and-document-level-customizations.md
                     - name: Visual Basic 프로젝트에서 VBA로 코드 노출
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
-                    - name: 'Visual C# 프로젝트에서 VBA로 코드 노출'
+                    - name: Visual C# 프로젝트에서 VBA로 코드 노출
                       href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
                     - name: '연습: Visual Basic 프로젝트에서 VBA의 코드 호출'
                       href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
@@ -220,7 +220,7 @@
                       href: walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md
                     - name: 리본 개체 모델 개요
                       href: ribbon-object-model-overview.md
-                    - name: '연습: 런타임에 리본의 컨트롤 업데이트'
+                    - name: '연습: 런타임에 리본 메뉴의 컨트롤 업데이트'
                       href: walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md
                     - name: Outlook에 대해 리본 메뉴 사용자 지정
                       href: customizing-a-ribbon-for-outlook.md
@@ -238,9 +238,9 @@
                       href: how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md
                     - name: 리본 디자이너에서 리본 XML로 리본 내보내기
                       href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
-                    - name: 리본 XML
+                    - name: Ribbon XML
                       href: ribbon-xml.md
-                    - name: '연습: 리본 XML을 사용하여 사용자 지정 탭 만들기'
+                    - name: 'Walkthrough: Creating a Custom Tab by Using Ribbon XML'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: 작업 창 개요
                   items:
@@ -250,11 +250,11 @@
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: 작업창에서 컨트롤 레이아웃 관리
                       href: how-to-manage-control-layout-on-actions-panes.md
-                    - name: '연습: Word 작업창의 컨트롤에 데이터 바인딩'
+                    - name: '연습: Word 작업 창의 컨트롤에 데이터 바인딩'
                       href: walkthrough-binding-data-to-controls-on-a-word-actions-pane.md
-                    - name: '연습: Excel 작업창의 컨트롤에 데이터 바인딩'
+                    - name: '연습: Excel 작업 창의 컨트롤에 데이터 바인딩'
                       href: walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md
-                    - name: '연습: 작업창에서 문서로 텍스트 삽입'
+                    - name: '연습: 작업 창에서 문서로 텍스트 삽입'
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: 사용자 지정 작업 창
                   items:
@@ -262,11 +262,11 @@
                       href: custom-task-panes.md
                     - name: 애플리케이션에 사용자 지정 작업 창 추가
                       href: how-to-add-a-custom-task-pane-to-an-application.md
-                    - name: '연습: 사용자 지정 작업창에서 애플리케이션 자동화'
+                    - name: 'Walkthrough: Automating an Application from a Custom Task Pane'
                       href: walkthrough-automating-an-application-from-a-custom-task-pane.md
                     - name: '연습: 사용자 지정 작업 창과 리본 단추 동기화'
                       href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
-                    - name: '연습: Outlook에서 이메일 메시지와 함께 사용자 지정 작업 창 표시'
+                    - name: '연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시'
                       href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
                 - name: Office 솔루션에서 WPF 컨트롤 사용
                   href: using-wpf-controls-in-office-solutions.md
@@ -514,9 +514,9 @@
           items:
             - name: Outlook 솔루션
               href: outlook-solutions.md
-            - name: Outlook 개체 모델 개요
+            - name: Outlook Object Model Overview
               items:
-                - name: Outlook 개체 모델 개요
+                - name: Outlook Object Model Overview
                   href: outlook-object-model-overview.md
                 - name: 연락처 항목 작업
                   items:
@@ -604,9 +604,9 @@
               href: powerpoint-solutions.md
             - name: '연습: PowerPoint용 첫 VSTO 추가 기능 만들기'
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
-        - name: 프로젝트 솔루션
+        - name: Project Solutions
           items:
-            - name: 프로젝트 솔루션
+            - name: Project Solutions
               href: project-solutions.md
             - name: '연습: Project용 첫 VSTO 추가 기능 만들기'
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
@@ -750,7 +750,7 @@
                   href: how-to-protect-parts-of-documents-by-using-content-controls.md
                 - name: 책갈피 컨트롤 크기 조정
                   href: how-to-resize-bookmark-controls.md
-                - name: '연습: Content 컨트롤을 사용하여 서식 파일 만들기'
+                - name: '연습: 콘텐츠 컨트롤을 사용하여 서식 파일 만들기'
                   href: walkthrough-creating-a-template-by-using-content-controls.md
                 - name: '연습: 콘텐츠 컨트롤을 사용자 지정 XML 부분에 바인딩'
                   href: walkthrough-binding-content-controls-to-custom-xml-parts.md
@@ -774,7 +774,7 @@
               href: granting-trust-to-office-solutions.md
             - name: Granting Trust to Documents
               href: granting-trust-to-documents.md
-            - name: 보안 배포
+            - name: 안전한 배포
               href: secure-deployment.md
             - name: 포함 목록을 사용하여 Office 솔루션 신뢰
               href: trusting-office-solutions-by-using-inclusion-lists.md
@@ -866,7 +866,7 @@
                   href: formregion-element-office-development-in-visual-studio.md
                 - name: <vstoRuntime> 요소
                   href: vstoruntime-element-office-development-in-visual-studio.md
-            - name: Office 솔루션의 배포 매니페스트
+            - name: Deployment Manifests for Office Solutions
               href: deployment-manifests-for-office-solutions.md
             - name: 사용자 인터페이스 참조(Visual Studio에서 Office 개발)
               items:

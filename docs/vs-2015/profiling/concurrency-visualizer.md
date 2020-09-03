@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e7061acabbe5ce18ff6e1f210fe0003bdaf88980
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586818"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
@@ -54,5 +54,5 @@ ms.locfileid: "82586818"
 |[동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)|동시성 시각화 도우미에서 추가 정보를 표시하도록 소스 코드를 계측하는 방법을 설명합니다.|  
 |[동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)를 사용하여 Visual Studio가 설치되지 않은 컴퓨터에서 추적 정보를 수집 및 처리하는 방법을 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로파일링 도구](../profiling/profiling-tools.md)

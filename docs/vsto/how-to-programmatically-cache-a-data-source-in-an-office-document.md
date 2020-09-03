@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544770"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>방법: Office 문서에서 프로그래밍 방식으로 데이터 소스 캐시
@@ -54,7 +54,7 @@ ms.locfileid: "85544770"
     > [!NOTE]
     > `StopCaching` `Shutdown` 문서 또는 워크시트의 이벤트에 대 한 이벤트 처리기에서를 호출 하지 마세요. 이벤트가 발생 한 시간에는 `Shutdown` 너무 늦게 데이터 캐시를 수정할 수 있습니다. 이벤트에 대 한 자세한 내용은 `Shutdown` [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [데이터 캐시](../vsto/caching-data.md)
 - [방법: 오프 라인 이나 서버에서 사용할 데이터 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

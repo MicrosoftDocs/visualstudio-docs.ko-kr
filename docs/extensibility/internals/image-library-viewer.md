@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536346"
 ---
 # <a name="image-library-viewer"></a>이미지 라이브러리 뷰어
@@ -55,7 +55,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 </ImageManifest>
 ```
 
- **기호**
+ **Symbols**
 
  가독성 및 유지 관리를 돕기 위해 이미지 매니페스트는 특성 값에 기호를 사용할 수 있습니다. 기호는 다음과 같이 정의 됩니다.
 
@@ -71,7 +71,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 |**하위 요소**|**정의**|
 |-|-|
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
-|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
+|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
 |String|기호는 임의의 문자열 값을 나타냅니다.|
 
@@ -108,9 +108,9 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 </Image>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|
 
@@ -124,16 +124,16 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
  </Source>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
 |URI|하다 이미지를 로드할 수 있는 위치를 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -Application:///authority를 사용 하는 [PACK URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br /><br /> -절대 구성 요소 리소스 참조<br /><br /> -네이티브 리소스를 포함 하는 파일의 경로|
 |배경|필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> - *Light*: 소스를 밝은 배경에 사용할 수 있습니다.<br /><br /> - *어둡게*: 소스를 짙은 배경으로 사용할 수 있습니다.<br /><br /> - *System.windows.forms.systeminformation.highcontrast*: 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> - *HighContrastLight*: 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> -*HighContrastDark*: 소스를 고대비 모드의 어두운 배경에 사용할 수 있습니다.<br /><br /> **배경** 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> **배경이** *Light*, *어둡게*, *HighContrastLight*또는 *HighContrastDark*인 경우 소스의 색은 반전 되지 않습니다. **배경이** 생략 되거나 *system.windows.forms.systeminformation.highcontrast*로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다.|
 
  요소에는 \<Source> 다음과 같은 선택적 하위 요소 중 하나만 있을 수 있습니다.
 
-|**요소**|**특성 (모두 필수)**|**정의**|
+|**Element**|**특성 (모두 필수)**|**정의**|
 |-|-|-|
-|\<Size>|Value|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
+|\<Size>|값|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
 |\<SizeRange>|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
 |\<Dimensions>|너비, 높이|원본은 지정 된 너비 및 높이 (장치 단위)의 이미지에 사용 됩니다.|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, Maxwidth|이 소스는 최소 너비/높이에서 최대 너비/높이 (장치 단위)로 이루어진 이미지에 사용 됩니다.|
@@ -144,9 +144,9 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 <NativeResource Type="type" ID="int" />
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
-|Type|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
+|형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
 
  **ImageList**
@@ -160,9 +160,9 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
  </ImageList>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|
 
@@ -215,7 +215,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 
  ![이미지 라이브러리 뷰어 필터 ID](../../extensibility/internals/media/image-library-viewer-filter-id.png "이미지 라이브러리 뷰어 필터 ID")
 
-## <a name="notes"></a>메모
+## <a name="notes"></a>참고
 
 - 기본적으로이 도구는 Visual Studio 설치 디렉터리에 있는 여러 이미지 매니페스트를 가져옵니다. 공개적으로 사용할 수 있는 모니커가 있는 유일한 모니커는 **VisualStudio. ImageCatalog** 매니페스트입니다. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (사용자 지정 매니페스트에서이 GUID를 재정의 **하지** 않음) 형식: knownmonikers
 

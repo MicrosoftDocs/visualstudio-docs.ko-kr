@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75929217"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>관리 코드에 대한 보안 규칙 규칙 집합
@@ -86,5 +86,5 @@ ms.locfileid: "75929217"
 |[CA3010](../code-quality/ca3010.md)|코드에서 XAML 삽입 취약성에 대해 검토합니다.|
 |[CA3011](../code-quality/ca3011.md)|코드에서 DLL 삽입 취약성에 대해 검토합니다.|
 |[CA3012](../code-quality/ca3012.md)|코드에서 regex 삽입 취약성에 대해 검토합니다.|
-|[CA5358](../code-quality/ca5358.md)|안전 하지 않은 암호화 모드 사용 안 함|
+|[CA5358](../code-quality/ca5358.md)|안전하지 않은 암호화 모드를 사용하지 마세요.|
 |[CA5403](../code-quality/ca5403.md)|인증서 하드 코딩 안 함|

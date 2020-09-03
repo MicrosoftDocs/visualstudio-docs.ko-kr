@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544796"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio의 이미지 및 아이콘
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Visual Studio에서 이미지 사용
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio에서 이미지 사용
  아트 워크를 만들기 전에 [Visual Studio 이미지 라이브러리](https://www.microsoft.com/download/details.aspx?id=35825)에서 1000 개 이상의 이미지를 사용 하는 것이 좋습니다.
 
 ### <a name="types-of-images"></a>이미지 형식
@@ -35,7 +35,7 @@ ms.locfileid: "85544796"
 
 - **커서로.** 마우스를 사용 하 여 작업이 허용 되는지 여부를 나타내는 데 사용 됩니다 .이 경우 개체를 삭제할 수 있습니다.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>아이콘 디자인
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> 아이콘 디자인
 
 ### <a name="overview"></a>개요
  Visual Studio는 깨끗 한 기 하 도형을 사용 하는 최신 스타일의 아이콘을 사용 합니다 .이 아이콘은 긍정/부정 (밝은/어둡게)의 50/50 잔액 이며, 이해 하기 쉬운 직접 메타포를 사용 합니다. 중요 한 아이콘 디자인 지점은 명확성, 단순화 및 컨텍스트를 중심으로 합니다.
@@ -269,7 +269,7 @@ ms.locfileid: "85544796"
 
  Visual Studio 아이콘에서 색을 사용 하는 방법에 대 한 자세한 내용은 [이미지에서 색 사용](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)을 참조 하세요.
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>이미지에서 색 사용
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> 이미지에서 색 사용
 
 ### <a name="overview"></a>개요
  Visual Studio의 아이콘은 주로 단색입니다. 색은 특정 정보를 전달 하기 위해 예약 되어 있으며 장식에는 적용 되지 않습니다. 색이 사용 됩니다.
@@ -282,7 +282,7 @@ ms.locfileid: "85544796"
 
 - IntelliSense 내에서 항목을 구분 하려면
 
-### <a name="accessibility"></a>접근성
+### <a name="accessibility"></a>액세스 가능성
  Visual Studio 규정 준수 지침을 적용 하려면 제품에 체크 인 한 모든 아이콘이 색 및 대비에 대 한 접근성 요구 사항을 통과 해야 합니다. 시각적 언어 팔레트의 색은 테스트 되었으며 이러한 요구 사항을 충족 합니다.
 
 #### <a name="color-inversion-for-dark-themes"></a>어두운 테마의 색 반전
@@ -295,7 +295,7 @@ ms.locfileid: "85544796"
 ### <a name="base-palette"></a>기본 색상표
  모든 표준 아이콘에는 세 가지 기본 색이 포함 되어 있습니다. 3D 도구 아이콘에 대해 하나 또는 두 개의 예외를 포함 하는 아이콘에는 그라데이션 또는 그림자가 포함 되지 않습니다.
 
-|사용|Name|값 (밝은 테마)|[|예제|
+|사용량|Name|값 (밝은 테마)|[|예|
 |-----------|----------|---------------------------|------------|-------------|
 |배경/어둡게|VS BG|424242/66, 66, 66|![견본 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|![기본 색상표 예](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405-02_BasePaletteExample")|
 |전경/밝은|VS FG|F0EFF1/240239241|![견본 F0EFF1](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
@@ -308,17 +308,17 @@ ms.locfileid: "85544796"
 #### <a name="action-modifiers"></a>동작 한정자
  아래 4 가지 색은 작업 한정자에 필요한 작업 유형을 표시 합니다.
 
-|사용|Name|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
-|Positive|VS 동작 녹색|388A34/56138, 52|![견본 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
-|Negative|VS 동작 빨강|A1260D/161, 38, 13|![견본 A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
+|양수|VS 동작 녹색|388A34/56138, 52|![견본 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
+|음수|VS 동작 빨강|A1260D/161, 38, 13|![견본 A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
 |무감정|VS 작업 Blue|00539C/0, 83156|![견본 00539C](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
 |만들기/새로 만들기|VS 작업 주황색|C27D1A/194156, 26|![견본 C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 
 ##### <a name="examples"></a>예제
  녹색은 "Add", "Run", "Play" 및 "Validate"와 같은 긍정 동작 한정자에 사용 됩니다.
 
-|WMIMgmt.msc|쿼리 실행|모든 단계 재생|컨트롤 추가|
+|실행|쿼리 실행|모든 단계 재생|컨트롤 추가|
 |-|-|-|-|
 |![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![쿼리 실행 아이콘](../../extensibility/ux-guidelines/media/0405-04-executequery.png "0405-04_ExecuteQuery")|![모든 단계 재생 아이콘](../../extensibility/ux-guidelines/media/0405-05-playallsteps.png "0405-05_PlayAllSteps")|![컨트롤 추가 아이콘](../../extensibility/ux-guidelines/media/0405-06-addcontrol.png "0405-06_AddControl")|
 
@@ -343,21 +343,21 @@ ms.locfileid: "85544796"
 #### <a name="special-cases"></a>특수 사례
  특수 한 경우에는 색이 지정 된 동작 한정자를 독립 실행형 아이콘으로 독립적으로 사용할 수 있습니다. 아이콘에 사용 되는 색은 아이콘이 연결 된 동작을 반영 합니다. 이 사용은 다음을 비롯 한 아이콘의 작은 하위 집합으로 제한 됩니다.
 
-|WMIMgmt.msc|중지|삭제|저장|뒤로 탐색|
+|실행|중지|삭제|저장|뒤로 탐색|
 |-|-|-|-|-|
 |![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-19-stop.png "0405-19_Stop")|![삭제 아이콘](../../extensibility/ux-guidelines/media/0405-20-delete.png "0405-20_Delete")|![저장 아이콘](../../extensibility/ux-guidelines/media/0405-21-save.png "0405-21_Save")|![뒤로 탐색 아이콘](../../extensibility/ux-guidelines/media/0405-22-navigateback.png "0405-22_NavigateBack")|
 ### <a name="code-hierarchy-palette"></a>코드 계층 구조 팔레트
 
 #### <a name="folder"></a>폴더
 
-|사용|Name|값 (모든 테마)|[|예제|
+|사용량|Name|값 (모든 테마)|[|예|
 |-----------|----------|--------------------------|------------|-------------|
 |폴더|폴더|DCB67A/220182122|![견본 DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![폴더 색 아이콘](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 언어
  Visual Studio에서 사용할 수 있는 각 공용 언어 또는 플랫폼에는 연결 된 색이 있습니다. 이러한 색은 기본 아이콘 또는 복합 아이콘의 오른쪽 위 모퉁이에 표시 되는 언어 한정자에 사용 됩니다.
 
-|사용|Name|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF Blue|0095D/0149215|![견본 0095D7](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|CPP 자주|9B4F96/155, 79150|![견본 9B4F96](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
@@ -382,7 +382,7 @@ ms.locfileid: "85544796"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 아이콘은 배타 색상표를 사용 합니다. 이러한 색은 사용자가 IntelliSense 팝업 목록의 여러 항목을 신속 하 게 구분할 수 있도록 하는 데 사용 됩니다.
 
-|사용|Name|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
 |클래스, 이벤트|VS 작업 주황색|C27D1A/194125, 26|![견본 C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |확장 메서드, 메서드, 모듈, 대리자|VS 동작 자주|652D90/101, 45144|![견본 652D90](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
@@ -401,10 +401,10 @@ ms.locfileid: "85544796"
 |-|-|-|-|
 |![IntelliSense 보호된 열거형 항목 아이콘](../../extensibility/ux-guidelines/media/0405-41-intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")|![intellisense 개체 아이콘](../../extensibility/ux-guidelines/media/0405-42-intellisenseobject.png "0405-42_IntelliSenseObject")|![IntelliSense 템플릿 아이콘](../../extensibility/ux-guidelines/media/0405-43-intellisensetemplate.png "0405-43_IntelliSenseTemplate")|![IntelliSense 예외 바로 가기 아이콘](../../extensibility/ux-guidelines/media/0405-44-intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")|
 
-### <a name="notifications"></a>알림
+### <a name="notifications"></a>공지
  Visual Studio의 알림은 상태를 나타내는 데 사용 됩니다. 알림 팔레트는 다음 네 가지 색 및 검은색 또는 흰색 전경 채우기 옵션을 사용 하 여 다음 상태 수준으로 알림을 정의 합니다.
 
-|사용|Name|값 (모든 테마)|[|
+|사용량|Name|값 (모든 테마)|[|
 |-----------|----------|--------------------------|------------|
 |상태: 중립|알림 Blue (VS Blue)|1BA1E2/27161226|![견본 1BA1E2](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |상태: 긍정|알림 녹색 (VS Green)|339933/51153, 51|![견본 339933](../../extensibility/ux-guidelines/media/0405-339933.png "0405_339933")|
@@ -422,16 +422,16 @@ ms.locfileid: "85544796"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  일반적으로 Visual Studio Online은 브라우저에서 호스팅되는 기능으로 구성 됩니다. 색은 환경 마다 다르지만 스타일은 동일 하 게 유지 됩니다.
 
-|그룹|사용|Name|값 (모든 테마)|[|
+|그룹|사용량|Name|값 (모든 테마)|[|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|배경|TFSO BG|656565/101, 101, 101|![견본 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|윤곽선|TFSO OUT|FFFFFF/255, 255, 255|![견본 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |Napa|배경|흰색|FFFFFF/255, 255, 255|![견본 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |모나코|배경|흰색|FFFFFF/255, 255, 255|![견본 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|배경|흰색|FFFFFF/255, 255, 255|![견본 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|F12|정상|F12 Grey_Primary|555555/85, 85, 85|![견본 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
+|F12|보통|F12 Grey_Primary|555555/85, 85, 85|![견본 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|가리키기|F12 Blue_Hover|2279BF/34121191|![견본 2279BF](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|사용 안 함|F12 LtGrey_Disabled|ABABAC/171171172|![견본 ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Disabled|F12 LtGrey_Disabled|ABABAC/171171172|![견본 ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|가리키기 배경|가리키기 bg|D9EBF7/217235247|![견본 D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|누른 배경|누른 bg|B2D7F0/178215240|![견본 B2D7F0](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
 |F12|윤곽선|VS OUT|F6F6F6/246246246|![견본 F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|

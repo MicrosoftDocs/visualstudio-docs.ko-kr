@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542573"
 ---
 # <a name="share-code-maps"></a>코드 맵 공유
@@ -57,6 +57,6 @@ Visual Studio는 맵을 Visual Studio Enterprise 및 Visual Studio Professional�
 
 3. 코드 맵 이름을 지정합니다. 파일 **형식** 상자가 **xps 파일 ( \* .xps)** 로 설정 되어 있는지 확인 합니다. **저장**을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [코드 맵으로 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)

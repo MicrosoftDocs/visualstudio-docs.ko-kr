@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f85ff51b93383d2deca409a00a3db130d52b5003
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645422"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>방법: 공통 출력 디렉터리로 빌드
@@ -35,5 +35,5 @@ ms.locfileid: "72645422"
 
 4. 솔루션의 모든 프로젝트에 대해 1-3단계를 반복합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [컴파일 및](../ide/compiling-and-building-in-visual-studio.md) 빌드 [방법: 빌드 출력 디렉터리 변경](../ide/how-to-change-the-build-output-directory.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 37c855f7940cbed847dcb7d5c6414be436cee993
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918369"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>ALM(Application Lifecycle Management) 및 Xamarin 앱
@@ -29,7 +29,7 @@ Xamarin을 통해 C#, .NET 및 Visual Studio를 사용하여 Android, iOS 및 Wi
  아래 표에서는 Xamarin 프로젝트에서 제대로 작동하는 Visual Studio ALM 기능 및 제한 사항이 있는 Visual Studio ALM 기능을 식별합니다. 기능 자체에 대한 자세한 내용은 연결된 설명서를 참조하세요.  
   
 ## <a name="agile-tools"></a>Agile 도구  
- 참조 링크: **[작업](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services 또는 TFS 사용, Team Explorer Everywhere 포함)  
+ 참조 링크: **[작업](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**(Visual Studio Team Services 또는 TFS 사용, Team Explorer Everywhere 포함)  
   
  일반 설명: 모든 계획 및 추적 기능은 프로젝트 형식 및 코딩 언어와 독립적입니다.  
   
@@ -44,7 +44,7 @@ Xamarin을 통해 C#, .NET 및 Visual Studio를 사용하여 Android, iOS 및 Wi
 ## <a name="modeling"></a>모델링  
  참조 링크: **[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)**  
   
- 디자인 기능은 코딩 언어에 독립적이며 C#과 같은 .NET 언어에서 작동합니다. 코드와 관련된 사항에 대한 자세한 내용은 [소프트웨어 개발에서 아키텍처 및 모델링 다이어그램의 역할](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools)을 참조하세요.  
+ 디자인 기능은 코딩 언어에 독립적이며 C#과 같은 .NET 언어에서 작동합니다. 코드와 관련 된 측면은 [소프트웨어 개발에서 아키텍처 및 모델링 다이어그램의 역할](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) 을 참조 하세요.  
   
 |기능|Xamarin에서 지원 여부|추가 설명|  
 |-------------|----------------------------|-------------------------|  
@@ -72,7 +72,7 @@ Xamarin을 통해 C#, .NET 및 Visual Studio를 사용하여 Android, iOS 및 Wi
   
 |기능|Xamarin에서 지원 여부|추가 설명|  
 |-------------|----------------------------|-------------------------|  
-|온-프레미스 TFS 서버|예|빌드 컴퓨터에 Xamarin이 설치되어 있어야 하며, iOS용 빌드를 위해 OSX 컴퓨터에 연결할 수 있습니다. [Xamarin용 TFS 구성](/azure/devops/repos/tfvc/overview?view=azure-devops) (Xamarin 웹 사이트)을 참조하세요.|  
+|온-프레미스 TFS 서버|예|빌드 컴퓨터에 Xamarin이 설치되어 있어야 하며, iOS용 빌드를 위해 OSX 컴퓨터에 연결할 수 있습니다. [Xamarin에 대 한 TFS 구성](/azure/devops/repos/tfvc/overview?view=azure-devops) (xamarin 웹 사이트)을 참조 하세요.|  
 |Visual Studio Team Services에 연결된 온-프레미스 빌드 서버|예|자세한 내용은 [빌드 서버](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c)를 참조하세요.|  
 |Visual Studio Team Services의 호스트된 컨트롤러 서비스|예|[Xamarin 앱 빌드](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)를 참조하세요.|  
 |사전 및 사후 스크립트로 정의 작성|예||  
@@ -86,9 +86,9 @@ Xamarin을 통해 C#, .NET 및 Visual Studio를 사용하여 Android, iOS 및 Wi
 |테스트 계획, 테스트 사례 만들기 및 테스트 도구 모음 구성|예||  
 |수동 테스트|예||  
 |테스트 관리자(테스트 기록 및 재생)|예|Visual Studio에서만 제공하는 Windows 디바이스 및 Android 에뮬레이터. [Xamarin 테스트 레코더](https://www.xamarin.com/test-cloud/recorder)를 사용하면 모든 디바이스에 대한 기록이 가능합니다.|  
-|코드 검사|N/A||  
+|코드 검사|해당 없음||  
 |[코드 단위 테스트](../test/unit-test-your-code.md)|예|Windows 및 Android 대상의 경우 기본 제공 MSTest 도구를 사용할 수 있습니다. Windows, Android 및 iOS에서 단위 테스트를 실행하려면 NUnit를 사용하는 것이 좋습니다. [Xamarin용 TFS 구성](/azure/devops/repos/tfvc/overview?view=azure-devops) (Xamarin 웹 사이트)을 참조하세요.|  
-|[UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|Windows에만 해당|Visual Studio의 UI 테스트 레코더는 Windows 전용입니다. 모든 플랫폼에 대해서는 [Xamarin 테스트 레코더](https://www.xamarin.com/test-cloud/recorder)를 참조하세요.|  
+|[UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|Windows만|Visual Studio의 UI 테스트 레코더는 Windows 전용입니다. 모든 플랫폼에 대해서는 [Xamarin 테스트 레코더](https://www.xamarin.com/test-cloud/recorder)를 참조하세요.|  
   
 ## <a name="improve-code-quality"></a>코드 품질 향상  
  참조 링크: **[코드 품질 향상](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
@@ -98,8 +98,8 @@ Xamarin을 통해 C#, .NET 및 Visual Studio를 사용하여 Android, iOS 및 Wi
 |[관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|예||  
 |[코드 복제본 검색을 사용하여 중복 코드 찾기](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|예||  
 |[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|예||  
-|[성능 탐색기](../profiling/performance-explorer.md)|아니요|대신 Xamarin Studio를 통해 [Xamarin 프로파일러](/xamarin/cross-platform/deploy-test/) 를 사용합니다. Xamarin 프로파일러는 현재 미리 보기로 제공되며 아직 Windows 대상에서 작동하지 않습니다.|  
-|[.NET Framework 메모리 문제 분석](../misc/analyze-dotnet-framework-memory-issues.md)|아니요|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크에 대한 후크가 없습니다.|  
+|[성능 탐색기](../profiling/performance-explorer.md)|예|대신 Xamarin Studio를 통해 [Xamarin 프로파일러](/xamarin/cross-platform/deploy-test/) 를 사용합니다. Xamarin 프로파일러는 현재 미리 보기로 제공되며 아직 Windows 대상에서 작동하지 않습니다.|  
+|[.NET Framework 메모리 문제 분석](../misc/analyze-dotnet-framework-memory-issues.md)|예|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크에 대한 후크가 없습니다.|  
   
 ## <a name="release-management"></a>릴리스 관리  
  참조 링크: **[릴리스 관리로 배포 자동화](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
