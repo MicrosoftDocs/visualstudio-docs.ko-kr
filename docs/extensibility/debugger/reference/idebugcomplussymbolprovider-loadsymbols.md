@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus 기호 제공자::로드 심볼 | 마이크로 소프트 문서
+title: 'IDebugComPlusSymbolProvider:: LoadSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 805db1f0b0722b75e7a047d8509ed9e63e4565c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733650"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
-지정된 디버그 기호를 메모리에 로드합니다.
+지정 된 디버그 기호를 메모리에 로드 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,28 +50,28 @@ int LoadSymbols(
 
 ## <a name="parameters"></a>매개 변수
 `ulAppDomainID`\
-【인】 응용 프로그램 도메인의 식별자입니다.
+진행 응용 프로그램 도메인의 식별자입니다.
 
 `guidModule`\
-【인】 몬덜의 고유 식별자입니다.
+진행 Mondule의 고유 식별자입니다.
 
 `baseAddress`\
-【인】 기본 메모리 주소입니다.
+진행 기본 메모리 주소입니다.
 
 `pUnkMetadataImport`\
-【인】 기호 메타데이터가 포함된 개체입니다.
+진행 기호 메타 데이터를 포함 하는 개체입니다.
 
 `bstrModuleName`\
-【인】 모듈의 이름입니다.
+진행 모듈의 이름입니다.
 
 `bstrSymSearchPath`\
-【인】 기호 파일을 검색하는 경로입니다.
+진행 기호 파일을 검색할 경로입니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugComPlusSymbol공급자](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **CDebugSymbolProvider** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbols(
@@ -86,5 +86,5 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

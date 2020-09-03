@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551675"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 개발 샘플 및 연습
@@ -36,7 +36,7 @@ ms.locfileid: "69551675"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 |항목|설명|
 |-----------|-----------------|
@@ -47,11 +47,11 @@ ms.locfileid: "69551675"
 |[Office UI 사용자 지정 연습](../vsto/office-ui-customization-walkthroughs.md)|Microsoft Office 응용 프로그램의 UI (사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 주는 단계별 가이드를 제공 합니다.|
 |[보안 및 배포 연습](../vsto/security-and-deployment-walkthroughs.md)|솔루션을 실행할 수 있도록 보안 정책을 설정 하 고 솔루션을 배포 하는 방법을 설명 하는 단계별 가이드를 제공 합니다.|
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
 
-|항목|Description|
+|항목|설명|
 |-----------|-----------------|
-|[Visual Studio &#40;에서 Office 개발 시작 하기&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|설치 프로그램, 프로젝트 템플릿, Office 주 interop 어셈블리 및 Office 개발의 새로운 기능에 대 한 정보 링크를 제공 합니다.|
+|[Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|설치 프로그램, 프로젝트 템플릿, Office 주 interop 어셈블리 및 Office 개발의 새로운 기능에 대 한 정보 링크를 제공 합니다.|
 |[Visual Studio의 Office 솔루션 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)|관리 코드 Office 솔루션이 개발자와 최종 사용자의 관점에서 작동 하는 방식에 대해 설명 하 고, 관리 코드가 Office 문서 및 응용 프로그램에서 작동 하는 방식에 대 한 정보를 포함 합니다.|
 |[Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)|Visual Studio에서 Office 개발을 사용한 프로그래밍에 대 한 질문과 대답을 나열 하 고 일반적인 문제를 해결 하는 데 도움이 되는 항목에 대 한 링크를 제공 합니다.|
 |[Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)|Microsoft Office 솔루션을 만드는 방법 및 솔루션에서 어셈블리의 역할에 대 한 정보에 대 한 링크를 제공 합니다.|

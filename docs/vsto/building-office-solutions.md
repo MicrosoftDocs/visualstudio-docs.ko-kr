@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551853"
 ---
 # <a name="build-office-solutions"></a>Office 솔루션 빌드
@@ -79,7 +79,7 @@ ms.locfileid: "69551853"
   Outlook은 이 정보를 양식 영역으로 로드해야 합니다.
 
 ## <a name="referenced-assemblies"></a>참조된 어셈블리
- Office 솔루션 빌드 프로젝트에서 어셈블리(클래스 라이브러리 프로젝트 포함)를 참조할 수 있습니다. 모든 참조된 어셈블리에는 **로컬 복사**라는 속성이 있습니다. **로컬 복사** 는 어셈블리를 출력 디렉터리에 복사할지 여부를 나타냅니다. 기본적으로 이 속성은 **true**로 설정됩니다. **로컬 복사** 를 **true** 로 설정한 모든 참조된 어셈블리는 출력 디렉터리에 복사됩니다.
+ Office 솔루션 빌드 프로젝트에서 어셈블리(클래스 라이브러리 프로젝트 포함)를 참조할 수 있습니다. 모든 참조된 어셈블리에는 **로컬 복사**라는 속성이 있습니다. **로컬 복사** 는 어셈블리를 출력 디렉터리에 복사할지 여부를 나타냅니다. 기본적으로 **true**로 설정 됩니다. **로컬 복사** 를 **true** 로 설정한 모든 참조된 어셈블리는 출력 디렉터리에 복사됩니다.
 
 ## <a name="security-during-the-build-process"></a>빌드 프로세스 중 보안
  Visual Studio는 개발 컴퓨터에서 보안 설정을 자동으로 구성하여 빌드 프로세스 동안 솔루션에 신뢰를 부여합니다. 그렇게 하면 솔루션을 디버깅하면서 실행할 수 있습니다.
@@ -96,7 +96,7 @@ ms.locfileid: "69551853"
 ## <a name="change-the-platform-target"></a>플랫폼 대상 변경
  기본적으로 Office 프로젝트의 플랫폼 대상은 **임의 CPU**입니다. 일반적으로 이 설정을 변경해서는 안 됩니다. **임의 CPU** 플랫폼 대상 설정으로 빌드된 Office 솔루션은 32비트 및 64비트 버전의 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 또는 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에서 실행됩니다.
 
- 64비트 버전의 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 또는 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에서만 실행되는 솔루션을 만드는 경우에만 플랫폼 대상을 x64로 설정해야 하며, 솔루션은 네이티브 64비트 API를 호출합니다. 플랫폼 대상 설정을 [변경 하는 방법에 대 한 자세한 내용은 방법: 플랫폼](../ide/how-to-configure-projects-to-target-platforms.md)을 대상으로 하는 프로젝트를 구성 합니다.
+ 64비트 버전의 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 또는 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에서만 실행되는 솔루션을 만드는 경우에만 플랫폼 대상을 x64로 설정해야 하며, 솔루션은 네이티브 64비트 API를 호출합니다. 플랫폼 대상 설정을 변경 하는 방법에 대 한 자세한 내용은 [방법: 플랫폼을 대상으로 하는 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)을 참조 하세요.
 
  플랫폼 대상을 x64로 설정하는 경우 솔루션이 32비트 버전의 Windows 또는 Office에서는 실행되지 않습니다. x64 플랫폼 대상은 64비트 프로세스에서 실행되는 솔루션이 필요합니다.
 
@@ -109,5 +109,5 @@ ms.locfileid: "69551853"
 |-----------|-----------------|
 |[Office 프로젝트 디버그](../vsto/debugging-office-projects.md)|Office 프로젝트 디버깅과 관련된 문제를 나타냅니다.|
 |[연습: Excel 용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel용 기본 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.|
-|[방법: 사용 하지 않도록 설정 된 VSTO 추가 기능을 다시 사용 하도록 설정 합니다.](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|하드 또는 소프트 비활성화 된 VSTO 추가 기능을 다시 사용 하도록 설정 하는 방법을 설명 합니다.|
+|[방법: 사용 하지 않도록 설정 된 VSTO 추가 기능 다시 활성화](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|하드 또는 소프트 비활성화 된 VSTO 추가 기능을 다시 사용 하도록 설정 하는 방법을 설명 합니다.|
 |[Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)|Office 솔루션을 만드는 방법 및 솔루션에서 어셈블리의 역할 정보에 대한 링크를 제공합니다.|
