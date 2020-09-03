@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297153"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML 구성 요소 다이어그램: 지침
@@ -41,7 +41,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 
   구성 요소 다이어그램을 사용하면 현재 또는 앞으로 사용할 언어나 플랫폼에 관계없이 디자인을 나타낼 수 있습니다.
 
-## <a name="OtherDiagrams"></a>다른 다이어그램과의 관계
+## <a name="relationship-to-other-diagrams"></a><a name="OtherDiagrams"></a> 다른 다이어그램과의 관계
  구성 요소 다이어그램을 다른 다이어그램과 함께 사용할 수 있습니다.
 
 |다른 다이어그램|디자인과 관련하여 논의하고 의견을 교환할 요소|
@@ -51,7 +51,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 |동작 다이어그램|-들어오는 메시지에 대 한 응답으로 구성 요소에서 수행 하는 내부 처리입니다.<br /><br /> 자세한 내용은 [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)을 참조 하세요.|
 |레이어 다이어그램|-구성 요소에 대 한 논리적 아키텍처 계층입니다.<br /><br /> 자세한 내용은 [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)를 참조 하세요.|
 
-## <a name="Basics"></a>구성 요소 다이어그램을 그리는 기본 단계
+## <a name="basic-steps-for-drawing-component-diagrams"></a><a name="Basics"></a> 구성 요소 다이어그램을 그리는 기본 단계
  구성 요소 다이어그램의 요소에 대 한 참조 정보는 [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)를 참조 하세요.
 
  디자인 프로세스에서 구성 요소 다이어그램을 사용 하는 방법에 대 한 자세한 내용은 [응용 프로그램의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)을 참조 하세요.
@@ -72,7 +72,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
      UML **구성 요소 다이어그램** 도구 상자와 함께 새 구성 요소 다이어그램이 표시 됩니다. 이 도구 상자에는 필요한 요소 및 관계가 포함되어 있습니다.
 
 ### <a name="drawing-components"></a>구성 요소 그리기
- ![인터페이스를 사용 하는 구성 요소](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
+ ![인터페이스가 포함된 구성 요소](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
 
  시스템 또는 응용 프로그램의 각 주요 기능 단위에 대해 *구성 요소* (1)를 만듭니다.
 
@@ -146,7 +146,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 
 - **UML 모델 탐색기** 에서 인터페이스를 찾아 구성 요소에서 끌어 옵니다.
 
-     -또는-
+     또는
 
 - 다이어그램에서 인터페이스에 대한 참조를 복사하여 붙여넣습니다.
 
@@ -161,7 +161,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 
     3. 필요한 인터페이스를 만들려면 작업 태그를 클릭 한 다음 **필요한 인터페이스로 변환**을 클릭 합니다.
 
-## <a name="Parts"></a>구성 요소의 내부 파트 표시
+## <a name="showing-the-internal-parts-of-a-component"></a><a name="Parts"></a> 구성 요소의 내부 파트 표시
  ![내부 파트를 보여 주는 구성 요소 다이어그램](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  구성 요소(1)에 파트(3)를 배치하면 구성 요소가 서로 상호 작용하는 더 작은 구성 요소로 어떻게 이루어져 있는지 나타낼 수 있습니다.
@@ -255,7 +255,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 
      이제 내부에 파트를 추가할 수 있습니다.
 
-## <a name="Designing"></a>구성 요소 디자인
+## <a name="designing-the-component"></a><a name="Designing"></a> 구성 요소 디자인
 
 ### <a name="describing-how-the-parts-collaborate"></a>파트의 공동 작업 방식 기술
  부모 구성 요소에 도착하는 메시지에 응답하여 파트가 공동으로 작업하는 방식을 나타내기 위해 시퀀스 다이어그램을 그릴 수 있습니다.
@@ -270,7 +270,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 
 - 상호 작용이 많아서 작업이 너무 적게 분산되면 시스템 성능이 저하되고 이해하기가 어렵습니다.
 
-  ![공동 작업 부분을 보여 주는 시퀀스 다이어그램](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![공동 작업 파트를 보여 주는 시퀀스 다이어그램](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>파트 간 협업을 나타내는 시퀀스 다이어그램을 그리려면
 
@@ -300,7 +300,7 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 ### <a name="describing-the-process-inside-each-part"></a>각 파트 내에 프로세스 기술
  동작 다이어그램을 사용하면 구성 요소가 들어오는 각 메시지를 처리하는 방식을 나타낼 수 있습니다. 자세한 내용은 [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)을 참조 하세요.
 
- ![데이터 버퍼를 사용 하는 동작 다이어그램](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
+ ![데이터 버퍼가 포함된 동작 다이어그램](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
 
  이벤트 적용 동작(1)을 사용하여 들어오는 메시지가 새 스레드를 시작한다는 것을 나타냅니다.
 
@@ -332,5 +332,5 @@ Visual Studio에서 *구성 요소 다이어그램* 을 그려 소프트웨어 �
 
   종속성 화살표의 이름을 사용하여 특정 용도를 나타낼 수 있습니다. 이름을 설정 하려면 화살표를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 하 고 속성 창에서 **이름** 필드를 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Uml 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [Uml 구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) : uml [사용 사례 다이어그램](../modeling/uml-use-case-diagrams-reference.md) [참조:](../modeling/uml-sequence-diagrams-reference.md) Uml 사용 사례 다이어그램 참조: Uml [클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) 참조: [Uml 구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: 참조 [비디오: 구성 요소 다이어그램을 사용 하 여 물리적 구조 디자인](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

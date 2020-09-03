@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 118c29473db09d5ed0a4fa447e27e593a88f98b3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546759"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: 참조 형식에 같음 연산자를 오버로드하지 마세요.
@@ -44,12 +44,12 @@ ms.locfileid: "85546759"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  참조 형식이 기본 제공 값 형식 처럼 동작 하는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 형식의 인스턴스에서 더하기 또는 빼기를 수행 하는 것이 의미가 있는 경우 같음 연산자를 구현 하 고 위반을 무시 하는 것이 좋습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 두 참조를 비교할 때의 기본 동작을 보여 줍니다.
 
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RefTypesNoEqualityOp/cs/FxCop.Design.RefTypesNoEqualityOp.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 응용 프로그램은 일부 참조를 비교 합니다.
 
  [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestRefTypesNoEqualityOp/cs/FxCop.Design.TestRefTypesNoEqualityOp.cs#1)]
@@ -63,5 +63,5 @@ ms.locfileid: "85546759"
 ## <a name="related-rules"></a>관련 규칙
  [CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Object.Equals%2A?displayProperty=fullName>[같음 연산자](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

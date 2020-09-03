@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c92fb2ad45bc0fb09c7e9bd8e87db38c13a99736
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546746"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 색 컴파일러
@@ -50,7 +50,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 </Theme>  
 ```  
   
-|**특성**|**정의**|  
+|**Attribute**|**정의**|  
 |-|-|  
 |Name|하다 테마의 이름입니다.|  
 |GUID|하다 테마의 GUID (GUID 형식과 일치 해야 함)|  
@@ -74,7 +74,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
  </Category>  
 ```  
     
-|**특성**|**정의**|  
+|**Attribute**|**정의**|  
 |-|-|  
 |Name|하다 범주의 이름입니다.|  
 |GUID|하다 범주의 GUID (GUID 형식과 일치 해야 함)|  
@@ -90,7 +90,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
  </Color>  
 ```  
   
-|**특성**|**정의**|  
+|**Attribute**|**정의**|  
 |-|-|  
 |Name|하다 색의 이름입니다.|  
   
@@ -103,9 +103,9 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 <Foreground Type="type" Source="int" />  
 ```  
   
-|**특성**|**정의**|  
+|**Attribute**|**정의**|  
 |-|-|  
-|Type|하다 색의 형식입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 설정 되지 않았습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마십시오.<br /><br /> *CT_SYSCOLOR:* SysColor의 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX의 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마십시오.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마십시오.|  
+|형식|하다 색의 형식입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 설정 되지 않았습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마십시오.<br /><br /> *CT_SYSCOLOR:* SysColor의 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX의 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마십시오.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마십시오.|  
 |원본|하다 16 진수로 표현 된 색의 값입니다.|  
   
  __VSCOLORTYPE 열거형에서 지원 되는 모든 값은 Type 특성의 스키마에서 지원 됩니다. 그러나 CT_RAW와 CT_SYSCOLOR만 사용 하는 것이 좋습니다.  
@@ -133,7 +133,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
   
  **인수**  
   
-|**스위치 이름**|**참고 사항**|**필수 또는 선택**|  
+|**스위치 이름**|**참고**|**필수 또는 선택**|  
 |-|-|-|  
 |명명 되지 않은 (.xml 파일)|이 매개 변수는 첫 번째 명명 되지 않은 매개 변수 이며 변환할 XML 파일의 경로입니다.|필수|  
 |명명 되지 않은 (.pkgdef 파일)|이는 두 번째 명명 되지 않은 매개 변수 이며 생성 된 .pkgdef 파일의 출력 경로입니다.<br /><br /> 기본값: \<XML Filename> . .pkgdef|선택 사항|  
@@ -147,7 +147,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
   
 - VsixColorCompiler D:\xml\colors.xml/noLogo  
   
-## <a name="notes"></a>메모  
+## <a name="notes"></a>참고  
   
 - 이 도구를 사용 하려면 최신 버전의 VC + + 런타임이 설치 되어 있어야 합니다.  
   

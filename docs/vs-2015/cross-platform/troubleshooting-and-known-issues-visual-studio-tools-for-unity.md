@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297660"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
@@ -41,7 +41,7 @@ ms.locfileid: "74297660"
 ### <a name="on-windows-8-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows 8에서 Visual Studio는 Unity 대상 프레임워크 다운로드를  요청합니다.  
  UnityVS를 사용하려면 Windows 8에 기본적으로 설치되지 않는 .net framework 3.5가 필요합니다. 이 문제를 해결하려면 지침에 따라 .net framework 3.5를 다운로드하고 설치하세요.  
   
-## <a name="known-issues"></a>알려진 문제점  
+## <a name="known-issues"></a>알려진 문제  
  Visual Studio Tools for Unity에는 디버거가 C# 컴파일러의 Unity 이전 버전과 상호작용하는 방법에서 발생하는 알려진 문제가 있습니다. 문제를 해결하기 위해 노력 중이지만 해결하기 전까지는 다음과 같은 문제가 발생할 수 있습니다.  
   
 - 디버그할 때 Unity가 충돌되는 경우가 있습니다.  
@@ -51,7 +51,7 @@ ms.locfileid: "74297660"
 - 특히 반복기 또는 switch 문 내에서 경우에 따라 메서드를 한 단계씩 코드 실행하고 메서드의 프로시저에서 나가는 동작이 제대로 작동하지 않습니다.  
   
 ## <a name="reporting-errors"></a>오류 보고  
- 충돌, 고정 또는 기타 오류가 발생하는 경우 오류 보고서를 전송하여 Visual Studio Tools for Unity의 품질을 개선할 수 있도록 도와주시기 바랍니다. Visual Studio Tools for Unity의 문제를 조사하고 해결하는 데 도움이 됩니다. 감사합니다.  
+ 충돌, 고정 또는 기타 오류가 발생하는 경우 오류 보고서를 전송하여 Visual Studio Tools for Unity의 품질을 개선할 수 있도록 도와주시기 바랍니다. Visual Studio Tools for Unity의 문제를 조사하고 해결하는 데 도움이 됩니다. 감사합니다!  
   
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Visual Studio가 고정될 때 오류를 보고하는 방법  
  Visual Studio가 Visual Studio Tools for Unity로 디버그할 때 중지되는 경우가 있다는 보고가 있지만 이 문제를 파악하려면 더 많은 데이터가 필요합니다. 아래의 단계를 따라 이 문제를 조사하는 데 도움을 주실 수 있습니다.  
@@ -64,9 +64,9 @@ ms.locfileid: "74297660"
   
 3. Visual Studio의 중지된 인스턴스에 디버거를 연결합니다. **프로세스에 연결** 대화 상자에서 **사용 가능한 프로세스** 테이블로부터 Visual Studio의 중지된 인스턴스를 선택한 다음 **연결** 단추를 선택합니다.  
   
-4. 디버거를 일시 중지합니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그**, **모두 중단** 을 선택하거나 **Ctrl+Alt+Break**키를 누릅니다.  
+4. 디버거를 일시 중지합니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그**, **모두 중단** 을 선택 하거나 **ctrl + Alt + break**를 누릅니다.  
   
-5. 스레드 덤프를 만듭니다. 명령 창에서 다음 명령을 입력하고 **Enter**키를 누릅니다.  
+5. 스레드 덤프를 만듭니다. 명령 창에서 다음 **명령을 입력 하 고 enter 키를**누릅니다.  
   
    ```powershell  
    Debug.ListCallStack /AllThreads /ShowExternalCode  

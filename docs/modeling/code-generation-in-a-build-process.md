@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546720"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>빌드 프로세스에서 텍스트 변환 호출
@@ -26,7 +26,7 @@ ms.locfileid: "85546720"
 
 사용하는 빌드 엔진에 따라 빌드 작업에서 수행할 수 있는 몇 가지 작업이 다를 수 있습니다. Visual Studio에서 솔루션을 빌드하면 [hostspecific = "true"](../modeling/t4-template-directive.md) 특성이 설정 된 경우 텍스트 템플릿이 VISUAL studio API (EnvDTE)에 액세스할 수 있습니다. 그러나 명령줄에서 솔루션을 빌드하거나 Visual Studio를 통해 서버 빌드를 시작 하는 경우에는 그렇지 않습니다. 이러한 경우에는 MSBuild에서 빌드가 수행되고 다른 T4 호스트가 사용됩니다. 즉, MSBuild를 사용 하 여 텍스트 템플릿을 빌드할 때와 같은 방법으로 프로젝트 파일 이름과 같은 항목에 액세스할 수 없습니다. 그러나 [빌드 매개 변수를 사용 하 여 환경 정보를 텍스트 템플릿 및 지시문 프로세서에 전달할](#parameters)수 있습니다.
 
-## <a name="configure-your-machines"></a><a name="buildserver"></a>컴퓨터 구성
+## <a name="configure-your-machines"></a><a name="buildserver"></a> 컴퓨터 구성
 
 개발 컴퓨터에서 빌드 작업을 사용 하도록 설정 하려면 모델링 SDK for Visual Studio를 설치 합니다.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>빌드 컨텍스트 데이터를 템플릿에 전달 합니다.
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> 빌드 컨텍스트 데이터를 템플릿에 전달 합니다.
 
 프로젝트 파일에서 매개 변수 값을 설정할 수 있습니다. 예를 들어 [빌드](../msbuild/msbuild-properties.md) 속성 및 [환경 변수](../msbuild/how-to-use-environment-variables-in-a-build.md)를 전달할 수 있습니다.
 
@@ -254,7 +254,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue``T4ParameterValues`MSBuild를 사용 하는 경우에만에서 데이터를 가져옵니다. Visual Studio를 사용 하 여 템플릿을 변환 하는 경우 매개 변수에 기본값이 있습니다.
 
-## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>어셈블리 및 include 지시문에서 프로젝트 속성 사용
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> 어셈블리 및 include 지시문에서 프로젝트 속성 사용
 
 **$ (솔루션 디렉터리)** 와 같은 Visual Studio 매크로는 MSBuild에서 작동 하지 않습니다. 대신 적절한 프로젝트 속성을 사용할 수 있습니다.
 
@@ -283,7 +283,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 이러한 지시문은 MSBuild와 Visual Studio 호스트에서 모두 T4parameterValues의 값을 가져옵니다.
 
-## <a name="q--a"></a>질문과 대답
+## <a name="q--a"></a>Q & A
 
 **빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
 
@@ -299,17 +299,17 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 - 런타임 [텍스트 템플릿은](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 ::: moniker range="vs-2017"
 
-- T4 MSbuild 템플릿에 대 한 유용한 지침은`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- T4 MSbuild 템플릿에 대 한 유용한 지침은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- T4 MSbuild 템플릿에 대 한 유용한 지침은`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- T4 MSbuild 템플릿에 대 한 유용한 지침은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
