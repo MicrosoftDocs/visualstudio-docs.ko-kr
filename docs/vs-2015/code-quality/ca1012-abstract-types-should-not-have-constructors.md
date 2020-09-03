@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2c88144e788fb35a3c330aa28b4e9d8b91ff8003
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545459"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: 추상 형식에는 생성자를 사용하면 안 됩니다.
@@ -43,13 +43,13 @@ ms.locfileid: "85545459"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다. 추상 형식에 public 생성자가 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에는이 규칙을 위반 하는 추상 형식이 포함 되어 있습니다.
 
  [!code-csharp[FxCop.Design.AbstractTypeBad#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeBad/cs/FxCop.Design.AbstractTypeBad.cs#1)]
  [!code-vb[FxCop.Design.AbstractTypeBad#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeBad/vb/FxCop.Design.AbstractTypeBad.vb#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 생성자의 액세스 가능성을에서로 변경 하 여 이전 위반을 수정 합니다 `public` `protected` .
 
  [!code-csharp[FxCop.Design.AbstractTypeGood#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AbstractTypeGood/cs/FxCop.Design.AbstractTypeGood.cs#1)]

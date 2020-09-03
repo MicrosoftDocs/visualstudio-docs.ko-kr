@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815333"
 ---
 # <a name="unexpected-quantifier-javascript"></a>예기치 않은 수량자입니다.(JavaScript)
@@ -47,6 +47,6 @@ ms.locfileid: "85815333"
   
 - 검색 패턴 요소에 올바른 반복 요소만 포함 되어 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

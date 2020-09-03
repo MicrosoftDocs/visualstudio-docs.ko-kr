@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5c0e1ee1cdb2c135d3a76316d56e279de963b156
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814579"
 ---
 # <a name="expected-identifier-string-or-number"></a>식별자, 문자열 또는 숫자가 필요합니다.
@@ -32,5 +32,5 @@ var point = {x:1.2, y:-3.4};
   
 - 적절 한 리터럴 구문을 사용 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [쉼표 연산자 (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

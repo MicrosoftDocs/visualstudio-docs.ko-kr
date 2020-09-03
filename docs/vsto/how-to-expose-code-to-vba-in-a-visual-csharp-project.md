@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544835"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>방법: Visual c # 프로젝트에서 VBA로 코드 노출
@@ -101,7 +101,7 @@ ms.locfileid: "85544835"
 
 12. 프로젝트를 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814722"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>워크플로 디자이너를 사용하여 앱 개발
@@ -43,6 +43,6 @@ Visual Studio에서 워크플로 프로젝트 템플릿을 사용 하려면 먼�
 
    Visual Studio에서 **Windows Workflow Foundation** 구성 요소를 설치 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

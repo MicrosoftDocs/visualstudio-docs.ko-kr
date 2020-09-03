@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814618"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>방법: 워크플로 프로젝트에 새 항목 추가
@@ -43,6 +43,6 @@ ms.locfileid: "85814618"
 
 1. **추가** 를 선택 하 여 프로젝트에 항목을 추가 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [워크플로 프로젝트 만들기](../workflow-designer/creating-a-workflow-project.md)

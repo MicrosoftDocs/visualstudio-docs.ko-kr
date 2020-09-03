@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545563"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Windows 스토어 및 Windows 유니버설 앱 디버그
@@ -38,5 +38,5 @@ Visual Studio 디버거는 Windows 스토어 앱 디버깅에 대 한 완전 한
 |[Visual Studio에서 앱 디버그](../debugger/debug-store-apps-in-visual-studio.md)|Visual Studio 디버거를 사용하여 스토어 앱의 버그를 찾아 수정합니다.|  
 |[Windows 스토어 앱용 콘텐츠 프리페치](../debugger/prefetch-content-for-windows-store-apps.md)|Windows 스토어 앱에 대한 ContentPrefetcher 클래스의 효과를 분석합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [정적 코드 분석을 사용하여 코드 품질 분석](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

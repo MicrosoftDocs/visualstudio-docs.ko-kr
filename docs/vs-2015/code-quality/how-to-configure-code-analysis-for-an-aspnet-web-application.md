@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657459"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>방법: ASP.NET 웹 애플리케이션에 대한 코드 분석 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 및 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]에서 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램에 적용할 코드 분석 *규칙 집합* 목록에서 선택할 수 있습니다. 기본 규칙 집합은 Microsoft Mininimum 권장 규칙입니다. 다른 규칙 집합을 선택 하 여 웹 사이트에 적용할 수 있습니다.
+[!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]및에서는 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 코드 분석 *규칙 집합* 목록에서 선택 하 여 웹 응용 프로그램에 적용할 수 있습니다 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . 기본 규칙 집합은 Microsoft Mininimum 권장 규칙입니다. 다른 규칙 집합을 선택 하 여 웹 사이트에 적용할 수 있습니다.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>ASP.NET 페이지 프레임워크 프로젝트에 대한 규칙 집합을 구성하려면
 
@@ -43,6 +43,6 @@ ms.locfileid: "72657459"
 
     - 사용할 규칙 집합을 선택 합니다.
 
-    - **@No__t_1Browse >** 를 선택 하 여 목록에 없는 기존 사용자 지정 규칙 집합을 지정 합니다.
+    - **\<Browse>** 목록에 없는 기존 사용자 지정 규칙 집합을 지정 하려면 선택 합니다.
 
     - 사용할 규칙 집합을 선택합니다. 자세한 내용은 [사용자 지정 규칙 집합 만들기](../code-quality/creating-custom-code-analysis-rule-sets.md)를 참조 하세요.

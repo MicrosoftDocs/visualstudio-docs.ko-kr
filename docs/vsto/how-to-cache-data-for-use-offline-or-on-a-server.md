@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546187"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>방법: 오프 라인 이나 서버에서 사용할 데이터 캐시

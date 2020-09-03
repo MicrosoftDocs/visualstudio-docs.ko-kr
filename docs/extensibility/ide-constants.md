@@ -1,5 +1,5 @@
 ---
-title: IDE 상수 | 마이크로 소프트 문서
+title: IDE 상수 | Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,80 +17,80 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bc2eddac1cc7d7e616deb197752adf41a4d68d15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710498"
 ---
 # <a name="ide-constants"></a>IDE 상수
 
-클래스는 <xref:Microsoft.VisualStudio.VSConstants> 통합 개발 환경(IDE)에 특정하고 이전에 헤더 파일에서만 정의된 상수를 제공합니다.
+<xref:Microsoft.VisualStudio.VSConstants>클래스는 IDE (통합 개발 환경)와 관련 된 상수를 제공 하며, 이전에는 헤더 파일에만 정의 되었습니다.
 
-## <a name="logical-and-physical-views"></a>논리적 및 물리적 보기
+## <a name="logical-and-physical-views"></a>논리적 및 물리적 뷰
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` 처리기는 가능한 코드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 뷰에서 이 값을 메서드에 전달하여 대화 상자 **열기를** 얻어야 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` 처리기는 이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달하여 대화 상자 **열기를** 얻을 수 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> 있으며, 이 경우 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>동일한 뷰에 매핑되는 디버깅 뷰가 채워집니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` 처리기는 이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달하여 **[With 열기]** 대화 상자를 얻을 수 있으며, 이 경우 양식 디자이너 보기 **보기로 이동합니다.**|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` 처리기는 이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달하여 **With 열기** 대화 상자를 가져옵니다.이 경우 편집기 팩터의 기본/기본 보기입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` 처리기는 이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달하여 문서 또는 데이터 텍스트 편집기 보기에 대해 **With 열기** 대화 상자를 가져옵니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith` 처리기는 이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달하여 사용할 사용자 정의 보기를 선택하라는 메시지를 표시합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 메서드에 전달 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 하 여 **연결 프로그램** 대화 상자를 가져와야 합니다 .이 경우에는 가능한 코드 뷰를 사용 해야 합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달 하 여 **연결 프로그램** 대화 상자를 가져옵니다 .이 경우는 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> 와 동일한 뷰로 매핑되는 가능한 디버깅 뷰로 채워집니다 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 메서드에 전달 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> **연결 프로그램** 대화 상자를 가져옵니다 .이 경우 폼 디자이너 뷰를 **볼** 수 있습니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달 하 여 **연결 프로그램** 대화 상자를 가져옵니다 .이 경우 편집기 팩터리의 기본/기본 뷰입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달 하 여 **연결 프로그램** 대화 상자를 가져옵니다 .이 대화 상자에는 문서 또는 데이터 텍스트 편집기 뷰가 있습니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 메서드에 전달 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 사용자가 사용할 사용자 정의 뷰를 선택 하 라는 메시지를 표시 합니다.|
 
-## <a name="editor-factory-flags"></a>에디터 팩토리 플래그
+## <a name="editor-factory-flags"></a>편집기 팩터리 플래그
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|[Cef. 복제파일](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 메서드의 첫 번째 매개 변수로 비트씩 결합된 더 이상 사용되지 않는 플래그입니다.|
-|[Cef. 오픈아스뉴](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>을 의 첫 번째 매개 변수로 비트로 결합하면 편집기 팩터리는 필요한 수정을 수행해야 합니다.|
-|[Cef. Openfile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 메서드의 첫 번째 매개 변수로 비트씩 결합된 이 플래그는 [CEF를 상호 배타적입니다. 복제파일](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
-|[Cef. 침묵](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 메서드의 첫 번째 매개 변수로 비트씩 결합하면 편집기 팩터리는 사용자 인터페이스(UI)를 표시하지 않고 편집기 팩터링을 만들어야 한다는 것을 나타냅니다.|
+|[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|메서드의 첫 번째 매개 변수로 비트를 결합 한 사용 되지 않는 플래그 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 입니다.|
+|[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|비트를, 메서드의 첫 번째 매개 변수로 결합 하면 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 편집기 팩터리가 필요한 수정을 수행 해야 함을 나타냅니다.|
+|[CEF. System.windows.forms.openfiledialog.openfile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|비트를 메서드의 첫 번째 매개 변수로 결합 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 한이 플래그는 Cef와 함께 사용할 수 없습니다 [. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
+|[CEF. 무음](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|메서드의 첫 번째 매개 변수로 비트를 결합 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 한 것은 편집기 팩터리가 UI (사용자 인터페이스)를 표시 하지 않고 편집기를 만들어야 함을 나타냅니다.|
 
-## <a name="visual-studio-errors"></a>비주얼 스튜디오 오류
+## <a name="visual-studio-errors"></a>Visual Studio 오류
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|문제의 개체가 이미 사용 중일 때 비동기 동작에 대한 인터페이스에서 반환되는 상수|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|"호환되지 않는 문서 데이터"에 대한 Visual Studio와 관련된 오류 HRESULT입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Visual Studio에 만적용되는 오류 HRESULT이며 "패키지가 로드되지 않음"을 나타냅니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Visual Studio에 만연하고 "프로젝트가 이미 존재"를 나타내는 오류 HRESULT입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Visual Studio에 만적용되는 오류 HRESULT이며 "프로젝트 구성실패"를 나타냅니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Visual Studio에 만적용되는 오류 HRESULT이며 "프로젝트가 로드되지 않음"을 나타냅니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Visual Studio에 만연하고 "솔루션이 이미 열려 있는 솔루션"을 나타내는 오류 HRESULT입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Visual Studio에 만연하고 "솔루션이 열리지 않음"을 나타내는 오류 HRESULT입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> 인터페이스에서 배열을 지정하기 위한 매개 변수가 있는 빌드 인터페이스에서 반환되지만 구현은 메서드를 모든 출력에만 적용할 수 있습니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|문서에 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 편집기에서 열 수 없는 형식이 있는 경우 메서드는 이 값을 반환합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|사용자가 Visual Studio 마법사에서 뒤로 단추를 눌렸음을 나타내는 HRESULT 값입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|해당 개체가 이미 사용 중인 경우의 비동기 동작에 대 한 인터페이스에서 반환 되는 상수입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|"호환 되지 않는 문서 데이터"에 대 한 Visual Studio와 관련 된 오류 HRESULT입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Visual Studio와 관련 된 오류 HRESULT 이며 "패키지가 로드 되지 않았습니다."를 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Visual Studio와 관련 된 오류 HRESULT 이며 "프로젝트가 이미 있습니다."를 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Visual Studio와 관련 된 오류 HRESULT 이며 "프로젝트 구성에 실패 했습니다."를 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Visual Studio와 관련 된 오류 HRESULT 이며, "프로젝트가 로드 되지 않았습니다."를 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Visual Studio와 관련 된 오류 HRESULT 이며 "솔루션이 이미 열려 있습니다."를 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Visual Studio와 관련 된 오류 HRESULT 이며 "솔루션이 열려 있지 않습니다."를 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|인터페이스에서 배열을 지정 하는 매개 변수를 포함 하는 빌드 인터페이스에서 반환 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> 되지만 구현에서는 모든 출력에만 메서드를 적용할 수 있습니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>문서에 편집기에서 열 수 없는 형식이 있는 경우 메서드는이 값을 반환 합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|사용자가 Visual Studio 마법사의 뒤로 단추를 누르면 표시 되는 HRESULT 값입니다.|
 
-## <a name="visual-studio-constants"></a>비주얼 스튜디오 상수
+## <a name="visual-studio-constants"></a>Visual Studio 상수
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Visual Studio에 만적용되는 오류 HRESULT이며 "프로젝트 전달"을 나타냅니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|"도구 상자 마커"에 대한 Visual Studio에만 적용되는 상수입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|양식의 시작을 나타내는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 메서드를 통해 알림 메시지를 브로드캐스트하기 위한 Visual Studio에만 적용되는 상수입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|양식의 끝을 나타내는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 메서드를 통해 알림 메시지를 브로드캐스트하기 위한 Visual Studio에만 적용되는 상수입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|명령 모음 메트릭이 변경되었음을 나타내는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 메서드를 통해 알림 메시지를 브로드캐스트하기 위한 Visual Studio에만 적용되는 상수입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|쿠키가 설정되지 되었음을 나타내는 Visual Studio에만 적용되는 상수입니다.|
-|[VSITEMID. 없음](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|프로젝트 항목의 부재를 나타내는 Visual Studio 항목 식별자입니다. 이 값은 현재 선택 영역이 없을 때 사용됩니다.|
-|[VSITEMID. 루트](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|프로젝트 계층구조의 루트를 나타내고 단일 항목이 아닌 전체 계층을 식별하는 데 사용되는 Visual Studio 항목 식별자입니다.|
-|[VSITEMID. 선택](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|계층의 루트를 포함할 수 있는 현재 선택된 항목 또는 항목을 나타내는 Visual Studio 항목 식별자입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Visual Studio와 관련 된 오류 HRESULT 이며 "프로젝트 전달 됨"을 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Visual Studio와 관련 된 "도구 상자 마커"에 해당 하는 상수입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|모달 시작을 나타내는 메서드를 통해 알림 메시지를 브로드캐스팅하는 데 사용할 수 있는 Visual Studio 관련 상수입니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> .|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>모달 형식의 끝을 나타내는 메서드를 통해 알림 메시지를 브로드캐스팅하는 데 사용할 수 있는 Visual Studio 관련 상수입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>명령 모음 메트릭이 변경 되었음을 나타내는 메서드를 통해 알림 메시지를 브로드캐스팅 하기 위한 Visual Studio 관련 상수입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|쿠키가 설정 되지 않았음을 나타내는 Visual Studio 관련 상수입니다.|
+|[VSITEMID. 인지](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|프로젝트 항목이 없다는 것을 나타내는 Visual Studio 항목 식별자입니다. 이 값은 현재 선택 영역이 없는 경우에 사용 됩니다.|
+|[VSITEMID. 루트가](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|단일 항목이 아닌 전체 계층 구조를 식별 하는 데 사용 되는 프로젝트 계층 구조의 루트를 나타내는 Visual Studio 항목 식별자입니다.|
+|[VSITEMID. 선택](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|계층의 루트를 포함할 수 있는 현재 선택 된 항목을 나타내는 Visual Studio 항목 식별자입니다.|
 
-## <a name="ivsselectionevents"></a>아이브셀렉션이벤트
- 예를 들어 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 호출에서 방금 선택한 IDE의 구성 요소에 대해 설명합니다.
+## <a name="ivsselectionevents"></a>IVsSelectionEvents
+ 호출에서 선택한 IDE의 구성 요소를 설명 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 합니다 (예:).
 
 |상수|값|
 |--------------|-----------|
-|[선택요소.문서프레임](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
-|[선택요소.속성 브라우저SID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
-|[선택요소.스타트업 프로젝트](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
-|[선택요소.관리자](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
-|[선택요소.사용자 컨텍스트](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
-|[선택요소.창프레임](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
+|[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
+|[SelectionElement PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
+|[SelectionElement. StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
+|[SelectionElement. 관리자 관리자](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
+|[SelectionElement. UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
+|[SelectionElement. WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
 
-## <a name="vsselelemid"></a>VS셀레미드
- 새 선택 상태를 나타내는 데 사용되는 상수입니다.
+## <a name="vsselelemid"></a>VSSELELEMID
+ 새 선택 상태를 나타내는 데 사용 되는 상수입니다.
 
 |상수|값|
 |--------------|-----------|
@@ -116,6 +116,6 @@ ms.locfileid: "80710498"
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [프로젝트 시스템 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

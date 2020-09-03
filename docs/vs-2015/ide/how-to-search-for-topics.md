@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5830bb71f66b27acf2ba63133a130c2ea24a9c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670761"
 ---
 # <a name="how-to-search-for-topics"></a>방법: 항목 검색
@@ -42,5 +42,5 @@ ms.locfileid: "72670761"
 
 4. 항목을 보려면 결과 목록에서 해당 제목을 선택합니다.
 
-## <a name="see-also"></a>관련 항목:
- [전체 텍스트 검색 팁](../ide/full-text-search-tips.md) 검색 식의 [논리 연산자](../ide/logical-operators-in-search-expressions.md) 는 검색 [식의 고급 검색 연산자](../ide/advanced-search-operators-in-search-expressions.md) [How 다음으로 이동 합니다. 검색 결과 사용자 지정](../ide/how-to-customize-search-results.md)
+## <a name="see-also"></a>관련 항목
+ [전체 텍스트 검색 팁](../ide/full-text-search-tips.md) 검색 식 [의 논리 연산자](../ide/logical-operators-in-search-expressions.md) 검색 [식의 고급 검색 연산자](../ide/advanced-search-operators-in-search-expressions.md) [방법: 검색 결과 사용자 지정](../ide/how-to-customize-search-results.md)

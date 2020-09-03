@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 97bd41e51c8d6b5415ffb91c5696c7055f46cf7c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545407"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: AssemblyVersionAttribute로 어셈블리 표시
@@ -54,12 +54,12 @@ ms.locfileid: "85545407"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  타사 또는 프로덕션 환경에서 사용 하는 어셈블리에 대해서는이 규칙의 경고를 표시 하지 마십시오.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 특성이 적용 된 어셈블리를 보여 줍니다 <xref:System.Reflection.AssemblyVersionAttribute> .
 
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cpp/FxCop.Design.AssembliesVersion.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesVersion#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cs/FxCop.Design.AssembliesVersion.cs#1)]
  [!code-vb[FxCop.Design.AssembliesVersion#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/vb/FxCop.Design.AssembliesVersion.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [어셈블리 버전 관리](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [방법: 게시자 정책 만들기](https://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)

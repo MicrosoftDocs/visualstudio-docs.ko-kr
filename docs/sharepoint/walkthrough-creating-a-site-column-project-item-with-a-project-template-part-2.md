@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016398"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
@@ -57,7 +58,7 @@ ms.locfileid: "86016398"
 ## <a name="understand-the-wizard-components"></a>마법사 구성 요소 이해
  이 연습에서 설명 하는 마법사에는 몇 가지 구성 요소가 포함 되어 있습니다. 다음 표에서는 이러한 구성 요소에 대해 설명 합니다.
 
-|구성 요소|Description|
+|구성 요소|설명|
 |---------------|-----------------|
 |마법사 구현|인터페이스를 구현 하는 라는 클래스입니다 `SiteColumnProjectWizard` <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> . 이 인터페이스는 마법사가 시작 되 고 완료 될 때 그리고 마법사가 실행 되는 동안 특정 시간에 Visual Studio에서 호출 하는 메서드를 정의 합니다.|
 |마법사 UI|이는 이라는 WPF 기반 창입니다 `WizardWindow` . 이 창에는 및 라는 두 개의 사용자 컨트롤이 포함 됩니다 `Page1` `Page2` . 이러한 사용자 정의 컨트롤은 마법사의 두 페이지를 나타냅니다.<br /><br /> 이 연습에서 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 마법사 구현의 메서드는 마법사 UI를 표시 합니다.|
@@ -165,7 +166,7 @@ ms.locfileid: "86016398"
 
 1. **솔루션 탐색기**에서 **SharePointCommands** 프로젝트 노드를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트**, **기존 항목 추가**를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트**,  **기존 항목 추가**를 선택 합니다.
 
 3. **기존 항목 추가** 대화 상자에서 ProjectTemplateWizard 프로젝트의 코드 파일이 포함 된 폴더를 찾은 다음 **CommandIds** 코드 파일을 선택 합니다.
 
@@ -537,7 +538,7 @@ ms.locfileid: "86016398"
 
      확장을 배포 하는 방법에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [Visual Studio 확장](../extensibility/shipping-visual-studio-extensions.md)제공을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint 프로젝트 항목에 대한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | 마이크로 소프트 문서
+title: PROVIDER_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713814"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
-프로그램 공급자로부터 가져올 원하는 속성을 지정합니다.
+프로그램 공급자에서 가져올 desired 속성을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PROVIDER_FLAGS {
@@ -54,28 +54,28 @@ public enum enum_PROVIDER_FLAGS {
 
 ## <a name="fields"></a>필드
  `PFLAG_NONE`\
- 플래그가 지정되지 않았습니다.
+ 플래그가 지정 되지 않았습니다.
 
  `PFLAG_REMOTE_PORT`\
- 호출자는 다른 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]컴퓨터에서 프로그램 목록을 원합니다.
+ 호출자가와 다른 컴퓨터의 프로그램 목록을 원합니다 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_DEBUGGEE`\
- 이 프로세스는 현재 이 인스턴스에서 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]디버깅중입니다.
+ 현재이 인스턴스에서 프로세스를 디버깅 하는 중입니다 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]디버깅중인 프로그램에 연결되지만 실행되지 않았습니다.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 는 디버깅 중인 프로그램에 연결 되었지만 실행 되지 않았습니다.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]이벤트를 감시하고 있습니다.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 는 이벤트를 감시 합니다.
 
  `PFLAG_GET_PROGRAM_NODES`\
- 호출자는 `ProgramNodes` [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조의 필드를 원합니다.
+ 호출자는 `ProgramNodes` [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조체의 필드를 원합니다.
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- 호출자는 `fIsTheDebuggerPresent` `PROVIDER_PROCESS_DATA` 구조의 필드를 원합니다.
+ 호출자는 `fIsTheDebuggerPresent` 구조체의 필드를 원합니다 `PROVIDER_PROCESS_DATA` .
 
 ## <a name="remarks"></a>설명
- 이러한 플래그는 다음 메서드로 전달됩니다.
+ 이러한 플래그는 다음 메서드에 전달 됩니다.
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
@@ -83,14 +83,14 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  이러한 값은 조금씩 `OR`결합할 수 있습니다.
+  이러한 값은 비트와 함께 사용할 수 있습니다 `OR` .
 
 ## <a name="requirements"></a>요구 사항
- 헤더: msdbg.h
+ 헤더: msdbg .h
 
- 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+ 네임 스페이스: VisualStudio
 
- 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

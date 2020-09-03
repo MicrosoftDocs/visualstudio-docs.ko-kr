@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545264"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke 선언은 이식 가능해야 합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "85545264"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 경고는 표시 하지 않아야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 방법을 보여 줍니다.
 
 ```csharp
@@ -67,7 +67,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
     UINT nIconIndex);
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  위반 문제를 해결 하려면 선언을 다음과 같이 변경 합니다.
 
 ```csharp
@@ -78,5 +78,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [이식성 경고](../code-quality/portability-warnings.md)

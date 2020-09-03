@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546213"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>방법: 응용 프로그램에 사용자 지정 작업창 추가
@@ -57,7 +57,7 @@ ms.locfileid: "85546213"
     > [!NOTE]
     > 이 코드는 애플리케이션의 활성 창과 사용자 지정 작업창을 연결합니다. 일부 애플리케이션의 경우 작업창이 애플리케이션의 다른 문서나 항목과 함께 표시되도록 이 코드를 수정하는 것이 좋습니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

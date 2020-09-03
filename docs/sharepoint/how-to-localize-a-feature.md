@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016146"
 ---
 # <a name="how-to-localize-a-feature"></a>방법: 기능 지역화
@@ -56,7 +57,7 @@ ms.locfileid: "86016146"
 
      지역화 된 기능 제목 및 설명이 응용 프로그램에 표시 됩니다. 지역화 된 리소스를 표시 하려면 SharePoint 서버에 리소스 파일의 문화권과 일치 하는 언어 팩이 설치 되어 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 지역화](../sharepoint/localizing-sharepoint-solutions.md)
 - [방법: 리소스 파일 추가](../sharepoint/how-to-add-a-resource-file.md)
 - [방법: ASPX 태그 지역화](../sharepoint/how-to-localize-aspx-markup.md)

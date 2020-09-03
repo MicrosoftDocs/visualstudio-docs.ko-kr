@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542989"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio에 대한 유용한 정보
@@ -49,7 +49,7 @@ ms.locfileid: "85542989"
 |열린 파일 목록 표시|Ctrl+Alt+아래쪽 화살표|
 |모든 부동 창 표시|Ctrl+Shift+M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>창 바로 가기
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> 창 바로 가기
 
 |명령|바로 가기|
 |-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "85542989"
 |새 인스턴스 시작|Win+Shift+n|
 |창 간 전환|Win+n|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Visual Studio 검색
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Visual Studio 검색
 
 |명령|바로 가기|
 |-|-|
@@ -69,7 +69,7 @@ ms.locfileid: "85542989"
 |빠른 실행 범위 결과|-   @opt 옵션<br />-   @cmd 명령<br />-   @mru 가장 최근에 사용됨<br />-   @doc 문서 열기|
 |도구 옵션에서 검색|Ctrl+E|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>편집기 찾기
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> 편집기 찾기
 
 |명령|바로 가기|
 |-|-|
@@ -84,7 +84,7 @@ ms.locfileid: "85542989"
 |파일에서 찾기|Ctrl+Shift+F|
 |파일에서 바꾸기|Ctrl+Shift+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>코드 편집기
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> 코드 편집기
 
 |명령|바로 가기|
 |-|-|
@@ -109,7 +109,7 @@ ms.locfileid: "85542989"
 |여러 결과 피킹 간에 이동|F8 및 Shift+F8|
 |코드 편집기 창 및 정의 피킹(Peeking) 창 간에 전환|Shift+Esc|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>모음만
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> 모음만
 
 |명령|바로 가기|
 |-|-|
@@ -137,11 +137,11 @@ ms.locfileid: "85542989"
 |직접 실행 창 버퍼 지우기|>cls|
 |직접 실행 창 인쇄 값|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>응용 프로그램 수명 주기 관리
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> 응용 프로그램 수명 주기 관리
 
 [바로 가기 키: Visual Studio Online, TFS 웹 포털 및 팀 탐색기](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)
 - [Visual Studio 팁과 요령 블로그](https://blogs.msdn.microsoft.com/zainnab/)

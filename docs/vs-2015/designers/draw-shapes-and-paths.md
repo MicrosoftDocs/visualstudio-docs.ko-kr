@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542209"
 ---
 # <a name="draw-shapes-and-paths"></a>도형 및 패스 그리기
@@ -37,7 +37,7 @@ XAML 디자이너에서 *도형* 은 일반적인 도형이 맞습니다. (예: 
 
 - [클리핑 패스 만들기](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>도형 그리기
+## <a name="draw-a-shape"></a><a name="Shape"></a> 도형 그리기
  도형은 **자산** 패널에 있습니다.
 
  ![자산 패널의 셰이프 범주](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -46,7 +46,7 @@ XAML 디자이너에서 *도형* 은 일반적인 도형이 맞습니다. (예: 
 
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")
 
-## <a name="draw-a-path"></a><a name="Path"></a>패스 그리기
+## <a name="draw-a-path"></a><a name="Path"></a> 패스 그리기
  패스는 일련의 연결된 선 및 곡선입니다. 패스를 사용하여 **자산** 패널에서 사용할 수 없는, 흥미로운 도형을 만들 수 있습니다.
 
  선, 펜 또는 연필을 사용하여 패스를 그릴 수 있습니다. 이러한 도구는 **도구** 패널에 있습니다.
@@ -96,12 +96,12 @@ XAML 디자이너에서 *도형* 은 일반적인 도형이 맞습니다. (예: 
 
  **선택** 도구  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 를 사용하여 패스를 선택합니다. **펜** 도구를 사용 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 하 여 패스에서 점을 추가할 위치를 클릭 합니다.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>도형을 패스로 변환
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> 도형을 패스로 변환
  패스를 수정하는 방법과 같은 방법으로 도형을 수정하려면 도형을 패스로 변환합니다.
 
  **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [패스 사용: 도형을 패스로 변환](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-## <a name="combine-paths"></a><a name="Combine"></a>패스 결합
+## <a name="combine-paths"></a><a name="Combine"></a> 패스 결합
  패스 및 도형을 하나의 패스로 결합할 수 있습니다.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
@@ -114,7 +114,7 @@ XAML 디자이너에서 *도형* 은 일반적인 도형이 맞습니다. (예: 
 
  **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [패스 사용: 패스 결합](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>복합형 패스 만들기
+## <a name="create-a-compound-path"></a><a name="Compound"></a> 복합형 패스 만들기
  복합형 패스를 만들 때 패스의 교차되는 부분은 결과에서 제외되며, 결과 패스는 맨 아래 패스의 시각적 속성을 사용합니다.
 
  복합형 패스를 만든 후 언제든지 분리할 수 있습니다.
@@ -123,12 +123,12 @@ XAML 디자이너에서 *도형* 은 일반적인 도형이 맞습니다. (예: 
 
  **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [패스 사용: 복합형 패스 만들기](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>클리핑 패스 만들기
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> 클리핑 패스 만들기
  클리핑 패스는 다른 개체에 적용되는 패스나 도형이며, 개체에서 클리핑 패스를 벗어나는, 마스킹된 개체 부분을 숨깁니다.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")
 
  **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [패스 사용: 클리핑 패스 만들기](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Blend for Visual Studio를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

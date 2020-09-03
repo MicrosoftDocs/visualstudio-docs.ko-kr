@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c6dc131a2bb5f0c54943213fbb42561a0c72d95c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545472"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: CLSCompliantAttribute로 어셈블리를 표시하세요.
@@ -46,12 +46,12 @@ ms.locfileid: "85545472"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다. 어셈블리를 규격으로 설정 하지 않으려는 경우 특성을 적용 하 고 해당 값을로 설정 `false` 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 <xref:System.CLSCompliantAttribute?displayProperty=fullName> CLS 규격을 선언 하는 특성이 적용 된 어셈블리를 보여 줍니다.
 
  [!code-cpp[FxCop.Design.AssembliesCls#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCls/cpp/FxCop.Design.AssembliesCls.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesCls#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCls/cs/FxCop.Design.AssembliesCls.cs#1)]
  [!code-vb[FxCop.Design.AssembliesCls#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCls/vb/FxCop.Design.AssembliesCls.vb#1)]
 
-## <a name="see-also"></a>참고 항목
- <xref:System.CLSCompliantAttribute?displayProperty=fullName>[언어 독립성 및 언어 독립적 구성 요소](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+## <a name="see-also"></a>관련 항목
+ <xref:System.CLSCompliantAttribute?displayProperty=fullName> [언어 독립성 및 언어 독립적 구성 요소](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

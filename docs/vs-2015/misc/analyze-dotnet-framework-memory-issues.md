@@ -11,10 +11,10 @@ caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89b3f04a3e0e1dcd0cc29e57e09b1c71fbc2279
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545550"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework 메모리 문제 분석
@@ -37,7 +37,7 @@ ms.locfileid: "85545550"
   
  [메모리 사용 분석](#BKMK_Analyze_memory_use)  
   
-## <a name="memory-use-in-net-framework-apps"></a><a name="BKMK_Memory_use_in__NET_Framework_apps"></a>.NET Framework 앱에서 메모리 사용  
+## <a name="memory-use-in-net-framework-apps"></a><a name="BKMK_Memory_use_in__NET_Framework_apps"></a> .NET Framework 앱에서 메모리 사용  
  .NET Framework는 가비지 수집 런타임이므로 대부분의 앱에서 메모리 사용은 문제가 되지 않습니다. 그러나 오래 실행되는 애플리케이션(예: 웹 서비스 및 애플리케이션)과 메모리의 양이 제한된 디바이스에서 메모리에 개체가 누적되면 앱이 실행되는 디바이스와 앱의 성능에 영향을 미칠 수 있습니다. 가비지 수집기가 너무 자주 실행되거나 운영 체제에서 강제로 RAM과 디스크 간에 메모리를 이동하는 경우 과도한 메모리 사용은 애플리케이션과 컴퓨터에 리소스 부족을 일으킬 수 있습니다. 최악의 경우 앱에서 "메모리 부족" 예외가 발생할 수 있습니다.  
   
  .NET *관리 되는 힙은* 앱에서 만든 참조 개체가 저장 되는 가상 메모리 영역입니다. 개체의 수명은 GC(가비지 수집기)가 관리합니다. 가비지 수집기에서는 참조를 사용하여 메모리 블록을 차지하는 개체를 추적합니다. 개체를 만들어 변수에 할당하면 참조가 생성됩니다. 단일 개체에는 참조가 여러 개 있을 수 있습니다. 예를 들어 개체를 클래스, 컬렉션 또는 기타 데이터 구조에 추가하거나 개체를 두 번째 변수에 할당하여 개체에 대한 추가 참조를 만들 수 있습니다. 참조를 만드는 덜 확실한 방법은 개체 하나가 다른 개체의 이벤트에 처리기를 추가하도록 하는 것입니다. 이 경우 처리기가 명시적으로 제거되거나 두 번째 개체가 제거될 때까지 두 번째 개체에는 첫 번째 개체에 대한 참조가 들어 있습니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "85545550"
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="identify-a-memory-issue-in-an-app"></a><a name="BKMK_Identify_a_memory_issue_in_an_app"></a>앱의 메모리 문제 식별  
+## <a name="identify-a-memory-issue-in-an-app"></a><a name="BKMK_Identify_a_memory_issue_in_an_app"></a> 앱의 메모리 문제 식별  
  메모리 문제의 가장 눈에 띄는 증상은 앱의 성능으로 특히 시간에 따라 성능이 저하되는 경우입니다. 앱 실행 중 다른 앱의 성능 저하 역시 메모리 문제를 나타낼 수 있습니다. 메모리 문제가 의심 되는 경우 작업 관리자 또는 [Windows 성능 모니터](https://technet.microsoft.com/library/cc749249.aspx) 와 같은 도구를 사용 하 여 추가로 조사 하십시오. 예를 들어 메모리 누수의 가능한 원인으로 설명할 수 없는 메모리의 총 크기 증가를 찾습니다.  
   
  ![리소스 모니터의 지속적인 메모리 증가](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,7 +55,7 @@ ms.locfileid: "85545550"
   
  ![리소스 관리자의 메모리 스파이크](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-## <a name="collect-memory-snapshots"></a><a name="BKMK_Collect_memory_snapshots"></a>메모리 스냅숏 수집  
+## <a name="collect-memory-snapshots"></a><a name="BKMK_Collect_memory_snapshots"></a> 메모리 스냅숏 수집  
  메모리 분석 도구는 힙 정보를 포함 하는 *덤프 파일* 의 정보를 분석 합니다. Visual Studio에서 덤프 파일을 만들거나 [Windows Sysinternals](https://technet.microsoft.com/sysinternals)의 [procdump](https://technet.microsoft.com/sysinternals/dd996900.aspx) 와 같은 도구를 사용할 수 있습니다. Visual Studio Debugger 팀 블로그에서 [덤프 란 무엇 이며, 어떤 방법으로 만드시겠습니까?](https://blogs.msdn.microsoft.com/debugger/2009/12/30/what-is-a-dump-and-how-do-i-create-one/) 를 참조 하세요.  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ ms.locfileid: "85545550"
   
    ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="analyze-memory-use"></a><a name="BKMK_Analyze_memory_use"></a>메모리 사용 분석  
+## <a name="analyze-memory-use"></a><a name="BKMK_Analyze_memory_use"></a> 메모리 사용 분석  
  [개체 목록을 필터링](#BKMK_Filter_the_list_of_objects) **하&#124;** [단일 스냅숏에서의 메모리 데이터를 분석 하](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [두 메모리 스냅숏을 비교](#BKMK_Compare_two_memory_snapshots) 합니다.  
   
  메모리 사용 문제에 대한 덤프 파일을 분석하려면:  
@@ -90,19 +90,19 @@ ms.locfileid: "85545550"
   
    ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-### <a name="filter-the-list-of-objects"></a><a name="BKMK_Filter_the_list_of_objects"></a>개체 목록 필터링  
+### <a name="filter-the-list-of-objects"></a><a name="BKMK_Filter_the_list_of_objects"></a> 개체 목록 필터링  
  기본적으로 메모리 분석기는 메모리 스냅샷에서 개체 목록을 필터링하여 사용자 코드인 형식 및 인스턴스만 표시하고 총 포함 크기가 총 힙 크기의 임계값 비율을 초과하는 형식만 표시합니다. **보기 설정** 목록에서 다음 옵션을 변경할 수 있습니다.  
   
 |Name|설명|  
 |-|-|  
-|**내 코드만 사용**|내 코드만은 대부분의 공통 시스템 개체를 숨기므로 사용자가 만든 형식만 목록에 표시됩니다.<br /><br /> Visual Studio **옵션** 대화 상자에서 내 코드만 옵션을 설정할 수도 있습니다. **디버그** 메뉴에서 **옵션 및 설정**을 선택합니다. **디버깅** / **일반** 탭에서 **내 코드만**를 선택 하거나 선택을 취소 합니다.|  
+|**[내 코드만] 기능 사용**|내 코드만은 대부분의 공통 시스템 개체를 숨기므로 사용자가 만든 형식만 목록에 표시됩니다.<br /><br /> Visual Studio **옵션** 대화 상자에서 내 코드만 옵션을 설정할 수도 있습니다. **디버그** 메뉴에서 **옵션 및 설정**을 선택합니다. **디버깅** / **일반** 탭에서 **내 코드만**를 선택 하거나 선택을 취소 합니다.|  
 |**작은 개체 축소**|**작은 개체 축소** 는 총 포함 크기가 총 힙 크기의 0.5% 미만인 모든 형식을 숨깁니다.|  
   
  **검색** 상자에 문자열을 입력 하 여 형식 목록을 필터링 할 수도 있습니다. 목록에는 이름에 문자열이 포함된 형식만 표시됩니다.  
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-### <a name="analyze-memory-data-in-from-a-single-snapshot"></a><a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a>단일 스냅숏에서의 메모리 데이터 분석  
+### <a name="analyze-memory-data-in-from-a-single-snapshot"></a><a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> 단일 스냅숏에서의 메모리 데이터 분석  
  Visual Studio는 새 디버깅 세션을 시작하여 파일을 분석하고 힙 보기 창에 메모리 데이터를 표시합니다.  
   
  ![개체 형식 목록](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -114,7 +114,7 @@ ms.locfileid: "85545550"
   
 - **Count** 는 스냅숏에서 형식의 인스턴스 수를 표시 합니다.  
   
-- **크기 (바이트)** 는 참조를 보유 하는 개체의 크기를 제외 하 고 형식의 모든 인스턴스 크기입니다. Component  
+- **크기 (바이트)** 는 참조를 보유 하는 개체의 크기를 제외 하 고 형식의 모든 인스턴스 크기입니다. 이  
   
 - 포함 **크기 (바이트)** 에는 참조 된 개체의 크기가 포함 됩니다.  
   
@@ -129,7 +129,7 @@ ms.locfileid: "85545550"
   
    ![데이터 팁의 인스턴스 값](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
-- **크기 (바이트)** 는 개체에서 참조 하는 개체의 크기를 제외 하 고 개체의 크기입니다. Component  
+- **크기 (바이트)** 는 개체에서 참조 하는 개체의 크기를 제외 하 고 개체의 크기입니다. 이  
   
 - 포함 **크기 (바이트)** 에는 참조 된 개체의 크기가 포함 됩니다.  
   
@@ -168,7 +168,7 @@ ms.locfileid: "85545550"
 |**SizedRef 핸들**|가비지 컬렉션 시 모든 개체 및 개체 루트의 집합 클로저의 대략적인 크기를 유지하는 강력한 핸들입니다.|  
 |**고정된 지역 변수**|고정된 지역 변수입니다.|  
   
-### <a name="compare-two-memory-snapshots"></a><a name="BKMK_Compare_two_memory_snapshots"></a>두 메모리 스냅숏 비교  
+### <a name="compare-two-memory-snapshots"></a><a name="BKMK_Compare_two_memory_snapshots"></a> 두 메모리 스냅숏 비교  
  프로세서의 덤프 파일 두 개를 비교하여 메모리 누수의 원인이 될 수 있는 개체를 찾을 수 있습니다. 첫 번째(이전) 및 두 번째(이후) 파일 컬렉션 간의 간격은 누수된 개체 수 증가를 명백하게 확인하기에 충분할 정도로 커야 합니다. 두 파일을 비교하려면 다음 단계를 수행하세요.  
   
 1. 두 번째 덤프 파일을 열고 **미니 덤프 파일 요약** 페이지에서 **관리 되는 메모리 디버깅** 을 선택 합니다.  
@@ -183,7 +183,7 @@ ms.locfileid: "85545550"
   
    ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VS ALM TFS 블로그: Visual Studio 2013을 사용 하 여 프로덕션에서 .NET 메모리 문제 진단](https://devblogs.microsoft.com/devops/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production/)   
  [Channel 9 &#124; Visual Studio TV &#124; 관리 되는 메모리 분석](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
  [Channel 9 &#124; Visual Studio 도구 상자 &#124; 관리 되는 메모리 분석 Visual Studio 2013](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

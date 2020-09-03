@@ -1,5 +1,5 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS | 마이크로 소프트 문서
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,17 +14,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713986"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-포트 공급자에 대해 검색할 수 있는 메타데이터를 정의합니다.
+포트 공급자에 대해 검색할 수 있는 메타 데이터를 정의 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
@@ -44,21 +44,21 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>필드
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-이 옵션을 선택하면 경고 아이콘이 UI에 표시됩니다.
+이 확인란이 선택 되어 있으면 UI에 경고 아이콘이 표시 됩니다.
 
 ## <a name="remarks"></a>설명
 
-이 열거형은 [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) 메서드에 의해 반환됩니다.
+이 열거형은 [Getdescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) 메서드에 의해 반환 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-헤더: Msdbg.h
+헤더: Msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [설명 받기](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
+- [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

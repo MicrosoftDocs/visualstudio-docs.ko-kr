@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545225"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.
@@ -44,11 +44,11 @@ ms.locfileid: "85545225"
 |---------|------------------|-----------|--------------------|
 |+ (이진)|+|+ (이진)|추가|
 |+=|+=|+=|추가|
-|&|And|&|BitwiseAnd|
+|&|and|&|BitwiseAnd|
 |&=|및 =|&=|BitwiseAnd|
 |&#124;|또는|&#124;|BitwiseOr|
 |&#124;=|또는 =|&#124;=|BitwiseOr|
-|--|N/A|--|감소|
+|--|해당 없음|--|감소|
 |/|/|/|나누기|
 |/=|/=|/=|나누기|
 |==|=|==|같음|
@@ -56,27 +56,27 @@ ms.locfileid: "85545225"
 |^=|Xor =|^=|Xor|
 |>|>|>|비교|
 |>=|>=|>=|비교|
-|++|N/A|++|ID 증가값|
+|++|해당 없음|++|ID 증가값|
 |<>|!=|같음|
 |<<|<<|<<|왼쪽 shift|
 |<<=|<<=|<<=|왼쪽 shift|
 |<|<|<|비교|
 |<=|<=|\<=|비교|
-|&&|N/A|&&|LogicalAnd|
-|&#124;&#124;|N/A|&#124;&#124;|LogicalOr|
-|!|N/A|!|LogicalNot|
+|&&|해당 없음|&&|LogicalAnd|
+|&#124;&#124;|해당 없음|&#124;&#124;|LogicalOr|
+|!|해당 없음|!|LogicalNot|
 |%|Mod|%|Mod 또는 나머지가|
-|%=|N/A|%=|Mod|
+|%=|해당 없음|%=|Mod|
 |* (이진)|*|*|곱하기|
-|*=|N/A|*=|곱하기|
+|*=|해당 없음|*=|곱하기|
 |~|Not|~|OnesComplement|
 |>>|>>|>>|창에서|
-=|N/A|>>=|창에서|
+=|해당 없음|>>=|창에서|
 |-(이진)|-(이진)|-(이진)|빼기|
-|-=|N/A|-=|빼기|
-|true|IsTrue|N/A|IsTrue (속성)|
-| - (단항)   |N/A|-|Negate|
-|+ (단항)|N/A|+|더하기|
+|-=|해당 없음|-=|빼기|
+|true|IsTrue|해당 없음|IsTrue (속성)|
+| - (단항)   |해당 없음|-|Negate|
+|+ (단항)|해당 없음|+|더하기|
 |false|IsFalse|False|IsTrue (속성)|
 
  해당 없음 = = 선택한 언어로 오버 로드 될 수 없습니다.
@@ -91,7 +91,7 @@ ms.locfileid: "85545225"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  공유 라이브러리를 구현 하는 경우에는이 규칙의 경고를 표시 하지 마십시오. 응용 프로그램은이 규칙의 경고를 무시할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 구조체를 정의 합니다. 예제를 수정 하려면 구조체에 공용 메서드를 추가 합니다 `Add(int x, int y)` .
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorOverloadsHaveNamedAlternates/cs/FxCop.Usage.OperatorOverloadsHaveNamedAlternates.cs#1)]

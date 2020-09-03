@@ -16,19 +16,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac8f4cf619bbdd007bb7aa570f549ae3c0b50e86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651108"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**서비스 참조 구성** 대화 상자를 사용 하 여 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 서비스의 동작을 구성할 수 있습니다.
+**서비스 참조 구성** 대화 상자를 사용 하 여 서비스 동작을 구성할 수 있습니다 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] .
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.
 
  **서비스 참조 구성** 대화 상자에 액세스하려면 **솔루션 탐색기**에서 서비스 참조를 마우스 오른쪽 단추로 클릭하고 **서비스 참조 구성**을 선택합니다. **서비스 참조 추가 대화 상자**에서 **고급** 단추를 클릭하여 대화 상자에 액세스할 수도 있습니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "72651108"
 
  **참조 된 어셈블리의 형식 재사용** 서비스가 추가 또는 업데이트 될 때 새 형식을 생성 하는 대신 WCF 클라이언트가 참조 된 어셈블리에 이미 있는 다시 사용을 시도 하는지 여부를 결정 합니다. 기본적으로 이 옵션은 선택되어 있습니다.
 
- **참조 되는 모든 어셈블리의 형식 재사용** 이를 선택 하면 가능한 경우 **참조 된 어셈블리 목록의** 모든 형식이 다시 사용 됩니다. 기본적으로 이 옵션이 선택됩니다.
+ **참조 되는 모든 어셈블리의 형식 재사용** 이를 선택 하면 가능한 경우 **참조 된 어셈블리 목록의** 모든 형식이 다시 사용 됩니다. 이 옵션은 기본적으로 선택됩니다.
 
  **지정 된 참조 된 어셈블리의 형식 재사용** 이를 선택 하면 **참조 된 어셈블리 목록** 에서 선택한 유형만 다시 사용 됩니다.
 
@@ -83,5 +83,5 @@ ms.locfileid: "72651108"
 > [!NOTE]
 > **웹 참조 추가** 단추는 **서비스 참조 추가 대화 상자**에서 **서비스 참조 구성** 대화 상자가 표시 되는 경우에만 사용할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 서비스 참조 추가, 업데이트 또는 제거](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9) [방법: 웹 서비스](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168) [Windows Communication Foundation 서비스 및 WCF Data Services](../data-tools/configure-service-reference-dialog-box.md) 에 대 한 참조 추가
