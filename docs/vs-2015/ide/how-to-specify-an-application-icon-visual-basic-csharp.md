@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136fd00bea736af0f0c589c28eae597ff8fd558e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670698"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>방법: 애플리케이션 아이콘 지정(Visual Basic, C#)
@@ -38,9 +38,9 @@ ms.locfileid: "72670698"
 
 3. **프로젝트 디자이너**가 나타나면 **애플리케이션** 탭을 선택합니다.
 
-4. **(Visual Basic)** **아이콘** 목록에서 아이콘 파일(.ico)을 선택합니다.
+4. **(Visual Basic)****아이콘** 목록에서 아이콘 파일(.ico)을 선택합니다.
 
-     **(C#)** **아이콘**목록 근처에서 **\<찾아보기...>** 단추를 선택한 다음 원하는 아이콘 파일의 위치로 이동합니다.
+     **C #** **아이콘** 목록 근처에서 **\<Browse...>** 단추를 선택한 다음 원하는 아이콘 파일의 위치로 이동 합니다.
 
-## <a name="see-also"></a>관련 항목:
- 응용 프로그램 [페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [응용 프로그램 페이지, 프로젝트C#디자이너 ()](../ide/reference/application-page-project-designer-csharp.md) [응용 프로그램 속성 관리](../ide/application-properties.md) [방법: 리소스 추가 또는 제거](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+## <a name="see-also"></a>관련 항목
+ [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [응용 프로그램 페이지, 프로젝트 디자이너 (c #)](../ide/reference/application-page-project-designer-csharp.md) [응용 프로그램 속성 관리](../ide/application-properties.md) [방법: 리소스 추가 또는 제거](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

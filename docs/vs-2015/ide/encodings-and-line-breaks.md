@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e1b13cc101ea4d7609633fd9c11bf87946d7b7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665731"
 ---
 # <a name="encodings-and-line-breaks"></a>인코딩 및 줄 바꿈
@@ -31,7 +31,7 @@ ms.locfileid: "72665731"
 Visual Studio에서 **파일/고급 저장 옵션** 설정을 사용하여 원하는 줄 바꿈 문자의 형식을 결정할 수 있습니다. 같은 설정을 사용하여 파일의 인코딩을 변경할 수도 있습니다.
 
 > [!NOTE]
-> 특정 형식의 개발 설정(Visual Basic, F#, 웹 개발)이 있는 경우 메뉴에서 **고급 저장 옵션**을 확인할 수 없습니다. 설정(예: 일반)을 변경하려면 **도구/설정 가져오기 및 내보내기**를 엽니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 특정 형식의 개발 설정(Visual Basic, F#, 웹 개발)이 있는 경우 메뉴에서 **고급 저장 옵션**을 확인할 수 없습니다. 설정(예: 일반)을 변경하려면 **도구/설정 가져오기 및 내보내기**를 엽니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.
 
  Visual Studio에서 다음 문자는 줄 바꿈으로 해석됩니다.
 

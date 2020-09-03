@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 51512c80c96ef82835ce38c36e3643261ba84231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671734"
 ---
 # <a name="step-5-add-label-references"></a>5단계: 레이블 참조 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-프로그램에서는 플레이어가 선택하는 레이블 컨트롤을 추적해야 합니다. 지금은 프로그램에 플레이어가 선택한 모든 레이블이 표시됩니다. 이는 나중에 변경할 것입니다. 첫 번째 레이블이 선택된 후 해당 레이블의 아이콘이 표시됩니다. 두 번째 레이블이 선택된 후에는 프로그램에 두 아이콘이 모두 잠깐 표시된 후 다시 숨겨집니다. 프로그램에서는 이제 *참조 변수*를 사용하여 첫 번째 선택한 레이블 컨트롤과 두 번째 선택한 레이블 컨트롤을 추적합니다.
+프로그램에서는 플레이어가 선택하는 레이블 컨트롤을 추적해야 합니다. 지금은 프로그램에 플레이어가 선택한 모든 레이블이 표시됩니다. 이는 나중에 변경할 것입니다. 첫 번째 레이블이 선택된 후 해당 레이블의 아이콘이 표시됩니다. 두 번째 레이블이 선택된 후에는 프로그램에 두 아이콘이 모두 잠깐 표시된 후 다시 숨겨집니다. 이제 프로그램에서 먼저 선택 된 레이블 컨트롤을 추적 하 고 *참조 변수*를 사용 하 여 두 번째 선택 합니다.
 
 ### <a name="to-add-label-references"></a>레이블 참조를 추가하려면
 
@@ -47,6 +47,6 @@ ms.locfileid: "72671734"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [6단계: 타이머 추가](../ide/step-6-add-a-timer.md)를 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [6 단계: 타이머 추가](../ide/step-6-add-a-timer.md)를 참조 하세요.
 
-- 이전 자습서 단계로 돌아가려면 [4단계: 각 레이블에 클릭 이벤트 처리기 추가](../ide/step-4-add-a-click-event-handler-to-each-label.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [4 단계: 각 레이블에 클릭 이벤트 처리기 추가](../ide/step-4-add-a-click-event-handler-to-each-label.md)를 참조 하세요.

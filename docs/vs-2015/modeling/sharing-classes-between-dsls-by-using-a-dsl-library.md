@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 093cc277fa1cbe1915099fd9663fc1ccb797ca3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671176"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 있는 불완전 한 DSL 정의를 만들 수 있습니다. 이렇게 하면 유사한 모델의 공통 요소를 지정할 수 있습니다.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]시각화 및 모델링 SDK에서 다른 dsl으로 가져올 수 있는 불완전 한 Dsl 정의를 만들 수 있습니다. 이렇게 하면 유사한 모델의 공통 요소를 지정할 수 있습니다.
 
 ## <a name="creating-and-using-dsl-libraries"></a>DSL 라이브러리 만들기 및 사용
 
@@ -35,7 +35,7 @@ ms.locfileid: "72671176"
 
      가져오기에서 사용할 수 있는 관계를 정의 하려면 두 개의 도메인 클래스를 만들고 두 개의 도메인 간에 관계를 만듭니다.
 
-     @No__t_1 도메인 클래스의 **상속 한정자** 를 설정 하는 것이 좋습니다.
+     도메인 클래스의 **상속 한정자** 를로 설정 하는 것이 좋습니다 `Abstract` .
 
 3. DSL 탐색기에서 정의 하는 요소 (예: 연결 작성기)를 추가할 수 있습니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72671176"
 
 6. 프로젝트를 빌드합니다.
 
-7. 다른 사용자가 사용할 수 있도록 DSL을 배포 하는 경우 컴파일된 어셈블리 (DLL) 및 파일 `DslDefinition.dsl`를 모두 제공 해야 합니다. 다음 폴더에서 컴파일된 어셈블리를 찾을 수 있습니다 `Dsl\bin\*`
+7. 다른 사용자가 사용할 수 있도록 DSL을 배포 하는 경우 컴파일된 어셈블리 (DLL)와 파일을 모두 제공 해야 합니다 `DslDefinition.dsl` . 아래 폴더에서 컴파일된 어셈블리를 찾을 수 있습니다. `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>DSL 라이브러리를 가져오려면
 
@@ -57,7 +57,7 @@ ms.locfileid: "72671176"
 
 3. 가져온 클래스를 기본 클래스로 사용할 수 있습니다. 가져오기 DSL에서 도메인 클래스를 만들고, 속성 창에서 **기본 클래스** 를 가져온 클래스로 설정 합니다.
 
-4. 모든 템플릿 변환을 클릭 합니다.
+4. 모든 템플릿 변환을 클릭합니다.
 
 5. Dsl 프로젝트에 DSL 라이브러리 프로젝트에 의해 빌드된 어셈블리 (DLL)에 대 한 참조를 추가 합니다.
 
@@ -65,5 +65,5 @@ ms.locfileid: "72671176"
 
    DSL 라이브러리는 다른 라이브러리를 가져올 수 있습니다. 라이브러리를 가져올 때 해당 가져오기가 DSL 탐색기에도 자동으로 표시 됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)

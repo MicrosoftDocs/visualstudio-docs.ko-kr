@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8a2a2b83b818e37c0b62e103fe284c5c4d110c6c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815634"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>정규식에 ']'가 필요합니다.(JavaScript)
@@ -31,6 +31,6 @@ ms.locfileid: "85815634"
     > [!NOTE]
     > 대괄호 하나를 일치 시키려면 백슬래시를 사용 하 여 이스케이프 \\ 합니다. 그러면에서 특수 문자로 해석 되지 않습니다 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

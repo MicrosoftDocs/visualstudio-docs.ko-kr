@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 566bcf10d681b9ea81ee78601bf8536e9e6d9985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671755"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가
@@ -22,7 +22,7 @@ ms.locfileid: "72671755"
 이 자습서의 5단계에서는 퀴즈 문제의 답을 좀 더 쉽게 입력할 수 있도록 Enter 이벤트 처리기를 추가합니다. 이 코드에서는 퀴즈를 푸는 사람이 NumericUpDown 컨트롤을 선택하고 다른 값을 입력하는 즉시 각 NumericUpDown 컨트롤의 현재 값을 선택하고 지웁니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대 한 개요는 [자습서 2: 시간이 지정 된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조 하세요.
 
 ### <a name="to-verify-the-default-behavior"></a>기본 동작을 확인하려면
 
@@ -40,17 +40,17 @@ ms.locfileid: "72671755"
 
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기를 추가하려면
 
-1. 폼에서 이름이 "sum"인 첫 번째 NumericUpDown 컨트롤을 선택한 다음 **속성** 대화 상자에서 도구 모음의 **이벤트** 아이콘을 선택합니다.
+1. 폼에서 이름이 “sum”인 첫 번째 NumericUpDown 컨트롤을 선택한 다음, **속성** 대화 상자에서 도구 모음의 **이벤트** 아이콘을 선택합니다.
 
      **속성** 대화 상자의 **이벤트** 탭에 폼에서 선택하는 항목에 대해 응답(처리)할 수 있는 모든 이벤트가 표시됩니다. NumericUpDown 컨트롤을 선택했으므로 이 컨트롤과 관련된 모든 이벤트가 나열됩니다.
 
-2. **Enter** 이벤트를 선택하고 `answer_Enter`를 입력한 다음 Enter 키를 선택합니다.
+2. **Enter** 이벤트를 선택하고 `answer_Enter`를 입력한 다음, Enter 키를 선택합니다.
 
      ![속성 대화 상자](../ide/media/express-answerenter.png "Express_AnswerEnter") 속성 대화 상자
 
      sum NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기를 추가하고 처리기 이름을 **answer_Enter**로 지정했습니다.
 
-3. **answer_Enter** 이벤트 처리기의 메서드에 다음 코드를 추가합니다.
+3. **Answer_Enter** 이벤트 처리기에 대 한 메서드에서 다음 코드를 추가 합니다.
 
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]
@@ -71,6 +71,6 @@ ms.locfileid: "72671755"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [6단계: 빼기 문제 추가](../ide/step-6-add-a-subtraction-problem.md)를 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [6 단계: 빼기 문제 추가](../ide/step-6-add-a-subtraction-problem.md)를 참조 하세요.
 
-- 이전 자습서 단계로 돌아가려면 [4단계: CheckTheAnswer() 메서드 추가](../ide/step-4-add-the-checktheanswer-parens-method.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [4 단계: CheckTheAnswer () 메서드 추가](../ide/step-4-add-the-checktheanswer-parens-method.md)를 참조 하세요.

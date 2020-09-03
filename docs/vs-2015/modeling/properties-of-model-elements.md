@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 22f7da98d349da2d80019750b18c0ed5a1bbb3bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671368"
 ---
 # <a name="properties-of-model-elements"></a>모델 요소의 속성
@@ -23,7 +23,7 @@ ms.locfileid: "72671368"
 
  일부 경우에는 DSL 세부 정보 창에서 추가 속성을 찾을 수 있습니다.
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
  [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  [생성된 클래스 재정의 및 확장](../modeling/overriding-and-extending-the-generated-classes.md)

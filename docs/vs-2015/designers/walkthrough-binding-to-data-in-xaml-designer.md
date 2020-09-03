@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 38434d89544ed290f9adfd077593d7de9bdc1231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664009"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>연습: XAML 디자이너의 데이터 바인딩
@@ -98,5 +98,5 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
      `TextBlock` 컨트롤은 0의 기본값을 텍스트로 표시해야 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  XAML 디자이너 [NIB: 값 변환기 추가 대화 상자](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8) 를 [사용 하 여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

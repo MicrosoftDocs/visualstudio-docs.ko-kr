@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 555a9065e76d93a4c8dfbfc1acae30bfe4ea2a5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663960"
 ---
 # <a name="working-with-3-d-models"></a>3차원 모델 작업
@@ -30,7 +30,7 @@ ms.locfileid: "72663960"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[모델 편집기](../designers/model-editor.md)|모델 편집기를 사용하여 3차원 모델 작업을 수행하는 방법을 설명합니다.|
-|[모델 편집기 예제](../designers/model-editor-examples.md)|모델 편집기를 사용하여 일반적인 3차원 모델링 작업을 수행하는 방법을 보여 주는 항목에 대한 링크를 제공합니다.|
+|[모델 편집기 예](../designers/model-editor-examples.md)|모델 편집기를 사용하여 일반적인 3차원 모델링 작업을 수행하는 방법을 보여 주는 항목에 대한 링크를 제공합니다.|
