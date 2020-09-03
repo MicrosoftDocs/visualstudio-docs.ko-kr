@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282659"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms 애플리케이션에서 조회 테이블 만들기
@@ -57,6 +57,6 @@ ms.locfileid: "85282659"
     |**ValueMember**|Visual Studio는 이 속성을 기본 키에 포함되는 첫 번째 열로 설정하거나 키가 정의되어 있지 않으면 테이블의 첫 번째 열로 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열이 포함 된 테이블의 기본 키로 설정 합니다.|
     |**SelectedValue**|Visual Studio는이 속성을 **데이터 소스** 창에서 삭제 된 원래 열로 설정 합니다.<br /><br /> 조정 해야 하는 경우 관련 테이블의 외래 키 열로 설정 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669698"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Windows Forms에 다이어그램 포함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 창에 표시 되는 Windows 컨트롤에 DSL 다이어그램을 포함할 수 있습니다.
+창에 표시 되는 Windows 컨트롤에 DSL 다이어그램을 포함할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="embedding-a-diagram"></a>다이어그램 포함
 
@@ -75,7 +75,7 @@ ms.locfileid: "72669698"
 
 #### <a name="updating-the-form-using-store-events"></a>Store 이벤트를 사용 하 여 폼 업데이트
 
-1. 폼 디자이너에서 이름이 `listBox1` 인 **ListBox** 를 추가 합니다. 그러면 모델의 요소 목록이 표시 됩니다. *저장소 이벤트*를 사용 하 여 모델과 함께 synchronism에 유지 됩니다. 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
+1. 폼 디자이너에서 라는 **ListBox** 를 추가 `listBox1` 합니다. 그러면 모델의 요소 목록이 표시 됩니다. *저장소 이벤트*를 사용 하 여 모델과 함께 synchronism에 유지 됩니다. 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
 
 2. 사용자 지정 코드 파일에서 추가 메서드를 DocView 클래스로 재정의 합니다.
 
@@ -149,9 +149,9 @@ ms.locfileid: "72669698"
 
     ```
 
-4. DSL을 테스트 하려면 F5 키를 누르고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스에서 샘플 모델 파일을 엽니다.
+4. DSL을 테스트 하려면 F5 키를 누르고의 실험적 인스턴스에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 샘플 모델 파일을 엽니다.
 
      목록 상자에는 모델의 요소 목록이 표시 되 고, 추가 또는 삭제 후, 실행 취소 및 다시 실행 후에도 올바른 것을 확인할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md) [하 여 도메인별 언어를 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

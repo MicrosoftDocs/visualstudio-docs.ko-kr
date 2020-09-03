@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282620"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 애플리케이션에서 조회 테이블 만들기
@@ -61,7 +61,7 @@ ms.locfileid: "85282620"
 
     - **ComboBox**
 
-    - **ListBox**
+    - **상자가**
 
     - **ListView**
 
@@ -88,7 +88,7 @@ ms.locfileid: "85282620"
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio는이 속성을 디자이너로 끌어 온 자식 데이터의 열 또는 속성에 바인딩합니다. 부모 데이터의 외래 키입니다.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio는 부모 데이터의 외래 키인 자식 데이터의 열 또는 속성 경로에이 속성을 설정 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)

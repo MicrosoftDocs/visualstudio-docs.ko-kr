@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281762"
 ---
 # <a name="create-relationships-between-datasets"></a>데이터 세트 간 관계 만들기
@@ -104,6 +104,6 @@ Visual Studio에서 데이터 디자인 도구를 사용 하 여 데이터 테�
 
 2. **데이터** 메뉴에서 **관계 레이블 표시** 명령을 선택 하 여 관계 이름을 표시 합니다. 이 명령을 지워 관계 이름을 숨깁니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)

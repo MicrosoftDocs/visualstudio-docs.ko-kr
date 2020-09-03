@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282607"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
@@ -98,6 +98,6 @@ TableAdapter에 대 한 쿼리 인 경우 다음 코드와 함께 제공 되지 
 
 3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을로 설정 `true` 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

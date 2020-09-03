@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282676"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter 만들기 및 구성
@@ -115,6 +115,6 @@ TableAdapter 쿼리 구성 마법사를 사용 하 여 TableAdapter에 대 한 �
     > [!NOTE]
     > **쿼리** 개체를 **데이터 세트 디자이너** 직접 끌면 스칼라 (단일) 값만 반환 하는 메서드가 만들어집니다. 선택한 쿼리나 저장 프로시저가 둘 이상의 값을 반환할 수 있지만 마법사로 만든 메서드는 단일 값만 반환 합니다. 예를 들어 쿼리는 반환 된 데이터에서 첫 번째 행의 첫 번째 열을 반환할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

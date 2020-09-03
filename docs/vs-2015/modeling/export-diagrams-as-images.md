@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669670"
 ---
 # <a name="export-diagrams-as-images"></a>다이어그램을 이미지로 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서는 동일한 버전의 Visual Studio를 사용 하지 않는 관련자, 사용자 또는 프로젝트 팀 멤버와 공유할 수 있도록 모델링 다이어그램을 읽기 전용 형식으로 저장할 수 있습니다.
+Visual Studio에서 동일한 버전의 Visual Studio를 사용하지 않는 이해 관계자, 사용자 또는 프로젝트 팀 멤버와 공유할 수 있도록 모델링 다이어그램을 읽기 전용 형식으로 저장할 수 있습니다.
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
@@ -45,9 +45,9 @@ Visual Studio에서는 동일한 버전의 Visual Studio를 사용 하지 않는
 
 2. **이름** 목록에서 **Microsoft XPS Document Writer**를 선택 하 고 **확인**을 클릭 합니다.
 
-3. **다른 이름으로 파일 저장** 대화 상자에서 파일을 **xps 문서 (\* .xps)** 파일로 저장 합니다.
+3. **다른 이름으로 파일 저장** 대화 상자에서 파일을 **xps 문서 ( \* .xps)** 파일로 저장 합니다.
 
 ## <a name="net-framework-security"></a>.NET Framework 보안
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md) [모델 공유 모델 및 내보내기 다이어그램](../modeling/share-models-and-exporting-diagrams.md)

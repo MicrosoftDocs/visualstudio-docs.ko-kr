@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 69ebcc264eb3caa68fa0dfd2998613a7c9037b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669779"
 ---
 # <a name="domain-property-value-change-handlers"></a>도메인 속성 값 변경 처리기
@@ -26,7 +26,7 @@ ms.locfileid: "72669779"
 ## <a name="overriding-the-property-handler-methods"></a>속성 처리기 메서드 재정의
  DSL의 각 도메인 속성은 부모 도메인 클래스 내에 중첩된 클래스를 통해 처리됩니다. 해당 이름은 *PropertyName*propertyhandler 형식 뒤에 나옵니다. **Dsl\generated Code\DomainClasses.cs**파일에서이 속성 처리기 클래스를 검사할 수 있습니다. 해당 클래스에서는 값이 변경되기 직전에 `OnValueChanging()`이 호출되고 값이 변경된 직후에 `OnValueChanged()`가 호출됩니다.
 
- 예를 들어 이름이 `Text` 인 문자열 도메인 속성 및 `TextLengthCount` 라는 정수 속성을 가진 `Comment` 라는 도메인 클래스가 있다고 가정 합니다. @No__t_0 항상 `Text` 문자열의 길이를 포함 하도록 하려면 Dsl 프로젝트에서 별도의 파일에 다음 코드를 작성 하면 됩니다.
+ 예를 들어 라는 `Comment` 문자열 도메인 속성 및 라는 정수 속성이 있는 라는 도메인 클래스가 있다고 가정 합니다 `Text` `TextLengthCount` . `TextLengthCount`항상 문자열의 길이를 포함 하도록 하려면 `Text` Dsl 프로젝트에서 별도의 파일에 다음 코드를 작성 하면 됩니다.
 
 ```
 // Domain Class "Comment":
@@ -94,16 +94,16 @@ if (newValue > 10)
 
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>대체 기술: 계산 된 속성
+### <a name="alternative-technique-calculated-properties"></a>대체 기술: 계산된 속성
  위의 예에서는 OnValueChanged()를 사용하여 도메인 속성 간에 값을 전파하는 방법을 보여줍니다. 이 속성에는 자체 저장 값이 있습니다.
 
  대신 파생 속성을 계산된 속성으로 정의할 수 있습니다. 이 경우 속성은 자체 스토리지를 포함하지 않으며 속성의 값이 필요할 때마다 정의 기능을 평가합니다. 자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.
 
- 이전 예제 대신 DSL 정의에서 **계산** 될 `TextLengthCount`의 **종류** 필드를 설정할 수 있습니다. 이 도메인 속성에 대해 고유한 **Get** 메서드를 제공 합니다. **Get** 메서드는 `Text` 문자열의 현재 길이를 반환 합니다.
+ 이전 예제 대신 **Kind** `TextLengthCount` DSL 정의에서 **계산** 되는의 Kind 필드를 설정할 수 있습니다. 이 도메인 속성에 대해 고유한 **Get** 메서드를 제공 합니다. **Get** 메서드는 문자열의 현재 길이를 반환 합니다 `Text` .
 
  그러나 계산된 속성을 사용하는 경우 값을 사용할 때마다 식을 평가하므로 성능상의 문제가 발생할 수 있다는 단점이 있습니다. 또한 계산된 속성에는 OnValueChanging() 및 OnValueChanged()가 없습니다.
 
-### <a name="alternative-technique-change-rules"></a>대체 기술: 규칙 변경
+### <a name="alternative-technique-change-rules"></a>대체 기술: 변경 규칙
  ChangeRule을 정의하면 속성 값이 변경되는 트랜잭션 종료 시 해당 ChangeRule이 실행됩니다.  자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
 
  트랜잭션 하나에서 여러 항목을 변경하는 경우 모든 변경이 완료되면 ChangeRule이 실행됩니다. 반대로 OnValue ... 메서드는 일부 변경 내용이 수행 되지 않았을 때 실행 됩니다. 그러므로 수행하려는 작업에 따라서 ChangeRule을 사용하는 것이 보다 적절할 수 있습니다.

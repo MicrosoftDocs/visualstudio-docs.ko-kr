@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cce0a918b1b3e029846176832ab2feb74e3e9e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669845"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
@@ -50,31 +50,31 @@ ms.locfileid: "72669845"
 
 1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 VSIX 프로젝트를 만듭니다.
 
-    - **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **C#시각적 개체**를 확장 한 다음 **확장성**을 확장 합니다. **VSIX 프로젝트**를 클릭 합니다.
+    - **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **Visual c #** 을 확장 한 다음 **확장성**을 확장 합니다. **VSIX 프로젝트**를 클릭 합니다.
 
 2. **Source.extension.vsixmanifest**에서 콘텐츠 형식 및 지원 되는 버전을 설정 합니다.
 
     1. VSIX 매니페스트 편집기의 **자산** 탭에서 **새로 만들기** 를 선택 하 고 새 항목의 속성을 설정 합니다.
 
-         **콘텐츠 형식**  = **VSPackage**
+         **콘텐츠 형식**  =  **VSPackage**
 
-         *현재 프로젝트* \<  =  **소스 프로젝트** >
+         **소스 프로젝트** = \<*the current project*>
 
     2. **선택한 버전** 을 클릭 하 고 지시문 프로세서를 사용할 설치 유형을 확인 합니다.
 
 3. .pkgdef 파일을 추가하고 VSIX에 포함할 속성을 설정합니다.
 
-    1. 텍스트 파일을 만들고 이름을*assemblyName*>. .pkgdef로 \< 합니다.
+    1. 텍스트 파일을 만들고 이름을 .pkgdef로 만듭니다. \<*assemblyName*>
 
-         \<*assemblyName*>는 일반적으로 프로젝트 이름과 동일 합니다.
+         \<*assemblyName*> 는 일반적으로 프로젝트의 이름과 동일 합니다.
 
     2. 솔루션 탐색기에서 이 파일을 선택하고 다음과 같이 속성을 설정합니다.
 
-         **빌드 작업**  = **콘텐츠**
+         **빌드 작업**  =  **콘텐츠**
 
-         **출력 디렉터리에 복사**  = **항상 복사**
+         **출력 디렉터리**  =  에 복사 **항상 복사**
 
-         **VSIX에 포함**  = **True**
+         **VSIX**  =  에 포함 **True**
 
     3. VSIX의 이름을 설정하고 ID가 고유한지 확인합니다.
 
@@ -93,11 +93,11 @@ ms.locfileid: "72669845"
 
 5. 프로젝트에 다음 참조를 추가합니다.
 
-    - **VisualStudio \*.0**
+    - **VisualStudio \* 입니다. 0**
 
-    - **VisualStudio. \*.0**
+    - **VisualStudio \* . 인터페이스입니다. 0**
 
-    - **VisualStudio Vshost.exe \*.0**
+    - **VisualStudio \* . vshost.exe. 0**
 
 6. 사용자 지정 지시문 프로세서 클래스를 프로젝트에 추가합니다.
 
@@ -117,7 +117,7 @@ ms.locfileid: "72669845"
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>사용자 지정 지시문 프로세서를 제거하거나 임시로 사용하지 않도록 설정하려면
 
-1. @No__t_0 **도구** 메뉴에서 **확장 관리자**를 클릭 합니다.
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구** 메뉴에서 **확장 관리자**를 클릭 합니다.
 
 2. 지시문 프로세서를 포함 하는 VSIX를 선택 하 고 **제거** 또는 **사용 안 함**을 클릭 합니다.
 
@@ -128,7 +128,7 @@ ms.locfileid: "72669845"
 
 - `IsDirectiveSupported` 메서드가 `true`의 이름이 전달될 때 `CustomDirective`를 반환해야 합니다.
 
-- 확장 관리자에서 확장을 볼 수 없지만 시스템에서 확장을 설치할 수 없는 경우 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \ 확장 \\** 에서 확장을 삭제 합니다.
+- 확장 관리자에서 확장을 볼 수 없지만 시스템에서 확장을 설치할 수 없는 경우 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \\ \**확장에서 확장을 삭제 합니다.
 
 - .vsix 파일을 열고 파일 내용을 검사합니다. 이 파일을 열려면 파일 확장명을 .zip으로 변경합니다. 이 파일에 .dll, .pkgdef 및 extension.vsixmanifest 파일이 포함되어 있는지 확인합니다. extension.vsixmanifest 파일은 SupportedProducts 노드에 적절한 목록을 포함해야 하며 Content 노드 아래에 VsPackage 노드를 포함해야 합니다.
 
@@ -160,7 +160,7 @@ ms.locfileid: "72669845"
  사용자 지정 지시문 프로세서를 설치하는 이 방법은 가장 선호되지 않는 방법입니다. 이 방법으로는 간편하게 지시문 프로세서를 사용하거나 사용하지 않도록 설정할 수 없으며 지시문 프로세서를 다른 사용자에게 배포할 수 없습니다.
 
 > [!CAUTION]
-> 레지스트리를 잘못 편집하면 시스템에 심각한 손상이 발생할 수 있습니다. 따라서 레지스트리를 변경하기 전에 컴퓨터에 있는 중요한 데이터를 백업해야 합니다.
+> 레지스트리를 올바르게 편집하지 않으면 시스템을 심각하게 손상시킬 수 있습니다. 따라서 레지스트리를 변경하기 전에 컴퓨터에 있는 중요한 데이터를 백업해야 합니다.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>레지스트리 키를 설정하여 지시문 프로세서를 등록하려면
 
@@ -168,7 +168,7 @@ ms.locfileid: "72669845"
 
 2. regedit에서 다음 레지스트리 키로 이동합니다.
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ .0\ Texttemplating\directiveprocessors**
+    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* \ .0\ texttemplating\directiveprocessors**
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 버전에서 지시문 프로세서를 설치하려면 "11.0" 뒤에 ."Exp"를 삽입합니다.
 
@@ -186,19 +186,19 @@ ms.locfileid: "72669845"
 
    사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|name|형식|데이터|
+|Name|형식|데이터|
 |----------|----------|----------|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|클래스|REG_SZ|**\<Namespace 이름 >입니다. \<Class 이름 >**|
-|CodeBase|REG_SZ|**어셈블리 이름 < \\ > 경로를 \<Your \>**|
+|클래스|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|CodeBase|REG_SZ|**\<Your Path>\\ 어셈블리 이름<\>**|
 
  어셈블리가 GAC에 있는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|name|형식|데이터|
+|Name|형식|데이터|
 |----------|----------|----------|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|클래스|REG_SZ|정규화 된**클래스 이름을** \< >|
-|Assembly|REG_SZ|**GAC에 어셈블리 이름을** \< >|
+|클래스|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|어셈블리|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)

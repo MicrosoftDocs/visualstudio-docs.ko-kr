@@ -88,17 +88,17 @@
                       items:
                         - name: XElement 클래스 동적 속성
                           href: xelement-class-dynamic-properties.md
-                        - name: attribute
+                        - name: 특성
                           href: attribute-xelement-dynamic-property.md
                         - name: 요소
                           href: element-xelement-dynamic-property.md
                         - name: 요소
                           href: elements-xelement-dynamic-property.md
-                        - name: Descendants
+                        - name: 하위 항목
                           href: descendants-xelement-dynamic-property.md
                         - name: 값
                           href: value-xelement-dynamic-property.md
-                        - name: Xml
+                        - name: xml
                           href: xml-xelement-dynamic-property.md
                 - name: LINQ to XML 예제를 사용한 WPF 데이터 바인딩
                   items:

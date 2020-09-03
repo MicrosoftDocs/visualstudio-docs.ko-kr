@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668110"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>방법: 형식 간의 연결 만들기(클래스 디자이너)
@@ -36,7 +36,7 @@ ms.locfileid: "72668110"
 
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>클래스 다이어그램에서 연결 선을 정의하려면
 
-1. 도구 상자의 클래스 디자이너에서 **연결**을 선택합니다.
+1. 도구 상자의 클래스 디자이너에서 **연결**을 선택 합니다.
 
 2. 서로 연결할 두 모양 간에 연결 선을 그립니다.
 
@@ -56,5 +56,5 @@ ms.locfileid: "72668110"
 
      **클래스 세부 내용** 창, 형식 연결 선, 속성 창 및 코드에서 이름이 업데이트됩니다.
 
-## <a name="see-also"></a>관련 항목:
- [방법: 멤버 표시와 연결 표시 간 변경(클래스 디자이너)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 멤버 표기법과 연결 표기법 간 변경 (클래스 디자이너)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

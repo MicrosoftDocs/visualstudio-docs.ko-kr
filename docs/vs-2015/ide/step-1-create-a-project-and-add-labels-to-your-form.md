@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a13d96d8932a3a9e4628f2d0e67a28869252c95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667355"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1단계: 프로젝트 만들기 및 폼에 레이블 추가
@@ -22,7 +22,7 @@ ms.locfileid: "72667355"
 이 퀴즈를 개발하는 첫 번째 단계는 프로젝트를 만들고 폼에 레이블, 단추 및 기타 컨트롤을 추가하는 것입니다. 추가한 각 컨트롤의 속성도 설정합니다. 프로젝트에 폼, 컨트롤 및 코드(자습서의 뒷부분에서 만듦)가 포함됩니다. 단추로 퀴즈를 시작하고 레이블에 퀴즈 문제를 표시하며 나머지 다른 컨트롤에 퀴즈의 답과 퀴즈 완료까지 남은 시간을 표시합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대 한 개요는 [자습서 2: 시간이 지정 된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조 하세요.
 
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>프로젝트를 만들고 폼의 속성을 설정하려면
 
@@ -62,15 +62,15 @@ ms.locfileid: "72667355"
 
      이 줄을 사용하면 폼의 컨트롤을 쉽게 정렬할 수 있습니다.
 
-6. **속성** 창에서 **Text** 속성을 선택한 다음 백스페이스 키를 선택하여 속성 값을 지웁니다.
+6. **속성** 창에서 **Text** 속성을 선택한 다음, 백스페이스 키를 선택하여 속성 값을 지웁니다.
 
-7. **Font** 속성 옆의 더하기 기호(+)를 선택한 다음 **Size** 속성의 값을 **15.75**로 변경합니다.
+7. **Font** 속성 옆의 더하기 기호 (+)를 선택한 다음 **Size** 속성의 값을 **15.75**로 변경 합니다.
 
      다음 그림과 같이 여러 가지 글꼴 속성을 변경할 수 있습니다.
 
      ![글꼴 크기를 표시 하 속성 창](../ide/media/express-setfontsize.png "Express_setFontSize") 글꼴 크기를 표시 하 속성 창
 
-8. 도구 상자에서 다른 **Label** 컨트롤을 추가한 후 글꼴 크기를 **15.75**로 설정합니다.
+8. 도구 상자에서 다른 **레이블** 컨트롤을 추가 하 고 글꼴 크기를 **15.75**으로 설정 합니다.
 
 9. **Text** 속성을 **Time Left**로 설정합니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "72667355"
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>더하기 문제의 컨트롤을 추가하려면
 
-1. 도구 상자에서 **Label** 컨트롤을 추가한 후 **Text** 속성을 **?** 로 설정합니다. 설정합니다.
+1. 도구 상자에서 **Label** 컨트롤을 추가한 후 **Text** 속성을 **?** 로 설정 합니다. 설정합니다.
 
 2. **AutoSize** 속성을 **False**로 설정합니다.
 
@@ -92,27 +92,27 @@ ms.locfileid: "72667355"
 
 7. **(Name)** 속성을 **plusLeftLabel**로 설정합니다.
 
-8. **plusLeftLabel** 레이블을 선택한 다음 Ctrl+C 키를 누르거나 **편집** 메뉴의 **복사**를 선택합니다.
+8. **PlusLeftLabel** 레이블을 선택한 다음 Ctrl + C 키를 선택 하거나 **편집** 메뉴에서 **복사** 를 선택 합니다.
 
-9. Ctrl+V 키를 누르거나 **편집** 메뉴의 **붙여넣기**를 선택하여 레이블을 세 번 붙여넣습니다.
+9. Ctrl + V 키를 선택 하거나 **편집** 메뉴의 **붙여넣기** 를 선택 하 여 레이블을 세 번 붙여 넣습니다.
 
 10. 세 레이블이 **plusLeftLabel** 레이블의 오른쪽에 나란히 놓이도록 정렬합니다.
 
      공백 줄을 사용하여 세 레이블을 일정한 간격으로 정렬할 수 있습니다.
 
-11. 두 번째 레이블의 **Text** 속성 값을 **+** (더하기 기호)로 설정합니다.
+11. 두 번째 레이블의 **Text** 속성 값을 **+**(더하기 기호)로 설정합니다.
 
 12. 세 번째 레이블의 **(Name)** 속성 값을 **plusRightLabel**로 설정합니다.
 
-13. 네 번째 레이블의 **Text** 속성 값을 **=** (등호)로 설정합니다.
+13. 네 번째 레이블의 **Text** 속성 값을 **=**(등호)로 설정합니다.
 
 14. 도구 상자에서 **NumericUpDown** 컨트롤을 추가한 후 글꼴 크기를 **18**로, 너비를 **100**으로 설정합니다.
 
      이 컨트롤 종류에 대해서는 나중에 자세히 설명하도록 하겠습니다.
 
-15. 더하기 문제의 레이블 컨트롤에 맞춰 **NumericUpDown** 컨트롤을 정렬합니다.
+15. 더하기 문제의 레이블 컨트롤을 사용 하 여 **NumericUpDown** 컨트롤의 줄을 설정 합니다.
 
-16. **NumericUpDown** 컨트롤의 **(Name)** 속성 값을 **sum**으로 변경합니다.
+16. **NumericUpDown** 컨트롤의 **(Name)** 속성 값을 **sum**으로 변경 합니다.
 
      다음 그림과 같이 첫 번째 행이 만들어졌습니다.
 
@@ -128,13 +128,13 @@ ms.locfileid: "72667355"
 
      공백 줄을 사용하여 두 행 사이에 충분한 간격을 둘 수 있습니다.
 
-3. 두 번째 레이블의 **Text** 속성 값을 **-** (빼기 기호)로 변경합니다.
+3. 두 번째 레이블의 **Text** 속성 값을 **-**(빼기 기호)로 변경합니다.
 
 4. 첫 번째 물음표 레이블의 이름을 **minusLeftLabel**로 지정합니다.
 
 5. 두 번째 물음표 레이블의 이름을 **minusRightLabel**로 지정합니다.
 
-6. **NumericUpDown** 컨트롤의 이름을 **difference**로 지정합니다.
+6. **NumericUpDown** 컨트롤의 이름을 **차**로 합니다.
 
 7. 다섯 개의 컨트롤을 두 번 더 붙여 넣습니다.
 
@@ -172,6 +172,6 @@ ms.locfileid: "72667355"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [2단계: 난수 더하기 문제 만들기](../ide/step-2-create-a-random-addition-problem.md)를 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [2 단계: 난수 더하기 문제 만들기](../ide/step-2-create-a-random-addition-problem.md)를 참조 하세요.
 
-- 개요 항목으로 돌아가려면 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+- 개요 항목으로 돌아가려면 [자습서 2: 시간이 지정 된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조 하세요.

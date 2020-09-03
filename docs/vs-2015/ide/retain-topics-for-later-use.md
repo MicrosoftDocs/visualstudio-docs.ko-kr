@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6c32db6dc6fbe151b9eec3cec988443ceb73fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669980"
 ---
 # <a name="retain-topics-for-later-use"></a>나중에 사용하기 위해 항목 보존
@@ -32,5 +32,5 @@ ms.locfileid: "72669980"
 ## <a name="using-the-favorites-tab"></a>즐겨찾기 탭 사용
  **즐겨찾기** 탭에서 항목에 대한 바로 가기 메뉴를 연 다음, 이름을 바꾸고 삭제하거나 항목을 폴더에 정리할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
- [바로 가기 키(도움말 뷰어)](../ide/shortcut-keys-help-viewer.md)
+## <a name="see-also"></a>관련 항목
+ [바로 가기 키 (도움말 뷰어)](../ide/shortcut-keys-help-viewer.md)

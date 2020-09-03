@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf68c1a28f662bfa4e271d3c402ef1c8946b6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668670"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>방법: 워크플로 프로젝트 만들기(레거시)
@@ -26,16 +26,16 @@ ms.locfileid: "72668670"
 
 1. [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]를 시작합니다.
 
-2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음, **프로젝트**를 선택합니다.
+2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 선택합니다.
 
      **새 프로젝트** 대화 상자가 열립니다.
 
 3. **새 프로젝트** 창의 맨 위에 있는 드롭다운 목록에서 **.NET Framework 3.0** 옵션 또는 **.NET Framework 3.5** 옵션 중 하나를 선택 하 여 레거시 디자이너에 액세스 합니다.
 
     > [!NOTE]
-    > @No__t_0의 기본 옵션은 **.NET Framework 4**입니다. 이 옵션은 [!INCLUDE[wf](../includes/wf-md.md)]을 대상으로 하는 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 애플리케이션을 만드는 데 사용합니다.
+    > 의 기본 옵션 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 은 **.NET Framework 4**입니다. 이 옵션은 [!INCLUDE[wf](../includes/wf-md.md)]을 대상으로 하는 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 애플리케이션을 만드는 데 사용합니다.
 
-4. **프로젝트 형식** 창에서 Visual C# projects 또는 Visual Basic 프로젝트를 선택한 다음 **워크플로**를 선택 합니다.
+4. **프로젝트 형식** 창에서 Visual c # 프로젝트 또는 Visual Basic 프로젝트를 선택한 다음 **워크플로**를 선택 합니다.
 
 5. **템플릿** 창에서 설치 된 프로젝트 템플릿 중 하나를 선택 합니다.
 
@@ -59,5 +59,5 @@ ms.locfileid: "72668670"
 
 8. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [레거시 워크플로 프로젝트 만들기](../workflow-designer/creating-legacy-workflow-projects.md)

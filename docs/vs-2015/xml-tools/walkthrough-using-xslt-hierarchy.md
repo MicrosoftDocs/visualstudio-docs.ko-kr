@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669557"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>연습: XSLT 계층 구조 사용
@@ -114,5 +114,5 @@ XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하�
 
 6. `<xsl:include href="xslincludefile.xsl" />` 명령에서 디버거가 중지되면 한 단계씩 코드 실행 단추를 누릅니다. 참조된 스타일시트에서 디버깅을 계속할 수 있습니다. 계층 구조가 표시되며 디자이너에서 올바른 경로를 표시합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [연습: XSLT 프로파일러](../xml-tools/walkthrough-xslt-profiler.md)

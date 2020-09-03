@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669811"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>UML 시퀀스 다이어그램의 조각으로 제어 흐름을 설명합니다.
@@ -32,9 +32,9 @@ UML 시퀀스 다이어그램에서 *결합 조각* 을 통해 루프, 분기 �
  결합 조각은 하나 이상의 *상호 작용 피연산자*로 구성되고 이 상호 작용 피연산자는 각각 하나 이상의 메시지, 사용 작용 사용 또는 결합 조각을 포함합니다.
 
 > [!NOTE]
-> 이 항목에서는 시퀀스 다이어그램의 조각에 대해 설명합니다. UML 시퀀스 다이어그램을 읽는 방법에 대 한 자세한 내용은 [UML 시퀀스 다이어그램을 참조 하세요. 참조](../modeling/uml-sequence-diagrams-reference.md)를 참조하세요. UML 시퀀스 다이어그램을 그리는 방법에 대 한 자세한 내용은 [UML 시퀀스 다이어그램을 참조 하세요. 지침이 ](../modeling/uml-sequence-diagrams-guidelines.md).
+> 이 항목에서는 시퀀스 다이어그램의 조각에 대해 설명합니다. UML 시퀀스 다이어그램을 읽는 방법에 대 한 자세한 내용은 [Uml 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)를 참조 하세요. UML 시퀀스 다이어그램을 그리는 방법에 대한 자세한 내용은 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)을 참조하세요.
 
- ![두 개의 상호 작용 피연산자가 있는 결합 조각](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
+ ![두 개의 상호 작용 피연산자가 포함된 결합 조각](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
 
  그림에 표시된 요소는 다음과 같습니다.
 
@@ -102,7 +102,7 @@ UML 시퀀스 다이어그램에서 *결합 조각* 을 통해 루프, 분기 �
     > [!NOTE]
     > 결합 조각 종류에 따라 다른 속성이 포함됩니다.
 
-## <a name="KindsOfFragment"></a>결합 조각의 종류
+## <a name="kinds-of-combined-fragment"></a><a name="KindsOfFragment"></a> 결합 조각의 종류
 
 ### <a name="fragments-describing-control-flow"></a>제어 흐름을 설명하는 조각
  단순한 시퀀스 조각에서 하나의 일반적인 시퀀스만 표시합니다. 다음 결합 조각 형식을 사용하여 다양한 상황에서 발생할 수 있는 변형을 설명합니다.
@@ -110,13 +110,13 @@ UML 시퀀스 다이어그램에서 *결합 조각* 을 통해 루프, 분기 �
 |조각 형식|설명|
 |-------------------|-----------------|
 |**가입**|선택 사항입니다. 발생하거나 발생하지 않을 수 있는 시퀀스를 포함합니다. 가드에서 조각이 발생할 조건을 지정할 수 있습니다.|
-|**Alt**|메시지의 대체 시퀀스를 포함하는 조각 목록이 들어 있습니다. 어떤 상황에서도 하나의 시퀀스만 발생합니다.<br /><br /> 각 조각에 가드를 포함하여 조각이 실행될 수 있는 조건을 지정할 수 있습니다. **else** 가드는 다른 가드가 true가 아닐 경우 실행되어야 하는 조각을 나타냅니다. 모든 가드가 false이고 **else**가 없으면 조각이 실행되지 않습니다.|
-|**Loop**|조각이 몇 회 반복됩니다. 가드에서 조각이 반복되어야 하는 조건을 지정할 수 있습니다.<br /><br /> 루프 결합 조각에는 조각이 반복될 수 있는 최소 및 최대 횟수를 나타내는 **Min** 및 **Max**속성이 있습니다. 기본값은 제한이 없습니다.|
-|**Break**|이 조각이 실행되면 나머지 시퀀스가 중단됩니다. 가드를 사용하여 중단이 발생할 조건을 지정할 수 있습니다.|
+|**#B0**|메시지의 대체 시퀀스를 포함하는 조각 목록이 들어 있습니다. 어떤 상황에서도 하나의 시퀀스만 발생합니다.<br /><br /> 각 조각에 가드를 포함하여 조각이 실행될 수 있는 조건을 지정할 수 있습니다. **else** 가드는 다른 가드가 true가 아닐 경우 실행되어야 하는 조각을 나타냅니다. 모든 가드가 false이고 **else**가 없으면 조각이 실행되지 않습니다.|
+|**실행**|조각이 몇 회 반복됩니다. 가드에서 조각이 반복되어야 하는 조건을 지정할 수 있습니다.<br /><br /> 루프 결합 조각에는 조각이 반복될 수 있는 최소 및 최대 횟수를 나타내는 **Min** 및 **Max**속성이 있습니다. 기본값은 제한이 없습니다.|
+|**끊어야**|이 조각이 실행되면 나머지 시퀀스가 중단됩니다. 가드를 사용하여 중단이 발생할 조건을 지정할 수 있습니다.|
 |**Par**|병렬입니다. 조각의 이벤트가 인터리브될 수 있습니다.|
-|**업무용**|Par 또는 Seq 조각 내에서 사용됩니다. 이 조각의 메시지가 다른 메시지와 인터리브되지 않아야 함을 나타냅니다.|
+|**심각**|Par 또는 Seq 조각 내에서 사용됩니다. 이 조각의 메시지가 다른 메시지와 인터리브되지 않아야 함을 나타냅니다.|
 |**차이가**|피연산자 조각이 두 개 이상 있습니다. 같은 수명선을 포함하는 메시지는 조각 순서대로 발생해야 합니다. 같은 수명선을 포함하지 않을 경우에는 다른 조각의 메시지가 병렬로 인터리브됩니다.|
-|**Strict**|피연산자 조각이 두 개 이상 있습니다. 조각이 지정된 순서대로 발생해야 합니다.|
+|**제품과**|피연산자 조각이 두 개 이상 있습니다. 조각이 지정된 순서대로 발생해야 합니다.|
 
 ### <a name="fragments-about-how-to-interpret-the-sequence"></a>시퀀스 해석 방법에 대한 조각
  기본적으로 시퀀스 다이어그램은 발생할 수 있는 일련의 메시지를 나타냅니다. 실행 중인 시스템에서 다이어그램에 표시하도록 선택하지 않은 다른 메시지가 발생할 수 있습니다.
@@ -127,8 +127,8 @@ UML 시퀀스 다이어그램에서 *결합 조각* 을 통해 루프, 분기 �
 |-------------------|-----------------|
 |**고려할**|이 조각이 설명하는 메시지 목록을 지정합니다. 다른 메시지가 실행 중인 시스템에서 발생할 수 있지만 이 설명의 측면에서는 중요하지 않습니다.<br /><br /> **메시지** 속성에 목록을 입력합니다.|
 |**무시**|이 조각이 설명하지 않는 메시지 목록입니다. 실행 중인 시스템에서 발생할 수 있지만 이 설명의 측면에서는 중요하지 않습니다.<br /><br /> **메시지** 속성에 목록을 입력합니다.|
-|**Assert**|피연산자 조각은 유일한 유효한 시퀀스를 지정합니다. 일반적으로 고려 또는 무시 조각 내에서 사용됩니다.|
+|**StartupExpression**|피연산자 조각은 유일한 유효한 시퀀스를 지정합니다. 일반적으로 고려 또는 무시 조각 내에서 사용됩니다.|
 |**Neg**|이 조각에 표시된 시퀀스는 발생하면 안 됩니다. 일반적으로 고려 또는 무시 조각 내에서 사용됩니다.|
 
-## <a name="see-also"></a>관련 항목:
- [UML 시퀀스 다이어그램: @No__t_1UML 시퀀스 다이어그램 ](../modeling/uml-sequence-diagrams-guidelines.md) 지침은 다음과 같습니다. [UML 모델 및 다이어그램을](../modeling/edit-uml-models-and-diagrams.md) 참조 ](../modeling/uml-sequence-diagrams-reference.md) 편집
+## <a name="see-also"></a>관련 항목
+ [Uml 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md) [uml 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md) [편집 uml 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md)

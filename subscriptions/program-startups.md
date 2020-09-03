@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 구독에 대한 세부 사항은 Microsoft for Startups 프로그램을 통해 제공됩니다.
 ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233250"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>신생 기업에 제공된 Visual Studio 구독
