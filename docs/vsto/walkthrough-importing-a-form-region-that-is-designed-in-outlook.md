@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985447"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>연습: Outlook에서 디자인 한 양식 영역 가져오기
@@ -35,8 +35,8 @@ ms.locfileid: "72985447"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -108,7 +108,7 @@ ms.locfileid: "72985447"
 
      양식 영역 이름을 **TaskFormRegion** 으로 지정하고 컴퓨터의 로컬 디렉터리에 저장합니다.
 
-     Outlook에서는 양식 영역을 Outlook 양식 저장 파일 ( *.ofs*)로 저장 합니다. 양식 영역이 *TaskFormRegion*이름으로 저장 됩니다.
+     Outlook에서는 양식 영역을 Outlook 양식 저장 파일 (*.ofs*)로 저장 합니다. 양식 영역이 *TaskFormRegion*이름으로 저장 됩니다.
 
 27. Outlook을 종료합니다.
 
@@ -186,7 +186,7 @@ ms.locfileid: "72985447"
 
    - 양식 영역의 목록 상자를 각 종속 작업의 현재 완료 상태로 새로 고칩니다.
 
-   - 숨겨진 텍스트 필드를 구문 분석하여 각 종속 작업의 제목을 얻습니다. 그런 다음 `FindTaskBySubjectName` 도우미 메서드를 호출 하 고 각 작업의 주체를 전달 하 여 *작업* 폴더에서 각 `Microsoft.Office.Interop.Outlook.TaskItem`를 찾습니다.
+   - 숨겨진 텍스트 필드를 구문 분석하여 각 종속 작업의 제목을 얻습니다. 그런 다음 `Microsoft.Office.Interop.Outlook.TaskItem` 도우미 메서드를 호출 *Tasks* `FindTaskBySubjectName` 하 고 각 작업의 주체를 전달 하 여 작업 폴더에서 각를 찾습니다.
 
    - `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 및 `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 값을 종속 작업 목록 상자에 추가합니다.
 
@@ -207,7 +207,7 @@ ms.locfileid: "72985447"
 
 ### <a name="to-test-the-form-region"></a>양식 영역을 테스트하려면
 
-1. **F5** 키를 눌러 프로젝트를 실행합니다.
+1. **F5** 키를 눌러 프로젝트를 실행 합니다.
 
      Outlook이 시작됩니다.
 
@@ -250,7 +250,7 @@ ms.locfileid: "72985447"
 
 - Outlook에 사용자 지정 작업창을 추가 하는 방법에 대 한 자세한 내용은 [사용자 지정 작업](../vsto/custom-task-panes.md)창을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
 - [Outlook 양식 영역 만들기 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)

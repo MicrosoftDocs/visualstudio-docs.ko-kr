@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bc0e6e7e1530abb63beabc6fa4aedd4a0fa985af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672331"
 ---
 # <a name="t4-assembly-directive"></a>T4 Assembly 지시문
@@ -24,7 +24,7 @@ ms.locfileid: "72672331"
  텍스트 템플릿 작성에 대 한 일반적인 개요는 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
 
 > [!NOTE]
-> 전처리된 런타임 텍스트 템플릿에는 `assembly` 지시문이 필요하지 않습니다. 대신 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트의 **참조** 에 필요한 어셈블리를 추가 합니다.
+> 전처리된 런타임 텍스트 템플릿에는 `assembly` 지시문이 필요하지 않습니다. 대신 프로젝트의 **참조** 에 필요한 어셈블리를 추가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다.
 
 ## <a name="using-the-assembly-directive"></a>assembly 지시문 사용
  지시문의 구문은 다음과 같습니다.
@@ -35,17 +35,17 @@ ms.locfileid: "72672331"
 
  어셈블리 이름은 다음 중 하나여야 합니다.
 
-- GAC 어셈블리의 강력한 이름(예: `System.Xml.dll`). `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`와 같은 긴 형식도 사용할 수 있습니다. 자세한 내용은 <xref:System.Reflection.AssemblyName>을 참조하십시오.
+- GAC 어셈블리의 강력한 이름(예: `System.Xml.dll`). `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`와 같은 긴 형식도 사용할 수 있습니다. 자세한 내용은 <xref:System.Reflection.AssemblyName>를 참조하세요.
 
 - 어셈블리의 절대 경로
 
-  `$(variableName)` 구문을 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 변수(예: `$(SolutionDir)`)를 참조하고 `%VariableName%`을 사용하여 환경 변수를 참조할 수 있습니다. 예를 들면,
+  `$(variableName)` 구문을 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 변수(예: `$(SolutionDir)`)를 참조하고 `%VariableName%`을 사용하여 환경 변수를 참조할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- assembly 지시문은 전처리된 텍스트 템플릿에서 아무런 효과가 없습니다. 대신 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트의 **참조** 섹션에 필요한 참조를 포함 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+ assembly 지시문은 전처리된 텍스트 템플릿에서 아무런 효과가 없습니다. 대신 프로젝트의 **참조** 섹션에 필요한 참조를 포함 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
 
 ## <a name="standard-assemblies"></a>표준 어셈블리
  다음 어셈블리가 자동으로 로드되므로 해당 어셈블리에 대한 assembly 지시문을 작성할 필요가 없습니다.
@@ -66,7 +66,7 @@ ms.locfileid: "72672331"
 
 - DSL이 들어 있는 어셈블리
 
-## <a name="msbuild"></a>MSBuild 및 Visual Studio에서 프로젝트 속성 사용
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용
  $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 않습니다. 빌드 컴퓨터에서 템플릿을 변형하려는 경우 대신 프로젝트 속성을 사용해야 합니다.
 
  프로젝트 속성을 정의하기 위해 .csproj 또는 .vbproj 파일을 편집합니다. 이 예제에서는 `myLibFolder`라는 속성을 정의합니다.
@@ -92,5 +92,5 @@ ms.locfileid: "72672331"
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [T4 Include 지시문](../modeling/t4-include-directive.md)

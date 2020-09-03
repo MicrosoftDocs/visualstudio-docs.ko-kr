@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985466"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>연습: Outlook 양식 영역 디자인
@@ -39,12 +39,12 @@ ms.locfileid: "72985466"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>Prerequisites
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] 이상
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] 이상.
 
   ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 링크") 이 항목의 비디오 버전은 [비디오 방법: Outlook 양식 영역 디자인](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90))을 참조 하세요.
 
@@ -53,7 +53,7 @@ ms.locfileid: "72985466"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>새 Outlook VSTO 추가 기능 프로젝트를 만들려면
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 이름이 **Mapitaddin**인 Outlook VSTO 추가 기능 프로젝트를 만듭니다.
+1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 이름이 **Mapitaddin**인 Outlook VSTO 추가 기능 프로젝트를 만듭니다.
 
 2. **새 프로젝트** 대화 상자에서 **솔루션용 디렉터리 만들기**를 선택합니다.
 
@@ -122,7 +122,7 @@ ms.locfileid: "72985466"
 
     `MapItFactory`라는 양식 영역 팩터리 클래스가 노출됩니다.
 
-3. 다음 코드를 `MapItFactory_FormRegionInitializing` 이벤트 처리기에 추가합니다. 이 이벤트 처리기는 사용자가 연락처 항목을 열 때 호출됩니다. 다음 코드는 연락처 항목에 주소가 포함되어 있는지 여부를 확인합니다. 연락처 항목에 주소가 포함 되어 있지 않으면이 코드는 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 클래스의 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 속성을 **true** 로 설정 하 고 양식 영역이 표시 되지 않습니다. 그렇지 않은 경우 VSTO 추가 기능에서 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 이벤트가 발생하고 양식 영역이 표시됩니다.
+3. 다음 코드를 `MapItFactory_FormRegionInitializing` 이벤트 처리기에 추가합니다. 이 이벤트 처리기는 사용자가 연락처 항목을 열 때 호출됩니다. 다음 코드는 연락처 항목에 주소가 포함되어 있는지 여부를 확인합니다. 연락처 항목에 주소가 포함 되어 있지 않으면이 코드는 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 클래스의 속성을 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> **true** 로 설정 하 고 양식 영역이 표시 되지 않습니다. 그렇지 않은 경우 VSTO 추가 기능에서 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 이벤트가 발생하고 양식 영역이 표시됩니다.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
@@ -143,7 +143,7 @@ ms.locfileid: "72985466"
 
 ### <a name="to-test-the-map-it-form-region"></a>Map It 양식 영역을 테스트하려면
 
-1. **F5** 키를 눌러 프로젝트를 실행합니다.
+1. **F5** 키를 눌러 프로젝트를 실행 합니다.
 
      Outlook이 열립니다.
 
@@ -151,10 +151,10 @@ ms.locfileid: "72985466"
 
 3. 연락처 양식에서 연락처 이름으로 **Ann Beebe** 를 입력 하 고 다음 세 개의 주소를 지정 합니다.
 
-    |주소 형식|Address|
+    |주소 형식|주소|
     |------------------|-------------|
-    |**회사**|**4567 주 세인트 Buffalo,**|
-    |**Home**|**1234 북부 Buffalo**|
+    |**비즈니스**|**4567 주 세인트 Buffalo,**|
+    |**홈**|**1234 북부 Buffalo**|
     |**기타**|**3456 주 세인트 시애틀, WA**|
 
 4. 연락처 항목을 저장하고 닫습니다.
@@ -172,7 +172,7 @@ ms.locfileid: "72985466"
 
 - Outlook 항목의 리본을 사용자 지정 하는 방법에 대 한 자세한 내용은 [outlook의 리본 메뉴 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
 - [Outlook 양식 영역 만들기 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)

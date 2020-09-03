@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 31bf7fe33aa59c3a713d2da81ddbd11ed6899723
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546291"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: 개체를 여러 번 삭제하지 마십시오.
@@ -47,7 +47,7 @@ ms.locfileid: "85546291"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다. 개체의를 <xref:System.IDisposable.Dispose%2A> 안전 하 게 호출할 수 있는 것으로 알려진 경우에도 나중에 구현이 변경 될 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  중첩 `using` 된 문 ( `Using` Visual Basic)은 CA2202 경고 위반을 일으킬 수 있습니다. 중첩 된 내부 문의 IDisposable 리소스가 `using` 외부 문의 리소스를 포함 하는 경우 `using` 중첩 된 `Dispose` 리소스의 메서드는 포함 된 리소스를 해제 합니다. 이러한 상황이 발생 하면 `Dispose` 외부 문의 메서드는 `using` 해당 리소스를 두 번 삭제 하려고 시도 합니다.
 
  다음 예제에서 <xref:System.IO.Stream> 외부 using 문으로 만든 개체는 개체가 포함 된 개체의 Dispose 메서드에 있는 using 문 끝에서 해제 됩니다 <xref:System.IO.StreamWriter> `stream` . 외부 문의 끝에 개체를 `using` `stream` 두 번 해제 합니다. 두 번째 릴리스는 CA2202를 위반 하는 것입니다.
@@ -62,7 +62,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 문제를 해결 하려면 `try` / `finally` 외부 문 대신 블록을 사용 `using` 합니다. 블록에서 `finally` `stream` 리소스가 null이 아닌지 확인 합니다.
 
 ```
@@ -83,5 +83,5 @@ finally
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234720"
 ---
 # <a name="troubleshoot-office-solutions"></a>Office 솔루션 문제 해결
   이 섹션에는 Visual Studio의 Office 개발 도구를 사용하여 솔루션을 만들 때 발생할 수 있는 일반적인 문제를 해결하기 위한 팁이 들어 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 - [Office 솔루션의 오류 문제 해결](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  Visual Studio에서 Office 솔루션을 디자인하고 실행하고 테스트하는 동안 발생할 수 있는 일반적인 문제에 대해 설명합니다.
@@ -58,6 +58,6 @@ ms.locfileid: "87234720"
 
  Office 솔루션을 프로그래밍하는 방법에 대해 질문과 대답을 나열하고 일반적인 문제를 해결하는 데 도움이 되는 항목에 대한 링크를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

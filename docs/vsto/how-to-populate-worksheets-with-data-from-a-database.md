@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520122"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>방법: 데이터베이스의 데이터로 워크시트 채우기
@@ -67,7 +67,7 @@ Windows Forms 프로젝트의 데이터에 액세스 하는 것과 동일한 방
 
 형식화 된 데이터 집합 및 데이터베이스에 업데이트를 보내는 방법에 대 한 자세한 내용은 [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)

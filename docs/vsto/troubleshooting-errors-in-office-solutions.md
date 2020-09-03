@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234694"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office 솔루션의 오류 문제 해결
@@ -40,7 +40,7 @@ ms.locfileid: "87234694"
 
 - [프로젝트 디버그](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>프로젝트 만들기, 업그레이드 및 열기
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> 프로젝트 만들기, 업그레이드 및 열기
  Office 프로젝트를 만들거나 열 때 다음과 같은 오류가 발생할 수 있습니다.
 
 ### <a name="the-project-cannot-be-created"></a>프로젝트를 만들 수 없습니다.
@@ -84,7 +84,7 @@ ms.locfileid: "87234694"
 
  프로젝트 업그레이드를 완료한 후 다른 Office 솔루션에서 사용되고 있지 않으면 개발 컴퓨터에서 Visual Studio 2005 Tools for Office Second Edition Runtime을 제거할 수 있습니다.
 
-## <a name="use-the-designers"></a><a name="designers"></a>디자이너 사용
+## <a name="use-the-designers"></a><a name="designers"></a> 디자이너 사용
  문서 수준 프로젝트에서 문서, 통합 문서 또는 워크시트 디자이너를 사용하는 경우 다음과 같은 오류가 발생할 수 있습니다.
 
 ### <a name="designer-failed-to-load-correctly"></a>디자이너를 올바르게 로드 하지 못했습니다.
@@ -105,7 +105,7 @@ ms.locfileid: "87234694"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Visual Studio 디자이너에서 클립 아트 삽입 명령을 수행 하지 않습니다.
  Excel 또는 Word가 Visual Studio 디자이너에서 열려 있는 경우 리본의 **그림** 탭에 있는 **클립 아트** 단추를 클릭 해도 **클립 아트** 작업창이 열리지 않습니다. 클립 아트를 추가 하려면 Visual Studio 외부의 기본 프로젝트 폴더 ( *\bin* 폴더에 있는 복사본이 아님)에 있는 통합 문서 또는 문서의 복사본을 열고 클립 아트를 추가한 다음 통합 문서 또는 문서를 저장 해야 합니다.
 
-## <a name="write-code"></a><a name="code"></a>코드 작성
+## <a name="write-code"></a><a name="code"></a> 코드 작성
  Office 프로젝트에서 코드를 작성할 때 다음과 같은 오류가 발생할 수 있습니다.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>C를 사용 하는 경우 Office 개체의 일부 이벤트에 액세스할 수 없습니다.\#
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Word 또는 Excel 네임 스페이스를 가져오고 그 안에 있는 모든 클래스에 액세스할 수 있는 경우에도 Word 또는 Excel을 사용 하 여 모든 형식을 정규화 하 여 네임 스페이스 모호성을 제거 해야 합니다.
 
-## <a name="build-projects"></a><a name="building"></a>빌드 프로젝트
+## <a name="build-projects"></a><a name="building"></a> 프로젝트 빌드
  Office 프로젝트를 빌드하면 다음과 같은 오류가 발생할 수 있습니다.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>권한이 제한 된 문서를 기반으로 하는 문서 수준 프로젝트는 빌드할 수 없습니다.
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>NamedRange 컨트롤이 삭제 된 후 컴파일러 오류가 발생 합니다.
  디자이너에서 활성 워크시트가 아닌 워크시트에서 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 삭제하는 경우 프로젝트에서 자동 생성된 코드를 제거할 수 없으며 컴파일러 오류가 발생할 수 있습니다. 코드를 제거하려면 컨트롤을 삭제하기 전에 항상 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 포함된 워크시트를 선택하여 활성 워크시트로 만들어야 합니다. 컨트롤을 삭제할 때 자동 생성된 코드가 삭제되지 않는 경우 워크시트를 활성화하고 워크시트가 수정된 상태로 표시되도록 내용을 변경하여 디자이너에서 코드를 삭제하게 할 수 있습니다. 프로젝트를 다시 빌드하면 코드가 제거됩니다.
 
-## <a name="debug-projects"></a><a name="debugging"></a>프로젝트 디버그
+## <a name="debug-projects"></a><a name="debugging"></a> 프로젝트 디버그
  Office 프로젝트를 디버그하면 다음과 같은 오류가 발생할 수 있습니다.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>개발 컴퓨터에 솔루션을 게시 및 설치할 때 제거 메시지가 표시 됩니다.
@@ -213,7 +213,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  대화 상자에서 **예** 또는 **아니요** 를 클릭 하면 Visual Studio는 Excel 또는 Word 프로세스를 종료 하 고 디버거를 중지 합니다. 이 대화 상자를 표시하지 않고 프로젝트 디버깅을 중지하려면 Visual Studio에서 디버거를 중지하는 대신 Excel 또는 Word를 직접 종료합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션 문제 해결](../vsto/troubleshooting-office-solutions.md)
 - [Office 솔루션 보안 문제 해결](../vsto/troubleshooting-office-solution-security.md)
 - [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)

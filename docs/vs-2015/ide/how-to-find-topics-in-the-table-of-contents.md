@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651881"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>방법: 목차에서 항목 찾기
@@ -32,7 +32,7 @@ ms.locfileid: "72651881"
 > 목차에서 사용할 수 있는 항목의 범위는 선택한 필터에 따라 다릅니다.
 
 ## <a name="filter-the-toc"></a>목차 필터링
- 목차를 필터링 하 여 **콘텐츠** 탭에 나타나는 항목의 범위를 좁힐 수 있습니다. 제목은 지정 된 용어의 루트를 포함 하는 경우에만 목록에 표시 됩니다. 예를 들어 필터로 "문제 해결하기"를 지정하는 경우 "문제 해결" 또는 “문제 해결하기"가 포함된 제목만 나타납니다. 제목에 해당 어구가 포함되지 않은 노드는 줄임표(...)가 있는 단일 노드로 축소됩니다.
+ 목차를 필터링 하 여 **콘텐츠** 탭에 나타나는 항목의 범위를 좁힐 수 있습니다. 지정 된 용어의 루트를 포함 하는 경우에만 목록에 제목이 표시 됩니다. 예를 들어 필터로 "문제 해결하기"를 지정하는 경우 "문제 해결" 또는 “문제 해결하기"가 포함된 제목만 나타납니다. 제목에 해당 어구가 포함되지 않은 노드는 줄임표(...)가 있는 단일 노드로 축소됩니다.
 
 #### <a name="to-filter-the-toc"></a>목차를 필터링하려면
 
@@ -50,9 +50,9 @@ ms.locfileid: "72651881"
 
 1. 항목을 봅니다.
 
-2. 도구 모음에서 **콘텐츠에 항목 표시** 단추를 클릭하거나 Ctrl+S를 누릅니다.
+2. 도구 모음에서 **콘텐츠에 항목 표시** 단추를 클릭 하거나 Ctrl + S를 누릅니다.
 
      **콘텐츠** 탭이 열리고 목차에서 항목의 위치가 표시됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [정보 찾기](../ide/locate-information.md) [Microsoft 도움말 뷰어](../ide/microsoft-help-viewer.md)

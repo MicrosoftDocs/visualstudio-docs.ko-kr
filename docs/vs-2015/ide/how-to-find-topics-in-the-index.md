@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651934"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>방법: 색인에서 항목 찾기
@@ -43,5 +43,5 @@ ms.locfileid: "72651934"
 
      지정한 키워드가 하나의 항목에만 연결된 경우 해당 항목이 나타납니다. 그렇지 않으면 해당 키워드와 연결된 모든 항목 목록이 나타납니다.
 
-## <a name="see-also"></a>참고 항목
- [색인 검색 팁](../ide/index-search-tips.md)
+## <a name="see-also"></a>관련 항목
+ [인덱스 검색 팁](../ide/index-search-tips.md)

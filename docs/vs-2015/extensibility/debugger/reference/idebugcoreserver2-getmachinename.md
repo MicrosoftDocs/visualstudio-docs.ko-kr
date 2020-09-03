@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineName | Microsoft Docs
+title: 'IDebugCoreServer2:: GetMachineName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0be8ffadec79906ecc27e797627cfbcb2a8782d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182938"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-핵심 서버에서 실행 중인 컴퓨터의 이름을 가져옵니다.  
+핵심 서버가 실행 되 고 있는 컴퓨터의 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,10 +40,10 @@ int GetName( 
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrName`  
- [out] 컴퓨터의 이름을 포함 하는 문자열을 반환 합니다.  
+ 제한이 컴퓨터의 이름을 포함 하는 문자열을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

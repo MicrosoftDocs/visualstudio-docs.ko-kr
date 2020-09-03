@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87115328"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO 추가 기능 프로그램
@@ -105,7 +105,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 
-### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a>Office 응용 프로그램이 시작 될 때 문서 액세스
+### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a> Office 응용 프로그램이 시작 될 때 문서 액세스
  일부 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 애플리케이션은 시작될 때 자동으로 문서를 열지 않고, [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 애플리케이션은 시작될 때 문서를 열지 않습니다. 따라서 `ThisAdd-In_Startup` 코드에서 문서를 열어야 하는 경우 이벤트 처리기에 코드를 추가 하지 마세요. 대신 사용자가 문서를 만들거나 열 때 Office 애플리케이션에서 발생하는 이벤트에 해당 코드를 추가합니다. 이런 식으로 코드에서 작업을 수행하기 전에 문서가 열리도록 할 수 있습니다.
 
  다음 코드 예제에서는 사용자가 문서를 만들거나 기존 문서를 여는 경우에만 Word에서 문서로 작업합니다.
@@ -116,7 +116,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 ### <a name="thisaddin-members-to-use-for-other-tasks"></a>다른 작업에 사용할 ThisAddIn 멤버
  다음 표에서는 다른 일반적인 작업에 대해 설명하고 작업을 수행하는 데 사용할 수 있는 `ThisAddIn` 클래스의 멤버를 보여 줍니다.
 
-|작업|사용할 멤버|
+|Task|사용할 멤버|
 |----------|-------------------|
 |VSTO 추가 기능이 로드될 때 코드를 실행하여 VSTO 추가 기능을 초기화합니다.|`ThisAddIn_Startup` 메서드에 코드를 추가합니다. <xref:Microsoft.Office.Tools.AddInBase.Startup> 이벤트에 대한 기본 이벤트 처리기입니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.|
 |VSTO 추가 기능이 언로드되기 전에 코드를 실행하여 VSTO 추가 기능에서 사용된 리소스를 정리합니다.|`ThisAddIn_Shutdown` 메서드에 코드를 추가합니다. <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트에 대한 기본 이벤트 처리기입니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요. **참고:**  Outlook에서는 기본적으로 `ThisAddIn_Shutdown` VSTO 추가 기능이 언로드될 때 이벤트 처리기가 항상 호출 되지는 않습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.|
@@ -143,7 +143,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  자세한 내용은 [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)

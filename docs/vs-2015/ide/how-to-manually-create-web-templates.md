@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651809"
 ---
 # <a name="how-to-manually-create-web-templates"></a>방법: 수동으로 웹 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-웹 템플릿을 만드는 것은 다른 종류의 템플릿을 만드는 것과 다릅니다. 웹 프로젝트 템플릿은 **새 웹 사이트 추가** 대화 상자에 나타나고 웹 프로젝트 항목은 프로그래밍 언어에 따라 분류되므로 .vstemplate 파일은 템플릿을 웹 템플릿으로 지정하고 프로그래밍 언어를 식별해야 합니다.
+웹 템플릿을 만드는 것은 다른 종류의 템플릿을 만드는 것과 다릅니다. 웹 프로젝트 템플릿은 **새 웹 사이트 추가** 대화 상자에 나타나고 웹 프로젝트 항목은 프로그래밍 언어에 따라 분류 되므로 .vstemplate 파일은 템플릿을 웹 템플릿으로 지정 하 고 프로그래밍 언어를 식별 해야 합니다.
 
 > [!NOTE]
 > 웹 템플릿은 `Project` 요소의 `File` 특성을 사용하여 지정된 빈 .webproj 파일을 포함해야 합니다. 웹 프로젝트에는 프로젝트 파일이 필요하지 않지만 웹 템플릿이 제대로 작동하기 위해서는 이 파일이 필요합니다.
@@ -47,7 +47,7 @@ ms.locfileid: "72651809"
 
    - VisualBasic
 
-     예를 들면,
+     예를 들어:
 
    ```
    <TemplateData>
@@ -86,5 +86,5 @@ ms.locfileid: "72651809"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

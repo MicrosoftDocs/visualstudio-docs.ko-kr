@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e386277c56f7da50e55e077620cbf649ec6a0c9e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546252"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 기능
@@ -43,12 +43,12 @@ IntelliTrace를 사용하여 애플리케이션의 이벤트 및 메서드 호�
 > [!NOTE]
 > **IntelliTrace** 옵션 페이지에 있는 모든 설정의 범위는 개별 프로젝트나 솔루션이 아니라 Visual Studio 전체입니다. 이 설정에서 변경된 내용은 Visual Studio의 모든 인스턴스, 모든 디버깅 세션 및 모든 프로젝트나 솔루션에 적용됩니다.  
   
-## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a>IntelliTrace에서 기록 하는 이벤트를 선택 합니다.  
+## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a> IntelliTrace에서 기록 하는 이벤트를 선택 합니다.  
  특정 IntelliTrace 이벤트에 대한 기록을 설정하거나 해제할 수 있습니다.  
   
  디버그 중이면 디버깅을 중지합니다. **도구/옵션/intellitrace/Intellitrace 이벤트**로 이동 합니다. IntelliTrace에서 기록하도록 지정할 이벤트를 선택합니다.  
   
-## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a>IntelliTrace 이벤트 및 호출 정보 수집  
+## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a> IntelliTrace 이벤트 및 호출 정보 수집  
  이 기능은 기본적으로 사용하도록 설정되어 있지 않지만, IntelliTrace는 이벤트와 함께 메서드 호출을 기록할 수 있습니다. 메서드 호출의 컬렉션을 사용 하도록 설정 하려면 **도구/옵션/intellitrace/일반**으로 이동 하 고 **intellitrace 이벤트 및 호출 정보**를 선택 합니다.  
   
  이렇게 하면 호출 스택 이력을 참조하고 코드에서 호출을 통해 앞뒤로 이동할 수 있습니다. IntelliTrace는 메서드 이름, 메서드 시작/종료 지점, 특정 매개 변수 값, 반환 값 등의 데이터를 기록합니다.  
@@ -82,7 +82,7 @@ IntelliTrace를 사용하여 애플리케이션의 이벤트 및 메서드 호�
   
  모듈의 수를 최소로 유지합니다. 그러면 수집할 데이터의 양이 적기 때문에 성능이 높아집니다. 또한 검토할 데이터가 적기 때문에 UI의 노이즈가 줄어듭니다.  
   
-## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a>IntelliTrace 데이터를 파일에 저장 하는 중  
+## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a> IntelliTrace 데이터를 파일에 저장 하는 중  
  디버깅 하는 동안 IntelliTrace가 수집 하 여 디버깅 **/intellitrace/Intellitrace 세션을 저장** 하 고 응용 프로그램이 중단 상태인 데이터를 저장할 수 있습니다. 애플리케이션이 계속 실행 중이거나 디버깅을 중지한 경우에는 해당 메뉴 항목이 비활성화되어 IntelliTrace에서 수집된 데이터를 저장할 수 없게 됩니다.  
   
  **도구/옵션/IntelliTrace/고급** 으로 이동 하 고 **이 디렉터리에 intellitrace 기록 저장**을 선택 하 여 intellitrace를 자동으로 파일에 저장 하도록 구성할 수 있습니다. 생성된 파일에 대해 집합 크기를 구성할 수도 있습니다. 그러면 공간이 부족할 때 IntelliTrace가 오래된 데이터를 덮어씁니다. Visual Studio는 자동으로 저장되고 Visual Studio 호스팅 프로세스(vshost.exe)가 켜져 있는 경우 각 IntelliTrace 세션에 대해 두 개의 파일을 만듭니다.  

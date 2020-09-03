@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5c1e254ae7912efbb6773155ed834e54a1db1832
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546330"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: 투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.

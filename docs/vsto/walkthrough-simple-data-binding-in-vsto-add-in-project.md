@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985400"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 단순 데이터 바인딩
@@ -37,15 +37,15 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
 
-이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 또는 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-- `AdventureWorksLT` 샘플 데이터베이스가 연결된 SQL Server 2005 또는 SQL Server 2005 Express의 실행 중인 인스턴스 액세스 권한 `AdventureWorksLT` 데이터베이스는 [GitHub 리포지토리 SQL Server 샘플](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)에서 다운로드할 수 있습니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
+- `AdventureWorksLT` 샘플 데이터베이스가 연결된 SQL Server 2005 또는 SQL Server 2005 Express의 실행 중인 인스턴스 액세스 권한 `AdventureWorksLT` [SQL Server 샘플 GitHub 리포지토리](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)에서 데이터베이스를 다운로드할 수 있습니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
 
   - SQL Server Management Studio 또는 SQL Server Management Studio Express를 사용 하 여 데이터베이스를 연결 하려면 [방법: 데이터베이스 연결 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)을 참조 하세요.
 
@@ -63,15 +63,15 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
      Visual Studio에서 *ThisAddIn* 또는 *ThisAddIn.cs* 파일을 열고 **데이터베이스 프로젝트의 문서 채우기** 를 **솔루션 탐색기**에 추가 합니다.
 
-2. 프로젝트가 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]를 대상으로 하는 경우에는 Microsoft. c o r e. r e c. r e c. r e n t. r e n t. p r *o d* . p 이 참조는 이 연습의 뒷부분에서 프로그래밍 방식으로 문서에 Windows Forms 컨트롤을 추가하는 데 필요합니다.
+2. 프로젝트가 또는를 대상으로 하는 경우 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* 어셈블리에 대 한 참조를 추가 합니다. 이 참조는 이 연습의 뒷부분에서 프로그래밍 방식으로 문서에 Windows Forms 컨트롤을 추가하는 데 필요합니다.
 
-## <a name="create-a-data-source"></a>데이터 원본 만들기
+## <a name="create-a-data-source"></a>데이터 소스 만들기
 
 **데이터 원본** 창을 사용하여 형식화된 데이터 세트를 프로젝트에 추가합니다.
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 세트를 추가하려면
 
-1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서 **다른 Windows** > **데이터 원본** > **보기** 를 선택 하 여 표시 합니다.
+1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 소스**보기를 선택 하 여 표시 합니다.
 
 2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
 
@@ -91,7 +91,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
    - `AdventureWorksLTDataSet`라는 형식화된 데이터 세트. 이 데이터 세트는 AdventureWorksLT 데이터베이스의 **Customer(SalesLT)** 테이블 내용을 나타냅니다.
 
-   - 이름이 `CustomerTableAdapter`TableAdapter입니다. 이 TableAdapter를 사용 하 여 `AdventureWorksLTDataSet`에서 데이터를 읽고 쓸 수 있습니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)를 참조 하세요.
+   - 라는 TableAdapter `CustomerTableAdapter` 입니다. 이 TableAdapter를 사용 하 여에서 데이터를 읽고 쓸 수 있습니다 `AdventureWorksLTDataSet` . 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)를 참조 하세요.
 
      이 연습 뒷부분에서는 이러한 두 개체를 모두 사용합니다.
 
@@ -150,7 +150,7 @@ Word를 열면 콘텐츠 컨트롤에 `AdventureWorksLTDataSet` 데이터 세트
 
 2. **다음** 및 **이전** 단추를 클릭하여 데이터베이스 레코드를 스크롤합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
@@ -163,7 +163,7 @@ Word를 열면 콘텐츠 컨트롤에 `AdventureWorksLTDataSet` 데이터 세트
 - [연습: 문서 수준 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Office 솔루션에서 로컬 데이터베이스 파일 사용 개요](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)
+- [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

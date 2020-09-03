@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520070"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>방법: 리본 메뉴 사용자 지정 시작
@@ -69,7 +69,7 @@ ms.locfileid: "85520070"
 
    리본 항목이 **솔루션 탐색기**에 나타납니다. 다음 단계에 대 한 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [리본 XML](../vsto/ribbon-xml.md)

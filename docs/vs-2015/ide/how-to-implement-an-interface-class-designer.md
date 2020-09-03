@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6b750830e8263d0016f52a71ad4eac8c6950eda8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651859"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>방법: 인터페이스 구현(클래스 디자이너)
@@ -50,5 +50,5 @@ ms.locfileid: "72651859"
 
      롤리팝이 클래스에 연결되도록 표시되고 인터페이스 이름을 가진 레이블은 상속 관계를 식별합니다. Visual Studio는 모든 인터페이스 멤버에 대한 스텁을 생성합니다. 이 시점에서 인터페이스를 구현합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 클래스 디자이너를 사용 하 여 형식 만들기](../ide/how-to-create-types-by-using-class-designer.md) [방법: 기존 형식 보기 (클래스 디자이너)](../ide/how-to-view-existing-types-class-designer.md) [방법: 형식 간의 상속 만들기 (클래스 디자이너)](../ide/how-to-create-inheritance-between-types-class-designer.md) [클래스 및 형식 리팩터링 (클래스 디자이너)](../ide/refactoring-classes-and-types-class-designer.md)

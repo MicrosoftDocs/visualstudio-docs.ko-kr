@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234811"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office 솔루션 보안 문제 해결
@@ -48,6 +48,6 @@ ms.locfileid: "87234811"
 
  IEESC 및 Internet Explorer 7 이상 효과를 관리 하려면 신뢰 하는 웹 사이트와 UNC (범용 명명 규칙) 경로를 확인 하 고 신뢰할 수 있는 보안 영역 (로컬 인트라넷 또는 신뢰할 수 있는 사이트) 중 하나에 추가 합니다. 영역을 관리 하는 방법에 대 한 자세한 내용은 [ClickOnce의 신뢰할 수 있는 게시자 구성](/previous-versions/dotnet/articles/ms996418(v=msdn.10))을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

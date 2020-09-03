@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f13689b6e3ac4db2d58c1def3a5d0dd05c219f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672328"
 ---
 # <a name="list-source-command"></a>소스 목록 표시 명령
@@ -35,7 +35,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>스위치
- /Ccount: `number` 선택 사항입니다. 표시할 줄 수를 지정합니다.
+ /Count: `number` 선택 사항입니다. 표시할 줄 수를 지정합니다.
 
  /현재 선택 사항입니다. 현재 줄을 표시합니다.
 
@@ -54,5 +54,5 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [명령 창](../../ide/reference/command-window.md)

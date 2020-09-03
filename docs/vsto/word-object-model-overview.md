@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985386"
 ---
 # <a name="word-object-model-overview"></a>Word 개체 모델 개요
@@ -39,7 +39,7 @@ ms.locfileid: "72985386"
 
 - [테이블 작업](../vsto/working-with-tables.md)
 
-## <a name="understanding"></a>Word 개체 모델 이해
+## <a name="understand-the-word-object-model"></a><a name="understanding"></a> Word 개체 모델 이해
  Word는 조작할 수 있는 수백 개의 개체를 제공합니다. 이러한 개체는 사용자 인터페이스와 유사한 계층 구조로 구성됩니다. 계층 구조의 맨 위에는 <xref:Microsoft.Office.Interop.Word.Application> 개체가 있습니다. 이 개체는 Word의 현재 인스턴스를 나타냅니다. <xref:Microsoft.Office.Interop.Word.Application> 개체에는 <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>및 <xref:Microsoft.Office.Interop.Word.Range> 개체가 포함되어 있습니다. 이러한 각 개체에는 개체를 조작하고 상호 작용하기 위해 액세스할 수 있는 여러 메서드와 속성이 있습니다.
 
  다음 그림에서는 Word 개체 모델의 계층 구조에서 이러한 개체 보기 중 하나를 보여 줍니다.
@@ -50,7 +50,7 @@ ms.locfileid: "72985386"
 
  다음 섹션에서는 최상위 개체 및 최상위 개체가 서로 상호 작용하는 방식을 간략하게 설명합니다. 이러한 개체에는 다음 다섯 가지가 있습니다.
 
-- Application 개체
+- 애플리케이션 개체
 
 - Document 개체
 
@@ -62,7 +62,7 @@ ms.locfileid: "72985386"
 
   Word 개체 모델 외에도 Visual Studio의 Office 프로젝트는 Word 개체 모델에서 일부 개체를 확장하는 *호스트 항목* 및 *호스트 컨트롤* 을 제공합니다. 호스트 항목 및 호스트 컨트롤은 확장되는 Word 개체처럼 동작하지만 데이터 바인딩 기능과 같은 추가 기능 및 추가 이벤트도 제공합니다. 자세한 내용은 [확장 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md) 및 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
 
-### <a name="application-object"></a>Application 개체
+### <a name="application-object"></a>애플리케이션 개체
  <xref:Microsoft.Office.Interop.Word.Application> 개체는 Word 애플리케이션을 나타내며 다른 모든 개체의 부모입니다. 멤버는 일반적으로 전체 Word에 적용됩니다. 속성 및 메서드를 사용하여 Word 환경을 제어할 수 있습니다.
 
  VSTO 추가 기능 프로젝트에서 <xref:Microsoft.Office.Interop.Word.Application> 클래스의 `Application` 필드를 사용하여 `ThisAddIn` 개체에 액세스할 수 있습니다. 자세한 내용은 [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
@@ -74,7 +74,7 @@ ms.locfileid: "72985386"
 
  Visual Studio의 Office 개발 도구는 <xref:Microsoft.Office.Interop.Word.Document> 형식을 제공하여 <xref:Microsoft.Office.Tools.Word.Document> 개체를 확장합니다. 이 형식은 *개체의 모든 기능에 대한 액세스를 제공하고 추가 이벤트와 관리되는 컨트롤을 추가하는 기능을 추가하는* 호스트 항목 <xref:Microsoft.Office.Interop.Word.Document> 입니다.
 
- 문서 수준 프로젝트를 만드는 경우 프로젝트에서 생성된 <xref:Microsoft.Office.Tools.Word.Document> 클래스를 사용하여 `ThisDocument` 멤버에 액세스할 수 있습니다. `ThisDocument` 클래스의 코드에서 **Me** 또는 **this** 키워드를 사용 하거나 `ThisDocument` 클래스 외부의 코드에서 `Globals.ThisDocument`를 사용 하 여 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목의 멤버에 액세스할 수 있습니다. 자세한 내용은 [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)을 참조 하세요. 예를 들어 문서의 첫 번째 단락을 선택하려면 다음 코드를 사용합니다.
+ 문서 수준 프로젝트를 만드는 경우 프로젝트에서 생성된 <xref:Microsoft.Office.Tools.Word.Document> 클래스를 사용하여 `ThisDocument` 멤버에 액세스할 수 있습니다. <xref:Microsoft.Office.Tools.Word.Document>클래스의 코드에서 **Me** 또는 **this** 키워드를 사용 `ThisDocument` 하거나 클래스 외부의 코드에서를 사용 하 여 호스트 항목의 멤버에 액세스할 수 있습니다 `Globals.ThisDocument` `ThisDocument` . 자세한 내용은 [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)을 참조 하세요. 예를 들어 문서의 첫 번째 단락을 선택하려면 다음 코드를 사용합니다.
 
  [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
  [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]
@@ -111,11 +111,11 @@ ms.locfileid: "72985386"
 
 - <xref:Microsoft.Office.Interop.Word.Bookmark> 개체는 문서와 함께 저장되므로 코드 실행이 중지되거나 문서를 닫을 때 삭제되지 않습니다.
 
-- <xref:Microsoft.Office.Interop.Word.View> 개체의 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 속성을 **false** 또는 **true**로 설정 하 여 책갈피를 숨기 거 나 표시할 수 있습니다.
+- <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A>개체의 속성을 <xref:Microsoft.Office.Interop.Word.View> **false** 또는 **true**로 설정 하 여 책갈피를 숨기 거 나 표시할 수 있습니다.
 
   Visual Studio는 <xref:Microsoft.Office.Interop.Word.Bookmark> 호스트 컨트롤을 제공하여 <xref:Microsoft.Office.Tools.Word.Bookmark> 개체를 확장합니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 호스트 컨트롤은 네이티브 <xref:Microsoft.Office.Interop.Word.Bookmark>처럼 동작하지만 추가 이벤트 및 데이터 바인딩 기능이 있습니다. Windows Form의 텍스트 상자 컨트롤에 데이터를 바인딩하는 것과 동일한 방식으로 문서의 책갈피 컨트롤에 데이터를 바인딩할 수 있습니다. 자세한 내용은 [책갈피 컨트롤](../vsto/bookmark-control.md)을 참조 하세요.
 
-## <a name="WordOMDocumentation"></a>Word 개체 모델 설명서 사용
+## <a name="use-the-word-object-model-documentation"></a><a name="WordOMDocumentation"></a> Word 개체 모델 설명서 사용
  Word 개체 모델에 대한 자세한 내용은 Word PIA(주 interop 어셈블리) 참조 및 VBA(Visual Basic for Applications) 개체 모델 참조를 참조할 수 있습니다.
 
 ### <a name="primary-interop-assembly-reference"></a>주 interop 어셈블리 참조
@@ -126,9 +126,9 @@ ms.locfileid: "72985386"
 ### <a name="vba-object-model-reference"></a>VBA 개체 모델 참조
  VBA 개체 모델 참조에서는 VBA 코드로 표시되는 Word 개체 모델에 대해 설명합니다. 자세한 내용은 [Word 2010 개체 모델 참조](/office/vba/api/overview/Word/object-model)를 참조 하세요.
 
- VBA 개체 모델 참조의 모든 개체 및 멤버는 Word PIA의 형식 및 멤버에 해당합니다. 예를 들어 VBA 개체 모델 참조의 Document 개체는 Word PIA의 <xref:Microsoft.Office.Interop.Word.Document> 개체에 해당 합니다. VBA 개체 모델 참조에서는 대부분의 속성, 메서드 및 이벤트에 대한 코드 예제를 제공하지만 Visual Studio를 사용하여 만든 Word 프로젝트에서 사용하려면 이 참조의 VBA 코드를 Visual Basic 또는 Visual C#으로 변환해야 합니다.
+ VBA 개체 모델 참조의 모든 개체 및 멤버는 Word PIA의 형식 및 멤버에 해당합니다. 예를 들어 VBA 개체 모델 참조의 Document 개체는 <xref:Microsoft.Office.Interop.Word.Document> WORD PIA의 개체에 해당 합니다. VBA 개체 모델 참조에서는 대부분의 속성, 메서드 및 이벤트에 대한 코드 예제를 제공하지만 Visual Studio를 사용하여 만든 Word 프로젝트에서 사용하려면 이 참조의 VBA 코드를 Visual Basic 또는 Visual C#으로 변환해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [문서 작업](../vsto/working-with-documents.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546343"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: 예약된 예외 형식을 발생시키지 마세요.
@@ -66,19 +66,19 @@ ms.locfileid: "85546343"
 
 |매개 변수 설명|예외|
 |---------------------------|---------------|
-|`null`참조일|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null` 참조일|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |허용 되는 값 범위 (예: 컬렉션 또는 목록의 인덱스)를 벗어납니다.|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |잘못 된 `enum` 값|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
 |메서드의 매개 변수 사양을 충족 하지 않는 형식 (예:에 대 한 형식 문자열)을 포함 합니다. `ToString(String)`|<xref:System.FormatException?displayProperty=fullName>|
 |그렇지 않으면 유효 하지 않음|<xref:System.ArgumentException?displayProperty=fullName>|
 
- 작업이 개체의 현재 상태에 대해 유효 하지 않은 경우 throw 됩니다.<xref:System.InvalidOperationException?displayProperty=fullName>
+ 작업이 개체의 현재 상태에 대해 유효 하지 않은 경우 throw 됩니다. <xref:System.InvalidOperationException?displayProperty=fullName>
 
- 삭제 된 throw 된 개체에서 작업이 수행 되는 경우<xref:System.ObjectDisposedException?displayProperty=fullName>
+ 삭제 된 throw 된 개체에서 작업이 수행 되는 경우 <xref:System.ObjectDisposedException?displayProperty=fullName>
 
  작업이 지원 되지 않는 경우 (예: 재정의 된 스트림의 경우 읽기 위해 열린 스트림에 쓰기) throw **됩니다.**<xref:System.NotSupportedException?displayProperty=fullName>
 
- 변환으로 인해 오버플로가 발생 하는 경우 (예: 명시적 캐스트 연산자 오버 로드) throw<xref:System.OverflowException?displayProperty=fullName>
+ 변환으로 인해 오버플로가 발생 하는 경우 (예: 명시적 캐스트 연산자 오버 로드) throw <xref:System.OverflowException?displayProperty=fullName>
 
  다른 모든 경우에는에서 파생 되는 고유한 형식을 만들어이를 throw 하는 것이 좋습니다 <xref:System.Exception> .
 

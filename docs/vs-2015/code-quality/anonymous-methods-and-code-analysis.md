@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49da7d5e7f6a7731a708accb3d52fb6383ff1017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652218"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>무명 메서드 및 코드 분석
@@ -67,7 +67,7 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>인라인 무명 메서드
- 필드에 대 한 인라인 할당으로 선언 된 무명 메서드에 대 한 경고 및 메트릭은 생성자와 연결 됩니다. 필드가 `static` (`Shared` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)])로 선언 된 경우 경고 및 메트릭은 클래스 생성자와 연결 됩니다. 그렇지 않으면 인스턴스 생성자와 연결 됩니다.
+ 필드에 대 한 인라인 할당으로 선언 된 무명 메서드에 대 한 경고 및 메트릭은 생성자와 연결 됩니다. 필드가 (에서)로 선언 된 경우 `static` `Shared` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 경고 및 메트릭은 클래스 생성자와 연결 되 고, 그렇지 않으면 인스턴스 생성자와 연결 됩니다.
 
  예를 들어 다음 클래스에서 **anonymousMethod1** 선언에 있는 모든 경고는 **클래스**의 암시적으로 생성 된 기본 생성자에 대해 발생 합니다. 반면 **anonymousMethod2** 에 있는 해당 클래스는 암시적으로 생성 된 클래스 생성자에 대해 적용 됩니다.
 
@@ -152,5 +152,5 @@ class Class
 
  다음 두 가지 방법 중 하나로이 문제를 해결할 수 있습니다. 모든 생성자가 연결 하는 공용 생성자에서 **anonymousMethod** 를 선언할 수 있습니다. 또는 모든 생성자가 호출 하는 초기화 메서드에서 선언할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
