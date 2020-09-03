@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f4777bf6c94997b9291bb84fed07befa197a8c5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620306"
 ---
 # <a name="application-properties"></a>Application Properties
@@ -54,7 +54,7 @@ ms.locfileid: "72620306"
   애플리케이션에 사용할 수 있는 작업은 사용되는 개발 언어에 따라 달라집니다.
 
 ## <a name="in-this-section"></a>섹션 내용
- [방법: 애플리케이션 아이콘 지정(Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+ [방법: 응용 프로그램 아이콘 지정 (Visual Basic, c #)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
-## <a name="see-also"></a>참고 항목
- [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [C#응용 프로그램 페이지,](../ide/reference/application-page-project-designer-csharp.md) 프로젝트 디자이너 [소개 프로젝트 디자이너 소개](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) clickonce 응용 [프로그램](../deployment/publishing-clickonce-applications.md) 에 대 한 clickonce 응용 프로그램 [보호](../deployment/securing-clickonce-applications.md) [디버깅 속성 관리](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [컴파일 속성](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) 관리 [응용 프로그램 리소스 관리 (](../ide/managing-application-resources-dotnet.md) .net) [응용 프로그램 설정 관리 (.net)](../ide/managing-application-settings-dotnet.md)
+## <a name="see-also"></a>관련 항목
+ [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [응용 프로그램 페이지,](../ide/reference/application-page-project-designer-csharp.md) 프로젝트 디자이너 [소개 clickonce](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [응용 프로그램 게시](../deployment/publishing-clickonce-applications.md) Clickonce 응용 프로그램 [보호](../deployment/securing-clickonce-applications.md) [디버깅 속성](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) 관리 [컴파일 속성](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) 관리 [응용 프로그램 리소스 관리 (.net)](../ide/managing-application-resources-dotnet.md) [응용 프로그램 설정](../ide/managing-application-settings-dotnet.md) 관리 (.net)

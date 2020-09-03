@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a8ff19ab503efe58e207d36a87babb5b8a80b28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645388"
 ---
 # <a name="text-editor-options-dialog-box"></a>텍스트 편집기 옵션 대화 상자
@@ -33,7 +33,7 @@ ms.locfileid: "72645388"
 
 **옵션** 대화 상자의 편집기 옵션은 편집기의 모양 및 동작을 사용자 지정하는 방법을 제공합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [방법: 편집기에서 글꼴 및 색 변경](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) 편집기 글꼴 및 색을 변경 하는 방법을 설명 합니다.
 
  [방법: 편집기에서 자동 줄 바꿈 관리](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md) 자동 줄 바꿈 옵션을 설명 합니다.
@@ -54,15 +54,15 @@ ms.locfileid: "72645388"
 
  [옵션, 텍스트 편집기, 기본 (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Visual Basic 옵션을 설명 합니다.
 
- [옵션, 텍스트 편집기, C/C++, 서식 지정](../../ide/reference/options-text-editor-c-cpp-formatting.md) 은 cC++ /서식 옵션을 설명 합니다.
+ [옵션, 텍스트 편집기, C/c + +, 서식](../../ide/reference/options-text-editor-c-cpp-formatting.md) C/c + + 서식 옵션에 대해 설명 합니다.
 
- [옵션, 텍스트 편집기, C/C++, 고급](../../ide/reference/options-text-editor-c-cpp-advanced.md) 은 c/C++ 고급 옵션을 설명 합니다.
+ [옵션, 텍스트 편집기, C/c + +, 고급](../../ide/reference/options-text-editor-c-cpp-advanced.md) C/c + + 고급 옵션에 대해 설명 합니다.
 
- [옵션, 텍스트 편집기, C#서식](../../ide/reference/options-text-editor-csharp-formatting.md) 지정 옵션 C# 을 설명 합니다.
+ [옵션, 텍스트 편집기, c #, 서식](../../ide/reference/options-text-editor-csharp-formatting.md) C # 서식 옵션에 대해 설명 합니다.
 
- [옵션, 텍스트 편집기, C#고급](../../ide/reference/options-text-editor-csharp-advanced.md) 고급 옵션 C# 을 설명 합니다.
+ [옵션, 텍스트 편집기, c #, 고급](../../ide/reference/options-text-editor-csharp-advanced.md) C # 고급 옵션을 설명 합니다.
 
- [옵션, 텍스트 편집기, C#intellisense는](../../ide/reference/options-text-editor-csharp-intellisense.md) intellisense C# 옵션을 설명 합니다.
+ [옵션, 텍스트 편집기, c #, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) C # IntelliSense 옵션을 설명 합니다.
 
  [옵션, 텍스트 편집기, JavaScript, 서식](../../ide/reference/options-text-editor-javascript-formatting.md) JavaScript 서식 옵션에 대해 설명 합니다.
 
@@ -70,5 +70,5 @@ ms.locfileid: "72645388"
 
  [옵션, 텍스트 편집기, XAML, 서식](../../ide/reference/options-text-editor-xaml-formatting.md) XAML 서식 옵션에 대해 설명 합니다.
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
  [코드 작성](../../ide/writing-code-in-the-code-and-text-editor.md) 코드 편집기를 사용 하는 다양 한 방법을 설명 합니다.

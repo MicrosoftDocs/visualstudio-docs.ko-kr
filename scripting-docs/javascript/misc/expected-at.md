@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814826"
 ---
 # <a name="expected-"></a>' '가 필요 합니다. \@
@@ -26,13 +26,13 @@ ms.locfileid: "85814826"
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- **@** 변수 이름 바로 앞에 "" 기호를 추가 합니다. 예를 들어:  
+- **@** 변수 이름 바로 앞에 "" 기호를 추가 합니다. 예를 들면 다음과 같습니다.  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
 ## <a name="see-also"></a>참고 항목  
- [@set선언문](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set 선언문](../../javascript/reference/at-set-statement-javascript.md)   
  [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
  [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)

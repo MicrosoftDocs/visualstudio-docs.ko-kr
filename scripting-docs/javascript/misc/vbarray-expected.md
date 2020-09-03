@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 09ab257e6c473e2747a24559200e7b1f432d5687
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815281"
 ---
 # <a name="vbarray-expected"></a>VBArray가 필요합니다.
@@ -34,6 +34,6 @@ new VBArray(safeArray);
   
 - **Vbarray 생성자에** **vbarray** 개체만 전달 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [VBArray 개체](../../javascript/reference/vbarray-object-javascript.md)   
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)

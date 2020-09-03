@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851524"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5단계: 폼에 컨트롤 추가
@@ -21,7 +21,7 @@ ms.locfileid: "75851524"
 
 이 단계에서는 `PictureBox` 컨트롤 및 `CheckBox` 컨트롤과 같은 컨트롤을 폼에 추가합니다. 그런 다음 폼에 단추를 추가합니다.
 
- ![비디오에 연결](../data-tools/media/playvideo.gif "동영상 재생") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) 또는 [자습서 1: 비디오 2에서 C# 사진 뷰어 만들기](https://msdn.microsoft.com/vcsharp/gg278410.aspx)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) 또는 [자습서 1: c #에서 사진 뷰어 만들기-비디오 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-add-controls-to-your-form"></a>폼에 컨트롤을 추가하려면
 
@@ -49,7 +49,7 @@ ms.locfileid: "75851524"
 
      ![Stretch 속성이 있는 TextBox 컨트롤](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") Stretch 속성이 있는 TextBox 컨트롤
 
-8. 폼에서 TableLayoutPanel을 선택하고 도구 상자에서 TableLayoutPanel 컨트롤이 있는 **컨테이너** 그룹으로 이동한 다음 **FlowLayoutPanel** 항목을 두 번 클릭하여 PictureBox의 마지막 셀(오른쪽 맨 아래)에 새 컨트롤을 추가합니다. 그런 다음 FlowLayoutPanel의 검정색 삼각형 작업 목록에서 **부모 컨테이너에서 도킹**을 선택하거나 FlowLayoutPanel의 **Dock** 속성을 **채우기**로 설정하여 FlowLayoutPanel을 TableLayoutPanel에 도킹합니다.
+8. 폼에서 TableLayoutPanel을 선택하고 도구 상자에서 TableLayoutPanel 컨트롤이 있는 **컨테이너** 그룹으로 이동한 다음, **FlowLayoutPanel** 항목을 두 번 클릭하여 PictureBox의 마지막 셀(오른쪽 맨 아래)에 새 컨트롤을 추가합니다. 그런 다음 FlowLayoutPanel의 검정색 삼각형 작업 목록에서 **부모 컨테이너에서 도킹**을 선택하거나 FlowLayoutPanel의 **Dock** 속성을 **채우기**로 설정하여 FlowLayoutPanel을 TableLayoutPanel에 도킹합니다.
 
     > [!NOTE]
     > FlowLayoutPanel은 다른 컨트롤을 줄 맞춰 순서대로 정렬하는 컨트롤입니다. FlowLayoutPanel의 크기를 조정하면 공간이 충분한 경우 하나의 행에 모든 컨트롤이 레이아웃됩니다. 그렇지 않은 경우 하나씩 쌓아올리는 방식으로 순서대로 정렬됩니다. FlowLayoutPanel을 사용하여 네 개의 단추를 수용합니다. 단추를 추가할 때 하나씩 쌓아올리는 방식으로 배열되는 경우 단추를 추가하기 전에 FlowLayoutPanel이 선택되었는지 확인하십시오. 위에서 각 셀에는 하나의 컨트롤만 있을 수 있다고 언급했지만 TableLayoutPanel의 오른쪽 아래 셀에는 네 개의 단추 컨트롤이 있습니다. 다른 컨트롤을 포함하는 컨트롤을 셀에 배치할 수 있기 때문입니다. 이러한 유형의 컨트롤을 컨테이너라고 하며, FlowLayoutPanel은 컨테이너입니다.

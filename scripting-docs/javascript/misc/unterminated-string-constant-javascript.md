@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f59fd95b77ec6a3cd2486ff954002daeb0364321
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815320"
 ---
 # <a name="unterminated-string-constant-javascript"></a>종결되지 않은 문자열 상수입니다.(JavaScript)
@@ -31,6 +31,6 @@ ms.locfileid: "85815320"
   
 - 문자열의 끝에 닫는 따옴표를 추가 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [String 개체](../../javascript/reference/string-object-javascript.md)   
  [toString 메서드(Object)](../../javascript/reference/tostring-method-object-javascript.md)

@@ -12,16 +12,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4e686b5e105b0ea0aa80783137093679d4cad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203963"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`IDSymbol` 요소 메뉴, 그룹 또는 명령을 나타내는 guid: id 쌍의 ID를 포함 합니다. 부모에서 가져온 GUID `GuidSymbol` 요소입니다. `IDSymbol` 요소에는 `name` 특성에 포함 되어 있는 ID에 대 한 친숙 한 이름을 지정 하는 `value` 특성.  
+`IDSymbol`요소는 메뉴, 그룹 또는 명령을 나타내는 GUID: id 쌍의 id를 포함 합니다. GUID는 부모 요소에서 가져옵니다 `GuidSymbol` . 요소에는 `IDSymbol` `name` 특성에 포함 된 ID에 대 한 친숙 한 이름을 제공 하는 특성이 있습니다 `value` .  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,10 +34,10 @@ ms.locfileid: "68203963"
   
 ### <a name="attributes"></a>특성  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
-|name|필수 요소. 이름 ID 기호입니다.|  
-|value|필수 요소. ID 기호의 숫자 ID 값입니다.|  
+|name|필수 요소. ID 기호의 이름입니다.|  
+|값|필수 요소. ID 기호의 숫자 ID 값입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -46,10 +46,10 @@ ms.locfileid: "68203963"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[GuidSymbol 요소](../extensibility/guidsymbol-element.md)|메뉴, 그룹 또는 명령을 나타내는 guid: id 쌍의 GUID를 포함 합니다. `IDSymbol` 요소를 그룹화합니다.|  
+|[GuidSymbol 요소](../extensibility/guidsymbol-element.md)|메뉴, 그룹 또는 명령을 나타내는 GUID: ID 쌍의 GUID를 포함 합니다. `IDSymbol` 요소를 그룹화합니다.|  
   
 ## <a name="remarks"></a>설명  
- 모든 `IDSymbol` 요소에는 주어진 `GuidSymbol` 요소는 고유 해야 합니다. `value`합니다. 그러나 `IDSymbol` 으로 부모가 서로 다른 패키지에 동일한 값을 가진 요소가 있을 수 있습니다.  
+ `IDSymbol`지정 된 요소의 모든 요소에 `GuidSymbol` 는 고유한가 있어야 합니다 `value` . 그러나 `IDSymbol` 동일한 값을 가진 요소는 부모 항목이 다른 경우 패키지에 있을 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

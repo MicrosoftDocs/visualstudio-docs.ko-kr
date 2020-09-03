@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114599"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>이벤트 처리기로 모델 외부의 변경 내용 전파
@@ -25,23 +25,23 @@ ms.locfileid: "76114599"
 
 ### <a name="to-define-a-store-event"></a>저장소 이벤트를 정의 하려면
 
-1. 모니터링할 이벤트 유형을 선택 합니다. 전체 목록은 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>의 속성을 참조 하세요. 각 속성은 이벤트의 형식에 해당 합니다. 가장 자주 사용 되는 이벤트 유형은 다음과 같습니다.
+1. 모니터링할 이벤트 유형을 선택 합니다. 전체 목록은의 속성을 참조 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> 하세요. 각 속성은 이벤트의 형식에 해당 합니다. 가장 자주 사용 되는 이벤트 유형은 다음과 같습니다.
 
-    - 모델 요소, 관계 링크, 셰이프 또는 연결선을 만들 때 `ElementAdded` 트리거됩니다.
+    - `ElementAdded` -모델 요소, 관계 링크, 셰이프 또는 연결선을 만들 때 트리거됩니다.
 
-    - ElementPropertyChanged-`Normal` 도메인 속성 값이 변경 될 때 트리거됩니다. 이벤트는 새 값과 이전 값이 같지 않은 경우에만 트리거됩니다. 계산 된 저장소 속성 및 사용자 지정 저장소 속성에는 이벤트를 적용할 수 없습니다.
+    - ElementPropertyChanged- `Normal` 도메인 속성 값이 변경 될 때 트리거됩니다. 이벤트는 새 값과 이전 값이 같지 않은 경우에만 트리거됩니다. 계산 된 저장소 속성 및 사용자 지정 저장소 속성에는 이벤트를 적용할 수 없습니다.
 
-         관계 링크에 해당 하는 역할 속성에는 적용할 수 없습니다. 대신 `ElementAdded`를 사용 하 여 도메인 관계를 모니터링 합니다.
+         관계 링크에 해당 하는 역할 속성에는 적용할 수 없습니다. 대신를 사용 `ElementAdded` 하 여 도메인 관계를 모니터링 합니다.
 
-    - 모델 요소, 관계, 모양 또는 커넥터가 삭제 된 후에 `ElementDeleted` 트리거됩니다. 요소의 속성 값에 계속 액세스할 수 있지만 다른 요소와의 관계는 없습니다.
+    - `ElementDeleted` -모델 요소, 관계, 모양 또는 연결선을 삭제 한 후에 트리거됩니다. 요소의 속성 값에 계속 액세스할 수 있지만 다른 요소와의 관계는 없습니다.
 
 2. **Dslpackage** 프로젝트의 별도 코드 파일에 _dsl_**docdata** 에 대 한 부분 클래스 정의를 추가 합니다.
 
-3. 다음 예제와 같이 이벤트의 코드를 메서드로 작성 합니다. `DocData`에 액세스 하려는 경우를 제외 하 고 `static`수 있습니다.
+3. 다음 예제와 같이 이벤트의 코드를 메서드로 작성 합니다. 에 액세스 하려는 경우가 아니면이는 일 수 있습니다 `static` `DocData` .
 
-4. 처리기를 등록 하려면 `OnDocumentLoaded()`를 재정의 합니다. 둘 이상의 처리기가 있는 경우 모두 동일한 장소에 등록할 수 있습니다.
+4. `OnDocumentLoaded()`처리기를 등록 하려면를 재정의 합니다. 둘 이상의 처리기가 있는 경우 모두 동일한 장소에 등록할 수 있습니다.
 
-등록 코드의 위치는 중요 하지 않습니다. `DocView.LoadView()`는 대체 위치입니다.
+등록 코드의 위치는 중요 하지 않습니다. `DocView.LoadView()` 는 대체 위치입니다.
 
 ```csharp
 using System;
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>이벤트를 사용 하 여 스토어에서 취소할 수 있는 조정을 수행 합니다.
 
-트랜잭션 커밋 후 이벤트 처리기가 실행 되기 때문에 저장소 이벤트는 일반적으로 저장소 내에서 변경 내용을 전파 하는 데 사용 되지 않습니다. 대신 저장소 규칙을 사용 합니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
+트랜잭션 커밋 후 이벤트 처리기가 실행 되기 때문에 저장소 이벤트는 일반적으로 저장소 내에서 변경 내용을 전파 하는 데 사용 되지 않습니다. 대신 저장소 규칙을 사용 합니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
 
 그러나 사용자가 원래 이벤트와 별도로 추가 업데이트를 실행 취소할 수 있도록 하려면 이벤트 처리기를 사용 하 여 저장소에 대 한 추가 업데이트를 만들 수 있습니다. 예를 들어 낮은 케이스 문자가 앨범 제목의 일반적인 규칙 이라고 가정 합니다. 사용자가 대문자로 입력 한 후 소문자로 제목을 수정 하는 저장소 이벤트 처리기를 작성할 수 있습니다. 그러나 사용자는 실행 취소 명령을 사용 하 여 대/소문자를 복원 하는 수정 작업을 취소할 수 있습니다. 두 번째 실행 취소는 사용자의 변경 내용을 제거 합니다.
 
@@ -160,9 +160,9 @@ private static void AlbumTitleAdjuster(object sender,
 
 저장소를 업데이트 하는 이벤트를 작성 하는 경우:
 
-- 실행 취소의 모델 요소를 변경 하지 않으려면 `store.InUndoRedoOrRollback`를 사용 합니다. 트랜잭션 관리자는 저장소의 모든 항목을 원래 상태로 다시 설정 합니다.
+- `store.InUndoRedoOrRollback`실행 취소의 모델 요소를 변경 하지 않으려면를 사용 합니다. 트랜잭션 관리자는 저장소의 모든 항목을 원래 상태로 다시 설정 합니다.
 
-- 모델을 파일에서 로드 하는 동안 변경 하지 않으려면 `store.InSerializationTransaction`를 사용 합니다.
+- `store.InSerializationTransaction`를 사용 하 여 모델을 파일에서 로드 하는 동안 변경 하지 않도록 합니다.
 
 - 변경 내용으로 인해 추가 이벤트가 트리거됩니다. 무한 루프가 발생 하지 않도록 하십시오.
 
@@ -184,7 +184,7 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [변경 내용에 대한 대응 및 전파](../modeling/responding-to-and-propagating-changes.md)
 - [샘플 코드: 회로 다이어그램](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

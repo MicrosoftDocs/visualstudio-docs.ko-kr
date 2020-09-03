@@ -12,32 +12,32 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 571f7bf825583b3094e07ea4404437f2fb2d62de
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917608"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>테이블 디자이너에 대한 필터 문자열 생성
+# <a name="constructing-filter-strings-for-the-table-designer"></a>테이블 디자이너에 대한 필터 문자열 생성하기
 ## <a name="overview"></a>개요
 Visual Studio **테이블 디자이너**에 표시된 Azure 테이블에서 데이터를 필터링하려면 필터 문자열을 생성하고 필터 필드에 입력합니다. 필터 문자열 구문은 WCF Data Services에 의해 정의되며 SQL WHERE 절과 유사하지만 HTTP 요청을 통해 Table service에 전송됩니다. **테이블 디자이너** 는 적절한 인코딩을 처리하므로 원하는 속성 값을 필터링하려면 단순히 속성 이름, 비교 연산자, 조건 값 및 필요에 따라 부울 연산자를 필터 필드에 입력하면 됩니다. [Storage 서비스 REST API 참조](/rest/api/storageservices)를 통해 테이블 쿼리에 대한 URL을 생성하는 경우 $filter 쿼리 옵션은 포함할 필요가 없습니다.
 
-WCF Data Services는 [개방형 데이터 프로토콜](https://www.odata.org/) (OData)에 기반을 둡니다. 필터 시스템 쿼리 옵션 ( **$filter**)에 대한 자세한 내용은 [OData URI 규칙 사양](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)을 참조하세요.
+WCF Data Services는 [개방형 데이터 프로토콜](https://www.odata.org/) (OData)에 기반을 둡니다. 필터 시스템 쿼리 옵션 (**$filter**)에 대한 자세한 내용은 [OData URI 규칙 사양](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)을 참조하세요.
 
 ## <a name="comparison-operators"></a>비교 연산자
 다음의 논리 연산자는 모든 속성 유형에 대해 지원됩니다.
 
 | 논리 연산자 | 설명 | 필터 문자열의 예 |
 | --- | --- | --- |
-| eq |Equal |'Redmond'와 같은 도시 |
+| eq |같음 |'Redmond'와 같은 도시 |
 | gt |보다 큼 |20보다 큰 가격 |
-| ge |다음보다 크거나 같음 |10보다 크거나 같은 가격 |
-| lt |다음보다 적음 |20보다 적은 가격 |
+| ge |보다 크거나 같음 |10보다 크거나 같은 가격 |
+| lt |보다 작음 |20보다 적은 가격 |
 | le |작거나 같음 |100보다 적거나 같은 가격 |
-| ne |다음과 같지 않음 |'London'과 같지 않은 도시 |
-| 및 |및 |200보다 적거나 같은 가격 및 3.5보다 큰 가격 |
-| 또는 |Or |3\.5보다 적거나 같은 가격 또는 200보다 큰 가격 |
-| not |not |not isAvailable |
+| ne |같지 않음 |'London'과 같지 않은 도시 |
+| 및 |and |200보다 적거나 같은 가격 및 3.5보다 큰 가격 |
+| 또는 |또는 |3.5보다 적거나 같은 가격 또는 200보다 큰 가격 |
+| not |Not |not isAvailable |
 
 필터 문자열을 생성할 때 다음의 규칙이 중요합니다.
 

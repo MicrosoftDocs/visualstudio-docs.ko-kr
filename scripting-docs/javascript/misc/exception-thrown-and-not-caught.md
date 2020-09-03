@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 44f207d2e32a7ca79ee0d5851a80261c5da9743d
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814592"
 ---
 # <a name="exception-thrown-and-not-caught"></a>예외가 throw되고 catch되지 않았습니다.
@@ -32,7 +32,7 @@ ms.locfileid: "85814592"
   
 - 예외가 다시 throw 되는 경우 다른 해당 catch 문이 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [Error 개체](../../javascript/reference/error-object-javascript.md)   
  [throw 문](../../javascript/reference/throw-statement-javascript.md)   
  [try ... catch ... finally 문](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

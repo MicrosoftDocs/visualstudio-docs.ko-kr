@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918573"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
@@ -86,7 +86,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-create-the-project"></a>프로젝트를 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **프로젝트**를 클릭 합니다.
 
 2. **Visual C#** 노드를 클릭한 다음, **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.
 
@@ -97,7 +97,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>XML 파일을 추가하려면
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** 를 클릭한 다음 **새 항목**을 클릭합니다.
+1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 **새 항목**을 클릭 합니다.
 
 2. **새 항목 추가** 대화 상자의 **템플릿** 창에서 **XML 파일** 을 선택합니다.
 
@@ -105,10 +105,10 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 4. 이 연습에서는 파일 이름을 `exampleXml.xml`로 지정합니다. 이전 섹션에 표시된 XML이 되도록 파일의 내용을 설정합니다.
 
-   .
+   ..
 
 ### <a name="add-a-test-code-file"></a>테스트 코드 파일 추가
- C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들면 다음과 같습니다.:
+ C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들면 다음과 같습니다.
 
 ```
 using System;
@@ -157,7 +157,7 @@ namespace MyProject
    <#@ output extension=".cs" #>
    ```
 
-   의 기본 클래스입니다.
+   .
 
    템플릿 파일의 보조 파일로 솔루션 탐색기에 .cs 파일이 표시되는지 확인합니다. 템플릿 파일의 이름 옆에 있는 [+]를 클릭하여 확인할 수 있습니다. 템플릿 파일을 저장하거나 템플릿 파일에서 포커스를 이동할 때마다 이 파일이 템플릿 파일에서 생성됩니다. 생성된 파일은 프로젝트의 일부로 컴파일됩니다.
 
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>텍스트 템플릿 문제 해결
  **오류 목록**에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  T4 텍스트 [템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [t4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)

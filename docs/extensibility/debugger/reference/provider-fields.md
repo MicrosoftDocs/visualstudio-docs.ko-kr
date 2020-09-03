@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS | 마이크로 소프트 문서
+title: PROVIDER_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713795"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
-프로그램 공급자와 연결된 속성을 지정합니다.
+프로그램 공급자와 연결 된 속성을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PROVIDER_FIELDS {
@@ -44,22 +44,22 @@ public enum enum_PROVIDER_FIELDS {
 
 ## <a name="fields"></a>필드
  `PFIELD_PROGRAM_NODES`\
- 필드가 `ProgramNodes` 유효합니다.
+ `ProgramNodes`필드가 올바릅니다.
 
  `PFIELD_IS_DEBUGGER_PRESENT`\
- 필드가 `fIsDebuggerPresent` 유효합니다.
+ `fIsDebuggerPresent`필드가 올바릅니다.
 
 ## <a name="remarks"></a>설명
- 이러한 값은 `Fields` [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조의 멤버에서 반환되어 구조의 어떤 필드가 명시적으로 채워졌는지 나타냅니다.
+ 이러한 값은 `Fields` 구조체의 필드를 명시적으로 채운 필드를 나타내기 위해 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조체의 멤버에서 반환 됩니다.
 
- 이러한 값은 조금씩 `OR`결합할 수 있습니다.
+ 이러한 값은 비트와 함께 사용할 수 있습니다 `OR` .
 
 ## <a name="requirements"></a>요구 사항
- 헤더: msdbg.h
+ 헤더: msdbg .h
 
- 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+ 네임 스페이스: VisualStudio
 
- 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -34,10 +34,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918953"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>디버거를 사용한 예외 관리
@@ -69,11 +69,11 @@ ms.locfileid: "75918953"
   
  **예외 설정** 창에서 예외 범주(예: .NET 예외를 의미하는 **공용 언어 런타임 예외**)에 대한 노드를 확장하고 해당 범주 내의 특정 예외(예: **System.AccessViolationException**)에 대한 확인란을 선택합니다. 전체 예외 범주를 선택할 수도 있습니다.  
   
- ![선택 된 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![확인된 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  주어진 예외를 선택하는 경우, 이 예외가 발생할 때마다 예외가 처리되었는지 여부에 관계없이 디버거 실행이 중단됩니다. 여기서 이 예외를 첫째 예외라고 합니다. 예를 들어 다음은 몇 가지 시나리오입니다.  
   
-1. 다음 C# 콘솔 애플리케이션에서 Main 메서드는 **try/catch** 블록 내부에서 `try/catch` 예외를 발생시킵니다.  
+1. 다음 c # 콘솔 응용 프로그램에서 Main 메서드는 블록 내에서 **AccessViolationException** 를 throw 합니다 `try/catch` .  
   
    ```csharp  
    static void Main(string[] args)  
@@ -135,13 +135,13 @@ ms.locfileid: "75918953"
    }  
    ```  
   
-    **AccessViolationException** 를 체크 인 한 **예외 설정이**있는 경우 디버거 실행 시이 코드를 실행 하면 **ThrowHandledException ()** 및 **ThrowUnhandledException ()** 의 `throw` 줄에서 중단 됩니다.  
+    **AccessViolationException** 를 체크 인 한 **예외 설정이**있는 경우 디버거 실행 시이 코드를 실행 하면 `throw` **ThrowHandledException ()** 및 **ThrowUnhandledException ()** 의 줄에서 중단 됩니다.  
   
    예외 설정을 기본값으로 복원하려는 경우에는 도구 모음에서 **복원** 단추를 클릭하면 됩니다.  
   
-   ![예외 설정의 기본값 복원](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![예외 설정에서 기본값 복원](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a>사용자가 처리 하지 않은 예외에 대해 계속 하도록 디버거 설정  
+### <a name="setting-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a> 사용자가 처리 하지 않은 예외에 대해 계속 하도록 디버거 설정  
  [Just My Code](../debugger/just-my-code.md)옵션을 사용하여 .NET 또는 JavaScript 코드를 디버그하는 경우 사용자 코드에서 처리되지 않았지만 다른 위치에서는 처리된 예외가 발견되면 실행을 중단하지 않도록 디버거에 지시할 수 있습니다.  
   
 1. **예외 설정** 창에서 창 내부를 마우스 오른쪽 단추로 클릭한 다음 **열 표시**를 선택하여 상황에 맞는 메뉴를 엽니다. ( **내 코드만**을 해제한 경우에는 이 명령이 표시되지 않습니다.)  
@@ -162,7 +162,7 @@ ms.locfileid: "75918953"
  GPU 메모리 액세스 예외, JavaScript 런타임 예외 또는 Win32 예외 범주에 예외를 추가하려는 경우에는 설명과 함께 오류 코드를 포함해야 합니다.  
   
 > [!TIP]
-> 맞춤법 검사를 수행합니다. **예외 설정** 창에서는 추가된 예외가 있는지 검사하지 않습니다. 따라서 **Sytem.UriTemplateMatchException**을 입력하면 해당 예외에 대한 항목( **System.UriTemplateMatchException**에 대한 항목이 아님)을 얻게 됩니다.  
+> 맞춤법 검사를 수행합니다. **예외 설정** 창에서는 추가 된 예외가 있는지 확인 하지 않습니다. 따라서 **system.uritemplatematchexception**을 입력 하면 해당 예외에 대 한 항목 ( **system.uritemplatematchexception**에 대 한 항목)을 가져옵니다.  
   
  예외 설정은 솔루션의 .suo파일에 유지되므로 특정 솔루션에 적용됩니다. 특정 예외 설정을 여러 솔루션에서 다시 사용할 수 없습니다. 추가된 예외만 유지되고, 삭제된 예외는 유지되지 않습니다. 다시 말해서, 예외를 추가한 후 솔루션을 닫았다가 다시 열면 예외가 그대로 유지됩니다. 그러나 예외를 삭제한 후 솔루션을 닫았다가 다시 열면 예외가 다시 나타나지 않습니다.  
   
@@ -181,10 +181,10 @@ public class GenericException<T> : Exception
   
  ![일반 예외 추가](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>참고 항목  
- [예외  후 실행을 계속 합니다](../debugger/continuing-execution-after-an-exception.md) .  
+## <a name="see-also"></a>관련 항목  
+ [예외 후 실행 계속](../debugger/continuing-execution-after-an-exception.md)   
  [방법: 예외 발생 후 시스템 코드 검사](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [방법: 네이티브 런타임 검사  사용](../debugger/how-to-use-native-run-time-checks.md)  
+ [방법: 네이티브 런타임 검사 사용](../debugger/how-to-use-native-run-time-checks.md)   
  [C 런타임 라이브러리 없이 런타임 검사 사용](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [예외 도우미](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [디버거 기본 사항](../debugger/debugger-basics.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719b31e834b5410dd137a0c5b69cc07ae01651e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645468"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>방법: 여러 구성 동시 빌드
@@ -25,7 +25,7 @@ ms.locfileid: "72645468"
 
 2. 모든 Visual Basic 프로젝트
 
-   빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.
+   빌드 구성에 대 한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조 하세요.
 
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>여러 빌드 구성에서 프로젝트를 빌드하려면
 
@@ -38,5 +38,5 @@ ms.locfileid: "72645468"
 
 3. **빌드** 또는 **다시 빌드** 단추를 선택하여 지정한 구성으로 프로젝트를 빌드합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [여러 프로젝트를 병렬로](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 빌드

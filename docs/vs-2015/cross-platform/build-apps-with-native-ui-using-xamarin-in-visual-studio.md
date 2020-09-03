@@ -9,10 +9,10 @@ caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918341"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio에서 Xamarin을 사용하여 네이티브 UI로 앱 빌드
@@ -37,7 +37,7 @@ ms.locfileid: "75918341"
 > [!TIP]
 > [GitHub의 mobile-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에서 이 프로젝트에 대한 전체 소스 코드를 찾을 수 있습니다.
 >
-> 어려움이 있거나 오류가 발생하면 [forums.xamarin.com](https://forums.xamarin.com/)에 질문을 게시하세요. Xamarin에 필요한 최신 SDK로 업데이트하면 많은 오류를 해결할 수 있습니다. 자세한 내용은 각 플랫폼에 대한 [Xamarin 릴리스 정보](https://developer.xamarin.com/)에 설명되어 있습니다.
+> 어려움이 있거나 오류가 발생하면 [forums.xamarin.com](https://forums.xamarin.com/)에 질문을 게시하세요. Xamarin에 필요한 최신 Sdk로 업데이트 하면 많은 오류를 해결할 수 있습니다. 자세한 내용은 각 플랫폼에 대 한  [Xamarin 릴리스 정보](https://developer.xamarin.com/) 에 설명 되어 있습니다.
 >
 > [!NOTE]
 > Xamarin 개발자 설명서에서는 아래와 같이 빠른 시작 및 심층 분석 섹션이 둘 다 포함된 여러 가지 연습도 제공합니다. 이러한 모든 페이지에서 Visual Studio 관련 연습을 보려면 페이지 오른쪽 위에서 "Visual Studio"를 선택해야 합니다.
@@ -54,22 +54,22 @@ ms.locfileid: "75918341"
 >   - [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
 >   - [Hello, Xamarin.Forms 멀티스크린](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)
 
-## <a name="solution"></a> 솔루션 설정
+## <a name="set-up-your-solution"></a><a name="solution"></a> 솔루션 설정
  다음 단계에서는 공유 코드에 대한 PCL과 두 개의 추가 NuGet 패키지를 포함하는 네이티브 UI로 Xamarin 솔루션을 만듭니다.
 
 1. Visual Studio에서 새 **비어 있는 앱(네이티브 이식 가능)** 솔루션을 만들고 **WeatherApp**으로 이름을 지정합니다. 검색 필드에 **네이티브 이식 가능**을 입력하면 이 템플릿을 가장 쉽게 찾을 수 있습니다.
 
-    템플릿이 이 위치에 없으면 Xamarin을 설치하거나 Visual Studio 2015 기능을 사용하도록 설정해야 합니다. [Setup and install](../cross-platform/setup-and-install.md)를 참조하세요.
+    없는 경우 Xamarin을 설치 하거나 Visual Studio 2015 기능을 사용 하도록 설정 해야 할 수 있습니다. [설치 및 설치](../cross-platform/setup-and-install.md)를 참조 하세요.
 
 2. 확인을 클릭하여 솔루션을 만든 후에는 몇 개의 개별 프로젝트가 만들어집니다.
 
-   - **WeatherApp(이식 가능)** : 일반적인 비즈니스 논리 및 Xamarin.Forms를 사용하는 UI 코드를 포함하여 플랫폼 간에 공유되는 코드를 작성하는 PCL입니다.
+   - **WeatherApp(이식 가능)**: 일반적인 비즈니스 논리 및 Xamarin.Forms를 사용하는 UI 코드를 포함하여 플랫폼 간에 공유되는 코드를 작성하는 PCL입니다.
 
    - **WeatherApp.Droid**: 네이티브 Android 코드를 포함하는 프로젝트. 이 프로젝트가 기본 시작 프로젝트로 설정됩니다.
 
    - **WeatherApp.iOS**: 네이티브 iOS 코드를 포함하는 프로젝트
 
-   - **WeatherApp.WinPhone(Windows Phone 8.1)** : 네이티브 Windows Phone 코드를 포함하는 프로젝트
+   - **WeatherApp.WinPhone(Windows Phone 8.1)**: 네이티브 Windows Phone 코드를 포함하는 프로젝트
 
      각 네이티브 프로젝트 내에서 해당 플랫폼에 대한 네이티브 디자이너에 액세스하여 플랫폼 특정 화면을 구현할 수 있습니다.
 
@@ -85,20 +85,20 @@ ms.locfileid: "75918341"
 
    - **버전** 필드가 **안정적인 최신 버전** 으로 설정되어 있는지 확인합니다.
 
-   - **설치**를 클릭합니다.
+   - **Install**을 클릭합니다.
 
-   - ![Newtonsoft.json NuGet 패키지 찾기 및 설치](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin 양식 가이드 5")
+   - ![NuGet 패키지에 대 한 Newtonsoft.Js찾기 및 설치](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin 양식 가이드 5")
 
 4. 3단계를 반복하여 **Microsoft.Net.Http** 패키지를 찾아서 설치합니다.
 
 5. 솔루션을 빌드하고 빌드 오류가 없는지 확인합니다.
 
-## <a name="dataservice"></a> 공유 데이터 서비스 코드 작성
+## <a name="write-shared-data-service-code"></a><a name="dataservice"></a> 공유 데이터 서비스 코드 작성
  **WeatherApp(이식 가능)** 프로젝트는 모든 플랫폼에서 공유되는 PCL(이식 가능한 클래스 라이브러리)에 대한 코드를 작성하는 프로젝트입니다. PCL은 iOS, Android, Windows Phone 프로젝트에서 빌드된 앱 패키지에 자동으로 포함됩니다.
 
  다음 단계에서는 날씨 서비스의 데이터를 액세스하고 저장하기 위한 코드를 PCL에 추가합니다.
 
-1. 이 샘플을 실행하려면 무료 API 키를 위해 [http://openweathermap.org/appid](https://openweathermap.org/appid)에 먼저 등록해야 합니다.
+1. 이 샘플을 실행 하려면 먼저에서 무료 API 키에 등록 해야 합니다 [http://openweathermap.org/appid](https://openweathermap.org/appid) .
 
 2. **WeatherApp** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 클래스...** 를 선택합니다. **새 항목 추가** 대화 상자에서 파일 이름을 **Weather.cs**로 지정합니다. 이 클래스는 날씨 데이터 서비스의 데이터를 저장하는 데 사용합니다.
 
@@ -222,7 +222,7 @@ ms.locfileid: "75918341"
 
 10. **WeatherApp** PCL 프로젝트를 빌드하여 코드가 올바른지 확인합니다.
 
-## <a name="Android"></a> Android용 UI 디자인
+## <a name="design-ui-for-android"></a><a name="Android"></a> Android 용 UI 디자인
  이제 사용자 인터페이스를 디자인하고 공유 코드에 연결한 후 앱을 실행합니다.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>앱의 모양과 느낌 디자인
@@ -249,8 +249,8 @@ ms.locfileid: "75918341"
 
     |속성|값|
     |--------------|-----------|
-    |**텍스트**|**우편 번호로 검색**|
-    |**ID**|`@+id/ZipCodeSearchLabel`|
+    |**text**|**우편 번호로 검색**|
+    |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -258,7 +258,7 @@ ms.locfileid: "75918341"
     > [!TIP]
     > 대부분의 속성은 선택 가능한 값이 포함된 드롭다운 목록이 없습니다.  따라서 특정 속성에 어떤 문자열 값을 사용해야 할지 추측하기가 어려울 수 있습니다. 제안 사항을 보려면 [R.attr](https://developer.android.com/reference/android/R.attr.html) 클래스 페이지에서 속성 이름을 검색해 보세요.
     >
-    >  또한 빠른 웹 검색을 수행하면 [http://stackoverflow.com/](https://stackoverflow.com/) 에서 다른 사용자가 동일한 속성을 사용한 페이지를 종종 찾을 수 있습니다.
+    >  또한 빠른 웹 검색을 [http://stackoverflow.com/](https://stackoverflow.com/) 사용 하면 다른 사용자가 동일한 속성을 사용 하는 페이지가 자주 발생 합니다.
 
      참조용으로, **소스** 보기로 전환하면 이 요소에 대해 다음 코드가 표시됩니다.
 
@@ -277,12 +277,12 @@ ms.locfileid: "75918341"
 
 8. **도구 상자**에서 **TextView** 컨트롤을 **RelativeLayout** 컨트롤로 끌어와 ZipCodeSearchLabel 컨트롤 아래에 놓습니다. 새 컨트롤을 기존 컨트롤의 적절한 가장자리에 놓으면 됩니다. 디자이너를 약간 확대하면 도움이 됩니다.
 
-9. **속성** 창에서 다음 속성을 설정합니다.
+9. **속성** 창에서 다음 속성을 설정 합니다.
 
     |속성|값|
     |--------------|-----------|
-    |**텍스트**|**우편 번호**|
-    |**ID**|`@+id/ZipCodeLabel`|
+    |**text**|**Zip Code**|
+    |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
@@ -303,7 +303,7 @@ ms.locfileid: "75918341"
 
     |속성|값|
     |--------------|-----------|
-    |**ID**|`@+id/zipCodeEntry`|
+    |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -326,8 +326,8 @@ ms.locfileid: "75918341"
 
     |속성|값|
     |--------------|-----------|
-    |**ID**|`@+id/weatherBtn`|
-    |**텍스트**|**날씨 검색**|
+    |**id**|`@+id/weatherBtn`|
+    |**text**|**날씨 검색**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -450,7 +450,7 @@ ms.locfileid: "75918341"
 
 13. 파일을 저장하고 **디자인** 보기로 전환합니다. UI가 다음과 같아야 합니다.
 
-     ![Android 앱에 대 한 UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![Android 앱용 UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
 14. **MainActivity.cs**를 열고 *OnCreate* 메서드에서 앞서 제거된 기본 단추를 참조하는 줄을 삭제합니다. 완료했을 때 코드는 다음과 같습니다.
 
@@ -520,12 +520,12 @@ ms.locfileid: "75918341"
 
 3. 디바이스 또는 에뮬레이터에서 편집 상자에 유효한 미국 우편 번호(예: 60601)를 입력하고 **Get Weather**를 누릅니다. 그러면 해당 지역의 날씨 데이터가 컨트롤에 표시됩니다.
 
-     ![Android 및 Windows Phone 용 날씨 앱](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
+     ![Android 및 Windows Phone용 날씨 앱](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 > 이 프로젝트에 대한 전체 소스 코드는 [GitHub의 xamarin-forms-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에 있습니다.
 
-## <a name="Windows"></a> Windows Phone용 UI 디자인
+## <a name="design-ui-for-windows-phone"></a><a name="Windows"></a> Windows Phone에 대 한 UI 디자인
  이제 Windows Phone용 사용자 인터페이스를 디자인하고 공유 코드에 연결한 후 앱을 실행합니다.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>앱의 모양과 느낌 디자인
@@ -631,7 +631,7 @@ ms.locfileid: "75918341"
 > [!TIP]
 > 이 프로젝트에 대한 전체 소스 코드는 [GitHub의 xamarin-forms-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에 있습니다.
 
-## <a name="next"></a> 다음 단계
+## <a name="next-steps"></a><a name="next"></a> 다음 단계
  **iOS용 UI를 솔루션에 추가**
 
  iOS용 네이티브 UI를 추가하여 이 샘플을 확장합니다. 이렇게 하려면, 로컬 네트워크에 있으며 Xcode 및 Xamarin이 설치된 Mac에 연결해야 합니다. 완료했으면 Visual Studio에서 직접 iOS 디자이너를 사용할 수 있습니다. 완성된 앱은 [GitHub의 모바일 샘플 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)를 참조하세요.
@@ -642,5 +642,5 @@ ms.locfileid: "75918341"
 
  PCL의 공유 코드는 플랫폼 중립적입니다. PCL은 한 번 컴파일되어 각 플랫폼별 앱 패키지에 포함되기 때문입니다. 플랫폼별 코드를 격리하는 조건부 컴파일을 사용하는 공유 코드를 작성하려면 *공유* 프로젝트를 사용할 수 있습니다. 자세한 내용은 [ode Sharing Options](/xamarin/cross-platform/app-fundamentals/code-sharing)(xamarin.com)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [Xamarin 개발자 사이트](/xamarin/) [Windows 개발자 센터](https://dev.windows.com/en-us) [Swift 및 C# 빠른 참조 포스터](https://aka.ms/scposter)
+## <a name="see-also"></a>관련 항목
+ [Xamarin 개발자 사이트](/xamarin/) [Windows 개발자 센터](https://dev.windows.com/en-us) [Swift 및 c # 빠른 참조 포스터](https://aka.ms/scposter)

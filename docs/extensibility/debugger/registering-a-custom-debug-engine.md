@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 디버그 엔진 등록 | 마이크로 소프트 문서
+title: 사용자 지정 디버그 엔진 등록 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713218"
 ---
 # <a name="register-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 등록
-디버그 엔진은 COM 규칙에 따라 클래스 팩터리로 등록하고 Visual Studio 레지스트리 하위 키를 통해 Visual Studio에 등록해야 합니다.
+디버그 엔진은 visual Studio 레지스트리 하위 키를 통해 Visual Studio에 등록 하는 것은 물론 COM 규칙에 따라 자신을 클래스 팩터리로 등록 해야 합니다.
 
 > [!NOTE]
-> [자습서: ATL COM을 사용하여 디버그 엔진 빌드의](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)일부로 빌드된 TextInterpreter 샘플에서 디버그 엔진을 등록하는 방법의 예를 찾을 수 있습니다.
+> 디버깅 엔진을 등록 하는 방법에 대 한 예제는 [자습서: ATL COM을 사용 하 여 디버그 엔진 빌드](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)의 일부로 빌드된 textinterpreter 샘플에서 찾을 수 있습니다.
 
 ## <a name="dll-server-process"></a>DLL 서버 프로세스
- 디버그 엔진은 일반적으로 자체 DLL에서 COM 서버로 설정됩니다. 따라서 디버그 엔진은 Visual Studio에서 액세스하려면 먼저 동급 팩터리의 CLSID를 COM에 등록해야 합니다. 그런 다음 디버그 엔진이 Visual Studio에 등록하여 디버그 엔진이 지원하는 모든 속성(메트릭이라고도 함)을 설정해야 합니다. Visual Studio 레지스트리 하위 키에 기록된 메트릭의 선택은 디버그 엔진이 지원하는 기능에 따라 다릅니다.
+ 디버그 엔진은 일반적으로 자체 DLL에 COM 서버로 설정 됩니다. 따라서 디버그 엔진은 Visual Studio에서이 클래스에 액세스할 수 있으려면 해당 클래스 팩터리의 CLSID를 COM에 등록 해야 합니다. 그런 다음 디버그 엔진은 디버그 엔진이 지 원하는 속성 (즉, 메트릭이 라고도 함)을 설정 하기 위해 Visual Studio에 자신을 등록 해야 합니다. Visual Studio 레지스트리 하위 키에 작성 된 메트릭의 선택은 디버그 엔진이 지 원하는 기능에 따라 달라 집니다.
 
- [디버깅을 위한 SDK 도우미는](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 디버그 엔진을 등록하는 데 필요한 레지스트리 위치뿐만 아니라 설명합니다. 또한 레지스트리를 보다 쉽게 조작할 수 있도록 하는 C++ 개발자를 위한 유용한 함수와 선언이 포함된 *dbgmetric.lib* 라이브러리에 대해서도 설명합니다.
+ [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 는 디버그 엔진을 등록 하는 데 필요한 레지스트리 위치에 대해서만 설명 합니다. 또한 보다 쉽게 레지스트리를 조작 하는 c + + 개발자를 위한 여러 가지 유용한 함수 및 선언이 포함 된 *dbgmetric* 라이브러리에 대해 설명 합니다.
 
-### <a name="example"></a>예제
- 다음 예제(TextInterpreter 샘플)에서는 `SetMetric` *함수(dbgmetric.lib)를*사용하여 디버그 엔진을 Visual Studio에 등록하는 방법을 보여 주습니다. 전달되는 메트릭은 *dbgmetric.lib에도*정의됩니다.
+### <a name="example"></a>예
+ 다음 예제 (TextInterpreter 샘플에서)는 `SetMetric` 함수 ( *dbgmetric*)를 사용 하 여 디버그 엔진을 Visual Studio에 등록 하는 방법을 보여 줍니다. 전달 되는 메트릭은 *dbgmetric*에도 정의 되어 있습니다.
 
 > [!NOTE]
-> TextInterpreter는 기본 디버그 엔진입니다. 설정되지 않으므로 다른 기능을 등록하지 않습니다. 보다 완전한 디버그 엔진에는 디버그 `SetMetric` 엔진이 지원하는 각 기능에 대해 전체 호출 또는 그에 상응하는 호출 목록이 하나씩 있습니다.
+> TextInterpreter 기본 디버그 엔진입니다. 설정 되지 않으므로 다른 기능이 등록 되지 않습니다. 보다 완전 한 디버그 엔진에는 `SetMetric` 디버그 엔진이 지 원하는 각 기능에 대해 하나씩 전체 호출 목록 또는 해당 항목이 있습니다.
 
 ```
 // Define base registry subkey to Visual Studio.
@@ -48,7 +48,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [자습서: ATL COM을 사용하여 디버그 엔진 구축](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [자습서: ATL COM을 사용 하 여 디버그 엔진 빌드](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

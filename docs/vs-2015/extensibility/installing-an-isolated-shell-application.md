@@ -12,10 +12,10 @@ caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944256"
 ---
 # <a name="installing-an-isolated-shell-application"></a>격리 셸 애플리케이션 설치
@@ -31,7 +31,7 @@ ms.locfileid: "75944256"
   
   이 문서의 모든 예제 코드는 MSDN 웹 사이트의 코드 갤러리에서 다운로드할 수 있는 [셸 배포 샘플](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7)에서 제공 됩니다. 이 샘플에서는 이러한 각 단계를 수행한 결과를 보여 줍니다.  
   
-## <a name="prerequisites"></a>전제 조건  
+## <a name="prerequisites"></a>사전 요구 사항  
  이 항목에서 설명 하는 절차를 수행 하려면 컴퓨터에 다음 도구가 설치 되어 있어야 합니다.  
   
 - Visual Studio SDK  
@@ -47,7 +47,7 @@ ms.locfileid: "75944256"
   
 1. 솔루션에서 각. source.extension.vsixmanifest 파일을 편집 합니다.  
   
-     `Identifier` 요소에서 `InstalledByMSI` 요소와 `SystemComponent` 요소를 추가한 다음 해당 값을 `true`로 설정 합니다.  
+     요소에서 `Identifier` `InstalledByMSI` 요소와 `SystemComponent` 요소를 추가 하 고 해당 값을로 설정 `true` 합니다.  
   
      이러한 요소를 통해 VSIX 설치 관리자는 **확장 및 업데이트** 대화 상자를 사용 하 여 구성 요소를 설치 하지 않으며 사용자가 구성 요소를 제거할 수 없습니다.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "75944256"
  그런 다음 솔루션에 대 한 .reg 파일 및 ApplicationRegistry에서 레지스트리 항목을 만듭니다.  
   
 ### <a name="detection-blocks"></a>검색 블록  
- 검색 블록은 검색할 필수 구성 요소를 지정 하는 `Property` 요소와 필수 구성 요소가 컴퓨터에 없는 경우 반환할 메시지를 지정 하는 `Condition` 요소를 구성 합니다. 예를 들어 셸 응용 프로그램에는 Microsoft Visual Studio Shell 재배포 가능가 필요 하 고, 검색 블록은 다음과 같이 표시 됩니다.  
+ 검색 블록은 `Property` 검색할 필수 구성 요소를 지정 하는 요소 및 `Condition` 필수 구성 요소가 컴퓨터에 없는 경우 반환할 메시지를 지정 하는 요소로 구성 됩니다. 예를 들어 셸 응용 프로그램에는 Microsoft Visual Studio Shell 재배포 가능가 필요 하 고, 검색 블록은 다음과 같이 표시 됩니다.  
   
 ```xml  
 <Property Id="ISOSHELLSFX">  
@@ -85,7 +85,7 @@ ms.locfileid: "75944256"
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>셸 구성 요소의 레이아웃을 설정 하려면  
   
-1. 다음 예제가 보여 주는 것 처럼 대상 컴퓨터의 파일 시스템에서 만들 모든 디렉터리를 나타내는 `Directory` 요소의 계층 구조를 만듭니다.  
+1. `Directory`다음 예제가 보여 주는 것 처럼 대상 컴퓨터의 파일 시스템에서 만들 모든 디렉터리를 나타내는 요소 계층 구조를 만듭니다.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -103,7 +103,7 @@ ms.locfileid: "75944256"
     </Directory>  
     ```  
   
-     이러한 디렉터리는 설치 해야 하는 파일이 지정 된 경우 `Id`에 의해 참조 됩니다.  
+     이러한 디렉터리는 `Id` 설치 해야 하는 파일이 지정 된 경우에 의해 참조 됩니다.  
   
 2. 다음 예제와 같이 Shell 응용 프로그램에 필요한 구성 요소를 확인 합니다.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "75944256"
     </Feature>  
     ```  
   
-    1. `ComponentRef` 요소는 현재 구성 요소에 필요한 파일을 식별 하는 다른. wxs 파일을 참조 합니다. 예를 들어 일반 프로필에 대 한 도움말에는 다음 정의가 있습니다. wxs.  
+    1. `ComponentRef`요소는 현재 구성 요소에 필요한 파일을 식별 하는 다른. wxs 파일을 참조 합니다. 예를 들어 일반 프로필에 대 한 도움말에는 다음 정의가 있습니다. wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -137,9 +137,9 @@ ms.locfileid: "75944256"
         </Fragment>  
         ```  
   
-         `DirectoryRef` 요소는 이러한 파일이 사용자의 컴퓨터에서 이동 하는 위치를 지정 합니다. `Directory` 요소는 하위 디렉터리에 설치 된다는 것을 지정 하 고 각 `File` 요소는 솔루션의 일부로 작성 되거나 솔루션의 일부로 존재 하는 파일을 나타내며 MSI 파일을 만들 때 해당 파일을 찾을 수 있는 위치를 식별 합니다.  
+         `DirectoryRef`요소는 이러한 파일이 사용자의 컴퓨터에서 이동 하는 위치를 지정 합니다. `Directory`요소는 하위 디렉터리에 설치 되도록 지정 하 고 각 `File` 요소는 솔루션의 일부로 존재 하는 파일을 나타내며 MSI 파일을 만들 때 해당 파일을 찾을 수 있는 위치를 식별 합니다.  
   
-    2. `ComponentGroupRef` 요소는 다른 구성 요소 (또는 구성 요소 및 구성 요소 그룹) 그룹을 참조 합니다. 예를 들어 ApplicationGroup 아래의 `ComponentGroupRef`는 Application. wxs에서 다음과 같이 정의 됩니다.  
+    2. `ComponentGroupRef`요소는 다른 구성 요소 (또는 구성 요소 및 구성 요소 그룹) 그룹을 참조 합니다. 예를 들어 `ComponentGroupRef` ApplicationGroup은 application. wxs에서 다음과 같이 정의 됩니다.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -176,12 +176,12 @@ ms.locfileid: "75944256"
   
 5. 다음 예제와 같이 *ProjectName*.reg의 각 레지스트리 항목에 대해 해당 하는 레지스트리 블록을 추가 합니다.  
   
-    |*ProjectName*.reg|ApplicationRegisty.wxs|  
+    |*ProjectName*.reg|ApplicationRegisty|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id = ' DteClsidRegKey ' Root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' $ (var. ShortProductName) DTE 개체 '/><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' [INSTALLDIR] $ (var. ShortProductName) .exe '/><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "사진 스튜디오 DTE 개체"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @ = "$RootFolder $\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
-     이 예에서 DteClsidRegKey는 맨 위 행의 레지스트리 키로 확인 됩니다. ShortProductName은 `PhotoStudio`를 확인 합니다.  
+     이 예에서 DteClsidRegKey는 맨 위 행의 레지스트리 키로 확인 됩니다. ShortProductName은로 확인 됩니다 `PhotoStudio` .  
   
 ## <a name="creating-a-setup-bootstrapper"></a>설치 부트스트래퍼 만들기  
  모든 필수 구성 요소가 먼저 설치 된 경우에만 완료 된 MSI를 설치 합니다. 최종 사용자 환경을 용이 하 게 하기 위해 응용 프로그램을 설치 하기 전에 모든 필수 구성 요소를 수집 하 고 설치 하는 설치 프로그램을 만듭니다. 설치를 성공적으로 수행 하려면 다음 작업을 수행 합니다.  
@@ -197,7 +197,7 @@ ms.locfileid: "75944256"
 - MSI를 실행 합니다.  
   
 ### <a name="enforcing-installation-by-administrator"></a>관리자에의 한 설치 적용  
- 이 절차는 설치 프로그램에서 설치 프로그램을 사용 하 여 파일 \ 파일\\와 같은 필수 디렉터리에 액세스 하는 데 필요 합니다.  
+ 이 절차는 설치 프로그램에서 파일 (예: 파일 \ 파일)과 같은 필수 디렉터리에 액세스할 수 있도록 하는 데 필요 \\ 합니다.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>관리자가 설치를 적용 하려면  
   
@@ -215,9 +215,9 @@ ms.locfileid: "75944256"
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder는 Visual Studio 셸이 설치 된 위치를 지정 하 고 해당 위치에서 파일을 확인할 수 있습니다.  
   
- 셸 설치를 검색 하는 방법에 대 한 예제는 Shell Deployment 샘플에서 Utilities의 `GetProductDirFromReg` 함수를 참조 하세요.  
+ 셸 설치를 검색 하는 방법에 대 한 예제는 `GetProductDirFromReg` Shell Deployment 샘플에서 Utilities 함수를 참조 하세요.  
   
- 패키지에 필요한 Visual Studio 셸 중 하나 이상이 컴퓨터에 설치 되어 있지 않은 경우 설치할 구성 요소 목록에 추가 해야 합니다. 예제는 Shell Deployment 샘플에서 ComponentsPage의 `ComponentsPage::OnInitDialog` 함수를 참조 하세요.  
+ 패키지에 필요한 Visual Studio 셸 중 하나 이상이 컴퓨터에 설치 되어 있지 않은 경우 설치할 구성 요소 목록에 추가 해야 합니다. 예제는 `ComponentsPage::OnInitDialog` Shell Deployment 샘플에서 ComponentsPage의 함수를 참조 하세요.  
   
 ### <a name="running-the-shell-installers"></a>셸 설치 관리자 실행  
  셸 설치 관리자를 실행 하려면 올바른 명령줄 인수를 사용 하 여 Visual Studio Shell 재배포 가능 패키지를 호출 합니다. 최소한 다음에 수행 해야 할 작업을 결정 하려면 명령줄 인수 **/norestart/q** 를 사용 하 고 반환 코드를 감시 해야 합니다. 다음 예에서는 Shell (격리) 재배포 가능 패키지를 실행 합니다.  
@@ -235,7 +235,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ```  
   
 ### <a name="deciphering-return-values"></a>이름을 해독 반환 값  
- 일부 운영 체제에서는 Visual Studio Shell (격리) 설치를 다시 시작 해야 합니다. 이 조건은 `ExecCmd`호출의 반환 코드에 의해 결정 될 수 있습니다.  
+ 일부 운영 체제에서는 Visual Studio Shell (격리) 설치를 다시 시작 해야 합니다. 이 상태는에 대 한 호출의 반환 코드에 의해 결정 될 수 있습니다 `ExecCmd` .  
   
 |반환 값|설명|  
 |------------------|-----------------|  
@@ -351,7 +351,7 @@ CString GetSetupPath()
 ```  
   
 ### <a name="running-the-application-msi"></a>응용 프로그램 MSI 실행  
- Visual Studio Shell 설치 관리자가 ERROR_SUCCESS를 반환한 후 응용 프로그램에 대해 MSI를 실행할 수 있습니다. 설치 프로그램에서 사용자 인터페이스를 제공 하기 때문에 다음 예제에 나와 있는 것 처럼 자동 모드 ( **/q**) 및 로깅 ( **/L**)으로 MSI를 시작 합니다.  
+ Visual Studio Shell 설치 관리자가 ERROR_SUCCESS를 반환한 후 응용 프로그램에 대해 MSI를 실행할 수 있습니다. 설치 프로그램에서 사용자 인터페이스를 제공 하기 때문에 다음 예제에 나와 있는 것 처럼 자동 모드 (**/q**) 및 로깅 (**/L**)으로 MSI를 시작 합니다.  
   
 ```cpp#  
 TCHAR temp[MAX_PATH];  
@@ -368,5 +368,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: 기본 격리 셸 애플리케이션 만들기](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
