@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156637"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>방법: 항목 목록을 쉼표로 구분하여 표시
@@ -45,8 +45,8 @@ ms.locfileid: "68156637"
   
      `@(TXTFile, ', ')`  
   
-## <a name="example"></a>예  
- 이 예제에서 [Exec](../msbuild/exec-task.md) 작업은 findstr 도구를 실행하여 Phrases.txt 파일에 지정된 텍스트 문자열을 찾습니다. findstr 명령에서 리터럴 검색 문자열은 **/c:** 스위치로 나타나므로 항목 구분 기호 `/c:`는 `@(Phrase)` 항목 목록에 있는 항목 사이에 삽입됩니다.  
+## <a name="example"></a>예제  
+ 이 예제에서 [Exec](../msbuild/exec-task.md) 작업은 findstr 도구를 실행하여 Phrases.txt 파일에 지정된 텍스트 문자열을 찾습니다. Findstr 명령에서 리터럴 검색 문자열은 **/c:** 스위치로 표시 되므로 항목 구분 기호는 항목 `/c:` 목록의 항목 사이에 삽입 됩니다 `@(Phrase)` .  
   
  이 예제에서 해당하는 명령줄 명령은 다음과 같습니다.  
   
@@ -69,6 +69,6 @@ ms.locfileid: "68156637"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [항목](../msbuild/msbuild-items.md)

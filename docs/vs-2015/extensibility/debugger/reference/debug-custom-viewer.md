@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d10e0811044d7169eaf46f48f53389fa7b3076ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179166"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-사용자 지정 뷰어를 식별 하는 구조체 시각화 도우미를 입력 합니다.  
+사용자 지정 뷰어 또는 형식 시각화 도우미를 식별 하는 구조체입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,34 +50,34 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>멤버  
  dwID  
- 여러 뷰어 또는 하나에 의해 구현 되는 시각화 도우미를 구분 하기 위해 ID `GUID`합니다.  
+ 하나에 의해 구현 된 여러 뷰어 또는 시각화 도우미를 구분 하는 ID `GUID` 입니다.  
   
  bstrMenuName  
- 드롭다운 메뉴에 나타나는 텍스트입니다.  
+ 드롭다운 메뉴에 표시 되는 텍스트입니다.  
   
  bstrDescription  
- 사용자 지정 뷰어 또는 형식 시각화 도우미 (이어야 함 null 값을 사용 하지 않는 경우)의 설명입니다.  
+ 사용자 지정 뷰어 또는 형식 시각화 도우미에 대 한 설명입니다 (사용 하지 않을 경우 null 값 이어야 함).  
   
  guidLang  
- 제공 하는 식 계산기의 언어입니다.  
+ 식 계산기를 제공 하는 언어입니다.  
   
  guidVendor  
- 제공 하는 식 계산기의 공급 업체입니다.  
+ 식 계산기를 제공 하는 공급 업체입니다.  
   
  bstrMetric  
- 메트릭 사용자 지정 뷰어 또는 형식 시각화 도우미 `CLSID` 저장 됩니다.  
+ 사용자 지정 뷰어 또는 형식 시각화 도우미가 `CLSID` 저장 되는 메트릭입니다.  
   
 ## <a name="remarks"></a>설명  
- 호출 하 여이 구조체의 목록이 반환 됩니다 합니다 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 메서드 (및 확장에 의해 합니다 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 메서드).  
+ 이 구조체의 목록은 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 메서드를 호출 하 여 반환 되 고, 확장을 통해 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 메서드를 호출 하 여 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

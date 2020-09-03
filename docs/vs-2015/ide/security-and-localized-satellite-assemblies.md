@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 866e313a36af5ef72f910a5eafbf7b31c971d890
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672905"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>보안 및 지역화된 위성 어셈블리
@@ -32,5 +32,5 @@ ms.locfileid: "72672905"
 
  일반적으로 조직의 서명 그룹 또는 외부 서명 조직이 프라이빗 키로 서명하도록 해야 할 수 있습니다. 이는 액세스가 보통 몇몇 개인으로 제한된다는 프라이빗 키의 민감한 특성 때문입니다. 개발 중에 지연된 서명을 사용할 수 있습니다. 자세한 내용은 [어셈블리 서명 연기](https://msdn.microsoft.com/library/9d300e17-5bf1-4360-97da-2aa55efd9070)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [어셈블리 보안 고려 사항](https://msdn.microsoft.com/library/1b5439c1-f3d5-4529-bd69-01814703d067) [주요 보안 개념](https://msdn.microsoft.com/library/3cfced4f-ea02-4e66-ae98-d69286363e98) .NET Framework [응용 프로그램 지역화](../ide/localizing-applications.md) 응용 프로그램 [전역화 및 지역화](../ide/globalizing-and-localizing-applications.md) 응용 프로그램 [을 기반으로 하는 국가별 응용 프로그램 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)

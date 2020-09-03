@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId | 마이크로 소프트 문서
+title: 'IDebugProgram2:: Get프로그래밍 Id | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bb172f48b63ef2ec182f1a83d599a91eff1e2ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722778"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
-이 프로그램에 대한 GUID를 가져옵니다.
+이 프로그램에 대 한 GUID를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,15 +41,15 @@ int GetProgramId( 
 
 ## <a name="parameters"></a>매개 변수
 `pguidProgramId`\
-【아웃】 이 `GUID` 프로그램에 대한 을 반환합니다.
+제한이 `GUID` 이 프로그램에 대 한를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- DE(디버그 엔진)는 [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 또는 [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) 메서드에 원래 전달된 프로그램 식별자를 반환해야 합니다. 이렇게 하면 디버거 구성 요소 전체에서 프로그램을 식별할 수 있습니다.
+ 디버그 엔진 (DE)은 원래 [onattach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 또는 [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) 메서드에 전달 된 프로그램 식별자를 반환 해야 합니다. 이를 통해 디버거 구성 요소에서 프로그램을 식별할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
 - [연결](../../../extensibility/debugger/reference/idebugengine2-attach.md)

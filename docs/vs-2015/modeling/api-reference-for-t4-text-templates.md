@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd4f0ef9fe4e9b8f284dd082ebadf27910806beb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672858"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 텍스트 템플릿에 대한 API 참조
@@ -23,8 +23,8 @@ ms.locfileid: "72672858"
 
 ## <a name="namespaces"></a>네임스페이스
 
-|네임스페이스|용도|
+|네임스페이스|목적|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.TextTemplating>|텍스트 템플릿 변환 기능에 대 한 클래스를 포함 합니다. 텍스트 템플릿 변환 엔진은 Visual Studio에 통합 되며 텍스트 템플릿 파일을 생성 된 텍스트 출력 파일로 변환 합니다.|
-|[모델링](/previous-versions/ee844312(v=vs.140))|UML 모델 및 도메인별 언어와 관련 된 텍스트 변환 기능 (예: [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus에 대 한 액세스)을 제공 합니다.|
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|@No__t_0에서 텍스트 템플릿 서비스에 대 한 액세스를 제공 합니다.|
+|[모델링](/previous-versions/ee844312(v=vs.140))|ModelBus에 대 한 액세스와 같이 UML 모델 및 도메인별 언어와 관련 된 텍스트 변환 기능을 제공 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|에서 텍스트 템플릿 서비스에 대 한 액세스를 제공 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다.|

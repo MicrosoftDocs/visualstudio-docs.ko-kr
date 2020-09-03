@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5d9139314d52c4c50de84a45f227e6df5715bf02
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540662"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: 종료자는 기본 클래스 종료자를 호출해야 합니다.
@@ -44,10 +44,10 @@ ms.locfileid: "85540662"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다. 공용 언어 런타임을 대상으로 하는 일부 컴파일러는 기본 형식의 종료자에 대 한 호출을 MSIL (Microsoft 중간 언어)에 삽입 합니다. 이 규칙의 경고를 보고 하는 경우 컴파일러는 호출을 삽입 하지 않으므로 코드에 추가 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 Visual Basic 예제에서는 `TypeB` <xref:System.Object.Finalize%2A> 기본 클래스에서 메서드를 올바르게 호출 하는 형식을 보여 줍니다.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
