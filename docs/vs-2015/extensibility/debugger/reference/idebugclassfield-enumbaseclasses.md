@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Microsoft Docs
+title: 'IDebugClassField:: EnumBaseClasses | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: acfdc872ba5f7cf1989ea1d9ec67f82f1c0419b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191051"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
@@ -40,13 +40,13 @@ int EnumBaseClasses(
   
 #### <a name="parameters"></a>매개 변수  
  `ppEnum`  
- [out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 기본 클래스의 목록을 나타내는 개체입니다. 기본 클래스가 없고 없으면 null 값을 반환 합니다.  
+ 제한이 기본 클래스 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 기본 클래스가 없는 경우 null 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환, 기본 클래스가 없고 없으면 S_SH_NO_BASE_CLASSES를 반환 합니다 (및 `ppEnum` 매개 변수는 null 값으로 설정)이 고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면 S_OK을 반환 하 고, 기본 클래스가 없고 매개 변수가 null 값으로 설정 된 경우 S_SH_NO_BASE_CLASSES을 반환 하 고 `ppEnum` , 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 열거자 개체의 기본 클래스는 대부분의 원격 기본 클래스에 즉각적인 (또는 가장 많이 파생 된) 기본 클래스의 순서에 지정 됩니다. 예를 들어는 C++ 클래스:  
+ 열거자 개체의 기본 클래스는 가장 직접적 이거나 가장 많이 파생 된 기본 클래스를 가장 많은 원격 클래스로 지정 합니다. 예를 들어 다음과 같은 c + + 클래스가 있다고 가정 합니다.  
   
 ```  
 class Root { }  
@@ -55,8 +55,8 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }  
 ```  
   
- 열거형 기본 클래스를 순서 대로 반환 `Level2`, `Level1`, `Root`합니다.  
+ 열거형은,, 순서로 기본 클래스를 반환 합니다 `Level2` `Level1` `Root` .  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

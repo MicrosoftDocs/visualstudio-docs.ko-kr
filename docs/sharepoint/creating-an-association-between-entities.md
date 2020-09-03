@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981088"
 ---
 # <a name="create-an-association-between-entities"></a>엔터티 간 연결 만들기
@@ -47,7 +47,7 @@ ms.locfileid: "72981088"
 ### <a name="foreign-key-based-association"></a>외래 키 기반 연결
  원본 엔터티의 식별자와 대상 엔터티에 정의 된 형식 설명자를 연결 하 여 외래 키 기반 연결을 만들 수 있습니다. 이 관계를 통해 모델의 소비자는 사용자에 게 향상 된 UI를 제공할 수 있습니다. 예를 들어 사용자가 드롭다운 목록에서 고객을 표시할 수 있는 판매 주문을 만들 수 있도록 하는 Outlook의 양식입니다. 또는 사용자가 고객에 대 한 프로필 페이지를 열 수 있는 SharePoint의 판매 주문 목록입니다.
 
- 외래 키 기반 연결을 만들려면 동일한 이름과 형식을 공유 하는 식별자와 형식 설명자를 관련 시킵니다. 예를 들어 `Contact` 엔터티와 `SalesOrder` 엔터티 간에 외래 키 기반 연결을 만들 수 있습니다. `SalesOrder` 엔터티는 Finder 또는 특정 Finder 메서드의 반환 매개 변수 일부로 `ContactID` 형식 설명자를 반환 합니다. 두 형식 설명자가 모두 **연결 편집기**에 표시 됩니다. `Contact` 엔터티와 `SalesOrder` 엔터티 간에 외래 키 기반 관계를 만들려면 이러한 각 필드 옆에 있는 `ContactID` 식별자를 선택 합니다.
+ 외래 키 기반 연결을 만들려면 동일한 이름과 형식을 공유 하는 식별자와 형식 설명자를 관련 시킵니다. 예를 들어 엔터티와 엔터티 간에 외래 키 기반 연결을 만들 수 있습니다 `Contact` `SalesOrder` . `SalesOrder`엔터티는 `ContactID` Finder 또는 특정 finder 메서드의 반환 매개 변수 일부로 형식 설명자를 반환 합니다. 두 형식 설명자가 모두 **연결 편집기**에 표시 됩니다. 엔터티와 엔터티 간에 외래 키 기반 관계를 만들려면 `Contact` `SalesOrder` `ContactID` 이러한 각 필드 옆에 있는 식별자를 선택 합니다.
 
  대상 엔터티 컬렉션을 반환 하는 소스 엔터티의 Association Navigator 메서드에 코드를 추가 합니다. 다음 예에서는 연락처에 대 한 판매 주문을 반환 합니다.
 
@@ -60,22 +60,22 @@ ms.locfileid: "72981088"
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
 ### <a name="foreign-keyless-association"></a>외부 키가 없는 연결
- 식별자를 필드 형식 설명자에 매핑하지 않고 연결을 만들 수 있습니다. 원본 엔터티가 대상 엔터티와 직접 관계가 없는 경우 이러한 종류의 연결을 만듭니다. 예를 들어 `SalesOrderDetail` 테이블에는 `Contact` 테이블의 기본 키에 매핑되는 외래 키가 없습니다.
+ 식별자를 필드 형식 설명자에 매핑하지 않고 연결을 만들 수 있습니다. 원본 엔터티가 대상 엔터티와 직접 관계가 없는 경우 이러한 종류의 연결을 만듭니다. 예를 들어 테이블 `SalesOrderDetail` 에는 테이블의 기본 키에 매핑되는 외래 키가 없습니다 `Contact` .
 
- `Contact`와 관련 된 `SalesOrderDetail` 테이블에 정보를 표시 하려면 `Contact` 엔터티와 `SalesOrderDetail` 엔터티 간에 외래 키가 없는 연결을 만들 수 있습니다.
+ 와 관련 된 정보를 테이블에 표시 하려는 경우 `SalesOrderDetail` `Contact` 엔터티와 엔터티 간에 외래 키가 없는 연결을 만들 수 있습니다 `Contact` `SalesOrderDetail` .
 
- `Contact` 엔터티의 Association 탐색 메서드에서 테이블을 조인 하거나 저장 프로시저를 호출 하 여 `SalesOrderDetail` 엔터티를 반환 합니다.
+ 엔터티의 연결 탐색 메서드에서 `Contact` `SalesOrderDetail` 테이블을 조인 하거나 저장 프로시저를 호출 하 여 엔터티를 반환 합니다.
 
  다음 예에서는 테이블을 조인 하 여 모든 판매 주문에 대 한 세부 정보를 반환 합니다.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- `SalesOrderDetail` 엔터티의 연결 탐색 메서드에서 관련 `Contact`반환 합니다. 다음은 이에 대한 예입니다.
+ 엔터티의 연결 탐색 메서드에서 `SalesOrderDetail` 관련 된을 반환 합니다 `Contact` . 다음은 이에 대한 예입니다.
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [방법: 엔터티 간 연결 만들기](../sharepoint/how-to-create-an-association-between-entities.md)

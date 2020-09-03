@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로그램Ex2::첨부 | 마이크로 소프트 문서
+title: 'IDebugProgramEx2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722383"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-프로그램에 세션을 연결합니다.
+프로그램에 세션을 연결 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,22 +45,22 @@ int Attach( 
 
 ## <a name="parameters"></a>매개 변수
 `pCallback`\
-【인】 연결된 디버그 엔진이 이벤트를 보내는 콜백 함수를 나타내는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.
+진행 연결 된 디버그 엔진이 이벤트를 보내는 콜백 함수를 나타내는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.
 
 `dwReason`\
-【인】 첨부 작업의 이유를 설명하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다.
+진행 연결 작업의 원인을 설명 하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다.
 
 `pSession`\
-【인】 프로그램에 첨부되는 세션을 고유하게 식별하는 값입니다.
+진행 프로그램에 연결 되는 세션을 고유 하 게 식별 하는 값입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 프로그램이 이미 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` 연결되어 있는 경우 이 메서드가 반환됩니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 프로그램이 이미 연결 되어 있으면이 메서드는를 반환 해야 합니다 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` .
 
 ## <a name="remarks"></a>설명
- 프로그램을 포함하는 포트는 에서 값을 `pSession` 사용하여 프로그램에 연결하려는 세션을 결정할 수 있습니다. 예를 들어 포트에서 한 번에 하나의 디버그 세션만 프로세스에 연결할 수 있도록 허용하는 경우 포트는 동일한 세션이 프로세스의 다른 프로그램에 이미 연결되어 있는지 확인할 수 있습니다.
+ 프로그램을 포함 하는 포트는의 값을 사용 `pSession` 하 여 프로그램에 연결 하려고 하는 세션을 확인할 수 있습니다. 예를 들어 포트에서 한 번에 하나의 디버그 세션만 프로세스에 연결할 수 있는 경우 포트는 동일한 세션이 프로세스의 다른 프로그램에 이미 연결 되어 있는지 확인할 수 있습니다.
 
 > [!NOTE]
-> 전달된 `pSession` 인터페이스는 이 프로그램에 연결하는 세션 디버그 관리자를 고유하게 식별하는 값인 쿠키로만 처리됩니다. 제공된 인터페이스의 메서드가 작동하지 않습니다.
+> 전달 된 인터페이스는 `pSession` 이 프로그램에 연결 하는 세션 디버그 관리자를 고유 하 게 식별 하는 값인 쿠키로만 처리 됩니다. 제공 된 인터페이스의 메서드는 모두 작동 하지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

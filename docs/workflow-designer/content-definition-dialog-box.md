@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19e2341d458c98f01d3b58d6f77887ac1cfe6746
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876205"
 ---
 # <a name="content-definition-dialog-box"></a>콘텐츠 정의 대화 상자
@@ -23,9 +23,9 @@ ms.locfileid: "86876205"
 
 다음 표에서는 **상관 관계 초기화** 대화 상자의 UI (사용자 인터페이스) 요소에 대해 설명 합니다.
 
-|UI 요소|Description|
+|UI 요소|설명|
 |-|-----------------|
-|**메시지**|메시지 **데이터** 식 텍스트 상자와 메시지 **유형** 드롭다운 목록 상자를 사용 하 여 유형을 사용 하 여 메시지 내용을 지정 합니다. 기본적으로 **콘텐츠 정의** 는 <xref:System.ServiceModel.Activities.ReceiveMessageContent> <xref:System.ServiceModel.Channels.Message> 워크플로 서비스 정의 내에 또는 메시지 계약 형식이 필요한를 사용 합니다.|
+|**Message**|메시지 **데이터** 식 텍스트 상자와 메시지 **유형** 드롭다운 목록 상자를 사용 하 여 유형을 사용 하 여 메시지 내용을 지정 합니다. 기본적으로 **콘텐츠 정의** 는 <xref:System.ServiceModel.Activities.ReceiveMessageContent> <xref:System.ServiceModel.Channels.Message> 워크플로 서비스 정의 내에 또는 메시지 계약 형식이 필요한를 사용 합니다.|
 |**매개 변수**|데이터 계약이 필요한를 사용 하려면 **매개 변수** 라디오 단추를 클릭 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 합니다. 데이터 표를 사용하여 현재 워크플로의 가변 매개 변수에 값을 지정할 <xref:System.Activities.OutArgument> 키/값 쌍의 제네릭 컬렉션을 설정합니다.|
 
 **콘텐츠 정의** 대화 상자는 **Send**, **Receive**, **ReceiveAndSendReply**및 **SendAndReceiveReply** 디자이너에서 사용 됩니다. 비슷한 방법으로 각각의 디자이너에 액세스할 수 있으며 여기서는 Receive 디자이너로 액세스 절차를 설명하겠습니다.

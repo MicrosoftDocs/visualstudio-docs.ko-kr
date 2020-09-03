@@ -9,16 +9,16 @@ ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
 ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911862"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
 Azure 클라우드 서비스 또는 가상 머신 문제를 해결해야 하는 경우 Visual Studio를 사용하여 Azure Diagnostics를 보다 쉽게 설정할 수 있습니다. 진단은 클라우드 서비스를 실행하는 가상 머신 및 가상 머신 인스턴스에서 시스템 데이터와 로깅 데이터를 캡처합니다. 진단 데이터는 사용자가 선택한 스토리지 계정으로 전송됩니다. Azure의 진단 로깅에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대해 진단 로깅 사용](/azure/app-service/web-sites-enable-diagnostic-log)을 참조하세요.
 
-이 문서에서는 Visual Studio를 사용하여 배포 전후에 Azure Diagnostics를 켜고 설정하는 방법을 보여 줍니다. Azure Virtual Machines에서 진단을 설정하는 방법, 수집할 진단 정보 유형을 선택하는 방법 및 수집한 후에 정보를 확인하는 방법을 알아봅니다.
+이 문서에서는 Visual Studio를 사용하여 배포 전후에 Azure Diagnostics를 켜고 설정하는 방법을 보여줍니다. Azure Virtual Machines에서 진단을 설정하는 방법, 수집할 진단 정보 유형을 선택하는 방법 및 수집한 후에 정보를 확인하는 방법을 알아봅니다.
 
 Azure Diagnostics를 설정하려면 다음 옵션 중 하나를 사용할 수 있습니다.
 
@@ -80,16 +80,16 @@ Visual Studio에서는 배포하기 전에 에뮬레이터에서 서비스를 �
    * **Microsoft Azure Storage 에뮬레이터**를 선택하면 연결 문자열은 `UseDevelopmentStorage=true`로 설정됩니다.
    * **구독**을 선택하는 경우 사용할 Azure 구독을 선택하고 계정 이름을 입력할 수 있습니다. Azure 구독을 관리하려면 **계정 관리**를 선택합니다.
    * **수동으로 입력한 자격 증명**을 선택하는 경우 사용할 Azure 계정의 이름 및 키를 입력합니다.
-5. **진단 구성** 대화 상자를 표시하려면 **구성**을 선택합니다. **일반** 및 **로그 디렉터리**를 제외한 각 탭은 수집할 수 있는 진단 데이터 원본을 나타냅니다. 기본 **일반** 탭에는 **오류만**, **모든 정보**및 **사용자 지정 계획**의 진단 데이터 수집 옵션이 제공 됩니다. 기본 **오류만** 옵션은 경고 또는 추적 메시지를 전송하지 않으므로 최소한의 스토리지를 사용합니다. **모든 정보** 옵션은 대부분의 정보를 전송하고, 대부분의 스토리지를 사용하므로 비용이 가장 많이 드는 옵션입니다.
+5. **진단 구성** 대화 상자를 표시하려면 **구성**을 선택합니다. **일반** 및 **로그 디렉터리**를 제외한 각 탭은 수집할 수 있는 진단 데이터 원본을 나타냅니다. 기본 **일반** 탭은 **오류만**, **모든 정보** 및 **사용자 지정 계획**의 진단 데이터 컬렉션 옵션을 제공합니다. 기본 **오류만** 옵션은 경고 또는 추적 메시지를 전송하지 않으므로 최소한의 스토리지를 사용합니다. **모든 정보** 옵션은 대부분의 정보를 전송하고, 대부분의 스토리지를 사용하므로 비용이 가장 많이 드는 옵션입니다.
 
    > [!NOTE]
    > "디스크 할당량 (MB)"에 대해 지원 되는 최소 크기는 50MB 이며 기본 크기는 4GB입니다. 그러나 메모리 덤프를 수집하는 경우 이 값을 10GB까지 늘릴 수 있습니다.
    >
 
-    ![Azure Diagnostics 및 구성 사용](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
+    ![Azure 진단 및 구성 사용](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. 이 예제에서는 **사용자 지정 계획** 옵션을 선택하여 수집된 데이터를 사용자 지정할 수 있습니다.
 7. **디스크 할당량(MB)** 상자에서는 진단 데이터를 위한 스토리지 계정에 할당할 공간을 설정할 수 있습니다. 기본값을 변경하거나 그대로 사용할 수 있습니다.
-8. 수집할 진단 데이터의 각 탭에서 **\<로그 유형\> 전송 사용** 확인란을 선택합니다. 예를 들어 애플리케이션 로그를 수집하려는 경우 **애플리케이션 로그** 탭에서 **애플리케이션 로그 전송 사용** 확인란을 선택합니다. 또한 각 진단 데이터 형식에 필요한 기타 정보를 지정합니다. 각 탭에 대한 구성 정보는 이 문서 뒷부분에 있는 **진단 데이터 원본 설정** 섹션을 참조하세요.
+8. 수집 하려는 진단 데이터의 각 탭에서 **전송 \<log type\> 사용** 확인란을 선택 합니다. 예를 들어 애플리케이션 로그를 수집하려는 경우 **애플리케이션 로그** 탭에서 **애플리케이션 로그 전송 사용** 확인란을 선택합니다. 또한 각 진단 데이터 형식에 필요한 기타 정보를 지정합니다. 각 탭에 대한 구성 정보는 이 문서 뒷부분에 있는 **진단 데이터 원본 설정** 섹션을 참조하세요.
 9. 원하는 모든 진단 데이터의 컬렉션을 사용하도록 설정한 후에는 **확인**을 선택합니다.
 10. 평상시처럼 Visual Studio에서 Azure 클라우드 서비스 프로젝트를 실행합니다. 애플리케이션을 사용함에 따라 Azure Storage 계정으로 사용하도록 설정한 로그 정보가 지정한 Azure Storage 계정에 저장됩니다.
 
@@ -99,7 +99,7 @@ Visual Studio에서 Azure Virtual Machines에 대한 진단 데이터를 수집�
 ### <a name="to-turn-on-diagnostics-on-azure-virtual-machines"></a>Azure Virtual Machines에서 진단을 켜려면
 
 1. 서버 탐색기에서 Azure 노드를 선택하고 아직 연결되어 있지 않은 경우 Azure 구독에 연결합니다.
-2. **Virtual Machines** 노드를 확장합니다. 새 가상 머신을 만들거나 기존 노드를 선택할 수 있습니다.
+2. **가상 컴퓨터** 노드를 확장합니다. 새 가상 머신을 만들거나 기존 노드를 선택할 수 있습니다.
 3. 원하는 가상 컴퓨터에 대한 바로 가기 메뉴에서 **구성**을 선택합니다. 가상 머신 구성 대화 상자가 나타납니다.
 
     ![Azure Virtual Machine 구성](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
@@ -116,12 +116,12 @@ Visual Studio에서 Azure Virtual Machines에 대한 진단 데이터를 수집�
 
     **일반** 및 **로그 디렉터리**를 제외한 각 탭은 수집할 수 있는 진단 데이터 원본을 나타냅니다.
 
-    ![Azure Diagnostics 및 구성 사용](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
+    ![Azure 진단 및 구성 사용](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    기본 탭 인 **일반**은 **오류만**, **모든 정보**및 **사용자 지정 계획**의 진단 데이터 수집 옵션을 제공 합니다. 기본 옵션인 **오류만**은 경고 또는 추적 메시지를 전송하지 않으므로 최소한의 스토리지를 사용합니다. **모든 정보** 옵션은 대부분의 정보를 전송하므로 스토리지를 기준으로 비용이 가장 많이 드는 옵션입니다.
-7. 이 예에서는 **사용자 지정 계획** 옵션을 선택하여 수집된 데이터를 사용자 지정할 수 있습니다.
-8. **디스크 할당량(MB)** 상자에서는 진단 데이터를 위한 스토리지 계정에 할당할 공간을 지정합니다. 원하는 경우 기본값을 변경할 수 있습니다.
-9. 수집할 진단 데이터의 각 탭에서 **\<로그 유형\> 전송 사용** 확인란을 선택합니다.
+    기본 탭인 **일반**은 **오류만**, **모든 정보** 및 **사용자 지정 계획**의 진단 데이터 컬렉션 옵션을 제공합니다. 기본 옵션인 **오류만**은 경고 또는 추적 메시지를 전송하지 않기 때문에 가장 적은 저장소 공간을 사용합니다. **모든 정보** 옵션은 대부분의 정보를 전달하므로 저장소 측면에서 볼 때 비용이 가장 많이 드는 옵션입니다.
+7. 이 예에서는 수집한 데이터를 사용자 지정할 수 있도록 **사용자 지정 계획** 옵션을 선택합니다.
+8. **디스크 할당량(MB)** 상자는 진단 데이터에 대해 저장소 계정에 할당할 공간 크기를 지정합니다. 원하는 경우 기본값을 변경할 수 있습니다.
+9. 수집할 진단 데이터의 각 탭에서 **\<log type\> 전송 사용** 확인란을 선택합니다.
 
     예를 들어 응용 프로그램 로그를 수집 하려는 **경우 응용 프로그램 로그 탭에서** **응용 프로그램 로그 전송 사용** 확인란을 선택 합니다. 또한 각 진단 데이터 형식에 필요한 기타 정보를 지정 합니다. 각 탭에 대한 구성 정보는 이 문서 뒷부분에 있는 **진단 데이터 원본 설정** 섹션을 참조하세요.
 10. 원하는 모든 진단 데이터의 컬렉션을 사용하도록 설정한 후에는 **확인**을 선택합니다.
@@ -133,7 +133,7 @@ Visual Studio에서 Azure Virtual Machines에 대한 진단 데이터를 수집�
 진단 데이터 컬렉션을 사용하도록 설정했으면 수집할 데이터 원본과 수집되는 정보를 정확하게 선택할 수 있습니다. 다음 섹션에서는 **진단 구성** 대화 상자에 있는 탭 목록과 각 구성 옵션의 의미를 설명합니다.
 
 ### <a name="application-logs"></a>애플리케이션 로그 전송 사용
-애플리케이션 로그는 웹 애플리케이션에서 생성된 진단 정보를 포함합니다. 애플리케이션 로그를 캡처하려는 경우 **애플리케이션 로그 전송 사용** 확인란을 선택합니다. 스토리지 계정으로의 애플리케이션 로그 전송 간격을 늘리거나 줄이려면 변경 된 **전송 기간(분)** 값을 변경합니다. 또한 **로그 수준** 값을 설정하여 로그에 캡처되는 정보의 양을 변경할 수도 있습니다. 예를 들어 **자세히**를 선택하여 자세한 정보를 얻거나 **중요**를 선택하여 중요한 오류만 캡처하도록 선택합니다. 애플리케이션 로그를 생성하는 특정 진단 공급자가 있는 경우 공급자의 GUID를 **공급자 GUID** 상자에 추가하여 캡처할 수 있습니다.
+애플리케이션 로그는 웹 애플리케이션에서 생성된 진단 정보를 포함합니다. 응용 프로그램 로그를 캡처하려면 **응용 프로그램 로그 전송 사용** 확인란을 선택합니다. 스토리지 계정으로의 애플리케이션 로그 전송 간격을 늘리거나 줄이려면 변경 된 **전송 기간(분)** 값을 변경합니다. 또한 **로그 수준** 값을 설정하여 로그에 캡처되는 정보의 양을 변경할 수도 있습니다. 예를 들어 **자세히**를 선택하여 자세한 정보를 얻거나 **중요**를 선택하여 중요한 오류만 캡처하도록 선택합니다. 애플리케이션 로그를 생성하는 특정 진단 공급자가 있는 경우 공급자의 GUID를 **공급자 GUID** 상자에 추가하여 캡처할 수 있습니다.
 
   ![애플리케이션 로그 전송 사용](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
@@ -144,7 +144,7 @@ Windows 이벤트 로그를 캡처하려면 **Windows 이벤트 로그 전송 �
 
 ![이벤트 로그](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
-Azure SDK 2.6 이상을 사용 중이고 사용자 지정 데이터 원본을 지정하려면 **\<데이터 원본 이름\>** 텍스트 상자에 입력한 후 **추가**를 선택합니다. 데이터 원본이 diagnostics.cfcfg 파일에 추가됩니다.
+Azure SDK 2.6 이상을 사용 중인 경우 사용자 지정 데이터 원본을 지정 하려면 텍스트 상자에 입력 한 **\<Data source name\>** 다음 **추가**를 선택 합니다. 데이터 원본이 diagnostics.cfcfg 파일에 추가됩니다.
 
 Azure SDK 2.5를 사용 중이고 사용자 지정 데이터 원본을 지정하려면 다음 예와 같이 diagnostics.wadcfgx 파일의 `WindowsEventLog` 섹션에 추가하면 됩니다.
 
@@ -167,7 +167,7 @@ Azure SDK 2.5를 사용 중이고 사용자 지정 데이터 원본을 지정하
 
 ![진단 인프라 로그](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-자세한 내용은 [Azure Diagnostics를 사용하여 로깅 데이터 수집](https://msdn.microsoft.com/library/azure/gg433048.aspx)을 참조하세요.
+자세한 내용은 [Azure 진단를 사용 하 여 로깅 데이터 수집](https://msdn.microsoft.com/library/azure/gg433048.aspx)을 참조 하세요.
 
 ### <a name="log-directories"></a>로그 디렉터리
 로그 디렉터리는 IIS(인터넷 정보 서비스) 요청, 실패한 요청 또는 사용자가 선택한 폴더에 대한 로그 디렉터리에서 수집한 데이터를 포함합니다. 로그 디렉터리를 캡처하려면 **로그 디렉터리 전송 사용** 확인란을 선택합니다. 스토리지 계정으로의 로그 전송 간격을 늘리거나 줄이려면 변경 된 **전송 기간(분)** 값을 변경합니다.
@@ -194,7 +194,7 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
 
 ![크래시 덤프](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-자세한 내용은 [Microsoft Azure에서 로깅 및 추적 제어](https://msdn.microsoft.com/magazine/ff714589.aspx) 및 [Microsoft Azure 진단 4 부: 사용자 지정 로깅 구성 요소 및 Azure 진단 1.3 변경](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/)을 참조 하세요.
+자세한 내용은 [Microsoft Azure에서 로깅 및 추적 관리](https://msdn.microsoft.com/magazine/ff714589.aspx) 및 [Microsoft Azure Diagnostics 4부: 사용자 지정 로깅 구성 요소 및 Azure Diagnostics 1.3 변경 내용](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/)을 참조하세요.
 
 ## <a name="view-the-diagnostics-data"></a>진단 데이터 보기
 클라우드 서비스 또는 가상 머신에 대한 진단 데이터를 수집한 후에 이를 볼 수 있습니다.
@@ -218,11 +218,11 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
 
    | 진단 데이터 | 설명 | 위치 |
    | --- | --- | --- |
-   | 애플리케이션 로그 전송 사용 |코드에서 **System.Diagnostics.Trace** 클래스의 메서드를 호출하여 생성하는 로그입니다. |WADLogsTable |
+   | 애플리케이션 로그 전송 사용 |코드에서 **Diagnostics. Trace** 클래스의 메서드를 호출 하 여 생성 하는 로그입니다. |WADLogsTable |
    | 이벤트 로그 |가상 머신에서 Windows 이벤트 로그에서 가져온 데이터입니다. Windows에서는 이러한 로그에 정보를 저장하지만 애플리케이션 및 서비스에서는 로그를 사용하여 오류 또는 로그 정보를 보고합니다. |WADWindowsEventLogsTable |
    | 성능 카운터 |가상 머신에서 사용할 수 있는 성능 카운터에서 데이터를 수집할 수 있습니다. 운영 체제에서 메모리 사용량 및 프로세서 시간 등의 다양한 통계를 포함하는 성능 카운터를 제공합니다. |WADPerformanceCountersTable |
    | 인프라 로그 |진단 인프라 자체에서 생성되는 로그입니다. |WADDiagnosticInfrastructureLogsTable |
-   | IIS 로그 |웹 요청을 기록하는 로그입니다. 클라우드 서비스에 상당한 양의 트래픽이 들어오는 경우 이러한 로그 시간이 오래 걸릴 수 있습니다. 데이터를 필요할 때만 수집하고 저장하는 것이 좋습니다. |배포, 역할 및 인스턴스에 대한 경로의 wad-iis-failedreqlogs 아래에 있는 BLOB 컨테이너에서 실패한 요청 로그를 찾을 수 있습니다. 전체 로그는 wad-iis-logfiles 아래에서 찾을 수 있습니다. 각 파일에 대한 항목은 WADDirectories 테이블에서 생성됩니다. |
+   | IIS 로그 |웹 요청을 기록하는 로그입니다. 클라우드 서비스에 상당한 양의 트래픽이 들어오는 경우 이러한 로그 시간이 오래 걸릴 수 있습니다. 데이터를 필요할 때만 수집하고 저장하는 것이 좋습니다. |배포, 역할 및 인스턴스에 대한 경로의 wad-iis-failedreqlogs 아래에 있는 Blob 컨테이너에서 실패한 요청 로그를 찾을 수 있습니다. 전체 로그는 wad-iis-logfiles 아래에서 찾을 수 있습니다. 각 파일에 대한 항목은 WADDirectories 테이블에서 생성됩니다. |
    | 크래시 덤프 |클라우드 서비스 프로세스의 이진 이미지를 제공합니다(일반적으로 작업자 역할). |wad-crush-dumps BLOB 컨테이너 |
    | 사용자 지정 로그 파일 |미리 정의된 데이터의 로그입니다. |스토리지 계정의 사용자 지정 로그 파일의 위치를 코드에 지정할 수 있습니다. 예를 들어, 사용자 지정 BLOB 컨테이너를 지정할 수 있습니다. |
 4. 임의 형식의 데이터가 잘린 경우 해당 데이터 형식에 대한 버퍼를 늘리거나 가상 컴퓨터에서 스토리지 계정 간에 데이터 전송 간격을 단축하려고 시도할 수 있습니다.
@@ -256,9 +256,9 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
     서버 탐색기에서 데이터 컬렉션을 변경하는 경우 클라우드 서비스를 완전히 다시 배포할 때까지 이 변경 내용이 계속 적용됩니다. 기본 게시 설정을 사용하는 경우 변경 내용을 덮어쓰지 않습니다. 기본 게시 설정은 전체 다시 배포를 수행하는 것이 아니라 기존 배포를 업데이트하는 것입니다. 배포 시 설정을 지우려면 게시 마법사의 **고급 설정** 탭으로 이동하고 **배포 업데이트** 확인란을 선택 취소합니다. 해당 확인란이 선택 취소된 상태에서 재배포하는 경우 역할에 대한 **속성** 편집기를 통해 설정된 대로 .wadcfgx(또는 .wadcfg) 파일의 내용으로 설정을 되돌립니다. 배포를 업데이트하는 경우 Azure는 이전 설정을 유지합니다.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Azure 클라우드 서비스 문제 해결
-"사용 중" 상태에 고착된 역할, 반복적인 재활용 또는 내부 서버 오류 throw와 같은 클라우드 서비스 프로젝트에서 문제가 발생하는 경우 이러한 문제를 진단하고 해결하는 데 사용할 수 있는 도구와 기술이 있습니다. 일반적인 문제 및 해결 방법에 대한 구체적인 예제와 이러한 오류를 진단 및 해결하는 데 사용되는 개념 및 도구에 대한 개요는 [Azure PaaS 컴퓨팅 진단 데이터](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/)를 참조하세요.
+"사용 중" 상태에 고착된 역할, 반복적인 재활용 또는 내부 서버 오류 throw와 같은 클라우드 서비스 프로젝트에서 문제가 발생하는 경우 이러한 문제를 진단하고 해결하는 데 사용할 수 있는 도구와 기술이 있습니다. 일반적인 문제 및 해결 방법에 대한 구체적인 예제와 이러한 오류를 진단 및 해결하는 데 사용되는 개념 및 도구에 대한 개요는 [Azure PaaS Compute 진단 데이터](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/)를 참조하세요.
 
-## <a name="q--a"></a>Q&A
+## <a name="q--a"></a>Q & A
 **버퍼 크기란 무엇이고 얼마나 클 수 있습니까?**
 
 각 가상 머신 인스턴스에서 로컬 파일 시스템에 저장할 수 있는 진단 데이터의 양에 대한 할당량 제한입니다. 또한 사용할 수 있는 진단 데이터의 각 형식에 대해 버퍼 크기를 지정합니다. 이 버퍼 크기는 해당 형식의 데이터에 대해 개별 할당량과 같은 역할을 합니다. 전체 할당량과 남은 메모리의 양을 확인하려면 진단 데이터 형식에 대한 대화 상자의 아래쪽을 확인하세요. 버퍼 크기를 크게 지정하거나 더 많은 데이터 형식을 지정할 경우 전체 할당량에 근접하게 됩니다. diagnostics.wadcfg 또는 .wadcfgx 구성 파일을 수정하여 전체 할당량을 변경할 수 있습니다. 진단 데이터는 애플리케이션 데이터와 같은 파일 시스템에 저장됩니다. 애플리케이션이 많은 양의 디스크 공간을 사용하는 경우 전체 진단 할당량을 늘리지 말아야 합니다.
@@ -271,9 +271,9 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
 
 타임스탬프는 클라우드 서비스를 호스팅하는 데이터 센터의 현지 표준 시간대를 기준으로 합니다. 로그 테이블에는 다음 세 타임 스탬프 열이 사용됩니다.
 
-* **PreciseTimeStamp**: 이벤트의 ETW 타임 스탬프입니다. 즉, 클라이언트에서 이벤트가 로깅된 시간입니다.
-* **TIMESTAMP**: **PreciseTimeStamp** 에 대 한 값은 업로드 빈도 경계로 내림 됩니다. 예를 들어 업로드 빈도가 5분이고 이벤트 시간이 00:17:12이면 TIMESTAMP는 00:15:00가 됩니다.
-* **Timestamp**: Azure 테이블에서 엔터티가 생성 된 타임 스탬프입니다.
+* **PreciseTimeStamp**: 이벤트의 ETW 타임스탬프입니다. 즉, 클라이언트에서 이벤트가 로깅된 시간입니다.
+* **TIMESTAMP**: 업로드 빈도 경계로 내림되는 **PreciseTimeStamp** 값입니다. 예를 들어 업로드 빈도가 5분이고 이벤트 시간이 00:17:12이면 TIMESTAMP는 00:15:00가 됩니다.
+* **Timestamp**: Azure 테이블에서 엔터티가 생성된 타임스탬프입니다.
 
 **진단 정보를 수집할 때 비용은 어떻게 관리합니까?**
 
@@ -283,9 +283,9 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
 
 기본적으로 IIS는 실패한 요청 로그를 수집하지 않습니다. 웹 역할에 대한 web.config 파일을 편집하여 실패한 요청 로그를 수집하도록 IIS를 설정할 수 있습니다.
 
-**OnStart와 같은 RoleEntryPoint 메서드에서 추적 정보를 가져오지 않습니다. 뭐가 문제인가요?**
+**OnStart 같은 RoleEntryPoint 메서드에서 추적 정보를 얻을 수 없습니다. 무엇이 문제입니까?**
 
-**RoleEntryPoint** 메서드는 IIS가 아닌, WAIISHost.exe 컨텍스트에서 호출됩니다. 일반적으로 추적을 사용하는 web.config의 구성 정보는 적용되지 않습니다. 이 문제를 해결하려면 웹 역할 프로젝트에.config 파일을 추가하고 **RoleEntryPoint** 코드가 포함된 출력 어셈블리와 일치하는 파일 이름을 지정합니다. 기본 웹 역할 프로젝트에서 .config 파일의 이름은 Waiishost.exe 여야 합니다. 이 파일에 다음 줄을 추가 합니다.
+**RoleEntryPoint** 메서드는 IIS가 아닌, WAIISHost.exe 컨텍스트에서 호출됩니다. 일반적으로 추적을 사용하는 web.config의 구성 정보는 적용되지 않습니다. 이 문제를 해결 하려면 웹 역할 프로젝트에 .config 파일을 추가 하 고 **Roleentrypoint** 코드가 포함 된 출력 어셈블리와 일치 하도록 파일의 이름을로 합니다. 기본 웹 역할 프로젝트에서 .config 파일의 이름을 WAIISHost.exe.config 해야 합니다. 이 파일에 다음 줄을 추가 합니다.
 
 ```xml
 <system.diagnostics>

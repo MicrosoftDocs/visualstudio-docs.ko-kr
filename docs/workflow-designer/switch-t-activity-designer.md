@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7430dec75e898a6695b146ce50076b8f57ed9d3e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711614"
 ---
 # <a name="switcht-activity-designer"></a>Switch\<T> 활동 디자이너
@@ -36,9 +36,9 @@ ms.locfileid: "88711614"
 
 다음 표에서는 가장 유용한 <xref:System.Activities.Statements.Switch%601> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.Switch%601> 활동 디자이너의 이름을 지정합니다. 기본값은 스위치<Int32 \> 입니다. **속성** 창에서 또는 디자이너 헤더에서 직접 값을 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Switch%601> 활동 디자이너의 이름을 지정합니다. 기본값은 스위치<Int32 \> 입니다. **속성** 창에서 또는 디자이너 헤더에서 직접 값을 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|실행할 case를 결정하기 위해 case 컬렉션의 키와 비교하는 데 사용할 식을 지정합니다.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||일치하는 항목이 없는 경우에 실행할 활동을 지정합니다. 디자이너에서 **작업 추가** 단추를 클릭 하 여 활동을 삭제할 수 있는 **기본** 상자를 엽니다.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||계산할 case를 지정합니다. 사례를 추가 하려면 **Switch \<T> ** designer 아래쪽의 **새 사례 추가** 단추를 클릭 합니다. 단추는 textbox (스위치를 추가할 때 선택한 제네릭 형식이 \<T> 문자열 또는 Enum 인 경우 콤보 상자)로 바뀝니다. Case **값** 상자에 키를 추가한 후 사례 영역이 확장 되 고 해당 사례에 대 한 실행 논리를 정의 하기 위해 "여기에 작업 놓기" 힌트 텍스트가 있는 작업을 삭제할 수 있습니다.|
@@ -55,6 +55,6 @@ case를 삭제하는 방법은 두 가지입니다.
 
 삭제하려면 case 자체를 선택해야 합니다. case 내의 활동을 선택하여 삭제하는 경우 case가 아닌 활동만 삭제됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)

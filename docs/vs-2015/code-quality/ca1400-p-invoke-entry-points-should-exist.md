@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 15b63e49f89e17db631772c48765cc610f47ed29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548306"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: P/Invoke 진입점이 있어야 합니다.
@@ -44,10 +44,10 @@ ms.locfileid: "85548306"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  관리 되지 않는 라이브러리가이를 참조 하는 관리 되는 어셈블리와 동일한 디렉터리에 있는 경우에는이 규칙의 경고를 표시 하지 마십시오. 관리 되지 않는 라이브러리를 찾을 수 없는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 형식을 보여 줍니다. kernel32.dll에서 라는 함수는 `DoSomethingUnmanaged` 발생 하지 않습니다.
 
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DLLExists/cs/FxCop.Interoperability.DLLExists.cs#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>

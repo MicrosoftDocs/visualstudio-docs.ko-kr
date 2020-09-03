@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541130"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 인터페이스
   IManagedAddin 인터페이스를 구현 하 여 관리 되는 VSTO 추가 기능을 로드 하는 구성 요소를 만듭니다. 이 인터페이스는 2007 Microsoft Office 시스템에서 추가 되었습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```csharp
 [
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > 이 CLSID는의 *VSTOLoader.dll* 에서도 사용 됩니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . 따라서 IManagedAddin를 사용 하 여 사용자 고유의 VSTO 추가 기능 로더 및 런타임 구성 요소를 만드는 경우를 사용 하는 VSTO 추가 기능을 실행 하는 컴퓨터에 구성 요소를 배포할 수 없습니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Visual Studio에서 Office 개발을 &#40;관리 되지 않는 API 참조&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

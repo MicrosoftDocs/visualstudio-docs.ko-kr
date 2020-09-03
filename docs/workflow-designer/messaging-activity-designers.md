@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876192"
 ---
 # <a name="messaging-activity-designers"></a>메시징 활동 디자이너
@@ -43,11 +43,11 @@ ms.locfileid: "86876192"
 
 - [활동 디자이너 사용](control-flow-activity-designers.md)
 
-- [Flowchart](../workflow-designer/flowchart-activity-designers.md)
+- [순서도](../workflow-designer/flowchart-activity-designers.md)
 
 - [런타임](../workflow-designer/runtime-activity-designers.md)
 
-- [기본 형식](../workflow-designer/primitives-activity-designers.md)
+- [기본 요소](../workflow-designer/primitives-activity-designers.md)
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 

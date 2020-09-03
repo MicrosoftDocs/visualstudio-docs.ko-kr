@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594593"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Visual Studio 확장에서 텍스트 변환 호출
@@ -130,16 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
-Visual Studio 오류 창에 컴파일러 경고가 표시 되 고 `ErrorCallback`에 대 한 호출도 생성 됩니다.
+컴파일러 경고는 Visual Studio 오류 창에 표시 되 고에 대 한 호출도 생성 됩니다 `ErrorCallback` .
 
 ## <a name="reference-parameters"></a>참조 매개 변수
 
 <xref:System.MarshalByRefObject>에서 파생되는 매개 변수 클래스를 사용하여 텍스트 템플릿의 값을 전달할 수 있습니다.
 
-## <a name="related-articles"></a>관련 문서
+## <a name="related-articles"></a>관련된 문서
 
-전처리 된 텍스트 템플릿에서 텍스트를 생성 하려면: 생성 된 클래스의 `TransformText()` 메서드를 호출 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+전처리 된 텍스트 템플릿에서 텍스트를 생성 하려면: 생성 된 `TransformText()` 클래스의 메서드를 호출 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
 
-Visual Studio 확장 외부에서 텍스트를 생성 하려면: 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)합니다.
+Visual Studio 확장 외부에서 텍스트를 생성 하려면: 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)를 참조 하세요.
 
 나중에 컴파일 및 실행할 수 있는 소스 코드를 생성 하려면 [Itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))의 [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) 메서드를 호출 합니다.

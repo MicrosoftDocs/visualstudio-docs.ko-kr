@@ -41,6 +41,6 @@ ms.locfileid: "80705610"
     > [!NOTE]
     > 사용자 고유의 지 속성을 구현 하는 경우 메서드를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> 시간을 절약 해야 합니다. 이 메서드는 파일을 저장 하는 것이 안전한 지 확인 합니다. 예를 들어 파일이 읽기 전용이 아닙니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)
