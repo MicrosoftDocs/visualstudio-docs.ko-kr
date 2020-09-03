@@ -1,5 +1,5 @@
 ---
-title: '연습: 모델에 액세스 하는 텍스트 템플릿 디버깅 | Microsoft Docs'
+title: '연습: 모델에 액세스 하는 텍스트 템플릿 디버그 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659263"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>연습: 모델에 액세스하는 텍스트 템플릿 디버깅
@@ -22,7 +22,7 @@ ms.locfileid: "72659263"
 도메인별 언어 솔루션에서 텍스트 템플릿을 수정 하거나 추가 하는 경우 엔진이 템플릿을 소스 코드로 변환 하거나 생성 된 코드를 컴파일할 때 오류가 발생할 수 있습니다. 다음 연습에서는 텍스트 템플릿을 디버깅 하기 위해 수행할 수 있는 몇 가지 작업을 보여 줍니다.
 
 > [!NOTE]
-> 일반적인 텍스트 템플릿에 대 한 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)을 참조 하세요. 텍스트 템플릿을 디버그 하는 방법에 대 한 자세한 내용은 [Walkthrough를 참조 하세요. 텍스트 템플릿 디버깅을 ](https://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f) 합니다.
+> 일반적인 텍스트 템플릿에 대 한 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)을 참조 하세요. 텍스트 템플릿을 디버그 하는 방법에 대 한 자세한 내용은 [연습: 텍스트 템플릿 디버깅](https://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)을 참조 하세요.
 
 ## <a name="creating-a-domain-specific-language-solution"></a>도메인별 언어 솔루션 만들기
  이 절차에서는 다음과 같은 특징을 가진 도메인별 언어 솔루션을 만듭니다.
@@ -33,9 +33,9 @@ ms.locfileid: "72659263"
 
 - 파일 확장명: ddd
 
-- Company name: Fabrikam
+- 회사 이름: Fabrikam
 
-  도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 다음을 참조 하십시오. [How: 도메인 특정 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조하세요.
+  도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조 하세요.
 
 ## <a name="creating-a-text-template"></a>텍스트 템플릿 만들기
  솔루션에 텍스트 템플릿을 추가 합니다.
@@ -44,9 +44,9 @@ ms.locfileid: "72659263"
 
 1. 솔루션을 빌드하고 디버거에서 실행을 시작 합니다. **빌드** 메뉴에서 **솔루션 다시 빌드**를 클릭 한 다음 **디버그** 메뉴에서 **디버깅 시작**을 클릭 합니다. Visual Studio의 새 인스턴스는 디버깅 프로젝트를 엽니다.
 
-2. @No__t_0 이라는 텍스트 파일을 디버깅 프로젝트에 추가 합니다.
+2. 이라는 텍스트 파일을 `DebugTest.tt` 디버깅 프로젝트에 추가 합니다.
 
-3. DebugTest.tt의 **사용자 지정 도구** 속성이 `TextTemplatingFileGenerator`로 설정 되어 있는지 확인 합니다.
+3. DebugTest.tt의 **사용자 지정 도구** 속성이로 설정 되어 있는지 확인 `TextTemplatingFileGenerator` 합니다.
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>텍스트 템플릿에서 모델에 액세스 하는 디버깅 지시문
  텍스트 템플릿의 문과 식에서 모델에 액세스할 수 있으려면 먼저 생성 된 지시문 프로세서를 호출 해야 합니다. 생성 된 지시문 프로세서를 호출 하면 모델의 클래스를 텍스트 템플릿 코드에서 속성으로 사용할 수 있습니다. 자세한 내용은 [텍스트 템플릿에서 모델 액세스](../modeling/accessing-models-from-text-templates.md)를 참조 하세요.
@@ -95,13 +95,13 @@ ms.locfileid: "72659263"
 
      **오류 목록** 창에 다음 오류가 표시 됩니다.
 
-     이름이 ' DebuggingTestLanguageDirectiveProcessor ' 인 **The 프로세서는 ' modelRoot ' 지시문을 지원 하지 않습니다. 변환이 실행 되지 않습니다.**
+     **' DebuggingTestLanguageDirectiveProcessor ' 프로세서는 이름이 ' modelRoot ' 인 지시어를 지원 하지 않습니다. 변환이 실행 되지 않습니다.**
 
-     이 경우 지시문 호출에 잘못 된 지시문 이름이 포함 됩니다. @No__t_0 지시문 이름으로 지정 했지만 올바른 지시문 이름이 `DebuggingTestLanguage` 됩니다.
+     이 경우 지시문 호출에 잘못 된 지시문 이름이 포함 됩니다. `modelRoot`지시문 이름으로를 지정 했지만 올바른 지시문 이름은 `DebuggingTestLanguage` 입니다.
 
 3. **오류 목록** 창에서 오류를 두 번 클릭 하 여 코드로 이동 합니다.
 
-4. 코드를 수정 하려면 지시문 이름을 `DebuggingTestLanguage`로 변경 합니다.
+4. 코드를 수정 하려면 지시문 이름을로 변경 `DebuggingTestLanguage` 합니다.
 
      변경 내용이 강조 표시 됩니다.
 
@@ -161,13 +161,13 @@ ms.locfileid: "72659263"
 
      (C#)
 
-     **Compiling 변환: VisualStudio \<GUID >입니다. GeneratedTextTransformation '에 ' Examplemodel.store.customer '에 대 한 정의가 포함 되어 있지 않습니다**
+     **변환 컴파일: \<GUID> VisualStudio. GeneratedTextTransformation '에 ' Examplemodel.store.customer '에 대 한 정의가 포함 되어 있지 않습니다.**
 
      (Visual Basic)
 
-     **Compiling 변환: ' Examplemodel.store.customer '이 (가) ' VisualStudio 템플릿 \<GUID >의 멤버가 아닙니다. GeneratedTextTransformation '.**
+     **변환 컴파일: ' Examplemodel.store.customer '는 ' VisualStudio '의 멤버가 아닙니다 \<GUID> . GeneratedTextTransformation '.**
 
-     이 경우 텍스트 템플릿 코드에 잘못 된 속성 이름이 포함 됩니다. @No__t_0를 속성 이름으로 지정 했지만 올바른 속성 이름을 `LibraryModel` 합니다. 다음 코드와 같이 제공 매개 변수에서 올바른 속성 이름을 찾을 수 있습니다.
+     이 경우 텍스트 템플릿 코드에 잘못 된 속성 이름이 포함 됩니다. `ExampleModel`속성 이름으로를 지정 했지만 올바른 속성 이름은 `LibraryModel` 입니다. 다음 코드와 같이 제공 매개 변수에서 올바른 속성 이름을 찾을 수 있습니다.
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -175,7 +175,7 @@ ms.locfileid: "72659263"
 
 3. 오류 목록 창에서 오류를 두 번 클릭 하 여 코드로 이동 합니다.
 
-4. 코드를 수정 하려면 텍스트 템플릿 코드에서 `LibraryModel` 속성 이름을 변경 합니다.
+4. 코드를 수정 하려면 `LibraryModel` 텍스트 템플릿 코드에서 속성 이름을로 변경 합니다.
 
      변경 내용은 강조 표시되어 있습니다.
 

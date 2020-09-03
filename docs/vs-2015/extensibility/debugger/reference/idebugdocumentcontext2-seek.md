@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek | Microsoft Docs
+title: 'IDebugDocumentContext2:: Seek | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a17a845275a39954a42839d54af14e37fe0bd06c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144978"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-문이나 줄의 지정된 된 수 만큼 문서 컨텍스트를 이동합니다.  
+문서 컨텍스트를 지정 된 수의 문이나 줄로 이동 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,13 +42,13 @@ int Seek( 
   
 #### <a name="parameters"></a>매개 변수  
  `nCount`  
- [in] 문 또는 문서 컨텍스트에 따라 미리 이동할 줄 수입니다.  
+ 진행 문서 컨텍스트에 따라 앞으로 이동할 문이나 줄의 수입니다.  
   
  `ppDocContext`  
- [out] 반환 된 새 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 새 위치를 사용 하 여 개체입니다.  
+ 제한이 새 위치를 사용 하 여 새 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

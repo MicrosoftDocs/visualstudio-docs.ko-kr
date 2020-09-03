@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586928"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
@@ -43,7 +43,7 @@ ms.locfileid: "75586928"
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-**Address**
+**주소**
 
 서비스 참조가 서비스를 검색 하는 웹 주소를 업데이트 합니다. 예를 들어 개발 중에 서비스는 개발 서버에서 호스트 된 후 나중에 프로덕션 서버로 이동 하 여 주소를 변경할 수 있습니다.
 
@@ -71,11 +71,11 @@ WCF 클라이언트에 대해 메시지 계약 형식이 생성 되는지 여부
 
 **컬렉션 형식**
 
-WCF 클라이언트에 대한 목록 컬렉션 형식을 지정합니다. 기본 유형은 <xref:System.Array>입니다.
+WCF 클라이언트에 대한 목록 컬렉션 형식을 지정합니다. 기본 형식은 <xref:System.Array>입니다.
 
 **사전 컬렉션 형식**
 
-WCF 클라이언트에 대한 사전 컬렉션 형식을 지정합니다. 기본 유형은 <xref:System.Collections.Generic.Dictionary%602>입니다.
+WCF 클라이언트에 대한 사전 컬렉션 형식을 지정합니다. 기본 형식은 <xref:System.Collections.Generic.Dictionary%602>입니다.
 
 **참조된 어셈블리의 형식 재사용**
 
@@ -83,7 +83,7 @@ WCF 클라이언트가 서비스를 추가 하거나 업데이트할 때 새 형
 
 **모든 참조된 어셈블리의 형식 재사용**
 
-이를 선택 하면 가능한 경우 **참조 된 어셈블리 목록의** 모든 형식이 다시 사용 됩니다. 기본적으로 이 옵션이 선택됩니다.
+이를 선택 하면 가능한 경우 **참조 된 어셈블리 목록의** 모든 형식이 다시 사용 됩니다. 이 옵션은 기본적으로 선택됩니다.
 
 **참조된 어셈블리 중 지정된 어셈블리의 형식 재사용**
 
@@ -103,7 +103,7 @@ WCF 클라이언트가 서비스를 추가 하거나 업데이트할 때 새 형
 > [!NOTE]
 > **웹 참조 추가** 단추는 **서비스 참조 추가 대화 상자**에서 **서비스 참조 구성** 대화 상자가 표시 되는 경우에만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: 웹 서비스에 참조 추가](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation 서비스 및 WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

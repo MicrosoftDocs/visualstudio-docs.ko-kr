@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673111"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트에 코드 추가
@@ -28,13 +28,13 @@ ms.locfileid: "72673111"
 
 데이터 집합을 정의 하는 코드는 데이터 집합 정의가 변경 될 때마다 생성 됩니다. 이 코드는 데이터 집합의 구성을 수정 하는 마법사를 실행 하는 동안 변경 작업을 수행할 때도 생성 됩니다. 데이터 집합을 다시 생성 하는 동안 코드가 삭제 되지 않도록 하려면 데이터 집합의 partial 클래스 파일에 코드를 추가 합니다.
 
-기본적으로 데이터 집합 및 `TableAdapter` 코드를 분리 한 후 결과는 각 프로젝트의 불연속 클래스 파일입니다. 원본 프로젝트에는 filenamed *DatasetName*가 있습니다. 디자이너 .vb (또는 *DatasetName*. Designer.cs) `TableAdapter` 코드를 포함 합니다. **데이터 집합 프로젝트** 속성에 지정 된 프로젝트에는 이름이 *DatasetName*인 파일이 있습니다. 데이터 집합. .vb 또는 *DatasetName*. DataSet.Designer.cs). 이 파일에는 데이터 집합 코드가 포함 됩니다.
+기본적으로 데이터 집합 및 코드를 분리 한 후 `TableAdapter` 결과는 각 프로젝트의 불연속 클래스 파일입니다. 원본 프로젝트에는 filenamed *DatasetName*가 있습니다. 디자이너 .vb (또는 *DatasetName*. Designer.cs)를 포함 하는 코드를 포함 `TableAdapter` 합니다. **데이터 집합 프로젝트** 속성에 지정 된 프로젝트에는 이름이 *DatasetName*인 파일이 있습니다. 데이터 집합. .vb 또는 *DatasetName*. DataSet.Designer.cs). 이 파일에는 데이터 집합 코드가 포함 됩니다.
 
 > [!NOTE]
-> **데이터 집합 프로젝트** 속성을 설정 하 여 데이터 집합 및 `TableAdapter`s을 분리 하는 경우 프로젝트의 기존 부분 데이터 집합 클래스는 자동으로 이동 되지 않습니다. 기존 데이터 집합 partial 클래스는 데이터 집합 프로젝트로 수동으로 이동 해야 합니다.
+> `TableAdapter` **데이터 집합 프로젝트** 속성을 설정 하 여 데이터 집합 및를 분리 하는 경우 프로젝트의 기존 부분 데이터 집합 클래스는 자동으로 이동 되지 않습니다. 기존 데이터 집합 partial 클래스는 데이터 집합 프로젝트로 수동으로 이동 해야 합니다.
 
 > [!NOTE]
-> 유효성 검사 코드를 추가 해야 하는 경우 데이터 집합 디자이너는 <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.RowChanging> 이벤트 처리기를 생성 하는 기능을 제공 합니다. 자세한 내용은 [n 계층 데이터 집합에 유효성 검사 추가](../data-tools/add-validation-to-an-n-tier-dataset.md)를 참조 하세요.
+> 유효성 검사 코드를 추가 해야 하는 경우 데이터 집합 디자이너는 <xref:System.Data.DataTable.ColumnChanging> 및 이벤트 처리기를 생성 하는 기능을 제공 합니다 <xref:System.Data.DataTable.RowChanging> . 자세한 내용은 [n 계층 데이터 집합에 유효성 검사 추가](../data-tools/add-validation-to-an-n-tier-dataset.md)를 참조 하세요.
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트에 코드 추가
 
@@ -65,11 +65,11 @@ ms.locfileid: "72673111"
     }
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-- [N 계층 데이터 애플리케이션 개요](../data-tools/n-tier-data-applications-overview.md)
+- [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
 - [n 계층 애플리케이션에서 TableAdapter에 코드 추가](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
+- [TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
 - [TableAdapterManager 개요](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
 - [계층적 업데이트 개요](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
-- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)

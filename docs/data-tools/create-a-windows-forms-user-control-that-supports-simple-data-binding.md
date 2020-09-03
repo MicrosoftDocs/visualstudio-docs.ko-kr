@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586825"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>단순 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
@@ -35,11 +35,11 @@ Windows 애플리케이션에서 폼에 데이터를 표시할 때는 **도구 �
 |데이터 목록 또는 테이블을 표시하는 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 등의 컨트롤에 대해 <xref:System.Windows.Forms.DataGridView>를 구현합니다. 자세한 내용은 [복합 데이터 바인딩을 지 원하는 사용자 정의 컨트롤 Windows Forms 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)를 참조 하세요.|
 |데이터 목록 또는 테이블을 표시하는 동시에 단일 열이나 속성도 제공해야 하는 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 등의 컨트롤에 대해 <xref:System.Windows.Forms.ComboBox>를 구현합니다. 자세한 내용은 [조회 데이터 바인딩을 지 원하는 사용자 정의 컨트롤 Windows Forms 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)를 참조 하세요.|
 
-이 연습에서는 테이블 내 단일 열의 데이터를 표시하는 단순 컨트롤을 만듭니다. 이 예에서는 Northwind 샘플 데이터베이스 `Phone` 테이블의 `Customers` 열을 사용합니다. 간단한 사용자 정의 컨트롤은 <xref:System.Windows.Forms.MaskedTextBox>를 사용 하 고 마스크를 전화 번호로 설정 하 여 고객의 전화 번호를 표준 전화 번호 형식으로 표시 합니다.
+이 연습에서는 테이블 내 단일 열의 데이터를 표시하는 단순 컨트롤을 만듭니다. 이 예에서는 Northwind 샘플 데이터베이스 `Phone` 테이블의 `Customers` 열을 사용합니다. 간단한 사용자 정의 컨트롤은를 사용 하 <xref:System.Windows.Forms.MaskedTextBox> 고 마스크를 전화 번호로 설정 하 여 고객의 전화 번호를 표준 전화 번호 형식으로 표시 합니다.
 
 이 연습에서는 다음 작업을 수행하는 방법을 배웁니다.
 
-- 새 **Windows Forms 애플리케이션**을 만듭니다.
+- 새 **Windows Forms 응용 프로그램**을 만듭니다.
 
 - 프로젝트에 새 **사용자 정의 컨트롤**을 추가합니다.
 
@@ -53,7 +53,7 @@ Windows 애플리케이션에서 폼에 데이터를 표시할 때는 **도구 �
 
 - 새 컨트롤에 데이터를 표시할 폼을 만듭니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -77,7 +77,7 @@ Windows 애플리케이션에서 폼에 데이터를 표시할 때는 **도구 �
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -97,9 +97,9 @@ Windows 애플리케이션에서 폼에 데이터를 표시할 때는 **도구 �
 
 ## <a name="design-the-phonenumberbox-control"></a>PhoneNumberBox 컨트롤 디자인
 
-이 연습은 기존 <xref:System.Windows.Forms.MaskedTextBox>를 확장 하 여 **PhoneNumberBox** 컨트롤을 만듭니다.
+이 연습은 기존를 확장 <xref:System.Windows.Forms.MaskedTextBox> 하 여 **PhoneNumberBox** 컨트롤을 만듭니다.
 
-1. <xref:System.Windows.Forms.MaskedTextBox>도구 상자**에서 사용자 컨트롤의 디자인 화면으로** 를 끌어 옵니다.
+1. <xref:System.Windows.Forms.MaskedTextBox>도구 상자**에서 사용자 컨트롤의 디자인 화면으로 **를 끌어 옵니다.
 
 2. 방금 끌어 온 <xref:System.Windows.Forms.MaskedTextBox>에서 스마트 태그를 선택하고 **마스크 설정**을 선택합니다.
 
@@ -142,11 +142,11 @@ Windows 애플리케이션에서 폼에 데이터를 표시할 때는 **도구 �
 
 8. `Customers` 테이블을 선택한 다음, **마침**을 클릭합니다.
 
-     **NorthwindDataSet**가 프로젝트에 추가되고 `Customers` 테이블이 **데이터 원본** 창에 나타납니다.
+     **NorthwindDataSet** 가 프로젝트에 추가 되 고 `Customers` 테이블이 **데이터 소스** 창에 표시 됩니다.
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>PhoneNumberBox 컨트롤을 사용 하도록 phone 열 설정
 
-**데이터 원본** 창 내에서 항목을 폼으로 끌기 전에 만들 컨트롤을 설정할 수 있습니다.
+**데이터 소스** 창에서 항목을 폼으로 끌기 전에 만들 컨트롤을 설정할 수 있습니다.
 
 1. 디자이너에서 **Form1**을 엽니다.
 
@@ -180,7 +180,7 @@ Windows 애플리케이션에서 폼에 데이터를 표시할 때는 **도구 �
 
 - 보다 복잡한 데이터 바인딩 시나리오를 지원하는 컨트롤을 만듭니다. 자세한 내용은 [복합 데이터 바인딩을 지 원하는 Windows Forms 사용자 정의 컨트롤 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) 및 [조회 데이터 바인딩을 지 원하는 Windows Forms 사용자 정의 컨트롤 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545628"
 ---
 # <a name="debugger-windows"></a>디버거 창
@@ -21,7 +21,7 @@ ms.locfileid: "85545628"
 
 프로그램을 디버그하는 동안 대부분의 디버거 창을 열 수 있습니다. 디버거 창의 목록을 보려면 중단점을 설정하고 디버깅을 시작합니다. 중단점을 적중 하 고 실행이 중지 되 면 **디버그/Windows**를 클릭 합니다.  
   
-|**Window**|**바로 가기 키**|**항목 참조**|  
+|**창**|**바로 가기 키**|**항목 참조**|  
 |-|-|-|  
 |중단점|Ctrl+Alt+B|[중단점 사용](../debugger/using-breakpoints.md)|  
 |예외 설정|Ctrl+Alt+E|[디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)|  
@@ -48,5 +48,5 @@ ms.locfileid: "85545628"
 |디스어셈블리|Ctrl+Alt+D|[방법: 디스어셈블리 창 사용](../debugger/how-to-use-the-disassembly-window.md)|  
 |레지스터|Ctrl+Alt+G|[방법: 레지스터 창 사용](../debugger/how-to-use-the-registers-window.md)|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 기본 사항](../debugger/debugger-basics.md)

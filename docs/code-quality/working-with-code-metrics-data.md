@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587084"
 ---
 # <a name="use-the-code-metrics-results-window"></a>코드 메트릭 결과 창 사용
@@ -30,9 +30,9 @@ ms.locfileid: "75587084"
 
 다음 메뉴 시퀀스 중 하나를 사용 하 여 코드 메트릭 결과 창을 표시할 수 있습니다.
 
-- **분석** 메뉴에서 **Windows** > **코드 메트릭 결과**를 선택 합니다.
+- **분석** 메뉴에서 **Windows**  >  **코드 메트릭 결과**를 선택 합니다.
 
-- **보기** 메뉴에서 **다른 Windows** > **코드 메트릭 결과**를 선택 합니다.
+- **보기** 메뉴에서 **기타 Windows**  >  **코드 메트릭 결과**를 선택 합니다.
 
 결과를 포함 하지 않는 경우에도 **코드 메트릭 결과** 창이 열립니다.
 
@@ -106,7 +106,7 @@ ms.locfileid: "75587084"
 
 4. **파일** 메뉴에서 **모두 저장** 을 클릭 하 여 작업 항목을 저장 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)
 - [방법: 코드 메트릭 데이터 생성](../code-quality/how-to-generate-code-metrics-data.md)

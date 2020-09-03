@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826171"
 ---
 # <a name="property-functions"></a>속성 함수
@@ -33,7 +33,7 @@ ms.locfileid: "67826171"
 
   - [정적 속성 함수](#BKMK_Static)  
 
-  - [정적 속성에 대한 인스턴스 메서드 호출](#BKMK_InstanceMethods)  
+  - [정적 속성에 대 한 인스턴스 메서드 호출](#BKMK_InstanceMethods)  
 
   - [MSBuild 속성 함수](#BKMK_PropertyFunctions)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "67826171"
   
 - [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
-## <a name="BKMK_Syntax"></a> 속성 함수 구문  
+## <a name="property-function-syntax"></a><a name="BKMK_Syntax"></a> 속성 함수 구문  
  다음과 같은 세 가지 종류의 속성 함수가 있으며, 각 함수의 구문은 서로 다릅니다.  
   
 - 문자열(인스턴스) 속성 함수  
@@ -60,13 +60,13 @@ ms.locfileid: "67826171"
   
 - MSBuild 속성 함수  
   
-### <a name="BKMK_String"></a> 문자열 속성 함수  
+### <a name="string-property-functions"></a><a name="BKMK_String"></a> 문자열 속성 함수  
  모든 빌드 속성 값은 문자열 값입니다. 문자열(인스턴스) 메서드를 사용하여 모든 속성 값에 대해 수행할 수 있습니다. 예를 들어, 다음 코드를 사용하여 전체 경로를 나타내는 빌드 속성에서 드라이브 이름(처음 세 문자)을 추출할 수 있습니다.  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-### <a name="BKMK_Static"></a> 정적 속성 함수  
- 빌드 스크립트에서 많은 시스템 클래스의 정적 속성 및 메서드에 액세스할 수 있습니다. 정적 속성값을 가져오려면 다음 구문을 사용합니다. 여기서 *Class*는 시스템 클래스의 이름이고 *Property*는 속성의 이름입니다.  
+### <a name="static-property-functions"></a><a name="BKMK_Static"></a> 정적 속성 함수  
+ 빌드 스크립트에서 많은 시스템 클래스의 정적 속성 및 메서드에 액세스할 수 있습니다. 정적 속성의 값을 가져오려면 다음 구문을 사용 합니다. 여기서 *Class* 는 시스템 클래스의 이름이 고 *property* 는 속성의 이름입니다.  
   
  `$([Class]::Property)`  
   
@@ -74,7 +74,7 @@ ms.locfileid: "67826171"
   
  `<Today>$([System.DateTime]::Now)</Today>`  
   
- 정적 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 *Class*는 시스템 클래스의 이름이고 *Method*는 메서드의 이름이며 *(Parameters)* 는 메서드의 매개 변수 목록입니다.  
+ 정적 메서드를 호출 하려면 다음 구문을 사용 합니다. 여기서 *Class* 는 시스템 클래스의 이름이 고, *method* 는 메서드의 이름이 고, *(Parameters)* 는 메서드의 매개 변수 목록입니다.  
   
  `$([Class]::Method(Parameters))`  
   
@@ -166,8 +166,8 @@ ms.locfileid: "67826171"
   
 - System.IO.File::ReadAllText  
   
-### <a name="BKMK_InstanceMethods"></a> 정적 속성에 대한 인스턴스 메서드 호출  
- 개체 인스턴스를 반환하는 정적 속성에 액세스하는 경우 해당 개체의 인스턴스 메서드를 호출할 수 있습니다. 인스턴스 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 *Class*는 시스템 클래스의 이름이고 *Property*는 속성의 이름이며 *Method*는 메서드의 이름이고, *(Parameters)* 는 메서드의 매개 변수 목록입니다.  
+### <a name="calling-instance-methods-on-static-properties"></a><a name="BKMK_InstanceMethods"></a> 정적 속성에 대 한 인스턴스 메서드 호출  
+ 개체 인스턴스를 반환하는 정적 속성에 액세스하는 경우 해당 개체의 인스턴스 메서드를 호출할 수 있습니다. 인스턴스 메서드를 호출 하려면 다음 구문을 사용 합니다. 여기서 *Class* 는 시스템 클래스의 이름이 고, *property* 는 속성의 이름이 며, *method* 는 메서드의 이름이 고, *(Parameters)* 는 메서드의 매개 변수 목록입니다.  
   
  `$([Class]::Property.Method(Parameters))`  
   
@@ -177,8 +177,8 @@ ms.locfileid: "67826171"
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-### <a name="BKMK_PropertyFunctions"></a> MSBuild 속성 함수  
- 빌드의 여러 정적 메서드에 액세스하여 산술, 비트 논리 및 이스케이프 문자 지원을 제공할 수 있습니다. 다음 구문을 사용하여 이러한 메서드에 액세스합니다. 여기서 *Method*는 메서드의 이름이고 *Parameters*는 메서드의 매개 변수 목록입니다.  
+### <a name="msbuild-property-functions"></a><a name="BKMK_PropertyFunctions"></a> MSBuild 속성 함수  
+ 빌드의 여러 정적 메서드에 액세스하여 산술, 비트 논리 및 이스케이프 문자 지원을 제공할 수 있습니다. 다음 구문을 사용 하 여 이러한 메서드에 액세스 합니다. 여기서 *method* 는 메서드의 이름이 고 *Parameters* 는 메서드의 매개 변수 목록입니다.  
   
  `$([MSBuild]::Method(Parameters))`  
   
@@ -207,7 +207,7 @@ ms.locfileid: "67826171"
 |int BitwiseXor(int first, int second)|first와 second에 대해 비트 `XOR`를 수행합니다(first ^ second).|  
 |int BitwiseNot(int first)|비트 `NOT`을 수행합니다(~first).|  
   
-## <a name="BKMK_Nested"></a> 중첩 속성 함수  
+## <a name="nested-property-functions"></a><a name="BKMK_Nested"></a> 중첩 속성 함수  
  다음 예제에서 보여 주는 것처럼, 보다 복잡한 함수를 형성하기 위해 속성 함수를 결합할 수 있습니다.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ ms.locfileid: "67826171"
   
  메타데이터도 중첩 속성 함수에 나타날 수 있습니다. 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
   
-## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="msbuild-doestaskhostexist"></a><a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
  MSBuild의 `DoesTaskHostExist` 속성 함수는 작업 호스트가 현재 지정된 런타임 및 아키텍처 값에 대해 설치되었는지 여부를 반환합니다.  
   
  이 속성 함수의 구문은 다음과 같습니다.  
@@ -225,7 +225,7 @@ ms.locfileid: "67826171"
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="msbuild-getdirectorynameoffileabove"></a><a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  MSBuild `GetDirectoryNameOfFileAbove` 속성 함수는 경로의 현재 디렉터리 위에 있는 디렉터리에서 파일을 찾습니다.  
   
  이 속성 함수의 구문은 다음과 같습니다.  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="msbuild-getregistryvalue"></a><a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  MSBuild `GetRegistryValue` 속성 함수는 레지스트리 키 값을 반환합니다. 이 함수는 두 개의 인수(키 이름 및 값 이름)를 사용하고 레지스트리의 값을 반환합니다. 값 이름을 지정하지 않은 경우 기본값이 반환됩니다.  
   
  다음 예제에서는 이 함수를 사용하는 방법을 보여 줍니다.  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="msbuild-getregistryvaluefromview"></a><a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  MSBuild `GetRegistryValueFromView` 속성 함수는 레지스트리 키, 값 및 순서가 지정된 하나 이상의 레지스트리 보기를 고려하여 시스템 레지스트리 데이터를 가져옵니다. 키 및 값은 발견될 때까지 각 레지스트리 보기에서 순서대로 검색됩니다.  
   
  이 속성 함수의 구문은 다음과 같습니다.  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  는 ReferenceAssemblies 키의 SLRuntimeInstallPath 데이터를 가져오고, 먼저 64비트 레지스트리 보기에서 찾은 다음 32비트 레지스트리 보기에서 찾습니다.  
   
-## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="msbuild-makerelative"></a><a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
  MSBuild `MakeRelative` 속성 함수는 첫 번째 경로를 기준으로 하여 두 번째 경로의 상대 경로를 반환합니다. 각 경로는 파일 또는 폴더일 수 있습니다.  
   
  이 속성 함수의 구문은 다음과 같습니다.  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="msbuild-valueordefault"></a><a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  MSBuild `ValueOrDefault` 속성 함수는 첫 번째 인수가 null이거나 비어 있지 않은 한 첫 번째 인수를 반환합니다. 첫 번째 인수가 null이거나 비어 있으면 함수는 두 번째 인수를 반환합니다.  
   
  다음 예제에서는 이 함수를 사용하는 방법을 보여 줍니다.  
@@ -332,6 +332,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 [MSBuild 속성](msbuild-properties1.md)   
 [MSBuild 개요](msbuild.md)

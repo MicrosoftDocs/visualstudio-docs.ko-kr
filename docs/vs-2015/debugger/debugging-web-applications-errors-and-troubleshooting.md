@@ -1,5 +1,5 @@
 ---
-title: '웹 애플리케이션 디버그: 오류 및 문제 해결 | Microsoft Docs'
+title: '웹 응용 프로그램 디버깅: 오류 및 문제 해결 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141916"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 애플리케이션 디버그: 오류 및 문제 해결
@@ -43,19 +43,19 @@ ms.locfileid: "68141916"
   
 - [오류: 사이트에서 IP 주소를 사용합니다.](../debugger/error-site-uses-ip-address.md)  
   
-- [오류: IIS 관리자 서비스에서 응답이 없기 때문에 보안 검사에 실패했습니다.](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+- ‘오류:[ IIS 관리자 서비스에서 응답이 없기 때문에 보안 검사에 실패했습니다.](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
-- [오류: ASP.NET이 설치되어 있지 않습니다.](../debugger/error-aspnet-not-installed.md)  
+- ‘오류:[ ASP.NET이 설치되어 있지 않습니다.](../debugger/error-aspnet-not-installed.md)  
   
-- [오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅하지 못했습니다.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+- ‘오류:[ Windows 통합 인증을 사용할 수 없기 때문에 디버깅하지 못했습니다.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
-- [오류: 웹 서버가 제대로 구성되어 있지 않습니다.](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+- ‘오류:[ 웹 서버가 제대로 구성되어 있지 않습니다.](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
-- [오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+- ‘오류:[ 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
-- [오류: 웹 서비스를 디버깅하는 동안 시간이 초과되었습니다.](../debugger/error-timeout-while-debugging-web-services.md)  
+- ‘오류:[ 웹 서비스를 디버깅하는 동안 시간이 초과되었습니다.](../debugger/error-timeout-while-debugging-web-services.md)  
   
-- [오류: 웹 서버에서 디버깅을 시작할 수 없습니다.](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+- ‘오류:[ 웹 서버에서 디버깅을 시작할 수 없습니다.](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   

@@ -1,5 +1,5 @@
 ---
-title: 아이디버그문서컨텍스트2::겟소스레인지 | 마이크로 소프트 문서
+title: 'IDebugDocumentContext2:: GetSourceRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731793"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
@@ -43,20 +43,20 @@ int GetSourceRange( 
 
 ## <a name="parameters"></a>매개 변수
 `pBegPosition`\
-【인, 아웃】 시작 위치로 채워진 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조입니다. 이 정보가 필요하지 않은 경우 이 인수를 null 값으로 설정합니다.
+[in, out] 시작 위치로 채워진 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조체입니다. 이 정보가 필요 하지 않은 경우이 인수를 null 값으로 설정 합니다.
 
 `pEndPosition`\
-【인, 아웃】 끝 위치로 채워진 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조입니다. 이 정보가 필요하지 않은 경우 이 인수를 null 값으로 설정합니다.
+[in, out] 끝 위치로 채워진 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조체입니다. 이 정보가 필요 하지 않은 경우이 인수를 null 값으로 설정 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 소스 범위는 현재 문부터 코드를 제공한 이전 문 바로 직후까지 소스 코드의 전체 범위입니다. 소스 범위는 일반적으로 주석을 비롯한 소스 문을 디스어셈블리 창의 코드와 혼합하는 데 사용됩니다.
+ 소스 범위는 현재 문에서 코드를 제공한 이전 문 바로 다음에 오는 전체 소스 코드 범위입니다. 소스 범위는 일반적으로 주석을 포함 하 여 소스 문과 디스어셈블리 창의 코드를 혼합 하는 데 사용 됩니다.
 
- 이 문서 컨텍스트에 포함된 코드 문의 범위만 얻으려면 GetStatementRange 메서드를 [호출합니다.](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
+ 이 문서 컨텍스트 내에 포함 된 코드 문의 범위를 가져오려면 [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

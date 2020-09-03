@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586876"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용하여 간단한 데이터 애플리케이션 만들기
 
-데이터베이스의 데이터를 조작하는 애플리케이션을 만들면 연결 문자열 정의, 데이터 삽입 및 저장 프로시저 실행과 같은 기본 작업을 수행합니다. 이 항목을 참조 하 여 Visual C# 또는 Visual Basic 및 ADO.NET를 사용 하 여 간단한 Windows Forms "데이터 폼" 응용 프로그램 내에서 데이터베이스와 상호 작용 하는 방법을 알아볼 수 있습니다.  데이터 집합, LINQ to SQL 및 Entity Framework를 비롯 한 모든 .NET 데이터 기술은 궁극적으로이 문서에 표시 된 것과 매우 유사한 단계를 수행 합니다.
+데이터베이스의 데이터를 조작하는 애플리케이션을 만들면 연결 문자열 정의, 데이터 삽입 및 저장 프로시저 실행과 같은 기본 작업을 수행합니다. 이 항목의 내용에 따라 Visual c # 또는 Visual Basic 및 ADO.NET를 사용 하 여 간단한 Windows Forms "데이터 폼" 응용 프로그램 내에서 데이터베이스와 상호 작용 하는 방법을 알아볼 수 있습니다.  데이터 집합, LINQ to SQL 및 Entity Framework를 비롯 한 모든 .NET 데이터 기술은 궁극적으로이 문서에 표시 된 것과 매우 유사한 단계를 수행 합니다.
 
 이 문서에서는 빠른 방법으로 데이터베이스에서 데이터를 가져오는 간단한 방법을 보여 줍니다. 응용 프로그램에서 중요 하지 않은 방법으로 데이터를 수정 하 고 데이터베이스를 업데이트 해야 하는 경우 Entity Framework 사용을 고려 하 고 데이터 바인딩을 사용 하 여 사용자 인터페이스 컨트롤을 기본 데이터의 변경 내용에 자동으로 동기화 해야 합니다.
 
 > [!IMPORTANT]
 > 코드를 간단히 유지하기 위해 프로덕션에 사용하는 예외 처리는 포함되어 있지 않습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 애플리케이션을 만들려면 다음이 필요 합니다.
 
-- 보여 줍니다.
+- Visual Studio.
 
 - SQL Server Express LocalDB. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 설치할 수 있습니다.
 
-이 항목에서는 사용자가 Visual Studio IDE의 기본 기능에 대해 잘 알고 있는 것으로 가정 하 고, 프로젝트에 폼을 추가 하 고, 폼에 단추 및 기타 컨트롤을 추가 하 고, 컨트롤의 속성을 설정 하 고, 간단한 이벤트를 코딩 하 여 Windows Forms 응용 프로그램을 만듭니다. 이러한 작업에 익숙하지 않은 경우이 연습을 시작 하기 전에 [시각적 개체 C# 및 Visual Basic 시작](../ide/quickstart-visual-basic-console.md) 항목을 완료 하는 것이 좋습니다.
+이 항목에서는 사용자가 Visual Studio IDE의 기본 기능에 대해 잘 알고 있는 것으로 가정 하 고, 프로젝트에 폼을 추가 하 고, 폼에 단추 및 기타 컨트롤을 추가 하 고, 컨트롤의 속성을 설정 하 고, 간단한 이벤트를 코딩 하 여 Windows Forms 응용 프로그램을 만듭니다. 이러한 작업에 익숙하지 않은 경우이 연습을 시작 하기 전에 [Visual c # 및 Visual Basic 시작](../ide/quickstart-visual-basic-console.md) 항목을 완료 하는 것이 좋습니다.
 
 ## <a name="set-up-the-sample-database"></a>샘플 데이터베이스 설정
 
@@ -120,14 +120,14 @@ ms.locfileid: "75586876"
 |단추|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>연결 문자열 저장
-애플리케이션이 데이터베이스에 대한 연결을 열려면 애플리케이션에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력 하지 않도록 하려면 프로젝트의 *app.config 파일에* 문자열을 저장 하 고, 응용 프로그램의 모든 폼에서 메서드가 호출 될 때 문자열을 반환 하는 메서드를 만듭니다.
+애플리케이션이 데이터베이스에 대한 연결을 열려면 애플리케이션에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력 하지 않도록 하려면 프로젝트의 *App.config* 파일에 문자열을 저장 하 고, 응용 프로그램의 모든 폼에서 메서드가 호출 될 때 문자열을 반환 하는 메서드를 만듭니다.
 
-**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl**+**A**, **ctrl**+**C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
+**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl** + **A**, **ctrl** + **C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
 
-1. 를 C#사용 하는 경우 **솔루션 탐색기**에서 프로젝트의 **속성** 노드를 확장 한 다음 **설정** 파일을 엽니다.
+1. C #을 사용 하는 경우 **솔루션 탐색기**에서 프로젝트의 **속성** 노드를 확장 한 다음 **설정** 파일을 엽니다.
     Visual Basic를 사용 하는 경우 **솔루션 탐색기**에서 **모든 파일 표시**를 클릭 하 고 **내 프로젝트** 노드를 확장 한 다음 **설정** 파일을 엽니다.
 
-2. **이름** 열에 `connString`을 입력 합니다.
+2. **이름** 열에을 입력 `connString` 합니다.
 
 3. **유형** 목록에서 **(연결 문자열)** 을 선택 합니다.
 
@@ -175,7 +175,7 @@ Visual Basic를 사용 하는 경우 **솔루션 탐색기**에서 **속성** �
 
 NewCustomer 양식 논리를 완료 하려면 다음 단계를 수행 합니다.
 
-1. 해당 멤버의 이름을 정규화 할 필요가 없도록 `System.Data.SqlClient` 네임 스페이스를 범위로 가져옵니다.
+1. `System.Data.SqlClient`해당 멤버의 이름을 정규화 할 필요가 없도록 네임 스페이스를 범위로 가져옵니다.
 
      ```csharp
      using System.Data.SqlClient;
@@ -229,10 +229,10 @@ FillOrCancel 폼 논리를 완료 하려면 다음 단계를 수행 합니다.
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>응용 프로그램 테스트
+## <a name="test-your-application"></a>애플리케이션 테스트
 
 각 Click 이벤트 처리기를 코딩하고 코딩을 마친 후에 **F5** 키를 선택하여 애플리케이션을 빌드하고 테스트합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

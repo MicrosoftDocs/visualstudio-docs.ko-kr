@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 프로젝트를 버전 인식 하도록 | Microsoft Docs
+title: 사용자 지정 프로젝트의 버전 인식 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,10 +8,10 @@ ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825682"
 ---
 # <a name="making-custom-projects-version-aware"></a>사용자 지정 프로젝트의 버전 인식 설정
@@ -24,17 +24,17 @@ ms.locfileid: "67825682"
   
  프로젝트 시스템 작성자는 `UpgradeProject_CheckOnly` 인터페이스에서 `IVsProjectUpgradeViaFactory4` 를 구현하여 프로젝트 시스템 사용자에게 업그레이드 검사를 제공합니다. 사용자가 프로젝트를 열면 이 메서드가 호출되어 로드하기 전에 프로젝트를 복구해야 하는지 여부를 확인합니다. 가능한 업그레이드 요구 사항은 `VSPUVF_REPAIRFLAGS`에 열거되며 여기에는 다음과 같은 요구 사항이 포함됩니다.  
   
-1. `SPUVF_PROJECT_NOREPAIR`: 복구할이 필요가 없습니다.  
+1. `SPUVF_PROJECT_NOREPAIR`: 복구할 필요가 없습니다.  
   
-2. `VSPUVF_PROJECT_SAFEREPAIR`: 이전 버전과 호환 없이 프로젝트가 이전 버전의 제품에서 발생 했던 문제입니다.  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: 이전 버전의 제품에서 발생했던 문제 없이 프로젝트가 이전 버전과 호환됩니다.  
   
-3. `VSPUVF_PROJECT_UNSAFEREPAIR`: 이전 버전과 호환 되지만 이전 버전의 제품을 사용 하 여 발생 한 문제 중 일부 위험을 사용 하 여 프로젝트를 만듭니다. 예를 들어 프로젝트가 다른 SDK 버전에 의존하는 경우에는 호환되지 않습니다.  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: 프로젝트가 이전 버전과 호환되지만 이전 버전의 제품에서 발생했던 일부 문제가 발생합니다. 예를 들어 프로젝트가 다른 SDK 버전에 의존하는 경우에는 호환되지 않습니다.  
   
-4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: 프로젝트가 이전 버전과 호환 됩니다.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: 프로젝트가 이전 버전과 호환되지 않습니다.  
   
-5. `VSPUVF_PROJECT_INCOMPATIBLE`: 최신 버전은이 프로젝트는 지원 하지 않습니다 나타냅니다.  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`: 현재 버전이 이 프로젝트를 지원하지 않습니다.  
   
-6. `VSPUVF_PROJECT_DEPRECATED`: 이 프로젝트는 지원 되지 않습니다 나타냅니다.  
+6. `VSPUVF_PROJECT_DEPRECATED`: 이 프로젝트가 더 이상 지원되지 않습니다.  
   
 > [!NOTE]
 > 혼동을 줄 수 있으니 업그레이드 플래그를 설정할 때는 서로 결합하지 마세요. 예를 들어 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`처럼 모호한 업그레이드 상태를 만들지 마세요.  
@@ -49,7 +49,7 @@ ms.locfileid: "67825682"
   
  호환성 사용자 환경을 요약하려면 다음 예제를 참조하세요. 프로젝트가 이전 버전에서 만들어졌고 현재 버전에서 업그레이드가 필요하다고 판단한 경우 사용자에게 변경 권한이 있는지 묻는 대화 상자가 표시됩니다. 사용자가 동의하는 경우 프로젝트가 수정 후 로드됩니다. 그런 다음 솔루션을 닫고 이전 버전에서 다시 열면 단방향으로 업그레이드된 프로젝트는 호환되지 않아 로드되지 않습니다. 프로젝트에 업그레이드가 아닌 복구만 필요한 경우 복구된 프로젝트는 두 버전 모두에서 열립니다.  
   
-## <a name="BKMK_Incompat"></a> 프로젝트를 호환 되지 않음으로 표시합니다.  
+## <a name="marking-a-project-as-incompatible"></a><a name="BKMK_Incompat"></a> 프로젝트를 호환 되지 않음으로 표시  
  프로젝트를 이전 버전의 Visual Studio와 호환되지 않음으로 표시할 수 있습니다.  예를 들어 .NET Framework 4.5 기능을 사용하는 프로젝트를 만든다고 가정합니다. 이 프로젝트는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]에서 빌드할 수 없으므로 해당 버전에서 로드할 수 없도록 호환되지 않음으로 표시할 수 있습니다.  
   
  호환되지 않는 기능을 추가하는 구성 요소는 프로젝트를 호환되지 않음으로 표시합니다. 구성 요소는 원하는 프로젝트를 나타내는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 인터페이스에 대한 권한이 있어야 합니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "67825682"
   
 1. 구성 요소에서 글로벌 서비스 SVsSolution의 `IVsAppCompat` 인터페이스를 가져옵니다.  
   
-     자세한 내용은 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>을 참조하세요.  
+     자세한 내용은 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>를 참조하세요.  
   
 2. 구성 요소에서 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`을 호출하고 원하는 프로젝트를 나타내는 `IVsHierarchy` 인터페이스 배열로 전달합니다.  
   
@@ -95,7 +95,7 @@ ms.locfileid: "67825682"
   
      그런 다음 BreakAssetCompatibility 메서드는 `IVsHierarchy.SetProperty` 메서드를 호출하여 루트 `VSHPROPID_MinimumDesignTimeCompatVersion` 속성을 이전 단계에서 얻은 버전 문자열 값으로 설정합니다.  
   
-     자세한 내용은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>을 참조하세요.  
+     자세한 내용은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>를 참조하세요.  
   
 > [!IMPORTANT]
 > 프로젝트를 호환됨 또는 호환되지 않음으로 표시하려면 `VSHPROPID_MinimumDesignTimeCompatVersion` 속성을 구현해야 합니다. 예를 들어 프로젝트 시스템에서 MSBuild 프로젝트 파일을 사용하는 경우 프로젝트 파일에 해당 `<MinimumVisualStudioVersion>` 속성 값과 동일한 값을 갖는 `VSHPROPID_MinimumDesignTimeCompatVersion` 빌드 속성을 추가합니다.  
@@ -133,7 +133,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  예를 들어 `UpgradeProject_CheckOnly` SP1 프로젝트 시스템용으로 작성된 `CreateProject` 및 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 메서드가 프로젝트 파일을 검사하여 `<MinimumVisualStudioVersion>` 빌드 속성이 "11.0"인 것을 발견한 경우 Visual Studio 2010 SP1에서 프로젝트를 로드하지 않습니다. 또한 **솔루션 탐색기** 에 프로젝트가 "호환되지 않음"으로 표시되며 로드되지 않습니다.  
   
-## <a name="BKMK_UpgradeLogger"></a> 업그레이드로 거  
+## <a name="the-upgrade-logger"></a><a name="BKMK_UpgradeLogger"></a> 업그레이드로 거  
  `IVsProjectUpgradeViaFactory::UpgradeProject` 에 대한 호출에는 `IVsUpgradeLogger` 로거가 포함되어 있으며 이 로거는 프로젝트 시스템 및 버전에서 문제 해결을 위한 자세한 업그레이드 추적을 제공하는 데 사용됩니다. 경고나 오류가 기록된 경우 Visual Studio는 업그레이드 보고서를 표시합니다.  
   
  업그레이드 로거를 작성할 때는 다음 지침을 고려합니다.  

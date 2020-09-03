@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 57f2a2e5959860a99a921101ff5782f9bce9ace3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545654"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: 예약&#39; &#39;열거형 값의 이름을 하지 마십시오.

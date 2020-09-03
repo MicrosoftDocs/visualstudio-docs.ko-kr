@@ -1,5 +1,5 @@
 ---
-title: '방법: 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft Docs'
+title: '방법: 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826154"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>방법: 성능 데이터 수집 일시 중지 및 다시 시작
@@ -25,7 +25,7 @@ ms.locfileid: "67826154"
   
  데이터 수집을 제어하면 프로파일 데이터 파일의 크기를 줄이고 관심 있는 작업에 대한 데이터만 수집할 수 있습니다. 성능 세션에서 프로파일링을 여러 번 일시 중지하고 다시 시작할 수 있습니다.  
   
- ![프로파일링 세션 시작](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
+ ![프로파일링 세션 페이지](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
 > 프로파일링이 일시 중지된 상태로 성능 세션을 시작하고 나서 프로그램 실행 시 나중에 프로파일링을 다시 시작할 수도 있습니다. 프로파일링이 일시 중지된 상태로 성능 세션을 시작하려면 **디버그** 메뉴에서 **프로파일링이 일시 중지된 성능 분석 시작** 명령을 선택합니다.  

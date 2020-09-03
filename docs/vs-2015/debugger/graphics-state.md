@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825572"
 ---
 # <a name="graphics-state"></a>그래픽 상태
@@ -29,7 +29,7 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
 ### <a name="state-views"></a>상태 보기  
  다양한 방법으로 상태 테이블을 볼 수 있습니다.  
   
-|보기|Description|  
+|View|설명|  
 |----------|-----------------|  
 |API 입력 상태 보기|이 보기는 상태를 구성하는 Direct3D 개체에 유사한 레이아웃으로 상태를 표시합니다.|  
 |논리 입력 상태 보기|이 보기는 상태를 구성하는 Direct3D 개체의 레이아웃을 미러링하지 않는 논리 뷰로 상태를 표시합니다.|  
@@ -51,7 +51,7 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
 ### <a name="state-table-format"></a>상태 테이블 형식  
  상태 창에는 여러 정보 열이 표시됩니다.  
   
-|Column|Description|  
+|Column|설명|  
 |------------|-----------------|  
 |이름|상태 항목의 이름입니다. 이 항목이 상태 번들을 나타내는 경우 항목을 확장하여 표시할 수 있습니다.<br /><br /> **API 입력 상태 보기** 및 **논리 상태 보기** 상태에서는 상태 간의 계층 관계를 표시하기 위해 이름이 들여쓰기됩니다.<br /><br /> **고정된 상태 보기** 상태에서는 정규화된 이름이 플랫 목록에 표시됩니다.|  
 |값|상태 항목의 값입니다.|  

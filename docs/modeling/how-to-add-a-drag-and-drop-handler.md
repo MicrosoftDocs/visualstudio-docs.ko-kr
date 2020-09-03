@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545667"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-이 메서드는 이전에가 `OnDragOver(DiagramDragEventArgs e)` `e.Effect` 이외의 값으로 설정 된 경우 마우스 포인터가이 모양 또는 다이어그램 위에 있는 동안 마우스 단추를 놓으면 호출 됩니다 `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -이 메서드는 이전에가 `OnDragOver(DiagramDragEventArgs e)` `e.Effect` 이외의 값으로 설정 된 경우 마우스 포인터가이 모양 또는 다이어그램 위에 있는 동안 마우스 단추를 놓으면 호출 됩니다 `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ using System.Linq;
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-이 메서드는 사용자가 모양이 나 다이어그램을 두 번 클릭할 때 호출 됩니다.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -이 메서드는 사용자가 모양이 나 다이어그램을 두 번 클릭할 때 호출 됩니다.
 
      자세한 내용은 [방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)를 참조 하세요.
 
@@ -124,11 +124,11 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
 끌기 소스 정보를 사용할 수 있는 형식을 검색하려면 `OnDragOver()` 또는 `CanDragDrop()` 진입 위치에 중단점을 설정하여 디버깅 모드에서 코드를 실행합니다. `DiagramDragEventArgs` 매개 변수의 값을 검사합니다. 정보는 두 가지 형식으로 제공됩니다.
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`-이 속성은 일반적으로 여러 형식으로 된 원본 개체의 serialize 된 버전을 전달 합니다. 이 속성의 가장 유용한 기능은 다음과 같습니다.
+- <xref:System.Windows.Forms.IDataObject>  `Data` -이 속성은 일반적으로 여러 형식으로 된 원본 개체의 serialize 된 버전을 전달 합니다. 이 속성의 가장 유용한 기능은 다음과 같습니다.
 
   - diagramEventArgs. GetDataFormats ()-끌어온 개체를 디코딩할 수 있는 형식을 나열 합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.
 
-  - `diagramEventArgs.Data.GetData(format)`-끌어온 개체를 지정 된 형식으로 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.
+  - `diagramEventArgs.Data.GetData(format)` -끌어온 개체를 지정 된 형식으로 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
      UML 셰이프를 수락 하려면 실험을 통해 UML 셰이프 클래스의 Guid를 확인 합니다. 일반적으로 모든 다이어그램에는 둘 이상의 요소 형식이 있습니다. 또한 DSL이나 UML 다이어그램에서 끄는 개체는 모델 요소가 아닌 모양입니다.
 
-`DiagramDragEventArgs`또한에는 현재 마우스 포인터 위치와 사용자가 CTRL, ALT 또는 SHIFT 키를 누르는 지 여부를 나타내는 속성도 있습니다.
+`DiagramDragEventArgs` 또한에는 현재 마우스 포인터 위치와 사용자가 CTRL, ALT 또는 SHIFT 키를 누르는 지 여부를 나타내는 속성도 있습니다.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>끌어 온 요소의 원본을 가져오는 방법
 
@@ -569,7 +569,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)
 - [도메인별 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)

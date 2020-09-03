@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: d484aa01290468864ab3b9adc78a27a182079320
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68179088"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89324342"
 ---
 Visual Studio Team Edition for Testers

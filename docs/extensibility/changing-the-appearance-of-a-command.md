@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183719"
 ---
 # <a name="change-the-appearance-of-a-command"></a>명령 모양 변경
@@ -84,7 +84,7 @@ ms.locfileid: "84183719"
 
 8. 이제 **도구** 메뉴에 **새 텍스트가**표시 됩니다. **새 텍스트**를 클릭 합니다. 이제 명령이 회색으로 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
