@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532706"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
@@ -41,7 +41,7 @@ ms.locfileid: "85532706"
 
  ![코드 맵의 호출 스택으로 디버그](../debugger/media/debuggermap_overview.png)
 
- 필요한 사항:
+ 다음 도구가 필요합니다.
 
  ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ ms.locfileid: "85532706"
 
 - Visual c #, Visual Basic, c + +, JavaScript 또는 X + +와 같이 디버그할 수 있는 코드
 
-  참조
+  다음을 참조하세요.
 
 - [비디오: 코드 맵 디버거 통합으로 시각적으로 디버그 (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
@@ -71,7 +71,7 @@ ms.locfileid: "85532706"
 
 - [맵을 사용 하 여 버그 찾기](#FindBugs)
 
-- [Q & A](#QA)
+- [질문과 대답](#QA)
 
   코드 맵으로 작업할 때 사용할 수 있는 명령 및 작업에 대 한 자세한 내용은 [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)을 참조 하세요.
 
@@ -188,7 +188,7 @@ ms.locfileid: "85532706"
 
    ![호출 스택 코드 맵에 있는 아이콘의 의미](../debugger/media/debuggermap_showlegend.png)
 
-  참조
+  다음을 참조하세요.
 
 - [호출 스택 매핑](#MapStack)
 

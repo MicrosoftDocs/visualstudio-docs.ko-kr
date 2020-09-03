@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905742"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>방법: 비동기 Visual Studio 서비스 제공
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    이 서비스를이 패키지 외부에서 볼 수 있도록 하려면 승격 플래그 값을 마지막 매개 변수로 *true* 로 설정 합니다.`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    이 서비스를이 패키지 외부에서 볼 수 있도록 하려면 승격 플래그 값을 마지막 매개 변수로 *true* 로 설정 합니다.  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*에 대 한 참조를 추가 합니다.
 
@@ -238,5 +238,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. 솔루션을 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 되 면 **도구** 메뉴로 이동 하 여 **Testasynccommand 호출** 메뉴 항목을 찾습니다. 이를 클릭 하면 TextWriterService가 지정 된 파일에 기록 합니다. 명령을 호출 하면 패키지도 로드 되므로 솔루션을 열 필요가 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51b652adcc482d6e326c0b64eda3a9d32efab309
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532291"
 ---
 # <a name="properties-of-compartment-shapes"></a>구획 모양의 속성
@@ -30,7 +30,7 @@ ms.locfileid: "85532291"
 |기본 확장 축소 상태|이면 `Expanded` 구획이 생성 시 표시 됩니다. 이면이 고 `Collapsed` , 그렇지 않으면입니다.|Expanded|
 |채우기 색|이 도형의 채우기 색입니다.|흰색|
 |채우기 그라데이션 모드|이 도형의 채우기 그라데이션 모드입니다.|수평적 크기 조정|
-|geometry|이 도형의 기 하 도형 (사각형 또는 모퉁이가 둥근 사각형)입니다.|사각형|
+|기하 도형|이 도형의 기 하 도형 (사각형 또는 모퉁이가 둥근 사각형)입니다.|직사각형|
 |기본 연결 지점이 있음|이면 `True` 셰이프는 생성 된 디자이너에서 위쪽, 아래쪽, 왼쪽 및 오른쪽 연결 위치를 사용 합니다.|False|
 |단일 구획 헤더 표시|`False`및 도형에 단일 구획이 있으면 구획의 헤더가 표시 되지 않습니다.|True|
 |윤곽선 색|이 도형의 윤곽선 색입니다.|검정|
@@ -55,6 +55,6 @@ ms.locfileid: "85532291"
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none>|
 |Help Keyword|이 모양에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none>|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

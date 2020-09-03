@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24e9d76e959c0c05abe3ac48f5c4d43afecec47a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532732"
 ---
 # <a name="function-details-view"></a>함수 정보 뷰
@@ -73,9 +73,9 @@ ms.locfileid: "85532732"
 ## <a name="function-performance-details"></a>함수 성능 정보  
  함수 성능 정보 테이블은 선택된 함수의 성능 메트릭에 대한 요약 데이터를 제공합니다. 값과 백분율이 모두 표시됩니다. 차트 및 세부 정보 테이블에 나타나는 프로파일링 데이터를 **성능 메트릭** 목록에 지정합니다.  
   
-|열|Description|  
+|Column|설명|  
 |------------|-----------------|  
-|**단독**|- 함수 본문 실행에서 발생한 성능 메트릭의 크기입니다.|  
+|**전용**|- 함수 본문 실행에서 발생한 성능 메트릭의 크기입니다.|  
 |**호출**|- 선택된 함수가 호출한 함수에서 발생한 성능 메트릭의 크기입니다.|  
 |**포함 합계**|- **전용** 및 **호출** 값의 합계입니다.|  
   

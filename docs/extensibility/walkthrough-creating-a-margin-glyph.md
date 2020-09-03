@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905045"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>연습: 여백 문자 모양 만들기
@@ -53,7 +53,7 @@ ms.locfileid: "85905045"
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]
 
-5. `GenerateGlyph`GLYPH UI (사용자 인터페이스) 요소를 정의 하 여 구현 합니다. `TodoTag`는이 연습의 뒷부분에서 정의 됩니다.
+5. `GenerateGlyph`GLYPH UI (사용자 인터페이스) 요소를 정의 하 여 구현 합니다. `TodoTag` 는이 연습의 뒷부분에서 정의 됩니다.
 
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]

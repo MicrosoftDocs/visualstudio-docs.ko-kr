@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567985"
 ---
 # <a name="output-window"></a>출력 창
 
 **출력** 창에는 IDE(통합 개발 환경)의 다양한 기능에 대한 상태 메시지가 표시됩니다. **출력** 창을 열려면 메뉴 모음에서 **보기** > **출력**을 선택하거나 **Ctrl**+**Alt**+**O**를 누릅니다.
 
-## <a name="toolbar"></a>Toolbar
+## <a name="toolbar"></a>도구 모음
 
 다음 컨트롤이 **출력** 창의 도구 모음에 표시됩니다.
 
@@ -73,7 +73,7 @@ C++에서 경고 및 오류가 **출력** 창에서 표시되고 계산되는 �
 
 **출력** 창에서 자동 스크롤을 사용하고 마우스나 화살표 키로 이동하면 자동 스크롤이 중지됩니다. 자동 스크롤을 다시 시작하려면 **Ctrl**+**End**를 누릅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [출력 창의 진단 메시지](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [방법: 출력 창 제어](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)

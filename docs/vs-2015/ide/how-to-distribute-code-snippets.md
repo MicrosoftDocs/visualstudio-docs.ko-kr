@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476981"
 ---
 # <a name="how-to-distribute-code-snippets"></a>방법: 코드 조각 배포
@@ -58,11 +58,11 @@ ms.locfileid: "77476981"
 
 #### <a name="setting-up-the-directory-structure"></a>디렉터리 구조 설정
 
-1. 솔루션 탐색기에서 프로젝트 노드를 선택하고 조각을 코드 조각 관리자에 포함할 이름을 사용하는 폴더를 추가합니다. 이 경우 폴더는 **HelloWorldVB**여야 합니다.
+1. 솔루션 탐색기에서 프로젝트 노드를 선택하고 조각을 코드 조각 관리자에 포함할 이름을 사용하는 폴더를 추가합니다. 이 경우 **HelloWorldVB**여야 합니다.
 
 2. .snippet 파일을 **HelloWorldVB** 폴더로 이동합니다.
 
-3. 솔루션 탐색기에서 .snippet 파일을 선택하고 **속성** 창에서 **빌드 작업**이 **콘텐츠**로 설정되고, **출력 디렉터리에 복사**가 **항상 복사**로 설정되고, **VSIX에 포함**이 **true**로 설정되었는지 확인합니다.
+3. 솔루션 탐색기에서 코드 조각 파일을 선택 하 고 **속성** 창에서 **빌드 작업** 을 **내용**으로 설정 하 고 **출력 디렉터리로 복사** 를 **항상 복사**로 설정 하 고 **VSIX에 포함** 이 **true**로 설정 되어 있는지 확인 합니다.
 
 #### <a name="adding-the-pkgdef-file"></a>.pkgdef 파일 추가
 
@@ -80,7 +80,7 @@ ms.locfileid: "77476981"
 
      이 키를 검토하면 다른 언어를 지정하는 방법을 알 수 있습니다.
 
-3. 솔루션 탐색기에서 .pkgdef 파일을 선택하고 **속성** 창에서 **빌드 작업**이 **콘텐츠**로 설정되고, **출력 디렉터리에 복사**가 **항상 복사**로 설정되고, **VSIX에 포함**이 **true**로 설정되었는지 확인합니다.
+3. 솔루션 탐색기에서 .pkgdef 파일을 선택 하 고 **속성** 창에서 **빌드 작업** 을 **내용**으로 설정 하 고 **출력 디렉터리로 복사** 를 **항상 복사**로 설정 하 고 **VSIX에 포함** 이 **true**로 설정 되어 있는지 확인 합니다.
 
 4. .pkgdef 파일을 VSIX 매니페스트의 자산으로 추가합니다. source.extension.vsixmanifest 파일에서 **자산** 탭으로 이동하고 **새로 만들기**를 클릭합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "77476981"
 
 2. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 두 번째 인스턴스가 나타납니다.
 
-3. 실험적 인스턴스에서 **도구/코드 조각 관리자**로 이동하고 **언어**를 **기본**으로 설정합니다. HelloWorldVB가 폴더의 하나로 표시되고 폴더를 확장하여 HelloWorldVB 조각을 확인할 수 있어야 합니다.
+3. 실험적 인스턴스에서 **도구/코드 조각 관리자** 로 이동 하 고 **언어** 를 **기본**으로 설정 합니다. HelloWorldVB가 폴더의 하나로 표시되고 폴더를 확장하여 HelloWorldVB 조각을 확인할 수 있어야 합니다.
 
 4. 조각을 테스트합니다. 실험적 인스턴스에서 Visual Basic 프로젝트를 열고 코드 파일의 하나를 엽니다. 코드의 임의 위치에 커서를 놓고 마우스 오른쪽 단추를 클릭하고 나서 상황에 맞는 메뉴에서 **조각 삽입**을 선택합니다.
 
@@ -102,5 +102,5 @@ ms.locfileid: "77476981"
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [코드 조각](../ide/code-snippets.md)

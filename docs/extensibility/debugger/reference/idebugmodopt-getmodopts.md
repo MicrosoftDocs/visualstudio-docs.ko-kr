@@ -1,5 +1,5 @@
 ---
-title: 이데버그모드옵트::겟모드옵스 | 마이크로 소프트 문서
+title: 'IDebugModOpt:: GetModOpts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5ab870db3ae3517b60bebd4815e4530f6035b327
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727055"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
-선택적 수정자 목록을 검색합니다.
+선택적 한정자 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,16 +44,16 @@ int GetModOpts(
 
 ## <a name="parameters"></a>매개 변수
 `celt`\
-【인】 반환할 요소 수입니다.
+진행 반환 되는 요소 수입니다.
 
 `rgelt`\
-【아웃】 옵션이 포함된 배열을 반환합니다.
+제한이 옵션이 포함 된 배열을 반환 합니다.
 
 `pceltFetched`\
-【인, 아웃】 배열에서 반환되는 `rgelt` 요소 수입니다.
+[in, out] 배열에서 반환 된 요소의 수 `rgelt` 입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

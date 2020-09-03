@@ -1,5 +1,5 @@
 ---
-title: 아이디버그 오브젝트::이읽기전용 | 마이크로 소프트 문서
+title: 'IDebugObject:: IsReadOnly | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19546550f916e9d42adf634b0d85958ce9697d28
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726417"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
-이 개체가 읽기 전용인지 확인합니다.
+이 개체가 읽기 전용인 지 여부를 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int IsReadOnly(
 
 ## <a name="parameters"></a>매개 변수
 `pfIsReadOnly`\
-【아웃】 이 개체가`TRUE`읽기 전용인 경우 0이 아닌 () 반환합니다. 그렇지 않으면 0`FALSE`()을 반환합니다.
+제한이 `TRUE`이 개체가 읽기 전용 이면 0이 아닌 값을 반환 하 고, 그렇지 않으면 0 ()을 반환 `FALSE` 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- 읽기 전용 개체는 생성된 후에 해당 값을 변경할 수 없습니다.
+ 읽기 전용 개체를 만든 후에는 해당 값을 변경할 수 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

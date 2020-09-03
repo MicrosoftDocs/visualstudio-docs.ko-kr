@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300591"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>PTVS 시작: Azure에서 웹 사이트 빌드
@@ -33,6 +33,6 @@ Azure에서 Python 웹 사이트를 신속하게 빌드할 수 있습니다.
   
  짧은 [youtube 동영상](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)을 통해 이러한 지침을 확인할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Wiki 문서](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
+## <a name="see-also"></a>관련 항목  
+ [Wiki 설명서](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [PTVS Getting Started and Deep Dive Videos](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)(PTVS 시작 및 자세히 알아보기 동영상)

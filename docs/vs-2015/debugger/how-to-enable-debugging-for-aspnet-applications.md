@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726e964a0db2fae1b902f54a14e206dbc03a148
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477005"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>방법: ASP.NET 애플리케이션에 디버깅 사용
@@ -31,7 +31,7 @@ ms.locfileid: "77477005"
 디버깅을 사용하려면 **프로젝트 속성** 페이지와 애플리케이션의 web.config 파일 둘 다에서 사용하도록 설정해야 합니다.  
   
 > [!NOTE]  
-> 활성 설정 또는 버전에 따라 표시되는 대화 상자 및 메뉴 명령이 도움말에 설명된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](/previous-versions/zbhkx167(v=vs.140))을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](/previous-versions/zbhkx167(v=vs.140))을 참조 하세요.  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>프로젝트 속성에서 ASP.NET 디버깅을 사용하도록 설정하려면(Visual Basic/C#)  
   
@@ -83,9 +83,9 @@ web.config 파일은 다음 예제와 같습니다. 구성 요소와 system.web 
   
 웹 사이트에는 여러 개의 가상 디렉터리 및 하위 디렉터리가 포함될 수 있으며 각 디렉터리에 Web.config 파일이 있을 수도 있습니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 애플리케이션은 URL 경로의 상위 수준에 있는 Web.config 파일에서 설정을 상속합니다. 계층적 구성 파일을 사용하면 계층 구조의 모든 하위 애플리케이션 등 여러 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 애플리케이션에 대한 설정을 동시에 변경할 수 있습니다. 그러나 `debug` 가 계층 구조의 하위 파일에서 설정된 경우 상위 값을 재정의합니다.  
   
-예를 들어 `www.microsoft.com/aaa/Web.config`에서 `debug="true"`를 지정할 수 있으며 aaa 폴더 또는 aaa의 모든 하위 폴더에 있는 모든 응용 프로그램은 해당 설정을 상속 합니다. 따라서 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램이 `www.microsoft.com/aaa/bbb`되는 경우 `www.microsoft.com/aaa/ccc`, `www.microsoft.com/aaa/ddd`등의 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램에 따라 해당 설정이 상속 됩니다. 단, 해당 애플리케이션 중 하나가 고유한 하위 Web.config 파일을 통해 설정을 재정의하는 경우는 예외입니다.  
+예를 들어 `debug="true"` 에서를 지정할 수 `www.microsoft.com/aaa/Web.config` 있으며 aaa 폴더 또는 aaa의 모든 하위 폴더에 있는 모든 응용 프로그램은 해당 설정을 상속 합니다. 따라서 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램이에 있으면 `www.microsoft.com/aaa/bbb` , 등의 모든 응용 프로그램과 마찬가지로 해당 설정을 상속 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] `www.microsoft.com/aaa/ccc` `www.microsoft.com/aaa/ddd` 합니다. 단, 해당 애플리케이션 중 하나가 고유한 하위 Web.config 파일을 통해 설정을 재정의하는 경우는 예외입니다.  
   
 디버그 모드를 사용하도록 설정하면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 애플리케이션의 성능에 큰 영향을 줍니다. 릴리스 애플리케이션을 배포하거나 성능을 측정하기 전에 디버그 모드를 사용하지 않도록 설정해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
 [ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)  

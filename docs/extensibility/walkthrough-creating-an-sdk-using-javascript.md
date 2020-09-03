@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904947"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>연습: JavaScript를 사용 하 여 SDK 만들기
@@ -24,10 +24,10 @@ ms.locfileid: "85904947"
 
   JavaScript의 경우 클래스 라이브러리 프로젝트 형식이 없습니다. 이 연습에서는 샘플 *arithmetic.js* 파일이 VSIX 프로젝트에 직접 생성 됩니다. 실제로 VSIX 프로젝트에 삽입 하기 전에 먼저 JavaScript 및 CSS 파일을 Windows 스토어 앱으로 빌드 및 테스트 하는 것이 좋습니다 (예: **빈 앱** 템플릿 사용).
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
-## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a>SimpleMathVSIX 확장 SDK 프로젝트를 만들려면
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> SimpleMathVSIX 확장 SDK 프로젝트를 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
@@ -138,7 +138,7 @@ ms.locfileid: "85904947"
 
 21. Visual Studio를 다시 시작합니다.
 
-## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a>SDK를 사용 하는 샘플 앱을 만들려면
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> SDK를 사용 하는 샘플 앱을 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
@@ -313,5 +313,5 @@ ms.locfileid: "85904947"
 
 12. 앱 UI에서 두 숫자를 입력 하 고 작업을 선택한 다음 단추를 선택 **=** 합니다. 올바른 결과가 나타납니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)

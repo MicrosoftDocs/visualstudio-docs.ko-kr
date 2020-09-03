@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532719"
 ---
 # <a name="map-dependencies-with-code-maps"></a>코드 맵으로 종속성 매핑
@@ -149,7 +149,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 또한 다음을 참조하세요.
 
 - [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - [분석기를 실행](../modeling/find-potential-problems-using-code-map-analyzers.md) 하 여 코드의 잠재적 문제 찾기
 
 ## <a name="view-specific-dependencies-in-a-code-map"></a>코드 맵에서 특정 종속성 보기
@@ -185,7 +185,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
    코드에 있지만 맵에 표시 되지 않는 멤버를 확인 하려면 그룹의 왼쪽 위 모퉁이에 있는 **다시 페치 자식** 아이콘 ![ 다시 페치 자식 아이콘을 클릭 합니다 ](../modeling/media/dependencygraph_deletednodesicon.png) .
 
-6. 맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 하나 이상의 항목을 선택 하 고 바로 가기 메뉴를 연 다음 맵에 추가할 관련 항목 형식에 대 한 **표시** 옵션을 선택 합니다. 예를 들면 다음과 같습니다.
+6. 맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 하나 이상의 항목을 선택 하 고 바로 가기 메뉴를 연 다음 맵에 추가할 관련 항목 형식에 대 한 **표시** 옵션을 선택 합니다. 예:
 
     **어셈블리**인 경우 다음을 선택합니다.
 
@@ -243,4 +243,4 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 - [디버깅하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
