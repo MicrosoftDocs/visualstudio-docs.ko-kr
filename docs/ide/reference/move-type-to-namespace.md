@@ -11,10 +11,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2019
 ms.openlocfilehash: 58d2757fa8798b67c8e597f5f82bc65a279f4a90
-ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80375564"
 ---
 # <a name="move-type-to-namespace"></a>형식을 네임스페이스로 이동

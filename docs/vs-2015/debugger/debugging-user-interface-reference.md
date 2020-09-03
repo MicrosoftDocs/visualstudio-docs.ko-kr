@@ -1,5 +1,5 @@
 ---
-title: 사용자 인터페이스 참조 디버그 | Microsoft Docs
+title: 사용자 인터페이스 참조 디버깅 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59cc4e96630be23ee864e3d5a03cbb6dde709695
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191228"
 ---
 # <a name="debugging-user-interface-reference"></a>사용자 인터페이스 참조 디버깅
@@ -48,6 +48,6 @@ ms.locfileid: "68191228"
   
 - [디버깅 오류 및 경고 대화 상자](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)   
+## <a name="see-also"></a>관련 항목  
+ [Visual Studio에서 디버깅](../debugger/debugging-in-visual-studio.md)   
  [명령 창](../ide/reference/command-window.md)

@@ -1,5 +1,5 @@
 ---
-title: 관리 되는 패키지 프레임 워크를 사용 하 여 프로젝트C#형식 구현 () | Microsoft Docs
+title: '관리 되는 패키지 프레임 워크를 사용 하 여 프로젝트 형식 구현 (c #) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066695c6d94603d0a0474243ed05dece4cc0bd1f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300366"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-MPF (관리 되는 패키지 프레임 워크 C# )는 사용자 고유의 프로젝트 형식을 구현 하기 위해에서 사용 하거나 상속할 수 있는 클래스를 제공 합니다. MPF는 Visual Studio에서 제공 하는 프로젝트 형식이 필요한 많은 인터페이스를 구현 하며 프로젝트 형식의 인스턴스와 관련 사항을 구현에 집중할 수 있습니다.  
+MPF (관리 되는 패키지 프레임 워크)는 사용자 고유의 프로젝트 형식을 구현 하기 위해에서 사용 하거나 상속할 수 있는 c # 클래스를 제공 합니다. MPF는 Visual Studio에서 제공 하는 프로젝트 형식이 필요한 많은 인터페이스를 구현 하며 프로젝트 형식의 인스턴스와 관련 사항을 구현에 집중할 수 있습니다.  
   
 ## <a name="using-the-mpf-project-source-code"></a>MPF 프로젝트 소스 코드 사용  
  프로젝트에 대 한 관리 패키지 프레임 워크 (MPFProj)는 새 프로젝트 시스템을 만들고 관리 하기 위한 도우미 클래스를 제공 합니다. MPF의 다른 클래스와 달리 프로젝트 클래스는 Visual Studio와 함께 제공 되는 어셈블리에 포함 되지 않습니다. 대신 프로젝트 클래스는 프로젝트 [2013에 대 한 MPF](https://archive.codeplex.com/?p=mpfproj12)에서 소스 코드로 제공 됩니다.  
@@ -44,7 +44,7 @@ MPF (관리 되는 패키지 프레임 워크 C# )는 사용자 고유의 프로
   
 2. VSPackage 프로젝트를 언로드합니다.  
   
-3. 다른 `<Import>` 블록 앞에 다음 블록을 추가 하 여 VSPackage 파일을 편집 합니다.  
+3. 다른 블록 앞에 다음 블록을 추가 하 여 VSPackage 파일을 편집 합니다 `<Import>` .  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -64,7 +64,7 @@ MPF (관리 되는 패키지 프레임 워크 C# )는 사용자 고유의 프로
   
 4. VSPackage 프로젝트에 다음 참조를 추가 합니다.  
   
-     Microsoft.Build.Tasks.4.0  
+     Microsoft. 빌드. 작업 4.0  
   
 5. 프로젝트를 빌드합니다.  
   

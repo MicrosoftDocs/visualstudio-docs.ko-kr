@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 제품 키를 사용하여 터미널 서비스를 통한 인터넷 데모를 지원하고 RDS 액세스를 활성화하는 방법을 알아봅니다.
 ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232435"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>터미널 서비스를 통한 인터넷 데모

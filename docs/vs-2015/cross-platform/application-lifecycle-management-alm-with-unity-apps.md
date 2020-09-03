@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 90efd4e72ea172822e0bcc424bdbbc4bc7589098
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233287"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM(Application Lifecycle Management) 및 Unity 앱
@@ -88,21 +88,21 @@ ms.locfileid: "80233287"
   
 |기능|Unity에서 지원 여부|추가 설명|  
 |-------------|--------------------------|-------------------------|  
-|테스트 계획, 테스트 사례 만들기 및 테스트 도구 모음 구성|yes||  
-|수동 테스트|yes||  
+|테스트 계획, 테스트 사례 만들기 및 테스트 도구 모음 구성|예||  
+|수동 테스트|예||  
 |테스트 관리자(테스트 기록 및 재생)|Windows 디바이스 및 Android 에뮬레이터에만 해당||  
 |코드 검사|해당 없음|Visual Studio가 아니라 Unity 내에서 단위 테스트가 발생하는 경우에는 해당하지 않습니다. 아래를 참조하세요.|  
 |[코드 단위 테스트](../test/unit-test-your-code.md)|Visual Studio가 아니라 Unity 내에서 발생|Unity는 [Unity 테스트 도구](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802)(Unity 자산 스토어)의 일부로 자체 단위 테스트 프레임워크를 제공합니다. 단위 테스트 결과는 Unity 내에서 보고되고 Visual Studio 내에 표시되지 않습니다.|  
-|[UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|예|코딩된 UI 테스트는 앱 UI의 읽을 수 있는 컨트롤을 사용합니다. Unity 앱은 본질적으로 그래픽이므로 코딩된 UI 테스트 도구에서 콘텐츠를 읽을 수 없습니다.|  
+|[UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|예|코딩된 UI 테스트는 앱 UI의 읽을 수 있는 컨트롤을 사용합니다. Unity 앱은 본질적으로 그래픽이므로 코딩된 UI 테스트 도구에서 콘텐츠를 읽을 수 없습니다.|  
   
 ## <a name="improve-code-quality"></a>코드 품질 향상  
  참조 링크: **[코드 품질 향상](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |기능|Unity에서 지원 여부|추가 설명|  
 |-------------|--------------------------|-------------------------|  
-|[관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|  
-|[코드 복제본 검색을 사용하여 중복 코드 찾기](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|  
-|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|  
+|[관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|  
+|[코드 복제본 검색을 사용하여 중복 코드 찾기](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|  
+|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|  
 |[성능 탐색기](../profiling/performance-explorer.md)|예|[Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|  
 |[.NET Framework 메모리 문제 분석](../misc/analyze-dotnet-framework-memory-issues.md)|예|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|  
   
@@ -111,8 +111,8 @@ ms.locfileid: "80233287"
   
 |기능|Unity에서 지원 여부|추가 설명|  
 |-------------|--------------------------|-------------------------|  
-|릴리스 프로세스 관리|yes||  
-|스크립트를 통한 테스트용 로드를 위해 서버에 배포|yes||  
+|릴리스 프로세스 관리|예||  
+|스크립트를 통한 테스트용 로드를 위해 서버에 배포|예||  
 |앱 스토어에 업로드|Partial|일부 앱 스토어의 경우 이 프로세스를 자동화할 수 있는 확장을 사용할 수 있습니다.  [Visual Studio Team Services용 확장](https://marketplace.visualstudio.com/VSTS)(예: [Google Play용 확장](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play))을 참조하세요.|  
   
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp으로 모니터링  
@@ -120,4 +120,4 @@ ms.locfileid: "80233287"
   
 |기능|Unity에서 지원 여부|추가 설명|  
 |-------------|--------------------------|-------------------------|  
-|충돌 분석, 원격 분석 및 베타 분포|yes|HockeyApp은 주로 베타 분포를 처리하고 충돌 보고서를 얻는 데 유용합니다.<br /><br /> C# 스크립트에서의 원격 분석에서는 Unity가 사용하는 .NET 버전에서 실행되기만 하면 모든 분석 프레임워크를 사용할 수 있습니다. 그러나 게임 스크립트 내에서만 분석할 수 있고 Unity 엔진 내에서 보다 자세히 분석할 수는 없습니다. 현재 Application Insights에 대한 플러그 인은 없지만, [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) 및 [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) 등 기타 분석 솔루션에 대한 플러그 인은 사용 가능합니다. 물론 Unity 프로젝트의 특성을 이해하는 Unity 분석 등의 서비스가 일반 프레임워크보다 훨씬 더 의미 있는 분석을 제공합니다.|
+|충돌 분석, 원격 분석 및 베타 분포|예|HockeyApp은 주로 베타 분포를 처리하고 충돌 보고서를 얻는 데 유용합니다.<br /><br /> C# 스크립트에서의 원격 분석에서는 Unity가 사용하는 .NET 버전에서 실행되기만 하면 모든 분석 프레임워크를 사용할 수 있습니다. 그러나 게임 스크립트 내에서만 분석할 수 있고 Unity 엔진 내에서 보다 자세히 분석할 수는 없습니다. 현재 Application Insights에 대한 플러그 인은 없지만, [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) 및 [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) 등 기타 분석 솔루션에 대한 플러그 인은 사용 가능합니다. 물론 Unity 프로젝트의 특성을 이해하는 Unity 분석 등의 서비스가 일반 프레임워크보다 훨씬 더 의미 있는 분석을 제공합니다.|

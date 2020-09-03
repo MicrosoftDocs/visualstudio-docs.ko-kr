@@ -9,28 +9,28 @@ caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa9db3e67b1f5ba5e183f8df0c7b34372476fb08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851161"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Shim 형식**은 Microsoft Fakes 프레임워크가 환경에서 테스트 대상 구성 요소를 쉽게 격리시킬 수 있도록 하기 위해 사용하는 두 기술 중 하나입니다. Shim은 테스트의 일부로 작성한 코드에 대한 특정 메서드의 호출을 우회시킵니다. 대부분의 메서드는 외부 조건에 따라 다른 결과를 반환하지만 shim은 테스트에 의해 제어되며 모든 호출에서 일관된 결과를 반환할 수 있습니다. 이를 통해 테스트를 더욱 쉽게 기록할 수 있습니다.
+Shim 형식**은 Microsoft Fakes 프레임워크가 환경에서 테스트 대상 구성 요소를 쉽게 격리시킬 수 있도록 하기 위해 사용하는 두 기술 중 하나입니다. shim은 특정 메서드 호출을 테스트의 일부로 작성하는 코드로 우회합니다. 대부분의 메서드는 외부 조건에 따라 다른 결과를 반환하지만 shim은 테스트에 의해 제어되며 모든 호출에서 일관된 결과를 반환할 수 있습니다. 이렇게 하면 테스트를 훨씬 쉽게 작성할 수 있습니다.
 
- Shim을 사용하여 솔루션의 한 부분이 아닌 어셈블리에서 코드를 격리시킬 수 있습니다. 솔루션의 구성 요소를 각각 격리시키려면 스텁을 사용하는 것이 좋습니다.
+ shim을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 격리할 수 있습니다. 솔루션의 구성 요소를 서로 격리하려면 스텁을 사용하는 것이 좋습니다.
 
  개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)를 참조하세요.
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise
 
   [비디오(1h16): Visual Studio 2012에서 Fakes를 사용하여 테스트되지 않은 코드 테스트](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) 참조
 
-## <a name="BKMK_Example__The_Y2K_bug"></a> 예: Y2K 버그
+## <a name="example-the-y2k-bug"></a><a name="BKMK_Example__The_Y2K_bug"></a> 예: Y2K 버그
  2000년 1월 1일에 예외를 발생시키는 메서드를 살펴보겠습니다.
 
 ```csharp
@@ -62,11 +62,11 @@ using (ShimsContext.Create()
 
 ```
 
-## <a name="BKMK_Fakes_requirements"></a> shim 사용 방법
+## <a name="how-to-use-shims"></a><a name="BKMK_Fakes_requirements"></a> Shim을 사용 하는 방법
 
-### <a name="AddFakes"></a> Fakes 어셈블리 추가
+### <a name="add-fakes-assemblies"></a><a name="AddFakes"></a> Fakes 어셈블리 추가
 
-1. 솔루션 탐색기에서 단위 테스트 프로젝트의 **참조**를 확장합니다.
+1. 솔루션 탐색기에서 단위 테스트 프로젝트의 **참조**를 확장 합니다.
 
     - Visual Basic에서 작업하는 경우 참조 목록을 보려면 솔루션 탐색기 도구 모음에서 **모든 파일 표시**를 선택해야 합니다.
 
@@ -74,7 +74,7 @@ using (ShimsContext.Create()
 
 3. 바로 가기 메뉴에서 **Fakes 어셈블리 추가**를 선택합니다.
 
-### <a name="ShimsContext"></a> ShimsContext 사용
+### <a name="use-shimscontext"></a><a name="ShimsContext"></a> ShimsContext 사용
  단위 테스트 프레임워크에서 shim 형식을 사용하는 경우 테스트 코드를 `ShimsContext`에 래핑하여 shim의 수명을 제어해야 합니다. 이렇게 하지 않으면 AppDomain이 종료될 때까지 shim이 지속됩니다. `ShimsContext`를 만드는 가장 쉬운 방법은 다음 코드와 같이 정적 `Create()` 메서드를 사용하는 것입니다.
 
 ```csharp
@@ -90,8 +90,8 @@ public void Y2kCheckerTest() {
 
  각 shim 컨텍스트를 올바르게 삭제하는 것이 중요합니다. 경험상, 항상 `using` 문 내에서 `ShimsContext.Create`를 호출하여 등록된 shim이 제대로 지워지도록 합니다. 예를 들어 항상 2000년 1월 1일을 반환하는 대리자로 `DateTime.Now` 메서드를 대체하는 테스트 메서드에 대해 shim을 등록할 수 있습니다. 테스트 메서드에서 등록된 shim을 지우지 않으면 테스트 실행의 나머지 부분에서 항상 2000년 1월 1일을 DateTime.Now 값으로 반환합니다. 이 결과는 놀라움과 혼동을 줄 수 있습니다.
 
-### <a name="WriteShims"></a> shim을 사용하여 테스트 작성
- 테스트 코드에서 모조할 메서드에 대해 *우회*를 삽입합니다. 예를 들면 다음과 같습니다.:
+### <a name="write-a-test-with-shims"></a><a name="WriteShims"></a> shim을 사용하여 테스트 작성
+ 테스트 코드에서 모조할 메서드에 대해 *우회*를 삽입합니다. 예:
 
 ```csharp
 [TestClass]
@@ -159,10 +159,10 @@ End Class
 
  Fakes 네임스페이스가 없다는 빌드 오류가 표시될 수도 있습니다. 다른 컴파일 오류가 있을 때 이 오류가 나타나는 경우도 있습니다. 다른 오류를 수정하면 오류가 사라집니다.
 
-## <a name="BKMK_Shim_basics"></a> 다양한 메서드에 대한 shim
+## <a name="shims-for-different-kinds-of-methods"></a><a name="BKMK_Shim_basics"></a> 다른 종류의 메서드에 대 한 shim
  shim 형식을 사용하여 정적 메서드 또는 비가상 메서드를 포함하는 .NET 메서드를 사용자 고유의 대리자로 대체할 수 있습니다.
 
-### <a name="BKMK_Static_methods"></a> 정적 메서드
+### <a name="static-methods"></a><a name="BKMK_Static_methods"></a> 정적 메서드
  정적 메서드에 shim을 연결하는 속성은 shim 형식에 배치됩니다. 각 속성에는 대상 메서드에 대리자를 연결하는 데 사용할 수 있는 setter만 있습니다. 예를 들어 정적 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
@@ -181,7 +181,7 @@ public static class MyClass {
 ShimMyClass.MyMethod = () =>5;
 ```
 
-### <a name="BKMK_Instance_methods__for_all_instances_"></a> 모든 인스턴스에 대한 인스턴스 메서드
+### <a name="instance-methods-for-all-instances"></a><a name="BKMK_Instance_methods__for_all_instances_"></a> 모든 인스턴스에 대 한 인스턴스 메서드
  정적 메서드와 마찬가지로, 모든 인스턴스에 대해 인스턴스 메서드를 shim할 수 있습니다. 이러한 shim을 연결할 속성은 혼동을 피하기 위해 AllInstances라는 중첩된 형식에 배치됩니다. 예를 들어 인스턴스 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
@@ -217,7 +217,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
  이 경우 Fakes는 런타임 인스턴스를 대리자의 첫 번째 인수로 전달합니다.
 
-### <a name="BKMK_Instance_methods__for_one_instance_"></a> 단일 런타임 인스턴스에 대한 인스턴스 메서드
+### <a name="instance-methods-for-one-runtime-instance"></a><a name="BKMK_Instance_methods__for_one_instance_"></a> 단일 런타임 인스턴스에 대한 인스턴스 메서드
  호출 수신자에 따라 다른 대리자가 인스턴스 메서드를 shim할 수도 있습니다. 이렇게 하면 동일한 인스턴스 메서드가 형식 인스턴스별로 다른 동작을 수행할 수 있습니다. 이러한 shim을 설정하는 속성은 shim 형식 자체의 인스턴스 메서드입니다. 인스턴스화된 각 shim 형식은 shim된 형식의 원시 인스턴스에도 연결됩니다.
 
  예를 들어 인스턴스 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
@@ -277,7 +277,7 @@ MyClass instance = shim; // implicit cast retrieves the runtime
                          // instance
 ```
 
-### <a name="BKMK_Constructors"></a> 생성자
+### <a name="constructors"></a><a name="BKMK_Constructors"></a> 생성자
  이후 개체에 shim 형식을 연결하기 위해 생성자를 shim할 수도 있습니다. 각 생성자는 shim 형식에서 정적 메서드 Constructor로 노출됩니다. 예를 들어 정수를 사용하는 생성자를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
@@ -327,7 +327,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }
 ```
 
-### <a name="BKMK_Base_members"></a> 기본 멤버
+### <a name="base-members"></a><a name="BKMK_Base_members"></a> 기본 멤버
  기본 형식에 대한 shim을 만들고 기본 shim 클래스의 생성자에 자식 인스턴스를 매개 변수로 전달하여 기본 멤버의 shim 속성에 액세스할 수 있습니다.
 
  예를 들어 인스턴스 메서드 `MyMethod` 및 하위 형식 `MyChild`를 포함하는 `MyBase` 클래스가 있다고 가정합니다.
@@ -370,16 +370,16 @@ public class ShimMyBase : ShimBase<MyBase> {
 }
 ```
 
-### <a name="BKMK_Static_constructors"></a> 정적 생성자
+### <a name="static-constructors"></a><a name="BKMK_Static_constructors"></a> 정적 생성자
  shim 형식은 형식의 정적 생성자를 shim하는 정적 메서드 `StaticConstructor`를 노출합니다. 정적 생성자는 한 번만 실행되므로 형식의 멤버에 액세스하기 전에 shim이 구성되는지 확인해야 합니다.
 
-### <a name="BKMK_Finalizers"></a> 종료자
+### <a name="finalizers"></a><a name="BKMK_Finalizers"></a> 종료
  종료자는 Fakes에서 지원되지 않습니다.
 
-### <a name="BKMK_Private_methods"></a> 전용 메서드
+### <a name="private-methods"></a><a name="BKMK_Private_methods"></a> 전용 메서드
  Fakes 코드 생성기는 서명에 표시되는 형식, 즉 표시되는 매개 변수 형식 및 반환 형식만 있는 전용 메서드에 대해 shim 속성을 만듭니다.
 
-### <a name="BKMK_Binding_interfaces"></a> 바인딩 인터페이스
+### <a name="binding-interfaces"></a><a name="BKMK_Binding_interfaces"></a> 바인딩 인터페이스
  shim된 형식이 인터페이스를 구현하는 경우 코드 생성기에서 해당 인터페이스의 모든 멤버를 한 번에 바인딩할 수 있는 메서드를 내보냅니다.
 
  예를 들어 `IEnumerable<int>`를 구현하는 `MyClass` 클래스가 있다고 가정합니다.
@@ -415,7 +415,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 ```
 
-## <a name="BKMK_Changing_the_default_behavior"></a> 기본 동작 변경
+## <a name="changing-the-default-behavior"></a><a name="BKMK_Changing_the_default_behavior"></a> 기본 동작 변경
  생성된 각 shim 형식에는 `IShimBehavior` 인터페이스의 인스턴스가 `ShimBase<T>.InstanceBehavior` 속성을 통해 포함됩니다. 클라이언트가 명시적으로 shim되지 않은 인스턴스 멤버를 호출할 때마다 동작이 사용됩니다.
 
  동작이 명시적으로 설정되지 않은 경우 정적 `ShimsBehaviors.Current` 속성에서 반환한 인스턴스를 사용합니다. 기본적으로 이 속성은 `NotImplementedException` 예외를 throw하는 동작을 반환합니다.
@@ -441,7 +441,7 @@ ShimsBehaviors.Current =
 
 ```
 
-## <a name="BKMK_Detecting_environment_accesses"></a> 환경 액세스 검색
+## <a name="detecting-environment-accesses"></a><a name="BKMK_Detecting_environment_accesses"></a> 환경 액세스 검색
  해당 shim 형식의 정적 속성 `Behavior`에 `ShimsBehaviors.NotImplemented` 동작을 할당하면 정적 메서드를 포함하여 특정 형식의 모든 메서드에 동작을 연결할 수 있습니다.
 
 ```csharp
@@ -453,10 +453,10 @@ ShimMyClass.BehaveAsNotImplemented();
 
 ```
 
-## <a name="BKMK_Concurrency"></a> 동시성
+## <a name="concurrency"></a><a name="BKMK_Concurrency"></a> 동시성
  shim 형식은 AppDomain의 모든 스레드에 적용되며 스레드 선호도가 없습니다. 이는 동시성을 지원하는 Test Runner를 사용하려는 경우에 중요한 팩트입니다. shim 형식과 관련된 테스트는 동시에 실행할 수 없습니다. 이 속성은 Fakes 런타임에 의해 적용되지 않습니다.
 
-## <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> shim 메서드에서 원래 메서드 호출
+## <a name="calling-the-original-method-from-the-shim-method"></a><a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Shim 메서드에서 원래 메서드 호출
  메서드에 전달된 파일 이름의 유효성을 검사한 후 실제로 파일 시스템에 텍스트를 작성하려 한다고 가정합니다. 이 경우 shim 메서드 중에 원래 메서드를 호출해야 합니다.
 
  이 문제를 해결하는 첫 번째 방법은 다음 코드와 같이 대리자 및 `ShimsContext.ExecuteWithoutShims()`를 사용하여 원래 메서드 호출을 래핑하는 것입니다.
@@ -498,7 +498,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ```
 
-## <a name="BKMK_Limitations"></a> 제한 사항
+## <a name="limitations"></a><a name="BKMK_Limitations"></a> 제한 사항
  .NET 기본 클래스 라이브러리 **mscorlib** 및 **System**의 일부 형식에서는 shim을 사용할 수 없습니다.
 
 ## <a name="external-resources"></a>외부 리소스
@@ -506,5 +506,5 @@ ShimFile.WriteAllTextStringString = shim;
 ### <a name="guidance"></a>지침
  [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  Microsoft Fakes Peter Provost의 블로그 [를 사용 하 여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md) [: Visual studio 2012 shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [비디오 (1h16): visual studio 2012에서 Fakes를 사용 하 여](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) 테스트 되지 않은 코드 테스트

@@ -1,5 +1,5 @@
 ---
-title: 콤보 요소 | 마이크로 소프트 문서
+title: Combos 요소 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739808"
 ---
-# <a name="combos-element"></a>콤보 요소
-[콤보 요소](../extensibility/combo-element.md) 요소를 그룹화합니다.
+# <a name="combos-element"></a>Combos 요소
+[Combo 요소](../extensibility/combo-element.md) 요소를 그룹화 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,22 +35,22 @@ ms.locfileid: "80739808"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
-|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[콤보 요소](../extensibility/combos-element.md)|콤보 요소를 그룹화합니다.|
-|[콤보 요소](../extensibility/combo-element.md)|콤보 상자에 나타나는 명령을 정의합니다.|
+|[Combos 요소](../extensibility/combos-element.md)|그룹 콤보 요소입니다.|
+|[Combo 요소](../extensibility/combo-element.md)|콤보 상자에 표시 되는 명령을 정의 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[명령 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에서 명령 컬렉션을 나타냅니다.|
+|[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다.|
 
 ## <a name="example"></a>예제
 
@@ -76,6 +76,6 @@ ms.locfileid: "80739808"
 </Combos>
 ```
 
-## <a name="see-also"></a>참조
-- [VSPackage사용자 인터페이스 요소를 추가하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>참고 항목
+- [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

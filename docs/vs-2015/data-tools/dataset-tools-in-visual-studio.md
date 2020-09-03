@@ -54,10 +54,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23e4deba53288383a569f6da6e14d27f723825ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657379"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio의 데이터 세트 도구
@@ -81,15 +81,15 @@ ms.locfileid: "72657379"
 
 - **TableAdapter 구성 마법사** 를 사용 하 여 데이터 집합을 채울 쿼리 또는 저장 프로시저와 구현할 데이터베이스 작업 (업데이트, 삭제 등)을 지정할 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
 
-  - [TableAdapter를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-  - [데이터 세트의 데이터 편집](../data-tools/edit-data-in-datasets.md)
+  - [데이터 집합의 데이터 편집](../data-tools/edit-data-in-datasets.md)
 
   - [데이터 세트의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)
 
   - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
 
-- 데이터 집합의 데이터를 쿼리하고 검색 합니다. 자세한 내용은 [쿼리 데이터 집합](../data-tools/query-datasets.md)을 참조 하세요. [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] <xref:System.Data.DataSet> 개체의 데이터에 대해 [LINQ (통합 언어 쿼리)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) 를 사용 하도록 설정 합니다. 자세한 내용은 [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)을 참조하세요.
+- 데이터 집합의 데이터를 쿼리하고 검색 합니다. 자세한 내용은 [쿼리 데이터 집합](../data-tools/query-datasets.md)을 참조 하세요. [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 개체의 데이터에 대해 [LINQ (통합 언어 쿼리)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) 를 사용 하도록 설정 <xref:System.Data.DataSet> 합니다. 자세한 내용은 [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)을 참조하세요.
 
 - **데이터 소스** 창을 사용 하 여 사용자 인터페이스 컨트롤을 데이터 집합 또는 개별 열에 바인딩하고 사용자가 편집할 수 있는 열을 지정할 수 있습니다. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)을 참조 하세요.
 
@@ -99,5 +99,5 @@ ms.locfileid: "72657379"
 ## <a name="datasets-and-xml"></a>데이터 집합 및 XML
  데이터 집합을 XML로 변환 하는 방법에 대 한 자세한 내용은 [xml 데이터를 데이터 집합으로 읽어](../data-tools/read-xml-data-into-a-dataset.md) 데이터 집합을 [xml로 저장](../data-tools/save-a-dataset-as-xml.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

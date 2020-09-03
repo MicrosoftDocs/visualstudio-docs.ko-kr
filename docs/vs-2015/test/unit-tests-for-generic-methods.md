@@ -12,16 +12,16 @@ caps.latest.revision: 49
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2619e975dbfd22d96db2cc382a7cebbf04a05223
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657285"
 ---
 # <a name="unit-tests-for-generic-methods"></a>제네릭 메서드의 단위 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0How에 설명 된 대로 다른 메서드와 동일한 방식으로 제네릭 메서드의 단위 테스트를 생성할 수 있습니다. 단위 테스트 ](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)를 만들고 실행 합니다. 다음 섹션에서는 제네릭 메서드의 단위 테스트를 만드는 방법에 대한 정보와 예제를 제공합니다.
+[방법: 유닛 테스트 만들기 및 실행](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)에 설명된 대로, 다른 메서드와 동일한 방식으로 제네릭 메서드의 유닛 테스트를 생성할 수 있습니다. 다음 섹션에서는 제네릭 메서드의 단위 테스트를 만드는 방법에 대한 정보와 예제를 제공합니다.
 
 ## <a name="type-arguments-and-type-constraints"></a>형식 인수 및 형식 제약 조건
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 `MyList<T>`와 같은 제네릭 클래스의 단위 테스트를 생성하는 경우 제네릭 도우미와 테스트 메서드의 두 메서드를 생성합니다. `MyList<T>`에 하나 이상의 형식 제약 조건이 있는 경우 형식 인수가 형식 제약 조건을 모두 충족해야 합니다. 테스트 대상 제네릭 코드가 허용되는 모든 입력에 대해 예상대로 작동하는지 확인하기 위해 테스트 메서드는 테스트하려는 모든 제약 조건을 사용하여 제네릭 도우미 메서드를 호출합니다.
@@ -29,11 +29,11 @@ ms.locfileid: "72657285"
 ## <a name="examples"></a>예
  다음 예제에서는 제네릭의 단위 테스트를 보여 줍니다.
 
-- [생성된 테스트 코드 편집](#EditingGeneratedTestCode). 이 예제에는 생성된 테스트 코드와 편집된 테스트 코드의 두 섹션이 있습니다. 제네릭 메서드에서 생성된 원시 테스트 코드를 유용한 테스트 메서드로 편집하는 방법을 보여 줍니다.
+- [생성 된 테스트 코드 편집](#EditingGeneratedTestCode) 이 예제에는 생성된 테스트 코드와 편집된 테스트 코드의 두 섹션이 있습니다. 제네릭 메서드에서 생성된 원시 테스트 코드를 유용한 테스트 메서드로 편집하는 방법을 보여 줍니다.
 
-- [형식 제약 조건 사용](#TypeConstraintNotSatisfied). 이 예제에서는 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 이 예제에서는 형식 제약 조건이 충족되지 않습니다.
+- [형식 제약 조건을 사용](#TypeConstraintNotSatisfied)합니다. 이 예제에서는 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 이 예제에서는 형식 제약 조건이 충족되지 않습니다.
 
-### <a name="EditingGeneratedTestCode"></a> 예제 1: 생성 된 테스트 코드 편집
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> 예제 1: 생성 된 테스트 코드 편집
  이 섹션의 테스트 코드는 `SizeOfLinkedList()`라는 테스트 대상 코드 메서드를 테스트합니다. 이 메서드는 연결된 목록의 노드 수를 지정하는 정수를 반환합니다.
 
  생성된 테스트 코드 섹션의 첫 번째 코드 샘플은 Visual Studio Enterprise에서 생성된 편집하지 않은 테스트 코드를 보여 줍니다. 편집된 테스트 코드 섹션의 두 번째 샘플은 두 가지 데이터 형식 `int` 및 `char`에 대해 SizeOfLinkedList 메서드의 기능을 테스트하도록 만드는 방법을 보여 줍니다.
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션 ](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)에서 테스트를 실행 하는 동안 디버그 합니다.
+> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버깅](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)을 참조하세요.
 
-### <a name="TypeConstraintNotSatisfied"></a> 예제 2: 형식 제약 조건 사용
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> 예제 2: 형식 제약 조건 사용
  이 예제에서는 충족되지 않은 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 첫 번째 섹션에서는 테스트 대상 코드 프로젝트의 코드를 보여 줍니다. 형식 제약 조건이 강조 표시됩니다.
 
  두 번째 섹션에서는 테스트 프로젝트의 코드를 보여 줍니다.
@@ -197,5 +197,5 @@ namespace ClassLibrary2
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  코드에 [대 한 단위 테스트](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [단위 테스트](../test/unit-test-your-code.md) 분석

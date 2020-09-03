@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8930bba76830a6116c3182f3fb2936cd4f1a3e47
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657603"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>트랜잭션을 사용하여 UML 모델 업데이트 연결
@@ -60,7 +60,7 @@ Visual Studio에서 UML 디자이너에 대 한 확장을 정의 하는 경우 �
 
  `}`
 
- 다음 사항을 참고하십시오.
+ 다음을 확인합니다.
 
 - 트랜잭션의 끝에 항상 `Commit()`을 포함해야 합니다. 트랜잭션을 커밋하지 않고 삭제하면 트랜잭션이 롤백됩니다. 즉, 모델이 트랜잭션을 시작할 때의 상태로 복원됩니다.
 
@@ -108,5 +108,5 @@ Visual Studio에서 UML 디자이너에 대 한 확장을 정의 하는 경우 �
  }
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md) [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f899e081377ecc1a56e141f8793d6f707df2b69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534084"
 ---
 # <a name="application-timeline"></a>애플리케이션 타임라인
@@ -40,7 +40,7 @@ ms.locfileid: "85534084"
 > [!NOTE]
 > **애플리케이션 타임라인** 데이터와 함께 CPU 사용량 데이터 및 에너지 소비량 데이터를 수집하고 분석할 수 있습니다. [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01) 을 참조 하세요.  
   
-## <a name="collect-application-timeline-data"></a><a name="BKMK_Collect_Timeline_data_for_your_app"></a>애플리케이션 타임라인 데이터 수집  
+## <a name="collect-application-timeline-data"></a><a name="BKMK_Collect_Timeline_data_for_your_app"></a> 애플리케이션 타임라인 데이터 수집  
  로컬 시스템, 연결된 디바이스, Visual Studio 시뮬레이터 또는 에뮬레이터, 또는 원격 디바이스에서 앱 응답성을 프로파일링할 수 있습니다. [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)을 참조 하세요.  
   
 > [!TIP]
@@ -65,7 +65,7 @@ ms.locfileid: "85534084"
   
      ![타임라인 프로파일러 보고서](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a>타임 라인 프로 파일링 데이터 분석  
+## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a> 타임 라인 프로 파일링 데이터 분석  
  프로파일링 데이터를 수집한 후 이러한 단계를 이용하여 분석을 시작할 수 있습니다.  
   
 1. **UI 스레드 사용률** 과 **시각적 처리량(FPS)** 그래프의 정보를 검사한 다음 타임라인 탐색 모음을 사용하여 분석할 시간 범위를 선택합니다.  
@@ -119,7 +119,7 @@ ms.locfileid: "85534084"
 |![타임 라인 정보 목록 필터링](../profiling/media/timeline-filter.png "TIMELINE_Filter")|선택한 범주와 이벤트의 길이를 기준으로 목록을 필터링합니다.|  
 |![타임 라인 세부 정보 사용자 지정](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|이벤트에 대한 주석을 지정할 수 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [WPF 팀 블로그: WPF 응용 프로그램의 새로운 UI 성능 분석 도구](https://devblogs.microsoft.com/wpf/new-ui-performance-analysis-tool-for-wpf-applications/)   
  [C + +, c # 및 Visual Basic를 사용 하는 Windows 스토어 앱에 대 한 성능 모범 사례](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF 애플리케이션 성능 최적화](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

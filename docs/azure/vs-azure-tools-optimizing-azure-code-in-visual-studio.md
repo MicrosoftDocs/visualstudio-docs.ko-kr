@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81489638"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure 코드 최적화
@@ -36,7 +36,7 @@ AP0000
 
 ASP.NET 세션 상태는 세션 상태 데이터에 대해 다양한 스토리지 옵션(InProc, StateServer, SQLServer, 사용자 지정, 해제)을 지원합니다. [Redis용 Azure 세션 상태 제공자](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/)와 같은 사용자 지정 모드를 사용하여 외부 세션 상태 저장소에 데이터를 호스팅하는 것이 좋습니다.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 관리되는 캐시 서비스에 세션 상태를 저장하는 것도 한 가지 권장할 만한 해결 방법입니다. [Redis용 Azure 세션 상태 제공자](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) 를 사용하여 세션 상태를 저장하는 방법에 대해 알아보세요. 또한 클라우드에서 애플리케이션을 확장할 수 있도록 다른 위치에도 세션 상태를 저장할 수 있습니다. 다른 해결 방법을 보려면 [세션 상태 모드](https://msdn.microsoft.com/library/ms178586)를 참조하세요.
 
 ## <a name="run-method-should-not-be-async"></a>실행 메서드는 비동기가 아니어야 함
@@ -51,7 +51,7 @@ AP1000
 ### <a name="reason"></a>이유
 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 메서드 내에서 비동기 메서드를 호출하면 클라우드 서비스 런타임이 작업자 역할을 재순환합니다. 작업자 역할이 시작되면 모든 프로그램 실행이 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 메서드 내에서 수행됩니다. 기존 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 메서드에서는 작업자 역할이 다시 시작됩니다. 작업자 역할 런타임이 비동기 메서드를 만나면 비동기 메서드 이후에 모든 작업이 디스패치된 다음 반환됩니다. 그러면 [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 메서드에서 작업자 역할이 종료되고 다시 시작됩니다. 다음에 실행 반복이 발생할 경우 작업자 역할이 다시 비동기 메서드를 만나면 작업자 역할이 다시 재순환됩니다.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 모든 비동기 작업을 [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 메서드 밖에 배치합니다. 그런 다음 RunAsync().wait과 같은 [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 메서드 안에서 리팩터링된 비동기 메서드를 호출합니다. Azure 코드 분석 도구로 이 문제를 해결할 수 있습니다.
 
 다음 코드 조각은 이 문제의 코드 수정 사항을 보여 줍니다.
@@ -96,7 +96,7 @@ AP2000
 ### <a name="reason"></a>이유
 보안 강화를 위해 Azure Active Directory에서 ACS 인증을 SAS 인증으로 대체합니다. 전환 계획에 대한 자세한 내용은 [Azure Active Directory가 ACS의 미래](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) 를 참조하세요.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 앱에 SAS 인증을 사용합니다. 다음 예제는 기존 SAS 토큰을 사용하여 서비스 버스 네임스페이스 또는 엔터티에 액세스하는 방법을 보여 줍니다.
 
 ```csharp
@@ -127,7 +127,7 @@ AP2002
 
 기본값을 사용하지 않고 **Receive** 를 호출할 경우 *ServerWaitTime* 값을 1분 이내로 설정하십시오. *ServerWaitTime* 을 1분을 초과하여 설정하면 메시지가 완전히 수신되기 전에 서버 시간 초과가 발생하지 않습니다.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 다음 코드 예제에서 권장 사용법을 참조하세요. 자세한 내용은 [QueueClient.OnMessage 메서드(Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) 및 [QueueClient.Receive 메서드(Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx)를 참조하세요.
 
 Azure 메시징 인프라의 성능을 개선하려면 [Asynchronous Messaging Primer](https://msdn.microsoft.com/library/dn589781.aspx)디자인 패턴을 참조하세요.
@@ -227,7 +227,7 @@ AP2003
 ### <a name="reason"></a>이유
 비동기 메서드를 사용하면 호출을 실행할 때마다 메인 스레드가 차단되지 않으므로 애플리케이션 동시성이 지원됩니다. Service Bus 메시징 메서드를 사용할 때 작업(보내기, 받기, 삭제 등)을 수행하면 다소 시간이 소요됩니다. 이 시간에는 요청 및 응답 지연 시간과 Service Bus 서비스의 작업 처리가 포함됩니다. 시간당 작업 수를 늘리려면 작업이 동시에 실행되어야 합니다. 자세한 내용을 보려면 [Service Bus 조정된 메시징을 사용한 성능 향상의 모범 사례](https://msdn.microsoft.com/library/azure/hh528527.aspx)를 참조하세요.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 권장 비동기 메서드를 사용하는 방법은 [QueueClient 클래스(Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx) 를 참조하세요.
 
 Azure 메시징 인프라의 성능을 개선하려면 [Asynchronous Messaging Primer](https://msdn.microsoft.com/library/dn589781.aspx)디자인 패턴을 참조하세요.
@@ -244,7 +244,7 @@ Service Bus 메시징에서 성능을 향상하려면 Service Bus 큐와 토픽�
 ### <a name="reason"></a>이유
 Service Bus 큐와 토픽을 분할하면 분할된 큐 또는 토픽이 더 이상 단일 메시지 브로커 또는 메시징 스토어의 성능으로 제한되지 않으므로 성능 처리량과 서비스 가용성이 향상됩니다. 또한 메시징 스토어가 일시적으로 중단된 경우에도 분할된 큐 또는 토픽을 계속 사용할 수 있습니다. 자세한 내용은 [메시징 엔터티 분할](https://msdn.microsoft.com/library/azure/dn520246.aspx)을 참조하세요.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 다음 코드 조각은 메시징 엔터티를 분할하는 방법을 보여 줍니다.
 
 ```csharp
@@ -271,7 +271,7 @@ AP3001
 
 Azure Storage에서 공유 액세스 서명을 사용하는 방법에 대한 지침은 [테이블 SAS(공유 액세스 서명), 큐 SAS, Blob SAS 업데이트 소개 - Microsoft Azure Storage 팀 블로그 - 사이트 홈 - MSDN 블로그](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/)를 참조하세요.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 공유 액세스 정책의 시작 시간을 설정하는 문을 제거합니다. Azure 코드 분석 도구는 이 문제에 대한 해결 방법을 제공합니다. 보안 관리에 대한 자세한 내용은 디자인 패턴 [Valet 주요 패턴](https://msdn.microsoft.com/library/dn568102.aspx)을 참조하세요.
 
 다음 코드 조각은 이 문제의 코드 수정 사항을 보여 줍니다.
@@ -303,7 +303,7 @@ AP3002
 
 Azure Storage에서 공유 액세스 서명을 사용하는 방법은 [테이블 SAS(공유 액세스 서명), 큐 SAS, Blob SAS 업데이트 소개 - Microsoft Azure Storage 팀 블로그 - 사이트 홈 - MSDN 블로그](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/)를 참조하세요.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 보안 관리에 대한 자세한 내용은 [Valet 주요 패턴](https://msdn.microsoft.com/library/dn568102.aspx)디자인 패턴을 참조하세요.
 
 다음은 공유 액세스 정책의 시작 시간을 지정하지 않은 예입니다.
@@ -353,10 +353,10 @@ CloudConfigurationManager는 애플리케이션 환경에 적합한 구성 파�
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 [CloudConfigurationManager 클래스](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)를 사용하도록 코드를 리팩터링합니다. Azure 코드 분석 도구에서 이 문제에 대한 코드 수정 사항을 보여 줍니다.
 
-다음 코드 조각은 이 문제의 코드 수정 사항을 보여 줍니다. Replace
+다음 코드 조각은 이 문제의 코드 수정 사항을 보여 줍니다. 바꾸기
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
@@ -388,7 +388,7 @@ AP4001
 ### <a name="reason"></a>이유
 연결 문자열을 하드 코드할 경우 연결 문자열을 급히 변경해야 할 때 문제가 될 수 있으므로 좋은 방법이 아닙니다. 또한 프로젝트를 소스 제어에 체크인해야 할 경우 문자열을 소스 코드에서 볼 수 있으므로 하드 코드 연결 문자열이 보안에 취약해집니다.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 연결 문자열을 구성 파일 또는 Azure 환경에 저장합니다.
 
 * 독립 실행형 애플리케이션의 경우 app.config를 사용하여 연결 문자열 설정을 저장합니다.
@@ -411,7 +411,7 @@ Azure SDK 2.5(Azure 진단 1.3 사용) 전에는 스토리지의 구성 Blob에 
 
 WAD 1.3(Azure SDK 2.5에 기본 제공)부터 코드를 사용하여 진단을 구성할 수 없습니다. 그 결과 진단 확장을 적용 또는 업데이트할 경우에만 구성을 제공할 수 있습니다.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 진단 구성 디자이너를 사용하여 진단 설정을 진단 구성 파일(SDK 2.5 이상에서 diagnostics.wadcfg 또는 diagnostics.wadcfgx)로 이동합니다. 또한 [Azure SDK 2.5](https://social.msdn.microsoft.com/Forums/en-US/home) 를 설치하고 최신 진단 기능을 사용하는 것이 좋습니다.
 
 1. 구성하려는 역할에 대한 바로 가기 메뉴에서 속성을 선택한 다음 구성 탭을 선택합니다.
@@ -434,7 +434,7 @@ AP6000
 ### <a name="reason"></a>이유
 DBContext 개체는 각 호출의 쿼리 결과를 보관합니다. 정적 DBContext 개체는 애플리케이션 도메인이 언로드될 때까지 삭제되지 않습니다. 따라서 정적 DBContext 개체는 많은 양의 메모리를 사용할 수 있습니다.
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 DBContext를 지역 변수 또는 비정적 인스턴스 필드로 선언하고 작업에 사용한 다음 사용 후 삭제되도록 합니다.
 
 다음 예제의 MVC 컨트롤러 클래스는 DBContext 개체를 사용하는 방법을 보여 줍니다.

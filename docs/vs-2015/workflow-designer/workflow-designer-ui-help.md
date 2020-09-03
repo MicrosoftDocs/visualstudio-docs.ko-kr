@@ -13,18 +13,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf1a78148e2520478c7c6bc3e7953adccbab8c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657552"
 ---
 # <a name="workflow-designer-ui-help"></a>Workflow Designer UI 도움말
-이 단원에서는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]의 상황에 맞는 도움말 항목을 제공합니다. @No__t_0 작업할 때 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 대화 상자가 열려 있을 때 **F1** 키를 눌러 사용자 인터페이스에서 이러한 항목에 액세스할 수 있습니다.
+이 단원에서는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]의 상황에 맞는 도움말 항목을 제공합니다. 에서 작업 하는 경우 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 대화 상자가 열릴 때 **F1** 키를 눌러 사용자 인터페이스에서 이러한 항목에 액세스할 수 있습니다 [!INCLUDE[wfd2](../includes/wfd2-md.md)] .
 
  또한 이 단원에는 탐색 및 오류 메시지에 관한 항목도 나와 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [.NET 형식 찾아보기 및 선택 대화 상자](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)
 
  [CorrelatesOn 정의 대화 상자](../workflow-designer/correlateson-definition-dialog-box.md)

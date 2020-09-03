@@ -1,0 +1,572 @@
+- name: Visual Studio SDK 기본 사항
+  href: inside-the-visual-studio-sdk.md
+- name: Visual Studio Shell
+  href: visual-studio-shell.md
+- name: 사용자 설정 지원
+  href: support-for-user-settings.md
+- name: Microsoft 도움말 뷰어 SDK
+  href: microsoft-help-viewer-sdk.md
+- name: '명령, 메뉴 및 도구 모음'
+  href: commands-menus-and-toolbars.md
+  items:
+    - name: VSPackage에서 사용자 인터페이스 요소를 추가하는 방법
+      href: how-vspackages-add-user-interface-elements.md
+    - name: Visual Studio 명령 테이블(.Vsct) 파일
+      href: visual-studio-command-table-dot-vsct-files.md
+      items:
+        - name: .Vsct 파일 작성
+          href: authoring-dot-vsct-files.md
+        - name: XML 명령 테이블(.Vsct) 파일 디자인
+          href: designing-xml-command-table-dot-vsct-files.md
+        - name: '방법: .Vsct 파일 만들기'
+          href: how-to-create-a-dot-vsct-file.md
+        - name: VSCT 컴파일러 명령줄 플래그
+          href: vsct-compiler-command-line-flags.md
+    - name: '기본 명령, 그룹 및 도구 모음 배치'
+      href: default-command-group-and-toolbar-placement.md
+    - name: 'IDE 정의 명령, 메뉴 및 그룹'
+      href: ide-defined-commands-menus-and-groups.md
+      items:
+        - name: Visual Studio 메뉴의 GUID 및 ID
+          href: guids-and-ids-of-visual-studio-menus.md
+        - name: Visual Studio 도구 모음의 GUID 및 ID
+          href: guids-and-ids-of-visual-studio-toolbars.md
+        - name: Visual Studio 명령의 GUID 및 ID
+          href: guids-and-ids-of-visual-studio-commands.md
+    - name: 명령 디자인
+      href: command-design.md
+      items:
+        - name: 구현
+          href: command-implementation.md
+        - name: 가용성
+          href: command-availability.md
+        - name: 라우팅 알고리즘
+          href: command-routing-algorithm.md
+        - name: 배치 지침
+          href: command-placement-guidelines.md
+    - name: 메뉴 및 도구 모음 명령 최적화
+      href: optimizing-menu-and-toolbar-commands.md
+    - name: 명령을 사용 가능하게 지정
+      href: making-commands-available.md
+    - name: Interop 어셈블리를 사용하는 명령 및 메뉴
+      href: commands-and-menus-that-use-interop-assemblies.md
+      items:
+        - name: Interop 어셈블리를 사용하여 명령 상태 결정
+          href: determining-command-status-by-using-interop-assemblies.md
+        - name: Interop 어셈블리의 명령 계약
+          href: command-contracts-in-interop-assemblies.md
+        - name: Interop 어셈블리 명령 처리기를 등록
+          href: registering-interop-assembly-command-handlers.md
+        - name: Visual Studio Interop 어셈블리 사용
+          href: using-visual-studio-interop-assemblies.md
+    - name: VSPackage의 명령 라우팅
+      href: command-routing-in-vspackages.md
+- name: VSPackages
+  href: vspackages.md
+  items:
+    - name: VSPackage 파일 위치를 VS Shell에 지정
+      href: specifying-vspackage-file-location-to-the-vs-shell.md
+    - name: VSPackage의 리소스
+      href: resources-in-vspackages.md
+    - name: VSPackage의 보안 모범 사례
+      href: best-practices-for-security-in-vspackages.md
+    - name: VSPackage 등록
+      href: registering-vspackages.md
+- name: 문서 창
+  href: document-windows.md
+  items:
+    - name: 문서 테이블 실행
+      href: running-document-table.md
+      items:
+        - name: RDT_ReadLock 사용법
+          href: rdt-readlock-usage.md
+        - name: 지속성 및 실행 중인 문서 테이블
+          href: persistence-and-the-running-document-table.md
+    - name: 지연된 문서 로드
+      href: delayed-document-loading.md
+- name: 레거시 언어 서비스 확장성
+  href: legacy-language-service-extensibility.md
+  items:
+    - name: 레거시 언어 서비스 마이그레이션
+      href: migrating-a-legacy-language-service.md
+    - name: 레거시 언어 서비스 필수 항목
+      href: legacy-language-service-essentials.md
+    - name: 레거시 언어 서비스 개발
+      href: developing-a-legacy-language-service.md
+      items:
+        - name: 레거시 언어 서비스 모델
+          href: model-of-a-legacy-language-service.md
+        - name: 레거시 언어 서비스 인터페이스
+          href: legacy-language-service-interfaces.md
+        - name: 레거시 언어 서비스 명령 가로채기
+          href: intercepting-legacy-language-service-commands.md
+          items:
+            - name: 언어 서비스 필터에 대한 중요 명령
+              href: important-commands-for-language-service-filters.md
+        - name: 레거시 언어 서비스 등록
+          href: registering-a-legacy-language-service2.md
+        - name: '검사 목록: 레거시 언어 서비스 만들기'
+          href: checklist-creating-a-legacy-language-service.md
+        - name: 레거시 언어 서비스 기능
+          href: legacy-language-service-features2.md
+          items:
+            - name: 레거시 언어 서비스의 구문 색 지정
+              href: syntax-coloring-in-a-legacy-language-service.md
+              items:
+                - name: 구문 색 지정 구현
+                  href: implementing-syntax-coloring.md
+                - name: '방법: 기본 제공 색 항목 사용'
+                  href: how-to-use-built-in-colorable-items.md
+                - name: 사용자 지정 색 항목
+                  href: custom-colorable-items.md
+            - name: 레거시 언어 서비스의 자동 서식
+              href: automatic-formatting-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 매개 변수 정보
+              href: parameter-info-in-a-legacy-language-service1.md
+            - name: 레거시 언어 서비스의 명령문 완성
+              href: statement-completion-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 개요 표시 및 숨겨진 텍스트
+              href: outlining-and-hidden-text-in-a-legacy-language-service.md
+              items:
+                - name: '방법: 레거시 언어 서비스의 개요 표시 지원'
+                  href: how-to-support-outlining-in-a-legacy-language-service.md
+                - name: '방법: 레거시 언어 서비스에서 숨겨진 텍스트 지원 제공'
+                  href: how-to-provide-hidden-text-support-in-a-legacy-language-service.md
+                - name: '방법: 레거시 언어 서비스에서 확장 개요 표시 지원 제공'
+                  href: how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md
+            - name: 디버깅에 대한 언어 서비스 지원
+              href: language-service-support-for-debugging.md
+    - name: 레거시 언어 서비스 구현
+      href: implementing-a-legacy-language-service1.md
+      items:
+        - name: 레거시 언어 서비스 개요
+          href: legacy-language-service-overview.md
+        - name: 언어 서비스 구현
+          href: implementing-a-legacy-language-service2.md
+        - name: 언어 서비스 등록
+          href: registering-a-legacy-language-service1.md
+        - name: 레거시 언어 서비스 파서 및 검사기
+          href: legacy-language-service-parser-and-scanner.md
+        - name: '연습: 레거시 언어 서비스 만들기'
+          href: walkthrough-creating-a-legacy-language-service.md
+        - name: '연습: 설치된 코드 조각 목록 가져오기(레거시 구현)'
+          href: walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md
+        - name: 레거시 언어 서비스 기능
+          href: legacy-language-service-features1.md
+          items:
+            - name: 레거시 언어 서비스의 중괄호 일치
+              href: brace-matching-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 코드 주석 처리
+              href: commenting-code-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 사용자 지정 문서 속성
+              href: custom-document-properties-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 개요 표시
+              href: outlining-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 코드 서식 다시 지정
+              href: reformatting-code-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 코드 조각 지원
+              href: support-for-code-snippets-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 매개 변수 정보
+              href: parameter-info-in-a-legacy-language-service2.md
+            - name: 레거시 언어 서비스의 빠른 정보
+              href: quick-info-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 멤버 완성
+              href: member-completion-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 단어 완성
+              href: word-completion-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 자동 창 지원
+              href: support-for-the-autos-window-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 탐색 모음 지원
+              href: support-for-the-navigation-bar-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 구문 색 지정
+              href: syntax-colorizing-in-a-legacy-language-service.md
+            - name: 레거시 언어 서비스의 중단점 유효성 검사
+              href: validating-breakpoints-in-a-legacy-language-service.md
+    - name: 기호 검색 도구 지원
+      href: supporting-symbol-browsing-tools.md
+      items:
+        - name: '방법: 개체 관리자에 라이브러리 등록'
+          href: how-to-register-a-library-with-the-object-manager.md
+        - name: '방법: 라이브러리에서 제공하는 기호 목록을 개체 관리자에 노출'
+          href: how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md
+        - name: '방법: 라이브러리의 기호 식별'
+          href: how-to-identify-symbols-in-a-library.md
+- name: 프로젝트
+  href: projects.md
+  items:
+    - name: '새 프로젝트 생성: 내부 살펴보기, 1부'
+      href: new-project-generation-under-the-hood-part-one.md
+    - name: '새 프로젝트 생성: 내부 살펴보기, 2부'
+      href: new-project-generation-under-the-hood-part-two.md
+    - name: 프로젝트 형식
+      href: project-types.md
+      items:
+        - name: 기본 정보
+          href: project-type-essentials.md
+        - name: 프로젝트 형식 만들기
+          href: creating-project-types.md
+          items:
+            - name: 프로젝트 형식 디자인 결정
+              href: project-type-design-decisions.md
+            - name: '검사 목록: 새 프로젝트 형식 만들기'
+              href: checklist-creating-new-project-types.md
+            - name: 프로젝트 팩터리를 사용하여 프로젝트 인스턴스 만들기
+              href: creating-project-instances-by-using-project-factories.md
+            - name: 관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)
+              href: using-the-managed-package-framework-to-implement-a-project-type-csharp.md
+            - name: 프로젝트 형식 등록
+              href: registering-a-project-type.md
+            - name: 프로젝트 지속성
+              href: project-persistence.md
+            - name: MSBuild 사용
+              href: using-msbuild.md
+        - name: 프로젝트 및 프로젝트 항목 템플릿 추가
+          href: adding-project-and-project-item-templates.md
+          items:
+            - name: 프로젝트 컨텍스트
+              href: project-context.md
+            - name: 프로젝트 우선 순위
+              href: project-priority.md
+            - name: 기타 파일 프로젝트
+              href: miscellaneous-files-project.md
+            - name: 프로젝트 템플릿 및 항목 템플릿 등록
+              href: registering-project-and-item-templates.md
+            - name: 새 항목 추가 대화 상자에 항목 추가
+              href: adding-items-to-the-add-new-item-dialog-boxes.md
+            - name: 새 프로젝트 대화 상자에 디렉터리 추가
+              href: adding-directories-to-the-new-project-dialog-box.md
+            - name: 새 항목 추가 대화 상자에 디렉터리 추가
+              href: adding-directories-to-the-add-new-item-dialog-box.md
+            - name: 프로젝트 시스템 확장을 위한 IDE 정의 명령
+              href: ide-defined-commands-for-extending-project-systems.md
+            - name: 일반적으로 프로젝트를 확장하는 데 사용되는 개체에 대한 CATID
+              href: catids-for-objects-that-are-typically-used-to-extend-projects.md
+        - name: 프로젝트 항목 열기 및 저장
+          href: opening-and-saving-project-items.md
+          items:
+            - name: 파일 열기 명령을 사용하여 파일 표시
+              href: displaying-files-by-using-the-open-file-command.md
+            - name: 연결 프로그램 명령을 사용하여 파일 표시
+              href: displaying-files-by-using-the-open-with-command.md
+            - name: 표준 문서 저장
+              href: saving-a-standard-document.md
+            - name: 사용자 지정 문서 저장
+              href: saving-a-custom-document.md
+            - name: 프로젝트에서 파일을 여는 편집기 결정
+              href: determining-which-editor-opens-a-file-in-a-project.md
+        - name: 구성 옵션 관리
+          href: managing-configuration-options.md
+          items:
+            - name: 개요
+              href: configuration-options-overview.md
+            - name: 속성 페이지
+              href: property-pages.md
+            - name: 솔루션 구성
+              href: solution-configuration.md
+            - name: 프로젝트 구성 개체
+              href: project-configuration-object.md
+            - name: 빌드를 위한 프로젝트 구성
+              href: project-configuration-for-building.md
+            - name: 배포 관리를 위한 프로젝트 구성
+              href: project-configuration-for-managing-deployment.md
+            - name: 출력에 대한 프로젝트 구성
+              href: project-configuration-for-output.md
+        - name: 소스 제어 지원
+          href: supporting-source-control.md
+          items:
+            - name: 소스 제어 패키지 모델
+              href: model-for-source-control-packages.md
+            - name: 디자인 결정
+              href: source-control-design-decisions.md
+            - name: 구성 세부 정보
+              href: source-control-configuration-details.md
+            - name: 프로젝트 및 편집기에 대한 추가 지침
+              href: additional-source-control-guidelines-for-projects-and-editors.md
+            - name: 런타임 세부 정보
+              href: source-control-runtime-details.md
+        - name: 프로젝트 중첩
+          href: nesting-projects.md
+          items:
+            - name: '방법: 중첩된 프로젝트 구현'
+              href: how-to-implement-nested-projects.md
+            - name: 중첩된 프로젝트 언로드 및 다시 로드에 대한 고려 사항
+              href: considerations-for-unloading-and-reloading-nested-projects.md
+            - name: 중첩된 프로젝트에 대한 마법사 지원
+              href: wizard-support-for-nested-projects.md
+            - name: 중첩된 프로젝트에 대한 명령 처리 구현
+              href: implementing-command-handling-for-nested-projects.md
+            - name: 중첩된 프로젝트에 대한 AddItem 필터링 대화 상자
+              href: filtering-the-additem-dialog-box-for-nested-projects.md
+        - name: 프로젝트 업그레이드
+          href: upgrading-projects.md
+        - name: 아키텍처
+          href: project-types-architecture.md
+          items:
+            - name: 프로젝트 모델의 요소
+              href: elements-of-a-project-model.md
+            - name: 프로젝트 모델 핵심 구성 요소
+              href: project-model-core-components.md
+            - name: 프로젝트 형식을 만들어야 하는 경우
+              href: when-to-create-project-types.md
+            - name: 계층 구조 및 선택
+              href: hierarchies-and-selection.md
+              items:
+                - name: Visual Studio의 계층 구조
+                  href: hierarchies-in-visual-studio.md
+                - name: IDE의 선택 및 통화
+                  href: selection-and-currency-in-the-ide.md
+                - name: 선택 컨텍스트 개체
+                  href: selection-context-objects.md
+                - name: 사용자에 대한 피드백
+                  href: feedback-to-the-user.md
+    - name: 프로젝트 하위 형식
+      href: project-subtypes.md
+      items:
+        - name: 프로젝트 하위 형식 디자인
+          href: project-subtypes-design.md
+        - name: 프로젝트 하위 형식의 초기화 시퀀스
+          href: initialization-sequence-of-project-subtypes.md
+        - name: 프로젝트 하위 형식에 의해 확장된 속성 및 메서드
+          href: properties-and-methods-extended-by-project-subtypes.md
+        - name: MSBuild 프로젝트 파일의 데이터 유지
+          href: persisting-data-in-the-msbuild-project-file.md
+        - name: 프로젝트 속성 사용자 인터페이스
+          href: project-property-user-interface.md
+        - name: 기본 프로젝트의 개체 모델 확장
+          href: extending-the-object-model-of-the-base-project.md
+        - name: 새 항목 추가 대화 상자에 적용
+          href: contributing-to-the-add-new-item-dialog-box.md
+    - name: 웹 프로젝트
+      href: web-projects.md
+      items:
+        - name: 기본 정보
+          href: web-project-essentials.md
+        - name: 웹 사이트 지원
+          href: web-site-support.md
+          items:
+            - name: 웹 사이트 지원 템플릿
+              href: web-site-support-templates.md
+            - name: 웹 사이트 지원 특성
+              href: web-site-support-attributes.md
+    - name: 특수 배포 처리
+      href: handling-specialized-deployment.md
+    - name: Contributing to the Automation Model
+      href: contributing-to-the-automation-model.md
+      items:
+        - name: 자동화 모델 개요
+          href: automation-model-overview.md
+        - name: VSPackage에 대한 자동화 제공
+          href: providing-automation-for-vspackages.md
+        - name: 프로젝트 개체 노출
+          href: exposing-project-objects.md
+        - name: 프로젝트 모델링
+          href: project-modeling.md
+        - name: 이벤트 노출
+          href: exposing-events-in-the-visual-studio-sdk.md
+        - name: 옵션 페이지의 자동화 지원
+          href: automation-support-for-options-pages.md
+        - name: 코드에 대한 자동화 제공
+          href: providing-automation-for-code.md
+        - name: '방법: Windows에 대한 자동화 제공'
+          href: how-to-provide-automation-for-windows.md
+        - name: 자동화 모델 사용
+          href: using-the-automation-model.md
+        - name: 구성 SelectedItem 개체 자동화
+          href: automation-for-configuration-and-selecteditem-objects.md
+- name: 솔루션
+  href: solutions.md
+  items:
+    - name: 개요
+      href: solutions-overview.md
+    - name: 솔루션(.Sln) 파일
+      href: solution-dot-sln-file.md
+    - name: 솔루션 사용자 옵션(.Suo) 파일
+      href: solution-user-options-dot-suo-file.md
+- name: 속성 확장
+  href: extending-properties.md
+  items:
+    - name: 속성 창 개요
+      href: properties-window-overview.md
+    - name: 템플릿 정책 및 속성 창
+      href: template-policy-and-the-properties-window.md
+    - name: Properties Window Fields and Interfaces
+      href: properties-window-fields-and-interfaces.md
+    - name: 속성 창 개요 목록
+      href: properties-window-object-list.md
+    - name: 속성 창 단추
+      href: properties-window-buttons.md
+    - name: 속성 표시 그리드
+      href: properties-display-grid.md
+    - name: 프로젝트 및 구성 속성 지원
+      href: support-for-project-and-configuration-properties.md
+- name: 옵션 및 옵션 페이지
+  href: options-and-options-pages.md
+  items:
+    - name: 옵션 페이지 만들기
+      href: creating-options-pages.md
+- name: 서비스 필수 항목
+  href: service-essentials.md
+  items:
+    - name: 사용 가능한 서비스 목록
+      href: list-of-available-services.md
+- name: Visual Studio 디버거 확장성
+  href: ../debugger/visual-studio-debugger-extensibility.md
+- name: 소스 제어
+  href: source-control.md
+  items:
+    - name: 기본 정보
+      href: source-control-integration-essentials.md
+    - name: 개요
+      href: source-control-integration-overview.md
+      items:
+        - name: 소스 제어의 새로운 기능
+          href: what-s-new-in-source-control.md
+    - name: 소스 제어 플러그 인 만들기
+      href: creating-a-source-control-plug-in.md
+      items:
+        - name: 시작하기
+          href: getting-started-with-source-control-plug-ins.md
+          items:
+            - name: '방법: 소스 제어 플러그 인 설치'
+              href: how-to-install-a-source-control-plug-in.md
+            - name: 소스 제어 플러그 인 API 버전 1.3의 새로운 기능
+              href: what-s-new-in-the-source-control-plug-in-api-version-1-3.md
+            - name: 소스 제어 플러그 인 API 버전 1.2의 새로운 기능
+              href: what-s-new-in-the-source-control-plug-in-api-version-1-2.md
+              items:
+                - name: ~SAK 파일 제거
+                  href: elimination-of-tilde-sak-files.md
+                - name: 여러 프로젝트 연결 간 설정 적용
+                  href: application-of-settings-across-multiple-project-connections.md
+                - name: 솔루션에 대한 부모 컨테이너 폴더 만들기
+                  href: creating-parent-container-folders-for-solutions.md
+                - name: 로컬 프로젝트 폴더와 소스 제어 저장소의 선택적 비교
+                  href: optional-comparison-of-local-project-folder-to-source-control-store.md
+                - name: .Proj 및 .Sln 파일에서 소스 제어 정보 제거
+                  href: removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md
+        - name: 아키텍처
+          href: source-control-plug-in-architecture.md
+        - name: 소스 제어 플러그 인에 대한 테스트 가이드
+          href: test-guide-for-source-control-plug-ins.md
+          items:
+            - name: '테스트 영역 1: 소스 제어에 추가/소스 제어에서 열기'
+              href: test-area-1-add-to-open-from-source-control.md
+            - name: '테스트 영역 2: 소스 제어에서 가져오기'
+              href: test-area-2-get-from-source-control.md
+            - name: '테스트 영역 3: 체크 아웃/체크 아웃 실행 취소'
+              href: test-area-3-check-out-undo-checkout.md
+            - name: '테스트 영역 4: 체크 인'
+              href: test-area-4-check-in.md
+            - name: '테스트 영역 5: 소스 제어 변경'
+              href: test-area-5-change-source-control.md
+            - name: '테스트 영역 6: 삭제'
+              href: test-area-6-delete.md
+            - name: '테스트 영역 7: 공유'
+              href: test-area-7-share.md
+            - name: '테스트 영역 8: 플러그 인 전환'
+              href: test-area-8-plug-in-switching.md
+    - name: 소스 제어 VSPackage 만들기
+      href: creating-a-source-control-vspackage.md
+      items:
+        - name: 시작하기
+          href: getting-started-with-source-control-vspackages.md
+          items:
+            - name: 소스 제어 VSPackage를 구현할지 여부 결정
+              href: determining-whether-to-implement-a-source-control-vspackage.md
+        - name: 아키텍처
+          href: source-control-vspackage-architecture.md
+        - name: 기능
+          href: source-control-vspackage-features.md
+          items:
+            - name: 등록 및 선택 영역
+              href: registration-and-selection-source-control-vspackage.md
+            - name: 쿼리 편집 쿼리 저장
+              href: query-edit-query-save-source-control-vspackage.md
+            - name: 문자 모양 제어
+              href: glyph-control-source-control-vspackage.md
+            - name: 사용자 지정 사용자 인터페이스
+              href: custom-user-interface-source-control-vspackage.md
+        - name: 디자인 요소
+          href: source-control-vspackage-design-elements.md
+          items:
+            - name: VSPackage 구조체
+              href: vspackage-structure-source-control-vspackage.md
+            - name: 관련 서비스 및 인터페이스
+              href: related-services-and-interfaces-source-control-vspackage.md
+            - name: 제공된 서비스
+              href: services-provided-source-control-vspackage.md
+- name: 마법사
+  href: wizards.md
+  items:
+    - name: 템플릿 디렉터리 설명(.Vsdir) 파일
+      href: template-directory-description-dot-vsdir-files.md
+    - name: 마법사(.Vsz) 파일
+      href: wizard-dot-vsz-file.md
+    - name: 마법사 인터페이스(IDTWizard)
+      href: wizard-interface-idtwizard.md
+    - name: 컨텍스트 매개 변수
+      href: context-parameters.md
+    - name: 사용자 지정 매개 변수
+      href: custom-parameters.md
+- name: 사용자 지정 도구
+  href: custom-tools.md
+  items:
+    - name: 단일 파일 생성기 구현
+      href: implementing-single-file-generators.md
+    - name: 단일 파일 생성기 등록
+      href: registering-single-file-generators.md
+    - name: 비주얼 디자이너에 형식 노출
+      href: exposing-types-to-visual-designers.md
+- name: VSSDK 유틸리티
+  href: vssdk-utilities.md
+  items:
+    - name: RegPkg 유틸리티
+      href: regpkg-utility.md
+      items:
+        - name: RegPkg 패키지 등록 문제 해결
+          href: troubleshooting-regpkg-package-registration.md
+    - name: CreatePkgDef 유틸리티
+      href: createpkgdef-utility.md
+    - name: CreateExpInstance 유틸리티
+      href: createexpinstance-utility.md
+    - name: 색 테마 도구
+      href: color-theming-tools.md
+      items:
+        - name: VSIX 색 편집기
+          href: vsix-color-editor.md
+        - name: VSIX 색 컴파일러
+          href: vsix-color-compiler.md
+    - name: 이미지 서비스 도구
+      href: image-service-tools.md
+      items:
+        - name: Manifest from Resources
+          href: manifest-from-resources.md
+        - name: Manifest to Code
+          href: manifest-to-code.md
+        - name: 이미지 라이브러리 뷰어
+          href: image-library-viewer.md
+- name: Windows Installer를 사용하여 VSPackage 설치
+  href: installing-vspackages-with-windows-installer.md
+  items:
+    - name: Windows Installer 기본 사항
+      href: windows-installer-basics.md
+    - name: VSPackage 설치 시나리오
+      href: vspackage-setup-scenarios.md
+    - name: Windows Installer 패키지 작성
+      href: authoring-a-windows-installer-package.md
+    - name: 시스템 요구 사항 검색
+      href: detecting-system-requirements.md
+    - name: 구성 요소 관리
+      href: component-management.md
+    - name: VSPackage용 설치 디렉터리 선택
+      href: choosing-the-installation-directory-for-a-vspackage.md
+    - name: VSPackage 등록
+      href: vspackage-registration.md
+    - name: 프로젝트 형식 배포
+      href: deploying-project-types.md
+    - name: '방법: 설치 관리자에 대한 레지스트리 정보 생성'
+      href: how-to-generate-registry-information-for-an-installer.md
+    - name: 설치 후 실행해야 하는 명령
+      href: commands-that-must-be-run-after-installation.md
+    - name: Windows Installer를 사용하여 VSPackage 제거
+      href: uninstalling-a-vspackage-with-windows-installer.md

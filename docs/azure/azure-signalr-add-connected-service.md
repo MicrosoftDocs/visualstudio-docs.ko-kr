@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 0e44416bd6a55796b62a7590856caab8466a6401
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643253"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Visual Studio 연결된 서비스를 사용 하 여 Azure SignalR 추가
@@ -34,7 +34,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 - Azure 워크 로드가 설치 된 Visual Studio
 - 지원 되는 형식 중 하나에 해당 하는 프로젝트
@@ -83,7 +83,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
    ![서비스 종속성](./media/azure-signalr-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Azure SignalR 제품 페이지](https://azure.microsoft.com/services/signalr-service/)
 - [Azure SignalR Service 설명서](/azure/azure-signalr)

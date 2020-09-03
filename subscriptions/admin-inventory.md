@@ -8,10 +8,10 @@ ms.date: 03/06/2020
 ms.topic: conceptual
 description: 관리자의 사전 프로덕션 인벤토리 수행 책임에 대해 알아봅니다.
 ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232765"
 ---
 # <a name="inventory-of-pre-production-environment"></a>사전 프로덕션 환경의 파악

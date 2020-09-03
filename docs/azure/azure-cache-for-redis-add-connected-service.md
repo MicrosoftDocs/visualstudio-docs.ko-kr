@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643278"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Visual Studio 연결된 서비스를 사용 하 여 Redis 용 Azure Cache를 추가 합니다.
@@ -34,7 +34,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 - Azure 워크 로드가 설치 된 Visual Studio
 - 지원 되는 형식 중 하나에 해당 하는 프로젝트
@@ -51,7 +51,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
 1. **종속성 추가** 페이지에서 **Redis 용 Azure Cache**를 선택 합니다.
 
-    ![Redis에 대 한 Azure Cache 추가](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
+    ![Azure Cache for Redis 추가](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
     아직 로그인 하지 않은 경우 Azure 계정에 로그인 합니다. Azure 계정이 없으면 [무료 평가판](https://azure.microsoft.com/account/free)에 등록할 수 있습니다.
 
@@ -83,7 +83,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
    ![서비스 종속성](./media/azure-redis-cache-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Redis 용 Azure 캐시 제품 페이지](https://azure.microsoft.com/services/cache)
 - [Azure Cache for Redis 설명서](/azure/azure-cache-for-redis/)

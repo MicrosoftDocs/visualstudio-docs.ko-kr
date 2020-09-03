@@ -1,0 +1,142 @@
+- name: '''{''가 필요합니다.'
+  href: expected-left-curly-brace.md
+- name: '식별자, 문자열 또는 숫자가 필요합니다.'
+  href: expected-identifier-string-or-number.md
+- name: 함수가 필요합니다.
+  href: function-expected.md
+- name: VBArray가 필요합니다.
+  href: vbarray-expected.md
+- name: '''catch''가 필요합니다.'
+  href: expected-catch.md
+- name: 함수 결과에 할당할 수 없습니다.
+  href: cannot-assign-to-a-function-result.md
+- name: 구문 오류(JavaScript)
+  href: syntax-error-javascript.md
+- name: 정규식 개체가 필요합니다.
+  href: regular-expression-object-expected.md
+- name: False(Windows Script Technologies)
+  href: false-windows-script-technologies.md
+- name: '''}''가 필요합니다.'
+  href: expected-right-curly-brace.md
+- name: Enumerator 개체가 필요합니다.
+  href: enumerator-object-expected.md
+- name: 소수 자릿수가 범위를 벗어납니다.
+  href: the-number-of-fractional-digits-is-out-of-range.md
+- name: Date 개체가 필요합니다.
+  href: date-object-expected.md
+- name: 종결되지 않은 주석입니다.
+  href: unterminated-comment.md
+- name: 루프 외부에서 'continue'를 사용할 수 없습니다.
+  href: can-t-have-continue-outside-of-loop.md
+- name: JavaScript 개체가 필요합니다.
+  href: javascript-object-expected.md
+- name: ''':''이 필요합니다.'
+  href: expected-colon.md
+- name: 배열의 길이는 유한한 양수로 할당해야 합니다.
+  href: array-length-must-be-assigned-a-finite-positive-number.md
+- name: ‘@end’가 필요합니다.
+  href: expected-at-end.md
+- name: 숫자가 잘못되었습니다.
+  href: invalid-number.md
+- name: 정밀도가 범위를 벗어납니다.
+  href: the-precision-is-out-of-range.md
+- name: 예기치 않은 수량자입니다.(JavaScript)
+  href: unexpected-quantifier-javascript.md
+- name: '''this''에 할당할 수 없습니다.'
+  href: cannot-assign-to-this.md
+- name: 함수에 올바른 프로토타입 개체가 없습니다.
+  href: function-does-not-have-a-valid-prototype-object.md
+- name: setter 함수는 하나의 인수를 사용해야 합니다.
+  href: setter-functions-must-have-one-argument.md
+- name: 잘못된 문자입니다.(JavaScript)
+  href: invalid-character-javascript.md
+- name: 예외가 throw되고 catch되지 않았습니다.
+  href: exception-thrown-and-not-caught.md
+- name: 숫자가 필요합니다.
+  href: number-expected.md
+- name: 식별자에 대해 다음에 사용하기 위한 예약어를 잘못 사용했습니다.
+  href: the-use-of-a-future-reserved-word-for-an-identifier-is-invalid.md
+- name: 같은 소스 줄에서 throw 뒤에는 식이 와야 합니다.
+  href: throw-must-be-followed-by-an-expression-on-the-same-source-line.md
+- name: 잘못된 할당입니다.(JavaScript)
+  href: illegal-assignment-javascript.md
+- name: '''default''는 ''switch'' 문에 한 번만 사용할 수 있습니다.'
+  href: default-can-only-appear-once-in-a-switch-statement.md
+- name: '''=''가 필요합니다.(JavaScript)'
+  href: expected-equal-javascript.md
+- name: 인코딩할 URI에 잘못된 문자가 들어 있습니다.
+  href: the-uri-to-be-encoded-contains-an-invalid-character.md
+- name: ‘-’가 필요합니다.
+  href: expected-minus.md
+- name: 문자 집합의 범위가 잘못되었습니다.(JavaScript)
+  href: invalid-range-in-character-set-javascript.md
+- name: 식별자가 필요합니다.(JavaScript)
+  href: expected-identifier-javascript.md
+- name: 상수가 필요합니다.
+  href: expected-constant.md
+- name: 식별자가 정의되지 않았습니다.
+  href: undefined-identifier.md
+- name: 액세스 거부됨
+  href: access-is-denied.md
+- name: '‘\]’가 필요합니다.'
+  href: expected-right-square-bracket.md
+- name: '''while''이 필요합니다.'
+  href: expected-while.md
+- name: '''@''가 필요합니다.'
+  href: expected-at.md
+- name: 레이블이 다시 정의되었습니다.
+  href: label-redefined.md
+- name: 레이블을 찾을 수 없습니다.
+  href: label-not-found.md
+- name: 정규식에 구문 오류가 있습니다.(JavaScript)
+  href: syntax-error-in-regular-expression-javascript.md
+- name: '''(''가 필요합니다.(JavaScript)'
+  href: expected-left-parenthesis-javascript.md
+- name: 16진수가 필요합니다.
+  href: expected-hexadecimal-digit.md
+- name: 개체가 필요합니다.
+  href: object-expected.md
+- name: 값 인수에 순환 참조를 사용하는 것은 지원되지 않습니다.
+  href: circular-reference-in-value-argument-not-supported.md
+- name: 조건부 컴파일이 해제되었습니다.
+  href: conditional-compilation-is-turned-off.md
+- name: '''var''이 필요합니다.'
+  href: expected-var.md
+- name: 종결되지 않은 문자열 상수입니다.(JavaScript)
+  href: unterminated-string-constant-javascript.md
+- name: 문자열이 필요합니다.
+  href: string-expected.md
+- name: 치환 인수가 잘못되었습니다.
+  href: invalid-replacer-argument.md
+- name: '''with''는 ECMA 327 Compact Profile에서 사용할 수 없습니다.'
+  href: with-not-available-in-the-ecma-327-compact-profile.md
+- name: 연산자 개요(JavaScript)
+  href: operator-subtractsummary-javascript.md
+- name: 개체 멤버가 필요합니다.
+  href: object-member-expected.md
+- name: True 키워드
+  href: true-keyword.md
+- name: 개체에서 이 속성 또는 메서드를 지원하지 않음
+  href: object-doesn-t-support-this-property-or-method.md
+- name: 부울이 필요합니다.
+  href: boolean-expected.md
+- name: ''';''이 필요합니다.'
+  href: expected-semicolon.md
+- name: ''')''가 필요합니다.(JavaScript)'
+  href: expected-right-parenthesis-javascript.md
+- name: Array 또는 Arguments 개체가 필요합니다.
+  href: array-or-arguments-object-expected.md
+- name: 정규식에 ')'가 필요합니다.(JavaScript)
+  href: expected-right-parenthesis-in-regular-expression-javascript.md
+- name: '정규식에 ‘\]’가 필요합니다.(JavaScript)'
+  href: expected-right-square-bracket-in-regular-expression-javascript.md
+- name: 배열 길이는 유한 양의 정수여야 합니다.
+  href: array-length-must-be-a-finite-positive-integer.md
+- name: 루프 외부에서 'break'를 사용할 수 없습니다.
+  href: can-t-have-break-outside-of-loop.md
+- name: 식별자에 대해 키워드를 잘못 사용했습니다.
+  href: the-use-of-a-keyword-for-an-identifier-is-invalid.md
+- name: 함수 외부에 'return' 문이 있습니다.
+  href: return-statement-outside-of-function.md
+- name: 디코딩할 URI가 올바른 인코딩이 아닙니다.
+  href: the-uri-to-be-decoded-is-not-a-valid-encoding.md

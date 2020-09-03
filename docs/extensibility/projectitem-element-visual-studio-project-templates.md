@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770303"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 요소 (Visual Studio 프로젝트 템플릿)
@@ -53,7 +53,7 @@ ms.locfileid: "85770303"
 | 특성 | 설명 |
 |---------------------| - |
 | `TargetFileName` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 프로젝트 항목의 이름과 경로를 지정 합니다. 이 특성은 템플릿 *.zip* 파일의 디렉터리 구조와 다른 디렉터리 구조를 만들거나 매개 변수 대체를 사용 하 여 항목 이름을 만드는 데 유용 합니다. |
-| `ReplaceParameters` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때이 항목에 대체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`입니다. |
+| `ReplaceParameters` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때이 항목에 대체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다. |
 | `OpenInEditor` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 해당 편집기에서 항목을 열어야 하는지 여부를 지정 하는 부울 값입니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .<br /><br /> `OpenInWebBrowser`및 `OpenInHelpBrowser` 특성은 값이 인 항목에서 무시 됩니다 `OpenInEditor` `true` .<br /><br /> 기본값은 `false`입니다. |
 | `OpenInWebBrowser` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 해당 항목을 웹 브라우저에서 열지 여부를 지정 하는 부울 값입니다.<br /><br /> 프로젝트에 로컬인 HTML 파일 및 텍스트 파일만 웹 브라우저에서 열 수 있습니다. 이 특성을 사용 하 여 외부 Url을 열 수 없습니다.<br /><br /> 기본값은 `false`입니다. |
 | `OpenInHelpBrowser` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 도움말 뷰어에서 항목을 열어야 하는지 여부를 지정 하는 부울 값입니다.<br /><br /> 프로젝트에 로컬인 HTML 파일 및 텍스트 파일만 도움말 브라우저에서 열 수 있습니다. 이 특성을 사용 하 여 외부 Url을 열 수 없습니다.<br /><br /> 기본값은 `false`입니다. |
@@ -74,7 +74,7 @@ ms.locfileid: "85770303"
  `string`템플릿 *.zip* 파일에 있는 파일의 이름 또는 경로를 나타내는입니다.
 
 ## <a name="remarks"></a>설명
- `ProjectItem`은의 선택적 자식 요소입니다 `Project` .
+ `ProjectItem` 은의 선택적 자식 요소입니다 `Project` .
 
  `TargetFileName`특성을 사용 하 여 template *.zip* 파일의 디렉터리 구조와 다른 디렉터리 구조를 만들 수 있습니다. 예를 *들어 파일을* 파일의 루트에 있는 경우에는 파일을 템플릿에서 *만든* 모든 프로젝트에서 *customfiles* 라는 디렉터리에 배치 하려는 경우에는 다음 XML을 사용 합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "85770303"
 
     이 템플릿에서 프로젝트가 생성 되 면 파일 이름은 사용자가 **새 프로젝트** 대화 상자에서 입력 한 이름에 따라 모든 안전 하지 않은 문자 및 공백이 제거 됩니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```
