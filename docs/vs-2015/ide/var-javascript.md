@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f72b403d4c6c9cc71bc2a3fdbff8f778a44b3b55
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663070"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt;(JavaScript)
@@ -60,7 +60,7 @@ ms.locfileid: "72663070"
 
   `helpKeyword` 선택 사항입니다. F1 도움말의 키워드입니다.
 
-  `locid` 선택 사항입니다. 변수에 대한 지역화 정보의 식별자입니다. 식별자는 멤버 ID이거나 OpenAjax 메타데이터에 의해 정의된 메시지 번들의 `name` 속성 값에 해당합니다. 식별자 유형은 [\<loc>](../ide/loc-javascript.md) 태그에 지정된 형식에 따라 달라집니다.
+  `locid` 선택 사항입니다. 변수에 대한 지역화 정보의 식별자입니다. 식별자는 멤버 ID이거나 OpenAjax 메타데이터에 의해 정의된 메시지 번들의 `name` 속성 값에 해당합니다. 식별자 형식은 태그에 지정 된 형식에 따라 달라 집니다 [\<loc>](../ide/loc-javascript.md) .
 
   `description` 선택 사항입니다. 변수에 대한 설명입니다.
 
@@ -81,5 +81,5 @@ var Rectangle = {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [XML 문서 주석](../ide/xml-documentation-comments-javascript.md)

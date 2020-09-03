@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ab31b9a3b5ee17240e0dd29a99675cf87739056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663142"
 ---
 # <a name="startup-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 시작
@@ -23,5 +23,5 @@ ms.locfileid: "72663142"
 
 이 페이지를 사용하여 Visual Studio가 시작될 때의 Visual Studio 시작 페이지를 사용자 지정하거나 다른 기본 동작을 설정합니다. 자세한 내용은 [시작 페이지 사용자 지정](../../ide/customizing-the-start-page-for-visual-studio.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>관련 항목
+ [환경 옵션 대화 상자](../../ide/reference/environment-options-dialog-box.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6895abd85a4394e4ddcaebcd6f09bc0a39936cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663024"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Visual Basic 관련 IntelliSense
@@ -40,7 +40,7 @@ Visual Basic 소스 코드 편집기는 다음과 같은 IntelliSense 기능을 
 
   **Visual Basic** 폴더의 **일반** 속성 페이지에서 **멤버 목록 자동 표시**의 선택을 해제하여 완료를 기본적으로 끌 수 있습니다.
 
-  멤버 목록, 단어 자동 완성 또는 ALT+오른쪽 화살표를 호출하여 완료를 수동으로 실행할 수 있습니다. 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.
+  멤버 목록, 단어 자동 완성 또는 ALT+오른쪽 화살표를 호출하여 완료를 수동으로 실행할 수 있습니다. 자세한 내용은 [Using IntelliSense](../ide/using-intellisense.md)을 참조하세요.
 
 ## <a name="intellisense-in-zone"></a>영역 내 IntelliSense
  영역 내 IntelliSense는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]를 통해 애플리케이션을 배포해야 하는 Visual Basic 개발자에게 도움을 주며 부분 신뢰 설정으로 제한됩니다. 이 기능:
@@ -51,5 +51,5 @@ Visual Basic 소스 코드 편집기는 다음과 같은 IntelliSense 기능을 
 
   자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [IntelliSense 사용](../ide/using-intellisense.md)

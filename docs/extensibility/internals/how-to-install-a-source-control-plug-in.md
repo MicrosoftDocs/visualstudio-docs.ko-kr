@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905357"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>방법: 소스 제어 플러그 인 설치
@@ -28,7 +28,7 @@ ms.locfileid: "85905357"
 3. 적절 한 레지스트리 항목을 만들어 DLL을 등록 합니다.
 
 ## <a name="integration-with-visual-studio"></a>Visual Studio와의 통합
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]소스 제어 플러그 인 API를 준수 하는 소스 제어 플러그 인을 지원 합니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 플러그 인 API를 준수 하는 소스 제어 플러그 인을 지원 합니다.
 
 ### <a name="register-the-source-control-plug-in"></a>소스 제어 플러그 인 등록
  실행 중인 IDE (통합 개발 환경)에서 소스 제어 시스템으로 호출할 수 있으려면 먼저 API를 내보내는 소스 제어 플러그 인 DLL을 찾아야 합니다.
@@ -79,7 +79,7 @@ ms.locfileid: "85905357"
 
     이 항목의 이름은 사용자가 읽을 수 있는 공급자 이름 (SCCServerName 항목에 대해 지정 된 값과 동일)이 고 값은 1 단계에서 만든 하위 키입니다. 패턴은 **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders \\<표시 이름 \> **  =  *소프트웨어 \\<회사 이름 \> \\<제품 이름 \> *입니다.
 
-    예를 들어:
+    예를 들면 다음과 같습니다.
 
    |샘플 레지스트리 항목|샘플 값|
    |---------------------------|------------------|
@@ -116,5 +116,5 @@ ms.locfileid: "85905357"
 
  이러한 두 조건이 모두 충족 되 면 버전 1.2 및 1.3에서 지원 되는 새 함수를 호출할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [원본 제어 플러그 인 시작](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

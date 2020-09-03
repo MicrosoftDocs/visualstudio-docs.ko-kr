@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586976"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트
@@ -27,7 +27,7 @@ SharePoint 애플리케이션에 코딩된 UI 테스트를 포함하면 해당 U
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>코딩된 UI 테스트에 대해 그 밖에 알아야 할 내용
  코딩된 UI 테스트를 사용할 때의 이점에 대한 자세한 내용은 [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) 및 [Visual Studio 2012를 사용한 연속 배달 테스트 – 5장 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)를 참조하세요.
 
- **참고 사항**
+ **참고**
 
 - ![Prereq](../test/media/prereq.png "필수 구성 요소") SharePoint 응용 프로그램에 대 한 코딩 된 UI 테스트는 SharePoint 2010 에서만 지원 됩니다.
 
@@ -53,14 +53,14 @@ SharePoint 애플리케이션에 코딩된 UI 테스트를 포함하면 해당 U
 > [!WARNING]
 > 화살표 작업 후 Excel 셀에 텍스트를 입력하는 작업은 올바르게 기록되지 않습니다. 마우스를 사용해서 셀을 선택하세요.
 
- 빈 셀에 대한 작업을 기록할 때는 셀을 두 번 클릭하고 텍스트 설정 작업을 수행하여 코드를 수정해야 합니다. 셀을 클릭하고 키보드 작업을 수행하면 셀 내에서 `textarea` 가 활성화되기 때문에 이 작업이 필요합니다. 빈 셀에서 단순히 `setvalue` 를 기록하면 셀을 클릭할 때까지 제공되지 않은 `editbox` 가 검색됩니다. 다음은 그 예입니다. 
+ 빈 셀에 대한 작업을 기록할 때는 셀을 두 번 클릭하고 텍스트 설정 작업을 수행하여 코드를 수정해야 합니다. 셀을 클릭하고 키보드 작업을 수행하면 셀 내에서 `textarea` 가 활성화되기 때문에 이 작업이 필요합니다. 빈 셀에서 단순히 `setvalue` 를 기록하면 셀을 클릭할 때까지 제공되지 않은 `editbox` 가 검색됩니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- 비어 있지 않은 셀에서 작업을 기록할 때는 셀에 텍스트를 입력하는 순간 셀의 자식으로 새로운 \<div> 컨트롤이 추가되기 때문에 기록이 조금 더 복잡해집니다. 새로운 \<div> 컨트롤에는 사용자가 방금 입력한 텍스트가 포함됩니다. 레코더는 새로운 \<div> 컨트롤에서 작업을 기록해야 하지만 테스트를 입력할 때까지는 새로운 \<div> 컨트롤이 존재하지 않기 때문에 그렇게 할 수 없습니다. 이 문제를 해결하기 위해서는 다음과 같이 코드를 직접 변경해야 합니다.
+ 비어 있지 않은 셀에 대 한 작업을 기록 하는 경우 셀에 텍스트를 추가 하는 순간 \<div> 셀의 자식으로 새 컨트롤이 추가 되기 때문에 기록이 조금 더 복잡해 집니다. 새 컨트롤에는 \<div> 방금 입력 한 텍스트가 포함 됩니다. 레코더는 새 컨트롤에 대 한 작업을 기록해 야 \<div> 하지만 \<div> 테스트를 입력할 때까지 새 컨트롤이 존재 하지 않기 때문에이 작업을 수행할 수 없습니다. 이 문제를 해결하기 위해서는 다음과 같이 코드를 직접 변경해야 합니다.
 
 1. 셀 초기화로 이동하고 `RowIndex` 및 `ColumnIndex` 를 주 속성으로 지정합니다.
 
@@ -143,5 +143,5 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>포럼
  [Visual Studio ALM + Team Foundation Server 블로그](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) [웹 성능 테스트 및 부하 테스트 sharepoint 2010 및 2013 응용 프로그램](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [sharepoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [코드 확인 및 디버깅](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) sharepoint [솔루션 빌드 및 디버깅 Sharepoint 솔루션 빌드 및 디버깅](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) sharepoint [응용 프로그램의 성능 프로 파일링](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

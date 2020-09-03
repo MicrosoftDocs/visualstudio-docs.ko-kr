@@ -1,5 +1,5 @@
 ---
-title: IEE비주얼라이저데이터제공자:캔셋오브젝트포비주얼라이저 | 마이크로 소프트 문서
+title: 'IEEVisualizerDataProvider:: CanSetObjectForVisualizer 도우미 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c4d3c190195360d37c15be12cef2790610928a95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718137"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
-이 메서드는 시각화 도우미가 업데이트 나타내는 데이터 개체를 가질 수 있는지 여부를 결정합니다.
+이 메서드는 시각화 도우미가 업데이트를 나타내는 데이터 개체를 가질 수 있는지 여부를 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int CanSetObjectForVisualizer(
 
 ## <a name="parameters"></a>매개 변수
 `b`\
-【아웃】 Nonzero`TRUE`() 시각화 도우미의 개체를 업데이트할`FALSE`수 있는 경우 0 () 할 수 없는 경우.
+제한이 `TRUE`시각화 도우미의 개체를 업데이트할 수 있는 경우 0이 아닌 값이 고, 그렇지 않으면 0 ( `FALSE` )입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  예를 들어 읽기 전용 메모리에 바인딩된 개체는 변경할 수 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

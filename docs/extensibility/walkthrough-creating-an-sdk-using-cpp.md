@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15fa0714097efda31b52f1d389d3a26cf581e506
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905006"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>연습: c + +를 사용 하 여 SDK 만들기
@@ -24,10 +24,10 @@ ms.locfileid: "85905006"
 
 - [클래스 라이브러리를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
-## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>네이티브 및 Windows 런타임 라이브러리를 만들려면
+## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> 네이티브 및 Windows 런타임 라이브러리를 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "85905006"
 
 9. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
 
-## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a>NativeMathVSIX 확장 프로젝트를 만들려면
+## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> NativeMathVSIX 확장 프로젝트를 만들려면
 
 1. **솔루션 탐색기**에서 **' NativeMath ' 솔루션**에 대 한 바로 가기 메뉴를 열고 **Add**  >  **새 프로젝트**추가를 선택 합니다.
 
@@ -137,7 +137,7 @@ ms.locfileid: "85905006"
 
 18. **설치** 단추를 선택 하 고 설치가 완료 될 때까지 기다린 후 Visual Studio를 엽니다.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>클래스 라이브러리를 사용 하는 샘플 앱을 만들려면
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> 클래스 라이브러리를 사용 하는 샘플 앱을 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 

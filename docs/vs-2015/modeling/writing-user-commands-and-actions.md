@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1042a1ee21a288f0e74dc881109b65a331b53c94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662998"
 ---
 # <a name="writing-user-commands-and-actions"></a>사용자 명령 및 작업 작성
@@ -37,5 +37,5 @@ ms.locfileid: "72662998"
 
 - [요소 도구 사용자 지정](../modeling/customizing-element-tools.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)

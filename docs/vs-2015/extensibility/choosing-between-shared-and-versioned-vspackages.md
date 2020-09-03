@@ -1,5 +1,5 @@
 ---
-title: 공유 및 버전 관리 Vspackage 중에서 선택 | Microsoft Docs
+title: 공유 및 버전 관리 Vspackage 중에서 선택 Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,55 +13,55 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821971"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>공유 및 버전 관리 VSPackage 중에서 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-다른 버전의 Visual Studio는 동일한 컴퓨터에 공존할 수 있습니다. Vspackage의 혼합을 지원할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전입니다.  
+서로 다른 버전의 Visual Studio가 동일한 컴퓨터에 공존할 수 있습니다. Vspackage는 모든 혼합 버전을 지원할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- 두 가지 전략, 공유 전략 또는 버전이 있는 전략 중 하나를 통해 Vspackage의 side-by-side-설치를 사용할 수 있습니다. 여러 버전의 현재 상태를 수용 하는 둘 다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전의 연결을 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ 두 가지 전략, 즉 공유 전략 또는 버전이 지정 된 전략 중 하나를 통해 Vspackage의 병렬 설치를 사용 하도록 설정할 수 있습니다. 둘 다의 및 관련 버전의가 있는지를 수용 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
- 공유 전략의 여러 버전에서 사용 하기 위해 하나의 VSPackage 등록 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 버전 관리 전략의 여러 VSPackage Dll이 설치의 각 버전에 대해 하나씩 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 지원 합니다.  
+ 공유 전략에서는 여러 버전의에서 사용 하기 위해 하나의 VSPackage가 등록 됩니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 버전이 지정 된 전략에서는 지원 되는 각 버전에 대해 하나씩, 여러 VSPackage Dll이 설치 됩니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="shared-vspackages"></a>공유 Vspackage  
- 공유 VSPackage를 사용 하 여 적합 한 여러 버전의 동일한 VSPackage를 사용 하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 공유 VSPackage를 구현 하려면 다음 단계를 수행 해야 합니다.  
+ 여러 버전의에서 동일한 VSPackage를 사용 하는 경우 공유 VSPackage를 사용 하는 것이 적합 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다. 공유 VSPackage을 구현 하려면 다음 단계를 수행 해야 합니다.  
   
-- VSPackage를 여러 버전의 호환 되도록 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 따라서 이렇게 두 가지 방법으로 사용할 수 있습니다.  
+- 여러 버전의와 호환 되는 VSPackage를 만드세요 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 이 작업을 수행 하는 방법에는 다음 두 가지가 있습니다.  
   
-  - 제한의 가장 오래 된 버전의 기능만 사용 하 여 VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 지원 합니다.  
+  - 지원 되는 가장 오래 된 버전의 기능만 사용 하도록 VSPackage를 제한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다.  
 
-  - VSPackage의 버전에 맞게 프로그램 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실행 됩니다. 그런 다음 새 서비스에 대 한 쿼리가 실패 하는 경우 VSPackage 제공할 수 있습니다의 이전 버전에서 지원 되는 다른 서비스 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+  - VSPackage를 프로그래밍 하 여 실행 중인의 버전에 맞게 조정 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다. 그런 다음 새 서비스에 대 한 쿼리가 실패 하면 VSPackage는 이전 버전의에서 지원 되는 다른 서비스를 제공할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-- 적절 하 게 VSPackage를 등록 합니다. 자세한 내용은 [VSPackage 등록](../extensibility/internals/vspackage-registration.md) 하 고 [관리 되는 VSPackage 등록](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)합니다.  
+- VSPackage를 적절 하 게 등록 합니다. 자세한 내용은 [VSPackage 등록](../extensibility/internals/vspackage-registration.md) 및 [관리 되는 VSPackage 등록](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)을 참조 하세요.  
   
-- 파일 확장명을 적절 하 게 등록 합니다. 자세한 내용은 [Side-by-side-배포에 대 한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)합니다.  
+- 파일 확장명을 적절 하 게 등록 합니다. 자세한 내용은 side-by-side [배포를 위한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)을 참조 하세요.  
   
-- 적절 한 버전의 VSPackage를 배포 하는 설치 관리자 만들기 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 자세한 내용은 [Windows Installer를 사용 하 여 Vspackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md) 하 고 [구성 요소 관리](../extensibility/internals/component-management.md)합니다.  
+- 적절 한 버전의에 대 한 VSPackage를 배포 하는 설치 관리자를 만듭니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 자세한 내용은 Windows Installer 및 [구성 요소 관리](../extensibility/internals/component-management.md)를 [사용 하 여 vspackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md) 를 참조 하세요.  
   
-- 등록 충돌 문제를 해결 합니다. 자세한 내용은 [VSPackage 등록](../extensibility/internals/vspackage-registration.md)합니다.  
+- 등록 충돌 문제를 해결 합니다. 자세한 내용은 [VSPackage 등록](../extensibility/internals/vspackage-registration.md)을 참조 하세요.  
   
-- 공유 및 버전 관리 파일에서 여러 버전의 안전한 설치 및 제거를 허용 하기 위해 참조 가산을 준수 하는지 확인 합니다. 자세한 내용은 [구성 요소 관리](../extensibility/internals/component-management.md)합니다.  
+- 여러 버전의 안전 하 게 설치 및 제거할 수 있도록 공유 파일 및 버전 관리 파일 모두 참조 횟수를 준수 하는지 확인 합니다. 자세한 내용은 [구성 요소 관리](../extensibility/internals/component-management.md)를 참조 하세요.  
   
 ## <a name="versioned-vspackages"></a>버전 관리 Vspackage  
- 버전 관리 VSPackage 전략을 아래 각 버전의 VSPackage를 하나 만들 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 지원 합니다. 이 방법은 적절 한 이후 버전의에서 제공 하는 서비스를 활용 하려는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]이므로 각 VSPackage 다른 영향을 주지 않고 진화 할 수 있습니다. 그럼에도 불구 하 고 여러 독립적인 코드 베이스 또는 단일 코드 베이스에서 여러 이진 파일을 만드는 버전 관리 전략을 공유 전략 보다 더 많은 초기 개발을 수반 될 수 있습니다. 또한 추가 설치 작업 해야 할 수 있습니다 각 버전에 대 한 별도 설치 또는 버전을 검색 하는 단일 설치 프로그램을 만들어야 하기 때문에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 설치 되어 있고 VSPackage를 지원 합니다.  
+ 버전이 지정 된 VSPackage 전략에서는 지원 되는 각 버전에 대해 VSPackage 하나를 만듭니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 이 작업은 이후 버전의에서 제공 하는 서비스를 활용 하는 경우에 적합 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다. 각 VSPackage는 다른 사용자에 게 영향을 주지 않고 진화 될 수 있기 때문입니다. 그럼에도 불구 하 고 단일 코드 베이스 또는 여러 독립적인 코드 베이스에서 여러 이진 파일을 만드는 방법에 대 한 버전 지정 전략은 공유 전략 보다 초기 개발을 더 많이 해야 할 수 있습니다. 또한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 설치 되어 있고 VSPackage에서 지 원하는 버전을 검색 하는 단일 설치 또는 각 버전에 대해 별도의 설치 프로그램을 만들어야 하기 때문에 추가 설치 작업이 필요할 수 있습니다.  
   
 ## <a name="binary-compatibility"></a>이진 호환성  
- 일반적으로 이진 호환성에는 이전 버전의 Visual Studio의 이후 버전에서 실행 하려면 Visual Studio를 사용 하 여 개발 하는 네이티브 코드로 Vspackage 수 있습니다. 그러나는 세 가지 중요 한 예외가 있습니다.  
+ 일반적으로 이진 호환성을 사용 하면 이전 버전의 visual Studio에서 개발한 네이티브 코드 Vspackage를 사용 하 여 이후 버전의 Visual Studio에서 실행할 수 있습니다. 그러나 다음과 같은 세 가지 중요 한 예외가 있습니다.  
   
-- VSPackage는 특정 버전의 공용 언어 런타임의 경우의 어떤 버전을 확인 해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실행 됩니다.  
+- VSPackage 특정 버전의 공용 언어 런타임을 사용 하는 경우 실행 중인 버전을 확인 해야 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-- VSPackage 다른 VSPackage 또는 다른 제품의 특정 기능에 대해 종속성이 있을 수 있습니다. 결과적으로 VSPackage 종속성은 충족 하는 위치에 실행할 수 있습니다.  
+- VSPackage는 다른 VSPackage 또는 다른 제품의 특정 기능에 대 한 종속성이 있을 수 있습니다. 따라서 종속성이 충족 되는 경우에만 VSPackage을 실행할 수 있습니다.  
   
-- VSPackage의 보안 수정 영향을 받을 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 서비스 팩 또는 최신 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이러한 경우 VSPackage의 이전 버전을 사용 하 여 개발 된 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 버전에서 실행 되지 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 보안 수정이 적용 된 후입니다. 그러나 최신 버전을 사용 하 여 패키지를 다시 작성할 수 있으며 이전 버전에서 실행할 수도 있습니다.  
+- VSPackage는 Service Pack 이상 버전의 보안 수정에 의해 영향을 받을 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 이러한 경우 이전 버전의로 개발 된 VSPackage [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 보안 픽스를 적용 한 후 버전에서 실행 되지 않을 수 있습니다. 그러나 최신 버전을 사용 하 여 패키지를 다시 작성 하 고 이전 버전 에서도 실행 되도록 할 수 있습니다.  
   
-  관리 되는 Vspackage의 버전을 사용 하 여 빌드해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 하며 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 의 대상 버전을 일치 하는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+  관리 되는 Vspackage는의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 대상 버전과 일치 하는 및 버전을 사용 하 여 빌드해야 합니다 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-  VSPackage 이진 파일에 대 한 이진 호환성에 대 한 계획 하는 것 외에도 또한 사항과 고려해 야 솔루션 프로젝트 파일 형식입니다. VSPackage는 새 프로젝트 형식을 만듭니다, 하는 경우 버전을 하나만 또는 여러 버전의 실행할 수 있는지 여부를 결정 해야 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 자세한 내용은 [사용자 지정 프로젝트 업그레이드](../misc/upgrading-custom-projects.md)합니다.  
+  VSPackage 이진 파일에 대 한 이진 호환성 계획 외에도 솔루션 및 프로젝트 파일 형식을 고려해 야 합니다. VSPackage에서 새 프로젝트 형식을 만드는 경우 한 버전 또는 여러 버전의에서 실행할 수 있는지 여부를 결정 해야 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 자세한 내용은 [사용자 지정 프로젝트 업그레이드](../misc/upgrading-custom-projects.md)를 참조 하세요.  
   
 ## <a name="see-also"></a>관련 항목  
  [Windows Installer를 사용 하 여 Vspackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

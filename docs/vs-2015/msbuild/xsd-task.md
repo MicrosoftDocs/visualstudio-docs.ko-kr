@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826240"
 ---
 # <a name="xsd-task"></a>XSD 작업
@@ -40,7 +40,7 @@ ms.locfileid: "67826240"
   
      선택적 **문자열** 매개 변수입니다.  
   
-     명령줄에 지정된 것처럼 옵션 목록입니다. 예를 들면 " */option1 /option2 /option#* "과 같습니다. 이 매개 변수를 사용하여 다른 **XSD** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.  
+     명령줄에 지정된 것처럼 옵션 목록입니다. 예를 들면 "*/ch1/option1/option #*"입니다. 이 매개 변수를 사용하여 다른 **XSD** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.  
   
 - **GenerateFromSchema**  
   
@@ -50,13 +50,13 @@ ms.locfileid: "67826240"
 
   각각 XSD 옵션에 해당하는 다음 값 중 하나를 지정합니다.  
 
-  - **클래스** -  **/classes**  
+  - **클래스**  -  **/classes**  
 
-  - **데이터 세트** -  **/dataset**  
+  - **데이터 집합**  -  **/데이터 집합**  
   
 - **언어**  
   
-     선택적 **String** 매개 변수입니다.  
+     선택적 **문자열** 매개 변수입니다.  
   
      생성된 코드에 사용할 프로그래밍 언어를 지정합니다.  
   
@@ -68,7 +68,7 @@ ms.locfileid: "67826240"
   
      생성된 형식에 대한 런타임 네임스페이스를 지정합니다.  
   
-- **Sources**  
+- **원본**  
   
      필수 `ITaskItem[]` 매개 변수입니다.  
   
@@ -76,7 +76,7 @@ ms.locfileid: "67826240"
   
 - **SuppressStartupBanner**  
   
-     선택적 **Boolean** 매개 변수입니다.  
+     선택적 **부울** 매개 변수입니다.  
   
      `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.  
   
@@ -86,5 +86,5 @@ ms.locfileid: "67826240"
   
      추적기 로그용 디렉터리를 지정합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)

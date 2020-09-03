@@ -1,5 +1,5 @@
 ---
-title: '웹 애플리케이션 디버그: 문제 해결 | Microsoft Docs'
+title: '웹 응용 프로그램 디버깅: 문제 해결 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac45b72b97a759e79a984f62421997125c5f1a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152857"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>웹 애플리케이션 디버그: 문제 해결
@@ -34,7 +34,7 @@ ms.locfileid: "68152857"
  [방법: IIS 속성 설정 확인](../debugger/how-to-verify-iis-property-settings.md)  
  디버깅을 사용할 수 있도록 IIS의 속성을 올바르게 설정하는 방법을 설명합니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  오류 및 문제 해결에 대해 설명합니다.  
   

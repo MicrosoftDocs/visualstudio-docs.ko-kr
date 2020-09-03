@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa064d875d5354ac4ae1fc5fdd8493c5efbbee01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663052"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>주 어셈블리 및 지역화된 위성 어셈블리의 버전 번호
@@ -43,5 +43,5 @@ ms.locfileid: "72663052"
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [런타임에서 어셈블리를 찾는 방법](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34) [어셈블리 특성 설정](https://msdn.microsoft.com/library/36a98a81-b5b5-4c19-912a-11f91eff7f4e) [보안 및 지역화 된 위성 어셈블리](../ide/security-and-localized-satellite-assemblies.md) [응용 프로그램 지역화](../ide/localizing-applications.md) 응용 프로그램 [전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

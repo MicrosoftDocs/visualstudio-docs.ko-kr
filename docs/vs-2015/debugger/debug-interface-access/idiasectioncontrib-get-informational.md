@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_informational | Microsoft Docs'
+title: 'IDiaSectionContrib:: get_informational | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60ca5a57fd2b8921c3fc3c140bf1fdf5c0277f21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151905"
 ---
-# <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
+# <a name="idiasectioncontribget_informational"></a>IDiaSectionContrib::get_informational
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-의견이 나 유사한 정보 섹션이 포함 되는지 여부를 나타내는 플래그를 검색 합니다.  
+섹션에 설명 또는 비슷한 정보가 포함 되어 있는지 여부를 나타내는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,13 +35,13 @@ HRESULT get_informational(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 의견이 나 기타 정보; 섹션에 포함 되어 있는 경우 그렇지 `FALSE`합니다.  
+ 제한이 `TRUE` 섹션에 주석이 나 기타 정보가 포함 되어 있으면를 반환 하 고, 그렇지 않으면 `FALSE` 를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. `S_FALSE`이 속성이 지원 되지 않으면를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 일반적으로.directive 섹션 정보를 포함 합니다.  
+ 일반적으로. 지시문 섹션에는 정보가 포함 되어 있습니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

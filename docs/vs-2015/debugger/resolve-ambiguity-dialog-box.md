@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b35d305bbd011adc02692cd7c9c687ac0bfc7d45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148785"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>모호성 해결 대화 상자
@@ -44,5 +44,5 @@ ms.locfileid: "68148785"
  `Module`  
  함수의 개체 코드가 포함된 모듈(EXE 또는 DLL)을 표시합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거의 식](../debugger/expressions-in-the-debugger.md)

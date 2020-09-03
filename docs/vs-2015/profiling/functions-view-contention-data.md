@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141903"
 ---
 # <a name="functions-view---contention-data"></a>함수 뷰 - 경합 데이터
@@ -25,7 +25,7 @@ ms.locfileid: "68141903"
   
  다음 표에서는 동시성 방법을 사용하여 수집된 프로파일링 데이터 파일의 함수 뷰에 표시된 값을 설명합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**차단된 전용 시간**|이 함수가 함수 본문에서 코드를 실행할 수 없도록 차단된 시간의 양입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.|  
 |**차단된 전용 시간 비율(%)**|프로파일링 실행의 모든 차단된 시간 중 이 함수의 차단된 전용 시간의 백분율입니다.|  
@@ -44,10 +44,10 @@ ms.locfileid: "68141903"
 |**프로세스 이름**|프로세스의 이름입니다.|  
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [함수 뷰](../profiling/functions-view.md)   
- [함수 뷰 - 계측](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [함수 뷰 - 샘플링](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [함수 뷰-계측](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [함수 뷰-샘플링](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [함수 뷰](../profiling/functions-view-instrumentation-data.md)   
  [함수 뷰](../profiling/functions-view-sampling-data.md)

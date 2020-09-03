@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a22be61d5f4c05720a5ff223806f2e14a8bfbc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663951"
 ---
 # <a name="working-with-shaders"></a>셰이더 작업
@@ -35,7 +35,7 @@ ms.locfileid: "72663951"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[셰이더 디자이너](../designers/shader-designer.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 셰이더 작업을 수행하는 방법을 설명합니다.|
 |[셰이더 디자이너 노드](../designers/shader-designer-nodes.md)|그래픽 효과를 얻기 위해 사용할 수 있는 셰이더 디자이너 노드의 종류를 설명합니다.|

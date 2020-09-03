@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663549"
 ---
 # <a name="shell-command"></a>셸 명령
@@ -45,7 +45,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="switches"></a>스위치
  /commandwindow [또는]/command [또는]/c [또는]/cmd 옵션입니다. 실행 파일에 대한 출력이 **명령** 창에 표시되는지 지정합니다.
 
- /sdir: `folder` [또는]/d: `folder` 옵션입니다. 프로그램이 실행될 때 설정할 작업 디렉터리를 지정합니다.
+ /sdir: `folder` [또는]/d: `folder` 선택 사항입니다. 프로그램이 실행될 때 설정할 작업 디렉터리를 지정합니다.
 
  /svwindow [또는]/output [또는]/out [또는]/o 옵션입니다. 실행 파일에 대한 출력이 **출력** 창에 표시되도록 지정합니다.
 
@@ -77,5 +77,5 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [명령 창](../../ide/reference/command-window.md) [출력 창](../../ide/reference/output-window.md) [찾기/명령 상자](../../ide/find-command-box.md) [visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

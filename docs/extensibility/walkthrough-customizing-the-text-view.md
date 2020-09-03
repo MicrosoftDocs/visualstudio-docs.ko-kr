@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904939"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>연습: 텍스트 뷰 사용자 지정
@@ -32,7 +32,7 @@ ms.locfileid: "85904939"
 
 - 표시 공백
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -54,9 +54,9 @@ ms.locfileid: "85904939"
 
 3. `TestViewCreationListener`에서 상속 되는 이라는 클래스를 선언 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 합니다. 다음 특성을 사용 하 여이 클래스를 내보냅니다.
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>이 수신기가 적용 되는 콘텐츠 형식을 지정 합니다.
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 이 수신기가 적용 되는 콘텐츠 형식을 지정 합니다.
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>이 수신기의 역할을 지정 하는입니다.
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 이 수신기의 역할을 지정 하는입니다.
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
@@ -91,5 +91,5 @@ ms.locfileid: "85904939"
 
 5. 표시 되는 공백을 설정 합니다. **편집** 메뉴에서 **고급** 을 가리킨 다음 **공백 보기**를 클릭 합니다. 텍스트에 일부 탭을 입력 합니다. 탭을 나타내는 빨간색 화살표가 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

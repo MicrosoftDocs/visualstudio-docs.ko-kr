@@ -1,5 +1,5 @@
 ---
-title: IEE비주얼라이저 서비스::GetCustom뷰어리스트 | 마이크로 소프트 문서
+title: 'IEEVisualizerService:: GetCustomViewerList | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718021"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-이 메서드는 이 서비스에 대해 알고 있는 형식 시각화 도우미 목록을 반환 합니다.
+이 메서드는이 서비스에서 인식 하는 형식 시각화 도우미의 목록을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,26 +47,26 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>매개 변수
 `celtSkip`\
-【인】 건너뛸 시각화 도우미 의 수입니다.
+진행 건너뛸 시각화 도우미의 수입니다.
 
 `celRequested`\
-【인】 검색할 시각화 도우미 `rgViewers` 수(배열 크기도 지정).
+진행 검색할 시각화 도우미 수 (배열의 크기도 지정 `rgViewers` )입니다.
 
 `rgViewers`\
-【인, 아웃】 채울 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 구조의 배열.
+[in, out] 채워질 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 구조체의 배열입니다.
 
 `pceltFetched`\
-【아웃】 실제로 검색된 시각화 도우미 의 수입니다.
+제한이 실제로 검색 된 시각화 도우미 수입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 형식 시각화 도우미에 대 한 지원의 일환으로이 메서드에 요청을 전달 합니다. 식 계산기에서도 동일한 형식에 대한 사용자 지정 뷰어를 제공하는 경우 해당 사용자 지정 뷰어를 목록에 적절하게 채워진 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 구조를 추가할 수 있습니다. [GetCustomViewerCount이](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 이러한 추가 뷰어를 반영하는지 확인합니다.
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 는 형식 시각화 도우미에 대 한 지원의 일부로이 메서드에 요청을 전달 합니다. 식 계산기가 동일한 형식에 대 한 사용자 지정 뷰어를 제공 하는 경우 해당 사용자 지정 뷰어에 대 한 적절 한 채우기 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 구조를 목록에 추가할 수 있습니다. [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 가 이러한 추가 뷰어를 반영 하는지 확인 합니다.
 
- 시각화 도우미와 뷰어 간의 차이점에 대한 자세한 내용은 [유형 시각화 도우미 및 사용자 지정 뷰어를](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 참조하세요.
+ 시각화 도우미와 뷰어 간의 차이점에 대 한 자세한 내용은 [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)

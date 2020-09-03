@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543925"
 ---
 # <a name="intellitrace"></a>IntelliTrace
@@ -59,7 +59,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
 |-|-|  
 |**지원됨**|-Visual Basic 및 .NET Framework 2.0 이상 버전을 사용 하는 Visual c # 응용 프로그램입니다.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 애플리케이션을 디버깅할 수 있습니다.<br />     IntelliTrace를 사용하여 SharePoint 애플리케이션을 디버그하려면 [연습: IntelliTrace를 사용하여 SharePoint 애플리케이션 디버그](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)를 참조하세요.<br />     IntelliTrace를 사용하여 Microsoft Azure 앱을 디버그하려면 [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버그](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)를 참조하세요.|  
 |**제한적 지원**|-실험 기반의 F # 앱<br />-이벤트 전용으로 지원 되는 Windows 스토어 앱|  
-|**지원되지 않음**|-C + +, 다른 언어 및 스크립트<br />-Windows 서비스, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../includes/winmobile-md.md)] 앱|  
+|**지원 안 됨**|-C + +, 다른 언어 및 스크립트<br />-Windows 서비스, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../includes/winmobile-md.md)] 앱|  
   
 > [!NOTE]
 > 이미 실행 중인 프로세스를 디버깅하는 경우 IntelliTrace를 사용할 수 없습니다. 프로세스를 시작할 때 IntelliTrace를 시작해야 합니다.  
@@ -174,7 +174,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
   
  호출 정보를 수집하면 애플리케이션 성능이 크게 느려질 수 있습니다. 디스크에 저장하는 경우 IntelliTrace 로그 파일(.iTrace 파일)의 크기도 증가할 수 있습니다. 이러한 효과를 최소화하려면 관심 있는 모듈에 대한 호출 정보만 수집합니다.  .iTrace 파일의 최대 크기를 변경하려면 **도구**, **옵션**, **IntelliTrace**, **고급**으로 이동합니다. [IntelliTrace 구성](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)을 참조 하세요.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
  [IntelliTrace 기능](../debugger/intellitrace-features.md)  
   
  [IntelliTrace 구성](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a923d1f3532548ebc6ed651a0739e0e5792f7967
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663527"
 ---
 # <a name="setup-devenvexe"></a>/Setup(devenv.exe)
@@ -43,5 +43,5 @@ devenv /setup
 devenv /setup
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)

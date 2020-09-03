@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904788"
 ---
 # <a name="walkthrough-display-statement-completion"></a>연습: 명령문 완성 표시
@@ -27,7 +27,7 @@ ms.locfileid: "85904788"
 
  이 연습에서는 하드 코드 된 식별자 집합에 대해 문 완성을 구현 하는 방법을 보여 줍니다. 모든 구현에서 언어 서비스 및 언어 설명서는 해당 콘텐츠를 제공 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -81,7 +81,7 @@ ms.locfileid: "85904788"
      [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
      [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]
 
-6. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>컨텍스트에 제공 하려는 완료를 포함 하는 완성 집합을 추가 하 여 메서드를 구현 합니다. 각 완성 집합에는 완성의 집합이 포함 <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> 되며 완성 창의 탭에 해당 합니다. Visual Basic 프로젝트에서 완료 창 탭의 이름은 **공통** 및 **모든**입니다. `FindTokenSpanAtPosition`메서드는 다음 단계에서 정의 됩니다.
+6. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>컨텍스트에 제공 하려는 완료를 포함 하는 완성 집합을 추가 하 여 메서드를 구현 합니다. 각 완성 집합에는 완성의 집합이 포함 <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> 되며 완성 창의 탭에 해당 합니다. Visual Basic 프로젝트에서 완료 창 탭의 이름은 **공통** 및 **모든**입니다. `FindTokenSpanAtPosition` 메서드는 다음 단계에서 정의 됩니다.
 
      [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
      [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]
@@ -204,5 +204,5 @@ ms.locfileid: "85904788"
 
 4. "A"를 입력 하 고 "d"를 입력 하면 "더하기" 및 "적응"이 포함 된 목록이 표시 됩니다. 추가가 선택 되어 있는지 확인 합니다. 다른 "d"를 입력 하는 경우 목록에는 "더하기"만 포함 해야 합니다 .이는 현재 선택 되어 있습니다. **스페이스바**, **Tab**또는 **Enter** 키를 눌러 "추가"를 커밋하거나 Esc 키 또는 다른 키를 입력 하 여 목록을 해제할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
