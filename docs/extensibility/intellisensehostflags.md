@@ -1,5 +1,5 @@
 ---
-title: 인텔리센스호스트플래그 | 마이크로 소프트 문서
+title: IntelliSenseHostFlags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710263"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-IntelliSense 호스트 플래그를 지정합니다.
+IntelliSense 호스트 플래그를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ enum IntellisenseHostFlags
 |멤버|설명|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|컨텍스트 버퍼는 읽기 전용입니다.|
-|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 컨텍스트 버퍼에는 IntelliSense 대상(의미)이 포함되어 있습니다. `!IHF_READONLYCONTEXT`|
-|`IHF_SINGLELINESUBJECT`|제목 텍스트는 다중 줄로 할 수 없습니다.|
-|`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer`와 같습니다.|
-|`IHF_OVERTYPE`|편집(제목 또는 컨텍스트)은 오버타입 모드에서 수행해야 합니다.|
+|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 컨텍스트 버퍼에 IntelliSense 대상 (함축)이 포함 되어 있습니다 `!IHF_READONLYCONTEXT` .|
+|`IHF_SINGLELINESUBJECT`|제목 텍스트는 여러 줄을 사용할 수 없습니다.|
+|`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer`와 동일합니다.|
+|`IHF_OVERTYPE`|편집 (주체 또는 컨텍스트)은 겹쳐쓰기 모드에서 수행 해야 합니다.|
 
 ## <a name="requirements"></a>요구 사항
- 싱글파일편집기.idl
+ SingleFileeditor. idl
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

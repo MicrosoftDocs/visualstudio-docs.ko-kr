@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535709"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>연습: 단일 테이블 상속을 사용하여 LINQ to SQL 클래스 만들기(O/R 디자이너)
@@ -51,10 +51,10 @@ ms.locfileid: "85535709"
 
     |열 이름|데이터 형식|Null 허용|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**허위**|
-    |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**허위**|
-    |**LastName**|**nvarchar(200)**|**허위**|
+    |**ID**|**int**|**False**|
+    |**유형**|**int**|**True**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
     |**관리자**|**int**|**True**|
 
 3. ID 열을 기본 키로 설정합니다.
@@ -70,7 +70,7 @@ ms.locfileid: "85535709"
 
 2. 다음 데이터를 테이블로 복사합니다. (결과 창에서 전체 행을 선택 하 여 복사 하 고 테이블에 붙여넣을 수 있습니다.)
 
-    |**ID**|**Type**|**FirstName**|**LastName**|**관리자**|
+    |**ID**|**유형**|**FirstName**|**LastName**|**관리자**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -185,5 +185,5 @@ ms.locfileid: "85535709"
 
 3. 폼을 닫아 디버깅을 **디버그** 메뉴에서 **디버깅 중지**를 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [방법: 프로젝트에 LINQ to SQL 클래스 추가 (o-r 디자이너)](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6) [연습: LINQ to SQL 클래스 만들기 (o-r 디자이너](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [) 방법: 저장 프로시저를 할당 하 여 업데이트, 삽입 및 삭제 수행 (o/r 디자이너)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [방법: Visual Basic 또는 c #에서 개체 모델 생성](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

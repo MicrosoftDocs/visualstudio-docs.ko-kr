@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541351"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>방법: 콘텐츠 컨트롤을 사용 하 여 문서 부분 보호
@@ -34,7 +34,7 @@ ms.locfileid: "85541351"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>콘텐츠 컨트롤 보호
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> 콘텐츠 컨트롤 보호
  디자인 타임 또는 런타임에 문서 수준 프로젝트에서 컨트롤의 속성을 설정하여 사용자가 콘텐츠 컨트롤을 편집하거나 삭제하는 것을 방지할 수 있습니다.
 
  VSTO 추가 기능 프로젝트를 사용하여 런타임에 문서에 추가하는 콘텐츠 컨트롤을 보호할 수도 있습니다. 자세한 내용은 [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)를 참조 하세요.
@@ -102,7 +102,7 @@ ms.locfileid: "85541351"
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [콘텐츠 컨트롤](../vsto/content-controls.md)
 - [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)

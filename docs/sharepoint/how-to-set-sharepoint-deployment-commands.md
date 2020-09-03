@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c2329efef64e7d8605f8483ff7dce3107cd702fa
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015502"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>방법: SharePoint 배포 명령 설정
@@ -41,5 +42,5 @@ ms.locfileid: "86015502"
 
      예를 들어 배포가 완료 된 후 디렉터리 내용을 나열 하려면 **dir**을 입력 합니다. MSBuild 변수를 사용 하 여 빌드 디렉터리에서 어셈블리를 복사 하려면 **copy $ (TargetPath) c:\DeploymentDirectory**를 입력 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fab79fd4daab98c6cade9271b32c45b5ae4b4332
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545199"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.
@@ -44,7 +44,7 @@ ms.locfileid: "85545199"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName>필드의 인스턴스를 serialize 및 deserialize 할 수 있도록 하는 형식을 선언 하는 경우에만이 규칙에서 경고를 표시 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 형식 및 규칙을 충족 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkNonSerializable/cs/FxCop.Usage.MarkNonSerializable.cs#1)]

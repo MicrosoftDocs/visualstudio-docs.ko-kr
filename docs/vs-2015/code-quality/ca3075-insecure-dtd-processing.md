@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545173"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: DTD 처리가 안전하지 않습니다.
@@ -35,13 +35,13 @@ ms.locfileid: "85545173"
 
 - XML의 <xref:System.Xml.XmlNode.InnerXml%2A> 속성이 설정된 경우
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>속성이 Parse로 설정 되어 있습니다.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 속성이 Parse로 설정 되어 있습니다.
 
 - 신뢰할 수 없는 입력이 <xref:System.Xml.XmlResolver> 대신 <xref:System.Xml.XmlSecureResolver> 를 사용하여 처리되는 경우
 
 - XmlReader입니다.<xref:System.Xml.XmlReader.Create%2A> 메서드가 안전 하지 않은 인스턴스를 사용 <xref:System.Xml.XmlReaderSettings> 하거나 인스턴스 없이 호출 됩니다.
 
-- <xref:System.Xml.XmlReader>는 안전 하지 않은 기본 설정 또는 값을 사용 하 여 생성 됩니다.
+- <xref:System.Xml.XmlReader> 는 안전 하지 않은 기본 설정 또는 값을 사용 하 여 생성 됩니다.
 
   이러한 경우 모두 결과는 동일합니다. XML이 처리되는 컴퓨터의 파일 시스템 또는 네트워크 공유의 내용이 공격자에게 노출되어 DoS 벡터로 사용될 수 있습니다.
 
@@ -96,7 +96,7 @@ class TestClass
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.IO;
@@ -137,7 +137,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.Xml;
@@ -193,7 +193,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.Xml;
@@ -227,7 +227,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.IO;
@@ -266,7 +266,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.Xml;
@@ -299,7 +299,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.Xml;
@@ -365,7 +365,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.Xml;

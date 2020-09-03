@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 78d950b777d866835ef516c4910180b21de295e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545004"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
@@ -86,7 +86,7 @@ Visual Studio에서는 거의 모든 데이터베이스 제품 또는 서비스�
 ### <a name="net-languages"></a>.NET 언어
  .NET Core에 포함 된 모든 .NET 데이터 액세스는 모든 종류의 데이터 원본에 액세스 하기 위한 인터페이스를 정의 하는 클래스 집합인 ADO.NET을 기반으로 합니다. Visual Studio에는 데이터베이스에 연결 하 고, 데이터를 조작 하 고, 사용자에 게 데이터를 표시 하는 데 도움이 되는 ADO.NET와 함께 작동 하는 몇 가지 도구와 디자이너가 있습니다. 이 섹션의 설명서에서는 이러한 도구를 사용 하는 방법을 설명 합니다. ADO.NET 명령 개체에 대해 직접 프로그래밍할 수도 있습니다. ADO.NET Api를 직접 호출 하는 방법에 대 한 자세한 내용은 MSDN Library의 [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 를 참조 하십시오.
 
- ASP.NET와 관련 된 데이터 액세스 설명서는 ASP.NET 사이트에서 [데이터 작업](/aspnet/web-forms/overview/presenting-and-managing-data/) 을 참조 하세요. ASP.NET MVC와 함께 Entity Framework를 사용 하는 방법에 대 한 자습서는 [mvc 5를 사용 하 여 Entity Framework 6 Code First 시작](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)을 참조 하세요.
+ ASP.NET와 관련 된 데이터 액세스 설명서는 ASP.NET 사이트에서  [데이터 작업](/aspnet/web-forms/overview/presenting-and-managing-data/) 을 참조 하세요. ASP.NET MVC와 함께 Entity Framework를 사용 하는 방법에 대 한 자습서는 [mvc 5를 사용 하 여 Entity Framework 6 Code First 시작](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)을 참조 하세요.
 
  C # 또는 Visual Basic의 UWP (유니버설 Windows 플랫폼) 앱은 .NET 용 Microsoft Azure SDK를 사용 하 여 Azure Storage 및 기타 Azure 서비스에 액세스할 수 있습니다. Windows. HttpClient 클래스를 사용 하면 모든 RESTful 서비스와 통신할 수 있습니다. 자세한 내용은 [Windows를 사용 하 여 http 서버에 연결 하는 방법](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)을 참조 하세요.
 
@@ -124,9 +124,9 @@ Visual Studio에서는 거의 모든 데이터베이스 제품 또는 서비스�
  [Visual Studio의 JavaScript](https://msdn.microsoft.com/library/hh334522.aspx) 는 플랫폼 간 앱, UWP 앱, 클라우드 서비스, 웹 사이트 및 웹 앱을 빌드하기 위한 최고 수준의 언어입니다. Visual Studio 내에서 Bower, Grunt, Gulp, npm 및 NuGet을 사용 하 여 즐겨 사용 하는 JavaScript 라이브러리 및 데이터베이스 제품을 설치할 수 있습니다. [Azure 웹 사이트](https://azure.microsoft.com/)에서 sdk를 다운로드 하 여 azure storage 및 서비스에 연결 합니다.  Edge.js는 서버 쪽 JavaScript (Node.js)를 ADO.NET 데이터 원본에 연결 하는 라이브러리입니다.
 
 ### <a name="python"></a>Python
- 선호 하는 Python 프레임 워크와 함께 [Visual Studio용 Python 도구](http://microsoft.github.io/PTVS/) 를 설치 하 여 CPython 또는 IronPython (.net) 응용 프로그램을 만듭니다.  Visual Studio용 Python 도구 웹 사이트에는 azure의 [Django 및 SQL Database](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), azure의 [Django 및 MySQL](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) , Azure의 [병 및 MongoDB](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure)를 포함 하 여 데이터에 연결 하는 몇 가지 자습서가 있습니다.
+ 선호 하는 Python 프레임 워크와 함께  [Visual Studio용 Python 도구](http://microsoft.github.io/PTVS/) 를 설치 하 여 CPython 또는 IronPython (.net) 응용 프로그램을 만듭니다.  Visual Studio용 Python 도구 웹 사이트에는 azure의 [Django 및 SQL Database](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), azure의 [Django 및 MySQL](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) , Azure의 [병 및 MongoDB](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure)를 포함 하 여 데이터에 연결 하는 몇 가지 자습서가 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [데이터베이스 시스템, 도구 및 샘플 설치](../data-tools/installing-database-systems-tools-and-samples.md) 데이터베이스 제품 및이를 지 원하는 Visual Studio 확장 또는 드라이버를 가져오는 방법 및 실험 및 학습 목적으로 샘플 데이터베이스를 찾을 수 있는 위치에 대해 설명 합니다.
 
  [.Net 용 Visual Studio data tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Visual Studio 도구 창을 사용 하 여 데이터 소스에 연결 하 고, 데이터 집합을 만들고, 모델을 Entity Framework 하 고, 데이터를 사용자 인터페이스 컨트롤에 바인딩하는 방법을 설명 합니다.

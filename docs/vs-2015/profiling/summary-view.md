@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4346b0e7459ee3c78669ab9178555370ffac16d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545511"
 ---
 # <a name="summary-view"></a>요약 뷰
@@ -57,7 +57,7 @@ ms.locfileid: "85545511"
 |**보고서 데이터 필터링**|보고서 뷰에서 데이터를 제한하도록 조건을 지정할 수 있는 프로파일링 보고서 필터 창을 표시합니다. 자세한 내용은 [성능 보고서 뷰 필터](../profiling/performance-report-view-filter.md) 를 참조 하세요.|  
 |**전체 화면 설정/해제**|보고서 뷰에 대한 전체 화면 모드를 설정/해제합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [요약 뷰](../profiling/summary-view-sampling-data.md)   
  [요약 뷰](../profiling/summary-view-instrumentation-data.md)   
  [요약 뷰](../profiling/summary-view-dotnet-memory-data.md)

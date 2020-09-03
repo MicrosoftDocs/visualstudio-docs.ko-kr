@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545251"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: 대상 프레임워크의 API만 사용하세요.
@@ -58,15 +58,15 @@ Visual Studio에 대 한 최신 설명서는 [CA1903: 대상 프레임 워크의
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  지정 된 Service Pack의 의도적인 종속성이 아닌 경우에는이 규칙에서 경고를 표시 하지 마십시오. 이 경우이 Service Pack 설치 되지 않은 시스템에서는 응용 프로그램이 실행 되지 않을 수 있습니다. 의도적인 종속성 인 경우 경고를 표시 하지 않거나이 규칙을 해제 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 .NET 2.0 서비스 팩 1 에서만 사용할 수 있는 DateTimeOffset 형식을 사용 하는 클래스를 보여 줍니다. 이 예제를 사용 하려면 프로젝트 속성의 대상 프레임 워크 드롭다운 목록에서 .NET Framework 2.0를 선택 해야 합니다.
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는 DateTimeOffset 형식의 사용을 DateTime 형식으로 바꿔 이전에 설명한 위반을 수정 합니다.
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [특정 .NET Framework 버전을 대상으로 하는](../ide/targeting-a-specific-dotnet-framework-version.md) [이식성 경고](../code-quality/portability-warnings.md)

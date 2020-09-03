@@ -11,10 +11,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6dc6b4385130c6341b5b3545c6c9f71dc67457f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672187"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>코딩된 UI 테스트에 대한 샘플 Excel 추가 기능
@@ -22,7 +22,7 @@ ms.locfileid: "72672187"
 
 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]용 이 샘플 추가 기능은 기록된 Excel 워크시트의 코딩된 UI 테스트를 지원하도록 특별히 설계되었으며 Visual Studio Enterprise에서 실행됩니다. 이 추가 기능은 Visual Studio Tools for Office를 사용해서 생성되었습니다.
 
- Excel 추가 기능을 만드는 방법에 대 한 자세한 내용은 [Walkthrough를 참조 하세요. Excel 용 첫 VSTO 추가 기능 ](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)을 만들거나 MSDN에서 "Excel 추가 기능"을 검색 합니다.
+ Excel 추가 기능을 만드는 방법에 대한 자세한 내용을 보려면 [연습: Excel용 첫 VSTO 추가 기능 만들기](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)를 참조하거나 MSDN에서 "Excel 추가 기능"을 검색하세요.
 
  Excel 추가 기능이 Excel용 코딩된 UI 테스트 확장에 대한 이 설명서의 주요 주제는 아니지만 일부 설명은 도움이 될 수 있습니다.
 
@@ -45,5 +45,5 @@ ms.locfileid: "72672187"
 ## <a name="exceluicommunicator-class"></a>ExcelUICommunicator 클래스
  이 클래스는 `IExcelUITestCommunication` 인터페이스를 구현하고 Excel 개체 모델에서 요청한 UI 정보를 가져옵니다. 자세한 내용은 [샘플 Excel Communicator 인터페이스](../test/sample-excel-communicator-interface.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
- [Microsoft Excel [Walkthrough 지원 하도록 코딩 된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md) : [Office 및 SharePoint 개발](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329) ](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) Excel 용 첫 VSTO 추가 기능 만들기
+## <a name="see-also"></a>관련 항목
+ [Microsoft excel을 지원 하도록 코딩 된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md) : excel [Office 및 SharePoint 개발](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329) [을 위한 첫 VSTO 추가 기능 만들기](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)

@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89125c8e1dea25ab02fe64c21b8166e9d65194a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542222"
 ---
 # <a name="using-the-parallel-stacks-window"></a>병렬 스택 창 사용
@@ -116,7 +116,7 @@ ms.locfileid: "85542222"
   
  새 스택 프레임으로 전환하여 해당 메서드를 현재 메서드로 설정하고 창에 새 메서드에 대한 모든 호출자 및 호출 수신자를 표시합니다. 이렇게 하면 메서드가 호출 스택에 표시되는지 여부에 따라 일부 스레드가 뷰에 나타나거나 사라집니다. 스택 뷰로 돌아가려면 메서드 뷰 도구 모음 단추를 다시 클릭합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: 병렬 애플리케이션 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [디버거 기본 사항](../debugger/debugger-basics.md)   
  [관리 코드 디버깅](../debugger/debugging-managed-code.md)   

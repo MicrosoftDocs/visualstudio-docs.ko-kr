@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bd0429374b175da3260c3605f39c90cf2dffb841
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544900"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>방법: Word 문서에 XMLNode 컨트롤 추가
@@ -65,7 +65,7 @@ ms.locfileid: "85544900"
 
      <xref:Microsoft.Office.Tools.Word.XMLNode>컨트롤이 만들어지고 프로젝트에 추가 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [XMLNode 컨트롤](../vsto/xmlnode-control.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)

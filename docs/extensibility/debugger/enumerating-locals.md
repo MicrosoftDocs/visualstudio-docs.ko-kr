@@ -1,5 +1,5 @@
 ---
-title: 지역 주민 을 제비 | 마이크로 소프트 문서
+title: 지역 열거 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,36 +12,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 540c062d3d4f73a5468b39629fc277e6fd10df7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738863"
 ---
-# <a name="enumerate-locals"></a>지역 주민 을 모그제
+# <a name="enumerate-locals"></a>지역 열거
 > [!IMPORTANT]
-> Visual Studio 2015에서는 식 계산기 구현 방식이 더 이상 사용되지 않습니다. CLR 식 계산기 구현에 대한 자세한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리식 계산기 샘플을](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)참조하십시오.
+> Visual Studio 2015에서 식 계산기를 구현 하는 방법은 더 이상 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 자세한 내용은 [clr 식](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 계산기 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조 하세요.
 
-Visual Studio에서 **로컬 창을** 채울 준비가 되면 [GetMethodProperty에서](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) 반환된 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체에서 [EnumChildren를](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 호출합니다(GetMethodProperty [구현](../../extensibility/debugger/implementing-getmethodproperty.md)참조). `IDebugProperty2::EnumChildren`[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 반환합니다.
+Visual Studio는 **지역** 창을 채울 준비가 된 경우 [getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) 에서 반환 된 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체의 [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 를 호출 합니다 ( [getmethodproperty 구현](../../extensibility/debugger/implementing-getmethodproperty.md)참조). `IDebugProperty2::EnumChildren`[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 반환 합니다.
 
-구현은 `IDebugProperty2::EnumChildren` 다음 작업을 수행합니다.
+구현 `IDebugProperty2::EnumChildren` 에서는 다음 작업을 수행 합니다.
 
-1. 메서드를 나타내는지 확인합니다.
+1. 이가 메서드를 표시 하는지 확인 합니다.
 
-2. `guidFilter` 인수를 사용하여 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) 개체에서 호출할 메서드를 결정합니다. `guidFilter` 같으면:
+2. 는 인수를 사용 하 여 `guidFilter` [Idebugmethodfield](../../extensibility/debugger/reference/idebugmethodfield.md) 개체에서 호출할 메서드를 결정 합니다. 가 `guidFilter` 와 같은 경우
 
-    1. `guidFilterLocals`을 [호출하여 EnumLocals에](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) [전화하여 IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 가져옵니다.
+    1. `guidFilterLocals`에서 [enumlocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) 을 호출 하 여 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 가져옵니다.
 
-    2. `guidFilterArgs`에서는 개체를 가져오려면 `IEnumDebugFields` [EnumArguments를 호출합니다.](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)
+    2. `guidFilterArgs`에서 [Enumarguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) 를 호출 하 여 `IEnumDebugFields` 개체를 가져옵니다.
 
-    3. `guidFilterLocalsPlusArgs`에서 결과를 결합하는 열거형 `IDebugMethodField::EnumLocals` 및 `IDebugMethodField::EnumArguments`을 합성합니다. 이 합성은 클래스로 `CEnumMethodField`표시됩니다.
+    3. `guidFilterLocalsPlusArgs`, 및의 결과를 결합 하는 열거형을 합성 합니다 `IDebugMethodField::EnumLocals` `IDebugMethodField::EnumArguments` . 이러한 합성은 클래스로 표현 됩니다 `CEnumMethodField` .
 
-3. 인터페이스를 구현하고 개체를 `CEnumPropertyInfo` 포함하는 클래스(이 예제에서 호출)를 `IEnumDebugPropertyInfo2` `IEnumDebugFields` 인스턴스화합니다.
+3. `CEnumPropertyInfo`인터페이스를 구현 하 고 개체를 포함 하는 클래스 (이 예제에서는 호출 됨)를 인스턴스화합니다 `IEnumDebugPropertyInfo2` `IEnumDebugFields` .
 
-4. 개체에서 `IEnumDebugProperty2Info2` 인터페이스를 `CEnumPropertyInfo` 반환합니다.
+4. `IEnumDebugProperty2Info2`개체에서 인터페이스를 반환 합니다 `CEnumPropertyInfo` .
 
 ## <a name="managed-code"></a>관리 코드
-이 예제에서는 관리 `IDebugProperty2::EnumChildren` 코드의 구현을 보여 주며, 이 예제에서는 관리 되는 코드의 구현을 보여 주실 수 있습니다.
+이 예제에서는 관리 코드에서의 구현을 보여 줍니다 `IDebugProperty2::EnumChildren` .
 
 ```csharp
 namespace EEMC
@@ -119,8 +119,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>관리되지 않는 코드
- 이 예제에서는 관리되지 않는 코드의 `IDebugProperty2::EnumChildren` 구현을 보여 주습니다.
+## <a name="unmanaged-code"></a>비관리 코드
+ 이 예제에서는 비관리 코드에서의 구현을 보여 줍니다 `IDebugProperty2::EnumChildren` .
 
 ```cpp
 STDMETHODIMP CFieldProperty::EnumChildren(
@@ -246,6 +246,6 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 ```
 
 ## <a name="see-also"></a>참조
-- [지역 주민의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [GetMethodProperty 구현](../../extensibility/debugger/implementing-getmethodproperty.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: 컨텍스트 연산자(C++)
                   href: context-operator-cpp.md
-                - name: 'C#의 형식 지정자'
+                - name: C#의 형식 지정자
                   href: format-specifiers-in-csharp.md
                 - name: 의사 변수
                   href: pseudovariables.md
@@ -118,7 +118,7 @@
                   href: enabling-debug-features-in-visual-cpp-d-debug.md
             - name: 웹 프로젝트에 대한 속성 페이지 설정
               href: property-pages-settings-for-web-projects.md
-            - name: 'C# 디버그 구성에 대한 프로젝트 설정'
+            - name: C# 디버그 구성에 대한 프로젝트 설정
               href: project-settings-for-csharp-debug-configurations.md
             - name: Project Settings for a Visual Basic Debug Configuration
               href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: 시각화 도우미 아키텍처
                   href: visualizer-architecture.md
-                - name: 'C#에서 시각화 도우미 작성'
+                - name: C#에서 시각화 도우미 작성
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Visual Basic에서 시각화 도우미 작성
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -204,13 +204,13 @@
               href: edit-and-continue-visual-cpp.md
             - name: 지원되는 코드 변경(C++)
               href: supported-code-changes-cpp.md
-        - name: '편집하며 계속하기(Visual C#)'
+        - name: 편집하며 계속하기(Visual C#)
           items:
-            - name: '편집하며 계속하기(Visual C#)'
+            - name: 편집하며 계속하기(Visual C#)
               href: edit-and-continue-visual-csharp.md
-            - name: '편집하며 계속하기 사용(C#)'
+            - name: 편집하며 계속하기 사용(C#)
               href: how-to-use-edit-and-continue-csharp.md
-            - name: '지원되는 코드 변경(C#)'
+            - name: 지원되는 코드 변경(C#)
               href: supported-code-changes-csharp.md
         - name: 편집하며 계속하기(Visual Basic)
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: Visual Basic 편집하며 계속하기에서 지원되지 않는 편집
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: '편집하며 계속하기 F#에 대해 지원되지 않음'
+        - name: 편집하며 계속하기 F#에 대해 지원되지 않음
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 덤프 파일 사용
       items:
@@ -400,11 +400,11 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Blend for Visual Studio에서 XAML 디버그
               href: debug-xaml-in-blend.md
-            - name: '디버그 세션 탐색(XAML 및 C#)'
+            - name: 디버그 세션 탐색(XAML 및 C#)
               items:
-                - name: '디버그 세션 탐색(XAML 및 C#)'
+                - name: 디버그 세션 탐색(XAML 및 C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: '디버거 탐색 샘플 코드(Xaml 및 C#)'
+                - name: 디버거 탐색 샘플 코드(Xaml 및 C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: 'Windows 스토어에 대한 일시 중단, 다시 시작 및 백그라운드 이벤트 트리거'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: WPF 추적 정보 표시
               href: how-to-display-wpf-trace-information.md
-        - name: 'F# 디버깅'
+        - name: F# 디버깅
           href: debugging-f-hash.md
     - name: 네이티브 코드 디버깅
       items:

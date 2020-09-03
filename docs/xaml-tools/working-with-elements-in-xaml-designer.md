@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82921096"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>XAML 디자이너의 요소 작업
@@ -19,7 +19,7 @@ ms.locfileid: "82921096"
 
 ## <a name="add-an-element-to-a-layout"></a>레이아웃에 요소 추가
 
-*레이아웃*은 UI에서 요소의 크기를 조정하고 배치하는 프로세스입니다. 시각적 요소를 배치하려면 [패널](xref:Windows.UI.Xaml.Controls.Panel) 레이아웃에 가져다 놓아야 합니다. `Panel`에는 [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) 형식의 컬렉션인 자식 속성이 있습니다. [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)및 `Panel` [Grid](xref:Windows.UI.Xaml.Controls.Grid)와 같은 다양 한 자식 요소를 사용 하 여 레이아웃 컨테이너 역할을 하 고 페이지에서 요소를 배치 및 정렬할 수 있습니다.
+*레이아웃*은 UI에서 요소의 크기를 조정하고 배치하는 프로세스입니다. 시각적 요소를 배치하려면 [패널](xref:Windows.UI.Xaml.Controls.Panel) 레이아웃에 가져다 놓아야 합니다. `Panel`에는 [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) 형식의 컬렉션인 자식 속성이 있습니다. `Panel` [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)및 [Grid](xref:Windows.UI.Xaml.Controls.Grid)와 같은 다양 한 자식 요소를 사용 하 여 레이아웃 컨테이너 역할을 하 고 페이지에서 요소를 배치 및 정렬할 수 있습니다.
 
 기본적으로는 `Grid` 패널은 페이지 또는 폼 내에서 최상위 레이아웃 컨테이너로 사용됩니다. 최상위 페이지 레이아웃 내에서 레이아웃 패널, 컨트롤 또는 다른 요소를 추가할 수 있습니다.
 
@@ -107,8 +107,8 @@ XAML 디자이너에서 둘 이상의 요소를 그룹화하면 새로운 레이
 
 레이아웃 다시 설정 명령을 사용하여 요소의 특정 레이아웃 속성에 대한 기본값을 복원할 수 있습니다. 이 명령을 사용하여 요소의 여백, 맞춤, 너비, 높이 및 크기를 개별적으로 또는 전체적으로 다시 설정할 수 있습니다.
 
-요소 레이아웃을 다시 설정 하려면 문서 개요 창이 나 아트 보드에서 요소를 마우스 오른쪽 단추로 클릭 한 다음 **레이아웃** > **다시 설정** *PropertyName*을 선택 합니다. 여기서 *PropertyName* 은 다시 설정할 속성입니다. 또는 **레이아웃** > **모두 다시** 설정을 선택 하 여 요소의 모든 레이아웃 속성을 다시 설정 합니다.
+요소 레이아웃을 다시 설정 하려면 문서 개요 창이 나 아트 보드에서 요소를 마우스 오른쪽 단추로 클릭 한 다음 **레이아웃**  >  **다시** 설정 *PropertyName*을 선택 합니다. 여기서 *PropertyName* 은 다시 설정할 속성입니다. 또는 **레이아웃**  >  **모두 다시** 설정을 선택 하 여 요소의 모든 레이아웃 속성을 다시 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [XAML 디자이너를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

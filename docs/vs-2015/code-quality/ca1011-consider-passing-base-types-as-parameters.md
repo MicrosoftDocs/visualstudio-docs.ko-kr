@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f689dfd6c1d39bbd03d522a33ed8c5639a3da9f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545485"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: 기본 형식을 매개 변수로 전달해 보세요.
@@ -52,7 +52,7 @@ ms.locfileid: "85545485"
 
   이러한 경우 컴파일러 및 런타임에서 제공 하는 강력한 형식 검사 때문에 코드가 더 강력 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `ManipulateFileStream` 이 규칙을 위반 하는 개체에만 사용할 수 있는 메서드를 보여 줍니다 <xref:System.IO.FileStream> . 두 번째 메서드인 `ManipulateAnyStream` <xref:System.IO.FileStream> 는를 사용 하 여 매개 변수를 대체 하 여 규칙을 충족 합니다 <xref:System.IO.Stream> .
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]

@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2b3e06bb7a150c4bb07eefc0571818f1127fe460
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545121"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: XSLT 스크립트 실행이 안전하지 않습니다.
@@ -65,7 +65,7 @@ namespace TestNamespace
 } 
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.Xml;
@@ -111,7 +111,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```csharp
 using System.Xml;

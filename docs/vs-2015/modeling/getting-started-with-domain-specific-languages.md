@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543197"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>도메인별 언어 시작
@@ -34,10 +34,10 @@ ms.locfileid: "85543197"
 
  이 개요의 나머지 부분은에서 도메인별 언어를 만들고 사용 하는 기본 작업을 소개 하는 연습입니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
  DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
-|Product|다운로드 링크|
+|제품|다운로드 링크|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
@@ -94,7 +94,7 @@ ms.locfileid: "85543197"
 
 - **Dslpackage 프로젝트** 이 프로젝트에는에서 DSL 인스턴스를 열고 편집할 수 있도록 하는 코드가 포함 되어 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>DSL 실행
+## <a name="running-the-dsl"></a><a name="Debugging"></a> DSL 실행
  DSL 솔루션을 만든 후 바로 실행할 수 있습니다. 나중에 DSL 정의를 점진적으로 수정 하 여 각 변경 후에 솔루션을 다시 실행할 수 있습니다.
 
 #### <a name="to-experiment-with-the-dsl"></a>DSL을 사용 하 여 시험해 보려면
@@ -383,7 +383,7 @@ ms.locfileid: "85543197"
 
  자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>이전 실험적 Dsl 제거
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> 이전 실험적 Dsl 제거
  더 이상 원치 않는 실험적 Dsl을 만든 경우 실험적 인스턴스를 다시 설정 하 여 컴퓨터에서 제거할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
  그러면 모든 실험적 Dsl 및 기타 실험적 확장을 컴퓨터에서 제거 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다. 이러한 확장은 디버깅 모드에서 실행 된 확장입니다.
@@ -396,5 +396,5 @@ ms.locfileid: "85543197"
 
 2. 계속 사용 하려는 실험적 Dsl 또는 기타 실험적 확장을 다시 빌드합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md) [도메인별 언어](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 및 모델링 SDK](https://www.microsoft.com/download/details.aspx?id=48148) 를 정의 하는 방법

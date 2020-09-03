@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: dfbb9082d557c8e67ddebf0237293364d54a65cf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545134"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.
@@ -44,7 +44,7 @@ ms.locfileid: "85545134"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  Serialization 프로세스 중에 필드를 무시 해야 하는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 선택적 필드 및 역직렬화 이벤트 처리 메서드를 사용 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.OptionalFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OptionalFields/cs/FxCop.Usage.OptionalFields.cs#1)]

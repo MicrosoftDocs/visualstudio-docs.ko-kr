@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 520c9a066a4a902d5e9243baf1a8d8dec1b78e29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542404"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: 일반적인 예외 형식을 catch하지 마세요.
@@ -47,7 +47,7 @@ ms.locfileid: "85542404"
 > [!NOTE]
 > [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]부터 시작해서, CLR(공용 언어 런타임)은 관리 코드에서 처리되어야 하는 [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]의 액세스 위반과 같이 운영 체제 및 관리 코드에서 발생하는 손상된 상태 예외를 더 이상 제공하지 않습니다. 이상 버전에서 응용 프로그램을 컴파일하고 손상 된 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 상태 예외 처리를 유지 하려는 경우 <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 손상 된 상태 예외를 처리 하는 메서드에 특성을 적용할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 형식과 블록을 올바르게 구현 하는 형식을 보여 줍니다 `catch` .
 
  [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionAndSystemException/cpp/FxCop.Design.ExceptionAndSystemException.cpp#1)]

@@ -9,10 +9,10 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f7cbe9606b73741e1e59eb14f40cb277052944a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545082"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
@@ -132,17 +132,17 @@ ms.locfileid: "85545082"
 
  항목의 본문 (머리글 및 바닥글 제외)에는 페이지 링크, 메모 섹션, 축소 가능한 영역, 코드 조각, 언어별 텍스트의 섹션이 포함 됩니다.  제공 된 항목의 해당 영역에 대 한 자세한 내용은 브랜딩 섹션을 참조 하세요.
 
-1. 토픽 제목 태그를 추가 합니다.`<div class="title">Contoso Topic 4</div>`
+1. 토픽 제목 태그를 추가 합니다.  `<div class="title">Contoso Topic 4</div>`
 
-2. 참고 섹션 추가:`<div class="alert"> add your table tag and text </div>`
+2. 참고 섹션 추가: `<div class="alert"> add your table tag and text </div>`
 
-3. 축소 가능한 영역 추가:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 축소 가능한 영역 추가:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. 코드 조각을 추가 합니다.`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. 코드 조각을 추가 합니다.  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. 코드 언어 특정 텍스트 추가: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` devLangnu =를 사용 하면 다른 언어를 입력할 수 있습니다. 예를 들어 devLangnu = "포트란"은 코드 조각 DisplayLanguage = 포트란 인 경우 포트란을 표시 합니다.
+5. 코드 언어 특정 텍스트 추가:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` devLangnu =를 사용 하면 다른 언어를 입력할 수 있습니다. 예를 들어 devLangnu = "포트란"은 코드 조각 DisplayLanguage = 포트란 인 경우 포트란을 표시 합니다.
 
-6. 페이지 링크 추가:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. 페이지 링크 추가: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > 참고: 지원 되지 않는 새 "표시 언어" (예: F #, Cobol, 포트란)의 경우 코드 조각에서 코드 색 지정은 단색입니다.
@@ -436,24 +436,24 @@ some F# code
 
 기능: **CollapsibleArea** 사용: 축소 콘텐츠 컨트롤 텍스트 확장
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |ExpandText|Expand|
 |CollapseText|축소|
 
 기능:**codesnippet** 사용: 코드 조각 컨트롤 텍스트입니다.  참고: "중단 없는" 공간이 있는 코드 조각 콘텐츠가 공백으로 변경 됩니다.
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |CopyToClipboard|클립보드로 복사|
 |ViewColorizedText|색 보기|
 |CombinedVBTabDisplayLanguage|Visual Basic (샘플)|
 |VBDeclaration|선언|
-|VBUsage|사용|
+|VBUsage|사용량|
 
 기능: **피드백, 바닥글 및 로고** 사용: 고객에 게 전자 메일을 통해 현재 항목에 대 한 피드백을 제공할 피드백 컨트롤을 제공 합니다.  콘텐츠의 저작권 텍스트입니다.  로고 정의.
 
-|**요소**|**값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)**|
+|**Element**|**값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)**|
 |-|-|
 |저작권이|© 2013 Microsoft Corporation. All rights reserved.|
 |SendFeedback|\<a href="{0}" {1}>\</a>Microsoft에이 항목에 대 한 사용자 의견을 보냅니다.|
@@ -464,7 +464,7 @@ some F# code
 
 기능: **부인** 사용: 기계 번역 된 콘텐츠에 대 한 대/소문자 관련 된 대/소문자 집합입니다.
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |MT_Editable|이 문서는 기계 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다.|
 |MT_NonEditable|이 문서는 기계 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다.|
@@ -475,7 +475,7 @@ some F# code
 
 기능: **Linktable** 사용: 온라인 항목 링크에 대 한 지원
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |LinkTableTitle|테이블 연결|
 |TopicEnuLinkText|\</a>컴퓨터에서 사용할 수 있는이 항목의 영어 버전을 확인 합니다.|
@@ -484,7 +484,7 @@ some F# code
 
 기능: **비디오 오디오 컨트롤** 사용: 비디오 콘텐츠의 표시 요소 및 텍스트
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |Multimedian이상 지원 됨|콘텐츠를 지원 하려면 Internet Explorer 9 이상이 설치 되어 있어야 합니다 {0} .|
 |비디오 텍스트|비디오 표시|
@@ -494,7 +494,7 @@ some F# code
 
 기능: **콘텐츠가 설치 되지 않음 컨트롤** 사용: contentnotinstalled.htm 렌더링에 사용 되는 텍스트 요소 (문자열)
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |ContentNotInstalledTitle|컴퓨터에서 콘텐츠를 찾을 수 없습니다.|
 |ContentNotInstalledDownloadContentText|\<p>컴퓨터에 콘텐츠를 다운로드 하려면 \<a href="{0}" {1}> 관리 탭을 클릭 \</a> 합니다.\</p>|
@@ -502,7 +502,7 @@ some F# code
 
 기능: **항목을 찾을 수 없음 컨트롤** 사용: topicnotfound.htm의 렌더링에 사용 되는 텍스트 요소 (문자열)
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |TopicNotFoundTitle|컴퓨터에서 요청한 항목을 찾을 수 없습니다.|
 |TopicNotFoundViewOnlineText|\<p>요청한 항목을 컴퓨터에서 찾을 수 없지만 온라인에서 항목을 볼 수 있습니다 \<a href="{0}" {1}> \</a> .\</p>|
@@ -511,14 +511,14 @@ some F# code
 
 기능: **항목 손상 된 컨트롤** 사용: topiccorrupted.htm 렌더링에 사용 되는 텍스트 요소 (문자열)
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |TopicCorruptedTitle|요청한 항목을 표시할 수 없습니다.|
 |TopicCorruptedViewOnlineText|\<p>도움말 뷰어에서 요청한 항목을 표시할 수 없습니다. 항목의 내용 또는 기본 시스템 종속성에 오류가 있을 수 있습니다.\</p>|
 
 기능: **홈 페이지 컨트롤** 사용: 도움말 뷰어 최상위 노드 콘텐츠의 표시를 지 원하는 텍스트입니다.
 
-|**요소**|**값**|
+|**Element**|**값**|
 |-|-|
 |HomePageTitle|도움말 뷰어 홈|
 |HomePageIntroduction|\<p>Microsoft 도구, 제품, 기술 및 서비스를 사용 하는 모든 사용자에 게 필수적인 정보 원본인 Microsoft 도움말 뷰어를 시작 합니다. 도움말 뷰어를 사용 하면 방법 및 참조 정보, 샘플 코드, 기술 문서 등에 액세스할 수 있습니다. 필요한 콘텐츠를 찾으려면 목차를 찾아보거나 전체 텍스트 검색을 사용 하거나 키워드 인덱스를 사용 하 여 콘텐츠를 탐색 합니다.\</p>|
@@ -569,25 +569,25 @@ some F# code
 
  브랜딩 패키지에는 콘텐츠 사용자에 게 유용한 정보를 제공 하는 기능을 지 원하는 HTM 파일 집합이 포함 되어 있습니다. 예를 들어, 설치 되는 콘텐츠 집합을 설명 하는 섹션과 항목의 로컬 항목에서 항목을 찾을 수 없는 경우 사용자에 게 알려 주는 페이지가 포함 된 홈 페이지가 있습니다. 이러한 HTM 파일은 제품 별로 수정할 수 있습니다.  ISO 셸 공급 업체는 기본 브랜딩 패키지를 사용 하 여 이러한 페이지의 동작과 콘텐츠를 요구 사항에 맞게 변경할 수 있습니다.  이러한 파일은 브랜딩 태그가 branding.xml 파일에서 해당 콘텐츠를 가져오기 위해 각 브랜딩 패키지를 참조 합니다.
 
-|**최근에 사용한 파일**|**사용**|**표시 된 콘텐츠 원본**|
+|**파일**|**사용**|**표시 된 콘텐츠 원본**|
 |-|-|-|
 |homepage.htm|현재 설치 된 콘텐츠를 표시 하는 페이지 및 해당 콘텐츠에 대 한 사용자에 게 제공 되는 기타 모든 메시지입니다.  이 파일에는이 콘텐츠를 로컬 콘텐츠 TOC의 맨 위에 배치 하는 추가 메타 데이터 특성 "Microsoft.Help.Id" content = "-1"이 있습니다.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, 태그\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, 태그\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, 태그\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|책을 설치 하지 않은 경우 제목 섹션 Branding.xml 태그 \<HomePageInstalledBooks> , 응용 프로그램에서 생성 된 데이터 \<HomePageNoBooksInstalled> 입니다.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, 태그 \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, 태그 \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, 태그 \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|책을 설치 하지 않은 경우 제목 섹션 Branding.xml 태그 \<HomePageInstalledBooks> , 응용 프로그램에서 생성 된 데이터  \<HomePageNoBooksInstalled> 입니다.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|제목 섹션 Branding.xml 태그 \<HomePageHelpSettings> , 섹션 텍스트 \<HomePageHelpSettingsText> 입니다.|
 |topiccorrupted.htm|항목이 로컬 집합에 있지만 어떤 이유로 든 표시할 수 없는 경우 (손상 된 콘텐츠)||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, 태그\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, 태그\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, 태그 \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, 태그 \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|로컬 콘텐츠 집합에 항목이 없거나 온라인에서 사용할 수 없는 경우||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, 태그\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, 태그\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, 태그\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, 태그 \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, 태그 \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, 태그 \<TopicNotFoundText>|
 |contentnotinstalled.htm|제품에 대 한 로컬 콘텐츠가 설치 되어 있지 않은 경우||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, 태그\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, 태그\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, 태그\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, 태그 \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, 태그 \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, 태그 \<ContentNotInstalledText>|
 
  **CSS 파일**
 
@@ -603,7 +603,7 @@ some F# code
 
   Visual Studio 콘텐츠는 Visual Studio 로고 및 기타 그래픽을 표시 합니다.  Visual Studio 도움말 뷰어 브랜딩 패키지의 전체 그래픽 파일 목록은 아래와 같습니다.
 
-|**최근에 사용한 파일**|**사용**|**예**|
+|**파일**|**사용**|**예**|
 |-|-|-|
 |clear.gif|축소 가능한 영역을 렌더링 하는 데 사용 됩니다.||
 |footer_slice.gif|바닥글 프레젠테이션||
@@ -747,9 +747,9 @@ some F# code
 
   격리 된 셸 확장을 만들려면 다음을 수행 합니다.
 
-1. Visual Studio의 **파일**에서 **새 프로젝트**를 선택 하 고 **기타 프로젝트 형식** 에서 **확장성**을 선택한 다음 **Visual Studio Shell 격리**를 선택 합니다. 프로젝트 이름 `ContosoHelpShell` )을 사용 하 여 Visual Studio 격리 셸 템플릿을 기반으로 하는 확장성 프로젝트를 만듭니다.
+1. Visual Studio의 **파일**에서 **새 프로젝트**를 선택 하 고 **기타 프로젝트 형식** 에서 **확장성**을 선택한 다음  **Visual Studio Shell 격리**를 선택 합니다. 프로젝트 이름 `ContosoHelpShell` )을 사용 하 여 Visual Studio 격리 셸 템플릿을 기반으로 하는 확장성 프로젝트를 만듭니다.
 
-2. 솔루션 탐색기의 ContosoHelpShellUI 프로젝트에 있는 리소스 파일 폴더에서 ApplicationCommands. vsct를 엽니다. 이 줄이 주석 처리 되었는지 확인 합니다 ("No_Help" 검색).`<!-- <define name=“No_HelpMenuCommands”/> -->`
+2. 솔루션 탐색기의 ContosoHelpShellUI 프로젝트에 있는 리소스 파일 폴더에서 ApplicationCommands. vsct를 엽니다. 이 줄이 주석 처리 되었는지 확인 합니다 ("No_Help" 검색). `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
 3. F5 키를 선택 하 여 컴파일하고 **디버그**를 실행 합니다. 격리 된 셸 IDE의 실험적 인스턴스에서 **도움말** 메뉴를 선택 합니다. 도움말 **보기**, **도움말 콘텐츠 추가 및 제거**및 **도움말 기본 설정 명령 설정이** 표시 되는지 확인 합니다.
 
@@ -814,7 +814,7 @@ some F# code
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12
 
-     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]통합 셸:
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 통합 셸:
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 
