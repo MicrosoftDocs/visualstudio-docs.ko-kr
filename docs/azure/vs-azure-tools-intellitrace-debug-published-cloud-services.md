@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
 ms.openlocfilehash: 1e4de25f3d1b00459128b89bc5559f55cec8f077
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280598"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio 및 IntelliTrace를 사용하여 게시된 Azure 클라우드 서비스 디버깅

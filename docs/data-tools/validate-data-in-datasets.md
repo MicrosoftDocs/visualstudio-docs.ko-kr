@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281086"
 ---
 # <a name="validate-data-in-datasets"></a>데이터 세트의 데이터 유효성 검사
@@ -207,7 +207,7 @@ ms.locfileid: "85281086"
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [방법: DataGridView 컨트롤 Windows Forms의 데이터 유효성 검사](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)

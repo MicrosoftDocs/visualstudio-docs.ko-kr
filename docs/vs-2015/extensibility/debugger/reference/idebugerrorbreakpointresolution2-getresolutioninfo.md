@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: 'IDebugErrorBreakpointResolution2:: GetResolutionInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 79370105be84150f98a788e59c50367fbb68f1ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149006"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
@@ -42,16 +42,16 @@ int GetResolutionInfo( 
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 플래그의 조합을 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) 의 필드를 결정 하는 열거형 `pErrorResolutionInfo` 작성 됩니다.  
+ 진행 채울 필드를 결정 하는 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) 열거형의 플래그 조합입니다 `pErrorResolutionInfo` .  
   
  `pErrorResolutionInfo`  
- [out에서] 합니다 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조 채워진 중단점 해결에 대 한 설명을 사용 하 여 로그인 합니다.  
+ [in, out] 중단점 확인에 대 한 설명과 함께 채워지는 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 `CDebugErrorBreakpointResolution` 노출 하는 개체를 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `CDebugErrorBreakpointResolution` [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 합니다.  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(  
@@ -151,7 +151,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 }    
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
  [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21c7777be710f0175708629eb9507b34f0d70be2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660445"
 ---
 # <a name="sample-excel-extension-element-classes"></a>샘플 Excel 확장: 요소 클래스
@@ -49,6 +49,6 @@ ms.locfileid: "72660445"
 
  `Utilities` 클래스에는 UI에 대한 여러 정보를 반환하는 도우미 메서드가 있습니다. **USER32.DLL**, **OLEACC.DLL** 등의 외부 시스템 DLL을 직접 호출하여 UI에서 창 핸들을 가져오는 메서드도 있습니다<strong>.</strong>
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  <xref:System.Runtime.InteropServices.ComVisibleAttribute> <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>
  [Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

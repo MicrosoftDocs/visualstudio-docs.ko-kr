@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184434"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 요소(ClickOnce 애플리케이션)
 애플리케이션을 클라이언트 컴퓨터에서 실행하는 데 필요한 최소 보안 권한을 설명합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -142,7 +142,7 @@ ms.locfileid: "84184434"
 
 - `Level`
 
-   필수 요소. 애플리케이션이 요청하는 보안 수준을 나타냅니다. 가능한 값은
+   필수 요소. 애플리케이션이 요청하는 보안 수준을 나타냅니다. 가능한 값은 다음과 같습니다.
 
    `asInvoker`, 추가 권한을 요청하지 않습니다. 이 수준에서는 추가 신뢰 프롬프트를 요구하지 않습니다.
 
@@ -163,7 +163,7 @@ ms.locfileid: "84184434"
 
  권한 상승에 대 한 자세한 내용은 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)을 참조 하세요. 정책 배포에 대한 자세한 내용은 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)의 내용을 를 참조하세요.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
  다음 세 가지 코드 예제는 `trustInfo` 배포의 애플리케이션 매니페스트에서 사용할 수 있는 기본 명명된 보안 영역(Internet, LocalIntranet, FullTrust)에 대한 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 요소를 설명합니다.
 
  첫 번째 예제는 Internet 보안 영역에서 사용할 수 있는 기본 권한에 대한 `trustInfo` 요소를 설명합니다.
@@ -267,6 +267,6 @@ ms.locfileid: "84184434"
 </trustInfo>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

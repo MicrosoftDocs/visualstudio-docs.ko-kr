@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 0fbed333efef21708c5ed57bda9e61cf1efda42f
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68201779"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89323428"
 ---
 XBAP

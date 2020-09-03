@@ -11,10 +11,10 @@ caps.latest.revision: 41
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660682"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>최선의 코딩된 UI 테스트 방법
@@ -49,7 +49,7 @@ ms.locfileid: "72660682"
 
 - 테스트 대상 애플리케이션에서 UI 컨트롤을 만들 때 의미 있는 이름을 사용합니다. 이렇게 하면 자동으로 생성된 컨트롤 이름에 더 많은 의미와 유용성이 제공됩니다.
 
-- API로 코딩 하 여 어설션을 만드는 경우 `UIMap.cs` 파일에 있는 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스 부분에 각 어설션에 대 한 메서드를 만듭니다. 어설션을 실행하려면 테스트 메서드에서 이 메서드를 호출합니다.
+- API로 코딩 하 여 어설션을 만드는 경우 파일에 있는 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스 부분에 각 어설션에 대 한 메서드를 만듭니다 `UIMap.cs` . 어설션을 실행하려면 테스트 메서드에서 이 메서드를 호출합니다.
 
 - API로 직접 코딩하는 경우 `UIMap.Designer.cs` 파일에 생성된 클래스의 속성 및 메서드를 코드에서 가능한 한 많이 사용합니다. 이러한 클래스는 작업을 더 쉽고 안정적으로 만들며 생산성 향상에 도움이 됩니다.
 
@@ -86,11 +86,11 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
-- [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
-- [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
-- [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
+- [코딩 된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
+- [여러 UI 맵을 사용 하 여 규모가 많은 응용 프로그램 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [코딩 된 UI 테스트 및 작업 기록에 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

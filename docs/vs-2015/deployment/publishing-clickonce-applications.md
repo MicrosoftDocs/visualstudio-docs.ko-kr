@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 209aac56f4648554ce619cbe31cef19a8ab1fed7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531796"
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce 애플리케이션 게시
@@ -64,7 +64,7 @@ ms.locfileid: "85531796"
 ### <a name="application-files-dialog-box"></a>애플리케이션 파일 대화 상자  
  이 대화 상자에서는 프로젝트의 파일이 게시, 동작 다운로드 및 업데이트용으로 분류되는 방법을 지정할 수 있습니다. 이 대화 상자에 포함된 표에는 기본적으로 제외되지 않거나 다운로드 그룹이 있는 프로젝트 파일이 나열됩니다.  
   
- 파일을 제외 하 고, 파일을 데이터 파일 또는 필수 구성 요소로 표시 하 고, Visual Studio UI에서 조건부 설치용 파일 그룹을 만들려면 [방법: ClickOnce에서 게시할 파일 지정](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)을 참조 하세요. Mage.exe를 사용하여 데이터 파일을 표시할 수도 있습니다. 자세한 내용은 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)을 참조하세요.  
+ 파일을 제외 하 고, 파일을 데이터 파일 또는 필수 구성 요소로 표시 하 고, Visual Studio UI에서 조건부 설치용 파일 그룹을 만들려면 [방법: ClickOnce에서 게시할 파일 지정](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)을 참조 하세요. Mage.exe를 사용하여 데이터 파일을 표시할 수도 있습니다. 자세한 내용은 [방법: ClickOnce 애플리케이션에 데이터 파일 포함](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)을 참조하세요.  
   
 ### <a name="prerequisites-dialog-box"></a>필수 조건 대화 상자  
  이 대화 상자에서는 설치되는 필수 구성 요소 및 해당 설치 방법을 지정합니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) 및 [필수 구성 요소 대화 상자](../ide/reference/prerequisites-dialog-box.md)를 참조 하세요.  
@@ -96,13 +96,13 @@ ms.locfileid: "85531796"
 |[연습: 디자이너를 사용 하 여 ClickOnce 배포 API에서 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|애플리케이션 어셈블리를 애플리케이션에서 처음 사용할 때만 디자이너를 사용하여 다운로드하는 방법을 설명합니다.|  
 |[연습: ClickOnce 배포 API에서 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|애플리케이션 어셈블리를 애플리케이션에서 처음 사용할 때만 다운로드하는 방법을 설명합니다.|  
 |[연습: ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|위성 어셈블리를 선택적 항목으로 표시하고 클라이언트 컴퓨터의 현재 문화권 설정에 필요한 어셈블리만 다운로드하는 방법을 설명합니다.|  
-|[연습: ClickOnce 애플리케이션 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework 유틸리티를 사용하여 ClickOnce 애플리케이션을 배포하는 방법을 설명합니다.|  
+|[연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework 유틸리티를 사용하여 ClickOnce 애플리케이션을 배포하는 방법을 설명합니다.|  
 |[연습: 다시 서명할 필요가 없고 브랜딩 정보를 유지 하는 ClickOnce 응용 프로그램 수동 배포](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|.NET Framework 유틸리티를 사용하여 매니페스트를 다시 서명하지 않고 ClickOnce 애플리케이션을 배포하는 방법을 설명합니다.|  
 |[NIB: 방법: 특정 CPU 종류에 대 한 응용 프로그램 최적화](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|프로젝트에서 **대상 CPU** 또는 **플랫폼 대상** 속성을 변경하여 64비트 프로세서용으로 프로젝트를 게시하는 방법을 설명합니다.|  
 |[연습: ClickOnce 응용 프로그램이 여러 .NET Framework 버전에서 실행 되도록 설정](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|ClickOnce 애플리케이션을 여러 .NET Framework 버전에 설치하고 실행할 수 있도록 설정하는 방법을 설명합니다.|  
 |[연습: ClickOnce 애플리케이션용 사용자 지정 설치 관리자 만들기](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|ClickOnce 애플리케이션을 설치하는 사용자 지정 설치 관리자를 만드는 방법을 설명합니다.|  
 |[방법: 비주얼 스타일을 사용 하 여 WPF 응용 프로그램 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|비주얼 스타일을 사용하는 WPF 애플리케이션을 게시할 때 발생하는 오류를 해결하기 위한 단계별 지침을 제공합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 참조](../deployment/clickonce-reference.md)

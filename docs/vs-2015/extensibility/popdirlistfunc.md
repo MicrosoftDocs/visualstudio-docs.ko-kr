@@ -13,18 +13,18 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77e4701d3d8ec54fd37d6483f55b10a28af65b15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194056"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이에 지정 된 콜백 함수는 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 디렉터리 및 (선택 사항)는 소스 제어 중인 파일 이름 컬렉션을 업데이트 하는 함수입니다.  
+이 함수는 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 함수에 제공 되는 콜백 함수로, 디렉터리 및 파일 이름 (선택 사항)의 컬렉션을 업데이트 하 여 소스 제어에서 찾을 수 있도록 합니다.  
   
- `POPDIRLISTFUNC` 콜백 해당 디렉터리 및 파일 이름에 대해서만 호출 해야 (에 지정 된 목록에는 `SccPopulateDirList` 함수) 소스 제어에서 실제로 합니다.  
+ `POPDIRLISTFUNC`콜백은 실제로 소스 제어에 있는 해당 디렉터리와 파일 이름 (함수에 지정 된 목록)에 대해서만 호출 해야 합니다 `SccPopulateDirList` .  
   
 ## <a name="signature"></a>서명  
   
@@ -38,27 +38,27 @@ typedef BOOL (*POPDIRLISTFUNC)(
   
 ## <a name="parameters"></a>매개 변수  
  pvCallerData  
- [in] 에 제공 된 사용자 값 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)합니다.  
+ 진행 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)에 지정 된 사용자 값입니다.  
   
  bFolder  
- [in] `TRUE` 경우에서 이름을 `lpDirectoryOrFileName` ; 디렉터리가 파일 이름을 이름은 그렇지 않은 경우.  
+ [in] `TRUE` 의 이름이 디렉터리 이면이 고, `lpDirectoryOrFileName` 그렇지 않으면 파일 이름입니다.  
   
  lpDirectoryOrFileName  
- [in] 소스 코드 제어에서 관리 되는 디렉터리 또는 파일 이름에 전체 로컬 경로입니다.  
+ 진행 소스 코드 제어 아래에 있는 디렉터리 또는 파일 이름의 전체 로컬 경로입니다.  
   
 ## <a name="return-value"></a>반환 값  
- IDE에는 적절 한 오류 코드를 반환합니다.  
+ IDE에서 적절 한 오류 코드를 반환 합니다.  
   
-|값|Description|  
+|값|설명|  
 |-----------|-----------------|  
-|SCC_OK|계속 처리 합니다.|  
-|SCC_I_OPERATIONCANCELED|처리를 중지 합니다.|  
-|SCC_E_xxx|적절 한 원본 제어 오류 처리를 중지 해야 합니다.|  
+|SCC_OK|처리를 계속합니다.|  
+|SCC_I_OPERATIONCANCELED|처리를 중지합니다.|  
+|SCC_E_xxx|적절 한 소스 제어 오류는 처리를 중지 해야 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 경우는 `fOptions` 의 매개 변수를 `SccPopulateDirList` 함수에 포함 되어는 `SCC_PDL_INCLUDEFILES` 플래그, 디렉터리 이름 뿐만 아니라 파일 이름에 가능한 목록 포함 됩니다.  
+ `fOptions`함수의 매개 변수에 `SccPopulateDirList` 플래그가 포함 된 경우 `SCC_PDL_INCLUDEFILES` 목록에는 디렉터리 이름 뿐만 아니라 파일 이름도 포함 될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>관련 항목  
+ [IDE에서 구현 하는 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [오류 코드](../extensibility/error-codes.md)

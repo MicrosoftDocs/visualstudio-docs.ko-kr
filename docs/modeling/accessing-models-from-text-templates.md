@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531471"
 ---
 # <a name="access-models-from-text-templates"></a>텍스트 템플릿에서 모델에 액세스
@@ -61,7 +61,7 @@ Here is a list of elements in the model:
 
 - 코드 조각이 작성 되는 언어는 c # 이지만 모든 종류의 텍스트를 생성할 수 있습니다. 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 지시문에 속성을 추가 하 여에서 코드를 작성할 수 있습니다 `language="VB"` `template` .
 
-- 템플릿을 디버깅 하려면 `debug="true"` 지시문에를 추가 합니다 `template` . 예외가 발생 하는 경우 템플릿은 Visual Studio의 다른 인스턴스에서 열립니다. 코드의 특정 지점에서 디버거를 중단 하려면 문을 삽입 합니다.`System.Diagnostics.Debugger.Break();`
+- 템플릿을 디버깅 하려면 `debug="true"` 지시문에를 추가 합니다 `template` . 예외가 발생 하는 경우 템플릿은 Visual Studio의 다른 인스턴스에서 열립니다. 코드의 특정 지점에서 디버거를 중단 하려면 문을 삽입 합니다. `System.Diagnostics.Debugger.Break();`
 
    자세한 내용은 [T4 텍스트 템플릿 디버깅](../modeling/debugging-a-t4-text-template.md)을 참조 하세요.
 
@@ -95,7 +95,7 @@ Here is a list of elements in the model:
 
    오류가 발견 되 면 오류 창에 보고 되며 결과 파일에는 오류 메시지가 포함 됩니다.
 
-## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>텍스트 템플릿에서 여러 모델 액세스
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> 텍스트 템플릿에서 여러 모델 액세스
 
 > [!NOTE]
 > 이 방법을 사용 하면 동일한 템플릿에서 여러 모델을 읽을 수 있지만 ModelBus 참조는 지원 하지 않습니다. ModelBus 참조를 사용 하 여 interlinked 모델을 읽으려면 [텍스트 템플릿에서 Visual Studio ModelBus 사용](../modeling/using-visual-studio-modelbus-in-a-text-template.md)을 참조 하세요.
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt`는 `LoopTemplate.t4` 를 호출한 다음 결과 파일을 해당 세그먼트로 분할 합니다. 이 템플릿은 모델을 읽지 않기 때문에 모델링 템플릿이 될 필요는 없습니다.
+ `LoopSplitter.tt` 는 `LoopTemplate.t4` 를 호출한 다음 결과 파일을 해당 세그먼트로 분할 합니다. 이 템플릿은 모델을 읽지 않기 때문에 모델링 템플릿이 될 필요는 없습니다.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

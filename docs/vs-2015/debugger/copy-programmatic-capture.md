@@ -1,5 +1,5 @@
 ---
-title: 복사 (프로그램 방식 캡처) | Microsoft Docs
+title: 복사(프로그래밍 방식 캡처) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa79ffc2081ba92b905838658fe6aa758a675192
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161507"
 ---
 # <a name="copy-programmatic-capture"></a>복사(프로그램 방식 캡처)

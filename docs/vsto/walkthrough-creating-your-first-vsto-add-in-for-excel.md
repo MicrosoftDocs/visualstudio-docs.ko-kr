@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69548009"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>연습: Excel 용 첫 VSTO 추가 기능 만들기
@@ -41,8 +41,8 @@ ms.locfileid: "69548009"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>전제 조건
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -66,12 +66,12 @@ ms.locfileid: "69548009"
 
 7. **확인**을 클릭합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 **FirstExcelAddIn** 프로젝트를 만들고 ThisAddIn 코드 파일을 편집기에서 엽니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstexcel 추가 기능** 프로젝트를 만들고 ThisAddIn 코드 파일을 편집기에서 엽니다.
 
 ## <a name="write-code-to-add-text-to-the-saved-workbook"></a>저장 된 통합 문서에 텍스트를 추가 하는 코드 작성
  다음 작업으로, ThisAddIn 코드 파일에 코드를 추가합니다. 새 코드에서는 Excel의 개체 모델을 사용하여 현재 워크시트의 첫 행에 상용구 텍스트를 삽입합니다. 현재 워크시트는 사용자가 통합 문서를 저장할 때 열려 있는 워크시트입니다. 기본적으로 ThisAddIn 코드 파일에는 다음과 같은 생성된 코드가 포함되어 있습니다.
 
-- `ThisAddIn` 클래스의 부분 정의. 이 클래스는 코드의 진입점을 제공하고 Excel의 개체 모델에 대한 액세스를 제공합니다. 자세한 내용은 [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요. `ThisAddIn` 클래스의 나머지 부분은 수정해서는 안 되는 숨김 코드 파일에서 정의됩니다.
+- `ThisAddIn` 클래스의 부분 정의. 이 클래스는 코드의 진입점을 제공하고 Excel의 개체 모델에 대한 액세스를 제공합니다. 자세한 내용은 [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요. 클래스의 나머지 부분은 `ThisAddIn` 수정 하지 않아야 하는 숨겨진 코드 파일에 정의 됩니다.
 
 - `ThisAddIn_Startup` 및 `ThisAddIn_Shutdown` 이벤트 처리기. 이러한 이벤트 처리기는 Excel에서 VSTO 추가 기능을 로드하고 언로드할 때 호출됩니다. 이러한 이벤트 처리기를 사용하여 VSTO 추가 기능이 로드될 때 VSTO 추가 기능을 초기화하고 추가 기능이 언로드될 때 추가 기능에서 사용하는 리소스를 정리할 수 있습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.
 
@@ -90,7 +90,7 @@ ms.locfileid: "69548009"
 
    통합 문서가 저장될 때 통합 문서를 수정하기 위해 앞의 코드 예제에서는 다음 개체를 사용합니다.
 
-- `ThisAddIn` 클래스의 `Application` 필드. `Application` 필드는 Excel의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.Excel.Application> 개체를 반환합니다.
+- `Application` 클래스의 `ThisAddIn` 필드. `Application` 필드는 Excel의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.Excel.Application> 개체를 반환합니다.
 
 - `Wb` 이벤트에 대한 이벤트 처리기의 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 매개 변수입니다. `Wb` 매개 변수는 저장된 통합 문서를 나타내는 <xref:Microsoft.Office.Interop.Excel.Workbook> 개체입니다. 자세한 내용은 [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)를 참조 하세요.
 
@@ -120,19 +120,19 @@ ms.locfileid: "69548009"
 ## <a name="next-steps"></a>다음 단계
  기본적인 Excel용 VSTO 추가 기능을 만들었으므로 다음 항목에서 VSTO 추가 기능을 개발하는 방법에 대해 자세히 알아볼 수 있습니다.
 
-- VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [VSTO 추가 기능을 프로그래밍](../vsto/programming-vsto-add-ins.md)합니다.
+- VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [Vsto 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md).
 
-- Excel VSTO 추가 기능과 관련 된 프로그래밍 작업: [Excel 솔루션](../vsto/excel-solutions.md).
+- Excel VSTO 추가 기능과 관련 된 프로그래밍 작업: [excel 솔루션](../vsto/excel-solutions.md).
 
-- Excel의 개체 모델 사용: [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md).
+- Excel 개체 모델 사용: [excel 개체 모델 개요](../vsto/excel-object-model-overview.md)
 
-- 예를 들어 리본의 사용자 지정 탭을 추가 하거나 사용자 지정 작업창을 만들어 Excel의 UI (사용자 인터페이스)를 사용자 지정 합니다. [OFFICE UI 사용자 지정](../vsto/office-ui-customization.md).
+- 예를 들어 리본의 사용자 지정 탭을 추가 하거나 사용자 고유의 사용자 지정 작업창을 만드는 등의 방법으로 Excel의 UI (사용자 인터페이스) 사용자 지정: [OFFICE ui 사용자](../vsto/office-ui-customization.md)지정.
 
-- Excel 용 VSTO 추가 기능 빌드 및 디버그: [Office 솔루션을 빌드합니다](../vsto/building-office-solutions.md).
+- Excel 용 VSTO 추가 기능 빌드 및 디버그: [Office 솔루션 빌드](../vsto/building-office-solutions.md)
 
 - Excel 용 VSTO 추가 기능 배포: [Office 솔루션을 배포](../vsto/deploying-an-office-solution.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel 솔루션](../vsto/excel-solutions.md)
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)

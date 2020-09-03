@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531406"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder를 사용하십시오.
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대 한 최신 설명서는 [DA0001:를 사용](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)하는 경우 StringBuilder 사용을 참조 하세요.  

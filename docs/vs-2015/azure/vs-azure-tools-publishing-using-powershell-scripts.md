@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184018"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시
@@ -252,7 +252,7 @@ Azure에 단일 프로덕션 사이트가 아닌 여러 배포 환경(슬롯이�
         #Write a function to build and package your web application
     ```
 
-    웹 애플리케이션을 빌드하려면 MsBuild.exe를 사용합니다. 도움말은 다음에서 MSBuild 명령줄 참조를 참조 하세요.[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    웹 애플리케이션을 빌드하려면 MsBuild.exe를 사용합니다. 도움말은 다음에서 MSBuild 명령줄 참조를 참조 하세요. [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -308,11 +308,11 @@ return $WebDeployPackage
     애플리케이션 테스트를 자동화하려면 `Test-WebApplication`에 코드를 추가합니다. 이러한 함수가 호출되는 **Publish-WebApplication.ps1** 의 줄에서 주석 처리를 제거합니다. 구현을 제공하지 않을 경우 Visual Studio로 프로젝트를 수동으로 빌드한 다음 게시 스크립트를 실행하여 Azure에 게시합니다.
 
 ## <a name="publishing-function-summary"></a>게시 함수 요약
-Windows PowerShell 명령 프롬프트에서 사용할 수 있는 함수에 대한 도움말을 보려면 `Get-Help function-name`명령을 사용합니다. 도움말에는 매개 변수 도움말과 예제가 포함됩니다. 동일한 도움말 텍스트는 스크립트 소스 파일 **azurewebapppublishmodule.psm1. .psm1** 및 **publish-webapplication.ps1**에도 있습니다. 스크립트와 도움말은 Visual Studio 언어로 현지화됩니다.
+Windows PowerShell 명령 프롬프트에서 사용할 수 있는 함수에 대한 도움말을 보려면 `Get-Help function-name`명령을 사용합니다. 도움말에는 매개 변수 도움말과 예제가 포함됩니다. 동일한 도움말 텍스트가 스크립트 소스 파일 **azurewebapppublishmodule.psm1. .psm1** 및 **Publish-WebApplication.ps1**에도 있습니다. 스크립트와 도움말은 Visual Studio 언어로 현지화됩니다.
 
 **AzureWebAppPublishModule**
 
-| 함수 이름 | 설명 |
+| 함수 이름 | Description |
 | --- | --- |
 | Add-AzureSQLDatabase |새 Azure SQL 데이터베이스를 만듭니다. |
 | Add-AzureSQLDatabases |Visual Studio에서 생성하는 JSON 구성 파일의 값으로 Azure SQL 데이터베이스를 만듭니다. |
@@ -341,7 +341,7 @@ Windows PowerShell 명령 프롬프트에서 사용할 수 있는 함수에 대�
 
 **Publish-WebApplication**
 
-| 함수 이름 | 설명 |
+| 함수 이름 | Description |
 | --- | --- |
 | New-AzureWebApplicationEnvironment |웹 사이트, 가상 머신과 같은 Azure 리소스를 만듭니다. |
 | New-WebDeployPackage |이 함수는 구현되지 않았습니다. 이 함수에 명령을 추가하여 프로젝트를 빌드할 수 있습니다. |

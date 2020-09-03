@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192745"
 ---
 # <a name="graphics-event-call-stack"></a>그래픽 이벤트 호출 스택
@@ -25,7 +25,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 호출 스택을 사용�
   
  아래 그림은 이벤트 호출 스택 창입니다.  
   
- ![호출 스택 이전 DrawIndexed 이벤트입니다. ](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![DrawIndexed 이벤트에 앞서 수행되는 호출 스택입니다.](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>그래픽 이벤트 호출 스택 이해  
  이벤트 호출 스택을 사용하면 특정 Direct3D 이벤트를 발생시킨 실행 흐름을 파악할 수 있습니다. 실행 중인 앱 내 활성 스레드의 현재 호출 스택이 표시되는 대신 선택한 Direct3D 이벤트가 발생한 시점의 호출 스택이 표시된다는 점을 제외하면 그래픽 이벤트 호출 스택은 Visual Studio 호출 스택 창과 비슷합니다. 이벤트 호출 스택에서 선택한 Direct3D 이벤트의 호출 사이트로 이동하여 주변 코드를 검사할 수 있습니다.  
@@ -44,5 +44,5 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 호출 스택을 사용�
 ### <a name="links-to-graphics-objects"></a>그래픽 개체에 대한 링크  
  선택한 그래픽 이벤트를 파악하려면 해당 이벤트와 연결된 Direct3D 개체에 대한 정보가 필요할 수 있습니다. **그래픽 이벤트 호출 스택** 창에서 이 정보에 대한 링크를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: 꼭짓점 음영으로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
