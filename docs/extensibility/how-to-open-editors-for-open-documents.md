@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905820"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>방법: 열려 있는 문서에 대 한 편집기 열기
@@ -52,7 +52,7 @@ ms.locfileid: "85905820"
 
 2. 문서가 열려 있지 않으면 [방법: 표준 편집기 열기](../extensibility/how-to-open-standard-editors.md)의 단계를 완료 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [프로젝트 항목 열기 및 저장](../extensibility/internals/opening-and-saving-project-items.md)
 - [방법: 프로젝트 관련 편집기 열기](../extensibility/how-to-open-project-specific-editors.md)
 - [방법: 표준 편집기 열기](../extensibility/how-to-open-standard-editors.md)

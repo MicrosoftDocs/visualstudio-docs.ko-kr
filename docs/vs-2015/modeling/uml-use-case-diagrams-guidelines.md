@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302841"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 사용 사례 다이어그램: 지침
@@ -59,7 +59,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
    사용 사례 다이어그램은 시스템 또는 해당 하위 시스템에서 지원하는 사용 사례를 표시할 수 있습니다.
 
-## <a name="BasicSteps"></a>사용 사례 다이어그램을 그리는 기본 단계
+## <a name="basic-steps-for-drawing-use-case-diagrams"></a><a name="BasicSteps"></a> 사용 사례 다이어그램을 그리는 기본 단계
 
 > [!NOTE]
 > 모델링 다이어그램을 만드는 자세한 단계는 [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)에 설명 되어 있습니다.
@@ -110,7 +110,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
 7. 관련된 사용 사례의 서로 다른 하위 시스템이나 그룹에 초점을 두는 별도 다이어그램을 그립니다. 한 모델링 프로젝트의 모든 다이어그램은 동일한 모델의 뷰입니다.
 
-## <a name="Actors"></a>행위자 및 사용 사례 그리기
+## <a name="drawing-actors-and-use-cases"></a><a name="Actors"></a> 행위자 및 사용 사례 그리기
  사용 사례 다이어그램의 주요 목적은 시스템과 상호 작용하는 사용자 및 이를 통해 달성하는 주요 목표를 표시하는 것입니다.
 
 - **작업자** 를 만들어 시스템 또는 하위 시스템과 상호 작용 하는 사용자, 조직, 기타 시스템, 소프트웨어 또는 장치의 클래스를 나타냅니다.
@@ -157,7 +157,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 ### <a name="multiplicities-between-actors-and-use-cases"></a>행위자 및 사용 사례 간의 복합성
  행위자와 사용 사례 간의 연결에는 각 끝에 *복합성이* 표시 될 수 있습니다.
 
- ![행위자를 사용 하는 일대일 사용 사례](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
+ ![행위자가 포함된 일대일 사용 사례](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
 
 > [!NOTE]
 > 사용 사례 다이어그램의 연결 복합성은 둘 다 **1**인 경우 숨겨집니다.
@@ -166,15 +166,15 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
  이러한 복합성을 변경할 수 있습니다.
 
- 예를 들면 다음과 같습니다.
+ 예:
 
  ![다대다 복합성을 보여 주는 사용 사례](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- 동일한 클래스의 여러 행위자가 하나의 사용 사례에 포함 될 수 있음을 명시 하려면 연결의 행위자 끝에 있는 복합성을 **1..\*** 로 설정 합니다.
+- 동일한 클래스의 여러 행위자가 하나의 사용 사례에 포함 될 수 있음을 명시 하려면 연결의 행위자 끝에서 복합성을 **1 ... \* **로 설정 합니다.
 
    그림에서는 하나 이상의 식당이 동일한 음식 주문 수행에 참여할 수 있습니다.
 
-- 여러 번의 사용 사례에서 각 행위자가 동시에 참여할 수 있음을 표시 하려면 연결의 사용 사례 끝에서 복합성을 **\*** 로 설정 합니다.
+- 여러 번의 사용 사례에서 각 행위자가 동시에 참여할 수 있음을 표시 하려면 연결의 사용 사례 끝에서 복합성을로 설정 **\*** 합니다.
 
    그림에서는 각 식당이 한 번에 두 개 이상의 주문을 수행할 수 있습니다.
 
@@ -190,17 +190,17 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
    - **1** 을 통해이 역할의 인스턴스가 각 링크에 참여 하는 것을 알 수 있습니다.
 
-   - **1.\*** 이 역할의 인스턴스 중 하나 이상이 각 링크에 참여 하는 상태를 말합니다.
+   - **1.. \* ** 이 역할의 인스턴스 중 하나 이상이 각 링크에 참여 함을 나타내는 것입니다.
 
    - **0 ..1** -참여가 선택 사항인 상태를 지정 합니다.
 
-   - 이 역할의 인스턴스가 0 개 이상 링크에 참여 하는 상태를 **\*** 합니다.
+   - **\*** 이 역할의 인스턴스가 0 개 이상 링크에 참여 하는 것을 말합니다.
 
 > [!NOTE]
 > 대부분의 팀은 사용 사례 다이어그램에 복합성 정보를 배치하지 않고 복합성을 기본값 1로 그대로 둡니다. 대신, 사용 사례에 대한 별도 설명에서 정보를 제공합니다. 이 경우 사용 사례 다이어그램의 복합성이 모두 숨겨집니다.
 
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>여러 다이어그램에서 행위자 또는 사용 사례 사용
- 여러 다이어그램에 동일한 행위자 및 사용 사례를 표시할 수 있습니다. 예를 들면 다음과 같습니다.
+ 여러 다이어그램에 동일한 행위자 및 사용 사례를 표시할 수 있습니다. 예:
 
 - 한 행위자와 관련된 여러 사용 사례를 서로 다른 다이어그램에서 설명할 수 있습니다.
 
@@ -217,7 +217,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
     > [!NOTE]
     > 이미 연결된 행위자 및 사용 사례를 새 다이어그램에 배치하면 항목 간의 연결이 새 다이어그램에 자동으로 표시됩니다.
 
-## <a name="Details"></a>사용 사례에 대 한 자세한 설명
+## <a name="describing-use-cases-in-detail"></a><a name="Details"></a> 사용 사례에 대 한 자세한 설명
  사용 사례는 다음을 나타냅니다.
 
 - **식사 구매**와 같이 시스템을 사용 하는 행위자의 목표 하거나
@@ -270,7 +270,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>공유 문서, OneNote 요소 또는 웹 페이지에 연결하려면
 
-1. 공유 요소의 URL을 가져옵니다. 예를 들어 '\\\\'로 시작 하는 네트워크 파일 경로 또는 ' http://'로 시작 하는 웹 페이지 또는 Sharepoint URL 이거나, ' onenote: '로 시작 하는 OneNote 섹션, 페이지 또는 단락에 대 한 링크가 될 수 있습니다.
+1. 공유 요소의 URL을 가져옵니다. 예를 들어 ' '로 시작 하는 네트워크 파일 경로 또는 ' http://'로 시작 하는 \\ \\ 웹 페이지 또는 Sharepoint URL 이거나, ' onenote: '를 시작 하는 onenote 섹션, 페이지 또는 단락에 대 한 링크 일 수 있습니다.
 
 2. 도구 상자에서 **아티팩트** 를 클릭 한 다음 사용 사례 다이어그램을 클릭 합니다.
 
@@ -280,9 +280,9 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 > 아티팩트를 두 번 클릭하여 연결하는 다이어그램 또는 문서를 열 수 있습니다.
 
 ### <a name="linking-use-cases-to-work-items"></a>작업 항목에 사용 사례 연결
- 프로젝트에서 [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] 사용 하 고 [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]있는 경우 각 사용 사례를 [!INCLUDE[esprfound](../includes/esprfound-md.md)]의 작업 항목에 연결할 수 있습니다. 이러한 링크를 만드는 방법을 알아보려면 [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)을 참조 하세요.
+ 프로젝트에서를 사용 하 [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] 고 있는 경우 [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] 각 사용 사례를의 작업 항목에 연결할 수 있습니다 [!INCLUDE[esprfound](../includes/esprfound-md.md)] . 이러한 링크를 만드는 방법을 알아보려면 [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)을 참조 하세요.
 
- 이렇게 하면 다음을 수행할 수 있습니다.
+ 다음을 수행할 수 있습니다.
 
 - 연결된 작업 항목에서 사용 사례를 설명합니다. 특히, 프로젝트에서 Visual Studio 공식 프로세스 템플릿을 사용하는 경우 사용 사례 작업 항목에 연결할 수 있습니다. 이 작업 항목 형식은 사용 사례의 목표와 시나리오를 설명하기 위한 필드를 제공합니다.
 
@@ -290,7 +290,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
 - 개발 작업의 진행률을 추적할 수 있도록 사용 사례에 작업을 연결합니다.
 
-## <a name="Structuring"></a>사용 사례 구조화
+## <a name="structuring-use-cases"></a><a name="Structuring"></a> 사용 사례 구조화
  몇 가지 주요 사용 사례만으로 시스템의 동작을 설명하려고 해야 합니다. 각각의 큰 사용 사례는 제품 구입이나 공급업체의 관점에서 판매용 제품 제공과 같은 행위자가 달성하는 주요 목표를 정의합니다.
 
  이러한 목표를 명확하게 지정한 경우 각 목표를 달성하는 방법 및 기본 목표의 변형에 대한 세부 정보로 넘어갈 수 있습니다.
@@ -299,13 +299,13 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
  사용 사례 다이어그램에서 주요 사용 사례와 자세한 사용 사례 간의 관계를 요약할 수 있습니다. 다음 섹션에서는 다음 방법에 대해 설명합니다.
 
-- [Include를 사용 하 여 사용 사례의 세부 정보 표시](#Include)
+- [포함을 사용하여 사용 사례의 세부 정보 표시](#Include)
 
-- [일반화로 목표 공유](#Inheritance)
+- [일반화를 사용하여 목표 공유](#Inheritance)
 
-- [확장을 사용 하 여 변형 사례 분리](#Extend)
+- [확장을 사용하여 변형 사례 분리](#Extend)
 
-### <a name="Include"></a>Include를 사용 하 여 사용 사례의 세부 정보 표시
+### <a name="showing-the-details-of-a-use-case-with-include"></a><a name="Include"></a> Include를 사용 하 여 사용 사례의 세부 정보 표시
  **포함** 관계를 사용 하 여 한 사용 사례가 다른 사용 사례에 대 한 세부 정보를 설명 하는 것을 보여 줍니다. 그림에서 **식사 주문** 에는 **종 량**이 포함 되 고, **메뉴를 선택**하 고, **메뉴 항목을 선택**합니다. 각각의 포함된 자세한 사용 사례는 행위자가 포함하는 사용 사례의 전반적인 목표를 달성하기 위해 수행해야 할 수 있는 단계입니다. 화살표는 포함된 자세한 사용 사례를 가리켜야 합니다.
 
 > [!CAUTION]
@@ -313,7 +313,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
  포함된 사용 사례를 공유할 수 있습니다. 이 예제에서 **식사 주문** 및 **리뷰에 대 한 구독** 사용 사례는 모두 **지불**을 포함 합니다.
 
- ![Include로 분해 된 사용 사례](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
+ ![포함을 사용하여 분해된 사용 사례](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
 
  포함된 사용 사례의 목표 및 시나리오는 나중에 디자인하는 사용 사례에 포함될 수 있도록 독립적으로 타당해야 합니다.
 
@@ -323,7 +323,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
 - 여러 사용 사례에서 공유 시나리오를 반복하지 마세요.
 
-#### <a name="Steps"></a>자세한 단계의 순서 정의
+#### <a name="defining-the-order-of-the-detailed-steps"></a><a name="Steps"></a> 자세한 단계의 순서 정의
  자세한 단계를 수행해야 하는 순서 및 각 단계가 항상 필요한지 여부에 대해서는 사용 사례 다이어그램에 표시되지 않습니다.
 
  단계의 순서를 명확 하 게 지정 하려면 **아티팩트** 를 사용 하 여 포함 된 사용 사례에 별도의 문서를 연결 하면 됩니다. 다음 예제에서는 음식 주문 사용 사례에 동작 다이어그램이 연결되어 있습니다. 또는 단계 목록이나 일련의 스크린샷이 포함된 텍스트 문서를 사용할 수 있습니다. 자세한 내용은 [사용 사례에](#Details)대 한 자세한 설명을 참조 하세요.
@@ -336,9 +336,9 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
   자세한 내용은 [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)을 참조 하세요.
 
-  ![연결 된 동작 다이어그램에 표시 된 사용 사례 단계](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
+  ![연결된 동작 다이어그램에 표시된 사용 사례 단계](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
 
-### <a name="Inheritance"></a>일반화로 목표 공유
+### <a name="sharing-goals-with-generalization"></a><a name="Inheritance"></a> 일반화로 목표 공유
  일반화 관계를 사용 하 여 *특수* 한 사용 사례가 다른 *일반적인* 사용 사례로 표현 된 목표를 달성 하는 특정 방법 임을 보여 줍니다. 열린 화살촉이 보다 일반적인 사용 사례를 가리켜야 합니다.
 
  ![일반화 관계를 보여 주는 사용 사례](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
@@ -368,10 +368,10 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
 4. 특수화된 사용 사례 간에 공유되는 행위자를 일반적인 사용 사례로 이동할 수 있습니다.
 
-### <a name="Extend"></a>확장을 사용 하 여 변형 사례 분리
+### <a name="separating-variant-cases-with-extend"></a><a name="Extend"></a> 확장을 사용 하 여 변형 사례 분리
  확장 링크를 사용하여 한 사용 사례가 특정 상황에서 다른 사용 사례에 기능을 추가할 수 있음을 표시할 수 있습니다. 화살표가 확장된 기본 사용 사례를 가리켜야 합니다.
 
- ![다른 사용 사례를 확장 하는 한 가지 사용 사례](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
+ ![다른 사용 사례를 확장하는 사용 사례](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
 
 > [!CAUTION]
 > 행위자가 자신을 일반화하는 확장 관계 루프를 만들면 안 됩니다. 루프에서 오류가 발생할 수 있습니다.
@@ -407,7 +407,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
 - 이 확장은 시스템의 특정 버전에서만 사용할 수 있습니다. 사용 사례 다이어그램에서 각 버전을 별도 하위 시스템으로 표시할 수 있습니다.
 
-## <a name="Subsystems"></a>하위 시스템 경계 사용
+## <a name="using-subsystem-boundaries"></a><a name="Subsystems"></a> 하위 시스템 경계 사용
  하위 시스템 경계를 사용하여 시스템의 범위 내에 있는 사용 사례를 표시할 수 있습니다.
 
 #### <a name="to-draw-a-subsystem-boundary"></a>하위 시스템 경계를 그리려면
@@ -438,7 +438,7 @@ Visual Studio에서는 *사용 사례 다이어그램* 을 그려 응용 프로�
 
  **종속성** 관계를 사용 하 여 다른 버전이 나 변형을 나타내는 하위 시스템을 연결 합니다.
 
- ![시스템의 다른 버전을 표시 하는 하위 시스템](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
+ ![시스템의 다양한 버전을 보여 주는 하위 시스템](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [모델 사용자 요구 사항](../modeling/model-user-requirements.md) [uml 시퀀스 다이어그램: 지침 uml](../modeling/uml-sequence-diagrams-guidelines.md) [모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [Uml 사용 사례 다이어그램](../modeling/uml-use-case-diagrams-reference.md) : Uml [클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) 참조: uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: [uml 동작 다이어그램](../modeling/uml-activity-diagrams-guidelines.md) 참조: 지침 비디오: [사용 사례로 기능 구성](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

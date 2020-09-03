@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905210"
 ---
 # <a name="implementing-syntax-coloring"></a>구문 색 지정 구현
-언어 서비스에서 구문 색 지정을 제공 하는 경우 파서는 텍스트 줄을 색 항목 배열로 변환 하 고 이러한 색 항목에 해당 하는 토큰 형식을 반환 합니다. 파서는 색 항목 목록에 속하는 토큰 형식을 반환 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]svc 개체에 의해 적절 한 토큰 형식에 할당 된 특성에 따라 코드 창의 각 색 항목을 표시 합니다.
+언어 서비스에서 구문 색 지정을 제공 하는 경우 파서는 텍스트 줄을 색 항목 배열로 변환 하 고 이러한 색 항목에 해당 하는 토큰 형식을 반환 합니다. 파서는 색 항목 목록에 속하는 토큰 형식을 반환 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] svc 개체에 의해 적절 한 토큰 형식에 할당 된 특성에 따라 코드 창의 각 색 항목을 표시 합니다.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]는 파서 인터페이스를 지정 하지 않으며 파서 구현은 사용자에 게 완전히 있습니다. 그러나 기본 파서 구현은 Visual Studio 언어 패키지 프로젝트에서 제공 됩니다. 관리 코드의 경우 MPF (관리 패키지 프레임 워크)는 텍스트 색을 완벽 하 게 지원 합니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 파서 인터페이스를 지정 하지 않으며 파서 구현은 사용자에 게 완전히 있습니다. 그러나 기본 파서 구현은 Visual Studio 언어 패키지 프로젝트에서 제공 됩니다. 관리 코드의 경우 MPF (관리 패키지 프레임 워크)는 텍스트 색을 완벽 하 게 지원 합니다.
 
  레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 구문 색 지정을 구현 하는 새로운 방법에 대해 자세히 알아보려면 [연습: 텍스트 강조](../../extensibility/walkthrough-highlighting-text.md)표시를 참조 하세요.
 
@@ -62,7 +62,7 @@ ms.locfileid: "85905210"
 ## <a name="managed-package-framework-colorizer"></a>관리 되는 패키지 프레임 워크 Svc
  MPF (관리 되는 패키지 프레임 워크)는 svc을 구현 하는 데 필요한 모든 클래스를 제공 합니다. 언어 서비스 클래스는 클래스를 상속 <xref:Microsoft.VisualStudio.Package.LanguageService> 하 고 필요한 메서드를 구현 해야 합니다. 인터페이스를 구현 하 여 스캐너 및 파서를 제공 하 <xref:Microsoft.VisualStudio.Package.IScanner> 고, <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 메서드 (클래스에서 구현 해야 하는 메서드 중 하나)에서 해당 인터페이스의 인스턴스를 반환 해야 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService> . 자세한 내용은 [레거시 언어 서비스의 구문 색 색상화](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [방법: 기본 제공 색 항목 사용](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [사용자 지정 색 항목](../../extensibility/internals/custom-colorable-items.md)
 - [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)

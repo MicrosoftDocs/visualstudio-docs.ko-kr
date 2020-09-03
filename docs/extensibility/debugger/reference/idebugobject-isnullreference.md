@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNull참조 | 마이크로 소프트 문서
+title: 'IDebugObject:: IsNullReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726521"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-이 개체가 null 참조인지 여부를 테스트합니다.
+이 개체가 null 참조 인지 여부를 테스트 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int IsNullReference(
 
 ## <a name="parameters"></a>매개 변수
 `pfIsNull`\
-【아웃】 이 개체가`TRUE`null 참조인 경우 0이 아닌 () 반환합니다. 그렇지 않으면 0`FALSE`()을 반환합니다.
+제한이 `TRUE`이 개체가 null 참조 이면 0이 아닌 값을 반환 하 고 그렇지 않으면 0 ()을 반환 `FALSE` 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- null 참조는 빈 개체 또는 할당되지 않은 개체를 의미합니다.
+ Null 참조는 빈 개체 또는에 할당 되지 않은 개체를 의미 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

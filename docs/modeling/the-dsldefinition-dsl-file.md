@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114928"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일
 
-이 항목에서는 *도메인별 언어*를 정의 하는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 솔루션 dsl 프로젝트의 DslDefinition. dsl 파일 구조에 대해 설명 합니다. DslDefinition. dsl 파일은 도메인별 언어의 클래스 및 관계와 도메인별 언어의 다이어그램, 모양, 연결선, serialization 형식 및 **도구 상자** 와 해당 편집 도구를 설명 합니다. DSL 솔루션에서 이러한 도구를 정의하는 코드는 DslDefinition.dsl 파일의 정보에 따라 생성됩니다.
+이 항목에서는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *도메인별 언어*를 정의 하는 솔루션의 dsl 프로젝트에 있는 dsldefinition. dsl 파일의 구조에 대해 설명 합니다. DslDefinition. dsl 파일은 도메인별 언어의 클래스 및 관계와 도메인별 언어의 다이어그램, 모양, 연결선, serialization 형식 및 **도구 상자** 와 해당 편집 도구를 설명 합니다. DSL 솔루션에서 이러한 도구를 정의하는 코드는 DslDefinition.dsl 파일의 정보에 따라 생성됩니다.
 
 일반적으로 *도메인 특정 언어 디자이너* 를 사용 하 여 파일을 편집할 수 있습니다. 그러나 DslDefinition.dsl 파일은 원시 형식이 XML이므로 XML 편집기에서도 열 수 있습니다. 파일에 포함된 정보와 디버깅 및 확장용으로 파일이 구성되는 방식을 파악하면 유용할 수 있습니다.
 
@@ -26,9 +26,9 @@ ms.locfileid: "76114928"
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일의 섹션
 
-Root 요소는 Dsl > \<되며, 특성은 도메인별 언어의 이름, 네임 스페이스 및 버전 관리에 대 한 주 및 부 버전 번호를 식별 합니다. `DslDefinitionModel` 스키마는 유효한 DslDefinition.dsl 파일의 내용과 구조를 정의합니다.
+Root 요소는 이며, \<Dsl> 해당 특성은 도메인별 언어의 이름, 네임 스페이스 및 버전 관리에 대 한 주 및 부 버전 번호를 식별 합니다. `DslDefinitionModel` 스키마는 유효한 DslDefinition.dsl 파일의 내용과 구조를 정의합니다.
 
-\<Dsl > root 요소의 자식 요소는 다음과 같습니다.
+Root 요소의 자식 요소는 \<Dsl> 다음과 같습니다.
 
 ### <a name="classes"></a>클래스
 
@@ -40,13 +40,13 @@ Root 요소는 Dsl > \<되며, 특성은 도메인별 언어의 이름, 네임 �
 
 ### <a name="types"></a>형식
 
-이 섹션은 각 형식과 해당 네임스페이스를 정의합니다. 도메인 속성에는 두 가지 형식이 있습니다. `DomainEnumerations`는 모델에서 정의 되 고 DomainModel.cs에 형식을 생성 합니다. `ExternalTypes`는 다른 곳에서 정의 된 형식 (예: `String` 또는 `Int32`)을 참조 하 고 아무 것도 생성 하지 않습니다.
+이 섹션은 각 형식과 해당 네임스페이스를 정의합니다. 도메인 속성에는 두 가지 형식이 있습니다. `DomainEnumerations` 는 모델에 정의 되 고 DomainModel.cs에 형식을 생성 합니다. `ExternalTypes` 다른 곳에서 정의 된 형식 (예: `String` 또는)을 참조 `Int32` 하 고 아무 것도 생성 하지 않습니다.
 
-### <a name="shapes"></a>모양
+### <a name="shapes"></a>도형
 
 이 섹션은 디자이너에서 모델이 표시되는 방식을 설명하는 모양을 정의합니다. 이러한 기하학적 모양은 다이어그램 섹션에서 모델의 클래스에 매핑됩니다.
 
-### <a name="connectors"></a>연결선
+### <a name="connectors"></a>커넥터
 
 이 섹션은 디자이너에 표시되는 연결선의 모양을 정의합니다. 이러한 기하학적 스타일 설명은 다이어그램 섹션에서 모델의 특정 관계에 매핑됩니다.
 
@@ -148,7 +148,7 @@ DSL 정의에 포함되는 대부분의 요소는 직간접적으로 `DomainClas
 </DomainClass>
 ```
 
-`NamedElement`는 `NamedElement`에서 상속 된 `Name` 속성 외에 고유한 속성이 있는 `Component`와 같은 다른 클래스의 기본 클래스입니다. BaseClass 자식 노드는 모니커 참조를 포함합니다. 참조되는 클래스가 같은 네임스페이스에 있으므로 모니커에는 해당 이름만 필요합니다.
+`NamedElement` 는와 같은 다른 클래스의 기본 클래스입니다 `Component` . 여기에는 상속 된 속성 외에 고유한 속성도 `Name` `NamedElement` 있습니다. BaseClass 자식 노드는 모니커 참조를 포함합니다. 참조되는 클래스가 같은 네임스페이스에 있으므로 모니커에는 해당 이름만 필요합니다.
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -168,13 +168,13 @@ DSL 정의에 포함되는 대부분의 요소는 직간접적으로 `DomainClas
 
 - **Id입니다.** 이 특성은 GUID입니다. 파일에서 값을 제공하지 않으면 DSL(Domain-Specific Language) Designer에서 값을 만듭니다. 이 문서의 그림에서는 공간을 절약하기 위해 이 특성을 대부분 생략합니다.
 
-- **이름 및 네임 스페이스.** 이러한 특성은 생성된 코드에서 클래스의 이름과 네임스페이스를 지정합니다. 이 두 특성은 DSL에서 모두 고유해야 합니다.
+- **Name 및 Namespace.**  이러한 특성은 생성된 코드에서 클래스의 이름과 네임스페이스를 지정합니다. 이 두 특성은 DSL에서 모두 고유해야 합니다.
 
 - **InheritanceModifier.** 이 특성은 "abstract", "sealed" 또는 none입니다.
 
 - **DisplayName.** 이 특성은 **속성** 창에 표시 되는 이름입니다. DisplayName 특성은 공백과 기타 문장 부호를 포함할 수 있습니다.
 
-- **GeneratesDoubleDerived.** 이 특성을 true로 설정하면 두 클래스가 생성되며, 그 중 하나가 다른 하나의 서브클래스입니다. 생성된 모든 메서드는 기본 클래스에 있으며 생성자는 서브클래스에 있습니다. 이 특성을 설정하면 사용자 지정 코드에서 생성된 메서드를 재정의할 수 있습니다.
+- **GeneratesDoubleDerived.**  이 특성을 true로 설정하면 두 클래스가 생성되며, 그 중 하나가 다른 하나의 서브클래스입니다. 생성된 모든 메서드는 기본 클래스에 있으며 생성자는 서브클래스에 있습니다. 이 특성을 설정하면 사용자 지정 코드에서 생성된 메서드를 재정의할 수 있습니다.
 
 - **Hascustomconstructor** 이 특성을 true로 설정하면 생성된 코드에서 생성자가 생략되어 원하는 버전을 직접 작성할 수 있습니다.
 
@@ -182,9 +182,9 @@ DSL 정의에 포함되는 대부분의 요소는 직간접적으로 `DomainClas
 
 - **BaseClass**. 기본 클래스를 지정하는 경우 형식이 같아야 합니다. 예를 들어 도메인 클래스는 다른 도메인 클래스를 기본 클래스로 포함해야 하며 구획 모양은 구획 모양을 포함해야 합니다. 기본 클래스를 지정하지 않으면 생성된 코드의 클래스가 표준 프레임워크 클래스에서 파생됩니다. 예를 들어 도메인 클래스는 `ModelElement`에서 파생됩니다.
 
-- **속성**. 이 특성은 트랜잭션 제어 하에 유지 관리되며 모델 저장 시 영구 저장되는 속성을 포함합니다.
+- **속성** 이 특성은 트랜잭션 제어 하에 유지 관리되며 모델 저장 시 영구 저장되는 속성을 포함합니다.
 
-- **ElementMergeDirectives**. 각 요소 병합 지시문은 타 클래스의 다른 인스턴스가 부모 클래스 인스턴스에 추가되는 방법을 제어합니다. 요소 병합 지시문에 대한 자세한 내용은 이 항목 뒷부분에서 확인할 수 있습니다.
+- **Elementmergedirectives**. 각 요소 병합 지시문은 타 클래스의 다른 인스턴스가 부모 클래스 인스턴스에 추가되는 방법을 제어합니다. 요소 병합 지시문에 대한 자세한 내용은 이 항목 뒷부분에서 확인할 수 있습니다.
 
 - `Classes` 섹션에 나열된 각 도메인 클래스에 대해 C# 클래스가 생성됩니다. C# 클래스는 Dsl\GeneratedCode\DomainClasses.cs에 생성됩니다.
 
@@ -206,7 +206,7 @@ DSL 정의에 포함되는 대부분의 요소는 직간접적으로 `DomainClas
 
 - **Isbrowsable**때. 이 특성은 사용자가 부모 클래스의 개체를 클릭할 때 **속성 창에 속성을** 표시할지 여부를 결정 합니다.
 
-- **IsUIReadOnly**. 이 특성은 사용자가 속성 창이 나 속성이 표시 된 데코레이터를 **통해 속성을** 변경할 수 있는지 여부를 결정 합니다.
+- **Isuireadonly**입니다. 이 특성은 사용자가 속성 창이 나 속성이 표시 된 데코레이터를 **통해 속성을** 변경할 수 있는지 여부를 결정 합니다.
 
 - **Kind**. 이 특성은 Normal, Calculated 또는 CustomStorage로 설정해야 합니다. 이 특성을 Calculated로 설정하는 경우 값을 결정하는 사용자 지정 코드를 제공해야 하며 속성은 읽기 전용이 됩니다. 이 특성을 CustomStorage로 설정하는 경우에는 값을 가져오고 설정하는 코드를 제공해야 합니다.
 
@@ -293,7 +293,7 @@ OutPort 클래스 멤버를 InPort 클래스 멤버에 연결하는 Connection �
 
 이 예제에서 InPort는 ComponentPort의 서브클래스이며 ComponentHasPorts 관계를 포함합니다. 속성의 이름은 Component입니다.
 
-이 모델 C# 에 대해 작성 하는 경우 관계에서 관련 된 각 클래스에 대해 생성 되는 속성을 사용 하 여 한 번에 링크를 통해 이동할 수 있습니다.
+이 모델에 대해 C#을 작성할 때는 관련된 각 클래스에 대해 관계가 생성하는 속성을 사용하여 한 단계로 링크를 이동할 수 있습니다.
 
 ```
      InPort port; ...  Component c = port.Component;
@@ -465,7 +465,7 @@ serialize된 모델 파일 내에서 포함 관계와 참조 관계 둘 다의 �
 
 연결 관계에는 요소 및 특성 이름을 제공하는 자체 XML 클래스 데이터가 있습니다.
 
-**Omitelement** 특성이 true로 설정 된 경우 관계 역할 이름이 생략 됩니다 .이는 serialize 된 파일을 줄여서 표시 두 클래스에 둘 이상의 관계가 있는 경우에는 모호 합니다. 예를 들면 다음과 같습니다.:
+**Omitelement** 특성이 true로 설정 된 경우 관계 역할 이름이 생략 됩니다 .이는 serialize 된 파일을 줄여서 표시 두 클래스에 둘 이상의 관계가 있는 경우에는 모호 합니다. 예를 들면 다음과 같습니다.
 
 ```xml
 <component name="Component3">
@@ -488,7 +488,7 @@ DslDefinition.dsl 파일 자체는 serialize된 파일로, DSL 정의를 준수�
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- **XmlSerializationBehavior** 특성이 `Dsl` 특성에 포함 되어 있지만, **omitelement** 특성이 포함 관계에 설정 되어 있습니다. 따라서 `RoleElementName` 특성은 사용되지 않습니다. 반면 **Classdata** 특성은 **XmlSerializationBehavior** 특성과 **xmlclassdata** 특성 간의 포함 관계의 `RoleElementName` 특성입니다.
+- **XmlSerializationBehavior** 특성이 특성 아래에 포함 되어 `Dsl` 있지만, **omitelement** 특성이 포함 관계에 설정 되어 있습니다. 따라서 `RoleElementName` 특성은 사용되지 않습니다. 반면 **Classdata** 특성은 `RoleElementName` **XmlSerializationBehavior** 특성과 **xmlclassdata** 특성 간의 포함 관계 특성입니다.
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -498,7 +498,7 @@ DslDefinition.dsl 파일 자체는 serialize된 파일로, DSL 정의를 준수�
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators는 `Connector` 및 `Decorator` 간의 포함 관계입니다. 커넥터 개체의 각 링크에 대 한 속성 목록과 함께 관계 이름이 표시 되도록 `UseFullForm` 설정 되었습니다. 그러나 `OmitElement`도 설정되었으므로 `RoleElementName` 내에 포함되는 여러 링크가 `Connector`으로 묶이지 않습니다.
+- ConnectorHasDecorators는 `Connector` 및 `Decorator` 간의 포함 관계입니다. `UseFullForm` 는 커넥터 개체의 각 링크에 대 한 속성 목록과 함께 관계 이름이 표시 되도록 설정 되었습니다. 그러나 `OmitElement`도 설정되었으므로 `RoleElementName` 내에 포함되는 여러 링크가 `Connector`으로 묶이지 않습니다.
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -577,7 +577,7 @@ Decorator 맵은 매핑된 클래스의 속성을 모양의 Decorator와 연결�
 
 연결선 맵은 Decorator 맵을 포함할 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)

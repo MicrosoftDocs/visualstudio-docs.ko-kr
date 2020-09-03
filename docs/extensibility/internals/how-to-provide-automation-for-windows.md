@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fec2b9ef6612a294dc70d129cf4bdd3dde843262
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905264"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>방법: windows에 대 한 자동화 제공
@@ -40,6 +40,6 @@ ms.locfileid: "85905264"
 
 또한 편집기는 <xref:EnvDTE.Document.Object%2A> 또는 인터페이스를 구현 하 여 메서드를 통해 검색 되는 VSPackage 특정 자동화 개체를 제공할 수 `IVsExtensibleObject` 있습니다 `IExtensibleObject` . 고가 중 [진한 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 은 RTF 문서 관련 자동화 개체를 제공 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

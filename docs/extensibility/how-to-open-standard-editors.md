@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905789"
 ---
 # <a name="how-to-open-standard-editors"></a>방법: 표준 편집기 열기
@@ -49,7 +49,7 @@ ms.locfileid: "85905789"
 
      문서 뷰 또는 문서 뷰 개체가 창 프레임에 성공적으로 배치 된 경우를 호출 하 여 개체가 데이터를 사용 하 여 초기화 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [프로젝트 항목 열기 및 저장](../extensibility/internals/opening-and-saving-project-items.md)
 - [방법: 프로젝트 관련 편집기 열기](../extensibility/how-to-open-project-specific-editors.md)

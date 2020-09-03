@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905531"
 ---
 # <a name="how-to-create-a-vsct-file"></a>방법: vsct 파일 만들기
@@ -148,7 +148,7 @@ XML 기반 Visual Studio 명령 테이블 구성 (*vsct*) 파일을 만드는 �
 
      첫 번째 매개 변수 값은 `ResourceName` 프로젝트 파일에 정의 된 특성의 값과 일치 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [. Vsct 파일 작성](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)

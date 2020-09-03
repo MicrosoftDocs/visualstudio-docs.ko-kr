@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299632"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server 샘플 데이터베이스 설치
@@ -27,7 +27,7 @@ ms.locfileid: "74299632"
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Visual Studio에서 .bak 파일의 데이터베이스를 복원 하려면
 
-1. Microsoft SQL Server 데이터베이스를 백업 하면 .bak 파일이 생성 됩니다. .Bak 파일을 데이터베이스 파일로 다시 사용할 수 있도록 하려면이 파일을 *복원*해야 합니다. 주 메뉴에서 **보기** > **SQL Server 개체 탐색기**를 선택 합니다. 표시 되지 않으면 설치 해야 할 수 있습니다. **제어판** > **프로그램 및 기능**으로 이동 하 Microsoft Visual Studio 2015를 찾아 **변경** 단추를 클릭 합니다. 설치 된 구성 요소 목록이 설치 관리자 창에 표시 되 면 **SQL Server 개체 탐색기** 확인란을 선택 하 고 설치를 계속 합니다.
+1. Microsoft SQL Server 데이터베이스를 백업 하면 .bak 파일이 생성 됩니다. .Bak 파일을 데이터베이스 파일로 다시 사용할 수 있도록 하려면이 파일을 *복원*해야 합니다. 주 메뉴에서 **보기**  >  **SQL Server 개체 탐색기**를 선택 합니다. 표시 되지 않으면 설치 해야 할 수 있습니다. **제어판**  >  **프로그램 및 기능**으로 이동 하 Microsoft Visual Studio 2015를 찾고 **변경** 단추를 클릭 합니다. 설치 된 구성 요소 목록이 설치 관리자 창에 표시 되 면 **SQL Server 개체 탐색기** 확인란을 선택 하 고 설치를 계속 합니다.
 
 2. SQL Server 개체 탐색기에서 SQL Server 데이터베이스 엔진 (예: localdb)을 마우스 오른쪽 단추로 클릭 하 고**새 쿼리**를 선택 합니다.
 

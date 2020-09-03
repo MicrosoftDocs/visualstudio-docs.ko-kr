@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Microsoft Docs
+title: 'IDebugPointerField:: GetDereferencedField | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02197f660189d4caf374fc5927f349fd5fc6b8b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201019"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
@@ -40,13 +40,13 @@ int GetDereferencedField(
   
 #### <a name="parameters"></a>매개 변수  
  `ppField`  
- [out] 반환 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 대상 개체의 형식을 설명 하는 합니다.  
+ 제한이 대상 개체의 형식을 설명 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 예를 들어, 합니다 [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) 개체는 정수를 가리킵니다 합니다 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 이 메서드에서 반환 되는 형식을 해당 정수 형식에 설명 합니다.  
+ 예를 들어 [Idebugpointerfield](../../../extensibility/debugger/reference/idebugpointerfield.md) 개체가 정수를 가리키는 경우이 메서드에서 반환 된 [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 형식은 해당 정수 형식을 설명 합니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   

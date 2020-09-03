@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d7cd59266a69140ba2ea5a7fd1d1b0b0c72f14c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201938"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-사용자 지정 XML 지정  
+사용자 지정 XML을 지정 합니다.  
   
  \<VSTemplate>  
  \<WizardData>  
@@ -48,22 +48,22 @@ ms.locfileid: "68201938"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함합니다.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함 합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 선택적입니다.  
   
- 이 텍스트에 지정 된 사용자 지정 마법사 확장명에 전달할 사용자 지정 XML을 지정 합니다 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 요소입니다.  
+ 이 텍스트는 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 요소에 지정 된 사용자 지정 마법사 확장에 전달할 사용자 지정 XML을 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 요소의 모든 XML은 지정할 수 있습니다. XML 전달할 매개 변수로 사용자 지정 마법사 확장은이 요소의 콘텐츠를 사용할 확장명을 허용 합니다. 유효성을 검사 하지는이 데이터에서 수행 됩니다.  
+ 이 요소에는 모든 XML을 지정할 수 있습니다. XML은 사용자 지정 마법사 확장에 매개 변수로 전달 되므로 확장에서이 요소의 콘텐츠를 사용할 수 있습니다. 이 데이터에 대 한 유효성 검사가 수행 되지 않습니다.  
   
- 콘텐츠를 `WizardData` 요소 내에서 매개 변수의 문자열 사전에서 매개 변수로 변경 되지 않고 전달 됩니다는 `IWizard.RunStarted` 메서드. 매개 변수 $WizardData $를 이라고 합니다.  
+ 요소의 콘텐츠는 `WizardData` 메서드에 있는 매개 변수의 문자열 사전 내에서 매개 변수로 전달 되 고 변경 되지 않습니다 `IWizard.RunStarted` . 매개 변수의 이름은 $WizardData $입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows 응용 프로그램입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 Windows 응용 프로그램에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] .  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -96,7 +96,7 @@ ms.locfileid: "68201938"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [WizardExtension 요소 (Visual Studio 템플릿)](../extensibility/wizardextension-element-visual-studio-templates.md)   

@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905987"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>연습: 레거시 언어 서비스 만들기
 MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여에서 언어 서비스를 구현 하 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 는 것은 간단 합니다. 언어 서비스, 언어 서비스 자체 및 해당 언어의 파서를 호스트 하는 VSPackage 필요 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 패키지 프로젝트 템플릿의 위치
@@ -50,7 +50,7 @@ MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여에서
 
     코드 조각을 지원 하지 않으려는 경우 마침을 클릭 하면 다음 단계를 무시할 수 있습니다.
 
-6. 명령 **이름** 및 명령 ID로 **Insert 코드 조각을** 입력 `cmdidInsertSnippet` **Command ID**합니다. **Finish**를 클릭합니다.
+6. 명령 **이름** 및 명령 ID로 **Insert 코드 조각을** 입력 `cmdidInsertSnippet` **Command ID**합니다. **마침**을 클릭합니다.
 
     **명령 이름** 및 **명령 ID** 는 원하는 대로 지정할 수 있으며,이는 단지 예일 뿐입니다.
 
@@ -130,5 +130,5 @@ MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여에서
 
      예를 들어를 입력 `public override` 하 여 해당 클래스에서 재정의할 수 있는 모든 메서드 목록을 표시 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115046"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
@@ -86,7 +86,7 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 
 - 각 반복이 거의 끝나면 요구 사항 워크숍을 열어 다음 반복에서 개발할 요구 사항 또는 사용자 스토리를 자세히 정의합니다. 개발자와 시스템 테스터뿐 아니라 우선 순위를 결정할 수 있는 사용자 및 비즈니스 이해 관계자도 초대합니다. 2주 반복에 대한 요구 사항을 정의하는 데 3시간을 할애합니다.
 
-- 워크숍의 목표는 다음 반복이 끝날 때까지 달성할 목표에 대해 모두가 동의하는 것입니다. 모델을 도구 중 하나로 사용하여 요구 사항을 명확하게 설명합니다. 워크숍의 출력은 반복 백로그입니다. 즉, Team Foundation의 개발 작업 목록과 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]의 테스트 도구 모음이 있습니다.
+- 워크숍의 목표는 다음 반복이 끝날 때까지 달성할 목표에 대해 모두가 동의하는 것입니다. 모델을 도구 중 하나로 사용하여 요구 사항을 명확하게 설명합니다. 워크숍의 출력은 반복 백로그입니다. 즉, Team Foundation의 개발 작업 목록 및의 테스트 도구 모음입니다 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
 
 - 요구 사항 워크숍에서는 예상 개발 작업을 결정해야 하는 경우에만 디자인을 논의합니다. 그렇지 않으면 사용자가 직접 경험할 수 있는 시스템 동작만 논의합니다. 요구 사항 모델을 아키텍처 모델과 별도로 유지합니다.
 
@@ -129,14 +129,14 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 
 ## <a name="external-resources"></a>외부 리소스
 
-|**범주**|**링크**|
+|**범주**|**연결**|
 |-|-|
-|**비디오**|비디오](../data-tools/media/playvideo.gif)에 링크 ![[MSDN 방법 비디오: UML 모델 및 다이어그램을 만들고 사용 하는 방법 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> 비디오](../data-tools/media/playvideo.gif) Channel 9에 링크 ![[Visual Studio 2010을 사용 하는 UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> 비디오](../data-tools/media/playvideo.gif)에 링크 ![[MSDN 방법 I 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**비디오**|![비디오에 대 한 링크 ](../data-tools/media/playvideo.gif) [MSDN 방법 비디오: UML 모델 및 다이어그램을 만들고 사용 하는 방법 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![비디오 채널 9에 대 한 링크 ](../data-tools/media/playvideo.gif) [: Visual Studio 2010를 사용 하는 UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![비디오에 대 한 링크 ](../data-tools/media/playvideo.gif) [MSDN How Do Do 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**포럼**|- [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

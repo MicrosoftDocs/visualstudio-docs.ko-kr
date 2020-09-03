@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300258"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
@@ -40,7 +40,7 @@ Visual Studio를 사용하여 개발 주기 동안 잦은 간격으로 애플리
 
  IDE 내에서 수행할 수 있는 추가 작업은 다음과 같습니다.
 
-- [빌드 출력 디렉터리 변경](../ide/how-to-change-the-build-output-directory.md)
+- [빌드 출력 디렉터리를 변경](../ide/how-to-change-the-build-output-directory.md)합니다.
 
 - [올바른 빌드를 위해 다른 프로젝트의 출력에 의존하는 프로젝트 식별](../ide/how-to-create-and-remove-project-dependencies.md)
 
@@ -52,5 +52,5 @@ Visual Studio를 사용하여 개발 주기 동안 잦은 간격으로 애플리
 
 - 병렬 빌드를 사용하여 빌드 성능 개선. 자세한 내용은 [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 또는 블로그 게시물 [Tuning C++ build parallelism](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/)(C++ 빌드 병렬 처리 조정)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)[빌드 구성 이해](../ide/understanding-build-configurations.md)[빌드 플랫폼 이해](../ide/understanding-build-platforms.md)[(컴파일) 웹 사이트 프로젝트 빌드](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193)[ 어떻게: 프로젝트 종속성 만들기 및 제거](../ide/how-to-create-and-remove-project-dependencies.md)
+## <a name="see-also"></a>관련 항목
+ [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) [(컴파일) 웹 사이트 프로젝트 빌드](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ 어떻게: 프로젝트 종속성 만들기 및 제거](../ide/how-to-create-and-remove-project-dependencies.md)
