@@ -1,5 +1,5 @@
 ---
-title: MSBuild 용어 설명
+title: MSBuild 용어 용어집
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154835"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 용어
@@ -38,7 +38,7 @@ ms.locfileid: "68154835"
 
  *프로젝트, 자식*을 참조하세요.
 
- 조건
+ condition(조건)
 
  대부분의 MSBuild 요소는 조건부로(요소에 `Condition` 특성이 표시되도록) 정의할 수 있습니다. 조건이 `true`로 확인되지 않으면 조건부 요소의 내용이 무시됩니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.
 
@@ -80,7 +80,7 @@ ms.locfileid: "68154835"
 
  항목 함수
 
- 항목 함수는 프로젝트의 항목에 대한 정보를 가져옵니다. 이러한 함수를 사용하면 Distinct() 항목을 간편하게 가져올 수 있으며 항목을 반복하는 방식보다 속도도 더 빠릅니다. 항목 경로 및 문자열을 조작하는 함수도 있습니다. 자세한 내용은 [항목 함수](../msbuild/item-functions.md)을 참조하세요.
+ 항목 함수는 프로젝트의 항목에 대한 정보를 가져옵니다. 이러한 함수를 사용하면 Distinct() 항목을 간편하게 가져올 수 있으며 항목을 반복하는 방식보다 속도도 더 빠릅니다. 항목 경로 및 문자열을 조작하는 함수도 있습니다. 자세한 내용은 [항목 함수](../msbuild/item-functions.md) 를 참조 하세요.
 
  항목 메타데이터
 
@@ -110,7 +110,7 @@ ms.locfileid: "68154835"
 
  프로젝트 파일에는 빌드를 제어하는 MSBuild 스크립트가 포함되어 있습니다. 프로젝트 파일의 파일 확장명은 .csproj 또는 .vbproj와 같이 대개 "proj"로 끝납니다. 프로젝트 파일은 속성 파일과 대상 파일을 가져올 수 있습니다.
 
- 속성
+ 속성(property)
 
  속성은 빌드 프로세스를 제어하는 데 사용되는 키/값 쌍입니다. 자세한 내용은 [MSBuild 속성](msbuild-properties1.md)을 참조하세요.
 
@@ -124,15 +124,15 @@ ms.locfileid: "68154835"
 
  속성, 함수
 
- 속성 함수는 MSBuild 스크립트를 평가하는 데 사용할 수 있는 시스템 속성 또는 메서드입니다. 속성 메서드를 사용하면 시스템 시간을 읽고 문자열을 비교하며 정규식을 일치시키고 다른 작업을 수행할 수 있습니다. 자세한 내용은 [속성 함수](../msbuild/property-functions.md)를 참조하세요.
+ 속성 함수는 MSBuild 스크립트를 평가하는 데 사용할 수 있는 시스템 속성 또는 메서드입니다. 속성 메서드를 사용하면 시스템 시간을 읽고 문자열을 비교하며 정규식을 일치시키고 다른 작업을 수행할 수 있습니다. 자세한 내용은 [속성 함수](../msbuild/property-functions.md)를 참조 하세요.
 
  속성 함수, 중첩
 
- 속성 함수를 결합하여 보다 복잡한 함수를 만들 수 있습니다. 예를 들어 개체에 적용된
+ 속성 함수를 결합하여 보다 복잡한 함수를 만들 수 있습니다. 예를 들면 다음과 같습니다.
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- 자세한 내용은 [속성 함수](../msbuild/property-functions.md)를 참조하세요.
+ 자세한 내용은 [속성 함수](../msbuild/property-functions.md)를 참조 하세요.
 
  속성, 전역
 
@@ -170,7 +170,7 @@ ms.locfileid: "68154835"
 
  *속성, 레지스트리*를 참조하세요.
 
- target
+ 대상
 
  대상은 작업을 특정 순서로 그룹화하고 프로젝트 파일의 섹션을 빌드 프로세스의 진입점으로 표시합니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.
 
@@ -206,11 +206,11 @@ ms.locfileid: "68154835"
 
  대상 파일은 빌드를 안내하는 대부분의 대상 및 작업을 포함하는 프로젝트 파일입니다. 규칙에 따라 대상 파일의 확장명은 .targets입니다. 일반적으로 관련 프로젝트 파일의 끝부분에서 대상 파일을 가져옵니다.
 
- 작업
+ task
 
  작업은 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트에서 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다. 예를 들어, 작업은 입력 파일을 컴파일하거나 외부 도구를 실행할 수 있습니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
- 변형(Transform)
+ transform
 
  변형은 항목 컬렉션 간의 일대일 변환입니다. 변형을 수행하면 프로젝트가 항목 컬렉션을 변환할 수 있을 뿐 아니라, 대상이 입력과 출력 간의 직접 매핑을 식별할 수 있습니다. 자세한 내용은 [변환](../msbuild/msbuild-transforms.md)을 참조하세요.
 
@@ -218,6 +218,6 @@ ms.locfileid: "68154835"
 
  *메타데이터, 잘 알려짐*을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>추가 정보
 
 - [MSBuild1](../msbuild/msbuild.md)

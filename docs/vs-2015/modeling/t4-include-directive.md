@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 669be50e11d3bf17d617c361b63f807149dbc823
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658579"
 ---
 # <a name="t4-include-directive"></a>T4 Include 지시문
@@ -27,13 +27,13 @@ ms.locfileid: "72658579"
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath`는 현재 템플릿 파일에 대해 상대적인 경로이거나 절대 경로일 수 있습니다.
+- `filePath` 는 절대 경로 이거나 현재 템플릿 파일을 기준으로 할 수 있습니다.
 
-   또한 특정 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension에서는 포함 파일을 검색하기 위한 고유 디렉터리를 지정할 수도 있습니다. 예를 들어 시각화 및 모델링 SDK (DSL 도구)를 설치한 경우 다음 폴더가 포함 목록: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`에 추가 됩니다.
+   또한 특정 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension에서는 포함 파일을 검색하기 위한 고유 디렉터리를 지정할 수도 있습니다. 예를 들어 시각화 및 모델링 SDK (DSL 도구)를 설치한 경우 다음 폴더가 포함 목록에 추가 됩니다. `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` .
 
    이러한 추가적인 포함 폴더는 포함 파일의 파일 확장명에 따라 달라질 수 있습니다. 예를 들어 DSL 도구의 포함 폴더에서는 파일 확장명이 `.tt`인 파일이 있는 포함 파일에만 액세스할 수 있습니다.
 
-- `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들면,
+- `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들면 다음과 같습니다.
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -41,7 +41,7 @@ ms.locfileid: "72658579"
 
 - 포함 파일의 이름에 `".tt"` 확장명을 사용할 필요가 없습니다.
 
-   포함 파일에 `".t4"`와 같은 다른 확장명을 사용할 수 있습니다. 이는 `.tt` 파일을 프로젝트에 추가할 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **사용자 지정 도구** 속성을 자동으로 `TextTemplatingFileGenerator`로 설정 하기 때문입니다. 일반적으로 포함된 파일을 개별적으로 변형하지 않을 수 있습니다.
+   포함 파일에 `".t4"`와 같은 다른 확장명을 사용할 수 있습니다. 이는 프로젝트에 파일을 추가할 때 `.tt` 에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 자동으로 해당 **사용자 지정 도구** 속성을로 설정 하기 때문입니다 `TextTemplatingFileGenerator` . 일반적으로 포함된 파일을 개별적으로 변형하지 않을 수 있습니다.
 
    반면에 파일 확장명에 따라 포함 파일을 검색할 추가 폴더가 영향을 받는 경우가 있다는 사실에 유의해야 합니다. 이는 다른 파일이 들어 있는 포함된 파일이 있는 경우 중요할 수 있습니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "72658579"
 
 - 템플릿이 둘 이상의 다른 포함 파일에서 호출되는 경우에도 한 번만 포함되도록 하려면 `once="true"`를 사용합니다.
 
-   이 기능을 사용 하면 다른 코드 조각이 이미 포함 된 경우를 걱정 하지 않고에 포함할 수 있는 재사용 가능한 T4 코드 조각의 라이브러리를 쉽게 빌드할 수 있습니다.  예를 들어 템플릿 처리 및 C# 생성을 처리 하는 매우 세분화 된 조각 라이브러리를 가정 합니다.  그러면 예외 생성과 같은 몇 가지 작업 관련 유틸리티에서 사용 하 여 응용 프로그램 관련 템플릿에서 사용할 수 있습니다. 종속성 그래프를 그리는 경우 일부 코드 조각이 여러 번 포함될 수 있습니다. 그러나 `once` 매개 변수가 이후에 포함되지 않도록 방지합니다.
+   이 기능을 사용 하면 다른 코드 조각이 이미 포함 된 경우를 걱정 하지 않고에 포함할 수 있는 재사용 가능한 T4 코드 조각의 라이브러리를 쉽게 빌드할 수 있습니다.  예를 들어 템플릿 처리 및 c # 생성을 처리 하는 매우 세분화 된 코드 조각 라이브러리가 있다고 가정 합니다.  그러면 예외 생성과 같은 몇 가지 작업 관련 유틸리티에서 사용 하 여 응용 프로그램 관련 템플릿에서 사용할 수 있습니다. 종속성 그래프를 그리는 경우 일부 코드 조각이 여러 번 포함될 수 있습니다. 그러나 `once` 매개 변수가 이후에 포함되지 않도록 방지합니다.
 
   **MyTextTemplate.tt:**
 
@@ -65,7 +65,7 @@ Output message 5 (from top template).
 
 ```
 
- **Textfile1.txt:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -82,7 +82,7 @@ void GenerateMessage(int n)
 
 ```
 
- **Textfile2.txt:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).
@@ -97,7 +97,7 @@ void AnotherGenerateMessage(int n)
 
 ```
 
- **결과 생성 파일 MyTextTemplate .txt:**
+ **결과적으로 생성된 파일, MyTextTemplate.txt:**
 
 ```
 Output message 1 (from top template).
@@ -112,7 +112,7 @@ Output message 5 (from top template).
 
 ```
 
-## <a name="msbuild"></a>MSBuild 및 Visual Studio에서 프로젝트 속성 사용
+## <a name="using-project-properties-in-msbuild-and-visual-studio"></a><a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용
  include 지시문에 $(SolutionDir)와 같은 Visual Studio 매크로를 사용할 수 있지만 MSBuild에서는 작동하지 않습니다. 빌드 컴퓨터에서 템플릿을 변형하려는 경우 대신 프로젝트 속성을 사용해야 합니다.
 
  프로젝트 속성을 정의하기 위해 .csproj 또는 .vbproj 파일을 편집합니다. 이 예제에서는 `myIncludeFolder`라는 속성을 정의합니다.

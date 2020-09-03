@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658063"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 애플리케이션 개요
@@ -35,16 +35,16 @@ N 계층 * 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 
 
  Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 도움이 되는 몇 가지 기능이 포함 되어 있습니다.
 
-- 데이터 집합 디자이너는 데이터 집합 (데이터 엔터티 계층)과 `TableAdapter`s (데이터 액세스 계층)을 불연속 프로젝트로 분리 하는 데 사용할 수 있는 **데이터 집합 프로젝트** 속성을 제공 합니다.
+- 데이터 집합 디자이너는 데이터 집합 (데이터 엔터티 계층) 및 s (데이터 액세스 계층)를 불연속 프로젝트로 분리할 수 있도록 하는 **데이터 집합 프로젝트** 속성을 제공 합니다 `TableAdapter` .
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 는 DataContext 및 데이터 클래스를 별도의 네임 스페이스로 생성 하는 설정을 제공 합니다. 이렇게 하면 데이터 액세스 및 데이터 엔터티 계층을 논리적으로 분리할 수 있습니다.
 
-- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) 는 응용 프로그램의 여러 계층 으로부터 DataContext를 가져오는 데 사용할 수 있는 <xref:System.Data.Linq.Table%601.Attach%2A> 메서드를 제공 합니다. 자세한 내용은 [LINQ to SQL를 사용 하는 N 계층 및 원격 응용 프로그램](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)을 참조 하세요.
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) 는 <xref:System.Data.Linq.Table%601.Attach%2A> 응용 프로그램의 여러 계층 으로부터 DataContext를 가져오는 데 사용할 수 있는 메서드를 제공 합니다. 자세한 내용은 [LINQ to SQL를 사용 하는 N 계층 및 원격 응용 프로그램](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)을 참조 하세요.
 
 ## <a name="presentation-tier"></a>프레젠테이션 계층
  *프레젠테이션 계층* 은 사용자가 응용 프로그램과 상호 작용 하는 계층입니다. 추가 응용 프로그램 논리도 포함 하는 경우가 많습니다. 일반적인 프레젠테이션 계층 구성 요소에는 다음이 포함 됩니다.
 
-- @No__t_0 및 <xref:System.Windows.Forms.BindingNavigator>와 같은 데이터 바인딩 구성 요소입니다.
+- 데이터 바인딩 구성 요소 (예: <xref:System.Windows.Forms.BindingSource> 및 <xref:System.Windows.Forms.BindingNavigator> )
 
 - 프레젠테이션 계층에서 사용할 엔터티 클래스 [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) 같은 데이터의 개체 표현입니다.
 
@@ -70,7 +70,7 @@ N 계층 * 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 
   중간 계층은 일반적으로 데이터 연결을 사용 하 여 데이터 계층에 연결 합니다. 이 데이터 연결은 일반적으로 데이터 액세스 구성 요소에 저장 됩니다.
 
 ## <a name="data-tier"></a>데이터 계층
- *데이터 계층* 은 기본적으로 응용 프로그램의 데이터를 저장 하는 서버 (예: [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]을 실행 하는 서버)입니다.
+ *데이터 계층* 은 기본적으로 응용 프로그램의 데이터를 저장 하는 서버 (예:를 실행 하는 서버 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] )입니다.
 
  다음 그림에서는 Visual Studio에서 사용할 수 있는 기능 및 기술과 n 계층 응용 프로그램의 데이터 계층에 적합할 수 있는 기술을 보여 줍니다.
 
@@ -83,11 +83,11 @@ N 계층 * 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 
 
  [데이터 세트 및 TableAdapter를 다른 프로젝트로 분리](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
- [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+ [연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
- [연습: N 계층 데이터 응용 프로그램에 유효성 검사 추가 ](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
+ [연습: N 계층 데이터 응용 프로그램에 유효성 검사 추가](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
 
  [LINQ to SQL을 사용한 N 계층 및 원격 애플리케이션](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
 
-## <a name="see-also"></a>관련 항목:
- <xref:System.Data.Linq.ITable.Attach%2A> [Walkthrough: N 계층 데이터 응용 프로그램 만들기 [Visual studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) 를 통해 [visual studio에서 데이터에 액세스 하](../data-tools/accessing-data-in-visual-studio.md) ](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [계층적 업데이트](../data-tools/hierarchical-update.md)
+## <a name="see-also"></a>관련 항목
+ <xref:System.Data.Linq.ITable.Attach%2A>[연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [Hierarchical update](../data-tools/hierarchical-update.md) [visual studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) visual studio [에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)

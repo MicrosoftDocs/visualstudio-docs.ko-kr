@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db52bf869642a5bdcc28eeb0792b295ae314a508
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538673"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: 배열 필드는 읽기 전용이면 안 됩니다.
@@ -52,14 +52,14 @@ ms.locfileid: "85538673"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 제외 하는 것이 좋습니다. 읽기 전용 필드의 내용이 중요 하지 않은 경우 거의 발생 하지 않습니다. 시나리오에서이 경우에는 `readonly` 메시지를 제외 하는 대신 한정자를 제거 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서는이 규칙을 위반 하는 위험을 보여 줍니다. 첫 번째 부분에서는 `MyClassWithReadOnlyArrayField` 보안 되지 않은 두 필드 (및)가 포함 된 형식의 예제 라이브러리를 보여 줍니다 `grades` `privateGrades` . 필드는 `grades` public 이므로 모든 호출자에 게 취약 합니다. 필드가 `privateGrades` private 이지만 메서드에 의해 호출자에 게 반환 되기 때문에 여전히 취약 `GetPrivateGrades` 합니다. `securePrivateGrades`필드는 메서드에 의해 안전 하 게 노출 됩니다 `GetSecurePrivateGrades` . 적절 한 디자인 방법에 따라 전용으로 선언 됩니다. 두 번째 부분에서는 및 멤버에 저장 된 값을 변경 하는 코드를 보여 줍니다 `grades` `privateGrades` .
 
  다음 예제에서는 클래스 라이브러리 예제를 표시 합니다.
 
  [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ArrayFieldsNotReadOnly/cs/FxCop.Security.ArrayFieldsNotReadOnly.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드에서는 예제 클래스 라이브러리를 사용 하 여 읽기 전용 배열 보안 문제를 보여 줍니다.
 
  [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestArrayFieldsRead/cs/FxCop.Security.TestArrayFieldsRead.cs#1)]
@@ -68,5 +68,5 @@ ms.locfileid: "85538673"
 
  **변조 전: 등급: 90, 90, 90 개인 등급: 90, 90, 90 보안 등급, 90, 90, 90** 
  **변조 후: 등급: 90, 555, 90 개인 등급: 90, 555, 90 보안 등급, 90, 90, 90**
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

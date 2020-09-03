@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1ac04a3d8834e3fc24f148fc36327d101e43720a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658853"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>방법: 관리 코드 프로젝트에 대한 코드 분석 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0, [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 및 [!INCLUDE[vsPro](../includes/vspro-md.md)]에서 코드 분석 *규칙 집합* 목록 중에서 선택 하 여 관리 코드 프로젝트에 적용할 수 있습니다. 기본 규칙 집합은 Microsoft 최소 권장 규칙입니다. 프로젝트 또는 솔루션의 모든 프로젝트에 다른 규칙 집합을 적용할 수 있습니다.
+[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 및에서는 [!INCLUDE[vsPro](../includes/vspro-md.md)] 코드 분석 *규칙 집합* 목록에서 선택 하 여 관리 코드 프로젝트에 적용할 수 있습니다. 기본 규칙 집합은 Microsoft 최소 권장 규칙입니다. 프로젝트 또는 솔루션의 모든 프로젝트에 다른 규칙 집합을 적용할 수 있습니다.
 
 > [!NOTE]
 > ASP.NET 웹 응용 프로그램에 대 한 규칙 집합을 구성 하는 방법에 대 한 자세한 내용은 [방법: ASP.NET 웹 응용 프로그램에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)을 참조 하세요.
@@ -48,11 +48,11 @@ ms.locfileid: "72658853"
 
     - 사용할 규칙 집합을 클릭 합니다.
 
-    - @No__t_1Browse를 클릭 합니다.  **>** 하 여 목록에 없는 기존 사용자 지정 규칙 집합을 지정 합니다.
+    - **\<Browse...>** 목록에 없는 기존 사용자 지정 규칙 집합을 지정 하려면 클릭 합니다.
 
     - 사용할 규칙 집합을 선택합니다.
 
          자세한 내용은 [사용자 지정 규칙 집합 만들기](../code-quality/creating-custom-code-analysis-rule-sets.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [연습: 사용자 지정 규칙 집합 구성 및 사용](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

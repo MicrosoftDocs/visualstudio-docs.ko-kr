@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658016"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>XAML 디자이너에서 개체에 애니메이션 효과 주기
@@ -29,7 +29,7 @@ ms.locfileid: "72658016"
 
  다음 비디오를 시청하여 애니메이션을 만드는 방법을 배워봅니다.
 
-|짧은 비디오 보기:|다음 작업을 수행하는 방법을 배워 보십시오.|
+|짧은 비디오 보기:|방법 배우기:|
 |--------------------------|-------------------|
 |![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [타임 라인 만들기](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|타임라인을 만들고 타임라인에서 개체 작업을 수행합니다.|
 |![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [키 프레임 추가 및 애니메이션 반복](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|키 프레임을 추가하고 각 키 프레임에서 속성을 설정합니다. 그런 다음 애니메이션을 실행하고 애니메이션 간 부드럽게 전환되는 개체를 확인합니다.|
@@ -40,5 +40,5 @@ ms.locfileid: "72658016"
 |![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [단추에 애니메이션 적용](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|사용자가 단추를 가리킬 때 단추에 표시되는 흥미로운 효과를 만듭니다.|
 |![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [애니메이션 만들기 및 감속/가속 작업](https://www.youtube.com/watch?v=mAJXYrwxGYo)|사용자가 계산기의 이미지에 있는 단추를 누를 때 나타나는 효과에 애니메이션 효과를 적용합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Blend for Visual Studio를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

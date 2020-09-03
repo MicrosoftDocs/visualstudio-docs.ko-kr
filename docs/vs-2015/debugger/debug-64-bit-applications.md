@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387202"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 애플리케이션 디버그
@@ -57,7 +57,7 @@ ms.locfileid: "86387202"
   
 - Visual Studio에서 응답을 중지 하는 문제 또는 기타 성능 문제가 발생 하 고 있습니다. 문제가 주기적으로 발생하는 경우 Visual Studio(devenv.exe) 및 작업자 프로세스(msvsmon.exe)의 덤프를 수집하여 Microsoft로 보낼 수 있습니다. 
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [64 비트 응용 프로그램](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [64 비트에 대 한 프로그램 구성](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Visual Studio IDE 64 비트 지원](../ide/visual-studio-ide-64-bit-support.md)   

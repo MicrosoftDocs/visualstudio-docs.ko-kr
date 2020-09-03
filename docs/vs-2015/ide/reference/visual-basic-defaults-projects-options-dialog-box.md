@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f08cc817fab6e81ae1160462c9b6d1221ca41160
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657883"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>옵션 대화 상자, 프로젝트, VB 기본값
@@ -33,9 +33,9 @@ Visual Basic 프로젝트 옵션에 대한 기본 설정을 지정합니다. 새
 
  **Option Strict** 명시적 축소 변환이 필요 하 고 런타임에 바인딩이 허용 되지 않도록 컴파일러 기본값을 설정 합니다. 기본적으로 **Option Strict**은 **해제**로 설정됩니다. 자세한 내용은 [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da)을 참조하세요.
 
- **Option Compare** 문자열 비교에 대 한 컴파일러 기본값을 설정 합니다. 이진 (대/소문자 구분) 또는 텍스트 (대/소문자 구분 안 함) 기본적으로 Option Compare는 **Binary**로 설정됩니다. 자세한 내용은 [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4)를 참조하세요.
+ **Option Compare** 문자열 비교에 대 한 컴파일러 기본값을 설정 합니다. 이진 (대/소문자 구분) 또는 텍스트 (대/소문자 구분 안 함) 기본적으로 **Option Compare** 는 **Binary**로 설정 됩니다. 자세한 내용은 [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4)를 참조하세요.
 
  **옵션 유추** 로컬 형식 유추에 대 한 컴파일러 기본값을 설정 합니다. 기본적으로 새로 만든 프로젝트에 대해서는 **Option Infer**가 **설정**으로 설정되고 이전 버전의 Visual Basic에서 만든 마이그레이션된 프로젝트에 대해서는 **Off**로 설정됩니다. 자세한 내용은 [/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 772c9bee3f43c42701bfa460c622f4a225ec59cb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539180"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.
@@ -46,10 +46,10 @@ ms.locfileid: "85539180"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 동일한 액세스 키를 가진 두 개의 컨트롤을 포함 하는 최소 폼을 보여 줍니다. 키는 리소스 파일에 저장 되며,이는 표시 되지 않습니다. 그러나 해당 값은 주석 처리 된 줄에 표시 `checkBox.Text` 됩니다. 중복 된 액셀러레이터의 동작을 검사 하 여 `checkBox.Text` 해당 줄을 주석 처리 된 항목과 교환할 수 있습니다. 그러나이 경우에는이 예제에서 규칙의 경고를 생성 하지 않습니다.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.AvoidDuplicateAccels/cs/FxCop.Globalization.AvoidDuplicateAccels.cs#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Resources.ResourceManager?displayProperty=fullName> [데스크톱 앱의 리소스](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

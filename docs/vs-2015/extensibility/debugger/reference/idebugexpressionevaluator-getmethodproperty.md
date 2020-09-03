@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs
+title: 'IDebugExpressionEvaluator:: GetMethodProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b84ac959241a8f68f4d9516879660b6414708731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155359"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 메서드는 지역 변수, 인수 및 기타 속성 메서드를 포함 하는 속성 개체를 가져옵니다.  
+이 메서드는 지역, 인수 및 메서드의 기타 속성을 포함 하는 속성 개체를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,29 +48,29 @@ int GetMethodProperty(
   
 #### <a name="parameters"></a>매개 변수  
  `pSymbolProvider`  
- [in] 사용할 기호 공급자로 표현 되는 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 개체입니다.  
+ 진행 [Idebugsymbol 공급자](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 개체로 표시 되는 사용할 기호 공급자입니다.  
   
  `pAddress`  
- [in] 로 표현 하는 코드에서 주소를 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체를 포함 하는 가장 가까운 확인 해야 하는 함수입니다.  
+ 진행 가장 가까운 포함 함수로 확인 되어야 하는 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체로 표시 되는 코드의 주소입니다.  
   
  `pBinder`  
- [in] 사용할 바인더로 표현 되는 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 개체입니다.  
+ 진행 [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) 개체로 표시 되는 사용할 바인더입니다.  
   
  `fIncludeHiddenLocals`  
- [in] 0이 아닌 값 (`TRUE`) 숨겨진된 지역;를 포함 하는 의미 0 (`FALSE`) 숨겨진된 지역 변수를 생략 하는 의미  
+ 진행 0이 아닌 `TRUE` 값 ()은 숨겨진 로컬을 포함 하는 것을 의미 합니다. 0 ( `FALSE` )은 숨겨진 로컬을 생략 합니다.  
   
  `ppProperty`  
- [out] 반환 된 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 메서드를 나타내는 개체입니다.  
+ 제한이 메서드를 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 숨겨진된 지역 변수는 일반적으로 컴파일러에서 생성 되는 변수.  
+ 숨겨진 로컬은 일반적으로 컴파일러에 의해 생성 되는 변수입니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+ [Idebug기호 공급자](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

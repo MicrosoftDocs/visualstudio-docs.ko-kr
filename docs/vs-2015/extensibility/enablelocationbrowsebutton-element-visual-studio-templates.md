@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef9f42bfb24caaf2775ba2c70110eaaa5d616116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204589"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-지정 여부를 합니다 **찾아보기** 단추를 사용할 수는 **새 프로젝트** 대화 상자에서 사용자가 새 프로젝트를 저장 된 기본 디렉터리를 쉽게 수정할 수 있도록 합니다.  
+사용자가 새 프로젝트가 저장 되는 기본 디렉터리를 쉽게 수정할 수 있도록 **새 프로젝트** 대화 상자에서 **찾아보기** 단추를 사용할 수 있는지 여부를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -52,15 +52,15 @@ ms.locfileid: "68204589"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 여야 `true` 또는 `false`를 표시할 것인지 여부를 나타내는 **찾아보기** 단추를 **새 프로젝트** 대화 상자.  
+ 텍스트는 `true` `false` **새 프로젝트** 대화 상자에서 **찾아보기** 단추를 표시할지 여부를 나타내는 또는 중 하나 여야 합니다.  
   
 ## <a name="remarks"></a>설명  
- `EnableLocationBrowseButton`는 선택적 요소입니다. 기본값은 `true`를 표시 합니다 **찾아보기** 단추를 **새 프로젝트** 대화 상자.  
+ `EnableLocationBrowseButton`는 선택적 요소입니다. 기본값은입니다 .이 값은 `true` **새 프로젝트** 대화 상자에서 **찾아보기** 단추를 표시 합니다.  
   
- 에 **새 프로젝트** 대화 상자에서를 **위치** 텍스트 상자가 새 프로젝트를 저장 된 디렉터리를 지정 합니다. 합니다 **찾아보기** 단추를 표시 하 여이 디렉터리를 수정할 수 있습니다 합니다 **프로젝트 위치** 컴퓨터에서 사용할 수 있는 다른 디렉터리에 쉽게 이동할 수 있는 대화 상자 및 그런 다음 새 프로젝트 저장 된 디렉터리를 선택 합니다.  
+ **새 프로젝트** 대화 상자의 **위치** 텍스트 상자에 새 프로젝트가 저장 되는 디렉터리를 지정 합니다. **찾아보기** 단추를 사용 하면 **프로젝트 위치** 대화 상자를 표시 하 여이 디렉터리를 수정할 수 있습니다 .이 대화 상자를 사용 하면 컴퓨터에서 사용할 수 있는 다른 디렉터리로 쉽게 이동한 다음 새 프로젝트가 저장 된 디렉터리로 선택할 수 있습니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows 응용 프로그램입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 Windows 응용 프로그램에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] .  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ ms.locfileid: "68204589"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

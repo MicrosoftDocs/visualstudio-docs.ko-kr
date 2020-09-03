@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로퍼티2:에넘어린이 | 마이크로 소프트 문서
+title: 'IDebugProperty2:: EnumChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721516"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-속성의 자식 목록을 검색합니다.
+속성의 자식 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,30 +53,30 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-【인】 열거된 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체의 필드를 지정하는 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형의 플래그 조합입니다.
+진행 열거 된 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체에서 채울 필드를 지정 하는 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형의 플래그 조합입니다.
 
 `dwRadix`\
-【인】 숫자 정보를 서식 지정하는 데 사용할 radix를 지정합니다.
+진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수를 지정 합니다.
 
 `guidFilter`\
-【인】 및 매개 변수와 함께 사용되는 필터의 `DEBUG_PROPERTY_INFO` GUID는 누거할 자식을 선택합니다. `pszNameFilter` `dwAttribFilter` 예를 들어 `guidFilterLocals` 로컬 변수에 대한 필터를 선택합니다.
+진행 `dwAttribFilter` `pszNameFilter` 열거 될 자식을 선택 하기 위해 및 매개 변수와 함께 사용 되는 필터의 GUID입니다 `DEBUG_PROPERTY_INFO` . 예를 들어 `guidFilterLocals` 지역 변수에 대 한 필터입니다.
 
 `dwAttribFilter`\
-【인】 [예를](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 들어 `DBG_ATTRIB_METHOD` 이 속성의 자식일 수 있는 모든 메서드에 대해 열거할 개체 유형을 지정하는 DBG_ATTRIB_FLAGS 열거형의 플래그 조합입니다. `guidFilter` 및 `pszNameFilter` 매개 변수와 함께 사용됩니다.
+진행 열거할 개체 형식 (예: [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) `DBG_ATTRIB_METHOD` 이 속성의 자식일 수 있는 모든 메서드)을 지정 하는 DBG_ATTRIB_FLAGS 열거형의 플래그 조합입니다. `guidFilter`및 `pszNameFilter` 매개 변수와 함께 사용 됩니다.
 
 `pszNameFilter`\
-【인】 및 매개 변수와 함께 사용되는 필터의 `DEBUG_PROPERTY_INFO` 이름으로 지정할 자식을 선택합니다. `dwAttribFilter` `guidFilter` 예를 들어 이 매개 변수를 "MyX" 필터로 설정하면 "MyX"라는 이름이 있는 모든 자식에 대해 필터가 지정됩니다.
+진행 `guidFilter` `dwAttribFilter` 열거 될 자식을 선택 하기 위해 및 매개 변수와 함께 사용 되는 필터의 이름입니다 `DEBUG_PROPERTY_INFO` . 예를 들어 "MyX" 라는 이름의 모든 자식에 대해이 매개 변수를 "MyX" 필터로 설정 합니다.
 
 `dwTimeout`\
-【인】 이 메서드에서 반환하기 전에 기다릴 최대 시간(밀리초)을 지정합니다. 무기한 `INFINITE` 대기하는 데 사용합니다.
+진행 이 메서드에서 반환 될 때까지 대기할 최대 시간 (밀리초)을 지정 합니다. `INFINITE`무기한 대기 하려면를 사용 합니다.
 
 `ppEnum`\
-【아웃】 하위 속성 목록을 포함하는 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 반환합니다.
+제한이 자식 속성의 목록을 포함 하는 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

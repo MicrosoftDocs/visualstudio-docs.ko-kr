@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657811"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트 작업
@@ -41,7 +41,7 @@ N 계층 데이터 응용 프로그램 *은 여러 논리 계층 (또는 *계층
 
  형식화 된 데이터 집합의 n 계층 지원을 통해 n 계층 디자인에 대 한 응용 프로그램 아키텍처의 반복적인 개발을 수행할 수 있습니다. 또한 코드를 두 개 이상의 프로젝트로 수동으로 분리 하는 요구 사항을 제거 합니다. 데이터 세트 디자이너를 사용 하 여 데이터 계층 디자인을 시작 합니다. 애플리케이션 아키텍처에 N 계층 디자인을 적용할 준비가 되면 데이터 세트 클래스를 별도의 프로젝트로 생성하도록 데이터 세트의 **데이터 세트 프로젝트** 속성을 설정합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [데이터 집합 및 tableadapter를 다른 프로젝트로 분리](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md) 생성 된 TableAdapter 클래스를 포함 하는 프로젝트에서 생성 된 데이터 집합 클래스를 새 프로젝트로 이동 하는 방법을 설명 합니다.
 
  [N 계층 응용 프로그램에서 tableadapter에 코드 추가](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md) N 계층 TableAdapter에 대해 코드를 추가할 수 있는 partial 클래스를 생성 하는 방법에 대해 설명 합니다.
@@ -61,8 +61,8 @@ N 계층 데이터 응용 프로그램 *은 여러 논리 계층 (또는 *계층
 
 ## <a name="related-sections"></a>관련 단원
 
-- [N 계층 데이터 애플리케이션 개요](../data-tools/n-tier-data-applications-overview.md)
+- [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
-- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
 - [LINQ to SQL을 사용한 N 계층 및 원격 애플리케이션](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

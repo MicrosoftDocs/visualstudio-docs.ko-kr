@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 업그레이드 | 마이크로 소프트 문서
+title: 프로젝트 업그레이드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,62 +13,62 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704260"
 ---
 # <a name="upgrading-projects"></a>프로젝트 업그레이드
 
-한 버전의 Visual Studio에서 다음 버전으로 프로젝트 모델을 변경하려면 프로젝트와 솔루션을 업그레이드하여 최신 버전에서 실행할 수 있습니다. 이 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 인터페이스는 자체 프로젝트에서 업그레이드 지원을 구현하는 데 사용할 수 있는 인터페이스를 제공합니다.
+Visual Studio의 한 버전에서 다음 프로젝트로 프로젝트 모델을 변경 하면 최신 버전에서 실행 될 수 있도록 프로젝트와 솔루션을 업그레이드 해야 할 수 있습니다. 는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 자체 프로젝트에서 업그레이드 지원을 구현 하는 데 사용할 수 있는 인터페이스를 제공 합니다.
 
 ## <a name="upgrade-strategies"></a>업그레이드 전략
 
-업그레이드를 지원하려면 프로젝트 시스템 구현에서 업그레이드 전략을 정의하고 구현해야 합니다. 전략을 결정할 때 나란히(SxS) 백업, 복사 백업 또는 둘 다를 지원하도록 선택할 수 있습니다.
+업그레이드를 지원 하려면 프로젝트 시스템 구현에서 업그레이드 전략을 정의 하 고 구현 해야 합니다. 전략 결정에서 SxS (side-by-side) 백업, 복사 백업 또는 둘 다를 지원 하도록 선택할 수 있습니다.
 
-- SxS 백업은 프로젝트가 적절한 파일 이름 접미사(예: ".old")를 추가하여 업그레이드가 필요한 파일만 복사한다는 것을 의미합니다.
+- SxS 백업은 프로젝트에서 업그레이드가 필요한 파일만 복사 하 여 적절 한 파일 이름 접미사를 추가 하는 것을 의미 합니다 (예: ".old").
 
-- 복사 백업은 프로젝트가 사용자가 제공한 백업 위치에 모든 프로젝트 항목을 복사한다는 것을 의미합니다. 그런 다음 원래 프로젝트 위치에 있는 관련 파일이 업그레이드됩니다.
+- 백업 복사는 프로젝트가 모든 프로젝트 항목을 사용자가 제공한 백업 위치에 복사 하는 것을 의미 합니다. 그런 다음 원본 프로젝트 위치에 있는 관련 파일이 업그레이드 됩니다.
 
-## <a name="how-upgrade-works"></a>업그레이드 작동 방식
+## <a name="how-upgrade-works"></a>업그레이드 작동 방법
 
-이전 버전의 Visual Studio에서 만든 솔루션이 최신 버전에서 열리면 IDE는 솔루션 파일을 검사하여 업그레이드해야 하는지 확인합니다. 업그레이드가 필요한 경우 **업그레이드 마법사가** 자동으로 시작되어 업그레이드 프로세스를 진행합니다.
+이전 버전의 Visual Studio에서 만든 솔루션을 최신 버전에서 열면 IDE는 솔루션 파일을 확인 하 여 업그레이드 해야 하는지 여부를 확인 합니다. 업그레이드 해야 하는 경우 업그레이드 **마법사** 가 자동으로 시작 되어 업그레이드 프로세스를 통해 사용자를 안내 합니다.
 
-솔루션을 업그레이드해야 하는 경우 각 프로젝트 팩터리에서 업그레이드 전략을 쿼리합니다. 이 전략은 프로젝트 팩터리에서 복사 백업 또는 SxS 백업을 지원하는지 여부를 결정합니다. 이 정보는 업그레이드 **마법사로**전송되어 백업에 필요한 정보를 수집하고 사용자에게 적용 가능한 옵션을 제공합니다.
+솔루션을 업그레이드 해야 하는 경우 각 프로젝트 팩터리에서 업그레이드 전략을 쿼리 합니다. 전략은 프로젝트 팩터리가 복사 백업 또는 SxS 백업을 지원 하는지 여부를 결정 합니다. 이 정보는 백업에 필요한 정보를 수집 하 고 해당 옵션을 사용자에 게 제공 하는 **업그레이드 마법사**에 전송 됩니다.
 
 ### <a name="multi-project-solutions"></a>다중 프로젝트 솔루션
 
-솔루션에 여러 프로젝트가 포함되어 있고 SxS 백업만 지원하는 C++ 프로젝트와 복사 백업만 지원하는 웹 프로젝트와 같이 업그레이드 전략이 다른 경우 프로젝트 팩터는 업그레이드 전략을 협상해야 합니다.
+솔루션에 여러 프로젝트가 포함 되어 있고 업그레이드 전략이 다른 경우 (예: SxS 백업만 지 원하는 c + + 프로젝트와 복사 백업만 지 원하는 웹 프로젝트의 경우) 프로젝트 팩터리가 업그레이드 전략을 협상 해야 합니다.
 
-솔루션은 각 프로젝트 팩터리에서 에 대해 쿼리합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 그런 다음 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> 전역 프로젝트 파일을 업그레이드해야 하는지 확인하고 지원되는 업그레이드 전략을 결정합니다. 그러면 **업그레이드 마법사가** 호출됩니다.
+솔루션은에 대 한 각 프로젝트 팩터리를 쿼리 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 합니다. 그런 다음 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> 를 호출 하 여 전역 프로젝트 파일을 업그레이드 해야 하는지 여부를 확인 하 고 지원 되는 업그레이드 전략을 결정 합니다. 그러면 **업그레이드 마법사** 가 호출 됩니다.
 
-사용자가 마법사를 완료한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 후 각 프로젝트 팩터리에서 실제 업그레이드를 수행하도록 호출됩니다. 백업을 용이하게 하기 위해 IVsProjectUpgradeViaFactory 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> 업그레이드 프로세스의 세부 정보를 기록하는 서비스를 제공합니다. 이 서비스는 캐시할 수 없습니다.
+사용자가 마법사를 완료 한 후에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 는 각 프로젝트 팩터리에서를 호출 하 여 실제 업그레이드를 수행 합니다. 백업을 용이 하 게 하기 위해 IVsProjectUpgradeViaFactory 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> 업그레이드 프로세스의 세부 정보를 기록 하는 서비스를 제공 합니다. 이 서비스는 캐시할 수 없습니다.
 
-모든 관련 전역 파일을 업데이트한 후 각 프로젝트 팩터리는 프로젝트를 인스턴스화하도록 선택할 수 있습니다. 프로젝트 구현은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>을 지원해야 합니다. 그런 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 다음 메서드를 호출하여 모든 관련 프로젝트 항목을 업그레이드합니다.
+모든 관련 전역 파일을 업데이트 한 후에는 각 프로젝트 팩터리가 프로젝트를 인스턴스화하기 위해 선택할 수 있습니다. 프로젝트 구현은를 지원 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>그런 다음 메서드를 호출 하 여 모든 관련 프로젝트 항목을 업그레이드 합니다.
 
 > [!NOTE]
-> 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> SVsUpgradeLogger 서비스를 제공하지 않습니다. 이 서비스는 호출하여 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>얻을 수 있습니다.
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>이 메서드는 SVsUpgradeLogger 서비스를 제공 하지 않습니다. 을 호출 하 여이 서비스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> .
 
 ## <a name="best-practices"></a>모범 사례
 
-<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 서비스를 사용하여 파일을 편집하기 전에 편집할 수 있는지 확인하고 저장하기 전에 저장할 수 있습니다. 이렇게 하면 백업 및 업그레이드 구현에서 소스 제어하에 프로젝트 파일, 사용 권한이 부족한 파일 등을 처리하는 데 도움이 됩니다.
+서비스를 사용 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 하 여 파일을 편집 하기 전에 편집할 수 있는지 확인 하 고 저장 하기 전에 저장할 수 있습니다. 이렇게 하면 백업 및 업그레이드 구현이 소스 제어에서 프로젝트 파일, 권한이 부족 한 파일 등을 처리 하는 데 도움이 됩니다.
 
-백업 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> 및 업그레이드의 모든 단계에서 서비스를 사용하여 업그레이드 프로세스의 성공 또는 실패에 대한 정보를 제공합니다.
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>백업 및 업그레이드의 모든 단계에서 서비스를 사용 하 여 업그레이드 프로세스의 성공 또는 실패에 대 한 정보를 제공 합니다.
 
-프로젝트 백업 및 업그레이드에 대한 자세한 내용은 vsshell2.idl의 IVsProject업그레이드에 대한 주석을 참조하십시오.
+프로젝트를 백업 하 고 업그레이드 하는 방법에 대 한 자세한 내용은 vsshell2의 IVsProjectUpgrade에 대 한 설명을 참조 하세요.
 
-## <a name="upgrading-custom-projects"></a><a name="upgrading-custom-projects"></a>사용자 지정 프로젝트 업그레이드
+## <a name="upgrading-custom-projects"></a><a name="upgrading-custom-projects"></a> 사용자 지정 프로젝트 업그레이드
 
-제품의 다른 Visual Studio 버전 간에 프로젝트 파일에 있는 정보를 변경하는 경우 이전 버전에서 새 버전으로의 프로젝트 파일 업그레이드를 지원해야 합니다. **Visual Studio 변환 마법사에**참여할 수 있는 업그레이드를 지원하려면 인터페이스를 구현합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 이 인터페이스에는 복사 업그레이드에 사용할 수 있는 메커니즘만 포함되어 있습니다. 프로젝트 업그레이드는 솔루션의 일부가 열릴 때 수행됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스는 프로젝트 팩터리에서 구현되거나 적어도 프로젝트 팩터리에서 얻을 수 있어야 합니다.
+제품의 다른 Visual Studio 버전 간에 프로젝트 파일에 있는 정보를 변경하는 경우 이전 버전에서 새 버전으로의 프로젝트 파일 업그레이드를 지원해야 합니다. **Visual Studio 변환 마법사**에 참여할 수 있도록 하는 업그레이드를 지원 하려면 인터페이스를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 합니다. 이 인터페이스에는 복사 업그레이드에 사용할 수 있는 메커니즘만 포함되어 있습니다. 프로젝트 업그레이드는 솔루션의 일부가 열릴 때 수행됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스는 프로젝트 팩터리에서 구현되거나 적어도 프로젝트 팩터리에서 얻을 수 있어야 합니다.
 
-<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 인터페이스를 사용하는 이전 메커니즘은 계속 지원되지만 프로젝트의 일부가 열릴 때 프로젝트 시스템을 개념적으로 업그레이드합니다. 따라서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 인터페이스를 호출하거나 구현하는 경우에도 Visual <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Studio 환경에서 인터페이스를 호출합니다. 이 접근 방식을 사용하면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>를 사용하여 업그레이드의 복사 및 프로젝트 전용 부분을 구현하고 나머지 작업은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 인터페이스에서 바로(아마도 새 위치에서) 수행하도록 위임할 수 있습니다.
+<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 인터페이스를 사용하는 이전 메커니즘은 계속 지원되지만 프로젝트의 일부가 열릴 때 프로젝트 시스템을 개념적으로 업그레이드합니다. 따라서 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 호출 하거나 구현 하는 경우에도 Visual Studio 환경에서 인터페이스를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 합니다. 이 접근 방식을 사용하면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>를 사용하여 업그레이드의 복사 및 프로젝트 전용 부분을 구현하고 나머지 작업은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 인터페이스에서 바로(아마도 새 위치에서) 수행하도록 위임할 수 있습니다.
 
-의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>샘플 구현은 [VSSDK 샘플을](https://github.com/Microsoft/VSSDK-Extensibility-Samples)참조하십시오.
+의 샘플 구현에 대 한 자세한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 내용은를 참조 [하십시오](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 프로젝트 업그레이드에서는 다음과 같은 시나리오가 발생합니다.
 
-- 파일이 프로젝트에서 지원할 수 있는 형식보다 최신 형식인 경우 이를 설명하는 오류를 반환해야 합니다. 이전 버전의 제품에 버전을 확인하는 코드가 포함되어 있다고 가정합니다.
+- 파일이 프로젝트에서 지원할 수 있는 형식보다 최신 형식인 경우 이를 설명하는 오류를 반환해야 합니다. 이는 제품의 이전 버전에 버전을 확인 하는 코드가 포함 되어 있다고 가정 합니다.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 메서드에 <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> 플래그가 지정된 경우 업그레이드는 프로젝트를 열기 전에 현재 위치 업그레이드로 구현됩니다.
 
@@ -98,11 +98,11 @@ ms.locfileid: "80704260"
 
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade 구현
 
-프로젝트 시스템이 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 구현하는 경우에만 Visual Studio 변환 **마법사에**참여할 수 없습니다. 그러나 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스를 구현하더라도 여전히 파일 업그레이드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 구현에 위임할 수는 있습니다.
+프로젝트 시스템에서를 구현 하는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> **Visual Studio 변환 마법사**에 참여할 수 없습니다. 그러나 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스를 구현하더라도 여전히 파일 업그레이드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 구현에 위임할 수는 있습니다.
 
 #### <a name="to-implement-ivsprojectupgrade"></a>IVsProjectUpgrade를 구현하려면
 
-1. 사용자가 프로젝트를 열면 프로젝트가 열린 후 프로젝트에 대한 다른 사용자 작업을 수행할 수 있기 전에 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 메서드가 호출됩니다. 사용자에게 솔루션을 업그레이드하라는 메시지가 이미 표시된 경우 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 플래그가 `grfUpgradeFlags` 매개 변수에 전달됩니다. 사용자가 기존 프로젝트 **추가** 명령을 사용하는 등 프로젝트를 직접 열면 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 플래그가 전달되지 않으며 프로젝트에서 사용자에게 업그레이드하라는 메시지를 표시해야 합니다.
+1. 사용자가 프로젝트를 열면 프로젝트가 열린 후 프로젝트에 대한 다른 사용자 작업을 수행할 수 있기 전에 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 메서드가 호출됩니다. 사용자에게 솔루션을 업그레이드하라는 메시지가 이미 표시된 경우 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 플래그가 `grfUpgradeFlags` 매개 변수에 전달됩니다. 사용자가 **기존 프로젝트 추가** 명령을 사용 하는 등의 방법으로 프로젝트를 직접 여는 경우 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 플래그가 전달 되지 않으며 프로젝트에서 사용자에 게 업그레이드할지 묻는 메시지를 표시 해야 합니다.
 
 2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 호출에 응답하여 프로젝트에서는 프로젝트 파일이 업그레이드되었는지 평가해야 합니다. 프로젝트에서 프로젝트 형식을 새 버전으로 업그레이드할 필요가 없는 경우에는 간단히 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 플래그를 반환할 수 있습니다.
 
@@ -112,7 +112,7 @@ ms.locfileid: "80704260"
 
     - `pfEditCanceled` 매개 변수에서 반환된 `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK>이고 `VSQueryEditResult` 값에 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyNotUnderScc> 비트가 설정된 경우에는 사용자가 권한 문제를 직접 해결해야 하므로 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>에서 오류를 반환해야 합니다. 그런 다음 프로젝트에서 다음을 수행해야 합니다.
 
-         호출하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> 사용자에게 오류를 보고하고 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> 오류 코드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>로 반환합니다.
+         을 호출 하 여 오류를 사용자에 게 보고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> 하 고 오류 코드를로 반환 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> .
 
     - `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK>이고 `VSQueryEditResultFlags` 값에 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> 비트가 설정된 경우에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>,...)를 호출하여 프로젝트 파일을 체크 아웃해야 합니다.
 
@@ -140,7 +140,7 @@ ms.locfileid: "80704260"
 
 - 프로젝트 다시 로드를 직접 처리하는 경우 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT) 구현을 호출합니다. 이 호출을 받는 경우 프로젝트의 첫 번째 인스턴스(Project1)를 다시 로드하고 계속 프로젝트 파일을 업그레이드합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>)에 대해 `true`를 반환하는 경우 환경에서 사용자가 프로젝트 다시 로드를 직접 처리한다고 인식합니다.
 
-- 프로젝트 다시 로드를 직접 처리하지 않는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>)에 대해 `false`를 반환합니다. 이 경우(QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) 반환하기 전에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>환경은 다음과 같이 Project2와 같은 프로젝트의 또 다른 새 인스턴스를 만듭니다.
+- 프로젝트 다시 로드를 직접 처리하지 않는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>)에 대해 `false`를 반환합니다. 이 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits)가 반환 되기 전에 환경에서 다음과 같이 프로젝트의 다른 새 인스턴스 (예: Project2)를 만듭니다.
 
     1. 환경에서 첫 번째 프로젝트 개체 Project1에 대해 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A>를; 호출하여 이 개체를 비활성 상태로 둡니다.
 
@@ -161,24 +161,24 @@ ms.locfileid: "80704260"
 
 ## <a name="upgrading-project-items"></a>프로젝트 항목 업그레이드
 
-구현하지 않은 프로젝트 시스템 내에 항목을 추가하거나 관리하는 경우 프로젝트 업그레이드 프로세스에 참여해야 할 수 있습니다. 크리스탈 보고서는 프로젝트 시스템에 추가할 수 있는 항목의 예입니다.
+구현 하지 않는 프로젝트 시스템 내에서 항목을 추가 하거나 관리 하는 경우 프로젝트 업그레이드 프로세스에 참여 해야 할 수 있습니다. Crystal Reports는 프로젝트 시스템에 추가할 수 있는 항목의 예입니다.
 
-일반적으로 프로젝트 항목 구현자는 프로젝트 참조가 무엇이며 업그레이드 결정을 내리기 위해 어떤 다른 프로젝트 속성이 있는지 알아야 하기 때문에 이미 완전히 인스턴스화되고 업그레이드된 프로젝트를 활용하려고 합니다.
+일반적으로 프로젝트 항목 구현자는 프로젝트 참조가 무엇 인지 알고 있어야 하 고 업그레이드 결정을 내리는 기타 프로젝트 속성을 알아야 하므로 이미 완전히 인스턴스화되어 업그레이드 된 프로젝트를 활용 하려고 합니다.
 
-### <a name="to-get-the-project-upgrade-notification"></a>프로젝트 업그레이드 알림을 받으려면
+### <a name="to-get-the-project-upgrade-notification"></a>프로젝트 업그레이드 알림을 가져오려면
 
-1. 프로젝트 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> 항목 구현에서 플래그(vsshell80.idl에 정의)를 설정합니다. 이렇게 하면 프로젝트 항목 VSPackage Visual Studio 셸에서 프로젝트 시스템을 업그레이드 하는 과정에 있는지 확인 하면 자동으로 로드 됩니다.
+1. <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading>프로젝트 항목 구현에서 플래그 (vsshell80에 정의 됨)를 설정 합니다. 그러면 Visual Studio 셸에서 프로젝트 시스템을 업그레이드 하는 중 이라고 결정 하는 경우 프로젝트 항목 VSPackage가 자동으로 로드 됩니다.
 
-2. 방법을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 통해 인터페이스에 대해 조언합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A>
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>메서드를 통해 인터페이스에 대해 Advise 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> .
 
-3. 인터페이스는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 프로젝트 시스템 구현이 업그레이드 작업을 완료하고 업그레이드된 새 프로젝트가 생성된 후에 발생합니다. 시나리오에 따라 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 인터페이스는 . <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>
+3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>인터페이스는 프로젝트 시스템 구현에서 업그레이드 작업을 완료 하 고 업그레이드 된 새 프로젝트가 생성 된 후에 발생 합니다. 시나리오에 따라 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> , 또는 메서드 후에 인터페이스가 발생 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> .
 
-### <a name="to-upgrade-the-project-item-files"></a>프로젝트 항목 파일을 업그레이드하려면
+### <a name="to-upgrade-the-project-item-files"></a>프로젝트 항목 파일을 업그레이드 하려면
 
-1. 프로젝트 항목 구현에서 파일 백업 프로세스를 신중하게 관리해야 합니다. 이는 특히 `fUpgradeFlag` <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 메서드의 매개 변수가 <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>설정된 나란히 백업에 적용되며 백업된 파일은 ".old"로 지정된 측면 파일을 따라 배치됩니다. 프로젝트를 업그레이드한 시스템 시간보다 오래된 백업된 파일은 오래된 파일로 지정할 수 있습니다. 또한 이를 방지하기 위한 구체적인 단계를 취하지 않는 한 덮어쓸 수 있습니다.
+1. 프로젝트 항목 구현에서 파일 백업 프로세스를 신중 하 게 관리 해야 합니다. 이는 side-by-side 백업에 특히 적용 됩니다 .이 경우 `fUpgradeFlag` 메서드의 매개 변수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 로 설정 되 고 <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> , 백업 된 파일은 ".old"로 지정 된 side-by-side 파일에 배치 됩니다. 프로젝트를 업그레이드할 때 시스템 시간 보다 오래 된 백업 파일은 오래 된 것으로 지정할 수 있습니다. 또한이를 방지 하기 위해 특정 단계를 수행 하지 않는 한 덮어쓸 수 있습니다.
 
-2. 프로젝트 항목에서 프로젝트 업그레이드 알림을 받으면 Visual **Studio 변환 마법사가** 계속 표시됩니다. 따라서 인터페이스의 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 사용 하 여 마법사 UI에 업그레이드 메시지를 제공 해야 합니다.
+2. 프로젝트 항목에 프로젝트 업그레이드 알림이 표시 될 때 **Visual Studio 변환 마법사** 가 계속 표시 됩니다. 따라서 인터페이스의 메서드를 사용 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 하 여 마법사 UI에 업그레이드 메시지를 제공 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [프로젝트](../../extensibility/internals/projects.md)
