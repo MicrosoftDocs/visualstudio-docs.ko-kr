@@ -1,5 +1,5 @@
 ---
-title: 키 바인딩 요소 | 마이크로 소프트 문서
+title: KeyBindings 요소 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703133"
 ---
-# <a name="keybindings-element"></a>키 바인딩 요소
-키 바인딩 요소는 키 바인딩 요소 및 기타 키 바인딩 그룹그룹을 그룹화합니다.
+# <a name="keybindings-element"></a>KeyBindings 요소
+KeyBindings 요소는 KeyBinding 요소 및 기타 키 바인딩 그룹을 그룹화 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,22 +37,22 @@ ms.locfileid: "80703133"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
-|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[키 바인딩 요소](../extensibility/keybinding-element.md)|명령에 대한 바로 가기 키를 지정합니다.|
-|[키 바인딩](../extensibility/keybindings-element.md)|키 바인딩 요소 및 기타 키 바인딩 그룹화 그룹입니다.|
+|[KeyBinding 요소](../extensibility/keybinding-element.md)|명령에 대 한 바로 가기 키를 지정 합니다.|
+|[KeyBindings](../extensibility/keybindings-element.md)|KeyBinding 요소 및 기타 키 바인딩 그룹을 그룹화 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[명령 테이블 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의합니다.|
+|[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의 합니다.|
 
 ## <a name="example"></a>예제
 
@@ -65,6 +65,6 @@ ms.locfileid: "80703133"
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>참조
-- [키 바인딩 요소](../extensibility/keybinding-element.md)
-- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참고 항목
+- [KeyBinding 요소](../extensibility/keybinding-element.md)
+- [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

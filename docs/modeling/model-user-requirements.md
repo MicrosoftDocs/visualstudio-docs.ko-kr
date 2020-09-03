@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590243"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
@@ -48,7 +48,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 사용자 요구 사항의 여러 가지 뷰를 만들 수 있습니다.  각 뷰는 특정 유형의 정보를 제공합니다.  이러한 뷰를 만들 때는 뷰 간에 자주 이동하는 것이 좋습니다. 임의 뷰에서 시작할 수 있습니다.
 
-|다이어그램 또는 문서|요구 사항 모델에서 설명하는 항목|단원|
+|다이어그램 또는 문서|요구 사항 모델에서 설명하는 항목|섹션|
 |-|-|-|
 |개념적 클래스 다이어그램|요구 사항을 설명하는 데 사용되는 형식 용어집으로, 형식은 시스템 인터페이스에 표시됩니다.||
 |추가 문서 또는 작업 항목|성능, 보안, 유용성 및 안정성 기준입니다.|[서비스 품질 요구 사항 설명](#QoSRequirements)|
@@ -56,11 +56,11 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 대부분의 다이어그램 형식은 다른 용도로 사용할 수 있습니다. 다이어그램 형식에 대 한 개요는 [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)를 참조 하세요.
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Showing Business Rules
 
 비즈니스 규칙은 특정 사용 사례와 연결되지 않은 요구 사항이며 시스템 전체에서 관찰되어야 합니다.
 
-대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
+대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ![Order 클래스에 연결된 주석의 규칙](../modeling/media/uml_reqmcd2.png)
 
@@ -70,13 +70,13 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 여기서 선택 항목은 요구 사항을 정의하는 방법과 관련이 있으며 프로그램 코드에서 요구 사항을 구현하는 방법과는 독립적입니다.
 
-자세한 내용은 다음 항목을 참조하세요.
+다음 항목에서는 보다 자세한 정보를 제공합니다.
 
-|원하는 내용|읽기|
+|자세한 정보|읽기|
 |-|-|
 |비즈니스 규칙을 준수하는 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> 서비스 품질 요구 사항 설명
 
 여러 범주의 서비스 품질 요구 사항이 있습니다. 이름은 다음과 같습니다.
 
@@ -96,7 +96,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 서비스 품질 요구 사항을 준수 하는 코드를 개발 하는 방법을 알아보려면 [앱 아키텍처 모델링](../modeling/model-your-app-s-architecture.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
 - [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)

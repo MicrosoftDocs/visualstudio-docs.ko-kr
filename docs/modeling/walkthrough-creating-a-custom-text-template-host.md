@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532225"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
@@ -821,6 +821,6 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성 된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

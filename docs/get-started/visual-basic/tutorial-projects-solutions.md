@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590217"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Visual Basic을 사용하여 프로젝트 및 솔루션에 대해 알아보기
@@ -248,7 +248,7 @@ ms.locfileid: "75590217"
 
 Visual Studio를 추가로 탐색하려면 [Visual Basic 자습서](index.yml) 중 하나를 따라 앱을 만드는 것이 좋습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [프로젝트 및 솔루션 만들기](../../ide/creating-solutions-and-projects.md)
 - [프로젝트 및 솔루션 속성 관리](../../ide/managing-project-and-solution-properties.md)

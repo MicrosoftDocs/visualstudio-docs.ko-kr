@@ -1,5 +1,5 @@
 ---
-title: 언어 서비스 및 편집자 확장 포인트 | 마이크로 소프트 문서
+title: 언어 서비스 및 편집기 확장 위치 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28bb086eb99e4b8128c04f62f9b370eb2eab8fa3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703052"
 ---
-# <a name="language-service-and-editor-extension-points"></a>언어 서비스 및 편집기 확장 지점
-편집기는 대부분의 언어 서비스 기능을 포함하여 관리되는 확장성 프레임워크(MEF) 구성 요소 부분으로 확장할 수 있는 확장 지점을 제공합니다. 다음은 주요 확장 지점 범주입니다.
+# <a name="language-service-and-editor-extension-points"></a>언어 서비스 및 편집기 확장 위치
+편집기는 대부분의 언어 서비스 기능을 포함 하 여 Managed Extensibility Framework (MEF) 구성 요소 부분으로 확장할 수 있는 확장 위치를 제공 합니다. 기본 확장 지점 범주는 다음과 같습니다.
 
 - 내용 유형
 
@@ -28,26 +28,26 @@ ms.locfileid: "80703052"
 
 - 태그들
 
-- 장식
+- 도구 영역
 
 - 마우스 프로세서
 
-- 드롭 핸들러
+- Drop 처리기
 
 - 옵션
 
 - IntelliSense
 
-## <a name="extend-content-types"></a>콘텐츠 유형 확장
- 콘텐츠 형식은 "텍스트", "코드" 또는 "CSharp"와 같은 편집기에서 처리하는 텍스트 종류에 대한 정의입니다. 형식의 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 변수를 선언하고 새 콘텐츠 형식에 고유한 이름을 지정하여 새 콘텐츠 형식을 정의합니다. 콘텐츠 형식을 편집기로 등록하려면 다음 특성과 함께 내보냅니다.
+## <a name="extend-content-types"></a>콘텐츠 형식 확장
+ 내용 유형은 편집기에서 처리 하는 텍스트 종류 (예: "text", "code" 또는 "CSharp")의 정의입니다. 형식의 변수를 선언 하 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 고 새 콘텐츠 형식에 고유한 이름을 지정 하 여 새 콘텐츠 형식을 정의 합니다. 내용 유형을 편집기에 등록 하려면 다음 특성과 함께 내보냅니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>은 콘텐츠 형식의 이름입니다.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 콘텐츠 형식의 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>은 이 콘텐츠 형식이 파생되는 콘텐츠 형식의 이름입니다. 콘텐츠 형식은 다른 여러 콘텐츠 형식에서 상속될 수 있습니다.
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> 이 콘텐츠 형식이 파생 되는 콘텐츠 형식의 이름입니다. 콘텐츠 형식은 다른 여러 콘텐츠 형식에서 상속할 수 있습니다.
 
-  클래스가 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 봉인되어 있으므로 형식 매개 변수 없이 내보낼 수 있습니다.
+  <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>클래스가 봉인 되어 있기 때문에 형식 매개 변수 없이 내보낼 수 있습니다.
 
-  다음 예제에서는 콘텐츠 유형 정의에 대한 내보내기 특성을 보여 주며,
+  다음 예제에서는 내용 유형 정의의 내보내기 특성을 보여 줍니다.
 
 ```
 [Export]
@@ -57,41 +57,41 @@ ms.locfileid: "80703052"
 internal static ContentTypeDefinition TestContentTypeDefinition;
 ```
 
- 콘텐츠 형식은 기존 콘텐츠 유형이 0개 이상인 것을 기반으로 할 수 있습니다. 다음은 기본 제공 유형입니다.
+ 콘텐츠 형식은 0 개 이상의 기존 콘텐츠 형식을 기반으로 할 수 있습니다. 기본 제공 되는 형식은 다음과 같습니다.
 
-- Any: 기본 콘텐츠 유형입니다. 다른 모든 콘텐츠 형식의 부모입니다.
+- Any: 기본 콘텐츠 형식입니다. 다른 모든 콘텐츠 형식의 부모입니다.
 
-- 텍스트: 투영되지 않은 콘텐츠의 기본 유형입니다. "any"에서 상속됩니다.
+- Text: 비 프로젝션 콘텐츠의 기본 형식입니다. "Any"에서 상속 됩니다.
 
-- 일반 텍스트: 코드가 아닌 텍스트의 경우. "텍스트"에서 상속합니다.
+- 일반 텍스트: 비 코드 텍스트 "Text"에서 상속 됩니다.
 
-- 코드 : 모든 종류의 코드. "텍스트"에서 상속합니다.
+- Code: 모든 종류의 코드를 위한 것입니다. "Text"에서 상속 됩니다.
 
-- 불활성: 모든 종류의 처리에서 텍스트를 제외합니다. 이 콘텐츠 형식의 텍스트에는 확장이 적용되지 않습니다.
+- 버려지는 단순한: 모든 종류의 처리에서 텍스트를 제외 합니다. 이 콘텐츠 형식의 텍스트에는 적용 된 확장이 없습니다.
 
-- 프로젝션: 프로젝션 버퍼의 내용입니다. "any"에서 상속됩니다.
+- 프로젝션: 프로젝션 버퍼의 내용입니다. "Any"에서 상속 됩니다.
 
-- 인텔리센스: 인텔리센스의 내용. "텍스트"에서 상속합니다.
+- Intellisense: IntelliSense의 내용입니다. "Text"에서 상속 됩니다.
 
-- 시그도움말: 서명 도움말. "인텔리센스"에서 상속됩니다.
+- Sighelp: 시그니처 도움말입니다. "Intellisense"에서 상속 됩니다.
 
-- 시그헬프-문서: 서명 도움말 문서. "인텔리센스"에서 상속됩니다.
+- Sighelp: 서명 도움말 설명서입니다. "Intellisense"에서 상속 됩니다.
 
-  다음은 Visual Studio에서 정의한 일부 콘텐츠 유형과 Visual Studio에서 호스팅되는 일부 언어입니다.
+  다음은 visual Studio에 정의 된 콘텐츠 형식과 Visual Studio에서 호스팅되는 일부 언어입니다.
 
 - Basic
 
 - C/C++
 
-- 콘솔 출력
+- Consoletomsbuild
 
 - CSharp
 
 - CSS
 
-- Enc
+- ENC
 
-- 결과 찾기
+- FindResults
 
 - F#
 
@@ -103,27 +103,27 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
 - XML
 
-  사용 가능한 콘텐츠 형식 목록을 검색하려면 편집기의 콘텐츠 형식 컬렉션을 유지 관리하는 <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>을 가져옵니다. 다음 코드는 이 서비스를 속성으로 가져오게 합니다.
+  사용 가능한 내용 유형 목록을 검색 하려면 <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService> 편집기에 대 한 내용 유형 컬렉션을 유지 관리 하는를 가져옵니다. 다음 코드에서는이 서비스를 속성으로 가져옵니다.
 
 ```
 [Import]
 internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 ```
 
- 콘텐츠 형식을 파일 이름 확장명과 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>연결하려면 을 사용합니다.
+ 콘텐츠 형식을 파일 이름 확장명과 연결 하려면를 사용 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 합니다.
 
 > [!NOTE]
-> Visual Studio에서 파일 이름 확장자는 언어 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> 서비스 패키지에서 를 사용하여 등록됩니다. MEF 콘텐츠 형식을 이러한 방식으로 등록된 파일 이름 확장명과 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 연결합니다.
+> Visual Studio에서 파일 이름 확장명은 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> 언어 서비스 패키지에서를 사용 하 여 등록 됩니다. 는 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 이 방식으로 등록 된 파일 이름 확장명에 MEF 콘텐츠 형식을 연결 합니다.
 
- 파일 이름 확장을 콘텐츠 유형 정의로 내보내려면 다음 특성을 포함해야 합니다.
+ 파일 이름 확장명을 콘텐츠 형식 정의로 내보내려면 다음 특성을 포함 해야 합니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: 파일 이름 확장명을 지정합니다.
+- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: 파일 이름 확장명을 지정 합니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 콘텐츠 유형을 지정합니다.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 내용 유형을 지정 합니다.
 
-  클래스가 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 봉인되어 있으므로 형식 매개 변수 없이 내보낼 수 있습니다.
+  <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>클래스가 봉인 되어 있기 때문에 형식 매개 변수 없이 내보낼 수 있습니다.
 
-  다음 예제에서는 파일 이름 확장자의 내보내기 특성을 콘텐츠 유형 정의에 대해 보여 주며,
+  다음 예제에서는 파일 이름 확장명의 특성을 내용 유형 정의로 내보내기 하는 방법을 보여 줍니다.
 
 ```
 [Export]
@@ -132,20 +132,20 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition;
 ```
 
- 는 <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService> 파일 이름 확장자와 콘텐츠 형식 간의 연결을 관리합니다.
+ 는 <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService> 파일 이름 확장명과 콘텐츠 형식 간의 연결을 관리 합니다.
 
 ## <a name="extend-classification-types-and-classification-formats"></a>분류 유형 및 분류 형식 확장
- 분류 유형을 사용하여 다른 처리를 제공할 텍스트 의 종류를 정의할 수 있습니다(예: "키워드" 텍스트 파란색과 "주석" 텍스트 녹색색). 형식의 <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> 변수를 선언하고 고유한 이름을 지정하여 새 분류 유형을 정의합니다.
+ 분류 유형을 사용 하 여 다른 처리를 제공 하려는 텍스트의 종류를 정의할 수 있습니다. 예를 들어 "키워드" 텍스트 blue와 "comment" 텍스트는 녹색으로 표시 됩니다. 유형의 변수를 선언 하 고 고유한 이름을 지정 하 여 새 분류 유형을 정의 <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> 합니다.
 
- 분류 유형을 편집기로 등록하려면 다음 특성과 함께 내보냅니다.
+ 분류 유형을 편집기에 등록 하려면 다음 특성과 함께 내보냅니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 분류 유형의 이름입니다.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 분류 형식의 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>: 이 분류 유형이 상속되는 분류 유형의 이름입니다. 모든 분류 유형은 "text"에서 상속되며 분류 유형은 여러 다른 분류 유형에서 상속될 수 있습니다.
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>:이 분류 형식이 상속 되는 분류 형식의 이름입니다. 모든 분류 형식은 "텍스트"에서 상속 되며 분류 형식은 여러 다른 분류 형식에서 상속할 수 있습니다.
 
-  클래스가 <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> 봉인되어 있으므로 형식 매개 변수 없이 내보낼 수 있습니다.
+  <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition>클래스가 봉인 되어 있기 때문에 형식 매개 변수 없이 내보낼 수 있습니다.
 
-  다음 예제에서는 분류 유형 정의에 대한 내보내기 특성을 보여 주며 있습니다.
+  다음 예에서는 분류 유형 정의의 내보내기 특성을 보여 줍니다.
 
 ```
 [Export]
@@ -154,50 +154,50 @@ internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition
 internal static ClassificationTypeDefinition CSharpTestDefinition;
 ```
 
- 표준 <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService> 분류에 대한 액세스를 제공합니다. 기본 제공 분류 유형에는 다음이 포함됩니다.
+ 는 <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService> 표준 분류에 대 한 액세스를 제공 합니다. 기본 제공 분류 유형에는 다음이 포함 됩니다.
 
 - "text"
 
-- "자연어"("텍스트"에서 파생)
+- "자연어" ("텍스트"에서 파생 됨)
 
-- "형식언어"("텍스트"에서 파생)
+- "형식 언어" ("text"에서 파생 됨)
 
-- "문자열"("리터럴"에서 파생)
+- "string" ("literal"에서 파생 됨)
 
-- "문자"("리터럴"에서 파생)
+- "character" ("literal"에서 파생 됨)
 
-- "숫자"("리터럴"에서 파생)
+- "숫자" ("literal"에서 파생 됨)
 
-  다른 오류 형식 집합은 <xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition>에서 상속됩니다. 여기에는 다음과 같은 오류 유형이 포함됩니다.
+  다른 오류 유형 집합은에서 상속 <xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition> 됩니다. 여기에는 다음과 같은 오류 유형이 포함 됩니다.
 
 - "구문 오류"
 
 - "컴파일러 오류"
 
-- "다른 오류"
+- "기타 오류"
 
-- "경고"
+- 내용의
 
-  사용 가능한 분류 유형 목록을 검색하려면 편집기의 분류 유형 컬렉션을 유지 관리하는 <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>을 가져옵니다. 다음 코드는 이 서비스를 속성으로 가져오게 합니다.
+  사용 가능한 분류 유형 목록을 검색 하려면 <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> 편집기에 대 한 분류 유형 컬렉션을 유지 관리 하는를 가져옵니다. 다음 코드에서는이 서비스를 속성으로 가져옵니다.
 
 ```
 [Import]
 internal IClassificationTypeRegistryService ClassificationTypeRegistryService { get; set; }
 ```
 
- 새 분류 유형에 대한 분류 형식 정의를 정의할 수 있습니다. 클래스를 <xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition> 파생하고 다음 특성과 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>함께 형식과 함께 내보냅니다.
+ 새 분류 형식에 대 한 분류 형식 정의를 정의할 수 있습니다. 에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition> 형식과 함께 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition> 다음 특성과 함께 내보냅니다.
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 형식의 이름입니다.
 
 - <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: 형식의 표시 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: **옵션** 대화 상자의 **글꼴 및 색상** 페이지에 형식이 표시되는지 여부를 지정합니다.
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: **옵션** 대화 상자의 **글꼴 및 색** 페이지에 서식이 표시 되는지 여부를 지정 합니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 형식의 우선 순위입니다. 유효한 값은 <xref:Microsoft.VisualStudio.Text.Classification.Priority>에서 온 값입니다.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 형식의 우선 순위입니다. 유효한 값은 <xref:Microsoft.VisualStudio.Text.Classification.Priority> 입니다.
 
-- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: 이 형식이 매핑되는 분류 유형의 이름입니다.
+- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>:이 형식이 매핑되는 분류 형식의 이름입니다.
 
-  다음 예제에서는 분류 형식 정의에 대한 내보내기 특성을 보여 주며 있습니다.
+  다음 예에서는 분류 형식 정의의 내보내기 특성을 보여 줍니다.
 
 ```
 [Export(typeof(EditorFormatDefinition))]
@@ -209,7 +209,7 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
 internal sealed class TestFormat : ClassificationFormatDefinition
 ```
 
- 사용 가능한 형식 목록을 검색하려면 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>편집기의 형식 컬렉션을 유지 관리하는 을 가져옵니다. 다음 코드는 이 서비스를 속성으로 가져오게 합니다.
+ 사용 가능한 형식의 목록을 검색 하려면 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> 편집기의 형식 컬렉션을 유지 관리 하는를 가져옵니다. 다음 코드에서는이 서비스를 속성으로 가져옵니다.
 
 ```
 [Import]
@@ -217,31 +217,31 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
 ## <a name="extend-margins-and-scrollbars"></a>여백 및 스크롤 막대 확장
- 여백과 스크롤 막대는 텍스트 보기 자체 외에도 편집기의 기본 뷰 요소입니다. 텍스트 보기 주위에 나타나는 표준 여백 외에 원하는 수의 여백을 제공할 수 있습니다.
+ 여백 및 스크롤 막대는 텍스트 뷰 자체 뿐만 아니라 편집기의 주요 뷰 요소입니다. 텍스트 보기 주위에 표시 되는 표준 여백 뿐만 아니라 원하는 수의 여백을 제공할 수 있습니다.
 
- 여백을 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> 정의하는 인터페이스를 구현합니다. 여백을 만들려면 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> 인터페이스도 구현해야 합니다.
+ 인터페이스를 구현 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> 하 여 여백을 정의 합니다. 또한 여백을 만들려면 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> .
 
- 여백 공급자를 편집기로 등록하려면 다음 특성과 함께 공급자를 내보내야 합니다.
+ 편집기에 여백 공급자를 등록 하려면 다음 특성과 함께 공급자를 내보내야 합니다.
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 여백의 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 다른 여백을 기준으로 여백이 표시되는 순서입니다.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 다른 여백을 기준으로 여백이 표시 되는 순서입니다.
 
-   다음은 기본 제공 여백입니다.
+   기본 제공 여백:
 
-  - "Wpf 수평 스크롤 막대"
+  - "Wpf 가로 스크롤 막대"
 
   - "Wpf 세로 스크롤 막대"
 
-  - "Wpf 선 번호 여백"
+  - "Wpf 줄 번호 여백"
 
-    주문 특성이 있는 수평 `After="Wpf Horizontal Scrollbar"` 여백은 기본 제공 여백 아래에 표시되고, `Before ="Wpf Horizontal Scrollbar"` 주문 특성이 있는 수평 여백은 기본 제공 여백 위에 표시됩니다. 순서 특성이 있는 오른쪽 `After="Wpf Vertical Scrollbar"` 세로 여백이 스크롤 막대의 오른쪽에 표시됩니다. 순서 특성이 있는 왼쪽 `After="Wpf Line Number Margin"` 수직 여백이 줄 번호 여백의 왼쪽에 표시됩니다(표시되는 경우).
+    Order 특성이 있는 가로 여백은 `After="Wpf Horizontal Scrollbar"` 기본 제공 여백 아래에 표시 되 고,의 order 특성이 있는 가로 여백은 `Before ="Wpf Horizontal Scrollbar"` 기본 제공 여백 위에 표시 됩니다. Order 특성이 있는 오른쪽 세로 여백이 `After="Wpf Vertical Scrollbar"` 스크롤 막대의 오른쪽에 표시 됩니다. Order 특성이 있는 왼쪽 세로 여백은 `After="Wpf Line Number Margin"` 줄 번호 여백 (표시 되는 경우)의 왼쪽에 표시 됩니다.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: 여백의 종류(왼쪽, 오른쪽, 위쪽 또는 아래쪽)입니다.
+- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: 여백의 종류 (왼쪽, 오른쪽, 위쪽 또는 아래쪽)입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 여백이 유효한 콘텐츠(예: "텍스트" 또는 "코드")의 종류입니다.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 여백이 유효한 콘텐츠 종류 (예: "텍스트" 또는 "코드")입니다.
 
-  다음 예제에서는 선 번호 여백의 오른쪽에 나타나는 여백에 대한 여백 공급자의 내보내기 특성을 보여 주습니다.
+  다음 예제에서는 줄 번호 여백 오른쪽에 표시 되는 여백에 대 한 여백 공급자의 특성을 내보내는 방법을 보여 줍니다.
 
 ```
 [Export(typeof(IWpfTextViewMarginProvider))]
@@ -252,46 +252,46 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
 ## <a name="extend-tags"></a>태그 확장
- 태그는 데이터를 다른 종류의 텍스트와 연결하는 방법입니다. 대부분의 경우 연관된 데이터가 시각적 효과로 표시되지만 모든 태그에 시각적 표시가 있는 것은 아닙니다. 을 구현하여 <xref:Microsoft.VisualStudio.Text.Tagging.ITag>고유한 태그 종류를 정의할 수 있습니다. 또한 지정된 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 텍스트 범위 집합에 대한 태그를 제공하고 태거를 <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> 제공하기 위해 구현해야 합니다. 다음 특성과 함께 태거 공급자를 내보내야 합니다.
+ 태그는 데이터를 여러 종류의 텍스트와 연결 하는 방법입니다. 대부분의 경우 연결 된 데이터가 시각적 효과로 표시 되지만 일부 태그에는 시각적 표시가 없습니다. 을 구현 하 여 고유한 종류의 태그를 정의할 수 있습니다 <xref:Microsoft.VisualStudio.Text.Tagging.ITag> . 또한 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 지정 된 텍스트 범위 집합의 태그를 제공 하 고 태거를 제공 하기 위해를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> . 다음 특성과 함께 태거 공급자를 내보내야 합니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 태그가 유효한 콘텐츠(예: "텍스트" 또는 "코드")의 종류입니다.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 태그가 유효한 콘텐츠 종류 (예: "텍스트" 또는 "코드")입니다.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: 태그의 종류.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: 태그의 종류입니다.
 
-  다음 예제에서는 태거 공급자에 대한 내보내기 특성을 보여 주습니다.
+  다음 예제에서는 태거 공급자의 특성을 내보냅니다.
 
-\<코드콘텐츠플레이스 홀더</CodeContentPlaceHolder>>8 태그의 종류는 기본 제공:
+\<CodeContentPlaceHolder>8 </CodeContentPlaceHolder> 다음 종류의 태그가 기본 제공 됩니다.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>에 연결됩니다.
+- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>:과 연결 <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> 됩니다.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: 오류 유형과 연관된 것입니다.
+- <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: 오류 유형과 연결 됩니다.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: 장식과 관련이 있습니다.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: 장식에 연결 됩니다.
 
   > [!NOTE]
-  > <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>의 예는 [연습: 텍스트 강조 표시에서](../extensibility/walkthrough-highlighting-text.md)강조 표시 WordTag 정의를 참조하세요.
+  > 의 예제는 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> [연습: 텍스트 강조](../extensibility/walkthrough-highlighting-text.md)표시의 HighlightWordTag 정의를 참조 하세요.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: 개요에서 확장되거나 축소될 수 있는 영역과 연결됩니다.
+- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: 개요에서 확장 하거나 축소할 수 있는 영역과 연결 됩니다.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: 텍스트 뷰에서 장식이 차지하는 공간을 정의합니다. 공간 협상 장식품에 대한 자세한 내용은 다음 섹션을 참조하십시오.
+- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: 텍스트 뷰에서 장식이 차지 하는 공간을 정의 합니다. 공간 협상 장식에 대 한 자세한 내용은 다음 섹션을 참조 하세요.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: 장식에 대한 자동 간격 및 크기 조정을 제공합니다.
+- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: 장식의 자동 간격 및 크기 조정을 제공 합니다.
 
-  버퍼 및 뷰에 대한 태그를 찾아 사용하려면 <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>요청된 형식을 <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> 제공하는 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> 또는 을 가져옵니다. 다음 코드는 이 서비스를 속성으로 가져오게 합니다.
+  버퍼 및 뷰에 대 한 태그를 찾아서 사용 하려면 요청 된 형식의를 제공 하는 또는를 가져옵니다 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService> <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> . 다음 코드에서는이 서비스를 속성으로 가져옵니다.
 
 ```
 [Import]
 internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get; set; }
 ```
 
-#### <a name="tags-and-markerformatdefinitions"></a>태그 및 마커 형식정의
- 클래스를 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> 확장하여 태그의 모양을 정의할 수 있습니다. 클래스를 다음과 같은 특성으로 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>내보내야 합니다.
+#### <a name="tags-and-markerformatdefinitions"></a>태그 및 MarkerFormatDefinitions
+ 클래스를 확장 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> 하 여 태그의 모양을 정의할 수 있습니다. 다음 특성을 사용 하 여 클래스 ()를 내보내야 합니다 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition> .
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 이 형식을 참조하는 데 사용되는 이름
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>:이 형식을 참조 하는 데 사용 되는 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: 이렇게 하면 UI에 형식이 나타납니다.
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>:이로 인해 UI에 형식이 표시 됩니다.
 
-  생성자에서 태그의 표시 이름과 모양을 정의합니다. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>은 채우기 색상을 정의하고 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> 테두리 색상을 정의합니다. 은 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> 형식 정의의 지역화 가능한 이름입니다.
+  생성자에서 태그의 표시 이름 및 모양을 정의 합니다. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> 채우기 색을 정의 하 고 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> 테두리 색을 정의 합니다. 는 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> 형식 정의의 지역화할 수 있는 이름입니다.
 
   다음은 형식 정의의 예입니다.
 
@@ -312,21 +312,21 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 
 ```
 
- 태그에 이 형식 정의를 적용하려면 클래스의 이름 특성에 설정한 이름을 참조합니다(표시 이름이 아님).
+ 태그에이 형식 정의를 적용 하려면 표시 이름이 아니라 클래스의 name 특성에 설정 된 이름을 참조 합니다.
 
 > [!NOTE]
-> 의 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>예를 들어 연습에서 강조 표시 WordFormatDefinition [클래스를 참조: 텍스트 강조 표시.](../extensibility/walkthrough-highlighting-text.md)
+> 의 예제는 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> [연습: 텍스트 강조](../extensibility/walkthrough-highlighting-text.md)표시의 HighlightWordFormatDefinition 클래스를 참조 하세요.
 
 ## <a name="extend-adornments"></a>장식 확장
- 장식은 텍스트 뷰또는 텍스트 뷰 자체에 표시되는 텍스트에 추가할 수 있는 시각적 효과를 정의합니다. 사용자 고유의 장식을 모든 유형의 <xref:System.Windows.UIElement>로 정의할 수 있습니다.
+ 장식은 텍스트 뷰나 텍스트 뷰 자체에 표시 되는 텍스트에 추가할 수 있는 시각 효과를 정의 합니다. 사용자 고유의 장식을 모든 형식으로 정의할 수 있습니다 <xref:System.Windows.UIElement> .
 
- 장식 클래스에서 <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>를 선언해야 합니다. 장식 레이어를 등록하려면 다음 특성과 함께 내보냅니다.
+ 장식 클래스에서를 선언 해야 <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> 합니다. 장식 레이어를 등록 하려면 다음 특성과 함께 내보냅니다.
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 장식의 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 다른 장식 레이어에 대한 장식의 순서. 클래스는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 선택, 개요, 카를트 및 텍스트의 네 가지 기본 레이어를 정의합니다.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 다른 장식 레이어와 관련 된 장식의 순서입니다. 클래스는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 선택, 개요, 캐럿 및 텍스트의 네 가지 기본 계층을 정의 합니다.
 
-  다음 예제에서는 장식 레이어 정의에 대한 내보내기 특성을 보여 주십니다.
+  다음 예제에서는 장식 계층 정의의 내보내기 특성을 보여 줍니다.
 
 ```
 [Export]
@@ -335,13 +335,13 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 internal AdornmentLayerDefinition testLayerDefinition;
 ```
 
- 장식을 인스턴스화하여 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 해당 이벤트를 구현하고 처리하는 두 번째 클래스를 만들어야 합니다. 다음 특성과 함께 이 클래스를 내보내야 합니다.
+ 을 구현 하 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 고 장식을 인스턴스화하여 해당 이벤트를 처리 하는 두 번째 클래스를 만들어야 합니다 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> . 이 클래스는 다음 특성과 함께 내보내야 합니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 장식이 유효한 콘텐츠 의 종류(예: "텍스트" 또는 "코드")입니다.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 장식이 유효한 콘텐츠 종류 (예: "텍스트" 또는 "코드")입니다.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: 이 장식이 유효한 텍스트 보기의 종류입니다. 클래스에는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> 미리 정의된 텍스트 보기 역할 집합이 있습니다. 예를 들어 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> 주로 파일의 텍스트 보기에 사용됩니다. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>은 사용자가 마우스와 키보드를 사용하여 편집하거나 탐색할 수 있는 텍스트 보기에 사용됩니다. 뷰의 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 예로는 편집기 텍스트 뷰와 **출력** 창이 있습니다.
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>:이 장식이 유효한 텍스트 뷰의 종류입니다. 클래스에는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> 미리 정의 된 텍스트 뷰 역할 집합이 있습니다. 예를 들어 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> 는 주로 파일의 텍스트 보기에 사용 됩니다. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 사용자가 마우스 및 키보드를 사용 하 여 편집 하거나 탐색할 수 있는 텍스트 뷰에 사용 됩니다. 보기의 예로는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 편집기 텍스트 보기와 **출력** 창이 있습니다.
 
-  다음 예제에서는 장식 공급자에 내보내기 특성을 보여 주십니다.
+  다음 예제에서는 장식 공급자의 특성을 내보냅니다.
 
 ```
 [Export(typeof(IWpfTextViewCreationListener))]
@@ -350,9 +350,9 @@ internal AdornmentLayerDefinition testLayerDefinition;
 internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 ```
 
- 공간 협상 장식은 텍스트와 동일한 수준에서 공간을 차지하는 장식입니다. 이러한 종류의 장식을 만들려면 장식이 차지하는 공간의 양을 <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>정의하는 에서 상속하는 태그 클래스를 정의해야 합니다.
+ 텍스트와 동일한 수준에서 공간을 차지 하는 장식입니다. 이러한 종류의 장식을 만들려면에서 상속 되는 태그 클래스를 정의 해야 합니다 .이 클래스는 <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> 장식이 차지 하는 공간의 크기를 정의 합니다.
 
- 모든 장식과 마찬가지로 장식 도면층 정의를 내보내야 합니다.
+ 모든 장식을 사용 하는 것 처럼 장식 계층 정의를 내보내야 합니다.
 
 ```
 [Export]
@@ -361,17 +361,17 @@ internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 internal AdornmentLayerDefinition testAdornmentLayer;
 ```
 
- 공간 협상 장식을 인스턴스화하려면 다른 종류의 장식과 마찬가지로 <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>구현하는 클래스 외에 구현하는 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 클래스를 만들어야 합니다.
+ 공간 협상 영역을 인스턴스화하려면를 구현 하는 클래스 <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> 외에 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> 다른 종류의 장식을 사용 하 여을 구현 하는 클래스를 만들어야 합니다.
 
- 태거 공급자를 등록하려면 다음 특성과 함께 내보내야 합니다.
+ 태거 공급자를 등록 하려면 다음 특성과 함께 내보내야 합니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 장식이 유효한 콘텐츠(예: "텍스트" 또는 "코드")의 종류입니다.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 사용자의 장식이 유효한 콘텐츠 종류 (예: "텍스트" 또는 "코드")입니다.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: 이 태그 또는 장식이 유효한 텍스트 보기의 종류입니다. 클래스에는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> 미리 정의된 텍스트 보기 역할 집합이 있습니다. 예를 들어 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> 주로 파일의 텍스트 보기에 사용됩니다. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>은 사용자가 마우스와 키보드를 사용하여 편집하거나 탐색할 수 있는 텍스트 보기에 사용됩니다. 뷰의 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 예로는 편집기 텍스트 뷰와 **출력** 창이 있습니다.
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>:이 태그나 장식이 유효한 텍스트 뷰의 종류입니다. 클래스에는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> 미리 정의 된 텍스트 뷰 역할 집합이 있습니다. 예를 들어 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> 는 주로 파일의 텍스트 보기에 사용 됩니다. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 사용자가 마우스 및 키보드를 사용 하 여 편집 하거나 탐색할 수 있는 텍스트 뷰에 사용 됩니다. 보기의 예로는 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 편집기 텍스트 보기와 **출력** 창이 있습니다.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: 정의한 태그 또는 장식의 종류입니다. 에 대해 두 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>번째 를 추가해야 합니다.
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: 정의한 태그 또는 장식의 종류입니다. 에 대해 두 번째를 추가 해야 합니다 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> .
 
-  다음 예제에서는 공간 협상 장식 태그에 대 한 태거 공급자에 내보내기 특성을 보여 주면됩니다.
+  다음 예제에서는 공간 협상 장식 태그에 대 한 태거 공급자의 특성을 내보냅니다.
 
 ```
 [Export(typeof(ITaggerProvider))]
@@ -383,9 +383,9 @@ internal sealed class TestTaggerProvider : ITaggerProvider
 ```
 
 ## <a name="extending-mouse-processors"></a>마우스 프로세서 확장
- 마우스 입력에 대한 특수 처리를 추가할 수 있습니다. 처리하려는 입력에 대해 <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> 마우스 이벤트를 상속하고 재정의하는 클래스를 만듭니다. 또한 두 <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> 번째 클래스에서 구현하고 마우스 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 처리기가 유효한 콘텐츠 종류(예: "텍스트" 또는 "코드")를 지정하는 것과 함께 내보내야 합니다.
+ 마우스 입력에 대 한 특수 처리를 추가할 수 있습니다. 에서 상속 되는 클래스를 만들고 <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> 처리 하려는 입력의 마우스 이벤트를 재정의 합니다. 또한 <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> 두 번째 클래스에서을 구현 하 고 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 마우스 처리기가 유효한 콘텐츠 종류 (예: "텍스트" 또는 "코드")를 지정 하는와 함께 내보내야 합니다.
 
- 다음 예제에서는 마우스 프로세서 공급자의 내보내기 특성을 보여 주며 있습니다.
+ 다음 예에서는 마우스 프로세서 공급자의 내보내기 특성을 보여 줍니다.
 
 ```
 [Export(typeof(IMouseProcessorProvider))]
@@ -395,20 +395,20 @@ internal sealed class TestTaggerProvider : ITaggerProvider
 internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 ```
 
-## <a name="extend-drop-handlers"></a>드롭 핸들러 확장
- 드롭 처리기를 만드는 <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> 클래스와 드롭 처리기를 만드는 두 번째 클래스를 만들어 특정 텍스트 <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> 종류에 맞게 드롭 처리기의 동작을 사용자 지정할 수 있습니다. 다음 특성과 함께 드롭 처리기를 내보내야 합니다.
+## <a name="extend-drop-handlers"></a>Drop 처리기 확장
+ 을 구현 하는 클래스 <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> 와 <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> 드롭 처리기를 만들기 위해를 구현 하는 두 번째 클래스를 만들어 특정 종류의 텍스트에 대 한 drop 처리기의 동작을 사용자 지정할 수 있습니다. 다음 특성과 함께 drop handler를 내보내야 합니다.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: 이 드롭 처리기가 유효한 텍스트 형식입니다. 다음 형식은 가장 높은 형식에서 가장 낮은 순서로 처리됩니다.
+- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>:이 drop handler가 유효한 텍스트 형식입니다. 다음 형식은 우선 순위 순서 대로 최고에서 최저로 처리 됩니다.
 
-  1. 모든 사용자 지정 형식
+  1. 사용자 지정 형식
 
-  2. Filedrop
+  2. FileDrop
 
-  3. 향상된 메타파일
+  3. EnhancedMetafile
 
-  4. 웨이브 오디오
+  4. WaveAudio
 
-  5. 리프
+  5. Riff
 
   6. Dif
 
@@ -416,15 +416,15 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   8. 색상표
 
-  9. 펜 데이터
+  9. PenData
 
   10. 직렬화 가능
 
-  11. 기호링크
+  11. 값인 symboliclink
 
-  12. Xaml
+  12. Page.xaml
 
-  13. 자믈 패키지
+  13. XamlPackage
 
   14. Tiff
 
@@ -432,7 +432,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   16. Dib
 
-  17. 메타파일사진
+  17. MetafilePicture
 
   18. CSV
 
@@ -440,17 +440,17 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   20. HTML 형식
 
-  21. 유니코드 텍스트
+  21. UnicodeText
 
-  22. OEM텍스트
+  22. OEMText
 
   23. 텍스트
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 드롭 처리기의 이름입니다.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: drop 처리기의 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 기본 드롭 처리기 앞또는 이후에 놓기 처리기의 순서입니다. Visual Studio의 기본 드롭 처리기는 "DefaultFileDropHandler"라는 이름으로 지정됩니다.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 기본 drop handler 전후에 drop 처리기의 순서를 지정 합니다. Visual Studio의 기본 drop handler 이름은 "DefaultFileDropHandler"입니다.
 
-  다음 예제에서는 드롭 처리기 공급자에 내보내기 특성을 보여 주다.
+  다음 예에서는 drop handler 공급자의 특성을 내보내는 방법을 보여 줍니다.
 
 ```
 [Export(typeof(IDropHandlerProvider))]
@@ -461,9 +461,9 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
 ```
 
 ## <a name="extending-editor-options"></a>편집기 옵션 확장
- 예를 들어 텍스트 보기에서 특정 범위에서만 유효한 옵션을 정의할 수 있습니다. 편집기는 편집기 옵션, 보기 옵션 및 WPF(Windows 프레젠테이션 Foundation) 보기 옵션과 같은 미리 정의된 옵션 집합을 제공합니다. 이러한 옵션은 에서 <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions>찾을 <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions>수 <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions>있습니다.
+ 특정 범위 (예: 텍스트 보기) 에서만 사용할 수 있는 옵션을 정의할 수 있습니다. 편집기는 편집기 옵션, 보기 옵션 및 Windows Presentation Foundation (WPF) 보기 옵션의 미리 정의 된 옵션 집합을 제공 합니다. 이러한 옵션은, 및에서 찾을 수 있습니다 <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions> <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions> <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions> .
 
- 새 옵션을 추가하려면 다음 옵션 정의 클래스 중 하나에서 클래스를 파생합니다.
+ 새 옵션을 추가 하려면 다음 옵션 정의 클래스 중 하나에서 클래스를 파생 시킵니다.
 
 - <xref:Microsoft.VisualStudio.Text.Editor.EditorOptionDefinition%601>
 
@@ -471,32 +471,32 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.WpfViewOptionDefinition%601>
 
-  다음 예제에서는 부울 값이 있는 옵션 정의를 내보내는 방법을 보여 주며 있습니다.
+  다음 예제에서는 부울 값을 포함 하는 옵션 정의를 내보내는 방법을 보여 줍니다.
 
 ```
 [Export(typeof(EditorOptionDefinition))]
 internal sealed class TestOption : EditorOptionDefinition<bool>
 ```
 
-## <a name="extend-intellisense"></a>인텔리센스 확장
- IntelliSense는 구조화 된 텍스트및 명령문 완성에 대한 정보를 제공하는 기능 그룹에 대한 일반적인 용어입니다. 이러한 기능에는 명령문 완성, 서명 도움말, 빠른 정보 및 전구가 포함됩니다. 명령문 완성을 사용하면 사용자가 언어 키워드 또는 구성원 이름을 올바르게 입력할 수 있습니다. 서명 도움말은 사용자가 방금 입력한 메서드의 서명 또는 서명을 표시합니다. 빠른 정보는 마우스가 마우스위에 놓일 때 유형 또는 멤버 이름에 대한 완전한 서명을 표시합니다. 전구는 특정 컨텍스트에서 특정 식별자에 대한 추가 작업을 제공합니다(예: 한 번의 발생 의 이름을 바꾼 후 변수의 모든 발생 이름을 바꾸는 경우).
+## <a name="extend-intellisense"></a>IntelliSense 확장
+ IntelliSense는 구조화 된 텍스트에 대 한 정보를 제공 하는 기능 그룹과이에 대 한 문 완성 기능을 제공 하는 일반적인 용어입니다. 이러한 기능에는 문 완성, 서명 도움말, 요약 정보 및 light 전구 있습니다. 문 완성 기능을 사용 하면 사용자가 언어 키워드나 멤버 이름을 올바르게 입력할 수 있습니다. 서명 도움말에는 사용자가 방금 입력 한 메서드에 대 한 시그니처 또는 서명이 표시 됩니다. 요약 정보는 마우스를 가져갈 때 형식 또는 멤버 이름에 대 한 전체 서명을 표시 합니다. 전구는 특정 컨텍스트의 특정 식별자에 대 한 추가 작업을 제공 합니다. 예를 들어 한 번 발생 한 후에 모든 변수의 이름을 바꾸면 해당 변수의 이름이 변경 됩니다.
 
- IntelliSense 기능의 디자인은 모든 경우에 거의 동일합니다.
+ IntelliSense 기능의 디자인은 모든 경우에 거의 동일 합니다.
 
-- IntelliSense *브로커는* 전체 프로세스를 담당합니다.
+- IntelliSense *broker* 는 전체 프로세스를 담당 합니다.
 
-- IntelliSense *세션은* 발표자 트리거링과 선택 영역의 커밋 또는 취소 사이의 이벤트 시퀀스를 나타냅니다. 세션은 일반적으로 일부 사용자 제스처에 의해 트리거됩니다.
+- IntelliSense *세션* 은 발표자 트리거 간의 이벤트 시퀀스와 선택 항목의 커밋 또는 취소를 나타냅니다. 세션은 일반적으로 일부 사용자 제스처에 의해 트리거됩니다.
 
-- IntelliSense *컨트롤러는* 세션을 시작하고 종료해야 하는 시기를 결정할 책임이 있습니다. 또한 정보를 커밋할 시기와 세션을 취소해야 하는 시기도 결정합니다.
+- IntelliSense *컨트롤러* 는 세션이 시작 되 고 종료 되어야 하는 시기를 결정 해야 합니다. 또한 정보를 커밋하는 시기와 세션을 취소 해야 하는 시기를 결정 합니다.
 
-- IntelliSense *소스는* 콘텐츠를 제공하고 가장 일치하는 것을 결정합니다.
+- IntelliSense *소스* 는 콘텐츠를 제공 하 고 가장 일치 하는 항목을 결정 합니다.
 
-- IntelliSense *발표자는* 콘텐츠를 표시할 책임이 있습니다.
+- IntelliSense *발표자* 는 콘텐츠를 표시 하는 일을 담당 합니다.
 
-  대부분의 경우 최소한 소스와 컨트롤러를 제공하는 것이 좋습니다. 디스플레이를 사용자 지정하려는 경우 발표자를 제공할 수도 있습니다.
+  대부분의 경우 적어도 원본 및 컨트롤러를 제공 하는 것이 좋습니다. 표시를 사용자 지정 하려는 경우에도 발표자를 제공할 수 있습니다.
 
-### <a name="implement-an-intellisense-source"></a>인텔리센스 소스 구현
- 원본을 사용자 지정하려면 다음 소스 인터페이스 중 하나 이상을 구현해야 합니다.
+### <a name="implement-an-intellisense-source"></a>IntelliSense 소스 구현
+ 소스를 사용자 지정 하려면 다음 원본 인터페이스를 하나 이상 구현 해야 합니다.
 
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
@@ -507,9 +507,9 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>을 위해 더 이상 사용되지 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>않습니다.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 는 더 이상 사용 되지 않습니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> .
 
- 또한 동일한 종류의 공급자를 구현해야 합니다.
+ 또한 동일한 종류의 공급자를 구현 해야 합니다.
 
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
@@ -520,17 +520,17 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>을 위해 더 이상 사용되지 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>않습니다.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 는 더 이상 사용 되지 않습니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> .
 
- 공급자를 다음 특성과 함께 내보내야 합니다.
+ 다음 특성과 함께 공급자를 내보내야 합니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 소스의 이름입니다.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 원본 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 소스가 적용되는 콘텐츠 의 종류(예: "텍스트" 또는 "코드")입니다.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 소스가 적용 되는 콘텐츠 종류 (예: "텍스트" 또는 "코드")입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 다른 소스와 관련하여 소스가 표시되어야 하는 순서입니다.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 소스가 표시 되는 순서입니다 (다른 소스를 기준으로 함).
 
-- 다음 예제에서는 완료 원본 공급자에 대한 내보내기 특성을 보여 주습니다.
+- 다음 예제에서는 완료 원본 공급자에 대 한 내보내기 특성을 보여 줍니다.
 
 ```
 Export(typeof(ICompletionSourceProvider))]
@@ -540,24 +540,24 @@ Export(typeof(ICompletionSourceProvider))]
 internal class TestCompletionSourceProvider : ICompletionSourceProvider
 ```
 
- IntelliSense 소스 구현에 대한 자세한 내용은 다음 연습을 참조하십시오.
+ IntelliSense 원본을 구현 하는 방법에 대 한 자세한 내용은 다음 연습을 참조 하세요.
 
-- [연습: 빠른 정보 표시 도구 설명](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [연습: QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
 
 - [연습: 서명 도움말 표시](../extensibility/walkthrough-displaying-signature-help.md)
 
 - [연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)
 
-### <a name="implement-an-intellisense-controller"></a>인텔리센스 컨트롤러 구현
- 컨트롤러를 사용자 지정하려면 인터페이스를 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> 구현해야 합니다. 또한 다음 특성과 함께 컨트롤러 공급자를 구현해야 합니다.
+### <a name="implement-an-intellisense-controller"></a>IntelliSense 컨트롤러 구현
+ 컨트롤러를 사용자 지정 하려면 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> . 또한 다음 특성과 함께 컨트롤러 공급자를 구현 해야 합니다.
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 컨트롤러의 이름입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 컨트롤러가 적용되는 콘텐츠 의 종류(예: "텍스트" 또는 "코드")입니다.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 컨트롤러가 적용 되는 콘텐츠 종류 (예: "텍스트" 또는 "코드")입니다.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 다른 컨트롤러와 관련하여 컨트롤러가 표시되어야 하는 순서입니다.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 컨트롤러가 표시 되는 순서입니다 (다른 컨트롤러에 대 한).
 
-  다음 예제에서는 완료 컨트롤러 공급자에 대한 내보내기 특성을 보여 주습니다.
+  다음 예제에서는 완료 컨트롤러 공급자의 특성을 내보냅니다.
 
 ```
 Export(typeof(IIntellisenseControllerProvider))]
@@ -567,6 +567,6 @@ Export(typeof(IIntellisenseControllerProvider))]
 internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvider
 ```
 
- IntelliSense 컨트롤러 사용에 대한 자세한 내용은 다음 연습을 참조하십시오.
+ IntelliSense 컨트롤러를 사용 하는 방법에 대 한 자세한 내용은 다음 연습을 참조 하세요.
 
-- [연습: 빠른 정보 표시 도구 설명](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [연습: QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
