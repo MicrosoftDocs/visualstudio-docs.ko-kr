@@ -31,10 +31,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b871c406b0a2b36d1e7f02a070ab1052510ed20b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619229"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>형식 멤버 만들기 및 구성(클래스 디자이너)
@@ -55,15 +55,15 @@ ms.locfileid: "72619229"
 > [!NOTE]
 > 속성의 get 및 set 접근자에 추가 논리가 필요하지 않은 경우 자동으로 구현된 속성(C#에만 해당)을 사용하여 속성 선언을 보다 간결하게 만듭니다. 전체 시그니처를 표시하려면 **클래스 다이어그램** 메뉴에서 **멤버 형식 변경**, **전체 시그니처 표시**를 선택합니다. 자동으로 구현된 속성에 대한 자세한 내용은 [자동으로 구현된 속성](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)을 참조하세요.
 
-## <a name="common-tasks"></a>일반 작업
+## <a name="common-tasks"></a>일반 태스크
 
-|태스크|지원 내용|
+|Task|지원 콘텐츠|
 |----------|------------------------|
-|**시작:** 형식 멤버를 만들고 구성 하기 전에 클래스 세부 내용 창을 열어야 합니다.|-   [클래스 세부 내용 창 열기](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [클래스 세부 내용 사용 정보](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [읽기 전용 정보 표시](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기(클래스 디자이너)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|
-|**형식 멤버 만들기 및 수정:** 클래스 세부 내용 창을 사용 하 여 새 멤버를 만들고 멤버를 수정 하 고 메서드에 매개 변수를 추가할 수 있습니다.|-   [멤버 만들기](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [형식 멤버 수정](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [메서드에 매개 변수 추가](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|
+|**시작:** 형식 멤버를 만들고 구성하기 전에 클래스 세부 내용 창을 열어야 합니다.|-   [클래스 세부 내용 창 열기](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [클래스 세부 내용 사용 정보](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [읽기 전용 정보 표시](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기 (클래스 디자이너)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|
+|**형식 멤버 만들기 및 수정:** 클래스 세부 내용 창을 사용하여 새 멤버를 만들고, 멤버를 수정하고, 메서드에 매개 변수를 추가할 수 있습니다.|-   [멤버 만들기](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [형식 멤버 수정](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [메서드에 매개 변수 추가](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|
 
-## <a name="OpenClassDetails"></a> 클래스 세부 내용 창 열기
- 기본적으로 클래스 세부 내용 창는 새 클래스 다이어그램을 열 때 자동으로 표시 됩니다 ([How을 참조 하세요. 프로젝트 (클래스 디자이너) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md))에 클래스 다이어그램을 추가 합니다. 다음과 같은 방법으로 클래스 세부 내용 창을 명시적으로 열 수 있습니다.
+## <a name="opening-the-class-details-window"></a><a name="OpenClassDetails"></a> 클래스 세부 내용 창 열기
+ 기본적으로 클래스 세부 내용 창은 새 클래스 다이어그램을 열 때 자동으로 표시됩니다. [방법: 프로젝트에 새 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요. 다음과 같은 방법으로 클래스 세부 내용 창을 명시적으로 열 수 있습니다.
 
 #### <a name="to-open-the-class-details-window"></a>클래스 세부 내용 창을 열려면
 
@@ -75,7 +75,7 @@ ms.locfileid: "72619229"
 
 - [보기] 메뉴에서 **다른 창**을 가리키고 **클래스 세부 내용**을 클릭합니다.
 
-## <a name="CreateMembers"></a> 멤버 만들기
+## <a name="creating-members"></a><a name="CreateMembers"></a> 멤버 만들기
  멤버는 다음과 같은 도구를 사용하여 만들 수 있습니다.
 
 - 클래스 디자이너
@@ -104,7 +104,7 @@ ms.locfileid: "72619229"
 
      해당 형식이 활성화되고 그 내용이 클래스 세부 내용 창에 표시됩니다.
 
-2. 클래스 세부 내용 창의 도구 모음에서 상단의 아이콘을 클릭하고 드롭 목록에서 **새 \<멤버>** 를 선택합니다.
+2. 클래스 세부 내용 창의 도구 모음에서 상단의 아이콘을 클릭하고 드롭 목록에서 **새 \<member>** 를 선택합니다.
 
      추가하려는 멤버 종류에 대한 행에서 커서가 **이름** 필드로 이동합니다. 예를 들어 **새 속성**을 클릭하면 클래스 세부 내용 창의 **속성** 섹션에서 커서가 새 행으로 이동합니다.
 
@@ -120,7 +120,7 @@ ms.locfileid: "72619229"
 
      해당 형식이 활성화되고 그 내용이 클래스 세부 내용 창에 표시됩니다.
 
-2. 추가할 멤버 종류가 포함된 클래스 세부 내용 창의 섹션에서 **\<멤버 추가>** 를 클릭합니다. 예를 들어, 필드를 추가하려면 **\<필드 추가>** 를 클릭합니다.
+2. 추가할 멤버 종류가 포함된 클래스 세부 내용 창의 섹션에서 **\<add member>** 를 클릭합니다. 예를 들어, 필드를 추가하려면 **\<add field>** 를 클릭합니다.
 
 3. 만들려는 멤버의 이름을 입력하고 Enter 키를 누릅니다.
 
@@ -128,10 +128,10 @@ ms.locfileid: "72619229"
 
 4. 해당 멤버에 대한 기타 세부 내용(예: 해당 형식)을 지정할 수도 있습니다.
 
-     **참고:** 바로 가기 키를 사용하여 멤버를 만들 수도 있습니다. 자세한 내용은 [클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기(클래스 디자이너)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)를 참조하세요.
+     **참고**: 바로 가기 키를 사용하여 멤버를 만들 수도 있습니다. 자세한 내용은 [클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기(클래스 디자이너)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)를 참조하세요.
 
-## <a name="ModifyTypeMembers"></a> 형식 멤버 수정
- 클래스 디자이너를 사용하여 다이어그램에 표시된 형식의 멤버를 수정할 수 있습니다. 클래스 다이어그램에 표시된 형식의 멤버 중에서 읽기 전용이 아닌 멤버만 수정할 수 있습니다. [읽기 전용 정보 표시(클래스 디자이너)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)를 참조하세요. 형식 멤버는 디자인 화면, 속성 창 및 클래스 세부 내용 창에서 바로 편집 기능을 사용하여 수정할 수 있습니다.
+## <a name="modifying-type-members"></a><a name="ModifyTypeMembers"></a> 형식 멤버 수정
+ 클래스 디자이너를 사용하여 다이어그램에 표시된 형식의 멤버를 수정할 수 있습니다. 클래스 다이어그램에 표시된 형식의 멤버 중에서 읽기 전용이 아닌 멤버만 수정할 수 있습니다. 읽기 전용 [정보 표시 (클래스 디자이너)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)를 참조 하세요. 디자인 화면, 속성 창 및 클래스 세부 내용 창에서 바로 편집 기능을 사용 하 여 형식 멤버를 수정할 수 있습니다.
 
  클래스 세부 내용 창에 표시된 멤버는 모두 클래스 다이어그램에 있는 형식의 멤버를 나타냅니다. 멤버의 종류로는 메서드, 속성, 필드 및 이벤트 등 4가지가 있습니다.
 
@@ -157,9 +157,9 @@ ms.locfileid: "72619229"
 
      멤버의 표시 한정자를 `Public`(`public`), `Private`(`private`), `Friend`(`internal`) `Protected`(`protected`), `Protected``Friend`(`protected``internal`) 또는 `Default`로 변경합니다.
 
-- **\<멤버 추가>**
+- **\<add member>**
 
-     클래스 세부 내용 창의 마지막 행에는 **이름** 셀에 **\<멤버 추가>** 라는 텍스트가 포함됩니다. 이 셀을 클릭하면 새 멤버를 만들 수 있습니다. 자세한 내용은 [멤버 만들기](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)를 참조하세요.
+     클래스 세부 내용 창의 마지막 행에는 **이름** 셀에 **\<add member>** 라는 텍스트가 포함됩니다. 이 셀을 클릭하면 새 멤버를 만들 수 있습니다. 자세한 내용은 [멤버 만들기](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)를 참조하세요.
 
 - **속성 창의 멤버 속성**
 
@@ -177,14 +177,14 @@ ms.locfileid: "72619229"
 
 1. 클래스 디자이너를 사용하여 형식을 선택합니다.
 
-2. 클래스 세부 내용 창이 표시되지 않으면 클래스 디자이너 도구 모음에서 **클래스 세부 내용 창** 단추를 클릭합니다.
+2. 클래스 세부 내용 창이 표시 되지 않으면 클래스 디자이너 도구 모음에서 **클래스 세부 내용 창** 단추를 클릭 합니다.
 
 3. 클래스 세부 내용 창 모눈의 필드에서 값을 편집합니다. 각 값을 편집한 후 Enter 키를 누르거나, Tab 키를 누르는 등의 방법으로 편집된 필드에서 포커스를 다른 곳으로 이동합니다. 편집된 내용은 코드에 즉시 반영됩니다.
 
     > [!NOTE]
     > 멤버의 이름만 수정하려는 경우에는 바로 편집 기능을 사용하여 수정할 수 있습니다.
 
-## <a name="AddMethodParams"></a> 메서드에 매개 변수 추가
+## <a name="adding-parameters-to-methods"></a><a name="AddMethodParams"></a> 메서드에 매개 변수 추가
  클래스 세부 내용 창을 사용하여 메서드에 매개 변수를 추가합니다. 매개 변수는 필수 매개 변수나 선택적 매개 변수로 구성될 수 있습니다. 매개 변수의 **선택적 기본값** 속성에 값을 제공하면 디자이너가 선택적 매개 변수로 코드를 생성합니다.
 
  매개 변수 행에는 다음과 같은 항목이 포함됩니다.
@@ -197,7 +197,7 @@ ms.locfileid: "72619229"
 
 - **Type**
 
-   **매개 변수 형식** 셀에서는 IntelliSense가 사용됩니다. IntelliSense를 사용하면 현재 프로젝트 또는 참조 프로젝트에서 사용 가능한 모든 형식의 목록에서 선택할 수 있습니다.
+   **매개 변수 형식** 셀은 Intellisense를 사용 하 여 현재 프로젝트 또는 참조 된 프로젝트에서 사용할 수 있는 모든 형식의 목록에서 선택할 수 있습니다.
 
 - **한정자**
 
@@ -207,13 +207,13 @@ ms.locfileid: "72619229"
 
    매개 변수 행의 **요약** 셀에는 매개 변수를 코드 편집기에 입력할 때 IntelliSense에 나타나는 코드 주석을 입력할 수 있습니다.
 
-- **\<매개 변수 추가>**
+- **\<add parameter>**
 
    멤버의 마지막 매개 변수 행에는 **이름** 셀의 **<매개 변수 추가\>** 라는 텍스트가 포함되어 있습니다. 이 셀을 클릭하여 새 매개 변수를 만들 수 있습니다. 자세한 내용은 [메서드에 매개 변수를 추가하려면](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod)을 참조하세요.
 
   **속성 창의 매개 변수 속성**
 
-  속성 창는 클래스 세부 내용 창에 표시 되는 것과 동일한 매개 변수 속성을 표시 합니다. **이름**, **형식**, **한정자**, 요약 및 선택적 기본값 속성. 특정 위치에서 속성을 변경하면 해당 속성의 값이 전역으로 업데이트되어 다른 위치에 있는 해당 값에도 반영됩니다.
+  속성 창에는 클래스 세부 정보 창에 표시된 것과 동일한 매개 변수 속성이 표시됩니다. **이름**, **형식**, **한정자**, **요약** 및 **선택적 기본값** 속성. 특정 위치에서 속성을 변경하면 해당 속성의 값이 전역으로 업데이트되어 다른 위치에 있는 해당 값에도 반영됩니다.
 
 > [!NOTE]
 > 대리자에 매개 변수를 추가하려면 [멤버 만들기](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)를 참조하세요.
@@ -221,7 +221,7 @@ ms.locfileid: "72619229"
 > [!NOTE]
 > 소멸자도 메서드이지만 매개 변수를 포함할 수는 없습니다.
 
-### <a name="HowToAddParameterToMethod"></a> 메서드에 매개 변수를 추가하려면
+### <a name="to-add-a-parameter-to-a-method"></a><a name="HowToAddParameterToMethod"></a> 메서드에 매개 변수를 추가 하려면
 
 1. 다이어그램 화면에서 매개 변수를 추가할 메서드가 들어 있는 형식을 클릭합니다.
 
@@ -229,9 +229,9 @@ ms.locfileid: "72619229"
 
 2. 클래스 세부 내용 창에서 매개 변수를 추가할 메서드의 행을 확장합니다.
 
-     괄호 쌍과 **\<매개 변수 추가>** 라는 단어가 있는 들여쓰기된 매개 변수 행이 나타납니다.
+     괄호 쌍과 **\<add parameter>.** 라는 단어가 있는 들여쓰기된 매개 변수 행이 나타납니다.
 
-3. **\<매개 변수 추가>를** 클릭하고 새 매개 변수의 이름을 입력한 다음 **Enter** 키를 누릅니다.
+3. **\<add parameter>** 를 클릭하고 새 매개 변수의 이름을 입력한 다음 **Enter** 키를 누릅니다.
 
      새 매개 변수가 메서드와 메서드의 코드에 추가됩니다. 새 매개 변수는 클래스 세부 내용 창과 속성 창에 표시됩니다.
 
@@ -245,9 +245,9 @@ ms.locfileid: "72619229"
 
 2. 클래스 세부 내용 창에서 선택적 매개 변수를 추가할 메서드의 행을 확장합니다.
 
-     괄호 쌍과 **\<매개 변수 추가>** 라는 단어가 있는 들여쓰기된 매개 변수 행이 나타납니다.
+     괄호 쌍과 **\<add parameter>.** 라는 단어가 있는 들여쓰기된 매개 변수 행이 나타납니다.
 
-3. **\<매개 변수 추가>를** 클릭하고 새 매개 변수의 이름을 입력한 다음 **Enter** 키를 누릅니다.
+3. **\<add parameter>** 를 클릭하고 새 매개 변수의 이름을 입력한 다음 **Enter** 키를 누릅니다.
 
      새 매개 변수가 메서드와 메서드의 코드에 추가됩니다. 새 매개 변수는 클래스 세부 내용 창과 속성 창에 표시됩니다.
 
@@ -256,14 +256,14 @@ ms.locfileid: "72619229"
     > [!NOTE]
     > 선택적 매개 변수는 매개 변수 목록의 마지막 매개 변수여야 합니다.
 
-## <a name="ClassDetailsUsageNotes"></a> 클래스 세부 내용 사용 정보
+## <a name="class-details-usage-notes"></a><a name="ClassDetailsUsageNotes"></a> 클래스 세부 내용 사용 정보
  클래스 세부 내용 창을 사용할 때는 다음과 같은 사항에 유의하세요.
 
  **편집 가능한 셀과 편집 불가능한 셀**
 
  클래스 세부 내용 창의 모든 셀은 몇 가지 예외를 제외하고 편집이 가능합니다.
 
-- 예를 들어 형식이 참조 어셈블리에 있는 경우에는 전체 형식이 읽기 전용이 됩니다. [읽기 전용 정보 표시(클래스 디자이너)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)를 참조하세요. 클래스 디자이너에서 모양을 선택하면 클래스 세부 내용 창에 해당 모양에 대한 세부 내용이 읽기 전용 상태로 표시됩니다.
+- 예를 들어, 전체 형식은 읽기 전용입니다. 예를 들어 참조 된 어셈블리에 있는 경우에는 읽기 전용 [정보 표시 (클래스 디자이너)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)를 참조 하세요. 클래스 디자이너 셰이프를 선택 하면 클래스 세부 내용 창에 해당 세부 정보가 읽기 전용 상태로 표시 됩니다.
 
 - 인덱서의 경우 이름은 읽기 전용이고 나머지 형식, 한정자, 요약 등은 편집 가능합니다.
 
@@ -285,7 +285,7 @@ ms.locfileid: "72619229"
 
   클래스 세부 내용 창에서 필드 또는 행을 복사하거나 잘라내어 다른 형식에 붙여넣을 수 있습니다. 단, 행이 읽기 전용이면 잘라낼 수 없습니다. 행을 붙여넣을 때 충돌을 방지하기 위해 원본 행의 이름에서 파생된 새 이름이 지정됩니다.
 
-## <a name="ReadOnlyInfo"></a> 읽기 전용 정보 표시
+## <a name="display-of-read-only-information"></a><a name="ReadOnlyInfo"></a> 읽기 전용 정보 표시
  클래스 디자이너 및 클래스 세부 내용 창에서는 다음에 대한 형식 및 형식 멤버를 표시할 수 있습니다.
 
 - 클래스 다이어그램이 포함된 프로젝트
