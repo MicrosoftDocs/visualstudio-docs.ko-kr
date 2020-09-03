@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381732"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>방법: ClickOnce 배포 시 개별 필수 구성 요소에 대한 지원 URL 지정
@@ -65,7 +65,7 @@ ms.locfileid: "85381732"
      </dependency>
    ```
 
-5. (선택 사항) .NET Framework 4를 대상으로 하는 응용 프로그램의 경우 텍스트 편집기에서 응용 프로그램에 대 한 배포 매니페스트 ( *응용 프로그램* 파일)를 엽니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
+5. 선택 사항입니다. .NET Framework 4를 대상으로 하는 응용 프로그램의 경우 텍스트 편집기에서 응용 프로그램에 대 한 배포 매니페스트 ( *응용 프로그램* 파일)를 엽니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 6. .NET Framework 4 필수 구성 요소에 대해 `supportUrl` 특성을 요소에 추가 합니다 `compatibleFrameworks` .
 
@@ -84,6 +84,6 @@ ms.locfileid: "85381732"
 ## <a name="see-also"></a>추가 정보
 - [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks>요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> 요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)
 - [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)

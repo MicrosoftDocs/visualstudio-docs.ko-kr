@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154761"
 ---
 # <a name="launch"></a>Launch
@@ -36,13 +36,13 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>유효한 옵션  
  다음 VSPerfCmd 옵션은 단일 명령줄에서 **Launch** 옵션과 함께 결합될 수 있습니다.  
   
- **Start:** `Method`  
+ **시작:**`Method`  
  명령줄 프로파일러 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
   
- **GlobalOn** 및 **GlobalOff**  
+ **Globalon** 및 **GlobalOff**  
  프로파일링을 다시 시작(**GlobalOn**)하거나 일시 중지(**GlobalOff**)하지만 프로파일링 세션을 종료하지 않습니다.  
   
- **ProcessOn:** `PID` 및 **ProcessOff**:`PID`  
+ **Processon:** `PID` 및 **ProcessOff**:`PID`  
  지정된 프로세스에 대한 프로파일링을 다시 시작(**ProcessOn**)하거나 일시 중지(**ProcessOff**)합니다.  
   
  **TargetCLR**  
@@ -54,7 +54,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **콘솔**  
  새 창에서 지정된 명령줄 애플리케이션을 시작합니다.  
   
- **Args:** `ArgList`  
+ **Args:**`ArgList`  
  애플리케이션에 전달할 인수의 목록을 지정합니다.  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>샘플링 옵션  
  다음 샘플링 간격 옵션 중 하나를 **Launch** 명령줄에 지정할 수 있습니다. 기본 샘플링 간격은 10,000,000 프로세서 클록 주기입니다.  
   
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**할당**&#124;**수명**]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**Sys**[**:** `Events` ]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[:**할당**&#124;**수명**]  
  샘플링 간격의 종류와 수를 지정합니다.  
   
 - **Timer** - 모든 `Cycles` 무중단 프로세서 클록 주기를 샘플링합니다. `Cycles`를 지정하지 않은 경우 10,000,000 주기가 사용됩니다.  
@@ -84,8 +84,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

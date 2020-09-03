@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545758"
 ---
 # <a name="how-to-sign-office-solutions"></a>방법: Office 솔루션에 서명
@@ -37,7 +37,7 @@ ms.locfileid: "85545758"
 
 1. **프로젝트** 메뉴에서 _SolutionName_**속성**을 클릭 합니다.
 
-2. **시그니처** 탭을 클릭합니다.
+2. **서명** 탭을 클릭합니다.
 
 3. **ClickOnce 매니페스트 서명을**선택 합니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "85545758"
 
 5. 올바른 인증서가 사용 되 고 있는지 확인 하려면 **자세한 정보** 를 클릭 하 여 인증서 정보를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)
 - [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)

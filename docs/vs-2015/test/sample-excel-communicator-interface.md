@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e3a9bd037c8886743910af649bf831b11337598
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660485"
 ---
 # <a name="sample-excel-communicator-interface"></a>샘플 Excel Communicator 인터페이스
@@ -34,5 +34,5 @@ ms.locfileid: "72660485"
 
  `CodedUIExtensibilitySample` 어셈블리는 Visual Studio의 코딩된 UI 테스트 프로세스에서 실행됩니다. 이 어셈블리는 .NET Remoting 채널을 여는 `Communicator` 클래스를 포함하며, `IExcelUICommunication` 인터페이스를 통해 `ExcelCodedUIAddinHelper` 어셈블리의 `UICommunicator` 개체를 사용하여 `CellInformation` 개체 등의 정보 개체 및 요청을 두 어셈블리 간에 전달하는 `Instance` 속성을 제공합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  코딩 된 [Ui 테스트 및 작업 기록을 확장 하 여](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md) [코딩 된 ui 테스트를 위한 Microsoft Excel 샘플 Excel 추가 기능](../test/sample-excel-add-in-for-coded-ui-testing.md) 지원 [Excel 용 코딩 된 ui 테스트 확장 샘플](../test/sample-coded-ui-test-extension-for-excel.md)

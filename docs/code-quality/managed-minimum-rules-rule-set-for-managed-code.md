@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587357"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>관리 코드에 대한 관리 최소 규칙 규칙 집합
@@ -24,4 +24,4 @@ ms.locfileid: "75587357"
 |[CA1001](../code-quality/ca1001.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
 |[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
 |[CA2213](../code-quality/ca2213.md)|삭제 가능한 필드는 삭제해야 합니다.|
-|[CA2231](../code-quality/ca2231.md)|오버 로드 연산자는 재정의 `ValueType.Equals` 동일 합니다.|
+|[CA2231](../code-quality/ca2231.md)|오버 로드 연산자는 재정의할 때 동일 합니다. `ValueType.Equals`|

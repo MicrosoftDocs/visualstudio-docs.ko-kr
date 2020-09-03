@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 52a4b9719b03c353dd3933c16b6f494f19f9c6ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153194"
 ---
-# <a name="bpresifields"></a>BPRESI_FIELDS
+# <a name="bpresi_fields"></a>BPRESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-중단점을 해결 하는 방법에 대 한 검색할 정보를 지정 합니다.  
+중단점을 성공적으로 확인 하기 위해 검색할 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,32 +47,32 @@ public enum enum_BPRESI_FIELDS { 
   
 ## <a name="members"></a>멤버  
  BPRESI_BPRESLOCATION  
- 초기화/사용 합니다 `bpResLocation` (중단점 해결 위치) 필드를 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.  
+ `bpResLocation` [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조체의 (중단점 확인 위치) 필드를 초기화/사용 합니다.  
   
  BPRESI_PROGRAM  
- 초기화/사용 된 `pProgram` 필드는 `BP_RESOLUTION_INFO` 구조입니다.  
+ `pProgram`구조체의 필드를 초기화/사용 `BP_RESOLUTION_INFO` 합니다.  
   
  BPRESI_THREAD  
- 초기화/사용 된 `pThread` 필드는 `BP_RESOLUTION_INFO` 구조입니다.  
+ `pThread`구조체의 필드를 초기화/사용 `BP_RESOLUTION_INFO` 합니다.  
   
  BPRESI_ALLFIELDS  
- 모든 필드를 지정합니다.  
+ 모든 필드를 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 전달 합니다 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 의 필드를 표시 하는 방법을 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조는 초기화할 합니다.  
+ 초기화할 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조체의 필드를 나타내기 위해 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 메서드에 전달 됩니다.  
   
- 이러한 플래그는의 필드를 나타내는 데도 `BP_RESOLUTION_INFO` 구조는 유효 하 고 사용 되는 해당 구조를 반환할 때.  
+ 이러한 플래그는 구조체의 필드를 `BP_RESOLUTION_INFO` 사용 하 고 해당 구조가 반환 될 때 유효한 지 여부를 나타내는 데도 사용 됩니다.  
   
- 이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
+ 이러한 값은 비트와 함께 사용할 수 있습니다 `OR` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

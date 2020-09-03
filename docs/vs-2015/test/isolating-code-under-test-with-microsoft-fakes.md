@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c272906aa402c124b98e6b9f5556d8c825ee963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660472"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 애플리케이션의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다. 테스트에서 제어하는 작은 코드 조각입니다. 테스트를 위해 코드를 격리하여 테스트가 실패할 경우 원인이 어디에 있는지 파악합니다. 애플리케이션의 다른 부분이 아직 작동하지 않더라도 스텁 및 shim을 사용해서 코드를 테스트할 수도 있습니다.
+Microsoft Fakes는 *스텁* 또는 *shim*을 사용 하 여 응용 프로그램의 다른 부분을 교체 함으로써 사용자가 테스트 중인 코드를 격리 하도록 도와줍니다. 테스트에서 제어하는 작은 코드 조각입니다. 테스트를 위해 코드를 격리하여 테스트가 실패할 경우 원인이 어디에 있는지 파악합니다. 애플리케이션의 다른 부분이 아직 작동하지 않더라도 스텁 및 shim을 사용해서 코드를 테스트할 수도 있습니다.
 
  Fakes는 두 가지 버전이 있습니다.
 
@@ -26,9 +26,9 @@ Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 애플리케이션의 
 
 - [shim](#shims)은 지정된 메서드 콜을 실행하는 대신 테스트에서 제공하는 shim 코드를 실행할 수 있도록 런타임에 애플리케이션의 컴파일된 코드를 수정합니다. shim은 .NET 어셈블리와 같이 수정할 수 없는 어셈블리에 대한 호출을 바꾸는 데 사용할 수 있습니다.
 
-  ![Fakes 다른 구성 요소 바꾸기](../test/media/fakes-2.png "Fakes-2")
+  ![다른 구성 요소를 대체하는 Fakes](../test/media/fakes-2.png "Fakes-2")
 
-  **Requirements**
+  **요구 사항**
 
 - Visual Studio Enterprise
 
@@ -51,7 +51,7 @@ Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 애플리케이션의 
 
  일반적으로 코드베이스 안의 종속성에서 격리하려면 스텁 형식을 사용하는 것이 좋습니다. 인터페이스 뒤에 구성 요소를 숨기면 됩니다. shim 형식을 사용하여 테스트 가능한 API를 제공하지 않는 타사 구성 요소에서 격리할 수 있습니다.
 
-## <a name="stubs"></a> 스텁 시작
+## <a name="getting-started-with-stubs"></a><a name="stubs"></a> 스텁 시작
  자세한 내용은 [스텁을 사용하여 유닛 테스트를 위한 애플리케이션의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)를 참조하세요.
 
 1. **인터페이스 삽입**
@@ -141,11 +141,11 @@ Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 애플리케이션의 
 
     ```
 
-     여기에서 특별한 부분은 `StubIStockFeed` 클래스입니다. Microsoft Fakes는 참조된 어셈블리의 모든 인터페이스에 대해 스텁 클래스를 생성합니다. 스텁 클래스의 이름은 인터페이스의 이름에서 파생 되며 "`Fakes.Stub`"을 접두사로 사용 하 고 매개 변수 형식 이름을 추가 합니다.
+     여기에서 특별한 부분은 `StubIStockFeed` 클래스입니다. Microsoft Fakes는 참조된 어셈블리의 모든 인터페이스에 대해 스텁 클래스를 생성합니다. 스텁 클래스의 이름은 인터페이스의 이름에서 파생 되며 ""를 접두사로 사용 하 `Fakes.Stub` 고 매개 변수 형식 이름을 추가 합니다.
 
      스텁은 속성, 이벤트 및 제네릭 메서드의 getter와 setter에 대해서도 생성됩니다. 자세한 내용은 [스텁을 사용하여 유닛 테스트를 위한 애플리케이션의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)를 참조하세요.
 
-## <a name="shims"></a> shim 시작
+## <a name="getting-started-with-shims"></a><a name="shims"></a> shim 시작
  (자세한 내용은 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.)
 
  구성 요소에 `DateTime.Now`에 대한 호출이 포함된 경우를 가정합니다.
@@ -242,7 +242,7 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 
  또한 특정 인스턴스, 생성자 및 속성에 대한 shim을 만들 수 있습니다. 자세한 내용은 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>섹션 내용
  [스텁을 사용하여 유닛 테스트를 위한 애플리케이션의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
  [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

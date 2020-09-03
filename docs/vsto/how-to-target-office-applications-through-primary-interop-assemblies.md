@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545771"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상
@@ -51,7 +51,7 @@ ms.locfileid: "85545771"
 
      어셈블리 이름은 **솔루션 탐색기**의 **참조** 폴더에 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
 - [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)

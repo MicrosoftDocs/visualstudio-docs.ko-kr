@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149274"
 ---
 # <a name="resource-contentions-view---contention-data"></a>리소스 경합 뷰 - 경합 데이터
@@ -42,7 +42,7 @@ ms.locfileid: "68149274"
   
 ## <a name="navigating-the-resource-allocation-view"></a>리소스 할당 뷰 탐색  
   
-|Column|설명|  
+|열|Description|  
 |------------|-----------------|  
 |**이름**|리소스 또는 함수의 이름입니다.|  
 |**차단된 전용 시간**|-   리소스의 경우 리소스 액세스가 차단되어 스레드가 대기해야 했던 총 시간입니다.<br />-   함수의 경우 함수가 함수 본문의 코드를 실행할 때 이러한 함수 인스턴스의 부모 리소스 액세스가 차단되었던 시간입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.|  
@@ -59,4 +59,4 @@ ms.locfileid: "68149274"
 |**모듈 경로**|함수가 포함된 모듈의 경로입니다.|  
 |**프로세스 ID**|함수가 실행된 프로세스의 PID(프로세스 ID)입니다.|  
 |**프로세스 이름**|프로세스의 이름입니다.|  
-|**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|
+|**원본 파일**|이 함수의 정의가 포함된 소스 파일입니다.|

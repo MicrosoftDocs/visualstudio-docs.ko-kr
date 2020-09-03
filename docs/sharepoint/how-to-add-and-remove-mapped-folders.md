@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014649"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>방법: 매핑된 폴더 추가 및 제거
@@ -77,5 +78,5 @@ ms.locfileid: "86014649"
 
 3. 프로젝트에서 매핑된 폴더를 제거 하려면 해당 바로 가기 메뉴를 열고 **삭제**를 선택한 다음 대화 상자에서 **확인** 단추를 선택 하 여 제거를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

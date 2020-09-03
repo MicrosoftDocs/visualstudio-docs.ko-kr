@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381706"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>방법: ClickOnce를 사용하여 여러 버전의 .NET 프레임워크에서 실행할 수 있는 애플리케이션 배포
@@ -104,7 +104,7 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의 .NET Framework를 대
 
 ## <a name="see-also"></a>추가 정보
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks>요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dependency>요소인](../deployment/dependency-element-clickonce-application.md)
+- [\<compatibleFrameworks> 요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency> 요소인](../deployment/dependency-element-clickonce-application.md)
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
 - [구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)

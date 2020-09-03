@@ -1,5 +1,5 @@
 ---
-title: 컨텍스트 연산자 (C++) | Microsoft Docs
+title: Context 연산자 (c + +) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161533"
 ---
 # <a name="context-operator-c"></a>컨텍스트 연산자(C++)
@@ -35,7 +35,7 @@ ms.locfileid: "68161533"
 
 C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름 또는 식을 한정할 수 있습니다. 컨텍스트 연산자는 로컬 이름에 의해 숨겨진 외부 범위에서 이름을 지정하는 데 유용합니다.  
   
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 구문  
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 구문  
  컨텍스트를 지정하는 방법에는 다음 두 가지가 있습니다.  
   
 1. {,,[*모듈*] } *식*  

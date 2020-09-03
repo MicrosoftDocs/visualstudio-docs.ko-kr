@@ -1,5 +1,5 @@
 ---
-title: '방법: 동시성 시각화 도우미 표식 SDK 사용 | Microsoft Docs'
+title: '방법: 동시성 시각화 도우미 표식 SDK 사용 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870043"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>방법: 동시성 시각화 도우미 표식 SDK 사용
@@ -52,7 +52,7 @@ ms.locfileid: "68870043"
 
 4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작**을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화에 있는 범위 3개 및 표식 3개를 보여 줍니다.
 
-     ![3개 표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkersnative.png "CvMarkersNative")
+     ![3가지 마커 및 경고가 있는 동시성 시각화 도우미](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
 5. 표식 시리즈의 문자열 이름을 사용하는 `marker_series`이 생성자를 호출하여 사용자 지정 표식 시리즈를 추가로 만드는 코드를 추가합니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "68870043"
 
 6. 현재 프로젝트를 시작하여 동시성 시각화를 표시합니다. 스레드 뷰의 자체 레인에 두 개의 표식 시리즈가 나타납니다. 다음 그림은 두 개의 새 범위를 보여 줍니다.
 
-     ![3개 표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![3가지 사용자 지정 마커 계열이 있는 동시성 시각화 도우미](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic 또는 C\#을 사용하려면
 
@@ -90,7 +90,7 @@ ms.locfileid: "68870043"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. 기본 표식 시리즈에서 세 개의 범위를 만들고 플래그, 메시지 및 경고를 하나씩 각 범위에 씁니다. 정적`EnterSpan` 메서드를 호출 하 여 [Span](/previous-versions/hh694189(v=vs.140)) 개체를 만듭니다. 기본 계열에 쓰려면 [marker](/previous-versions/hh694099(v=vs.140)) 클래스의 정적 write 메서드를 사용 합니다.
+3. 기본 표식 시리즈에서 세 개의 범위를 만들고 플래그, 메시지 및 경고를 하나씩 각 범위에 씁니다. 정적 `EnterSpan` 메서드를 호출하여 [Span](/previous-versions/hh694189(v=vs.140)) 개체를 만듭니다. 기본 시리즈에 쓰려면 [Markers](/previous-versions/hh694099(v=vs.140)) 클래스의 static 쓰기 메서드를 사용합니다.
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -130,9 +130,9 @@ ms.locfileid: "68870043"
 
 4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작**을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화의 스레드 뷰에 있는 범위 3개 및 표식 3개를 보여 줍니다.
 
-     ![표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
+     ![마커 및 경고가 있는 동시성 시각화 도우미](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. 정적 [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) 메서드를 사용 하 여 고객 표식 시리즈를 만드는 코드를 추가 합니다. [Markerseries](/previous-versions/hh694127(v=vs.140)) 클래스는 범위를 만들고 플래그, 메시지 및 경고를 쓰는 메서드를 포함 합니다.
+5. static [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) 메서드를 사용하여 고객 표식 시리즈를 만드는 코드를 추가합니다. [MarkerSeries](/previous-versions/hh694127(v=vs.140)) 클래스에는 범위를 만들고 플래그, 메시지 및 경고를 쓸 수 있는 메서드가 포함됩니다.
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")
@@ -166,8 +166,8 @@ ms.locfileid: "68870043"
 
 6. 현재 프로젝트를 시작하여 동시성 시각화를 표시합니다. 스레드 뷰의 자체 레인에 세 개의 표식 시리즈가 나타납니다. 다음 그림은 세 개의 새 범위를 보여 줍니다.
 
-     ![3개 표식 및 경고가 있는 동시성 시각화](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![3가지 사용자 지정 마커 계열이 있는 동시성 시각화 도우미](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)

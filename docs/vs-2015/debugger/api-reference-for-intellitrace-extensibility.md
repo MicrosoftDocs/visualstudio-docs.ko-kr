@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e8cc2613a1fda470bd46951d0a4ffaf2d0eeedd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154241"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 확장성을 위한 API 참조
@@ -28,7 +28,7 @@ ms.locfileid: "68154241"
   
 - <xref:Microsoft.VisualStudio.IntelliTrace>  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace를 사용한 디버깅 방법에 대한 정보를 제공합니다.  
   

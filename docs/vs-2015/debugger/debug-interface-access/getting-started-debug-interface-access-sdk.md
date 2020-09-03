@@ -1,5 +1,5 @@
 ---
-title: (디버그 인터페이스 액세스 SDK)를 시작 하기 | Microsoft Docs
+title: 시작 (Debug Interface Access SDK) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,26 +15,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54f83f00ed2e99d1541e15092cb3ee0ce9e08952
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164168"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>시작(디버그 인터페이스 액세스 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-디버그 인터페이스 액세스 (DIA) SDK 지침 설명서와 DIA API를 사용 하는 방법을 보여 주는 샘플을 제공 합니다. .Pdb 및.dbg 파일을 열고 기호, 값, 특성, 주소 및 기타 디버깅 정보에 대 한 해당 콘텐츠를 검색 하는 사용자 지정 응용 프로그램을 개발할 DIA SDK의 인터페이스 및 메서드를 사용 합니다. 기호를 사용 하 여 연결 속성에 대 한이 SDK 참조 테이블에도 C++ 응용 프로그램입니다.  
+DIA (디버그 인터페이스 액세스) SDK에서는 DIA API를 사용 하는 방법을 설명 하는 샘플 및 지침 설명서를 제공 합니다. DIA SDK의 인터페이스 및 메서드를 사용 하 여 .pdb 및 dbg 파일을 열고 해당 콘텐츠를 검색 하 여 기호, 값, 특성, 주소 및 기타 디버깅 정보를 검색 하는 사용자 지정 응용 프로그램을 개발할 수 있습니다. 이 SDK는 c + + 응용 프로그램에 있는 기호와 연결 된 속성에 대 한 참조 테이블도 제공 합니다.  
   
- 가장 DIA SDK를 사용 하려면 다음을 사용 하 여 알아두어야 하 합니다.  
+ DIA SDK를 최대한 활용 하려면 다음에 대해 잘 알고 있어야 합니다.  
   
-- C++프로그래밍 언어  
+- C + + 프로그래밍 언어  
   
 - COM 프로그래밍  
   
-- Visual Studio 통합된 개발 환경 (IDE) 예제를 컴파일하기 위해  
+- 샘플을 컴파일하기 위한 Visual Studio IDE (통합 개발 환경)  
   
-  DIA SDK가 Visual Studio를 사용 하 여 정상적으로 설치 및 해당 기본 위치가 *[드라이브]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK. 설치의 일부로, DIA SDK를 구현 하는 msdia90.dll를 자동으로 등록 됩니다 있으므로 포함 하는 것이 사용 하기 위해 수행 해야 하는 모든 `dia2.h` 프로그램에 대 한 링크 `diaguids.lib`합니다.  
+  DIA SDK은 일반적으로 Visual Studio와 함께 설치 되며 기본 위치는 *[drive]* \Files\Microsoft Visual studio 9.0 \ DIA SDK입니다. 설치의 일부로 DIA SDK를 구현 하는 msdia90.dll 자동으로 등록 되므로 `dia2.h` 프로그램에 포함 하 고에 대 한 링크를 사용 하기만 하면 됩니다 `diaguids.lib` .  
   
   헤더: include\dia2.h  
   
@@ -46,10 +46,10 @@ ms.locfileid: "68164168"
   
 ## <a name="in-this-section"></a>섹션 내용  
  [개요](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
- 동안의 기본 아키텍처를 검토합니다.  
+ DIA의 기본 아키텍처를 검토 합니다.  
   
  [.Pdb 파일 쿼리](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- DIA API를 사용 하 여.pdb 파일을 쿼리 하는 방법에 대 한 단계별 지침을 제공 합니다.  
+ DIA API를 사용 하 여 .pdb 파일을 쿼리 하는 방법에 대 한 단계별 지침을 제공 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버그 인터페이스 액세스 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
