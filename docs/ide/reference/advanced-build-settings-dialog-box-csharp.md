@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418849"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)

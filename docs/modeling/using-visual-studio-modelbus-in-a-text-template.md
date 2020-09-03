@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535943"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>텍스트 템플릿에서 Visual Studio ModelBus 사용
@@ -257,7 +257,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 1. 최소 언어 솔루션 템플릿을 사용 하 여 새 DSL을 만듭니다. 언어 이름을 MBConsumer로 설정 하 고 파일 이름 확장명을 "사용"으로 설정 합니다.
 
-2. DSL 프로젝트에서 MBProvider DSL 어셈블리에 대 한 참조를 추가 합니다. 마우스 오른쪽 단추로 클릭 한 `MBConsumer\Dsl\References` 다음 **참조 추가**를 클릭 합니다. **찾아보기** 탭에서 다음을 찾습니다.`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. DSL 프로젝트에서 MBProvider DSL 어셈블리에 대 한 참조를 추가 합니다. 마우스 오른쪽 단추로 클릭 한  `MBConsumer\Dsl\References` 다음 **참조 추가**를 클릭 합니다. **찾아보기** 탭에서 다음을 찾습니다.`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     이렇게 하면 다른 DSL을 사용 하는 코드를 만들 수 있습니다. 여러 Dsl에 대 한 참조를 만들려는 경우에도 추가 합니다.
 
@@ -396,7 +396,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     해당 요소에서 MBR을 설정한 경우 참조 된 모델이 열리고 참조 된 요소가 선택 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio Modelbus를 사용하여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)

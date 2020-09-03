@@ -12,9 +12,9 @@
       items:
         - name: Get Started Developing with Visual Studio
           href: get-started-developing-with-visual-studio.md
-        - name: 'Visual C# 및 Visual Basic 시작'
+        - name: Visual C# 및 Visual Basic 시작
           items:
-            - name: 'Visual C# 및 Visual Basic 시작'
+            - name: Visual C# 및 Visual Basic 시작
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: 간단한 애플리케이션 만들기
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -202,9 +202,9 @@
                   href: default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
                 - name: 기본 바로 가기 키
                   href: default-keyboard-shortcuts-in-visual-studio.md
-        - name: Using IntelliSense
+        - name: IntelliSense 사용
           items:
-            - name: Using IntelliSense
+            - name: IntelliSense 사용
               href: using-intellisense.md
             - name: Visual Basic 관련 IntelliSense
               items:
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Visual Basic의 필터링된 완성 목록
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'Visual C# IntelliSense'
+            - name: Visual C# IntelliSense
               href: visual-csharp-intellisense.md
             - name: 관례에서 생성 기능을 통한 테스트 우선 지원
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<값>
+                    - name: \<value>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -280,13 +280,13 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: 코드 조각 배포
               href: how-to-distribute-code-snippets.md
-            - name: 'Visual C# 코드 조각'
+            - name: Visual C# 코드 조각
               href: visual-csharp-code-snippets.md
-            - name: 'Visual C# 코드 조각'
+            - name: Visual C# 코드 조각
               href: visual-cpp-code-snippets.md
             - name: 코드 조각 함수
               href: code-snippet-functions.md
-            - name: 'C# 리팩터링 코드 조각 복원'
+            - name: C# 리팩터링 코드 조각 복원
               href: how-to-restore-csharp-refactoring-snippets.md
             - name: 코드 감싸기 코드 조각 사용
               href: how-to-use-surround-with-code-snippets.md
@@ -390,29 +390,29 @@
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex 명령
               href: codeindex-command.md
-        - name: 'C#용 Visual Studio 개발 환경 사용'
+        - name: C#용 Visual Studio 개발 환경 사용
           items:
-            - name: 'C#용 Visual Studio 개발 환경 사용'
+            - name: C#용 Visual Studio 개발 환경 사용
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: 'C# 프로젝트에 애플리케이션 구성 파일 추가'
+            - name: C# 프로젝트에 애플리케이션 구성 파일 추가
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: 소스로서의 메타데이터
               href: ../csharp-ide/metadata-as-source.md
-            - name: '리팩터링(C#)'
+            - name: 리팩터링(C#)
               items:
-                - name: '리팩터링(C#)'
+                - name: 리팩터링(C#)
                   href: ../csharp-ide/refactoring-csharp.md
-                - name: '메서드 추출 리팩터링(C#)'
+                - name: 메서드 추출 리팩터링(C#)
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: '이름 바꾸기 리팩터링(C#)'
+                - name: 이름 바꾸기 리팩터링(C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
-                - name: '필드 캡슐화 리팩터링(C#)'
+                - name: 필드 캡슐화 리팩터링(C#)
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
-                - name: '인터페이스 추출 리팩터링(C#)'
+                - name: 인터페이스 추출 리팩터링(C#)
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
-                - name: '리팩터링 매개 변수 제거(C#)'
+                - name: 리팩터링 매개 변수 제거(C#)
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: '매개 변수 리팩터링 다시 정렬(C#)'
+                - name: 매개 변수 리팩터링 다시 정렬(C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Visual Studio의 디버깅
       href: ../debugger/debugging-in-visual-studio.md
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: 빌드 이벤트 지정(Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: '빌드 이벤트 지정(C#)'
+        - name: 빌드 이벤트 지정(C#)
           href: how-to-specify-build-events-csharp.md
         - name: Configuring Warnings in Visual Basic
           href: configuring-warnings-in-visual-basic.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Visual Studio IDE 64비트 지원
       href: visual-studio-ide-64-bit-support.md
-    - name: Visual Studio Samples
+    - name: Visual Studio 샘플
       href: visual-studio-samples.md
     - name: 사용자 계정 및 업데이트
       items:
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: 보안 관련 참조 목록
           href: security-bibliography.md
-    - name: Visual Studio Samples
+    - name: Visual Studio 샘플
       href: visual-studio-samples.md
     - name: Microsoft 도움말 뷰어
       items:
@@ -676,7 +676,7 @@
                   href: reference/synchronized-settings-environment-options-dialog-box.md
                 - name: '옵션 대화 상자, 환경, 탭 및 창'
                   href: reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: 'Task List, Environment, Options Dialog Box'
+                - name: '옵션 대화 상자, 환경, 작업 목록'
                   href: reference/task-list-environment-options-dialog-box.md
                 - name: '옵션 대화 상자, 환경, 웹 브라우저'
                   href: reference/web-browser-environment-options-dialog-box.md
@@ -718,7 +718,7 @@
                   href: reference/options-text-editor-csharp-advanced.md
                 - name: '옵션, 텍스트 편집기, C#, IntelliSense'
                   href: reference/options-text-editor-csharp-intellisense.md
-                - name: '옵션, 텍스트 편집기, JavaScript, 서식'
+                - name: 'Options, Text Editor, JavaScript, Formatting'
                   href: reference/options-text-editor-javascript-formatting.md
                 - name: '옵션, 텍스트 편집기, JavaScript, IntelliSense'
                   href: reference/options-text-editor-javascript-intellisense.md
@@ -754,7 +754,7 @@
                   items:
                     - name: '프로젝트 디자이너, 빌드 페이지(C#)'
                       href: reference/build-page-project-designer-csharp.md
-                    - name: '고급 빌드 설정 대화 상자(C#)'
+                    - name: 고급 빌드 설정 대화 상자(C#)
                       href: reference/advanced-build-settings-dialog-box-csharp.md
                 - name: '프로젝트 디자이너, 코드 분석'
                   href: reference/code-analysis-project-designer.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: '프로젝트 디자이너, 디버그 페이지'
                   href: reference/debug-page-project-designer.md
-                - name: '프로젝트 디자이너, My 확장명 페이지'
+                - name: '내 확장명 페이지, 프로젝트 디자이너'
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: '프로젝트 디자이너, 게시 페이지'
                   items:
@@ -852,7 +852,7 @@
               href: reference/projectconfig-devenv-exe.md
             - name: /Rebuild
               href: reference/rebuild-devenv-exe.md
-            - name: /Resetaddin
+            - name: /ResetAddin
               href: reference/resetaddin-devenv-exe.md
             - name: /InstallVSTemplates
               href: reference/installvstemplates-devenv-exe.md

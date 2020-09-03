@@ -1,5 +1,5 @@
 ---
-title: 아이디버그모듈3::겟심볼정보 | 마이크로 소프트 문서
+title: 'IDebugModule3:: Get기호 정보 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726896"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
-기호를 검색하는 경로 목록과 각 경로를 검색한 결과를 검색합니다.
+각 경로를 검색 한 결과 뿐만 아니라 기호를 검색 하는 경로 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,29 +44,29 @@ int GetSymbolInfo(
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-【인】 채울 필드를 지정하는 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 열거형의 `pInfo` 플래그 조합입니다.
+진행 채울 필드를 지정 하는 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 열거형의 플래그 조합입니다 `pInfo` .
 
 `pInfo`\
-【아웃】 멤버를 지정된 정보로 채워야 하는 [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 구조입니다. null 값인 경우 이 메서드는 을 반환합니다. `E_INVALIDARG`
+제한이 지정 된 정보를 사용 하 여 해당 멤버를 채울 [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 구조체입니다. 이 값이 null 이면이 메서드는를 반환 `E_INVALIDARG` 합니다.
 
-## <a name="return-value"></a>Return Value
-메서드가 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+메서드가 성공 하면가 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 > [!NOTE]
-> 구조에서 반환된 `MODULE_SYMBOL_SEARCH_INFO` 문자열은 반환되더라도 `S_OK` 비어 있을 수 있습니다. 이 경우 반환할 검색 정보가 없습니다.
+> 가 반환 되는 경우에도 구조체에서 반환 된 문자열은 `MODULE_SYMBOL_SEARCH_INFO` 비어 있을 수 있습니다 `S_OK` . 이 경우 반환할 검색 정보가 없습니다.
 
 ## <a name="remarks"></a>설명
-`MODULE_SYMBOL_SEARCH_INFO` 구조체의 `bstrVerboseSearchInfo` 필드가 비어 있지 않으면 검색된 경로 목록과 해당 검색 결과가 포함됩니다. 목록은 패스로 서식이 지정되고 그 다음에 타원("...")이 뒤따르고 결과가 표시됩니다. 둘 이상의 경로 결과 쌍이 있는 경우 각 쌍은 "\r\n"(캐리지 리턴/라인피드) 쌍으로 구분됩니다. 패턴은 다음과 같습니다.
+`bstrVerboseSearchInfo`구조체의 필드가 `MODULE_SYMBOL_SEARCH_INFO` 비어 있지 않으면 검색 된 경로 및 해당 검색의 결과 목록을 포함 합니다. 목록의 형식은 경로를 사용 하 고 그 뒤에 줄임표 ("...")가 오고 그 뒤에 결과가 나옵니다. 경로 결과 쌍이 둘 이상 있는 경우 각 쌍은 "\r\n" (캐리지 리턴/줄 바꿈) 쌍으로 구분 됩니다. 패턴은 다음과 같습니다.
 
-\<경로> ... \<결과>\r\n\<경로>... \<결과>\r\n\<경로>... \<결과>
+\<path>...\<result> \r\n \<path> \<result> ... \r\n \<path> ...\<result>
 
 마지막 항목에는 \r\n 시퀀스가 없습니다.
 
-## <a name="example"></a>예제
-이 예제에서 이 메서드는 세 가지 다른 검색 결과 있는 세 개의 경로를 반환합니다. 각 줄은 캐리지 리턴/라인피드 쌍으로 종료됩니다. 예제 출력은 검색 결과를 단일 문자열로 인쇄합니다.
+## <a name="example"></a>예
+이 예제에서이 메서드는 세 개의 다른 검색 결과가 포함 된 세 개의 경로를 반환 합니다. 각 줄은 캐리지 리턴/줄 바꿈 쌍으로 종료 됩니다. 예제 출력에서는 검색 결과를 단일 문자열로 인쇄 하기만 합니다.
 
 > [!NOTE]
-> 상태 결과는 "..." 바로 다음에 있는 모든 것입니다. 줄의 끝까지.
+> 상태 결과는 "..." 바로 다음에 나오는 모든 항목입니다. 줄의 끝까지
 
 ```cpp
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
@@ -84,11 +84,11 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\기호\user32.pdb... 파일을 찾을 수 없습니다.** 
- **c:\winnt\기호\user32.pdb... 버전이 일치하지 않습니다.** 
- ** \\\기호\기호\user32.dll\0a8sd0ad8ad\user32.pdb... 기호가 로드되었습니다.**
+**c:\symbols\user32.pdb... 파일을 찾을 수 없습니다.** 
+ **c:\winnt\symbols\user32.pdb... 버전이 일치 하지 않습니다.** 
+ ** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... 기호가 로드 되었습니다.**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
 - [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)

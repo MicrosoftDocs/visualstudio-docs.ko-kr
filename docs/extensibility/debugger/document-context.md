@@ -1,5 +1,5 @@
 ---
-title: 문서 컨텍스트 | 마이크로 소프트 문서
+title: 문서 컨텍스트 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 48fe651e69e5e2c97756788cc30e54454c26e51e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738924"
 ---
 # <a name="document-context"></a>문서 컨텍스트
-디버깅에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *문서 컨텍스트*:
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버그할 때 *문서 컨텍스트*는 다음과 같습니다.
 
-- 소스 파일의 위치를 나타냅니다. 원본 파일이 없는 언어의 경우 문서 컨텍스트는 일반적으로 런타임 환경에서 생성된 문서의 위치를 식별합니다. 예를 들어 스크립팅 엔진은 스크립트에서 문서를 생성할 수 있습니다. 자세한 내용은 [문서 위치를](../../extensibility/debugger/document-position.md)참조하십시오.
+- 소스 파일의 위치를 나타냅니다. 소스 파일이 없을 수 있는 언어의 경우 문서 컨텍스트는 런타임 환경에 의해 일반적으로 생성 되는 문서의 위치를 식별 합니다. 예를 들어 스크립팅 엔진은 스크립트에서 문서를 생성할 수 있습니다. 자세한 내용은 [문서 위치](../../extensibility/debugger/document-position.md)를 참조 하세요.
 
-- 코드 컨텍스트에 해당하는 원본 문서의 위치를 설명합니다. 심볼 처리기는 컴파일러 또는 인터프리터에서 생성된 정보를 사용하여 코드 컨텍스트를 문서 컨텍스트에 매핑합니다.
+- 소스 문서에서 코드 컨텍스트에 해당 하는 위치를 설명 합니다. 기호 처리기는 컴파일러 또는 인터프리터에 의해 생성 된 정보를 사용 하 여 코드 컨텍스트를 설명서 컨텍스트에 매핑합니다.
 
-- [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스에 의해 구현됩니다.
+- 는 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스에 의해 구현 됩니다.
 
 ## <a name="see-also"></a>참조
 - [코드 컨텍스트](../../extensibility/debugger/code-context.md)

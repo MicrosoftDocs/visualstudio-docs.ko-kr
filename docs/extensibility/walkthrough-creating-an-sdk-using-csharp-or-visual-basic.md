@@ -12,10 +12,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904967"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>연습: c # 또는 Visual Basic를 사용 하 여 SDK 만들기
@@ -26,10 +26,10 @@ ms.locfileid: "85904967"
 - [SimpleMathVSIX 확장 프로젝트를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
 - [클래스 라이브러리를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>SimpleMath Windows 런타임 구성 요소를 만들려면
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> SimpleMath Windows 런타임 구성 요소를 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
@@ -57,7 +57,7 @@ ms.locfileid: "85904967"
 
 9. **솔루션 탐색기**에서 **SimpleMath** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **빌드**를 선택 합니다.
 
-## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>SimpleMathVSIX 확장 프로젝트를 만들려면
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> SimpleMathVSIX 확장 프로젝트를 만들려면
 
 1. **솔루션 ' SimpleMath '** 노드에 대 한 바로 가기 메뉴에서 **Add**  >  **새 프로젝트**추가를 선택 합니다.
 
@@ -154,7 +154,7 @@ ms.locfileid: "85904967"
 
 30. **설치** 단추를 선택 하 고 설치가 완료 될 때까지 기다린 후 Visual Studio를 다시 시작 합니다.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>클래스 라이브러리를 사용 하는 샘플 앱을 만들려면
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> 클래스 라이브러리를 사용 하는 샘플 앱을 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
@@ -245,7 +245,7 @@ ms.locfileid: "85904967"
 
     확장 SDK를 성공적으로 만들고 사용 했습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [연습: JavaScript를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)

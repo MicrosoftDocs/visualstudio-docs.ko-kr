@@ -16,7 +16,7 @@
           href: automatic-feature-suspension.md
         - name: '방법: 수동으로 코드 분석 실행'
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: '연습: 코드 오류에 대한 관리 코드 분석'
+        - name: '연습: 관리 코드의 코드 오류 분석'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: SuppressMessage 특성을 사용하여 경고 표시 안 함
           items:
@@ -236,7 +236,7 @@
                   href: ca1412-mark-comsource-interfaces-as-idispatch.md
                 - name: 'CA1413: COM 노출 값 형식에 public이 아닌 필드를 사용하지 마세요.'
                   href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-                - name: 'CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시하세요.'
+                - name: 'CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시하십시오.'
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
                 - name: 'CA1415: P/Invoke를 올바르게 선언하십시오.'
                   href: ca1415-declare-p-invokes-correctly.md
@@ -572,7 +572,7 @@
   items:
     - name: C/C++ 코드 품질 분석
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
-    - name: '빠른 시작: C/C++ 코드 분석'
+    - name: '퀵 스타트: C/C++용 코드 분석'
       href: quick-start-code-analysis-for-c-cpp.md
     - name: 규칙 집합을 사용하여 실행할 C++ 규칙 지정
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -582,9 +582,9 @@
       href: code-analysis-for-c-cpp-overview.md
     - name: '방법: C/C++ 프로젝트의 코드 분석 속성 설정'
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: '연습: 오류에 대한 C/C++ 코드 분석'
+    - name: '연습: C/C++ 코드의 오류 분석'
       items:
-        - name: '연습: 오류에 대한 C/C++ 코드 분석'
+        - name: '연습: C/C++ 코드의 오류 분석'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: 데모 샘플
           href: demo-sample.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: 모범 사례 및 예제
           href: best-practices-and-examples-sal.md
-        - name: '방법: _analysis_assume을 사용하여 추가 코드 정보 지정'
+        - name: 'How to: Using __analysis_assume 사용하여 추가 코드 정보 지정'
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: C/C++용 코드 분석 경고
           items:
@@ -1190,15 +1190,15 @@
           items:
             - name: 규칙 집합을 사용하여 코드 분석 규칙 그룹화
               href: using-rule-sets-to-group-code-analysis-rules.md
-            - name: '연습: 사용자 지정 규칙 세트 구성 및 사용'
+            - name: '연습: 사용자 지정 규칙 집합 구성 및 사용'
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
             - name: '방법: 관리 코드 프로젝트에 대한 코드 분석 구성'
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: '방법: ASP.NET 웹 애플리케이션에 대한 코드 분석 구성'
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: '방법: 코드 프로젝트 규칙 세트를 팀 프로젝트 체크 인 정책과 동기화'
+            - name: '방법: 코드 프로젝트 규칙 집합을 팀 프로젝트 체크 인 정책과 동기화'
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: '방법: 솔루션의 여러 프로젝트에 대한 관리 규칙 세트 지정'
+            - name: '방법: 솔루션의 여러 프로젝트에 대한 관리 규칙 집합 지정'
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: 사용자 지정 규칙 집합 만들기
               items:

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b6ab93c24cd97d498ae886c7a9184fd4a5f111f1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534916"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Visual Basic 6 클라이언트에서는 Int64 인수를 사용하지 마세요.
@@ -46,7 +46,7 @@ ms.locfileid: "85534916"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  Visual Basic 6 COM 클라이언트에서 형식에 액세스 하지 않는 것이 확실 한 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Interoperability.LongArgument#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LongArgument/cs/FxCop.Interoperability.LongArgument.cs#1)]
@@ -59,5 +59,5 @@ ms.locfileid: "85534916"
 
  [CA1017: ComVisibleAttribute로 어셈블리를 표시하세요.](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [비관리 코드의](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Long 데이터 형식](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516) 상호 운용

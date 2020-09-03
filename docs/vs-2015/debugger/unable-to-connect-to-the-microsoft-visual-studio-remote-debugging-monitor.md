@@ -1,5 +1,5 @@
 ---
-title: Microsoft Visual Studio 원격 디버깅 모니터에 연결할 수 없습니다. Microsoft Docs
+title: Microsoft Visual Studio 원격 디버깅 모니터에 연결할 수 없음 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477059"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
@@ -61,9 +61,9 @@ ms.locfileid: "77477059"
   
 - 원격 디버거를 중지하고 로컬 컴퓨터에서 사용 중인 계정으로 다시 시작할 수 있습니다.  
   
-- **/allow \<사용자 이름>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다. `msvsmon /allow <username@computer>`  
+- **/allow \<username>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다`msvsmon /allow <username@computer>`.  
   
-- 원격 디버거의 사용 권한에 사용자를 추가할 수 있습니다(원격 디버거 창, **도구 / 사용 권한**).  
+- 원격 디버거의 사용 권한에 사용자를 추가할 수 있습니다 (원격 디버거 창, **도구/사용 권한**).  
   
 - 이전 단계에서 메서드를 사용할 수 없는 경우 모든 사용자가 원격 디버깅을 수행하도록 허용할 수 있습니다. 원격 디버거 창에서 **도구 / 옵션** 대화 상자로 이동합니다. **인증 안 함**을 선택하는 경우 **모든 사용자가 디버깅할 수 있도록 허용**을 선택할 수 있습니다. 그러나 선택 항목이 없거나 개인 네트워크에 있는 경우에만 이 옵션을 사용해야 합니다.  
   
@@ -84,5 +84,5 @@ ms.locfileid: "77477059"
   
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
-## <a name="see-also"></a>참고 항목  
- [원격 디버깅](../debugger/remote-debugging.md)
+## <a name="see-also"></a>관련 항목  
+ [Remote Debugging](../debugger/remote-debugging.md)

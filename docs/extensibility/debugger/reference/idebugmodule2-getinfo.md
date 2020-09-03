@@ -1,5 +1,5 @@
 ---
-title: 아이디버그모듈2::겟정보 | 마이크로 소프트 문서
+title: 'IDebugModule2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726954"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
-이 모듈에 대한 정보를 가져옵니다.
+이 모듈에 대 한 정보를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,18 +44,18 @@ int GetInfo( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFields`\
-【인】 채울 필드를 지정하는 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 열거형의 `pInfo` 플래그 조합입니다.
+진행 채울 필드를 지정 하는 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 열거형의 플래그 조합입니다 `pInfo` .
 
 `pInfo`\
-【인, 아웃】 모듈에 대한 설명으로 채워진 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조입니다.
+[in, out] 모듈에 대 한 설명과 함께 채워지는 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조에는 모듈 창에 표시되는 모듈의 이름이 포함되어 **있습니다.**
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) **구조체는 모듈 창에** 표시 되는 모듈의 이름을 포함 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

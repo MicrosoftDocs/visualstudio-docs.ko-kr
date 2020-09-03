@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 01fbb6cfd1717562af79c067ede0cad9753ad5dd
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557896"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>방법: 명령줄에서 기호 파일 위치 지정
@@ -38,7 +38,7 @@ ms.locfileid: "77557896"
   이러한 방법을 둘 다 사용할 수도 있습니다.  
   
 > [!NOTE]
-> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 로컬 컴퓨터에 설치될 경우 Windows 기호 파일의 위치가 이미 지정되었을 수 있습니다. 자세한 내용은 [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)를 참조하세요. 이 항목의 뒷 부분에 설명된 대로 위치 및 서버를 사용하도록 VSPerfReport를 구성해야 합니다.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 로컬 컴퓨터에 설치될 경우 Windows 기호 파일의 위치가 이미 지정되었을 수 있습니다. 자세한 내용은 [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)를 참조 하세요. 이 항목의 뒷 부분에 설명된 대로 위치 및 서버를 사용하도록 VSPerfReport를 구성해야 합니다.  
   
 ## <a name="specifying-windows-symbol-files"></a>Windows 기호 파일 지정  
   
@@ -62,6 +62,6 @@ ms.locfileid: "77557896"
  set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/downloads/symbols
  ```
 
- 다음 VSPerfReport 명령줄은 **/SymbolPath** 옵션을 사용하여 C:\Projects\Symbols 디렉터리를 검색 경로에 추가합니다.  
+ 다음 VSPerfReport 명령줄은 /SymbolPath 옵션을 사용하여 **C:\Projects\Symbols** 디렉터리를 검색 경로에 추가합니다.  
   
- **VSPerfReport** **/기호 경로: c:\projects\symbols/summary: all**
+ **VSPerfReport** *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

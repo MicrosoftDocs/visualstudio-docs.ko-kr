@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666857"
 ---
 # <a name="miscellaneous-files"></a>기타 파일
@@ -50,5 +50,5 @@ ms.locfileid: "72666857"
 ## <a name="folder-display-options"></a>폴더 표시 옵션
  기타 파일을 열지 않은 경우에도 폴더가 나타나도록 기타 폴더에 대한 표시 옵션을 설정할 수 있습니다. 솔루션 파일은 기타 파일 목록을 영구적으로 관리하지 않습니다. 사용자 단위 MRU(가장 최근에 사용한) 파일 목록을 저장할 수 있는 선택적 기능을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
- [옵션 대화 상자, 환경, [Documents ](../../ide/solutions-and-projects-in-visual-studio.md) 솔루션 및 프로젝트](../../ide/reference/documents-environment-options-dialog-box.md)
+## <a name="see-also"></a>관련 항목
+ [옵션 대화 상자, 환경,](../../ide/reference/documents-environment-options-dialog-box.md) [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md) 문서

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477092"
 ---
 # <a name="how-to-troubleshoot-templates"></a>방법: 템플릿 문제 해결
@@ -32,7 +32,7 @@ ms.locfileid: "77477092"
 
 2. .zip 파일의 압축을 풉니다.
 
-3. **의 **파일[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 메뉴에서 **열기**를 클릭하고 **파일**을 클릭합니다.
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 **파일** 메뉴에서 **열기**를 클릭하고 **파일**을 클릭합니다.
 
 4. 템플릿의 .vstemplate 파일을 선택하고 **열기**를 클릭합니다.
 
@@ -58,9 +58,9 @@ ms.locfileid: "77477092"
 
 2. 왼쪽 창에서 **애플리케이션**을 클릭합니다.
 
-3. **이라는 **원본`Visual Studio - VsTemplate` 값을 포함하는 이벤트를 검색합니다.
+3. `Visual Studio - VsTemplate`이라는 **원본** 값을 포함하는 이벤트를 검색합니다.
 
 4. 오류를 보려면 템플릿 이벤트를 두 번 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md) [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

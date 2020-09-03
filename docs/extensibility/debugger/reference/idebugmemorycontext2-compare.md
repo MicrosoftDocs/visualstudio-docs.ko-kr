@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::비교 | 마이크로 소프트 문서
+title: 'IDebugMemoryContext2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4b2551f8554d96186b90a1eed97a5a48ec5f0405
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727498"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
-비교 플래그로 표시된 방식으로 지정된 배열의 각 컨텍스트와 메모리 컨텍스트를 비교하여 일치하는 첫 번째 컨텍스트의 인덱스를 반환합니다.
+비교 플래그에 지정 된 방식으로 지정 된 배열의 각 컨텍스트와 메모리 컨텍스트를 비교 하 여와 일치 하는 첫 번째 컨텍스트의 인덱스를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,23 +48,23 @@ int Compare(
 
 ## <a name="parameters"></a>매개 변수
 `compare`\
-【인】 비교 유형을 결정하는 [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) 열거형의 값입니다.
+진행 비교 유형을 결정 하는 [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) 열거형의 값입니다.
 
 `rgpMemoryContextSet`\
-【인】 비교할 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체에 대한 참조 배열입니다.
+진행 비교할 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체에 대 한 참조의 배열입니다.
 
 `dwMemoryContextSetLen`\
-【인】 배열의 컨텍스트 수입니다. `rgpMemoryContextSet`
+진행 배열의 컨텍스트 수 `rgpMemoryContextSet` 입니다.
 
 `pdwMemoryContext`\
-【아웃】 비교를 제공하는 첫 번째 메모리 컨텍스트의 인덱스를 반환합니다.
+제한이 비교를 만족 하는 첫 번째 메모리 컨텍스트의 인덱스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 두 `E_COMPARE_CANNOT_COMPARE` 컨텍스트를 비교할 수 없는 경우 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_COMPARE_CANNOT_COMPARE`두 컨텍스트를 비교할 수 없으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- 디버그 엔진(DE)은 모든 유형의 비교를 지원할 필요는 없지만 최소한 `CONTEXT_EQUAL` `CONTEXT_LESS_THAN`. `CONTEXT_GREATER_THAN` `CONTEXT_SAME_SCOPE`및 을 지원해야 합니다.
+ DE (디버그 엔진)는 모든 형식의 비교를 지원 하지 않아도 되지만 `CONTEXT_EQUAL` ,, 및 이상을 지원 해야 합니다 `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` `CONTEXT_SAME_SCOPE` .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b305d88779603b374e5f95842d7a5271a657268
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666529"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>방법: XML 편집기에서 XSLT 변형 실행
@@ -21,9 +21,9 @@ ms.locfileid: "72666529"
 
 XML 편집기에서 XSLT 스타일시트를 XML 문서에 연결하고 변형을 수행하며 출력을 볼 수 있습니다. XSLT 변환의 결과로 나타나는 출력이 새 문서 창에 표시됩니다.
 
- **Output** 속성은 출력의 파일 이름을 지정 합니다. **Output** 속성이 비어 있으면 임시 디렉터리에 파일 이름이 생성 됩니다. 파일 확장명은 스타일시트에 있는 `xsl:output` 요소를 기반으로 하며 .xml, .txt 또는 .htm일 수 있습니다.
+ **Output** 속성은 출력에 대한 파일 이름을 지정합니다. **Output** 속성이 비어 있으면 임시 디렉터리에 파일 이름이 생성됩니다. 파일 확장명은 스타일시트에 있는 `xsl:output` 요소를 기반으로 하며 .xml, .txt 또는 .htm일 수 있습니다.
 
- **Output** 속성이 .htm 또는 .html 확장명을 가진 파일 이름을 지정 하는 경우 [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer를 사용 하 여 XSLT 출력을 미리 봅니다. 다른 모든 파일 확장명은 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio에서 선택한 기본 편집기를 사용하여 열립니다. 예를 들어, 파일 확장명이 .xml인 경우 Visual Studio에서는 XML 편집기를 사용합니다.
+ **Output** 속성이 .htm 또는 .html 확장명을 가진 파일 이름을 지정 하는 경우 Internet Explorer를 사용 하 여 XSLT 출력을 미리 봅니다 [!INCLUDE[msCoName](../includes/msconame-md.md)] . 다른 모든 파일 확장명은 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio에서 선택한 기본 편집기를 사용하여 열립니다. 예를 들어, 파일 확장명이 .xml인 경우 Visual Studio에서는 XML 편집기를 사용합니다.
 
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>XML 문서에서 XSLT 변형을 실행하려면
 
@@ -35,7 +35,7 @@ XML 편집기에서 XSLT 스타일시트를 XML 문서에 연결하고 변형을
 
          또는
 
-    - **속성** 창을 사용 하 여 XSLT 스타일 시트를 추가 합니다. 문서 **속성 창**에서 **스타일 시트** 필드의 **찾아보기** 단추를 클릭 하 고 XSLT 스타일 시트를 선택 하 고 **열기**를 클릭 합니다.
+    - **속성** 창을 사용하여 XSLT 스타일시트를 추가합니다. 문서 **속성 창**에서 **스타일 시트** 필드의 **찾아보기** 단추를 클릭 하 고 XSLT 스타일 시트를 선택 하 고 **열기**를 클릭 합니다.
 
 3. **XML 편집기** 도구 모음에서 **showxsl 출력** 단추를 클릭 합니다.
 
@@ -48,7 +48,7 @@ XML 편집기에서 XSLT 스타일시트를 XML 문서에 연결하고 변형을
 
 1. XML 편집기에서 XSLT 스타일시트를 엽니다.
 
-2. 문서 **속성** 창의 **입력** 필드에 XML 문서를 지정 합니다.
+2. 문서 **속성** 창의 **입력** 필드에서 XML 문서를 지정합니다.
 
     > [!NOTE]
     > XML 문서는 변환에 사용되는 입력 문서입니다. XSLT 변환을 시작할 때 문서를 지정 하지 않으면 **파일 열기** 대화 상자가 표시 되 고 해당 시점에 문서를 지정할 수 있습니다.
@@ -65,5 +65,5 @@ XML 편집기에서 XSLT 스타일시트를 XML 문서에 연결하고 변형을
 
      XSLT 변환의 결과 출력이 새 문서 창에 표시 되며 출력 창에서 사용 되는 편집기는 **출력** 문서 속성의 파일 확장명에 따라 달라 집니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [XML 편집기](../xml-tools/xml-editor.md)

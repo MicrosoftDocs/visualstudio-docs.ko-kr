@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f232446ed699bd7cc034e4b6d6148b665830cf2d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535527"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
@@ -99,15 +99,15 @@ ms.locfileid: "85535527"
   
 3. **규칙 유형** 페이지에서 **포트** 를 선택 하 고 **다음**을 클릭 합니다.  
   
-4. **프로토콜 및 포트** 페이지에서 포트 프로토콜(TCP 또는 UDP)을 선택합니다. **특정 로컬 포트** 를 선택하고 프로토콜에 사용하도록 설정할 포트 번호를 하나 이상 입력합니다. 번호를 쉼표로 구분합니다. 그런 후 **Next** 를 클릭합니다.  
+4. **프로토콜 및 포트** 페이지에서 포트 프로토콜(TCP 또는 UDP)을 선택합니다. **특정 로컬 포트** 를 선택하고 프로토콜에 사용하도록 설정할 포트 번호를 하나 이상 입력합니다. 번호를 쉼표로 구분합니다. **다음**을 클릭합니다.  
   
 5. **작업** 페이지에서 **연결 허용** 을 선택하고 **다음**을 클릭합니다.  
   
-6. **프로필** 페이지에서 포트에 사용하도록 설정할 네트워크 종류를 하나 이상 선택합니다. 선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다. 그런 후 **Next** 를 클릭합니다.  
+6. **프로필** 페이지에서 포트에 사용하도록 설정할 네트워크 종류를 하나 이상 선택합니다. 선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다. **다음**을 클릭합니다.  
   
 7. **이름** 페이지에서 규칙의 이름을 입력하고 **마침**을 클릭합니다.  
   
 8. **인바운드 규칙** 또는 **아웃 바운드 규칙** 목록에 새 규칙이 표시 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Remote Debugging](../debugger/remote-debugging.md)

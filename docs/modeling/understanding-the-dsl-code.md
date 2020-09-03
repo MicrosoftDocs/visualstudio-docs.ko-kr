@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565944"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
@@ -39,7 +39,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  생성된 코드를 검사하여 DSL을 파악하는 것이 좋습니다. 생성된 파일을 확인하려면 솔루션 탐색기에서 *.tt 파일을 확장합니다.
 
- \*.tt 파일은 거의 생성 하지 않는 코드를 포함 합니다. 대신 `<#include>` 지시문을 사용하여 공유 템플릿 파일을 포함합니다. 공유 파일은 **Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates** 에서 찾을 수 있습니다.
+ .Tt 파일은 거의 생성 하지 않는 \* 코드를 포함 합니다. 대신 `<#include>` 지시문을 사용하여 공유 템플릿 파일을 포함합니다. 공유 파일은 **Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates** 에서 찾을 수 있습니다.
 
  고유한 프로그램 코드를 DSL 솔루션에 추가할 때는 Generated Code 폴더 외부에 있는 별도의 파일에 추가합니다. **사용자 지정 코드** 폴더를 만들 수 있습니다. 사용자 지정 폴더에 새 코드 파일을 추가할 때는 초기 코드 골격에서 네임스페이스를 수정해야 합니다.
 
@@ -58,7 +58,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 ## <a name="generated-files-in-dsl"></a>DSL의 생성된 파일
  다음 생성 된 파일은 **Dsl** 프로젝트에 표시 됩니다.
 
- *YourDsl* `Schema.xsd`
+ 모든 *dsl*`Schema.xsd`
 
  DSL 인스턴스를 포함하는 파일의 스키마입니다. 이 파일은 컴파일 (**bin**) 디렉터리에 복사 됩니다. DSL을 설치할 때 모델 파일의 유효성을 검사할 수 있도록이 파일을 **Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** 에 복사할 수 있습니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
@@ -70,7 +70,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  구성 요소 솔루션 예제에서는 연결 작성기 중 하나의 이름이 ConnectionBuilder입니다. 도메인 관계의 이름이 Connection이므로 이는 우연의 일치입니다.
 
- 관계는 *relationship*`Builder.Connect()` 메서드에서 생성 됩니다. 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들면 다음과 같습니다.:
+ 관계는 관계 메서드에서 생성 됩니다 *Relationship* `Builder.Connect()` . 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
 - EGP(Element Group Prototype) 처리기 메서드. 사용자가이 클래스의 인스턴스에 다른 요소를 *병합* (추가) 할 수 있는 경우에 필요 합니다. 사용자는 일반적으로 요소 도구나 다른 모양에서 끌기 또는 붙여넣기를 통해 이 작업을 수행합니다.
 
-   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. 특정 일
+   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. 이
 
    클래스의 EGP 처리기 메서드를 사용하면 Component가 Port는 수락하되 Comment는 수락하지 않도록 지정할 수 있습니다. 루트 모델 클래스의 EGP 처리기는 Comment와 Component는 수락하지만 Port는 수락하지 않습니다.
 
@@ -200,13 +200,13 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  `DocData.cs`
 
- *Dsl* `DocData`는 파일에 대 한 모델 로드 및 저장을 관리 하 고 저장소 인스턴스를 만듭니다.
+ 모든 *dsl* `DocData` 모델을 로드 하 여 파일에 저장 하 고 저장소 인스턴스를 만듭니다.
 
  예를 들어 파일이 아닌 데이터베이스에 DSL을 저장하려면 `Load` 및 `Save` 메서드를 재정의할 수 있습니다.
 
  `DocView.cs`
 
- 모든 *dsl* `DocView`는 다이어그램이 표시 되는 창을 관리 합니다. 예를 들어 Windows Form 내부에 다이어그램을 포함할 수 있습니다.
+ 모든 *dsl* `DocView` 다이어그램이 표시 되는 창을 관리 합니다. 예를 들어 Windows Form 내부에 다이어그램을 포함할 수 있습니다.
 
  DslPackage 프로젝트에 사용자 정의 컨트롤 파일, 다이어그램을 표시할 수 있는 패널 그리고 단추 및 기타 컨트롤을 추가합니다. 이렇게 하려면 Form의 코드 보기에서 다음 코드를 추가하고 DSL에 맞게 이름을 조정합니다.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  이 파일을 사용자 지정하려면 `.tt` 파일을 편집합니다.
 
 > [!WARNING]
-> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 **VSIX에 포함** 속성이 `True`인지 확인 합니다.
+> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 **VSIX에 포함** 속성이 인지 확인 합니다 `True` .
 
  이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 

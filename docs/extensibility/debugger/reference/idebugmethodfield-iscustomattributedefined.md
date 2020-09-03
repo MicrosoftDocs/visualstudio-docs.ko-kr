@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::IsCustom속성 정의 | 마이크로 소프트 문서
+title: 'IDebugMethodField:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d60e7a451a18ff8efbf47a008831109cd7f747c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727111"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
-특정 사용자 지정 특성이 정의되었는지 여부를 결정합니다.
+특정 사용자 지정 특성이 정의 되어 있는지 여부를 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,10 +41,10 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>매개 변수
 `pszCustomAttributeName`\
-【인】 찾을 사용자 지정 특성의 이름을 포함하는 문자열입니다.
+진행 찾을 사용자 지정 특성의 이름을 포함 하는 문자열입니다.
 
-## <a name="return-value"></a>Return Value
- 사용자 지정 특성이 이 메서드에 정의된 경우 S_OK 반환하고 그렇지 않으면 S_FALSE 반환합니다.
+## <a name="return-value"></a>반환 값
+ 이 메서드에 사용자 지정 특성이 정의 되어 있으면 S_OK을 반환 하 고, 그렇지 않으면 S_FALSE을 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

@@ -1,5 +1,5 @@
 ---
-title: 이벤트 소스(비주얼 스튜디오 SDK) | 마이크로 소프트 문서
+title: 이벤트 소스 (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738777"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>이벤트 소스(비주얼 스튜디오 SDK)
-이벤트의 소스는 DE(디버그 엔진)와 세션 디버그 관리자(SDM)의 두 가지 소스가 있습니다. DE에서 보낸 이벤트에는 NULL엔진이 아닌 엔진이 있고 SDM에서 전송된 이벤트에는 NULL 엔진이 있습니다.
+# <a name="event-sources-visual-studio-sdk"></a>이벤트 소스 (Visual Studio SDK)
+이벤트에는 디버그 엔진 (DE)과 세션 디버그 관리자 (SDM)의 두 가지 소스가 있습니다. DE에서 전송 된 이벤트에 NULL이 아닌 엔진이 있으며,이 경우 SDM에서 전송 된 이벤트에는 NULL 엔진이 있습니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 DE에서 SDM으로 **IDebugProgramCreateEventEvent2를** 보내는 방법을 보여 주며 있습니다.
+## <a name="example"></a>예
+다음 예제에서는 **IDebugProgramCreateEvent2** 를 DE에서 SDM으로 보내는 방법을 보여 줍니다.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
@@ -72,5 +72,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [이벤트 전송](../../extensibility/debugger/sending-events.md)

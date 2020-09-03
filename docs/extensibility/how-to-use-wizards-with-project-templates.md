@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905519"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>방법: 프로젝트 템플릿에 마법사 사용
@@ -40,13 +40,13 @@ Visual Studio SDK의 일부인 프로젝트 템플릿 프로젝트를 사용 하
 
 2. 프로젝트 템플릿 프로젝트와 동일한 솔루션에 새 VSIX 프로젝트를 추가 합니다. **솔루션 탐색기**에서 솔루션 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **Add**  >  **새 프로젝트** 추가를 선택 하 고 "VSIX"를 검색 합니다. 이름을 **Myprojectwizard로 만듭니다.**
 
-3. VSIX 프로젝트를 시작 프로젝트로 설정 합니다. **솔루션 탐색기**에서 VSIX 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **시작 프로젝트로 설정**을 선택 합니다.
+3. VSIX 프로젝트를 시작 프로젝트로 설정합니다. **솔루션 탐색기**에서 VSIX 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **시작 프로젝트로 설정**을 선택 합니다.
 
 4. VSIX 프로젝트의 자산으로 템플릿 프로젝트를 추가 합니다. **솔루션 탐색기**의 VSIX 프로젝트 노드 아래에서 *source.extension.vsixmanifest* 파일을 찾습니다. 매니페스트 편집기에서 열려면 두 번 클릭 합니다.
 
 5. 매니페스트 편집기에서 창의 왼쪽에 있는 **자산** 탭을 선택 합니다.
 
-6. **자산** 탭에서 **새로 만들기**를 선택 합니다. **새 자산 추가** 창의 형식 필드에서 **VisualStudio**를 선택 합니다. **원본** 필드에서 **현재 솔루션의 프로젝트**를 선택 합니다. **프로젝트** 필드에서 **myprojecttemplate**을 선택 합니다. 그런 후 **OK**를 클릭합니다.
+6. **자산** 탭에서 **새로 만들기**를 선택 합니다. **새 자산 추가** 창의 형식 필드에서 **VisualStudio**를 선택 합니다. **원본** 필드에서 **현재 솔루션의 프로젝트**를 선택 합니다. **프로젝트** 필드에서 **myprojecttemplate**을 선택 합니다. 그런 다음 **확인**을 클릭합니다.
 
 7. 솔루션을 빌드하고 디버깅을 시작합니다. 두 번째 Visual Studio 인스턴스가 표시됩니다. (몇 분이 걸릴 수 있습니다.)
 
@@ -242,7 +242,7 @@ Visual Studio SDK의 일부인 프로젝트 템플릿 프로젝트를 사용 하
 
      다시 한 번 따옴표를 잊지 마세요. 출력에 다음과 같은 줄이 표시 됩니다.
 
-     **공개 키 토큰\<token>**
+     **공개 키 토큰 \<token>**
 
      이 값을 적어 두세요.
 

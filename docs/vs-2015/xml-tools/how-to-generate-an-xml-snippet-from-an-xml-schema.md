@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e3d90185180cac5f526594650bde0a8f380c7668
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666518"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>방법: XML 스키마에서 XML 조각 생성
@@ -51,21 +51,21 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
 
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>새 XML 파일을 만들어 XML 스키마와 연결하려면
 
-1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **파일**을 클릭 합니다.
+1. **파일** 메뉴에서 **새로 만들기**를 가리키고 **파일**을 클릭합니다.
 
-2. **템플릿** 창에서 **XML 파일** 을 선택 하 고 **열기**를 클릭 합니다.
+2. **템플릿** 창에서 **XML 파일**을 선택하고 **열기**를 클릭합니다.
 
      편집기에서 새 파일이 열립니다. 파일에는 기본 XML 선언, `<?xml version="1.0" encoding="utf-8">`이 포함됩니다.
 
-3. 문서 속성 창의 **스키마** 필드에서 찾아보기 단추 ( **...** )를 클릭 합니다.
+3. 문서 속성 창의 **스키마** 필드에서 찾아보기 단추 (**...**)를 클릭 합니다.
 
-     **XSD 스키마** 대화 상자가 표시 됩니다.
+     **XSD 스키마** 대화 상자가 표시됩니다.
 
 4. **추가**를 클릭합니다.
 
-     **XSD 스키마 열기** 대화 상자가 표시 됩니다.
+     **XSD 스키마 열기** 대화 상자가 표시됩니다.
 
-5. 스키마 파일을 선택 하 고 **열기**를 클릭 합니다.
+5. 스키마 파일을 선택하고 **열기**를 클릭합니다.
 
 6. **확인**을 클릭합니다.
 
@@ -77,13 +77,13 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
 
 2. 멤버 목록에 가능한 항목이 표시됩니다.
 
-     주석을 추가 하려면 **!--** 합니다.
+     **!--** 주석을 추가합니다.
 
-     **!** 문서 유형을 추가 하는 DOCTYPE입니다.
+     **!DOCTYPE** 문서 형식을 추가합니다.
 
-     **?** 처리 명령을 추가 합니다.
+     **?** 처리 명령을 추가합니다.
 
-     Root 요소를 추가 하려면 **연결** 합니다.
+     **Contact** 루트 요소를 추가합니다.
 
 3. 멤버 목록에서 **Contact** 를 선택 하 고 enter 키를 누릅니다.
 
@@ -139,8 +139,8 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
 </xs:schema>
 ```
 
-### <a name="output"></a>Output
- 다음은 `Contact` 요소와 연결된 스키마 정보를 기반으로 생성되는 XML 데이터입니다. @No__t_0 표시 된 항목은 XML 조각에서 편집 가능한 필드를 지정 합니다.
+### <a name="output"></a>출력
+ 다음은 `Contact` 요소와 연결된 스키마 정보를 기반으로 생성되는 XML 데이터입니다. `bold`로 표시된 항목은 XML 코드 조각에서 편집 가능한 필드임을 나타냅니다.
 
 ```
 <Contact>
@@ -153,5 +153,5 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
 </Contact>
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Xml 코드 조각](../xml-tools/xml-snippets.md) [방법: xml 조각 사용](../xml-tools/how-to-use-xml-snippets.md)

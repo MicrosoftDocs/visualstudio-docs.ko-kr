@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 96ae175451d5cb99268f3cd89a5f8ec5142744af
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331909"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>프로파일러 샘플링 방법을 사용하여 서비스에 대한 애플리케이션 통계 수집

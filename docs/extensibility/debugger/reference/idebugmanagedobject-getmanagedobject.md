@@ -1,5 +1,5 @@
 ---
-title: IDebug관리대상::GetManaged개체 | 마이크로 소프트 문서
+title: 'IDebugManagedObject:: GetManagedObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727740"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
-관리되는 개체를 나타내는 인터페이스를 반환합니다.
+관리 되는 개체를 나타내는 인터페이스를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>매개 변수
 `ppManagedObject`\
-【아웃】 관리되는 개체를 나타내는 인터페이스를 반환합니다.
+제한이 관리 되는 개체를 나타내는 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드에서 반환된 인터페이스는 관리되는 클래스에서 구현한 모든 인터페이스에 대해 쿼리할 수 있으므로 해당 메서드를 호출할 수 있습니다.
+ 이 메서드에서 반환 된 인터페이스는 해당 메서드가 호출 될 수 있도록 관리 되는 클래스에서 구현 하는 인터페이스에 대해 쿼리할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)
