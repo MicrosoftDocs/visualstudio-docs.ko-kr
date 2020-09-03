@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b7eb229c5938165607b797205b94a318e3303b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655181"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행
@@ -29,7 +29,7 @@ ms.locfileid: "72655181"
 이 대화 상자에서 동시에 빌드할 수 있는 Visual C++ 또는 Visual C# 프로젝트의 최대 개수, 특정 기본 빌드 동작 및 일부 빌드 로그 설정을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 메뉴 모음에서 **도구**, **옵션**을 차례로 선택합니다. 이 옵션 집합에 액세스하려면 **프로젝트 및 솔루션**을 확장한 다음, **빌드 및 실행**을 선택합니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
- **최대 병렬 프로젝트 빌드 수** 동시에 빌드할 수 있는 시각적 C++ 및 시각적 C# 프로젝트의 최대 수를 지정 합니다. 빌드 프로세스를 최적화하기 위해 최대 병렬 프로젝트 빌드 수는 자동으로 컴퓨터의 CPU 수로 설정됩니다. 최대값은 32입니다.
+ **최대 병렬 프로젝트 빌드 수** 동시에 빌드할 수 있는 Visual C++ 및 Visual c # 프로젝트의 최대 수를 지정 합니다. 빌드 프로세스를 최적화하기 위해 최대 병렬 프로젝트 빌드 수는 자동으로 컴퓨터의 CPU 수로 설정됩니다. 최대값은 32입니다.
 
  **실행할 때 시작 프로젝트와 종속성만 빌드** F5 키를 선택할 때이 확인란을 선택 하면 시작 프로젝트 및 해당 종속성만 빌드됩니다. 메뉴 모음에서 **디버그**, **시작** 을 선택 합니다. 또는 메뉴 모음에서 **빌드**, **빌드** 를 선택 합니다. F5 키를 선택할 때 이 확인란이 선택 취소된 경우 모든 프로젝트, 종속성 및 솔루션 파일이 빌드됩니다. 메뉴 모음에서 **디버그**, **시작**을 차례로 선택하거나 메뉴 모음에서 **빌드**, **빌드**를 차례로 선택합니다. 기본적으로 이 옵션은 선택 취소되어 있습니다.
 
@@ -66,5 +66,5 @@ ms.locfileid: "72655181"
 
  \\...\\*ProjectName*\Debug\\*ProjectName*.log에 있는 빌드 로그 파일에 작성되는 정보의 양을 결정합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [컴파일 및 빌드](../../ide/compiling-and-building-in-visual-studio.md)

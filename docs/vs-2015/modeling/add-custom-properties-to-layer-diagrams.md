@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655295"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>레이어 다이어그램에 사용자 지정 속성 추가
@@ -24,7 +24,7 @@ ms.locfileid: "72655295"
 레이어 다이어그램의 확장 코드를 작성할 때 레이어 다이어그램의 요소와 함께 값을 저장할 수 있습니다. 값은 다이어그램이 저장되고 다시 열릴 때 유지됩니다. 사용자가 보고 편집할 수 있도록 이러한 속성이 **속성** 창에 표시 될 수도 있습니다. 예를 들어 사용자가 각 레이어에 대한 정규식을 지정하고, 각 레이어의 클래스 이름이 사용자가 지정한 패턴을 따르는지 확인하기 위해 유효성 검사 코드를 작성하도록 허용할 수 있습니다.
 
 ## <a name="properties-not-visible-to-the-user"></a>사용자에게 표시되지 않는 속성
- 코드에서 레이어 다이어그램의 요소에 값을 연결하도록 하려는 경우 MEF 구성 요소를 정의할 필요가 없습니다. [Ilayerelement](/previous-versions/ff644511(v=vs.140))에 `Properties` 이라는 사전이 있습니다. 레이어 요소의 사전에 마샬링할 수 값을 추가하기만 하면 됩니다. 이 값은 레이어 다이어그램의 일부로 저장됩니다. 자세한 내용은 [프로그램 코드에서 레이어 모델 탐색 및 업데이트](../modeling/navigate-and-update-layer-models-in-program-code.md)를 참조 하세요.
+ 코드에서 레이어 다이어그램의 요소에 값을 연결하도록 하려는 경우 MEF 구성 요소를 정의할 필요가 없습니다. `Properties` [Ilayerelement](/previous-versions/ff644511(v=vs.140))에 이라는 사전이 있습니다. 레이어 요소의 사전에 마샬링할 수 값을 추가하기만 하면 됩니다. 이 값은 레이어 다이어그램의 일부로 저장됩니다. 자세한 내용은 [프로그램 코드에서 레이어 모델 탐색 및 업데이트](../modeling/navigate-and-update-layer-models-in-program-code.md)를 참조 하세요.
 
 ## <a name="properties-that-the-user-can-edit"></a>사용자가 편집할 수 있는 속성
  **초기 준비**
@@ -32,7 +32,7 @@ ms.locfileid: "72655295"
 > [!IMPORTANT]
 > 속성을 표시하려면 레이어 속성을 표시할 각 컴퓨터에서 다음과 같이 변경해야 합니다.
 >
->  1. **관리자 권한으로 실행**을 사용 하 여 메모장을 실행 합니다. `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`를 엽니다.
+>  1. **관리자 권한으로 실행**을 사용 하 여 메모장을 실행 합니다. `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest` 열기
 >
 >  2. `Content` 요소 안에 다음을 추가합니다.
 >
@@ -69,11 +69,11 @@ public class MyProperty
 
  [Ilayerelement](/previous-versions/ff644511(v=vs.140)) 또는 해당 파생 클래스 (다음을 포함)에 대 한 속성을 정의할 수 있습니다.
 
-- `ILayerModel` - 모델
+- `ILayerModel` -모델
 
-- `ILayer` - 각 레이어
+- `ILayer` -각 계층
 
-- `ILayerDependencyLink` - 레이어 간의 링크
+- `ILayerDependencyLink` -레이어 간 링크
 
 - `ILayerComment`
 
@@ -165,5 +165,5 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
- [레이어 다이어그램 확장](../modeling/extend-layer-diagrams.md)
+## <a name="see-also"></a>관련 항목
+ [Extend layer diagrams](../modeling/extend-layer-diagrams.md)

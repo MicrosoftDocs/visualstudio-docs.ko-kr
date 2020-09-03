@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f4299ac71c08118563a008abe065f2c02423e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655399"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 코드 조각
@@ -45,13 +45,13 @@ Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 �
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>코드 조각을 사용하여 선택한 코드 감싸기
  코드 조각을 사용하여 선택한 코드를 감싸려면 한 줄이나 여러 줄을 선택하고 다음의 하나를 수행합니다.
 
-1. 마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 표시하고 **코드 감싸기**를 선택합니다.
+1. 마우스 오른쪽 단추를 클릭 하 여 상황에 맞는 메뉴를 가져오고 **코드 감싸기** 를 선택 합니다.
 
 2. **편집/IntelliSense** 메뉴에서 **코드 감싸기**를 선택합니다.
 
 3. 바로 가기 키 **Ctrl+K+S**를 사용합니다.
 
-   **#if**를 선택합니다. 다음과 같이 표시되어야 합니다.
+   **#if**를 선택합니다. 다음과 유사한 결과가 표시됩니다.
 
 ```cpp
 #if 0
@@ -111,7 +111,7 @@ private:
 ## <a name="for-vs-foreach-vs-forr-vs-rfor"></a>for, foreach, forr 및 rfor
  다양한 for 루프를 제공하는 네 가지 조각이 있습니다.
 
- **for** 코드 조각은 조건이 개체의 길이(`size_t`)에 기반을 둔 `for` 루프를 제공합니다.
+ **For** 코드 조각은 `for` 조건이 개체의 길이 (의)를 기반으로 하는 루프를 제공 합니다 `size_t` .
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -129,7 +129,7 @@ for each (object var in collection_to_loop)
 }
 ```
 
- **forr** 코드 조각은 조건이 개체의 길이(정수)에 기반을 둔 역방향 `for` 루프를 제공합니다.
+ **Forr** 코드 조각은 `for` 조건이 개체의 길이 (정수)를 기반으로 하는 역방향 루프를 제공 합니다.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -138,7 +138,7 @@ for (int i = length - 1; i >= 0; i--)
 }
 ```
 
- **rfor** 코드 조각은 [범위 기반](https://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) for 루프(링크)를 제공합니다.
+ **Rfor** 코드 조각은 [범위 기반](https://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) for 루프 (링크)를 제공 합니다.
 
 ```cpp
 for (auto& i : v)

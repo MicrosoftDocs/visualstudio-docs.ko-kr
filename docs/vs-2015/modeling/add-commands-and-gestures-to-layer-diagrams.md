@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7b0c54975cdd5bc86f77dddbd5ca1a56c1896394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655311"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>레이어 다이어그램에 명령 및 제스처 추가
@@ -55,7 +55,7 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
 
     [제스처 처리기 정의](#gesture)
 
-6. @No__t_0의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 *bin \\* 에서 **.vsix** 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.
+6. 의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] *bin \\ *에서 **.vsix** 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>별도 VSIX에 명령 또는 제스처 추가
  명령, 레이어 유효성 검사기 및 기타 확장이 포함된 하나의 VSIX를 만들려면 VSIX를 정의하는 프로젝트 하나와 처리기에 대한 개별 프로젝트를 만드는 것이 좋습니다. 모델링 확장의 다른 형식에 대 한 자세한 내용은 [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)을 참조 하세요.
@@ -110,7 +110,7 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
 
      파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.
 
-## <a name="command"></a> 메뉴 명령 정의
+## <a name="defining-a-menu-command"></a><a name="command"></a> 메뉴 명령 정의
  기존 제스처 또는 명령 프로젝트에 메뉴 명령 정의를 더 추가할 수 있습니다. 각 명령은 다음과 같은 특징이 있는 클래스에 의해 정의됩니다.
 
 - 클래스는 다음과 같이 선언됩니다.
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> 제스처 처리기 정의
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> 제스처 처리기 정의
  제스처 처리기는 사용자가 레이어 다이어그램으로 항목을 끌어올 때 및 다이어그램을 두 번 클릭할 때 응답합니다.
 
  기존 명령 또는 제스처 처리기 VSIX 프로젝트에 제스처 처리기를 정의하는 코드 파일을 추가할 수 있습니다.
@@ -247,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
 
    **OnDragDrop** - 사용자가 다이어그램에 항목을 놓을 때 호출됩니다.
 
-- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들면,
+- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들면 다음과 같습니다.
 
   ```
   public void OnDragDrop(IShape target, IDataObject data)
@@ -264,5 +264,5 @@ namespace MyLayerExtensions // change to your preference
 
   다이어그램으로 끌어올 때 다른 항목을 디코딩하는 방법에 대 한 자세한 내용은 [모델링 다이어그램에서 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로그램 코드에서 레이어 모델 탐색 및 업데이트](../modeling/navigate-and-update-layer-models-in-program-code.md) [레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md) [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md)

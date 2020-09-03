@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714413"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Mac용 Visual Studio 워크로드

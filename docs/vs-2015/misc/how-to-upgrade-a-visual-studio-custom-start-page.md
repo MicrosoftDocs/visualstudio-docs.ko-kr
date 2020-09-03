@@ -8,10 +8,10 @@ ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: a7854de705a961463b1e8435e7340548cfc23bf3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293376"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>방법: Visual Studio 사용자 지정 시작 페이지 업그레이드

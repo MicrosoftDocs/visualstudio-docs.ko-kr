@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293865"
 ---
 # <a name="managing-application-settings-net"></a>애플리케이션 설정 관리(.NET)
@@ -70,7 +70,7 @@ ms.locfileid: "74293865"
 
 예를 들어, 프로젝트에 SpecialSettings.settings와 같은 파일을 추가할 수 있습니다. `SpecialSettings` 클래스는 `My` 네임스페이스에서 노출되지 않지만 **코드 보기** 를 사용하면 `Partial Class SpecialSettings`가 포함된 사용자 지정 설정 파일을 읽을 수 있습니다.
 
-설정 디자이너는 먼저 프로젝트 시스템에서 생성되는 Settings.settings 파일을 검색합니다. 이 파일은 프로젝트 디자이너가 **설정** 탭에 표시하는 기본 파일입니다. Settings.settings는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트의 My Project 폴더와 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트의 Properties 폴더에 있습니다. 그런 다음 프로젝트 디자이너는 프로젝트 루트 폴더에서 다른 설정 파일을 검색합니다. 그러므로 사용자 지정 설정 파일을 해당 폴더에 배치해야 합니다. 프로젝트의 다른 위치에 .settings 파일을 추가하면 프로젝트 디자이너가 해당 파일을 찾을 수 없습니다.
+설정 디자이너는 먼저 프로젝트 시스템에서 생성 하는 설정 파일을 검색 합니다. 이 파일은 프로젝트 디자이너가 **설정** 탭에 표시 하는 기본 파일입니다. 설정. 설정은 프로젝트의 My Project 폴더 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 와 프로젝트의 Properties 폴더에 있습니다. [!INCLUDE[csprcs](../includes/csprcs-md.md)] 그런 다음 프로젝트 디자이너는 프로젝트 루트 폴더에서 다른 설정 파일을 검색합니다. 그러므로 사용자 지정 설정 파일을 해당 폴더에 배치해야 합니다. 프로젝트의 다른 위치에 .settings 파일을 추가하면 프로젝트 디자이너가 해당 파일을 찾을 수 없습니다.
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Visual Basic에서 런타임에 애플리케이션 설정에 대한 액세스 또는 변경
 
@@ -86,7 +86,7 @@ ms.locfileid: "74293865"
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Visual C#에서 런타임에 애플리케이션 설정에 대한 액세스 또는 변경
 <!-- markdownlint-enable MD003 MD020 -->
 
-[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]을 제외한 [!INCLUDE[csprcs](../includes/csprcs-md.md)]등의 언어에서는 다음 `Settings` 예제에서와 같이 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 클래스에 직접 액세스해야 합니다.
+[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]을 제외한 [!INCLUDE[csprcs](../includes/csprcs-md.md)]등의 언어에서는 다음 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 예제에서와 같이 `Settings` 클래스에 직접 액세스해야 합니다.
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
@@ -100,6 +100,6 @@ Properties.Settings.Default.Save();
 
 `Settings` 클래스를 통해 애플리케이션 설정에 액세스하는 방법에 대한 일반적인 내용은 [애플리케이션 설정 개요](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)를 참조하세요. 설정 반복에 대한 자세한 내용은 이 [포럼 게시물](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
-- [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [애플리케이션 설정 액세스(Visual Basic)](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

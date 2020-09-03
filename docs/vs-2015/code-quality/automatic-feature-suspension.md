@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655145"
 ---
 # <a name="automatic-feature-suspension"></a>자동 기능 일시 중단
@@ -29,9 +29,9 @@ ms.locfileid: "72655145"
 
  메모리 부족 상태에서 다음이 발생 합니다.
 
-- 시각적 개체 C# 와 Visual Basic에 대 한 전체 솔루션 분석을 사용할 수 없습니다.
+- Visual c # 및 Visual Basic에 대 한 전체 솔루션 분석을 사용할 수 없습니다.
 
-- 시각적 개체 C# 및 Visual Basic에 대 한 GC ( [가비지 수집](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) ) 대기 시간이 짧은 모드를 사용할 수 없습니다.
+- Visual c # 및 Visual Basic에 대 한 GC ( [가비지 수집](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) ) 낮은 대기 시간 모드를 사용할 수 없습니다.
 
 - Visual Studio 캐시가 플러시됩니다.
 
@@ -39,10 +39,10 @@ ms.locfileid: "72655145"
  대량 솔루션 또는 메모리 부족 상태를 처리할 때 Visual Studio 성능을 개선 하는 방법에 대 한 팁과 요령은 [대기업의 성능 고려 사항](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)을 참조 하세요.
 
 ## <a name="full-solution-analysis-suspended"></a>전체 솔루션 분석 일시 중단 됨
- 기본적으로 전체 솔루션 분석은 Visual Basic에 대해 사용 하도록 설정 되며 시각적 C#개체에 대해서는 사용할 수 없습니다. 그러나 메모리 부족 상태에서는 옵션 대화 상자의 설정에 관계 없이 Visual Basic 및 시각적 개체 C#모두에 대해 전체 솔루션 분석을 자동으로 사용 하지 않도록 설정 합니다. 그러나 옵션 대화 상자에서 **전체 솔루션 분석 사용** 확인란을 선택 하거나 Visual Studio를 다시 시작 하 여 정보 표시줄이 나타날 때 **다시 설정** 단추를 선택 하 여 전체 솔루션 분석을 다시 사용 하도록 설정할 수 있습니다. 옵션 대화 상자는 항상 현재 전체 솔루션 분석 설정을 표시 합니다. 자세한 내용은 [방법: 전체 솔루션 분석 사용 및 사용 안 함](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)을 참조 하세요.
+ 기본적으로 전체 솔루션 분석은 Visual Basic에 대해 사용 하도록 설정 되 고 Visual c #에서는 사용 하지 않도록 설정 됩니다. 그러나 메모리 부족 상태에서는 옵션 대화 상자의 설정에 관계 없이 Visual Basic 및 Visual c # 모두에 대해 전체 솔루션 분석을 자동으로 사용할 수 없습니다. 그러나 옵션 대화 상자에서 **전체 솔루션 분석 사용** 확인란을 선택 하거나 Visual Studio를 다시 시작 하 여 정보 표시줄이 나타날 때 **다시 설정** 단추를 선택 하 여 전체 솔루션 분석을 다시 사용 하도록 설정할 수 있습니다. 옵션 대화 상자는 항상 현재 전체 솔루션 분석 설정을 표시 합니다. 자세한 내용은 [방법: 전체 솔루션 분석 사용 및 사용 안 함](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)을 참조 하세요.
 
 ## <a name="gc-low-latency-disabled"></a>GC 낮은 대기 시간 사용 안 함
- GC 낮은 대기 시간 모드를 다시 사용 하도록 설정 하려면 Visual Studio를 다시 시작 합니다.  기본적으로 Visual Studio는 입력할 때마다 gc가 낮은 대기 시간 모드를 설정 하 여 사용자가 GC 작업을 차단 하지 않도록 합니다. 그러나 메모리 부족 상태에서 Visual Studio가 자동 일시 중단 경고를 표시 하는 경우에는 해당 세션에 대해 GC 낮은 대기 시간 모드를 사용할 수 없습니다. Visual Studio를 다시 시작 하면 기본 GC 동작이 다시 활성화 됩니다. 자세한 내용은 <xref:System.Runtime.GCLatencyMode>을 참조하십시오.
+ GC 낮은 대기 시간 모드를 다시 사용 하도록 설정 하려면 Visual Studio를 다시 시작 합니다.  기본적으로 Visual Studio는 입력할 때마다 gc가 낮은 대기 시간 모드를 설정 하 여 사용자가 GC 작업을 차단 하지 않도록 합니다. 그러나 메모리 부족 상태에서 Visual Studio가 자동 일시 중단 경고를 표시 하는 경우에는 해당 세션에 대해 GC 낮은 대기 시간 모드를 사용할 수 없습니다. Visual Studio를 다시 시작 하면 기본 GC 동작이 다시 활성화 됩니다. 자세한 내용은 <xref:System.Runtime.GCLatencyMode>를 참조하세요.
 
 ## <a name="visual-studio-caches-flushed"></a>Visual Studio 캐시 플러시
 
@@ -50,16 +50,16 @@ ms.locfileid: "72655145"
 
 - 모든 참조 찾기
 
-- 탐색
+- 다음 탐색
 
 - Using 추가
 
 또한 내부 Visual Studio 작업에 사용 되는 캐시도 지워집니다.
 
 > [!NOTE]
-> 자동 기능 일시 중단 경고는 세션당 한 번만 발생 하는 것이 아니라 솔루션 별로 한 번만 발생 합니다. 즉, Visual Basic에서 시각적 개체 C# (또는 그 반대로)로 전환 하 고 다른 메모리 부족 상태를 실행 하는 경우 다른 자동 기능 일시 중단 경고를 얻을 수 있습니다.
+> 자동 기능 일시 중단 경고는 세션당 한 번만 발생 하는 것이 아니라 솔루션 별로 한 번만 발생 합니다. 즉, Visual Basic에서 Visual c # (또는 그 반대로)로 전환 하 고 다른 메모리 부족 상태를 실행 하는 경우 다른 자동 기능 일시 중단 경고를 얻을 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: 전체 솔루션 분석 사용 설정 및 해제](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [가비지 수집 기본 사항](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)

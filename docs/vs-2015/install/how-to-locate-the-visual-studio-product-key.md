@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 11e739fc1b0516c2b6e34421ecee7a329830de14
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73983791"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>How to: Locate the Visual Studio Product Key
@@ -34,7 +34,7 @@ ms.locfileid: "73983791"
 
   - 소프트웨어를 구입한 공급업체에서 제공한 설명서 또는 기타 통신
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  * [방법: Visual Studio Trial Edition에서 업그레이드](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
  * [Visual Studio 설치](../install/install-visual-studio-2015.md)
  * [Visual Studio 라이선스 백서](https://www.microsoft.com/download/details.aspx?id=13350)

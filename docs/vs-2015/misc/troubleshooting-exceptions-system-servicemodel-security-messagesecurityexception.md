@@ -1,5 +1,5 @@
 ---
-title: '예외 문제 해결: MessageSecurityException |입니다. Microsoft Docs'
+title: '예외 문제 해결: MessageSecurityException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b8ce3f16c1439d62cfa1e2cff344b70e6724c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655358"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>예외 문제 해결: MessageSecurityException.
-@No__t_0 예외는 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 메시지가 올바르게 보호 되지 않거나 변조 된 것을 확인 하는 경우에 throw 됩니다. 이 오류는 다음 조건에 모두 해당될 때 가장 자주 발생합니다.
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>예외 문제 해결: System.ServiceModel.Security.MessageSecurityException
+에서 <xref:System.ServiceModel.Security.MessageSecurityException> [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 메시지의 보안이 올바르게 설정 되지 않았거나 변조 되었는지 확인 하는 경우 예외가 throw 됩니다. 이 오류는 다음 조건에 모두 해당될 때 가장 자주 발생합니다.
 
 - 원격 데스크톱 연결 또는 터미널 서비스 등의 원격 연결을 통해 WCF 서비스 참조를 사용하여 웹 사이트 또는 웹 애플리케이션 프로젝트의 WCF 서비스(.svc)와 통신합니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "72655358"
 - 원격 사이트의 로컬 호스트에 대한 요청을 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server에서 처리합니다.
 
 ## <a name="associated-tips"></a>관련 팁
- **ASP.Net 개발 서버 사용 하는 경우 NTLM 인증 문제를 해결 하십시오.**
+ **ASP.Net Development Server를 사용하는 경우 NTLM 인증 문제를 해결하십시오.**
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server에서는 대개 NTLM(Windows NT Challenge/Response) 보안을 사용하지 않으므로 익명 액세스가 허용됩니다. 하지만 터미널 서비스 세션을 실행하거나 원격 연결을 사용하는 경우에는 기본적으로 NTLM 보안이 사용됩니다. NTLM이 사용되면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server를 시작한 사용자 또는 프로세스의 자격 증명과 비교하여 모든 로컬 호스트 요청의 유효성이 검사됩니다. 이를 통해 보안 위협이 감소됩니다. 그러나 WCF에서도 자체 인증을 수행하며 관리자가 아닌 계정에서 WCF 서비스를 사용할 수 없도록 금지합니다.
 
  원격 사용자가 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server를 통해 웹 사이트를 실행하면서 웹 서비스 또는 WCF 서비스를 함께 사용하는 경우 사용자 지정 서비스 바인딩을 만들거나 NTLM 보안을 해제할 수 있습니다.
@@ -84,5 +84,5 @@ ms.locfileid: "72655358"
 
 3. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>관련 항목:
- [예외 도우미를 사용](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711) <xref:System.ServiceModel.Security.MessageSecurityException>
+## <a name="see-also"></a>참고 항목
+ <xref:System.ServiceModel.Security.MessageSecurityException> [예외 도우미 사용](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

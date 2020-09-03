@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f634f028dafea3260a69537893513f13cc0ebe83
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292545"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>UML 확장에서 단위 테스트 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-변경을 연속으로 수행할 때 코드를 안정적으로 유지하려면 단위 테스트를 작성하여 정기적인 빌드 프로세스의 일부분으로 수행하는 것이 좋습니다. 자세한 내용은 [Unit Test Your Code](../test/unit-test-your-code.md)을 참조하세요. Visual Studio 모델링 확장용 테스트를 설정하려면 몇 가지 주요 정보가 필요합니다. 요약하자면 다음과 같습니다.
+변경을 연속으로 수행할 때 코드를 안정적으로 유지하려면 단위 테스트를 작성하여 정기적인 빌드 프로세스의 일부분으로 수행하는 것이 좋습니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요. Visual Studio 모델링 확장용 테스트를 설정하려면 몇 가지 주요 정보가 필요합니다. 요약하면 다음과 같습니다.
 
-- [VSIX 확장에 대 한 단위 테스트 설정](#Host)
+- [VSIX 확장용 단위 테스트 설정](#Host)
 
    VS IDE 호스트 어댑터를 사용하여 테스트를 실행합니다. 각 테스트 메서드 앞에 `[HostType("VS IDE")]`를 접두사로 지정합니다. 테스트를 실행할 때 이 호스트 어댑터는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 시작합니다.
 
@@ -48,16 +48,16 @@ ms.locfileid: "74292545"
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-## <a name="Host"></a>VSIX 확장에 대 한 단위 테스트 설정
+## <a name="setting-up-a-unit-test-for-vsix-extensions"></a><a name="Host"></a> VSIX 확장에 대 한 단위 테스트 설정
  모델링 확장의 메서드는 보통 이미 열려 있는 다이어그램에서 작동합니다. 이 메서드는 **IDiagramContext** , **ILinkedUndoContext**등의 MEF 가져오기를 사용합니다. 테스트를 실행하기 전에 테스트 환경에서 이 컨텍스트를 설정해야 합니다.
 
-#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 실행되는 단위 테스트를 설정하려면
+#### <a name="to-set-up-a-unit-test-that-executes-in-vsprvs"></a>[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 실행되는 단위 테스트를 설정하려면
 
 1. UML 확장 프로젝트와 단위 테스트 프로젝트를 만듭니다.
 
-    1. **UML 확장 프로젝트입니다.** 일반적으로는 명령 제스처 또는 유효성 검사 프로젝트 템플릿을 사용하여 이 프로젝트를 만듭니다. 예를 들어 [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)를 참조 하세요.
+    1. **UML 확장 프로젝트.** 일반적으로는 명령 제스처 또는 유효성 검사 프로젝트 템플릿을 사용하여 이 프로젝트를 만듭니다. 예를 들어 [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)를 참조 하세요.
 
-    2. **단위 테스트 프로젝트입니다.** 자세한 내용은 [Unit Test Your Code](../test/unit-test-your-code.md)을 참조하세요.
+    2. **단위 테스트 프로젝트.** 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.
 
 2. UML 모델링 프로젝트가 포함된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만듭니다. 이 솔루션을 테스트 초기 상태로 사용합니다. 이 솔루션은 UML 확장 및 해당 단위 테스트를 작성하는 솔루션과는 다른 별개의 솔루션이어야 합니다. 자세한 내용은 [UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)를 참조 하세요.
 
@@ -80,23 +80,23 @@ ms.locfileid: "74292545"
 
     - *UML 확장 프로젝트*
 
-    - **EnvDTE**
+    - **EnvDTE.dll**
 
-    - **VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator**
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
 
-    - **VisualStudio입니다.**
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**
 
-    - **VisualStudio. Microsoft.visualstudio.qualitytools&gt Testframework .dll**
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
 
-    - **VisualStudio입니다.**
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
 
-    - **TestHostFramework입니다.**
+    - **Microsoft.VSSDK.TestHostFramework.dll**
 
 6. 초기화 메서드를 포함한 각 테스트 메서드에 `[HostType("VS IDE")]` 특성을 접두사로 지정합니다.
 
      그러면 Visual Studio의 실험적 인스턴스에서 테스트가 실행됩니다.
 
-## <a name="DTE"></a>DTE 및 ModelStore 액세스
+## <a name="accessing-dte-and-modelstore"></a><a name="DTE"></a> DTE 및 ModelStore 액세스
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 여는 메서드를 작성합니다. 일반적으로는 각 테스트 실행 시 솔루션을 한 번만 엽니다. 메서드를 한 번만 실행하려면 메서드에 `[AssemblyInitialize]` 특성을 접두사로 지정합니다. 또한 각 테스트 메서드에 [HostType("VS IDE")] 특성도 추가해야 합니다.  예를 들면 다음과 같습니다.
 
 ```csharp
@@ -162,9 +162,9 @@ namespace UnitTests
 
 ```
 
- <xref:EnvDTE.Project?displayProperty=fullName> 인스턴스가 모델링 프로젝트를 나타내는 경우이를 [Imodelingproject](/previous-versions/ee789474(v=vs.140))로 캐스팅할 수 있습니다.
+ 인스턴스가 <xref:EnvDTE.Project?displayProperty=fullName> 모델링 프로젝트를 나타내는 경우이를 [Imodelingproject](/previous-versions/ee789474(v=vs.140))로 캐스팅할 수 있습니다.
 
-## <a name="Opening"></a>모델 다이어그램 열기
+## <a name="opening-a-model-diagram"></a><a name="Opening"></a> 모델 다이어그램 열기
  일반적으로 각 테스트 또는 테스트 클래스는 열려 있는 다이어그램에 대해 수행합니다. 다음 예에서는 이 테스트 클래스의 다른 메서드보다 먼저 이 메서드를 실행하는 `[ClassInitialize]` 특성을 사용합니다. 여기서도 각 테스트 메서드에 [HostType("VS IDE")] 특성을 추가해야 합니다.
 
 ```csharp
@@ -209,7 +209,7 @@ public class MyTestClass
 
 ```
 
-## <a name="UiThread"></a>UI 스레드에서 모델 변경 수행
+## <a name="perform-model-changes-in-the-ui-thread"></a><a name="UiThread"></a> UI 스레드에서 모델 변경 수행
  테스트 또는 테스트 중인 메서드로 인해 모델 저장소가 변경되는 경우에는 사용자 인터페이스 스레드에서 해당 테스트나 메서드를 실행해야 합니다. 그렇지 않으면 `AccessViolationException`이 표시될 수 있습니다. 테스트 메서드의 코드를 호출할 Invoke 호출 내에 다음과 같이 포함하세요.
 
 ```
@@ -229,7 +229,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }
 ```
 
-## <a name="MEF"></a>명령, 제스처 및 기타 MEF 구성 요소 테스트
+## <a name="testing-command-gesture-and-other-mef-components"></a><a name="MEF"></a> 명령, 제스처 및 기타 MEF 구성 요소 테스트
  MEF 구성 요소는 `[Import]` 특성을 포함하며 해당 값이 호스트에 의해 설정되는 속성 선언을 사용합니다. 일반적으로 이러한 속성은 IDiagramContext, SVsServiceProvider, ILinkedUndoContext 등입니다. 이러한 속성을 사용하는 메서드를 테스트할 때는 테스트 대상 메서드를 실행하기 전에 해당 값을 설정해야 합니다. 예를 들어 다음 코드와 같은 명령 확장을 작성한 경우
 
 ```
@@ -376,5 +376,5 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 
  리플렉션을 사용 하 여 접근자를 정의 합니다 .이는 최소 권장 방법입니다. 이전 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전에서는 각 private 메서드에 대해 접근자 메서드를 자동으로 만드는 유틸리티를 제공했습니다. 이 유틸리티는 편리하긴 하지만 사용하는 경우 단위 테스트가 테스트 중인 애플리케이션의 내부 구조에 밀접하게 연결되는 것으로 확인되었습니다. 그러면 요구 사항이나 아키텍처가 변경될 때 구현과 함께 테스트도 변경해야 하므로 추가 작업을 수행해야 합니다. 또한 구현 디자인의 잘못된 가정이 테스트에도 기본적으로 적용되므로 테스트가 오류를 찾지 못합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [단위 테스트 분석](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
