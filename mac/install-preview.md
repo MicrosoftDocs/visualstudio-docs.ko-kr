@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
 ms.openlocfilehash: 01f3cac1ac985f79e576e709b030c881a07a801d
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939130"
 ---
 # <a name="install-a-preview-version-of-visual-studio-for-mac"></a>Mac용 Visual Studio의 미리 보기 버전 설치

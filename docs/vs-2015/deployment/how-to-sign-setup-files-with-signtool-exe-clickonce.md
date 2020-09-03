@@ -1,5 +1,5 @@
 ---
-title: '방법: SignTool.exe (ClickOnce)를 사용 하 여 파일 설치 | Microsoft Docs'
+title: '방법: SignTool.exe를 사용 하 여 설치 파일에 서명 (ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202173"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>방법: SignTool.exe를 사용하여 설치 파일에 서명(ClickOnce)
@@ -39,7 +39,7 @@ SignTool.exe를 사용하여 설치 프로그램(setup.exe)에 서명을 할 수
   
 1. 매니페스트에 서명하는 데 사용할 인증서를 개발 컴퓨터에 설치합니다.  
   
-2. **솔루션 탐색기**에서 프로젝트를 선택합니다.  
+2. **솔루션 탐색기**에서 프로젝트를 선택 합니다.  
   
 3. **프로젝트** 메뉴에서 *ProjectName* **속성**을 클릭합니다.  
   
@@ -79,5 +79,5 @@ SignTool.exe를 사용하여 설치 프로그램(setup.exe)에 서명을 할 수
     signtool sign /f CertFileName Setup.exe  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 애플리케이션 및 배포 매니페스트 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+## <a name="see-also"></a>관련 항목  
+ [방법: 응용 프로그램 및 배포 매니페스트 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

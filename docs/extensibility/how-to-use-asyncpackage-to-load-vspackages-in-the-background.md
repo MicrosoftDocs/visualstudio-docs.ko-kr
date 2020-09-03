@@ -8,14 +8,14 @@ ms.author: anthc
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7727d53c84ab876fe6616c8ec5d438033216481e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905596"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage 로드
-VS 패키지를 로드 하 고 초기화 하면 디스크 i/o가 발생할 수 있습니다. 이러한 i/o가 UI 스레드에서 발생 하면 응답성 문제가 발생할 수 있습니다. 이를 해결 하기 위해 Visual Studio 2015에서는 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 백그라운드 스레드에서 패키지를 로드할 수 있도록 하는 클래스를 도입 했습니다.
+VS 패키지를 로드 하 고 초기화 하면 디스크 i/o가 발생할 수 있습니다. 이러한 i/o가 UI 스레드에서 발생 하면 응답성 문제가 발생할 수 있습니다. 이를 해결 하기 위해 Visual Studio 2015에서는  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 백그라운드 스레드에서 패키지를 로드할 수 있도록 하는 클래스를 도입 했습니다.
 
 ## <a name="create-an-asyncpackage"></a>AsyncPackage 만들기
  먼저 VSIX 프로젝트를 만들고 (**파일**  >  **새로 만들기**  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**) VSPackage를 프로젝트에 추가할 수 있습니다 (프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가  >  **c # 항목**  >  **확장성**  >  **Visual Studio 패키지**). 그런 다음 서비스를 만들어 패키지에 추가할 수 있습니다.

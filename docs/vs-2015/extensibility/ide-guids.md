@@ -12,18 +12,18 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6131e27dbe4018fa1db415ba1690870c4bffa10c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203983"
 ---
 # <a name="ide-guids"></a>IDE GUID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-<xref:Microsoft.VisualStudio.VSConstants> 클래스 아래 표에 나열 된 일부 통합된 개발 환경 (IDE)의 Guid를 게시 합니다.  
+<xref:Microsoft.VisualStudio.VSConstants>클래스는 아래 표에 나와 있는 것 처럼 IDE (통합 개발 환경)의 일부 부분에 대 한 guid를 게시 합니다.  
   
-## <a name="core-systems"></a>코어 시스템  
+## <a name="core-systems"></a>핵심 시스템  
   
 |상수|GUID|  
 |--------------|----------|  
@@ -36,16 +36,16 @@ ms.locfileid: "68203983"
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|  
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|  
   
-## <a name="broadly-visible-components"></a>광범위 하 게 표시 구성 요소  
+## <a name="broadly-visible-components"></a>광범위 하 게 표시 되는 구성 요소  
   
 |상수|GUID|  
 |--------------|----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|  
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|  
-|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|  
-|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|  
+|VisualStudio. SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|  
+|VisualStudio. SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|  
   
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>파일, 가상 및 실제 폴더 및 하위 프로젝트  
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>파일, 가상 및 물리적 폴더와 하위 프로젝트  
   
 |상수|GUID|  
 |--------------|----------|  
@@ -79,14 +79,14 @@ ms.locfileid: "68203983"
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.GeneralPane_guid>|3C24D581-5591-4884-A571-9FE89915CD64|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.SortedBuildOutputPane_guid>|2032B126-7C8D-48AD-8026-0E0348004FC0|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
-|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|  
+|VisualStudio. SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|  
   
 ## <a name="command-sets-and-properties"></a>명령 집합 및 속성  
   
 |상수|GUID|  
 |--------------|----------|  
-|Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|  
-|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds|60481700-078b-11d1-aaf8-00a0c9055a90|  
+|VisualStudio. GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|  
+|VisualStudio. GUID_VsUIHierarchyWindowCmds|60481700-078b-11d1-aaf8-00a0c9055a90|  
   
 ## <a name="iunknown"></a>IUnknown  
   
@@ -94,7 +94,7 @@ ms.locfileid: "68203983"
 |--------------|----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|  
   
-## <a name="task-list-guids"></a>작업 목록의 Guid입니다.  
+## <a name="task-list-guids"></a>Guid 작업 목록  
   
 |상수|GUID|  
 |--------------|----------|  
@@ -114,9 +114,9 @@ ms.locfileid: "68203983"
   
 |상수|GUID|  
 |---------------|----------|  
-|Microsoft.VisualStudio.VSConstants.GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F990235|  
-|Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|  
-|Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|  
+|VisualStudio. GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F990235|  
+|VisualStudio. GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|  
+|VisualStudio. GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|  
   
 ## <a name="miscellaneous-shell-guids"></a>기타 셸 Guid  
   
@@ -124,9 +124,9 @@ ms.locfileid: "68203983"
 |---------------|----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|  
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|  
-|Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|  
+|VisualStudio. SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [관리 코드의 COM 상수](../extensibility/com-constants-in-managed-code.md)   
  [IDE 상수](../extensibility/ide-constants.md)   
  [프로젝트 시스템 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

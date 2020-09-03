@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905950"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 기능 추가
@@ -51,7 +51,7 @@ ms.locfileid: "85905950"
         > [!NOTE]
         > 에 `QueryService` 대 한 포인터를 가져오려면를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> `IVsFileChangeEx` 합니다.
 
-7. 소스 코드 제어를 사용 하 여 문서 편집 이벤트를 조정 합니다. 다음 단계를 수행하세요.
+7. 소스 코드 제어를 사용 하 여 문서 편집 이벤트를 조정 합니다. 다음 단계를 수행합니다.
 
     1. 에서를 호출 하 여에 대 한 포인터를 가져옵니다 `IVsQueryEditQuerySave2` `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -63,13 +63,13 @@ ms.locfileid: "85905950"
 
          이 메서드는 파일이 저장 되지 않았거나 마지막으로 저장 한 이후 변경 된 경우 파일을 저장 하 라는 메시지를 표시 합니다.
 
-8. 편집기에서 선택한 텍스트에 대 한 속성을 표시 하려면 **속성** 창을 사용 하도록 설정 합니다. 다음 단계를 수행하세요.
+8. 편집기에서 선택한 텍스트에 대 한 속성을 표시 하려면 **속성** 창을 사용 하도록 설정 합니다. 다음 단계를 수행합니다.
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>텍스트 선택이 변경 될 때마다를 호출 하 여의 구현에 전달 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 합니다.
 
     2. `QueryService`서비스에서 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 를 호출 하 여에 대 한 포인터를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. 사용자가 편집기와 **도구 상자**사이에서 또는 외부 편집기 (예: Microsoft Word)와 **도구 상자**사이에서 항목을 끌어서 놓을 수 있도록 합니다. 다음 단계를 수행하세요.
+9. 사용자가 편집기와 **도구 상자**사이에서 또는 외부 편집기 (예: Microsoft Word)와 **도구 상자**사이에서 항목을 끌어서 놓을 수 있도록 합니다. 다음 단계를 수행합니다.
 
     1. 편집기 `IDropTarget` 에서를 구현 하 여 편집기가 놓기 대상 임을 IDE에 알립니다.
 
@@ -142,7 +142,7 @@ ms.locfileid: "85905950"
 
 - UI에서 메뉴 명령을 crowding 하지 않으려면 새 명령을 고안 전에 IDE에서 기존 명령을 사용 해야 합니다. 공유 명령은 *Sharedcmddef. vsct* 및 *shellcmddef vsct*에 정의 되어 있습니다. 이러한 파일은 기본적으로 설치의 VisualStudioIntegration\Common\Inc 하위 디렉터리에 설치 됩니다 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] .
 
-- `ISelectionContainer`단일 및 다중 선택을 나타낼 수 있습니다. 선택한 각 개체는 개체로 구현 됩니다 `IDispatch` .
+- `ISelectionContainer` 단일 및 다중 선택을 나타낼 수 있습니다. 선택한 각 개체는 개체로 구현 됩니다 `IDispatch` .
 
 - IDE는 `IOleUndoManager` <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> 또는에서 인스턴스화할 수 있는 개체로 액세스할 수 있는 서비스로을 구현 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . 편집기는 `IOleUndoUnit` 각 작업에 대 한 인터페이스를 구현 `Undo` 합니다.
 
@@ -152,6 +152,6 @@ ms.locfileid: "85905950"
 
   - `Window.Object`
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [자동화 모델에 기여](../extensibility/internals/contributing-to-the-automation-model.md)

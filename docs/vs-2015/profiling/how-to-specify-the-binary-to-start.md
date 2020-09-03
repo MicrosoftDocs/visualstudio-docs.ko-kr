@@ -1,5 +1,5 @@
 ---
-title: '방법: 시작할 이진 파일 지정 | Microsoft Docs'
+title: '방법: 시작할 이진 파일 지정 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203436"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>방법: 시작할 이진 파일 지정
@@ -41,7 +41,7 @@ DLL 같은 이진 파일을 프로파일링하려면 **\<Target> 속성 페이�
   
 4. **시작할 실행 파일** 텍스트 상자에 파일 위치를 지정합니다.  
   
-5. **인수** 텍스트 상자에 응용 프로그램 시작에 필요한 인수를 지정합니다.  
+5. **인수** 텍스트 상자에 애플리케이션 시작에 필요한 인수를 지정합니다.  
   
 6. **작업 디렉터리** 텍스트 상자에 디렉터리 위치를 지정합니다.  
   

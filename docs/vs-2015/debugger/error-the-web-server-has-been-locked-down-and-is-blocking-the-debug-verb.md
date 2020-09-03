@@ -1,5 +1,5 @@
 ---
-title: '오류: 웹 서버가 잠겨 있기 DEBUG 동사를 차단 하 고 | Microsoft Docs'
+title: '오류: 웹 서버가 잠겨 있어 DEBUG 동사를 차단함 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203214"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>오류: 웹 서버가 잠겨 있어 DEBUG 동사를 차단함
@@ -52,6 +52,6 @@ IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있
   
 7. 서버를 다시 시작하거나 IIS를 다시 시작합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [오류: 요청한 리소스를 웹 서버에서 찾지 못했습니다.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+## <a name="see-also"></a>관련 항목  
+ [웹 응용 프로그램 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ ‘오류:[ 요청한 리소스를 웹 서버에서 찾지 못했습니다.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

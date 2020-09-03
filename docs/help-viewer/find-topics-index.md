@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284960"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>도움말 뷰어 인덱스를 사용하여 항목 찾기
@@ -77,7 +77,7 @@ ms.locfileid: "85284960"
 
     예를 들어 “빌드”라는 용어를 입력한 경우 대신 “만들기”를 입력해 보세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: TOC에서 항목 찾기](../help-viewer/find-topics-toc.md)
 - [방법: 항목 검색](../help-viewer/find-topics.md)

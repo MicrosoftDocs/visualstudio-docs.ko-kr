@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Microsoft Docs
+title: 'IDebugObject:: SetValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d898852c6bcca42cb0df1e7fab1597df74427a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203269"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
@@ -42,17 +42,17 @@ int SetValue(
   
 #### <a name="parameters"></a>매개 변수  
  `pValue`  
- [in] 새 값을 나타내는 바이트 배열입니다.  
+ 진행 새 값을 나타내는 바이트 배열입니다.  
   
  `nSize`  
- [in] 크기 (바이트)에서 값입니다.  
+ 진행 값의 크기 (바이트)입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 배열의 값이 복사 됩니다 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체를 기존 값을 대체 합니다. 새 값의 크기는 기존 값 보다 작거나 클 수 있습니다. 이 `IDebugObject` null 참조일 수 없습니다.  
+ 배열의 값은이 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체로 복사 되어 기존 값을 대체 합니다. 새 값의 크기는 기존 값 보다 크거나 작을 수 있습니다. 이 `IDebugObject` 는 null 참조일 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

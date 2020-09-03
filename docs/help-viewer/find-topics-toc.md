@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284934"
 ---
 # 방법: 목차에서 항목 찾기
@@ -31,7 +31,7 @@ ms.locfileid: "85284934"
 
 ## 목차 필터링
 
-목차를 필터링 하 여 **콘텐츠** 탭에 나타나는 항목의 범위를 좁힐 수 있습니다. 제목은 지정 된 용어의 루트를 포함 하는 경우에만 목록에 표시 됩니다. 예를 들어 필터로 "문제 해결하기"를 지정하는 경우 "문제 해결" 또는 “문제 해결하기"가 포함된 제목만 나타납니다. 제목에 해당 어구가 포함되지 않은 노드는 줄임표(**...**)가 있는 단일 노드로 축소됩니다.
+목차를 필터링 하 여 **콘텐츠** 탭에 나타나는 항목의 범위를 좁힐 수 있습니다. 지정 된 용어의 루트를 포함 하는 경우에만 목록에 제목이 표시 됩니다. 예를 들어 필터로 "문제 해결하기"를 지정하는 경우 "문제 해결" 또는 “문제 해결하기"가 포함된 제목만 나타납니다. 제목에 해당 어구가 포함되지 않은 노드는 줄임표(**...**)가 있는 단일 노드로 축소됩니다.
 
 1. **콘텐츠** 탭을 선택합니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "85284934"
 
      **콘텐츠** 탭이 열리고 목차에서 항목의 위치가 표시됩니다.
 
-## 참조
+## 추가 정보
 
 - [방법: 인덱스에서 항목 찾기](../help-viewer/find-topics-index.md)
 - [방법: 항목 검색](../help-viewer/find-topics.md)

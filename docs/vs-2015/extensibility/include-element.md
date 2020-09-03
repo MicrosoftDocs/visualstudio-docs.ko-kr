@@ -1,5 +1,5 @@
 ---
-title: 요소를 포함 합니다. | Microsoft Docs
+title: Include 요소 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1bdc56c9d0b488bdbe24a8534ab516cc0fc831df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203940"
 ---
 # <a name="include-element"></a>Include 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-찾을 수 있는 파일을 지정 하는 Include 요소에 제공 된 현재 파일에 삽입에 대 한 경로 포함 합니다.  모든 기호 및 형식 정의 컴파일된 결과 포함 됩니다.  
+Include 요소는 현재 파일에 삽입 하기 위해 제공 된 포함 경로에 있을 수 있는 파일을 지정 합니다.  정의 된 모든 기호 및 형식은 컴파일된 결과의 일부가 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,22 +36,22 @@ ms.locfileid: "68203940"
   
 ### <a name="attributes"></a>특성  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
-|href|필수 요소. 헤더 파일에 대 한 경로:<br /><br /> href="stdidcmd.h"|  
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|href|필수 요소. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|  
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |없음|없음|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 요소를 모두 정의-메뉴 항목, 메뉴, 도구 모음 및 콤보 상자,-VSPackage IDE를 제공 하는 합니다.|  
+|[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage IDE에 제공 하는 명령, 즉 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자를 나타내는 모든 요소를 정의 합니다.|  
   
 ## <a name="example"></a>예제  
   

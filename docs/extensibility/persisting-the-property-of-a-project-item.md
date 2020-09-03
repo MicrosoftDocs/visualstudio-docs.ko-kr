@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906193"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>프로젝트 항목의 속성 유지
@@ -132,6 +132,6 @@ ms.locfileid: "85906193"
    </Compile>
    ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [사용자 지정 도구](../extensibility/internals/custom-tools.md)

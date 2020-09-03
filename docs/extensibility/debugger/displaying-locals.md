@@ -1,5 +1,5 @@
 ---
-title: 지역 주민 표시 | 마이크로 소프트 문서
+title: 지역 표시 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738936"
 ---
-# <a name="display-locals"></a>지역 주민 표시
+# <a name="display-locals"></a>표시 지역
 > [!IMPORTANT]
-> Visual Studio 2015에서는 식 계산기 구현 방식이 더 이상 사용되지 않습니다. CLR 식 계산기 구현에 대한 자세한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리식 계산기 샘플을](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)참조하십시오.
+> Visual Studio 2015에서 식 계산기를 구현 하는 방법은 더 이상 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 자세한 내용은 [clr 식](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 계산기 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조 하세요.
 
- 실행은 항상 포함 메서드 또는 현재 메서드라고도 하는 메서드의 컨텍스트 내에서 수행됩니다. 실행이 일시 중지되면 Visual Studio는 DE(디버그 엔진)를 호출하여 메서드의 지역 변수 및 인수 목록을 가져옵니다. Visual Studio는 이러한 지역 주민과 해당 값을 **지역 주민** 창에 표시합니다.
+ 실행은 항상 메서드 컨텍스트 내에서 수행 됩니다 .이 메서드는 포함 하는 메서드나 현재 메서드가 라고도 합니다. 실행이 일시 중지 되 면 Visual Studio는 디버그 엔진 (DE)을 호출 하 여 메서드의 지역 이라는 지역 변수 및 인수 목록을 가져옵니다. Visual Studio는 **지역** 창에 이러한 지역 및 해당 값을 표시 합니다.
 
- 지역 을 표시 하기 위해 DE EE에 속하는 [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) 메서드를 호출 하 고 평가 컨텍스트, 즉, 기호 공급자 (SP), 현재 실행 주소 및 바인더 개체를 제공 합니다. 자세한 내용은 [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)를 참조하십시오. 호출이 성공하면 `IDebugExpressionEvaluator::GetMethodProperty` 메서드는 현재 실행 주소를 포함하는 메서드를 나타내는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환합니다.
+ 로컬을 표시 하기 위해 DE는 EE에 속하는 [Getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) 메서드를 호출 하 고이를 평가 컨텍스트, 즉 SP (기호 공급자), 현재 실행 주소 및 바인더 개체를 제공 합니다. 자세한 내용은 [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)를 참조 하세요. 호출에 성공 하면이 `IDebugExpressionEvaluator::GetMethodProperty` 메서드는 현재 실행 주소를 포함 하는 메서드를 나타내는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
- DE는 [EnumChildren를](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 호출하여 지역 주민만 반환하도록 필터링되고 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 구조 목록을 생성하도록 열거된 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 가져옵니다. 각 구조에는 로컬의 이름, 형식 및 값이 포함됩니다. 형식과 값은 형식이 지정된 문자열로 저장되어 표시에 적합합니다. 이름, 유형 및 값은 일반적으로 **지역구** 창의 한 줄에 함께 표시됩니다.
+ DE는 [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 을 호출 하 여 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 가져옵니다 .이 개체는 지역만 반환 하 고 열거 하 여 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 구조체 목록을 생성 하도록 필터링 됩니다. 각 구조체에는 로컬의 이름, 형식 및 값이 포함 됩니다. 형식 및 값은 표시 하기에 적합 한 형식이 지정 된 문자열로 저장 됩니다. 일반적으로 이름, 형식 및 값은 **지역** 창의 한 줄에 함께 표시 됩니다.
 
 > [!NOTE]
-> **QuickWatch** 및 **Watch** 창에는 이름, 값 및 유형이 동일한 변수도 표시됩니다. 그러나 이러한 값은 `IDebugProperty2::EnumChildren`대신 [GetPropertyInfo를](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 호출하여 가져옵니다.
+> **간략** 한 조사식 창과 **조사식** 창에는 이름, 값 및 형식 같은 형식의 변수도 표시 됩니다. 그러나 이러한 값은 대신 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 를 호출 하 여 가져옵니다 `IDebugProperty2::EnumChildren` .
 
 ## <a name="in-this-section"></a>섹션 내용
- [지역 주민의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md) 예제를 사용하여 지역 주민을 구현하는 프로세스를 단계별로 실행합니다.
+ [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md) 예제를 사용 하 여 지역 구현 과정을 단계별로 실행 합니다.
 
 ## <a name="related-sections"></a>관련 단원
- [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md) DEBug 엔진(DE)이 식 계산기(EE)를 호출할 때 세 개의 인수를 전달한다고 설명합니다.
+ [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md) 디버그 엔진 (DE)이 식 계산기 (EE)를 호출할 때 세 개의 인수를 전달 하는 방법을 설명 합니다.
 
 ## <a name="see-also"></a>참조
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284947"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft 도움말 뷰어 설치
@@ -43,7 +43,7 @@ Microsoft 도움말 뷰어를 쉽게 설치하는 다른 방법은 검색 상자
 
    ![설치 단추](media/installation/install.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)
 - [SQL Server에 대 한 도움말 뷰어 및 오프 라인 콘텐츠](/sql/sql-server/sql-server-help-installation)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906151"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows Installer 배포를 위한 확장 준비
@@ -54,6 +54,6 @@ Windows Installer 패키지 (MSI)를 사용 하 여 VSIX 패키지를 배포할 
 
 5. 나머지 파일을 설치 프로젝트에 추가 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Visual Studio 설치 관리자 배포](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
 - [연습: 사용자 지정 작업 만들기](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

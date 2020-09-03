@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 070106dc4db0f5200c1346bbbf8c0b653aa104e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619672"
 ---
 # <a name="codeindex-command"></a>CodeIndex 명령
@@ -40,7 +40,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 #### <a name="parameters"></a>매개 변수
 
-|**인수**|**설명**|
+|**Argument**|**설명**|
 |------------------|---------------------|
 |`CollectionName`|팀 프로젝트 컬렉션의 이름을 지정합니다. 이름에 공백이 있으면 "Fabrikam 웹 사이트"와 같이 이름을 큰따옴표로 묶습니다.|
 |`CollectionId`|팀 프로젝트 컬렉션의 ID 번호를 지정합니다.|
@@ -62,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>예
 
 > [!NOTE]
-> 용례에 사용된 회사, 기관, 제품, 도메인 이름, 메일 주소, 로고, 사람, 장소 및 이벤트는 실제 데이터가 아닙니다.  어떠한 실제 회사, 기관, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 또는 이벤트와도 연관시킬 의도가 없으며 그렇게 유추해서도 안 됩니다.
+> 용례에 사용된 회사, 조직, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 및 이벤트는 실제 데이터가 아닙니다.  어떠한 실제 회사, 기관, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 또는 이벤트와도 연관시킬 의도가 없으며 그렇게 유추해서도 안 됩니다.
 
  코드 인덱싱 상태 및 구성을 보려면
 
@@ -124,5 +124,5 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [TFS 용](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c) TFSConfig 명령줄 도구 [를 사용 하 여 서버 구성 관리](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916793"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
@@ -26,11 +26,11 @@ DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 �
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL 디자이너 확장 솔루션을 만들려면
 
-1. 클래스 라이브러리 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **시각적 C# 개체** 를 클릭 한 다음 가운데 창에서 **클래스 라이브러리**를 클릭 합니다.
+1. 클래스 라이브러리 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **Visual c #** 을 클릭 한 다음 가운데 창에서 **클래스 라이브러리**를 클릭 합니다.
 
      이 프로젝트에는 확장의 코드가 포함 됩니다.
 
-2. VSIX 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **시각적 개체 C#** 를 확장 하 고 **확장성**을 클릭 한 다음 가운데 창에서 **VSIX 프로젝트**를 선택 합니다.
+2. VSIX 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **Visual c #** 을 확장 하 고 **확장성**을 클릭 한 다음 가운데 창에서 **VSIX 프로젝트**를 선택 합니다.
 
      **솔루션에 추가를**선택 합니다.
 
@@ -46,13 +46,13 @@ DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 �
 
 7. 클래스 라이브러리 프로젝트에서 다음 어셈블리에 대 한 참조를 추가 합니다.
 
-     Microsoft.VisualStudio.CoreUtility
+     VisualStudio. CoreUtility
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     VisualStudio입니다.
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     VisualStudio (영문).
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     VisualStudio. d a d.
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -67,24 +67,24 @@ DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 �
 ## <a name="testing-and-deployment"></a>테스트 및 배포
  이 항목의 확장을 테스트 하려면 솔루션을 빌드하고 실행 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 열립니다. 이 인스턴스에서 DSL 솔루션을 엽니다. DslDefinition 다이어그램을 편집 합니다. 확장 동작을 볼 수 있습니다.
 
- 기본 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]및 다른 컴퓨터에 확장을 배포 하려면 다음 단계를 수행 합니다.
+ 기본 및 다른 컴퓨터에 확장을 배포 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 다음 단계를 수행 합니다.
 
-1. Bin의 VSIX 프로젝트에 VSIX 설치 파일을 찾거나\\*\*\\\*.vsix
+1. Vsix 프로젝트의 bin에서 vsix 설치 파일을 찾습니다 \\ * \\ \* .
 
 2. 이 파일을 대상 컴퓨터에 복사한 다음 Windows 탐색기 (또는 파일 탐색기)에서 해당 파일을 두 번 클릭 합니다.
 
-    확장 프로그램이 설치 되어 있는지 확인 하기 위해 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 관리자가 열립니다.
+    확장 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 관리자가 열리고 확장이 설치 되었는지 확인 합니다.
 
    확장을 제거 하려면 다음 단계를 수행 합니다.
 
-3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 **도구** 메뉴에서 **확장 관리자**를 클릭 합니다.
+3. 의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구** 메뉴에서 **확장 관리자**를 클릭 합니다.
 
 4. 확장을 선택 하 고 삭제 합니다.
 
 ## <a name="adding-a-shortcut-menu-command"></a>바로 가기 메뉴 명령 추가
  바로 가기 메뉴 명령이 DSL 디자이너 화면 또는 DSL 탐색기 창에 표시 되도록 하려면 다음과 유사한 클래스를 작성 합니다.
 
- 클래스는 `ICommandExtension`를 구현 해야 하며 `DslDefinitionModelCommandExtension`특성이 있어야 합니다.
+ 클래스는를 구현 해야 `ICommandExtension` 하며 특성을 포함 해야 합니다 `DslDefinitionModelCommandExtension` .
 
 ```
 using System.Collections.Generic;

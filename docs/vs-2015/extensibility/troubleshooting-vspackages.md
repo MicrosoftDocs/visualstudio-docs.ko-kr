@@ -12,10 +12,10 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557978"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
@@ -25,11 +25,11 @@ ms.locfileid: "77557978"
   
 ### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Visual Studio가 시작 되지 않도록 하는 VSPackage 문제를 해결 하려면  
   
-- 안전 모드에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 시작 합니다.  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]안전 모드에서 시작 합니다.  
   
-     안전 모드에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 시작 하려면 명령 프롬프트에서 **devenv.exe/안전**모드를 입력 합니다.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]안전 모드에서 시작 하려면 명령 프롬프트에서 **devenv.exe/안전**모드를 입력 합니다.  
   
-     이 프로세스 동안 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 포함 된 Vspackage를 제외 하 고 Vspackage가 로드 되지 않습니다.  
+     이 프로세스 중에에 포함 된 Vspackage를 제외 하 고 Vspackage가 로드 되지 않습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>로드 되지 않는 VSPackage 문제를 해결 하려면  
   
@@ -37,7 +37,7 @@ ms.locfileid: "77557978"
   
      자세한 내용은 [실험적 인스턴스](../extensibility/the-experimental-instance.md)를 참조 하세요.  
   
-2. VSPackage이 실험적 레지스트리 루트에서 실행 되도록 지정 된 경우 실험 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 실행 하 고 있는지 확인 합니다.  
+2. VSPackage이 실험적 레지스트리 루트에서 실행 되도록 지정 된 경우 실험적 버전의를 실행 하 고 있는지 확인 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      실험적 버전을 실행 하려면 명령 창에서 **devenv/rootsuffix exp**를 입력 합니다.  
   
@@ -45,10 +45,10 @@ ms.locfileid: "77557978"
   
      자세한 내용은 [Vspackage 등록](internals/registering-vspackages.md) 및 [vspackage 관리](../extensibility/managing-vspackages.md)를 참조 하세요.  
   
-4. VSPackage를 로드 하지 못한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 인스턴스의 **출력** 창을 엽니다. VSPackage를 로드 하지 못하는 이유에 대 한 정보는 해당 창에 표시 될 수 있습니다.  
+4. VSPackage를 로드 하지 못한 인스턴스의 **출력** 창을 엽니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . VSPackage를 로드 하지 못하는 이유에 대 한 정보는 해당 창에 표시 될 수 있습니다.  
   
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE (통합 개발 환경)에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험 버전을 시작 하는 경우 두 버전의 **출력** 창을 검사 합니다.  
+    > IDE (통합 개발 환경)에서 실험적 버전의를 시작 하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 두 버전의 **출력** 창을 검사 합니다.  
   
 5. 활동 로그를 검사 합니다.  
   
@@ -62,13 +62,13 @@ ms.locfileid: "77557978"
   
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>표시 되지 않거나 명령을 클릭할 때 오류를 생성 하는 명령 문제를 해결 하려면  
   
-1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령 프롬프트에서 다음을 입력 하 여 새 또는 변경 된 메뉴 명령과 IDE에 이미 있는 메뉴 명령을 병합 합니다. **devenv/rootsuffix Exp/setup**.  
+1. 명령 프롬프트에서 다음을 입력 하 여 새로운 또는 변경 된 메뉴 명령과 IDE에 이미 있는 메뉴 명령을 병합 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다. **devenv/rootsuffix Exp/setup**.  
   
-2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 VSPackage에 대 한 UI .dll을 찾을 수 있는지 확인 합니다.  
+2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 VSPackage에 대 한 UI.dll를 찾을 수 있는지 확인 합니다.  
   
     1. 레지스트리의 패키지 섹션에서 VSPackage의 CLSID를 찾습니다.  
   
-         HKLM\Software\Microsoft\Visual Studio\\ *\<버전 >* \packages  
+         HKLM\Software\Microsoft\Visual Studio \\ *\<version>* \packages  
   
     2. SatelliteDll 하위 키에 지정 된 경로가 올바른지 확인 합니다.  
   
@@ -115,13 +115,13 @@ ms.locfileid: "77557978"
   
    2. **속성 페이지** 대화 상자에서 **참조** 탭을 선택 하 고 모든 경로가 올바른지 확인 합니다. 또는 **개체 브라우저** 를 사용 하 여 참조 된 개체를 찾을 수 있습니다.  
   
-        관리 코드의 경우 [fuslogvw.exe (어셈블리 바인딩 로그 뷰어)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) 를 사용 하 여 실패 한 어셈블리 로드에 대 한 세부 정보를 표시할 수 있습니다.  
+        관리 코드의 경우 [Fuslogvw.exe (어셈블리 바인딩 로그 뷰어)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) 를 사용 하 여 실패 한 어셈블리 로드에 대 한 세부 정보를 표시할 수 있습니다.  
   
-2. 비관리 코드의 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 레지스트리 노드에서 VSPackage의 CLSID를 찾습니다.  
+2. 비관리 코드의 경우 clsid 레지스트리 노드에서 VSPackage의 CLSID를 찾습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-    HKLM\Software\Microsoft\Visual Studio\\ *\<버전 >* \clsid  
+    HKLM\Software\Microsoft\Visual Studio \\ *\<version>* \clsid  
   
    InprocServer32 항목에 VSPackage dll의 올바른 경로가 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>관련 항목  
+ [VSPackages](../extensibility/internals/vspackages.md)

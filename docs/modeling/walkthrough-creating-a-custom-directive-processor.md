@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532238"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
@@ -654,7 +654,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      레지스트리 키의 값은 다음과 같습니다.
 
-   | Name | Type | 데이터 |
+   | Name | 형식 | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
    | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -662,7 +662,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      GAC에 어셈블리를 배치한 경우 값은 다음과 같습니다.
 
-   | Name | Type | 데이터 |
+   | Name | 형식 | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
    | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |

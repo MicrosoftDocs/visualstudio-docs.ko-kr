@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 06/17/2019
 ms.topic: how-to
 ms.openlocfilehash: 5f21d55568328a9aeb9b7982e5978500f7ef715b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939053"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 Docker 시작

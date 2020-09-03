@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586724"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML 모델 및 다이어그램 확장
@@ -38,7 +38,7 @@ ms.locfileid: "82586724"
 
 - [Visual Studio 2015용 SDK 모델링](https://www.microsoft.com/download/details.aspx?id=48148).
 
-## <a name="profiles"></a>프로필
+## <a name="profiles"></a>Profiles
  프로필을 통해 UML 요소에 대한 스테레오타입 및 추가 속성을 정의할 수 있습니다.
 
  Fabrikam의 도구 개발자는 동작 다이어그램의 개체 노드에서 스테레오타입을 정의합니다(예: «conveyor belt» 및 «checkin desk»). 팀 멤버가 동작 다이어그램을 사용하여 수하물 처리 체계를 만들 때 도구 개발자는 스테레오타입을 설정하여 각 노드가 나타내는 장비 형식을 지정할 수 있습니다. 도구 개발자가 일부 스테레오타입에 대한 추가 속성을 정의하므로 사용자는 컨베이어 벨트 용량 및 체크인 데스크 손잡이(handedness)과 같은 값을 기록할 수 있습니다.
@@ -111,12 +111,12 @@ ms.locfileid: "82586724"
 
 ## <a name="external-resources"></a>외부 리소스
 
-|**범주**|**링크**|
+|**범주**|**연결**|
 |------------------|---------------|
 |**비디오**|![비디오에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [MSDN How Do DO 시리즈: UML 도구 및 확장성](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [: Visual Studio를 사용 하는 UML](https://channel9.msdn.com/posts/clinted/)|
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**블로그**|[Visual Studio ALM + Team Foundation Server 블로그](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [UML 모델링 확장성에 대 한 앱 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md) [에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)

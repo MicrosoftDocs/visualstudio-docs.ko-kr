@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02d51c5799391863262d285e1cda209a3b7938d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300854"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>XAML 디자이너 에서 컨트롤을 삽입하고 해당 동작을 수정
@@ -27,14 +27,14 @@ ms.locfileid: "74300854"
 
 - [작업을 수행하는 컨트롤 만들기](#Modify)
 
-## <a name="Insert"></a> 아트보드에 컨트롤 추가
+## <a name="add-controls-to-the-artboard"></a><a name="Insert"></a> 아트 보드에 컨트롤 추가
  컨트롤을 **자산** 패널에서 **아트보드**로 끌어와 **속성** 창에서 수정할 수 있습니다.
 
  ![Blend &#45; 자산 &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
 
  이러한 비디오는 보다 일반적인 컨트롤 몇 가지를 사용하는 방법을 보여 줍니다.
 
-|Control|짧은 비디오 보기|
+|제어|짧은 비디오 시청|
 |-------------|-------------------------|
 |`Menu` ![](../designers/media/015a263c-0b2b-4253-ac57-b86fcb8c9591.png "015a263c-0b2b-4253-ac57-b86fcb8c9591")|![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [컨트롤 추가](https://www.youtube.com/watch?v=ra4AHfgD4Ys&list=PLBDF977B2F1DAB358&index=45)|
 |`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png "05df1779-a68f-436b-b834-a91b7995a3ec")|![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [단추 디자인](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|
@@ -45,7 +45,7 @@ ms.locfileid: "74300854"
 ### <a name="make-a-control-out-of-an-image-shape-or-path"></a>이미지, 도형 또는 패스를 컨트롤로 만들기
  모든 개체를 컨트롤로 만들 수 있습니다.
 
- ![Blend에서 컨트롤로 만들기 대화 상자](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
+ ![Blend - 컨트롤로 만들기 대화 상자](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
 
  예를 들어, 페이지의 가운데에 텔레비전 그림이 있다고 가정해 보세요. 텔레비전 단추처럼 보이는 작은 이미지를 컨트롤로 만들 수 있습니다. 그런 다음 사용자가 이 단추를 클릭하여 채널을 변경할 수 있습니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "74300854"
 
  컨트롤을 만들려면 개체를 선택합니다. 그런 다음 **도구** 메뉴에서 **컨트롤 만들기**를 클릭합니다.
 
-## <a name="Modify"></a> 작업을 수행하는 컨트롤 만들기
+## <a name="make-controls-do-things"></a><a name="Modify"></a> 작업을 수행 하는 컨트롤 만들기
  컨트롤은 사용자가 상호 작용하는 경우 작업을 수행할 수 있습니다. 예를 들어 컨트롤은 애니메이션 효과를 적용하고 데이터 소스를 업데이트하거나 비디오를 재생할 수 있습니다.
 
  *트리거*, *동작*및 *이벤트* 를 사용하여 컨트롤이 작업을 수행하도록 합니다.

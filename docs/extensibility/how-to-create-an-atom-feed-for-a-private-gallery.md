@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905851"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>방법: 전용 갤러리에 대 한 Atom 피드 만들기
@@ -72,5 +72,5 @@ ms.locfileid: "85905851"
 
  두 링크 태그는 생성 된 이미지 폴더의 스크린 샷을 나타냅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [전용 갤러리](../extensibility/private-galleries.md)

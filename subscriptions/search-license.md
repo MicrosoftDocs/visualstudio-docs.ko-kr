@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: 관리자가 관리 포털에서 개별 구독자 또는 그룹을 찾는 방법을 설명합니다.
 ms.openlocfilehash: c7ef5cd61a689be1757793b223ebc1a9295bf8bd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906166"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 구독자 검색 및 필터링

@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS | 마이크로 소프트 문서
+title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737759"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
-중단점의 실패한 해결에 대해 검색할 정보를 지정합니다.
+실패 한 중단점 해결에 대 한 정보를 검색할 정보를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPERESI_FIELDS {
@@ -52,36 +52,36 @@ public enum enum_BPERESI_FIELDS {
 
 ## <a name="fields"></a>필드
 `PERESI_BPRESLOCATION`\
-`bpResLocation` [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조의 (중단점 확인 위치) 필드를 초기화/사용합니다.
+`bpResLocation` [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조체의 (중단점 확인 위치) 필드를 초기화/사용 합니다.
 
 `BPERESI_PROGRAM`\
-`BP_ERROR_RESOLUTION_INFO` 구조의 `pProgram` 필드를 초기화/사용합니다.
+`pProgram`구조체의 필드를 초기화/사용 `BP_ERROR_RESOLUTION_INFO` 합니다.
 
 `BPERESI_THREAD`\
-`BP_ERROR_RESOLUTION_INFO` 구조의 `pThread` 필드를 초기화/사용합니다.
+`pThread`구조체의 필드를 초기화/사용 `BP_ERROR_RESOLUTION_INFO` 합니다.
 
 `BPERESI_MESSAGE`\
-`BP_ERROR_RESOLUTION_INFO` 구조의 `bstrMessage` 필드를 초기화/사용합니다.
+`bstrMessage`구조체의 필드를 초기화/사용 `BP_ERROR_RESOLUTION_INFO` 합니다.
 
 `BPERESI_TYPE`\
-`BP_ERROR_RESOLUTION_INFO` 구조체의 `dwType` (중단점 유형) 필드를 초기화/사용합니다.
+`dwType`구조체의 (중단점 형식) 필드를 초기화/사용 `BP_ERROR_RESOLUTION_INFO` 합니다.
 
 `BPERESI_ALLFIELDS`\
-`BP_ERROR_RESOLUTION_INFO` 구조체의 모든 필드를 초기화/사용합니다.
+구조체의 모든 필드를 초기화/사용 `BP_ERROR_RESOLUTION_INFO` 합니다.
 
 ## <a name="remarks"></a>설명
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) 메서드에 매개 변수로 전달되어 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조의 필드를 초기화할 필드를 나타냅니다.
+초기화할 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조체의 필드를 나타내기 위해 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) 메서드에 매개 변수로 전달 됩니다.
 
-이러한 값은 `BP_ERROR_RESOLUTION_INFO` 구조의 어떤 필드가 사용되고 해당 구조가 반환될 때 유효한지 나타내는 데도 사용됩니다.
+이러한 값은 구조체에서 사용 되는 필드 `BP_ERROR_RESOLUTION_INFO` 및 해당 구조가 반환 될 때 유효한 필드를 표시 하는 데도 사용 됩니다.
 
-이러한 값은 약간 과 `OR`결합될 수 있습니다.
+이러한 값은 비트와 함께 사용할 수 있습니다 `OR` .
 
 ## <a name="requirements"></a>요구 사항
-헤더: msdbg.h
+헤더: msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

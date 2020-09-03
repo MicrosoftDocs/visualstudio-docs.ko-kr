@@ -7,10 +7,10 @@ ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
 ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939107"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>프로젝트와 솔루션 빌드 및 정리
@@ -56,6 +56,6 @@ ms.locfileid: "85939107"
 
 * **Cmd+Shift+Return**을 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트와 솔루션 빌드 및 정리(Windows의 Visual Studio)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

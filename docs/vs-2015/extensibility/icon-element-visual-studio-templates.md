@@ -13,20 +13,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203999"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-경로 중에 나타나는 아이콘으로 사용 되는 이미지 파일의 파일 이름을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 템플릿에 대 한 대화 상자.  
+템플릿에 대 한 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 아이콘 역할을 하는 이미지 파일의 경로와 파일 이름을 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<아이콘 >  
+ \<Icon>  
   
 ## <a name="syntax"></a>구문  
   
@@ -55,20 +55,20 @@ ms.locfileid: "68203999"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  `Package` 및 `ID` 특성이 사용되는 경우가 아니면 텍스트 값은 필수입니다.  
   
- 텍스트에 표시 되는 템플릿 아이콘의 경로 및 파일 이름을 제공 합니다 **새 프로젝트** 대화 상자.  
+ 텍스트는 **새 프로젝트** 대화 상자에 표시 되는 템플릿 아이콘의 경로 및 파일 이름을 제공 합니다.  
   
 ## <a name="remarks"></a>설명  
  `Icon`은 `TemplateData`의 필수 자식 요소입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 응용 프로그램입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] .  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

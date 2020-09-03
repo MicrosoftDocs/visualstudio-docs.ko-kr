@@ -15,10 +15,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852222"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
@@ -52,16 +52,16 @@ ms.locfileid: "75852222"
   
 1. 패키지에 대 한. vsct 파일을 엽니다.  
   
-2. 아직 없는 경우 `<Commands>` 뒤에 빈 `<KeyBindings>` 섹션을 만듭니다.  
+2. `<KeyBindings>`가 아직 없는 경우에는 빈 섹션을 만듭니다 `<Commands>` .  
   
    > [!WARNING]
    > 키 바인딩에 대 한 자세한 내용은 [Keybinding](../extensibility/keybinding-element.md)를 참조 하세요.  
   
-    `<KeyBindings>` 섹션에서 `<KeyBinding>` 항목을 만듭니다.  
+    섹션에서 `<KeyBindings>` 항목을 만듭니다 `<KeyBinding>` .  
   
-    `guid` 및 `id` 특성을 호출 하려는 명령의 특성으로 설정 합니다.  
+    `guid`및 특성을 `id` 호출 하려는 명령의 명령으로 설정 합니다.  
   
-    `mod1` 특성을 **Control**, **Alt**또는 **Shift**로 설정 합니다.  
+    특성을 `mod1` **Control**, **Alt**또는 **Shift**로 설정 합니다.  
   
     KeyBindings 섹션은 다음과 같습니다.  
   
@@ -73,18 +73,18 @@ ms.locfileid: "75852222"
   
    ```  
   
-   바로 가기 키에 세 개 이상의 키가 필요한 경우 `mod2` 및 `key2` 특성을 설정 합니다.  
+   바로 가기 키에 세 개 이상의 키가 필요한 경우 `mod2` 및 특성을 설정 `key2` 합니다.  
   
    대부분의 경우 두 번째 한정자 없이 **shift** 를 사용 하면 안 됩니다 .이 경우에는 대부분의 영숫자 키에 대문자 또는 기호가 입력 되기 때문입니다.  
   
    가상 키 코드를 사용 하면 함수 키와 **백스페이스** 키와 같이 연결 된 문자가 없는 특수 키에 액세스할 수 있습니다. 자세한 내용은 [가상 키 코드](https://msdn2.microsoft.com/library/ms645540.aspx)를 참조 하세요.  
   
-   Visual Studio 편집기에서 명령을 사용할 수 있도록 하려면 `editor` 특성을 `guidVSStd97`로 설정 합니다.  
+   Visual Studio 편집기에서 명령을 사용할 수 있도록 하려면 특성을로 설정 `editor` `guidVSStd97` 합니다.  
   
-   사용자 지정 편집기 에서만 명령을 사용할 수 있도록 하려면 사용자 지정 편집기를 포함 하는 VSPackage를 만들 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 패키지 템플릿에서 생성 한 사용자 지정 편집기의 이름 `editor` 특성을 설정 합니다. 이름 값을 찾으려면 `name` 특성이 "`editorfactory`"로 끝나는 `<GuidSymbol>` 노드에 대 한 `<Symbols>` 섹션을 확인 합니다. 사용자 지정 편집기의 이름입니다.  
+   사용자 지정 편집기 에서만 명령을 사용할 수 있도록 하려면 `editor` [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자 지정 편집기를 포함 하는 VSPackage를 만들 때 패키지 템플릿에서 생성 된 사용자 지정 편집기의 이름으로 특성을 설정 합니다. 이름 값을 찾으려면 `<Symbols>` `<GuidSymbol>` `name` 특성이 "."로 끝나는 노드에 대 한 섹션을 확인 합니다 `editorfactory` . 사용자 지정 편집기의 이름입니다.  
   
 ## <a name="example"></a>예  
- 이 예제에서는 바로 가기 키 CTRL + ALT + C를 `MyPackage`라는 패키지의 `cmdidMyCommand` 명명 된 명령에 바인딩합니다.  
+ 이 예제에서는 바로 가기 키 CTRL + ALT + C를 `cmdidMyCommand` 라는 패키지의 명령에 바인딩합니다 `MyPackage` .  
   
 ```  
 <CommandTable>  
@@ -101,11 +101,11 @@ ms.locfileid: "75852222"
 ```  
   
 ## <a name="example"></a>예  
- 이 예제에서는 바로 가기 키 CTL + B를 `TestEditor`라는 프로젝트의 `cmdidBold` 명령에 바인딩합니다. 명령은 사용자 지정 편집기 에서만 사용할 수 있으며 다른 편집기에서는 사용할 수 없습니다.  
+ 이 예제에서는 바로 가기 키 CTL + B를 `cmdidBold` 라는 프로젝트의 명령에 바인딩합니다 `TestEditor` . 명령은 사용자 지정 편집기 에서만 사용할 수 있으며 다른 편집기에서는 사용할 수 없습니다.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

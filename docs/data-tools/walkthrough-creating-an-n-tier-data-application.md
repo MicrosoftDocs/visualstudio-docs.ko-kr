@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916503"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>연습: n 계층 데이터 응용 프로그램 만들기
@@ -50,10 +50,10 @@ N 계층 애플리케이션의 여러 계층을 분리하는 방법 중 하나�
 
 ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전을 참조 하세요. [Video How to: N 계층 데이터 애플리케이션 만들기](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
-1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자**를 통해 설치 합니다. **Visual Studio 설치 관리자**에서 **.NET 데스크톱 개발** 워크로드의 일부로 또는 개별 구성 요소로서 SQL Server Express LocalDB를 설치할 수 있습니다.
+1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자**를 통해 설치 합니다. **Visual Studio 설치 관리자**에서 **.net 데스크톱 개발** 워크 로드의 일부로 또는 개별 구성 요소로 SQL Server Express LocalDB를 설치할 수 있습니다.
 
 2. 다음 단계를 수행 하 여 Northwind 샘플 데이터베이스를 설치 합니다.
 
@@ -68,7 +68,7 @@ N 계층 애플리케이션의 여러 계층을 분리하는 방법 중 하나�
        잠시 후 쿼리 실행이 완료 되 고 Northwind 데이터베이스가 만들어집니다.
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>N 계층 솔루션 및 클래스 라이브러리를 만들어 데이터 집합을 저장 합니다 (DataEntityTier).
-이 연습의 첫 단계에서는 솔루션과 클래스 라이브러리 프로젝트 두 개를 만듭니다. 첫 번째 클래스 라이브러리에는 데이터 집합 (생성 된 형식화 된 `DataSet` 클래스 및 응용 프로그램의 데이터를 저장 하는 Datatable)이 포함 됩니다. 이 프로젝트는 애플리케이션의 데이터 엔터티 계층으로 사용되며 대개 중간 계층에 배치됩니다. 데이터 집합은 초기 데이터 집합을 만들고 코드를 두 개의 클래스 라이브러리로 자동으로 분리 합니다.
+이 연습의 첫 단계에서는 솔루션과 클래스 라이브러리 프로젝트 두 개를 만듭니다. 첫 번째 클래스 라이브러리에는 데이터 집합 (생성 된 형식화 된 `DataSet` 클래스 및 응용 프로그램의 데이터를 저장 하는 datatable)이 포함 됩니다. 이 프로젝트는 애플리케이션의 데이터 엔터티 계층으로 사용되며 대개 중간 계층에 배치됩니다. 데이터 집합은 초기 데이터 집합을 만들고 코드를 두 개의 클래스 라이브러리로 자동으로 분리 합니다.
 
 > [!NOTE]
 > **확인**을 클릭하기 전에 프로젝트와 솔루션의 이름을 올바르게 지정해야 합니다. 그러면 이 연습을 보다 쉽게 완료할 수 있습니다.
@@ -77,7 +77,7 @@ N 계층 애플리케이션의 여러 계층을 분리하는 방법 중 하나�
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **클래스 라이브러리** 프로젝트 형식을 선택 합니다.
 
@@ -101,12 +101,12 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
      DataAccessTier 프로젝트가 만들어져 NTierWalkthrough 솔루션에 추가됩니다.
 
 ## <a name="create-the-dataset"></a>데이터 집합 만들기
-다음 단계에서는 형식화된 데이터 세트을 만듭니다. 형식화 된 데이터 집합은 단일 프로젝트에서 dataset 클래스 (`DataTables` 클래스 포함)와 `TableAdapter` 클래스를 사용 하 여 만들어집니다. 모든 클래스는 단일 파일로 생성 됩니다. 데이터 집합 및 Tableadapter를 다른 프로젝트로 분리 하는 경우 다른 프로젝트로 이동 하는 데이터 집합 클래스로, `TableAdapter` 클래스를 원래 프로젝트에 그대로 둡니다. 따라서 궁극적으로 Tableadapter (DataAccessTier 프로젝트)를 포함 하는 프로젝트에 데이터 집합을 만듭니다. 데이터 집합은 **데이터 소스 구성 마법사**를 사용 하 여 만듭니다.
+다음 단계에서는 형식화된 데이터 세트을 만듭니다. 형식화 된 데이터 집합은 단일 프로젝트에서 dataset 클래스 ( `DataTables` 클래스 포함)와 클래스를 사용 하 여 만들어집니다 `TableAdapter` . 모든 클래스는 단일 파일로 생성 됩니다. 데이터 집합 및 Tableadapter를 다른 프로젝트로 분리 하는 경우에는 다른 프로젝트로 이동 하는 데이터 집합 클래스로,이 클래스는 `TableAdapter` 원래 프로젝트에 클래스를 남겨 둡니다. 따라서 궁극적으로 Tableadapter (DataAccessTier 프로젝트)를 포함 하는 프로젝트에 데이터 집합을 만듭니다. 데이터 집합은 **데이터 소스 구성 마법사**를 사용 하 여 만듭니다.
 
 > [!NOTE]
 > 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 자세한 내용은 [방법: 예제 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)를 참조 하세요.
 
-### <a name="to-create-the-dataset"></a>데이터 세트을 만들려면
+### <a name="to-create-the-dataset"></a>데이터 세트를 만들려면
 
 1. **솔루션 탐색기**에서 **DataAccessTier** 을 선택 합니다.
 
@@ -114,7 +114,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
    **데이터 원본** 창이 열립니다.
 
-3. **데이터 원본** 창에서 **새 데이터 원본 추가**를 선택하여 **데이터 원본 구성 마법사**를 시작합니다.
+3. **데이터** 소스 창에서 **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사**를 시작 합니다.
 
 4. **데이터 소스 형식 선택** 페이지에서 **데이터베이스** 를 선택 하 고 **다음**을 선택 합니다.
 
@@ -122,7 +122,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
      Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
-     -또는-
+     또는
 
      **새 연결** 을 선택 하 여 **연결 추가** 대화 상자를 엽니다.
 
@@ -133,7 +133,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
 7. **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음** 을 선택 합니다.
 
-8. **데이터베이스 개체 선택** 페이지에서 **테이블** 노드를 확장합니다.
+8. **데이터베이스 개체 선택** 페이지에서 **테이블** 노드를 확장 합니다.
 
 9. **Customers** 및 **Orders** 테이블의 확인란을 선택 하 고 **마침**을 선택 합니다.
 
@@ -154,7 +154,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
 5. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
 
-   데이터 세트 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합 (`DataAccessTier`)이 포함 된 프로젝트에는 이제 Tableadapter만 포함 됩니다. **데이터 집합 프로젝트** 속성 (`DataEntityTier`)에 지정 된 프로젝트에는 형식화 된 데이터 집합: *NorthwindDataSet* (또는 *NorthwindDataSet.Dataset.Designer.cs*)이 포함 되어 있습니다.
+   데이터 세트 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합 ()이 포함 된 프로젝트에는 `DataAccessTier` 이제 tableadapter만 포함 됩니다. **데이터 집합 프로젝트** 속성에 지정 된 프로젝트 ( `DataEntityTier` )는 형식화 된 데이터 집합을 포함 합니다. *NorthwindDataSet* (또는 *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > **데이터 세트 프로젝트** 속성을 설정하여 데이터 세트와 TableAdapters를 분리할 때는 프로젝트의 기존 부분 데이터 세트 클래스가 자동으로 이동되지 않습니다. 따라서 데이터 세트 프로젝트로 기존 데이터 세트 부분 클래스를 수동으로 이동해야 합니다.
@@ -173,7 +173,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
      DataService 프로젝트가 만들어져 NTierWalkthrough 솔루션에 추가됩니다.
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>데이터 액세스 계층에서 고객 및 주문 데이터를 반환 하는 메서드 만들기
-데이터 서비스는 `GetCustomers` 및 `GetOrders`데이터 액세스 계층에서 두 메서드를 호출 해야 합니다. 이러한 메서드는 Northwind `Customers` 및 `Orders` 테이블을 반환 합니다. `DataAccessTier` 프로젝트에서 `GetCustomers` 및 `GetOrders` 메서드를 만듭니다.
+데이터 서비스는 데이터 액세스 계층에서 및의 두 메서드를 호출 해야 `GetCustomers` 합니다 `GetOrders` . 이러한 메서드는 Northwind `Customers` 및 테이블을 반환 `Orders` 합니다. `GetCustomers` `GetOrders` 프로젝트에 및 메서드를 만듭니다 `DataAccessTier` .
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>데이터 액세스 계층에서 Customers 테이블을 반환하는 메서드를 만들려면
 
@@ -323,7 +323,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 3. **Service1** 을 선택 하 고 **확인**을 선택 합니다.
 
     > [!NOTE]
-    > 현재 컴퓨터에 여러 서비스가 있는 경우이 연습에서 이전에 만든 서비스 (`GetCustomers` 및 `GetOrders` 메서드를 포함 하는 서비스)를 선택 합니다.
+    > 현재 컴퓨터에 여러 서비스가 있는 경우이 연습에서 이전에 만든 서비스 (및 메서드를 포함 하는 서비스)를 선택 `GetCustomers` `GetOrders` 합니다.
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Datagridview를 폼에 추가 하 여 데이터 서비스에서 반환 하는 데이터 표시
 데이터 서비스에 대한 서비스 참조를 추가하고 나면 **데이터 소스** 창에 서비스에 의해 반환되는 데이터가 자동으로 채워집니다.
@@ -358,7 +358,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>서비스에서 허용 하는 최대 메시지 크기를 늘립니다.
-`maxReceivedMessageSize`의 기본값은 `Customers` 및 `Orders` 테이블에서 검색 된 데이터를 저장할 수 있을 만큼 크지 않습니다. 다음 단계에서는 값을 6553600로 늘립니다. 클라이언트에서 값을 변경 하 여 서비스 참조를 자동으로 업데이트 합니다.
+의 기본값은 `maxReceivedMessageSize` 및 테이블에서 검색 된 데이터를 저장할 수 있을 만큼 크지 `Customers` 않습니다 `Orders` . 다음 단계에서는 값을 6553600로 늘립니다. 클라이언트에서 값을 변경 하 여 서비스 참조를 자동으로 업데이트 합니다.
 
 > [!NOTE]
 > 기본값이 작은 이유는 DoS(서비스 거부) 공격에 대한 노출을 제한하기 위해서입니다. 자세한 내용은 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>를 참조하세요.
@@ -369,8 +369,8 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
 2. **maxReceivedMessage** 크기 특성을 찾아 값을 `6553600`으로 변경합니다.
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
-**F5**를 눌러 애플리케이션을 실행합니다. `Customers` 및 `Orders` 테이블의 데이터는 데이터 서비스에서 검색 되어 폼에 표시 됩니다.
+## <a name="test-the-application"></a>애플리케이션 테스트
+**F5**를 눌러 애플리케이션을 실행합니다. 및 테이블의 데이터 `Customers` 는 `Orders` 데이터 서비스에서 검색 되어 폼에 표시 됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 애플리케이션 요구 사항에 따라 Windows 기반 애플리케이션에서 관련 데이터를 저장한 후 몇 단계를 더 수행해야 할 수도 있습니다. 예를 들어 이 애플리케이션을 다음과 같이 개선할 수 있습니다.
@@ -379,7 +379,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
 - 데이터를 데이터베이스로 다시 업데이트하기 위한 추가 메서드를 서비스에 추가합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [n 계층 애플리케이션에서 데이터 세트 작업](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)

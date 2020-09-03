@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284921"
 ---
 # <a name="how-to-search-for-topics"></a>방법: 항목 검색
@@ -72,11 +72,11 @@ ms.locfileid: "85284921"
 
 3. 높은 밀도의 검색어를 포함하는 콘텐츠의 순위가 낮은 밀도의 검색어를 포함하는 콘텐츠보다 높습니다.
 
-### <a name=""></a><a name="stopwords">검색에서 무시 되는 단어 (중지 단어)</a>
+### <a name=""></a><a name="stopwords"> 검색에서 무시 되는 단어 (중지 단어) </a>
 
 자주 사용되는 단어 또는 숫자(중지 단어라고도 함)는 전체 텍스트 검색 시 자동으로 무시됩니다. 예를 들어 "pass through" 문구를 검색하는 경우 검색 결과에 "pass" 단어를 포함하는 항목이 표시되지만 "through" 단어를 포함하는 항목은 표시되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [논리 및 고급 운영자](../help-viewer/logical-operators-search-expressions.md)
 - [방법: 인덱스에서 항목 찾기](../help-viewer/find-topics-index.md)

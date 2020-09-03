@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 063767f8f50793253c236db5d5b90e1d6db1bff4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905863"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>방법: VSIX 패키지에 종속성 추가
@@ -46,7 +46,7 @@ ms.locfileid: "85905863"
 
 VSIXInstaller는 이전 버전의 Visual Studio를 검색 하 고 나중에 업데이트가 필요 함을 사용자에 게 알립니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
 - [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)
