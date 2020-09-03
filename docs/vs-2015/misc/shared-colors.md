@@ -8,10 +8,10 @@ ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
 ms.openlocfilehash: 76c04680b63eb362e02fdf26d817660d671b3b52
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548358"
 ---
 # <a name="shared-colors"></a>공유 색
@@ -35,7 +35,7 @@ ms.locfileid: "85548358"
   
 ### <a name="command-structures"></a>명령 구조  
   
-#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>메뉴로  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a> 메뉴로  
  메뉴는 Visual Studio 2013 내의 여러 위치에서 발생할 수 있습니다. 주 메뉴 모음에 표시되거나, 문서 또는 도구 창에 포함되거나, IDE 전체의 다양한 위치에서 마우스 오른쪽 단추를 클릭할 때 표시됩니다. 다른 UI 요소와 연결된 메뉴의 구현은 해당 요소에 대한 섹션에서 설명합니다. 항상 Visual Studio 환경에서 제공하는 표준 메뉴 구현을 사용해야 합니다. 그러나 드물긴 하지만 표준 Visual Studio 메뉴에 액세스할 수 없는 경우도 있습니다. 이러한 경우 다음 토큰 이름을 사용하여 Visual Studio의 다른 메뉴와 UI의 일관성을 유지합니다.  
   
  ![메뉴 검토](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
@@ -65,10 +65,10 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![메뉴 제목 기본값](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **메뉴 제목**|배경|None|  
+|![메뉴 제목 기본값](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **메뉴 제목**|배경|없음|  
 |![메뉴 제목 기본값](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **메뉴 제목**|전경(텍스트)|`Environment.CommandBarTextActive`|  
 |![문자 모양 기본값으로 표시되는 메뉴 제목](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **문자 모양의 메뉴 제목**|전경(문자 모양)|`Environment.CommandBarMenuGlyph`|  
-|![문자 모양 기본값으로 표시되는 메뉴 제목](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **문자 모양의 메뉴 제목**|테두리|None|  
+|![문자 모양 기본값으로 표시되는 메뉴 제목](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **문자 모양의 메뉴 제목**|테두리|없음|  
   
  **가리키기**  
   
@@ -92,10 +92,10 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![문자 모양을 사용하지 않은 메뉴 제목](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **문자 모양의 메뉴 제목**|배경|None|  
+|![문자 모양을 사용하지 않은 메뉴 제목](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **문자 모양의 메뉴 제목**|배경|없음|  
 |![문자 모양을 사용하지 않은 메뉴 제목](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **문자 모양의 메뉴 제목**|전경(텍스트)|`Environment.CommandBarTextInactive`|  
 |![문자 모양을 사용하지 않은 메뉴 제목](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **문자 모양의 메뉴 제목**|전경(문자 모양)|`Environment.CommandBarTextInactive`|  
-|![문자 모양을 사용하지 않은 메뉴 제목](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **문자 모양의 메뉴 제목**|테두리|None|  
+|![문자 모양을 사용하지 않은 메뉴 제목](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **문자 모양의 메뉴 제목**|테두리|없음|  
   
 ##### <a name="menu"></a>메뉴  
  개별 메뉴 항목은 메뉴 텍스트와 선택적 아이콘, 확인란 또는 하위 메뉴 문자 모양으로 구성됩니다. 마우스로 가리키면 해당 배경색과 텍스트 색이 바뀝니다. 이 색 토큰은 배경/전경 쌍입니다.  
@@ -121,8 +121,8 @@ ms.locfileid: "85548358"
 |![메뉴 기본값](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **메뉴**|아이콘 채널 배경|`Environment.CommandBarMenuIconBackground`|  
 |![메뉴 기본값](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **메뉴**|구분 기호|`Environment.CommandBarMenuSeparator`|  
 |![메뉴 기본값](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **메뉴**|그림자|`Environment.DropShadowBackground`|  
-|![메뉴 확인됨](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **검사할**|확인 표시|`Environment.CommandBarCheckBox`|  
-|![메뉴 확인됨](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **검사할**|확인 표시 배경|`Environment.CommandBarSelectedIcon`|  
+|![메뉴 확인됨](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **선택됨**|확인 표시|`Environment.CommandBarCheckBox`|  
+|![메뉴 확인됨](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **선택됨**|확인 표시 배경|`Environment.CommandBarSelectedIcon`|  
 |![메뉴 선택됨](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|아이콘 배경|`Environment.CommandBarSelected`|  
 |![메뉴 선택됨](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|아이콘 테두리|`Environment.CommandBarSelectedBorder`|  
   
@@ -133,8 +133,8 @@ ms.locfileid: "85548358"
 |![메뉴 가리키기](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **메뉴 항목**|배경|`Environment.CommandBarMenuItemMouseOver`|  
 |![메뉴 가리키기](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **메뉴 항목**|전경(텍스트)|`Environment.CommandBarMenuItemMouseOver`|  
 |![메뉴 가리키기](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **메뉴 항목**|전경(하위 메뉴 문자 모양)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
-|![메뉴 가리키기 확인됨](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **검사할**|확인 표시|`Environment.CommandBarCheckBoxMouseOver`|  
-|![메뉴 가리키기 확인됨](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **검사할**|확인 표시 배경|`Environment.CommandBarHoverOverSelectedIcon`|  
+|![메뉴 가리키기 확인됨](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **선택됨**|확인 표시|`Environment.CommandBarCheckBoxMouseOver`|  
+|![메뉴 가리키기 확인됨](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **선택됨**|확인 표시 배경|`Environment.CommandBarHoverOverSelectedIcon`|  
 |![메뉴 가리키기 선택됨](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|아이콘 배경|`Environment.CommandBarHoverOverSelected`|  
 |![메뉴 가리키기 선택됨](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|아이콘 테두리|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
@@ -144,8 +144,8 @@ ms.locfileid: "85548358"
 |---------------|-------------|--------------------------------|  
 |![메뉴 사용 안 함](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menu item|전경(텍스트)|`Environment.CommandBarTextInactive`|  
 |![메뉴 사용 안 함](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menu item|전경(하위 메뉴 문자 모양)|`Environment.CommandBarMenuSubmenuGlyph`|  
-|![메뉴 사용 안 함 확인됨](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 선택|확인 표시|`Environment.CommandBarCheckBoxDisabled`|  
-|![메뉴 사용 안 함 확인됨](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 선택|확인 표시 배경|`Environment.CommandBarSelectedIconDisabled`|  
+|![메뉴 사용 안 함 확인됨](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 선택됨|확인 표시|`Environment.CommandBarCheckBoxDisabled`|  
+|![메뉴 사용 안 함 확인됨](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> 선택됨|확인 표시 배경|`Environment.CommandBarSelectedIconDisabled`|  
   
 #### <a name="command-bar"></a>명령 모음  
  명령 모음은 Visual Studio IDE 내의 여러 위치에 나타날 수 있습니다. 특히, 명령 선반에 표시되며 도구 또는 문서 창에 포함됩니다.  
@@ -205,7 +205,7 @@ ms.locfileid: "85548358"
 |---------------|-------------|--------------------------------|  
 |![명령 아이콘 기본값](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **기본값**|배경|해당 없음(명령 모음 배경에서 상속됨)|  
 |![명령 아이콘 기본값](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **기본값**|전경(텍스트)|`Environment.CommandBarTextActive`|  
-|![명령 아이콘 기본값](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **기본값**|테두리|N/A|  
+|![명령 아이콘 기본값](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **기본값**|테두리|해당 없음|  
 |![명령 아이콘 기본값 선택됨](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Selected**|배경|`Environment.CommandBarSelected`|  
 |![명령 아이콘 기본값 선택됨](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Selected**|전경(텍스트)|`Environment.CommandBarTextSelected`|  
 |![명령 아이콘 기본값 선택됨](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Selected**|테두리|`Environment.CommandBarSelectedBorder`|  
@@ -235,9 +235,9 @@ ms.locfileid: "85548358"
 |---------------|-------------|--------------------------------|  
 |![명령 아이콘 사용 안 함](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **명령 아이콘 사용 안 함**|배경|해당 없음(명령 모음 배경에서 상속됨)|  
 |![명령 아이콘 사용 안 함](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **명령 아이콘 사용 안 함**|전경(텍스트)|`Environment.CommandBarTextInactive`|  
-|![명령 아이콘 사용 안 함](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **명령 아이콘 사용 안 함**|테두리|N/A|  
+|![명령 아이콘 사용 안 함](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **명령 아이콘 사용 안 함**|테두리|해당 없음|  
   
-##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>콤보 상자  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> 콤보 상자  
   
 > [!IMPORTANT]
 > 콤보 상자는 드롭다운과 유사하지만 편집 가능한 텍스트 영역을 포함합니다. 드롭다운에 편집 가능한 텍스트 영역이 포함되어 있지 않으면 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)아래의 색 토큰을 사용합니다.  
@@ -312,10 +312,10 @@ ms.locfileid: "85548358"
 |![콤보 상자 입력 필드 사용 안 함](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **입력 필드**|전경(텍스트)|`Environment.ComboBoxDisabledText`|  
 |![콤보 상자 입력 필드 사용 안 함](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **입력 필드**|테두리|`Environment.ComboBoxDisabledBorder`|  
 |![콤보 상자 입력 필드 사용 안 함](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **입력 필드**|구분 기호|구분 기호 없음|  
-|![콤보 상자&#47;드롭&#45;down 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|배경|None|  
+|![콤보 상자&#47;드롭&#45;down 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|배경|없음|  
 |![콤보 상자&#47;드롭&#45;down 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|전경(문자 모양)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>드롭다운  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> 드롭다운  
   
 > [!IMPORTANT]
 > 드롭다운은 콤보 상자와 유사하지만 편집 가능한 텍스트 영역이 없습니다. 드롭다운에 편집 가능한 텍스트 영역이 포함되어 있으면 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)아래의 색 토큰을 사용합니다.  
@@ -338,7 +338,7 @@ ms.locfileid: "85548358"
 |![&#45;드롭다운 선택 필드 삭제](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **선택 필드**|전경(텍스트)|`DropDownText`|  
 |![&#45;드롭다운 선택 필드 삭제](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **선택 필드**|테두리|`DropDownBorder`|  
 |![&#45;드롭다운 선택 필드 삭제](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **선택 필드**|구분 기호|구분 기호 없음|  
-|![드롭다운&#45;단추](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **드롭다운 단추**|배경|None|  
+|![드롭다운&#45;단추](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **드롭다운 단추**|배경|없음|  
 |![드롭다운&#45;단추](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **드롭다운 단추**|전경(문자 모양)|`Environment.DropDownGlyph`|  
 |![드롭다운 목록&#45;](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **드롭다운 목록**|배경|`Environment.DropDownPopupBackgroundBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
 |![드롭다운 목록&#45;](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **드롭다운 목록**|전경(텍스트)|`Environment.ComboBoxItemText`|  
@@ -378,7 +378,7 @@ ms.locfileid: "85548358"
 |![&#45;드롭다운 선택 필드 삭제 사용 안 함](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|전경(텍스트)|`Environment.DropDownDisabledText`|  
 |![&#45;드롭다운 선택 필드 삭제 사용 안 함](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|테두리|`Environment.DropDownDisabledBorder`|  
 |![&#45;드롭다운 선택 필드 삭제 사용 안 함](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|구분 기호|구분 기호 없음|  
-|![드롭&#45;down 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|배경|N/A|  
+|![드롭&#45;down 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|배경|해당 없음|  
 |![드롭&#45;down 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|전경(문자 모양)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>분할 단추  
@@ -398,11 +398,11 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|배경|None|  
+|![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|배경|없음|  
 |![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|전경(텍스트)|`Environment.CommandBarTextActive`|  
 |![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|전경(문자 모양)|`Environment.CommandBarSplitButtonGlyph`|  
-|![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|테두리|N/A|  
-|![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|구분 기호|N/A|  
+|![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|테두리|해당 없음|  
+|![분할 단추](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **분할 단추(기본값)**|구분 기호|해당 없음|  
   
  **가리키기**  
   
@@ -422,17 +422,17 @@ ms.locfileid: "85548358"
 |![분할 단추 누름](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **분할 단추(누름)**|전경(텍스트)|`Environment.CommandBarTextMouseDown`|  
 |![분할 단추 누름](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **분할 단추(누름)**|전경(문자 모양)|`Environment.CommandBarSplitButtonMouseDownGlyph`|  
 |![분할 단추 누름](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **분할 단추(누름)**|테두리|`Environment.CommandBarBorder`|  
-|![분할 단추 누름](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **분할 단추(누름)**|구분 기호|N/A|  
+|![분할 단추 누름](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **분할 단추(누름)**|구분 기호|해당 없음|  
   
  **사용 안 함**  
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|배경|N/A|  
+|![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|배경|해당 없음|  
 |![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|전경(텍스트)|`Environment.ComboBoxItemTextInactive`|  
 |![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|전경(문자 모양)|`Environment.CommandBarTextInactive`|  
-|![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|테두리|N/A|  
-|![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|구분 기호|N/A|  
+|![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|테두리|해당 없음|  
+|![분할 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **분할 단추(사용 안 함)**|구분 기호|해당 없음|  
   
 ##### <a name="more-options-and-overflow-buttons"></a>'기타 옵션' 및 '오버플로' 단추  
  "기타 옵션" 단추는 관련된 명령 모음 단추를 추가하거나 제거하여 명령 모음 그룹을 사용자 지정할 수 있는 경우에 사용됩니다. "오버플로" 단추는 가로 공간이 부족하여 명령 모음이 잘리고, 클릭하면 표시되지 않는 명령 모음 단추를 포함하는 메뉴가 표시될 때 나타납니다. 이러한 두 단추의 색은 동일한 토큰 이름 집합에 의해 제어됩니다.  
@@ -449,8 +449,8 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![추가 옵션](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **추가 옵션**|배경|`Environment.CommandBarOptionsBackground`|  
-|![추가 옵션](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **추가 옵션**|전경(문자 모양)|`Environment.CommandBarOptionsGlyph`|  
+|![기타 옵션](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **기타 옵션**|배경|`Environment.CommandBarOptionsBackground`|  
+|![기타 옵션](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **기타 옵션**|전경(문자 모양)|`Environment.CommandBarOptionsGlyph`|  
 |![오버플로 단추](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **오버플로**|배경|`Environment.CommandBarOptionsBackground`|  
 |![오버플로 단추](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **오버플로**|전경(문자 모양)|`Environment.CommandBarOptionsGlyph`|  
   
@@ -458,8 +458,8 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![가리키면 표시되는 기타 옵션](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **추가 옵션**|배경|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
-|![가리키면 표시되는 기타 옵션](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **추가 옵션**|전경(문자 모양)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![가리키면 표시되는 기타 옵션](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **기타 옵션**|배경|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
+|![가리키면 표시되는 기타 옵션](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **기타 옵션**|전경(문자 모양)|`Environment.CommandBarOptionsMouseDownGlyph`|  
 |![가리키면 표시되는 오버플로](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **오버플로**|배경|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
 |![가리키면 표시되는 오버플로](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **오버플로**|전경(문자 모양)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
@@ -467,8 +467,8 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![기타 옵션 누름](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **추가 옵션**|배경|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
-|![기타 옵션 누름](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **추가 옵션**|전경(문자 모양)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![기타 옵션 누름](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **기타 옵션**|배경|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
+|![기타 옵션 누름](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **기타 옵션**|전경(문자 모양)|`Environment.CommandBarOptionsMouseDownGlyph`|  
 |![오버플로 누름](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **오버플로**|배경|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
 |![오버플로 누름](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **오버플로**|전경(문자 모양)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
@@ -661,7 +661,7 @@ ms.locfileid: "85548358"
 |---------------|-------------|--------------------------------|  
 |![오버플로](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **문서 오버플로 단추**|배경|`Environment.DocWellOverflowButtonBackground`|  
 |![오버플로](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **문서 오버플로 단추**|전경(문자 모양)|`Environment.DocWellOverflowButtonGlyph`|  
-|![오버플로](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **문서 오버플로 단추**|테두리|N/A|  
+|![오버플로](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **문서 오버플로 단추**|테두리|해당 없음|  
   
  **가리키기**  
   
@@ -701,7 +701,7 @@ ms.locfileid: "85548358"
  사용 안 함  
  셸에 테마 업데이트가 있는 경우 자동으로 변경하지 않으려는 모든 UI  
   
- **도킹됨**  
+ **상태로**  
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -748,7 +748,7 @@ ms.locfileid: "85548358"
 |---------------|-------------|--------------------------------|  
 |![포커스가 없는 제목 표시줄](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **포커스가 없는 제목 표시줄**|배경|`Environment.TitleBarInactiveGradientBegin`<br /><br /> 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.|  
 |![포커스가 없는 제목 표시줄](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **포커스가 없는 제목 표시줄**|전경(텍스트)|`Environment.TitleBarInactiveText`|  
-|![포커스가 없는 제목 표시줄](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **포커스가 없는 제목 표시줄**|테두리|N/A|  
+|![포커스가 없는 제목 표시줄](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **포커스가 없는 제목 표시줄**|테두리|해당 없음|  
 |![포커스가 없는 제목 표시줄](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **포커스가 없는 제목 표시줄**|끌기 핸들|`Environment.TitleBarDragHandle`|  
   
 ##### <a name="title-bar-buttons"></a>제목 표시줄 단추  
@@ -766,12 +766,12 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![포커스가 있는 제목 표시줄 단추](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focused**|배경|N/A|  
+|![포커스가 있는 제목 표시줄 단추](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focused**|배경|해당 없음|  
 |![포커스가 있는 제목 표시줄 단추](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focused**|전경(문자 모양)|`Environment.ToolWindowButtonActiveGlyph`|  
-|![포커스가 있는 제목 표시줄 단추](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focused**|테두리|N/A|  
-|![제목 표시줄 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **포커스 없음**|배경|N/A|  
+|![포커스가 있는 제목 표시줄 단추](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Focused**|테두리|해당 없음|  
+|![제목 표시줄 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **포커스 없음**|배경|해당 없음|  
 |![제목 표시줄 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **포커스 없음**|전경(문자 모양)|`Environment.ToolWindowButtonInactiveGlyph`|  
-|![제목 표시줄 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **포커스 없음**|테두리|N/A|  
+|![제목 표시줄 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **포커스 없음**|테두리|해당 없음|  
   
  **가리키기**  
   
@@ -891,11 +891,11 @@ ms.locfileid: "85548358"
 |![포커스가 있는 검색어 입력 필드](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **입력 필드**|전경(텍스트)|`SearchControl.FocusedBackground`|  
 |![포커스가 있는 검색어 입력 필드](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **입력 필드**|테두리|`SearchControl.FocusedBorder`|  
 |![포커스가 있는 검색어 입력 필드](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **입력 필드**|구분 기호|`SearchControl.FocusedDropDownSeparator`|  
-|![포커스가 있는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **작업 단추**|배경|None|  
+|![포커스가 있는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **작업 단추**|배경|없음|  
 |![포커스가 있는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **작업 단추**|전경(검색 문자 모양)|`SearchControl.SearchGlyph`|  
 |![포커스가 있는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **작업 단추**|전경(중지 문자 모양)|`SearchControl.StopGlyph`|  
 |![포커스가 있는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **작업 단추**|전경(지우기 문자 모양)|`SearchControl.ClearGlyph`|  
-|![포커스가 있는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **작업 단추**|테두리|N/A|  
+|![포커스가 있는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **작업 단추**|테두리|해당 없음|  
 |![검색 삭제&#45;다운 단추 포커스가 있음](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **드롭다운 단추**|배경|`SearchControl.FocusedDropDownButton`|  
 |![검색 삭제&#45;다운 단추 포커스가 있음](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **드롭다운 단추**|전경(문자 모양)|`SearchControl.FocusedDropDownButtonGlyph`|  
 |![검색 삭제&#45;다운 단추 포커스가 있음](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **드롭다운 단추**|테두리|`SearchControl.FocusedDropDownButtonBorder`|  
@@ -912,11 +912,11 @@ ms.locfileid: "85548358"
 |![포커스가 없고 비활성화된 검색어 입력 필드](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-1_SearchInputFieldUnfocusedInactive")<br /><br /> **비활성 입력 필드**|전경(텍스트)|`SearchControl.Unfocused`|  
 |![포커스가 없고 비활성화된 검색어 입력 필드](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-1_SearchInputFieldUnfocusedInactive")<br /><br /> **비활성 입력 필드**|테두리|`SearchControl.UnfocusedBorder`|  
 |![포커스가 없고 비활성화된 검색어 입력 필드](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-1_SearchInputFieldUnfocusedInactive")<br /><br /> **비활성 입력 필드**|구분 기호|`SearchControl.DropDownSeparator`|  
-|![포커스가 없는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **작업 단추**|배경|N/A|  
+|![포커스가 없는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **작업 단추**|배경|해당 없음|  
 |![포커스가 없는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **작업 단추**|전경(검색 문자 모양)|`SearchControl.SearchGlyph`|  
 |![포커스가 없는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **작업 단추**|전경(중지 문자 모양)|`SearchControl.StopGlyph`|  
 |![포커스가 없는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **작업 단추**|전경(지우기 문자 모양)|`SearchControl.ClearGlyph`|  
-|![포커스가 없는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **작업 단추**|테두리|N/A|  
+|![포커스가 없는 검색 작업 단추](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **작업 단추**|테두리|해당 없음|  
 |![검색 삭제&#45;아래로 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **드롭다운 단추**|배경|`SearchControl.UnfocusedDropDownButton`|  
 |![검색 삭제&#45;아래로 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **드롭다운 단추**|전경(문자 모양)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
 |![검색 삭제&#45;아래로 단추 포커스가 없는](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **드롭다운 단추**|테두리|`SearchControl.UnfocusedDropDownButtonBorder`|  
@@ -938,7 +938,7 @@ ms.locfileid: "85548358"
 |---------------|-------------|--------------------------------|  
 |![검색어 입력 필드 강조 표시](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **텍스트가 강조 표시된 입력 필드**|배경|`SearchControl.Selection`|  
 |![검색어 입력 필드 강조 표시](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **텍스트가 강조 표시된 입력 필드**|전경(텍스트)|`SearchControl.FocusedBackground`|  
-|![검색어 입력 필드 강조 표시](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **텍스트가 강조 표시된 입력 필드**|테두리|None|  
+|![검색어 입력 필드 강조 표시](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **텍스트가 강조 표시된 입력 필드**|테두리|없음|  
 |![검색어 입력 필드 강조 표시](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **텍스트가 강조 표시된 입력 필드**|구분 기호|`SearchControl.FocusedDropDownSeparator`|  
   
  **사용 안 함**  
@@ -949,12 +949,12 @@ ms.locfileid: "85548358"
 |![검색어 입력 필드 사용 안 함](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **입력 필드**|전경(텍스트)|`SearchControl.Disabled`|  
 |![검색어 입력 필드 사용 안 함](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **입력 필드**|테두리|`SearchControl.DisabledBorder`|  
 |![검색어 입력 필드 사용 안 함](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **입력 필드**|구분 기호|`SearchControl.DropDownSeparator`|  
-|![검색 작업 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **작업 단추**|배경|None|  
+|![검색 작업 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **작업 단추**|배경|없음|  
 |![검색 작업 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **작업 단추**|전경(문자 모양)|`SearchControl.ActionButtonDisabledGlyph`|  
-|![검색 작업 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **작업 단추**|테두리|None|  
-|![&#45;드롭다운 검색 드롭다운 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|배경|None|  
+|![검색 작업 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **작업 단추**|테두리|없음|  
+|![&#45;드롭다운 검색 드롭다운 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|배경|없음|  
 |![&#45;드롭다운 검색 드롭다운 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|전경(문자 모양)|`SearchControl.DisabledDownButtonGlyph`|  
-|![&#45;드롭다운 검색 드롭다운 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|테두리|None|  
+|![&#45;드롭다운 검색 드롭다운 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **드롭다운 단추**|테두리|없음|  
   
 ##### <a name="search-drop-down-lists"></a>검색 드롭다운 목록  
  검색 상자 드롭다운 메뉴는 Visual Studio의 다른 드롭다운 메뉴보다 약간 더 복잡해질 수 있습니다. "추천 검색어" 및 "검색 옵션" 섹션이 메뉴에 단독으로 또는 함께 표시될 수 있으며, 각 섹션에 색이 별도로 지정됩니다. 또한 함께 표시되는 경우 이러한 두 섹션이 줄로 구분되며, 테두리가 전체 드롭다운 메뉴를 둘러쌉니다.  
@@ -1117,7 +1117,7 @@ ms.locfileid: "85548358"
 |![스크롤 막대 화살표 누름](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **스크롤 화살표**|배경|`Environment.ScrollBarArrowPressedBackground`<br /><br /> 스크롤 막대와 동일한 색으로 설정됨|  
 |![스크롤 막대 화살표 누름](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **스크롤 화살표**|전경(문자 모양)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>트리 뷰  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a> 트리 뷰  
  솔루션 탐색기, 서버 탐색기 및 클래스 뷰를 포함하여 여러 도구 창은 TreeView 범주의 색 이름으로 색이 제어되는 계층적 조직 체계를 구현합니다. 트리 뷰의 모든 항목에는 배경색과 텍스트 색이 있습니다. 중첩된 자식 요소가 있는 항목에는 항목이 확장 또는 축소되었는지 여부를 나타내는 문자 모양도 있습니다.  
   
  ![트리 뷰 검토](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
@@ -1137,7 +1137,7 @@ ms.locfileid: "85548358"
 |![트리 보기](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|배경|`TreeView.Background`|  
 |![트리 보기](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|전경(텍스트)|`TreeView.Background`|  
 |![트리 보기](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|전경(문자 모양)|`TreeView.Glyph`|  
-|![트리 보기](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|테두리|None|  
+|![트리 보기](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|테두리|없음|  
   
  **가리키기**  
   
@@ -1146,7 +1146,7 @@ ms.locfileid: "85548358"
 |![트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|배경|`TreeView.Background`|  
 |![트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|전경(텍스트)|`TreeView.Background`|  
 |![트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|전경(문자 모양)|`TreeView.GlyphMouseOver`|  
-|![트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|테두리|None|  
+|![트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|테두리|없음|  
   
  **위로 끌기**  
   
@@ -1155,7 +1155,7 @@ ms.locfileid: "85548358"
 |![트리 뷰 끌기](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|배경|`TreeView.DragOverItem`|  
 |![트리 뷰 끌기](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|전경(텍스트)|`TreeView.DragOverItem`|  
 |![트리 뷰 끌기](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|전경(문자 모양)|`TreeView.DragOverItemGlyph`|  
-|![트리 뷰 끌기](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|테두리|None|  
+|![트리 뷰 끌기](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|테두리|없음|  
   
  **Selected**  
   
@@ -1168,7 +1168,7 @@ ms.locfileid: "85548358"
 |![포커스가 없는 트리 뷰](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **포커스 없음**|배경|`TreeView.SelectedItemInactive`|  
 |![포커스가 없는 트리 뷰](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **포커스 없음**|전경(텍스트)|`TreeView.SelectedItemInactive`|  
 |![포커스가 없는 트리 뷰](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **포커스 없음**|전경(문자 모양)|`TreeView.SelectedItemInactiveGlyph`|  
-|![포커스가 없는 트리 뷰](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **포커스 없음**|테두리|None|  
+|![포커스가 없는 트리 뷰](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **포커스 없음**|테두리|없음|  
   
  **선택한 항목 가리키기**  
   
@@ -1181,7 +1181,7 @@ ms.locfileid: "85548358"
 |![포커스가 없는 트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **포커스 없음**|배경|`TreeView.SelectedItemInactive`|  
 |![포커스가 없는 트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **포커스 없음**|전경(텍스트)|`TreeView.SelectedItemInactive`|  
 |![포커스가 없는 트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **포커스 없음**|전경(문자 모양)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![포커스가 없는 트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **포커스 없음**|테두리|None|  
+|![포커스가 없는 트리 뷰 가리키기](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **포커스 없음**|테두리|없음|  
   
 #### <a name="button-controls"></a>단추 컨트롤  
  ![단추 컨트롤 검토](../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")  
@@ -1407,13 +1407,13 @@ ms.locfileid: "85548358"
 |-----------|-------------|--------------------------------|  
 |기본값|배경|투명|  
 |기본값|전경(텍스트)|`Environment.CommandBarTextActive`|  
-|기본값|테두리|None|  
+|기본값|테두리|없음|  
 |선택됨(활성)|배경|`TreeView.SelectedItemActive`|  
 |선택됨(활성)|전경(텍스트)|`TreeView.SelectedItemActiveText`|  
-|선택됨(활성)|테두리|None|  
+|선택됨(활성)|테두리|없음|  
 |선택됨(비활성)|배경|`TreeView.SelectedItemInactive`|  
 |선택됨(비활성)|전경(텍스트)|`TreeView.SelectedItemInactiveText`|  
-|선택됨(비활성)|테두리|None|  
+|선택됨(비활성)|테두리|없음|  
   
 ### <a name="manifest-designer"></a>매니페스트 디자이너  
  매니페스트 디자이너는 Windows 8 및 Windows Phone 8 프로젝트에서 매니페스트 파일을 보다 쉽게 편집할 수 있도록 하는 하나의 방법으로 설계되었습니다. 사용할 수 있는 공유 프레임워크가 없는 동안에는 방향/탐색 탭의 디자인 레이아웃 및 색과 전체적인 구조를 일치시키는 것이 좋습니다. 레이아웃 정보에 대한 자세한 내용은 [Layout for Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md)을 참조하세요.  
@@ -1433,7 +1433,7 @@ ms.locfileid: "85548358"
 |시스템 상태|구성 요소|요소|토큰 이름: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |기본값(선택됨)|탭|배경|`ManifestDesigner.TabActive`|  
-|기본값(선택됨)|탭|테두리|None|  
+|기본값(선택됨)|탭|테두리|없음|  
 |기본값(선택됨)|설명 창|배경|`ManifestDesigner.DescriptionPane`|  
 |기본값(선택됨)|콘텐츠 페이지|배경|`ManifestDesigner.Background`|  
 |기본값(선택됨)|콘텐츠 페이지|대화 상자 도우미 텍스트|`ManifestDesigner.WatermarkText`<br /><br /> 이 토큰 이름은 해당 기능과 일치하지 않습니다.|  
@@ -1469,7 +1469,7 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![태그 &#40;문자 모양&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **기본값(태그 기본값)**|배경|N/A|  
+|![태그 &#40;문자 모양&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **기본값(태그 기본값)**|배경|해당 없음|  
 |![태그 &#40;문자 모양&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **기본값(태그 기본값)**|전경(문자 모양)|`Tag.TagHoverGlyph`|  
   
  **가리키기**  
@@ -1492,7 +1492,7 @@ ms.locfileid: "85548358"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![선택한 태그](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **기본값(선택한 태그)**|배경|N/A|  
+|![선택한 태그](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **기본값(선택한 태그)**|배경|해당 없음|  
 |![선택한 태그](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **기본값(선택한 태그)**|전경(문자 모양)|`Tag.TagSelectedGlyph`|  
   
  **선택한 태그/문자 모양 가리키기**  
@@ -1576,8 +1576,8 @@ ms.locfileid: "85548358"
 |---------------|-------------|--------------------------------|  
 |![도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **부모 노드**|배경|`Environment.ToolboxContent`<br /><br /> 제목<br /><br /> `Environment.ToolWindowBackground`<br /><br /> 개별 항목 또는 사용할 수 있는 컨트롤이 없는 경우 전체 창|  
 |![도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **자식 노드**|배경|`Environment.ToolboxContent`<br /><br /> 제목<br /><br /> `Environment.ToolWindowBackground`<br /><br /> 개별 항목 또는 사용할 수 있는 컨트롤이 없는 경우 전체 창|  
-|![도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **부모 노드**|테두리|None|  
-|![도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **자식 노드**|테두리|None|  
+|![도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **부모 노드**|테두리|없음|  
+|![도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **자식 노드**|테두리|없음|  
 |![도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **부모 노드**|전경(문자 모양)|`Environment.ToolboxContent`|  
 |![도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **자식 노드**|전경(문자 모양)|`Environment.ToolboxContent`|  
 |![도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **부모 노드**|전경(텍스트)|`Environment.ToolboxContent`|  
@@ -1588,7 +1588,7 @@ ms.locfileid: "85548358"
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
 |![도구 상자 자식 노드 가리키기](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **도구 상자 자식 노드 가리키기**|배경|`Environment.ToolboxContentMouseOver`<br /><br /> 개별 항목만|  
-|![도구 상자 자식 노드 가리키기](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **도구 상자 자식 노드 가리키기**|테두리|None|  
+|![도구 상자 자식 노드 가리키기](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **도구 상자 자식 노드 가리키기**|테두리|없음|  
 |![도구 상자 자식 노드 가리키기](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **도구 상자 자식 노드 가리키기**|전경(텍스트)|`Environment.ToolboxContentMouseOver`<br /><br /> 개별 항목만|  
   
  **Selected**  
@@ -1605,8 +1605,8 @@ ms.locfileid: "85548358"
 |![포커스가 있는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|전경(텍스트)|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
 |![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|배경|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
 |![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|배경|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|테두리|None|  
-|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|테두리|None|  
+|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|테두리|없음|  
+|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|테두리|없음|  
 |![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|전경(문자 모양)|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
 |![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|전경(문자 모양)|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
 |![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|전경(텍스트)|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
@@ -1614,7 +1614,7 @@ ms.locfileid: "85548358"
   
 ## <a name="color-value-reference"></a>색 값 참조  
   
-|구성 요소|부분|요소|시스템 상태|밝게|어둡게|파랑|고대비|
+|구성 요소|부분|요소|시스템 상태|Light|Dark|파랑|고대비|
 |---------|----|-------|-----|-----|----|----|----|  
 |구분선|||기본값|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
 |Expander 문자 모양||전경|기본값|||||  

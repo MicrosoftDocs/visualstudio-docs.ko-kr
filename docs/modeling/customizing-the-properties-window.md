@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548280"
 ---
 # <a name="customize-the-properties-window"></a>속성 창 사용자 지정
@@ -188,7 +188,7 @@ DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성
 > [!NOTE]
 > **Dsl** 프로젝트에서 별도의 코드 파일에 코드를 추가 합니다.
 
-예를 들면 다음과 같습니다.
+예:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +226,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
-<xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. **Dsl** 프로젝트에서 별도의 파일에 코드를 추가 합니다. 예를 들어:
+<xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. **Dsl** 프로젝트에서 별도의 파일에 코드를 추가 합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 /// <summary>
@@ -319,6 +319,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)

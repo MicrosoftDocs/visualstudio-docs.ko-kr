@@ -39,7 +39,7 @@ ms.locfileid: "80705507"
 
 3. VSPackage는 계층 업데이트, 도구 다시 활성화 또는 기타 유사한 작업과 같은 작업을 수행 하 여 수신 하는 이벤트에 대해 작동 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)

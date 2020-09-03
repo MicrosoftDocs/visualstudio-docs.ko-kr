@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 66af4d95707be99865df3df32751215cf5eb10b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181181"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
+# <a name="exception_info"></a>EXCEPTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-디버그 중인 프로그램에서 throw 된 런타임 오류 또는 예외를 설명 합니다.  
+디버깅 중인 프로그램에서 throw 되는 예외 또는 런타임 오류에 대해 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,7 +50,7 @@ public struct EXCEPTION_INFO { 
   
 ## <a name="members"></a>멤버  
  pProgram  
- 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 예외가 발생 한 프로그램을 나타내는 개체입니다.  
+ 예외가 발생 한 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.  
   
  bstrProgramName  
  예외가 발생 한 프로그램의 이름입니다.  
@@ -62,22 +62,22 @@ public struct EXCEPTION_INFO { 
  예외 또는 런타임 오류에 대 한 id 코드입니다.  
   
  dwState  
- 값을 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 예외 상태를 정의 하는 열거형입니다.  
+ 예외의 상태를 정의 하는 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 열거형의 값입니다.  
   
  guidType  
- GUID 언어 식별자를 `guidLang` 또는 `guidEng`합니다.  
+ GUID 언어 식별자 (또는) `guidLang` `guidEng` 입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 대 한 매개 변수로 전달 되는 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 하며 [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) 메서드. 이 구조에 전달 되는 [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 채워야 하는 방법입니다.  
+ 이 구조체는 [setexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 및 [removesetexception](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) 메서드에 매개 변수로 전달 됩니다. 이 구조체는 채울 [Getexception](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 메서드에도 전달 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

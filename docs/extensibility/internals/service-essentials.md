@@ -92,7 +92,7 @@ ms.locfileid: "80705494"
 
     이 코드는 SVsActivityLog 서비스를 가져와 활동 로그에 쓰는 데 사용할 수 있는 IVsActivityLog 인터페이스로 캐스팅 합니다. 예제는 [방법: 활동 로그 사용](../../extensibility/how-to-use-the-activity-log.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [사용 가능한 서비스 목록](../../extensibility/internals/list-of-available-services.md)
 - [서비스 사용 및 제공](../../extensibility/using-and-providing-services.md)

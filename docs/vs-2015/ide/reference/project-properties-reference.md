@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b359d49ed4d670581406da3aad4cf05393f6b446
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662099"
 ---
 # <a name="project-properties-reference"></a>프로젝트 속성 참조
@@ -26,7 +26,7 @@ ms.locfileid: "72662099"
 
 ## <a name="project-properties-pages"></a>프로젝트 속성 페이지
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[프로젝트 디자이너, 애플리케이션 페이지(Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 프로젝트에 대한 애플리케이션 설정 및 속성을 지정하려면 이 페이지를 사용합니다.|
 |[프로젝트 디자이너, 애플리케이션 페이지(C#)](../../ide/reference/application-page-project-designer-csharp.md)|[!INCLUDE[csprcs](../../includes/csprcs-md.md)] 프로젝트에 대한 애플리케이션 설정 및 속성을 지정하려면 이 페이지를 사용합니다.|
@@ -44,5 +44,5 @@ ms.locfileid: "72662099"
 |||
 |||
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [프로젝트 디자이너](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md) 소개

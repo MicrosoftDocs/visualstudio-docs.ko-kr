@@ -56,6 +56,6 @@ ms.locfileid: "80705545"
 
 2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>( `pszMkDocumentNew` , `punkWindowFrame` ) 메서드를 호출 하 여 문서를 새 계층으로 전송 합니다. 다른 이름으로 저장 명령을 수행 하는 계층은이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)

@@ -11,39 +11,39 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 86f7e211c742e4d95f3459d058139854874e7d85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182207"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-기본 동작을 재정의 하는 디버그 엔진을 사용 하도록 설정 된 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] UI 디버그 세션을 종료 하는 경우.  
+디버그 세션을 종료할 때 디버그 엔진이 UI의 기본 동작을 재정의할 수 있도록 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProgramDestroyEventFlags2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 이 인터페이스는 디버그 엔진에서 구현 됩니다. 수 만들고 프로세스의 수명 동안 여러 프로그램을 삭제 하는 호스트에 두는 것이 유용 합니다.  
+ 이 인터페이스는 디버그 엔진에 의해 구현 됩니다. 프로세스의 수명 동안 여러 프로그램을 만들고 삭제할 수 있는 호스트에 유용 합니다.  
   
 ## <a name="methods"></a>메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDebugProgramDestroyEventFlags2`합니다.  
+ 다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramDestroyEventFlags2` .  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|프로그램 검색 플래그를 삭제 합니다.|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|프로그램 소멸 플래그를 검색 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 기본 동작을 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] UI 모든 프로그램 프로그램 전송한 후 디자인 모드로 다시 이동 하는 이벤트를 삭제 합니다. 이 인터페이스에는 해당 동작을 변경 하는 디버그 엔진을 수 있습니다.  
+ UI의 기본 동작은 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 모든 프로그램이 프로그램 제거 이벤트를 보낸 후 디자인 모드로 돌아갑니다. 이 인터페이스를 사용 하면 디버그 엔진에서 해당 동작을 변경할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Msdbg.h  
+ 헤더: Msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

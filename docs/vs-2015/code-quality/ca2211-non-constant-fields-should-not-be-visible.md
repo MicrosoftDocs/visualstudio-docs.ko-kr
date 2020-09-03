@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: aa67c33eac5d618c0a080323720775beea7b68c3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548215"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: 비상수 필드는 노출되면 안 됩니다.
@@ -44,7 +44,7 @@ ms.locfileid: "85548215"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  응용 프로그램을 개발 하 고 있으므로 정적 필드를 포함 하는 형식에 대 한 모든 권한을 보유 하는 경우에는이 규칙에서 경고를 표시 하지 않아도 됩니다. 라이브러리 디자이너에서이 규칙의 경고를 표시 해서는 안 됩니다. 비상수 정적 필드를 사용 하면 개발자가 제대로 사용 하기 어렵게 라이브러리를 사용할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.AvoidStaticNonConstants/cs/FxCop.Usage.AvoidStaticNonConstants.cs#1)]
