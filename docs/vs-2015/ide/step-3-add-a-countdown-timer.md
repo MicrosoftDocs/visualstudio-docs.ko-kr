@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671842"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3단계: 카운트다운 타이머 추가
@@ -22,7 +22,7 @@ ms.locfileid: "72671842"
 이 자습서의 3단계에서는 퀴즈를 푸는 사람이 퀴즈를 마칠 때까지 남은 시간(초)을 추적하도록 카운트다운 타이머를 추가합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대 한 개요는 [자습서 2: 시간이 지정 된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조 하세요.
 
 ### <a name="to-add-a-countdown-timer"></a>카운트다운 타이머를 추가하려면
 

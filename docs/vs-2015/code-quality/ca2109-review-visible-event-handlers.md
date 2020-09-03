@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3ddcab6e0f416837bcd7b01521a6d77ddce691b9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520980"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: 표시되는 이벤트 처리기를 검토하세요.
@@ -58,11 +58,11 @@ ms.locfileid: "85520980"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  코드가 보안 위협에 노출 되지 않도록 신중한 보안 검토 후에만이 규칙에서 경고를 표시 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드는 악의적인 코드에서 오용 될 수 있는 이벤트 처리 메서드를 보여 줍니다.
 
  [!code-csharp[FxCop.Security.EventSecLib#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.EventSecLib/cs/FxCop.Security.EventSecLib.cs#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
  [보안 요청](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bef7c4be2f38d0f50b2a13c7745cb212204769b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670087"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>스크립트를 사용하여 SQL 데이터베이스 만들기
@@ -28,22 +28,22 @@ ms.locfileid: "72670087"
 
  **항목 내용**
 
-- [데이터베이스 스키마가 포함 된 스크립트 만들기](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)
+- [데이터베이스 스키마가 포함된 스크립트 만들기](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)
 
 - [데이터베이스 프로젝트 만들기 및 스키마 가져오기](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)
 
 - [데이터베이스 배포](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 완료 하려면 SQL Server Express LocalDB 또는 다른 SQL 데이터베이스가 설치 되어 있어야 합니다.
 
-## <a name="CreateScript"></a>데이터베이스 스키마가 포함 된 스크립트 만들기
+## <a name="create-a-script-that-contains-a-database-schema"></a><a name="CreateScript"></a> 데이터베이스 스키마가 포함 된 스크립트 만들기
 
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>스키마를 가져올 수 있는 스크립트를 만들려면
 
-1. @No__t_0의 메뉴 모음에서 **파일**  > **새**  > **파일**을 선택 합니다.
+1. 의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **파일**을 선택 합니다.
 
-     **새 파일** 대화 상자가 나타납니다.
+     **새 파일** 대화 상자가 표시됩니다.
 
 2. **범주** 목록에서 **일반**을 선택 합니다.
 
@@ -213,17 +213,17 @@ ms.locfileid: "72670087"
     GO
     ```
 
-5. 메뉴 모음에서 **파일**  >  저장을 선택 하 고**SqlQuery_1를로 저장**합니다.
+5. 메뉴 모음에서 파일을 다른 **File**  >  **이름으로 저장**을 선택 하 여 SqlQuery_1 합니다.
 
      **다른 이름으로 파일 저장** 대화 상자가 나타납니다.
 
-6. **파일 이름** 상자에 `SampleImportScript.sql`를 입력 하 고 파일을 저장할 위치를 기록한 후 **저장** 단추를 선택 합니다.
+6. **파일 이름** 상자에를 입력 하 `SampleImportScript.sql` 고 파일을 저장할 위치를 확인 한 다음 **저장** 단추를 선택 합니다.
 
-7. 메뉴 모음에서 **파일**  > **솔루션 닫기**를 선택 합니다.
+7. 메뉴 모음에서 **파일**  >  **솔루션 닫기**를 선택 합니다.
 
      그런 다음 데이터베이스 프로젝트를 만든 다음 만든 스크립트에서 스키마를 가져옵니다.
 
-## <a name="CreateProject"></a>데이터베이스 프로젝트 만들기 및 스키마 가져오기
+## <a name="create-a-database-project-and-import-a-schema"></a><a name="CreateProject"></a> 데이터베이스 프로젝트 만들기 및 스키마 가져오기
 
 #### <a name="to-create-a-database-project"></a>데이터베이스 프로젝트를 만들려면
 
@@ -236,19 +236,19 @@ ms.locfileid: "72670087"
     > [!NOTE]
     > **다른 언어** 노드는 Visual Studio를 설치할 때 모두 표시 되지 않습니다.
 
-3. **이름** 상자에 `Small Database`을 입력 합니다.
+3. **이름** 상자에을 입력 `Small Database` 합니다.
 
 4. **솔루션에 대 한 디렉터리 만들기** 확인란이 아직 선택 되어 있지 않은 경우 선택 합니다.
 
 5. **소스 제어에 추가** 확인란이 아직 선택 취소 되어 있지 않은 경우 선택 취소 하 고 **확인** 단추를 선택 합니다.
 
-     데이터베이스 프로젝트가 만들어지고 **솔루션 탐색기**표시 됩니다.
+     데이터베이스 프로젝트가 만들어지고 **솔루션 탐색기**에 나타납니다.
 
      그런 다음 스크립트에서 데이터베이스 스키마를 가져옵니다.
 
 #### <a name="to-import-a-database-schema-from-a-script"></a>스크립트에서 데이터베이스 스키마를 가져오려면
 
-1. 메뉴 모음에서 **프로젝트**  > **가져오기**  > **스크립트**를 선택 합니다.
+1. 메뉴 모음에서 **프로젝트**  >  **가져오기**  >  **스크립트**를 선택 합니다.
 
 2. **시작** 페이지에서 텍스트를 검토 한 후 **다음** 단추를 선택 합니다.
 
@@ -270,5 +270,5 @@ ms.locfileid: "72670087"
 
      이 시점에서 데이터베이스는 테이블 및 저장 프로시저와 같은 시스템 개체만 포함 합니다. 데이터베이스를 배포한 후에는 스크립트에서 정의 하는 사용자 테이블과 저장 프로시저가 포함 됩니다.
 
-## <a name="DeployDatabase"></a>데이터베이스 배포
+## <a name="deploy-the-database"></a><a name="DeployDatabase"></a> 데이터베이스 배포
  **F5** 키를 누르면 기본적으로 LocalDB 데이터베이스에 데이터베이스를 배포 (또는 게시) 합니다. 프로젝트에 대 한 속성 페이지를 열고, **디버그** 탭을 선택한 다음, 연결 문자열을 변경 하 여 다른 위치에 데이터베이스를 배포할 수 있습니다.

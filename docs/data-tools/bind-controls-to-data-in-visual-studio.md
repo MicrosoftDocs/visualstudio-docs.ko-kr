@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283036"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 컨트롤 바인딩
@@ -32,7 +32,7 @@ ms.locfileid: "85283036"
 
 | 데이터 원본 | **Windows Forms 디자이너**에서의 끌어서 놓기 지원 | **WPF 디자이너**에서의 끌어서 놓기 지원 | **Silverlight 디자이너**에서의 끌어서 놓기 지원 |
 | - | - | - | - |
-| 데이터 세트 | 예 | 예 | 아니요 |
+| 데이터 세트 | 예 | 예 | 예 |
 | 엔터티 데이터 모델 | 예<sup>1</sup> | 예 | 예 |
 | LINQ to SQL 클래스 | 아니요<sup>2</sup> | 아니요<sup>2</sup> | 아니요<sup>2</sup> |
 | [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF 서비스, 웹 서비스 등의 서비스 | 예 | 예 | 예 |
@@ -55,7 +55,7 @@ ms.locfileid: "85283036"
 
 다음 표에서는 컨트롤을 데이터에 바인딩하기 위해 수행 하는 가장 일반적인 몇 가지 작업을 보여 줍니다.
 
-|Task|자세한 정보|
+|Task|추가 정보|
 |----------| - |
 |**데이터 원본** 창을 엽니다.|편집기에서 디자인 화면을 열고 **View**  >  **데이터 원본**보기를 선택 합니다.|
 |프로젝트에 데이터 원본을 추가합니다.|[새 데이터 원본 추가](../data-tools/add-new-data-sources.md)|
@@ -66,7 +66,7 @@ ms.locfileid: "85283036"
 |UI에 표시 되는 데이터를 필터링 합니다.|[Windows Forms 애플리케이션에서 데이터 필터링 및 정렬](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |컨트롤의 캡션을 사용자 지정 합니다.|[Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Windows Forms 데이터 바인딩](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770834"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>방법: C# 프로젝트에 애플리케이션 구성 파일 추가

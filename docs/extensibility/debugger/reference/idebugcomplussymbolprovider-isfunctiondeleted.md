@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlus 기호 제공자::기능 삭제 | 마이크로 소프트 문서
+title: 'IDebugComPlusSymbolProvider:: IsFunctionDeleted | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7dd8b5b86b6b8c89d11326b817f2718a3ee4ad3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733712"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-지정된 디버그 주소의 함수가 삭제되는지 확인합니다.
+지정 된 디버그 주소의 함수가 삭제 되었는지 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,13 +39,13 @@ int IsFunctionDeleted(
 
 ## <a name="parameters"></a>매개 변수
 `pAddress`\
-【인】 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스로 표시되는 디버그 주소입니다. 이 주소는 METHOD_ADDRESS 있어야 합니다.
+진행 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스가 나타내는 디버그 주소입니다. 이 주소는 METHOD_ADDRESS 이어야 합니다.
 
-## <a name="return-value"></a>Return Value
-함수가 삭제되면 을 `S_OK`반환합니다. 함수가 있는 경우 `S_FALSE`을 반환합니다.
+## <a name="return-value"></a>반환 값
+함수를 삭제 하면이 반환 `S_OK` 됩니다. 함수가 있으면를 반환 `S_FALSE` 합니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugComPlusSymbol공급자](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **CDebugSymbolProvider** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(
@@ -92,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

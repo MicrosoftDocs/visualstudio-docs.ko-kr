@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b2d7811a40e87cb5fd19785fc387aad02a7ad07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201740"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
@@ -35,8 +35,8 @@ ms.locfileid: "68201740"
 HRESULT WINAPI SuspendTracking(void);  
 ```  
   
-## <a name="return-value"></a>반환 값  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) [성공] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 추적 일시 중지 된 경우에 비트가 설정 합니다.  
+## <a name="return-value"></a>Return Value  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)를 사용 하 여<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 비트 집합이 일시 중단 되었습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** FileTracker.h  

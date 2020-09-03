@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519914"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>방법: 프로그래밍 방식으로 Outlook에서 항목 이동
@@ -24,7 +24,7 @@ ms.locfileid: "85519914"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]
 
 ## <a name="compile-the-code"></a>코드 컴파일
@@ -34,7 +34,7 @@ ms.locfileid: "85519914"
 
 - 필드의 단어 **테스트** 와 함께 도착 하는 전자 메일 메시지입니다 `Subject` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [폴더 작업](../vsto/working-with-folders.md)
 - [방법: 프로그래밍 방식으로 이름으로 폴더 검색](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [방법: 프로그래밍 방식으로 특정 폴더 내에서 검색](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

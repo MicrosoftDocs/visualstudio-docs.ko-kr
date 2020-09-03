@@ -12,43 +12,43 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200946"
 ---
-# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>새로운&#39;Visual Studio 2015에서 소스 제어 기능
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>Visual Studio 2015에서 소스 제어의 새로운 기능&#39;
 
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 소스 제어 VSPackage를 구현 하 여 긴밀히 통합된 원본 제어 솔루션을 제공할 수 있습니다. 이 섹션에서는 소스 제어 Vspackage의 기능을 설명 하 고 구현 하는 단계 개요를 제공 합니다.  
+에서 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 소스 제어 VSPackage을 구현 하 여 긴밀 하 게 통합 된 소스 제어 솔루션을 제공할 수 있습니다. 이 섹션에서는 소스 제어 Vspackage의 기능에 대해 설명 하 고 구현 단계에 대 한 개요를 제공 합니다.  
   
 ## <a name="the-source-control-vspackage"></a>소스 제어 VSPackage  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 두 가지 유형의 원본 제어 솔루션을 지원합니다. 모든 버전의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 소스 제어 플러그 인 API 기반 통합할 수도 있습니다 플러그 인입니다. 심층 통합을 제공 하는 소스 제어 VSPackage를 만들 수도 있습니다 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 경로 높은 수준의 숙련도 및 자율성을 필요로 하는 원본 제어 솔루션에 적합 합니다.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 에서는 두 가지 형식의 원본 제어 솔루션을 지원 합니다. 모든 버전의에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 원본 제어 플러그 인 API 기반 플러그 인을 계속 통합할 수 있습니다. [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]높은 수준의 복잡성과 자율성이 필요한 소스 제어 솔루션에 적합 한 심층 통합 경로를 제공 하는 소스 제어에 대 한 VSPackage 만들 수도 있습니다.  
   
- VSPackage는 거의 모든 종류의 기능을 추가할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 소스 제어 VSPackage에 대 한 전체 소스 제어 기능을 제공 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 소스 제어 시스템을 사용 하 여 백 엔드 통신을 사용자에 게 UI에서.  
+ VSPackage는 거의 모든 종류의 기능을에 추가할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . 소스 제어 VSPackage는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 사용자에 게 제공 되는 UI에서 원본 제어 시스템을 사용 하 여 백 엔드 통신으로의 전체 소스 제어 기능을 제공 합니다.  
   
- 소스 제어 VSPackage를 구현 하는 "양자 택일" 전략에 필요 합니다. 소스 제어 VSPackage의 작성자 인터페이스 뿐만 아니라 상당한 노력을 구현 하는 다양 한 원본 제어 인터페이스 및 새 UI 요소 (대화 상자, 메뉴 및 도구 모음)는 전체 소스 제어 기능을 처리 하기 위해 투자 해야 합니다. 성공적으로 통합 하는 데 필요한 모든 패키지의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
+ 소스 제어 VSPackage를 구현 하려면 "모두 또는 없음" 전략이 필요 합니다. 소스 제어 VSPackage의 작성자는 전체 소스 제어 기능을 포함 하 고, 패키지에 성공적으로 통합 하는 데 필요한 인터페이스를 포함 하 여 다양 한 소스 제어 인터페이스 및 새 UI 요소 (대화 상자, 메뉴, 도구 모음)를 구현 하는 데 상당한 노력을 투자 해야 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
- 다음 단계를 소스 제어 패키지를 구현 하는 데 필요한 사항을의 일반적인 개요를 제공 합니다. 자세한 내용은 참조 하세요 [소스 제어 VSPackage를 만드는](../../extensibility/internals/creating-a-source-control-vspackage.md)합니다.  
+ 다음 단계에서는 소스 제어 패키지를 구현 하는 데 필요한 사항에 대 한 일반적인 개요를 제공 합니다. 자세한 내용은 [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)를 참조 하세요.  
   
-1. 개인 원본 제어 서비스 proffers 된 VSPackage를 만듭니다.  
+1. 개인 소스 제어 서비스를 지 원하는 VSPackage를 만듭니다.  
   
-2. 제공 되는 원본 제어와 관련 된 서비스에서 인터페이스를 구현할 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (예를 들어 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> 인터페이스).  
+2. 및 인터페이스와 같이 제공 되 된 소스 제어 관련 서비스에서 인터페이스를 구현 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> 합니다.  
   
 3. 소스 제어 VSPackage를 등록 합니다.  
   
-4. 모든 소스 제어 메뉴 항목, 대화 상자, 도구 모음 및 상황에 맞는 메뉴를 포함 하 여 UI를 구현 합니다.  
+4. 메뉴 항목, 대화 상자, 도구 모음 및 상황에 맞는 메뉴를 비롯 한 모든 소스 제어 UI를 구현 합니다.  
   
-5. 모든 소스 제어와 관련 된 이벤트 이며 VSPackage에서 처리 해야 하는 경우 소스 제어 VSackage 전달 됩니다.  
+5. 모든 소스 제어 관련 이벤트는 활성 상태이 고 VSPackage에서 처리 해야 하는 경우 소스 제어 VSackage 전달 됩니다.  
   
-6. 소스 제어 VSPackage 구현 같은 이벤트를 수신 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> Track 프로젝트 문서 TPD () 이벤트 뿐만 아니라 인터페이스 (구현 되는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 인터페이스) 필요한 조치를 취합니다.  
+6. 소스 제어 VSPackage는 인터페이스를 구현 하는 것과 같은 이벤트를 수신 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> 고, 인터페이스에 의해 구현 된 대로 TPD (Project Document) 이벤트를 추적 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 하 고 필요한 작업을 수행 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
- [개요](../../extensibility/internals/source-control-integration-overview.md)   
+ [설명은](../../extensibility/internals/source-control-integration-overview.md)   
  [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)

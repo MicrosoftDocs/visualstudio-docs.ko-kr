@@ -1,5 +1,5 @@
 ---
-title: 전문 배포 처리 | 마이크로 소프트 문서
+title: 특수 배포 처리 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708216"
 ---
 # <a name="handle-specialized-deployment"></a>특수 배포 처리
-배포는 프로젝트에 대한 선택적 작업입니다. 예를 들어 웹 프로젝트는 프로젝트가 웹 서버를 업데이트할 수 있도록 배포를 지원합니다. 마찬가지로 스마트 **장치** 프로젝트는 빌드된 응용 프로그램을 대상 장치에 복사하는 배포를 지원합니다. 프로젝트 하위 유형은 인터페이스를 구현하여 특수 배포 동작을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 제공할 수 있습니다. 이 인터페이스는 배포 작업의 전체 집합을 정의합니다.
+배포는 프로젝트에 대 한 선택적 작업입니다. 예를 들어 웹 프로젝트는 프로젝트가 웹 서버를 업데이트할 수 있도록 배포를 지원 합니다. 마찬가지로, **스마트 장치** 프로젝트는 배포를 지원 하 여 빌드된 응용 프로그램을 대상 장치에 복사 합니다. 프로젝트 하위 유형은 인터페이스를 구현 하 여 특수 한 배포 동작을 제공할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> . 이 인터페이스는 전체 배포 작업 집합을 정의 합니다.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>
 
@@ -37,13 +37,13 @@ ms.locfileid: "80708216"
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>
 
-  실제 배포 작업은 사용자 상호 작용에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 더욱 민감하게 반응할 수 있도록 별도의 스레드에서 수행해야 합니다. 제공된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 메서드는 백그라운드에서 비동기적으로 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 호출하고 작동하므로 환경이 언제든지 배포 작업의 상태를 쿼리하거나 필요한 경우 작업을 중지할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 사용자가 배포 명령을 선택할 때 인터페이스 배포 작업은 환경에 의해 호출됩니다.
+  실제 배포 작업은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 상호 작용에 더욱 응답성을 높일 수 있도록 별도의 스레드에서 수행 해야 합니다. 에서 제공 하는 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 에서 비동기적으로 호출 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 되며 백그라운드에서 작동 하 여 언제 든 지 배포 작업 상태를 쿼리하거나 필요한 경우 작업을 중지할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>인터페이스 배포 작업은 사용자가 배포 명령을 선택할 때 환경에서 호출 됩니다.
 
-  배포 작업이 시작또는 종료되었음을 환경에 알리려면 프로젝트 하위 유형이 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> 메서드를 호출해야 합니다.
+  배포 작업이 시작 또는 종료 되었음을 환경에 알리려면 프로젝트 하위 형식에서 및 메서드를 호출 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> .
 
-## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>하위 유형 프로젝트에서 특수 배포를 처리하려면
+## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>하위 형식 프로젝트에의 한 특수 배포를 처리 하려면
 
-- 배포 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> 상태 이벤트에 대한 알림을 수신하도록 환경을 등록하는 메서드를 구현합니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>배포 상태 이벤트의 알림을 받을 환경을 등록 하려면 메서드를 구현 합니다.
 
     ```vb
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()
@@ -74,7 +74,7 @@ ms.locfileid: "80708216"
 
     ```
 
-- 환경 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> 등록을 취소하여 배포 상태 이벤트에 대한 알림을 받는 메서드를 구현합니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>배포 상태 이벤트에 대 한 알림을 받기 위해 환경의 등록을 취소 하는 메서드를 구현 합니다.
 
     ```vb
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer
@@ -92,7 +92,7 @@ ms.locfileid: "80708216"
 
     ```
 
-- 응용 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> 프로그램과 관련된 커밋 작업을 수행하는 메서드를 구현합니다.  이 메서드는 주로 데이터베이스 배포에 사용 됩니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>응용 프로그램과 관련 된 커밋 작업을 수행 하려면 메서드를 구현 합니다.  이 메서드는 주로 데이터베이스 배포에 사용 됩니다.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -110,7 +110,7 @@ ms.locfileid: "80708216"
 
     ```
 
-- 롤백 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> 작업을 수행하는 메서드를 구현합니다. 이 메서드를 호출 하는 경우 배포 프로젝트는 변경 내용을 롤백 하 고 프로젝트의 상태를 복원 하는 적절 한 작업을 수행 해야 합니다. 이 메서드는 주로 데이터베이스 배포에 사용 됩니다.
+- 메서드를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> 하 여 롤백 작업을 수행 합니다. 이 메서드가 호출 되 면 배포 프로젝트에서 변경 내용을 롤백하고 프로젝트 상태를 복원 하는 데 적절 한 모든 작업을 수행 해야 합니다. 이 메서드는 주로 데이터베이스 배포에 사용 됩니다.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -128,7 +128,7 @@ ms.locfileid: "80708216"
 
     ```
 
-- 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> 구현하여 프로젝트가 배포 작업을 시작할 수 있는지 여부를 결정합니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>프로젝트에서 배포 작업을 시작할 수 있는지 여부를 확인 하려면 메서드를 구현 합니다.
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -161,7 +161,7 @@ ms.locfileid: "80708216"
 
     ```
 
-- 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> 구현하여 배포 작업이 성공적으로 완료되었는지 여부를 확인합니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>배포 작업이 성공적으로 완료 되었는지 여부를 확인 하려면 메서드를 구현 합니다.
 
     ```vb
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer
@@ -184,7 +184,7 @@ ms.locfileid: "80708216"
 
     ```
 
-- 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> 구현하여 별도의 스레드에서 배포 작업을 시작합니다. `Deploy` 메서드 내부에 응용 프로그램의 배포와 관련된 코드를 배치합니다.
+- 메서드를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> 하 여 별도의 스레드에서 배포 작업을 시작 합니다. 응용 프로그램 배포와 관련 된 코드를 메서드 내에 배치 합니다 `Deploy` .
 
     ```vb
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer
@@ -241,7 +241,7 @@ ms.locfileid: "80708216"
 
     ```
 
-- 배포 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> 작업을 중지하는 메서드를 구현합니다. 이 메서드는 사용자가 배포 프로세스 중에 **취소** 단추를 누를 때 호출됩니다.
+- 메서드를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> 하 여 배포 작업을 중지 합니다. 이 메서드는 배포 프로세스 중에 사용자가 **취소** 단추를 누를 때 호출 됩니다.
 
     ```vb
     Public Function StopDeploy(ByVal fSync As Integer) As Integer
@@ -287,7 +287,7 @@ ms.locfileid: "80708216"
     ```
 
 > [!NOTE]
-> 이 항목에서 제공되는 모든 코드 예제는 [VSSDK 샘플에서](https://github.com/Microsoft/VSSDK-Extensibility-Samples)더 큰 예제의 일부입니다.
+> 이 [항목에서 제공](https://github.com/Microsoft/VSSDK-Extensibility-Samples)하는 모든 코드 예제는 더 큰 예제의 구성 요소입니다.
 
-## <a name="see-also"></a>참조
-- [프로젝트 하위 유형](../../extensibility/internals/project-subtypes.md)
+## <a name="see-also"></a>추가 정보
+- [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)

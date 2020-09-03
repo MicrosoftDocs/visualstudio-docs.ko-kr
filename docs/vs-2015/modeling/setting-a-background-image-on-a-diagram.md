@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671201"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
@@ -57,7 +57,7 @@ ms.locfileid: "72671201"
 
 16. **새 항목 추가** 대화 상자의 **템플릿** 목록에서 **코드 파일**을 클릭 합니다.
 
-17. **이름** 상자에 `BackgroundImage.cs`를 입력 하 고 **추가**를 클릭 합니다.
+17. **이름** 상자에 `BackgroundImage.cs` 를 입력 하 고 **추가**를 클릭 합니다.
 
 18. 네임스페이스, 다이어그램 클래스 이름 및 이미지 파일 리소스 이름을 조정하여 다음 코드를 BackgroundImage.cs 파일에 복사합니다.
 
@@ -104,5 +104,5 @@ ms.locfileid: "72671201"
 
      프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md) [텍스트 및 이미지 필드 사용자 지정](../modeling/customizing-text-and-image-fields.md) [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md) [도메인 특정 언어](../modeling/writing-code-to-customise-a-domain-specific-language.md) 를 사용자 지정 하는 코드 작성

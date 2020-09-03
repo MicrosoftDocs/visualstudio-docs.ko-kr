@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b61b248876f701e9d5286063f28b4f71d73e18b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671730"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>방법: 도메인별 언어의 네임스페이스 변경
@@ -49,11 +49,11 @@ ms.locfileid: "72671730"
 
 10. Visual Studio 실험적 인스턴스를 다시 설정 합니다.
 
-    1. **\Users \\** _{your name}_ **\AppData\Local\Microsoft\VisualStudio \\** 를 삭제 \*Exp
+    1. ** \\ \Users**_{your name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp** 삭제
 
     2. Windows **시작** 메뉴에서 **모든 프로그램**, **Microsoft Visual Studio 2010 SDK**, **도구**, **실험적 인스턴스 다시 설정**을 차례로 선택 합니다.
 
 11. **빌드** 메뉴에서 **솔루션 다시 빌드**를 선택 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

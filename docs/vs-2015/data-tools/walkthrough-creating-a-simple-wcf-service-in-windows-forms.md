@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 366567a13ad23ab19ffd88f19997b92025abe952
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671071"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>연습: Windows Forms에서 간단한 WCF 서비스 만들기
@@ -43,7 +43,7 @@ ms.locfileid: "72671071"
 
 3. ![IService1 파일](../data-tools/media/wcf2.png "wcf2")
 
-     **솔루션 탐색기**에서 IService1 또는 IService1.cs를 두 번 클릭 하 고 다음 줄을 찾습니다.
+     **솔루션 탐색기**에서 IService1.vb 또는 IService1.cs를 두 번 클릭하고 다음 줄을 찾습니다.
 
      [!code-csharp[WCFWalkthrough#4](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1_2.cs#4)]
      [!code-vb[WCFWalkthrough#4](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1_2.vb#4)]
@@ -57,7 +57,7 @@ ms.locfileid: "72671071"
 
 4. ![Service1 파일](../data-tools/media/wcf3.png "wcf3")
 
-     **솔루션 탐색기**에서 Service1 또는 Service1.cs를 두 번 클릭 하 고 다음 줄을 찾습니다.
+     **솔루션 탐색기**에서 Service1.vb 또는 Service1.cs를 두 번 클릭하고 다음 줄을 찾습니다.
 
      [!code-csharp[WCFWalkthrough#5](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1_2.cs#5)]
      [!code-vb[WCFWalkthrough#5](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1_2.vb#5)]
@@ -75,7 +75,7 @@ ms.locfileid: "72671071"
 
 2. **WCF 테스트 클라이언트** 폼에서 **IService1** 아래의 **GetData()** 메서드를 두 번 클릭합니다. **GetData** 탭이 표시 됩니다.
 
-     ![GetData&#40; &#41; 메서드](../data-tools/media/wcf4.png "wcf4")
+     ![GetData&#40;&#41; 메서드](../data-tools/media/wcf4.png "wcf4")
 
 3. **요청** 상자에서 **값** 필드와 형식 `Hello`를 선택합니다.
 
@@ -91,11 +91,11 @@ ms.locfileid: "72671071"
 
 #### <a name="to-reference-a-wcf-service"></a>WCF 서비스를 참조하려면
 
-1. **파일** 메뉴에서 **추가**를 가리킨 다음, **새 프로젝트**를 클릭합니다.
+1. **파일** 메뉴에서 **추가** 를 가리킨 다음 **새 프로젝트**를 클릭 합니다.
 
-2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **시각적 C#**  노드를 확장 하 고 **Windows**를 선택한 다음 **Windows Forms 응용 프로그램**을 선택 합니다. **확인**을 클릭하여 프로젝트를 엽니다.
+2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **Visual c #** 노드를 확장 하 고 **Windows**를 선택한 다음 **Windows Forms 응용 프로그램**을 선택 합니다. **확인**을 클릭하여 프로젝트를 엽니다.
 
-     ![Windows Forms 응용 프로그램 프로젝트](../data-tools/media/wcf7.png "wcf7")
+     ![Windows Forms 애플리케이션 프로젝트](../data-tools/media/wcf7.png "wcf7")
 
 3. **WindowsApplication1**을 마우스 오른쪽 단추로 클릭하고 **서비스 참조 추가**를 클릭합니다. **서비스 참조 추가** 대화 상자가 표시 됩니다.
 
@@ -122,9 +122,9 @@ ms.locfileid: "72671071"
 
 4. **솔루션 탐색기**에서 **WindowsApplication1**을 마우스 오른쪽 단추로 클릭한 다음, **시작 프로젝트로 설정**을 클릭합니다.
 
-5. **F5** 키를 눌러 프로젝트를 실행합니다. 텍스트를 입력하고 단추를 클릭합니다. 레이블에 "입력한 내용:"과 입력한 텍스트가 표시됩니다.
+5. **F5** 키를 눌러 프로젝트를 실행 합니다. 텍스트를 입력하고 단추를 클릭합니다. 레이블에 "입력한 내용:"과 입력한 텍스트가 표시됩니다.
 
-     ![결과를 표시 하는 폼입니다.](../data-tools/media/wcf10.png "wcf10")
+     ![결과가 표시된 폼](../data-tools/media/wcf10.png "wcf10")
 
-## <a name="see-also"></a>관련 항목:
- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio에서 서비스 및 WCF Data Services Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

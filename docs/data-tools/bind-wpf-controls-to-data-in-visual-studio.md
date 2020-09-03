@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 27d0c14bcf09a3b0d30cd23dea0f8348c45fcab7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282883"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
@@ -33,7 +33,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 다음 표에서는 **데이터 원본** 창에서 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]로 항목을 끌어서 수행할 수 있는 작업을 보여 줍니다.
 
-|Task|자세한 정보|
+|Task|추가 정보|
 |----------| - |
 |새 데이터 바인딩된 컨트롤을 만듭니다.<br /><br /> 기존 컨트롤을 데이터에 바인딩합니다.|[데이터 집합에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |부모-자식 관계로 관련 데이터를 표시하는 컨트롤을 만듭니다. 그러면 사용자가 어느 한 컨트롤에서 부모 데이터 레코드를 선택하면 선택한 부모 레코드의 관련 자식 데이터가 다른 한 컨트롤에 표시됩니다.|[WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -54,8 +54,8 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 | - | - | - |
 | 데이터 세트 | 예 | 예 |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 예 | 예 |
-| 서비스 | 예 | 아니요 |
-| Object | 예 | 아니요 |
+| 서비스 | 예 | 예 |
+| Object | 예 | 예 |
 
 ### <a name="datasets"></a>데이터 세트
 
@@ -83,7 +83,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 - 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] 이벤트 처리기를 만듭니다. 이벤트 처리기는 메서드를 호출 `Get<EntityName>Query` 하 여 엔터티를 데이터로 채우고 <xref:System.Windows.Data.CollectionViewSource> 컨테이너의 리소스에서를 검색 한 다음 첫 번째 데이터 항목을 현재 항목으로 만듭니다. <xref:System.Windows.FrameworkElement.Loaded>이벤트 처리기가 이미 있는 경우 Visual Studio는 기존 이벤트 처리기에이 코드를 추가 합니다.
 
-### <a name="services"></a>서비스
+### <a name="services"></a>Services
 
 **데이터 소스** 창에서 디자이너로 서비스 개체 또는 속성을 끌어 오면 Visual Studio에서 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 데이터 바인딩된 컨트롤을 만들거나 기존 컨트롤을 개체나 속성에 바인딩하는을 생성 합니다. 그러나 Visual Studio는 프록시 서비스 개체를 데이터로 채우는 코드를 생성 하지 않습니다. 이 코드를 직접 작성해야 합니다. 이 작업을 수행 하는 방법을 보여 주는 예제는 [WCF 데이터 서비스에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)을 참조 하세요.
 

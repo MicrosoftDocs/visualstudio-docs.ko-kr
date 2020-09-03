@@ -15,10 +15,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770965"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio 시작 시간 최적화

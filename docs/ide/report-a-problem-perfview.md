@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
 ms.openlocfilehash: 9ac4d90a0da15fe2415ada02d6e8e1cdbe11af56
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770817"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>PerfView를 사용하여 ETL 추적 수집

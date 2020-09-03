@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetDocument컨텍스트 | 마이크로 소프트 문서
+title: 'IDebugCanStopEvent2:: GetDocumentContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e3dc5e4bd7144db7fa94425371488bfd8c0e57ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734547"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-이 이벤트의 위치를 설명하는 문서 컨텍스트를 가져옵니다.
+이 이벤트의 위치를 설명 하는 문서 컨텍스트를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,17 +41,17 @@ int GetDocumentContext ( 
 
 ## <a name="parameters"></a>매개 변수
 `ppDocCxt`\
-【아웃】 현재 코드 위치에 해당하는 소스 파일 문서의 위치를 나타내는 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스를 반환합니다.
+제한이 소스 파일 문서에서 현재 코드 위치에 해당 하는 위치를 나타내는 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 일반적으로 문서 컨텍스트는 원본 파일의 위치로 생각할 수 있습니다.
+ 일반적으로 문서 컨텍스트는 소스 파일의 위치로 간주할 수 있습니다.
 
- 코드 명령방향인 코드 컨텍스트를 얻으려면 [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) 메서드를 호출합니다.
+ 코드 지침을 중심으로 하는 코드 컨텍스트를 가져오려면 [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)

@@ -1,5 +1,5 @@
 ---
-title: Just-in-time, 디버깅, 옵션 대화 상자 | Microsoft Docs
+title: 옵션 대화 상자, 디버깅, Just-In-Time | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201111"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅, Just-In-Time
@@ -62,5 +62,5 @@ ms.locfileid: "68201111"
  **액세스가 거부되었습니다. 관리자에게 문의하여 Just-In-Time 디버깅을 사용하도록 설정하거나 Visual Studio 설치를 복구하십시오.**  
   
 ## <a name="see-also"></a>관련 항목  
- [디버깅, 옵션 대화 상자](../debugger/debugging-options-dialog-box.md)   
+ [옵션 대화 상자, 디버깅](../debugger/debugging-options-dialog-box.md)   
  [방법: 디버거 설정 지정](../debugger/how-to-specify-debugger-settings.md)
