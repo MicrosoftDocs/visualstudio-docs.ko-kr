@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로퍼티3::D에스트로이오브젝트ID | 마이크로 소프트 문서
+title: IDebugProperty3::D estroyObjectID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f465bc06712c5032c6e90288ebd02406de4f2330
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721205"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-호출자는 더 이상 다른 모든 속성에서 이 속성을 고유하게 식별하는 데 관심이 없음을 나타내면서 이 속성과 연결된 고유 ID를 삭제합니다.
+이 속성에 연결 된 고유 ID를 소멸 시킵니다 .이는 호출자가이 속성을 다른 모든 속성에서 고유 하 게 식별 하는 데 더 이상 관심이 없음을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,13 +38,13 @@ int DestroyObjectID();
 ```
 
 ## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 디버그 엔진이 속성에 대해 고유한 ID를 지원할 필요가 없는 경우(이미 내부적으로 고유하게 추적하기 `E_NOTIMPL` 때문에) 이 메서드에 대해 반환할 수 있습니다.
+ 디버그 엔진이 속성의 고유 Id를 지원할 필요가 없는 경우 (이미 고유 하 게 내부적으로 추적 하기 때문에)이 메서드에 대해를 반환 하기만 하면 됩니다 `E_NOTIMPL` .
 
- 고유 ID는 호출자가 이 속성이 다른 모든 속성 간에 고유하게 식별되도록 하려고 할 때 [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) 메서드를 호출하여 만들어집니다.
+ 호출자가이 속성이 다른 모든 속성에서 고유 하 게 식별 되는지 확인 하려는 경우 [Createobjectid](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) 메서드를 호출 하 여 고유한 id를 만듭니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801050"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 레거시 분석 구성
@@ -97,6 +97,6 @@ Visual Studio에서 코드 분석 [규칙 집합](../code-quality/rule-set-refer
 
 5. 프로젝트의 **규칙 집합** 필드를 선택한 다음 적용 하려는 규칙 집합의 이름을 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)
