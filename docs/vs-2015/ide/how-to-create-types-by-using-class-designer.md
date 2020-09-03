@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533148"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>방법: 클래스 디자이너를 사용하여 형식 만들기
@@ -36,13 +36,13 @@ ms.locfileid: "85533148"
 
 - [형식 멤버에 사용자 지정 특성 적용](#CustAttributeMember)
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>새 형식 만들기
+## <a name="create-a-new-type"></a><a name="CreateType"></a> 새 형식 만들기
 
 1. 도구 상자의 클래스 디자이너에서 이 중 하나를 클래스 다이어그램으로 끌어 옵니다.
 
     - **클래스** 또는 **추상 클래스**
 
-    - **Enum**
+    - **열거형**
 
     - **인터페이스**
 
@@ -50,7 +50,7 @@ ms.locfileid: "85533148"
 
     - **대리자**
 
-    - **모듈**(VB에만 해당)
+    - **모듈** (VB에만 해당)
 
 2. 형식 이름을 지정합니다. 그 다음 액세스 수준을 선택합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "85533148"
     |열거형|열거형을 구성하고 있는 필드 값|
     |인터페이스|인터페이스를 구성하는 메서드, 속성 및 이벤트|
     |대리자|대리자를 정의하는 매개 변수|
-    |Module|모듈을 정의하는 메서드, 속성, 필드, 이벤트, 생성자(메서드) 및 상수|
+    |모듈|모듈을 정의하는 메서드, 속성, 필드, 이벤트, 생성자(메서드) 및 상수|
 
      [멤버 만들기](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)를 참조하세요.
 
@@ -84,7 +84,7 @@ ms.locfileid: "85533148"
 
      완료되면 사용자 지정 특성이 해당 형식에 적용됩니다.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>형식 멤버에 사용자 지정 특성 적용
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> 형식 멤버에 사용자 지정 특성 적용
 
 1. 클래스 다이어그램에서 형식 모양에 있는 멤버의 이름을 클릭하거나 클래스 세부 내용 창에서 해당 행을 클릭합니다.
 
@@ -94,5 +94,5 @@ ms.locfileid: "85533148"
 
      완료되면 사용자 지정 특성이 해당 형식에 적용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [방법: 형식 간의 상속 만들기 (클래스 디자이너)](../ide/how-to-create-inheritance-between-types-class-designer.md) [방법: 형식 간의 연결 만들기 (클래스 디자이너)](../ide/how-to-create-associations-between-types-class-designer.md) [형식 멤버 만들기 및 구성 (클래스 디자이너)](../ide/creating-and-configuring-type-members-class-designer.md) [클래스 다이어그램 작업 (클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md) 클래스 [및 형식 디자인 (클래스 디자이너)](../ide/designing-classes-and-types-class-designer.md)

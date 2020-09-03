@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4e485375c12564b5416c79bd3a41dedb1da76dc0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533447"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: 목록은 강력한 형식이어야 합니다.
@@ -60,7 +60,7 @@ ms.locfileid: "85533447"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  새 컬렉션을 확장 하는 형식에서 강력한 형식을 결정 하는 연결 된 목록과 같은 새 개체 기반 컬렉션을 구현 하는 경우에는이 규칙의 경고를 표시 하지 않습니다. 이러한 형식은이 규칙을 준수 하 고 강력한 형식의 멤버를 노출 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서 형식은 `YourType` 모든 강력한 형식의 컬렉션에 대해를 확장 합니다 <xref:System.Collections.CollectionBase?displayProperty=fullName> . 는 <xref:System.Collections.CollectionBase> 인터페이스의 명시적 구현을 제공 합니다 <xref:System.Collections.IList> . 따라서 및에 대해 강력한 형식의 멤버를 제공 해야 합니다 <xref:System.Collections.IList> <xref:System.Collections.ICollection> .
 
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IListStrongTypes/cs/FxCop.Design.IListStrongTypes.cs#1)]
@@ -70,7 +70,7 @@ ms.locfileid: "85533447"
 
  [CA1038: 열거자는 강력한 형식이어야 합니다.](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.IList?displayProperty=fullName>

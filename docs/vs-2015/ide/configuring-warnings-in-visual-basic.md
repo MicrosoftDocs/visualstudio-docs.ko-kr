@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619307"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
@@ -38,10 +38,10 @@ ms.locfileid: "72619307"
 
  컴파일러의 **/warnaserror** 명령줄 옵션을 사용하여 경고를 오류로 처리할지 여부를 지정할 수도 있습니다. \+ 또는 -를 사용하여 이 목록에 쉼표로 구분된 목록을 추가하면 어떤 경고를 오류 또는 경고로 처리할지 지정할 수 있습니다. 다음 표에서는 가능한 옵션을 자세히 설명합니다.
 
-|명령줄 옵션|설명|
+|명령줄 옵션|지정 내용|
 |--------------------------|---------------|
 |`/warnaserror+`|모든 경고를 오류로 처리합니다.|
-|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 기본값입니다.|
+|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 이것이 기본값입니다.|
 |`/warnaserror+:<warning list` `>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리합니다.|
 |`/warnaserror-:<warning list>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리하지 않습니다.|
 |`/nowarn`|경고를 보고하지 않습니다.|
@@ -49,10 +49,10 @@ ms.locfileid: "72619307"
 
  경고 목록에는 오류로 처리되어야 하는 경고의 오류 ID 번호가 포함되고 이 오류 ID 번호는 명령줄 옵션과 함께 특정 경고를 켜거나 끄는 데 사용될 수 있습니다. 경고 목록에 잘못된 번호가 있으면 오류가 보고됩니다.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
  이 명령줄 인수 예제에 대한 표에서는 각 인수가 수행하는 작업을 설명합니다.
 
-|인수|설명|
+|인수|Description|
 |--------------|-----------------|
 |`vbc /warnaserror`|모든 경고를 오류로 처리하도록 지정합니다.|
 |`vbc /warnaserror:42024`|경고 42024가 오류로 처리되도록 지정합니다.|
@@ -90,7 +90,7 @@ ms.locfileid: "72619307"
  ID: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>사용되지 않는 로컬 변수 경고
- 로컬 변수가 선언되었지만 참조된 적이 없는 경우 생성됩니다. 기본값은 켜기입니다.
+ 로컬 변수가 선언되었지만 참조된 적이 없는 경우 생성됩니다. 이 옵션은 기본적으로 사용됩니다.
 
  ID: 42024
 
@@ -119,5 +119,5 @@ ms.locfileid: "72619307"
 
  ID: 42029, 42031
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [예외 도우미 대화 상자](../debugger/exception-assistant-dialog-box.md) [오류 유형](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f) [... Catch ... Finally 문](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b) [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) [/Warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1) [컴파일 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [컴파일러 경고 (기본적으로 해제](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8) 됨)

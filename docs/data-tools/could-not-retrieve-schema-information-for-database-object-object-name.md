@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f730484ade07689f2a50e19a263adbcd10693151
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282698"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>데이터베이스 개체 의 스키마 정보를 검색할 수 없습니다.\<object name>

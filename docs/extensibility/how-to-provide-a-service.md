@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905765"
 ---
 # <a name="how-to-provide-a-service"></a>방법: 서비스 제공
 VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 수 있습니다. 서비스를 제공 하려면 VSPackage이 서비스를 Visual Studio에 등록 하 고 서비스를 추가 해야 합니다.
 
- <xref:Microsoft.VisualStudio.Shell.Package>클래스는 및를 둘 다 구현 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:System.ComponentModel.Design.IServiceContainer> 합니다. <xref:System.ComponentModel.Design.IServiceContainer>요청 시 서비스를 제공 하는 콜백 메서드를 포함 합니다.
+ <xref:Microsoft.VisualStudio.Shell.Package>클래스는 및를 둘 다 구현 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:System.ComponentModel.Design.IServiceContainer> 합니다. <xref:System.ComponentModel.Design.IServiceContainer> 요청 시 서비스를 제공 하는 콜백 메서드를 포함 합니다.
 
  서비스에 대 한 자세한 내용은 [Service essentials](../extensibility/internals/service-essentials.md) 를 참조 하세요.
 
@@ -76,7 +76,7 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
 
 ### <a name="register-a-service"></a>서비스 등록
 
-1. 서비스를 등록 하려면 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 서비스를 제공 하는 VSPackage에를 추가 합니다. 다음은 예제입니다.
+1. 서비스를 등록 하려면 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 서비스를 제공 하는 VSPackage에를 추가 합니다. 예를 들면 다음과 같습니다.
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -138,7 +138,7 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
 
      값은 `helloString` "Hello" 여야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)
 - [서비스 essentials](../extensibility/internals/service-essentials.md)

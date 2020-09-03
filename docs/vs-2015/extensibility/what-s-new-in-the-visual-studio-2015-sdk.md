@@ -9,20 +9,20 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917324"
 ---
-# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Visual&#39;STUDIO 2015 SDK의 새로운 기능
+# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Visual Studio 2015 SDK의 새로운 기능&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual studio SDK에는 visual Studio 2015, Visual Studio 2015 업데이트 및 Visual Studio 2017에 대해 다음과 같은 새롭고 업데이트 된 기능이 포함 되어 있습니다.
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿을 검색 하는 작업이 더 이상 수행 되지 않습니다. 대신 확장은 이러한 템플릿의 설치 위치를 설명 하는 템플릿 매니페스트 파일을 제공 해야 합니다. Visual Studio 2017을 사용 하 여 VSIX 확장을 업데이트할 수 있습니다. MSI를 사용 하 여 확장을 배포 하는 경우 템플릿 매니페스트 파일을 직접 생성 해야 합니다. 자세한 내용은 [사용자 지정 Visual Studio용 프로젝트 및 항목 템플릿 2017 업그레이드](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015)를 참조 하세요. 템플릿 매니페스트 스키마는 [Visual Studio 템플릿 매니페스트 스키마 참조](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference)에 설명 되어 있습니다.
+Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿 검색을 더 이상 수행하지 않습니다. 대신 확장에서는 해당 템플릿의 설치 위치를 설명하는 템플릿 매니페스트 파일을 제공해야 합니다. Visual Studio 2017을 사용하여 VSIX 확장을 업데이트할 수 있습니다. MSI를 사용하여 확장을 배포하는 경우 템플릿 매니페스트 파일을 직접 생성해야 합니다. 자세한 내용은 [사용자 지정 Visual Studio용 프로젝트 및 항목 템플릿 2017 업그레이드](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015)를 참조 하세요. 템플릿 매니페스트 스키마는 [Visual Studio 템플릿 매니페스트 스키마 참조](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference)에 설명 되어 있습니다.
 
 ## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK 업데이트 1
  업데이트 1에는 색 테마 및 Visual Studio 이미지 서비스에서 확장이 잘 작동 하는 데 도움이 되는 도구가 포함 되어 있습니다.
@@ -40,7 +40,7 @@ Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿을 �
  Visual Studio 2015 SDK부터 사용 중인 프로그래밍 언어에 따라 확장을 만들 수 있는 다양 한 옵션이 있습니다.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# 및 Visual Basic
- 및 C# Visual Basic에는 vspackage, 메뉴 명령, 도구 창, 편집기 분류자, 편집기 장식 및 편집기 여백 확장을 만들 수 있는 다양 한 프로젝트 항목 템플릿이 있습니다. 이러한 중 하나 또는 모두를 표준 VSIX 프로젝트에 추가할 수 있습니다. 자세한 내용은  항목을 참조하세요.
+ C # 및 Visual Basic의 경우 Vspackage, 메뉴 명령, 도구 창, 편집기 분류자, 편집기 장식 및 편집기 여백 확장을 만들 수 있는 전체 범위의 프로젝트 항목 템플릿이 있습니다. 이러한 중 하나 또는 모두를 표준 VSIX 프로젝트에 추가할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
 - [메뉴 명령을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,10 +50,10 @@ Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿을 �
 
 - [로 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     VSPackage 마법사는 더 이상 C# 또는 Visual Basic 확장을 만들 필요가 없습니다.
+     VSPackage 마법사는 더 이상 c # 또는 Visual Basic 확장을 만들 필요가 없습니다.
 
 ### <a name="c"></a>C++
- 의 C++경우 VSPackage 마법사는 메뉴 명령, 도구 창 및 사용자 지정 편집기를 지원 합니다. **Visual C++ /확장성**의 **새 프로젝트** 대화 상자에서 찾을 수 있습니다.
+ C + +의 경우 VSPackage 마법사는 메뉴 명령, 도구 창 및 사용자 지정 편집기를 지원 합니다. **Visual C++/확장성**의 **새 프로젝트** 대화 상자에서 해당 파일을 찾습니다.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>NuGet을 통한 VS SDK 참조 어셈블리
  확장성 및 확장성 프로젝트의 공유를 향상 하기 위해 NuGet 버전의 VS SDK 참조 어셈블리를 사용할 수 있습니다.  이러한 기능은 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) 에서 게시 한 [nuget.org](https://www.nuget.org/) 에서 사용할 수 있으며 Visual Studio **참조/nuget 패키지 관리** 대화 상자를 통해 프로젝트 또는 솔루션에 쉽게 추가할 수 있습니다. VS SDK [메타 패키지](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)를 사용 하 여 특정 확장성 어셈블리에 개별 참조를 추가 하거나 한 번에 모든 vs sdk 참조 어셈블리를 추가할 수 있습니다. NuGet에 대 한 자세한 내용은 [Nuget 개요](/nuget/) 및 [대화 상자를 사용 하 여 nuget 패키지 관리](/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요.
@@ -63,7 +63,7 @@ Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿을 �
  VS SDK 항목 템플릿은 nuget을 사용 하 여 참조 및 빌드 도구에 대해 NuGet을 사용 하므로 기본적으로 NuGet의 이점을 얻을 수 있습니다.
 
 > [!NOTE]
-> VS SDK에 설치 된 참조 어셈블리를 프로젝트와 함께 계속 사용할 수 있습니다 (\<Visual Studio 설치 위치 > \ VSSDK\VisualStudioIntegration\Common\Assemblies). 그리고 기존 확장성 프로젝트는 NuGet 패키지를 사용 하도록 업그레이드 하지 않아도 됩니다.  프로젝트 **참조/참조 추가** 대화 상자는 VS SDK에서 설치 된 참조 어셈블리를 계속 사용 합니다.
+> VS SDK에 설치 된 참조 어셈블리를 프로젝트와 함께 계속 사용할 수 있습니다 ( \<Visual Studio Install Location> \ VSSDK\VisualStudioIntegration\Common\Assemblies에 있음). 기존 확장성 프로젝트는 NuGet 패키지를 사용 하도록 업그레이드 하지 않아도 됩니다.  프로젝트 **참조/참조 추가** 대화 상자는 VS SDK에서 설치 된 참조 어셈블리를 계속 사용 합니다.
 >
 > NuGet을 사용 하도록 기존 프로젝트를 수정 하려면 방법: 확장성 프로젝트를 NuGet 패키지로 업데이트 하는 섹션이 있는 [방법: vspackage을 Visual Studio 2015로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) 을 참조 하세요.
 

@@ -10,17 +10,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9583230a081cd1e9b543350b9ad998ab5d68e79
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851391"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 아키텍처 도구 사용 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 아키텍처 도구 가이드는 Visual Studio 2010의 모델링 도구를 사용 하는 방법에 대 한 실용적인 가이드의 다운로드 패키지 있습니다. 통합 된 방식으로 모든 모델링 도구를 사용 하는 방법의 고급 보기를 표시 하 고 도구를 사용 하는 가장 일반적인 시나리오에 설명 합니다.
+이 아키텍처 도구 지침은 Visual Studio 2010의 모델링 도구 사용에 대 한 실용적인 지침을 다운로드할 수 있는 패키지입니다. 통합 된 방식으로 모든 모델링 도구를 사용 하는 방법에 대 한 개략적인 뷰를 제공 하 고 도구를 사용 하는 가장 일반적인 시나리오에 대해 설명 합니다.
 
- 콘텐츠는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers에서 만든 것입니다 .이 그룹에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 제품 팀, Microsoft 서비스, Microsoft의 전문 전문가 (Mvp) 및 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 커뮤니티 잠재 고객의 구성원이 있는 특수 그룹이 있습니다.
+ 콘텐츠는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 제품 팀, microsoft 서비스, Microsoft의 가장 가치 전문가 (mvp) 및 커뮤니티 책임자의 구성원이 있는 특수 그룹인 ALM Rangers에서 만들었습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
  [아키텍처 도구 지침을 다운로드 하려면 여기를 클릭 하세요.](https://archive.codeplex.com/?p=vsarchitectureguide)

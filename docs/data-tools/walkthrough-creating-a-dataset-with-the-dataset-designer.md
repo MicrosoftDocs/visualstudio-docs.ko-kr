@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586031"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>연습: 데이터 세트 디자이너을 사용 하 여 데이터 집합 만들기
 
 이 연습에서는 **데이터 세트 디자이너**를 사용 하 여 데이터 집합을 만듭니다. 이 문서에서는 새 프로젝트를 만들고 새 프로젝트에 새 **데이터 집합** 항목을 추가 하는 과정을 안내 합니다. 마법사를 사용 하지 않고 데이터베이스의 테이블을 기반으로 테이블을 만드는 방법을 배웁니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "75586031"
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -106,11 +106,11 @@ ms.locfileid: "75586031"
 
 - Tableadapter에 쿼리를 추가 합니다.
 
-- 데이터 집합의 데이터 테이블에 대 한 <xref:System.Data.DataTable.ColumnChanging> 또는 <xref:System.Data.DataTable.RowChanging> 이벤트에 유효성 검사 논리를 추가 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)를 참조 하세요.
+- <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 데이터 집합에 있는 데이터 테이블의 또는 이벤트에 유효성 검사 논리를 추가 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)
+- [데이터의 유효성 검사](../data-tools/validate-data-in-datasets.md)

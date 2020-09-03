@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283023"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 계층 데이터 세트에 유효성 검사 추가
@@ -58,7 +58,7 @@ End Sub
 2. 유효성을 검사할 열을 두 번 클릭 합니다. 이 작업은 <xref:System.Data.DataTable.ColumnChanging> 이벤트 처리기를 만듭니다.
 
     > [!NOTE]
-    > 데이터 세트 디자이너는 c # 이벤트에 대 한 이벤트 처리기를 자동으로 만들지 않습니다. C #에서 이벤트를 처리 하는 데 필요한 코드는 다음 섹션에 포함 되어 있습니다. `SampleColumnChangingEvent`가 생성 된 다음 메서드의 이벤트에 연결 됩니다 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.EndInit%2A> .
+    > 데이터 세트 디자이너는 c # 이벤트에 대 한 이벤트 처리기를 자동으로 만들지 않습니다. C #에서 이벤트를 처리 하는 데 필요한 코드는 다음 섹션에 포함 되어 있습니다. `SampleColumnChangingEvent` 가 생성 된 다음 메서드의 이벤트에 연결 됩니다 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.EndInit%2A> .
 
 3. `e.ProposedValue`응용 프로그램의 요구 사항을 충족 하는 데이터가 포함 되어 있는지 확인 하는 코드를 추가 합니다. 제안 된 값이 허용 되지 않는 경우 열에 오류가 포함 되어 있음을 나타내는 열을 설정 합니다.
 
@@ -166,7 +166,7 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
 - [연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

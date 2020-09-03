@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851974"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>방법: 리소스 만들기 및 적용
@@ -54,9 +54,9 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
 
 1. 문서 개요 창에서 리소스를 적용하려는 요소를 선택합니다.
 
-2. 다음 작업 중 하나를 수행합니다.
+2. 다음 중 하나를 수행합니다.
 
-   - 속성에 리소스를 적용합니다. [속성] 창에서 속성 값 옆에 있는 속성 표식을 선택하고, **로컬 리소스** 또는 **시스템 리소스**를 선택한 다음, 표시되는 목록에서 사용 가능한 리소스를 선택합니다.
+   - 속성에 리소스를 적용합니다. 속성 창에서 속성 값 옆에 있는 속성 표식을 선택하고, **로컬 리소스** 또는 **시스템 리소스**를 선택한 다음, 표시되는 목록에서 사용 가능한 리소스를 선택합니다.
 
       찾고자 하는 리소스가 표시되지 않으면 리소스 형식이 속성 형식과 일치하지 않기 때문일 수 있습니다.
 
@@ -71,9 +71,9 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
 
 1. 아트보드 또는 문서 개요 창에서 요소를 선택합니다.
 
-2. [속성] 창에서 속성의 오른쪽에 있는 기본 또는 로컬 속성 표식을 선택하고 **리소스 편집**을 선택하여 **리소스 편집** 대화 상자를 엽니다.
+2. 속성 창에서 속성의 오른쪽에 있는 기본 또는 로컬 속성 표식을 선택하고 **리소스 편집**을 선택하여 **리소스 편집** 대화 상자를 엽니다.
 
 3. 리소스에 대한 옵션을 수정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

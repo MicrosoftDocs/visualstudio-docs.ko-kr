@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d590bf618693a5ced1aa17969b888c0fff130c4c
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476953"
 ---
 # <a name="schema-cache"></a>스키마 캐시
@@ -21,29 +21,29 @@ ms.locfileid: "77476953"
 
 XML 편집기에서는 %InstallRoot%\Xml\Schemas 디렉터리에 있는 스키마 캐시를 제공합니다. 스키마 캐시는 컴퓨터의 모든 사용자에 전체적으로 적용되며 IntelliSense 및 XML 문서 유효성 검사에 사용되는 표준 XML 스키마를 포함합니다.
 
- XML 편집기는 솔루션에 있는 스키마, 문서 **속성** 창의 **스키마** 필드에 지정 된 스키마, `xsi:schemaLocation` 및 `xsi:noNamespaceSchemaLocation` 특성으로 식별 되는 스키마를 찾을 수도 있습니다.
+ XML 편집기에서는 솔루션에 있는 스키마, 문서 **속성** 창의 **스키마** 필드에 지정된 스키마, `xsi:schemaLocation` 및 `xsi:noNamespaceSchemaLocation` 특성으로 식별되는 스키마를 찾을 수 있습니다.
 
  다음 표에서는 XML 편집기로 설치된 스키마에 대해 설명합니다.
 
 |     파일 이름      |                                                      설명                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    catalog.xsd    |             XML 편집기 스키마 카탈로그 파일에 대한 스키마입니다. 스키마 카탈로그에 대한 자세한 내용은 아래를 참조하세요.             |
-| DotNetConfig.xsd  |                 Web.config 파일에 대 한 스키마 `http://schemas.microsoft.com/.NETConfiguration/v2.0`입니다.                 |
-|    msbuild.xsd    |              MSBuild 파일 작성을 위한 스키마 `http://schemas.microsoft.com/developer/msbuild/2003`입니다.              |
-|    msdata.xsd     | <xref:System.Data.DataSet> 클래스 "urn:schemas-microsoft-com:xml-msdata"에 의해 추가된 XSD 주석의 스키마입니다. |
+| DotNetConfig.xsd  |                 Web.Config 파일에 대한 스키마(`http://schemas.microsoft.com/.NETConfiguration/v2.0`)입니다.                 |
+|    msbuild.xsd    |              MSBuild make 파일에 대한 스키마(`http://schemas.microsoft.com/developer/msbuild/2003`)입니다.              |
+|    msdata.xsd     | <xref:System.Data.DataSet> 클래스 “urn:schemas-microsoft-com:xml-msdata”에 의해 추가된 XSD 주석의 스키마입니다. |
 |     msxsl.xsd     |                  Microsoft XSLT 스크립트 블록 확장명 urn:schemas-microsoft-com:xslt에 대한 스키마입니다.                   |
 | SnippetFormat.xsd |                 코드 조각 XML 파일에 대한 스키마입니다. 예를 들어, %InstallDir%\VC#\Expansions를 참조하세요.                 |
-|    Soap1.1.xsd    |            `http://schemas.xmlsoap.org/soap/envelope/`SOAP (Simple Object Access Protocol) 1.1에 대 한 스키마입니다.            |
+|    Soap1.1.xsd    |            SOAP(Simple Object Access Protocol) 1.1에 대한 스키마(`http://schemas.xmlsoap.org/soap/envelope/`)입니다.            |
 |    Soap1.2.xsd    |                                     SOAP(Simple Object Access Protocol) 1.2에 대한 스키마입니다.                                     |
-| SiteMapSchema.xsd |            ASP.NET 사이트 파일 XML 파일에 대 한 스키마 `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`입니다.             |
-|     wsdl.xsd      |                    웹 서비스 기술 언어에 대 한 스키마 `http://schemas.xmlsoap.org/wsdl/`입니다.                     |
-|     xenc.xsd      |                            XML 암호화에 대 한 스키마 `http://www.w3.org/2000/09/xmldsig#`입니다.                             |
-|     xhtml.xsd     |                                    XHTML `http://www.w3.org/1999/xhtml`에 대 한 스키마입니다.                                     |
-|     xlink.xsd     |                                  XLink 1.0 `http://www.w3.org/1999/xlink`의 스키마입니다.                                   |
-|      xml.xsd      |              Xml: space 및 xml: lang 특성, `http://www.w3.org/XML/1998/namespace`을 설명 하는 스키마입니다.               |
-|    xmlsig.xsd     |                        XML 디지털 서명의 스키마 `http://www.w3.org/2000/09/xmldsig#`입니다.                         |
-|   xsdschema.xsd   |                            XSD 자체를 설명 하는 스키마 `http://www.w3.org/2001/XMLSchema`입니다.                            |
-|     xslt.xsd      |                           XML 변환에 대 한 스키마 `http://www.w3.org/1999/XSL/Transform`입니다.                            |
+| SiteMapSchema.xsd |            ASP.NET 사이트 맵 XML 파일에 대한 스키마(`http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`)입니다.             |
+|     wsdl.xsd      |                    웹 서비스 기술 언어에 대한 스키마(`http://schemas.xmlsoap.org/wsdl/`)입니다.                     |
+|     xenc.xsd      |                            XML 암호화에 대한 스키마(`http://www.w3.org/2000/09/xmldsig#`)입니다.                             |
+|     xhtml.xsd     |                                    XHTML에 대한 스키마(`http://www.w3.org/1999/xhtml`)입니다.                                     |
+|     xlink.xsd     |                                  XLink1.0에 대한 스키마(`http://www.w3.org/1999/xlink`)입니다.                                   |
+|      xml.xsd      |              xml:space 및 xml:lang 특성을 설명하는 스키마(`http://www.w3.org/XML/1998/namespace`)입니다.               |
+|    xmlsig.xsd     |                        XML 디지털 시그니처에 대한 스키마(`http://www.w3.org/2000/09/xmldsig#`)입니다.                         |
+|   xsdschema.xsd   |                            XSD를 설명하는 스키마(`http://www.w3.org/2001/XMLSchema`)입니다.                            |
+|     xslt.xsd      |                           XML 변환에 대한 스키마(`http://www.w3.org/1999/XSL/Transform`)입니다.                            |
 
 ## <a name="updating-schemas-in-the-cache"></a>캐시에서 스키마 업데이트
  XML 편집기 패키지가 로드될 때 편집기에서 스키마 캐시 디렉터리를 로드하며 실행하는 동안 변경 내용을 조사합니다. 스키마가 추가되면 알려진 스키마의 메모리 내 인덱스에 자동으로 로드됩니다. 스키마가 제거되면 메모리 내 인덱스에서 자동으로 제거됩니다. 스키마가 업데이트되면 이 스키마의 메모리 내 캐시가 자동으로 무효화됩니다.
@@ -65,11 +65,11 @@ XML 편집기에서는 %InstallRoot%\Xml\Schemas 디렉터리에 있는 스키�
 
 - InstallDir
 
-- System
+- 시스템
 
 - ProgramFiles
 
-- 프로그램
+- Programs
 
 - CommonProgramFiles
 
@@ -85,7 +85,7 @@ XML 편집기에서는 %InstallRoot%\Xml\Schemas 디렉터리에 있는 스키�
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>
 ```
 
- 카탈로그는 특수 `Association` 요소를 사용하여 XML 문서와 스키마를 연결하는 방법을 제어할 수도 있습니다. 이 요소는 대상 네임스페이스가 없는 스키마와 특정 파일 확장명을 연결합니다. XML 편집기에서는 `targetNamespace` 특성이 없는 스키마를 자동으로 연결하지 않기 때문에 이 요소는 매우 유용할 수 있습니다. 다음 예제에서 `Association` 요소는 dotNetConfig 스키마를 파일 확장명이 "config"인 모든 파일과 연결합니다.
+ 카탈로그는 특수 `Association` 요소를 사용하여 XML 문서와 스키마를 연결하는 방법을 제어할 수도 있습니다. 이 요소는 대상 네임스페이스가 없는 스키마와 특정 파일 확장명을 연결합니다. XML 편집기에서는 `targetNamespace` 특성이 없는 스키마를 자동으로 연결하지 않기 때문에 이 요소는 매우 유용할 수 있습니다. 다음 예제에서 `Association` 요소는 dotNetConfig 스키마를 파일 확장명이 “config”인 모든 파일과 연결합니다.
 
 ```
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>
@@ -102,21 +102,20 @@ XML 편집기에서는 %InstallRoot%\Xml\Schemas 디렉터리에 있는 스키�
 ```
 
 ## <a name="changing-the-location-of-the-schema-cache"></a>스키마 캐시 위치 변경
- **기타** 옵션 페이지를 사용 하 여 스키마 캐시의 위치를 사용자 지정할 수 있습니다. 즐겨 찾는 스키마 디렉터리가 있을 경우 대신 이 스키마를 사용하도록 편집기를 구성할 수 있습니다.
+ **기타** 옵션 페이지를 사용하여 스키마 캐시 위치를 사용자 지정할 수 있습니다. 즐겨 찾는 스키마 디렉터리가 있을 경우 대신 이 스키마를 사용하도록 편집기를 구성할 수 있습니다.
 
 > [!NOTE]
 > 이 변경 내용은 현재 Visual Studio 사용자에게만 영향을 줍니다.
 
 #### <a name="to-change-the-schema-cache-location"></a>스키마 캐시 위치를 변경하려면
 
-1. 
-          **도구** 메뉴에서 **옵션**을 선택합니다.
+1. **도구** 메뉴에서 **옵션**을 클릭합니다.
 
-2. **텍스트 편집기**를 확장 하 고 **XML**을 확장 한 다음 **기타**를 클릭 합니다.
+2. **텍스트 편집기**를 확장하고 **XML**을 확장한 다음, **기타**를 클릭합니다.
 
-3. **스키마** 필드에서 **찾아보기** 단추를 클릭 합니다.
+3. **스키마** 필드에서 **찾아보기** 단추를 클릭합니다.
 
-4. 스키마 캐시의 폴더를 선택 하 고 **확인**을 클릭 합니다.
+4. 스키마 캐시 폴더를 선택하고 **확인**을 클릭합니다.
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>공통 스키마 디렉터리를 추가하려면
 
@@ -128,5 +127,5 @@ XML 편집기에서는 %InstallRoot%\Xml\Schemas 디렉터리에 있는 스키�
 
      카탈로그가 자동으로 다시 로드됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [XML 편집기](../xml-tools/xml-editor.md)

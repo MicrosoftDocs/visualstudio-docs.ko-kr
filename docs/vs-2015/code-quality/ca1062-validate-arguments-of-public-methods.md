@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 377906675d70a712f8ca72b0b6e4d8a6864c1fbc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533239"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: public 메서드의 인수에 대한 유효성을 검사하세요.
@@ -47,21 +47,21 @@ ms.locfileid: "85533239"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  역참조 된 매개 변수가 함수의 다른 메서드 호출에서 유효성을 검사 한 것으로 확인 되는 경우이 규칙에서 경고를 표시 하지 않을 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 메서드와 규칙을 충족 하는 메서드를 보여 줍니다.
 
  [!code-csharp[FxCop.Design.ValidateArguments#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/fxcop.design.validatearguments.copyctors.cs#1)]
  [!code-csharp[FxCop.Design.ValidateArguments#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/FxCop.Design.ValidateArguments.cs#1)]
  [!code-vb[FxCop.Design.ValidateArguments#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  에서 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 이 규칙은 유효성 검사를 수행 하는 다른 메서드에 매개 변수가 전달 되 고 있음을 감지 하지 않습니다.
 
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/fxcop.design.validatearguments.copyctors.cs#2)]
  [!code-csharp[FxCop.Design.ValidateArguments#2](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/cs/FxCop.Design.ValidateArguments.cs#2)]
  [!code-vb[FxCop.Design.ValidateArguments#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#2)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  참조 개체인 필드 또는 속성을 채우는 복사 생성자도 CA1062 규칙을 위반할 수 있습니다. 복사 생성자에 전달 된 복사 된 개체가 `null` (Visual Basic) 일 수 있기 때문에 위반이 발생 합니다 `Nothing` . 위반 문제를 해결 하려면 정적 (Visual Basic에서 공유) 메서드를 사용 하 여 복사한 개체가 null이 아닌 지 확인 합니다.
 
  다음 `Person` 클래스 예제에서 `other` 복사 생성자에 전달 되는 개체는 `Person` 일 수 있습니다 `null` .
@@ -88,7 +88,7 @@ public class Person
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 수정 된 `Person` 예제에서는 `other` 복사 생성자에 전달 된 개체가 먼저 메서드에서 null 인지 확인 `PassThroughNonNull` 합니다.
 
 ```

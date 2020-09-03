@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 345bfa49da4bf5d5b73fe1d3f209675fe2814de2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015347"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>방법: SharePoint 프로젝트 항목 확장 만들기
@@ -43,7 +44,7 @@ ms.locfileid: "86015347"
 
 5. 메서드 구현에서 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> *projectItemType* 매개 변수의 멤버를 사용 하 여 확장의 동작을 정의 합니다. 이 매개 변수는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> 및 인터페이스에 정의 된 이벤트에 대 한 액세스를 제공 하는 개체입니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> . 확장 하는 프로젝트 항목 형식의 특정 인스턴스에 액세스 하려면 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 및와 같은 이벤트를 처리 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드 예제에서는 이벤트 수신기 프로젝트 항목에 대 한 간단한 확장을 만드는 방법을 보여 줍니다. 사용자가 SharePoint 프로젝트에 이벤트 수신기 프로젝트 항목을 추가할 때마다이 확장 프로그램은 **출력** 창과 **오류 목록** 창에 메시지를 기록 합니다.
 
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
@@ -61,6 +62,6 @@ ms.locfileid: "86015347"
 ## <a name="deploy-the-extension"></a>확장 배포
  확장을 배포 하려면 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 모든 파일에 대 한 확장 (VSIX) 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)
 - [연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)

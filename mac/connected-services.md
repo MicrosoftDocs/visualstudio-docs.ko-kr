@@ -7,10 +7,10 @@ ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
 ms.openlocfilehash: 8a1287d82096677d20a498756de3d2a9f5af259b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938762"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습

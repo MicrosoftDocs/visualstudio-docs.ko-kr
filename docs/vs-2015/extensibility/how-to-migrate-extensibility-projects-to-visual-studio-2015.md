@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915977"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>방법: 확장성 프로젝트를 Visual Studio 2015로 마이그레이션
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>방법: Visual Studio 2015로 확장성 프로젝트 마이그레이션
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 확장을 업그레이드 하는 방법은 다음과 같습니다.  
@@ -29,15 +29,15 @@ ms.locfileid: "75915977"
   
 1. 업그레이드 하려는 복사본을 사용 하 여 새 버전에서 엽니다. 업그레이드는 되돌릴 수 없다는 것이 좋습니다.  
   
-2. 업그레이드가 완료 되 면 외부 프로그램의 경로를 devenv.exe의 새 버전으로 변경 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다. **디버그** 탭에서 **시작 외부 프로그램** 으로 텍스트 상자를 찾고 Devenv.exe 경로를 Visual Studio 2015 경로로 변경 합니다 .이는 다음과 같습니다.  
+2. 업그레이드가 완료 되 면 외부 프로그램의 경로를 devenv.exe 새 버전으로 변경 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다. **디버그** 탭에서 **시작 외부 프로그램** 을 기준으로 텍스트 상자를 찾고 devenv.exe의 경로를 Visual Studio 2015 경로로 변경 합니다 .이는 다음과 같습니다.  
   
      **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
-3. VisualStudio에 대 한 참조를 추가 합니다. 14.0에 대 한 참조를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **추가/참조**를 선택 합니다. **확장** 탭을 선택 하 고 VisualStudio를 확인 합니다. **14.0**.  
+3. Microsoft.VisualStudio.Shell.14.0.dll에 대 한 참조를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **추가/참조**를 선택 합니다. **확장** 탭을 선택 하 고 VisualStudio를 확인 합니다. **14.0**.  
   
 4. 솔루션을 빌드합니다. 빌드된 파일은 다음에 배포 됩니다.  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< Author 이름\>\\** < 프로젝트 버전\>\\< 프로젝트 이름\>\\.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions \\<Author 이름 \> \\<프로젝트 이름 \> \\<프로젝트 버전 \> \\ **입니다.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>확장성 프로젝트를 NuGet VS SDK 참조 어셈블리로 업데이트 하려면  
   

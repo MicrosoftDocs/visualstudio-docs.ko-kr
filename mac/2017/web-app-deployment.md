@@ -7,10 +7,10 @@ ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
 ms.topic: overview
 ms.openlocfilehash: bed9991677377e665bd49193ee9b7c0ed3877da2
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938444"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>ASP.NET Core 웹앱 배포

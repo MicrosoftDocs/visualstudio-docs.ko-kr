@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533070"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>모델링 다이어그램의 제스처 처리기 정의
@@ -230,7 +230,7 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
          **프로젝트**  =  *클래스 라이브러리 프로젝트*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>제스처 처리기 실행
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> 제스처 처리기 실행
  테스트를 위해 디버그 모드에서 제스처 처리기를 실행합니다.
 
 #### <a name="to-test-the-gesture-handler"></a>제스처 처리기를 테스트하려면
@@ -243,7 +243,7 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
    - 프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.
 
-   - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+   - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
 
 - 이 형식의 대상 및 삭제된 요소에 대해 정의된 기본 제공 기능이 없습니다.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>제스처 처리기 구현
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> 제스처 처리기 구현
 
 ### <a name="the-gesture-handler-methods"></a>제스처 처리기 메서드
  제스처 처리기 클래스는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>을 구현하고 내보냅니다. 정의해야 하는 메서드는 다음과 같습니다.
 
-|서명|설명|
+|서명|Description|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|이 대상에서 삭제될 `true` 에서 참조되는 소스 요소를 허용하려면 `dragEvent` 를 반환합니다.<br /><br /> 이 메서드는 모델을 변경하면 안 됩니다. 사용자가 마우스를 이동할 때 화살표 상태를 결정하는 데 사용되므로 빠르게 작동해야 합니다.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|`dragEvent`에서 참조되는 소스 개체 및 대상에 따라 모델을 업데이트합니다.<br /><br /> 사용자가 마우스를 끌고 나서 놓을 때 호출됩니다.|
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  자세한 내용은 [UML 모델 탐색](../modeling/navigate-the-uml-model.md)을 참조 하세요.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 확장 설치 및 제거
  사용 중인 컴퓨터 및 다른 컴퓨터에서 모두 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장을 설치할 수 있습니다.
 
 #### <a name="to-install-an-extension"></a>확장을 설치하려면
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \extensions**
 
-## <a name="example"></a><a name="DragExample"></a> 예
+## <a name="example"></a><a name="DragExample"></a> 예제
  다음 샘플에서는 구성 요소 다이어그램에서 끌어온 구성 요소의 파트 및 포트를 기반으로 시퀀스 다이어그램에서 수명선을 만드는 방법을 보여 줍니다.
 
  테스트하려면 F5 키를 누릅니다. Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 UML 모델을 열고 구성 요소 다이어그램에 구성 요소를 만듭니다. 이 구성 요소에 몇몇 인터페이스 및 내부 구성 요소 파트를 추가합니다. 인터페이스 및 파트를 선택합니다. 그다음에 인터페이스 및 파트를 시퀀스 다이어그램으로 끕니다. (구성 요소 다이어그램에서 시퀀스 다이어그램에 대 한 탭까지 끌어 오고 차례로 시퀀스 다이어그램으로 이동 합니다.) 각 인터페이스와 파트에 대 한 수명선이 표시 됩니다.
@@ -519,5 +519,5 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
  의 코드는 `GetModelElementsFromDragEvent()` [IDATAOBJECT에서 UML 모델 요소 가져오기](../modeling/get-uml-model-elements-from-idataobject.md)에 설명 되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) uml [API를 사용 하 여 프로그래밍 하는](../modeling/programming-with-the-uml-api.md) [uml 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)
