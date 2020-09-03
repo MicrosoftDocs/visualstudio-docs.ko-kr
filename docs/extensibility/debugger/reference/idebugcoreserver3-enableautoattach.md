@@ -1,5 +1,5 @@
 ---
-title: 아이디버그코어서버3:인에이블오토첨부 | 마이크로 소프트 문서
+title: 'IDebugCoreServer3:: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732914"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-지정된 디버그 엔진에 대해 자동으로 연결할 수 있습니다.
+지정 된 디버그 엔진에 대해 자동 연결을 사용 하도록 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,22 +47,22 @@ int EnableAutoAttach(
 
 ## <a name="parameters"></a>매개 변수
 `rgguidSpecificEngines`\
-【인】 각 디버그 엔진에 대한 GUID 배열을 사용하여 자동 연결로 표시합니다.
+진행 자동 연결로 표시할 각 디버그 엔진에 대 한 Guid의 배열입니다.
 
 `celtSpecificEngines`\
-【인】 에 지정된 엔진 `rgguidSpecificEngines`수입니다.
+진행 에 지정 된 엔진의 수입니다 `rgguidSpecificEngines` .
 
 `pszStartPageUrl`\
-【인】 자동 연결 할 때 사용할 시작 URL입니다.
+진행 자동 연결 시 사용할 시작 URL입니다.
 
 `pbstrSessionID`\
-【아웃】 자동 연결된 세션의 ID입니다.
+제한이 자동으로 연결 된 세션의 ID입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다. 한 가지 `E_AUTO_ATTACH_NOT_REGISTERED`오류 코드는 자동 연결 클래스 팩터리가 등록되지 되었음을 나타냅니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 한 가지 오류 코드는 `E_AUTO_ATTACH_NOT_REGISTERED` 자동 연결 클래스 팩터리가 등록 되지 않았음을 나타내는입니다.
 
 ## <a name="remarks"></a>설명
- 지정된 URL과 연결된 프로그램이 시작되면 지정된 디버그 엔진이 자동으로 시작되고 첨부됩니다.
+ 지정 된 URL과 연결 된 프로그램이 시작 되 면 지정 된 디버그 엔진이 자동으로 시작 되 고 연결 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

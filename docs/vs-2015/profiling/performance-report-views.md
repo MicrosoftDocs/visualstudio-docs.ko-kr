@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161981"
 ---
 # <a name="performance-report-views"></a>성능 보고서 뷰
@@ -41,11 +41,11 @@ ms.locfileid: "68161981"
  [리소스 경합 데이터 뷰](../profiling/resource-contention-data-views.md)  
  동시성 방법을 사용하여 생성되는 프로파일링 데이터 파일의 뷰와 보고서에 대한 참조 정보를 제공합니다.  
   
- [Concurrency 시각화](../profiling/concurrency-visualizer.md)  
- 동시성 방법을 사용하여 생성되고 스레드 실행 데이터를 포함하는 프로파일링 데이터 파일의 뷰 및 보고서에 대한 참조 정보를 제공합니다.  
+ [Concurrency 시각화 도우미](../profiling/concurrency-visualizer.md)  
+ 동시성 방법을 사용하여 생성되고 스레드 실행 데이터를 포함하는 프로파일링 데이터 파일의 뷰 및 보고서에 대한 정보를 참조합니다.  
   
  [계층 상호 작용 뷰](../profiling/tier-interactions-view.md)  
  계층 상호 작용 데이터를 포함하는 프로파일링 데이터 파일의 상호 작용 뷰와 보고서에 대한 참조 정보를 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)

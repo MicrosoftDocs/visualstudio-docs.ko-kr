@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164062"
 ---
 # <a name="filtering-report-views"></a>보고서 뷰 필터링
@@ -27,7 +27,7 @@ ms.locfileid: "68164062"
   
  보고서에서 시스템 및 타사 코드를 제외하려면 [방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)을 참조하세요.  
   
-## <a name="procedures"></a>절차  
+## <a name="procedures"></a>프로시저  
   
 #### <a name="to-create-a-profiler-report-filter"></a>프로파일러 보고서 필터를 만들려면  
   
@@ -37,11 +37,11 @@ ms.locfileid: "68164062"
   
 2. 필터에 추가하려는 각 절의 경우 행의 다음 필드에 값을 선택하거나 입력합니다.  
   
-    |필드|설명|  
+    |필드|Description|  
     |-----------|-----------------|  
     |**및/또는**|이 절과 다음 절이 둘 다 true여야 결과와 일치하는 경우 **및**을 선택합니다. 이 절이나 다음 절 중 하나가 true이면 결과와 일치하는 경우 **또는**을 선택합니다.|  
     |**필드**|데이터 필드의 표시된 목록에서 필터 절에서 사용할 보고서 필드를 선택합니다.|  
-    |**Operator**|필드와 값 간의 절에 원하는 관계를 지정하는 연산자를 선택합니다.<br /><br /> =    같음<br /><br /> <>  같지 않음<br /><br /> <    보다 작음<br /><br /> >    보다 큼<br /><br /> <=  작거나 같음<br /><br /> >=  크거나 같음|  
+    |**연산자**|필드와 값 간의 절에 원하는 관계를 지정하는 연산자를 선택합니다.<br /><br /> =    같음<br /><br /> <>  같지 않음<br /><br /> <    보다 작음<br /><br /> >    보다 큼<br /><br /> <=  작거나 같음<br /><br /> >=  크거나 같음|  
     |**값**|찾을 값을 선택하거나 입력합니다. 필드에 대해 사용 가능한 값이 나열되는 필드도 있습니다.|  
   
 3. 
@@ -94,5 +94,5 @@ ms.locfileid: "68164062"
   
 2. 저장할 필터(.vspf) 파일의 위치와 파일 이름을 지정합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [성능 도구 보고서 뷰 사용자 지정](../profiling/customizing-performance-tools-report-views.md)

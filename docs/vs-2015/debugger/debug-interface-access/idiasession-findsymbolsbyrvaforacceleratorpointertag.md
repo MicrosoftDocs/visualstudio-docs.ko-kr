@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
+title: 'IDiaSession:: findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0711c95310d4d3613d8b82bccbecab122bf19ef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196355"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 메서드 해당 태그 값을 지정 합니다 지정된 된 상대 가상 주소에서 지정 된 부모 가속기 스텁 함수에 포함 된 기호의 열거형을 반환 합니다.  
+해당 태그 값이 지정 된 경우이 메서드는 지정 된 상대 가상 주소에서 지정 된 부모 액셀러레이터 키 함수에 포함 된 기호의 열거형을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,22 +36,22 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
   
 #### <a name="parameters"></a>매개 변수  
  `parent`  
- [in] `IDiaSymbol` 검색할 Accelerator 스텁 함수에 해당 하는 합니다.  
+ 진행 `IDiaSymbol` 검색할 액셀러레이터 스텁 함수에 해당 하는입니다.  
   
  `tagValue`  
- [in] 포인터 태그 값입니다.  
+ 진행 포인터 태그 값입니다.  
   
  `rva`  
- [in] 상대 가상 주소입니다.  
+ 진행 상대 가상 주소입니다.  
   
  `ppResult`  
- [out] 에 대 한 포인터는 `IDiaEnumSymbols` 결과 사용 하 여 초기화 된 인터페이스 포인터입니다.  
+ 제한이 결과를 사용 하 여 `IDiaEnumSymbols` 초기화 되는 인터페이스 포인터에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 경우에이 메서드를 호출는 `IDiaSymbol` Accelerator 스텁 함수에 해당 하는 인터페이스입니다.  
+ `IDiaSymbol`액셀러레이터 키 함수에 해당 하는 인터페이스에 대해서만이 메서드를 호출 합니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

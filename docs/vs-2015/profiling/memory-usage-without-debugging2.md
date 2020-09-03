@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532043"
 ---
 # <a name="memory-usage-without-debugging"></a>디버그하지 않는 경우의 메모리 사용량
@@ -34,7 +34,7 @@ ms.locfileid: "85532043"
   
   이 항목에서는 메모리 사용량 도구를 사용하여 Windows 유니버설 XAML 앱을 분석하는 방법에 대해 설명합니다. JavaScript 및 HTML을 사용하는 Windows 유니버설 앱에서 메모리 사용을 분석하려는 경우 [메모리 사용 분석(JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx)을 참조하세요.  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>메모리 사용량 진단 세션 시작  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> 메모리 사용량 진단 세션 시작  
   
 1. Visual Studio에서 C# 유니버설 Windows 프로젝트를 엽니다.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "85532043"
   
      ![메모리 사용량 진단 세션 시작](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>메모리 사용 모니터링  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> 메모리 사용 모니터링  
  **메모리 사용량** 도구로 문제를 찾아서 해결할 수 있는 상세 보고서를 생성할 수 있지만, 이 도구를 사용하여 적극적으로 개발 중인 시나리오에 대한 실시간 메모리 영향을 연구할 수도 있습니다.  
   
  진단 세션을 시작 하면 앱이 시작 되 고 **진단 도구** 창에 앱의 메모리 사용에 대 한 타임 라인 그래프가 표시 됩니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "85532043"
   
  스냅샷을 수집하려면 새로운 진단 세션을 시작합니다. 메모리 데이터를 캡처하려는 경우 **스냅샷 만들기**를 선택합니다. 보고서를 생성하려면 **중지**를 선택합니다.  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>메모리 사용량 개요 페이지  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> 메모리 사용량 개요 페이지  
  데이터 컬렉션을 중지한 후 메모리 사용량 도구에서 앱을 중지하고 개요 보고서를 표시합니다.  
   
  ![메모리 사용량 개요 페이지](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -94,7 +94,7 @@ ms.locfileid: "85532043"
 #### <a name="managed-heap"></a><a name="BKMK_Managed_Heap"></a> 관리되는 힙  
  관리되는 힙 트리 [관리되는 힙 트리(스냅샷 정보)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) 및 [관리되는 힙 트리(스냅샷 차이)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_)에서는 보고서의 형식 및 인스턴스를 보여 줍니다. 형식 또는 인스턴스를 선택하면 선택한 항목에 대한 **루트 경로** 및 **참조 개체** 트리가 표시됩니다.  
   
-#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a>루트 경로  
+#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a> 루트 경로  
  [루트 경로 트리(스냅샷 정보)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) 및 [루트 경로 트리(스냅샷 차이)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_)에서는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여 줍니다. .NET Framework 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.  
   
 #### <a name="referenced-objects"></a><a name="BKMK_Referenced_Objects"></a> 참조된 개체  
@@ -112,16 +112,16 @@ ms.locfileid: "85532043"
   
  ![옵션 정렬 및 필터링](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>필터가  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> 필터가  
  **필터** 상자에 문자열을 입력하여 지정한 텍스트가 포함된 형식으로 트리 표시를 제한합니다. 필터는 대/소문자를 구분하지 않고 유형 이름의 모든 부분에서 지정한 문자열을 인식합니다.  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> 작은 개체 축소  
  이 필터를 적용하면 **크기(바이트)** 가 총 스냅샷 메모리 크기의 0.5%보다 작은 형식이 **관리되는 힙** 목록에서 숨겨집니다.  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>내 코드만  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> 내 코드만  
  **내 코드만** 필터는 외부 코드로 생성된 인스턴스를 대부분 숨깁니다. 외부 유형은 운영 체제 또는 프레임워크 구성 요소에서 소유하거나 컴파일러에서 생성합니다.  
   
-## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a>스냅숏 정보 보고서  
+## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> 스냅숏 정보 보고서  
  스냅샷 정보 보고서를 사용하여 진단 세션에서 스냅샷 하나에만 집중합니다. 정보 보고서를 열려면 다음 그림과 같이 스냅샷 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 두 경우 모두 보고서를 열고 나서 정렬 순서를 변경할 수 있습니다.  
   
  ![스냅숏 뷰의 스냅숏 보고서 링크](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -138,7 +138,7 @@ ms.locfileid: "85532043"
 |Name|설명|  
 |-|-|  
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|  
-|**개수**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
+|**Count**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
 |**크기(바이트)**|유형의 경우 인스턴스에 포함된 개체 크기를 제외한 메모리 스냅샷 유형의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 개체 크기입니다.|  
 |**포함 크기(바이트)**|포함된 개체 크기를 비롯한 유형의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
@@ -160,7 +160,7 @@ ms.locfileid: "85532043"
 |**크기(바이트)**|유형의 경우 유형에 포함된 개체 크기를 제외한 유형의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 개체에 포함된 개체 크기를 제외한 개체 크기입니다.|  
 |**포함 크기(바이트)**|포함된 개체의 크기를 비롯한 유형의 총 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
-## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a>스냅숏 차이 (diff) 보고서  
+## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a> 스냅숏 차이 (diff) 보고서  
  스냅샷 차이(diff) 보고서는 기본 스냅샷과 기본 스냅샷 바로 직전에 만든 스냅샷 간의 변경 사항을 보여 줍니다. 차이 보고서를 열려면 다음 그림과 같이 스냅샷 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 보고서를 연 후 정렬 순서를 변경할 수 있습니다.  
   
  ![스냅숏 뷰의 차이점 보고서 링크](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -202,7 +202,7 @@ ms.locfileid: "85532043"
 |**크기(바이트)**|인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷의 개체 크기입니다.<br /><br /> 유형의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷에 있는 유형의 총 인스턴스 크기입니다.|  
 |**포함 크기(바이트)**|개체에 포함된 개체의 크기를 비롯한 기본 스냅샷의 개체 크기입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [JavaScript 메모리](../profiling/javascript-memory.md)   
  [앱 성능 분석](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [성능 및 진단 도구 실행](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db830e04388b7465c941e2fdf069b49f98951a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660832"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>프로젝트 디자이너, 컴파일 페이지(Visual Basic)
@@ -92,7 +92,7 @@ ms.locfileid: "72660832"
 
   **Option Strict**를 **On**으로 설정하는 경우 이러한 세 가지 경고 구성 설정은 모두 **Error**로 설정됩니다. **Option Strict**를 **Off**로 설정하는 경우 세 가지 설정은 모두 **None**으로 설정됩니다.
 
-  각 경고 구성 설정은 **None**, **Warning** 또는 **Error**로 개별적으로 변경할 수 있습니다. 세 가지 경고 구성 설정이 모두 **Error**로 설정된 경우 `On`이 `Option strict` 상자에 표시됩니다. 세 가지 모두 **None**으로 설정된 경우 `Off`가 이 상자에 표시됩니다. 이러한 설정의 다른 조합의 경우 **(사용자 지정)** 이 나타납니다.
+  각 경고 구성 설정은 **None**, **Warning** 또는 **Error**로 개별적으로 변경할 수 있습니다. 세 가지 경고 구성 설정이 모두 **Error**로 설정 된 경우이 `On` 상자에 나타납니다 `Option strict` . 3 개가 모두 **없음**으로 설정 된 경우 `Off` 이 상자에 표시 됩니다. 이러한 설정의 다른 조합의 경우 **(사용자 지정)** 이 나타납니다.
 
   **Option compare** 사용할 문자열 비교 형식을 지정합니다. 이진, 대/소문자 구분 문자열 비교를 사용하도록 컴파일러에 지시하려면 **Binary**를 선택합니다. 로캘별 대/소문자 구분 문자열 비교를 사용하려면 **Text**를 선택합니다.
 
@@ -114,7 +114,7 @@ ms.locfileid: "72660832"
 
   자세한 내용은 [/platform(Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)을 참조하세요.
 
-  **32비트 선호** **32비트 선호** 확인란을 선택하면 애플리케이션은 Windows 32비트 및 64비트 버전에서 모두 32비트 애플리케이션으로 실행됩니다. 그렇지 않은 경우 애플리케이션은 32비트 버전 Windows에서는 32비트 애플리케이션으로, 64비트 버전 Windows에서는 64비트 애플리케이션으로 실행됩니다.
+  **32비트 선호****32비트 선호** 확인란을 선택하면 애플리케이션은 Windows 32비트 및 64비트 버전에서 모두 32비트 애플리케이션으로 실행됩니다. 그렇지 않은 경우 애플리케이션은 32비트 버전 Windows에서는 32비트 애플리케이션으로, 64비트 버전 Windows에서는 64비트 애플리케이션으로 실행됩니다.
 
   64비트 애플리케이션으로 실행하면 포인터 크기가 두 배가 되어 단독으로 32비트인 라이브러리에서 호환성 문제가 발생할 수 있습니다. 매우 빠르게 실행하거나 4GB 이상의 메모리가 필요한 경우에만 애플리케이션을 64비트로 실행해야 합니다.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72660832"
 
   기본적으로 모든 컴파일러 경고는 컴파일하는 동안 작업 목록에 추가됩니다. 경고 또는 오류를 발급하지 않도록 컴파일러에 지시하려면 **모든 경고 사용 안 함**을 선택합니다. 컴파일러가 경고를 수정해야 하는 오류로 처리하도록 하려면 **모든 경고를 오류로 처리**를 선택합니다.
 
-  **모든 경고 사용 안 함** 컴파일러가 이 문서의 앞부분에서 설명한 **조건 및 알림** 표에 지정된 대로 알림을 발급하도록 허용할지 여부를 지정합니다. 이 확인란은 기본적으로 선택되어 있지 않습니다. 컴파일러가 경고 또는 오류를 발급하지 않도록 지시하려면 이 확인란을 선택합니다.
+  **모든 경고 사용 안 함** 컴파일러가 이 문서의 앞부분에서 설명한 **조건 및 알림** 표에 지정된 대로 알림을 발급하도록 허용할지 여부를 지정합니다. 기본적으로이 확인란의 선택을 취소 합니다. 컴파일러가 경고 또는 오류를 발급하지 않도록 지시하려면 이 확인란을 선택합니다.
 
   이 설정은 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 컴파일러 옵션에 해당합니다.
 
@@ -148,9 +148,9 @@ ms.locfileid: "72660832"
 
   이 옵션은 Windows 애플리케이션 또는 콘솔 애플리케이션 프로젝트에 사용할 수 없습니다.
 
-  **빌드 이벤트** **빌드 이벤트** 대화 상자에 액세스하려면 이 단추를 클릭합니다. 이 대화 상자를 사용하여 프로젝트에 대한 빌드 전 및 빌드 후 구성 지침을 지정할 수 있습니다. 이 대화 상자는 Visual Basic 프로젝트에만 적용됩니다. 자세한 내용은 [빌드 이벤트 대화 상자(Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md)를 참조하세요.
+  **빌드 이벤트****빌드 이벤트** 대화 상자에 액세스하려면 이 단추를 클릭합니다. 이 대화 상자를 사용하여 프로젝트에 대한 빌드 전 및 빌드 후 구성 지침을 지정할 수 있습니다. 이 대화 상자는 Visual Basic 프로젝트에만 적용됩니다. 자세한 내용은 [빌드 이벤트 대화 상자(Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md)를 참조하세요.
 
-  **고급 컴파일 옵션** **AdvancedCompiler 설정** 대화 상자에 액세스하려면 이 단추를 클릭합니다. **AdvancedCompiler 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 Visual Basic 프로젝트에만 적용됩니다. 자세한 내용은 [고급 컴파일러 설정 대화 상자(Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)를 참조하세요.
+  **고급 컴파일 옵션****AdvancedCompiler 설정** 대화 상자에 액세스하려면 이 단추를 클릭합니다. **AdvancedCompiler 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 Visual Basic 프로젝트에만 적용됩니다. 자세한 내용은 [고급 컴파일러 설정 대화 상자(Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [디버그 및 릴리스 프로젝트 구성](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [컴파일 속성 관리](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [방법: 빌드 이벤트 지정 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [Visual Basic 명령줄 컴파일러](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c) [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)

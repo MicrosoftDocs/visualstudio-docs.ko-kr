@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e78f3c1174d2a288a9ffc432f0206aed4956fe8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531822"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; 요소 (부트스트래퍼)
@@ -85,9 +85,9 @@ ms.locfileid: "85531822"
 |`ProcessorArchitecture`|선택 사항입니다. 이 설치의 대상 컴퓨터 프로세서입니다. 기본값은 `msil`입니다.|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- 이 요소는의 선택적 자식 요소입니다 `InstallChecks` . 각 인스턴스에 대해 `ExternalCheck` 부트스트래퍼는 개별 프로세스에서 명명 된 외부 프로그램을 실행 하 고가 나타내는 속성에 종료 코드를 저장 합니다 `Property` . `ExternalCheck`는 복잡 한 종속성 검사를 구현 하는 데 유용 하며, 구성 요소가 있는지 확인 하는 유일한 방법은이를 인스턴스화하는 것입니다.  
+ 이 요소는의 선택적 자식 요소입니다 `InstallChecks` . 각 인스턴스에 대해 `ExternalCheck` 부트스트래퍼는 개별 프로세스에서 명명 된 외부 프로그램을 실행 하 고가 나타내는 속성에 종료 코드를 저장 합니다 `Property` . `ExternalCheck` 는 복잡 한 종속성 검사를 구현 하는 데 유용 하며, 구성 요소가 있는지 확인 하는 유일한 방법은이를 인스턴스화하는 것입니다.  
   
- `ExternalCheck`에는 요소가 없으며 다음과 같은 특성이 있습니다.  
+ `ExternalCheck` 에는 요소가 없으며 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
@@ -98,7 +98,7 @@ ms.locfileid: "85531822"
 ## <a name="filecheck"></a>FileCheck  
  이 요소는의 선택적 자식 요소입니다 `InstallChecks` . 부트스트래퍼는의 각 인스턴스에 대해 `FileCheck` 명명 된 파일이 있는지 여부를 확인 하 고 파일의 버전 번호를 반환 합니다. 파일에 버전 번호가 없으면 부트스트래퍼는로 명명 된 속성을 `Property` 0으로 설정 합니다. 파일이 없는 경우 `Property` 값으로 설정 되지 않습니다.  
   
- `FileCheck`에는 요소가 없으며 다음과 같은 특성이 있습니다.  
+ `FileCheck` 에는 요소가 없으며 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
@@ -111,7 +111,7 @@ ms.locfileid: "85531822"
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  이 요소는의 선택적 자식 요소입니다 `InstallChecks` . 각 인스턴스에 대해 `MsiProductCheck` 부트스트래퍼는 지정 된 Microsoft Windows Installer 설치가 완료 될 때까지 실행 되었는지 여부를 확인 합니다. 속성 값은 설치 된 제품의 상태에 따라 설정 됩니다. 양수 값은 제품이 설치 되어 있음을 나타내고 0 또는-1은 해당 제품이 설치 되어 있지 않음을 나타냅니다. 자세한 내용은 Windows Installer SDK 함수 MsiQueryFeatureState를 참조 하세요. . 컴퓨터에 Windows Installer 설치 되어 있지 않으면 `Property` 이 설정 되지 않습니다.  
   
- `MsiProductCheck`에는 요소가 없으며 다음과 같은 특성이 있습니다.  
+ `MsiProductCheck` 에는 요소가 없으며 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
@@ -122,31 +122,31 @@ ms.locfileid: "85531822"
 ## <a name="registrycheck"></a>RegistryCheck  
  이 요소는의 선택적 자식 요소입니다 `InstallChecks` . 부트스트래퍼는의 각 인스턴스에 대해 지정 된 레지스트리 키가 있는지 또는 지정 된 값이 있는지 여부를 `RegistryCheck` 확인 합니다.  
   
- `RegistryCheck`에는 요소가 없으며 다음과 같은 특성이 있습니다.  
+ `RegistryCheck` 에는 요소가 없으며 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
 |`Property`|필수 요소. 결과를 저장할 속성의 이름입니다. 요소의 자식인 요소 아래의 테스트에서이 속성을 참조할 수 있습니다 `InstallConditions` `Command` . 자세한 내용은 [\<Commands> 요소](../deployment/commands-element-bootstrapper.md)를 참조하세요.|  
 |`Key`|필수 요소. 레지스트리 키의 이름입니다.|  
-|`Value`|선택 사항입니다. 검색할 레지스트리 값의 이름입니다. 기본값은 기본값의 텍스트를 반환 하는 것입니다. `Value`는 문자열 또는 DWORD 여야 합니다.|  
+|`Value`|선택 사항입니다. 검색할 레지스트리 값의 이름입니다. 기본값은 기본값의 텍스트를 반환 하는 것입니다. `Value` 는 문자열 또는 DWORD 여야 합니다.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
  이 요소는의 선택적 자식 요소입니다 `InstallChecks` . 각 인스턴스에 대해 `RegistryFileCheck` 부트스트래퍼는 지정 된 파일의 버전을 검색 하 고, 먼저 지정 된 레지스트리 키에서 파일의 경로를 검색 하려고 시도 합니다. 이는 레지스트리의 값으로 지정 된 디렉터리에서 파일을 조회 하려는 경우에 특히 유용 합니다.  
   
- `RegistryFileCheck`에는 요소가 없으며 다음과 같은 특성이 있습니다.  
+ `RegistryFileCheck` 에는 요소가 없으며 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
 |`Property`|필수 요소. 결과를 저장할 속성의 이름입니다. 요소의 자식인 요소 아래의 테스트에서이 속성을 참조할 수 있습니다 `InstallConditions` `Command` . 자세한 내용은 [\<Commands> 요소](../deployment/commands-element-bootstrapper.md)를 참조하세요.|  
 |`Key`|필수 요소. 레지스트리 키의 이름입니다. 특성이 설정 되지 않은 경우 해당 값은 파일에 대 한 경로로 해석 됩니다 `File` . 이 키가 없으면이 `Property` 설정 되지 않습니다.|  
-|`Value`|선택 사항입니다. 검색할 레지스트리 값의 이름입니다. 기본값은 기본값의 텍스트를 반환 하는 것입니다. `Value`는 문자열 이어야 합니다.|  
+|`Value`|선택 사항입니다. 검색할 레지스트리 값의 이름입니다. 기본값은 기본값의 텍스트를 반환 하는 것입니다. `Value` 는 문자열 이어야 합니다.|  
 |`FileName`|선택 사항입니다. 파일의 이름입니다. 지정 된 경우 레지스트리 키에서 가져온 값은 디렉터리 경로로 간주 되 고이 이름이 추가 됩니다. 지정 하지 않으면 레지스트리에서 반환 된 값이 파일의 전체 경로로 간주 됩니다.|  
 |`SearchDepth`|선택 사항입니다. 명명 된 파일에 대 한 하위 폴더를 검색 하는 수준입니다. 검색은 깊이 우선 합니다. 기본값은 0으로, 레지스트리 키의 값으로 지정 된 최상위 폴더로 검색을 제한 합니다.|  
   
 ## <a name="remarks"></a>설명  
  아래 요소는 `InstallChecks` 실행할 테스트를 정의 하지만 실행 하지는 않습니다. 테스트를 실행 하려면 `Command` 요소 아래에 요소를 만들어야 합니다 `Commands` .  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 코드 예제에서는의 `InstallChecks` 제품 파일에 사용 되는 요소를 보여 줍니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
@@ -182,6 +182,6 @@ ms.locfileid: "85531822"
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [\<Commands>요소인](../deployment/commands-element-bootstrapper.md)   
+## <a name="see-also"></a>관련 항목  
+ [\<Commands> 요소인](../deployment/commands-element-bootstrapper.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

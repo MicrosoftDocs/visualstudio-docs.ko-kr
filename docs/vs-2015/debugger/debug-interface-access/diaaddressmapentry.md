@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67c0a3e297f3eebfbf44724e64c4989d9bb979fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164351"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-주소 맵에서 항목을 설명 합니다.  
+주소 맵의 항목을 설명 합니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 struct DiaAddressMapEntry {   
@@ -36,27 +36,27 @@ struct DiaAddressMapEntry { 
   
 ## <a name="elements"></a>요소  
  `rva`  
- 1\. 이미지의 상대 가상 주소 (RVA)  
+ 이미지 A의 RVA (상대 가상 주소)입니다.  
   
  `rvaTo`  
- 상대 가상 주소 `rva` 이미지 2.에 매핑된  
+ 상대 가상 주소는 `rva` 이미지 B에서로 매핑됩니다.  
   
 ## <a name="remarks"></a>설명  
- 주소 지도 (A)에서 다른 (B) 하나 이미지 레이아웃에서 번역을 제공합니다. 배열을 `DiaAddressMapEntry` 기준으로 정렬 하는 구조 `rva` 주소 지도 정의 합니다.  
+ 주소 맵은 한 이미지 레이아웃 (A)에서 다른 이미지 레이아웃 (B)으로의 변환을 제공 합니다. `DiaAddressMapEntry`를 기준으로 정렬 된 구조체의 배열은 `rva` 주소 맵을 정의 합니다.  
   
- 주소를 변환할 `addrA`, 주소는 그림과에서 `addrB`, B 이미지에서 다음 단계를 수행:  
+ 이미지 A의 주소를 변환 하려면 `addrA` `addrB` 이미지 B에서 다음 단계를 수행 합니다.  
   
-1. 검색 항목에 대 한 맵을 `e`, 가장 큰 값을 사용 하 여 `rva` 보다 작거나 같음 `addrA`합니다.  
+1. 에서 `e` `rva` 보다 작거나 같은 항목에 대 한 맵을 검색 합니다 `addrA` .  
   
-2. `delta = addrA – e.rva`를 설정합니다.  
+2. `delta = addrA – e.rva`을 설정합니다.  
   
-3. `addrB = e.rvaTo + delta`를 설정합니다.  
+3. `addrB = e.rvaTo + delta`을 설정합니다.  
   
-   배열을 `DiaAddressMapEntry` 구조에 전달 되는 [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 메서드.  
+   구조체의 배열이 `DiaAddressMapEntry` [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 메서드에 전달 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: dia2.h  
+ 헤더: dia2  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

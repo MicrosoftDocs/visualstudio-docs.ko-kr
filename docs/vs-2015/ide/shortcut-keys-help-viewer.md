@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531550"
 ---
 # <a name="shortcut-keys-help-viewer"></a>바로 가기 키(도움말 뷰어)
@@ -90,7 +90,7 @@ ms.locfileid: "85531550"
 
  **창 관리**
 
-|**키 입력**|**동작**|
+|**키 입력**|**작업**|
 |-|-|
 |Ctrl+L|도움말 뷰어 레이아웃을 기본 레이아웃으로 다시 설정하고 모든 항목 탭을 닫습니다.|
 |Ctrl+Tab|첫 번째 키 입력을 수행하면 포커스가 **탭 선택** 메뉴로 이동합니다. 다음 키 입력을 수행하면 포커스가 맨 위 메뉴 항목으로 이동하고, 이후 키 입력을 수행하면 포커스가 메뉴 항목으로 위에서 아래 방향으로 이동합니다. 메뉴 항목에 포커스가 있을 때 Enter 키를 누르면 항목이 활성 탭이 됩니다.|
@@ -99,7 +99,7 @@ ms.locfileid: "85531550"
 
  **콘텐츠 관리**
 
-|**키 입력**|**동작**|
+|**키 입력**|**작업**|
 |-|-|
 |Alt+D|설치 소스를 디스크로 변경합니다.|
 |Alt+O|설치 소스를 온라인으로 변경합니다.|

@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: 데이터베이스 프로젝트에 대한 계층 상호 작용 측정값 수집 | Microsoft Docs'
+title: 'DA0030: 데이터베이스 프로젝트에 대한 계층 상호 작용 측정값 수집 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152622"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: 데이터베이스 프로젝트의 계층 상호 작용 측정값 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0030 |  
-| 범주 | 프로 파일링 도구 사용 |  
-| 프로 파일링 방법을 | 샘플링 |  
-| 메시지 | 다중 계층 응용 프로그램에 대 한 상호 작용 측정값 수집 데이터베이스 사용 패턴과 주요 데이터를 이해할 수 있도록 돕는 액세스 하는 지연입니다. 계층 상호 작용 프로파일링 옵션을 사용하면서 애플리케이션을 다시 프로파일링해 보세요.|  
+| 범주 | 프로파일링 도구 사용 |  
+| 프로 파일링 방법 | 샘플링 |  
+| 메시지 | 다중 계층 응용 프로그램에 대 한 상호 작용 측정값을 수집 하면 데이터베이스 사용 패턴과 주요 데이터 액세스 지연을 이해 하는 데 도움이 됩니다. 계층 상호 작용 프로파일링 옵션을 사용하면서 애플리케이션을 다시 프로파일링해 보세요.|  
 | 규칙 유형 | 정보 |  
   
 ## <a name="cause"></a>원인  

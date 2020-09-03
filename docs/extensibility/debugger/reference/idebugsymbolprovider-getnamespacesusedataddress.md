@@ -1,5 +1,5 @@
 ---
-title: IDebug 기호 공급자::GetName공백사용주소 | 마이크로 소프트 문서
+title: 'Idebug Provider:: GetNamespacesUsedAtAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719213"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-이 메서드는 디버그 주소와 연결된 네임스페이스에 대한 열거기를 만듭니다.
+이 메서드는 디버그 주소와 연결 된 네임 스페이스에 대 한 열거자를 만듭니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,17 +43,17 @@ int GetNamespacesUsedAtAddress(
 
 ## <a name="parameters"></a>매개 변수
 `pAddress`\
-【인】 디버그 주소입니다.
+진행 디버그 주소입니다.
 
 `ppEnum`\
-【아웃】 네임스페이스에 대한 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 열거형기를 반환합니다.
+제한이 네임 스페이스에 대 한 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 열거자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 지정된 디버그 주소와 연결된 여러 네임스페이스(예: 중첩된 `using` 네임스페이스 또는 여러 문)가 있을 수 있습니다.
+ 지정 된 디버그 주소와 연결 된 네임 스페이스 (예: 중첩 된 네임 스페이스 또는 여러 개)가 있을 수 있습니다 `using` .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
