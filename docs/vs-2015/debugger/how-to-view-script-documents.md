@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189597"
 ---
 # <a name="how-to-view-script-documents"></a>방법: 스크립트 문서 보기
@@ -32,11 +32,11 @@ ms.locfileid: "68189597"
   
  클라이언트 쪽 스크립트 파일은 디버그 모드나 중단 모드에서만 표시되며 **스크립트 문서** 노드에 나타납니다.  
   
- 서버 쪽 스크립트 파일은 항상 표시되며 **\<웹 사이트 경로 이름>** 노드에 나타납니다. 노드 이름에는이 예제를 비슷합니다. `c:\...\Website2\`  
+ 서버 쪽 스크립트 파일은 항상 표시되며 이러한 **\<Website Pathname>** 노드는 노드에 표시 됩니다. 노드의 이름은 다음 예제와 유사 합니다. `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>서버 쪽 스크립트 문서를 보려면  
   
-1. **솔루션 탐색기**에서 **\<웹 사이트 경로 이름>** 노드를 엽니다.  
+1. **솔루션 탐색기**에서 **\<Website Pathname>** 노드를 엽니다.  
   
 2. 보려는 스크립트 파일을 두 번 클릭합니다.  
   
@@ -50,5 +50,5 @@ ms.locfileid: "68189597"
   
      클라이언트 쪽 스크립트 파일이 소스 창에서 열립니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)

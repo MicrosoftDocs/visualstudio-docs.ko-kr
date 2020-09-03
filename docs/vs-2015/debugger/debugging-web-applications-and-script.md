@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155909"
 ---
 # <a name="debugging-web-applications-and-script"></a>웹 애플리케이션 및 스크립트 디버깅
@@ -34,10 +34,10 @@ ms.locfileid: "68155909"
 
 표의 범례:  
   
- 이 단원에서는 일반적인 웹 애플리케이션 디버깅 기술을 설명합니다. 자세한 내용은 [디버거 기본 사항](../debugger/debugger-basics.md)합니다.  
+ 이 단원에서는 일반적인 웹 애플리케이션 디버깅 기술을 설명합니다. 자세한 내용은 [디버거 기본 사항](../debugger/debugger-basics.md)을 참조 하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [ASP.NET 및 AJAX 응용 프로그램 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)  
+ [ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)  
  개발 중이나 개발 후에 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 애플리케이션을 디버깅하는 방법에 대한 지침과 이를 수행하는 데 필요한 필수 구성 요소를 제공합니다.  
   
  [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
@@ -59,6 +59,6 @@ ms.locfileid: "68155909"
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace로 응용 프로그램의 실행 내역을 기록하여 보다 빠르고 쉽게 버그를 찾습니다. 기록된 이벤트 및 호출에서 앞뒤로 이동하며 주요 시점의 응용 프로그램 상태를 확인합니다. 여러 중단점을 설정하거나 자주 응용 프로그램을 다시 시작하지 않고 코드를 디버깅합니다. Visual Studio Ultimate가 있어야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)
