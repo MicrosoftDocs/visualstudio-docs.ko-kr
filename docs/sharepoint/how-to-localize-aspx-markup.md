@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016284"
 ---
 # <a name="how-to-localize-aspx-markup"></a>방법: ASPX 태그 지역화
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)](.aspx) 페이지는 일반적으로 하드 코드 된 문자열 값을 사용 합니다. 이러한 문자열을 지역화 하려면 지역화 된 리소스를 참조 하는 식으로 대체 합니다.
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) 페이지는 일반적으로 하드 코드 된 문자열 값을 사용 합니다. 이러한 문자열을 지역화 하려면 지역화 된 리소스를 참조 하는 식으로 대체 합니다.
 
 ## <a name="localize-aspx-markup"></a>ASPX 태그 지역화
 
@@ -59,7 +60,7 @@ ms.locfileid: "86016284"
     </asp:Content>
     ```
 
-     to
+     다음으로 변경:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -73,7 +74,7 @@ ms.locfileid: "86016284"
 
      지역화 된 문자열이 응용 프로그램에 표시 됩니다. 지역화 된 리소스를 표시 하려면 SharePoint 서버에 리소스 파일의 문화권과 일치 하는 언어 팩이 설치 되어 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 지역화](../sharepoint/localizing-sharepoint-solutions.md)
 - [방법: 기능 지역화](../sharepoint/how-to-localize-a-feature.md)
 - [방법: 리소스 파일 추가](../sharepoint/how-to-add-a-resource-file.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672307"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
@@ -60,19 +60,19 @@ ms.locfileid: "72672307"
 
 - [빌드 컴퓨터에서 환경 변수 설정](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
 
-- [빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
+- [빌드 컴퓨터의 GAC (전역 어셈블리 캐시)에 MSBuild 어셈블리 설치](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
 
 - [프로젝트 빌드](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
 
 - [소스 컨트롤로 체크 인할 수 있도록 빌드 환경 만들기](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 - Visual Studio Ultimate, Visual Studio Premium 또는 Visual Studio Professional 정품
 
 - .NET Framework 4.5.1([Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) 웹 사이트에서 다운로드할 수 있음)
 
-## <a name="InstallingSoftware"></a> 컴퓨터에 소프트웨어 설치
+## <a name="installing-software-on-the-computers"></a><a name="InstallingSoftware"></a> 컴퓨터에 소프트웨어 설치
  먼저 호스트 컴퓨터를 설정한 다음 빌드 컴퓨터를 설정합니다.
 
  호스트 컴퓨터에 Visual Studio를 설치하여 나중에 빌드 컴퓨터로 복사할 파일 및 설정을 만듭니다. x86 또는 x64 컴퓨터에 Visual Studio를 설치할 수 있지만 빌드 컴퓨터의 아키텍처는 호스트 컴퓨터의 아키텍처와 일치해야 합니다.
@@ -83,7 +83,7 @@ ms.locfileid: "72672307"
 
 2. 빌드 컴퓨터에 .NET Framework 4.5를 설치합니다. 설치되었는지 확인하려면 레지스트리 키 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version의 값이 “4.5”로 시작하는지 확인합니다.
 
-## <a name="CopyingFiles"></a> 호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사
+## <a name="copying-files-from-the-host-computer-to-the-build-computer"></a><a name="CopyingFiles"></a> 호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사
  이 단원에서는 특정 파일, 컴파일러, 빌드 도구, MSBuild 자산 및 레지스트리 설정을 호스트 컴퓨터에서 빌드 컴퓨터로 복사하는 방법에 대해 설명합니다. 다음 단계에서는 Visual Studio가 호스트 컴퓨터의 기본 위치에 설치되어 있다고 가정합니다. 다른 위치에 설치한 경우 단계를 적절하게 조정하십시오.
 
 - x86 컴퓨터에서 기본 위치는 C:\Program Files\Microsoft Visual Studio 11.0\입니다.
@@ -215,7 +215,7 @@ ms.locfileid: "72672307"
 
    - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-## <a name="CreatingRegistry"></a> 레지스트리 설정 만들기
+## <a name="creating-registry-settings"></a><a name="CreatingRegistry"></a> 레지스트리 설정 만들기
  MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어야 합니다.
 
 #### <a name="to-create-registry-settings"></a>레지스트리 설정을 만들려면
@@ -277,7 +277,7 @@ ms.locfileid: "72672307"
 
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables"></a> 빌드 컴퓨터에서 환경 변수 설정
+## <a name="setting-environment-variables-on-the-build-computer"></a><a name="SettingEnvVariables"></a> 빌드 컴퓨터에서 환경 변수 설정
  빌드 컴퓨터에서 MSBuild를 사용하려면 PATH 환경 변수를 설정해야 합니다. vcvarsall.bat를 사용하여 변수를 설정하거나 수동으로 변수를 구성할 수 있습니다.
 
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>vcvarsall.bat를 사용하여 환경 변수를 설정하려면
@@ -314,7 +314,7 @@ ms.locfileid: "72672307"
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> 빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치
+## <a name="installing-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="InstallingMSBuildToGAC"></a> 빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치
  MSBuild를 사용하려면 빌드 컴퓨터의 GAC에 일부 추가 어셈블리를 설치해야 합니다.
 
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>호스트 컴퓨터에서 어셈블리를 복사하여 빌드 컴퓨터에 설치하려면
@@ -331,26 +331,26 @@ ms.locfileid: "72672307"
 
      관리 권한이 있는 명령 프롬프트 창을 열고 각 파일에 대해 다음 명령을 실행합니다.
 
-     **gacutil -i \<file>**
+     **gacutil.exe-i \<file>**
 
     > [!NOTE]
     > 어셈블리가 GAC에 완전히 설치되려면 다시 부팅해야 할 수도 있습니다.
 
-## <a name="BuildingProjects"></a> 프로젝트 빌드
+## <a name="building-projects"></a><a name="BuildingProjects"></a> 프로젝트 빌드
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 프로젝트 및 솔루션은 Team Foundation Build를 사용하거나 명령줄에서 빌드할 수 있습니다. Team Foundation Build를 사용하여 프로젝트를 빌드하면 시스템 아키텍처에 해당하는 MSBuild 실행 파일이 호출됩니다.  명령줄에서는 32비트 MSBuild 또는 64비트 MSBuild를 사용할 수 있으며, PATH 환경 변수를 설정하거나 아키텍처별 MSBuild 실행 파일을 직접 호출하여 MSBuild의 아키텍처를 선택할 수 있습니다.
 
  명령 프롬프트에서 msbuild.exe를 사용하려면 다음 명령을 실행합니다. 여기서 *solution.sln*은 솔루션 이름에 대한 자리 표시자입니다.
 
  **msbuild** *solution.sln*
 
- 명령줄에서 MSBuild를 사용하는 방법에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
+ 명령줄에서 MSBuild를 사용 하는 방법에 대 한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조 하세요.
 
 > [!NOTE]
 > [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 프로젝트를 빌드하려면 "v110" 플랫폼 도구 집합을 사용해야 합니다. [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 프로젝트 파일을 편집하지 않으려는 경우 이 명령줄 인수를 사용하여 플랫폼 도구 집합을 설정할 수 있습니다.
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a> 소스 컨트롤로 체크 인할 수 있도록 빌드 환경 만들기
+## <a name="creating-the-build-environment-so-that-it-can-be-checked-into-source-control"></a><a name="CreatingForSourceControl"></a> 소스 제어에 체크 인할 수 있도록 빌드 환경 만들기
  다양한 컴퓨터에 배포할 수 있고 파일을 GAC화하거나 레지스트리 설정을 수정할 필요가 없는 빌드 환경을 만들 수 있습니다. 다음 단계는 이 작업을 수행하는 한 방법일 뿐입니다. 빌드 환경의 고유한 특성에 맞게 이러한 단계를 조정하십시오.
 
 > [!NOTE]
@@ -423,5 +423,5 @@ ms.locfileid: "72672307"
 
          네이티브 64비트 빌드의 경우 64비트 MSBuild를 가리킵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [디버그 실행 파일](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [명령줄 참조](../msbuild/msbuild-command-line-reference.md) 를 실행 하는 테스트 컴퓨터 준비

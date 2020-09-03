@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a8e393ad46b6d37bd74806a0a4b84825bd059457
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672269"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>디버깅하는 동안에는 디자이너를 수정할 수 없습니다.
@@ -27,5 +27,5 @@ ms.locfileid: "72672269"
 
      애플리케이션의 디버깅이 중지되고 O/R 디자이너에서 항목을 수정할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
- [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [Walkthrough: LINQ to SQL 클래스 만들기 (O-R 디자이너) ](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [연습: LINQ to SQL 클래스 만들기 (O-R 디자이너)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

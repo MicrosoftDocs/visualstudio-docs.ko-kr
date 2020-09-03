@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c3e970ac2d6f7de86908a88aff6235c598ead810
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918471"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어 웹 페이지를 만드는 템플릿에는 "\<html > ..."가 포함 됩니다. 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 된 *제어 블록*은 프로그램 코드의 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
+텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어 웹 페이지를 만드는 템플릿에는 "..."가 포함 됩니다. \<html> 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 된 *제어 블록*은 프로그램 코드의 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
 
  이 구조에서는 템플릿을 쉽게 개발할 수 있습니다. 생성된 파일의 프로토타입으로 시작한 다음 상황에 따라 다른 결과를 생성하는 제어 블록을 증분 방식으로 삽입할 수 있기 때문입니다.
 
@@ -161,7 +161,7 @@ private int Square(int i)
  제어 블록에 대 한 자세한 내용은 [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)을 참조 하세요.
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>텍스트 블록을 포함할 수 있는 클래스 기능 블록
- 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
+ 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 List of Squares:
@@ -184,14 +184,14 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>외부 정의 사용
 
-### <a name="assemblies"></a>Assemblies
+### <a name="assemblies"></a>어셈블리
  템플릿의 코드 블록은 System.dll 등 가장 흔히 사용되는 .NET 어셈블리에 대해 정의되는 형식을 사용할 수 있습니다. 또한 기타 .NET 어셈블리나 고유한 어셈블리를 참조할 수도 있습니다. 다음과 같이 어셈블리의 경로 이름 또는 강력한 이름을 제공할 수 있습니다.
 
 ```
 <#@ assembly name="System.Xml" #>
 ```
 
- 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들면 다음과 같습니다.:
+ 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들면 다음과 같습니다.
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
 
  자세한 내용은 [T4 Import 지시어](../modeling/t4-import-directive.md)를 참조 하세요.
 
-### <a name="Include"></a>코드 및 텍스트 포함
+### <a name="including-code-and-text"></a><a name="Include"></a> 코드 및 텍스트 포함
  `include` 지시문은 다른 템플릿 파일의 텍스트를 삽입합니다. 예를 들어 다음 지시문은 `test.txt`의 내용을 삽입합니다.
 
  `<#@ include file="c:\test.txt" #>`
@@ -244,12 +244,12 @@ private void WriteSquareLine(int i)
 
  **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
 
- **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../includes/dsl-md.md)]에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. 또한 [!INCLUDE[dsl](../includes/dsl-md.md)]은 모델의 구조를 반영 하는 강력한 형식의 클래스 집합을 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
+ **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../includes/dsl-md.md)] 에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../includes/dsl-md.md)] 또한 모델 구조를 반영 하는 강력한 형식의 클래스 집합을 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 
  **UML 모델을 사용**합니다. UML 모델에서 코드를 생성할 수 있습니다. 이 경우 익숙한 표기법을 사용해 모델을 다이어그램으로 편집할 수 있다는 이점이 있습니다. 또한 다이어그램을 디자인하지 않아도 됩니다. 자세한 내용은 [UML 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md)을 참조 하세요.
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>디자인 타임 템플릿의 상대 파일 경로
- [디자인 타임 텍스트 템플릿에서](../modeling/design-time-code-generation-by-using-t4-text-templates.md)텍스트 템플릿에 상대적인 위치에 있는 파일을 참조 하려면 `this.Host.ResolvePath()`을 사용 합니다. 또한 `hostspecific="true"` 지시문에서 `template`도 설정해야 합니다.
+ [디자인 타임 텍스트 템플릿에서](../modeling/design-time-code-generation-by-using-t4-text-templates.md)텍스트 템플릿에 상대적인 위치에 있는 파일을 참조 하려는 경우를 사용 `this.Host.ResolvePath()` 합니다. 또한 `hostspecific="true"` 지시문에서 `template`도 설정해야 합니다.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -276,7 +276,7 @@ Content of MyFile.txt is:
 
 ## <a name="related-topics"></a>관련 항목
 
-|작업|항목|
+|Task|항목|
 |----------|-----------|
 |템플릿을 작성합니다.|[T4 텍스트 템플릿 작성 지침](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |프로그램 코드를 사용하여 텍스트를 생성합니다.|[텍스트 템플릿 구조](../modeling/writing-a-t4-text-template.md)|

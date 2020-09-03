@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918265"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
@@ -48,13 +48,13 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 > [!NOTE]
 > 이러한 항목 전체에서 "시스템"은 개발 중인 시스템 또는 애플리케이션을 의미합니다. 다양한 소프트웨어 및 하드웨어 구성 요소의 큰 컬렉션이거나, 단일 애플리케이션이거나, 큰 시스템 내의 소프트웨어 구성 요소일 수 있습니다. 어떤 경우에든, 요구 사항 모델은 사용자 인터페이스 또는 API를 통해 시스템 외부에서 표시되는 동작을 설명합니다.
 
-## <a name="common-tasks"></a>일반 작업
+## <a name="common-tasks"></a>일반 태스크
  사용자 요구 사항의 여러 가지 뷰를 만들 수 있습니다.  각 뷰는 특정 유형의 정보를 제공합니다.  이러한 뷰를 만들 때는 뷰 간에 자주 이동하는 것이 좋습니다. 임의 뷰에서 시작할 수 있습니다.
 
-|다이어그램 또는 문서|요구 사항 모델에서 설명하는 항목|단원|
+|다이어그램 또는 문서|요구 사항 모델에서 설명하는 항목|섹션|
 |-------------------------|-----------------------------------------------|-------------|
-|사용 사례 다이어그램|시스템 사용자 및 수행하는 작업입니다.|[시스템이 사용 되는 방식 설명](#UseCases)|
-|개념적 클래스 다이어그램|요구 사항을 설명하는 데 사용되는 형식 용어집으로, 형식은 시스템 인터페이스에 표시됩니다.|[요구 사항을 설명 하는 데 사용 되는 용어 정의](#RequirementsClasses)|
+|사용 사례 다이어그램|시스템 사용자 및 수행하는 작업입니다.|[시스템이 사용되는 방식 설명](#UseCases)|
+|개념적 클래스 다이어그램|요구 사항을 설명하는 데 사용되는 형식 용어집으로, 형식은 시스템 인터페이스에 표시됩니다.|[요구 사항을 설명하는 데 사용되는 용어 정의](#RequirementsClasses)|
 |동작 다이어그램|사용자 및 시스템이 수행하는 동작 및 해당 파트 간의 작업 및 정보 흐름입니다.|[사용자와 시스템 간의 작업 흐름 표시](#Workflow)|
 |시퀀스 다이어그램|사용자와 시스템 또는 해당 파트 간의 상호 작용 시퀀스입니다. 동작 다이어그램의 대체 뷰입니다.|[사용자와 시스템 간의 상호 작용 표시](#Sequences)|
 |추가 문서 또는 작업 항목|성능, 보안, 유용성 및 안정성 기준입니다.|[서비스 품질 요구 사항 설명](#QoSRequirements)|
@@ -62,16 +62,16 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
  대부분의 다이어그램 형식은 다른 용도로 사용할 수 있습니다. 다이어그램 형식에 대 한 개요는 [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)를 참조 하세요. 다이어그램 그리기에 대 한 기본 정보는 [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)을 참조 하세요.
 
-## <a name="UseCases"></a>시스템이 사용 되는 방식 설명
+## <a name="describing-how-your-system-is-used"></a><a name="UseCases"></a> 시스템이 사용 되는 방식 설명
  사용 사례 다이어그램을 만들어 누가 시스템을 어떤 용도로 사용하는지 설명합니다. 사용 사례는 시스템 사용자의 목표 및 목표를 달성하기 위해 수행하는 절차를 나타냅니다.
 
  한 예로, 온라인 음식 판매 시스템은 고객이 메뉴에서 항목을 선택할 수 있도록 해야 하며 공급 식당에서 메뉴를 업데이트할 수 있도록 해야 합니다. 사용 사례 다이어그램에서 다음과 같이 요약할 수 있습니다.
 
- ![고객 및 식당의 사용 사례](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")
+ ![Customer와 Restaurant에 대한 사용 사례](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")
 
  사용 사례가 더 작은 사례로 구성된 방식을 표시할 수도 있습니다. 예를 들어 음식 주문은 결제 및 배달을 포함하는 음식 구입의 일부입니다.
 
- ![시스템이 지불에 참여 하지만 배달 되지 않습니다.](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
+ ![시스템은 지불에만 참여하고 배송에는 참여하지 않음](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
 
  개발 중인 시스템 범위에 포함되는 사용 사례를 표시할 수도 있습니다. 예를 들어 그림의 시스템은 Deliver Meal 사용 사례에 포함되지 않습니다. 이렇게 하면 개발 작업의 컨텍스트 설정에 도움이 됩니다. 사용 사례 다이어그램에서 하위 시스템 컨테이너를 사용하여 시스템 또는 해당 구성 요소를 나타낼 수 있습니다.
 
@@ -85,15 +85,15 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 - 시스템 또는 특정 시스템 릴리스의 범위를 논의합니다.
 
-  자세한 내용은 다음 항목을 참조하세요.
+  다음 항목에서는 보다 자세한 정보를 제공합니다.
 
-|원하는 내용|읽기|
+|자세한 정보|읽기|
 |--------------------|----------|
 |사용 사례를 만드는 방법에 대한 자세한 정보|[UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)|
 |사용 사례 다이어그램의 요소|[UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)|
 |사용 사례에서 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="RequirementsClasses"></a>요구 사항을 설명 하는 데 사용 되는 용어 정의
+## <a name="defining-terms-used-to-describe-requirements"></a><a name="RequirementsClasses"></a> 요구 사항을 설명 하는 데 사용 되는 용어 정의
  UML 클래스 다이어그램을 통해 다음 용도로 사용되는 비즈니스 개념의 일관된 어휘를 개발할 수 있습니다.
 
 - 사용자가 시스템이 작동하는 비즈니스를 논의하는 데 사용합니다.
@@ -110,7 +110,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
   예를 들어 Dinner Now System에 대해 다음과 같은 개념적 클래스를 그릴 수 있습니다.
 
-  ![클래스 메뉴, 순서, 메뉴 항목, 주문 항목입니다.](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
+  ![Menu, Order, Menu Item, Order Item 클래스](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
 
   개념적 클래스 다이어그램은 요구 사항 모델 전체에서 사용하는 용어집을 제공합니다. 예를 들어 Order a Meal 사용 사례의 자세한 설명에서는 다음과 같이 작성할 수 있습니다.
 
@@ -130,9 +130,9 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 - 이러한 용어 간의 관계를 명확하게 설명합니다.
 
-  자세한 내용은 다음 항목을 참조하세요.
+  다음 항목에서는 보다 자세한 정보를 제공합니다.
 
-|원하는 내용|읽기|
+|자세한 정보|읽기|
 |--------------------|----------|
 |요구 사항 클래스를 찾는 방법에 대한 자세한 정보|[UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)|
 |개념적 클래스 다이어그램의 요소|[UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)|
@@ -140,12 +140,12 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
  개념적 클래스 다이어그램에서 연결에 화살표를 배치하여 검색성을 나타내는 것은 일반적으로 유용하지 않습니다. 다이어그램이 구현을 나타내지 않기 때문입니다. 연결은 실제 개체 간의 관계를 나타냅니다.
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Showing Business Rules
  비즈니스 규칙은 특정 사용 사례와 연결되지 않은 요구 사항이며 시스템 전체에서 관찰되어야 합니다.
 
- 대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
+ 대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예:
 
- ![Order 클래스에 첨부 된 주석의 규칙입니다.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
+ ![Order 클래스에 연결된 주석의 규칙](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
  *동적 비즈니스 규칙* 은 허용되는 이벤트 시퀀스를 제한합니다. 예를 들어 시퀀스 또는 동작 다이어그램을 사용하여 사용자가 시스템에서 다른 작업을 수행하기 전에 로그인해야 함을 표시합니다.
 
@@ -153,15 +153,15 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
  여기서 선택 항목은 요구 사항을 정의하는 방법과 관련이 있으며 프로그램 코드에서 요구 사항을 구현하는 방법과는 독립적입니다.
 
- 자세한 내용은 다음 항목을 참조하세요.
+ 다음 항목에서는 보다 자세한 정보를 제공합니다.
 
-|원하는 내용|읽기|
+|자세한 정보|읽기|
 |--------------------|----------|
 |정적 비즈니스 규칙을 찾고 기록하는 방법에 대한 자세한 정보|[UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)|
 |개념적 클래스 다이어그램의 요소|[UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)|
 |비즈니스 규칙을 준수하는 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> 서비스 품질 요구 사항 설명
  여러 범주의 서비스 품질 요구 사항이 있습니다. 이름은 다음과 같습니다.
 
 - 성능
@@ -178,46 +178,46 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
   고객이 음식을 주문하는 동안 식당이 메뉴 항목을 삭제하는 경우 해당 메뉴 항목을 참조하는 주문 항목은 모두 빨간색으로 표시됩니다.
 
-  자세한 내용은 다음 항목을 참조하세요.
+  다음 항목에서는 보다 자세한 정보를 제공합니다.
 
-|원하는 내용|읽기|
+|자세한 정보|읽기|
 |--------------------|----------|
 |사용 사례에 추가 문서 연결|[문서 및 다이어그램에 사용 사례 연결](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |서비스 품질 요구 사항을 준수하는 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Workflow"></a>사용자와 시스템 간의 작업 흐름 표시
+## <a name="showing-work-flow-between-users-and-your-system"></a><a name="Workflow"></a> 사용자와 시스템 간의 작업 흐름 표시
  동작 다이어그램을 사용하여 서로 다른 사용 사례 간의 작업 흐름을 표시할 수 있습니다. 대체로 사용자가 시스템 내부 및 외부에서 수행하는 주요 작업을 표시하는 동작 다이어그램을 그려 요구 사항 모델을 시작하는 것이 유용합니다.
 
- 예를 들면 다음과 같습니다.:
+ 예:
 
- ![세 개의 작업과 루프가 있는 활동입니다.](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
+ ![동작 세 개와 루프 하나가 포함된 작업입니다.](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
- 사용 사례 다이어그램 및 동작 다이어그램을 그려 동일한 정보의 서로 다른 뷰를 표시할 수 있습니다.  사용 사례 다이어그램은 큰 동작 내의 작은 동작 중첩을 표시하는 데 더 효과적이지만 작업 흐름을 표시하지 않습니다. 예를 들면 다음과 같습니다.:
+ 사용 사례 다이어그램 및 동작 다이어그램을 그려 동일한 정보의 서로 다른 뷰를 표시할 수 있습니다.  사용 사례 다이어그램은 큰 동작 내의 작은 동작 중첩을 표시하는 데 더 효과적이지만 작업 흐름을 표시하지 않습니다. 예:
 
- ![이전 작업에 대 한 사용 사례](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
+ ![이전 동작에 대한 사용 사례](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
  동작 다이어그램을 사용하여 소프트웨어 내의 알고리즘을 설명할 수도 있지만 비즈니스 프로세스에 대한 다이어그램을 사용하는 경우 시스템 외부에 표시되는 동작에 중점을 둡니다.
 
- 자세한 내용은 다음 항목을 참조하세요.
+ 다음 항목에서는 보다 자세한 정보를 제공합니다.
 
-|원하는 내용|읽기|
+|자세한 정보|읽기|
 |--------------------|----------|
 |비즈니스 작업 흐름을 정의하는 방법에 대한 자세한 정보|[UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)|
 |동작 다이어그램의 요소|[UML 동작 다이어그램: 참조](../modeling/uml-activity-diagrams-reference.md)|
 |동작 다이어그램에서 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Sequences"></a>사용자와 시스템 간의 상호 작용 표시
+## <a name="showing-interactions-between-users-and-your-system"></a><a name="Sequences"></a> 사용자와 시스템 간의 상호 작용 표시
  시퀀스 다이어그램을 사용하여 시스템과 외부 행위자 간 또는 시스템 파트 간의 메시지 교환을 표시할 수 있습니다. 이렇게 하면 상호 작용 시퀀스를 명확하게 표시하는 사용 사례의 단계 뷰가 제공됩니다. 시퀀스 다이어그램은 사용 사례에 상호 작용하는 여러 대상이 있고 시스템에 API가 있는 경우에 특히 유용합니다.
 
- 예를 들면 다음과 같습니다.:
+ 예:
 
- ![시스템 및 행위자를 사용 하는 시퀀스 다이어그램입니다.](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
+ ![시스템과 행위자가 포함된 시퀀스 다이어그램](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
  시퀀스 다이어그램의 한 가지 이점은 생성 중인 시스템에 들어오는 메시지를 쉽게 확인할 수 있다는 것입니다. 시스템을 디자인하기 위해 단일 시스템 수명선을 각 구성 요소에 대한 별도의 수명선으로 바꾼 다음 들어오는 각 메시지에 대한 응답으로 발생하는 상호 작용을 표시할 수 있습니다.
 
- 자세한 내용은 다음 항목을 참조하세요.
+ 다음 항목에서는 보다 자세한 정보를 제공합니다.
 
-|원하는 내용|읽기|
+|자세한 정보|읽기|
 |--------------------|----------|
 |상호 작용을 정의하는 방법에 대한 자세한 정보|[UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)|
 |시퀀스 다이어그램의 요소|[UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)|
@@ -238,5 +238,5 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
   다양한 다이어그램에서 제공하는 뷰 간의 관계를 검사하면 사용자 작업에 사용되는 주요 개념을 빠르게 이해하고 사용자가 시스템에서 필요한 사항을 이해하도록 도울 수 있습니다. 이해 관계자가 가장 확신하지 못하는 요구 사항을 더 효과적으로 파악할 수 있습니다. 프로젝트의 초기 단계에서 적어도 간소화된 형태로 이러한 기능의 개발을 계획하여 사용자가 실험하도록 할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [모델에서 테스트 개발](../modeling/develop-tests-from-a-model.md) [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md) [앱 아키텍처](../modeling/model-your-app-s-architecture.md) [비디오: 비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

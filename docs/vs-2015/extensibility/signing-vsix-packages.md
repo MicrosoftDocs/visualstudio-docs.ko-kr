@@ -15,10 +15,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918732"
 ---
 # <a name="signing-vsix-packages"></a>VSIX 패키지 서명
@@ -38,15 +38,15 @@ ms.locfileid: "75918732"
   
 1. VSIX를 프로젝트에 추가 합니다.  
   
-2. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 **고 &#124; 추가 NuGet 패키지 관리**를 선택 합니다.  Nuget 및 nuget 패키지를 추가 하는 방법에 대 한 자세한 내용은 [Nuget 개요](/nuget/) 및 [대화 상자를 사용 하 여 nuget 패키지 관리](/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요.  
+2. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가 &#124; NuGet 패키지 관리**를 선택 합니다.  Nuget 및 nuget 패키지를 추가 하는 방법에 대 한 자세한 내용은 [Nuget 개요](/nuget/) 및 [대화 상자를 사용 하 여 nuget 패키지 관리](/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요.  
   
 3. VisualStudioExtensibility에서 VSIXSignTool을 검색 하 고 NuGet 패키지를 설치 합니다.  
   
-4. 이제 프로젝트의 로컬 패키지 위치에서 VSIXSignTool을 실행할 수 있습니다. 서명 시나리오에 대 한 도구의 명령줄 도움말 (VSIXSignTool/?)을 참조 하세요.  
+4. 이제 프로젝트의 로컬 패키지 위치에서 VSIXSignTool을 실행할 수 있습니다. 서명 시나리오 (VSIXSignTool.exe/?)는 도구의 명령줄 도움말을 참조 하세요.  
   
    예를 들어 암호로 보호 된 인증서 파일을 사용 하 여 서명 합니다.  
   
-   VSIXSignTool.exe sign /f \<certfile> /p \<password> \<VSIXfile>  
+   VSIXSignTool.exe 서명/f \<certfile> /p \<password>\<VSIXfile>  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)

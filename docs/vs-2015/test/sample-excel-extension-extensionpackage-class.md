@@ -1,5 +1,5 @@
 ---
-title: '샘플 Excel 확장: ExtensionPackage 클래스 | Microsoft Docs'
+title: '샘플 Excel 확장: ExtensionPackage 클래스 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1c1f4c746fa505b50bab9caa7a516a2abc77f69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672206"
 ---
 # <a name="sample-excel-extension-extensionpackage-class"></a>샘플 Excel 확장: ExtensionPackage 클래스
@@ -38,5 +38,5 @@ ms.locfileid: "72672206"
 ## <a name="getservice-method"></a>GetService 메서드
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> 메서드는 코딩된 UI 테스트 프레임워크가 각 개체의 기본 클래스로 식별되는 기술 관리자, 속성 공급자 및 작업 필터에 액세스하는 데 사용하는 단일 진입점입니다.
 
-## <a name="see-also"></a>관련 항목:
- [Microsoft Excel을 지원 하도록 코딩 된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md) <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
+## <a name="see-also"></a>관련 항목
+ <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

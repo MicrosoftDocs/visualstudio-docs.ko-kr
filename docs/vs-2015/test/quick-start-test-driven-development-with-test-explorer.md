@@ -9,13 +9,13 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672254"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>퀵 스타트: 테스트 탐색기를 사용한 테스트 기반 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 여러 개발 증분 단계를 통해 코드 작업을 올바른 상태로 유지하는 데 도움을 줄 단위 테스트를 작성하는 것이 좋습니다. 타사에서 개발된 것을 비롯하여 단위 테스트를 작성하는 데 사용할 수 있는 프레임워크에는 여러 가지가 있습니다. 일부 테스트 프레임워크는 다른 언어 또는 플랫폼의 테스트로 전문화되어 있습니다. 테스트 탐색기는 이러한 프레임워크 중 하나에서 단위 테스트를 위한 단일 인터페이스를 제공합니다. 어댑터는 일반적으로 사용되는 프레임워크에 사용할 수 있으며, 다른 프레임워크용 고유 어댑터를 작성할 수 있습니다.
@@ -29,7 +29,7 @@ ms.locfileid: "72672254"
 - 필요한 모든 정보를 하나의 창에서 확인합니다.
 
 ## <a name="using-test-explorer"></a>테스트 탐색기 사용
- ![모두 실행 단추를 표시 하는 단위 테스트 탐색기](../test/media/unittestexplorer-beta.png "Testexplorer (베타)")
+ ![모두 실행 단추를 표시하는 단위 테스트 탐색기](../test/media/unittestexplorer-beta.png "Testexplorer (베타)")
 
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트를 실행하려면
 
@@ -53,13 +53,13 @@ ms.locfileid: "72672254"
 
     테스트 탐색기가 열리고 결과 요약이 표시됩니다.
 
-   **전체 테스트 목록을 보려면:** 모든 범주에서 **모두 표시**를 선택합니다.
+   **전체 테스트 목록을 보려면** 아무 범주에서나 **모두 표시** 를 선택합니다.
 
-   **테스트 결과의 세부 정보를 보려면:** 세부 정보 창에서 예외 메시지와 같은 세부 정보를 표시할 테스트를 테스트 탐색기에서 선택합니다.
+   **테스트 결과의 세부 정보를 보려면** 세부 정보 창에서 예외 메시지와 같은 세부 정보를 표시할 테스트를 테스트 탐색기에서 선택합니다.
 
-   **테스트 코드로 이동하려면:** 테스트 탐색기에서 테스트를 두 번 클릭하거나 바로 가기 메뉴에서 **테스트 열기**를 선택합니다.
+   **테스트 코드로 이동하려면** 테스트 탐색기에서 테스트를 두 번 클릭하거나 바로 가기 메뉴에서 **테스트 열기** 를 선택합니다.
 
-   **테스트를 디버그하려면:** 하나 이상의 테스트에 대한 바로 가기 메뉴를 연 다음, **선택한 테스트 디버그**를 선택합니다.
+   **테스트를 디버깅하려면** 하나 이상의 테스트에 대한 바로 가기를 열고 나서 **선택한 테스트 디버그**를 선택합니다.
 
 > [!IMPORTANT]
 > 표시되는 결과는 최근 실행에 대한 결과입니다. 결과 색상 막대에는 실행된 테스트에 대한 결과만 표시됩니다. 예를 들어, 여러 테스트를 실행했지만 그 중 일부가 실패하고 성공한 테스트만 실행할 경우 결과 모음에 모두 녹색으로 표시됩니다.
@@ -67,7 +67,7 @@ ms.locfileid: "72672254"
 > [!NOTE]
 > 테스트가 표시되지 않으면 어댑터를 설치하여 테스트 탐색기를 사용 중인 테스트 프레임워크에 연결했는지 확인하십시오. 자세한 내용은 [다른 테스트 프레임 워크 사용](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)을 참조 하세요.
 
-## <a name="walkthrough"></a>살펴보았습니다 단위 테스트를 사용 하 여 메서드 개발
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> 연습: 단위 테스트를 사용 하 여 메서드 개발
  이 연습에서는 Microsoft 단위 테스트 프레임워크를 사용하여 C#에서 테스트 메서드를 개발하는 방법을 보여 줍니다. 다른 언어에 맞게 쉽게 조정할 수 있으며 NUnit과 같은 다른 테스트 프레임워크에도 사용할 수 있습니다. 자세한 내용은 [다른 테스트 프레임 워크 사용](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)을 참조 하세요.
 
 #### <a name="creating-the-test-and-method"></a>테스트 및 메서드 만들기
@@ -124,7 +124,7 @@ ms.locfileid: "72672254"
 
 7. **스택 추적** 에서 테스트가 실패한 위치를 확인할 항목을 선택합니다.
 
-   ![실패 한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+   ![실패한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
 
    이제 테스트를 만들었으며 테스트를 통과하도록 수정할 스텁을 만들었습니다.
 
@@ -139,13 +139,13 @@ ms.locfileid: "72672254"
      }
     ```
 
-2. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      코드가 빌드되고 테스트가 실행됩니다.
 
-     테스트가 통과됩니다.
+     테스트가 통과합니다.
 
-     ![통과 한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![통과한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>테스트를 추가하여 입력 범위 확장
 
@@ -180,7 +180,7 @@ ms.locfileid: "72672254"
     }
     ```
 
-2. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      첫 번째 테스트는 여전히 통과하지만 새 테스트는 실패합니다.
 
@@ -202,7 +202,7 @@ ms.locfileid: "72672254"
     }
     ```
 
-4. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+4. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      이제 두 테스트를 모두 통과합니다.
 
@@ -227,7 +227,7 @@ ms.locfileid: "72672254"
      }
     ```
 
-2. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      테스트 아래 메서드가 반복적으로 실행되므로 수동으로 취소해야 합니다.
 
@@ -248,7 +248,7 @@ ms.locfileid: "72672254"
     ...
     ```
 
-5. 테스트 탐색기에서 **모두 실행**을 선택합니다.
+5. 테스트 탐색기에서 **모두 실행**을 선택 합니다.
 
      모든 테스트를 통과합니다.
 
@@ -287,4 +287,4 @@ ms.locfileid: "72672254"
 
      이번에도 모든 테스트를 통과합니다.
 
-     ![통과 한 테스트 3 개를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![통과한 테스트 3개를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

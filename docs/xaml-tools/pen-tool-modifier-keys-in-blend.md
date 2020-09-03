@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328375"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio의 펜 도구 보조 키
@@ -36,7 +36,7 @@ ms.locfileid: "85328375"
 |두 개의 패스를 연결할 때 부드러운 모퉁이 만들기|두 개의 경로를 선택하고 **펜** 도구를 클릭하고 패스 중 하나의 끝점을 클릭한 후 다른 패스의 끝점을 끕니다.|![두 개의 패스를 연결할 때 부드러운 모퉁이 만들기](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> 펜 연결 포인터|
 |새 패스 만들기|**Ctrl** 키를 누른 채로 이전 패스의 외부 영역을 클릭하여 이전 패스에 점을 추가하는 것을 중지한 다음, 새 패스를 시작하려는 위치를 클릭하거나 이 위치로 끕니다.|![새 패스 만들기](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> 펜 시작 포인터|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [아트보드 보조 키](artboard-modifier-keys-in-blend.md)
 - [직접 선택 도구 보조 키](direct-selection-tool-modifier-keys-in-blend.md)

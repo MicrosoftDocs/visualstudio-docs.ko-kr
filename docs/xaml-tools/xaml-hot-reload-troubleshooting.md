@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328472"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>XAML 핫 다시 로드 문제 해결
@@ -51,7 +51,7 @@ XAML 핫 다시 로드는 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 응용 프로그
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>MSBuild 속성이 올바른지 확인
 
-기본적으로 소스 정보는 디버그 구성에 포함 됩니다. 프로젝트 파일 (예: * .csproj)의 MSBuild 속성에 의해 제어 됩니다. WPF의 경우 속성은 이며 `XamlDebuggingInformation` 로 설정 되어야 합니다 `True` . UWP의 경우 속성은 이며 `DisableXbfLineInfo` 로 설정 되어야 합니다 `False` . 예:
+기본적으로 소스 정보는 디버그 구성에 포함 됩니다. 프로젝트 파일 (예: * .csproj)의 MSBuild 속성에 의해 제어 됩니다. WPF의 경우 속성은 이며 `XamlDebuggingInformation` 로 설정 되어야 합니다 `True` . UWP의 경우 속성은 이며 `DisableXbfLineInfo` 로 설정 되어야 합니다 `False` . 예를 들면 다음과 같습니다.
 
 WPF:
 
@@ -69,6 +69,6 @@ XAML 핫 다시 로드 (이전 섹션 참조)를 지원 하도록 올바른 MSBu
 
 XAML 파일에 **오류 목록**오류가 표시 되 면 Xaml 핫 다시 로드가 작동 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 [XAML 핫 다시 로드를 사용 하 여 실행 중인 XAML 코드 작성 및 디버그](xaml-hot-reload.md)
