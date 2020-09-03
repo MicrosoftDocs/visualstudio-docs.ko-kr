@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668782"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>조회 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
@@ -58,7 +58,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 - 새 컨트롤에 데이터를 표시할 폼을 만듭니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료하려면 다음 사항이 필요합니다.
 
 - Northwind 샘플 데이터베이스에 대한 액세스.
@@ -83,7 +83,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 1. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가**를 선택합니다.
 
-2. **이름** 영역에 `LookupBox`를 입력 한 다음 **추가**를 클릭 합니다.
+2. `LookupBox` **이름** 영역에를 입력 한 다음 **추가**를 클릭 합니다.
 
      **LookupBox** 컨트롤이 **솔루션 탐색기**에 추가되고 디자이너에서 열립니다.
 
@@ -91,7 +91,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 #### <a name="to-design-the-lookupbox-control"></a>LookupBox 컨트롤을 디자인하려면
 
-- <xref:System.Windows.Forms.ComboBox>도구 상자**에서 사용자 컨트롤의 디자인 화면으로** 를 끌어 옵니다.
+- <xref:System.Windows.Forms.ComboBox>도구 상자**에서 사용자 컨트롤의 디자인 화면으로 **를 끌어 옵니다.
 
 ## <a name="add-the-required-data-binding-attribute"></a>필요한 데이터 바인딩 특성 추가
  데이터 바인딩을 지원하는 조회 컨트롤에 대해 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>를 구현할 수 있습니다.
@@ -118,7 +118,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 3. **데이터 소스 형식 선택** 페이지에서 **데이터베이스** 를 선택하고 **다음**을 클릭합니다.
 
-4. **데이터 연결 선택** 페이지에서 다음 중 한 가지를 수행합니다.
+4. **데이터 연결 선택** 페이지에서 다음 중 하나를 수행 합니다.
 
     - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
@@ -160,7 +160,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Windows Form에서 데이터 바인딩된 컨트롤을 만들려면
 
-- **Orders** 노드를 **데이터 소스** 창에서 Windows Form으로 끌고, **lookupbox** 컨트롤이 `CustomerID` 열의 데이터를 표시 하는 데 사용 되는지 확인 합니다.
+- **데이터 소스** 창에서 Windows Form으로 **Orders** 노드를 끌어 오고, **lookupbox** 컨트롤이 열의 데이터를 표시 하는 데 사용 되는지 확인 합니다 `CustomerID` .
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Customers 테이블에서 CompanyName을 조회 하는 컨트롤 바인딩
 
@@ -178,5 +178,5 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 - 일부 레코드를 탐색해 보고 `CompanyName`이 `LookupBox` 컨트롤에 표시되는지 확인합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

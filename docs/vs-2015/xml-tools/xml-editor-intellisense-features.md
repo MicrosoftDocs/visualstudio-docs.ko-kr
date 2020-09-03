@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cd10f9eb0e2899394788c3b19348892837426db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669459"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 편집기 IntelliSense 기능
@@ -22,7 +22,7 @@ ms.locfileid: "72669459"
 XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기에 버금가는 완전한 IntelliSense 기능을 제공합니다. 이 단원에서는 XSD(XML 스키마 정의 언어) 및 XSLT 문서와 함께 IntelliSense를 사용하는 방법에 대해 설명합니다.
 
 ## <a name="intellisense-in-an-xsd-document"></a>XSD 문서의 IntelliSense
- 스키마가 문서와 연결 된 후에는 `"<"` 입력할 때마다 필요한 요소에 대 한 드롭다운 목록이 표시 됩니다. 또는 XML 편집기 도구 모음에서 **개체 멤버 목록 표시** 단추를 클릭 합니다. 스키마를 XML 문서에 연결 하는 방법에 대 한 자세한 내용은 [Xml 문서 유효성 검사](../xml-tools/xml-document-validation.md)를 참조 하세요.
+ 스키마를 문서에 연결한 후 `"<"`를 입력하거나 XML 편집기 도구 모음에서 **개체 멤버 목록 표시** 단추를 클릭할 때마다 예상되는 요소의 드롭다운 목록이 표시됩니다. 스키마를 XML 문서에 연결 하는 방법에 대 한 자세한 내용은 [Xml 문서 유효성 검사](../xml-tools/xml-document-validation.md)를 참조 하세요.
 
  시작 태그 안에서 SPACE를 입력할 때도 현재 요소에 추가할 수 있는 모든 특성을 표시하는 드롭다운 목록이 나타납니다.
 
@@ -45,14 +45,14 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
 
 - 제공된 명명된 템플릿의 매개 변수 이름
 
-  자세한 내용은 [연습: XSLT IntelliSense 사용](../xml-tools/walkthrough-using-xslt-intellisense.md) 항목을 참조 하세요.
+  자세한 내용은 [연습: XSLT IntelliSense 사용](../xml-tools/walkthrough-using-xslt-intellisense.md) 항목을 참조하세요.
 
 ## <a name="auto-completion"></a>자동 완성
  XML 편집기에서는 필수 XML 구문이 자동으로 입력되므로 XML을 쉽게 편집할 수 있습니다. 예를 들어, 다음 시작 태그를 입력하면
 
  `<book>`
 
- 끝 태그가 입력되고 커서가 시작 태그 뒤에 놓입니다. 다음은이에 대 한 예입니다. "&#124;" 커서 위치를 메모 합니다.
+ 끝 태그가 입력되고 커서가 시작 태그 뒤에 놓입니다. 다음은 자동 완성의 예제입니다. “&#124;”은 커서 위치를 나타냅니다.
 
  `<book>`&#124;`</book>`
 
@@ -85,9 +85,9 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
 
  XML 편집기에서는 다음 항목에 대해 이 작업을 수행합니다.
 
-- 일치하는 시작 태그와 끝 태그
+- 쌍을 이루는 시작 및 끝 태그
 
-- "@No__t_0" 또는 ">" 꺾쇠 괄호의 쌍입니다.
+- "\<" or ">" 꺾쇠 괄호 쌍
 
 - 주석의 시작과 끝
 
@@ -102,9 +102,9 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
 ## <a name="modifying-the-intellisense-options"></a>IntelliSense 옵션 수정
  IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습니다. 그러나 도구-옵션 설정을 수정하여 이를 변경할 수 있습니다.
 
- **기타** 페이지의 **자동 삽입** 섹션에서는 다음과 같은 동작을 제어 합니다.
+ **기타** 페이지의 **자동 삽입** 섹션에서는 다음 동작을 제어합니다.
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |닫기 태그|새 요소에 대해 닫기 태그를 삽입합니다.|
 |특성 따옴표|새 특성 이름을 입력할 때 특성 값 따옴표를 삽입합니다.|
@@ -114,9 +114,9 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
 
 1. **도구** 메뉴에서 **옵션**을 선택합니다.
 
-2. **텍스트 편집기**를 확장 하 고 **XML**을 확장 한 다음 **기타**를 선택 합니다.
+2. **텍스트 편집기**를 확장하고 **XML**을 확장한 다음, **기타**를 선택합니다.
 
-3. **자동 삽입** 섹션을 변경 하 고 **확인**을 클릭 합니다.
+3. **자동 삽입** 섹션에서 원하는 대로 변경하고 **확인**을 클릭합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Intellisense를 사용 하](../ide/using-intellisense.md) 는 [XML 편집기](../xml-tools/xml-editor.md) [연습: XSLT intellisense 사용](../xml-tools/walkthrough-using-xslt-intellisense.md)

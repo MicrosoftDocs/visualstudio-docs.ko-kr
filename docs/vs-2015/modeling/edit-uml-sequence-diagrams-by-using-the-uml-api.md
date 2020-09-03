@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669705"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>UML API를 사용하여 UML 시퀀스 다이어그램 편집
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  자세한 내용은 [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)를 참조 하세요.
 
 ### <a name="getting-the-context"></a>컨텍스트 가져오기
- 시퀀스 다이어그램에서 명령 또는 제스처 처리기의 일부로 상호 작용을 편집하는 경우 컨텍스트에 대한 참조를 가져올 수 있습니다. 예를 들면,
+ 시퀀스 다이어그램에서 명령 또는 제스처 처리기의 일부로 상호 작용을 편집하는 경우 컨텍스트에 대한 참조를 가져올 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 [SequenceDesignerExtension]
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>상호 작용 및 해당 레이아웃 업데이트
  상호 작용을 업데이트하는 경우 항상 다음 메서드 중 하나로 레이아웃을 업데이트하여 작업을 종료합니다.
 
-- `ISequenceDiagram.UpdateShapePositions()`은 최근에 삽입 되거나 이동 된 모양의 위치와 인접 한 셰이프를 조정 합니다.
+- `ISequenceDiagram.UpdateShapePositions()` 최근 삽입 또는 이동 된 모양의 위치와 인접 한 모양을 조정 합니다.
 
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])`는 전체 다이어그램을 다시 그립니다. 매개 변수를 사용하여 수명선, 메시지 또는 둘 다의 위치 변경을 지정할 수 있습니다.
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` 전체 다이어그램을 다시 그립니다. 매개 변수를 사용하여 수명선, 메시지 또는 둘 다의 위치 변경을 지정할 수 있습니다.
 
   이 기능은 특히 새 요소를 삽입하거나 기존 요소를 이동할 때 중요합니다. 다음 작업 중 하나를 수행할 때까지 다이어그램에서 올바른 위치에 배치되지 않습니다. 일련의 변경을 마쳤을 때 다음 작업 중 하나를 한 번만 호출하면 됩니다.
 
-  명령 후에 실행 취소를 수행하는 사용자가 당황하지 않도록 `ILinkedUndoTransaction`을 사용하여 변경 내용과 최종 `Layout()` 또는 `UpdateShapePositions()` 작업을 묶습니다. 예를 들면,
+  명령 후에 실행 취소를 수행하는 사용자가 당황하지 않도록 `ILinkedUndoTransaction`을 사용하여 변경 내용과 최종 `Layout()` 또는 `UpdateShapePositions()` 작업을 묶습니다. 예를 들면 다음과 같습니다.
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>메시지를 만들려면
- 메시지를 만들려면 소스 및 대상 수명선에서 삽입 지점을 식별해야 합니다. 예를 들면,
+ 메시지를 만들려면 소스 및 대상 수명선에서 삽입 지점을 식별해야 합니다. 예를 들면 다음과 같습니다.
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,
@@ -246,11 +246,11 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
 
  대부분의 다른 문제는 삽입 지점이 잘못 정렬되어 새 메시지 또는 조각이 다른 메시지 또는 조각과 교차하는 경우에 발생합니다. 증상으로, 변경 작업이 수행되지 않거나 예외가 발생할 수 있습니다. `UpdateShapePositions()` 또는 `Layout()` 작업이 수행될 때까지 예외가 발생하지 않을 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [VisualStudio.](/previous-versions/dd493373(v=vs.140))
 - [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)
 - [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 - [사용자 지정 모델링 도구 상자 항목 정의](../modeling/define-a-custom-modeling-toolbox-item.md)
 - [UML 모델에 대한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)
-- [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)
+- [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

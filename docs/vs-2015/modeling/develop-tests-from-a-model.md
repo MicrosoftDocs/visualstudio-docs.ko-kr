@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b9fec6954706fcecb1281650a8db3d85f08fbd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669782"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
@@ -42,7 +42,7 @@ ms.locfileid: "72669782"
  시스템 테스트와 요구 사항 모델 간의 관계를 만들고 유지 관리할 수 있습니다. 이 관계를 설정하려면 요구 사항 모델의 주요 요소에 해당하는 테스트를 작성합니다. Visual Studio는 테스트 및 모델 파트 간에 링크를 만들 수 있도록 하여 해당 관계의 유지 관리를 도와줍니다. 요구 사항 모델에 대 한 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
 
 ### <a name="write-tests-for-each-use-case"></a>각 사용 사례에 대한 테스트 작성
- [!INCLUDE[TCMext](../includes/tcmext-md.md)]를 사용하는 경우 요구 사항 모델에 정의된 각 사용 사례에 대한 테스트 그룹을 만들 수 있습니다. 예를 들어 주문 만들기 및 주문에 항목 추가를 포함하는 음식 주문 사용 사례가 있는 경우 전체 사용 사례 및 보다 자세한 사용 사례에 대한 테스트를 모두 만들 수 있습니다. 사용 사례에 대 한 자세한 내용은 [UML 사용 사례 다이어그램을 참조 하세요. 지침이 ](../modeling/uml-use-case-diagrams-guidelines.md).
+ [!INCLUDE[TCMext](../includes/tcmext-md.md)]를 사용하는 경우 요구 사항 모델에 정의된 각 사용 사례에 대한 테스트 그룹을 만들 수 있습니다. 예를 들어 주문 만들기 및 주문에 항목 추가를 포함하는 음식 주문 사용 사례가 있는 경우 전체 사용 사례 및 보다 자세한 사용 사례에 대한 테스트를 모두 만들 수 있습니다. 사용 사례에 대 한 자세한 내용은 [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)을 참조 하세요.
 
  다음 지침이 도움이 될 수 있습니다.
 
@@ -56,10 +56,10 @@ ms.locfileid: "72669782"
 
   - 개발 계획에서 사용 사례의 한 측면을 다른 측면보다 먼저 구현하는 경우 개발이 진행됨에 따라 테스트를 별도로 사용하도록 설정할 수 있습니다.
 
-- 테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 간단한 산술 함수의 테스트는 다음과 같습니다. 입력 4; 출력이 2 인지 확인 합니다. 대신 다음과 같이 스크립트를 디자인 합니다. 입력을 선택 합니다. 출력에 자체를 곱하여 결과가 원래 입력 인지 확인 합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.
+- 테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 단순한 산술 함수 테스트는 입력 4, 출력이 2인지 확인이 될 수 있습니다. 대신, 스크립트를 입력 선택, 출력에 자신을 곱하고 결과가 원래 입력인지 확인으로 디자인합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.
 
 #### <a name="linking-tests-to-use-cases"></a>사용 사례에 테스트 연결
- @No__t_0를 사용 하 여 테스트를 디자인 하 고 실행 하는 경우 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목에서 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.
+ 를 사용 하 여 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 테스트를 디자인 하 고 실행 하는 경우 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목에서 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>사용 사례에 테스트를 연결하려면
 
@@ -113,7 +113,7 @@ Assert (countAfter == countBefore = 1);
 
  이러한 종류의 고정 규칙은 현재 정의된 모든 사용 사례뿐 아니라 나중에 정의할 다른 모든 사용 사례에도 적용됩니다. 따라서 사용 사례와 별도로 작성하고 사용 사례와 별도로 테스트하는 것이 유용합니다.
 
- 클래스 다이어그램의 주석으로 고정 비즈니스 규칙을 작성할 수 있습니다. 자세한 내용은 [UML 클래스 다이어그램: 지침이 ](../modeling/uml-class-diagrams-guidelines.md).
+ 클래스 다이어그램의 주석으로 고정 비즈니스 규칙을 작성할 수 있습니다. 자세한 내용은 [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)을 참조 하세요.
 
  [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]의 테스트 도구 모음에 연결할 수 있는 주석을 요구 사항 또는 사용자 스토리 작업 항목에 연결하여 테스트를 비즈니스 규칙에 연결할 수 있습니다. 자세한 내용은 [모델 요소에 테스트 사례 연결](#Attaching)을 참조 하세요.
 
@@ -127,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  각 메시지 또는 작업 후에 시스템의 상태를 확인합니다. 이를 위해 추가 계측이 필요할 수도 있습니다.
 
 ## <a name="deriving-subsystem-tests-from-models"></a>모델에서 하위 시스템 테스트 파생
- 대규모 시스템의 전반적인 디자인에서 구성 요소 또는 하위 시스템을 식별할 수 있습니다. 이러한 구성 요소 또는 하위 시스템은 별도로 디자인될 수 있거나, 서로 다른 컴퓨터에 있거나, 다양한 방식으로 다시 결합할 수 있는 재사용 가능한 모듈인 파트를 나타냅니다. 자세한 내용은 [UML 구성 요소 다이어그램을 참조 하세요. 지침이 ](../modeling/uml-component-diagrams-guidelines.md).
+ 대규모 시스템의 전반적인 디자인에서 구성 요소 또는 하위 시스템을 식별할 수 있습니다. 이러한 구성 요소 또는 하위 시스템은 별도로 디자인될 수 있거나, 서로 다른 컴퓨터에 있거나, 다양한 방식으로 다시 결합할 수 있는 재사용 가능한 모듈인 파트를 나타냅니다. 자세한 내용은 [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)을 참조 하세요.
 
  전체 시스템에 사용하는 것과 동일한 원칙을 각 주요 구성 요소에 적용할 수 있습니다. 대규모 프로젝트에서는 각 구성 요소에 자체 요구 사항 모델이 있을 수 있습니다. 작은 프로젝트에서는 아키텍처 모델 또는 전반적인 디자인을 만들어 주요 구성 요소 및 상호 작용을 표시할 수 있습니다. 자세한 내용은 [응용 프로그램의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)을 참조 하세요.
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
  테스트 관점에서 요구 사항 모델은 테스트 축약형으로 간주될 수 있습니다. 따라서 프로젝트 전체에서 테스트와 모델 간의 관계를 유지하는 것이 중요합니다.
 
-## <a name="Attaching"></a>모델 요소에 테스트 사례 연결
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> 모델 요소에 테스트 사례 연결
  프로젝트에서 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]를 사용하는 경우 모델의 요소에 테스트를 연결할 수 있습니다. 이렇게 하면 요구 사항 변경의 영향을 받는 테스트를 빠르게 찾을 수 있으며 요구 사항이 인식된 익스텐트를 추적하는 데 도움이 됩니다.
 
  모든 종류의 요소에 테스트를 연결할 수 있습니다. 다음은 몇 가지 예입니다.
@@ -174,5 +174,5 @@ Assert (countAfter == countBefore = 1);
 
 3. 모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [앱 모델에 대 한 모델 만들기](../modeling/create-models-for-your-app.md) [사용자 요구 사항](../modeling/model-user-requirements.md) [모델 앱 아키텍처](../modeling/model-your-app-s-architecture.md) [분석 및 모델링 아키텍처](../modeling/analyze-and-model-your-architecture.md)

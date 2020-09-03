@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3257acde8d3c62aca64e3401ec18134601973e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669642"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
@@ -104,13 +104,13 @@ Managed Extensibility Framework (MEF)를 사용 하 여 DSL (도메인 특정 �
    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
    ```
 
-    기존 `<Include>` 지시문 뒤에 줄을 삽입 합니다.
+    기존 지시문 뒤에 줄을 삽입 `<Include>` 합니다.
 
 4. `Open DslDefinition.dsl.`
 
 5. DSL 탐색기에서 **Editor\validation**을 선택 합니다.
 
-6. 속성 창에서 **사용 하** 는 속성 중 하나 이상이 `true` 인지 확인 합니다.
+6. 속성 창에서 **사용 하** 는 속성 중 하나 이상이 인지 확인 합니다. `true`
 
 7. 솔루션 탐색기 도구 모음에서 **모든 템플릿 변환**을 클릭 합니다.
 
@@ -118,36 +118,36 @@ Managed Extensibility Framework (MEF)를 사용 하 여 DSL (도메인 특정 �
 
 8. 솔루션을 빌드 및 실행 하 여 계속 작동 하는지 확인 합니다.
 
-   이제 DSL이 사용 됩니다. 메뉴 명령, 제스처 처리기 및 유효성 검사 제약 조건을 MEF 확장으로 작성할 수 있습니다. DSL 솔루션에서 다른 사용자 지정 코드와 함께 이러한 확장을 작성할 수 있습니다. 또한 사용자 또는 다른 개발자는 DSL을 확장 하는 별도의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장을 작성할 수 있습니다.
+   이제 DSL이 사용 됩니다. 메뉴 명령, 제스처 처리기 및 유효성 검사 제약 조건을 MEF 확장으로 작성할 수 있습니다. DSL 솔루션에서 다른 사용자 지정 코드와 함께 이러한 확장을 작성할 수 있습니다. 또한 사용자 또는 다른 개발자가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL을 확장 하는 별도의 확장을 작성할 수 있습니다.
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>MEF 사용 DSL에 대 한 확장 만들기
- 직접 만든 MEF 지원 DSL에 대 한 액세스 권한이 있는 경우이를 위한 확장을 작성할 수 있습니다. 확장은 메뉴 명령, 제스처 처리기 또는 유효성 검사 제약 조건을 추가 하는 데 사용할 수 있습니다. 이러한 확장을 작성 하려면 VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장) 솔루션을 사용 합니다. 이 솔루션에는 두 부분, 즉 코드 어셈블리를 빌드하는 클래스 라이브러리 프로젝트와 어셈블리를 패키지 하는 VSIX 프로젝트가 있습니다.
+ 직접 만든 MEF 지원 DSL에 대 한 액세스 권한이 있는 경우이를 위한 확장을 작성할 수 있습니다. 확장은 메뉴 명령, 제스처 처리기 또는 유효성 검사 제약 조건을 추가 하는 데 사용할 수 있습니다. 이러한 확장을 작성 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 (VSIX) 솔루션을 사용 합니다. 이 솔루션에는 두 부분, 즉 코드 어셈블리를 빌드하는 클래스 라이브러리 프로젝트와 어셈블리를 패키지 하는 VSIX 프로젝트가 있습니다.
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>DSL 확장 VSIX를 만들려면
 
-1. 새 클래스 라이브러리 프로젝트를 만듭니다. 이렇게 하려면 **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **시각적 C# 개체** 를 선택한 다음 **클래스 라이브러리**를 선택 합니다.
+1. 새 클래스 라이브러리 프로젝트를 만듭니다. 이렇게 하려면 **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **Visual c #** 을 선택한 다음 **클래스 라이브러리**를 선택 합니다.
 
 2. 새 클래스 라이브러리 프로젝트에서 DSL의 어셈블리에 대 한 참조를 추가 합니다.
 
-   - 이 어셈블리의 이름은 일반적으로 "로 끝납니다. Dsl .dll ".
+   - 이 어셈블리의 이름은 일반적으로 ".Dsl.dll"로 끝납니다.
 
-   - DSL 프로젝트에 액세스할 수 있는 경우 **\\bin \\ 디렉터리 dsl** 에서 어셈블리 파일을 찾을 수 있습니다 \*
+   - DSL 프로젝트에 액세스할 수 있는 경우 디렉터리 **dsl \\ bin \\ \* ** 에서 어셈블리 파일을 찾을 수 있습니다.
 
    - DSL VSIX 파일에 액세스할 수 있는 경우 VSIX 파일의 파일 이름 확장명을 ".zip"으로 변경 하 여 어셈블리를 찾을 수 있습니다. .Zip 파일의 압축을 해제 합니다.
 
 3. 다음 .NET 어셈블리에 대 한 참조를 추가 합니다.
 
-   - VisualStudio. d a.
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - VisualStudio. d l l.
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - VisualStudio. d a.
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
    - System.Windows.Forms.dll
 
-4. 동일한 솔루션에서 VSIX 프로젝트를 만듭니다. 이렇게 하려면 **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **시각적 개체 C#** 를 확장 하 고 **확장성**을 클릭 한 다음 **VSIX 프로젝트**를 선택 합니다.
+4. 동일한 솔루션에서 VSIX 프로젝트를 만듭니다. 이렇게 하려면 **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **Visual c #** 을 확장 하 고 **확장성**을 클릭 한 다음 **VSIX 프로젝트**를 선택 합니다.
 
 5. 솔루션 탐색기에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **시작 프로젝트로 설정**을 클릭 합니다.
 
@@ -159,7 +159,7 @@ Managed Extensibility Framework (MEF)를 사용 하 여 DSL (도메인 특정 �
 
    1. Source.extension.vsixmanifest에서 **참조 추가** 를 클릭 **합니다.**
 
-   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage \\bin \\ \*** 에 빌드됩니다.
+   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage \\ bin \\ \* **에 빌드됩니다.
 
        이를 통해 사용자는 DSL 및 확장을 동시에 설치할 수 있습니다. 사용자가 이미 DSL을 설치한 경우에는 확장만 설치 됩니다.
 
@@ -169,15 +169,15 @@ Managed Extensibility Framework (MEF)를 사용 하 여 DSL (도메인 특정 �
 
      원하는 수의 명령, 제스처 및 유효성 검사 클래스를 추가할 수 있습니다.
 
-11. 확장을 테스트 하려면 **f5**키를 누릅니다. @No__t_0 실험적 인스턴스에서 DSL의 예제 파일을 만들거나 엽니다.
+11. 확장을 테스트 하려면 **f5**키를 누릅니다. 의 실험적 인스턴스에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL의 예제 파일을 만들거나 엽니다.
 
 ## <a name="writing-mef-extensions-for-dsls"></a>Dsl 용 MEF 확장 작성
  별도의 DSL 확장 솔루션의 어셈블리 코드 프로젝트에 확장을 작성할 수 있습니다. DSL의 일부로 명령, 제스처 및 유효성 검사 코드를 작성 하는 편리한 방법인 DslPackage 프로젝트에서 MEF를 사용할 수도 있습니다.
 
 ### <a name="menu-commands"></a>메뉴 명령
- 메뉴 명령을 작성 하려면 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>를 구현 하는 클래스를 정의 하 고 dsl에 정의 된 특성을 사용 하 여 클래스에 *접두사 `CommandExtension` 명명* 합니다. 둘 이상의 메뉴 명령 클래스를 작성할 수 있습니다.
+ 메뉴 명령을 작성 하려면를 구현 하는 클래스를 정의 하 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 고 dsl에 정의 된 특성 ( *dsl*이라고 명명 됨)을 사용 하 여 클래스에 접두사를 지정 합니다 `CommandExtension` . 둘 이상의 메뉴 명령 클래스를 작성할 수 있습니다.
 
- `QueryStatus()`는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출 됩니다. 현재 선택 영역을 검사 하 고 `command.Enabled` 설정 하 여 명령이 적용 되는 시기를 지정 해야 합니다.
+ `QueryStatus()` 는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출 됩니다. 현재 선택 영역을 검사 하 고 `command.Enabled` 명령이 적용 되는 시점을 나타내도록 설정 해야 합니다.
 
 ```
 using System.ComponentModel.Composition;
@@ -245,7 +245,7 @@ namespace MyMefExtension
 ```
 
 ### <a name="gesture-handlers"></a>제스처 처리기
- 제스처 처리기는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내부 또는 외부에서 다이어그램으로 끌어 온 개체를 처리할 수 있습니다. 다음 예제에서는 사용자가 Windows 탐색기에서 다이어그램으로 파일을 끌어 놓을 수 있도록 합니다. 파일 이름을 포함 하는 요소를 만듭니다.
+ 제스처 처리기는 내부 또는 외부에서 다이어그램으로 끌어 온 개체를 처리할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 다음 예제에서는 사용자가 Windows 탐색기에서 다이어그램으로 파일을 끌어 놓을 수 있도록 합니다. 파일 이름을 포함 하는 요소를 만듭니다.
 
  다른 DSL 모델 및 UML 모델의 끌기를 처리 하는 처리기를 작성할 수 있습니다. 자세한 내용은 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)를 참조 하세요.
 
@@ -322,7 +322,7 @@ namespace MefExtension
 ```
 
 ### <a name="validation-constraints"></a>유효성 검사 제약 조건
- 유효성 검사 메서드는 DSL에 의해 생성 되는 `ValidationExtension` 특성 및 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>도 표시 됩니다. 메서드는 특성으로 표시 되지 않은 모든 클래스에 나타날 수 있습니다.
+ 유효성 검사 메서드는 `ValidationExtension` DSL 및에 의해 생성 된 특성으로 표시 됩니다 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . 메서드는 특성으로 표시 되지 않은 모든 클래스에 나타날 수 있습니다.
 
  자세한 내용은 [도메인별 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.
 
@@ -374,5 +374,5 @@ namespace MefExtension
 
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio Extensions](../extensibility/shipping-visual-studio-extensions.md) [Managed Extensibility Framework](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde) 전달 방법: [도메인별 언어에서](../modeling/validation-in-a-domain-specific-language.md) [끌어서 놓기 처리기](../modeling/how-to-add-a-drag-and-drop-handler.md) 유효성 검사 추가

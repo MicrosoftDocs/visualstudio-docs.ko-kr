@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669929"
 ---
 # <a name="define-a-work-item-link-handler"></a>작업 항목 링크 처리기 정의
@@ -36,7 +36,7 @@ ms.locfileid: "72669929"
 
     1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
 
-    2. **설치 된 템플릿**에서 **Visual C#**  또는 **Visual Basic**을 확장 하 고 가운데 열에서 **클래스 라이브러리**를 클릭 합니다.
+    2. **설치 된 템플릿**에서 **Visual c #** 또는 **Visual Basic**을 확장 하 고 가운데 열에서 **클래스 라이브러리**를 클릭 합니다.
 
     3. **솔루션** 을 설정하여 새 솔루션을 만들지 또는 열려 있는 VSIX 솔루션에 구성 요소를 추가할지를 나타냅니다.
 
@@ -44,13 +44,13 @@ ms.locfileid: "72669929"
 
 2. 솔루션에 포함되어 있지 않으면 VSIX 프로젝트를 만듭니다.
 
-    1. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가**, **새 프로젝트**를 선택합니다.
+    1. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가**, **새 프로젝트**를 차례로 선택 합니다.
 
     2. **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **확장성**을 선택합니다. 가운데 열에서 **VSIX 프로젝트**를 선택합니다.
 
 3. VSIX 프로젝트를 솔루션의 시작 프로젝트로 설정합니다.
 
-    - 솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택합니다.
+    - 솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택 합니다.
 
 4. **Source.extension.vsixmanifest**의 **콘텐츠**에서 클래스 라이브러리 프로젝트를 MEF 구성 요소로 추가 합니다.
 
@@ -60,11 +60,11 @@ ms.locfileid: "72669929"
 
     3. **자산** 탭에서 **새로 만들기**를 선택하고 대화 상자에서 다음을 설정합니다.
 
-         **형식** = **MEF 구성 요소**
+         **유형**  =  **MEF 구성 요소**
 
-         **소스** = **현재 솔루션의 프로젝트**
+         **원본**  =  **현재 솔루션의 프로젝트**
 
-         **프로젝트** = *클래스 라이브러리 프로젝트*
+         **프로젝트**  =  *클래스 라이브러리 프로젝트*
 
 ## <a name="defining-the-work-item-link-handler"></a>작업 항목 링크 처리기 정의
  클래스 라이브러리 프로젝트에서 다음 작업을 모두 수행합니다.
@@ -82,12 +82,12 @@ ms.locfileid: "72669929"
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`-샘플 코드에서 사용 됩니다.
+ `System.Drawing` -샘플 코드에서 사용 됩니다.
 
- **참조 추가** 대화 상자의 **.net** 탭에서 이러한 참조 중 하나를 찾을 수 없는 경우 찾아보기 탭을 사용 하 여 Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies \\에서 찾을 수 있습니다.
+ **참조 추가** 대화 상자의 **.net** 탭에서 이러한 참조 중 하나를 찾을 수 없는 경우 찾아보기 탭을 사용 하 여 Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies에서 찾을 수 있습니다 \\ .
 
 ### <a name="import-the-work-item-namespace"></a>작업 항목 네임스페이스 가져오기
- @No__t_0 프로젝트 **참조**에서 다음 어셈블리에 대 한 참조를 추가 합니다.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]프로젝트 **참조**에서 다음 어셈블리에 대 한 참조를 추가 합니다.
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.
 
-     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]이 시작 되지 않으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정 되어 있는지 확인 합니다.
+     **문제 해결**: 새이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시작 되지 않으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정 되어 있는지 확인 합니다.
 
 2. 실험적 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 열거나 만들고 모델링 다이어그램을 열거나 만듭니다.
 
@@ -191,7 +191,7 @@ namespace WorkItems
 ## <a name="about-the-work-item-handler-code"></a>작업 항목 처리기 코드 정보
 
 ### <a name="listening-for-new-work-items"></a>새 작업 항목 수신 대기
- `OnWorkItemCreated`는 사용자가 모델 요소에 연결할 새 작업 항목을 만들도록 선택하면 호출됩니다. 코드에서 작업 항목 필드가 초기화됩니다. 작업 항목이 필드를 업데이트하고 작업 항목을 저장할 수 있는 사용자에게 제공됩니다. 작업 항목이 성공적으로 저장될 때까지 모델 요소 링크가 만들어지지 않습니다.
+ `OnWorkItemCreated` 는 사용자가 모델 요소에 연결할 새 작업 항목을 만들도록 선택 하면 호출 됩니다. 코드에서 작업 항목 필드가 초기화됩니다. 작업 항목이 필드를 업데이트하고 작업 항목을 저장할 수 있는 사용자에게 제공됩니다. 작업 항목이 성공적으로 저장될 때까지 모델 요소 링크가 만들어지지 않습니다.
 
 ```
 public void OnWorkItemCreated(
@@ -206,7 +206,7 @@ public void OnWorkItemCreated(
 ```
 
 ### <a name="listening-for-link-creation"></a>링크 만들기 수신 대기
- `OnWorkItemLinked`는 링크가 만들어진 후에만 호출됩니다. 새 작업 항목 또는 기존 항목에 대한 링크인지와 관계없이 호출됩니다. 각 작업 항목에 대해 한 번 호출됩니다.
+ `OnWorkItemLinked` 는 링크가 만들어진 후 바로 호출 됩니다. 새 작업 항목 또는 기존 항목에 대한 링크인지와 관계없이 호출됩니다. 각 작업 항목에 대해 한 번 호출됩니다.
 
 ```
 public void OnWorkItemLinked
@@ -224,7 +224,7 @@ public void OnWorkItemLinked
 > 이 예제가 작동하려면 `System.Drawing.dll`에 프로젝트 참조를 추가하고 네임스페이스 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`을 가져와야 합니다. 그러나 `OnWorkItemLinked`의 다른 구현에 대해서는 이러한 추가가 필요하지 않습니다.
 
 ### <a name="listening-for-link-removal"></a>링크 제거 수신 대기
- `OnWorkItemRemoved`는 삭제되는 각 작업 항목 링크 바로 앞에 한 번 호출됩니다. 모델 요소가 삭제되면 해당 링크가 모두 제거됩니다.
+ `OnWorkItemRemoved` 는 삭제 된 각 작업 항목 링크 바로 앞에 한 번 호출 됩니다. 모델 요소가 삭제되면 해당 링크가 모두 제거됩니다.
 
 ```
 public void OnWorkItemRemoved
@@ -301,4 +301,4 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 - [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)
 - [UML 모델 요소에 참조 문자열 연결](../modeling/attach-reference-strings-to-uml-model-elements.md)
 - [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md)
-- [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)
+- [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

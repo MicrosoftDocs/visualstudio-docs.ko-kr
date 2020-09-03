@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e0c49da84e8ecd12dc50c03b3587942a21f9d05
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669447"
 ---
 # <a name="xml-editor-tasks"></a>XML 편집기 작업
@@ -21,7 +21,7 @@ ms.locfileid: "72669447"
 
 이 단원에서는 XML 편집기를 사용하여 일반적인 작업을 수행하는 방법에 대해 설명합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [연습: XML 편집기 기능 사용](../xml-tools/walkthrough-using-xml-editor-features.md) XML 편집기 기능 중 일부를 사용 하는 방법을 보여 줍니다.
 
  [방법: 사용할 XML 스키마 선택](../xml-tools/how-to-select-the-xml-schemas-to-use.md) 유효성 검사에 사용할 XML 스키마를 선택 하는 방법을 설명 합니다.

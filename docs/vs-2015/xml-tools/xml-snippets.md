@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bc8946d62f47291a6e0e3f26032589bfdf0de16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669356"
 ---
 # <a name="xml-snippets"></a>XML 조각
@@ -38,7 +38,7 @@ Xml 편집기에서는 xml 파일을 더 신속 하 게 빌드할 수 있는 *xm
 </xs:element>
 ```
 
- 두 가지 방법으로 조각을 삽입할 수 있습니다. **코드 조각 삽입** 명령은 커서 위치에 XML 조각을 삽입 합니다. **코드 감싸기** 명령은 선택한 텍스트 주위에 XML 조각을 래핑합니다. 두 명령은 모두 **편집** 메뉴 아래의 **IntelliSense** 하위 메뉴 또는 편집기 바로 가기 메뉴에서 사용할 수 있습니다.
+ 두 가지 방법으로 조각을 삽입할 수 있습니다. **코드 조각 삽입** 명령을 사용하면 커서 위치에 XML 코드 조각을 삽입합니다. **포함** 명령을 사용하면 선택한 텍스트 주위의 XML 코드 조각을 래핑합니다. 두 명령은 모두 **편집** 메뉴 아래의 **IntelliSense** 하위 메뉴 또는 편집기 바로 가기 메뉴에서 사용할 수 있습니다.
 
  자세한 내용은 [방법: XML 조각 사용](../xml-tools/how-to-use-xml-snippets.md)을 참조 하세요.
 
@@ -52,5 +52,5 @@ Xml 편집기에서는 xml 파일을 더 신속 하 게 빌드할 수 있는 *xm
 
  자세한 내용은 [방법: XML 조각 만들기](../xml-tools/how-to-create-xml-snippets.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [XML 편집기](../xml-tools/xml-editor.md)

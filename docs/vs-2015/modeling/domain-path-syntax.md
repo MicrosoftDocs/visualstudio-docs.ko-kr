@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b25b47b5b711f09334501ed21abf06cb66402b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669733"
 ---
 # <a name="domain-path-syntax"></a>도메인 경로 구문
@@ -27,7 +27,7 @@ DSL 정의는 XPath 유형 구문을 사용하여 모델에서 특정 요소를 
 
  도메인 경로의 형식은 다음과 같습니다.
 
- *RelationshipName/! 역할*
+ *RelationshipName.PropertyName/!Role*
 
  ![CommentReferencesSubjects 참조 관계](../modeling/media/dsl-reference.png "dsl_reference")
 
@@ -39,5 +39,5 @@ DSL 정의는 XPath 유형 구문을 사용하여 모델에서 특정 요소를 
 
  요소에서 링크로의 홉에 사용하는 이름은 역할의 `Property Name` 값입니다. 링크에서 요소로의 홉에 사용하는 이름은 대상 역할 이름입니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)

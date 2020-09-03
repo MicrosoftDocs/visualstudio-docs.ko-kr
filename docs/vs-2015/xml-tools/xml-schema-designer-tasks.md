@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9bf7fe3ef493caa3b77e3e25e8cfa7873fb51eeb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669397"
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 스키마 디자이너 작업
@@ -21,7 +21,7 @@ ms.locfileid: "72669397"
 
 이 단원에서는 XML 스키마 디자이너 도구를 사용하여 일반적인 작업을 수행하는 방법에 대해 설명합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [방법: XSD 스키마 파일 만들기 및 편집](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md) 새 XSD (XML 스키마) 파일을 만든 다음 XSD 파일에 콘텐츠를 추가 하는 방법에 대해 설명 합니다.
 
  [방법: XSD 스키마를 기반으로 XML 문서 만들기](../xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema.md) XSD 스키마를 기반으로 XML 문서를 만드는 방법에 대해 설명 합니다.
@@ -44,5 +44,5 @@ ms.locfileid: "72669397"
 
  [샘플 XSD 파일](../xml-tools/sample-xsd-files.md) 작업 예제에서 사용 되는 샘플 XSD 문서에 대 한 코드 목록을 제공 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [XML 스키마 디자이너](../xml-tools/xml-schema-designer.md)

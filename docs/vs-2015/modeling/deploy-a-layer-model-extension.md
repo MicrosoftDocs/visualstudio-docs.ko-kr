@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c11c952223854ff1b4b963e24615e7abe831496
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669871"
 ---
 # <a name="deploy-a-layer-model-extension"></a>레이어 모델 확장 배포
@@ -29,9 +29,9 @@ Visual Studio의 다른 사용자는 Visual Studio를 사용하여 만든 레이
 
 #### <a name="to-install-the-extension"></a>확장을 설치하려면
 
-1. **소스 .vsix .manifest**를 포함 하는 프로젝트의 파일 탐색기에서 **bin \\ \\** *를 엽니다.
+1. **소스 .vsix .manifest**를 포함 하는 프로젝트의 파일 탐색기에서 **bin \\ \\ ***을 엽니다.
 
-2. **@No__t_1 .vsix** 파일을 확장을 설치 하려는 컴퓨터에 복사 합니다.
+2. 확장명을 설치 하려는 컴퓨터에 ** \* .vsix** 파일을 복사 합니다.
 
 3. 대상 컴퓨터에서 Windows 탐색기를 통해 *.vsix 파일을 두 번 클릭합니다.
 
@@ -46,9 +46,9 @@ Visual Studio의 다른 사용자는 Visual Studio를 사용하여 만든 레이
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Team Foundation Build 서버에 확장 설치
  [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 서버에는 일반적으로 Visual Studio가 설치 되어 있지 않으므로 두 번 클릭 하 여 VSIX를 설치할 수 없습니다. [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 설치에는 VSIX 확장 실행을 허용하는 일부 구성 요소가 포함되어 있지만 수동으로 확장을 설치해야 합니다.
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>[!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 서버에 레이어 확장을 설치하려면
+#### <a name="to-install-your-layer-extension-on-a-esprbuild-server"></a>[!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 서버에 레이어 확장을 설치하려면
 
-1. 개발 컴퓨터의 **.vsix** 파일을 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 컴퓨터에 복사 합니다.
+1. 개발 컴퓨터의 **.vsix** 파일을 컴퓨터로 복사 합니다. [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]
 
      VSIX 파일을 다음 위치 중 하나에 배치합니다.
 
