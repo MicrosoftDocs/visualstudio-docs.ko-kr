@@ -15,10 +15,10 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850375"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
@@ -56,7 +56,7 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
  [이미지 서비스와 카탈로그](../extensibility/image-service-and-catalog.md) 를 활용 하 여 뛰어난 이미지 관리 및 높은 DPI 및 테마에 대 한 지원을 받을 수 있습니다.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>기존 Visual Studio 확장 찾기 및 설치  
- **도구** 메뉴의 **확장 및 업데이트** 대화 상자에서 Visual Studio 확장을 찾을 수 있습니다. 자세한 내용은 [Visual Studio 확장명 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)을 참조하세요. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 확장을 찾을 수도 있습니다.  
+ **도구** 메뉴의 **확장 및 업데이트** 대화 상자에서 Visual Studio 확장을 찾을 수 있습니다. 자세한 내용은 [Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)을 참조 하세요. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 확장을 찾을 수도 있습니다.  
   
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 참조  
  Visual studio sdk [참조](../extensibility/visual-studio-sdk-reference.md)에서 VISUAL STUDIO sdk API 참조를 찾을 수 있습니다.  
@@ -75,26 +75,26 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
   
 - [Visual Studio 확장](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [방법: 확장성 프로젝트를 Visual Studio 2015로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [FAQ: 추가 기능을 VSPackage 확장으로 변환](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
- [관리 코드 에서 여러 스레드 관리](../extensibility/managing-multiple-threads-in-managed-code.md)  
+ [관리 코드에서 여러 스레드 관리](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)   
  [도구 모음에 명령 추가](../extensibility/adding-commands-to-toolbars.md)   
- [도구 창  확장 및 사용자 지정](../extensibility/extending-and-customizing-tool-windows.md)  
+ [도구 창 확장 및 사용자 지정](../extensibility/extending-and-customizing-tool-windows.md)   
  [편집기 및 언어 서비스 확장](../extensibility/editor-and-language-service-extensions.md)   
  [프로젝트 확장](../extensibility/extending-projects.md)   
  [사용자 설정 및 옵션 확장](../extensibility/extending-user-settings-and-options.md)   
  [사용자 지정 프로젝트 및 항목 템플릿 만들기](../extensibility/creating-custom-project-and-item-templates.md)   
  [속성 및 속성 창 확장](../extensibility/extending-properties-and-the-property-window.md)   
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)   
- [서비스  사용 및 제공](../extensibility/using-and-providing-services.md)  
- [연결된 서비스  확장](../extensibility/extending-connected-services.md)  
- [Vspackage  관리](../extensibility/managing-vspackages.md)  
+ [서비스 사용 및 제공](../extensibility/using-and-providing-services.md)   
+ [연결된 서비스 확장](../extensibility/extending-connected-services.md)   
+ [Vspackage 관리](../extensibility/managing-vspackages.md)   
  [Visual Studio 격리 셸](../extensibility/visual-studio-isolated-shell.md)   
- [Visual Studio 확장  전달](../extensibility/shipping-visual-studio-extensions.md)  
- [Visual STUDIO SDK  내에서](../extensibility/internals/inside-the-visual-studio-sdk.md)  
- [Visual STUDIO SDK  지원](../extensibility/support-for-the-visual-studio-sdk.md)  
+ [Visual Studio 확장 출시](../extensibility/shipping-visual-studio-extensions.md)   
+ [Visual Studio SDK 내부](../extensibility/internals/inside-the-visual-studio-sdk.md)   
+ [Visual Studio SDK에 대 한 지원](../extensibility/support-for-the-visual-studio-sdk.md)   
  [보관](../extensibility/archive.md)   
  [Visual Studio SDK 참조](../extensibility/visual-studio-sdk-reference.md)

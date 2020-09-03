@@ -12,10 +12,10 @@ ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850318"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>방법: Windows Forms를 사용하는 도구 상자 컨트롤 만들기
@@ -89,5 +89,5 @@ ms.locfileid: "75850318"
   
      [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 웹 사이트에 파일을 업로드 하는 경우 다른 사용자가 Visual Studio의 **확장 관리자** 를 사용 하 여 컨트롤을 찾아 설치할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [WPF 도구 상자 컨트롤 만들기](../extensibility/creating-a-wpf-toolbox-control.md)

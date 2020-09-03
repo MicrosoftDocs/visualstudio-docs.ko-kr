@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850707"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스의 코드 생성
@@ -27,7 +27,7 @@ ms.locfileid: "75850707"
 
 즉, MSBuild에서 텍스트 템플릿을 빌드하는 경우와 같은 방법으로 프로젝트 파일 이름과 같은 항목에 액세스할 수 없습니다. 그러나 [빌드 매개 변수를 사용 하 여 환경 정보를 텍스트 템플릿 및 지시문 프로세서에 전달할](#parameters)수 있습니다.
 
-## <a name="buildserver"></a>컴퓨터 구성
+## <a name="configure-your-machines"></a><a name="buildserver"></a> 컴퓨터 구성
 
 개발 컴퓨터에서 빌드 작업을 사용 하도록 설정 하려면 [모델링 SDK For Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)를 설치 합니다.
 
@@ -128,7 +128,7 @@ MSBuild에서 일부 특성을 구성하기 위해 프로젝트 파일을 편집
 
 `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
-## <a name="source-control"></a>원본 제어
+## <a name="source-control"></a>소스 제어
 
 소스 제어 시스템과의 특정 기본 제공 통합은 없습니다. 그러나 예를 들어 생성된 파일을 체크 아웃하고 체크 인하기 위해 확장을 추가할 수 있습니다. 기본적으로 텍스트 변환 작업은 읽기 전용으로 표시된 파일을 덮어쓰지 않으며, 이러한 파일에 오류가 발생하면 해당 오류가 Visual Studio의 오류 목록에 로깅되고 작업은 실패합니다.
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>빌드 컨텍스트 데이터를 템플릿에 전달 합니다.
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> 빌드 컨텍스트 데이터를 템플릿에 전달 합니다.
 
 프로젝트 파일에서 매개 변수 값을 설정할 수 있습니다. 예를 들어 빌드 속성 및 [환경 변수](../msbuild/how-to-use-environment-variables-in-a-build.md)를 전달할 수 있습니다.
 
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>어셈블리 및 include 지시문에서 프로젝트 속성 사용
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> 어셈블리 및 include 지시문에서 프로젝트 속성 사용
 
 $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 않습니다. 대신 적절한 프로젝트 속성을 사용할 수 있습니다.
 
@@ -263,13 +263,13 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
 
  이러한 지시문은 MSBuild와 Visual Studio 호스트에서 모두 T4parameterValues의 값을 가져옵니다.
 
-## <a name="q--a"></a>Q&A
+## <a name="q--a"></a>Q & A
 
 **빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
 
 포함 파일을 업데이트하거나 템플릿에서 다른 파일을 읽은 경우 Visual Studio가 파일을 자동으로 변환하지 않습니다. 빌드 중에 템플릿이 변형되면 모두 최신 상태임을 나타냅니다.
 
-**텍스트 템플릿을 변환 하는 데 사용할 수 있는 다른 옵션은 무엇 인가요?**
+**텍스트 템플릿 변환에 사용할 수 있는 다른 옵션은 무엇이 있습니까?**
 
 - 명령 스크립트에서 [Texttransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 를 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
 
@@ -279,10 +279,10 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
 
 - 런타임에 응용 프로그램에서 런타임에 [텍스트 템플릿이](../modeling/run-time-text-generation-with-t4-text-templates.md) 변환 됩니다.
 
-## <a name="read-more"></a>자세히 보기
+## <a name="read-more"></a>자세히 알아보기
 
 T4 MSbuild 템플릿, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets의 유용한 안내서
 
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio 시각화 및 모델링 SDK](https://www.visualstudio.com/)
+- [Visual Studio Visualization and Modeling SDK](https://www.visualstudio.com/)
 - [Oleg Sych: T4 이해: MSBuild 통합](https://github.com/olegsych/T4Toolbox)

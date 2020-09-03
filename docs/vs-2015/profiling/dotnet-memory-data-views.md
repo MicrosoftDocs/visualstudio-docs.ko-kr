@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d31213dc970fa7cb28c4d4620c6731692db83d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185236"
 ---
 # <a name="net-memory-data-views"></a>.NET 메모리 데이터 뷰
@@ -74,7 +74,7 @@ ms.locfileid: "68185236"
  [표시 뷰](../profiling/marks-view.md)  
  프로파일링 데이터 파일에 삽입된 ETW 및 샘플링 이벤트가 표시됩니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [샘플링 방법 데이터 뷰](../profiling/profiler-sampling-method-data-views.md)  
  샘플링 방법을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보입니다.  
   

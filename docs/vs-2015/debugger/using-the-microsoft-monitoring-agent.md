@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f70d3799bfae96b15c13a42c3c11246d1e89ba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520577"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent 사용
@@ -80,7 +80,7 @@ Visual Studio에 대 한 최신 설명서는 [Microsoft Monitoring Agent 사용]
 3. 최신 도움말 콘텐츠를 보려면[TechNet을 방문](https://technet.microsoft.com/systemcenter/default) 하세요.  
   
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> Q: 애플리케이션 풀에 대한 권한을 설정하려면 어떻게 하나요?  
- **A:** Windows **icacls** 명령 또는 Windows 탐색기(또는 파일 탐색기)를 사용합니다. 예를 들면 다음과 같습니다.  
+ **A:** Windows **icacls** 명령 또는 Windows 탐색기(또는 파일 탐색기)를 사용합니다. 예를 들어:  
   
 - Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.  
   
@@ -121,7 +121,7 @@ Visual Studio에 대 한 최신 설명서는 [Microsoft Monitoring Agent 사용]
   
      이 명령의 간단한 구문은 다음과 같습니다.  
   
-     **Start-webapplicationmonitoring** *" \<appName> * " *\<monitoringMode>* *" \<outputPath> * " "" *\<UInt32>* * \<collectionPlanPathAndFileName> *  
+     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
   
      아래에는 웹앱 이름과 간단한 **Monitor** 모드만 사용하는 예제가 나와 있습니다.  
   
@@ -137,7 +137,7 @@ Visual Studio에 대 한 최신 설명서는 [Microsoft Monitoring Agent 사용]
   
     |항목|설명|  
     |-|-|  
-    |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예를 들어:<br /><br /> ![IIS 웹 사이트 및 웹앱 경로](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|  
+    |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예를 들어:<br /><br /> ![IIS 웹 사이트 및 웹앱 경로](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|  
     |*\<monitoringMode>*|모니터링 모드를 지정합니다.<br /><br /> <ul><li>**모니터링**: 이 모드에서는 예외 이벤트 및 성능 이벤트에 대한 최소한의 세부 정보를 기록하며 기본 수집 계획을 사용합니다.</li><li>**추적**: 함수 수준 세부 정보를 기록하거나 지정된 컬렉션 계획을 사용하여 SharePoint 2010 및 SharePoint 2013 애플리케이션을 모니터링합니다. 이 모드를 사용하는 경우 앱 실행 속도가 느려질 수 있습니다.<br /><br /> <ul><li>[Q: 애플리케이션 풀에 대한 사용 권한을 설정하려면 어떻게 하나요?](#FullPermissionsITLog)</li><li>[Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)</li></ul><br />     아래 예제에서는 SharePoint 사이트에서 호스트되는 SharePoint 앱에 대한 이벤트를 기록합니다.<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**사용자 지정**: 지정된 사용자 지정 컬렉션 계획을 사용하여 사용자 지정 세부 정보를 기록합니다. 모니터링이 이미 시작된 후 수집 계획을 편집하는 경우에는 모니터링을 다시 시작해야 합니다.</li></ul>|  
     |*"\<outputPath>"*|IntelliTrace 로그를 저장할 전체 디렉터리 경로를 지정합니다. 모니터링을 시작하기 전에 이 디렉터리를 만들어야 합니다.|  
     |*\<UInt32>*|IntelliTrace 로그의 최대 크기를 지정합니다. IntelliTrace 로그의 기본 최대 크기는 250MB입니다.<br /><br /> 로그가 이 한도에 도달하면 Monitoring Agent는 항목을 추가로 기록할 수 있도록 가장 오래된 항목을 덮어씁니다. 이 제한을 변경하려면 **-MaximumFileSizeInMegabytes** 옵션을 사용하거나 수집 계획에서 `MaximumLogFileSize` 특성을 편집합니다.|  
@@ -162,7 +162,7 @@ Visual Studio에 대 한 최신 설명서는 [Microsoft Monitoring Agent 사용]
   
    `enabled` 특성이 없으면 이벤트는 사용하도록 설정됩니다.  
   
-   예를 들면 다음과 같습니다.  
+   예를 들어:  
   
   - Windows 워크플로를 사용하지 앱에 대해 Windows 워크플로 이벤트를 사용하지 않도록 설정합니다.  
   
@@ -240,13 +240,13 @@ Visual Studio에 대 한 최신 설명서는 [Microsoft Monitoring Agent 사용]
   
 2. [Checkpoint-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472750(v=sc.20).aspx) 명령을 실행하여 IntelliTrace 로그의 스냅샷을 저장합니다.  
   
-    **Start-webapplicationmonitoring** *" \<IISWebsiteName> \\<iiswebappname \> "*  
+    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- 또는 -  
   
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
-    예를 들면 다음과 같습니다.  
+    예를 들어:  
   
     **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
@@ -270,7 +270,7 @@ Visual Studio에 대 한 최신 설명서는 [Microsoft Monitoring Agent 사용]
   
 2. [Stop-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472753(v=sc.20).aspx) 명령을 실행하여 IntelliTrace 로그를 만든 다음 특정 웹앱 모니터링을 중지합니다.  
   
-    **Start-webapplicationmonitoring** *" \<IISWebsiteName> \\<iiswebappname \> "*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- 또는 -  
   

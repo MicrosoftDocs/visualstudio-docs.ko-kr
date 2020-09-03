@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168751"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트

@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로퍼티3:겟스트링차 | 마이크로 소프트 문서
+title: 'IDebugProperty3:: GetStringChars | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721088"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-이 속성과 연결된 문자열을 검색하고 사용자 제공 버퍼에 저장합니다.
+이 속성과 연결 된 문자열을 검색 하 여 사용자가 제공 하는 버퍼에 저장 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>매개 변수
 `buflen`\
-【인】 사용자가 제공한 버퍼가 보유할 수 있는 최대 문자 수입니다.
+진행 사용자가 제공한 버퍼에 포함할 수 있는 최대 문자 수입니다.
 
 `rgString`\
-【아웃】 문자열을 반환합니다.
+제한이 문자열을 반환 합니다.
 
- [C++ `rgString` 전용]은 문자열의 유니코드 문자를 수신하는 버퍼에 대한 포인터입니다. 이 버퍼의 크기는 바이트가 아닌 최소 `buflen` 문자여야 합니다.
+ [C + +만] `rgString` 은 문자열의 유니코드 문자를 받는 버퍼에 대 한 포인터입니다. 이 버퍼의 크기는 바이트이 하 여야 합니다 `buflen` .
 
 `pceltFetched`\
-【아웃】 버퍼에 실제로 저장된 문자 수가 반환되는 위치입니다. (C `NULL` ++에 있을 수 있습니다.)
+제한이 실제로 버퍼에 저장 된 문자 수가 반환 됩니다. `NULL`C + +에 있을 수 있습니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
-C++에서는 버퍼가 유니코드 문자 가 적어도 `buflen` 긴지 확인하려면 주의해야 합니다. 유니코드 문자는 2바이트 길이입니다.
+C + +에서는 버퍼가 유니코드 문자 길이 이상으로 유지 되도록 주의를 기울여야 합니다 `buflen` . 유니코드 문자는 2 바이트 길이입니다.
 
 > [!NOTE]
-> C++에서 반환된 문자열에는 종료 null 문자가 포함되지 않습니다. 주어진 `pceltFetched` 경우 문자열의 문자 수를 지정합니다.
+> C + +에서 반환 된 문자열에는 종료 null 문자가 포함 되지 않습니다. 지정 된 경우 `pceltFetched` 는 문자열의 문자 수를 지정 합니다.
 
 ## <a name="example"></a>예제
 
@@ -87,7 +87,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

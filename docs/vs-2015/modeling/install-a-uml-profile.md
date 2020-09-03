@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850658"
 ---
 # <a name="install-a-uml-profile"></a>UML 프로필 설치
@@ -45,5 +45,5 @@ UML 프로필을 통해 Visual Studio를 확장할 수 있습니다. 프로필�
 
 2. 제거 하려는 확장을 클릭 한 다음 **사용 안 함** 또는 **제거**를 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  프로필 [및 스테레오 타입을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [프로필을 정의 하 여 UML 확장](../modeling/define-a-profile-to-extend-uml.md)

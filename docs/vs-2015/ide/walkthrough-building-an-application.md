@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74296866"
 ---
 # <a name="walkthrough-building-an-application"></a>연습: 애플리케이션 빌드
@@ -22,13 +22,13 @@ ms.locfileid: "74296866"
 
 이 연습을 완료하면 Visual Studio로 애플리케이션을 빌드할 때 구성할 수 있는 여러 옵션에 더 익숙해집니다. 다른 작업 중에 샘플 애플리케이션에 대한 사용자 지정 빌드 구성을 만들고, 특정 경고 메시지를 숨기고, 빌드 출력 정보를 늘립니다.
 
-이 항목의 섹션:
+이 항목에는 다음과 같은 섹션이 포함되어 있습니다.
 
-[샘플 애플리케이션 설치](../ide/walkthrough-building-an-application.md)
+[샘플 응용 프로그램 설치](../ide/walkthrough-building-an-application.md)
 
 [사용자 지정 빌드 구성 만들기](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
-[애플리케이션 빌드](../ide/walkthrough-building-an-application.md#BKMK_building)
+[응용 프로그램 빌드](../ide/walkthrough-building-an-application.md#BKMK_building)
 
 [컴파일러 경고 숨기기](../ide/walkthrough-building-an-application.md#BKMK_hidewarning)
 
@@ -46,7 +46,7 @@ ms.locfileid: "74296866"
 
     ![확장 및 업데이트 대화 상자](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
-4. 결과 목록에서 **Introduction to Building WPF Applications (Visual C#)** (WPF 애플리케이션 빌드 소개(Visual C#)) 또는 **Introduction to Building WPF Applications (Visual Basic)** (WPF 애플리케이션 빌드 소개(Visual Basic))를 선택합니다.
+4. 결과 목록에서 **Introduction to Building WPF Applications (Visual C#)**(WPF 애플리케이션 빌드 소개(Visual C#)) 또는 **Introduction to Building WPF Applications (Visual Basic)**(WPF 애플리케이션 빌드 소개(Visual Basic))를 선택합니다.
 
 5. **다운로드** 단추를 선택하고 나서 **닫기** 단추를 선택합니다.
 
@@ -62,9 +62,9 @@ ms.locfileid: "74296866"
 
 3. Visual C#의 경우 솔루션 이름을 `IntroWPFcsharp`로 지정합니다.
 
-     ![새 프로젝트 대화 상자, 설치 된 샘플](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
+     ![새 프로젝트 대화 상자, 설치된 샘플](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     OR
+     또는
 
      Visual Basic의 경우 솔루션 이름을 `IntroWPFvb`로 지정합니다.
 
@@ -72,7 +72,7 @@ ms.locfileid: "74296866"
 
 4. **확인** 단추를 선택합니다.
 
-## <a name="BKMK_CreateBuildConfig"></a> 사용자 지정 빌드 구성 만들기
+## <a name="create-a-custom-build-configuration"></a><a name="BKMK_CreateBuildConfig"></a> 사용자 지정 빌드 구성 만들기
 
 솔루션을 만들면 솔루션에 대한 디버그 및 릴리스 빌드 구성과 해당 기본 플랫폼 대상이 자동으로 정의됩니다. 나중에 이러한 구성을 사용자 지정하거나 고유한 구성을 만들 수 있습니다. 빌드 구성은 빌드 형식을 지정합니다. 빌드 플랫폼은 애플리케이션이 해당 구성에 대한 대상으로 지정하는 운영 체제를 지정합니다. 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md), [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) 및 [디버그 및 릴리스 프로젝트 구성](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)을 참조하세요.
 
@@ -82,17 +82,17 @@ ms.locfileid: "74296866"
 
 1. **구성 관리자** 대화 상자를 엽니다.
 
-    ![빌드 메뉴, Configuration Manager 명령](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+    ![빌드 메뉴, 구성 관리자 명령](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
-2. **활성 솔루션 구성** 목록에서 **새로 만들기**를 선택합니다.
+2. **활성 솔루션 구성** 목록에서 **새로 만들기**를 선택 합니다.
 
 3. **새 솔루션 구성** 대화 상자에서 새 구성의 이름을 `Test`로 지정하고, 기존 디버그 구성에서 설정을 복사하고, **확인** 단추를 선택합니다.
 
     ![새 솔루션 구성 대화 상자](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
-4. **활성 솔루션 플랫폼** 목록에서 **새로 만들기**를 선택합니다.
+4. **활성 솔루션 플랫폼** 목록에서 **새로 만들기**를 선택 합니다.
 
-5. **새 솔루션 플랫폼** 대화 상자에서 **x64**를 선택하지만 x86 플랫폼에서 설정을 복사하지는 않습니다.
+5. **새 솔루션 플랫폼** 대화 상자에서 **x64**를 선택 하 고 x86 플랫폼에서 설정을 복사 하지 않습니다.
 
     ![새 솔루션 플랫폼 대화 상자](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
@@ -100,13 +100,13 @@ ms.locfileid: "74296866"
 
    활성 솔루션 구성이 Test로 변경되고 활성 솔루션 플랫폼이 x64로 설정되었습니다.
 
-   ![테스트 구성으로 Configuration Manager](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![테스트 구성이 있는 구성 관리자](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
    **표준** 도구 상자에서 **솔루션 구성** 목록을 사용하여 활성 솔루션 구성을 빠르게 확인하거나 변경할 수 있습니다.
 
    ![솔루션 구성 옵션 표준 도구 모음](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
-## <a name="BKMK_building"></a> 애플리케이션 빌드
+## <a name="build-the-application"></a><a name="BKMK_building"></a> 응용 프로그램 빌드
 
 다음에는 사용자 지정 빌드 구성을 사용하여 솔루션을 빌드합니다.
 
@@ -118,13 +118,13 @@ ms.locfileid: "74296866"
 
   그림 1: Visual Basic 경고
 
-  ![출력 창 Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+  ![출력 창(Visual Basic)](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
   그림 2: Visual C# 경고
 
   ![출력 창 Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
-## <a name="BKMK_hidewarning"></a> 컴파일러 경고 숨기기
+## <a name="hide-compiler-warnings"></a><a name="BKMK_hidewarning"></a> 컴파일러 경고 숨기기
 
 빌드 출력을 어지럽히지 않도록 빌드하는 동안 특정 경고 메시지를 일시적으로 숨길 수 있습니다.
 
@@ -168,11 +168,11 @@ ms.locfileid: "74296866"
 
    ![출력 창, Visual Basic 빌드 경고](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
 
-   자세한 내용은 [방법: 컴파일러 경고 표시 안 함](../ide/how-to-suppress-compiler-warnings.md)을 참조하세요.
+   자세한 내용은 [방법: 컴파일러 경고 표시 안 함](../ide/how-to-suppress-compiler-warnings.md)을 참조 하세요.
 
-## <a name="BKMK_outputdetails"></a> 출력 창에 추가 빌드 세부 정보 표시
+## <a name="display-additional-build-details-in-the-output-window"></a><a name="BKMK_outputdetails"></a> 출력 창에 추가 빌드 세부 정보 표시
 
-**출력** 창에 표시할 빌드 프로세스에 대한 정보의 양을 변경할 수 있습니다. 빌드의 자세한 정도는 대개 최소로 설정되고, 이는 **출력** 창에 빌드 프로세스의 요약만 높은 우선 순위 또는 오류와 함께 표시됨을 의미합니다. [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)을 사용하여 빌드에 대한 추가 정보를 표시할 수 있습니다.
+**출력** 창에 표시할 빌드 프로세스에 대한 정보의 양을 변경할 수 있습니다. 빌드 자세한 정도는 일반적으로 최소로 설정 됩니다. 즉, **출력** 창에는 우선 순위가 높은 경고 또는 오류와 함께 빌드 프로세스에 대 한 요약만 표시 됩니다. [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)을 사용 하 여 빌드에 대 한 자세한 정보를 표시할 수 있습니다.
 
 > [!IMPORTANT]
 > 추가 정보를 표시하면 빌드를 완료하는 데 더 오랜 시간이 걸립니다.
@@ -195,10 +195,10 @@ ms.locfileid: "74296866"
 
     예를 들어 Visual C# 빌드에서 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 옵션은 이 항목에서 이전에 지정한 경고 코드, 1762를 세 개의 다른 경고와 함께 나열합니다.
 
-    Visual Basic 빌드에서 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)은 제외할 특정 경고를 포함하지 않으므로 경고가 나타나지 않습니다.
+    Visual Basic 빌드에서 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 은 제외할 특정 경고를 포함 하지 않으므로 경고가 나타나지 않습니다.
 
    > [!TIP]
-   > Ctrl+F 키를 선택하여 **찾기** 대화 상자를 표시하면 **출력** 창의 내용을 검색할 수 있습니다.
+   > Ctrl + F 키를 선택 하 여 **찾기** 대화 상자를 표시 하면 **출력** 창의 내용을 검색할 수 있습니다.
 
    자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
 
@@ -225,7 +225,7 @@ ms.locfileid: "74296866"
      예를 들어 \\\myserver\builds를 지정할 수 있습니다.
 
     > [!IMPORTANT]
-    > 지정한 네트워크 공유가 신뢰할 수 있는 위치가 아님을 알리는 메시지 상자가 나타날 수 있습니다. 지정한 위치를 신뢰하는 경우 메시지 상자에서 **확인** 단추를 선택합니다.
+    > 지정한 네트워크 공유가 신뢰할 수 있는 위치가 아님을 알리는 메시지 상자가 나타날 수 있습니다. 지정한 위치를 신뢰 하는 경우 메시지 상자에서 **확인** 단추를 선택 합니다.
 
 6. 애플리케이션을 빌드합니다.
 
@@ -248,7 +248,7 @@ ms.locfileid: "74296866"
     예를 들어 \\\myserver\builds를 지정할 수 있습니다.
 
    > [!IMPORTANT]
-   > 지정한 네트워크 공유가 신뢰할 수 있는 위치가 아님을 알리는 메시지 상자가 나타날 수 있습니다. 지정한 위치를 신뢰하는 경우 메시지 상자에서 **확인** 단추를 선택합니다.
+   > 지정한 네트워크 공유가 신뢰할 수 있는 위치가 아님을 알리는 메시지 상자가 나타날 수 있습니다. 지정한 위치를 신뢰 하는 경우 메시지 상자에서 **확인** 단추를 선택 합니다.
 
 6. 애플리케이션을 빌드합니다.
 
@@ -258,7 +258,7 @@ ms.locfileid: "74296866"
 
    축하합니다. 이 연습을 완료했습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [연습: 프로젝트 빌드(C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [ASP.NET 웹 애플리케이션 프로젝트 미리 컴파일 개요](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)

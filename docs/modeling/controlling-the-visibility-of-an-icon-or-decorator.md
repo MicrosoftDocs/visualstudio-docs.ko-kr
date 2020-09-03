@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546648"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
@@ -103,7 +103,7 @@ ms.locfileid: "85546648"
 
 8. 솔루션을 다시 빌드하고 실행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [다이어그램에 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md)

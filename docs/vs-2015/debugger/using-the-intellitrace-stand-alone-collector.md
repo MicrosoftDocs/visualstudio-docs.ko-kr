@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 81eedeeb9a1b2470e87f0d865996ad3e456723fe
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520551"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace 독립 실행형 수집기 사용
@@ -118,7 +118,7 @@ ms.locfileid: "85520551"
 
 1. 앱 서버에서 관리자 권한으로 명령 프롬프트 창을 엽니다.
 
-2. Windows **icacls** 명령을 사용하여 서버 관리자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다. 예를 들면 다음과 같습니다.
+2. Windows **icacls** 명령을 사용하여 서버 관리자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다. 예를 들어:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -126,7 +126,7 @@ ms.locfileid: "85520551"
 
     1. IntelliTrace PowerShell cmdlet을 실행하는 사용자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다.
 
-         예를 들면 다음과 같습니다.
+         예를 들어:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
@@ -162,7 +162,7 @@ ms.locfileid: "85520551"
 
     2. PowerShell 명령 창에서 **Import-Module** 명령을 사용하여 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**을 가져옵니다.
 
-         예를 들면 다음과 같습니다.
+         예를 들어:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 

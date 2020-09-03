@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094494"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 
 한 프로젝트 파일의 내용을 다른 프로젝트 파일로 가져옵니다.
 
-\<프로젝트> \<가져오기>
+\<Project>
+\<Import>
 
 ## <a name="syntax"></a>구문
 
@@ -85,7 +86,7 @@ ms.locfileid: "79094494"
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
  다음 예제에서는 여러 항목과 속성이 있는 프로젝트를 보여주고 일반 프로젝트 파일을 가져옵니다.
 

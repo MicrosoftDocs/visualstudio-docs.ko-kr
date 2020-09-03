@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3:SetValueAsString오류 | 마이크로 소프트 문서
+title: 'IDebugProperty3:: SetValueAsStringWithError | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721070"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-이 속성의 값을 설정 하 고 필요한 경우 오류 메시지를 반환 합니다.
+필요한 경우이 속성의 값을 설정 하 고 오류 메시지를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,25 +47,25 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>매개 변수
 `pszValue`\
-【인】 설정할 값입니다.
+진행 설정할 값입니다.
 
 `dwRadix`\
-【인】 설정 중인 값의 방수입니다.
+진행 설정 되는 값의 기 하 값입니다.
 
 `dwTimeout`\
-【인】 값이 설정될 때까지 기다리는 시간입니다(영원히`INFINITE` 대기의미).
+진행 값이 설정 될 때까지 대기 하는 시간입니다 ( `INFINITE` 무기한 대기를 의미).
 
 `errorString`\
-【아웃】 값을 설정하는 데 오류가 있는 경우 오류의 이유가 있습니다.
+제한이 값을 설정 하는 동안 오류가 발생 한 경우이로 인해 오류의 원인이 발생 합니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 들어오는 값은 평가할 식일 수 있습니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 노출 하는 **CProperty** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 노출 하는 **cproperty** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(
@@ -169,5 +169,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

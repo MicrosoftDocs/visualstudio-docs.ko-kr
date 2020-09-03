@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a815d2ef623a35030469fa631cae65653c2fe2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185220"
 ---
 # <a name="parameter-element"></a>Parameter 요소
@@ -50,8 +50,8 @@ ms.locfileid: "68185220"
 |특성|설명|  
 |---------------|-----------------|  
 |`ParameterType`|선택적 특성입니다.<br /><br /> 매개 변수의 .NET 유형(예: "System.String")입니다.|  
-|`Output`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 매개 변수는 태스크의 출력 매개 변수입니다. 기본적으로 이 값은 `false`입니다.|  
-|`Required`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 매개 변수는 태스크의 필수 매개 변수입니다. 기본적으로 이 값은 `false`입니다.|  
+|`Output`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 매개 변수는 태스크의 출력 매개 변수입니다. 기본적으로 값은 `false`입니다.|  
+|`Required`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 매개 변수는 태스크의 필수 매개 변수입니다. 기본적으로 값은 `false`입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -78,7 +78,7 @@ ms.locfileid: "68185220"
 </UsingTask>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [작업](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>관련 항목  
+ [임무](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

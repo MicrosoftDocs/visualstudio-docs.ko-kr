@@ -21,10 +21,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3f0d17fcaf856799ded82ebe684d671b358cb8df
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88114273"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치

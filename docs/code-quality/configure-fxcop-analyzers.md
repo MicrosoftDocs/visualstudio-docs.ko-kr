@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a131b7d69eec61f9b9106f7a4274b3882c51f0ff
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800738"
 ---
 # <a name="configure-net-code-quality-analyzers"></a>.NET 코드 품질 분석기 구성
@@ -75,7 +75,7 @@ EditorConfig 기반 분석기 구성은 다음 범위에 대해 사용 하도록
 
 구성을 사용 하도록 설정 하려면 해당 디렉터리의 옵션을 사용 하 여 *editorconfig* 파일을 추가 합니다. 이 파일에는 EditorConfig 기반 진단 심각도 구성 항목이 포함 될 수도 있습니다. 자세한 내용은 [여기](use-roslyn-analyzers.md#rule-severity)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [.NET 코드 품질 분석기에 대 한 규칙 범위 옵션](fxcop-analyzer-options.md)
 - [분석기 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

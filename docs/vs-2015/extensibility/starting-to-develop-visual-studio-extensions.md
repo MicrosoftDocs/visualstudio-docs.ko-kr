@@ -12,10 +12,10 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d62a4c6cc45681fe6a66ae57df2e1da1d1cc12e0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850592"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Extensions 확장 기능 개발 시작
@@ -58,12 +58,12 @@ ms.locfileid: "75850592"
 
 - [Visual Studio Shell(격리)](../extensibility/visual-studio-isolated-shell.md)
 
-## <a name="BKMK_ProjectTemplate"></a>이상에서 제공 하는 프로젝트 템플릿은 무엇 인가요?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> 이상에서 제공 하는 프로젝트 템플릿은 무엇 인가요?
  두 가지 주요 확장 유형은 Vspackage 및 MEF 확장입니다. 일반적으로 VSPackage 확장은 명령, 도구 창 및 프로젝트를 사용 하거나 확장 하는 확장에 사용 됩니다. MEF 확장은 Visual Studio 편집기를 확장 하거나 사용자 지정 하는 데 사용 됩니다.
 
- 시각적 개체 C# 및 Visual Basic 확장의 경우, 사용자는 메뉴 명령, 도구 창 및 편집기 확장을 만드는 새 항목 템플릿과 함께 사용할 수 있는 빈 VSIX 프로젝트 템플릿을 제공 합니다. 자세한 내용은 [Visual Studio 2015 SDK의 새로운 기능](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)을 참조 하세요. 이 템플릿을 사용 하 여 다른 사용자에 게 배포 하기 위해 프로젝트 템플릿, 코드 조각 및 기타 아티팩트를 패키지할 수도 있습니다.
+ Visual c # 및 Visual Basic 확장의 경우 새 항목은 메뉴 명령, 도구 창 및 편집기 확장을 만드는 새 항목 템플릿과 함께 사용할 수 있는 빈 VSIX 프로젝트 템플릿을 제공 합니다. 자세한 내용은 [Visual Studio 2015 SDK의 새로운 기능](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)을 참조 하세요. 이 템플릿을 사용 하 여 다른 사용자에 게 배포 하기 위해 프로젝트 템플릿, 코드 조각 및 기타 아티팩트를 패키지할 수도 있습니다.
 
- 의 C++경우 VSPackage 마법사는 메뉴 명령, 도구 창 및 사용자 지정 편집기를 추가 하는 코드를 제공 합니다.
+ C + +의 경우 VSPackage 마법사는 메뉴 명령, 도구 창 및 사용자 지정 편집기를 추가 하는 코드를 제공 합니다.
 
  격리 된 셸 템플릿은 사용자가 직접 브랜드 및 배포할 수 있는 Visual Studio Shell 버전의 확장을 패키지 하는 데 사용 됩니다. 다음 항목에서는 각 종류의 확장을 시작 하는 방법을 보여 줍니다.
 

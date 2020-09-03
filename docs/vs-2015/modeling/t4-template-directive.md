@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850784"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
@@ -34,7 +34,7 @@ ms.locfileid: "75850784"
 ## <a name="compileroptions-attribute"></a>compilerOptions 특성
  예: `compilerOptions="optimize+"`
 
- 유효한 값: 유효한 모든 컴파일러 옵션입니다. 자세한 내용은 [ C# 컴파일러 옵션 범주별 목록](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) 및 [Visual Basic 컴파일러 옵션 범주별 목록](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)을 참조 하세요.
+ 유효한 값: 유효한 모든 컴파일러 옵션입니다. 자세한 내용은 [c # 컴파일러 옵션 범주별 목록](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) 및 [Visual Basic 컴파일러 옵션 범주별 목록](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3)을 참조 하세요.
 
  전처리된 런타임 템플릿의 경우 무시됩니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "75850784"
 debug="true"
 ```
 
- 유효한 값: `true, false`. 기본값은 False입니다.
+ 유효한 값은 `true, false` 입니다. 기본값은 False입니다.
 
  `debug` 특성이 `true`인 경우 중간 코드 파일에 디버거가 중단 또는 예외가 발생한 템플릿의 위치를 정확하게 식별할 수 있도록 하는 정보가 포함됩니다.
 
@@ -71,13 +71,13 @@ debug="true"
 hostspecific="true"
 ```
 
- 유효한 값: `true, false, trueFromBase`. 기본값은 False입니다.
+ 유효한 값은 `true, false, trueFromBase` 입니다. 기본값은 False입니다.
 
  이 특성의 값을 `true`로 설정하면 `Host`라는 속성이 텍스트 템플릿에서 생성된 클래스에 추가됩니다. 속성은 변환 엔진의 호스트에 대 한 참조 이며 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))로 선언 됩니다. 사용자 지정 호스트를 정의한 경우에는 해당 호스트를 사용자 지정 호스트 형식으로 캐스팅할 수 있습니다.
 
  이 속성의 형식이 호스트의 형식에 따라 달라지기 때문에 이 속성은 특정 호스트에서만 작동하는 텍스트 템플릿을 작성하는 경우에만 유용합니다. [디자인 타임 템플릿에](../modeling/design-time-code-generation-by-using-t4-text-templates.md)는 적용 되지만 [런타임 템플릿에](../modeling/run-time-text-generation-with-t4-text-templates.md)는 적용 되지 않습니다.
 
- `hostspecific`이 `true`이고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하고 있는 경우 `this.Host`를 IServiceProvider로 캐스팅하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기능에 액세스할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면 다음과 같습니다.:
+ `hostspecific`이 `true`이고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하고 있는 경우 `this.Host`를 IServiceProvider로 캐스팅하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기능에 액세스할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -108,9 +108,9 @@ Content of myFile is:
 
  `VB`
 
- Language 특성은 문과 식 블록의 소스 코드에 사용할 언어 ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 또는 [!INCLUDE[csprcs](../includes/csprcs-md.md)])를 지정 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
+ Language 특성은 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../includes/csprcs-md.md)] 문 및 식 블록의 소스 코드에 사용할 언어 (또는)를 지정 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
 
- 예를 들면 다음과 같습니다.:
+ 예를 들면 다음과 같습니다.
 
 ```vb
 <#@ template language="VB" #>

@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800946"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio에서 Office 및 SharePoint 개발
@@ -57,7 +57,7 @@ ms.locfileid: "88800946"
 
  ![Office용 콘텐츠 앱](../vsto/media/appforoffice.png "Office용 콘텐츠 앱")
 
- **자세히 알아보기**
+ **자세한 정보**
 
 |대상|참조 항목|
 |--------|---------|
@@ -73,7 +73,7 @@ ms.locfileid: "88800946"
 
  ![SharePoint용 Business Contact Manager 앱](../vsto/media/appforsharepoint.png "SharePoint용 Business Contact Manager 앱")
 
- **자세히 알아보기**
+ **자세한 정보**
 
 |대상|참조 항목|
 |--------|---------|
@@ -88,9 +88,9 @@ ms.locfileid: "88800946"
 
  ![PowerPoint 추가 기능 솔루션](../vsto/media/powerpointaddin.png "PowerPoint 추가 기능 솔루션")
 
- **자세히 알아보기**
+ **자세한 정보**
 
-|대상|읽기|
+|작업|읽기|
 |--------|----------|
 |Office를 확장할 수 있는 다양한 방법을 비교하고 VSTO 추가 기능을 사용할지 또는 Office 추가 기능을 사용할지 결정|[Office 추가 기능, VSTO 및 VBA에 대 한 로드맵](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |VSTO 추가 기능 만들기|[Visual Studio에서 VSTO 추가 기능 빌드](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
@@ -100,7 +100,7 @@ ms.locfileid: "88800946"
 
  SharePoint 솔루션을 사용하려면 온-프레미스 SharePoint 팜 서버가 필요합니다. SharePoint 솔루션은 관리자가 설치해야 합니다. 또한 이러한 솔루션은 SharePoint에서 실행되므로 서버 성능에 영향을 줄 수 있습니다. 그러나 솔루션을 통해 SharePoint 개체에 보다 심층적으로 액세스할 수 있습니다. 또한 SharePoint 솔루션을 빌드할 때는 .NET Framework와 C# 및 Visual Basic을 사용하여 SharePoint 개체와 상호 작용할 수 있습니다.
 
- **자세히 알아보기**
+ **자세한 정보**
 
 |대상|참조 항목|
 |--------|---------|

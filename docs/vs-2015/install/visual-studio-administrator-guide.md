@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295920"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
@@ -43,9 +43,9 @@ Visual Studio에 대 한 최신 설명서는 [Visual studio 관리자 가이드]
 |설치 상태|재시작 필요 없음|재시작 필요|설명|  
 |------------------|--------------------------|----------------------|-----------------|  
 |성공|0x00000000 [0]|0x00000bc2 [3010]|설치 성공|  
-|블록|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|보고할 유일한 블록이 “다시 부팅 보류 중”인 경우 완료되는 값은 완료 안 됨-다시 부팅해야 함 값(0x80048bc7)입니다.|  
+|차단|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|보고할 유일한 블록이 “다시 부팅 보류 중”인 경우 완료되는 값은 완료 안 됨-다시 부팅해야 함 값(0x80048bc7)입니다.|  
 |취소|0x00000642 [1602]|0x80048642 [-2147187134]|다시 부팅 값이 반환될 때 반환 코드는 1602입니다.|  
-|완료 안 됨-다시 부팅해야 함|N/A|0x80048bc7 [-2147185721]|설치를 계속하려면 다시 시작해야 합니다.|  
+|완료 안 됨-다시 부팅해야 함|해당 없음|0x80048bc7 [-2147185721]|설치를 계속하려면 다시 시작해야 합니다.|  
 |실패|0x00000643 [1603]|0x80048643 [-2147187133]|다시 부팅 값이 반환될 때 반환 코드는 1603입니다.|  
   
 ## <a name="interactive-administrator-installer"></a>대화형 관리자 설치 관리자  
@@ -69,8 +69,8 @@ Visual Studio에 대 한 최신 설명서는 [Visual studio 관리자 가이드]
   
 |항목|설명|  
 |-----------|-----------------|  
-|[방법: Visual Studio의 특정 릴리스 설치](../install/how-to-install-a-specific-release-of-visual-studio.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 현재 버전에 대 한 특정 구성을 설치 하는 방법을 설명 합니다.|  
-|[방법: Visual Studio 무인 설치 만들기 및 실행](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|무인 모드로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 설치 하는 방법을 설명 합니다.|  
+|[방법: Visual Studio의 특정 릴리스 설치](../install/how-to-install-a-specific-release-of-visual-studio.md)|현재 버전의에 대 한 특정 구성을 설치 하는 방법을 설명 합니다  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|[방법: Visual Studio 무인 설치 만들기 및 실행](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|무인 모드에서를 설치 하는 방법을 설명 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
 |[방법: Visual Studio를 배포할 때 제품 키를 자동으로 적용](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|여러 컴퓨터에 배포할 때 제품 키를 적용 하는 방법을 설명 합니다.|  
 |[도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)|인터넷에 액세스할 수 있거나 없는 네트워크 환경에 대 한 로컬 도움말 설치를 관리 하는 방법에 대 한 정보를 제공 합니다.|  
-|[Visual Studio 설치](../install/install-visual-studio-2015.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]을 설치 하는 방법을 설명 하는 항목에 대 한 지침 및 링크를 제공 합니다.|
+|[Visual Studio 설치](../install/install-visual-studio-2015.md)|을 설치 하는 방법을 설명 하는 항목에 대 한 지침과 링크를 제공 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다.|

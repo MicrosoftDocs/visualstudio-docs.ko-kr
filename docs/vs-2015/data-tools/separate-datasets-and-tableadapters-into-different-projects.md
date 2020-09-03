@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f6ec76e79cc1c4759cbe05d8bdcacc1297b655b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655429"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 세트 및 TableAdapter를 다른 프로젝트로 분리
@@ -29,10 +29,10 @@ ms.locfileid: "72655429"
 
 형식화 된 데이터 집합은 [tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) 및 데이터 집합 클래스가 개별 프로젝트로 생성 될 수 있도록 향상 되었습니다. 이를 통해 응용 프로그램 계층을 신속 하 게 분리 하 고 n 계층 데이터 응용 프로그램을 생성할 수 있습니다.
 
- 다음 절차에서는 데이터 세트 디자이너를 사용 하 여 생성 된 `TableAdapter` 코드를 포함 하는 프로젝트와 별도의 프로젝트에 데이터 집합 코드를 생성 하는 프로세스에 대해 설명 합니다.
+ 다음 절차에서는 데이터 세트 디자이너를 사용 하 여 생성 된 코드를 포함 하는 프로젝트와 별도의 프로젝트에 데이터 집합 코드를 생성 하는 프로세스에 대해 설명 합니다 `TableAdapter` .
 
 ## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets 및 Tableadapter
- @No__t_0 코드에서 데이터 집합 코드를 분리 하는 경우 데이터 집합 코드를 포함 하는 프로젝트를 현재 솔루션에 배치 해야 합니다. 이 프로젝트를 현재 솔루션에 배치 하지 않으면 **속성** 창의 **데이터 집합 프로젝트** 목록에서 사용할 수 없습니다.
+ 코드에서 데이터 집합 코드를 분리 하는 경우 `TableAdapter` 데이터 집합 코드가 포함 된 프로젝트를 현재 솔루션에 배치 해야 합니다. 이 프로젝트를 현재 솔루션에 배치 하지 않으면 **속성** 창의 **데이터 집합 프로젝트** 목록에서 사용할 수 없습니다.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -60,10 +60,10 @@ ms.locfileid: "72655429"
 
     데이터 집합 코드는 **데이터 집합 프로젝트** 속성에서 선택한 프로젝트로 생성 되 고, **TableAdapter** 코드는 현재 프로젝트로 생성 됩니다.
 
-   기본적으로 데이터 집합 및 `TableAdapter` 코드를 분리 한 후 결과는 각 프로젝트의 불연속 클래스 파일입니다. 원본 프로젝트에는 `TableAdapter` 코드를 포함 하는 이름이 DatasetName (또는 DatasetName.Designer.cs) 인 파일이 있습니다. **데이터 집합 프로젝트** 속성에 지정 된 프로젝트에는 데이터 집합 코드를 포함 하는 DatasetName (또는 DatasetName.DataSet.Designer.cs) 라는 파일이 있습니다.
+   기본적으로 데이터 집합 및 코드를 분리 한 후 `TableAdapter` 결과는 각 프로젝트의 불연속 클래스 파일입니다. 원본 프로젝트에는 코드를 포함 하는 DatasetName (또는 DatasetName.Designer.cs) 라는 파일이 있습니다. `TableAdapter` **데이터 집합 프로젝트** 속성에 지정 된 프로젝트에는 데이터 집합 코드를 포함 하는 DatasetName (또는 DatasetName.DataSet.Designer.cs) 라는 파일이 있습니다.
 
 > [!NOTE]
-> 생성 된 클래스 파일을 보려면 데이터 집합 또는 `TableAdapter` 프로젝트를 선택 합니다. 그런 다음 **솔루션 탐색기**에서 **모든 파일 표시** 를 선택 합니다.
+> 생성 된 클래스 파일을 보려면 데이터 집합 또는 프로젝트를 선택 합니다 `TableAdapter` . 그런 다음  **솔루션 탐색기**에서 **모든 파일 표시** 를 선택 합니다.
 
-## <a name="see-also"></a>관련 항목:
- [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md) [Walkthrough: N 계층 데이터 응용 프로그램 만들기 ](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [계층적 업데이트](../data-tools/hierarchical-update.md) 는 [Visual Studio에서 데이터에 액세스](../data-tools/accessing-data-in-visual-studio.md) [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
+## <a name="see-also"></a>관련 항목
+ [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md) [연습: n 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [계층적 업데이트](../data-tools/hierarchical-update.md) [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md) [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

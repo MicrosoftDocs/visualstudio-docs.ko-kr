@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d24fc7a01a8eebe356f37704c1a821332f5dca1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850757"
 ---
 # <a name="events-vsperfcmd"></a>이벤트(VSPerfCmd)
@@ -47,16 +47,16 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  **Events** 옵션은 다음 커널 키워드를 공급자 이름으로 인식합니다.  
   
- **Process**  
- 프로세스 이벤트  
+ **처리**  
+ 이벤트 처리  
   
  **스레드**  
  스레드 이벤트  
   
- **Image**  
+ **이미지**  
  이벤트 로드 및 언로드 이벤트  
   
- **Disk**  
+ **디스크**  
  디스크 I/O 이벤트  
   
  **파일**  
@@ -68,15 +68,15 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Pagefault**  
  소프트 페이지 폴트  
   
- **Network**  
+ **네트워크**  
  네트워크 이벤트  
   
- **Registry**  
+ **레지스트리**  
  레지스트리 액세스 이벤트  
   
  커널 공급자만 사용할 수 있습니다. 모니터가 종료될 때까지 비활성화되거나 해당 플래그를 수정할 수 없습니다.  
   
-## <a name="remarks"></a>주의  
+## <a name="remarks"></a>설명  
   
 > [!NOTE]
 > CLR ETW 이벤트를 활성화하면 추가 시작 데이터도 추적 뷰 보고서에 수집됩니다. 시작 이벤트를 보고서 표시에서 제외하려면 다음 명령을 사용합니다.  
@@ -86,10 +86,10 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
-> 시작 이벤트를 제외하지 않는 경우 이러한 이벤트는 MOF(Managed Object Format) 파일에 나열되지 않으므로 보고서에 GUID로 표시됩니다. 자세한 내용은 Microsoft 웹 사이트에서 [샘플 MOF(Managed Object Format) 파일](https://msdn.microsoft.com/library/default.aspx)을 참조하세요.  
+> 시작 이벤트를 제외하지 않는 경우 이러한 이벤트는 MOF(Managed Object Format) 파일에 나열되지 않으므로 보고서에 GUID로 표시됩니다. 자세한 내용은 Microsoft 웹 사이트에서 [MOF (Sample MOF(Managed Object Format)) 파일](https://msdn.microsoft.com/library/default.aspx)페이지를 참조 하십시오.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

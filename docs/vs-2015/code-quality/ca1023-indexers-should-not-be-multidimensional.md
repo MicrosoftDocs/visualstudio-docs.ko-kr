@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 30eee67d54e4fc3c73b265240fff82b0729e1cfc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546653"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: 다차원 인덱서를 사용하지 마세요.
@@ -44,7 +44,7 @@ ms.locfileid: "85546653"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  비표준 인덱서에 대 한 필요성을 신중 하 게 고려한 후에만이 규칙에서 경고를 표시 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `DayOfWeek03` 규칙을 위반 하는 다차원 인덱서가 포함 된 형식을 보여 줍니다. 인덱서는 변환 형식으로 볼 수 있으므로 메서드로 보다 적절 하 게 노출 됩니다. 규칙을 충족 하기 위해 형식이에서 다시 디자인 되었습니다 `RedesignedDayOfWeek03` .
 
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cpp/FxCop.Design.OneDimensionForIndexer.cpp#1)]

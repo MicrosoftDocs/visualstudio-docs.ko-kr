@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168738"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
@@ -131,17 +131,17 @@ ContosoTopic4.htm 이라는 새 XHTML 문서를 만들고 title 태그 (아래)�
 
 항목의 본문 (머리글 및 바닥글 제외)에는 페이지 링크, 메모 섹션, 축소 가능한 영역, 코드 조각, 언어별 텍스트의 섹션이 포함 됩니다.  제공 된 항목의 해당 영역에 대 한 자세한 내용은 브랜딩 섹션을 참조 하세요.
 
-1. 토픽 제목 태그를 추가 합니다.`<div class="title">Contoso Topic 4</div>`
+1. 토픽 제목 태그를 추가 합니다.  `<div class="title">Contoso Topic 4</div>`
 
-2. 참고 섹션 추가:`<div class="alert"> add your table tag and text </div>`
+2. 참고 섹션 추가: `<div class="alert"> add your table tag and text </div>`
 
-3. 축소 가능한 영역 추가:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 축소 가능한 영역 추가:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. 코드 조각을 추가 합니다.`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. 코드 조각을 추가 합니다.  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. 코드 언어 관련 텍스트 추가: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` `devLangnu=` 다른 언어를 입력할 수 있습니다. 예를 들어 `devLangnu="Fortran"` 는 코드 조각 DisplayLanguage = 포트란 인 경우 포트란을 표시 합니다.
+5. 코드 언어 관련 텍스트 추가:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` `devLangnu=` 다른 언어를 입력할 수 있습니다. 예를 들어 `devLangnu="Fortran"` 는 코드 조각 DisplayLanguage = 포트란 인 경우 포트란을 표시 합니다.
 
-6. 페이지 링크 추가:`<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. 페이지 링크 추가: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > 참고: 지원 되지 않는 새 "표시 언어" (예: F #, Cobol, 포트란)의 경우 코드 조각에서 코드 색 지정은 단색입니다.
@@ -360,7 +360,7 @@ IDE의 도움말 메뉴 항목에서 **디버그 도움말 컨텍스트**를 선
 
 다음 표에서 대괄호 사이에 표시 되는 모든 문자열은 인식 된 값으로 바꾸어야 하는 자리 표시자입니다. 예를 들어에서 \<meta name="Microsoft.Help.Locale" content="[language code]" /> "[언어 코드]"는 "en-us"와 같은 값으로 바꾸어야 합니다.
 
-| 속성 (HTML 표시) | Description |
+| 속성 (HTML 표시) | 설명 |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 하며 다른 Microsoft 도움말 태그 위에 삽입 해야 합니다. 이 태그를 사용 하지 않으면 제품 로캘과 연결 된 단어 분리기 (지정 된 경우)를 사용 하 여 항목의 본문 텍스트가 인덱싱됩니다. 그렇지 않으면 en-us 단어 분리기가 사용 됩니다. 이 태그는 ISOC RFC 4646을 준수 합니다. Microsoft 도움말이 제대로 작동 하도록 하려면 일반 언어 특성 대신이 속성을 사용 합니다. |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 다른 로캘이 사용 될 때이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 합니다. 카탈로그에 둘 이상의 언어로 된 콘텐츠가 포함 된 경우이 태그를 사용 합니다. 카탈로그의 여러 항목은 동일한 ID를 가질 수 있지만 각 항목은 고유한 TopicLocale를 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목은 목차에 표시 되는 항목입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다. |
@@ -445,7 +445,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 
 **Branding.xml**
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | 기능: | **CollapsibleArea** |
 | 사용: | 축소 콘텐츠 컨트롤 텍스트 확장 |
@@ -459,7 +459,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | ViewColorizedText | 색 보기 |
 | CombinedVBTabDisplayLanguage | Visual Basic (샘플) |
 | VBDeclaration | 선언 |
-| VBUsage | 사용 |
+| VBUsage | 사용량 |
 | 기능: | **사용자 의견, 바닥글 및 로고** |
 | 사용: | 고객이 전자 메일을 통해 현재 항목에 대 한 피드백을 제공할 수 있도록 피드백 컨트롤을 제공 합니다.  콘텐츠의 저작권 텍스트입니다.  로고 정의. |
 | **Element** | **값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)** |
@@ -563,25 +563,25 @@ branding.js 파일에는 Visual Studio 도움말 뷰어 브랜딩 요소에 사�
 
 브랜딩 패키지에는 콘텐츠 사용자에 게 유용한 정보를 제공 하는 기능을 지 원하는 HTM 파일 집합이 포함 되어 있습니다. 예를 들어, 설치 되는 콘텐츠 집합을 설명 하는 섹션과 항목의 로컬 항목에서 항목을 찾을 수 없는 경우 사용자에 게 알려 주는 페이지가 포함 된 홈 페이지가 있습니다. 이러한 HTM 파일은 제품 별로 수정할 수 있습니다.  ISO 셸 공급 업체는 기본 브랜딩 패키지를 사용 하 여 이러한 페이지의 동작과 콘텐츠를 요구 사항에 맞게 변경할 수 있습니다.  이러한 파일은 브랜딩 태그가 branding.xml 파일에서 해당 콘텐츠를 가져오기 위해 각 브랜딩 패키지를 참조 합니다.
 
-|**최근에 사용한 파일**|**사용**|**표시 된 콘텐츠 원본**|
+|**파일**|**사용**|**표시 된 콘텐츠 원본**|
 |-|-|-|
 |homepage.htm|현재 설치 된 콘텐츠를 표시 하는 페이지 및 해당 콘텐츠에 대 한 사용자에 게 제공 되는 기타 모든 메시지입니다.  이 파일에는이 콘텐츠를 로컬 콘텐츠 TOC의 맨 위에 배치 하는 추가 메타 데이터 특성 "Microsoft.Help.Id" content = "-1"이 있습니다.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, 태그\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, 태그\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, 태그\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|책을 설치 하지 않은 경우 제목 섹션 Branding.xml 태그 \<HomePageInstalledBooks> , 응용 프로그램에서 생성 된 데이터 \<HomePageNoBooksInstalled> 입니다.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, 태그 \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, 태그 \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, 태그 \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|책을 설치 하지 않은 경우 제목 섹션 Branding.xml 태그 \<HomePageInstalledBooks> , 응용 프로그램에서 생성 된 데이터  \<HomePageNoBooksInstalled> 입니다.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|제목 섹션 Branding.xml 태그 \<HomePageHelpSettings> , 섹션 텍스트 \<HomePageHelpSettingsText> 입니다.|
 |topiccorrupted.htm|항목이 로컬 집합에 있지만 어떤 이유로 든 표시할 수 없는 경우 (손상 된 콘텐츠)||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, 태그\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, 태그\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, 태그 \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, 태그 \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|로컬 콘텐츠 집합에 항목이 없거나 온라인에서 사용할 수 없는 경우||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, 태그\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, 태그\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, 태그\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, 태그 \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, 태그 \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, 태그 \<TopicNotFoundText>|
 |contentnotinstalled.htm|제품에 대 한 로컬 콘텐츠가 설치 되어 있지 않은 경우||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, 태그\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, 태그\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, 태그\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, 태그 \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, 태그 \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, 태그 \<ContentNotInstalledText>|
 
 **CSS 파일**
 
@@ -597,7 +597,7 @@ Visual Studio 도움말 뷰어 브랜딩 패키지에는 일관성 있는 Visual
 
 Visual Studio 콘텐츠는 Visual Studio 로고 및 기타 그래픽을 표시 합니다.  Visual Studio 도움말 뷰어 브랜딩 패키지의 전체 그래픽 파일 목록은 아래와 같습니다.
 
-|**최근에 사용한 파일**|**사용**|**예**|
+|**파일**|**사용**|**예**|
 |-|-|-|
 |clear.gif|축소 가능한 영역을 렌더링 하는 데 사용 됩니다.||
 |footer_slice.gif|바닥글 프레젠테이션||
@@ -741,9 +741,9 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
 
 격리 된 셸 확장을 만들려면 다음을 수행 합니다.
 
-1. Visual Studio의 **파일**에서 **새 프로젝트**를 선택 하 고 **기타 프로젝트 형식** 에서 **확장성**을 선택한 다음 **Visual Studio Shell 격리**를 선택 합니다. 프로젝트 이름 `ContosoHelpShell` )을 사용 하 여 Visual Studio 격리 셸 템플릿을 기반으로 하는 확장성 프로젝트를 만듭니다.
+1. Visual Studio의 **파일**에서 **새 프로젝트**를 선택 하 고 **기타 프로젝트 형식** 에서 **확장성**을 선택한 다음  **Visual Studio Shell 격리**를 선택 합니다. 프로젝트 이름 `ContosoHelpShell` )을 사용 하 여 Visual Studio 격리 셸 템플릿을 기반으로 하는 확장성 프로젝트를 만듭니다.
 
-2. 솔루션 탐색기의 ContosoHelpShellUI 프로젝트에 있는 리소스 파일 폴더에서 ApplicationCommands. vsct를 엽니다. 이 줄이 주석 처리 되었는지 확인 합니다 ("No_Help" 검색).`<!-- <define name="No_HelpMenuCommands"/> -->`
+2. 솔루션 탐색기의 ContosoHelpShellUI 프로젝트에 있는 리소스 파일 폴더에서 ApplicationCommands. vsct를 엽니다. 이 줄이 주석 처리 되었는지 확인 합니다 ("No_Help" 검색). `<!-- <define name="No_HelpMenuCommands"/> -->`
 
 3. F5 키를 선택 하 여 컴파일하고 **디버그**를 실행 합니다. 격리 된 셸 IDE의 실험적 인스턴스에서 **도움말** 메뉴를 선택 합니다. 도움말 **보기**, **도움말 콘텐츠 추가 및 제거**및 **도움말 기본 설정 명령 설정이** 표시 되는지 확인 합니다.
 
@@ -808,7 +808,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15
 
-    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]통합 셸:
+    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 통합 셸:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
@@ -826,7 +826,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
 
 12. Contoso IDE 내에서 f1 키를 선택 하 여 F1 기능을 테스트 합니다.
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 
 런타임 API에 대 한 자세한 내용은 [Windows 도움말 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)를 참조 하세요.
 

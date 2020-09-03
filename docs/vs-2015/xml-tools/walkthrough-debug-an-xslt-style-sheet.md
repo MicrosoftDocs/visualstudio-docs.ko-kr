@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c205ff68ebc51d0b0f5b32038763c1741855d7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656114"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>연습: XSLT 스타일시트 디버깅
@@ -37,13 +37,13 @@ ms.locfileid: "72656114"
 
     XML 편집기에서 스타일시트가 열립니다.
 
-3. 문서 속성 창의 **입력** 필드에서 찾아보기 단추 ( **...** )를 클릭 합니다.
+3. 문서 속성 창의 **입력** 필드에서 찾아보기 단추( **...** )를 클릭합니다
 
-4. Books.xml 파일을 찾아 **열기**를 클릭 합니다.
+4. books.xml 파일을 찾고 **열기**를 클릭 합니다.
 
     그러면 XSLT 변형에 사용되는 소스 문서 파일이 설정됩니다.
 
-5. @No__t_0 시작 태그를 마우스 오른쪽 단추로 클릭 하 고 **중단점**을 가리킨 다음 **중단점 삽입**을 클릭 합니다.
+5. 시작 태그를 마우스 오른쪽 단추로 클릭 하 고 `xsl:if` **중단점**을 가리킨 다음 **중단점 삽입**을 클릭 합니다.
 
 6. XML 편집기 도구 모음에서 **XSL 디버깅** 단추를 클릭 합니다.
 
@@ -63,11 +63,11 @@ ms.locfileid: "72656114"
 
      그러면 조사식 1 창이 표시됩니다.
 
-2. **이름** 필드에 `$bookAverage`을 입력 하 고 enter 키를 누릅니다.
+2. `$bookAverage` **이름** 필드에를 입력 하 고 enter 키를 누릅니다.
 
      `$bookAverage` 변수 값이 창에 표시됩니다.
 
-3. **이름** 필드에 `self::node()`을 입력 하 고 enter 키를 누릅니다.
+3. `self::node()` **이름** 필드에를 입력 하 고 enter 키를 누릅니다.
 
      `self::node()`는 현재 컨텍스트 노드로 계산되는 XPath 식입니다. `self::node()` XPath 식의 값은 첫 번째 book 노드입니다. 이 값은 변환을 진행하면서 변경됩니다.
 
@@ -80,7 +80,7 @@ ms.locfileid: "72656114"
 
 #### <a name="to-step-through-the-code"></a>단계별로 코드를 실행하려면
 
-1. **F5**를 눌러 계속합니다.
+1. 계속하려면 **F5** 키를 누릅니다.
 
      첫 번째 book 노드가 `xsl:if` 조건을 만족하기 때문에 book 노드가 XSL 출력 창에 추가됩니다. 디버거는 스타일시트의 `xsl:if` 요소에 다시 배치될 때까지 계속 실행됩니다. 이제 디버거가 books.xml 파일의 두 번째 book 노드에 배치됩니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "72656114"
 
      조사식 1 창에서 `self::node()` 값이 세 번째 book 노드로 변경됩니다. `price` 요소의 값을 확인하면 가격이 평균보다 낮으므로 `xsl:if` 조건이 충족됨을 알 수 있습니다.
 
-3. **F5**를 눌러 계속합니다.
+3. 계속하려면 **F5** 키를 누릅니다.
 
      `xsl:if` 조건을 만족했기 때문에 세 번째 book이 XSL 출력 창에 추가됩니다. XML 문서에 있는 모든 book이 처리되었으므로 디버거가 중지됩니다.
 
@@ -154,5 +154,5 @@ ms.locfileid: "72656114"
 </bookstore>
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [XSLT 디버그](../xml-tools/debugging-xslt.md)

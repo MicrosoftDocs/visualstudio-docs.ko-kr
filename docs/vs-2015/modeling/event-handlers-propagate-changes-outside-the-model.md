@@ -13,38 +13,38 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295514"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>이벤트 처리기로 모델 외부의 변경 내용 전파
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-시각화 및 모델링 SDK에서 저장소 외부의 리소스 (예: 비 스토어 변수, 파일, 다른 저장소의 모델 또는 기타 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장)에 변경 내용을 전파 하는 저장소 이벤트 처리기를 정의할 수 있습니다. 트리거 이벤트가 발생 한 트랜잭션이 종료 된 후에도 저장소 이벤트 처리기가 실행 됩니다. 실행 취소 또는 다시 실행 작업 에서도 실행 됩니다. 따라서 저장소 규칙과 달리 저장소 이벤트는 저장소 외부에 있는 값을 업데이트 하는 데 가장 유용 합니다. .NET 이벤트와 달리 저장소 이벤트 처리기는 클래스를 수신 하도록 등록 됩니다. 각 인스턴스에 대해 별도의 처리기를 등록할 필요가 없습니다. 변경 사항을 처리 하는 다양 한 방법 중에서 선택 하는 방법에 대 한 자세한 내용은 [변경 내용에 대 한 응답 및 전파](../modeling/responding-to-and-propagating-changes.md)를 참조 하세요.
+시각화 및 모델링 SDK에서 저장소 외부의 리소스에 변경 내용을 전파 하는 저장소 이벤트 처리기를 정의할 수 있습니다 (예: 비 스토어 변수, 파일, 다른 저장소의 모델 또는 기타 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장). 트리거 이벤트가 발생 한 트랜잭션이 종료 된 후에도 저장소 이벤트 처리기가 실행 됩니다. 실행 취소 또는 다시 실행 작업 에서도 실행 됩니다. 따라서 저장소 규칙과 달리 저장소 이벤트는 저장소 외부에 있는 값을 업데이트 하는 데 가장 유용 합니다. .NET 이벤트와 달리 저장소 이벤트 처리기는 클래스를 수신 하도록 등록 됩니다. 각 인스턴스에 대해 별도의 처리기를 등록할 필요가 없습니다. 변경 사항을 처리 하는 다양 한 방법 중에서 선택 하는 방법에 대 한 자세한 내용은 [변경 내용에 대 한 응답 및 전파](../modeling/responding-to-and-propagating-changes.md)를 참조 하세요.
 
  그래픽 화면 및 기타 사용자 인터페이스 컨트롤은 저장소 이벤트에서 처리할 수 있는 외부 리소스의 예입니다.
 
 ### <a name="to-define-a-store-event"></a>저장소 이벤트를 정의 하려면
 
-1. 모니터링할 이벤트 유형을 선택 합니다. 전체 목록은 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>의 속성을 참조 하세요. 각 속성은 이벤트의 형식에 해당 합니다. 가장 자주 사용 되는 이벤트 유형은 다음과 같습니다.
+1. 모니터링할 이벤트 유형을 선택 합니다. 전체 목록은의 속성을 참조 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> 하세요. 각 속성은 이벤트의 형식에 해당 합니다. 가장 자주 사용 되는 이벤트 유형은 다음과 같습니다.
 
    - `ElementAdded` – 모델 요소, 관계 링크, 셰이프 또는 연결선을 만들 때 트리거됩니다.
 
    - ElementPropertyChanged – `Normal` 도메인 속성 값이 변경 될 때 트리거됩니다. 이벤트는 새 값과 이전 값이 같지 않은 경우에만 트리거됩니다. 계산 된 저장소 속성 및 사용자 지정 저장소 속성에는 이벤트를 적용할 수 없습니다.
 
-        관계 링크에 해당 하는 역할 속성에는 적용할 수 없습니다. 대신 `ElementAdded`를 사용 하 여 도메인 관계를 모니터링 합니다.
+        관계 링크에 해당 하는 역할 속성에는 적용할 수 없습니다. 대신를 사용 `ElementAdded` 하 여 도메인 관계를 모니터링 합니다.
 
-   - `ElementDeleted` – 모델 요소, 관계, 모양 또는 커넥터가 삭제 된 후에 트리거됩니다. 요소의 속성 값에 계속 액세스할 수 있지만 다른 요소와의 관계는 없습니다.
+   - `ElementDeleted` – 모델 요소, 관계, 모양 또는 연결선을 삭제 한 후에 트리거됩니다. 요소의 속성 값에 계속 액세스할 수 있지만 다른 요소와의 관계는 없습니다.
 
 2. **Dslpackage** 프로젝트의 별도 코드 파일에 _dsl_**docdata** 에 대 한 부분 클래스 정의를 추가 합니다.
 
-3. 다음 예제와 같이 이벤트의 코드를 메서드로 작성 합니다. `DocData`에 액세스 하려는 경우를 제외 하 고 `static`수 있습니다.
+3. 다음 예제와 같이 이벤트의 코드를 메서드로 작성 합니다. 에 액세스 하려는 경우가 아니면이는 일 수 있습니다 `static` `DocData` .
 
-4. 처리기를 등록 하려면 `OnDocumentLoaded()`를 재정의 합니다. 둘 이상의 처리기가 있는 경우 모두 동일한 장소에 등록할 수 있습니다.
+4. `OnDocumentLoaded()`처리기를 등록 하려면를 재정의 합니다. 둘 이상의 처리기가 있는 경우 모두 동일한 장소에 등록할 수 있습니다.
 
-   등록 코드의 위치는 중요 하지 않습니다. `DocView.LoadView()`는 대체 위치입니다.
+   등록 코드의 위치는 중요 하지 않습니다. `DocView.LoadView()` 는 대체 위치입니다.
 
 ```
 using System;
@@ -166,9 +166,9 @@ private static void AlbumTitleAdjuster(object sender,
 
  저장소를 업데이트 하는 이벤트를 작성 하는 경우:
 
-- 실행 취소의 모델 요소를 변경 하지 않으려면 `store.InUndoRedoOrRollback`를 사용 합니다. 트랜잭션 관리자는 저장소의 모든 항목을 원래 상태로 다시 설정 합니다.
+- `store.InUndoRedoOrRollback`실행 취소의 모델 요소를 변경 하지 않으려면를 사용 합니다. 트랜잭션 관리자는 저장소의 모든 항목을 원래 상태로 다시 설정 합니다.
 
-- 모델을 파일에서 로드 하는 동안 변경 하지 않으려면 `store.InSerializationTransaction`를 사용 합니다.
+- `store.InSerializationTransaction`를 사용 하 여 모델을 파일에서 로드 하는 동안 변경 하지 않도록 합니다.
 
 - 변경 내용으로 인해 추가 이벤트가 트리거됩니다. 무한 루프가 발생 하지 않도록 하십시오.
 
@@ -189,5 +189,5 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [변경 내용에 대한 대응 및 전파](../modeling/responding-to-and-propagating-changes.md)

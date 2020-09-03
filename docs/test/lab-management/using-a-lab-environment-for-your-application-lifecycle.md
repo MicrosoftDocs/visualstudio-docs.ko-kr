@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88144690"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
