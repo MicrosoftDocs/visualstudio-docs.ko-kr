@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
+title: 'IDiaSession:: findInlineeLinesByAddr | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b35850367ef4bcc4e49cc3d6e76b41a2e9f4cd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151701"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-클라이언트가 모든 없는 함수를 인라인을 직접 또는 간접적으로 지정 된 부모 기호는 줄 번호 정보를 반복 하는 데 사용 하는 지정 된 주소 범위 내에 포함 된 열거자를 검색 합니다.  
+클라이언트에서 지정 된 부모 기호를 사용 하 여 직접 또는 간접적으로 인라인, 지정 된 주소 범위 내에 포함 된 모든 함수의 줄 번호 정보를 반복할 수 있도록 하는 열거형을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,22 +34,22 @@ HRESULT findInlineeLinesByAddr ( 
   
 #### <a name="parameters"></a>매개 변수  
  `parent`  
- [in] `IDiaSymbol` 부모를 나타내는 개체입니다.  
+ 진행 `IDiaSymbol` 부모를 나타내는 개체입니다.  
   
  `isect`  
- [in] 주소 섹션 구성 요소를 지정합니다.  
+ 진행 주소의 섹션 구성 요소를 지정 합니다.  
   
  `offset`  
- [in] 주소의 오프셋된 구성 요소를 지정합니다.  
+ 진행 주소의 오프셋 구성 요소를 지정 합니다.  
   
  `length`  
- [in] 이 쿼리를 처리 하기 위해 바이트 수의 주소 범위를 지정 합니다.  
+ 진행 이 쿼리를 포함 하는 주소 범위 (바이트 수)를 지정 합니다.  
   
  `ppResult`  
- [out] 보유 한 `IDiaEnumLineNumbers` 검색 되는 줄 번호의 목록을 포함 하는 개체입니다.  
+ 제한이 `IDiaEnumLineNumbers` 검색 되는 줄 번호 목록을 포함 하는 개체를 보유 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

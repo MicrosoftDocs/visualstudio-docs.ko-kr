@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691190"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>디버깅 오류 및 경고 대화 상자
@@ -57,7 +57,7 @@ ms.locfileid: "65691190"
   
  [머신에 연결할 수 없음](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ ‘오류:[ 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>관련 단원  
  [스크립트 및 웹 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  

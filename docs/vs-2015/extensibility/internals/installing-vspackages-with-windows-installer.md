@@ -12,53 +12,53 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35942f6babf18967e11f268ef0412acb4cc8edf7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687473"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 설치
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-VSPackage에 통합 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 것 이상의 사용자의 컴퓨터에 파일을 복사 해야 합니다. VSPackage의 설치 관리자 VSPackage 및 해당 종속 파일을 설치 및 등록 하며 통합 해야 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. VSPackage에서 아이콘을 표시 하는 등 통합 기능을 활용을 걸릴 수 있습니다는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 화면 및에 대 한 대화 상자를 시작 합니다.  
+VSPackage를에 통합 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 하려면 사용자의 컴퓨터에 파일을 복사 하는 것 외에 더 많은 작업이 필요 합니다. VSPackage의 설치 관리자가 VSPackage와 종속 파일을 설치 하 고에 등록 하 여 통합 해야 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . VSPackage는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 시작 화면 및 정보 대화 상자에 아이콘을 표시 하는 등의 통합 기능을 활용할 수 있습니다.  
   
- Microsoft Windows Installer 파일에 Vspackage를 배포 하는 방법이 권장된 됩니다. 사용 하기 쉬운 Windows Installer 패키지에서 지 원하는 Windows 운영 체제에서 실행할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 자세한 내용은 [Windows Installer](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)합니다.  
+ Microsoft Windows Installer 파일은 Vspackage를 배포 하는 데 권장 되는 방법입니다. 사용 하기 쉬운 Windows Installer 패키지는에서 지원 되는 모든 Windows 운영 체제에서 실행할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . 자세한 내용은 [Windows Installer](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)를 참조 하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Windows Installer 기본 사항](../../extensibility/internals/windows-installer-basics.md)  
- Windows Installer에 간략하게 설명 합니다.  
+ Windows Installer에 대 한 개요를 제공 합니다.  
   
  [VSPackage 설치 시나리오](../../extensibility/internals/vspackage-setup-scenarios.md)  
- 모두에 Vspackage의 side-by-side-설치를 지원할 수 있는 다양 한 방법을 설명 하 고 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]입니다.  
+ Vspackage 및의 병렬 설치를 지원할 수 있는 여러 가지 방법을 설명 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
  [Windows Installer 패키지 작성](../../extensibility/internals/authoring-a-windows-installer-package.md)  
- 설치 관리자에 따라 올바르게 설치 하 고 Vspackage를 통합 하는 일반적인 단계에 간략하게 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
+ 설치 관리자가 Vspackage을 올바르게 설치 하 고 통합 하기 위해 수행 하는 일반적인 단계에 대 한 개요를 제공 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 합니다.  
   
  [시스템 요구 사항 검색](../../extensibility/internals/detecting-system-requirements.md)  
- 설치 관리자를 검색할 수 있습니다 하는 방법을 설명 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage 요구 사항에 맞지 않으면 구성 요소와 취소를 설정 합니다.  
+ 설치 관리자가 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage 요구 사항이 충족 되지 않은 경우 설치 프로그램에서 해당 구성 요소를 검색 하 고 설치를 취소 하는 방법을 설명 합니다.  
   
  [구성 요소 관리](../../extensibility/internals/component-management.md)  
- 이전 제품 버전의 무결성이 유지 되도록 하는 설치 관리자를 개발 하는 방법에 설명 합니다.  
+ 이전 제품 버전의 무결성을 유지 하는 설치 관리자를 개발 하는 방법을 설명 합니다.  
   
  [VSPackage용 설치 디렉터리 선택](../../extensibility/internals/choosing-the-installation-directory-for-a-vspackage.md)  
  Vspackage를 찾기 위한 옵션을 요약 합니다.  
   
  [VSPackage 등록](../../extensibility/internals/vspackage-registration.md)  
- 설치 시 Vspackage는 등록 하는 방법을 설명 하 고 자동으로 등록 하는 이유는 않는 것이 좋습니다.  
+ 설치 시 Vspackage를 등록 하는 방법과 자체 등록이 잘못 된 이유를 설명 합니다.  
   
  [프로젝트 형식 배포](../../extensibility/internals/deploying-project-types.md)  
- 관리 코드 프로젝트 형식에 대 한 새 프로젝트 형식 집계를 사용 하는 방법에 설명 합니다.  
+ 관리 코드 프로젝트 형식에 새 프로젝트 형식 집계를 사용 하는 방법을 설명 합니다.  
   
- [방법: 설치 관리자의 레지스트리 정보 생성](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
- RegPkg.exe를 사용 하 여 관리 되는 VSPackage에 대 한 등록 매니페스트를 생성 하는 방법에 설명 합니다.  
+ [방법: 설치 관리자에 대한 레지스트리 정보 생성](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ RegPkg.exe를 사용 하 여 관리 되는 VSPackage 등록 매니페스트를 생성 하는 방법을 설명 합니다.  
   
  [설치 후 실행해야 하는 명령](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  
- 설치 후에 Vspackage를 통합 하는 명령을 실행 하는 방법에 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
+ 설치 후 명령을 실행 하 여 Vspackage를에 통합 하는 방법을 설명 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
  [Windows Installer를 사용하여 VSPackage 제거](../../extensibility/internals/uninstalling-a-vspackage-with-windows-installer.md)  
- 설치 관리자는 사용자가 VSPackage를 제거할 때 수행 해야 하는 단계를 설명 합니다.  
+ 사용자가 VSPackage를 제거 하는 경우 설치 관리자가 수행 해야 하는 단계를 설명 합니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 섹션  
  [VSPackage 설치](../../misc/installing-vspackages.md)  
- Vspackage를 빌드 및 설치 하는 방법 및 여러 버전을 실행 하는 사용자를 지 원하는 방법에 설명의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동시에 합니다.
+ Vspackage를 빌드 및 설치 하는 방법과 여러 버전의를 동시에 실행 하는 사용자를 지 원하는 방법을 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 합니다.

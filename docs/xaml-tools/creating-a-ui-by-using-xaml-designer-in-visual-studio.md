@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507965"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML 디자이너를 사용하여 UI 만들기
@@ -162,7 +162,7 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 속성 사용 및 이벤트 처리에 대한 자세한 내용은 [컨트롤 및 패턴 소개](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [XAML 디자이너의 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [방법: 리소스 만들기 및 적용](../xaml-tools/how-to-create-and-apply-a-resource.md)

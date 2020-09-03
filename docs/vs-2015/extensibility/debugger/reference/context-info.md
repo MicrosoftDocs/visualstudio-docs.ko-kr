@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4e8c1b438cd2fa2721e81f055695e5836c26d12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179947"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
+# <a name="context_info"></a>CONTEXT_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 구조는 메모리 컨텍스트 또는 코드 컨텍스트를 설명합니다.  
+이 구조는 메모리 컨텍스트 또는 코드 컨텍스트를 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,7 +52,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>멤버  
  dwFields  
- 그의 플래그의 조합을 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 채워진 필드를 지정 하는 열거형<strong>합니다.</strong>  
+ 채울 필드를 지정 하는 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 열거형의 플래그 조합입니다<strong>.</strong>  
   
  bstrModuleUrl  
  컨텍스트가 있는 모듈의 이름입니다.  
@@ -61,30 +61,30 @@ public struct CONTEXT_INFO {
  컨텍스트가 있는 함수 이름입니다.  
   
  posFunctionOffset  
- A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 코드 컨텍스트와 연결 된 함수의 줄 및 열 오프셋을 식별 하는 구조입니다.  
+ 코드 컨텍스트와 연결 된 함수의 줄 및 열 오프셋을 식별 하는 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조체입니다.  
   
  bstrAddress  
- 지정된 된 컨텍스트 위치한 코드 주소입니다.  
+ 지정 된 컨텍스트가 있는 코드의 주소입니다.  
   
  bstrAddressOffset  
- 지정된 된 컨텍스트 위치한 코드에서 주소의 오프셋입니다.  
+ 지정 된 컨텍스트가 있는 코드에서 주소의 오프셋입니다.  
   
  bstrAddressAbsolute  
  지정 된 컨텍스트가 있는 메모리의 절대 주소입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 대 한 호출에서 반환 되는 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 메서드.  
+ 이 구조체는 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 메서드에 대 한 호출에서 반환 됩니다.  
   
- 이 구조에 대 한 일반적인 용도 지 원하는 것을 **메모리** 디버그 창입니다.  
+ 이 구조체의 일반적인 용도는 **메모리** 디버그 창을 지 원하는 것입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)   
  [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   

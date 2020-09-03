@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbfa24733644067b3f79fc7b6e8450df2130116d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179956"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-검색할 메모리 컨텍스트에 대 한 정보를 지정 합니다.  
+메모리 컨텍스트 관련 정보를 검색할 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,34 +53,34 @@ public enum enum_CONTEXT_INFO_FIELDS {
   
 ## <a name="members"></a>멤버  
  CIF_MODULEURL  
- 초기화/사용 된 `bstrModuleUrl` 필드를 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조입니다.  
+ `bstrModuleUrl` [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조체의 필드를 초기화/사용 합니다.  
   
  CIF_FUNCTION  
- 초기화/사용 된 `bstrFunction` 필드는 `CONTEXT_INFO` 구조입니다.  
+ `bstrFunction`구조체의 필드를 초기화/사용 `CONTEXT_INFO` 합니다.  
   
  CIF_FUNCTIONOFFSET  
- 초기화/사용 된 `posFunctionOffset` 필드는 `CONTEXT_INFO` 구조입니다.  
+ `posFunctionOffset`구조체의 필드를 초기화/사용 `CONTEXT_INFO` 합니다.  
   
  CIF_ADDRESS  
- 초기화/사용 된 `bstrAddress` 필드는 `CONTEXT_INFO` 구조입니다.  
+ `bstrAddress`구조체의 필드를 초기화/사용 `CONTEXT_INFO` 합니다.  
   
  CIF_ADDRESSOFFSET  
- 초기화/사용 된 `bstrAddressOffset` 필드는 `CONTEXT_INFO` 구조입니다.  
+ `bstrAddressOffset`구조체의 필드를 초기화/사용 `CONTEXT_INFO` 합니다.  
   
  CIF_ALLFIELDS  
- 초기화/사용의 모든 필드는 `CONTEXT_INFO` 구조입니다.  
+ 구조체의 모든 필드를 초기화/사용 `CONTEXT_INFO` 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값을 매개 변수를 전달 됩니다는 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 의 필드를 나타내려면 메서드는 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조는 초기화할 합니다.  
+ 이러한 값은 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 메서드에 매개 변수를 전달 하 여 초기화할 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조체의 필드를 표시 합니다.  
   
- 이러한 플래그는의 필드를 나타내는 데도 `CONTEXT_INFO` 구조는 유효 하 고 사용 되는 반환 하는 경우.  
+ 이러한 플래그는 구조체가 반환 될 때 사용 되는 구조체의 필드 및 유효한 필드를 표시 하는 데도 사용 됩니다 `CONTEXT_INFO` .  
   
- 비트 OR 연산자를 사용 하 여 이러한 값을 결합할 수 있습니다.  
+ 이러한 값은 비트 or와 함께 사용할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

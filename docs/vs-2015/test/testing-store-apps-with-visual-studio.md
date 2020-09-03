@@ -9,10 +9,10 @@ caps.latest.revision: 22
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6deffcf9ab5c2d13c3f97097a4c70eaef7803ccd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543795"
 ---
 # <a name="testing-store-apps-with-visual-studio"></a>Visual Studio로 스토어 앱 테스트

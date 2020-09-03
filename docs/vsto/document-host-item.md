@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253703"
 ---
 # <a name="document-host-item"></a>문서 호스트 항목
@@ -40,14 +40,14 @@ ms.locfileid: "71253703"
 ### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>문서 수준 프로젝트의 문서 호스트 항목에 대 한 제한 사항
  문서 수준의 프로젝트에는 하나의 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목(즉, `ThisDocument` 클래스)만 포함할 수 있습니다. 문서 수준 사용자 지정에서는 디자인 타임에 새 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 프로젝트에 추가할 수 없고 런타임에 새 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 만들 수 없습니다.
 
- 런타임에 새 Word 문서를 만드는 경우 <xref:Microsoft.Office.Interop.Word.Document>형식이 됩니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 문서를 만드는 [방법에 대 한 자세한 내용은 방법: 프로그래밍 방식으로 새](../vsto/how-to-programmatically-create-new-documents.md)문서를 만듭니다.
+ 런타임에 새 Word 문서를 만드는 경우 <xref:Microsoft.Office.Interop.Word.Document>형식이 됩니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 문서를 만드는 방법에 대 한 자세한 내용은 [방법: 프로그래밍 방식으로 새 문서 만들기](../vsto/how-to-programmatically-create-new-documents.md)를 참조 하세요.
 
 ## <a name="understand-document-host-items-in-application-level-projects"></a>응용 프로그램 수준 프로젝트의 문서 호스트 항목 이해
  VSTO 추가 기능 프로젝트에서는 런타임에 Word에서 열리는 문서에 대한 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 생성할 수 있습니다. <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 사용하여 연결된 문서에 컨트롤을 추가하거나 <xref:Microsoft.Office.Interop.Word.Document> 개체에서 사용할 수 없는 이벤트를 처리할 수 있습니다.
 
  <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 생성하려면 `GetVstoObject` 메서드를 사용합니다. 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)

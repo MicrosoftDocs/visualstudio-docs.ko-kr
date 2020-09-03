@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180496"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 사용률 그래프
@@ -35,6 +35,6 @@ CPU 사용률 그래프에서는 시간 경과에 따른 응용 프로그램의 
   
 - 흰색은 시스템에서 사용되지 않는 논리 코어의 가용성을 나타냅니다. 병렬 처리의 기회가 더 많이 있는 경우 해당 코어를 프로세스에 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [사용률 뷰](../profiling/utilization-view.md)   
  [평균 CPU 사용률](../profiling/average-cpu-utilization.md)

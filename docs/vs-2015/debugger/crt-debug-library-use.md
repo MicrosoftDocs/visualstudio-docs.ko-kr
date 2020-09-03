@@ -31,16 +31,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7e14a181b432dede3f00a4465d40154fdb393bb0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697853"
 ---
 # <a name="crt-debug-library-use"></a>CRT 디버그 라이브러리 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디버그 라이브러리 중 하나를 사용 하려면 사용 하 여 연결 해야 합니다 [디버그](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) 컴파일하여 **/MDd**를 **/MTd**, 또는 **/LDd**합니다.  
+C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디버그 라이브러리 중 하나를 사용하려면 [/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)로 연결하고 **/MDd**, **/MTd** 또는 **/LDd**로 컴파일해야 합니다.  
   
 ## <a name="remarks"></a>설명  
  CRT 디버깅의 주요 정의와 매크로는 CRTDBG.h 헤더 파일에 포함되어 있습니다.  
@@ -51,6 +51,6 @@ C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디�
   
  사용할 수 있는 런타임 라이브러리에 대한 자세한 내용은 [C 런타임 라이브러리](https://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md)   
  [/MD, /MT, /LD(런타임 라이브러리 사용)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)

@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bab5b86856029615231d908f1e523bb3d42583aa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662620"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>클래스 및 기타 형식 사용(클래스 디자이너)
@@ -37,7 +37,7 @@ ms.locfileid: "72662620"
 
 Visual Studio의 클래스 디자이너를 사용하여 중요한 클래스와 형식을 만들고 편집하면 해당 클래스와 형식에 보다 쉽게 집중할 수 있습니다. 클래스 다이어그램을 사용하면 Visual C# .NET, Visual Basic .NET 또는 C++ 코드를 보다 자세하게 확인하면서 작업할 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [클래스 다이어그램 사용(클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md)
 
  [클래스 및 형식 디자인(클래스 디자이너)](../ide/designing-classes-and-types-class-designer.md)
@@ -46,6 +46,6 @@ Visual Studio의 클래스 디자이너를 사용하여 중요한 클래스와 �
 
  [클래스 및 형식 리팩터링(클래스 디자이너)](../ide/refactoring-classes-and-types-class-designer.md)
 
- [Visual C++ 코드 작업(클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md)
+ [Visual C++ 코드 사용(클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md)
 
- [클래스 디자이너 오류에 대한 추가 정보](../ide/additional-information-about-class-designer-errors.md)
+ [클래스 디자이너 오류에 대 한 추가 정보](../ide/additional-information-about-class-designer-errors.md)

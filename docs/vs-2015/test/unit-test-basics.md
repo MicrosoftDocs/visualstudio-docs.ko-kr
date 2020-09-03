@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543782"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
@@ -40,9 +40,9 @@ ms.locfileid: "85543782"
 
 - [테스트 실행 및 보기](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>단위 테스트 개요
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> 단위 테스트 개요
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>빠른 시작
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> 빠른 시작
  코딩으로 직접 이동하는 단위 테스트에 대한 설명을 보려면 다음 항목 중 하나를 참조하세요.
 
 - [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ ms.locfileid: "85543782"
 
 - [테스트 탐색기를 사용하여 네이티브 코드 단위 테스트](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>MyBank 솔루션 예제
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> MyBank 솔루션 예제
  이 항목에서는 `MyBank` 라는 가상의 애플리케이션 개발이 예제로 사용됩니다. 이 항목의 설명을 이해하는 데에는 실제 코드가 필요하지 않습니다. 테스트 메서드는 C#으로 작성되고 관리 코드에 대한 Microsoft 단위 테스트 프레임워크를 사용하여 제공됩니다. 하지만 이러한 개념은 다른 언어 및 프레임워크에서도 쉽게 적용할 수 있습니다.
 
  ![MyBank 솔루션](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -92,7 +92,7 @@ public void Withdraw(double amount)
 
  이제 코드가 작성되었으므로 테스트할 시간입니다.
 
-## <a name="create-unit-test-projects-and-test-methods"></a><a name="BKMK_Creating_the_unit_test_projects"></a>단위 테스트 프로젝트 및 테스트 메서드 만들기
+## <a name="create-unit-test-projects-and-test-methods"></a><a name="BKMK_Creating_the_unit_test_projects"></a> 단위 테스트 프로젝트 및 테스트 메서드 만들기
  코드에서 단위 테스트 프로젝트와 단위 테스트 스텁을 생성하는 것이 더 빠를 수 있습니다. 또는 요구 사항에 따라 단위 테스트 프로젝트 및 테스트를 수동으로 만들도록 선택할 수 있습니다.
 
  **단위 테스트 프로젝트 및 단위 테스트 스텁 생성**
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - `CheckingAccountTests` 클래스는 `CheckingAccount` 클래스에 대한 단위 테스트 메서드가 포함됩니다.
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>테스트 작성
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> 테스트 작성
  사용 중인 단위 테스트 프레임워크 및 Visual Studio IntelliSense에서는 코드 프로젝트에 대해 단위 테스트에 대한 코드를 작성하는 방법이 안내됩니다. 테스트 탐색기에서 실행할 수 있으려면, 대부분의 프레임워크의 경우, 단위 테스트 메서드를 식별할 수 있는 특정 특성을 추가해야 합니다. 프레임워크는 또한 일반적으로 어설션 문 또는 메서드 특성을 통해 테스트 메서드가 통과 또는 실패했는지 여부를 나타내는 방법을 제공합니다. 다른 특성들은 클래스 초기화 시에 그리고 각 테스트 메서드 이전에 사용되는 선택적인 설정 메서드와 각 테스트 메서드 다음에 그리고 클래스가 삭제되기 전에 실행되는 해체 메서드를 식별합니다.
 
  AAA(정렬, 동작, 어설션) 패턴은 테스트 중인 메서드에 대한 단위 테스트를 작성하는 일반적인 방법입니다.
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>테스트 탐색기에서 테스트 실행
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> 테스트 탐색기에서 테스트 실행
  테스트 프로젝트를 빌드하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows**를 선택한 다음 **테스트 탐색기**를 선택합니다.
 
  ![단위 테스트 탐색기](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,7 +226,7 @@ public void My_Test ()
 
  또한 어떤 보기에서든 전역 수준에서 검색 상자에 텍스트를 입력하거나 미리 정의된 필터 중 하나를 선택하여 테스트를 필터링할 수 있습니다. 언제든지 원하는 테스트를 선택해서 실행할 수 있습니다. 테스트 실행 결과는 탐색기 창 맨 위에 있는 통과/실패 표시줄에 즉시 표시됩니다. 테스트를 선택하면 테스트 메서드 결과에 대한 세부 정보가 표시됩니다.
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>테스트 실행 및 보기
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> 테스트 실행 및 보기
  테스트 탐색기 도구 모음을 사용하면 원하는 테스트를 검색, 구성 및 실행할 수 있습니다.
 
  ![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/ute-toolbar.png "UTE_ToolBar")
@@ -235,7 +235,7 @@ public void My_Test ()
 
  개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-작음") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a>각 빌드 후 테스트 실행
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a> 각 빌드 후 테스트 실행
 
 > [!WARNING]
 > 각 빌드 후 단위 테스트 실행은 Visual Studio Enterprise에서만 지원됩니다.
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|
 |![빌드 후 실행](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|각 로컬 빌드 후 단위 테스트를 실행하려면 표준 메뉴에서 **테스트**를 선택하고 테스트 탐색기 도구 모음에서 **빌드 후 테스트 실행** 을 선택합니다.|
 
-### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>테스트 목록 필터링 및 그룹화
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> 테스트 목록 필터링 및 그룹화
  많은 수의 테스트가 있으면 테스트 탐색기 검색 상자에 입력하여 지정된 문자열로 목록을 필터링할 수 있습니다. 필터 목록에서 선택하여 필터 이벤트를 더 제한할 수 있습니다.
 
  ![검색 필터 범주](../test/media/ute-searchfilter.png "UTE_SearchFilter")

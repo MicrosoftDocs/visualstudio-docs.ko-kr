@@ -1,5 +1,5 @@
 ---
-title: '방법: 코드 변경을 중지 | Microsoft Docs'
+title: '방법: 코드 변경 중지 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690053"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
@@ -43,6 +43,6 @@ ms.locfileid: "65690053"
   
   이 옵션을 선택하면 코드 변경 내용이 커밋되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [편집하며 계속하기](../debugger/edit-and-continue.md)   
+## <a name="see-also"></a>관련 항목  
+ [편집 하며 계속 하기](../debugger/edit-and-continue.md)   
  [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

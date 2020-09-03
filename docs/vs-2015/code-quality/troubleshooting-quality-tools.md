@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c48c2bad3594e716a363ff932bd041d27bca528
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662497"
 ---
 # <a name="troubleshooting-quality-tools"></a>품질 도구 문제 해결
@@ -23,7 +23,7 @@ ms.locfileid: "72662497"
 
 Visual Studio 품질 도구를 실행할 때 문제가 발생하면 이 섹션의 항목을 통해 문제를 진단하고 해결할 수 있습니다.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>섹션 내용
  [코드 분석 문제 해결](../code-quality/troubleshooting-code-analysis-issues.md)
 
  [코드 메트릭 문제 해결](../code-quality/troubleshooting-code-metrics-issues.md)

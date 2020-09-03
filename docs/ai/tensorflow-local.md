@@ -12,10 +12,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80638751"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>로컬로 tensorflow 모델 학습

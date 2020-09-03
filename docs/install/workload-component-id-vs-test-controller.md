@@ -17,10 +17,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
 ms.openlocfilehash: a4b040246e88bb39de9e6560f2d5c6cc0d487b1c
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805660"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller 구성 요소 디렉터리

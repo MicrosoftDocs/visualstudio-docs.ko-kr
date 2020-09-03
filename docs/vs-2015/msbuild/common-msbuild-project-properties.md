@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698716"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
@@ -42,7 +42,7 @@ ms.locfileid: "65698716"
 |ALToolPath|AL.exe를 찾을 수 있는 경로입니다. 이 속성은 다른 버전의 AL.exe를 사용으로 설정하기 위해 현재 버전을 재정의합니다.|  
 |ApplicationIcon|Win32 아이콘으로 포함하기 위해 컴파일러에 전달할 .ico 아이콘 파일입니다. 이 속성은 `/win32icon` 컴파일러 스위치와 동일합니다.|  
 |ApplicationManifest|외부 UAC(사용자 계정 컨트롤) 매니페스트 정보를 생성하는 데 사용되는 파일의 경로를 지정합니다. [!INCLUDE[windowsver](../includes/windowsver-md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다.<br /><br /> 대부분의 경우 매니페스트는 포함되어 있지만 등록이 필요 없는 COM 또는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포를 사용할 경우 매니페스트가 애플리케이션 어셈블리와 함께 설치되는 외부 파일일 수 있습니다. 자세한 내용은 이 항목에서 NoWin32Manifest 속성을 참조하십시오.|  
-|AssemblyOriginatorKeyFile|어셈블리를 서명하는 데 사용되는 파일(.snk 또는 .pfx) 및 [ResolveKeySource 작업](../msbuild/resolvekeysource-task.md)으로 전달되어 어셈블리를 서명하는 데 사용되는 실제 키를 생성하는 파일을 지정합니다.|  
+|AssemblyOriginatorKeyFile|어셈블리에 서명 하는 데 사용 되는 파일 (.snk 또는 .pfx)을 지정 합니다 .이 파일은 어셈블리에 서명 하는 데 사용 되는 실제 키를 생성 하기 위해 [Resolvekeysource 작업](../msbuild/resolvekeysource-task.md) 으로 전달 됩니다.|  
 |AssemblySearchPaths|빌드 시간 참조 어셈블리 확인 동안 검색할 위치의 목록입니다. 앞에 있는 경로가 뒤에 있는 항목보다 우선하므로 이 목록에 경로가 표시되는 순서는 중요합니다.|  
 |AssemblyName|프로젝트가 빌드된 후의 마지막 출력 어셈블리 이름입니다.|  
 |BaseAddress|주 출력 어셈블리의 기준 주소를 지정합니다. 이 속성은 `/baseaddress` 컴파일러 스위치와 동일합니다.|  
@@ -53,10 +53,10 @@ ms.locfileid: "65698716"
 |CleanFile|"정리 캐시"로 사용할 파일의 이름입니다. 정리 캐시는 생성 파일 중 정리 작업 시 삭제할 파일의 목록입니다. 이 파일은 빌드 프로세스에 의해 중간 출력 경로에 저장됩니다.<br /><br /> 이 속성은 경로 정보가 없는 파일 이름만 지정합니다.|  
 |CodePage|컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다. 이 속성은 `/codepage` 컴파일러 스위치와 동일합니다.|  
 |CompilerResponseFile|컴파일러 작업에 전달할 수 있는 선택적 지시 파일입니다.|  
-|구성|빌드하고 있는 구성으로, "디버그" 또는 "릴리스"입니다.|  
+|Configuration|빌드하고 있는 구성으로, "디버그" 또는 "릴리스"입니다.|  
 |CscToolPath|[!INCLUDE[csprcs](../includes/csprcs-md.md)] 컴파일러인 csc.exe의 경로입니다.|  
 |CustomBeforeMicrosoftCommonTargets|공통 대상을 가져오기 전에 자동으로 가져올 프로젝트 파일 또는 대상 파일의 이름입니다.|  
-|DebugSymbols|빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **/p:DebugSymbols=false**를 설정하면 프로그램 데이터베이스(.pdb) 기호 파일이 생성되지 않습니다.|  
+|DebugSymbols|빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **/p: debugsymbols = false** 를 설정 하면 프로그램 데이터베이스 (.pdb) 기호 파일이 생성 되지 않습니다.|  
 |DefineConstants|조건부 컴파일러 상수를 정의합니다. 기호/값 쌍은 세미콜론으로 구분되고 다음 구문을 사용하여 지정됩니다.<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> 이 속성은 `/define` 컴파일러 스위치와 동일합니다.|  
 |DefineDebug|DEBUG 상수를 정의할지 여부를 나타내는 부울 값입니다.|  
 |DefineTrace|TRACE 상수를 정의할지 여부를 나타내는 부울 값입니다.|  
@@ -66,7 +66,7 @@ ms.locfileid: "65698716"
 |DisableFastUpToDateCheck|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에만 적용되는 부울 값입니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 빌드 관리자는 FastUpToDateCheck 프로세스를 사용하여 프로젝트를 최신 상태로 다시 빌드해야 하는지 여부를 확인합니다. 확인할 때 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 사용하는 것보다 이 프로세스가 더 빠릅니다. DisableFastUpToDateCheck 속성을 `true`로 설정하면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 빌드 관리자를 사용하지 않고 대신 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 사용하여 프로젝트가 최신 상태인지 여부를 확인할 수 있습니다.|  
 |DocumentationFile|XML 문서 파일로 생성된 파일의 이름입니다. 이 이름에는 파일 이름만 포함되고 경로 정보는 포함되지 않습니다.|  
 |ErrorReport|컴파일러 작업에서 내부 컴파일러 오류를 보고하는 방식을 지정합니다. 유효한 값은 "prompt", "send" 또는 "none"입니다. 이 속성은 `/errorreport` 컴파일러 스위치와 동일합니다.|  
-|ExcludeDeploymentUrl|[GenerateDeploymentManifest 작업](../msbuild/generatedeploymentmanifest-task.md)에서는 프로젝트 파일에 다음 요소가 하나라도 포함된 경우 배포 매니페스트에 deploymentProvider 태그를 추가합니다.<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 그러나 ExcludeDeploymentUrl을 사용하면 위의 URL이 지정되더라도 deploymentProvider 태그가 배포 매니페스트에 추가되지 않습니다. 이렇게 하려면 프로젝트 파일에 다음 속성을 추가합니다.<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **참고:** ExcludeDeploymentUrl은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에 노출되지 않으며 프로젝트 파일을 수동으로만 편집하여 설정할 수 있습니다. 이 속성을 설정해도 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내의 게시에는 영향을 주지 않습니다. 즉, deploymentProvider 태그는 PublishUrl로 지정된 URL에 계속 추가됩니다.|  
+|ExcludeDeploymentUrl|프로젝트 파일에 다음 요소가 포함 되어 있으면 [Generatedeploymentmanifest 작업](../msbuild/generatedeploymentmanifest-task.md) 에서 배포 매니페스트에 deploymentProvider 태그를 추가 합니다.<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 그러나 ExcludeDeploymentUrl을 사용하면 위의 URL이 지정되더라도 deploymentProvider 태그가 배포 매니페스트에 추가되지 않습니다. 이렇게 하려면 프로젝트 파일에 다음 속성을 추가합니다.<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`**참고:**  ExcludeDeploymentUrl은 IDE에 노출 되지 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 않으며 프로젝트 파일을 수동으로 편집 해야만 설정할 수 있습니다. 이 속성을 설정해도 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내의 게시에는 영향을 주지 않습니다. 즉, deploymentProvider 태그는 PublishUrl로 지정된 URL에 계속 추가됩니다.|  
 |FileAlignment|출력 파일의 섹션에 맞출 위치(바이트)를 지정합니다. 올바른 값은 512, 1024, 2048, 4096, 8192입니다. 이 속성은 `/filealignment` 컴파일러 스위치와 동일합니다.|  
 |FrameworkPathOverride|mscorlib.dll 및 microsoft.visualbasic.dll의 위치를 지정합니다. 이 매개 변수는 vbc.exe 컴파일러의 `/sdkpath` 스위치와 동일합니다.|  
 |GenerateDocumentation|빌드 시 문서의 생성 여부를 나타내는 부울 매개 변수입니다. `true`이면 빌드 시 문서 정보를 생성하여 이 정보를 빌드 작업에서 만든 실행 파일이나 라이브러리의 이름과 함께 .xml 파일에 배치합니다.|  
@@ -114,7 +114,7 @@ ms.locfileid: "65698716"
 |Satellite_Version|위성 어셈블리의 버전 정보를 지정합니다.|  
 |Satellite_Win32Icon|위성 어셈블리에 .ico 아이콘 파일을 삽입합니다.|  
 |Satellite_Win32Resource|위성 어셈블리에 Win32 리소스(.res 파일)를 삽입합니다.|  
-|SubsystemVersion|생성된 실행 파일이 사용할 수 있는 하위 시스템의 최소 버전을 지정합니다. 이 속성은 `/subsystemversion` 컴파일러 스위치와 동일합니다. 이 속성의 기본값에 대한 자세한 내용은 [/subsystemversion(Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 또는 [/subsystemversion(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)을 참조하세요.|  
+|SubsystemVersion|생성된 실행 파일이 사용할 수 있는 하위 시스템의 최소 버전을 지정합니다. 이 속성은 `/subsystemversion` 컴파일러 스위치와 동일합니다. 이 속성의 기본값에 대 한 자세한 내용은 [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 또는 [/subsystemversion (c # 컴파일러 옵션)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)를 참조 하세요.|  
 |TargetCompactFramework|빌드하고 있는 애플리케이션을 실행하는 데 필요한 .NET Compact Framework의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다.|  
 |TargetFrameworkVersion|빌드하고 있는 애플리케이션을 실행하는 데 필요한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다.|  
 |TreatWarningsAsErrors|`true`이면 모든 경고가 오류로 처리되도록 하는 부울 매개 변수입니다. 이 매개 변수는 `/nowarn` 컴파일러 스위치와 동일합니다.|  
@@ -128,5 +128,5 @@ ms.locfileid: "65698716"
 |Win32Manifest|최종 어셈블리에 포함해야 하는 매니페스트 파일의 이름입니다. 이 매개 변수는 `/win32Manifest` 컴파일러 스위치와 동일합니다.|  
 |Win32Resource|최종 어셈블리에 포함할 Win32 리소스의 파일 이름입니다. 이 매개 변수는 `/win32resource` 컴파일러 스위치와 동일합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md)
