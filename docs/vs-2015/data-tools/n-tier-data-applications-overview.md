@@ -19,17 +19,17 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c8e0b0eb1c1016ac8e5351ff55df23b44d26824
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72658063"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426709"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 애플리케이션 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-N 계층 * 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 데이터 응용 프로그램입니다. "분산 응용 프로그램" 및 "다중 계층 응용 프로그램" 이라는 n 계층 응용 프로그램은 클라이언트와 서버 간에 분산 된 불연속 계층으로 처리를 분리 합니다. 데이터에 액세스 하는 응용 프로그램을 개발 하는 경우 응용 프로그램을 구성 하는 다양 한 계층을 명확 하 게 구분 해야 합니다.
+*N 계층* 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 데이터 응용 프로그램입니다. "분산 응용 프로그램" 및 "다중 계층 응용 프로그램" 이라는 n 계층 응용 프로그램은 클라이언트와 서버 간에 분산 된 불연속 계층으로 처리를 분리 합니다. 데이터에 액세스 하는 응용 프로그램을 개발 하는 경우 응용 프로그램을 구성 하는 다양 한 계층을 명확 하 게 구분 해야 합니다.
 
  일반적인 N 계층 애플리케이션에는 프레젠테이션 계층, 중간 계층 및 데이터 계층이 포함됩니다. N 계층 응용 프로그램에서 다양 한 계층을 분리 하는 가장 쉬운 방법은 응용 프로그램에 포함 하려는 각 계층에 대 한 불연속 프로젝트를 만드는 것입니다. 예를 들어 프레젠테이션 계층은 Windows Forms 응용 프로그램 일 수 있지만 데이터 액세스 논리는 중간 계층에 위치한 클래스 라이브러리 일 수 있습니다. 또한 프레젠테이션 계층은 서비스와 같은 서비스를 통해 중간 계층의 데이터 액세스 논리와 통신할 수 있습니다. 애플리케이션 구성 요소를 별도의 계층으로 분리하면 애플리케이션의 유지 관리성과 확장성이 높아집니다. 이렇게 하려면 전체 솔루션을 다시 디자인 해야 할 필요 없이 단일 계층에 적용할 수 있는 새로운 기술을 더 쉽게 채택할 수 있습니다. 또한 n 계층 응용 프로그램은 일반적으로 프레젠테이션 계층에서 격리를 유지 하는 중간 계층에 중요 한 정보를 저장 합니다.
 
@@ -89,5 +89,5 @@ N 계층 * 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 
 
  [LINQ to SQL을 사용한 N 계층 및 원격 애플리케이션](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참고 항목
  <xref:System.Data.Linq.ITable.Attach%2A>[연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [Hierarchical update](../data-tools/hierarchical-update.md) [visual studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) visual studio [에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)

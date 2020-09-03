@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 1776aebbe827295cbc7902f72417bc57e03a4196
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f207afc600402924969e4d2eee6df229c3d6f09
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280637"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426722"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 프로젝트 구성
 프로젝트 요구 사항에 따라 Azure 클라우드 서비스 프로젝트를 구성할 수 있습니다. 다음 범주에 대해 프로젝트 속성을 설정할 수 있습니다.
 
 - **Azure에 클라우드 서비스 게시** - Azure에 배포된 기존 클라우드 서비스가 실수로 삭제되지 않도록 속성을 설정할 수 있습니다.
-- **로컬 컴퓨터에서 클라우드 서비스 실행 또는 디버깅** - 사용할 서비스 구성을 선택하고 Azure Storage 에뮬레이터를 시작할 것인지를 선택할 수 있습니다.
+- **로컬 컴퓨터에서 클라우드 서비스 실행 또는 디버깅** -사용할 서비스 구성을 선택 하 고 Azure Storage 에뮬레이터를 시작할지 여부를 지정할 수 있습니다.
 - **생성된 클라우드 서비스 패키지 유효성 검사** - 클라우드 서비스 패키지가 문제 없이 배포되도록 모든 경고를 오류로 처리할 수 있습니다.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Azure 클라우드 서비스 프로젝트 구성 단계
@@ -36,7 +36,7 @@ ms.locfileid: "85280637"
 
 1. 클라우드 서비스를 로컬로 실행 또는 디버그할 때 사용할 서비스 구성을 지정하려면 원하는 **서비스 구성**을 선택합니다. 역할에 대한 서비스 구성을 수정하는 방법에 대한 자세한 내용은 [Visual Studio를 사용하여 Azure 클라우드 서비스에 대한 역할을 구성하는 방법](./vs-azure-tools-configure-roles-for-cloud-service.md)을 참조하세요.
 
-1. 클라우드 서비스를 로컬로 실행 또는 디버그할 경우 Azure Storage 에뮬레이터를 시작하려면 **Azure Storage 에뮬레이터 시작**을 **True**로 설정합니다.
+1. 클라우드 서비스를 로컬로 실행 하거나 디버그할 때 **시작 Azure Storage 에뮬레이터** 를 **True** 로 설정 하 여 Azure Storage 에뮬레이터를 시작 합니다.
 
 1. 패키지 유효성 검사 오류가 있을 경우 게시하지 않도록 하려면 **경고를 오류로 처리**를 **True**로 설정합니다.
 

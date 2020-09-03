@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911862"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426735"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
 Azure 클라우드 서비스 또는 가상 머신 문제를 해결해야 하는 경우 Visual Studio를 사용하여 Azure Diagnostics를 보다 쉽게 설정할 수 있습니다. 진단은 클라우드 서비스를 실행하는 가상 머신 및 가상 머신 인스턴스에서 시스템 데이터와 로깅 데이터를 캡처합니다. 진단 데이터는 사용자가 선택한 스토리지 계정으로 전송됩니다. Azure의 진단 로깅에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대해 진단 로깅 사용](/azure/app-service/web-sites-enable-diagnostic-log)을 참조하세요.
@@ -28,7 +28,7 @@ Azure Diagnostics를 설정하려면 다음 옵션 중 하나를 사용할 수 �
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Azure SDK 2.6 진단 변경
 다음 변경 내용은 Visual Studio의 Azure SDK 2.6 이상 프로젝트에 적용됩니다.
 
-* 이제 로컬 에뮬레이터에서 진단을 지원합니다. 따라서 Visual Studio에서 개발 및 테스트하는 동안 진단 데이터를 수집하고 애플리케이션에서 올바른 추적을 생성하고 있는지 확인할 수 있습니다. 연결 문자열 `UseDevelopmentStorage=true`는 Azure Storage 에뮬레이터를 사용하여 Visual Studio에서 클라우드 서비스 프로젝트를 실행하는 동안 진단 데이터 수집을 켭니다. 모든 진단 데이터는 개발 스토리지의 스토리지 계정에 수집됩니다.
+* 이제 로컬 에뮬레이터에서 진단을 지원합니다. 따라서 Visual Studio에서 개발 및 테스트하는 동안 진단 데이터를 수집하고 애플리케이션에서 올바른 추적을 생성하고 있는지 확인할 수 있습니다. 연결 문자열은 `UseDevelopmentStorage=true` Azure Storage 에뮬레이터를 사용 하 여 Visual Studio에서 클라우드 서비스 프로젝트를 실행 하는 동안 진단 데이터 수집을 설정 합니다. 모든 진단 데이터는 개발 스토리지의 스토리지 계정에 수집됩니다.
 * 진단 스토리지 계정 연결 문자열 `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString`은 서비스 구성(.cscfg) 파일에 저장됩니다. Azure SDK 2.5에서는 진단 스토리지 계정이 diagnostics.wadcfgx 파일에 지정됩니다.
 
 이 연결 문자열은 Azure SDK 2.6 이상과 Azure SDK 2.4 이하 버전에서 주요 작동 방식이 약간 다릅니다.
@@ -73,11 +73,11 @@ Visual Studio에서는 배포하기 전에 에뮬레이터에서 서비스를 �
 3. 진단 데이터에 대한 스토리지 계정을 지정하려면 줄임표(...) 단추를 선택합니다.
 
     ![사용할 스토리지 계정 지정](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. **스토리지 연결 문자열 만들기** 대화 상자에서 Azure Storage 에뮬레이터, Azure 구독을 사용하여 연결할지, 아니면 직접 자격 증명을 입력할지 여부를 지정합니다.
+4. **저장소 연결 문자열 만들기** 대화 상자에서 Azure Storage 에뮬레이터, Azure 구독 또는 수동으로 입력 한 자격 증명을 사용 하 여 연결할지 여부를 지정 합니다.
 
     ![Storage 계정 대화 상자](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * **Microsoft Azure Storage 에뮬레이터**를 선택하면 연결 문자열은 `UseDevelopmentStorage=true`로 설정됩니다.
+   * **Microsoft Azure Storage 에뮬레이터**를 선택 하는 경우 연결 문자열은로 설정 됩니다 `UseDevelopmentStorage=true` .
    * **구독**을 선택하는 경우 사용할 Azure 구독을 선택하고 계정 이름을 입력할 수 있습니다. Azure 구독을 관리하려면 **계정 관리**를 선택합니다.
    * **수동으로 입력한 자격 증명**을 선택하는 경우 사용할 Azure 계정의 이름 및 키를 입력합니다.
 5. **진단 구성** 대화 상자를 표시하려면 **구성**을 선택합니다. **일반** 및 **로그 디렉터리**를 제외한 각 탭은 수집할 수 있는 진단 데이터 원본을 나타냅니다. 기본 **일반** 탭은 **오류만**, **모든 정보** 및 **사용자 지정 계획**의 진단 데이터 컬렉션 옵션을 제공합니다. 기본 **오류만** 옵션은 경고 또는 추적 메시지를 전송하지 않으므로 최소한의 스토리지를 사용합니다. **모든 정보** 옵션은 대부분의 정보를 전송하고, 대부분의 스토리지를 사용하므로 비용이 가장 많이 드는 옵션입니다.

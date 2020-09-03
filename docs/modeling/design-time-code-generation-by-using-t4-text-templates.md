@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535995"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426774"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 
@@ -123,7 +123,7 @@ ms.locfileid: "85535995"
 
 텍스트 템플릿을 디버그하려면
 
-- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -248,7 +248,7 @@ ms.locfileid: "85535995"
 그런 후에 다음과 같은 코드를 작성할 수 있습니다.
 
 ```csharp
-<# string fileName = this.Host.ResolvePath("filename.txt");
+<# string filename = this.Host.ResolvePath("filename.txt");
   string [] properties = File.ReadLines(filename);
 #>
 ...
@@ -257,7 +257,7 @@ ms.locfileid: "85535995"
 ```
 
 ```vb
-<# Dim fileName = Me.Host.ResolvePath("propertyList.txt")
+<# Dim filename = Me.Host.ResolvePath("propertyList.txt")
    Dim properties = File.ReadLines(filename)
 #>
 ...
@@ -272,7 +272,7 @@ ms.locfileid: "85535995"
 
 ### <a name="getting-data-from-visual-studio"></a>Visual Studio에서 데이터 가져오기
 
-Visual Studio에서 제공 하는 서비스를 사용 하려면 특성을 설정 하 `hostSpecific` 고 어셈블리를 로드 `EnvDTE` 합니다. 가져오기 `Microsoft.VisualStudio.TextTemplating` - `GetCOMService()` 확장 메서드를 포함 합니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
+Visual Studio에서 제공 하는 서비스를 사용 하려면 특성을 설정 하 `hostSpecific` 고 어셈블리를 로드 `EnvDTE` 합니다. 가져오기 `Microsoft.VisualStudio.TextTemplating` - `GetCOMService()` 확장 메서드를 포함 합니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -388,6 +388,6 @@ Warning("A warning message");
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [T4 텍스트 템플릿 작성 지침](../modeling/guidelines-for-writing-t4-text-templates.md)
