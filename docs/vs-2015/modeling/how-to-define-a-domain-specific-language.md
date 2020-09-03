@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ded7dcc05907f2f6a3d8c43af175ad55c499f56
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543327"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>도메인별 언어 정의 방법
@@ -30,10 +30,10 @@ ms.locfileid: "85543327"
 
 DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만듭니다. 이 솔루션의 중요한 요소는 DslDefinition.dsl에 저장되는 DSL 정의 다이어그램입니다. DSL 정의는 DSL의 클래스와 모양을 정의합니다. 이러한 요소를 수정하고 필요한 내용을 추가한 후에 프로그램 코드를 추가하여 DSL을 보다 자세하게 사용자 지정할 수 있습니다.
 
-## <a name="selecting-a-template-solution"></a><a name="templates"></a>템플릿 솔루션 선택
+## <a name="selecting-a-template-solution"></a><a name="templates"></a> 템플릿 솔루션 선택
  DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
-|Product|다운로드 링크|
+|제품|다운로드 링크|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
@@ -80,7 +80,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
 4. 다른 페이지에서 설정을 조정하거나 기본값을 그대로 사용할 수 있습니다.
 
-5. **Finish**를 클릭합니다.
+5. **마침**을 클릭합니다.
 
     2~3개 프로젝트가 포함된 솔루션이 만들어지고 DSL 정의에서 코드가 생성됩니다.
 
@@ -121,7 +121,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
   나머지 클래스는 요구 사항에 맞게 삭제하거나 이름을 바꿉니다.
 
-## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a>DSL을 정의 하는 패턴
+## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a> DSL을 정의 하는 패턴
  한 번에 1~2개 기능을 추가하거나 조정하여 DSL을 개발하는 것이 좋습니다. 기능 하나를 추가하고 DSL을 실행하여 테스트한 다음 1~2개 기능을 더 추가합니다. DSL의 일반적인 기능은 다음과 같습니다.
 
 - 도메인 클래스, 모델에 요소를 연결하는 포함 관계, 다이어그램에서 해당 클래스의 요소를 표시하는 데 필요한 모양, 사용자가 요소를 만드는 데 사용할 수 있는 요소 도구
@@ -148,7 +148,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 > [!NOTE]
 > 여기서 "모델"은 사용자가 만드는 DSL 인스턴스를 지칭하며 대개 다이어그램으로 표시됩니다. 이 항목에서는 DSL 사용 시에 표시되는 DSL 정의 다이어그램 및 모델 다이어그램 둘 다에 대해 설명합니다.
 
-## <a name="defining-domain-classes"></a><a name="classes"></a>도메인 클래스 정의
+## <a name="defining-domain-classes"></a><a name="classes"></a> 도메인 클래스 정의
  도메인 클래스는 DSL의 개념을 나타냅니다. 인스턴스는 *모델 요소*입니다. 예를 들어 **MusicLibrary** DSL에는 **앨범** 및 **노래**라는 도메인 클래스가 있을 수 있습니다.
 
  도메인 클래스를 만들려면 **명명 된 도메인 클래스** 도구에서 다이어그램으로 끌고 클래스 이름을 바꿀 수 있습니다.
@@ -230,7 +230,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
 7. **파일을 저장 하 고 닫은 후 다시 엽니다**. 노드를 확장하고 나면 작성한 모든 인스턴스가 탐색기에 표시되어야 합니다.
 
-## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a>다이어그램에서 모양 정의
+## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a> 다이어그램에서 모양 정의
  다이어그램에 사각형, 타원 또는 아이콘으로 표시되는 요소 클래스를 정의할 수 있습니다.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>다이어그램에 모양으로 표시되는 요소 클래스를 정의하려면
@@ -326,7 +326,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
    모양을 처음으로 테스트한 후에 일부 속성을 조정하고 몇 가지 고급 기능을 더 추가할 수 있습니다. 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
-## <a name="defining-reference-relationships"></a><a name="references"></a>참조 관계 정의
+## <a name="defining-reference-relationships"></a><a name="references"></a> 참조 관계 정의
  소스 도메인 클래스와 대상 도메인 클래스 간에 참조 관계를 정의할 수 있습니다. 참조 관계는 보통 다이어그램에 연결선(모양 사이의 선)으로 표시됩니다.
 
  예를 들어 음악 앨범 및 아티스트가 다이어그램에 모양으로 표시되는 경우에는 아티스트를 참여 앨범에 연결하는 ArtistsAppearedOnAlbums 관계를 정의할 수 있습니다. 아래 그림의 예를 참조하세요.
@@ -408,14 +408,14 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
    연결선을 처음으로 테스트한 후에 일부 속성을 조정하고 몇 가지 고급 기능을 더 추가할 수 있습니다. 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
-## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a>목록을 포함 하는 모양 정의: 구획 도형
+## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a> 목록을 포함 하는 모양 정의: 구획 도형
  구획 모양은 항목 목록을 하나 이상 포함합니다. 예를 들어 MusicLibrary DSL에서는 구획 모양을 사용하여 음악 Album을 표시할 수 있습니다. 각 Album에는 노래 목록이 있습니다.
 
  ![구획 모양](../modeling/media/compartmentshape.png "CompartmentShape")
 
  DSL 정의에서 이러한 모양을 적용하는 가장 간단한 방법은 컨테이너와 각 목록에 대해 도메인 클래스를 하나씩 정의하는 것입니다. 컨테이너 클래스는 구획 모양에 매핑됩니다.
 
- ![모양 맵](../modeling/media/music-mapcomp.png "Music_MapComp")
+ ![도형 맵](../modeling/media/music-mapcomp.png "Music_MapComp")
 
  자세한 내용은 [구획 모양의 속성](../modeling/properties-of-compartment-shapes.md)을 참조 하세요.
 
@@ -451,7 +451,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
 7. 모양과 도메인 클래스 사이의 다이어그램 요소 맵 링크를 선택하고 **DSL 세부 정보** 창에서 다음을 수행 합니다.
 
-    1. **데코레이터** 탭을 클릭 하 고 데코레이터 이름을 클릭 한 다음 **표시 속성**에서 적절 한 항목을 선택 합니다. Decorator 이름 옆에 확인 표시가 나타나는지 확인합니다.
+    1. **데코레이터** 탭을 클릭 합니다. 데코레이터 이름을 클릭 한 다음 **표시 속성**에서 적절 한 항목을 선택 합니다. Decorator 이름 옆에 확인 표시가 나타나는지 확인합니다.
 
     2. **구획 맵** 탭을 클릭 합니다.
 
@@ -536,7 +536,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
 7. 구획 모양에서 링크나 항목을 선택합니다. 링크와 항목이 모두 사라져야 합니다.
 
-## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a>다른 모양의 경계에 있는 포트 정의
+## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a> 다른 모양의 경계에 있는 포트 정의
  포트는 다른 모양의 경계에 있는 모양입니다.
 
  포트를 사용하여 다른 모양에 고정 연결점을 제공할 수 있습니다. 사용자는 이 연결점에 연결선을 그릴 수 있습니다. 이 경우 포트 모양을 투명하게 지정할 수 있습니다.
@@ -559,7 +559,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
   자세한 내용은 [Port 셰이프 속성](../modeling/properties-of-port-shapes.md)을 참조 하세요.
 
-## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a>스윔 레인을 포함 하는 DSL 정의
+## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a> 스윔 레인을 포함 하는 DSL 정의
  스윔 레인은 다이어그램의 수평 또는 수직 파티션입니다. 각 스윔 레인은 모델 요소에 해당합니다. DSL 정의에서는 스윔 레인 요소당 도메인 클래스가 하나씩 있어야 합니다.
 
  스윔 레인이 포함된 DSL을 만드는 가장 효율적인 방법은 새 DSL 솔루션을 만들고 작업 흐름 솔루션 템플릿을 선택하는 것입니다. DSL 정의에서 Actor 클래스는 스윔 레인에 매핑되는 도메인 클래스입니다. 이 클래스와 기타 클래스의 이름을 프로젝트에 맞게 바꿉니다.
@@ -570,7 +570,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
  자세한 내용은 [스윔 레인의 속성](../modeling/properties-of-swimlanes.md)을 참조 하세요.
 
-## <a name="adding-property-types"></a><a name="addTypes"></a>속성 형식 추가
+## <a name="adding-property-types"></a><a name="addTypes"></a> 속성 형식 추가
 
 ### <a name="domain-enumerations-and-literals"></a>도메인 열거형 및 리터럴
  도메인 열거형은 여러 리터럴 값을 포함하는 형식입니다.
@@ -586,7 +586,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
  형식을 추가 하려면 DSL 탐색기에서 모델의 루트를 마우스 오른쪽 단추로 클릭 한 다음 **새 외부 형식 추가**를 클릭 합니다. 속성 창에서 **이름 및 네임 스페이스를** **system.object**로 설정 합니다. 이제이 형식이 DSL 탐색기의 **도메인 유형**아래에 나타납니다. 도메인 속성 형식을 설정할 때마다 이 형식을 선택할 수 있습니다.
 
-## <a name="customizing-the-dsl"></a><a name="custom"></a>DSL 사용자 지정
+## <a name="customizing-the-dsl"></a><a name="custom"></a> DSL 사용자 지정
  이 항목에서 설명하는 기술을 사용하면 다이어그램 표기법, 읽을 수 있는 XML 형식 및 코드와 기타 아티팩트를 생성하는 데 필요한 기본적인 도구를 사용해 DSL을 빠르게 만들 수 있습니다.
 
  두 가지 방법으로 DSL 정의를 확장할 수 있습니다.
@@ -612,7 +612,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 |문제|제안 해결 방법|
 |-------------|----------------|
 |DSL 정의 파일에서 수행한 변경 내용이 적용되지 않습니다.|솔루션 탐색기 위의 도구 모음에서 **모든 템플릿 변환** 을 클릭 한 다음 솔루션을 다시 빌드합니다.|
-|모양에 속성 값이 아닌 Decorator 이름이 표시됩니다.|Decorator 매핑을 설정합니다. 이렇게 하려면 DSL 정의 다이어그램에서 모양 클래스와 도메인 클래스 사이의 회색 선인 다이어그램 요소 맵을 클릭합니다.<br /><br /> **DSL 세부 정보** 창을 엽니다. 표시 되지 않는 경우 보기 메뉴에서 **다른 창**을 가리킨 다음 **DSL 정보**를 클릭 합니다.<br /><br /> **데코레이터 맵** 탭을 클릭 합니다. 데코레이터 이름을 선택 합니다. 이름 옆의 확인란이 선택되어 있는지 확인합니다. **표시 속성**에서 도메인 속성의 이름을 선택 합니다.<br /><br /> 자세한 내용은 [다이어그램의 셰이프](#shapes)를 참조 하세요.|
+|모양에 속성 값이 아닌 Decorator 이름이 표시됩니다.|Decorator 매핑을 설정합니다. 이렇게 하려면 DSL 정의 다이어그램에서 모양 클래스와 도메인 클래스 사이의 회색 선인 다이어그램 요소 맵을 클릭합니다.<br /><br /> **DSL 세부 정보** 창을 엽니다. 표시 되지 않는 경우 보기 메뉴에서 **다른 창**을 가리킨 다음 **DSL 정보**를 클릭 합니다.<br /><br /> **데코레이터 맵** 탭을 클릭 합니다. 데코레이터의 이름을 선택 합니다. 이름 옆의 확인란이 선택되어 있는지 확인합니다. **표시 속성**에서 도메인 속성의 이름을 선택 합니다.<br /><br /> 자세한 내용은 [다이어그램의 셰이프](#shapes)를 참조 하세요.|
 |DSL 탐색기에서 컬렉션에 항목을 추가할 수 없습니다. 예를 들어 도구를 마우스 오른쪽 단추로 클릭해도 메뉴에 "도구 추가" 명령이 표시되지 않습니다.<br /><br /> DSL 탐색기에서 목록에 요소를 추가할 수 없습니다.|요소를 추가하려는 노드 위의 항목을 마우스 오른쪽 단추로 클릭합니다. 목록에 항목을 추가하려는 경우 추가 명령은 목록 노드가 아닌 해당 소유자에 있습니다.|
 |도메인 클래스를 만들었는데 언어 탐색기에서 인스턴스를 만들 수 없습니다.|루트를 제외한 모든 도메인 클래스는 포함 관계의 대상이어야 합니다.|
 |DSL 탐색기에는 요소와 형식 이름만 표시됩니다.|DSL 정의에서 클래스의 도메인 속성을 선택 하 고 속성 창에서 **요소 이름** 을 true로 설정 합니다.|
@@ -620,5 +620,5 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 |어셈블리 이름을 변경한 후 DSL의 도구 상자가 표시되지 않습니다.|자세한 내용은 [방법: 도메인별 언어의 네임 스페이스 변경](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)(영문)을 참조 하세요 **. 자세한 내용은** 을 참조 하십시오.|
 |어셈블리 이름을 변경하지 않았는데 DSL의 도구 상자가 표시되지 않습니다.<br /><br /> 또는 확장을 로드하지 못했음을 보고하는 메시지 상자가 표시됩니다.|실험적 인스턴스를 다시 설정하고 솔루션을 다시 빌드합니다.<br /><br /> 1. Windows 시작 메뉴의 **모든 프로그램**에서 [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)] , **도구**를 차례로 확장 한 다음 **Microsoft Visual Studio 실험적 인스턴스 다시 설정**을 클릭 합니다.<br />2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **빌드** 메뉴에서 **솔루션 다시 빌드**를 클릭 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [도메인별 언어 시작](../modeling/getting-started-with-domain-specific-languages.md) [WPF 기반](../modeling/creating-a-wpf-based-domain-specific-language.md) 도메인별 언어를 만드는 [Windows Forms 기반 도메인별 언어](../modeling/creating-a-windows-forms-based-domain-specific-language.md) 를 만드는 방법

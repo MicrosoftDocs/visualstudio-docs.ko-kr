@@ -35,10 +35,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd0a89ac1d96e2d1af829ba04e6e164f8fae7f8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542183"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Visual Studio에서 스토어 앱의 디버깅 세션 시작(VB, C#, C++ 및 XAML)
@@ -86,7 +86,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
   - [디버거 연결](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>디버깅을 쉽게 시작 하는 방법
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> 디버깅을 쉽게 시작 하는 방법
 
 1. Visual Studio에서 응용 프로그램 솔루션을 엽니다.
 
@@ -94,7 +94,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
    Visual Studio가 디버거가 연결된 응용 프로그램을 빌드하고 시작합니다. 중단점에 도달하거나 수동으로 실행을 일시 중단하거나 처리되지 않은 예외가 발생하거나 응용 프로그램이 끝날 때까지 계속해서 실행됩니다. 자세한 내용은 [디버그 세션 탐색 (Xaml 및 c #)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 을 참조 하세요.
 
-## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a>디버깅 세션 구성
+## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> 디버깅 세션 구성
 
 ### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 프로젝트에 대한 디버깅 속성 페이지 열기
 
@@ -110,7 +110,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
          ![C&#43;&#43; Windows 스토어 앱 디버깅 속성 페이지](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
 
-### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a>빌드 구성 옵션 선택
+### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a> 빌드 구성 옵션 선택
 
 1. **구성** 목록에서 **Debug** 또는 **(활성)Debug**를 선택합니다.
 
@@ -131,7 +131,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 |-|-|
 |**로컬 컴퓨터**|로컬 컴퓨터의 현재 세션에서 응용 프로그램을 디버깅합니다. [로컬 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-the-local-machine.md)을 참조 하세요.|
 |**시뮬레이터**|[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱에 대한 Visual Studio 시뮬레이터에서 응용 프로그램을 디버깅합니다. 시뮬레이터는 로컬 컴퓨터에서 사용할 수 없는 터치 제스처 및 디바이스 회전과 같은 디바이스 기능을 디버깅할 수 있도록 하는 데스크톱 창입니다. [시뮬레이터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-in-the-simulator.md)을 참조 하세요.|
-|**원격 컴퓨터**|인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 디바이스에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 디바이스에 설치되어 실행되고 있어야 합니다. [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조 하세요.|
+|**원격 머신**|인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 디바이스에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 디바이스에 설치되어 실행되고 있어야 합니다. [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조 하세요.|
 
  **원격 컴퓨터**를 선택하는 경우 다음 방법 중 하나를 사용하여 원격 컴퓨터의 이름 또는 IP 주소를 지정합니다.
 
@@ -181,7 +181,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
  Windows 스토어 Phone 앱의 경우 **백그라운드 작업 프로세스**에서 백그라운드 프로세스에 사용할 디버거를 선택할 수 있습니다.
 
-### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a>필드 디버그 세션 시작 지연
+### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a> 필드 디버그 세션 시작 지연
  기본적으로 디버깅을 시작하면 바로 응용 프로그램이 시작됩니다. 디버그 세션을 시작하되 응용 프로그램 시작을 지연할 수도 있습니다. 이 옵션을 선택하는 경우 시작 화면 또는 활성화 계약을 통해 응용 프로그램이 시작되거나 다른 프로세스 또는 메서드를 통해 응용 프로그램이 시작되면 디버거에서 응용 프로그램이 시작됩니다. 응용 프로그램 자체가 실행되지 않는 경우 백그라운드 작업을 디버깅하려면 응용 프로그램의 시작을 지연할 수도 있습니다.
 
  다음 작업을 통해 응용 프로그램 시작을 지연할 수 있습니다.
@@ -201,10 +201,10 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
 - Visual C++ 응용 프로그램의 경우 **디버깅** 속성 페이지의 **네트워크 루프백 허용** 목록에서 **아니요** 를 선택합니다.
 
-### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a>필드 디버깅을 시작할 때 응용 프로그램 다시 설치
+### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> 필드 디버깅을 시작할 때 응용 프로그램 다시 설치
  Visual C# 또는 Visual Basic 응용 프로그램의 설치 및 초기 구성에서 문제를 진단하려면 **디버그** 속성 페이지에서 **패키지 제거 후 다시 설치**  를 선택하여 디버깅을 시작할 때 원래 설치를 다시 만듭니다. 이 옵션은 Visual C++ 프로젝트에는 사용할 수 없습니다.
 
-### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a>필드 원격 디버거 시작을 위한 인증 요구 비활성화
+### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> 필드 원격 디버거 시작을 위한 인증 요구 비활성화
  ![Windows에만 적용](../debugger/media/windows-only-content.png "windows_only_content")
 
  기본적으로 원격 디버거를 시작하려면 자격 증명을 제공해야 합니다.
@@ -222,10 +222,10 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
 ## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> 디버깅 세션을 시작합니다.
 
-### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a>디버깅 시작 (F5)
+### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> 디버깅 시작 (F5)
  **디버그** 메뉴에서 **디버깅 시작** (키보드: F5)을 선택 하면 Visual Studio에서 디버거가 연결 된 앱을 시작 합니다. 중단점에 도달하거나 수동으로 실행을 일시 중단하거나 예외가 발생하거나 응용 프로그램이 끝날 때까지 계속해서 실행됩니다.
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>디버깅을 시작 하 되 (F5) 앱 시작 지연
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> 디버깅을 시작 하 되 (F5) 앱 시작 지연
  디버그 모드에서 실행되도록 응용 프로그램을 설정할 수 있지만 디버거가 아닌 방법으로 응용 프로그램을 시작할 수 있습니다. 예를 들어 시작 메뉴에서 응용 프로그램 시작을 디버깅하거나 응용 프로그램을 시작하지 않고 응용 프로그램에서 백그라운드 프로세스를 디버깅할 수 있습니다. 응용 프로그램 시작을 지연하려면 다음을 수행합니다.
 
 - 응용 프로그램의 **디버깅** 속성 페이지(Visual C++에서는**디버그** )에서
@@ -260,13 +260,13 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **로컬 컴퓨터**  |                                                                                                                로컬 컴퓨터의 현재 세션에서 응용 프로그램을 디버깅합니다. [로컬 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-the-local-machine.md)을 참조 하세요.                                                                                                                 |
    |   **시뮬레이터**    | [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱에 대한 Visual Studio 시뮬레이터에서 응용 프로그램을 디버깅합니다. 시뮬레이터는 로컬 컴퓨터에서 사용할 수 없는 터치 제스처 및 디바이스 회전과 같은 디바이스 기능을 디버깅할 수 있도록 하는 데스크톱 창입니다. [시뮬레이터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-in-the-simulator.md)을 참조 하세요. |
-   | **원격 컴퓨터** |                          인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 디바이스에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 디바이스에 설치되어 실행되고 있어야 합니다. [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조 하세요.                           |
+   | **원격 머신** |                          인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 디바이스에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 디바이스에 설치되어 실행되고 있어야 합니다. [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조 하세요.                           |
 
 3. **설치된 응용 프로그램 패키지** 목록에서 응용 프로그램을 선택합니다.
 
 4. **다음 코드 형식 디버깅** 목록에서 사용할 디버그 엔진을 선택합니다.
 
-5. (선택 사항). 다른 방법으로 시작될 때 응용 프로그램을 디버깅하거나 백그라운드 프로세스를 디버깅하려면 **시작하지 않음(시작 시 코드 디버그)** 을 선택합니다.
+5. (선택 사항) 다른 방법으로 시작될 때 응용 프로그램을 디버깅하거나 백그라운드 프로세스를 디버깅하려면 **시작하지 않음(시작 시 코드 디버그)** 을 선택합니다.
 
    **시작**을 클릭하면 응용 프로그램이 시작되거나 디버그 모드에서 실행되도록 설정됩니다.
 
@@ -295,14 +295,14 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
 4. PowerShell 프롬프트에서 `Enable-AppxDebug` *PackageFullName* 을 입력합니다. 여기서 *PackageFullName* 은 앱의 PackageFullName 식별자입니다.
 
-#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>디버거 연결
+#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> 디버거 연결
  디버거를 연결하려면 다음을 수행합니다.
 
 1. **디버그** 메뉴에서 **프로세스에 연결**을 선택합니다.
 
     **프로세스에 연결** 대화 상자가 나타납니다.
 
-2. 원격 디바이스의 응용 프로그램에 연결하려면 **한정자** 상자에 원격 디바이스를 지정합니다. 다음을 수행할 수 있습니다.
+2. 원격 디바이스의 응용 프로그램에 연결하려면 **한정자** 상자에 원격 디바이스를 지정합니다. 다음과 같습니다.
 
    - **한정자** 상자에 이름을 입력합니다.
 
@@ -326,5 +326,5 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 
    [항목 내용](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 앱 디버그](../debugger/debug-store-apps-in-visual-studio.md) [디버그 세션 탐색 (Xaml 및 c #)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)

@@ -14,21 +14,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620227"
 ---
 # <a name="code-snippet-functions"></a>코드 조각 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-세 가지 함수를 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 코드 조각에 사용할 수 있습니다. 함수는 코드 조각의 [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 요소에 지정됩니다. 코드 조각을 만드는 방법에 대한 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.
+세 가지 함수를 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 코드 조각에 사용할 수 있습니다. 함수는 코드 조각의 [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 요소에 지정됩니다. 코드 조각을 만드는 방법에 대 한 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조 하세요.
 
-## <a name="functions"></a>함수
+## <a name="functions"></a>Functions
  다음 표에서는 코드 조각의 `Function` 요소에 사용할 수 있는 함수를 설명합니다.
 
-|기능|설명|언어|
+|함수|Description|언어|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|`EnumerationLiteral` 매개 변수로 지정된 열거형 멤버에 대한 switch 문과 case 문 집합을 생성합니다. `EnumerationLiteral` 매개 변수는 열거형 리터럴 또는 열거형 형식에 대한 참조여야 합니다.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|삽입된 코드 조각을 포함하는 클래스의 이름을 반환합니다.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
@@ -153,5 +153,5 @@ ms.locfileid: "72620227"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Function 요소 (Intellisense 코드 조각)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)

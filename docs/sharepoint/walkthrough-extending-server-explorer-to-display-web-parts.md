@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015641"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 서버 탐색기 확장 하 여 웹 파트 표시
@@ -92,7 +93,7 @@ ms.locfileid: "86015641"
 
 4. 프로젝트 템플릿 목록에서 **클래스 라이브러리**를 선택 하 고 프로젝트의 이름을 **webpartnodeextension**으로 지정한 다음 **확인** 단추를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]솔루션에 **Webpartnodeextension** 프로젝트를 추가 하 고 기본 Class1 코드 파일을 엽니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 솔루션에 **Webpartnodeextension** 프로젝트를 추가 하 고 기본 Class1 코드 파일을 엽니다.
 
 5. 프로젝트에서 Class1 코드 파일을 삭제 합니다.
 
@@ -106,7 +107,7 @@ ms.locfileid: "86015641"
 
 4. 프로젝트 템플릿 목록에서 **클래스 라이브러리**를 선택 하 고 프로젝트 이름을 **webpartcommands**로 지정한 다음 **확인** 단추를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]솔루션에 **Webpartcommands** 프로젝트를 추가 하 고 기본 Class1 코드 파일을 엽니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 솔루션에 **Webpartcommands** 프로젝트를 추가 하 고 기본 Class1 코드 파일을 엽니다.
 
 5. 프로젝트에서 Class1 코드 파일을 삭제 합니다.
 
@@ -153,7 +154,7 @@ ms.locfileid: "86015641"
 
 4. **추가** 단추 옆의 화살표를 선택 하 고 표시 되는 메뉴에서 **링크로 추가** 를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]코드 파일을 WebPartCommands 프로젝트에 링크로 추가 합니다. 결과적으로 코드 파일은 WebPartNodeExtension 프로젝트에 있지만 파일의 코드도 WebPartCommands 프로젝트에서 컴파일됩니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 코드 파일을 WebPartCommands 프로젝트에 링크로 추가 합니다. 결과적으로 코드 파일은 WebPartNodeExtension 프로젝트에 있지만 파일의 코드도 WebPartCommands 프로젝트에서 컴파일됩니다.
 
 5. **Webpartcommands** 프로젝트에 대 한 바로 가기 메뉴를 다시 열고 **참조 추가**를 선택 합니다.
 
@@ -182,7 +183,7 @@ ms.locfileid: "86015641"
 
 3. **리소스** 탭을 선택 하 고 **이 프로젝트에 기본 리소스 파일이 포함 되어 있지 않습니다 .를 선택 합니다. 링크를 하나 만들려면 여기를 클릭** 하십시오.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]리소스 파일을 만들어 디자이너에서 엽니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 리소스 파일을 만들어 디자이너에서 엽니다.
 
 4. 디자이너 맨 위에서 **리소스 추가** 메뉴 명령 옆의 화살표를 선택한 다음 나타나는 메뉴에서 **새 아이콘 추가** 를 선택 합니다.
 
@@ -368,7 +369,7 @@ ms.locfileid: "86015641"
 
 4. Visual Studio의 두 인스턴스를 모두 닫습니다 (이 경우에는 WebPartNode 솔루션이 열려 있는 Visual Studio의 인스턴스 및 실험적 인스턴스).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [아이콘에 대 한 이미지 편집기](/cpp/windows/image-editor-for-icons)

@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542618"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 도메인 특정 언어를 사용자의 컴퓨터 또는 다른 컴퓨터에 설치할 수 있습니다. Visual Studio가 대상 컴퓨터에 이미 설치 되어 있어야 합니다.
 
-## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a>VSIX 및 MSI 배포 중에서 선택
+## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a> VSIX 및 MSI 배포 중에서 선택
  도메인 특정 언어를 배포 하는 방법에는 다음 두 가지가 있습니다.
 
 |메서드|이점|
@@ -25,7 +25,7 @@ ms.locfileid: "85542618"
 |VSX (Visual Studio 확장)|매우 쉬운 배포: DslPackage 프로젝트에서 **.vsix** 파일을 복사 하 고 실행 합니다.<br /><br /> 자세한 내용은 VSX를 [사용 하 여 DSL 설치 및 제거](#Installing)를 참조 하세요.|
 |MSI (설치 관리자 파일)|-사용자가 DSL 파일을 두 번 클릭 하 여 Visual Studio를 열 수 있습니다.<br />-대상 컴퓨터에서 아이콘과 DSL 파일 형식을 연결 합니다.<br />-XSD (XML 스키마)를 DSL 파일 형식과 연결 합니다. 이렇게 하면 파일이 Visual Studio로 로드 될 때 경고를 피할 수 있습니다.<br /><br /> MSI를 만들려면 솔루션에 설치 프로젝트를 추가 해야 합니다.<br /><br /> 자세한 내용은 [MSI 파일을 사용 하 여 DSL 배포](#msi)를 참조 하세요.|
 
-## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a>VSX를 사용 하 여 DSL 설치 및 제거
+## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a> VSX를 사용 하 여 DSL 설치 및 제거
 
 이 방법으로 DSL을 설치 하는 경우 사용자는 Visual Studio 내에서 DSL 파일을 열 수 있지만 Windows 탐색기에서 파일을 열 수는 없습니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "85542618"
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a>MSI에 DSL 배포
+## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a> MSI에 DSL 배포
  DSL의 MSI (Windows Installer) 파일을 정의 하 여 사용자가 Windows 탐색기에서 DSL 파일을 열도록 허용할 수 있습니다. 아이콘 및 간단한 설명을 파일 이름 확장명에 연결할 수도 있습니다. 또한 MSI는 DSL 파일의 유효성을 검사 하는 데 사용할 수 있는 XSD를 설치할 수 있습니다. 원할 경우 동시에 설치 될 다른 구성 요소를 MSI에 추가할 수 있습니다.
 
  MSI 파일 및 기타 배포 옵션에 대 한 자세한 내용은 [응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)를 참조 하세요.

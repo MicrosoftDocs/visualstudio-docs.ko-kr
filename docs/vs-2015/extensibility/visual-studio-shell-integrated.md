@@ -12,10 +12,10 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 907b71d82a3c630bedc48209e735d9cf817432ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543158"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell(통합)
@@ -39,14 +39,14 @@ Visual Studio 통합 셸에는 IDE (통합 개발 환경), 디버거 및 소스 
 |프로젝트 시스템 및 프로젝트 형식|-솔루션 및 솔루션 폴더<br />-솔루션 구성 관리자<br />-항목 관리<br />-단일 프로젝트 및 다중 프로젝트 솔루션<br />-애플리케이션 디자이너 (간소화 된 프로젝트 속성)<br />-웹 참조 추가<br />-서비스 참조 추가<br />-단일 프로젝트<br />-웹 사이트 프로젝트 형식<br />-웹 응용 프로그램 프로젝트|  
 |빌드|-IDE의 사용자 지정 빌드 단계<br />-지적 재산 (IP) 보호를 위한 사전 컴파일<br />-코드 서명<br />     MSBuild|  
 |편집기|-코드 검색 도구 (통합 찾기, 소스 정의, 상속)<br />-코드 탐색<br />-IntelliSense<br />-스마트 태그<br />-리팩터링<br />-매우 나열<br />-IntelliSense 필터링<br />-   **코드 정의** 창|  
-|디자이너|-Windows Presentation Foundation 디자이너<br />-Windows Forms 디자이너<br />-웹 디자이너 및 HTML 편집기|  
+|Designer|-Windows Presentation Foundation 디자이너<br />-Windows Forms 디자이너<br />-웹 디자이너 및 HTML 편집기|  
 |데이터|-   **서버 탐색기** (단순화: 데이터만). 참고 1을 참조하세요.<br />-   **데이터 소스** 창<br />-전체 데이터 컨트롤 집합<br />-XML 편집기<br />-로컬 데이터 원본에 데이터 바인딩 (. MDF 또는. 않았더라도<br />-개체에 데이터 바인딩<br />-웹 서비스에 데이터 바인딩<br />-로컬 데이터베이스 서버에 데이터 바인딩<br />-원격 데이터베이스 서버에 데이터 바인딩<br />-원격 데이터에 대 한 DDL 도구<br />-   **서버 탐색기** 확장성 ( [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 샘플)|  
 |디버거|-로컬 디버깅 참고 2를 참조 하세요.<br />-관리 디버깅<br />-로컬 디버깅<br />-로컬 프로세스에 연결<br />-원격 프로세스에 연결<br />-익명 대리자<br />-응용 프로그램 도메인<br />-ASPX 디버깅<br />-특성<br />-Func 중 중단-eval<br />-중단점<br />-중단점 제약 조건<br />-호출 스택<br />-   **명령** 창<br />-크로스 스레드 디버깅<br />-데이터 팁<br />-데이터 시각화 도우미<br />-Mda (관리 디버깅 도우미)에 대 한 디버거 지원<br />-형식 전달자에 대 한 디버거 지원<br />-OTB에 대 한-d Teevents 지원<br />-JMC 스텝 퍼<br />-디버거 AppID 테스트 (DBGCLR)<br />-디버거 프로필<br />-디버거 도구 및 옵션<br />-반복기 디버깅<br />-디자인 타임 식 계산<br />-C # 식 계산기<br />-디스어셈블리<br />-편집 하며 계속 하기<br />-식 계산기 창 (조사식, 지역, 자동)<br />-예외 도우미<br />-예외<br />-실행<br />-   제네릭<br />-올바른 소스 가져오기<br />-HPC/클러스터 디버깅<br />-통합 다국어 디버깅<br />-InterOp 디버깅<br />-Just-in-time 디버깅<br />-로컬 디버깅<br />-관리 디버깅<br />-수동 컨트롤 (프로세스 창)<br />메모리<br />-미니 덤프 지원<br />-모듈<br />-다중 프로세스 디버깅<br />-네이티브 디버깅<br />-새 디버그 엔진 지원<br />최적화 된 코드 디버깅<br />-출력 windows 필터링<br />-관리 디버깅을 위한 프로세스 호스팅<br />-프로세스<br />-간략 한 조사식<br />-레지스터<br />-스택에 등록<br />-원격 디버깅<br />-반환 값<br />-스크립트 디버깅<br />-원본 서비스 지원<br />-보안<br />-Side-by-side<br />-SQL<br />-기호 서버<br />-추적 요소<br />-Thread<br />-시각화<br />-XSLT (Extensible Stylesheet Language 변환) 디버거|  
 |64 비트 지원|-64-관리 코드와 네이티브 코드 모두, 모든 언어<br />-x64 기본 지원|  
 |소스 코드 제어 (SCC)|-기본 SCC 통합. 참고 3을 참조하세요.<br />-도구 및 옵션 확인|  
 |확장성|-Vspackage 및 MEF 구성 요소 사용|  
   
-## <a name="notes"></a>메모  
+## <a name="notes"></a>참고  
   
 #### <a name="1-data-tools"></a>1. 데이터 도구  
  통합 셸에는 데이터 확장성 지원 및 간소화 된 **솔루션 탐색기**와 같은 데이터베이스 개발 도구가 포함 되어 있습니다. 그러나 SQL Server Express, SQL Reporting 및 크리스탈 보고서는 통합 셸에 포함 되지 않습니다.  
@@ -77,5 +77,5 @@ Visual Studio 통합 셸에는 IDE (통합 개발 환경), 디버거 및 소스 
   
 - Visual Studio 언어나 이와 관련 된 프로젝트 템플릿 또는 프로젝트 항목 템플릿은 통합 셸에 포함 되지 않습니다. 예를 들어 Visual Basic 코드 조각과 같은 다른 기능의 언어 관련 구현은 포함 되지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 개요 확장](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542742"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 스토리지 및 XML Serialization 사용자 지정
@@ -272,12 +272,12 @@ DSL 탐색기에서 Xml Serialization 동작 노드에는 각 도메인 클래�
 |사용자 지정|이 도메인 클래스에 대 한 사용자 고유의 serialization 및 deserialization 코드를 작성 하려면이를 **True** 로 설정 합니다.<br /><br /> 솔루션을 빌드하고 오류를 조사 하 여 자세한 지침을 검색 합니다.|
 |도메인 클래스|이 클래스 데이터 노드가 적용 되는 도메인 클래스입니다. 읽기 전용입니다.|
 |요소 이름|이 클래스의 요소에 대 한 Xml 노드 이름입니다. 기본값은 도메인 클래스 이름의 소문자 버전입니다.|
-|모니커 특성 이름|참조를 포함 하기 위해 모니커 요소에 사용 되는 특성의 이름입니다. 비어 있는 경우 키 속성 또는 id의 이름이 사용 됩니다.<br /><br /> 이 예제에서는 "name"입니다.`<personMoniker name="/Mike Nash"/>`|
-|모니커 요소 이름|이 클래스의 요소를 참조 하는 모니커에 사용 되는 xml 요소의 이름입니다.<br /><br /> 기본값은 소문자 버전의 클래스 이름에 "모니커"가 붙은 소문자 버전입니다. 예들 들어 `personMoniker`입니다.|
+|모니커 특성 이름|참조를 포함 하기 위해 모니커 요소에 사용 되는 특성의 이름입니다. 비어 있는 경우 키 속성 또는 id의 이름이 사용 됩니다.<br /><br /> 이 예제에서는 "name"입니다.  `<personMoniker name="/Mike Nash"/>`|
+|모니커 요소 이름|이 클래스의 요소를 참조 하는 모니커에 사용 되는 xml 요소의 이름입니다.<br /><br /> 기본값은 소문자 버전의 클래스 이름에 "모니커"가 붙은 소문자 버전입니다. 예: `personMoniker`|
 |모니커 유형 이름|이 클래스의 요소에 대 한 모니커에 대해 생성 된 xsd 형식의 이름입니다. XSD는 **Dsl\generated 코드 \\ \* 스키마 .xsd에 있습니다.**|
 |직렬화 Id|True 이면 요소 GUID가 파일에 포함 됩니다. 이는 **모니커 키** 로 표시 된 속성이 없고 DSL이이 클래스에 대 한 참조 관계를 정의 하는 경우에 true 여야 합니다.|
 |유형 이름|지정 된 도메인 클래스에서 xsd에 생성 된 xml 형식의 이름입니다.|
-|메모|이 요소와 연결 된 비공식 메모입니다.|
+|참고|이 요소와 연결 된 비공식 메모입니다.|
 
 ### <a name="xml-property-data"></a>Xml 속성 데이터
 
@@ -290,7 +290,7 @@ Xml 속성 노드는 클래스 노드 아래에 있습니다.
 |모니커 한정자|True 이면 속성을 사용 하 여 모니커에 한정자를 만듭니다. False 이면이 도메인 클래스에 대해 SerializeId가 true가 아닌 경우 포함 트리의 부모 요소 모니커에 의해 모니커가 한정 됩니다.|
 |표현|특성이 인 경우 속성은 xml 특성으로 serialize 됩니다. if 요소는 요소로 serialize 됩니다. 무시 하면 serialize 되지 않습니다.|
 |Xml 이름|속성을 나타내는 xml 특성 또는 요소에 사용 되는 이름입니다. 기본적으로 도메인 속성 이름의 소문자 버전입니다.|
-|메모|이 요소와 연결 된 비공식 메모입니다.|
+|참고|이 요소와 연결 된 비공식 메모입니다.|
 
 ### <a name="xml-role-data"></a>Xml 역할 데이터
 
@@ -304,7 +304,7 @@ Xml 속성 노드는 클래스 노드 아래에 있습니다.
 |역할 요소 이름|원본 역할에서 파생 된 XML 요소의 이름을 지정 합니다. 기본값은 role 속성 이름입니다.|
 |전체 양식 사용|True 이면 각 대상 요소 또는 모니커가 관계를 나타내는 XML 노드에 포함 됩니다. 관계에 고유한 도메인 속성이 있는 경우이 속성을 true로 설정 해야 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)

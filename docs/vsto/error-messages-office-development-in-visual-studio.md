@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7eb12578f10847c9afc6cbcef67e9b3d3b678db5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543548"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>오류 메시지 (Visual Studio에서 Office 개발)
@@ -31,5 +31,5 @@ ms.locfileid: "85543548"
 |F1|오류가 표시 되 면 **f1**키를 누를 수 있습니다. 그러면 온라인 설명서에서 해당 오류 메시지 항목이 열립니다.|
 |전체 텍스트 검색|오류 메시지 텍스트의 첫 번째 문장에서 단어를 사용하여 전체 텍스트 검색을 사용할 수 있습니다. **도움말** 메뉴에서 **Search**를 클릭합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Visual Studio에서 Office 및 SharePoint 개발](../vsto/office-and-sharepoint-development-in-visual-studio.md)

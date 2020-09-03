@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015896"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>연습: SharePoint 프로젝트에 대 한 사용자 지정 배포 단계 만들기
@@ -265,7 +266,7 @@ ms.locfileid: "86015896"
 
 7. **마침** 단추를 선택합니다.
 
-    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]EmployeesListDefinition 프로젝트를 만듭니다.
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] EmployeesListDefinition 프로젝트를 만듭니다.
 
 8. EmployeesListDefinition 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
 
@@ -283,7 +284,7 @@ ms.locfileid: "86015896"
 
     3. **기본 (비어 있음)** 은 다음을 **기준으로 사용자 지정 가능한 목록 만들기:** 목록에서 선택 합니다.
 
-       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]제목 열과 빈 단일 인스턴스를 사용 하 여 Employees 목록 항목을 만들고 목록 디자이너를 엽니다.
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 제목 열과 빈 단일 인스턴스를 사용 하 여 Employees 목록 항목을 만들고 목록 디자이너를 엽니다.
 
 12. 목록 디자이너의 **열** 탭에서 **새 열 또는 기존 열 이름 입력** 행을 선택 하 고 **열 표시 이름** 목록에 다음 열을 추가 합니다.
 
@@ -482,5 +483,5 @@ ms.locfileid: "86015896"
 
 4. Visual Studio의 두 인스턴스를 모두 닫습니다 (UpgradeDeploymentStep 솔루션이 열려 있는 Visual Studio의 인스턴스 및 실험적 인스턴스).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

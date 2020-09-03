@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542560"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>규칙으로 모델 내부의 변경 내용 전파
@@ -159,7 +159,7 @@ namespace ExampleNamespace
 
 7. 다른 대안을 고려한 후 규칙을 사용 합니다. 예를 들어 값이 변경 될 때 속성을 업데이트 하려면 계산 된 속성을 사용 하는 것이 좋습니다. 셰이프의 크기나 위치를 제한 하려면를 사용 `BoundsRule` 합니다. 속성 값의 변경 내용에 응답 하려면 `OnValueChanged` 속성에 처리기를 추가 합니다. 자세한 내용은 [변경 내용에 대 한 응답 및 전파](../modeling/responding-to-and-propagating-changes.md)를 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는 두 요소를 연결 하기 위해 도메인 관계가 인스턴스화될 때 속성을 업데이트 합니다. 규칙은 사용자가 다이어그램에서 링크를 만들 때 뿐만 아니라 프로그램 코드에서 링크를 만들 때에도 트리거됩니다.
 
  이 예를 테스트 하려면 작업 흐름 솔루션 템플릿을 사용 하 여 DSL을 만들고 Dsl 프로젝트의 파일에 다음 코드를 삽입 합니다. 솔루션을 빌드 및 실행 하 고 디버깅 프로젝트에서 샘플 파일을 엽니다. 주석 모양과 흐름 요소 사이에 주석 링크를 그립니다. 주석의 텍스트는 연결한 최근 요소에 대 한 보고서로 변경 됩니다.
@@ -207,6 +207,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [이벤트 처리기로 모델 외부의 변경 내용 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)

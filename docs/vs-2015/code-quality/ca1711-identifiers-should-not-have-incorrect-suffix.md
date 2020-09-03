@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544016"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.
@@ -51,13 +51,13 @@ ms.locfileid: "85544016"
 |사용 권한|<xref:System.Security.IPermission?displayProperty=fullName>|
 |큐|<xref:System.Collections.Queue?displayProperty=fullName>|
 |스택|<xref:System.Collections.Stack?displayProperty=fullName>|
-|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
+|스트림|<xref:System.IO.Stream?displayProperty=fullName>|
 
  또한 다음 접미사를 사용 하면 안 **됩니다.**
 
 - 대리자
 
-- Enum
+- 열거형
 
 - 구현이 있습니다. 대신 ' Core '를 사용 합니다.
 
@@ -74,5 +74,5 @@ ms.locfileid: "85544016"
 ## <a name="related-rules"></a>관련 규칙
  [CA1710: 식별자에는 올바른 접미사를 사용해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [특성](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: 이벤트 및 대리자](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
