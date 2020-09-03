@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544289"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
@@ -69,7 +69,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-4.png "B1_4")|**스타일** 리소스 사전에 포함된 모든 스타일을 표시합니다.|
 |![](../designers/media/b1-5.png "B1_5")|**설명** 선택한 자산 범주 또는 하위 범주에 대한 설명을 표시합니다.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>개체 및 타임라인 패널 둘러보기
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a> 개체 및 타임라인 패널 둘러보기
  이 패널에서는 아트보드에서 개체를 구성하고 원하는 경우 개체에 애니메이션 효과를 적용할 수 있습니다.
 
  ![애니메이션 모드의 개체 및 타임라인 패널](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-15.png "B1_15")|**타임라인 확대/축소** 타임라인의 확대/축소 해상도를 설정합니다. 확대하면 애니메이션을 좀 더 자세하게 편집할 수 있고 축소하면 더 긴 시간 동안 발생하는 동작이 좀 더 간략하게 표시됩니다. 확대했지만 원하는 시점에 키 프레임을 설정할 수 없다면 맞춤 해상도가 충분히 높게 설정되어 있는지 확인하십시오.|
 |![설명선 16](../designers/media/b5-label-16.png "b5_label_16")|**타임라인 합성 영역** 타임라인이 표시됩니다. 키 프레임을 직접 끌거나 바로 가기 메뉴를 사용하여 이동할 수 있습니다.|
 
-## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>속성 패널 둘러보기
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a> 속성 패널 둘러보기
  이 패널에서는 개체의 속성을 보고 수정할 수 있으며, 아트보드에서 직접 수정하도록 설정할 수도 있습니다. 이렇게 하면 속성 변경 내용이 **속성** 패널에 반영됩니다.
 
  ![속성 패널](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
@@ -122,5 +122,5 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 
  **짧은 동영상 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [컨트롤을 삽입 하 고 해당 동작을 수정](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) 합니다. [개체](../designers/animate-objects-in-xaml-designer.md) [그리기 도형 및 패스 그리기](../designers/draw-shapes-and-paths.md) [Visual Studio에서 XAML 디자인 및 Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

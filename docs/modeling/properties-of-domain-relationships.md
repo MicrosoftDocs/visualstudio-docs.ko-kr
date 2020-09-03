@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544159"
 ---
 # <a name="properties-of-domain-relationships"></a>도메인 관계의 속성
@@ -31,11 +31,11 @@ ms.locfileid: "85544159"
 |포함|이면 `True` 도메인 관계가 포함 관계입니다. 인 경우 `False` 관계는 참조 관계입니다.|\<both>|
 |Name|도메인 관계의 이름입니다.|현재 이름|
 |네임스페이스|도메인 관계와 관련 된 네임 스페이스입니다.|현재 네임 스페이스|
-|메모|도메인 관계와 관련 된 비공식 메모입니다.|\<none>|
+|참고|도메인 관계와 관련 된 비공식 메모입니다.|\<none>|
 |설명|코드를 문서화 하는 데 사용 되 고 생성 된 디자이너의 UI에 사용 되는 설명입니다.|\<none>|
 |표시 이름|생성 된 디자이너에서 도메인 관계에 대해 표시 되는 이름입니다.|\<none>|
 |Help Keyword|도메인 관계에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 선택적 키워드입니다.|\<none>|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

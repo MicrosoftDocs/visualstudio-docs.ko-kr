@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0342146f604d86dd93ce25ed20e6ab393c581ea9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544172"
 ---
 # <a name="properties-of-domain-properties"></a>도메인 속성의 속성
@@ -44,10 +44,10 @@ ms.locfileid: "85544172"
 |**Is UI Read Only**|`True`이면 UI를 사용하여 도메인 속성 값을 변경할 수 없습니다. 그러나 프로그램에서는 값을 계속 설정할 수 있으며 설정된 값은 속성 창에 표시됩니다.<br /><br /> 사용자 로부터 도메인 속성을 숨기려면를 **검색할 수 있도록 설정 합니다**. 프로그램에서 액세스를 제어 하려면 **Setter 액세스 한정자**를 설정 합니다.|`False`|
 |**종류**|도메인 속성의 종류입니다(`Normal`, `Calculated`, `CustomStorage`). 자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.|`Normal`|
 |**이름**|이 도메인 속성의 이름입니다. 유효한 식별자 (예: **SongTitle**) 여야 합니다.|\<none>|
-|**참고 사항**|이 도메인 속성과 관련된 비공식적인 참고 사항입니다.|\<none>|
+|**참고**|이 도메인 속성과 관련된 비공식적인 참고 사항입니다.|\<none>|
 |**Setter Access Modifier**|setter의 액세스 한정자입니다. 이 속성은 프로그램 코드가 속성을 설정할 수 있는 범위를 제어합니다.|`public`|
-|**형식**|속성의 형식입니다. 사용 가능한 형식 목록에 추가 하려면 DSL 탐색기에서 DSL 루트를 마우스 오른쪽 단추로 클릭 하 고 **외부 형식 추가**를 클릭 합니다.|`String`|
+|**유형**|속성의 형식입니다. 사용 가능한 형식 목록에 추가 하려면 DSL 탐색기에서 DSL 루트를 마우스 오른쪽 단추로 클릭 하 고 **외부 형식 추가**를 클릭 합니다.|`String`|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544991"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>모델링 확장 정의 및 설치
@@ -109,7 +109,7 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
 3. **디버깅하지 않고 시작** 을 사용했지만 디버거를 사용하려는 경우 Visual Studio의 기본 인스턴스로 돌아갑니다. **디버그** 메뉴에서 **프로세스에 연결**을 클릭합니다. 대화 상자에서 프로그램 이름이 **devenv**인 Visual Studio의 실험적 인스턴스를 선택합니다.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 확장 설치 및 제거
  자신의 컴퓨터나 다른 컴퓨터의 Visual Studio 기본 인스턴스에서 확장을 실행하려면 다음 단계를 수행합니다.
 
 1. 사용 중인 컴퓨터에서 확장 프로젝트를 통해 빌드된 **.vsix** 파일을 찾습니다.
@@ -140,5 +140,5 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
    *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \extensions**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [프로필을 정의 하 여 uml 확장](../modeling/define-a-profile-to-extend-uml.md) [사용자 지정 모델링 도구 상자 정의](../modeling/define-a-custom-modeling-toolbox-item.md) [uml 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md) [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

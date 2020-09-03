@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544978"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft 도움말 뷰어
@@ -50,7 +50,7 @@ Microsoft 도움말 뷰어를 사용하여 로컬 컴퓨터에서 다양한 제�
 ## <a name="navigating-the-help-viewer"></a>도움말 뷰어 탐색
  탐색 탭을 사용 하 여 설치 된 콘텐츠에서 정보를 찾고, 항목 탭 또는 탭에서 설치 된 콘텐츠를 보고, 콘텐츠 **관리** 탭을 사용 하 여 콘텐츠를 관리할 수 있습니다. 도구 모음의 단추를 사용 하 여 추가 작업을 수행 하 고 창의 오른쪽 아래에서 추가 정보를 찾을 수도 있습니다.
 
-|시나리오|Description|
+|시나리오|설명|
 |-|-|
 |탐색|**콘텐츠** 탭을 사용하여 설치된 콘텐츠를 계층으로 표시하고 조건을 지정하여 나타나는 제목을 필터링할 수 있습니다.<br /><br /> **검색** 탭을 사용하여 콘텐츠 전체에서 코드 및 항목 제목을 비롯한 어구를 검색할 수 있습니다.<br /><br /> **인덱스** 탭을 사용하여 인덱스를 검색하고 조건을 지정하여 항목을 필터링할 수 있으며 인덱스 항목이 지정한 텍스트를 포함하거나 지정한 텍스트로 시작하게 할 수 있습니다.<br /><br /> **즐겨찾기** 탭을 사용하여 자주 사용하는 항목의 링크를 저장하고 최근에 본 항목의 목록을 표시할 수 있습니다.|
 |항목 보기|각 항목은 탭에 나타나며 동시에 여러 항목을 열 수 있습니다.|
@@ -74,5 +74,5 @@ Microsoft 도움말 뷰어를 사용하여 로컬 컴퓨터에서 다양한 제�
 
   도움말 뷰어 창의 아래쪽 영역에는 보류 중인 다운로드의 총 크기, 이러한 다운로드에 필요한 디스크 공간의 크기 및 사용 가능한 디스크 공간의 크기에 대한 정보가 포함되어 있습니다. 이 영역에는 발생했을 수 있는 오류에 대한 정보와 업데이트를 사용할 수 있는 경우 설치된 콘텐츠를 새로 고치기 위해 선택할 수 있는 링크도 포함되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md) [로컬 콘텐츠 설치 및 관리](../ide/install-and-manage-local-content.md) [도움말 뷰어 문제 해결](../ide/troubleshooting-the-help-viewer.md) [정보 찾기](../ide/locate-information.md)

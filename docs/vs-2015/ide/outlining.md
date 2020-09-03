@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544965"
 ---
 # <a name="outlining"></a>개요
@@ -48,7 +48,7 @@ ms.locfileid: "85544965"
 |개요 표시 중지|(Ctrl+M, Ctrl+P) - 문서 전체에 대한 개요 정보를 모두 제거합니다.|
 |현재 영역 숨기기 중지|(Ctrl+M, Ctrl+U) - 현재 선택한 사용자 정의 영역에 대한 개요 정보를 제거합니다. Visual Basic에서 사용할 수 없습니다.|
 |정의 부분만 보이기|(Ctrl+M, Ctrl+O) - 모든 형식의 멤버를 축소합니다.|
-|블록 축소:\<logical boundary>|(Visual C++) 삽입 지점이 포함된 함수의 영역을 축소합니다. 예를 들어 삽입 지점이 루프 안에 있는 경우 루프가 숨겨집니다.|
-|모두 축소:\<logical structures>|(Visual C++) 함수 내부의 모든 구조를 축소합니다.|
+|블록 축소: \<logical boundary>|(Visual C++) 삽입 지점이 포함된 함수의 영역을 축소합니다. 예를 들어 삽입 지점이 루프 안에 있는 경우 루프가 숨겨집니다.|
+|모두 축소: \<logical structures>|(Visual C++) 함수 내부의 모든 구조를 축소합니다.|
 
  Visual Studio SDK를 사용하여 확장 또는 축소할 텍스트 영역을 정의할 수도 있습니다. [연습: 개요](../extensibility/walkthrough-outlining.md)를 참조하세요.

@@ -1,5 +1,5 @@
 ---
-title: TASK_STATE_WAITING_ON_CHILDREN 필드 | 마이크로 소프트 문서
+title: TASK_STATE_WAITING_ON_CHILDREN 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 27b9963db54d939b3d509da451478c20dbe0e7d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712579"
 ---
 # <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 필드
-작업이 대리자 실행이 완료되었으며 연결된 자식 작업이 완료되기를 암시적으로 기다리고 있습니다.
+태스크가 대리자 실행을 완료 하 고 연결 된 자식 작업이 완료 될 때까지 암시적으로 대기 합니다.
 
- **네임스페이스:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **조립:** mscorlib *(mscorlib.dll)*
+ **어셈블리:** mscorlib ( *mscorlib.dll*)
 
- .NET Framework에서 이 내부 멤버에 액세스할 수 없으므로 CIL(일반 중간 언어)에서 다음 구문이 제공됩니다.
+ .NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ ms.locfileid: "80712579"
 ```
 
 ## <a name="remarks"></a>설명
- [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에 이 값이 포함되어 <xref:System.Threading.Tasks.Task.Status%2A> 있으면 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>속성이 반환됩니다.
+ [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에이 값이 포함 되어 있으면 <xref:System.Threading.Tasks.Task.Status%2A> 속성은을 반환 합니다 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016293"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>방법: 모듈을 사용 하 여 파일 포함
@@ -52,7 +53,7 @@ ms.locfileid: "86016293"
 
      프로젝트에 파일을 추가 하면 해당 항목이 모듈의 Elements.xml 파일에 자동으로 추가 됩니다. 프로젝트를 배포할 때 파일은 프로젝트의 루트 디렉터리를 기준으로 하 여 SharePoint server에 복사 됩니다 .이 디렉터리는 **파일** 요소의 **Url** 특성 (예:)에 의해 지정 됩니다 `Url="Module1/New Folder/SomeFile.doc` . 파일의 배포 위치를 변경 하려면 **솔루션 탐색기** 의 다른 폴더로 이동 하거나 해당 **Url** 설정을 변경 합니다.
 
-8. 문서 라이브러리에 표시할 모든 파일의 경우 `Type="GhostableInLibrary"` *Elements.xml*의 해당 항목에 특성을 추가 합니다. 예제:
+8. 문서 라이브러리에 표시할 모든 파일의 경우 `Type="GhostableInLibrary"` *Elements.xml*의 해당 항목에 특성을 추가 합니다. 예를 들면 다음과 같습니다.
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />
@@ -62,6 +63,6 @@ ms.locfileid: "86016293"
 
      파일이 SharePoint의 지정 된 위치에 복사 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

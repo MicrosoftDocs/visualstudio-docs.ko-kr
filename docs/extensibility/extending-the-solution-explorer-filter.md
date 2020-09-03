@@ -1,5 +1,5 @@
 ---
-title: 솔루션 탐색기 필터 확장 | 마이크로 소프트 문서
+title: 솔루션 탐색기 필터 확장 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711567"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>솔루션 탐색기 필터 확장
-**솔루션 탐색기** 필터 기능을 확장하여 다른 파일을 표시하거나 숨길 수 있습니다. 예를 들어 이 연습에서 보여 주는 것처럼 **솔루션 탐색기에서**C# 클래스 팩터리 파일만 표시하는 필터를 만들 수 있습니다.
+**솔루션 탐색기** 필터 기능을 확장 하 여 다른 파일을 표시 하거나 숨길 수 있습니다. 예를 들어이 연습에서 설명 하는 대로 **솔루션 탐색기**에서 c # 클래스 팩터리 파일만 표시 하는 필터를 만들 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
- Visual Studio 2015부터는 다운로드 센터에서 Visual Studio SDK를 설치하지 않습니다. 시각적 스튜디오 설정에서 선택적 기능으로 포함됩니다. 나중에 VS SDK를 설치할 수도 있습니다. 자세한 내용은 [Visual Studio SDK 설치를](../extensibility/installing-the-visual-studio-sdk.md)참조하십시오.
+## <a name="prerequisites"></a>필수 구성 요소
+ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
-### <a name="create-a-visual-studio-package-project"></a>비주얼 스튜디오 패키지 프로젝트 만들기
+### <a name="create-a-visual-studio-package-project"></a>Visual Studio 패키지 프로젝트 만들기
 
-1. 라는 VSIX 프로젝트를 `FileFilter`만듭니다. FileFilter라는 사용자 지정 명령 항목 템플릿을 **추가합니다.** 자세한 내용은 [메뉴 명령을 사용하여 확장 만들기를](../extensibility/creating-an-extension-with-a-menu-command.md)참조하십시오.
+1. 이라는 VSIX 프로젝트를 만듭니다 `FileFilter` . **FileFilter**라는 사용자 지정 명령 항목 템플릿을 추가 합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
-2. 및 `Microsoft.VisualStudio.Utilities`에 `System.ComponentModel.Composition` 대한 참조를 추가합니다.
+2. 및에 대 한 참조를 추가 `System.ComponentModel.Composition` `Microsoft.VisualStudio.Utilities` 합니다.
 
-3. **솔루션 탐색기** 도구 모음에 메뉴 명령을 표시합니다. 파일 *필터 패키지.vsct 파일을 엽니다.*
+3. 메뉴 명령이 **솔루션 탐색기** 도구 모음에 표시 되도록 합니다. *Filefilterpackage. vsct* 파일을 엽니다.
 
-4. `<Button>` 블록을 다음으로 변경합니다.
+4. 블록을 `<Button>` 다음과 같이 변경 합니다.
 
     ```xml
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">
@@ -46,32 +46,32 @@ ms.locfileid: "80711567"
 
 ### <a name="update-the-manifest-file"></a>매니페스트 파일 업데이트
 
-1. *source.extension.vsixmanifest* 파일에서 MEF 구성 요소인 에셋을 추가합니다.
+1. *Source.extension.vsixmanifest* 파일에서 MEF 구성 요소인 자산을 추가 합니다.
 
-2. **자산** 탭에서 **새** 단추를 선택합니다.
+2. **자산** 탭에서 **새로 만들기** 단추를 선택 합니다.
 
-3. **형식** 필드에서 **Microsoft.VisualStudio.Mef구성 요소를**선택합니다.
+3. **형식** 필드에서 **VisualStudio**를 선택 합니다.
 
-4. **소스** 필드에서 현재 **솔루션의 A 프로젝트를 선택합니다.**
+4. **원본** 필드에서 **현재 솔루션의 프로젝트**를 선택 합니다.
 
-5. **프로젝트** 필드에서 **FileFilter**를 선택한 다음 **확인** 단추를 선택합니다.
+5. **프로젝트** 필드에서 **FileFilter**를 선택한 다음 **확인** 단추를 선택 합니다.
 
 ### <a name="add-the-filter-code"></a>필터 코드 추가
 
-1. *FileFilterPackageGuids.cs* 파일에 일부 GUID를 추가합니다.
+1. *FileFilterPackageGuids.cs* 파일에 일부 guid를 추가 합니다.
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. *FileNameFilter.cs*라는 FileFilter 프로젝트에 클래스 파일을 추가 합니다.
+2. *FileNameFilter.cs*이라는 FileFilter 프로젝트에 클래스 파일을 추가 합니다.
 
-3. 빈 네임스페이스와 빈 클래스를 아래 코드로 바꿉니다.
+3. 빈 네임 스페이스와 빈 클래스를 아래 코드로 바꿉니다.
 
-     메서드는 `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` 솔루션 ()의`rootItems`루트를 포함 하는 컬렉션을 사용 하 고 필터에 포함 될 항목의 컬렉션을 반환 합니다.
+     `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)`메서드는 솔루션 ()의 루트를 포함 하는 컬렉션을 사용 하 `rootItems` 고 필터에 포함할 항목의 컬렉션을 반환 합니다.
 
-     메서드는 `ShouldIncludeInFilter` 지정한 조건에 따라 **솔루션 탐색기** 계층 구조의 항목을 필터링합니다.
+     `ShouldIncludeInFilter`메서드는 지정한 조건에 따라 **솔루션 탐색기** 계층의 항목을 필터링 합니다.
 
     ```csharp
     using System;
@@ -158,7 +158,7 @@ ms.locfileid: "80711567"
 
     ```
 
-4. *FileFilter.cs*FileFilter 생성자에서 명령 배치 및 처리 코드를 제거합니다. 결과는 다음과 같아야 합니다.
+4. *FileFilter.cs*에서 명령 배치를 제거 하 고 FileFilter 생성자에서 코드를 처리 합니다. 결과는 다음과 같습니다.
 
     ```csharp
     private FileFilter(Package package)
@@ -172,9 +172,9 @@ ms.locfileid: "80711567"
     }
     ```
 
-     메서드도 `ShowMessageBox()` 제거합니다.
+     메서드도 제거 `ShowMessageBox()` 합니다.
 
-5. *FileFilterPackage.cs*메서드의 코드를 다음과 `Initialize()` 같은 것으로 바꿉니다.
+5. *FileFilterPackage.cs*에서 메서드의 코드를 다음 코드로 바꿉니다 `Initialize()` .
 
     ```csharp
     protected override void Initialize()
@@ -186,10 +186,10 @@ ms.locfileid: "80711567"
 
 ### <a name="test-your-code"></a>코드 테스트
 
-1. 프로젝트를 빌드하고 실행합니다. 두 번째 Visual Studio 인스턴스가 표시됩니다. 이를 실험 인스턴스라고 합니다.
+1. 프로젝트를 빌드하고 실행합니다. 두 번째 Visual Studio 인스턴스가 표시됩니다. 이를 실험적 인스턴스 라고 합니다.
 
-2. Visual Studio의 실험 인스턴스에서 C# 프로젝트를 엽니다.
+2. Visual Studio의 실험적 인스턴스에서 c # 프로젝트를 엽니다.
 
-3. **솔루션 탐색기** 도구 모음에 추가한 단추를 찾습니다. 왼쪽에서 네 번째 단추여야 합니다.
+3. **솔루션 탐색기** 도구 모음에서 추가한 단추를 찾습니다. 왼쪽의 네 번째 단추 여야 합니다.
 
-4. 단추를 클릭하면 모든 파일이 필터링되어야 하며 **모든 항목이 보기에서 필터링된** 것을 볼 수 있습니다. 솔루션 **탐색기에서**.
+4. 단추를 클릭 하면 모든 파일이 필터링 되어야 하며 **모든 항목이 보기에서 필터링 된** 것을 볼 수 있습니다. **솔루션 탐색기**합니다.

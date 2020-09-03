@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545056"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 끊어진 암호화 알고리즘 사용 안 함
@@ -66,7 +66,7 @@ var hashAlg = MD5.Create();
 
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```
 using System.Security.Cryptography;
@@ -84,7 +84,7 @@ RC2 encAlg = RC2.Create();
 
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```
 using System.Security.Cryptography;
@@ -104,7 +104,7 @@ DES encAlg = DES.Create();
 
 ```
 
-### <a name="solution"></a>솔루션
+### <a name="solution"></a>해결 방법
 
 ```
 using System.Security.Cryptography;

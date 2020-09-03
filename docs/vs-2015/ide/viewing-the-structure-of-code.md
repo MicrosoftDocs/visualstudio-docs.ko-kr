@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545017"
 ---
 # <a name="viewing-the-structure-of-code"></a>코드 구조 보기
@@ -57,7 +57,7 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
 > [!NOTE]
 > 사용 중인 Visual Studio 버전 및 설정이 IDE의 기능에 영향을 줄 수 있습니다. 이 항목에 설명된 내용과 다를 수 있습니다.
 
-## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a>클래스 뷰 (Visual Basic, c #, c + +)
+## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a> 클래스 뷰 (Visual Basic, c #, c + +)
  **클래스 뷰**는 **솔루션 탐색기**의 일부로 표시되며, 별도의 창으로 표시됩니다. **클래스 뷰** 창에는 애플리케이션의 요소가 표시됩니다. 위쪽 창에는 네임스페이스, 형식, 인터페이스, 열거 및 클래스가 표시되고, 아래쪽 창에는 위쪽 창에서 선택한 형식에 속하는 멤버가 표시됩니다. 이 창을 사용하여 소스 코드(또는 요소가 솔루션의 외부에서 정의된 경우 **개체 브라우저**)의 멤버 정의로 이동할 수 있습니다.
 
  **클래스 뷰**에서 해당 요소를 보기 위해 프로젝트를 컴파일할 필요가 없습니다. 프로젝트에서 코드를 수정하면 창이 새로 고쳐집니다.
@@ -193,7 +193,7 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
 |**참조로 이동**|사용 가능한 경우 소스 코드에 형식 또는 멤버의 참조를 표시합니다.|
 |**호출 계층 구조 보기**|**호출 계층 구조** 창에 선택한 메서드를 표시합니다.|
 
-## <a name="code-definition-window-c-c"></a><a name="BKMK_CodeDefinition"></a>코드 정의 창 (c #, c + +)
+## <a name="code-definition-window-c-c"></a><a name="BKMK_CodeDefinition"></a> 코드 정의 창 (c #, c + +)
  **코드 정의** 창은 활성 프로젝트에서 선택한 형식 또는 멤버의 정의를 표시합니다. 형식 또는 멤버는 코드 편집기 또는 코드 보기 창에서 선택할 수 있습니다.
 
  이 창은 읽기 전용이지만 안에 중단점 또는 책갈피를 설정할 수 있습니다. 표시된 정의를 수정하려면 바로 가기 메뉴의 **정의 편집**을 선택합니다. 그러면 코드 편집기에 소스 파일이 열리고 정의가 시작되는 줄로 삽입 지점이 이동합니다.
@@ -221,5 +221,5 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
 ### <a name="document-outline-window"></a>문서 개요 창
  XAML 페이지용 디자이너 또는 Windows Forms 디자이너와 같은 디자이너 뷰와 함께 또는 HTML 페이지와 함께 **문서 개요** 창을 사용할 수 있습니다. 이 창은 폼 또는 페이지의 논리 구조를 확인하고 깊이 포함되거나 숨겨진 컨트롤을 찾을 수 있도록 트리 뷰에 요소를 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [클래스 뷰 및 개체 브라우저 아이콘](../ide/class-view-and-object-browser-icons.md)

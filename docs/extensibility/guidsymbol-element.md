@@ -1,5 +1,5 @@
 ---
-title: Guid 기호 요소 | 마이크로 소프트 문서
+title: GuidSymbol 요소 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711123"
 ---
-# <a name="guidsymbol-element"></a>Guid Symbol 요소
-요소에는 `GuidSymbol` 메뉴, 그룹 또는 명령을 나타내는 GUID:ID 쌍의 GUID가 포함되어 있습니다. ID는 요소의 `IDSymbol` `GuidSymbol` 요소에서 제공됩니다. 요소에는 `GuidSymbol` 속성에 `name` 포함된 GUID에 대해 친숙한 이름을 제공하는 `value` 특성이 있습니다.
+# <a name="guidsymbol-element"></a>GuidSymbol 요소
+`GuidSymbol`요소는 메뉴, 그룹 또는 명령을 나타내는 guid: ID 쌍의 guid를 포함 합니다. 이 ID는 `IDSymbol` 요소의 요소에서 가져옵니다 `GuidSymbol` . 요소에는 `GuidSymbol` `name` 특성에 포함 된 GUID에 대 한 친숙 한 이름을 제공 하는 특성이 있습니다 `value` .
 
 ## <a name="syntax"></a>구문
 
@@ -35,25 +35,25 @@ ms.locfileid: "80711123"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|Description|
 |---------------|-----------------|
-|name|필수 사항입니다. GUID 기호의 이름입니다.|
-|값|필수 사항입니다. GUID 기호의 GUID입니다.|
+|name|필수 요소. GUID 기호의 이름입니다.|
+|값|필수 요소. GUID 기호의 GUID입니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[ID 기호 요소](../extensibility/idsymbol-element.md)|메뉴, 그룹 또는 명령을 나타내는 GUID:ID 쌍의 ID를 포함합니다.|
+|[IDSymbol 요소](../extensibility/idsymbol-element.md)|메뉴, 그룹 또는 명령을 나타내는 GUID: ID 쌍의 ID를 포함 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[기호 요소](../extensibility/symbols-element.md)|`GuidSymbol` *.vsct* 파일의 요소를 그룹화합니다.|
+|[기호 요소](../extensibility/symbols-element.md)|`GuidSymbol` *Vsct* 파일의 요소를 그룹화 합니다.|
 
 ## <a name="remarks"></a>설명
- 일반적으로 *.vsct* 파일에는 `GuidSymbol` 패키지 자체에 `Symbols` 대한 세 가지 요소가 포함되어 있으며, 하나는 명령 집합(패키지에서 사용할 수 있는 메뉴, 그룹 및 명령의 컬렉션)과 단추 및 기타 시각적 구성 요소에 대한 아이콘을 제공하는 비트맵에 대한 요소가 포함되어 있습니다. 지정된 `IDSymbol` `GuidSymbol` 요소의 모든 요소에는 `value`고유한 . 그러나 `IDSymbol` 동일한 값을 가진 요소는 서로 다른 부모가 있는 한 패키지에 존재할 수 있습니다.
+ 일반적으로 *. vsct* 파일에는 해당 섹션에 세 개의 요소가 포함 되어 있습니다. 하나는 패키지 자체를 위한 것이 고, 다른 하나는 `GuidSymbol` `Symbols` 명령 집합 (패키지를 사용 하 여 사용 가능한 메뉴, 그룹 및 명령의 컬렉션) 및 단추와 기타 시각적 구성 요소에 대 한 아이콘을 제공 하는 비트맵에 대 한 것입니다. `IDSymbol`지정 된 요소의 모든 요소에 `GuidSymbol` 는 고유한가 있어야 합니다 `value` . 그러나 `IDSymbol` 동일한 값을 가진 요소는 부모 항목이 다른 경우 패키지에 있을 수 있습니다.
 
-## <a name="see-also"></a>참조
-- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>추가 정보
+- [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

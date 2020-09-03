@@ -1,5 +1,5 @@
 ---
-title: 기본 이름 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: DefaultName 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712314"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>기본 이름 요소(비주얼 스튜디오 템플릿)
-Visual Studio 프로젝트 시스템이 프로젝트 또는 항목을 만들 때 생성할 이름을 지정합니다.
+# <a name="defaultname-element-visual-studio-templates"></a>DefaultName 요소 (Visual Studio 템플릿)
+프로젝트 또는 항목을 만들 때 Visual Studio 프로젝트 시스템에서 생성 하는 이름을 지정 합니다.
 
- \<VS템플릿 \<> 기본 \<이름>> 템플릿데이터 데이터
+ \<VSTemplate> \<TemplateData>
+ \<DefaultName>
 
 ## <a name="syntax"></a>구문
 
@@ -44,26 +45,26 @@ Visual Studio 프로젝트 시스템이 프로젝트 또는 항목을 만들 때
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 이 텍스트는 프로젝트 또는 항목의 기본 이름을 지정합니다.
+ 이 텍스트는 프로젝트 또는 항목의 기본 이름을 지정 합니다.
 
 ## <a name="remarks"></a>설명
  `DefaultName`는 선택적 요소입니다.
 
- 프로젝트의 경우 이 요소는 디스크에 프로젝트를 저장하는 디렉터리 이름을 지정합니다. 항목의 경우 원본 파일의 파일 이름을 지정합니다.
+ 프로젝트의 경우이 요소는 디스크에 프로젝트를 저장 하는 디렉터리의 이름을 지정 합니다. 항목의 경우 원본 파일의 파일 이름을 지정 합니다.
 
- 프로젝트 또는 항목을 만들 때 **새 프로젝트** 대화 상자 또는 **새 항목 추가** 대화 상자에서 사용할 수 있는 **이름** 옵션을 사용하여 기본 이름을 수정할 수 있습니다.
+ 프로젝트 또는 항목을 만들 때 **새 프로젝트** 대화 상자 또는 **새 항목 추가** 대화 상자에서 사용할 수 있는 **이름** 옵션을 사용 하 여 기본 이름을 수정할 수 있습니다.
 
- 프로젝트 시스템에서 프로젝트 또는 항목에 대한 기본 이름을 생성하지 않으려면 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) 요소를 `False`로 설정합니다.
+ 프로젝트 시스템에서 프로젝트 또는 항목에 대 한 기본 이름을 생성 하지 않도록 하려면 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) 요소를로 설정 `False` 합니다.
 
-## <a name="example"></a>예제
- 다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스에 대 한 표준 항목 템플릿에 대 한 메타 데이터를 보여 줍니다.
+## <a name="example"></a>예
+ 다음 예제에서는 클래스의 표준 항목 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,5 +83,5 @@ Visual Studio 프로젝트 시스템이 프로젝트 또는 항목을 만들 때
 ```
 
 ## <a name="see-also"></a>참조
-- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

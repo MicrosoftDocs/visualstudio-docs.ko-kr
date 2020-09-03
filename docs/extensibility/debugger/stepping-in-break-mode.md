@@ -1,5 +1,5 @@
 ---
-title: 브레이크 모드에서 스테핑 | 마이크로 소프트 문서
+title: 중단 모드에서 단계별 실행 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712849"
 ---
-# <a name="stepping-in-break-mode"></a>브레이크 모드에서 스테핑
-다음 섹션에서는 디버거가 중단 모드에 있을 때 발생하는 프로세스에 대해 설명하고 코드를 단계별로 수행해야 합니다.
+# <a name="stepping-in-break-mode"></a>중단 모드에서 단계별 실행
+다음 섹션에서는 디버거가 중단 모드에 있을 때 발생 하는 프로세스에 대해 설명 하 고 코드를 단계별로 실행 해야 합니다.
 
-## <a name="stepping-process"></a>스테핑 프로세스
+## <a name="stepping-process"></a>단계별 프로세스
 
-1. [IDebugProgram2::STEPKIND](../../extensibility/debugger/reference/idebugprogram2-step.md) [STEPKIND](../../extensibility/debugger/reference/stepkind.md) 및 [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) 인수를 사용하여 단계를 실행합니다.
+1. 단계를 실행 하려면 [Stkind](../../extensibility/debugger/reference/stepkind.md) 와 [stunit](../../extensibility/debugger/reference/stepunit.md) 인수를 사용 하 여 [IDebugProgram2:: step](../../extensibility/debugger/reference/idebugprogram2-step.md) 을 호출 합니다.
 
-2. 단계가 완료되면 [IDebugStepCompleteEvent2를](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 중지 이벤트로 보냅니다.
+2. 단계가 완료 되 면 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 를 중지 이벤트로 보냅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

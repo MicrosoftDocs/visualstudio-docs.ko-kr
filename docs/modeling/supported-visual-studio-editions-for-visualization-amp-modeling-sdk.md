@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3be233ce8730879c2f0406ec9cc180685992c6bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544939"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>시각화 및 모델링 SDK에서 지원되는 Visual Studio 버전
@@ -25,7 +25,7 @@ ms.locfileid: "85544939"
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
-|Product|다운로드 링크|
+|제품|다운로드 링크|
 |-|-|
 |Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
 |Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
@@ -35,7 +35,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 ## <a name="deployment-editions"></a>배포 버전
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]는 사용자가 작성 하는 도메인별 언어를 배포 하기 위해 다음 구성을 지원 합니다.
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 는 사용자가 작성 하는 도메인별 언어를 배포 하기 위해 다음 구성을 지원 합니다.
 
 - Visual Studio Enterprise
 

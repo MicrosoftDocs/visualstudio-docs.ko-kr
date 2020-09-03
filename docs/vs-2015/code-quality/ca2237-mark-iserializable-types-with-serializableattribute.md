@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8778b0bfa035c782cf35d205fc59d463112196c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545160"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: SerializableAttribute로 ISerializable 형식 표시
@@ -44,7 +44,7 @@ ms.locfileid: "85545160"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  예외 클래스에 대해이 규칙에서 경고를 표시 하지 마십시오 .이 규칙은 응용 프로그램 도메인에서 올바르게 작동 하기 위해 serialize 할 수 있어야 하기 때문입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 형식을 보여 줍니다. 규칙을 <xref:System.SerializableAttribute> 충족 하려면 특성 줄의 주석 처리를 제거 합니다.
 
  [!code-csharp[FxCop.Usage.MarkSerializable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkSerializable/cs/FxCop.Usage.MarkSerializable.cs#1)]
