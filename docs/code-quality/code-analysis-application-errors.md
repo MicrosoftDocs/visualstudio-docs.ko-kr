@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521318"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 애플리케이션 오류
 
 이 섹션은 관리 코드 분석 도구에서 생성 되는 오류 메시지에 대 한 참조입니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 |코드|Description|
 |-|-|

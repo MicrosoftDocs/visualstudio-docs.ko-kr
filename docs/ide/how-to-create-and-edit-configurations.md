@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5b3ecd4abb05148130b0d87e287cbe199557951
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284505"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>방법: 구성 만들기 및 편집

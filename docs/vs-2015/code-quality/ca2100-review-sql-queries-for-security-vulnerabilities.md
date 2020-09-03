@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521214"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: 보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.
@@ -57,7 +57,7 @@ ms.locfileid: "85521214"
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 및 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-  형식의 ToString 메서드를 명시적 또는 암시적으로 사용 하 여 쿼리 문자열을 생성할 때이 규칙을 위반 하는 것을 알 수 있습니다. 다음은 예제입니다.
+  형식의 ToString 메서드를 명시적 또는 암시적으로 사용 하 여 쿼리 문자열을 생성할 때이 규칙을 위반 하는 것을 알 수 있습니다. 다음은 이에 대한 예입니다.
 
 ```
 int x = 10;
@@ -86,5 +86,5 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [보안 개요](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)

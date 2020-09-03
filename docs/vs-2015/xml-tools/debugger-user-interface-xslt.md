@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670985"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스(XSLT)
@@ -34,13 +34,13 @@ ms.locfileid: "72670985"
 
  지역 창에는 XSLT 변형 컨텍스트를 추적하는 미리 정의된 컨텍스트 변수도 표시됩니다. 다음 표에서는 XSLT 디버거에서 사용하는 미리 정의된 컨텍스트 변수를 설명합니다.
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |`last()`|컨텍스트 크기입니다.|
 |`position()`|컨텍스트 크기에 상대적인 컨텍스트 노드의 위치 또는 인덱스 번호입니다.|
 |`self::node()`|컨텍스트 노드의 값입니다.|
 
- 자세한 내용은 [방법: 디버거 컨텍스트 ](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)를 변경 합니다.
+ 자세한 내용은 [방법: 디버거 컨텍스트 변경](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)을 참조 하세요.
 
 ## <a name="output-window"></a>출력 창
  출력 창에는 디버깅하는 동안 발생하는 오류 메시지 또는 보안 예외가 표시됩니다.
@@ -78,7 +78,7 @@ ms.locfileid: "72670985"
  목록 맨 위에 있는 항목을 제외한 다른 항목을 클릭하면 표준 녹색 강조 표시 및 녹색 화살표를 사용하여 XSLT 실행 분기가 발생한 뷰어가 나타납니다.
 
 ## <a name="quickwatch-dialog-box"></a>간략한 조사식 대화 상자
- **간략 한 조사식** 대화 상자는 XPath 1.0 식을 평가 하는 데 사용 됩니다. 컨텍스트 노드(지역 창의 `self::node()` 노드)는 XPath 식을 실행하기 위한 컨텍스트를 제공합니다. XPath 식을 실행한 결과는 조사식 창에 표시됩니다.
+ **간략한 조사식** 대화 상자를 사용하여 XPath 1.0 식을 계산할 수 있습니다. 컨텍스트 노드(지역 창의 `self::node()` 노드)는 XPath 식을 실행하기 위한 컨텍스트를 제공합니다. XPath 식을 실행한 결과는 조사식 창에 표시됩니다.
 
  다음 목록에서는 XPath 식 계산에 대한 몇 가지 제한 사항을 설명합니다.
 
@@ -88,12 +88,12 @@ ms.locfileid: "72670985"
 
 - 사용자 정의 함수는 사용할 수 없습니다.
 
-  자세한 내용은 [방법: XPath 식 ](../xml-tools/how-to-evaluate-an-xpath-expression.md)를 계산 합니다.
+  자세한 내용은 [방법: XPath 식 계산](../xml-tools/how-to-evaluate-an-xpath-expression.md)을 참조 하세요.
 
 ## <a name="disassembly-window"></a>디스어셈블리 창
  디스어셈블리 창에는 XSLT 컴파일러에서 생성된 어셈블리 코드가 표시됩니다. 다른 모든 Visual Studio 디스어셈블리 창과 같은 방법으로 이 창을 사용할 수 있습니다.
 
- 자세한 내용은 다음을 [How 하십시오. 디스어셈블리 창 ](../debugger/how-to-use-the-disassembly-window.md)를 사용 합니다.
+ 자세한 내용은 [방법: 디스어셈블리 창 사용을 사용](../debugger/how-to-use-the-disassembly-window.md)합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [XSLT](../xml-tools/debugging-xslt.md) [디버거 기본 사항](../debugger/debugger-basics.md) [변수 창](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e) 디버깅

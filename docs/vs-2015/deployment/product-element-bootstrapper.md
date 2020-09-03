@@ -1,5 +1,5 @@
 ---
-title: '&lt;제품&gt; 요소 (부트스트래퍼) | Microsoft Docs'
+title: '&lt;Product &gt; 요소 (부트스트래퍼) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200651"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;제품&gt; 요소 (부트스트래퍼)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product &gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Product` 요소는 제품 파일 내의 최상위 XML 요소입니다.  
+`Product`요소는 제품 파일 내의 최상위 XML 요소입니다.  
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Product  
@@ -141,14 +141,14 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `Product` 요소는 제품 파일에 필요 합니다. 다음 특성이 있습니다.  
+ `Product`요소는 제품 파일에 필요 합니다. 여기에는 다음과 같은 특성이 있습니다.  
   
-|특성|Description|  
+|특성|설명|  
 |---------------|-----------------|  
-|`ProductCode`|제품에 대 한 고유 식별자입니다.|  
+|`ProductCode`|제품의 고유 식별자입니다.|  
   
-## <a name="example"></a>예제  
- 다음 코드 예제에는 설치에 대 한 완전 한 제품 파일을 보여 줍니다는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제에서는를 설치 하기 위한 전체 제품 파일을 보여 줍니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -252,5 +252,5 @@ ProductCode
 </Product>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

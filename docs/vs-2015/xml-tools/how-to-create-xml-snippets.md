@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e08821f1289927c4183a1639ae37136c220a88c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670900"
 ---
 # <a name="how-to-create-xml-snippets"></a>방법: XML 조각 만들기
@@ -22,25 +22,25 @@ ms.locfileid: "72670900"
 XML 편집기를 사용하여 새 XML 조각을 만들 수 있습니다. 이 편집기에는 새 XML 조각을 만들기 위한 상용구 조각인 "Snippet"이라는 XML 조각이 들어 있습니다.
 
 ## <a name="to-create-a-new-xml-snippet"></a>새 XML 조각을 만들려면
- 새 XML 코드 조각을 만들려면 새 XML 파일을 만들고 **조각 삽입** 기능을 사용 합니다.
+ 새 XML 코드 조각을 만들려면 새 XML 파일을 만들고 **코드 조각 삽입** 기능을 사용합니다.
 
-1. **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **파일**을 클릭 합니다.
+1. **파일** 메뉴에서 **새로 만들기**를 클릭하고 **파일**을 클릭합니다.
 
-2. **XML 파일** 을 클릭 한 다음 **열기**를 클릭 합니다.
+2. **XML 파일**을 클릭하고 **열기**를 클릭합니다.
 
-3. 편집기 창에서 마우스 오른쪽 단추를 클릭 하 고 **조각 삽입**을 선택 합니다.
+3. 편집기 창에서 마우스 오른쪽 단추를 클릭하고 **코드 조각 삽입**을 선택합니다.
 
 4. 목록에서 **코드 조각** 을 선택 하 고 enter 키를 누릅니다.
 
 5. 원하는 대로 새 조각을 변경합니다.
 
-6. **파일** 메뉴에서 **XMLFile 저장**을 선택 합니다.
+6. **파일** 메뉴에서 **XMLFile.xml 저장**을 선택합니다.
 
-     **다른 이름으로 파일 저장** 대화 상자가 표시 됩니다.
+     **다른 이름으로 파일 저장** 대화 상자가 표시됩니다.
 
-7. 새 조각에 대 한 이름을 입력 하 고 파일 **형식** 드롭다운 창에서 **조각 파일** 을 선택 합니다.
+7. 새 조각의 이름을 입력하고 **파일 형식** 드롭다운 창에서 **코드 조각 파일**을 선택합니다.
 
-8. **저장** 위치 드롭다운 목록을 사용 하 여 파일 위치를 My Documents\Visual Studio 2005 \ CODE Snippets\XML\My XML 코드 조각 폴더로 변경한 다음 **저장**을 누릅니다.
+8. **저장 위치** 드롭다운 목록을 사용하여 파일 위치를 My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets 폴더로 변경하고 **저장**을 누릅니다.
 
 ## <a name="snippet-description"></a>조각 설명
  이 단원에서는 상용구 조각의 몇 가지 핵심 요소에 대해 설명합니다. XML 조각에 사용 되는 스키마 요소에 대 한 자세한 내용은 [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)를 참조 하세요.
@@ -55,7 +55,7 @@ XML 편집기를 사용하여 새 XML 조각을 만들 수 있습니다. 이 편
 </SnippetTypes>
 ```
 
- @No__t_0 형식은 조각 **삽입** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정 합니다. @No__t_0 형식은 **감싸기** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정 합니다.
+ `Expansion` 형식은 **코드 조각 삽입** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정합니다. `SurroundsWith` 형식은 **포함** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정합니다.
 
 ### <a name="code-element"></a>Code 요소
  `Code` 요소는 조각을 호출할 때 삽입할 XML 텍스트를 정의합니다.
@@ -101,7 +101,7 @@ XML 편집기를 사용하여 새 XML 조각을 만들 수 있습니다. 이 편
 </Literal
 ```
 
- 리터럴은 함수를 참조할 수도 있습니다. XML 편집기에는 **Lookupprefix**라는 함수가 포함 되어 있습니다. **Lookupprefix** 함수는이 조각이 호출 된 XML 문서의 위치에서 지정 된 네임 스페이스 URI를 조회 하 고 해당 네임 스페이스에 대해 정의 된 네임 스페이스 접두사를 반환 합니다 (있는 경우). 여기에는 콜론 (:) 해당 이름입니다. 다음은 **Lookupprefix** 함수를 사용 하는 `Literal` 요소의 예입니다.
+ 리터럴은 함수를 참조할 수도 있습니다. XML 편집기에는 **Lookupprefix**라는 함수가 포함 되어 있습니다. **LookupPrefix** 함수는 이 코드 조각이 호출된 XML 문서의 특정 위치에서 지정된 네임스페이스 URI를 찾아서 이 네임스페이스에 대해 정의된 네임스페이스 접두사(있을 경우)를 반환하며 해당 이름에는 콜론(:)이 포함됩니다. 다음은 **LookupPrefix** 함수를 사용하는 `Literal` 요소의 예제입니다.
 
 ```
 <Literal Editable="false">
@@ -112,5 +112,5 @@ XML 편집기를 사용하여 새 XML 조각을 만들 수 있습니다. 이 편
 
  그런 다음 XML 조각에서 $prefix$ 변수를 사용할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Xml 코드 조각](../xml-tools/xml-snippets.md) [방법: xml 조각 사용](../xml-tools/how-to-use-xml-snippets.md) [방법: Xml 스키마에서 xml 조각 생성](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

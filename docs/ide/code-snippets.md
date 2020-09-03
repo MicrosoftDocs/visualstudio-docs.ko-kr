@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585420"
 ---
 # <a name="code-snippets"></a>코드 조각
@@ -29,7 +29,7 @@ ms.locfileid: "75585420"
 코드 조각은 오른쪽 클릭 메뉴(상황에 맞는 메뉴) 명령이나 바로 가기 키 조합을 사용하여 코드 파일에 삽입할 수 있는 다시 사용 가능한 작은 블록입니다. 일반적으로 `try-finally` 또는 `if-else` 블록과 같이 자주 사용되는 코드 블록을 포함하지만 전체 클래스나 메서드를 삽입하는 데 사용할 수 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [코드 조각(Mac용 Visual Studio)](/visualstudio/mac/snippets)을 참조하세요.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [코드 조각(Mac용 Visual Studio)](/visualstudio/mac/snippets)을 참조하세요.
 
 코드 조각은 C#, C++, Visual Basic, XML, T-SQL 등을 비롯하여 많은 언어에 대해 사용할 수 있습니다. 언어에 대해 사용할 수 있는 모든 설치된 코드 조각을 보려면 **도구** 메뉴에서 **코드 조각 관리자**를 열거나 **Ctrl**+**K**, **Ctrl**+**B**를 누르고 맨 위에 있는 드롭다운 메뉴에서 언어를 선택합니다.
 
@@ -95,7 +95,7 @@ End Property
 
 `newPropertyValue`를 `m_property`로 변경하면 `newPropertyValue`의 모든 인스턴스가 변경됩니다. 속성 선언에서 `String`을 `Int`로 변경하면 set 메서드의 값도 `Int`로 변경됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)
 - [방법: 코드 조각 배포](../ide/how-to-distribute-code-snippets.md)

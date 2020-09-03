@@ -1,5 +1,5 @@
 ---
-title: 시스템 요구 사항 감지 | 마이크로 소프트 문서
+title: 시스템 요구 사항 검색 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9ab254df5d53f379704128d8860b8d7fe5655bae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708729"
 ---
-# <a name="detect-system-requirements"></a>시스템 요구 사항 감지
-비주얼 스튜디오를 설치하지 않으면 VSPackage가 작동하지 않습니다. Microsoft Windows 설치 관리자를 사용하여 VSPackage 설치를 관리하는 경우 설치 관리자를 구성하여 Visual Studio가 설치되었는지 여부를 감지할 수 있습니다. 특정 버전의 Windows 또는 특정 양의 RAM과 같은 다른 요구 사항이 있는지 시스템을 확인하도록 구성할 수도 있습니다.
+# <a name="detect-system-requirements"></a>시스템 요구 사항 검색
+Visual Studio가 설치 되어 있지 않으면 VSPackage를 사용할 수 없습니다. Microsoft Windows Installer를 사용 하 여 VSPackage 설치를 관리 하는 경우 Visual Studio가 설치 되어 있는지 여부를 검색 하도록 설치 관리자를 구성할 수 있습니다. 또한 특정 버전의 Windows 또는 특정 RAM과 같은 다른 요구 사항이 있는지 시스템을 검사 하도록 구성할 수 있습니다.
 
-## <a name="detect-visual-studio-editions"></a>비주얼 스튜디오 에디션 감지
- Visual Studio 에디션이 설치되어 있는지 확인하려면 다음 표에 나열된 대로 **설치** 레지스트리 키의 값이 적절한 폴더의 *(REG_DWORD) 1인지* 확인합니다. Visual Studio 버전에는 계층 구조가 있습니다.
+## <a name="detect-visual-studio-editions"></a>Visual Studio 버전 검색
+ Visual Studio 버전이 설치 되어 있는지 확인 하려면 다음 표에 나열 된 것과 같이 해당 폴더에서 **Install** 레지스트리 키의 값이 *(REG_DWORD) 1* 인지 확인 합니다. Visual Studio 버전의 계층 구조는 다음과 같습니다.
 
 1. Enterprise
 
@@ -30,20 +30,20 @@ ms.locfileid: "80708729"
 
 3. 커뮤니티
 
-최신 버전이 설치되면 해당 에디션의 레지스트리 키와 이전 버전이 추가됩니다. 즉, 엔터프라이즈 버전이 설치된 경우 **설치** 키는 엔터프라이즈 및 커뮤니티 버전에 대해 *1로* 설정됩니다. 따라서 필요한 최신 버전만 확인해야 합니다.
+최신 버전을 설치 하면 이전 버전의 뿐만 아니라 해당 버전에 대 한 레지스트리 키도 추가 됩니다. 즉, Enterprise edition이 설치 되어 있는 경우 **설치** 키는 enterprise의 경우 1로, Professional 및 Community 버전의 경우 *1* 로 설정 됩니다. 따라서 필요한 최신 버전을 확인 해야 합니다.
 
 > [!NOTE]
-> 레지스트리 편집기의 64비트 버전에서는 32비트 키가 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**로 표시됩니다. 비주얼 스튜디오 키는 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\마이크로소프트\DevDiv\vs\서비스\\**.
+> 64 비트 버전의 레지스트리 편집기에서 32 비트 키는 **HKEY_LOCAL_MACHINE \software\wow6432node \\ **아래에 표시 됩니다. Visual Studio 키는 **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\devdiv\vs\servicing \\ **아래에 있습니다.
 
-|Product|키|
+|제품|키|
 |-------------|---------|
-|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\서비스\14.0\엔터프라이즈|
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\서비스\14.0\전문가|
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\서비스\14.0\커뮤니티|
-|비주얼 스튜디오 2015 쉘 (통합 및 격리)|HKEY_LOCAL_MACHINE\SOFTWARE\마이크로소프트\데브디브\vs\서비스\14.0\아이소쉘|
+|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
+|Visual Studio 2015 Shell (통합 및 격리)|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
 
-## <a name="detect-when-visual-studio-is-running"></a>Visual Studio가 실행 중일 때 감지
- VSPackage를 설치할 때 Visual Studio가 실행 중인 경우 VSPackage를 올바르게 등록할 수 없습니다. 설치 관리자는 Visual Studio가 실행 중인 시기를 감지한 다음 프로그램 설치를 거부해야 합니다. Windows 설치 관리자는 테이블 항목을 사용하여 이러한 검색을 활성화할 수 없습니다. 대신 다음과 같이 사용자 지정 작업을 만들어야 `EnumProcesses` 합니다. *devenv.exe*
+## <a name="detect-when-visual-studio-is-running"></a>Visual Studio가 실행 되는 경우 검색
+ VSPackage가 설치 될 때 Visual Studio가 실행 중인 경우 VSPackage를 올바르게 등록할 수 없습니다. 설치 관리자에서 Visual Studio가 실행 중일 때를 검색 한 다음 프로그램 설치를 거부 해야 합니다. Windows Installer 테이블 항목을 사용 하 여 이러한 검색을 사용 하도록 설정할 수 없습니다. 대신, 다음과 같이 사용자 지정 작업을 만들어야 합니다. 함수를 사용 `EnumProcesses` 하 여 *devenv.exe* 프로세스를 검색 한 다음 시작 조건에 사용 되는 설치 관리자 속성을 설정 하거나 사용자에 게 Visual Studio를 닫으라는 메시지를 표시 하는 대화 상자를 조건부로 표시 합니다.
 
-## <a name="see-also"></a>참조
-- [윈도우 설치 관리자와 VS패키지 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>추가 정보
+- [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

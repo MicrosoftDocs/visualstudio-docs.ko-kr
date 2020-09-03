@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ff42cc2b8543fe8e1cf980a3574ae15922febf9b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521045"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: 변경 가능한 읽기 전용 참조 형식을 선언하지 마세요.
@@ -48,7 +48,7 @@ ms.locfileid: "85521045"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  필드 형식을 변경할 수 없는 경우에는이 규칙에서 경고를 무시 해도 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 필드 선언을 보여 줍니다.
 
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cpp/FxCop.Security.MutableReferenceTypes.cpp#1)]

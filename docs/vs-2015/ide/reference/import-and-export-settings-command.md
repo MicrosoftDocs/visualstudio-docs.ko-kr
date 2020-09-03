@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e3ee8549fd8cf1a4551818c013551ba24128f95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671045"
 ---
 # <a name="import-and-export-settings-command"></a>설정 가져오기 및 내보내기 명령
@@ -35,7 +35,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ## <a name="switches"></a>스위치
  `filename`내보내기(선택 사항). 현재 설정을 지정된 파일로 내보냅니다.
 
- /import: 옵션을 `filename` 합니다. 지정된 파일의 설정을 가져옵니다.
+ /import: `filename` 선택 사항입니다. 지정된 파일의 설정을 가져옵니다.
 
  /reset 선택 사항입니다. 현재 설정을 다시 설정합니다.
 
@@ -49,5 +49,5 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio에서 개발 설정 사용자 지정 ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
+## <a name="see-also"></a>관련 항목
+ [Visual studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [visual studio 명령](../../ide/reference/visual-studio-commands.md)
