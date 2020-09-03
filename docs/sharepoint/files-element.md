@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546512"
 ---
 # <a name="files-element"></a>Files 요소
   기능 요소 파일 및 종속 비 SharePoint 프로젝트의 출력과 같은 SharePoint 프로젝트 항목을 사용 하 여 배포할 파일을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Files>
@@ -31,7 +31,7 @@ ms.locfileid: "85546512"
 </Files>
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>형식
  **FileCollectionType**
 
 ## <a name="attributes-and-elements"></a>특성 및 요소

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655018"
 ---
 # <a name="customizing-element-tools"></a>요소 도구 사용자 지정
@@ -24,7 +24,7 @@ ms.locfileid: "72655018"
  도구를 다이어그램이 나 요소로 끌어 오면 어떻게 되는지 재정의할 수도 있습니다.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>요소 도구의 콘텐츠 사용자 지정
- 각 요소 도구는 하나 이상의 모델 요소 및 링크의 serialize 된 버전을 포함 하는 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>의 인스턴스를 저장 합니다. 기본적으로 요소 도구에는 도구에 대해 지정 하는 클래스의 인스턴스가 하나 포함 되어 있습니다. @No__t_1 *언어* 를 재정의 하 여이를 변경할 수 있습니다. 이 메서드는 DSL 패키지가 로드 될 때 호출 됩니다.
+ 각 요소 도구 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 는 하나 이상의 모델 요소 및 링크의 serialize 된 버전을 포함 하는 (와)의 인스턴스를 저장 합니다. 기본적으로 요소 도구에는 도구에 대해 지정 하는 클래스의 인스턴스가 하나 포함 되어 있습니다. 원하는 *언어*를 재정의 하 여이를 변경할 수 있습니다 `ToolboxHelper.CreateElementToolPrototype` . 이 메서드는 DSL 패키지가 로드 될 때 호출 됩니다.
 
  메서드의 매개 변수는 DSL 정의에서 지정한 클래스의 ID입니다. 관심이 있는 클래스를 사용 하 여 메서드를 호출 하는 경우에는 요소를 더 추가할 수 있습니다.
 
@@ -62,5 +62,5 @@ public partial class CircuitDiagramToolboxHelper
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)

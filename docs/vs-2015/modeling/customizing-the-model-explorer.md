@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce96f2a3df901c1fea0aa4caa97d29c07db5e681
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654948"
 ---
 # <a name="customizing-the-model-explorer"></a>모델 탐색기 사용자 지정
@@ -37,14 +37,14 @@ ms.locfileid: "72654948"
  생성 된 탐색기의 창 제목을 변경 하려면 **DSL 탐색기**에서 **탐색기 동작** 을 선택 하 고 **속성** 창에서 **제목** 속성을 원하는 제목으로 설정 합니다.
 
 ## <a name="changing-the-tab-icon"></a>탭 아이콘 변경
- 탐색기의 탭 아이콘을 변경 하려면 .bmp 파일에서 16x16 픽셀 아이콘을 사용 합니다. \DslPackage\Resources\ 폴더에 아이콘 파일을 입력 한 다음 파일 이름을 **ModelExplorerToolWindowBitmaps**로 변경 합니다. 예를 들어 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 설정 .ico 아이콘 파일을 .bmp 형식으로 변경 하 고 이름을 **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**로 변경할 수 있습니다. 생성 된 디자이너는 **솔루션 탐색기**와 함께 도킹할 때 탐색기의 탭에이 아이콘을 표시 합니다.
+ 탐색기의 탭 아이콘을 변경 하려면 .bmp 파일에서 16x16 픽셀 아이콘을 사용 합니다. \DslPackage\Resources\ 폴더에 아이콘 파일을 입력 한 다음 파일 이름을 **ModelExplorerToolWindowBitmaps.bmp**로 변경 합니다. 예를 들어, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .ico 아이콘 파일을 .bmp 형식으로 변경 하 고 **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**로 이름을 바꿀 수 있습니다. 생성 된 디자이너는 **솔루션 탐색기**와 함께 도킹할 때 탐색기의 탭에이 아이콘을 표시 합니다.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>탐색기 노드에 사용자 지정 아이콘 설정
  탐색기 노드 설정을 사용 하 여 탐색기에서 노드를 사용자 지정할 수 있습니다. 다음 절차에서는 노드에 아이콘을 추가 하는 방법을 보여 줍니다.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>탐색기 노드에 아이콘을 추가 하려면
 
-1. 작업 흐름 솔루션 템플릿을 사용 하 여 [!INCLUDE[dsl](../includes/dsl-md.md)] 솔루션을 만듭니다.
+1. [!INCLUDE[dsl](../includes/dsl-md.md)]작업 흐름 솔루션 템플릿을 사용 하 여 솔루션을 만듭니다.
 
 2. 솔루션의 **Dsl\resources** 폴더에 16x16 픽셀 아이콘이 포함 된 .bmp 파일을 배치 합니다.
 
@@ -115,5 +115,5 @@ ms.locfileid: "72654948"
 
      탐색기에는 **행위자** 노드만 표시 되 고 **주석** 노드는 표시 되지 않습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

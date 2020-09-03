@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655128"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>방법: 관리 코드 오류에 대한 작업 항목 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-작업 항목 추적 기능을 사용 하 여 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 내에서 작업 항목을 기록할 수 있습니다. 이 기능을 사용 하려면 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]의 팀 프로젝트에 포함 되어 있어야 합니다.
+작업 항목 추적 기능을 사용 하 여 내에서 작업 항목을 기록할 수 있습니다 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . 이 기능을 사용 하려면 프로젝트가의 팀 프로젝트에 포함 되어 있어야 합니다 [!INCLUDE[esprfound](../includes/esprfound-md.md)] .
 
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>관리 코드 오류에 대 한 작업 항목을 만들려면
 

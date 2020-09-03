@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d0dcfc5724e87d57d2803b9b64a6eb121314b99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655040"
 ---
 # <a name="customizing-deletion-behavior"></a>삭제 동작 사용자 지정
@@ -25,11 +25,11 @@ ms.locfileid: "72655040"
 
 일반적으로 요소를 삭제하면 관련 요소도 삭제됩니다. 해당 요소에 연결된 모든 관계와 모든 자식 요소도 삭제됩니다. 이 동작을 *삭제 전파*라고 합니다. 예를 들어 삭제 전파를 사용자 지정하여 추가 관련 요소도 삭제되도록 지정할 수 있습니다. 프로그램 코드를 작성하면 모델 상태에 따라 삭제 전파가 수행되도록 지정할 수 있습니다. 또한 삭제에 응답하여 다른 변경도 수행되도록 할 수 있습니다.
 
- 이 항목에는 다음 단원이 포함되어 있습니다.
+ 이 항목에는 다음 섹션이 포함되어 있습니다.
 
 - [기본 삭제 동작](#default)
 
-- [역할의 Delete 전파 옵션 설정](#property)
+- [역할의 삭제 전파 옵션 설정](#property)
 
 - [삭제 닫기 재정의](#closure) – 삭제로 인해 인접 요소가 삭제 될 수 있는 경우이 방법을 사용 합니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "72655040"
 
 - [분할](#unmerge) – 병합 작업을 사용 하 여 자식 요소를 부모에 연결 하는 병합 작업을 실행 취소 합니다.
 
-## <a name="default"></a>기본 삭제 동작
+## <a name="default-deletion-behavior"></a><a name="default"></a> 기본 삭제 동작
  기본적으로 삭제 전파를 규정하는 규칙은 다음과 같습니다.
 
 - 요소를 삭제하면 포함된 요소도 모두 삭제됩니다. 포함된 요소는 이 요소가 소스인 포함 관계의 대상인 요소입니다. 예를 들어 **앨범** 에서 **곡**으로의 포함 관계에 있는 경우 특정 앨범이 삭제 되 면 해당 곡이 모두 삭제 됩니다.
@@ -54,7 +54,7 @@ ms.locfileid: "72655040"
 
 - 소스 또는 대상 역할에서 요소에 연결되는 모든 관계는 삭제됩니다. 그러면 반대쪽 역할의 요소 역할 속성은 더 이상 삭제된 요소를 포함하지 않습니다.
 
-## <a name="property"></a>역할의 Delete 전파 옵션 설정
+## <a name="setting-the-propagate-delete-option-of-a-role"></a><a name="property"></a> 역할의 Delete 전파 옵션 설정
  삭제가 참조 관계에서 또는 포함된 자식에서 부모에 전파되도록 지정할 수 있습니다.
 
 #### <a name="to-set-delete-propagation"></a>삭제 전파를 설정하려면
@@ -79,7 +79,7 @@ ms.locfileid: "72655040"
 > [!NOTE]
 > DSL 정의에 프로그램 코드를 추가 하려면 **dsl** 프로젝트에서 별도의 코드 파일을 만들고 부분 정의를 작성 하 여 생성 된 코드 폴더의 클래스를 보강 합니다. 자세한 내용은 [도메인별 언어를 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)을 참조 하세요.
 
-## <a name="closure"></a>삭제 닫기 정의
+## <a name="defining-a-delete-closure"></a><a name="closure"></a> 삭제 닫기 정의
  삭제 작업은**DeleteClosure** _클래스를_사용 하 여 처음 선택 된 경우 삭제할 요소를 결정 합니다. 이 클래스는 `ShouldVisitRelationship()` 및 `ShouldVisitRolePlayer()`를 반복적으로 호출하여 관계 그래프를 단계별로 이동합니다. 이러한 메서드를 재정의할 수 있습니다. ShouldVisitRolePlayer는 링크 역할 중 하나의 요소 및 링크의 ID와 함께 제공되며 다음 값 중 하나를 반환해야 합니다.
 
 - **VisitorFilterResult**– 요소를 삭제 하 고 walker를 계속 진행 하 여 요소의 다른 링크를 시도해 야 합니다.
@@ -132,18 +132,18 @@ partial class MusicLibDeleteClosure
 
  그러나 이 기술은 삭제가 관계 그래프의 인접 항목에만 적용된다고 가정합니다. 따라서 이 메서드를 사용해 모델의 다른 부분에 있는 요소를 삭제할 수는 없습니다. 요소를 추가하거나 삭제에 대한 응답으로 다른 변경을 수행하려는 경우에는 이 메서드를 사용할 수 없습니다.
 
-## <a name="ondeleting"></a>Ondeleting 및 Ondeleting 사용
+## <a name="using-ondeleting-and-ondeleted"></a><a name="ondeleting"></a> Ondeleting 및 Ondeleting 사용
  도메인 클래스나 도메인 관계에서 `OnDeleting()` 또는 `OnDeleted()`를 재정의할 수 있습니다.
 
-1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>는 요소를 삭제 하려고 하지만 관계의 연결을 끊기 전에 호출 됩니다. 이 시점에서는 해당 요소와 다른 요소 간에 계속 이동할 수 있으며 해당 요소는 아직 `store.ElementDirectory`에 있습니다.
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> 요소를 삭제 하려고 하지만 관계의 연결을 끊기 전에가 호출 됩니다. 이 시점에서는 해당 요소와 다른 요소 간에 계속 이동할 수 있으며 해당 요소는 아직 `store.ElementDirectory`에 있습니다.
 
     여러 요소를 동시에 삭제하는 경우에는 삭제를 수행하기 전에 모든 요소에 대해 OnDeleting이 호출됩니다.
 
-    `IsDeleting` true입니다.
+    `IsDeleting` 이 true 인 경우
 
-2. 요소가 삭제 될 때 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>가 호출 됩니다. 삭제된 요소는 필요 시 Undo를 수행할 수 있도록 CLR 힙에 남아 있지만 다른 요소에서 연결이 해제되며 `store.ElementDirectory`에서 제거됩니다. 관계의 경우 역할은 여전히 이전 역할 수행자를 참조 합니다. `IsDeleted` 가 true인 경우.
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> 요소가 삭제 될 때가 호출 됩니다. 삭제된 요소는 필요 시 Undo를 수행할 수 있도록 CLR 힙에 남아 있지만 다른 요소에서 연결이 해제되며 `store.ElementDirectory`에서 제거됩니다. 관계의 경우 역할은 여전히 이전 역할 수행자를 참조 합니다.`IsDeleted` 이 true 인 경우
 
-3. 사용자가 요소를 만든 후 Undo를 호출할 때와 Redo에서 이전 삭제를 반복할 때 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 경우 store 요소를 업데이트하지 않으려면 `this.Store.InUndoRedoOrRollback`을 사용합니다. 자세한 내용은 [방법: 트랜잭션을 사용 하 여 ](../modeling/how-to-use-transactions-to-update-the-model.md) 모델을 업데이트 합니다.
+3. 사용자가 요소를 만든 후 Undo를 호출할 때와 Redo에서 이전 삭제를 반복할 때 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 경우 store 요소를 업데이트하지 않으려면 `this.Store.InUndoRedoOrRollback`을 사용합니다. 자세한 내용은 [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)를 참조 하세요.
 
    예를 들어 다음 코드는 마지막 자식 Song을 삭제하면 Album을 삭제합니다.
 
@@ -199,7 +199,7 @@ partial class Artist
 
  요소에 대해 <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A>를 수행하면 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 메서드는 항상 인라인으로, 즉 실제 삭제 직전과 직후에 수행됩니다. 코드가 둘 이상의 요소를 삭제하는 경우에는 모든 요소에 대해 OnDeleting 및 OnDeleted가 번갈아 가며 호출됩니다.
 
-## <a name="rules"></a>삭제 규칙 및 이벤트
+## <a name="deletion-rules-and-events"></a><a name="rules"></a> 삭제 규칙 및 이벤트
  OnDelete 처리기를 사용하는 대신 삭제 규칙과 삭제 이벤트를 정의할 수 있습니다.
 
 1. **삭제** 및 **삭제** 규칙은 트랜잭션 에서만 트리거되고 실행 취소 또는 다시 실행에는 트리거되지 않습니다. 삭제를 수행하는 트랜잭션 종료 시 이러한 규칙이 실행 대기되도록 설정할 수 있습니다. Deleting 규칙은 항상 큐의 Deleted 규칙보다 먼저 실행됩니다.
@@ -289,12 +289,12 @@ partial class NestedShapesSampleDocData
 
 ```
 
-## <a name="unmerge"></a>UnMerge
+## <a name="unmerge"></a><a name="unmerge"></a> UnMerge
  자식 요소를 부모에 연결 하는 작업을 *merge*라고 합니다. 새 요소 또는 요소 그룹을 도구 상자에서 만들거나 모델의 다른 부분에서 이동하거나 클립보드에서 복사하면 병합이 수행됩니다. 병합 작업을 수행하면 부모와 새 자식 간에 포함 관계를 작성할 수 있을 뿐 아니라 추가 관계를 설정하고 보조 요소를 만들고 요소에서 속성 값을 설정할 수도 있습니다. 병합 작업은 EMD(Element Merge Directive)에서 캡슐화됩니다.
 
- EMD는 또한 보완 *분할* 또는 `MergeDisconnect` 작업을 캡슐화 합니다. merge를 사용하여 생성된 요소 클러스터가 있는 경우 나머지 요소를 일관된 상태로 유지하려면 연결된 unmerge를 사용하여 해당 클러스터에서 요소를 제거하는 것이 좋습니다. unmerge 작업에서는 보통 이전 섹션에서 설명한 기술을 사용합니다.
+ EMD도 보완 *분할* 또는 작업을 캡슐화 합니다 `MergeDisconnect` . merge를 사용하여 생성된 요소 클러스터가 있는 경우 나머지 요소를 일관된 상태로 유지하려면 연결된 unmerge를 사용하여 해당 클러스터에서 요소를 제거하는 것이 좋습니다. unmerge 작업에서는 보통 이전 섹션에서 설명한 기술을 사용합니다.
 
  자세한 내용은 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md) [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md) [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7454a110d5321a8f3a9dbf2472f15252cfaf13d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655009"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>다이어그램의 프레젠테이션 사용자 지정
@@ -37,5 +37,5 @@ DSL 언어 디자이너의 주 표시 영역은 다이어그램입니다. 사용
 
 - [Windows Forms에 다이어그램 포함](../modeling/embedding-a-diagram-in-a-windows-form.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)

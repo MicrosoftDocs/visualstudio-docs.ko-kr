@@ -12,36 +12,36 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f628cdecbebbb10b7bb2709a2022297e1171a427
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654940"
 ---
 # <a name="customizing-the-properties-window"></a>속성 창 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0에서 DSL (도메인별 언어)의 속성 창 모양 및 동작을 사용자 지정할 수 있습니다. DSL 정의에서 각 도메인 클래스에 대해 도메인 속성을 정의 합니다. 기본적으로 다이어그램 또는 모델 탐색기에서 클래스의 인스턴스를 선택 하면 속성 창에 모든 도메인 속성이 나열 됩니다. 이렇게 하면 다이어그램의 셰이프 필드에 매핑되지 않은 경우에도 도메인 속성의 값을 보고 편집할 수 있습니다.
+에서 DSL (도메인별 언어)의 속성 창 모양 및 동작을 사용자 지정할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . DSL 정의에서 각 도메인 클래스에 대해 도메인 속성을 정의 합니다. 기본적으로 다이어그램 또는 모델 탐색기에서 클래스의 인스턴스를 선택 하면 속성 창에 모든 도메인 속성이 나열 됩니다. 이렇게 하면 다이어그램의 셰이프 필드에 매핑되지 않은 경우에도 도메인 속성의 값을 보고 편집할 수 있습니다.
 
 ## <a name="names-descriptions-and-categories"></a>이름, 설명 및 범주
  **이름 및 표시 이름**입니다. 도메인 속성의 정의에서 속성의 표시 이름은 런타임에 속성 창에서 표시 되는 이름입니다. 이와 대조적으로이 이름은 프로그램 코드를 작성 하 여 속성을 업데이트할 때 사용 됩니다. 이름은 올바른 CLR 영숫자 이름 이어야 하지만 표시 이름에는 공백을 포함할 수 있습니다.
 
  DSL 정의에서 속성의 이름을 설정 하면 해당 표시 이름이 이름 복사본으로 자동 설정 됩니다. "FuelGauge"과 같은 파스칼식 대/소문자 이름을 작성 하면 표시 이름에 "연료 계기" 라는 공백이 자동으로 포함 됩니다. 그러나 표시 이름을 명시적으로 다른 값으로 설정할 수 있습니다.
 
- **설명**입니다. 도메인 속성에 대 한 설명은 다음 두 위치에 표시 됩니다.
+ **설명**. 도메인 속성에 대 한 설명은 다음 두 위치에 표시 됩니다.
 
 - 속성 창 맨 아래에서 사용자가 속성을 선택 합니다. 이를 사용 하 여 속성이 나타내는 사용자를 설명할 수 있습니다.
 
 - 생성 된 프로그램 코드입니다. 문서 기능을 사용 하 여 API 설명서를 추출 하는 경우 API에서이 속성에 대 한 설명으로 표시 됩니다.
 
-  **Category** 범주는 속성 창의 제목입니다.
+  **범주**. 범주는 속성 창의 제목입니다.
 
 ## <a name="exposing-style-features"></a>스타일 기능 노출
  그래픽 요소의 동적 기능 중 일부는 도메인 *속성으로 표시 하거나 표시할 수* 있습니다. 이러한 방식으로 노출 된 기능은 사용자가 업데이트할 수 있으며 프로그램 코드를 사용 하 여 보다 쉽게 업데이트할 수 있습니다.
 
  DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 가리킨 다음 기능을 선택 합니다.
 
- 도형에서 **FillColor**, **OutlineColor**, **textcolor**, **OutlineDashStyle**, **OutlineThickness** 및 **FillGradientMode** 속성을 노출할 수 있습니다. 커넥터에서 **색** `,`**textcolor**, **일점 style**및 **두께** 속성을 노출할 수 있습니다. 다이어그램에서 **FillColor** 및 **textcolor** 속성을 노출할 수 있습니다.
+ 도형에서 **FillColor**, **OutlineColor**, **textcolor**, **OutlineDashStyle**, **OutlineThickness** 및 **FillGradientMode** 속성을 노출할 수 있습니다. 커넥터에서 **색** `,` **textcolor**, **일점 style**및 **두께** 속성을 노출할 수 있습니다. 다이어그램에서 **FillColor** 및 **textcolor** 속성을 노출할 수 있습니다.
 
 ## <a name="forwarding-displaying-properties-of-related-elements"></a>전달: 관련 된 요소의 속성 표시
  DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성이 속성 창에 표시 됩니다. 그러나 지정 된 관련 요소의 속성을 표시할 수도 있습니다. 이는 함께 작동 하는 요소 그룹을 정의한 경우에 유용 합니다. 예를 들어 main 요소와 선택적 플러그 인 요소를 정의할 수 있습니다. Main 요소가 셰이프에 매핑되고 다른 요소가이 아닌 경우 모든 속성을 한 요소에 있는 것 처럼 표시 하는 것이 유용 합니다.
@@ -51,7 +51,7 @@ ms.locfileid: "72654940"
 ### <a name="default-property-forwarding-cases"></a>기본 속성 전달 사례
  사용자가 셰이프 또는 연결선 이나 탐색기에서 요소를 선택 하면 속성 창에 다음과 같은 속성이 표시 됩니다.
 
-- 기본 클래스에 정의 된 요소를 포함 하 여 model 요소의 도메인 클래스에 정의 된 도메인 속성입니다. 단, 사용자가 설정한 도메인 속성은 **`False`로 검색할 수 있습니다** .
+- 기본 클래스에 정의 된 요소를 포함 하 여 model 요소의 도메인 클래스에 정의 된 도메인 속성입니다. 단, 설정한 도메인 속성은로 **찾아볼** 수 있습니다 `False` .
 
 - 복합성이 0 ..1 인 관계를 통해 연결 된 요소의 이름입니다. 이렇게 하면 관계에 대 한 커넥터 매핑을 정의 하지 않은 경우에도 선택적으로 연결 된 요소를 볼 수 있는 편리한 방법이 제공 됩니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "72654940"
 - 선택한 셰이프 또는 연결선에 정의 된 도메인 속성입니다.
 
 ### <a name="adding-property-forwarding"></a>속성 전달 추가
- 속성을 전달 하려면 도메인 유형 설명자를 정의 합니다. 두 도메인 클래스 간에 도메인 관계가 있는 경우 도메인 유형 설명자를 사용 하 여 첫 번째 클래스의 도메인 속성을 두 번째 도메인 클래스의 도메인 속성 값으로 설정할 수 있습니다. 예를 들어 **book** 도메인 클래스와 **Author** 도메인 클래스 간에 관계가 있는 경우 도메인 유형 설명자를 사용 하 여 사용자가 해당 책의 **작성자** 에 대 한 **이름** 속성이 속성 창에 표시 되도록 할 수 있습니다. 책을 선택 합니다.
+ 속성을 전달 하려면 도메인 유형 설명자를 정의 합니다. 두 도메인 클래스 간에 도메인 관계가 있는 경우 도메인 유형 설명자를 사용 하 여 첫 번째 클래스의 도메인 속성을 두 번째 도메인 클래스의 도메인 속성 값으로 설정할 수 있습니다. 예를 들어 **book** 도메인 클래스와 **Author** 도메인 클래스 간에 관계가 있는 경우 도메인 유형 설명자를 사용 하 여 사용자가 책을 선택할 때 책 **작성자** 의 **이름** 속성이 속성 창에 표시 되도록 할 수 있습니다.
 
 > [!NOTE]
 > 속성 전달은 사용자가 모델을 편집할 때 속성 창에만 영향을 줍니다. 수신 클래스의 도메인 속성을 정의 하지 않습니다. DSL 정의의 다른 부분이 나 프로그램 코드에서 전달 된 도메인 속성에 액세스 하려면 전달 요소에 액세스 해야 합니다.
@@ -69,7 +69,7 @@ ms.locfileid: "72654940"
 
 ##### <a name="to-forward-a-property-from-another-element"></a>다른 요소에서 속성을 전달 하려면
 
-1. 두 개 이상의 클래스를 포함 하는 [!INCLUDE[dsl](../includes/dsl-md.md)] 솔루션을 만듭니다 .이 예제에서는이를 **Book** 및 **Author**라고 합니다. **Book** 과 **Author**사이에는 두 종류의 관계가 있어야 합니다.
+1. [!INCLUDE[dsl](../includes/dsl-md.md)]두 개 이상의 클래스를 포함 하는 솔루션을 만듭니다 .이 예제에서는이를 **Book** 및 **Author**라고 합니다. **Book** 과 **Author**사이에는 두 종류의 관계가 있어야 합니다.
 
      원본 역할의 복합성 ( **북** 측의 역할)은 0 ..1 또는 1 ..1 이어야 하므로 각 **책** 에 하나의 **저자가**있습니다.
 
@@ -129,7 +129,7 @@ ms.locfileid: "72654940"
 
     속성 창의 **유형** 필드에 있는 드롭다운 목록에서 외부 유형을 선택 합니다.
 
-   이 단계에서 사용자는 속성의 값을 볼 수 있지만 편집할 수는 없습니다. 표시 된 값은 `ToString()` 함수에서 가져옵니다. 예를 들어 명령 또는 규칙에서 속성의 값을 설정 하는 프로그램 코드를 작성할 수 있습니다.
+   이 단계에서 사용자는 속성의 값을 볼 수 있지만 편집할 수는 없습니다. 표시 된 값은 함수에서 가져옵니다 `ToString()` . 예를 들어 명령 또는 규칙에서 속성의 값을 설정 하는 프로그램 코드를 작성할 수 있습니다.
 
 ### <a name="setting-a-property-editor"></a>속성 편집기 설정
  다음 형식으로 도메인 속성에 CLR 특성을 추가 합니다.
@@ -143,9 +143,9 @@ ms.locfileid: "72654940"
 
  속성 창의 **사용자 지정 특성** 항목을 사용 하 여 속성의 특성을 설정할 수 있습니다.
 
- @No__t_0 형식은 두 번째 매개 변수에 지정 된 형식에서 파생 되어야 합니다. 두 번째 매개 변수는 <xref:System.Drawing.Design.UITypeEditor> 또는 <xref:System.ComponentModel.ComponentEditor> 이어야 합니다. 자세한 내용은 <xref:System.ComponentModel.EditorAttribute>을 참조하십시오.
+ 의 형식은 `AnEditor` 두 번째 매개 변수에 지정 된 형식에서 파생 되어야 합니다. 두 번째 매개 변수는 또는 중 하나 여야 합니다 <xref:System.Drawing.Design.UITypeEditor> <xref:System.ComponentModel.ComponentEditor> . 자세한 내용은 <xref:System.ComponentModel.EditorAttribute>를 참조하세요.
 
- @No__t_1 또는 <xref:System.Drawing.Design.ImageEditor>와 같이 사용자 고유의 편집기 또는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]에 제공 된 편집기를 지정할 수 있습니다. 예를 들어, 사용자가 파일 이름을 입력할 수 있는 속성을 사용 하려면 다음 절차를 수행 합니다.
+ 사용자 고유의 편집기 또는에 제공 된 편집기 (예: 또는)를 지정할 수 있습니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] <xref:System.Windows.Forms.Design.FileNameEditor> <xref:System.Drawing.Design.ImageEditor> . 예를 들어, 사용자가 파일 이름을 입력할 수 있는 속성을 사용 하려면 다음 절차를 수행 합니다.
 
 ##### <a name="to-define-a-file-name-domain-property"></a>파일 이름 도메인 속성을 정의 하려면
 
@@ -173,18 +173,18 @@ ms.locfileid: "72654940"
 ### <a name="defining-your-own-property-editor"></a>고유한 속성 편집기 정의
  사용자 고유의 편집기를 정의할 수 있습니다. 이렇게 하면 사용자가 정의한 형식을 편집 하거나 특수 한 방법으로 표준 형식을 편집할 수 있습니다. 예를 들어 사용자가 수식을 나타내는 문자열을 입력 하도록 허용할 수 있습니다.
 
- @No__t_0에서 파생 되는 클래스를 작성 하 여 편집기를 정의 합니다. 클래스는를 재정의 해야 합니다.
+ 에서 파생 되는 클래스를 작성 하 여 편집기를 정의 <xref:System.Drawing.Design.UITypeEditor> 합니다. 클래스는를 재정의 해야 합니다.
 
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> 하 여 사용자와 상호 작용 하 고 속성 값을 업데이트 합니다.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>-사용자와 상호 작용 하 고 속성 값을 업데이트 합니다.
 
-- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A> 하 여 편집기에서 대화 상자를 열지 또는 드롭다운 메뉴를 제공할지 여부를 지정 합니다.
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>-편집기에서 대화 상자를 열지 또는 드롭다운 메뉴를 제공할지 여부를 지정 합니다.
 
-  속성 표에 표시 되는 속성 값에 대 한 그래픽 표현을 제공할 수도 있습니다. 이렇게 하려면 `GetPaintValueSupported` 및 `PaintValue`를 재정의 합니다.  자세한 내용은 <xref:System.Drawing.Design.UITypeEditor>을 참조하십시오.
+  속성 표에 표시 되는 속성 값에 대 한 그래픽 표현을 제공할 수도 있습니다. 이렇게 하려면 `GetPaintValueSupported` , 및를 재정의 `PaintValue` 합니다.  자세한 내용은 <xref:System.Drawing.Design.UITypeEditor>를 참조하세요.
 
 > [!NOTE]
 > **Dsl** 프로젝트에서 별도의 코드 파일에 코드를 추가 합니다.
 
- 예를 들면,
+ 예를 들면 다음과 같습니다.
 
 ```
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -208,7 +208,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 
 ```
 
- 자세한 내용은 <xref:System.Drawing.Design.UITypeEditor>을 참조하십시오.
+ 자세한 내용은 <xref:System.Drawing.Design.UITypeEditor>를 참조하세요.
 
 ## <a name="providing-a-drop-down-list-of-values"></a>값의 드롭다운 목록 제공
  사용자가 선택할 수 있는 값 목록을 제공할 수 있습니다.
@@ -224,7 +224,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 
 ```
 
- <xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. **Dsl** 프로젝트에서 별도의 파일에 코드를 추가 합니다. 예를 들면,
+ <xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. **Dsl** 프로젝트에서 별도의 파일에 코드를 추가 합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 /// <summary>
@@ -318,5 +318,5 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
