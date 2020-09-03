@@ -1,5 +1,5 @@
 ---
-title: '방법: 회색조 질감 셰이더 만들기 | Microsoft Docs'
+title: '방법: 회색조 질감 셰이더 만들기 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 554717d59a42bed15b37379d3bf7a5c4da727e95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664505"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>방법: 회색조 질감 셰이더 만들기
@@ -28,7 +28,7 @@ ms.locfileid: "72664505"
 
 #### <a name="to-create-a-grayscale-texture-shader"></a>회색조 질감 셰이더를 만들려면
 
-1. [방법: @No__t_0 기본 질감 셰이더를 만듭니다.
+1. [방법: 기본 질감 셰이더 만들기](../designers/how-to-create-a-basic-texture-shader.md)에 설명 된 대로 기본 질감 셰이더를 만듭니다.
 
 2. **최종 색**노드의 **RGB** 터미널에서 **질감 샘플** 노드의 **RGB** 터미널 연결을 끊습니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 선택하고 **연결 끊기**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "72664505"
 
  ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-grayscale-effect.png "숫자-회색조-효과")
 
- 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.
+ 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대 한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md) 를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
- [방법: 3 차원 모델에 셰이더를 적용 하 ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How 합니다. 셰이더 내보내기 ](../designers/how-to-export-a-shader.md) [이미지 편집기](../designers/image-editor.md) [셰이더 디자이너](../designers/shader-designer.md) [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [방법: 셰이더 이미지 내보내기](../designers/how-to-export-a-shader.md) [편집기](../designers/image-editor.md) [셰이더 디자이너](../designers/shader-designer.md) [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)

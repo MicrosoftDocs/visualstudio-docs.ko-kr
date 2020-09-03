@@ -32,10 +32,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 537223aab878aee2fb00e9417d0415f0a17d2dd5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534136"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
@@ -115,7 +115,7 @@ ms.locfileid: "85534136"
 ## <a name="default-view"></a>기본 보기
 이 설정을 사용하여 XAML 문서를 로드하는 경우 디자인 뷰를 표시할지 여부를 제어할 수 있습니다.
 
-|Name|설명|
+|이름|설명|
 |-|-|
 |**전체 XAML 뷰에서 항상 문서 열기**|XAML 문서를 디자인 뷰 없이 XAML 뷰에서만 표시할지 여부를 지정 합니다. 많은 문서를 로드 하는 데 유용 합니다.|
 
@@ -126,7 +126,7 @@ ms.locfileid: "85534136"
 |-|-|
 |**도구 상자 항목 자동 채우기**|현재 솔루션의 사용자 컨트롤 및 사용자 지정 컨트롤을 도구 상자에 자동으로 표시할지 여부를 지정합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 [WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
  의 XAML [방법: XAML 뷰 설정 변경](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
  [XAML 및 코드 연습](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d0fd8cff2f352c8ede674be64062a738c1f3d02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198800"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-두 문서 컨텍스트를 비교 하기 위한 조건을 지정 합니다.  
+두 문서 컨텍스트를 비교 하는 조건을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,29 +47,29 @@ enum enum_DOCCONTEXT_COMPARE { 
   
 ## <a name="members"></a>멤버  
  DOCCONTEXT_EQUAL  
- 대상 문서 컨텍스트에 해당 목록의 첫 번째 문서 컨텍스트를 찾습니다.  
+ 목록에서 대상 문서 컨텍스트와 동일한 첫 번째 문서 컨텍스트를 찾습니다.  
   
  DOCCONTEXT_LESS_THAN  
- 대상 문서 컨텍스트를 보다 작은 목록의 첫 번째 문서 컨텍스트를 찾습니다.  
+ 목록에서 대상 문서 컨텍스트 보다 작은 첫 번째 문서 컨텍스트를 찾습니다.  
   
  DOCCONTEXT_GREATER_THAN  
- 대상 문서 컨텍스트 보다 큰 목록에서 첫 번째 문서 컨텍스트를 찾습니다.  
+ 목록에서 대상 문서 컨텍스트 보다 큰 첫 번째 문서 컨텍스트를 찾습니다.  
   
  DOCCONTEXT_SAME_DOCUMENT  
- 대상 문서 컨텍스트 같은 문서에 있는 목록의 첫 번째 문서 컨텍스트를 찾습니다.  
+ 목록에서 대상 문서 컨텍스트와 동일한 문서에 있는 첫 번째 문서 컨텍스트를 찾습니다.  
   
 ## <a name="remarks"></a>설명  
- 인수로 전달 된 [비교](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) 메서드.  
+ [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) 메서드에 인수로 전달 됩니다.  
   
- 이러한 값은 목록의 첫 번째 문서 컨텍스트를 찾기 위한 비교 조건을 지정 하는 데 사용 됩니다. 문서 컨텍스트를 통해 자체 작업에 대해 비교할 문서 컨텍스트 목록이 제공 되는 `IDebugDocumentContext2::Compare` 메서드. 비교 연산자가 있는 목록의 첫 번째 문서 컨텍스트 `true` 반환 됩니다.  
+ 이러한 값은 목록에서 첫 번째 문서 컨텍스트를 찾기 위한 비교 조건을 지정 하는 데 사용 됩니다. 문서 컨텍스트에는 메서드를 통해 자신을 비교 하는 문서 컨텍스트 목록이 제공 됩니다 `IDebugDocumentContext2::Compare` . 비교 연산자가 반환 되는 목록에서 첫 번째 문서 컨텍스트입니다 `true` .  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+ [비교](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e3de3246980ead0b20d471321a9696451aed81ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534773"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: 범위를 벗어나기 전에 개체를 삭제하세요.
@@ -50,7 +50,7 @@ ms.locfileid: "85534773"
 
 - Using 문의 생성자에서 삭제 가능한 개체의 멤버를 초기화할 수 없습니다.
 
-- 한 예외 처리기로만 보호 되는 생성자를 중첩 합니다. 예:
+- 한 예외 처리기로만 보호 되는 생성자를 중첩 합니다. 예를 들면 다음과 같습니다.
 
     ```
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
@@ -69,7 +69,7 @@ ms.locfileid: "85534773"
 
  [CA2202: 개체를 여러 번 삭제하지 마십시오.](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  삭제 가능한 개체를 반환 하는 메서드를 구현 하는 경우 catch 블록 없이 try/finally 블록을 사용 하 여 개체가 삭제 되었는지 확인 합니다. Try/finally 블록을 사용 하 여 오류 지점에서 예외가 발생할 수 있도록 하 고 개체가 삭제 되었는지 확인 합니다.
 
  OpenPort1 메서드에서 ISerializable 개체 SerialPort 또는 SomeMethod에 대 한 호출을 열기 위한 호출이 실패할 수 있습니다. 이 구현에서 CA2000 경고가 발생 합니다.
@@ -88,7 +88,7 @@ ms.locfileid: "85534773"
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  기본적으로 컴파일러는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 오버플로를 확인 하는 모든 산술 연산자를 포함 합니다. 따라서 Visual Basic 산술 연산은을 throw 할 수 있습니다 <xref:System.OverflowException> . CA2000와 같은 규칙에서 예기치 않은 위반이 발생할 수 있습니다. 예를 들어, 다음 CreateReader1 함수는 Visual Basic 컴파일러가 StreamReader를 삭제 하지 않도록 하는 예외를 throw 할 수 있는 추가에 대 한 오버플로 검사 명령을 내보내기 때문에 CA2000 위반을 발생 시킵니다.
 
  이 문제를 해결 하려면 프로젝트의 Visual Basic 컴파일러에의 한 오버플로 검사 내보내기를 사용 하지 않도록 설정 하거나 다음 CreateReader2 함수와 같이 코드를 수정할 수 있습니다.
@@ -97,5 +97,5 @@ ms.locfileid: "85534773"
 
 <!-- TODO: review snippet reference  [!CODE [FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1](FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1)]  -->
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.IDisposable> [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

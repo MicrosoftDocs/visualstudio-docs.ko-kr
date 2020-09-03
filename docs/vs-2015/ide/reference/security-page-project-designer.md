@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 768b0d43d8e6b52781e3f2dc2029e0b96b3a6548
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665532"
 ---
 # <a name="security-page-project-designer"></a>프로젝트 디자이너, 보안 페이지
@@ -39,7 +39,7 @@ ms.locfileid: "72665532"
 > [!NOTE]
 > **게시** 마법사를 사용하여 애플리케이션을 게시하면 이 옵션은 자동으로 사용됩니다.
 
- 이 옵션을 선택하면 **완전 신뢰 애플리케이션** 또는 **부분 신뢰 애플리케이션**이라는 두 개의 라디오 단추 중 하나를 선택합니다.
+ 이 옵션을 선택하는 경우 다음 두 개의 라디오 단추 중 하나를 선택할 수 있습니다. **완전 신뢰 애플리케이션** 또는 **부분 신뢰 애플리케이션**
 
  WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션이 기본적으로 선택됩니다.
 
@@ -64,6 +64,6 @@ ms.locfileid: "72665532"
 
  **고급** 제한 된 권한으로 응용 프로그램을 디버깅 하는 설정을 구성 하는 데 사용 되는 [고급 보안 설정 대화 상자](../../ide/reference/advanced-security-settings-dialog-box.md)를 엽니다. 이 설정은 디버깅하는 동안 검사됩니다. 권한 예외는 애플리케이션에 영역에 정의된 것보다 많은 권한이 필요할 수 있음을 나타냅니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  <xref:System.Security.Permissions.WebBrowserPermission> <xref:System.Security.Permissions.MediaPermission>
- [Clickonce 응용 프로그램에 대 한 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md) [방법: Clickonce 보안 설정 사용](../../deployment/how-to-enable-clickonce-security-settings.md) 방법: clickonce 응용 프로그램에 대 한 [보안 영역 설정](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) 방법: [Clickonce 응용 프로그램에 대 한 사용자 지정 권한 설정](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) [방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버그](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [clickonce 보안 및 배포](../../deployment/clickonce-security-and-deployment.md) [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md) [고급 보안 설정 대화 상자](../../ide/reference/advanced-security-settings-dialog-box.md)
+ [Clickonce 응용 프로그램에 대 한 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md) [방법: Clickonce 보안 설정 사용](../../deployment/how-to-enable-clickonce-security-settings.md) 방법: clickonce 응용 프로그램에 대 한 [보안 영역 설정](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) 방법: Clickonce 응용 프로그램에 대 한 [사용자 지정 권한 설정](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) [방법: 제한 된 권한으로 Clickonce 응용 프로그램 디버그](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [Clickonce 보안 및 배포](../../deployment/clickonce-security-and-deployment.md) [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md) [고급 보안 설정 대화 상자](../../ide/reference/advanced-security-settings-dialog-box.md)

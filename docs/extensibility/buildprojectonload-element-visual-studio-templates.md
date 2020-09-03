@@ -1,5 +1,5 @@
 ---
-title: 빌드프로젝트온로드 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: BuildProjectOnload 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739955"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>빌드프로젝트온로드 요소(비주얼 스튜디오 템플릿)
-새 프로젝트를 만들고 솔루션에 추가할 때만 빌드합니다. 전체 솔루션이 빌드되지 않았습니다.
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 요소 (Visual Studio 템플릿)
+는 새 프로젝트를 만들고 솔루션에 추가 하는 경우에만 빌드합니다. 전체 솔루션이 빌드되지 않습니다.
 
-요소 계층 구조:
+요소 계층:
 
 ```xml
 <VSTemplate>
@@ -44,20 +44,20 @@ ms.locfileid: "80739955"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|`TemplateData`|템플릿을 분류하고 **새 프로젝트와** **새 항목 추가** 대화 상자 모두에 템플릿이 표시되는 방식을 정의합니다.|
+|`TemplateData`|템플릿을 분류 하 고 **새 프로젝트** 및 **새 항목 추가** 대화 상자에서 템플릿을 표시 하는 방법을 정의 합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 텍스트는 템플릿에서 `true` `false` 만들 때 새 프로젝트만 빌드할지 여부를 나타내거나 표시해야 합니다.
+ 텍스트는 `true` `false` 새 프로젝트를 템플릿에서 만들 때만 빌드하도록 할지 여부를 나타내는 또는 중 하나 여야 합니다.
 
 ## <a name="remarks"></a>설명
  `BuildProjectOnLoad`는 선택적 요소입니다. 기본값은 `false`입니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 Visual C# 템플릿에 대한 메타데이터를 보여 줍니다.
+ 다음 예제에서는 Visual c # 템플릿에 대 한 메타 데이터를 보여 줍니다.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ ms.locfileid: "80739955"
 
 ## <a name="see-also"></a>참조
 
-- [빌드온로드 특성 및 요소](buildonload-visual-studio-templates.md)
+- [BuildOnLoad attribute 및 요소](buildonload-visual-studio-templates.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

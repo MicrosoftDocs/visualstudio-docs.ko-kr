@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534318"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -206,12 +206,12 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 - [애플리케이션, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)
 - [Visual Studio IDE 64비트 지원](../ide/visual-studio-ide-64-bit-support.md)
 - [보안](../ide/security-in-visual-studio.md)
-- [Visual Studio Samples](../ide/visual-studio-samples.md)
+- [Visual Studio 샘플](../ide/visual-studio-samples.md)
 - [Microsoft 도움말 뷰어](../ide/microsoft-help-viewer.md)
 - [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)
 - [UI 참조](../ide/reference/general-user-interface-elements-visual-studio.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [Visual Studio 2015 설치](../install/install-visual-studio-2015.md)
 - [코드 편집](https://www.visualstudio.com/features/ide-vs)

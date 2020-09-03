@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fcb38e565ea4f30ed6e669f8b98df09c9d733ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665450"
 ---
 # <a name="set-current-stack-frame-command"></a>현재 스택 프레임 설정 명령
@@ -35,7 +35,7 @@ Debug.SetCurrentStackFrame index
 ## <a name="arguments"></a>인수
  `index` 필수입니다. 해당 인덱스로 스택 프레임을 선택합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 >Debug.SetCurrentStackFrame 1

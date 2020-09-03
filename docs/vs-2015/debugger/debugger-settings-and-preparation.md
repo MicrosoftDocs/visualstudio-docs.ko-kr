@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198871"
 ---
 # <a name="debugger-settings-and-preparation"></a>디버거 설정 및 준비
@@ -46,13 +46,13 @@ ms.locfileid: "68198871"
  [ASP.NET 웹 응용 프로그램](../debugger/debugging-preparation-aspnet-web-applications.md)  
  ASP.NET 웹 애플리케이션을 구성하는 방법에 대한 지침을 설명합니다.  
   
- [방법: Visual Studio 솔루션에 포함되지 않는 실행 파일 디버그](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [방법: Visual Studio 솔루션의 일부가 아닌 실행 파일 디버그](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Visual Studio 프로젝트의 일부로 작성되지 않은 실행 파일을 디버깅하는 방법에 대해 설명합니다.  
   
- [방법: Code Center Premium 소스로 디버그](../debugger/how-to-debug-with-code-center-premium-source.md)  
+ [방법: Code Center Premium의 소스 디버깅](../debugger/how-to-debug-with-code-center-premium-source.md)  
  Visual Studio 프로젝트에서 Microsoft Code Center Premium의 소스를 디버깅하는 방법에 대해 설명합니다.  
   
- [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)  
+ [64비트 애플리케이션 디버그](../debugger/debug-64-bit-applications.md)  
  64비트 애플리케이션을 디버그하는 방법을 설명합니다.  
   
  [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md)  
@@ -61,6 +61,6 @@ ms.locfileid: "68198871"
  [방법: 디버깅을 위한 .NET Framework 버전 지정](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  레지스트리 키를 설정하여 사용할 버전을 디버거에 알리는 방법을 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)

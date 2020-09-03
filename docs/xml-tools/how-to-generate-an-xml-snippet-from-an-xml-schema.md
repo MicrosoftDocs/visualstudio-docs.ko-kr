@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817179"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>방법: XML 스키마에서 XML 코드 조각 생성

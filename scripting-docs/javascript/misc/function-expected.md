@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f177bf81a43c45dcff4cef3040c64425ed544057
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816971"
 ---
 # <a name="function-expected"></a>함수가 필요합니다.
@@ -35,6 +35,6 @@ var x = example();           // Try and call example as if it were a function.
   
 - 함수 호출 연산자를 사용 하 여 `()` 함수만 호출 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [Function 개체](../../javascript/reference/function-object-javascript.md)   
  [prototype 속성(Object)](../../javascript/reference/prototype-property-object-javascript.md)

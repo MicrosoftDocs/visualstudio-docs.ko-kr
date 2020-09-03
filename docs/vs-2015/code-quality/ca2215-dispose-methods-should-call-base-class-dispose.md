@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4197c2faaf4aa23db930a9019538592326a84116
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534383"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose 메서드는 기본 클래스 Dispose를 호출해야 합니다.
@@ -45,15 +45,15 @@ ms.locfileid: "85534383"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  을 호출 하는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 `base` 합니다.<xref:System.IDisposable.Dispose%2A> 규칙 검사 보다 더 깊은 호출 수준에서 발생 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는를 구현 하는 형식을 보여 줍니다 `TypeA` <xref:System.IDisposable> .
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `TypeB` 형식에서 상속 하 `TypeA` 고 해당 메서드를 올바르게 호출 하는 형식을 보여 줍니다 <xref:System.IDisposable.Dispose%2A> .
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

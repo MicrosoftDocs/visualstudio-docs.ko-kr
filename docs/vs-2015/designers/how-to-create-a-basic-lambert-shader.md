@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 038b3e7db7f1e3b79ee3e41b6e256216a39b91bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664565"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>방법: 기본 램버트 셰이더 만들기
@@ -51,15 +51,15 @@ ms.locfileid: "72664565"
 > [!NOTE]
 > 이 그림에서 셰이더의 효과를 더 잘 보여 주기 위해 셰이더의 **MaterialDiffuse** 매개 변수를 사용하여 주황색이 지정되었습니다. 게임 또는 앱에서는 이 매개 변수를 사용하여 각 개체의 고유한 색 값을 제공합니다. 재질 매개 변수에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조하세요.
 
- ![셰이더 그래프 및 효과 미리 보기입니다.](../designers/media/digit-lambert-effect-graph.png "램버트-효과-그래프")
+ ![셰이더 그래프 및 효과 미리 보기.](../designers/media/digit-lambert-effect-graph.png "램버트-효과-그래프")
 
- 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조하세요.
+ 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대 한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조 하세요.
 
  다음 그림은 3D 모델에 적용되는 이 문서에서 설명된 셰이더를 보여 줍니다.
 
- ![모델에 적용 된 램버트 조명입니다.](../designers/media/digit-lambert-effect-result.png "램버트-결과")
+ ![모델에 적용된 램버트 조명.](../designers/media/digit-lambert-effect-result.png "램버트-결과")
 
- 3D 모델에 셰이더를 적용하는 방법에 대한 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.
+ 3 차원 모델에 셰이더를 적용 하는 방법에 대 한 자세한 내용은 [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md) [방법: 기본 퐁 셰이더](../designers/how-to-create-a-basic-phong-shader.md) [셰이더 디자이너](../designers/shader-designer.md) [셰이더 디자이너 노드](../designers/shader-designer-nodes.md) 만들기

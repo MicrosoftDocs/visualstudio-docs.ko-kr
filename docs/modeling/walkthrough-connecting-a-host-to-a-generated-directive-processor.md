@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88237999"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
@@ -37,7 +37,7 @@ ms.locfileid: "88237999"
 
 - 생성 된 지시문 프로세서를 사용 하 여 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
@@ -314,7 +314,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 3. 코드에서을 \<YOUR PATH> 첫 번째 절차에서 만든 디자인 특정 언어의 샘플. min 파일의 경로로 바꿉니다.
 
-4. 파일을 저장한 후 닫습니다.
+4. 파일을 저장하고 닫습니다.
 
 ### <a name="test-the-custom-host"></a>사용자 지정 호스트 테스트
 

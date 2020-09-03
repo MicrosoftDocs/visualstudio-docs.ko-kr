@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816789"
 ---
 # <a name="operator-summary-javascript"></a>연산자 개요(JavaScript)
@@ -29,8 +29,8 @@ ms.locfileid: "85816789"
 |[또한](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[감소](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[사업부](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[씩](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[남은](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[ID 증가값](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[나머지](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[*](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[빼기](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[단항 부정 연산자](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -39,11 +39,11 @@ ms.locfileid: "85816789"
   
 |연산자|기호|  
 |--------------|------------|  
-|[쉼표](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[쉼표로](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[조건부 (삼항)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[등호](../../javascript/reference/comparison-operators-javascript.md)|==|  
-|[초과](../../javascript/reference/comparison-operators-javascript.md)|>|  
-|[크거나 같음](../../javascript/reference/comparison-operators-javascript.md)|>=|  
+|[보다 큼](../../javascript/reference/comparison-operators-javascript.md)|>|  
+|[보다 크거나 같음](../../javascript/reference/comparison-operators-javascript.md)|>=|  
 |[ID](../../javascript/reference/comparison-operators-javascript.md)|===|  
 |[같지 않음](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[보다 작음](../../javascript/reference/comparison-operators-javascript.md)|<|  

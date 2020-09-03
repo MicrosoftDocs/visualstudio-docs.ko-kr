@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 17ba5d143a5f4534b09b2aaff718af7ce99f2773
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664541"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>방법: 기본 퐁 셰이더 만들기
@@ -66,9 +66,9 @@ ms.locfileid: "72664541"
 >
 > **MaterialSpecularPower** 속성은 반사 강조 표시의 강도를 결정합니다. 높은 반사 강도는 더 무디고 더 집중적인 강조 표시를 시뮬레이트합니다. 매우 낮은 반사 강도는 전체 표면의 색을 과포화시키고 숨길 수 있는 강도가 높고 포괄적인 강조 표시를 시뮬레이트합니다.
 
- ![모델에 적용 된 퐁 조명](../designers/media/digit-lighting-model.png "숫자-조명-모델")
+ ![모델에 적용된 퐁 조명](../designers/media/digit-lighting-model.png "숫자-조명-모델")
 
- 3D 모델에 셰이더를 적용하는 방법에 대한 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.
+ 3 차원 모델에 셰이더를 적용 하는 방법에 대 한 자세한 내용은 [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md) [방법: 기본 램버트 셰이더](../designers/how-to-create-a-basic-lambert-shader.md) [셰이더 디자이너](../designers/shader-designer.md) [셰이더 디자이너 노드](../designers/shader-designer-nodes.md) 만들기

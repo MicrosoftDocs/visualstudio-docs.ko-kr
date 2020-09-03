@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d6151825391fb01a027f67cb66568eb6b2edfc44
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816815"
 ---
 # <a name="javascript-object-expected"></a>JavaScript 개체가 필요합니다.
@@ -28,6 +28,6 @@ ms.locfileid: "85816815"
   
 - 매개 변수로 전달 하는 개체의 형식이 올바른지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [개체 및 배열](../../javascript/objects-and-arrays-javascript.md)   
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)

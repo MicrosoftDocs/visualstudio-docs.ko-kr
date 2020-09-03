@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f37fb773a07291a883f5cb65e4cb4ac840a87a14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198784"
 ---
-# <a name="dwtypekind"></a>dwTYPE_KIND
+# <a name="dwtype_kind"></a>dwTYPE_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-형식의 해석 하는 방법을 지정는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.  
+[Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체의 형식을 해석 하는 방법을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,21 +46,21 @@ public enum enum_dwTYPE_KIND {
   
 #### <a name="parameters"></a>매개 변수  
  TYPE_KIND_METADATA  
- 합니다 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) union으로 해석할지를 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 구조입니다.  
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) union은 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 구조체로 해석 되어야 합니다.  
   
  TYPE_KIND_PDB  
- 합니다 `TYPE_INFO` union으로 해석할지를 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 구조입니다.  
+ `TYPE_INFO`Union은 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 구조체로 해석 되어야 합니다.  
   
  TYPE_KIND_BUILT  
- 합니다 `TYPE_INFO` union으로 해석할지를 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 구조입니다.  
+ `TYPE_INFO`Union은 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 구조체로 해석 되어야 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값이 나타나는 `dwKind` 필드를 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 구조체이 고 해석 하는 방법을 결정 하는 데 사용 되는 `type` 공용 구조체 멤버입니다. 합니다 `TYPE_INFO` 구조에 대 한 호출에서 반환 되는 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 메서드.  
+ 이 열거형의 값은 `dwKind` [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 구조체의 필드에 표시 되며 union 멤버를 해석 하는 방법을 결정 하는 데 사용 됩니다 `type` . `TYPE_INFO`구조체는 [gettypeinfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 메서드를 호출 하 여 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: sh.h  
+ 헤더: sh  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

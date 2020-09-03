@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665624"
 ---
 # <a name="replace-command"></a>바꾸기 명령
@@ -73,5 +73,5 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [텍스트 찾기 및 바꾸기](../../ide/finding-and-replacing-text.md) [명령 창](../../ide/reference/command-window.md) [찾기/명령 상자](../../ide/find-command-box.md) [visual studio 명령](../../ide/reference/visual-studio-commands.md) [visual](../../ide/reference/visual-studio-command-aliases.md) studio 명령 별칭

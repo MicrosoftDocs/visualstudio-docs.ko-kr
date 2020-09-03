@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59a926ab35e04aa120bc57250c3e5b2712858aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664494"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>방법: 기본 질감 셰이더 만들기
@@ -61,9 +61,9 @@ ms.locfileid: "72664494"
 > [!NOTE]
 > 이 그림에서 평면을 미리 보기 셰이프로 사용되고 셰이더의 효과를 더욱 효과적으로 표시하기 위해 질감이 지정되었습니다.
 
- ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-texture-effect.png "|::ref1::|")
+ ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-texture-effect.png "숫자-질감-효과")
 
- 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.
+ 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대 한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
- [방법: 3 차원 모델에 셰이더 적용 ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Image 편집기 ](../designers/image-editor.md) [Shader 디자이너 ](../designers/shader-designer.md) [디자이너 노드](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [이미지 편집기](../designers/image-editor.md) [셰이더 디자이너](../designers/shader-designer.md) [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)

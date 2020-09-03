@@ -1,5 +1,5 @@
 ---
-title: Visual Basic의 stop 문 | Microsoft Docs
+title: Visual Basic의 Stop 문 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f2749ef9a6cfd310da5da832a283b55b6af59a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198885"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic의 Stop 문
@@ -49,7 +49,7 @@ ms.locfileid: "68198885"
 #End If  
 ```  
   
- 또 다른 방법은 Stop 문 대신 Assert 문을 사용하는 것입니다. Debug.Assert 문은 지정된 조건이 충족되지 않을 경우에만 실행을 중단하고, 릴리스 버전을 빌드하면 자동으로 제거됩니다. 자세한 내용은 [관리 코드에 어설션](../debugger/assertions-in-managed-code.md)합니다. 디버그 버전에서 Assert 문이 항상 실행을 중단하도록 하려면 다음과 같이 지정하십시오.  
+ 또 다른 방법은 Stop 문 대신 Assert 문을 사용하는 것입니다. Debug.Assert 문은 지정된 조건이 충족되지 않을 경우에만 실행을 중단하고, 릴리스 버전을 빌드하면 자동으로 제거됩니다. 자세한 내용은 [관리 코드의 어설션](../debugger/assertions-in-managed-code.md)을 참조하세요. 디버그 버전에서 Assert 문이 항상 실행을 중단하도록 하려면 다음과 같이 지정하십시오.  
   
 ```  
 Debug.Assert(false)  
@@ -61,7 +61,7 @@ Debug.Assert(false)
 Debug.Fail("a clever output string goes here")  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
- [C#, F# 및 Visual Basic 프로젝트 형식](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C #, F # 및 Visual Basic 프로젝트 형식](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [관리 코드 디버그](../debugger/debugging-managed-code.md)

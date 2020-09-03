@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5268cb90544088742c6fda7c751bab943503cacc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534474"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: 삭제 가능한 형식은 종료자를 선언해야 합니다.
@@ -50,7 +50,7 @@ ms.locfileid: "85534474"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  형식이 관리 되지 않는 리소스를 해제 하기 위해를 구현 하지 않는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 <xref:System.IDisposable> 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DisposeNoFinalize/cs/FxCop.Usage.DisposeNoFinalize.cs#1)]
@@ -62,7 +62,7 @@ ms.locfileid: "85534474"
 
  [CA1049: 네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.IDisposable?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>

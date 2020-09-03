@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534851"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: 식별자에 형식 이름을 포함하면 안 됩니다.
@@ -126,7 +126,7 @@ ms.locfileid: "85534851"
 
 - Decimal
 
-- Guid
+- GUID
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  **매개 변수에 대해 발생 하는 경우:**

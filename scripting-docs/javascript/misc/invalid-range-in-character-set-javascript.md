@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a81634a96fb85584c9176db8c72bfc5c3468dc2c
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816880"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>문자 집합의 범위가 잘못되었습니다.(JavaScript)
@@ -33,6 +33,6 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 - 단일 문자만 사용 하 여 정규식 문자 집합을 작성 하 고 올바른 순서로 되어 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

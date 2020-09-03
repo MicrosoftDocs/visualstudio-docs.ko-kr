@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 391e6c457dd09afa154c46cbc8644f028052cb32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665701"
 ---
 # <a name="publish-page-project-designer"></a>프로젝트 디자이너, 게시 페이지
@@ -35,14 +35,14 @@ ms.locfileid: "72665701"
 > [!NOTE]
 > 여기에 설명된 ClickOnce 속성 중 일부는 **빌드** 메뉴에서 또는 이 페이지의 **PublishWizard** 단추를 클릭하여 사용할 수 있는 **PublishWizard**에서도 설정할 수 있습니다.
 
-## <a name="uielement-list"></a>UI 요소 목록
+## <a name="uielement-list"></a>UIElement 목록
  **게시 폴더 위치** 응용 프로그램이 게시 되는 위치를 지정 합니다. 드라이브 경로(`C:\deploy\myapplication`), 파일 공유(`\\server\myapplication`), FTP 서버(`ftp://ftp.microsoft.com/myapplication`) 또는 웹 사이트(`http://www.microsoft.com/myapplication`)일 수 있습니다. 찾아보기( **...** ) 단추가 작동하려면**게시 위치**상자에 텍스트가 있어야 합니다.
 
  기본적으로 게시 위치는 IIS를 설치한 경우 `http://localhost/<projectname>/` , 또는 IIS를 설치하지 않은 경우 `publish\` 디렉터리입니다. 컴퓨터에서 Windows Vista가 실행 중인 경우 IIS의 설치 여부와 상관없이 기본값은 항상 `publish\` 디렉터리입니다.
 
  **설치 폴더 URL** 필드. 사용자가 애플리케이션을 설치할 웹 사이트를 지정합니다. **게시 위치**와 다른 경우(예: 애플리케이션이 준비 서버에 게시된 경우)에만 이 옵션이 필요합니다.
 
- **설치 모드 및 설정** 응용 프로그램을 **게시 위치** 에서 직접 실행할지 ( **온라인 으로만 응용 프로그램을 사용할 수 있는** 경우에만 선택) 또는 설치 하 여 **시작** 메뉴 및 **프로그램 추가/제거** 항목에 추가할지 결정 합니다. **제어판** ( **오프 라인으로도 응용 프로그램을 사용할 수 있는** 경우)을 선택 합니다.
+ **설치 모드 및 설정** 응용 프로그램을 **게시 위치** 에서 직접 실행할지 ( **온라인 으로만 응용 프로그램 사용 가능** 선택 시) 또는 설치 하 여 **시작** 메뉴 및 **제어판** 의 **프로그램 추가/제거** 항목에 추가할지 ( **오프 라인으로도 응용 프로그램 사용 가능** 이 선택 된 경우) 결정 합니다.
 
  WPF 웹 브라우저 애플리케이션의 경우 온라인으로만 사용 가능하므로, **오프라인으로도 애플리케이션 사용 가능** 옵션을 사용할 수 없습니다.
 
@@ -64,5 +64,5 @@ ms.locfileid: "72665701"
 
  **지금 게시** 현재 설정을 사용 하 여 응용 프로그램을 게시 합니다. **PublishWizard**에서 **마침** 단추와 동일합니다.
 
-## <a name="see-also"></a>관련 항목:
- [Clickonce 응용 프로그램 게시](../../deployment/publishing-clickonce-applications.md) [방법: 게시 마법사를 사용 하 여 Clickonce 응용 프로그램 게시](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) [방법: Visual Studio에서 파일을 복사](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md) 하는 위치 지정 [방법: 최종 사용자가 설치할 위치 지정](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md) [방법 대상: 기술 지원에 대 한 링크 지정](../../deployment/how-to-specify-a-link-for-technical-support.md) [방법: ClickOnce 오프 라인 또는 온라인 설치 모드 지정](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md) [방법: CD 설치를 위한 자동 시작 사용](../../deployment/how-to-enable-autostart-for-cd-installations.md) 방법 [: ClickOnce 게시 버전 설정](../../deployment/how-to-set-the-clickonce-publish-version.md) [방법: 자동 증분 ClickOnce 게시 버전](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md) [방법: Clickonce에서 게시할 파일 지정](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md) 방법 [: clickonce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) 방법: [Clickonce 응용 프로그램에 대 한 업데이트 관리](../../deployment/how-to-manage-updates-for-a-clickonce-application.md) [방법: 변경 ClickOnce 응용 프로그램에 대 한 언어 게시](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md) [방법: Clickonce 응용 프로그램에 대 한 시작 메뉴 이름 지정](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md) [방법: Clickonce 응용 프로그램의 게시 페이지 지정](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md) [clickonce 보안 및 배포](../../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>관련 항목
+ [Clickonce 응용 프로그램 게시](../../deployment/publishing-clickonce-applications.md) [방법: 게시 마법사를 사용 하 여 Clickonce 응용 프로그램 게시](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 방법: [Visual Studio에서 파일을 복사할](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md) 위치 지정 방법: [최종 사용자가 설치할 위치](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md) 지정 방법: [기술 지원을 위한 링크 지정](../../deployment/how-to-specify-a-link-for-technical-support.md) [방법: ClickOnce 오프 라인 또는 온라인 설치 모드 지정](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md) 방법: [CD 설치를 위한 자동 시작 사용](../../deployment/how-to-enable-autostart-for-cd-installations.md) 방법: clickonce 게시 버전 [설정](../../deployment/how-to-set-the-clickonce-publish-version.md) 방법: clickonce [게시 버전 자동 증가](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md) 방법: Clickonce [로 게시 되는 파일 지정](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md) 방법: clickonce [응용 프로그램을](../../deployment/how-to-manage-updates-for-a-clickonce-application.md) 사용 하 여 [필수 구성 요소 설치](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) 방법: clickonce 응용 프로그램의 [게시 언어 변경](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md) 방법: clickonce 응용 프로그램의 [시작 메뉴 이름 지정](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md) 방법 [ : ClickOnce 응용 프로그램의 게시 페이지 지정](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md) [clickonce 보안 및 배포](../../deployment/clickonce-security-and-deployment.md)

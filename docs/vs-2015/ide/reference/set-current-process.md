@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c362d3f5dda5015e91ac88dd8f0abd60a185ba72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665472"
 ---
 # <a name="set-current-process"></a>현재 프로세스 설정
@@ -36,7 +36,7 @@ Debug.SetCurrentProcess index
 ## <a name="remarks"></a>설명
  디버그하는 동안 여러 프로세스에 연결할 수 있지만 한 번에 프로세스 하나만 디버거에서 활성화됩니다. `SetCurrentProcess` 명령을 사용하여 활성 프로세스를 설정할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 >Debug.SetCurrentProcess 1

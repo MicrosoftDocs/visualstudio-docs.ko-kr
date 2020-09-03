@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43715ca8fa8174b2b8b9509a93e98cf15ad4611c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198858"
 ---
-# <a name="constguidarray"></a>CONST_GUID_ARRAY
+# <a name="const_guid_array"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-목록을 포함 하는 구조 `GUID`s입니다.  
+의 목록을 보유 하는 구조체입니다 `GUID` .  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,25 +42,25 @@ public struct CONST_GUID_ARRAY {
   
 ## <a name="members"></a>멤버  
  dwCount  
- 수가 `GUID`의 `Members` 배열입니다.  
+ `GUID`배열에 있는의 수 `Members` 입니다.  
   
  멤버  
- 배열을 `GUID`s입니다.  
+ S의 배열 `GUID` 입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드를에서 반환 되 고는 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 하 고 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드.  
+ 이 구조체는 WatchForProviderEvents [program](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드에 전달 되며 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 및 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드에서 반환 됩니다.  
   
- 이 구조의 인스턴스 소유자가 할당 된 메모리를 해제 하는 일을 담당 합니다.  
+ 이 구조체 인스턴스의 소유자는 할당 된 모든 메모리를 해제 해야 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
+ [프로그램 프로그램](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

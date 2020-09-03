@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238350"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>문서 수준 사용자 지정의 캐시 된 데이터
@@ -60,6 +60,6 @@ ms.locfileid: "88238350"
 |어떤 유형의 데이터를 저장할 수 있나요?|특정 요구 사항을 충족 하는 사용자 지정 어셈블리의 모든 public 개체입니다. 자세한 내용은 [데이터 캐시](../vsto/caching-data.md)를 참조 하세요.|모든 XML 데이터입니다.|
 |Microsoft Office 응용 프로그램을 시작 하지 않고 데이터에 액세스할 수 있나요?|예,에서 제공 하는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스를 사용 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 합니다.|예. <xref:System.IO.Packaging> 네임 스페이스의 클래스를 사용 하거나 OPEN XML 형식 SDK를 사용 하 여 사용 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [Visual Studio의 Office 솔루션 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)

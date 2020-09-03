@@ -1,5 +1,5 @@
 ---
-title: 명령 위치 요소 | 마이크로 소프트 문서
+title: CommandPlacements 요소 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739704"
 ---
-# <a name="commandplacements-element"></a>명령 위치 요소
-명령 위치 요소 그룹 명령 위치 요소 및 기타 명령 배치 그룹화합니다.
+# <a name="commandplacements-element"></a>CommandPlacements 요소
+Commandplacements 요소는 Commandplacements 요소 및 기타 CommandPlacements 그룹화를 그룹화 합니다.
 
- 명령 위치 요소는 선택 사항입니다. 명령, 그룹 또는 메뉴를 보조 위치에 포함해야 하는 경우 *.vsct* 파일에 이 섹션을 포함할 필요가 없습니다.
+ CommandPlacements 요소는 선택 사항입니다. 보조 위치에 명령, 그룹 또는 메뉴를 포함 하지 않아야 하는 경우 *. vsct* 파일에이 섹션을 포함 하지 않아도 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,22 +39,22 @@ ms.locfileid: "80739704"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
-|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|명령 위치|그룹 명령 위치 요소 및 기타 명령 배치 그룹화.|
-|[명령 위치 요소](../extensibility/commandplacement-element.md)|단추, 그룹 및 메뉴를 두 개 이상의 그룹 또는 메뉴에 포함할 수 있습니다.|
+|CommandPlacements|CommandPlacement 요소 및 기타 Commandplacement 그룹화를 그룹화 합니다.|
+|[CommandPlacement 요소](../extensibility/commandplacement-element.md)|단추, 그룹 및 메뉴를 두 개 이상의 그룹이 나 메뉴에 포함할 수 있습니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[명령 테이블 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의합니다.|
+|[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의 합니다.|
 
 ## <a name="example"></a>예제
 
@@ -67,6 +67,6 @@ ms.locfileid: "80739704"
 </CommandPlacements>
 ```
 
-## <a name="see-also"></a>참조
-- [명령 위치 요소](../extensibility/commandplacement-element.md)
-- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참고 항목
+- [CommandPlacement 요소](../extensibility/commandplacement-element.md)
+- [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

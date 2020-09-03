@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90f27e2359954e56a5b3d86bfc31883d4f29c44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664582"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>방법: 기본 색 셰이더 만들기
@@ -53,9 +53,9 @@ ms.locfileid: "72664582"
 > [!NOTE]
 > 그림에서 주황색은 셰이더 효과를 더 잘 보여 주기 위해 지정되었습니다.
 
- ![셰이더 그래프 및 3&#45;차원 모델의 결과](../designers/media/digit-flat-color-effect.png "숫자-단색-효과")
+ ![3&#45;D 모델에서 셰이더 그래프 및 해당 결과](../designers/media/digit-flat-color-effect.png "숫자-단색-효과")
 
  일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [방법: 셰이더](../designers/how-to-export-a-shader.md) [셰이더 디자이너](../designers/shader-designer.md) [셰이더 디자이너 노드](../designers/shader-designer-nodes.md) 내보내기

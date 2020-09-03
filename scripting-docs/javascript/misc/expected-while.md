@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9381f990c8a43e848370e1251e163dad81a10e9
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817348"
 ---
 # <a name="expected-while"></a>'while'이 필요합니다.
@@ -28,6 +28,6 @@ ms.locfileid: "85817348"
   
 - `while`닫는 중괄호 뒤에 test 문을 포함 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [while 문](../../javascript/reference/while-statement-javascript.md)   
  [프로그램 흐름 제어](../../javascript/controlling-program-flow-javascript.md)

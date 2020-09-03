@@ -1,5 +1,5 @@
 ---
-title: 마법사데이터 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: WizardData 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740385"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 요소(Visual Studio 템플릿)
 
-사용자 지정 XML 지정
+사용자 지정 XML을 지정 합니다.
 
 ```xml
 \<VSTemplate>
@@ -53,25 +53,25 @@ ms.locfileid: "80740385"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대한 모든 메타데이터가 들어 있습니다.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함 합니다.|
 
 ## <a name="text-value"></a>텍스트 값
 
 텍스트 값은 선택적입니다.
 
-이 텍스트는 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 요소에 지정된 사용자 지정 마법사 확장으로 전달하도록 사용자 지정 XML을 지정합니다.
+이 텍스트는 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 요소에 지정 된 사용자 지정 마법사 확장에 전달할 사용자 지정 XML을 지정 합니다.
 
 ## <a name="remarks"></a>설명
 
-모든 XML은 이 요소에 지정할 수 있습니다. XML은 사용자 지정 마법사 확장에 매개 변수로 전달되므로 확장에서 이 요소의 내용을 사용할 수 있습니다. 이 데이터에 대한 유효성 검사는 수행되지 않습니다.
+이 요소에는 모든 XML을 지정할 수 있습니다. XML은 사용자 지정 마법사 확장에 매개 변수로 전달 되므로 확장에서이 요소의 콘텐츠를 사용할 수 있습니다. 이 데이터에 대 한 유효성 검사가 수행 되지 않습니다.
 
-**WizardData** 요소의 내용은 `IWizard.RunStarted` 메서드의 매개 변수 문자열 사전 내의 매개 변수로 변경되지 않고 전달됩니다. 사전 키의 `$wizarddata$`이름이 지정됩니다.
+**Wizarddata** 요소의 콘텐츠는 메서드에 있는 매개 변수의 문자열 사전 내에 매개 변수로 전달 되 고 변경 되지 않은 상태로 전달 됩니다 `IWizard.RunStarted` . 사전 키의 이름은 `$wizarddata$` 입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
-다음 예제에서는 C# Windows 응용 프로그램에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다.
+다음 예제에서는 c # Windows 응용 프로그램에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -104,7 +104,7 @@ ms.locfileid: "80740385"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

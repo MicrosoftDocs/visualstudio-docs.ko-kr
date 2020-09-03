@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4439e7b520232b71c16d3f3c6b4afb3a4ba35f21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534604"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: 보안에 중요한 상수는 투명해야 합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "85534604"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서 열거형 값 `EnumWithCriticalValues.CriticalEnumValue` 과 상수는 `CriticalConstant` 이 경고를 발생 시킵니다. 문제를 해결 하려면 [] 특성을 제거 하 여 보안을 투명 하 게 `SecurityCritical` 만듭니다.
 
  [!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2130.constantsshouldbetransparent/cs/ca2130 - constantsshouldbetransparent.cs#1)]

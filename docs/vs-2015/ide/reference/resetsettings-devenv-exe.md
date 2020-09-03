@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41e402a9268acecb70c83e26bab0e682d4ec59f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665592"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings(devenv.exe)
@@ -48,5 +48,5 @@ Devenv /ResetSettings SettingsFile
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio에서 개발 설정 사용자 지정 ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) 명령줄 스위치 [Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>관련 항목
+ Visual Studio [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

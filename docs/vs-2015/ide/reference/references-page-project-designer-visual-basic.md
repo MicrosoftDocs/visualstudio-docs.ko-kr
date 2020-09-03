@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8bb18ec8dd12431d650d844e3698c1986c8d8bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665636"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
@@ -31,7 +31,7 @@ ms.locfileid: "72665636"
 
  **참조** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. 프로젝트 디자이너가 나타나면 **참조** 탭을 클릭합니다.
 
-## <a name="uielement-list"></a>UI 요소 목록
+## <a name="uielement-list"></a>UIElement 목록
  다음 옵션을 사용하여 프로젝트에서 참조 및 가져온 네임스페이스를 선택하거나 제거할 수 있습니다.
 
  **사용 하지 않는 참조** **사용 하지 않는 참조** 대화 상자에 액세스 하려면이 단추를 클릭 합니다.
@@ -62,7 +62,7 @@ ms.locfileid: "72665636"
 
  **가져온 네임 스페이스** 이 상자에 사용자 고유의 네임 스페이스를 입력 하 고 **사용자 가져오기 추가** 를 클릭 하 여 네임 스페이스 목록에 추가할 수 있습니다.
 
- 사용자가 가져온 네임스페이스의 별칭을 만들 수 있습니다. 이 작업을 하려면 *별칭*=*네임스페이스* 형식으로 별칭 및 네임스페이스를 입력합니다. 긴 네임스페이스를 사용할 경우 이 방법이 유용합니다(예: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`).
+ 사용자가 가져온 네임스페이스의 별칭을 만들 수 있습니다. 이렇게 하려면 별칭 및 형식 *별칭* = *네임 스페이스*에 네임 스페이스를 입력 합니다. 긴 네임스페이스를 사용할 경우 이 방법이 유용합니다(예: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`).
 
  **사용자 가져오기 추가** **가져온 네임 스페이스 상자에** 지정 된 네임 스페이스를 가져온 네임 스페이스 목록에 추가 하려면이 단추를 클릭 합니다. 이 단추는 지정된 네임스페이스가 목록에 없는 경우에만 활성화됩니다.
 
@@ -76,5 +76,5 @@ ms.locfileid: "72665636"
 
 - XML 네임스페이스(예: `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`).
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [NIB 방법: 참조 추가 대화 상자를 사용 하 여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [방법: 가져온 네임 스페이스 추가 또는 제거 (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md) [NIB: 웹 참조 추가 대화 상자](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) [Imports 문 (XML 네임 스페이스)](https://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

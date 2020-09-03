@@ -1,5 +1,5 @@
 ---
-title: '방법: 기 하 도형 기반 그라데이션 셰이더 만들기 | Microsoft Docs'
+title: '방법: 기하 도형 기반 그라데이션 셰이더 만들기 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d9bfa9a6e9be1a97b3a606aa302defd12a8d062
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664518"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>방법: 기하 도형 기반 그라데이션 셰이더 만들기
@@ -63,13 +63,13 @@ ms.locfileid: "72664518"
 
  ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-gradient-effect-graph.png "숫자-그라데이션-효과-그래프")
 
- 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 **셰이더 미리 보기**를 참조하세요.
+ 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대 한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md) 에서 **셰이더** 미리 보기를 참조 하세요.
 
- 다음 그림에서는 [How에 설명 된 3 차원 장면에 적용 된이 문서에서 설명 하는 셰이더를 보여 줍니다. 모델 3 차원 지형 ](../designers/how-to-model-3-d-terrain.md)입니다. 세계 좌표 위치에서 점의 높이와 함께 색의 농도가 증가합니다.
+ 다음 그림은 [방법: 3 차원 지형 모델](../designers/how-to-model-3-d-terrain.md)에 설명 된 3 차원 장면에 적용 되는이 문서에서 설명 하는 셰이더를 보여 줍니다. 세계 좌표 위치에서 점의 높이와 함께 색의 농도가 증가합니다.
 
- ![3&#45;차원 지형 모델에 적용 된 그라데이션 효과](../designers/media/digit-gradient-effect-result.png "숫자-그라데이션-효과-결과")
+ ![3&#45;D 지형 모델에 적용 된 그라데이션 효과](../designers/media/digit-gradient-effect-result.png "숫자-그라데이션-효과-결과")
 
- 3 차원 모델에 셰이더를 적용 하는 방법에 대 한 자세한 내용은 다음을 참조 하십시오. [How @No__t_0 3 차원 모델에 셰이더를 적용 합니다.
+ 3 차원 모델에 셰이더를 적용 하는 방법에 대 한 자세한 내용은 [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
- [방법: 3 차원 모델에 셰이더를 적용 하 ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How 합니다. @No__t_0 [How 셰이더 내보내기: 모델 3 차원 지형 ](../designers/how-to-model-3-d-terrain.md) [How: 회색조 질감 셰이더 만들기 ](../designers/how-to-create-a-grayscale-texture-shader.md) [셰이더](../designers/shader-designer.md) 디자이너 [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md) [방법: 모델 3 차원 지형](../designers/how-to-model-3-d-terrain.md) [방법: 회색조 질감 셰이더](../designers/how-to-create-a-grayscale-texture-shader.md) 셰이더 [디자이너](../designers/shader-designer.md) [셰이더 디자이너 노드](../designers/shader-designer-nodes.md) 만들기

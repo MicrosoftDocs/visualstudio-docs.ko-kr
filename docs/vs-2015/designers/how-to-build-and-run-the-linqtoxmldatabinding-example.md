@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5584494f65eaef72c2aa350af4e5af36155e0501
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664622"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>방법: LinqToXmlDataBinding 예제 빌드 및 실행
@@ -76,5 +76,5 @@ ms.locfileid: "72664622"
 
 2. 키보드를 사용하여 값을 편집합니다. <xref:System.Windows.Controls.TextBox> 컨트롤이 포커스를 잃으면 변경 사항이 즉시 XML 소스 목록과 책 목록에 자동으로 전파됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [LINQ to XML 사용 하 여 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md) [연습:](../designers/walkthrough-linqtoxmldatabinding-example.md) [Visual Studio에서 응용 프로그램 개발](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) 예제 LinqToXmlDataBinding

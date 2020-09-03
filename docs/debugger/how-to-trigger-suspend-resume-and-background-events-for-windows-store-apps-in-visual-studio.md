@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348940"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱을 디버그하는 동안 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법

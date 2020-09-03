@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: da9ba9572e121a9eba74cd8d624789032f1bb4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665664"
 ---
 # <a name="quick-watch-command"></a>간략한 조사식 명령
@@ -38,7 +38,7 @@ Debug.QuickWatchq [text]
 ## <a name="remarks"></a>설명
  `text`가 생략되면 커서에서 현재 선택된 텍스트 또는 단어가 조사식 창에 추가됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 >Debug.QuickWatch
