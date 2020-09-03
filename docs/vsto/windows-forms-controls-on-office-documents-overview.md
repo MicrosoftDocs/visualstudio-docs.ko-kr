@@ -28,16 +28,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254909"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office 문서에 대 한 Windows Forms 컨트롤 개요
   Windows Forms 컨트롤은 사용자가 데이터를 입력하거나 조작하는 데 사용할 수 있는 개체입니다. Microsoft Office Excel 및 Microsoft Office Word의 문서 수준 프로젝트에서 디자인 타임에 프로젝트의 문서나 통합 문서에 Windows Forms 컨트롤을 추가하거나 런타임에 프로그래밍 방식으로 이러한 컨트롤을 추가할 수 있습니다. Excel 또는 Word 용 VSTO 추가 기능에서 런타임에 열려 있는 문서나 워크시트에 프로그래밍 방식으로 이러한 컨트롤을 추가할 수 있습니다.
 
- 자세한 내용은 [방법: Office 문서](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)에 Windows Forms 컨트롤을 추가 합니다.
+ 자세한 내용은 [How to: Add Windows Forms controls To Office documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)을 참조 하세요.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -119,7 +119,7 @@ Windows Form에서
  사용자가 디자인 모드로 통합 문서를 여는 등 특정 조건에서는 코드가 로드되지 않으며 비트맵만 표시됩니다. 또한 사용자가 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 설치되지 않은 컴퓨터에서 통합 문서를 열면 사용자 지정을 실행할 수 없어 컨트롤이 로드되지 않으므로 컨트롤의 비트맵만 표시됩니다. 통합 문서를 저장하여 다른 사용자에게 보내기 전에는 항상 통합 문서의 컨트롤에서 개인 정보를 제거하여 개인 정보가 실수로 공개되는 일을 방지해야 합니다.
 
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>컨트롤 크기를 Excel 워크시트의 셀 크기와 일치
- 부모 셀의 크기가 변경될 때 자동으로 컨트롤의 크기가 조정되도록 설정할 수 있습니다. 자세한 내용은 [방법: 워크시트 셀](../vsto/how-to-resize-controls-within-worksheet-cells.md)내에서 컨트롤의 크기를 조정 합니다.
+ 부모 셀의 크기가 변경될 때 자동으로 컨트롤의 크기가 조정되도록 설정할 수 있습니다. 자세한 내용은 [방법: 워크시트 셀 내 컨트롤 크기 조정](../vsto/how-to-resize-controls-within-worksheet-cells.md)을 참조 하세요.
 
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>모든 워크시트에서 공유 하는 구성 요소 추가
  <xref:System.Data.DataSet>등 모든 워크시트에서 공유하려는 구성 요소는 워크시트 대신 통합 문서 디자이너에 추가할 수 있습니다. 이러한 구성 요소는 구성 요소 트레이에 표시됩니다.
@@ -130,7 +130,7 @@ Windows Form에서
 ### <a name="layout-style-of-controls-on-a-word-document"></a>Word 문서에 있는 컨트롤의 레이아웃 스타일
  Visual Studio 디자이너를 사용하여 문서 수준 프로젝트에서 Word 문서에 컨트롤을 추가하면 컨트롤이 텍스트에 맞춰 추가됩니다. 컨트롤의 레이아웃 스타일을 변경하려면 컨트롤을 마우스 오른쪽 단추로 클릭하고 **컨트롤 서식**을 클릭합니다. **개체 서식** 대화 상자의 **레이아웃** 페이지에서 배치 스타일을 선택합니다.
 
- 런타임에 Word 문서에 컨트롤을 `Add`추가 하는 경우 <xref:Microsoft.Office.Tools.Word.ControlCollection> 클래스의 메서드 오버 로드 > 다른 \< *컨트롤 클래스*를 사용 하 여 새 컨트롤의 레이아웃 스타일을 지정할 수 있습니다.
+ 런타임에 Word 문서에 컨트롤을 추가 하는 경우 `Add` \<*control class*> 클래스의 다른 메서드 오버 로드를 사용 하 여 새 컨트롤의 레이아웃 스타일을 지정할 수 있습니다 <xref:Microsoft.Office.Tools.Word.ControlCollection> .
 
 - 컨트롤을 텍스트에 맞춰 추가하려면 컨트롤의 위치가 지정된 <xref:Microsoft.Office.Interop.Word.Range> 를 사용하는 오버로드를 사용합니다.
 
@@ -154,12 +154,12 @@ Windows Form에서
 - [Windows Forms 컨트롤](/dotnet/framework/winforms/controls/index)
 - [Office 문서에서 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
 - [방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [방법: 워크시트 셀 내에서 컨트롤 크기 조정](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [방법: 워크시트 셀에서 컨트롤 크기 조정](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [방법: 인쇄할 때 워크시트에서 컨트롤 숨기기](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
 - [연습: CheckBox 컨트롤을 사용 하 여 문서 서식 변경](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
-- [연습: 단추를 사용 하 여 워크시트의 텍스트 상자에 텍스트 표시](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
-- [연습: 단추를 사용 하 여 문서의 텍스트 상자에 텍스트 표시](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
+- [연습: 워크시트에서 단추를 사용 하 여 텍스트 상자에 텍스트 표시](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
+- [연습: 문서에서 단추를 사용 하 여 텍스트 상자에 텍스트 표시](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
 - [Office 문서에서 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
-- [연습: 라디오 단추를 사용 하 여 문서에서 차트 업데이트](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
-- [연습: 라디오 단추를 사용 하 여 워크시트에서 차트 업데이트](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
+- [연습: 문서에서 라디오 단추를 사용 하 여 차트 업데이트](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
+- [연습: 워크시트에서 라디오 단추를 사용 하 여 차트 업데이트](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)

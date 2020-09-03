@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255077"
 ---
 # <a name="workbook-host-item"></a>통합 문서 호스트 항목
@@ -44,7 +44,7 @@ ms.locfileid: "71255077"
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>문서 수준 프로젝트의 통합 문서 호스트 항목에 대 한 제한 사항
  문서 수준의 프로젝트에는 하나의 <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목(즉, `ThisWorkbook` 클래스)만 포함할 수 있습니다. 문서 수준 사용자 지정에서는 디자인 타임에 새 <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목을 프로젝트에 추가할 수 없고 런타임에 새 <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목을 만들 수 없습니다.
 
- 런타임에 새 Excel 통합 문서를 만드는 경우 <xref:Microsoft.Office.Interop.Excel.Workbook>형식이 됩니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 통합 문서를 [만드는 방법에 대 한 자세한 내용은 방법: 프로그래밍 방식으로 새](../vsto/how-to-programmatically-create-new-workbooks.md)통합 문서를 만듭니다.
+ 런타임에 새 Excel 통합 문서를 만드는 경우 <xref:Microsoft.Office.Interop.Excel.Workbook>형식이 됩니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 통합 문서를 만드는 방법에 대 한 자세한 내용은 [방법: 프로그래밍 방식으로 새 통합 문서 만들기](../vsto/how-to-programmatically-create-new-workbooks.md)를 참조 하세요.
 
  <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목은 호스트 컨트롤의 컨테이너로 사용되지 않습니다. 그러므로 통합 문서에 보이는 컨트롤을 추가할 수 없지만 <xref:System.Data.DataSet>등의 구성 요소는 추가할 수 있으므로 모든 워크시트에서 구성 요소를 공유할 수 있습니다. 도메인 수준 프로젝트에서 통합 문서에 사용할 수 있는 구성 요소는 **도구 상자** 의 **구성 요소** 탭, **데이터** 탭 및 **모든 Windows Forms**탭에서 찾을 수 있습니다.
 

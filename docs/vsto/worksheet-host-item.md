@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254878"
 ---
 # <a name="worksheet-host-item"></a>워크시트 호스트 항목
@@ -47,14 +47,14 @@ ms.locfileid: "71254878"
  문서 수준 프로젝트에서는 Visual Studio 디자이너에서 워크시트 이름을 바꿀 수 있지만, 워크시트의 표시 이름만 변경합니다. 프로그래밍 이름이 여전히 워크시트의 기본 이름입니다. **속성** 창에서 워크시트의 이름을 바꾸는 경우 프로그래밍 이름만 변경됩니다.
 
 ### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>문서 수준 프로젝트에서 워크시트 호스트 항목의 제한 사항
- 문서 수준 프로젝트에서는 런타임에 새 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 만들 수 없습니다. 런타임에 새 Excel 워크시트를 만드는 경우 <xref:Microsoft.Office.Interop.Excel.Worksheet>형식이 됩니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 문서를 만드는 [방법에 대 한 자세한 내용은 방법: 통합 문서](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)에 새 워크시트를 프로그래밍 방식으로 추가 합니다.
+ 문서 수준 프로젝트에서는 런타임에 새 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 만들 수 없습니다. 런타임에 새 Excel 워크시트를 만드는 경우 <xref:Microsoft.Office.Interop.Excel.Worksheet>형식이 됩니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 문서를 만드는 방법에 대 한 자세한 내용은 [방법: 프로그래밍 방식으로 통합 문서에 새 워크시트 추가](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)를 참조 하세요.
 
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트에서 워크시트 호스트 항목 이해
  애플리케이션 수준 프로젝트에서는 런타임에 Excel에서 열리는 워크시트에 대해 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 생성할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 사용하여 연결된 워크시트에 컨트롤을 추가하거나 <xref:Microsoft.Office.Interop.Excel.Worksheet> 개체에서 사용할 수 없는 이벤트를 처리할 수 있습니다.
 
  <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 생성하려면 `GetVstoObject` 메서드를 사용합니다. 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)

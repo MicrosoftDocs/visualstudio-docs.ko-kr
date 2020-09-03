@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65734f5397bae8c35fb8e312041d0600b8fa84e9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254339"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>확장 된 개체를 사용 하 여 Excel 자동화
@@ -68,9 +68,9 @@ ms.locfileid: "71254339"
 - [방법: 워크시트에 XMLMappedRange 컨트롤 추가](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [방법: NamedRange 컨트롤 크기 조정](../vsto/how-to-resize-namedrange-controls.md)
 - [방법: ListObject 컨트롤 크기 조정](../vsto/how-to-resize-listobject-controls.md)
-- [방법: 새 행이 ListObject 컨트롤에 추가 될 때 데이터 유효성 검사](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
+- [방법: ListObject 컨트롤에 새 행을 추가할 때 데이터 유효성 검사](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
 - [방법: 데이터에 ListObject 열 매핑](../vsto/how-to-map-listobject-columns-to-data.md)
-- [연습: NamedRange 컨트롤의 이벤트에 대 한 프로그램](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

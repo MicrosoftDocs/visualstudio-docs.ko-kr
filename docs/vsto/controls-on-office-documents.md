@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254410"
 ---
 # <a name="controls-on-office-documents"></a>Office 문서의 컨트롤
@@ -32,7 +32,7 @@ ms.locfileid: "71254410"
 
  Excel 또는 Word의 문서 수준 프로젝트를 개발할 때 런타임에 프로그래밍 방식으로 이러한 컨트롤을 추가하거나, 디자인 타임에 Visual Studio 디자이너를 사용하여 프로젝트의 문서나 통합 문서에 이러한 컨트롤을 추가할 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 
  이벤트에 대한 프로그래밍 및 데이터에 컨트롤 바인딩을 비롯한 호스트 항목과 호스트 컨트롤의 기능과 이러한 컨트롤이 네이티브 개체와 어떻게 다른지에 대해 설명합니다.

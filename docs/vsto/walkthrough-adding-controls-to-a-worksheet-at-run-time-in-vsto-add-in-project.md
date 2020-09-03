@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253903"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가
@@ -37,8 +37,8 @@ ms.locfileid: "71253903"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>전제 조건
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -49,9 +49,9 @@ ms.locfileid: "71253903"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>새 Excel VSTO 추가 기능 프로젝트를 만들려면
 
-1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]이름이 **exceldynamiccontrols**인 Excel VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 이름이 **Exceldynamiccontrols**인 Excel VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
 
-2. **Microsoft. Tools** . r e c. p r e. 이 참조는 이 연습의 뒷부분에서 프로그래밍 방식으로 워크시트에 Windows Forms 컨트롤을 추가하는 데 필요합니다.
+2. **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** 어셈블리에 대 한 참조를 추가 합니다. 이 참조는 이 연습의 뒷부분에서 프로그래밍 방식으로 워크시트에 Windows Forms 컨트롤을 추가하는 데 필요합니다.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>워크시트에 컨트롤을 추가 하는 UI 제공
  Excel 리본 메뉴에 사용자 지정 탭을 추가합니다. 사용자는 탭에서 확인란을 선택하여 워크시트에 컨트롤을 추가할 수 있습니다.
@@ -64,7 +64,7 @@ ms.locfileid: "71253903"
 
      **Ribbon1.cs** 또는 **Ribbon1.xml** 라는 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시 됩니다.
 
-3. **도구 상자**의 **Office 리본 컨트롤** 탭에서 CheckBox 컨트롤을 **group1**로 끌어 옵니다.
+3. **도구 상자** 의 **Office 리본 컨트롤**탭에서 CheckBox 컨트롤을 **group1**로 끌어옵니다.
 
 4. **CheckBox1** 을 클릭하여 선택합니다.
 
@@ -96,7 +96,7 @@ ms.locfileid: "71253903"
 
 1. 리본 디자이너에서 **단추**를 두 번 클릭 합니다.
 
-     **단추 확인란** 의 이벤트처리기가코드편집기에서<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> 열립니다.
+     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> **단추** 확인란의 이벤트 처리기가 코드 편집기에서 열립니다.
 
 2. `Button_Click` 이벤트 처리기를 다음 코드로 바꿉니다.
 
@@ -141,12 +141,12 @@ ms.locfileid: "71253903"
 
 2. **보기** 메뉴에서 **코드**를 클릭합니다.
 
-3. 다음 메서드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 통합 문서에서 첫 번째 워크시트를 가져온 다음 `HasVstoObject` 메서드를 사용하여 워크시트에 생성된 워크시트 개체가 있는지 여부를 확인합니다. 생성된 워크시트 개체에 컨트롤이 있는 경우 코드가 해당 워크시트 개체를 가져온 다음 컨트롤 컬렉션을 반복하고 컨트롤을 제거합니다.
+3. `ThisAddIn` 클래스에 다음 메서드를 추가합니다. 이 코드는 통합 문서에서 첫 번째 워크시트를 가져온 다음 `HasVstoObject` 메서드를 사용하여 워크시트에 생성된 워크시트 개체가 있는지 여부를 확인합니다. 생성된 워크시트 개체에 컨트롤이 있는 경우 코드가 해당 워크시트 개체를 가져온 다음 컨트롤 컬렉션을 반복하고 컨트롤을 제거합니다.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
 
-4. C#에서는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 이벤트에 대한 이벤트 처리기를 만들어야 합니다. `ThisAddIn_Startup` 메서드에 이 코드를 배치할 수 있습니다. 이벤트 처리기를 [만드는 방법에 대 한 자세한 내용은 방법: Office 프로젝트](../vsto/how-to-create-event-handlers-in-office-projects.md)에서 이벤트 처리기를 만듭니다. `ThisAddIn_Startup` 메서드를 다음 코드로 바꿉니다.
+4. C#에서는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 이벤트에 대한 이벤트 처리기를 만들어야 합니다. `ThisAddIn_Startup` 메서드에 이 코드를 배치할 수 있습니다. 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요. `ThisAddIn_Startup` 메서드를 다음 코드로 바꿉니다.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
 
@@ -186,7 +186,7 @@ ms.locfileid: "71253903"
 
 - 워크시트에 컨트롤을 저장 하는 방법에 대 한 자세한 내용은 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)에서 Excel VSTO 추가 기능 동적 컨트롤 샘플을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Excel 솔루션](../vsto/excel-solutions.md)
 - [Office 문서의 Windows forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)

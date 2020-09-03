@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593059"
 ---
 # <a name="type-collection-editor-dialog-box"></a>형식 컬렉션 편집기 대화 상자
@@ -27,7 +27,7 @@ ms.locfileid: "75593059"
 
 |UI 요소|설명|
 |-|-----------------|
-|**형식 목록**|추가 또는 제거된 형식의 목록입니다.|
+|**Type List**|추가 또는 제거된 형식의 목록입니다.|
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Send 및 Receive 활동에 대해 형식 컬렉션 편집기를 표시하려면
 
