@@ -1,5 +1,5 @@
 ---
-title: inline, __inline, __forceinline | Microsoft Docs
+title: 인라인, __inline __forceinline | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a13b4df1231f9a71797592f61c7852dfb5dfced
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609723"
 ---
 # <a name="inline-__inline-__forceinline"></a>inline, __inline, __forceinline

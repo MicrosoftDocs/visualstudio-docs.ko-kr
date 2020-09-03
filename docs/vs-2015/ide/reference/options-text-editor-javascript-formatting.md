@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcfa4a2fb15ed8f4abfff24aa8e78c2b08eb8412
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662240"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>옵션, 텍스트 편집기, JavaScript, 서식
+# <a name="options-text-editor-javascript-formatting"></a>Options, Text Editor, JavaScript, Formatting
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **옵션** 대화 상자의 **서식** 페이지를 사용하여 코드 편집기의 서식 코드에 대한 옵션을 설정합니다. 메뉴 모음에서 이 페이지에 액세스하려면 **도구**, **옵션**을 선택한 다음 **텍스트 편집기**, **JavaScript** 및 **서식**을 확장합니다.
@@ -60,8 +60,8 @@ ms.locfileid: "72662240"
 |**'for' 문의 세미콜론 뒤에 공백 삽입**|이 옵션을 추가하면 코드 편집기는 `for` 루프의 첫 번째 줄에서 각 세미콜론 뒤에 공백을 추가합니다.|
 |**이항 연산자의 앞뒤에 공백 삽입**|이 옵션을 선택하면 코드 편집기는 이항 연산자 앞뒤에 공백을 추가합니다(예: +, -, &&, &#124;&#124;).|
 |**제어 흐름 문의 키워드 뒤에 공백 삽입**|이 옵션을 선택하면 코드 편집기는 제어 흐름 문의 JavaScript 키워드 뒤에 공백을 추가합니다.|
-|**익명 함수의 function 키워드 뒤에 공백 삽입**|이 옵션을 선택하면 코드 편집기는 익명 함수에 대한 `function` 키워드 뒤에 공백을 추가합니다.|
+|**익명 함수의 function 키워드 뒤에 공백을 삽입 합니다.**|이 옵션을 선택하면 코드 편집기는 익명 함수에 대한 `function` 키워드 뒤에 공백을 추가합니다.|
 |**여는 괄호 뒤와 비어 있지 않은 닫는 괄호 앞에 공백 삽입**|이 옵션을 선택하면 코드 편집기는 비어 있지 않는 문자가 있는 경우 여는 괄호 뒤와 닫는 괄호 앞에 공백을 추가합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

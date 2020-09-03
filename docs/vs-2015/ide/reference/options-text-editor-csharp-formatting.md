@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5371b7180aed462910a57daeb9bf5d43f2ecfedb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662281"
 ---
 # <a name="options-text-editor-c-formatting"></a>옵션, 텍스트 편집기, C#, 서식
@@ -39,14 +39,14 @@ ms.locfileid: "72662281"
 **서식** 속성 페이지 대화 상자를 사용하여 코드 편집기의 서식 코드에 대한 옵션을 설정합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고, **텍스트 편집기**를 확장하고, **C#** 을 확장하고, **서식**을 클릭합니다.
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.
 
-## <a name="general-settings"></a>일반 설정
+## <a name="general-settings"></a>General Settings(일반 설정)
  일반 설정은 코드 편집기가 서식 옵션을 코드에 적용하는 방법에 영향을 미칩니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-|레이블|설명|
+|레이블|Description|
 |-----------|-----------------|
 |**; 입력 시 완성 문에 서식 자동 지정**|이 옵션을 선택하면 코드 편집기에 대해 선택된 서식 옵션에 따라 완성 시 문에 서식이 지정됩니다. 코드 편집기가 문을 변경하지 않도록 하려면 이 상자의 선택을 취소합니다.|
 |**} 입력 시 완성 블록에 서식 자동 지정**|이 옵션을 선택하면 코드 블록을 완료하면 바로 코드 편집기에 대해 선택된 서식 옵션에 따라 코드 블록에 서식이 지정됩니다. 코드 편집기가 블록을 변경하지 않도록 하려면 이 상자의 선택을 취소합니다.|
@@ -58,5 +58,5 @@ ms.locfileid: "72662281"
 ## <a name="remarks"></a>설명
  각 언어에 대한 **탭** 페이지의 들여쓰기 옵션은 줄 끝에서 Enter 키를 누를 때 코드 편집기에서 커서가 배치되는 위치만 결정합니다. **서식** 아래 들여쓰기 옵션은 코드 서식이 자동으로 지정되는 경우 적용됩니다(예: **붙여넣을 때 들여쓰기 조정**이 선택된 동안 코드를 파일에 붙여넣을 경우, 서식 지정되는 블록이 수동으로 입력되는 경우).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

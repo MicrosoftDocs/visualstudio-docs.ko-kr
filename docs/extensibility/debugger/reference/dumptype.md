@@ -1,5 +1,5 @@
 ---
-title: 덤프타입 | 마이크로 소프트 문서
+title: 문자 형식 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737208"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-덤프할 프로그램의 상태(예: 실행 중인 스레드, 스택 프레임 및 현재 명령 어누)를 지정합니다.
+덤프 하는 프로그램의 상태 (예: 실행 중인 스레드, 스택 프레임 및 현재 명령 주소)의 양을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DUMPTYPE {
@@ -44,20 +44,20 @@ public enum enum_DUMPTYPE {
 
 ## <a name="fields"></a>필드
 `DUMP_MINIDUMP`\
-작고 컴팩트한 덤프를 지정합니다.
+작은 압축 덤프를 지정 합니다.
 
 `DUMP_FULLDUMP`\
-크고 완전한 덤프를 지정합니다.
+전체 덤프를 크게 지정 합니다.
 
 ## <a name="remarks"></a>설명
-[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) 메서드에 인수로 전달 되었습니다.
+[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) 메서드에 인수로 전달 됩니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: msdbg.h
+헤더: msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

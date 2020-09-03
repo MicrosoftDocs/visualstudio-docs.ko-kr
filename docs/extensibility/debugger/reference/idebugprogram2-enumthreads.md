@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로그램2::에넘스레드 | 마이크로 소프트 문서
+title: 'IDebugProgram2:: EnumThreads | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 76b93ef5489e57f74c05e5925b4304f1e93e9830
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722989"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
-프로그램에서 실행 중인 스레드 목록을 검색합니다.
+프로그램에서 실행 중인 스레드 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,12 +41,12 @@ int EnumThreads( 
 
 ## <a name="parameters"></a>매개 변수
 `ppEnum`\
-【아웃】 스레드 목록을 포함하는 [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) 개체를 반환합니다.
+제한이 스레드 목록을 포함 하는 [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

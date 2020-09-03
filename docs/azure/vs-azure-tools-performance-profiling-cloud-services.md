@@ -9,10 +9,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911773"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>클라우드 서비스의 성능 테스트
@@ -20,7 +20,7 @@ ms.locfileid: "72911773"
 다음과 같은 방법으로 클라우드 서비스의 성능을 테스트할 수 있습니다.
 
 * 요청과 연결에 대한 정보를 수집하고 서비스를 고객 관점에서 수행하는 방법을 보여주는 사이트 통계를 검토하려면 Azure Diagnostics를 사용합니다. 시작하려면 [Azure Cloud Services 및 Virtual Machines에서 진단 구성](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)을 참조하십시오.
-* Visual Studio 프로파일러를 사용하여 서비스 실행 방식의 계산 측면에 대한 심층 분석을 가져옵니다. 이 항목에서 알 수 있듯이 Azure에서 서비스가 실행될 때 성능을 측정하기 위해 프로파일러를 사용할 수 있습니다. 컴퓨팅 에뮬레이터에서 서비스가 로컬로 실행될 때 성능을 측정하는 프로파일러를 사용하는 방법에 대한 정보는 [Visual Studio 프로파일러를 사용하여 Compute 에뮬레이터에서 로컬로 Azure Cloud Services의 성능 테스트](/azure/cloud-services/cloud-services-performance-testing-visual-studio-profiler)를 참조하십시오.
+* Visual Studio 프로파일러를 사용하여 서비스 실행 방식의 계산 측면에 대한 심층 분석을 가져옵니다. 이 항목에서 알 수 있듯이 Azure에서 서비스가 실행될 때 성능을 측정하기 위해 프로파일러를 사용할 수 있습니다. 컴퓨팅 에뮬레이터에서 서비스가 로컬로 실행될 때 성능을 측정하는 프로파일러를 사용하는 방법에 대한 정보는 [Visual Studio 프로파일러를 사용하여 컴퓨팅 에뮬레이터에서 로컬로 Azure Cloud Services의 성능 테스트](/azure/cloud-services/cloud-services-performance-testing-visual-studio-profiler)를 참조하세요.
 
 ## <a name="choosing-a-performance-testing-method"></a>성능 테스트 방법 선택
 ### <a name="use-azure-diagnostics-to-collect"></a>수집할 Azure Diagnostics 사용:
@@ -76,32 +76,32 @@ Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [�
 ![프로파일링 설정 구성](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> **프로파일링 사용** 확인란을 활성화하려면 클라우드 서비스를 게시하는 데 사용 중인 로컬 컴퓨터에 프로파일러가 설치되어 있어야 합니다. 기본적으로 프로파일러는 Visual Studio를 설치할 때 설치됩니다.
+> **프로파일링 사용** 확인란을 활성화하려면 클라우드 서비스를 게시하는 데 사용하는 로컬 컴퓨터에 프로파일러가 설치되어 있어야 합니다. 기본적으로 프로파일러는 Visual Studio를 설치할 때 설치됩니다.
 >
 >
 
 ### <a name="to-configure-profiling-settings"></a>프로파일링 설정 구성
 1. 솔루션 탐색기에서 Azure 프로젝트에 대한 바로 가기 메뉴를 열고 **게시**를 선택합니다. 클라우드 서비스를 게시하는 방법에 대한 자세한 단계는 [Azure 도구를 사용하여 클라우드 서비스 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조하세요.
-2. **Azure 애플리케이션 게시** 대화 상자에서 **고급 설정** 탭을 선택합니다.
+2. **Azure 응용 프로그램 게시** 대화 상자에서 **고급 설정** 탭을 선택합니다.
 3. 프로파일링을 사용하려면 **프로파일링 사용** 확인란을 선택합니다.
 4. 프로파일링 설정을 구성하려면 **설정** 하이퍼링크를 선택합니다. 프로파일링 설정 대화 상자가 나타납니다.
 5. **사용할 프로파일링 방법** 옵션 단추에서 필요한 프로파일링 유형을 선택합니다.
-6. 계층 상호작용 프로파일링 데이터를 수집하려면 **계층 상호작용 프로파일링 사용** 확인란을 선택합니다.
+6. 계층 상호 작용 프로파일링 데이터를 수집하려면 **계층 상호 작용 프로파일링 사용** 확인란을 선택합니다.
 7. 설정을 저장하려면 **확인** 단추를 선택합니다.
 
     이 애플리케이션을 게시할 때 각 역할에 대한 프로파일링 세션을 만들기 위해 이러한 설정이 사용됩니다.
 
 ## <a name="viewing-profiling-reports"></a>프로파일링 보고서 보기
-프로파일링 세션은 클라우드 서비스에서 역할의 각 인스턴스에 대해 생성됩니다. Visual Studio에서 각 세션의 프로파일링 보고서를 보려면 서버 탐색기 창에서 볼 수 있으며 Azure 컴퓨팅 노드를 선택하여 역할의 인스턴스를 선택할 수 있습니다. 그런 다음 그림에서와 같이 프로파일링 보고서를 볼 수 있습니다.
+프로파일링 세션은 클라우드 서비스에서 역할의 각 인스턴스에 대해 생성됩니다. Visual Studio에서 각 세션의 프로파일링 보고서를 보려면 서버 탐색기 창에서 볼 수 있으며 Azure Compute 노드를 선택하여 역할 인스턴스를 선택할 수 있습니다. 그런 다음 그림에서와 같이 프로파일링 보고서를 볼 수 있습니다.
 
 ![Azure에서 프로파일링 보고서 보기](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
 
 ### <a name="to-view-profiling-reports"></a>프로파일링 보고서 보기
 1. Visual Studio에서 서버 탐색기 창을 보려면 메뉴 모음에서 보기, 서버 탐색기를 선택합니다.
-2. Azure 컴퓨팅 노드를 선택한 다음 Visual Studio에서 게시할 때 프로파일링 하도록 선택한 클라우드 서비스에 대한 Azure 배포 노드를 선택합니다.
+2. Azure Compute 노드를 선택한 다음, Visual Studio에서 게시할 때 프로파일링하도록 선택한 클라우드 서비스에 대한 Azure 배포 노드를 선택합니다.
 3. 인스턴스에 대한 프로파일링 보고서를 보려면 서비스에서 역할을 선택하고 특정 인스턴스에 대한 바로 가기 메뉴를 연 다음 **프로파일링 보고서 보기**를 선택합니다.
 
-    .vsp 파일인 보고서가 이제 Azure에서 다운로드되며 Azure 활동 로그에 다운로드 상태가 표시됩니다. 다운로드가 완료되면 프로파일링 보고서가 <Role name\> *<Instance Number\>* <identifier\>.vsp라는 Visual Studio에 대한 편집기의 탭에 나타납니다. 보고서에 대한 요약 데이터가 표시됩니다.
+    .vsp 파일인 보고서가 이제 Azure에서 다운로드되며 Azure 활동 로그에 다운로드 상태가 표시됩니다. 다운로드가 완료되면 프로파일링 보고서가 <Role name\>*<Instance Number\>*<identifier\>.vsp라는 Visual Studio에 대한 편집기의 탭에 나타납니다. 보고서에 대한 요약 데이터가 표시됩니다.
 4. 현재 보기 목록에서 보고서의 다른 보기를 표시하려면 원하는 보기의 유형을 선택합니다. 자세한 내용은 [프로파일링 도구 보고서 보기](https://msdn.microsoft.com/library/azure/bb385755.aspx)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계

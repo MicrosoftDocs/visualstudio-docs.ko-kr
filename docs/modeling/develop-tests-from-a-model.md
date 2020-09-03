@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596660"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
@@ -53,7 +53,7 @@ ms.locfileid: "75596660"
 - 테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 단순한 산술 함수 테스트는 입력 4, 출력이 2인지 확인이 될 수 있습니다. 대신, 스크립트를 입력 선택, 출력에 자신을 곱하고 결과가 원래 입력인지 확인으로 디자인합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.
 
 #### <a name="linking-tests-to-use-cases"></a>사용 사례에 테스트 연결
- [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]를 사용 하 여 테스트를 디자인 하 고 실행 하는 경우 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목에서 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.
+ 를 사용 하 여 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 테스트를 디자인 하 고 실행 하는 경우 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목에서 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>사용 사례에 테스트를 연결하려면
 
@@ -128,7 +128,7 @@ Assert (countAfter == countBefore = 1);
 
  테스트 관점에서 요구 사항 모델은 테스트 축약형으로 간주될 수 있습니다. 따라서 프로젝트 전체에서 테스트와 모델 간의 관계를 유지하는 것이 중요합니다.
 
-## <a name="Attaching"></a>모델 요소에 테스트 사례 연결
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> 모델 요소에 테스트 사례 연결
  프로젝트에서 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]를 사용하는 경우 모델의 요소에 테스트를 연결할 수 있습니다. 이렇게 하면 요구 사항 변경의 영향을 받는 테스트를 빠르게 찾을 수 있으며 요구 사항이 인식된 익스텐트를 추적하는 데 도움이 됩니다.
 
  모든 종류의 요소에 테스트를 연결할 수 있습니다. 다음은 몇 가지 예입니다.
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. 모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)
 - [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)

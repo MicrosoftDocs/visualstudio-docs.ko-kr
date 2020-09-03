@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 유형 아키텍처 | 마이크로 소프트 문서
+title: 프로젝트 형식 아키텍처 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706315"
 ---
 # <a name="project-types-architecture"></a>프로젝트 형식 아키텍처
-이 섹션에는 의 프로젝트 유형 아키텍처에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]대한 자세한 정보가 포함되어 있습니다.
+이 섹션에는의 프로젝트 형식 아키텍처에 대 한 자세한 정보가 포함 되어 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="in-this-section"></a>섹션 내용
 - [프로젝트 모델의 요소](../../extensibility/internals/elements-of-a-project-model.md)
 
- 프로젝트 유형이 사용할 수 있는 서비스와 구현해야 하는 인터페이스를 나열합니다.
+ 프로젝트 형식에서 사용할 수 있는 서비스와이 서비스에서 구현 해야 하는 인터페이스를 나열 합니다.
 
 - [프로젝트 모델 핵심 구성 요소](../../extensibility/internals/project-model-core-components.md)
 
- 프로젝트 형식이 구현해야 하는 인터페이스와 추가 기능을 제공하기 위해 선택적으로 구현할 수 있는 인터페이스에 대해 설명합니다.
+ 구현 해야 하는 프로젝트 형식에 대해 설명 하 고 선택적으로을 구현 하 여 추가 기능을 제공 합니다.
 
 - [프로젝트 형식을 만들어야 하는 경우](../../extensibility/internals/when-to-create-project-types.md)
 
- 프로젝트 유형을 만들어야 하는 시기와 VSPackage 및 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 편집기와 같은 다른 확장성 기능을 사용하여 동일한 목표를 달성할 수 있는 시기를 결정하는 데 도움이 됩니다.
+ 프로젝트 형식을 만들어야 하는 경우와 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vspackage 및 편집기와 같은 다른 확장성 기능을 사용 하 여 동일한 목표를 달성할 수 있는 경우를 결정할 수 있습니다.
 
 - [계층 구조 및 선택](../../extensibility/internals/hierarchies-and-selection.md)
 
- 계층 구조 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 및 선택 컨텍스트를 사용하여 일관되고 간소화된 사용자 환경을 제공하는 방법을 설명합니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 계층 및 선택 컨텍스트를 사용 하 여 일관적이 고 간소화 된 사용자 환경을 제공 하는 방법을 설명 합니다.
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
 - [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)
 
- 프로젝트 하위 유형을 통해 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 및 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]의 프로젝트 시스템의 동작을 사용자 지정할 수 있는 방법을 설명합니다.
+ 프로젝트 하위 유형을 사용 하 여 및의 프로젝트 시스템 동작을 사용자 지정 하는 방법을 설명 합니다 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] .
 
-- [프로젝트 유형](../../extensibility/internals/project-types.md)
+- [프로젝트 형식](../../extensibility/internals/project-types.md):
 
- 통합 개발 환경(IDE)의 기본 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 구성 요소로서 프로젝트의 개요를 제공합니다. 프로젝트가 빌드 및 컴파일 코드를 제어하는 방법을 설명하는 추가 항목에 대한 링크가 제공됩니다.
+ IDE (통합 개발 환경)의 기본 구성 요소로 프로젝트 개요를 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. 프로젝트에서 코드 빌드 및 컴파일을 제어 하는 방법을 설명 하는 추가 항목에 대 한 링크가 제공 됩니다.

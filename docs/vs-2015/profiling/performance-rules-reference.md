@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48659a0b5981d545a706abfcaa7c3db24052cd20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548410"
 ---
 # <a name="performance-rules-reference"></a>성능 규칙 참조
@@ -28,7 +28,7 @@ ms.locfileid: "85548410"
 |**정보**|정보 메시지는 규칙 조건 분석에서 오류 메시지 생성을 위한 임계값에 도달하지 않았거나, 메시지의 정보가 유용하기는 하지만 성능 문제를 반영하지는 않음을 나타냅니다.|  
   
 ## <a name="in-this-section"></a>섹션 내용  
- [ID 별 성능 규칙](../profiling/performance-rules-by-id.md)  
+ [ID별 성능 규칙](../profiling/performance-rules-by-id.md)  
   
  프로파일링 도구 성능 규칙은 다음의 네 가지 범주로 구성됩니다.  
   

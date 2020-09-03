@@ -62,6 +62,6 @@ ms.locfileid: "80705575"
 
 - 창 프레임 선택 컨텍스트 내에서 추적 되는 요소를 변경 하는 이벤트입니다. 예를 들어 DocObject 내에서 선택 내용을 변경 하거나 프로젝트 형식 창에서 선택을 변경 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [사용자에 대한 피드백](../../extensibility/internals/feedback-to-the-user.md)

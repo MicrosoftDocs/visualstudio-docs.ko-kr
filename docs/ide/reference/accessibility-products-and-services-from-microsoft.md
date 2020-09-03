@@ -35,7 +35,7 @@ Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할
 > [!IMPORTANT]
 > 이 페이지의 정보는 미국에서 Microsoft 제품의 사용을 허가하는 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 [Microsoft 접근성](https://www.microsoft.com/accessibility/) 웹 사이트를 방문하여 Microsoft 지원 서비스 전화 번호와 주소 목록을 볼 수 있습니다. 자회사에 연락하여 이 페이지에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 접근성에 대한 정보는 다른 언어로도 제공됩니다.
 
-## <a name="windows"></a> Windows의 접근성 기능
+## <a name="accessibility-features-of-windows"></a><a name="windows"></a> Windows의 접근성 기능
 
 Windows 운영 체제에는 키보드 입력 또는 마우스를 사용하는 데 어려움이 있거나 시력 또는 청각 장애가 있는 사용자에게 유용한 여러 접근성 기능이 기본 제공됩니다. 해당 기능은 설치 중에 설치됩니다. 이러한 기능에 대한 자세한 내용은 Windows 도움말 및 [Microsoft 접근성](https://www.microsoft.com/accessibility/) 웹 사이트를 참조하세요.
 
@@ -51,7 +51,7 @@ Microsoft 제품의 단계별 자습서를 보려면 [Microsoft 접근성](https
 
 보조 기술을 사용하는 경우 소프트웨어 또는 하드웨어를 업그레이드하기 전에 보조 기술 공급업체에 문의하여 가능한 호환성 문제를 확인해야 합니다.
 
-## <a name="altfortmats"></a> 대체 형식의 설명서
+## <a name="documentation-in-alternative-formats"></a><a name="altfortmats"></a> 대체 형식의 설명서
 
 인쇄물을 읽거나 처리하는 데 어려움이 있는 경우 보다 접근하기 쉬운 형식의 Microsoft 제품 설명서를 얻을 수 있습니다. [Microsoft 접근성](https://www.microsoft.com/accessibility/) 웹 사이트에서 접근하기 쉬운 제품 설명서의 인덱스를 볼 수 있습니다.
 
@@ -62,7 +62,7 @@ Microsoft 제품의 단계별 자습서를 보려면 [Microsoft 접근성](https
 
 웹 주소는 변경될 수 있으므로 여기에 나와 있는 웹 사이트에 연결되지 않을 수도 있습니다.
 
-## <a name="hearing"></a> 청각 장애가 있는 사용자를 위한 고객 서비스
+## <a name="customer-service-for-people-with-hearing-impairments"></a><a name="hearing"></a> 청각 장애가 있는 사용자를 위한 고객 서비스
 
 청각 장애가 있는 경우 문자 전화(TTY/TDD) 서비스를 통해 Microsoft 제품 및 고객 서비스를 모두 이용할 수 있습니다.
 
@@ -72,7 +72,7 @@ Microsoft 제품의 단계별 자습서를 보려면 [Microsoft 접근성](https
 
 Microsoft 지원 서비스에는 서비스 이용 시점의 가격, 약관 및 조건이 적용됩니다.
 
-## <a name="moreinfo"></a> 추가 정보
+## <a name="for-more-information"></a><a name="moreinfo"></a> 추가 정보
 
 컴퓨터의 접근성 기술이 장애가 있는 사용자에게 어떤 도움을 주는지에 대한 자세한 내용은 [Microsoft 접근성](https://www.microsoft.com/accessibility/) 웹 사이트를 참조하세요.
 

@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로그램2::겟디버그프로퍼티 | 마이크로 소프트 문서
+title: 'IDebugProgram2:: GetDebugProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 33bc10aadf25eb95414cc5fd334c572b2f270429
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722886"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
@@ -41,17 +41,17 @@ int GetDebugProperty( 
 
 ## <a name="parameters"></a>매개 변수
 `ppProperty`\
-【아웃】 프로그램의 속성을 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환합니다.
+제한이 프로그램의 속성을 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드에서 반환되는 속성은 프로그램에 만 해당합니다. 프로그램이 두 개 이상의 속성을 반환해야 하는 경우 이 메서드에서 반환되는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체는 추가 속성의 컨테이너이며 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드를 호출하면 모든 속성 목록이 반환됩니다.
+ 이 메서드에서 반환 하는 속성은 프로그램에 따라 다릅니다. 프로그램에서 두 개 이상의 속성을 반환 해야 하는 경우이 메서드에서 반환 되는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체는 추가 속성의 컨테이너 이며 [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드를 호출 하면 모든 속성의 목록이 반환 됩니다.
 
- 프로그램은 `IDebugProperty2` 인터페이스를 통해 설명할 수 있는 추가 속성의 수와 유형을 노출할 수 있습니다. IDE는 일반 속성 브라우저 사용자 인터페이스를 통해 추가 프로그램 속성을 표시할 수 있습니다.
+ 프로그램은 인터페이스를 통해 설명할 수 있는 추가 속성의 개수와 형식을 노출할 수 있습니다 `IDebugProperty2` . IDE는 제네릭 속성 브라우저 사용자 인터페이스를 통해 추가 프로그램 속성을 표시할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981107"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>SharePoint에 대 한 응용 프로그램 페이지 만들기
@@ -41,7 +41,7 @@ ms.locfileid: "72981107"
 ## <a name="create-an-application-page"></a>응용 프로그램 페이지 만들기
  응용 프로그램 페이지를 만들려면 SharePoint 프로젝트에 **응용 프로그램 페이지** 항목을 추가 합니다. 응용 프로그램 페이지를 만들 때 Visual Studio는 프로젝트에 다음 폴더를 추가 합니다.
 
-|폴더|설명|
+|폴더|Description|
 |------------|-----------------|
 |레이아웃|SharePoint 파일 시스템의 _layouts 가상 디렉터리에 매핑됩니다.|
 |레이아웃 하위 폴더|응용 프로그램 페이지를 구성 하는 파일을 포함 합니다. 기본적으로이 폴더의 이름은 프로젝트와 동일 합니다. 언제 든 지이 폴더의 이름을 바꿀 수 있습니다. 프로젝트를 실행 하면 Visual Studio에서이 폴더를 SharePoint 파일 시스템의 _layouts 가상 디렉터리에 배포 합니다.|
@@ -50,7 +50,7 @@ ms.locfileid: "72981107"
 
 |파일|설명|
 |----------|-----------------|
-|ASP.NET 페이지 파일 ( *.aspx*)|페이지를 정의 하는 XML 태그를 포함 합니다.|
+|ASP.NET 페이지 파일 (*.aspx*)|페이지를 정의 하는 XML 태그를 포함 합니다.|
 |응용 프로그램 페이지 코드 파일|응용 프로그램 페이지의 코드를 포함 합니다. 이 파일에 대 한 이벤트를 처리 하는 코드를 추가 합니다.|
 |응용 프로그램 페이지 디자이너 코드 파일|디자이너에서 생성 된 코드를 포함 합니다. 이 파일을 직접 편집 하지 마십시오.|
 
@@ -62,16 +62,16 @@ ms.locfileid: "72981107"
 
  Visual Studio에서 다른 SharePoint 프로젝트 항목을 디버그 하는 것 처럼 응용 프로그램 페이지를 디버그할 수 있습니다. Visual Studio 디버거를 시작 하면 Visual Studio에서 SharePoint 사이트를 엽니다.
 
- 응용 프로그램 페이지를 보려면 응용 프로그램 페이지의 위치로 수동으로 이동 해야 합니다 (예<em>: http://</em>S/_layouts/*Project_Name*/applicationpage1.aspx).
+ 응용 프로그램 페이지를 보려면 응용 프로그램 페이지의 위치로 수동으로 이동 해야 합니다 (예: http://<em>Server_Name</em>/_layouts/*Project_Name*/applicationpage1.aspx).
 
  SharePoint 프로젝트를 디버깅 하는 방법에 대 한 자세한 내용은 [sharepoint 솔루션 문제 해결](../sharepoint/troubleshooting-sharepoint-solutions.md)을 참조 하세요.
 
 ## <a name="choose-a-master-page"></a>마스터 페이지 선택
  기본적으로 **응용 프로그램 페이지** 항목은 프로젝트를 디버깅 하는 데 사용 하는 사이트의 마스터 페이지를 참조 합니다. 해당 페이지의 이름은 v4. 마스터 이며이 페이지는 SharePoint 사이트의 **마스터 페이지 갤러리** 에 나와 있습니다.
 
- 응용 프로그램 페이지에서 사용 되는 마스터 페이지는 응용 프로그램 `Page` 요소의 `MasterPageFile` 특성을 설정 하 여 명시적으로 변경할 수 있습니다. (예: `MasterPageFile="~/_layouts/applicationv4.master"`). SharePoint 서버에서 동적 마스터 페이지를 사용 하도록 설정 하지 않은 경우에는이 특성을 설정 해야 합니다. SharePoint의 마스터 페이지에 대 한 자세한 내용은 [마스터 페이지](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))를 참조 하세요.
+ 응용 프로그램 페이지에서 사용 되는 마스터 페이지는 `MasterPageFile` 응용 프로그램 요소의 특성을 설정 하 여 명시적으로 변경할 수 있습니다 `Page` . (예: `MasterPageFile="~/_layouts/applicationv4.master"` ). SharePoint 서버에서 동적 마스터 페이지를 사용 하도록 설정 하지 않은 경우에는이 특성을 설정 해야 합니다. SharePoint의 마스터 페이지에 대 한 자세한 내용은 [마스터 페이지](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [SharePoint Foundation 개발 심층 분석](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [ASP.NET 개요](/aspnet/overview)
 - [ASP.NET 웹 페이지 2](/aspnet/web-pages/index)

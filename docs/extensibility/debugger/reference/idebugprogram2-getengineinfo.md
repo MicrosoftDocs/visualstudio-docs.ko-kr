@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로그램2::겟엔진정보 | 마이크로 소프트 문서
+title: 'IDebugProgram2:: GetEngineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722822"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-이 프로그램을 실행하는 디버그 엔진(DE)의 이름과 GUID를 가져옵니다.
+이 프로그램을 실행 하는 디버그 엔진 (DE)의 이름과 GUID를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,16 +43,16 @@ int GetEngineInfo( 
 
 ## <a name="parameters"></a>매개 변수
 `pbstrEngine`\
-【아웃】 이 프로그램을 실행하는 DE의 이름을 반환합니다.
+제한이 이 프로그램을 실행 하는 DE-DE의 이름을 반환 합니다.
 
 `pguidEngine`\
-【아웃】 이 프로그램을 실행하는 DE의 GUID를 반환합니다.
+제한이 이 프로그램을 실행 하는 DE-DE의 GUID를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 각 DE는 식별을 위해 자체 GUID를 정의합니다.
+ 각 DE는 id에 대 한 고유한 GUID를 정의 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

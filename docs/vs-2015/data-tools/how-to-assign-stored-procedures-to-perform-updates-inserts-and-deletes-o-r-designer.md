@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2054a55f0633d5d4add51fee2e933d9f4d829fcf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609977"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-저장 프로시저를 O/R 디자이너에 추가하여 일반적인 <xref:System.Data.Linq.DataContext> 메서드로 실행할 수 있습니다. 또한 엔터티 클래스의 변경 내용이 데이터베이스에 저장 된 경우 (예: <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 메서드를 호출 하는 경우) 삽입, 업데이트 및 삭제를 수행 하는 기본 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 런타임 동작을 재정의 하는 데 사용할 수 있습니다.
+저장 프로시저를 O/R 디자이너에 추가하여 일반적인 <xref:System.Data.Linq.DataContext> 메서드로 실행할 수 있습니다. 또한 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 엔터티 클래스의 변경 내용을 데이터베이스에 저장 하는 경우 (예: 메서드를 호출 하는 경우) 삽입, 업데이트 및 삭제를 수행 하는 기본 런타임 동작을 재정의 하는 데 사용할 수 있습니다 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> .
 
 > [!NOTE]
 > 클라이언트로 다시 보내야 하는 값(예: 저장 프로시저에서 계산된 값)을 저장 프로시저에서 반환하는 경우 저장 프로시저에 출력 매개 변수를 만듭니다. 출력 매개 변수를 사용할 수 없는 경우 O/R 디자이너에서 생성된 재정의를 사용하지 말고 부분 메서드(Partial Method) 구현을 작성합니다. 데이터베이스에서 생성된 값에 매핑되는 멤버는 INSERT 또는 UPDATE 작업이 성공적으로 완료된 후 적절한 값으로 설정되어야 합니다. 자세한 내용은 [기본 동작 재정의에서 개발자의 책임](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1)을 참조 하세요.
@@ -34,9 +34,9 @@ ms.locfileid: "72609977"
 
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>저장 프로시저를 지정하여 엔터티 클래스의 기본 동작을 재정의하려면
 
-1. 디자이너에서 **LINQ to SQL** 파일을 엽니다. **솔루션 탐색기**에서 .dbml 파일을 두 번 클릭 합니다.
+1. 디자이너에서 **LINQ to SQL** 파일을 엽니다. (**솔루션 탐색기**에서 .dbml 파일을 두 번 클릭합니다.)
 
-2. **서버 탐색기** /**데이터베이스 탐색기**에서 **저장 프로시저** 를 확장 하 고 엔터티 클래스의 삽입, 업데이트 및/또는 삭제 명령에 사용할 저장 프로시저를 찾습니다.
+2. **서버 탐색기** / **데이터베이스 탐색기**에서 **저장 프로시저** 를 확장 하 고 엔터티 클래스의 삽입, 업데이트 및/또는 삭제 명령에 사용할 저장 프로시저를 찾습니다.
 
 3. 저장 프로시저를 O/R 디자이너로 끌어 놓습니다.
 
@@ -64,5 +64,5 @@ ms.locfileid: "72609977"
 
      업데이트에 대 한 기본 런타임 논리를 사용 하도록 되돌리려면 **속성** 창에서 삽입, 업데이트 또는 삭제 명령 옆에 있는 줄임표를 클릭 한 다음 **동작 구성** 대화 상자에서 **런타임 사용** 을 선택 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [DataContext 메서드의 LINQ to SQL 도구 (o/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md) [연습: LINQ to SQL 클래스 만들기 (o-r 디자이너)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [삽입, 업데이트 및 삭제 작업](https://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: dad2f90a51a4247a4c111ef51e85a28ba1a118ce
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548475"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: 참조로 형식을 전달하지 마세요.
@@ -55,22 +55,22 @@ ms.locfileid: "85548475"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시 하지 않아도 됩니다. 그러나이 디자인으로 인해 유용성 문제가 발생할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 라이브러리에서는 사용자의 피드백에 대 한 응답을 생성 하는 클래스의 두 가지 구현을 보여 줍니다. 첫 번째 구현 ( `BadRefAndOut` )은 라이브러리 사용자가 세 개의 반환 값을 강제로 관리 하도록 합니다. 두 번째 구현 ( `RedesignedRefAndOut` )은 `ReplyData` 데이터를 단일 단위로 관리 하는 컨테이너 클래스 ()의 인스턴스를 반환 하 여 사용자 환경을 단순화 합니다.
 
  [!code-csharp[FxCop.Design.NoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NoRefOrOut/cs/FxCop.Design.NoRefOrOut.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 응용 프로그램은 사용자의 환경을 보여 줍니다. 다시 디자인 된 라이브러리 (메서드)를 호출 하는 `UseTheSimplifiedClass` 것은 보다 간단 하며 메서드에서 반환 되는 정보는 쉽게 관리할 수 있습니다. 두 메서드의 출력은 동일 합니다.
 
  [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestNoRefOrOut/cs/FxCop.Design.TestNoRefOrOut.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제 라이브러리에서는 `ref` 참조 형식에 대 한 매개 변수를 사용 하는 방법을 보여 주고이 기능을 구현 하는 더 나은 방법을 보여 줍니다.
 
  [!code-csharp[FxCop.Design.RefByRefNo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RefByRefNo/cs/FxCop.Design.RefByRefNo.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 응용 프로그램은 라이브러리의 각 메서드를 호출 하 여 동작을 보여 줍니다.
 
  [!code-csharp[FxCop.Design.TestRefByRefNo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestRefByRefNo/cs/FxCop.Design.TestRefByRefNo.cs#1)]

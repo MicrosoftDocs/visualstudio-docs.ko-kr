@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597050"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Workflow Designer의 오류 메시지
@@ -35,7 +35,7 @@ ms.locfileid: "75597050"
 
 4. XAML 파일에 오류가 있어서 워크플로를 로드할 수 없습니다.
 
-잘못된 식과 충족되지 않은 유효성 검사 제약 조건으로도 워크플로가 작성됩니다. 워크플로 빌드는 성공 하지만 런타임에 <xref:System.Activities.InvalidWorkflowException> throw 됩니다. XAML 파일에 오류가 있으면 빌드가 수행되지 않습니다.
+잘못된 식과 충족되지 않은 유효성 검사 제약 조건으로도 워크플로가 작성됩니다. 워크플로 빌드는 성공 하지만 <xref:System.Activities.InvalidWorkflowException> 런타임 시이 throw 됩니다. XAML 파일에 오류가 있으면 빌드가 수행되지 않습니다.
 
 Visual Studio 내에서 워크플로를 로드 하면 해당 오류가 **오류 목록**표시 됩니다. 오류의 원본인 활동으로 이동 하려면 **오류 목록**에서 오류를 두 번 클릭 합니다.
 

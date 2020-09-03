@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548423"
 ---
 # <a name="network-usage"></a>네트워크 사용량
@@ -24,7 +24,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
  네트워크 도구는 Windows 유니버설 플랫폼 앱만 지원합니다. 지금은 다른 플랫폼이 지원되지 않습니다.  
   
 > [!NOTE]
-> 네트워크 도구에 대한 자세한 설명은 [Visual Studio 네트워크 도구 소개](https://devblogs.microsoft.com/visualstudio/?m=20155)를 참조하세요.  
+> 네트워크 도구에 대 한 자세한 설명은 [Visual Studio의 네트워크 도구 소개](https://devblogs.microsoft.com/visualstudio/?m=20155)를 참조 하세요.  
   
 ## <a name="collecting-network-tool-data"></a>네트워크 도구 데이터 수집  
  Visual Studio가 설치된 컴퓨터에 열려 있는 Visual Studio 프로젝트로 **네트워크** 도구를 실행해야 합니다.  
@@ -54,13 +54,13 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
  ![네트워크 도구 세부 정보 창](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|Name|설명|  
+|이름|설명|  
 |-|-|  
 |**헤더**|이벤트의 요청 헤더에 대한 정보입니다.|  
 |**본문**|요청 및 응답 페이로드 데이터입니다.|  
 |**매개 변수**|쿼리 문자열 매개 변수 이름 및 값입니다.|  
 |**쿠키**|응답 및 요청 쿠키 데이터입니다.|  
-|**Timings**|선택한 리소스를 획득하기 위한 단계의 그래프입니다.|  
+|**타이밍**|선택한 리소스를 획득하기 위한 단계의 그래프입니다.|  
   
  네트워크 **요약** 막대에는 지정된 지점에서 표시되는 네트워크 작업 수, 전송된 데이터의 양, 다운로드에 소요된 시간, 표시되는 오류의 수(요청과 4xx 또는 5xx개의 응답)가 표시됩니다.  
   
@@ -73,7 +73,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
 3. 예쁜 응답 인쇄 단추(본문 탭 내부)를 사용하면 콘텐츠 가독성을 높여 JSON, XML, HTML, CSS, JavaScript 및 TypeScript 응답 페이로드를 통해 구문 분석하는 데 도움이 될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](https://blogs.msdn.com/b/visualstudio/)   
  [Channel 9 비디오: VS 진단 도구 – 새 네트워크 프로파일러](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

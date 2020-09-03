@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db76627afdf44ef1c46ed9ff7a9e204da8eb112d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608868"
 ---
 # <a name="native-recommended-rules-rule-set"></a>네이티브 권장 규칙 규칙 집합
@@ -144,7 +144,7 @@ ms.locfileid: "72608868"
 |                       [C6705](../code-quality/c6705.md)                        |                필요한 주석 인수 개수가 실제 주석 인수 개수와 일치하지 않습니다.                 |
 |                       [C6706](../code-quality/c6706.md)                        |                                             예기치 않은 주석 오류가 발생했습니다.                                              |
 |                       [C6995](../code-quality/c6995.md)                        |                                                     XML 로그 파일을 저장 하지 못했습니다.                                                     |
-|                      [C26100](../code-quality/c26100.md)                       |                                                           경합 상태                                                            |
+|                      [C26100](../code-quality/c26100.md)                       |                                                           경합 조건                                                            |
 |                      [C26101](../code-quality/c26101.md)                       |                                            연동 작업을 제대로 사용 하지 못함                                            |
 |                      [C26110](../code-quality/c26110.md)                       |                                                     호출자가 잠금 유지에 실패 했습니다.                                                     |
 |                      [C26111](../code-quality/c26111.md)                       |                                                   호출자가 잠금 해제에 실패 했습니다.                                                    |
@@ -156,7 +156,7 @@ ms.locfileid: "72608868"
 |                      [C28020](../code-quality/c28020.md)                       |                                               이 식은이 호출에서 true가 아닙니다.                                               |
 |                      [C28021](../code-quality/c28021.md)                       |                                           주석이 달린 매개 변수는 포인터여야 합니다.                                           |
 |                      [C28022](../code-quality/c28022.md)                       |            이 함수의 함수 클래스는 해당 클래스를 정의 하는 데 사용 된 typedef의 함수 클래스와 일치 하지 않습니다.            |
-|                      [C28023](../code-quality/c28023.md)                       |         할당 되거나 전달 되는 함수는 클래스 중 하나 이상에 대 한 \_Function_class \_ 주석을 포함 해야 합니다.         |
+|                      [C28023](../code-quality/c28023.md)                       |         할당 되거나 전달 되는 함수는 \_ \_ 클래스 중 하나 이상에 대 한 Function_class 주석을 포함 해야 합니다.         |
 |                      [C28024](../code-quality/c28024.md)                       | 할당 되는 함수 포인터는 함수 클래스 (es) 목록에 포함 되지 않은 함수 클래스를 사용 하 여 주석 처리 됩니다. |
 |                      [C28039](../code-quality/c28039.md)                       |                                     실제 매개 변수의 형식은 형식과 정확히 일치 해야 합니다.                                      |
 |                      [C28112](../code-quality/c28112.md)                       |            연동 함수를 통해 액세스 되는 변수는 항상 연동 함수를 통해 액세스 해야 합니다.            |

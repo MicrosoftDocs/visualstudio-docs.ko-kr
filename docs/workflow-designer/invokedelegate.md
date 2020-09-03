@@ -11,10 +11,10 @@ ms.author: tglee
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876075"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
@@ -35,9 +35,9 @@ ms.locfileid: "86876075"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.InvokeDelegate> 활동의 이름입니다. 기본값은 InvokeDelegate입니다.<br /><br /> 는 반드시 <xref:System.Activities.Activity.DisplayName%2A> 필요한 것은 아니지만 하나를 사용 하는 것이 좋습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> 활동의 이름입니다. 기본값은 InvokeDelegate입니다.<br /><br /> 는 반드시 <xref:System.Activities.Activity.DisplayName%2A> 필요한 것은 아니지만 하나를 사용 하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|작업이 실행될 때 호출할 <xref:System.Activities.ActivityDelegate>의 이름입니다. 이 속성은 디자이너 화면에서 편집할 수 있으며 필수 항목입니다.|
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|거짓|호출한 대리자의 인수 컬렉션입니다. 키는에 있는 매개 변수 개체의 이름이 <xref:System.Activities.ActivityDelegate> 고, 값은 식이 계산 되어 해당 하는 매개 변수 개체에 할당 되는 인수입니다. 이 속성을 설정할 수 있는 **DelegateArguments** 대화 상자를 표시 하려면 속성 표의 **DelegateArguments** 필드에서 줄임표 단추를 클릭 합니다. 인수 **만들기** 필드를 클릭 하 여 인수를 추가 합니다.|
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|호출한 대리자의 인수 컬렉션입니다. 키는에 있는 매개 변수 개체의 이름이 <xref:System.Activities.ActivityDelegate> 고, 값은 식이 계산 되어 해당 하는 매개 변수 개체에 할당 되는 인수입니다. 이 속성을 설정할 수 있는 **DelegateArguments** 대화 상자를 표시 하려면 속성 표의 **DelegateArguments** 필드에서 줄임표 단추를 클릭 합니다. 인수 **만들기** 필드를 클릭 하 여 인수를 추가 합니다.|
 
 ## <a name="see-also"></a>추가 정보
 

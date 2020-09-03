@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876049"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 활동 디자이너 사용
@@ -25,7 +25,7 @@ ms.locfileid: "86876049"
 
 ## <a name="the-parallelforeacht-activity"></a>ParallelForEach<T \> 작업
 
-<xref:System.Activities.Statements.ParallelForEach%601>해당 값을 열거 하 고가 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 열거 하는 모든 값에 대해을 예약 합니다. <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>만 예약합니다. <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>가 유휴 상태로 전환되는지 여부에 따라 본문의 실행 방법이 달라집니다.
+<xref:System.Activities.Statements.ParallelForEach%601> 해당 값을 열거 하 고가 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 열거 하는 모든 값에 대해을 예약 합니다. <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>만 예약합니다. <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>가 유휴 상태로 전환되는지 여부에 따라 본문의 실행 방법이 달라집니다.
 
 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>가 유휴 상태로 전환되지 않는 경우에는 예약된 활동이 스택으로 처리되기 때문에 역순으로 실행됩니다. 즉, 마지막으로 예약된 활동이 가장 먼저 실행됩니다. 예를 들어,에의 컬렉션이 있고 {1,2,3,4} <xref:System.Activities.Statements.ParallelForEach%601> **WriteLine** 를 본문으로 사용 하 여 값을 쓸 수 있습니다. 콘솔에 4, 3, 2, 1이 출력 됩니다. 이는 **writeline** 이 유휴 상태로 전환 되지 않으므로 4 개의 **writeline** 활동이 예약 된 후 스택 동작을 사용 하 여 실행 됩니다 (처음에는 마지막으로 실행 됨).
 
@@ -43,8 +43,8 @@ ms.locfileid: "86876049"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **ParallelForEach \<Int32> **입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|거짓|컬렉션의 각 항목에 대해 실행할 활동입니다. 활동을 추가 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 도구 상자의 활동을 "여기에 작업 놓기" 힌트 텍스트가 **있는 \<T> ParallelForEach** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **ParallelForEach \<Int32> **입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|컬렉션의 각 항목에 대해 실행할 활동입니다. 활동을 추가 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 도구 상자의 활동을 "여기에 작업 놓기" 힌트 텍스트가 **있는 \<T> ParallelForEach** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
 |**TypeArgument**|True|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>제네릭 매개 변수 *T*로 지정 된 컬렉션에 있는 항목의 형식입니다. 기본적으로 **Typeargument** 는 **Int32**로 설정 됩니다. **ParallelForEach<t \> ** 활동 디자이너에서 형식 T를 변경 하려면 속성 표에서 **typeargument** 콤보 상자의 값을 변경 합니다.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|반복할 항목의 컬렉션입니다. 을 설정 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **ForEach<\> T** 활동 디자이너의 **값** 상자에 "VB 식 입력" 또는 **속성** 창의 **값** 상자에 Visual Basic 식을 입력 합니다.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||각 반복이 완료된 후 평가됩니다. true이면 예약된 보류 중인 반복이 취소됩니다. 이 속성을 설정 하지 않으면 모든 예약 된 문이 완료 될 때까지 실행 됩니다.|

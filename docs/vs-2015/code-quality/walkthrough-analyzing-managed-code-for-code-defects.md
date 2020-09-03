@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9478394162051fc08c33047cf1ac24275aff75e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609326"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>연습: 관리 코드의 코드 오류 분석
@@ -27,23 +27,23 @@ ms.locfileid: "72609326"
 
  이 연습에서는 Microsoft .NET Framework 디자인 지침을 준수 하기 위해 코드 분석을 사용 하 여 .NET 관리 코드 어셈블리를 분석 하는 과정을 단계별로 안내 합니다.
 
- 이 연습에서는 다음을 수행 합니다.
+ 이 연습에서는 다음을 수행합니다.
 
 - 코드 오류 경고를 분석 하 고 수정 합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>사전 요구 사항
 
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].
 
 ## <a name="create-a-class-library"></a>클래스 라이브러리 만들기
 
 #### <a name="to-create-a-class-library"></a>클래스 라이브러리를 만들려면
 
-1. @No__t_1의 **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **프로젝트**를 클릭 합니다.
+1. 의 **파일** 메뉴에서 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **새로 만들기** 를 클릭 한 다음 **프로젝트**를 클릭 합니다.
 
-2. **새 프로젝트** 대화 상자의 **프로젝트 형식**에서 **C#시각적 개체**를 클릭 합니다.
+2. **새 프로젝트** 대화 상자의 **프로젝트 형식**에서 **Visual c #** 을 클릭 합니다.
 
-3. **템플릿**에서 **클래스 라이브러리**를 선택 합니다.
+3. **템플릿**에서 **클래스 라이브러리**를 선택합니다.
 
 4. **이름** 텍스트 상자에 **CodeAnalysisManagedDemo** 를 입력 한 다음 **확인**을 클릭 합니다.
 
@@ -83,7 +83,7 @@ ms.locfileid: "72609326"
 
 #### <a name="to-correct-code-analysis-rule-violations"></a>코드 분석 규칙 위반을 수정 하려면
 
-1. **보기** 메뉴에서 **오류 목록**를 클릭 합니다.
+1. **보기** 메뉴에서 **오류 목록**을 클릭합니다.
 
      선택한 개발자 프로필에 따라 **보기** 메뉴에서 **다른 창** 을 가리키고 **오류 목록**를 클릭 해야 할 수도 있습니다.
 
@@ -95,49 +95,49 @@ ms.locfileid: "72609326"
 
 - [CA1014: CLSCompliantAttribute를 사용 하 여 어셈블리를 표시](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)합니다. 디자인: ' demo '는 CLSCompliantAttribute로 표시 되어야 하 고 해당 값은 true 여야 합니다.
 
-  - AssemblyInfo.cs 파일에 코드 `using``System;`를 추가 합니다.
+  - `using``System;`AssemblyInfo.cs 파일에 코드를 추가 합니다.
 
-       그런 다음 AssemblyInfo.cs 파일의 끝에 코드 `[assembly: CLSCompliant(true)]`를 추가 합니다.
+       그런 다음 `[assembly: CLSCompliant(true)]` AssemblyInfo.cs 파일의 끝에 코드를 추가 합니다.
 
        프로젝트를 다시 빌드합니다.
 
 - [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md)합니다. 디자인:이 클래스에 다음 생성자를 추가 합니다. public Demo (String)
 
-  - 클래스 `demo`에 `public demo (String s) : base(s) { }` 생성자를 추가 합니다.
+  - 클래스에 생성자를 추가 `public demo (String s) : base(s) { }` `demo` 합니다.
 
 - [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft 디자인:이 클래스에는 public Demo (문자열, 예외) 생성자를 추가 합니다.
 
-  - 클래스 `demo`에 `public demo (String s, Exception e) : base(s, e) { }` 생성자를 추가 합니다.
+  - 클래스에 생성자를 추가 `public demo (String s, Exception e) : base(s, e) { }` `demo` 합니다.
 
 - [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft 디자인: protected Demo (SerializationInfo, StreamingContext) 클래스에 다음 생성자를 추가 합니다.
 
-  - Class1.cs 파일의 시작 부분에 코드 `using System.Runtime.Serialization;`를 추가 합니다.
+  - `using System.Runtime.Serialization;`Class1.cs 파일의 시작 부분에 코드를 추가 합니다.
 
-       다음으로 생성자를 추가 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+       다음으로 생성자를 추가 합니다. `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
        프로젝트를 다시 빌드합니다.
 
 - [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md)합니다. 디자인:이 클래스에 다음 생성자를 추가 합니다. public demo ()
 
-  - 클래스 `demo`에 `public demo () : base() { }` 생성자를 추가**합니다.**
+  - 클래스에 생성자를 추가 `public demo () : base() { }` `demo` **합니다.**
 
        프로젝트를 다시 빌드합니다.
 
 - [CA1709: 식별자](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)의 대/소문자를 올바르게 지정 해야 합니다. 이름: ' testcode '로 변경 하 여 네임 스페이스 이름 ' testcode '의 대/소문자를 수정 하십시오.
 
-  - 네임 스페이스 `testCode`의 대/소문자를 `TestCode` 변경 합니다.
+  - 네임 스페이스의 대/소문자를로 변경 합니다 `testCode` `TestCode` .
 
 - [CA1709: 식별자](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)의 대/소문자를 올바르게 지정 해야 합니다. 이름: ' demo '로 변경 하 여 형식 이름 ' demo '의 대/소문자를 수정 하십시오.
 
-  - 멤버의 이름을 `Demo`로 변경 합니다.
+  - 멤버의 이름을로 변경 `Demo` 합니다.
 
 - [CA1709: 식별자](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)의 대/소문자를 올바르게 지정 해야 합니다. 이름 지정: 멤버 이름 ' i n s '의 대/소문자를 ' 항목 '으로 변경 하 여 수정 하십시오.
 
-  - 멤버의 이름을 `Item`로 변경 합니다.
+  - 멤버의 이름을로 변경 `Item` 합니다.
 
 - [CA1710: 식별자에 올바른 접미사가 있어야](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)합니다. 이름: ' testcode. demo '의 이름을 ' Exception '으로 끝나야 합니다.
 
-  - 클래스 및 생성자의 이름을 `DemoException`로 변경 합니다.
+  - 클래스 및 생성자의 이름을로 변경 `DemoException` 합니다.
 
 - [CA2210: 어셈블리](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)에는 강력한 이름 키를 사용 하 여 ' manageddemo ' 서명에 올바른 강력한 이름을 사용 해야 합니다.
 
@@ -149,7 +149,7 @@ ms.locfileid: "72609326"
 
        **어셈블리 서명** 확인란을 선택 합니다.
 
-       **문자열 이름 키 파일 선택** 목록에서 \<New ...을 선택 합니다.  **>** .
+       **문자열 이름 키 파일 선택** 목록에서을 선택 **\<New…>** 합니다.
 
        **강력한 이름 키 만들기** 대화 상자가 나타납니다.
 
@@ -163,7 +163,7 @@ ms.locfileid: "72609326"
 
 - [CA2237: iserializable 형식을 SerializableAttribute로 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)합니다. 사용:이 형식이 iserializable을 구현 하므로 ' demo ' 형식에 [Serializable] 특성을 추가 합니다.
 
-  - 클래스 `demo`에 `[Serializable ()]` 특성을 추가 합니다.
+  - `[Serializable ()]`클래스에 특성을 추가 `demo` 합니다.
 
        프로젝트를 다시 빌드합니다.
 
