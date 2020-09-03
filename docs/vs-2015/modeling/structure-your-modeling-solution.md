@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917321"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
@@ -117,7 +117,7 @@ ms.locfileid: "75917321"
 
 [Visual Studio 아키텍처 도구 지침](../modeling/visual-studio-architecture-tooling-guidance.md) -팀에서 모델을 관리 하는 방법에 대 한 추가 지침
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
-[개발 프로세스에서 모델을 사용](../modeling/use-models-in-your-development-process.md) 하
-[버전 제어에서 모델 및 다이어그램 관리](../modeling/manage-models-and-diagrams-under-version-control.md)
+[버전 제어](../modeling/manage-models-and-diagrams-under-version-control.md) 
+ 에서 모델 및 다이어그램 관리 [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)

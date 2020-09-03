@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a585aa64fec565a58a3af245ff3d3beaa9dc8af3
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173930"
 ---
 # <a name="design-warnings"></a>디자인 경고
@@ -93,6 +93,6 @@ ms.locfileid: "84173930"
 | [CA1066: Equals를 재정의할 때 IEquatable을 구현하세요.](../code-quality/ca1066.md) | 값 형식은 <xref:System.Object.Equals%2A> 메서드를 재정의 하지만는 구현 하지 않습니다 <xref:System.IEquatable%601> . |
 | [CA1067: IEquatable을 구현할 때 Equals를 재정의하세요.](../code-quality/ca1067.md) | 형식은를 구현 <xref:System.IEquatable%601> 하지만 메서드를 재정의 하지 않습니다 <xref:System.Object.Equals%2A> . |
 | [CA1068: CancellationToken 매개 변수는 마지막에 위치해야 합니다.](../code-quality/ca1068.md) | 메서드에 마지막 매개 변수가 아닌 CancellationToken 매개 변수가 있습니다. |
-| [CA1069: 열거형은 중복 값을 사용할 수 없습니다.](../code-quality/ca1069.md) | 열거형에는 동일한 상수 값을 명시적으로 할당 하는 여러 멤버가 있습니다. |
-| [CA1070: 이벤트 필드를 가상으로 선언 하지 마십시오.](../code-quality/ca1070.md) | [필드와 유사한 이벤트가](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) 가상으로 선언 되었습니다. |
+| [CA1069: 열거형에 중복 값이 없어야 합니다.](../code-quality/ca1069.md) | 열거형에는 동일한 상수 값을 명시적으로 할당 하는 여러 멤버가 있습니다. |
+| [CA1070: 이벤트 필드를 가상으로 선언하지 마세요.](../code-quality/ca1070.md) | [필드와 유사한 이벤트가](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) 가상으로 선언 되었습니다. |
 | [CA2210: 어셈블리에는 올바른 강력한 이름을 사용해야 합니다.](../code-quality/ca2210.md) | 강력한 이름은 클라이언트에서 무단으로 변경된 어셈블리를 모르는 사이에 로드하지 못하도록 보호합니다. 강력한 이름이 없는 어셈블리는 극히 제한된 시나리오 이외에는 배포하면 안 됩니다. 제대로 서명되지 않은 어셈블리를 공유하거나 배포하면 어셈블리가 무단으로 변경되거나, 공용 언어 런타임에서 어셈블리를 로드할 수 없거나, 사용자가 자신의 컴퓨터에서 확인을 사용하지 못하게 될 수 있습니다. |

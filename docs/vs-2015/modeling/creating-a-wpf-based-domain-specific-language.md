@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 198497c0f609401639218a54321427e51eb682ff
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918906"
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>WPF 기반 도메인별 언어 만들기
@@ -23,5 +23,5 @@ ms.locfileid: "75918906"
 
  이 기능에 대 한 정보 및 샘플은 [Visual Studio 시각화 및 모델링 SDK](https://www.microsoft.com/download/details.aspx?id=48148)에서 찾을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)

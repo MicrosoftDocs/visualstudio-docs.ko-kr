@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015296"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>방법: 마스터 페이지 또는 테마 가져오기
-  마스터 페이지와 테마를 만들고 사용 하 여 SharePoint 사이트의 페이지를 일관 된 모양으로 지정할 수 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]는 이러한 요소에 대 한 템플릿을 제공 하지 않지만 SharePoint 디자이너에서 만든 다음로 가져올 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 자세한 내용은 Microsoft 웹 사이트의 [구성 요소: 페이지 및 사용자 인터페이스](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 를 참조 하세요.
+  마스터 페이지와 테마를 만들고 사용 하 여 SharePoint 사이트의 페이지를 일관 된 모양으로 지정할 수 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 는 이러한 요소에 대 한 템플릿을 제공 하지 않지만 SharePoint 디자이너에서 만든 다음로 가져올 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 자세한 내용은 Microsoft 웹 사이트의 [구성 요소: 페이지 및 사용자 인터페이스](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 를 참조 하세요.
 
 ### <a name="to-import-a-master-page-or-theme"></a>마스터 페이지 또는 테마를 가져오려면
 
@@ -88,7 +89,7 @@ ms.locfileid: "86015296"
 
      마스터 페이지 또는 테마 목록이 표시 되 고 가져온 마스터 페이지나 테마가 포함 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [마스터 페이지](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint에 대 한 페이지 만들기](../sharepoint/creating-pages-for-sharepoint.md)

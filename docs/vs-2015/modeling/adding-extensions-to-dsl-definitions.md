@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919053"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 정의에 확장 추가
@@ -37,5 +37,5 @@ DSL 정의 확장을 사용 하면 DSL (도메인별 언어)에 대 한 확장 �
 
   예제 코드 및이 기능에 대 한 자세한 내용은 [Visual Studio 시각화 및 모델링 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148) 웹 사이트를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio 시각화 및 모델링 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio Visualization and Modeling SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

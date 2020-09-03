@@ -18,10 +18,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 31eda172d21fdce5ca3d6e03b91955318adb623d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533577"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>코드 분석을 사용하여 C/C++ 코드 품질 분석
@@ -43,6 +43,6 @@ Visual Studio에서 코드 분석을 통해 코드 오류를 찾고 수정하여
 |[C/c + + 코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|호출자와 호출 수신자 간의 계약 위반을 검색 하는 코드 분석 도구의 주석 기능에 대해 알아봅니다.|  
 |[C/c + + 경고에 대 한 코드 분석](../code-quality/code-analysis-for-c-cpp-warnings.md)|코드 분석 경고를 나열 하 고 설명 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [응용 프로그램 품질 분석](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

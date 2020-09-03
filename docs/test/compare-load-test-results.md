@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2390b7efde62d475008dcb17aa24ed69ebf4bf5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288847"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고

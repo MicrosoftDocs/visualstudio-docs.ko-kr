@@ -26,10 +26,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 33b97050f04fd23a9fa3b6c3c641faa5dfe4802f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651053"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>디자이너를 사용하여 SQL 데이터베이스 만들기
@@ -47,16 +47,16 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 
 - [테이블을 데이터로 채우기](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 완료 하려면 SQL Server Data Tools 설치 되어 있는지 확인 합니다. **보기** 메뉴에 **SQL Server 개체 탐색기**표시 되어야 합니다. 표시 되지 않는 경우 **프로그램 추가/제거**로 이동 하 고, **Visual Studio 2015**을 클릭 하 고, **변경**을 선택 하 고 **SQL Server Data Tools**옆의 상자를 선택 합니다.
 
-## <a name="BKMK_CreateNewSQLDB"></a>프로젝트 및 로컬 데이터베이스 파일 만들기
+## <a name="create-a-project-and-a-local-database-file"></a><a name="BKMK_CreateNewSQLDB"></a> 프로젝트 및 로컬 데이터베이스 파일 만들기
 
 #### <a name="to-create-a-project-and-a-database-file"></a>프로젝트 및 데이터베이스 파일을 만들려면
 
-1. @No__t_0 이라는 Windows Forms 프로젝트를 만듭니다.
+1. 이라는 Windows Forms 프로젝트를 만듭니다 `SampleDatabaseWalkthrough` .
 
-2. 메뉴 모음에서 **프로젝트**  > **새 항목 추가**를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
 
 3. 항목 템플릿 목록에서 아래로 스크롤하여 **서비스 기반 데이터베이스**를 선택 합니다.
 
@@ -64,7 +64,7 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 
 4. 데이터베이스 이름을 **sampledatabase.mdf**로 지정한 다음 **추가** 단추를 선택 합니다.
 
-5. **데이터 소스** 창이 열려 있지 않은 경우 Shift + Alt + D 키를 선택 하거나 메뉴 모음에서**다른 Windows**  > **데이터 원본** >  **보기** 를 선택 하 여 엽니다.
+5. **데이터 소스** 창이 열려 있지 않으면 Shift + Alt + D 키를 선택 하거나 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 소스**보기를 선택 하 여 엽니다.
 
 6. **데이터 소스** 창에서 **새 데이터 소스 추가** 링크를 선택 합니다.
 
@@ -72,11 +72,11 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 
    데이터베이스의 속성 창을 열어 연결 문자열 및 기본 .mdf 파일 위치를 볼 수 있습니다. 데이터베이스 파일이 프로젝트 폴더에 있는 것을 볼 수 있습니다.
 
-- Visual Studio에서 창이 아직 열려 있지 않은 경우  > **SQL Server 개체 탐색기** **보기** 를 선택 합니다. **데이터 연결** 노드를 확장 하 고 sampledatabase.mdf에 대 한 바로 가기 메뉴를 연 다음 **속성**을 선택 하 여 속성 창을 엽니다.
+- Visual Studio에서 **View**  >  창이 아직 열려 있지 않은 경우**SQL Server 개체 탐색기** 보기를 선택 합니다. **데이터 연결** 노드를 확장 하 고 sampledatabase.mdf에 대 한 바로 가기 메뉴를 연 다음 **속성**을 선택 하 여 속성 창을 엽니다.
 
-- 또는 해당 창이 아직 열려 있지 않은 경우 **보기**  > **서버 탐색기**를 선택할 수 있습니다. **데이터 연결** 노드를 확장 하 여 속성 창을 엽니다. Sampledatabase.mdf에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+- 또는 **View**  >  해당 창이 아직 열려 있지 않은 경우**서버 탐색기**보기를 선택할 수 있습니다. **데이터 연결** 노드를 확장 하 여 속성 창을 엽니다. Sampledatabase.mdf에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
 
-## <a name="BKMK_CreateNewTbls"></a>테이블, 열, 기본 키 및 외래 키 만들기
+## <a name="create-tables-columns-primary-keys-and-foreign-keys"></a><a name="BKMK_CreateNewTbls"></a> 테이블, 열, 기본 키 및 외래 키 만들기
  이 단원에서는 몇 가지 테이블과 각 테이블의 기본 키 그리고 몇 행의 샘플 데이터를 만들어야 합니다. 다음 연습에서는 애플리케이션에서 이 정보를 표시하는 방법을 배웁니다. 또한 외래 키를 만들어 한 테이블의 레코드가 다른 테이블의 레코드에 해당하는 방식을 지정할 수 있습니다.
 
 #### <a name="to-create-the-customers-table"></a>Customers 테이블을 만들려면
@@ -96,7 +96,7 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
     |`ContactName`|`nvarchar (50)`|True(선택)|
     |`Phone`|`nvarchar (24)`|True(선택)|
 
-4. @No__t_0 행의 바로 가기 메뉴를 열고 **기본 키 설정**을 선택 합니다.
+4. 행에 대 한 바로 가기 메뉴를 열고 `CustomerID` **기본 키 설정**을 선택 합니다.
 
 5. 기본 행에 대 한 바로 가기 메뉴를 열고 **삭제**를 선택 합니다.
 
@@ -106,7 +106,7 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
     CREATE TABLE [dbo].[Customers]
     ```
 
-     다음과 같이 표시되어야 합니다.
+     다음과 비슷한 결과가 표시됩니다.
 
      ![테이블 디자이너](../data-tools/media/raddata-table-designer.png "raddata 테이블 디자이너")
 
@@ -145,9 +145,9 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 
 1. 표 오른쪽의 컨텍스트 창에서 **외래 키**에 대 한 바로 가기 메뉴를 열고 다음 그림과 같이 **새 외래 키 추가**를 선택 합니다.
 
-     ![테이블 디자이너에서 외래 키 추가](../data-tools/media/foreignkey.png "ForeignKey")
+     ![테이블 디자이너에서 외래 키 추가하기](../data-tools/media/foreignkey.png "ForeignKey")
 
-2. 표시 되는 텍스트 상자에서 **ToTable** 를 `Customers`으로 바꿉니다.
+2. 표시 되는 텍스트 상자에서 **ToTable** 를로 바꿉니다 `Customers` .
 
 3. T-sql 창에서 마지막 줄을 다음 샘플과 일치 하도록 업데이트 합니다.
 
@@ -161,7 +161,7 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 
      변경 내용이 로컬 데이터베이스 파일에 저장됩니다.
 
-## <a name="BKMK_Populating"></a>테이블을 데이터로 채우기
+## <a name="populate-the-tables-with-data"></a><a name="BKMK_Populating"></a> 테이블을 데이터로 채우기
 
 #### <a name="to-populate-the-tables-with-data"></a>테이블을 데이터로 채우려면
 
@@ -182,9 +182,9 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
     > [!IMPORTANT]
     > 모든 주문 ID와 주문 수량이 정수이고 각 고객 ID가 Customers 테이블의 CustomerID 열에 지정한 값과 일치하는지 확인합니다.
 
-7. 메뉴 모음에서 **파일**  > **모두 저장**을 선택 합니다.
+7. 메뉴 모음에서 **파일**  >  **모두 저장**을 선택 합니다.
 
-8. 메뉴 모음에서 **파일**  > **솔루션 닫기**를 선택 합니다.
+8. 메뉴 모음에서 **파일**  >  **솔루션 닫기**를 선택 합니다.
 
     > [!NOTE]
     > 가장 좋은 방법은 만든 데이터베이스 파일을 복사한 후 복사본을 다른 위치에 붙여 넣거나 복사본에 다른 이름을 지정하여 데이터베이스 파일을 백업하는 것입니다.

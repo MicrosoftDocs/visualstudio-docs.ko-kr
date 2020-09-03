@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015186"
 ---
 # <a name="how-to-add-a-resource-file"></a>방법: 리소스 파일 추가
@@ -49,5 +50,5 @@ ms.locfileid: "86015186"
 
 3. 에서 **리소스 편집기** 가 열리면 리소스 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 파일에 리소스를 추가 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

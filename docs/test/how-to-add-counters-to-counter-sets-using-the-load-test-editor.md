@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288379"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 카운터 집합에 카운터 추가

@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4907838720e3a68614e4b9774eb2d7e9fb42ff20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916533"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio용 모델링 SDK - 도메인별 언어
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-MSDK [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모델링 SDK를 사용 하 여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 통합할 수 있는 강력한 모델 기반 개발 도구를 만들 수 있습니다. 예를 들어, UML 도구는 MSDK를 사용하여 만들어집니다. 동일한 방식으로 하나 이상의 모델 정의를 만들고 도구 집합으로 통합할 수 있습니다.
+(Msdk) 모델링 SDK를 사용 하 여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 통합할 수 있는 강력한 모델 기반 개발 도구를 만들 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . 예를 들어, UML 도구는 MSDK를 사용하여 만들어집니다. 동일한 방식으로 하나 이상의 모델 정의를 만들고 도구 집합으로 통합할 수 있습니다.
 
  MSDK의 핵심은 비즈니스 영역에서 개념을 나타내기 위해 만드는 모델의 정의입니다. 다이어그램 보기, 코드와 다른 아티팩트를 생성하는 기능, 모델 변환 명령, 코드와 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 다른 개체와 상호 작용하는 기능과 같은 다양한 도구를 사용하여 모델을 감쌀 수 있습니다. 모델을 개발할 때 다른 모델 및 도구와 결합하여 개발에 중점을 두는 강력한 도구 집합을 구성할 수 있습니다.
 
@@ -43,7 +43,7 @@ MSDK [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모델링 SDK를 사용 하 �
 ## <a name="samples-and-the-latest-information"></a>샘플 및 최신 정보
  [모델링 SDK for Visual Studio 2015 다운로드](https://www.microsoft.com/download/details.aspx?id=48148)
 
- 고급 기술 및 문제 해결에 대 한 지침을 참조 하세요 [Visual Studio DSL & 모델링 도구 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)합니다.
+ 고급 기술 및 문제 해결에 대 한 지침은 [Visual STUDIO DSL & 모델링 도구 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)을 참조 하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
  [도메인별 언어 시작](../modeling/getting-started-with-domain-specific-languages.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0662506ab9ea19a033e6af2a26b495725fe5b838
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918094"
 ---
 # <a name="visual-studio-samples"></a>Visual Studio 샘플
@@ -28,18 +28,18 @@ ms.locfileid: "75918094"
 ## <a name="finding-samples"></a>샘플 찾기
  샘플을 찾을 수 있는 기타 위치는 다음과 같습니다.
 
-|Area|설명|
+|영역|설명|
 |----------|-----------------|
 |[Windows 개발자 센터 샘플](https://code.msdn.microsoft.com/windowsapps/)|[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱을 개발하는 방법을 보여 줍니다.|
 |[.NET Framework 샘플](/samples/browse/?products=dotnet)|C# 및 Visual Basic에서 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 의 다양한 측면을 보여 줍니다.|
-|[C# 샘플](/samples/browse/?languages=csharp)|C#의 여러 기능을 사용하는 방법을 보여 줍니다.|
+|[C # 샘플](/samples/browse/?languages=csharp)|C#의 여러 기능을 사용하는 방법을 보여 줍니다.|
 |[Visual Basic 샘플](/samples/browse/?languages=vb)|Visual Basic의 여러 기능을 사용하는 방법을 보여 줍니다.|
-|[F# 샘플](/samples/browse/?languages=fsharp)|F#의 여러 기능을 사용하는 방법을 보여 줍니다.|
+|[F # 샘플](/samples/browse/?languages=fsharp)|F#의 여러 기능을 사용하는 방법을 보여 줍니다.|
 |[JavaScript 샘플](/samples/browse/?languages=javascript)|JavaScript의 여러 기능을 사용하는 방법을 보여 줍니다.|
-|[C++ 샘플](/samples/browse/?languages=cpp)|C++의 여러 기능을 사용하는 방법을 보여 줍니다.|
+|[C + + 샘플](/samples/browse/?languages=cpp)|C++의 여러 기능을 사용하는 방법을 보여 줍니다.|
 |[DirectX 샘플](/samples/browse/?products=xbox)|DirectX를 사용하는 방법을 보여 줍니다.|
 |[Office 개발 샘플](/samples/browse/?products=office)|Visual Studio에서 Office 개발 도구를 사용하는 방법을 보여 줍니다. |
 |[VSSDK 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)|Visual Studio를 확장하는 방법을 보여 줍니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual C# 및 Visual Basic 시작](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566974"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>연습: Excel 용 첫 문서 수준 사용자 지정 만들기
@@ -41,13 +41,13 @@ ms.locfileid: "74566974"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
 
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 또는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]을 참조하세요.
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 또는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]
 
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.
 
@@ -80,17 +80,17 @@ ms.locfileid: "74566974"
 
 6. **Visual Studio Tools for Office 프로젝트 마법사**에서 **새 문서 만들기** 를 선택 하 고 **확인**을 클릭 합니다.
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]는 **First통합 문서의 사용자 지정** 프로젝트를 만들고 프로젝트에 다음 파일을 추가 합니다.
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**First통합 문서의 사용자 지정** 프로젝트를 만들고 프로젝트에 다음 파일을 추가 합니다.
 
    - *Firstworkbook 사용자 지정*.xlsx-프로젝트의 Excel 통합 문서를 나타냅니다. 모든 워크시트 및 차트를 포함합니다.
 
-   - Sheet1 (Visual Basic의 경우 *.vb* 파일 또는 시각적 개체 C#의 경우 .cs 파일)-통합 문서의 첫 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다. 자세한 내용은 [워크시트 호스트 항목](../vsto/worksheet-host-item.md)을 참조 하세요.
+   - Sheet1 (Visual Basic의 경우 *.vb* 파일 또는 Visual c #의 경우 *.cs* 파일)-통합 문서의 첫 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다. 자세한 내용은 [워크시트 호스트 항목](../vsto/worksheet-host-item.md)을 참조 하세요.
 
-   - Sheet2 (Visual Basic의 경우 *.vb* 파일 또는 시각적 개체 C#의 경우 .cs 파일)-통합 문서의 두 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.
+   - Sheet2 (Visual Basic의 경우 *.vb* 파일 또는 Visual c #의 경우 *.cs* 파일)-통합 문서의 두 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.
 
-   - Sheet3 (Visual Basic의 경우 *.vb* 파일 또는 시각적 개체 C#의 경우 .cs 파일)-통합 문서의 세 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.
+   - Sheet3 (Visual Basic의 경우 *.vb* 파일 또는 Visual c #의 경우 *.cs* 파일)-통합 문서의 세 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.
 
-   - ThisWorkbook (Visual Basic의 경우 *.vb* 파일 또는 시각적 개체 C#의 경우 .cs 파일)-통합 문서 수준 사용자 지정을 위한 디자인 화면 및 코드를 포함 합니다. 자세한 내용은 [통합 문서 호스트 항목](../vsto/workbook-host-item.md)을 참조 하세요.
+   - ThisWorkbook (Visual Basic의 경우 *.vb* 파일 또는 Visual c #의 경우 *.cs* 파일)-통합 문서 수준 사용자 지정을 위한 디자인 화면 및 코드를 포함 합니다. 자세한 내용은 [통합 문서 호스트 항목](../vsto/workbook-host-item.md)을 참조 하세요.
 
      Sheet1 코드 파일이 디자이너에서 자동으로 열립니다.
 
@@ -116,7 +116,7 @@ ms.locfileid: "74566974"
 
 1. 디자이너에 열려 있는 워크시트에서 **A1**셀을 선택 하 고 다음 텍스트를 입력 합니다.
 
-     **이 텍스트는 디자이너를 사용 하 여 추가 되었습니다.**
+     **This text was added by using the designer.**
 
 > [!WARNING]
 > 이 텍스트 줄을 **A2**셀에 추가 하는 경우이 예제에서 다른 코드를 통해 덮어씁니다.
@@ -150,7 +150,7 @@ ms.locfileid: "74566974"
 
 2. 통합 문서에서 다음 텍스트가 표시되는지 확인합니다.
 
-     **이 텍스트는 디자이너를 사용 하 여 추가 되었습니다.**
+     **This text was added by using the designer.**
 
      **This text was added by using code.**
 
@@ -182,7 +182,7 @@ ms.locfileid: "74566974"
 
 - Excel 용 문서 수준 사용자 지정 배포: [Office 솔루션을 배포](../vsto/deploying-an-office-solution.md)합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel 솔루션](../vsto/excel-solutions.md)

@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015696"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>연습: Visual Studio에 SharePoint Designer의 다시 사용 가능한 워크플로 가져오기
@@ -185,7 +186,7 @@ ms.locfileid: "86015696"
 
      이렇게 하면 프로젝트를 디버그할 때 목록이 즉시 표시 됩니다.
 
-11. **다시 사용할 수 있는 SharePoint 2010 워크플로 가져오기** 템플릿은 가져온 워크플로에 대 한 연결 속성 값을 가져오지 않으므로 입력 해야 합니다. 다음을 수행합니다.
+11. **다시 사용할 수 있는 SharePoint 2010 워크플로 가져오기** 템플릿은 가져온 워크플로에 대 한 연결 속성 값을 가져오지 않으므로 입력 해야 합니다. 가상 하드 디스크 파일에 대한 중요 정보를 제공하려면
 
     1. **솔루션 탐색기**에서 **SPD_Workflow_TestFT** 노드를 선택 합니다.
 
@@ -259,7 +260,7 @@ ms.locfileid: "86015696"
 
      워크플로에서는 작업의 **할당 대상** 열에 이름이 표시 되 고 **공지** 목록에 알림이 표시 되는 것을 볼 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

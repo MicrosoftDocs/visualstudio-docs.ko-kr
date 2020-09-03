@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97d98522e011023cb3a021a69c9a82e8bb34cef3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533278"
 ---
 # <a name="debug-multiple-processes"></a>여러 프로세스 디버그
@@ -43,7 +43,7 @@ ms.locfileid: "85533278"
   
  [디버깅 중지, 프로세스 종료 또는 프로세스에서 분리](#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
-## <a name="configure-the-execution-behavior-of-multiple-processes"></a><a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>여러 프로세스의 실행 동작 구성  
+## <a name="configure-the-execution-behavior-of-multiple-processes"></a><a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> 여러 프로세스의 실행 동작 구성  
  여러 프로세스가 디버거에서 실행되는 경우 기본적으로 디버거 명령을 중단하고 단계별로 실행하고 중지하면 대개 모든 프로세스가 영향을 받습니다. 예를 들어 한 프로세스가 중단점에서 일시 중단되면 다른 모든 프로세스의 실행도 일시 중단됩니다. 이 기본 동작을 변경하여 실행 명령의 대상을 더욱 세부적으로 제어할 수 있습니다.  
   
 1. **디버그** 메뉴에서 **옵션 및 설정**을 선택합니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "85533278"
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="start-multiple-processes-in-a-vs-solution-attach-to-a-process-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a>VS 솔루션의 여러 프로세스 시작, 프로세스에 연결, 디버거에서 자동으로 프로세스 시작  
+## <a name="start-multiple-processes-in-a-vs-solution-attach-to-a-process-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> VS 솔루션의 여러 프로세스 시작, 프로세스에 연결, 디버거에서 자동으로 프로세스 시작  
   
 - [Visual Studio 솔루션에서 여러 프로세스 디버깅 시작](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [시작 프로젝트 변경](#BKMK_Change_the_startup_project) • [솔루션의 특정 프로젝트 시작](#BKMK_Start_a_specific_project_in_a_solution) • [솔루션에서 여러 프로젝트](#BKMK_Start_multiple_projects_in_a_solution) 시작 • [프로세스에 연결](#BKMK_Attach_to_a_process) • [디버거에서 자동으로 프로세스 시작](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
@@ -71,22 +71,22 @@ ms.locfileid: "85533278"
 >   또는  
 >   - 디버거의 새 인스턴스에서 자식 프로세스를 자동으로 시작하도록 Windows를 구성합니다.  
   
-### <a name="start-debugging-multiple-processes-in-a-visual-studio-solution"></a><a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>Visual Studio 솔루션에서 여러 프로세스 디버깅 시작  
+### <a name="start-debugging-multiple-processes-in-a-visual-studio-solution"></a><a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Visual Studio 솔루션에서 여러 프로세스 디버깅 시작  
  독립적으로 실행될 수 있는 Visual Studio 솔루션에 프로젝트가 두 개 이상 있는 경우(각기 다른 프로세스에서 실행되는 프로젝트) 디버거가 시작하는 프로젝트를 선택할 수 있습니다.  
   
  ![프로젝트의 시작 유형 변경](../debugger/media/dbg-execution-startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
   
-#### <a name="change-the-startup-project"></a><a name="BKMK_Change_the_startup_project"></a>시작 프로젝트 변경  
+#### <a name="change-the-startup-project"></a><a name="BKMK_Change_the_startup_project"></a> 시작 프로젝트 변경  
  솔루션에 대 한 시작 프로젝트를 변경 하려면 솔루션 탐색기에서 프로젝트를 선택한 다음 상황에 맞는 메뉴에서 **시작 프로젝트로 설정** 을 선택 합니다.  
   
-#### <a name="start-a-specific-project-in-a-solution"></a><a name="BKMK_Start_a_specific_project_in_a_solution"></a>솔루션에서 특정 프로젝트 시작  
+#### <a name="start-a-specific-project-in-a-solution"></a><a name="BKMK_Start_a_specific_project_in_a_solution"></a> 솔루션에서 특정 프로젝트 시작  
  기본 시작 프로젝트를 변경 하지 않고 솔루션에 대 한 프로젝트를 시작 하려면 솔루션 탐색기에서 프로젝트를 선택한 다음 상황에 맞는 메뉴에서 **디버그** 를 선택 합니다. 그런 다음 **새 인스턴스 시작** 또는 **새 인스턴스 한 단계씩 코드 실행**을 선택할 수 있습니다.  
   
  ![Back to top](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [VS 솔루션의 여러 프로세스 시작, 프로세스에 연결, 디버거에서 자동으로 프로세스 시작](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-#### <a name="start-multiple-projects-in-a-solution"></a><a name="BKMK_Start_multiple_projects_in_a_solution"></a>솔루션에서 여러 프로젝트 시작  
+#### <a name="start-multiple-projects-in-a-solution"></a><a name="BKMK_Start_multiple_projects_in_a_solution"></a> 솔루션에서 여러 프로젝트 시작  
   
 1. 솔루션 탐색기에서 솔루션을 선택한 다음 상황에 맞는 메뉴에서 **속성** 을 선택 합니다.  
   
@@ -111,7 +111,7 @@ ms.locfileid: "85533278"
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-### <a name="automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>디버거에서 자동으로 프로세스 시작  
+### <a name="automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> 디버거에서 자동으로 프로세스 시작  
  경우에 따라 다른 프로세스에서 시작된 프로그램의 시작 코드를 디버깅해야 할 수도 있습니다. 서비스 및 사용자 지정 설치 작업을 예로 들 수 있습니다. 이러한 시나리오에서는 애플리케이션을 시작할 때 디버거를 시작하고 자동으로 연결할 수 있습니다.  
   
 1. 레지스트리 편집기 (**regedit.exe**)를 시작 합니다.  
@@ -136,7 +136,7 @@ ms.locfileid: "85533278"
   
    ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="switch-processes-break-and-continue-execution-step-through-source"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>프로세스 전환, 중단 및 계속 실행, 소스 단계별 실행  
+## <a name="switch-processes-break-and-continue-execution-step-through-source"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 프로세스 전환, 중단 및 계속 실행, 소스 단계별 실행  
   
 - [프로세스 간 전환](#BKMK_Switch_between_processes) • [Break, step 및 continue 명령](#BKMK_Break__step__and_continue_commands)  
   
@@ -173,17 +173,17 @@ ms.locfileid: "85533278"
 |**디버그** 메뉴:<br /><br /> -   **모두 중단**|모든 프로세스가 중단됩니다.|모든 프로세스가 중단됩니다.|  
 |**디버그** 메뉴:<br /><br /> -   **하기**|모든 프로세스가 다시 시작됩니다.|일시 중단된 모든 프로세스가 다시 시작됩니다.|  
 |**디버그** 메뉴:<br /><br /> -   **한 단계씩 코드 실행**<br />-   **프로시저 단위 실행**<br />-   **프로시저 아웃**|현재 프로세스가 단계별로 실행되는 동안 모든 프로세스가 실행됩니다.<br /><br /> 그런 다음 모든 프로세스가 중단됩니다.|현재 프로세스가 단계별로 실행됩니다.<br /><br /> 일시 중단된 프로세스가 다시 시작됩니다.<br /><br /> 실행 중인 프로세스가 계속 실행됩니다.|  
-|**디버그** 메뉴:<br /><br /> -   **현재 프로세스 한 단계씩 코드 실행**<br />-   **현재 프로세스 프로시저 단위 실행**<br />-   **현재 프로세스 프로시저 실행**|해당 없음|현재 프로세스가 단계별로 실행됩니다.<br /><br /> 다른 프로세스가 기존 상태(일시 중단됨 또는 실행 중)를 유지합니다.|  
+|**디버그** 메뉴:<br /><br /> -   **현재 프로세스 한 단계씩 코드 실행**<br />-   **현재 프로세스 프로시저 단위 실행**<br />-   **현재 프로세스 프로시저 실행**|N/A|현재 프로세스가 단계별로 실행됩니다.<br /><br /> 다른 프로세스가 기존 상태(일시 중단됨 또는 실행 중)를 유지합니다.|  
 |소스 창<br /><br /> -   **중단점과**|모든 프로세스가 중단됩니다.|소스 창 프로세스만 중단됩니다.|  
 |소스 창 상황에 맞는 메뉴:<br /><br /> -   **커서까지 실행**<br /><br /> 소스 창이 현재 프로세스에 있어야 합니다.|모든 프로세스가 소스 창 프로세스가 커서까지 실행되는 동안 실행되었다가 중단됩니다.<br /><br /> 그런 다음 다른 모든 프로세스가 중단됩니다.|소스 창 프로세스가 커서까지 실행됩니다.<br /><br /> 다른 프로세스가 기존 상태(일시 중단됨 또는 실행 중)를 유지합니다.|  
-|**프로세스** 창 상황에 맞는 메뉴:<br /><br /> -   **프로세스 중단**|해당 없음|선택한 프로세스가 중단됩니다.<br /><br /> 다른 프로세스가 기존 상태(일시 중단됨 또는 실행 중)를 유지합니다.|  
+|**프로세스** 창 상황에 맞는 메뉴:<br /><br /> -   **프로세스 중단**|N/A|선택한 프로세스가 중단됩니다.<br /><br /> 다른 프로세스가 기존 상태(일시 중단됨 또는 실행 중)를 유지합니다.|  
 |**프로세스** 창 상황에 맞는 메뉴:<br /><br /> -   **프로세스 계속**|N/A|선택한 프로세스가 다시 시작됩니다.<br /><br /> 다른 프로세스가 기존 상태(일시 중단됨 또는 실행 중)를 유지합니다.|  
   
  ![상위](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [전환 프로세스, 중단 및 계속 실행, 소스 단계별 실행](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="stop-debugging-terminate-or-detach-from-processes"></a><a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a>디버깅 중지, 프로세스 종료 또는 프로세스에서 분리  
+## <a name="stop-debugging-terminate-or-detach-from-processes"></a><a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> 디버깅 중지, 프로세스 종료 또는 프로세스에서 분리  
   
 - [중지, 종료 및 분리 명령](#BKMK_Stop__terminate__and_detach_commands)  
   
@@ -202,7 +202,7 @@ ms.locfileid: "85533278"
   
 - **프로세스** 창을 엽니다 (바로 가기 **키 Ctrl + Alt + Z**). 프로세스를 선택한 다음 **디버깅을 중지할 때 분리** 확인란을 선택 하거나 선택 취소 합니다.  
   
-### <a name="stop-terminate-and-detach-commands"></a><a name="BKMK_Stop__terminate__and_detach_commands"></a>중지, 종료 및 분리 명령  
+### <a name="stop-terminate-and-detach-commands"></a><a name="BKMK_Stop__terminate__and_detach_commands"></a> 중지, 종료 및 분리 명령  
   
 |**Command**|**설명**|  
 |-|-|  
@@ -217,7 +217,7 @@ ms.locfileid: "85533278"
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [기호 (.pdb) 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)   

@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
 ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916690"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 연결 서비스를 사용하여 Azure Storage 추가
@@ -44,7 +44,7 @@ Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서
 
 1. **Azure Storage** 대화 상자에서, 기존 스토리지 계정을 선택한 다음 **추가**를 선택합니다.
 
-    스토리지 계정을 만들어야 하는 경우 다음 단계로 이동합니다. 그렇지 않은 경우, 6단계로 건너뜁니다.
+    스토리지 계정을 만들어야 하는 경우 다음 단계로 이동합니다. 그렇지 않을 경우 6단계로 건너뜁니다.
 
     ![프로젝트에 기존 스토리지 계정 추가](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b41b6e4d4a7635b32edb5697c89ecb1249fb9da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619721"
 ---
 # <a name="code-snippets"></a>코드 조각
@@ -48,7 +48,7 @@ finally
 
 ```
 
- 코드 창의 상황에 맞는 메뉴에서 **조각 삽입**을 클릭하여 이 조각을 삽입하고 **Visual C#** , 형식 `tryf`를 차례로 입력하고 TAB를 누르거나, `tryf`를 입력하고 TAB+TAB을 누릅니다.
+ 코드 창의 상황에 맞는 메뉴에서 **조각 삽입**을 클릭하여 이 조각을 삽입하고 **Visual C#**, 형식 `tryf`를 차례로 입력하고 TAB를 누르거나, `tryf`를 입력하고 TAB+TAB을 누릅니다.
 
  코드 감싸기 조각의 예: C++에서 바로 가기 `if`는 삽입 조각 또는 코드 감싸기 조각으로 사용할 수 있습니다. 코드 줄(예: `return FALSE;`)을 선택하고 **코드 감싸기**, **if**를 차례로 클릭하면 해당 줄 주위에서 조각이 확장됩니다.
 
@@ -85,5 +85,5 @@ End Property
 
  **코드 조각 관리자** 대화 상자에서 **추가** 및 **제거** 단추를 사용하여 조각 디렉터리를 추가 및 제거할 수 있습니다. 개별 코드 조각을 추가하려면 **가져오기** 단추를 사용합니다.
 
-## <a name="see-also"></a>관련 항목:
- [연습: @No__t_1How ](../ide/walkthrough-creating-a-code-snippet.md) 코드 조각 만들기: 코드 조각 배포 [코드 조각 사용에 대 한 모범 사례 ](../ide/how-to-distribute-code-snippets.md) 코드](../ide/best-practices-for-using-code-snippets.md) 조각 [문제 해결](../ide/troubleshooting-snippets.md) 코드 조각 [visual C# code](../ide/visual-csharp-code-snippets.md) 코드 조각 [시각적 C++ 코드](../ide/visual-cpp-code-snippets.md) 조각 코드 조각 [스키마 참조](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>관련 항목
+ [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md) [방법: 코드 조각 배포](../ide/how-to-distribute-code-snippets.md) [코드 조각 사용에 대 한 모범 사례 코드](../ide/best-practices-for-using-code-snippets.md) [조각 문제 해결](../ide/troubleshooting-snippets.md) 코드 조각 자습서 [Visual c # 코드 조각](../ide/visual-csharp-code-snippets.md) [Visual C++ 코드 조각](../ide/visual-cpp-code-snippets.md) [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)

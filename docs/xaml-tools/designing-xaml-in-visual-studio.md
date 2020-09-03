@@ -8,17 +8,17 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: eb18a2face5d9f1831bec35379a423f272c3e6ce
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82921366"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Visual Studio 및 Blend for Visual Studio에서 XAML 디자인
 
 Visual Studio 및 Blend for Visual Studio는 다양한 앱 유형에 XAML을 사용하여 유용한 사용자 인터페이스 및 풍부한 미디어 환경을 빌드할 수 있게 해주는 시각적 도구를 제공합니다. 두 IDE(통합 개발 환경)에서 시각적 XAML 편집기(디자이너)를 비롯한 일반적인 기능을 공유합니다. WPF 및 UWP 플랫폼을 지원하는 Blend for Visual Studio에서는 시각적 상태를 디자인하고 애니메이션을 만드는 추가 도구를 제공합니다.
 
-Visual Studio와 Blend for Visual Studio 간에 전환할 수 있으며, 두 IDE에서 같은 프로젝트를 동시에 열어 놓을 수도 있습니다. 한 IDE에서 XAML 파일에 저장된 변경 사항을 다른 IDE로 전환할 때 자동 다시 로드를 통해 적용할 수 있습니다. 두 IDE 중 하나에서 **도구** > **옵션** > **환경** > **문서로** 이동 하 여 다시 로드 동작을 제어할 수 있습니다.
+Visual Studio와 Blend for Visual Studio 간에 전환할 수 있으며, 두 IDE에서 같은 프로젝트를 동시에 열어 놓을 수도 있습니다. 한 IDE에서 XAML 파일에 저장된 변경 사항을 다른 IDE로 전환할 때 자동 다시 로드를 통해 적용할 수 있습니다. **Tools**  >  **Options**  >  **Environment**  >  두 IDE 중 하나에서 도구 옵션 환경**문서로** 이동 하 여 다시 로드 동작을 제어할 수 있습니다.
 
 ## <a name="installation"></a>설치
 
@@ -42,7 +42,7 @@ Visual Studio와 Blend for Visual Studio 간에 전환할 수 있으며, 두 IDE
 
 - **디버깅:** 앱이 실행 되는 동안 코드에서 중단점을 설정 하 여 실행 중인 응용 프로그램을 디버깅 하 고, [핫 다시 로드](../xaml-tools/xaml-hot-reload.md) 를 사용 하 여 XAML 코드를 변경 하는 등 [Visual Studio](inspect-xaml-properties-while-debugging.md) 및 [Blend for Visual Studio](../xaml-tools/debug-xaml-in-blend.md)에서 디버그할 수 있습니다. Visual Studio와 일관된 디버깅 환경을 유지하기 위해 Blend for Visual Studio에는 Visual Studio의 디버깅 창과 도구 모음이 대부분 포함되어 있습니다.
 
-- **파일 다시 로드:** Visual Studio 또는 Blend for Visual Studio에서 XAML 파일을 편집할 수 있습니다. 편집 후 저장된 파일은 IDE를 전환할 때 자동으로 다시 로드됩니다. 두 IDE 중 하나에서 **도구** > **옵션** > **환경** > **문서로** 이동 하 여 다시 로드 동작을 제어할 수 있습니다.
+- **파일 다시 로드:** Visual Studio 또는 Blend for Visual Studio에서 XAML 파일을 편집할 수 있습니다. 편집 후 저장된 파일은 IDE를 전환할 때 자동으로 다시 로드됩니다. **Tools**  >  **Options**  >  **Environment**  >  두 IDE 중 하나에서 도구 옵션 환경**문서로** 이동 하 여 다시 로드 동작을 제어할 수 있습니다.
 
 - **동기화 된 레이아웃 및 설정:** 동일한 개인 설정 계정을 사용 하 여 로그인 하면 Visual Studio 또는 Blend for Visual Studio에 대 한 디자인 사용자 지정 도구 창 레이아웃 및 설정 기본 설정이 장치 및 버전 간에 동기화 됩니다. [여러 컴퓨터 간에 설정 동기화](../ide/synchronized-settings-in-visual-studio.md)를 참조하세요.
 
@@ -50,7 +50,7 @@ Visual Studio와 Blend for Visual Studio 간에 전환할 수 있으며, 두 IDE
 
 생산성을 향상시키려면 다음과 같은 작업에 Blend for Visual Studio를 사용하는 것이 좋습니다. 이러한 영역에 대해 Blend for Visual Studio는 Visual Studio 디자이너나 코드를 단독으로 사용할 때보다 더 많은 기능을 제공합니다.
 
-| 작업 | Visual Studio | Blend for Visual Studio | 추가 정보 |
+| Task | Visual Studio | Visual Studio용 Blend | 추가 정보 |
 | - | - | - | - |
 | **시각적 상태 디자인** | 시각적 상태를 디자인하는 데 도움이 되는 도구는 없습니다. 프로그래밍 방식으로 도구를 만들어야 합니다. | 디자인 도구를 사용하여 해당 상태에 따라 컨트롤의 모양을 변경합니다. | [시각적 상태](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **애니메이션 만들기** |애니메이션을 만들 수 있는 디자인 도구가 없습니다. 프로그래밍 방식으로 애니메이션을 만들어야 합니다. 따라서 WPF의 애니메이션, 타이밍 시스템 및 광범위한 코딩 전문 기술을 이해하고 있어야 합니다.|애니메이션을 시각적으로 만들고 Blend for Visual Studio에서 미리 볼 수 있습니다. 코드로 애니메이션을 빌드하는 것보다 더 빠르고 정확합니다. 사용자 상호 작용을 처리하는 트리거를 추가하고 이벤트 처리기 및 기타 기능을 추가하는 코드로 전환할 수 있습니다.|[개체에 애니메이션 적용](../xaml-tools/animate-objects-in-xaml-designer.md)|
@@ -60,7 +60,7 @@ Visual Studio와 Blend for Visual Studio 간에 전환할 수 있으며, 두 IDE
 
 고급 XAML 디자인에 대한 자세한 내용은 [Blend for Visual Studio를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [XAML 개요](xaml-overview.md)
 - [Blend for Visual Studio 개요](creating-a-ui-by-using-blend-for-visual-studio.md)

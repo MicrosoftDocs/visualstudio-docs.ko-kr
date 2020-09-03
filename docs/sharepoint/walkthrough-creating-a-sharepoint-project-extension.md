@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015082"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>연습: SharePoint 프로젝트 확장 만들기
@@ -44,7 +45,7 @@ ms.locfileid: "86015082"
 
 - [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint 및의 지원 되는 버전 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]입니다. 이 연습에서는의 **Vsix 프로젝트** 템플릿을 사용 하 여 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] vsix 패키지를 만들어 프로젝트 속성 확장을 배포 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)을 참조 하세요.
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 이 연습에서는의 **Vsix 프로젝트** 템플릿을 사용 하 여 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] vsix 패키지를 만들어 프로젝트 속성 확장을 배포 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)을 참조 하세요.
 
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 다음과 같은 두 개의 프로젝트를 만들어야 합니다.
@@ -127,7 +128,7 @@ ms.locfileid: "86015082"
 
 1. **솔루션 탐색기**에서 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 연 다음 **열기** 단추를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]매니페스트 디자이너에서 파일을 엽니다. **메타 데이터** 탭에 표시 되는 정보는 **확장 및 업데이트**에도 표시 됩니다. 모든 VSIX 패키지에는 source.extension.vsixmanifest 파일이 필요 합니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 매니페스트 디자이너에서 파일을 엽니다. **메타 데이터** 탭에 표시 되는 정보는 **확장 및 업데이트**에도 표시 됩니다. 모든 VSIX 패키지에는 source.extension.vsixmanifest 파일이 필요 합니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요.
 
 2. **제품 이름** 상자에 **사용자 지정 프로젝트 속성**을 입력 합니다.
 
@@ -171,7 +172,7 @@ ms.locfileid: "86015082"
 
 2. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 하 여 프로젝트의 디버그 빌드를 시작 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 프로젝트 Property\1.0에 확장을 설치 하 고의 실험적 인스턴스를 시작 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 프로젝트 Property\1.0에 확장을 설치 하 고의 실험적 인스턴스를 시작 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 합니다.
 
 3. 실험적 인스턴스에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 팜 솔루션에 대 한 SharePoint 프로젝트를 만들고 마법사의 다른 값에 대 한 기본값을 사용 합니다.
 
@@ -199,7 +200,7 @@ ms.locfileid: "86015082"
 
 7. 실험적 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 인스턴스를 닫습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 프로젝트 확장](../sharepoint/extending-sharepoint-projects.md)
 - [방법: SharePoint 프로젝트에 속성 추가](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

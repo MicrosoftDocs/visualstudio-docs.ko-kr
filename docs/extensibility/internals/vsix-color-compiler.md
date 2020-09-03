@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536099"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 색 컴파일러
@@ -50,7 +50,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 </Theme>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
 |Name|하다 테마의 이름입니다.|
 |GUID|하다 테마의 GUID (GUID 형식과 일치 해야 함)|
@@ -74,7 +74,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
  </Category>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
 |Name|하다 범주의 이름입니다.|
 |GUID|하다 범주의 GUID (GUID 형식과 일치 해야 함)|
@@ -90,7 +90,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
  </Color>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
 |Name|하다 색의 이름입니다.|
 
@@ -103,7 +103,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 <Foreground Type="type" Source="int" />
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
 |형식|하다 색의 형식입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 설정 되지 않았습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마십시오.<br /><br /> *CT_SYSCOLOR:* SysColor의 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX의 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마십시오.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마십시오.|
 |원본|하다 16 진수로 표현 된 색의 값입니다.|

@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173573"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core Guidelines 사용

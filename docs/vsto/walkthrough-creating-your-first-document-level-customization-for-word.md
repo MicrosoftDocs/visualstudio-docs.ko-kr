@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74567014"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>연습: Word 용 첫 문서 수준 사용자 지정 만들기
@@ -41,9 +41,9 @@ ms.locfileid: "74567014"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
 
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -80,7 +80,7 @@ ms.locfileid: "74567014"
 
 6. **Visual Studio Tools for Office 프로젝트 마법사**에서 **새 문서 만들기** 를 선택 하 고 **확인**을 클릭 합니다.
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Firstdocumentcustomization 지정** 프로젝트를 만들고 **firstdocumentcustomization 지정** 문서 및 ThisDocument 코드 파일을 프로젝트에 추가 합니다. **Firstdocumentcustomization 지정** 문서는 디자이너에서 자동으로 열립니다.
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstdocumentcustomization 지정** 프로젝트를 만들고 **firstdocumentcustomization 지정** 문서 및 ThisDocument 코드 파일을 프로젝트에 추가 합니다. **Firstdocumentcustomization 지정** 문서는 디자이너에서 자동으로 열립니다.
 
 ## <a name="close-and-reopen-the-document-in-the-designer"></a>디자이너에서 문서를 닫았다가 다시 엽니다.
 
@@ -104,7 +104,7 @@ ms.locfileid: "74567014"
 
 1. 디자이너에 열려 있는 문서에서 다음 텍스트를 입력합니다.
 
-     **이 텍스트는 디자이너를 사용 하 여 추가 되었습니다.**
+     **This text was added by using the designer.**
 
 ## <a name="add-text-to-the-document-programmatically"></a>프로그래밍 방식으로 문서에 텍스트 추가
 
@@ -138,7 +138,7 @@ ms.locfileid: "74567014"
 
 2. 문서에서 다음 텍스트가 표시되는지 확인합니다.
 
-     **이 텍스트는 디자이너를 사용 하 여 추가 되었습니다.**
+     **This text was added by using the designer.**
 
      **This text was added by using code.**
 
@@ -170,7 +170,7 @@ ms.locfileid: "74567014"
 
 - Word 용 문서 수준 사용자 지정 배포: [Office 솔루션을 배포](../vsto/deploying-an-office-solution.md)합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word 솔루션](../vsto/word-solutions.md)

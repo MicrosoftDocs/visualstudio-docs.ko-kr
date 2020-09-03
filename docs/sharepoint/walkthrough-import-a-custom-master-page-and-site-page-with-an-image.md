@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015693"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>연습: 이미지를 사용 하 여 사용자 지정 마스터 페이지 및 사이트 페이지 가져오기
@@ -149,7 +150,7 @@ ms.locfileid: "86015693"
 
 2. **가져올 항목 선택** 페이지의 **유형** 열에서 **모듈** 의 가져오기에 대 한 다음 표에 있는 파일의 확인란을 선택 합니다.
 
-   | 파일 이름 | Description |
+   | 파일 이름 | 설명 |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | 사용자 지정 마스터 페이지입니다. |
    | images_ | SharePoint 파일 시스템의 이미지 파일입니다. |
@@ -175,7 +176,7 @@ ms.locfileid: "86015693"
 
    파일로 파일을 가져와서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint에 배포 하는 다른 방법은에서 모듈에 파일을 추가 하는 것입니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][방법: 마스터 페이지 또는 테마 가져오기](../sharepoint/how-to-import-a-master-page-or-theme.md) 및 [모듈을 사용 하 여 솔루션에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905883"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>VSIX 프로젝트 템플릿 시작
@@ -39,7 +39,7 @@ VSIX 프로젝트 템플릿을 사용 하 여 확장을 만들거나 배포를 �
 
 2. 빈 VSIX 프로젝트를 만듭니다.
 
-     **File** > **New** > **Project**를 선택합니다. 검색 상자에 "vsix"를 입력 하 고 **c #** 또는 **Visual Basic** 버전의 **vsix 프로젝트**를 선택 합니다.
+     **파일** > **새로 만들기** > **프로젝트**를 선택합니다. 검색 상자에 "vsix"를 입력 하 고 **c #** 또는 **Visual Basic** 버전의 **vsix 프로젝트**를 선택 합니다.
 
 3. 프로젝트에 *.zip* 파일을 추가 합니다. **출력 디렉터리로 복사** 속성을로 설정 `Copy Always` 합니다.
 

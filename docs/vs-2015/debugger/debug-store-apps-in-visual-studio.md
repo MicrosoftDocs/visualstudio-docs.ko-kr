@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc2d05c6b6aae4b2f33d135c6859da7b17de963
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533161"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Visual Studio에서 스토어 앱 디버깅
@@ -38,5 +38,5 @@ Visual Studio 디버거를 사용하면 프로그램의 실행을 제어하고 �
 |[디버그 세션 탐색(XAML 및 C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|디버거 탐색에서는 디버깅을 시작 및 중지하는 방법과 코드를 탐색하는 방법, 프로그램 상태를 보고 변경하는 방법을 알려 주는 간단한 앱을 설명합니다.|
 |[Windows 스토어에 대한 일시 중단, 다시 시작 및 백그라운드 이벤트 트리거](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|디버거는 앱을 일시 중지, 다시 시작 및 종료하는 Windows PLM(프로세스 수명 관리) 이벤트를 사용하지 않도록 설정합니다. 디버거 도구 모음에서 이러한 이벤트를 트리거할 수 있습니다.<br /><br /> 백그라운드 작업을 통해 앱이 일시 중단된 경우에도 중요한 작업을 수행할 수 있습니다. 디버거를 사용하면 이러한 백그라운드 작업을 시작하고 디버깅할 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 디버깅(MSDN 라이브러리)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

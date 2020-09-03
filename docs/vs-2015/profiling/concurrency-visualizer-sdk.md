@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586806"
 ---
 # <a name="concurrency-visualizer-sdk"></a>동시성 시각화 도우미 SDK
@@ -84,7 +84,7 @@ C#, Visual Basic 및 기타 관리 코드에서 [Markers](/previous-versions/hh6
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>C++ 또는 C 프로젝트에서 새 표식 공급자를 사용하려면
 
-1. `CvInitProvider` 함수를 사용하여 PCV_PROVIDER를 초기화합니다. 생성자는 GUID *와 PCV_PROVIDER\*를 사용 합니다.
+1. `CvInitProvider` 함수를 사용하여 PCV_PROVIDER를 초기화합니다. 생성자는 GUID *와 PCV_PROVIDER를 사용 \* 합니다.
 
 2. 공급자를 등록하려면 [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자를 엽니다. **표식** 탭을 선택한 다음 **새 공급자 추가** 단추를 선택합니다. 이 대화 상자에서 공급자 및 공급자에 대한 설명을 만드는 데 사용된 GUID를 입력합니다.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b005b55e0079b7db6486a8cde08f81f62ac7399
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542040"
 ---
 # <a name="getting-started-with-wpf"></a>WPF 시작
@@ -31,5 +31,5 @@ WPF(Windows Presentation Foundation)는 데스크톱 클라이언트 애플리�
 |WPF에 대한 자세한 설명...|[WPF 소개](../designers/introduction-to-wpf.md)<br /><br /> [XAML 개요(WPF)](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)<br /><br /> [컨트롤](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)<br /><br /> [데이터 바인딩 개요](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)<br /><br /> [LINQ to XML를 사용 하 여 WPF 데이터 바인딩](../designers/wpf-data-binding-with-linq-to-xml.md)|
 |Windows Forms 개발자인가요?|[Windows Forms 컨트롤 및 해당 WPF 컨트롤](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [WPF 및 Windows Forms 상호 운용성에서 지원되는 시나리오](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [클래스 라이브러리 (WPF)](https://msdn.microsoft.com/library/ms753307\(v=vs.100\).aspx) [응용 프로그램 개발 개요](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx) [.NET Framework 개발자 센터](https://dotnet.microsoft.com/) [Windows Presentation Foundation를 사용 하 여 최신 데스크톱 응용 프로그램 만들기](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

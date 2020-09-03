@@ -7,10 +7,10 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: a362bd4eef2a48667c67c03e940e213fc960418b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919012"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin을 사용한 모바일 개발에 대해 알아보기
@@ -49,7 +49,7 @@ ms.locfileid: "75919012"
 2. (선택 사항) [사례 연구: Tasky](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky) (영문)(xamarin.com)에서는 데이터, 데이터 액세스 및 비즈니스 계층을 구분하는 공유 코드에 대한 PCL을 사용하여 프로젝트 구조를 지정하는 것과 같은 전기능 앱의 디자인 및 구조에 대한 몇 가지 모범 사례를 설명합니다.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>주요 사항: 네이티브 및 Xamarin.Forms UI 계층  
- *10~40분*  
+ *10-40분*  
   
  Xamarin에서는 Xamarin Native 및 Xamarin.Forms의 두 가지 방법으로 멋진 네이티브 앱을 빌드할 수 있습니다.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "75919012"
   
   항상 Xamarin.Forms 솔루션부터 시작하여 플랫폼 간에 공유되는 UI 코드를 설정하고 사용자 지정 기능을 사용하여 플랫폼별 조정을 수행하는 것이 좋습니다. 완전한 플랫폼별 화면이 필요한 경우 Xamarin Native를 사용하여 개별적으로 추가할 수 있습니다.  
   
-  자세히 알아보려면:  
+  자세한 내용은 다음 항목을 참조하세요.  
   
 1. [Xamarin.Forms](/xamarin/xamarin-forms/) (xamarin.com)에서는 Xamarin.Forms 및 네이티브 UI 레이어(Xamarin.iOS 및 Xamarin.Android)에 대한 간단한 개요와 장점 및 단점을 제공합니다.  
   
@@ -90,11 +90,11 @@ ms.locfileid: "75919012"
   
     - **Windows 7 또는 이전/Mac OS X에서 실행되는 Windows**: [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com)를 사용합니다.  
   
-2. **Apple iOS 시뮬레이터.** 자세한 내용은 [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1)(iOS 시뮬레이터 시작)(apple.com)를 참조하세요.  
+2. **Apple의 iOS 시뮬레이터입니다.** 자세한 내용은 [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1)(iOS 시뮬레이터 시작)(apple.com)를 참조하세요.  
   
 3. **Microsoft Window Phone Emulator.** 자세한 내용은 [Windows Phone 8용 Windows Phone Emulator](https://msdn.microsoft.com/library/dn632391.aspx)(영문)를 참조하세요.  
   
-## <a name="components"></a> Deeper Dive: Xamarin Components  
+## <a name="deeper-dive-xamarin-components"></a><a name="components"></a> Deeper Dive: Xamarin Components  
  *10분*  
   
- Xamarin 구성 요소를 통해 대부분 확장 기능을 Xamarin 앱에 사용할 수 있습니다. 추가 UI 컨트롤, 인증, 다양한 클라우드 서비스(예: Microsoft Azure) 등을 비롯한 다운로드할 수 있는 전체 카탈로그는 [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows)에서 찾을 수 있습니다.
+ Xamarin 구성 요소를 통해 대부분 확장 기능을 Xamarin 앱에 사용할 수 있습니다. 에서 다운로드할 수 있는 전체 카탈로그를 찾을 수 있습니다 [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) . 여기에는 추가 UI 컨트롤, 인증, 다양 한 클라우드 서비스 (예: Microsoft Azure 등)를 위한 구성 요소가 포함 됩니다.

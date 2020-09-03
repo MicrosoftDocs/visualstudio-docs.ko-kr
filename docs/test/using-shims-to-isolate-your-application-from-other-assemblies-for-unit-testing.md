@@ -9,10 +9,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 0f7d2f993891a4adfa9217357fbdb1a95e10b637
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289302"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 앱 격리

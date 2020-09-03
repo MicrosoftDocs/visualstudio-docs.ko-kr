@@ -11,10 +11,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 1d66dcd0a59edfbfb199a68f81ecebe608afccb1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289055"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리

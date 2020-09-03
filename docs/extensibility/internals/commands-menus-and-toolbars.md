@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65f5a43bee5a89492bc1ecc7bf7c1126b5a80456
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173592"
 ---
 # <a name="commands-menus-and-toolbars"></a>명령, 메뉴 및 도구 모음
@@ -34,7 +34,7 @@ ms.locfileid: "84173592"
 
   이 섹션의 항목에서는 명령, 메뉴 및 도구 모음이 Vspackage에서 작동 하는 방식에 대해 설명 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
  명령 테이블 형식 사양에 대 한 자세한 설명입니다.

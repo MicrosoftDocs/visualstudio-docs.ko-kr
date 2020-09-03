@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918362"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>UML 모델을 다른 모델 및 도구와 통합
@@ -46,7 +46,7 @@ UML 요소에서 ID를 문자열로 인코드하여 다른 UML 요소, 파일 �
 
 - 대상 모델 요소와이 요소를 포함 하는 모델 또는 해당 요소를 표시 하는 특정 다이어그램의 **GUID 및 파일 이름** 입니다.
 
-- **ModelBus 참조** ModelBus는 모델 간에 참조를 만들고 해결하기 위한 프레임워크입니다. 사용자가 모델의 요소를 선택할 수 있는 ModelBus 선택을 포함합니다. 또한 사용자가 대상 모델의 변경으로 인해 손실된 참조를 해결하는 데 도움이 됩니다.
+- **ModelBus 참조.** ModelBus는 모델 간에 참조를 만들고 해결하기 위한 프레임워크입니다. 사용자가 모델의 요소를 선택할 수 있는 ModelBus 선택을 포함합니다. 또한 사용자가 대상 모델의 변경으로 인해 손실된 참조를 해결하는 데 도움이 됩니다.
 
    자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)을 참조 하세요.
 
@@ -63,5 +63,5 @@ UML 요소에서 ID를 문자열로 인코드하여 다른 UML 요소, 파일 �
 
    자세한 내용은 [모델링 다이어그램에서 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) 및 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [모델링 다이어그램에 대 한 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [모델링 다이어그램에서 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) [방법: UML 모델의 변경 내용에 응답](../misc/how-to-respond-to-changes-in-a-uml-model.md)

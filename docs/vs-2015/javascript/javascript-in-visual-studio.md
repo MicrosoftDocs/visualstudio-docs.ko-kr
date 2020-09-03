@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852252"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio의 JavaScript
@@ -45,13 +45,13 @@ JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 J
 |-------------|-----------------|
 |클래스|새로운 구문에서는 [클래스](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class)의 선언을 지원합니다.|
 |Promise|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)를 사용하면 더 쉽고 명확한 비동기 코드를 작성할 수 있습니다. Promise 생성자가 `all` 및 `race` 유틸리티 메서드와 함께 지원됩니다.|
-|Iterators|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
+|반복기|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
 |화살표 함수|화살표 함수(=>)는 어휘 `this` 바인딩이 포함된 `function` 키워드의 약식 구문입니다.|
 |기본 제공 개체에 대한 새로운 메서드|[Array 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) 및 [String 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) 기본 제공 개체에는 데이터 조작 및 검사에 사용할 수 있는 많은 새로운 유틸리티 함수와 속성이 포함되어 있습니다.|
 |개체 리터럴 향상|개체는 이제 계산된 속성, 간결한 메서드 정의 및 같은 이름의 변수로 값이 초기화되는 속성에 대한 약식 구문을 지원합니다. 자세한 내용은 [개체 만들기](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)를 참조하세요.|
-|Proxy|[Proxies](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy)를 사용하여 개체에 대한 사용자 지정 동작을 설정할 수 있습니다.|
+|프록시|[Proxies](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy)를 사용하여 개체에 대한 사용자 지정 동작을 설정할 수 있습니다.|
 |Rest 매개 변수|Rest 매개 변수를 사용하여 함수 호출의 연속된 인수를 배열로 전환할 수 있습니다. 자세한 내용은 [함수](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)를 참조하세요.|
-|스프레드 연산자|[스프레드 연산자](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator)(`…`)는 반복 가능한 식을 개별 인수로 확장합니다. 예를 들어 `a.b(…array)`는 `a.b.apply(a, array)`와 거의 같습니다.|
+|스프레드 연산자|[스프레드 연산자](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) ( `…` )는 반복 가능한 식을 개별 인수로 확장 합니다. 예를 들어 `a.b(…array)`는 `a.b.apply(a, array)`와 거의 같습니다.|
 |기호|[Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) 개체를 사용하면 기존 개체 속성을 방해할 가능성, 의도하지 않은 표시 및 다른 코드에 의한 조정되지 않은 추가 없이 속성을 기존 개체에 추가할 수 있습니다.|
 |템플릿 문자열|[템플릿 문자열](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals)은 식이 계산되어 문자열 리터럴과 연결될 수 있도록 하는 문자열 리터럴입니다.|
 |유니코드 향상|유니코드 지원 기능이 향상되었습니다. 예를 들어 새로운 이스케이프 시퀀스 형식은 에스트랄 코드 포인트(16진수가 5개 이상인 코드 포인트)를 지원합니다. 자세한 내용은 [특수 문자](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters)를 참조하세요.|

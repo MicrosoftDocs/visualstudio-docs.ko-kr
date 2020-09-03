@@ -13,16 +13,16 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: df6ef440202057bb8e0612af0987782fa281c952
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944247"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대 한 레지스트리 정보 생성
+# <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대한 레지스트리 정보 생성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-RegPkg 유틸리티를 사용 하 여 관리 되는 VSPackage에 대 한 등록 매니페스트를 생성할 수 있습니다. 매니페스트를 Windows Installer 설치 패키지에 통합할 수 있습니다. 또한 RegPkg는 [WINDOWS INSTALLER XML 도구 집합](https://documentation.help/WiX-Toolset/index.html)을 기반으로 설치 원본 파일에 포함 될 수 있는 파일을 생성할 수 있습니다.
+RegPkg.exe 유틸리티를 사용 하 여 관리 되는 VSPackage 등록 매니페스트를 생성할 수 있습니다. 매니페스트를 Windows Installer 설치 패키지에 통합할 수 있습니다. 또한 RegPkg는 [WINDOWS INSTALLER XML 도구 집합](https://documentation.help/WiX-Toolset/index.html)을 기반으로 설치 원본 파일에 포함 될 수 있는 파일을 생성할 수 있습니다.
   
 > [!IMPORTANT]
 > RegPkg는 개발 시스템과 관련 된 경로 이름을 생성 하므로 RegPkg를 사용할 때마다 적절 한 형식의 속성 Windows Installer 사용 하도록 출력을 편집 해야 합니다. 예를 들어 InprocServer32 값은 **[Systemfolder] mscoree.dll** 이어야 하 고 경로는 **[#filekey]** 및 **[$componentkey]** 를 사용 해야 합니다. 이러한 방식으로 출력을 조정 하면 다른 드라이브나 다른 디렉터리, 지역화 된 디렉터리 이름 및 사용자가 선택할 수 있는 경로에 Windows가 설치 된 컴퓨터가 지원 됩니다. 자세한 내용은 Windows Installer SDK에서 [서식 지정](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp) 을 참조 하세요. 개발 시스템 경로 (예: 파일*이름*File_ 형식의 파일 id)에 대 한 RegPkg 규칙을 따르는 경우에는 더 작은 변경 작업을 수행 해야 합니다.  
@@ -182,6 +182,6 @@ RegPkg 유틸리티를 사용 하 여 관리 되는 VSPackage에 대 한 등록 
     </Include>  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [Vspackage  등록](registering-vspackages.md)  
- [VSPackage](../../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>관련 항목  
+ [Vspackage 등록](registering-vspackages.md)   
+ [VSPackages](../../extensibility/internals/vspackages.md)

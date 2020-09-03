@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016214"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>방법: SharePoint 명령 만들기
@@ -58,7 +59,7 @@ ms.locfileid: "86016214"
 
      SharePoint 도구 확장에서 명령을 호출 하는 경우에는 동일한 고유 식별자를 지정 해야 합니다. 자세한 내용은 [방법: SharePoint 명령 실행](../sharepoint/how-to-execute-a-sharepoint-command.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드 예제에서는 식별자를 포함 하는 SharePoint 명령을 보여 줍니다 `Contoso.Commands.UpgradeSolution` . 이 명령은 서버 개체 모델의 Api를 사용 하 여 배포 된 솔루션으로 업그레이드 합니다.
 
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
@@ -76,7 +77,7 @@ ms.locfileid: "86016214"
 ## <a name="deploying-the-command"></a>명령 배포
  명령을 배포 하려면 명령을 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 사용 하는 확장 어셈블리를 사용 하 여 동일한 확장 (*vsix*) 패키지에 명령 어셈블리를 포함 합니다. 또한 source.extension.vsixmanifest 파일에서 명령 어셈블리에 대 한 항목을 추가 해야 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [방법: SharePoint 명령 실행](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

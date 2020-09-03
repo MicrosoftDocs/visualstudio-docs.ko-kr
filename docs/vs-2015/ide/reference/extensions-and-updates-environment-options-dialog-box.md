@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 693738e1751e580e32d7223d150438717fc63d27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651051"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 확장 및 업데이트
@@ -33,7 +33,7 @@ ms.locfileid: "72651051"
  자세한 내용은 [Visual Studio 확장명 찾기 및 사용](../../ide/finding-and-using-visual-studio-extensions.md)을 참조하세요.
 
 ### <a name="additional-extension-galleries"></a>추가 확장 갤러리
- 고유 확장 갤러리에 대한 지원을 활성화하는 엔터프라이즈 기능입니다. 자세한 내용은 [Private Galleries](../../extensibility/private-galleries.md)를 참조하세요.
+ 고유 확장 갤러리에 대한 지원을 활성화하는 엔터프라이즈 기능입니다. 자세한 내용은 [개인 갤러리](../../extensibility/private-galleries.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
- [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>관련 항목
+ [환경 옵션 대화 상자](../../ide/reference/environment-options-dialog-box.md)

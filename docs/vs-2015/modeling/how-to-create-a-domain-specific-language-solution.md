@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533083"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
@@ -27,10 +27,10 @@ ms.locfileid: "85533083"
 
 DSL (도메인 특정 언어)은 특수 한 솔루션을 사용 하 여 만듭니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
  이 절차를 시작 하려면 먼저 다음 구성 요소를 설치 해야 합니다.
 
-|Product|다운로드 링크|
+|제품|다운로드 링크|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
@@ -78,7 +78,7 @@ DSL (도메인 특정 언어)은 특수 한 솔루션을 사용 하 여 만듭�
    > [!NOTE]
    > 신뢰할 수 없는 소스에서 텍스트 템플릿을 실행 하지 않도록 경고 하는 메시지가 표시 되 면 **확인**을 클릭 합니다. 이 메시지를 다시 표시 하지 않도록 설정할 수 있습니다.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>DSL 디자이너 마법사 페이지
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> DSL 디자이너 마법사 페이지
  여러 필드를 기본값으로 그대로 둘 수 있습니다. 그러나 파일 확장명 필드를 설정 했는지 확인 합니다.
 
 ### <a name="solution-settings-page"></a>솔루션 설정 페이지
@@ -129,5 +129,5 @@ DSL (도메인 특정 언어)은 특수 한 솔루션을 사용 하 여 만듭�
 
  강력한 이름 지정에 대 한 자세한 내용은 [강력한 이름의 어셈블리 만들기 및 사용](/dotnet/standard/assembly/create-use-strong-named)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [도메인 특정 언어 도메인 특정 언어 도구 용어집을 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md) [Domain-Specific Language Tools Glossary](/previous-versions/bb126564(v=vs.100))
