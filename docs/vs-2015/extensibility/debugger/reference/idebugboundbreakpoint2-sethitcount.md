@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: SetHitCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 292e36878594841f200f744f2809256b05e84d94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156195"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-바인딩된 중단점의 적중된 횟수를 설정합니다.  
+바인딩된 중단점의 적중 횟수를 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,15 +41,15 @@ int SetHitCount( 
   
 #### <a name="parameters"></a>매개 변수  
  `dwHitCount`  
- [in] 설정 하려면 적중된 수입니다.  
+ 진행 설정할 적중 횟수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 바인딩된 중단점 개체의 상태 설정 됩니다 `BPS_DELETED` (부분 합니다 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거형)입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_BP_DELETED`바인딩된 중단점 개체의 상태가 `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거의 일부)로 설정 되어 있으면를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 적중된 횟수가 세션의 현재 실행 하는 동안이 중단점이 발생 한 횟수입니다.  
+ 적중 횟수는 세션의 현재 실행 중에이 중단점이 발생 한 횟수입니다.  
   
- 이 메서드는 일반적으로이 중단점에서 현재 적중된 횟수를 업데이트 하려면 디버그 엔진에 의해 호출 됩니다.  
+ 이 메서드는 일반적으로이 중단점에 대 한 현재 적중 횟수를 업데이트 하기 위해 디버그 엔진에 의해 호출 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

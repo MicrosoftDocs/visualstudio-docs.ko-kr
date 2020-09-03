@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b40b37c8c0ee97b5d7e0cc33773af140bd1010b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155615"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
@@ -36,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
  성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 열거자는 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.  
   
-|열거자|설명|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|전역 수준 설정은 프로파일링 실행의 모든 프로세스와 스레드에 영향을 줍니다.|  
 |PROFILE_PROCESSLEVEL|프로세스 수준 설정은 지정된 프로세스의 일부인 모든 스레드에 영향을 줍니다.|  
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값  
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.  
   
-|열거자|설명|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|프로파일링 요소 ID가 없습니다.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|지정된 프로파일링 수준이 없습니다.|  
@@ -72,7 +72,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
  가져오기 라이브러리: VSPerf.lib  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 SuspendProfile 메서드를 보여 줍니다. 이 예에서는 StartProfile에 대한 이전 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에 의해 식별된 프로세스 또는 스레드에 대해 만들어졌다고 가정합니다.  
   
 ```  
@@ -107,5 +107,5 @@ void ExerciseSuspendProfile()
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>관련 항목  
+ [Visual Studio 프로파일러 API 참조 (네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ccef8ebbf63835a71027643b518280d5f4f867b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156408"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled 메서드
+# <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 모든 세션에서 공급자를 사용하도록 설정했는지 확인합니다.  
@@ -42,12 +42,12 @@ bool is_enabled(
  `_Category`  
  범주입니다.  
   
-## <a name="return-value"></a>Return Value  
+## <a name="return-value"></a>반환 값  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** cvmarkersobj.h  
   
  **네임스페이스:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [marker_series 클래스](../profiling/marker-series-class.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 | 마이크로 소프트 문서
+title: 'IDebugCoreServer2:: GetMachineUtilities_V7 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 79eba6889583f1dfa482dab107ad31eaaacdbcc2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733145"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 이 메서드는 서버에 대 한 컴퓨터 유틸리티를 가져옵니다.
 
 > [!NOTE]
-> 이 메서드는 더 이상 사용되지[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 않습니다. `E_NOTIMPL` 그것은 역사적인 이유로 유지됩니다.
+> 이 메서드는 사용 되지 않습니다. 사용 안 함 ( [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] `E_NOTIMPL` 이 메서드가 호출 될 경우 항상를 반환 함). 기록을 위해 보존 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,13 +44,13 @@ int GetMachineUtilities_V7(
 
 ## <a name="parameters"></a>매개 변수
 `ppUtil`\
-【아웃】 컴퓨터 `IDebugMDMUtil2_V7` 유틸리티 정보를 나타내는 인터페이스를 반환합니다.
+제한이 `IDebugMDMUtil2_V7` 컴퓨터 유틸리티 정보를 나타내는 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 메서드가 `E_NOTIMPL`구현되지 않음을 나타내는 항상 반환됩니다.
+## <a name="return-value"></a>반환 값
+ `E_NOTIMPL`메서드가 구현 되지 않음을 나타내는를 항상 반환 합니다.
 
 ## <a name="remarks"></a>설명
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]이 `E_NOTIMPL` 메서드가 호출되는 경우 항상 반환됩니다.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]`E_NOTIMPL`이 메서드가 호출 되 면 항상를 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

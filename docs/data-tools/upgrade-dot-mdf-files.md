@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281125"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf 파일 업그레이드
@@ -61,7 +61,7 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
 2. **연결 추가** 대화 상자에서 다음 정보를 지정 합니다.
 
-    - **데이터 원본**:`Microsoft SQL Server (SqlClient)`
+    - **데이터 원본**: `Microsoft SQL Server (SqlClient)`
 
     - **서버 이름**:
 
@@ -101,7 +101,7 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>기본 데이터베이스 엔진 SQL Server Express 만들려면
 
-1. 메뉴 모음에서 **도구**  >  **옵션**을 선택 합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
 2. **옵션** 대화 상자에서 **데이터베이스 도구** 옵션을 확장 한 다음 **데이터 연결**을 선택 합니다.
 
@@ -111,6 +111,6 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
     SQL Server Express는 응용 프로그램에 대 한 기본 데이터베이스 엔진입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터 액세스](accessing-data-in-visual-studio.md)

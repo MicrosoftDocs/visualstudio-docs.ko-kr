@@ -1,5 +1,5 @@
 ---
-title: 아이디버그스택프레임2::겟정보 | 마이크로 소프트 문서
+title: 'IDebugStackFrame2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 09768fc58640d79a3b5628bafc16b2267f1f8a4c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719715"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
-스택 프레임에 대한 설명을 가져옵니다.
+스택 프레임에 대 한 설명을 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,18 +45,18 @@ int GetInfo ( 
 
 ## <a name="parameters"></a>매개 변수
 `dwFieldSpec`\
-【인】 매개 변수의 필드를 채울 FRAMEINFO_FLAGS 필드를 지정하는 [플래그의](../../../extensibility/debugger/reference/frameinfo-flags.md) `pFrameInfo` 조합입니다.
+진행 채울 매개 변수의 필드를 지정 하는 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 열거형의 플래그 조합 `pFrameInfo` 입니다.
 
 `nRadix`\
-【인】 숫자 정보를 서식 지정하는 데 사용할 radix입니다.
+진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.
 
 `pFrameInfo`\
-【아웃】 스택 프레임에 대한 설명으로 채워진 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조입니다.
+제한이 스택 프레임에 대 한 설명으로 채워진 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

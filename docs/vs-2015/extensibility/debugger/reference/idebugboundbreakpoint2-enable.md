@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Enable | Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: Enable | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c650ff26b1ce7358312ef90bc737f2f911b0a52f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156268"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-사용 하거나 중단점을 사용 하지 않도록 설정 합니다.  
+중단점을 사용 하거나 사용 하지 않도록 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,13 +41,13 @@ int Enable( 
   
 #### <a name="parameters"></a>매개 변수  
  `fEnable`  
- [in] 에 0이 아닌 값을 설정 (`TRUE`)을 사용 하거나 0 (`FALSE`) 중단점을 사용 하지 않도록 설정 합니다.  
+ 진행 를 0이 아닌 값 ()으로 설정 하 여 `TRUE` 중단점을 `FALSE` 사용 하지 않도록 설정 하거나 0 ()으로 설정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 바인딩된 중단점 개체의 상태 설정 됩니다 `BPS_DELETED` (부분 합니다 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거형)입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_BP_DELETED`바인딩된 중단점 개체의 상태가 `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거의 일부)로 설정 되어 있으면를 반환 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CBoundBreakpoint` 노출 하는 개체를 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `CBoundBreakpoint` [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    

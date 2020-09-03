@@ -12,10 +12,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a7efb5fe4484fdd0ce7d2fcb0a1988e9b089509e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660617"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Visual Studio에서 스토어 앱에 대한 단위 테스트 만들기 및 실행
@@ -32,7 +32,7 @@ Visual Studio 2012 Express for Windows 8 단위 테스트 도구는 소프트웨
 >
 >   자세한 내용은 MSDN 라이브러리의 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>섹션 내용
  [C# 코드 유닛 테스트](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
 
  [C++ DLL 유닛 테스트](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)

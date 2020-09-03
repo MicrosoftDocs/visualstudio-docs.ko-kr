@@ -9,10 +9,10 @@ caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd212eb304e6cba022b067b8b432cf00fc3f87ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660546"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
@@ -58,17 +58,17 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 3. **이름** 텍스트 상자에 Visual Basic 테스트 프로젝트의 이름을 입력하고 **확인**을 선택합니다.
 
-4. [솔루션 탐색기]에 있는 새 Visual Basic 테스트 프로젝트의 바로 가기 메뉴에서 **속성**을 선택합니다.
+4. 솔루션 탐색기의 새 Visual Basic 테스트 프로젝트의 바로 가기 메뉴에서 **속성** 을 선택 합니다.
 
      Visual Basic 테스트 프로젝트의 속성이 표시됩니다.
 
-5. **컴파일** 탭에서 다음 그림과 같이 **고급 컴파일 옵션**을 선택합니다.
+5. **컴파일** 탭에서 다음 그림과 같이 **고급 컴파일 옵션** 을 선택 합니다.
 
      ![고급 컴파일 옵션](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
 
 6. **대상 프레임워크(모든 구성)** 드롭다운 목록을 사용하여 다음 그림의 설명선 B에 표시된 대로 대상 프레임워크를 **.NET Framework 3.5** 이상으로 변경합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
-     ![대상 프레임 워크&#45;드롭다운 목록](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![대상 프레임 워크 drop&#45;down 목록](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
 
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Visual C# 단위 테스트 프로젝트용 특정 버전 .NET Framework로 대상 다시 지정
 
@@ -80,13 +80,13 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 3. **이름** 텍스트 상자에 Visual C# 테스트 프로젝트의 이름을 입력하고 **확인**을 선택합니다.
 
-4. [솔루션 탐색기]에 있는 새 Visual C# 테스트 프로젝트의 바로 가기 메뉴에서 **속성**을 선택합니다.
+4. 솔루션 탐색기에서 새 Visual c # 테스트 프로젝트의 바로 가기 메뉴에서 **속성** 을 선택 합니다.
 
      Visual C# 테스트 프로젝트의 속성이 표시됩니다.
 
 5. **애플리케이션** 탭에서 **대상 프레임워크**를 선택하고 드롭다운 목록에서 **.NET Framework 3.5** 이상 버전을 선택하여 다음 그림과 같이 대상 프레임워크를 변경합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
-     ![대상 프레임 워크&#45;드롭다운 목록](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![대상 프레임 워크 drop&#45;down 목록](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
 
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>C++/CLI 단위 테스트 프로젝트용 특정 버전 .NET Framework로 대상 다시 지정
 
@@ -101,9 +101,9 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 3. **이름** 텍스트 상자에 Visual C++ 테스트 프로젝트의 이름을 입력하고 **확인**을 클릭합니다.
 
-4. [솔루션 탐색기]의 새 Visual C++ 테스트 프로젝트에서 **프로젝트 언로드**를 선택합니다.
+4. 솔루션 탐색기에서 새 Visual C++ 테스트 프로젝트에서 **프로젝트 언로드** 를 선택 합니다.
 
-5. [솔루션 탐색기]에서 언로드된 Visual C++ 테스트 프로젝트를 선택하고 **\<프로젝트 이름>.vcxproj 편집**을 선택합니다.
+5. 솔루션 탐색기에서 언로드된 Visual C++ 테스트 프로젝트를 선택한 다음, **Edit \<project name> .vcxproj**를 선택 합니다.
 
      .vcxproj 파일이 편집기에서 열립니다.
 
@@ -123,7 +123,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 7. .vcxproj 파일을 저장하고 닫습니다.
 
-8. [솔루션 탐색기]에 있는 새 Visual C++ 테스트 프로젝트의 바로 가기 메뉴에서 **프로젝트 다시 로드**를 선택합니다.
+8. 솔루션 탐색기에서 새 Visual C++ 테스트 프로젝트의 바로 가기 메뉴에서 **프로젝트 다시 로드** 를 선택 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [기존 코드에 대 한 단위 테스트 만들기 및 실행](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) sharepoint [솔루션 만들기](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [, sharepoint 솔루션 빌드 및 디버깅](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [고급 컴파일러 설정 대화 상자 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

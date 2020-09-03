@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f4faa9038a5931dec376903f166301f27f00b37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154792"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`UsingTask``TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다. 자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.  
+`UsingTask``TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다. 자세한 내용은 [UsingTask 요소 (MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조 하세요.  
   
  \<Project>  
  \<UsingTask>  
@@ -49,7 +49,7 @@ ms.locfileid: "68154792"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Parameter](../msbuild/parameter-element.md)|`UsingTask``TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수에 대한 정보를 포함합니다. 요소의 이름은 매개 변수의 이름입니다.|  
+|[매개 변수](../msbuild/parameter-element.md)|`UsingTask``TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수에 대한 정보를 포함합니다. 요소의 이름은 매개 변수의 이름입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -73,7 +73,7 @@ ms.locfileid: "68154792"
 </UsingTask>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [작업](../msbuild/msbuild-tasks.md)   
+## <a name="see-also"></a>관련 항목  
+ [임무](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

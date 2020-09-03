@@ -13,10 +13,10 @@ ms.author: johnhart
 ms.workload:
 - office
 ms.openlocfilehash: 652768fa23902722a9b071a4ad12de4cbf774ab6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546031"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>방법: 프로그래밍 방식으로 사용자 지정 폴더 항목 만들기

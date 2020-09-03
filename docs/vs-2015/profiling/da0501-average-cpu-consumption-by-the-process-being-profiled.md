@@ -1,5 +1,5 @@
 ---
-title: 'DA0501: 프로파일링되고 있는 프로세스의 평균 CPU 사용입니다. | Microsoft Docs'
+title: 'DA0501: 프로파일링 중인 프로세스의 평균 CPU 사용 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1462ac73e599b870f015a02998c069f7613be0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155770"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: 프로파일링되고 있는 프로세스의 평균 CPU 사용입니다.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: 프로파일링 중인 프로세스의 평균 CPU 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA501 |  
 | 범주 | 리소스 모니터링 |  
-| 프로 파일링 방법을 | 모든 |  
-| 메시지 | 프로 파일링 중인 프로세스에서 CPU 사용량 평균. |  
+| 프로 파일링 방법 | 모두 |  
+| 메시지 | 프로 파일링 되 고 있는 프로세스의 평균 CPU 사용입니다. |  
 | 규칙 유형 | 정보 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  

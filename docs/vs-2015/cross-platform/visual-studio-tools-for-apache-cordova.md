@@ -8,10 +8,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155275"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Apache Cordova용 Visual Studio Tools
@@ -31,4 +31,4 @@ iOS, Android 및 Windows 디바이스에서 실행되고 코드를 100% 가까�
   
 이러한 도구를 고려하고 있지만 아직 사용할 준비가 되지 않은 경우 [기능](https://www.visualstudio.com/explore/cordova-vs) 페이지를 방문하여 더 자세히 알아보세요.  
   
-시작할 경우 표시 [JavaScript 사용한 모바일 개발](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)합니다.
+시작할 준비가 되 면 [JavaScript를 사용한 모바일 개발](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)을 참조 하세요.

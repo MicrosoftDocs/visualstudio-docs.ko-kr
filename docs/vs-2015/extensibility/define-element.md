@@ -1,5 +1,5 @@
 ---
-title: 요소를 정의 합니다. | Microsoft Docs
+title: Define 요소 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162152"
 ---
 # <a name="define-element"></a>Define 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-기호 이름 및 값 쌍을 정의합니다. 조건부 특성에서이 기호를 평가할 수 있습니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다. 참고 항목을 [요소를 기호](../extensibility/symbols-element.md)합니다.  
+기호 이름 및 값 쌍을 정의 합니다. 이 기호는 조건부 특성으로 평가할 수 있습니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요. 또한 [기호 요소](../extensibility/symbols-element.md)를 참조 하세요.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,18 +36,18 @@ ms.locfileid: "68162152"
   
 |특성|Description|  
 |---------------|-----------------|  
-|name|필수 요소. 기호 이름:<br /><br /> name="Mode"|  
-|value|필수 요소. 기호의 값:<br /><br /> 값 = "Standard"|  
-|조건|선택 사항입니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|name|필수 요소. 기호의 이름입니다.<br /><br /> name = "모드"|  
+|값|필수 요소. 기호의 값입니다.<br /><br /> value = "Standard"|  
+|조건|선택 사항입니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|Description|  
+|요소|설명|  
 |-------------|-----------------|  
-|[CommandTable 요소](../extensibility/commandtable-element.md)|통합된 개발 환경 (IDE)에 VSPackage가 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 예를 들어 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자입니다.|  
+|[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE (통합 개발 환경)에 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 예를 들어 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자가 있습니다.|  
   
 ## <a name="example"></a>예제  
   

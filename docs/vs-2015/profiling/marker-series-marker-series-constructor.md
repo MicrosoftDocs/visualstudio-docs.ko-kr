@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b42058e0501612acbf454df725a9f1631489d26e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155296"
 ---
-# <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 생성자
+# <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series 생성자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 `marker_series` 클래스의 새 인스턴스를 초기화합니다.  
@@ -53,5 +53,5 @@ marker_series(
   
  **네임스페이스:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [marker_series 클래스](../profiling/marker-series-class.md)

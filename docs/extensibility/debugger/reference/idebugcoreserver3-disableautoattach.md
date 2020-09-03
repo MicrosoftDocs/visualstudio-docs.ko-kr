@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::D실행 가능한 자동 연결 | 마이크로 소프트 문서
+title: IDebugCoreServer3::D isableAutoAttach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd4f874a2a144ec050d0b018ba78ee3e42d70bad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732921"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
-이 서버와 연결된 모든 디버그 엔진에 대해 자동 연결을 비활성화합니다.
+이 서버와 연결 된 모든 디버그 엔진에 대해 자동 연결을 사용 하지 않도록 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,7 +38,7 @@ int DisableAutoAttach();
 ```
 
 ## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

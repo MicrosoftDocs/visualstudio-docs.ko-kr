@@ -8,19 +8,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad7fc9132647988aee46a2bb07e992505109d33c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702425"
 ---
-# <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet 대 SDK를 프로젝트 참조로
+# <a name="nuget-versus-sdk-as-a-project-reference"></a>프로젝트 참조로 서의 NuGet 및 SDK
 
-이 문서는 개발자가 소프트웨어를 NuGet 패키지로 패키징할지 또는 소프트웨어 개발 키트(SDK)로 패키징할지 선택할 수 있도록 설계되었습니다. 특히 Visual Studio 프로젝트에서 참조할 때 둘 사이의 차이점에 대해 설명합니다.
+이 문서는 개발자가 소프트웨어를 NuGet 패키지로 패키지할 지, 아니면 SDK (소프트웨어 개발 키트)로 패키지할 지를 돕기 위해 작성 되었습니다. 특히 Visual Studio 프로젝트에서 참조 되는 경우 두 가지 간의 차이점을 설명 합니다.
 
-- [NuGet은](/nuget) 프로젝트에 라이브러리를 통합하는 프로세스를 간소화하는 오픈 소스 패키지 관리 시스템입니다. .NET(.NET 코어 포함)의 경우 NuGet은 코드를 공유하기 위해 Microsoft에서 지원하는 메커니즘입니다. NuGet은 .NET에 대한 패키지를 만들고 호스팅하고 사용하는 방법을 정의하고 각 역할에 대한 도구를 제공합니다. Visual Studio에서는 [패키지 관리자](/nuget/consume-packages/install-use-packages-visual-studio) 사용자 인터페이스를 사용하여 프로젝트에 NuGet 패키지를 추가합니다.
+- [NuGet](/nuget) 은 프로젝트에 라이브러리를 통합 하는 프로세스를 간소화 하는 오픈 소스 패키지 관리 시스템입니다. .Net (.NET Core 포함)의 경우 NuGet은 코드를 공유 하는 Microsoft 지원 메커니즘입니다. NuGet은 .NET 용 패키지를 만들고 호스트 하 고 사용 하는 방법을 정의 하 고 각 역할에 대 한 도구를 제공 합니다. Visual Studio에서 [패키지 관리자](/nuget/consume-packages/install-use-packages-visual-studio) 사용자 인터페이스를 사용 하 여 NuGet 패키지를 프로젝트에 추가 합니다.
 
-- [SDK는](../extensibility/creating-a-software-development-kit.md) Visual Studio에서 단일 참조 항목으로 취급하는 파일 모음입니다. Visual Studio의 참조 관리자 대화 상자에는 **참조 추가를**선택할 때 현재 프로젝트와 관련된 모든 SDK가 나열됩니다. 프로젝트에 SDK를 추가하면 IntelliSense, 도구 상자 창, 디자이너, 개체 브라우저, MSBuild, 배포, 디버깅 및 패키징을 통해 해당 SDK의 모든 콘텐츠에 액세스할 수 있습니다.
+- [SDK](../extensibility/creating-a-software-development-kit.md) 는 Visual Studio에서 단일 참조 항목으로 처리 하는 파일의 컬렉션입니다. Visual Studio의 참조 관리자 대화 상자에는 **참조 추가**를 선택 하는 경우 현재 프로젝트와 관련 된 모든 sdk가 나열 됩니다. 프로젝트에 SDK를 추가 하는 경우 IntelliSense, 도구 상자 창, 디자이너, 개체 브라우저, MSBuild, 배포, 디버깅 및 패키징을 통해 해당 SDK의 모든 콘텐츠에 액세스할 수 있습니다.
 
 ## <a name="which-mechanism-should-i-use"></a>어떤 메커니즘을 사용해야 하나요?
 
