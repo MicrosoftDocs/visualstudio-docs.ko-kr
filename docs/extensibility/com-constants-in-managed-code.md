@@ -1,5 +1,5 @@
 ---
-title: 관리 코드의 COM 상수 | 마이크로 소프트 문서
+title: 관리 코드의 COM 상수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739833"
 ---
 # <a name="com-constants-in-managed-code"></a>관리 코드의 COM 상수
-MPF(관리되는 패키지 프레임워크)는 관리되는 코드에 몇 가지 표준 COM 상수를 제공합니다. 이러한 상수는 참조를 위해 아래에 나열되어 있습니다.
+MPF (관리 되는 패키지 프레임 워크)는 일부 표준 COM 상수를 관리 코드에서 사용할 수 있도록 합니다. 이러한 상수는 참조에 대해 아래에 나열 되어 있습니다.
 
 ## <a name="boolean-hresult-values"></a>부울 HRESULT 값
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
@@ -126,5 +126,5 @@ MPF(관리되는 패키지 프레임워크)는 관리되는 코드에 몇 가지
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [오류 처리 및 반환 값](../extensibility/error-handling-and-return-values.md)

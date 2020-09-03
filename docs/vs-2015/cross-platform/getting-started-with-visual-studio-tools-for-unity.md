@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: f110b8d6f7ab05d5a1b6942cd9ec599a8d8619b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299820"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
@@ -24,7 +24,7 @@ ms.locfileid: "74299820"
 > [!IMPORTANT]
 > Unity 5.2에서는 프로젝트 설정을 간소화하는 Visual Studio Tools for Unity 2.1에 대한 기본 제공 지원이 추가되었습니다. 이 지원을 이용하려면 Windows에서 Unity 버전 5.2.0 이상과 Visual Studio Tools for Unity 버전 2.1 이상이 필요합니다.  
   
-## <a name="prerequisites"></a>필수 조건  
+## <a name="prerequisites"></a>사전 요구 사항  
  Visual Studio Tools for Unity를 사용하려면 다음이 필요합니다.  
   
 - Visual Studio Community, Professional, Premium 또는 Enterprise와 같은 확장을 지원하는 **Visual Studio** 버전. Visual Studio Community를 무료로 다운로드할 수 있습니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "74299820"
   
  또는 Unity를 처음 접하는 경우 기본 자습서를 사용하여 작은 항목부터 시작합니다. Unity 학습 페이지를 방문하여 시작에 사용할 수 있는 예제 프로젝트에 대한 자습서와 학습할 수 있는 단원을 찾아 Unity로 게임을 빌드합니다. Unity 학습 페이지에는 여러 다른 게임에 대한 따라하기 쉬운 자습서가 있습니다.  
   
- [Tutorials – Unity Learn page](https://learn.unity.com/tutorials)(자습서-Unity 학습 페이지)  
+ [자습서-Unity 학습 페이지](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Visual Studio Tools for Unity를 사용하여 Unity 편집기 구성  
  프로젝트에서 Visual Studio Tools for Unity를 사용할 수 있게 하려면 Visual Studio를 외부 스크립트 편집기로 설정하면 됩니다. Unity 편집기의 주 메뉴에서 **편집, 기본 설정**을 선택한 다음 **Unity 기본 설정** 대화 상자에서 **외부 도구**를 선택합니다. **외부 스크립트 편집기** 속성을 사용하려는 Visual Studio 버전으로 설정하고(이 Visual Studio 버전에 대한 Visual Studio Tools for Unity를 설치해야 함) **편집기 연결** 속성이 설정되어 있는지 확인합니다.  
@@ -77,7 +77,7 @@ ms.locfileid: "74299820"
   
  끝으로, **빌드 설정** 페이지를 통해 빌드 대상을 설정했는지와 **스크립트 디버깅** 을 사용하도록 설정했는지 확인합니다.  
   
- ![디버깅을 위해 Unity 빌드 설정을 구성 합니다.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![디버깅을 위해 Unity 빌드 설정을 구성합니다.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3 - Unity 편집기에서 Visual Studio 시작  
  Unity 5.2부터 Visual Studio를 시작하거나 Visual Studio Tools for Unity를 구성하는 데 더 이상 **Visual Studio Tools** 확장 메뉴가 필요하지 않습니다. 대신, Visual Studio가 외부 스크립트 편집기로 구성된 후 Unity 편집기에서 스크립트 파일을 선택하기만 하면 코드가 Visual Studio에서 열립니다.  
@@ -90,16 +90,16 @@ ms.locfileid: "74299820"
   
  또는 Unity를 처음 접하는 경우 기본 자습서를 사용하여 작은 항목부터 시작합니다. Unity 학습 페이지를 방문하여 시작에 사용할 수 있는 예제 프로젝트에 대한 자습서와 학습할 수 있는 단원을 찾아 Unity로 게임을 빌드합니다. Unity 학습 페이지에는 여러 다른 게임에 대한 따라하기 쉬운 자습서가 있습니다.  
   
- [Tutorials – Unity Learn page](https://learn.unity.com/tutorials)(자습서-Unity 학습 페이지)  
+ [자습서-Unity 학습 페이지](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Visual Studio Tools for Unity를 사용하여 Unity 편집기 구성  
  기존 Unity 프로젝트에서 시작하거나 프로젝트를 만들 때 Visual Studio Tools unitypackage를 가져오지 않은 경우 지금 unitypackage를 가져와야 합니다. Unity 편집기의 주 메뉴에서 **자산, 패키지 가져오기, Visual Studio 2015 Tools** 를 선택합니다(사용 중인 Visual Studio의 버전에 대한 옵션을 참조해야 합니다).  
   
- ![VSTU 패키지를 Unity 프로젝트로 가져옵니다.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
+ ![Unity 프로젝트로 VSTU 패키지를 가져옵니다.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
   
  끝으로, **빌드 설정** 페이지를 통해 빌드 대상을 설정했는지와 **스크립트 디버깅** 을 사용하도록 설정했는지 확인합니다.  
   
- ![디버깅을 위해 Unity 빌드 설정을 구성 합니다.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![디버깅을 위해 Unity 빌드 설정을 구성합니다.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3 - Unity 편집기에서 Visual Studio 시작  
  최종 단계는 Unity에서 Visual Studio를 시작하는 것입니다. 그러면 프로젝트에 대한 Visual Studio 솔루션이 만들어지고 Visual Studio에서 열립니다.  
@@ -109,7 +109,7 @@ ms.locfileid: "74299820"
  ![Visual Studio에서 unity 프로젝트를 엽니다.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
 ## <a name="next-steps"></a>다음 단계  
- Visual Studio에서 Unity 프로젝트를 작업하고 디버그하는 방법을 알아보려면 [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)을 참조하세요.  
+ Visual Studio에서 Unity 프로젝트를 작업하고 디버그하는 방법을 알아보려면 [Visual Studio Tools for Unity 사용](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Unity Homepage](https://unity.com/)(Unity 홈페이지)

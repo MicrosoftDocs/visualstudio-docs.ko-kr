@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769586"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 요소 (Visual Studio 프로젝트 템플릿)
@@ -50,7 +50,7 @@ ms.locfileid: "85769586"
 
 |요소|설명|
 |-------------|-----------------|
-|`Folder`|프로젝트에 추가할 폴더를 지정 합니다. `Folder`요소에는 자식 요소가 포함 될 수 있습니다 `Folder` .|
+|`Folder`|프로젝트에 추가할 폴더를 지정 합니다. `Folder` 요소에는 자식 요소가 포함 될 수 있습니다 `Folder` .|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|프로젝트에 추가할 파일을 지정 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
@@ -60,7 +60,7 @@ ms.locfileid: "85769586"
 |[프로젝트](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)의 선택적 자식 요소입니다.|
 
 ## <a name="remarks"></a>설명
- `Folder`은의 선택적 자식 요소입니다 `Project` .
+ `Folder` 은의 선택적 자식 요소입니다 `Project` .
 
  다음 방법 중 하나를 사용 하 여 프로젝트 항목을 템플릿에서 폴더로 구성할 수 있습니다.
 

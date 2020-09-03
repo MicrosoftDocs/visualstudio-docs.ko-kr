@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534461"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.
@@ -44,7 +44,7 @@ ms.locfileid: "85534461"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다. 가상 메서드에 대 한 호출을 제거 하려면 생성자를 다시 디자인 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 경우의 영향을 보여 줍니다. 테스트 응용 프로그램은 `DerivedType` 기본 클래스 ( `BadlyConstructedType` ) 생성자를 실행 하는 인스턴스를 만듭니다. `BadlyConstructedType`의 생성자가 가상 메서드를 잘못 호출 `DoSomething` 합니다. 출력에서을 표시 하 `DerivedType.DoSomething()` 고,를 실행 하 고,이를 위해 생성자가 실행 되기 전에 수행 `DerivedType` 합니다.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]

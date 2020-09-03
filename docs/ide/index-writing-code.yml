@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Visual Studio에서 코드 구성 및 편집
-summary: '코드 프로젝트 작업, 코드 편집기 기능 사용 및 일관된 코드 스타일 유지에 대해 알아봅니다.'
+summary: 코드 프로젝트 작업, 코드 편집기 기능 사용 및 일관된 코드 스타일 유지에 대해 알아봅니다.
 metadata:
   title: 코드 편집기 기능
   description: Visual Studio의 코드 편집 기능에 대해 알아봅니다.
@@ -10,48 +10,54 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/15/2019
+  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
+  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 03/18/2020
+  ms.locfileid: "74316439"
 landingContent:
-  - title: 프로젝트 열기 또는 만들기
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 새 프로젝트 만들기
-            url: create-new-project.md
-          - text: 리포지토리에서 프로젝트 열기
-            url: ../get-started/tutorial-open-project-from-repo.md
-      - linkListType: how-to-guide
-        links:
-          - text: 프로젝트 또는 솔루션 없이 Visual Studio 사용
-            url: develop-code-in-visual-studio-without-projects-or-solutions.md
-  - title: 편집 기능 사용
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: 코드 편집기 사용
-            url: writing-code-in-the-code-and-text-editor.md
-          - text: 코드 탐색
-            url: navigating-code.md
-          - text: 코드 생성 및 수정
-            url: code-generation-in-visual-studio.md
-          - text: 코드 완성을 위해 IntelliSense 사용
-            url: using-intellisense.md
-          - text: 코드 스타일 기본 설정 관리
-            url: code-styles-and-code-cleanup.md
-          - text: 코드 분석
-            url: ../code-quality/roslyn-analyzers-overview.md
-          - text: IntelliCode
-            url: /visualstudio/intellicode/intellicode-visual-studio
-  - title: 프로그래밍 언어 시작
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 'Visual Studio에서 C# 및 ASP.NET Core 시작'
-            url: tutorial-csharp-aspnet-core.md
-          - text: Visual Studio에서 C++ 콘솔 앱 만들기
-            url: /cpp/get-started/tutorial-console-cpp
-          - text: Visual Studio에서 Python 시작
-            url: quickstart-python.md
-          - text: Visual Basic을 사용하여 콘솔 앱 만들기
-            url: quickstart-visual-basic-console.md
-          - text: Node.js를 사용하여 웹앱 만들기
-            url: quickstart-nodejs.md
+- title: 프로젝트 열기 또는 만들기
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 새 프로젝트 만들기
+      url: create-new-project.md
+    - text: 리포지토리에서 프로젝트 열기
+      url: ../get-started/tutorial-open-project-from-repo.md
+  - linkListType: how-to-guide
+    links:
+    - text: 프로젝트 또는 솔루션 없이 Visual Studio 사용
+      url: develop-code-in-visual-studio-without-projects-or-solutions.md
+- title: 편집 기능 사용
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 코드 편집기 사용
+      url: writing-code-in-the-code-and-text-editor.md
+    - text: 코드 탐색
+      url: navigating-code.md
+    - text: 코드 생성 및 수정
+      url: code-generation-in-visual-studio.md
+    - text: 코드 완성을 위해 IntelliSense 사용
+      url: using-intellisense.md
+    - text: 코드 스타일 기본 설정 관리
+      url: code-styles-and-code-cleanup.md
+    - text: 코드 분석
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: IntelliCode
+      url: /visualstudio/intellicode/intellicode-visual-studio
+- title: 프로그래밍 언어 시작
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Visual Studio에서 C# 및 ASP.NET Core 시작
+      url: tutorial-csharp-aspnet-core.md
+    - text: Visual Studio에서 C++ 콘솔 앱 만들기
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Visual Studio에서 Python 시작
+      url: quickstart-python.md
+    - text: Visual Basic을 사용하여 콘솔 앱 만들기
+      url: quickstart-visual-basic-console.md
+    - text: Node.js를 사용하여 웹앱 만들기
+      url: quickstart-nodejs.md

@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: 관리자가 만료된 Visual Studio 구독을 처리하는 방법을 알아봅니다.
 ms.openlocfilehash: 50fffc186ab3135077418eb29f849918db664290
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232473"
 ---
 # <a name="expired-subscriptions"></a>만료된 구독

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851308"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ 코드 사용(클래스 디자이너)
@@ -41,11 +41,11 @@ ms.locfileid: "75851308"
 
 - 구조체
 
-- Enum
+- 열거형
 
 - 매크로(후처리된 매크로 뷰가 표시됨)
 
-- Typedef
+- 형식 정의
 
 > [!NOTE]
 > 이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)를 참조하세요.
@@ -56,7 +56,7 @@ ms.locfileid: "75851308"
  클래스 디자이너에서는 소스 파일의 위치를 추적하지 않습니다. 따라서 프로젝트 구조를 수정하거나 프로젝트의 소스 파일을 이동하면 특히 형식 정의, 기본 클래스 또는 형식 연결의 소스 형식에 대해 클래스 디자이너에서 해당 형식을 추적할 수 없게 됩니다. **클래스 디자이너에서 이 형식을 표시할 수 없습니다.** 와 같은 오류가 발생할 수 있습니다. 이러한 오류가 발생하면 수정되거나 위치가 변경된 소스 코드를 클래스 다이어그램으로 끌어서 다시 표시합니다.
 
 ### <a name="update-and-performance-issues"></a>업데이트 및 성능 문제
- Visual C++ 프로젝트의 경우 소스 파일의 변경 내용이 클래스 다이어그램에 나타나는 데는 30~60초가 소요될 수 있습니다. 이 시간 지연으로 인해 클래스 디자이너에서 **선택한 항목에서 형식을 찾을 수 없습니다.** 오류를 throw할 수도 있습니다. 이와 같은 오류가 발생하면 오류 메시지에서 **취소**를 클릭하고 클래스 뷰에 해당 코드 요소가 나타날 때까지 기다립니다. 그런 후에 클래스 디자이너에서 해당 형식이 표시될 수 있습니다.
+ Visual C++ 프로젝트의 경우 소스 파일의 변경 내용이 클래스 다이어그램에 나타나는 데는 30~60초가 소요될 수 있습니다. 이 시간 지연으로 인해 클래스 디자이너에서 **선택한 항목에서 형식을 찾을 수 없습니다**라는 오류를 throw할 수도 있습니다. 이와 같은 오류가 발생 하면 오류 메시지에서 **취소** 를 클릭 하 고 클래스 뷰에 코드 요소가 나타날 때까지 기다립니다. 그런 후에 클래스 디자이너에서 해당 형식이 표시될 수 있습니다.
 
  코드에서 변경한 내용으로 클래스 다이어그램이 업데이트되지 않으면 다이어그램을 닫았다가 다시 열어 보세요.
 
@@ -71,7 +71,7 @@ ms.locfileid: "75851308"
 
 - 형식은 #import 지시문을 사용하여 참조되는 라이브러리에 있습니다. 가능한 해결 방법은 생성된 코드(.tlh 파일)를 헤더 파일에 대한 #include 지시문에 수동으로 추가하는 것입니다.
 
-  형식 확인 문제의 경우 가장 발생하기 쉬운 오류는 **클래스 다이어그램 ‘\<element>’에서 하나 이상의 모양에 대한 코드를 찾을 수 없습니다.** 입니다. 이 오류 메시지가 반드시 코드에 오류가 있음을 나타내지 않습니다. 클래스 디자이너는 코드를 표시할 수 없습니다 것을 나타냅니다. 다음과 같은 방법을 시도해 보세요.
+  형식 확인 문제에 대해 가장 많이 발생 하는 오류는 **클래스 다이어그램 ' \<element> '에서 하나 이상의 모양에 대 한 코드를 찾을**수 없는 경우입니다. 이 오류 메시지가 반드시 코드에 오류가 있음을 나타내지 않습니다. 클래스 디자이너는 코드를 표시할 수 없습니다 것을 나타냅니다. 다음과 같은 방법을 시도해 보세요.
 
 - 해당 형식이 존재하는지 확인합니다. 실수로 주석으로 처리했거나 소스 코드를 삭제했는지 확인합니다.
 
@@ -84,7 +84,7 @@ ms.locfileid: "75851308"
 ### <a name="troubleshooting-other-error-messages"></a>기타 오류 메시지 문제 해결
  MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.
 
-## <a name="limitations"></a> C++ 코드 요소에 대한 제한 사항
+## <a name="limitations-for-c-code-elements"></a><a name="limitations"></a> C + + 코드 요소에 대 한 제한 사항
 
 - Visual C++ 프로젝트가 로드되면 클래스 디자이너는 읽기 전용 방식으로 작동합니다. 즉, 클래스 다이어그램을 변경할 수 있지만 클래스 다이어그램에서 변경한 내용을 소스 코드에 저장할 수는 없습니다.
 
@@ -107,4 +107,4 @@ ms.locfileid: "75851308"
 - 클래스 디자이너에서는 void 형식이거나 void 형식에서 파생된 형식을 표시할 수 없습니다.
 
 ## <a name="see-also"></a>관련 항목
- 클래스 및 [형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md) 클래스 및 [기타 형식 작업 (클래스 디자이너)](../ide/working-with-classes-and-other-types-class-designer.md) [클래스 다이어그램 작업 (클래스 디자이너) 클래스 다이어그램 작업](../ide/working-with-class-diagrams-class-designer.md) [(클래스 디자이너) 클래스 및 형식 디자인](../ide/designing-classes-and-types-class-designer.md) 클래스 디자이너 시각적 [ C++ 구조체](../ide/visual-cpp-structures-in-class-designer.md) 의 시각적 개체에 [ C++ ](../ide/visual-cpp-classes-in-class-designer.md) [클래스 디자이너 대 한 추가 정보](../ide/additional-information-about-class-designer-errors.md) 클래스 디자이너 시각적 [ C++ 형식](../ide/visual-cpp-typedefs-in-class-designer.md) 클래스 디자이너의 시각적 [ C++ 열거형](../ide/visual-cpp-enumerations-in-class-designer.md) 클래스 디자이너
+ 클래스 및 [형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md) 클래스 및 [기타 형식 작업 (클래스 디자이너) 클래스](../ide/working-with-classes-and-other-types-class-designer.md) [다이어그램 작업 (클래스 디자이너) 클래스 다이어그램 사용](../ide/working-with-class-diagrams-class-designer.md) (클래스 디자이너 [클래스 디자이너](../ide/additional-information-about-class-designer-errors.md) [) 클래스 및 형식 디자인](../ide/designing-classes-and-types-class-designer.md) Visual C++ 클래스 디자이너 Visual C++ [구조체](../ide/visual-cpp-structures-in-class-designer.md) 의 [클래스](../ide/visual-cpp-classes-in-class-designer.md) 클래스 디자이너 Visual C++ 클래스 디자이너 [의 Visual C++ 클래스 디자이너](../ide/visual-cpp-typedefs-in-class-designer.md) [열거형](../ide/visual-cpp-enumerations-in-class-designer.md)

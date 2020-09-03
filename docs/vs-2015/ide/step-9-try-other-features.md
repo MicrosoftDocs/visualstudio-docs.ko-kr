@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 379fc9c28b8d36f7bd606719a443b16108f0095d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299971"
 ---
 # <a name="step-9-try-other-features"></a>9단계: 기타 기능 사용
@@ -49,6 +49,6 @@ ms.locfileid: "74299971"
 
 - 어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](https://social.msdn.microsoft.com/Forums/en-US/home) 및 [Visual C# 포럼](https://social.msdn.microsoft.com/Forums/en-US/home)을 참조하세요.
 
-- 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(C# 기초: 완전 초보자를 위한 개발)를 참조하세요.
+- 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic 프로그래밍에 대 한 자세한 내용은 [Visual Basic 기본 사항: 절대 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조 하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(C# 기초: 완전 초보자를 위한 개발)를 참조하세요.
 
-- 이전 자습서 단계로 돌아가려면 [8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [8 단계: 플레이어의 추가를 확인 하는 메서드 추가](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)를 참조 하세요.

@@ -11,10 +11,10 @@ caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851246"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
@@ -26,9 +26,9 @@ ms.locfileid: "75851246"
 
  테스트 탐색기를 사용하여 테스트 메서드를 실행하는 경우 코드 검사는 선택 사항입니다. 결과 테이블에는 각 어셈블리, 클래스 및 메서드에서 실행되는 코드의 백분율이 표시됩니다. 또한 소스 편집기에는 테스트된 코드가 표시됩니다.
 
- ![색 지정을 사용 하 여 코드 검사 결과](../test/media/codecoverage1.png "CodeCoverage1")
+ ![강조 표시된 코드 검사 결과](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise
 
@@ -50,7 +50,7 @@ ms.locfileid: "75851246"
 >   관리되지 않은(네이티브) 코드를 사용하는 경우 디버그 빌드를 사용합니다.
 >   - 각 어셈블리에 대해 .pdb(기호) 파일을 생성하고 있는지 확인합니다.
 >
->   예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. 의 기본 클래스입니다. 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
+>   원하는 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조 하세요. . 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
 
 ## <a name="reporting-in-blocks-or-lines"></a>블록 또는 줄에 보고
  코드 검사는 *블록*으로 계산됩니다. 블록은 진입점 및 진출점이 정확히 하나씩인 코드입니다.  테스트 실행 중 프로그램의 제어 흐름이 블록을 통과할 경우 해당 블록은 검사된 것으로 계산됩니다. 블록이 사용된 횟수는 결과에 영향을 아무 영향을 미치지 않습니다.
@@ -68,11 +68,11 @@ ms.locfileid: "75851246"
 
 - **이전 결과 집합을 보려면** 드롭다운 메뉴에서 선택합니다. 이 메뉴에는 새 솔루션을 열 때 삭제되는 임시 목록이 표시됩니다.
 
-- **이전 세션의 결과를 보려면** **코드 검사 결과 가져오기**를 선택한 다음 솔루션에서 TestResults 폴더를 탐색하고 .coverage 파일을 가져옵니다.
+- **이전 세션의 결과를 보려면****코드 검사 결과 가져오기**를 선택한 다음 솔루션에서 TestResults 폴더를 탐색하고 .coverage 파일을 가져옵니다.
 
      .coverage 파일이 생성된 이후 소스 코드가 변경된 경우 검사 강조가 잘못될 수 있습니다.
 
-- **결과를 텍스트 형식으로 읽으려면** **코드 검사 결과 내보내기**를 선택합니다. 그러면 다른 도구로 처리하거나 메일로 쉽게 전송할 수 있는 읽기 가능한 .coveragexm 파일이 생성됩니다.
+- **결과를 텍스트 형식으로 읽으려면****코드 검사 결과 내보내기**를 선택합니다. 그러면 다른 도구로 처리하거나 메일로 쉽게 전송할 수 있는 읽기 가능한 .coveragexm 파일이 생성됩니다.
 
 - **결과를 다른 사람에게 전송하려면** .coverage 파일 또는 내보낸 .coveragexml 파일을 전송합니다. 그런 다음 수신자는 파일을 가져올 수 있습니다. 동일한 버전의 소스 코드가 있으면 검사 강조를 볼 수 있습니다.
 
@@ -96,7 +96,7 @@ ms.locfileid: "75851246"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>코드 검사 결과에서 요소 제외
  코드가 텍스트 템플릿에서 생성된 경우와 같이 검사 점수에서 코드의 특정 요소를 제외하려는 경우가 있습니다. `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 특성을 class, struct, method, property, property setter 또는 getter, event 코드 요소에 임의로 추가할 수 있습니다. 클래스를 제외할 경우 해당 파생 클래스는 제외되지 않습니다.
 
- 예를 들면 다음과 같습니다.:
+ 예:
 
 ```csharp
 
@@ -223,7 +223,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *sourcefilepath* `");`
+ `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
 - *ExclusionName*은 임의의 고유한 이름입니다.
 
@@ -256,11 +256,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     테스트 소스 정의가 두 개 이상일 경우 각각에 대해 이 단계를 반복합니다.
 
-   - <em>하지만 **실행 설정 파일 형식</em>* 이라는 필드는 없습니다.*
+   - <em>하지만 이름이 **실행 설정 파일</em>인 필드가 없습니다*. *
 
       **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄임표 단추 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자의 **Test Runner**에서 **Visual Studio Test Runner**를 선택합니다.
 
-   ![코드 검사에 대 한 빌드 정의 설정](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![코드 검사를 위한 빌드 정의 설정 중](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    빌드 실행 후 코드 검사 결과가 테스트 실행에 첨부되고 빌드 요약에 나타납니다.
 
@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      Windows의 **시작** 메뉴에서 **모든 프로그램**, **Microsoft Visual Studio**, **Visual Studio Tools**, **개발자 명령 프롬프트**를 차례로 선택합니다.
 
-2. 실행:
+2. 다음을 실행합니다.
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
@@ -283,5 +283,5 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ### <a name="guidance"></a>지침
  [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  코드 [검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md) 코드 [검사](../test/troubleshooting-code-coverage.md) [단위 테스트 코드 검사 단위 테스트](../test/unit-test-your-code.md)

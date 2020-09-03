@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238363"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
@@ -319,7 +319,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 따라서를 사용 하 여 새 요소를 만드는 것이 좋습니다 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> . 자세한 내용은 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

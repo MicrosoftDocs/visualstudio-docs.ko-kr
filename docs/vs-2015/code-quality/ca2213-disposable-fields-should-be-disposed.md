@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534578"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: 삭제 가능한 필드는 삭제해야 합니다.
@@ -44,15 +44,15 @@ ms.locfileid: "85534578"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  필드에서 보유 하는 리소스를 해제 하는 것을 담당 하지 않는 경우 또는에 대 한 호출이 <xref:System.IDisposable.Dispose%2A> 규칙 검사 보다 깊은 호출 수준에서 발생 하는 경우에는이 규칙에서 경고를 표시 하지 않아도 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `TypeA` <xref:System.IDisposable> 이전 설명에서를 구현 하는 형식을 보여 줍니다 `FT` .
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 필드 `TypeB` `aFieldOfADisposableType` `F` `TypeA` 에 대해를 호출 하지 않고 이전 설명의 필드를 삭제 가능한 형식 ()으로 선언 하 여이 규칙을 위반 하는 형식을 보여 줍니다 <xref:System.IDisposable.Dispose%2A> . `TypeB``T`이전 논의의에 해당 합니다.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

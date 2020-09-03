@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9e8b53c5bd4d6045d7582c24be865ae216f1114
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851082"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 다중 대상 지정 개요
@@ -27,7 +27,7 @@ ms.locfileid: "75851082"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전에서는 애플리케이션에 필요한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 지정할 수 있습니다. 따라서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전을 사용해서 이전 버전에서 시작한 프로젝트 개발을 계속하려는 경우 프레임워크 대상을 변경할 필요가 없습니다. 여러 가지 버전의 프레임워크를 대상으로 지정하는 프로젝트가 포함된 솔루션을 만들 수도 있습니다. 프레임워크 대상 지정을 통해 애플리케이션에서 지정된 버전의 프레임워크에서 제공되는 기능만 사용하도록 할 수 있습니다.
 
 > [!TIP]
-> 다른 플랫폼에 대한 애플리케이션을 대상으로 지정할 수도 있습니다. 자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.
+> 다른 플랫폼에 대한 애플리케이션을 대상으로 지정할 수도 있습니다. 자세한 내용은 [다중 대상](../msbuild/msbuild-multitargeting-overview.md) 을 참조 하세요.
 
 ## <a name="framework-targeting-features"></a>프레임워크 대상 지정 기능
  프레임워크 대상 지정에는 다음 기능이 포함됩니다.
@@ -60,7 +60,7 @@ ms.locfileid: "75851082"
 > 프레임워크 대상 지정을 수행해도 애플리케이션이 제대로 실행되지 않을 수 있습니다. 애플리케이션을 테스트하여 대상 버전에 대해 실행되는지 확인해야 합니다. .NET Framework 2.0 이전의 프레임워크 버전은 대상으로 지정할 수 없습니다.
 
 ## <a name="selecting-a-target-framework-version"></a>대상 프레임워크 버전 선택
- 프로젝트를 만들 때 **새 프로젝트** 대화 상자에서 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 선택합니다. 사용 가능한 프로젝트 템플릿 목록은 선택에 따라 필터링됩니다. 기존 프로젝트의 경우 [프로젝트 속성] 대화 상자에서 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 변경할 수 있습니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ 프로젝트를 만들 때 **새 프로젝트** 대화 상자에서 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 선택합니다. 사용 가능한 프로젝트 템플릿 목록은 선택에 따라 필터링됩니다. 기존 프로젝트의 경우 [프로젝트 속성] 대화 상자에서 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 변경할 수 있습니다. 자세한 내용은 [방법: 한 버전의 .NET Framework을 대상으로 하는 방법](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조 하세요.
 
 > [!NOTE]
 > Visual Studio의 Express 버전에서는 **새 프로젝트** 대화 상자에서 대상 프레임워크를 설정할 수 없습니다.
@@ -71,7 +71,7 @@ ms.locfileid: "75851082"
 > [!NOTE]
 > .NET Framework Client Profile은 라이브러리 및 기능의 제한된 집합을 제공하는 .NET Framework의 하위 집합입니다. Client Profile에 대한 자세한 내용은 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)을 참조하세요.
 
- **참조 추가** 대화 상자에서는 실수로 프로젝트에 추가될 수 없도록 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에 관련이 없는 시스템 어셈블리가 사용되지 않습니다. 시스템 어셈블리는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에 포함된 .dll 파일입니다. 대상 버전 이후의 프레임워크 버전에 속한 참조는 확인되지 않고 이런 참조에 따라 결정되는 컨트롤을 추가할 수 없습니다. 해당 참조를 사용하도록 설정하려면 프로젝트의 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 대상을 참조가 포함된 대상으로 다시 설정합니다.  자세한 내용은 [프로젝트 디자이너 소개](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)를 참조하세요.
+ **참조 추가** 대화 상자에서는 실수로 프로젝트에 추가될 수 없도록 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에 관련이 없는 시스템 어셈블리가 사용되지 않습니다. 시스템 어셈블리는 버전에 포함 된 .dll 파일입니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] . 대상 버전 보다 이후 버전의 프레임 워크 버전에 속하는 참조는 확인 되지 않으며 이러한 참조에 종속 된 컨트롤은 추가할 수 없습니다. 해당 참조를 사용하도록 설정하려면 프로젝트의 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 대상을 참조가 포함된 대상으로 다시 설정합니다.  자세한 내용은 [프로젝트 디자이너 소개](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)를 참조하세요.
 
  어셈블리 참조에 대한 자세한 내용은 [디자인 타임에 어셈블리 확인](../msbuild/resolving-assemblies-at-design-time.md)을 참조하세요.
 
@@ -79,6 +79,6 @@ ms.locfileid: "75851082"
  .NET Framework 3.5 이상을 대상으로 지정하면 System.Core에 대한 참조 및 System.Linq에 대한 프로젝트 수준 가져오기(Visual Basic에서만)가 자동으로 추가됩니다. LINQ 기능을 사용하려면 Option Infer도 켜야 합니다(Visual Basic에서만). 대상을 이전 .NET Framework 버전으로 변경하면 참조 및 가져오기가 자동으로 제거됩니다. 자세한 내용은 [방법: LINQ 프로젝트 만들기](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)를 참조하세요.
 
 ## <a name="see-also"></a>관련 항목
-[멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)
-[ASP.NET 웹 프로젝트용 .NET Framework 멀티 타기팅](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
-[플랫폼 호환성 및 시스템 요구 사항](/visualstudio/productinfo/vs2015-compatibility-vs)
+[다중 대상](../msbuild/msbuild-multitargeting-overview.md) 
+ [ASP.NET 웹 프로젝트](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) 
+ 의 .NET Framework 다중 대상 지정 [플랫폼 호환성 및 시스템 요구 사항](/visualstudio/productinfo/vs2015-compatibility-vs)

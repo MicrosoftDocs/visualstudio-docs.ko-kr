@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770028"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 요소 (Visual Studio 프로젝트 템플릿)
@@ -65,7 +65,7 @@ ms.locfileid: "85770028"
 
  요소에 지정 된 값은 `Location` 기본 프로젝트 시스템에서 지 원하는 경우에만 대화 상자에서 적용 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.
 
 ```

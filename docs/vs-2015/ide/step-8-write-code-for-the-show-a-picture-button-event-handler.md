@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f5d58533f6f2207d1b07883ab741eb900cdfbbf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851120"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 그림 단추 이벤트 처리기 표시를 위한 코드 작성
@@ -27,7 +27,7 @@ ms.locfileid: "75851120"
 
   IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있습니다. 코드 입력을 시작하면 입력한 부분 단어에 대한 완성 단어를 제시하는 상자가 IDE에서 열립니다. IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사용자가 마지막으로 선택한 항목으로 자동으로 이동합니다. 위쪽 또는 아래쪽 화살표를 사용하여 목록에서 이동하거나 문자를 계속 입력하여 선택 범위를 좁힐 수 있습니다. 원하는 선택 항목이 있으면 Tab 키를 선택해서 항목을 선택합니다. 원하는 항목이 없는 경우 제시되는 항목을 무시할 수도 있습니다.
 
-  ![비디오에 연결](../data-tools/media/playvideo.gif "동영상 재생") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 4](https://msdn.microsoft.com/vbasic/gg315355.aspx) 또는 [자습서 1: 비디오 4에서 C# 사진 뷰어 만들기](https://msdn.microsoft.com/vcsharp/gg278412.aspx)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+  ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 4](https://msdn.microsoft.com/vbasic/gg315355.aspx) 또는 [자습서 1: c #에서 사진 뷰어 만들기-비디오 4](https://msdn.microsoft.com/vcsharp/gg278412.aspx)를 참조 하십시오. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>그림 표시 단추 이벤트 처리기를 위한 코드를 작성하려면
 
@@ -35,9 +35,9 @@ ms.locfileid: "75851120"
 
 2. 두 중괄호 { } 사이의 빈 줄에 `i`를 입력합니다. (Visual Basic에서 Private Sub 사이에 빈 줄을 입력 합니다. 및 End Sub) 다음 그림과 같이 **IntelliSense** 창이 열립니다.
 
-     ![시각적 코드를 사용&#35; 하는 visual C 코드 intellisense를 사용 하는 intellisense](../ide/media/express-ifintellisense.png "Express_IfIntellisense") C#
+     ![IntelliSense를 사용 하 여 Visual C&#35; 코드](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense를 사용 하 여 Visual c # 코드
 
-3. **IntelliSense** 창에 단어 **if**가 강조 표시됩니다. (그렇지 않은 경우 소문자 `f`입력 하면 됩니다.) **IntelliSense** 창 옆에 작은 *도구 설명* 상자가 표시 되는 방법에 대해 설명 하 고 **if 문에 대 한 코드 조각**입니다. Visual Basic 도구 설명에도 코드 조각이 포함 되어 있지만 약간 다른 표현을 포함 하 고 있습니다. 해당 코드 조각을 사용 하려면 TAB 키를 선택 하 여 **if** 를 코드에 삽입 합니다. 그런 다음 **if** 코드 조각을 사용하려면 Tab 키를 다시 선택합니다. 다른 곳을 선택하여 **IntelliSense** 창이 사라진 경우 백스페이스로 **i**를 지우고 다시 입력하면 **IntelliSense** 창이 다시 열립니다.
+3. **IntelliSense** 창에 단어 **if**가 강조 표시됩니다. (그렇지 않은 경우 소문자를 입력 하면이 `f` 됩니다.) **IntelliSense** 창 옆에 작은 *도구 설명* 상자가 표시 되는 방법에 대해 설명 하 고 **if 문에 대 한 코드 조각**입니다. Visual Basic 도구 설명에도 코드 조각이 포함 되어 있지만 약간 다른 표현을 포함 하 고 있습니다. 해당 코드 조각을 사용 하려면 TAB 키를 선택 하 여 **if** 를 코드에 삽입 합니다. 그런 다음 **if** 코드 조각을 사용하려면 Tab 키를 다시 선택합니다. 다른 곳을 선택하여 **IntelliSense** 창이 사라진 경우 백스페이스로 **i**를 지우고 다시 입력하면 **IntelliSense** 창이 다시 열립니다.
 
      ![Visual C&#35; 코드](../ide/media/express-highlighttrue.png "Express_HighlightTrue") Visual C# 코드
 
@@ -49,7 +49,7 @@ ms.locfileid: "75851120"
 
          `OpenFileDialog`에 대한 자세한 내용은 [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)를 참조하세요.
 
-    3. 마침표 (`.`)를 입력 합니다. 많은 프로그래머는이 점을 호출 합니다. **OpenFileDialog1**바로 뒤에 점을 입력 했으므로 **IntelliSense** 창이 열리고 모든 **OpenFileDialog** 구성 요소의 속성 및 메서드가 함께 채워집니다. 이 속성은 Windows Forms 디자이너에서 선택할 경우 **속성** 창에 표시되는 것과 같습니다. 또한 구성 요소에 대화 상자 열기와 같은 작업을 지시할 수 있는 메서드를 선택할 수도 있습니다.
+    3. 마침표 ()를 입력 `.` 합니다. 많은 프로그래머는이 점을 호출 합니다. **OpenFileDialog1**바로 뒤에 점을 입력 했으므로 **IntelliSense** 창이 열리고 모든 **OpenFileDialog** 구성 요소의 속성 및 메서드가 함께 채워집니다. 이러한 속성은 Windows Forms 디자이너에서 선택할 때 **속성** 창에 표시 되는 속성과 동일 합니다. 또한 구성 요소에 대화 상자 열기와 같은 작업을 지시할 수 있는 메서드를 선택할 수도 있습니다.
 
         > [!NOTE]
         > **IntelliSense** 창에는 속성과 메서드가 모두 표시될 수 있습니다. 표시되는 항목을 확인하려면 **IntelliSense** 창의 각 항목 왼쪽에 있는 아이콘을 봅니다. 각 메서드 옆에는 벽돌 그림이, 각 속성 옆에는 렌치(또는 스패너) 그림이 표시됩니다. 또한 각 이벤트 옆에는 번개 모양 아이콘이 표시됩니다. 이러한 그림은 다음과 같습니다.
@@ -60,7 +60,7 @@ ms.locfileid: "75851120"
 
          ![이벤트 아이콘](../ide/media/express-iconevent.png "Express_IconEvent") 이벤트 아이콘
 
-    4. `ShowDialog` 입력을 시작합니다(IntelliSense에서 대문자 표시는 중요하지 않음). `ShowDialog()` 메서드에서 **파일 열기** 대화 상자를 표시합니다. 창에서 **ShowDialog**가 강조 표시된 후 Tab 키를 선택합니다. 또한 “ShowDialog”를 강조 표시하고 F1 키를 선택하여 도움말을 표시할 수도 있습니다.
+    4. `ShowDialog` 입력을 시작합니다(IntelliSense에서 대문자 표시는 중요하지 않음). `ShowDialog()` 메서드에서 **파일 열기** 대화 상자를 표시합니다. 창에 **ShowDialog**가 강조 표시 된 후 TAB 키를 선택 합니다. 또한 “ShowDialog”를 강조 표시하고 F1 키를 선택하여 도움말을 표시할 수도 있습니다.
 
          `ShowDialog()` 메서드에 대한 자세한 내용은 [ShowDialog Method](https://msdn.microsoft.com/library/c7ykbedk.aspx)(ShowDialog 메서드)를 참조하세요.
 
@@ -76,7 +76,7 @@ ms.locfileid: "75851120"
         > [!NOTE]
         > 메서드를 호출하기 위한 코드를 작성할 때 값이 반환되는 경우가 있습니다. 이 경우 **OpenFileDialog** 구성 요소의 `ShowDialog()` 메서드는 DialogResult 값을 반환합니다. DialogResult는 대화 상자에서 수행된 작업을 알려 주는 특수 값입니다. **OpenFileDialog** 구성 요소에서 사용자는 **확인** 또는 **취소**를 선택할 수 있으므로 `ShowDialog()` 메서드는 DialogResult.OK 또는 DialogResult.Cancel을 반환합니다.
 
-    8. 점을 입력하여 DialogResult 값 **IntelliSense** 창을 엽니다. 문자 `O`를 입력하고 Tab 키를 선택하여 **OK**를 삽입합니다.
+    8. 점을 입력하여 DialogResult 값 **IntelliSense** 창을 엽니다. 문자를 입력 하 `O` 고 TAB 키를 선택 하 여 **OK**를 삽입 합니다.
 
          `DialogResult`에 대한 자세한 내용은 [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)를 참조하세요.
 
@@ -96,6 +96,6 @@ ms.locfileid: "75851120"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [9단계: 코드 검토, 주석 처리 및 테스트](../ide/step-9-review-comment-and-test-your-code.md)를 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [9 단계: 코드 검토, 주석 처리 및 테스트](../ide/step-9-review-comment-and-test-your-code.md)를 참조 하세요.
 
-- 이전 자습서 단계로 돌아가려면 [7단계: 폼에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [7 단계: 폼에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조 하세요.

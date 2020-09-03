@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc04cbc6d46d8dc47a08d06c8c5949bb5d9107f3
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79431367"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 및 FxCop 분석기에 대한 질문과 대답
@@ -31,7 +31,7 @@ FxCop 분석기는 .NET Compiler Platform("Roslyn")을 기반으로 합니다. �
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>코드 분석 실행 명령은 FxCop 분석기를 실행하나요?
 
-Visual Studio 2019 16.5 릴리스 이전에**실행 코드 분석** **분석을** > 선택하면 레거시 분석이 실행됩니다. Visual Studio 2019 16.5부터 **실행 코드 분석** 메뉴 옵션은 선택한 프로젝트 또는 솔루션에 대해 Roslyn 기반 분석기를 실행합니다. Roslyn 기반 FxCop 분석기를 설치한 경우 실행됩니다. 자세한 내용은 [관리 코드에 대해 코드 분석을 수동으로 실행하는 방법을](how-to-run-code-analysis-manually-for-managed-code.md)참조하십시오.
+Visual Studio 2019 16.5 릴리스 이전에는 **분석**  >  **실행 코드 분석**을 선택 하면 레거시 분석이 실행 됩니다. Visual Studio 2019 16.5를 시작 하면 **코드 분석 실행** 메뉴 옵션이 선택한 프로젝트 또는 솔루션에 대 한 Roslyn 기반 분석기를 실행 합니다. Roslyn 기반 FxCop 분석기를 설치한 경우에도 실행 됩니다. 자세한 내용은 [방법: 관리 코드에 대해 수동으로 코드 분석 실행](how-to-run-code-analysis-manually-for-managed-code.md)을 참조 하세요.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 프로젝트 속성은 분석기를 실행하나요?
 
@@ -43,21 +43,21 @@ FxCop 분석기를 실행하려면 먼저 [NuGet 패키지를 설치합니다](i
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>FxCop 분석기 NuGet 패키지를 설치한 후에도 경고 CA0507이 표시됨
 
-FxCop 분석기를 설치했지만 CA0507 **""실행 코드 분석"이 빌드 중에 실행되는 FxCop 분석기보다 더 이상 사용되지 않는다는**경고를 계속 받는 경우 [프로젝트 파일의](../ide/solutions-and-projects-in-visual-studio.md#project-file) **RunCodeAnalysis** msbuild 속성을 **false로**설정해야 할 수 있습니다. 그렇지 않으면 각 빌드 후에 레거시 분석이 실행됩니다.
+FxCop 분석기를 설치 했지만 경고가 계속 표시 되는 경우 **"" 코드 분석 실행 "은 빌드 중에 실행 되는 FxCop 분석기를 위해 더 이상 사용 되지 않으므로** [프로젝트 파일](../ide/solutions-and-projects-in-visual-studio.md#project-file) 의 **runcodeanalysis** msbuild 속성을 **false**로 설정 해야 할 수 있습니다. 그렇지 않으면 각 빌드 후에 레거시 분석이 실행 됩니다.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>FxCop 분석기로 이식된 규칙은 무엇입니까?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>FxCop 분석기로 이식 된 규칙은 무엇 인가요?
 
-[FxCop 분석기로](install-fxcop-analyzers.md)이식된 레거시 분석 규칙에 대한 자세한 내용은 [Fxcop 규칙 포트 상태를](fxcop-rule-port-status.md)참조하십시오.
+[Fxcop 분석기](install-fxcop-analyzers.md)로 이식 된 레거시 분석 규칙에 대 한 자세한 내용은 [fxcop 규칙 포트 상태](fxcop-rule-port-status.md)를 참조 하세요.
 
-## <a name="code-analysis-warnings-are-treated-as-errors"></a>코드 분석 경고는 오류로 처리됩니다.
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>코드 분석 경고는 오류로 처리 됩니다.
 
-프로젝트에서 빌드 옵션을 사용하여 경고를 오류로 처리하는 경우 FxCop 분석기 경고가 오류로 나타날 수 있습니다. 코드 분석 경고가 오류로 처리되지 않도록 하려면 [코드 분석 FAQ의](../code-quality/analyzers-faq.md#treat-warnings-as-errors)단계를 따릅니다.
+프로젝트에서 빌드 옵션을 사용 하 여 경고를 오류로 처리 하는 경우 FxCop 분석기 경고가 오류로 나타날 수 있습니다. 코드 분석 경고가 오류로 처리 되지 않도록 하려면 [코드 분석 FAQ](../code-quality/analyzers-faq.md#treat-warnings-as-errors)의 단계를 따르세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
 - [FxCop 분석기로 마이그레이션](migrate-from-legacy-analysis-to-fxcop-analyzers.md)

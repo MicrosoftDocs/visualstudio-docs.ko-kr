@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534149"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
@@ -125,7 +125,7 @@ ms.locfileid: "85534149"
 
    위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
 
-   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. `"C#"`은 기본 버전입니다.
+   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>디자인 타임 T4 텍스트 템플릿 디버그
  텍스트 템플릿을 디버그하려면
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > 텍스트 템플릿은 자체 앱 도메인에서 실행되며 마샬링을 통해 서비스에 액세스합니다. 이 경우에는 GetCOMService()가 GetService()보다 안정적입니다.
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>자동으로 코드 다시 생성
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> 자동으로 코드 다시 생성
  일반적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션의 여러 파일은 입력 모델 하나를 사용하여 생성됩니다. 각 파일은 자체 템플릿에서 생성되지만 모든 템플릿은 같은 모델을 참조합니다.
 
  소스 모델이 변경되면 솔루션에서 모든 템플릿을 다시 실행해야 합니다. 이 작업을 수동으로 수행 하려면 **빌드** 메뉴에서 **모든 템플릿 변환** 을 선택 합니다.
@@ -320,7 +320,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>기존 파일을 템플릿으로 변환
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> 기존 파일을 템플릿으로 변환
  템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 파일 등의 프로토타입으로 일반 파일을 만든 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 다음, 결과 파일을 변경 하는 생성 코드를 점차적으로 도입 합니다.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
@@ -333,7 +333,7 @@ Warning("A warning message");
 
 4. **.Tt** 파일의 다음 속성을 확인 합니다.
 
-    |속성|Value|
+    |속성|값|
     |-|-|
     |**사용자 지정 도구 =**|**TextTemplatingFileGenerator**|
     |**빌드 작업 =**|**없음**|
@@ -370,5 +370,5 @@ Warning("A warning message");
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [T4 텍스트 템플릿 작성 지침](../modeling/guidelines-for-writing-t4-text-templates.md)

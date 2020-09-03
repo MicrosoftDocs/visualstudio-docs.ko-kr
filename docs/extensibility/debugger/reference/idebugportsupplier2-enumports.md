@@ -1,5 +1,5 @@
 ---
-title: 아이디버그포트공급업체2:에넘포트 | 마이크로 소프트 문서
+title: 'IDebugPortSupplier2:: EnumPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 657d42647cd6c9ffdaa410c21522a5ed70807019
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724678"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
-포트 공급자가 제공한 모든 포트 목록을 검색합니다.
+포트 공급자가 제공 하는 모든 포트의 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ int EnumPorts( 
 
 ## <a name="parameters"></a>매개 변수
 `ppEnum`\
-【아웃】 제공된 포트 목록을 포함하는 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) 개체를 반환합니다.
+제한이 제공 된 포트 목록을 포함 하는 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

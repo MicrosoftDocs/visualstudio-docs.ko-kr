@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f05e91c13b1a9c52b5afad6942e5847643aa9490
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851558"
 ---
 # <a name="step-3-set-your-form-properties"></a>3단계: 폼 속성 설정
@@ -21,7 +21,7 @@ ms.locfileid: "75851558"
 
 이제 **속성** 창을 사용하여 폼의 모양을 변경합니다.
 
- ![비디오에 연결](../data-tools/media/playvideo.gif "동영상 재생") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) 또는 [자습서 1: 비디오 1에서 C# 사진 뷰어 만들기](https://msdn.microsoft.com/vcsharp/gg278409.aspx)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) 또는 [자습서 1: c #에서 사진 뷰어 만들기-비디오 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx)을 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-set-your-form-properties"></a>폼 속성을 설정하려면
 

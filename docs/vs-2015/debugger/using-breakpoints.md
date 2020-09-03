@@ -42,10 +42,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbe2ecf89f94cc75ff9036285ae9acbf9cf3b657
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534500"
 ---
 # <a name="using-breakpoints"></a>중단점 사용
@@ -90,7 +90,7 @@ ms.locfileid: "85534500"
   
 2. 실행을 중단할 명령에서 왼쪽 여백을 클릭하거나 명령에 커서를 설정하고 **F9**키를 누릅니다.  
   
-## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>데이터 중단점 설정 (네이티브 c + +에만 해당)  
+## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> 데이터 중단점 설정 (네이티브 c + +에만 해당)  
  데이터 중단점은 지정된 메모리 주소에 저장된 값이 변경되면 실행을 중단합니다. 값을 읽기만 하고 변경하지는 않을 때는 실행이 중단되지 않습니다. 데이터 중단점을 설정하려면 디버거가 중단 모드여야 합니다.  
   
 1. 애플리케이션 디버그를 시작하고 중단점에 도달할 때까지 대기합니다. **디버그** 메뉴에서 **새 중단점 / 데이터 중단점** 을 선택합니다(또는 **중단점** 창을 열고 **새로 만들기 / 데이터 중단점**선택).  
@@ -192,7 +192,7 @@ ms.locfileid: "85534500"
   
  ![중단점 적중 횟수](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
-## <a name="filter"></a>필터  
+## <a name="filter"></a>Assert  
  지정된 디바이스에서만 발생하거나 지정된 프로세스 및 스레드에서만 발생하도록 중단점을 제한할 수 있습니다.  
   
  **중단점 설정**창에서 조건을 **필터**로 설정합니다. 다음 식 중 하나 이상을 입력합니다.  
@@ -209,7 +209,7 @@ ms.locfileid: "85534500"
   
   문자열 값은 큰따옴표로 묶습니다. `&` (AND), `||` (OR), `!` (NOT), 괄호를 사용하여 절을 결합할 수 있습니다.  
   
-## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>중단점 작업 및 추적점  
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 중단점 작업 및 추적점  
  추적점은 출력 창에 메시지를 인쇄하는 중단점입니다. 추적점은 프로그래밍 언어의 임시 추적 문처럼 작동할 수 있습니다.  
   
  **중단점 설정** 창에서 **작업** 상자를 선택합니다. **작업** 그룹에서 **출력 창에 메시지 기록** 을 선택합니다. **테스트입니다**와 같은 일반 문자열을 인쇄할 수 있습니다. 변수의 값 또는 식을 포함하려면 중괄호로 묶습니다.  
@@ -252,5 +252,5 @@ ms.locfileid: "85534500"
 ### <a name="breakpoints-dont-work-in-a-dll"></a>중단점이 DLL에서 작동하지 않는 경우  
  코드가 속한 모듈에 대한 디버그 정보가 디버거에 로드되지 않았으면 소스 파일에서 중단점을 설정할 수 없습니다. 이러한 문제의 증상으로 **중단점을 설정하지 않습니다**와 같은 메시지가 나타날 수 있습니다. 중단점 위치에 경고 중단점 문자 모양이 표시됩니다. 하지만 이러한 경고 중단점은 코드가 로드될 때 실제 중단점이 됩니다. 기호를 로드하는 방법에 대한 자세한 내용은 [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)

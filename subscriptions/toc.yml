@@ -1,0 +1,196 @@
+- name: Visual Studio 구독
+  href: index.yml
+- name: What's New
+  href: whats-new-in-subscriptions.md
+- name: 알림 신청
+  items:
+    - name: 구독 구입
+      items:
+        - name: Retail
+          href: buy-activate-retail.md
+        - name: 클라우드
+          items:
+            - name: 개요
+              href: vscloud-overview.md
+            - name: 청구 FAQ
+              href: vscloud-billing-faq.md
+            - name: CSP 구입
+              href: vscloud-csp.md
+        - name: GitHub Enterprise가 포함된 Visual Studio
+          href: access-github.md
+        - name: Microsoft 파트너 네트워크
+          items:
+            - name: 파트너를 위한 구독
+              href: program-mpn.md
+            - name: MPN에 대한 구독 관리
+              href: manage-mpn-subscriptions.md
+        - name: Microsoft for Startups
+          href: program-startups.md
+    - name: 로그인
+      items:
+        - name: Microsoft 계정으로 로그인
+          href: sign-in-msa.md
+        - name: 회사 또는 학교 계정으로 로그인
+          href: sign-in-work.md
+        - name: GitHub로 로그인
+          href: sign-in-github.md
+        - name: 연결된 ID
+          href: use-connected-identities.md
+        - name: 대체 ID
+          href: vs-alternate-identity.md
+        - name: 로그인 문제
+          href: sign-in-issues.md
+        - name: 구독자 데이터 익명화
+          href: anonymization.md
+    - name: 구독 포털 개요
+      href: using-the-subscriber-portal.md
+    - name: 구독 관리
+      href: manage-vs-subscriptions.md
+    - name: 구독 관리자에게 문의
+      href: contact-my-admin.md
+    - name: 이점
+      items:
+        - name: 도구
+          items:
+            - name: Azure DevTest 개별 크레딧
+              href: vs-azure.md
+            - name: Azure DevOps
+              href: vs-azure-devops.md
+            - name: Azure DevTest 종량제
+              href: vs-azure-payg.md
+            - name: Azure EA DevTest
+              href: azure-ea-devtest.md
+            - name: CAST Highlight
+              href: vs-cast.md
+            - name: CloudPilot
+              href: vs-cloudpilot.md
+            - name: 엔터프라이즈용 Microsoft 365 앱
+              href: microsoft-365-apps-for-enterprise.md
+            - name: Microsoft 365 개발자
+              href: vs-m365.md
+            - name: Parasoft
+              href: vs-parasoft.md
+            - name: Power BI Pro
+              href: vs-pbi.md
+            - name: Visual Studio App Center
+              href: vs-visual-studio-app-center.md
+            - name: Visual Studio IDE
+              href: vs-ide-benefit.md
+            - name: WhiteSource Bolt
+              href: vs-whitesource.md
+            - name: Windows 개발자 계정
+              href: vs-windows-dev.md
+            - name: Windows Virtual Desktop
+              href: vs-windows-virtual-desktop.md
+        - name: 전문적인 개발
+          items:
+            - name: CODE Magazine
+              href: vs-code-magazine.md
+            - name: DataCamp
+              href: vs-datacamp.md
+            - name: LinkedIn Learning
+              href: vs-linkedin-learning.md
+            - name: Pluralsight
+              href: vs-pluralsight.md
+        - name: 지원
+          items:
+            - name: Azure 커뮤니티
+              href: vs-azure-community.md
+            - name: 컨시어지 지원
+              href: vs-concierge-chat.md
+            - name: 기술 지원
+              href: vs-tech-support.md
+- name: 소프트웨어 및 키
+  items:
+    - name: 소프트웨어 다운로드
+      items:
+        - name: 제품 가용성
+          href: product-availability.md
+        - name: 소프트웨어 다운로드
+          href: download-software.md
+    - name: 사용 가능한 소프트웨어 다운로드 목록
+      href: software-download-list.md
+    - name: 제품 키
+      items:
+        - name: 제품 키 개요
+          href: product-keys.md
+        - name: 키 찾기 및 클레임
+          href: find-keys.md
+        - name: 인터넷 데모
+          href: internet-demos.md
+- name: 관리자
+  items:
+    - name: 관리자 책임
+      items:
+        - name: 관리자 책임
+          href: admin-responsibilities.md
+        - name: 사전 프로덕션 인벤토리
+          href: admin-inventory.md
+        - name: 대규모 팀 및 외부 계약업체 관리
+          href: manage-teams.md
+        - name: 사용자 할당 추적 및 주문 처리
+          href: assignments-orders.md
+    - name: 관리 포털 액세스
+      items:
+        - name: 볼륨 라이선스
+          href: volume-license.md
+        - name: MPSA
+          href: mpsa.md
+        - name: 클라우드 구독
+          href: cloud-admin.md
+        - name: 고객을 위해 관리하는 파트너
+          href: open-migration.md
+        - name: '비디오 자습서: 관리 포털 액세스'
+          href: 'https://youtu.be/plSu6fpi7UI'
+    - name: 관리 포털 사용
+      items:
+        - name: 슈퍼 관리자 및 관리자
+          href: admin-roles.md
+        - name: 계약 기본 설정 지정
+          href: admin-prefs.md
+        - name: 개요
+          href: using-admin-portal.md
+        - name: 월간 구독 추가
+          href: add-monthly-subs.md
+        - name: 구독 할당
+          items:
+            - name: 단일 사용자 추가
+              href: assign-license.md
+            - name: 여러 사용자 추가
+              href: assign-license-bulk.md
+            - name: 특정 구독 할당
+              href: assign-guid.md
+        - name: 구독 편집
+          href: edit-license.md
+        - name: 구독 삭제
+          href: delete-license.md
+        - name: 구독 검색
+          href: search-license.md
+        - name: 구독 내보내기
+          href: exporting-subscriptions.md
+        - name: 초과 할당
+          href: handle-overclaimed-license.md
+        - name: 최대 사용량
+          href: maximum-usage.md
+        - name: 만료된 구독
+          href: handle-expired-license.md
+        - name: '구독자 로그인 시나리오  '
+          href: aliasing.md
+        - name: 개인 전자 메일 로그인을 사용하는 구독자
+          href: personal-email-sign-ins.md
+        - name: GitHub Enterprise가 포함된 Visual Studio 관리
+          href: assign-github.md
+- name: 리소스
+  items:
+    - name: Visual Studio 라이선스 백서
+      href: 'https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf'
+    - name: 구독 옵션 및 가격 책정 비교
+      href: 'https://visualstudio.microsoft.com/vs/pricing'
+    - name: Visual Studio IDE 기능 비교
+      href: 'https://visualstudio.microsoft.com/vs/compare'
+    - name: Visual Studio 관리 및 구독 지원
+      href: 'https://visualstudio.microsoft.com/support/support-overview-vs'
+    - name: 볼륨 라이선스 약관
+      href: 'https://www.microsoft.com/licensing/product-licensing/products.aspx'
+    - name: MPSA(Microsoft 제품 및 서비스 계약)
+      href: 'https://www.microsoft.com/licensing/mpsa/default.aspx'

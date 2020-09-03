@@ -1,0 +1,286 @@
+- name: Visual Studio 디버거 확장성
+  href: visual-studio-debugger-extensibility.md
+- name: 디버그 엔진 구현 전략 선택
+  href: choosing-a-debug-engine-implementation-strategy.md
+- name: 사용자 지정 디버그 엔진 만들기
+  href: creating-a-custom-debug-engine.md
+  items:
+    - name: 사용자 지정 디버그 엔진 등록
+      href: registering-a-custom-debug-engine.md
+    - name: 디버그할 프로그램을 사용하도록 설정
+      href: enabling-a-program-to-be-debugged.md
+      items:
+        - name: 포트 가져오기
+          href: getting-a-port.md
+        - name: 프로그램 등록
+          href: registering-the-program.md
+        - name: 프로그램에 연결
+          href: attaching-to-the-program.md
+        - name: 실행 기반 첨부 파일
+          href: launch-based-attachment.md
+        - name: 필요한 이벤트 보내기
+          href: sending-the-required-events.md
+    - name: 실행 제어 및 상태 평가
+      href: execution-control-and-state-evaluation.md
+      items:
+        - name: 프로그램 제어
+          href: program-control.md
+        - name: 중단점 관련 메서드
+          href: breakpoint-related-methods.md
+        - name: 호출 스택 평가
+          href: call-stack-evaluation.md
+        - name: 식 계산
+          href: expression-evaluation-visual-studio-debugging-sdk.md
+        - name: 컨트롤 이벤트
+          href: control-events.md
+    - name: 이벤트 보내기
+      href: sending-events.md
+      items:
+        - name: 이벤트 원본
+          href: event-sources-visual-studio-sdk.md
+        - name: 지원되는 이벤트 형식
+          href: supported-event-types.md
+        - name: 이벤트 설명
+          href: event-descriptions.md
+    - name: 종료 및 분리
+      href: termination-and-detaching.md
+    - name: 디버거 이벤트 호출
+      href: calling-debugger-events.md
+      items:
+        - name: 프로그램 연결 및 분리
+          href: attaching-and-detaching-to-a-program.md
+        - name: 디버거 시작
+          href: launching-the-debugger.md
+        - name: 프로그램 종료
+          href: terminating-a-program.md
+        - name: 중단점 만들기
+          href: creating-a-breakpoint.md
+        - name: 중단점이 바인딩될 때 또는 바인딩되지 않을 때
+          href: when-a-breakpoint-binds-or-becomes-unbound.md
+        - name: 중단점 오류
+          href: breakpoint-errors.md
+        - name: 중단점 적중
+          href: hitting-a-breakpoint.md
+        - name: 중단점 삭제
+          href: deleting-a-breakpoint.md
+        - name: 중단 모드 적용
+          href: entering-break-mode.md
+        - name: 중단 모드 단계별 실행
+          href: stepping-in-break-mode.md
+        - name: 중단 모드에서 식 계산
+          href: expression-evaluation-in-break-mode.md
+        - name: 예외 처리
+          href: exception-handling-visual-studio-sdk.md
+    - name: '방법: 사용자 지정 디버그 엔진 디버그'
+      href: how-to-debug-a-custom-debug-engine.md
+- name: 시작하기
+  href: getting-started-with-debugger-extensibility.md
+  items:
+    - name: 디버거 확장 로드맵
+      href: roadmap-for-extending-the-debugger.md
+    - name: 디버거 구성 요소
+      href: debugger-components.md
+      items:
+        - name: 패키지 디버그
+          href: debug-package.md
+        - name: 프로세스 디버그 관리자
+          href: process-debug-manager.md
+        - name: 세션 디버그 관리자
+          href: session-debug-manager.md
+        - name: 디버그 엔진
+          href: debug-engine.md
+        - name: 작업 모드
+          href: operational-modes.md
+        - name: 식 계산기
+          href: expression-evaluator.md
+        - name: 기호 공급자
+          href: symbol-provider.md
+        - name: 형식 시각화 도우미 및 사용자 지정 뷰어
+          href: type-visualizer-and-custom-viewer.md
+    - name: 디버거 개념
+      href: debugger-concepts.md
+      items:
+        - name: 디버그 세션
+          href: debug-session.md
+        - name: 서버
+          href: servers-visual-studio-sdk.md
+        - name: 포트 공급자
+          href: port-suppliers.md
+        - name: 포트
+          href: ports.md
+        - name: 프로세스
+          href: processes.md
+        - name: 프로그램 노드
+          href: program-nodes.md
+        - name: 프로그램
+          href: programs.md
+        - name: 스레드
+          href: threads.md
+        - name: 스택 프레임
+          href: stack-frames.md
+        - name: 모듈
+          href: modules.md
+        - name: 중단점
+          href: breakpoints-visual-studio-sdk.md
+    - name: 디버거 컨텍스트
+      href: debugger-contexts.md
+      items:
+        - name: 코드 컨텍스트
+          href: code-context.md
+        - name: 문서 위치
+          href: document-position.md
+        - name: 문서 컨텍스트
+          href: document-context.md
+        - name: 식 계산 컨텍스트
+          href: expression-evaluation-context.md
+    - name: 디버깅 작업
+      href: debugging-tasks.md
+      items:
+        - name: 보안 문제
+          href: security-issues.md
+        - name: 프로그램 시작
+          href: launching-a-program.md
+          items:
+            - name: 포트에 알림
+              href: notifying-the-port.md
+            - name: 시작 후 연결
+              href: attaching-after-a-launch.md
+        - name: 프로그램에 직접 연결
+          href: attaching-directly-to-a-program.md
+        - name: 시작 후 시작 이벤트 보내기
+          href: sending-startup-events-after-a-launch.md
+        - name: 실행 제어
+          href: control-of-execution.md
+        - name: 중단점 바인딩
+          href: binding-breakpoints.md
+        - name: 식 계산
+          href: evaluating-expressions.md
+        - name: 데이터 시각화 및 보기
+          href: visualizing-and-viewing-data.md
+- name: CLR 식 계산기 작성
+  href: writing-a-common-language-runtime-expression-evaluator.md
+  items:
+    - name: 공용 언어 런타임 및 식 계산
+      href: common-language-runtime-and-expression-evaluation.md
+    - name: 식 계산기 아키텍처
+      href: expression-evaluator-architecture.md
+      items:
+        - name: 평가 컨텍스트
+          href: evaluation-context.md
+        - name: Key 식 계산기 인터페이스
+          href: key-expression-evaluator-interfaces.md
+    - name: 식 계산기 등록
+      href: registering-an-expression-evaluator.md
+    - name: 식 계산기 구현
+      href: implementing-an-expression-evaluator.md
+      items:
+        - name: 식 계산기 구현 전략
+          href: expression-evaluator-implementation-strategy.md
+    - name: 로컬 항목 표시
+      href: displaying-locals.md
+      items:
+        - name: 로컬 항목의 샘플 구현
+          href: sample-implementation-of-locals.md
+          items:
+            - name: GetMethodProperty 구현
+              href: implementing-getmethodproperty.md
+            - name: 로컬 항목 열거
+              href: enumerating-locals.md
+            - name: 로컬 속성 가져오기
+              href: getting-local-properties.md
+            - name: 로컬 값 가져오기
+              href: getting-local-values.md
+            - name: 로컬 항목 계산
+              href: evaluating-locals.md
+    - name: 조사식 창 식 계산
+      href: evaluating-a-watch-window-expression.md
+      items:
+        - name: 식 계산의 샘플 구현
+          href: sample-implementation-of-expression-evaluation.md
+        - name: 조사식 창 계산
+          href: evaluating-a-watch-expression.md
+    - name: 로컬 항목 값 변경
+      href: changing-the-value-of-a-local.md
+      items:
+        - name: 값 변경 샘플 구현
+          href: sample-implementation-of-changing-values.md
+    - name: 형식 시각화 도우미 및 사용자 지정 뷰어 구현
+      href: implementing-type-visualizers-and-custom-viewers.md
+- name: 포트 공급자 구현
+  href: implementing-a-port-supplier.md
+  items:
+    - name: 포트 공급자 구현 및 등록
+      href: implementing-and-registering-a-port-supplier.md
+    - name: 필요한 포트 공급자 인터페이스
+      href: required-port-supplier-interfaces.md
+- name: .NET Framework에 대한 병렬 확장 기능 내부
+  href: parallel-extension-internals-for-the-dotnet-framework.md
+  items:
+    - name: Task 클래스
+      href: task-class-internal-members.md
+      items:
+        - name: m_action 필드
+          href: m-action-field.md
+        - name: m_contingentProperties 필드
+          href: m-contingentproperties-field.md
+        - name: m_parent 필드
+          href: m-parent-field.md
+        - name: m_stateFlags 필드
+          href: m-stateflags-field.md
+        - name: m_stateObject 필드
+          href: m-stateobject-field.md
+        - name: m_taskId 필드
+          href: m-taskid-field.md
+        - name: s_taskIdCounter 필드
+          href: s-taskidcounter-field.md
+        - name: TASK_STATE_CANCELED 필드
+          href: task-state-canceled-field.md
+        - name: TASK_STATE_EXECUTED 필드
+          href: task-state-executed-field.md
+        - name: TASK_STATE_FAULTED 필드
+          href: task-state-faulted-field.md
+        - name: TASK_STATE_RAN_TO_COMPLETION 필드
+          href: task-state-ran-to-completion-field.md
+        - name: TASK_STATE_WAITING_ON_CHILDREN 필드
+          href: task-state-waiting-on-children-field.md
+        - name: SetNotificationForWaitCompletion 메서드
+          href: setnotificationforwaitcompletion-method.md
+        - name: NotifyDebuggerOfWaitCompletion 메서드
+          href: notifydebuggerofwaitcompletion-method.md
+    - name: TaskScheduler 클래스
+      href: taskscheduler-class-internal-members.md
+      items:
+        - name: GetScheduledTasksForDebugger 메서드
+          href: getscheduledtasksfordebugger-method.md
+        - name: GetTaskSchedulersForDebugger 메서드
+          href: gettaskschedulersfordebugger-method.md
+    - name: ContingentProperties 클래스
+      href: contingentproperties-class-internal-members.md
+      items:
+        - name: m_children 필드
+          href: m-children-field.md
+    - name: AsyncTaskMethodBuilder 구조체
+      href: asynctaskmethodbuilder-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger 속성
+          href: asynctaskmethodbuilder-objectidfordebugger-property.md
+        - name: m_builder 필드
+          href: asynctaskmethodbuilder-m-builder-field.md
+    - name: AsyncTaskMethodBuilder\<TResult> 구조체
+      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger 속성
+          href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
+        - name: m_task 필드
+          href: asynctaskmethodbuilder-tresult-m-task-field.md
+    - name: AsyncVoidMethodBuilder 구조체
+      href: asyncvoidmethodbuilder-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger 속성
+          href: asyncvoidmethodbuilder-objectidfordebugger-property.md
+        - name: m_objectIdForDebugger 필드
+          href: asyncvoidmethodbuilder-m-objectidfordebugger-field.md
+- name: 참조
+  href: reference/reference-visual-studio-debugging-apis.md
+- name: 샘플
+  href: visual-studio-debugging-samples.md

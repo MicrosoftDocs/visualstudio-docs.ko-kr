@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851076"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>도움말 뷰어 문제 해결
@@ -32,7 +32,7 @@ ms.locfileid: "75851076"
 
 #### <a name="to-activate-windows-search-service"></a>Windows 검색 서비스를 활성화하려면
 
-1. 서버 관리자를 클릭합니다.
+1. 서버 관리자를 시작합니다.
 
 2. 왼쪽된 탐색 창에서 선택 **역할**을 선택합니다.
 
@@ -49,5 +49,5 @@ ms.locfileid: "75851076"
 
 - 자세한 내용은 [개발자 설명서 및 도움말 시스템](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) 포럼 및 [도움말 전문가](https://blogs.msdn.com/b/thehelpguy/) 블로그를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [도움말 뷰어 2.1 관리자 가이드](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

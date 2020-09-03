@@ -11,10 +11,10 @@ caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851860"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
@@ -22,7 +22,7 @@ ms.locfileid: "75851860"
 
 다른 조건을 테스트하려면 각기 다른 매개 변수 값을 사용하여 테스트를 여러 번 실행합니다. 이 경우 데이터 기반의 코딩된 UI 테스트를 사용하면 편리합니다. 데이터 소스에서 매개 변수 값을 정의하면 데이터 소스의 각 행에서 코딩된 UI 테스트가 반복됩니다. 테스트의 전체 결과는 모든 반복의 결과를 기반으로 합니다. 예를 들어 테스트 반복 하나가 실패하면 전체 테스트 결과가 실패로 됩니다.
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise
 
@@ -61,7 +61,7 @@ ms.locfileid: "75851860"
 
 5. `AddNumbers()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **테스트 실행**을 선택합니다. 선택합니다(바로 가기 키: Ctrl+R, T).
 
-     테스트 성공 여부를 보여 주는 테스트 결과가 테스트 탐색기 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **Windows**와 **테스트 탐색기**를 차례로 선택합니다.
+     테스트 성공 여부를 보여 주는 테스트 결과가 테스트 탐색기 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **창** 을 선택한 다음 **테스트 탐색기**를 선택 합니다.
 
 6. 테스트에서 필요한 값을 확인하는 데 사용되는 어설션 매개 변수 값에는 데이터 소스도 사용할 수 있으므로, 어설션을 추가해 두 숫자의 합이 올바른지 유효성을 검사해 보겠습니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **코딩된 UI 테스트에 대한 코드 생성**과 **코딩된 UI 테스트 빌더 사용**을 차례로 선택합니다.
 
@@ -98,11 +98,11 @@ ms.locfileid: "75851860"
 
 1. 이름이 `data.csv`인 dataDrivenSample 프로젝트에 텍스트 파일을 추가합니다.
 
-     ![쉼표로 구분 된 값 파일을 프로젝트에 추가 합니다.](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![프로젝트에 쉼표로 구분된 값 파일 추가](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. 다음 데이터를 사용하여 .csv 파일을 채웁니다.
 
-    |Num1|Num2|Sum|
+    |Num1|Num2|합계|
     |----------|----------|---------|
     |3|4|7|
     |5|6|11|
@@ -112,7 +112,7 @@ ms.locfileid: "75851860"
 
      ![를 채웁니다. 데이터가 포함 된 CSV 파일](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
-3. .csv 파일은 올바른 인코딩을 사용하여 저장되어야 합니다. **파일** 메뉴에서 **고급 저장 옵션**을 선택하고 인코딩으로 **유니코드(서명 없는 UTF-8) - 코드 페이지 65001**을 선택합니다.
+3. .csv 파일은 올바른 인코딩을 사용하여 저장되어야 합니다. **파일** 메뉴에서 **고급 저장 옵션** 을 선택 하 고 인코딩으로 **유니코드 (서명 없는 utf-8)-코드 페이지 65001** 를 선택 합니다.
 
 4. .csv 파일은 출력 디렉터리에 복사해야 하며 그렇지 않으면 테스트를 실행할 수 없습니다. 속성 창에서 해당 파일을 복사합니다.
 
@@ -185,15 +185,15 @@ ms.locfileid: "75851860"
 
     - UIMap.uitest 파일을 엽니다.
 
-         ![코딩 된 UI 테스트 편집기 열기](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![코딩된 UI 테스트 편집기 열기](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - UI 작업을 선택하고 해당 UI 컨트롤 매핑을 관찰하여 매핑과 그에 해당하는 `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button` 등의 코드를 살펴봅니다.
 
-         ![코딩 된 UI 테스트 편집기를 사용 하 여 코드 지원](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![코딩에 도움을 받으려면 코딩된 UI 테스트 편집기 사용](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - 속성 창에서 **검색 속성**을 엽니다. 검색 속성 **Name** 값은 코드에서 데이터 소스를 사용하여 조작하는 항목입니다. 예를 들어 `SearchProperties`에는 다음과 같이 각 데이터 행의 첫 번째 열 값이 할당됩니다. `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. 이 테스트는 3회 반복하는 동안 검색 속성의 **Name** 값을 3, 5, 6의 순서로 변경합니다.
 
-         ![코딩을 지원 하기 위해 검색 속성 사용](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![코딩에 도움을 받으려면 검색 속성 사용](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. 솔루션을 저장합니다.
 
@@ -205,16 +205,16 @@ ms.locfileid: "75851860"
 
    **지침**
 
-   자세한 내용은 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://msdn.microsoft.com/library/jj159340.aspx)(Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트) 및 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://msdn.microsoft.com/library/jj159335.aspx)(Visual Studio 2012를 사용한 연속 배달 테스트 - 5장: 시스템 테스트 자동화)를 참조하세요.
+   자세한 내용은 [Visual studio 2012을 사용 하 여 연속 배달 테스트-2 장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx) 및 [Visual Studio 2012를 사용한 연속 배달 테스트 – 5 장: 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx) 를 참조 하세요.
 
 ## <a name="q--a"></a>Q&A
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express 또는 XML과 같은 기타 데이터 소스 형식에는 어떤 데이터 소스 특성이 있나요?
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express 또는 XML과 같은 기타 데이터 소스 형식에는 어떤 데이터 소스 특성이 있나요?
  아래 테이블의 샘플 데이터 소스 문자열을 코드에 복사하고 필요한 항목을 사용자 지정하여 사용할 수 있습니다.
 
  **데이터 소스 형식 및 특성**
 
-- CSV 형식입니다.
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
@@ -246,15 +246,15 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q: UIMap.Designer 파일에서 코드를 수정할 수 없는 이유는 무엇인가요?
- **A**: UIMap - 코딩된 UI 테스트 빌더를 사용하여 코드를 생성할 때마다 UIMapDesigner.cs 파일에서 수정된 코드 변경 내용을 덮어씁니다. 이 샘플에서 그리고 대부분의 경우에는 테스트가 데이터 소스를 사용하도록 설정하는 데 필요한 코드 변경을 테스트의 소스 코드 파일(CodedUITest1.cs)에서 수행할 수 있습니다.
+ **A:** UIMapDesigner.cs 파일에서 변경한 코드는 UIMap 코딩 된 UI 테스트 빌더를 사용 하 여 코드를 생성할 때마다 덮어쓰여집니다. 이 샘플에서 그리고 대부분의 경우에는 테스트가 데이터 소스를 사용하도록 설정하는 데 필요한 코드 변경을 테스트의 소스 코드 파일(CodedUITest1.cs)에서 수행할 수 있습니다.
 
  기록된 메서드를 수정해야 하는 경우에는 해당 메서드를 UIMap.cs 파일에 복사한 후 이름을 바꾸어야 합니다. UIMap.cs 파일을 사용하여 UIMapDesigner.cs 파일의 메서드와 속성을 재정의할 수 있습니다. 코딩된 UITest.cs 파일에서 원래 메서드에 대한 참조를 제거하고 이름을 바꾼 메서드 이름으로 바꾸어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
-- [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
+- [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
+- [코딩 된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
-- [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [코딩 된 UI 테스트 및 작업 기록에 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

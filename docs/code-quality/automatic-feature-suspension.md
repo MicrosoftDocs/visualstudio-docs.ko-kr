@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769483"
 ---
 # <a name="automatic-feature-suspension"></a>자동 기능 일시 중단
@@ -44,7 +44,7 @@ Visual Studio는 메모리 부족 상태를 검색 하면 안정적으로 유지
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>라이브 코드 분석이 최소 범위로 축소 됨
 
-기본적으로 라이브 코드 분석은 열린 문서 및 프로젝트에 대해 실행 됩니다. 이 분석 범위를 사용자 지정 하 여 현재 문서로 줄이거나 전체 솔루션으로 늘릴 수 있습니다. 자세한 내용은 [방법: 관리 코드에 대 한 라이브 코드 분석 범위 구성](./configure-live-code-analysis-scope-managed-code.md)을 참조 하세요. 메모리 부족 상태에서 Visual Studio는 라이브 분석 범위를 현재 문서로 강제로 줄입니다. 그러나 표시 되는 경우 정보 표시줄에서 **다시 사용** 단추를 선택 하거나 Visual Studio를 다시 시작 하 여 원하는 분석 범위를 다시 활성화할 수 있습니다. 옵션 대화 상자에는 항상 현재 라이브 코드 분석 범위 설정이 표시 됩니다.
+기본적으로 라이브 코드 분석은 열린 문서 및 프로젝트에 대해 실행 됩니다. 이 분석 범위를 사용자 지정 하 여 현재 문서로 줄이거나 전체 솔루션으로 늘릴 수 있습니다. 자세한 내용은 [방법: 관리 코드에 대한 실시간 코드 분석 범위를 구성합니다](./configure-live-code-analysis-scope-managed-code.md). 메모리 부족 상태에서 Visual Studio는 라이브 분석 범위를 현재 문서로 강제로 줄입니다. 그러나 표시 되는 경우 정보 표시줄에서 **다시 사용** 단추를 선택 하거나 Visual Studio를 다시 시작 하 여 원하는 분석 범위를 다시 활성화할 수 있습니다. 옵션 대화 상자에는 항상 현재 라이브 코드 분석 범위 설정이 표시 됩니다.
 
 ## <a name="gc-low-latency-disabled"></a>GC 낮은 대기 시간 사용 안 함
 
@@ -65,7 +65,7 @@ GC 낮은 대기 시간 모드를 다시 사용 하도록 설정 하려면 Visua
 > [!NOTE]
 > 자동 기능 일시 중단 경고는 세션당 한 번만 발생 하는 것이 아니라 솔루션 별로 한 번만 발생 합니다. 즉, Visual Basic에서 Visual c # (또는 그 반대로)로 전환 하 고 다른 메모리 부족 상태를 실행 하는 경우 다른 자동 기능 일시 중단 경고를 얻을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 관리 코드에 대 한 라이브 코드 분석 범위 구성](./configure-live-code-analysis-scope-managed-code.md)
 - [가비지 수집 기본 사항](/dotnet/standard/garbage-collection/fundamentals)

@@ -1,5 +1,5 @@
 ---
-title: '오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 하지 못했습니다. | Microsoft Docs'
+title: '오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851922"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅을 하지 못했습니다.
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 인증 오류로 인해 디버깅을 요청한 사용자를 인증할 수 없습니다. 웹 애플리케이션 또는 XML Web services를 한 단계씩 실행하려고 할 때 이 오류가 발생할 수 있습니다. 이 오류는 Windows 통합 인증이 사용할 수 없도록 설정되어 있기 때문에 발생할 수 있습니다. 이 인증을 사용하려면 "통합 Windows 인증을 사용하려면"의 단계를 따릅니다.  
@@ -71,7 +71,7 @@ ms.locfileid: "75851922"
   
 2. Windows 인증 및 II6 관리 호환성을 설정하지 않은 경우 다음 단계에 따라 이를 설정합니다.  
   
-    1. **시작**, **제어판** 을 차례로 클릭 한 다음 **프로그램**을 클릭 합니다.  
+    1. **시작**, **제어판**, **프로그램**을 차례로 클릭합니다.  
   
     2. **프로그램 및 기능**에서 **Windows 기능 사용/사용 안 함**을 클릭합니다.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "75851922"
   
 10. **IIS(인터넷 정보 서비스) 관리자** 창을 닫습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [웹 응용 프로그램 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft Digest 인증](https://msdn2.microsoft.com/library/Aa378744.aspx)   
- [IIS 7.0 및 Visual Studio를 사용 하 여 Windows Vista에서 웹 응용 프로그램 실행](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [IIS 7.0 및 Visual Studio를 사용하여 Windows Vista에서 웹 애플리케이션 실행](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

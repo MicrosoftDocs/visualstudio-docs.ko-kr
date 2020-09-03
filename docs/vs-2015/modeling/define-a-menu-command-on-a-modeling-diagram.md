@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534214"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>모델링 다이어그램의 메뉴 명령 정의
@@ -166,13 +166,13 @@ Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴
 
          **프로젝트**  =  *클래스 라이브러리 프로젝트*
 
-## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>메뉴 명령 구현
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a> 메뉴 명령 구현
  메뉴 명령 클래스는 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>에 필요한 메서드를 구현합니다.
 
-|서명|설명|
+|서명|Description|
 |-|-|
 |`string Text { get; }`|메뉴 항목의 레이블을 반환합니다.|
-|`void QueryStatus(IMenuCommand command);`|사용자가 다이어그램을 마우스 오른쪽 단추로 클릭하면 호출됩니다.<br /><br /> 이 메서드는 모델을 변경하면 안 됩니다.<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` 를 사용하여 명령을 표시하고 사용할 수 있도록 할지 여부를 결정합니다.<br /><br /> 다음과 같이 설정합니다.<br /><br /> -   `command.Visible``true`사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 명령이 메뉴에 표시 되어야 하는 경우<br />-   `command.Enabled``true`사용자가 메뉴에서 명령을 클릭할 수 있는 경우<br />-   `command.Text`메뉴 레이블을 동적으로 설정 하려면|
+|`void QueryStatus(IMenuCommand command);`|사용자가 다이어그램을 마우스 오른쪽 단추로 클릭하면 호출됩니다.<br /><br /> 이 메서드는 모델을 변경하면 안 됩니다.<br /><br /> `DiagramContext.CurrentDiagram.SelectedShapes` 를 사용하여 명령을 표시하고 사용할 수 있도록 할지 여부를 결정합니다.<br /><br /> 다음과 같이 설정합니다.<br /><br /> -   `command.Visible``true`사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 명령이 메뉴에 표시 되어야 하는 경우<br />-   `command.Enabled``true`사용자가 메뉴에서 명령을 클릭할 수 있는 경우<br />-   `command.Text` 메뉴 레이블을 동적으로 설정 하려면|
 |`void Execute (IMenuCommand command);`|표시되고 사용할 수 있는 경우 사용자가 메뉴 항목을 클릭할 때 호출됩니다.|
 
 ### <a name="accessing-the-model-in-code"></a>코드에서 모델 액세스
@@ -209,7 +209,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  그러나 모델 저장소가 스레드로부터 안전하지 않은 것에 주의해야 합니다. 항상 UI(사용자 인터페이스) 스레드를 사용하여 업데이트해야 하며, 가능한 경우 백그라운드 작업이 진행되는 동안 사용자가 편집할 수 없도록 해야 합니다. 예제는 [백그라운드 스레드에서 UML 모델 업데이트](../modeling/update-a-uml-model-from-a-background-thread.md)를 참조 하세요.
 
-## <a name="executing-the-menu-command"></a><a name="Executing"></a>메뉴 명령 실행
+## <a name="executing-the-menu-command"></a><a name="Executing"></a> 메뉴 명령 실행
  테스트를 위해 디버그 모드에서 명령을 실행합니다.
 
 #### <a name="to-test-the-menu-command"></a>메뉴 명령을 테스트하려면
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - 프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.
 
-    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -240,7 +240,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - 사용 중인 모델 다이어그램 형식(UML 클래스, 시퀀스 등)이 메뉴 명령 클래스 특성 `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` 등의 하나로 나열됩니다.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 확장 설치 및 제거
  사용 중인 컴퓨터 및 다른 컴퓨터에서 모두 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장을 설치할 수 있습니다.
 
 #### <a name="to-install-an-extension"></a>확장을 설치하려면
@@ -273,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \extensions**
 
-## <a name="example"></a><a name="MenuExample"></a> 예
+## <a name="example"></a><a name="MenuExample"></a> 예제
  다음 예제에서는 클래스 다이어그램에서 두 요소의 이름은 교환하는 메뉴 명령에 대한 코드를 보여 줍니다. 이 코드는 이전 섹션에서 설명한 대로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 프로젝트로 빌드 및 설치해야 합니다.
 
 ```
@@ -362,6 +362,6 @@ namespace SwapClassNames
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [모델링 다이어그램에서 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [사용자 지정 모델링 도구 상자 항목 정의](../modeling/define-a-custom-modeling-toolbox-item.md) uml [모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md) uml api를 사용한 uml api [프로그래밍](../modeling/programming-with-the-uml-api.md) 을 [사용 하 여 uml 시퀀스 다이어그램 편집](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)
  

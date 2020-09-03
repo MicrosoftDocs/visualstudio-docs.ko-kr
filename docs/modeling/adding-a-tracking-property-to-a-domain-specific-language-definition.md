@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238246"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인 특정 언어 정의에 추적 속성 추가
@@ -52,7 +52,7 @@ ms.locfileid: "88238246"
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
-## <a name="create-the-project"></a>프로젝트 만들기
+## <a name="create-the-project"></a>프로젝트를 만듭니다.
 
 1. 도메인 특정 언어 디자이너 프로젝트를 만듭니다. 이름을 `TrackingPropertyDSL`로 지정합니다.
 
@@ -754,7 +754,7 @@ XML serialization에 대 한 사용자 지정 사후 로드 동작을 지 원하
 
 둘 이상의 추적 속성을 사용 하거나 둘 이상의 DSL에서 추적 속성을 구현할 계획인 경우 텍스트 템플릿을 만들어 각 추적 속성을 지 원하는 공통 코드를 생성할 수 있습니다. 텍스트 템플릿에 대 한 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

@@ -32,16 +32,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851001"
 ---
 # <a name="link-task"></a>링크 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일(.exe) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129)을 참조하세요.  
+Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일(.exe) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129)을 참조 하세요.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 **링크** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.  
@@ -52,7 +52,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    명령에 추가할 입력 파일 목록을 지정합니다.  
   
-   자세한 내용은 [LINK 입력 파일](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412)을 참조하세요.  
+   자세한 내용은 [입력 파일 링크](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412)를 참조 하세요.  
   
 - **AdditionalLibraryDirectories**  
   
@@ -68,15 +68,15 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    매니페스트 파일의 `dependency` 섹션에 배치될 특성을 지정합니다.  
   
-   자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)를 참조하세요. [MSDN](https://msdn.microsoft.com/) 웹 사이트의 "게시자 구성 파일"도 참조하세요.  
+   자세한 내용은 [/MANIFESTDEPENDENCY (매니페스트 종속성 지정)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)을 참조 하세요. [MSDN](https://msdn.microsoft.com/) 웹 사이트의 "게시자 구성 파일"도 참조하세요.  
   
 - **AdditionalOptions**  
   
    선택적 **문자열** 매개 변수입니다.  
   
-   명령줄에 지정된 링커 옵션 목록입니다. 예를 들어 **"** _/option1 /option2 /option#_ "과 같습니다. 이 매개 변수를 사용하여 다른 **링크** 작업 매개 변수로 표현되지 않는 링커 옵션을 지정합니다.  
+   명령줄에 지정된 링커 옵션 목록입니다. 예를 들면 **"**_/ch1/option1/option #_"입니다. 이 매개 변수를 사용하여 다른 **링크** 작업 매개 변수로 표현되지 않는 링커 옵션을 지정합니다.  
   
-   자세한 내용은 [링커 옵션](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129)을 참조하세요.  
+   자세한 내용은 [링커 옵션](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129)을 참조 하세요.  
   
 - **AddModuleNamesToAssembly**  
   
@@ -84,7 +84,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    모듈 참조를 어셈블리에 추가합니다.  
   
-   자세한 내용은 [/ASSEMBLYMODULE(MSIL 모듈을 어셈블리에 추가)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143)을 참조하세요.  
+   자세한 내용은 [/ASSEMBLYMODULE (MSIL 모듈을 어셈블리에 추가)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143)를 참조 하세요.  
   
 - **AllowIsolation**  
   
@@ -140,7 +140,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 링커 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **기본값** -  *\<없음>*  
+  - **기본** - *\<none>*  
   
   - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
@@ -222,7 +222,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    이 매개 변수를 사용하면 DLL의 *로드가 지연*됩니다. 로드를 지연할 DLL의 이름을 지정합니다.  
   
-   자세한 내용은 [/DELAYLOAD(가져오기 로드 지연)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28)를 참조하세요.  
+   자세한 내용은 [/DELAYLOAD (가져오기 로드 지연)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28)를 참조 하세요.  
   
 - **DelaySign**  
   
@@ -230,7 +230,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 어셈블리에 부분적으로 서명합니다. 기본적으로 이 값은 `false`입니다.  
   
-   자세한 내용은 [/DELAYSIGN(어셈블리에 부분적으로 서명)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20)을 참조하세요.  
+   자세한 내용은 [/delaysign (어셈블리에 부분적으로 서명)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20)을 참조 하세요.  
   
 - **Driver**  
   
@@ -240,7 +240,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 링커 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **Driver** -  **/Driver**  
   
@@ -304,7 +304,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
   - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
   
-    자세한 내용은 [/FORCE(파일 출력 강제)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da)를 참조하세요.  
+    자세한 내용은 [/force (파일 출력 강제)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da)를 참조 하세요.  
   
 - **ForceSymbolReferences**  
   
@@ -312,7 +312,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    이 매개 변수는 지정된 기호를 기호 테이블에 추가하도록 링커에 지시합니다.  
   
-   자세한 내용은 [/INCLUDE(강제 기호 참조)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c)를 참조하세요.  
+   자세한 내용은 [/INCLUDE (강제 기호 참조)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c)를 참조 하세요.  
   
 - **FunctionOrder**  
   
@@ -336,7 +336,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 side-by-side 매니페스트 파일을 만듭니다.  
   
-   자세한 내용은 [/MANIFEST(side-by-side 어셈블리 매니페스트 만들기)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600)를 참조하세요.  
+   자세한 내용은 [/smanifest (Side-by-side 어셈블리 매니페스트 만들기)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600)를 참조 하세요.  
   
 - **GenerateMapFile**  
   
@@ -352,7 +352,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    힙에서 한 번에 할당할 실제 메모리의 양을 지정합니다.  
   
-   자세한 내용은 [/HEAP(힙 크기 설정)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da)의 `commit` 인수를 참조하세요. **HeapReserveSize** 매개 변수도 참조하세요.  
+   자세한 내용은 `commit` [/s힙 (힙 크기 설정)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da)의 인수를 참조 하세요. **HeapReserveSize** 매개 변수도 참조하세요.  
   
 - **HeapReserveSize**  
   
@@ -360,7 +360,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    가상 메모리의 총 힙 할당을 지정합니다.  
   
-   자세한 내용은 [/HEAP(힙 크기 설정)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da)의 `reserve` 인수를 참조하세요. 이 표의 **HeapCommitSize**도 참조하세요.  
+   자세한 내용은 `reserve` [/s힙 (힙 크기 설정)](https://msdn.microsoft.com/library/a3f71927-7f1d-492c-9fdb-dfccb1a043da)의 인수를 참조 하세요. 이 표의 **HeapCommitSize**도 참조하세요.  
   
 - **IgnoreAllDefaultLibraries**  
   
@@ -368,7 +368,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 외부 참조를 확인할 때 검색하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거하도록 링커에 지시합니다.  
   
-   자세한 내용은 [/NODEFAULTLIB(라이브러리 무시)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e)를 참조하세요.  
+   자세한 내용은 [/nodefaultlib (라이브러리 무시)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e)를 참조 하세요.  
   
 - **IgnoreEmbeddedIDL**  
   
@@ -376,7 +376,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 소스 코드의 모든 IDL 특성이 .idl 파일에서 처리되지 않도록 지정합니다.  
   
-   자세한 내용은 [/IGNOREIDL(특성을 MIDL로 처리하지 않음)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780)을 참조하세요.  
+   자세한 내용은 [/IGNOREIDL (특성을 MIDL로 처리 하지 않음)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780)를 참조 하세요.  
   
 - **IgnoreImportLibrary**  
   
@@ -392,7 +392,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    무시할 하나 이상의 기본 라이브러리 이름을 지정합니다. 세미콜론을 사용하여 여러 개의 라이브러리를 구분합니다.  
   
-   자세한 내용은 [/NODEFAULTLIB(라이브러리 무시)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e)를 참조하세요.  
+   자세한 내용은 [/nodefaultlib (라이브러리 무시)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e)를 참조 하세요.  
   
 - **ImageHasSafeExceptionHandlers**  
   
@@ -430,7 +430,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 애플리케이션이 2GB보다 큰 주소를 처리할 수 있습니다.  
   
-   자세한 내용은 [/LARGEADDRESSAWARE(큰 주소 처리)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385)를 참조하세요.  
+   자세한 내용은 [/LARGEADDRESSAWARE (대량 주소 처리)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385)를 참조 하세요.  
   
 - **LinkDLL**  
   
@@ -456,7 +456,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
   - **SendErrorReport** -  **/ERRORREPORT:SEND**  
   
-    자세한 내용은 [/ERRORREPORT(내부 링커 오류 보고)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28)를 참조하세요.  
+    자세한 내용은 [/ERRORREPORT (내부 링커 오류 보고)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28)를 참조 하세요.  
   
 - **LinkIncremental**  
   
@@ -464,7 +464,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 증분 링크를 사용하도록 설정합니다.  
   
-   자세한 내용은 [/INCREMENTAL(증분 링크)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b)을 참조하세요.  
+   자세한 내용은 [/INCREMENTAL (증분 링크)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b)를 참조 하세요.  
   
 - **LinkLibraryDependencies**  
   
@@ -490,7 +490,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **기본값** -  *\<없음>*  
+  - **기본** - *\<none>*  
   
   - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
@@ -502,7 +502,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
      \- **/LTCG:PGUpdate**  
   
-    자세한 내용은 [/LTCG(링크 타임 코드 생성)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2)를 참조하세요.  
+    자세한 내용은 [/ltcg (링크 타임 코드 생성)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2)를 참조 하세요.  
   
 - **ManifestFile**  
   
@@ -628,7 +628,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 **성능 도구** 프로파일러와 함께 사용할 수 있는 출력 파일을 생성합니다.  
   
-   자세한 내용은 [/PROFILE(성능 도구 프로파일러)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699)을 참조하세요.  
+   자세한 내용은 [/PROFILE (성능 도구 프로파일러)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699)를 참조 하세요.  
   
 - **ProfileGuidedDatabase**  
   
@@ -636,7 +636,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    실행 중인 프로그램에 대한 정보를 저장하는 데 사용될 .pgd 파일의 이름을 지정합니다.  
   
-   자세한 내용은 [/PGD(프로필 기반 최적화를 위한 데이터베이스 지정)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443)를 참조하세요.  
+   자세한 내용은 [/PGD (프로필 기반 최적화를 위한 데이터베이스 지정)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443)를 참조 하세요.  
   
 - **ProgramDatabaseFile**  
   
@@ -644,7 +644,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    링커에서 만든 PDB(프로그램 데이터베이스)에 대한 이름을 지정합니다.  
   
-   자세한 내용은 [/PDB(프로그램 데이터베이스 사용)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d)를 참조하세요.  
+   자세한 내용은 [/pdb (프로그램 데이터베이스 사용)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d)를 참조 하세요.  
   
 - **RandomizedBaseAddress**  
   
@@ -666,7 +666,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    프로그램의 선형 주소 공간 내에서 각 섹션의 맞춤을 지정합니다. 매개 변수 값은 바이트의 단위 수이며 2의 거듭제곱입니다.  
   
-   자세한 내용은 [/ALIGN(섹션 맞춤)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740)을 참조하세요.  
+   자세한 내용은 [/align (섹션 맞춤)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740)을 참조 하세요.  
   
 - **SetChecksum**  
   
@@ -684,7 +684,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **LinkVerbose** -  **/VERBOSE**  
   
@@ -698,7 +698,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
   - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
-    자세한 내용은 [/VERBOSE(진행 메시지 표시)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab)를 참조하세요.  
+    자세한 내용은 [/verbose (진행률 메시지 인쇄)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab)를 참조 하세요.  
   
 - **Sources**  
   
@@ -720,7 +720,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    추가 메모리를 할당할 때 각 할당의 실제 메모리 양을 지정합니다.  
   
-   자세한 내용은 [/STACK(스택 할당)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c)의 `commit` 인수를 참조하세요.  
+   자세한 내용은 `commit` [/STACK (스택 할당)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c)의 인수를 참조 하세요.  
   
 - **StackReserveSize**  
   
@@ -728,7 +728,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    가상 메모리의 총 스택 할당 크기를 지정합니다.  
   
-   자세한 내용은 [/STACK(스택 할당)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c)의 `reserve` 인수를 참조하세요.  
+   자세한 내용은 `reserve` [/STACK (스택 할당)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c)의 인수를 참조 하세요.  
   
 - **StripPrivateSymbols**  
   
@@ -736,7 +736,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    고객에게 배포하지 않을 기호를 생략하는 두 번째 PDB(프로그램 데이터베이스) 파일을 만듭니다. 두 번째 PDB 파일의 이름을 지정합니다.  
   
-   자세한 내용은 [/PDBSTRIPPED(전용 기호 제거)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)를 참조하세요.  
+   자세한 내용은 [/PDBSTRIPPED (전용 기호 제거)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)를 참조 하세요.  
   
 - **SubSystem**  
   
@@ -746,7 +746,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **콘솔** -  **/SUBSYSTEM:CONSOLE**  
   
@@ -766,7 +766,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
   - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
-    자세한 내용은 [/SUBSYSTEM(하위 시스템 지정)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b)을 참조하세요.  
+    자세한 내용은 [/SUBSYSTEM (하위 시스템 지정)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b)을 참조 하세요.  
   
 - **SupportNobindOfDelayLoadedDLL**  
   
@@ -790,7 +790,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.  
   
-   자세한 내용은 [/NOLOGO(시작 배너 표시 안 함)(링커)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197)를 참조하세요.  
+   자세한 내용은 [/nologo (시작 배너 표시 안 함) (링커)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197)를 참조 하세요.  
   
 - **SwapRunFromCD**  
   
@@ -816,7 +816,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** -  *\<none>*  
+  - **NotSet** - *\<none>*  
   
   - **MachineARM** -  **/MACHINE:ARM**  
   
@@ -862,7 +862,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    `true`이면 링커에서 경고가 생성되는 경우에도 출력 파일이 생성되지 않도록 합니다.  
   
-   자세한 내용은 [/WX(링커 경고를 오류로 처리)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9)를 참조하세요.  
+   자세한 내용은 [/wx (링커 경고를 오류로 처리)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9)를 참조 하세요.  
   
 - **TurnOffAssemblyGeneration**  
   
@@ -878,7 +878,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    .tlb 파일의 파일 이름 및 파일 이름 확장명을 지정합니다. 파일 이름 또는 경로와 파일 이름을 지정합니다.  
   
-   자세한 내용은 [/TLBOUT(.TLB 파일 이름 지정)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8)를 참조하세요.  
+   자세한 내용은 [/TLBOUT (이름)을 참조 하세요. TLB 파일)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
   
 - **TypeLibraryResourceID**  
   

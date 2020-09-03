@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a5e2a46a2326c123d6b7b4e85fa29908ede9fc9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299338"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>도구 및 도구 상자 사용자 지정
@@ -27,7 +27,7 @@ ms.locfileid: "74299338"
 
 사용자가 모델에 추가할 수 있도록 할 요소에 대해 도구 상자 항목을 정의해야 합니다. 도구에는 요소 도구와 연결 도구의 두 가지 종류가 있습니다. 사용자는 생성된 디자이너에서 요소 도구를 선택해 도형을 다이어그램으로 끌고 연결 도구를 선택해 도형 간에 링크를 그릴 수 있습니다. 일반적으로 요소 도구를 사용하면 도메인 클래스 인스턴스를 모델에 추가할 수 있으며 연결 도구를 사용하면 도메인 관계 인스턴스를 추가할 수 있습니다.
 
- 항목 내용:
+ 이 항목의 내용:
 
 - [도구 상자를 정의 하는 방법](#ToolboxDef)
 
@@ -37,7 +37,7 @@ ms.locfileid: "74299338"
 
 - [연결 도구 사용자 지정](#connections)
 
-## <a name="ToolboxDef"></a>도구 상자를 정의 하는 방법
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a> 도구 상자를 정의 하는 방법
  DSL 탐색기에서 편집기 노드와 그 아래의 노드를 확장합니다. 일반적으로는 다음과 같은 계층 구조가 표시됩니다.
 
 ```
@@ -84,7 +84,7 @@ Editor
 
 3. 16x16 비트맵을 참조 하도록 **도구 상자 아이콘** 속성을 설정 합니다.
 
-     새 아이콘을 정의 하려면 **Dsl\resources** 폴더의 솔루션 탐색기에서 비트맵 파일을 만듭니다. 이 파일에는 **빌드 작업** = **콘텐츠**와 같은 속성 값이 있어야 합니다. **출력 디렉터리에 복사** = **복사 하지**않습니다.
+     새 아이콘을 정의 하려면 **Dsl\resources** 폴더의 솔루션 탐색기에서 비트맵 파일을 만듭니다. 이 파일에는 **빌드 작업**콘텐츠와 같은 속성 값이 있어야 합니다.  =  **Content** **출력 디렉터리**  =  에 복사 **복사 하지**않습니다.
 
 4. **요소 도구의 경우:** 셰이프에 매핑되는 구체적 도메인 클래스를 참조 하도록 도구의 **Class** 속성을 설정 합니다.
 
@@ -92,9 +92,9 @@ Editor
 
 5. DSL을 테스트하려면 F5 키나 Ctrl+F5를 누르고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험 인스턴스에서 샘플 모델 파일을 엽니다. 도구 상자에 새 도구가 표시되어야 합니다. 해당 도구를 다이어그램으로 끌어 새 요소가 만들어지는지 확인합니다.
 
-     도구가 표시되지 않으면 실험 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 중지합니다. Windows **시작** 메뉴에서 **Microsoft Visual Studio 2010 실험적 인스턴스 다시 설정**을 실행 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**빌드** 메뉴에서 **솔루션 다시 빌드**를 클릭 합니다. 그런 후에 DSL을 다시 테스트합니다.
+     도구가 표시되지 않으면 실험 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 중지합니다. Windows **시작** 메뉴에서 **Microsoft Visual Studio 2010 실험적 인스턴스 다시 설정**을 실행 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **빌드** 메뉴에서 **솔루션 다시 빌드**를 클릭 합니다. 그런 후에 DSL을 다시 테스트합니다.
 
-## <a name="customizing"></a>요소 도구 사용자 지정
+## <a name="customizing-element-tools"></a><a name="customizing"></a> 요소 도구 사용자 지정
  도구는 기본적으로 지정한 클래스의 단일 인스턴스를 만들지만 두 가지 방법을 통해 이 기본 옵션을 변경할 수 있습니다.
 
 - 다른 클래스에 대해 요소 병합 지시문을 정의하여 해당 클래스가 이 클래스의 새 인스턴스를 수락하고 새 요소를 만들 때 추가 링크를 만들 수 있도록 설정합니다. 예를 들어 사용자가 다른 요소에 주석을 놓아 두 요소 간에 참조 링크를 만들도록 허용할 수 있습니다.
@@ -105,7 +105,7 @@ Editor
 
 - 요소 그룹을 만들 수 있도록 도구를 사용자 지정하는 코드를 작성합니다. 그러면 도구가 재정의 가능한 ToolboxHelper.cs의 메서드를 통해 초기화됩니다. 자세한 내용은 [도구에서 요소 그룹 만들기](#groups)를 참조 하세요.
 
-## <a name="groups"></a>도구에서 요소 그룹 만들기
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a> 도구에서 요소 그룹 만들기
  각 요소 도구는 만들어야 하는 요소의 프로토타입을 포함합니다. 기본적으로 각 요소 도구는 단일 요소를 만들지만 도구 하나로 관련 개체 그룹을 만들 수도 있습니다. 이렇게 하려면 관련 항목이 포함된 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>을 사용하여 도구를 초기화합니다.
 
  다음 예제는 Transistor 형식이 포함된 DSL에서 가져온 것입니다. 각 Transistor에는 명명된 Terminal 세 개가 있습니다. Transistor용 요소 도구는 모델 요소 4개와 관계 링크 3개가 포함된 프로토타입을 저장합니다. 사용자가 도구를 다이어그램으로 끌면 프로토타입이 인스턴스화되어 모델 루트에 연결됩니다.
@@ -155,7 +155,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-## <a name="connections"></a>연결 도구 사용자 지정
+## <a name="customizing-connection-tools"></a><a name="connections"></a> 연결 도구 사용자 지정
  일반적으로는 새 연결선 클래스를 만들 때 요소 도구를 만듭니다. 두 도구의 형식을 통해 관계 형식을 결정하도록 허용하여 도구 하나를 재정의할 수도 있습니다. 예를 들어 사용자 간 관계와 사용자 대 지역 관계를 모두 만들 수 있는 연결 도구 하나를 정의할 수 있습니다.
 
  연결 도구는 연결 작성기를 호출합니다. 연결 작성기를 통해 사용자가 생성된 디자이너에서 요소를 연결할 수 있는 방법을 지정합니다. 연결 작성기는 연결 가능한 요소 및 해당 요소 간에 작성되는 링크의 종류를 지정합니다.
@@ -200,7 +200,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  구성 요소 다이어그램 샘플에서는 Connection 도메인 관계의 연결 작성기가 사용자 지정되어 포트 간에 설정할 수 있는 연결을 제한합니다. 다음 그림에서는 `OutPort` 요소에서 `InPort` 요소로만 연결할 수 있지만 각 요소를 서로 중첩할 수 있음을 보여줍니다.
 
- **중첩 된 구성 요소에서 OutPort로 들어오는 연결**
+ **중첩된 구성 요소에서 OutPort로의 연결**
 
  ![연결 작성기](../modeling/media/connectionbuilder-3.png "ConnectionBuilder_3")
 
@@ -208,9 +208,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **DSL 탐색기의 링크 연결 지시문**
 
- ![연결 빌더 이미지](../modeling/media/connectionbuilder-4a.png "ConnectionBuilder_4a")
+ ![연결 작성기 이미지](../modeling/media/connectionbuilder-4a.png "ConnectionBuilder_4a")
 
- **DSL 정보 창의 링크 연결 지시문**
+ **DSL 세부 정보 창의 링크 연결 지시문**
 
  ![](../modeling/media/connectionbuilder-4b.png "ConnectionBuilder_4b")
 
@@ -248,5 +248,5 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  사용자 지정 코드를 사용하면 '하드' 제약 조건을 적용할 수 있지만 이 경우 사용자가 일시적으로 잘못된 연결을 설정할 수 있어야 하는지를 고려해야 합니다. 사용자가 일시적으로 잘못된 연결을 설정할 수 있어야 하는 경우에는 사용자가 변경 내용을 저장할 때까지 연결 유효성을 검사하지 않도록 제약 조건을 수정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md) [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md) [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)

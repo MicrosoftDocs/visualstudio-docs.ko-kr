@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8042b228a481dc3d720d8b422963db41abbddcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533837"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -47,7 +47,7 @@ ms.locfileid: "85533837"
 |**/noclr**|선택 사항입니다. CLR 데이터를 수집하지 않습니다.<br /><br /> /package 또는 /attach와 함께 사용해야 합니다.<br /><br /> 최적화 상태이며 관리되는 기호를 확인하지 않습니다.|  
 |**/listapps**|설치된 응용 프로그램 Name 및 PackageFullNames의 목록을 표시합니다.|  
   
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램에만 해당  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램에만 해당  
  이러한 옵션은 Windows 스토어 앱에서 작동하지 않습니다.  
   
 |옵션|설명|  
@@ -56,7 +56,7 @@ ms.locfileid: "85533837"
 |**/args:{ExecutableArguments}**|**/launch** 대상을 전달할 명령줄 인수를 지정합니다.|  
 |**/console**|새 명령 창에서 **/launch** 대상을 실행합니다.|  
   
-## <a name="all-applications"></a><a name="BKMK_All_applications"></a>모든 응용 프로그램  
+## <a name="all-applications"></a><a name="BKMK_All_applications"></a> 모든 응용 프로그램  
  이러한 옵션은 모든 Windows 8 또는 Windows Server 2012 애플리케이션에 적용됩니다.  
   
 |옵션|설명|  
@@ -69,6 +69,6 @@ ms.locfileid: "85533837"
 |**/detach**|데이터 수집을 중지하되 대상 프로세스는 계속 실행되도록 합니다.|  
 |**/status**|프로파일러 상태를 표시합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)

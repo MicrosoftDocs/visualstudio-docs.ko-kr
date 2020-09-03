@@ -33,10 +33,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e00735a180ec951a8afced0f5c74f7a9466e50b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534097"
 ---
 # <a name="analyze-and-model-your-architecture"></a>아키텍처 분석 및 모델링
@@ -48,7 +48,7 @@ Visual Studio 아키텍처 및 모델링 도구를 사용하여 앱을 디자인
 
  각 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-## <a name="to"></a>대상
+## <a name="to"></a>작업
 
 |시나리오|문서|
 |-|-|
@@ -65,10 +65,10 @@ Visual Studio 아키텍처 및 모델링 도구를 사용하여 앱을 디자인
 
 |**모델 형식 및 일반적인 용도**|
 |-------------------------------------|
-|**코드 맵**<br /><br /> 코드 맵을 통해 코드의 구성과 관계를 확인할 수 있습니다.<br /><br /> 일반적인 용도:<br /><br /> -구조와 종속성을 더 잘 이해할 수 있도록 프로그램 코드를 검사 하 고, 업데이트 하 고, 제안 된 변경 비용을 예측 합니다.<br /><br /> 참조<br /><br /> -   [솔루션 전체에서 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />-   [코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [코드 맵 분석기를 사용 하 여 잠재적인 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)|
-|**레이어 다이어그램**<br /><br /> 레이어 다이어그램을 통해 애플리케이션 구조를 명시적 종속성이 포함된 레이어 또는 블록 집합으로 정의할 수 있습니다. 유효성 검사를 실행하여 코드의 종속성과 레이어 다이어그램에 설명된 종속 간 충돌을 검색할 수 있습니다.<br /><br /> 일반적인 용도:<br /><br /> -수명 동안 많은 변경 내용을 적용 하 여 응용 프로그램의 구조를 안정화 합니다.<br />-코드에 대 한 변경 내용을 체크 인하기 전에 의도 하지 않은 종속성 충돌을 검색 합니다.<br /><br /> 참조<br /><br /> -   [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />-   [레이어 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
+|**코드 맵**<br /><br /> 코드 맵을 통해 코드의 구성과 관계를 확인할 수 있습니다.<br /><br /> 일반적인 용도:<br /><br /> -구조와 종속성을 더 잘 이해할 수 있도록 프로그램 코드를 검사 하 고, 업데이트 하 고, 제안 된 변경 비용을 예측 합니다.<br /><br /> 다음을 참조하세요.<br /><br /> -   [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />-   [코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [코드 맵 분석기를 사용 하 여 잠재적인 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)|
+|**레이어 다이어그램**<br /><br /> 레이어 다이어그램을 통해 애플리케이션 구조를 명시적 종속성이 포함된 레이어 또는 블록 집합으로 정의할 수 있습니다. 유효성 검사를 실행하여 코드의 종속성과 레이어 다이어그램에 설명된 종속 간 충돌을 검색할 수 있습니다.<br /><br /> 일반적인 용도:<br /><br /> -수명 동안 많은 변경 내용을 적용 하 여 응용 프로그램의 구조를 안정화 합니다.<br />-코드에 대 한 변경 내용을 체크 인하기 전에 의도 하지 않은 종속성 충돌을 검색 합니다.<br /><br /> 다음을 참조하세요.<br /><br /> -   [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />-   [레이어 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
 |**UML 모델**<br /><br /> UML 모델에는 클래스, 구성 요소, 사용 사례, 동작 및 시퀀스 다이어그램을 비롯한 여러 뷰가 포함됩니다. 애플리케이션 도메인에 맞게 UML을 사용자 지정할 수 있습니다. 예를 들어 태그, 추가 정보 및 제약 조건을 모델 요소에 연결할 수 있습니다. 모델에서 작동하는 도구를 정의할 수도 있습니다. [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)를 참조 하세요.<br /><br /> 일반적인 용도:<br /><br /> -요구 사항 및 디자인을 설명 합니다. 애플리케이션 개발에 UML을 빠르게 적용할 수 있습니다. [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)을 참조 하세요.<br />-테스트 또는 응용 프로그램의 일부를 생성 하거나 구성 합니다. 표기법을 사용자 지정하고 생성 템플릿 또는 구성 가능한 애플리케이션을 개발하려면 몇 가지 작업이 필요합니다. [모델에서 앱 생성 및 구성](../modeling/generate-and-configure-your-app-from-models.md)을 참조 하세요.<br />-일반적인 설명 및 작은 프로젝트의 코드 생성 또는 구성에 대해 설명 합니다.|
-|**DSL(도메인 특정 언어)**<br /><br /> DSL은 특정 용도에 맞게 디자인하는 표기법입니다. Visual Studio에서는 일반적으로 그래픽으로 표시됩니다.<br /><br /> 일반적인 용도:<br /><br /> -응용 프로그램의 일부를 생성 하거나 구성 합니다. 표기법 및 도구를 개발하려면 작업이 필요합니다. 결과는 UML 사용자 지정보다 도메인에 더 적합할 수 있습니다.<br />-여러 프로젝트에서 사용 하는 경우 DSL 및 도구를 개발 하는 데 따른 투자가 반환 되는 대량 프로젝트 또는 제품 라인의 경우<br /><br /> 참조<br /><br /> -   [Visual Studio 용 모델링 SDK-도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**DSL(도메인 특정 언어)**<br /><br /> DSL은 특정 용도에 맞게 디자인하는 표기법입니다. Visual Studio에서는 일반적으로 그래픽으로 표시됩니다.<br /><br /> 일반적인 용도:<br /><br /> -응용 프로그램의 일부를 생성 하거나 구성 합니다. 표기법 및 도구를 개발하려면 작업이 필요합니다. 결과는 UML 사용자 지정보다 도메인에 더 적합할 수 있습니다.<br />-여러 프로젝트에서 사용 하는 경우 DSL 및 도구를 개발 하는 데 따른 투자가 반환 되는 대량 프로젝트 또는 제품 라인의 경우<br /><br /> 다음을 참조하세요.<br /><br /> -   [Visual Studio 용 모델링 SDK-도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 
 ## <a name="where-can-i-get-more-information"></a>추가 정보는 어디서 확인할 수 있나요?
 
@@ -76,7 +76,7 @@ Visual Studio 아키텍처 및 모델링 도구를 사용하여 앱을 디자인
 |-|-|
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [Visual Studio 2015의 모델링에 대 한 새로운 기능](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps 및 애플리케이션 수명 주기 관리](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

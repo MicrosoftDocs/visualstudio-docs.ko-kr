@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298994"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML 동작 다이어그램: 지침
@@ -43,7 +43,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
   동작 다이어그램의 요소에 대 한 참조 정보는 [UML 동작 다이어그램: 참조](../modeling/uml-activity-diagrams-reference.md)를 참조 하세요.
 
-## <a name="Relationships"></a>다른 다이어그램과의 관계
+## <a name="relationship-to-other-diagrams"></a><a name="Relationships"></a> 다른 다이어그램과의 관계
  동작 다이어그램을 그려서 비즈니스 프로세스 또는 사용자가 시스템을 사용하는 방법을 설명할 경우 사용 사례 다이어그램을 그려서 같은 정보를 다른 뷰로 표시할 수 있습니다. 사용 사례 다이어그램에서는 동작을 사용 사례로 그립니다. 사용 사례에 해당 동작과 같은 이름을 지정합니다. 사용 사례 뷰의 장점은 다음을 수행할 수 있다는 점입니다.
 
 - 포함 관계를 사용하여 더 작은 작업/사용 사례로 더 큰 작업/사용 사례를 구성하는 방법을 한 다이어그램에 표시합니다.
@@ -56,7 +56,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
   동작 다이어그램에서 작업 간에 전달된 데이터 흐름을 표시할 수 있습니다. [데이터 흐름 설명](#DataFlows)에 대 한 섹션을 참조 하세요. 그러나 동작 다이어그램에서는 데이터 구조를 설명하지 않습니다. 데이터 구조를 설명하려면 UML 클래스 다이어그램을 그립니다. 자세한 내용은 [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)을 참조 하세요.
 
-## <a name="BasicSteps"></a>동작 다이어그램을 그리는 기본 단계
+## <a name="basic-steps-for-drawing-activity-diagrams"></a><a name="BasicSteps"></a> 동작 다이어그램을 그리는 기본 단계
  모델링 다이어그램을 만드는 자세한 단계는 [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)에 설명 되어 있습니다.
 
 #### <a name="to-draw-an-activity-diagram"></a>동작 다이어그램을 그리려면
@@ -100,7 +100,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
     > [!NOTE]
     > 다이어그램에 첫 번째 요소를 추가할 때만 동작이 UML 모델 탐색기에 표시됩니다.
 
-## <a name="SimpleControlFlow"></a>제어 흐름 설명
+## <a name="describing-control-flow"></a><a name="SimpleControlFlow"></a> 제어 흐름 설명
  동작 다이어그램에서는 비즈니스 프로세스나 소프트웨어 알고리즘을 일련의 작업으로 설명합니다. 커넥터 화살표는 한 작업에서 다음 작업으로 제어가 순차적으로 전달되는 방식을 보여 줍니다. 일반적으로 작업은 이전 작업이 완료된 후에만 시작될 수 있습니다.
 
  다음 그림은 작업, 커넥터, 분기 및 루프가 있는 일련의 작업을 표시하는 방법의 한 가지 예입니다. 각 요소는 다음 섹션에서 더 자세히 설명합니다.
@@ -149,7 +149,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
      이 메서드는 하위 동작을 설명할 때나 동작을 시작하는 상태를 명시적으로 지정할 필요가 없을 경우 가장 유용합니다. 예를 들어 Order a Meal 동작은 분명히 고객이 배고플 때 시작됩니다.
 
-- **이벤트 노드 수락**
+- **이벤트 적용 노드**
 
      [동시 흐름](#Concurrent)섹션에 설명 된 대로 **Accept 이벤트 노드**를 만들어 사용자 입력과 같은 특정 이벤트에 응답 하는 스레드의 시작을 표시 합니다. 노드에 들어오는 흐름을 제공하지 마세요. 들어오는 흐름을 생략하면 이벤트가 발생할 때마다 스레드가 시작됩니다.
 
@@ -174,7 +174,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
   단순한 모양은 UML 모델의 파트를 구성하지 않고 UML 모델 탐색기에 나타나지 않습니다.
 
-## <a name="DataFlows"></a>데이터 흐름 설명
+## <a name="describing-data-flow"></a><a name="DataFlows"></a> 데이터 흐름 설명
  동작에 대해 나가거나 들어오는 데이터 전달은 다음 두 가지 방법의 하나로 설명할 수 있습니다.
 
 - **개체 노드**를 사용 합니다. 이는 동작 간에 흐르는 정보를 설명하는 가장 단순한 방법입니다. 개체 노드는 프로그램의 변수와 같습니다. 한 작업에서 다른 작업으로 전달되는 하나 이상의 값을 저장하는 항목을 나타냅니다.
@@ -189,7 +189,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
  다이어그램에서 해당 데이터를 설명하려면 다음 그림과 같이 커넥터를 개체 노드 및 두 개의 커넥터로 바꿉니다.
 
- ![개체 노드는 작업 간에 전달 되는 데이터를 표시할 수 있습니다.](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
+ ![동작 간에 전달된 데이터를 표시할 수 있는 개체 노드](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
 
  모퉁이가 둥근 사각형(예: 상품 발송)은 처리가 발생하는 작업을 나타냅니다. 모퉁이가 각진 사각형(예: 배송 주소)은 한 작업에서 다른 작업으로 개체의 흐름을 나타냅니다.
 
@@ -203,13 +203,13 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 #### <a name="buffering-data-in-object-nodes"></a>개체 노드에서 데이터 버퍼링
  개체 노드는 여러 개체에 대한 버퍼로 사용될 수 있습니다. 다음 그림에서 제어 흐름은 사용자가 [choose more] 루프(1)를 여러 번 방문하고 동시에 Chosen Menu Items 개체 노드(2)에 사용자 선택이 누적됨을 보여 줍니다. 마지막으로 사용자가 선택을 완료하면 Chosen Menu Items 버퍼에서 전체 선택 목록을 적용하는 Confirm Order 작업(3)으로 제어가 전달됩니다.
 
- ![개체 노드의 데이터 버퍼링](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
+ ![개체 노드에서 데이터 버퍼링](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
 
  개체 노드의 속성을 설정하여 버퍼의 항목을 저장하는 방법을 지정할 수 있습니다.
 
 - **순서** 속성을 설정 합니다.
 
-  - **순서가** 지정 되지 않은 임의 또는 지정 되지 않은 순서를 지정 합니다. (기본값)
+  - **순서가** 지정 되지 않은 임의 또는 지정 되지 않은 순서를 지정 합니다. 이 속성의 기본값입니다.
 
   - 지정 된 순서에 따라 특정 키에 따라 **순서를 지정** 합니다.
 
@@ -222,7 +222,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>입력 및 출력 핀을 사용하여 데이터 흐름 설명
  **출력 핀** 및 **입력 핀** 을 사용 하 여 한 동작의 출력과 다른 동작에 대 한 입력을 개별적으로 설명할 수 있습니다.
 
- ![입력 및 출력 핀은 작업 매개 변수입니다.](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
+ ![작업 매개 변수로 사용되는 입력 및 출력 핀](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
 
  Pin을 만들려면 도구 상자에서 **입력 pin** 또는 **출력 핀** 을 클릭 한 다음 작업을 클릭 합니다. 작업 경계로 핀을 이동하고 해당 이름을 변경할 수 있습니다. **동작 호출 작업**, **작업 호출**작업, **신호 보내기**작업 및 **이벤트 적용 작업**을 포함 하 여 모든 종류의 작업에 입력 및 출력 핀을 만들 수 있습니다.
 
@@ -236,7 +236,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
  또는 출력 핀 형식과 입력 핀 형식 간에 데이터를 바꾸는 변환이 개체 흐름에 포함되도록 지정할 수 있습니다. 이 종류의 가장 일반적인 변환만으로 더 큰 형식에서 적절한 파트를 추출할 수 있습니다. 그림의 예제는 주문 세부 정보에서 배송 주소를 추출하는 변환이 있음을 의미합니다.
 
-## <a name="Details"></a>더 자세히 작업 정의
+## <a name="defining-an-action-in-more-detail"></a><a name="Details"></a> 더 자세히 작업 정의
  작업 이름을 사용하여 일반적으로 획득하는 결과를 분명히 설명하는 방법 이외에 다음과 같은 몇 가지 방법으로 작업에 세부 정보를 추가할 수 있습니다.
 
 - **Body** 속성에서 보다 자세한 설명을 작성 합니다. 예를 들어 프로그램 코드 또는 의사 코드의 조각을 작성하거나 획득한 결과에 대한 전체 설명을 작성할 수 있습니다.
@@ -245,12 +245,12 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 - 작업의 **로컬 사후** 조건 및 **로컬 사전 조건** 속성을 설정 하 여 그 결과를 보다 구체적인 세부 정보로 설명 합니다. 자세한 내용은 [사후 조건 및 사전 조건 정의](#Postcondition)를 참조 하세요.
 
-### <a name="Subactivities"></a>동작 호출 작업을 사용 하 여 하위 활동 설명
+### <a name="describing-sub-activities-with-call-behavior-actions"></a><a name="Subactivities"></a> 동작 호출 작업을 사용 하 여 하위 활동 설명
  개별 동작 다이어그램을 사용하여 작업의 세부 동작을 설명할 수 있습니다. 호출된 동작은 동작 호출 작업을 통해 주 동작 다이어그램에 표시되는 동작 다이어그램입니다. 하위 동작을 여러 번 그릴 필요가 없도록 동작 호출 작업을 사용하여 여러 동작 간에 공유되는 동작을 설명할 수도 있습니다.
 
  다음 그림에서 다이어그램 1에는 동작 호출 작업이 포함된 동작이 표시되고 다이어그램 2에는 호출된 동작을 나타내는 하위 동작 다이어그램이 표시됩니다.
 
- ![별도의 동작 다이어그램은 자세한 동작을 보여 줍니다.](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
+ ![세부 작업을 보여 주는 별도의 동작 다이어그램](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
 
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>동작 호출 작업으로 하위 동작을 설명하려면
 
@@ -283,9 +283,9 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 - 하위 동작 다이어그램에서 각 동작 매개 변수 노드에 들어오거나 나가는 개체 흐름을 표시하는 커넥터를 그립니다.
 
-  ![호출 동작의 핀이 활동 매개 변수에 매핑됩니다.](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
+  ![동작 호출의 핀과 동작 매개 변수 매핑](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a>사후 조건 및 사전 조건 정의
+### <a name="defining-postconditions-and-preconditions"></a><a name="Postcondition"></a> 사후 조건 및 사전 조건 정의
  **로컬 사후 조건** 및 **로컬 사전 조건** 속성을 사용 하 여 작업 결과를 자세히 지정할 수 있습니다. 이들 속성은 효과를 어떻게 얻는지를 설명하지 않고 작업의 효과를 설명합니다.
 
  이러한 속성을 설정 하려면 작업을 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다. 속성 창에서 속성에 값을 입력합니다.
@@ -295,11 +295,11 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
  고객이 신용 카드를 처리하는 데 필요한 완전하고 올바른 세부 정보를 제공했습니다.
 
- 사후 조건은 작업 발생 전후 상태 간의 관계를 표현합니다. 예를 들면 다음과 같습니다.
+ 사후 조건은 작업 발생 전후 상태 간의 관계를 표현합니다. 예:
 
  이자율이 이전보다 2배가 되었습니다.
 
- 작업에서 처리된 데이터의 특정 특성을 참조하여 사후 조건을 더 공식적인 스타일로 작성할 수 있습니다. 예를 들면 다음과 같습니다.
+ 작업에서 처리된 데이터의 특정 특성을 참조하여 사후 조건을 더 공식적인 스타일로 작성할 수 있습니다. 예:
 
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
 
@@ -319,10 +319,10 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
   - **동기** 를 false로 설정 하면 호출 된 작업이 완료 되기 전에 흐름이 다음 작업으로 계속 될 수 있음을 나타냅니다. 작업에서 출력 핀 또는 나가는 데이터 흐름을 정의하면 안 됩니다.
 
-## <a name="Concurrent"></a>동시 흐름
+## <a name="concurrent-flows"></a><a name="Concurrent"></a> 동시 흐름
  **분기 노드와** **조인 노드** 를 사용 하 여 동시에 실행할 수 있는 두 개 이상의 활동 스레드를 설명할 수 있습니다.
 
- ![포크 및 조인 노드는 동시 흐름을 표시 합니다.](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
+ ![동시 흐름을 보여 주는 분기 및 조인 노드](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
 
  **분기 노드의** 효과 (1)는 컨트롤 스레드를 둘 이상의 스레드로 나누는 것입니다. 이전 작업이 종료되면 분기의 출력 쪽 모든 작업이 시작될 수 있습니다.
 
@@ -392,13 +392,13 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
   예제에서는 변환을 보여 줍니다. 다이어그램 1의 첫 번째 작업에서는 출력 핀에 우편 번호를 생성합니다. 이 항목은 두 번째 작업에서 입력 핀에 연결됩니다. 그러나 두 번째 작업에는 완전히 지정된 주소가 필요합니다. 한 형식에서 다른 형식으로의 변환은 두 번째 동작인 주소 조회에서 지정됩니다. 이 동작은 개체 흐름의 변환 속성에서 참조됩니다. 주소 조회 동작에는 들어오는 우편 번호에 대한 한 동작 매개 변수 노드 및 나가는 전체 주소에 대한 다른 동작 매개 변수 노드가 포함됩니다.
 
-  ![다른 다이어그램에 정의 된 개체 변환](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
+  ![다른 다이어그램에 정의된 개체 변환](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
 
   변환 또는 선택을 지정할 수 있는 두 가지 방법은 다음과 같습니다.
 
 - 주석을 입력 또는 출력 핀에 연결합니다.
 
-  - 이 설명을 일반적인 주석과 구분 하기 위해 <\<**변환**> > 또는 <\<> **선택을**사용 하 여 주석을 시작할 수 있습니다.
+  - 이 설명을 일반적인 주석과 구분 하기 위해 <\<**transformation**>> 또는 <>를 사용 하 여 주석을 시작할 수 있습니다 \<**selection**> .
 
 - 개별 동작 다이어그램에서 변환 또는 선택을 자세히 지정합니다.
 
@@ -426,5 +426,5 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
    개체 노드 및 개별 입력/출력 핀에 대해 선택을 정의할 수도 있습니다. 이전 절차에서와 같이 선택 활동을 정의한 다음 개체 노드의 **selection** 속성 또는 입력 또는 출력 핀을 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Uml 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [uml 시퀀스 다이어그램](../modeling/uml-sequence-diagrams-reference.md) : uml [사용 사례 다이어그램](../modeling/uml-use-case-diagrams-reference.md) [참조:](../modeling/uml-component-diagrams-reference.md) uml 클래스 다이어그램 참조: Uml [클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) 참조: [uml 구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: 참조 [비디오: 동작 다이어그램을 사용 하 여 비즈니스 워크플로 캡처](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

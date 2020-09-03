@@ -12,10 +12,10 @@ ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
 ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850983"
 ---
 # <a name="creating-your-own-start-page"></a>고유한 시작 페이지 만들기
@@ -99,6 +99,6 @@ ms.locfileid: "75850983"
   
    Bin\debug 디렉터리의 .vsix 파일을 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 웹 사이트나 다른 웹 사이트 또는 인트라넷 공유에 업로드 하 여 사용자 지정 시작 페이지를 공유할 수 있습니다. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [시작 페이지  사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)  
+## <a name="see-also"></a>관련 항목  
+ [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)   
  [연습: 시작 페이지에 사용자 지정 XAML 추가](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
