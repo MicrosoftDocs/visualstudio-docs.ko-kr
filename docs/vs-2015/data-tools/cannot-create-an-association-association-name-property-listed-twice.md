@@ -1,5 +1,5 @@
 ---
-title: 연결 &lt;association name &gt;을 만들 수 없습니다.-속성이 두 번 나열 됩니다. | Microsoft Docs
+title: 연결 연결 이름을 만들 수 없습니다. &lt; &gt; 속성은 두 번 나열 됩니다. | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e4a1d20b5c341c1643836ae30e5de6243f35454
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662555"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>&lt;association name&gt; 연결을 만들 수 없습니다. - 속성이 두 번 나열된 경우
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-\<association name> 연결을 만들 수 없습니다. 동일한 속성이 한 번을 초과해 나열되었습니다. \<property name>.
+연결을 만들 수 없습니다 \<association name> . 동일한 속성이 두 번 이상 나열 \<property name> 됩니다.
 
  연결이 **연결 편집기** 대화 상자에서 선택한 **연결 속성**에 의해 정의되었습니다. 속성은 연결의 각 클래스에 대해 한 번만 나열될 수 있습니다.
 
@@ -35,5 +35,5 @@ ms.locfileid: "72662555"
 
 - **확인**을 클릭합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [Visual Studio의 LINQ to SQL 도구](https://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186) [방법: LINQ to SQL 클래스 간 연결 (관계) 만들기 (o/r 디자이너)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) [연습: LINQ to SQL 클래스 만들기 (o-r 디자이너)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

@@ -1,5 +1,5 @@
 ---
-title: 지원 코드 변경 내용 (C#) | Microsoft Docs
+title: '지원 되는 코드 변경 내용 (c #) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823532"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C#)
@@ -47,7 +47,7 @@ ms.locfileid: "67823532"
 - 활성 문 주위에 `foreach`, `using` 또는 `lock` 추가  
   
 ## <a name="unsafe-code"></a>안전하지 않은 코드  
- 안전하지 않은 코드에 대한 변경에는 안전한 코드에 대한 변경과 동일한 제한 사항이 적용되고 한 가지 제한 사항이 추가로 적용됩니다. 편집 하며 계속 하기 변경 내용이 포함 된 메서드 안에 있는 안전 하지 않은 코드를 지원 하지 않습니다는 `stackalloc` 연산자입니다.  
+ 안전하지 않은 코드의 변경에는 안전한 코드의 변경과 동일한 제한 사항이 적용되고 한 가지 제한 사항이 추가로 적용됩니다. `stackalloc` 연산자가 포함된 메서드 안에 있는 안전하지 않은 코드의 변경은 편집하며 계속하기에서 지원하지 않습니다.  
   
 ## <a name="exceptions"></a>예외  
  편집하며 계속하기는 `catch` 및 `finally` 블록에 대한 변경을 지원합니다. 단 활성 문 주위에 `catch` 또는 `finally` 블록은 추가할 수 없습니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "67823532"
   
   - 이전에 캡처하지 않은 변수 캡처  
 
-  - 쿼리 식의 형식 변경 (예: select a = > 새로 만들기 선택 {A =을};)  
+  - 쿼리 식의 형식 변경 (예: a => 선택 새로 만들기 {A = a};)  
 
   - 활성 문을 포함하는 `where` 제거  
 
@@ -75,16 +75,16 @@ ms.locfileid: "67823532"
   
 - Dr. Watson 덤프 디버깅  
   
-- 처리 되지 않은 예외가 발생 한 후 코드 편집 때는 "**처리 되지 않은 예외에 대 한 호출 스택 해제**"을 선택 합니다.  
+- "처리 되지 않은**예외에 대 한 호출 스택 해제**" 옵션을 선택 하지 않은 경우 처리 되지 않은 예외 후 코드 편집  
   
 - 포함된 런타임 애플리케이션 디버깅  
   
-- 응용 프로그램 디버깅 **연결할** 를 선택 하 여 응용 프로그램을 실행 하는 대신 **시작** 에서 합니다 **디버그** 메뉴.  
+- **디버그** 메뉴에서 **시작** 을 선택 하 여 응용 프로그램을 실행 하는 대신 **에 연결** 된 응용 프로그램 디버깅  
   
 - 최적화된 코드 디버깅  
   
 - 빌드 오류가 발생하여 새 버전을 빌드하는 데 실패한 후 이전 버전의 코드 디버깅  
   
 ## <a name="see-also"></a>관련 항목  
- [편집하며 계속하기(Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [편집 하며 계속 하기 (Visual c #)](../debugger/edit-and-continue-visual-csharp.md)   
  [방법: 편집하며 계속하기 사용(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

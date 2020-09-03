@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
+title: 'IDebugEngineProgram2:: WatchForThreadStep | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 59489af368c2e95a2d3cc93edbd6f7ab02a1c156
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195646"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-실행에 대 한 감시 (또는 실행에 대 한 감시 중지) 지정한 스레드에서 발생 합니다.  
+지정 된 스레드에서 실행을 감시 하거나 실행에 대 한 감시를 중지 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,25 +46,25 @@ int WatchForThreadStep( 
   
 #### <a name="parameters"></a>매개 변수  
  `pOriginatingProgram`  
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 단계별 되 고 프로그램을 나타내는 개체입니다.  
+ 진행 단계별 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.  
   
  `dwTid`  
- [in] 조사할 스레드의 식별자를 지정 합니다.  
+ 진행 감시할 스레드의 식별자를 지정 합니다.  
   
  `fWatch`  
- [in] 0이 아닌 (`TRUE`) 수단으로 식별 되는 스레드에서 실행에 대 한 감시 시작 `dwTid`이 고, 그렇지 않으면 0 (`FALSE`) 의미에서 실행에 대 한 감시 중지 `dwTid`합니다.  
+ 진행 0이 아닌 값 ( `TRUE` )은로 식별 된 스레드에서 실행을 감시 하기 시작 하는 것 `dwTid` 을 의미 합니다. 그렇지 않으면 0 ( `FALSE` )은에서 실행을 감시 하지 않음을 의미 `dwTid` 합니다.  
   
  `dwFrame`  
- [in] 단계 형식을 제어 하는 프레임 인덱스를 지정 합니다. 이 경우 값은 영 (0), 단계 형식이 "step into" 및로 식별 되는 스레드 때마다 프로그램을 중지 해야 `dwTid` 실행 합니다. 때 `dwFrame` 0이 아닌, 단계 형식이 "step over" 및 프로그램으로 스레드를 식별 하는 경우에 중지 해야 `dwTid` 인덱스는 같음 또는 보다는 스택의 상위 프레임에서 실행 되 고 `dwFrame`입니다.  
+ 진행 단계 유형을 제어 하는 프레임 인덱스를 지정 합니다. 이 값이 0 이면 단계 형식이 "한 단계씩 코드 실행" 이며로 식별 되는 스레드가 실행 될 때마다 프로그램이 중지 됩니다 `dwTid` . `dwFrame`가 0이 아닌 경우 단계 유형은 "프로시저 단위 실행" 이며,로 식별 된 스레드가 `dwTid` 와 스택에서 같은 인덱스의 프레임에서 실행 중인 경우에만 프로그램을 중지 해야 합니다 `dwFrame` .  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 세션 디버그 관리자 (SDM)로 식별 되는 프로그램 단계 하는 경우는 `pOriginatingProgram` 매개 변수를에 알립니다 다른 모든 연결 된 프로그램은이 메서드를 호출 하 여 합니다.  
+ 세션 디버그 관리자 (SDM)는 매개 변수로 식별 되는 프로그램의 단계를 수행 하는 경우 `pOriginatingProgram` 이 메서드를 호출 하 여 다른 모든 연결 된 프로그램에 알립니다.  
   
- 이 메서드는 동일한 스레드에서 단계별 실행에 적용 됩니다.  
+ 이 메서드는 동일한 스레드 단계별 실행에만 적용 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

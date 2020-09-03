@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f40ed5f3070f177d1c914495f78a223364d64ae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662670"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 지원
@@ -60,7 +60,7 @@ ms.locfileid: "72662670"
 
 ### <a name="to-generate-a-new-class-from-a-unit-test"></a>단위 테스트에서 새 클래스를 생성하려면
 
-1. 테스트 프로젝트에는 UnitTest1이라는 파일이 포함되어 있습니다. **솔루션 탐색기** 에서 이 파일을 두 번 클릭하여 코드 편집기에서 엽니다. 테스트 클래스 및 테스트 메서드가 생성되었습니다.
+1. 테스트 프로젝트에는 UnitTest1이라는 파일이 포함되어 있습니다. **솔루션 탐색기** 에서이 파일을 두 번 클릭 하 여 코드 편집기에서 엽니다. 테스트 클래스 및 테스트 메서드가 생성되었습니다.
 
 2. `UnitTest1` 클래스에 대한 선언을 찾아서 이름을 `AutomobileTest`로 바꿉니다. C#에서 `UnitTest1()` 생성자가 있는 경우 이름을 `AutomobileTest()`로 바꿉니다.
 
@@ -71,13 +71,13 @@ ms.locfileid: "72662670"
 
      ![Visual Basic의 스마트 태그 밑줄](../ide/media/genclass-underlinevb.png "GenClass_UnderlineVB") Visual Basic
 
-     ![C&#35; 의 스마트 태그 밑줄](../ide/media/genclass-underline.png "GenClass_Underline") 개체C#
+     ![C&#35;의 스마트 태그 밑줄 ](../ide/media/genclass-underline.png "GenClass_Underline") Visual C #
 
 4. 스마트 태그를 마우스 포인터로 가리켜 `Automobile` 이라는 형식이 아직 정의되지 않았다는 오류 메시지를 표시합니다. 스마트 태그를 클릭하거나 Ctrl+. (Ctrl+마침표)를 눌러 다음 그림과 같이 사용법에서 생성 바로 가기 메뉴를 엽니다.
 
      ![Visual Basic의 스마트 태그 상황에 맞는 메뉴](../ide/media/genclass-smartvb.png "GenClass_SmartVB") Visual Basic
 
-     ![&#35; C의 스마트 태그 상황에 맞는 메뉴](../ide/media/genclass-smartcs.png "GenClass_SmartCS") 개체C#
+     ![C&#35;의 스마트 태그 상황에 맞는 메뉴 ](../ide/media/genclass-smartcs.png "GenClass_SmartCS") Visual C #
 
 5. 이제 두 가지 선택 옵션이 있습니다. **'Automobile 클래스' 생성** 을 클릭하여 테스트 프로젝트에서 새 파일을 만들고 `Automobile`이라는 빈 클래스로 채울 수 있습니다. 이렇게 하면 현재 프로젝트에 기본 액세스 한정자가 있는 새 파일에서 새 클래스를 빠르게 만들 수 있습니다. **새 형식 생성** 을 클릭하여 **새 형식 생성** 대화 상자를 열 수도 있습니다. 기존 파일에 클래스를 넣고 다른 프로젝트에 파일을 추가하는 옵션이 제공됩니다.
 
@@ -106,7 +106,7 @@ ms.locfileid: "72662670"
 
      ![Visual Basic의 속성 생성 상황에 맞는 메뉴](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB") Visual Basic
 
-     ![&#35; C의 속성 생성 상황에 맞는 메뉴](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") 개체C#
+     ![C&#35;의 속성 생성 상황에 맞는 메뉴 ](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") Visual C #
 
 ### <a name="to-locate-the-source-code"></a>소스 코드를 찾으려면
 
@@ -175,5 +175,5 @@ ms.locfileid: "72662670"
 
      ![통과 한 테스트 결과](../ide/media/testspassed.png "TestsPassed") 테스트 결과 창
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  IntelliSense [단위 테스트](../test/unit-test-your-code.md) 를 [사용 하 여](../ide/using-intellisense.md) [코드 작성 코드](../ide/writing-code-in-the-code-and-text-editor.md) [에서 생성](../misc/generate-from-usage.md)

@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824905"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>검색 식의 논리 및 고급 연산자
 
-논리 연산자 및 고급 검색 연산자를 사용하여 **도움말 뷰어**에서 도움말 콘텐츠의 검색을 구체화합니다.
+논리 연산자 및 고급 검색 연산자를 사용 하 여 **도움말 뷰어에서**도움말 콘텐츠의 검색을 구체화할 수 있습니다.
 
 ## <a name="logical-operators"></a>논리 연산자
 
 논리 연산자는 여러 검색어가 검색 쿼리에서 결합되는 방식을 지정합니다. 다음 표는 논리 연산자 AND, OR, NOT 및 NEAR을 보여줍니다.
 
-|검색 대상|기능|예|결과|
+|검색 대상|Windows Server Update Services와 함께|예제|결과|
 |-------------------|---------|-------------|------------|
 |동일한 아티클에 두 용어가 모두 있음|AND|dib AND palette|"dib" 및 "palette"를 둘 다 포함하는 항목|
 |아티클에 두 용어 중 하나가 있음|또는|raster OR vector|"raster" 또는 "vector"를 포함하는 항목|
 |동일한 아티클에 첫 번째 용어는 있고 두 번째 용어는 없음|NOT|"operating system" NOT DOS|"operating system"을 포함하지만 "DOS"를 포함하지 않는 항목|
-|한 아티클에 두 용어가 서로 가까이 있음|근사값|user NEAR kernel|"kernel"의 근접 범위 내에 "user"를 포함하는 항목|
+|한 아티클에 두 용어가 서로 가까이 있음|NEAR|user NEAR kernel|"kernel"의 근접 범위 내에 "user"를 포함하는 항목|
 
 > [!IMPORTANT]
 > 검색 엔진에서 인식할 수 있도록 논리 연산자는 모두 대문자로 입력해야 합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "67824905"
 
 고급 검색 연산자는 아티클에서 검색어를 찾을 위치를 지정하여 콘텐츠 검색을 구체화합니다. 다음 표에서 4개의 사용 가능한 고급 검색 연산자를 설명합니다.
 
-|검색 대상|기능|예|결과|
+|검색 대상|Windows Server Update Services와 함께|예제|결과|
 |-------------------|---------|-------------|------------|
 |아이클 제목의 용어|`title:`|`title:binaryreader`|제목에 “binaryreader”가 포함된 항목입니다.|
 |코드 예제의 용어|`code:`|`code:readdouble`|코드 예제에 “readdouble”이 포함된 항목입니다.|
@@ -66,7 +66,7 @@ ms.locfileid: "67824905"
 > [!NOTE]
 > `code:` 연산자는 일반적으로 코드로 표시되는 콘텐츠와는 반대로, 프로그래밍 언어 레이블로 표시되는 콘텐츠만 찾습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 항목 검색](../help-viewer/find-topics.md)
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

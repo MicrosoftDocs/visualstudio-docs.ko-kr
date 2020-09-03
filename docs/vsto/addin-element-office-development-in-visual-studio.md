@@ -16,16 +16,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543769"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;addin &gt; 요소 (Visual Studio에서 Office 개발)
   네임 스페이스의 **addin** 요소에는 `vstav3` Visual Studio를 사용 하 여 개발한 문서 수준 사용자 지정 및 VSTO 추가 기능 Microsoft Office 관련 된 정보가 포함 되어 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```xml
 <addIn>
@@ -59,7 +59,7 @@ ms.locfileid: "85543769"
 ### <a name="entrypoints"></a>entryPoints
  필수 요소. **진입점** 요소는 [&#60;진입점&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)에 설명 되어 있습니다.
 
-### <a name="update"></a>업데이트
+### <a name="update"></a>update
  필수 요소. **Update** 요소는 [Visual Studio&#41;에서 Office 개발 &#40;&#60;업데이트&#62; 요소 ](../vsto/update-element-office-development-in-visual-studio.md)에 설명 되어 있습니다.
 
 ### <a name="postactions"></a>postActions
@@ -190,7 +190,7 @@ ms.locfileid: "85543769"
 </vstav3:addIn>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
 - [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)

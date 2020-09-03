@@ -20,31 +20,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825419"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 사용될 수 있습니다.  
+Visual Studio는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 사용될 수 있습니다.  
   
  이 항목에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 호스팅 중 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 로드하고 빌드할 프로젝트와 .targets 파일을 사용자 지정할 때 고려해야 하는 부분을 설명합니다. 이를 통해 IntelliSense 및 디버깅 작업과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기능이 사용자 지정 프로젝트에서 작동하는지 확인할 수 있습니다.  
   
- C++ 프로젝트에 대한 자세한 내용은 [프로젝트 파일](/cpp/build/reference/project-files)을 참조하세요.  
+ C + + 프로젝트에 대 한 자세한 내용은 [프로젝트 파일](/cpp/build/reference/project-files)을 참조 하세요.  
   
 ## <a name="project-file-name-extensions"></a>프로젝트 파일 확장명  
- MSBuild.exe에서는 .*proj 패턴과 일치하는 모든 프로젝트 파일 확장명을 인식합니다. 하지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 프로젝트를 로드할 언어별 프로젝트 시스템을 결정하는 이러한 프로젝트 파일 확장명의 일부만 인식합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에는 언어 중립적인 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 기반 프로젝트 시스템이 없습니다.  
+ MSBuild.exe에서는 .*proj 패턴과 일치하는 모든 프로젝트 파일 확장명을 인식합니다. 하지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 프로젝트를 로드할 언어별 프로젝트 시스템을 결정하는 이러한 프로젝트 파일 확장명의 일부만 인식합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에는 언어 중립적인 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 기반 프로젝트 시스템이 없습니다.  
   
- 예를 들어, [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트 시스템에서는 .csproj 파일을 로드하지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 .xxproj 파일을 로드할 수 없습니다. 임의의 언어로 된 소스 파일의 프로젝트 파일은 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에 로드되는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 또는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 파일과 같은 확장명을 사용해야 합니다.  
+ 예를 들어, [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트 시스템에서는 .csproj 파일을 로드하지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 .xxproj 파일을 로드할 수 없습니다. 임의의 언어로 된 소스 파일의 프로젝트 파일은 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 에 로드되는 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 또는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]프로젝트 파일과 같은 확장명을 사용해야 합니다.  
   
 ## <a name="well-known-target-names"></a>잘 알려진 대상 이름  
- **에서** 빌드[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 클릭하면 프로젝트의 기본 대상이 실행됩니다. 보통 이 대상을 `Build`라고도 합니다. **다시 빌드** 또는 **정리** 명령을 선택하면 프로젝트에서 같은 이름의 대상이 실행됩니다. **게시** 를 클릭하면 프로젝트에서 `PublishOnly` 라는 대상이 실행됩니다.  
+ **에서** 빌드 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 클릭하면 프로젝트의 기본 대상이 실행됩니다. 보통 이 대상을 `Build`라고도 합니다. **다시 빌드** 또는 **정리** 명령을 선택하면 프로젝트에서 같은 이름의 대상이 실행됩니다. **게시** 를 클릭하면 프로젝트에서 `PublishOnly` 라는 대상이 실행됩니다.  
   
 ## <a name="configurations-and-platforms"></a>구성 및 플랫폼  
- 구성은 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 특성을 포함하는 `PropertyGroup` 요소에서 그룹화된 속성으로 `Condition` 프로젝트에 표시됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 표시할 프로젝트 구성과 플랫폼 목록을 만들기 위해 이러한 조건을 확인합니다. 이 목록을 추출하려면 조건의 형식이 다음과 비슷해야 합니다.  
+ 구성은 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 특성을 포함하는 `PropertyGroup` 요소에서 그룹화된 속성으로 `Condition` 프로젝트에 표시됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 표시할 프로젝트 구성과 플랫폼 목록을 만들기 위해 이러한 조건을 확인합니다. 이 목록을 추출하려면 조건의 형식이 다음과 비슷해야 합니다.  
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
@@ -52,10 +52,10 @@ Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 이를 위해 `PropertyGroup`, `ItemGroup`, `Import`, 속성 및 항목 요소에서 조건을 확인합니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 이를 위해 `PropertyGroup`, `ItemGroup`, `Import`, 속성 및 항목 요소에서 조건을 확인합니다.  
   
 ## <a name="additional-build-actions"></a>추가 빌드 작업  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 [파일 속성](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) 창의 **빌드 작업** 속성을 사용하여 프로젝트에 있는 파일의 항목 형식 이름을 변경할 수 있습니다. `Compile`, `EmbeddedResource`, `Content`, `None` 등의 항목 형식 이름은 프로젝트에 이미 있는 다른 모든 항목 형식 이름과 함께 항상 이 메뉴에 표시됩니다. 사용자 지정 항목 형식 이름이 항상 이 메뉴에 표시되도록 하려면 `AvailableItemName`이라는 항목 형식에 해당 이름을 추가하면 됩니다. 예를 들어, 프로젝트 파일에 다음을 추가하면 해당 파일을 가져오는 모든 프로젝트에 대해 `JScript` 사용자 지정 형식이 이 메뉴에 추가됩니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)][파일 속성](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) 창의 **빌드 작업** 속성을 사용 하 여 프로젝트에 있는 파일의 항목 형식 이름을 변경할 수 있습니다. `Compile`, `EmbeddedResource`, `Content`, `None` 등의 항목 형식 이름은 프로젝트에 이미 있는 다른 모든 항목 형식 이름과 함께 항상 이 메뉴에 표시됩니다. 사용자 지정 항목 형식 이름이 항상 이 메뉴에 표시되도록 하려면 `AvailableItemName`이라는 항목 형식에 해당 이름을 추가하면 됩니다. 예를 들어, 프로젝트 파일에 다음을 추가하면 해당 파일을 가져오는 모든 프로젝트에 대해 `JScript` 사용자 지정 형식이 이 메뉴에 추가됩니다.  
   
 ```  
 <ItemGroup>  
@@ -64,17 +64,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
-> 일부 항목 형식 이름은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 대해 고유하지만 이 드롭다운에는 나열되어 있지 않습니다.  
+> 일부 항목 형식 이름은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 대해 고유하지만 이 드롭다운에는 나열되어 있지 않습니다.  
   
 ## <a name="in-process-compilers"></a>In-Process 컴파일러  
- 가능한 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 성능 향상을 위해 in-process 버전의 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 컴파일러를 사용하려고 시도합니다. [!INCLUDE[csprcs](../includes/csprcs-md.md)]에는 적용되지 않습니다. 이러한 시도는 다음 조건이 충족되어야 제대로 작동합니다.  
+ 가능한 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 성능 향상을 위해 in-process 버전의 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 컴파일러를 사용하려고 시도합니다. 에는 적용 되지 않습니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] . 제대로 작동 하려면 다음 조건을 충족 해야 합니다.  
   
 - 프로젝트 대상에 `Vbc` 프로젝트에 대한 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 작업이 있어야 합니다.  
   
 - 작업의 `UseHostCompilerIfAvailable` 매개 변수가 true로 설정되어 있어야 합니다.  
   
 ## <a name="design-time-intellisense"></a>디자인 타임 IntelliSense  
- 빌드에서 출력 어셈블리를 생성하기 전에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 IntelliSense 지원을 받으려면 다음 조건이 충족되어야 합니다.  
+ 빌드에서 출력 어셈블리를 생성하기 전에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 IntelliSense 지원을 받으려면 다음 조건이 충족되어야 합니다.  
   
 - `Compile`이라는 대상이 있어야 합니다.  
   
@@ -85,20 +85,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 - "In-Process 컴파일러" 단원에 나열된 조건이 충족되어야 합니다.  
   
 ## <a name="building-solutions"></a>솔루션 빌드  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내에서 솔루션 파일 및 프로젝트 빌드 순서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 자체에서 제어합니다. 명령줄에서 msbuild.exe를 사용하여 솔루션을 빌드할 때 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 솔루션 파일을 구문 분석하고 프로젝트 빌드 순서를 정합니다. 두 경우 모두 프로젝트는 종속성 순서에 따라 개별적으로 빌드되며 프로젝트 간 참조는 검색되지 않습니다. 이와 대조적으로 msbuild.exe를 사용하여 개별 프로젝트를 빌드하면 프로젝트 간 참조가 검색됩니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]내에서 솔루션 파일 및 프로젝트 빌드 순서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 자체에서 제어합니다. 명령줄에서 msbuild.exe를 사용하여 솔루션을 빌드할 때 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 에서는 솔루션 파일을 구문 분석하고 프로젝트 빌드 순서를 정합니다. 두 경우 모두 프로젝트는 종속성 순서에 따라 개별적으로 빌드되며 프로젝트 간 참조는 검색되지 않습니다. 이와 대조적으로 msbuild.exe를 사용하여 개별 프로젝트를 빌드하면 프로젝트 간 참조가 검색됩니다.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내에서 빌드할 때 `$(BuildingInsideVisualStudio)` 속성은 `true`로 설정됩니다. 프로젝트 또는 .targets 파일에서 이 속성을 사용하여 빌드가 다르게 동작하도록 할 수 있습니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]내에서 빌드할 때 `$(BuildingInsideVisualStudio)` 속성은 `true`로 설정됩니다. 프로젝트 또는 .targets 파일에서 이 속성을 사용하여 빌드가 다르게 동작하도록 할 수 있습니다.  
   
 ## <a name="displaying-properties-and-items"></a>속성 및 항목 표시  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 특정 속성 이름과 값을 인식합니다. 예를 들어, 프로젝트의 다음 속성을 사용하면 **Windows 애플리케이션** 이 **프로젝트 디자이너** 의 **애플리케이션 형식**상자에 나타납니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 특정 속성 이름과 값을 인식합니다. 예를 들어, 프로젝트의 다음 속성을 사용하면 **Windows 애플리케이션** 이 **프로젝트 디자이너** 의 **애플리케이션 형식**상자에 나타납니다.  
   
 ```  
 <OutputType>WinExe</OutputType>  
 ```  
   
- 속성 값은 **프로젝트 디자이너** 에서 편집할 수 있으며 프로젝트 파일에 저장할 수 있습니다. 이러한 속성을 직접 편집하여 잘못된 값이 지정되면 프로젝트가 로드될 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 경고를 표시하고 잘못된 값을 기본값으로 바꿉니다.  
+ 속성 값은 **프로젝트 디자이너** 에서 편집할 수 있으며 프로젝트 파일에 저장할 수 있습니다. 이러한 속성을 직접 편집하여 잘못된 값이 지정되면 프로젝트가 로드될 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 경고를 표시하고 잘못된 값을 기본값으로 바꿉니다.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 일부 속성의 기본값을 기억하고 있습니다. 이러한 속성은 기본값이 아닌 값을 가져야 프로젝트 파일에서 지속됩니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 일부 속성의 기본값을 기억하고 있습니다. 이러한 속성은 기본값이 아닌 값을 가져야 프로젝트 파일에서 지속됩니다.  
   
  임의의 이름을 갖는 속성은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 표시되지 않습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 임의의 속성을 수정하려면 XML 편집기에서 프로젝트 파일을 열고 직접 편집해야 합니다. 자세한 내용은 이 항목 뒷부분에 나오는 [Editing Project Files in Visual Studio](#BKMK_EditingProjects) 섹션을 참조하세요.  
   
@@ -117,17 +117,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="conditions-on-items-and-properties"></a>항목 및 속성에 대한 조건  
  빌드하는 동안 모든 조건이 완전히 고려됩니다.  
   
- 표시할 속성 값을 결정할 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 구성에 종속적인 속성은 구성에 무관한 속성과 다르게 확인됩니다. 구성에 종속적인 속성인 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 `Configuration` 및 `Platform` 속성을 적절하게 설정하고 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 프로젝트를 다시 확인하도록 지시합니다. 구성에 무관한 속성인 경우 조건이 확인되는 방법이 확실하지 않습니다.  
+ 표시할 속성 값을 결정할 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 구성에 종속적인 속성은 구성에 무관한 속성과 다르게 확인됩니다. 구성에 종속적인 속성인 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 `Configuration` 및 `Platform` 속성을 적절하게 설정하고 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 에 프로젝트를 다시 확인하도록 지시합니다. 구성에 무관한 속성인 경우 조건이 확인되는 방법이 확실하지 않습니다.  
   
  항목을 솔루션 탐색기에 표시해야 하는지 여부를 결정할 수 있도록 항목에 대한 조건식은 항상 무시됩니다.  
   
 ## <a name="debugging"></a>디버깅  
- 출력 어셈블리를 찾아서 시작하고 디버거를 연결하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 `OutputPath`, `AssemblyName` 및 `OutputType` 속성이 올바르게 정의되어 있어야 합니다. 빌드 프로세스에서 컴파일러를 통해 .pdb 파일을 생성하지 않으면 디버거가 연결되지 않습니다.  
+ 출력 어셈블리를 찾아서 시작하고 디버거를 연결하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 `OutputPath`, `AssemblyName`및 `OutputType` 속성이 올바르게 정의되어 있어야 합니다. 빌드 프로세스에서 컴파일러를 통해 .pdb 파일을 생성하지 않으면 디버거가 연결되지 않습니다.  
   
 ## <a name="design-time-target-execution"></a>디자인 타임 대상 실행  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 프로젝트를 로드할 때 특정 이름의 대상을 실행하려고 시도합니다. 이러한 대상에는 `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` 및 `CopyRunEnvironmentFiles`가 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 이러한 대상을 실행하여 컴파일러가 IntelliSense를 제공하도록 초기화되거나, 디버거가 초기화되거나, 솔루션 탐색기에 표시된 참조가 확인될 수 있도록 할 수 있습니다. 이러한 대상이 없어도 프로젝트를 제대로 로드하고 빌드할 수는 있지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 디자인 타임 환경이 완전하게 작동하지 않습니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 프로젝트를 로드할 때 특정 이름의 대상을 실행하려고 시도합니다. 이러한 대상에는 `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` 및 `CopyRunEnvironmentFiles`가 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 이러한 대상을 실행하여 컴파일러가 IntelliSense를 제공하도록 초기화되거나, 디버거가 초기화되거나, 솔루션 탐색기에 표시된 참조가 확인될 수 있도록 할 수 있습니다. 이러한 대상이 없어도 프로젝트를 제대로 로드하고 빌드할 수는 있지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 디자인 타임 환경이 완전하게 작동하지 않습니다.  
   
-## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+## <a name="editing-project-files-in-visual-studio"></a><a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트를 직접 편집하려면 Visual Studio XML 편집기에서 프로젝트 파일을 열 수 있습니다.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Visual Studio에서 프로젝트 파일을 언로드 및 편집하려면  
@@ -136,7 +136,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
      해당 프로젝트가 **(사용할 수 없음)** 으로 표시됩니다.  
   
-2. **솔루션 탐색기**에서 사용할 수 없는 프로젝트의 바로 가기 메뉴를 열고 **편집 \<프로젝트 파일>** 을 선택합니다.  
+2. **솔루션 탐색기**에서 사용할 수 없는 프로젝트에 대 한 바로 가기 메뉴를 열고 **편집 \<Project File> **을 선택 합니다.  
   
      해당 프로젝트 파일이 Visual Studio XML 편집기에 열립니다.  
   
@@ -145,18 +145,18 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. **솔루션 탐색기**에서 사용할 수 없는 프로젝트의 바로 가기 메뉴를 열고 **프로젝트 다시 로드**를 선택합니다.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense 및 유효성 검사  
- XML 편집기를 사용하여 프로젝트 파일을 편집할 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 스키마 파일에서 IntelliSense 및 유효성 검사를 실행합니다. 이러한 스키마 파일은 *\<Visual Studio 설치 디렉터리>* \Xml\Schemas\1033\MSBuild에 있는 스키마 캐시에 설치됩니다.  
+ XML 편집기를 사용하여 프로젝트 파일을 편집할 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 스키마 파일에서 IntelliSense 및 유효성 검사를 실행합니다. 이러한 캐시는 \Xml\Schemas\1033\MSBuild.에서 찾을 수 있는 스키마 캐시에 설치 됩니다. *\<Visual Studio installation directory>*  
   
- 핵심 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 형식은 Microsoft.Build.Core.xsd에 정의되고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 사용되는 일반 형식은 Microsoft.Build.CommonTypes.xsd에 정의됩니다. 사용자 지정 항목 형식 이름, 속성, 작업 등에 대해 IntelliSense 및 유효성 검사를 적용하도록 스키마를 사용자 지정하려면 Microsoft.Build.xsd를 편집하거나 CommonTypes 또는 핵심 스키마를 포함하는 스키마를 직접 만들면 됩니다. 스키마를 직접 만들 경우 **속성** 창을 사용하여 해당 스키마를 찾도록 XML 편집기에 지시해야 합니다.  
+ 핵심 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 형식은 Microsoft.Build.Core.xsd에 정의되고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 사용되는 일반 형식은 Microsoft.Build.CommonTypes.xsd에 정의됩니다. 사용자 지정 항목 형식 이름, 속성, 작업 등에 대해 IntelliSense 및 유효성 검사를 적용하도록 스키마를 사용자 지정하려면 Microsoft.Build.xsd를 편집하거나 CommonTypes 또는 핵심 스키마를 포함하는 스키마를 직접 만들면 됩니다. 스키마를 직접 만들 경우 **속성** 창을 사용하여 해당 스키마를 찾도록 XML 편집기에 지시해야 합니다.  
   
 ## <a name="editing-loaded-project-files"></a>로드된 프로젝트 파일 편집  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 프로젝트 파일과 프로젝트 파일이 가져온 파일의 내용을 캐시합니다. 로드된 프로젝트 파일을 편집할 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 변경 내용이 적용되도록 프로젝트를 다시 로드하라는 메시지를 자동으로 표시합니다. 하지만 로드된 프로젝트에서 가져온 파일을 편집할 경우에는 다시 로드하라는 메시지가 표시되지 않으므로 변경 내용을 적용하려면 수동으로 프로젝트를 언로드한 후 다시 직접 로드해야 합니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 프로젝트 파일과 프로젝트 파일이 가져온 파일의 내용을 캐시합니다. 로드된 프로젝트 파일을 편집할 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 변경 내용이 적용되도록 프로젝트를 다시 로드하라는 메시지를 자동으로 표시합니다. 하지만 로드된 프로젝트에서 가져온 파일을 편집할 경우에는 다시 로드하라는 메시지가 표시되지 않으므로 변경 내용을 적용하려면 수동으로 프로젝트를 언로드한 후 다시 직접 로드해야 합니다.  
   
 ## <a name="output-groups"></a>출력 그룹  
- Microsoft.Common.targets에 정의된 몇 가지 대상의 이름은 `OutputGroups` 또는 `OutputGroupDependencies`로 끝납니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 이러한 대상을 호출하여 특정한 프로젝트 출력 목록을 얻습니다. 예를 들어, `SatelliteDllsProjectOutputGroup` 대상은 빌드에서 만드는 모든 위성 어셈블리 목록을 만듭니다. 이러한 출력 그룹은 게시, 배포 및 프로젝트 간 참조와 같은 기능에서 사용됩니다. 출력 그룹이 정의되지 않은 프로젝트는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 로드되고 빌드되지만 일부 기능은 제대로 작동하지 않을 수 있습니다.  
+ Microsoft.Common.targets에 정의된 몇 가지 대상의 이름은 `OutputGroups` 또는 `OutputGroupDependencies`로 끝납니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 이러한 대상을 호출하여 특정한 프로젝트 출력 목록을 얻습니다. 예를 들어, `SatelliteDllsProjectOutputGroup` 대상은 빌드에서 만드는 모든 위성 어셈블리 목록을 만듭니다. 이러한 출력 그룹은 게시, 배포 및 프로젝트 간 참조와 같은 기능에서 사용됩니다. 출력 그룹이 정의되지 않은 프로젝트는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 로드되고 빌드되지만 일부 기능은 제대로 작동하지 않을 수 있습니다.  
   
 ## <a name="reference-resolution"></a>참조 확인  
- 참조 확인은 프로젝트 파일에 저장된 참조 항목을 사용하여 실제 어셈블리를 찾는 과정입니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 **속성** 창에 각 참조에 대한 자세한 속성을 표시하기 위해 참조 확인을 트리거해야 합니다. 다음 목록에서는 세 가지 참조 형식과 참조 확인 방법을 설명합니다.  
+ 참조 확인은 프로젝트 파일에 저장된 참조 항목을 사용하여 실제 어셈블리를 찾는 과정입니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 **속성** 창에 각 참조에 대한 자세한 속성을 표시하기 위해 참조 확인을 트리거해야 합니다. 다음 목록에서는 세 가지 참조 형식과 참조 확인 방법을 설명합니다.  
   
 - 어셈블리 참조:  
   
@@ -181,13 +181,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Visual Studio의 일반 빌드에는 빠른 업데이트 검사가 적용되지 않으며, 명령 프롬프트에서 빌드를 호출한 것처럼 프로젝트가 빌드됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: Visual Studio 빌드 프로세스 확장](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
- [IDE에서 빌드 시작](../msbuild/starting-a-build-from-within-the-ide.md)   
- [.NET Framework 확장명 등록](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
+ [IDE 내에서 빌드 시작](../msbuild/starting-a-build-from-within-the-ide.md)   
+ [.NET Framework 확장 등록](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
- [Item 요소(MSBuild)](../msbuild/item-element-msbuild.md)   
- [Property 요소(MSBuild)](../msbuild/property-element-msbuild.md)   
- [Target 요소(MSBuild)](../msbuild/target-element-msbuild.md)   
+ [Item 요소 (MSBuild)](../msbuild/item-element-msbuild.md)   
+ [Property 요소 (MSBuild)](../msbuild/property-element-msbuild.md)   
+ [Target 요소 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Csc 작업](../msbuild/csc-task.md)   
  [Vbc 작업](../msbuild/vbc-task.md)

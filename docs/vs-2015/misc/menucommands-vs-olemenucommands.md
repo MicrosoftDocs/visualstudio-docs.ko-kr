@@ -1,5 +1,5 @@
 ---
-title: MenuCommand 및 OleMenuCommands | Microsoft Docs
+title: MenuCommands 및 OleMenuCommands | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,19 +12,19 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624449"
 ---
-# <a name="menucommands-vs-olemenucommands"></a>MenuCommand 및 OleMenuCommand
-파생 하 여 메뉴 명령을 만들 수 있습니다 <xref:System.ComponentModel.Design.MenuCommand> 주고 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체를 적절 한 이벤트 처리기를 구현 합니다. 대부분의 경우 <xref:System.ComponentModel.Design.MenuCommand>를 VSPackage 프로젝트 템플릿으로 사용할 수 있지만 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>를 사용해야 할 때가 있습니다.  
+# <a name="menucommands-vs-olemenucommands"></a>MenuCommands와 OleMenuCommands 비교
+메뉴 명령은에서 파생 하거나 개체에서 파생 하 <xref:System.ComponentModel.Design.MenuCommand> <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 고 적절 한 이벤트 처리기를 구현 하 여 만들 수 있습니다. 대부분의 경우 <xref:System.ComponentModel.Design.MenuCommand>를 VSPackage 프로젝트 템플릿으로 사용할 수 있지만 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>를 사용해야 할 때가 있습니다.  
   
  사용자가 VSPackage를 사용하려면 IDE에서 VSPackage를 사용할 수 있는 명령이 표시되어야 하고 사용하도록 설정되어야 합니다. Visual Studio Package 프로젝트 템플릿을 사용하여 .vsct 파일에서 명령이 만들어지면 기본적으로 표시되고 사용하도록 설정됩니다. `DynamicItemStart`등의 일부 명령 플래그를 설정하면 기본 동작을 변경할 수 있습니다. 표시 여부, 사용 설정 상태 및 명령의 기타 속성은 명령과 관련된 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체에 액세스하여 런타임 시 코드에서 변경할 수도 있습니다.  
   
-## <a name="prerequisites"></a>전제 조건  
- 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
+## <a name="prerequisites"></a>필수 구성 요소  
+ 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Visual Studio 패키지 템플릿의 템플릿 위치  
  **새 프로젝트** 대화 상자의 **Visual Basic/확장성**, **C#/확장성**또는 **기타 프로젝트 형식/확장성**에서 Visual Studio 패키지 템플릿을 찾을 수 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "67624449"
 ## <a name="creating-a-command"></a>명령 만들기  
  모든 명령, 명령 그룹, 메뉴, 도구 모음 및 도구 창은 .vsct 파일에서 정의됩니다. 자세한 내용은 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)을 참조하세요.  
   
- 패키지 템플릿을 사용하여 VSPackage를 만드는 경우 **메뉴 명령** 을 선택하여 .vsct 파일을 만들고 기본 메뉴 명령을 정의합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
+ 패키지 템플릿을 사용하여 VSPackage를 만드는 경우 **메뉴 명령** 을 선택하여 .vsct 파일을 만들고 기본 메뉴 명령을 정의합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.  
   
 #### <a name="to-add-a-command-to-the-ide"></a>IDE에 명령을 추가하려면  
   
@@ -117,7 +117,7 @@ ms.locfileid: "67624449"
       
       GUID:ID가 동일하고 부모가 서로 다른 명령 배치를 여러 개 만들면 메뉴가 여러 위치에 나타납니다. 자세한 내용은 [CommandPlacements](../extensibility/commandplacements-element.md) 요소를 참조하세요.  
   
-    명령 그룹 및 부모/자식 관리에 대 한 자세한 내용은 참조 하세요. [단추가의 다시 사용할 수 있는 그룹 만들기](../extensibility/creating-reusable-groups-of-buttons.md)합니다.  
+    명령 그룹 및 부모에 대 한 자세한 내용은 [다시 사용할 수 있는 단추 그룹 만들기](../extensibility/creating-reusable-groups-of-buttons.md)를 참조 하세요.  
   
    이 시점에서는 명령이 IDE에 표시되지만 작동하지는 않습니다. 명령이 패키지 템플릿에 의해 만들어진 경우 기본적으로 클릭 처리기에 메시지가 표시됩니다.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "67624449"
   
     `EventHandler` 개체에 메뉴 명령의 상태를 쿼리할 때 호출되는 메서드의 이름을 지정합니다.  
   
-2. 명령에 대한 쿼리 상태 처리기 메서드를 구현합니다. 합니다 `object` `sender` 매개 변수를 캐스팅할 수는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 는 메뉴 명령의 텍스트를 포함 하 여 다양 한 특성을 설정 하는 데 사용 되는 개체입니다. 다음 표에서는 <xref:System.ComponentModel.Design.MenuCommand> 플래그에 해당하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 클래스(MPF 클래스 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 가 파생됨)의 속성을 보여 줍니다.  
+2. 명령에 대한 쿼리 상태 처리기 메서드를 구현합니다. `object` `sender` 매개 변수를 개체로 캐스팅할 수 있으며 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ,이는 텍스트를 포함 하 여 메뉴 명령의 다양 한 특성을 설정 하는 데 사용 됩니다. 다음 표에서는 <xref:System.ComponentModel.Design.MenuCommand> 플래그에 해당하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 클래스(MPF 클래스 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 가 파생됨)의 속성을 보여 줍니다.  
   
    |MenuCommand 속성|OLECMDF 플래그|  
    |--------------------------|------------------|  
@@ -197,7 +197,7 @@ ms.locfileid: "67624449"
 ### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>IOleCommandTarget 인터페이스를 사용하여 명령 처리  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 직접 사용하는 코드의 경우 VSPackage는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 인터페이스의 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 의 메서드를 모두 구현해야 합니다. VSPackage가 프로젝트 계층 구조를 구현하는 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 인터페이스의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 메서드를 대신 구현해야 합니다.  
   
- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드는 모두 단일 명령 집합 `GUID` 및 명령 ID의 배열을 입력으로 사용하도록 디자인되었습니다. Vspackage에서 한 번의 호출로 여러 ID를 제공하는 이 개념을 완벽하게 지원하는 것이 좋습니다. 그러나 다른 VSPackage에서 Vspackage를 호출하지 않으면 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드가 잘 정의된 순서대로 실행되므로 명령 배열에 하나의 명령 ID만 포함된 것으로 간주할 수 있습니다. 라우팅에 대 한 자세한 내용은 참조 하세요. [Vspackage의 명령 라우팅](../extensibility/internals/command-routing-in-vspackages.md)합니다.  
+ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드는 모두 단일 명령 집합 `GUID` 및 명령 ID의 배열을 입력으로 사용하도록 디자인되었습니다. Vspackage에서 한 번의 호출로 여러 ID를 제공하는 이 개념을 완벽하게 지원하는 것이 좋습니다. 그러나 다른 VSPackage에서 Vspackage를 호출하지 않으면 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드가 잘 정의된 순서대로 실행되므로 명령 배열에 하나의 명령 ID만 포함된 것으로 간주할 수 있습니다. 라우팅에 대 한 자세한 내용은 [vspackage의 명령 라우팅](../extensibility/internals/command-routing-in-vspackages.md)을 참조 하세요.  
   
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 사용하여 직접 명령을 처리하는 코드의 경우 VSPackage에서 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드를 구현하여 다음과 같이 명령을 처리해야 합니다.  
   
@@ -223,7 +223,7 @@ ms.locfileid: "67624449"
   
       `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-      `MenuControllerLatched`형식의 메뉴에서 호스트되는 처리 명령의 경우 `OLECMDF_LATCHED` 플래그로 표시된 첫 번째 명령이 시작 시 메뉴에 표시되는 기본 명령입니다. 에 대 한 자세한 내용은 `MenuController` 메뉴 형식에 참조 [Menu 요소](../extensibility/menu-element.md)합니다.  
+      `MenuControllerLatched`형식의 메뉴에서 호스트되는 처리 명령의 경우 `OLECMDF_LATCHED` 플래그로 표시된 첫 번째 명령이 시작 시 메뉴에 표시되는 기본 명령입니다. 메뉴 형식에 대 한 자세한 내용은 `MenuController` [menu 요소](../extensibility/menu-element.md)를 참조 하세요.  
   
    - 명령이 현재 사용되는 경우:  
   
@@ -251,6 +251,6 @@ ms.locfileid: "67624449"
   
 - `GUID` 및 명령 ID가 .vsct 파일의 명령에 사용되는 GUID:ID 쌍과 일치하는 경우 명령과 연결된 코드를 실행하고 <xref:Microsoft.VisualStudio.VSConstants.S_OK>를 반환합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSCT XML 스키마 참조](../extensibility/vsct-xml-schema-reference.md)   
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c4ad2f4db9290430bb8a378bd264078370ca7b66
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543834"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: 참조 형식 정적 필드를 인라인으로 초기화하세요.
@@ -52,7 +52,7 @@ ms.locfileid: "85543834"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  성능이 중요 하지 않은 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 또는 정적 초기화로 인해 발생 하는 전역 상태 변경에 비용이 많이 들며 형식의 정적 메서드를 호출 하거나 형식의 인스턴스를 만들기 전에 발생 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 형식,를 사용 하 여 `StaticConstructor` `NoStaticConstructor` 정적 생성자를 인라인 초기화로 대체 하 여 규칙을 충족 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/cs/FxCop.Performance.RefTypeStaticCtor.cs#1)]
