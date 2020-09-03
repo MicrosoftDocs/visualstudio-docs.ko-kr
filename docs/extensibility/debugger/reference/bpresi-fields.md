@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | 마이크로 소프트 문서
+title: BPRESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737727"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
-중단점의 성공적인 확인에 대해 검색할 정보를 지정합니다.
+중단점을 성공적으로 확인 하기 위해 검색할 정보를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPRESI_FIELDS {
@@ -48,30 +48,30 @@ public enum enum_BPRESI_FIELDS {
 
 ## <a name="fields"></a>필드
 `BPRESI_BPRESLOCATION`\
-`bpResLocation` [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조의 (중단점 확인 위치) 필드를 초기화/사용합니다.
+`bpResLocation` [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조체의 (중단점 확인 위치) 필드를 초기화/사용 합니다.
 
 `BPRESI_PROGRAM`\
-`BP_RESOLUTION_INFO` 구조의 `pProgram` 필드를 초기화/사용합니다.
+`pProgram`구조체의 필드를 초기화/사용 `BP_RESOLUTION_INFO` 합니다.
 
 `BPRESI_THREAD`\
-`BP_RESOLUTION_INFO` 구조의 `pThread` 필드를 초기화/사용합니다.
+`pThread`구조체의 필드를 초기화/사용 `BP_RESOLUTION_INFO` 합니다.
 
 `BPRESI_ALLFIELDS`\
-모든 필드를 지정합니다.
+모든 필드를 지정 합니다.
 
 ## <a name="remarks"></a>설명
-[getResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 메서드에 전달되어 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조의 필드를 초기화할 필드를 나타냅니다.
+초기화할 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조체의 필드를 나타내기 위해 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 메서드에 전달 됩니다.
 
-이러한 플래그는 구조의 어떤 필드가 `BP_RESOLUTION_INFO` 사용되고 해당 구조가 반환될 때 유효한지 나타내는 데도 사용됩니다.
+이러한 플래그는 구조체의 필드를 `BP_RESOLUTION_INFO` 사용 하 고 해당 구조가 반환 될 때 유효한 지 여부를 나타내는 데도 사용 됩니다.
 
-이러한 값은 약간 과 `OR`결합될 수 있습니다.
+이러한 값은 비트와 함께 사용할 수 있습니다 `OR` .
 
 ## <a name="requirements"></a>요구 사항
-헤더: msdbg.h
+헤더: msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

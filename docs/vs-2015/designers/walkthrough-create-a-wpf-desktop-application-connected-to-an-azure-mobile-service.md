@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664020"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>연습: Azure 모바일 서비스에 연결된 WPF 데스크톱 애플리케이션 만들기
@@ -21,7 +21,7 @@ ms.locfileid: "72664020"
 
 WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스를 통해 데이터를 저장 및 제공하는 최신 데스크톱 애플리케이션을 신속하게 만들 수 있습니다.
 
-## <a name="Requirements"></a> 필수 구성 요소
+## <a name="prerequisites"></a><a name="Requirements"></a> 필수 조건
  이 연습을 완료하려면 다음이 필요합니다.
 
 - Visual Studio 2015 – WPF 개발을 지원하는 버전.
@@ -30,7 +30,7 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
 
   - [여기](https://azure.microsoft.com/pricing/free-trial/)서 무료 평가판 계정을 등록할 수 있습니다.
 
-  - [MSDN 구독자 혜택](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)을 활성화할 수 있습니다. MSDN을 구독하면 매달 유료 Azure 서비스에 사용할 수 있는 크레딧이 제공됩니다.
+  - [MSDN 구독자 혜택](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)을 활성화할 수 있습니다. MSDN 구독은 유료 Azure 서비스에 사용할 수 있는 크레딧을 매달 제공합니다.
 
 ## <a name="create-a-project-and-add-references"></a>프로젝트 만들기 및 참조 추가
  첫 번째 단계는 WPF 프로젝트를 만들고 Azure 모바일 서비스에 연결할 수 있는 NuGet 패키지를 추가하는 것입니다.
@@ -43,13 +43,13 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
 
 3. 템플릿 목록에서 **WPF 애플리케이션** 템플릿을 선택합니다.
 
-4. **이름** 텍스트 상자에 `WPFQuickStart`를 입력한 후 **확인** 단추를 선택합니다.
+4. **이름** 텍스트 상자에 `WPFQuickStart`를 입력하고 **확인** 단추를 선택합니다.
 
      프로젝트가 생성되고 프로젝트 파일이 **솔루션 탐색기**에 추가된 다음 **MainWindow.xaml** 이라는 기본 애플리케이션 창에 대한 디자이너가 표시됩니다.
 
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Microsoft Azure Mobile Services SDK에 대한 참조를 추가하려면
 
-1. **솔루션 탐색기**에서 **참조** 노드의 바로 가기 메뉴를 열고 **NuGet 패키지 관리**를 선택합니다.
+1. **솔루션 탐색기**에서 **참조** 노드에 대 한 바로 가기 메뉴를 열고 **NuGet 패키지 관리**를 선택 합니다.
 
 2. **NuGet 패키지 관리자**에서 **검색** 필드를 선택하고 `mobileservices`를 입력합니다.
 
@@ -63,7 +63,7 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
      필요한 참조가 **솔루션 탐색기**에 추가됩니다.
 
     > [!NOTE]
-    > 사용 조건에 동의하지 않을 경우 **동의 안 함** 단추를 선택합니다. 연습의 나머지 부분을 완료할 수 없습니다.
+    > 사용 조건에 동의 하지 않는 경우 **거부** 단추를 선택 합니다. 연습의 나머지 부분을 완료할 수 없습니다.
 
 ## <a name="create-the-user-interface"></a>사용자 인터페이스 만들기
  다음 단계는 애플리케이션에 대한 사용자 인터페이스를 만드는 것입니다. 먼저 두 개의 창이 나란히 표시되는 표준 레이아웃을 표시하는 재사용 가능한 사용자 정의 컨트롤을 만듭니다. 주 애플리케이션 창에 사용자 정의 컨트롤을 추가하고 데이터를 입력 및 표시하는 컨트롤을 추가한 다음 모바일 서비스 백 엔드와의 상호 작용을 정의하는 일부 코드를 작성합니다.
@@ -285,7 +285,7 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
 
      이때 디자인은 다음 그림과 같아야 합니다.
 
-     ![디자이너의 Mainwindow.xaml](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
+     ![디자이너의 주 창](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
 
     > [!NOTE]
     > 다음 몇 가지 절차를 수행하는 동안 **오류 목록** 에 오류가 표시될 수도 있습니다(열려 있는 경우). 걱정하지 마세요. 이러한 오류는 나머지 절차를 완료하면 사라집니다.
@@ -484,9 +484,9 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
     > [!NOTE]
     > URL의 숫자 부분을 변경해야 할 수도 있습니다. Microsoft Azure에서는 각 모바일 서비스에 대한 고유한 URL이 필요합니다.
 
-     이는 서비스에 대 한 URL을 `https://wpfquickstart01.azure-mobile.net/` 설정 합니다.
+     이렇게 하면 서비스에 대 한 URL이로 설정 `https://wpfquickstart01.azure-mobile.net/` 됩니다.
 
-4. **데이터베이스** 목록에서 데이터베이스 옵션을 선택합니다. 자주 사용되지 않는 애플리케이션이므로 **무료 20MB SQL 데이터베이스 만들기** 옵션을 선택하거나 구독과 이미 연결되어 있는 무료 데이터베이스를 선택할 수도 있습니다.
+4. **데이터베이스** 목록에서 데이터베이스 옵션을 선택합니다. 많은 사용량을 얻지 못하는 응용 프로그램 이므로 **무료 20MB SQL 데이터베이스 만들기** 옵션을 선택 하거나 구독과 이미 연결 되어 있는 무료 데이터베이스를 선택 하는 것이 좋습니다.
 
 5. **지역** 목록에서 모바일 서비스를 배포할 데이터 센터를 선택한 후 **다음** (오른쪽 화살표) 단추를 선택합니다.
 
@@ -505,7 +505,7 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
 
      다음 절차에서 이 서비스를 사용합니다.
 
-#### <a name="to-create-a-table"></a>테이블을 만들려면
+#### <a name="to-create-a-table"></a>테이블 형식 보고서를 만들려면
 
 1. Microsoft Azure 포털에서 모바일 서비스 이름 옆에 있는 오른쪽 화살표를 선택한 다음 메뉴 모음에서 **데이터**, **테이블 추가** 링크를 차례로 선택합니다.
 
@@ -547,7 +547,7 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
 
 #### <a name="to-run-the-application"></a>애플리케이션을 실행하려면
 
-1. 메뉴 모음에서 **디버그**, **디버깅 시작** 을 차례로 선택합니다(또는 F5 키를 누름).
+1. 메뉴 모음에서 **디버그**, **디버깅 시작** 을 선택 하거나 f5 키를 누릅니다.
 
 2. **Insert a TodoItem** 텍스트 상자에 `Do something`를 입력한 후 **저장** 단추를 선택합니다.
 
@@ -555,7 +555,7 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
 
      다음 그림과 같이 두 항목이 **Query and Update Data** 목록에 추가됩니다.
 
-     ![할 일 항목이 목록에 추가 됩니다.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
+     ![할 일 항목이 목록에 추가됩니다.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
 
 4. 목록에서 **Do something else** 항목에 대한 확인란을 선택합니다.
 
@@ -568,5 +568,5 @@ WPF(Windows Presentation Foundation)를 사용하여 Azure 모바일 서비스�
 
  Azure 모바일 서비스를 사용하여 기존 SQL 데이터베이스 또는 다른 데이터 원본에 연결할 수 있습니다. [모바일 서비스 설명서](https://azure.microsoft.com/services/app-service/mobile/)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [연습: 내 첫 번째 WPF 데스크톱 응용 프로그램이](../designers/walkthrough-my-first-wpf-desktop-application2.md) [Windows Presentation Foundation를 사용 하 여 최신 데스크톱 응용 프로그램 만들기](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

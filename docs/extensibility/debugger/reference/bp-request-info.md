@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | 마이크로 소프트 문서
+title: BP_REQUEST_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737888"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
-중단점을 구현하는 데 필요한 정보를 포함합니다.
+중단점을 구현 하는 데 필요한 정보를 포함 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -59,48 +59,48 @@ public struct BP_REQUEST_INFO {
 
 ## <a name="members"></a>멤버
 `dwFields`\
-채워지는지 지정하는 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 열거형의 플래그 조합입니다.
+입력 하는 필드를 지정 하는 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 열거형의 플래그 조합입니다.
 
 `guidLanguage`\
 언어 GUID입니다.
 
 `bpLocation`\
-중단점 위치의 유형을 지정하는 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 구조입니다.
+중단점 위치의 형식을 지정 하는 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 구조체입니다.
 
 `pProgram`\
-중단점이 발생하는 응용 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.
+중단점이 발생 한 응용 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.
 
 `bstrProgramName`\
-중단점이 발생하는 응용 프로그램의 이름입니다.
+중단점이 발생 하는 응용 프로그램의 이름입니다.
 
 `pThread`\
-중단점이 발생하는 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
+중단점이 발생 한 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
 `bstrThreadName`\
-중단점이 발생하는 스레드의 이름입니다.
+중단점이 발생 하는 스레드의 이름입니다.
 
 `bpCondition`\
-중단점이 발사되는 조건을 설명하는 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 구조입니다.
+중단점을 실행할 조건을 설명 하는 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 구조입니다.
 
 `bpPassCount`\
-중단점의 통과 개수 정보를 포함하는 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 구조입니다.
+중단점의 pass count 정보를 포함 하는 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 구조체입니다.
 
 `dwFlags`\
-요청된 중단점에 대한 플래그를 지정하는 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 열거형의 플래그 조합입니다.
+요청 된 중단점에 대 한 플래그를 지정 하는 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 열거형의 플래그 조합입니다.
 
 ## <a name="remarks"></a>설명
-이 구조는 [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) 메서드에 의해 반환 됩니다.
+이 구조체는 [Getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) 메서드에 의해 반환 됩니다.
 
-디버그 엔진 공급업체 GUID, 중단점 제약 조건 또는 추적점을 구해야 하는 경우 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조를 참조하십시오.
+디버그 엔진 공급 업체 GUID, 중단점 제약 조건 또는 추적점을 가져와야 하는 경우 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
-헤더: msdbg.h
+헤더: msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

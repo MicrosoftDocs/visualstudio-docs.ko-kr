@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스 개요 | 마이크로 소프트 문서
+title: 레거시 언어 서비스 개요 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706805"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>레거시 언어 서비스의 개요 표시
-개요를 사용하면 복잡한 프로그램을 개요 또는 개요로 축소할 수 있습니다. 예를 들어 C#에서 모든 메서드는 메서드 시그니처만 표시하면서 한 줄로 축소할 수 있습니다. 또한 구조체와 클래스의 이름만 표시하도록 축소할 수 있습니다. 단일 메서드 내에서 복잡한 논리를 축소하여 `foreach`". `if`및. `while`
+개요를 사용 하면 복잡 한 프로그램을 개요 또는 개요로 축소할 수 있습니다. 예를 들어 c #에서는 메서드 서명만 표시 하는 모든 메서드를 한 줄로 축소할 수 있습니다. 또한 구조체와 클래스는 구조체 및 클래스의 이름만 표시 하도록 축소할 수 있습니다. 단일 메서드 내에서 복잡 한 논리를 축소 하 여, 및와 같은 문의 첫 번째 줄만 표시 함으로써 전체 흐름을 표시할 수 있습니다 `foreach` `if` `while` .
 
- 레거시 언어 서비스는 VSPackage의 일부로 구현되지만 언어 서비스 기능을 구현하는 최신 방법은 MEF 확장을 사용하는 것입니다. 자세한 내용은 [연습: 개요](../../extensibility/walkthrough-outlining.md)를 참조하십시오.
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 자세히 알아보려면 [연습: 개요](../../extensibility/walkthrough-outlining.md)를 참조 하세요.
 
 > [!NOTE]
-> 가능한 한 빨리 새 편집기 API를 사용하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상되고 새로운 편집기 기능을 활용할 수 있습니다.
+> 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.
 
-## <a name="enabling-support-for-outlining"></a>개요에 대한 지원 활성화
- `AutoOutlining` 레지스트리 항목은 자동 개요를 활성화하기 위해 1로 설정됩니다. 자동 개요는 숨겨진 영역을 식별하고 개요 글리프를 표시하기 위해 파일을 로드하거나 변경할 때 전체 소스의 구문 분석구를 설정합니다. 개요는 사용자가 수동으로 제어할 수도 있습니다.
+## <a name="enabling-support-for-outlining"></a>개요 지원 사용
+ `AutoOutlining`자동 개요를 사용 하려면 레지스트리 항목을 1로 설정 합니다. 자동 개요는 숨겨진 영역을 식별 하 고 개요 문자 모양을 표시 하기 위해 파일이 로드 되거나 변경 될 때 전체 원본의 구문 분석을 설정 합니다. 사용자가 개요를 수동으로 제어할 수도 있습니다.
 
- `AutoOutlining` 레지스트리 항목의 값은 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스의 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> 속성을 통해 얻을 수 있습니다. `AutoOutlining` 레지스트리 항목은 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 특성에 대한 명명된 매개 변수로 초기화할 수 있습니다(자세한 내용은 레거시 언어 서비스 [등록](../../extensibility/internals/registering-a-legacy-language-service1.md) 참조).
+ 레지스트리 항목의 값은 `AutoOutlining` 클래스의 속성을 통해 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . `AutoOutlining`특성에 대 한 명명 된 매개 변수를 사용 하 여 레지스트리 항목을 초기화할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . 자세한 내용은 [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md) 을 참조 하세요.
 
-## <a name="the-hidden-region"></a>숨겨진 지역
- 개요를 제공하려면 언어 서비스가 숨겨진 영역을 지원해야 합니다. 확장하거나 축소할 수 있는 텍스트 범위입니다. 숨겨진 영역은 곱슬 대괄호와 같은 표준 언어 기호 또는 사용자 지정 기호로 구분할 수 있습니다. 예를 들어 C#에는 `#region` / `#endregion` 숨겨진 영역을 구분하는 쌍이 있습니다.
+## <a name="the-hidden-region"></a>숨겨진 영역
+ 개요를 제공 하기 위해 언어 서비스는 숨겨진 영역을 지원 해야 합니다. 확장 하거나 축소할 수 있는 텍스트의 범위입니다. 숨겨진 지역은 중괄호와 같은 표준 언어 기호나 사용자 지정 기호로 구분 될 수 있습니다. 예를 들어 c #에는 `#region` / `#endregion` 숨겨진 영역을 구분 하는 쌍이 있습니다.
 
- 숨겨진 영역은 인터페이스로 노출되는 숨겨진 지역 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 관리자에 의해 관리됩니다.
+ 숨겨진 지역은 인터페이스로 노출 되는 숨겨진 지역 관리자에 의해 관리 됩니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> .
 
- 개요는 인터페이스의 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> 숨겨진 영역을 사용하고 숨겨진 영역의 범위, 현재 표시되는 상태 및 범위가 축소될 때 표시할 배너를 포함합니다.
+ 개요는 숨겨진 영역을 인터페이스에 사용 하 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> 고 숨겨진 영역, 현재 표시 되는 상태 및 범위가 축소 될 때 표시 되는 배너의 범위를 포함 합니다.
 
- 언어 서비스 파서는 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> 메서드를 사용하여 숨겨진 영역에 대한 기본 동작이 있는 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> 새 숨겨진 영역을 추가하는 반면 메서드를 사용하면 윤곽선의 모양과 동작을 사용자 지정할 수 있습니다. 숨겨진 영역이 숨겨진 영역 세션에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지정되면 언어 서비스의 숨겨진 영역을 관리합니다.
+ 언어 서비스 파서는 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> 숨겨진 영역에 대 한 기본 동작을 사용 하 여 새 숨겨진 영역을 추가 하 고, 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> 윤곽선의 모양과 동작을 사용자 지정할 수 있도록 합니다. 숨겨진 지역이 숨겨진 지역 세션에 제공 되 면는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 언어 서비스의 숨겨진 영역을 관리 합니다.
 
- 숨겨진 영역 세션이 소멸되는 시기를 결정해야 하는 경우 숨겨진 영역이 변경되거나 특정 숨겨진 영역이 표시되는지 확인해야 합니다. 클래스에서 클래스를 파생 하 고 적절 한 <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>메서드를 <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>재정의 해야 합니다. <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> <xref:Microsoft.VisualStudio.Package.Source>
+ 숨겨진 지역 세션이 제거 된 시기를 확인 해야 하는 경우 숨겨진 지역이 변경 되거나 특정 숨겨진 지역이 표시 되는지 확인 해야 합니다. 클래스에서 클래스를 파생 <xref:Microsoft.VisualStudio.Package.Source> 하 고 각각 적절 한,, 및 메서드를 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> .
 
-### <a name="example"></a>예제
- 다음은 모든 중괄호 쌍에 대해 숨겨진 영역을 만드는 간단한 예입니다. 언어가 중괄호 일치를 제공하고 일치할 중괄호에는 적어도 중괄호({및 })가 포함된다는 가정이 있습니다. 이 방법은 설명용입니다. 전체 구현에서는 에서 서비스 케이스를 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>완벽하게 처리할 수 있습니다. 이 예제에서는 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> 기본 설정을 `true` 일시적으로 설정하는 방법도 보여 주어 도 있습니다. 다른 방법은 언어 `AutoOutlining` 패키지의 특성에 명명된 매개 변수를 `ProvideLanguageServiceAttribute` 지정하는 것입니다.
+### <a name="example"></a>예
+ 다음은 중괄호의 모든 쌍에 대해 숨겨진 영역을 만드는 간단한 예제입니다. 언어가 중괄호 일치를 제공 하 고, 일치 하는 중괄호에 중괄호 ({및})가 하나 이상 포함 되어 있다고 가정 합니다. 이 방법은 설명을 위한 목적 으로만 사용 됩니다. 전체 구현에서는의 사례를 완전히 처리 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 합니다. 또한이 예제에서는 기본 설정을 일시적으로 설정 하는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> `true` . 다른 방법은 `AutoOutlining` `ProvideLanguageServiceAttribute` 언어 패키지의 특성에 명명 된 매개 변수를 지정 하는 것입니다.
 
- 이 예제에서는 주석, 문자열 및 리터럴에 대한 C# 규칙을 가정합니다.
+ 이 예에서는 주석, 문자열 및 리터럴에 대 한 c # 규칙을 가정 합니다.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -117,6 +117,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_LOCATION | 마이크로 소프트 문서
+title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737815"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
-중단점 확인 위치의 구조를 지정합니다.
+중단점 확인 위치의 구조를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,41 +50,41 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="members"></a>멤버
 `bpType`\
-공용 구조체 또는 `unionmemberX` 멤버를 해석하는 방법을 지정하는 `bpResLocation` [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거형의 값입니다.
+공용 구조체 또는 멤버를 해석 하는 방법을 지정 하는 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거형의 값입니다 `bpResLocation` `unionmemberX` .
 
 `bpResLocation.bpresCode`\
-[C++ 전용] [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) 구조를 포함합니다. `bpType`  =  `BPT_CODE`
+[C + + 전용] 인 경우 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) 구조를 포함 합니다 `bpType`  =  `BPT_CODE` .
 
 `bpResLocation.bpresData`\
-[C++ 전용] [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 구조를 포함 `bpType`  =  `BPT_DATA`합니다.
+[C + + 전용] 인 경우 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 구조를 포함 합니다 `bpType`  =  `BPT_DATA` .
 
 `bpResLocation.unused`\
-[C++ 전용] 자리 표시자입니다.
+[C + + 전용] 자리 표시자입니다.
 
 `unionmember1`\
-[C# 만] 해석 방법에 대한 비고를 참조하십시오.
+[C #만 해당] 해석 방법에 대 한 설명을 참조 하세요.
 
 `unionmember2`\
-[C# 만] 해석 방법에 대한 비고를 참조하십시오.
+[C #만 해당] 해석 방법에 대 한 설명을 참조 하세요.
 
 `unionmember3`\
-[C# 만] 해석 방법에 대한 비고를 참조하십시오.
+[C #만 해당] 해석 방법에 대 한 설명을 참조 하세요.
 
 `unionmember4`\
-[C# 만] 해석 방법에 대한 비고를 참조하십시오.
+[C #만 해당] 해석 방법에 대 한 설명을 참조 하세요.
 
 ## <a name="remarks"></a>설명
-이 구조는 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 및 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조의 구성원입니다.
+이 구조는 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 및 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조체의 멤버입니다.
 
- [C# 만] 멤버는 `unionmemberX` 다음 표에 따라 해석됩니다. `bpType` 값에 대한 왼쪽 열을 아래로 찾은 `unionmemberX` 다음 가로질러 `unionmemberX` 각 멤버가 나타내는 것을 확인하고 그에 따라 마샬링합니다. C#에서 이 구조를 해석하는 방법에 대한 예제를 참조하십시오.
+ [C #만 해당] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 값의 왼쪽 열을 아래로 조회 `bpType` 하 여 각 멤버가 나타내는 항목을 확인 하 `unionmemberX` 고이에 `unionmemberX` 따라 마샬링합니다. C #에서이 구조체를 해석 하는 방법에 대해서는 예제를 참조 하세요.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPT_DATA`|`string`(데이터 표현)|`string`(기능 이름)|`string`(이미지 이름)|`enum_BP_RES_DATA_FLAGS`|
+|`BPT_DATA`|`string` (데이터 식)|`string` (함수 이름)|`string` (이미지 이름)|`enum_BP_RES_DATA_FLAGS`|
 
-## <a name="example"></a>예제
-이 예제에서는 C#에서 `BP_RESOLUTION_LOCATION` 구조를 해석하는 방법을 보여 주습니다.
+## <a name="example"></a>예
+이 예제에서는 `BP_RESOLUTION_LOCATION` c #의 구조를 해석 하는 방법을 보여 줍니다.
 
 ```csharp
 using System;
@@ -114,13 +114,13 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>요구 사항
-헤더: msdbg.h
+헤더: msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
