@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 45639afc9946aa43df121a5a1881174371413c25
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546382"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: 투명 메서드는 보안 어설션을 사용할 수 없습니다.
@@ -63,5 +63,5 @@ ms.locfileid: "85546382"
 
  또 다른 옵션은 코드에서 어설션을 제거 하 고 모든 후속 파일 i/o 권한 요구가 호출자에 게 SecurityTransparentMethod 이상 전달 되도록 하는 것입니다. 이렇게 하면 보안 검사를 수행할 수 있습니다. 이 경우 권한 요구가 호출자 및/또는 응용 프로그램 도메인으로 전달 되기 때문에 보안 감사가 일반적으로 필요 하지 않습니다. 권한 요청은 보안 정책, 호스팅 환경 및 코드 소스 권한 부여를 통해 긴밀 하 게 제어 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [보안 경고](../code-quality/security-warnings.md)

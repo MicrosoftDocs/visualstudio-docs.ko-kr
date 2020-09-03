@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843868"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>.NET 3.0 또는 .NET 3.5 Framework를 대상으로 하는 워크플로 애플리케이션 개발
-[!INCLUDE[vs2010](../includes/vs2010-md.md)]는 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]를 대상으로 하는 [!INCLUDE[wf](../includes/wf-md.md)] 응용 프로그램을 만들기 위한 [!INCLUDE[wfd1](../includes/wfd1-md.md)]를 제공 합니다. 이 디자이너에서는 워크플로 애플리케이션의 시각적 생성 및 디버깅을 위한 친숙한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자 인터페이스를 사용합니다.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] 을 [!INCLUDE[wfd1](../includes/wfd1-md.md)] [!INCLUDE[wf](../includes/wf-md.md)] 대상으로 하는 응용 프로그램을 만들기 위한를 제공 합니다 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . 이 디자이너에서는 워크플로 애플리케이션의 시각적 생성 및 디버깅을 위한 친숙한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자 인터페이스를 사용합니다.
 
  [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 데 사용할 수 있는 레거시 Workflow Designer에도 액세스할 수 있습니다. 이 단원에는 이 레거시 디자이너의 사용에 대한 지침이 포함되어 있습니다.
 

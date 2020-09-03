@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844012"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
@@ -34,15 +34,15 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 ## <a name="authoring-views"></a>뷰 작성
  XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동기화된 디자인 뷰를 제공합니다. Visual Studio에서 XAML 파일을 연 상태에서, **디자인** 및 **XAML** 탭을 사용하여 디자인 뷰와 XAML 뷰 사이에서 전환할 수 있습니다. **창 바꾸기** 단추를 사용하여 아트보드 또는 XAML 편집기 중 하나의 맨 위에 나타나는 창을 전환할 수 있습니다.
 
- 디자인 뷰에서 *아트 보드* 포함하는 창이 활성 창이고 이를 기본 작업 화면으로 사용할 수 있습니다. 이 창에서 요소를 추가하거나 그린 다음 수정하여 앱에서 페이지를 시각적으로 디자인할 수 있습니다. 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하세요. 이 그림은 디자인 뷰에서 아트보드를 보여 줍니다.
+ 디자인 뷰에서는 *아트 보드* 를 포함 하는 창이 활성 창이 고이를 기본 작업 화면으로 사용할 수 있습니다. 이 창에서 요소를 추가하거나 그린 다음 수정하여 앱에서 페이지를 시각적으로 디자인할 수 있습니다. 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하세요. 이 그림은 디자인 뷰에서 아트보드를 보여 줍니다.
 
- ![XAML 디자이너 디자인 뷰](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![XAML 디자이너의 디자인 뷰](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  이러한 기능은 아트보드에서 사용할 수 있습니다.
 
  **맞춤선** 맞춤선은 빨간색 파선 선으로 표시되는 *맞춤 경계선*으로, 컨트롤의 가장자리가 맞춰진 경우나 텍스트 기준선이 맞춰진 경우를 나타냅니다. **맞춤선에 맞추기** 를 사용하도록 설정한 경우에만 맞춤 경계선이 나타납니다.
 
- 표 **레일** `Grid` 레일은 [모눈](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 패널의 행과 열을 관리 하는 데 사용 됩니다. 행과 열을 만들고 삭제하며, 상대적인 너비와 높이를 조정할 수 있습니다. 아트보드의 왼쪽에 나타나는 세로 모눈 레일은행에 사용되고 맨 위에 나타나는 가로줄은 열에 사용됩니다.
+ **모눈 레일** `Grid` 레일은 [모눈](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 패널의 행과 열을 관리하는 데 사용됩니다. 행과 열을 만들고 삭제하며, 상대적인 너비와 높이를 조정할 수 있습니다. 아트보드의 왼쪽에 나타나는 세로 모눈 레일은행에 사용되고 맨 위에 나타나는 가로줄은 열에 사용됩니다.
 
  **모눈 표시기**`Grid` 표시기는 `Grid` 레일에 세로 또는 가로 줄이 연결된 삼각형으로 나타납니다. `Grid` 표시기를 끌면 마우스를 이동할 때 인접한 열이나 행의 너비 또는 높이가 그에 따라 업데이트됩니다.
 
@@ -50,7 +50,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  **크기 조정 핸들** 크기 조정 핸들이 선택된 컨트롤에 나타나며 이 핸들을 사용하여 컨트롤의 크기를 조정할 수 있습니다. 컨트롤의 크기를 조정하면 너비 및 높이 값이 나타나므로 컨트롤의 크기를 조정하는 데 도움이 됩니다. 디자인 뷰에서 컨트롤을 조작하는 방법에 대한 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하십시오.
 
- **여백** 여백은 컨트롤 가장자리와 해당 컨테이너 가장자리 사이의 고정된 공간 크기를 나타냅니다. 속성 창의 [레이아웃](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 아래에 있는 **여백** 속성을 사용하여 컨트롤의 여백을 설정할 수 있습니다.
+ **여백** 여백은 컨트롤 가장자리와 해당 컨테이너 가장자리 사이의 고정된 공간 크기를 나타냅니다. 속성 창의 **레이아웃** 아래에 있는 [여백](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 속성을 사용하여 컨트롤의 여백을 설정할 수 있습니다.
 
  **여백 표시기** 여백 표시기를 사용하여 레이아웃 컨테이너를 기준으로 요소의 여백을 변경할 수 있습니다. 여백 표시기가 열려 있으면 여백이 설정되지 않고 여백 표시기에서 끊어진 체인을 표시합니다. 여백을 설정 하지 않으면 런타임에 레이아웃 컨테이너 크기를 조정할 때 요소가 제자리에 유지됩니다. 여백 표시기가 닫힌 경우 여백 표시기는 끊어지지 않은 체인을 표시하고 런타임에 레이아웃 컨테이너의 크기가 조정될 때 요소도 여백과 함께 이동됩니다(여백은 고정됨).
 
@@ -79,9 +79,9 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
  **태그 확대/축소** 태그 확대/축소를 사용하여 XAML 뷰의 크기를 조정할 수 있습니다. 20%부터 400%까지 확대/축소할 수 있습니다.
 
 ## <a name="device-window"></a>디바이스 창
- XAML 디자이너의 디바이스 창에서 다양한 디자인 타임 뷰와 디스플레이, Windows 스토어 또는 Windows Phone 프로젝트에 대한 표시 옵션으로 시뮬레이트할 수 있습니다. 디바이스 창은  XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 이 창의 모양은 다음과 같습니다.
+ XAML 디자이너의 디바이스 창에서 다양한 디자인 타임 뷰와 디스플레이, Windows 스토어 또는 Windows Phone 프로젝트에 대한 표시 옵션으로 시뮬레이트할 수 있습니다. 디바이스 창은  XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같습니다.
 
- ![장치 창](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![디바이스 창](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  다음은 디바이스 창에서 사용할 수 있는 옵션입니다.
 
@@ -108,7 +108,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
 - 아트보드의 모든 요소에 대한 계층 구조를 표시합니다.
 
-- 요소를 수정(계층 구조에서 이동, 아트보드에서 수정, 속성 창에서 속성 설정 등)할 수 있도록 선택합니다. 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하십시오.
+- 요소를 수정(계층 구조에서 이동, 아트보드에서 수정, 속성 창에서 속성 설정 등)할 수 있도록 선택합니다. 자세한 내용은 [XAML 디자이너에서 요소 작업](../designers/working-with-elements-in-xaml-designer.md) 을 참조 하세요.
 
 - 컨트롤인 요소의 템플릿을 만들고 수정합니다.
 
@@ -124,12 +124,12 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
   **표시/숨기기** 문서 개요의 항목에 해당하는 아트보드 요소를 표시하거나 숨깁니다. 표시되면 눈 기호가 나타나는 **표시/숨기기** 단추를 사용합니다. 또는 요소를 숨기려면 Ctrl+H를 누르고, 요소를 표시하려면 Shift+Ctrl+H를 누릅니다.
 
-  **잠금/잠금 해제** 문서 개요의 항목에 해당하는 아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠기면 자물쇠가 나타나는 **잠금/잠금해제** 단추를 사용합니다. 또는 요소를 잠그려면 Ctrl+L을 누르고, 잠금 해제하려면 Shift+Ctrl+L을 누릅니다.
+  **잠금/잠금 해제** 문서 개요의 항목에 해당하는 아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. **잠금/잠금 해제** 단추를 사용 하거나 잠글 때 자물쇠 기호를 표시 하거나 CTRL + l을 눌러 요소를 잠그고 SHIFT + CTRL + l을 눌러 잠금을 해제 합니다.
 
   **범위를 pageRoot로 되돌립니다.** 문서 개요 창의 위쪽에 있는 옵션은 위쪽 화살표 기호를 표시하며 문서 개요를 이전 범위로 반환합니다. 범위 상향 지정은 스타일이나 템플릿의 범위에 있을 경우에만 적용할 수 있습니다.
 
 ## <a name="properties-window"></a>속성 창
- 속성 창을 사용하면 컨트롤에 대한 속성 값을 설정할 수 있습니다. 이 창의 모양은 다음과 같습니다.
+ 속성 창을 사용하면 컨트롤에 대한 속성 값을 설정할 수 있습니다. 다음과 같습니다.
 
  ![속성 창](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
@@ -137,5 +137,5 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  각 속성 값의 오른쪽에 상자 기호로 나타나는 *속성 표식* 이 있습니다. 속성 표식의 모양은 속성에 적용되는 리소스 또는 데이터 바인딩이 있는지 여부를 나타냅니다. 예를 들어 흰색 상자 기호는 기본값을 나타내고, 검은색 상자 기호는 일반적으로 로컬 리소스가 적용되었음을 나타내고, 주황색 상자는 일반적으로 데이터 바인딩이 적용되었음을 나타냅니다. 속성 표식을 클릭하면 스타일의 정의로 이동하거나, 데이터 바인딩 작성기를 열거나, 리소스 선택기를 엽니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [에서 요소 작업 XAML 디자이너](../designers/working-with-elements-in-xaml-designer.md) [리소스를 만들고 적용 하는 방법](../designers/how-to-create-and-apply-a-resource.md) [연습: XAML 디자이너의 데이터에 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

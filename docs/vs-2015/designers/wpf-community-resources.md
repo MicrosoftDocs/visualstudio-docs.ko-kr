@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843885"
 ---
 # <a name="wpf-community-resources"></a>WPF 커뮤니티 리소스
@@ -24,7 +24,7 @@ Microsoft는 WPF 팀 멤버 및 커뮤니티 리더가 생성한 블로그, 포�
 ## <a name="community"></a>커뮤니티
  [WPF 포럼](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
- [스택 오버플로](https://stackoverflow.com/questions/tagged/wpf)
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 
  [WPF 팀 블로그](https://devblogs.microsoft.com/wpf/)
 

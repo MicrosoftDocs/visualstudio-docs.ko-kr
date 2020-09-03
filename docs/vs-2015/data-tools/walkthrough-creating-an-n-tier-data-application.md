@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844195"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>연습: N 계층 데이터 애플리케이션 만들기
@@ -53,9 +53,9 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 - 데이터 테이블을 채우는 코드를 작성합니다.
 
-  ![비디오에 연결](../data-tools/media/playvideo.gif "동영상 재생") 이 항목의 비디오 버전은 [비디오 방법: N 계층 데이터 응용 프로그램 만들기](https://msdn2.microsoft.com/library/cc178916.aspx)를 참조 하세요.
+  ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전은 [비디오 방법: N 계층 데이터 응용 프로그램 만들기](https://msdn2.microsoft.com/library/cc178916.aspx)를 참조 하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 완료하려면 다음 사항이 필요합니다.
 
 - Northwind 샘플 데이터베이스에 대한 액세스.
@@ -71,7 +71,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 1. **파일** 메뉴에서 새 프로젝트를 만듭니다.
 
     > [!NOTE]
-    > **데이터 세트 디자이너** 은 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 및 C# 프로젝트에서 지원 됩니다. 이러한 언어 중 하나로 새 프로젝트를 만듭니다
+    > **데이터 세트 디자이너** 은 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 및 c # 프로젝트에서 지원 됩니다. 이러한 언어 중 하나로 새 프로젝트를 만듭니다
 
 2. **새 프로젝트** 대화 상자의 **프로젝트 형식** 창에서 **Windows**를 클릭 합니다.
 
@@ -86,7 +86,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
      DataEntityTier 프로젝트가 포함된 NTierWalkthrough 솔루션이 만들어져 **솔루션 탐색기**에 추가됩니다.
 
 ## <a name="creating-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>TableAdapters를 포함할 클래스 라이브러리(DataAccessTier) 만들기
- DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래스 라이브러리 프로젝트를 만듭니다. 이 프로젝트는 생성 된 `TableAdapter`를 보유 하며 응용 프로그램의 *데이터 액세스 계층* 이라고 합니다. 데이터 액세스 계층은 데이터베이스에 연결하는 데 필요한 정보를 포함하며 대개 중간 계층에 배치됩니다.
+ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래스 라이브러리 프로젝트를 만듭니다. 이 프로젝트는 생성 된를 보유 `TableAdapter` 하며 응용 프로그램의 *데이터 액세스 계층* 이라고 합니다. 데이터 액세스 계층은 데이터베이스에 연결하는 데 필요한 정보를 포함하며 대개 중간 계층에 배치됩니다.
 
 #### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>TableAdapters용 새 클래스 라이브러리를 만들려면
 
@@ -99,12 +99,12 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
      DataAccessTier 프로젝트가 만들어져 NTierWalkthrough 솔루션에 추가됩니다.
 
 ## <a name="creating-the-dataset"></a>데이터 세트 만들기
- 다음 단계에서는 형식화된 데이터 세트을 만듭니다. 단일 프로젝트에서 DataTables 클래스를 비롯한 데이터 세트 클래스와 `TableAdapter` 클래스를 모두 사용하여 형식화된 데이터 세트을 만듭니다. 모든 클래스는 단일 파일로 생성 됩니다. 데이터 집합과 `TableAdapter`를 서로 다른 프로젝트로 분리 하는 경우 다른 프로젝트로 이동 하는 데이터 집합 클래스로,이 클래스는 원본 프로젝트에 `TableAdapter` 클래스를 남겨 둡니다. 그러므로 최종적으로 `TableAdapter`를 포함할 프로젝트(DataAccessTier 프로젝트)에 데이터 세트을 만듭니다. 데이터 집합은 **데이터 소스 구성 마법사**를 사용 하 여 만듭니다.
+ 다음 단계에서는 형식화된 데이터 세트을 만듭니다. 단일 프로젝트에서 DataTables 클래스를 비롯한 데이터 세트 클래스와 `TableAdapter` 클래스를 모두 사용하여 형식화된 데이터 세트을 만듭니다. 모든 클래스는 단일 파일로 생성 됩니다. 데이터 집합과를 서로 다른 프로젝트로 분리 하는 경우에는 `TableAdapter` 다른 프로젝트로 이동 하는 데이터 집합 클래스로,이 클래스는 `TableAdapter` 원래 프로젝트에 클래스를 남겨 둡니다. 그러므로 최종적으로 `TableAdapter`를 포함할 프로젝트(DataAccessTier 프로젝트)에 데이터 세트을 만듭니다. 데이터 집합은 **데이터 소스 구성 마법사**를 사용 하 여 만듭니다.
 
 > [!NOTE]
 > 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다.
 
-#### <a name="to-create-the-dataset"></a>데이터 세트을 만들려면
+#### <a name="to-create-the-dataset"></a>데이터 세트를 만들려면
 
 1. **솔루션 탐색기**에서 DataAccessTier을 클릭 합니다.
 
@@ -118,7 +118,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
      Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 클릭합니다.
 
-     -또는-
+     또는
 
      **새 연결** 을 클릭 하 여 **연결 추가** 대화 상자를 엽니다.
 
@@ -129,7 +129,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 7. **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음** 을 클릭 합니다.
 
-8. **데이터베이스 개체 선택** 페이지에서 **테이블** 노드를 확장합니다.
+8. **데이터베이스 개체 선택** 페이지에서 **테이블** 노드를 확장 합니다.
 
 9. **Customers** 및 **Orders** 테이블의 확인란을 클릭 한 다음 **마침**을 클릭 합니다.
 
@@ -189,7 +189,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>데이터 액세스 계층에서 Orders 테이블을 반환하는 메서드를 만들려면
 
-1. OrdersTableAdapter를 마우스 오른쪽 단추로 클릭 하 고 **쿼리 추가**를 클릭 합니다.
+1. OrdersTableAdapter를 마우스 오른쪽 단추로 클릭하고 **쿼리 추가**를 클릭합니다.
 
 2. **명령 유형을 선택하세요.** 페이지에서 기본값인 **SQL 문 사용**을 그대로 유지하고 **다음**을 클릭합니다.
 
@@ -208,7 +208,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 #### <a name="to-add-references-to-the-data-service"></a>데이터 서비스에 참조를 추가하려면
 
-1. **솔루션 탐색기** 에서 DataService를 마우스 오른쪽 단추로 클릭 하 고 **참조 추가**를 클릭 합니다.
+1. **솔루션 탐색기**에서 DataService를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 클릭합니다.
 
 2. **참조 추가** 대화 상자에서 **프로젝트** 탭을 클릭합니다.
 
@@ -329,7 +329,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>데이터 바인딩된 DataGridView 두 개를 폼에 추가하려면
 
-1. **솔루션 탐색기**에서 PresentationTier 프로젝트를 선택 합니다.
+1. **솔루션 탐색기**에서 PresentationTier 프로젝트를 선택합니다.
 
 2. **데이터 원본** 창에서 **NorthwindDataSet**를 확장하고 **Customers** 노드를 찾습니다.
 
@@ -365,12 +365,12 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>maxReceivedMessageSize 값을 늘리려면
 
-1. **솔루션 탐색기**에서 PresentationTier 프로젝트의 app.config 파일을 두 번 클릭 합니다.
+1. **솔루션 탐색기**에서 PresentationTier 프로젝트의 app.config 파일을 두 번 클릭합니다.
 
 2. **maxReceivedMessage** 크기 특성을 찾아 값을 `6553600`으로 변경합니다.
 
-## <a name="testing-the-application"></a>응용 프로그램 테스트
- 응용 프로그램을 실행합니다. 데이터가 데이터 서비스에서 검색되어 폼에 표시됩니다.
+## <a name="testing-the-application"></a>애플리케이션 테스트
+ 애플리케이션을 실행합니다. 데이터가 데이터 서비스에서 검색되어 폼에 표시됩니다.
 
 #### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면
 
@@ -385,5 +385,5 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 - 데이터를 데이터베이스로 다시 업데이트하기 위한 추가 메서드를 서비스에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [N 계층 응용 프로그램에서 데이터 집합 작업](../data-tools/work-with-datasets-in-n-tier-applications.md) [Visual Studio에서 데이터에 액세스 하](../data-tools/accessing-data-in-visual-studio.md) 는 [계층적 업데이트](../data-tools/hierarchical-update.md)
