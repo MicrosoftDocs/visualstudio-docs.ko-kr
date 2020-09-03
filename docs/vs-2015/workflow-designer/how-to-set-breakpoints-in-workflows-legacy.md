@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 182f28a2b21ae3129ce0d34fae97280ba0a07218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603591"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>방법: 워크플로에 중단점 설정(레거시)
@@ -49,7 +49,7 @@ ms.locfileid: "72603591"
 
      **새 중단점** 대화 상자가 열립니다.
 
-3. 다음 구문을 사용 하 여 **함수** 텍스트 상자에 활동 이름을 지정 합니다. `QualifiedActivityId[:[FullClassName][:InstanceId]]`.
+3. 구문을 사용 하 여 **함수** 텍스트 상자에 활동 이름을 지정 `QualifiedActivityId[:[FullClassName][:InstanceId]]` 합니다.
 
     > [!NOTE]
     > 필요에 따라 **함수** 텍스트 상자에 활동 이름을 사용 하는 대신 워크플로 활동의 절대 경로를 지정 하 여 중단점을 설정할 수 있습니다. 예를 들어 이름이 **WorkflowConsoleApplication1** 인 워크플로 솔루션과 **Delay1**이라는 활동을 사용 하는 **workflow1.vb** 라는 솔루션에 워크플로가 있다고 가정 합니다. 활동 이름 **Delay1** 을 사용 하거나 경로를 **Delay1: WorkflowConsoleApplication1** 또는 Delay1: WorkflowConsoleApplication1 **: {workflow1.vb}** 으로 지정할 수 있습니다.
@@ -62,5 +62,5 @@ ms.locfileid: "72603591"
 
 6. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [레거시 워크플로 디버깅](../workflow-designer/debugging-legacy-workflows.md) [Windows Workflow Foundation 용 Visual Studio 디버거 호출 (레거시)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

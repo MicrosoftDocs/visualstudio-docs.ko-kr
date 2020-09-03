@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658967"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>워크플로 디자이너의 바로 가기 키
@@ -27,7 +27,7 @@ ms.locfileid: "72658967"
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Workflow Designer 바로 가기 키
  다음 표에는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 명령에 할당된 기본 바로 가기 키가 요약되어 있습니다.
 
-|바로 가기|용도|
+|바로 가기|목적|
 |--------------|-------------|
 |Ctrl+E, A|인수 디자이너를 표시하거나 숨깁니다.|
 |Ctrl+E, C|현재 위치에서 선택한 활동을 축소합니다.|
@@ -43,7 +43,7 @@ ms.locfileid: "72658967"
 |Ctrl+E, X|워크플로의 모든 활동을 확장합니다.|
 |Ctrl+Alt+F6|키보드 포커스를 현재 UI 영역에서 시퀀스의 다음 영역으로 이동합니다. 순서는 다음과 같습니다.<br /><br /> 1. 탐색 모음 탐색 모음<br />2. 디자이너 화면<br />3. 인수/변수/열린 경우 디자이너 가져오기<br />4. 셸|
 
-### <a name="flowchart"></a>Flowchart
+### <a name="flowchart"></a>순서도
  다음 목록은 키보드로 순서도를 구성하는 데 사용되는 제스처를 보여 줍니다. [!INCLUDE[wfd2](../includes/wfd2-md.md)]의 나머지 부분에서와 마찬가지로 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에 제공된 전역 도구 상자 바로 가기를 사용하여 디자이너 화면에 활동을 추가합니다.
 
 - 활동을 이동하려면 활동을 선택하고 화살표 키를 사용하여 활동 위치를 조정합니다.

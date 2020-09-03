@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 075746353440462a66133cd83ed9158470d8de5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662205"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -52,5 +52,5 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>참고 항목
- [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [/Run (](../../ide/reference/run-devenv-exe.md) devenv.exe) [/Build (](../../ide/reference/build-devenv-exe.md) Devenv.exe) [/Rebuild (](../../ide/reference/rebuild-devenv-exe.md) devenv.exe) [/deploy (devenv.exe](../../ide/reference/deploy-devenv-exe.md) )
+## <a name="see-also"></a>관련 항목
+ [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/배포 (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

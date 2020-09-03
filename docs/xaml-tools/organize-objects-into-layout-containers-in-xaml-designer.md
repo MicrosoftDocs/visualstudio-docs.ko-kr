@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459296"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
@@ -33,7 +33,7 @@ ms.locfileid: "86459296"
 
 개체를 행 및 열로 정렬합니다.
 
-![표 레이아웃 패널](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
+![그리드 레이아웃 패널](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
@@ -43,11 +43,11 @@ ms.locfileid: "86459296"
 
 ![UniformGrid 레이아웃 패널](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Canvas
+### <a name="canvas"></a>캔버스
 
 원하는 방식으로 개체를 정렬합니다. 사용자가 앱을 실행할 때 이러한 요소는 화면에서 고정 위치에 표시됩니다.
 
-![Canvas 레이아웃 패널](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![캔버스 레이아웃 패널](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 
@@ -101,7 +101,7 @@ ms.locfileid: "86459296"
 
 ![ViewBox 레이아웃 컨트롤](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [XAML 디자이너의 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [XAML 디자이너를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

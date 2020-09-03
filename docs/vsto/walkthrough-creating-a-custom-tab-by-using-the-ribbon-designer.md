@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255521"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기
@@ -40,8 +40,8 @@ ms.locfileid: "71255521"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -52,11 +52,11 @@ ms.locfileid: "71255521"
 
 ### <a name="to-create-an-excel-workbook-project"></a>Excel 통합 문서 프로젝트를 만들려면
 
-- 이름이 **Myexcelribbon**인 Excel 통합 문서 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+- 이름이 **Myexcelribbon**인 Excel 통합 문서 프로젝트를 만듭니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
 
      Visual Studio가 디자이너에서 새 통합 문서를 열고 **Myexcelribbon** 프로젝트를 **솔루션 탐색기**에 추가 합니다.
 
-## <a name="BKMK_CreateActionsPanes"></a>작업 창 만들기
+## <a name="create-actions-panes"></a><a name="BKMK_CreateActionsPanes"></a> 작업 창 만들기
  프로젝트에 두 개의 사용자 지정 작업 창을 추가합니다. 나중에 이러한 작업 창을 표시하거나 숨기는 단추를 사용자 지정 탭에 추가합니다.
 
 ### <a name="to-create-actions-panes"></a>작업 창을 만들려면
@@ -73,7 +73,7 @@ ms.locfileid: "71255521"
 
 5. 1-5단계를 반복하여 두 번째 작업 창 및 레이블을 만듭니다. 두 번째 레이블의 **Text** 속성을 **Actions Pane 2**로 설정 합니다.
 
-## <a name="BKMK_CreateCustomTab"></a>사용자 지정 탭 만들기
+## <a name="create-a-custom-tab"></a><a name="BKMK_CreateCustomTab"></a> 사용자 지정 탭 만들기
  Office 애플리케이션의 디자인 지침 중 하나는 사용자가 항상 Office 애플리케이션 UI를 제어할 수 있어야 한다는 것입니다. 작업 창에 대해 이 기능을 추가하려면 리본 메뉴의 사용자 지정 탭에서 각 작업 창을 표시하거나 숨기는 단추를 추가합니다. 사용자 지정 탭을 만들려면 프로젝트에 **리본 (비주얼 디자이너)** 항목을 추가 합니다. 이 디자이너는 컨트롤을 추가 및 배치하고, 컨트롤 속성을 설정하고, 컨트롤 이벤트를 처리하는 데 유용합니다.
 
 ### <a name="to-create-a-custom-tab"></a>사용자 지정 탭을 만들려면
@@ -108,7 +108,7 @@ ms.locfileid: "71255521"
 
 14. **Label** 속성을 **Hide Actions Pane**으로 설정 합니다.
 
-## <a name="BKMK_HideShowActionsPane"></a>사용자 지정 탭의 단추를 사용 하 여 작업 창 숨기기 및 표시
+## <a name="hide-and-show-actions-panes-by-using-buttons-on-the-custom-tab"></a><a name="BKMK_HideShowActionsPane"></a> 사용자 지정 탭의 단추를 사용 하 여 작업 창 숨기기 및 표시
  마지막 단계는 사용자에게 응답하는 코드를 추가하는 것입니다. 두 단추의 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 이벤트와 설정/해제 단추의 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 이벤트에 대한 이벤트 처리기를 추가합니다. 이러한 이벤트 처리기에 작업 창을 숨기거나 표시할 수 있는 코드를 추가합니다.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>사용자 지정 탭의 단추를 사용하여 작업 창을 숨기거나 표시하려면
@@ -156,15 +156,15 @@ ms.locfileid: "71255521"
 
 - 문서 수준 사용자 지정에 컨텍스트 기반 UI를 추가합니다. 자세한 내용은 [작업 창 개요](../vsto/actions-pane-overview.md)를 참조 하세요.
 
-- 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 자세한 내용은 [연습: Outlook 양식 영역](../vsto/walkthrough-designing-an-outlook-form-region.md)을 디자인 합니다.
+- 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 자세한 내용은 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [Outlook에 대 한 리본 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)
 - [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [방법: 리본에서 탭의 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [방법: 리본의 탭 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)
-- [방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [방법: backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [리본 개체 모델 개요](../vsto/ribbon-object-model-overview.md)

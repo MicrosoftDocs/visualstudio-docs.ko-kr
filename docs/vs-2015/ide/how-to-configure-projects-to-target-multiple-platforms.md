@@ -1,5 +1,5 @@
 ---
-title: '방법: 여러 플랫폼을 대상으로 하는 프로젝트 구성 | Microsoft Docs'
+title: '방법: 여러 플랫폼을 대상으로 한 프로젝트 구성 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb759faff99b641f24df87f73bc1d3d52b6635cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663552"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>방법: 여러 플랫폼을 대상으로 한 프로젝트 구성
@@ -31,7 +31,7 @@ ms.locfileid: "72663552"
 
 1. **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.
 
-2. **활성 솔루션 플랫폼 상자**에서 솔루션의 대상이 될 플랫폼을 선택하거나 **\<새로 만들기>** 를 선택하여 새 플랫폼을 만듭니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]은(는) **Configuration Manager** 대화 상자에서 활성 플랫폼으로 설정된 플랫폼을 대상으로 애플리케이션을 컴파일합니다.
+2. **활성 솔루션 플랫폼 상자**에서 솔루션의 대상이 될 플랫폼을 선택하거나 **\<New>** 를 선택하여 새 플랫폼을 만듭니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]은(는) **Configuration Manager** 대화 상자에서 활성 플랫폼으로 설정된 플랫폼을 대상으로 애플리케이션을 컴파일합니다.
 
 ## <a name="removing-a-platform"></a>플랫폼 제거
  플랫폼에 대한 요구가 없다고 생각되면 Configuration Manager 대화 상자를 사용하여 제거할 수 있습니다. 그러면 구성 및 대상 조합에 대해 구성한 모든 솔루션 및 프로젝트 설정이 제거됩니다.
@@ -40,7 +40,7 @@ ms.locfileid: "72663552"
 
 1. **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.
 
-2. **활성 솔루션 플랫폼 상자**에서 **\<편집>** 을 선택합니다. **솔루션 플랫폼 편집** 대화 상자가 열립니다.
+2. **활성 솔루션 플랫폼 상자**에서 **\<Edit>** 을 선택합니다. **솔루션 플랫폼 편집** 대화 상자가 열립니다.
 
 3. 제거하려는 플랫폼을 클릭하고 **제거**를 클릭합니다.
 
@@ -63,5 +63,5 @@ ms.locfileid: "72663552"
 
    예를 들어 솔루션 수준 플랫폼을 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)](으)로 설정하고 동일한 플랫폼을 대상으로 하는 솔루션 내에 프로젝트가 없도록 할 수 있습니다. 사용자 솔루션에는 각각 다른 플랫폼을 대상으로 하는 여러 프로젝트를 포함할 수 있습니다. 이러한 상황 중 하나가 발생하면 혼동을 피하기 위해 설명적인 이름으로 새 구성을 만드는 것이 좋습니다.
 
-## <a name="see-also"></a>관련 항목:
- [방법: 구성 만들기 및 편집 ](../ide/how-to-create-and-edit-configurations.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86475993"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정

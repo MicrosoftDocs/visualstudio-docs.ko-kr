@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660924"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>도구 상자 항목 선택, WPF 구성 요소
@@ -62,11 +62,11 @@ ms.locfileid: "72660924"
 
 - 솔루션 구성을 디버그에서 릴리스로 또는 릴리스에서 디버그로 변경하면 제대로 업데이트되지 않습니다. 이는 참조가 프로젝트 참조가 아니라 디스크의 어셈블리에 대한 참조이기 때문입니다. 컨트롤이 현재 솔루션에 포함된 경우 디버그에서 릴리스로 변경하면 프로젝트에서는 계속해서 컨트롤의 디버그 버전을 참조합니다.
 
-  또한 디자인 타임 메타 데이터가 사용자 지정 컨트롤에 적용 되 고이 메타 데이터에서 [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) 가 `false`로 설정 되도록 지정 하면 컨트롤이 도구 상자에 표시 되지 않습니다.
+  또한 디자인 타임 메타 데이터가 사용자 지정 컨트롤에 적용 되 고이 메타 데이터에서 [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) 가로 설정 되도록 지정 하면 `false` 컨트롤이 도구 상자에 표시 되지 않습니다.
 
   컨트롤에 대한 네임스페이스 및 어셈블리를 매핑하면 XAML에서 직접 컨트롤을 참조할 수 있습니다. 자세한 내용은 [방법: 네임스페이스를 XAML로 가져오기](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도구 상자 항목 선택 대화 상자(Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
 - [도구 상자](../../ide/reference/toolbox.md)

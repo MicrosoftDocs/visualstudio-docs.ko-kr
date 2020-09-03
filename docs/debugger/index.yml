@@ -11,10 +11,10 @@ metadata:
   manager: jillfra
   ms.date: 09/20/2019
   ms.openlocfilehash: f1d2a1577f01dcca9763a775a28f27691928bb43
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 07/15/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "86405424"
 landingContent:
 - title: 디버깅 정보

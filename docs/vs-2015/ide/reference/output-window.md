@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f17b91cc462b6f628100ffbf370fcdec2eb9888d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662192"
 ---
 # <a name="output-window"></a>출력 창
@@ -32,7 +32,7 @@ ms.locfileid: "72662192"
 > [!WARNING]
 > Visual Studio Express 버전의 [보기] 메뉴에는 [출력] 창이 나타나지 않습니다. 창을 표시하려면 바로 가기 키 CTRL + ALT + O를 사용합니다.
 
-## <a name="toolbar"></a>Toolbar
+## <a name="toolbar"></a>도구 모음
  **출력 표시** 보려는 출력 창을 하나 이상 표시 합니다. 사용자에게 메시지를 전달할 때 **출력** 창을 사용한 IDE의 도구에 따라 여러 정보 창이 제공될 수 있습니다.
 
  **코드에서 메시지 찾기** 코드 편집기에서 삽입 지점을 선택한 빌드 오류가 포함 된 줄로 이동 합니다.
@@ -60,5 +60,5 @@ ms.locfileid: "72662192"
 ## <a name="scrolling-behavior"></a>스크롤 동작
  [출력] 창에서 자동 스크롤을 사용하고 마우스나 화살표 키로 이동하면 자동 스크롤이 중지됩니다. 자동 스크롤을 다시 시작하려면 CTRL+END를 누릅니다.
 
-## <a name="see-also"></a>관련 항목:
- [출력 창의 진단 메시지는](../../debugger/diagnostic-messages-in-the-output-window.md) 다음으로 [How. [빌드 구성 이해](../../ide/understanding-build-configurations.md) [클래스 라이브러리 개요](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) [를 ](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858) 출력 창](../../ide/compiling-and-building-in-visual-studio.md) 제어 합니다.
+## <a name="see-also"></a>관련 항목
+ [출력 창의 진단 메시지](../../debugger/diagnostic-messages-in-the-output-window.md) [방법: 출력 창 제어](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858) [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md) [빌드 구성 이해 및 빌드](../../ide/understanding-build-configurations.md) [클래스 라이브러리 개요](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661190"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
@@ -70,17 +70,17 @@ Visual Studio에서 앱, 애플리케이션, 웹 사이트, 웹앱, 스크립트
 
  다음 다이어그램은 프로젝트와 솔루션 및 프로젝트와 솔루션에 논리적으로 포함된 항목 간의 관계를 보여줍니다.
 
- ![Visual Studio 프로젝트 및 솔루션](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Visual Studio 프로젝트 및 솔루션](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  사용자 지정 프로젝트 및 항목 템플릿을 만들 수도 있습니다. 자세한 내용은 [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)를 참조하세요.
 
 ## <a name="creating-new-projects"></a>새 프로젝트 만들기
- 새 프로젝트를 만드는 가장 쉬운 방법은 사전 정의된 프로젝트 템플릿으로 시작하는 것입니다. 이 템플릿은 특정 프로그래밍 언어로 특정 유형의 애플리케이션이나 웹 사이트 만들기를 시작하는 미리 생성된 코드 파일, config 파일, 자산 및 설정 기본 세트로 구성되어 있습니다. 이러한 템플릿은 주 메뉴에서 **파일 &#124; 새로 만들기 &#124; 프로젝트** 또는 **파일 &#124; 새로 만들기 &#124; 웹 사이트**를 선택하면 표시되는 **새 프로젝트 대화 상자**에서 확인할 수 있습니다. 자세한 내용은 [솔루션 및 프로젝트 만들기](../ide/creating-solutions-and-projects.md) 및 [NIB 템플릿에서 프로젝트 만들기](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)를 참조하세요.
+ 새 프로젝트를 만드는 가장 쉬운 방법은 사전 정의된 프로젝트 템플릿으로 시작하는 것입니다. 이 템플릿은 특정 프로그래밍 언어로 특정 유형의 애플리케이션이나 웹 사이트 만들기를 시작하는 미리 생성된 코드 파일, config 파일, 자산 및 설정 기본 세트로 구성되어 있습니다. 이러한 템플릿은 주 메뉴에서 **파일 &#124; 새로 만들기 &#124; 프로젝트** 또는 **파일 &#124; 새로 만들기 &#124; 웹 사이트**를 선택하면 표시되는 **새 프로젝트 대화 상자**에서 확인할 수 있습니다. 자세한 내용은 [Creating Solutions and Projects](../ide/creating-solutions-and-projects.md) 및  [NIB 템플릿에서 프로젝트 만들기](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)를 참조하세요.
 
 ## <a name="managing-projects-in-solution-explorer"></a>솔루션 탐색기에서 프로젝트 관리
  새 프로젝트를 만든 후에 **솔루션 탐색기** 를 사용하여 프로젝트와 솔루션 및 연결된 항목을 보고 관리합니다. 다음 그림은 두 프로젝트가 포함되어 있으며, C# 솔루션을 사용하는 서버 탐색기를 보여줍니다.
 
- ![솔루션 탐색기](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![솔루션 탐색기](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -92,15 +92,15 @@ Visual Studio에서 앱, 애플리케이션, 웹 사이트, 웹앱, 스크립트
 
 - [프로젝트의 참조 관리](../ide/managing-references-in-a-project.md)
 
-- [애플리케이션 속성](../ide/application-properties.md)
+- [응용 프로그램 속성](../ide/application-properties.md)
 
 - [어셈블리 및 매니페스트 서명 관리](../ide/managing-assembly-and-manifest-signing.md)
 
-- [방법: 애플리케이션 아이콘 지정(Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [방법: 응용 프로그램 아이콘 지정 (Visual Basic, c #)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [특정 대상 .NET Framework 버전 지정](../ide/targeting-a-specific-dotnet-framework-version.md)
 
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio IDE](../ide/visual-studio-ide.md)

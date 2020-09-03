@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 245b453a3020e79b924cb8058ff392bd59673402
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662129"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>프로젝트 및 솔루션, 옵션 대화 상자
@@ -25,14 +25,14 @@ ms.locfileid: "72662129"
 프로젝트를 개발 및 빌드할 때 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 폴더의 기본 경로를 설정하고 **출력** 창, **작업 목록** 및 **솔루션 탐색기**의 기본 동작을 결정합니다. 이 대화 상자에 액세스하려면 **도구/옵션**을 클릭하고 **프로젝트 및 솔루션**을 확장한 후 **일반**을 클릭합니다.
 
 > [!NOTE]
-> 대화 상자에서 사용할 수 있는 옵션과 메뉴 명령의 이름 및 위치는 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 이 도움말 페이지는 **일반 개발 설정**을 염두에 두고 작성되었습니다. 설정을 보거나 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 대화 상자에서 사용할 수 있는 옵션과 메뉴 명령의 이름 및 위치는 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 이 도움말 페이지는 **일반 개발 설정**을 염두에 두고 작성되었습니다. 설정을 보거나 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조 하세요.
 
 ## <a name="settings"></a>설정
  **프로젝트 위치** 새 프로젝트 및 솔루션 폴더와 디렉터리가 만들어지는 기본 위치를 설정 합니다. 여러 대화 상자에서 이 옵션에 설정된 위치가 폴더 시작 지점으로 사용되기도 합니다. 예를 들어 프로젝트 열기 대화 상자에서는 내 프로젝트 바로 가기에 이 위치가 사용됩니다.
 
- **사용자 프로젝트 템플릿 위치** **새 프로젝트** 대화 상자에서 **내 템플릿**목록을 만드는 데 사용 하는 기본 위치를 설정 합니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
+ **사용자 프로젝트 템플릿 위치** **새 프로젝트** 대화 상자에서 **내 템플릿**목록을 만드는 데 사용 하는 기본 위치를 설정 합니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조 하세요.
 
- **사용자 항목 템플릿 위치** **새 항목 추가** 대화 상자에서 **내 템플릿**목록을 만드는 데 사용 하는 기본 위치를 설정 합니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
+ **사용자 항목 템플릿 위치** **새 항목 추가** 대화 상자에서 **내 템플릿**목록을 만드는 데 사용 하는 기본 위치를 설정 합니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조 하세요.
 
  **빌드가 오류로 인해 완료 되는 경우 항상 오류 목록 표시** 프로젝트 빌드에 실패 한 경우에만 빌드 완료 시 **오류 목록** 창을 엽니다. 빌드 프로세스 중 발생하는 오류가 표시됩니다. 이 옵션을 선택 취소하면 오류는 계속 발생하지만 빌드 완료 시 창이 열리지 않습니다. 기본적으로 이 옵션은 사용하도록 설정됩니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72662129"
 
  **빌드를 시작할 때 출력 창 표시** 는 솔루션 빌드를 시작할 때 IDE에 출력 창를 자동으로 표시 합니다. 자세한 내용은 [방법: 출력 창 제어](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)를 참조하세요. 기본적으로 이 옵션은 사용하도록 설정됩니다.
 
- **파일 이름을 바꿀 때 기호화 된 이름 바꾸기 확인** 이 확인란을 선택 하면 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트의 모든 참조를 코드 요소로 바꿔야 하는지 여부를 묻는 메시지 상자가 표시 됩니다.
+ **파일 이름을 바꿀 때 기호화 된 이름 바꾸기 확인** 이 확인란을 선택 하면에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트의 모든 참조 이름을 코드 요소로 변경할지를 묻는 메시지 상자가 표시 됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

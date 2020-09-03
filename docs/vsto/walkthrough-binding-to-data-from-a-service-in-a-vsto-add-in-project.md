@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72381311"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터 바인딩
@@ -30,14 +30,14 @@ ms.locfileid: "72381311"
 
 - 런타임에 문서에 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 컨트롤 추가
 
-- @No__t-0 컨트롤을 웹 서비스의 데이터에 바인딩합니다.
+- <xref:Microsoft.Office.Tools.Word.RichTextContentControl>웹 서비스의 데이터에 컨트롤을 바인딩합니다.
 
 - <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 컨트롤의 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 이벤트에 응답
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -67,7 +67,7 @@ ms.locfileid: "72381311"
 
    `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
-4. **찾기**를 클릭합니다.
+4. **이동**을 클릭합니다.
 
 5. **네임스페이스** 필드에 **ContentService**를 입력하고 **확인**을 클릭합니다.
 
@@ -83,12 +83,12 @@ ms.locfileid: "72381311"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
 
-2. 다음 메서드를 `ThisAddIn` 클래스에 추가합니다. 이 메서드는 활성 문서 시작 부분에 콘텐츠 컨트롤을 만듭니다.
+2. `ThisAddIn` 클래스에 다음 메서드를 추가합니다. 이 메서드는 활성 문서 시작 부분에 콘텐츠 컨트롤을 만듭니다.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. 다음 메서드를 `ThisAddIn` 클래스에 추가합니다. 이 메서드는 요청을 만들어 웹 서비스로 보내는 데 필요한 개체를 초기화 합니다.
+3. `ThisAddIn` 클래스에 다음 메서드를 추가합니다. 이 메서드는 요청을 만들어 웹 서비스로 보내는 데 필요한 개체를 초기화 합니다.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]
@@ -114,5 +114,5 @@ ms.locfileid: "72381311"
 
      MTPS 콘텐츠 서비스에서 정보가 다운로드되어 콘텐츠 컨트롤 내부에 표시됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)

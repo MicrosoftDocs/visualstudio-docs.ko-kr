@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659131"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>방법: Workflow Designer에서 검색 사용
@@ -28,7 +28,7 @@ ms.locfileid: "72659131"
 
 - 인수
 
-- 표현식
+- 식
 
 #### <a name="using-quick-find"></a>빠른 찾기 기능 사용
 
@@ -38,7 +38,7 @@ ms.locfileid: "72659131"
 
 3. 검색 조건은 현재 워크플로에 있습니다. 다음 스크린 샷은 디자이너에 있는 활동 표시 이름을 보여 줍니다.
 
-     ![워크플로 디자이너 검색 결과](../workflow-designer/media/designersearch.png "DesignerSearch")
+     ![워크플로 디자이너의 검색 결과](../workflow-designer/media/designersearch.png "DesignerSearch")
 
 ## <a name="find-in-files"></a>파일에서 찾기
  파일에서 찾기를 사용하여 워크플로 파일에서 XAML 파일을 포함한 문자열을 찾습니다.
@@ -49,4 +49,4 @@ ms.locfileid: "72659131"
 
 2. **찾을 내용** 텍스트 상자에 검색 항목을 입력 하 고 **모두 찾기** 를 클릭 합니다.
 
-3. 찾기 결과는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]**찾기 결과** 보기에 표시 됩니다. 결과 항목을 두 번 클릭하면 Workflow Designer의 일치 항목이 포함된 활동으로 이동됩니다.
+3. 찾기 결과 보기에 찾기 결과가 표시 됩니다 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Find Result** . 결과 항목을 두 번 클릭하면 Workflow Designer의 일치 항목이 포함된 활동으로 이동됩니다.

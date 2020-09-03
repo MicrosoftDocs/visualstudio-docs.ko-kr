@@ -55,7 +55,7 @@ ms.locfileid: "80705385"
 
   새 솔루션 구성이 추가 되 면 사용자는 표준 도구 모음의 솔루션 구성 드롭다운 목록 상자에서 선택 하 여 해당 구성을 빌드 및/또는 시작할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)

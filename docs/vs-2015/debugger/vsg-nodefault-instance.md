@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c7d2263642c2ff8a2c36f274d2c7b80745ed845
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179490"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-기본 인스턴스에 있는지 여부를 존재로 정의 된 [VsgDbg 클래스](../debugger/vsgdbg-class.md) 클래스-프로그래밍 캡처 인터페이스를 제공 하는-제공 됩니다.  
+프로그래밍 캡처 인터페이스를 제공하는 [VsgDbg Class](../debugger/vsgdbg-class.md) 클래스의 기본 인스턴스가 제공되는지 여부를 존재별로 정의합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,7 +41,7 @@ VsgDbg *g_pVsgDbg;
   
  기본 인스턴스를 사용하지 않도록 설정된 경우 프로그램이 실행되기 전에 자동으로 초기화되고 프로그램이 끝나면 자동으로 제거됩니다. 이 인스턴스를 명시적으로 초기화하거나 초기화를 취소하지 않아도 됩니다.  
   
- 기본 인스턴스를 사용 하지 않으려면 정의 해야 합니다 `VSG_NODEFAULT_INSTANCE` 포함 하기 전에 `vsgcapture.h` 프로그램에서 합니다.  
+ 기본 인스턴스를 사용하지 않도록 설정하려면 프로그램에 `vsgcapture.h`를 포함하기 전에 `VSG_NODEFAULT_INSTANCE`를 정의해야 합니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 기본 인스턴스를 사용하지 않도록 설정하는 방법을 보여줍니다.  

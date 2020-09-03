@@ -24,5 +24,5 @@ ms.locfileid: "80705402"
 ## <a name="the-source-control-service"></a>소스 제어 서비스
  Visual Studio는 두 가지 계층의 서비스, 즉 IDE 수준 서비스와 패키지 수준 서비스를 제공 합니다. Visual Studio IDE는 기본적으로 IDE 수준 서비스를 제공 합니다. 원본 제어 패키지는 이러한 서비스 중 일부를 사용 합니다. VSPackage 원본 제어 패키지는 자체의 전용 소스 제어 서비스를 제공 하 여 소스 제어 기능을 공유 합니다. 소스 제어 패키지는 Visual Studio IDE에서 사용할 수 있는 계약 형식으로 구현 되는 소스 제어 관련 인터페이스 집합을 캡슐화 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [디자인 요소](../../extensibility/internals/source-control-vspackage-design-elements.md)

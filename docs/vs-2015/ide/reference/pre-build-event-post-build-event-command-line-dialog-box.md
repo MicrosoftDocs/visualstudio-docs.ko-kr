@@ -35,10 +35,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b42c219620a669a8fa27a7ce847dc571a4075288
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662162"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자
@@ -53,7 +53,7 @@ ms.locfileid: "72662162"
  **명령줄 입력란** 빌드 전 또는 빌드 후에 실행할 이벤트를 포함 합니다.
 
 > [!NOTE]
-> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
+> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
 
  **매크로** 편집 상자를 확장 하 여 명령줄 편집 상자에 삽입할 매크로 목록을 표시 합니다.
 
@@ -86,5 +86,5 @@ ms.locfileid: "72662162"
 |`$(TargetFileName)`|빌드에 대한 기본 출력 파일의 파일 이름(기본 이름 및 파일 확장명으로 정의됨)입니다.|
 |`$(TargetExt)`|빌드에 대한 기본 출력 파일의 파일 확장명입니다. 파일 확장명 앞에 '.'을 포함합니다.|
 
-## <a name="see-also"></a>관련 항목:
- [Visual Studio 빌드 이벤트의 사용자 지정 빌드 이벤트 지정](../../ide/specifying-custom-build-events-in-visual-studio.md) [페이지, 프로젝트 디자이너C#()](../../ide/reference/build-events-page-project-designer-csharp.md) [방법: 빌드 이벤트 지정 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [방법: 빌드 이벤트 지정 (C#)](../../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio 빌드 이벤트의 사용자 지정 빌드 이벤트 지정](../../ide/specifying-custom-build-events-in-visual-studio.md) [페이지, 프로젝트 디자이너 (c #)](../../ide/reference/build-events-page-project-designer-csharp.md) [방법: 빌드 이벤트 지정 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [방법: 빌드 이벤트 지정 (c #)](../../ide/how-to-specify-build-events-csharp.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7732a5757281e83c501a8258dd1d44b4f329a87a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548059"
 ---
 # <a name="cpu-usage"></a>CPU 사용량
@@ -27,11 +27,11 @@ ms.locfileid: "85548059"
   
  성능 및 진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. 예를 들어 로컬이나 원격 컴퓨터에서 또는 시뮬레이터나 에뮬레이터에서 **CPU 사용량** 도구를 실행할 수 있습니다. 실행 중인 앱에 연결되고 Visual Studio에서 열려 있는 프로젝트의 성능을 분석하거나 Windows 스토어에서 설치된 앱을 시작할 수 있습니다. 자세한 내용은 [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01) 을 참조 하세요.  
   
-## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>CPU 사용량 데이터 수집  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> CPU 사용량 데이터 수집  
   
 1. Visual Studio에서 솔루션 구성을 **릴리스** 으로 설정하고 배포 대상을 선택합니다.  
   
-    ![릴리스 및 로컬 머신 선택](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![릴리스 및 로컬 컴퓨터 선택](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
    - **릴리스** 모드에서 앱을 실행하면 앱의 실제 성능을 더 잘 파악할 수 있습니다.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "85548059"
 |![3단계](../profiling/media/procguid-3.png "ProcGuid_3")|두 번째 수준 노드의 자식은 두 번째 수준 시스템과 프레임워크 코드가 호출하거나 만드는 사용자 코드 메서드 및 비동기 루틴입니다.|  
 |![4단계](../profiling/media/procguid-4.png "ProcGuid_4")|메서드의 자식 노드에는 부모 메서드 호출에 대한 데이터만 포함되어 있습니다. **외부 코드 표시** 가 사용하지 않도록 설정되어 있으면 앱 메서드에 **[External Code]** 노드를 포함할 수 있습니다.|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>외부 코드  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> 외부 코드  
  외부 코드는 사용자가 작성한 코드에서 실행된 시스템 및 프레임워크 구성 요소의 함수입니다. 외부 코드에는 앱을 시작 및 중지하고, UI를 그리며, 스레딩을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 함수가 포함되어 있습니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External code]** 노드로 수집 합니다.  
   
  외부 코드의 호출 경로를 보려면 **필터 뷰** 목록에서 **외부 코드 보기** 를 선택한 다음 **적용**을 선택합니다.  
@@ -97,7 +97,7 @@ ms.locfileid: "85548059"
 |**셀프 CPU(밀리초)**|선택한 시간 범위에서의 함수 호출과 함수가 호출한 함수에 소요된 시간(밀리초)입니다.|  
 |**모듈**|함수가 포함된 모듈의 이름 또는 [External Code] 노드에 함수가 포함된 모듈의 수입니다.|  
   
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>CPU 사용량 호출 트리의 비동기 함수  
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리의 비동기 함수  
  컴파일러에서 비동기 메서드가 발생하면 메서드 실행을 제어하는 숨겨진 클래스를 만듭니다. 개념적으로 클래스는 원래 메서드의 연산을 비동기적으로 호출하고, 이러한 연산에 필요한 콜백, 스케줄러 및 반복기를 올바르게 호출하는 컴파일러 생성 함수 목록을 포함하는 상태 시스템입니다. 부모 메서드가 원래 메서드를 호출하면 런타임에서 부모의 실행 컨텍스트에서 메서드를 제거하고, 앱의 실행을 제어하는 시스템과 프레임워크 코드의 컨텍스트에서 숨겨진 클래스의 메서드를 실행합니다. 비동기 메서드는 일반적으로 하나 이상의 서로 다른 스레드에서 실행되지만 항상 그렇지는 않습니다. 이 코드는 트리의 상단 노드 바로 아래의 **[External Code]** 노드의 자식으로 CPU 사용량 호출 트리에 표시됩니다.  
   
  이 예제에서 이 코드를 보려면 타임라인에서 `GetMaxNumberAsyncButton_Click` 세그먼트를 다시 선택합니다.  

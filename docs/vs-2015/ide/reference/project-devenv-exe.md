@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f9c54691ed343493ef1e43798faf4d2ab6f60fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662118"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
@@ -37,11 +37,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 ```
 
 ## <a name="arguments"></a>인수
- /build `ProjName` `/project` 지정 된 프로젝트를 빌드합니다.
+ /build는로 지정 된 프로젝트를 빌드합니다 `/project` `ProjName` .
 
  /clean 빌드 중에 만들어진 모든 중간 파일 및 출력 디렉터리를 정리 합니다.
 
- /rebuild는 `/project` `ProjName`에 지정 된 프로젝트를 정리한 후 빌드합니다.
+ /rebuild는로 지정 된 프로젝트를 정리한 후 빌드합니다 `/project` `ProjName` .
 
  /배포 빌드 또는 다시 빌드 후 프로젝트를 배포 하도록 지정 합니다.
 
@@ -68,5 +68,5 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>참고 항목
- [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [/projectconfig (devenv.exe](../../ide/reference/projectconfig-devenv-exe.md) [)/Build (](../../ide/reference/build-devenv-exe.md) Devenv.exe) [/Clean (](../../ide/reference/clean-devenv-exe.md) devenv.exe) [/Rebuild (](../../ide/reference/rebuild-devenv-exe.md) devenv.exe) [/deploy](../../ide/reference/deploy-devenv-exe.md) (devenv.exe) [/out (](../../ide/reference/out-devenv-exe.md) devenv.exe)
+## <a name="see-also"></a>관련 항목
+ [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [/projectconfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/배포 (devenv.exe](../../ide/reference/deploy-devenv-exe.md) ) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

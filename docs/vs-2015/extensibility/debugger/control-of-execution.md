@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c885c0c983e6fafd69d55b3d68f8ed6e8ff2628c
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387267"
 ---
 # <a name="control-of-execution"></a>실행 제어
@@ -61,5 +61,5 @@ ms.locfileid: "86387267"
   
    SDM에서 수행 하 `Step` 고 **실행**하 고 **계속** 하는 호출은 비동기적입니다. 즉, sdm에서 호출이 빠르게 반환 될 것으로 예상 합니다. DE가 SDM을 이전, 실행 또는 계속 반환 되기 전에 동일한 스레드에서 중지 이벤트를 보내면 `Step` sdm의 응답이 중지 됩니다. **Execute** **Continue**  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

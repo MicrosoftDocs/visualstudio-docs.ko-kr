@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
-ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86418066"
 ---
 # <a name="walkthrough-highlight-text"></a>연습: 텍스트 강조 표시
@@ -405,5 +405,5 @@ MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집�
 
 4. "Hello"의 발생 중 하나에 커서를 놓습니다. 모든 항목은 파란색으로 강조 표시 되어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

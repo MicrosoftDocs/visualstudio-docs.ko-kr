@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663982"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
@@ -30,18 +30,18 @@ ms.locfileid: "72663982"
 
 - XAML 디자이너에서 다음 중 하나를 수행합니다.
 
-  - **도구 상자**에서 요소를 두 번 클릭하거나 도구 상자에서 요소를 선택하고 Enter 키를 누릅니다.
+  - **도구 상자** 에서 요소를 두 번 클릭 하거나 도구 상자에서 요소를 선택 하 고 enter 키를 누릅니다.
 
   - 요소를 **도구 상자**에서 아트보드로 끌어 놓습니다.
 
   - **도구 상자**에서 그리기 도구(예: [타원](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) 또는 [사각형](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) 중 하나를 선택한 다음 활성 패널에서 요소를 그립니다.
 
 ## <a name="changing-the-layering-order-of-elements"></a>요소의 쌓기 순서 변경
- XAML 디자이너의 아트보드에 두 요소가 있는 경우 한 요소가 쌓기 순서 대로 다른 요소 앞에 표시됩니다. [문서 개요] 창의 요소 목록 아래쪽에는 맨 앞의 요소가 있습니다(요소에 대해 **ZIndex** 속성이 설정된 경우 제외). 페이지, 폼 또는 레이아웃 컨테이너에 요소를 삽입할 때 요소가 활성 컨테이너 요소의 다른 요소 앞에 자동으로 배치됩니다. 요소의 순서를 변경하려면 **Order** 명령을 사용하거나 [문서 개요] 창의 개체 트리에서 요소를 끌면 됩니다.
+ XAML 디자이너의 아트보드에 두 요소가 있는 경우 한 요소가 쌓기 순서 대로 다른 요소 앞에 표시됩니다. 문서 개요 창에서 요소 목록의 맨 아래에는 맨 앞의 요소가 있습니다 (요소의 **ZIndex** 속성이 설정 된 경우 제외). 페이지, 폼 또는 레이아웃 컨테이너에 요소를 삽입할 때 요소가 활성 컨테이너 요소의 다른 요소 앞에 자동으로 배치됩니다. 요소의 순서를 변경하려면 **Order** 명령을 사용하거나 [문서 개요] 창의 개체 트리에서 요소를 끌면 됩니다.
 
 #### <a name="to-change-the-layering-order"></a>쌓기 순서를 변경하려면
 
-- 다음 작업 중 하나를 수행합니다.
+- 다음 중 하나를 수행합니다.
 
   - **문서 개요** 창에서 요소를 위쪽이나 아래쪽으로 끌어 원하는 쌓기 순서를 만듭니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "72663982"
 ## <a name="changing-the-alignment-of-an-element"></a>요소의 맞춤 변경
  메뉴 명령을 사용하거나 맞춤선에 요소를 끌어 아트 보드에서 요소를 맞출 수 있습니다.
 
- *맞춤선*은 앱의 다른 요소를 기준으로 요소를 맞추는 데 도움이 되는 시각적 표시입니다.
+ *맞춤선* 은 앱의 다른 요소를 기준으로 요소를 맞추는 데 도움이 되는 시각 신호입니다.
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>메뉴 명령을 사용하여 두 개 이상의 요소를 맞추려면
 
@@ -119,7 +119,7 @@ ms.locfileid: "72663982"
 
 #### <a name="to-reset-the-element-layout"></a>요소 레이아웃을 다시 설정하려면
 
-- [문서 개요] 창 또는 아트보드에서 요소를 마우스 오른쪽 단추로 클릭하고, **레이아웃**, *PropertyName* **다시 설정**을 차례로 선택하거나(여기서 *PropertyName*은 다시 설정하려는 속성), **레이아웃**, **모두 다시 설정**을 차례로 선택하여 요소에 대한 모든 레이아웃 속성을 다시 설정합니다.
+- 문서 개요 창이 나 아트 보드에서 요소를 마우스 오른쪽 단추로 클릭 하 고 **레이아웃**, PropertyName **다시 설정** *PropertyName*을 차례로 선택 합니다. 여기서 *PropertyName* 은 다시 설정할 속성입니다. 또는 **레이아웃**, **모두 다시 설정** 을 선택 하 여 요소에 대 한 모든 레이아웃 속성을 다시 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

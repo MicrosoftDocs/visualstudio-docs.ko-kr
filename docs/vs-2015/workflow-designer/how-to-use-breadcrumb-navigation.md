@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659150"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>방법: 이동 경로 탐색 사용
@@ -47,7 +47,7 @@ ms.locfileid: "72659150"
 2. 모두 확장 또는 모두 축소 상태를 적용 한 후에는 표시 되는 **복원** 단추를 클릭 하 여 이전에 각 작업에 적용 된 상태를 볼 수 있습니다.
 
     > [!WARNING]
-    > @No__t_0와 같은 활동이 현재 위치의 확장에서 옵트아웃 된 경우 **모두 확장** 및 **모두 축소** 단추와 연결 된 기능을 **순서도** 디자이너에서 사용할 수 없습니다. **순서도** 디자이너 [!INCLUDE[crabout](../includes/crabout-md.md)] [순서도](../workflow-designer/flowchart-activity-designer.md) 항목을 참조 하세요.
+    > 와 같은 활동이 <xref:System.Activities.Statements.Flowchart> 현재 위치의 확장에서 옵트아웃 된 경우 **모두 확장** 및 **모두 축소** 단추와 연결 된 기능을 **순서도** 디자이너에서 사용할 수 없습니다. [!INCLUDE[crabout](../includes/crabout-md.md)]**순서도** 디자이너에서 [순서도](../workflow-designer/flowchart-activity-designer.md) 항목을 참조 하세요.
 
     > [!WARNING]
     > 모두 확장은 **Switch** 및 **TryCatch** activity designer에서 특수 한 효과를 가집니다. **모두 확장**을 클릭 하면 모든 스위치 사례와 모든 try/catch/finally 블록이 표시 됩니다. **복원** 또는 **모두 축소** 를 클릭 하면 이러한 디자이너가 기본 상태로 돌아갑니다. 여기서 개별 case/블록을 클릭 하 여 해당 내용을 볼 수 있습니다.

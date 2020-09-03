@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548111"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
@@ -102,7 +102,7 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
 |폴더 이름|설명|
 |-----------------|-----------------|
-|\\*\<language name>*|언어 폴더입니다. *\<language name>* 언어의 이름으로 대체 합니다. 예를 들어 **\Matlab**으로 바꿉니다.|
+|\\*\<language name>*|언어 폴더입니다. *\<language name>* 을 언어 이름으로 바꿉니다. 예를 들어 **\Matlab**으로 바꿉니다.|
 |\Syntaxes|문법 폴더입니다. 언어의 문법 .json 파일(예: **Matlab.json**)이 들어 있습니다.|
 |\Snippets|코드 조각 폴더입니다. 언어의 코드 조각이 들어 있습니다.|
 
@@ -110,5 +110,5 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
  TextMate 문법을 만드는 방법에 대 한 자세한 내용은 [textmate – 언어 문법 소개: HTML에 포함 된 소스 코드 구문 강조 표시를 추가 하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [textmate 번들에 대 한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대 한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio 2013 탐색 향상](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md) [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)
