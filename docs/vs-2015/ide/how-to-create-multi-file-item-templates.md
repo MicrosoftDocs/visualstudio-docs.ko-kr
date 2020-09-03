@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668085"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
@@ -37,7 +37,7 @@ ms.locfileid: "72668085"
 
 1. 단일 파일 항목 템플릿을 만드는 것처럼 항목 템플릿을 만듭니다. 자세한 내용은 [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)를 참조하세요.
 
-2. `TargetFileName` 특성을 모든 `ProjectItem` 요소에 추가합니다. `TargetFileName` 특성 값을 $fileinputname$.*FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 이름 확장명입니다. 예를 들면,
+2. `TargetFileName` 특성을 모든 `ProjectItem` 요소에 추가합니다. `TargetFileName` 특성 값을 $fileinputname$.*FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 이름 확장명입니다. 예를 들면 다음과 같습니다.
 
     ```
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -55,9 +55,9 @@ ms.locfileid: "72668085"
 
 3. 템플릿에 포함할 파일을 선택하고 선택 영역을 마우스 오른쪽 단추로 클릭한 다음 **보내기**를 클릭하고 **압축(ZIP) 폴더**를 클릭합니다. 선택한 파일이 .zip 파일로 압축됩니다.
 
-4. .zip 파일을 사용자 항목 템플릿 위치에 배치합니다. 기본적으로 이 디렉터리는 \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
+4. .zip 파일을 사용자 항목 템플릿 위치에 배치합니다. 기본적으로 이 디렉터리는 \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows Forms 템플릿을 보여 줍니다. 이 템플릿을 기반으로 항목이 생성되면 생성된 3개 파일의 이름은 **새 항목 추가** 대화 상자에 입력된 이름과 일치합니다.
 
 ```
@@ -83,5 +83,5 @@ ms.locfileid: "72668085"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [방법: 항목 템플릿](../ide/how-to-create-item-templates.md) [템플릿 매개 변수](../ide/template-parameters.md) 만들기 [방법: 템플릿에서 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)

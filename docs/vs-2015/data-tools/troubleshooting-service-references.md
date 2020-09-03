@@ -18,24 +18,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 60f06aa64cf6a6b96f0c4d610fba1d20b794c55f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667208"
 ---
 # <a name="troubleshooting-service-references"></a>서비스 참조 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-이 항목에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 또는 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 참조로 작업할 때 발생할 수 있는 일반적인 문제에 대해 설명 합니다.
+이 항목에서는에서 또는 참조로 작업할 때 발생할 수 있는 일반적인 문제에 대해 설명 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 합니다.
 
 ## <a name="error-returning-data-from-a-service"></a>서비스에서 데이터를 반환 하는 동안 오류 발생
- 서비스에서 `DataSet` 또는 `DataTable`을 반환 하면 "들어오는 메시지의 최대 크기 할당량을 초과 했습니다." 예외가 표시 될 수 있습니다. 기본적으로 일부 바인딩의 `MaxReceivedMessageSize` 속성은 서비스 거부 공격에 대 한 노출을 제한 하기 위해 상대적으로 작은 값으로 설정 됩니다. 예외를 방지 하기 위해이 값을 늘릴 수 있습니다.
+ 서비스에서 또는를 반환 하는 경우 `DataSet` `DataTable` "들어오는 메시지의 최대 크기 할당량을 초과 했습니다." 예외가 표시 될 수 있습니다. 기본적으로 `MaxReceivedMessageSize` 일부 바인딩의 속성은 서비스 거부 공격에 대 한 노출을 제한 하기 위해 상대적으로 작은 값으로 설정 됩니다. 예외를 방지 하기 위해이 값을 늘릴 수 있습니다.
 
  이 오류를 해결하려면
 
 1. **솔루션 탐색기**에서 app.config 파일을 두 번 클릭 하 여 엽니다.
 
-2. @No__t_0 속성을 찾아 더 큰 값으로 변경 합니다.
+2. 속성을 찾아 `MaxReceivedMessageSize` 더 큰 값으로 변경 합니다.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>내 솔루션에서 서비스를 찾을 수 없습니다.
  **서비스 참조 추가** 대화 상자에서 **검색** 단추를 클릭 하면 솔루션에 있는 하나 이상의 WCF 서비스 라이브러리 프로젝트가 서비스 목록에 나타나지 않습니다. 이는 서비스 라이브러리가 솔루션에 추가 되었지만 아직 컴파일되지 않은 경우에 발생할 수 있습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "72667208"
 - **솔루션 탐색기**에서 WCF 서비스 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **빌드**를 클릭 합니다.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>원격 데스크톱을 통해 서비스에 액세스 하는 동안 오류 발생
- 사용자가 원격 데스크톱 연결을 통해 웹 호스팅 WCF 서비스에 액세스 하 고 사용자에 게 관리 권한이 없는 경우 NTLM 인증을 사용 합니다. 사용자에 게 관리 권한이 없는 경우 사용자에 게 다음 오류 메시지가 표시 될 수 있습니다. "HTTP 요청은 클라이언트 인증 체계 ' Anonymous '로 인증 되지 않습니다. 서버에서 받은 인증 헤더가 ' NTLM ' 이었습니다.
+ 사용자가 원격 데스크톱 연결을 통해 웹 호스팅 WCF 서비스에 액세스 하 고 사용자에 게 관리 권한이 없는 경우 NTLM 인증을 사용 합니다. 사용자에 게 관리 권한이 없는 경우 사용자에 게 다음 오류 메시지가 표시 될 수 있습니다. "HTTP 요청은 클라이언트 인증 스키마 ' 익명 '으로 인증 되지 않습니다. 서버에서 받은 인증 헤더가 ' NTLM ' 이었습니다.
 
  이 오류를 해결하려면
 
@@ -57,9 +57,9 @@ ms.locfileid: "72667208"
     > WCF 서비스를 단독으로 포함 하는 웹 사이트의 경우에만 NTLM 인증을 해제 해야 합니다. WCF 서비스에 대 한 보안은 web.config 파일의 구성을 통해 관리 됩니다. 이렇게 하면 NTLM 인증이 필요 하지 않습니다.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>생성 된 클래스 설정에 대 한 액세스 수준이 아무런 영향을 주지 않습니다.
- **서비스 참조 구성** 대화 상자의 **생성 된 클래스에 대 한 액세스 수준** 옵션을 **내부** 또는 **Friend** 로 설정 하면 항상 작동 하지 않을 수 있습니다. 대화 상자에서 옵션을 설정 하는 것 처럼 보이는 경우에도 `Public` 액세스 수준을 사용 하 여 결과 지원 클래스가 생성 됩니다.
+ **서비스 참조 구성** 대화 상자의 **생성 된 클래스에 대 한 액세스 수준** 옵션을 **내부** 또는 **Friend** 로 설정 하면 항상 작동 하지 않을 수 있습니다. 대화 상자에서 옵션을 설정 하는 것 처럼 보이는 경우에도의 액세스 수준으로 결과 지원 클래스가 생성 됩니다 `Public` .
 
- 이는 <xref:System.Xml.Serialization.XmlSerializer>을 사용 하 여 serialize 된 것과 같은 특정 형식에 대 한 알려진 제한 사항입니다.
+ 이는를 사용 하 여 serialize 되는 것과 같은 특정 형식의 알려진 제한 사항입니다 <xref:System.Xml.Serialization.XmlSerializer> .
 
 ## <a name="error-debugging-service-code"></a>서비스 코드 디버깅 오류
  클라이언트 코드에서 WCF 서비스에 대 한 코드를 한 단계씩 코드 실행 하면 누락 된 기호와 관련 된 오류가 발생할 수 있습니다. 솔루션에 포함 된 서비스를 솔루션에서 이동 하거나 제거 하는 경우 이러한 문제가 발생할 수 있습니다.
@@ -76,16 +76,16 @@ ms.locfileid: "72667208"
 
 3. **고급 빌드 구성 표시** 확인란이 선택 되어 있는지 확인 한 다음 **확인**을 클릭 합니다.
 
-4. WCF 서비스 프로젝트를 로드 합니다. 자세한 내용은 [NIB 방법: @No__t_0 다중 프로젝트 솔루션을 만듭니다.
+4. WCF 서비스 프로젝트를 로드 합니다. 자세한 내용은 [NIB 방법: 다중 프로젝트 솔루션 만들기](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)를 참조 하세요.
 
-5. **Configuration Manager** 대화 상자에서 **활성 솔루션 구성을** **디버그**로 설정 합니다. 자세한 내용은 [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
+5. **Configuration Manager** 대화 상자에서 **활성 솔루션 구성을** **디버그**로 설정 합니다. 자세한 내용은 [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)을 참조 하세요.
 
 6. **솔루션 탐색기**에서 WCF 서비스 프로젝트를 선택 합니다.
 
 7. **빌드** 메뉴에서 **다시** 빌드를 클릭 하 여 WCF 서비스 프로젝트를 다시 빌드합니다.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>브라우저에 표시 되지 WCF Data Services
- @No__t_0에서 데이터의 XML 표현을 보려고 하면 Internet Explorer에서 데이터를 RSS 피드로 잘못 해석할 수 있습니다. RSS 피드를 표시하는 옵션은 반드시 비활성화되어 있어야 합니다.
+ 에서 데이터의 XML 표현을 보려고 하면 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] Internet Explorer에서 데이터를 RSS 피드로 잘못 해석할 수 있습니다. RSS 피드를 표시하는 옵션은 반드시 비활성화되어 있어야 합니다.
 
  이 오류를 해결 하려면 RSS 피드를 사용 하지 않도록 설정 합니다.
 
@@ -95,8 +95,8 @@ ms.locfileid: "72667208"
 
 3. **피드 설정** 대화 상자에서 **피드 읽기용 보기 설정** 확인란의 선택을 취소 한 다음 **확인**을 클릭 합니다.
 
-4. **확인**을 클릭하여 **인터넷 옵션** 대화 상자를 닫습니다.
+4. **확인** 을 클릭 하 여 **인터넷 옵션** 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio에서 서비스 및 WCF Data Services Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

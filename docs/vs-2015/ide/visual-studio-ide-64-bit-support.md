@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667112"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64비트 지원
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 애플리케이션을 설정할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 64비트 플랫폼 지원에 대한 자세한 내용은 [64비트 애플리케이션](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)을 참조하세요.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 애플리케이션을 설정할 수 있습니다. 의 64 비트 플랫폼 지원에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [64 비트 응용 프로그램](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)을 참조 하세요.
 
 ## <a name="deploying-a-64-bit-application"></a>64비트 애플리케이션 배포
  다음 항목에서는 64비트 애플리케이션을 배포하는 방법을 설명합니다.
@@ -35,7 +35,7 @@ ms.locfileid: "72667112"
 ## <a name="configuring-projects-as-64-bit-applications"></a>프로젝트를 64비트 애플리케이션으로 구성
  다음 항목에서는 프로젝트를 64비트 애플리케이션으로 빌드되도록 구성하는 방법을 설명합니다.
 
-- [방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)
+- [방법: 플랫폼을 대상으로 하는 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>64비트 애플리케이션 디버그
  [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]가 64비트 Windows 운영 체제에서 실행되고 있으면 편집 및 계속이 작동하지 않습니다. 다음 항목에서는 64비트 애플리케이션을 디버그하는 방법을 설명합니다.
@@ -46,5 +46,5 @@ ms.locfileid: "72667112"
 
 - [덤프 파일 사용](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>참고 항목
- [방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)
+## <a name="see-also"></a>관련 항목
+ [방법: 플랫폼을 대상으로 하는 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)

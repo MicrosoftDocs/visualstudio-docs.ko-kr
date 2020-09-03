@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668070"
 ---
 # <a name="how-to-create-item-templates"></a>방법: 항목 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목 [첫 번째 절차](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)의 단계에서는 **템플릿 내보내기** 마법사를 사용하여 항목 템플릿을 만드는 방법을 보여 줍니다. 템플릿이 여러 파일로 구성되는 경우 [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md)를 참조하세요.
+이 항목 [첫 번째 절차](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)의 단계에서는 **템플릿 내보내기** 마법사를 사용하여 항목 템플릿을 만드는 방법을 보여 줍니다. 템플릿이 여러 파일로 구성 되는 경우 [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md)를 참조 하세요.
 
  마법사에서 기본 템플릿 만들기에 대한 많은 작업을 수행하지만 대부분의 경우 템플릿을 내보낸 후 .vstemplate 파일을 수동으로 수정해야 합니다. 예를 들어 항목을 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 프로젝트의 **새 항목 추가** 대화 상자에 표시하려면 몇 가지 추가 단계를 수행해야 합니다. 이 항목의 [두 번째 절차](#to-enable-the-item-template-to-be-used-in-a-store-project)에 따라 해당 작업을 수행할 수 있습니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "72668070"
 
 2. 항목을 프로젝트에 추가한 후 원하는 경우 수정합니다.
 
-3. 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 자세한 내용은 [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
+3. 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 자세한 내용은 [방법: 템플릿에서 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조 하세요.
 
 4. **파일** 메뉴에서 **템플릿 내보내기**를 클릭합니다.
 
@@ -50,10 +50,10 @@ ms.locfileid: "72668070"
 
 8. 아이콘 파일 이름, 미리 보기 이미지, 템플릿 이름 및 템플릿 설명을 입력한 다음 **마침**을 클릭합니다.
 
-     템플릿 파일은 .zip 파일에 추가되고 대화 상자에서 지정한 디렉터리에 복사됩니다. 기본 위치는 **..\Users\\<username\>\Documents\Visual Studio \<Version>\My Exported Templates\\** 폴더입니다.
+     템플릿 파일은 .zip 파일에 추가되고 대화 상자에서 지정한 디렉터리에 복사됩니다. 기본 위치는 **.입니다. \Users \\<username \> \Documents\visual Studio \<Version> \My에서 내보낸 \\ 템플릿** 폴더입니다.
 
     > [!WARNING]
-    > Visual Studio의 이전 버전에서 기본 위치는 **..\Users\\<username\>\Documents\Visual Studio \<Version>\Templates\ItemTemplates**입니다.
+    > 이전 버전의 Visual Studio에서 기본 위치는 **.입니다. \Users \\<username \> \Documents\visual Studio \<Version> \Templates\ItemTemplates**를 입력 합니다.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>항목 템플릿을 저장소 프로젝트에서 사용할 수 있도록 하려면
 
@@ -67,7 +67,7 @@ ms.locfileid: "72668070"
 
     C++ Windows 8.1 스토어 프로젝트에서는 `WinRT-Native-6.3` 값을 사용합니다. Windows 10 및 기타 프로젝트 유형의 경우 [TemplateGroupID 요소(Visual Studio 템플릿)](../extensibility/templategroupid-element-visual-studio-templates.md)를 참조하세요.
 
-    다음 예제에서는 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 행이 추가된 이후 .vstemplate 파일의 전체 내용을 보여 줍니다. 이 예제는 C# 프로젝트에만 적용됩니다. @No__t_0ProjectType > 및 \< 템플릿 [groupid](../extensibility/templategroupid-element-visual-studio-templates.md)> 요소를 수정 하 여 다른 언어 및 프로젝트 형식을 지정할 수 있습니다.
+    다음 예제에서는 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 행이 추가된 이후 .vstemplate 파일의 전체 내용을 보여 줍니다. 이 예제는 C# 프로젝트에만 적용됩니다. 및 요소를 수정 \<ProjectType> \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 하 여 다른 언어 및 프로젝트 형식을 지정할 수 있습니다.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -110,7 +110,7 @@ ms.locfileid: "72668070"
 
 2. 요소의 텍스트 값을 다음 값 중 하나로 설정합니다.
 
-   1. 창
+   1. Windows
 
    2. Office
 
@@ -157,5 +157,5 @@ ms.locfileid: "72668070"
 
 8. .zip 파일을 복사하여 사용자 항목 템플릿 위치에 붙여넣습니다. Visual Studio 2015에서 기본 디렉터리는 ..\Users\\<username\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\입니다. 자세한 내용은 방법: 프로젝트 템플릿과 항목 템플릿 찾기 및 구성을 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md) [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md) [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 85e27ab04ca81f5513a0b09bc41548f4a7c2430d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547682"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API의 동일한 관리형 기능을 사용하세요.
@@ -44,7 +44,7 @@ ms.locfileid: "85547682"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  제안 된 대체 방법이 필요한 기능을 제공 하지 않는 경우에는이 규칙에서 경고를 표시 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 플랫폼 호출 메서드 정의를 보여 줍니다. 또한 플랫폼 호출 메서드 및 해당 하는 관리 되는 메서드에 대 한 호출이 표시 됩니다.
 
  [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/cs/FxCop.Usage.ManagedEquivalents.cs#1)]

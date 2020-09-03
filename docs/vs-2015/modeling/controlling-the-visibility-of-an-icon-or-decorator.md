@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667824"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
@@ -62,13 +62,13 @@ ms.locfileid: "72667824"
 
 1. 도메인 클래스에 계산 된 도메인 속성을 추가 합니다. **속성** 창에서 다음 값을 설정 합니다.
 
-     **Isbrowsable 때 =** `False` **-사용자가 속성을 숨깁니다** .
+     **Isbrowsable 때 =** `False` **-사용자의 속성을 숨깁니다** .    
 
-     **Kind =** `Calculated` **-값을 계산 하는 코드를 제공** 합니다.
+     **Kind =** `Calculated` **-값을 계산 하는 코드를 제공** 합니다.    
 
      **이름** 예: **DecoratorControl**
 
-     **형식**  =  `Boolean`
+     **입력할** = `Boolean`
 
      자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.
 
@@ -80,7 +80,7 @@ ms.locfileid: "72667824"
 
     3. **필터 속성**에서 컨트롤 속성 **DecoratorControl**를 선택 합니다.
 
-    4. **표시 유형 항목**에서 `True`를 입력 합니다.
+    4. **표시 유형 항목**아래에을 입력 `True` 합니다.
 
 3. 솔루션 탐색기 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "72667824"
 
 6. 누락 된 네임 스페이스, 클래스 및 메서드를 확인 합니다.  예를 들면 FamilyTree. GetDecoratorControlValue ()입니다.
 
-7. 별도의 코드 파일에서 누락 된 메서드를 포함 하는 partial 클래스 정의를 작성 합니다. 예를 들면,
+7. 별도의 코드 파일에서 누락 된 메서드를 포함 하는 partial 클래스 정의를 작성 합니다. 예를 들면 다음과 같습니다.
 
     ```
     namespace Company.FamilyTree
@@ -107,5 +107,5 @@ ms.locfileid: "72667824"
 
 8. 솔루션을 다시 빌드하고 실행 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md) [다이어그램에서 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md) [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md) [코드 작성 코드를 작성 하 여 도메인별 언어를 지정](../modeling/writing-code-to-customise-a-domain-specific-language.md) 합니다.

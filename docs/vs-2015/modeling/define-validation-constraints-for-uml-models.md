@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547591"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML 모델에 대한 유효성 검사 제약 조건 정의
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>유효성 검사 제약 조건 실행
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> 유효성 검사 제약 조건 실행
  테스트를 위해 디버그 모드에서 유효성 검사 메서드를 실행합니다.
 
 #### <a name="to-test-the-validation-constraint"></a>유효성 검사 제약 조건을 테스트하려면
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.
 
-    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택 합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은의 전체 경로 이름 인지 확인 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 올바른 `Export` 및 `ValidationMethod` 특성이 유효성 검사 메서드에 연결되었습니다.
 
-    - `ValidationCategories.Menu`는 특성에 대 한 인수에 포함 `ValidationMethod` 되며 LOGICAL OR (&#124;)를 사용 하 여 다른 값으로 구성 됩니다.
+    - `ValidationCategories.Menu` 는 특성에 대 한 인수에 포함 `ValidationMethod` 되며 LOGICAL OR (&#124;)를 사용 하 여 다른 값으로 구성 됩니다.
 
     - 모든 `Import` 및 `Export` 특성의 매개 변수가 유효합니다.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>제약 조건 평가
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> 제약 조건 평가
  유효성 검사 메서드는 적용할 유효성 검사 제약 조건이 true 또는 false인지를 확인해야 합니다. true이면 아무 작업도 수행하면 안 됩니다. false이면 `ValidationContext` 매개 변수가 제공하는 메서드를 사용하여 오류를 보고해야 합니다.
 
 > [!NOTE]
@@ -256,7 +256,7 @@ public void ValidateSomething
 
  모든 유효성 검사 메서드의 특성과 매개 변수는 다음과 같습니다.
 
-|서명|설명|
+|서명|Description|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|MEF(Managed Extensibility Framework)를 사용하여 메서드를 유효성 검사 제약 조건으로 정의합니다.|
 |`[ValidationMethod (ValidationCategories.Menu)]`|유효성 검사를 수행하는 시기를 지정합니다. 둘 이상의 옵션을 결합 하려면 비트 OR (&#124;)를 사용 합니다.<br /><br /> `Menu` = 유효성 검사 메뉴에 의해 호출됩니다.<br /><br /> `Save` = 모델을 저장할 때 호출됩니다.<br /><br /> `Open` = 모델을 열 때 호출됩니다. `Load` = 모델을 저장할 때 호출되지만, 위반이 있을 경우 모델을 다시 열지 못할 수도 있다고 사용자에게 경고합니다. 모델을 구문 분석하기 전에 로드 시에도 호출됩니다.|
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>여러 유효성 검사 조정
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> 여러 유효성 검사 조정
  예를 들어 사용자가 다이어그램 메뉴에서 유효성 검사를 호출하면 각 유효성 검사 메서드가 각 모델 요소에 적용됩니다. 즉, 유효성 검사 프레임워크의 단일 호출에서 동일한 메서드가 여러 요소에 여러 번 적용될 수 있습니다.
 
  이 경우 요소 간의 관계를 처리하는 유효성 검사에서 문제가 발생합니다. 예를 들어 사용 사례에서 시작되고 **include** 관계를 트래버스하여 루프가 없는지 확인하는 유효성 검사를 작성할 수 있습니다. 그러나 많은 **include** 링크를 포함하는 모델의 각 사용 사례에 메서드가 적용되는 경우 모델의 동일한 영역을 반복적으로 처리할 가능성이 큽니다.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|값을 가져옵니다.|
 |`Context.GetValue<T>()`|지정된 형식의 값을 가져옵니다.|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>확장 설치 및 제거
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 확장 설치 및 제거
  사용 중인 컴퓨터 및 다른 컴퓨터에서 모두 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장을 설치할 수 있습니다.
 
 #### <a name="to-install-an-extension"></a>확장을 설치하려면
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
 
    *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \extensions**
 
-## <a name="example"></a><a name="Example"></a> 예
+## <a name="example"></a><a name="Example"></a> 예제
  이 예제에서는 요소 간 종속성 관계에서 루프를 찾습니다.
 
  저장 시 및 유효성 검사 메뉴 명령에 의해 유효성을 검사합니다.
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [UML API를 사용 하 여](../modeling/programming-with-the-uml-api.md) [모델링 확장 프로그램 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md)

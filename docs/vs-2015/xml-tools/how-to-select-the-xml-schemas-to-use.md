@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f607d500bfcb8a745bfb129490d2c2b09c6b105c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666514"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>방법: 사용할 XML 스키마 선택
@@ -32,13 +32,13 @@ XML 편집기에서는 %InstallDir%\Xml\Schemas 디렉터리에 있는 스키마
 
 1. XML 편집기에서 파일을 엽니다.
 
-2. 문서 속성 창의 **스키마** 필드에서 단추를 클릭 합니다.
+2. 문서 속성 창의 **스키마** 필드에서 단추를 클릭합니다.
 
-    **XML 스키마** 대화 상자가 표시 됩니다. 이 대화 상자에는 스키마 캐시의 확장명이 .xsd 인 모든 스키마 (catalog .xml 파일에서 참조 되는 스키마 포함) 및 현재 솔루션에 있는 모든 스키마 (Visual Studio에서 열기, `xsd:schemaLocation` 특성에서 참조 됨 또는에서 참조 됨)가 나열 됩니다. **스키마** 속성.
+    **XML 스키마** 대화 상자가 표시 됩니다. 이 대화 상자에는 스키마 캐시의 확장명이 .xsd 인 모든 스키마 (catalog.xml 파일에서 참조 되는 스키마 포함)와 현재 솔루션에 있는 스키마, Visual Studio에서 열기, 특성에서 참조 `xsd:schemaLocation` 또는 **스키마** 속성에서 참조 되는 스키마가 나열 됩니다.
 
 3. 다음 중 하나를 수행하여 유효성 검사에 사용할 스키마를 선택합니다.
 
-   - **XML 스키마** 대화 상자에 나열 된 스키마를 선택 하 고 **사용** 열을 클릭 한 다음 **이 스키마 사용**을 선택 합니다.
+   - **XML 스키마** 대화 상자에 나열되어 있는 스키마를 선택하고 **사용** 열을 클릭한 다음, **이 스키마 사용**을 선택합니다.
 
      또는
 
@@ -46,11 +46,11 @@ XML 편집기에서는 %InstallDir%\Xml\Schemas 디렉터리에 있는 스키마
 
 4. **확인**을 클릭합니다.
 
-    선택한 스키마 목록이 **스키마** 문서 속성으로 다시 복사 됩니다.
+    선택한 스키마의 목록이 다시 **스키마** 문서 속성에 복사됩니다.
 
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>스키마 캐시에 XML 스키마를 추가하려면
 
-1. 문서 속성 창의 **스키마** 필드에서 단추를 클릭 합니다.
+1. 문서 속성 창의 **스키마** 필드에서 단추를 클릭합니다.
 
 2. **추가**를 클릭합니다.
 
@@ -64,14 +64,14 @@ XML 편집기에서는 %InstallDir%\Xml\Schemas 디렉터리에 있는 스키마
 
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>스키마 캐시에서 XML 스키마를 삭제하려면
 
-1. 문서 속성 창의 **스키마** 필드에서 단추를 클릭 합니다.
+1. 문서 속성 창의 **스키마** 필드에서 단추를 클릭합니다.
 
-2. 제거할 스키마를 선택 하 고 **제거**를 클릭 합니다.
+2. 제거할 스키마를 선택하고 **제거**를 클릭합니다.
 
      그러면 스키마가 메모리 내 스키마 캐시에서 제거되지만 파일 시스템에서는 제거되지 않습니다.
 
     > [!NOTE]
-    > @No__t_0 특성 또는 일치 하는 `targetNamespace`를 통해 스키마에 대 한 참조가 있는 경우 자동 연결로 인해 **제거** 는이 상황에서 작동 하지 않습니다. 이 경우 **사용** 열에서 스키마를 **선택한 스키마를 사용 하지** 않는 것으로 표시 하는 것이 좋습니다.
+    > `schemaLocation` 특성 또는 일치하는 `targetNamespace`를 통한 스키마 참조가 아직 남아 있으면 자동 연결로 인해 **제거**를 수행해도 스키마가 제거되지 않습니다. 이 경우에는 **사용** 열에서 스키마를 **선택한 스키마 사용 안 함**으로 표시하는 것이 좋습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [스키마 캐시](../xml-tools/schema-cache.md) [Xml 스키마 대화 상자](../xml-tools/xml-schemas-dialog-box.md) [xml 편집기](../xml-tools/xml-editor.md)

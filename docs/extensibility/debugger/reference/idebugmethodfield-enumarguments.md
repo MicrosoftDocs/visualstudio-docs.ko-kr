@@ -1,5 +1,5 @@
 ---
-title: 아이디버그메소드필드::열의 논쟁 | 마이크로 소프트 문서
+title: 'IDebugMethodField:: EnumArguments | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: adbb1ea4c9172a5f1cee877d04b81aed938bf7a5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727255"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
-메서드를 호출하는 데 필요한 각 인수의 형식에 대한 열거수를 만듭니다.
+메서드를 호출 하는 데 필요한 각 인수의 형식에 대 한 열거자를 만듭니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,17 +41,17 @@ int EnumArguments(
 
 ## <a name="parameters"></a>매개 변수
 `ppParams`\
-【아웃】 인수 유형 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환합니다. 인수가 없는 경우 null 값을 반환합니다.
+제한이 인수 형식 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 인수가 없으면 null 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 인수가 없는 경우 S_OK 반환하거나 S_FALSE 반환합니다. 그러지 않으면 오류 코드가 반환됩니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK 반환 하거나 인수가 없는 경우 S_FALSE을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명
- 각 요소는 각 매개 변수의 형식을 나타내는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다. 각 매개 변수의 형식에 대 한 정보를 검색 하려면 GetInfo 메서드를 호출 [합니다.](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+ 각 요소는 각 매개 변수의 형식을 나타내는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다. [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 메서드를 호출 하 여 각 매개 변수의 형식에 대 한 정보를 검색 합니다.
 
- 형식과 함께 매개 변수의 이름이 필요한 경우 [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) 메서드를 호출합니다.
+ 형식과 함께 매개 변수 이름이 필요한 경우 [Enumparameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

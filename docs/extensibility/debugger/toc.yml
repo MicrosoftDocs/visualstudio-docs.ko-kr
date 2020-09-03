@@ -122,7 +122,7 @@
           href: processes.md
         - name: 프로그램 노드
           href: program-nodes.md
-        - name: Programs
+        - name: 프로그램
           href: programs.md
         - name: 스레드
           href: threads.md

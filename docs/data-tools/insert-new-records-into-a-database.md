@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281996"
 ---
 # <a name="insert-new-records-into-a-database"></a>데이터베이스에 새 레코드 삽입
 
 데이터베이스에 새 레코드를 삽입 하려면 `TableAdapter.Update` 메서드 또는 TableAdapter의 DBDirect 메서드 중 하나 (특히 메서드)를 사용할 수 있습니다 `TableAdapter.Insert` . 자세한 내용은 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)를 참조 하세요.
 
-응용 프로그램에서 Tableadapter를 사용 하지 않는 경우 명령 개체 (예:)를 사용 <xref:System.Data.SqlClient.SqlCommand> 하 여 데이터베이스에 새 레코드를 삽입할 수 있습니다.
+응용 프로그램에서 Tableadapter를 사용 하지 않는 경우 명령 개체 (예:)를 사용  <xref:System.Data.SqlClient.SqlCommand> 하 여 데이터베이스에 새 레코드를 삽입할 수 있습니다.
 
 응용 프로그램에서 데이터 집합을 사용 하 여 데이터를 저장 하는 경우 메서드를 사용 `TableAdapter.Update` 합니다. `Update`메서드는 데이터베이스에 모든 변경 내용 (업데이트, 삽입 및 삭제)을 보냅니다.
 
@@ -84,6 +84,6 @@ Tableadapter는 응용 프로그램의 요구 사항에 따라 데이터베이�
 
 연결 하려는 데이터베이스에 대 한 액세스 권한과 원하는 테이블에 대 한 삽입을 수행할 수 있는 권한이 있어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

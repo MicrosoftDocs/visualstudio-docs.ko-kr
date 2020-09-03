@@ -1,5 +1,5 @@
 ---
-title: 'VsgDbg:: ~ VsgDbg (소멸자) | Microsoft Docs'
+title: VsgDbg::~VsgDbg(소멸자) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c0ae3dd206953e728175f4479920861295feae00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200298"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg(소멸자)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-인스턴스를 제거 합니다 `VsgDbg` 클래스입니다. 그래픽 정보를 기록 하 고 적극적으로 그래픽 로그 파일을 종료 하 고 닫은 및 적극적으로 그래픽 정보를 캡처하는 동안 사용 된 리소스가 해제 됩니다.  
+`VsgDbg` 클래스의 인스턴스를 제거합니다. 그래픽 정보가 활발히 기록되고 있는 경우 그래픽 로그 파일은 종료되고 닫히며 그래픽 정보를 활발히 캡처하는 동안 사용된 리소스는 해제됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -27,5 +27,5 @@ ms.locfileid: "68200298"
 ~VsgDbg();  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VsgDbg::VsgDbg(생성자)](../debugger/vsgdbg-vsgdbg-constructor.md)

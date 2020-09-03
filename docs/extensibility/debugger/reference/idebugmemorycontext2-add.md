@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::추가 | 마이크로 소프트 문서
+title: 'IDebugMemoryContext2:: Add | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a21fa2ec6d48bb1d6bf17bbc0d2ebf0d90a25a9f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727475"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
-지정된 값을 현재 컨텍스트에 추가하고 새 컨텍스트를 반환합니다.
+현재 컨텍스트에 지정 된 값을 추가 하 고 새 컨텍스트를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,18 +44,18 @@ int Add(
 
 ## <a name="parameters"></a>매개 변수
 `dwCount`\
-【인】 현재 컨텍스트에 추가할 값입니다.
+진행 현재 컨텍스트에 추가할 값입니다.
 
 `ppMemCxt`\
-【아웃】 새 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체를 반환합니다.
+제한이 새 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 메모리 컨텍스트는 주소이므로 주소에 값을 추가하면 새 컨텍스트 인터페이스가 필요한 새 주소가 생성됩니다.
+ 메모리 컨텍스트는 주소 이므로 주소에 값을 추가 하면 새 컨텍스트 인터페이스가 필요한 새 주소가 생성 됩니다.
 
- 이 메서드는 결과 주소가 이 컨텍스트와 연결된 메모리 공간 외부에 있더라도 항상 새 컨텍스트를 생성해야 합니다. 이에 대한 유일한 예외는 새 컨텍스트에 대한 메모리를 `ppMemCxt` 할당할 수 없거나 null 값(오류)인 경우입니다.
+ 결과 주소가이 컨텍스트와 연결 된 메모리 공간을 벗어난 경우에도이 메서드는 항상 새 컨텍스트를 생성 해야 합니다. 이에 대 한 유일한 예외는 새 컨텍스트에 대해 메모리를 할당할 수 없는 경우이 고 `ppMemCxt` 가 null 값 (오류) 인 경우입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

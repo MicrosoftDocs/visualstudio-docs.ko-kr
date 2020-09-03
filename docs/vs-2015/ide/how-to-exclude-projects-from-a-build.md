@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667951"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
@@ -43,7 +43,7 @@ ms.locfileid: "72667951"
 
 1. 메뉴 모음에서 **빌드**, **구성 관리자**를 선택합니다.
 
-2. **활성 솔루션 구성** 목록에서 **\<새로 만들기>** 를 선택합니다.
+2. **활성 솔루션 구성** 목록에서 **\<New>** 를 선택합니다.
 
 3. **이름** 상자에 솔루션 구성의 이름을 입력합니다.
 
@@ -55,5 +55,5 @@ ms.locfileid: "72667951"
 
 7. 메뉴 모음에서 **빌드**, **솔루션 다시 빌드**를 선택합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [빌드 구성 이해](../ide/understanding-build-configurations.md) [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md) [방법: 여러 구성 동시 빌드](../ide/how-to-build-multiple-configurations-simultaneously.md)
