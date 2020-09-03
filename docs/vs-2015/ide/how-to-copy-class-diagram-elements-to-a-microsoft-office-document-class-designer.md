@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a44b551e5b2a0b145040dc13cb0e624134f56cf6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668161"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사(클래스 디자이너)
@@ -42,5 +42,5 @@ ms.locfileid: "72668161"
 
    **이미지 복사** 대신 **복사**를 선택할 수도 있습니다. **복사**를 선택하면 이미지가 일반 비트맵으로 복사됩니다. **이미지 복사**를 선택하면 이미지가 벡터 기반 이미지로 복사되며 대부분의 Office 애플리케이션의 경우 이 옵션을 선택하는 것이 좋습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법: 클래스 다이어그램 인쇄 (클래스 디자이너)](../ide/how-to-print-class-diagrams-class-designer.md) [방법: 클래스 다이어그램을 이미지로 내보내기 (클래스 디자이너)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282581"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정
@@ -55,7 +55,7 @@ ms.locfileid: "85282581"
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**( \\ \p{Ll}) ( \\ \p{lu}는) &#124;_ +**|소문자와 대문자 또는 밑줄을 찾습니다.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** 은 식의 첫 번째 괄호에서 일치 하는 문자를 나타내며, **$2** 은 두 번째 괄호에 일치 하는 모든 문자를 나타냅니다. 첫 번째 일치 항목, 공백, 두 번째 일치 항목을 대체 합니다.|
-|**SmartCaptionSuffix**|**:**|반환 된 문자열에 추가 되는 문자를 나타냅니다. 예를 들어 캡션이 인 경우 접미사가이를 `Company Name` 사용 합니다.`Company Name:`|
+|**SmartCaptionSuffix**|**:**|반환 된 문자열에 추가 되는 문자를 나타냅니다. 예를 들어 캡션이 인 경우 접미사가이를 `Company Name` 사용 합니다. `Company Name:`|
 
 > [!CAUTION]
 > 레지스트리 편집기에서 원하는 작업을 수행 하는 경우에는 주의 해야 합니다. 레지스트리를 편집 하기 전에 백업 합니다. 레지스트리 편집기를 잘못 사용 하면 운영 체제를 다시 설치 해야 할 수 있는 심각한 문제가 발생할 수 있습니다. Microsoft는 레지스트리 편집기를 잘못 사용 하 여 발생 하는 문제를 해결할 수 있도록 보장 하지 않습니다. 레지스트리 편집기 사용에 따른 위험은 사용자가 책임져야 합니다.
@@ -138,6 +138,6 @@ ms.locfileid: "85282581"
 
     다음 번에 **데이터 소스** 창에서 항목을 끌면 수정 되지 않은 캡션으로 캡션 레이블이 생성 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

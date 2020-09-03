@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1403beccdb6bf9b938787f62cb3da2e5bb5c259
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668127"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>방법: 프로젝트 종속성 만들기 및 제거
@@ -62,5 +62,5 @@ ms.locfileid: "72668127"
 
 4. **다음에 종속** 필드에서 더 이상 이 프로젝트의 종속성이 아닌 모든 다른 프로젝트 옆의 확인란을 선택 취소합니다.
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리 ](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) 빌드 구성 [Understanding](../ide/understanding-build-configurations.md) [Compiling 및 빌드 ](../ide/compiling-and-building-in-visual-studio.md) [방법: 프로젝트 속성 및 구성 설정 수정](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) [빌드 구성 이해 및 빌드](../ide/understanding-build-configurations.md) [NIB 방법: 프로젝트 속성 및 구성 설정 수정](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
