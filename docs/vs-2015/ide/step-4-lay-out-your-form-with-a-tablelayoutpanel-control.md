@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851543"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃
@@ -21,17 +21,17 @@ ms.locfileid: "75851543"
 
 이 단계에서는 폼에 `TableLayoutPanel` 컨트롤을 추가합니다. TableLayoutPanel을 사용하여 나중에 추가하는 폼에서 컨트롤을 적절히 맞출 수 있습니다.
 
- ![비디오에 연결](../data-tools/media/playvideo.gif "동영상 재생") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) 또는 [자습서 1: 비디오 2에서 C# 사진 뷰어 만들기](https://msdn.microsoft.com/vcsharp/gg278410.aspx)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) 또는 [자습서 1: c #에서 사진 뷰어 만들기-비디오 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>TableLayoutPanel 컨트롤을 사용하여 폼을 레이아웃하려면
 
-1. Visual Studio IDE의 왼쪽에서 **도구 상자** 탭을 찾습니다 **. 도구 상자 탭을** 선택 하면 도구 상자가 나타납니다. 또는 메뉴 모음에서 **보기**, **도구 상자**를 차례로 선택합니다.
+1. Visual Studio IDE의 왼쪽에서 **도구 상자** 탭을 찾습니다. **도구 상자** 탭을 선택 하면 도구 상자가 나타납니다. 또는 메뉴 모음에서 **보기**, **도구 상자**를 차례로 선택합니다.
 
 2. 다음 그림에 표시된 대로 **컨테이너** 그룹 옆의 작은 삼각형 기호를 선택하여 해당 그룹을 엽니다.
 
      ![컨테이너 그룹](../ide/media/express-toolbox.png "Express_Toolbox") 컨테이너 그룹
 
-3. 단추, 확인란, 레이블 등과 같은 컨트롤을 폼에 추가할 수 있습니다. 도구 상자에서 `TableLayoutPanel` 컨트롤을 두 번 클릭합니다. 또는 컨트롤을 도구 상자에서 폼으로 끌어 놓을 수 있습니다. 이렇게 하면 다음 그림과 같이 IDE에서 폼에 `TableLayoutPanel` 컨트롤을 추가 합니다.
+3. 단추, 확인란, 레이블 등과 같은 컨트롤을 폼에 추가할 수 있습니다. 도구 상자에서 `TableLayoutPanel` 컨트롤을 두 번 클릭합니다. 또는 컨트롤을 도구 상자에서 폼으로 끌어 놓을 수 있습니다. 이 작업을 수행 하면 `TableLayoutPanel` 다음 그림과 같이 IDE가 폼에 컨트롤을 추가 합니다.
 
      ![TableLayoutPanel 컨트롤](../ide/media/express-formtablelayout.png "Express_FormTableLayout") TableLayoutPanel 컨트롤
 
@@ -52,7 +52,7 @@ ms.locfileid: "75851543"
 
      ![채우기가 선택 된 속성 창](../ide/media/express-docktable.png "Express_DockTable") 채우기가 선택 된 속성 창
 
-     Visual Studio에서 *도킹*은 창이 IDE의 다른 창이나 영역에 연결되는 경우를 말합니다. 예를 들어 속성 창은 도킹 해제, 즉 Visual Studio 내에서 연결되지 않은 상태로 자유롭게 움직이거나 **솔루션 탐색기**에 대해 도킹될 수 있습니다.
+     Visual Studio에서 *도킹*은 창이 IDE의 다른 창이나 영역에 연결되는 경우를 말합니다. 예를 들어, 속성 창는 도킹을 해제할 수 있습니다. 즉, Visual Studio 내에서 연결 되지 않은 부동 소수점 이거나 **솔루션 탐색기**에 도킹할 수 있습니다.
 
 7. TableLayoutPanel **Dock** 속성을 **Fill**로 설정합니다. 그러면 패널이 전체 폼으로 채워집니다. 폼의 크기를 다시 조정하면 TableLayoutPanel은 도킹된 상태를 유지한 채 폼의 크기에 맞게 자동으로 크기가 조정됩니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "75851543"
 
      ![TableLayoutPanel 작업](../ide/media/express-tablepanel.png "Express_TablePanel") TableLayoutPanel 작업
 
-10. **행 및 열 편집** 작업을 선택하여 **열 및 행 스타일** 창을 표시합니다. **Column1**을 선택한 다음 **백분율** 단추가 선택되어 있는지 확인하고 **백분율** 상자에 `15`를 입력하여 크기를 15%로 설정합니다. 이는 이후 자습서에서 사용 하는 `NumericUpDown` 컨트롤입니다. **Column2** 를 선택 하 고 85 퍼센트로 설정 합니다. 창이 닫히므로 아직 **확인** 단추는 선택하지 않습니다. 실수로 창을 닫은 경우 작업 목록을 사용하여 다시 열 수 있습니다.
+10. **행 및 열 편집** 작업을 선택하여 **열 및 행 스타일** 창을 표시합니다. **Column1**을 선택한 다음 **백분율** 단추가 선택되어 있는지 확인하고 **백분율** 상자에 `15`를 입력하여 크기를 15%로 설정합니다. 이는 나중에 `NumericUpDown` 자습서에서 사용할 수 있는 컨트롤입니다. **Column2** 를 선택 하 고 85 퍼센트로 설정 합니다. 창이 닫히므로 아직 **확인** 단추는 선택하지 않습니다. 실수로 창을 닫은 경우 작업 목록을 사용하여 다시 열 수 있습니다.
 
      ![TableLayoutPanel 열 및 행 스타일](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") TableLayoutPanel 열 및 행 스타일
 
@@ -83,4 +83,4 @@ ms.locfileid: "75851543"
 
 - 다음 자습서 단계로 이동하려면 [5단계: 폼에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)를 참조하세요.
 
-- 이전 자습서 단계로 돌아가려면 [3단계: 폼 속성 설정](../ide/step-3-set-your-form-properties.md)을 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [3 단계: 폼 속성 설정](../ide/step-3-set-your-form-properties.md)을 참조 하세요.

@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535540"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC(High Performance Computing) 클러스터에서 프로파일링
@@ -105,7 +105,7 @@ ms.locfileid: "85535540"
   
     - 프로파일링을 즉시 시작하려면 **마법사를 완료한 후 프로파일링을 시작합니다.** 를 선택하고, 수동으로 프로파일링을 시작하려면 확인란 선택을 취소합니다.  
   
-10. **Finish**를 클릭합니다.  
+10. **마침**을 클릭합니다.  
   
 ## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>성능 세션 속성 페이지를 사용하여 HPC 프로파일링 속성 설정  
  성능 세션 속성 페이지의 HPC 시작 속성 페이지에서 HPC 프로파일링 마법사에 대해 설정한 성능 세션 속성을 변경할 수 있습니다. HPC 고급 속성 페이지에서 추가 옵션을 설정합니다.  

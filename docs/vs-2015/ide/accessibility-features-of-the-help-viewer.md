@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621100"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>도움말 뷰어의 내게 필요한 옵션 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 이 항목에는 Microsoft 도움말 뷰어 2.2를 다양한 범위의 기능을 가진 사람들이 액세스할 수 있도록 도와주는 기능, 제품 및 서비스에 대한 정보가 포함되어 있습니다.
+Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 이 항목에는 Microsoft 도움말 뷰어 2.2를 다양한 범위의 기능을 가진 사람들이 액세스할 수 있도록 도와주는 기능, 제품 및 서비스에 대한 정보가 포함되어 있습니다.
 
 ## <a name="keyboard-access"></a>키보드 액세스
  키보드를 사용하여 도움말 뷰어의 모든 기능에 액세스할 수 있습니다. 자세한 내용은 [바로 가기 키(도움말 뷰어)](../ide/shortcut-keys-help-viewer.md)를 참조하세요.
@@ -39,5 +39,5 @@ Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽�
 ## <a name="internet-explorer-options"></a>Internet Explorer 옵션
  웹 페이지가 나타나는 방식과 관련된 Internet Explorer 옵션을 변경하여 도움말 뷰어에 더 쉽게 액세스할 수 있도록 할 수 있습니다. 자세한 내용은 [도움말 뷰어 사용자 지정](../ide/customize-the-help-viewer.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Microsoft 도움말 뷰어](../ide/microsoft-help-viewer.md)

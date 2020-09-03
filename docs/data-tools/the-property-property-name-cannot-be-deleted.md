@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 63e99bf7b247856815fd3e8de0f4932fed4881dc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535293"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>\<property name> 속성을 삭제할 수 없습니다.
@@ -31,6 +31,6 @@ ms.locfileid: "85535293"
 
 3. 속성 삭제를 다시 한 번 시도합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

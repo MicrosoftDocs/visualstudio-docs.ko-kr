@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536294"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce 애플리케이션 게시
@@ -100,6 +100,6 @@ ms.locfileid: "85536294"
 |[연습: ClickOnce 응용 프로그램에 대 한 사용자 지정 설치 관리자 만들기](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|ClickOnce 애플리케이션을 설치하는 사용자 지정 설치 관리자를 만드는 방법을 설명합니다.|
 |[방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|비주얼 스타일을 사용하는 WPF 애플리케이션을 게시할 때 발생하는 오류를 해결하기 위한 단계별 지침을 제공합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 참조](../deployment/clickonce-reference.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851474"
 ---
 # <a name="activity-views-legacy"></a>활동 뷰(레거시)
@@ -29,13 +29,13 @@ ms.locfileid: "75851474"
 
 |메뉴/탭 옵션|설명|
 |----------------------|-----------------|
-|**보기 [활동 유형]**|선택한 활동의 기본 그래픽 표현을 보려면 이 메뉴 또는 탭 옵션을 선택합니다.|
+|**[활동 유형] 보기**|선택한 활동의 기본 그래픽 표현을 보려면 이 메뉴 또는 탭 옵션을 선택합니다.|
 |**취소 처리기 보기**|선택한 활동과 연결 된 [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) 을 보려면이 메뉴 또는 탭 옵션 보기를 선택 합니다.|
 |**오류 처리기 보기**|선택한 활동과 연결 된 [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) 을 보려면이 메뉴 또는 탭 옵션 보기를 선택 합니다.|
-|**보정 처리기 보기**|이 메뉴 또는 탭 옵션 보기를 선택 하 여 선택한 [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)연결 된 [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) 를 확인 합니다.|
-|**이벤트 처리기 보기**|이 메뉴 또는 탭 옵션 보기를 선택 하 여 선택한 [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)와 연결 된 [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) 를 확인 합니다.|
+|**보정 핸들러 보기**|이 메뉴 또는 탭 옵션 보기를 선택 하 여 선택한 [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)연결 된 [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) 를 확인 합니다.|
+|**이벤트 핸들러 보기**|이 메뉴 또는 탭 옵션 보기를 선택 하 여 선택한 [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)와 연결 된 [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) 를 확인 합니다.|
 
  유사한 뷰에 대 한 자세한 내용은 [순차 워크플로 뷰 (레거시)](../workflow-designer/sequential-workflow-views-legacy.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [레거시 워크플로 작업](../workflow-designer/legacy-workflow-activities.md) [순차 워크플로 뷰 (레거시)](../workflow-designer/sequential-workflow-views-legacy.md)

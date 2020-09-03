@@ -30,6 +30,7 @@ ms.locfileid: "77633085"
 `ContinueOnError` 특성이 실패한 태스크의 `false`인 경우 하나 이상의 대상이 실행되도록 합니다.
 
  \<프로젝트> \<대상> \<OnError>
+ \<OnError>
 
 ## <a name="syntax"></a>구문
 

@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852124"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만들고, 읽고, 업데이트 하는 코드를 작성할 수 있습니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+Visual Studio의 UML API를 통해 UML 모델 및 다이어그램을 만들고 읽고 업데이트할 코드를 작성할 수 있습니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
  API 참조 페이지 외에 다음 항목에서 API에 대해 설명합니다.
 
@@ -37,7 +37,7 @@ Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만
 |[UML 모델에 대한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)|ValidationContext|모델이 지정된 제약 조건을 준수하는지 확인하도록 도와주는 유효성 검사 규칙을 정의할 수 있습니다.|
 |[IDataObject에서 UML 모델 요소 가져오기](../modeling/get-uml-model-elements-from-idataobject.md)|IElement, IShape|UML 모델 탐색기 또는 UML 다이어그램에서 다른 다이어그램 또는 애플리케이션으로 요소를 끌어 놓으면 요소가 IDataObject로 serialize됩니다.|
 |[UML API를 사용하여 UML 시퀀스 다이어그램 편집](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)|IInteraction, ILifeline, IMessage|상호 작용 다이어그램을 만들고 업데이트하는 작업은 다른 다이어그램 형식으로 작업하는 것과 약간 다릅니다.|
-|[레이어 다이어그램 확장](../modeling/extend-layer-diagrams.md)|ILayer, ILayerDiagram|레이어 다이어그램을 만들고 편집하는 코드를 작성하고 이 코드를 기준으로 프로그램 코드의 유효성을 검사할 수 있습니다.|
+|[Extend layer diagrams](../modeling/extend-layer-diagrams.md)|ILayer, ILayerDiagram|레이어 다이어그램을 만들고 편집하는 코드를 작성하고 이 코드를 기준으로 프로그램 코드의 유효성을 검사할 수 있습니다.|
 
 ## <a name="about-the-implementation"></a>구현 정보
  UML 모델링 도구는 [!INCLUDE[dsl](../includes/dsl-md.md)]에 빌드됩니다. 각 패키지와 각 다이어그램은 [!INCLUDE[dsl](../includes/dsl-md.md)] 모델로 표현되고 이들 간의 일관성은 규칙 및 기타 메서드의 컬렉션을 통해 유지 관리합니다.
@@ -54,7 +54,7 @@ Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만
 |어셈블리|네임스페이스|다음에 대한 액세스를 제공합니다.|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(모두)|UML 형식.|
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator|[생성 방법](../modeling/create-elements-and-relationships-in-uml-models.md)|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator|[만들기 메서드](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[다이어그램 및 모양](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[모델링 프로젝트](../modeling/read-a-uml-model-in-program-code.md)|
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[메뉴 명령 확장](../modeling/define-a-menu-command-on-a-modeling-diagram.md)입니다.<br /><br /> [연결 된 실행 취소 트랜잭션](../modeling/link-uml-model-updates-by-using-transactions.md).|
@@ -65,8 +65,8 @@ Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만
 |Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[작업 항목에 대 한 링크](../modeling/define-a-work-item-link-handler.md)입니다.|
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[작업 항목 및 해당 필드](../modeling/define-a-work-item-link-handler.md)|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[작업 항목 및 해당 필드](../modeling/define-a-work-item-link-handler.md)|
-|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[MEF 구성 요소에 대 한 내보내기 및 가져오기](../modeling/define-and-install-a-modeling-extension.md)|
+|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[MEF 구성 요소의 내보내기 및 가져오기](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[특히 관계를 처리할 때 컬렉션을 쉽게 조작할](../modeling/navigate-relationships-with-the-uml-api.md)수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  Uml [모델링 확장성에 대 한](../modeling/api-reference-for-uml-modeling-extensibility.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) API 참조

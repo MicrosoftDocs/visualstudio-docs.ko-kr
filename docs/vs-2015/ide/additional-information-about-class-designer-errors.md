@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852203"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>클래스 디자이너 오류에 대한 추가 정보
@@ -43,9 +43,9 @@ ms.locfileid: "75852203"
 
  다음 리소스에서 다른 오류 및 경고에 대한 도움말을 찾을 수 있습니다.
 
- [시각적 C++ 코드 작업 (클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md) 에는 클래스 다이어그램에 표시 C++ 하는 방법에 대 한 문제 해결 정보가 포함 되어 있습니다.
+ [Visual C++ 코드 사용 (클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md) 클래스 다이어그램에서 c + + 표시에 대 한 문제 해결 정보를 포함 합니다.
 
- [Visual Studio 클래스 디자이너 포럼](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) 클래스 디자이너 관련 질문을 위한 포럼을 제공합니다.
+ [Visual Studio 클래스 디자이너 포럼](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) 클래스 디자이너에 대 한 질문을 위한 포럼을 제공 합니다.
 
 ## <a name="see-also"></a>관련 항목
- [클래스와 형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md)
+ [클래스 및 형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532966"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
@@ -37,10 +37,10 @@ ms.locfileid: "85532966"
 
 - 생성 된 지시문 프로세서를 사용 하 여 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
  DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
-|Product|다운로드 링크|
+|제품|다운로드 링크|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
@@ -358,5 +358,5 @@ ms.locfileid: "85532966"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)

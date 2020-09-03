@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536021"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
@@ -62,7 +62,7 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
     1. 텍스트 파일을 만들고 이름을 .pkgdef로 만듭니다. \<*assemblyName*>
 
-         \<*assemblyName*>는 일반적으로 프로젝트의 이름과 동일 합니다.
+         \<*assemblyName*> 는 일반적으로 프로젝트의 이름과 동일 합니다.
 
     2. 솔루션 탐색기에서 이 파일을 선택하고 다음과 같이 속성을 설정합니다.
 
@@ -160,7 +160,7 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>레지스트리 키를 설정하여 지시문 프로세서를 등록하려면
 
-1. `regedit`을 실행합니다.
+1. `regedit`를 실행합니다.
 
 2. regedit에서 다음 레지스트리 키로 이동합니다.
 
@@ -182,20 +182,20 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
    사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|Name|Type|데이터|
+|Name|형식|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
 |클래스|REG_SZ|**\<Namespace Name>.\<Class Name>**|
-|CodeBase|REG_SZ|**\<Your Path>\\어셈블리 이름<\>**|
+|CodeBase|REG_SZ|**\<Your Path>\\ 어셈블리 이름<\>**|
 
  어셈블리가 GAC에 있는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|Name|Type|데이터|
+|Name|형식|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
 |클래스|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |어셈블리|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)

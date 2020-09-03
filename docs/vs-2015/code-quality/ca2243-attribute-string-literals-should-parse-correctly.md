@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535748"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "85535748"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  매개 변수가 URL, GUID 또는 버전을 나타내지 않는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는이 규칙을 위반 하는 AssemblyFileVersionAttribute의 코드를 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly/cs/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly.cs#1)]
@@ -61,5 +61,5 @@ ms.locfileid: "85535748"
 
 - ' Uri ', ' urn ' 또는 ' u r l '을 포함 하는 매개 변수를 System.uri로 구문 분석할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [CA1054: URI 매개 변수는 문자열이면 안 됩니다.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

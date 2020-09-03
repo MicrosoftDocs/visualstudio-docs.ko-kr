@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 74da305b69a9561573466d385c5d7b686da3693f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620321"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>코드 조각을 사용하는 방법에 대한 유용한 정보
@@ -45,7 +45,7 @@ ms.locfileid: "72620321"
 
 - 리소스 보호(예: 이벤트 로그, 레지스트리)
 
-- 암호 저장
+- 비밀 저장
 
 - 입력 확인
 
@@ -66,5 +66,5 @@ ms.locfileid: "72620321"
 
   - 시스템의 임의 위치에서 로드되고 프로젝트에 자동으로 추가된 참조가 조각에 포함되어 있을 수 있습니다. 이러한 참조가 조각을 다운로드한 위치에서 컴퓨터에 다운로드되었을 수 있습니다. 나중에 이 조각이 참조에서 악성 코드를 실행하는 메서드를 호출할 수 있습니다. 이러한 공격을 방지하려면 조각 파일의 Imports 및 References 블록을 검토합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Basic IntelliSense 코드 조각](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643) [보안 응용 프로그램](../ide/securing-applications.md) [코드 조각](../ide/code-snippets.md)

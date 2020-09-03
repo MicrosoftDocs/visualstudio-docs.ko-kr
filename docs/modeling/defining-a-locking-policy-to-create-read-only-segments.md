@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536086"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
@@ -75,9 +75,9 @@ partition.SetLocks(Locks.Delete);
 
   파티션 또는 저장소에 대해 잠금을 설정할 수 없으며 동시에 개별 요소에 대해 잠금을 사용 하지 않도록 설정할 수 없습니다.
 
-|Value|`IsLocked(Value)`이 true 인 경우의 의미|
+|값|`IsLocked(Value)`이 true 인 경우의 의미|
 |-|-|
-|None|제한이 없습니다.|
+|없음|제한이 없습니다.|
 |속성|요소의 도메인 속성을 변경할 수 없습니다. 관계에서 도메인 클래스의 역할에 의해 생성 된 속성에는 적용 되지 않습니다.|
 |추가|파티션 또는 저장소에 새 요소 및 링크를 만들 수 없습니다.<br /><br /> 에는 적용 되지 않습니다 `ModelElement` .|
 |이동|이 true 인 경우에는 파티션 간에 요소를 이동할 수 없습니다 `element.IsLocked(Move)` `targetPartition.IsLocked(Move)` .|
@@ -100,7 +100,7 @@ partition.SetLocks(Locks.Delete);
 - DSL의 DocData를 통해 사용할 수 있는 서비스에이 클래스를 추가 합니다.
 
 ### <a name="to-define-a-locking-policy"></a>잠금 정책을 정의 하려면
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>에는 다음과 같은 정의가 있습니다.
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 에는 다음과 같은 정의가 있습니다.
 
 ```csharp
 public interface ILockingPolicy
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- 사용자가 항상 요소를 삭제할 수 있는지 확인 하려면 다른 코드에서를 호출 하는 경우에도`SetLocks(Lock.Delete):`
+ 사용자가 항상 요소를 삭제할 수 있는지 확인 하려면 다른 코드에서를 호출 하는 경우에도 `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 

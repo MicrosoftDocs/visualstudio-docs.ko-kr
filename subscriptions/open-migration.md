@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: 파트너가 고객의 Visual Studio 구독을 관리하는 방법에 대해 알아봅니다.
 ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289029"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>고객을 대신하여 구독을 관리하는 파트너

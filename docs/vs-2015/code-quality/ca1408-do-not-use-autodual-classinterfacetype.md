@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b953a97d557e28cce50f554acc03797d4be38220
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534877"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: AutoDual ClassInterfaceType을 사용하지 마세요.
@@ -46,7 +46,7 @@ ms.locfileid: "85534877"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이후 버전에서 형식 및 해당 기본 형식의 레이아웃이 변경 되지 않는 경우에만이 규칙에서 경고를 표시 해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 클래스와 명시적 인터페이스를 사용 하도록 클래스를 다시 선언 하는 방법을 보여 줍니다.
 
  [!code-csharp[FxCop.Interoperability.AutoDual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.AutoDual/cs/FxCop.Interoperability.AutoDual.cs#1)]
@@ -57,5 +57,5 @@ ms.locfileid: "85534877"
 
  [CA1412: ComSource 인터페이스를 IDispatch로 표시하세요.](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [비관리 코드와](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) 상호 운용 하기 위해 [클래스 인터페이스의](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [정규화 된 .net 형식](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) 소개

@@ -12,7 +12,7 @@
   items:
     - name: 디버거 소개
       href: debugger-feature-tour.md
-    - name: 'C# 또는 Visual Basic 앱 디버그'
+    - name: C# 또는 Visual Basic 앱 디버그
       href: quickstart-debug-with-managed.md
     - name: C++ 앱 디버그
       href: quickstart-debug-with-cplusplus.md
@@ -20,7 +20,7 @@
       href: quickstart-debug-aspnet.md
 - name: 자습서
   items:
-    - name: 'C#을 디버깅하는 방법 알아보기'
+    - name: C#을 디버깅하는 방법 알아보기
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
     - name: C++를 디버깅하는 방법 알아보기
       href: getting-started-with-the-debugger-cpp.md
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: 라이브 Azure 앱 디버그
       href: debug-live-azure-applications.md
-    - name: 'C# 및 C++ 코드 모두 디버그'
+    - name: C# 및 C++ 코드 모두 디버그
       href: how-to-debug-managed-and-native-code.md
     - name: 이전 앱 상태 검사
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: 중단점 문제 해결
           href: troubleshooting-breakpoints.md
-        - name: 'C# 데이터 중단점 문제 해결'
+        - name: C# 데이터 중단점 문제 해결
           href: troubleshoot-data-breakpoint-errors.md
     - name: 데이터 검사
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: 컨텍스트 연산자(C++)
                   href: context-operator-cpp.md
-                - name: 'C#의 형식 지정자'
+                - name: C#의 형식 지정자
                   href: format-specifiers-in-csharp.md
                 - name: 의사 변수
                   href: pseudovariables.md
@@ -118,11 +118,11 @@
               href: edit-and-continue-visual-cpp.md
             - name: 지원되는 코드 변경(C++)
               href: supported-code-changes-cpp.md
-        - name: '편집하며 계속하기(Visual C#)'
+        - name: 편집하며 계속하기(Visual C#)
           items:
-            - name: 'C#의 편집하며 계속하기'
+            - name: C#의 편집하며 계속하기
               href: edit-and-continue-visual-csharp.md
-            - name: '편집하며 계속하기 사용(C#)'
+            - name: 편집하며 계속하기 사용(C#)
               href: how-to-use-edit-and-continue-csharp.md
             - name: 지원되는 코드 변경
               href: supported-code-changes-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: XAML 핫 다시 로드 문제 해결
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'F#에 편집하며 계속하기가 지원되지 않음'
+        - name: F#에 편집하며 계속하기가 지원되지 않음
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 출력 창에 기록
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: 웹 프로젝트에 대한 속성 페이지 설정
                   href: property-pages-settings-for-web-projects.md
-                - name: 'C# 디버그 구성을 위한 프로젝트 설정'
+                - name: C# 디버그 구성을 위한 프로젝트 설정
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Visual Basic 디버그 구성을 위한 프로젝트 설정
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Azure의 ASP.NET Core 원격 디버그
           href: remote-debugging-azure.md
-        - name: 'C# 또는 Visual Basic 프로젝트 원격 디버그'
+        - name: C# 또는 Visual Basic 프로젝트 원격 디버그
           href: remote-debugging-csharp.md
         - name: C++ 프로젝트 원격 디버그
           href: remote-debugging-cpp.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: WPF 추적 정보 표시
                   href: how-to-display-wpf-trace-information.md
-            - name: 'F# 디버그'
+            - name: F# 디버그
               href: debugging-f-hash.md
         - name: C/C++ 코드
           items:

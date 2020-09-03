@@ -1,5 +1,5 @@
 ---
-title: 요소 포함 | 마이크로 소프트 문서
+title: Include 요소 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710354"
 ---
-# <a name="include-element"></a>요소 포함
-포함 요소는 현재 파일에 삽입하기 위해 제공된 포함 경로에 위치할 수 있는 파일을 지정합니다.  정의된 모든 기호 및 형식은 컴파일된 결과의 일부가 됩니다.
+# <a name="include-element"></a>Include 요소
+Include 요소는 현재 파일에 삽입 하기 위해 제공 된 포함 경로에 있을 수 있는 파일을 지정 합니다.  정의 된 모든 기호 및 형식은 컴파일된 결과의 일부가 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,22 +34,22 @@ ms.locfileid: "80710354"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
-|href|필수 사항입니다. 헤더 파일에 대한 경로:<br /><br /> href="stdidcmd.h"|
-|조건|(선택 사항) [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하십시오.|
+|href|필수 요소. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|
+|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |없음|없음|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[명령 테이블 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE에 제공하는 명령(즉, 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자)을 나타내는 모든 요소를 정의합니다.|
+|[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage IDE에 제공 하는 명령, 즉 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자를 나타내는 모든 요소를 정의 합니다.|
 
 ## <a name="example"></a>예제
 
@@ -57,5 +57,5 @@ ms.locfileid: "80710354"
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>참조
-- [비주얼 스튜디오 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참고 항목
+- [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

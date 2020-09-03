@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c84105387c708fa16e0b1d5c3294ef909466524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72631200"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio에서 데이터 세트 만들기 및 구성
@@ -29,7 +29,7 @@ ms.locfileid: "72631200"
 
 데이터 *집합* 은 데이터베이스의 데이터를 메모리에 저장 하 고 변경 내용 추적을 지원 하 여 데이터베이스에 항상 연결 되어 있지 않아도 해당 데이터에 대 한 CRUD (만들기, 읽기, 업데이트 및 삭제) 작업을 가능 하 게 하는 개체 집합입니다. 데이터 집합은 데이터 비즈니스 응용 프로그램에 대 한 간단한 *양식을* 위해 설계 되었습니다. 새 응용 프로그램의 경우 Entity Framework를 사용 하 여 메모리에 데이터를 저장 하 고 모델링 하는 것이 좋습니다. 데이터 집합을 사용 하려면 데이터베이스 개념에 대 한 기본 지식이 있어야 합니다.
 
- 디자인 타임에 **데이터 소스 구성 마법사**를 사용 하 여 Visual Studio에서 형식화 된 <xref:System.Data.DataSet> 클래스를 만듭니다. 데이터 집합을 프로그래밍 방식으로 만드는 방법에 대 한 자세한 내용은 [데이터 집합 만들기](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)를 참조 하세요.
+ <xref:System.Data.DataSet>디자인 타임에 **데이터 소스 구성 마법사**를 사용 하 여 Visual Studio에서 형식화 된 클래스를 만듭니다. 데이터 집합을 프로그래밍 방식으로 만드는 방법에 대 한 자세한 내용은 [데이터 집합 만들기](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)를 참조 하세요.
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>데이터 소스 구성 마법사를 사용 하 여 새 데이터 집합 만들기
 
@@ -55,7 +55,7 @@ ms.locfileid: "72631200"
 
      해당 노드를 클릭 하면 데이터 집합 **디자이너**에 데이터 집합이 표시 됩니다. 데이터 집합의 각 테이블에는 맨 아래에 표시 되는 연결 된 TableAdapter 개체가 있습니다. 테이블 어댑터는 데이터 집합을 채우는 데 사용 되며 필요에 따라 데이터베이스에 명령을 보낼 수 있습니다.
 
-     ![데이터 집합 디자이너](../data-tools/media/dataset-designer.png "데이터 세트 디자이너")
+     ![데이터 세트 디자이너](../data-tools/media/dataset-designer.png "데이터 세트 디자이너")
 
 7. 테이블을 연결 하는 관계 선은 데이터베이스에 정의 된 테이블 관계를 나타냅니다. 기본적으로 데이터베이스의 foreign key 제약 조건은 업데이트 및 삭제 규칙이 없음으로 설정 된 관계로만 표시 됩니다. 일반적으로 원하는 것입니다. 그러나 해당 줄을 클릭 하 여 **관계** 대화 상자를 표시할 수 있습니다 .이 대화 상자에서 계층적 업데이트의 동작을 변경할 수 있습니다. 자세한 내용은 [데이터 집합의 관계](../data-tools/relationships-in-datasets.md) 및 [계층적 업데이트](../data-tools/hierarchical-update.md)를 참조 하세요.
 
@@ -76,7 +76,7 @@ ms.locfileid: "72631200"
 
 1. **솔루션 탐색기** 에서 데이터 집합 노드를 클릭 하 여 데이터 집합 디자이너를 포커스로 가져옵니다.
 
-2. Visual Studio의 왼쪽 여백에 있는 **데이터 원본** 탭을 클릭 하거나 **빠른**실행에 `Data Sources`을 입력 합니다.
+2. Visual Studio의 왼쪽 여백에 있는 **데이터 원본** 탭을 클릭 하거나 빠른 시작 `Data Sources` 을 **QuickLaunch**입력 합니다.
 
 3. 데이터 집합 노드를 마우스 오른쪽 단추로 클릭 하 고 **마법사를 사용 하 여 데이터 원본 구성** 을 선택 합니다.
 
@@ -88,8 +88,8 @@ ms.locfileid: "72631200"
 
 1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다.
 
-2. **도구 상자** 의 **데이터 집합** 탭에서 **데이터 세트 디자이너**로 <xref:System.Data.DataTable> 클래스를 끌어 옵니다.
+2. <xref:System.Data.DataTable> **도구 상자** 의 **데이터 집합** 탭에서 **데이터 세트 디자이너**로 클래스를 끌어 옵니다.
 
-3. 열을 추가 하 여 데이터 테이블을 정의 합니다. 자세한 내용은 [방법: DataTable ](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)에 열을 추가 합니다.
+3. 열을 추가 하 여 데이터 테이블을 정의 합니다. 자세한 내용은 [방법: DataTable에 열 추가](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)를 참조 하세요.
 
-4. 독립 실행형 테이블은 데이터를 채울 수 있도록 독립 실행형 테이블에 `Fill` 논리를 구현 해야 합니다. 독립 실행형 데이터 테이블을 채우는 방법에 대 한 자세한 내용은 [DataAdapter에서 데이터 집합 채우기](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)를 참조 하세요.
+4. 독립 실행형 테이블은 `Fill` 데이터를 채울 수 있도록 독립 실행형 테이블에서 논리를 구현 해야 합니다. 독립 실행형 데이터 테이블을 채우는 방법에 대 한 자세한 내용은 [DataAdapter에서 데이터 집합 채우기](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)를 참조 하세요.

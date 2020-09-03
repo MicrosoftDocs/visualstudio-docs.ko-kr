@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c060dc9bd50c6dc49777e9114eadae4d6267d92
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288678"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기

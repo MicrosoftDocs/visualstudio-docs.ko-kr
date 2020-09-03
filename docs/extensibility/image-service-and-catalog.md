@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536333"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
@@ -42,7 +42,7 @@ ms.locfileid: "85536333"
 
   ![이미지 서비스 이전 및 이후](../extensibility/media/image-service-before-and-after.png "이미지 서비스 이전 및 이후")
 
-## <a name="how-it-works"></a>작동 방식
+## <a name="how-it-works"></a>작동 방법
  이미지 서비스는 지원 되는 모든 UI 프레임 워크에 적합 한 비트맵 이미지를 제공할 수 있습니다.
 
 - WPF: BitmapSource
@@ -88,7 +88,7 @@ ms.locfileid: "85536333"
 </ImageManifest>
 ```
 
- **기호**
+ **Symbols**
 
  가독성 및 유지 관리를 돕기 위해 이미지 매니페스트는 특성 값에 기호를 사용할 수 있습니다. 기호는 다음과 같이 정의 됩니다.
 
@@ -104,7 +104,7 @@ ms.locfileid: "85536333"
 |**하위 요소**|**정의**|
 |-|-|
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
-|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
+|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
 |String|기호는 임의의 문자열 값을 나타냅니다.|
 
@@ -141,9 +141,9 @@ ms.locfileid: "85536333"
 </Image>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|
 
@@ -157,14 +157,14 @@ ms.locfileid: "85536333"
  </Source>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
 |URI|하다 이미지를 로드할 수 있는 위치를 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -Application:///authority를 사용 하는 [PACK URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일의 경로|
 |배경|필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *광원:* 원본은 밝은 배경에 사용할 수 있습니다.<br /><br /> *어둡게:* 원본은 어두운 배경에서 사용할 수 있습니다.<br /><br /> *System.windows.forms.systeminformation.highcontrast:* 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 소스는 고대비 모드에서 짙은 배경으로 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*, *어둡게*, *HighContrastLight*또는 *HighContrastDark*인 경우 소스의 색은 반전 되지 않습니다. 배경이 생략 되거나 *system.windows.forms.systeminformation.highcontrast*로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다.|
 
 요소에는 \<Source> 다음과 같은 선택적 하위 요소 중 하나만 있을 수 있습니다.
 
-|**요소**|**특성 (모두 필수)**|**정의**|
+|**Element**|**특성 (모두 필수)**|**정의**|
 |-|-|-|
 |\<Size>|값|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
 |\<SizeRange>|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
@@ -177,7 +177,7 @@ ms.locfileid: "85536333"
 <NativeResource Type="type" ID="int" />
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
 |형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
@@ -193,9 +193,9 @@ ms.locfileid: "85536333"
  </ImageList>
 ```
 
-|**특성**|**정의**|
+|**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|
 
@@ -506,11 +506,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;
        ```
 
-   2. "새 도구 창에서 이미지 모니커 사용 어떻게 할까요?"의 #1 단계를 참조 하세요. 섹션.
+   2. "새 도구 창에서 이미지 모니커 사용 어떻게 할까요?"의 #1 단계를 참조 하세요. 섹션을 참조하세요.
 
 4. 도구 창을 여는 명령입니다.
 
-   - "새 도구 창에서 이미지 모니커 사용 어떻게 할까요?"의 #2 단계를 참조 하세요. 섹션.
+   - "새 도구 창에서 이미지 모니커 사용 어떻게 할까요?"의 #2 단계를 참조 하세요. 섹션을 참조하세요.
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Vsct 파일에서 이미지 모니커를 사용 어떻게 할까요??
  아래 주석 처리 된 줄에 표시 된 대로 *vsct* 파일을 업데이트 합니다.
@@ -640,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - 각 **ContainedImage**의 GUID를 $ (ImageCatalogGuid)로 바꾸고 각 **ContainedImage**의 ID를 $ ()로 바꾸고 \<moniker> External = "True" 특성을 각 **ContainedImage** 에 추가 합니다.
 
-       - \<moniker>이미지와 일치 하지만 "Knownmoniker"와 일치 하는 **Knownmoniker** 로 바꾸어야 합니다. 이름에서 제거 되었습니다.
+       - \<moniker> 이미지와 일치 하지만 "Knownmoniker"와 일치 하는 **Knownmoniker** 로 바꾸어야 합니다. 이름에서 제거 되었습니다.
 
    - <가져오기 매니페스트 = "$ (ManifestFolder) \\<상대 설치 디렉터리 경로를 * \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \*> 섹션의 맨 위에 추가 \<Symbols> 합니다.
 
@@ -714,7 +714,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="testing-your-images"></a>이미지 테스트
  이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](visual-studio-sdk.md)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015)에서 찾을 수 있습니다.
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 
 ### <a name="samples"></a>샘플
  다양 한 Visual Studio 확장 지점의 일부로 이미지 서비스를 사용 하는 방법을 보여 주기 위해 GitHub의 몇 가지 Visual Studio 샘플이 업데이트 되었습니다.
