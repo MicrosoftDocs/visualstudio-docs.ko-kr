@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+title: 'IPropertyProxyEESide:: GetManagedViewerCreationData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b5161894875ac683e5a6e49ae623bd6025531006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199523"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-해당 뷰어를 인스턴스화하기 위해이 속성 형식에 대 한 뷰어에 대 한 정보를 검색 합니다.  
+해당 뷰어를 인스턴스화하기 위해이 속성 형식의 뷰어에 대 한 정보를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,30 +50,30 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>매개 변수  
  `assemName`  
- [out] 이 개체를 보유 하는 어셈블리의 이름을 반환 합니다.  
+ 제한이 이 개체를 보유 하는 어셈블리의 이름을 반환 합니다.  
   
  `assemBytes`  
- [out] 반환 된 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (이 경우 null 값을 사용할 수 없는 바이트)이이 개체의 어셈블리 바이트를 포함 하는 개체입니다.  
+ 제한이 이 개체의 어셈블리 바이트를 포함 하는 [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) 개체를 반환 합니다. 바이트를 사용할 수 없는 경우 null 값입니다.  
   
  `assemPdb`  
- [out] 반환 된 `IEEDataStorage` 기호를 포함 하는 개체 (이 null 값인 경우 기호 저장소가 없으면 사용할 수 있는 경우)이이 개체에 대 한 정보를 저장 합니다.  
+ 제한이 `IEEDataStorage` 이 개체에 대 한 기호 저장소 정보를 포함 하는 개체를 반환 합니다. 기호 저장소를 사용할 수 없는 경우에는 null 값입니다.  
   
  `className`  
- [out] 이 개체가 포함 된 클래스 이름을 반환 합니다.  
+ 제한이 이 개체를 포함 하는 클래스 이름을 반환 합니다.  
   
  `alr`  
- [out] 값을 반환 합니다 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 어셈블리의 위치를 나타내는 열거형입니다.  
+ 제한이 어셈블리의 위치를 나타내는 [Assemblylocresolution](../../../extensibility/debugger/reference/assemblylocresolution.md) 열거형의 값을 반환 합니다.  
   
  `replacementOk`  
- [out] 0이 아닌 값을 반환 합니다 (`TRUE`)이이 개체의이 값을 변경할 수 있습니다; 경우에 0 (`FALSE`) 개체가 읽기 전용인 경우.  
+ 제한이 는 `TRUE` 이 개체의 값을 변경할 수 있는 경우 0이 아닌 값을 반환 하 고, `FALSE` 개체가 읽기 전용인 경우에는 0 ()을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 관리 되는 뷰어를 인스턴스화할 형식 시각화 도우미에서 사용 됩니다.  
+ 이 메서드는 형식 시각화 도우미에서 관리 되는 뷰어를 인스턴스화하기 위해 사용 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

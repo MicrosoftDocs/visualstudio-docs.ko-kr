@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585628"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
@@ -101,7 +101,7 @@ ms.locfileid: "75585628"
 > [!CAUTION]
 > 편집하기 위해 열어 둔 파일에 대해서만 **실행 취소** 를 사용할 수 있습니다. 이 옵션을 선택하지 않으면 편집하기 위해 열어 두지 않은 파일은 계속 닫혀 있으며 해당 파일에 대해 **실행 취소** 옵션을 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)
 - [파일에서 찾기](../ide/find-in-files.md)
