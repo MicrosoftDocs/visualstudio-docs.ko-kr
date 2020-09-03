@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156597"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
@@ -41,11 +41,11 @@ ms.locfileid: "68156597"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>작업의 오류를 무시하려면  
   
-- 작업의 `ContinueOnError` 특성을 사용합니다. 예:  
+- 작업의 `ContinueOnError` 특성을 사용합니다. 다음은 그 예입니다.  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 `Delete` 작업이 실패하더라도 `Build` 대상이 계속 실행되고 빌드가 성공한 것으로 간주됨을 보여 줍니다.  
   
 ```  
@@ -64,7 +64,7 @@ ms.locfileid: "68156597"
 </Project>  
 ```  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 [MSBuild](msbuild.md)  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)

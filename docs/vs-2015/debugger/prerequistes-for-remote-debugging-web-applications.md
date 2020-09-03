@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8cbf0ae920be00980d270aae16d5e7d1f7a5313
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72574622"
 ---
 # <a name="prerequisites-for-remote-debugging-web-applications"></a>웹 애플리케이션 원격 디버깅의 필수 구성 요소
@@ -34,6 +34,6 @@ ms.locfileid: "72574622"
   
 - 기본적으로 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스는 ASPNET 사용자 프로세스로 실행됩니다. 따라서 이 프로세스를 디버깅하려면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]이 실행되는 컴퓨터에 대한 관리자 권한이 있어야 합니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스의 이름은 디버그 시나리오 및 IIS 버전에 따라 다릅니다. 자세한 내용은 [방법: ASP.NET 프로세스의 이름 찾기](../debugger/how-to-find-the-name-of-the-aspnet-process.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)   
+## <a name="see-also"></a>관련 항목  
+ [ASP.NET 및 AJAX 응용 프로그램 디버깅](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)

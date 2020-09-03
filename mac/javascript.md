@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72807154"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 및 TypeScript 지원
@@ -43,6 +43,6 @@ Mac용 Visual Studio의 JavaScript IntelliSense는 형식 유추, JSDoc 또는 T
 
     ![typescript 정의 파일 추가](media/javascript-type-intellisense-2019.gif)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [JavaScript Intellisense(Windows의 Visual Studio)](/visualstudio/ide/javascript-intellisense)

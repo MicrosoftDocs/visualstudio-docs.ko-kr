@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 57bb08abf555e26603f4464e0971ce40fd02f65d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661705"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>도메인별 언어 탐색기 작업
@@ -45,5 +45,5 @@ ms.locfileid: "72661705"
 
 - **Xml 직렬화 동작**입니다. 모델의 serialization 설정입니다. Serialization에 대 한 자세한 내용은 [File Storage 및 XML Serialization 사용자 지정](../modeling/customizing-file-storage-and-xml-serialization.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

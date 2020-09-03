@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 47b5055cca0b00e7fdec49947df13b473a090aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659090"
 ---
 # <a name="how-to-use-the-imports-designer"></a>방법: 가져오기 디자이너 사용
-가져오기 디자이너를 사용하여 식에서 사용할 형식의 네임스페이스를 입력할 수 있습니다. Imports 디자이너에서 Visual Basic C#키워드 **를 가져오거나** **사용 하** 는 것과 마찬가지로 imports 디자이너에서 네임 스페이스를 지정 하면 정규화 된 버전 형식 이름이 아니라 식에 형식 이름을 입력할 수 있습니다.
+가져오기 디자이너를 사용하여 식에서 사용할 형식의 네임스페이스를 입력할 수 있습니다. Imports 디자이너에서 네임 스페이스를 지정 **하는 Visual Basic** .Net 및 c #의 키워드를 가져오거나 **사용 하** 는 것과 매우 유사 하 게 정규화 된 버전 형식 이름이 아닌 식에 형식 이름을 입력할 수 있습니다.
 
- 가져오기 디자이너에는 UI의 변경 내용과 워크플로 저장 시 변경 내용이 모두 적용됩니다. 워크플로가 저장되면 가져오기 디자이너에 네임스페이스를 자동으로 추가할 수 있습니다. 이러한 요구 사항은 다음과 같습니다.
+ 가져오기 디자이너에는 UI의 변경 내용과 워크플로 저장 시 변경 내용이 모두 적용됩니다. 워크플로가 저장되면 가져오기 디자이너에 네임스페이스를 자동으로 추가할 수 있습니다. 여기에는 다음과 같은 옵션이 포함됩니다.
 
 - 변수 및 인수 선언에 사용된 형식의 네임스페이스
 

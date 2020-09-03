@@ -10,22 +10,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603873"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>방법: Windows Communication Foundation 계약 작업 구현(레거시)
 이 항목에서는 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 또는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]를 대상으로 하는 레거시 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]를 사용하여 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 계약 작업을 구현하는 방법에 대해 설명합니다.
 
- **ReceiveActivity** 활동을 도구 상자에서 워크플로 디자인 화면으로 끌어 온 후 새 [!INCLUDE[indigo2](../includes/indigo2-md.md)] 계약을 만들거나 기존 계약을 가져오고 작업을 구현 합니다. [작업 선택 대화 상자 (레거시)](../workflow-designer/choose-operation-dialog-box-legacy.md)를 통해 계약 및 작업을 선택 하 고 만들 수 있습니다.
+ **ReceiveActivity** 활동을 도구 상자에서 워크플로 디자인 화면으로 끌어 온 후에는 새 계약을 만들거나 [!INCLUDE[indigo2](../includes/indigo2-md.md)] 기존 계약을 가져오고 작업을 구현 합니다. [작업 선택 대화 상자 (레거시)](../workflow-designer/choose-operation-dialog-box-legacy.md)를 통해 계약 및 작업을 선택 하 고 만들 수 있습니다.
 
 ### <a name="to-implement-a-wcf-contract-operation"></a>WCF 계약 작업을 구현하려면
 
 1. 디자이너에서 **ReceiveActivity** 활동을 두 번 클릭 하거나 **속성** 창에서 **ServiceOperationInfo** 속성 옆에 있는 줄임표를 클릭 합니다.
 
-2. 다음 작업 중 하나를 수행합니다.
+2. 다음 중 하나를 수행합니다.
 
    - 대화 상자의 오른쪽 위 모퉁이에서 **계약 추가** 를 클릭 합니다. 이렇게 하면 새 [!INCLUDE[indigo2](../includes/indigo2-md.md)] 계약 및 작업이 자동으로 만들어집니다.
 
@@ -49,5 +49,5 @@ ms.locfileid: "72603873"
 
 5. **ReceiveActivity** 활동 내에서 해당 작업을 구현 하는 데 사용할 워크플로 활동을 저장 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [작업 선택 대화 상자 (레거시)](../workflow-designer/choose-operation-dialog-box-legacy.md) [방법: WCF 계약 작업 호출 (레거시)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [레거시 워크플로 작업](../workflow-designer/legacy-workflow-activities.md)

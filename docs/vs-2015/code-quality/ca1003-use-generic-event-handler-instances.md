@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ee0571e85a1d4ec9960e0235814fcb9d7adbd483
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539908"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: 제네릭 이벤트 처리기 인스턴스를 사용하세요.
@@ -44,13 +44,13 @@ ms.locfileid: "85539908"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 위반 하는 대리자를 보여 줍니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]이 예제에서 주석은 규칙을 충족 하도록 예제를 수정 하는 방법을 설명 합니다. C # 예제에서 수정 된 코드를 보여 주는 예제는 다음과 같습니다.
 
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/cs/FxCop.Design.CustomEventHandler.cs#1)]
  [!code-vb[FxCop.Design.CustomEventHandler#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/vb/FxCop.Design.CustomEventHandler.vb#1)]
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 규칙을 충족 하는 이전 예제에서 대리자 선언을 제거 하 고 `ClassThatRaisesEvent` `ClassThatHandlesEvent` 대리자를 사용 하 여 및 메서드에서 해당 사용을 대체 합니다 <xref:System.EventHandler%601?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.GenericEventHandler/cs/FxCop.Design.GenericEventHandler.cs#1)]
@@ -70,5 +70,5 @@ ms.locfileid: "85539908"
 
  [CA1007: 적합한 제네릭을 사용하세요.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [제네릭](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

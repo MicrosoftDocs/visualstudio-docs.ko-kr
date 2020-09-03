@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1da2c07d5a412a7ac1865cfc2669e2f4ff992b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548072"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
@@ -67,4 +67,4 @@ ms.locfileid: "85548072"
 |-|-|
 |[Visual C# 및 Visual Basic 시작](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[JavaScript 코드 작성](https://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
 |[플랫폼 간 모바일 개발용 Visual C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[F#을 사용한 함수형 프로그래밍 소개](https://msdn.microsoft.com/library/vstudio/dd233147.aspx)|
-|[C++ 시작](../ide/getting-started-with-cpp-in-visual-studio.md)|[Visual Studio 2015에서 디버그 시작](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|
+|[C + + 시작](../ide/getting-started-with-cpp-in-visual-studio.md)|[Visual Studio 2015에서 디버그 시작](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|

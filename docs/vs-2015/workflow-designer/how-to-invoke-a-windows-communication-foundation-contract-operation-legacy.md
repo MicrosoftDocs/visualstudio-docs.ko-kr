@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f42600a739561a27a6dd8f6caa237027bac4554
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603700"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>방법: Windows Communication Foundation 계약 작업 호출(레거시)
@@ -41,11 +41,11 @@ ms.locfileid: "72603700"
 
 1. 디자이너에서 <xref:System.Workflow.Activities.SendActivity> 활동을 선택합니다.
 
-2. **속성** 창에서 <xref:System.Workflow.Activities.ChannelToken>의 이름을 지정 합니다. 이 이름은 채널 토큰을 고유하게 식별합니다.
+2. **속성** 창에서의 이름을 지정 <xref:System.Workflow.Activities.ChannelToken> 합니다. 이 이름은 채널 토큰을 고유하게 식별합니다.
 
 3. 채널 토큰 노드를 확장하고 사용할 클라이언트 엔드포인트의 이름을 <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> 필드에서 지정합니다. 구성 파일에서 동일한 이름을 사용하는 엔드포인트 구성이 채널을 구성하는 데 사용됩니다.
 
 4. 구성 파일에 엔드포인트 구성이 아직 없으면 만듭니다. 클라이언트를 구성 하는 방법에 대 한 자세한 내용은 [WCF 클라이언트 개요](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [작업 선택 대화 상자 (레거시)](../workflow-designer/choose-operation-dialog-box-legacy.md) [방법: WCF 계약 작업 구현 (레거시)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) [레거시 워크플로 작업](../workflow-designer/legacy-workflow-activities.md)

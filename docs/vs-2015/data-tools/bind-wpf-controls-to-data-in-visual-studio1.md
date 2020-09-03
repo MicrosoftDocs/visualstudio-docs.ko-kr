@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25b144409ae58f006602706a5b5cb498c0535ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540168"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
@@ -39,7 +39,7 @@ ms.locfileid: "85540168"
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>WPF 컨트롤을 데이터에 바인딩하는 것과 관련된 작업
  다음 표에서는 **데이터 원본** 창에서 [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)]로 항목을 끌어서 수행할 수 있는 작업을 보여 줍니다.
 
-|작업|추가 정보|
+|Task|추가 정보|
 |----------|----------------------|
 |새 데이터 바인딩된 컨트롤을 만듭니다.<br /><br /> 기존 컨트롤을 데이터에 바인딩합니다.|[Visual Studio에서 데이터에 wpf 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [wpf 컨트롤을 데이터 집합에 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |부모-자식 관계로 관련 데이터를 표시하는 컨트롤을 만듭니다. 그러면 사용자가 어느 한 컨트롤에서 부모 데이터 레코드를 선택하면 선택한 부모 레코드의 관련 자식 데이터가 다른 한 컨트롤에 표시됩니다.|[WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -58,8 +58,8 @@ ms.locfileid: "85540168"
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|
 |데이터 세트|예|예|
 |[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]|예|예|
-|서비스|예|아니요|
-|Object|예|아니요|
+|서비스|예|예|
+|Object|예|예|
 
 ### <a name="datasets"></a>데이터 세트
  **데이터 소스** 창에서 디자이너로 테이블이 나 열을 끌면에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 다음을 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 수행 하는을 생성 합니다.
@@ -68,7 +68,7 @@ ms.locfileid: "85540168"
 
 - 컨트롤에 대한 데이터 바인딩을 만듭니다. 디자이너의 기존 컨트롤로 항목을 끌면 XAML이 컨트롤을 항목에 바인딩합니다. 항목을 컨테이너로 끌어 오면 XAML은 끌어 온 항목에 대해 선택한 컨트롤을 만들고 컨트롤을 항목에 바인딩합니다. 이 컨트롤은 새로운 <xref:System.Windows.Controls.Grid> 내에 만들어집니다.
 
-  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]또한에서는 코드 파일을 다음과 같이 변경 합니다.
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또한에서는 코드 파일을 다음과 같이 변경 합니다.
 
 - 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 이벤트 처리기를 만듭니다. 이 이벤트 처리기는 테이블을 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색한 다음 첫 번째 데이터 항목을 현재 항목으로 설정합니다. <xref:System.Windows.FrameworkElement.Loaded>이벤트 처리기가 이미 있는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기존 이벤트 처리기에이 코드를 추가 합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "85540168"
 
 - 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 이벤트 처리기를 만듭니다. 이벤트 처리기는 Get*EntityName*Query 메서드를 호출 하 여 엔터티를 데이터로 채우고 <xref:System.Windows.Data.CollectionViewSource> 컨테이너의 리소스에서를 검색 한 다음 첫 번째 데이터 항목을 현재 항목으로 만듭니다. <xref:System.Windows.FrameworkElement.Loaded>이벤트 처리기가 이미 있는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기존 이벤트 처리기에이 코드를 추가 합니다.
 
-### <a name="services"></a>서비스
+### <a name="services"></a>Services
  **데이터 소스** 창에서 디자이너로 서비스 개체 또는 속성을 끌면에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 데이터 바인딩된 컨트롤을 만들거나 기존 컨트롤을 개체나 속성에 바인딩하는을 생성 합니다. 그러나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 프록시 서비스 개체를 데이터로 채우는 코드를 생성하지 않기 때문에 이 코드를 직접 작성해야 합니다. 이 작업을 수행 하는 방법을 보여 주는 예제는 [WCF 데이터 서비스에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)을 참조 하세요.
 
  Visual Studio에서는 다음을 수행하는 XAML을 생성합니다.
@@ -106,5 +106,5 @@ ms.locfileid: "85540168"
 
 - 컨트롤에 대한 데이터 바인딩을 만듭니다. 디자이너의 기존 컨트롤로 항목을 끌면 XAML이 컨트롤을 항목에 바인딩합니다. 항목을 컨테이너로 끌어 오면 XAML은 끌어 온 항목에 대해 선택한 컨트롤을 만들고 컨트롤을 항목에 바인딩합니다. 이 컨트롤은 새로운 <xref:System.Windows.Controls.Grid> 내에 만들어집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

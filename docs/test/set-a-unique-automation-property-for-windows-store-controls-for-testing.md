@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: mikejo5000
 ms.openlocfilehash: 62409dc4aac8f640c7b58b112f7f86215ba2043b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286715"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>테스트를 위해 UWP 컨트롤에 대한 고유 자동화 속성 설정

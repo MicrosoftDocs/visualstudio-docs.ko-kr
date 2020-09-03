@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06428a633aec41489a8a77655d6ea9442ffffaa0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540090"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
@@ -34,7 +34,7 @@ ms.locfileid: "85540090"
 
 데이터 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] **소스** 창을 사용 하 여 데이터 바인딩된 컨트롤을 만들 수 있습니다. 먼저 **데이터 소스 창에** 데이터 소스를 추가 합니다. 그런 다음 **데이터 소스** 창에서**WPF Designer**로 항목을 끌어 옵니다.
 
-## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a>데이터 소스 창에 데이터 소스 추가
+## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a> 데이터 소스 창에 데이터 소스 추가
  데이터 바인딩된 컨트롤을 만들려면 **먼저 데이터 소스 창에** 데이터 소스를 추가 해야 합니다.
 
 #### <a name="to-add-a-data-source-to-the-data-sources-window"></a>데이터 소스 창에 데이터 소스를 추가하려면
@@ -53,7 +53,7 @@ ms.locfileid: "85540090"
 
     - [디자이너의 기존 컨트롤에 데이터 바인딩](#existing)
 
-## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a>단일 데이터 필드에 바인딩되는 컨트롤 만들기
+## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a> 단일 데이터 필드에 바인딩되는 컨트롤 만들기
  **데이터 소스 창에** 데이터 소스를 추가한 후 또는와 같은 단일 데이터 필드를 표시 하는 새 데이터 바인딩된 컨트롤을 만들 수 있습니다 <xref:System.Windows.Controls.ComboBox> <xref:System.Windows.Controls.TextBox> .
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>단일 데이터 필드에 바인딩되는 컨트롤을 만들려면
@@ -66,9 +66,9 @@ ms.locfileid: "85540090"
 
 3. 항목을 디자이너의 유효한 컨테이너로 끌어 옵니다. 유효한 컨테이너에 대 한 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]컨테이너에 새 데이터 바인딩된 컨트롤과 적절 한 제목을 만듭니다 <xref:System.Windows.Controls.Label> . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]또한 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 는 컨트롤을 데이터에 바인딩하기 위한 코드를 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 컨테이너에 새 데이터 바인딩된 컨트롤과 적절 한 제목을 만듭니다 <xref:System.Windows.Controls.Label> . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또한 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 는 컨트롤을 데이터에 바인딩하기 위한 코드를 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
 
-## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a>여러 데이터 필드에 바인딩되는 컨트롤 만들기
+## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a> 여러 데이터 필드에 바인딩되는 컨트롤 만들기
  **데이터 소스 창에** 데이터 소스를 추가한 후 또는와 같은 여러 데이터 필드를 표시 하는 새 데이터 바인딩된 컨트롤을 만들 수 있습니다 <xref:System.Windows.Controls.DataGrid> <xref:System.Windows.Controls.ListView> .
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>여러 데이터 필드에 바인딩되는 컨트롤을 만들려면
@@ -84,9 +84,9 @@ ms.locfileid: "85540090"
 
 3. <xref:System.Windows.Controls.Grid>와 같은 디자이너의 유효한 컨테이너로 항목을 끌어 옵니다. 유효한 컨테이너에 대 한 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]컨테이너에 새 데이터 바인딩된 컨트롤을 만듭니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]또한 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 는 컨트롤을 데이터에 바인딩하기 위한 코드를 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 컨테이너에 새 데이터 바인딩된 컨트롤을 만듭니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또한 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 는 컨트롤을 데이터에 바인딩하기 위한 코드를 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
 
-## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a>여러 데이터 필드에 바인딩되는 컨트롤 집합 만들기
+## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a> 여러 데이터 필드에 바인딩되는 컨트롤 집합 만들기
  **데이터 소스 창에** 데이터 소스를 추가한 후에는 데이터 테이블이 나 개체를 컨트롤 집합에 바인딩할 수 있습니다. 테이블이나 개체의 각 열 또는 속성에 대해 서로 다른 컨트롤이 만들어집니다.
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>여러 데이터 필드에 바인딩되는 컨트롤 집합을 만들려면
@@ -100,9 +100,9 @@ ms.locfileid: "85540090"
 
 3. <xref:System.Windows.Controls.Grid>와 같은 디자이너의 유효한 컨테이너로 항목을 끌어 옵니다. 유효한 컨테이너에 대 한 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]컨테이너에 새 데이터 바인딩된 컨트롤을 만듭니다. 각 컨트롤은 적절한 제목을 가진 <xref:System.Windows.Controls.Label> 컨트롤과 함께 서로 다른 열이나 속성에 바인딩됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]또한는 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 컨트롤을 데이터에 바인딩하기 위한 코드를 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 컨테이너에 새 데이터 바인딩된 컨트롤을 만듭니다. 각 컨트롤은 적절한 제목을 가진 <xref:System.Windows.Controls.Label> 컨트롤과 함께 서로 다른 열이나 속성에 바인딩됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또한는 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 컨트롤을 데이터에 바인딩하기 위한 코드를 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)을 참조 하세요.
 
-## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a>디자이너의 기존 컨트롤에 데이터 바인딩
+## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a> 디자이너의 기존 컨트롤에 데이터 바인딩
  **데이터 소스 창에** 데이터 소스를 추가한 후에는 디자이너의 기존 컨트롤에 데이터 바인딩을 추가할 수 있습니다.
 
 #### <a name="to-bind-data-to-an-existing-control-in-the-designer"></a>디자이너의 기존 컨트롤에 데이터를 바인딩하려면
@@ -120,5 +120,5 @@ ms.locfileid: "85540090"
     > [!NOTE]
     > 컨트롤이 이미 데이터에 바인딩된 경우 컨트롤의 데이터 바인딩이 가장 최근에 컨트롤로 끌어 온 항목으로 다시 설정됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 데이터에 wpf 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) wpf [응용 프로그램에서 조회 테이블 만들기](../data-tools/create-lookup-tables-in-wpf-applications.md) wpf 응용 프로그램에서 [관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md) wpf 컨트롤을 데이터 [집합에 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md) wpf 컨트롤을 [WCF 데이터 서비스에](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) 바인딩 [연습: wpf 응용 프로그램에서 관련 데이터 표시](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

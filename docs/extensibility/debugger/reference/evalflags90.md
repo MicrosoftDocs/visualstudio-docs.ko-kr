@@ -1,5 +1,5 @@
 ---
-title: 에발플래그90 | 마이크로 소프트 문서
+title: EVALFLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737095"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-식 평가를 제어하는 플래그에 대한 유효한 값을 개수합니다. 이 열거형은 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 열거를 확장합니다.
+식 계산을 제어 하는 플래그에 대 한 유효한 값을 열거 합니다. 이 열거형은 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 열거형을 확장 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,41 +66,41 @@ public enum enum_EVALFLAGS90
 
 ## <a name="fields"></a>필드
 `EVAL90_RETURNVALUE`\
-반환 값(있는 경우)을 평가할 수 있도록 지정합니다.
+반환 값 (있는 경우)을 계산 하도록 지정 합니다.
 
 `EVAL90_NOSIDEEFFECTS`\
-부작용이 허용되지 않도록 지정합니다.
+의도 하지 않은 결과를 허용 하지 않도록 지정 합니다.
 
 `EVAL90_ALLOWBPS`\
-중단점에 중지를 지정합니다.
+중단점에 대 한 중지를 지정 합니다.
 
 `EVAL90_ALLOWERRORREPORT`\
-호스트에 대한 오류 보고가 허용되도록 지정합니다. 주로 Internet Explorer의 스크립트에서 식 평가에 사용됩니다.
+호스트에 대 한 오류 보고를 허용 하도록 지정 합니다. 주로 Internet Explorer의 스크립트에서 식 계산에 사용 됩니다.
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-함수를 호출하는 대신 주소로 평가할 강제로 함수를 강제합니다.
+함수를 호출 하는 대신 함수를 주소로 계산 합니다.
 
 `EVAL90_NOFUNCEVAL`\
-함수가 평가되는 것을 방지합니다. 예를 들어 식의 `int` 토큰을 `myExpression(int) + 10`고려합니다. 이 함수는 주소로 올바르게 평가할 수 있지만 값으로 는 평가할 수 없습니다.
+함수가 계산 되지 않도록 합니다. 예를 들어 `int` 식의 토큰을 고려 `myExpression(int) + 10` 합니다. 이 함수는 값이 아니라 주소로 올바르게 계산 될 수 있습니다.
 
 `EVAL90_NOEVENTS`\
-표현식 평가 중에 발생하는 이벤트가 세션 디버그 관리자(SDM) 또는 IDE로 전송되어서는 안 된다는 것을 나타냅니다.
+식 평가 중에 발생 하는 이벤트를 세션 디버그 관리자 (SDM) 또는 IDE로 보내지 않아야 함을 나타내는 플래그입니다.
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
-디자인-시간 식 평가를 활성화합니다.
+디자인 타임 식 계산을 사용 합니다.
 
 `EVAL90_ALLOW_IMPLICIT_VARS`\
-암시적 변수 생성을 허용합니다.
+암시적 변수 생성을 허용 합니다.
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-즉시 평가가 수행되도록 강제합니다. 이 기능은 사용자 요청과 같은 요청을 서비스할 때 유용합니다.
+계산이 즉시 수행 되도록 합니다. 사용자 요청과 같은 요청을 서비스 하는 경우에 유용 합니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: Msdbg90.h
+헤더: Msdbg90
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

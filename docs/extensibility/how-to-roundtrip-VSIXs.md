@@ -9,10 +9,10 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387280"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>방법: Visual Studio 2019/2017 및 Visual Studio 2015과 호환 되는 확장 만들기
@@ -51,11 +51,11 @@ Visual Studio 2019 또는 2017 대신 Visual Studio 2015을 사용 하 여 업�
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>project.js에 대 한 참조가 없는지 확인
 
-이 문서의 뒷부분에서 **.csproj* 파일에 조건부 import 문을 삽입 합니다. NuGet 참조가project.js에 저장 된 경우 *에*는이 작업이 수행 되지 않습니다. 따라서 모든 NuGet 참조를 *packages.config* 파일로 이동 하는 것이 좋습니다.
-프로젝트에 파일 *에 대 한project.js* 포함 되어 있는 경우:
+이 문서의 뒷부분에서 **.csproj* 파일에 조건부 import 문을 삽입 합니다. NuGet 참조가project.js에 저장 된 경우 * 에*는이 작업이 수행 되지 않습니다. 따라서 모든 NuGet 참조를 *packages.config* 파일로 이동 하는 것이 좋습니다.
+프로젝트에 파일 * 에 대 한project.js* 포함 되어 있는 경우:
 
 * *project.js*의 참조를 기록해 둡니다.
-* **솔루션 탐색기**에서 파일 *의project.js* 를 프로젝트에서 삭제 합니다. 그러면 파일 *에서project.js* 삭제 되 고 프로젝트에서 제거 됩니다.
+* **솔루션 탐색기**에서 파일 *의project.js* 를 프로젝트에서 삭제 합니다. 그러면 파일 * 에서project.js* 삭제 되 고 프로젝트에서 제거 됩니다.
 * NuGet 참조를 프로젝트에 다시 추가 합니다.
   * **솔루션** 을 마우스 오른쪽 단추로 클릭 하 고 **솔루션용 NuGet 패키지 관리**를 선택 합니다.
   * Visual Studio에서 자동으로 *packages.config* 파일을 만듭니다.
@@ -74,7 +74,7 @@ Visual Studio 2015 및 2019/2017에서 VSIXv3를 빌드 및 배포 하려면 다
 Visual Studio 2015 | VisualStudio입니다. 14.0
 Visual Studio 2019 또는 2017 | Microsoft.
 
-이렇게 하려면 다음을 수행합니다.
+이를 수행하려면:
 
 * 프로젝트에 NuGet 패키지 VisualStudio를 추가 합니다. 14.0
 * 프로젝트에 Microsoft. 사용자의 Uibuildbuilda가 포함 되어 있지 않으면이를 추가 합니다.
