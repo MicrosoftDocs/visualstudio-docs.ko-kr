@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387111"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 기능
@@ -252,7 +252,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
  제목 표시줄에서 노란색의 웃는 얼굴을 클릭하고 마음에 든 부분에 대한 설명을 입력한 후 **웃는 얼굴 보내기** 단추를 클릭하기만 하면 됩니다.
 
- 끝났습니다. 사용자의 피드백은 적절한 역량을 갖춘 팀으로 전달되며 해당 팀에서는 곧바로 사용자의 만족도를 높이기 위한 방법을 고안하기 시작합니다.
+ 정말 간단하죠. 사용자의 피드백은 적절한 역량을 갖춘 팀으로 전달되며 해당 팀에서는 곧바로 사용자의 만족도를 높이기 위한 방법을 고안하기 시작합니다.
 
 ### <a name="send-a-frown"></a>찡그린 얼굴 보내기
  제품에서 개선해야 할 부분에 대한 피드백을 받으면 고객에게 가장 중요한 부분에 가장 우선적으로 집중하게 되므로 백로그를 관리하는 데 도움이 됩니다. 거슬리거나 불편하게 하는 부분이 있는 경우 IDE 내에서 바로 **찡그린 얼굴 보내기** 기능을 사용하여 알려 주시기 바랍니다. 이 프로세스 역시 무척 간단합니다.
@@ -264,7 +264,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
  먼저, 위에서 설명한 대로 찡그린 얼굴을 보냅니다. 대화 상자가 나타나면 기본 태그 중 하나를 사용하여 피드백에 태그를 지정할 수도 있고 태그를 직접 만들 수도 있습니다. 태그는 Microsoft에서 사용자의 피드백을 적절한 기능 팀으로 전달하는 데 도움이 됩니다. **범주 선택** 드롭다운 목록에서 Microsoft에 알리려는 문제를 나타내는 옵션을 선택한 후 문제를 재현하기 위한 단계를 수행합니다. Visual Studio를 사용하여 피드백을 보내는 방법과 관련된 자세한 단계도 확인할 수 있습니다. 자세한 내용은 [Visual Studio 웃는 얼굴 보내기 지침](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 * [Apache Cordova를 사용하여 플랫폼 간 앱 제작](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio에서 Xamarin을 사용하여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)

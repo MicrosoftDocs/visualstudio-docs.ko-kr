@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbf92b38f9408455e10048fbd4a5e84fdf822ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547994"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>방법: 프로파일링 도구 호출 추적 보고서 만들기
@@ -39,8 +39,8 @@ ms.locfileid: "85547994"
     |-|-|  
     |*ToolsPath*|프로파일링 도구 명령줄 도구의 경로입니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.|  
     |*VSPFile*|프로파일링 데이터(.vsp 또는 .vsps) 파일입니다. 전체 및 부분 경로를 사용할 수 있습니다.|  
-    |Xml|Xml 형식의 보고서를 만듭니다.|  
+    |xml|Xml 형식의 보고서를 만듭니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: ETW (ETW(Windows용 이벤트 추적)) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
- [프로파일링 도구 API](../profiling/profiling-tools-apis.md)
+ [프로파일링 도구 Api](../profiling/profiling-tools-apis.md)

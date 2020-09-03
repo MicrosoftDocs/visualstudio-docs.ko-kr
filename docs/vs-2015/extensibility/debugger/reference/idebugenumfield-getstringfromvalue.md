@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+title: 'IDebugEnumField:: GetStringFromValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ecdd60c363e30afbe4c61e8e18660a17a06a5ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189002"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 메서드는 해당 값을 지정 된 열거형 상수의 이름을 가져옵니다.  
+이 메서드는 해당 값이 지정 된 열거형 상수의 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,16 +42,16 @@ int GetStringFromValue(
   
 #### <a name="parameters"></a>매개 변수  
  `value`  
- [in] 열거형의 이름을 상수 가져올 값입니다.  
+ 진행 열거 상수의 이름을 가져올 값입니다.  
   
  `pbstrValue`  
- [out] 열거형 상수의 이름을 반환합니다.  
+ 제한이 열거 상수의 이름을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 값에 연결 된 이름은 또는 오류 코드를 반환 하는 경우.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 값에 연결 된 이름이 없으면가 반환 되 고, 그렇지 않으면 `S_FALSE` 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 동일한 값과 연결 된 이름을 여러 개 있으면 열거형에 정의 된 이름이 반환 됩니다.  
+ 동일한 값에 연결 된 이름이 둘 이상 있는 경우 열거형에 정의 된 첫 번째 이름이 반환 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

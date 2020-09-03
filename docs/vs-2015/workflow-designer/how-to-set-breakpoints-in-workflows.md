@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d1bbb18a9015b52b3d65cb8f8fd02674693abc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659132"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>방법: 워크플로에 중단점 설정
@@ -38,5 +38,5 @@ ms.locfileid: "72659132"
 
      또는 활동을 선택한 후 바로 가기 **F9** 키를 누르거나, 활동을 마우스 오른쪽 단추로 클릭 하 고 **중단점** 을 선택한 다음 상황에 맞는 메뉴에서 **중단점 삽입** 을 선택할 수도 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [방법:](../workflow-designer/how-to-invoke-the-workflow-debugger.md) [워크플로 디자이너 사용](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) 하 여 워크플로 디버거 디버깅 워크플로 호출 [방법: 워크플로 디자이너를 사용 하 여 XAML 디버그](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

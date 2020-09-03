@@ -24,16 +24,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b8f6ee192399c8af8a508b2f9c2817db954bb36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673008"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>데이터베이스의 그림에 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**데이터 소스** 창을 사용 하 여 데이터베이스의 이미지를 응용 프로그램의 컨트롤에 바인딩할 수 있습니다. 예를 들어, WPF 응용 프로그램의 <xref:System.Windows.Controls.Image> 컨트롤에 이미지를 바인딩하거나 Windows Forms 응용 프로그램의 <xref:System.Windows.Forms.PictureBox> 컨트롤에 바인딩할 수 있습니다.
+**데이터 소스** 창을 사용 하 여 데이터베이스의 이미지를 응용 프로그램의 컨트롤에 바인딩할 수 있습니다. 예를 들어, <xref:System.Windows.Controls.Image> WPF 응용 프로그램의 컨트롤 또는 <xref:System.Windows.Forms.PictureBox> Windows Forms 응용 프로그램의 컨트롤에 이미지를 바인딩할 수 있습니다.
 
  데이터베이스의 사진은 일반적으로 바이트 배열로 저장 됩니다. 바이트 배열로 저장 되는 **데이터 소스** 창의 항목에는 기본적으로 **없음** 으로 설정 되어 있습니다. 바이트 배열에는 간단한 바이트 배열의 모든 항목이 포함 될 수 있기 때문입니다. 이미지를 나타내는 **데이터 소스** 창에서 바이트 배열 항목에 대 한 데이터 바인딩된 컨트롤을 만들려면 만들 컨트롤을 선택 해야 합니다.
 
@@ -53,5 +53,5 @@ ms.locfileid: "72673008"
 
     - 또는 데이터 바인딩을 지원 하 고 이미지를 표시할 수 있는 다른 컨트롤을 선택할 수 있습니다. 사용할 컨트롤이 사용 가능한 컨트롤 목록에 없으면 목록에 추가 하 여 선택할 수 있습니다 (예를 들어, 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)

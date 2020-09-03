@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539258"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.
@@ -65,24 +65,24 @@ ms.locfileid: "85539258"
 
  다음 예외는 속성 get 메서드에서 throw 될 수 있습니다.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>및 모든 파생 (포함 <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 (포함 <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>및 all 파생
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 all 파생
 
-- <xref:System.ArgumentException?displayProperty=fullName>(인덱싱된 get 에서만)
+- <xref:System.ArgumentException?displayProperty=fullName> (인덱싱된 get 에서만)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(인덱싱된 get 에서만)
+- <xref:System.Collections.Generic.KeyNotFoundException> (인덱싱된 get 에서만)
 
 ### <a name="event-accessor-methods"></a>이벤트 접근자 메서드
  이벤트 접근자는 예외를 throw 하지 않는 간단한 작업 이어야 합니다. 이벤트는 이벤트 처리기를 추가 하거나 제거 하려고 할 때 예외를 throw 해서는 안 됩니다.
 
  다음 예외는 이벤트 accesor throw 될 수 있습니다.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>및 모든 파생 (포함 <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 (포함 <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>및 all 파생
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 all 파생
 
-- <xref:System.ArgumentException>및 파생물
+- <xref:System.ArgumentException> 및 파생물
 
 ### <a name="equals-methods"></a>Equals 메서드
  다음 **Equals** 메서드는 예외를 throw 해서는 안 됩니다.
@@ -135,5 +135,5 @@ ms.locfileid: "85539258"
 ## <a name="related-rules"></a>관련 규칙
  [CA2219: exception 절에서 예외를 발생시키지 마세요.](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [디자인 경고](../code-quality/design-warnings.md)

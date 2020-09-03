@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539362"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable을 올바르게 구현하십시오.
@@ -33,7 +33,7 @@ ms.locfileid: "85539362"
 |변경 수준|최신이 아님|
 
 ## <a name="cause"></a>원인
- `IDisposable`가 올바르게 구현 되지 않은 경우 이 문제에 대 한 몇 가지 이유가 여기에 나와 있습니다.
+ `IDisposable` 가 올바르게 구현 되지 않은 경우 이 문제에 대 한 몇 가지 이유가 여기에 나와 있습니다.
 
 - IDisposable은 클래스에서 다시 구현 됩니다.
 

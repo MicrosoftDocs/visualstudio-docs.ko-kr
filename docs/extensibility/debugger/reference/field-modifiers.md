@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | 마이크로 소프트 문서
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736847"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
-필드 유형에 대한 수정자를 지정합니다.
+필드 형식의 한정자를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_MODIFIERS {
@@ -112,88 +112,88 @@ public enum enum_FIELD_MODIFIERS {
 필드에 공용 액세스 권한이 있음을 나타냅니다.
 
 `FIELD_MOD_ACCESS_PROTECTED`\
-필드에 보호된 액세스 권한이 있음을 나타냅니다.
+필드에 보호 된 액세스 권한이 있음을 나타냅니다.
 
 `FIELD_MOD_ACCESS_PRIVATE`\
 필드에 개인 액세스 권한이 있음을 나타냅니다.
 
 `FIELD_MOD_NOMODIFIERS`\
-필드에 수정자가 없음을 나타냅니다.
+필드에 한정자가 없음을 나타냅니다.
 
 `FIELD_MOD_STATIC`\
-필드가 정적임을 나타냅니다.
+필드가 정적 임을 나타냅니다.
 
 `FIELD_MOD_CONSTANT`\
-필드가 상수임을 나타냅니다.
+필드가 상수 임을 나타냅니다.
 
 `FIELD_MOD_TRANSIENT`\
-필드가 일시적임을 나타냅니다.
+임시 필드 임을 나타냅니다.
 
 `FIELD_MOD_VOLATILE`\
-필드가 휘발성임을 나타냅니다.
+는 필드가 휘발성 임을 나타냅니다.
 
 `FIELD_MOD_ABSTRACT`\
-필드가 추상적임을 나타냅니다.
+는 필드가 추상 필드 임을 나타냅니다.
 
 `FIELD_MOD_NATIVE`\
-필드가 네이티브임을 나타냅니다.
+필드가 네이티브 임을 나타냅니다.
 
 `FIELD_MOD_SYNCHRONIZED`\
-필드가 동기화되어 있음을 나타냅니다.
+필드가 동기화 됨을 나타냅니다.
 
 `FIELD_MOD_VIRTUAL`\
-필드가 가상임을 나타냅니다.
+는 필드가 가상 필드 임을 나타냅니다.
 
 `FIELD_MOD_INTERFACE`\
-필드가 인터페이스임을 나타냅니다.
+는 필드가 인터페이스 임을 나타냅니다.
 
 `FIELD_MOD_FINAL`\
-필드가 최종임을 나타냅니다.
+필드가 final 임을 나타냅니다.
 
 `FIELD_MOD_SENTINEL`\
-필드가 파수꾼임을 나타냅니다.
+필드가 센티널 임을 나타냅니다.
 
 `FIELD_MOD_INNERCLASS`\
-필드가 내부 클래스임을 나타냅니다.
+필드가 내부 클래스 임을 나타냅니다.
 
 `FIELD_TYPE_OPTIONAL`\
-필드는 선택 사항임을 나타냅니다.
+필드가 선택적 임을 나타냅니다.
 
 `FIELD_MOD_BYREF`\
-필드가 참조 인수임을 나타냅니다. 이것은 특히 메서드 인수를 위한 것입니다.
+필드가 참조 인수 임을 나타냅니다. 이는 메서드 인수 전용입니다.
 
 `FIELD_MOD_HIDDEN`\
-필드를 숨겨야 하거나 다른 컨텍스트에서 표시해야 함을 나타냅니다. 예를 들어, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 정적 지역 주민.
+다른 컨텍스트에서 필드를 숨기 거 나 표시 해야 함을 나타냅니다. 예를 들어 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 정적 지역입니다.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-필드는 인터페이스가 있는 개체를 `IUnknown` 나타냅니다.
+필드가 인터페이스를 사용 하 여 개체를 나타내는지 여부를 나타냅니다 `IUnknown` .
 
 `FIELD_MOD_SPECIAL_NAME`\
-필드에 생성자(만 `.ctor` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 해당)에 대한 특수 이름이 있음을 나타냅니다.
+필드에 `.ctor` 생성자 (전용)와 같은 특수 한 이름이 있음을 나타냅니다 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] .
 
 `FIELD_MOD_HIDEBYSIG`\
-필드에 키워드가 `Overloads` 적용되었음을 나타냅니다(전용).[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]
+필드에 키워드가 적용 됨을 나타냅니다 `Overloads` ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 전용).
 
 `FIELD_MOD_WRITEONLY`\
-필드가 쓰기 전용임을 나타냅니다. 이 값은 `FIELD_MOD_ALL`에 포함되지 않습니다. 사용자는 `FIELD_MOD_WRITEONLY` 필드를 명시적으로 요청해야 합니다.
+필드가 쓰기 전용 임을 나타냅니다. 이러한 `FIELD_MOD_ALL` 쓰기 전용 필드는 함수 evaluation 으로만 사용 되므로이 값은에 포함 되지 않습니다. 사용자가 필드를 명시적으로 요청 해야 합니다 `FIELD_MOD_WRITEONLY` .
 
 `FIELD_MOD_ACCESS_MASK`\
-필드 액세스를 위한 마스크를 나타냅니다.
+필드 액세스에 대 한 마스크를 나타냅니다.
 
 `FIELD_MOD_MASK`\
-필드 수정자에 대한 마스크를 나타냅니다.
+필드 한정자에 대 한 마스크를 나타냅니다.
 
 ## <a name="remarks"></a>설명
-`dwModifiers` [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조의 부재에 사용됩니다.
+`dwModifiers` [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조체의 멤버에 사용 됩니다.
 
-이러한 값은 특정 필드를 필터링하기 위해 [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) 메서드에도 전달됩니다.
+이러한 값은 또한 특정 필드에 대해 필터링 하기 위해 [enumfields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) 메서드에 전달 됩니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: sh.h
+헤더: sh
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

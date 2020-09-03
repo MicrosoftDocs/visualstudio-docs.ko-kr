@@ -1,5 +1,5 @@
 ---
-title: '경고 &#39;: 참조&#39; &#39; &#39;파일을 덮어쓰기 때문에&#39; 프로젝트 프로젝트의 종속성 파일을 실행 디렉터리에 복사할 수 없습니다. &#39; | Microsoft Docs'
+title: '경고: 프로젝트&#39; 프로젝트 &#39;&#39; 종속성 &#39;파일을 실행 디렉터리에 복사할 수 없습니다. 참조 &#39;파일을 덮어쓸 수 있기 때문입니다. &#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672813"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>경고 &#39;: 참조&#39; &#39; &#39;파일을 덮어쓰기 때문에&#39; 프로젝트 프로젝트의 종속성 파일을 실행 디렉터리에 복사할 수 없습니다.&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>경고: 프로젝트&#39; 프로젝트 &#39;&#39; 종속성 &#39;파일을 실행 디렉터리에 복사할 수 없습니다. 참조 &#39;파일을 덮어쓸 수 있기 때문입니다. &#39;
 참조 간에 충돌이 존재합니다. 즉, 실행할 애플리케이션의 bin 디렉터리에 파일 이름이 같은 둘 이상의 고유 어셈블리 파일을 복사하려고 했습니다. 종속성 중 하나가 기본 참조이므로 실행 디렉터리에서 충돌을 해결할 수 없습니다.
 
  이 작업 목록 항목을 두 번 클릭하여 충돌이 발생한 기본 참조 노드로 이동하세요.
@@ -29,9 +29,9 @@ ms.locfileid: "72672813"
 
  이 메시지는 bin 디렉터리에 충돌이 있고 애플리케이션이 제대로 작동하지 않을 때마다 나타납니다. 이 문제를 해결한 후에도 프로젝트 시스템에서 종속성 버전이 모든 구성 요소와 제대로 작동하는지 알 수 없기 때문에 경고가 나타납니다.
 
- **이 오류를 해결 하려면**
+ **이 오류를 해결하려면**
 
 - 어셈블리 파일을 전역 어셈블리 캐시에 두어 하나(또는 0개)의 어셈블리 파일만 bin 디렉터리에 복사합니다. 전역 어셈블리 캐시는 파일 이름 충돌을 해결합니다. 공용 언어 런타임이 전역 어셈블리 캐시에서 어셈블리를 찾는 방법을 알기 때문에 어셈블리 파일의 로컬 복사본이 만들어지지 않습니다. 자세한 내용은 [Working with Assemblies and the Global Assembly Cache](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) 및 [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  프로젝트 [전역 어셈블리 캐시](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) [에서 참조 관리](../ide/managing-references-in-a-project.md) [방법: 프로젝트 종속성 만들기 및 제거](../ide/how-to-create-and-remove-project-dependencies.md)

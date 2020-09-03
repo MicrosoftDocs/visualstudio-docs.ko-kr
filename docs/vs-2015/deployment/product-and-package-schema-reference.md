@@ -27,36 +27,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188963"
 ---
 # <a name="product-and-package-schema-reference"></a>제품 및 패키지 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매니페스트는는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램입니다. 외부 종속성의 예로 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 및 Microsoft Data Access Components (MDAC). 패키지 파일을 제품 파일과 유사 하지만 지역화 된 어셈블리, 사용권 계약 및 설명서 등의 종속성을의 문화권 종속 구성 요소를 설치 하는 데 사용 됩니다.  
+*제품 파일* 은 응용 프로그램에 필요한 모든 외부 종속성을 설명 하는 XML 매니페스트입니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . 외부 종속성의 예로는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 및 Microsoft Data Access Components (MDAC)가 있습니다. 패키지 파일은 제품 파일과 유사 하지만, 지역화 된 어셈블리, 사용권 계약 및 설명서와 같이 종속성의 문화권 종속 구성 요소를 설치 하는 데 사용 됩니다.  
   
- 제품 및 패키지 파일 구성 중 최상위 `Product` 또는 `Package` 요소에는 다음 요소가 포함 된 각 합니다.  
+ 제품 및 패키지 파일은 최상위 `Product` 또는 요소로 구성 되며 `Package` , 각 요소에는 다음 요소가 포함 되어 있습니다.  
   
 |요소|설명|특성|  
 |-------------|-----------------|----------------|  
-|[\<Product> 요소](../deployment/product-element-bootstrapper.md)|제품 파일의 최상위 요소가 필요 합니다.|없음|  
-|[\<Package> 요소](../deployment/package-element-bootstrapper.md)|패키지 파일의 최상위 요소가 필요 합니다.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts> 요소](../deployment/relatedproducts-element-bootstrapper.md)|제품 파일에 대 한 선택적 요소입니다. 다른 제품을이 제품을 설치 또는 변경에 따라 달라 집니다.|없음|  
-|[\<InstallChecks> 요소](../deployment/installchecks-element-bootstrapper.md)|필수적 요소입니다. 목록 종속성을 설치 하는 동안 로컬 컴퓨터에서 수행 하려면 확인 합니다.|없음|  
-|[\<Commands> 요소](../deployment/commands-element-bootstrapper.md)|필수적 요소입니다.  에 설명 된 대로 하나 이상의 설치 검사를 실행 `InstallChecks`, 설치할 패키지를 확인 해야은 실패 합니다.|없음|  
+|[\<Product> 요소](../deployment/product-element-bootstrapper.md)|제품 파일의 최상위 수준 요소입니다.|없음|  
+|[\<Package> 요소](../deployment/package-element-bootstrapper.md)|패키지 파일에 대 한 최상위 수준 요소입니다.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> 요소](../deployment/relatedproducts-element-bootstrapper.md)|제품 파일의 선택적 요소입니다. 이 제품이 설치 되거나 종속 되는 다른 제품은 다음과 동일 합니다.|없음|  
+|[\<InstallChecks> 요소](../deployment/installchecks-element-bootstrapper.md)|필수적 요소입니다. 설치 하는 동안 로컬 컴퓨터에서 수행 하는 종속성 검사를 나열 합니다.|없음|  
+|[\<Commands> 요소](../deployment/commands-element-bootstrapper.md)|필수적 요소입니다.  에 설명 된 대로 하나 이상의 설치 검사 `InstallChecks` 를 실행 하 고, 검사에 실패할 경우 설치할 패키지를 나타냅니다.|없음|  
 |[\<PackageFiles> 요소](../deployment/packagefiles-element-bootstrapper.md)|필수적 요소입니다. 이 설치 프로세스에서 설치할 수 있는 패키지를 나열 합니다.|없음|  
-|[\<Strings> 요소](../deployment/strings-element-bootstrapper.md)|필수적 요소입니다. 저장소 버전의 제품 이름 및 오류 문자열을 지역화 합니다.|없음|  
+|[\<Strings> 요소](../deployment/strings-element-bootstrapper.md)|필수적 요소입니다. 제품 이름 및 오류 문자열의 지역화 된 버전을 저장 합니다.|None|  
   
 ## <a name="remarks"></a>설명  
- 패키지 스키마는 Setup.exe를 자체의 작은 하드 코드 된 논리를 포함 하는 MS Build 부트스트랩 작업에 의해 생성 된 스텁 프로그램에서 사용 됩니다. 스키마는 설치 프로세스의 모든 측면을 구동합니다.  
+ 패키지 스키마는 자체 하드 코딩 된 논리를 포함 하는 MS Build 부트스트래핑 작업에 의해 생성 된 스텁 프로그램인 Setup.exe에서 사용 됩니다. 스키마는 설치 프로세스의 모든 측면을 구동 합니다.  
   
- `InstallChecks` 테스트는 setup.exe 특정된 패키지의 존재 여부에 대해 수행 해야 합니다. `PackageFiles` 설치 프로세스를 설치 해야 할 수를 지정 된 테스트를 실패 하는 패키지의 모든를 나열 합니다. 명령에서 각 명령은 항목에서 설명 하는 테스트 중 하나를 실행 `InstallChecks`를 지정 하 고 `PackageFile` 실행할 테스트 실패 합니다. 사용할 수는 `Strings` 이진 단일 설치를 사용 하 여 다양 한 언어 응용 프로그램을 설치할 수 있도록 제품 이름 및 오류 메시지를 지역화 하는 요소입니다.  
+ `InstallChecks` setup.exe에서 지정 된 패키지의 존재를 위해 수행 해야 하는 테스트입니다. `PackageFiles` 지정 된 테스트가 실패 하는 경우 설치 프로세스에서 설치 해야 할 수 있는 모든 패키지를 나열 합니다. 명령 아래의 각 명령 항목은에서 설명 하는 테스트 중 하나 `InstallChecks` 를 실행 하 고 `PackageFile` 테스트가 실패할 경우 실행할를 지정 합니다. 요소를 사용 하 여 `Strings` 제품 이름 및 오류 메시지를 지역화할 수 있습니다. 그러면 단일 설치 이진을 사용 하 여 원하는 수의 언어로 응용 프로그램을 설치할 수 있습니다.  
   
-## <a name="example"></a>예제  
- 다음 코드 예제에는 설치에 대 한 완전 한 제품 파일을 보여 줍니다는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제에서는를 설치 하기 위한 전체 제품 파일을 보여 줍니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -162,4 +162,4 @@ A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매
   
 ## <a name="see-also"></a>관련 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

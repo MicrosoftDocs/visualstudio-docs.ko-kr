@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 076ce3858774d44e2d6c4c25205ced74b7a41bf0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539765"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.
@@ -46,13 +46,13 @@ ms.locfileid: "85539765"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다. 외부적으로 표시 되는 필드는 속성에 사용할 수 없는 이점을 제공 하지 않습니다. 또한 public 필드는 [링크 요청](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)으로 보호할 수 없습니다. [CA2112: 보안 형식은 필드를 노출 하면](../code-quality/ca2112-secured-types-should-not-expose-fields.md)안 됩니다 .를 참조 하세요.
 
-## <a name="example"></a>예제
- 다음 예제에서는 `BadPublicInstanceFields` 이 규칙을 위반 하는 형식 ()을 보여 줍니다. `GoodPublicInstanceFields`수정 된 코드를 표시 합니다.
+## <a name="example"></a>예
+ 다음 예제에서는 `BadPublicInstanceFields` 이 규칙을 위반 하는 형식 ()을 보여 줍니다. `GoodPublicInstanceFields` 수정 된 코드를 표시 합니다.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 
 ## <a name="related-rules"></a>관련 규칙
  [CA2112: 보안 형식은 필드를 노출하면 안 됩니다.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [링크 요청](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

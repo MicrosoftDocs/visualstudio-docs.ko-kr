@@ -1,5 +1,5 @@
 ---
-title: '방법: 플래그 지정 및 스레드의 | Microsoft Docs'
+title: '방법: 스레드 플래그 지정 및 플래그 해제 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189434"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>방법: 스레드에 플래그 지정 및 해제
+# <a name="how-to-flag-and-unflag-threads"></a>방법: 스레드에 플래그 지정 및 스레드의 플래그 해제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-아이콘 표시 하 여 특별 한 주의가 하려는 스레드에 플래그를 수는 **스레드**를 **병렬 스택**를 **병렬 조사식**, 및 **GPU 스레드** windows. 이 아이콘은 플래그 설정된 스레드를 다른 스레드와 구분하는 데 도움이 됩니다.  
+**스레드**, **병렬 스택**, **병렬 조사식**및 **GPU 스레드** 창에서 아이콘으로 표시 하 여 특별 한 주의가 필요한 스레드에 플래그를 지정할 수 있습니다. 이 아이콘은 플래그 설정된 스레드를 다른 스레드와 구분하는 데 도움이 됩니다.  
   
- 플래그가 지정 된 스레드 권한도에서 별도로 처리 합니다 **스레드** 목록에서 **디버그 위치** 도구 모음입니다. 이 목록에 모든 스레드나 플래그 설정된 스레드만 표시할 수 있습니다. 스레드에 플래그 지정 된 **스레드** 목록 플래그가 지정 된 스레드만 표시 하도록 자동으로 전환 되지만 전환할 수도 있습니다 적절 하 게 모든 스레드 표시를 다시 합니다.  
+ 또한 플래그가 지정 된 스레드는 **디버그 위치** 도구 모음의 **스레드** 목록에서 특수 한 처리를 받습니다. 이 목록에 모든 스레드나 플래그 설정된 스레드만 표시할 수 있습니다. 스레드에 플래그를 지정할 때 **스레드** 목록은 플래그가 지정 된 스레드만 표시 하도록 자동으로 전환 되지만 모든 스레드를 적절히 표시 하도록 다시 전환할 수 있습니다.  
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>스레드 창을 사용하여 스레드에 플래그를 설정하거나 해제하려면  
   
-- 에 **스레드** 창에서 원하는 스레드를 찾아 선택 하 고 플래그를 지우려면 플래그 아이콘을 클릭 합니다.  
+- **스레드** 창에서 관심 있는 스레드를 찾고 플래그 아이콘을 클릭 하 여 플래그를 선택 하거나 선택 취소 합니다.  
   
 ### <a name="to-unflag-all-threads"></a>모든 스레드의 플래그를 해제하려면  
   
@@ -60,6 +60,6 @@ ms.locfileid: "68189434"
   
 5. **확인**을 클릭합니다.  
   
-## <a name="see-also"></a>관련 항목  
- [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+## <a name="see-also"></a>참고 항목  
+ [다중 스레드 응용 프로그램 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [연습: 다중 스레드 애플리케이션 디버그](../debugger/walkthrough-debugging-a-multithreaded-application.md)

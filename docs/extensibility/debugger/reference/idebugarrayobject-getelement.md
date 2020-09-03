@@ -1,5 +1,5 @@
 ---
-title: 아이데버그어레이오브젝트::겟엘리먼트 | 마이크로 소프트 문서
+title: 'IDebugArrayObject:: GetElement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736175"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
@@ -43,16 +43,16 @@ int GetElement(
 
 ## <a name="parameters"></a>매개 변수
 `dwIndex`\
-【인】 요소 인덱스입니다.
+진행 요소 인덱스입니다.
 
 `ppElement`\
-【아웃】 요소를 나타내는 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 인터페이스를 반환합니다.
+제한이 요소를 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- 이 메서드는 배열 개체가 다차원인 경우에도 배열 개체의 모든 요소를 1차원 배열로 봅니다. 예를 들어 배열과 `myarray[3][2][6]` 매개 `dwIndex` 변수가 20인 경우 이 `myarray[1][1][2]`메서드는 `dwIndex` 에서 요소를 반환하고 21의 매개 변수는 에서 `myarray[1][1][3]`요소를 반환합니다. [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 메서드를 사용하여 배열의 총 요소 수를 확인합니다.
+ 이 메서드는 배열 개체가 다차원 인 경우에도 배열 개체의 모든 요소를 1 차원 배열로 표시 합니다. 예를 들어, 배열 `myarray[3][2][6]` 및 `dwIndex` 매개 변수가 20 인 경우이 메서드는에서 요소를 반환 `myarray[1][1][2]` 하 고 `dwIndex` 21의 매개 변수는에서 요소를 반환 `myarray[1][1][3]` 합니다. [Getcount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 메서드를 사용 하 여 배열에 있는 요소의 총 수를 확인 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

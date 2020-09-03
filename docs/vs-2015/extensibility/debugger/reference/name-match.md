@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 742328802af7097fa0c48c82b35688ed0784ce34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205172"
 ---
-# <a name="namematch"></a>NAME_MATCH
+# <a name="name_match"></a>NAME_MATCH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이름과 일치 하는 경우 옵션을 선택 합니다.  
+일치 하는 이름에 대 한 대/소문자 옵션을 선택 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,13 +47,13 @@ public enum NameMatchOptions { 
  지정된 옵션이 없습니다.  
   
  nmCaseSensitive  
- 일치 시킬 이름 대/소문자 구분 됨을 나타냅니다.  
+ 일치 시킬 이름이 대/소문자를 구분 함을 나타냅니다.  
   
  nmCaseInsensitive  
- 이름 일치는 대/소문자 구분을 나타냅니다.  
+ 일치 시킬 이름이 대/소문자를 구분 하지 않음을 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 다음 메서드에 인수로 전달 합니다.  
+ 다음 메서드에 인수로 전달 됩니다.  
   
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   
@@ -64,9 +64,9 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: sh.h  
+ 헤더: sh  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

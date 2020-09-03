@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 351a2f53d8ad8c5f29821d905c292cd988390869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658835"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>방법: DataContext 메서드의 반환 형식 변경(O/R 디자이너)
@@ -30,7 +30,7 @@ ms.locfileid: "72658835"
 
 1. 메서드 창에서 <xref:System.Data.Linq.DataContext> 메서드를 선택합니다.
 
-2. **속성** 창에서 **반환 형식**을 선택한 다음, **반환 형식** 목록에서 사용 가능한 엔터티 클래스를 선택합니다. 원하는 엔터티 클래스가 목록에 없으면 목록에 추가 하거나 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]에 추가 하 여 목록에 추가 합니다.
+2. **속성** 창에서 **반환 형식**을 선택한 다음, **반환 형식** 목록에서 사용 가능한 엔터티 클래스를 선택합니다. 원하는 엔터티 클래스가 목록에 없으면 목록에 추가 하려면에 추가 하거나에서 만듭니다 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] .
 
 3. .dbml 파일을 저장합니다.
 
@@ -38,9 +38,9 @@ ms.locfileid: "72658835"
 
 1. 메서드 창에서 <xref:System.Data.Linq.DataContext> 메서드를 선택한 다음 삭제합니다.
 
-2. **서버 탐색기** /**데이터베이스 탐색기** 의 데이터베이스 개체를 O/R 디자이너의 빈 영역으로 끌어 옵니다.
+2. **서버 탐색기**데이터베이스 탐색기의 데이터베이스 개체를 / **Database Explorer** O/R 디자이너의 빈 영역으로 끌어 옵니다.
 
 3. .dbml 파일을 저장합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Datacontext 메서드 (o/r 디자이너)](../data-tools/datacontext-methods-o-r-designer.md) [방법: 저장 프로시저 및 함수에 매핑된 DataContext 메서드 만들기 (o/r 디자이너)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

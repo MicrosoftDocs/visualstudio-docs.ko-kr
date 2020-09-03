@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a2d6215887512f2e0c1410688b2bc924dc1fe3a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387059"
 ---
 # <a name="using-dump-files"></a>덤프 파일 사용
@@ -42,7 +42,7 @@ ms.locfileid: "86387059"
   
  [힙을 포함 하거나 포함 하지 않는 덤프 파일](#BKMK_Dump_files__with_or_without_heaps)  
   
- [요구 사항 및 제한 사항](#BKMK_Requirements_and_limitations)  
+ [요구 사항 및 제한 사항:](#BKMK_Requirements_and_limitations)  
   
  [덤프 파일 만들기](#BKMK_Create_a_dump_file)  
   
@@ -50,14 +50,14 @@ ms.locfileid: "86387059"
   
  [이진 파일, 기호(.pdb) 파일 및 소스 파일 찾기](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a>덤프 파일 이란?  
+## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a> 덤프 파일 이란?  
  *덤프 파일* 은 덤프가 생성 된 시점의 앱 스냅숏입니다. 이 파일에서는 실행 중이던 프로세스와 로드된 모듈을 보여 줍니다. 덤프를 힙 정보와 함께 저장하는 경우 덤프 파일에는 해당 시점에 응용 프로그램 메모리에 있던 것의 스냅샷이 포함됩니다. Visual Studio에서 힙을 포함하는 덤프 파일을 여는 것은 디버그 세션의 중단점에서 중지하는 것과 같습니다. 실행을 계속할 수 없지만 덤프가 발생한 시간에 응용 프로그램의 스택, 스레드 및 변수 값을 검사할 수 있습니다.  
   
  덤프는 개발자가 액세스할 수 없는 컴퓨터에서 발생하는 문제를 디버깅하는 데 주로 사용됩니다. 예를 들어 컴퓨터에서 고객의 크래시 또는 응답 하지 않는 프로그램을 재현할 수 없는 경우 고객의 컴퓨터에서 덤프 파일을 사용할 수 있습니다. 테스터는 테스트 컴퓨터를 사용 하 여 더 많은 테스트를 수행할 수 있도록 크래시 또는 응답 하지 않는 프로그램 데이터를 저장 하기 위해 테스터에 의해 만들어집니다. Visual Studio 디버거는 관리 코드 또는 네이티브 코드에 대한 덤프 파일을 저장할 수 있습니다. 디버거는 Visual Studio 또는 파일을 *미니 덤프* 형식으로 저장 하는 다른 프로그램에 의해 생성 된 덤프 파일을 로드할 수 있습니다.  
   
  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a>힙을 포함 하거나 포함 하지 않는 덤프 파일  
+## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a> 힙을 포함 하거나 포함 하지 않는 덤프 파일  
  힙 정보를 포함하거나 포함하지 않고 덤프 파일을 만들 수 있습니다.  
   
 - **힙을 사용 하는 덤프 파일** 에는 앱 메모리의 스냅숏이 포함 됩니다. 여기에는 덤프가 만들어진 시점의 변수 값이 포함됩니다. 힙과 함께 저장된 덤프 파일을 로드하는 경우에는 애플리케이션 이진 파일을 찾을 수 없더라도 Visual Studio에서 기호를 로드할 수 있습니다. 또한 Visual Studio에서는 로드된 네이티브 모듈의 이진 파일을 덤프 파일에 저장하므로 디버깅을 훨씬 쉽게 수행할 수 있습니다.  
@@ -107,7 +107,7 @@ ms.locfileid: "86387059"
   
 4. 디버깅을 시작 하려면 **작업** 섹션으로 이동 하 고 **네이티브 전용 디버그** 또는 **혼합으로 디버그**를 선택 합니다.  
   
-## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>이진 파일, 기호 (.pdb) 파일 및 소스 파일 찾기  
+## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 이진 파일, 기호 (.pdb) 파일 및 소스 파일 찾기  
  덤프 파일을 디버깅하기 위해 Visual Studio의 전체 기능을 사용하려면 다음에 액세스해야 합니다.  
   
 - 덤프가 만들어진 .exe 파일과 덤프 프로세스에서 사용된 다른 이진 파일(DLL 등)  
@@ -138,7 +138,7 @@ ms.locfileid: "86387059"
   
    ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [기호 (.pdb) 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)

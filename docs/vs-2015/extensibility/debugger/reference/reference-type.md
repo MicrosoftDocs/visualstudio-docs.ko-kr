@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 509c0bc4547ca057c39a6c07ba8ccbe63743b914
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204902"
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
+# <a name="reference_type"></a>REFERENCE_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-참조 형식을 지정합니다.  
+참조 형식을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,20 +43,20 @@ public enum enum_REFERENCE_TYPE { 
   
 ## <a name="members"></a>멤버  
  REF_TYPE_WEAK  
- 약한 참조를 지정합니다. 함께 사용할 수 없습니다 `REF_TYPE_STRONG`합니다.  
+ 약한 참조를 지정 합니다. 는와 함께 사용할 수 없습니다 `REF_TYPE_STRONG` .  
   
  REF_TYPE_STRONG  
- 강력한 참조를 지정합니다. 함께 사용할 수 없습니다 `REF_TYPE_WEAK`합니다.  
+ 강한 참조를 지정 합니다. 는와 함께 사용할 수 없습니다 `REF_TYPE_WEAK` .  
   
 ## <a name="remarks"></a>설명  
- 로 사용 합니다 `dwRefType` 의 멤버는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조입니다.  
+ `dwRefType` [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체의 멤버로 사용 됩니다.  
   
- 매개 변수로 전달 된 [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) 메서드.  
+ [Setreferencetype](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) 메서드에 매개 변수로 전달 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

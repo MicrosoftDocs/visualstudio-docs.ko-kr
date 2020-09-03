@@ -14,18 +14,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2ad067adf79a2a7d08c6a45e7c205480621abf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658962"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Windows Workflow Foundation용 레거시 디자이너 UI 도움말
 이 단원에서는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에 포함된 레거시 [!INCLUDE[vs2010](../includes/vs2010-md.md)]의 상황에 맞는 도움말 항목을 제공합니다. 레거시 디자이너는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.
 
- 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 대화 상자가 열릴 때 **F1** 키를 눌러 [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] 사용자 인터페이스에서 이러한 항목에 액세스할 수 있습니다.
+ [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]레거시 대화 상자가 열려 있을 때 **F1** 키를 눌러 사용자 인터페이스에서 이러한 항목에 액세스할 수 있습니다 [!INCLUDE[wfd2](../includes/wfd2-md.md)] .
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [활동 속성에 바인딩 대화 상자(레거시)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)
 
  [규칙 집합 선택 대화 상자(레거시)](../workflow-designer/select-rule-set-dialog-box-legacy.md)

@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH | 마이크로 소프트 문서
+title: CODE_PATH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737672"
 ---
 # <a name="code_path"></a>CODE_PATH
-메서드 또는 함수 호출에 대해 설명합니다.
+메서드 또는 함수 호출을 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,19 +46,19 @@ public struct CODE_PATH {
 코드 경로의 이름입니다.
 
 `pCode`\
-함수에 들어갈 코드의 위치를 식별하는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체입니다.
+코드에서 함수를 한 단계씩 실행 하는 위치를 식별 하는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체입니다.
 
 ## <a name="remarks"></a>설명
-이 구조는 함수에 스테핑을 구현하는 데 사용됩니다. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) 디버깅 되는 프로그램의 현재 위치에서 모든 호출을 반환 합니다. 이 구조는 이러한 호출 을 나타냅니다.
+이 구조체는 함수를 한 단계씩 실행 하는 데 사용 됩니다. [Enumcodepaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) 는 디버깅 중인 프로그램의 현재 위치에서 모든 호출을 반환 합니다. 이 구조체는 이러한 호출 하나를 나타냅니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: msdbg.h
+헤더: msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

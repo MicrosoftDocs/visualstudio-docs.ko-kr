@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2630402e03d1256f63e542818a9066745206d2c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672753"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
@@ -40,11 +40,11 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="switches"></a>스위치
  /ANSI&#124;유니코드 옵션입니다. 메모리에 해당하는 문자(ANSI 또는 유니코드)로 메모리를 표시합니다.
 
- /Ccount: `number` 선택 사항입니다. `expression`에서 시작하여 표시할 메모리의 바이트 수를 결정합니다.
+ /Count: `number` 선택 사항입니다. `expression`에서 시작하여 표시할 메모리의 바이트 수를 결정합니다.
 
  /Format: `formattype` 선택 사항입니다. **메모리** 창에서 메모리 정보를 볼 형식(OneByte, TwoBytes, FourBytes, EightBytes, Float(32비트) 또는 Double(64비트))을 지정합니다. OneByte를 사용하는 경우 `/Unicode`를 사용할 수 없습니다.
 
- /Hex&#124;서명&#124;된 부호 없는 옵션입니다. 서명됨, 서명하지 않음 또는 16진수로 숫자를 볼 형식을 지정합니다.
+ /Hex&#124;Signed&#124;Unsigned 옵션입니다. 서명됨, 서명하지 않음 또는 16진수로 숫자를 볼 형식을 지정합니다.
 
 ## <a name="remarks"></a>설명
  모든 스위치를 포함한 전체 **Debug.ListMemory** 명령을 작성하는 대신 특정 스위치를 지정된 값으로 미리 설정한 미리 정의된 별칭을 사용하여 명령을 호출할 수 있습니다. 예를 들어, 다음을 입력하는 대신
@@ -72,7 +72,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |**dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 >Debug.ListMemory /Format:float /Count:30 /Unicode

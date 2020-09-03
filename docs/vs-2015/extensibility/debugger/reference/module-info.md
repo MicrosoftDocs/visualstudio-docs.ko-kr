@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 04a8756fd7eb2a4b938ebcd2d5f4754509b704e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205210"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
+# <a name="module_info"></a>MODULE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-특정 모듈을 (DLL, EXE 또는 어셈블리)에 대해 설명합니다.  
+특정 모듈 (DLL, EXE 또는 어셈블리)을 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -61,8 +61,8 @@ public struct MODULE_INFO { 
 ```  
   
 ## <a name="members"></a>멤버  
- dwValidFields  
- 플래그의 조합 된 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 채워진 필드를 지정 하는 열거형입니다.  
+ Dw유효한 필드  
+ 입력 하는 필드를 지정 하는 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 열거형의 플래그 조합입니다.  
   
  m_bstrName  
  모듈 이름입니다.  
@@ -74,13 +74,13 @@ public struct MODULE_INFO { 
  모듈 버전입니다.  
   
  m_bstrDebugMessage  
- 선택적 메시지는 모듈에 대 한 예를 들어, "기호 로드할 수 없습니다."  
+ 모듈에 대 한 선택적 메시지 (예: "기호를 로드할 수 없습니다.")  
   
  m_addrLoadAddress  
  모듈 로드 주소입니다.  
   
  m_addrPreferredLoadAddress  
- 모듈의 기본 설정된 기준 주소입니다.  
+ 모듈의 기본 로드 주소입니다.  
   
  m_dwSize  
  모듈 크기입니다.  
@@ -92,24 +92,24 @@ public struct MODULE_INFO { 
  기호 파일을 마지막으로 수정한 시간입니다.  
   
  m_bstrUrlSymbolLocation  
- 기호 파일의 위치 (예를 들어, ".\\") 모듈에 지정 합니다. 모듈에 대 한 기호를 찾으려면 시작 위치로 사용 합니다.  
+ 모듈에 지정 된 기호 파일의 위치 (예: ". \\ ")입니다. 모듈에 대 한 기호를 찾기 위한 시작 위치로 사용 됩니다.  
   
  m_dwModuleFlags  
- 플래그의 조합 된 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) 모듈을 설명 하는 열거형입니다.  
+ 모듈을 설명 하는 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) 열거형의 플래그 조합입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 메서드 위치에서 채워집니다.  
+ 이 구조는 입력 된 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 메서드에 전달 됩니다.  
   
- 이 구조에 나열 된 각 모듈에 해당 합니다 **모듈** 창입니다.  
+ 이 구조는 **모듈** 창에 나열 된 각 모듈에 해당 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672694"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -47,8 +47,8 @@ devenv {/LCID|/l} LocaleID
 
 |언어|LCID|
 |--------------|----------|
-|및|2052|
-|옵션 대신,|1028|
+|중국어(간체)|2052|
+|중국어(번체)|1028|
 |영어|1033|
 |프랑스어|1036|
 |독일어|1031|
@@ -64,5 +64,5 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md) [국가별 설정, 환경, 옵션 대화 상자](../../ide/reference/international-settings-environment-options-dialog-box.md) [창 레이아웃 사용자 지정](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189360"
 ---
 # <a name="call-tree-view---contention-data"></a>호출 트리 뷰 - 경합 데이터
@@ -35,7 +35,7 @@ ms.locfileid: "68189360"
   
  루트 노드를 설정하면 선택한 노드의 하위 트리를 제외한 다른 모든 항목이 뷰에서 제거됩니다. 루트 노드를 원래 노드로 다시 설정하려면 호출 트리 뷰를 마우스 오른쪽 단추로 클릭하고 **루트 다시 설정**을 클릭합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**차단된 전용 시간**|프로파일링 실행 시 이 실행 경로에서 이 함수 인스턴스의 실행이 차단된 시간입니다. 이 시간에 함수가 호출한 자식 함수에서 차단된 시간은 포함되지 않습니다.|  
 |**차단된 전용 시간 비율(%)**|프로파일링 실행의 모든 차단된 시간 중 이 실행 경로에서 이러한 함수에 대해 차단된 전용 시간의 백분율입니다.|  
@@ -55,10 +55,10 @@ ms.locfileid: "68189360"
 |**프로세스 이름**|프로세스의 이름입니다.|  
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [호출 트리 뷰](../profiling/call-tree-view.md)   
- [호출 트리 뷰 - 계측](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [호출 트리 뷰 - 샘플링](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [호출 트리 뷰-계측](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [호출 트리 뷰-샘플링](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [호출 트리 뷰](../profiling/call-tree-view-instrumentation-data.md)   
  [호출 트리 뷰](../profiling/call-tree-view-sampling-data.md)

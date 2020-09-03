@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6a4a4e2e6990772b50568043c4d18ff29248571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547890"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: 이벤트 처리기를 제대로 선언하십시오.
@@ -46,8 +46,8 @@ ms.locfileid: "85547890"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example"></a>예제
- 다음 예제에서는 이벤트를 처리 하는 데 적합 한 대리자를 보여 줍니다. 이 이벤트 처리기에 의해 호출 될 수 있는 메서드는 디자인 지침에 지정 된 서명을 준수 합니다. `AlarmEventHandler`대리자의 형식 이름입니다. `AlarmEventArgs`이벤트 데이터, 및에 대 한 기본 클래스에서 파생 <xref:System.EventArgs> 되며 경보 이벤트 데이터를 보유 합니다.
+## <a name="example"></a>예
+ 다음 예제에서는 이벤트를 처리 하는 데 적합 한 대리자를 보여 줍니다. 이 이벤트 처리기에 의해 호출 될 수 있는 메서드는 디자인 지침에 지정 된 서명을 준수 합니다. `AlarmEventHandler` 대리자의 형식 이름입니다. `AlarmEventArgs` 이벤트 데이터, 및에 대 한 기본 클래스에서 파생 <xref:System.EventArgs> 되며 경보 이벤트 데이터를 보유 합니다.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]
@@ -56,6 +56,6 @@ ms.locfileid: "85547890"
 ## <a name="related-rules"></a>관련 규칙
  [CA2109: 표시되는 이벤트 처리기를 검토하세요.](../code-quality/ca2109-review-visible-event-handlers.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
  [NIB: 이벤트 및 대리자](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS | 마이크로 소프트 문서
+title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe778ba3ed80930a4cd7b4fa1170f286b3ccf6ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737514"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
@@ -50,23 +50,23 @@ public struct DEBUG_ADDRESS {
 프로세스 ID입니다.
 
 `guidModule`\
-이 주소를 포함하는 모듈의 GUID입니다.
+이 주소를 포함 하는 모듈의 GUID입니다.
 
 `tokClass`\
-이 주소의 클래스 또는 유형을 식별하는 토큰입니다.
+이 주소의 클래스 또는 형식을 식별 하는 토큰입니다.
 
 > [!NOTE]
-> 이 값은 기호 공급자에 만국되므로 클래스 형식의 식별자 이외에는 일반적인 의미가 없습니다.
+> 이 값은 기호 공급자에만 해당 되므로 클래스 형식에 대 한 식별자가 아닌 일반적인 의미는 없습니다.
 
 `addr`\
-개별 주소 형식을 설명하는 구조의 결합을 포함하는 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 구조입니다. 값 `addr`.`dwKind` ADDRESS_KIND [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거체에서 유래하여 노조를 해석하는 방법을 설명합니다.
+개별 주소 유형을 설명 하는 구조체의 합집합을 포함 하는 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 구조체입니다. 값 `addr` 입니다.`dwKind` 는 union을 해석 하는 방법을 설명 하는 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형에서 제공 됩니다.
 
 ## <a name="remarks"></a>설명
-이 구조는 채울 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드에 전달됩니다.
+이 구조체는 채워질 [Getaddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드에 전달 됩니다.
 
-**경고 [C++ 전용]**
+**경고 [c + + 전용]**
 
-있는 `addr.dwKind` `ADDRESS_KIND_METADATA_LOCAL` 경우 `addr.addr.addrLocal.pLocal` null 값이 아닌 경우 토큰 `Release` 포인터를 호출해야 합니다.
+`addr.dwKind`가이 `ADDRESS_KIND_METADATA_LOCAL` 고 `addr.addr.addrLocal.pLocal` 가 null 값이 아니면 토큰 포인터에서를 호출 해야 합니다 `Release` .
 
 ```
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -76,11 +76,11 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 ```
 
 ## <a name="requirements"></a>요구 사항
-헤더: sh.h
+헤더: sh
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참조
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)

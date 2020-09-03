@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d70016229ad9599c7ededbefaf08744f2bb6f351
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548085"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>솔루션 전체의 종속성 매핑
@@ -91,7 +91,7 @@ ms.locfileid: "85548085"
 
 4. [특정 종속성을 확인](#SeeSpecificSource) 하여 코드 맵을 통해 솔루션 내의 특정 종속성을 보는 방법을 알아보세요.
 
-### <a name="to-add-a-new-empty-code-map-to-your-solution"></a><a name="CreateEmptyMap"></a>솔루션에 빈 코드 맵을 새로 추가 하려면
+### <a name="to-add-a-new-empty-code-map-to-your-solution"></a><a name="CreateEmptyMap"></a> 솔루션에 빈 코드 맵을 새로 추가 하려면
 
 1. **솔루션 탐색기**에서 최상위 솔루션 노드의 바로 가기 메뉴를 엽니다. **추가** , **새 항목**을 차례로 선택합니다.
 
@@ -185,11 +185,11 @@ ms.locfileid: "85548085"
 
 - [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 
 - [분석기를 실행](../modeling/find-potential-problems-using-code-map-analyzers.md)하여 코드에서 발생할 수 있는 문제를 찾습니다.
 
-### <a name="see-dependencies-across-assemblies-or-binaries"></a><a name="OverviewCompiled"></a>어셈블리 또는 이진 파일 간의 종속성 확인
+### <a name="see-dependencies-across-assemblies-or-binaries"></a><a name="OverviewCompiled"></a> 어셈블리 또는 이진 파일 간의 종속성 확인
 
 1. [빈 코드 맵을 만들거나](#GetStarted)기존 코드 맵(.dgml 파일)을 엽니다.
 
@@ -198,7 +198,7 @@ ms.locfileid: "85548085"
 > [!NOTE]
 > Windows 탐색기 또는 파일 탐색기와 Visual Studio를 동일한 UAC(사용자 액세스 제어) 권한 수준에서 실행하는 경우에만 Windows 탐색기 또는 파일 탐색기에서 어셈블리 또는 이진 파일을 끌 수 있습니다. 예를 들어 UAC가 켜져 있고 Visual Studio를 관리자 권한으로 실행하는 경우 Windows 탐색기 또는 파일 탐색기에서 끌기 작업이 차단됩니다. 이 문제를 해결하려면 둘 다 같은 관리자 권한으로 실행하거나 UAC를 해제합니다.
 
-## <a name="see-specific-dependencies"></a><a name="SeeSpecificSource"></a>특정 종속성 보기
+## <a name="see-specific-dependencies"></a><a name="SeeSpecificSource"></a> 특정 종속성 보기
  예를 들어 보류 중인 변경 내용이 있는 일부 파일에서 코드 검토를 수행하려는 경우 변경 내용의 종속성을 확인하려면 해당 파일에서 코드 맵을 만듭니다.
 
  ![코드 맵에 특성 종속성 표시](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")
@@ -283,7 +283,7 @@ ms.locfileid: "85548085"
 
      ![필터 창을 사용하여 디스플레이 단순화](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")
 
-## <a name="see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a>C 및 c + + 소스 파일과 헤더 파일 간의 종속성을 참조 하세요.
+## <a name="see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a> C 및 c + + 소스 파일과 헤더 파일 간의 종속성을 참조 하세요.
  C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)를 참조하세요. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다. 이 메시지를 숨기는 경우 다시 표시되도록 설정할 수 있습니다. 이렇게 하려면 다음 레지스트리 키를 `0` 으로 설정하거나 해당 키를 삭제합니다.
 
  **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
@@ -316,9 +316,9 @@ ms.locfileid: "85548085"
 ||프로그램 데이터베이스 파일(.pdb)이 빌드되지 않았을 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|링커에서 **/DEBUG** 옵션을 설정합니다.<br /><br /> [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)를 참조하세요.|
 ||.pdb 파일을 열 수 없거나 예상되는 위치에서 찾을 수 없습니다.|.pdb 파일이 예상되는 위치에 있는지 확인합니다.|
 ||디버그 정보가 .pdb 파일에서 제거되었습니다.|**/PDBSTRIPPED** 옵션이 링커에서 사용된 경우 전체 .pdb 파일을 대신 포함합니다.<br /><br /> [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)를 참조하세요.|
-||호출자가 함수가 아니며 이진 파일의 썽크이거나 데이터 섹션의 포인터입니다.|호출자가 썽크이면 썽크를 방지하기 위해 `_declspec(dllimport)` 를 사용해 봅니다.<br /><br /> 참조<br /><br /> -   [일반 규칙 및 제한 사항](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec를 사용 하 여 함수 호출 가져오기 (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||호출자가 함수가 아니며 이진 파일의 썽크이거나 데이터 섹션의 포인터입니다.|호출자가 썽크이면 썽크를 방지하기 위해 `_declspec(dllimport)` 를 사용해 봅니다.<br /><br /> 다음을 참조하세요.<br /><br /> -   [일반 규칙 및 제한 사항](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec를 사용 하 여 함수 호출 가져오기 (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
-## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a>코드 맵을 더 빠르게 렌더링
+## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a> 코드 맵을 더 빠르게 렌더링
  맵을 처음으로 생성하는 경우 Visual Studio는 검색된 모든 종속성을 인덱싱합니다. 특히 대형 솔루션의 경우 이 프로세스에 다소 시간이 걸릴 수도 있지만 이후에는 성능이 개선됩니다. 코드가 변경되면 Visual Studio는 업데이트된 코드만 다시 인덱싱합니다. 맵 렌더링을 완료하는 데 걸리는 시간을 최소화하려면 다음을 고려합니다.
 
 - [원하는 종속성만 매핑합니다.](#SeeSpecificSource)
@@ -339,7 +339,7 @@ ms.locfileid: "85548085"
 
   올바르게 빌드된 코드에 대해서만 완료된 맵에 종속성이 표시됩니다. 특성 구성 요소에 대해 빌드 오류가 발생하면 해당 오류가 맵에 나타납니다. 이 맵을 기반으로 아키텍처 관련 사항을 결정하기 전에 구성 요소가 실제로 빌드되는지와 해당 구성 요소에 종속성이 있는지를 확인해야 합니다.
 
-## <a name="share-code-maps"></a><a name="SavingExporting"></a>코드 맵 공유
+## <a name="share-code-maps"></a><a name="SavingExporting"></a> 코드 맵 공유
 
 ### <a name="share-the-map-with-other-visual-studio-users"></a>다른 Visual Studio 사용자와 맵 공유
  **파일** 메뉴를 사용하여 맵을 저장합니다.
@@ -385,4 +385,4 @@ ms.locfileid: "85548085"
 
 - [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

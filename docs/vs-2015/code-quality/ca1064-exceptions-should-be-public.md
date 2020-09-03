@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fc78c4eaacc3ef0a480b913d20537aeebe5bfc01
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539271"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: 예외는 public이어야 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "85539271"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  모든 경우에 전용 예외가 자체 내부 범위 내에서 catch 될 것으로 확신 하는 경우에는이 규칙에서 메시지를 표시 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 규칙은 예외 클래스가 예외에서 직접 파생 되 고 내부 이기 때문에 첫 번째 예제 메서드인 FirstCustomException에서 발생 합니다. 클래스는 예외에서 직접 파생 되 고 클래스가 public으로 선언 되기 때문에 SecondCustomException 클래스에서 규칙이 발생 하지 않습니다. 또한 세 번째 클래스는, 또는에서 직접 파생 되지 않으므로 규칙을 실행 하지 <xref:System.Exception?displayProperty=fullName> 않습니다 <xref:System.SystemException?displayProperty=fullName> <xref:System.ApplicationException?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.design.exceptionsshouldbepublic.ca1064/cs/ca1064 - exceptionsshouldbepublic.cs#1)]

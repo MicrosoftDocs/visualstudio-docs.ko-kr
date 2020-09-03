@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e48bf723b8b1cb77cc1f7f4de9cfb562caccde84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672803"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>UML 모델링 확장성을 위한 API 참조
@@ -27,10 +27,10 @@ ms.locfileid: "72672803"
 
 ## <a name="assemblies"></a>어셈블리
 
-|Assembly|수행할 수 있는 기능|
+|어셈블리|수행할 수 있는 기능|
 |--------------|--------------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces.dll|-IUseCase, IAssociation 등의 모델 요소를 읽고 변경 합니다.<br />-요소 간의 관계를 탐색 합니다.<br /><br /> 네임스페이스 및 형식은 UML 사양에 정의된 것과 일치합니다.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll|-모델 요소의 새 인스턴스를 만듭니다.<br />-모양과 다이어그램에 액세스 하 고 수정 합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio 용 모델링 SDK에 대](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md) 한 [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) API 참조
