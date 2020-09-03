@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 256fc281b27c483f1dda0317f7d2695fa36c47f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535059"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: AttributeUsageAttribute로 특성을 표시하세요.
@@ -46,8 +46,8 @@ ms.locfileid: "85535059"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  메시지를 제외 하는 대신이 규칙 위반 문제를 해결 해야 합니다. 특성이 상속 된 경우에도 <xref:System.AttributeUsageAttribute> 특성은 코드 유지 관리를 간소화 하기 위해 제공 되어야 합니다.
 
-## <a name="example"></a>예제
- 다음 예제에서는 두 개의 특성을 정의 합니다. `BadCodeMaintainerAttribute`문을 잘못 생략 하 <xref:System.AttributeUsageAttribute> 고 `GoodCodeMaintainerAttribute` 이 섹션의 앞부분에서 설명한 특성을 올바르게 구현 합니다. 속성은 `DeveloperName` [특성 인수에 대 한 디자인 규칙 CA1019: Define 접근자](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) 에 필요 하며 완전성을 위해 포함 되었습니다.
+## <a name="example"></a>예
+ 다음 예제에서는 두 개의 특성을 정의 합니다. `BadCodeMaintainerAttribute` 문을 잘못 생략 하 <xref:System.AttributeUsageAttribute> 고 `GoodCodeMaintainerAttribute` 이 섹션의 앞부분에서 설명한 특성을 올바르게 구현 합니다. 속성은 `DeveloperName` [특성 인수에 대 한 디자인 규칙 CA1019: Define 접근자](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) 에 필요 하며 완전성을 위해 포함 되었습니다.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]
@@ -57,5 +57,5 @@ ms.locfileid: "85535059"
 
  [CA1813: 봉인되지 않은 특성을 사용하지 마세요.](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [특성](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542677"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>방법: 도메인별 언어의 네임 스페이스 변경
@@ -32,7 +32,7 @@ ms.locfileid: "85542677"
 
    프로젝트의 속성이 표시 됩니다.
 
-5. **응용 프로그램** 탭을 선택 합니다.
+5. **애플리케이션** 탭을 선택합니다.
 
 6. **기본 네임 스페이스** 속성을 새 네임 스페이스 이름으로 변경 합니다.
 
@@ -52,6 +52,6 @@ ms.locfileid: "85542677"
 
 11. **빌드** 메뉴에서 **솔루션 다시 빌드**를 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

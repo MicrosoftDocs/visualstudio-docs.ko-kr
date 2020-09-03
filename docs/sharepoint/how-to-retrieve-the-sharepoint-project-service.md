@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f49883337c5748c0f8bcab5d0a88e02612e51b4c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015552"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>방법: SharePoint 프로젝트 서비스 검색
@@ -98,7 +99,7 @@ ms.locfileid: "86015552"
 
   개체에 대 한 액세스 권한이 있는 Visual Studio 확장에서 개체 <xref:EnvDTE80.DTE2> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 의 메서드를 사용 하 여 개체를 요청할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> <xref:Microsoft.VisualStudio.Shell.ServiceProvider> . 자세한 내용은 [DTE 개체에서 서비스 가져오기](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)
 - [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)
 - [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)

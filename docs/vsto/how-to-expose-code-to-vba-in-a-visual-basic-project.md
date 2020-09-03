@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544848"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>방법: Visual Basic 프로젝트에서 VBA로 코드 노출
@@ -36,7 +36,7 @@ ms.locfileid: "85544848"
 
 - [호스트 항목 클래스에 없는 코드 노출](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>호스트 항목 클래스의 코드 노출
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> 호스트 항목 클래스의 코드 노출
  VBA 코드에서 호스트 항목 클래스의 Visual Basic 코드를 호출 하도록 하려면 호스트 항목의 **EnableVbaCallers** 속성을 **True**로 설정 합니다.
 
  호스트 항목 클래스의 메서드를 노출 한 다음 VBA에서 호출 하는 방법을 보여 주는 연습은 [연습: Visual Basic 프로젝트에서 VBA의 코드 호출](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)을 참조 하세요. 호스트 항목에 대 한 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
@@ -71,7 +71,7 @@ ms.locfileid: "85544848"
 
 6. 프로젝트를 빌드합니다.
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>호스트 항목 클래스에 없는 코드 노출
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> 호스트 항목 클래스에 없는 코드 노출
  VBA 코드에서 호스트 항목 클래스에 없는 Visual Basic 코드를 호출 하도록 하려면 VBA에 표시 되도록 코드를 수정 합니다.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>호스트 항목 클래스에 없는 코드를 VBA에 노출 하려면
@@ -115,7 +115,7 @@ ms.locfileid: "85544848"
 
 9. 프로젝트를 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)

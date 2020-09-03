@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545238"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: 연산은 오버플로되지 않아야 합니다.
@@ -47,7 +47,7 @@ ms.locfileid: "85545238"
 ## <a name="example-of-a-violation"></a>위반 예
 
 ### <a name="description"></a>설명
- 다음 예제의 메서드는이 규칙을 위반 하는 정수를 조작 합니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]이를 발생 시키려면 정수 오버플로 **제거** 옵션을 사용 하지 않도록 설정 해야 합니다.
+ 다음 예제의 메서드는이 규칙을 위반 하는 정수를 조작 합니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 이를 발생 시키려면 정수 오버플로 **제거** 옵션을 사용 하지 않도록 설정 해야 합니다.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
@@ -113,5 +113,5 @@ End Sub
 
 3. **산술 연산 오버플로/언더플로 확인** 을 선택 하 고 **확인**을 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  <xref:System.OverflowException?displayProperty=fullName>[C # 연산자](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 및 Unchecked](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

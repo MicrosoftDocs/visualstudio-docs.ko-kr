@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9372762f713b6a5ec78a92eeb96e8a616101b5bf
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183394"
 ---
 # <a name="checklist-create-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
@@ -57,7 +57,7 @@ ms.locfileid: "84183394"
 
 8. Vspackage를 설치 하기 위한 Microsoft Installer (*.msi*) 파일을 만듭니다. 자세한 내용은 [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [프로젝트 형식 등록](../../extensibility/internals/registering-a-project-type.md)및 [vspackage](../../extensibility/internals/vspackages.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [프로젝트 형식을 만들어야 하는 경우](../../extensibility/internals/when-to-create-project-types.md)
 - [프로젝트 형식 만들기](../../extensibility/internals/creating-project-types.md)
