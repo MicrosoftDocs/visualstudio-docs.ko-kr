@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY | 마이크로 소프트 문서
+title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737628"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-s 의 목록을 보유하는 구조입니다. `GUID`
+의 목록을 보유 하는 구조체입니다 `GUID` .
 
 ## <a name="syntax"></a>구문
 
@@ -43,24 +43,24 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>멤버
 `dwCount`\
-`Members` 배열의 `GUID`s 수입니다.
+`GUID`배열에 있는의 수 `Members` 입니다.
 
 `Members`\
-s의 `GUID`배열.
+S의 배열 `GUID` 입니다.
 
 ## <a name="remarks"></a>설명
-이 구조는 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드에 전달 되며 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 및 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드에서 반환 됩니다.
+이 구조체는 WatchForProviderEvents [program](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드에 전달 되며 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 및 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드에서 반환 됩니다.
 
-이 구조의 인스턴스 소유자는 할당된 메모리를 해제해야 합니다.
+이 구조체 인스턴스의 소유자는 할당 된 모든 메모리를 해제 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: msdbg.h
+헤더: msdbg .h
 
-네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+네임 스페이스: VisualStudio
 
-어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

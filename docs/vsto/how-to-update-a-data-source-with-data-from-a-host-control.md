@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541247"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트
@@ -90,7 +90,7 @@ ms.locfileid: "85541247"
 6. **서식 지정 및 고급 바인딩** 대화 상자를 닫습니다.
 
 ## <a name="update-the-database"></a>데이터베이스 업데이트
- 메모리 내 데이터 원본이 데이터베이스와 연결된 경우 데이터베이스를 데이터 원본에 대한 변경 내용으로 업데이트해야 합니다. 데이터베이스를 업데이트 하는 방법에 대 한 자세한 내용은 [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md) 하 고 [TableAdapter를 사용 하 여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md) 를 참조 하세요.
+ 메모리 내 데이터 원본이 데이터베이스와 연결된 경우 데이터베이스를 데이터 원본에 대한 변경 내용으로 업데이트해야 합니다. 데이터베이스를 업데이트 하는 방법에 대 한 자세한 내용은 [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md)  하 고 [TableAdapter를 사용 하 여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md) 를 참조 하세요.
 
 ### <a name="to-update-the-database"></a>데이터베이스를 업데이트하려면
 
@@ -112,7 +112,7 @@ ms.locfileid: "85541247"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
 - [TableAdapter를 사용하여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)

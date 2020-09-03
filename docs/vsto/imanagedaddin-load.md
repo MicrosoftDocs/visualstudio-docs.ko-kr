@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541039"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddIn::Load
@@ -45,6 +45,6 @@ HRESULT Load([in] BSTR bstrManifestURL,
 
  [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) 메서드를 구현하여 로드되는 VSTO 추가 기능을 위한 애플리케이션 도메인 및 보안 정책 구성 등의 작업을 수행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [IManagedAddin 인터페이스](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)

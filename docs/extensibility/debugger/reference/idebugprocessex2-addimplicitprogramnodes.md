@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::추가암시프로그램노드 | 마이크로 소프트 문서
+title: 'IDebugProcessEx2:: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723402"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-이 메서드는 지정된 각 디버그 엔진(DE)에 대한 프로그램 노드를 추가합니다.
+이 메서드는 지정 된 각 디버그 엔진 (DE)에 대해 프로그램 노드를 추가 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,20 +45,20 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>매개 변수
 `guidLaunchingEngine`\
-【인】 `GUID` 프로그램을 시작하는 데 사용할 DE(자체 프로그램 노드를 추가하는 것으로 가정)입니다.
+진행 `GUID` 프로그램을 시작 하는 데 사용 되 고 자체 프로그램 노드를 추가 하는 것으로 간주 되는 DE의입니다.
 
 `rgguidSpecificEngines`\
-【인】 `GUID`프로그램 노드가 추가될 DEs의 배열입니다.
+진행 `GUID`프로그램 노드가 추가 될 DEs의 배열입니다.
 
 `celtSpecificEngines`\
-【인】 배열의 `GUID`s 수입니다. `rgguidSpecificEngines`
+진행 `GUID`배열에 있는의 수입니다 `rgguidSpecificEngines` .
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
-- [프로그램 노드는](../../../extensibility/debugger/program-nodes.md) 프로그램을 시작할 때 `rgguidSpecificEngines`자체 프로그램 노드를 추가하는 것으로 `guidLaunchingEngine`가정되는 시작 엔진(제공된 대로)을 제외한 각 DE에 대해 추가됩니다.
+- 프로그램 [노드](../../../extensibility/debugger/program-nodes.md) 는 `rgguidSpecificEngines` `guidLaunchingEngine` 프로그램을 시작할 때 자체 프로그램 노드를 추가 하는 것으로 간주 되는 시작 엔진을 제외 하 고에 나열 된 각 DE에 대해 추가 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [프로그램 노드](../../../extensibility/debugger/program-nodes.md)

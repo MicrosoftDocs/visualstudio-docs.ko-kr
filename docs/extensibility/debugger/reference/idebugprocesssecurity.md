@@ -1,5 +1,5 @@
 ---
-title: 아이디버그프로세스보안 | 마이크로 소프트 문서
+title: IDebugProcessSecurity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723186"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`포트 공급자가 프로세스에 연결하는 것이 안전하지 않음을 사용자에게 경고하기 위해 구현됩니다.
+`IDebugProcessSecurity` 는 프로세스에 연결 하는 것이 안전 하지 않은 사용자에 게 경고 하기 위해 포트 공급자에 의해 구현 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcessSecurity : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
- 다음 표에서는 의 `IDebugProcessSecurity`메서드를 보여 주며 의 메서드를 보여 주면 됩니다.
+ 다음 표에서는의 메서드를 보여 줍니다 `IDebugProcessSecurity` .
 
-|방법|설명|
+|메서드|설명|
 |------------|-----------------|
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|포트 공급자에서 사용자 이름을 가져옵니다.|
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|디버깅 프로세스에 연결하는 것이 안전하지 않음을 사용자에게 경고합니다.|
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|디버깅 프로세스에 연결 하는 것은 안전 하지 않은 사용자에 게 경고 합니다.|
 
 ## <a name="remarks"></a>설명
- 이 인터페이스를 구현하여 경고를 표시하고 사용자가 연결하는 프로세스가 안전하지 않은 것으로 간주될 수 있는 경우 취소할 수 있도록 합니다.
+ 경고를 표시 하 고 연결 하려는 프로세스를 안전 하지 않은 것으로 간주할 수 있는 경우 사용자가 취소할 수 있도록이 인터페이스를 구현 합니다.
 
 ## <a name="requirements"></a>요구 사항
- 헤더: msdbg.h
+ 헤더: msdbg .h
 
- 네임스페이스: 마이크로소프트.비주얼스튜디오.디버거.인터롭
+ 네임 스페이스: VisualStudio
 
- 어셈블리: 마이크로소프트.비주얼스튜디오.디버거.인터롭.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Ports](../../../extensibility/debugger/ports.md)
 - [포트 공급자](../../../extensibility/debugger/port-suppliers.md)
-- [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
+- [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

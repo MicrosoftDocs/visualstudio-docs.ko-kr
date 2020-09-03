@@ -8,10 +8,10 @@ ms.author: anthc
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ee29937b11110ee6aae65628b81ea49588fdd22
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972311"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트 사용
@@ -129,7 +129,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
 
 지원 되는 다양 한 유형의 용어는 다음과 같습니다.
 
-|용어|Description|
+|용어|설명|
 |-|-|
 |{nnnnnnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID는 UI 컨텍스트를 참조 합니다. 용어는 UI 컨텍스트가 활성화 될 때마다 true이 고, 그렇지 않으면 false입니다.|
 |HierSingleSelectionName:\<pattern>|활성 계층의 선택 항목이 단일 항목이 고 선택한 항목의 이름이 "pattern"으로 지정 된 .Net 정규식과 일치 하는 경우에는 용어가 true가 됩니다.|

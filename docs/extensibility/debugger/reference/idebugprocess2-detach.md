@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::D에타흐 | 마이크로 소프트 문서
+title: IDebugProcess2::D etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724131"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-프로세스의 모든 프로그램을 분리하여 이 프로세스에서 디버거를 분리합니다.
+프로세스의 모든 프로그램을 분리 하 여이 프로세스에서 디버거를 분리 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,10 +38,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
- 모든 프로그램과 프로세스는 계속 실행되지만 더 이상 디버그 세션의 일부가 아닙니다. 분리 작업이 완료되면 이 프로세스(및 해당 프로그램)에 대한 디버그 이벤트가 더 이상 전송되지 않습니다.
+ 모든 프로그램 및 프로세스는 계속 실행 되지만 더 이상 디버그 세션의 일부가 아닙니다. 분리 작업이 완료 된 후에는이 프로세스 및 해당 프로그램에 대 한 더 이상 디버그 이벤트가 전송 되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

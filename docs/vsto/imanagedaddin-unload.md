@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ec01ebc32472e315fe2c905ecfd2cfef0f4bbe1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541013"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
@@ -34,6 +34,6 @@ HRESULT Unload();
 ## <a name="remarks"></a>설명
  이 메서드는 현재 버전의 Microsoft Office에서 호출되지 않습니다. 이 메서드는 나중에 사용하도록 예약됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [IManagedAddin 인터페이스](../vsto/imanagedaddin-interface.md)
 - [IManagedAddIn::Load](../vsto/imanagedaddin-load.md)
