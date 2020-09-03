@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817413"
 ---
 # <a name="how-to-use-the-variable-designer"></a>방법: 변수 디자이너 사용
@@ -36,7 +36,7 @@ ms.locfileid: "85817413"
     > [!NOTE]
     > 변수를 삭제 하려면 변수를 클릭 하 여 선택한 다음 **delete** 키를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)
 - [변수 및 인수](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350383"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>앱에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까?

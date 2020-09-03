@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535163"
 ---
 # <a name="debugging-applications"></a>애플리케이션 디버깅
@@ -25,7 +25,7 @@ ms.locfileid: "85535163"
 
 ## <a name="debugging-for-different-types-of-applications"></a>다양한 유형의 애플리케이션에 대한 디버그
 
-|제목|Description|
+|제목|설명|
 |-|-|
 |[UWP 앱 디버그](../debugger/debugging-windows-store-and-windows-universal-apps.md)|UWP 앱을 디버그하는 방법을 설명합니다.|
 |[관리 코드 디버그](../debugger/debugging-managed-code.md)|관리 코드(Visual C#, Visual Basic, F# 및 C++/CLI)를 디버그하는 방법을 설명합니다.|

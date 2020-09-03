@@ -22,7 +22,7 @@
               href: lexical-hierarchy-of-symbol-types.md
             - name: 주석
               href: annotation.md
-            - name: Block
+            - name: 차단
               href: block.md
             - name: 컴파일 대상
               href: compiland.md

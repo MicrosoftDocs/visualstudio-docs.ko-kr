@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535267"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>연습: 단일 테이블 상속을 사용 하 여 LINQ to SQL 클래스 만들기 (O/R 디자이너)
@@ -51,10 +51,10 @@ ms.locfileid: "85535267"
 
     |열 이름|데이터 형식|Null 허용|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**허위**|
-    |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**허위**|
-    |**LastName**|**nvarchar(200)**|**허위**|
+    |**ID**|**int**|**False**|
+    |**유형**|**int**|**True**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
     |**관리자**|**int**|**True**|
 
 3. ID 열을 기본 키로 설정합니다.
@@ -70,7 +70,7 @@ ms.locfileid: "85535267"
 
 2. 다음 데이터를 테이블로 복사합니다. ( **결과** 창에서 전체 행을 선택 하 여 복사 하 고 테이블에 붙여넣을 수 있습니다.)
 
-    |**ID**|**Type**|**FirstName**|**LastName**|**관리자**|
+    |**ID**|**유형**|**FirstName**|**LastName**|**관리자**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -184,7 +184,7 @@ ms.locfileid: "85535267"
 
 3. 폼을 닫아 디버깅을 **디버그** 메뉴에서 **디버깅 중지**를 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기(O-R 디자이너)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

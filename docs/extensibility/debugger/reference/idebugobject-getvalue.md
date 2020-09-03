@@ -1,5 +1,5 @@
 ---
-title: 아이디버그 오브젝트::겟밸류 | 마이크로 소프트 문서
+title: 'IDebugObject:: GetValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 45d555cbea6bf8239ef4527ba982072e17532af4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726549"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-개체값을 연속적인 바이트 로 가져옵니다.
+개체의 값을 연속 된 일련의 바이트로 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,16 +43,16 @@ int GetValue(
 
 ## <a name="parameters"></a>매개 변수
 `pValue`\
-【인, 아웃】 개체의 값을 나타내는 연속된 바이트 시리즈로 채워진 배열입니다.
+[in, out] 개체의 값을 나타내는 연속 된 일련의 바이트로 채워진 배열입니다.
 
 `nSize`\
-【인】 가져올 최대 바이트 수입니다.
+진행 인출할 최대 바이트 수입니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) 메서드를 호출하여 가져올 수 있는 총 값 바이트 수를 가져옵니다.
+ [Getsize](../../../extensibility/debugger/reference/idebugobject-getsize.md) 메서드를 호출 하 여 페치할 수 있는 총 값 바이트 수를 가져옵니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

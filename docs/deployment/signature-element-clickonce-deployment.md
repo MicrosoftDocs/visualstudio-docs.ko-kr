@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835422"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature &gt; 요소 (ClickOnce 배포)
@@ -38,7 +38,7 @@ ms.locfileid: "85835422"
 
  매니페스트에 서명 하려면 모든 파일에 대해 해시를 제공 해야 합니다. 사용자는 해시 되지 않은 파일의 콘텐츠를 확인할 수 없으므로 해시 되지 않은 파일이 있는 매니페스트는 서명할 수 없습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드 예제에서는 `Signature` 배포에 사용 되는 배포 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ```xml
@@ -70,5 +70,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)

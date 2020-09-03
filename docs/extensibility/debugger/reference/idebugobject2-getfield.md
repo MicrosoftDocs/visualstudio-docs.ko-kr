@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::겟필드 | 마이크로 소프트 문서
+title: 'IDebugObject2:: GetField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726217"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
@@ -41,14 +41,14 @@ int GetField(
 
 ## <a name="parameters"></a>매개 변수
 `ppField`\
-【아웃】 null 값이 아닌 경우 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환합니다.
+제한이 Null 값이 아닌 경우 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 S_OK 반환합니다. 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
- 필드는 개체의 형식을 설명합니다.
+ 필드는 개체의 유형을 설명 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

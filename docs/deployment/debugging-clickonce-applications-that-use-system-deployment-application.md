@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382655"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application을 사용하는 ClickOnce 애플리케이션 디버그
@@ -76,5 +76,5 @@ ms.locfileid: "85382655"
 
    <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A>응용 프로그램이 배포 된 경우에만 api를 호출 하려면 속성을 사용 하 고 <xref:System.Deployment.Application> , 디버깅 중에는 api를 호출 하면 안 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:System.Deployment.Application>

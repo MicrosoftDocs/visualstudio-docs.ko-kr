@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 969f2bcb578d74ac02a7bdaa6984de5948e49e27
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817608"
 ---
 # <a name="date-object-expected"></a>Date 개체가 필요합니다.
@@ -34,7 +34,7 @@ o.f();
   
 - 형식의 개체에 대해 **valueOf** 메서드를 호출 **하기만 하면 됩니다.** `Date`  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [날짜 개체](../../javascript/reference/date-object-javascript.md)   
  [getDate 메서드 (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [내장 개체](../../javascript/intrinsic-objects-javascript.md)

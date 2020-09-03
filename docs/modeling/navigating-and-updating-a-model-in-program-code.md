@@ -84,7 +84,7 @@ ms.locfileid: "75566178"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- 또한 링크에 액세스 하는 다른 방법도 있습니다. 예를 들면 다음과 같습니다.
+ 또한 링크에 액세스 하는 다른 방법도 있습니다. 예:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ ms.locfileid: "75566178"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> 클래스 정보 액세스
- DSL 정의의 클래스, 관계 및 기타 요소에 대 한 정보를 가져올 수 있습니다. 예를 들면 다음과 같습니다.
+ DSL 정의의 클래스, 관계 및 기타 요소에 대 한 정보를 가져올 수 있습니다. 예:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +199,13 @@ using (Transaction t =
 
  관계의 인스턴스를 만들 수 있는 방법에는 세 가지가 있습니다. 이러한 세 가지 메서드는 모두 동일한 결과를 가집니다.
 
-- 원본 역할 수행자의 속성을 설정 합니다. 예를 들면 다음과 같습니다.
+- 원본 역할 수행자의 속성을 설정 합니다. 예:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- 대상 역할 수행자의 속성을 설정 합니다. 예를 들면 다음과 같습니다.
+- 대상 역할 수행자의 속성을 설정 합니다. 예:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +215,7 @@ using (Transaction t =
 
        이 역할의 복합성은 이므로 `0..*` 컬렉션에를 추가 합니다.
 
-- 관계의 인스턴스를 명시적으로 생성 합니다. 예를 들면 다음과 같습니다.
+- 관계의 인스턴스를 명시적으로 생성 합니다. 예:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -482,7 +482,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>저장소 파티션
  모델을 로드 하면 함께 제공 된 다이어그램이 동시에 로드 됩니다. 일반적으로 모델은 Store. DefaultPartition에 로드 되 고 다이어그램 콘텐츠는 다른 파티션에 로드 됩니다. 일반적으로 각 파티션의 콘텐츠를 로드 하 고 별도의 파일에 저장 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [도메인별 언어에서 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)

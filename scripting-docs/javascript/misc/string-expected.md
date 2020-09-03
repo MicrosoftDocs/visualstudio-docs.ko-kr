@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 96c08b8b50b64ccfb7d770ade41510897ad0ff5a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817543"
 ---
 # <a name="string-expected"></a>문자열이 필요합니다.
@@ -28,6 +28,6 @@ ms.locfileid: "85817543"
   
 - 형식의 개체에 대 한 **valueOf** **또는 string.format 메서드만 호출 합니다.** `String`  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>추가 정보  
  [String 개체](../../javascript/reference/string-object-javascript.md)   
  [toString 메서드(Object)](../../javascript/reference/tostring-method-object-javascript.md)

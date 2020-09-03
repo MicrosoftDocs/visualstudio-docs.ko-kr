@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cfedaa51ef62b5a9519a7aef23b942d6c1e5f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665778"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>클래스와 형식 디자인 및 보기
@@ -37,7 +37,7 @@ Visual Studio에서 클래스 디자이너를 사용하여 코드의 클래스�
 
 - **리팩터링**: 메서드를 재정의하고, 식별자 이름을 바꾸고, 매개 변수를 리팩터링하고, 인터페이스 및 추상 클래스를 구현합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [클래스 및 기타 형식 작업(클래스 디자이너)](../ide/working-with-classes-and-other-types-class-designer.md)
 
  [클래스 다이어그램 사용(클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md)
@@ -48,11 +48,11 @@ Visual Studio에서 클래스 디자이너를 사용하여 코드의 클래스�
 
  [클래스 및 형식 리팩터링(클래스 디자이너)](../ide/refactoring-classes-and-types-class-designer.md)
 
- [Visual C++ 코드 작업(클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md)
+ [Visual C++ 코드 사용(클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md)
 
- [클래스 디자이너 오류에 대한 추가 정보](../ide/additional-information-about-class-designer-errors.md)
+ [클래스 디자이너 오류에 대 한 추가 정보](../ide/additional-information-about-class-designer-errors.md)
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
  [코드 작성](../ide/writing-code-in-the-code-and-text-editor.md)
 
  [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)

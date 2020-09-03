@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905040"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>연습: 뷰 장식, 명령 및 설정 만들기 (열 안내선)
@@ -31,7 +31,7 @@ ms.locfileid: "85905040"
   > [!NOTE]
   > 이 연습에서는 Visual Studio 확장 템플릿에서 생성 된 몇 개의 파일에 많은 양의 코드를 붙여넣습니다. 그러나이 연습에서는 다른 확장 예제를 사용 하 여 GitHub에서 완료 된 솔루션을 참조 하 게 될 예정입니다. 완성 된 코드는 generictemplate 아이콘을 사용 하는 대신 실제 명령 아이콘이 있다는 차이가 있습니다.
 
-## <a name="get-started"></a>시작
+## <a name="get-started"></a>시작하기
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="set-up-the-solution"></a>솔루션 설정
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`코드 보기를 약간 자세히 살펴보겠습니다 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> .  , 및을 통해 추적 하는 경우이 `GetActiveTextView` `GetActiveView` `GetTextViewFromVsTextView` 작업을 수행 하는 방법을 확인할 수 있습니다. 다음 코드는 현재 선택 영역에서 시작 하 고, 선택의 프레임을 가져온 다음, 프레임의 DocView를으로 가져오고, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> IVsTextView에서을 가져오고, 뷰 호스트를 가져오고, 마지막으로 IWpfTextView 하는 관련 코드를 추출 합니다.
+`GetCurrentEditorColumn` 코드 보기를 약간 자세히 살펴보겠습니다 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> .  , 및을 통해 추적 하는 경우이 `GetActiveTextView` `GetActiveView` `GetTextViewFromVsTextView` 작업을 수행 하는 방법을 확인할 수 있습니다. 다음 코드는 현재 선택 영역에서 시작 하 고, 선택의 프레임을 가져온 다음, 프레임의 DocView를으로 가져오고, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> IVsTextView에서을 가져오고, 뷰 호스트를 가져오고, 마지막으로 IWpfTextView 하는 관련 코드를 추출 합니다.
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1339,7 +1339,7 @@ Visual Studio 확장성 샘플의 GitHub 프로젝트가 곧 표시 되 고 완�
 
 이 Visual Studio 갤러리[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)을 사용 하 여 열 안내선 기능 버전을 사용해 볼 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [편집기 내부](../extensibility/inside-the-editor.md)
 - [편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)
