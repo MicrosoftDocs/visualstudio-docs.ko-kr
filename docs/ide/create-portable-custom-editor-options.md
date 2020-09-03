@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 30c2ce8a10a6a1001f8fb7c21ba7db7db7243fe4
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770746"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기

@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89a667e3254be8161d4defb54d524756a5eb02fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670012"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-*서비스 참조* 를 사용 하면 프로젝트에서 하나 이상의 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]에 액세스할 수 있습니다. **서비스 참조 추가** 대화 상자를 사용 하 여 현재 솔루션의 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 로컬, 로컬 영역 네트워크 또는 인터넷에서 검색할 수 있습니다.
+*서비스 참조* 를 사용 하면 프로젝트에서 하나 이상의에 액세스할 수 있습니다 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] . **서비스 참조 추가** 대화 상자를 사용 하 여 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 로컬 영역 네트워크 또는 인터넷에서 현재 솔루션의를 검색할 수 있습니다.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -48,9 +48,9 @@ ms.locfileid: "72670012"
 
 3. **서비스** 목록에서 사용 하려는 서비스에 대 한 노드를 확장 하 고 엔터티 집합을 선택 합니다.
 
-4. **네임 스페이스** 상자에 참조에 사용할 네임 스페이스를 입력 합니다.
+4. 참조에 사용하려는 네임스페이스를 **네임스페이스** 상자에 입력합니다.
 
-5. **확인** 을 클릭 하 여 프로젝트에 참조를 추가 합니다.
+5. **확인**을 클릭하여 프로젝트에 대한 참조를 추가합니다.
 
      서비스 클라이언트 (프록시)가 생성 되 고 서비스를 설명 하는 메타 데이터가 app.config 파일에 추가 됩니다.
 
@@ -62,18 +62,18 @@ ms.locfileid: "72670012"
 
 2. **검색**을 클릭 합니다.
 
-     현재 솔루션의 모든 서비스 ([!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 및 WCF 서비스 모두)가 **서비스** 목록에 추가 됩니다.
+     [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]현재 솔루션의 모든 서비스 (및 WCF 서비스)가 **서비스** 목록에 추가 됩니다.
 
 3. **서비스** 목록에서 사용 하려는 서비스에 대 한 노드를 확장 하 고 엔터티 집합을 선택 합니다.
 
-4. **네임 스페이스** 상자에 참조에 사용할 네임 스페이스를 입력 합니다.
+4. 참조에 사용하려는 네임스페이스를 **네임스페이스** 상자에 입력합니다.
 
-5. **확인** 을 클릭 하 여 프로젝트에 참조를 추가 합니다.
+5. **확인**을 클릭하여 프로젝트에 대한 참조를 추가합니다.
 
      서비스 클라이언트 (프록시)가 생성 되 고 서비스를 설명 하는 메타 데이터가 app.config 파일에 추가 됩니다.
 
 ## <a name="updating-a-service-reference"></a>서비스 참조 업데이트
- @No__t_0에 대 한 엔터티 데이터 모델 변경 되는 경우도 있습니다. 이 경우 서비스 참조를 업데이트 해야 합니다.
+ 에 대 한 엔터티 데이터 모델 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 변경 되는 경우도 있습니다. 이 경우 서비스 참조를 업데이트 해야 합니다.
 
 #### <a name="to-update-a-service-reference"></a>서비스 참조를 업데이트 하려면
 
@@ -93,5 +93,5 @@ ms.locfileid: "72670012"
     > [!NOTE]
     > 서비스 참조를 참조 하는 모든 코드는 수동으로 제거 해야 합니다.
 
-## <a name="see-also"></a>관련 항목:
- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+## <a name="see-also"></a>관련 항목
+ [Visual Studio에서 서비스 및 WCF Data Services Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
 ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770844"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>모든 호출 스택을 사용하여 Visual Studio 프로세스에 대한 미니덤프 만들기

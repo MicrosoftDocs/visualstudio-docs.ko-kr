@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
+title: 'IDebugProgram2:: EnumCodeContexts | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 26bd68764b94aadccb796f33d127ba159e9c3727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202754"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-소스 파일에서 지정된 된 위치에 대 한 코드 컨텍스트의 목록을 검색합니다.  
+소스 파일에서 지정 된 위치에 대 한 코드 컨텍스트 목록을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,16 +42,16 @@ int EnumCodeContexts( 
   
 #### <a name="parameters"></a>매개 변수  
  `pDocPos`  
- [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) IDE에 알려진 소스 파일에서 추상 위치를 나타내는 개체입니다.  
+ 진행 IDE에 알려진 소스 파일의 추상 위치를 나타내는 [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) 개체입니다.  
   
  `ppEnum`  
- [out] 반환 된 [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 코드 컨텍스트의 목록을 포함 하는 개체입니다.  
+ 제한이 코드 컨텍스트 목록을 포함 하는 [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 방법을 사용 하면 세션 디버그 관리자 (SDM) 또는 IDE에서 코드 위치에 원본 파일 위치를 매핑합니다. 소스 코드의 여러 요소를 생성 하는 경우 둘 이상의 코드 컨텍스트에 반환 됩니다 (예를 들어, C++ 템플릿).  
+ 이 메서드를 사용 하면 세션 디버그 관리자 (SDM) 또는 IDE에서 소스 파일 위치를 코드 위치에 매핑할 수 있습니다. 소스에서 여러 코드 블록 (예: c + + 템플릿)을 생성 하는 경우 두 개 이상의 코드 컨텍스트가 반환 됩니다.  
   
 ## <a name="see-also"></a>관련 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

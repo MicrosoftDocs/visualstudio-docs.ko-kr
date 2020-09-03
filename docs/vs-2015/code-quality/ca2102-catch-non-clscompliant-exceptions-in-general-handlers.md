@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521305"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하세요.
@@ -39,7 +39,7 @@ ms.locfileid: "85521305"
 
 - C#: `catch {}`
 
-- C + +: `catch(...) {}` 또는`catch(Object^) {}`
+- C + +: `catch(...) {}` 또는 `catch(Object^) {}`
 
   처리 되지 않은 CLS 규격이 아닌 예외는 catch 블록에서 이전에 허용 된 사용 권한을 제거할 때 보안 문제가 됩니다. CLS 규격이 아닌 예외가 catch 되지 않으므로 CLS 규격이 아닌 예외를 throw 하는 악의적인 메서드는 상승 된 권한으로 실행할 수 있습니다.
 
@@ -81,5 +81,5 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="related-rules"></a>관련 규칙
  [CA1031: 일반적인 예외 형식을 catch하지 마세요.](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [예외 및 예외 처리](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (IL 어셈블러)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [보안 검사 재정의](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [언어 독립성 및 언어 독립적 구성 요소](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

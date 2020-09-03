@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ceed19ab052584ea47629244372af4402835beb5
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770800"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발

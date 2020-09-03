@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771013"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>방법: 클래스 디자이너에서 멤버 표시와 연결 표시 간 변경

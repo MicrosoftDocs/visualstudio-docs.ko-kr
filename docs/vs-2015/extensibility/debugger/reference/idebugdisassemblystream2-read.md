@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Microsoft Docs
+title: 'IDebugDisassemblyStream2:: Read | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 520c801a0603f2c6d3228ae95ad144827eac0088
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203002"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-디스어셈블리 스트림 내의 현재 위치에서 시작 하는 지침을 읽습니다.  
+디스어셈블리 스트림의 현재 위치에서 시작 하는 명령을 읽습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,28 +46,28 @@ int Read( 
   
 #### <a name="parameters"></a>매개 변수  
  `dwInstructions`  
- [in] 디스어셈블 하기 위한 지침의 수입니다. 이 값은 또한의 최대 길이 `prgDisassembly` 배열입니다.  
+ 진행 분해할 명령의 수입니다. 이 값은 배열의 최대 길이 이기도 합니다 `prgDisassembly` .  
   
  `dwFields`  
- [in] 플래그의 조합을 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) 의 필드를 나타내는 열거형 `prgDisassembly` 작성 됩니다.  
+ 진행 에서 채울 필드를 나타내는 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) 열거형의 플래그 조합입니다 `prgDisassembly` .  
   
  `pdwInstructionsRead`  
- [out] 실제로 디스어셈블된 명령의 수를 반환 합니다.  
+ 제한이 실제로 디스어셈블 된 명령의 수를 반환 합니다.  
   
  `prgDisassembly`  
- [out] 배열을 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조 디스어셈블된 명령 당 하나의 구조 디스어셈블된 코드를 사용 하 여 입력 됩니다. 이 배열의 길이 따라 결정 됩니다는 `dwInstructions` 매개 변수입니다.  
+ 제한이 디스어셈블 코드를 사용 하 여 채워진 [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 구조의 배열로, 디스어셈블 된 명령 당 하나의 구조입니다. 이 배열의 길이는 매개 변수에 의해 결정 됩니다 `dwInstructions` .  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 호출 하 여 현재 범위에서 사용할 수 있는 지침의 최대 수를 가져올 수 있습니다 합니다 [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) 메서드.  
+ 현재 범위에서 사용할 수 있는 최대 명령 수는 [Getsize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) 메서드를 호출 하 여 가져올 수 있습니다.  
   
- 호출 하 여 현재 위치에서 다음 명령을 읽기 위치를 변경할 수 있습니다 합니다 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 메서드.  
+ 다음 명령을 읽어올 현재 위치는 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 메서드를 호출 하 여 변경할 수 있습니다.  
   
- `DSF_OPERANDS_SYMBOLS` 플래그를 추가할 수는 `DSF_OPERANDS` 플래그는 `dwFields` 지침 디스어셈블할 때는 기호 이름을 사용 해야 함을 나타내는 매개 변수를 합니다.  
+ `DSF_OPERANDS_SYMBOLS`매개 변수의 플래그에 플래그를 추가 `DSF_OPERANDS` `dwFields` 하 여 명령을 디스어셈블 할 때 기호 이름을 사용 해야 함을 나타낼 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   

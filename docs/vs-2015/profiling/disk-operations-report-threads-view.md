@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202443"
 ---
 # <a name="disk-operations-report-threads-view"></a>디스크 작업 보고서(스레드 뷰)
@@ -45,5 +45,5 @@ ms.locfileid: "68202443"
   
 - 쓰기 대기 시간(밀리초)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

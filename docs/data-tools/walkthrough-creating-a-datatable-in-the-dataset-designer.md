@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586005"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>연습: 데이터 세트 디자이너에서 DataTable 만들기
 
-이 연습에서는 **데이터 세트 디자이너**를 사용 하 여 TableAdapter 없이 <xref:System.Data.DataTable>를 만드는 방법을 설명 합니다. Tableadapter를 포함 하는 데이터 테이블을 만드는 방법에 대 한 자세한 내용은 [Tableadapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)을 참조 하세요.
+이 연습에서는 <xref:System.Data.DataTable> **데이터 세트 디자이너**를 사용 하 여 (TableAdapter가 없는)를 만드는 방법을 설명 합니다. Tableadapter를 포함 하는 데이터 테이블을 만드는 방법에 대 한 자세한 내용은 [Tableadapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)을 참조 하세요.
 
 ## <a name="create-a-new-windows-forms-application"></a>새 Windows Forms 애플리케이션 만들기
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
@@ -53,13 +53,13 @@ ms.locfileid: "75586005"
 
      **DataTable1** 이라는 테이블이 데이터 집합에 추가 됩니다.
 
-2. **DataTable1** 의 제목 표시줄을 클릭 하 고 이름을 `Music`로 바꿉니다.
+2. **DataTable1** 의 제목 표시줄을 클릭 하 고 이름을 바꿉니다 `Music` .
 
 ## <a name="add-columns-to-the-datatable"></a>DataTable에 열 추가
 
 1. **Music** 테이블을 마우스 오른쪽 단추로 클릭 합니다. **추가**를 가리킨 다음 **열**을 클릭 합니다.
 
-2. 열 이름을 `SongID`로 합니다.
+2. 열의 이름을로 `SongID` 합니다.
 
 3. **속성** 창에서 <xref:System.Data.DataColumn.DataType%2A> 속성을 <xref:System.Int16?displayProperty=fullName>로 설정합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "75586005"
 
 **DataTableWalkthrough** 프로젝트를 저장 하려면 **파일** 메뉴에서 **모두 저장**을 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

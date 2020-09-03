@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ec0bdd3ebae52158c5631a880e63ee0f3a455de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671710"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6단계: 빼기 문제 추가
@@ -56,7 +56,7 @@ ms.locfileid: "72671710"
 
      도구 설명에 **(+2개 오버로드)** 가 표시되며, 이는 `Next()` 메서드를 두 가지 다른 방법으로 호출할 수 있음을 나타냅니다. 오버로드에는 저마다 다른 개수와 형식의 인수가 포함되어 있으므로 작동 방식도 서로 조금씩 다릅니다. 예를 들어 메서드는 단일 정수 인수를 사용하지만 메서드 오버로드 중 하나는 정수 하나와 문자열 하나를 사용할 수 있습니다. 수행하려는 작업을 기반으로 올바른 오버로드를 선택합니다. `StartTheQuiz()` 메서드에 코드를 추가할 때 `randomizer.Next(`를 입력하는 즉시 Intellisense 창에 추가 정보가 나타납니다. 다음 그림과 같이 위쪽 화살표 키와 아래쪽 화살표 키를 선택하여 오버로드를 순환할 수 있습니다.
 
-     ![IntelliSense의 다음&#40; &#41; 메서드에 대 한 오버 로드](../ide/media/express-nextoverload.png "Express_NextOverload") IntelliSense의 Next () 메서드에 대 한 오버 로드
+     ![IntelliSense에서 Next&#40;&#41; 메서드의 오버로드](../ide/media/express-nextoverload.png "Express_NextOverload")IntelliSense에서 Next() 메서드의 오버로드
 
      이 경우 최소값 및 최대값을 지정할 수 있도록 마지막 오버로드를 선택하는 것이 좋습니다.
 

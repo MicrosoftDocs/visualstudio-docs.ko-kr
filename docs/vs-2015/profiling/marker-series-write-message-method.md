@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f759ea679af818d85dd365f5615ce4fc664df89a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200737"
 ---
-# <a name="markerserieswritemessage-method"></a>marker_series::write_message 메서드
+# <a name="marker_serieswrite_message-method"></a>marker_series::write_message 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 동시성 시각화 도우미 추적 파일에 메시지를 씁니다.  
@@ -52,7 +52,7 @@ void write_message(
   
 #### <a name="parameters"></a>매개 변수  
  `_Format`  
- 인수 목록의 개체에 해당하는 0개 이상의 서식 항목과 뒤섞인 텍스트를 포함하는 복합 형식 문자열입니다.  
+ 인수 목록의 개체에 해당하는 0개 이상의 서식 항목과 결합된 텍스트를 포함하는 합성 서식 문자열입니다.  
   
  `_Importance`  
  중요도 수준입니다.  
@@ -65,5 +65,5 @@ void write_message(
   
  **네임스페이스:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [marker_series 클래스](../profiling/marker-series-class.md)

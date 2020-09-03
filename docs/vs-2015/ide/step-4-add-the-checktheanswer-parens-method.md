@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbfdc15b06d857b7537a4a327f3201c86d4db2d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671773"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4단계: CheckTheAnswer() 메서드 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 자습서의 4단계에서는 수학 문제의 답이 맞는지 여부를 확인하는 `CheckTheAnswer()` 메서드를 작성합니다. 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+이 자습서의 4단계에서는 수학 문제의 답이 맞는지 여부를 확인하는 `CheckTheAnswer()` 메서드를 작성합니다. 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대 한 개요는 [자습서 2: 시간이 지정 된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조 하세요.
 
 > [!NOTE]
 > 이 메서드는 값을 반환하기 때문에 Visual Basic 사용자는 일반적인 `Function` 키워드 대신 `Sub` 키워드를 사용합니다. 논리는 간단합니다. sub는 값을 반환하지 않고 function은 값을 반환합니다.
@@ -51,6 +51,6 @@ ms.locfileid: "72671773"
 
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)를 참조하세요.
+- 다음 자습서 단계로 이동 하려면 [5 단계: NumericUpDown 컨트롤에 대 한 Enter 이벤트 처리기 추가](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)를 참조 하세요.
 
-- 이전 자습서 단계로 돌아가려면 [3단계: 카운트다운 타이머 추가](../ide/step-3-add-a-countdown-timer.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [3 단계: 카운트다운 타이머 추가](../ide/step-3-add-a-countdown-timer.md)를 참조 하세요.

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282724"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>데이터베이스 만들기 및 Visual Studio에서 테이블 추가
@@ -107,7 +107,7 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
    CREATE TABLE [dbo].[Customers]
    ```
 
-   다음과 유사한 결과가 표시됩니다.
+   다음과 비슷한 결과가 표시됩니다.
 
    ![테이블 디자이너](../data-tools/media/table-designer.png)
 
@@ -185,6 +185,6 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 
 7. 메뉴 모음에서 **파일**  >  **모두 저장**을 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 데이터 액세스](accessing-data-in-visual-studio.md)

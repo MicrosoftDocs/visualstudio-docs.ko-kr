@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519862"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>관리 되는 참조 (Visual Studio에서 Office 개발)
@@ -25,7 +25,7 @@ ms.locfileid: "85519862"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  <xref:Microsoft.Office.Tools>
 
  Office 솔루션을 프로그래밍할 때 일반적으로 사용하는 클래스가 포함됩니다. 여기에는 VSTO 추가 기능용 기본 클래스, VSTO 추가 기능에서 사용자 지정 작업창을 만들기 위한 클래스, Excel 및 Word 솔루션에서 스마트 태그를 만들기 위한 클래스, 문서 수준 사용자 지정에서 작업 창을 만들기 위한 클래스가 포함됩니다.
@@ -70,7 +70,7 @@ ms.locfileid: "85519862"
 
  Office 프로젝트를 빌드하는 데 사용되는 MSBuild 작업 클래스가 포함됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Visual Studio tools for Office 런타임 개요](visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio에서 Office 개발 &#40;시작&#41;](getting-started-office-development-in-visual-studio.md)
 - [Office 개발 샘플 및 연습](office-development-samples-and-walkthroughs.md)

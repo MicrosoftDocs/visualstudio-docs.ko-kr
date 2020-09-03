@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bbc55204987f4b6ea0d45c4228f6c194f1ebaf64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671305"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>프로그램 코드에서 UML 모델 읽기
@@ -23,10 +23,10 @@ ms.locfileid: "72671305"
 
 UML API를 사용하여 UML 모델 및 해당 다이어그램을 로드할 수 있습니다.
 
-## <a name="Reading"></a>프로그램 코드에서 모델 읽기
+## <a name="reading-a-model-in-program-code"></a><a name="Reading"></a> 프로그램 코드에서 모델 읽기
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창에 표시하지 않고 모델의 콘텐츠에 액세스하려면 `ModelingProject.LoadReadOnly()`를 사용합니다.
 
- 예를 들면,
+ 예를 들면 다음과 같습니다.
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -50,7 +50,7 @@ using (IModelingProjectReader projectReader =
 
  다이어그램에서 모양을 읽으려는 경우 프로젝트를 읽은 후 다이어그램을 읽어야 합니다.
 
- 예를 들면,
+ 예를 들면 다음과 같습니다.
 
 ```
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
@@ -66,11 +66,11 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ```
 
 ## <a name="alternative-methods"></a>대체 방법
- 많은 응용 프로그램에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus를 사용 하면이 항목에서 설명 하는 방법 보다 강력한 견고성과 유연성으로 모델 내에서 모델과 요소를 참조할 수 있습니다. Modelbus는 동일한 모델이나 다른 모델의 임의 요소 간에 링크를 만드는 표준 방법을 제공합니다. 자세한 내용은 [UML 모델을 다른 모델 및 도구와 통합](../modeling/integrate-uml-models-with-other-models-and-tools.md)을 참조 하세요.
+ 많은 응용 프로그램의 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus를 사용 하면이 항목에서 설명 하는 방법 보다 견고성과 유연성을 높일 수 있는 모델 및 요소를 참조할 수 있습니다. Modelbus는 동일한 모델이나 다른 모델의 임의 요소 간에 링크를 만드는 표준 방법을 제공합니다. 자세한 내용은 [UML 모델을 다른 모델 및 도구와 통합](../modeling/integrate-uml-models-with-other-models-and-tools.md)을 참조 하세요.
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API를 사용하여 사용자 인터페이스에서 모델 및 다이어그램을 열 수도 있습니다. 자세한 내용은 [Visual STUDIO API를 사용 하 여 UML 모델 열기](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)를 참조 하세요.
 
-## <a name="Standalone"></a>독립 실행형 응용 프로그램
+## <a name="stand-alone-applications"></a><a name="Standalone"></a> 독립 실행형 응용 프로그램
  이전 섹션의 예제는 Visual Studio 확장에서 작동합니다. 독립 실행형 애플리케이션에서 모델을 읽을 수 있지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트에 일부 참조를 추가해야 합니다.
 
 > [!NOTE]
@@ -104,5 +104,5 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
    - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  Uml [API를 사용한 프로그래밍으로](../modeling/programming-with-the-uml-api.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)

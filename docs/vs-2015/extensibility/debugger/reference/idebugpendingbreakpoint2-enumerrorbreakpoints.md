@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: EnumErrorBreakpoints | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f9cac8b19e6281b8993e84d13ae60138ddaeac89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201078"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 보류 중인 중단점에서 발생 하는 모든 오류 중단점의 목록을 가져옵니다.  
+이 보류 중인 중단점에서 발생 한 모든 오류 중단점의 목록을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,16 +43,16 @@ int EnumErrorBreakpoints( 
   
 #### <a name="parameters"></a>매개 변수  
  `bpErrorType`  
- [in] 값을 조합 합니다 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) 열거 하는 오류 유형을 선택 하는 열거형입니다.  
+ 진행 열거할 오류 유형을 선택 하는 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) 열거형 값의 조합입니다.  
   
  `ppEnum`  
- [out] 반환 된 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 개체의 목록을 포함 하는 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 개체입니다.  
+ 제한이 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 개체의 목록을 포함 하는 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 중단점이 삭제 되었으면를 반환 `E_BP_DELETED` 합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` 노출 하는 개체를 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 `CPendingBreakpoint` [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(  
@@ -126,7 +126,7 @@ HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
 }    
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   

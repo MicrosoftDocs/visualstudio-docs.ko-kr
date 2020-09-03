@@ -1,5 +1,5 @@
 ---
-title: 아이디버그코드컨텍스트3::겟모듈 | 마이크로 소프트 문서
+title: 'IDebugCodeContext3:: GetModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 20e4bbc32aef11c91e4f5c642bb48acb26633fe1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734200"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
-디버그 모듈의 인터페이스에 대한 참조를 검색합니다.
+디버그 모듈의 인터페이스에 대 한 참조를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,13 +39,13 @@ public int GetModule(
 
 ## <a name="parameters"></a>매개 변수
 `ppModule`\
-【아웃】 디버그 모듈 인터페이스에 대한 참조입니다.
+제한이 디버그 모듈 인터페이스에 대 한 참조입니다.
 
-## <a name="return-value"></a>Return Value
-성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
-다음 예제에서는 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스를 노출 하는 **CDebugCodeContext** 개체에 대 한이 메서드를 구현 하는 방법을 보여 줍니다.
+## <a name="example"></a>예
+다음 예제에서는 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스를 노출 하는 **CDebugCodeContext** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)
@@ -65,5 +65,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

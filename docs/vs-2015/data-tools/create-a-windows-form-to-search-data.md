@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81980f38cbd8fb595530cc52b2cf32056feb43a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670059"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>데이터 검색을 위한 Windows Form 만들기
@@ -52,7 +52,7 @@ ms.locfileid: "72670059"
 
 - 매개 변수를 폼에 입력 하 고 매개 변수가 있는 쿼리를 실행 합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 완료하려면 다음 사항이 필요합니다.
 
 - Northwind 샘플 데이터베이스에 대한 액세스.
@@ -81,7 +81,7 @@ ms.locfileid: "72670059"
 
 3. **데이터 소스 형식 선택** 페이지에서 **데이터베이스** 를 선택하고 **다음**을 클릭합니다.
 
-4. **데이터 연결 선택** 페이지에서 다음 중 한 가지를 수행합니다.
+4. **데이터 연결 선택** 페이지에서 다음 중 하나를 수행 합니다.
 
     - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
@@ -97,8 +97,8 @@ ms.locfileid: "72670059"
 
      **NorthwindDataSet**가 프로젝트에 추가되면 **고객** 테이블이 **데이터 원본** 창에 나타납니다.
 
-## <a name="create-the-form"></a>양식 만들기
- **데이터 원본** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
+## <a name="create-the-form"></a> 폼 만들기
+ **데이터 소스** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>폼에서 데이터 바인딩된 컨트롤을 만들려면
 
@@ -115,7 +115,7 @@ ms.locfileid: "72670059"
 
 1. <xref:System.Windows.Forms.DataGridView> 컨트롤을 선택한 다음, **데이터** 메뉴에서 **쿼리 추가**를 선택합니다.
 
-2. **검색 조건 작성기** 대화 상자의 **새 쿼리 이름** 영역에 `FillByCity`을 입력 합니다.
+2. `FillByCity` **검색 조건 작성기** 대화 상자에서 **새 쿼리 이름** 영역을 입력 합니다.
 
 3. 쿼리의 **쿼리 텍스트** 영역에 `WHERE City = @City`를 추가합니다.
 
@@ -128,7 +128,7 @@ ms.locfileid: "72670059"
      `WHERE City = @City`
 
     > [!NOTE]
-    > Access 및 OLE DB 데이터 원본은 물음표 ('? ')를 사용 하 여 매개 변수를 표시 하므로 WHERE 절은 `WHERE City = ?`와 같습니다.
+    > Access 및 OLE DB 데이터 원본은 물음표 ('? ')를 사용 하 여 매개 변수를 표시 하므로 WHERE 절은와 `WHERE City = ?` 같습니다.
 
 4. **확인**을 클릭하여 **검색 조건 작성기** 대화 상자를 닫습니다.
 
@@ -152,5 +152,5 @@ ms.locfileid: "72670059"
 
 - 데이터 세트을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770720"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 요소 (Visual Studio 항목 템플릿)
@@ -53,7 +53,7 @@ ms.locfileid: "85770720"
 | `SubType` | 선택적 특성입니다.<br /><br /> 다중 파일 항목 템플릿에서 항목의 하위 유형을 지정 합니다. 이 값은 항목을 여는 데 사용할 편집기를 결정 하는 데 사용 됩니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . |
 | `CustomTool` | 선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 사용자 지정 도구를 설정 합니다. |
 | `ItemType` | 선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 ItemType을 설정 합니다. |
-| `ReplaceParameters` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때이 항목에 대체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`입니다. |
+| `ReplaceParameters` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때이 항목에 대체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다. |
 | `TargetFileName` | 선택적 특성입니다.<br /><br /> 템플릿에서 만든 항목의 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여 항목 이름을 만드는 데 유용 합니다. |
 
 ### <a name="child-elements"></a>자식 요소
@@ -71,7 +71,7 @@ ms.locfileid: "85770720"
  `string`템플릿 *.zip* 파일의 파일 이름을 나타내는입니다.
 
 ## <a name="remarks"></a>설명
- `ProjectItem`은의 선택적 자식 요소입니다 `TemplateContent` .
+ `ProjectItem` 은의 선택적 자식 요소입니다 `TemplateContent` .
 
  `TargetFileName`특성을 사용 하 여 매개 변수를 사용 하 여 파일 이름을 바꿀 수 있습니다. 예를 들어 파일을 *MyFile* *.zip* 파일의 루트 디렉터리에 있지만 **새 항목 추가** 대화 상자에서 사용자가 제공한 파일 이름에 따라 파일 이름을 지정 하려는 경우에는 다음 XML을 사용 합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "85770720"
 
  이 템플릿에서 항목이 생성 되 면 파일 이름은 사용자가 **새 항목 추가** 대화 상자에 입력 한 이름을 기반으로 합니다. 다중 파일 항목 템플릿을 만들 때 유용 합니다. 자세한 내용은 [방법: 다중 파일 항목 템플릿](../ide/how-to-create-multi-file-item-templates.md) 및 [템플릿 매개 변수](../ide/template-parameters.md)만들기를 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 클래스의 표준 항목 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```
