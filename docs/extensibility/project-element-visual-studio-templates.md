@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: Project 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702000"
 ---
-# <a name="project-element-visual-studio-templates"></a>프로젝트 요소(비주얼 스튜디오 템플릿)
-프로젝트에 추가할 파일 또는 디렉터리를 지정합니다.
+# <a name="project-element-visual-studio-templates"></a>Project 요소 (Visual Studio 템플릿)
+프로젝트에 추가할 파일 또는 디렉터리를 지정 합니다.
 
- \<VS템플릿 \<> 템플릿콘텐츠> \<프로젝트>
+ \<VSTemplate> \<TemplateContent>
+ \<Project>
 
 ## <a name="syntax"></a>구문
 
@@ -43,37 +44,37 @@ ms.locfileid: "80702000"
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
-|`File`|필수 특성입니다.<br /><br /> 템플릿 *.zip* 파일에서 프로젝트 파일의 이름을 지정합니다.|
-|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 프로젝트 파일에 템플릿에서 프로젝트를 만들 때 대체해야 하는 매개 변수 값이 있는지 여부를 지정하는 부울 값입니다. 기본값은 `false`입니다.|
-|`TargetFileName`|선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 프로젝트 파일의 이름을 지정합니다.|
-|`IgnoreProjectParameter`|선택적 특성입니다.<br /><br /> 프로젝트를 현재 솔루션에 추가할지 여부를 지정합니다. 사용자 지정 매개 변수의 값인 "$*myCustomParameter*$"가 매개 변수 대체 파일에 있으면 프로젝트가 만들어지지만 현재 열려 있는 솔루션의 일부로 추가되지 는 않습니다.|
+|`File`|필수 특성입니다.<br /><br /> 템플릿 *.zip* 파일에 있는 프로젝트 파일의 이름을 지정 합니다.|
+|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 프로젝트 파일에 템플릿에서 프로젝트를 만들 때 교체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|
+|`TargetFileName`|선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 프로젝트 파일의 이름을 지정 합니다.|
+|`IgnoreProjectParameter`|선택적 특성입니다.<br /><br /> 프로젝트를 현재 솔루션에 추가할지 여부를 지정 합니다. 사용자 지정 매개 변수 값 "$*Mycustomparameter*$"가 매개 변수 대체 파일에 있으면 프로젝트가 만들어지지만 현재 열려 있는 솔루션의 일부로 추가 되지 않습니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[폴더](../extensibility/folder-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 폴더를 지정합니다.|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 파일을 지정합니다.|
+|[폴더](../extensibility/folder-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 폴더를 지정 합니다.|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 파일을 지정 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|필수 요소입니다.|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|필수적 요소입니다.|
 
 ## <a name="remarks"></a>설명
  `Project`은 `TemplateContent`의 선택적 자식 요소입니다.
 
- 요소는 `Project` 프로젝트를 지정하는 데 사용되므로 프로젝트 템플릿에서만 유효합니다.
+ 요소는 프로젝트를 지정할 때 `Project` 사용 되므로 프로젝트 템플릿에만 사용할 수 있습니다.
 
- `Project`요소에는 [폴더](../extensibility/folder-element-visual-studio-project-templates.md) 자식 요소 또는 [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) 자식 `Folder` 요소가 `ProjectItem` 있을 수 있지만 자식 요소와 자식 요소가 혼합되지는 않습니다.
+ `Project`요소에는 자식 요소 또는 [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) 자식 [요소가 있을 수](../extensibility/folder-element-visual-studio-project-templates.md) 있지만이 요소와 자식 요소를 함께 사용할 수는 없습니다 `Folder` `ProjectItem` .
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]새 프로젝트 대화 상자에서 사용자가 입력한 이름에 따라 프로젝트 파일 이름을 자동으로 이름이 **바꿉니다.** 템플릿으로 `TargetFileName` 만든 프로젝트 파일에 대한 대체 파일 이름을 제공하려는 경우 특성을 사용합니다.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**새 프로젝트** 대화 상자에서 사용자가 입력 한 이름에 따라 프로젝트 파일 이름의 이름을 자동으로 바꿉니다. `TargetFileName`템플릿을 사용 하 여 만든 프로젝트 파일에 대 한 대체 파일 이름을 제공 하려는 경우 특성을 사용 합니다.
 
-## <a name="example"></a>예제
- 다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 합니다.
+## <a name="example"></a>예
+ 다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -100,7 +101,7 @@ ms.locfileid: "80702000"
 ```
 
 ## <a name="see-also"></a>참조
-- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [ProjectItem 요소(비주얼 스튜디오 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)
-- [폴더 요소(Visual Studio 프로젝트 템플릿)](../extensibility/folder-element-visual-studio-project-templates.md)
+- [ProjectItem 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)
+- [Folder 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/folder-element-visual-studio-project-templates.md)

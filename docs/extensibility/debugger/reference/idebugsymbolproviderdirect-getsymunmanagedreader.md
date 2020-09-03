@@ -1,5 +1,5 @@
 ---
-title: IDebug 기호공급자직접::GetSymUn관리리더 | 마이크로 소프트 문서
+title: 'Idebug심볼 Providerdirect:: GetSymUnmanagedReader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fbac2e234cfc991f27e08dc33bdc895c22d501fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718927"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
-관리되지 않는 코드에 대한 기호 판독기를 검색합니다.
+비관리 코드에 대 한 기호 판독기를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,16 +44,16 @@ int GetSymUnmanagedReader (
 
 ## <a name="parameters"></a>매개 변수
 `ulAppDomainID`\
-【인】 응용 프로그램 도메인의 식별자입니다.
+진행 응용 프로그램 도메인의 식별자입니다.
 
 `guidModule`\
-【인】 모듈의 고유 식별자입니다.
+진행 모듈의 고유 식별자입니다.
 
 `ppSymUnmanagedReader`\
-【아웃】 관리되지 않는 코드에 대한 기호 판독기를 나타내는 개체를 반환합니다.
+제한이 비관리 코드에 대 한 기호 판독기를 나타내는 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
- 성공하면 반환합니다. `S_OK` 그렇지 않으면 오류 코드를 반환합니다.
+## <a name="return-value"></a>반환 값
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

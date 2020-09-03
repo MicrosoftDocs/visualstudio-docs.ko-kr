@@ -12,10 +12,10 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a2450aee436b15dfa7154ce96885456eb15a885
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870031"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 참조
@@ -29,139 +29,139 @@ ms.locfileid: "68870031"
 
  [폴더 확장 열기](https://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d) Visual Studio 2017에서 폴더 열기에 대 한 작업 영역 API입니다.
 
- <xref:Microsoft.VisualStudio.TextManager.Interop>편집기 및 언어 서비스에 사용 되는 레거시 interop 인터페이스입니다.
+ <xref:Microsoft.VisualStudio.TextManager.Interop> 편집기 및 언어 서비스에 사용 되는 레거시 interop 인터페이스입니다.
 
- <xref:Microsoft.VisualStudio.Editor>새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Editor> 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Language.Intellisense>IntelliSense 용 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Language.Intellisense> IntelliSense 용 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Language.StandardClassification>새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Language.StandardClassification> 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text>새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text> 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Adornments>새 장식 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Adornments> 새 장식 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Classification>분류를 위해 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Classification> 분류를 위해 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Differencing>새 편집기에서 차이점 보관용으로 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Differencing> 새 편집기에서 차이점 보관용으로 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Document>문서에 대 한 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Document> 문서에 대 한 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Editor>새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Editor> 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop>끌어서 놓기를 위해 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Editor.DragDrop> 끌어서 놓기를 위해 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods>새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods> 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Formatting>서식 지정을 위해 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Formatting> 서식 지정을 위해 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.IncrementalSearch>증분 검색을 위해 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.IncrementalSearch> 증분 검색을 위해 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Operations>새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Operations> 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Outlining>새 편집기에서 개요를 표시 하는 데 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Outlining> 새 편집기에서 개요를 표시 하는 데 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Projection>프로젝션을 위해 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Projection> 프로젝션을 위해 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Text.Tagging>태그 지정을 위해 새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Text.Tagging> 태그 지정을 위해 새 편집기에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Utilities>새 편집기에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Utilities> 새 편집기에서 사용 되는 클래스입니다.
 
  <xref:Microsoft.VisualStudio.PlatformUI>
 
  <xref:Microsoft.VisualStudio.Shell.Interop>
 
- <xref:Microsoft.VisualStudio>Visual Studio 상수 및 도우미의 클래스입니다.
+ <xref:Microsoft.VisualStudio> Visual Studio 상수 및 도우미의 클래스입니다.
 
- <xref:Microsoft.VisualStudio.CommandBars>Visual Studio 명령 모음에 대 한 클래스입니다.
+ <xref:Microsoft.VisualStudio.CommandBars> Visual Studio 명령 모음에 대 한 클래스입니다.
 
- <xref:Microsoft.VisualStudio.ComponentModelHost>Visual Studio의 MEF (Managed Extensibility Framework)에 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.ComponentModelHost> Visual Studio의 MEF (Managed Extensibility Framework)에 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Designer.Interfaces>Visual Studio 디자이너에 사용 되는 인터페이스입니다.
+ <xref:Microsoft.VisualStudio.Designer.Interfaces> Visual Studio 디자이너에 사용 되는 인터페이스입니다.
 
- <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner>Visual Studio 프로젝트 디자이너와 함께 사용 되는 인터페이스입니다.
+ <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner> Visual Studio 프로젝트 디자이너와 함께 사용 되는 인터페이스입니다.
 
- <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish>응용 프로그램을 게시 하는 데 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish> 응용 프로그램을 게시 하는 데 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.OLE.Interop>Visual Studio에서 OLE 구성 요소에 사용 되는 Interop 인터페이스입니다.
+ <xref:Microsoft.VisualStudio.OLE.Interop> Visual Studio에서 OLE 구성 요소에 사용 되는 Interop 인터페이스입니다.
 
- <xref:Microsoft.VisualStudio.Package>Visual Studio의 관리 되는 언어 서비스에 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Package> Visual Studio의 관리 되는 언어 서비스에 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.PlatformUI>Visual Studio shell에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.PlatformUI> Visual Studio shell에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.PlatformUI.OleComponentSupport>Microsoft 내부용 으로만 사용 됩니다.
+ <xref:Microsoft.VisualStudio.PlatformUI.OleComponentSupport> Microsoft 내부용 으로만 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.ProjectAggregator>Visual Studio 프로젝트에 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.ProjectAggregator> Visual Studio 프로젝트에 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Settings>Visual Studio shell에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Settings> Visual Studio shell에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Shell>Visual Studio shell에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Shell> Visual Studio shell에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Shell.Design>Visual Studio shell에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Shell.Design> Visual Studio shell에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Shell.Design.Serialization>Visual Studio shell에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Shell.Design.Serialization> Visual Studio shell에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>Visual Studio shell에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom> Visual Studio shell에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Shell.Flavor>Visual Studio 프로젝트에 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Shell.Flavor> Visual Studio 프로젝트에 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.Shell.Interop>Visual Studio 셸에 사용 되는 Interop 인터페이스입니다.
+ <xref:Microsoft.VisualStudio.Shell.Interop> Visual Studio 셸에 사용 되는 Interop 인터페이스입니다.
 
- <xref:Microsoft.VisualStudio.Shell.Settings>Visual Studio shell에서 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.Shell.Settings> Visual Studio shell에서 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.VSHelp>도움말에 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.VSHelp> 도움말에 사용 되는 클래스입니다.
 
- <xref:VSLangProj>언어 서비스 프로젝트에 사용 되는 클래스입니다.
+ <xref:VSLangProj> 언어 서비스 프로젝트에 사용 되는 클래스입니다.
 
- <xref:XamlGeneratedNamespace>Microsoft 내부용 으로만 사용 됩니다.
+ <xref:XamlGeneratedNamespace> Microsoft 내부용 으로만 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.ManagedInterfaces9>Visual Studio에 사용 되는 인터페이스입니다.
+ <xref:Microsoft.VisualStudio.ManagedInterfaces9> Visual Studio에 사용 되는 인터페이스입니다.
 
- <xref:Microsoft.VisualStudio.WCFReference.Interop>Windows Communication Framework에 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.WCFReference.Interop> Windows Communication Framework에 사용 되는 클래스입니다.
 
  테스트 도구에 사용 되는 [VisualStudio. Microsoft.visualstudio.testtools.uitest.common.uimap.uimap>](/previous-versions/aa993343(v=vs.120)) 클래스입니다.
 
- <xref:EnvDTE>Visual Studio 자동화에 사용 됩니다.
+ <xref:EnvDTE> Visual Studio 자동화에 사용 됩니다.
 
- <xref:Extensibility>Visual Studio 자동화에 사용 됩니다.
+ <xref:Extensibility> Visual Studio 자동화에 사용 됩니다.
 
- <xref:EnvDTE80>Visual Studio 자동화에 사용 됩니다.
+ <xref:EnvDTE80> Visual Studio 자동화에 사용 됩니다.
 
- <xref:EnvDTE90>Visual Studio 자동화에 사용 됩니다.
+ <xref:EnvDTE90> Visual Studio 자동화에 사용 됩니다.
 
- <xref:EnvDTE90a>Visual Studio 자동화에 사용 됩니다.
+ <xref:EnvDTE90a> Visual Studio 자동화에 사용 됩니다.
 
- <xref:EnvDTE100>Visual Studio 자동화에 사용 됩니다.
+ <xref:EnvDTE100> Visual Studio 자동화에 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.VCCodeModel>Visual C++ project automation에 사용 됩니다.
+ <xref:Microsoft.VisualStudio.VCCodeModel> Visual C++ 프로젝트 자동화에 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.VCProject>Visual C++ project automation에 사용 되는 클래스입니다.
+ <xref:Microsoft.VisualStudio.VCProject> Visual C++ 프로젝트 자동화에 사용 되는 클래스입니다.
 
- <xref:Microsoft.VisualStudio.VCProjectEngine>Visual C++ project automation에 사용 됩니다.
+ <xref:Microsoft.VisualStudio.VCProjectEngine> Visual C++ 프로젝트 자동화에 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.VsWizard>Visual Studio 마법사에 사용 됩니다.
+ <xref:Microsoft.VisualStudio.VsWizard> Visual Studio 마법사에 사용 됩니다.
 
- <xref:VSLangProj>및 Visual Basic C# 프로젝트 자동화에 사용 됩니다.
+ <xref:VSLangProj> C # 및 Visual Basic 프로젝트 자동화에 사용 됩니다.
 
- <xref:VSLangProj2>및 Visual Basic C# 프로젝트 자동화에 사용 됩니다.
+ <xref:VSLangProj2> C # 및 Visual Basic 프로젝트 자동화에 사용 됩니다.
 
- <xref:VSLangProj80>및 Visual Basic C# 프로젝트 자동화에 사용 됩니다.
+ <xref:VSLangProj80> C # 및 Visual Basic 프로젝트 자동화에 사용 됩니다.
 
- <xref:VslangProj90>및 Visual Basic C# 프로젝트 자동화에 사용 됩니다.
+ <xref:VslangProj90> C # 및 Visual Basic 프로젝트 자동화에 사용 됩니다.
 
- <xref:VslangProj100>및 Visual Basic C# 프로젝트 자동화에 사용 됩니다.
+ <xref:VslangProj100> C # 및 Visual Basic 프로젝트 자동화에 사용 됩니다.
 
- <xref:VSLangProj110>및 Visual Basic C# 프로젝트 자동화에 사용 됩니다.
+ <xref:VSLangProj110> C # 및 Visual Basic 프로젝트 자동화에 사용 됩니다.
 
- <xref:VSLangProj140>및 Visual Basic C# 프로젝트 자동화에 사용 됩니다.
+ <xref:VSLangProj140> C # 및 Visual Basic 프로젝트 자동화에 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.Language.CallHierarchy>및 Visual Basic C# 자동화에 사용 됩니다.
+ <xref:Microsoft.VisualStudio.Language.CallHierarchy> C # 및 Visual Basic 자동화에 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>및 Visual Basic C# 자동화에 사용 됩니다.
+ <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces> C # 및 Visual Basic 자동화에 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.Threading>Visual Studio 스레딩에 사용 됩니다.
+ <xref:Microsoft.VisualStudio.Threading> Visual Studio 스레딩에 사용 됩니다.
 
- <xref:Microsoft.VisualStudio.ConnectedServices?qualifyHint=False&autoUpgrade=True>Visual Studio 연결 된 서비스에 사용 됩니다.
+ <xref:Microsoft.VisualStudio.ConnectedServices?qualifyHint=False&autoUpgrade=True> Visual Studio 연결 된 서비스에 사용 됩니다.
 
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) 열거형은 IntelliSense 호스트 플래그를 지정 합니다.
 
@@ -181,37 +181,37 @@ ms.locfileid: "68870031"
 
  [용어집](../extensibility/visual-studio-sdk-glossary.md) Visual Studio SDK 설명서를 읽을 때 사용할 유용한 용어와 해당 정의의 목록을 제공 합니다.
 
- <xref:Microsoft.Build.BuildEngine>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.BuildEngine> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Construction>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Construction> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Conversion>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Conversion> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Debugging>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Debugging> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Evaluation>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Evaluation> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Exceptions>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Exceptions> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Execution>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Execution> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Framework>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Framework> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Framework.XamlTypes>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Framework.XamlTypes> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Logging>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Logging> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Tasks>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Tasks> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Tasks.Hosting>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Tasks.Hosting> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Tasks.Xaml>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Tasks.Xaml> MSBuild에 사용 됩니다.
 
- <xref:Microsoft.Build.Utilities>MSBuild에 사용 됩니다.
+ <xref:Microsoft.Build.Utilities> MSBuild에 사용 됩니다.
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
  [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md) Visual Studio와 통합 되는 제품을 개발 하는 데 도움이 되는 설명서, 샘플 및 코드를 포함 합니다.

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: GetAddressesInModuleFromPosition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471997a5497413869c3c4662592f4c585c2d76d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194820"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-디버그 주소 배열에 지정된 된 모듈에 문서 위치를 매핑합니다.  
+지정 된 모듈의 문서 위치를 디버그 주소 배열에 매핑합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,28 +51,28 @@ int GetAddressesInModuleFromPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `ulAppDomainID`  
- [in] 응용 프로그램 도메인 식별자입니다.  
+ 진행 응용 프로그램 도메인 식별자입니다.  
   
  `guidModule`  
- [in] 모듈의 고유 식별자입니다.  
+ 진행 모듈의 고유 식별자입니다.  
   
  `pDocPos`  
- [in] 문서 위치입니다.  
+ 진행 문서 위치입니다.  
   
  `fStatmentOnly`  
- [in] 경우 `TRUE`를 단일 문으로 디버그 주소를 제한 합니다.  
+ 진행 인 경우 `TRUE` 디버그 주소를 단일 문으로 제한 합니다.  
   
  `ppEnumBegAddresses`  
- [out] 이 문 또는 줄을 사용 하 여 연결 된 시작 디버그 주소에 대 한 열거자를 반환 합니다.  
+ 제한이 이 문이나 줄과 연결 된 시작 디버그 주소에 대 한 열거자를 반환 합니다.  
   
  `ppEnumEndAddresses`  
- [out] 이 문 또는 줄에 연관 된 끝 디버그 주소에 대 한 열거자를 반환 합니다.  
+ 제한이 이 문이나 줄과 연결 된 끝 디버깅 주소에 대 한 열거자를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
@@ -223,5 +223,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

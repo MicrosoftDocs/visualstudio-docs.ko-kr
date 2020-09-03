@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5fc0f5a11d29fdb1ee570dc32066fdd492ed8db
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871545"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
@@ -34,7 +34,7 @@ ms.locfileid: "68871545"
 
  네이티브 코드의 경우 Visual Studio 프로파일러 API는 VSPerf.dll에 있습니다. 헤더 파일, VSPerf.h 및 가져오기 라이브러리, VSPerf.lib는 Microsoft Visual Studio 9\Team Tools\Performance Tools 디렉터리에 있습니다.
 
- 관리되는 코드의 경우 프로파일러 API는 Microsoft.VisualStudio.Profiler.dll에 있습니다. 이 DLL은 Microsoft Visual Studio 9\Team Tools\Performance Tools 디렉터리에 있습니다. 자세한 내용은 [Profiler](/previous-versions/ms242704(v=vs.140))를 참조 하세요.
+ 관리되는 코드의 경우 프로파일러 API는 Microsoft.VisualStudio.Profiler.dll에 있습니다. 이 DLL은 Microsoft Visual Studio 9\Team Tools\Performance Tools 디렉터리에 있습니다. 자세한 내용은 [Profiler](/previous-versions/ms242704(v=vs.140))를 참조하세요.
 
 ## <a name="prerequisites"></a>필수 구성 요소
  이 연습에서는 사용자가 선택한 개발 환경이 디버깅 및 샘플링을 지원하도록 구성되었다고 가정합니다. 다음 항목에서는 이러한 필수 구성 요소의 개요를 제공합니다.
@@ -147,9 +147,9 @@ DataCollection.CurrentId);
 
      **VsPefCLREnv /traceon**
 
-3. **VSInstr \<filename>.exe** 명령을 입력합니다.
+3. 다음 명령을 입력 합니다.**VSInstr \<filename> **
 
-4. **VSPerfCmd /start:trace /output:\<filename>.vsp** 명령을 입력합니다.
+4. 다음 명령을 입력 합니다.**VSPerfCmd/start: trace/output: \<filename> .vsp**
 
 5. **VSPerfCmd /globaloff** 명령을 입력합니다.
 
@@ -157,13 +157,13 @@ DataCollection.CurrentId);
 
 7. **VSPerfCmd /shutdown** 명령을 입력합니다.
 
-8. **VSPerfReport /calltrace:\<filename>.vsp** 명령을 입력합니다.
+8. 다음 명령을 입력 합니다.**VSPerfReport/calltrace: \<filename> .vsp**
 
      결과 성능 데이터와 함께 현재 디렉터리에 .csv 파일이 만들어집니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>추가 정보
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
-- [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio 프로파일러 API 참조 (네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [시작](../profiling/getting-started-with-performance-tools.md)
 - [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)

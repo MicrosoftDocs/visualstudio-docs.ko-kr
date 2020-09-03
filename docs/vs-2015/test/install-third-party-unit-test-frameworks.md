@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660521"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>타사 단위 테스트 프레임워크 설치
@@ -20,7 +20,7 @@ ms.locfileid: "72660521"
 
 Visual Studio 테스트 탐색기는 탐색기의 어댑터 인터페이스를 개발한 단위 테스트 프레임워크를 실행할 수 있습니다. 프레임워크 설치 프로그램은 이진 파일을 설치하고, 지원하는 언어의 Visual Studio 프로젝트 템플릿을 추가합니다. 템플릿으로 프로젝트를 만들면 프레임워크가 테스트 탐색기에 등록됩니다. Visual Studio 솔루션에는 다양한 프레임워크를 사용하고 다양한 언어로 대상이 지정되는 단위 테스트 프로젝트가 포함될 수 있습니다. 테스트 탐색기는 이들 모두를 실행합니다.
 
- **Requirements**
+ **요구 사항**
 
 - Visual Studio Enterprise, Visual Studio Professional
 
@@ -52,11 +52,11 @@ Visual Studio 테스트 탐색기는 탐색기의 어댑터 인터페이스를 �
 
 4. [Visual Studio Marketplace](https://marketplace.visualstudio.com)를 엽니다.
 
-5. **찾아보기**를 선택합니다.
+5. **찾아보기**를 선택 합니다.
 
 6. **범주** 목록에서 **도구** 노드를 확장하고 **테스트**를 선택합니다.
 
 7. 결과 목록에서 프레임워크를 선택하여 해당 도구의 Visual Studio 갤러리 페이지로 이동합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [코드 단위 테스트](../test/unit-test-your-code.md)

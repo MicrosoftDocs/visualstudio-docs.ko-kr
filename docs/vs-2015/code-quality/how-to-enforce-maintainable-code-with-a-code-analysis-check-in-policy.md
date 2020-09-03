@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660212"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>방법: 코드 분석 체크 인 정책을 통해 유지 관리할 수 있는 코드 적용
@@ -25,7 +25,7 @@ ms.locfileid: "72660212"
 
  개발자는 코드 분석 체크 인 정책을 통해 유지 관리 가능한 코드를 적용 하기 위해 상속, 클래스 결합, 유지 관리 인덱스 및 복잡성 규칙의 깊이를 사용할 수 있습니다. 이러한 규칙 중 4 개는 코드 분석 정책 편집기의 "유지 관리 규칙" 범주 아래에 있습니다.
 
- @No__t_0에 대 한 버전 제어 관리자는 체크 인 정책 요구 사항에 코드 분석 유지 관리 규칙을 추가할 수 있습니다. 이러한 체크 인 정책을 사용 하려면 체크 인을 시작 하기 전에 개발자가 이러한 규칙 변경에 따라 코드 분석을 실행 해야 합니다.
+ 에 대 한 버전 제어 관리자는 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 체크 인 정책 요구 사항에 코드 분석 유지 관리 규칙을 추가할 수 있습니다. 이러한 체크 인 정책을 사용 하려면 체크 인을 시작 하기 전에 개발자가 이러한 규칙 변경에 따라 코드 분석을 실행 해야 합니다.
 
 ### <a name="to-open-the-code-analysis-policy-editor"></a>코드 분석 정책 편집기를 열려면
 
@@ -47,17 +47,17 @@ ms.locfileid: "72660212"
 
 2. 다음 규칙의 확인란을 선택 합니다.
 
-    - 상속 수준: **CA1501 AvoidExcessiveInheritance** : 5 수준 이상으로 경고
+    - 상속 깊이: **CA1501 AvoidExcessiveInheritance** : 5 수준 이상으로 경고
 
-    - 복잡성: **CA1502 AvoidExcessiveComplexity** : 25 개가 넘는 경고
+    - 복잡성: **CA1502 AvoidExcessiveComplexity** : 25 이상의 경고
 
-    - 유지 관리 인덱스: **CA1505 AvoidUnmaintainableCode** : 경고 20 미만
+    - 유지 관리 인덱스: **CA1505 AvoidUnmaintainableCode** : 20 미만의 경고
 
-    - 클래스 결합: **CA1506 AvoidExcessiveClassCoupling** : 클래스에 대해 80 이상에 대 한 경고와 메서드의 30 개 이상에 대 한 경고
+    - 클래스 결합: **CA1506 AvoidExcessiveClassCoupling** : 클래스의 경우 80 이상, 메서드의 경우 30 개 이상에 대 한 경고
 
     - 또한 규칙 위반으로 인해 빌드를 방지 하려면 규칙 설명 옆에 있는 경고를 **오류로 처리** 확인란을 선택 합니다.
 
 3. **확인**을 클릭합니다. 이제 새 체크 인 정책이 이후 체크 인에 적용 됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  코드 [메트릭 값](../code-quality/code-metrics-values.md) [코드 분석 체크 인 정책 만들기 및 사용](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

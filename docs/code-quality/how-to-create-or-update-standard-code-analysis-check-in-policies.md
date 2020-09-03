@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371900"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
@@ -49,7 +49,7 @@ ms.locfileid: "85371900"
 
 다음 옵션을 선택 하거나 선택 취소 합니다.
 
-|옵션|Description|
+|옵션|설명|
 |------------|-----------------|
 |**현재 솔루션에 속하는 파일만 포함 하도록 체크 인을 적용 합니다.**|코드 분석은 솔루션 및 프로젝트 구성 파일에 지정 된 파일에 대해서만 실행할 수 있습니다. 이 정책은 솔루션의 일부인 모든 코드가 분석 됨을 보장 합니다.|
 |**C/c + + 코드 분석 (/analyze) 적용**|코드 분석을 체크 인하기 전에 실행 하려면 모든 C 또는 c + + 프로젝트를/analyze 컴파일러 옵션으로 빌드해야 합니다.|
@@ -67,6 +67,6 @@ ms.locfileid: "85371900"
 
 사용자 지정 체크 인 정책 규칙 집합을 만들고 구현 하는 방법에 대 한 자세한 내용은 [관리 코드에 대 한 사용자 지정 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

@@ -23,16 +23,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196415"
 ---
 # <a name="debugging-native-code"></a>네이티브 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 단원에서는 네이티브 애플리케이션의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용 하는 방법은 참조 하세요 [디버거 로드맵](../debugger/debugger-basics.md)합니다.  
+이 단원에서는 네이티브 애플리케이션의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용 하는 메커니즘은 [디버거 로드맵](../debugger/debugger-basics.md)을 참조 하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: 최적화된 코드 디버그](../debugger/how-to-debug-optimized-code.md)  
@@ -59,7 +59,7 @@ ms.locfileid: "68196415"
  [COM 및 ActiveX 디버깅](../debugger/com-and-activex-debugging.md)  
  COM 및 ActiveX 디버깅에 사용할 수 있는 도구와 COM 및 ActiveX 애플리케이션 디버깅에 대한 정보를 제공합니다.  
   
- [방법: 네이티브 DLL 디버그](../debugger/how-to-debug-native-dlls.md)  
+ [방법: 네이티브 DLL 디버깅](../debugger/how-to-debug-native-dlls.md)  
  네이티브 코드에서 DLL 디버깅 설정 방법에 대해 설명합니다.  
   
  [방법: 삽입한 코드 디버그](../debugger/how-to-debug-injected-code.md)  
@@ -75,6 +75,6 @@ ms.locfileid: "68196415"
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)  
  자세한 디버깅 설명서 단원으로 연결되는 링크를 제공합니다. 이러한 정보에는 디버거의 새로운 기능, 설정 및 준비, 중단점, 예외 처리, 편집하며 계속하기, 관리 코드 디버깅, 네이티브 코드 디버깅, SQL 디버깅, 사용자 인터페이스 참조 등이 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)

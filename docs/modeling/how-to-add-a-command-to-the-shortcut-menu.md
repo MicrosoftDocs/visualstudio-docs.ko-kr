@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545719"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
@@ -48,7 +48,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
    그 외의 경우에는 MEF 메서드를 사용하여 명령을 정의하는 것이 좋습니다. 자세한 내용은 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)을 참조 하세요.
 
-## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a>명령에서 명령을 선언 합니다. Vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> 명령에서 명령을 선언 합니다. Vsct
  DslPackage\Commands.vsct에서 메뉴 명령을 선언합니다. 이러한 정의는 메뉴 항목의 레이블 및 메뉴에서 항목이 표시되는 위치를 지정합니다.
 
  편집 하는 파일의 명령인 vsct는 디렉터리 *Visual STUDIO SDK 설치 경로*\VisualStudioIntegration\Common\Inc.에 있는 여러 .h 파일에서 정의를 가져옵니다. 여기에는 DSL 정의에서 생성 되는 GeneratedVsct도 포함 됩니다.
@@ -128,7 +128,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
     - `My Context Menu Command`
 
-## <a name="update-the-package-version-in-packagett"></a><a name="version"></a>Package.tt에서 패키지 버전 업데이트
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a> Package.tt에서 패키지 버전 업데이트
  명령을 추가하거나 변경할 때마다 새 DSL 버전을 릴리스하기 전에 패키지 클래스에 적용되는 `version`의 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 매개 변수를 업데이트합니다.
 
  패키지 클래스는 생성된 파일에서 정의되므로 Package.cs 파일을 생성하는 텍스트 템플릿 파일에서 특성을 업데이트합니다.
@@ -143,7 +143,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a>명령의 동작을 정의 합니다.
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a> 명령의 동작을 정의 합니다.
 
 DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로 *\<YourDslName>* `CommandSet` 입니다. 클래스의 이름을 확인 하 고 해당 내용을 검사 하 여를 시작 하는 것이 좋습니다.
 
@@ -222,15 +222,15 @@ OnStatus 메서드에서는 다음 코드 조각이 유용하게 사용되는 �
 
 - `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
 
-- `this.IsDiagramSelected()` - `true`사용자가 다이어그램의 빈 부분을 클릭 한 경우
+- `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분을 클릭 한 경우
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-사용자가 여러 개체를 선택 하지 않았습니다.
+- `this.IsSingleSelection()` -사용자가 여러 개체를 선택 하지 않았습니다.
 
-- `this.SingleSelection`-사용자가 마우스 오른쪽 단추로 클릭 한 모양 또는 다이어그램
+- `this.SingleSelection` -사용자가 마우스 오른쪽 단추로 클릭 한 모양 또는 다이어그램
 
-- `shape.ModelElement as MyLanguageElement`-도형이 나타내는 모델 요소입니다.
+- `shape.ModelElement as MyLanguageElement` -도형이 나타내는 모델 요소입니다.
 
 일반적으로는 선택한 항목에 따라 `Visible` 속성이 설정되고 선택한 요소의 상태에 따라 `Enabled` 속성이 설정되도록 지정합니다.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > VSCT 파일의 Symbols 섹션을 변경하는 경우 이러한 선언도 일치하도록 변경해야 합니다. 또한 Package.tt에서 버전 번호도 증분해야 합니다.
 
- 이 명령 집합의 일부분으로 메뉴 명령을 등록합니다. `GetMenuCommands()`는 다이어그램이 초기화 될 때 한 번 호출 됩니다.
+ 이 명령 집합의 일부분으로 메뉴 명령을 등록합니다. `GetMenuCommands()` 는 다이어그램이 초기화 될 때 한 번 호출 됩니다.
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -357,7 +357,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 이전 버전 패키지를 제거했는지 확인합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

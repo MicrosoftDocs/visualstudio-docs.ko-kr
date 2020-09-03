@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78923dfd2873b53790421cde3fe01f024e267202
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587703"
 ---
 # <a name="cryptography-warnings"></a>암호화 경고
@@ -20,5 +20,5 @@ ms.locfileid: "75587703"
 
 |규칙|설명|
 |----------|-----------------|
-|[CA5350: 취약한 암호화 알고리즘 사용 안 함](../code-quality/ca5350.md)|오늘날 여러 가지 이유로 약한 암호화 알고리즘 및 해시 함수가 사용되지만 데이터의 무결성과 기밀성을 보장하기 위해서는 이 방법을 사용하지 않아야 합니다.        이 규칙은 코드에 TripleDES, SHA1 또는 RIPEMD160 알고리즘이 있을 때 발생합니다.|
-|[CA5351 끊어진 암호화 알고리즘을 사용하지 마십시오.](../code-quality/ca5351.md)|끊어진 암호화 알고리즘은 안전하지 않은 것으로 간주되므로 사용해서는 안 됩니다. 이 규칙은 코드에 MD5 해시 알고리즘 또는 DES나 RC2 암호화 알고리즘이 있을 때 트리거됩니다.|
+|[CA5350: 취약한 암호화 알고리즘을 사용하지 마세요.](../code-quality/ca5350.md)|오늘날 여러 가지 이유로 약한 암호화 알고리즘 및 해시 함수가 사용되지만 데이터의 무결성과 기밀성을 보장하기 위해서는 이 방법을 사용하지 않아야 합니다.        이 규칙은 코드에 TripleDES, SHA1 또는 RIPEMD160 알고리즘이 있을 때 발생합니다.|
+|[CA5351 끊어진 암호화 알고리즘 사용 안 함](../code-quality/ca5351.md)|끊어진 암호화 알고리즘은 안전하지 않은 것으로 간주되므로 사용해서는 안 됩니다. 이 규칙은 코드에 MD5 해시 알고리즘 또는 DES나 RC2 암호화 알고리즘이 있을 때 트리거됩니다.|

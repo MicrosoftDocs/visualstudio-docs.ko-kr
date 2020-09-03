@@ -1,5 +1,5 @@
 ---
-title: 프로젝트서브타입 요소(비주얼 스튜디오 템플릿) | 마이크로 소프트 문서
+title: ProjectSubType 형식 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701827"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>프로젝트서브타입 요소(비주얼 스튜디오 템플릿)
-템플릿을 `ProjectType` 요소에 지정된 값의 하위 범주로 분류합니다.
+# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 형식 요소 (Visual Studio 템플릿)
+템플릿을 요소에 지정 된 값의 하위 범주로 분류 합니다 `ProjectType` .
 
- \<VS템플릿 \<> 템플릿데이터> \<프로젝트서브타입>
+ \<VSTemplate> \<TemplateData>
+ \<ProjectSubType>
 
 ## <a name="syntax"></a>구문
 
@@ -43,32 +44,32 @@ ms.locfileid: "80701827"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 이 값은 템플릿의 하위 범주를 지정합니다.
+ 이 값은 템플릿의 하위 범주를 지정 합니다.
 
 ## <a name="remarks"></a>설명
  `ProjectSubType`은 `TemplateData`의 선택적 자식 요소입니다.
 
- 요소는 `ProjectSubType` [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) 요소에 하위 범주를 제공합니다. 이 값에는 다음이 포함될 수 있습니다.
+ `ProjectSubType`요소는 [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) 요소에 하위 범주를 제공 합니다. 이 값은 다음을 포함할 수 있습니다.
 
-- `SmartDevice-NETCFv1`: 템플릿이 버전 1.0을 대상으로 지정합니다. [!INCLUDE[Compact](../extensibility/includes/compact_md.md)]
+- `SmartDevice-NETCFv1`: 템플릿이 버전 1.0을 대상으로 하도록 지정 합니다 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] .
 
-- `SmartDevice-NETCFv2`: 템플릿이 버전 2.0을 대상으로 지정합니다. [!INCLUDE[Compact](../extensibility/includes/compact_md.md)]
+- `SmartDevice-NETCFv2`: 템플릿이 버전 2.0을 대상으로 하도록 지정 합니다 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] .
 
-  템플릿에 값이 `ProjectType` `Web`있는 요소가 포함된 경우 `ProjectSubType` 요소는 템플릿의 프로그래밍 언어를 지정합니다. 이 요소에는 다음 값이 있을 수 있습니다.
+  템플릿에 `ProjectType` 값이 인 요소가 포함 된 경우 `Web` `ProjectSubType` 요소는 템플릿의 프로그래밍 언어를 지정 합니다. 이 요소에는 다음 값을 사용할 수 있습니다.
 
-- `CSharp`: 템플릿이 웹 프로젝트 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 항목을 만들수 있도록 지정합니다.
+- `CSharp`: 템플릿에서 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 웹 프로젝트 또는 항목을 생성 하도록 지정 합니다.
 
-- `VisualBasic`: 템플릿이 웹 프로젝트 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 또는 항목을 만들수 있도록 지정합니다.
+- `VisualBasic`: 템플릿에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 웹 프로젝트 또는 항목을 생성 하도록 지정 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 버전 2.0을 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 대상으로 하는 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] 장치 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 주다.
+ 다음 예제에서는 버전 2.0을 대상으로 하는 장치 응용 프로그램의 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] .
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,6 +97,6 @@ ms.locfileid: "80701827"
 ```
 
 ## <a name="see-also"></a>참조
-- [비주얼 스튜디오 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [ProjectType 요소(비주얼 스튜디오 템플릿)](../extensibility/projecttype-element-visual-studio-templates.md)
+- [ProjectType 요소 (Visual Studio 템플릿)](../extensibility/projecttype-element-visual-studio-templates.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660592"
 ---
 # <a name="customizing-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
@@ -53,9 +53,9 @@ ms.locfileid: "72660592"
 
 5. 사용자 지정 설정을 해제했다 다시 사용하도록 설정하려면 **테스트**, **테스트 설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.
 
-   ![사용자 지정 설정 파일을 사용 하는 테스트 설정 메뉴](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")
+   ![사용자 지정 설정 파일로 설정 메뉴 테스트](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")
 
-   유닛 테스트의 다른 측면은 동일한 .runsettings 파일에서 구성할 수 있습니다. 자세한 내용은 [Unit Test Your Code](../test/unit-test-your-code.md)을 참조하세요.
+   유닛 테스트의 다른 측면은 동일한 .runsettings 파일에서 구성할 수 있습니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.
 
 ### <a name="specifying-symbol-search-paths"></a>기호 검색 경로 지정
  어셈블리가 존재하려면 코드 검사에 기호(.pdb 파일)가 필요합니다. 솔루션에서 빌드한 어셈블리의 경우 기호 파일은 일반적으로 이진 파일과 함께 있으며 코드 검사는 자동으로 실행됩니다. 하지만 코드 검사 분석에 참조된 어셈블리를 포함하려는 경우가 있습니다. 이런 경우에 .pdb 파일이 이진 파일과 가깝지 않을 수 있지만 .runsettings 파일에서 기호 검색 경로를 지정할 수 있습니다.
@@ -72,7 +72,7 @@ ms.locfileid: "72660592"
 > 기호 확인은 어셈블리가 많은 원격 파일 위치를 사용할 경우 특히 오래 걸릴 수 있습니다. 따라서 원격 .pdb 파일을 이진(.dll 및.exe) 파일과 같은 로컬 위치에 복사하는 것이 좋습니다.
 
 ### <a name="excluding-and-including"></a>제외 및 포함
- 코드 검사 분석에서 지정한 어셈블리를 제외할 수 있습니다. 예를 들면,
+ 코드 검사 분석에서 지정한 어셈블리를 제외할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```minterastlib
 <ModulePaths>
@@ -99,23 +99,23 @@ ms.locfileid: "72660592"
  `Include`는 `Exclude`보다 먼저 처리됩니다.
 
 ### <a name="regular-expressions"></a>정규식
- Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요. 정규식은 와일드 카드와 다릅니다. 특히 다음과 같습니다.
+ Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요. 정규식은 와일드 카드와 다릅니다. 특히 다음 사항에 주의하십시오.
 
-1. **\.\\** *는 모든 문자의 문자열과 일치합니다.
+1. **\.\\*** 문자 문자열을 찾습니다.
 
 2. **\\.** 점 “.”과 일치합니다.
 
-3. **\\(   \\)** 는 괄호 “(  )”와 일치합니다.
+3. ** \\ ( \\ )** 는 괄호 "()"와 일치 합니다.
 
-4. **\\\\** 파일 경로 구분 기호 “\\”와 일치합니다.
+4. **\\\\**파일 경로 구분 기호 ""와 일치 합니다. \\
 
-5. **^** 는 문자열의 시작과 일치합니다.
+5. **^** 문자열의 시작 부분을 찾습니다.
 
-6. **$** 는 문자열의 끝과 일치합니다.
+6. **$** 문자열의 끝을 찾습니다.
 
    모든 일치 항목은 대소문자를 구분하지 않습니다.
 
-   예를 들면,
+   예를 들면 다음과 같습니다.
 
 ```xml
 <ModulePaths>
@@ -153,7 +153,7 @@ ms.locfileid: "72660592"
 
   **함수 이름 일치**
 
-  정규식은 네임스페이스, 클래스 이름, 메서드 이름, 매개 변수 목록을 포함한 함수의 정규화된 이름과 일치해야 합니다. 예를 들어 개체에 적용된
+  정규식은 네임스페이스, 클래스 이름, 메서드 이름, 매개 변수 목록을 포함한 함수의 정규화된 이름과 일치해야 합니다. 예를 들면 다음과 같습니다.
 
 - C# 또는 Visual Basic의 경우: `Fabrikam.Math.LocalMath.SquareRoot(double)`입니다.
 
@@ -187,14 +187,14 @@ ms.locfileid: "72660592"
 
      Windows의 **시작** 메뉴에서 **모든 프로그램**, **Microsoft Visual Studio**, **Visual Studio Tools**, **개발자 명령 프롬프트**를 차례로 선택합니다.
 
-2. 실행:
+2. 다음을 실행합니다.
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
 
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>빌드 정의에서 실행 설정을 사용자 지정하려면
  팀 빌드에서 코드 검사 데이터를 가져올 수 있습니다.
 
- ![빌드 정의에 runsettings 지정](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
+ ![빌드 정의에 runsettings 지정 중](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
 
 1. .runsettings 파일이 체크 인되었는지 확인하세요.
 
@@ -208,7 +208,7 @@ ms.locfileid: "72660592"
 
    빌드 보고서의 요약 섹션에 결과가 표시됩니다.
 
-## <a name="sample"></a> 샘플 .runsettings 파일
+## <a name="sample-runsettings-file"></a><a name="sample"></a> 샘플 .runsettings 파일
  이 코드를 복사하고 자신의 필요에 따라 편집합니다. 이 파일은 기본 .runsettings 파일입니다.
 
  (.runsettings 파일의 다른 용도에 대해서는 [.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)을 참조하세요.)
@@ -325,5 +325,5 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  코드 [검사를 사용 하 여 테스트 중인 코드의 크기](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) [테스트 단위 테스트](../test/unit-test-your-code.md) 코드를 확인 합니다.

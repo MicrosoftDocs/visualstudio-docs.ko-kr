@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2442bf4cc31eeb51332aa28325924e18ccb1ffb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660723"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>빌드 확인 테스트에서 코드 검사 분석
@@ -28,13 +28,13 @@ Microsoft Visual Studio의 코드 검사 분석에서는 자동화된 테스트�
 
     테스트 소스 정의가 두 개 이상일 경우 각각에 대해 이 단계를 반복합니다.
 
-   - <em>하지만 **실행 설정 파일 형식</em>* 이라는 필드는 없습니다.*
+   - <em>하지만 이름이 **실행 설정 파일</em>인 필드가 없습니다*. *
 
       **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄임표 단추 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자의 **Test Runner**에서 **Visual Studio Test Runner**를 선택합니다.
 
-   ![코드 검사에 대 한 빌드 정의 설정](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![코드 검사를 위한 빌드 정의 설정 중](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    빌드 실행 후 코드 검사 결과가 빌드 요약에 나타납니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

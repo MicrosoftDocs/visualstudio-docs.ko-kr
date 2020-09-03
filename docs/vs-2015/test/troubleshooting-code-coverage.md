@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bf21286143b2b9543c834f00ed31ddaa4cef63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660369"
 ---
 # <a name="troubleshooting-code-coverage"></a>코드 검사 문제 해결
@@ -23,7 +23,7 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 ## <a name="what-you-should-see"></a>표시 내용
  테스트 메뉴의 **코드 검사 분석** 명령을 선택하고 빌드 및 테스트가 성공적으로 실행될 경우 코드 검사 창에 결과 목록이 표시됩니다. 자세한 내용을 보려면 항목을 확장해야 합니다.
 
- ![색 지정을 사용 하 여 코드 검사 결과](../test/media/codecoverage1.png "CodeCoverage1")
+ ![강조 표시된 코드 검사 결과](../test/media/codecoverage1.png "CodeCoverage1")
 
  자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 
@@ -53,12 +53,12 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 
  .pdb 파일은 .dll 또는 .exe 파일과 같은 빌드에서 생성되어야 합니다.
 
- 해결 빌드 설정이 .pdb 파일을 생성 하는지 확인 합니다. 프로젝트가 빌드될 때 .pdb 파일이 업데이트되지 않을 경우 프로젝트 속성을 열고 **빌드** 페이지를 선택한 다음 **고급**을 선택하고 **디버그 정보**를 검사합니다.
+ 해결 빌드 설정이 .pdb 파일을 생성 하는지 확인 합니다. 프로젝트를 빌드할 때 .pdb 파일이 업데이트 되지 않으면 프로젝트 속성을 열고 **빌드** 페이지를 선택한 다음 **고급** 을 선택 하 고 **디버그 정보**를 검사 합니다.
 
  .pdb 및 .dll 또는 .exe 파일이 다른 위치에 있는 경우 .pdb 파일을 동일한 디렉터리로 복사합니다. 코드 검사 엔진을 구성하여 다른 위치에서 .pdb 파일을 검색할 수도 있습니다. 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
 
 ### <a name="using-an-instrumented-or-optimized-binary"></a>계측 또는 최적화된 이진 파일 사용
- 분석은 이진 파일이 프로필 기반 최적화와 같은 고급 최적화 형태 인지 또는 vsinstr.exe 또는 vsperfmon.exe와 같은 프로 파일링 도구로 계측 되었는지 여부를 확인 합니다.
+ 분석은 이진 파일이 프로필 기반 최적화와 같은 고급 최적화 형태 인지 또는 vsinstr.exe 또는 vsperfmon.exe 같은 프로 파일링 도구에서 계측 되었는지 여부를 확인 합니다.
 
  설명 어셈블리가 이미 다른 프로 파일링 도구로 계측 또는 최적화 된 경우 해당 어셈블리는 코드 검사 분석에서 생략 됩니다.
 
@@ -67,9 +67,9 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
  해결 최적화를 해제 하 고 새 빌드를 사용 합니다.
 
 ### <a name="code-is-not-managed-net-or-native-c-code"></a>코드가 관리(.NET) 또는 네이티브(C++) 코드가 아닙니다.
- 분석 관리 또는 C++ 코드에 대해 일부 테스트를 실행 하 고 있는지 확인 합니다.
+ 분석 관리 되거나 c + + 코드에서 일부 테스트를 실행 하 고 있는지 확인 합니다.
 
- 설명 Visual Studio의 코드 검사 분석은 관리 코드 및 네이티브C++코드 에서만 사용할 수 있습니다. 타사 도구를 사용하는 경우 코드의 일부나 전부를 다른 플랫폼에서 실행할 수 있습니다.
+ 설명 Visual Studio의 코드 검사 분석은 관리 및 네이티브 (c + +) 코드 에서만 사용할 수 있습니다. 타사 도구를 사용하는 경우 코드의 일부나 전부를 다른 플랫폼에서 실행할 수 있습니다.
 
  해결 방법을 사용할 수 없습니다.
 
@@ -106,7 +106,7 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 
  설명 사용자 지정 .runsettings 파일을 사용 하 여 단위 테스트를 실행 하 여 코드 검사 옵션을 구성할 수 있습니다. 옵션을 사용하여 실행 파일을 포함하거나 제외할 수 있습니다. 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
 
- 해결 .runsettings 파일에서 모든 `Include` 노드를 제거한 후 모든 `Exclude` 노드를 제거 합니다. 이것으로 문제가 해결되는 경우 스테이지로 되돌립니다.
+ 해결 `Include` .runsettings 파일에서 모든 노드를 제거한 다음, 모든 노드를 제거 합니다 `Exclude` . 이것으로 문제가 해결되는 경우 스테이지로 되돌립니다.
 
  DataCollectors 노드에서 코드 검사를 지정하는지 확인합니다. [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)의 샘플과 비교합니다.
 
@@ -121,5 +121,5 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 
  해결 안 함.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>관련 항목
  [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

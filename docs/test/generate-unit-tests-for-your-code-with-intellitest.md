@@ -128,7 +128,7 @@ IntelliTest를 실행하면 오류가 발생하는 테스트를 쉽게 확인하
 
 어설션을 추가하고 IntelliTest를 다시 실행하면 어설션이 유효한지 확인하고 유효하지 않을 경우 테스트가 실패합니다.
 
-### <a name="NoRun"></a> Q: IntelliTest를 먼저 실행하지 않고 매개 변수가 있는 단위 테스트를 생성할 수 있나요?
+### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> Q: IntelliTest를 먼저 실행하지 않고 매개 변수가 있는 단위 테스트를 생성할 수 있나요?
 
 **A:** 예, 클래스 또는 메서드를 마우스 오른쪽 단추로 클릭한 다음, **IntelliTest 만들기**를 선택합니다.
 

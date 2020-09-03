@@ -1,5 +1,5 @@
 ---
-title: 참조 (프로그래밍 방식 캡처) | Microsoft Docs
+title: 참조(프로그래밍 방식 캡처) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cebeb7eb651c11b5f560b981df30213fc726c66
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162255"
 ---
 # <a name="reference-programmatic-capture"></a>참조(프로그램 방식 캡처)
@@ -39,7 +39,7 @@ ms.locfileid: "68162255"
   
 ## <a name="related-articles"></a>관련 문서  
   
-|제목|Description|  
+|제목|설명|  
 |-----------|-----------------|  
 |[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구를 사용하여 렌더링 문제를 진단할 수 있도록 DirectX 기반 앱에서 그래픽 정보를 캡처하는 방법을 보여 줍니다.|  
 |[개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|그래픽 진단을 사용하여 DirectX 게임 및 앱의 렌더링 오류를 디버그하는 방법을 보여 줍니다.|

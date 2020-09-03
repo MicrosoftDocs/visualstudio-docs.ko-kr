@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545810"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>방법: Office 솔루션에 대 한 구성 정보 설정
@@ -43,7 +43,7 @@ ms.locfileid: "85545810"
 
    Office 프로젝트에서 구성 파일을 사용 하는 경우 특별 한 고려 사항은 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [.NET Framework의 구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)
