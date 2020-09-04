@@ -32,7 +32,7 @@
           href: work-with-datasets-in-n-tier-applications.md
     - name: 데이터베이스 프로젝트 및 데이터 계층 애플리케이션(DAC)
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
-    - name: n 계층 데이터 애플리케이션 개요
+    - name: N 계층 데이터 애플리케이션 개요
       href: n-tier-data-applications-overview.md
 - name: 방법 가이드
   items:
@@ -132,7 +132,7 @@
               href: save-a-dataset-as-xml.md
         - name: 데이터 세트 쿼리
           href: query-datasets.md
-        - name: n 계층 애플리케이션
+        - name: N 계층 애플리케이션
           items:
             - name: n 계층 데이터 세트에 유효성 검사 추가
               href: add-validation-to-an-n-tier-dataset.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: 데이터 액세스 오류 문제 해결
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: 참조
+- name: 참고
   items:
     - name: O/R 디자이너(Linq to SQL)
       items:
