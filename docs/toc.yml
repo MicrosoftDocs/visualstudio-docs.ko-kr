@@ -1411,6 +1411,8 @@
       href: ide/whats-new-visual-studio-2019.md
     - name: Visual Studio의 새로운 기능 문서
       href: ide/whats-new-visual-studio-docs.md
+    - name: Visual Studio 문서의 새로운 기능에 관한 기록
+      href: ide/whats-new-visual-studio-docs-history.md
     - name: 릴리스 정보 및 시스템 요구 사항
       items:
         - name: 릴리스 리듬
