@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219779"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490289"
 ---
 # <a name="use-code-analyzers"></a>코드 분석기 사용
 
@@ -62,8 +62,8 @@ ms.locfileid: "89219779"
 
 | 심각도 (솔루션 탐색기) | 심각도 (EditorConfig 파일) | 빌드 타임 동작 | 편집기 동작 |
 |-|-|-|
-| 오류 | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
-| 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
+| Error | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
+| Warning | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
 | 정보 | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 회색 상자로 표시 됩니다. |
 | 숨김 | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
 | 없음 | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
@@ -76,6 +76,13 @@ ms.locfileid: "89219779"
 다음 스크린샷은 오류 목록에 표시 되는 것과 동일한 세 가지 위반을 보여 줍니다.
 
 ![오류 목록에서 오류, 경고 및 정보 위반](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>' Hidden ' 심각도와 ' None ' 심각도 비교
+
+`Hidden` 기본적으로 사용 하도록 설정 된 심각도 규칙은 `None` 두 가지 방법에서 사용 안 함 또는 심각도 규칙과 다릅니다.
+
+- 심각도 규칙에 대해 코드 수정이 등록 된 경우에는 `Hidden` 숨겨진 진단이 사용자에 게 표시 되지 않더라도 수정 내용이 Visual Studio에서 전구 코드 리팩터링 동작으로 제공 됩니다. 비활성화 된 심각도 규칙의 경우는 그렇지 않습니다 `None` .
+- `Hidden` 심각도 규칙은 [EditorConfig 파일에서 한 번에 여러 분석기 규칙의 규칙 심각도를 설정](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file)하는 항목에 의해 대량으로 구성 될 수 있습니다. `None` 이러한 방식으로는 심각도 규칙을 구성할 수 없습니다. 대신 [각 규칙 ID에 대 한 EditorConfig 파일에서 규칙 심각도를 설정](#set-rule-severity-in-an-editorconfig-file)하는 항목을 통해 구성 해야 합니다.
 
 ::: moniker range=">=vs-2019"
 
@@ -395,7 +402,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)
