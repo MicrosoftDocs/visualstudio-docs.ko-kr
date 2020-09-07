@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219688"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509850"
 ---
 # <a name="globalization-warnings"></a>전역화 경고
 세계화 경고는 전 세계에서 사용할 수 있는 라이브러리 및 응용 프로그램을 지원 합니다.
@@ -29,9 +29,6 @@ ms.locfileid: "89219688"
 
 |규칙|설명|
 |----------|-----------------|
-|[CA1300: MessageBoxOptions를 지정하세요.](../code-quality/ca1300.md)|오른쪽에서 왼쪽으로 읽기 순서를 사용하는 문화권에 대해 메시지 상자를 올바로 표시하려면 MessageBoxOptions 열거형의 RightAlign 및 RtlReading 멤버를 Show 메서드로 전달해야 합니다.|
-|[CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.](../code-quality/ca1301.md)|액셀러레이터 키라고도 하는 선택키를 사용하면 Alt 키를 사용하여 키보드로 컨트롤에 액세스할 수 있습니다. 여러 컨트롤에 중복 된 액세스 키가 있는 경우에는 액세스 키의 동작이 제대로 정의 되지 않습니다.|
-|[CA1302: 로캘별 문자열을 하드코드하지 마세요.](../code-quality/ca1302.md)|System.Environment.SpecialFolder 열거형에는 특수 시스템 폴더를 참조하는 멤버가 포함되어 있습니다. 이러한 폴더의 위치는 운영 체제에 따라 값이 다를 수 있으며, 사용자가 위치 일부를 변경할 수 있고, 위치는 지역화됩니다. Environment. GetFolderPath 메서드는 현재 실행 중인 컴퓨터에 적합 한, 지역화 된 System.environment.specialfolder 열거형과 연결 된 위치를 반환 합니다.|
 |[CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마세요.](../code-quality/ca1303.md)|외부에서 볼 수 있는 메서드는 문자열 리터럴을 .NET 생성자 또는 메서드에 대 한 매개 변수로 전달 하 고 해당 문자열을 지역화할 수 있어야 합니다.|
 |[CA1304: CultureInfo를 지정하세요.](../code-quality/ca1304.md)|메서드 또는 생성자가 System.Globalization.CultureInfo 매개 변수를 받아들이는 오버로드가 있는 멤버를 호출하지만 CultureInfo 매개 변수를 사용하는 오버로드는 호출하지 않습니다. CultureInfo 또는 System.IFormatProvider 개체가 제공되지 않으면 오버로드된 멤버에서 제공하는 기본값이 모든 로캘에서 원하는 효과를 나타내지 않을 수 있습니다.|
 |[CA1305: IFormatProvider를 지정하세요.](../code-quality/ca1305.md)|메서드 또는 생성자가 System.IFormatProvider 매개 변수를 받아들이는 오버로드가 있는 하나 이상의 멤버를 호출하지만 IFormatProvider 매개 변수를 사용하는 오버로드는 호출하지 않습니다. System.Globalization.CultureInfo 또는 IFormatProvider 개체가 제공되지 않으면 오버로드된 멤버에서 제공하는 기본값이 모든 로캘에서 원하는 효과를 나타내지 않을 수 있습니다.|

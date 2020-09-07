@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219675"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509863"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>관리 코드에 대한 전역화 규칙 규칙 집합
 
@@ -21,13 +21,9 @@ Microsoft 전역화 규칙 규칙 집합을 사용 하 여 응용 프로그램�
 
 |규칙|설명|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300.md)|MessageBoxOptions를 지정하세요.|
-|[CA1301](../code-quality/ca1301.md)|중복 액셀러레이터 키를 사용하지 마십시오.|
-|[CA1302](../code-quality/ca1302.md)|로캘별 문자열을 하드 코딩 하지 마십시오.|
 |[CA1303](../code-quality/ca1303.md)|리터럴을 지역화된 매개 변수로 전달하지 마세요.|
 |[CA1304](../code-quality/ca1304.md)|CultureInfo를 지정하세요.|
 |[CA1305](../code-quality/ca1305.md)|IFormatProvider를 지정하세요.|
-|[CA1306](../code-quality/ca1306.md)|데이터 형식에 맞는 로캘을 설정하세요.|
 |[CA1307](../code-quality/ca1307.md)|명확성을 위해 StringComparison 지정|
 |[CA1308](../code-quality/ca1308.md)|대문자로 문자열을 정규화하세요.|
 |[CA1309](../code-quality/ca1309.md)|서수 StringComparison을 사용하세요.|

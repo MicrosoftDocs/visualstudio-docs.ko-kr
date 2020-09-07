@@ -8,24 +8,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d66ed0ab2d93bb46983becd191b1dcc2de648659
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444572"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509408"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays에 대 한 Roslyn 분석기 및 코드 인식 라이브러리
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn")를 사용 하면 코드 인식 라이브러리를 빌드할 수 있습니다. 코드 인식 라이브러리는 및 도구 (Roslyn 분석기)를 사용 하 여 라이브러리를 가장 적절 한 방법으로 사용 하거나 오류를 방지 하는 데 사용할 수 있는 기능을 제공 합니다. 이 항목에서는 [Roslyn NuGet 패키지](https://www.nuget.org/packages/System.Collections.Immutable) 를 사용 하는 경우 일반적인 오류를 catch 하기 위해 실제 세계 analyzer를 빌드하는 방법을 보여 줍니다. 이 예제에서는 분석기에서 발견 한 코드 문제에 대 한 코드 픽스를 제공 하는 방법도 보여 줍니다. 사용자는 Visual Studio 전구 UI에서 코드 수정 사항을 확인 하 고 코드에 대 한 수정 사항을 자동으로 적용할 수 있습니다.
 
-## <a name="get-started"></a>시작
+## <a name="get-started"></a>시작하기
 
 이 예제를 빌드하려면 다음이 필요 합니다.
 
 * Visual Studio 2015 (Express Edition 아님) 이상 버전. 무료 [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/) 을 사용할 수 있습니다.
 * [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md). Visual Studio를 설치할 때 **일반적인 도구** 에서 **Visual Studio 확장성 도구** 를 확인 하 여 SDK를 동시에 설치할 수도 있습니다. Visual Studio를 이미 설치한 경우에는 기본 메뉴 **파일**  >  **새**  >  **프로젝트로**이동 하 고, 왼쪽 탐색 창에서 **c #** 을 선택한 다음, **확장성**을 선택 하 여이 SDK를 설치할 수도 있습니다. "**Visual Studio 확장성 도구 설치**" 이동 경로 프로젝트 템플릿을 선택 하면 SDK를 다운로드 하 여 설치 하 라는 메시지가 표시 됩니다.
-* [SDK ("Roslyn")를 .NET Compiler Platform](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)합니다. 주 메뉴 **파일**  >  **새로 만들기**  >  **프로젝트**로 이동 하 고, 왼쪽 탐색 창에서 **c #** 을 선택한 다음, **확장성**을 선택 하 여이 SDK를 설치할 수도 있습니다. "**.NET COMPILER PLATFORM Sdk 다운로드**" 프로젝트 템플릿을 선택 하면 sdk를 다운로드 하 여 설치 하 라는 메시지가 표시 됩니다. 이 SDK는 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)를 포함 합니다. 이 유용한 도구를 사용 하면 분석기에서 확인 해야 하는 코드 모델 유형을 파악할 수 있습니다. 분석기 인프라는 특정 코드 모델 형식에 대 한 코드를 호출 하므로 필요한 경우에만 코드가 실행 되 고 관련 코드 분석에만 집중할 수 있습니다.
+* [SDK ("Roslyn")를 .NET Compiler Platform](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)합니다. 주 메뉴 **파일**  >  **새로 만들기**  >  **프로젝트**로 이동 하 고, 왼쪽 탐색 창에서 **c #** 을 선택한 다음, **확장성**을 선택 하 여이 SDK를 설치할 수도 있습니다. "**.NET COMPILER PLATFORM Sdk 다운로드**" 프로젝트 템플릿을 선택 하면 sdk를 다운로드 하 여 설치 하 라는 메시지가 표시 됩니다. 이 SDK는 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md)를 포함 합니다. 이 유용한 도구를 사용 하면 분석기에서 확인 해야 하는 코드 모델 유형을 파악할 수 있습니다. 분석기 인프라는 특정 코드 모델 형식에 대 한 코드를 호출 하므로 필요한 경우에만 코드가 실행 되 고 관련 코드 분석에만 집중할 수 있습니다.
 
 ## <a name="whats-the-problem"></a>문제가 뭔가요?
 
@@ -306,7 +306,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 [여기](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)에서 완성 된 코드를 모두 볼 수 있습니다. 하위 폴더 *DoNotUseImmutableArrayCollectionInitializer* 및 *DoNotUseImmutableArrayCtor* 에는 각각 문제를 찾기 위한 c # 파일과 Visual Studio 전구 UI에 표시 되는 코드 수정 프로그램을 구현 하는 c # 파일이 있습니다. 완성 된 코드에는 ImmutableArray type 개체를 가져오는 것을 방지 하기 위한 약간의 추상화가 있습니다 \<T> . 등록 된 중첩 된 작업을 사용 하 여 하위 작업 (개체 만들기 및 컬렉션 초기화 분석)이 실행 될 때마다 사용할 수 있는 컨텍스트에 형식 개체를 저장 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [\\\Build 2015 통신](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub에서 완성 된 코드](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
