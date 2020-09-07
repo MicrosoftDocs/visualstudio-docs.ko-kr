@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800478"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508446"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
 
@@ -126,7 +126,7 @@ BLOB을 업로드하려면 BLOB 컨테이너 보기에서 볼 수 있도록 컨�
 
 Azure Diagnostics를 사용하여 Azure 애플리케이션에서 데이터를 기록하고 스토리지 계정에 로그를 전송하는 경우 이러한 로그에 대해 Azure에서 만들어진 컨테이너가 표시됩니다. 서버 탐색기에서 이러한 로그를 확인하는 것은 특히 Azure에 배포된 경우 애플리케이션에 대한 문제를 식별하는 쉬운 방법입니다.
 
-Azure Diagnostics에 대한 자세한 내용은 [Azure Diagnostics를 사용하여 로깅 데이터 수집](https://msdn.microsoft.com/library/azure/gg433048.aspx)을 참조하세요.
+Azure Diagnostics에 대한 자세한 내용은 [Azure Diagnostics를 사용하여 로깅 데이터 수집](/azure/cloud-services/cloud-services-dotnet-diagnostics)을 참조하세요.
 
 ### <a name="to-get-the-url-for-a-blob"></a>Blob에 대한 URL을 가져오려면
 
@@ -275,7 +275,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 
    * 연결하려는 기존 스토리지 계정의 이름입니다.
    * 선택한 스토리지 계정에 대한 키입니다. 스토리지 계정을 선택할 때 일반적으로 이 값이 제공됩니다. Visual Studio가 스토리지 계정 키를 기억하기를 원하는 경우 **계정 키 기억하기** 확인란을 선택합니다.
-   * 스토리지 계정에 연결하기 위해 사용하는 프로토콜입니다 - 예: HTTP, HTTPS, 또는 사용자 지정 엔드포인트. 사용자 지정 엔드포인트에 대한 자세한 내용은 [연결 문자열을 구성하는 방법](https://msdn.microsoft.com/library/azure/ee758697.aspx)을 참조하세요.
+   * 스토리지 계정에 연결하기 위해 사용하는 프로토콜입니다 - 예: HTTP, HTTPS, 또는 사용자 지정 엔드포인트. 사용자 지정 엔드포인트에 대한 자세한 내용은 [연결 문자열을 구성하는 방법](/azure/storage/common/storage-configure-connection-string)을 참조하세요.
 
 ### <a name="to-view-the-secondary-endpoints"></a>보조 엔드포인트를 확인하려면
 

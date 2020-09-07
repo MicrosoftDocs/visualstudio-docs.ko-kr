@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911773"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508433"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>클라우드 서비스의 성능 테스트
 ## <a name="overview"></a>개요
@@ -54,7 +54,7 @@ ms.locfileid: "72911773"
 ## <a name="profiling-a-cloud-service-in-azure"></a>Azure에서 클라우드 서비스 프로파일링
 Visual Studio에서 클라우드 서비스를 게시할 때에 서비스를 프로파일링하고 원하는 정보를 제공하는 프로파일링 설정을 지정할 수 있습니다. 역할의 각 인스턴스에 대한 프로파일링 세션이 시작됩니다. Visual Studio에서 서비스를 게시하는 방법에 대한 자세한 내용은 [Visual Studio에서 Azure 클라우드 서비스에 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조하십시오.
 
-Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [성능 프로파일링 초보자 가이드](https://msdn.microsoft.com/library/azure/ms182372.aspx) 및 [프로파일링 도구를 사용하여 애플리케이션 성능 분석](https://msdn.microsoft.com/library/azure/z9z62c29.aspx)을 참조하세요.
+Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [성능 프로파일링 초보자 가이드](../profiling/beginners-guide-to-performance-profiling.md) 및 [프로파일링 도구를 사용하여 애플리케이션 성능 분석](../profiling/performance-explorer.md)을 참조하세요.
 
 > [!NOTE]
 > 응용 프로그램을 게시할 때 IntelliTrace 또는 프로파일링을 사용할 수 있습니다. 둘 다 사용할 수는 없습니다.
@@ -68,7 +68,7 @@ Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [�
 * **계측** - 이 방법은 집중된 분석 및 입/출력 성능 문제 분석에 유용한 자세한 타이밍 데이터를 수집합니다. 계측 방법은 프로파일링 실행 중 모듈의 각 항목, 종료 및 함수 호출 함수를 기록합니다. 이 방법은 코드의 한 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 애플리케이션 성능에 미치는 영향을 이해하는 데 유용합니다. 이 방법은 32비트 운영 체제를 실행하는 컴퓨터에 사용되지 않습니다. 이 옵션은 컴퓨팅 에뮬레이터에서 로컬이 아닌 Azure에서 클라우드 서비스를 실행하는 경우에만 사용할 수 있습니다.
 * **.NET 메모리 할당** - 이 방법은 샘플링 프로파일링 방법을 사용하여 .NET Framework 메모리 할당 데이터를 수집합니다. 수집된 데이터에 할당된 개체의 수와 크기가 포함됩니다.
 * **동시성** - 이 방법은 리소스 경합 데이터와 프로세스 및 멀티스레드와 멀티 프로세스 애플리케이션 분석에 유용한 스레드 실행 데이터를 수집합니다. 동시성 방법은 스레드가 해제될 애플리케이션 리소스에 대한 잠긴 액세스에 대해 대기하는 경우와 같은 코드의 실행을 차단하는 각 이벤트에 대한 데이터를 수집합니다. 이 메서드는 다중 스레드 애플리케이션을 분석하는 데 유용합니다.
-* 하나 이상의 데이터베이스와 통신하는 다중 계층 애플리케이션의 함수에서 동기 ADO.NET 호출의 실행 시간에 관한 추가 정보를 제공하는 **계층 상호작용 프로파일링**을 사용할 수도 있습니다. 프로파일링 방법을 사용하여 계층 상호작용 데이터를 수집할 수 있습니다. 계층 상호작용 프로파일링에 대한 자세한 내용은 [계층 상호작용 보기](https://msdn.microsoft.com/library/azure/dd557764.aspx)를 참조하십시오.
+* 하나 이상의 데이터베이스와 통신하는 다중 계층 애플리케이션의 함수에서 동기 ADO.NET 호출의 실행 시간에 관한 추가 정보를 제공하는 **계층 상호작용 프로파일링**을 사용할 수도 있습니다. 프로파일링 방법을 사용하여 계층 상호작용 데이터를 수집할 수 있습니다. 계층 상호작용 프로파일링에 대한 자세한 내용은 [계층 상호작용 보기](../profiling/tier-interactions-view.md)를 참조하십시오.
 
 ## <a name="configuring-profiling-settings"></a>프로파일링 설정 구성
 다음 그림은 Azure 애플리케이션 게시 대화 상자에서 프로파일링 설정을 구성하는 방법을 나타냅니다.
@@ -102,7 +102,7 @@ Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [�
 3. 인스턴스에 대한 프로파일링 보고서를 보려면 서비스에서 역할을 선택하고 특정 인스턴스에 대한 바로 가기 메뉴를 연 다음 **프로파일링 보고서 보기**를 선택합니다.
 
     .vsp 파일인 보고서가 이제 Azure에서 다운로드되며 Azure 활동 로그에 다운로드 상태가 표시됩니다. 다운로드가 완료되면 프로파일링 보고서가 <Role name\>*<Instance Number\>*<identifier\>.vsp라는 Visual Studio에 대한 편집기의 탭에 나타납니다. 보고서에 대한 요약 데이터가 표시됩니다.
-4. 현재 보기 목록에서 보고서의 다른 보기를 표시하려면 원하는 보기의 유형을 선택합니다. 자세한 내용은 [프로파일링 도구 보고서 보기](https://msdn.microsoft.com/library/azure/bb385755.aspx)를 참조하세요.
+4. 현재 보기 목록에서 보고서의 다른 보기를 표시하려면 원하는 보기의 유형을 선택합니다. 자세한 내용은 [프로파일링 도구 보고서 보기](../profiling/performance-report-views.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 [Cloud Services 디버깅](vs-azure-tools-debug-cloud-services-virtual-machines.md)

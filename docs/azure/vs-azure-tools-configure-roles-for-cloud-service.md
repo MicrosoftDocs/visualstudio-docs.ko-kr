@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250854"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508511"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 역할 구성
 Azure 클라우드 서비스에는 하나 이상의 작업자 또는 웹 역할이 포함될 수 있습니다. 각 역할에 대해 해당 역할을 설정하는 방법을 정의하고 해당 역할을 실행하는 방법을 구성해야 합니다. 클라우드 서비스의 역할에 대한 자세한 내용은 [Azure Cloud Services 소개](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)를 참조하세요.
@@ -140,7 +140,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>Azure 클라우드 서비스에서 사용할 사용자 지정 설정 추가
-서비스 구성 파일의 사용자 지정 설정을 통해 특정 서비스 구성에 대한 문자열의 이름 및 값을 추가할 수 있습니다. 설정 값을 읽고 이 값을 코드에서 논리를 제어하는 데 사용하여 클라우드 서비스에서 기능을 구성하는 데 이 설정을 사용하도록 선택할 수 있습니다. 서비스 패키지를 다시 빌드하지 않고 클라우드 서비스가 실행 중인 경우에도 이러한 서비스 구성 값을 변경할 수 있습니다. 설정이 변경될 때 코드에서 알림을 확인할 수 있습니다. [RoleEnvironment.Changing 이벤트](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx)를 참조하세요.
+서비스 구성 파일의 사용자 지정 설정을 통해 특정 서비스 구성에 대한 문자열의 이름 및 값을 추가할 수 있습니다. 설정 값을 읽고 이 값을 코드에서 논리를 제어하는 데 사용하여 클라우드 서비스에서 기능을 구성하는 데 이 설정을 사용하도록 선택할 수 있습니다. 서비스 패키지를 다시 빌드하지 않고 클라우드 서비스가 실행 중인 경우에도 이러한 서비스 구성 값을 변경할 수 있습니다. 설정이 변경될 때 코드에서 알림을 확인할 수 있습니다. [RoleEnvironment.Changing 이벤트](/previous-versions/azure/reference/ee758134(v=azure.100))를 참조하세요.
 
 서비스 구성에 대한 사용자 지정 설정을 추가, 제거 또는 수정할 수 있습니다. 다양한 서비스 구성에 대해 이러한 문자열에 서로 다른 값이 필요할 수 있습니다.
 
@@ -269,4 +269,4 @@ using (FileStream writeStream = File.Create(filePath))
 1. Windows 탐색기 창이 열리면 **검색** 텍스트 상자에서 'MyLocalStorageTest.txt'를 입력하고 **Enter** 키를 눌러 검색을 시작합니다.
 
 ## <a name="next-steps"></a>다음 단계
-[Azure 프로젝트 구성](vs-azure-tools-configuring-an-azure-project.md)을 읽고 Visual Studio에서 Azure 프로젝트에 대해 자세히 알아봅니다. [스키마 참조](https://msdn.microsoft.com/library/azure/dd179398)를 읽고 클라우드 서비스 스키마에 대해 자세히 알아봅니다.
+[Azure 프로젝트 구성](vs-azure-tools-configuring-an-azure-project.md)을 읽고 Visual Studio에서 Azure 프로젝트에 대해 자세히 알아봅니다. [스키마 참조](/previous-versions/azure/dd179398(v=azure.100))를 읽고 클라우드 서비스 스키마에 대해 자세히 알아봅니다.

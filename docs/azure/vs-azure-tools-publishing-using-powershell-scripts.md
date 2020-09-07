@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f7e2f79b5e7daea577693bc0fd54cef70bb7e4a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84179962"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508407"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시
 
@@ -22,7 +22,7 @@ Visual Studio에서 웹 애플리케이션을 만들 경우 Windows PowerShell �
 
 이러한 스크립트를 사용하면 일시적으로 사용할 사이트의 사용자 지정 버전(개발 및 테스트 환경이라고도 함)을 프로비저닝할 수 있습니다. 예를 들어 Azure 가상 컴퓨터 또는 웹 사이트의 스테이징 슬롯에 특정 버전의 웹 사이트를 설정하고 테스트 제품군 실행, 버그 재현, 버그 수정 사항 테스트, 제안된 변경 사항 시험, 데모 또는 프레젠테이션을 위한 사용자 지정 환경 설정을 수행할 수 있습니다. 프로젝트를 게시하는 스크립트를 만든 다음 필요에 따라 스크립트를 다시 실행하여 동일한 환경을 다시 만들거나 웹 애플리케이션의 자체 빌드로 스크립트를 실행하여 테스트를 위한 사용자 지정 환경을 만들 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 * **Azure 워크로드**가 설치된 Visual Studio 2015 이상 또는 Visual Studio 2013 및 Azure SDK 2.3 이상. [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)를 참조하세요. (웹 프로젝트용 스크립트를 생성하기 위해 Azure SDK는 필요하지 않습니다. 이 기능은 클라우드 서비스의 웹 역할이 아닌 웹 프로젝트용입니다.)
 * Azure PowerShell 0.7.4 이상 [Azure PowerShell 설치 및 구성 방법](/powershell/azure/overview)을 참조하세요.
@@ -154,7 +154,7 @@ Azure에 단일 프로덕션 사이트가 아닌 여러 배포 환경(슬롯이�
 
    ![웹 배포 패키지 만들기](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   자세한 내용은 [방법: Visual Studio에서 웹 배포 패키지 만들기](https://msdn.microsoft.com/library/dd465323.aspx)를 참조하세요. 또한 [게시 스크립트 사용자 지정 및 확장](#customizing-and-extending-the-publish-scripts)에서 설명하는 대로 웹 배포 패키지 생성을 자동화할 수 있습니다.
+   자세한 내용은 [방법: Visual Studio에서 웹 배포 패키지 만들기](/previous-versions/aspnet/dd465323(v=vs.110))를 참조하세요. 또한 [게시 스크립트 사용자 지정 및 확장](#customizing-and-extending-the-publish-scripts)에서 설명하는 대로 웹 배포 패키지 생성을 자동화할 수 있습니다.
 
 1. **솔루션 탐색기**에서 스크립트의 상황에 맞는 메뉴를 연 다음 **PowerShell ISE로 열기**를 선택합니다.
 1. 이 컴퓨터에서 Windows PowerShell 스크립트를 처음으로 실행하는 경우 관리자 권한으로 명령 프롬프트 창을 열고 다음 명령을 입력합니다.

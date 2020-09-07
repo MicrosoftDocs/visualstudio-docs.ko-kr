@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905000"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508953"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>연습: 전구 제안 표시
 Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 확장 되는 아이콘입니다. 예를 들어 기본 제공 코드 분석기 또는 코드 리팩터링에 의해 식별 되는 문제에 대 한 수정 등이 있습니다.
 
  Visual c # 및 Visual Basic 편집기에서 .NET Compiler Platform ("Roslyn")를 사용 하 여 light 전구을 자동으로 표시 하는 작업으로 사용자 고유의 코드 분석기를 작성 하 고 패키지할 수도 있습니다. 자세한 내용은 다음을 참조하십시오.
 
-- [방법: c # 진단 및 코드 수정 작성](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [방법: c # 진단 및 코드 수정 작성](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [방법: Visual Basic 진단 및 코드 수정 작성](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [방법: Visual Basic 진단 및 코드 수정 작성](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   또한 c + +와 같은 다른 언어는 해당 함수의 스텁 구현을 만드는 제안 등의 몇 가지 빠른 작업을 위한 가벼운 전구 제공 합니다.
 
@@ -36,7 +36,7 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
 
   Light 전구를 사용 하 여 고유한 제안 조치를 제공할 수 있습니다. 예를 들어 여는 중괄호를 새 줄로 이동 하거나 앞 줄의 끝으로 이동 하는 작업을 제공할 수 있습니다. 다음 연습에서는 현재 단어에 표시 되 고 두 개의 제안 동작 ( **대문자로 변환** 및 소문자로 **변환**)이 있는 전구를 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기

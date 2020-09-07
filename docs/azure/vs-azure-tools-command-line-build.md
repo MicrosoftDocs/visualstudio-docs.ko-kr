@@ -9,17 +9,17 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 179737f7a4a55fd6111338363ad6668a43689205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ed5e9635cbe088773336a29bc9a8853d7e0a5db
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280767"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508472"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>명령줄에서 Azure 프로젝트 빌드
 Microsoft Build Engine(MSBuild)을 사용하여 Visual Studio가 설치되지 않은 빌드 랩 환경에 제품을 빌드할 수 있습니다. MSBuild는 Microsoft에서 확장 가능하고 완전히 지원되는 프로젝트 파일에 대한 XML 형식을 사용합니다. MSBuild 파일 형식으로 하나 이상의 플랫폼 및 구성에 대해 어떤 항목을 빌드해야 하는지 설명할 수 있습니다
 
-명령줄에서 MSBuild를 실행할 수도 있으며 이 항목에서는 그 방법을 설명합니다. 명령줄에서 속성을 설정하여 프로젝트의 특정 구성을 빌드할 수 있습니다. 마찬가지로, MSBuild가 빌드할 대상을 정의할 수 있습니다. 명령줄 매개 변수 및 MSBuild에 대한 자세한 내용은 [MSBuild 명령줄 참조](https://msdn.microsoft.com/library/ms164311.aspx)를 참조하세요.
+명령줄에서 MSBuild를 실행할 수도 있으며 이 항목에서는 그 방법을 설명합니다. 명령줄에서 속성을 설정하여 프로젝트의 특정 구성을 빌드할 수 있습니다. 마찬가지로, MSBuild가 빌드할 대상을 정의할 수 있습니다. 명령줄 매개 변수 및 MSBuild에 대한 자세한 내용은 [MSBuild 명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
 
 ## <a name="msbuild-parameters"></a>MSBuild 매개 변수
 패키지를 만드는 가장 간단한 방법은 `/t:Publish` 옵션으로 MSBuild를 실행하는 것 입니다. 기본적으로 이 명령은 프로젝트의 루트 폴더를 기준으로 디렉터리를 만듭니다(예: `<ProjectDirectory>\bin\Configuration\app.publish\`). Azure 프로젝트를 빌드하면 패키지 파일 자체와 함께 제공되는 구성 파일의 두 파일이 생성됩니다.

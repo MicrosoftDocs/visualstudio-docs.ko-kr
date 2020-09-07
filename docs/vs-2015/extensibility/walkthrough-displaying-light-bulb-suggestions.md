@@ -1,5 +1,5 @@
 ---
-title: '연습: Displaying Light Bulb Suggestions | Microsoft Docs'
+title: '연습: 전구 제안 표시 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,54 +8,54 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e95466094f15b4fa166bfdb20c85836da32df96
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438153"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508589"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>연습: 밝은 전구 추천 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-전구는 Visual Studio 편집기에 사용 되는 일련의 작업을 표시 하도록 확장, 예를 들어 기본 제공 코드 분석기 및 코드 리팩터링에 의해 식별 된 문제에 대 한 수정 하는 아이콘입니다.  
+Light 전구은 Visual Studio 편집기에서 사용 되는 아이콘으로, 작업 집합 (예: 기본 제공 코드 분석기 또는 코드 리팩터링으로 식별 된 문제에 대 한 수정)을 표시 하도록 확장 됩니다.  
   
- Visual C# 및 Visual Basic 편집기에서 작성 하 고 자동으로 전구를 표시 하는 작업을 사용 하 여 사용자 고유의 코드 분석기 패키지는.NET 컴파일러 플랫폼 ("Roslyn")을 사용할 수 있습니다. 자세한 내용은 다음을 참조하세요.  
+ Visual c # 및 Visual Basic 편집기에서 .NET Compiler Platform ("Roslyn")를 사용 하 여 light 전구을 자동으로 표시 하는 작업으로 사용자 고유의 코드 분석기를 작성 하 고 패키지할 수도 있습니다. 자세한 내용은 다음을 참조하십시오.  
   
-- [방법: 작성 된 C# 진단 및 코드 수정](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [방법: c # 진단 및 코드 수정 작성](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)  
   
-- [방법: Visual Basic 진단 및 코드 수정 사항을 작성 합니다.](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [방법: Visual Basic 진단 및 코드 수정 작성](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)  
   
-  다른 언어와 같은 C++ 전구 함수의 스텁 구현을 만들 하려면 같은 빠른 작업을 제공 합니다.  
+  또한 c + +와 같은 다른 언어는 해당 함수의 스텁 구현을 만드는 제안 등의 몇 가지 빠른 작업을 위한 간단한 전구 제공 합니다.  
   
-  전구의 모양은 다음과 같습니다. Visual Basic 또는 Visual C# 프로젝트에서 사용할 수 없는 경우 변수 이름으로 빨간색 물결선이 나타납니다. 잘못 된 식별자 위로 마우스를 이동할 때 커서 주위 전구가 표시 됩니다.  
+  전구는 다음과 같습니다. Visual Basic 또는 Visual c # 프로젝트에서 잘못 된 경우 변수 이름 아래에 빨간색 물결선이 나타납니다. 잘못 된 식별자 위로 마우스를 가져가면 커서 근처에 전구를 표시 합니다.  
   
   ![전구](../extensibility/media/lightbulb.png "전구")  
   
-  전구에서 아래쪽 화살표를 클릭 하면 선택한 작업의 미리 보기와 함께 제안 된 작업 집합이 표시 됩니다. 이 경우 작업을 실행 하는 경우 코드에 적용 될 변경 내용을 보여 줍니다.  
+  전구 옆에 있는 아래쪽 화살표를 클릭 하면 선택한 작업의 미리 보기와 함께 일련의 제안 된 동작이 표시 됩니다. 이 경우 작업을 실행 하면 코드에 적용 되는 변경 내용이 표시 됩니다.  
   
   ![전구 미리 보기](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  사용자 고유의 제안 된 작업을 제공 하도록 전구를 사용할 수 있습니다. 예를 들어, 새 줄에 중괄호를 열고 이동 하거나 이전 줄의 끝에 이동 하는 작업을 제공할 수 있습니다. 두 개의 제안 동작 및 다음 연습에서는 현재 단어에 표시 되는 밝은 전구를 만드는 방법을 보여줍니다. **대문자로 변환할** 하 고 **소문자로 변환할**합니다.  
+  Light 전구를 사용 하 여 고유한 제안 조치를 제공할 수 있습니다. 예를 들어 여는 중괄호를 새 줄로 이동 하거나 앞 줄의 끝으로 이동 하는 작업을 제공할 수 있습니다. 다음 연습에서는 현재 단어에 표시 되 고 두 개의 제안 동작 ( **대문자로 변환** 및 소문자로 **변환**)이 있는 전구를 만드는 방법을 보여 줍니다.  
   
-## <a name="prerequisites"></a>전제 조건  
- Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
+## <a name="prerequisites"></a>사전 요구 사항  
+ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>MEF(Managed Extensibility Framework) 프로젝트 만들기  
   
-1. C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `LightBulbTest`로 지정합니다.  
+1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트**를 차례로 선택 합니다.) 솔루션 이름을로 `LightBulbTest` 합니다.  
   
-2. 추가 된 **편집기 분류자** 프로젝트 항목 템플릿을입니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
+2. **편집기 분류자** 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)를 참조 하세요.  
   
 3. 기존 클래스 파일을 삭제합니다.  
   
-4. 프로젝트에 다음 참조를 추가 하 고 설정 **로컬 복사** 에 `False`:  
+4. 프로젝트에 다음 참조를 추가 하 고 **로컬 복사** 를로 설정 합니다 `False` .  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-5. 새 클래스 파일을 추가 하 고 이름을 **LightBulbTest**합니다.  
+5. 새 클래스 파일을 추가 하 고 이름을 **LightBulbTest**로 추가 합니다.  
   
-6. 다음 추가 문을 사용 하 여:  
+6. 다음 using 명령문을 추가합니다.  
   
     ```csharp  
     using System;  
@@ -72,9 +72,9 @@ ms.locfileid: "63438153"
   
     ```  
   
-## <a name="implementing-the-light-bulb-source-provider"></a>전구 소스 공급자 구현  
+## <a name="implementing-the-light-bulb-source-provider"></a>전구 원본 공급자 구현  
   
-1. LightBulbTest.cs 클래스 파일에서 LightBulbTest 클래스를 삭제 합니다. 라는 클래스를 추가 **TestSuggestedActionsSourceProvider** 구현 하는 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>합니다. 이름으로 내보내기 **테스트 권장 조치** 및 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"입니다.  
+1. LightBulbTest.cs 클래스 파일에서 LightBulbTest 클래스를 삭제 합니다. 을 구현 하는 **TestSuggestedActionsSourceProvider** 라는 클래스를 추가 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 합니다. **테스트 제안 작업** 의 이름 및 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"로 내보냅니다.  
   
     ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
@@ -83,14 +83,14 @@ ms.locfileid: "63438153"
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider  
     ```  
   
-2. 소스 공급자 클래스 내 가져오기는 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 속성으로 추가 합니다.  
+2. 소스 공급자 클래스 내에서를 가져와서 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 속성으로 추가 합니다.  
   
     ```csharp  
     [Import(typeof(ITextStructureNavigatorSelectorService))]  
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }  
     ```  
   
-3. 구현 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> 반환할 메서드는 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 개체입니다. 다음 섹션에서 원본에 논의할 것입니다.  
+3. 메서드를 구현 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> 하 여 개체를 반환 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 합니다. 다음 섹션에서는 소스에 대해 설명 합니다.  
   
     ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
@@ -104,15 +104,15 @@ ms.locfileid: "63438153"
     ```  
   
 ## <a name="implementing-the-isuggestedactionsource"></a>ISuggestedActionSource 구현  
- 제안 된 작업 소스는 제안 된 작업의 집합을 수집 하 고 적절 한 상황에 추가 하는 일을 담당 합니다. 이 경우 컨텍스트는 현재 단어 및 제안 된 작업은 **UpperCaseSuggestedAction** 하 고 **LowerCaseSuggestedAction**, 다음 섹션에서 다루겠습니다.  
+ 제안 된 작업 원본은 제안 된 작업 집합을 수집 하 고 올바른 컨텍스트에 추가 하는 작업을 담당 합니다. 이 경우 컨텍스트는 현재 단어 이며 제안 된 작업은 **UpperCaseSuggestedAction** 및 **LowerCaseSuggestedAction**입니다 .이에 대해서는 다음 섹션에서 설명 합니다.  
   
-1. 클래스를 추가 **TestSuggestedActionsSource** 구현 하는 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>합니다.  
+1. 을 구현 하는 **TestSuggestedActionsSource** 클래스를 추가 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 합니다.  
   
     ```csharp  
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2. 제안 된 작업 소스 공급자 및 텍스트 버퍼 텍스트 보기에 대 한 개인 읽기 전용 필드를 추가 합니다.  
+2. 제안 된 동작 원본 공급자, 텍스트 버퍼 및 텍스트 뷰에 대해 전용 읽기 전용 필드를 추가 합니다.  
   
     ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
@@ -120,7 +120,7 @@ ms.locfileid: "63438153"
     private readonly ITextView m_textView;  
     ```  
   
-3. 전용 필드를 설정 하는 생성자를 추가 합니다.  
+3. Private 필드를 설정 하는 생성자를 추가 합니다.  
   
     ```csharp  
     public TestSuggestedActionsSource(TestSuggestedActionsSourceProvider testSuggestedActionsSourceProvider, ITextView textView, ITextBuffer textBuffer)  
@@ -131,7 +131,7 @@ ms.locfileid: "63438153"
     }  
     ```  
   
-4. 현재 커서 아래에 있는 단어를 반환 하는 개인 메서드를 추가 합니다. 다음 메서드 커서의 현재 위치에서 찾은 단어의 범위에 대 한 텍스트 구조 탐색기를 요청 합니다. 커서가 단어에 있는 경우는 <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> 이 고 그렇지 않으면 출력 매개 변수로 반환 합니다 `out` 매개 변수는 `null` 메서드에서 반환 `false`.  
+4. 현재 커서 아래에 있는 단어를 반환 하는 private 메서드를 추가 합니다. 다음 메서드는 커서의 현재 위치를 확인 하 고 텍스트 구조 탐색기에 단어 범위를 요청 합니다. 커서가 단어에 있으면 <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> out 매개 변수에서가 반환 되 고, 그렇지 않으면 `out` 매개 변수가이 `null` 고 메서드에서를 반환 합니다 `false` .  
   
     ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
@@ -156,9 +156,9 @@ ms.locfileid: "63438153"
     }  
     ```  
   
-5. <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> 메서드를 구현합니다. 편집기를 전구를 표시할지 여부를 확인 하려면이 메서드를 호출 합니다. 이 호출이 다른 줄에서 커서를 이동할 때마다 또는 오류 물결선을 마우스로 가리킬 때 예를 들어 경우가 매우 자주 수행 됩니다. 이 메서드는 작업 전달할 기타 UI 작업을 허용 하기 위해 비동기 이며 따라서이 메서드를 일부 구문 분석 및 현재 줄의 분석을 수행 해야 합니다. 대부분의 경우에서 처리 하는 약간의 시간이 걸릴 수 있습니다.  
+5. <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> 메서드를 구현합니다. 편집기는이 메서드를 호출 하 여 전구를 표시할지 여부를 확인 합니다. 이 호출은 커서를 한 줄에서 다른 줄로 이동할 때마다 또는 마우스가 오류 물결선을 가리킬 때 처럼 자주 수행 됩니다. 이 메서드가 작동 하는 동안 다른 UI 작업을 수행할 수 있도록 하기 위해 비동기입니다. 대부분의 경우이 메서드는 현재 줄의 일부 구문 분석 및 분석을 수행 해야 하므로 처리 하는 데 시간이 걸릴 수 있습니다.  
   
-     이 구현에서 비동기적으로 가져옵니다는 <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> 범위 중요 한지 여부, 즉, 공백이 아닌 텍스트 있는지 여부를 결정 합니다.  
+     이 구현에서는을 비동기식으로 가져오고 <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> 범위가 중요 한지 여부를 확인 합니다. 즉, 공백이 아닌 텍스트가 있는지 여부를 확인 합니다.  
   
     ```csharp  
     public Task<bool> HasSuggestedActionsAsync(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -176,10 +176,10 @@ ms.locfileid: "63438153"
     }  
     ```  
   
-6. 구현 된 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> 의 배열을 반환 하는 메서드 <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> 다양 한 포함 하는 개체 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> 개체입니다. 이 메서드는 전구 확장 될 때 호출 됩니다.  
+6. <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> 다른 개체를 포함 하는 개체의 배열을 반환 하는 메서드를 구현 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> . 이 메서드는 전구를 확장할 때 호출 됩니다.  
   
     > [!WARNING]
-    > 확인 해야 하는 구현 `HasSuggestedActionsAsync()` 및 `GetSuggestedActions()` 는 일관 된;은 이면 `HasSuggestedActionsAsync()` 반환 `true`, 다음 `GetSuggestedActions()` 표시 하려면 몇 가지 작업에 있어야 합니다. 대부분의 경우에서 `HasSuggestedActionsAsync()` 직전에 호출 `GetSuggestedActions()`, 이지만 항상 대/소문자는 없습니다. 예를 들어, 사용자 키를 눌러 전구 작업을 호출 하는 경우 (CTRL +.)만 `GetSuggestedActions()` 라고 합니다.  
+    > 및의 구현이 일치 하는지 확인 해야 합니다 `HasSuggestedActionsAsync()` . 즉, `GetSuggestedActions()` 가를 반환 하는 경우에는 `HasSuggestedActionsAsync()` `true` `GetSuggestedActions()` 몇 가지 작업을 표시 해야 합니다. 대부분의 경우 `HasSuggestedActionsAsync()` 는 바로 이전에 호출 `GetSuggestedActions()` 되지만 항상 그렇지는 않습니다. 예를 들어 사용자가 (CTRL +.)를 눌러 전구 동작을 호출 하면만 `GetSuggestedActions()` 호출 됩니다.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -196,13 +196,13 @@ ms.locfileid: "63438153"
     }   
     ```  
   
-7. 정의 `SuggestedActionsChanged` 이벤트입니다.  
+7. 이벤트를 정의 `SuggestedActionsChanged` 합니다.  
   
     ```csharp  
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8. 구현 완료에 대 한 구현을 추가 합니다 `Dispose()` 및 `TryGetTelemetryId()` 메서드. 원격 분석을 수행 하므로 단순히 false를 반환 하 고 빈 GUID로 하려고 하지 않습니다.  
+8. 구현을 완료 하려면 및 메서드에 대 한 구현을 추가 `Dispose()` `TryGetTelemetryId()` 합니다. 원격 분석을 수행 하 고 싶지 않으므로 false를 반환 하 고 GUID를 비어 있는 것으로 설정 합니다.  
   
     ```csharp  
     public void Dispose()  
@@ -217,9 +217,9 @@ ms.locfileid: "63438153"
     }  
     ```  
   
-## <a name="implementing-light-bulb-actions"></a>전구 작업 구현  
+## <a name="implementing-light-bulb-actions"></a>전구 동작 구현  
   
-1. 프로젝트에서 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll 집합에 대 한 참조를 추가 **로컬 복사** 에 `False`입니다.  
+1. 프로젝트에서 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll에 대 한 참조를 추가 하 고 **로컬 복사** 를로 설정 `False` 합니다.  
   
 2. 두 개의 클래스를 만듭니다. 첫 번째 클래스의 이름은 `UpperCaseSuggestedAction` 이고 두 번째 클래스의 이름은 `LowerCaseSuggestedAction`입니다. 두 클래스 모두 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>를 구현합니다.  
   
@@ -230,7 +230,7 @@ ms.locfileid: "63438153"
   
      한 클래스는 <xref:System.String.ToUpper%2A>를 호출하고 다른 클래스는 <xref:System.String.ToLower%2A>를 호출한다는 점을 제외하고 두 클래스는 유사합니다. 다음 단계에서는 대문자 동작 클래스만 설명하지만 두 클래스를 모두 구현해야 합니다. 대문자 동작 구현 단계를 소문자 동작 구현 패턴으로 사용합니다.  
   
-3. 다음 추가 문을 사용 하 여 이러한 클래스에 대 한 합니다.  
+3. 이러한 클래스에 대해 다음 using 문을 추가 합니다.  
   
     ```csharp  
     using Microsoft.VisualStudio.Imaging.Interop;  
@@ -262,7 +262,7 @@ ms.locfileid: "63438153"
     }  
     ```  
   
-6. 구현 된 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> 메서드 작업 미리 보기 표시 되도록 합니다.  
+6. <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A>작업 미리 보기를 표시 하도록 메서드를 구현 합니다.  
   
     ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
@@ -274,7 +274,7 @@ ms.locfileid: "63438153"
     }  
     ```  
   
-7. 구현 된 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> 메서드는 빈 반환 하도록 <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> 열거형입니다.  
+7. <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A>빈 열거형을 반환 하도록 메서드를 구현 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> .  
   
     ```csharp  
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)  
@@ -328,9 +328,9 @@ ms.locfileid: "63438153"
     ```  
   
     > [!WARNING]
-    > 전구 동작 **Invoke** 메서드 UI가 표시 되지 않습니다.  작업은 새 ui (예: 미리 보기 또는 선택 영역 대화) 상태로 경우 내에서 직접 UI를 표시 하지 않습니다 합니다 **Invoke** 메서드 대신에서 반환 된 후 UI를 표시할 예약 하지만 **Invoke**.  
+    > 전구 작업 **호출** 메서드는 UI를 표시 하지 않을 것으로 예상 됩니다.  작업에서 새 UI (예: 미리 보기 또는 선택 대화 상자)를 표시 하는 경우 **invoke** 메서드 내에서 직접 ui를 표시 하지 말고 **호출**에서 반환한 후 ui를 표시 하도록 예약 합니다.  
   
-10. 구현을 완료 하려면 추가 합니다 `Dispose()` 고 `TryGetTelemetryId()` 메서드.  
+10. 구현을 완료 하려면 및 메서드를 추가 `Dispose()` 합니다 `TryGetTelemetryId()` .  
   
     ```csharp  
     public void Dispose()  
@@ -345,23 +345,23 @@ ms.locfileid: "63438153"
     }  
     ```  
   
-11. 에 대 한 동일한 작업을 수행 해야 `LowerCaseSuggestedAction` 표시 텍스트를 변경 "변환 '{0}' 소문자로" 호출 <xref:System.String.ToUpper%2A> 하려면 <xref:System.String.ToLower%2A>합니다.  
+11. `LowerCaseSuggestedAction`표시 텍스트를 "변환 ' '에서 소문자로 변환 하 {0} 고를 호출 하는 것과 동일한 작업을 수행 해야 합니다 <xref:System.String.ToUpper%2A> <xref:System.String.ToLower%2A> .  
   
 ## <a name="building-and-testing-the-code"></a>코드 빌드 및 테스트  
- 이 코드를 테스트 하려면 LightBulbTest 솔루션 빌드하고 실험적 인스턴스에서 실행 합니다.  
+ 이 코드를 테스트 하려면 LightBulbTest 솔루션을 빌드하고 실험적 인스턴스에서 실행 합니다.  
   
 1. 솔루션을 빌드합니다.  
   
 2. 디버거에서 이 프로젝트를 실행하면 Visual Studio의 두 번째 인스턴스가 인스턴스화됩니다.  
   
-3. 텍스트 파일을 만들고 일부 텍스트를 입력합니다. 텍스트의 왼쪽에 전구 표시 되어야 합니다.  
+3. 텍스트 파일을 만들고 일부 텍스트를 입력합니다. 텍스트의 왼쪽에 전구를 표시 해야 합니다.  
   
      ![전구 테스트](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
-4. 전구를 가리키면 됩니다. 아래쪽 화살표를 표시 됩니다.  
+4. 전구를 가리킵니다. 아래쪽 화살표가 표시 됩니다.  
   
-5. 전구를 클릭 하면 두 가지 권장 된 조치를 표시할지 선택한 작업의 미리 보기와 함께 합니다.  
+5. 전구를 클릭 하면 선택한 작업의 미리 보기와 함께 두 개의 제안 된 동작이 표시 됩니다.  
   
-     ![확장 된 전구 테스트](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
+     ![전구 테스트, 확장됨](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6. 첫 번째 동작을 클릭하면 현재 단어의 모든 텍스트가 대문자로 변환됩니다. 두 번째 동작을 클릭하면 모든 텍스트가 소문자로 변환됩니다.

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911675"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508394"
 ---
 # <a name="set-up-named-authentication-credentials"></a>명명된 인증 자격 증명 설정
 
@@ -33,7 +33,7 @@ Azure에 애플리케이션을 게시하거나 기존 클라우드 서비스를 
 - 활성 구독을 선택하고 **편집**을 선택합니다. 그러면 인증에 사용할 기존 구독을 편집하는 대화 상자가 열립니다.
 - **새로 만들기**를 선택하여 **새 구독** 대화 상자를 열고 필요한 세부 정보를 제공합니다. 클라우드 서비스에 인증서를 업로드하려면 Azure Portal에 로그인하고, 클라우드 서비스로 이동하고, **설정 > 관리 인증서**를 차례로 선택하고, **업로드**를 선택한 다음, `.cer` 파일에 대한 경로를 지정합니다.
 
-인증서를 직접 만들려면 [Azure에 대한 관리 인증서 만들기 및 업로드](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx)의 지침을 참조한 다음, 인증서를 [Azure Portal](https://portal.azure.com/)에 수동으로 업로드합니다.
+인증서를 직접 만들려면 [Azure에 대한 관리 인증서 만들기 및 업로드](/azure/cloud-services/cloud-services-certs-create)의 지침을 참조한 다음, 인증서를 [Azure Portal](https://portal.azure.com/)에 수동으로 업로드합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

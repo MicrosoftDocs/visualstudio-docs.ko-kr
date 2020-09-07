@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6a1d240c865ecc6abddd399c94122a757ee0983
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283010"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508550"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩
 
@@ -53,7 +53,7 @@ ms.locfileid: "85283010"
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>DataGridView 컨트롤의 데이터에 바인딩
 
-[DataGridView 컨트롤](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)의 경우 전체 테이블이 해당 단일 컨트롤에 바인딩됩니다. **DataGridView** 를 폼으로 끌면 레코드 탐색을 위한 도구 스트립 ( <xref:System.Windows.Forms.BindingNavigator> )도 표시 됩니다. [데이터 집합](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md) <xref:System.Windows.Forms.BindingSource> 및가 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다. 다음 그림에서는 Customers 테이블에 Orders 테이블과의 관계가 있으므로 [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) 도 추가 되었습니다. 이러한 변수는 모두 자동 생성 코드에서 form 클래스의 private 멤버로 선언 됩니다. **DataGridView** 를 채우기 위한 자동 생성 코드는 `Form_Load` 이벤트 처리기에 있습니다. 데이터베이스를 업데이트 하기 위해 데이터를 저장 하는 코드는 `Save` **BindingNavigator**에 대 한 이벤트 처리기에 있습니다. 필요에 따라이 코드를 이동 하거나 수정할 수 있습니다.
+[DataGridView 컨트롤](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)의 경우 전체 테이블이 해당 단일 컨트롤에 바인딩됩니다. **DataGridView** 를 폼으로 끌면 레코드 탐색을 위한 도구 스트립 ( <xref:System.Windows.Forms.BindingNavigator> )도 표시 됩니다. [데이터 집합](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md) <xref:System.Windows.Forms.BindingSource> 및가 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다. 다음 그림에서는 Customers 테이블에 Orders 테이블과의 관계가 있으므로 [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) 도 추가 되었습니다. 이러한 변수는 모두 자동 생성 코드에서 form 클래스의 private 멤버로 선언 됩니다. **DataGridView** 를 채우기 위한 자동 생성 코드는 `Form_Load` 이벤트 처리기에 있습니다. 데이터베이스를 업데이트 하기 위해 데이터를 저장 하는 코드는 `Save` **BindingNavigator**에 대 한 이벤트 처리기에 있습니다. 필요에 따라이 코드를 이동 하거나 수정할 수 있습니다.
 
 ![BindingNavigator를 사용 하는 GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "85283010"
 
 또한 각 컨트롤에는 스마트 태그가 있습니다. 이 태그를 사용 하면 해당 컨트롤에만 적용 되는 사용자 지정이 가능 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Windows Forms의 데이터 바인딩 (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

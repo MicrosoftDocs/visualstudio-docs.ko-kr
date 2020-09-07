@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769483"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508381"
 ---
 # <a name="automatic-feature-suspension"></a>자동 기능 일시 중단
 
@@ -40,7 +40,7 @@ Visual Studio는 메모리 부족 상태를 검색 하면 안정적으로 유지
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio 성능 향상
 
-대량 솔루션 또는 메모리 부족 상태를 처리할 때 Visual Studio 성능을 개선 하는 방법에 대 한 팁과 요령은 [대기업의 성능 고려 사항](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)을 참조 하세요.
+대량 솔루션 또는 메모리 부족 상태를 처리할 때 Visual Studio 성능을 개선 하는 방법에 대 한 팁과 요령은 [대기업의 성능 고려 사항](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)을 참조 하세요.
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>라이브 코드 분석이 최소 범위로 축소 됨
 
@@ -65,8 +65,8 @@ GC 낮은 대기 시간 모드를 다시 사용 하도록 설정 하려면 Visua
 > [!NOTE]
 > 자동 기능 일시 중단 경고는 세션당 한 번만 발생 하는 것이 아니라 솔루션 별로 한 번만 발생 합니다. 즉, Visual Basic에서 Visual c # (또는 그 반대로)로 전환 하 고 다른 메모리 부족 상태를 실행 하는 경우 다른 자동 기능 일시 중단 경고를 얻을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: 관리 코드에 대 한 라이브 코드 분석 범위 구성](./configure-live-code-analysis-scope-managed-code.md)
 - [가비지 수집 기본 사항](/dotnet/standard/garbage-collection/fundamentals)
-- [대량 솔루션에 대 한 성능 고려 사항](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [대량 솔루션에 대 한 성능 고려 사항](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

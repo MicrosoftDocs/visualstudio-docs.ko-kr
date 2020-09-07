@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426735"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508498"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
 Azure 클라우드 서비스 또는 가상 머신 문제를 해결해야 하는 경우 Visual Studio를 사용하여 Azure Diagnostics를 보다 쉽게 설정할 수 있습니다. 진단은 클라우드 서비스를 실행하는 가상 머신 및 가상 머신 인스턴스에서 시스템 데이터와 로깅 데이터를 캡처합니다. 진단 데이터는 사용자가 선택한 스토리지 계정으로 전송됩니다. Azure의 진단 로깅에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대해 진단 로깅 사용](/azure/app-service/web-sites-enable-diagnostic-log)을 참조하세요.
@@ -156,18 +156,18 @@ Azure SDK 2.5를 사용 중이고 사용자 지정 데이터 원본을 지정하
 ```
 
 ### <a name="performance-counters"></a>성능 카운터
-성능 카운터 정보는 시스템 병목 지점을 찾고 시스템 및 애플리케이션 성능을 미세하게 조정하는 데 도움이 될 수 있습니다. 자세한 내용은 [Azure 애플리케이션에서 성능 카운터 만들기 및 사용](https://msdn.microsoft.com/library/azure/hh411542.aspx)을 참조하세요. 성능 카운터를 캡처하려면 **성능 카운터 전송 사용** 확인란을 선택합니다. 스토리지 계정으로의 이벤트 로그 전송 간격을 늘리거나 줄이려면 변경 된 **전송 기간(분)** 값을 변경합니다. 추적하려는 성능 카운터에 대한 확인란을 선택 합니다.
+성능 카운터 정보는 시스템 병목 지점을 찾고 시스템 및 애플리케이션 성능을 미세하게 조정하는 데 도움이 될 수 있습니다. 자세한 내용은 [Azure 애플리케이션에서 성능 카운터 만들기 및 사용](/azure/cloud-services/diagnostics-performance-counters)을 참조하세요. 성능 카운터를 캡처하려면 **성능 카운터 전송 사용** 확인란을 선택합니다. 스토리지 계정으로의 이벤트 로그 전송 간격을 늘리거나 줄이려면 변경 된 **전송 기간(분)** 값을 변경합니다. 추적하려는 성능 카운터에 대한 확인란을 선택 합니다.
 
 ![성능 카운터](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-나열되지 않은 성능 카운터를 추적하려면 제안된 구문을 사용하여 성능 카운터를 입력합니다. 그런 후 **추가**를 선택합니다. 가상 컴퓨터의 운영 체제에서 추적할 수 있는 성능 카운터를 결정 합니다. 구문에 대 한 자세한 내용은 [카운터 경로 지정](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)을 참조 하세요.
+나열되지 않은 성능 카운터를 추적하려면 제안된 구문을 사용하여 성능 카운터를 입력합니다. 그런 후 **추가**를 선택합니다. 가상 컴퓨터의 운영 체제에서 추적할 수 있는 성능 카운터를 결정 합니다. 구문에 대 한 자세한 내용은 [카운터 경로 지정](/windows/win32/perfctrs/specifying-a-counter-path)을 참조 하세요.
 
 ### <a name="infrastructure-logs"></a>인프라 로그
 인프라 로그는 Azure 진단 인프라, RemoteAccess 모듈 및 RemoteForwarder 모듈에 대한 정보를 포함합니다. 인프라 로그에 대한 정보를 수집하려면 **인프라 로그 전송 사용** 확인란을 선택합니다. 스토리지 계정으로의 인프라 로그 전송 간격을 늘리거나 줄이려면 변경 된 **전송 기간(분)** 값을 변경합니다.
 
 ![진단 인프라 로그](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-자세한 내용은 [Azure 진단를 사용 하 여 로깅 데이터 수집](https://msdn.microsoft.com/library/azure/gg433048.aspx)을 참조 하세요.
+자세한 내용은 [Azure 진단를 사용 하 여 로깅 데이터 수집](/azure/cloud-services/cloud-services-dotnet-diagnostics)을 참조 하세요.
 
 ### <a name="log-directories"></a>로그 디렉터리
 로그 디렉터리는 IIS(인터넷 정보 서비스) 요청, 실패한 요청 또는 사용자가 선택한 폴더에 대한 로그 디렉터리에서 수집한 데이터를 포함합니다. 로그 디렉터리를 캡처하려면 **로그 디렉터리 전송 사용** 확인란을 선택합니다. 스토리지 계정으로의 로그 전송 간격을 늘리거나 줄이려면 변경 된 **전송 기간(분)** 값을 변경합니다.
@@ -185,7 +185,7 @@ Azure SDK 2.5를 사용 중이고 사용자 지정 데이터 원본을 지정하
 
 ![ETW 로그](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 네임스페이스의 클래스를 통해 ASP.NET에서 지원됩니다. Microsoft.WindowsAzure.Diagnostics 네임스페이스는 표준 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 클래스에서 상속 및 확장하며 Azure 환경에서 로깅 프레임워크로 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))를 사용하도록 설정합니다. 자세한 내용은 [Microsoft Azure에서 로깅 및 추적 관리](https://msdn.microsoft.com/magazine/ff714589.aspx) 및 [Azure Cloud Services 및 Virtual Machines에서 진단 사용](/azure/cloud-services/cloud-services-dotnet-diagnostics)을 참조하세요.
+ETW 프레임워크는 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 네임스페이스의 클래스를 통해 ASP.NET에서 지원됩니다. Microsoft.WindowsAzure.Diagnostics 네임스페이스는 표준 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 클래스에서 상속 및 확장하며 Azure 환경에서 로깅 프레임워크로 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics)를 사용하도록 설정합니다. 자세한 내용은 [Microsoft Azure에서 로깅 및 추적 관리](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) 및 [Azure Cloud Services 및 Virtual Machines에서 진단 사용](/azure/cloud-services/cloud-services-dotnet-diagnostics)을 참조하세요.
 
 ### <a name="crash-dumps"></a>크래시 덤프
 역할 인스턴스가 충돌하는 경우에 대한 정보를 캡처하려면 **크래시 덤프 전송 사용** 확인란을 선택합니다. ASP.NET는 대부분의 예외를 처리 하기 때문에이는 일반적으로 작업자 역할에만 유용 합니다. 크래시 덤프에 할당 된 저장소 공간의 비율을 늘리거나 줄이려면 **디렉터리 할당량 (%)** 값을 변경 합니다. 크래시 덤프가 저장되는 스토리지 컨테이너를 변경하고 **전체** 또는 **미니** 덤프를 캡처할지 여부를 선택할 수 있습니다.
@@ -194,7 +194,7 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
 
 ![크래시 덤프](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-자세한 내용은 [Microsoft Azure에서 로깅 및 추적 관리](https://msdn.microsoft.com/magazine/ff714589.aspx) 및 [Microsoft Azure Diagnostics 4부: 사용자 지정 로깅 구성 요소 및 Azure Diagnostics 1.3 변경 내용](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/)을 참조하세요.
+자세한 내용은 [Microsoft Azure에서 로깅 및 추적 관리](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) 및 [Microsoft Azure Diagnostics 4부: 사용자 지정 로깅 구성 요소 및 Azure Diagnostics 1.3 변경 내용](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/)을 참조하세요.
 
 ## <a name="view-the-diagnostics-data"></a>진단 데이터 보기
 클라우드 서비스 또는 가상 머신에 대한 진단 데이터를 수집한 후에 이를 볼 수 있습니다.
@@ -216,7 +216,7 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
     클라우드 탐색기 또는 서버 탐색기에서 배포와 관련된 스토리지 계정을 엽니다.
 3. 테이블 뷰어에서 진단 테이블을 열고 수집한 데이터 검토 합니다. IIS 로그 및 사용자 지정 로그인 경우 BLOB 컨테이너를 열 수 있습니다. 다음 표에는 다른 로그 파일에 대한 데이터를 포함하는 테이블 또는 Blob 컨테이너가 나와 있습니다. 해당 로그 파일에 대한 데이터 외에도 테이블 항목에는 **EventTickCount**, **DeploymentId**, **Role** 및 **RoleInstance**가 포함되어 데이터가 생성된 가상 머신 및 역할과 데이터가 생성된 시기를 파악할 수 있습니다.
 
-   | 진단 데이터 | 설명 | 위치 |
+   | 진단 데이터 | Description | 위치 |
    | --- | --- | --- |
    | 애플리케이션 로그 전송 사용 |코드에서 **Diagnostics. Trace** 클래스의 메서드를 호출 하 여 생성 하는 로그입니다. |WADLogsTable |
    | 이벤트 로그 |가상 머신에서 Windows 이벤트 로그에서 가져온 데이터입니다. Windows에서는 이러한 로그에 정보를 저장하지만 애플리케이션 및 서비스에서는 로그를 사용하여 오류 또는 로그 정보를 보고합니다. |WADWindowsEventLogsTable |
@@ -256,7 +256,7 @@ ETW 프레임워크는 [System.Diagnostics.aspx](https://msdn.microsoft.com/libr
     서버 탐색기에서 데이터 컬렉션을 변경하는 경우 클라우드 서비스를 완전히 다시 배포할 때까지 이 변경 내용이 계속 적용됩니다. 기본 게시 설정을 사용하는 경우 변경 내용을 덮어쓰지 않습니다. 기본 게시 설정은 전체 다시 배포를 수행하는 것이 아니라 기존 배포를 업데이트하는 것입니다. 배포 시 설정을 지우려면 게시 마법사의 **고급 설정** 탭으로 이동하고 **배포 업데이트** 확인란을 선택 취소합니다. 해당 확인란이 선택 취소된 상태에서 재배포하는 경우 역할에 대한 **속성** 편집기를 통해 설정된 대로 .wadcfgx(또는 .wadcfg) 파일의 내용으로 설정을 되돌립니다. 배포를 업데이트하는 경우 Azure는 이전 설정을 유지합니다.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Azure 클라우드 서비스 문제 해결
-"사용 중" 상태에 고착된 역할, 반복적인 재활용 또는 내부 서버 오류 throw와 같은 클라우드 서비스 프로젝트에서 문제가 발생하는 경우 이러한 문제를 진단하고 해결하는 데 사용할 수 있는 도구와 기술이 있습니다. 일반적인 문제 및 해결 방법에 대한 구체적인 예제와 이러한 오류를 진단 및 해결하는 데 사용되는 개념 및 도구에 대한 개요는 [Azure PaaS Compute 진단 데이터](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/)를 참조하세요.
+"사용 중" 상태에 고착된 역할, 반복적인 재활용 또는 내부 서버 오류 throw와 같은 클라우드 서비스 프로젝트에서 문제가 발생하는 경우 이러한 문제를 진단하고 해결하는 데 사용할 수 있는 도구와 기술이 있습니다. 일반적인 문제 및 해결 방법에 대한 구체적인 예제와 이러한 오류를 진단 및 해결하는 데 사용되는 개념 및 도구에 대한 개요는 [Azure PaaS Compute 진단 데이터](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data)를 참조하세요.
 
 ## <a name="q--a"></a>Q & A
 **버퍼 크기란 무엇이고 얼마나 클 수 있습니까?**

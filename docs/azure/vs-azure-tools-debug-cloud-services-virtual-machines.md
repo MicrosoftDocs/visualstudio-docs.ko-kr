@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800491"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508485"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 또는 가상 머신 디버깅
 
@@ -75,7 +75,7 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 머신에서 클라우드
 
     ![디버거 연결](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. 인스턴스에 디버거가 연결된 후 평소와 같이 디버깅합니다. 디버거는 사용자의 역할에 적절한 호스트 프로세스에 자동으로 연결합니다. 역할에 따라 디버거는 w3wp.exe, WaWorkerHost.exe 또는 WallHost.exe에 연결됩니다. 프로세스가 어떤 디버거에 연결되어있는지 확인하려면 서버 탐색기에서 인스턴스 노드를 확장합니다. Azure 프로세스에 대한 자세한 내용은 [Azure 역할 아키텍처](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)를 참조하세요.
+3. 인스턴스에 디버거가 연결된 후 평소와 같이 디버깅합니다. 디버거는 사용자의 역할에 적절한 호스트 프로세스에 자동으로 연결합니다. 역할에 따라 디버거는 w3wp.exe, WaWorkerHost.exe 또는 WallHost.exe에 연결됩니다. 프로세스가 어떤 디버거에 연결되어있는지 확인하려면 서버 탐색기에서 인스턴스 노드를 확장합니다. Azure 프로세스에 대한 자세한 내용은 [Azure 역할 아키텍처](/archive/blogs/kwill/windows-azure-role-architecture)를 참조하세요.
 
     ![코드 형식 선택 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -128,7 +128,7 @@ Visual Studio의 서버 탐색기를 사용하여 Azure 가상 머신에서 실�
 
     ![코드 형식 선택 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. 가상 머신에서 디버깅할 프로세스를 선택한 다음 **연결**을 선택 합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio에서 하나 이상의 프로세스 디버그](https://msdn.microsoft.com/library/jj919165.aspx) 및 [Azure 역할 아키텍쳐](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)를 참조하세요.
+5. 가상 머신에서 디버깅할 프로세스를 선택한 다음 **연결**을 선택 합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio에서 하나 이상의 프로세스 디버그](../debugger/debug-multiple-processes.md) 및 [Azure 역할 아키텍쳐](/archive/blogs/kwill/windows-azure-role-architecture)를 참조하세요.
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>디버깅을 위한 웹 프로젝트 및 가상 머신 만들기
 
@@ -167,7 +167,7 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
     ![Azure 활동 로그](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. [Visual Studio의 One-Click 게시를 사용하여 웹 프로젝트 배포 방법](https://msdn.microsoft.com/library/dd465337.aspx)을 따라 프로젝트를 게시합니다. 가상 컴퓨터에 디버그하려고 하므로 **웹 게시** 마법사의 **설정** 페이지에서 **디버그**를 구성으로 선택합니다. 이 작업은 디버깅하는 동안 코드 기호를 사용할 수 있게 해줍니다.
+6. [Visual Studio의 One-Click 게시를 사용하여 웹 프로젝트 배포 방법](/previous-versions/aspnet/dd465337(v=vs.110))을 따라 프로젝트를 게시합니다. 가상 컴퓨터에 디버그하려고 하므로 **웹 게시** 마법사의 **설정** 페이지에서 **디버그**를 구성으로 선택합니다. 이 작업은 디버깅하는 동안 코드 기호를 사용할 수 있게 해줍니다.
 
     ![게시 설정](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
     ![코드 형식 선택 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. 가상 머신에서 디버깅할 프로세스를 선택한 다음 **연결**을 선택 합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio의 하나 이상의 프로세스 디버그](https://msdn.microsoft.com/library/jj919165.aspx) 를 참조하세요.
+10. 가상 머신에서 디버깅할 프로세스를 선택한 다음 **연결**을 선택 합니다. 예를 들어, 가상 머신에서 웹앱을 디버그하려면 w3wp.exe 프로세스를 선택합니다. 자세한 내용은 [Visual Studio의 하나 이상의 프로세스 디버그](../debugger/debug-multiple-processes.md) 를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
