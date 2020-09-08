@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585524"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
@@ -30,7 +30,7 @@ ms.locfileid: "75585524"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>철자가 틀린 기호 또는 키워드 수정
 
-Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 해당 항목은 전구 메뉴에 **‘\<철자가 잘못된 단어>’를 ‘\<올바른 단어>’로 변경**으로 표시됩니다. 다음은 그 예입니다.
+Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 해당 항목은 전구 메뉴에 “‘\<misspelled word>를 ‘\<correct word>로 변경”으로 표시됩니다. 다음은 그 예입니다.
 
 ```csharp
 // Before
