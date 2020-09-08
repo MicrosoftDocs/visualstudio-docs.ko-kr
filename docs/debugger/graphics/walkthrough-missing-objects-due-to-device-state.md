@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895451"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>연습: 디바이스 상태로 인해 누락된 개체
@@ -33,7 +33,7 @@ ms.locfileid: "62895451"
 
  이 연습에 설명된 시나리오에서는 3D 앱 개발의 첫 번째 중요 시점에 도달했으며 최초로 테스트할 준비가 되었습니다. 그러나 앱을 실행할 때 사용자 인터페이스만 화면에 렌더링됩니다. 그래픽 진단을 사용하여 앱을 디버그할 수 있도록 그래픽 로그 파일 문제를 포착합니다. 이 문제는 앱에서 다음과 같이 보입니다.
 
- ![문제가 해결되기 전의 앱](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
+ ![문제가 수정되기 전의 응용 프로그램](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
 
  그래픽 로그의 그래픽 문제를 포착하는 방법에 대한 자세한 내용은 [Capturing Graphics Information](capturing-graphics-information.md)를 참조하세요.
 
@@ -68,7 +68,7 @@ ms.locfileid: "62895451"
 
 3. 누락된 모델에 해당하는 그리기 호출에 도달하면 중지합니다. 이 시나리오에서 **그래픽 파이프라인 단계** 창에는 기하 도형이 렌더링되었으나 렌더링 대상에는 나타나지 않다는 사실이 표시됩니다.
 
-    ![누락된 개체를 보여 주는 파이프라인 뷰어](media/vsg_walkthru1_pipeline.png "vsg_walkthru1_pipeline")
+    ![파이프라인 뷰어에서 누락된 개체를 보여 줌](media/vsg_walkthru1_pipeline.png "vsg_walkthru1_pipeline")
 
    앱이 누락된 기하 도형을 렌더링했는지 확인하고 해당 그리기 호출을 찾은 후에는 누락된 기하 도형을 표시하는 렌더링 대상 출력의 일부를 선택한 다음 **그래픽 픽셀 기록** 창에서 픽셀이 제외된 이유를 알아볼 수 있습니다. 픽셀 기록에는 특정 픽셀에 영향을 미쳤을 수 있는 모든 그리기 호출의 목록이 포함되어 있습니다. **그래픽 픽셀 기록** 창의 각 그리기 호출은 **그래픽 이벤트 목록** 창에도 표시되는 번호로 식별됩니다. 이 번호는 해당 픽셀이 누락된 기하 도형을 나타내는 것인지 확인하는 데 도움이 되며 픽셀이 제외된 이유를 알아보는 데도 유용합니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "62895451"
 
 2. **픽셀 셰이더** 축소판 그림을 기준으로, 누락된 기하 도형의 일부를 포함하는 프레임버퍼 출력의 픽셀을 선택합니다. 이 시나리오에서 픽셀 셰이더는 대부분의 렌더링 대상을 포함해야 합니다. 픽셀을 하나 선택하면 **그래픽 픽셀 기록** 창은 다음과 같이 표시됩니다.
 
-    ![관련된 그리기 호출을 보여 주는 픽셀 기록 창](media/vsg_walkthru1_hist1.png "vsg_walkthru1_hist1")
+    ![픽셀 기록 창에서 관련 그리기 호출을 보여 줌](media/vsg_walkthru1_hist1.png "vsg_walkthru1_hist1")
 
 3. 조사하는 그리기 호출의 번호( **그래픽 이벤트 목록** 창)와 일치하는 그리기 호출 번호를 **그래픽 픽셀 기록** 창에서 찾아 선택한 렌더링 대상 픽셀이 해당 기하 도형의 일부를 포함하는지 확인합니다. **그래픽 픽셀 기록** 창의 어떤 호출도 조사 중인 그리기 호출과 일치하지 않을 경우 일치하는 호출을 찾을 때까지 이러한 단계(1단계 제외)를 반복합니다. 이 시나리오에서 일치하는 그리기 호출은 다음과 같습니다.
 
@@ -96,12 +96,12 @@ ms.locfileid: "62895451"
 
 2. **그래픽 개체 테이블** 에서 **D3D10 디바이스**개체를 찾은 후 **D3D10 디바이스** 개체를 엽니다. 새 **d3d10 디바이스** 탭이 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 열립니다. 이 작업을 보다 쉽게 진행하기 위해 **그래픽 개체 테이블** 을 **유형**별로 정렬할 수 있습니다.
 
-    ![그래픽 개체 테이블 및 관련 디바이스 상태](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
+    ![그래픽 개체 테이블 및 관련 장치 상태](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
 
 3. **d3d10 디바이스** 탭에 표시되는 디바이스 상태에 잠재적 문제가 있는지 검사합니다. 해당 기본 형식이 깊이 테스트에 실패했기 때문에 기하 도형이 나타나지 않는 것이므로 깊이 테스트에 영향을 주는 깊이 스텐실과 같은 디바이스 디바이스에 주안점을 둘 수 있습니다. 이 시나리오에서 **깊이 스텐실 설명** ( **출력 병합기 상태**아래에 표시)에는 **깊이 함수** 멤버 `D3D10_COMPARISON_GREATER`에 대한 일반적이지 않은 값이 포함되어 있습니다.
 
-    ![깊이 스텐실 정보를 보여 주는 D3D10 디바이스 창](media/vsg_walkthru1_devicestate.png "vsg_walkthru1_devicestate")
+    ![깊이 스텐실 정보를 보여 주는 D3D10 장치 창](media/vsg_walkthru1_devicestate.png "vsg_walkthru1_devicestate")
 
    렌더링 문제의 원인이 잘못 구성된 깊이 함수라는 사실을 확인한 후에는 이 정보와 코드에 대한 지식을 함께 사용하여 깊이 함수가 잘못 설정된 위치를 찾아 문제를 해결할 수 있습니다. 코드에 친숙하지 않은 경우에는 디버깅 중에 수집한 단서를 사용하여 문제를 검색할 수 있습니다. 예를 들어 이 시나리오에서는 **깊이 스텐실 설명** 을 사용하여 코드에서 "depth" 또는 "GREATER"와 같은 단어를 찾을 수 있습니다. 코드를 수정한 후 다시 빌드하고 앱을 다시 실행하여 렌더링 문제가 해결되었는지 검색합니다.
 
-   ![문제가 해결된 후의 앱](media/vsg_walkthru1_finalview.png "vsg_walkthru1_finalview")
+   ![문제가 수정되기 후의 응용 프로그램](media/vsg_walkthru1_finalview.png "vsg_walkthru1_finalview")

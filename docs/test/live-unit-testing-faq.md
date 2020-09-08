@@ -9,10 +9,10 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591543"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 질문과 대답
@@ -85,7 +85,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>\<OutputPath>, \<OutDir> 또는 \<IntermediateOutputPath>가 포함된 오류 메시지
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>\<OutputPath>, \<OutDir> 또는 \<IntermediateOutputPath> 포함 오류 메시지
 
 **Live Unit Testing이 내 솔루션을 빌드하려고 하는 경우 다음 오류가 표시되는 이유는 무엇인가요? “무조건 `<OutputPath>` 또는 `<OutDir>`으로 설정된 것으로 보입니다. Live Unit Testing은 출력 어셈블리에서 테스트를 실행하지 않습니다.”**
 

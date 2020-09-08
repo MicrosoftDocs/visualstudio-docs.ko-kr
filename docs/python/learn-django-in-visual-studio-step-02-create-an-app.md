@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300890"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89314175"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -111,7 +111,7 @@ class HelloDjangoAppConfig(AppConfig):
 
     ![Visual Studio 상태 표시줄의 소스 제어 변경 단추](media/django/step02-source-control-changes-button.png)
 
-1. **팀 탐색기**에서 “Create initial Django app”과 같은 커밋 메시지를 입력하고 **모두 커밋**을 선택합니다. 커밋이 완료되면 **커밋 \<해쉬>를 로컬에서 만들었습니다. 서버의 변경 내용을 공유하여 동기화합니다.** 라는 메시지가 표시됩니다. 원격 리포지토리에 변경 내용을 푸시하려면 **동기화**를 선택한 다음, **나가는 커밋**에서 **푸시**를 선택합니다. 원격에 푸시하기 전에 여러 개의 로컬 커밋을 누적할 수도 있습니다.
+1. **팀 탐색기**에서 “Create initial Django app”과 같은 커밋 메시지를 입력하고 **모두 커밋**을 선택합니다. 커밋이 완료되면 **커밋 \<hash>을(를) 로컬에서 만들었습니다. 서버의 변경 내용을 공유하여 동기화합니다.** 라는 메시지가 표시됩니다. 원격 리포지토리에 변경 내용을 푸시하려면 **동기화**를 선택한 다음, **나가는 커밋**에서 **푸시**를 선택합니다. 원격에 푸시하기 전에 여러 개의 로컬 커밋을 누적할 수도 있습니다.
 
     ![팀 탐색기에서 원격에 커밋 푸시](media/django/step02-source-control-push-to-remote.png)
 

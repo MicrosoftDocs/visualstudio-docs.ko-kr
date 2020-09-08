@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595815"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -94,7 +94,7 @@ ms.locfileid: "75595815"
 
 ### <a name="icon"></a>아이콘
 
-프로그램 아이콘으로 사용할 .ico 파일을 설정합니다. **\<찾아보기...>** 를 선택하여 기존 그래픽을 찾습니다. 자세한 내용은 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon)(또는 [/win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>를 참조하세요.
+프로그램 아이콘으로 사용할 .ico 파일을 설정합니다. **\<Browse...>** 를 선택하여 기존 그래픽을 찾습니다. 자세한 내용은 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon)(또는 [/win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>를 참조하세요.
 
 ### <a name="assembly-information"></a>어셈블리 정보
 

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74239453"
 ---
 # <a name="remote-debugger-port-assignments"></a>원격 디버거 포트 할당
@@ -42,7 +42,7 @@ Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서�
 
  원격 디버거 창에서 **도구 > 옵션**을 클릭하고 TCP/IP 포트 번호를 설정합니다.
 
- 명령줄에서 **/port** 스위치를 사용하여 원격 디버거를 시작합니다(**msvsmon /port \<포트 번호>** ).
+ 명령줄에서 **/port** 스위치를 사용하여 원격 디버거를 시작합니다(**msvsmon /port \<port number>** ).
 
  원격 디버깅 도움말에서 모든 원격 디버거 명령줄 스위치를 찾을 수 있습니다(원격 디버거 창에서 **F1** 키를 누르거나 **도움말 > 사용법** 클릭).
 
@@ -54,7 +54,7 @@ Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서�
  64비트 버전의 원격 디버거가 시작되면 기본적으로 기본 포트(4022)를 사용합니다.  32비트 프로세스를 디버그하는 경우 64비트 버전의 원격 디버거가 4023 포트(1씩 증가하는 기본 포트 번호)에서 32비트 버전의 원격 디버거를 시작합니다. 32비트 원격 디버거를 실행하는 경우 4022를 사용하며 4023은 사용되지 않습니다.
 :::moniker-end
 
- 이 포트는 명령줄 **Msvsmon /wow64port \<포트 번호>** 에서 구성할 수 있습니다.
+ 이 포트는 명령줄 **Msvsmon /wow64port \<port number>** .
 
 ## <a name="the-discovery-port"></a>검색 포트
  UDP 3702는 네트워크에서 실행 중인 원격 디버거 인스턴스를 찾는 데 사용됩니다(예: **프로세스에 연결** 대화 상자의 **찾기** 대화 상자). 원격 디버거를 실행하는 컴퓨터를 검색하는 용도로만 사용되므로 대상 컴퓨터의 컴퓨터 이름 또는 IP 주소를 확인하는 다른 방법이 있을 경우 선택 사항입니다. 이는 검색에 사용되는 표준 포트이므로 포트 번호를 구성할 수 없습니다.

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594411"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Visual Studio 확장 관리
@@ -106,7 +106,7 @@ Visual Studio 내에서 확장을 설치하려면 다음을 수행합니다.
 
 ## <a name="per-user-and-administrative-extensions"></a>사용자별 및 관리 확장
 
-대부분의 확장은 *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\* 폴더에 사용자별로 설치됩니다. 몇몇 확장은 *\<Visual Studio 설치 폴더>\Common7\IDE\Extensions\\* 폴더에 설치된 관리 확장입니다.
+대부분의 확장은 *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\* 폴더에 사용자별로 설치됩니다. 몇몇 확장은 *\<Visual Studio installation folder>\Common7\IDE\Extensions\\* 폴더에 설치된 관리 확장입니다.
 
 오류 또는 악의적인 코드를 포함할 수 있는 확장으로부터 시스템을 보호하기 위해, Visual Studio가 일반 사용자 권한으로 실행되는 경우에만 로드되도록 사용자별 확장을 제한할 수 있습니다. 따라서 Visual Studio가 관리자 권한으로 실행되는 경우에는 사용자별 확장을 사용할 수 없습니다.
 

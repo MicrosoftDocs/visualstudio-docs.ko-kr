@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461533"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
@@ -130,7 +130,7 @@ ms.locfileid: "68461533"
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. 다음 Visual C++ 런타임 라이브러리는 빌드 컴퓨터에서 빌드 출력을 자동화된 테스트의 일환 등으로 실행하는 경우에만 필요합니다. 파일은 시스템 아키텍처에 따라 일반적으로 *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* 또는 *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* 폴더 아래의 하위 폴더에 있습니다. x86 시스템에서는 x86 이진 파일을 *Windows\System32* 폴더로 복사합니다. x64 시스템에서는 x86 이진 파일을 *Windows\SysWOW64* 폴더로 복사하고, x64 이진 파일을 *Windows\System32* 폴더로 복사합니다.
+4. 다음 Visual C++ 런타임 라이브러리는 빌드 컴퓨터에서 빌드 출력을 자동화된 테스트의 일환 등으로 실행하는 경우에만 필요합니다. 파일은 시스템 아키텍처에 따라 일반적으로 *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* 또는 *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* 폴더의 하위 폴더에 있습니다. x86 시스템에서는 x86 이진 파일을 *Windows\System32* 폴더로 복사합니다. x64 시스템에서는 x86 이진 파일을 *Windows\SysWOW64* 폴더로 복사하고, x64 이진 파일을 *Windows\System32* 폴더로 복사합니다.
 
     - \Microsoft.VC110.ATL\atl110.dll
 

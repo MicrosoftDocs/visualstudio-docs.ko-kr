@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745783"
 ---
 # <a name="assertions-in-managed-code"></a>관리 코드의 어설션

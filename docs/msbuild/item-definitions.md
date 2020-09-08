@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633709"
 ---
 # <a name="item-definitions"></a>항목 정의
@@ -80,7 +80,7 @@ ItemDefinitionGroup에 정의된 메타데이터 값은 다음과 같은 다양�
 
 - ItemDefinitionGroup의 항목에서 잘 알려진 메타데이터
 
-- CDATA 섹션 \<\!\[CDATA\[여기에 있는 내용은 구문 분석되지 않음\]\]\>
+- CDATA 섹션 \<\!\[CDATA\[anything here is not parsed\]\]\>
 
 > [!NOTE]
 > ItemGroup의 항목 메타데이터는 ItemDefinitionGroup 요소가 ItemGroup 요소보다 먼저 처리되므로 ItemDefinitionGroup 메타데이터 선언에서 사용 가능하지 않습니다.

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75584493"
 ---
 # <a name="load-test-results-summary-overview"></a>부하 테스트 결과 요약 개요
@@ -107,9 +107,9 @@ ms.locfileid: "75584493"
 
 백분위수 값은 다음 트랜잭션 정보를 나타냅니다.
 
-- 총 트랜잭션의 90%가 \<time>초 미만으로 완료되었습니다.
+- 총 트랜잭션의 90%가 \<time>초 이내에 완료되었습니다.
 
-- 총 트랜잭션의 95%가 \<time>초 미만으로 완료되었습니다.
+- 총 트랜잭션의 95%가 \<time>초 이내에 완료되었습니다.
 
 ## <a name="system-under-test-resources"></a>리소스 테스트 대상 시스템
 

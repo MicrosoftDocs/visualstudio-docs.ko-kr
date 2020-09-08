@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072543"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
@@ -290,7 +290,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 
 ## <a name="special-characters"></a>특수 문자
 
-MSBuild 프로젝트 파일에서 특정 문자는 특수한 의미로 사용됩니다. 이러한 문자의 예로는 세미콜론(;) 및 별표(*)를 들 수 있습니다. 프로젝트 파일에서 이러한 특수 문자를 리터럴로 사용하려면 %\<xx 구문을 사용하여 해당 문자를 지정해야 합니다. 여기서 \<xx>는 문자의 ASCII 16진수 값을 나타냅니다.
+MSBuild 프로젝트 파일에서 특정 문자는 특수한 의미로 사용됩니다. 이러한 문자의 예로는 세미콜론(;) 및 별표(*)를 들 수 있습니다. 프로젝트 파일에서 해당 특수 문자를 리터럴로 사용하려면 %\<xx> 구문을 사용하여 해당 문자를 지정해야 합니다. 여기서 \<xx>는 문자의 ASCII 16진수 값을 나타냅니다.
 
 특수 문자를 사용해 Configuration 속성값을 표시하도록 메시지 작업을 변경하면 해당 작업을 보다 쉽게 읽을 수 있습니다.
 

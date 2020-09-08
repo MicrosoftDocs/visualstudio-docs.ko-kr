@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865338"
 ---
 # <a name="cl-task"></a>CL 작업
@@ -48,7 +48,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    선택적 문자열 매개 변수입니다.
 
-   명령줄 옵션의 목록입니다. 예: “/\<option1> /\<option2> /\<option#>”. 이 매개 변수를 사용하여 다른 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.
+   명령줄 옵션의 목록입니다. 예를 들어 "/\<option1> /\<option2> /\<option#>"입니다. 이 매개 변수를 사용하여 다른 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.
 
    자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.
 
@@ -80,7 +80,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **NoListing** -  *\<없음>*
+  - **NoListing** -  *\<none>*
 
   - **AssemblyCode** -  **/FA**
 
@@ -100,7 +100,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** -                           *\<없음>*
+  - **Default** -                           *\<none>*
 
   - **StackFrameRuntimeCheck** -  **/RTCs**
 
@@ -164,7 +164,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** -  *\<없음>*
+  - **Default** -  *\<none>*
 
   - **CompileAsC** -  **/TC**
 
@@ -180,7 +180,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **false** -  *\<없음>*
+  - **false** -  *\<none>*
 
   - **true** -  **/clr**
 
@@ -288,7 +288,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **false** -  *\<없음>*
+  - **false** -  *\<none>*
 
   - **Async** -  **/EHa**
 
@@ -314,7 +314,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **Neither** -  *\<없음>*
+  - **Neither** -  *\<none>*
 
   - **Size** -  **/Os**
 
@@ -402,7 +402,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** -  *\<없음>*
+  - **Default** -  *\<none>*
 
   - **Disabled** -  **/Ob0**
 
@@ -500,7 +500,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **NotUsing** -  *\<없음>*
+  - **NotUsing** -  *\<none>*
 
   - **Create** -  **/Yc**
 

@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821585"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visual Studio 디버거에서 스레드 창을 사용하여 스레드 보기(C#, Visual Basic, C++)
@@ -46,7 +46,7 @@ ms.locfileid: "67821585"
 
 - **범주**: 사용자 인터페이스 스레드, 원격 프로시저 호출 처리기 또는 작업자 스레드로 스레드의 범주를 표시합니다. 특정 범주는 애플리케이션의 주 스레드를 식별합니다.
 
-- **Name**: 각 스레드를 이름으로(있는 경우) 식별하거나 \<이름 없음>으로 식별합니다.
+- **Name**: 각 스레드를 이름으로(있는 경우) 식별하거나 \<No Name>으로 식별합니다.
 
 - **위치**: 스레드가 실행 중인 위치를 표시합니다. 이 위치를 확장하여 스레드의 전체 호출 스택을 표시할 수 있습니다.
 

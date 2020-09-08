@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81744985"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기
@@ -116,7 +116,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 1. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
 ::: moniker-end
 
-JavaScript Vue.js 프로젝트 템플릿(및 이전 버전의 TypeScript 템플릿)은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows Explorer에서 프로젝트 파일( *\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
+JavaScript Vue.js 프로젝트 템플릿(및 이전 버전의 TypeScript 템플릿)은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows 탐색기에서 프로젝트 파일( *\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
 
 ```xml
 <PostBuildEvent>npm run build</PostBuildEvent>

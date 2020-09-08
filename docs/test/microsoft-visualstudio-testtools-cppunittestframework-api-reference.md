@@ -8,17 +8,17 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82109431"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조
 
 이 항목에서는 `Microsoft::VisualStudio::CppUnitTestFramework` 네임스페이스의 public 구성원 목록을 제공합니다. 이 API를 사용하여 Microsoft Native Unit Test Framework를 기반으로 C++ 단위 테스트를 작성합니다. 이 항목의 마지막에는 [사용 예제](#example)가 있습니다.
 
-헤더 및 lib 파일은 *\<Visual Studio 설치 폴더>\VC\Auxiliary\VS\UnitTest*에 있습니다.
+헤더 및 라이브러리 파일은 *\<Visual Studio installation folder>\VC\Auxiliary\VS\UnitTest*에 있습니다.
 
 헤더 및 라이브러리 경로는 기본 테스트 프로젝트에서 자동으로 구성됩니다.
 

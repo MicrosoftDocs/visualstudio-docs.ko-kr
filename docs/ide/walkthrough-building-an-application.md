@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115401"
 ---
 # <a name="walkthrough-build-an-application"></a>연습: 애플리케이션 구축
@@ -35,13 +35,13 @@ ms.locfileid: "76115401"
 
    ![빌드 메뉴, 구성 관리자 명령](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. **활성 솔루션 구성** 목록에서 **\<새로 만들기...\>** 를 선택합니다.
+1. **활성 솔루션 구성** 목록에서 **\<New...\>** 를 선택합니다.
 
 1. **새 솔루션 구성** 대화 상자에서 새 구성의 이름을 `Test`로 지정하고, 기존 **디버그** 구성에서 설정을 복사하고, **확인** 단추를 선택합니다.
 
    ![새 솔루션 구성 대화 상자](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. **활성 솔루션 플랫폼** 목록에서 **\<새로 만들기...\>** 를 선택합니다.
+1. **활성 솔루션 플랫폼** 목록에서 **\<New...\>** 를 선택합니다.
 
 1. **새 솔루션 플랫폼** 대화 상자에서 **x64**를 선택하지만 x86 플랫폼에서 설정을 복사하지 않습니다.
 

@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595620"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 글꼴 및 색
@@ -196,8 +196,8 @@ ms.locfileid: "75595620"
 |**XML 특성**|특성 이름입니다.|
 |**XML 특성 따옴표**|XML 특성의 따옴표입니다.|
 |**XML 특성 값**|XML 특성의 내용입니다.|
-|**XML CDATA 섹션**|\<![CDATA[...]]>의 콘텐츠입니다.|
-|**XML 주석**|\<!-- -->의 콘텐츠입니다.|
+|**XML CDATA 섹션**|\<![CDATA[...]]>의 내용|
+|**XML 주석**|\<!-- -->의 내용입니다.|
 |**XML 구분 기호**|<, <?, <!, \<!--, -->, ?\>, \<![, ]]>, [, ] 등과 같은 XML 구문 구분 기호입니다.|
 |**XML 문서 특성**|XML 문서 특성의 값입니다. 예를 들면, \<param name="I">이며 여기서 “I”에 색이 지정됩니다.|
 |**XML 문서 주석**|xml 문서 주석으로 묶인 주석입니다.|

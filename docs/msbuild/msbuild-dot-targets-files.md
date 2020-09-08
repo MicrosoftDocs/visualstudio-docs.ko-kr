@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633358"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 파일
@@ -29,7 +29,7 @@ MSBuild에는 일반 시나리오에 대한 항목, 속성, 대상 및 작업이
 
  일반적으로 프로젝트에서는 하나 이상의 *.targets* 파일을 가져와서 빌드 프로세스를 정의합니다. 예를 들어 Visual Studio로 만든 C# 프로젝트에서 가져오는 *Microsoft.CSharp.targets*는 *Microsoft.Common.targets*를 가져옵니다. C# 프로젝트 자체에서는 해당 프로젝트와 관련된 항목과 속성을 정의하지만, C# 프로젝트에 대한 표준 빌드 규칙은 가져오는 *.targets* 파일에 정의되어 있습니다.
 
- `$(MSBuildToolsPath)` 값은 일반 *.targets* 파일의 경로를 지정합니다. `ToolsVersion`이 4.0인 경우 파일의 위치는 다음과 같습니다. *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
+ `$(MSBuildToolsPath)` 값은 일반 *.targets* 파일의 경로를 지정합니다. `ToolsVersion`이 4.0인 경우 파일은 *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\* 에 위치합니다.
 
 > [!NOTE]
 > 대상을 직접 만드는 방법에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. `Import` 요소를 사용하여 프로젝트 파일을 다른 프로젝트 파일에 삽입하는 방법에 대한 자세한 내용은 [가져오기 요소(MSBuild)](../msbuild/import-element-msbuild.md) 및 [방법: 여러 프로젝트 파일에서 동일한 대상 사용](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)을 참조하세요.

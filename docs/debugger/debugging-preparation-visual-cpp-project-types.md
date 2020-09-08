@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916315"
 ---
 # <a name="debugging-preparation-c-project-types"></a>디버깅 준비 중: C++ 프로젝트 형식
@@ -101,7 +101,7 @@ ms.locfileid: "75916315"
 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 형식의 애플리케이션을 디버깅하는 방법은 관리되는 Windows Forms 애플리케이션의 경우와 비슷합니다.
 
- 프로젝트 템플릿을 사용하여 Windows Forms 프로젝트를 만들면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 디버그 및 릴리스 구성에 필요한 설정을 자동으로 만듭니다. 필요한 경우 **\<프로젝트 이름> 속성 페이지** 대화 상자에서 이러한 설정을 변경할 수 있습니다. 자세한 내용은 [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
+ 프로젝트 템플릿을 사용하여 Windows Forms 프로젝트를 만들면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 디버그 및 릴리스 구성에 필요한 설정을 자동으로 만듭니다. 필요한 경우 **\<project name> 속성 페이지** 대화 상자에서 해당 설정을 변경할 수 있습니다. 자세한 내용은 [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
  자세한 내용은 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.
 

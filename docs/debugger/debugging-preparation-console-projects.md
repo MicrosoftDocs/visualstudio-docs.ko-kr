@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916281"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비 중: 콘솔 프로젝트(C#, C++, Visual Basic, F#)
@@ -41,7 +41,7 @@ ms.locfileid: "75916281"
 
 콘솔 애플리케이션에 대한 명령줄 인수를 지정해야 할 수도 있습니다. 자세한 내용은 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Visual Basic 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) 또는 [C# 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-csharp-debug-configurations.md)을 참조하세요.
 
-모든 프로젝트 속성과 마찬가지로 이러한 인수도 디버그 세션 사이와 Visual Studio 세션 사이에 지속적으로 적용됩니다. 따라서 이전에 디버깅한 콘솔 애플리케이션인 경우에는 이전 세션에서 **\<Project>속성 페이지** 대화 상자에 입력한 인수가 있을 수 있습니다.
+모든 프로젝트 속성과 마찬가지로 이러한 인수도 디버그 세션 사이와 Visual Studio 세션 사이에 지속적으로 적용됩니다. 따라서 이전에 디버깅한 콘솔 애플리케이션인 경우에는 이전 세션에서 **\<Project> 속성 페이지** 대화 상자에 입력한 인수가 있을 수 있습니다.
 
 ## <a name="start-the-application"></a>애플리케이션 시작
 

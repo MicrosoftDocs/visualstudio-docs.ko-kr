@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62896622"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 C++용 형식 지정자
@@ -79,26 +79,26 @@ int main() {
 |e|과학적 표기법|25000000|2.500000e+07|
 |g|과학적 점 또는 부동 소수점 중 더 짧은 항목|25000000|2.5e+07|
 |c|단일 문자|0x0065, c|101 'e'|
-|초|const char* 문자열(따옴표 포함)|\<위치> “hello world”|"hello world"|
-|**sb**|const char* 문자열(따옴표 없음)|\<위치> “hello world”|hello world|
-|s8|UTF-8 문자열|\<위치> “This is a UTF-8 coffee cup â˜•”|“This is a UTF-8 coffee cup ☕”|
-|**s8b**|UTF-8 문자열(따옴표 제외)|\<위치> “hello world”|hello world|
-|su|유니코드(UTF-16 인코딩) 문자열(따옴표 포함)|\<위치> L“hello world”|L"hello world"<br /><br /> u"hello world"|
-|sub|유니코드(UTF-16 인코딩) 문자열(따옴표 없음)|\<위치> L“hello world”|hello world|
-|bstr|BSTR 이진 문자열(따옴표 포함)|\<위치> L“hello world”|L"hello world"|
-|env|환경 블록(이중 null로 종결되는 문자열)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
-|**s32**|UTF-32 문자열(따옴표 포함)|\<위치> U“hello world”|u"hello world"|
-|**s32b**|UTF-32 문자열(따옴표 제외)|\<위치> U“hello world”|hello world|
+|초|const char* 문자열(따옴표 포함)|\<location> "hello world"|"hello world"|
+|**sb**|const char* 문자열(따옴표 없음)|\<location> “hello world”|hello world|
+|s8|UTF-8 문자열|\<location> “This is a UTF-8 coffee cup â˜•”|“This is a UTF-8 coffee cup ☕”|
+|**s8b**|UTF-8 문자열(따옴표 제외)|\<location> “hello world”|hello world|
+|su|유니코드(UTF-16 인코딩) 문자열(따옴표 포함)|\<location> L“hello world”|L"hello world"<br /><br /> u"hello world"|
+|sub|유니코드(UTF-16 인코딩) 문자열(따옴표 없음)|\<location> L“hello world”|hello world|
+|bstr|BSTR 이진 문자열(따옴표 포함)|\<location> L“hello world”|L"hello world"|
+|env|환경 블록(이중 null로 종결되는 문자열)|\<location> L“=::=::\\\\|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32 문자열(따옴표 포함)|\<location> U“hello world”|u"hello world"|
+|**s32b**|UTF-32 문자열(따옴표 제외)|\<location> U“hello world”|hello world|
 |**en**|enum|Saturday(6)|토요일|
-|**hv**|포인터 유형 - 검사 중인 포인터 값이 배열의 힙 할당 결과임을 나타냅니다(예: `new int[3]`).|\<위치>{\<첫 번째 멤버>}|\<위치>{\<첫 번째 멤버>, \<두 번째 멤버>, ...}|
-|**na**|개체에 대한 포인터의 메모리 주소를 표시하지 않습니다.|\<위치>, {member=value...}|{member=value...}|
+|**hv**|포인터 유형 - 검사 중인 포인터 값이 배열의 힙 할당 결과임을 나타냅니다(예: `new int[3]`).|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|개체에 대한 포인터의 메모리 주소를 표시하지 않습니다.|\<location>, {member=value...}|{member=value...}|
 |**nd**|파생된 클래스는 무시하고 기본 클래스 정보만 표시합니다.|`(Shape*) square` 에는 기본 클래스 및 파생 클래스 정보가 포함됩니다.|기본 클래스 정보만 표시합니다.|
 |hr|HRESULT 또는 Win32 오류 코드. HRESULT의 경우 디버거가 자동으로 디코딩하므로 이 지정자가 더 이상 필요하지 않습니다.|S_OK|S_OK|
 |wc|Window 클래스 플래그|0x0010|WC_DEFAULTCHAR|
 |wm|Windows 메시지 번호|16|WM_CLOSE|
 |nr|“Raw 뷰” 항목 표시 안 함|
 |nvo|숫자 값에 대해서만 “Raw 뷰” 항목 표시|
-|!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<사용자 지정 표현>|4|
+|!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -111,24 +111,24 @@ int main() {
 |x<br /><br /> **h**|16진수 정수|102|0xcccccccc|
 |X<br /><br /> **H**|16진수 정수|102|0xcccccccc|
 |c|단일 문자|0x0065, c|101 'e'|
-|초|const char* 문자열(따옴표 포함)|\<위치> “hello world”|"hello world"|
-|**sb**|const char* 문자열(따옴표 없음)|\<위치> “hello world”|hello world|
-|s8|UTF-8 문자열|\<위치> “This is a UTF-8 coffee cup â˜•”|“This is a UTF-8 coffee cup ☕”|
-|**s8b**|UTF-8 문자열(따옴표 제외)|\<위치> “hello world”|hello world|
-|su|유니코드(UTF-16 인코딩) 문자열(따옴표 포함)|\<위치> L“hello world”|L"hello world"<br /><br /> u"hello world"|
-|sub|유니코드(UTF-16 인코딩) 문자열(따옴표 없음)|\<위치> L“hello world”|hello world|
-|bstr|BSTR 이진 문자열(따옴표 포함)|\<위치> L“hello world”|L"hello world"|
-|env|환경 블록(이중 null로 종결되는 문자열)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
-|**s32**|UTF-32 문자열(따옴표 포함)|\<위치> U“hello world”|u"hello world"|
-|**s32b**|UTF-32 문자열(따옴표 제외)|\<위치> U“hello world”|hello world|
+|초|const char* 문자열(따옴표 포함)|\<location> “hello world”|"hello world"|
+|**sb**|const char* 문자열(따옴표 없음)|\<location> “hello world”|hello world|
+|s8|UTF-8 문자열|\<location> “This is a UTF-8 coffee cup â˜•”|“This is a UTF-8 coffee cup ☕”|
+|**s8b**|UTF-8 문자열(따옴표 제외)|\<location> “hello world”|hello world|
+|su|유니코드(UTF-16 인코딩) 문자열(따옴표 포함)|\<location> L“hello world”|L"hello world"<br /><br /> u"hello world"|
+|sub|유니코드(UTF-16 인코딩) 문자열(따옴표 없음)|\<location> L“hello world”|hello world|
+|bstr|BSTR 이진 문자열(따옴표 포함)|\<location> L“hello world”|L"hello world"|
+|env|환경 블록(이중 null로 종결되는 문자열)|\<location> L“=::=::\\\\|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32 문자열(따옴표 포함)|\<location> U“hello world”|u"hello world"|
+|**s32b**|UTF-32 문자열(따옴표 제외)|\<location> U“hello world”|hello world|
 |**en**|enum|Saturday(6)|토요일|
-|**hv**|포인터 유형 - 검사 중인 포인터 값이 배열의 힙 할당 결과임을 나타냅니다(예: `new int[3]`).|\<위치>{\<첫 번째 멤버>}|\<위치>{\<첫 번째 멤버>, \<두 번째 멤버>, ...}|
-|**na**|개체에 대한 포인터의 메모리 주소를 표시하지 않습니다.|\<위치>, {member=value...}|{member=value...}|
+|**hv**|포인터 유형 - 검사 중인 포인터 값이 배열의 힙 할당 결과임을 나타냅니다(예: `new int[3]`).|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|개체에 대한 포인터의 메모리 주소를 표시하지 않습니다.|\<location>, {member=value...}|{member=value...}|
 |**nd**|파생된 클래스는 무시하고 기본 클래스 정보만 표시합니다.|`(Shape*) square` 에는 기본 클래스 및 파생 클래스 정보가 포함됩니다.|기본 클래스 정보만 표시합니다.|
 |hr|HRESULT 또는 Win32 오류 코드. HRESULT의 경우 디버거가 자동으로 디코딩하므로 이 지정자가 더 이상 필요하지 않습니다.|S_OK|S_OK|
 |wc|Window 클래스 플래그|0x0010|WC_DEFAULTCHAR|
 |wm|Windows 메시지 번호|16|WM_CLOSE|
-|!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<사용자 지정 표현>|4|
+|!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ int main() {
 |hr|HRESULT 또는 Win32 오류 코드.<br/>HRESULT의 경우 디버거가 자동으로 디코딩하므로 이 지정자가 더 이상 필요하지 않습니다.|S_OK|S_OK|
 |wc|Window 클래스 플래그|0x00000040,|WC_DEFAULTCHAR|
 |wm|Windows 메시지 번호|0x0010|WM_CLOSE|
-|!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<사용자 지정 표현>|4|
+|!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI를 사용하는 interop 디버깅의 메모리 위치 형식 지정자
 다음 표에는 메모리 위치에 사용되는 형식 지정 기호가 설명되어 있습니다. 메모리 위치 지정자를 위치로 확인되는 값이나 수식에 사용할 수 있습니다.

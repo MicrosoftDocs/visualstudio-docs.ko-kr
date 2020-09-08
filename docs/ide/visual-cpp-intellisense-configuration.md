@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279317"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense에 대한 C++ 프로젝트 구성
@@ -38,7 +38,7 @@ Visual Studio IDE 외부에서 빌드를 실행하고, 빌드에 성공하지만
 
 ![VC++ 포함 디렉터리](media/vcpp-intellisense-include-paths.png)
 
-**VC_IncludePath**와 같은 빌드 매크로의 현재 값을 보려면 포함 디렉터리 줄을 선택하고 오른쪽에 있는 드롭다운을 클릭합니다. **\<편집>** 을 선택하고 **매크로** 단추를 클릭합니다.
+**VC_IncludePath**와 같은 빌드 매크로의 현재 값을 보려면 포함 디렉터리 줄을 선택하고 오른쪽에 있는 드롭다운을 클릭합니다. **\<Edit>** 를 선택하고 **매크로** 단추를 클릭합니다.
 
 ### <a name="makefile-projects"></a>메이크파일 프로젝트
 

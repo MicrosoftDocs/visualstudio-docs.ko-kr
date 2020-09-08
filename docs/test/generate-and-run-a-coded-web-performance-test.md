@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589580"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
@@ -92,7 +92,7 @@ ms.locfileid: "75589580"
 
 데이터 소스로 코딩된 테스트를 실행하면 다음과 같은 오류 메시지가 표시될 수 있습니다.
 
-**테스트를 실행할 수 없음 \<테스트 이름> 에이전트에서 \<컴퓨터 이름>: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.**
+**\<Computer Name> 에이전트에서 \<Test Name>을 테스트할 수 없음: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.**
 
 이 오류는 해당하는 DataBindingAttribute 없이 테스트 클래스에 DataSourceAttribute를 정의한 경우에 발생할 수 있습니다. 이 오류를 해결하려면 적절한 DataBindingAttribute를 추가하고, 이를 삭제하거나 코드에서 주석 처리합니다.
 

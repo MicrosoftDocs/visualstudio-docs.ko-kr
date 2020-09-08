@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911318"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>저장된 IntelliTrace 데이터 사용(C#, Visual Basic, C++)
@@ -222,7 +222,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 |**열**|**표시**|
 |----------------|-------------------|
 |**ID**|스레드 ID 번호|
-|**이름**|스레드 이름. 명명되지 않은 스레드는 “\<이름 없음>”으로 나타납니다.|
+|**이름**|스레드 이름. 명명되지 않은 스레드는 "\<No Name>"으로 나타납니다.|
 |**시작 시간**|스레드를 만든 시간|
 |**종료 시간**|스레드를 완료한 시간|
 

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
-ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81397378"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
@@ -152,7 +152,7 @@ Visual Studio에서 프로젝트 속성을 확인하고 서버 이름이 올바�
     > [!NOTE]
     > 원격 서버에서 원격 디버거를 실행하는 경우 원격 디버거 앱을 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다(또는 원격 디버거를 서비스로 실행할 수 있음). 원격 서버에서 실행하지 않는 경우에는 정상적으로 시작하면 됩니다.
 
-- **/allow \<사용자 이름>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다`msvsmon /allow <username@computer>`.
+- **/allow \<username>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다`msvsmon /allow <username@computer>`.
 
 - 또는 모든 사용자가 원격 디버깅을 수행하도록 허용할 수 있습니다. 원격 디버거 창에서 **도구 > 옵션** 대화 상자로 이동합니다. **인증 안 함**을 선택하는 경우 **모든 사용자가 디버깅할 수 있도록 허용**을 선택할 수 있습니다. 그러나 선택 항목이 없거나 개인 네트워크에 있는 경우에만 이 옵션을 사용해야 합니다.
 

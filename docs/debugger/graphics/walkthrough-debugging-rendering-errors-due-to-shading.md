@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849377"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버그
@@ -70,7 +70,7 @@ ms.locfileid: "62849377"
 
 3. `input.color`에 포인터를 놓습니다. 해당 값은 완전히 불투명한 검정색입니다(0, 0, 0, 1).
 
-    ![“input”의 “color” 멤버가 검은색입니다.](media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")
+    !["input"의 "color" 멤버가 검은색입니다.](media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")
 
     이 시나리오에서 검사를 통해 잘못된 색상은 수행할 픽셀 셰이더에 대한 올바른 색상 정보를 제공하지 않는 꼭짓점 셰이더의 결과일 수 있음을 알 수 있습니다.
 
@@ -84,7 +84,7 @@ ms.locfileid: "62849377"
 
 3. 색상 멤버가 입력 구조에서 복사되지 않았음을 확인합니다. `output.color` 값이 `output` 구조가 반환되기 직전에 완전히 불투명한 검정색으로 설정되어 있으므로 `output`의 값이 이전 줄에서 올바르게 초기화되지 않았음을 확인하는 것이 좋습니다. `output.color` 의 값을 살펴보는 동안 `output.color`를 검정색으로 설정하는 줄에 도달할 때까지 꼭짓점 셰이더를 단계별로 수행합니다. `output.color` 값이 검정색으로 설정될 때까지 초기화되지 않음을 확인합니다. 이렇게 하면 `output.color` 를 검정색으로 설정하는 코드 줄을 삭제하기 보다는 수정해야 함을 확인할 수 있습니다.
 
-    ![“output.color”의 값이 검은색입니다.](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")
+    !["output.color"의 값이 검은색입니다.](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")
 
    렌더링 문제의 원인이 꼭짓점 셰이더가 픽셀 셰이더에 올바른 색상 값을 제공하지 않기 때문이라고 판단했다면 이 정보를 사용하여 문제를 해결할 수 있습니다. 이 시나리오에서는 꼭짓점 셰이더에서 다음 코드를 변경하여 문제를 해결할 수 있습니다.
 

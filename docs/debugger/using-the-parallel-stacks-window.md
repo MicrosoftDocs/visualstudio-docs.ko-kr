@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62902423"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>병렬 스택 창에서 스레드 및 작업 뷰(C#, Visual Basic, C++)
@@ -49,10 +49,10 @@ ms.locfileid: "62902423"
 |아이콘|컨트롤|설명|
 |-|-|-|
 |![스레드/작업 콤보 상자](media/parallel_toolbar1.png "스레드/작업 콤보 상자")|**스레드**/**작업** 콤보 상자|스레드의 호출 스택과 작업의 호출 스택 간에 뷰를 전환합니다. 자세한 내용은 [작업 뷰](#tasks-view)와 [스레드 뷰](#threads-view)를 참조하세요.|
-|![플래그가 지정된 아이콘만 표시](media/parallel_toolbar2.png "플래그가 지정된 아이콘만 표시")|플래그가 지정된 항목만 표시|**GPU 스레드** 창, **병렬 조사식** 창 등의 다른 디버거 창에서 플래그가 지정된 스레드에 대해서만 호출 스택을 표시합니다.|
-|![메서드 뷰 토글 아이콘](media/parallel_toolbar3.png "메서드 뷰 토글 아이콘")|**메서드 뷰** 설정/해제|호출 스택 뷰와 **메서드 뷰** 사이를 전환합니다. 자세한 내용은 [메서드 뷰](#method-view)를 참조하세요.|
-|![현재 아이콘으로 자동 스크롤](media/parallel_toolbar4.png "현재 아이콘으로 자동 스크롤")|현재 스택 프레임으로 자동 스크롤|현재 스택 프레임이 뷰에 표시되도록 그래프를 자동 스크롤합니다. 이 기능은 다른 창에서 현재 스택 프레임을 변경하거나 큰 그래프에서 새 중단점을 적중할 때 유용합니다.|
-|![확대/축소 토글 아이콘](media/parallel_toolbar5.png "확대/축소 토글 아이콘")|확대/축소 컨트롤 설정/해제|창 왼쪽에 있는 확대/축소 컨트롤을 표시하거나 숨깁니다. <br /><br />확대/축소 컨트롤의 표시 여부와 관계없이 **Ctrl**을 누르면서 마우스 휠을 돌려서 확대 축소하거나 **Ctrl**+**Shift**+ **+** 를 눌러 확대하고 **Ctrl**+**Shift**+ **-** 를 눌러 축소할 수 있습니다. |
+|![플래그가 지정된 항목만 표시 아이콘](media/parallel_toolbar2.png "플래그가 지정된 항목만 표시 아이콘")|플래그가 지정된 항목만 표시|**GPU 스레드** 창, **병렬 조사식** 창 등의 다른 디버거 창에서 플래그가 지정된 스레드에 대해서만 호출 스택을 표시합니다.|
+|![메서드 뷰 설정/해제 아이콘](media/parallel_toolbar3.png "메서드 뷰 설정/해제 아이콘")|**메서드 뷰** 설정/해제|호출 스택 뷰와 **메서드 뷰** 사이를 전환합니다. 자세한 내용은 [메서드 뷰](#method-view)를 참조하세요.|
+|![현재로 자동 스크롤 아이콘](media/parallel_toolbar4.png "현재로 자동 스크롤 아이콘")|현재 스택 프레임으로 자동 스크롤|현재 스택 프레임이 뷰에 표시되도록 그래프를 자동 스크롤합니다. 이 기능은 다른 창에서 현재 스택 프레임을 변경하거나 큰 그래프에서 새 중단점을 적중할 때 유용합니다.|
+|![확대/축소 설정/해제 아이콘](media/parallel_toolbar5.png "확대/축소 설정/해제 아이콘")|확대/축소 컨트롤 설정/해제|창 왼쪽에 있는 확대/축소 컨트롤을 표시하거나 숨깁니다. <br /><br />확대/축소 컨트롤의 표시 여부와 관계없이 **Ctrl**을 누르면서 마우스 휠을 돌려서 확대 축소하거나 **Ctrl**+**Shift**+ **+** 를 눌러 확대하고 **Ctrl**+**Shift**+ **-** 를 눌러 축소할 수 있습니다. |
 
 ### <a name="stack-frame-icons"></a>스택 프레임 아이콘
 다음 아이콘은 모든 뷰의 활성 및 현재 스택 프레임에 대한 정보를 제공합니다.

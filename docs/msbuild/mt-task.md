@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633059"
 ---
 # <a name="mt-task"></a>MT 작업
@@ -45,7 +45,7 @@ Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용�
 |매개 변수|Description|
 |---------------|-----------------|
 |**AdditionalManifestFiles**|선택적 **String[]** 매개 변수입니다.<br /><br /> 하나 이상의 매니페스트 파일의 이름을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/manifest** 옵션을 참조하세요.|
-|**AdditionalOptions**|선택적 **String** 매개 변수입니다.<br /><br /> 명령줄 옵션의 목록입니다. 예: /\<option1> /\<option2> /\<option#>. 이 매개 변수를 사용하여 다른 **MT** 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)를 참조하세요.|
+|**AdditionalOptions**|선택적 **String** 매개 변수입니다.<br /><br /> 명령줄 옵션의 목록입니다. 예를 들어 /\<option1> /\<option2> /\<option#>을 참조하십시오. 이 매개 변수를 사용하여 다른 **MT** 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)를 참조하세요.|
 |**AssemblyIdentity**|선택적 **String** 매개 변수입니다.<br /><br /> 매니페스트의 **assemblyIdentity** 요소의 특성 값을 지정합니다. 쉼표로 구분된 목록을 지정합니다. 여기서 첫 번째 구성 요소는 뒤에 *\<attribute name>=<attribute_value>* 형식을 가진 하나 이상의 이름/값 쌍이 오는 `name` 특성의 값입니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/identity** 옵션을 참조하세요.|
 |**ComponentFileName**|선택적 **String** 매개 변수입니다.<br /><br /> *.rgs* 또는 *.tlb* 파일에서 빌드하려는 동적 연결 라이브러리의 이름을 지정합니다. **RegistrarScriptFile** 또는 **TypeLibraryFile** MT 작업 매개 변수를 지정하는 경우 이 매개 변수는 필수입니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/dll** 옵션을 참조하세요.|
 |**DependencyInformationFile**|선택적 **String** 매개 변수입니다.<br /><br /> 매니페스트 도구에 대한 빌드 종속성 정보를 추적하기 위해 Visual Studio에서 사용하는 종속성 정보 파일을 지정합니다.|

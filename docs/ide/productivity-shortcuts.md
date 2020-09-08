@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585732"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Visual Studio 바로 가기 팁
@@ -106,7 +106,7 @@ ms.locfileid: "75585732"
 |단추 추가|도구 모음 오버플로 단추 선택|
 |표준 도구 모음의 찾기 콤보 상자|**Ctrl**+**D**|
 |찾기 텍스트 상자 명령 모드|**>** 입력|
-|새 별칭 만들기|**명령** 창에서 **alias \<new alias> \<command>** 입력|
+|새 별칭 만들기|**명령** 창에 **별칭 \<new alias> \<command>** 를 입력|
 
 ## <a name="debugging"></a>디버깅
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593696"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992370"
 ---
 # <a name="manage-application-resources-net"></a>애플리케이션 리소스 관리(.NET)
 
@@ -31,7 +31,7 @@ ms.locfileid: "75593696"
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [앱 리소스 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-app-resources)를 참조하세요.
 
-.NET 데스크톱 앱의 리소스에 대한 자세한 내용은 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조하세요.
+.NET 앱의 리소스에 대한 자세한 내용은 [.NET 앱의 리소스](/dotnet/framework/resources/index)를 참조하세요.
 
 ## <a name="work-with-resources"></a>리소스 작업
 
@@ -52,5 +52,5 @@ ms.locfileid: "75593696"
 
 ## <a name="see-also"></a>참조
 
-- [데스크톱 앱의 리소스(.NET Framework)](/dotnet/framework/resources/index)
+- [.NET 앱의 리소스(.NET Framework)](/dotnet/framework/resources/index)
 - [앱 리소스 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-app-resources)

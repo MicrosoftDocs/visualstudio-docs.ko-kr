@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595464"
 ---
 # <a name="log-devenvexe"></a>/Log(devenv.exe)
 
 문제 해결을 위해 모든 작업을 로그 파일에 기록합니다. 이 파일은 `devenv /log`를 한 번 이상 호출한 후 나타납니다. 기본적으로 로그 파일은 다음 위치에 있습니다.
 
-**%APPDATA%\\Microsoft\\VisualStudio\\** \<버전\> **\\ActivityLog.xml**
+**%APPDATA%\\Microsoft\\VisualStudio\\** \<Version\> **\\ActivityLog.xml**
 
 여기서 \<Version\>은 Visual Studio 버전입니다. 그러나 다른 경로 및 파일 이름을 지정할 수 있습니다.
 

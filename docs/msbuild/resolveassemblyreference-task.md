@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632760"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 작업
@@ -66,7 +66,7 @@ ms.locfileid: "77632760"
 |`ResolvedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 읽기 전용 출력 매개 변수입니다.<br /><br /> 전체 경로로 확인된 모든 기본 참조의 목록을 포함합니다.<br /><br /> 이 매개 변수에 있는 항목에는 원할 경우 다음의 항목 메타데이터를 포함합니다.<br /><br /> -   `CopyLocal`: `Boolean` 값입니다. 지정된 참조를 출력 디렉터리로 복사해야 하는지 여부를 나타냅니다.<br />-   `FusionName`: `String` 값입니다. 이 종속성의 이름을 지정합니다.<br />-   `ResolvedFrom`: `String` 값입니다. 이 파일을 확인한 리터럴 검색 경로를 지정합니다.|
 |`SatelliteFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 읽기 전용 출력 매개 변수입니다.<br /><br /> 찾은 위성 파일을 지정합니다. 이 항목을 존재하도록 한 참조 또는 종속성이 CopyLocal=true일 경우 이것은 CopyLocal=true입니다.<br /><br /> 이 매개 변수에 있는 항목에는 원할 경우 다음의 항목 메타데이터를 포함합니다.<br /><br /> -   `CopyLocal`: `Boolean` 값입니다. 지정된 참조를 출력 디렉터리로 복사해야 하는지 여부를 나타냅니다. 이 값은 이 항목을 존재하도록 한 참조 또는 종속성에 `true` 라는 `CopyLocal` 값이 있을 경우 `true`여야 합니다.<br />-   `DestinationSubDirectory`: `String` 값입니다. 이 항목을 복사할 상대적인 대상 디렉터리를 지정합니다.|
 |`ScatterFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 읽기 전용 출력 매개 변수입니다.<br /><br /> 지정된 어셈블리 중 하나와 연결된 분산 파일을 포함합니다.<br /><br /> 이 매개 변수에 있는 항목에는 원할 경우 다음의 항목 메타데이터를 포함합니다.<br /><br /> -   `CopyLocal`: `Boolean` 값입니다. 지정된 참조를 출력 디렉터리로 복사해야 하는지 여부를 나타냅니다.|
-|`SearchPaths`|필수 `String[]` 매개 변수입니다.<br /><br /> 디스크에서 어셈블리를 나타내는 파일을 찾기 위해 검색할 디렉터리 또는 특별한 위치를 지정합니다. 검색 경로가 나열된 순서가 중요합니다. 각 어셈블리에 대한 경로 목록은 왼쪽에서 오른쪽으로 검색됩니다. 어셈블리를 나타내는 파일을 찾으면 검색이 중지되고 다음 어셈블리에 대한 검색이 시작됩니다.<br /><br /> 이 매개 변수는 아래 목록의 디렉터리 경로 또는 특수 리터럴 값이 포함될 수 있는 세미콜론으로 구분된 값 목록을 사용합니다.<br /><br /> -   `{HintPathFromItem}`: 작업에서 기본 항목의 `HintPath` 메타데이터를 검사하도록 지정합니다.<br />-   `{CandidateAssemblyFiles}`: 작업에서 `CandidateAssemblyFiles` 매개 변수를 통해 전달된 파일을 검사하도록 지정합니다.<br />-   `{Registry:` \<AssemblyFoldersBase>, \<RuntimeVersion>, \<AssemblyFoldersSuffix>`}`: 작업이 레지스트리에 지정된 추가 폴더에서 검색하도록 지정합니다. \<AssemblyFoldersBase>, \<RuntimeVersion> 및 \<AssemblyFoldersSuffix>는 검색할 레지스트리 위치의 특정 값으로 대체되어야 합니다. 공통 대상의 기본 사양은 {Registry:$(FrameworkRegistryBase), $(TargetFrameworkVersion), $(AssemblyFoldersSuffix), $(AssemblyFoldersExConditions)}입니다.<br />-   `{AssemblyFolders}`: 작업에서 Visual Studio.NET 2003 레지스트리의 어셈블리 찾기 체계를 사용하도록 지정합니다.<br />-   `{GAC}`: 작업이 GAC(전역 어셈블리 캐시)에서 검색하도록 지정합니다.<br />-   `{RawFileName}`: 작업에서 항목의 `Include` 값을 정확한 경로 및 파일 이름으로 간주하도록 지정합니다.|
+|`SearchPaths`|필수 `String[]` 매개 변수입니다.<br /><br /> 디스크에서 어셈블리를 나타내는 파일을 찾기 위해 검색할 디렉터리 또는 특별한 위치를 지정합니다. 검색 경로가 나열된 순서가 중요합니다. 각 어셈블리에 대한 경로 목록은 왼쪽에서 오른쪽으로 검색됩니다. 어셈블리를 나타내는 파일을 찾으면 검색이 중지되고 다음 어셈블리에 대한 검색이 시작됩니다.<br /><br /> 이 매개 변수는 아래 목록의 디렉터리 경로 또는 특수 리터럴 값이 포함될 수 있는 세미콜론으로 구분된 값 목록을 사용합니다.<br /><br /> -   `{HintPathFromItem}`: 작업에서 기본 항목의 `HintPath` 메타데이터를 검사하도록 지정합니다.<br />-   `{CandidateAssemblyFiles}`: 작업에서 `CandidateAssemblyFiles` 매개 변수를 통해 전달된 파일을 검사하도록 지정합니다.<br />-   `{Registry:` \<AssemblyFoldersBase>, \<RuntimeVersion>, \<AssemblyFoldersSuffix>`}`: 작업이 레지스트리에 지정된 추가 폴더에서 검색하도록 지정합니다. \<AssemblyFoldersBase>, \<RuntimeVersion> 및 \<AssemblyFoldersSuffix>은 검색할 레지스트리 위치의 특정 값으로 대체되어야 합니다. 공통 대상의 기본 사양은 {Registry:$(FrameworkRegistryBase), $(TargetFrameworkVersion), $(AssemblyFoldersSuffix), $(AssemblyFoldersExConditions)}입니다.<br />-   `{AssemblyFolders}`: 작업에서 Visual Studio.NET 2003 레지스트리의 어셈블리 찾기 체계를 사용하도록 지정합니다.<br />-   `{GAC}`: 작업이 GAC(전역 어셈블리 캐시)에서 검색하도록 지정합니다.<br />-   `{RawFileName}`: 작업에서 항목의 `Include` 값을 정확한 경로 및 파일 이름으로 간주하도록 지정합니다.|
 |`SerializationAssemblyFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 읽기 전용 출력 매개 변수입니다.<br /><br /> 찾은 모든 XML Serialization 어셈블리를 포함합니다. 이 항목을 존재하도록 한 참조 또는 종속성이 CopyLocal=true일 경우에만 이 항목이 CopyLocal=true로 표시됩니다.<br /><br /> `Boolean` 메타데이터 CopyLocal은 지정된 참조를 출력 디렉터리로 복사해야 하는지 여부를 나타냅니다.|
 |`Silent`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`일 경우 메시지가 기록되지 않습니다. 기본값은 `false`입니다.|
 |`StateFile`|선택적 `String` 매개 변수입니다.<br /><br /> 이 작업에 대한 중간 빌드 상태를 저장할 위치를 나타내는 파일 이름을 지정합니다.|

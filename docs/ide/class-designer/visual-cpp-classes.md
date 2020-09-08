@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590737"
 ---
 # <a name="c-classes-in-class-designer"></a>클래스 디자이너의 C++ 클래스
@@ -170,7 +170,7 @@ typedef struct
 |Code 요소|클래스 디자이너 보기|
 |------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 클래스<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 클래스<br /><br /> `C<T>`<br /><br /> 템플릿 클래스<br /><br /> `D`<br /><br /> 클래스<br /><br /> ->C\<float>|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> 최소 \<T>|
 
 ## <a name="see-also"></a>참고 항목
 

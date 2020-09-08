@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779552"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
@@ -124,9 +124,9 @@ Visual Studio IDE에서 컴퓨터에 사용 가능한 카운터를 나열하려�
 
 2. 형식
 
-     **\<Visual Studio 성능 도구 디렉터리>\VSPerfCmd /querycounters**
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     여기서 *\<Visual Studio 성능 도구 디렉터리>* 는 Visual Studio 설치의 성능 도구 디렉터리 경로입니다. 성능 도구에 대한 경로를 가져오려면 [명령줄 도구 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
+     여기서 *\<Visual Studio Performance Tools Directory>* 는 Visual Studio 설치의 성능 도구 디렉터리 경로입니다. 성능 도구에 대한 경로를 가져오려면 [명령줄 도구 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 

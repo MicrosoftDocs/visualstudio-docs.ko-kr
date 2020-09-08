@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77706398"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>방법: 문서 생성에 대한 XML 주석 삽입
@@ -38,7 +38,7 @@ Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식 및 멤버�
 
    - 마우스 오른쪽 단추 클릭 또는 컨텍스트 메뉴 또는 단지 코드 요소 위에서 **코드 조각** > **주석 삽입**을 선택
 
-   XML 템플릿은 코드 요소 위에 즉시 생성됩니다. 예를 들어 메서드를 주석화할 때 **\<summary\>** 요소, 각 매개 변수에 대한 **\<param\>** 요소 및 반환 값을 문서화하기 위한 **\<returns\>** 요소를 생성합니다.
+   XML 템플릿은 코드 요소 위에 즉시 생성됩니다. 예를 들어 메서드에 주석을 달 때 **\<summary\>** 요소, 각 매개 변수의 **\<param\>** 요소 및 반환 값을 문서화하기 위한 **\<returns\>** 요소를 생성합니다.
 
    ![XML 주석 템플릿 - C#](media/doc-preview-cs.png)
 

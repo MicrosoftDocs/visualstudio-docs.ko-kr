@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779885"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
@@ -152,9 +152,9 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**
 
-3. **VSInstr \<filename>.exe** 명령을 입력합니다.
+3. 다음 명령을 입력합니다. **VSInstr \<filename>.exe**
 
-4. **VSPerfCmd /start:trace /output:\<filename>.vsp** 명령을 입력합니다.
+4. 다음 명령을 입력합니다. **VSPerfCmd /start:trace /output:\<filename>.vsp**
 
 5. **VSPerfCmd /globaloff** 명령을 입력합니다.
 
@@ -162,7 +162,7 @@ DataCollection.CurrentId);
 
 7. **VSPerfCmd /shutdown** 명령을 입력합니다.
 
-8. **VSPerfReport /calltrace:\<filename>.vsp** 명령을 입력합니다.
+8. 다음 명령을 입력합니다. **VSPerfReport /calltrace:\<filename>.vsp**
 
      결과 성능 데이터와 함께 현재 디렉터리에 .*csv* 파일이 만들어집니다.
 

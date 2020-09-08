@@ -16,21 +16,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548241"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
 
-Visual Studio에서 *T4 텍스트 템플릿* 은 텍스트 파일을 생성할 수 있는 제어 논리와 텍스트 블록의 조합입니다. 제어 논리는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 프로그램 코드 조각으로 작성되었습니다. Visual Studio 2015 업데이트 2 이상에서는 T4 템플릿 지시문에 C# 버전 6.0 기능을 사용할 수 있습니다. 생성 된 파일은 웹 페이지, 리소스 파일 또는 모든 언어의 프로그램 소스 코드와 같은 모든 종류의 텍스트 일 수 있습니다.
+Visual Studio에서 ‘T4 텍스트 템플릿’은 텍스트 파일을 생성할 수 있는 제어 논리 및 텍스트 블록이 혼합된 것입니다. 제어 논리는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 프로그램 코드 조각으로 작성되었습니다. Visual Studio 2015 업데이트 2 이상에서는 T4 템플릿 지시문에 C# 버전 6.0 기능을 사용할 수 있습니다. 생성된 파일은 웹 페이지, 리소스 파일 또는 임의 언어로 작성된 프로그램 소스 코드와 같은 임의 종류의 텍스트일 수 있습니다.
 
-T4 텍스트 템플릿에는 런타임 시간과 디자인 타임의 두 종류가 있습니다.
+T4 텍스트 템플릿에는 런타임 시간과 디자인 타임, 두 가지 종류가 있습니다.
 
 ## <a name="run-time-t4-text-templates"></a>런타임 T4 텍스트 템플릿
 
-' 전처리 ' 템플릿이 라고도 하는 런타임 템플릿이 응용 프로그램에서 실행 되어 일반적으로 해당 출력의 일부로 텍스트 문자열을 생성 합니다. 예를 들어 HTML 페이지를 정의하는 템플릿을 만들 수 있습니다.
+‘전처리된’ 템플릿이라고도 하는 런타임 템플릿은 애플리케이션에서 실행되어 일반적으로 해당 출력의 일부로 텍스트 문자열을 생성합니다. 예를 들어 HTML 페이지를 정의하는 템플릿을 만들 수 있습니다.
 
 ```
 <html><body>
@@ -48,17 +48,17 @@ T4 텍스트 템플릿에는 런타임 시간과 디자인 타임의 두 종류�
 string webResponseText = new MyTemplate().TransformText();
 ```
 
-Visual Studio가 설치 되지 않은 컴퓨터에서 응용 프로그램을 실행할 수 있습니다.
+Visual Studio가 설치되지 않은 컴퓨터에서 애플리케이션을 실행할 수 있습니다.
 
 런타임 템플릿을 만들려면 **전처리된 텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFilePreprocessor**로 설정할 수 있습니다.
 
-자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요. 템플릿 구문에 대 한 자세한 내용은 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
+자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요. 템플릿 구문에 대한 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)를 참조하세요.
 
 ## <a name="design-time-t4-text-templates"></a>디자인 타임 T4 텍스트 템플릿
 
-디자인 타임 템플릿은 응용 프로그램의 소스 코드 및 기타 리소스의 일부를 정의 합니다. 일반적으로 단일 입력 파일이 나 데이터베이스에서 데이터를 읽고 *.cs*, *.vb*또는 기타 소스 파일 중 일부를 생성 하는 여러 템플릿을 사용 합니다. 각 템플릿이 하나의 파일을 생성합니다. Visual Studio 또는 MSBuild 내에서 실행 됩니다.
+디자인 타임 템플릿은 소스 코드의 일부와 애플리케이션의 다른 리소스를 정의합니다. 일반적으로 단일 입력 파일이나 데이터베이스의 데이터를 읽고 *.cs*, *.vb* 또는 다른 소스 파일의 일부를 생성하는 여러 템플릿을 사용합니다. 각 템플릿이 하나의 파일을 생성합니다. Visual Studio 또는 MSBuild 내에서 실행됩니다.
 
-예를 들어 입력 데이터는 구성 데이터의 XML 파일일 수 있습니다. 개발 중에 XML 파일을 편집할 때마다 텍스트 템플릿은 응용 프로그램 코드의 일부를 다시 생성 합니다. 템플릿 중 하나는 다음 예제와 유사할 수 있습니다.
+예를 들어 입력 데이터는 구성 데이터의 XML 파일일 수 있습니다. 개발 중에 XML 파일을 편집할 때마다 텍스트 템플릿에서 애플리케이션 코드의 일부가 다시 생성됩니다. 템플릿 중 하나는 다음 예제와 유사할 수 있습니다.
 
 ```
 <#@ output extension=".cs" #>
@@ -72,7 +72,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 }
 ```
 
-XML 파일의 값에 따라 생성 된 *.cs* 파일은 다음과 유사 합니다.
+XML 파일의 값에 따라 생성된 *.cs* 파일은 다음과 유사합니다.
 
 ```
 namespace Fabrikam.FirstJob
@@ -87,13 +87,13 @@ namespace Fabrikam.FirstJob
 
 디자인 타임 템플릿을 만들려면 **텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFileGenerator**로 설정할 수 있습니다.
 
-자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조 하세요. 템플릿 구문에 대 한 자세한 내용은 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
+자세한 내용은 [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조하세요. 템플릿 구문에 대한 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)를 참조하세요.
 
 > [!NOTE]
 > *모델* 이란 용어는 때때로 하나 이상의 템플릿에서 읽은 데이터를 설명하는 데 사용됩니다. 모델은 모든 형식과 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 도메인 특정 언어 모델이 아니어도 됩니다. '모델'은 단지 데이터가 코드와 달리 비즈니스 개념 측면에서 정의될 수 있음을 나타냅니다.
 
 텍스트 템플릿 변환 기능을 *T4*라고 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)

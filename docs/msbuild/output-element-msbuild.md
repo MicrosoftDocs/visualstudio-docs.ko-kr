@@ -19,17 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633033"
 ---
 # <a name="output-element-msbuild"></a>Output 요소(MSBuild)
 
 항목 및 속성에서 태스크 출력 값을 저장합니다.
 
- \<프로젝트> \<대상> \<작업> \<출력>
+ \<Project> \<Target>
+ \<Task>
+ \<Output>
 
 ## <a name="syntax"></a>구문
 

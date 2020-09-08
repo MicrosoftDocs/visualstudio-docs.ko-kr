@@ -11,13 +11,13 @@ no-loc:
 - Blazor WebAssembly
 ms.topic: how-to
 ms.openlocfilehash: 86a8c35d2a379d6afbbe6cf55f53346223e7c462
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86211595"
 ---
-# <a name="create-blazor-web-apps"></a>Blazor 웹앱 만들기
+# <a name="create-no-locblazor-web-apps"></a>Blazor 웹앱 만들기
 
 이 가이드에서는 첫 번째 Blazor 웹앱을 만드는 방법을 설명합니다. 자세한 지침은 [ASP.NET Core 소개Blazor](/aspnet/core/blazor/index)를 참조하세요.
 
@@ -32,7 +32,7 @@ Blazor란? Blazor는 .NET을 사용하여 대화형 클라이언트 쪽 웹 UI�
 * PC, Linux 및 macOS에서 Visual Studio를 사용하여 생산성을 유지합니다.
 * 안정적이고, 기능이 풍부하고, 사용하기 쉬운 공통 언어, 프레임워크 및 도구 세트를 기반으로 빌드합니다.
 
-## <a name="creating-a-new-blazor-server-project"></a>새 Blazor Server 프로젝트 만들기
+## <a name="creating-a-new-no-locblazor-server-project"></a>새 Blazor Server 프로젝트 만들기
 
 1. **시작 창**에서 **새로 만들기**를 선택하여 새 프로젝트를 만듭니다.
 
@@ -50,9 +50,9 @@ Blazor란? Blazor는 .NET을 사용하여 대화형 클라이언트 쪽 웹 UI�
 
    Visual Studio에서 [Kestrel](/aspnet/core/fundamentals/servers/kestrel)을 시작하고 브라우저에서 `https://localhost:5001`을 열어 첫 번째 Blazor 웹앱을 표시합니다.
 
-   Safari의 ![Blazor 웹앱](media/blazor-new-app-in-edge.png)
+   ![Safari의 Blazor 웹앱](media/blazor-new-app-in-edge.png)
 
-## <a name="blazor-support-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 Blazor 지원
+## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 Blazor 지원
 
 Mac용 Visual Studio(버전 8.4부터)에는 새 Blazor Server 프로젝트를 만드는 데 도움이 되는 새로운 기능이 포함되어 있습니다. 또한 Blazor 프로젝트를 빌드, 실행 및 디버깅과 같은 표준 지원을 제공합니다. Mac용 Visual Studio 8.6에서는 Blazor WebAssembly 프로젝트 만들기, 빌드 및 실행이 추가로 지원됩니다.
 
@@ -63,7 +63,7 @@ Mac용 Visual Studio에는 Blazor 애플리케이션을 만들 때 주로 사용
 
 ![Blazor에 대한 Intellisense를 보여 주는 Mac용 Visual Studio 편집기 창](media/blazor-intellisense.png)
 
-### <a name="publishing-blazor-applications-to-azure-app-service"></a>Azure App Service에 Blazor 애플리케이션 게시
+### <a name="publishing-no-locblazor-applications-to-azure-app-service"></a>Azure App Service에 Blazor 애플리케이션 게시
 Blazor 애플리케이션을 Azure App Service에 직접 게시할 수도 있습니다. Azure에서 Blazor 앱을 실행하기 위한 Azure 계정이 없는 경우 언제든지 [여기에서 별도 비용 없이 가입](https://azure.microsoft.com/free)할 수 있습니다. 그러면 12개월 인기 서비스 무료 혜택, $200 무료 Azure 크레딧, 25개 이상의 상시 무료 서비스가 제공됩니다.
 
 ![Azure 게시 환경을 보여 주는 Mac용 Visual Studio](media/blazor-azure-publish.png)

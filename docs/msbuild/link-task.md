@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865351"
 ---
 # <a name="link-task"></a>링크 작업
@@ -73,7 +73,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   선택적 **문자열** 매개 변수입니다.
 
-  명령줄에 지정된 링커 옵션 목록입니다. 예: /\<option1> /\<option2> /\<option#>. 이 매개 변수를 사용하여 다른 **링크** 작업 매개 변수로 표현되지 않는 링커 옵션을 지정합니다.
+  명령줄에 지정된 링커 옵션 목록입니다. 예를 들어 /\<option1> /\<option2> /\<option#>을 참조하십시오. 이 매개 변수를 사용하여 다른 **링크** 작업 매개 변수로 표현되지 않는 링커 옵션을 지정합니다.
 
   자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.
 
@@ -139,7 +139,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   각 링커 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** -  *\<없음>*
+  - **Default** -  *\<none>*
 
   - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**
 
@@ -489,7 +489,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** -  *\<없음>*
+  - **Default** -  *\<none>*
 
   - **UseLinkTimeCodeGeneration** -  **/LTCG**
 

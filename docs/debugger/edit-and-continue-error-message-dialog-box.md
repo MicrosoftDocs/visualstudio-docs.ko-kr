@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188226"
 ---
 # <a name="edit-and-continue-error-message"></a>편집하며 계속하기 오류 메시지
@@ -40,7 +40,7 @@ ms.locfileid: "73188226"
 - Dr. Watson 덤프를 디버그하는 동안 코드를 편집하려고 했습니다. 디버깅
 - **처리되지 않은 예외에 대한 호출 스택 해제** 옵션이 선택되지 않은 상태에서 처리되지 않은 예외가 발생한 후 코드를 편집하려고 했습니다.
 - 포함된 런타임 애플리케이션을 디버그하는 동안 코드를 편집하려고 했습니다.
-- 64비트 앱 대상으로 4.5.1보다 이전 버전의 .NET Framework를 사용하여 관리 코드를 편집하려고 했습니다. ProjectName4.5.1보다 이전 버전의 .NET Framework에 편집하며 계속하기를 사용하려면 **\<ProjectName>**  > **속성** > **컴파일** 탭, **고급 컴파일러** 설정에서 대상을 **x86**으로 설정합니다.
+- 64비트 앱 대상으로 4.5.1보다 이전 버전의 .NET Framework를 사용하여 관리 코드를 편집하려고 했습니다. 4\.5.1 이전 버전의 .NET Framework에 편집하며 계속하기를 사용하려면 **\<ProjectName>**  > **속성** > **컴파일** 탭, **고급 컴파일러** 설정에서 대상을 **x86**으로 설정합니다.
 - 디버그하는 동안 수정하여 다시 로드한 어셈블리의 코드를 편집하려고 했습니다.
 - 로드되지 않은 어셈블리의 코드를 편집하려고 했습니다.
 - 최신 버전에 빌드 오류가 있기 때문에 이전 버전의 앱 디버깅을 시작했습니다.

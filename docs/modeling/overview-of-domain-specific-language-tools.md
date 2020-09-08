@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532369"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
-Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)를 사용 하면 도메인별 언어를 디자인 한 다음 사용자가 언어를 기반으로 하는 모델을 만드는 데 필요한 모든 항목을 생성할 수 있습니다.
+Visual Studio에서 호스팅되는 도메인 특정 언어 도구(DSL 도구)를 사용하면 도메인 특정 언어를 설계한 후 사용자가 해당 언어를 기반으로 모델을 만드는 데 필요한 모든 것을 생성할 수 있습니다.
 
  DSL 도구에 포함된 도구는 다음과 같습니다.
 
@@ -48,7 +48,7 @@ Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)�
 
   자세한 내용은 [도메인 특정 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)을 참조하세요.
 
-  마법사에서 다음 프로젝트가 포함 된 Visual Studio 솔루션을 만듭니다.
+  이 마법사는 다음과 같은 프로젝트가 있는 Visual Studio 솔루션을 만듭니다.
 
 - Dsl
 
@@ -56,7 +56,7 @@ Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)�
 
 - **DslPackage**
 
-   DslPackage 프로젝트는 언어 도구를 Visual Studio와 통합 하는 방법을 결정 합니다.
+   DslPackage 프로젝트는 언어 도구가 Visual Studio와 통합되는 방법을 결정합니다.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 도구 그래픽 인터페이스
  DSL 도구 그래픽 인터페이스를 사용하여 도메인 특정 언어에 요소 및 관계를 추가할 수 있습니다. 요소를 추가한 후 도형에 매핑하고, 색상을 사용자 지정하고, 데코레이터를 추가하여 모양을 정의할 수 있습니다. 또한 도구 상자에 요소를 추가할 수도 있습니다.
@@ -70,11 +70,11 @@ Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)�
  모델의 동작을 구체화하고 언어에 대한 제약 조건을 정의하는 추가 코드를 제공할 수 있습니다. 필요한 경우 텍스트 템플릿을 수정하여 중요한 변경 작업을 수행할 수 있습니다.
 
 ## <a name="distributing-your-dsl-solution"></a>DSL 솔루션 배포
- DSL 도구는 Visual Studio에서 호스트 되는 패키지를 생성 합니다. 이 패키지는 도구 상자, DSL 탐색기, 그리고 사용자가 도메인 특정 언어를 사용하여 모델을 만드는 데 사용되는 다른 UI 요소를 표시합니다.
+ DSL 도구는 Visual Studio에서 호스팅되는 패키지를 생성합니다. 이 패키지는 도구 상자, DSL 탐색기, 그리고 사용자가 도메인 특정 언어를 사용하여 모델을 만드는 데 사용되는 다른 UI 요소를 표시합니다.
 
- Visual Studio에서 DSL 도구 솔루션을 빌드 및 실행 하는 경우 Visual Studio의 두 번째 인스턴스는 도메인별 언어가 언어의 사용자에 게 표시 되는 방식을 보여 줍니다. 모든 항목이 올바르게 작동하는 것을 확인한 후에는 DslPackage 프로젝트의 빌드 폴더에 있는 `.vsix` 파일을 배포할 수 있습니다. 이 파일은 다른 컴퓨터에서 Visual Studio 확장으로 DSL을 설치 하는 데 사용할 수 있습니다.  자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
+ Visual Studio에서 DSL 도구 솔루션을 빌드하고 실행하면 Visual Studio의 두 번째 인스턴스가 언어 사용자에게 도메인 특정 언어가 어떻게 보이는지 보여 줍니다. 모든 항목이 올바르게 작동하는 것을 확인한 후에는 DslPackage 프로젝트의 빌드 폴더에 있는 `.vsix` 파일을 배포할 수 있습니다. 이 파일은 다른 컴퓨터에서 DSL을 Visual Studio 확장 프로그램으로 설치하는 데 사용할 수 있습니다.  자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [실험적 인스턴스](../extensibility/the-experimental-instance.md)
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

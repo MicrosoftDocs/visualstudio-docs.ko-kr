@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66262858"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>연습: 그래픽 진단을 사용하여 컴퓨팅 셰이더 디버그
@@ -29,7 +29,7 @@ ms.locfileid: "66262858"
 ## <a name="scenario"></a>시나리오
  이 시나리오에서는 DirectCompute를 사용하여 시뮬레이션 업데이트에서 컴퓨팅 성능이 가장 많이 필요한 부분을 수행하는 유체 역학 시뮬레이션을 작성했습니다. 앱이 실행되면 데이터 세트 및 UI가 제대로 렌더링되는 것으로 보이지만 시뮬레이션은 예상대로 작동하지 않습니다. 그래픽 진단을 사용하여 앱을 디버그할 수 있도록 그래픽 로그 문제를 포착할 수 있습니다. 이 문제는 앱에서 다음과 같이 보입니다.
 
- ![시뮬레이트된 fluid가 제대로 작동하지 않습니다.](media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")
+ ![시뮬레이션한 fluid가 잘못 작동합니다.](media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")
 
  그래픽 로그의 그래픽 문제를 포착하는 방법에 대한 자세한 내용은 [Capturing Graphics Information](capturing-graphics-information.md)를 참조하세요.
 
@@ -52,17 +52,17 @@ ms.locfileid: "66262858"
 
 2. **그래픽 이벤트 목록**에서 데이터 세트를 렌더링하는 그리기 이벤트를 검사합니다. 더 쉽게 확인하려면 **그래픽 이벤트 목록** 창의 오른쪽 위 모서리에 있는 **검색** 상자에 `Draw`를 입력합니다. 그러면 목록이 필터링되어 제목에 “그리기”가 포함된 이벤트만 나타납니다. 이 시나리오에서는 다음과 같은 그리기 이벤트가 발생한 것이 확인됩니다.
 
-    ![이벤트 목록&#40;EL&#41;에 그리기 이벤트가 표시됩니다.](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
+    ![EL&#40;이벤트 목록&#41;에 그리기 이벤트가 표시됩니다.](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")
 
 3. 각 그리기 이벤트 간에 이동하면서 그래픽 로그 문서 탭에서 렌더링 대상을 살펴봅니다.
 
 4. 렌더링 대상에 렌더링된 데이터 세트이 처음으로 표시되면 중지합니다. 이 시나리오에서는 첫 번째 그리기 이벤트에서 데이터 세트이 렌더링됩니다. 시뮬레이션에서 오류가 표시됩니다.
 
-    ![이 그리기 이벤트는 시뮬레이션 데이터 세트를 렌더링합니다.](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")
+    ![이 그리기 이벤트는 시뮬레이션 데이터 집합을 렌더링합니다.](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")
 
 5. 이제 **그래픽 이벤트 목록**에서 시뮬레이션을 업데이트하는 `Dispatch` 이벤트를 검사합니다. 시뮬레이션이 렌더링되기 전에 업데이트될 가능성이 있기 때문에 먼저, 결과를 렌더링하는 그리기 이벤트 이전에 발생하는 `Dispatch` 이벤트에 집중할 수 있습니다. 더 쉽게 작업하려면 `Draw;Dispatch;CSSetShader(`를 읽도록 **검색** 상자를 수정합니다. 그러면 그리기 이벤트 외에 `Dispatch` 및 `CSSetShader` 이벤트도 포함되도록 목록이 필터링됩니다. 이 시나리오에서는 그리기 이벤트 전에 다수의 `Dispatch` 이벤트가 발생한 것을 확인할 수 있습니다.
 
-    ![EL에 Draw, Dispatch 및 CSSetShader 이벤트가 표시됨](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")
+    ![EL은 그리기, 디스패치 및 CSSetShader 이벤트를 표시합니다.](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")
 
    여러 개의 가능한 `Dispatch` 이벤트 중 문제에 해당하는 일부 이벤트를 알게 되었으므로 이제 이들 일부 이벤트에 대해 자세히 살펴볼 수 있습니다.
 
@@ -80,7 +80,7 @@ ms.locfileid: "66262858"
 
 2. 세 번째 `Dispatch` 이벤트(그리기 이벤트 바로 앞에 나오는 이벤트)를 선택한 다음, **그래픽 파이프라인 단계** 창의 **컴퓨팅 셰이더** 단계에서 **디버깅 시작**을 선택합니다.
 
-    ![EL에서 세 번째 Dispatch 이벤트를 선택합니다.](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")
+    ![EN에서 세 번째 디스패치 이벤트를 선택합니다.](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")
 
     HLSL 디버거는 통합 단계를 수행하는 셰이더에서 시작됩니다.
 
@@ -92,18 +92,18 @@ ms.locfileid: "66262858"
 
 5. 그 다음, 두 번째 `Dispatch` 이벤트를 선택하고 이전 단계에서와 마찬가지로 컴퓨팅 셰이더 디버깅을 시작합니다.
 
-    ![EL에서 두 번째 Dispatch 이벤트를 선택합니다.](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")
+    ![EN에서 두 번째 디스패치 이벤트를 선택합니다.](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")
 
     HLSL 디버거는 각 유체 입자에 작용하는 힘을 계산하는 셰이더에서 시작됩니다.
 
 6. 힘 컴퓨팅 단계의 컴퓨팅 셰이더 소스 코드를 검사합니다. 이 시나리오에서는 여기가 오류의 원인이라는 것이 확인됩니다.
 
-    ![ForceCS&#95;Simple 계산 셰이더를 디버그합니다.](media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")
+    ![ForceCS&#95;Simple 컴퓨팅 셰이더를 디버그합니다.](media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")
 
    오류의 위치를 확인한 후에는 디버깅을 중지하고 상호 작용하는 입자 간의 거리를 올바르게 계산하도록 계산 셰이더 소스 코드를 수정할 수 있습니다. 이 시나리오에서는 줄 `float2 diff = N_position + P_position;`을 `float2 diff = N_position - P_position;`으로 변경하면 됩니다.
 
-   ![수정된 계산 셰이더 코드입니다.](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
+   ![수정된 컴퓨팅 셰이더 코드입니다.](media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")
 
    이 시나리오에서는 컴퓨팅 셰이더가 런타임에 컴파일되므로 시뮬레이션에 미치는 영향을 관찰하기 위해 변경을 적용한 후 애플리케이션을 다시 시작하면 됩니다. 앱을 다시 빌드할 필요가 없습니다. 앱을 실행하면 이제 시뮬레이션이 올바르게 동작하는 것이 확인됩니다.
 
-   ![시뮬레이트된 fluid가 제대로 작동합니다.](media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
+   ![시뮬레이트된 fluid가 올바르게 작동합니다.](media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")

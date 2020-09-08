@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
+  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "88639330"
+  ms.lasthandoff: 09/07/2020
+  ms.locfileid: "89509746"
 landingContent:
 - title: Azure App Service에 배포
   linkLists:
@@ -50,17 +50,17 @@ landingContent:
   - linkListType: overview
     links:
     - text: 컨테이너 개발
-      url: /visualstudio/containers
+      url: ../containers/index.yml
     - text: Visual Studio의 컨테이너 도구
-      url: /visualstudio/containers/overview
+      url: ../containers/overview.md
     - text: Kubernetes 도구
-      url: /visualstudio/containers/tutorial-kubernetes-tools
+      url: ../containers/tutorial-kubernetes-tools.md
 - title: Azure 서비스 디버그 및 성능 분석
   linkLists:
   - linkListType: tutorial
     links:
     - text: Azure의 IIS에서 ASP.NET Core 디버그
-      url: /visualstudio/debugger/remote-debugging-azure
+      url: ../debugger/remote-debugging-azure.md
     - text: Azure에서 클라우드 서비스 디버그
       url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
     - text: 가상 머신에서 실행 중인 앱 디버그

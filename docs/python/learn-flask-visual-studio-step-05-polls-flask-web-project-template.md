@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154890"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
@@ -242,7 +242,7 @@ def seed():
 
 남은 것은 개별 설문 조사의 투표(세부 사항)와 결과 보기를 검토하는 것입니다.
 
-홈 페이지에서 설문 조사를 선택하면 앱이 URL /poll/\<key\>로 이동합니다. 여기서 *key*는 설문 조사의 고유한 식별자입니다. *views.py*에서 GET 요청의 해당 URL 라우팅을 처리하기 위해 `details` 함수가 할당되어 있는지 확인할 수 있습니다. 또한 URL 경로에서 `<key>`를 사용하면 해당 양식의 모든 경로를 동일한 함수로 매핑하고, 같은 이름의 함수에 대한 인수를 생성할 수 있습니다.
+홈페이지에서 설문 조사를 선택하면 앱이 URL /poll/\<key\>로 이동합니다. 여기서 *key*는 설문 조사의 고유한 식별자입니다. *views.py*에서 GET 요청의 해당 URL 라우팅을 처리하기 위해 `details` 함수가 할당되어 있는지 확인할 수 있습니다. 또한 URL 경로에서 `<key>`를 사용하면 해당 양식의 모든 경로를 동일한 함수로 매핑하고, 같은 이름의 함수에 대한 인수를 생성할 수 있습니다.
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])

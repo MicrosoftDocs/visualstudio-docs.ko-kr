@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307108"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315124"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
@@ -37,7 +37,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 ### <a name="blank-group"></a>빈 그룹
 
-모든 **빈 \<프레임워크> 웹 프로젝트** 템플릿은 *requirements.txt* 파일에 선언된 거의 최소한의 상용구 코드와 필요한 종속성을 사용하여 프로젝트를 만듭니다.
+모든 **빈 \<framework> 웹 프로젝트** 템플릿은 *requirements.txt* 파일에 선언된 거의 최소한의 상용구 코드와 필요한 종속성을 사용하여 프로젝트를 만듭니다.
 
 | 템플릿 | Description |
 | --- | --- |
@@ -47,7 +47,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 ### <a name="web-group"></a>웹 그룹
 
-모든 **\<프레임워크> 웹 프로젝트** 템플릿은 선택한 프레임워크와 관계없이 동일한 디자인으로 시작 웹앱을 만듭니다. 이 앱에는 부트스트랩을 사용하는 탐색 모음 및 반응형 디자인과 함께 홈, 정보 및 연락처 페이지가 포함됩니다. 각 앱은 정적 파일(CSS, JavaScript 및 글꼴)을 제공하도록 적절하게 구성되며, 프레임워크에 적합한 페이지 템플릿 메커니즘을 사용합니다.
+모든 **\<Framework> 웹 프로젝트** 템플릿은 선택한 프레임워크와 관계없이 동일한 디자인으로 시작 웹앱을 만듭니다. 이 앱에는 부트스트랩을 사용하는 탐색 모음 및 반응형 디자인과 함께 홈, 정보 및 연락처 페이지가 포함됩니다. 각 앱은 정적 파일(CSS, JavaScript 및 글꼴)을 제공하도록 적절하게 구성되며, 프레임워크에 적합한 페이지 템플릿 메커니즘을 사용합니다.
 
 | 템플릿 | Description |
 | --- | --- |
@@ -58,7 +58,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 ### <a name="polls-group"></a>설문 조사 그룹
 
-**설문 조사 \<프레임워크> 웹 프로젝트** 템플릿은 사용자가 다양한 설문 조사 질문에 투표할 수 있는 시작 웹앱을 만듭니다. 각 앱은 데이터베이스를 사용하여 설문 조사 및 사용자 응답을 관리하는 **웹** 프로젝트 템플릿의 구조를 기반으로 합니다. 앱에는 *samples.json* 파일에서 설문 조사를 로드하는 적절한 데이터 모델과 특수한 앱 페이지(/seed)가 포함됩니다.
+**설문 조사 \<framework> 웹 프로젝트** 템플릿은 사용자가 다양한 설문 조사 질문에 투표할 수 있는 시작 웹앱을 만듭니다. 각 앱은 데이터베이스를 사용하여 설문 조사 및 사용자 응답을 관리하는 **웹** 프로젝트 템플릿의 구조를 기반으로 합니다. 앱에는 *samples.json* 파일에서 설문 조사를 로드하는 적절한 데이터 모델과 특수한 앱 페이지(/seed)가 포함됩니다.
 
 | 템플릿 | Description |
 | --- | --- |
@@ -95,7 +95,7 @@ Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*
 
 - **명령**: Python 스크립트( *\*.py* 파일), 모듈 이름(`python.exe -m module_name`에서와 같이) 또는 단일 코드 줄(`python.exe -c "code"`에서와 같이)일 수 있습니다. 드롭다운의 값은 이러한 형식 중 어떤 것이 의도되었는지를 나타냅니다.
 - **인수**: 이러한 인수는 명령줄에서 명령 다음에 전달됩니다.
-- **환경**: 환경 변수를 지정하는 줄 바꿈 문자로 구분된 \<NAME>=\<VALUE> 쌍 목록입니다. 이러한 변수는 포트 번호 및 검색 경로 등 환경을 수정할 수 있는 모든 속성 뒤에 설정되므로 이러한 값을 덮어쓸 수 있습니다.
+- **환경**: 환경 변수를 지정하고 줄 바꿈 문자로 구분된 \<NAME>=\<VALUE> 쌍 목록입니다. 이러한 변수는 포트 번호 및 검색 경로 등 환경을 수정할 수 있는 모든 속성 뒤에 설정되므로 이러한 값을 덮어쓸 수 있습니다.
 
 MSBuild 구문으로 모든 프로젝트 속성 또는 환경 변수를 지정할 수 있습니다. 예를 들면 `$(StartupFile) --port $(SERVER_PORT)`입니다.
 `$(StartupFile)`은 시작 파일에 대한 상대 경로이며 `{StartupModule}`은 시작 파일의 가져올 수 있는 이름입니다. `$(SERVER_HOST)` 및 `$(SERVER_PORT)`는 **시작 URL** 및 **포트 번호** 속성으로 자동으로 설정되거나 **환경** 속성으로 설정되는 일반 환경 변수입니다.

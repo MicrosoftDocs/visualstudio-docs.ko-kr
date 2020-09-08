@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779872"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>명령줄에서 계층 상호 작용 데이터 추가
@@ -32,7 +32,7 @@ Windows 8 데스크톱 앱 및 Windows Server 2012 앱에서 계층 상호 작�
 
 **원격 컴퓨터에서 TIP 데이터 수집**
 
-원격 머신에서 계층 상호 작용 데이터를 수집하려면 **vs_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** 파일을 Visual Studio 컴퓨터의 _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** 폴더에서 원격 컴퓨터로 복사하여 설치해야 합니다. [원격 디버깅](../debugger/remote-debugging.md) 다운로드 패키지의 프로파일링 도구는 사용할 수 없습니다.
+원격 머신에서 계층 상호 작용 데이터를 수집하려면 **vs_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** 파일을 Visual Studio 머신의 _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** 폴더에서 원격 머신으로 복사하여 설치해야 합니다. [원격 디버깅](../debugger/remote-debugging.md) 다운로드 패키지의 프로파일링 도구는 사용할 수 없습니다.
 
 **TIP 보고서**
 

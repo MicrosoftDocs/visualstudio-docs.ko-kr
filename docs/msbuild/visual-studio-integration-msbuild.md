@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631200"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
@@ -151,7 +151,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      해당 프로젝트가 **(사용할 수 없음)** 으로 표시됩니다.
 
-2. **솔루션 탐색기**에서 사용할 수 없는 프로젝트의 바로 가기 메뉴를 열고 **편집 \<프로젝트 파일>** 을 선택합니다.
+2. **솔루션 탐색기**에서 사용할 수 없는 프로젝트의 바로 가기 메뉴를 열고 **\<Project File>편집**을 선택합니다.
 
      해당 프로젝트 파일이 Visual Studio XML 편집기에 열립니다.
 
@@ -161,7 +161,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="intellisense-and-validation"></a>IntelliSense 및 유효성 검사
 
- XML 편집기를 사용하여 프로젝트 파일을 편집할 경우 MSBuild 스키마 파일에서 IntelliSense 및 유효성 검사를 실행합니다. 이러한 스키마 파일은 *\<Visual Studio 설치 디렉터리>\Xml\Schemas\1033\MSBuild*에 있는 스키마 캐시에 설치됩니다.
+ XML 편집기를 사용하여 프로젝트 파일을 편집할 경우 MSBuild 스키마 파일에서 IntelliSense 및 유효성 검사를 실행합니다. 스키마 파일은 *\<Visual Studio installation directory>\Xml\Schemas\1033\MSBuild*에 있는 스키마 캐시에 설치됩니다.
 
  핵심 MSBuild 형식은 *Microsoft.Build.Core.xsd*에 정의되고 Visual Studio에서 사용되는 일반 형식은 *Microsoft.Build.CommonTypes.xsd*에 정의됩니다. 사용자 지정 항목 형식 이름, 속성, 작업 등에 대해 IntelliSense 및 유효성 검사를 적용하도록 스키마를 사용자 지정하려면 *Microsoft.Build.xsd*를 편집하거나 CommonTypes 또는 핵심 스키마를 포함하는 스키마를 직접 만들면 됩니다. 스키마를 직접 만들 경우 **속성** 창을 사용하여 해당 스키마를 찾도록 XML 편집기에 지시해야 합니다.
 

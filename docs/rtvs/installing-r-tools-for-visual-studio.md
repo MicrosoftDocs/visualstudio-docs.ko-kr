@@ -10,10 +10,10 @@ ms.workload:
 - data-science
 monikerRange: vs-2017
 ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843732"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Visual Studio용 R 도구를 설치하는 방법
@@ -46,7 +46,7 @@ Visual Studio Test Professional, SQL Server Management Studio 등의 제품에 �
 
 1. 동일한 워크로드 이름 아래에서 오른쪽의 추가 옵션을 설정합니다. 기본적으로 이 워크로드에는 F# 및 Python 지원이 포함됩니다. R의 경우 최소 요구 사항은 **R 언어 지원**, **R 개발에 대한 런타임 지원** 및 **Microsoft R Client**입니다.
 
-RTVS는 *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*에 설치됩니다. 여기서 *\<version>* 은 일반적으로 `2017`이고 *\<edition>* 은 `Community`, `Professional` 또는 `Enterprise`입니다.
+RTVS는 다음 위치에 설치됩니다. *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*. 여기서 *\<version>* 은 일반적으로 `2017`이고 *\<edition>* 은 `Community`, `Professional` 또는 `Enterprise`입니다.
 
 ## <a name="install-rtvs-in-visual-studio-2015"></a>Visual Studio 2015에서 RTVS 설치
 

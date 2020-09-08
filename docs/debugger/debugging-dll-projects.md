@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301166"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315072"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio의 DLL 디버그(C#, C++, Visual Basic, F#)
 
@@ -66,7 +66,7 @@ Visual Studio 프로젝트 템플릿을 사용하여 앱을 만들면 [!INCLUDE[
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> C/C++ DLL 파일 위치 설정
 
-외부 DLL을 디버그하려면 호출 프로젝트에서 DLL, 해당 [.pdb 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 및 DLL에 필요한 다른 모든 파일을 찾을 수 있어야 합니다. 사용자 지정 빌드 작업을 만들어 이러한 파일을 *\<프로젝트 폴더>\Debug* 출력 폴더에 복사하거나 파일을 수동으로 복사할 수 있습니다.
+외부 DLL을 디버그하려면 호출 프로젝트에서 DLL, 해당 [.pdb 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 및 DLL에 필요한 다른 모든 파일을 찾을 수 있어야 합니다. 사용자 지정 빌드 작업을 만들어 해당 파일을 *\<project folder>\Debug* 출력 폴더에 복사하거나 파일을 수동으로 복사할 수 있습니다.
 
 C/C++ 프로젝트의 경우 출력 폴더에 복사하는 대신 프로젝트 속성 페이지에서 헤더 및 LIB 파일 위치를 설정할 수 있습니다.
 
@@ -90,7 +90,7 @@ C++ 프로젝트 설정에 대한 자세한 내용은 [Windows C++ 속성 페이
 
 디버깅을 시작하기 전에 DLL의 디버그 버전을 빌드해야 합니다. DLL을 디버그하려면 호출 앱에서 해당 [.pdb 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 및 DLL에 필요한 다른 모든 파일을 찾을 수 있어야 합니다.
 
-사용자 지정 빌드 작업을 만들어 DLL 파일을 *\<프로젝트 폴더 호출>\Debug* 출력 폴더에 복사하거나 파일을 수동으로 복사할 수 있습니다.
+사용자 지정 빌드 작업을 만들어 DLL 파일을 *\<calling project folder>\Debug* 출력 폴더에 복사하거나 파일을 수동으로 복사할 수 있습니다.
 
 올바른 위치에서 DLL을 호출해야 합니다. 이는 명확하게 보일 수 있지만 호출 앱이 DLL의 다른 복사본을 찾아 로드하는 경우 디버거는 설정한 중단점에 도달하지 않습니다.
 

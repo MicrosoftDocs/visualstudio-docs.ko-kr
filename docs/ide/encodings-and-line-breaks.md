@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588592"
 ---
 # <a name="encodings-and-line-endings"></a>인코딩 및 줄 끝
@@ -51,7 +51,7 @@ Visual Studio에서 다음 문자는 줄 바꿈으로 해석됩니다.
 > [!NOTE]
 > **파일** 메뉴에서 **고급 저장 옵션**이 보이지 않으면 추가할 수 있습니다. **도구**, **사용자 지정**을 선택한 다음, **명령** 탭을 선택합니다. **메뉴 모음** 드롭다운 목록에서 **파일**을 선택한 다음, **명령 추가** 단추를 선택합니다. **명령 추가** 대화 상자의 **범주**에서 **파일**을 선택한 다음, **명령** 목록에서 **고급 저장 옵션**을 선택합니다. **확인**을 선택한 다음 **아래로 이동** 단추를 선택하여 명령을 메뉴에서 임의의 위치로 이동합니다. **닫기**를 선택하여 **사용자 지정** 대화 상자를 닫습니다. 자세한 내용은 [메뉴 및 도구 모음 사용자 지정](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)을 참조하세요.
 >
-> 또는 **파일** > **다른 이름으로 \<파일\> 저장**을 선택하여 **고급 저장 옵션**에 액세스할 수 있습니다. **다른 이름으로 파일 저장** 대화 상자에서 **저장** 단추 옆의 드롭다운 삼각형을 선택하고 **인코딩하여 저장**을 선택합니다.
+> 또는 **파일** > **다른 이름으로 \<file\> 저장**을 선택하여 **고급 저장 옵션** 대화 상자에 액세스할 수 있습니다. **다른 이름으로 파일 저장** 대화 상자에서 **저장** 단추 옆의 드롭다운 삼각형을 선택하고 **인코딩하여 저장**을 선택합니다.
 
 ## <a name="see-also"></a>참조
 

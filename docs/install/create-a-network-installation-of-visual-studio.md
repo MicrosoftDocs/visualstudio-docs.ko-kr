@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 만들기
 description: 기업 내에서 Visual Studio를 배포하기 위한 네트워크 설치 지점을 만드는 방법을 알아봅니다.
-ms.date: 03/27/2020
+ms.date: 08/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
-ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
+ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759723"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992357"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
@@ -73,7 +73,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 이 단계를 완료하려면 인터넷에 연결되어 있는 상태여야 합니다. 모든 언어와 기능을 포함한 오프라인 설치를 만들려면 다음 예제의 명령 중 하나를 사용합니다.
 
    > [!IMPORTANT]
-   > 전체 Visual Studio 레이아웃에는 최소 35GB의 디스크 공간이 필요하며 다운로드하는 데 약간의 시간이 걸릴 수 있습니다. 설치하려는 구성 요소만 포함하는 레이아웃을 만드는 방법은 [네트워크 레이아웃 사용자 지정](#customize-the-network-layout) 섹션을 참조하세요.
+   > 단일 언어 로캘의 전체 레이아웃에 필요한 디스크 공간은 Visual Studio Community의 경우 약 35GB, Visual Studio Enterprise의 경우 42GB입니다. 추가 [언어 로캘](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)마다 약 0.5GB가 각각 필요합니다. 자세한 내용은 [네트워크 레이아웃 사용자 지정](#customize-the-network-layout) 섹션을 참조하세요.
    >
    > [!TIP]
    > 다운로드 디렉터리에서 명령을 실행해야 합니다. 일반적으로 Windows 10을 실행하는 컴퓨터의 경우 `C:\Users\<username>\Downloads`입니다.
@@ -96,7 +96,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 
 다른 머신에서 실행될 수 있도록 레이아웃을 네트워크 공유에 호스트합니다.
 
-다음 예제에서는 [xcopy](/windows-server/administration/windows-commands/xcopy/)를 사용합니다. 원하는 경우 [robocopy](/windows-server/administration/windows-commands/robocopy/)를 사용할 수도 있습니다.  
+다음 예제에서는 [xcopy](/windows-server/administration/windows-commands/xcopy/)를 사용합니다. 원하는 경우 [robocopy](/windows-server/administration/windows-commands/robocopy/)를 사용할 수도 있습니다.
 
 ::: moniker range="vs-2017"
 

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901603"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>작업 창 사용(C#, Visual Basic, C++)
@@ -65,7 +65,7 @@ JavaScript에서 프라미스 `.then` 코드로 작업하는 경우 작업 창�
 
  열 머리글을 마우스 오른쪽 단추로 클릭하고 원하는 열을 선택하여 뷰에 추가할 수 있습니다. 열을 제거하려면 선택을 취소합니다. 또한 왼쪽이나 오른쪽으로 끌어서 열의 순서를 바꿀 수도 있습니다. 열 바로 가기 메뉴가 다음 그림에 표시됩니다.
 
- ![작업 창의 바로 가기 보기 메뉴](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
+ ![작업 창의 바로 가기 뷰 메뉴](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>작업 정렬
  열 조건으로 작업을 정렬하려면 열 머리글을 클릭합니다. 예를 들어 **ID** 열 머리글을 클릭하여 1, 2, 3, 4, 5 등의 작업 ID에 따라 작업을 정렬할 수 있습니다. 정렬 순서를 반대로 바꾸려면 열 머리글을 다시 클릭합니다. 현재 정렬 열과 정렬 순서는 열에 화살표로 표시됩니다.

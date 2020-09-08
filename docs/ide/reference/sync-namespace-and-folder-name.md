@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67160759"
 ---
 # <a name="sync-namespace-and-folder-name"></a>동기화 네임스페이스 및 폴더 이름
@@ -32,7 +32,7 @@ ms.locfileid: "67160759"
 
 1. 네임스페이스 이름에 커서를 놓습니다.
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
-3. **네임스페이스를 \<폴더 이름>(으)로 변경**을 선택합니다.
+3. **네임스페이스를 \<folder name>(으)로 변경**을 선택합니다.
 
    ![네임스페이스 및 폴더 이름 동기화](media/sync-namespace-and-folder-name.png)
 

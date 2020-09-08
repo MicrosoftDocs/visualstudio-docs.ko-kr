@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900863"
 ---
 # <a name="windows-view"></a>창 뷰
@@ -24,7 +24,7 @@ Spy++를 처음 열면 시스템에 있는 모든 창 및 컨트롤의 트리가
 
  아래 그림은 최상위 노드가 확장된 일반적인 Spy++ 창 뷰를 보여 줍니다.
 
- ![Spy&#43;&#43; 창 뷰](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Spy++ 창 뷰
+ ![Spy&#43;&#43; Windows 뷰](../debugger/media/spy--_windowsview.png "Spy++_WindowsView") Spy++ Windows 뷰
 
  현재 데스크톱 창은 트리의 맨 위에 있습니다. 다른 모든 창은 데스크톱의 자식 창이며 표준 창 계층 구조에 따라 나열되고 형제 창은 Z 순서로 정렬됩니다. 노드 옆의 + 또는 - 기호를 클릭하여 트리의 부모 노드를 확장하거나 축소할 수 있습니다.
 

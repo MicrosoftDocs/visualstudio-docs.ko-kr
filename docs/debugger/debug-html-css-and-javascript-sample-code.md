@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745540"
 ---
 # <a name="debug-html-and-css-sample-code"></a>HTML 및 CSS 샘플 코드 디버그
@@ -26,7 +26,7 @@ ms.locfileid: "72745540"
 이 항목의 코드는 다음 항목에 대한 샘플 파일입니다. [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md). QuickStart에서 의도적으로 제공되는 오류는 이 버전의 코드에서 수정됩니다.
 
 ## <a name="sample-code"></a>샘플 코드
-다음 HTML 코드는 QuickStart의 \<body> 태그에서 사용됩니다.
+다음 HTML 코드는 빠른 시작의 \<body> 태그에서 사용됩니다.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"

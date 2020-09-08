@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592063"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
@@ -30,11 +30,11 @@ ms.locfileid: "75592063"
 
 3. **모든 WPF 컨트롤** 섹션에서 **Button**, **CheckBox** 및 **ProgressBar** 컨트롤을 디자인 화면의 MainWindow로 끌어옵니다.
 
-4. **Button** 컨트롤을 선택합니다. **속성** 창에 **Name** 속성의 값을 \<이름 없음>에서 button1으로 변경합니다. 그런 다음 **Content** 속성 값을 Button에서 Start로 변경합니다.
+4. **Button** 컨트롤을 선택합니다. **속성** 창에 **Name** 속성의 값을 \<No Name>에서 button1로 변경합니다. 그런 다음 **Content** 속성 값을 Button에서 Start로 변경합니다.
 
-5. **ProgressBar** 컨트롤을 선택합니다. **속성** 창에 **Name** 속성의 값을 \<이름 없음>에서 progressBar1로 변경합니다. 그런 다음 **Maximum** 속성 값을 **100**에서 **10000**으로 변경합니다.
+5. **ProgressBar** 컨트롤을 선택합니다. **속성** 창에 **Name** 속성의 값을 \<No Name>이름 없음>에서 progressBar1로 변경합니다. 그런 다음 **Maximum** 속성 값을 **100**에서 **10000**으로 변경합니다.
 
-6. **Checkbox** 컨트롤을 선택합니다. **속성** 창에서 **Name** 속성을 \<이름 없음>에서 checkBox1로 변경하고 **IsEnabled** 속성의 선택을 취소합니다.
+6. **Checkbox** 컨트롤을 선택합니다. **속성** 창에서 **Name** 속성을 \<No Name>에서 checkBox1로 변경하고 **IsEnabled** 속성을 선택 취소합니다.
 
      ![간단한 WPF 애플리케이션](../test/media/codedui_wpfapp.png)
 
