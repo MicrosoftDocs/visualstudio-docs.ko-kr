@@ -11,12 +11,12 @@ metadata:
   ms.technology: vs-data-tools
   ms.workload:
   - data-storage
-  ms.openlocfilehash: f1b1f4e5ed0b62e42e478be1fc306506c91643eb
-  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
+  ms.openlocfilehash: 0b04d00b249f32836fd98c5141c25787f97eea47
+  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 07/15/2020
-  ms.locfileid: "86405411"
+  ms.lasthandoff: 09/07/2020
+  ms.locfileid: "89509031"
 landingContent:
 - title: .NET
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: Visual Studio에서 데이터 작업
-      url: /visualstudio/data-tools/accessing-data-in-visual-studio
+      url: accessing-data-in-visual-studio.md
     - text: SQL Server Data Tools로 작업
       url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15
     - text: C++에서 데이터 액세스

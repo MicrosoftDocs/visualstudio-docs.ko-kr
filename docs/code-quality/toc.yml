@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: 'CA1833: 배열의 Span 또는 Memory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.'
                   href: ca1833.md
+                - name: 'CA1834: 단일 문자열에 대해 StringBuilder.Append(char)를 사용하세요.'
+                  href: ca1834.md
                 - name: 'CA1835: Stream ReadAsync/WriteAsync 메서드의 메모리 오버로드를 사용하세요.'
                   href: ca1835.md
                 - name: 'CA1836: 가능한 경우 Count 대신 IsEmpty 사용'
