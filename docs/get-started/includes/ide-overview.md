@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
@@ -181,7 +181,8 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
    > [!NOTE]
    > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
-   Visual Studio가 프로젝트를 생성합니다. <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 사용해서 콘솔(프로그램 출력) 창에 "Hello World!" 리터럴 문자열을 출력하는 간단한 "Hello World" 애플리케이션입니다.
+   Visual Studio가 프로젝트를 생성합니다. <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 사용해서 콘솔(프로그램 출력) 창에 "Hello World!" 리터럴 문자열을 출력하는 간단한 "Hello World" 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
+
    잠시 후 다음과 같은 정보가 표시됩니다.
 
    ![Visual Studio IDE](../media/overview-ide-console-app.png)

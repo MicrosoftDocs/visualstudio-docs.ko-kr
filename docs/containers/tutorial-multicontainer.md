@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711666"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490315"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
@@ -86,7 +86,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
    ```
    
     > [!NOTE]
-    > 실제 코드에서는 모든 요청 후에 `HttpClient`를 삭제하면 안 됩니다. 모범 사례는 [HttpClientFactory를 사용하여 복원력 있는 HTTP 요청 구현](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)을 참조하세요.
+    > 실제 코드에서는 모든 요청 후에 `HttpClient`를 삭제하면 안 됩니다. 모범 사례는 [HttpClientFactory를 사용하여 복원력 있는 HTTP 요청 구현](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)을 참조하세요.
 
    Visual Studio 2019 이상의 .NET Core 3.1에서는 Web API 템플릿에서 WeatherForecast API를 사용하므로 해당 줄의 주석 처리를 제거하고 ASP.NET 2.x에 대한 줄을 주석으로 처리합니다.
 
@@ -195,4 +195,4 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 ## <a name="see-also"></a>참고 항목
   
 [Docker Compose](https://docs.docker.com/compose/)  
-[컨테이너 도구](/visualstudio/containers/)
+[컨테이너 도구](./index.yml)

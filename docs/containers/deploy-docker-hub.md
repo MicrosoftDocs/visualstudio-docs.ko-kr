@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168653"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485140"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub에 배포
 
@@ -57,4 +57,4 @@ Docker Hub 리포지토리가 없는 경우 [Docker Hub](https://hub.docker.com/
 ## <a name="see-also"></a>참조
 
 [Azure App Service에 배포](deploy-app-service.md)
-[Visual Studio Container Tools](/visualstudio/containers/).
+[Visual Studio Container Tools](./index.yml).

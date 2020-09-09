@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149194"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89324546"
 ---
 디버그하려는 원격 디바이스 또는 서버에서(Visual Studio 머신 아님) 다음 표에 나온 링크를 통해 올바른 버전의 원격 도구를 다운로드하여 설치하세요.
 

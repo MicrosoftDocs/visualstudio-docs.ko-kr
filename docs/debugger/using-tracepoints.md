@@ -1,7 +1,7 @@
 ---
 title: 추적점을 사용하여 정보 기록 | Microsoft Docs
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - tracepoints, about tracepoints
 author: Sagar-S-S
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187305"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561340"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Visual Studio에서 추적점을 사용하여 출력 창에 정보 기록
 

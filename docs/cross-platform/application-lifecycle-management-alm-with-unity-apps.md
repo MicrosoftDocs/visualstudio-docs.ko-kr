@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232937"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509044"
 ---
 # <a name="devops-with-unity-apps"></a>Unity 앱을 사용한 DevOps
 
@@ -103,10 +103,10 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
 |[관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
-|[코드 복제본 검색을 사용하여 중복 코드 찾기](https://msdn.microsoft.com/library/hh205279.aspx)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[코드 복제본 검색을 사용하여 중복 코드 찾기](/previous-versions/hh205279(v=vs.140))|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[성능 도구](../profiling/performance-explorer.md)|예|[Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|
-|[.NET Framework 메모리 문제 분석](https://msdn.microsoft.com/library/dn342825.aspx)|예|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
+|[.NET Framework 메모리 문제 분석](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|예|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
 
 ## <a name="release-management"></a>릴리스 관리
 

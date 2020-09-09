@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250553"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426904"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
 
@@ -24,7 +24,7 @@ macOS에서 네이티브, .NET 앱 플랫폼 간 개발을 시작하려면 다�
 
 ## <a name="requirements"></a>요구 사항
 
-- macOS High Sierra 10.12 이상이 설치된 Mac.
+- macOS Sierra 10.13 이상이 설치된 Mac
 
 iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니다.
 

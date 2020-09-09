@@ -8,12 +8,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: c138d09ec229343e38edc8bbba50a5cac73e000a
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 0f4d04e64589ca8db9c53d5c4128391974b297d0
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371510"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485387"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI 개요
 
@@ -40,4 +40,4 @@ Visual Studio Tools for AI는 딥 러닝 솔루션을 빌드, 테스트 및 배�
 시스템 요구 사항, 지원 옵션 등 Visual Studio Tools for AI에 대한 자세한 내용은 [Visual Studio Tools for AI](about-ai-tools.md) 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참조
-[Visual Studio 확장성](/visualstudio/extensibility/?view=vs-2017)
+[Visual Studio 확장성](../extensibility/index.yml?view=vs-2017)

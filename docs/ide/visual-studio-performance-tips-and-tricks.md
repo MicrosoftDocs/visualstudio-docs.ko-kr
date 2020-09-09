@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214596"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427004"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -82,7 +82,7 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
 ### <a name="managed-language-service-roslyn"></a>관리 언어 서비스(Roslyn)
 
-.NET 컴파일러 플랫폼("Roslyn") 성능 고려 사항에 대한 자세한 내용은 [대규모 솔루션에 대한 성능 고려 사항](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)을 참조하세요.
+.NET 컴파일러 플랫폼("Roslyn") 성능 고려 사항에 대한 자세한 내용은 [대규모 솔루션에 대한 성능 고려 사항](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)을 참조하세요.
 
 - **전체 솔루션 분석 사용 안 함**
 

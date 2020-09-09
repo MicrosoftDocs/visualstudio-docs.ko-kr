@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567504"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509941"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 개발자용 Visual Studio 생산성 가이드
 
@@ -139,7 +139,7 @@ Visual Studio에는 많은 리팩터링, 코드 생성 작업 및 코드 수정�
 
 자세한 내용은 [코드 생성 기능](code-generation-in-visual-studio.md)을 참조하세요.
 
-[FxCop 분석기를 설치](../code-quality/install-fxcop-analyzers.md)하여 코드 문제에 플래그를 지정할 수 있습니다. 또는 [Roslyn 분석기](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)를 사용하여 고유한 리팩터링 또는 코드 수정을 작성하세요.
+[FxCop 분석기를 설치](../code-quality/install-fxcop-analyzers.md)하여 코드 문제에 플래그를 지정할 수 있습니다. 또는 [Roslyn 분석기](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md)를 사용하여 고유한 리팩터링 또는 코드 수정을 작성하세요.
 
 여러 커뮤니티 회원이 다음과 같은 코드 검사를 추가하는 무료 확장을 작성했습니다.
 

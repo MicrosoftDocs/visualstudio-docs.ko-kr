@@ -7,12 +7,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77279317"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509889"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense에 대한 C++ 프로젝트 구성
 
@@ -118,7 +118,7 @@ Visual Studio to investigate.
 
 환경 변수 TRACEDESIGNTIME을 true로 설정하고 Visual Studio를 다시 시작하면 빌드 실패 진단에 도움이 되는 로그 파일이 %TEMP% 디렉터리에 표시됩니다.
 
-TRACEDESIGNTIME 환경 변수에 대한 자세한 내용은 [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) 및 [공통 프로젝트 시스템](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)을 참조하세요. 이러한 문서의 정보는 C++ 프로젝트와 관련이 있습니다.
+TRACEDESIGNTIME 환경 변수에 대한 자세한 내용은 [Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md) 및 [공통 프로젝트 시스템](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)을 참조하세요. 이러한 문서의 정보는 C++ 프로젝트와 관련이 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

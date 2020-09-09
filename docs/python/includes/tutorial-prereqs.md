@@ -1,10 +1,10 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 4c17c2c28504ee8f1491173b5d72ceba8f430ab9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85570144"
 ---
 ## <a name="prerequisites"></a>사전 요구 사항

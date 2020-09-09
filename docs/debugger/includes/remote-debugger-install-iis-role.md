@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 13ca035b01ec8af1277d70b3c792293a1af4687a
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149235"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89323770"
 ---
 이러한 단계는 IIS의 기본 구성만 보여 줍니다. 자세한 정보를 확인하거나 Windows Desktop 머신에 설치하려면 [IIS에 게시](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) 또는 [ASP.NET 3.5 및 ASP.NET 4.5를 사용하는 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)을 참조하세요.
 

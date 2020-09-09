@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250508"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509928"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>성능 문제가 해결될 가능성을 높이는 방법
 
@@ -171,7 +171,7 @@ Developer Community 웹 사이트의 기존 피드백 항목에 성능 추적을
 
 **고급 성능 추적**
 
-문제 보고 도구의 추적 컬렉션 기능은 대부분의 시나리오에서 충분합니다. 그러나 추적 컬렉션에 대해 더 많은 제어가 필요한 경우가 있습니다(예: 버퍼 크기가 큰 추적). 이 경우에는 PerfView를 사용하는 것이 좋습니다. PerfView 도구를 사용하여 성능 추적을 수동으로 기록하는 단계는 [Recording performance traces with PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView)(PerfView를 사용하여 성능 추적 기록) 페이지에서 확인할 수 있습니다.
+문제 보고 도구의 추적 컬렉션 기능은 대부분의 시나리오에서 충분합니다. 그러나 추적 컬렉션에 대해 더 많은 제어가 필요한 경우가 있습니다(예: 버퍼 크기가 큰 추적). 이 경우에는 PerfView를 사용하는 것이 좋습니다. PerfView 도구를 사용하여 성능 추적을 수동으로 기록하는 단계는 [Recording performance traces with PerfView](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md)(PerfView를 사용하여 성능 추적 기록) 페이지에서 확인할 수 있습니다.
 
 ## <a name="out-of-process-issues"></a>Out-Of-Process 문제
 

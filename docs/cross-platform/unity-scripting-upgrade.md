@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815138"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508979"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
 
@@ -233,7 +233,7 @@ TAP는 Unity별 뉘앙스를 고려해야 하는 복잡한 주제입니다. 결�
 * 작업을 반환하는 비동기 함수에는 **"Async"** 접미사가 해당 이름에 추가되어야 합니다. "Async" 접미사는 함수가 항상 대기해야 함을 나타냅니다.
 * 기존 동기식 코드에서 비동기 함수를 실행하는 함수에 대해서만 `async void` 반환 형식을 사용합니다. 이러한 함수는 자체적으로 대기할 수 없으며 이름에 "Async" 접미사가 없어야 합니다.
 * Unity는 UnitySynchronizationContext를 사용하여 기본적으로 주 스레드에서 비동기 함수가 실행되도록 합니다. Unity API는 주 스레드의 외부에서 액세스할 수 없습니다.
-* [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) 및 [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx)와 같은 메서드를 사용하여 백그라운드 스레드에서 작업을 실행할 수 있습니다. 이 기술은 성능 향상을 위해 주 스레드에서 비용이 많이 드는 작업을 오프로딩하는 데 유용합니다. 그러나 백그라운드 스레드를 사용하면 [경합 조건](https://wikipedia.org/wiki/Race_condition)과 같이 디버그하기 어려운 문제가 발생할 수 있습니다.
+* [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) 및 [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait)와 같은 메서드를 사용하여 백그라운드 스레드에서 작업을 실행할 수 있습니다. 이 기술은 성능 향상을 위해 주 스레드에서 비용이 많이 드는 작업을 오프로딩하는 데 유용합니다. 그러나 백그라운드 스레드를 사용하면 [경합 조건](https://wikipedia.org/wiki/Race_condition)과 같이 디버그하기 어려운 문제가 발생할 수 있습니다.
 * Unity API는 주 스레드 외부에서 액세스할 수 없습니다.
 * 스레드를 사용하는 작업은 Unity WebGL 빌드에서 지원되지 않습니다.
 
