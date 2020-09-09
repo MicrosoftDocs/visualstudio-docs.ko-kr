@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490289"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599984"
 ---
 # <a name="use-code-analyzers"></a>코드 분석기 사용
 
@@ -62,8 +62,8 @@ ms.locfileid: "89490289"
 
 | 심각도 (솔루션 탐색기) | 심각도 (EditorConfig 파일) | 빌드 타임 동작 | 편집기 동작 |
 |-|-|-|
-| Error | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
-| Warning | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
+| 오류 | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
+| 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
 | 정보 | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 회색 상자로 표시 됩니다. |
 | 숨김 | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
 | 없음 | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
@@ -118,7 +118,7 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 - ID 별로 개별 규칙의 심각도 항목은 범주에 대 한 심각도 항목 보다 우선 합니다.
 - 범주에 대 한 심각도 항목은 모든 분석기 규칙에 대 한 심각도 항목 보다 우선적으로 적용 됩니다.
 
-[CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) 에 "Performance" 범주가 있는 다음과 같은 editorconfig 예제를 생각해 보세요.
+[CA1822](./ca1822.md) 에 "Performance" 범주가 있는 다음과 같은 editorconfig 예제를 생각해 보세요.
 
    ```ini
    [*.cs]
