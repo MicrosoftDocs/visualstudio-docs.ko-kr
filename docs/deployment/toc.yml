@@ -53,11 +53,11 @@
     - name: Node.js
       items:
         - name: Linux App Service에 게시
-          href: /visualstudio/javascript/publish-nodejs-app-azure
+          href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
         - name: Azure App Service에 게시
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
+          href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: 방법 가이드
   items:
     - name: ClickOnce 보안 및 배포

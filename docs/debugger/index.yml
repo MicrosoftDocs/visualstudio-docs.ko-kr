@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: f1d2a1577f01dcca9763a775a28f27691928bb43
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: f65c41b4647a811377d1d090635c889a784678ae
+  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "86405424"
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "89600141"
 landingContent:
 - title: 디버깅 정보
   linkLists:
@@ -34,11 +34,11 @@ landingContent:
     - text: 완전 초보자를 위한 디버깅
       url: debugging-absolute-beginners.md
     - text: C#을 디버깅하는 방법 알아보기
-      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      url: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - text: C++를 디버깅하는 방법 알아보기
       url: getting-started-with-the-debugger-cpp.md
     - text: Visual Basic을 디버깅하는 방법 알아보기
-      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      url: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - text: 디버거에서 Python 코드 실행 >>
       url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
 - title: 일시 중지 및 코드 탐색
@@ -68,7 +68,7 @@ landingContent:
     - text: 디버거 팁과 요령
       url: debugger-tips-and-tricks.md
     - text: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
-      url: xaml-hot-reload.md
+      url: ../xaml-tools/xaml-hot-reload.md
     - text: 라이브 Azure 앱 디버그
       url: debug-live-azure-applications.md
     - text: 디버거에 표시할 내용 지시

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d5bd7a2d79bf6da710fd0f5803c2415781160143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176839"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485537"
 ---
 # <a name="share-your-app"></a>앱 공유
 
@@ -63,6 +63,8 @@ ms.locfileid: "89176839"
     ```bash
     docker push <username>/getting-started
     ```
+
+    명령줄 대신 Docker 뷰의 **이미지** 섹션에서 이미지 태그를 마우스 오른쪽 단추로 클릭하고 **푸시...** 를 선택한 다음 **레지스트리 연결...** 을 선택하여 **Docker Hub**를 수행할 수도 있습니다.
 
 ## <a name="run-the-image-on-a-new-instance"></a>새 인스턴스에서 이미지 실행
 

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176792"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485588"
 ---
 # <a name="persist-your-data"></a> 데이터 유지
 
@@ -86,7 +86,7 @@ ms.locfileid: "89176792"
     docker volume create todo-db
     ```
 
-1. 여전히 영구적 볼륨을 사용하지 않고 실행되고 있으므로 대시보드에서(또는 `docker rm -f <id>`를 사용하여) todo 앱 컨테이너를 다시 한 번 중지합니다.
+1. 영구적인 볼륨을 사용하지 않고 계속 실행됨에 따라 Docker 뷰(또는 `docker rm -f <id>`)에서 다시 Todo 앱 컨테이너를 중지합니다.
 
 1. todo 앱 컨테이너를 시작하되, `-v` 플래그를 추가하여 볼륨 탑재를 지정합니다. 명명된 볼륨을 사용하고 `/etc/todos`에 탑재하면 경로에 생성된 모든 파일이 캡처됩니다.
 
@@ -98,7 +98,7 @@ ms.locfileid: "89176792"
 
     ![todo 목록에 추가된 항목](media/items-added.png)
 
-1. todo 앱의 컨테이너를 제거합니다. 대시보드 또는 `docker ps`를 사용하여 ID를 가져온 다음, `docker rm -f <id>`를 사용하여 제거합니다.
+1. todo 앱의 컨테이너를 제거합니다. Docker 뷰 또는 `docker ps`을(를) 사용하여 ID를 가져온 다음 `docker rm -f <id>`을(를) 수행하여 제거합니다.
 
 1. 위와 동일한 명령을 사용하여 새 컨테이너를 시작합니다.
 

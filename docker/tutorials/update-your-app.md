@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 4a1cba71481608803522336ad5c0f6b6354bca32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176843"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485430"
 ---
 # <a name="update-the-app"></a>앱 업데이트
 
@@ -82,7 +82,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 > [!TIP]
 > `docker rm` 명령에 “force” 플래그를 추가하면 단일 명령으로 컨테이너를 중지하고 제거할 수 있습니다. 예: `docker rm -f <the-container-id>`
 
-### <a name="remove-a-container-using-the-docker-dashboard"></a>Docker 대시보드를 사용하여 컨테이너 제거
+### <a name="remove-a-container-using-the-docker-view"></a>Docker 뷰를 사용해 컨테이너 제거
 
 VS Code 확장을 여는 경우 두 번만 클릭하면 컨테이너를 제거할 수 있습니다. 컨테이너 ID를 조회하고 제거하는 것보다 훨씬 간편합니다.
 
@@ -92,7 +92,7 @@ VS Code 확장을 여는 경우 두 번만 클릭하면 컨테이너를 제거�
 
 1. 제거를 확인하면 작업이 완료됩니다.
 
-![Docker 대시보드 - 컨테이너 제거](media/vs-removing-container.png)
+![Docker 뷰 - 컨테이너 제거](media/vs-removing-container.png)
 
 ### <a name="start-the-updated-app-container"></a>업데이트된 앱 컨테이너 시작
 

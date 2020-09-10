@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: b8470c8d7708bc51916a6f57f5aa135c3267e355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176835"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485443"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>todo 샘플 앱 빌드 및 실행
 
@@ -55,6 +55,8 @@ ms.locfileid: "89176835"
     ```bash
     docker build -t getting-started .
     ```
+
+    또는, Dockerfile을 마우스 오른쪽 단추로 클릭하고 **이미지 빌드...** 를 선택한 다음 프롬프트에서 태그를 지정할 수도 있습니다.
 
     이 명령은 Dockerfile을 사용하여 새 컨테이너 이미지를 빌드했습니다. 많은 “계층”이 다운로드된 것을 발견했을 수 있습니다. 이는 `node:12-alpine` 이미지에서 시작하도록 작성기에 명령했기 때문입니다. 하지만 머신에 해당 이미지가 없어 이미지를 다운로드해야 했습니다.
 

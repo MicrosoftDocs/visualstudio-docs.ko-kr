@@ -13,15 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14527e84d5bbd2d06b2d091ba7a9d4daa9763462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281957"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426865"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 애플리케이션 개요
-‘N 계층’ 데이터 애플리케이션은 여러 ‘계층’으로 분리된 데이터 애플리케이션입니다.  “분산 앱”과 “다중 계층 애플리케이션”이라고도 하는 N 계층 애플리케이션은 클라이언트 및 서버 사이에 분산되는 별개의 계층으로 처리를 분산합니다. 데이터에 액세스하는 애플리케이션을 개발할 때 애플리케이션을 구성하는 여러 계층을 명확하게 구분해야 합니다.
+‘N 계층’ 데이터 애플리케이션은 여러 ‘계층’으로 분리된 데이터 애플리케이션입니다.  “분산 앱”과 “다중 계층 애플리케이션”이라고도 하는 N 계층 애플리케이션은 클라이언트 및 서버 간에 분산되는 별개의 계층으로 처리를 분산합니다. 데이터에 액세스하는 애플리케이션을 개발할 때 애플리케이션을 구성하는 여러 계층을 명확하게 구분해야 합니다.
 
 일반적인 N 계층 애플리케이션에는 프레젠테이션 계층, 중간 계층 및 데이터 계층이 포함됩니다. N 계층 애플리케이션의 여러 계층을 분리하는 가장 쉬운 방법은 애플리케이션에 포함할 각 계층에 대해 개별 프로젝트를 만드는 것입니다. 예를 들어, 프레젠테이션 계층은 Windows Forms 애플리케이션일 수 있지만 데이터 액세스 논리는 중간 계층에 위치한 클래스 라이브러리일 수 있습니다. 또한 프레젠테이션 레이어는 웹 서비스와 같은 서비스를 통해 중간 계층의 데이터 액세스 논리와 통신할 수 있습니다. 애플리케이션 구성 요소를 별도의 계층으로 분리하면 애플리케이션의 유지 관리성과 확장성이 높아집니다. 이는 전체 솔루션을 다시 설계하지 않고도 단일 계층에 적용할 수 있는 새로운 기술을 더 쉽게 도입할 수 있기 때문입니다. 또한 N 계층 애플리케이션은 일반적으로 프레젠테이션 계층으로부터 격리를 유지하는 중간 계층에 중요한 정보를 저장합니다.
 
@@ -79,7 +79,7 @@ Visual Studio에는 개발자가 N 계층 애플리케이션을 만드는 데 �
 
 [LINQ to SQL을 사용한 N 계층 및 원격 애플리케이션](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
