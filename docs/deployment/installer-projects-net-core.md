@@ -11,12 +11,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a057e655df643c5ddfd85064ba84260a2644dffd
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88714400"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641580"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio 설치 관리자 프로젝트 확장 및 .NET Core 3.1
 
@@ -31,7 +31,7 @@ ms.locfileid: "88714400"
 
 - 자체 포함 응용 프로그램은 런타임을 포함 합니다.
 
-이러한 배포 전략에 대해 자세히 알아보려면 [.Net Core 응용 프로그램 게시 개요](https://docs.microsoft.com/dotnet/core/deploying/)를 참조 하세요.
+이러한 배포 전략에 대해 자세히 알아보려면 [.Net Core 응용 프로그램 게시 개요](/dotnet/core/deploying/)를 참조 하세요.
 
 ### <a name="workflow-changes-for-net-core-31"></a>.NET Core 3.1에 대 한 워크플로 변경
 

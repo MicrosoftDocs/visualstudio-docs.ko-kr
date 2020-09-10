@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536294"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641538"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce 애플리케이션 게시
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 처음으로 게시할 때는 게시 마법사를 사용하여 게시 속성을 설정할 수 있습니다. 마법사에서는 일부 속성만 사용 가능하며 기타 모든 설정은 기본값으로 설정됩니다.
@@ -96,7 +96,7 @@ ms.locfileid: "85536294"
 |[연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework 유틸리티를 사용하여 ClickOnce 애플리케이션을 배포하는 방법을 설명합니다.|
 |[연습: 다시 서명할 필요가 없고 브랜딩 정보를 유지 하는 ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|.NET Framework 유틸리티를 사용하여 매니페스트를 다시 서명하지 않고 ClickOnce 애플리케이션을 배포하는 방법을 설명합니다.|
 |[방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)|프로젝트에서 **대상 CPU** 또는 **플랫폼 대상** 속성을 변경하여 64비트 프로세서용으로 프로젝트를 게시하는 방법을 설명합니다.|
-|[연습: ClickOnce 응용 프로그램을 여러 .NET Framework 버전에서 실행할 수 있도록 설정](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|ClickOnce 애플리케이션을 여러 .NET Framework 버전에 설치하고 실행할 수 있도록 설정하는 방법을 설명합니다.|
+|[연습: ClickOnce 응용 프로그램을 여러 .NET Framework 버전에서 실행할 수 있도록 설정](/previous-versions/dd996998(v=vs.100))|ClickOnce 애플리케이션을 여러 .NET Framework 버전에 설치하고 실행할 수 있도록 설정하는 방법을 설명합니다.|
 |[연습: ClickOnce 응용 프로그램에 대 한 사용자 지정 설치 관리자 만들기](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|ClickOnce 애플리케이션을 설치하는 사용자 지정 설치 관리자를 만드는 방법을 설명합니다.|
 |[방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|비주얼 스타일을 사용하는 WPF 애플리케이션을 게시할 때 발생하는 오류를 해결하기 위한 단계별 지침을 제공합니다.|
 

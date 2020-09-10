@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1905ea32a9899a1262e146f264e0a1179f0e8c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382200"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641607"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 애플리케이션 및 배포 매니페스트 다시 서명
 Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 프로그램) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에서 배포 속성을 변경한 후에는 인증서를 사용 하 여 응용 프로그램 및 배포 매니페스트에 모두 다시 서명 해야 합니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.
@@ -31,7 +31,7 @@ Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 
  매니페스트에 다시 서명할 수 있는 또 다른 시나리오는 고객이 자신의 인증서를 사용 하 여 응용 프로그램 및 배포 매니페스트에 서명 하려고 할 때입니다.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>애플리케이션 및 배포 매니페스트 다시 서명
- 이 절차에서는 응용 프로그램 매니페스트 파일 (*.manifest*)을 이미 변경한 것으로 가정 합니다. 자세한 내용은 [방법: 배포 속성 변경](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)을 참조 하세요.
+ 이 절차에서는 응용 프로그램 매니페스트 파일 (*.manifest*)을 이미 변경한 것으로 가정 합니다. 자세한 내용은 [방법: 배포 속성 변경](/previous-versions/cc442869(v=vs.110))을 참조 하세요.
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe를 사용 하 여 응용 프로그램 및 배포 매니페스트에 다시 서명 하려면
 
@@ -112,7 +112,7 @@ Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 
 
 7. 필요에 따라 마스터 배포 매니페스트 (*publish \\ \<appname> . application*)를 버전 배포 디렉터리 (*publish\Application Files \\ \<appname> _ \<version> *)에 복사 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)

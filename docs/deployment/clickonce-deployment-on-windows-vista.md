@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900504"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641487"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista의 ClickOnce 배포
 
@@ -52,6 +52,6 @@ Visual Studio에서는 매니페스트 생성에 대해 다음과 같은 옵션�
 
 ## <a name="see-also"></a>추가 정보
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
-- [사용자 권한 및 Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
+- [사용자 권한 및 Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [프로젝트 디자이너, 애플리케이션 페이지(C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [프로젝트 디자이너, 애플리케이션 페이지(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

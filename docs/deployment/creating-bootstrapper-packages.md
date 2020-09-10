@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314864"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641663"
 ---
 # <a name="create-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
 설치 프로그램은 일반 설치 관리자로서 Windows Installer(*.msi*) 파일 및 실행 프로그램과 같은 재배포 가능 구성 요소를 검색 및 설치하도록 구성할 수 있습니다. 설치 관리자를 부트스트래퍼라고도 합니다. 구성 요소 설치를 관리하는 메타데이터를 지정하는 XML 매니페스트 집합을 통해 설치 프로그램을 프로그래밍합니다.  ClickOnce에 대 한 **필수** 구성 요소 대화 상자에 표시 되는 각 재배포 가능 구성 요소 또는 필수 구성 요소는 부트스트래퍼 패키지입니다. 부트스트래퍼 패키지는 필수 구성 요소를 설치해야 하는 방법을 설명하는 매니페스트 파일이 포함된 파일과 디렉터리 그룹입니다.
@@ -94,7 +94,7 @@ CustomBootstrapperPackage
 
 다음 테이블에는 부트스트래퍼가 자동으로 채우는 속성이 나와 있습니다.
 
-|속성|설명|
+|속성|Description|
 |--------------|-----------------|
 |ApplicationName|애플리케이션 이름입니다.|
 |ProcessorArchitecture|실행 파일의 대상인 플랫폼의 단어당 비트 및 프로세서입니다. 여기에는 다음 값이 포함됩니다.<br /><br /> - Intel<br />- IA64<br />- AMD64|
@@ -122,4 +122,4 @@ CustomBootstrapperPackage
 - [방법: ClickOnce 애플리케이션을 사용하여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [필수 구성 요소 대화 상자](../ide/reference/prerequisites-dialog-box.md)
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)
-- [Visual Studio 2005 부트스트래퍼를 사용 하 여 설치 시작](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [Visual Studio 2005 부트스트래퍼를 사용 하 여 설치 시작](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

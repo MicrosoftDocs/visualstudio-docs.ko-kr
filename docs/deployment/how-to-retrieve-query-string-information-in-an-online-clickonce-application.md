@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc94691eda319607510619dbb37e24265bcae522
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382187"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641593"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>방법: 온라인 ClickOnce 애플리케이션에서 쿼리 문자열 정보 검색
 *쿼리 문자열* 은 임의의 정보를 *name=value*형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 호스트하는 `WindowsApp1` 이라는 이름의 `servername`애플리케이션이 있으며, 애플리케이션이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.
@@ -76,7 +76,7 @@ ms.locfileid: "85382187"
  온라인 전용인 애플리케이션은 항상 URL을 통해 활성화됩니다. 그러나 이 경우, 쿼리 문자열 매개 변수가 누락되거나 손상되더라도 제대로 작동하도록 애플리케이션을 작성해야 합니다.
 
 ## <a name="net-framework-security"></a>.NET Framework 보안
- 악의적인 문자의 입력을 사용 전에 지우려는 경우에만 URL 매개 변수가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 전달되도록 하세요. 예를 들어 따옴표, 슬래시 또는 세미콜론이 포함된 문자열은 데이터베이스에 대한 SQL 쿼리에서 필터링되지 않고 사용될 경우 임의의 데이터 작업을 수행할 수 있습니다. 쿼리 문자열 보안에 대 한 자세한 내용은 [스크립트 악용 개요](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조 하세요.
+ 악의적인 문자의 입력을 사용 전에 지우려는 경우에만 URL 매개 변수가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 전달되도록 하세요. 예를 들어 따옴표, 슬래시 또는 세미콜론이 포함된 문자열은 데이터베이스에 대한 SQL 쿼리에서 필터링되지 않고 사용될 경우 임의의 데이터 작업을 수행할 수 있습니다. 쿼리 문자열 보안에 대 한 자세한 내용은 [스크립트 악용 개요](/previous-versions/w1sw53ds(v=vs.140))를 참조 하세요.
 
 ## <a name="see-also"></a>추가 정보
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
