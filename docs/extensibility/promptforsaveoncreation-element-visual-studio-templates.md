@@ -1,5 +1,6 @@
 ---
-title: PromptForSaveOnCreation 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: PromptForSaveOnCreation 요소(Visual Studio 템플릿)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffc610cf701bdf5be3a0b6116455ac413fbd6dcd
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701773"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743132"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소 (Visual Studio 템플릿)
 
@@ -62,7 +63,7 @@ ms.locfileid: "80701773"
 
  임시 프로젝트는 해당 프로젝트의 내용을 디스크에 저장 하지 않고 만들고 수정할 수 있는 프로젝트입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `PromptForSaveOnCreation` `false` 프로젝트를 임시 프로젝트로 만들 수 있도록를 지정 하는 값을로 설정 합니다.
 
 ```xml

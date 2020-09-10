@@ -1,5 +1,6 @@
 ---
-title: 연결을 만들 수 없습니다. - 속성 형식이 일치하지 않는 경우
+title: 속성 형식이 일치 하지 않습니다.
+description: 연결을 만들 수 없습니다. - 속성 형식이 일치하지 않는 경우
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b9735c711abe7826d241e8c8aa7ade0a5f5d5e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536723"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743188"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>&lt;association name&gt; 연결을 만들 수 없습니다. - 속성 형식이 일치하지 않는 경우
 

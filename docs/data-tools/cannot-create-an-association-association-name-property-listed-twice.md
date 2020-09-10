@@ -1,5 +1,6 @@
 ---
-title: 연결을 만들 수 없습니다. - 속성이 두 번 나열된 경우
+title: 속성이 두 번 나열 됨
+description: 연결을 만들 수 없습니다. - 속성이 두 번 나열된 경우
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.technology: vs-data-tools
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 50c9311ef09172ea082d2419495f26b51ff1d6a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c496a25b093c88cca68d31bd22ccc6deca9a33a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536801"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743198"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>&lt;association name&gt; 연결을 만들 수 없습니다. - 속성이 두 번 나열된 경우
 

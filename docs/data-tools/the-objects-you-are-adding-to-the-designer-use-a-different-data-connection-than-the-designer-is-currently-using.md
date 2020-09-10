@@ -1,5 +1,6 @@
 ---
-title: 디자이너에 추가 된 개체는 다른 데이터 연결을 사용 합니다.
+title: 개체가 다른 연결을 사용 합니다.
+description: 디자이너에 추가 된 개체는 다른 데이터 연결을 사용 합니다.
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38fa361536f9e99c013f9a13330fe1a68e53641a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6394b31d7ace183e3fdb479988c7cc726f009bba
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281411"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743293"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>디자이너에 추가 하려는 개체가 디자이너와 다른 데이터 연결을 사용 합니다.
 
@@ -34,6 +35,6 @@ ms.locfileid: "85281411"
 
    작업이 취소됩니다. *DataContext.Connection*이 기존 연결로 설정되어 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

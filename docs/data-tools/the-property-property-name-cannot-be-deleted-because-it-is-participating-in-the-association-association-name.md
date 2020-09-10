@@ -1,5 +1,6 @@
 ---
-title: 속성이 연결에 참여하고 있으므로 이 속성을 삭제할 수 없음
+title: 속성이 연결에 참여 합니다.
+description: 속성이 연결에 참여하고 있으므로 이 속성을 삭제할 수 없음
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aab2d2e3151786b45889262680d2f0815f684b6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead87955056ec3c6246df6fc9050eedd867dd3ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535384"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743277"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>&lt;property name&gt; 속성은 &lt;association name&gt; 연결에 참여하고 있으므로 삭제할 수 없음
 
@@ -31,6 +32,6 @@ ms.locfileid: "85535384"
 
 4. 속성 삭제를 다시 한 번 시도합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 및 편집기에 대 한 추가 소스 제어 지침 | Microsoft Docs
+title: 프로젝트 및 편집기에 대 한 소스 제어 지침
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181f6c10ff7ce95cd3a37151f117353d1bb47d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710117"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743402"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>프로젝트 및 편집기에 대 한 추가 소스 제어 지침
 소스 제어를 지원 하기 위해 프로젝트와 편집기에서 준수 해야 하는 여러 가지 지침이 있습니다.
@@ -23,7 +23,7 @@ ms.locfileid: "80710117"
 ## <a name="guidelines"></a>지침
  프로젝트 또는 편집기에서 소스 제어를 지원 하려면 다음을 수행 해야 합니다.
 
-|영역|프로젝트|편집기|세부 정보|
+|영역|Project|편집기|세부 정보|
 |----------|-------------|------------|-------------|
 |파일의 전용 복사본|X||환경에서는 파일의 전용 복사본을 지원 합니다. 즉, 프로젝트에 참여 하는 각 사용자에 게는 해당 프로젝트의 파일에 대 한 자체 개인 사본이 있습니다.|
 |ANSI/유니코드 지 속성|X|X|지 속성 코드를 작성 하는 경우 대부분의 소스 제어 프로그램에서 현재 유니코드를 지원 하지 않으므로 ANSI 폼에 파일을 저장 합니다.|
