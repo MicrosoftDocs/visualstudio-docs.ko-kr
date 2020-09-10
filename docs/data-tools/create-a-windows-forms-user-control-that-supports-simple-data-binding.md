@@ -1,5 +1,5 @@
 ---
-title: 단순 데이터 바인딩을 지원하는 사용자 정의 컨트롤 만들기
+title: 단순 데이터 바인딩을 지 원하는 사용자 정의 컨트롤 만들기
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b1e8540a33dc5ddbead5debcbfb2cd4ddc8d9de
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586825"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742819"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>단순 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
 
@@ -180,7 +180,7 @@ Windows 애플리케이션에서 폼에 데이터를 표시할 때는 **도구 �
 
 - 보다 복잡한 데이터 바인딩 시나리오를 지원하는 컨트롤을 만듭니다. 자세한 내용은 [복합 데이터 바인딩을 지 원하는 Windows Forms 사용자 정의 컨트롤 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) 및 [조회 데이터 바인딩을 지 원하는 Windows Forms 사용자 정의 컨트롤 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

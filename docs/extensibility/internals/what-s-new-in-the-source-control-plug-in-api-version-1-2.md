@@ -1,5 +1,5 @@
 ---
-title: '&apos;소스 제어 플러그 인 API 버전 1.2의 새로운 기능 | Microsoft Docs'
+title: '&apos;소스 제어 플러그 인 API 1.2의 새로운 기능'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29a3d81c3a03f4a8dcb8236057e931993f06f6ec
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711757"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741546"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>소스 제어 플러그 인 API 버전 1.2의 새로운 기능&#39;
 이 섹션에서는 소스 제어 플러그 인 API 버전 1.2의 고급 소스 코드 제어 기능을 강조 표시 합니다. 다음은 버전 1.2의 새로운 기능 목록입니다.
@@ -32,5 +32,5 @@ ms.locfileid: "88711757"
 
 - [에서 소스 제어 정보를 제거 합니다. Proj 및 Sln 파일](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) 은 소스 제어 플러그 인 API 버전 1.2에서 프로젝트 및 솔루션에 대 한 정보를 저장 하는 방법을 설명 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [시작](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

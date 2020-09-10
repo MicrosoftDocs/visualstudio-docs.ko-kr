@@ -1,5 +1,5 @@
 ---
-title: 원본 제어 플러그 인에 대 한 호환성 경고 해제 | Microsoft Docs
+title: 소스 제어 플러그 인에 대 한 경고 해제
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cf57aa86608cca96924faa2caeb9eec7fbdc0e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710720"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742774"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>방법: 소스 제어 플러그 인에 대 한 호환성 경고 해제
+
 에서 소스 제어를 사용 하는 경우 사용자에 게 여러 호환성 경고가 표시 될 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 표시 되는 경고는 원본 제어 플러그 인의 기능에 따라 다르며 여기에 설명 된 대로 사용 하지 않도록 설정할 수 있습니다.
 
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>경고를 사용 하지 않도록 설정 하려면: "Visual Studio와의 최적화 된 소스 제어 통합을 확인 하려면"
@@ -41,5 +42,6 @@ ms.locfileid: "80710720"
 
      재진입 (기능)을 지 원하는 것이 가장 좋습니다. 이렇게 `SCC_CAP_REENTRANT` 하면이 경고가 제거 됩니다. 그러나이 지원을 사용할 수 없는 경우 이러한 레지스트리 항목을 설정할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
+
 - [기능 플래그](../extensibility/capability-flags.md)

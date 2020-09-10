@@ -1,5 +1,6 @@
 ---
-title: ImmutableArrays에 대 한 Roslyn 분석기 및 코드 인식 라이브러리 Microsoft Docs
+title: ImmutableArrays에 대 한 Roslyn 분석기 및 코드 인식 라이브러리
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d66ed0ab2d93bb46983becd191b1dcc2de648659
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6fc40d229b911500cb6c196dba34546ed9ede206
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509408"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741659"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays에 대 한 Roslyn 분석기 및 코드 인식 라이브러리
 

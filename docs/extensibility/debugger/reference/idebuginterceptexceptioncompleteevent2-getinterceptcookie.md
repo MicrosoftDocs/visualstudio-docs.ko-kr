@@ -1,5 +1,6 @@
 ---
-title: 'IDebugInterceptExceptionCompleteEvent2:: GetInterceptCookie | Microsoft Docs'
+title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9065c0b7868efaeb70c10a3ab921a8764694662e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d5b333b060fb49e71b803eb5744a57863e51581
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727782"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89738355"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 가로채기 예외 처리가 완료 되 면 호출 됩니다.
@@ -49,6 +50,6 @@ int GetInterceptCookie(
 ## <a name="remarks"></a>설명
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 메서드는 가로채기 예외 처리를 완료 한 후 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 이벤트를 보냅니다. 처리기는 메서드를 사용 하 여 `GetInterceptCookie` 예외와 연결 된 고유 값 (메서드에 전달 된 것과 같은 값)을 검색할 수 있습니다 `InterceptCurrentException` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
 - [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

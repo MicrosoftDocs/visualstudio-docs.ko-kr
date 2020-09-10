@@ -1,5 +1,6 @@
 ---
 title: BuildOnLoad attribute 및 요소 (Visual Studio 템플릿)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 077724bf7038a3ca7010de730993b0f290a66ca4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739961"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739142"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad attribute 및 요소
 
@@ -53,7 +54,7 @@ ms.locfileid: "80739961"
 
 **BuildOnLoad** 는 선택적 특성입니다. 기본값은 `false`입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제에서는 **BuildOnLoad** 가 요소로 사용 될 때 c # 템플릿에 대 한 메타 데이터를 보여 줍니다.
 
@@ -82,7 +83,7 @@ ms.locfileid: "80739961"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [BuildProjectOnload 요소](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent 요소](../extensibility/templatecontent-element-visual-studio-templates.md)

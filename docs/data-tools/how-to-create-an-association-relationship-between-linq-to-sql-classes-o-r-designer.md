@@ -1,5 +1,5 @@
 ---
-title: LINQ to SQL 클래스 간 관계 (O/R 디자이너)
+title: LINQ to SQL 클래스 간의 관계
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b081e989932ea03a3aaf3203bdc7383f90b9b7ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a45b93ffe1621b5cd56578fc4969a4f14b28355
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282152"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742938"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>방법: LINQ to SQL 클래스 간의 연결 만들기 (O/R 디자이너)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]에서 엔터티 클래스 간의 연결은 데이터베이스 테이블 간의 관계와 비슷합니다. **연결 편집기** 대화 상자를 사용하여 엔터티 클래스 간의 연결을 만들 수 있습니다.
@@ -26,7 +26,7 @@ ms.locfileid: "85282152"
 ## <a name="association-properties"></a>연결 속성
 연결을 만든 후 **O/R 디자이너**에서 연결을 선택하면 **속성** 창에 몇 개의 구성 가능한 속성이 나타납니다. 연결은 관련 클래스 간의 선입니다. 다음 표에서는 연결의 속성에 대 한 설명을 제공 합니다.
 
-|속성|설명|
+|속성|Description|
 |--------------|-----------------|
 |**카디널리티**|연결이 일대다 연결인지 또는 일대일 연결인지를 제어합니다.|
 |**자식 속성**|연결의 외래 키 쪽에서 자식 레코드의 컬렉션이거나 자식 레코드에 대한 참조인 부모 속성을 만들지 여부를 지정합니다. 예를 들어 및 간의 연결에서 `Customer` `Order` **자식 속성** 을 **True**로 설정 하면 라는 속성이 `Orders` 부모 클래스에 만들어집니다.|
@@ -46,10 +46,10 @@ ms.locfileid: "85282152"
 
 5. **확인**을 클릭하여 연결을 만듭니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [DataContext 메서드(O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)
+- [DataContext 메서드 (O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)
 - [방법: 기본 키 표현](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

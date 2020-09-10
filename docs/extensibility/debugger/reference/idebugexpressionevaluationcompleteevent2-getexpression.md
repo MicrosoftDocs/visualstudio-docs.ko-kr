@@ -1,5 +1,6 @@
 ---
-title: 'IDebugExpressionEvaluationCompleteEvent2:: GetExpression | Microsoft Docs'
+title: IDebugExpressionEvaluationCompleteEvent2::GetExpression
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c6ed79edadf9191604291a4c6f0f07b0aa1f0dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d495909b385b431aed1ee3d339449f165f28051
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729580"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742797"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 원래 식을 가져옵니다.
@@ -49,7 +50,7 @@ int GetExpression( 
 ## <a name="remarks"></a>설명
  이 메서드는 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 메서드를 호출 하 여 만든 개체를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)

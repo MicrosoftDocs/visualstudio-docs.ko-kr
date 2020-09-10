@@ -1,5 +1,5 @@
 ---
-title: '연습: 편집기 확장에서 셸 명령 사용 | Microsoft Docs'
+title: 편집기 확장과 함께 셸 명령 사용
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e9f7de69cfd969db8ae905ea65bbf868cf2c88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ebec1b2c58f5a2ae79e6f361d74e57cd935c177
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904446"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742028"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>연습: 편집기 확장에서 셸 명령 사용
 VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있습니다. 이 연습에서는 메뉴 명령을 호출 하 여 편집기에서 텍스트 뷰에 장식을 추가 하는 방법을 보여 줍니다.
@@ -691,5 +691,5 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 
      Fourscore...
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

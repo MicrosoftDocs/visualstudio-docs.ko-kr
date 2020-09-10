@@ -1,5 +1,6 @@
 ---
-title: 'IDebugComPlusSymbolProvider:: GetAttributedClassesinModule | Microsoft Docs'
+title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 408aa2f373ab296394a0181014c16b1697fdf9ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 309a30174c22e762fbf91c68c13c5f07b3220698
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733923"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741483"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 지정 된 모듈에서 지정 된 특성을 사용 하 여 클래스를 검색 합니다.
@@ -151,5 +152,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

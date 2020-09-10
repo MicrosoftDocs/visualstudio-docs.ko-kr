@@ -1,5 +1,5 @@
 ---
-title: 소스 제어 플러그 인을 구현 하기 위한 모범 사례 | Microsoft Docs
+title: 소스 제어 플러그 인 구현-모범 사례
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68491f22d63ae3ebb664b7c22188a661dccbf39a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740046"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739159"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>소스 제어 플러그 인을 구현 하기 위한 모범 사례
 다음 기술 세부 정보는에서 소스 제어 플러그 인을 안정적으로 구현 하는 데 도움이 될 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -57,6 +57,6 @@ ms.locfileid: "80740046"
 
  사용자가 구성할 수 있는 대부분의 설정 옵션은 원본 제어 플러그 인 간에 크게 다르므로 이러한 방식으로 정의 되지 않습니다. 따라서 권장 메커니즘은 **고급** 단추입니다. 예를 들어 **가져오기** 대화 상자에서 IDE는 이해 하는 정보만 표시 하지만 플러그 인에이 명령에 대 한 옵션이 있는 경우에도 **고급** 단추를 표시 합니다. 사용자가 **고급** 단추를 클릭 하면 IDE에서 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 를 호출 하 여 사용자에 게 bitflag 또는 date/time과 같은 정보를 묻는 메시지를 표시 하는 소스 제어 플러그 인을 사용 하도록 설정 합니다. 플러그 인은 명령 중에 다시 전달 되는 구조에이 정보를 반환 합니다 `SccGet` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
 - [소스 제어 플러그 인 만들기](../extensibility/internals/creating-a-source-control-plug-in.md)

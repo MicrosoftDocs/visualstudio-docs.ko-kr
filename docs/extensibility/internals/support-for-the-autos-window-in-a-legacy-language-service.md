@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스의 자동 창 지원 | Microsoft Docs
+title: 레거시 언어 서비스에서 자동 창 지원
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704890"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741455"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>레거시 언어 서비스의 자동 창 지원
+
 **자동** 창에는 디버그 중인 프로그램이 일시 중지 될 때 (중단점 또는 예외로 인해) 범위 내에 있는 변수 및 매개 변수와 같은 식이 표시 됩니다. 식에는 로컬 범위에서 변경 된 변수, 지역 또는 전역 및 매개 변수가 포함 될 수 있습니다. **자동** 창에는 클래스, 구조체 또는 일부 다른 형식의 인스턴스화가 포함 될 수도 있습니다. 식 계산기에서 평가할 수 있는 모든 항목은 **자동** 창에 표시 될 수 있습니다.
 
  MPF (관리 되는 패키지 프레임 워크)는 **자동** 창을 직접 지원 하지 않습니다. 그러나 메서드를 재정의 하는 경우 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> **자동** 창에 표시 될 식의 목록을 반환할 수 있습니다.
 
 ## <a name="implementing-support-for-the-autos-window"></a>자동 창에 대 한 지원 구현
+
  **자동** 창을 지원 하기 위해 필요한 모든 작업은 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> 클래스에서 메서드를 구현 하는 것입니다 <xref:Microsoft.VisualStudio.Package.LanguageService> . 소스 파일의 위치를 지정 하 여 구현에서 **자동** 창에 표시 되어야 하는 식을 결정 해야 합니다. 메서드는 각 문자열이 단일 식을 나타내는 문자열 목록을 반환 합니다. 반환 값은 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 목록에 식이 포함 되어 있음을 나타내고,는 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> 표시할 식이 없음을 나타냅니다.
 
  반환 되는 실제 식은 코드에서 해당 위치에 표시 되는 변수 또는 매개 변수의 이름입니다. 이러한 이름은 식 계산기에 전달 되어 **자동** 창에 표시 되는 값과 형식을 가져옵니다.

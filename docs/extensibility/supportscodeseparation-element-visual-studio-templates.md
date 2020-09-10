@@ -1,5 +1,6 @@
 ---
-title: SupportsCodeSeparation 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: SupportsCodeSeparation 요소(Visual Studio 템플릿)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b5e03e7ea01b6e6f75c18da44c0233660c17f8e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699505"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741750"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 요소(Visual Studio 템플릿)
 **새 항목 추가** 대화 상자에서 **별도의 파일에 코드 입력** 확인란을 사용할지 여부를 지정 합니다.
@@ -60,7 +61,7 @@ ms.locfileid: "80699505"
 
  코드 분리 또는 코드를 사용 하는 페이지 모델을 사용 하면 태그를 한 파일에 유지 하 고 프로그래밍 코드를 다른 파일에 유지할 수 있습니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 및 기타 .NET 언어는이 모델을 사용 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는 **별도의 파일에 코드 입력** 옵션을 표시 하도록 지정 합니다.
 
 ```
@@ -85,6 +86,6 @@ ms.locfileid: "80699505"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

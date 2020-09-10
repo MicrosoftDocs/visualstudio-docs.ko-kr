@@ -1,5 +1,5 @@
 ---
-title: 웹앱을 Azure Cloud Service에 마이그레이션 및 게시
+title: 클라우드 서비스로 웹 응용 프로그램 마이그레이션 및 게시
 description: Visual Studio를 사용하여 Azure 클라우드 서비스로 웹 애플리케이션을 마이그레이션 및 게시하는 방법에 대해 알아보세요.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c95c96815872c259cab761d8b4af36141f866dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b283e7382fc135e3cd327db0200622de4f5228
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280559"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739983"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>방법: Visual Studio에서 Azure 클라우드 서비스로 웹 응용 프로그램 마이그레이션 및 게시
 

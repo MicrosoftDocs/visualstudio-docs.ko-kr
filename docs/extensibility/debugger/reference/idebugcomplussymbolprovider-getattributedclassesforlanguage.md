@@ -1,5 +1,6 @@
 ---
-title: 'IDebugComPlusSymbolProvider:: GetAttributedClassesForLanguage | Microsoft Docs'
+title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbc8f377683523ecdc99213d67f95f2c9fd7035d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c82357a79a1921986b6d7acc2cb1fcde208d9c0
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733968"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741498"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 지정 된 프로그래밍 언어로 구현 된 지정 된 특성을 사용 하 여 클래스를 검색 합니다.
@@ -186,5 +187,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

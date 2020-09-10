@@ -1,5 +1,6 @@
 ---
-title: EnableEditOfLocationField 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: EnableEditOfLocationField 요소(Visual Studio 템플릿)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9baee9e7497f5b65022b8a0b938f4a8a63140ab2
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712000"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741718"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 요소 (Visual Studio 템플릿)
 사용자가 위치 필드를 편집할 수 있는지 여부를 지정 합니다.
@@ -34,7 +35,7 @@ ms.locfileid: "80712000"
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음
+ None
 
 ### <a name="child-elements"></a>자식 요소
  없음

@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스의 사용자 지정 문서 속성 | Microsoft Docs
+title: 레거시 언어 서비스의 사용자 지정 문서 속성
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708965"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741808"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>레거시 언어 서비스의 사용자 지정 문서 속성
 문서 속성은 속성 창에 표시 될 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Properties** . 프로그래밍 언어에는 일반적으로 개별 소스 파일과 연결 된 속성이 없습니다. 그러나 XML은 인코딩, 스키마 및 스타일 시트에 영향을 주는 문서 속성을 지원 합니다.
@@ -397,5 +397,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)

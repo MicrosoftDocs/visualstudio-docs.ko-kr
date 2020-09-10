@@ -1,5 +1,5 @@
 ---
-title: 엔터티 클래스의 삽입/업데이트/삭제 동작 사용자 지정
+title: 삽입/업데이트/삭제 동작 사용자 지정
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585953"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741823"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작 사용자 지정
 
@@ -189,7 +189,7 @@ LINQ to SQL 클래스로 작업 하 고 Windows Form에 데이터를 표시 하�
 
 3. 세 개의 저장 프로시저를 모두 **O/R 디자이너로**끌어 옵니다.
 
-     이러한 저장 프로시저가 메서드 창에 <xref:System.Data.Linq.DataContext> 메서드로 추가됩니다. 자세한 내용은 [DataContext 메서드 (O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)를 참조 하세요.
+     이러한 저장 프로시저가 메서드 창에 <xref:System.Data.Linq.DataContext> 메서드로 추가됩니다. 자세한 내용은 [DataContext 메서드(O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)를 참조하세요.
 
 4. **O/R 디자이너**에서 **Customer** 엔터티 클래스를 선택 합니다.
 
@@ -269,7 +269,7 @@ LINQ to SQL 클래스로 작업 하 고 Windows Form에 데이터를 표시 하�
 
 - LINQ 쿼리를 추가하여 데이터를 필터링합니다. 자세한 내용은 [LINQ 쿼리 소개 (c #)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 메서드](../data-tools/datacontext-methods-o-r-designer.md)

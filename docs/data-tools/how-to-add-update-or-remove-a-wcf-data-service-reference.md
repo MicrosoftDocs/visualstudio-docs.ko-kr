@@ -1,5 +1,5 @@
 ---
-title: '방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거'
+title: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c09b2d487e58e6da2b4aaf62179784d96bdfe783
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282373"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741379"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
 
@@ -156,6 +156,6 @@ ms.locfileid: "85282373"
     > [!NOTE]
     > 서비스 참조를 참조 하는 모든 코드는 수동으로 제거 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 Windows Communication Foundation Services 및 WCF data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

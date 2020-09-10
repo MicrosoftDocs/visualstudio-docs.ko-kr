@@ -1,5 +1,5 @@
 ---
-title: '연습: 데이터 세트 디자이너를 사용하여 데이터 세트 만들기'
+title: 데이터 세트 디자이너를 사용 하 여 데이터 집합 만들기
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586031"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742929"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>연습: 데이터 세트 디자이너을 사용 하 여 데이터 집합 만들기
 
@@ -108,9 +108,9 @@ ms.locfileid: "75586031"
 
 - <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 데이터 집합에 있는 데이터 테이블의 또는 이벤트에 유효성 검사 논리를 추가 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
-- [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [데이터의 유효성 검사](../data-tools/validate-data-in-datasets.md)

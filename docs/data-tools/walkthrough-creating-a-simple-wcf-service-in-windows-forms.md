@@ -1,5 +1,5 @@
 ---
-title: '연습: Windows Forms에서 간단한 WCF 서비스 만들기'
+title: Windows Forms에서 간단한 WCF 서비스 만들기
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 697e7b36b1b83987450a25e3cf8b717218bff5c9
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586018"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741929"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>연습: Windows Forms에서 간단한 WCF 서비스 만들기
 
@@ -150,6 +150,6 @@ ms.locfileid: "75586018"
 
      ![결과가 표시된 폼](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 서비스 및 WCF Data Services Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

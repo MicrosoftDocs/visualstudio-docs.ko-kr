@@ -1,5 +1,5 @@
 ---
-title: Publish-WebApplicationWebSite(Windows PowerShell 스크립트) | Microsoft Docs
+title: PowerShell 스크립트를 사용 하 여 웹 앱 게시
 description: Azure 웹 사이트에 웹 프로젝트를 게시하는 방법에 대해 알아봅니다. 없는 경우 이 스크립트는 Azure 구독에 필요한 리소스를 만듭니다.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8a6a73f50c331c516f1e433d7d9b1104731380
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911766"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739889"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell 스크립트)
 ## <a name="syntax"></a>구문

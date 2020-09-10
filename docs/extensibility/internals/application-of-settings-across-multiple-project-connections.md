@@ -1,5 +1,5 @@
 ---
-title: 여러 프로젝트 연결에서 설정의 응용 프로그램 | Microsoft Docs
+title: 여러 프로젝트 연결에서 설정 적용
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c88a5140bf72f6801d4c7a92ebd910f410aabfb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710055"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741523"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>여러 프로젝트 연결에서 설정 적용
 소스 제어 플러그 인 API 버전 1.2을 사용 하 여 빌드된 소스 제어 플러그 인은 일괄 처리 작업을 사용 하 여 여러 프로젝트 또는 여러 연결 컨텍스트에서 동일한 원본 제어 작업을 실행할 수 있습니다. 일괄 처리를 사용 하 여 사용자 환경에서 중복 된 프로젝트별 대화 상자를 제거할 수 있습니다.

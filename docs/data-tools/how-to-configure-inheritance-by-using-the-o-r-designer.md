@@ -1,5 +1,5 @@
 ---
-title: '방법: O-R 디자이너를 사용하여 상속 구성'
+title: O-R 디자이너를 사용하여 상속 구성
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31e5e78d5c72167f9d1c1eaab974155a4c369f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282243"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742958"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>방법: O/R 디자이너를 사용하여 상속 구성
 **개체 관계형 디자이너** (**O/R 디자이너**)는 관계형 시스템에서 주로 구현 되는 단일 테이블 상속 개념을 지원 합니다. 단일 테이블 상속에서는 부모 정보와 자식 정보에 대한 필드를 모두 포함하는 데이터베이스 테이블이 하나 있습니다. 관계형 데이터의 경우 판별자 열에는 해당 레코드가 어느 클래스에 속해 있는지를 판별하는 값이 포함됩니다.
@@ -50,7 +50,7 @@ ms.locfileid: "85282243"
 
 10. 선택적으로 **Inheritance Default** 속성을 사용하여 정의된 상속 코드와 일치하지 않는 행을 로드할 때 사용되는 상속 계층 구조에서 형식을 지정할 수 있습니다. 즉, 레코드의 판별자 열에 **파생 클래스 판별자 값** 또는 **기본 클래스 판별자 값** 속성의 값과 일치 하지 않는 값이 있으면 레코드가 **상속 기본값으로**지정 된 형식으로 로드 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기(O-R 디자이너)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

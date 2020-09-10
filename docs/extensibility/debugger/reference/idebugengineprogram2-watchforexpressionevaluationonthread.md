@@ -1,5 +1,6 @@
 ---
-title: 'IDebugEngineProgram2:: WatchForExpressionEvaluationOnThread | Microsoft Docs'
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1328423cd81db6e55964795ef9da23c5bb29811
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730368"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89737007"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 프로그램이 중지 된 경우에도 지정 된 스레드에서 식 계산을 수행 하도록 허용 하거나 허용 하지 않습니다.
@@ -71,7 +72,7 @@ int WatchForExpressionEvaluationOnThread( 
 
  한 프로그램에서 식 계산을 실행 하면 모든 속성의 함수 실행 또는 계산으로 인해 코드가 다른에서 실행 될 수 있습니다 `IDispatch` . 이로 인해이 메서드는이 프로그램에서 스레드가 중지 된 경우에도 식 계산을 실행 하 고 완료할 수 있도록 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

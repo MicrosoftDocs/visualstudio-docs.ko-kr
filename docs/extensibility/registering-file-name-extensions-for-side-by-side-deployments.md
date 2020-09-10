@@ -1,5 +1,5 @@
 ---
-title: Side-by-side 배포에 대 한 파일 이름 확장명 등록 | Microsoft Docs
+title: Side-by-side Ide 용 파일 이름 확장명 등록
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68c343646055e6ce877d7bd15892ab1db0d0cbc5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701550"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741701"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Side-by-side 배포에 대 한 파일 이름 확장명 등록
 Side-by-side 환경에 배포 된 Vspackage의 경우 파일 이름 확장명을 등록 하 여 올바른 버전의에 파일을 연결 해야 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 버전별 파일 이름 확장명을 사용 하지 않는 한 등록을 통해 사용자는 적절 한 버전의에서 프로젝트 및 프로젝트 항목 파일을 열 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

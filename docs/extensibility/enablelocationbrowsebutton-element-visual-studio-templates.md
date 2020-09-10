@@ -1,5 +1,6 @@
 ---
-title: EnableLocationBrowseButton 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: EnableLocationBrowseButton 요소(Visual Studio 템플릿)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711984"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742994"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 요소 (Visual Studio 템플릿)
 사용자가 새 프로젝트가 저장 되는 기본 디렉터리를 쉽게 수정할 수 있도록 **새 프로젝트** 대화 상자에서 **찾아보기** 단추를 사용할 수 있는지 여부를 지정 합니다.
@@ -28,7 +29,7 @@ ms.locfileid: "80711984"
 
 ## <a name="syntax"></a>구문
 
-```
+```xml
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>
 ```
 
@@ -60,7 +61,7 @@ ms.locfileid: "80711984"
 ## <a name="example"></a>예
  다음 예제에서는 Windows 응용 프로그램에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
