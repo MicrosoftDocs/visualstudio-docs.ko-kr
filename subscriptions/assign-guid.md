@@ -7,10 +7,10 @@ ms.date: 04/20/2020
 ms.topic: conceptual
 description: 관리자가 구독자에 대해 특정 구독 GUID를 지정할 수 있는 방법 알아보기
 ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235188"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 특정 구독 할당

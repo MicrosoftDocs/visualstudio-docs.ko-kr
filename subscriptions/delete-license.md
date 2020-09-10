@@ -8,10 +8,10 @@ ms.date: 06/16/2020
 ms.topic: how-to
 description: 관리자가 구독 할당을 삭제하는 방법에 대해 알아봅니다.
 ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87434272"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 할당 삭제

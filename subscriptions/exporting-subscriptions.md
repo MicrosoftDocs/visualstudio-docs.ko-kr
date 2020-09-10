@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: 구독자 목록과 해당 구독 할당의 세부 정보를 내보내는 방법을 알아봅니다.
 ms.openlocfilehash: ff0941dc25d16ad520b20613c2d4136c3c63c937
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453569"
 ---
 # <a name="export-subscription-information"></a>구독 정보 내보내기
