@@ -1,5 +1,5 @@
 ---
-title: 검색 식의 논리/고급 연산자(도움말 뷰어)
+title: 검색 식의 논리 연산자 (도움말 뷰어)
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d17d40a34835c1c8f99f4ad446de747771fa4a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824905"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741656"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>검색 식의 논리 및 고급 연산자
 
@@ -66,7 +66,7 @@ ms.locfileid: "67824905"
 > [!NOTE]
 > `code:` 연산자는 일반적으로 코드로 표시되는 콘텐츠와는 반대로, 프로그래밍 언어 레이블로 표시되는 콘텐츠만 찾습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: 항목 검색](../help-viewer/find-topics.md)
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)
