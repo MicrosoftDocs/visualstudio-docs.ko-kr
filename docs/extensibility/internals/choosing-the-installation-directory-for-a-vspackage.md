@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709756"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011907"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage 설치 디렉터리 선택
 VSPackage와 해당 지원 파일은 사용자의 파일 시스템에 있어야 합니다. 위치는 VSPackage 관리 되는지, 관리 되지 않는지, 병렬 버전 관리 체계 및 사용자 선택에 따라 달라 집니다.
@@ -59,7 +59,7 @@ VSPackage와 해당 지원 파일은 사용자의 파일 시스템에 있어야 
 
 VSPackage DLL이 리소스를 포함 하 고 **SatelliteDll\DllName** 레지스트리 항목이이를 가리키는 경우는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 위의 순서로 로드 하려고 시도 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)
-- [패키지 등록 관리](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [패키지 등록 관리](/previous-versions/bb166783(v=vs.100))

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f65973f0f3edc1dd6264c32d165503dca78681
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706533"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012414"
 ---
 # <a name="project-model-core-components"></a>프로젝트 모델 핵심 구성 요소
 다음 표에서는 프로젝트 모델을 확장 합니다. 테이블에는 모델에서 식별 된 인터페이스 및 서비스에 대 한 간략 한 설명과 특정 개체와 관련 된 인터페이스 및 서비스가 있습니다. 또한 표에는 특정 프로젝트 형식에 대 한 요구 사항에 따라 프로젝트 생성 및 유지 관리에서 선택적으로 사용할 수 있는 다른 인터페이스가 자세히 나와 있습니다.
@@ -25,19 +25,19 @@ ms.locfileid: "80706533"
 
 ### <a name="package-object"></a>Package 개체
 
-|인터페이스|주석|
+|인터페이스|의견|
 |---------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>|IDE에서 VSPackage를 초기화 하 고 IDE에서 해당 서비스를 사용할 수 있도록 합니다.|
 
 ### <a name="project-factory-object"></a>프로젝트 팩터리 개체
 
-|인터페이스|주석|
+|인터페이스|의견|
 |---------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|새 프로젝트 만들기 및 기존 프로젝트 열기를 관리 합니다.|
 
 ### <a name="project-objects"></a>Project 개체
 
-|인터페이스|주석|
+|인터페이스|의견|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|프로젝트 항목의 추가 및 제거를 관리 하 고, 편집기를 열고, 각 문서 모니커와 간의 매핑을 유지 관리 합니다 `VSITEMID` . 는 및에서 상속 `IVsProject` `IVsProject2` 됩니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|탐색 및 표시 속성을 관리 하 고 이벤트를 제공 합니다.|
@@ -57,7 +57,7 @@ ms.locfileid: "80706533"
 
 ### <a name="configuration-object"></a>구성 개체
 
-|인터페이스|주석|
+|인터페이스|의견|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|구성에 대 한 정보를 제공 합니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|프로젝트에서 구성 정보를 관리할 수 있도록 합니다.|
@@ -66,22 +66,22 @@ ms.locfileid: "80706533"
 
 ### <a name="configuration-builder-object"></a>구성 작성기 개체
 
-|인터페이스|주석|
+|인터페이스|의견|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|프로젝트 구성의 빌드 작업을 관리 합니다.|
 
 ### <a name="additional-project-objects"></a>추가 프로젝트 개체
 
-|인터페이스|주석|
+|인터페이스|의견|
 |----------------|--------------|
 |`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|**속성** 창에 항목 속성을 표시 합니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|배포에 대 한 출력을 표시 합니다.|
 
  다음 표에서는 프로젝트 모델에서 식별 된 서비스에 대 한 간략 한 설명을 제공 합니다.
 
-### <a name="services"></a>Services
+### <a name="services"></a>서비스
 
-|서비스|주석|
+|서비스|의견|
 |-------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|Vspackage에서 프로젝트 형식을 구현 하 여 IDE에 프로젝트 팩터리가 존재 함을 등록 하는 데 사용 됩니다. VSPackage `QueryService` 는이 서비스에 대해를 호출 하 고 `IVsPackage::SetSite` 메서드를 호출할 때 해당 프로젝트 팩터리를 등록 해야 합니다. 메서드를 `SetSite` 호출 하지 않으면 프로젝트가 인스턴스화되지 않습니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|프로젝트를 열거 하 고, 새 프로젝트를 만들고, 프로젝트 변경 내용을 확인 하는 등 현재 솔루션에 대 한 IDE의 내부 기본 제공 개념에 대 한 액세스를 제공 합니다.|
@@ -99,9 +99,9 @@ ms.locfileid: "80706533"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|자동화 모델을 구현 하는 데 사용 됩니다. 프로젝트 모델에서이 개체의 인스턴스를 만들 수 있는 속성 개체를 반환 합니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|계층의 프로젝트 개체에 대해 클립보드 이벤트를 구현 하는 데 사용 됩니다. `SVsUIHierWinClipboardHelper` 잘라내기, 복사 및 붙여넣기 작업을 올바르게 처리할 수 있습니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [빌드에 없음: HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 구현 (c + +)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [빌드에 없음: HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 구현 (c + +)](/previous-versions/bb166212(v=vs.100))
 - [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [프로젝트 모델의 요소](../../extensibility/internals/elements-of-a-project-model.md)

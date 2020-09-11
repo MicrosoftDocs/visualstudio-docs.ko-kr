@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536333"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011959"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook에는 visual studio 2015에 도입 된 Visual Studio 이미지 서비스 및 이미지 카탈로그를 채택 하는 방법에 대 한 지침과 모범 사례가 포함 되어 있습니다.
@@ -118,7 +118,7 @@ ms.locfileid: "85536333"
 
  일부 기호는 모든 매니페스트에 대해 미리 정의 됩니다. 이러한 속성은 또는 요소의 Uri 특성에 사용 \<Source> 하 여 \<Import> 로컬 컴퓨터에서 경로를 참조할 수 있습니다.
 
-|**기호**|**설명**|
+|**Symbol**|**설명**|
 |-|-|
 |CommonProgramFiles|% CommonProgramFiles% 환경 변수의 값입니다.|
 |LocalAppData|% LocalAppData% 환경 변수의 값입니다.|
@@ -164,7 +164,7 @@ ms.locfileid: "85536333"
 
 요소에는 \<Source> 다음과 같은 선택적 하위 요소 중 하나만 있을 수 있습니다.
 
-|**Element**|**특성 (모두 필수)**|**정의**|
+|**요소**|**특성 (모두 필수)**|**정의**|
 |-|-|-|
 |\<Size>|값|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
 |\<SizeRange>|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
@@ -179,7 +179,7 @@ ms.locfileid: "85536333"
 
 |**Attribute**|**정의**|
 |-|-|
-|형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
+|유형|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
 
  **ImageList**
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 업데이트 된 매핑을 통해 모니커를 요청 하는 이미지 서비스를 사용 하도록 코드를 업데이트 합니다. (이는 관리 코드에 대 한 **CrispImages** 업데이트 하거나, 이미지 서비스에서 Hbitmaps hbitmaps 요청 하 고 네이티브 코드를 위해이를 전달 하는 것을 의미할 수 있습니다.)
 
 ## <a name="testing-your-images"></a>이미지 테스트
- 이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](visual-studio-sdk.md)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015)에서 찾을 수 있습니다.
+ 이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](visual-studio-sdk.md)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](./internals/vssdk-utilities.md?view=vs-2015)에서 찾을 수 있습니다.
 
 ## <a name="additional-resources"></a>추가 자료
 

@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c21d552e26add3a5159febd666c1f60573697535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704895"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012024"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
 **Properties** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)의 속성 창에는 프로젝트 및 구성 속성이 표시 될 수 있습니다. 사용자가 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.
 
- **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성** 을 클릭 하 여 프로젝트 및 구성 속성이 포함 된 대화 상자를 열 수 있습니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 이러한 언어에서 파생 된 및 및 프로젝트 형식에서이 대화 상자는 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md)에 탭 페이지로 표시 됩니다. 자세한 내용은 [빌드에 없음: 연습: 프로젝트 및 구성 속성 노출 (c #)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)을 참조 하세요.
+ **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성** 을 클릭 하 여 프로젝트 및 구성 속성이 포함 된 대화 상자를 열 수 있습니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 이러한 언어에서 파생 된 및 및 프로젝트 형식에서이 대화 상자는 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md)에 탭 페이지로 표시 됩니다. 자세한 내용은 [빌드에 없음: 연습: 프로젝트 및 구성 속성 노출 (c #)](/previous-versions/bb166517(v=vs.100))을 참조 하세요.
 
  프로젝트에 대 한 관리 패키지 프레임 워크 (MPFProj)는 새 프로젝트 시스템을 만들고 관리 하기 위한 도우미 클래스를 제공 합니다. [프로젝트에 대 한 MPF](https://github.com/tunnelvisionlabs/MPFProj10)에서 소스 코드 및 컴파일 지침-Visual Studio 2013를 찾을 수 있습니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "80704895"
 
  구성 `MyConfigProp` 속성은 구성 속성 페이지의 **내 구성** 속성으로 **내 범주**범주에 표시 됩니다. 이 옵션을 선택 하면 설명 패널에 설명, **내 설명이**표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [속성 페이지 추가 및 제거](../../extensibility/adding-and-removing-property-pages.md)
 - [프로젝트](../../extensibility/internals/projects.md)
 - [템플릿 디렉터리 설명(.Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

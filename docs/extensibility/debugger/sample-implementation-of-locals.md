@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b70e0f9091d40ed6b5fc44934606f42ccd84b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713081"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011894"
 ---
 # <a name="sample-implementation-of-locals"></a>로컬의 샘플 구현
 > [!IMPORTANT]
@@ -58,7 +58,7 @@ ms.locfileid: "80713081"
 ## <a name="related-sections"></a>관련 단원
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md) DE가 식 계산기 (EE)를 호출할 때 전달 되는 인수를 제공 합니다.
 
- [MyCEE 샘플](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f) MyC 언어에 대 한 식 계산기를 만드는 한 가지 구현 방법을 보여 줍니다.
+ [MyCEE 샘플](/previous-versions/) MyC 언어에 대 한 식 계산기를 만드는 한 가지 구현 방법을 보여 줍니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)

@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739977"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011790"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 확장성의 변경 내용
 
@@ -70,7 +70,7 @@ Visual studio 프로세스 내에서 실행 되는 코드는 Visual Studio 설�
   * GAC의 복사본이 설치 프로그램에서 제거 되었습니다.
   * *.Pkgdef* 파일이 추가 되어 어셈블리에 대 한 코드 베이스 항목을 지정 했습니다.
 
-    예:
+    예를 들면 다음과 같습니다.
 
     ```
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
@@ -97,7 +97,7 @@ Visual studio 프로세스 내에서 실행 되는 코드는 Visual Studio 설�
 
 ### <a name="global-com-registration"></a>전역 COM 등록
 
-* 이전에는 Visual Studio가 네이티브 COM 등록을 지원 하기 위해 HKEY_CLASSES_ROOT 및 HKEY_LOCAL_MACHINE hive에 많은 레지스트리 키를 설치 했습니다. 이러한 영향을 제거 하기 위해 Visual Studio에서는 이제 [COM 구성 요소에 대해 등록이 필요 없는 활성화](https://msdn.microsoft.com/library/ms973913.aspx)를 사용 합니다.
+* 이전에는 Visual Studio가 네이티브 COM 등록을 지원 하기 위해 HKEY_CLASSES_ROOT 및 HKEY_LOCAL_MACHINE hive에 많은 레지스트리 키를 설치 했습니다. 이러한 영향을 제거 하기 위해 Visual Studio에서는 이제 [COM 구성 요소에 대해 등록이 필요 없는 활성화](/previous-versions/dotnet/articles/ms973913(v=msdn.10))를 사용 합니다.
 * 결과적 으로% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv 아래의 대부분의 TLB/DTE.OLB/DLL 파일은 Visual Studio에 의해 더 이상 기본적으로 설치 되지 않습니다. 이제 이러한 파일은 Visual Studio 호스트 프로세스에서 사용 하는 해당 등록이 필요 없는 COM 매니페스트가 있는 [INSTALLDIR] 아래에 설치 됩니다.
 * 결과적으로, Visual Studio COM 인터페이스에 대 한 전역 COM 등록을 사용 하는 외부 코드는 이러한 등록을 더 이상 찾을 수 없습니다. Visual Studio 프로세스 내에서 실행 되는 코드에는 차이점이 표시 되지 않습니다.
 

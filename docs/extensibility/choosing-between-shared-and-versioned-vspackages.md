@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739880"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011933"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>공유 및 버전 관리 Vspackage 중에서 선택
 서로 다른 버전의 Visual Studio가 동일한 컴퓨터에 공존할 수 있습니다. Vspackage는 모든 혼합 버전을 지원할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -35,7 +35,7 @@ ms.locfileid: "80739880"
 
   - VSPackage를 프로그래밍 하 여 실행 중인의 버전에 맞게 조정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 합니다. 그런 다음 새 서비스에 대 한 쿼리가 실패 하면 VSPackage는 이전 버전의에서 지원 되는 다른 서비스를 제공할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- VSPackage를 적절 하 게 등록 합니다. 자세한 내용은 [VSPackage 등록](../extensibility/internals/vspackage-registration.md) 및 [관리 되는 VSPackage 등록](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)을 참조 하세요.
+- VSPackage를 적절 하 게 등록 합니다. 자세한 내용은 [VSPackage 등록](../extensibility/internals/vspackage-registration.md) 및 [관리 되는 VSPackage 등록](/previous-versions/bb166783(v=vs.100))을 참조 하세요.
 
 - 파일 확장명을 적절 하 게 등록 합니다. 자세한 내용은 side-by-side [배포를 위한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)을 참조 하세요.
 
@@ -61,6 +61,6 @@ ms.locfileid: "80739880"
 
   VSPackage 이진 파일에 대 한 이진 호환성 계획 외에도 솔루션 및 프로젝트 파일 형식을 고려해 야 합니다. VSPackage에서 새 프로젝트 형식을 만드는 경우 한 버전 또는 여러 버전의에서 실행할 수 있는지 여부를 결정 해야 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 자세한 내용은 [사용자 지정 프로젝트 업그레이드](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Windows Installer를 사용 하 여 Vspackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [구성 요소 관리](../extensibility/internals/component-management.md)

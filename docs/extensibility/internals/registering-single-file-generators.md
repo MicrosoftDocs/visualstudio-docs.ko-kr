@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705806"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012037"
 ---
 # <a name="registering-single-file-generators"></a>단일 파일 생성기 등록
 에서 사용자 지정 도구를 사용할 수 있도록 하려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 등록 해야 합니다. 이렇게 하면 해당 도구를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인스턴스화하고 특정 프로젝트 형식에 연결할 수 있습니다.
@@ -44,11 +44,11 @@ ms.locfileid: "80705806"
 
    - CLSID
 
-        필수 요소. 을 구현 하는 COM 구성 요소의 클래스 라이브러리 식별자를 지정 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
+        필수 사항입니다. 을 구현 하는 COM 구성 요소의 클래스 라이브러리 식별자를 지정 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
 
    - GeneratesDesignTimeSource
 
-        필수 요소. 이 사용자 지정 도구에서 생성 한 파일의 형식을 비주얼 디자이너에서 사용할 수 있는지 여부를 나타냅니다. 비주얼 디자이너에서 사용할 수 없는 형식에 대해이 매개 변수의 값이 0 (0) 이거나 비주얼 디자이너에서 사용할 수 있는 형식에 대해 1 (1) 이어야 합니다.
+        필수 사항입니다. 이 사용자 지정 도구에서 생성 한 파일의 형식을 비주얼 디자이너에서 사용할 수 있는지 여부를 나타냅니다. 비주얼 디자이너에서 사용할 수 없는 형식에 대해이 매개 변수의 값이 0 (0) 이거나 비주얼 디자이너에서 사용할 수 있는 형식에 대해 1 (1) 이어야 합니다.
 
    > [!NOTE]
    > 사용자 지정 도구를 사용할 수 있도록 하려는 각 언어에 대해 사용자 지정 도구를 별도로 등록 해야 합니다.
@@ -67,8 +67,8 @@ ms.locfileid: "80705806"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [단일 파일 생성기 구현](../../extensibility/internals/implementing-single-file-generators.md)
 - [비주얼 디자이너에 형식 노출](../../extensibility/internals/exposing-types-to-visual-designers.md)
-- [BuildManager 개체 소개](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [BuildManager 개체 소개](/previous-versions/8f9kffa8(v=vs.140))

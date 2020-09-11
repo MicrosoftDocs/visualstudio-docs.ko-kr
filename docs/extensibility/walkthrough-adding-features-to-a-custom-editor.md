@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905950"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012089"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 기능 추가
 사용자 지정 편집기를 만든 후 추가 기능을 추가할 수 있습니다.
@@ -34,11 +34,11 @@ ms.locfileid: "85905950"
 
 3. 인터페이스를 설정 하 여 편집기 팩터리를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 합니다.
 
-     자세한 내용은 [편집기 팩터리](/visualstudio/extensibility/editor-factories?view=vs-2015)를 참조 하세요.
+     자세한 내용은 [편집기 팩터리](../vs-2015/extensibility/editor-factories.md?view=vs-2015)를 참조 하세요.
 
 4. 편집기에서 내부 활성화 또는 간단한 포함을 사용 하 여 문서 뷰 개체 창을 관리할 지 여부를 결정 합니다.
 
-     간단한 포함 편집기 창에서는 표준 문서 뷰를 호스팅하고, 내부 활성화 편집기 창에서는 ActiveX 컨트롤이 나 기타 활성 개체를 문서 뷰로 호스팅합니다. 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md) 및 [내부 활성화](/visualstudio/misc/in-place-activation?view=vs-2015)를 참조 하세요.
+     간단한 포함 편집기 창에서는 표준 문서 뷰를 호스팅하고, 내부 활성화 편집기 창에서는 ActiveX 컨트롤이 나 기타 활성 개체를 문서 뷰로 호스팅합니다. 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md) 및 [내부 활성화](../vs-2015/misc/in-place-activation.md?view=vs-2015)를 참조 하세요.
 
 5. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>명령을 처리 하는 인터페이스를 구현 합니다.
 
@@ -115,7 +115,7 @@ ms.locfileid: "85905950"
 
 12. 상황에 맞는 도움말 지원을 구현 합니다.
 
-     이 단계에서는 편집기의 항목에 대 한 F1 도움말 및 동적 도움말 창 지원을 제공할 수 있습니다. 자세한 내용은 [방법: 편집기에 대 한 컨텍스트 제공](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015)을 참조 하세요.
+     이 단계에서는 편집기의 항목에 대 한 F1 도움말 및 동적 도움말 창 지원을 제공할 수 있습니다. 자세한 내용은 [방법: 편집기에 대 한 컨텍스트 제공](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015)을 참조 하세요.
 
 13. 인터페이스를 구현 하 여 편집기에서 자동화 개체 모델을 노출 `IDispatch` 합니다.
 
@@ -152,6 +152,6 @@ ms.locfileid: "85905950"
 
   - `Window.Object`
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [자동화 모델에 기여](../extensibility/internals/contributing-to-the-automation-model.md)

@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d7bd789a41f7a5e801552ca07f9f228921867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704226"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012492"
 ---
 # <a name="using-the-automation-model"></a>자동화 모델 사용
 VSPackage를 automation에 연결한 후에는 <xref:EnvDTE.DTEClass.GetObject%2A> 개체에 대해 메서드를 호출 하 여 <xref:EnvDTE._DTE> 검색할 개체를 나타내는 문자열을 전달 하 여 속성 및 메서드를 가져올 수 있습니다.
 
 ## <a name="obtaining-project-objects"></a>프로젝트 개체 가져오기
- 다음은 자동화 소비자가 프로젝트 자동화 개체를 가져오는 방법을 보여 주는 두 가지 코드 예제입니다. DTE 개체를 가져오는 방법에 대 한 자세한 내용은 [방법: dte 및 DTE2 개체에 대 한 참조 가져오기](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)를 참조 하세요.
+ 다음은 자동화 소비자가 프로젝트 자동화 개체를 가져오는 방법을 보여 주는 두 가지 코드 예제입니다. DTE 개체를 가져오는 방법에 대 한 자세한 내용은 [방법: dte 및 DTE2 개체에 대 한 참조 가져오기](/previous-versions/68shb4dw(v=vs.140))를 참조 하세요.
 
 ```vb
 Sub DoAutomation()

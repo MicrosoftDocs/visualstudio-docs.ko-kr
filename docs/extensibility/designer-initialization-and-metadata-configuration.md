@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712220"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011711"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>디자이너 초기화 및 메타 데이터 구성
 
@@ -97,9 +97,9 @@ VSPackage는 디자인 타임이 아닌 디자이너 또는 디자이너 구성 
 > [!NOTE]
 > 디자인 화면은 구성 요소 만들기만 지원 하므로 구성 요소에는 로컬 메타 데이터만 포함 될 수 있습니다. 위의 예제에서 개체의 속성과 같은 속성을 수정 하려고 했습니다 `Color` . `false`가 전역 플래그에 대해 전달 된 경우 `CustomBrowser` 디자이너에서 실제로의 인스턴스를 만들지 않으므로는 표시 되지 않습니다 `Color` . 전역 플래그를로 설정 하는 `false` 것은 컨트롤, 타이머 및 대화 상자와 같은 구성 요소에 유용 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [디자인 타임 지원 확장](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [디자인 타임 지원 확장](/previous-versions/37899azc(v=vs.140))

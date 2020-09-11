@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705856"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012050"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Interop 어셈블리 명령 처리기를 등록
 VSPackage는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)가 해당 명령을 제대로 라우팅하도록에 등록 해야 합니다.
@@ -25,7 +25,7 @@ VSPackage는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (�
 
  MPF (관리 되는 패키지 프레임 워크)는 클래스를 통해이 기능을 제공 합니다 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> .
 
-- [명령 테이블 형식 참조](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) 리소스는 관리 되지 않는 위성 UI dll에 있습니다.
+- [명령 테이블 형식 참조](/previous-versions/bb164647(v=vs.100)) 리소스는 관리 되지 않는 위성 UI dll에 있습니다.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage의 명령 처리기 등록
  UI (사용자 인터페이스) 기반 명령의 처리기 역할을 하는 VSPackage에는 VSPackage 뒤에 이름이 지정 된 레지스트리 항목이 필요 합니다 `GUID` . 이 레지스트리 항목은 VSPackage UI 리소스 파일의 위치와 해당 파일 내의 메뉴 리소스를 지정 합니다. 레지스트리 항목 자체는 HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \menus에 있습니다 *\<Version>* . 여기서은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 9.0입니다.
@@ -50,7 +50,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 
  다음 표에서는의 필드에 대해 설명 합니다 \<*Resource Information*> .
 
-| 요소 | 설명 |
+| 요소 | Description |
 |---------------------------| - |
 | \<*Path to Resource DLL*> | 이는 메뉴 리소스를 포함 하는 리소스 DLL의 전체 경로 이거나 비어 있습니다 .이 경로는 VSPackage의 리소스 DLL이 사용 됨을 나타냅니다 (VSPackage 자체가 등록 된 패키지 하위 키에 지정 된 대로).<br /><br /> 이 필드는 비워 둘 수 있습니다. |
 | \<*Menu Resource ID*> | `CTMENU`VSPackage에 대 한 모든 UI 요소를 포함 하는 리소스의 리소스 ID입니다 [.](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) |
@@ -66,6 +66,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Interop 어셈블리를 사용하는 명령 및 메뉴](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

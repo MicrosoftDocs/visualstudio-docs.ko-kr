@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744942"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012310"
 ---
 # <a name="manage-universal-windows-projects"></a>유니버설 Windows 프로젝트 관리
 
-유니버설 Windows 앱은 Windows 8.1 및 Windows Phone 8.1를 모두 대상으로 하는 앱으로, 개발자가 두 플랫폼에서 코드와 기타 자산을 사용할 수 있도록 합니다. 공유 코드와 리소스는 공유 프로젝트에 유지 되는 반면 플랫폼별 코드와 리소스는 서로 다른 프로젝트에 유지 되 고, 다른 하나는 Windows 용으로 유지 되 고 다른 하나는 Windows Phone 합니다. 유니버설 Windows 앱에 대 한 자세한 내용은 [유니버설 windows 앱](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)을 참조 하세요. 프로젝트를 관리 하는 Visual Studio 확장은 유니버설 Windows 앱 프로젝트에 단일 플랫폼 앱과 다른 구조가 있음을 인식 해야 합니다. 이 연습에서는 공유 프로젝트를 탐색 하 고 공유 항목을 관리 하는 방법을 보여 줍니다.
+유니버설 Windows 앱은 Windows 8.1 및 Windows Phone 8.1를 모두 대상으로 하는 앱으로, 개발자가 두 플랫폼에서 코드와 기타 자산을 사용할 수 있도록 합니다. 공유 코드와 리소스는 공유 프로젝트에 유지 되는 반면 플랫폼별 코드와 리소스는 서로 다른 프로젝트에 유지 되 고, 다른 하나는 Windows 용으로 유지 되 고 다른 하나는 Windows Phone 합니다. 유니버설 Windows 앱에 대 한 자세한 내용은 [유니버설 windows 앱](/windows/uwp/get-started/create-uwp-apps)을 참조 하세요. 프로젝트를 관리 하는 Visual Studio 확장은 유니버설 Windows 앱 프로젝트에 단일 플랫폼 앱과 다른 구조가 있음을 인식 해야 합니다. 이 연습에서는 공유 프로젝트를 탐색 하 고 공유 항목을 관리 하는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 

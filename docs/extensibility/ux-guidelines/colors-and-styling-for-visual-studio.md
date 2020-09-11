@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699860"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012102"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
@@ -283,7 +283,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 
 ### <a name="system-color-set"></a>시스템 색 집합
 
-[WPF 팀 블로그: SystemColors 참조](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) 의 표는 시스템 색 이름의 전체 집합과 각 테마에 표시 되는 해당 색상을 나타냅니다.
+[WPF 팀 블로그: SystemColors 참조](/archive/blogs/wpf/systemcolors-reference) 의 표는 시스템 색 이름의 전체 집합과 각 테마에 표시 되는 해당 색상을 나타냅니다.
 
 이 제한 된 색 집합을 UI에 적용할 때 *"일반" 테마에 표시 되는 미묘한 세부 정보는 손실 될 것으로 예상 됩니다*. 다음은 도구 창 내에서 영역을 구분 하는 데 사용 되는 연한 회색 색이 있는 UI의 예입니다. 고대비 모드에 표시 된 것과 같은 창에 연결 되어 있는 경우 모든 배경이 동일한 지 확인 하 고 해당 영역의 테두리는 border로만 표시 됩니다.
 
@@ -311,7 +311,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 | --- | --- |
 | ActiveCaption | -활성 IDE 및 rafted 창의 단추 문자 모양 가리키기 및 누르기<br />-IDE 및 rafted 창의 제목 표시줄 배경<br />-기본 상태 표시줄 배경 |
 | ActiveCaptionText | -제목 표시줄 전경 (텍스트 및 문자 모양)의 활성 IDE 및 rafted 창<br />-마우스로 가리키면 활성 창 단추의 배경색과 테두리 |
-| 컨트롤 | -콤보 상자, 드롭다운 목록, 검색 컨트롤의 기본 및 비활성화 된 배경 (드롭다운 단추 포함)<br />-도킹 대상 단추 배경<br />-명령 모음 배경<br />-도구 창 배경 |
+| 제어 | -콤보 상자, 드롭다운 목록, 검색 컨트롤의 기본 및 비활성화 된 배경 (드롭다운 단추 포함)<br />-도킹 대상 단추 배경<br />-명령 모음 배경<br />-도구 창 배경 |
 | ControlDark | -IDE 배경<br />-메뉴 및 명령 모음 구분 기호<br />-명령 모음 테두리<br />-메뉴 그림자<br />-도구 창 탭 기본 및 가리키기 테두리 및 구분 기호<br />-문서 웰 오버플로 단추 배경<br />-도킹 대상 문자 모양 테두리 |
 | ControlDarkDark |-포커스가 없는, 선택한 문서 탭 창 |
 | ControlLight |-자동 숨기기 탭 테두리<br />-콤보 상자 및 드롭다운 목록 테두리<br />-도킹 대상 배경 및 테두리 |
@@ -340,7 +340,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 
 VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 표시 항목을 통해 글꼴 및 색을 제어할 수 있습니다. 이 메커니즘을 사용 하는 경우 Vspackage는 [Ivsfontandcolordefaultsprovider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) 인터페이스 및 관련 된 인터페이스를 구현 해야 합니다.
 
-원칙적으로이 메커니즘을 사용 하 여 기존의 모든 표시 항목과 해당 항목을 포함 하는 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 표시 항목을 수정 하는 데 사용 하면 안 됩니다. 텍스트 편집기 범주에 대 한 자세한 내용은 [글꼴 및 색 개요](/visualstudio/extensibility/font-and-color-overview?view=vs-2015)를 참조 하세요.
+원칙적으로이 메커니즘을 사용 하 여 기존의 모든 표시 항목과 해당 항목을 포함 하는 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 표시 항목을 수정 하는 데 사용 하면 안 됩니다. 텍스트 편집기 범주에 대 한 자세한 내용은 [글꼴 및 색 개요](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015)를 참조 하세요.
 
 사용자 지정 범주 또는 표시 항목을 구현 하려면 VSPackage가 다음을 수행 해야 합니다.
 
@@ -358,7 +358,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| Name | 형식 | 데이터 | Description |
+| Name | 유형 | 데이터 | Description |
 | --- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
@@ -371,7 +371,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| Name | 형식 | 데이터 | Description |
+| Name | 유형 | 데이터 | Description |
 |--- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
@@ -423,7 +423,7 @@ VSPackage에 표시 되는 텍스트의 색 지정을 제대로 지원 하려면
 
   **OR**
 
-- **변경 내용에 대 한 IDE를 폴링합니다**. 시스템 구현 [Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스를 통해이 작업을 수행할 수 있습니다. 주로 지 속성 지원을 위해 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 메서드는 표시 항목의 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서 [저장 된 글꼴 및 색 설정 액세스](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015)를 참조 하세요.
+- **변경 내용에 대 한 IDE를 폴링합니다**. 시스템 구현 [Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스를 통해이 작업을 수행할 수 있습니다. 주로 지 속성 지원을 위해 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 메서드는 표시 항목의 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서 [저장 된 글꼴 및 색 설정 액세스](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015)를 참조 하세요.
 
 > [!NOTE]
 > 폴링 결과가 올바른지 확인 하려면 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) 인터페이스를 사용 하 여 [Ivsivandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스의 검색 메서드를 호출 하기 전에 캐시 플러시 및 업데이트가 필요한 지 확인 합니다.

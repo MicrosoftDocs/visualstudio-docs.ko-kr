@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9372762f713b6a5ec78a92eeb96e8a616101b5bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183394"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011920"
 ---
 # <a name="checklist-create-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 새 프로젝트 형식을 만들려면 몇 가지 작업을 완료 해야 합니다. 다음 검사 목록에서는 이러한 작업에 대 한 지침을 제공 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "84183394"
 
     - 프로젝트 팩터리-새 프로젝트 만들기 및 기존 프로젝트 열기를 관리 합니다. 자세한 내용은 [프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)를 참조 하세요.
 
-    - 프로젝트 계층 구조 및 명령 처리. 자세한 내용은 [HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 구현 (c + +)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), 프로젝트 [모델 요소](../../extensibility/internals/elements-of-a-project-model.md), [프로젝트 모델 핵심 구성 요소](../../extensibility/internals/project-model-core-components.md)및 [menucommands와 OleMenuCommands 비교](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015)를 참조 하세요.
+    - 프로젝트 계층 구조 및 명령 처리. 자세한 내용은 [HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 구현 (c + +)](/previous-versions/bb166212(v=vs.100)), 프로젝트 [모델 요소](../../extensibility/internals/elements-of-a-project-model.md), [프로젝트 모델 핵심 구성 요소](../../extensibility/internals/project-model-core-components.md)및 [menucommands와 OleMenuCommands 비교](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)를 참조 하세요.
 
     - 프로젝트 항목 관리 ( **새 프로젝트** 대화 상자에 프로젝트 추가 포함) 자세한 내용은 [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md) 및 [프로젝트 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)을 참조 하세요.
 
@@ -57,7 +57,7 @@ ms.locfileid: "84183394"
 
 8. Vspackage를 설치 하기 위한 Microsoft Installer (*.msi*) 파일을 만듭니다. 자세한 내용은 [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [프로젝트 형식 등록](../../extensibility/internals/registering-a-project-type.md)및 [vspackage](../../extensibility/internals/vspackages.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [프로젝트 형식을 만들어야 하는 경우](../../extensibility/internals/when-to-create-project-types.md)
 - [프로젝트 형식 만들기](../../extensibility/internals/creating-project-types.md)

@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713218"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011842"
 ---
 # <a name="register-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 등록
 디버그 엔진은 visual Studio 레지스트리 하위 키를 통해 Visual Studio에 등록 하는 것은 물론 COM 규칙에 따라 자신을 클래스 팩터리로 등록 해야 합니다.
 
 > [!NOTE]
-> 디버깅 엔진을 등록 하는 방법에 대 한 예제는 [자습서: ATL COM을 사용 하 여 디버그 엔진 빌드](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)의 일부로 빌드된 textinterpreter 샘플에서 찾을 수 있습니다.
+> 디버깅 엔진을 등록 하는 방법에 대 한 예제는 [자습서: ATL COM을 사용 하 여 디버그 엔진 빌드](/previous-versions/bb147024(v=vs.90))의 일부로 빌드된 textinterpreter 샘플에서 찾을 수 있습니다.
 
 ## <a name="dll-server-process"></a>DLL 서버 프로세스
  디버그 엔진은 일반적으로 자체 DLL에 COM 서버로 설정 됩니다. 따라서 디버그 엔진은 Visual Studio에서이 클래스에 액세스할 수 있으려면 해당 클래스 팩터리의 CLSID를 COM에 등록 해야 합니다. 그런 다음 디버그 엔진은 디버그 엔진이 지 원하는 속성 (즉, 메트릭이 라고도 함)을 설정 하기 위해 Visual Studio에 자신을 등록 해야 합니다. Visual Studio 레지스트리 하위 키에 작성 된 메트릭의 선택은 디버그 엔진이 지 원하는 기능에 따라 달라 집니다.
@@ -48,7 +48,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [자습서: ATL COM을 사용 하 여 디버그 엔진 빌드](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [자습서: ATL COM을 사용 하 여 디버그 엔진 빌드](/previous-versions/bb147024(v=vs.90))

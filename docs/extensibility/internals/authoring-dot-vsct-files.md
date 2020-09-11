@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173605"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012154"
 ---
 # <a name="author-vsct-files"></a>. Vsct 파일 작성
 이 문서에서는 Visual Studio IDE (통합 개발 환경)에 메뉴 항목, 도구 모음 및 기타 UI (사용자 인터페이스) 요소를 추가 하기 위해 *vsct* 파일을 작성 하는 방법을 보여 줍니다. VSPackage (Visual Studio 패키지)에 이미 *. vsct* 파일이 없는 UI 요소를 추가할 때 이러한 단계를 사용 합니다.
@@ -108,7 +108,7 @@ ms.locfileid: "84173605"
        > [!NOTE]
        > 도구 모음 단추에는 아이콘이 있어야 합니다.
 
-   자세한 내용은 [Menucommands 및 OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015)를 참조 하세요.
+   자세한 내용은 [Menucommands 및 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)를 참조 하세요.
 
 4. 명령에 아이콘이 필요한 경우 요소에 [비트맵](../../extensibility/bitmaps-element.md) 요소를 추가 `Commands` 합니다. 그런 다음 각 아이콘에 대해 [비트맵](../../extensibility/bitmap-element.md) 요소를 요소에 추가 `Bitmaps` 합니다. 여기서는 비트맵 리소스의 위치를 지정 합니다. 자세한 내용은 [메뉴 명령에 아이콘 추가](../../extensibility/adding-icons-to-menu-commands.md)를 참조 하세요.
 
@@ -233,7 +233,7 @@ ms.locfileid: "84173605"
 
    - 메뉴 컨트롤러: 메뉴 컨트롤러는 옆에 화살표를 포함 하는 단추입니다. 화살표를 클릭 하면 목록이 열립니다. 메뉴 컨트롤러를 UI에 추가 하려면 `Menu` `type` `MenuController` 원하는 동작에 따라 요소를 만들고 해당 특성을 or로 설정 `MenuControllerLatched` 합니다. 메뉴 컨트롤러를 채우려면 요소의 부모로 설정 `Group` 합니다. 메뉴 컨트롤러는 드롭다운 목록에서 해당 그룹의 모든 자식을 표시 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)

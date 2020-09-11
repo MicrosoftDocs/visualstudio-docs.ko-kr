@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eb90dbffa9f04cd17afa70d2bdfc59205bc99cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707456"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012206"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 설치
 VSPackage를에 통합 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하려면 사용자의 컴퓨터에 파일을 복사 하는 것 외에 더 많은 작업이 필요 합니다. VSPackage의 설치 관리자가 VSPackage와 종속 파일을 설치 하 고에 등록 하 여 통합 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . VSPackage는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 시작 화면 및 정보 대화 상자에 아이콘을 표시 하는 등의 통합 기능을 활용할 수 있습니다.
 
- Microsoft Windows Installer 파일은 Vspackage를 배포 하는 데 권장 되는 방법입니다. 사용 하기 쉬운 Windows Installer 패키지는에서 지원 되는 모든 Windows 운영 체제에서 실행할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 자세한 내용은 [Windows Installer](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)를 참조 하세요.
+ Microsoft Windows Installer 파일은 Vspackage를 배포 하는 데 권장 되는 방법입니다. 사용 하기 쉬운 Windows Installer 패키지는에서 지원 되는 모든 Windows 운영 체제에서 실행할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 자세한 내용은 [Windows Installer](/previous-versions/2kt85ked(v=vs.120))를 참조 하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
 - [Windows Installer 기본 사항](../../extensibility/internals/windows-installer-basics.md)

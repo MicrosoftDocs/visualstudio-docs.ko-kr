@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24ebac7aee2294d2ad8cee06cd88102bb8d3fd78
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704032"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012349"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 명령 테이블(.Vsct) 파일
 명령 테이블 구성 파일은 VSPackage에 포함 된 명령 집합을 설명 하는 텍스트 파일입니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]명령 테이블 (vsct) 컴파일러는 XML 기반 구성 파일 (.cvsct 파일)을 이진 명령 테이블 출력 (.cto) 파일로 컴파일합니다. 이러한 파일은 CTO (명령 테이블) 컴파일러를 사용 하 여 생성 하는 것과 동일 합니다. cto 구성 파일을 컴파일합니다. 그러나 xml 기반. vsct 파일에는 XML 편집기 및 XML IntelliSense와 같은 몇 가지 이점이 있습니다.
@@ -37,7 +37,7 @@ ms.locfileid: "80704032"
 
  명령 테이블 XML 구성 파일의 각 섹션에 대 한 세부 정보를 제공 합니다.
 
- [명령 테이블 구성 (. Ctc) 파일](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) 은 사용 되지 않는. ctc 파일 형식에 대 한 개요를 제공 합니다.
+ [명령 테이블 구성 (. Ctc) 파일](/previous-versions/bb165153(v=vs.100)) 은 사용 되지 않는. ctc 파일 형식에 대 한 개요를 제공 합니다.
 
  [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 

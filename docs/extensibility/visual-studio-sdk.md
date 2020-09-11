@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173567"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012362"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새 기능을 Visual Studio에 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.
@@ -65,7 +65,7 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
 ## <a name="other-visual-studio-sdk-resources"></a>다른 Visual Studio SDK 리소스
  이상 사용자에 대 한 질문이 있거나 확장을 개발 하는 환경을 공유 하려면 [Visual Studio 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) 또는 [ExtendVS Gitter](https://gitter.im/Microsoft/extendvs)를 사용할 수 있습니다.
 
- [VSX Arcana 블로그](https://blogs.msdn.microsoft.com/vsx/) 및 Microsoft mvp가 작성 한 블로그에서 추가 정보를 찾을 수 있습니다.
+ [VSX Arcana 블로그](/archive/blogs/vsx/) 및 Microsoft mvp가 작성 한 블로그에서 추가 정보를 찾을 수 있습니다.
 
 - [즐겨 찾는 Visual Studio 확장](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -73,11 +73,11 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
 
 - [Visual Studio 확장](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ: 추가 기능을 VSPackage 확장으로 변환](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [FAQ: 추가 기능을 VSPackage 확장으로 변환](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [관리 코드에서 여러 스레드 관리](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
 - [도구 모음에 명령 추가](../extensibility/adding-commands-to-toolbars.md)

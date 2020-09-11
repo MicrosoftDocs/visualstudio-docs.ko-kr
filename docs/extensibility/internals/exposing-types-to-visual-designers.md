@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708432"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012532"
 ---
 # <a name="expose-types-to-visual-designers"></a>비주얼 디자이너에 형식 노출
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 비주얼 디자이너를 표시 하기 위해 디자인 타임에 클래스 및 형식 정의에 대 한 액세스 권한이 있어야 합니다. 클래스는 현재 프로젝트의 전체 종속성 집합 (참조 및 해당 종속성)을 포함 하는 미리 정의 된 어셈블리 집합에서 로드 됩니다. 또한 비주얼 디자이너에서 사용자 지정 도구에 의해 생성 된 파일에 정의 된 클래스 및 형식에 액세스 해야 할 수도 있습니다.
@@ -44,6 +44,6 @@ ms.locfileid: "80708432"
      임시 PE가 컴파일되면 컴파일러에 제공 되는 유일한 소스 파일은 사용자 지정 도구 출력입니다. 따라서 임시 PE를 사용 하는 사용자 지정 도구는 프로젝트의 다른 파일과 독립적으로 컴파일할 수 있는 출력 파일을 생성 해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
-- [BuildManager 개체 소개](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [BuildManager 개체 소개](/previous-versions/8f9kffa8(v=vs.140))
 - [단일 파일 생성기 구현](../../extensibility/internals/implementing-single-file-generators.md)
 - [단일 파일 생성기 등록](../../extensibility/internals/registering-single-file-generators.md)

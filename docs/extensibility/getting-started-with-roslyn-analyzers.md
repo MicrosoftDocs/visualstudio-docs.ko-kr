@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711268"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012245"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn 분석기 시작
 
@@ -25,13 +25,13 @@ Visual Studio에서 라이브 프로젝트 기반 코드 분석기를 사용 하
 
 [자습서: 첫 번째 분석기 및 코드 수정 작성](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[코드 수정 사항 추가 연습: 분석기 문제에 대 한 사용자 수정 제공](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[코드 수정 사항 추가 연습: 분석기 문제에 대 한 사용자 수정 제공](/archive/msdn-magazine/2015/february/csharp-adding-a-code-fix-to-your-roslyn-analyzer)
 
 Roslyn으로 시청할 수 있는 [실제 세계](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) [의](https://channel9.msdn.com/events/Build/2015/3-725) 분석기
 
 [GitHub에 대 한 몇 가지 예제는 세 가지 분석기로 그룹화 되어 있습니다.](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [.NET 컴파일러 플랫폼 패키지 버전 참조](roslyn-version-support.md)
 - [GitHub OSS 사이트의 추가 문서](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

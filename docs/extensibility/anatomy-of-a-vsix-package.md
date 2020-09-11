@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52f87426b9f06ad40d77c2cc9e7be1627d2c82d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250821"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012336"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 VSIX 패키지는 visual Studio에서 확장을 분류 하 고 설치 하는 데 사용 하는 메타 데이터와 함께 하나 이상의 Visual Studio 확장을 포함 하는 *.vsix* 파일입니다. 이 메타 데이터는 VSIX 매니페스트와 *[Content_Types] .xml* 파일에 포함 되어 있습니다. VSIX 패키지에는 지역화 된 설정 텍스트를 제공 하기 위해 하나 이상의 *확장명 vsixlangpack* 파일이 포함 되어 있을 수 있으며, 종속성을 설치 하기 위한 추가 VSIX 패키지가 포함 될 수도 있습니다.
@@ -28,7 +28,7 @@ VSIX 패키지는 visual Studio에서 확장을 분류 하 고 설치 하는 데
 > VSIX 패키지에 포함 된 파일의 이름에는 공백이 포함 될 수 없으며 [ \[ RFC2396 \] ](https://www.rfc-editor.org/rfc/rfc2396.txt)아래에 정의 된 대로 URI (Uniform resource identifier)로 예약 된 문자도 포함 되지 않아야 합니다.
 
 ## <a name="the-vsix-manifest"></a>VSIX 매니페스트
- VSIX 매니페스트에는 설치할 확장에 대 한 정보가 포함 되어 있으며 VSX 스키마를 따릅니다. 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요. 예제 VSIX 매니페스트는 [PackageManifest 요소 (root 요소, VSX schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187)를 참조 하세요.
+ VSIX 매니페스트에는 설치할 확장에 대 한 정보가 포함 되어 있으며 VSX 스키마를 따릅니다. 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요. 예제 VSIX 매니페스트는 [PackageManifest 요소 (root 요소, VSX schema)](/previous-versions/dd393754(v=vs.110))를 참조 하세요.
 
  VSIX 매니페스트는 `extension.vsixmanifest` ^ .vsix * 파일에 포함 될 때 이름이 지정 되어야 합니다.
 
@@ -52,9 +52,9 @@ VSIX 패키지는 visual Studio에서 확장을 분류 하 고 설치 하는 데
 ## <a name="installation-location"></a>설치 위치
  설치 하는 동안 **확장 및 업데이트** 는 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*아래의 폴더에 있는 VSIX 패키지의 콘텐츠를 찾습니다.
 
- *% LocalAppData%은 (* 는) 사용자별 디렉터리 이므로 기본적으로 현재 사용자 에게만 설치가 적용 됩니다. 그러나 매니페스트의 [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) 요소를로 설정 하는 경우 `True` 확장은 <em> \\ .</em> 로 설치 됩니다. VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> 는 컴퓨터의 모든 사용자가 사용할 수 있습니다.
+ *% LocalAppData%은 (* 는) 사용자별 디렉터리 이므로 기본적으로 현재 사용자 에게만 설치가 적용 됩니다. 그러나 매니페스트의 [AllUsers](/previous-versions/ee191547(v=vs.110)) 요소를로 설정 하는 경우 `True` 확장은 <em> \\ .</em> 로 설치 됩니다. VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> 는 컴퓨터의 모든 사용자가 사용할 수 있습니다.
 
 ## <a name="content_typesxml"></a>[Content_Types] .xml
  *[Content_Types] .xml* 파일은 확장 된 *.vsix* 파일의 파일 형식을 식별 합니다. Visual Studio는 패키지를 설치 하는 동안이 파일을 사용 하지만 파일 자체는 설치 하지 않습니다. 이 파일에 대 한 자세한 내용은 [[Content_types] .xml 파일의 구조](the-structure-of-the-content-types-dot-xml-file.md)를 참조 하십시오.
 
- *[Content_Types] .xml* 파일은 OPC (Open 패키징 규칙) 표준에 필요 합니다. OPC에 대 한 자세한 내용은 Opc: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) 을 참조 하세요.
+ *[Content_Types] .xml* 파일은 OPC (Open 패키징 규칙) 표준에 필요 합니다. OPC에 대 한 자세한 내용은 Opc: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](/archive/blogs/msdnmagazine/opc-a-new-standard-for-packaging-your-data) 을 참조 하세요.

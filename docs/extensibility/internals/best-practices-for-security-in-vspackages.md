@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709901"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012141"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Vspackage의 보안에 대 한 모범 사례
 컴퓨터에를 설치 하려면 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 관리자 자격 증명을 사용 하 여 컨텍스트에서를 실행 해야 합니다. 응용 프로그램의 기본 보안 및 배포 단위는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [VSPackage](../../extensibility/internals/vspackages.md)입니다. VSPackage를 사용 하 여 등록 해야 하며 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ,이 경우에도 관리 자격 증명이 필요 합니다.
@@ -30,6 +30,6 @@ ms.locfileid: "80709901"
 
  자세한 내용은 [.NET Framework에 대 한 보안 코딩 지침](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
-- [추가 기능 보안](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
-- [DDEX 보안](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+## <a name="see-also"></a>참고 항목
+- [추가 기능 보안](/previous-versions/1326zbk3(v=vs.140))
+- [DDEX 보안](/previous-versions/bb163703(v=vs.140))

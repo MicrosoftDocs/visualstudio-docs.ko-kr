@@ -13,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ea44d2b22c96d49f334f2ea33f9db8d69b5eb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856a685cbf962f8b26f77932c738c758edcf1f91
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697721"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012193"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 개체
 텍스트 버퍼 개체는 일반적으로 파일에 연결 되는 유니코드 텍스트 스트림을 나타냅니다. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>개체는 마법사와 같이 핵심 편집기의 컨텍스트 외부에서 사용할 수 있습니다.
 
  다음 표에서는의 인터페이스를 보여 줍니다 `VSTextBuffer` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|표준 OLE 인터페이스입니다. 버퍼의 실행 취소/다시 실행 처리에 사용 됩니다.|
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|표준 OLE 인터페이스입니다.|
@@ -41,9 +41,9 @@ ms.locfileid: "80697721"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|이벤트에 대 한 연결 지점이 지원 됩니다.|
 
 ## <a name="remarks"></a>설명
- 는 `VSTextBuffer` 일반적으로에 대 한 호출에 의해 검색 됩니다 `QueryInterface` `IVsTextBuffer` . 자세한 내용은 [텍스트 버퍼](/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?view=vs-2015)를 참조 하세요.
+ 는 `VSTextBuffer` 일반적으로에 대 한 호출에 의해 검색 됩니다 `QueryInterface` `IVsTextBuffer` . 자세한 내용은 [텍스트 버퍼](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
 - [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)

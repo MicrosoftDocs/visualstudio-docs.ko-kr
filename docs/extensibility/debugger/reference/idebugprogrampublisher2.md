@@ -12,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721531"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011868"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 이 인터페이스는 디버그 엔진 (DE) 또는 사용자 지정 포트 공급자가 디버깅을 위해 프로그램을 등록할 수 있도록 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramPublisher2 : IUnknown
@@ -37,7 +37,7 @@ Visual Studio는이 인터페이스를 구현 하 여 여러 프로세스에서 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|프로그램 노드를 DEs 및 세션 디버그 관리자 (SDM)에서 사용할 수 있도록 설정 합니다.|
 |[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|프로그램 노드를 더 이상 사용할 수 없도록 제거 합니다.|
@@ -56,7 +56,7 @@ Visual Studio는이 인터페이스를 구현 하 여 여러 프로세스에서 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>예
-이 예제에서는 프로그램 게시자를 인스턴스화하고 프로그램 노드를 등록 하는 방법을 보여 줍니다. 이는 자습서의 [프로그램 노드 게시](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)에서 가져옵니다.
+이 예제에서는 프로그램 게시자를 인스턴스화하고 프로그램 노드를 등록 하는 방법을 보여 줍니다. 이는 자습서의 [프로그램 노드 게시](/previous-versions/bb161795(v=vs.90))에서 가져옵니다.
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:
@@ -89,6 +89,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>추가 정보
-- [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>참고 항목
+- [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
