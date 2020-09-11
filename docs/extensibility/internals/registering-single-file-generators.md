@@ -44,11 +44,11 @@ ms.locfileid: "90012037"
 
    - CLSID
 
-        필수 사항입니다. 을 구현 하는 COM 구성 요소의 클래스 라이브러리 식별자를 지정 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
+        필수 요소. 을 구현 하는 COM 구성 요소의 클래스 라이브러리 식별자를 지정 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
 
    - GeneratesDesignTimeSource
 
-        필수 사항입니다. 이 사용자 지정 도구에서 생성 한 파일의 형식을 비주얼 디자이너에서 사용할 수 있는지 여부를 나타냅니다. 비주얼 디자이너에서 사용할 수 없는 형식에 대해이 매개 변수의 값이 0 (0) 이거나 비주얼 디자이너에서 사용할 수 있는 형식에 대해 1 (1) 이어야 합니다.
+        필수 요소. 이 사용자 지정 도구에서 생성 한 파일의 형식을 비주얼 디자이너에서 사용할 수 있는지 여부를 나타냅니다. 비주얼 디자이너에서 사용할 수 없는 형식에 대해이 매개 변수의 값이 0 (0) 이거나 비주얼 디자이너에서 사용할 수 있는 형식에 대해 1 (1) 이어야 합니다.
 
    > [!NOTE]
    > 사용자 지정 도구를 사용할 수 있도록 하려는 각 언어에 대해 사용자 지정 도구를 별도로 등록 해야 합니다.
@@ -67,7 +67,7 @@ ms.locfileid: "90012037"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [단일 파일 생성기 구현](../../extensibility/internals/implementing-single-file-generators.md)
 - [비주얼 디자이너에 형식 노출](../../extensibility/internals/exposing-types-to-visual-designers.md)
