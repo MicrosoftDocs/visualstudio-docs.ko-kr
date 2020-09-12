@@ -1,6 +1,7 @@
 ---
 title: EnableLocationBrowseButton 요소(Visual Studio 템플릿)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742994"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036654"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 요소 (Visual Studio 템플릿)
 사용자가 새 프로젝트가 저장 되는 기본 디렉터리를 쉽게 수정할 수 있도록 **새 프로젝트** 대화 상자에서 **찾아보기** 단추를 사용할 수 있는지 여부를 지정 합니다.
@@ -58,7 +59,7 @@ ms.locfileid: "89742994"
 
  **새 프로젝트** 대화 상자의 **위치** 텍스트 상자에 새 프로젝트가 저장 되는 디렉터리를 지정 합니다. **찾아보기** 단추를 사용 하면 **프로젝트 위치** 대화 상자를 표시 하 여이 디렉터리를 수정할 수 있습니다 .이 대화 상자를 사용 하면 컴퓨터에서 사용할 수 있는 다른 디렉터리로 쉽게 이동한 다음 새 프로젝트가 저장 된 디렉터리로 선택할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 Windows 응용 프로그램에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```xml

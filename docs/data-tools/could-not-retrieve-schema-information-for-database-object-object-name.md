@@ -1,6 +1,7 @@
 ---
 title: 스키마 정보를 검색할 수 없습니다.
 description: 데이터베이스 개체의 스키마 정보를 검색할 수 없습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 45b0f359366351519fa5ac44fb19a81ef6f26779
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 68e6e2050f788f30448b7e68d8c057f3bad8e972
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743365"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036433"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>데이터베이스 개체 의 스키마 정보를 검색할 수 없습니다.\<object name>
 

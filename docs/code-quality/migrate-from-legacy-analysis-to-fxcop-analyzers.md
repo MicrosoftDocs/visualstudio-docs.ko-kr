@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937562"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036576"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>레거시 분석 (FxCop)에서 원본 분석 (FxCop 분석기)으로 마이그레이션
 
@@ -27,11 +27,11 @@ ms.locfileid: "78937562"
 
 레거시 분석 및 원본 분석 간의 차이점에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [소스 코드 분석 대 레거시 분석](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [소스 코드 분석 대 레거시 분석](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [FxCop 분석기에 대 한 FAQ](../code-quality/fxcop-analyzers-faq.md)
 
-원본 분석으로 마이그레이션하려면 [FxCop 분석기를 설치](../code-quality/install-fxcop-analyzers.md)합니다. 레거시 분석 규칙 위반과 마찬가지로 소스 코드 분석 위반은 Visual Studio의 오류 목록 창에 표시됩니다. 소스 코드 분석 위반은 코드 편집기에도 표시되며, 위반 코드 아래에 *오류 표시선*이 나타납니다. 물결선의 색은 규칙의 [심각도 설정](../code-quality/use-roslyn-analyzers.md#rule-severity)에 따라 달라집니다. 새 FxCop 분석기로 이식 된 규칙의 상태를 확인 하려면 이식 된 [규칙 및 이식](../code-quality/fxcop-rule-port-status.md)되지 않은 규칙을 참조 하세요.
+원본 분석으로 마이그레이션하려면 [FxCop 분석기를 설치](../code-quality/install-fxcop-analyzers.md)합니다. 레거시 분석 규칙 위반과 마찬가지로 소스 코드 분석 위반은 Visual Studio의 오류 목록 창에 표시됩니다. 소스 코드 분석 위반은 코드 편집기에도 표시되며, 위반 코드 아래에 *오류 표시선*이 나타납니다. 물결선의 색은 규칙의 [심각도 설정](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)에 따라 달라집니다. 새 FxCop 분석기로 이식 된 규칙의 상태를 확인 하려면 이식 된 [규칙 및 이식](../code-quality/fxcop-rule-port-status.md)되지 않은 규칙을 참조 하세요.
 
 FxCop 분석기를 구성 하는 방법에 대 한 자세한 내용은 다음을 확인 하세요.
 

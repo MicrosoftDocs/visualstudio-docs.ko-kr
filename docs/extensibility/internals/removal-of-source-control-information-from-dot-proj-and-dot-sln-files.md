@@ -1,5 +1,6 @@
 ---
 title: Proj 및 .sln 파일에서 소스 제어 정보를 제거 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b403d105b1c2b3a3113885189868e8bae4efcc
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 7a5f9b6ac83df104c381d7100a5e8fda5ac48a61
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743053"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034678"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Proj 및 .sln 파일에서 소스 제어 정보 제거
 

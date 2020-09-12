@@ -1,5 +1,6 @@
 ---
 title: 레거시 언어 서비스의 탐색 모음 지원
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f22aaf552cc69074c500508621ab4d9e288ef449
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741904"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036563"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>레거시 언어 서비스의 탐색 모음 지원
 편집기 뷰 위쪽의 탐색 모음에는 파일의 형식과 멤버가 표시 됩니다. 왼쪽 드롭다운에서 형식이 표시 되 고 오른쪽 드롭다운에서 멤버가 표시 됩니다. 사용자가 형식을 선택 하면 캐럿이 형식의 첫 번째 줄에 배치 됩니다. 사용자가 멤버를 선택 하면 캐럿이 멤버 정의에 배치 됩니다. 드롭다운 상자는 캐럿의 현재 위치를 반영 하도록 업데이트 됩니다.

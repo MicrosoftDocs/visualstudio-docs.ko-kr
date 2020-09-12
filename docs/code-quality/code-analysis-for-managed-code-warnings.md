@@ -15,21 +15,21 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509018"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034106"
 ---
 # <a name="net-code-analysis-rules"></a>.NET 코드 분석 규칙
-관리 코드 분석 도구는 관리 코드 라이브러리의 규칙 위반을 나타내는 경고를 제공합니다. 경고는 디자인, 지역화, 성능, 보안 등의 규칙 영역으로 구성됩니다. 각 경고는 관리 코드 분석 규칙을 위반했음을 나타냅니다. 이 섹션에서는 각 관리 코드 분석 경고에 대한 자세한 논의와 예제를 제공합니다.
+.NET 코드 분석에서는 코드 품질을 향상 시킬 수 있는 코드 품질 위반 또는 제안을 나타내는 규칙을 제공 합니다. 규칙은 디자인, 지역화, 성능, 보안 등의 규칙 영역으로 구성 됩니다. 특정 규칙은 .NET API 사용에만 적용 되 고 나머지 규칙은 일반 코드 품질에 대 한 것입니다. 이 섹션에서는 각 규칙에 대 한 자세한 논의와 예제를 제공 합니다.
 
- 다음 표에서 각 경고에 대해 제공되는 정보의 형식을 보여 줍니다.
+ 다음 표에서는 각 진단에 대해 제공 되는 정보의 형식을 보여 줍니다.
 
 |항목|Description|
 |----------|-----------------|
-|형식|규칙의 TypeName입니다.|
+|Type|규칙의 TypeName입니다.|
 |CheckId|규칙의 고유 식별자입니다. 소스에서 경고를 표시하지 않으려는 경우에 사용되는 CheckId 및 범주입니다.|
 |범주|경고의 범주입니다.|
 |주요 변경 내용|규칙의 위반에 대한 수정이 주요 변경 내용인지 여부입니다. 주요 변경 내용은 위반의 원인이 된 대상에 대해 종속성이 있으며 새로 수정된 버전으로 다시 컴파일되지 않거나 변경으로 인해 런타임에 실패할 수 있는 어셈블리를 의미합니다. 여러 픽스를 사용할 수 있고 하나 이상의 수정이 주요 변경 사항이 며 한 가지 픽스는 그렇지 않으면 ' 중단 ' 및 ' 중단 '이 모두 지정 됩니다.|

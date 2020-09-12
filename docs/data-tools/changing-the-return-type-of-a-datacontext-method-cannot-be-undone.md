@@ -1,6 +1,7 @@
 ---
 title: 반환 형식 변경을 실행 취소할 수 없습니다.
 description: DataContext 메서드의 반환 형식 변경은 취소할 수 없습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c759e930bc35b011b22c509cd873d887fb7fdef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fc0c3d6c1ddeab3ee92414e1264912f8b9d24b22
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743178"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036472"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>DataContext 메서드의 반환 형식 변경은 취소할 수 없습니다.
 

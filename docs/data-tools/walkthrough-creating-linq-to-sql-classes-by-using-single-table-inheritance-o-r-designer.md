@@ -1,5 +1,6 @@
 ---
 title: 단일 테이블 상속을 사용 하는 LINQ to SQL 클래스
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c76818f7cd70077996370cf5ffe930ef78f9acb
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741828"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036758"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>연습: 단일 테이블 상속을 사용 하 여 LINQ to SQL 클래스 만들기 (O/R 디자이너)
 [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 는 일반적으로 관계형 시스템에서 구현 되는 단일 테이블 상속을 지원 합니다. 이 연습은 [방법: O/R 디자이너를 사용 하 여 상속 구성](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) 항목에서 제공 하는 일반 단계를 확장 하 고에서 상속 사용을 보여 주는 몇 가지 실제 데이터를 제공 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 합니다.
@@ -70,7 +71,7 @@ ms.locfileid: "89741828"
 
 2. 다음 데이터를 테이블로 복사합니다. ( **결과** 창에서 전체 행을 선택 하 여 복사 하 고 테이블에 붙여넣을 수 있습니다.)
 
-    |**ID**|**형식**|**FirstName**|**LastName**|**관리자**|
+    |**ID**|**유형**|**FirstName**|**LastName**|**관리자**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|

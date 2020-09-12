@@ -1,54 +1,34 @@
 ---
-title: 분석기 규칙 심각도 및 비 표시
-ms.date: 03/04/2020
+title: 코드 품질 분석
+ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599984"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036373"
 ---
-# <a name="use-code-analyzers"></a>코드 분석기 사용
+# <a name="configure-code-quality-analysis"></a>코드 품질 분석 구성
 
-.NET Compiler Platform ("Roslyn") 코드 분석기는 입력 하는 동안 c # 또는 Visual Basic 코드를 분석 합니다. 각 *진단* 또는 규칙은 프로젝트에 대해 덮어쓸 수 있는 기본 심각도 및 비 표시 상태를 포함 합니다. 이 문서에서는 규칙 심각도 설정, 규칙 집합 사용 및 위반 억제에 대해 설명 합니다.
+.NET 5.0부터 코드 품질 분석기는 .NET SDK에 포함 되어 있습니다. (이전에는 이러한 분석기를 NuGet 패키지로 설치 했습니다.) 코드 분석은 기본적으로 .NET 5.0 이상을 대상으로 하는 프로젝트에 대해 사용 하도록 설정 됩니다. [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 속성을로 설정 하 여 이전 .net 버전을 대상으로 하는 프로젝트에 대해 코드 분석을 사용 하도록 설정할 수 있습니다 `true` . 을로 설정 하 여 프로젝트에 대 한 코드 분석을 사용 하지 않도록 설정할 수도 있습니다 `EnableNETAnalyzers` `false` .
 
-## <a name="analyzers-in-solution-explorer"></a>솔루션 탐색기의 분석기
+각 코드 품질 분석기 *진단* 또는 규칙에는 프로젝트에 대해 덮어쓰기 및 사용자 지정할 수 있는 기본 심각도 및 비 표시 상태가 있습니다. 이 문서에서는 코드 품질 분석기 심각도 설정 및 분석기 위반 표시를 설명 합니다.
 
-**솔루션 탐색기**에서 analyzer 진단의 사용자 지정을 대부분 수행할 수 있습니다. [분석기](../code-quality/install-roslyn-analyzers.md) 를 NuGet 패키지로 설치 하는 경우 **솔루션 탐색기**의 **참조** 또는 **종속성** 노드 아래에 **분석기** 노드가 나타납니다. **분석기를 확장**한 다음 분석기 어셈블리 중 하나를 확장 하면 어셈블리에 모든 진단이 표시 됩니다.
-
-![솔루션 탐색기의 분석기 노드](media/analyzers-expanded-in-solution-explorer.png)
-
-**속성** 창에서 설명 및 기본 심각도를 포함 하 여 진단 속성을 볼 수 있습니다. 속성을 보려면 해당 규칙을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하거나 규칙을 선택 하 고 **Alt** + **enter**를 누릅니다.
-
-![속성 창의 진단 속성](media/analyzer-diagnostic-properties.png)
-
-진단에 대 한 온라인 설명서를 보려면 진단을 마우스 오른쪽 단추로 클릭 하 고 **도움말 보기**를 선택 합니다.
-
-**솔루션 탐색기** 의 각 진단 옆에 있는 아이콘은 편집기에서 열 때 규칙 집합에 표시 되는 아이콘에 해당 합니다.
-
-- 원의 "x"는 **오류의** [심각도](#rule-severity) 를 나타냅니다.
-- 삼각형의 "!"는 **경고** 의 [심각도](#rule-severity) 를 나타냅니다.
-- 원의 "i"는 **정보의** [심각도](#rule-severity) 를 나타냅니다.
-- 옅은 색 배경의 원에 있는 "i"는 **숨겨진** 의 [심각도](#rule-severity) 를 나타냅니다.
-- 원의 아래쪽 화살표는 진단이 억제 됨을 나타냅니다.
-
-![솔루션 탐색기의 진단 아이콘](media/diagnostics-icons-solution-explorer.png)
-
-## <a name="rule-severity"></a>규칙 심각도
+## <a name="configure-severity-levels"></a>심각도 수준 구성
 
 ::: moniker range=">=vs-2019"
 
-분석기를 NuGet 패키지로 [설치](../code-quality/install-roslyn-analyzers.md) 하는 경우 분석기 규칙의 심각도 또는 *진단을*구성할 수 있습니다. Visual Studio 2019 버전 16.3부터 [EditorConfig 파일에서](#set-rule-severity-in-an-editorconfig-file)규칙의 심각도를 구성할 수 있습니다. 규칙의 심각도를 [솔루션 탐색기](#set-rule-severity-from-solution-explorer) 또는 [규칙 집합 파일](#set-rule-severity-in-the-rule-set-file)에서 변경할 수도 있습니다.
+Visual Studio 2019 버전 16.3 부터는 [Editorconfig 파일](#set-rule-severity-in-an-editorconfig-file), 전구 [메뉴](#set-rule-severity-from-the-light-bulb-menu)및 오류 목록에서 분석기 규칙 또는 *진단*의 심각도를 구성할 수 있습니다.
 
 ::: moniker-end
 
@@ -62,20 +42,26 @@ ms.locfileid: "89599984"
 
 | 심각도 (솔루션 탐색기) | 심각도 (EditorConfig 파일) | 빌드 타임 동작 | 편집기 동작 |
 |-|-|-|
-| 오류 | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
+| Error | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
 | 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
 | 정보 | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 회색 상자로 표시 됩니다. |
 | 숨김 | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
 | 없음 | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
 | 기본값 | `default` | 규칙의 기본 심각도에 해당 합니다. 규칙의 기본값을 확인 하려면 속성 창를 확인 합니다. | 규칙의 기본 심각도에 해당 합니다. |
 
-코드 편집기의 다음 스크린샷에서는 심각도가 서로 다른 세 가지 위반을 보여 줍니다. 오른쪽의 스크롤 막대에서 물결 모양의 색 및 작은 색 사각형을 확인 합니다.
+분석기에서 규칙 위반을 발견하면 코드 편집기(위반 코드 아래에 *오류 표시선*이 표시됨) 및 오류 목록 창에 규칙 위반이 보고됩니다.
 
-![코드 편집기에서 오류, 경고 및 정보 위반](media/diagnostics-severity-colors.png)
+오류 목록에 보고 된 분석기 위반이 규칙의 [심각도 수준 설정과](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) 일치 합니다. 분석기 위반은 위반 하는 코드 아래에 물결선로 코드 편집기에 표시 됩니다. 다음 이미지는 &mdash; 오류 (빨간색 물결선), 경고 (녹색 물결선) 및 제안 1 개 (회색 점 3 개)의 세 가지 위반을 보여 줍니다.
+
+![Visual Studio 코드 편집기의 오류 표시선](media/diagnostics-severity-colors.png)
 
 다음 스크린샷은 오류 목록에 표시 되는 것과 동일한 세 가지 위반을 보여 줍니다.
 
 ![오류 목록에서 오류, 경고 및 정보 위반](media/diagnostics-severities-in-error-list.png)
+
+많은 분석기 규칙 또는 *진단*에는 규칙 위반을 해결 하기 위해 적용할 수 있는 하나 이상의 관련 된 *코드 수정* 이 있습니다. 코드 수정은 다른 형식의 [빠른 작업](../ide/quick-actions.md)과 함께 전구 아이콘 메뉴에 표시됩니다. 이러한 코드 수정에 대한 정보는 [일반적인 빠른 작업](../ide/quick-actions.md)을 참조하세요.
+
+![분석기 위반 및 빠른 작업 코드 수정](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ### <a name="hidden-severity-versus-none-severity"></a>' Hidden ' 심각도와 ' None ' 심각도 비교
 
@@ -94,7 +80,7 @@ ms.locfileid: "89599984"
 
 `dotnet_diagnostic.<rule ID>.severity = <severity>`
 
-EditorConfig 파일에서 규칙의 심각도를 설정 하는 것은 규칙 집합 또는 솔루션 탐색기에서 설정 된 심각도 보다 우선 합니다. EditorConfig 파일에서 [수동으로](#manually-configure-rule-severity) 또는 위반 옆에 나타나는 전구를 통해 [자동으로](#automatically-configure-rule-severity) 심각도를 구성할 수 있습니다.
+EditorConfig 파일에서 규칙의 심각도를 설정 하는 것은 규칙 집합 또는 솔루션 탐색기에서 설정 된 심각도 보다 우선 합니다. EditorConfig 파일에서 [수동으로](#manually-configure-rule-severity-in-an-editorconfig-file) 또는 위반 옆에 나타나는 전구를 통해 [자동으로](#set-rule-severity-from-the-light-bulb-menu) 심각도를 구성할 수 있습니다.
 
 ### <a name="set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file"></a>EditorConfig 파일에서 한 번에 여러 분석기 규칙의 규칙 심각도 설정
 
@@ -129,7 +115,7 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 
 앞의 예제에서 CA1822에 세 개의 항목을 모두 적용할 수 있습니다. 그러나 지정 된 우선 순위 규칙을 사용 하 여 첫 번째 규칙 ID 기반 심각도 항목은 다음 항목에 대해 적용 됩니다. 이 예제에서 CA1822는 "error"의 유효 심각도를 갖습니다. "성능" 범주가 있는 나머지 모든 규칙에는 심각도 "warning"이 포함 됩니다. "성능" 범주가 없는 나머지 모든 분석기 규칙에는 심각도 "제안"이 있습니다.
 
-#### <a name="manually-configure-rule-severity"></a>규칙 심각도 수동 구성
+#### <a name="manually-configure-rule-severity-in-an-editorconfig-file"></a>EditorConfig 파일에서 규칙 심각도 수동 구성
 
 1. 프로젝트에 대 한 EditorConfig 파일이 아직 없는 경우 [하나를 추가](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)합니다.
 
@@ -142,6 +128,68 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 
 > [!NOTE]
 > IDE 코드 스타일 분석기의 경우 다른 구문 (예:)을 사용 하 여 EditorConfig 파일에서 구성할 수도 있습니다 `dotnet_style_qualification_for_field = false:suggestion` . 그러나 구문을 사용 하 여 심각도를 설정 하는 경우에는 `dotnet_diagnostic` 우선 순위가 우선적으로 적용 됩니다. 자세한 내용은 [EditorConfig에 대 한 언어 규칙](../ide/editorconfig-language-conventions.md)을 참조 하세요.
+
+### <a name="set-rule-severity-from-the-light-bulb-menu"></a>전구 메뉴에서 규칙 심각도 설정
+
+Visual Studio는 [빠른 작업](../ide/quick-actions.md) 전구 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
+
+1. 위반이 발생 한 후 편집기에서 위반 물결선을 마우스로 가리켜 전구 메뉴를 엽니다. 또는 줄에 커서를 놓고 Ctrl 키를 누릅니다 **Ctrl** + **.** 누릅니다.
+
+2. 전구 메뉴에서 **문제 구성 또는 표시 안 함** 을 선택 하 여 > ** \<rule ID> 심각도를 구성**합니다.
+
+   ![Visual Studio의 전구 메뉴에서 규칙 심각도 구성](media/configure-rule-severity.png)
+
+3. 여기에서 심각도 옵션 중 하나를 선택 합니다.
+
+   ![규칙 심각도를 제안으로 구성](media/configure-rule-severity-suggestion.png)
+
+   Visual Studio는 미리 보기 상자에 표시 된 것 처럼 EditorConfig 파일에 항목을 추가 하 여 요청 된 수준에 대 한 규칙을 구성 합니다.
+
+   > [!TIP]
+   > 프로젝트에 EditorConfig 파일이 아직 없는 경우 Visual Studio에서 해당 파일을 만듭니다.
+
+### <a name="set-rule-severity-from-the-error-list-window"></a>오류 목록 창에서 규칙 심각도 설정
+
+Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
+
+1. 위반이 발생 한 후 오류 목록에서 진단 항목을 마우스 오른쪽 단추로 클릭 합니다.
+
+2. 상황에 맞는 메뉴에서 **심각도 설정**을 선택 합니다.
+
+   ![Visual Studio의 오류 목록에서 규칙 심각도 구성](media/configure-rule-severity-error-list.png)
+
+3. 여기에서 심각도 옵션 중 하나를 선택 합니다.
+
+   Visual Studio에서 EditorConfig 파일에 항목을 추가 하 여 요청 된 수준에 대 한 규칙을 구성 합니다.
+
+   > [!TIP]
+   > 프로젝트에 EditorConfig 파일이 아직 없는 경우 Visual Studio에서 해당 파일을 만듭니다.
+
+::: moniker-end
+
+### <a name="set-rule-severity-from-solution-explorer"></a>솔루션 탐색기에서 규칙 심각도 설정
+
+**솔루션 탐색기**에서 analyzer 진단의 사용자 지정을 대부분 수행할 수 있습니다. [분석기](../code-quality/install-roslyn-analyzers.md) 를 NuGet 패키지로 설치 하는 경우 **솔루션 탐색기**의 **참조** 또는 **종속성** 노드 아래에 **분석기** 노드가 나타납니다. **분석기를 확장**한 다음 분석기 어셈블리 중 하나를 확장 하면 어셈블리에 모든 진단이 표시 됩니다.
+
+![솔루션 탐색기의 분석기 노드](media/analyzers-expanded-in-solution-explorer.png)
+
+**속성** 창에서 설명 및 기본 심각도를 포함 하 여 진단 속성을 볼 수 있습니다. 속성을 보려면 해당 규칙을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하거나 규칙을 선택 하 고 **Alt** + **enter**를 누릅니다.
+
+![속성 창의 진단 속성](media/analyzer-diagnostic-properties.png)
+
+진단에 대 한 온라인 설명서를 보려면 진단을 마우스 오른쪽 단추로 클릭 하 고 **도움말 보기**를 선택 합니다.
+
+**솔루션 탐색기** 의 각 진단 옆에 있는 아이콘은 편집기에서 열 때 규칙 집합에 표시 되는 아이콘에 해당 합니다.
+
+- 원의 "x"는 **오류의** [심각도](#configure-severity-levels) 를 나타냅니다.
+- 삼각형의 "!"는 **경고** 의 [심각도](#configure-severity-levels) 를 나타냅니다.
+- 원의 "i"는 **정보의** [심각도](#configure-severity-levels) 를 나타냅니다.
+- 옅은 색 배경의 원에 있는 "i"는 **숨겨진** 의 [심각도](#configure-severity-levels) 를 나타냅니다.
+- 원의 아래쪽 화살표는 진단이 억제 됨을 나타냅니다.
+
+![솔루션 탐색기의 진단 아이콘](media/diagnostics-icons-solution-explorer.png)
+
+::: moniker range=">=vs-2019"
 
 #### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>기존 규칙 집합 파일을 EditorConfig 파일로 변환
 
@@ -209,45 +257,6 @@ dotnet_diagnostic.CA2213.severity = warning
 
 dotnet_diagnostic.CA2231.severity = warning
 ```
-
-#### <a name="automatically-configure-rule-severity"></a>자동으로 규칙 심각도 구성
-
-##### <a name="configure-from-light-bulb-menu"></a>전구 메뉴에서 구성
-
-Visual Studio는 [빠른 작업](../ide/quick-actions.md) 전구 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
-
-1. 위반이 발생 한 후 편집기에서 위반 물결선을 마우스로 가리켜 전구 메뉴를 엽니다. 또는 줄에 커서를 놓고 Ctrl 키를 누릅니다 **Ctrl** + **.** 누릅니다.
-
-2. 전구 메뉴에서 **문제 구성 또는 표시 안 함** 을 선택 하 여 > ** \<rule ID> 심각도를 구성**합니다.
-
-   ![Visual Studio의 전구 메뉴에서 규칙 심각도 구성](media/configure-rule-severity.png)
-
-3. 여기에서 심각도 옵션 중 하나를 선택 합니다.
-
-   ![규칙 심각도를 제안으로 구성](media/configure-rule-severity-suggestion.png)
-
-   Visual Studio는 미리 보기 상자에 표시 된 것 처럼 EditorConfig 파일에 항목을 추가 하 여 요청 된 수준에 대 한 규칙을 구성 합니다.
-
-   > [!TIP]
-   > 프로젝트에 EditorConfig 파일이 아직 없는 경우 Visual Studio에서 해당 파일을 만듭니다.
-
-##### <a name="configure-from-error-list"></a>오류 목록에서 구성
-
-Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
-
-1. 위반이 발생 한 후 오류 목록에서 진단 항목을 마우스 오른쪽 단추로 클릭 합니다.
-
-2. 상황에 맞는 메뉴에서 **심각도 설정**을 선택 합니다.
-
-   ![Visual Studio의 오류 목록에서 규칙 심각도 구성](media/configure-rule-severity-error-list.png)
-
-3. 여기에서 심각도 옵션 중 하나를 선택 합니다.
-
-   Visual Studio에서 EditorConfig 파일에 항목을 추가 하 여 요청 된 수준에 대 한 규칙을 구성 합니다.
-
-   > [!TIP]
-   > 프로젝트에 EditorConfig 파일이 아직 없는 경우 Visual Studio에서 해당 파일을 만듭니다.
-
 ::: moniker-end
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>솔루션 탐색기에서 규칙 심각도 설정
@@ -377,7 +386,7 @@ Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://
 
 - 프로젝트 코드에서 하나 이상의 규칙을 위반 했습니다.
 
-- 위반 된 규칙의 [심각도](#rule-severity) 는 **경고**로 설정 되며,이 경우 위반으로 인해 빌드가 실패 하거나 **오류가**발생 하지 않습니다 .이 경우 위반으로 인해 빌드가 실패 합니다.
+- 위반 된 규칙의 [심각도](#configure-severity-levels) 는 **경고**로 설정 되며,이 경우 위반으로 인해 빌드가 실패 하거나 **오류가**발생 하지 않습니다 .이 경우 위반으로 인해 빌드가 실패 합니다.
 
 빌드 출력의 자세한 정도는 규칙 위반이 표시 되는지 여부에 영향을 주지 않습니다. **자동** 자세한 정도를 사용 하더라도 규칙 위반은 빌드 출력에 표시 됩니다.
 

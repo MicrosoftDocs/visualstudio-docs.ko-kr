@@ -1,5 +1,6 @@
 ---
 title: 데이터 세트 디자이너를 사용 하 여 데이터 집합 만들기
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +14,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742929"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036784"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>연습: 데이터 세트 디자이너을 사용 하 여 데이터 집합 만들기
 
 이 연습에서는 **데이터 세트 디자이너**를 사용 하 여 데이터 집합을 만듭니다. 이 문서에서는 새 프로젝트를 만들고 새 프로젝트에 새 **데이터 집합** 항목을 추가 하는 과정을 안내 합니다. 마법사를 사용 하지 않고 데이터베이스의 테이블을 기반으로 테이블을 만드는 방법을 배웁니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 

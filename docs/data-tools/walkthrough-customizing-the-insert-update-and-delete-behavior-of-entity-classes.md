@@ -1,5 +1,6 @@
 ---
 title: 삽입/업데이트/삭제 동작 사용자 지정
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741823"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036745"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작 사용자 지정
 
@@ -45,7 +46,7 @@ ms.locfileid: "89741823"
 
 - `Customer`저장 프로시저를 사용 하 여 삽입, 업데이트 및 삭제를 수행 하도록 클래스를 구성 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 

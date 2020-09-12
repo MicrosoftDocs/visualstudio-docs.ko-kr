@@ -1,34 +1,34 @@
 ---
-title: 관리 코드에 대 한 라이브 코드 분석 범위 구성
-ms.date: 03/23/2018
+title: .NET에 대 한 라이브 코드 분석 범위 구성
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249187"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035419"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>방법: 관리 코드에 대 한 라이브 코드 분석 범위 구성
+# <a name="configure-live-code-analysis-for-net"></a>.NET에 대 한 라이브 코드 분석 구성
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>관리 코드에 대 한 "라이브 코드 분석" 이란?
 Visual Studio는 편집기에서 소스 파일을 편집 하는 동안 *백그라운드 분석*이 라고도 하는 여러 라이브 코드 분석을 실행 합니다. 그 중 일부는 적절 한 Visual Studio IDE 편집 환경을 위한 최소한의 분석에 필요 합니다. 그 중 일부는 IDE 기능의 응답성 향상을 위한 것입니다. 그 중 일부는 Roslyn 분석기의 진단 및 코드 수정과 같은 추가 IDE 기능을 사용 하도록 설정 하는 것입니다. 이러한 분석은 기능에 따라 다음과 같이 그룹화 할 수 있습니다.
 
 - **진단의 백그라운드 계산**: 소스 파일에서 오류, 경고 및 제안 사항을 계산 하는 데 대 한 분석입니다. 이러한 진단은 오류 목록에 항목으로 표시 되 고 편집기에 물결선로 표시 됩니다. 두 가지 범주로 분류할 수 있습니다.
   - C # 및 Visual Basic 컴파일러 진단
   - 다음을 포함 하는 Roslyn analyzer 진단
 
-    - 코드 스타일 제안 사항에 대 한 기본 제공 IDE 분석기
+    - 코드 스타일 제안에 대 한 기본 제공 IDE 분석기
+    - 코드 품질 제안에 대 한 기본 제공 CA 분석기
     - 현재 솔루션의 프로젝트용으로 [설치 된](./install-roslyn-analyzers.md) 타사 analyzer 패키지입니다.
 
 - **기타 백그라운드 분석**: IDE 기능의 응답성 및 Visual Studio 상호 작용을 개선 하는 분석입니다. 이러한 분석의 몇 가지 예는 다음과 같습니다.
@@ -43,7 +43,7 @@ Visual Studio는 편집기에서 소스 파일을 편집 하는 동안 *백그�
 
 ## <a name="custom-analysis-scope"></a>사용자 지정 분석 범위
 
-대부분의 고객 시나리오와 솔루션에 대 한 최적의 사용자 환경, 기능 및 성능을 위해 각 백그라운드 분석의 기본 범위가 조정 되었습니다. 그러나 고객이 배경 분석을 낮추거나 늘리기 위해이 범위를 사용자 지정 하려는 경우가 있습니다. 예를 들면 다음과 같습니다.
+대부분의 고객 시나리오와 솔루션에 대 한 최적의 사용자 환경, 기능 및 성능을 위해 각 백그라운드 분석의 기본 범위가 조정 되었습니다. 그러나 고객이 배경 분석을 낮추거나 늘리기 위해이 범위를 사용자 지정 하려는 경우가 있습니다. 다음은 그 예입니다. 
 
 - 절전 모드: 사용자가 노트북 배터리를 실행 하는 경우 더 긴 배터리 수명 동안 전원 소비를 최소화 하는 것이 좋습니다. 이 시나리오에서는 백그라운드 분석을 최소화 하려고 합니다.
 - 주문형 코드 분석: 사용자가 라이브 분석기 실행을 해제 하 고 요청 시 수동으로 코드 분석을 실행 하는 것을 선호 하는 경우 백그라운드 분석을 최소화 하려고 합니다. [방법: 요청 시 수동으로 코드 분석 실행을](./how-to-run-code-analysis-manually-for-managed-code.md)참조 하세요.
@@ -74,7 +74,7 @@ Visual Studio에서 200 MB 이하의 시스템 메모리를 사용할 수 있음
 
 ![경고 텍스트 분석 범위 최소화](./media/fsa_alert.png)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [자동 기능 일시 중단](./automatic-feature-suspension.md)
 - [절전 모드 기능 요청](https://github.com/dotnet/roslyn/issues/38429)
