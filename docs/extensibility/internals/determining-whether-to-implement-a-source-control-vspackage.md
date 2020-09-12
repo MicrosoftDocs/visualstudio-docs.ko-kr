@@ -1,5 +1,6 @@
 ---
 title: 소스 제어를 구현 하는 경우 VSPackage
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abb7ce1c737f9299ba345d5e33b98e6b6947a6e4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741799"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037044"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage을 구현할지 여부를 결정 합니다.
 

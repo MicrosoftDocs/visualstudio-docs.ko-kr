@@ -1,20 +1,20 @@
 ---
 title: 여러 구성을 사용 하 여 클라우드 서비스 구성
 description: ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg 및 ServiceConfiguration.Cloud.cscfg 파일을 변경하여 Azure 클라우드 서비스 프로젝트를 구성하는 방법에 대해 알아봅니다.
+ms.custom: vs-azure
 author: ghogen
 manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 790d0090bd5f4c24303afbb72082a05702064071
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 76dec6a238090fac6a5094221e1a1c2bb953789d
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739959"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036550"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>여러 서비스 구성을 사용하여 Visual Studio에서 Azure 프로젝트 구성
 

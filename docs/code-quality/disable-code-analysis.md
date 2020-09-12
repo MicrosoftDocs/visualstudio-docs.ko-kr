@@ -1,21 +1,21 @@
 ---
 title: 코드 분석 해제
-ms.date: 10/03/2019
+ms.date: 09/01/2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
 - disable code analysis
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: d2cac7ad0502d82309aa664b8e8fe6bdd0301815
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800700"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037148"
 ---
-# <a name="how-to-disable-source-code-analysis-for-managed-code"></a>관리 코드에 대 한 소스 코드 분석을 사용 하지 않도록 설정 하는 방법
+# <a name="disable-source-code-analysis-for-net"></a>.NET에 대 한 소스 코드 분석 사용 안 함
 
 ::: moniker range=">=vs-2019"
 
@@ -47,13 +47,13 @@ Visual Studio 2019 버전 16.3부터 코드 분석 속성 페이지에서 사용
 
 분석기에 대 한 소스 코드 분석을 해제 하려면 다음 MSBuild 속성 중 하나 이상을 [프로젝트 파일](../ide/solutions-and-projects-in-visual-studio.md#project-file)에 추가 합니다.
 
-| MSBuild 속성 | 설명 | 기본값 |
+| MSBuild 속성 | Description | 기본값 |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | 빌드 시 분석기가 실행 되는지 여부를 제어 합니다. | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | 분석기가 디자인 타임에 코드를 실시간으로 분석할 지 여부를 제어 합니다. | `true` |
 | `RunAnalyzers` | 빌드 및 디자인 타임에 분석기를 사용 하지 않도록 설정 합니다. 이 속성은 및 보다 우선적으로 적용 `RunAnalyzersDuringBuild` `RunAnalyzersDuringLiveAnalysis` 됩니다. | `true` |
 
-예:
+예제:
 
 ```xml
 <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
@@ -77,7 +77,7 @@ Visual Studio 2019 버전 16.3부터 소스 코드 분석을 해제 하거나 �
 
 ::: moniker-end
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [위반 표시 안 함](use-roslyn-analyzers.md#suppress-violations)
 - [방법: 레거시 코드 분석 사용 및 사용 안 함](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

@@ -1,5 +1,6 @@
 ---
 title: 레지스트리 설정을 사용 하 여 전용 갤러리 관리
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 989426feaab04c62c31bf09ddb0431f18222e115
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2dcbacbe415eac6829dc51e95442905bba932d6a
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742864"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038545"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>방법: 레지스트리 설정을 사용 하 여 전용 갤러리 관리
 격리 된 셸 확장의 관리자 또는 개발자 인 경우 Visual Studio 갤러리, 샘플 갤러리 또는 개인 갤러리의 컨트롤, 템플릿 및 도구에 대 한 액세스를 제어할 수 있습니다. 갤러리를 사용할 수 있거나 사용할 수 없게 하려면 수정 된 레지스트리 키와 해당 값을 설명 하는 *.pkgdef* 파일을 만듭니다.

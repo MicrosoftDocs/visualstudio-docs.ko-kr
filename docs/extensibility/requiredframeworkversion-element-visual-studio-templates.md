@@ -1,6 +1,7 @@
 ---
 title: RequiredFrameworkVersion 요소(Visual Studio 템플릿)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce8a342f7b3582fb8b2b3839a44e545071b7177
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741693"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037727"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소 (Visual Studio 템플릿)
 
@@ -60,7 +61,7 @@ ms.locfileid: "89741693"
 
 `RequiredFrameworkVersion`는 선택적 요소입니다. 템플릿이 .NET Framework의 특정 최소 버전 (및 이후 버전)을 지 원하는 경우에만이 요소를 사용 합니다. 요소를 지정 하 `RequiredFrameworkVersion` 고 템플릿이 .NET Framework의 특정 최소 버전을 지원 하지 않는 경우 **대상 프레임 워크 버전** 드롭다운에 해당 사항이 없으면이 표시 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 표준 클래스 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 

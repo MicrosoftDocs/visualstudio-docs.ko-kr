@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599611"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037252"
 ---
 # <a name="code-analysis-faq"></a>코드 분석 FAQ
 
@@ -61,7 +61,7 @@ ms.locfileid: "89599611"
 
 **Q**: 레거시 분석과 .NET Compiler Platform 기반 코드 분석의 차이점은 무엇 인가요?
 
-**A**: .NET Compiler Platform 기반 코드 분석은 컴파일 중에 소스 코드를 실시간으로 분석 하는 반면 레거시 분석은 빌드가 완료 된 후 이진 파일을 분석 합니다. 자세한 내용은 [.NET Compiler Platform 기반 분석 및 레거시 분석](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) 및 [FxCop 분석기 FAQ](fxcop-analyzers-faq.md)를 참조 하세요.
+**A**: .NET Compiler Platform 기반 코드 분석은 컴파일 중에 소스 코드를 실시간으로 분석 하는 반면 레거시 분석은 빌드가 완료 된 후 이진 파일을 분석 합니다. 자세한 내용은 [.NET Compiler Platform 기반 분석 및 레거시 분석](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)을 참조 하세요.
 
 ## <a name="treat-warnings-as-errors"></a>경고를 오류로 처리
 

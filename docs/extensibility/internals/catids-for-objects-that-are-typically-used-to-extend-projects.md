@@ -1,5 +1,6 @@
 ---
 title: 일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf67b12288408feebebff2c33f525713416d4990
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: f69a2de627a0200f7b4eb2185e68d4de5ef2cf08
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742840"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037122"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid
 다음 표에서는 `Project` `ProjectItem` [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , 및 프로젝트의 자동화 개체를 확장 하는 데 사용 되는 catid를 보여 줍니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . 이러한 Catid는 *VSLangProj dte.olb*에 정의 되어 있습니다.

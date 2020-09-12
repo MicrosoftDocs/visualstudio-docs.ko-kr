@@ -1,5 +1,6 @@
 ---
 title: 레거시 언어 서비스에서 자동 창 지원
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: b5eb4a7201888dc52dfe2f801ebc446786ec3274
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741455"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038298"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>레거시 언어 서비스의 자동 창 지원
 
@@ -30,7 +31,7 @@ ms.locfileid: "89741455"
 
  반환 되는 실제 식은 코드에서 해당 위치에 표시 되는 변수 또는 매개 변수의 이름입니다. 이러한 이름은 식 계산기에 전달 되어 **자동** 창에 표시 되는 값과 형식을 가져옵니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  다음 예제에서는 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 구문 분석 이유를 사용 하 여 메서드에서 식의 목록을 가져오는 메서드의 구현을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.ParseReason> . 각 식은 `TestVsEnumBSTR` 인터페이스를 구현 하는로 래핑됩니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> .
 
  `GetAutoExpressionsCount`및 `GetAutoExpression` 메서드는 개체에 대 한 사용자 지정 메서드가 며 `TestAuthoringSink` 이 예제를 지원 하기 위해 추가 되었습니다. 파서 `TestAuthoringSink` 외부에서 메서드를 호출 하 여 개체에 추가 된 식에 액세스할 수 있는 한 가지 방법을 나타냅니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> .

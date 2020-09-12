@@ -1,5 +1,6 @@
 ---
 title: 소스 제어 플러그 인 구현-모범 사례
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739159"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038454"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>소스 제어 플러그 인을 구현 하기 위한 모범 사례
 다음 기술 세부 정보는에서 소스 제어 플러그 인을 안정적으로 구현 하는 데 도움이 될 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

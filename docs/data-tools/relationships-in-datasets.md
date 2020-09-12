@@ -1,5 +1,6 @@
 ---
 title: 데이터 세트 간 관계 만들기
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739229"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037688"
 ---
 # <a name="create-relationships-between-datasets"></a>데이터 세트 간 관계 만들기
 관련 데이터 테이블이 포함 된 데이터 집합 <xref:System.Data.DataRelation> 은 개체를 사용 하 여 테이블 간의 부모/자식 관계를 나타내고 서로 관련 된 레코드를 반환 합니다. **데이터 소스 구성 마법사**를 사용 하 여 데이터 집합에 관련 테이블을 추가 하거나 **데이터 세트 디자이너**를 사용 하 여 개체를 만들고 구성 <xref:System.Data.DataRelation> 합니다.

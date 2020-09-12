@@ -1,6 +1,7 @@
 ---
 title: 확장 팩 만들기
 description: 확장 팩 항목 템플릿을 사용 하 여 확장 팩을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +12,18 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c959660b920abc18be70b228fa6b40de1ab585f8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742914"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037662"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>연습: 확장 팩 만들기
 
 확장 팩은 함께 설치할 수 있는 확장 집합입니다. 확장 팩을 사용 하면 즐겨 찾는 확장을 다른 사용자와 쉽게 공유 하거나 특정 시나리오에 맞게 확장 집합을 묶을 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 Visual studio 2015부터 visual studio SDK는 visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
