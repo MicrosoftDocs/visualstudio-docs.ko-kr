@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5eb619269dfd8922919999249b4ced0b9b98ebb7
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: f986d6727433dc01732232754b2d65d0d7c4ef8f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256207"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038285"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 개요
 
@@ -97,7 +97,7 @@ public void HelloWorldThrowsException167()
 
 추가 리소스:
   * [Channel 9 동영상](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest) 보기
-  * 이 [MSDN Magazine 개요](https://msdn.microsoft.com/magazine/dn904672.aspx) 읽기
+  * 이 [MSDN Magazine 개요](/archive/msdn-magazine/2015/february/visual-studio-2015-build-better-software-with-smart-unit-tests) 읽기
 
 ## <a name="important-attributes"></a>중요한 특성
 

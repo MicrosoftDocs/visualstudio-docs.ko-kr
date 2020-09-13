@@ -21,7 +21,7 @@ ms.locfileid: "90037649"
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn")를 사용 하면 코드 인식 라이브러리를 빌드할 수 있습니다. 코드 인식 라이브러리는 및 도구 (Roslyn 분석기)를 사용 하 여 라이브러리를 가장 적절 한 방법으로 사용 하거나 오류를 방지 하는 데 사용할 수 있는 기능을 제공 합니다. 이 항목에서는 [Roslyn NuGet 패키지](https://www.nuget.org/packages/System.Collections.Immutable) 를 사용 하는 경우 일반적인 오류를 catch 하기 위해 실제 세계 analyzer를 빌드하는 방법을 보여 줍니다. 이 예제에서는 분석기에서 발견 한 코드 문제에 대 한 코드 픽스를 제공 하는 방법도 보여 줍니다. 사용자는 Visual Studio 전구 UI에서 코드 수정 사항을 확인 하 고 코드에 대 한 수정 사항을 자동으로 적용할 수 있습니다.
 
-## <a name="get-started"></a>시작하기
+## <a name="get-started"></a>시작
 
 이 예제를 빌드하려면 다음이 필요 합니다.
 

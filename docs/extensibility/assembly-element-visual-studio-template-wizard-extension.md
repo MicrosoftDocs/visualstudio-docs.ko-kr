@@ -1,6 +1,7 @@
 ---
 title: Assembly 요소(Visual Studio 템플릿 마법사 확장)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bd3bf9694d82ee27001a3cc7a42eb0692c85f0
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 8a26584a16e290da3278c713924d2046d173eec9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739172"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037421"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소 (Visual Studio 템플릿 마법사 확장)
 인터페이스를 구현 하는 어셈블리의 이름 또는 강력한 이름을 지정 합니다 `IWizard` .
@@ -58,7 +59,7 @@ ms.locfileid: "89739172"
 ## <a name="remarks"></a>설명
  `Assembly`은 `WizardExtension`의 필수 자식 요소입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 Windows 응용 프로그램에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```xml

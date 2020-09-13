@@ -23,7 +23,7 @@ ms.locfileid: "90037662"
 
 확장 팩은 함께 설치할 수 있는 확장 집합입니다. 확장 팩을 사용 하면 즐겨 찾는 확장을 다른 사용자와 쉽게 공유 하거나 특정 시나리오에 맞게 확장 집합을 묶을 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 Visual studio 2015부터 visual studio SDK는 visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 

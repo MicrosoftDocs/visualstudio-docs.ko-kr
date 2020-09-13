@@ -28,7 +28,7 @@ ms.locfileid: "90037434"
 > [!IMPORTANT]
 > 코드를 간단히 유지하기 위해 프로덕션에 사용하는 예외 처리는 포함되어 있지 않습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 애플리케이션을 만들려면 다음이 필요 합니다.
 

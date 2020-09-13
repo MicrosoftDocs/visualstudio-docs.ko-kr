@@ -1,6 +1,7 @@
 ---
 title: EnableEditOfLocationField 요소(Visual Studio 템플릿)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9baee9e7497f5b65022b8a0b938f4a8a63140ab2
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741718"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037408"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 요소 (Visual Studio 템플릿)
 사용자가 위치 필드를 편집할 수 있는지 여부를 지정 합니다.
@@ -35,7 +36,7 @@ ms.locfileid: "89741718"
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- None
+ 없음
 
 ### <a name="child-elements"></a>자식 요소
  없음
@@ -56,7 +57,7 @@ ms.locfileid: "89741718"
 
  **새 프로젝트** 대화 상자의 **위치** 텍스트 상자에 새 프로젝트가 저장 되는 디렉터리를 지정 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 Windows 응용 프로그램에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

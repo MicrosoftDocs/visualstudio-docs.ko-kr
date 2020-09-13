@@ -1,6 +1,7 @@
 ---
 title: BuildOnLoad attribute 및 요소 (Visual Studio 템플릿)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 077724bf7038a3ca7010de730993b0f290a66ca4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739142"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036862"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad attribute 및 요소
 
@@ -54,7 +55,7 @@ ms.locfileid: "89739142"
 
 **BuildOnLoad** 는 선택적 특성입니다. 기본값은 `false`입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 **BuildOnLoad** 가 요소로 사용 될 때 c # 템플릿에 대 한 메타 데이터를 보여 줍니다.
 
