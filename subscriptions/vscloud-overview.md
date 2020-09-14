@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: overview
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
 ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248337"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입

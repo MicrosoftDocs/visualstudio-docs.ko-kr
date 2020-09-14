@@ -8,10 +8,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패할 수 있습니다.
 ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234642"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
