@@ -1,20 +1,23 @@
 ---
 title: '방법: 도메인별 언어의 네임 스페이스 변경'
+description: 도메인별 언어의 네임 스페이스를 변경 하는 방법에 대 한 정보를 제공 합니다.
 ms.date: 10/31/2018
 ms.topic: how-to
+titleSuffix: ''
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 747095a876b353aeef76e2f5321e7f2ffc46136f
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542677"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100802"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>방법: 도메인별 언어의 네임 스페이스 변경
 
@@ -52,6 +55,6 @@ ms.locfileid: "85542677"
 
 11. **빌드** 메뉴에서 **솔루션 다시 빌드**를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

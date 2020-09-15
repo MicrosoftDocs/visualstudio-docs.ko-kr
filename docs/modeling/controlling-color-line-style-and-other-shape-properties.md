@@ -1,18 +1,20 @@
 ---
 title: 색, 선 스타일 및 기타 모양 속성 제어
+description: 색 및 선 스타일 같은 셰이프 속성을 제어 하는 방법에 대 한 정보를 제공 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: eee36ad0361f40f23c29c5672b155fc5e5405dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 759c7def23cf8ac0df33a75d25eb5bcbcf44b209
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546681"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100429"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
 

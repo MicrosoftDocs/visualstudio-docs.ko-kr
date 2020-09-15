@@ -1,18 +1,20 @@
 ---
 title: C + + 소스 파일과 헤더 파일 간의 종속성을 참조 하세요.
+description: C + + 프로젝트의 코드 맵에 대 한 정보를 제공 합니다.
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597245"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100442"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 프로젝트에 대 한 코드 맵
 
@@ -49,6 +51,6 @@ C 및 c + + 코드에 대 한 코드 맵을 만들 때 이러한 문제가 발�
 ||디버그 정보가 .pdb 파일에서 제거되었습니다.|**/PDBSTRIPPED** 옵션이 링커에서 사용된 경우 전체 .pdb 파일을 대신 포함합니다.|
 ||호출자가 함수가 아니며 이진 파일의 썽크이거나 데이터 섹션의 포인터입니다.|호출자가 썽크이면 썽크를 방지하기 위해 `_declspec(dllimport)` 를 사용해 봅니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [코드 맵으로 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)

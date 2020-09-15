@@ -1,18 +1,20 @@
 ---
-title: Windows Forms 기반 도메인별 언어 만들기
+title: Windows Forms 기반 도메인 특정 언어 만들기
+description: Windows Forms를 사용 하 여 도메인별 언어 모델의 상태를 표시 하는 방법에 대 한 정보를 제공 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238363"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100455"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
 
@@ -67,9 +69,9 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 ## <a name="update-the-dsl-definition"></a>DSL 정의 업데이트
 
-이 연습에서는 다음 DSL 정의가 사용 됩니다.
+다음 이미지는이 연습에서 사용 되는 DSL 정의입니다.
 
-![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+![DSL 정의](../modeling/media/dsl-wpf-1.png)
 
 1. DSL 디자이너에서 DslDefinition를 엽니다.
 
@@ -127,7 +129,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
      모델 클래스의 속성 및 관계가 데이터 소스 창에 표시 됩니다.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![데이터 소스 창](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>모델을 폼에 연결
 
@@ -172,7 +174,9 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 - 이를 통해 사용자가 행을 선택 하면 데이터 표 행 대신 해당 모델 요소의 속성이 속성 창 표시 됩니다.
 
-  ![](../modeling/media/dslwpf4.png)데이터 원본 및 뷰 간의 링크 스키마를 DslWpf4 합니다.
+  ![DSL 바인딩 스키마](../modeling/media/dslwpf4.png)
+  
+  데이터 원본 및 뷰 간의 링크 스키마입니다.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>DSL에 바인딩 완료
 
@@ -298,7 +302,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
     데이터 표 뷰에서 요소의 이름을 편집할 수 있어야 합니다. 또한 여기에서 삭제할 수 있습니다.
 
-   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![데이터 표 예제 보기](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>요소를 추가 하는 코드 정보
 
@@ -319,7 +323,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 따라서를 사용 하 여 새 요소를 만드는 것이 좋습니다 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> . 자세한 내용은 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
