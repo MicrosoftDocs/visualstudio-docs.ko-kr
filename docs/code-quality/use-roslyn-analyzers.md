@@ -1,5 +1,5 @@
 ---
-title: 코드 품질 분석
+title: 분석기 구성
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036373"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560751"
 ---
-# <a name="configure-code-quality-analysis"></a>코드 품질 분석 구성
+# <a name="overview"></a>개요
 
-.NET 5.0부터 코드 품질 분석기는 .NET SDK에 포함 되어 있습니다. (이전에는 이러한 분석기를 NuGet 패키지로 설치 했습니다.) 코드 분석은 기본적으로 .NET 5.0 이상을 대상으로 하는 프로젝트에 대해 사용 하도록 설정 됩니다. [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 속성을로 설정 하 여 이전 .net 버전을 대상으로 하는 프로젝트에 대해 코드 분석을 사용 하도록 설정할 수 있습니다 `true` . 을로 설정 하 여 프로젝트에 대 한 코드 분석을 사용 하지 않도록 설정할 수도 있습니다 `EnableNETAnalyzers` `false` .
-
-각 코드 품질 분석기 *진단* 또는 규칙에는 프로젝트에 대해 덮어쓰기 및 사용자 지정할 수 있는 기본 심각도 및 비 표시 상태가 있습니다. 이 문서에서는 코드 품질 분석기 심각도 설정 및 분석기 위반 표시를 설명 합니다.
+각 Roslyn analyzer *진단* 또는 규칙에는 프로젝트에 대해 덮어쓰기 및 사용자 지정할 수 있는 기본 심각도 및 비 표시 상태가 있습니다. 이 문서에서는 분석기 심각도 설정 및 분석기 위반 표시를 설명 합니다.
 
 ## <a name="configure-severity-levels"></a>심각도 수준 구성
 
@@ -46,7 +44,7 @@ Visual Studio 2019 버전 16.3 부터는 [Editorconfig 파일](#set-rule-severit
 | 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
 | 정보 | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 회색 상자로 표시 됩니다. |
 | 숨김 | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
-| 없음 | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
+| None | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
 | 기본값 | `default` | 규칙의 기본 심각도에 해당 합니다. 규칙의 기본값을 확인 하려면 속성 창를 확인 합니다. | 규칙의 기본 심각도에 해당 합니다. |
 
 분석기에서 규칙 위반을 발견하면 코드 편집기(위반 코드 아래에 *오류 표시선*이 표시됨) 및 오류 목록 창에 규칙 위반이 보고됩니다.
