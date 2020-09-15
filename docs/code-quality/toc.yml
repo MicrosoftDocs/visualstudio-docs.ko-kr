@@ -580,6 +580,8 @@
                       href: interoperability-warnings.md
                     - name: 'CA1401: P/Invoke는 노출되면 안 됩니다.'
                       href: ca1401.md
+                    - name: 'CA1416: 플랫폼 호환성 유효성 검사'
+                      href: ca1416.md
                     - name: 'CA1417: P/Invokes에 대한 문자열 매개 변수에는 OutAttribute를 사용하지 마세요.'
                       href: ca1417.md
                 - name: 유지 관리 경고

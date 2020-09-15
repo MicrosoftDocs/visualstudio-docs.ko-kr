@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: 자습서
   items:
-    - name: Visual Studio에서 애플리케이션 성능 프로파일링
+    - name: Visual Studio에서 애플리케이션 성능 측정
       href: beginners-guide-to-performance-profiling.md
-    - name: Visual Studio에서 프로필 메모리 사용량
+    - name: Visual Studio에서 메모리 사용량 측정
       href: memory-usage.md
 - name: 개념
   items:

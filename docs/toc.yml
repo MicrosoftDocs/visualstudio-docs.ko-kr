@@ -509,6 +509,8 @@
             - name: 코드 스타일에 EditorConfig 파일 사용
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
+            - name: C++ EditorConfig 서식 지정 규칙
+              href: ide/cpp-editorconfig-properties.md
             - name: .NET 코딩 규칙
               items:
                 - name: 개요
