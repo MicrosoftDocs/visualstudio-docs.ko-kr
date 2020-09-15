@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633124"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426965"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
 
@@ -45,7 +45,7 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 ::: moniker-end
 
 > [!NOTE]
-> 일부 프로젝트 형식은 `ToolsVersion` 대신 `sdk` 특성을 사용합니다. 자세한 내용은 [패키지, 메타데이터, 프레임워크](/dotnet/core/packages) 및 [.NET Core용 csproj 형식에 대한 추가 사항](/dotnet/core/tools/csproj)을 참조하세요.
+> 일부 프로젝트 형식은 `ToolsVersion` 대신 `sdk` 특성을 사용합니다. 자세한 내용은 [.NET Core용 csproj 형식에 대한 추가 사항](/dotnet/core/tools/csproj)을 참조하세요.
 
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion 특성의 작동 방식
 

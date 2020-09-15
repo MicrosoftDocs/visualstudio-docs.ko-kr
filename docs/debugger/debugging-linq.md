@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738196"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509772"
 ---
 # <a name="debugging-linq"></a>LINQ 디버깅
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 몇 가지 제한 사항이 있긴 하지만 LINQ(Language-Integrated Query) 코드의 디버깅을 지원합니다. 단계별 실행, 중단점 설정 및 디버거 창에서 결과 보기와 같은 대부분의 디버깅 기능이 LINQ 문에서 작동합니다. 이 항목에서는 LINQ 디버깅의 주요 제한 사항에 대해 설명합니다.
@@ -105,7 +105,7 @@ End Function
  수정된 쿼리에서는 `IsEven`를 처리할 때마다 `items` 함수를 호출합니다. 디버거 창을 사용하여 각 항목이 지정된 조건에 맞는지 확인할 수 있고, `IsEven`의 코드를 단계별로 실행할 수 있습니다. 이 예제의 조건자는 아주 단순합니다. 그러나 복잡한 조건자를 디버깅해야 하는 경우에는 이 방법이 매우 유용할 수 있습니다.
 
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> LINQ에 편집하며 계속하기가 지원되지 않음
- 편집하며 계속하기는 제한 사항이 있는 LINQ 쿼리 변경을 지원합니다. 자세한 내용은 [EnC 지원 변경](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)을 참조하세요.
+ 편집하며 계속하기는 제한 사항이 있는 LINQ 쿼리 변경을 지원합니다. 자세한 내용은 [EnC 지원 변경](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 

@@ -1,18 +1,18 @@
 ---
-title: Visual Studio 구독 내 소프트웨어 다운로드 관련 제품 가용성 | Microsoft Docs
+title: Visual Studio 구독 내 다운로드 관련 제품 가용성 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 위한 소프트웨어 다운로드 내의 제품 가용성 알아보기
-ms.openlocfilehash: 27950fa2a4589ee5068e7d5f294f651132c229ea
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: c7ab3f717b1af3447d88587e8455f0572fd09d09
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387215"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561483"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독 내 소프트웨어 다운로드 관련 제품 가용성
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.

@@ -3,19 +3,19 @@ title: Mac용 Visual Studio 둘러보기
 description: Mac용 Visual Studio에서는 iOS, Android, Mac, Xamarin.Forms용 Xamarin 프로젝트와 ASP.NET Core 웹 사이트를 비롯하여 macOS에서 .NET 애플리케이션을 빌드하기 위한 통합 개발 환경을 제공합니다.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 12/13/2019
+ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75405825"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402615"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Mac용 Visual Studio 2019 둘러보기
 
-Mac용 Visual Studio는 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 Mac의 .NET _통합 개발 환경_입니다. Mac용 Visual Studio는 표준 편집기 및 디버거와 같은 예상 기능 외에도 컴파일러, 코드 완성 도구, 그래픽 디자이너 및 소프트웨어 개발 프로세스를 위한 소스 제어를 포함하고 있습니다.
+Mac용 Visual Studio는 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 Mac의 .NET _통합 개발 환경_입니다. Mac용 Visual Studio에는 코드 편집기 및 디버거 외에도 컴파일러, 코드 완성 도구, 그래픽 디자이너, 소스 제어 기능이 포함되어 있어 소프트웨어 개발 프로세스가 쉽습니다.
 
 Mac용 Visual Studio는 `.csproj`, `.fsproj` 또는 `.sln` 파일과 같은 Windows 카운터파트와 동일한 여러 파일 형식을 지원하고 EditorConfig와 같은 기능을 지원합니다. 이는 가장 적합한 IDE를 사용할 수 있음을 의미합니다.
 앱을 만들고 열고 개발하는 작업은 이전에 Windows에서 Visual Studio를 사용한 적이 있는 모든 사용자에게 익숙한 경험일 것입니다. 또한 Mac용 Visual Studio에서는 해당하는 Windows 제품을 효과적인 IDE로 만드는 여러 가지 효과적인 도구를 활용합니다. Roslyn 컴파일러 플랫폼은 리팩터링 및 IntelliSense에 사용됩니다. 해당 프로젝트 시스템과 빌드 엔진은 MSBuild를 사용하고, 해당 소스 편집기는 Windows의 Visual Studio와 동일한 기반을 사용합니다. Xamarin 및 .NET Core 앱에 대해 동일한 디버거 엔진을 사용하고, Xamarin.iOS 및 Xamarin.Android에 대해 동일한 디자이너를 사용합니다.
@@ -38,7 +38,7 @@ Mac용 Visual Studio는 애플리케이션 파일 및 설정 관리, 애플리�
 
 ## <a name="getting-started"></a>시작
 
-Mac용 Visual Studio 2019를 시작하면 신규 사용자에게 로그인 창이 표시됩니다. Microsoft 계정으로 로그인하여 유료 라이선스를 활성화하거나(갖고 있는 경우) Azure 구독에 연결합니다. **나중에 하겠습니다.** 를 누른 다음, 나중에 **Visual Studio > 로그인** 메뉴 항목에서 로그인해도 됩니다.
+Mac용 Visual Studio 2019를 처음 시작하는 새 사용자에게는 로그인 창이 표시됩니다. Microsoft 계정으로 로그인하여 유료 라이선스를 활성화하거나(갖고 있는 경우) Azure 구독에 연결합니다. **나중에 하겠습니다.** 를 누른 다음, 나중에 **Visual Studio > 로그인** 메뉴 항목에서 로그인해도 됩니다.
 
 ![Microsoft 계정으로 로그인](media/ide-tour-2019-start-signin.png)
 
@@ -46,7 +46,7 @@ Mac용 Visual Studio 2019를 시작하면 신규 사용자에게 로그인 창�
 
 ![원하는 바로 가기 키 선택](media/ide-tour-2019-keyboard-shortcut.png)
 
-로그인한 사용자에게는 최근 프로젝트 목록과 기존 프로젝트를 열거나 새 프로젝트를 만드는 단추를 보여주는 새로운 _시작 창_이 표시됩니다.
+이 초기 설정 후에는 Mac용 Visual Studio 2019를 열 때마다 최근 프로젝트 목록과 기존 프로젝트를 열거나 새 프로젝트를 만들 수 있는 단추가 표시되는 _시작 창_이 표시됩니다.
 
 ![최근에 사용한 프로젝트 중에서 선택하거나 새로 만들기](media/ide-tour-2019-start-projects.png)
 
@@ -82,7 +82,7 @@ Mac용 Visual Studio에서 참조를 사용하는 방법에 대한 자세한 내
 
 ## <a name="dependencies--packages"></a>종속성/패키지
 
-앱에서 사용되는 모든 외부 종속성은 .NET Core 또는 Xamarin.iOS/Xamarin.Android 프로젝트를 사용 중인지에 따라 종속성 또는 패키지 폴더에 저장됩니다. 일반적으로 NuGet의 형태로 제공됩니다.
+앱에서 사용되는 모든 외부 종속성은 .NET Core와 Xamarin.iOS/Xamarin.Android 중 어떤 프로젝트를 사용 중인지에 따라 종속성 또는 패키지 폴더에 저장됩니다. 일반적으로 NuGet의 형태로 제공됩니다.
 
 NuGet은 가장 인기 있는 .NET 개발용 패키지 관리자입니다. Visual Studio의 NuGet 지원을 통해 쉽게 패키지를 검색하고 프로젝트 또는 애플리케이션에 추가할 수 있습니다.
 
@@ -94,7 +94,7 @@ NuGet은 가장 인기 있는 .NET 개발용 패키지 관리자입니다. Visua
 
 ## <a name="source-editor"></a>소스 편집기
 
-C#, XAML, Javascript 중 어떤 언어로 작성하든 간에 코드 편집기는 완전한 네이티브 사용자 인터페이스를 사용하여 Visual Studio Windows와 동일한 핵심 구성 요소를 공유합니다.
+C#, XAML, JavaScript 중 어떤 언어로 작성하든 코드 편집기는 완전한 네이티브 사용자 인터페이스를 사용하여 Windows에서 동일한 핵심 구성 요소를 Visual Studio와 공유합니다.
 
 따라서 다음과 같은 기능이 제공됩니다.
 

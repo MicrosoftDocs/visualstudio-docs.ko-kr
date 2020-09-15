@@ -1,18 +1,18 @@
 ---
-title: MPN(Microsoft 파트너 네트워크)를 통해 제공된 Visual Studio 구독 관리 | Microsoft Docs
+title: Microsoft 파트너 네트워크에서 Visual Studio 구독 관리 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Visual Studio 구독을 MPN 파트너에 대한 최종 사용자에게 할당하는 방법입니다.
-ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250717"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561379"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)를 통해 제공된 Visual Studio 구독 관리
 역량을 구하거나 MPN에서 Action Pack을 구매하는 파트너는 Visual Studio 구독을 사용할 자격이 있습니다. 이러한 구독은 사용자별로 라이선스가 발급되며 파트너 회사에 근무하는 특정 지명 사용자에게 할당된 경우만 유효합니다.

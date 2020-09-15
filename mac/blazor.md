@@ -3,25 +3,25 @@ title: Blazor 웹앱 만들기
 description: Mac용 Visual Studio에 있는 ASP.NET Core 앱의 Blazor 지원에 관한 정보를 제공합니다.
 author: jongalloway
 ms.author: jogallow
-ms.date: 12/17/2019
+ms.date: 08/31/2020
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
 no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 86a8c35d2a379d6afbbe6cf55f53346223e7c462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dcc254366e0d652ab7a8442a4d0c526fd72c403
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "86211595"
+ms.locfileid: "89402538"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Blazor 웹앱 만들기
 
 이 가이드에서는 첫 번째 Blazor 웹앱을 만드는 방법을 설명합니다. 자세한 지침은 [ASP.NET Core 소개Blazor](/aspnet/core/blazor/index)를 참조하세요.
 
-ASP.NET Core Blazor는 두 가지 호스팅 옵션인 Blazor Server 및 Blazor WebAssembly를 지원합니다. Mac용 Visual Studio는 두 호스팅 모델을 모두 지원합니다. Mac용 Visual Studio 8.4 이상 버전에서는 Blazor Server를 지원하고, Mac용 Visual Studio 8.6 이상 버전에서는 둘 다 지원합니다. Blazor 호스팅 모델에 관한 자세한 내용은 [ASP.NET Core Blazor 호스팅 모델](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)을 참조하세요. Mac용 Visual Studio에서 Blazor WebAssembly 프로젝트 디버깅 지원은 8.6 이후의 릴리스에서 제공될 예정입니다.
+ASP.NET Core Blazor는 두 가지 호스팅 옵션 Blazor WebAssembly(WASM) 또는 Blazor Server를 지원합니다. Mac용 Visual Studio는 두 호스팅 모델을 모두 지원합니다. Mac용 Visual Studio 8.4 이상 버전에서는 Blazor Server를 지원하고, Mac용 Visual Studio 8.6 이상 버전에서는 둘 다 지원합니다. Blazor 호스팅 모델에 관한 자세한 내용은 [ASP.NET Core Blazor 호스팅 모델](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)을 참조하세요. Mac용 Visual Studio에서 Blazor WebAssembly 프로젝트 디버깅에 대한 지원은 미리 보기 v8.8에서 사용할 수 있습니다(**Visual Studio > 업데이트 확인...** 메뉴에서 미리 보기 업데이트 채널을 통해 사용할 수 있음).
 
 Blazor란? Blazor는 .NET을 사용하여 대화형 클라이언트 쪽 웹 UI를 빌드하기 위한 프레임워크로, 웹 개발자에게 다음과 같은 이점을 제공합니다.
 
@@ -31,6 +31,27 @@ Blazor란? Blazor는 .NET을 사용하여 대화형 클라이언트 쪽 웹 UI�
 * .NET의 성능, 안정성 및 보안을 활용합니다.
 * PC, Linux 및 macOS에서 Visual Studio를 사용하여 생산성을 유지합니다.
 * 안정적이고, 기능이 풍부하고, 사용하기 쉬운 공통 언어, 프레임워크 및 도구 세트를 기반으로 빌드합니다.
+
+## <a name="create-a-new-no-locblazor-webassembly-project"></a>새 Blazor WebAssembly 프로젝트 만들기
+1. **시작 창**에서 **새로 만들기**를 선택하여 새 프로젝트를 만듭니다.
+
+   ![새 선택 영역이 강조 표시된 Mac용 Visual Studio 시작 창](media/blazor-new-project.png)
+
+1. **새 프로젝트** 대화 상자에서 **.NET Core** > **앱** > **Blazor WebAssembly 앱**을 선택하고 **다음**을 선택합니다. ![Blazor Server 앱 템플릿이 선택된 새 프로젝트 템플릿 선택 대화 상자](media/blazor-wasm-project-template.png)
+
+1. 대상 프레임워크로 .NET Core 3.1을 선택하고 **다음**을 선택합니다. 
+   ![대상 프레임워크가 .NET Core 3.1로 선택되어 표시된 새 Blazor WebAssembly 앱 구성 대화 상자](media/blazor-wasm-select-target-framework.png)
+
+1. 프로젝트 이름을 선택하고 필요한 경우 Git 지원을 추가합니다. **만들기**를 선택하여 프로젝트를 만듭니다.
+    ![프로젝트 이름을 입력하는 동안 표시되는 새 Blazor WebAssembly 앱 구성 대화 상자](media/blazor-wasm-name-project.png)
+
+   Mac용 Visual Studio에서 프로젝트가 코드 레이아웃 창에 열립니다.
+
+1. **실행** > **디버깅하지 않고 시작**을 선택하여 앱을 실행합니다.
+
+   Visual Studio에서 [Kestrel](/aspnet/core/fundamentals/servers/kestrel)을 시작하고 브라우저에서 `https://localhost:5001`을 열어 첫 번째 Blazor 웹앱을 표시합니다.
+
+   ![Microsoft Edge의 Blazor 웹앱](media/blazor-new-app-in-edge.png)
 
 ## <a name="creating-a-new-no-locblazor-server-project"></a>새 Blazor Server 프로젝트 만들기
 
@@ -43,23 +64,23 @@ Blazor란? Blazor는 .NET을 사용하여 대화형 클라이언트 쪽 웹 UI�
    ![대상 프레임워크가 .NET Core 3.1로 선택된 새 Blazor Server 앱 구성 대화 상자](media/blazor-select-target-framework.png)
 
 1. 프로젝트 이름을 선택하고 필요한 경우 Git 지원을 추가합니다. **만들기**를 선택하여 프로젝트를 만듭니다.
-   ![프로젝트 이름을 입력하는 동안 표시되는 새 Blazor Server 앱 구성 대화 상자](media/blazor-name-project.png)
+   ![대상 프레임워크가 .NET Core 3.1로 선택된 새 Blazor Server 앱 구성 대화 상자](media/blazor-name-project.png)
 
    Mac용 Visual Studio에서 프로젝트가 코드 레이아웃 창에 열립니다.
 1. **실행** > **디버깅하지 않고 시작**을 선택하여 앱을 실행합니다.
 
    Visual Studio에서 [Kestrel](/aspnet/core/fundamentals/servers/kestrel)을 시작하고 브라우저에서 `https://localhost:5001`을 열어 첫 번째 Blazor 웹앱을 표시합니다.
 
-   ![Safari의 Blazor 웹앱](media/blazor-new-app-in-edge.png)
+   ![Microsoft Edge의 Blazor 웹앱](media/blazor-new-app-in-edge.png)
 
 ## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 Blazor 지원
 
 Mac용 Visual Studio(버전 8.4부터)에는 새 Blazor Server 프로젝트를 만드는 데 도움이 되는 새로운 기능이 포함되어 있습니다. 또한 Blazor 프로젝트를 빌드, 실행 및 디버깅과 같은 표준 지원을 제공합니다. Mac용 Visual Studio 8.6에서는 Blazor WebAssembly 프로젝트 만들기, 빌드 및 실행이 추가로 지원됩니다.
 
-위의 연습에서는 Blazor Server 앱 프로젝트 템플릿을 사용하여 새 Blazor Server 앱 프로젝트를 만드는 방법을 살펴보았습니다. Mac용 Visual Studio에서 Blazor 프로젝트 개발을 지원하기 위한 추가 기능 중 일부를 살펴보겠습니다.
+위의 연습에서는 Blazor Server 앱 프로젝트 템플릿을 사용하여 새 Blazor Server 앱 또는 Blazor WebAssembly 앱 프로젝트를 만드는 방법을 살펴보았습니다. Mac용 Visual Studio에서 Blazor 프로젝트 개발을 지원하기 위한 추가 기능 중 일부를 살펴보겠습니다.
 
 ### <a name="editor-support-for-razor-files"></a>*.razor* 파일에 대한 편집기 지원
-Mac용 Visual Studio에는 Blazor 애플리케이션을 만들 때 주로 사용하는 .razor 파일을 편집하는 기능이 포함되어 있습니다. IDE의 Windows 및 Mac 버전은 .razor 파일에 대해 동일한 편집기를 공유합니다. 프로젝트에 선언된 Razor 구성 요소에 대한 완성을 포함하여 .razor 파일에 대한 전체 색 지정 및 완성 지원이 표시됩니다.
+Mac용 Visual Studio에는 Blazor 애플리케이션을 만들 때 주로 사용하는 .razor 파일을 편집하는 기능이 포함되어 있습니다. Mac용 Visual Studio는 프로젝트에 선언된 Razor 구성 요소 완성을 포함하여 .razor 파일에 대한 전체 색 지정 및 완성 지원을 제공합니다.
 
 ![Blazor에 대한 Intellisense를 보여 주는 Mac용 Visual Studio 편집기 창](media/blazor-intellisense.png)
 
@@ -94,12 +115,19 @@ Blazor 웹앱은 기본적으로 몇 가지 디렉터리와 파일을 포함합�
 
 이 파일에는 프로그램 진입점이 포함되어 있습니다. 자세한 내용은 [ASP.NET Core 웹 호스트](/aspnet/core/fundamentals/host/web-host)를 참조하세요.
 
-### <a name="startupcs"></a>Startup.cs
+### <a name="no-locblazor-server-app-specific-files"></a>Blazor Server 앱 관련 파일
+#### <a name="app-settings"></a>앱 설정
+
+*appSettings.json* 파일에는 연결 문자열과 같은 구성 데이터가 포함되어 있습니다.
+
+구성에 대한 자세한 내용은 [ASP.NET의 구성 가이드](/aspnet/core/fundamentals/configuration/index)를 참조하세요.
+
+#### <a name="startupcs"></a>Startup.cs
 
 이 파일에는 앱에서 쿠키에 대한 동의 필요 여부 등의 앱 동작을 구성하는 코드가 포함되어 있습니다. 자세한 내용은 [ASP.NET Core에서 앱 시작](/aspnet/core/fundamentals/startup)을 참조하세요.
 
 ## <a name="summary"></a>요약
-이 자습서에서는 Mac용 Visual Studio에서 새로운 Blazor Server 앱을 만드는 방법과 Mac용 Visual Studio에서 Blazor 애플리케이션을 만드는 데 도움이 되도록 제공하는 기능 중 일부에 대해 알아보았습니다.
+이 자습서에서는 Mac용 Visual Studio에서 새로운 Blazor Server 앱 또는 Blazor WebAssembly 앱을 만드는 방법과 Mac용 Visual Studio에서 Blazor 애플리케이션을 만드는 데 도움이 되도록 제공하는 기능 중 일부에 대해 알아보았습니다.
 
 ## <a name="see-also"></a>참조
 

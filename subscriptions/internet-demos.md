@@ -1,18 +1,18 @@
 ---
 title: 제품 키를 사용하여 터미널 서비스를 통한 인터넷 데모 지원 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: 제품 키를 사용하여 터미널 서비스를 통한 인터넷 데모를 지원하고 RDS 액세스를 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232435"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561314"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>터미널 서비스를 통한 인터넷 데모
 Visual Studio 구독을 사용하면 최종 사용자가 터미널 서비스(Windows Server 2003 또는 Windows Server 2008) 또는 원격 데스크톱 서비스(Windows Server 2008 R2 이상)를 통해 프로그램의 인터넷 데모에 액세스할 수 있는 권한을 제공할 수 있습니다. 최대 200명의 익명 사용자가 이러한 방법으로 동시에 데모에 액세스할 수 있습니다. 데모에서 프로덕션 데이터를 사용하면 안됩니다. Visual Studio 구독자에게는 자신의 애플리케이션을 최종 사용자에게 시연할 수 있는 라이선스가 부여됩니다. TS(터미널 서비스) 또는 RDS(원격 데스크톱 서비스)를 사용한 이 인터넷 데모는 Visual Studio 구독을 통해 소프트웨어에 라이선스가 부여되었을 때 Visual Studio 구독이 없는 최종 사용자가 데모 애플리케이션과 상호 작용할 수 있는 유일한 시나리오입니다.

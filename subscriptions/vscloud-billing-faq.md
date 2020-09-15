@@ -1,18 +1,18 @@
 ---
-title: Visual Studio Enterprise 및 Visual Studio Professional 클라우드에 대한 구독 청구 FAQ
+title: Visual Studio 클라우드 구독 청구 FAQ | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 03/24/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249377"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561327"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.

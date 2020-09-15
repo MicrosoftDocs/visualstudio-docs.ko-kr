@@ -1,18 +1,18 @@
 ---
-title: 선택한 Visual Studio 구독의 DataCamp 혜택을 통해 데이터 과학 역량을 증대합니다. | Microsoft 문서
+title: Visual Studio 구독에서 DataCamp로 데이터 과학 기술 증대 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904519"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561496"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 적격 Visual Studio 구독에는 DataCamp 구독이 포함됩니다.  DataCamp를 사용하면 브라우저에서 편안하게 필요한 데이터 과학 기술을 학습할 수 있습니다. 학습 시기와 대상을 선택하게 됩니다. 소프트웨어 설치나 특수 하드웨어 요구 사항이 필요하지 않으므로 전에 없이 쉽게 데이터 과학을 학습할 수 있습니다.
@@ -83,7 +83,7 @@ ms.locfileid: "85904519"
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

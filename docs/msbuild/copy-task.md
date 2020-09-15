@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634372"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508043"
 ---
 # <a name="copy-task"></a>Copy 작업
 
@@ -42,7 +42,7 @@ ms.locfileid: "77634372"
 |`DestinationFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 소스 파일을 복사할 파일의 목록을 지정합니다. 이 목록은 `SourceFiles` 매개 변수에 지정된 목록이 포함된 일대일 매핑이어야 합니다. 즉, `SourceFiles`에 지정된 첫 번째 파일이 `DestinationFiles` 등에 지정된 첫 번째 위치에 복사됩니다.|
 |`DestinationFolder`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 파일을 복사하려는 디렉터리를 지정합니다. 파일이 아닌 디렉터리여야 합니다. 디렉터리가 없는 경우 자동으로 생성됩니다.|
 |`OverwriteReadOnlyFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 파일이 읽기 전용으로 표시된 경우에 파일을 덮어씁니다.|
-|`Retries`|선택적 `Int32` 매개 변수입니다.<br /><br /> 이전 시도가 모두 실패한 경우 복사를 시도할 횟수를 지정합니다. 기본값은 0입니다.<br /><br /> **참고:** 다시 시도하면 빌드 프로세스에서 동기화 문제를 마스킹할 수 있습니다.|
+|`Retries`|선택적 `Int32` 매개 변수입니다.<br /><br /> 이전 시도가 모두 실패한 경우 복사를 시도할 횟수를 지정합니다. 기본값은 0입니다.<br /><br /> **주의:** 다시 시도하면 빌드 프로세스에서 동기화 문제를 마스킹할 수 있습니다.<br /><br /> **참고:** 작업 기본값은 다시 시도 0이지만 작업 사용은 기본적으로 0이 아닌 `$(CopyRetryCount)`를 전달하는 경우가 많습니다.|
 |`RetryDelayMilliseconds`|선택적 `Int32` 매개 변수입니다.<br /><br /> 필요한 다시 시도 간의 지연 시간을 지정합니다. 기본값은 CopyTask 생성자에 전달되는 RetryDelayMillisecondsDefault 인수입니다.|
 |`SkipUnchangedFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 소스와 대상 간에 변경되지 않은 파일의 복사를 건너뜁니다. 파일 크기가 같고 마지막으로 수정된 시간이 같으면 `Copy` 작업에서 파일이 변경되지 않은 것으로 간주합니다. <br /><br /> **참고:**  이 매개 변수를 `true`로 설정하면 포함 대상에 대한 종속성 분석을 사용하지 않아야 합니다. 소스 파일의 마지막으로 수정된 시간이 대상 파일의 마지막으로 수정된 시간보다 더 최신일 경우에만 작업을 수행하기 때문입니다.|
 |`SourceFiles`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 복사할 파일을 지정합니다.|

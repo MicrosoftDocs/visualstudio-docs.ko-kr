@@ -1,18 +1,18 @@
 ---
-title: 구독 관리 포털에 새 월간 Visual Studio 구독 추가 | Microsoft Docs
+title: 구독 관리 포털에 새 월간 구독 추가 | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 06/23/2020
+ms.date: 09/03/2020
 ms.topic: how-to
 description: 구독 관리 포털에 새로 구매한 월간 Visual Studio 구독을 추가하는 방법을 알아봅니다.
-ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904701"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561405"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>구독 관리 포털에 새 월간 Visual Studio 구독 추가
 Azure 구독을 사용하여 새 월간 Visual Studio 구독을 구입하는 경우 사용자에게 구독을 할당하려면 해당 구독을 구독 관리 포털에 추가해야 할 수 있습니다.  
@@ -25,17 +25,17 @@ Azure 구독을 사용하여 새 월간 Visual Studio 구독을 구입하는 경
 
 ## <a name="how-to-add-monthly-subscriptions"></a>월간 구독을 추가하는 방법
 1. <https://manage.visualstudio.com>에서 구독 관리 포털에 로그인합니다.
-1. **구독자 관리** 탭에서 **새 계약** 드롭다운을 선택합니다. 
+1. **구독자 관리** 탭에서 **계약 추가** 드롭다운을 선택합니다. 
 1. 드롭다운에서 **새 월간 구독**을 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![새 월간 구독 추가 드롭다운](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![새 월간 구독 추가 드롭다운](_img/add-monthly-subs/add-subs-drop-down.png "'계약 추가'를 선택한 다음 '새 월간 구독'을 선택합니다.")
 1. 시스템은 사용자에게 사용자 액세스 관리자 권한이 있는 Azure 구독을 검색하고 해당 Azure 구독을 사용하여 구매한 모든 Visual Studio 구독을 가져옵니다.
 1. 사용자에게 사용자 액세스 관리자 권한이 있는 Azure 구독을 찾을 수 없거나 적격 Azure 구독이 있지만 Visual Studio 구독을 찾을 수 없는 경우 다음 메시지가 표시됩니다.
    > [!div class="mx-imgBorder"]
-   > ![새 월간 구독을 찾을 수 없음](_img/add-monthly-subs/no-subs-found.png)
+   > ![새 월간 구독을 찾을 수 없음](_img/add-monthly-subs/no-subs-found.png "사용할 수 있는 Azure 구독 또는 Visual Studio 구독이 없음을 나타내는 오류 메시지.")
 1. 시스템이 새 월간 구독을 찾으면 사용자에게 확인 메시지를 보냅니다.
    > [!div class="mx-imgBorder"]
-   > ![구독 추가 확인 메시지](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![구독 추가 확인 메시지](_img/add-monthly-subs/subs-added-confirmation.png "추가한 구독이 확인 메시지에 표시됩니다.")
 
 ## <a name="things-to-keep-in-mind"></a>주의할 사항
 - 새 월간 구독을 추가하는 옵션은 처음 구입할 때만 사용할 수 있습니다.  월간 구독이 추가된 후에는 사용자가 포털에 로그인할 때마다 시스템이 새 구독을 검색합니다. 

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5159b73058c73c925cae644c2e3ddd2bc84ac41
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634554"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508524"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 작업
 
@@ -30,9 +30,10 @@ ms.locfileid: "77634554"
 
 |매개 변수|Description|
 |---------------|-----------------|
+|`ProjectReferences`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 입력 매개 변수입니다.<br /><br /> 구성할 프로젝트입니다.|
 |`SolutionConfigurationContents`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 각 프로젝트에 대한 프로젝트 구성을 포함하는 XML 문자열을 포함합니다. 구성은 명명된 프로젝트에 할당됩니다.|
-|`DefaultToVcxPlatformMapping`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 대부분의 형식에 사용되는 플랫폼 이름과 *.vcxproj* 파일에 사용되는 플랫폼 이름 간의 매핑을 세미콜론으로 구분한 목록을 포함합니다.<br /><br /> 다음은 그 예입니다.<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
-|`VcxToDefaultPlatformMapping`|옵션<br /><br /> `string` 출력 매개 변수입니다.<br /><br /> *.vcxproj* 플랫폼 이름에서 대부분의 형식에 사용되는 플랫폼 이름으로의 매핑 목록을 세미콜론으로 구분하여 포함합니다.<br /><br /> 다음은 그 예입니다.<br /><br /> `"Win32=AnyCPU;X64=X64"`|
+|`DefaultToVcxPlatformMapping`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 대부분의 형식에 사용되는 플랫폼 이름과 *.vcxproj* 파일에 사용되는 플랫폼 이름 간의 매핑을 세미콜론으로 구분한 목록을 포함합니다.<br /><br /> 예를 들면 다음과 같습니다.<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
+|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` 출력 매개 변수입니다.<br /><br /> *.vcxproj* 플랫폼 이름에서 대부분의 형식에 사용되는 플랫폼 이름으로의 매핑 목록을 세미콜론으로 구분하여 포함합니다.<br /><br /> 예를 들면 다음과 같습니다.<br /><br /> `"Win32=AnyCPU;X64=X64"`|
 |`CurrentProjectConfiguration`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 현재 프로젝트에 대한 구성을 포함합니다.|
 |`CurrentProjectPlatform`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 현재 프로젝트에 대한 플랫폼을 포함합니다.|
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|선택적 `bool` 출력 매개 변수입니다.<br /><br /> 프로젝트 구성에서 사용되지 않은 경우에도 참조를 빌드해야 함을 나타내는 플래그를 포함합니다.|

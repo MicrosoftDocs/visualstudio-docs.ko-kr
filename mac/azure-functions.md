@@ -1,18 +1,18 @@
 ---
 title: Azure Functions 소개
 description: Mac용 Visual Studio에서 Azure Functions 사용
-author: sayedihashimi
-ms.author: sayedha
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938651"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402319"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 소개
 
@@ -159,4 +159,4 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
 
 - **Image Resizer** - Blob가 컨테이너에 추가될 때마다 크기 조정된 이미지를 만드는 함수입니다. 이 템플릿은 트리거, 소형 이미지 출력, 중간 이미지 출력을 위해 경로 및 연결을 사용합니다.
 
-- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한**도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부, 사용할 키, 함수의 함수 키 사용, 관리자의 마스터 키 사용을 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://github.com/Azure-Samples/functions-dotnet-sas-token/) 샘플을 참조하세요.
+- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한**도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부와 사용할 키(함수는 함수 키 사용, 관리자는 계정 액세스 키 사용)를 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://github.com/Azure-Samples/functions-dotnet-sas-token/) 샘플을 참조하세요.

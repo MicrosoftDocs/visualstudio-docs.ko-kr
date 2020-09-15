@@ -2,17 +2,17 @@
 title: Visual Studio 구독의 Pluralsight 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 04/20/2020
+ms.date: 08/04/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375900"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509759"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -23,35 +23,50 @@ ms.locfileid: "87375900"
  구독 유형에 따라, Visual Studio 구독을 통해 제공된 Pluralsight 구독을 이전에 사용한 적이 있는 일부 구독자는 새 Pluralsight 혜택 제안을 사용할 수 없습니다. 추가적인 Pluralsight 교육 혜택을 사용할 자격이 없는 경우 Pluralsight 웹 사이트에서 혜택을 활성화하려고 하면 알림을 받게 됩니다.
 
 ## <a name="activation-steps"></a>활성화 단계
-1. 구독을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 연결하고 전문적인 개발 섹션에 있는 Pluralsight 혜택 타일에서 **코드 가져오기** 링크를 클릭합니다.
+1. 구독을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 연결하고 Pluralsight 혜택 타일에서 **활성화** 링크를 클릭합니다.  그룹 필터를 선택하면 표시되는 타일 목록의 범위를 좁힐 수 있습니다.  Pluralsight는 전문 개발 혜택 그룹에 있습니다.
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight 혜택 타일](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
-   >
-   > [!IMPORTANT]
-   > Pluralsight 혜택 타일에서 “코드 얻기” 링크를 클릭하면 다음 메시지가 표시될 수 있습니다.
-   >
-   > **"참고:   Visual Studio 구독을 통해 이전에 다른 Pluralsight 제안을 활성화한 경우 새 Pluralsight 계정을 만드는 데 이 코드를 사용할 수 없습니다."**
+   > ![Pluralsight 혜택 타일](_img/vs-pluralsight/vs-pluralsight-tile.png "혜택을 요청하려면 활성화를 클릭하세요.")
 
-2. 쿠폰 코드가 성공적으로 검색되었다는 알림을 받게 됩니다.  **활성화**를 클릭합니다.
-
-3. Visual Studio 구독에 포함된 혜택의 Pluralsight 페이지로 리디렉션됩니다.
+(위의 타일은 Visual Studio Enterprise 구독자에게 표시되는 것의 예입니다.  다른 Visual Studio 구독을 사용하는 경우에는 Pluralsight 혜택 기간이 달라집니다.  자세한 내용은 자격 표를 참조하세요.)
+1. Visual Studio 구독에 포함된 혜택의 Pluralsight 페이지로 리디렉션됩니다.
    - 양식에 요청받은 연락처 정보를 제공합니다.
-   - 확인란을 클릭하여 사용 약관 및 개인정보처리방침에 동의합니다.
-   - **혜택 활성화에 동의함**을 클릭합니다.
+   - 확인란을 클릭하여 사용 약관에 동의합니다.
+   - **사용**을 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight에서 혜택 활성화](_img/vs-pluralsight/vs-pluralsight-create-account.png)
+   > ![Pluralsight 등록](_img/vs-pluralsight/vs-pluralsight-registration.png "등록 양식을 작성하고 사용 약관에 동의하는 확인란을 클릭한 다음 사용을 클릭합니다.")
 
-5. 계정을 설정하는 데 시간이 걸릴 수 있습니다.  완료되면 페이지에 확인이 표시되고 로그인 정보가 포함된 전자 메일을 받게 됩니다.  계정을 생성할 때 지정한 별칭으로 전자 메일이 발송됩니다.  메시지를 찾은 데 문제가 있는 경우 정크 또는 스팸 메일 폴더를 확인해야 합니다.
+   > [!NOTE]
+   > 등록 페이지는 몇 분 후에 만료됩니다.  페이지가 만료되기 전에 등록 프로세스를 완료하지 않은 경우 <https://my.visualstudio.com/benefits> 페이지의 Pluralsight 타일로 돌아가서 **활성화**를 다시 클릭합니다. 
+
+1. 계정을 설정하는 데 시간이 걸릴 수 있습니다.  완료된 후 페이지에 확인 메시지가 표시되고 로그인 정보가 포함된 이메일을 받게 됩니다.  계정을 생성할 때 지정한 별칭으로 전자 메일이 발송됩니다.  메시지를 찾은 데 문제가 있는 경우 정크 또는 스팸 메일 폴더를 확인해야 합니다.
 
    > [!NOTE]
    > 해당 계정으로 새 제품을 사용할 자격이 없는 경우, 자격이 없기 때문에 계정 생성에 문제가 발생했음을 설명하는 전자 메일을 받게 됩니다.  전자 메일에는 Pluralsight의 지원 팀에 문의하는 데 도움이 되는 정보도 포함되어 있습니다. Pluralsight의 지원 팀은 계정에 대한 문의 사항에 답변해 드립니다.
-   
 
-6. 계정이 생성되면 사용자 이름이 들어 있고 암호 생성을 요청하는 전자 메일을 받게 됩니다.  암호를 입력하고 다시 입력하여 확인한 다음 **Log in to Pluralsight**(Pluralsight에 로그인)를 클릭합니다.
+1. **암호 설정**을 클릭합니다.
 
-7. 환영 전자 메일에 제공된 사용자 이름을 입력하고 방금 만든 암호를 입력한 다음 **로그인**을 클릭합니다.
+1. **새 암호** 필드에 원하는 암호를 입력하고 **암호 확인** 필드에 다시 입력한 다음 **저장**을 클릭합니다.
 
-8. 정말 간단하죠.  이제 수천 개의 Pluralsight 과정으로 학습을 시작할 준비가 되었습니다.
+1. 정말 간단하죠.  이제 수천 개의 Pluralsight 과정으로 학습을 시작할 준비가 되었습니다.
+
+## <a name="status-of-your-pluralsight-subscription"></a>Pluralsight 구독 상태
+Pluralsight 혜택을 활성화한 후에는 Visual Studio 구독 포털에서 타일의 모양이 변경되어 구독 상태를 추적하는 데 도움이 됩니다.  
+
+### <a name="while-your-subscription-is-active"></a>구독이 활성 상태일 때
+이제 ‘활성화’ 단추 대신 클릭하면 Pluralsight 포털로 직접 이동하여 로그인 후 학습을 계속할 수 있게 하는 작은 원형 단추가 표시됩니다.  
+
+타일 위쪽 Pluralsight 제목 아래에 남은 Pluralsight 구독 기간을 보여주는 텍스트가 표시됩니다.  구독이 60일 내에 만료되는 경우 월이 아닌 남은 일수를 표시하도록 텍스트가 전환됩니다.  
+
+타일 아래쪽에는 Pluralsight 구독 활성화 날짜와 만료 날짜를 보여 주는 텍스트가 표시됩니다.
+
+   > [!div class="mx-imgBorder"]
+   > ![활성화 후 Pluralsight 타일](_img/vs-pluralsight/vs-pluralsight-activated.png "활성화된 후에는 타일에 남은 구독 일수와 만료 날짜 및 Pluralsight 포털로 연결되는 링크가 표시됩니다.")
+
+### <a name="when-your-subscription-expires"></a>구독이 만료될 때
+Pluralsight 구독이 만료되면 상태가 ‘0일 남음’으로 변경되고 Pluralsight 포털로 연결되는 링크가 제거됩니다. 구독을 활성화한 날짜와 구독 만료 날짜는 여전히 볼 수 있습니다.  
+   > [!div class="mx-imgBorder"]
+   > ![만료 후 Pluralsight 타일](_img/vs-pluralsight/vs-pluralsight-expired.png "만료 후에는 Pluralsight로 연결되는 링크가 제거되고 구독이 활성화된 날짜가 타일 아래쪽에 표시됩니다.")
+
 
 ## <a name="eligibility"></a>자격
 
@@ -83,6 +98,9 @@ A: 일부 Visual Studio Enterprise 구독에는 Pluralsight 혜택이 포함되�
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Q: 맞춤화된 학습 재생 목록이나 채널에 액세스할 수 있나요?
 A: 예. Visual Studio 구독자는 Pluralsight 교육 혜택의 일부로 추천 역할, 학습 경로 및 사용자 지정 채널(재생 목록)에 액세스할 수 있습니다. 추천 콘텐츠는 Microsoft와 Pluralsight에서 특별히 준비했으며 관심 있는 주요 영역의 학습에 초점을 둡니다. Pluralsight 홈페이지에서 이 콘텐츠 및 다른 콘텐츠에 액세스하려면 Visual Studio 구독 포털(<https://my.visualstudio.com/benefits>)을 통해 Pluralsight 혜택을 활성화합니다.
+
+### <a name="q-the-pluralsight-tile-doesnt-have-an-activate-link-how-can-i-activate-the-benefit"></a>Q: Pluralsight 타일에 ‘활성화’ 링크가 없습니다. 혜택을 활성화려면 어떻게 해야 하나요?
+A:  Pluralsight 혜택을 이미 활성화한 경우에는 ‘활성화’ 링크가 Pluralsight 로그인 페이지로 연결되는 링크로 대체됩니다.  또한 혜택을 활성화한 날짜와 남은 구독 기간에 대한 정보를 볼 수 있습니다.  이미 구독을 사용한 경우에는 다른 구독을 활성화할 수 없습니다.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Q: Pluralsight 구독이 만료되면 어떻게 되나요?
 A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 구매할 수 있습니다.  자세한 내용은 [Pluralsight](https://www.pluralsight.com)에 문의하세요.

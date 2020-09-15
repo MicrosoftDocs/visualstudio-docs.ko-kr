@@ -1,17 +1,17 @@
 ---
 title: 코드 리팩터링
 description: Mac용 Visual Studio 및 빠른 작업을 사용하여 코드를 개선합니다.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691293"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402592"
 ---
 # <a name="refactoring"></a>리팩터링
 
@@ -31,9 +31,9 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
 ![이름 바꾸기 및 식별자](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>빠른 작업
+## <a name="quick-actions-and-refactorings"></a>빠른 작업 및 리팩터링
 
-빠른 작업을 사용하면 단일 작업으로 쉽게 코드를 리팩터링하거나, 생성하거나, 수정할 수 있습니다.
+빠른 작업과 리팩터링을 사용하면 단일 작업으로 쉽게 코드를 리팩터링하거나 생성하거나 수정할 수 있습니다.
 
 빠른 작업은 다음에 사용할 수 있습니다.
 
@@ -55,7 +55,7 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
    ![마우스로 가리킨 전구](media/refactoring-lightbulb-hover.png)
 
-- 빠른 작업을 사용할 수 있는 코드 줄로 캐럿을 옮기면 전구 및 스크루드라이버가 편집기의 왼쪽 여백에 나타납니다.
+- 빠른 작업 또는 리팩터링을 사용할 수 있는 코드 줄로 캐럿을 옮기면 전구 및 스크루드라이버가 편집기의 왼쪽 여백에 나타납니다.
 
 - **옵션(⌥)** +**Enter**를 눌러 사용 가능한 빠른 작업 및 리팩토링 목록을 어디에서나 볼 수 있습니다.
 
@@ -93,7 +93,7 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빠른 작업(Windows의 Visual Studio)](/visualstudio/ide/quick-actions)
 - [코드 리팩터링(Windows의 Visual Studio)](/visualstudio/ide/refactoring-in-visual-studio)

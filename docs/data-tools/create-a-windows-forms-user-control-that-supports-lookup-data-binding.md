@@ -55,7 +55,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자**에서 기존 �
 
 - 새 컨트롤에 데이터를 표시할 폼을 만듭니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 

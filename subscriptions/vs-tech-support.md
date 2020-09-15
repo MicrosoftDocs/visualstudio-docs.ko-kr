@@ -2,17 +2,17 @@
 title: 기술 지원 혜택
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 03/26/2020
+ms.date: 09/02/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 247a2b9d4649aae6f3a32a6156e2f9558c481e68
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387293"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508940"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화 및 사용
 Visual Studio 구독의 기술 지원 혜택은 [지원 수명 주기](https://support.microsoft.com/lifecycle/search)의 기본 지원 단계에 여전히 있는 제품에 대해 **비-프로덕션 환경**의 중단 수정 문제 해결을 위한 것입니다. Visual Studio Enterprise 표준 및 연간 클라우드 구독은 네 개의 인시던트를 받고, Visual Studio Professional 표준 및 연간 클라우드 구독은 혜택 활성화 후 최대 1년 간 두 개의 인시던트를 받습니다. 혜택 활성화는 구독이 최신 상태인 동안 발생해야 합니다.
@@ -31,6 +31,15 @@ Visual Studio IDE 및 Azure DevOps Server와 같은 개발자 도구는 Visual S
 Visual Studio 구독에서 다운로드한 비 개발자 제품(예: SQL, Windows, SharePoint)은 기본 지원만 받을 수 있습니다. 이러한 제품은 개발 환경에서 애플리케이션을 디자인, 개발, 테스트 또는 시연하는 경우에만 사용이 허가됩니다. 프로덕션 환경에서는 사용이 허가되지 않습니다.
 
 제품 수준 설명: **사용할 수 없는 지원 플랜**을 확장합니다. **Support plan cannot be used for support on the specified product (Code: 8)** (지원 플랜을 지정된 제품의 지원에 사용할 수 없음(코드: 8))가 표시된 경우, 선택한 제품 버전에 지원 계약을 사용할 수 없습니다.
+
+> [!IMPORTANT]
+> 제공된 지원 인시던트는 고장 수리 지원을 위한 것입니다.  다음 제품과 관련된 코딩/개발 문제에 대한 지원에는 사용할 수 없습니다.
+> - Microsoft Teams
+> - Microsoft Office
+> - Microsoft SharePoint
+> - Microsoft Exchange
+> - Microsoft Graph
+> - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>혜택을 활성화하는 방법
 1. <https://my.visualstudio.com/Benefits> 로 이동하여 지원 섹션까지 아래로 스크롤하고, 기술 지원 타일에서 **채팅하여 활성화**를 클릭합니다.

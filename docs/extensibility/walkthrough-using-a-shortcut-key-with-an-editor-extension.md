@@ -21,7 +21,7 @@ ms.locfileid: "90037460"
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장에서 바로 가기 키 사용
 편집기 확장에서 바로 가기 키에 응답할 수 있습니다. 다음 연습에서는 바로 가기 키를 사용 하 여 텍스트 뷰에 뷰 장식을 추가 하는 방법을 보여 줍니다. 이 연습은 뷰포트 장식 편집기 템플릿을 기반으로 하며 + 문자를 사용 하 여 장식을 추가할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기

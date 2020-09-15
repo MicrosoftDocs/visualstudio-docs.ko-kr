@@ -2,21 +2,23 @@
 title: 구독 관리 포털 시작하기 | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: 구독 관리 포털을 사용하여 조직의 Visual Studio 구독 관리를 시작하는 방법을 알아봅니다.
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249865"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426878"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio Subscriptions Administrator 포털 개요
 
 Visual Studio 구독 관리 포털은 조직의 구독을 한 곳에서 관리하는 도구를 제공합니다. 
+
+포털을 둘러봅니다.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,7 +36,7 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 - 할당된 구독 수준
 - 구독이 할당된 날짜
 - 해당 구독에 대한 만료 날짜
-- 선택적인 텍스트 설명
+- 추가 참고 사항을 위한 참조 필드
 - 구독자 다운로드 사용 여부의 표시
 - 구독자가 위치한 국가
 - 관리 포털에서 할당 통신 전자 메일에 대한 언어 기본 설정
@@ -42,7 +44,7 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 
 페이지 왼쪽 위에는 구독 할당 개요, 계약 정보 및 최대 사용량 보고서를 표시하기 위해 선택할 수 있는 몇 가지 아이콘이 있습니다.
 
-구입 및 할당되었고 각 계약에 대해 조직에서 아직 사용 가능한 구독 라이선스의 수에 대한 추가 정보를 확인하려면 맨 위 아이콘을 선택하여 슬라이드 아웃 패널을 사용 가능하도록 설정합니다.
+구입 및 할당되었고 각 계약에 대해 조직에서 아직 사용 가능한 구독 라이선스의 수에 대한 추가 정보를 확인하려면 맨 위 아이콘을 클릭하여 슬라이드 아웃 패널을 사용 가능하도록 설정합니다.
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png)
 
@@ -57,7 +59,7 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 - [Visual Studio IDE 기능 비교](https://visualstudio.microsoft.com/vs/compare)
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
 - [Azure 설명서](https://docs.microsoft.com/azure/)

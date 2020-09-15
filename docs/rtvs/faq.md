@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 4eef8e79023bdd3bde03fec33c16a1c8f6d90446
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c89f1d59405fb7475e827cac9624c6623d7041e
+ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "72306265"
+ms.locfileid: "89365667"
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -79,7 +79,7 @@ A. 예, Visual Studio에 통합된 모든 소스 제어 시스템을 사용할 �
 
 **질문: RTVS 프로젝트에 대해 권장되는 *.gitignore* 설정은 무엇인가요?**
 
-A. GitHub에서는 권장되는 *.gitignore* 파일의 마스터 리포지토리를 유지 관리합니다. 이 항목은 [R.gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)에서 볼 수 있습니다.
+A. GitHub는 권장되는 *.gitignore* 파일의 리포지토리를 유지 관리합니다. 이 항목은 [R.gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)에서 볼 수 있습니다.
 
 ## <a name="remote-services"></a>원격 서비스
 
