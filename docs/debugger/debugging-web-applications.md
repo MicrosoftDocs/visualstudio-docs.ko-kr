@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714457"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600126"
 ---
 # <a name="debugging-web-applications"></a>웹 애플리케이션 디버깅
 
@@ -42,7 +42,7 @@ ms.locfileid: "73714457"
 
 - AJAX 스크립트 애플리케이션 디버깅
 
-  AJAX 사용 웹 애플리케이션은 스크립트 코드를 매우 많이 사용하며 특수한 디버깅 문제를 발생시키는 경우가 많습니다. AJAX 디버깅 기술에 대한 자세한 내용은 [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)(AJAX 애플리케이션 디버그 및 추적 개요)를 참조하세요.
+  AJAX 사용 웹 애플리케이션은 스크립트 코드를 매우 많이 사용하며 특수한 디버깅 문제를 발생시키는 경우가 많습니다. AJAX 디버깅 기술에 대한 자세한 내용은 [Debugging and Tracing Ajax Applications Overview](/previous-versions/bb398817(v=vs.140))(AJAX 애플리케이션 디버그 및 추적 개요)를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350461"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600098"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 시작
 이 섹션에서는 처음으로 그래픽 진단 사용을 준비한 다음 Direct3D 앱에서 프레임을 캡처하고 Graphics Analyzer에서 검사합니다.
@@ -56,7 +56,7 @@ ms.locfileid: "85350461"
 그래픽 진단을 탐색하는 데 사용할 고유한 Direct3D 앱이 이미 있다면 다행입니다. 해당 앱이 없는 경우에는 다음 중 하나를 사용하세요.
 
 ::: moniker range=">=vs-2019"
-[Direct3D Game Sample](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/)에서 샘플을 다운로드합니다.
+[Direct3D Game Sample](/samples/microsoft/windows-universal-samples/simple3dgamedx/)에서 샘플을 다운로드합니다.
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Windows 10용 **DirectX 11 앱(유니버설 Windows)** 또는 **DirectX 12 앱(유니버설 Windows)** 프로젝트 템플릿

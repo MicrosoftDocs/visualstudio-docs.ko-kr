@@ -1,18 +1,19 @@
 ---
 title: Mac용 Visual Studio를 통한 VoiceOver 사용
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 description: Mac용 Visual Studio를 통한 macOS VoiceOver 탐색 사용
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
 ms.topic: how-to
-ms.openlocfilehash: 8d4a70d17fd6798cb95a2b94939aec793d280174
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30aaf8b583e2f010379b74a57ca0c07f53fdcfda
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801752"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038519"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>Mac용 Visual Studio를 통한 VoiceOver 사용
 

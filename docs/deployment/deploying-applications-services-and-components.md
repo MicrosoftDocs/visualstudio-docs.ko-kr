@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286360"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641666"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>먼저 Visual Studio의 배포 살펴보기
 
@@ -140,7 +140,7 @@ Azure Pipelines를 사용하여 앱의 연속 배포를 사용하도록 설정�
 | --- | --- | --- |
 | **Office 앱** | Visual Studio에서 Office용 추가 기능을 게시할 수 있습니다. | [Office 추가 기능 게시 및 배포](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 또는 OData 서비스** | 웹 서버에 배포한 WCF RIA 서비스를 다른 애플리케이션에서 사용할 수 있습니다. | [WCF Data Services 개발 및 배포](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch는 Visual Studio 2017부터 더 이상 지원되지 않지만, Visual Studio 2015 및 이전 버전에서는 아직 배포할 수 있습니다. | [LightSwitch 애플리케이션 배포](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | LightSwitch는 Visual Studio 2017부터 더 이상 지원되지 않지만, Visual Studio 2015 및 이전 버전에서는 아직 배포할 수 있습니다. | [LightSwitch 애플리케이션 배포](/previous-versions/ff872288(v=vs.140)) |
 
 ## <a name="next-steps"></a>다음 단계
 

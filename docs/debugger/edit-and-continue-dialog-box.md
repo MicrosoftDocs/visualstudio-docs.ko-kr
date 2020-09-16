@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737938"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599543"
 ---
 # <a name="edit-and-continue-dialog-box"></a>편집하며 계속하기 대화 상자
 (네이티브만 해당) 이 대화 상자는 디버깅 중에 코드를 편집했고 **편집하며 계속하기**에서 코드 변경 내용을 적용할 수 있다고 인식한 경우에 나타납니다. 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
@@ -31,4 +31,4 @@ ms.locfileid: "72737938"
 
 ## <a name="see-also"></a>참조
 - [디버거 보안](../debugger/debugger-security.md)
-- [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [옵션 대화 상자, 디버깅, 편집하며 계속하기](./edit-and-continue.md)

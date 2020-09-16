@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348143"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599519"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>시뮬레이터에서 UWP 앱 실행
 
@@ -115,7 +115,7 @@ UWP 앱에 대한 Visual Studio 시뮬레이터는 로컬 머신의 격리된 �
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> 네트워크 연결 속성 시뮬레이트
 
-앱 사용자가 네트워크 연결 비용이나 데이터 계획 상태 변경을 지속적으로 인지하고, 지정된 데이터 전송 제한의 로밍 또는 초과로 인한 추가 비용이 발생하지 않도록 앱에서 이 정보를 사용하여 요금제 네트워크 연결 비용을 관리할 수 있습니다. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API를 통해 서명된 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 및 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 이벤트에 응답할 수 있습니다. [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)를 참조하세요.
+앱 사용자가 네트워크 연결 비용이나 데이터 계획 상태 변경을 지속적으로 인지하고, 지정된 데이터 전송 제한의 로밍 또는 초과로 인한 추가 비용이 발생하지 않도록 앱에서 이 정보를 사용하여 요금제 네트워크 연결 비용을 관리할 수 있습니다. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API를 통해 서명된 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 및 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 이벤트에 응답할 수 있습니다. [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](/previous-versions/windows/apps/hh750310(v=win.10))를 참조하세요.
 
 네트워크 비용 인식 코드를 디버그하거나 테스트하려면 시뮬레이터가 [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 에서 반환되는 [ConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)개체를 통해 노출되는 네트워크의 속성을 모방하면 됩니다.
 
@@ -139,7 +139,7 @@ UWP 앱에 대한 Visual Studio 시뮬레이터는 로컬 머신의 격리된 �
 
 네트워크 연결 관리에 대한 자세한 내용은 다음을 참조하세요.
 
-[빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](/previous-versions/windows/apps/hh750310(v=win.10))
 
 [네트워크 정보 샘플](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

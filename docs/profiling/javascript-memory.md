@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331269"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037486"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP 앱에서 JavaScript 메모리 사용량 분석
 Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 JavaScript를 사용하여 Windows용으로 작성된 UWP 앱의 메모리 사용량을 파악하고 메모리 누수를 찾을 수 있습니다. 지원되는 앱으로는 유니버설 Windows 앱을 위한 앱이 있습니다.
@@ -363,7 +363,7 @@ if (performance && performance.mark) {
 
 - JavaScript 메모리 분석기에 대한 Build 2013 컨퍼런스에서 [이 비디오](https://channel9.msdn.com/Events/Build/2013/3-316) 의 뒷부분을 시청하세요.
 
-- [UWP 앱에서 메모리 관리](https://msdn.microsoft.com/magazine/jj651575.aspx)를 참조하세요.
+- [UWP 앱에서 메모리 관리](/archive/msdn-magazine/2012/windows-8-special-issue/javascript-managing-memory-in-windows-store-apps)를 참조하세요.
 
 - 임시로 코드를 수정하여 문제를 격리하는 방법도 있습니다. 예를 들어, 다음을 수행합니다.
 

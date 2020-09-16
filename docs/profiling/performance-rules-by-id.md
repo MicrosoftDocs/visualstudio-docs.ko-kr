@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778442"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037330"
 ---
 # <a name="performance-rules-by-id"></a>ID별 성능 규칙
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778442"
 | [DA0006: 값 형식에 대해 Equals()를 재정의하십시오.](../profiling/da0006-override-equals-parens-for-value-types.md) | Equals 메서드 또는 공개 값 형식의 같음 연산자에 대한 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 더 효율적인 메서드를 구현해 보세요. |
 | [DA0007: 제어 흐름에는 예외를 사용하지 마십시오.](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | 프로파일링 데이터에서 .NET Framework 예외 처리기가 호출되는 비율이 높았습니다. throw되는 예외 수를 줄일 때 다른 제어 흐름 논리를 사용해 보세요. |
 | [DA0008: 수집되는 샘플 수가 적습니다.](../profiling/da0008-few-samples-collected.md) | 프로파일링 실행에서 샘플이 몇 개만 수집되었습니다. 보다 의미 있는 결과를 위해 실행 시간을 늘리거나 샘플링 주기를 더 빠르게 해보세요. |
-| [DA0009: 높은 % Time in JIT](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | 애플리케이션 실행 시간의 상당 부분을 JIT(Just-In-Time) 컴파일러에서 사용합니다. |
+| [DA0009: 높은 % Time in JIT](/previous-versions/dd264972(v=vs.100)) | 애플리케이션 실행 시간의 상당 부분을 JIT(Just-In-Time) 컴파일러에서 사용합니다. |
 | [DA0010: GetHashCode의 부담이 큽니다.](../profiling/da0010-expensive-gethashcode.md) | 해당 형식의 GetHashCode 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지하거나 메서드가 메모리를 할당합니다. |
 | [DA0011: CompareTo의 부담이 큽니다.](../profiling/da0011-expensive-compareto.md) | 해당 형식의 CompareTo 메서드가 부담이 크거나 메모리를 할당합니다. |
 | [DA0012: 리플렉션 양이 많습니다.](../profiling/da0012-significant-amount-of-reflection.md) | InvokeMember, GetMember 등의 System.Reflection 메서드 호출이나 MemberInvoke 등의 Type 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 가능할 경우 이러한 메서드를 종속 어셈블리의 메서드에 대한 초기 바인딩으로 바꿔 보세요. |

@@ -1,5 +1,7 @@
 ---
 title: Visual Basic 개발자 설정으로 빌드 구성 관리
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c84978501e5c5bc6f21e8005023c3ae2fe931cce
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284232"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038571"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리
 

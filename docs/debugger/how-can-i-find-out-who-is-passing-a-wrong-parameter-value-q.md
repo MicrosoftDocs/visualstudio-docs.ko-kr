@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00327315b98c4b55797187c59db3a81ee351fb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350344"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599875"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>무엇이 잘못된 매개 변수 값을 전달하는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명
@@ -53,5 +53,5 @@ ms.locfileid: "85350344"
 
 ## <a name="see-also"></a>참조
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
-- [중단점](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [중단점](/previous-versions/ktf38f66(v=vs.100))
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

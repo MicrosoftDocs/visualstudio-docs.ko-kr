@@ -1,5 +1,7 @@
 ---
-title: Visual Studio에서 Kubernetes와 함께 로컬 프로세스를 사용(미리 보기)
+title: Visual Studio에서 Kubernetes와 함께 로컬 프로세스 사용
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: how-to
@@ -9,12 +11,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.openlocfilehash: 62b07affd1e54b0dfa8127ecf57626e90ed7dd0e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87913275"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037447"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Kubernetes와 함께 로컬 프로세스 사용(미리 보기)
 

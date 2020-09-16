@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348953"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599855"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
 편집하며 계속하기에서 코드 변경 내용을 적용하는 동안 작업을 중지할 수 있습니다.
@@ -40,4 +40,4 @@ ms.locfileid: "85348953"
 
 ## <a name="see-also"></a>참조
 - [편집하며 계속하기](../debugger/edit-and-continue.md)
-- [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [옵션 대화 상자, 디버깅, 편집하며 계속하기](./edit-and-continue.md)

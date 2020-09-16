@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731285"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600237"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.
@@ -80,7 +80,7 @@ _asm int 3
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> TRACE 매크로
-디버거 [출력 창](../ide/reference/output-window.md)에 프로그램 메시지를 표시하기 위해 [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) 매크로나 MFC [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 매크로를 사용할 수 있습니다. [어설션](../debugger/c-cpp-assertions.md)과 마찬가지로 추적 매크로는 프로그램의 디버그 버전에서만 활성화되며 릴리스 버전에서 컴파일하면 사라집니다.
+디버거 [출력 창](../ide/reference/output-window.md)에 프로그램 메시지를 표시하기 위해 [ATLTRACE](/previous-versions/6xkxyz08(v=vs.140)) 매크로나 MFC [TRACE](/previous-versions/6w95a4ha(v=vs.140)) 매크로를 사용할 수 있습니다. [어설션](../debugger/c-cpp-assertions.md)과 마찬가지로 추적 매크로는 프로그램의 디버그 버전에서만 활성화되며 릴리스 버전에서 컴파일하면 사라집니다.
 
 다음 예제에서는 **TRACE** 매크로 사용법을 몇 가지 보여 줍니다. `printf`와 같이 **TRACE** 매크로도 많은 인수를 처리할 수 있습니다.
 
@@ -115,7 +115,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
 MFC는 할당할 수는 있어도 할당을 취소할 수 없는 메모리를 탐지하는 클래스와 함수를 가지고 있습니다.
 
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> 메모리 할당 추적
-MFC에서 [new](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 연산자 자리에 **DEBUG_NEW** 매크로를 사용하면 메모리 누수를 찾는 데 도움이 됩니다. 프로그램의 디버그 버전에서 `DEBUG_NEW` 는 할당된 각 개체의 파일 이름과 줄 번호를 추적합니다. 프로그램의 릴리스 버전을 컴파일할 경우 `DEBUG_NEW` 는 파일 이름과 줄 번호 정보 없이 간단한 **new** 연산자를 확인합니다. 따라서 프로그램의 릴리스 버전에서는 속도가 저하되지 않습니다.
+MFC에서 [new](/previous-versions/tz7sxz99(v=vs.140)) 연산자 자리에 **DEBUG_NEW** 매크로를 사용하면 메모리 누수를 찾는 데 도움이 됩니다. 프로그램의 디버그 버전에서 `DEBUG_NEW` 는 할당된 각 개체의 파일 이름과 줄 번호를 추적합니다. 프로그램의 릴리스 버전을 컴파일할 경우 `DEBUG_NEW` 는 파일 이름과 줄 번호 정보 없이 간단한 **new** 연산자를 확인합니다. 따라서 프로그램의 릴리스 버전에서는 속도가 저하되지 않습니다.
 
 `DEBUG_NEW` new **자리에**를 사용하기 위해 프로그램 전체를 다시 작성하는 대신, 다음과 같이 소스 파일에서 이 매크로를 정의할 수 있습니다.
 
@@ -134,11 +134,11 @@ MFC 프레임워크의 디버그 버전은 자동으로 `DEBUG_NEW` 를 사용�
 
 **메모리 진단을 활성화하거나 비활성화하려면**
 
-- 전역 함수 [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 을 호출하여 진단 메모리 할당자를 활성화하거나 비활성화합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.
+- 전역 함수 [AfxEnableMemoryTracking](/previous-versions/hzsxb6e8(v=vs.140)) 을 호출하여 진단 메모리 할당자를 활성화하거나 비활성화합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.
 
   **afxMemDF로 특정 메모리 진단 기능을 선택하려면**
 
-- 메모리 진단 기능을 보다 자세히 제어하려면 MFC 전역 함수 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)의 값을 설정하여 각 메모리 진단 기능 사용 여부를 지정할 수 있습니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.
+- 메모리 진단 기능을 보다 자세히 제어하려면 MFC 전역 함수 [afxMemDF](/previous-versions/ahe4a83t(v=vs.140))의 값을 설정하여 각 메모리 진단 기능 사용 여부를 지정할 수 있습니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.
 
   |값|설명|
   |-----------|-----------------|

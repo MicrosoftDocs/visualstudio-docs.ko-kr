@@ -1,16 +1,17 @@
 ---
 title: Docker Compose를 사용하는 다중 컨테이너 앱
 description: Mac용 Visual Studio에서 둘 이상의 컨테이너를 관리하고 컨테이너 간에 통신하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: 4dd8695ccf8f1fcf13b9b52387d28c68f8812aec
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800725"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038675"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 

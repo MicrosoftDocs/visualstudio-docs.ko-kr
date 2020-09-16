@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348940"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600167"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱을 디버그하는 동안 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 
@@ -48,7 +48,7 @@ ms.locfileid: "85348940"
      **일시 중단 후 종료**를 사용하면 앱이 닫히고 디버그 세션이 끝납니다.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> 백그라운드 작업 트리거
- 모든 응용 프로그램은 응용 프로그램이 실행되고 있지 않은 경우에도 특정 시스템 이벤트에 응답하도록 백그라운드 작업을 등록할 수 있습니다. 백그라운드 작업은 UI를 직접 업데이트하는 코드는 실행할 수 없습니다. 대신 타일 업데이트, 배지 업데이트 및 알림을 통해 사용자에게 정보를 보여 줍니다. 자세한 내용은 [백그라운드 작업이 있는 앱 지원](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)을 참조하세요.
+ 모든 응용 프로그램은 응용 프로그램이 실행되고 있지 않은 경우에도 특정 시스템 이벤트에 응답하도록 백그라운드 작업을 등록할 수 있습니다. 백그라운드 작업은 UI를 직접 업데이트하는 코드는 실행할 수 없습니다. 대신 타일 업데이트, 배지 업데이트 및 알림을 통해 사용자에게 정보를 보여 줍니다. 자세한 내용은 [백그라운드 작업이 있는 앱 지원](/previous-versions/windows/apps/hh977046(v=win.10))을 참조하세요.
 
  디버거에서 응용 프로그램의 백그라운드 작업을 시작하는 이벤트를 트리거할 수 있습니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "85348940"
 4. **진단** 로그를 선택합니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio로 UWP 앱 테스트](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Visual Studio로 UWP 앱 테스트](../test/unit-test-your-code.md)
 - [Visual Studio에서 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)
 - [애플리케이션 수명 주기](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

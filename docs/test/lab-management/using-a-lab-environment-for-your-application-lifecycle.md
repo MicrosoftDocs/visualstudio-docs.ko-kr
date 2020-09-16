@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144690"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037226"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -129,23 +129,23 @@ SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/azure/devops/pipe
 
 Lab Management에 대한 자세한 내용은 다음을 참조하세요.
 
-* [랩 계획](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
-* [Lab Management 구성 및 관리](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
-* [SCVMM 환경에 대한 Lab Management 구성](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [사용 권한 관리](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
-* [설정 변경](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
-* [문제 해결](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
+* [랩 계획](/previous-versions/ff756575(v=vs.140))
+* [Lab Management 구성 및 관리](/previous-versions/dd936084(v=vs.140))
+* [SCVMM 환경에 대한 Lab Management 구성](/previous-versions/dd380687(v=vs.140))
+* [사용 권한 관리](/previous-versions/dd380760(v=vs.140))
+* [설정 변경](/previous-versions/ee704508(v=vs.140))
+* [문제 해결](/previous-versions/ee853230(v=vs.140))
 
 환경 설정에 대한 자세한 내용은 다음을 참조하세요.
 
 * [빌드 및 릴리스 클라우드 환경](use-build-or-rm-instead-of-lab-management.md)
-* [표준 랩 환경](https://msdn.microsoft.com/library/ee390842.aspx)
-* [SCVMM(가상) 환경](https://msdn.microsoft.com/library/ee943322.aspx)
-* [네트워크 격리 환경 만들기 및 사용](https://msdn.microsoft.com/library/ee518924.aspx)
+* [표준 랩 환경](/previous-versions/ee390842(v=vs.140))
+* [SCVMM(가상) 환경](/previous-versions/ee943322(v=vs.140))
+* [네트워크 격리 환경 만들기 및 사용](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
 ## <a name="see-also"></a>참고 항목
 
 * [테스트 에이전트 설치 및 구성](../../test/lab-management/install-configure-test-agents.md)
-* [Visual Studio Lab Management Guide](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)(Visual Studio Lab Management 가이드)
+* [Visual Studio Lab Management Guide](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)(Visual Studio Lab Management 가이드)
 * [Microsoft DevOps 블로그](https://devblogs.microsoft.com/devops/)

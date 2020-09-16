@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 875af363cbd85f8667d56a33cf7646ac2a9da429
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869596"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037018"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 
@@ -43,7 +43,7 @@ ms.locfileid: "86869596"
 |**/UseVsixExtensions**|이 옵션은 *vstest.console.exe* 프로세스에서 테스트 실행에 설치된 VSIX 확장명(있는 경우)을 사용하거나 건너뜁니다.<br />이 옵션은 사용되지 않습니다. Visual Studio의 다음 주요 릴리스부터 시작되는 이 옵션은 제거할 수 있습니다. NuGet 패키지로 사용할 수 있게 된 사용 중인 확장으로 이동합니다.<br />예: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*경로*]**|*vstest.console.exe* 프로세스가 테스트 실행의 지정된 경로(있는 경우)에서 사용자 지정 테스트 어댑터를 사용하도록 적용합니다.<br />예: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*플랫폼 형식*]**|테스트를 실행하는 데 사용할 대상 플랫폼 아키텍처입니다.<br />올바른 값은 x86, x64 및 ARM입니다.|
-|**/Framework: [*프레임워크 버전*]**|테스트 실행에 사용될 .NET 버전을 대상 지정합니다.<br />예제 값은 `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`입니다.<br />TargetFrameworkAttribute는 어셈블리에서 이 옵션을 자동으로 검색하는 데 사용되며, 이 특성이 없는 경우에는 기본적으로 `Framework40`이 사용됩니다. [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute)를 .NET Core 어셈블리에서 제거하는 경우 이 옵션을 명시적으로 지정해야 합니다.<br />대상 프레임워크가 **Framework35**로 지정된 경우 테스트가 CLR 4.0 “호환성 모드”에서 실행됩니다.<br />예: `/Framework:framework40`|
+|**/Framework: [*프레임워크 버전*]**|테스트 실행에 사용될 .NET 버전을 대상 지정합니다.<br />예제 값은 `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`입니다.<br />TargetFrameworkAttribute는 어셈블리에서 이 옵션을 자동으로 검색하는 데 사용되며, 이 특성이 없는 경우에는 기본적으로 `Framework40`이 사용됩니다. [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute)를 .NET Core 어셈블리에서 제거하는 경우 이 옵션을 명시적으로 지정해야 합니다.<br />대상 프레임워크가 **Framework35**로 지정된 경우 테스트가 CLR 4.0 “호환성 모드”에서 실행됩니다.<br />예: `/Framework:framework40`|
 |**/TestCaseFilter:[*식*]**|지정된 식과 일치하는 테스트를 실행합니다.<br /><Expression\>은 <property\>=<value\>[\|<Expression\>] 형식입니다.<br />예: `/TestCaseFilter:"Priority=1"`<br />예: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 명령줄 옵션은 **/Tests** 명령줄 옵션과 함께 사용할 수 없습니다. <br />식 만들기 및 사용에 대한 정보는 [TestCase 필터](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)를 참조하세요.|
 |**/?**|사용 정보를 표시합니다.|
 |**/Logger:[*uri/friendlyname*]**|테스트 결과에 대해 로거를 지정합니다. 매개 변수를 여러 번 지정하여 여러 로거를 활성화합니다.<br />예: Visual Studio 테스트 결과 파일(TRX)에 결과를 기록하려면 다음을 사용합니다.<br />**/Logger:trx**<br />**[;LogFileName=\<Defaults to unique file name>]**|

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0f396027025572d953d5ea0265d122e6954c3ad7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8efead1712ace2f533cb9075ea7a4c5305289a4
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288576"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036082"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록 확장
 
@@ -24,7 +24,7 @@ ms.locfileid: "85288576"
 
 ## <a name="sample-extension-to-test-microsoft-excel"></a>Microsoft Excel을 테스트하기 위한 샘플 확장
 
-이 [블로그 게시물](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-introducing-sample-excel-extension/)에는 코딩된 UI 테스트 프레임워크용 [샘플 확장](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/09/94/38/24/ExcelPluginSample.zip)에 대한 링크가 포함되어 있습니다. 전체 [코딩된 UI 테스트 확장성에 대한 블로그 게시물 시리즈](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/series-on-coded-ui-test-extensibility/)를 볼 수도 있습니다.
+이 [블로그 게시물](/archive/blogs/gautamg/3-introducing-sample-excel-extension)에는 코딩된 UI 테스트 프레임워크용 [샘플 확장](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/09/94/38/24/ExcelPluginSample.zip)에 대한 링크가 포함되어 있습니다. 전체 [코딩된 UI 테스트 확장성에 대한 블로그 게시물 시리즈](/archive/blogs/gautamg/series-on-coded-ui-test-extensibility)를 볼 수도 있습니다.
 
 > [!NOTE]
 > 샘플은 Microsoft Excel 2010에서 사용하도록 제공됩니다. 다른 버전의 Excel에서 작동하거나 작동하지 않을 수 있습니다.

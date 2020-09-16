@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62788905"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038506"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴
 
@@ -30,7 +30,7 @@ ms.locfileid: "62788905"
 
 다음 그림과 같이 동시성 시각화 도우미가 CPU 사용률 뷰에 이 증상을 표시할 수 있습니다. 여기서 다중 스레드가 있더라도 애플리케이션은 하나의 논리 코어만 사용합니다.
 
-자세한 내용은 MSDN Magazine 문서 [스레드 성능 - Visual Studio 2010의 리소스 경합 동시성 프로파일링](https://msdn.microsoft.com/magazine/ff714587.aspx)에서 "문제 섹션 시작"을 참조하세요.
+자세한 내용은 MSDN Magazine 문서 [스레드 성능 - Visual Studio 2010의 리소스 경합 동시성 프로파일링](/archive/msdn-magazine/2010/june/msdn-magazine-thread-performance-resource-contention-concurrency-profiling-in-visual-studio-2010)에서 "문제 섹션 시작"을 참조하세요.
 
 ![잠금 경합](../profiling/media/lockcontention_2.png "LockContention_2")
 

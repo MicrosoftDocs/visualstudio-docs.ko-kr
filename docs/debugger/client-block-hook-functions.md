@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7b0ef177922f09239c8925ced1ca013e966c0e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745713"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600200"
 ---
 # <a name="client-block-hook-functions"></a>클라이언트 블록 후크 함수
 적절한 함수를 작성하여 `_CLIENT_BLOCK` 블록에 저장되는 데이터 내용을 보고하거나 그 유효성을 검사할 수 있습니다. CRTDBG.H에 정의된 대로 다음과 같은 프로토타입을 가진 함수를 작성해야 합니다.
@@ -49,5 +49,5 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
 ## <a name="see-also"></a>참조
 
 - [디버그 후크 함수 작성](../debugger/debug-hook-function-writing.md)
-- [crt_dbg2 샘플](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
+- [crt_dbg2 샘플](/previous-versions/b31tft51(v=vs.100))
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

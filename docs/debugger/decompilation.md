@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350565"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600105"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>디버깅 중에 .NET 어셈블리에서 소스 코드 생성
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350565"
 > [!NOTE]
 > * 소스 코드 생성(디컴파일)은 .NET 애플리케이션에만 사용할 수 있으며 오픈 소스 [ILSpy](https://github.com/icsharpcode/ILSpy) 프로젝트를 기반으로 합니다.
 > * 디컴파일은 Visual Studio 2019 16.5 이상에서만 사용할 수 있습니다.
-> * 어셈블리 또는 모듈에 [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) 특성을 적용하면 Visual Studio에서 디컴파일을 시도할 수 없습니다.
+> * 어셈블리 또는 모듈에 [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) 특성을 적용하면 Visual Studio에서 디컴파일을 시도할 수 없습니다.
 
 ## <a name="generate-source-code"></a>소스 코드 생성
 
@@ -99,7 +99,7 @@ ms.locfileid: "85350565"
 
 ### <a name="just-my-code"></a>내 코드만
 
-[JMC(내 코드만)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) 설정을 통해 Visual Studio에서 시스템, 프레임워크, 라이브러리 및 기타 비사용자 호출을 한 단계씩 실행할 수 있습니다. 디버깅 세션 중에 **모듈** 창에는 디버거가 내 코드(사용자 코드)로 취급하는 코드 모듈이 표시됩니다.
+[JMC(내 코드만)](./just-my-code.md) 설정을 통해 Visual Studio에서 시스템, 프레임워크, 라이브러리 및 기타 비사용자 호출을 한 단계씩 실행할 수 있습니다. 디버깅 세션 중에 **모듈** 창에는 디버거가 내 코드(사용자 코드)로 취급하는 코드 모듈이 표시됩니다.
 
 최적화된 모듈 또는 릴리스 모듈을 디컴파일하면 비사용자 코드가 생성됩니다. 예를 들어 디버거가 디컴파일된 비사용자 코드에서 중단되면 **소스 없음** 창이 나타납니다. 내 코드만을 사용하지 않도록 설정하려면 **도구** > **옵션**(또는 **디버그** > **옵션**) > **디버깅** > **일반**으로 이동한 다음, **내 코드만 사용**을 선택 취소합니다.
 

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773970"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037519"
 ---
 # <a name="marks-view"></a>표시 뷰
 표시 뷰에는 애플리케이션에 삽입된 샘플링 및 ETW 이벤트가 표시됩니다.
@@ -43,4 +43,4 @@ ms.locfileid: "74773970"
 ## <a name="see-also"></a>참고 항목
 - [성능 보고서 개요](../profiling/performance-report-overview.md)
 - [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;NIB&#93; 데이터 수집 제어 창](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [&#91;NIB&#93; 데이터 수집 제어 창](/previous-versions/bb385767(v=vs.110))

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183814"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599588"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 소스 파일 지정(C#, C++, Visual Basic, F#)
 
@@ -46,7 +46,7 @@ ms.locfileid: "84183814"
 
 - [Understand symbol files and Visual Studio symbol settings](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)(기호 파일 및 Visual Studio 기호 설정 이해)
 
-- [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)(Visual Studio에서 디버거 기호 파일이 빌드 기반이 된 이진 파일과 정확히 일치해야 하는 이유)
+- [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)(Visual Studio에서 디버거 기호 파일이 빌드 기반이 된 이진 파일과 정확히 일치해야 하는 이유)
 
 ## <a name="how-symbol-files-work"></a>기호 파일의 작동 방식
 
@@ -57,7 +57,7 @@ ms.locfileid: "84183814"
 
 기호 파일에는 소스 파일의 위치와 선택적으로 해당 파일을 검색할 서버도 표시됩니다.
 
-디버거는 앱을 빌드할 때 생성된 *.pdb* 파일과 정확히 일치하는 *.pdb* 파일만 로드합니다(즉, 원래 *.pdb* 파일 또는 복사본). 코드 자체가 변경되지 않은 경우에도 앱 레이아웃이 변경될 수 있으므로 [정확한 중복](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)이 필요합니다.
+디버거는 앱을 빌드할 때 생성된 *.pdb* 파일과 정확히 일치하는 *.pdb* 파일만 로드합니다(즉, 원래 *.pdb* 파일 또는 복사본). 코드 자체가 변경되지 않은 경우에도 앱 레이아웃이 변경될 수 있으므로 [정확한 중복](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)이 필요합니다.
 
 > [!TIP]
 > 프로젝트에서 호출하는 Windows 또는 타사 코드와 같은 프로젝트 소스 코드 외부의 코드를 디버그하려면 외부 코드의 *.pdb* 파일(및 필요에 따라 소스 파일)의 위치를 지정해야 하며 이러한 파일은 앱의 빌드와 정확히 일치해야 합니다.

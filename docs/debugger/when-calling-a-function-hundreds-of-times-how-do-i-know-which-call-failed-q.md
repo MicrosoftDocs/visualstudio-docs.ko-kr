@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4790fa8c6fd0bba5b513fd2ce3d203b552b6c63b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728042"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599991"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>함수를 수백 번 호출하는 경우 어떤 호출이 실패했는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명
@@ -50,5 +50,5 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
 ## <a name="see-also"></a>참조
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
-- [중단점 설정](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [중단점 설정](/previous-versions/ktf38f66(v=vs.100))
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

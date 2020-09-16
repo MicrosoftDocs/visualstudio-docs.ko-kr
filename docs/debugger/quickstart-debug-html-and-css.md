@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348264"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600190"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio의 UWP 앱에서 HTML 및 CSS 디버그
 
@@ -262,4 +262,4 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 - [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)
 - [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [기술 지원 및 접근성](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [기술 지원 및 접근성](/previous-versions/tzbxw1af(v=vs.120))

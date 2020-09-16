@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527921"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600089"
 ---
 # <a name="debugger-security"></a>디버거 보안
 다른 프로세스를 디버깅하는 기능을 사용하면 특히 원격으로 디버깅하는 경우 등과 같이 일반적으로 얻을 수 없는 매우 강력한 성능을 발휘할 수 있습니다. 이 경우 디버깅 중인 컴퓨터에 대해 악의적인 사용자가 디버거를 통해 광범위한 손상을 입힐 수 있습니다.
@@ -57,7 +57,7 @@ ms.locfileid: "80527921"
  msvsmon을 구성하는 방법에 대한 자세한 내용은 [원격 디버거 설정](../debugger/remote-debugging.md#bkmk_setup)을 참조하세요.
 
 ### <a name="web-services-debugging-security"></a>웹 서비스 디버깅 보안
- 디버깅은 로컬로 수행하는 것이 더 안전하지만 웹 서버에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 가 설치되어 있지 않은 경우에는 로컬 디버깅을 수행할 수 없습니다. 일반적으로 웹 서비스는 개발 과정을 제외하고는 원격으로 디버깅되므로 원격 디버깅 보안에 적용되는 권장 사항이 웹 서비스 디버깅에도 적용됩니다. 다음은 추가로 적용되는 몇 가지 최선의 구현 방법입니다. 자세한 내용은 [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)을 참조하세요.
+ 디버깅은 로컬로 수행하는 것이 더 안전하지만 웹 서버에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 가 설치되어 있지 않은 경우에는 로컬 디버깅을 수행할 수 없습니다. 일반적으로 웹 서비스는 개발 과정을 제외하고는 원격으로 디버깅되므로 원격 디버깅 보안에 적용되는 권장 사항이 웹 서비스 디버깅에도 적용됩니다. 다음은 추가로 적용되는 몇 가지 최선의 구현 방법입니다. 자세한 내용은 [Debugging XML Web Services](/previous-versions/ms241873(v=vs.100))을 참조하세요.
 
 - 손상된 웹 서버에서는 디버깅을 활성화하지 말아야 합니다.
 

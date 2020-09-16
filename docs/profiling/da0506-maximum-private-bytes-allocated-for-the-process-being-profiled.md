@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 663de229aa9d7d3dee22425347a3464c200b9d53
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a5447c21e3a1049bcb2cb86e3e0419e43fc4e953
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532095"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036810"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: 프로파일링되고 있는 프로세스에 할당된 최대 전용 바이트
 
@@ -46,4 +46,4 @@ ms.locfileid: "85532095"
 ## <a name="how-to-use-rule-data"></a>규칙 데이터를 사용하는 방법
  보고된 값을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 프로파일링 시나리오에서 애플리케이션의 성능을 파악합니다.
 
- 프로세스 전용 바이트의 최대값이 프로세스 주소 공간의 최대 확장값을 구조적으로 제한한 크기에 근접할 경우 메모리 예외가 발생할 수 있습니다. 자세한 내용은 MSDN Magazine에서 [Investigating Memory Issues](https://msdn.microsoft.com/magazine/cc163528.aspx)(메모리 문제 검사)를 참조하세요.
+ 프로세스 전용 바이트의 최대값이 프로세스 주소 공간의 최대 확장값을 구조적으로 제한한 크기에 근접할 경우 메모리 예외가 발생할 수 있습니다. 자세한 내용은 MSDN Magazine에서 [Investigating Memory Issues](/archive/msdn-magazine/2006/november/clr-inside-out-investigating-memory-issues)(메모리 문제 검사)를 참조하세요.

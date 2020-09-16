@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460249"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599925"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>오류: 디버깅 없이 Transact-SQL 실행이 중지됨
 
@@ -40,7 +40,7 @@ ms.locfileid: "85460249"
 
   이 오류를 해결하려면 다음 작업을 수행해야 합니다.
 
-  - 권한 설정을 확인합니다. 자세한 내용은 [방법: 디버깅을 위한 SQL Server 권한 설정](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)을 참조하세요.
+  - 권한 설정을 확인합니다. 자세한 내용은 [방법: 디버깅을 위한 SQL Server 권한 설정](/previous-versions/w1bhybwz(v=vs.100))을 참조하세요.
 
   - SQL 디버깅이 올바르게 설정되어 있는지 확인합니다.
 
@@ -49,6 +49,6 @@ ms.locfileid: "85460249"
 ## <a name="see-also"></a>참조
 
 - [SQL 디버깅 설정](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [방법: 디버깅을 위한 SQL Server 권한 설정](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [방법: 디버깅을 위한 SQL Server 권한 설정](/previous-versions/w1bhybwz(v=vs.100))
 - [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

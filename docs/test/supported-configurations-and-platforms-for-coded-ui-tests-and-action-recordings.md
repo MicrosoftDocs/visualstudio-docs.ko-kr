@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75845804"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036901"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
 
@@ -59,11 +59,11 @@ ms.locfileid: "75845804"
 | Windows Forms 2.0 이상 | 완전하게 지원됨 **참고:** NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다. |
 | WPF 3.5 이상 | 완전하게 지원됨<br /><br /> **참고** NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다. |
 | Windows Win32 | 작동은 하지만 일부 알려진 문제가 있을 수 있으며, 공식적으로는 지원되지 않습니다. |
-| MFC | 부분적으로 지원됩니다. 지원되는 기능에 대한 자세한 내용은 [UITest 프레임워크](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/)를 참조하세요. |
+| MFC | 부분적으로 지원됩니다. 지원되는 기능에 대한 자세한 내용은 [UITest 프레임워크](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010)를 참조하세요. |
 | SharePoint | 완전하게 지원됨 |
 | Office 클라이언트 애플리케이션 | 지원되지 않습니다. |
 | 동적 CRM 웹 클라이언트 | 완전하게 지원됨 |
-| Dynamics (Ax) 2012 클라이언트 | 작업 기록 및 재생이 부분적으로 지원됩니다. 자세한 내용은 [Microsoft Dynamics에 대한 Visual Studio 10 코딩된 UI/작업 기록 지원](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/)을 참조하세요. |
+| Dynamics (Ax) 2012 클라이언트 | 작업 기록 및 재생이 부분적으로 지원됩니다. 자세한 내용은 [Microsoft Dynamics에 대한 Visual Studio 10 코딩된 UI/작업 기록 지원](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012)을 참조하세요. |
 | SAP | 지원되지 않습니다. |
 | Citrix/터미널 서비스 | 터미널 서버에는 작업을 기록하지 않는 것이 좋습니다. 레코더에서는 동시에 여러 인스턴스를 실행할 수 없습니다. |
 | PowerBuilder | 부분적으로 지원됩니다.<br /><br /> 지원 범위는 PowerBuilder 컨트롤에서 액세스할 수 있는 범위까지입니다. |

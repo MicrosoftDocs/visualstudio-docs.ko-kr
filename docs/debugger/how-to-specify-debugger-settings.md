@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: aa88d941950cdabe0da873f9184b420c81d5a348
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349109"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599864"
 ---
 # <a name="how-to-specify-debugger-settings"></a>방법: 디버거 설정 지정
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 변수 표시 방법, 특정 경고 표시 여부, 중단점 설정 방법, 프로그램 중단이 실행 프로그램에 미치는 영향 등을 포함하여 디버거 작동에 대한 여러 가지 설정을 지정할 수 있습니다. 디버거 설정은 **옵션** 대화 상자에서 지정합니다.
@@ -43,6 +43,6 @@ ms.locfileid: "85349109"
 
 ## <a name="see-also"></a>참조
 - [옵션 대화 상자, 디버깅, 일반](../debugger/general-debugging-options-dialog-box.md)
-- [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [옵션 대화 상자, 디버깅, 편집하며 계속하기](./edit-and-continue.md)
 - [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)
 - [빌드 명령 및 속성에 대한 일반 매크로](/cpp/build/reference/common-macros-for-build-commands-and-properties)

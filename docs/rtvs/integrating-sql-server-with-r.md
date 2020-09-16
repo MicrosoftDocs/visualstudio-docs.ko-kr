@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144716"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011881"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server 및 R 사용
 
@@ -50,7 +50,7 @@ SQL 쿼리 파일을 추가하려면 솔루션 탐색기에서 프로젝트를 �
 ![SQL 창 쿼리 결과](media/sql-query-results.png)
 
 Transact-SQL 편집기에서는 쿼리에 대한 실행 계획 보기, 쿼리 디버거와 같은 다양한 기타 기능을 지원합니다.
-자세한 내용은 [Transact-SQL 편집기를 사용하여 스크립트 편집 및 실행](https://msdn.microsoft.com/library/hh272706.aspx)을 참조하세요.
+자세한 내용은 [Transact-SQL 편집기를 사용하여 스크립트 편집 및 실행](/previous-versions/sql/sql-server-data-tools/hh272706(v=vs.103))을 참조하세요.
 
 ## <a name="work-with-sql-server-stored-procedures"></a>SQL Server 저장 프로시저 작업
 

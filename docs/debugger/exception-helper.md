@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350500"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600307"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>예외 도우미를 사용하여 예외 검사 
 
@@ -50,7 +50,7 @@ Visual Studio 2017부터 .Net 및 C/C++ 코드 모두에 대해 `NullReferenceEx
 예외 도우미의 **예외 설정** 섹션에서 현재 형식의 예외가 throw될 때 중단하도록 디버거를 구성할 수 있습니다. 디버거가 throw된 예외에서 일시 중지되면 확인란을 사용하여 나중에 해당 예외가 throw될 때 중단을 사용하지 않도록 설정할 수 있습니다. 이 특정 모듈에서 throw될 때 이 특정 예외에서 중단하지 않으려면 **예외 설정** 창에서 다음에서 **throw되는 경우를 제외:** 아래에서 모듈 이름 옆의 확인란을 선택합니다. 
 
 ## <a name="inspect-inner-exceptions"></a>내부 예외 검사 
-예외에 내부 예외([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception))가 있는 경우 예외 도우미에서 볼 수 있습니다. 여러 예외가 있는 경우 호출 스택 위에 표시되는 왼쪽 및 오른쪽 화살표를 사용하여 탐색할 수 있습니다.
+예외에 내부 예외([InnerException](/dotnet/api/system.exception.innerexception))가 있는 경우 예외 도우미에서 볼 수 있습니다. 여러 예외가 있는 경우 호출 스택 위에 표시되는 왼쪽 및 오른쪽 화살표를 사용하여 탐색할 수 있습니다.
 
 ![내부 예외가 있는 예외 도우미](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ Visual Studio 2017부터 .Net 및 C/C++ 코드 모두에 대해 `NullReferenceEx
 ![다시 throw된 예외가 있는 예외 도우미](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Live Share를 사용하여 디버그 세션 공유
-예외 도우미에서 **Live Share 세션 시작...** 링크를 사용하여 [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) 세션을 시작할 수 있습니다. Live Share 세션에 참가하는 모든 사용자는 다른 디버그 정보와 함께 예외 도우미를 볼 수 있습니다.
+예외 도우미에서 **Live Share 세션 시작...** 링크를 사용하여 [Live Share](/visualstudio/liveshare/) 세션을 시작할 수 있습니다. Live Share 세션에 참가하는 모든 사용자는 다른 디버그 정보와 함께 예외 도우미를 볼 수 있습니다.

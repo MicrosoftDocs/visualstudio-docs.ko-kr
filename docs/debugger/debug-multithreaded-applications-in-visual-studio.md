@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431812"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600325"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 애플리케이션 디버그
 스레드는 운영 체제에서 프로세서 시간을 부여받는 명령 시퀀스입니다. 운영 체제에서 실행되는 모든 프로세스는 최소한 하나의 스레드로 구성됩니다. 프로세스에 스레드가 둘 이상인 경우를 다중 스레드라고 합니다.
@@ -102,7 +102,7 @@ Visual Studio에서 제공하는 강력한 중단점 및 추적점은 다중 스
 
 - [중단점 사용](../debugger/using-breakpoints.md)
 - [스레딩](/dotnet/standard/threading/index)
-- [구성 요소에서 다중 스레딩](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
+- [구성 요소에서 다중 스레딩](/previous-versions/3es4b6yy(v=vs.140))
 - [이전 코드를 위한 다중 스레딩 지원](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [스레드 및 프로세스 디버그](../debugger/debug-threads-and-processes.md)
 - [원격 디버깅](../debugger/remote-debugging.md)

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585563"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038623"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>단위 테스트에서 MSTest 프레임워크 사용
 
@@ -43,7 +43,7 @@ ms.locfileid: "75585563"
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>호출 순서를 설정하는 데 사용되는 특성
 
-다음 특성 중 하나를 사용하여 데코레이팅도니 코드 요소는 지정하는 즉시 호출됩니다. 자세한 내용은 [단위 테스트 분석](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)을 참조하세요.
+다음 특성 중 하나를 사용하여 데코레이팅도니 코드 요소는 지정하는 즉시 호출됩니다. 자세한 내용은 [단위 테스트 분석](/previous-versions/ms182517(v=vs.110))을 참조하세요.
 
 ### <a name="attributes-for-assemblies"></a>어셈블리의 특성
 
@@ -69,7 +69,7 @@ ClassInitialize 및 ClassCleanup은 클래스를 로드한 직후와 클래스�
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>테스트 클래스 및 메서드를 식별하는 데 사용되는 특성
 
-모든 테스트 클래스에는 `TestClass` 특성이 있어야 하고, 모든 테스트 메서드에는 `TestMethod` 특성이 있어야 합니다. 자세한 내용은 [단위 테스트 분석](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)을 참조하세요.
+모든 테스트 클래스에는 `TestClass` 특성이 있어야 하고, 모든 테스트 메서드에는 `TestMethod` 특성이 있어야 합니다. 자세한 내용은 [단위 테스트 분석](/previous-versions/ms182517(v=vs.110))을 참조하세요.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

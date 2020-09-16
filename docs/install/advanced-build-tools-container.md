@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 92d0e984d4ccf595af2821dff9c02d069b16404d
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 4dd40d332f0f549ad1efbf0b328c68feb56819b8
+ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273844"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90025554"
 ---
 # <a name="advanced-example-for-containers"></a>컨테이너에 대한 고급 예제
 
@@ -69,9 +69,8 @@ if "%ERRORLEVEL%"=="3010" (
 ```dockerfile
 # escape=`
 
-# Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:3eaa3ba18f45e6561f32d8dd927045413f1dd043d7d29fb581f5cb3c6f7d7481
-ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
+# Use a specific tagged image.
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/runtime:4.8
 FROM ${FROM_IMAGE}
 
 # Restore the default Windows shell for correct batch processing.

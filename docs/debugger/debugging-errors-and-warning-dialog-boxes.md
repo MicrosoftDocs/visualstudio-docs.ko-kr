@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916443"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599940"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>디버깅 오류 및 경고 대화 상자
 다음은 애플리케이션을 디버깅할 때 발생할 수 있는 오류 및 경고 대화 상자입니다.
@@ -48,7 +48,7 @@ ms.locfileid: "75916443"
 
  [현재 위치에 사용할 수 있는 소스 코드가 없음 대화 상자](../debugger/no-source-available.md)
 
- [기호화된 정보 없음 대화 상자](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [기호화된 정보 없음 대화 상자](/previous-versions/d493t3ew(v=vs.100))
 
  [모호성 해결 대화 상자](../debugger/resolve-ambiguity-dialog-box.md)
 

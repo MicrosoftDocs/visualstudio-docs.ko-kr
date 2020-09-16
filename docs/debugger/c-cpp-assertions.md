@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911616"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600219"
 ---
 # <a name="cc-assertions"></a>C/C++ 어설션
 어설션 문은 프로그램의 특정 지점에서 true로 간주되는 조건을 지정합니다. 지정한 조건이 true가 아니면 어설션이 실패하고 프로그램 실행이 중단되며 [ 어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)가 나타납니다.
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> MFC 어설션
-MFC는 어설션 검사를 위한 [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) 매크로를 정의합니다. 또한 `CObject` 파생 개체의 내부 상태를 확인하는 `MFC ASSERT_VALID` 및 `CObject::AssertValid` 메서드를 정의합니다.
+MFC는 어설션 검사를 위한 [ASSERT](/previous-versions/ew16s3zc(v=vs.140)) 매크로를 정의합니다. 또한 `CObject` 파생 개체의 내부 상태를 확인하는 `MFC ASSERT_VALID` 및 `CObject::AssertValid` 메서드를 정의합니다.
 
 MFC `ASSERT` 매크로의 인수가 0 또는 false로 평가되면 매크로는 프로그램 실행을 중지하고 사용자에게 경고합니다. 그렇지 않으면 실행이 계속됩니다.
 
@@ -175,7 +175,7 @@ ASSERT를 [IsKindOf](/cpp/mfc/reference/cobject-class#iskindof) 함수와 함께
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-`ASSERT` 매크로는 릴리스 버전에서 코드를 생성하지 않습니다. 릴리스 버전에서 식을 평가해야 하는 경우 ASSERT 대신 [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) 매크로를 사용합니다.
+`ASSERT` 매크로는 릴리스 버전에서 코드를 생성하지 않습니다. 릴리스 버전에서 식을 평가해야 하는 경우 ASSERT 대신 [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) 매크로를 사용합니다.
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID 및 CObject::AssertValid
 [CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) 메서드는 개체의 내부 상태에 대한 런타임 검사를 제공합니다. `CObject`에서 클래스를 파생시킬 때 `AssertValid`를 재정의할 필요는 없지만 이렇게 하면 클래스를 더욱 안정적으로 만들 수 있습니다. `AssertValid`는 모든 개체의 멤버 변수에 대해 어설션을 수행하여 유효한 값이 포함되어 있는지 확인해야 합니다. 예를 들어, 포인터 멤버 변수가 NULL이 아닌 것을 확인해야 합니다.

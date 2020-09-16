@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536411"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600007"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent 사용(C#, Visual Basic)
 
@@ -74,7 +74,7 @@ ms.locfileid: "85536411"
 
      **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3. 최신 도움말 콘텐츠를 보려면[TechNet을 방문](https://technet.microsoft.com/systemcenter/default) 하세요.
+3. 최신 도움말 콘텐츠를 보려면[TechNet을 방문](/previous-versions/system-center/developer/cc817313(v=msdn.10)) 하세요.
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> Q: 애플리케이션 풀에 대한 권한을 설정하려면 어떻게 하나요?
  **A:** Windows **icacls** 명령 또는 Windows 탐색기(또는 파일 탐색기)를 사용합니다. 예를 들어:
@@ -108,7 +108,7 @@ ms.locfileid: "85536411"
   7. 애플리케이션 풀에 **읽기 및 실행** 권한이 있는지 확인합니다.
 
 ## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> 2단계: 앱 모니터링 시작
- Windows PowerShell [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) 명령을 사용하여 앱 모니터링을 시작합니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 애플리케이션 모니터링](https://technet.microsoft.com/library/dn465157.aspx)을 참조하세요.
+ Windows PowerShell [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) 명령을 사용하여 앱 모니터링을 시작합니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 애플리케이션 모니터링](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12))을 참조하세요.
 
 1. 웹 서버에서 **Windows PowerShell** 또는 **Windows PowerShell ISE** 명령 프롬프트 창을 관리자 권한으로 엽니다.
 
@@ -134,7 +134,7 @@ ms.locfileid: "85536411"
 
     |이름|설명|
     |-|-|
-    |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예를 들어:<br /><br /> ![IIS 웹 사이트 및 웹앱 경로](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|
+    |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예를 들어:<br /><br /> ![IIS 웹 사이트 및 웹앱 경로](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) 및 [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) 명령을 사용할 수도 있습니다.|
     |*\<monitoringMode>*|모니터링 모드를 지정합니다.<br /><br /> <ul><li>**모니터링**: 이 모드에서는 예외 이벤트 및 성능 이벤트에 대한 최소한의 세부 정보를 기록하며 기본 수집 계획을 사용합니다.</li><li>**추적**: 함수 수준 세부 정보를 기록하거나 지정된 컬렉션 계획을 사용하여 SharePoint 2010 및 SharePoint 2013 애플리케이션을 모니터링합니다. 이 모드를 사용하는 경우 앱 실행 속도가 느려질 수 있습니다.<br /><br /> <ul><li>[Q: 애플리케이션 풀에 대한 사용 권한을 설정하려면 어떻게 하나요?](#FullPermissionsITLog)</li><li>[Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)</li></ul><br />     아래 예제에서는 SharePoint 사이트에서 호스트되는 SharePoint 앱에 대한 이벤트를 기록합니다.<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**사용자 지정**: 지정된 사용자 지정 컬렉션 계획을 사용하여 사용자 지정 세부 정보를 기록합니다. 모니터링이 이미 시작된 후 수집 계획을 편집하는 경우에는 모니터링을 다시 시작해야 합니다.</li></ul>|
     |*"\<outputPath>"*|IntelliTrace 로그를 저장할 전체 디렉터리 경로를 지정합니다. 모니터링을 시작하기 전에 이 디렉터리를 만들어야 합니다.|
     |*\<UInt32>*|IntelliTrace 로그의 최대 크기를 지정합니다. IntelliTrace 로그의 기본 최대 크기는 250MB입니다.<br /><br /> 로그가 이 한도에 도달하면 Monitoring Agent는 항목을 추가로 기록할 수 있도록 가장 오래된 항목을 덮어씁니다. 이 제한을 변경하려면 **-MaximumFileSizeInMegabytes** 옵션을 사용하거나 수집 계획에서 `MaximumLogFileSize` 특성을 편집합니다.|
@@ -229,7 +229,7 @@ ms.locfileid: "85536411"
 Monitoring Agent는 `id`메서드에서 반환되는 `Employee.Id`, `Employee.Name` , `Employee` 및 `AlterEmployee` 개체의 값을 기록합니다. 그러나 `Address` 개체에 대한 정보는 null인지 여부를 제외하고는 기록하지 않습니다. 또한 `AlterEmployee` 메서드의 로컬 변수에 대한 데이터도 기록하지 않습니다. 단, 다른 메서드가 해당 로컬 변수를 매개 변수로 사용하는 경우에는 로컬 변수가 메서드 매개 변수로 기록됩니다.
 
 ## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> 3단계: 기록된 이벤트 저장
- 오류 또는 성능 문제가 발견되면 기록된 이벤트를 IntelliTrace 로그에 저장합니다. Monitoring Agent는 이벤트가 기록된 경우에만 로그를 만듭니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 애플리케이션 모니터링](https://technet.microsoft.com/library/dn465157.aspx)을 참조하세요.
+ 오류 또는 성능 문제가 발견되면 기록된 이벤트를 IntelliTrace 로그에 저장합니다. Monitoring Agent는 이벤트가 기록된 경우에만 로그를 만듭니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 애플리케이션 모니터링](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12))을 참조하세요.
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>기록된 이벤트를 저장하고 모니터링 계속
  IntelliTrace 로그를 만들되 앱을 다시 시작하거나 모니터링을 중지하지는 않으려면 다음 단계를 수행합니다. 이렇게 하면 Monitoring Agent는 서버 또는 애플리케이션이 다시 시작되어도 모니터링을 계속합니다.

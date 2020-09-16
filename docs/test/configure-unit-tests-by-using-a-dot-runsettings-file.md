@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972298"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038441"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -107,7 +107,7 @@ IDE에서는 **테스트** > **실행 설정 구성** > **솔루션 전체의 ru
 
 - 프로젝트 수준 실행 설정은 현재 C#, VB, C++ 및 F# 프로젝트에서 지원됩니다.
 - 프로젝트에 지정된 파일이 솔루션에 지정된 다른 실행 설정 파일을 재정의합니다.
-- [이 MSBuild 속성](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019)을 사용하여 runsettings 파일 경로를 지정할 수 있습니다. 
+- [이 MSBuild 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 사용하여 runsettings 파일 경로를 지정할 수 있습니다. 
 
 프로젝트에 대한 *.runsettings* 파일을 지정하는 예제:
     
@@ -307,7 +307,7 @@ public void HomePageTest()
 |구성|기본값|값|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 **true**로 설정합니다.<br /><br />예를 들어, 단위 테스트에 대해 *app.config* 파일을 지정한 경우 이 설정을 사용할 수 있습니다.<br /><br />새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|
-|**IgnoreTestImpact**|false|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](https://msdn.microsoft.com/library/dd286589)를 참조하세요.|
+|**IgnoreTestImpact**|false|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](/previous-versions/dd286589(v=vs.140))를 참조하세요.|
 |**SettingsFile**||여기에서 MSTest 어댑터와 함께 사용할 테스트 설정 파일을 지정할 수 있습니다. [설정 메뉴에서](#specify-a-run-settings-file-in-the-ide) 테스트 설정 파일을 지정할 수도 있습니다.<br /><br />이 값을 지정하면 **ForcedlegacyMode** 도 **true**로 설정해야 합니다.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|테스트 실행이 완료되면 MSTest가 종료됩니다. 테스트의 일부로 시작된 프로세스도 종료됩니다. 테스트 실행기를 활성 상태로 유지하려면 값을 **true**로 설정합니다. 예를 들어, 이 설정을 사용하여 브라우저가 코딩된 UI 테스트 사이에서 계속 실행되도록 할 수 있습니다.|
 |**DeploymentEnabled**|true|값을 **false**로 설정할 경우 테스트 메서드에서 지정한 배포 항목이 배포 디렉터리로 복사되지 않습니다.|
@@ -463,4 +463,3 @@ public void HomePageTest()
 - [테스트 실행 구성](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio 테스트 작업(Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

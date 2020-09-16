@@ -1,5 +1,6 @@
 ---
-title: '방법: 프로젝트 파일의 이름 또는 위치 참조 | Microsoft Docs'
+title: 프로젝트 파일의 이름 또는 위치 참조
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633839"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036459"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>방법: 프로젝트 파일의 이름 또는 위치 참조
 

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbe2b18b9edd6f2d4634ede41d676519f1b80ad3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533460"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035722"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
@@ -76,7 +76,7 @@ Visual Studio 2019 버전 16.3부터, 스타일 위반이 발생한 후에 [빠�
 
    Visual Studio에서 미리 보기 상자에 표시된 것처럼 EditorConfig 파일의 구성 설정을 수정하거나 새로 추가합니다.
 
-코드 스타일 위반의 심각도를 변경하려면 동일한 단계를 수행하되, **\<rule ID> 코드 스타일 구성** 대신 **\<rule ID> 심각도 구성**을 선택합니다. 자세한 내용은 [자동으로 규칙 심각도 구성](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)을 참조하세요.
+코드 스타일 위반의 심각도를 변경하려면 동일한 단계를 수행하되, **\<rule ID> 코드 스타일 구성** 대신 **\<rule ID> 심각도 구성**을 선택합니다. 자세한 내용은 [자동으로 규칙 심각도 구성](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)을 참조하세요.
 
 ::: moniker-end
 
@@ -1049,6 +1049,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **해당 언어** | C# 6.0 이상 및 Visual Basic 14 이상 |
 | **값** | `true` - 참조 같음 메서드보다 is null 검사를 선호함<br /><br />`false` - is null 검사보다 참조 같음 메서드를 선호함 |
 | **Visual Studio 기본값** | `true:silent` |
+
+코드 예제:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
 
 ## <a name="net-code-quality-settings"></a>.NET 코드 품질 설정
 

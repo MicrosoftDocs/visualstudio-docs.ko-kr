@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72911190"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037356"
 ---
 # <a name="concurrency-visualizer-sdk"></a>동시성 시각화 도우미 SDK
-동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식*이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](https://blogs.msdn.microsoft.com/visualizeparallel/2011/10/17/introducing-the-concurrency-visualizer-sdk/)(동시성 시각화 도우미 SDK 소개)를 참조하세요.
+동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식*이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)(동시성 시각화 도우미 SDK 소개)를 참조하세요.
 
 ## <a name="properties"></a>속성
  각 플래그, 범위 및 메시지에는 두 개의 속성인 범주와 중요도가 있습니다. [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자에서, 이러한 속성을 사용하여 표시되는 표식의 집합을 필터링할 수 있습니다. 또한 이러한 속성은 표식의 시각적 표시에 영향을 줍니다. 예를 들어 플래그의 크기는 중요도를 나타내는 데 사용됩니다. 또한 색은 범주를 나타내는 데 사용됩니다.

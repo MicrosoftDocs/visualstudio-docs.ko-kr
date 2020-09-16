@@ -1,17 +1,19 @@
 ---
 title: ASP.NET Core 및 React.js를 포함한 Visual Studio 컨테이너 도구
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 author: ghogen
 description: Visual Studio 컨테이너 도구 및 Windows용 Docker를 사용하는 방법 알아보기
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 45dc1f16f1655c5c738804a1c4e0093dd9c8b1f8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485400"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036329"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 

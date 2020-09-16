@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286962"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038415"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -33,7 +33,7 @@ Fakes는 두 가지 버전이 있습니다.
 
 - Visual Studio Enterprise
 - .NET Framework 프로젝트
-- .NET Core 및 SDK 스타일 프로젝트 지원은 현재 미리 보기 버전입니다. [자세히 알아보기](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+- .NET Core 및 SDK 스타일 프로젝트 지원은 현재 미리 보기 버전입니다. [자세히 알아보기](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - .NET Standard 프로젝트는 지원되지 않습니다.

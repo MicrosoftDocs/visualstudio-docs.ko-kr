@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460840"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599633"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패
 인증 오류로 인해 디버깅을 요청한 사용자를 인증할 수 없습니다. 웹 애플리케이션 또는 XML Web services를 한 단계씩 실행하려고 할 때 이 오류가 발생할 수 있습니다. 이 오류는 Windows 통합 인증이 사용할 수 없도록 설정되어 있기 때문에 발생할 수 있습니다. 이 인증을 사용하려면 "통합 Windows 인증을 사용하려면"의 단계를 따릅니다.
@@ -116,4 +116,4 @@ ms.locfileid: "85460840"
 ## <a name="see-also"></a>참조
 - [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest 인증](/windows/win32/secauthn/microsoft-digest-authentication)
-- [IIS 7.0 및 Visual Studio를 사용하여 Windows Vista에서 웹 애플리케이션 실행](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [IIS 7.0 및 Visual Studio를 사용하여 Windows Vista에서 웹 애플리케이션 실행](/previous-versions/aa964620(v=vs.140))

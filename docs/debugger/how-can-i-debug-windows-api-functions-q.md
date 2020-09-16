@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350396"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599888"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 함수를 어떻게 디버깅할 수 있습니까?
 NT 기호가 로드된 Windows API 함수를 디버깅하려면 다음 작업을 수행해야 합니다.
@@ -40,7 +40,7 @@ NT 기호가 로드된 Windows API 함수를 디버깅하려면 다음 작업을
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     데코레이트된 이름을 가져오려면 [데코레이트된 이름 보기](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)를 참조하세요.
+     데코레이트된 이름을 가져오려면 [데코레이트된 이름 보기](/previous-versions/5x49w699(v=vs.140))를 참조하세요.
 
      데코레이트된 이름을 테스트하고 디스어셈블리 코드에서 볼 수 있습니다. Visual Studio 디버거의 함수에서 일시 중지된 동안 코드 편집기 또는 호출 스택 창에서 함수를 마우스 오른쪽 단추로 클릭하고 **디스어셈블리로 이동**을 선택합니다.
 

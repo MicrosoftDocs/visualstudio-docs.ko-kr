@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349161"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599905"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio에서 디버그 및 릴리스 구성 설정
 
@@ -67,7 +67,7 @@ Visual Studio 프로젝트에는 사용하는 프로그램에 대한 별도의 �
 기호(.pdb) 파일 및 포함할 디버그 정보를 생성하도록 선택할 수 있습니다. 대부분의 프로젝트 형식에 대해 컴파일러는 기본적으로 디버그 및 릴리스 빌드에 대한 기호 파일을 생성하며, 다른 기본 설정은 프로젝트 형식 및 Visual Studio 버전에 따라 다릅니다.
 
 > [!IMPORTANT]
-> 디버거는 실행 파일을 빌드할 때 만든 .pdb 파일과 정확히 일치하는 실행 파일의 .pdb 파일만 로드합니다. 즉, .pdb는 원본이거나 원본 .pdb 파일의 복사본이어야 합니다. 자세한 내용은 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)(Visual Studio에서 디버거 기호 파일이 빌드 기반이 된 이진 파일과 정확히 일치해야 하는 이유)를 참조하세요.
+> 디버거는 실행 파일을 빌드할 때 만든 .pdb 파일과 정확히 일치하는 실행 파일의 .pdb 파일만 로드합니다. 즉, .pdb는 원본이거나 원본 .pdb 파일의 복사본이어야 합니다. 자세한 내용은 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)(Visual Studio에서 디버거 기호 파일이 빌드 기반이 된 이진 파일과 정확히 일치해야 하는 이유)를 참조하세요.
 
 각 프로젝트 형식에는 이러한 옵션을 설정하는 다른 방법이 있을 수 있습니다.
 

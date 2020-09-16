@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291001"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037532"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>데이터베이스 도구를 사용하여 데이터베이스 성능 분석
 
 데이터베이스 도구를 사용하여 진단 세션 중에 앱이 수행하는 데이터베이스 쿼리를 기록합니다. 그런 다음 앱의 성능을 향상할 수 있는 지점을 찾기 위해 개별 쿼리에 대한 정보를 분석할 수 있습니다.
 
 > [!NOTE]
-> 데이터베이스 도구를 사용하려면 Visual Studio 2019 버전 16.3 이상과 [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) 또는 [Entity Framework Core](https://docs.microsoft.com/ef/core/)를 사용하는 Windows 기반 .NET Core 프로젝트가 필요합니다.
+> 데이터베이스 도구를 사용하려면 Visual Studio 2019 버전 16.3 이상과 [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) 또는 [Entity Framework Core](/ef/core/)를 사용하는 Windows 기반 .NET Core 프로젝트가 필요합니다.
 
 ## <a name="setup"></a>설정
 
@@ -50,7 +50,7 @@ ms.locfileid: "85291001"
 
 ![소스 파일로 이동 선택됨](./media/db-gotosource.png "소스 파일로 이동 선택됨")
 
-그래프에서 시간 범위를 선택하는 경우 쿼리 테이블에는 해당 시간 범위 동안 발생한 쿼리만 표시됩니다. 이 동작은 [CPU 사용량 도구](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019)도 함께 실행하는 경우 특히 유용합니다.
+그래프에서 시간 범위를 선택하는 경우 쿼리 테이블에는 해당 시간 범위 동안 발생한 쿼리만 표시됩니다. 이 동작은 [CPU 사용량 도구](./cpu-usage.md?view=vs-2019)도 함께 실행하는 경우 특히 유용합니다.
 
 ## <a name="see-also"></a>참조
 
