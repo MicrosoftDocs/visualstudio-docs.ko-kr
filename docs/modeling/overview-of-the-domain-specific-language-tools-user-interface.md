@@ -1,5 +1,6 @@
 ---
-title: 도메인별 언어 도구 사용자 인터페이스 개요
+title: 도메인 특정 언어 도구 UI 개요
+description: Visual Studio에서의 도메인 특정 언어 도구 솔루션의 사용자 인터페이스에 대한 개요를 제공합니다.
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532407"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100724"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>도메인별 언어 도구 사용자 인터페이스 개요
 Visual Studio에서 도메인 특정 언어 도구(DSL 도구) 솔루션을 처음으로 열 때 사용자 인터페이스는 다음 그림과 유사합니다.
