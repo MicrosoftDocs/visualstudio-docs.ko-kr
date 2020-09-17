@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114814"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713479"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 활동 디자이너
 
@@ -35,11 +35,11 @@ ms.locfileid: "76114814"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 활동의 선택적 이름입니다. 기본값은 TransactionScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|단일 트랜잭션에서 실행할 활동을 지정합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.TransactionScope.Body%2A> **도구 상자** 의 활동을 "여기에 작업 놓기" 힌트 텍스트가 있는 **TransactionScope** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|이 <xref:System.Transactions.IsolationLevel>의 <xref:System.Activities.Statements.TransactionScope>을 지정합니다.|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|트랜잭션을 완료해야 하는 시간 간격(시:분:초를 의미하는 00:00:00 형식)을 지정합니다. 기본값은 1분입니다(00:01:00).|
-|[AbortInstanceOnTransactionFailure입니다.](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|True|트랜잭션이 중단되면 워크플로를 중단할지 여부를 나타내는 값을 지정합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.TransactionScope> 활동의 선택적 이름입니다. 기본값은 TransactionScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|참|단일 트랜잭션에서 실행할 활동을 지정합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.TransactionScope.Body%2A> **도구 상자** 의 활동을 "여기에 작업 놓기" 힌트 텍스트가 있는 **TransactionScope** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|참|이 <xref:System.Transactions.IsolationLevel>의 <xref:System.Activities.Statements.TransactionScope>을 지정합니다.|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|거짓|트랜잭션을 완료해야 하는 시간 간격(시:분:초를 의미하는 00:00:00 형식)을 지정합니다. 기본값은 1분입니다(00:01:00).|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|참|트랜잭션이 중단되면 워크플로를 중단할지 여부를 나타내는 값을 지정합니다.|
 
 ## <a name="see-also"></a>추가 정보
 
