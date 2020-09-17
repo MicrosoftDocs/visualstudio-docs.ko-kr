@@ -10,12 +10,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/10/2019
-  ms.openlocfilehash: 45f9459ff4778b58ae3d553a03b2e5c1773614b6
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: c515710fcaf45b726a80c9986d8785f8458ca59a
+  ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "74316407"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "90713531"
 landingContent:
 - title: XAML에 대한 자세한 정보
   linkLists:
@@ -50,7 +50,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: WPF 개요
-      url: ../designers/introduction-to-wpf.md
+      url: /dotnet/desktop/wpf/introduction-to-wpf
   - linkListType: get-started
     links:
     - text: Visual Studio에서 WPF 시작
