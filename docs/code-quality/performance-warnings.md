@@ -1,29 +1,29 @@
 ---
-title: 성능 경고
+title: 성능 규칙
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
-- warnings, performance
-- performance warnings
-- performance, warnings
-- managed code analysis warnings, performance warnings
+- rules, performance
+- performance rules
+- performance, rules
+- managed code analysis rules, performance rules
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e798b3a47d6a9d606e3c25768895096f752f53
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7ee44b74ca47de8059b68d95ea5e06c801842bc7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508992"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808573"
 ---
-# <a name="performance-warnings"></a>성능 경고
-성능 경고는 고성능 라이브러리 및 응용 프로그램을 지원 합니다.
+# <a name="performance-rules"></a>성능 규칙
+성능 규칙은 고성능 라이브러리 및 응용 프로그램을 지원 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -52,7 +52,7 @@ ms.locfileid: "89508992"
 | [CA1831: 적절한 경우 문자열에 대해 범위 기반 인덱서 대신 AsSpan을 사용하세요.](../code-quality/ca1831.md) | 문자열에 범위-인덱서를 사용 하 고 해당 값을 ReadOnlySpan char 형식에 암시적으로 할당 하는 경우 &lt; &gt; 이 메서드는 <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 문자열의 요청 된 부분 복사본을 생성 하는 대신 사용 됩니다. |
 | [CA1832: 배열의 ReadOnlySpan 또는 ReadOnlyMemory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.](../code-quality/ca1832.md) | 배열에 범위-인덱서를 사용 하 고 또는 형식에 값을 암시적으로 할당 하는 경우 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> 이 메서드는 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 배열에서 요청 된 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 부분의 복사본을 생성 하는 대신 사용 됩니다. |
 | [CA1833: 배열의 Span 또는 Memory 부분을 가져오려면 범위 기반 인덱서 대신 AsSpan 또는 AsMemory를 사용하세요.](../code-quality/ca1833.md) | 배열에 범위-인덱서를 사용 하 고 또는 형식에 값을 암시적으로 할당 하는 경우 <xref:System.Span%601> <xref:System.Memory%601> 이 메서드는 <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 배열에서 요청 된 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 부분의 복사본을 생성 하는 대신 사용 됩니다. |
-| [CA1834: 단일 문자열에 대해 StringBuilder. Append (char)를 사용 하십시오.](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder>`Append`에는를 인수로 사용 하는 오버 로드가 있습니다 `char` . `char`성능 향상을 위해 오버 로드를 호출 하는 것이 좋습니다. |
+| [CA1834: 단일 문자열에 대해 StringBuilder.Append(char)를 사용하세요.](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder>`Append`에는를 인수로 사용 하는 오버 로드가 있습니다 `char` . `char`성능 향상을 위해 오버 로드를 호출 하는 것이 좋습니다. |
 | [CA1835: ' ReadAsync ' 및 ' WriteAsync '에 대해 ' Memory' 기반 오버 로드를 선호 합니다.](../code-quality/ca1835.md) | ' Stream '에는 첫 번째 인수로 ' Memory Byte '를 사용 하는 ' ReadAsync ' 오버 로드 &lt; &gt; 와 ' ReadOnlyMemory &lt; Byte &gt; '를 첫 번째 인수로 사용 하는 ' WriteAsync ' 오버 로드가 있습니다. 더 효율적인 메모리 기반 오버 로드를 호출 하는 것이 좋습니다. |
 | [CA1836: `IsEmpty` `Count` 사용 가능한 경우 선호](../code-quality/ca1836.md) | `IsEmpty`, 또는 보다 효율적인 속성을 사용 `Count` `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> 하 여 개체에 항목이 포함 되어 있는지 여부를 확인 하는 것이 좋습니다. |
 | [CA1837: 대신을 사용 합니다. `Environment.ProcessId``Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` 는 보다 간단 하 고 빠릅니다 `Process.GetCurrentProcess().Id` . |

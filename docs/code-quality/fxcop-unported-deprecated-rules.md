@@ -1,5 +1,5 @@
 ---
-title: 사용 되지 않는 규칙
+title: 사용되지 않는 규칙
 ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a79b4a3b91f087c5f238afd3627a1393c558daa
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 33f935158077e566a5a9bc14645acaae79201347
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89511024"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832179"
 ---
-# <a name="deprecated-rules"></a>사용 되지 않는 규칙
+# <a name="deprecated-rules"></a>사용되지 않는 규칙
 
 다음 FxCop 레거시 분석 규칙은 더 이상 사용 되지 않으며 분석기로 구현 되지 않습니다. 자세한 내용은 [roslyn-분석기 GitHub 문제 페이지](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)에서 규칙 ID (예: **CA1009**)로 검색할 수 있습니다.
 
+- [CA1006](ca1006.md)
 - [CA1009](ca1009.md)
 - [CA1020](ca1020.md)
 - [CA1025](ca1025.md)

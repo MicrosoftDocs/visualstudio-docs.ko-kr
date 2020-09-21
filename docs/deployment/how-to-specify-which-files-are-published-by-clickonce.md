@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce에서 게시할 파일 지정 Microsoft Docs
+title: 게시할 파일 지정 (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ab6d724b40168f84227edb6ccfafc6245c30e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381784"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809494"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>방법: ClickOnce를 통해 게시할 파일 지정
 응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 프로젝트의 코드 이외의 모든 파일이 응용 프로그램과 함께 배포 됩니다. 일부 경우에는 특정 파일을 게시 하지 않으려는 경우 또는 조건에 따라 특정 파일을 설치 해야 할 수 있습니다. Visual Studio는 파일을 제외 하 고, 파일을 데이터 파일 또는 필수 구성 요소로 표시 하 고, 조건부 설치용 파일 그룹을 만드는 기능을 제공 합니다.

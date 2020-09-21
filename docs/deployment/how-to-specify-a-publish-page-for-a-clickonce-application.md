@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce 응용 프로그램의 게시 페이지 지정 | Microsoft Docs
+title: 게시 페이지 지정 (ClickOnce 앱)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf7178a6b5456d048421533b8497682d69c2ee0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f9853f6e15cb6d960e02491539f031bc1c44a1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381966"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808778"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 게시 페이지 지정
 응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 기본 웹 페이지 (publish.htm)가 생성 되어 응용 프로그램과 함께 게시 됩니다. 이 페이지에는 응용 프로그램의 이름, 응용 프로그램을 설치 하는 링크 및/또는 모든 필수 구성 요소 및 설명 하는 도움말 항목에 대 한 링크가 포함 되어 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 있습니다. 프로젝트의 **게시 페이지** 속성을 사용 하 여 응용 프로그램에 대 한 웹 페이지의 이름을 지정할 수 있습니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .

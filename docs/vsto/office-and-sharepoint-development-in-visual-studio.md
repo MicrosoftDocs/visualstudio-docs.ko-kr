@@ -21,17 +21,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800946"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811034"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio에서 Office 및 SharePoint 개발
   사용자가 [Office 스토어](https://store.office.com/) 또는 조직 카탈로그에서 다운로드하는 간단한 앱 또는 추가 기능이나 컴퓨터에 설치하는 .NET Framework 기반 솔루션을 만들어 Microsoft Office 및 SharePoint를 확장할 수 있습니다.
 
- 이 항목의 내용:
+ 항목 내용
 
 - [Office 및 SharePoint용 추가 기능 만들기](#Apps)
 
@@ -62,7 +62,7 @@ ms.locfileid: "88800946"
 |대상|참조 항목|
 |--------|---------|
 |Office 추가 기능에 대해 자세히 알아보고 앱 빌드해 보기|[Office 추가 기능](/office/dev/add-ins/publish/publish)|
-|Office를 확장할 수 있는 다양한 방식을 비교하고 앱을 사용할지 아니면 Office 추가 기능을 사용할지 결정|[Office 추가 기능, VSTO 및 VBA에 대 한 로드맵](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Office를 확장할 수 있는 다양한 방식을 비교하고 앱을 사용할지 아니면 Office 추가 기능을 사용할지 결정|[Office 추가 기능, VSTO 및 VBA에 대 한 로드맵](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>SharePoint 추가 기능 빌드
  사용자를 위해 SharePoint를 확장하려면 SharePoint 추가 기능을 빌드합니다. 기본적으로 사용자 또는 비즈니스의 필요성을 해결 하는 작고 사용 하기 쉬운 독립 실행형 응용 프로그램입니다.
@@ -90,9 +90,9 @@ ms.locfileid: "88800946"
 
  **자세한 정보**
 
-|작업|읽기|
+|대상|읽기|
 |--------|----------|
-|Office를 확장할 수 있는 다양한 방법을 비교하고 VSTO 추가 기능을 사용할지 또는 Office 추가 기능을 사용할지 결정|[Office 추가 기능, VSTO 및 VBA에 대 한 로드맵](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Office를 확장할 수 있는 다양한 방법을 비교하고 VSTO 추가 기능을 사용할지 또는 Office 추가 기능을 사용할지 결정|[Office 추가 기능, VSTO 및 VBA에 대 한 로드맵](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |VSTO 추가 기능 만들기|[Visual Studio에서 VSTO 추가 기능 빌드](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> SharePoint 솔루션 만들기

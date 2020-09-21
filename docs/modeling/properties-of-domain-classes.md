@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544185"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810030"
 ---
 # <a name="properties-of-domain-classes"></a>도메인 클래스의 속성
 도메인 클래스의 속성은 다음 표에 나와 있습니다. 도메인 클래스에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
@@ -36,4 +36,4 @@ ms.locfileid: "85544185"
 
 ## <a name="see-also"></a>추가 정보
 
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

@@ -1,29 +1,29 @@
 ---
-title: 전역화 경고
+title: 전역화 규칙
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.globalizationrules
 helpviewer_keywords:
-- warnings, globalization
-- globalization warnings
-- globalization [Visual Studio], warnings
-- managed code analysis warnings, globalization warnings
+- rules, globalization
+- globalization rules
+- globalization [Visual Studio], rules
+- managed code analysis rules, globalization rules
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: e046f7e885ea0a6002d07b6a06b6b3728bf607aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509850"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808641"
 ---
-# <a name="globalization-warnings"></a>전역화 경고
-세계화 경고는 전 세계에서 사용할 수 있는 라이브러리 및 응용 프로그램을 지원 합니다.
+# <a name="globalization-rules"></a>전역화 규칙
+세계화 규칙은 세계 시장에 대응 하는 라이브러리 및 응용 프로그램을 지원 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

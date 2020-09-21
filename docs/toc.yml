@@ -505,7 +505,7 @@
         - name: 코드 스타일
           items:
             - name: 코드 스타일 기본 설정
-              href: /visualstudio/ide/code-styles-and-code-cleanup
+              href: ./ide/code-styles-and-code-cleanup.md
             - name: 코드 스타일에 EditorConfig 파일 사용
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md

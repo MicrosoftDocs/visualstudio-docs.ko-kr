@@ -1,5 +1,6 @@
 ---
-title: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색
+title: 온라인 ClickOnce 앱에서 쿼리 문자열 정보 검색
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc94691eda319607510619dbb37e24265bcae522
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 824d289e0b15938e730657a449ef1566bdb6ee8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641593"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809769"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>방법: 온라인 ClickOnce 애플리케이션에서 쿼리 문자열 정보 검색
 *쿼리 문자열* 은 임의의 정보를 *name=value*형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 호스트하는 `WindowsApp1` 이라는 이름의 `servername`애플리케이션이 있으며, 애플리케이션이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.

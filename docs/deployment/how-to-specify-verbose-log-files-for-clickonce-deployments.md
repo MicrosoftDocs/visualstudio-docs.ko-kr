@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce 배포에 대 한 자세한 로그 파일 지정 | Microsoft Docs
+title: 자세한 로그 파일 지정 (ClickOnce 배포)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54c90f6a544607e78dd8f294bfc307bc87377b70
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381771"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808713"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>방법: ClickOnce 배포에 대한 자세한 로그 파일 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 모든 배포에 대 한 활동 로그 파일을 유지 관리 합니다. 이러한 로그는 배포 설치, 초기화, 업데이트 및 제거와 관련 된 정보를 문서화 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 합니다. 이러한 로그 파일에 기록 하는 세부 정보를 늘리려면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 레지스트리 편집기 (*regedit.exe*)를 사용 하 여 자세한 정도를 지정 합니다.

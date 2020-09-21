@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016507"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739917"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부
   SharePoint 프로젝트는 하나 이상의 SharePoint 프로젝트 항목에 대 한 컨테이너입니다. 사용자 고유의 SharePoint 프로젝트 항목 형식을 만든 다음 프로젝트 템플릿에 연결 하 여 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 사이트 열을 만들기 위한 프로젝트 항목 형식을 정의 하 고, 사이트 열 프로젝트 항목을 포함 하는 새 프로젝트를 만드는 데 사용할 수 있는 프로젝트 템플릿을 만듭니다.
@@ -40,7 +40,7 @@ ms.locfileid: "86016507"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 및
@@ -236,7 +236,7 @@ ms.locfileid: "86016507"
 
 - *Projecttemplate .csproj* 또는 *projecttemplate .vbproj*
 
-  다음 절차에서는 이러한 파일 중 일부에 대체 가능한 매개 변수를 추가 합니다. 대체 가능 매개 변수는 달러 기호 ($) 문자로 시작 하 고 끝나는 토큰입니다. 사용자가이 프로젝트 템플릿을 사용 하 여 프로젝트를 만들면 Visual Studio에서 새 프로젝트의 이러한 매개 변수를 특정 값으로 자동으로 바꿉니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조 하세요.
+  다음 절차에서는 이러한 파일 중 일부에 대체 가능한 매개 변수를 추가 합니다. 대체 가능 매개 변수는 달러 기호 ($) 문자로 시작 하 고 끝나는 토큰입니다. 사용자가이 프로젝트 템플릿을 사용 하 여 프로젝트를 만들면 Visual Studio에서 새 프로젝트의 이러한 매개 변수를 특정 값으로 자동으로 바꿉니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조하세요.
 
 #### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>AssemblyInfo.cs 또는 AssemblyInfo 파일을 편집 하려면
 
@@ -639,7 +639,7 @@ ms.locfileid: "86016507"
 
 1. **솔루션 탐색기**의 **SiteColumnProjectItem** 프로젝트에서 매니페스트 편집기의 source.extension.vsixmanifest 파일을 엽니다.
 
-     Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요.
+     Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
 2. **제품 이름** 상자에 **사이트 열**을 입력 합니다.
 

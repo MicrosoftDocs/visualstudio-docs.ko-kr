@@ -1,5 +1,6 @@
 ---
-title: 방법-배포 업데이트에 대 한 대체 위치 지정 | Microsoft Docs
+title: 배포 업데이트를 위한 대체 위치 지정
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381914"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808752"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>방법: 배포 업데이트를 위한 대체 위치 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]처음에 CD 또는 파일 공유에서 응용 프로그램을 설치할 수 있지만 응용 프로그램은 웹에서 정기적으로 업데이트를 확인 해야 합니다. 초기 설치 후 응용 프로그램이 웹에서 자동으로 업데이트 될 수 있도록 배포 매니페스트에서 업데이트에 대 한 대체 위치를 지정할 수 있습니다.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015082"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739930"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>연습: SharePoint 프로젝트 확장 만들기
   이 연습에서는 SharePoint 프로젝트용 확장을 만드는 방법을 보여 줍니다. 프로젝트 확장을 사용 하 여 프로젝트를 추가, 삭제 또는 이름을 바꿀 때와 같은 프로젝트 수준 이벤트에 응답할 수 있습니다. 또한 속성 값이 변경 될 때 사용자 지정 속성을 추가 하거나 응답할 수 있습니다. 프로젝트 항목 확장과 달리 프로젝트 확장은 특정 SharePoint 프로젝트 형식에 연결할 수 없습니다. 프로젝트 확장을 만들 때에서 모든 종류의 SharePoint 프로젝트를 열 때 확장이 로드 됩니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -40,7 +40,7 @@ ms.locfileid: "86015082"
 
 - 프로젝트 속성 디버깅 및 테스트
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint 및의 지원 되는 버전 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]
@@ -128,7 +128,7 @@ ms.locfileid: "86015082"
 
 1. **솔루션 탐색기**에서 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 연 다음 **열기** 단추를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 매니페스트 디자이너에서 파일을 엽니다. **메타 데이터** 탭에 표시 되는 정보는 **확장 및 업데이트**에도 표시 됩니다. 모든 VSIX 패키지에는 source.extension.vsixmanifest 파일이 필요 합니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 매니페스트 디자이너에서 파일을 엽니다. **메타 데이터** 탭에 표시 되는 정보는 **확장 및 업데이트**에도 표시 됩니다. 모든 VSIX 패키지에는 source.extension.vsixmanifest 파일이 필요 합니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
 2. **제품 이름** 상자에 **사용자 지정 프로젝트 속성**을 입력 합니다.
 

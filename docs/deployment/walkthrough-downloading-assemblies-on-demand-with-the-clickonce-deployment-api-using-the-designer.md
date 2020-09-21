@@ -1,5 +1,6 @@
 ---
-title: 디자이너를 사용 하 여 ClickOnce에서 요청 시 어셈블리 다운로드
+title: 디자이너를 사용 하 여 요청 시 어셈블리 다운로드 (ClickOnce API)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c5def5c4ebdf8f34efef50dca8dc4656bbd7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4451f5f4075d512c76119faceb02d2a92fff120c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263432"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809265"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>연습: 디자이너를 사용 하 여 ClickOnce 배포 API에서 요청 시 어셈블리 다운로드
 기본적으로 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 포함된 모든 어셈블리는 애플리케이션을 처음 실행할 때 다운로드됩니다. 그러나 소수의 사용자가 사용하는 애플리케이션의 일부가 있을 수 있습니다. 이 경우 해당 형식 중 하나를 만들 때에만 어셈블리를 다운로드하고자 할 수 있습니다. 다음 연습에서는 애플리케이션의 특정 어셈블리를 "선택 사항"으로 표시하는 방법 및 공용 언어 런타임에서 요청할 때 <xref:System.Deployment.Application> 네임스페이스에 있는 클래스를 사용하여 이를 다운로드하는 방법을 설명합니다.
@@ -97,6 +98,6 @@ ms.locfileid: "66263432"
 
 2. 기본 폼이 나타나면 <xref:System.Windows.Forms.Button>을 누릅니다. 메시지 상자 창에 "Hello, World!"라는 문자열이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Deployment.Application.ApplicationDeployment>

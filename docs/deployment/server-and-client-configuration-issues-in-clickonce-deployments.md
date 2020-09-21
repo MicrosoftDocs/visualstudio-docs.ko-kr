@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 배포의 서버/클라이언트 구성 문제
+title: 서버/클라이언트 구성 문제 (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec07e71e57c0b3875d690773b7ff2618269b8f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af8b864092f56150ff71d0e23b0bf59280aeb6c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250006"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811236"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Windows에서 인식할 수 없는 파일 형식 (예: Microsoft Word 파일)이 배포에 포함 되어 있으면 IIS에서 해당 파일을 전송 하는 것을 거부 하 고 배포가 실패 합니다.

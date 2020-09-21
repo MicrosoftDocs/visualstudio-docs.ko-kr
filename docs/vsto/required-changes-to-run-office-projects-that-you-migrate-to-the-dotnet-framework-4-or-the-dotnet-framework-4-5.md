@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836068"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810969"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는 .NET Framework 4.5로 마이그레이션하는 Office 프로젝트를 실행 하는 데 필요한 변경 내용
   Office 프로젝트의 대상 프레임 워크가 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이전 버전의 .NET Framework에서 이상으로 변경 된 경우 다음 작업을 수행 하 여 개발 컴퓨터와 최종 사용자 컴퓨터에서 솔루션을 실행할 수 있는지 확인 해야 합니다.
@@ -64,7 +64,7 @@ ms.locfileid: "66836068"
 ## <a name="update-the-prerequisites-for-deployment"></a>배포에 대 한 필수 구성 요소 업데이트
  Office 프로젝트의 대상을 이상으로 변경 하는 경우 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] **필수 구성 요소** 대화 상자 에서도 해당 .NET Framework 필수 구성 요소를 업데이트 해야 합니다. 그렇지 않으면 ClickOnce 배포 또는 InstallShield Limited Edition 프로젝트가 이전 버전의 .NET Framework를 검사하고 설치합니다.
 
- 최종 사용자 컴퓨터에 배포 하기 위한 필수 구성 요소를 업데이트 하는 방법에 대 한 자세한 내용은 [방법: 최종 사용자 컴퓨터에 Office 솔루션 실행을 위한 필수 구성 요소 설치](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)를 참조 하세요.
+ 최종 사용자 컴퓨터에 배포 하기 위한 필수 구성 요소를 업데이트 하는 방법에 대 한 자세한 내용은 [방법: 최종 사용자 컴퓨터에 Office 솔루션 실행을 위한 필수 구성 요소 설치](/previous-versions/bb608608(v=vs.110))를 참조 하세요.
 
 ## <a name="reinstall-solutions-on-end-user-computers"></a>최종 사용자 컴퓨터에 솔루션 다시 설치
  ClickOnce를 사용하여 .NET Framework 3.5를 대상으로 하는 Office 솔루션을 배포한 다음 프로젝트 대상을 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상 버전으로 변경하는 경우 다시 게시한 후 최종 사용자가 솔루션을 제거하고 다시 설치해야 합니다. 대상이 변경 된 솔루션을 다시 게시 하 고 최종 사용자 컴퓨터에서 솔루션이 업데이트 되는 경우 최종 사용자는 업데이트 된 솔루션을 실행할 때을 받게 됩니다 <xref:System.Runtime.InteropServices.COMException> .

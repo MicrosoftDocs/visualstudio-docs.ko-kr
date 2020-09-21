@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416564"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809351"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce를 사용 하 여 Office 솔루션 배포
   ClickOnce를 사용하면 Office 솔루션을 더 적은 단계로 배포할 수 있습니다. 업데이트를 게시하는 경우 솔루션에서 자동으로 이를 감지하여 설치합니다. 그러나 ClickOnce에서는 컴퓨터의 각 사용자에 대해 별도로 솔루션을 설치하도록 합니다. 따라서 둘 이상의 사용자가 동일한 컴퓨터에서 솔루션을 실행 하는 경우 Windows Installer (*.msi*)를 사용 하는 것이 좋습니다.
@@ -358,7 +358,7 @@ ms.locfileid: "79416564"
 |오류 코드|정의|
 |----------------|----------------|
 |0|솔루션이 성공적으로 설치되었거나 제거되었습니다. 또는 VSTOInstaller 도움말이 표시되었습니다.|
-|-100|하나 이상의 명령줄 옵션이 잘못 되었거나 두 번 이상 설정 되었습니다. 자세한 내용을 보려면 "vstoinstaller/?"를 입력 하십시오. 또는 [ClickOnce Office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)를 참조 하세요.|
+|-100|하나 이상의 명령줄 옵션이 잘못 되었거나 두 번 이상 설정 되었습니다. 자세한 내용을 보려면 "vstoinstaller/?"를 입력 하십시오. 또는 [ClickOnce Office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](/previous-versions/bb772078(v=vs.110))를 참조 하세요.|
 |-101|하나 이상의 명령줄 옵션이 잘못 되었습니다. 자세한 내용을 보려면 "vstoinstaller /?"를 입력하십시오.|
 |-200|배포 매니페스트 URI가 잘못 되었습니다. 자세한 내용을 보려면 "vstoinstaller /?"를 입력하십시오.|
 |-201|배포 매니페스트가 잘못 되었으므로 솔루션을 설치할 수 없습니다. [Office 솔루션에 대 한 배포 매니페스트를](../vsto/deployment-manifests-for-office-solutions.md)참조 하세요.|
@@ -460,7 +460,7 @@ ms.locfileid: "79416564"
 
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)
 - [Office 솔루션 게시](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [방법: ClickOnce Office 솔루션 설치](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [ClickOnce office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](/previous-versions/bb386095(v=vs.110))
+- [방법: ClickOnce Office 솔루션 설치](/previous-versions/bb608592(v=vs.110))
+- [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](/previous-versions/bb608595(v=vs.110))
+- [ClickOnce office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](/previous-versions/bb772078(v=vs.110))

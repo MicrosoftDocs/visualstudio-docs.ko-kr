@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe09c242fce137d90b90ff2d6c547cee1ed2dc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c9f108529931fc99946e18f15492f72384e1578
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595399"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809991"
 ---
 # <a name="respond-to-and-propagate-changes"></a>변경 내용에 대 한 응답 및 전파
 
@@ -32,7 +32,7 @@ ms.locfileid: "75595399"
 |규칙|변경이 발생 한 트랜잭션의 끝 직전에 실행 대기 중인 규칙을 정의할 수 있습니다. 실행 취소 또는 다시 실행 시에는 실행 되지 않습니다. 저장소의 한 부분을 다른 부분에 동기화 하는 데 사용 합니다.|[규칙으로 모델 내부의 변경 내용 전파](../modeling/rules-propagate-changes-within-the-model.md)|
 |이벤트 저장|모델링 저장소는 요소나 링크를 추가 또는 삭제 하거나 속성의 값을 변경 하는 등의 이벤트에 대 한 알림을 제공 합니다. 이벤트는 실행 취소 및 다시 실행 에서도 실행 됩니다. 저장소 이벤트를 사용 하 여 저장소에 없는 값을 업데이트 합니다.|[이벤트 처리기로 모델 외부의 변경 내용 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |.NET 이벤트|셰이프에는 마우스 클릭 및 기타 제스처에 응답 하는 이벤트 처리기가 있습니다. 각 개체에 대해 이러한 이벤트를 등록 해야 합니다. 등록은 일반적으로 InitializeInstanceResources의 재정의에서 수행 되며 각 요소에 대해 수행 되어야 합니다.<br /><br /> 이러한 이벤트는 일반적으로 트랜잭션 외부에서 발생 합니다.|[방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|범위 규칙|범위 규칙은 특히 모양의 범위를 제한 하는 데 사용 됩니다.|[BoundsRules로 모양 위치 및 크기 제한](/visualstudio/modeling/boundsrules-constrain-shape-location-and-size?view=vs-2015)|
+|범위 규칙|범위 규칙은 특히 모양의 범위를 제한 하는 데 사용 됩니다.|[BoundsRules로 모양 위치 및 크기 제한](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015)|
 |선택 규칙|선택 규칙은 사용자가 선택할 수 있는 항목을 구체적으로 제한 합니다.|[방법: 현재 선택 항목 액세스 및 제약](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|도형 및 연결선의 기능을 사용 하는 모델 요소의 상태를 표시 합니다 (예: 그림자, 화살촉, 색, 선 두께 및 스타일).|[모양 및 연결선을 업데이트하여 모델 반영](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 

@@ -1,29 +1,29 @@
 ---
-title: 유지 관리 경고
+title: 유지 관리 규칙
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 751cec177e066da1210997ef0f6f8d869ba7d0dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509902"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808586"
 ---
-# <a name="maintainability-warnings"></a>유지 관리 경고
+# <a name="maintainability-rules"></a>유지 관리 규칙
 
-유지 관리 경고는 라이브러리 및 응용 프로그램 유지 관리를 지원 합니다.
+유지 관리 규칙은 라이브러리 및 응용 프로그램 유지 관리를 지원 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -37,6 +37,6 @@ ms.locfileid: "89509902"
 | [CA1508: 데드 조건부 코드 방지](../code-quality/ca1508.md) | 메서드에는 항상 `true` 또는 런타임 시로 계산 되는 조건부 코드가 있습니다 `false` . 이렇게 하면 조건의 분기에서 데드 코드가 발생 `false` 합니다. |
 | [CA1509: 코드 메트릭 구성 파일의 잘못된 항목](../code-quality/ca1509.md) | [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) 및 [CA1506](ca1506.md)와 같은 코드 메트릭 규칙에서 `CodeMetricsConfig.txt` 잘못 된 항목을 포함 하는 이라는 구성 파일을 제공 했습니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)

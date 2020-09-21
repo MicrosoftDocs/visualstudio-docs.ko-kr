@@ -15,35 +15,35 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 49824c173e06f17f6f6d0b999260ae81dee6a471
-  ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+  ms.openlocfilehash: dafbf89aa0a32edc905b807e9a6a1d759afb6626
+  ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/10/2020
-  ms.locfileid: "89741957"
+  ms.lasthandoff: 09/19/2020
+  ms.locfileid: "90808970"
 productDirectory:
   items:
   - title: Visual Studio
     imageSrc: ./media/vs-ide-2019.svg
     links:
-    - url: /visualstudio/windows?view=vs-2019
+    - url: ./windows/index.yml?view=vs-2019
       text: Visual Studio 2019(현재)
-    - url: /visualstudio/windows?view=vs-2017
+    - url: ./windows/index.yml?view=vs-2017
       text: Visual Studio 2017
-    - url: https://docs.microsoft.com/previous-versions/visualstudio/
+    - url: /previous-versions/visualstudio/
       text: 이전 버전
-    - url: https://docs.microsoft.com/visualstudio/releases/2019/release-notes
+    - url: /visualstudio/releases/2019/release-notes
       text: 릴리스 정보
     - url: https://visualstudio.microsoft.com/
       text: 제품 페이지
   - title: Mac용 Visual Studio
     imageSrc: ./media/vs-mac-2019.svg
     links:
-    - url: https://docs.microsoft.com/visualstudio/mac
+    - url: /visualstudio/mac
       text: Mac용 Visual Studio 2019(현재)
-    - url: https://docs.microsoft.com/visualstudio/mac/?view=vsmac-2017
+    - url: /visualstudio/mac/?view=vsmac-2017
       text: Mac용 Visual Studio 2017
-    - url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
+    - url: /visualstudio/releasenotes/vs2019-mac-relnotes
       text: 릴리스 정보
     - url: https://visualstudio.microsoft.com/vs/mac/
       text: 제품 페이지
@@ -59,7 +59,7 @@ productDirectory:
   - title: Visual Studio Codespaces
     imageSrc: ./media/vs-ide-2019.svg
     links:
-    - url: https://docs.microsoft.com/visualstudio/codespaces/
+    - url: /visualstudio/codespaces/
       text: 설명서
     - url: https://code.visualstudio.com/docs/remote/codespaces
       text: Visual Studio Code에서 사용
@@ -68,14 +68,14 @@ productDirectory:
   - title: Visual Studio 앱 센터
     imageSrc: ./media/vs-mobile-center.svg
     links:
-    - url: https://docs.microsoft.com/appcenter
+    - url: /appcenter
       text: 설명서
     - url: https://visualstudio.microsoft.com/app-center/
       text: 포털
   - title: Visual Studio 구독
     imageSrc: ./media/vs-subscription-temp.svg
     links:
-    - url: https://docs.microsoft.com/visualstudio/subscriptions
+    - url: /visualstudio/subscriptions
       text: 설명서
     - url: https://visualstudio.microsoft.com/subscriptions
       text: Visualstudio.com에 대한 정보

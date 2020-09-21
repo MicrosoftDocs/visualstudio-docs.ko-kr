@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 포함 | Microsoft Docs
+title: 필수 구성 요소 포함 (ClickOnce 앱)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29ba5cbef127be2c67c078a62574ade22295433c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382395"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809135"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>방법: ClickOnce 애플리케이션을 사용하여 필수 구성 요소 포함
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 필요한 구성 요소 소프트웨어를 배포하기 전에 먼저 이러한 필수 구성 요소용 설치 관리자 패키지를 개발 컴퓨터로 다운로드해야 합니다. 애플리케이션을 게시하고 **내 애플리케이션과 동일한 위치에서 필수 구성 요소 다운로드**를 선택할 경우, 설치 관리자 패키지가 **패키지** 폴더에 있지 않으면 오류가 발생합니다.
@@ -49,5 +50,5 @@ ms.locfileid: "85382395"
 
     이제 애플리케이션으로 설치 관리자 패키지를 배포할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [방법: ClickOnce 애플리케이션을 사용하여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
