@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77558178"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810982"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>게시 마법사 (Visual Studio에서 Office 개발)
   **게시 마법사** 를 사용 하 여 솔루션 파일을 지정 된 위치에 복사 하 고 매니페스트 파일을 만들고 설치 프로그램을 만들 수 있습니다.
@@ -49,7 +49,7 @@ ms.locfileid: "77558178"
 > 대상 컴퓨터에서 Windows Vista를 실행 하는 경우에는 더 많은 고려 사항이 있습니다. 로컬 게시 옵션을 사용 하려면 Windows Vista 컴퓨터의 관리자 여야 합니다. 또한 IIS의 설치 여부에 관계 없이 기본 위치는 항상 *게시 \\ * 디렉터리입니다.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>최종 사용자 컴퓨터의 기본 설치 경로는 무엇입니까?
- 설치 경로는 선택 사항입니다. 원할 경우 나중에 설치 경로를 설정할 수 있습니다. 자세한 내용은 [방법: Office 솔루션의 설치 경로 변경](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)을 참조 하십시오.
+ 설치 경로는 선택 사항입니다. 원할 경우 나중에 설치 경로를 설정할 수 있습니다. 자세한 내용은 [방법: Office 솔루션의 설치 경로 변경](/previous-versions/bb608626(v=vs.110))을 참조 하십시오.
 
  설치 경로는 최종 사용자가 사용자 지정을 설치 하는 디렉터리입니다. 또한 솔루션에서 업데이트를 확인하는 데 사용하는 경로이기도 합니다. 이전 페이지에서 **이 응용 프로그램을 게시할 위치 지정** 상자에 입력 한 경로와 경로가 동일 하지 않으면 **게시 마법사** 는이 위치에 솔루션을 배포 하지 않습니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "77558178"
 
  Visual Studio는 CD 또는 DVD를 굽지 않습니다. 출력을 CD 또는 DVD에 수동으로 복사 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [프로젝트 디자이너의 게시 페이지는 Visual Studio에서 Office 개발을 &#40;&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)

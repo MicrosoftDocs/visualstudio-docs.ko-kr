@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485443"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739982"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>todo 샘플 앱 빌드 및 실행
 
@@ -28,7 +28,7 @@ ms.locfileid: "89485443"
 
 애플리케이션을 실행하려면 먼저 애플리케이션 소스 코드를 머신으로 가져와야 합니다. 실제 프로젝트의 경우, 일반적으로 리포지토리를 복제합니다. 그러나 이 자습서에서는 애플리케이션이 포함된 ZIP 파일을 만들었습니다.
 
-1. [ZIP을 다운로드](/assets/app.zip)합니다. ZIP 파일을 열고 내용을 추출합니다.
+1. [ZIP을 다운로드](http://localhost/assets/app.zip)합니다. ZIP 파일을 열고 내용을 추출합니다.
 
 1. 추출이 완료되면 선호하는 코드 편집기를 사용하여 프로젝트를 엽니다. 편집기가 필요한 경우 [Visual Studio Code](https://code.visualstudio.com/)를 사용할 수 있습니다. `package.json`과 하위 디렉터리 2개(`src` 및 `spec`)가 표시됩니다.
 

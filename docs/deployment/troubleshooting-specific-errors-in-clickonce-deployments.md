@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 배포의 특정 오류 문제 해결 | Microsoft Docs
+title: 오류 문제 해결 (ClickOnce 배포)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235162"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809455"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 이 문서에서는 응용 프로그램을 배포할 때 발생할 수 있는 다음과 같은 일반적인 오류를 나열 하 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 고 각 문제를 해결 하는 단계를 제공 합니다.

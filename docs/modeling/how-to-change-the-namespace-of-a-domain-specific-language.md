@@ -12,12 +12,12 @@ manager: jillfra
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 747095a876b353aeef76e2f5321e7f2ffc46136f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100802"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809442"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>방법: 도메인별 언어의 네임 스페이스 변경
 
@@ -55,6 +55,6 @@ ms.locfileid: "90100802"
 
 11. **빌드** 메뉴에서 **솔루션 다시 빌드**를 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-[도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

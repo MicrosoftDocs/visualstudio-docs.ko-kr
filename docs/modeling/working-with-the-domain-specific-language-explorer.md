@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caf7d395c08a8c1e8c21f933ba63c8943813831b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532186"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810785"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>도메인별 언어 탐색기 작업
 **DSL 탐색기** 는 여러 종류의 정보를 트리 뷰에 표시 합니다. DSL 탐색기의 항목에 대 한 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.
@@ -41,6 +41,6 @@ ms.locfileid: "85532186"
 
 - **Xml 직렬화 동작**입니다. 모델의 serialization 설정입니다. Serialization에 대 한 자세한 내용은 [File Storage 및 XML Serialization 사용자 지정](../modeling/customizing-file-storage-and-xml-serialization.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

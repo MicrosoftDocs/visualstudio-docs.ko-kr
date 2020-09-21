@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238246"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810824"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인 특정 언어 정의에 추적 속성 추가
 
@@ -26,7 +26,7 @@ ms.locfileid: "88238246"
 
 예를 들어 도메인 특정 언어 도구 (DSL 도구)에서 도메인 클래스의 표시 이름 속성은 도메인 클래스의 이름을 사용 하 여 계산 되는 기본값을 가지 지만 사용자가 디자인 타임에 값을 변경 하거나 계산 된 값으로 다시 설정할 수 있습니다.
 
-이 연습에서는 모델의 기본 네임 스페이스 속성을 기반으로 하는 기본 값을 가진 네임 스페이스 추적 속성이 있는 DSL (도메인별 언어)을 만듭니다. 추적 속성에 대 한 자세한 내용은 [추적 속성 정의](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)를 참조 하세요.
+이 연습에서는 모델의 기본 네임 스페이스 속성을 기반으로 하는 기본 값을 가진 네임 스페이스 추적 속성이 있는 DSL (도메인별 언어)을 만듭니다. 추적 속성에 대 한 자세한 내용은 [추적 속성 정의](/previous-versions/cc825929(v=vs.100))를 참조 하세요.
 
 - DSL 도구는 추적 속성 설명자를 지원 합니다. 그러나 DSL 디자이너는 언어에 추적 속성을 추가 하는 데 사용할 수 없습니다. 따라서 사용자 지정 코드를 추가 하 여 추적 속성을 정의 하 고 구현 해야 합니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "88238246"
 
 - **속성** 창에서 추적 속성이 사용자에 의해 업데이트 됨 상태에 있는 경우 해당 값은 굵은 글꼴로 표시 됩니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습을 시작 하려면 먼저 다음 구성 요소를 설치 해야 합니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "88238246"
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
 
 1. 도메인 특정 언어 디자이너 프로젝트를 만듭니다. 이름을 `TrackingPropertyDSL`로 지정합니다.
 

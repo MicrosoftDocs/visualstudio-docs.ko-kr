@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015826"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740060"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -80,7 +80,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 2. SQL Server AdventureWorks 예제 데이터베이스에 대 한 연결을 추가 합니다.
 
-     자세한 내용은 [연결 추가/수정 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)을 참조 하세요.
+     자세한 내용은 [연결 추가/수정 (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140))을 참조 하세요.
 
 3. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
 
@@ -182,7 +182,7 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
 10. 6 단계를 반복 하 여 다음 각 필드에 대 한 형식 설명자를 만듭니다.
 
-    |Name|유형 이름|
+    |속성|유형 이름|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
@@ -242,7 +242,7 @@ BDC 서비스에서 연락처를 목록에 표시할 수 있도록 하려면 Fin
 프로젝트를 실행 하면 SharePoint 사이트가 열리고 Visual Studio에서 비즈니스 데이터 연결 서비스에 모델을 추가 합니다. SharePoint에서 Contact 엔터티를 참조 하는 외부 목록을 만듭니다. AdventureWorks 데이터베이스의 연락처에 대 한 데이터가 목록에 표시 됩니다.
 
 > [!NOTE]
-> 솔루션을 디버깅 하려면 먼저 SharePoint에서 보안 설정을 수정 해야 할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
+> 솔루션을 디버깅 하려면 먼저 SharePoint에서 보안 설정을 수정 해야 할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조하세요.
 
 1. **F5** 키를 선택합니다.
 

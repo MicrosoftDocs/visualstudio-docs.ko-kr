@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebda963bf1afa55fa8d7f98774c72a75d242ceef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49551a5e96e3c354b54b6b2ba7cedf1ba2ab4470
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532459"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811203"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>방법: 요소에 CLR 특성 설정
 사용자 지정 특성은 도메인 요소, 도형, 연결선 및 다이어그램에 추가할 수 있는 특수 한 특성입니다. 클래스에서 상속 되는 특성을 추가할 수 있습니다 `System.Attribute` .
@@ -41,6 +41,6 @@ ms.locfileid: "85532459"
 
      `[`*AttributeName* `(` *ParameterName* `=` *유형*`)]`
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

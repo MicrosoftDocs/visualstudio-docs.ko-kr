@@ -21,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452832785db879e75825b1c862e8e9b1b6e69f1d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590529"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810811"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 
@@ -50,7 +50,7 @@ ms.locfileid: "75590529"
 |[사용자 요구 사항 모델링](../modeling/model-user-requirements.md)|모델을 사용하여 사용자 요구 사항을 분명히 설명하고 전달합니다.|
 |[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|모델을 사용하여 시스템의 전체 구조 및 동작을 설명하고 사용자 요구 사항에 맞는지 확인합니다.|
 |[개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)|소프트웨어와 사용자 요구 사항 및 전체 시스템 아키텍처의 일관성이 유지되는지 확인합니다.|
-|[개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)<br /><br /> [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|모델을 사용하여 개발하는 동안 시스템을 이해하고 변경하도록 도와줍니다.|
+|[개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)<br /><br /> [Agile 개발에서 모델 사용](/previous-versions/ff398061(v=vs.140))|모델을 사용하여 개발하는 동안 시스템을 이해하고 변경하도록 도와줍니다.|
 |[모델링 솔루션 구성](../modeling/structure-your-modeling-solution.md)|대규모 또는 중간 규모 프로젝트에서 모델을 구성합니다.|
 
 ## <a name="resources"></a>리소스

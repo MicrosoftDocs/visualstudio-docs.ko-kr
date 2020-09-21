@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce 응용 프로그램의 보안 영역 설정 Microsoft Docs
+title: 보안 영역 설정 (ClickOnce 앱)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51515339c24ea8a0507c47d0399cde9e423f71a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59b099a406f31bf2a1c1266d76bb037ac3e85e19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382135"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809731"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 보안 영역 설정
 ClickOnce 애플리케이션에 대한 코드 액세스 보안 권한을 설정할 때에는 **프로젝트 디자이너** 의 **보안**페이지에서 기본 권한 집합으로 시작해야 합니다.

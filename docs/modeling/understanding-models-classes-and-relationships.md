@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08981e4f63c84d19d4086c75fe33a8b19a515ccf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565905"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809978"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
 Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 프로그램 코드와 함께 DSL 정의 파일에 의해 정의 됩니다. DSL 솔루션의 프로그램 코드 대부분은이 파일에서 생성 됩니다.
@@ -148,6 +148,6 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
 
  파생 관계는 기본 관계를 특수화 합니다. 이 클래스와 연결 된 도메인 클래스는 기본 관계에 의해 연결 된 클래스와 동일한 또는에서 파생 되어야 합니다. 파생 관계에 대 한 링크는 모델에서 생성 될 때 파생 된 관계와 기본 관계의 인스턴스입니다. 프로그램 코드에서 기본 또는 파생 클래스에 의해 생성 된 속성을 사용 하 여 링크의 반대쪽 끝으로 이동할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

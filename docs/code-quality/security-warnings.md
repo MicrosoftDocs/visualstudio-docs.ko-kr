@@ -1,30 +1,30 @@
 ---
-title: 보안 경고
+title: 보안 규칙
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
-- security warnings
-- managed code analysis warnings, security warnings
-- warnings, security
+- security rules
+- managed code analysis rules, security rules
+- rules, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2eb2356628099246aa010c0332f473955a3e976d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599968"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807926"
 ---
-# <a name="security-warnings"></a>보안 경고
+# <a name="security-rules"></a>보안 규칙
 
-보안 경고는 더 안전한 라이브러리 및 애플리케이션을 지원합니다. 이들 경고는 프로그램의 보안 결함을 방지하는 데 도움이 됩니다. 이들 경고를 비활성화하는 경우 코드에 그 이유를 명확하게 표시하고 개발 프로젝트의 지정된 보안 담당자에게 이 사실을 알려야 합니다.
+보안 규칙은 더 안전한 라이브러리 및 응용 프로그램을 지원 합니다. 이러한 규칙은 프로그램의 보안 결함을 방지 하는 데 도움이 됩니다. 이러한 규칙을 사용 하지 않도록 설정 하는 경우 코드에서 이유를 명확 하 게 표시 하 고 개발 프로젝트에 대해 지정 된 보안 담당자에 게 알려야 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -79,7 +79,7 @@ ms.locfileid: "89599968"
 |[CA5358: 안전하지 않은 암호화 모드를 사용하지 마세요.](../code-quality/ca5358.md)|안전하지 않은 암호화 모드를 사용하지 마세요.|
 |[CA5359: 인증서 유효성 검사를 비활성화하지 마세요.](../code-quality/ca5359.md)|인증서는 서버의 id를 인증 하는 데 도움이 될 수 있습니다. 클라이언트는 서버 인증서의 유효성을 검사 하 여 요청이 원하는 서버로 전송 되도록 해야 합니다. ServerCertificateValidationCallback에서 항상를 반환 `true` 하는 경우 모든 인증서가 유효성 검사를 통과 합니다.|
 |[CA5360: deserialization에서 위험한 메서드를 호출하지 마세요.](../code-quality/ca5360.md)|안전 하지 않은 deserialization은 신뢰할 수 없는 데이터를 사용 하 여 응용 프로그램의 논리를 남용 하거나, DoS (서비스 거부) 공격을 수행 하거나, deserialize 될 때 임의의 코드를 실행할 때 발생 하는 취약성입니다. 응용 프로그램에서 제어 하는 신뢰할 수 없는 데이터를 deserialize 하는 경우 악의적인 사용자가 이러한 deserialization 기능을 악용할 수 있습니다. 특히 deserialization 프로세스에서 위험한 메서드를 호출 합니다. 안전 하지 않은 deserialization 공격에 성공 하면 공격자가 DoS 공격, 인증 바이패스 및 원격 코드 실행과 같은 공격을 수행할 수 있습니다.|
-|[CA5361: 강력한 암호의 SChannel 사용을 비활성화하지 마세요.](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto`를로 설정 `true` 하면 weakens TLS (전송 계층 보안) 연결에 사용 되는 암호화가 사용 됩니다. 약한 암호화는 응용 프로그램과 서버 간 통신의 기밀성을 손상 시켜 공격자가 중요 한 데이터를 보다 쉽게 도청 수 있도록 합니다.|
+|[CA5361: 강력한 암호화의 SChannel 사용을 사용 하지 않도록 설정 하지 마십시오.](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto`를로 설정 `true` 하면 weakens TLS (전송 계층 보안) 연결에 사용 되는 암호화가 사용 됩니다. 약한 암호화는 응용 프로그램과 서버 간 통신의 기밀성을 손상 시켜 공격자가 중요 한 데이터를 보다 쉽게 도청 수 있도록 합니다.|
 |[CA5362: 역직렬화된 개체 그래프의 잠재적 참조 주기](../code-quality/ca5362.md)|신뢰할 수 없는 데이터를 deserialize 하는 경우 deserialize 된 개체 그래프를 처리 하는 모든 코드는 무한 루프로 이동 하지 않고 참조 주기를 처리 해야 합니다. 여기에는 deserialization 콜백의 일부인 코드와 deserialization 완료 후 개체 그래프를 처리 하는 코드가 모두 포함 됩니다. 그렇지 않으면 공격자가 참조 주기를 포함 하는 악성 데이터를 사용 하 여 서비스 거부 공격을 수행할 수 있습니다.|
 |[CA5363: 요청 유효성 검사를 사용하지 않도록 설정하지 마세요.](../code-quality/ca5363.md)|요청 유효성 검사는 HTTP 요청을 검사 하 고 사이트 간 스크립팅을 포함 하 여 삽입 공격으로 이어질 수 있는 잠재적으로 위험한 콘텐츠가 포함 되어 있는지 여부를 확인 하는 ASP.NET의 기능입니다.|
 |[CA5364: 사용되지 않는 보안 프로토콜을 사용하지 마세요.](../code-quality/ca5364.md)|TLS (전송 계층 보안)는 일반적으로 http (하이퍼텍스트 전송 프로토콜 보안)를 사용 하는 컴퓨터 간의 통신을 보호 합니다. 이전 프로토콜 버전의 TLS는 TLS 1.2 및 TLS 1.3 보다 안전 하지 않으며 새로운 취약성이 있을 가능성이 높습니다. 위험을 최소화 하기 위해 이전 프로토콜 버전을 사용 하지 않습니다.|

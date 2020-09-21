@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561766"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811008"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>옵션 대화 상자, 프로젝트 업그레이드
   **프로젝트 업그레이드** 페이지에서 Visual Studio가 개발 컴퓨터에 설치되는 Office 버전을 대상으로 VSTO 추가 기능 프로젝트를 자동으로 변경하는지 여부를 지정합니다.
@@ -33,4 +33,4 @@ ms.locfileid: "62561766"
 
 ## <a name="see-also"></a>추가 정보
 - [Office 솔루션 업그레이드 및 마이그레이션](../vsto/upgrading-and-migrating-office-solutions.md)
-- [방법: Office 솔루션 업그레이드](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [방법: Office 솔루션 업그레이드](/previous-versions/4bez6837(v=vs.140))

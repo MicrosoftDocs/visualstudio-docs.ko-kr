@@ -13,12 +13,12 @@ manager: jillfra
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100724"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808105"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>도메인별 언어 도구 사용자 인터페이스 개요
 Visual Studio에서 도메인 특정 언어 도구(DSL 도구) 솔루션을 처음으로 열 때 사용자 인터페이스는 다음 그림과 유사합니다.
@@ -51,5 +51,5 @@ Visual Studio에서 도메인 특정 언어 도구(DSL 도구) 솔루션을 처�
 ## <a name="see-also"></a>추가 정보
 
 - [도메인별 언어 도구 개요](../modeling/overview-of-domain-specific-language-tools.md)
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))
 - [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)

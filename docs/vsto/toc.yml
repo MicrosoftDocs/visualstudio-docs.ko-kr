@@ -51,7 +51,7 @@
                 - name: Excel 및 Word 프로젝트 업데이트
                   href: updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: Office 프로젝트에서 리본 메뉴 사용자 지정 업데이트
-                  href: /visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5
+                  href: ./update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5.md
                 - name: Outlook 프로젝트의 양식 영역 업데이트
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Visual Studio의 Office 솔루션 아키텍처

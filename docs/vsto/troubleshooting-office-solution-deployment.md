@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234980"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90806735"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 솔루션 배포 문제 해결
   이 항목에는 Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결하는 방법에 대한 정보가 포함되어 있습니다.
@@ -121,7 +121,7 @@ ms.locfileid: "87234980"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>웹에서 배포 매니페스트를 열어 ClickOnce 솔루션을 설치할 수 없습니다.
  사용자는 웹에서 배포 매니페스트를 열어 Office 솔루션을 설치할 수 있습니다. 그러나 인터넷 정보 서비스 (IIS)의 일부 설치는 *.vsto* 파일 이름 확장명을 차단 합니다. Office 솔루션을 배포 하는 데 사용 하기 전에 IIS에서 MIME 형식을 정의 해야 합니다.
 
- IIS 7에서 MIME 형식을 정의 하는 방법에 대 한 자세한 내용은 [Mime 형식 추가 (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx)를 참조 하세요.
+ IIS 7에서 MIME 형식을 정의 하는 방법에 대 한 자세한 내용은 [Mime 형식 추가 (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10))를 참조 하세요.
 
  확장명을 **.vsto** 로 설정하고 MIME 형식을 **application/x-ms-vsto**로 설정합니다.
 

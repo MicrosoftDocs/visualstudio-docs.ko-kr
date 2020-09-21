@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 응용 프로그램의 URL 활성화를 사용 하지 않도록 설정 하는 방법 | Microsoft Docs
+title: ClickOnce 앱의 URL 활성화를 사용 하지 않도록 설정
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3de5272bdb47e0d7d87bad63d5ea0cd6a8b9bef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13921044e188d659ba8cd5b776a006f7af5b1a6
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382460"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809762"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>방법: ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정
 
@@ -43,6 +44,6 @@ ms.locfileid: "85382460"
 
 4. 매니페스트를 저장하고 여기에 서명합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

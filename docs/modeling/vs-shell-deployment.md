@@ -7,16 +7,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8793312e0ed022fc7210508efdf20a81b293f0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f3729c09198b331728e2cc67299ffc3ad6c3d26
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535852"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809650"
 ---
 # <a name="vs-shell-deployment"></a>VS 셸 배포
 
-격리 된 셸을 사용 하면 도메인별 언어와 상호 작용 하는 데 필요한 Visual Studio 기능과 해당 솔루션이 표시 되는 방법을 결정할 수 있습니다. Visual Studio의 격리 된 셸에 대 한 자세한 내용은 [격리 된 셸 사용자 지정](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell)을 참조 하세요.
+격리 된 셸을 사용 하면 도메인별 언어와 상호 작용 하는 데 필요한 Visual Studio 기능과 해당 솔루션이 표시 되는 방법을 결정할 수 있습니다. Visual Studio의 격리 된 셸에 대 한 자세한 내용은 [격리 된 셸 사용자 지정](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)을 참조 하세요.
 
 Visual Studio Shell을 배포 대상으로 설정 하려면 다음을 수행 합니다.
 

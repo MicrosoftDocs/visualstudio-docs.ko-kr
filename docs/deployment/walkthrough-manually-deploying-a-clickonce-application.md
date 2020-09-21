@@ -1,5 +1,6 @@
 ---
-title: '연습: ClickOnce 응용 프로그램 수동 배포 | Microsoft Docs'
+title: 수동으로 ClickOnce 앱 배포
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249978"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809481"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>연습: 수동으로 ClickOnce 애플리케이션 배포
 Visual Studio를 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 배포할 수 없거나 신뢰할 수 있는 응용 프로그램 배포와 같은 고급 배포 기능을 사용 해야 하는 경우 *Mage.exe* 명령줄 도구를 사용 하 여 매니페스트를 만들어야 합니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 이 연습에서는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 명령줄 버전 (*Mage.exe*) 또는 매니페스트 생성 및 편집 도구의 그래픽 버전 (*MageUI.exe*) 중 하나를 사용 하 여 배포를 만드는 방법을 설명 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습에는 배포를 빌드하기 전에 선택 해야 하는 몇 가지 필수 구성 요소 및 옵션이 있습니다.
 
 - *Mage.exe* 및 *MageUI.exe*를 설치 합니다.
