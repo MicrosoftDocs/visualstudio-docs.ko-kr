@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279884"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074971"
 ---
 # <a name="gpu-usage"></a>GPU 사용량
 
-Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 Direct3D 앱의 개략적인 하드웨어 사용량을 더 잘 이해할 수 있습니다. 앱의 성능이 CPU에 의존하는지 아니면 GPU에 더 의존하는지를 확인하고 플랫폼 하드웨어를 더 효율적으로 사용할 수 있는 방법에 대해 통찰을 얻을 수 있습니다. GPU 사용량은 Direct3D 12, Direct3D 11 및 Direct3D 10을 사용하는 앱을 지원합니다. Direct2D, OpenGL 등 다른 그래픽 API는 지원하지 않습니다.
+성능 프로파일러의 GPU 사용량 도구를 사용하면 Direct3D 앱의 개략적인 하드웨어 사용량을 더 잘 이해할 수 있습니다. 앱의 성능이 CPU에 의존하는지 아니면 GPU에 더 의존하는지를 확인하고 플랫폼 하드웨어를 더 효율적으로 사용할 수 있는 방법에 대해 통찰을 얻을 수 있습니다. GPU 사용량은 Direct3D 12, Direct3D 11 및 Direct3D 10을 사용하는 앱을 지원합니다. Direct2D, OpenGL 등 다른 그래픽 API는 지원하지 않습니다.
 
 **GPU 사용량 보고서** 창의 모양은 다음과 같습니다.
 
@@ -43,7 +43,7 @@ GPU 사용량 도구를 시작하려면
 
 2. **성능 및 진단** 허브에서 **GPU 사용량** 옆에 있는 상자를 선택합니다. 선택적으로 사용하려는 다른 도구 옆에 있는 확인란을 선택합니다. 다수의 성능 및 진단 도구를 동시에 실행하여 앱 성능을 보다 자세히 확인할 수 있습니다.
 
-    ![GPU 사용량이 선택된 성능 및 진단 허브의 스크린샷](media/gpuusageselected.png "GPU 사용량 선택됨")
+    ![GPU 사용량이 선택된 성능 프로파일러의 스크린샷](media/gpuusageselected.png "GPU 사용량 선택됨")
 
    > [!NOTE]
    > 일부 성능 및 진단 도구는 동시에 사용할 수 없습니다.

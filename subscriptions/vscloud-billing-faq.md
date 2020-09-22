@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561327"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641447"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.
@@ -31,7 +31,7 @@ A: 전혀 그렇지 않습니다. Azure를 통해 Visual Studio 클라우드 구
 
 ## <a name="enterprise-agreement-ea-customers"></a>EA(기업계약) 고객
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q: Visual Studio 클라우드 구독을 구입하기 위해 기업 계약을 사용할 수 있나요?
-A: 예, 가능합니다. EA를 위해 만들어진 Azure 구독에 대한 소유자 또는 참가자여야 합니다. Visual Studio Marketplace에서 직접 Visual Studio 클라우드 구독을 구매하는지 확인하십시오. 구매 주문을 사용하여 Visual Studio 클라우드 구독을 구매할 수 없습니다.
+A: 예, 가능합니다. EA를 위해 만들어진 Azure 구독에 대한 참가자 이상 역할이어야 합니다. Visual Studio Marketplace에서 직접 Visual Studio 클라우드 구독을 구매하는지 확인하십시오. 구매 주문을 사용하여 Visual Studio 클라우드 구독을 구매할 수 없습니다.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Q: 조직의 기업 계약을 통해 Visual Studio Marketplace에서 서비스를 구입하는 데 필요한 권한이 있는지 여부는 어떻게 확인할 수 있나요?
 A: 적절한 권한이 있는지 확인하는 가장 쉬운 방법은 Visual Studio Marketplace에서 제공된 서비스에 대해 **구입** 단추를 선택하는 것입니다.

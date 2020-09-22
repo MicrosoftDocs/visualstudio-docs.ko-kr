@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537243"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075459"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. **디버그** 메뉴에서 **디버그하지 않고 진단 시작**을 선택합니다.
 
-     ![진단 허브에서 에너지 소비 선택](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![성능 프로파일러에서 에너지 소비 선택](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. **에너지 소비** 를 선택한 다음 **시작**을 선택합니다.
 
@@ -113,7 +113,7 @@ if (performance && performance.mark) {
 
 2. **설치된 응용 프로그램 패키지 선택** 목록에서 대상을 선택합니다.
 
-3. 진단 허브 페이지에서 **에너지 소비** 를 선택합니다.
+3. 성능 프로파일러 페이지에서 **에너지 소비**를 선택합니다.
 
 4. 프로파일링을 시작하려면 **시작** 을 선택합니다.
 

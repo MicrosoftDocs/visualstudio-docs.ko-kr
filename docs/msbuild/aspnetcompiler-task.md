@@ -1,5 +1,6 @@
 ---
-title: AspNetCompiler 작업을 사용하여 ASP.NET 애플리케이션 미리 컴파일 | Microsoft Docs
+title: AspNetCompiler 작업을 사용하여 ASP.NET 미리 컴파일
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 072d1b94c552b3aca34a1573e5d6545628f6568e
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 43b7ccc11e8d265c0b1490e7e8de0bd33d903904
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167334"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036186"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 작업
 

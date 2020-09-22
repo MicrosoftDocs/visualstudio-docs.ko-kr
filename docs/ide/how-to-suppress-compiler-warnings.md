@@ -1,5 +1,6 @@
 ---
-title: 프로젝트 및 NuGet 패키지에 대한 컴파일러 경고 표시 안 함
+title: 프로젝트 및 NuGet 패키지에 대한 경고 표시 안 함
+ms.custom: SEO-VS-2020
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 33abc359dea3e1c7982e5d1689debc1f8e881106
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283959"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038584"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 

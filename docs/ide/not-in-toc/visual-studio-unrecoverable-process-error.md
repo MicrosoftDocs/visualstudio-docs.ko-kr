@@ -1,6 +1,6 @@
 ---
 title: 프로세스에서 복구할 수 없는 오류 발생
-ms.date: 06/22/2018
+ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: e1c9dc5053e2168482f4463f805bdc5e724ef6b0
+ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544343"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90025567"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 복구할 수 없는 프로세스 오류
 
@@ -51,3 +51,6 @@ Visual Studio에서는 여러 out-of-proc 프로세스를 사용하여 필요한
 - WindowsAzureTelemetryService.exe
 
 이러한 프로세스 중 하나가 예기치 않게 종료되면 Visual Studio 내의 일부 기능이 작동하지 않습니다. 일부 프로세스의 경우 기능 손실이 사소할 수 있습니다. 다른 경우 Visual Studio의 안정성이 영향을 받고 오류 메시지가 표시됩니다.
+
+> [!NOTE]
+> 이 페이지에서 참조되지 않은 문제가 발생하는 경우 Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../../ide/how-to-report-a-problem-with-visual-studio.md) 도구를 통해 보고해 주세요.

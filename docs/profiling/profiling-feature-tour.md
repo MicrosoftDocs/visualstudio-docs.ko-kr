@@ -1,8 +1,8 @@
 ---
-title: 프로파일링 도구를 사용하여 성능 측정
+title: 프로파일링 도구 시작하기
 description: Visual Studio에서 사용할 수 있는 다른 진단 도구에 대해 간략히 살펴봅니다.
-ms.custom: mvc
-ms.date: 06/03/2020
+ms.custom: ''
+ms.date: 09/08/2020
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,18 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507991"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100776"
 ---
 # <a name="first-look-at-profiling-tools"></a>프로파일링 도구 살펴보기
 
 Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할 수 있는 다양한 프로파일링 도구를 제공합니다. 이 문서에서는 가장 일반적인 프로파일링 도구를 간략하게 살펴봅니다.
 
-## <a name="view-performance-while-debugging"></a>디버그하는 동안 성능 보기
+다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#which-tool-should-i-use)를 참조하세요.
+
+## <a name="measure-performance-while-debugging"></a>디버그하는 동안 성능 측정
 
 디버깅 세션 중에 액세스할 수 있는 프로파일링 도구는 [진단 도구] 창에 제공됩니다. 끄지 않았다면 [진단 도구] 창이 자동으로 나타납니다. 창을 표시하려면 **디버그/Windows/진단 도구 표시**를 클릭합니다. 창이 열리면 데이터를 수집할 도구를 선택할 수 있습니다.
 
@@ -39,8 +41,36 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 일반적으로 **진단 도구** 창을 사용하여 앱을 프로파일링하지만 릴리스 빌드의 경우 앱에 대한 post-mortem 분석을 대신 수행할 수도 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#which-tool-should-i-use)를 참조하세요.
 
+진단 도구 창에서 또는 디버깅 세션 중에 사용할 수 있는 도구는 다음과 같습니다.
+- [CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)
+- [메모리 사용량](../profiling/memory-usage.md)
+- [PerfTips](../profiling/perftips.md)
+
 > [!NOTE]
-> Windows 7 이상에서 사후 분석 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
+> Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다. Windows 7 이상에서 [사후 분석](#post_mortem) 도구를 사용할 수 있습니다. 
+
+## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> 릴리스 빌드에서 성능 측정
+
+성능 프로파일러의 도구는 **릴리스** 빌드에 대한 분석을 제공하기 위한 것입니다. 성능 프로파일러에서 앱이 실행 중인 동안 진단 정보를 수집한 다음 앱이 중지된 이후에 수집된 정보를 검사할 수 있습니다(사후 분석).
+
+**디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
+
+![성능 프로파일러](../profiling/media/prof-tour-performance-profiler.png "성능 프로파일러")
+
+성능 프로파일러 및 디버거 통합 도구에서 CPU 사용량 또는 메모리 사용량 도구를 사용하는 방법에 대한 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 
+
+성능 프로파일러에서 사용할 수 있는 도구는 다음과 같습니다.
+
+- [CPU 사용량](../profiling/cpu-usage.md)
+- [.NET 코드의 메모리 사용량](../profiling/dotnet-alloc-tool.md)
+- [메모리 사용량](#analyze-memory-usage)
+- [.NET Async 도구](../profiling/analyze-async.md)
+- [데이터베이스 도구](../profiling/analyze-database.md)
+- [GPU 사용량](../profiling/gpu-usage.md)
+
+다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#which-tool-should-i-use)를 참조하세요.
+
+창에서 [여러 프로파일링 도구](../profiling/use-multiple-profiler-tools-simultaneously.md)를 선택할 수 있는 경우도 있습니다. CPU 사용량과 같은 도구는 분석에 유용한 보조 데이터를 제공할 수 있습니다. [명령줄 프로파일러](../profiling/profile-apps-from-command-line.md)를 사용하여 여러 프로파일링 도구를 포함하는 시나리오를 사용하도록 설정할 수도 있습니다.
 
 ## <a name="examine-performance-using-perftips"></a>PerfTips를 사용하여 성능 검사
 
@@ -57,11 +87,11 @@ PerfTips는 진단 도구의 **이벤트** 뷰에 표시되는 것과 동일한 
  > [!NOTE]
  > Visual Studio Enterprise를 사용하는 경우 이 탭에 [IntelliTrace 이벤트](../debugger/intellitrace.md)가 표시될 수도 있습니다.
 
-## <a name="analyze-cpu-usage"></a>CPU 사용 분석
+## <a name="analyze-cpu-usage"></a>CPU 사용량 분석
 
-CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니다. 이 도구는 앱에서 사용 중인 CPU 리소스에 대해 자세히 알려줍니다. CPU 사용량 도구에 대한 자세한 연습은 [CPU 사용량을 분석하여 애플리케이션 성능 측정](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
+CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니다. 이 도구는 앱에서 사용 중인 CPU 리소스에 대해 자세히 알려줍니다. [디버거 통합 CPU 사용량 도구](../profiling/beginners-guide-to-performance-profiling.md) 또는 [사후 분석 CPU 사용량 도구](../profiling/cpu-usage.md)를 사용할 수 있습니다.
 
-진단 도구의 **요약** 보기에서 **CPU 프로파일링 사용**을 선택합니다(디버깅 세션에 있어야 함).
+디버거 통합 CPU 사용량 도구를 사용하는 경우 진단 도구 창을 엽니다(닫혀 있는 경우 **디버그/Windows/진단 도구 표시**를 선택). 디버그하는 동안 **요약** 보기를 열고 **CPU 프로필 기록**을 선택합니다.
 
 ![진단 도구에서 CPU 사용량 사용](../profiling/media/prof-tour-enable-cpu-profiling.png "진단 도구 CPU 사용량 사용")
 
@@ -77,9 +107,9 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ## <a name="analyze-memory-usage"></a>메모리 사용량 분석
 
-**진단 도구** 창에서는 **메모리 사용량** 도구를 사용하여 앱의 메모리 사용량을 평가할 수도 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. 메모리 분석에 대한 자세한 지침은 [메모리 사용량 분석](../profiling/memory-usage.md)을 참조하세요. 또 다른 메모리 분석 도구인 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)를 사용하면 .NET 코드의 할당 패턴과 비정상 요소를 식별하는 데 도움이 됩니다.
+**진단 도구** 창에서는 **메모리 사용량** 도구를 사용하여 앱의 메모리 사용량을 평가할 수도 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. [디버거 통합 메모리 사용량 도구](../profiling/memory-usage.md) 또는 [성능 프로파일러](#post_mortem)의 사후 분석 메모리 사용량 도구를 사용할 수 있습니다. 또 다른 메모리 분석 도구인 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)를 사용하면 .NET 코드의 할당 패턴과 비정상 요소를 식별하는 데 도움이 됩니다.
 
-디버거에 통합된 메모리 사용량 도구를 사용하여 메모리 사용량을 분석하려면 메모리 스냅샷을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅샷을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅샷의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다.
+메모리 사용량을 분석하려면 메모리 스냅샷을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅샷을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅샷의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다. 다음 그림에서는 디버거 통합 도구를 사용하여 스냅샷을 만드는 방법을 보여 줍니다.
 
 ![진단 도구에서 스냅샷 만들기](../profiling/media/prof-tour-take-snapshots.gif "스냅샷 수행 진단 도구")
 
@@ -88,16 +118,6 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 ![진단 도구 힙 차이 뷰](../profiling/media/prof-tour-mem-usage-diff-heap.png "진단 도구 힙 차이 뷰")
 
 대신에 **메모리 사용량** 뷰의 왼쪽 링크를 클릭하면 힙 뷰가 개체 수를 기준으로 구성됩니다. 즉, 숫자가 가장 많이 증가한 특정 유형의 개체가 맨 위에 표시됩니다(**개수 차이** 열을 기준으로 정렬됨).
-
-## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> 디버거 없이 릴리스 빌드 프로파일링
-
-CPU 사용량 및 메모리 사용량과 같은 프로파일링 도구를 디버거와 함께 사용하거나(이전 섹션 참조) 성능 프로파일러를 통해 프로파일링 도구 사후 분석을 실행하여 **릴리스** 빌드에 대한 분석을 제공할 수 있습니다. 성능 프로파일러에서 앱이 실행 중인 동안 진단 정보를 수집한 다음 앱이 중지된 이후에 수집된 정보를 검사할 수 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)와 같은 추가 도구는 성능 프로파일러에서도 사용할 수 있습니다.
-
-![성능 프로파일러](../profiling/media/prof-tour-performance-profiler.png "성능 프로파일러")
-
-**디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
-
-창에서 [여러 프로파일링 도구](../profiling/use-multiple-profiler-tools-simultaneously.md)를 선택할 수 있는 경우도 있습니다. CPU 사용량과 같은 도구는 분석에 유용한 보조 데이터를 제공할 수 있습니다. [명령줄 프로파일러](../profiling/profile-apps-from-command-line.md)를 사용하여 여러 프로파일링 도구를 포함하는 시나리오를 사용하도록 설정할 수도 있습니다.
 
 ## <a name="analyze-resource-consumption-xaml"></a>리소스 사용 분석(XAML)
 
@@ -147,7 +167,7 @@ UWP 앱의 **진단 도구** 창에서 **UI 분석**을 사용하도록 설정�
 
 ## <a name="analyze-gpu-usage-direct3d"></a>GPU 사용량 분석(Direct3D)
 
-Direct3D 앱(Direct3D 구성 요소가 C++에 있어야 함)에서 GPU에 대한 활동을 검사하고 성능 문제를 분석할 수 있습니다. 자세한 내용은 [GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)을 참조하세요. 이 도구를 사용하려면 성능 프로파일러에서 **GPU 사용량**을 선택한 다음 **시작**을 선택합니다. 앱에서 프로파일링에 관심 있는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
+Direct3D 앱(Direct3D 구성 요소가 C++에 있어야 함)에서 GPU에 대한 활동을 검사하고 성능 문제를 분석할 수 있습니다. 자세한 내용은 [GPU 사용량](./gpu-usage.md)을 참조하세요. 이 도구를 사용하려면 성능 프로파일러에서 **GPU 사용량**을 선택한 다음 **시작**을 선택합니다. 앱에서 프로파일링에 관심 있는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
 
 그래프에서 기간을 선택하고 **자세히 보기**를 선택하면 상세 보기가 아래쪽 창에 나타납니다. 상세 보기에서 각 CPU 및 GPU에서 얼마나 많은 활동이 발생하는지를 확인할 수 있습니다. 맨 아래 창에서 이벤트를 선택하면 타임라인에 팝업이 표시됩니다. 예를 들어 **현재** 이벤트를 선택하면 **현재** 호출 팝업이 표시됩니다. 연한 회색 Vsync 세로줄을 참조로 사용하여 특정 **현재** 호출에 Vsync가 누락되었는지 여부를 확인할 수 있습니다. 앱이 60 FPS를 꾸준히 적중하려면 두 Vsyncs마다 하나의 **현재** 호출이 있어야 합니다.
 
@@ -203,25 +223,25 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |성능 도구|Windows 데스크톱|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[PerfTips](../profiling/perftips.md)|예|예|예|
-|[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
+|[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
 |[.NET 개체 할당](../profiling/dotnet-alloc-tool.md)|예(.NET만 해당)|예|예|
 |[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|no|
-|[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|no|
+|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
 |[이벤트 뷰어](../profiling/events-viewer.md)|예|예|예|
 |[.NET Async](../profiling/analyze-async.md)|예(.NET만 해당)|예|예|
 |[데이터베이스](../profiling/analyze-database.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
-|[성능 탐색기](../profiling/performance-explorer.md)|no|no|아니요|
+|[성능 탐색기](#analyze-performance-legacy-tools)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 |성능 도구|Windows 데스크톱|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
+|[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
 |[GPU 사용량](/visualstudio/debugger/graphics/gpu-usage)|예|예|no|
-|[애플리케이션 타임라인](../profiling/application-timeline.md)|예|예|no|
+|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|
 |[성능 탐색기](../profiling/performance-explorer.md)|예|no|예|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
@@ -231,5 +251,5 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 ::: moniker-end
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

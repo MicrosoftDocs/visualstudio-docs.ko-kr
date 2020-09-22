@@ -1,16 +1,17 @@
 ---
-title: 성능 문제가 해결될 가능성을 높이는 방법
+title: 성능 문제가 해결될 가능성 증가
 description: Visual Studio에서 성능 문제 제출에 대한 추가 정보 및 모범 사례
+ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509928"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038597"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>성능 문제가 해결될 가능성을 높이는 방법
 

@@ -9,35 +9,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256194"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074984"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio에서 메모리 사용량 측정
 
-디버거 통합 **메모리 사용량** 진단 도구를 사용하여 디버그하는 동안 메모리 누수 및 비효율적인 메모리를 찾습니다. 메모리 사용량 도구를 통해 관리되는 메모리 및 네이티브 메모리 힙의 *스냅샷*을 하나 이상 만들어 개체 유형이 메모리 사용에 미치는 영향을 이해할 수 있습니다. .NET, 네이티브 또는 혼합 모드(.NET 및 네이티브) 앱의 스냅샷을 수집할 수 있습니다.
-
-다음 그림에서는 Visual Studio 2015 업데이트 1 이상 버전에서 사용할 수 있는 **진단 도구** 창을 보여 줍니다.
-
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+디버거 통합 **메모리 사용량** 진단 도구를 사용하여 디버그하는 동안 메모리 누수 및 비효율적인 메모리를 찾습니다. 메모리 사용량 도구를 통해 관리되는 메모리 및 네이티브 메모리 힙의 *스냅샷*을 하나 이상 만들어 개체 유형이 메모리 사용에 미치는 영향을 이해할 수 있습니다. 디버거를 연결하지 않고, 또는 실행 중인 앱을 대상으로 하여 메모리 사용량을 분석할 수도 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
 언제든지 **메모리 사용량** 도구에서 메모리 스냅샷을 수집할 수 있지만 Visual Studio 디버거를 사용하여 성능 문제를 조사하는 동안 애플리케이션이 실행되는 방식을 제어할 수 있습니다. 중단점 설정, 단계별 실행, 모두 중단 및 기타 디버거 작업은 가장 관련된 코드 경로를 중심으로 성능 조사를 수행하는 데 도움이 됩니다. 앱이 실행되는 동안 이러한 작업을 수행하면 불필요한 노이즈를 코드에서 제거하고, 문제 진단에 걸리는 시간을 크게 줄일 수 있습니다.
 
-디버거 외부에서 메모리 도구를 사용할 수도 있습니다. [디버그하지 않는 경우의 메모리 사용](../profiling/memory-usage-without-debugging2.md)을 참조하세요. Windows 7 이상에서 연결된 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
-
-> [!NOTE]
-> **사용자 지정 할당자 지원** 기본 메모리 프로파일러는 런타임 시 내보낸 할당 [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) 이벤트 데이터를 수집하여 작동합니다.  CRT 및 Windows SDK의 할당자가 해당 할당 데이터를 캡처할 수 있도록 원본 수준에서 주석이 추가되었습니다. 고유한 할당자를 작성하는 경우 myMalloc에 대한 다음 예제처럼 새로 할당된 힙 메모리에 대한 포인터를 반환하는 모든 함수를 [__declspec](/cpp/cpp/declspec)(allocator)로 데코레이트할 수 있습니다.
->
-> `__declspec(allocator) void* myMalloc(size_t size)`
+> [!Important]
+> 디버거 통합 진단 도구는 ASP.NET, ASP.NET Core, 네이티브/C++ 개발, 혼합 모드(.NET 및 네이티브) 앱을 비롯하여 Visual Studio의 .NET 개발에 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
 이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * 메모리 스냅샷 생성
 > * 메모리 사용량 데이터 분석
+
+**메모리 사용량**으로 필요한 데이터를 얻지 못할 경우 [성능 프로파일러](../profiling/profiling-feature-tour.md#post_mortem)의 다른 프로파일링 도구로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 CPU, UI 렌더링 또는 네트워크 요청 시간 등 메모리가 아닌 곳에서 애플리케이션의 성능 병목 현상이 발생할 수 있습니다.
+
+> [!NOTE]
+> **사용자 지정 할당자 지원** 기본 메모리 프로파일러는 런타임 시 내보낸 할당 [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) 이벤트 데이터를 수집하여 작동합니다.  CRT 및 Windows SDK의 할당자가 해당 할당 데이터를 캡처할 수 있도록 원본 수준에서 주석이 추가되었습니다. 고유한 할당자를 작성하는 경우 myMalloc에 대한 다음 예제처럼 새로 할당된 힙 메모리에 대한 포인터를 반환하는 모든 함수를 [__declspec](/cpp/cpp/declspec)(allocator)로 데코레이트할 수 있습니다.
+>
+> `__declspec(allocator) void* myMalloc(size_t size)`
 
 ## <a name="collect-memory-usage-data"></a>메모리 사용량 데이터 수집
 

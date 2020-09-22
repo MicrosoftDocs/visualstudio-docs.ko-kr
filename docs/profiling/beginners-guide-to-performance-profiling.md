@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537373"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075433"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 사용량을 분석하여 애플리케이션 성능 측정
 
-Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 이 문서에서는 진단 도구의 **CPU 사용량** 탭을 사용하여 앱의 성능 데이터를 가져오는 방법을 보여 줍니다.
+디버거 통합 **CPU 사용량** 진단 도구를 사용하여 디버그하는 동안 성능 문제를 찾습니다.  디버거를 연결하지 않고, 또는 실행 중인 앱을 대상으로 하여 CPU 사용량을 분석할 수도 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
-디버거가 일시 중지되면 **CPU 사용량** 도구는 애플리케이션에서 실행되는 함수에 대한 정보를 지정된 간격으로 수집합니다. 또한 이 도구에는 작업을 수행하는 함수가 표시되고 샘플링 세션의 특정 세그먼트를 집중적으로 확인할 수 있는 타임라인 그래프도 표시됩니다.
-
-진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. **CPU 사용량**으로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/profiling-feature-tour.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 애플리케이션의 성능 병목 현상이 발생할 수 있습니다. 진단 허브는 이러한 종류의 데이터를 기록 및 분석하기 위한 다른 여러 옵션을 제공합니다.
+디버거가 일시 중지되면 진단 도구 창의 **CPU 사용량** 도구는 애플리케이션에서 실행되는 함수에 대한 정보를 지정된 간격으로 수집합니다. 또한 이 도구에는 작업을 수행하는 함수가 표시되고 샘플링 세션의 특정 세그먼트를 집중적으로 확인할 수 있는 타임라인 그래프도 표시됩니다.
 
 > [!Important]
-> 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
+> 디버거 통합 진단 도구는 ASP.NET, ASP.NET Core, 네이티브/C++ 개발을 비롯하여 Visual Studio의 .NET 개발에 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
-이 문서에서는 일반적인 디버깅 워크플로에서의 CPU 사용량 분석에 대해 설명합니다. 디버거를 연결하지 않고, 또는 실행 중인 앱을 대상으로 하여 CPU 사용량을 분석할 수도 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 또 다른 프로파일링 도구인 [PerfTips](../profiling/perftips.md)를 사용하여 코드를 단계별로 실행하며 특정 함수나 코드 블록이 완료되는 데 소요되는 시간을 확인할 수 있습니다.
-
-Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
-
-이 자습서에서 다음을 수행합니다.
+이 자습서에서는 다음을 수행합니다.
 
 > [!div class="checklist"]
 > * CPU 사용량 데이터 수집
 > * CPU 사용량 데이터 분석
+
+**CPU 사용량**으로 필요한 데이터를 얻지 못할 경우 [성능 프로파일러](../profiling/profiling-feature-tour.md#post_mortem)의 다른 프로파일링 도구로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 애플리케이션의 성능 병목 현상이 발생할 수 있습니다.
 
 ## <a name="step-1-collect-profiling-data"></a>1단계: 프로파일링 데이터 수집
 

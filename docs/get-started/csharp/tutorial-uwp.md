@@ -1,8 +1,8 @@
 ---
-title: Visual Studio 및 C#를 사용하여 UWP(유니버설 Windows 플랫폼) 앱 만들기
+title: Visual Studio 및 C#를 사용하여 UWP 앱 만들기
 description: Visual Studio에서 XAML 및 C#을 사용하여 UWP 앱 만들기
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249251"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037278"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>자습서: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 애플리케이션 만들기
 
@@ -72,7 +72,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 1. **새 유니버설 Windows 플랫폼 프로젝트** 대화 상자에서 기본 **대상 버전** 및 **최소 버전** 설정에 동의합니다.
 
-   ![새 유니버설 Windows 플랫폼 프로젝트 대화 상자에서 기본 대상 버전 및 최소 버전 설정에 동의](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![새 유니버설 Windows 플랫폼 프로젝트 대화 상자에서 기본 대상 버전 및 최소 버전 설정을 수락합니다.](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
    **XAML 편집기**에 코드가 표시되면 단추가 추가된 것도 확인할 수 있습니다.
 
-   ![단추 컨트롤을 클릭해 디자인 캔버스로 끌어오기](media/uwp-xaml-control-code-window.png)
+   ![XAML 편집기에서 단추 표시](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>단추에 레이블 추가
 

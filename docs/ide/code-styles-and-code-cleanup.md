@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312589"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743334"
 ---
 # <a name="code-style-preferences"></a>코드 스타일 기본 설정
 
@@ -60,6 +60,14 @@ EditorConfig 파일을 수동으로 채우거나, Visual Studio **옵션** 대�
 
 이 페이지의 각 코드 스타일 설정에 대해, 각 줄에 있는 드롭다운을 사용하여 **기본 설정** 및 **심각도** 값을 설정할 수 있습니다. 심각도는 **리팩터링만**, **제안**, **경고** 또는 **오류**로 설정할 수 있습니다. 코드 스타일에 대해 [빠른 작업](../ide/quick-actions.md)을 사용하려면 **심각도** 설정이 **리팩터링만** 이외의 값으로 설정되어 있는지 확인합니다. 선호하지 않는 스타일이 사용될 경우 **빠른 작업** 전구 ![전구](media/light-bulb-dropdown.png), 오류 전구 ![오류 전구](media/error-bulb.png) 또는 스크루드라이버 ![스크루드라이버](media/screwdriver.png) 아이콘이 표시되고, **빠른 작업** 목록에서 옵션을 선택하면 코드를 원하는 스타일로 자동으로 다시 작성할 수 있습니다.
 
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>빌드 시 코드 스타일 적용
+
+.NET 5.0 RC2 SDK를 포함하는 Visual Studio 2019 버전 16.8부터 모든 .NET 프로젝트에 대해 [빌드 시 .NET 코딩 규칙을 적용](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis)할 수 있습니다. 빌드 시 .NET 코드 스타일 위반이 "IDE" 접두사가 있는 경고 또는 오류로 표시됩니다. 그러므로 코드베이스에서 일관된 코드 스타일을 엄격하게 적용할 수 있습니다.
+
+::: moniker-end
+
 ## <a name="apply-code-styles"></a>코드 스타일 적용
 
 ::: moniker range="vs-2017"
@@ -101,7 +109,7 @@ C# 코드 파일의 경우 Visual Studio 2019에는 편집기 하단에 **코드
 
 ::: moniker-end
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [빠른 작업](../ide/quick-actions.md)
 - [EditorConfig에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)

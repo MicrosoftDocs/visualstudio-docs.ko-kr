@@ -1,6 +1,8 @@
 ---
-title: '8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성'
+title: 그림 표시 단추 이벤트 처리기를 위한 코드 작성
+description: 사진 뷰어 만들기 자습서에서 사진 표시 단추 이벤트 처리기에 대한 코드를 작성합니다.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +15,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579811"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038662"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 사진 표시 단추 이벤트 처리기를 위한 코드 작성
 
 이 단계에서는 **사진 표시** 단추가 다음과 같이 작동하도록 합니다.
 
@@ -43,7 +45,7 @@ IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사�
     > [!NOTE]
     > 코드에 이벤트 처리기가 “camelCase” 문자로 표시되지 않을 수 있습니다.
 
-1. **IntelliSense** 창에 단어 `if`가 강조 표시됩니다. 강조 표시되지 않을 경우 소문자 `f`를 입력하면 강조 표시됩니다. **IntelliSense** 창 옆에 *도구 설명* 상자가 설명 **if 문용 코드 조각**과 함께 나타납니다. Visual Basic의 도구 설명에도 코드 조각임이 표시되지만 표현은 약간 다릅니다. 해당 코드 조각을 사용해야 하므로 **Tab** 키를 선택해서 `if`를 코드에 삽입합니다. 그런 다음, **코드 조각을 사용하려면**Tab`if` 키를 다시 선택합니다. 다른 곳을 선택하여 **IntelliSense** 창이 사라진 경우 백스페이스로 `i`를 지우고 다시 입력하면 **IntelliSense** 창이 다시 열립니다.
+1. **IntelliSense** 창에 단어 `if`가 강조 표시됩니다. 강조 표시되지 않을 경우 소문자 `f`를 입력하면 강조 표시됩니다. **IntelliSense** 창 옆에 *도구 설명* 상자가 설명 **if 문용 코드 조각**과 함께 나타납니다. Visual Basic의 도구 설명에도 코드 조각임이 표시되지만 표현은 약간 다릅니다. 해당 코드 조각을 사용해야 하므로 **Tab** 키를 선택해서 `if`를 코드에 삽입합니다. 그런 다음, ** 코드 조각을 사용하려면 **Tab`if` 키를 다시 선택합니다. 다른 곳을 선택하여 **IntelliSense** 창이 사라진 경우 백스페이스로 `i`를 지우고 다시 입력하면 **IntelliSense** 창이 다시 열립니다.
 
     ![Visual C&#35; 코드](../ide/media/express_highlighttrue.png)
 
@@ -66,7 +68,7 @@ IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사�
 
     `ShowDialog()` 메서드에 대한 자세한 내용은 [ShowDialog Method](<xref:System.Windows.Forms.Form.ShowDialog%2A>)(ShowDialog 메서드)를 참조하세요.
 
- 1. 컨트롤 또는 구성 요소에서 메서드를 사용할 경우(*메서드 호출*이라고 함) 괄호를 추가해야 합니다. `ShowDialog`에서 "g" 바로 뒤에 열기 및 닫기 괄호를 입력하므로 `()` 이제 "openFileDialog1.ShowDialog()"처럼 표시됩니다.
+ 1. 컨트롤 또는 구성 요소에서 메서드를 사용할 경우(*메서드 호출*이라고 함) 괄호를 추가해야 합니다. 따라서 `ShowDialog`: `()`에서 “g” 바로 다음에 열기와 닫기 괄호를 입력합니다. 이제 “openFileDialog1.ShowDialog()”처럼 보여야 합니다.
 
     > [!NOTE]
     > 메서드는 모든 앱에서 중요한 부분이며 이 자습서에는 여러 가지 메서드 사용 방법이 나와 있습니다. **OpenFileDialog** 구성 요소의 `ShowDialog()` 메서드를 호출한 것과 같이 구성 요소의 메서드를 호출하여 작업을 지시할 수 있습니다. 직접 고유의 메서드를 만들어 앱에 작업을 지시할 수 있습니다. 사용자가 단추를 선택할 경우 대화 상자와 그림을 열도록 지금 빌드 중인 `showButton_Click()` 메서드가 그 예입니다.
@@ -103,9 +105,9 @@ IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사�
 
 * 다음 자습서 단계로 이동하려면 **[9단계: 코드 검토, 주석 처리 및 테스트](../ide/step-9-review-comment-and-test-your-code.md)** 를 참조하세요.
 
-* 이전 자습서 단계로 돌아가려면 [7단계: 양식에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.
+* 이전 자습서 단계로 돌아가려면 [7단계: 폼에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
-* [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)
+* [자습서 3: 일치 게임 만들기](tutorial-3-create-a-matching-game.md)

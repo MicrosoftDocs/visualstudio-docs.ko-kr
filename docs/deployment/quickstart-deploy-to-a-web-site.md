@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173697"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036407"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Visual Studio를 사용하여 웹 사이트에 웹앱 게시
 
@@ -32,9 +32,9 @@ ms.locfileid: "84173697"
 
     ![솔루션 탐색기의 프로젝트 상황에 맞는 메뉴에서 게시 명령](../deployment/media/quickstart-publish.png "게시 선택")
 
-1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필 만들기**를 선택합니다.
+1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새로 만들기**를 선택합니다.
 
-1. **게시** 대화 상자에서 **웹 서버(IIS)** 를 선택합니다.
+1. **게시** 창에서 **웹 서버(IIS)** 를 선택합니다.
 
     ![게시 대상 선택](../deployment/media/quickstart-publish-iis.png "IIS, FTP 등을 선택합니다.")
 
@@ -47,6 +47,8 @@ ms.locfileid: "84173697"
     ![웹 배포 연결 정보](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
 1. 게시하려면 요약 페이지에서 **게시**를 선택합니다. 출력 창은 배포 진행률 및 결과를 표시합니다.
+
+   IIS의 ASP.NET Core 문제 해결에 관한 도움이 필요하면 [Azure App Service 및 IIS의 ASP.NET Core 문제 해결](/aspnet/core/test/troubleshoot-azure-iis)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

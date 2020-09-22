@@ -1,6 +1,7 @@
 ---
-title: Azure Batch AI에서 모델을 학습하는 작업 제출
-description: 학습 모델 클라우드
+title: 작업을 제출하여 모델 학습
+description: Azure Batch AI를 사용하여 모델을 학습시키는 작업 제출
+ms.custom: SEO-VS-2020
 keywords: ai, visual studio, 학습 모델, 클라우드
 author: jillre
 ms.author: jillfra
@@ -10,12 +11,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 4d705cbff1ce4e25892dfc5df896418e6d58b632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 110468de264370b22d64dae40cf55e9766804c31
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371653"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036615"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI에서 AI 모델 학습
 

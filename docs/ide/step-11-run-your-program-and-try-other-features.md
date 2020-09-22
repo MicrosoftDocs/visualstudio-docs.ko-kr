@@ -1,6 +1,8 @@
 ---
-title: '11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기'
+title: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기
+description: 사진 뷰어 만들기 자습서에서 사진 뷰어 앱을 실행하고 다른 기능을 사용해 봅니다.
 ms.date: 09/11/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579892"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036940"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기
 
@@ -28,7 +30,7 @@ ms.locfileid: "77579892"
 1. 그림을 열기 전에 **배경색 설정** 단추를 선택합니다. **색** 대화 상자가 열립니다.
 
      ![색 대화 상자](../ide/media/express_colordialog.png)<br/>
-***색*** 대화 상자 
+***색*** *대화 상자*
 
 1. PictureBox 배경색으로 설정할 색을 선택합니다. `backgroundButton_Click()`(또는 `BackgroundButton_Click()`) 메서드가 어떤 식으로 작동하는지 자세히 살펴봅니다.
 

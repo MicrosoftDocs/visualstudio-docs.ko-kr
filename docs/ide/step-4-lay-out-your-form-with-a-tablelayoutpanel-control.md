@@ -1,6 +1,8 @@
 ---
-title: '4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃'
+title: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃
+description: 사진 뷰어 만들기 자습서에서 TableLayoutPanel 컨트롤을 사용하여 폼을 레이아웃합니다.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4a0035040c3cce0c40b8462225c48aa5225b40d1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579389"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036979"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃
 
@@ -62,7 +64,7 @@ ms.locfileid: "77579389"
 1. TableLayoutPanel **Dock** 속성을 **Fill**로 설정합니다. 그러면 패널이 전체 양식으로 채워집니다. 폼의 크기를 다시 조정하면 TableLayoutPanel은 도킹된 상태를 유지한 채 폼의 크기에 맞게 자동으로 크기가 조정됩니다.
 
     > [!NOTE]
-    > TableLayoutPanel은 Microsoft Office Word의 테이블처럼 작동합니다. 행과 열이 포함되고, 개별 셀은 여러 행 및 열에 걸쳐 있을 수 있습니다. 각 셀에는 단추, 확인란, 레이블 등과 같은 컨트롤이 하나만 있을 수 있습니다. TableLayoutPanel에는 전체 위쪽 행에 걸쳐 있는 하나의 <xref:System.Windows.Forms.PictureBox> 컨트롤, 왼쪽 아래 셀에 있는 하나의 <xref:System.Windows.Forms.CheckBox> 컨트롤 및 오른쪽 아래 셀에 있는 네 개의 <xref:System.Windows.Forms.Button> 컨트롤이 포함되어야 합니다.
+    > TableLayoutPanel은 열과 행이 있고 개별 셀이 여러 열과 행에 걸쳐 있을 수 있다는 점에서 Microsoft Office Word의 표와 비슷합니다. 각 셀에는 단추, 확인란, 레이블 등과 같은 컨트롤이 하나만 있을 수 있습니다. TableLayoutPanel에는 전체 위쪽 행에 걸쳐 있는 하나의 <xref:System.Windows.Forms.PictureBox> 컨트롤, 왼쪽 아래 셀에 있는 하나의 <xref:System.Windows.Forms.CheckBox> 컨트롤 및 오른쪽 아래 셀에 있는 네 개의 <xref:System.Windows.Forms.Button> 컨트롤이 포함되어야 합니다.
 
 1. 현재 TableLayoutPanel에는 크기가 같은 행과 열이 각각 두 개씩 있는데, 위쪽 행과 오른쪽 열의 크기를 훨씬 더 크게 만들어 보겠습니다. **Windows Forms 디자이너**에서 TableLayoutPanel을 선택합니다. 오른쪽 위 모퉁이에 다음과 같은 작은 검정색 삼각형 단추가 있습니다.
 
@@ -94,7 +96,7 @@ ms.locfileid: "77579389"
 
 * 이전 자습서 단계로 돌아가려면 [3단계: 폼 속성 설정](../ide/step-3-set-your-form-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
-* [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)
+* [자습서 3: 일치 게임 만들기](tutorial-3-create-a-matching-game.md)

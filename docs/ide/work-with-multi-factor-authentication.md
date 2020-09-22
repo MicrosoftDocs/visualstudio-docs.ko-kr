@@ -1,6 +1,7 @@
 ---
-title: 다단계 인증이 필요한 계정 작업
+title: 다단계 인증이 필요한 계정 사용
 ms.date: 05/27/2020
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 description: 다단계 인증이 필요한 계정으로 Visual Studio를 사용하는 방법을 알아봅니다.
 author: ornellaalt
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283548"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093352"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>다단계 인증이 필요한 계정으로 Visual Studio를 사용하는 방법
 
@@ -49,10 +50,11 @@ ms.locfileid: "85283548"
 
 이 작업을 수행하면 시스템의 기본 웹 브라우저가 열리고, 계정에 로그인하고 필요한 MFA 정책의 유효성을 검사하라는 메시지가 표시됩니다.
 
-개발 활동 및 리소스 구성에 따라 세션 중에 자격 증명을 다시 입력하라는 메시지가 표시될 수 있습니다. 이 문제는 새 리소스를 추가하거나 이전에 CA/MFA 권한 부여 요구 사항을 충족하지 않고 리소스에 액세스를 시도하는 경우에 발생할 수 있습니다.
+로그인 프로세스 중에 로그인 상태를 유지하도록 요청하는 추가 메시지가 표시될 수 있습니다. 이 메시지는 두 번째로 계정을 사용하여 로그인할 때 표시될 수 있습니다. 자격 증명을 다시 입력할 필요를 최소화하려면 **예**를 선택하는 것이 좋습니다. 이렇게 하면 브라우저 세션 간에 자격 증명이 유지됩니다.
 
-> [!NOTE] 
-> 최상의 환경을 위해 리소스에 대해 모든 CA/MFA 정책의 유효성을 검사할 때까지 브라우저를 열어 두세요. 브라우저를 닫으면 이전에 빌드된 MFA 상태가 손실될 수 있으며 추가 권한 부여 프롬프트가 표시될 수 있습니다.
+:::image type="content" source="media/kmsi.png" alt-text="로그인 상태를 유지하시겠습니까?":::
+
+개발 활동 및 리소스 구성에 따라 세션 중에 자격 증명을 다시 입력하라는 메시지가 계속 표시될 수 있습니다. 이 문제는 새 리소스를 추가하거나 이전에 CA/MFA 권한 부여 요구 사항을 충족하지 않고 리소스에 액세스를 시도하는 경우에 발생할 수 있습니다.
 
 ## <a name="reauthenticating-an-account"></a>계정 다시 인증  
 계정에 문제가 있는 경우 Visual Studio에서 계정 자격 증명을 다시 입력하라는 메시지가 표시될 수 있습니다.  

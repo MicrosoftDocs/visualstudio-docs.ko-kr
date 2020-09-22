@@ -1,17 +1,18 @@
 ---
-title: Docker Compose 및 ASP.NET Core를 사용하는 다중 컨테이너 자습서
+title: Docker Compose를 사용하여 여러 컨테이너에서 작업
 author: ghogen
 description: Docker Compose에서 여러 컨테이너를 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490315"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037213"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
