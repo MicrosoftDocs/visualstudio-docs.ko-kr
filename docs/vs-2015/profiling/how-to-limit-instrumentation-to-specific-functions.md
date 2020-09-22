@@ -1,5 +1,5 @@
 ---
-title: '방법: 특정 함수로 계측 제한 | Microsoft Docs'
+title: '방법: 특정 함수로 계측 제한 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432648"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841478"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>방법: 특정 함수로 계측 제한
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "63432648"
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace`**::**`FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\***는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.  
+    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace` **::** `FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\** *는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.  
   
    > [!NOTE]
    > 이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리(일반적으로 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 설치 디렉터리 아래 \Team Tools\Performance Tools)에서 명령 프롬프트 창을 열고 **vsinstr /DumpFuncs**를 입력합니다.  
@@ -63,12 +63,12 @@ ms.locfileid: "63432648"
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace`**::**`FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\***는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.  
+    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace` **::** `FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\** *는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.  
   
    > [!NOTE]
    > 이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리(일반적으로 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 설치 디렉터리 아래 \Team Tools\Performance Tools)에서 명령 프롬프트 창을 열고 **vsinstr /DumpFuncs**를 입력합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [데이터 수집 제어](../profiling/controlling-data-collection.md)   
- [방법: 특정 Dll로 계측 제한](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [방법: 계측을 특정 Dll로 제한](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [방법: 추가 계측 옵션 지정](../profiling/how-to-specify-additional-instrumentation-options.md)

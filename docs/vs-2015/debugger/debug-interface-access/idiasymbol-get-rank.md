@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf7c39213ae2eb233509d720b7e7c2eab0a17560
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809706"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841855"
 ---
-# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
+# <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-FORTRAN 다차원 배열의 차수 (차원 수)를 검색합니다.  
+포트란 다차원 배열의 순위 (차원 수)를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT get_rank ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] FORTRAN 다차원 배열의 차원 수를 반환합니다.  
+ 제한이 포트란 다차원 배열의 차원 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 순위 배열으로 선언 된 위치는 배열의 차원 수를 나타냅니다 `myarray[1,2,3]`합니다. 이 예제는 차수 3 및 3 차원에 있습니다. 순위에 적용 되지 않습니다 C++ 각 차원에 대 한 배열의 배열 개념을 사용 하는 (즉, `myarray[1][2][3]`).  
+ Rank는 배열이로 선언 된 배열의 차원 수를 나타냅니다 `myarray[1,2,3]` . 이 예제의 순위는 3 및 3 차원입니다. Rank는 각 차원에 대 한 배열 배열의 개념 (즉,)을 사용 하는 c + +에는 적용 되지 않습니다 `myarray[1][2][3]` .  
   
-## <a name="see-also"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

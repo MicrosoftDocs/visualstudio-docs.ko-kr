@@ -1,5 +1,5 @@
 ---
-title: 방법-ClickOnce 응용 프로그램에 대 한 업데이트 관리 | Microsoft Docs
+title: ClickOnce 응용 프로그램에 대 한 업데이트 관리 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382356"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851608"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 대한 업데이트 관리
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 자동으로 또는 프로그래밍 방식으로 업데이트를 확인할 수 있습니다. 개발자는 업데이트 확인을 수행 하는 시기와 방법, 업데이트가 필수 인지 여부 및 응용 프로그램이 업데이트를 확인 해야 하는 위치를 지정 하는 데 많은 유연성을 발휘할 수 있습니다.
@@ -105,7 +105,7 @@ ms.locfileid: "85382356"
 
 7. 응용 프로그램을 빌드합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [애플리케이션 업데이트 대화 상자](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)

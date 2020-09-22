@@ -1,5 +1,5 @@
 ---
-title: 방법-패키지 매니페스트 만들기 | Microsoft Docs
+title: 패키지 매니페스트 만들기 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382525"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851712"
 ---
 # <a name="how-to-create-a-package-manifest"></a>방법: 패키지 매니페스트 만들기
 응용 프로그램에 대 한 필수 구성 요소를 배포 하기 위해 부트스트래퍼 패키지를 사용할 수 있습니다. 부트스트래퍼 패키지는 단일 제품 매니페스트 파일을 포함 하지만 각 로캘에 대 한 패키지 매니페스트를 포함 합니다. 서로 다른 지역화 된 버전에서 공유 되는 기능은 제품 매니페스트로 이동 해야 합니다.
@@ -98,5 +98,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

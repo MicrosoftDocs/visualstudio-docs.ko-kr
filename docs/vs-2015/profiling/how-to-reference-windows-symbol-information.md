@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows 기호 정보 참조 | Microsoft Docs'
+title: '방법: Windows 기호 정보 참조 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443448"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842086"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>방법: Windows 기호 정보 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ Visual Studio 프로파일링 도구는 기호 파일(.pdb)을 사용하여 프�
   
      **C:\SymbolCache**  
   
-     줄임표 단추(**...**)를 클릭한 후 **폴더 찾아보기** 대화 상자에서 디렉터리를 선택할 수도 있습니다.  
+     줄임표 단추( **...** )를 클릭한 후 **폴더 찾아보기** 대화 상자에서 디렉터리를 선택할 수도 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
- [방법: 기호 정보 직렬화](../profiling/how-to-serialize-symbol-information.md)
+ [방법: 기호 정보 Serialize](../profiling/how-to-serialize-symbol-information.md)

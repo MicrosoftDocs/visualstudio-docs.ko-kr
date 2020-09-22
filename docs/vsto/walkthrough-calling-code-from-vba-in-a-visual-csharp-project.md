@@ -1,5 +1,5 @@
 ---
-title: '연습: 시각적 개체에서 vba의 코드를 호출할 C# 프로젝트'
+title: '연습: Visual c # 프로젝트에서 VBA의 코드 호출'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,13 +20,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438653"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841734"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>연습: 시각적 개체에서 vba의 코드를 호출할 C# 프로젝트
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>연습: Visual c # 프로젝트에서 VBA의 코드 호출
   이 연습에서는 통합 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Excel에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `Sheet1` 호스트 항목 클래스에 메서드 추가, 통합 문서의 VBA 코드에 메서드 노출, 통합 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -50,14 +50,14 @@ ms.locfileid: "63438653"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
- 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
+## <a name="prerequisites"></a>필수 구성 요소
+ 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - Microsoft Excel
 
-## <a name="create-a-workbook-that-contains-vba-code"></a>VBA 코드를 포함 하는 통합 문서를 만들려면
+## <a name="create-a-workbook-that-contains-vba-code"></a>VBA 코드를 포함 하는 통합 문서 만들기
  첫 번째 단계는 간단한 VBA 매크로를 포함하는 매크로 사용 통합 문서를 만드는 것입니다. 사용자 지정의 코드를 VBA에 노출하려면 통합 문서에 VBA 코드가 이미 포함되어 있어야 합니다. 그렇지 않으면 Visual Studio가 VBA 코드에서 사용자 지정 어셈블리를 호출할 수 있도록 VBA 프로젝트를 수정할 수 없습니다.
 
  사용하려는 VBA 코드를 포함하는 통합 문서가 이미 있는 경우 이 단계를 건너뛸 수 있습니다.
@@ -66,12 +66,12 @@ ms.locfileid: "63438653"
 
 1. Excel을 시작합니다.
 
-2. 로 활성 문서를 저장 한 **현재 통합 문서 (\*.xlsm)** 이름의 **WorkbookWithVBA**. 통합 문서를 바탕 화면과 같은 편리한 위치에 저장합니다.
+2. 활성 문서를 **Excel 매크로 사용 통합 문서 ( \* .xlsm)** 와 함께 통합 문서 이름 **vba**로 저장 합니다. 통합 문서를 바탕 화면과 같은 편리한 위치에 저장합니다.
 
 3. 리본에서 **개발자** 탭을 클릭합니다.
 
     > [!NOTE]
-    > **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.
+    > **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발자 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)를 참조 하세요.
 
 4. **코드** 그룹에서 **Visual Basic**을 클릭합니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "63438653"
 
 7. 문서를 저장하고 Excel을 종료합니다.
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
  이제 이전에 만든 매크로 사용 통합 문서를 사용하는 Excel용 문서 수준 프로젝트를 만들 수 있습니다.
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
@@ -117,8 +117,8 @@ ms.locfileid: "63438653"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 의 디자이너에 **WorkbookWithVBA** 통합 문서가 열리고 **CallingCodeFromVBA** 프로젝트가 **솔루션 탐색기**에 추가됩니다.
 
-## <a name="trust-the-location-of-the-workbook"></a>통합 문서 위치 신뢰
- 통합 문서의 VBA 코드에 솔루션의 코드를 노출하려면 먼저 실행할 통합 문서의 VBA를 신뢰해야 합니다. 다음과 같은 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 이 연습에서는 Excel의 **보안 센터** 에서 통합 문서의 위치를 신뢰하여 이 작업을 수행합니다.
+## <a name="trust-the-location-of-the-workbook"></a>통합 문서의 위치를 신뢰 합니다.
+ 통합 문서의 VBA 코드에 솔루션의 코드를 노출하려면 먼저 실행할 통합 문서의 VBA를 신뢰해야 합니다. 이 작업을 수행하는 데는 몇 가지 방법이 있습니다. 이 연습에서는 Excel의 **보안 센터** 에서 통합 문서의 위치를 신뢰하여 이 작업을 수행합니다.
 
 ### <a name="to-trust-the-location-of-the-workbook"></a>통합 문서의 위치를 신뢰하려면
 
@@ -148,7 +148,7 @@ ms.locfileid: "63438653"
 
 13. **Excel**을 종료합니다.
 
-## <a name="add-a-method-to-the-sheet1-class"></a>Sheet1 클래스에 메서드를 추가 합니다.
+## <a name="add-a-method-to-the-sheet1-class"></a>Sheet1 클래스에 메서드 추가
  이제 VBA 프로젝트가 설정되었으므로 VBA 코드에서 호출할 수 있는 `Sheet1` 호스트 항목 클래스에 공용 메서드를 추가합니다.
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>Sheet1 클래스에 메서드를 추가하려면
@@ -161,7 +161,7 @@ ms.locfileid: "63438653"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. 다음 메서드를 `Sheet1` 클래스에 추가합니다. 이 메서드는 <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> 메서드를 재정의하여 `Sheet1` 클래스의 현재 인스턴스를 반환합니다.
+3. `Sheet1` 클래스에 다음 메서드를 추가합니다. 이 메서드는 <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> 메서드를 재정의하여 `Sheet1` 클래스의 현재 인스턴스를 반환합니다.
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -205,15 +205,15 @@ ms.locfileid: "63438653"
 
 4. 프로젝트를 빌드합니다.
 
-## <a name="call-the-method-from-vba-code"></a>VBA 코드에서 메서드를 호출 합니다.
+## <a name="call-the-method-from-vba-code"></a>VBA 코드에서 메서드 호출
  이제 통합 문서의 VBA 코드에서 `CreateVstoNamedRange` 메서드를 호출할 수 있습니다.
 
 > [!NOTE]
-> 이 연습에서는 프로젝트를 디버그하는 동안 통합 문서에 VBA 코드를 추가합니다. Visual Studio에서 빌드 출력 폴더의 문서를 주 프로젝트 폴더의 문서 복사본으로 바꾸기 때문에 이 문서에 추가하는 모든 VBA 코드는 다음번에 프로젝트를 빌드할 때 덮어쓰입니다. VBA 코드를 저장하려는 경우 프로젝트 폴더의 문서에 복사할 수 있습니다. 자세한 내용은 [결합 VBA 및 문서 수준 사용자 지정](../vsto/combining-vba-and-document-level-customizations.md)합니다.
+> 이 연습에서는 프로젝트를 디버그하는 동안 통합 문서에 VBA 코드를 추가합니다. Visual Studio에서 빌드 출력 폴더의 문서를 주 프로젝트 폴더의 문서 복사본으로 바꾸기 때문에 이 문서에 추가하는 모든 VBA 코드는 다음번에 프로젝트를 빌드할 때 덮어쓰입니다. VBA 코드를 저장하려는 경우 프로젝트 폴더의 문서에 복사할 수 있습니다. 자세한 내용은 [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)을 참조 하세요.
 
 ### <a name="to-call-the-method-from-vba-code"></a>VBA 코드에서 메서드를 호출하려면
 
-1. 키를 눌러 **F5** 프로젝트를 실행 합니다.
+1. **F5** 키를 눌러 프로젝트를 실행 합니다.
 
 2. **개발자** 탭의 **코드** 그룹에서 **Visual Basic**을 클릭합니다.
 
@@ -242,13 +242,13 @@ ms.locfileid: "63438653"
 ## <a name="next-steps"></a>다음 단계
  다음 항목에서는 VBA에서 Office 솔루션의 코드를 호출하는 방법에 대해 자세히 알아볼 수 있습니다.
 
-- VBA에서 Visual Basic 사용자 지정의 호스트 항목에 포함된 코드를 호출합니다. 이 프로세스는 Visual C# 프로세스와 다릅니다. 자세한 내용은 [연습: Visual Basic 프로젝트에서 VBA에서 코드를 호출할](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)합니다.
+- VBA에서 Visual Basic 사용자 지정의 호스트 항목에 포함된 코드를 호출합니다. 이 프로세스는 Visual C# 프로세스와 다릅니다. 자세한 내용은 [연습: Visual Basic 프로젝트에서 VBA의 코드 호출](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)을 참조 하세요.
 
-- VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 [연습: VBA에서 VSTO 추가 기능에서 코드를 호출할](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)합니다.
+- VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)
-- [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)
+- [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [방법: Visual C에서 VBA로 코드 노출&#35; 프로젝트](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
-- [연습: Visual Basic 프로젝트에서 VBA에서 코드 호출](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)
+- [방법: Visual C&#35; 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [연습: Visual Basic 프로젝트에서 VBA의 코드 호출](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

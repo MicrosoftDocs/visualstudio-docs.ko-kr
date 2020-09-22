@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2aa32579b7e1f3ad1129fb4be116555b8bb5d790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434314"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841719"
 ---
 # <a name="c-library-reference"></a>C++ 라이브러리 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

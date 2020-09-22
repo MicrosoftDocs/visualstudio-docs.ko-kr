@@ -1,5 +1,5 @@
 ---
-title: 방법-특정 로캘이 있는 프로젝트 게시 | Microsoft Docs
+title: 특정 로캘이 지정된 프로젝트 게시
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38be27ca9873d662fd4839590f50c9788b5ae7ea
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382226"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851699"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>방법: 특정 로캘이 지정된 프로젝트 게시
 애플리케이션에 포함된 구성 요소가 서로 다른 로캘을 사용하는 경우를 흔히 볼 수 있습니다. 이러한 시나리오에서는 여러 프로젝트가 포함된 솔루션을 만든 다음 각 로캘에 대해 프로젝트를 별도로 게시합니다. 아래 절차에서는 매크로를 통해 'en' 로캘을 사용하는 솔루션의 첫 번째 프로젝트를 게시하는 방법을 보여줍니다. 'en' 이외의 로캘에 대해 이 절차를 수행하려면 매크로의 `localeString`을 'de' 또는 'de-DE'와 같이 사용 중인 로캘과 일치하도록 설정합니다.
@@ -161,7 +161,7 @@ ms.locfileid: "85382226"
 
 7. *C:\Inetpub\wwwroot\PublishLocales\en*를 확인 합니다. 지역화 된 리소스 DLL 외에 매니페스트, *setup.exe*, 게시 웹 페이지 파일 등의 설치 된 파일이 표시 됩니다. 기본적으로 ClickOnce는 Exe 및 Dll에 *.deploy* 확장명을 추가 합니다. 배포 후이 확장을 제거할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
 - [매크로 개발 환경](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [매크로 탐색기 창](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))

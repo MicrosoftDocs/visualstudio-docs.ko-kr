@@ -1,5 +1,6 @@
 ---
-title: 수동으로 ClickOnce 앱 배포 브랜딩 유지
+title: 수동으로 ClickOnce 앱 배포 & 브랜딩 유지
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263421"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809226"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>연습: 다시 서명할 필요가 없고 브랜딩 정보를 유지 하는 ClickOnce 응용 프로그램을 수동으로 배포
 응용 프로그램을 만든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 다음 게시 하 고 배포할 수 있도록 고객에 게 제공 하려면 일반적으로 배포 매니페스트를 업데이트 하 고 다시 서명 해야 했습니다. 대부분의 경우에는 여전히 선호 되는 방법 이지만 .NET Framework 3.5를 사용 하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 새 배포 매니페스트를 다시 생성 하지 않고도 고객이 배포할 수 있는 배포를 만들 수 있습니다. 자세한 내용은 다시 서명를 사용 [하지 않고 테스트 및 프로덕션 서버용 ClickOnce 응용 프로그램 배포](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)를 참조 하세요.
@@ -37,7 +38,7 @@ ms.locfileid: "66263421"
 > [!NOTE]
 > 이 연습에서는 명령줄 도구 *Mage.exe* 또는 그래픽 도구 *MageUI.exe*를 사용 하 여 배포를 수동으로 만듭니다. 수동 배포에 대 한 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습의 단계를 수행 하려면 다음이 필요 합니다.
 
 - 배포할 준비가 된 Windows Forms 응용 프로그램입니다. 이 응용 프로그램은 *WindowsFormsApp1*라고 합니다.

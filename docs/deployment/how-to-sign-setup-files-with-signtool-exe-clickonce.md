@@ -1,5 +1,6 @@
 ---
-title: SignTool.exe를 사용 하 여 설치 파일에 서명 하는 방법 (ClickOnce) | Microsoft Docs
+title: SignTool.exe를 사용하여 설치 파일에 서명(ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 138e84637acb123c445839dc4810547ed8bc2ed3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382070"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809507"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>방법: SignTool.exe를 사용하여 설치 파일에 서명(ClickOnce)
 *SignTool.exe*를 사용하여 설치 프로그램(*setup.exe*)에 서명을 할 수 있습니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.

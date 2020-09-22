@@ -1,5 +1,5 @@
 ---
-title: '오류: ASP.NET이 설치 되어 있지 | Microsoft Docs'
+title: '오류: ASP.NET이 설치되어 있지 않음 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447315"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842094"
 ---
 # <a name="error-aspnet-not-installed"></a>오류: ASP.NET이 설치되어 있지 않음
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63447315"
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     여기서 *버전* v1.0.370) 컴퓨터에 설치 된.NET Framework의 버전 번호를 나타냅니다. 프레임 워크 버전을 확인 하 여 확인할 수 있습니다는 `\WINDOWS\Microsoft.NET\Framework` 디렉터리입니다.  
+     여기서, *version*은 컴퓨터에 설치된 .NET Framework의 버전 번호(예: v1.0.370)입니다. 프레임워크 버전은 `\WINDOWS\Microsoft.NET\Framework` 디렉터리에서 확인할 수 있습니다.  
   
     > [!NOTE]
     > Windows Server 2003에서는 제어판의 **프로그램 추가 또는 제어**를 사용하여 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]을 설치할 수 있습니다.  

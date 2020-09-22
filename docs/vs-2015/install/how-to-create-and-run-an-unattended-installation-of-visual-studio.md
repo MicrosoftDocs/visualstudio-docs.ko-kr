@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433035"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843270"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,10 @@ ms.locfileid: "63433035"
     > [!NOTE]
     > 경로 및 파일 이름 조합이 260자를 초과하면 설치가 실패할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 경로의 최대 길이는 221자입니다.  로컬 경로 이름은 70자를 초과하면 안 되고 네트워크 경로 이름은 39자를 초과하면 안 됩니다.
 
-     또한 경로의 폴더 이름에 공백이 포함(예: "\\\\*ServerName*\IDE install" 또는 \\\\*ServerName*\Visual Studio\\)된 경우 설치가 실패할 수 있습니다.
+     경로의 폴더 이름에 공백이 포함 된 경우 (예: " \\ \\ *servername*\ide install" 또는 \\ \\ *server\visual*Studio \\ )에도 설치가 실패할 수 있습니다.
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>무인 모드로 Visual Studio 배포
- 무인 모드로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 배포하려면 AdminDeployment.xml 파일을 수정해야 합니다. 이렇게 하려면 먼저 `/CreateAdminFile` *\<file location>* 명령줄 매개 변수를 사용하여 AdminDeployment.xml 파일을 만들어야 합니다. 그런 다음 이 파일을 사용하여 네트워크에 Visual Studio의 배포를 푸시하거나 *Drive*:\IDEinstall\packages 디렉터리에 해당 파일을 복사한 경우 끌어와서 설치할 수 있습니다. AdminDeployment.xml 파일은 운영 체제, 아키텍처, Visual Studio 버전 또는 운영 체제 언어에 고유하지 않습니다.
+ 무인 모드로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 배포하려면 AdminDeployment.xml 파일을 수정해야 합니다. 이렇게 하려면 먼저 `/CreateAdminFile` 명령줄 매개 변수를 사용 하 여 AdminDeployment.xml 파일을 만들어야 합니다 *\<file location>* . 그런 다음 이 파일을 사용하여 네트워크에 Visual Studio의 배포를 푸시하거나 *Drive*:\IDEinstall\packages 디렉터리에 해당 파일을 복사한 경우 끌어와서 설치할 수 있습니다. AdminDeployment.xml 파일은 운영 체제, 아키텍처, Visual Studio 버전 또는 운영 체제 언어에 고유하지 않습니다.
 
 > [!CAUTION]
 > AdminDeployment.xml 파일에서 선택된 것으로 나열된 항목이 설치되지 않는 경우도 있습니다. 이 문제를 해결하려면 "선택됨="yes""로 표시된 항목을 AdminDeployment.xml 파일의 **끝** 에 배치합니다.
@@ -59,13 +59,13 @@ ms.locfileid: "63433035"
 
  AdminDeployment 파일 스키마에는 다음 요소가 포함되어 있습니다.
 
-|요소|특성|값|설명|
+|요소|attribute|값|Description|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*Path*|설치 애플리케이션의 사용자 인터페이스에서 경로를 재정의하는 작업과 동일하게 동작합니다. Visual Studio가 이미 설치된 경우 이 요소는 무시됩니다.|
 |BundleCustomizations|NoWeb|예&#124;기본값|이 요소의 값이 yes이면 설치 애플리케이션이 설치 작업 중 웹으로 이동하려고 시도하지 않습니다.|
-|SelectableItemCustomization|Hidden|예&#124;아니요|이 요소의 값이 Yes이면 사용자 지정 트리에서 선택 가능한 항목을 숨깁니다.|
+|SelectableItemCustomization|숨김|예&#124;아니요|이 요소의 값이 Yes이면 사용자 지정 트리에서 선택 가능한 항목을 숨깁니다.|
 |SelectableItemCustomization|선택함|예&#124;아니요|사용자 지정 트리에서 선택 가능한 항목을 선택하거나 선택 취소합니다.|
-|BundleCustomizations|Feed|경로|사용자가 사용하려는 피드의 위치입니다.  이 피드는 컴퓨터의 후속 수정 작업에 사용됩니다(기본적으로 "Default").|
+|BundleCustomizations|피드|경로|사용자가 사용하려는 피드의 위치입니다.  이 피드는 컴퓨터의 후속 수정 작업에 사용됩니다(기본적으로 "Default").|
 |BundleCustomizations|SuppressRefreshPrompt|예&#124;기본값|최신 버전을 사용할 수 있는 경우 설치를 새로 고치라는 메시지가 사용자에게 표시되지 않도록 합니다.|
 |BundleCustomizations|NoRefresh|예&#124;기본값|최신 버전을 사용할 수 있는 경우 설치를 새로 고치지 않습니다.|
 |BundleCustomizations|NoCacheOnlyMode|예&#124;기본값|패키지 캐시 미리 채우기를 방지합니다.|
@@ -131,14 +131,14 @@ ms.locfileid: "63433035"
 
 2. **세부 정보** 탭을 클릭한 다음, **제품 버전** 속성을 기록해 둡니다.
 
-    ![Visual Studio 무인 설치의 속성 대화 상자 예](../install/media/unattended-install-properties-dialog-box.PNG "무인 설치 - 속성 대화 상자")
+    ![Visual Studio 무인 설치의 속성 대화 상자 예제](../install/media/unattended-install-properties-dialog-box.PNG "무인 설치-속성 대화 상자")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>제품 버전이 14.0.24720.0 또는 14.0.24720.1이면 다음 단계를 수행합니다.
    1. 인터넷에 연결된 머신에서 *Product.exe* /Layout *Drive:* \IDEinstall을 실행합니다. 예를 들어 다음을 실행합니다. `vs_enterprise.exe /Layout d:\IDEinstall`
 
    2. /Layout이 완료되면 새 이미지를 새 위치로 복사합니다.
 
-   3. AdminDeployment.xml 파일을 만들고 수정합니다. 이렇게 하려면 `/CreateAdminFile`*\<file location>* 명령줄 매개 변수를 사용합니다. (자세한 내용은 이 문서의 “무인 모드에서 Visual Studio 배포” 섹션을 참조하세요.)
+   3. AdminDeployment.xml 파일을 만들고 수정합니다. 이렇게 하려면 `/CreateAdminFile` *\<file location>* 명령줄 매개 변수를 사용 합니다. (자세한 내용은 이 문서의 “무인 모드에서 Visual Studio 배포” 섹션을 참조하세요.)
 
    4. 클라이언트 머신에서 다음 명령을 실행하여 이전에 설치한 Visual Studio를 업데이트합니다. “\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart”
 
@@ -148,7 +148,7 @@ ms.locfileid: "63433035"
 
    2. /Layout이 완료되면 새 이미지를 새 위치로 복사합니다. (또는 기존 네트워크 이미지를 대신 재정의할 수 있습니다.)
 
-   3. AdminDeployment.xml 파일을 만들고 수정합니다. 이렇게 하려면 `/CreateAdminFile`*\<file location>* 명령줄 매개 변수를 사용합니다. (자세한 내용은 이 문서의 “무인 모드에서 Visual Studio 배포” 섹션을 참조하세요.)
+   3. AdminDeployment.xml 파일을 만들고 수정합니다. 이렇게 하려면 `/CreateAdminFile` *\<file location>* 명령줄 매개 변수를 사용 합니다. (자세한 내용은 이 문서의 “무인 모드에서 Visual Studio 배포” 섹션을 참조하세요.)
 
    4. 이미지를 새 위치로 복사할 경우 클라이언트 머신에서 다음 명령을 실행하여 이전에 설치한 Visual Studio를 업데이트해야 합니다. “\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart”
 

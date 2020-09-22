@@ -1,5 +1,5 @@
 ---
-title: '연습: 누락 된 개체를 잘못 구성 된 파이프라인으로 인해 | Microsoft Docs'
+title: '연습: 잘못 구성 된 파이프라인으로 인해 누락 된 개체 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444288"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90843317"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>연습: 잘못 구성된 파이프라인으로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63444288"
   
  이 시나리오에서는 테스트를 위해 앱을 실행할 때 배경은 예상대로 렌더링되지만 개체 중 하나가 나타나지 않습니다. 그래픽 진단을 사용하여 앱을 디버그할 수 있도록 그래픽 로그 문제를 포착합니다. 이 문제는 앱에서 다음과 같이 보입니다.  
   
- ![개체를 볼 수 없습니다](../debugger/media/gfx-diag-demo-misconfigured-pipeline-problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
+ ![개체를 볼 수 없음](../debugger/media/gfx-diag-demo-misconfigured-pipeline-problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
   
 ## <a name="investigation"></a>조사  
  그래픽 진단 도구를 사용하면 그래픽 로그 문서를 로드하여 테스트 중에 캡처한 프레임을 검사할 수 있습니다.  
@@ -47,9 +47,9 @@ ms.locfileid: "63444288"
   
 2. **프레임 목록**에서 개체가 표시되지 않는 것을 보여 주는 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 탭은 다음과 같습니다.  
   
-    ![Visual Studio에서 그래픽 로그 문서](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
+    ![Visual Studio의 그래픽 로그 문서](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
   
-   문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록**을 사용하여 진단을 시작할 수 있습니다. **그래픽 이벤트 목록** 에는 활성 프레임을 렌더링하여 장치를 상태를 설정하거나, 버퍼를 만들고 업데이트하거나 프레임에 나타나는 개체를 그리는 등의 작업을 하기 위해 수행한 모든 Direct3D API 호출이 포함됩니다. 많은 유형의 호출(그리기, 디스패치, 복사 또는 지우기 등)은 앱이 예상대로 작동할 때 렌더링 대상에 항상은 아니지만 종종 해당 변경 사항이 생기므로 흥미롭습니다. 그리기 호출은 각각 앱이 렌더링하는 기하 도형을 나타내므로 특히 흥미롭습니다.  
+   문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록**을 사용하여 진단을 시작할 수 있습니다. **그래픽 이벤트 목록** 에는 활성 프레임을 렌더링하여 디바이스를 상태를 설정하거나, 버퍼를 만들고 업데이트하거나 프레임에 나타나는 개체를 그리는 등의 작업을 하기 위해 수행한 모든 Direct3D API 호출이 포함됩니다. 많은 유형의 호출(그리기, 디스패치, 복사 또는 지우기 등)은 앱이 예상대로 작동할 때 렌더링 대상에 항상은 아니지만 종종 해당 변경 사항이 생기므로 흥미롭습니다. 그리기 호출은 각각 앱이 렌더링하는 기하 도형을 나타내므로 특히 흥미롭습니다.  
   
    우리는 렌더링 대상에 누락된 개체는 포함되지 않지만, 다른 오류가 있는 것으로 표시되지 않음을 알고 있으므로, **그래픽 파이프라인 단계** 도구와 함께 **그래픽 이벤트 목록** 을 사용하여 누락된 개체의 기하 도형에 해당하는 그리기 호출을 판단할 수 있습니다. **그래픽 파이프라인 단계** 창은 렌더링 대상에 대한 효과에 상관없이 각 그리기 호출에 전송된 기하 도형을 보여 줍니다. 그리기 호출을 진행함에 따라, 기하 도형이 각각 사용되는 단계를 통과할 때 파이프라인 단계가 각 호출과 관련된 기하 도형을 표시하도록 업데이트되고, 렌더링 대상 출력도 호출이 완료되면 렌더링 대상의 상태를 표시하도록 업데이트됩니다.  
   
@@ -68,17 +68,17 @@ ms.locfileid: "63444288"
   
 4. 누락된 개체에 해당하는 그리기 호출에 도달하면 중지합니다. 이 시나리오에서 **그래픽 파이프라인 단계** 창은 기하 도형이 GPU에 만들어지고( **입력 어셈블러** 단계의 존재로 알 수 있음) 변환( **꼭짓점 셰이더** 단계로 알 수 있음)되지만 활성 픽셀 셰이더가 없는( **픽셀 셰이더** 단계의 부재로 알 수 있음) 것으로 보이므로 렌더링 대상에 나타나지 않습니다. 이 시나리오에서는 누락된 개체의 실루엣을 아래 그림과 같이 **출력 병합기** 단계에서 확인할 수도 있습니다.  
   
-    ![DrawIndexed 이벤트 및 파이프라인에 미치는 영향](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
+    ![DrawIndexed 이벤트 및 파이프라인에 대한 효과](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
-   앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 발행했음을 확인하고 픽셀 셰이더 단계 비활성 상태임이 발견되면 디바이스 상태를 검사하여 찾은 사항들을 확인할 수 있습니다. **그래픽 개체 표** 를 사용하여 장치 컨텍스트와 기타 Direct3D 개체 데이터를 검사할 수 있습니다.  
+   앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 발행했음을 확인하고 픽셀 셰이더 단계 비활성 상태임이 발견되면 디바이스 상태를 검사하여 찾은 사항들을 확인할 수 있습니다. **그래픽 개체 표** 를 사용하여 디바이스 컨텍스트와 기타 Direct3D 개체 데이터를 검사할 수 있습니다.  
   
 #### <a name="to-examine-device-context"></a>디바이스 컨텍스트를 검사하려면,  
   
-1. **d3d11 장치 컨텍스트**를 엽니다. **그래픽 파이프라인 단계** 창에서 창의 위쪽에 표시되는 **호출의 일부인** ID3D11DeviceContext `DrawIndexed` 링크를 선택합니다.  
+1. **d3d11 디바이스 컨텍스트**를 엽니다. **그래픽 파이프라인 단계** 창에서 창의 위쪽에 표시되는 **호출의 일부인** ID3D11DeviceContext `DrawIndexed` 링크를 선택합니다.  
   
-2. **d3d11 장치 컨텍스트** 탭에 표시되는 장치 상태를 검사하여 그리기 호출 동안 활성 상태였던 픽셀 셰이더가 없음을 확인합니다. 이 시나리오에서 **픽셀 셰이더 상태**아래에 표시되는 **셰이더 일반 정보**는 셰이더가 **NULL**임을 나타냅니다.  
+2. **d3d11 디바이스 컨텍스트** 탭에 표시되는 디바이스 상태를 검사하여 그리기 호출 동안 활성 상태였던 픽셀 셰이더가 없음을 확인합니다. 이 시나리오에서 **픽셀 셰이더 상태**아래에 표시되는 **셰이더 일반 정보**는 셰이더가 **NULL**임을 나타냅니다.  
   
-    ![픽셀 셰이더 상태를 표시 하는 D3D 11 장치 컨텍스트](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
+    ![픽셀 셰이더 상태를 표시하는 D3D 11 장치 컨텍스트](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
   
    픽셀 셰이더가 앱에 의해 null로 설정되었는지 확인했다면 다음 단계는 셰이더가 설정되어 있는 앱 소스 코드의 위치를 찾는 것입니다. **그래픽 이벤트 목록** 을 **그래픽 이벤트 호출 스택** 과 함께 사용하여 이 위치를 찾을 수 있습니다.  
   
@@ -93,15 +93,15 @@ ms.locfileid: "63444288"
   
 3. 호출 스택을 사용하여 앱의 소스 코드에서 `PSSetShader` 호출을 찾습니다. **그래픽 이벤트 호출 스택** 창에서 최상위 호출을 선택하고 픽셀 셰이더가 설정되는 값을 검사합니다. 픽셀 셰이더가 바로 null로 설정할 수도 있고, 또는 함수에 전달된 인수나 다른 상태로 인해 null 값이 발생할 수도 있습니다. 직접 설정하지 않은 경우라면 호출 스택의 어딘가에서 null 값의 원인을 찾을 수도 있습니다. 이 시나리오에서는 픽셀 셰이더가 `nullptr` nullptr `CubeRenderer::Render`임을 나타냅니다.  
   
-    ![픽셀 셰이더를 초기화 하지 않는 코드](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
+    ![픽셀 셰이더를 초기화하지 않는 코드](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
    > 호출 스택을 검사하는 것만으로 null 값의 원인을 찾을 수 없는 경우에는 픽셀 셰이더를 null로 설정할 때 프로그램의 실행이 중단되는 조건부 중단점을 `PSSetShader` 호출에 설정하는 것이 좋습니다. 그런 다음 디버그 모드에서 앱을 다시 시작하고 기존의 디버그 기법을 사용하여 null 값의 원인을 찾습니다.  
   
    문제를 해결하려면 `ID3D11DeviceContext::PSSetShader` API 호출의 첫 번째 매개 변수를 사용하여 올바른 픽셀 셰이더를 할당합니다.  
   
-   ![수정 된 C&#43; &#43; 소스 코드](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![수정 된 C&#43;&#43; 소스 코드입니다.](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
    코드를 수정한 후 다시 빌드하고 앱을 다시 실행하여 렌더링 문제가 해결되었는지 확인할 수 있습니다.  
   
-   ![이제는 개체가 표시 됨](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![이제 개체가 표시됨](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")

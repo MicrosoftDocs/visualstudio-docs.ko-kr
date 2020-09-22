@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce 응용 프로그램의 시작 메뉴 이름 지정 | Microsoft Docs
+title: ClickOnce 앱에 대 한 시작 메뉴 이름 지정
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d6f7471530a101404040368dbc6088e9b5d96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d60985d0fdf766fb49348bb9eb5d14d62d7e4d5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381927"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808765"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 시작 메뉴 이름 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]온라인 및 오프 라인 사용을 위해 응용 프로그램을 설치 하는 경우 **시작** 메뉴와 **프로그램 추가/제거** 목록에 항목이 추가 됩니다. 기본적으로 표시 이름은 응용 프로그램 어셈블리의 이름과 같지만 **게시 옵션** 대화 상자에서 **제품 이름** 을 설정 하 여 표시 이름을 변경할 수 있습니다.

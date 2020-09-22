@@ -1,5 +1,5 @@
 ---
-title: 방법-기술 지원에 대 한 링크 지정 Microsoft Docs
+title: 기술 지원에 대 한 링크 지정 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382057"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851751"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>방법: 기술 지원을 위한 링크 지정
 응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **지원 URL** 속성은 사용자가 응용 프로그램에 대 한 정보를 얻기 위해 이동할 수 있는 웹 페이지 또는 파일 공유를 식별 합니다. 이 속성은 선택 사항입니다. 제공 된 경우 URL은 응용 프로그램의 항목 **추가/제거** 대화 상자에 표시 됩니다.
@@ -44,6 +44,6 @@ ms.locfileid: "85382057"
 
 5. **지원 URL** 필드에 웹 사이트, 웹 페이지 또는 UNC 공유의 정규화 된 경로를 입력 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
 - [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419769"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843311"
 ---
 # <a name="createitem-task"></a>CreateItem 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "63419769"
 ## <a name="attributes"></a>특성  
  다음 표에서는 `CreateItem` 작업의 매개 변수에 대해 설명합니다.  
   
-|매개 변수|설명|  
+|매개 변수|Description|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|선택적 `String` 배열 매개 변수입니다.<br /><br /> 출력 항목에 연결할 추가 메타데이터를 지정합니다.  다음 구문을 사용하여 항목의 메타데이터 이름 및 값을 지정합니다.<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 여러 메타데이터 이름/값 쌍은 세미콜론으로 구분해야 합니다. 이름 또는 값에 세미콜론이나 기타 특수 문자가 포함되는 경우 이스케이프되어야 합니다. 자세한 내용은 [방법: MSBuild의 이스케이프 특수 문자](../msbuild/how-to-escape-special-characters-in-msbuild.md)합니다.|  
-|`Exclude`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 출력 항목 컬렉션에서 제외할 항목을 지정합니다. 이 매개 변수는 와일드카드 지정을 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md) 및 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)합니다.|  
+|`AdditionalMetadata`|선택적 `String` 배열 매개 변수입니다.<br /><br /> 출력 항목에 연결할 추가 메타데이터를 지정합니다.  다음 구문을 사용하여 항목의 메타데이터 이름 및 값을 지정합니다.<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 여러 메타데이터 이름/값 쌍은 세미콜론으로 구분해야 합니다. 이름 또는 값에 세미콜론이나 기타 특수 문자가 포함되는 경우 이스케이프되어야 합니다. 자세한 내용은 [방법: MSBuild의 이스케이프 특수 문자](../msbuild/how-to-escape-special-characters-in-msbuild.md)를 참조 하세요.|  
+|`Exclude`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 출력 항목 컬렉션에서 제외할 항목을 지정합니다. 이 매개 변수는 와일드카드 지정을 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md) 및 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조하세요.|  
 |`Include`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수<br /><br /> 출력 항목 컬렉션에 포함할 항목을 지정합니다. 이 매개 변수는 와일드카드 지정을 포함할 수 있습니다.|  
 |`PreserveExistingMetadata`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `True`인 경우 추가 메타데이터만 적용합니다(아직 존재하지 않을 경우).|  
   
 ## <a name="remarks"></a>설명  
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명의 목록은 [Taskextension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조 하세요.  
   
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 항목 컬렉션 `MySourceItems`에서 `MySourceItemsWithMetadata`라는 새 항목 컬렉션을 만듭니다. `CreateItem` 작업은 `MySourceItems` 항목에 있는 항목으로 새 항목 컬렉션을 채웁니다. 그런 다음 값이 `Hello`인 `MyMetadata`라는 추가 메타데이터 항목을 새 컬렉션의 각 항목에 추가합니다.  
@@ -75,7 +75,7 @@ ms.locfileid: "63419769"
   
  다음 표에서는 작업 실행 이후의 출력 항목 값을 설명합니다. 항목 뒤에 괄호로 묶은 내용이 항목 메타데이터입니다.  
   
-|항목 컬렉션입니다.|목차|  
+|항목 컬렉션입니다.|콘텐츠|  
 |---------------------|--------------|  
 |`MySourceItemsWithMetadata`|`file1.resx` (`MyMetadata="Hello"`)<br /><br /> `file2.resx` (`MyMetadata="Hello"`)|  
   
