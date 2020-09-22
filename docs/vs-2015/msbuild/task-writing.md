@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445393"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841690"
 ---
 # <a name="task-writing"></a>작업 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>예제  
   
-### <a name="description"></a>설명  
+### <a name="description"></a>Description  
  다음 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 클래스는 <xref:Microsoft.Build.Utilities.Task> 도우미 클래스에서 파생되는 작업을 보여 줍니다. 이 작업은 성공했음을 나타내는 `true`를 반환합니다.  
   
 ### <a name="code"></a>코드  
@@ -186,7 +186,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>예제  
   
-### <a name="description"></a>설명  
+### <a name="description"></a>Description  
  다음 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 클래스는 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 작업을 보여 줍니다. 이 작업은 성공했음을 나타내는 `true`를 반환합니다.  
   
 ### <a name="code"></a>코드  

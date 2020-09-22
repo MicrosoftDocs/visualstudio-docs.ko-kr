@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437897"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841355"
 ---
 # <a name="how-to-select-the-files-to-build"></a>방법: 빌드할 파일 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63437897"
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    > 항목 컬렉션의 항목이 프로젝트 파일과 같은 디렉터리에 있지 않으면 항목의 전체 또는 상대 경로를 지정해야 합니다. 예: `Include="..\..\form2.cs"`  
+    > 항목 컬렉션의 항목이 프로젝트 파일과 같은 디렉터리에 있지 않으면 항목의 전체 또는 상대 경로를 지정해야 합니다. 예를 들어 `Include="..\..\form2.cs"`을 참조하십시오.  
   
 #### <a name="to-declare-multiple-items"></a>여러 항목을 선언하려면  
   

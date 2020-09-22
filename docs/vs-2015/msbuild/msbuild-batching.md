@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439370"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841651"
 ---
 # <a name="msbuild-batching"></a>MSBuild 일괄 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "63439370"
 </Project>  
 ```  
   
- 특정 일괄 처리 예제는 [작업 일괄 처리의 항목 메타데이터](../msbuild/item-metadata-in-task-batching.md)를 참조하세요.  
+ 보다 구체적인 일괄 처리 예제는 [작업 일괄 처리의 항목 메타 데이터](../msbuild/item-metadata-in-task-batching.md)를 참조 하세요.  
   
 ## <a name="target-batching"></a>대상 일괄 처리  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 대상이 실행되기 전에 대상의 입력 및 출력이 최신 상태인지를 확인합니다. 입력 및 출력이 모두 최신 상태인 경우 대상을 건너뜁니다. 대상 내의 작업이 일괄 처리를 사용하는 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 항목의 각 일괄 처리에 대한 입력 및 출력이 최신 상태인지를 확인해야 합니다. 그렇지 않으면 대상이 적중될 때마다 실행됩니다.  
@@ -85,7 +85,7 @@ ms.locfileid: "63439370"
 </Project>  
 ```  
   
- 대상 일괄 처리의 또 다른 예제는 [대상 일괄 처리의 항목 메타데이터](../msbuild/item-metadata-in-target-batching.md)를 참조하세요.  
+ 대상 일괄 처리의 또 다른 예는 [대상 일괄 처리의 항목 메타 데이터](../msbuild/item-metadata-in-target-batching.md)를 참조 하세요.  
   
 ## <a name="property-functions-using-metadata"></a>메타데이터를 사용하는 속성 함수  
  메타데이터를 포함하는 속성 함수에서 일괄 처리를 제어할 수 있습니다. 예를 들면 다음과 같습니다.  
@@ -100,10 +100,10 @@ ms.locfileid: "63439370"
   
  사용할 수 없습니다.  
   
- 속성 함수에 대한 자세한 내용은 [속성 함수](../msbuild/property-functions.md)를 참조하세요.  
+ 속성 함수에 대 한 자세한 내용은 [속성 함수](../msbuild/property-functions.md)를 참조 하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [ItemMetadata 요소(MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
+ [ItemMetadata 요소 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [고급 개념](../msbuild/msbuild-advanced-concepts.md)

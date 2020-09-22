@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49e78c062ba92bf93edfce9aa7dac215a96faeb1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64807259"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90841806"
 ---
-# <a name="idiasymbolgethasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
+# <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-관리 코드 모듈에 포함 되는지 여부를 나타내는 플래그를 검색 합니다.  
+모듈에 관리 되는 코드가 포함 되어 있는지 여부를 나타내는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT get_hasManagedCode(
   
 #### <a name="parameters"></a>매개 변수  
  `pFlag`  
- [out] 반환 `TRUE` 모듈을 관리 되는 코드를 포함 하는 경우 반환이 고, 그렇지 `FALSE`, 코드는 비관리 코드.  
+ 제한이 `TRUE` 모듈에 관리 되는 코드가 포함 되어 있으면를 반환 하 고, 그렇지 않으면를 반환 합니다 `FALSE` . 코드는 비관리 코드입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 속성은에서 사용할 수는 `SymTagCompilandDetails` 기호 형식 (참조 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
+ 이 속성은 기호 형식에서 사용할 수 있습니다 `SymTagCompilandDetails` ( [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)참조).  
   
 ## <a name="requirements"></a>요구 사항  
   

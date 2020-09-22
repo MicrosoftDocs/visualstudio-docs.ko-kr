@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c3aa55bfc521521e28686ebb248053350ae14a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438911"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842074"
 ---
 # <a name="modules-view---sampling-data"></a>모듈 뷰 - 샘플링 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "63438911"
   
  샘플을 수집할 때 함수가 실행 중이었다면, 즉 함수가 호출 스택 맨 위에 있었다면 실행 중이었던 소스 줄 및 명령 주소가 함수 노드 아래에 나열됩니다. 소스 줄이나 명령을 실행할 때는 해당 줄 또는 명령 포인터에 대한 데이터가 수집되므로, 줄 데이터 및 명령 데이터에 대한 포괄 값과 전용 값은 항상 동일합니다.  
   
-|열|설명|  
+|열|Description|  
 |------------|-----------------|  
 |**이름**|모듈, 함수, 줄 번호 또는 명령 포인터 주소의 이름입니다.|  
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|  
 |**프로세스 이름**|프로세스의 이름입니다.|  
 |**모듈 이름**|함수, 줄 또는 명령 포인터가 포함된 모듈의 이름입니다.|  
 |**모듈 경로**|모듈, 함수, 줄 또는 명령 포인터가 포함된 모듈의 경로입니다.|  
-|**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
+|**원본 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
 |**함수 줄 번호**|소스 파일에서 이 함수가 시작되는 줄 번호입니다.|  
 |**포괄 샘플**|-   함수의 경우 이  함수나 이 함수가 호출한 함수가 실행되었던 샘플의 수(이 함수가 포함된 호출 스택 샘플의 수)입니다.<br />-   모듈의 경우 모듈의 함수가 하나 이상 실행되었던 샘플의 수입니다.<br />-   줄이나 명령의 경우 이 줄이나 명령이 실행되었던 샘플의 수입니다.|  
 |**포괄 샘플 비율(%)**|-   함수나 모듈의 경우 프로파일링 실행의 모든 샘플 중 이 함수나 모듈의 포괄 샘플이었던 샘플의 백분율입니다.<br />-   줄이나 명령의 경우 프로파일링 실행의 모든 샘플 중 이 줄이나 명령이 실행되었던 샘플의 백분율입니다.|  
@@ -44,6 +44,6 @@ ms.locfileid: "63438911"
 |**전용 샘플 비율(%)**|-   함수나 모듈의 경우 프로파일링 실행의 모든 샘플 중 이 함수나 모듈의 전용 샘플이었던 샘플의 백분율입니다.<br />-   줄이나 명령의 경우 프로파일링 실행의 모든 샘플 중 이 줄이나 명령이 실행되었던 샘플의 백분율입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [모듈 뷰 - 샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [모듈 뷰-샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [모듈 뷰-계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [모듈 뷰](../profiling/modules-view-instrumentation-data.md)

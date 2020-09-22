@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스 필수 항목 | Microsoft Docs
+title: 레거시 언어 서비스 Essentials | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,37 +14,37 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3926ff84f3b2e6415df1ca7333409c05d839685
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436259"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841363"
 ---
 # <a name="legacy-language-service-essentials"></a>레거시 언어 서비스 필수 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 프로그래밍 언어를 통합 하도록 언어 서비스를 제공 해야 합니다. 이 항목에서는 레거시 언어 서비스에서 제공 되는 기능을 설명 합니다.  
+프로그래밍 언어를 Visual Studio에 통합 하려면 언어 서비스를 제공 해야 합니다. 이 항목에서는 레거시 언어 서비스에서 사용할 수 있는 기능에 대해 설명 합니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 언어 서비스를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 언어 서비스를 구현 하는 새로운 방법에 대해 자세히 알아보려면 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)을 참조 하세요.  
   
 > [!NOTE]
-> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
- 레거시 언어 서비스는 다음과 같은 기능을 제공합니다.  
+ 레거시 언어 서비스는 다음과 같은 기능을 제공 합니다.  
   
-|기능|설명|  
+|기능|Description|  
 |-------------|-----------------|  
-|구문 색 지정|편집기 뷰를 서로 다른 색 및 언어의 다양 한 요소에 대 한 글꼴 스타일을 표시 하면 됩니다. 이 차별화를 읽고 파일을 편집할 쉽게 수 있습니다.<br /><br /> 일반적인 정보를 참조 하세요 [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)합니다.<br /><br /> MPF ()에서 관리 되는 패키지 프레임 워크에서이 기능에 대 한 정보를 참조 하세요 [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)합니다.|  
-|문 완성 |문 또는 사용자 입력을 시작 되었음을 나타내는 키워드를 완료 합니다. 문 완성에는 사용자가 입력 하 고 더 적은 오류 가능성을 사용 하 여 어려운 문을 더 쉽게 입력할 수 있습니다.<br /><br /> 일반적인 정보를 참조 하세요 [레거시 언어 서비스에서 문 완성](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)합니다.<br /><br /> MPF에서이 기능에 대 한 정보를 참조 하세요 [레거시 언어 서비스의 단어 완성](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)합니다.|  
-|중괄호 일치|중괄호 등 쌍을 이루는 문자를 강조 표시 합니다. 때 사용자가 닫는 문자 같은 "}", 중괄호 일치 강조 표시와 같은 문자를 열고 해당 "{0}". 문자를 포함 하는 여러 수준의 경우이 기능은 사용자는 바깥쪽 문자 쌍이 올바른지 확인 합니다.<br /><br /> MPF에서이 기능에 대 한 정보를 참조 하세요 [레거시 언어 서비스의 중괄호 일치](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)합니다.|  
-|매개 변수 정보 도구 설명|사용자가 현재 입력 하는 오버 로드 된 메서드에 대 한 가능한 서명의 목록을 표시 합니다.<br /><br /> 일반적인 정보를 참조 하세요 [레거시 언어 서비스의 매개 변수 정보](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)합니다.<br /><br /> MPF에서이 기능에 대 한 정보를 참조 하세요 [레거시 언어 서비스의 매개 변수 정보](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)합니다.|  
-|오류 표식|빨강 물결선 밑줄, 라고도 물결 구문이 잘못 된 텍스트 아래에 표시 됩니다. 일반적으로 오류 표식 사용자 맞춤법 오류가 있는 키워드 "," 닫히지 않은 괄호가 "," 잘못 된 문자를 "및"와 유사한 오류를 인식 하도록 하는 데 사용 됩니다.<br /><br /> MPF 클래스, 오류 표식에서 자동으로 처리 됩니다 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 클래스입니다.|  
+|구문 색 지정|편집기 보기에서 언어의 여러 요소에 대해 서로 다른 색과 글꼴 스타일을 표시 하도록 합니다. 이러한 구분을 통해 파일을 보다 쉽게 읽고 편집할 수 있습니다.<br /><br /> 일반 정보 [는 레거시 언어 서비스의 구문 색](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)지정을 참조 하세요.<br /><br /> MPF (managed package framework)의이 기능에 대 한 자세한 내용은 [레거시 언어 서비스의 구문 색 색상화](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)를 참조 하세요.|  
+|문 완성|사용자가 입력을 시작한 문이나 키워드를 완료 합니다. 문 완성 기능을 사용 하면 입력이 줄어들고 오류가 발생할 가능성이 더 적기 때문에 어려운 문을 더 쉽게 입력할 수 있습니다.<br /><br /> 일반 정보는 [레거시 언어 서비스의 문 완성](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)을 참조 하세요.<br /><br /> MPF에서이 기능에 대 한 자세한 내용은 [레거시 언어 서비스의 단어 완성](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)을 참조 하세요.|  
+|중괄호 일치|괄호와 같이 쌍을 이루는 문자를 강조 표시 합니다. 사용자가 "}"와 같은 닫는 문자를 입력 하면 중괄호 일치는 "{"와 같이 해당 하는 여는 문자를 강조 표시 합니다. 여러 수준을 포함 하는 문자를 사용 하는 경우이 기능을 통해 사용자는 바깥쪽 문자가 올바르게 쌍으로 연결 되어 있는지 확인할 수 있습니다.<br /><br /> MPF의이 기능에 대 한 자세한 내용은 [레거시 언어 서비스의 중괄호 일치](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)를 참조 하세요.|  
+|매개 변수 정보 도구 설명|사용자가 현재 입력 하 고 있는 오버 로드 된 메서드의 가능한 서명 목록을 표시 합니다.<br /><br /> 일반 정보 [는 레거시 언어 서비스의 매개 변수 정보](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)를 참조 하세요.<br /><br /> MPF에서이 기능에 대 한 자세한 내용은 [레거시 언어 서비스의 매개 변수 정보](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)를 참조 하세요.|  
+|오류 표식|구문적으로 부정확 한 텍스트에서 물결 모양의 빨간색 밑줄을 표시 합니다. 오류 표식은 일반적으로 사용자가 철자가 잘못 된 키워드, 닫히지 않은 괄호, 잘못 된 문자 및 유사한 오류를 인식 하도록 하는 데 사용 됩니다.<br /><br /> MPF 클래스에서 오류 마커는 클래스의 메서드에서 자동으로 처리 됩니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink> .|  
   
- 소스 코드를 구문 분석할 수 있도록 언어 서비스를 해야 하는 기능이 많습니다. 자주 다시 사용할 수 있습니다는 토큰화 및 코드 컴파일러 또는 인터프리터를 구문 분석 합니다.  
+ 이러한 기능 중 상당수는 소스 코드를 구문 분석 하기 위해 언어 서비스가 필요 합니다. 종종 컴파일러나 인터프리터에 대 한 토큰화 및 구문 분석 코드를 다시 사용할 수 있습니다.  
   
- 다음 기능은 프로그래밍 언어에 대 한 지원 관련 되어 있지만 언어 서비스의 일부가 아닌:  
+ 다음 기능은 프로그래밍 언어에 대 한 지원과 관련이 있지만 언어 서비스의 일부가 아닙니다.  
   
-|기능|설명|  
+|기능|Description|  
 |-------------|-----------------|  
-|식 계산기|지원 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 에 표시할 중단점 유효성을 검사 하 고 식의 목록을 제공 하 여 디버거를 **자동** 디버그 창입니다.<br /><br /> 자세한 내용은 [디버깅에 대 한 언어 서비스 지원](../../extensibility/internals/language-service-support-for-debugging.md)합니다.|  
-|기호 검색 도구|지원 **개체 브라우저**를 **클래스 뷰**합니다 **호출 브라우저**, 및 **기호 찾기 결과**합니다.|
+|식 계산기|는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 중단점의 유효성을 검사 하 고 **자동** 디버그 창에 표시할 식의 목록을 제공 하 여 디버거를 지원 합니다.<br /><br /> 자세한 내용은 [디버깅을 위한 언어 서비스 지원](../../extensibility/internals/language-service-support-for-debugging.md)을 참조 하세요.|  
+|기호 검색 도구|**개체 브라우저**, **클래스 뷰**, **호출 브라우저**를 지원 하 고 **기호 결과를 찾습니다**.|

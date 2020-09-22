@@ -12,20 +12,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441541"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841583"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>프로젝트 항목의 속성 유지
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-프로젝트 항목, 소스 파일의 작성자와 같은 추가 속성을 유지 하려는 경우. 프로젝트 파일에서 속성을 저장 하 여이 수행할 수 있습니다.  
+프로젝트 항목에 추가 하는 속성 (예: 소스 파일의 작성자)을 유지 하려고 할 수 있습니다. 프로젝트 파일에 속성을 저장 하 여이 작업을 수행할 수 있습니다.  
   
- 프로젝트의 계층 구조를 가져올 프로젝트 파일에서 속성을 유지 하는 첫 번째 단계는는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 인터페이스입니다. Automation을 사용 하거나 사용 하 여이 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>합니다. 인터페이스를 가져온 후에 현재 선택한 프로젝트 항목을 확인 하려면 사용할 수 있습니다. 프로젝트 항목 ID를 만든 후 사용할 수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 속성을 추가 합니다.  
+ 프로젝트 파일에서 속성을 유지 하는 첫 번째 단계는 프로젝트의 계층 구조를 인터페이스로 가져오는 것입니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . 자동화를 사용 하거나를 사용 하 여이 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . 인터페이스를 가져온 후에는이 인터페이스를 사용 하 여 현재 선택 된 프로젝트 항목을 확인할 수 있습니다. 프로젝트 항목 ID가 있으면를 사용 하 여 속성을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 추가할 수 있습니다.  
   
- 다음 절차에서는 VsPkg.cs 속성을 유지 하 `Author` 값을 사용 하 여 `Tom` 프로젝트 파일에 있습니다.  
+ 다음 절차에서는 `Author` 프로젝트 파일의 값을 사용 하 여 VsPkg.cs 속성을 유지 합니다 `Tom` .  
   
 ### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE 개체를 사용 하 여 프로젝트 계층 구조를 가져오려면  
   
@@ -58,7 +58,7 @@ ms.locfileid: "63441541"
     }  
     ```  
   
-### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection를 사용 하 여 프로젝트 계층 구조를 가져오려면  
+### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection을 사용 하 여 프로젝트 계층 구조를 가져오려면  
   
 1. VSPackage에 다음 코드를 추가 합니다.  
   
@@ -104,7 +104,7 @@ ms.locfileid: "63441541"
   
 2. 
   
-### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>프로젝트 계층 구조에 선택한 프로젝트 항목 속성을 유지 하려면  
+### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>프로젝트 계층 구조가 지정 된 경우 선택한 프로젝트 항목 속성을 유지 하려면  
   
 1. 이전 절차의 메서드에 지정 된 코드에 다음 코드를 추가 합니다.  
   
@@ -117,18 +117,18 @@ ms.locfileid: "63441541"
     }  
     ```  
   
-### <a name="to-verify-that-the-property-is-persisted"></a>속성은 유지 되도록 확인 하려면  
+### <a name="to-verify-that-the-property-is-persisted"></a>속성이 유지 되는지 확인 하려면  
   
-1. 시작 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 다음 열거나 솔루션을 만듭니다.  
+1. 를 시작 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 하 고 솔루션을 열거나 만듭니다.  
   
-2. 프로젝트 선택 항목에서 VsPkg.cs **솔루션 탐색기**합니다.  
+2. **솔루션 탐색기**에서 프로젝트 항목 VsPkg.cs를 선택 합니다.  
   
-3. 중단점을 사용 하거나의 VSPackage를 로드 하 고 SetItemAttribute 실행 되는지 확인 합니다.  
+3. 중단점을 사용 하거나, VSPackage가 로드 되 고 SetItemAttribute가 실행 되는지 확인 합니다.  
   
     > [!NOTE]
-    > UI 컨텍스트에서 VSPackage를 자동 로드 하면 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>합니다. 자세한 내용은 [Vspackage 로드](../extensibility/loading-vspackages.md)합니다.  
+    > UI 컨텍스트에서 VSPackage을 autoload 수 있습니다 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> . 자세한 내용은 [Vspackage 로드](../extensibility/loading-vspackages.md)를 참조 하세요.  
   
-4. 닫기 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 파일을 메모장에서 엽니다. 표시는 \<작성자 > Tom 값을 사용 하 여 태그를 다음과 같이 합니다.  
+4. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]메모장에서 프로젝트 파일을 닫았다가 엽니다. 다음과 \<Author> 같이 Tom 값을 가진 태그가 표시 됩니다.  
   
     ```  
     <Compile Include="VsPkg.cs">  

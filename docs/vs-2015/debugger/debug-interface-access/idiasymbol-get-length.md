@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_length | Microsoft Docs'
+title: 'IDiaSymbol:: get_length | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f8c757d3da3049c29f7da13b13985dc2c50b4b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837660"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843372"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 기호를 나타내는 개체에 사용 중인 메모리의 바이트 또는 비트 수를 검색 합니다.  
+이 기호가 나타내는 개체에 사용 되는 메모리의 비트 수 또는 바이트 수를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT get_length ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 바이트 수 또는이 기호를 나타내는 개체에 의해 사용 된 메모리의 비트를 반환 합니다.  
+ 제한이 이 기호가 나타내는 개체에서 사용 하는 메모리의 바이트 또는 비트 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 경우는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 기호의 `LocIsBitField`,이 메서드에서 반환 된 길이 비트에서는 다른 모든 위치 형식에 대 한 바이트에서 길이가 고, 그렇지 합니다.  
+ 기호의 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 이 이면 `LocIsBitField` 이 메서드에서 반환 되는 길이는 비트 단위이 고, 그렇지 않으면 다른 모든 위치 형식의 길이는 바이트 단위입니다.  
   
 ## <a name="example"></a>예제  
   

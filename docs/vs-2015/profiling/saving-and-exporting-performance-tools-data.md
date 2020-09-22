@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428101"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841579"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>성능 도구 데이터 저장 및 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 성능 데이터 파일을 저장하고 내보내는 방법을 설명합니다.  
   
-## <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> 방법: 성능 데이터 파일을 분석 보고서 파일로 저장  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a><a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> 방법: 성능 데이터 파일을 분석 보고서 파일로 저장  
  프로파일링 데이터(.vsp) 파일의 필터링되거나 필터링되지 않은 뷰를 분석 보고서(.vsps) 파일로 저장할 수 있습니다. 분석 보고서 파일은 보고서 뷰 창에서 볼 수 있으며 .vsp 원본 파일보다 훨씬 작습니다. 하지만 .vsps 파일의 데이터에 필터를 적용할 수 없습니다. IDE(통합 개발 환경)에서 파일을 열지 않고 성능 탐색기에서 분석 보고서를 만들거나 .vsp 파일을 열어서 필터링한 다음 결과를 저장할 수 있습니다.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>성능 탐색기에서 분석 성능 보고서를 저장하려면  
@@ -38,7 +38,7 @@ ms.locfileid: "63428101"
   
 1. 보고서 뷰 창에서 프로파일링 데이터(.vsp) 파일을 엽니다.  
   
-2. (선택적) 데이터에 필터를 적용합니다. 자세한 내용은 [성능 보고서 뷰 필터](../profiling/performance-report-view-filter.md)를 참조하세요.  
+2. (선택적) 데이터에 필터를 적용합니다. 자세한 내용은 [성능 보고서 뷰 필터](../profiling/performance-report-view-filter.md)를 참조 하세요.  
   
 3. 보고서 뷰 창 도구 모음에서 **분석 결과 저장** 을 클릭합니다.  
   
@@ -64,17 +64,17 @@ ms.locfileid: "63428101"
   
 4. **내보낸 보고서 위치**에서 디렉터리를 지정합니다.  
   
-5. **내보낸 보고서 형식**에서 (쉼표로 분리)(*.csv) 또는 XML 데이터(\*.xml)를 선택합니다.  
+5. **내보낸 보고서 형식**에서 (쉼표로 구분) (* .csv) 또는 xml 데이터 (.xml)를 선택 \* 합니다.  
   
 6. **내보내기**를 클릭합니다.  
   
-     각 보고서 뷰는 이름이 \<접두사>_\<보고서 뷰 이름>.\<csv&#124;xml>인 개별 파일에 저장됩니다.  
+     각 보고서 뷰는 \<prefix>_\<report view name>이라는 별도의 파일에 저장됩니다.\<csv&#124;xml>  
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>보고서 뷰 창에서 성능 보고서를 내보내려면  
   
 1. 보고서 뷰 창에서 .vsp 파일을 엽니다.  
   
-2. (선택적) 데이터에 필터를 적용합니다. 자세한 내용은 [성능 보고서 뷰 필터](../profiling/performance-report-view-filter.md)를 참조하세요.  
+2. (선택적) 데이터에 필터를 적용합니다. 자세한 내용은 [성능 보고서 뷰 필터](../profiling/performance-report-view-filter.md)를 참조 하세요.  
   
 3. 보고서 뷰 창 도구 모음에서 **보고서 내보내기** 를 클릭합니다.  
   
@@ -84,11 +84,11 @@ ms.locfileid: "63428101"
   
 6. **내보낸 보고서 위치**에서 디렉터리를 지정합니다.  
   
-7. **내보낸 보고서 형식**에서 (쉼표로 분리)(*.csv) 또는 XML 데이터(\*.xml)를 선택합니다.  
+7. **내보낸 보고서 형식**에서 (쉼표로 구분) (* .csv) 또는 xml 데이터 (.xml)를 선택 \* 합니다.  
   
 8. **내보내기**를 클릭합니다.  
   
-     각 보고서 뷰는 이름이 \<접두사>_\<보고서 뷰 이름>.\<csv&#124;xml>인 개별 파일에 저장됩니다.  
+     각 보고서 뷰는 \<prefix>_\<report view name>이라는 별도의 파일에 저장됩니다.\<csv&#124;xml>  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 탐색기](../profiling/performance-explorer.md)   

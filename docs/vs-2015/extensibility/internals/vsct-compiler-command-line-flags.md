@@ -12,25 +12,25 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440825"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842034"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 컴파일러 명령줄 플래그
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio 명령 테이블 (VSCT) 컴파일러.vsct 파일의 컴파일이 성공 하도록 명령줄 스위치를 제공 합니다.  
+Visual Studio 명령 테이블 (VSCT) 컴파일러는. vsct 파일을 성공적으로 컴파일하기 위해 명령줄 스위치를 제공 합니다.  
   
 ## <a name="command-line-parameters"></a>명령줄 매개 변수  
- 기본 VSCT 도움말을 보려면를 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **명령** 창으로 이동 합니다 *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Tools\Bin\ 폴더 및 형식:  
+ 명령 창에서 기본 VSCT 도움말을 보려면 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Command** *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Tools\Bin\ 폴더로 이동 하 여 다음을 입력 합니다.  
   
 ```  
 vsct /?  
 ```  
   
- 여기서 반환합니다.  
+ 반환 결과:  
   
 ```  
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000  
@@ -52,31 +52,31 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
-> 문자-(dash) 및 / (슬래시)은 모두 허용 된 표기법 명령줄 매개 변수를 나타냅니다.  
+> 문자 (대시) 및/(슬래시)는 모두 명령줄 매개 변수를 나타내는 데 사용할 수 있는 표기법입니다.  
   
- 허용 가능한 플래그 및 그 의미는 다음과 같습니다.  
+ 허용 되는 플래그 및 의미는 다음과 같습니다.  
   
-|전환|설명|  
+|스위치|Description|  
 |------------|-----------------|  
-|-D|모든 추가 정의 된 기호를 지정 합니다.|  
-|-I|추가 포함 파일 참조를 확인할 때 사용 해야 하는 경로 나타냅니다.|  
-|-L|지정 된 <xref:System.Globalization.CultureInfo> 예를 들어 "EN-US" 문화권 이름입니다.|  
-|-E|내보내기 C# 뒤에 명령 항목에 대 한 지정된 된 네임 스페이스에서 개체 [C&#124;H&#124;N]:*filename*여기서 C = C#, H = C++ 헤더, N 네임 스페이스 =. 네임 스페이스는 C#에 대 한 필요 합니다.|  
+|-d|정의 된 추가 기호를 지정 합니다.|  
+|-I|파일 참조를 확인할 때 사용 해야 하는 추가 포함 경로를 표시 합니다.|  
+|-l|<xref:System.Globalization.CultureInfo>문화권 이름을 지정 합니다 (예: "en-us").|  
+|-E|명령 항목에 대해 지정 된 네임 스페이스에 c # 개체를 내보내고, 그 다음에는 [C&#124;H&#124;N]:*filename*(c = c #, h = c + + 헤더, n = namespace)이 옵니다. 네임 스페이스는 c #에 필요 합니다.|  
 |-v|자세한 정보를 출력 합니다.|  
   
- -L 스위치에 해당 하는 이진.cto 파일을 생성 하는 문자열의 그룹을 선택 하려면 컴파일러에 지시 합니다 지정 <xref:System.Globalization.CultureInfo> 문화권 이름입니다. 지정 된 문화권 이름에는 하나 이상의 언어 특성과 일치 해야 [Strings 요소](../../extensibility/strings-element.md) .vsct 파일에서 합니다. 포함 하는에서 상속 된 문자열 요소를 언어 특성이 없는 경우 [CommandTable 요소](../../extensibility/commandtable-element.md)합니다.  
+ -L 스위치는 지정 된 문화권 이름에 해당 하는 이진 파일을 생성 하는 문자열 그룹을 선택 하도록 컴파일러에 지시 합니다 <xref:System.Globalization.CultureInfo> . 지정 된 문화권 이름은. vsct 파일에 있는 하나 이상의 [Strings 요소의](../../extensibility/strings-element.md) Language 특성과 일치 해야 합니다. Strings 요소에 언어 특성이 없으면 포함 하는 [Commandtable 요소](../../extensibility/commandtable-element.md)에서 상속 됩니다.  
   
- .Vsct 파일을 여러 문자열 요소가 있을 수 있습니다 하 고 각각 다른 언어 특성을 갖고 있습니다. 세계화는 VSCT 컴파일러인을 여러 번 실행 하 고 각 문화권 이름에 대해-L 스위치를 변경 하 여 이루어집니다.  
+ . Vsct 파일에는 여러 개의 문자열 요소가 있을 수 있으며 각 요소에는 다른 언어 특성이 있을 수 있습니다. 세계화는 VSCT 컴파일러를 여러 번 실행 하 고 각 문화권 이름에 대 한-L 스위치를 변경 하 여 구현 됩니다.  
   
- -L 스위치에서 지정 된 문화권 이름 문자열 요소의 언어 특성 일치 하지 않는 경우 컴파일러는 해당 언어 및 지역이 아닌 일치 하려고 합니다. 예를 들어 "EN-US"를 찾을 수 없는 경우 컴파일러는 대신 "en"입니다. 실패 하는 운영 체제의 현재 문화권을 찾으려고 합니다. 실패 하는 첫 번째 문자열 요소를 찾으면 컴파일됩니다.  
+ -L 스위치로 지정 된 문화권 이름이 Strings 요소의 Language 특성과 일치 하지 않는 경우 컴파일러는 지역이 아니라 언어를 찾으려고 시도 합니다. 예를 들어 "en-us"를 찾을 수 없는 경우 컴파일러는 대신 "en"을 시도 합니다. 실패 하면 운영 체제의 현재 문화권을 시도 합니다. 실패 하면 찾은 첫 번째 문자열 요소를 컴파일합니다.  
   
- 명령 테이블에서 사용 되는 기호를 포함 하는 C 스타일 헤더 파일 또는 명령 기호에 대 한 개체를 포함 하는 C# 파일을 내보내지-E 스위치를 사용할 수 있습니다.  
+ -E 스위치를 사용 하 여 명령 테이블에 사용 되는 기호를 포함 하는 C 스타일 헤더 파일을 내보내거나 명령 기호에 대 한 개체를 포함 하는 c # 파일을 내보낼 수 있습니다.  
   
- -D 및-I 스위치 동일한 이름을 가진 Cl.exe C 전처리기 플래그 구문을 사용 해야 합니다. – D XML 기반 확장에 대 한 X = Y 형식이 정의 되 \<정의 > 테스트 `Condition` 특성입니다. 경로 포함 하려는 해결 하는 데 사용 됩니다 \<Include >, \<Extern > 및 \<비트맵 > 파일에서 참조 합니다. 자세한 내용은 참조는 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)합니다.  
+ -D 및 – I 스위치에는 이름이 같은 Cl.exe C 전처리기 플래그의 구문이 있습니다. X = Y 형식의 정의는 XML 기반 테스트를 특성으로 확장 하는 데 사용 됩니다 \<Defined> `Condition` . – I를 확인 하는 데 사용 되는 경로 \<Include> \<Extern> 와 \<Bitmap> 파일 참조를 포함 합니다. 자세한 내용은 [Vsct XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)를 참조 하세요.  
   
- VSCT 컴파일러인 이전에 빌드한 이진 파일로 디컴파일할 수도 수 있습니다. 이 작업을 수행 하려면에 대 한 이진 파일을 제공 합니다 \<infile >.   이진 파일을 VSCT 컴파일러에서 생성 된 경우 해당 기호를 이미 포함 해야 하 고는 기호화 된 이름 사용 하 여 출력을 생성 한 \<기호 > 출력 섹션입니다. 이진 CTC 컴파일러에서 생성 된 경우 실제 Guid 및 Id를 출력에 포함 됩니다. *.Ctsym 파일 Ctc.exe의 현재 버전에서 생성 되는 이진 입력 파일과 동일한 폴더에 있으면 기호를 해당 파일에서 로드 하 고 출력에 사용 됩니다.  
+ VSCT 컴파일러는 이전에 빌드한 이진 파일을 디컴파일 할 수도 있습니다. 이 작업을 수행 하려면에 대 한 이진 파일을 제공 \<infile> 합니다.   VSCT 컴파일러에서 이진 파일을 생성 한 경우 해당 기호는 이미 포함 되어 있고 출력의 한 섹션에 기호화 된 이름으로 출력을 생성 합니다 \<Symbols> . CTC 컴파일러에서 이진 파일을 생성 한 경우 출력에는 실제 Guid 및 Id가 포함 됩니다. Ctc.exe의 현재 버전에 의해 생성 된 *. .ctsym 파일이 이진 입력 파일과 같은 폴더에 있는 경우 해당 파일에서 기호가 로드 되 고 출력에 사용 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Visual Studio 명령 테이블 (합니다. Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Visual Studio 명령 테이블 (. Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)   
  [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

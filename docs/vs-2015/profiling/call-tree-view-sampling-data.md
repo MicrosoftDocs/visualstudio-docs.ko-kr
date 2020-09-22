@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 720f37afbeea3c7440ad2ced9649039d671b1f1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383404"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841782"
 ---
 # <a name="call-tree-view---sampling-data"></a>호출 트리 뷰 - 샘플링 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-호출 트리 뷰는 프로파일링된 애플리케이션에서 트래버스된 함수 실행 경로를 표시합니다.  
+호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다.  
   
 > [!NOTE]
 > Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. Windows 스토어 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
@@ -39,7 +39,7 @@ ms.locfileid: "63383404"
   
  루트 노드를 설정하면 선택한 노드의 하위 트리를 제외한 다른 모든 항목이 뷰에서 제거됩니다. 루트 노드를 원래 노드로 다시 설정하려면 호출 트리 뷰 창에서 마우스 오른쪽 단추로 클릭하고 **루트 다시 설정**을 선택합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|  
 |**프로세스 이름**|프로세스의 이름입니다.|  
@@ -57,7 +57,7 @@ ms.locfileid: "63383404"
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
- [호출 트리 뷰 - 프로파일러 샘플링 데이터](../profiling/call-tree-view-sampling-data.md)   
- [호출 트리 뷰 - 샘플링](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [호출 트리 뷰 - 계측](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [호출 트리 뷰-프로파일러 샘플링 데이터](../profiling/call-tree-view-sampling-data.md)   
+ [호출 트리 뷰-샘플링](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [호출 트리 뷰-계측](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [호출 트리 뷰](../profiling/call-tree-view-instrumentation-data.md)

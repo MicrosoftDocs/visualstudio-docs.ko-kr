@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82a15703fdb1738d92b6b7bbeda053625bb5fdda
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806675"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841787"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-.Pdb 파일의 보존 기간 값을 검색합니다.  
+.Pdb 파일의 age 값을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,20 +35,20 @@ HRESULT get_age ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] .Pdb 파일의 보존 기간 값을 반환합니다.  
+ 제한이 .Pdb 파일의 age 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 모든 알려진된 시간 값; 기간 반드시 일치 하지 않습니다. 일반적으로.pdb 파일의 해당.exe 파일을 사용 하 여 동기화 된 경우를 결정 하는 것이 됩니다.  
+ 사용 기간이 반드시 알려진 시간 값에 해당 하는 것은 아닙니다. 일반적으로 .pdb 파일이 해당 .exe 파일과 동기화 되지 않은 상태 인지 확인 하는 데 사용 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
-|요구 사항|설명|  
+|요구 사항|Description|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
 |버전:|DIA SDK v7.0|  

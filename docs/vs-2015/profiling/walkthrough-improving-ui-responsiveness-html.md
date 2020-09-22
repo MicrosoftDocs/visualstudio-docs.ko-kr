@@ -1,5 +1,5 @@
 ---
-title: '연습: UI 응답성 개선 (HTML) | Microsoft Docs'
+title: '연습: UI 응답성 개선(HTML) | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,20 +20,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433168"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841551"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>연습: UI 응답성 개선 (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>연습: UI 응답성 개선(HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 [HTML UI 응답성 프로파일러](../profiling/html-ui-responsiveness.md)를 사용하여 간단한 성능 문제를 식별하고 해결하는 과정을 안내합니다. 프로파일러는 JavaScript를 사용하는 Windows 유니버설 및 Windows 스토어 앱용 Visual Studio에서 사용 가능합니다. 이 시나리오에서는 DOM 요소를 너무 자주 업데이트하는 성능 테스트 앱을 만들고 프로파일러를 사용하여 이 문제를 식별 및 수정합니다.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>성능 테스트 앱 만들기 및 실행  
   
-1. Visual Studio에서 새 Windows 유니버설 JavaScript 프로젝트를 만듭니다. 이렇게 하려면 **파일/새로 만들기/프로젝트**를 선택합니다. 왼쪽 창에서 **JavaScript**를 선택한 다음 **Windows**, **Windows 10**을 선택하고 **유니버설** 또는 **Windows Phone**을 선택합니다.  
+1. Visual Studio에서 새 Windows 유니버설 JavaScript 프로젝트를 만듭니다. ( **파일/새로 만들기/프로젝트**를 선택 합니다. 왼쪽 창에서 **JavaScript**를 선택한 다음 **Windows**, **Windows 10**을 선택하고 **유니버설** 또는 **Windows Phone**을 선택합니다.  
   
 2. > [!IMPORTANT]
     > 이 항목에 나와 있는 진단 결과가 Windows 8 앱에 대해 표시됩니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "63433168"
   
 4. **이름** 상자에 `JS_Perf_Tester`와 같은 이름을 지정한 다음 **확인**을 선택합니다.  
   
-5. **솔루션 탐색기**에서 default.html을 열고 \<body> 태그 사이에 다음 코드를 붙여 넣습니다.  
+5. **솔루션 탐색기**에서 default.html을 열고 태그 사이에 다음 코드를 붙여 넣습니다 \<body> .  
   
     ```html  
     <div class="wrapper">  
@@ -194,7 +194,7 @@ ms.locfileid: "63433168"
   
     아래쪽 창의 시간 표시 막대 정보에 선택한 기간에 대한 세부 정보의 예제가 표시됩니다.  
   
-    ![시간 표시 막대 세부 정보](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![타임 라인 세부 정보](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
     시간 표시 막대 정보의 이벤트에서 CPU 사용률 그래프의 시각적 추세를 확인합니다. 짧은 기간 동안 많은 이벤트가 발생합니다. 시간 표시 막대 정보 뷰에 `Timer`, `Layout` 및 `Paint` 이벤트가 표시됩니다.  
   
@@ -202,7 +202,7 @@ ms.locfileid: "63433168"
   
      ![타이머 이벤트](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     데이터를 통해 다양한 정보를 수집할 수 있습니다. 예를 들어:  
+     데이터를 통해 다양한 정보를 수집할 수 있습니다. 예를 들면 다음과 같습니다.  
   
     - 스크립팅 이벤트로 식별하기 위해 색으로 구분된 각 `Timer` 이벤트에는 `document.createElement`에 대한 호출과 스타일 계산 및 `style.backgroundColor`와 `appendChild()`에 대한 호출이 포함됩니다.  
   
@@ -243,4 +243,4 @@ ms.locfileid: "63433168"
 2. HTML UI 응답성 프로파일러를 다시 실행하고 CPU 사용률 그래프를 확인합니다. 과도한 이벤트가 사라지고 CPU 사용률이 0 가까이 떨어진 것을 알 수 있습니다. 수정된 것입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [HTML UI 응답성](../profiling/html-ui-responsiveness.md)
+ [HTML UI responsiveness](../profiling/html-ui-responsiveness.md)

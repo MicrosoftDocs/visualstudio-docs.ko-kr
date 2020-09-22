@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 566cb2e7222aacbf992dc1693d8ce1de102605a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434962"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841547"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값  
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.  
   
-|열거자|설명|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|매개 변수가 0보다 작거나 같습니다. 이러한 값은 예약되어 있습니다. 표시와 주석이 기록되지 않습니다.|  
 |MARK_ERROR_MODE_NEVER|이 함수가 호출될 때 프로파일링 모드가 NEVER로 설정되었습니다. 표시와 주석이 기록되지 않습니다.|  
@@ -47,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|문자열이 최대값인 256자를 초과합니다. 주석 문자열이 잘리고 표시와 주석이 기록됩니다.|  
 |MARK_OK|MARK_OK는 성공을 나타내기 위해 반환됩니다.|  
   
-## <a name="remarks"></a>주의  
+## <a name="remarks"></a>설명  
  MarkProfile 함수를 포함하는 스레드가 프로파일링되면 코드가 실행될 때마다 .vsp 파일에 표시 값이 삽입됩니다. MarkProfile을 여러 번 호출할 수 있습니다.  
   
  프로필 표시는 범위 내에서 전역입니다. 예를 들어 한 스레드에 삽입된 프로필 표시를 사용하여 .vsp 파일의 스레드에 있는 데이터 세그먼트의 시작이나 끝을 표시할 수 있습니다.  
@@ -101,4 +101,4 @@ void ExerciseMarkProfile()
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio 프로파일러 API 참조 (네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cce51860b335e16fe507b20e41a5adba0b3fa278
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418205"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841767"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>ClickOnce 배포 전략 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63418205"
   
  이 전략은 네트워크 연결에 의존하므로 LAN(Local Area Network)이나 고속 인터넷 연결에 액세스할 수 있는 사용자에게 배포할 애플리케이션에 가장 적합합니다.  
   
- 웹에서 애플리케이션을 배포할 경우 애플리케이션이 URL을 통해 활성화될 때 애플리케이션으로 인수를 전달할 수 있습니다. 자세한 내용은 [방법: 온라인 ClickOnce 애플리케이션에서 쿼리 문자열 정보 검색](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)을 참조하세요. 이 문서에 설명된 다른 방법을 사용하여 활성화되는 애플리케이션에는 인수를 전달할 수 없습니다.  
+ 웹에서 애플리케이션을 배포할 경우 애플리케이션이 URL을 통해 활성화될 때 애플리케이션으로 인수를 전달할 수 있습니다. 자세한 내용은 [방법: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)을 참조 하세요. 이 문서에 설명된 다른 방법을 사용하여 활성화되는 애플리케이션에는 인수를 전달할 수 없습니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 이 배포 전략을 사용하려면 게시 마법사의 **애플리케이션 설치 방법** 페이지에서 **웹에서** 또는 **UNC 경로 또는 파일 공유에서**를 클릭합니다.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63418205"
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 이 배포 전략을 사용하려면 게시 마법사의 **애플리케이션 설치 방법** 페이지에서 **From a CD-ROM 또는 DVD-ROM**을 클릭합니다.  
   
- 이 배포 전략을 수동으로 사용하려면 배포 매니페스트에서 **deploymentProvider** 태그를 변경합니다. (Visual Studio에서는 이 속성이 프로젝트 디자이너의 **게시** 페이지에 **설치 URL**로 노출됩니다. Mage.exe에서는 **시작 위치**.)  
+ 이 배포 전략을 수동으로 사용하려면 배포 매니페스트에서 **deploymentProvider** 태그를 변경합니다. (Visual Studio에서는 이 속성이 프로젝트 디자이너의 **게시** 페이지에 **설치 URL**로 노출됩니다. Mage.exe에서는 **시작 위치**입니다.)  
   
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>웹 또는 네트워크 공유에서 애플리케이션 시작  
  이 전략은 애플리케이션이 웹 애플리케이션처럼 작동하는 점을 제외하면 첫 번째 전략과 비슷합니다. 사용자가 웹 페이지에서 링크를 클릭하거나 파일 공유에서 아이콘을 두 번 클릭하면 애플리케이션이 시작됩니다. 사용자가 애플리케이션을 닫으면 로컬 컴퓨터에서는 애플리케이션을 사용할 수 없으며 **시작** 메뉴 및 **제어판**의 **프로그램 추가 또는 제거**에 아무 것도 추가되지 않습니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "63418205"
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 이 배포 전략을 사용하려면 게시 마법사의 **웹에서 설치 또는 실행** 페이지에서 **애플리케이션을 설치하지 않음**을 클릭합니다.  
   
- 이 배포 전략을 수동으로 사용하려면 배포 매니페스트에서 **설치** 태그를 변경합니다. (이 값은 **true** 또는 **false**일 수 있습니다. Mage.exe를 사용 하 여는 **온라인일 때만** 옵션을 **응용 프로그램 유형을** 목록입니다.)  
+ 이 배포 전략을 수동으로 사용하려면 배포 매니페스트에서 **설치** 태그를 변경합니다. (이 값은 **true** 또는 **false**일 수 있습니다. Mage.exe에서 **응용 프로그램 종류** 목록의 **온라인 전용** 옵션을 사용 합니다.  
   
 ## <a name="web-browser-support"></a>웹 브라우저 지원  
  .NET Framework 3.5를 대상으로 하는 애플리케이션을 브라우저로 설치할 수 있습니다.  
@@ -78,4 +78,4 @@ ms.locfileid: "63418205"
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)   
  [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)
+ [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 레거시 언어 서비스의 확장된 개요 표시 지원 제공 | Microsoft Docs'
+title: '방법: 레거시 언어 서비스에서 확장 된 개요 지원 제공 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,46 +13,46 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1b2fd8f3d7e4f3637957ef11c4acb20ba51261d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442671"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843353"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 확장 개요 표시 지원 제공
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-초과 지 원하는 언어에 대 한 개요 표시 지원 확장을 위한 두 가지는 **정의 부분만 보이기** 명령입니다. 편집기 제어 개요 영역을 추가 하 고 클라이언트 제어 개요 영역을 추가할 수 있습니다.  
+**정의로 축소** 명령을 지 원하는 것 이상으로 언어에 대 한 개요 지원을 확장 하는 두 가지 옵션이 있습니다. 편집기에서 제어 하는 개요 영역을 추가 하 고 클라이언트 제어 개요 영역을 추가할 수 있습니다.  
   
-## <a name="adding-editor-controlled-outline-regions"></a>추가 편집기 제어 개요 영역  
- 이 방법을 사용 하 여 개요 영역을 만들고 편집기에 지역 확장 되었는지 여부를 처리 될 수 있도록 축소 및 등입니다. 개요 표시 지원 제공 하기 위한 두 가지 옵션을이 옵션은 가장 약한. 이 옵션을 사용 하 여 텍스트의 지정 된 기간 동안 새 개요 영역을 만들 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>합니다. 이 영역을 만든 후 해당 동작은 편집기에서 제어 됩니다. 다음 절차를 사용 하 여 편집기 제어 개요 영역을 구현 합니다.  
+## <a name="adding-editor-controlled-outline-regions"></a>편집기에서 제어 하는 개요 영역 추가  
+ 이 방법을 사용 하 여 개요 영역을 만든 다음, 해당 지역이 확장, 축소 등 인지 여부를 편집기에서 처리할 수 있습니다. 개요 지원을 제공 하기 위한 두 가지 옵션 중에서이 옵션은 가장 강력 하지 않습니다. 이 옵션의 경우를 사용 하 여 지정 된 텍스트 범위에 새 개요 영역을 만듭니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> . 이 영역을 만든 후 해당 동작은 편집기에 의해 제어 됩니다. 편집기에서 제어 하는 개요 영역을 구현 하려면 다음 절차를 따르십시오.  
   
-#### <a name="to-implement-an-editor-controlled-outline-region"></a>편집기 제어 개요 영역을 구현 하려면  
+#### <a name="to-implement-an-editor-controlled-outline-region"></a>편집기에서 제어 하는 개요 영역을 구현 하려면  
   
-1. 호출 `QueryService` 에 대 한 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
+1. `QueryService`에 대 한 호출<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
   
-     에 대 한 포인터를 반환 하는이 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>합니다.  
+     이는에 대 한 포인터를 반환 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> 합니다.  
   
-2. 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>지정된 텍스트 버퍼에 대 한 포인터에 전달 합니다. 이에 대 한 포인터를 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 버퍼에 대 한 개체입니다.  
+2. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>을 호출 하 여 지정 된 텍스트 버퍼에 대 한 포인터를 전달 합니다. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>버퍼의 개체에 대 한 포인터를 반환 합니다.  
   
-3. 호출 <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> 대 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 에 대 한 포인터에 대 한 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>합니다.  
+3. 에 <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 대 한 포인터에 대해를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> 합니다.  
   
-4. 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> 을 추가 하거나 더 많은 새로운 시간에 영역을 간략하게 설명 합니다.  
+4. 를 호출 하 여 한 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> 번에 하나 이상의 새 개요 영역을 추가 합니다.  
   
-     이 메서드를 사용 하면 개요, 기존 개요 영역 제거 되었거나 유지 여부 및 여부 개요 영역 확장 또는 기본적으로 축소 된 텍스트의 범위를 지정할 수 있습니다.  
+     이 메서드를 사용 하 여 윤곽선으로 지정할 텍스트의 범위, 기존 개요 영역을 제거 하거나 유지할지 여부 및 개요 영역을 기본적으로 확장 하거나 축소할지 여부를 지정할 수 있습니다.  
   
 ## <a name="adding-client-controlled-outline-regions"></a>클라이언트 제어 개요 영역 추가  
- 사용 하 여가이 방법은 클라이언트 제어 (또는 스마트) 구현 개요 등에서 사용 하는 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 및 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 언어 서비스입니다. 자체 개요를 관리 하는 언어 서비스 잘못 된 면 이전 개요 영역을 삭제 하 고 필요에 따라 새 개요 영역을 만드는 데 텍스트 버퍼 콘텐츠를 모니터링 합니다.  
+ 이 방법을 사용 하 여 및 언어 서비스에서 사용 하는 것과 같은 클라이언트 제어 (또는 스마트) 개요를 구현할 수 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 있습니다. 자체 개요를 관리 하는 언어 서비스는 오래 된 개요 영역을 제거 하 고 필요에 따라 새 개요 영역을 만들기 위해 텍스트 버퍼 내용을 모니터링 합니다.  
   
 #### <a name="to-implement-a-client-controlled-outline-region"></a>클라이언트 제어 개요 영역을 구현 하려면  
   
-1. 호출 `QueryService` 에 대 한 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>합니다. 에 대 한 포인터를 반환 하는이 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>합니다.  
+1. `QueryService`에 대해를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 합니다. 이는에 대 한 포인터를 반환 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> 합니다.  
   
-2. 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>지정된 텍스트 버퍼에 대 한 포인터에 전달 합니다. 버퍼에 대 한 숨겨진된 텍스트 세션이 이미 있는지 여부를 결정 합니다.  
+2. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>을 호출 하 여 지정 된 텍스트 버퍼에 대 한 포인터를 전달 합니다. 이는 버퍼에 대 한 숨겨진 텍스트 세션이 이미 있는지 여부를 확인 합니다.  
   
-3. 텍스트 세션이 이미 있는 경우 1 및 기존에 대 한 포인터를 만들 필요가 없습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 개체가 반환 됩니다. 이 포인터를 사용 하 여 열거 하 고 개요 영역을 만듭니다. 그렇지 않으면 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> 버퍼에 대 한 숨겨진된 텍스트 세션을 만듭니다. 에 대 한 포인터를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 개체가 반환 됩니다.  
+3. 텍스트 세션이 이미 있는 경우에는 만들 필요가 없으며 기존 개체에 대 한 포인터가 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 반환 됩니다. 이 포인터를 사용 하 여 개요 영역을 열거 하 고 만들 수 있습니다. 그렇지 않으면를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> 하 여 버퍼에 대 한 숨겨진 텍스트 세션을 만듭니다. 개체에 대 한 포인터가 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 반환 됩니다.  
   
     > [!NOTE]
-    > 호출 하는 경우 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, 숨겨진된 텍스트 클라이언트를 지정할 수 있습니다 (즉,는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> 개체). 이 클라이언트를에 알립니다 때 숨겨진된 텍스트 또는 개요 영역 확장 또는 사용자가 축소 합니다.  
+    > 를 호출 하는 경우 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> 숨겨진 텍스트 클라이언트 (개체)를 지정할 수 있습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> . 이 클라이언트는 숨겨진 텍스트 또는 개요 영역을 사용자가 확장 하거나 축소할 때 사용자에 게 알립니다.  
   
-4. 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> 구조) 매개 변수: 값을 지정 <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> 에 `iType` 의 멤버는 <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 숨겨진된 영역 보다는 개요 영역을 만드는 것을 나타내기 위해 구조입니다. 지역 인지 클라이언트 제어 또는 편집기 제어에 지정 합니다 `dwBehavior` 의 멤버는 <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 구조입니다. 스마트 개요 구현에는 다양 한 편집기 및 클라이언트 제어 개요 영역을 포함할 수 있습니다. 개요 지역을 축소 하면 "..." 등의 표시 되는 배너 텍스트를 지정 합니다 `pszBanner` 의 멤버는 <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 구조입니다. 숨겨진된 영역에 대 한 편집기의 기본 배너 텍스트는 "..."입니다.
+4. Call <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> structure) 매개 변수: <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> 구조체의 멤버에 값을 지정 `iType` 하 여 <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 숨겨진 지역이 아니라 개요 영역을 만드는 중임을 표시 합니다. 해당 지역이 구조 멤버에서 클라이언트 제어 또는 편집기 제어 인지 여부를 지정 `dwBehavior` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 합니다. 스마트 개요 구현은 편집기와 클라이언트에서 제어 하는 개요 영역을 혼합 하 여 포함할 수 있습니다. 구조 멤버에서 개요 영역이 축소 될 때 표시 되는 배너 텍스트 (예: "...")를 지정 합니다. `pszBanner` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> 숨겨진 영역에 대 한 편집기의 기본 배너 텍스트는 "..."입니다.

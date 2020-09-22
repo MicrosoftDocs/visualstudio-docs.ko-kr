@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444373"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841710"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>표준 및 사용자 지정 도구 집합 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ MSBuild 도구 집합은 애플리케이션 프로젝트를 빌드하는 데 사
 |     4.0      |           *Windows 설치 경로*\Microsoft.NET\Framework\v4.0.30319\            |
 |     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
- `ToolsVersion` 값은 Visual Studio에서 생성하는 프로젝트에서 사용되는 도구 집합을 결정합니다. [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 기본값은 "12.0"(프로젝트 파일에 지정된 버전과 관계 없이)이지만 명령 프롬프트에서 **/toolsversion** 스위치를 사용하여 해당 특성을 재정의할 수 있습니다. 이 특성 및 `ToolsVersion`을 지정하는 다른 방법에 대한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.  
+ `ToolsVersion` 값은 Visual Studio에서 생성하는 프로젝트에서 사용되는 도구 집합을 결정합니다. [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 기본값은 "12.0"(프로젝트 파일에 지정된 버전과 관계 없이)이지만 명령 프롬프트에서 **/toolsversion** 스위치를 사용하여 해당 특성을 재정의할 수 있습니다. 이 특성과를 지정 하는 다른 방법에 대 한 자세한 내용은 `ToolsVersion` [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조 하세요.  
 
  `ToolsVersion`이 지정되지 않은 경우 레지스트리 키 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<Version Number\>\DefaultToolsVersion**은 `ToolsVersion`을 정의합니다. 이는 항상 2.0입니다.  
 
@@ -97,7 +97,7 @@ MSBuild 도구 집합은 애플리케이션 프로젝트를 빌드하는 데 사
 
 - **$(MSBuildBinPath)** 는 레지스트리 또는 `ToolsVersion`이 정의된 구성 파일에 지정된 `ToolsPath` 값으로 설정됩니다. 레지스트리 또는 구성 파일의 `$(MSBuildToolsPath)` 설정은 핵심 작업 및 대상의 위치를 지정합니다. 프로젝트 파일에서 $(MSBuildBinPath) 속성 및 $(MSBuildToolsPath) 속성에 매핑됩니다.  
 
-- `$(MSBuildToolsPath)`는 구성 파일에 지정된 MSBuildToolsPath 속성에서 제공되는 예약된 속성입니다. (이 속성은 `$(MSBuildBinPath)`를 대체합니다. 그러나 `$(MSBuildBinPath)`가 호환성을 위해 전달됩니다.) 사용자 지정 도구 집합은 `$(MSBuildToolsPath)` 및 `$(MSBuildBinPath)`가 동일한 값을 갖지 않는 한 둘 모두가 아닌 둘 중 하나를 정의해야 합니다.  
+- `$(MSBuildToolsPath)`는 구성 파일에 지정된 MSBuildToolsPath 속성에서 제공되는 예약된 속성입니다. (이 속성은 `$(MSBuildBinPath)`를 대체합니다. 그러나 `$(MSBuildBinPath)` 는 호환성을 위해 앞으로 전달 됩니다.) 사용자 지정 도구 집합은 모두 `$(MSBuildToolsPath)` `$(MSBuildBinPath)` 동일한 값을 갖지 않는 한 또는 중 하나만 정의 해야 합니다.  
 
   또한 MSBuildToolsPath 속성을 추가하는 데 사용하는 동일한 구문을 사용하여 구성 파일에 ToolsVersion 관련 사용자 지정 속성을 추가할 수도 있습니다. 이러한 사용자 지정 속성을 프로젝트 파일에 사용할 수 있도록 하려면 구성 파일에 지정된 값의 이름과 동일한 이름을 사용합니다. 구성 파일에서 하위 도구 집합이 아닌 도구 집합을 정의할 수 있습니다.  
 

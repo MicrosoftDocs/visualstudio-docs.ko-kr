@@ -11,39 +11,39 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bc6c5d665367f2d5af9e2dd6d2a7d664e50f4830
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434385"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842087"
 ---
 # <a name="migrating-a-legacy-language-service"></a>레거시 언어 서비스 마이그레이션
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-프로젝트를 업데이트 하 고 source.extension.vsixmanifest 파일을 프로젝트에 추가 하 여 Visual Studio의 이후 버전으로는 레거시 언어 서비스를 마이그레이션할 수 있습니다. Visual Studio 편집기를 조정 하는 언어 서비스 자체 이전과 같이 작동 계속 됩니다.  
+프로젝트를 업데이트 하 고 프로젝트에 source.extension.vsixmanifest 파일을 추가 하 여 레거시 언어 서비스를 최신 버전의 Visual Studio로 마이그레이션할 수 있습니다. Visual Studio 편집기가이를 조정 하기 때문에 언어 서비스 자체는 이전과 마찬가지로 계속 작동 합니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 언어 서비스를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 언어 서비스를 구현 하는 새로운 방법에 대해 자세히 알아보려면 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)을 참조 하세요.  
   
 > [!NOTE]
-> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Visual Studio 2008 언어 서비스 솔루션을 최신 버전으로 마이그레이션  
- 다음 단계를 RegExLanguageService 라는 Visual Studio 2008 샘플을 조정 하는 방법을 보여 줍니다. Visual Studio 2008 SDK 설치에서이 샘플에서 찾습니다 합니다 *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ 폴더입니다.  
+ 다음 단계에서는 RegExLanguageService 이라는 Visual Studio 2008 샘플을 조정 하는 방법을 보여 줍니다. Visual studio *sdk 설치 경로*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ 폴더의 visual STUDIO 2008 sdk 설치에서이 샘플을 찾을 수 있습니다.  
   
 > [!IMPORTANT]
-> 언어 서비스는 색을 정의 하지 않으면, 명시적으로 설정 해야 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> 에 `true` VSPackage에서:  
+> 언어 서비스에서 색을 정의 하지 않는 경우 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> VSPackage에서를로 명시적으로 설정 해야 합니다 `true` .  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  
 ```  
   
-#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Visual Studio 2008 언어 서비스를 최신 버전으로 마이그레이션  
+#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Visual Studio 2008 언어 서비스를 이후 버전으로 마이그레이션하려면  
   
-1. 최신 버전의 Visual Studio 및 Visual Studio SDK를 설치 합니다. SDK를 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [Visual Studio SDK 설치](../../extensibility/installing-the-visual-studio-sdk.md)합니다.  
+1. 최신 버전의 Visual Studio 및 Visual Studio SDK를 설치 합니다. SDK를 설치 하는 방법에 대 한 자세한 내용은 [Visual STUDIO Sdk 설치](../../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.  
   
-2. 파일을 편집 합니다 RegExLangServ.csproj (하지 않고 Visual Studio에서 로드 합니다.  
+2. Visual Studio에서 로드 하지 않고 RegExLangServ 파일을 편집 합니다.  
   
-     에 `Import` Microsoft.VsSDK.targets 파일을 참조 하는 노드는 다음 텍스트를 사용 하 여 값을 바꿉니다.  
+     `Import`Microsoft.. n e t. .targets 파일을 참조 하는 노드에서 값을 다음 텍스트로 바꿉니다.  
   
     ```  
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets  
@@ -51,33 +51,33 @@ ms.locfileid: "63434385"
   
 3. 파일을 저장 한 다음 닫습니다.  
   
-4. RegExLangServ.sln 솔루션을 엽니다.  
+4. RegExLangServ 솔루션을 엽니다.  
   
-5. 합니다 **단방향 업그레이드** 창이 나타납니다. **확인**을 클릭합니다.  
+5. **단방향 업그레이드** 창이 표시 됩니다. **확인**을 클릭합니다.  
   
-6. 프로젝트 속성을 업데이트 합니다. 엽니다는 **프로젝트 속성** 창에서 프로젝트 노드를 선택 하 여 합니다 **솔루션 탐색기**, 마우스 오른쪽 단추로 클릭을 선택 하 고 **속성**합니다.  
+6. 프로젝트 속성을 업데이트 합니다. **솔루션 탐색기**에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **속성**을 선택 하 여 **프로젝트 속성** 창을 엽니다.  
   
-    - 에 **응용 프로그램** 탭에서 변경 **대상 프레임 워크** 하 **4.6.1**합니다.  
+    - **응용 프로그램** 탭에서 **대상 프레임 워크** 를 **4.6.1**로 변경 합니다.  
   
-    - 에 **디버그** 탭의 **시작 외부 프로그램** 상자에 입력  **\<Visual Studio 설치 경로 > \Common7\IDE\devenv.exe.** .  
+    - **디버그** 탭의 **시작 외부 프로그램** 상자에\Common7\IDE\devenv.exe을 입력 ** \<Visual Studio installation path> 합니다**.  
   
-         에 **명령줄 인수** 상자에 입력 /**rootsuffix Exp**합니다.  
+         **명령줄 인수** 상자에/**rootsuffix Exp**를 입력 합니다.  
   
 7. 다음 참조를 업데이트 합니다.  
   
-    - Microsoft.VisualStudio.Shell.9.0.dll에 대 한 참조를 제거한 Microsoft.VisualStudio.Shell.14.0.dll 및 Microsoft.VisualStudio.Shell.Immutable.11.0.dll에 대 한 참조를 추가 합니다.  
+    - Microsoft.VisualStudio.Shell.9.0.dll에 대 한 참조를 제거한 다음 Microsoft.VisualStudio.Shell.14.0.dll 및 Microsoft.VisualStudio.Shell.Immutable.11.0.dll에 대 한 참조를 추가 합니다.  
   
-    - Microsoft.VisualStudio.Package.LanguageService.9.0.dll에 대 한 참조를 제거한 Microsoft.VisualStudio.Package.LanguageService.14.0.dll에 대 한 참조를 추가 합니다.  
+    - Microsoft.VisualStudio.Package.LanguageService.9.0.dll에 대 한 참조를 제거한 다음 Microsoft.VisualStudio.Package.LanguageService.14.0.dll에 대 한 참조를 추가 합니다.  
   
     - Microsoft.VisualStudio.Shell.Interop.10.0.dll에 대 한 참조를 추가 합니다.  
   
-8. VsPkg.cs 파일을 열고 값을 변경 합니다 `DefaultRegistryRoot` 특성  
+8. VsPkg.cs 파일을 열고 특성의 값을로 변경 합니다. `DefaultRegistryRoot`  
   
     ```  
     "Software\\Microsoft\\VisualStudio\\14.0Exp"  
     ```  
   
-9. 원래 샘플 VsPkg.cs에 다음 특성을 추가 해야 하므로 해당 언어 서비스를 등록 하지 않습니다.  
+9. 원래 샘플은 해당 언어 서비스를 등록 하지 않으므로 VsPkg.cs에 다음 특성을 추가 해야 합니다.  
   
     ```  
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]  
@@ -85,13 +85,13 @@ ms.locfileid: "63434385"
   
 10. Source.extension.vsixmanifest 파일을 추가 해야 합니다.  
   
-    - 기존 확장 프로그램에서이 파일을 프로젝트 디렉터리에 복사 합니다. (이 파일을 가져오는 한 가지 방법은 VSIX 프로젝트를 만들 수는 (아래 **파일**, 클릭 **새로 만들기**, 클릭 **프로젝트**합니다. 아래에서 Visual Basic 또는 C# 클릭 **확장성**을 선택한 후 **VSIX 프로젝트**.)  
+    - 기존 확장에서이 파일을 프로젝트 디렉터리에 복사 합니다. 이 파일을 가져오는 한 가지 방법은 VSIX 프로젝트를 만드는 것입니다. **파일**에서 **새로**만들기를 클릭 한 다음 **프로젝트**를 클릭 합니다. Visual Basic 또는 c #에서 **확장성**을 클릭 한 다음 **VSIX 프로젝트**를 선택 합니다.  
   
-    - 프로젝트에 파일을 추가 합니다.  
+    - 파일을 사용자의 프로젝트에 추가합니다.  
   
-    - 파일의 **속성**설정 **빌드 작업** 하 **None**합니다.  
+    - 파일 **속성**에서 **빌드 작업** 을 **없음**으로 설정 합니다.  
   
-    - 파일을 여는 **VSIX 매니페스트 편집기**합니다.  
+    - **VSIX 매니페스트 편집기**를 사용 하 여 파일을 엽니다.  
   
     - 다음 필드를 변경 합니다.  
   
@@ -101,13 +101,13 @@ ms.locfileid: "63434385"
   
     - **설명**: 정규식 언어 서비스입니다.  
   
-    - 아래 **자산**, 클릭 **새로 만들기**를 선택 합니다 **형식** 를 **Microsoft.VisualStudio.VsPackage**설정를 **원본** 를 **현재 솔루션의 프로젝트**를 설정한 후 합니다 **프로젝트** 를 **RegExLangServ**합니다.  
+    - **자산**에서 **새로 만들기**를 클릭 하 고, **VisualStudio**에 대 한 **유형을** 선택 하 고, **소스** 를 **현재 솔루션의 프로젝트로**설정한 다음, **프로젝트** 를 **RegExLangServ**로 설정 합니다.  
   
-    - 파일을 저장한 후 닫습니다.  
+    - 파일을 저장하고 닫습니다.  
   
-11. 솔루션을 빌드합니다. 작성된 된 파일에 배포 됩니다 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** 합니다.  
+11. 솔루션을 빌드합니다. 빌드된 파일은 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **에 배포 됩니다.  
   
-12. 디버깅을 시작합니다. Visual Studio의 두 번째 인스턴스가 열립니다.  
+12. 디버깅을 시작합니다. Visual Studio의 두 번째 인스턴스가 열렸습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)

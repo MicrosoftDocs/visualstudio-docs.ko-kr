@@ -1,5 +1,5 @@
 ---
-title: Getmethodproperty 구현 | Microsoft Docs
+title: GetMethodProperty 구현 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f125db668d240200e94539167381931898c75135
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430315"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842182"
 ---
 # <a name="implementing-getmethodproperty"></a>GetMethodProperty 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 방법은 더 이상 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 자세한 내용은 [Clr 식](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 계산기 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조 하세요.  
   
- Visual Studio 디버그 엔진 (DE)를 호출 [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)를 호출 하 [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) 스택 프레임에 현재 메서드에 대 한 정보를 얻을 수 있습니다.  
+ Visual Studio는 디버그 엔진의 [Getdebugproperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)를 호출 하며,이는 [getdebugproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) 를 호출 하 여 스택 프레임의 현재 메서드에 대 한 정보를 가져옵니다.  
   
- 이 구현의 `IDebugExpressionEvaluator::GetMethodProperty` 다음 작업을 수행 합니다.  
+ 이 구현 `IDebugExpressionEvaluator::GetMethodProperty` 에서는 다음 작업을 수행 합니다.  
   
-1. 호출 [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)에 전달 합니다 [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) 개체입니다. 기호 공급자 (SP)가 반환 된 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) 지정된 된 주소를 포함 하는 메서드를 나타내는입니다.  
+1. [Idebugaddress](../../extensibility/debugger/reference/idebugaddress.md) 개체를 전달 하 여 [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)를 호출 합니다. SP (기호 공급자)는 지정 된 주소가 포함 된 메서드를 나타내는 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) 을 반환 합니다.  
   
-2. 가져오는 합니다 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) 에서 `IDebugContainerField`합니다.  
+2. 에서 [Idebugmethodfield](../../extensibility/debugger/reference/idebugmethodfield.md) 를 가져옵니다 `IDebugContainerField` .  
   
-3. 클래스를 인스턴스화합니다 (호출 `CFieldProperty` 이 예제의) 구현 하는 합니다 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 포함 합니다 `IDebugMethodField` SP에서 반환 된 개체  
+3. `CFieldProperty` [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 구현 하 고 SP에서 반환 된 개체를 포함 하는 클래스 (이 예제에서는 호출 됨)를 인스턴스화합니다 `IDebugMethodField` .  
   
-4. 반환 된 `IDebugProperty2` 에서 인터페이스를 `CFieldProperty` 개체입니다.  
+4. `IDebugProperty2`개체에서 인터페이스를 반환 합니다 `CFieldProperty` .  
   
 ## <a name="managed-code"></a>관리 코드  
- 이 예제에서는 구현을 보여 줍니다. `IDebugExpressionEvaluator::GetMethodProperty` 관리 코드에서.  
+ 이 예제에서는 관리 코드에서의 구현을 보여 줍니다 `IDebugExpressionEvaluator::GetMethodProperty` .  
   
 ```csharp  
 namespace EEMC  
@@ -69,7 +69,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>비관리 코드  
- 이 예제에서는 구현을 보여 줍니다. `IDebugExpressionEvaluator::GetMethodProperty` 비관리 코드에서.  
+ 이 예제에서는 비관리 코드에서의 구현을 보여 줍니다 `IDebugExpressionEvaluator::GetMethodProperty` .  
   
 ```  
 [CPP]  

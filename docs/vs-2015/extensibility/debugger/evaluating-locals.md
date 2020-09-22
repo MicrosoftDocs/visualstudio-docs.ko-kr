@@ -1,5 +1,5 @@
 ---
-title: 지역 변수를 계산 | Microsoft Docs
+title: 지역 평가 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444762"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843414"
 ---
 # <a name="evaluating-locals"></a>로컬 항목 계산
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 방법은 더 이상 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 자세한 내용은 [Clr 식](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 계산기 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조 하세요.  
   
- [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 로컬 뿐만 아니라 지역 변수의 이름 및 형식 값을 얻기 위해 호출 됩니다. 로컬 값 프로그램의 현재 상태에 종속 되므로 메모리에서 지역 변수의 값을 얻어야 합니다. 합니다 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) 개체는 바인딩하는 데 사용 되는 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 로컬 값을 포함 하는 메모리에서 해당 위치를 나타내는 개체입니다. 메모리에서이 위치에서 표시 됩니다는 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
+ 로컬의 값과 로컬 이름 및 형식을 가져오기 위해 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 가 호출 됩니다. 로컬의 값은 프로그램의 현재 상태에 따라 달라 지므로 메모리에서 로컬 값을 가져와야 합니다. [Idebugbinder](../../extensibility/debugger/reference/idebugbinder.md) 개체는 로컬를 나타내는 [idebugbinder](../../extensibility/debugger/reference/idebugfield.md) 개체를 값을 포함 하는 메모리의 적절 한 위치에 바인딩하는 데 사용 됩니다. 메모리에서이 위치는 [Idebugobject](../../extensibility/debugger/reference/idebugobject.md) 개체로 표현 됩니다.  
   
- 이 기능은 로컬 값을 검색 하는 다음 작업을 수행 하는 도우미 함수에 캡슐화 됩니다.  
+ 로컬 값을 검색 하는이 기능은 다음 작업을 수행 하는 도우미 함수에 캡슐화 되어 있습니다.  
   
-1. 바인딩하는 `IDebugField` 메모리를 얻으려고 하는 개체는 `IDebugObject` 개체입니다.  
+1. 개체를 `IDebugField` 메모리에 바인딩하여 개체를 가져옵니다 `IDebugObject` .  
   
-2. 메모리에서 값을 가져옵니다. 이 값은 일련의 바이트로로 표시 됩니다.  
+2. 메모리에서 값을 가져옵니다. 이 값은 일련의 바이트로 표시 됩니다.  
   
-3. 지역 변수의 형식을 기반으로 값 형식을 지정 합니다.  
+3. 로컬의 형식에 따라 값의 형식을 지정 합니다.  
   
-4. 지역 변수의 값을 포함 하는 일반 개체를 반환 합니다. C#,이 `object`, 및 C++,이 `VARIANT`합니다.  
+4. 로컬 값을 포함 하는 제네릭 개체를 반환 합니다. C #에서이 고, `object` c + +에서이는입니다 `VARIANT` .  
   
 ## <a name="managed-code"></a>관리 코드  
- 관리 코드에서 로컬 변수의 값을 검색 하는 함수는 구현입니다.  
+ 이는 관리 코드에서 로컬의 값을 검색 하는 함수의 구현입니다.  
   
 ```csharp  
 namespace EEMC  
@@ -79,7 +79,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>비관리 코드  
- 비관리 코드에서 로컬 변수의 값을 검색 하는 함수는 구현입니다. `FieldGetType` 에 표시 됩니다 [로컬 값 가져오기](../../extensibility/debugger/getting-local-values.md)합니다.  
+ 비관리 코드에서 로컬의 값을 검색 하는 함수의 구현입니다. `FieldGetType`[로컬 값 가져오기](../../extensibility/debugger/getting-local-values.md)에 표시 됩니다.  
   
 ```cpp#  
 HRESULT FieldGetPrimitiveValue(  
@@ -192,6 +192,6 @@ HRESULT FieldGetPrimitiveValue(
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [지역 변수의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [로컬 값 가져오기](../../extensibility/debugger/getting-local-values.md)   
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

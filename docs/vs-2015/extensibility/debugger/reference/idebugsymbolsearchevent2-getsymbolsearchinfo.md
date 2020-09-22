@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
+title: 'IDebugSymbolSearchEvent2:: Get기호 Searchinfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8ef097ed02ae90b03289e3a2f3a1ad3f0ad8618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446044"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841483"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-기호 로드 프로세스에 대 한 결과 검색 하는 이벤트 처리기에서 호출 됩니다.  
+기호 로드 프로세스에 대 한 결과를 검색 하기 위해 이벤트 처리기에 의해 호출 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,22 +45,22 @@ int GetSymbolSearchInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `pModule`  
- [out] 기호가 로드 된 모듈을 나타내는 IDebugModule3 개체입니다.  
+ 제한이 기호가 로드 된 모듈을 나타내는 IDebugModule3 개체입니다.  
   
  `pbstrDebugMessage`  
- [out에서] 모듈에서 모든 오류 메시지를 포함 하는 문자열을 반환 합니다. 오류가 없는 경우 다음이 문자열을 모듈의 이름을 포함 됩니다는 비어 있는 상태로 되지 않습니다.  
+ [in, out] 모듈의 오류 메시지를 포함 하는 문자열을 반환 합니다. 오류가 없는 경우이 문자열에는 모듈의 이름만 포함 되지만 비워 두면 안 됩니다.  
   
 > [!NOTE]
-> [C++] `pbstrDebugMessage` 일 수 없습니다 `NULL` 사용 하 여 해제 해야 `SysFreeString`합니다.  
+> [C + +] `pbstrDebugMessage` 는이 될 수 없으며 `NULL` 를 사용 하 여 해제 해야 합니다 `SysFreeString` .  
   
  `pdwModuleInfoFlags`  
- [out] 플래그의 조합 된 [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) 모든 기호 로드 된 여부를 나타내는 열거형입니다.  
+ 제한이 기호가 로드 되었는지 여부를 나타내는 [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) 열거형의 플래그 조합입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 처리기를 받으면 합니다 [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) 모듈에 대 한 디버깅 기호를 로드 하려고 시도 후 이벤트 처리기는 부하의 결과 확인 하려면이 호출할 수 있습니다.  
+ 모듈에 대 한 디버깅 기호를 로드 하려고 시도한 후 처리기가 [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) 이벤트를 수신 하면 처리기는 thismethod를 호출 하 여 해당 load의 결과를 확인할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   

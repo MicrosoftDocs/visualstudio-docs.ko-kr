@@ -13,22 +13,22 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446869"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841382"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 함수는 프로젝트 경로 소스 제어 플러그 인에 의미 있는 문자열에 대 한 라는 메시지입니다. 사용자가 있는 경우 라고 합니다.  
+이 함수는 소스 제어 플러그 인에만 의미가 있는 문자열인 프로젝트 경로를 사용자에 게 묻는 메시지를 표시 합니다. 사용자가 다음과 같은 경우 호출 됩니다.  
   
 - 새 프로젝트 만들기  
   
 - 버전 제어에 기존 프로젝트 추가  
   
-- 기존 버전 제어 프로젝트를 찾으려고 시도  
+- 기존 버전 제어 프로젝트를 찾으려고 시도 하는 중  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,33 +47,33 @@ SCCRTN SccGetProjPath (
   
 #### <a name="parameters"></a>매개 변수  
  pvContext  
- [in] 원본 제어 플러그 인 상황에 맞는 구조입니다.  
+ 진행 소스 제어 플러그 인 컨텍스트 구조입니다.  
   
  hWnd  
- [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.  
+ 진행 소스 제어 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.  
   
  lpUser  
- [out에서] 사용자 이름 (NULL 종결자를 포함 하 여 SCC_USER_SIZE, 초과 하지 않음)  
+ [in, out] 사용자 이름 (NULL 종결자를 포함 하 여 SCC_USER_SIZE를 초과 하지 않음)  
   
  lpProjName  
- [out에서] IDE 프로젝트, 프로젝트 작업 영역 또는 메이크파일 (NULL 종결자를 포함 하 여 SCC_PRJPATH_SIZE, 초과 하지 않음)의 이름입니다.  
+ [in, out] IDE 프로젝트, 프로젝트 작업 영역 또는 메이크파일의 이름입니다 (NULL 종결자를 포함 하 여 SCC_PRJPATH_SIZE를 초과 하지 않음).  
   
  lpLocalPath  
- [out에서] 프로젝트의 작업 경로입니다. 하는 경우 `bAllowChangePath` 는 `TRUE`, 소스 제어 플러그 인 (_max_path(256, null 종결자를 포함 하 여 초과 하지 않음)이이 문자열을 수정할 수 있습니다.  
+ [in, out] 프로젝트의 작업 경로입니다. `bAllowChangePath`가 이면 `TRUE` 소스 제어 플러그 인에서이 문자열을 수정할 수 있습니다 (null 종결자를 포함 하 여 _MAX_PATH를 초과 하지 않음).  
   
  lpAuxProjPath  
- [out에서] 반환 된 프로젝트 경로 (NULL 종결자를 포함 하 여 SCC_PRJPATH_SIZE, 초과 하지 않음)에 대 한 버퍼입니다.  
+ [in, out] 반환 된 프로젝트 경로에 대 한 버퍼입니다 (NULL 종결자를 포함 하 여 SCC_PRJPATH_SIZE를 초과 하지 않음).  
   
  bAllowChangePath  
- [in] 이것이 `TRUE`, 소스 제어 플러그 인에 대 한 메시지를 표시 하 고 수정할 수는 `lpLocalPath` 문자열입니다.  
+ 진행 이 경우 `TRUE` 소스 제어 플러그 인에서 문자열을 확인 하 고 수정할 수 있습니다 `lpLocalPath` .  
   
- pbNew  
- [out에서] 들어오는 값 새 프로젝트를 만들지 여부를 나타냅니다. 반환 된 값에는 프로젝트를 만들기의 성공을 나타냅니다.  
+ Pnew  
+ [in, out] 에서 제공 되는 값은 새 프로젝트를 만들지 여부를 나타냅니다. 반환 된 값은 프로젝트를 만든 성공을 나타냅니다.  
   
-|들어오는|해석|  
+|수신 중|해석|  
 |--------------|--------------------|  
-|TRUE|사용자는 새 프로젝트를 만들 수 있습니다.|  
-|FALSE|사용자는 새 프로젝트를 만들 수 없습니다.|  
+|TRUE|사용자가 새 프로젝트를 만들 수 있습니다.|  
+|FALSE|사용자가 새 프로젝트를 만들 수 없습니다.|  
   
 |나가는 포트|해석|  
 |--------------|--------------------|  
@@ -81,32 +81,32 @@ SCCRTN SccGetProjPath (
 |FALSE|기존 프로젝트를 선택 했습니다.|  
   
 ## <a name="return-value"></a>반환 값  
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
-|SCC_OK|성공적으로 프로젝트를 만들거나 검색 됩니다.|  
-|SCC_I_OPERATIONCANCELED|작업이 취소 되었습니다.|  
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다.|  
-|SCC_E_CONNECTIONFAILURE|소스 제어 시스템에 연결 하려는 중 오류가 발생 했습니다.|  
+|SCC_OK|프로젝트를 만들거나 검색 했습니다.|  
+|SCC_I_OPERATIONCANCELED|작업이 취소되었습니다.|  
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 원본 제어 시스템에 액세스 하는 동안 문제가 발생 했습니다.|  
+|SCC_E_CONNECTIONFAILURE|원본 제어 시스템에 연결 하는 동안 문제가 발생 했습니다.|  
 |SCC_E_NONSPECIFICERROR|지정되지 않은 오류가 발생했습니다.|  
   
 ## <a name="remarks"></a>설명  
- 매개 변수를 획득 하기 위해 IDE에 대 한이 함수의 목적은 `lpProjName` 고 `lpAuxProjPath`입니다. 이 정보에 대 한 라는 메시지를 표시 하는 소스 제어 플러그 인, 후 두 문자열이 IDE에 다시 전달 합니다. IDE의 솔루션 파일에 이러한 문자열을 지속 하 고 전달 하도록 합니다 [SccOpenProject](../extensibility/sccopenproject-function.md) 사용자가이 프로젝트를 열 때마다 합니다. 이러한 문자열을 프로젝트와 관련 된 정보를 추적 플러그 인을 사용 합니다.  
+ 이 함수의 목적은 IDE에서 및 매개 변수를 얻기 위한 것입니다 `lpProjName` `lpAuxProjPath` . 원본 제어 플러그 인은 사용자에 게이 정보를 입력 하 라는 메시지를 표시 한 후이 두 문자열을 다시 IDE에 전달 합니다. IDE는 이러한 문자열을 솔루션 파일에 유지 하 고 사용자가이 프로젝트를 열 때마다 [Sccopenproject](../extensibility/sccopenproject-function.md) 에 전달 합니다. 이러한 문자열을 통해 플러그 인은 프로젝트와 관련 된 정보를 추적할 수 있습니다.  
   
- 함수가 먼저 호출 되 면 `lpAuxProjPath` 빈 문자열로 설정 됩니다. `lProjName` 비어 있을 수도 소스 제어 플러그 인 사용 하거나 무시할 수 있는 IDE 프로젝트 이름을 포함할 수 있습니다. 함수는 성공적으로 반환 될 때 해당 문자열을 두 개의 플러그 인 반환 합니다. IDE 이러한 문자열에 대 한 가정 하지 않고,을 사용 하지 않으며 사용자가 수정할 수 없습니다. 사용자가 설정을 변경 하려는 경우 IDE는 호출 `SccGetProjPath` 마찬가지로 동일한 값에서 전달 받은 이전 시간입니다. 이 두 문자열이 완전히 플러그 인 제어를 제공합니다.  
+ 함수를 처음 호출 하면 `lpAuxProjPath` 이 빈 문자열로 설정 됩니다. `lProjName` 는 비어 있을 수도 있고, 소스 제어 플러그 인이 사용 하거나 무시할 수 있는 IDE 프로젝트 이름을 포함할 수도 있습니다. 함수가 성공적으로 반환 되 면 플러그 인은 해당 하는 두 문자열을 반환 합니다. IDE는 이러한 문자열을 가정 하지 않으며 사용 하지 않으며 사용자가 수정할 수 없도록 합니다. 사용자가 설정을 변경 하려는 경우 IDE는 `SccGetProjPath` 이전에 받은 값과 동일한 값을 전달 하 여를 다시 호출 합니다. 이를 통해 플러그 인은 이러한 두 문자열을 완벽 하 게 제어할 수 있습니다.  
   
- 에 대 한 `lpUser`, IDE 사용자 이름에 전달할 수 있습니다 또는 빈 문자열에 대 한 포인터에서 단순히 통과할 수 있습니다. 없는 경우 사용자 이름, 소스 제어 플러그 인을 기본값으로 사용 해야 합니다. 그러나 이름이 전달 되지 않은 경우, 지정 된 이름의 로그인에 실패 하는 경우 플러그 인 메시지를 표시할 로그인 하 고 이름을 다시 전달 `lpUser` 유효한 로그인을 받을 때입니다. IDE는 크기의 버퍼를 할당 항상 플러그 인이 문자열 변경 될 수, 있으므로 (`SCC_USER_LEN`+ 1).  
+ 의 경우 `lpUser` IDE는 사용자 이름을 전달할 수도 있고, 빈 문자열에 대 한 포인터를 전달 하기만 할 수도 있습니다. 사용자 이름이 있으면 원본 제어 플러그 인에서이를 기본값으로 사용 해야 합니다. 그러나 이름이 전달 되지 않았거나 지정 된 이름으로 로그인이 실패 한 경우 플러그 인은 사용자에 게 로그인을 요청 하 고 `lpUser` 유효한 로그인을 받을 때이 이름을 다시 전달 해야 합니다. 플러그 인이이 문자열을 변경할 수 있으므로 IDE는 항상 크기 (+ 1)의 버퍼를 할당 `SCC_USER_LEN` 합니다.  
   
 > [!NOTE]
-> IDE에서 수행 하는 첫 번째 작업 중 하나에 대 한 호출 수를 `SccOpenProject` 함수 또는 `SccGetProjPath` 함수입니다. 따라서 둘 다가 동일한 `lpUser` 소스 제어 플러그 인을 두 번에 사용자를 로그인을 사용 하도록 설정 하는 매개 변수입니다. 함수에서 반환 된 값을 실패를 나타내는 경우에 플러그 인 채워야 유효한 로그인 이름의이 문자열입니다.  
+> IDE에서 수행 하는 첫 번째 작업은 함수 또는 함수에 대 한 호출 일 수 있습니다 `SccOpenProject` `SccGetProjPath` . 따라서 둘 다 동일한 `lpUser` 매개 변수를 사용 하 여 소스 제어 플러그 인이 사용자를 어느 때에도 로그인 할 수 있도록 합니다. 함수에서 반환 된 오류를 나타내는 경우에도 플러그 인은이 문자열을 유효한 로그인 이름으로 채워야 합니다.  
   
- `lpLocalPath` 여기서 사용자가 프로젝트 디렉터리가입니다. 빈 문자열일 수 있습니다. 디렉터리가 없습니다 (의 경우와 같이 소스 제어 시스템에서 프로젝트를 다운로드 하는 동안 사용자) 현재 정의 된 경우 `bAllowChangePath` 는 `TRUE`, 소스 제어 플러그 인 입력에 대 한 사용자 수 또는 일부 다른 메서드를 사용 하 여 배치 해당 문자열을 소유 `lpLocalPath`합니다. 하는 경우 `bAllowChangePath` 는 `FALSE`, 플러그 인은 문자열 때문에 변경할 사용자가 이미 지정된 된 디렉터리에서 작업 합니다.  
+ `lpLocalPath` 사용자가 프로젝트를 유지 하는 디렉터리입니다. 빈 문자열일 수 있습니다. 사용자가 소스 제어 시스템에서 프로젝트를 다운로드 하려고 시도 하는 경우와 같이 현재 정의 된 디렉터리가 없는 경우에 `bAllowChangePath` 는 `TRUE` 소스 제어 플러그 인에서 사용자에 게 입력을 요청 하거나 다른 메서드를 사용 하 여 해당 문자열을에 삽입할 수 있습니다 `lpLocalPath` . `bAllowChangePath`가 이면 `FALSE` 사용자가 이미 지정 된 디렉터리에서 작업 중 이므로 플러그 인에서 문자열을 변경 하지 않아야 합니다.  
   
- 사용자 소스 제어에서 삽입할 새 프로젝트를 만드는 경우 원본 제어 플러그 인 만들지 못할 수도 있습니다 실제로 해당 소스 제어 시스템에 시 `SccGetProjPath` 라고 합니다. 대신, 전달 다시 0이 아닌 값을 사용 하 여 함께 문자열 `pbNew`, 소스 제어 시스템에서 프로젝트를 만들 수를 나타내는입니다.  
+ 사용자가 소스 제어에서 새 프로젝트를 만드는 경우 소스 제어 플러그 인이 호출 될 때 소스 제어 시스템에서 실제로이를 만들지 않을 수 있습니다 `SccGetProjPath` . 대신,에 대 한 0이 아닌 값과 함께 문자열을 다시 전달 `pbNew` 합니다 .이 경우에는 프로젝트가 소스 제어 시스템에 생성 됩니다.  
   
- 예를 들어, 사용자는 **새 프로젝트** Visual Studio에서 마법사가 자신의 프로젝트를 소스 제어에 추가 하 고이 함수를 호출 하는 Visual Studio 플러그 인에 소스 제어 시스템에서 새 프로젝트를 만들 수 있는지 결정 Visual Studio 프로젝트를 포함 합니다. 클릭 하면 **취소** 마법사를 완료 하기 전에 프로젝트 만들어지지 않습니다. 클릭 하면 **확인**를 호출 하는 Visual Studio `SccOpenProject`전달 `SCC_OPT_CREATEIFNEW`, 소스 제어 프로젝트는 해당 시점에 생성 됩니다.  
+ 예를 들어 Visual Studio의 **새 프로젝트** 마법사에서 사용자가 프로젝트를 소스 제어에 추가 하는 경우 visual studio는이 함수를 호출 하 고 플러그 인은 소스 제어 시스템에서 visual studio 프로젝트를 포함 하는 새 프로젝트를 만들 수 있는지 여부를 확인 합니다. 마법사를 완료 하기 전에 사용자가 **취소** 를 클릭 하면 프로젝트가 생성 되지 않습니다. 사용자가 **확인**을 클릭 하면 Visual Studio가를 호출 하 `SccOpenProject` 고를 전달 `SCC_OPT_CREATEIFNEW` 하며 소스 제어 프로젝트가 생성 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
+ [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

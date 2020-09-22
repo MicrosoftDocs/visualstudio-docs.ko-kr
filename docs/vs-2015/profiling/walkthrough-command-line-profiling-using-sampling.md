@@ -1,5 +1,5 @@
 ---
-title: '연습: 샘플링을 사용하여 명령줄 프로파일링 | Microsoft Docs'
+title: '연습: 샘플링을 사용하여 명령줄 프로파일링 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439678"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842038"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>연습: 샘플링을 사용 하 여 프로 파일링 명령줄
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>연습: 샘플링을 사용하여 명령줄 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 성능 문제를 파악하도록 명령줄 도구와 샘플링을 사용하여 애플리케이션을 프로파일링하는 방법을 설명합니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "63439678"
   
 - 명령줄 도구 사용법에 대한 중간 정도의 이해도  
   
-- [PeopleTrax 샘플](../profiling/peopletrax-sample-profiling-tools.md)의 복사본  
+- [PeopleTrax 샘플](../profiling/peopletrax-sample-profiling-tools.md) 의 복사본  
   
 - 프로파일링을 통해 제공되는 정보를 사용하려면 디버깅 기호 정보를 준비해 두는 것이 가장 좋습니다.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "63439678"
   
 ## <a name="see-also"></a>참고 항목  
  [성능 세션 개요](../profiling/performance-session-overview.md)   
- [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [명령줄에서 프로 파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)   
  [성능 보고서 뷰](../profiling/performance-report-views.md)

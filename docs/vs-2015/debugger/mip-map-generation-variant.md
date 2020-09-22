@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383966"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842051"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- 전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 mip 체인에 mip 수준의 수는 floor(log2(n) + 1), 여기서 n은 질감의 최대 크기입니다.  
+ 전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 Mip 체인에 있는 Mip 맵 수준 수는 floor(log2(n) + 1)이며, 여기서 n은 텍스처의 최대 크기입니다.  
   
  `CreateTexture2D`에 초기 데이터를 제공하는 경우 각 Mip 수준에 대한 D3D11_SUBRESOURCE_DATA 개체를 제공해야 합니다.  
   

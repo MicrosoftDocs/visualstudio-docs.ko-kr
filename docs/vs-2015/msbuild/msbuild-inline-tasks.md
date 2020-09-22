@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439357"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842170"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 인라인 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 - `Type` 값이 `Fragment`이면 코드는 서명 또는 `return` 문이 아니라 `Execute` 메서드의 내용을 정의합니다.  
   
-  코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" 또는 ">"와 같은 예약 문자 이스케이프에 신경쓰지 않아도 됩니다.  
+  코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" or ">"와 같은 예약 문자 이스케이프에 신경 쓰지 않아도 됩니다.  
   
   또는 `Code` 요소의 `Source` 특성을 사용하여 작업에 대한 코드를 포함하는 파일의 위치를 지정할 수 있습니다. 소스 파일의 코드는 `Type` 특성으로 지정된 형식이어야 합니다. `Source` 특성이 있으면 `Type`의 기본값은 `Class`입니다. `Source`가 없으면 기본값은 `Fragment`입니다.  
   
@@ -143,7 +143,7 @@ Log.LogError("Hello, world!");
   
 - `Output`는 기본적으로 `false`인 선택적 특성입니다. `true`이면 먼저 매개 변수에 값이 지정되어야 Execute 메서드에서 반환될 수 있습니다.  
   
-  예를 들어 개체에 적용된  
+  예를 들면 다음과 같습니다.  
   
 ```  
 <ParameterGroup>  
@@ -192,5 +192,5 @@ File.WriteAllText(Path, content);
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [작업](../msbuild/msbuild-tasks.md)   
+ [임무](../msbuild/msbuild-tasks.md)   
  [연습: 인라인 작업 만들기](../msbuild/walkthrough-creating-an-inline-task.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439379"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841875"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63439379"
  `$(MSBuildToolsPath)` 값은 일반 .targets 파일의 경로를 지정합니다. `ToolsVersion`이 4.0인 경우 파일의 위치는 `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`입니다.  
   
 > [!NOTE]
-> 대상을 직접 만드는 방법에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. 사용 하는 방법에 대 한 자세한 합니다 `Import` 프로젝트 파일을 다른 프로젝트 파일에 삽입할 요소를 참조 하세요 [Import 요소 (MSBuild)](../msbuild/import-element-msbuild.md) 및 [방법: 여러 프로젝트 파일에서 동일한 대상 사용](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)합니다.  
+> 대상을 직접 만드는 방법에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. 요소를 사용 하 여 `Import` 프로젝트 파일을 다른 프로젝트 파일에 삽입 하는 방법에 대 한 자세한 내용은 [Import 요소 (MSBuild)](../msbuild/import-element-msbuild.md) 및 [방법: 여러 프로젝트 파일에서 동일한 대상 사용](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)을 참조 하세요.  
   
 ## <a name="common-targets-files"></a>일반 .Targets 파일  
   
@@ -45,6 +45,6 @@ ms.locfileid: "63439379"
 |Microsoft.VisualBasic.targets|Visual Basic 프로젝트에 대한 표준 빌드 프로세스의 단계를 정의합니다.<br /><br /> Visual Basic 프로젝트 파일(.vbproj)을 통해 가져옵니다. 이러한 파일에는 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` 문이 포함됩니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)   
+ [Import 요소 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)

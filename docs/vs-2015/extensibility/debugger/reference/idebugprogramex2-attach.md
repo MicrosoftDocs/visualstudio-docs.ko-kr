@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach | Microsoft Docs
+title: 'IDebugProgramEx2:: Attach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4fe729f2fc196380a3db1a60d1c32f62bbd70998
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439165"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841990"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,22 +45,22 @@ int Attach( 
   
 #### <a name="parameters"></a>매개 변수  
  `pCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 연결 된 디버그 엔진 이벤트를 전송 하는 콜백 함수를 나타내는 개체입니다.  
+ 진행 연결 된 디버그 엔진이 이벤트를 보내는 콜백 함수를 나타내는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.  
   
  `dwReason`  
- [in] 값을 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 연결 작업에 대 한 이유를 설명 하는 열거형입니다.  
+ 진행 연결 작업의 원인을 설명 하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다.  
   
  `pSession`  
- [in] 프로그램에 연결 된 세션을 고유 하 게 식별 하는 값입니다.  
+ 진행 프로그램에 연결 되는 세션을 고유 하 게 식별 하는 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 이 메서드에서 반환 해야 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` 프로그램 이미 연결 된 경우.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 프로그램이 이미 연결 되어 있으면이 메서드는를 반환 해야 합니다 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` .  
   
 ## <a name="remarks"></a>설명  
- 프로그램을 포함 하는 포트에 값을 사용할 수 `pSession` 세션 프로그램에 연결 하려고 합니다. 확인 하려면. 예를 들어, 포트를 프로세스에 연결 하는 한 번에 하나만 디버그 세션을 허용 하는 경우 포트 동일한 세션 프로세스에서 다른 프로그램에 이미 연결 되어 있는지 확인할 수 있습니다.  
+ 프로그램을 포함 하는 포트는의 값을 사용 `pSession` 하 여 프로그램에 연결 하려고 하는 세션을 확인할 수 있습니다. 예를 들어 포트에서 한 번에 하나의 디버그 세션만 프로세스에 연결할 수 있는 경우 포트는 동일한 세션이 프로세스의 다른 프로그램에 이미 연결 되어 있는지 확인할 수 있습니다.  
   
 > [!NOTE]
-> 인터페이스에 전달 된 `pSession` 쿠키를 고유 하 게이 프로그램에 연결 하 여 세션 디버그 관리자를 식별 하는 값으로 서만 처리할지 제공 된 인터페이스의 메서드는 작동 합니다.  
+> 전달 된 인터페이스는 `pSession` 이 프로그램에 연결 하는 세션 디버그 관리자를 고유 하 게 식별 하는 값인 쿠키로만 처리 됩니다. 제공 된 인터페이스의 메서드는 모두 작동 하지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

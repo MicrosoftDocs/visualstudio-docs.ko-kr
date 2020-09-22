@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7ef4ab516bffbc13f47616c2f20fdd71cac38b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418332"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841775"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-컴파일 대상에 있는 소스 파일에서 지정 된 줄 번호 또는 근처의 줄 번호를 확인 합니다.  
+소스 파일의 지정 된 줄 번호가 또는 거의 compiland 줄 번호를 결정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,28 +39,28 @@ HRESULT findLinesByLinenum ( 
   
 #### <a name="parameters"></a>매개 변수  
  `compiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 컴파일 대상 줄 번호에 대 한 검색을 나타내는 개체입니다. 이 매개 변수 수 없습니다 `NULL`합니다.  
+ 진행 줄 번호를 검색할 compiland를 나타내는 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체입니다. 이 매개 변수는 `NULL`일 수 없습니다.  
   
  `file`  
- [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일에서 검색을 나타내는 개체입니다. 이 매개 변수 수 없습니다 `NULL`합니다.  
+ 진행 검색할 소스 파일을 나타내는 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 개체입니다. 이 매개 변수는 `NULL`일 수 없습니다.  
   
  `linenum`  
- [in] 1부터 시작 줄 번호를 지정합니다.  
+ 진행 1부터 줄 번호를 지정 합니다.  
   
 > [!NOTE]
-> 모든 선을 지정 하려면 0을 사용할 수 없습니다 (사용 된 [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) 모든 줄 찾기 방법).  
+> 모든 줄을 지정 하는 데 0을 사용할 수 없습니다. [IDiaSession:: findlines](../../debugger/debug-interface-access/idiasession-findlines.md) 메서드를 사용 하 여 모든 줄을 찾습니다.  
   
  `column`  
- [in] 열 번호를 지정합니다. 모든 열을 지정 하려면 0을 사용 합니다. 열이 줄에 대 한 바이트 오프셋입니다.  
+ 진행 열 번호를 지정 합니다. 모든 열을 지정 하려면 0을 사용 합니다. 열은 선으로의 바이트 오프셋입니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta 줄 번호의 목록을 포함 하는 검색 합니다.  
+ 제한이 검색 된 줄 번호의 목록이 포함 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 소스 파일을 열고이 파일에 제공한 컴파일 대상 열거, 각 컴파일 대상 시작 되는 소스 파일의 줄 번호를 찾으려면 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 소스 파일을 열고,이 파일에서 제공 하는 compilands을 열거 하 고, 각 compiland 시작 되는 소스 파일에서 줄 번호를 찾는 방법을 보여 줍니다.  
   
 ```cpp#  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
@@ -102,6 +102,6 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
+ [IDiaSession:: Find회선 Byaddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

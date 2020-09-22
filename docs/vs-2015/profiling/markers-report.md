@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97705dab6f11ca0d9d51c27bfc56d315b454bc52
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837706"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843377"
 ---
 # <a name="markers-report"></a>표식 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

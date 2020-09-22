@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423273"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841410"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 애플리케이션의 코드 액세스 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ ClickOnce 애플리케이션은 .NET Framework를 기반으로 하며 코드 액
 ## <a name="configuring-security-permissions"></a>보안 권한 구성  
  코드 액세스 보안 권한을 제한하기 위해 항상 적절한 영역을 요청하도록 ClickOnce 애플리케이션을 구성해야 합니다. **프로젝트 디자이너** 의 **보안**페이지에서 보안 권한을 구성할 수 있습니다.  
   
- **프로젝트 디자이너** 의 **보안** 페이지에는 **ClickOnce 보안 설정 사용** 확인란이 포함되어 있습니다. 이 확인란을 선택하면 보안 권한 요청이 애플리케이션에 대한 배포 매니페스트에 추가됩니다. 설치 시 요청된 사용 권한이 애플리케이션이 배포된 영역에 대한 기본 사용 권한을 초과할 경우 권한을 부여하라는 메시지가 사용자에게 표시됩니다. 자세한 내용은 [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)합니다.  
+ **프로젝트 디자이너** 의 **보안** 페이지에는 **ClickOnce 보안 설정 사용** 확인란이 포함되어 있습니다. 이 확인란을 선택하면 보안 권한 요청이 애플리케이션에 대한 배포 매니페스트에 추가됩니다. 설치 시 요청된 사용 권한이 애플리케이션이 배포된 영역에 대한 기본 사용 권한을 초과할 경우 권한을 부여하라는 메시지가 사용자에게 표시됩니다. 자세한 내용은 [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md)을 참조하세요.  
   
  서로 다른 위치에서 배포된 애플리케이션에는 메시지 표시 없이 다른 수준의 사용 권한이 부여됩니다. 예를 들어 애플리케이션이 인터넷에서 배포된 경우 매우 제한적인 권한 집합을 받습니다. 로컬 인트라넷에서 설치하는 경우 더 많은 권한이 부여되고, CD-ROM에서 설치하는 경우 완전 신뢰 권한이 부여됩니다.  
   
- 사용 권한 구성의 시작점으로, **보안** 페이지의 **영역** 목록에서 보안 영역을 선택할 수 있습니다. 애플리케이션이 둘 이상의 영역에서 배포되는 경우 최소한의 권한을 가진 영역을 선택합니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)합니다.  
+ 사용 권한 구성의 시작점으로, **보안** 페이지의 **영역** 목록에서 보안 영역을 선택할 수 있습니다. 애플리케이션이 둘 이상의 영역에서 배포되는 경우 최소한의 권한을 가진 영역을 선택합니다. 자세한 내용은 [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)을 참조하십시오.  
   
- 설정할 수 있는 속성은 사용 권한 집합에 따라 달라집니다. 일부 사용 권한 집합에는 구성 가능한 속성이 없습니다. 애플리케이션이 요청할 수 있는 사용 권한의 전체 목록에 대한 자세한 내용은 <xref:System.Security.Permissions>를 참조하세요. 사용자 지정 영역에 대 한 권한을 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한을 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)합니다.  
+ 설정할 수 있는 속성은 사용 권한 집합에 따라 달라집니다. 일부 사용 권한 집합에는 구성 가능한 속성이 없습니다. 애플리케이션이 요청할 수 있는 사용 권한의 전체 목록에 대한 자세한 내용은 <xref:System.Security.Permissions>를 참조하세요. 사용자 지정 영역에 대해 권한을 설정하는 방법에 대한 자세한 내용은 [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)을 참조하세요.  
   
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>사용 권한이 제한된 애플리케이션 디버그  
  개발자는 대개 완전 신뢰 권한으로 개발 컴퓨터를 실행합니다. 따라서 사용자가 제한된 권한으로 실행할 때 표시될 수 있는 애플리케이션을 디버그하는 경우 동일한 보안 예외가 표시되지 않습니다.  
@@ -70,7 +70,7 @@ ClickOnce 애플리케이션은 .NET Framework를 기반으로 하며 코드 액
   
  또한 코드를 작성할 때 코드 편집기의 IntelliSense 기능은 구성한 보안 권한에 포함되지 않은 모든 멤버를 사용하지 않도록 설정합니다.  
   
- 자세한 내용은 [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)를 참조하세요.  
+ 자세한 내용은 [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)을 참조하세요.  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>브라우저에서 호스트되는 애플리케이션의 보안 권한  
  Visual Studio에서는 WPF(Windows Presentation Foundation) 애플리케이션에 대해 다음 프로젝트 형식을 제공합니다.  
@@ -87,17 +87,17 @@ ClickOnce 애플리케이션은 .NET Framework를 기반으로 하며 코드 액
   
 - **ClickOnce 보안 설정 사용**  
   
-- **부분 신뢰 응용 프로그램**  
+- **부분 신뢰 애플리케이션**  
   
-- **인터넷 영역** (WPF 웹 브라우저 응용 프로그램에 대한 기본 사용 권한 집합이 선택됨)  
+- **인터넷 영역** (WPF 웹 브라우저 애플리케이션에 대한 기본 사용 권한 집합이 선택됨)  
   
-  **고급 보안 설정** 대화 상자에서 **선택한 권한 집합으로 이 응용 프로그램 디버깅** 확인란이 선택되고 사용할 수 없습니다. 이는 브라우저에서 호스트되는 애플리케이션에 대해 영역에서 디버그를 해제할 수 없기 때문입니다.  
+  **고급 보안 설정** 대화 상자에서 **선택한 권한 집합으로 이 애플리케이션 디버깅** 확인란이 선택되고 사용할 수 없습니다. 이는 브라우저에서 호스트되는 애플리케이션에 대해 영역에서 디버그를 해제할 수 없기 때문입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
  [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)   
  [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버깅](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
  [프로젝트 디자이너, 보안 페이지](../ide/reference/security-page-project-designer.md)

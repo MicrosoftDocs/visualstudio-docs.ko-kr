@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_value | Microsoft Docs'
+title: 'IDiaSymbol:: get_value | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9000a4d0a65fd450e3ef655e6b646990f682ba9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837919"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843383"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-상수 값을 검색합니다.  
+상수 값을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT get_value ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out에서] `VARIANT` 개체는 상수 값이 채워집니다.  
+ [in, out] `VARIANT` 상수 값으로 채워지는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 제공 된 VARIANT는이 메서드에 전달 되기 전에 초기화 되어야 합니다. 자세한 내용은 예제를 참조 하세요.  
+ 제공 된 VARIANT를이 메서드에 전달 하기 전에 초기화 해야 합니다. 자세한 내용은 예제를 참조 하세요.  
   
 ## <a name="example"></a>예제  
   

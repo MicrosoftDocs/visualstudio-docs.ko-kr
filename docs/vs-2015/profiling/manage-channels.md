@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443731"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843420"
 ---
 # <a name="manage-channels"></a>채널 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "63443731"
 ## <a name="sort-by"></a>정렬 기준  
  정렬 기준 컨트롤을 사용하면 현재 확대/축소 수준에 따라 서로 다른 기준으로 스레드를 정렬할 수 있습니다. 이 기능은 특히 특정 패턴을 찾고 있는 경우에 유용합니다. 다음과 같은 기준에 따라 정렬할 수 있습니다.  
   
-|기준|정의|  
+|조건|정의|  
 |--------------|----------------|  
-|시작 시간|시작 시간으로 스레드를 정렬합니다. 기본 정렬 순서입니다.|  
+|Start Time|시작 시간으로 스레드를 정렬합니다. 기본 정렬 순서입니다.|  
 |종료 시간|종료 시간을 기준으로 스레드를 정렬합니다.|  
 |실행|실행에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
 |동기화|동기화에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
 |I/O|I/O(데이터 읽기 및 쓰기)에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
-|Sleep|중지에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
-|페이징|페이징에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
+|절전|중지에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
+|Paging|페이징에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
 |선점|선점에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
 |UI 처리|사용자 인터페이스 처리에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|  
   
@@ -62,6 +62,6 @@ ms.locfileid: "63443731"
  추적에 표식 이벤트가 포함된 경우 이 명령을 사용해서 표식 이벤트를 생성한 스레드에 따라 표식 채널을 그룹화할 수 있습니다.  디스크 채널은 채널 목록의 맨 위로 이동되고, GPU 채널은 맨 아래로 이동됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [확대/축소 컨트롤(스레드 뷰)](../profiling/zoom-control-threads-view.md)   
+ [확대/축소 컨트롤 (스레드 뷰)](../profiling/zoom-control-threads-view.md)   
  [측정 모드 켜기/끄기](../profiling/measure-mode-on-off.md)   
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)

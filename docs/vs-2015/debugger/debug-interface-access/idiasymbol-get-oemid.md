@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_oemid | Microsoft Docs'
+title: 'IDiaSymbol:: get_oemId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 406645893803094ce0ebdd4679d9809d7645401f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798076"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841631"
 ---
-# <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
+# <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-기호 원래 장비 제조업체 (OEM) ID 값을 검색합니다.  
+기호의 OEM (원본 장비 제조업체) ID 값을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT get_oemId ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] OEM을 식별 하는 고유 값을 반환 합니다.  
+ 제한이 OEM을 식별 하는 고유한 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 속성은 사용 하 여 기호에만 적용 됩니다는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 유형의 `SymTagCustomType`합니다.  
+ 이 속성은 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 형식의 기호에만 적용 됩니다 `SymTagCustomType` .  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

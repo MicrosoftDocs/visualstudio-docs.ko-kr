@@ -1,5 +1,5 @@
 ---
-title: '방법: 권한 설정 | Microsoft Docs'
+title: '방법: 권한 설정 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440589"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843402"
 ---
-# <a name="how-to-set-permissions"></a>방법: 사용 권한 설정
+# <a name="how-to-set-permissions"></a>방법: 권한 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 컴퓨터 관리자가 해당 컴퓨터에 대한 관리자 권한이 없는 사용자 또는 그룹에게 프로파일링에 필요한 보안 권한을 부여하는 방식을 설명합니다.  
@@ -70,7 +70,7 @@ ms.locfileid: "63440589"
   
 2. 폴더를 마우스 오른쪽 단추로 클릭하고**속성**을 클릭합니다.  
   
-     **\<폴더 이름> 속성** 대화 상자가 나타납니다.  
+     **\<folder name> 속성** 대화 상자가 나타납니다.  
   
 3. **보안** 탭을 클릭합니다.  
   
@@ -129,4 +129,4 @@ ms.locfileid: "63440589"
 ## <a name="see-also"></a>참고 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)
+ [프로 파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)
