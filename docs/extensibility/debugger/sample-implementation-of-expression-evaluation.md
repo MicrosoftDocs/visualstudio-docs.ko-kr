@@ -107,6 +107,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [조사식 창 식 계산](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [조사식 식 계산](../../extensibility/debugger/evaluating-a-watch-expression.md)
