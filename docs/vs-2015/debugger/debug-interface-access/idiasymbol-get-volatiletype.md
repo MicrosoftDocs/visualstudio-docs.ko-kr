@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d36d688c29894bd65eae29e033ef1d94869e04fd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824684"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842110"
 ---
-# <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
+# <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-사용자 정의 데이터 형식 (UDT) 휘발성 인지 여부를 지정 하는 플래그를 검색 합니다.  
+사용자 정의 데이터 형식 (UDT)이 휘발성 인지 여부를 지정 하는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT get_volatileType ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` UDT는 volatile이 고 그렇지 않으면 인 경우 반환 `FALSE`합니다.  
+ 제한이 `TRUE` UDT가 volatile 이면를 반환 하 고, 그렇지 않으면를 반환 `FALSE` 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- C++를 사용 하 여 UDT를 표시할 수 있습니다는 `volatile` 키워드를 나타내는 다음 존재에 대 한 액세스에서 해당 콘텐츠를 가정할 수 없습니다.  
+ C + +에서 UDT는 키워드를 사용 하 여 표시할 수 있습니다 `volatile` .이는 해당 내용이 다음에 대 한 액세스에서 한 번에 있는 것으로 간주할 수 없음을 나타냅니다.  
   
-## <a name="see-also"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

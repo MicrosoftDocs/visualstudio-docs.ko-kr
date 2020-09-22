@@ -1,29 +1,29 @@
 ---
-title: 안정성 경고
+title: 안정성 규칙
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
-- warnings, reliability
-- reliability warnings
-- managed code analysis warnings, reliability warnings
+- rules, reliability
+- reliability rules
+- managed code analysis rules, reliability rules
 ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6350c98f5fb4bfab5cfd7d70a5d509d3098b15f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: e0a35b9c49f2eb5655eeb67721b0fafdbbe1e087
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508537"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808274"
 ---
-# <a name="reliability-warnings"></a>안정성 경고
+# <a name="reliability-rules"></a>안정성 규칙
 
-안정성 경고는 올바른 메모리 및 스레드 사용량과 같은 라이브러리 및 응용 프로그램 안정성을 지원 합니다. 안정성 규칙은 다음과 같습니다.
+안정성 규칙은 올바른 메모리 및 스레드 사용과 같은 라이브러리 및 응용 프로그램 안정성을 지원 합니다.
 
 |규칙|설명|
 |----------|-----------------|

@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ad200d75c5534ddbe9d4ad4d9835417df6515f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429107"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842058"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-문서의 특성을 설명합니다.  
+문서의 특성을 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,21 +35,21 @@ const TEXT_DOC_ATTR_2 TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;  
 ```  
   
-## <a name="members"></a>멤버  
+## <a name="members"></a>구성원  
  TEXT_DOC_ATTR_READONLY_2  
- 문서 읽기 전용임을 나타냅니다.  
+ 문서가 읽기 전용 임을 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
   
 > [!NOTE]
-> 이 값의 C# 어셈블리에서 실제로 정의 되지 않았습니다. 대신, 소스 파일에 정의 복사 해야 합니다.  
+> 이 값은 c #에 대 한 어셈블리에 실제로 정의 되어 있지 않습니다. 대신, 정의를 소스 파일에 복사 해야 합니다.  
   
- 인수로 전달 된 [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) 메서드.  
+ [Onupdatedocumentattributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) 메서드에 인수로 전달 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

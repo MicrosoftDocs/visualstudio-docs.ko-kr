@@ -11,51 +11,51 @@ caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430588"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841991"
 ---
 # <a name="creating-an-options-page"></a>옵션 페이지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 연습을 검토 하 고 속성을 설정 하려면 속성 표를 사용 하는 간단한 도구/옵션 페이지를 만듭니다.  
+이 연습에서는 속성 표를 사용 하 여 속성을 검사 하 고 설정 하는 간단한 도구/옵션 페이지를 만듭니다.  
   
- 이러한 속성을 저장 및 설정 파일에서 복원할 다음이 단계를 수행 하 고 확인할 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)합니다.  
+ 이러한 속성을에 저장 하 고 설정 파일에서 복원 하려면 다음 단계를 수행 하 고 [설정 범주 만들기](../extensibility/creating-a-settings-category.md)를 참조 하세요.  
   
- MPF 도구 옵션 페이지를 만들 수 있도록 두 개의 클래스를 제공 합니다 <xref:Microsoft.VisualStudio.Shell.Package> 클래스 및 <xref:Microsoft.VisualStudio.Shell.DialogPage> 클래스입니다. 패키지 클래스를 서브클래싱하 면 이러한 페이지에 대 한 컨테이너를 제공 하려면 VSPackage를 만듭니다. 클래스는 DialogPage에서 파생 하 여 각 도구 옵션 페이지를 만듭니다.  
+ MPF는 도구 옵션 페이지, 클래스 및 클래스를 만드는 데 도움이 되는 두 가지 클래스를 제공 합니다 <xref:Microsoft.VisualStudio.Shell.Package> <xref:Microsoft.VisualStudio.Shell.DialogPage> . 패키지 클래스를 서브클래싱 하 여 이러한 페이지에 대 한 컨테이너를 제공 하는 VSPackage를 만듭니다. DialogPage 클래스에서 파생 하 여 각 도구 옵션 페이지를 만듭니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
+ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.  
   
 ## <a name="creating-a-tools-options-grid-page"></a>도구 옵션 그리드 페이지 만들기  
- 이 섹션에서는 간단한 도구 옵션 속성 표를 만들 수 있습니다. 이 표를 사용 하 여 표시 하 고 속성의 값을 변경 합니다.  
+ 이 섹션에서는 간단한 도구 옵션 속성 표를 만듭니다. 이 표를 사용 하 여 속성의 값을 표시 하 고 변경할 수 있습니다.  
   
 #### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>VSIX 프로젝트를 만들고 VSPackage를 추가 하려면  
   
-1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 라는 VSIX 프로젝트 `MyToolsOptionsExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C# / 확장성**합니다.  
+1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트로 시작 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]이라는 VSIX 프로젝트를 만듭니다 `MyToolsOptionsExtension` . **새 프로젝트** 대화 상자의 **Visual c #/확장성**에서 VSIX 프로젝트 템플릿을 찾을 수 있습니다.  
   
-2. 라는 이름의 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가할 `MyToolsOptionsPackage`합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가 / 새 항목**합니다. 에 **새 항목 추가 대화 상자**로 이동 하세요 **Visual C# 항목 / 확장성** 선택한 **Visual Studio 패키지**합니다. 에 **이름을** 대화 상자의 맨 아래에 있는 필드에 파일 이름을 `MyToolsOptionsPackage.cs`입니다. VSPackage를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [VSPackage를 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-vspackage.md)합니다.  
+2. 이라는 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가 `MyToolsOptionsPackage` 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가/새 항목**을 선택 합니다. **새 항목 추가 대화 상자**에서 **Visual c # 항목/확장성** 으로 이동 하 고 **visual Studio 패키지**를 선택 합니다. 대화 상자의 맨 아래에 있는 **이름** 필드에서 파일 이름을으로 변경 합니다 `MyToolsOptionsPackage.cs` . VSPackage를 만드는 방법에 대 한 자세한 내용은 VSPackage를 [사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)를 참조 하세요.  
   
 #### <a name="to-create-the-tools-options-property-grid"></a>도구 옵션 속성 표를 만들려면  
   
 1. 코드 편집기에서 MyToolsOptionsPackage 파일을 엽니다.  
   
-2. 다음 추가 문을 사용 하 여 합니다.  
+2. 다음 using 문을 추가 합니다.  
   
     ```csharp  
     using System.ComponentModel;  
     ```  
   
-3. OptionPageGrid 클래스를 선언 하 고에서 파생 <xref:Microsoft.VisualStudio.Shell.DialogPage>합니다.  
+3. 도구 페이지 그리드 클래스를 선언 하 고에서 파생 <xref:Microsoft.VisualStudio.Shell.DialogPage> 합니다.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
     {  }  
     ```  
   
-4. 적용 된 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> VSPackage 클래스에 옵션 범주 옵션 페이지에 대 한 이름과 OptionPageGrid 클래스에 할당 합니다. 결과 다음과 같습니다.  
+4. VSPackage 클래스에를 적용 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 하 여 옵션 범주에 대 한 옵션 범주 및 옵션 페이지 이름을 지정 합니다. 결과는 다음과 같습니다.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -67,13 +67,13 @@ ms.locfileid: "63430588"
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-5. 추가 된 `OptionInteger` 속성을는 `OptionPageGrid` 클래스입니다.  
+5. `OptionInteger`클래스에 속성을 추가 `OptionPageGrid` 합니다.  
   
-    - 적용을 <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> 속성 표 범주 속성에 할당 합니다.  
+    - 속성 <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> 표 범주를 속성에 할당 하려면를 적용 합니다.  
   
-    - 적용을 <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> 이름을 속성에 할당할 수 있습니다.  
+    - 를 적용 <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> 하 여 속성에 이름을 지정 합니다.  
   
-    - 적용 된 <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> 에 할당할 속성을 설명 합니다.  
+    - <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName>속성에 설명을 할당 하려면를 적용 합니다.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -92,28 +92,28 @@ ms.locfileid: "63430588"
     ```  
   
     > [!NOTE]
-    > 기본 구현을 <xref:Microsoft.VisualStudio.Shell.DialogPage> 있는 적절 한 변환기 또는 구조체 또는 배열 속성을 적절 한 변환기를 확장할 수 있는 속성을 지원 합니다. 변환기의 목록에 대 한 참조를 <xref:System.ComponentModel> 네임 스페이스입니다.  
+    > 의 기본 구현은 적절 한 <xref:Microsoft.VisualStudio.Shell.DialogPage> 변환기가 있거나 적절 한 변환기가 있는 속성으로 확장 될 수 있는 구조체 또는 배열인 속성을 지원 합니다. 변환기 목록은 네임 스페이스를 참조 하세요 <xref:System.ComponentModel> .  
   
 6. 프로젝트를 빌드하고 디버깅을 시작합니다.  
   
-7. Visual Studio의 실험적 인스턴스에서는 **도구** 메뉴 **옵션**합니다.  
+7. Visual Studio의 실험적 인스턴스에서 **도구** 메뉴의 **옵션**을 클릭 합니다.  
   
-     왼쪽된 창에 나타납니다 **My Category**합니다. (옵션 범주는 사전순으로 나열을 목록 아래쪽 중간에 대 한 표시 되어야 하므로.) 오픈 **My Category** 을 클릭 한 다음 **그리드 페이지 내**합니다. 옵션 표의 오른쪽 창에 나타납니다. 속성 범주가 **My Options**, 속성 이름은 **내 정수 옵션**합니다. 속성 설명 **내 정수 옵션**, 창의 아래쪽에 나타납니다. 256의 초기 값에서 다른 값을 변경 합니다. 클릭 **확인**를 닫은 다음 **그리드 페이지 내**합니다. 지속 되 면 새 값을 볼 수 있습니다.  
+     왼쪽 창에 **내 범주가**표시 됩니다. 옵션 범주는 사전순으로 나열 되므로 목록의 중간에 표시 되어야 합니다. **내 범주** 를 열고 **내 그리드 페이지**를 클릭 합니다. 오른쪽 창에 옵션 표가 표시 됩니다. 속성 범주는 **내 옵션**이며 속성 이름은 **내 정수 옵션**입니다. 속성 설명, **내 정수 옵션**은 창 아래쪽에 표시 됩니다. 값을 초기 값 256에서 다른 값으로 변경 합니다. **확인**을 클릭 한 다음 **내 그리드 페이지**를 다시 엽니다. 새 값이 유지 되는 것을 볼 수 있습니다.  
   
-     옵션 페이지에도 Visual Studio의 빠른 시작을 통해 제공 됩니다. IDE의 오른쪽 위 모서리에서 빠른 실행 창에서 입력 **My Category** 나타납니다 **My Category 그리드 페이지 내->** 드롭다운에 나열 합니다.  
+     옵션 페이지는 Visual Studio의 빠른 실행을 통해서도 사용할 수 있습니다. IDE의 오른쪽 위 모퉁이에 있는 빠른 실행 창에서 **내 범주** 를 입력 하면 드롭다운에 나열 된 내 **그리드 페이지가 > 내 범주가** 표시 됩니다.  
   
-## <a name="creating-a-tools-options-custom-page"></a>도구 옵션 사용자 지정 만들기 페이지  
- 이 섹션에서는 도구 옵션 페이지를 사용자 지정 UI를 사용 하 여 만듭니다. 이 페이지를 사용 하 여 표시 하 고 속성의 값을 변경 합니다.  
+## <a name="creating-a-tools-options-custom-page"></a>도구 옵션 만들기 사용자 지정 페이지  
+ 이 섹션에서는 사용자 지정 UI를 사용 하 여 도구 옵션 페이지를 만듭니다. 이 페이지를 사용 하 여 속성의 값을 표시 하 고 변경할 수 있습니다.  
   
 1. 코드 편집기에서 MyToolsOptionsPackage 파일을 엽니다.  
   
-2. 다음 추가 문을 사용 하 여 합니다.  
+2. 다음 using 문을 추가 합니다.  
   
     ```csharp  
     using System.Windows.Forms;  
     ```  
   
-3. 추가 `OptionPageCustom` 직전 클래스는 `OptionPageGrid` 클래스입니다. 새 클래스를 파생 `DialogPage`합니다.  
+3. 클래스 `OptionPageCustom` 바로 앞에 클래스를 추가 `OptionPageGrid` 합니다. 에서 새 클래스를 파생 시킵니다 `DialogPage` .  
   
     ```csharp  
     public class OptionPageCustom : DialogPage  
@@ -128,7 +128,7 @@ ms.locfileid: "63430588"
     }  
     ```  
   
-4. GUID 특성을 추가 합니다. OptionString 속성을 추가 합니다.  
+4. GUID 특성을 추가 합니다. 추가 문자열 속성을 추가 합니다.  
   
     ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
@@ -144,7 +144,7 @@ ms.locfileid: "63430588"
     }  
     ```  
   
-5. 두 번째 적용 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> VSPackage 클래스입니다. 이 특성을 옵션 범주 이름과 옵션 페이지 클래스를 할당합니다.  
+5. VSPackage 클래스에 두 번째를 적용 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 합니다. 이 특성은 클래스에 옵션 범주 및 옵션 페이지 이름을 할당 합니다.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -158,13 +158,13 @@ ms.locfileid: "63430588"
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-6. 새 **사용자 정의 컨트롤** MyUserControl 프로젝트에 이름이 있습니다.  
+6. MyUserControl 라는 새 **사용자 정의 컨트롤** 을 프로젝트에 추가 합니다.  
   
-7. 추가 된 **텍스트 상자에 붙여넣습니다** 컨트롤을 사용자 컨트롤입니다.  
+7. **TextBox** 컨트롤을 사용자 정의 컨트롤에 추가 합니다.  
   
-     에 **속성** 창의 도구 모음에서 클릭를 **이벤트** 단추를 두 번 클릭 하는 **둡니다** 이벤트입니다. 새 이벤트 처리기를 MyUserControl.cs 코드에 표시 됩니다.  
+     **속성** 창의 도구 모음에서 **이벤트** 단추를 클릭 한 다음 **Leave** 이벤트를 두 번 클릭 합니다. 새 이벤트 처리기가 MyUserControl.cs 코드에 나타납니다.  
   
-8. 추가 공용 `OptionsPage` 필드는 `Initialize` 컨트롤 클래스 및 옵션을 설정 하는 이벤트 처리기 값 입력란의 내용을 업데이트 방법:  
+8. `OptionsPage`컨트롤 클래스에 public 필드와 메서드를 추가 하 `Initialize` 고 이벤트 처리기를 업데이트 하 여 옵션 값을 텍스트 상자의 내용으로 설정 합니다.  
   
     ```csharp  
     public partial class MyUserControl : UserControl  
@@ -188,9 +188,9 @@ ms.locfileid: "63430588"
     }  
     ```  
   
-     합니다 `optionsPage` 부모에 대 한 참조를 보유 하는 필드 `OptionPageCustom` 인스턴스. 합니다 `Initialize` 메서드 표시 `OptionString` 에 **텍스트 상자**합니다. 이벤트 처리기의 현재 값을 씁니다를 **텍스트 상자에 붙여넣습니다** 에 `OptionString` 경우 리프를 집중 합니다 **텍스트 상자에 붙여넣습니다**.  
+     필드에는 `optionsPage` 부모 인스턴스에 대 한 참조가 포함 `OptionPageCustom` 됩니다. `Initialize`메서드는 `OptionString` **텍스트 상자**에를 표시 합니다. 이벤트 처리기는 **TextBox** `OptionString` 포커스가 **Textbox**를 벗어날 때 텍스트 상자의 현재 값을에 씁니다.  
   
-9. 패키지 코드 파일에 대 한 재정의 추가 합니다 `OptionPageCustom.Window` OptionPageCustom 클래스 만들기, 초기화 및 인스턴스를 반환 하는 속성 `MyUserControl`합니다. 클래스는 이제 다음과 같이 표시 됩니다.  
+9. 패키지 코드 파일에서 속성에 대 한 재정의를 `OptionPageCustom.Window` OptionPageCustom 클래스에 추가 하 여의 인스턴스를 만들고 초기화 하 고 반환 `MyUserControl` 합니다. 이제 클래스는 다음과 같습니다.  
   
     ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
@@ -219,16 +219,16 @@ ms.locfileid: "63430588"
   
 10. 프로젝트를 빌드하고 실행합니다.  
   
-11. 실험적 인스턴스를 클릭 **도구 / 옵션**합니다.  
+11. 실험적 인스턴스에서 **도구/옵션**을 클릭 합니다.  
   
-12. 찾을 **내 범주** 차례로 **내 사용자 지정 페이지**합니다.  
+12. **내 범주** 를 찾은 다음 **사용자 지정 페이지**를 찾습니다.  
   
-13. 값을 변경 **OptionString**합니다. 클릭 **확인**를 닫은 다음 **내 사용자 지정 페이지**합니다. 새 값을 지속에 볼 수 있습니다.  
+13. 기본값 **문자열**의 값을 변경 합니다. **확인**을 클릭 한 다음 **내 사용자 지정 페이지**를 다시 엽니다. 새 값이 유지 된 것을 볼 수 있습니다.  
   
 ## <a name="accessing-options"></a>액세스 옵션  
- 이 섹션에서는 연결 된 도구 옵션 페이지를 호스트 하는 VSPackage에서 옵션의 값을 가져옵니다. Public 속성의 값을 가져오려면 동일한 기술을 사용할 수 있습니다.  
+ 이 섹션에서는 연결 된 도구 옵션 페이지를 호스트 하는 VSPackage 옵션의 값을 가져옵니다. 동일한 기술을 사용 하 여 공용 속성의 값을 가져올 수 있습니다.  
   
-1. 패키지 코드 파일에서 이라는 공용 속성을 추가 **OptionInteger** 에 **MyToolsOptionsPackage** 클래스입니다.  
+1. 패키지 코드 파일에서 **MyToolsOptionsPackage** 클래스 **에 라는 public 속성을 추가** 합니다.  
   
     ```  
     public int OptionInteger  
@@ -242,11 +242,11 @@ ms.locfileid: "63430588"
   
     ```  
   
-     이 코드는 호출 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 만들거나 검색 하는 `OptionPageGrid` 인스턴스. `OptionPageGrid` 호출 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 해당 옵션은 공용 속성을 로드 합니다.  
+     이 코드 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 는를 호출 하 여 인스턴스를 만들거나 검색 `OptionPageGrid` 합니다. `OptionPageGrid` 는 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 를 호출 하 여 해당 옵션을 로드 합니다 .이는 공용 속성입니다.  
   
-2. 이제 라는 사용자 지정 명령 항목 서식 파일을 추가할 **MyToolsOptionsCommand** 값을 표시 합니다. 에 **새 항목 추가** 대화 상자에서로 이동 **Visual C# / 확장성** 선택한 **사용자 지정 명령**입니다. 에 **이름을** 창의 맨 아래에 있는 필드에 명령 파일 이름을 **MyToolsOptionsCommand.cs**합니다.  
+2. 이제 **MyToolsOptionsCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 하 여 값을 표시 합니다. **새 항목 추가** 대화 상자에서 **Visual c #/확장성** 으로 이동 하 고 **사용자 지정 명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 **MyToolsOptionsCommand.cs**로 변경 합니다.  
   
-3. MyToolsOptionsCommand 파일에서 바꾸기 명령의 본문 `ShowMessageBox` 메서드를 다음:  
+3. MyToolsOptionsCommand 파일에서 명령의 메서드 본문을 `ShowMessageBox` 다음과 같이 바꿉니다.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -259,9 +259,9 @@ ms.locfileid: "63430588"
   
 4. 프로젝트를 빌드하고 디버깅을 시작합니다.  
   
-5. 실험적 인스턴스에서는 **도구** 메뉴에서 클릭 **MyToolsOptionsCommand 호출**합니다.  
+5. 실험적 인스턴스의 **도구** 메뉴에서 **MyToolsOptionsCommand 호출**을 클릭 합니다.  
   
-     현재 값을 표시 하는 메시지 상자 `OptionInteger`합니다.  
+     메시지 상자에의 현재 값이 표시 됩니다 `OptionInteger` .  
   
 ## <a name="see-also"></a>참고 항목  
  [옵션 및 옵션 페이지](../extensibility/internals/options-and-options-pages.md)

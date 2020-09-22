@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87adaa2e43068784e5ec6488030f147891a027dd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817247"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841974"
 ---
-# <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
+# <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-비동기 (구조적된) 예외 처리 함수에 포함 되는지 여부를 지정 하는 플래그를 검색 합니다.  
+함수가 비동기 (구조적) 예외 처리를 포함 하는지 여부를 지정 하는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,20 +35,20 @@ HRESULT get_hasEHa(
   
 #### <a name="parameters"></a>매개 변수  
  `pFlag`  
- [out] 반환 `TRUE` 함수에 모든 비동기 예외 처리;이 고, 그렇지 반환 `FALSE`합니다.  
+ 제한이 `TRUE` 함수에 비동기 예외 처리가 있으면를 반환 하 고, 그렇지 않으면를 반환 `FALSE` 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 비동기 구조적된 예외 처리 사용을 혼합할 수 있습니다 C++-스타일 예외 처리 하지만 /EHa를 특정 컴파일러 스위치를 사용 하도록 설정 해야 합니다.  
+ 비동기 또는 구조적 예외 처리를 c + + 스타일 예외 처리와 혼합할 수 있지만이를 활성화 하려면 특정 컴파일러 스위치/EHa가 필요 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
-|요구 사항|설명|  
+|요구 사항|Description|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
 |버전:|DIA SDK v8.0|  

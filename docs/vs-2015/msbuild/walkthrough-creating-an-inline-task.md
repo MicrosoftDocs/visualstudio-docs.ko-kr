@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445625"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842187"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>연습: 인라인 작업 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 자세한 내용은 [인라인 작업](../msbuild/msbuild-inline-tasks.md)을 참조하세요.  
+MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 자세한 내용은 [인라인 작업](../msbuild/msbuild-inline-tasks.md)을 참조 하세요.  
   
  이 연습에서는 이러한 인라인 작업을 만들고 실행하는 방법을 보여 줍니다.  
   
@@ -47,13 +47,13 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 #### <a name="to-create-and-modify-a-project-file"></a>프로젝트 파일을 만들고 수정하려면  
   
-1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **프로젝트**를 클릭 합니다.  
   
 2. **새 프로젝트** 대화 상자에서 Visual C# 프로젝트 형식을 선택하고 **Windows Forms 애플리케이션** 템플릿을 선택합니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 `D:\`와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 `InlineTasks`인지 확인합니다.  
   
      **확인**을 클릭하여 프로젝트 파일을 만듭니다.  
   
-3. **솔루션 탐색기**에서 InlineTasks 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음 **프로젝트 언로드**를 클릭합니다.  
+3. **솔루션 탐색기**에서 InlineTasks 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음, **프로젝트 언로드**를 클릭합니다.  
   
 4. 프로젝트 노드를 다시 마우스 오른쪽 단추로 클릭하고 **InlineTasks.csproj 편집**을 클릭합니다.  
   
@@ -95,9 +95,9 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 1. **시작**을 클릭하고 **모든 프로그램**을 클릭한 후 **Visual Studio Tools** 폴더를 찾고 **Visual Studio 명령 프롬프트**를 마우스 오른쪽 단추로 클릭합니다.  
   
-2. **명령 프롬프트 창**에서 프로젝트 파일이 들어 있는 폴더(이 경우 D:\InlineTasks\InlineTasks\\)를 찾습니다.  
+2. **명령 프롬프트 창**에서 프로젝트 파일이 들어 있는 폴더(이 경우 D:\InlineTasks\InlineTasks\\ )를 찾습니다.  
   
-3. 명령 스위치 없이 **msbuild**를 입력하고 Enter 키를 누릅니다. 기본적으로 이렇게 하면 InlineTasks.csproj 파일이 빌드되고 기본 대상 TestBuild가 처리됩니다. 그 결과 Hello 작업이 호출됩니다.  
+3. 명령 스위치 없이 **msbuild** 를 입력 하 고 enter 키를 누릅니다. 기본적으로 이렇게 하면 InlineTasks.csproj 파일이 빌드되고 기본 대상 TestBuild가 처리됩니다. 그 결과 Hello 작업이 호출됩니다.  
   
 4. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.  
   
@@ -131,7 +131,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
    </Target>  
    ```  
   
-2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild**를 입력하고 Enter 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.  
+2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild** 를 입력 하 고 enter 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.  
   
 3. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.  
   
@@ -167,7 +167,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
    </Target>  
    ```  
   
-2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild**를 입력하고 Enter 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.  
+2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild** 를 입력 하 고 enter 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.  
   
 3. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.  
   
@@ -222,7 +222,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
    </Target>  
    ```  
   
-2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild**를 입력하고 Enter 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 RegX 작업이 호출됩니다.  
+2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild** 를 입력 하 고 enter 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 RegX 작업이 호출됩니다.  
   
 3. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.  
   
@@ -241,7 +241,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   입력 매개 변수의 값은 TestBuild 대상이 RegX 작업을 호출하는 경우에 설정됩니다. RegX 작업은 모든 파일을 읽고 정규식과 일치하는 파일의 목록을 반환합니다. 이 목록은 `Result` 출력 매개 변수로 반환되고, 해당 출력 매개 변수는 MSBuild 항목 `MatchedFiles`로 내보내집니다.  
   
 ### <a name="handling-reserved-characters"></a>예약된 문자 처리  
- MSBuild 파서는 인라인 작업을 XML로 처리합니다. XML에서 예약된 의미를 갖는 문자(예: "\<" 및 ">")는 검색된 후 .NET 소스 코드가 아니라 마치 XML인 것처럼 처리됩니다. `Files.Length > 0`과 같은 코드 식에 예약된 문자를 포함하려면 다음과 같이 해당 콘텐츠가 CDATA 식에 포함되도록 `Code` 요소를 씁니다.  
+ MSBuild 파서는 인라인 작업을 XML로 처리합니다. XML에서 예약된 의미를 갖는 문자(예: "\<" and ">")는 검색된 후 .NET 소스 코드가 아니라 마치 XML인 것처럼 처리됩니다. `Files.Length > 0`과 같은 코드 식에 예약된 문자를 포함하려면 다음과 같이 해당 콘텐츠가 CDATA 식에 포함되도록 `Code` 요소를 씁니다.  
   
  `<Code Type="Fragment" Language="cs">`  
   
@@ -255,5 +255,5 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 ## <a name="see-also"></a>참고 항목  
  [인라인 작업](../msbuild/msbuild-inline-tasks.md)   
- [작업](../msbuild/msbuild-tasks.md)   
+ [임무](../msbuild/msbuild-tasks.md)   
  [대상](../msbuild/msbuild-targets.md)

@@ -13,13 +13,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a988e8f5409a3a9e1f9fd8a4b5bd863a3309acc3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429039"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842214"
 ---
-# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
+# <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 검색할 기호 정보의 종류를 지정 합니다.  
@@ -44,23 +44,23 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
   
 ```  
   
-## <a name="members"></a>멤버  
+## <a name="members"></a>구성원  
  SSIF_NONE  
- 플래그가 없습니다 나타냅니다.  
+ 플래그가 없음을 나타냅니다.  
   
  SSIF_VERBOSE_SEARCH_INFO  
- 기호를 찾는 데 사용 되는 경로 검색 하는 모든 반환  
+ 기호를 찾는 데 사용 되는 모든 검색 경로를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 플래그를 매개 변수로 전달 되는 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) 정보의 양을 결정 하는 메서드를 반환 합니다.  
+ 이러한 플래그는 반환 되는 정보의 양을 확인 하기 위해 [Get기호 정보](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) 메서드에 매개 변수로 전달 됩니다.  
   
 > [!NOTE]
-> 현재만 `SSIF_VERBOSE_SEARCH_INFO` 지원으로 지정 되어야 합니다는 `dwFlags` 매개 변수를 `IDebugModule3::GetSymbolInfo`입니다. 다른 모든 값은 오류를 반환 합니다.  
+> 현재만 `SSIF_VERBOSE_SEARCH_INFO` 지원 되며 `dwFlags` 에 대 한 매개 변수로 지정 해야 합니다 `IDebugModule3::GetSymbolInfo` . 다른 모든 값은 오류를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: msdbg.h  
+ 헤더: msdbg .h  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

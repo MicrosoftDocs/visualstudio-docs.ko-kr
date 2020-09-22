@@ -1,5 +1,5 @@
 ---
-title: 'DA0014: 활성 메모리를 디스크에 페이징하는 비율이 매우 높습니다. | Microsoft Docs'
+title: 'DA0014: 활성 메모리를 디스크에 페이징하는 비율이 극도로 높습니다. | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbf391f96cd21f0c473589d4992083963ff65d55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440921"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841903"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: 활성 메모리를 디스크에 페이징하는 비율이 매우 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0014 |  
 | 범주 | 메모리 및 페이징 |  
-| 프로 파일링 방법을 | 모든 |  
-| 메시지 | 활성 메모리를 디스크에 페이징 하는 비율이 극도로 높다는 발생 합니다. 애플리케이션이 메모리 바인딩될 수 있습니다.|  
+| 프로 파일링 방법 | 모두 |  
+| 메시지 | 활성 메모리를 디스크에 페이징 하는 비율이 매우 높습니다. 애플리케이션이 메모리 바인딩될 수 있습니다.|  
 | 규칙 유형 | 경고 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 25개 이상의 샘플을 수집해야 합니다.  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015933"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739943"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부
   사용자 고유의 프로젝트 항목 형식을 만들어 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 sharepoint 사이트에 대 한 사용자 지정 작업을 만들기 위해 SharePoint 프로젝트에 추가할 수 있는 프로젝트 항목을 만듭니다. 사용자 지정 작업은 SharePoint 사이트의 **사이트 작업** 메뉴에 메뉴 항목을 추가 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "86015933"
 > [!NOTE]
 > 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 주는 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 에서 샘플을 다운로드할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 Visual Studio
@@ -295,7 +295,7 @@ ms.locfileid: "86015933"
 
 1. **솔루션 탐색기**에서 CustomActionProjectItem 프로젝트의 **source.extension.vsixmanifest** 파일에 대 한 바로 가기 메뉴를 열고 **열기**를 선택 합니다.
 
-     Visual Studio가 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요.
+     Visual Studio가 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
 2. **제품 이름** 상자에 **사용자 지정 작업 프로젝트 항목**을 입력 합니다.
 

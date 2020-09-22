@@ -1,5 +1,5 @@
 ---
-title: '방법: CPU 카운터 데이터 수집 | Microsoft Docs'
+title: '방법: CPU 카운터 데이터 수집 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432807"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842090"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
   
 - 계측을 통해 프로파일링할 경우 하나 이상의 카운터에서 데이터를 수집합니다.  
   
-- 샘플링을 통해 프로파일링할 경우 카운터 이벤트를 샘플링 간격으로 지정합니다. 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)합니다.  
+- 샘플링을 통해 프로파일링할 경우 카운터 이벤트를 샘플링 간격으로 지정합니다. 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조 하세요.  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>계측을 통해 프로파일링할 경우 CPU 성능 카운터 데이터를 수집하려면  
   

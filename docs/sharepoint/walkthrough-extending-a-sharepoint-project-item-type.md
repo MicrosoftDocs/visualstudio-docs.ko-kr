@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015677"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740008"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   **비즈니스 데이터 연결 모델** 프로젝트 항목을 사용 하 여 SHAREPOINT의 BDC (비즈니스 데이터 연결) 서비스에 대 한 모델을 만들 수 있습니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터는 사용자에 게 표시 되지 않습니다. 또한 사용자가 데이터를 볼 수 있도록 SharePoint에서 외부 목록을 만들어야 합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "86015677"
 
 - 확장 테스트
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 Visual Studio
@@ -161,7 +161,7 @@ ms.locfileid: "86015677"
 
 1. **솔루션 탐색기**에서 GenerateExternalDataLists 프로젝트의 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 열고 **열기**를 선택 합니다.
 
-     Visual Studio가 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요.
+     Visual Studio가 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
 2. **제품 이름** 상자에 **외부 데이터 목록 생성기**를 입력 합니다.
 

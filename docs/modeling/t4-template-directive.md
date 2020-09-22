@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591842"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808066"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
 
@@ -156,7 +156,7 @@ Squares of numbers:
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>전처리된 런타임 텍스트 템플릿의 상속
 
-런타임 텍스트 템플릿 간에 상속을 사용하여 여러 파생 변형이 있는 기본 템플릿을 만들 수 있습니다. 런타임 템플릿은 **사용자 지정 도구** 속성이 **Texttemplatingfilepreprocessor**로 설정 된 템플릿입니다. 런타임 템플릿에서는 애플리케이션에서 호출하여 템플릿에 정의된 텍스트를 만들 수 있는 코드를 생성합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+런타임 텍스트 템플릿 간에 상속을 사용하여 여러 파생 변형이 있는 기본 템플릿을 만들 수 있습니다. 런타임 템플릿은 **사용자 지정 도구** 속성이 **Texttemplatingfilepreprocessor**로 설정 된 템플릿입니다. 런타임 템플릿에서는 애플리케이션에서 호출하여 템플릿에 정의된 텍스트를 만들 수 있는 코드를 생성합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
 
 `inherits` 특성을 지정하지 않으면 기본 클래스 및 파생 클래스가 텍스트 템플릿에서 생성됩니다. `inherits` 특성을 지정하면 파생 클래스만 생성됩니다. 기본 클래스를 직접 작성할 수 있지만 기본 클래스에서 파생 클래스에 사용되는 메서드를 제공해야 합니다.
 
@@ -235,7 +235,7 @@ This is the common footer.
 
 디자인 타임 텍스트 템플릿의 경우에는 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 클래스에서 파생되는 기본 클래스를 지정할 수 있습니다. `<#@assembly#>` 지시문을 사용하여 기본 클래스가 들어 있는 프로젝트나 어셈블리를 로드합니다.
 
-자세한 내용은 [Gareth Jones의 블로그에서 "텍스트 템플릿의 상속"](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)을 참조 하세요.
+자세한 내용은 [Gareth Jones의 블로그에서 "텍스트 템플릿의 상속"](/archive/blogs/garethj/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata)을 참조 하세요.
 
 ## <a name="linepragmas-attribute"></a>linePragmas 특성
 

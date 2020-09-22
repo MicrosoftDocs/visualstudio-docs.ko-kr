@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443511"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842135"
 ---
-# <a name="cvhrege"></a>CV_HREG_e
+# <a name="cv_hreg_e"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-대상 레지스터를 지정합니다.  
+대상 레지스터를 지정 합니다.  
   
 > [!NOTE]
-> 때문에 `CV_HREG_e` 열거형 여기 전체적으로 복제 하려면 너무 크면 축약된 된 버전 참조로 제공 됩니다. 누락 된 항목 기울임꼴로 표시 됩니다. 전체 열거형 cvconst.h 헤더 파일에서 제공 됩니다.  
+> 열거는 `CV_HREG_e` 너무 커서 전체에서 중복 될 수 없으므로 축약 된 버전이 참조로 제공 됩니다. 누락 된 항목은 기울임꼴로 표시 됩니다. 전체 열거형은 cvconst 헤더 파일에서 사용할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -413,40 +413,40 @@ enum CV_HREG_e { 
   
 ## <a name="elements"></a>요소  
  CV_REG_*  
- Intel 80x86 ix86 프로세서 및 p-코드를 사용한 등록 합니다.  
+ Intel 80x86 및 ix86 프로세서와 p 코드에서 사용 하는 레지스터입니다.  
   
  CV_R68_*  
- 등록은 68 K 프로세서에 사용 합니다.  
+ 68K 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_M4_*  
- MIPS 4000 시리즈 프로세서에서 사용 하는 등록 합니다.  
+ MIPS 4000 시리즈 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_ALPHA_*  
- Digital Equipment Corporation Alpha AXP 시리즈 프로세서에서 사용 하는 등록 합니다.  
+ 디지털 장비 Corporation Alpha AXP 시리즈 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_PPC_*  
- Motorola/IBM PowerPC 프로세서에서 사용 하는 등록 합니다.  
+ Motorola/IBM PowerPC 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_SH3_* 및 CV_SH_\*  
- Hitachi SH3 및 Hitachi SH 시리즈 프로세서에서 사용 하는 등록 합니다.  
+ Hitachi SH3 및 Hitachi SH 시리즈 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_ARM_*  
- Advanced RISC Machine (ARM) 프로세서에서 사용 하는 등록 합니다.  
+ ARM (Advanced RISC Machine) 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_IA64_*  
- Intel IA64 시리즈 프로세서에서 사용 하는 등록 합니다.  
+ Intel IA64 시리즈 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_TRI_*  
- Infineon 기술 TriCore 프로세서에서 사용 하는 등록 합니다.  
+ Broadcomm 기술 TriCore 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_AM33_*  
- 레지스터는 Matsushita/Panasonic AM33 사용과 프로세서.  
+ Matsushita/Panasonic AM33 및 관련 프로세서에서 사용 하는 레지스터입니다.  
   
  CV_M32R_*  
- Mitsubishi M32R 프로세서에서 사용 하는 등록 합니다.  
+ Mitsubishi M32R 프로세서에서 사용 하는 레지스터입니다.  
   
 ## <a name="remarks"></a>설명  
- 각 프로세서 유형에 고유한 레지스터 집합 자체를 사용합니다.  
+ 각 프로세서 유형은 고유한 레지스터 집합을 사용 합니다.  
   
  이 열거형의 값은 다음 메서드에 전달 됩니다.  
   
@@ -461,12 +461,12 @@ enum CV_HREG_e { 
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)  
   
 ## <a name="requirements"></a>요구 사항:  
- 헤더: cvconst.h  
+ 헤더: cvconst  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
+ [IDiaStackWalkFrame:: get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkHelper:: get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
+ [IDiaStackWalkHelper::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444964"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842082"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
+# <a name="debug_address"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 이 구조는 주소를 나타냅니다.  
@@ -46,26 +46,26 @@ public struct DEBUG_ADDRESS {
   
 ## <a name="terms"></a>용어  
  ulAppDomainID  
- 프로세스 id입니다.  
+ 프로세스 ID입니다.  
   
  guidModule  
  이 주소를 포함 하는 모듈의 GUID입니다.  
   
  tokClass  
- 클래스 또는이 주소의 형식 식별 토큰입니다.  
+ 이 주소의 클래스 또는 형식을 식별 하는 토큰입니다.  
   
 > [!NOTE]
-> 이 값은 기호 공급자에 국한 되며 따라서 의미가 없는 일반 이외의 다른 클래스 형식에 대 한 식별자로.  
+> 이 값은 기호 공급자에만 해당 되므로 클래스 형식에 대 한 식별자가 아닌 일반적인 의미는 없습니다.  
   
  addr  
- A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 개별 주소 형식을 설명 하는 구조체의 공용 구조체를 포함 하는 구조입니다. 값 `addr`합니다.`dwKind` 제공 되는 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형, 공용 구조체를 해석 하는 방법에 설명 합니다.  
+ 개별 주소 유형을 설명 하는 구조체의 합집합을 포함 하는 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 구조체입니다. 값 `addr` 입니다.`dwKind` 는 union을 해석 하는 방법을 설명 하는 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형에서 제공 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드를 채울 수 있습니다.  
+ 이 구조체는 채워질 [Getaddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드에 전달 됩니다.  
   
- **경고 [C++ 만]**  
+ **경고 [c + + 전용]**  
   
- 경우 `addr.dwKind` 됩니다 `ADDRESS_KIND_METADATA_LOCAL` 경우에 `addr.addr.addrLocal.pLocal` 호출 해야 합니다는 null 값이 아닙니다 `Release` 토큰 포인터:  
+ `addr.dwKind`가이 `ADDRESS_KIND_METADATA_LOCAL` 고 `addr.addr.addrLocal.pLocal` 가 null 값이 아니면 토큰 포인터에서를 호출 해야 합니다 `Release` .  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -75,9 +75,9 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: sh.h  
+ 헤더: sh  
   
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
+ 네임 스페이스: VisualStudio  
   
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   

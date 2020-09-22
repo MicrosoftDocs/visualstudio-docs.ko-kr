@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b9adb5a0a47c1ee98e0e390cfaf8b3a6dc78146
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433789"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842211"
 ---
 # <a name="attach"></a>연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **Crosssession**  
  로그온 세션 이외의 세션에서 프로파일링 애플리케이션을 활성화합니다. **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 필요합니다.  
   
- **Start:** `Method`  
+ **시작:**`Method`  
  명령줄 프로파일러 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
   
  **TargetCLR**  
@@ -57,7 +57,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>간격 옵션  
  다음 샘플링 간격 옵션 중 하나를 Attach 명령줄에 지정할 수 있습니다. 기본 샘플링 간격은 10,000,000 프로세서 클록 주기입니다.  
   
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**Sys**[<strong>:</strong>Events]**카운터**[**:** `Name` , `Reload` , `FriendlyName` ]  
  샘플링 간격의 종류와 수를 지정합니다.  
   
 - **Timer** - 모든 `Cycles` 프로세서 클록 주기를 샘플링합니다. `Cycles`를 지정하지 않은 경우 10,000,000 주기가 사용됩니다.  
@@ -78,6 +78,6 @@ VSPerfCmd.exe /Attach:12345
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 응용 프로그램 프로 파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

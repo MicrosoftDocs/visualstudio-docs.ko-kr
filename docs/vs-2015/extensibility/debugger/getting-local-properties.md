@@ -1,5 +1,5 @@
 ---
-title: 로컬 속성 가져오기 | Microsoft Docs
+title: 로컬 속성을 가져오는 중 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,28 +13,28 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436391"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841962"
 ---
 # <a name="getting-local-properties"></a>로컬 속성 가져오기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 방법은 더 이상 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 자세한 내용은 [Clr 식](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 계산기 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조 하세요.  
   
- Visual Studio 호출 [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 가져오려고는 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 에 표시 되는 모든 지역에 대 한 액세스를 제공 하는 개체를 **지역** 창입니다. Visual Studio 호출 [다음](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) 각 로컬에 대해 표시할 정보를 가져옵니다. 이 예제에서는 클래스 `CEnumPropertyInfo` 구현 된 `IEnumDebugPropertyInfo2` 인터페이스입니다.  
+ Visual Studio는 [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 을 호출 하 여 **지역** 창에 표시 되는 모든 지역에 대 한 액세스를 제공 하는 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 가져옵니다. 그런 다음 Visual Studio에서 [다음](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) 을 호출 하 여 각 지역에 대해 표시할 정보를 가져옵니다. 이 예제에서 클래스는 `CEnumPropertyInfo` 인터페이스를 구현 `IEnumDebugPropertyInfo2` 합니다.  
   
- 이 구현의 `IEnumDebugPropertyInfo2::Next` 다음 작업을 수행 합니다.  
+ 이 구현 `IEnumDebugPropertyInfo2::Next` 에서는 다음 작업을 수행 합니다.  
   
-1. 정보를 저장할 배열입니다를 지웁니다.  
+1. 정보가 저장 될 배열을 지웁니다.  
   
-2. 호출 [다음](../../extensibility/debugger/reference/ienumdebugfields-next.md) 각 로컬 저장 반환 된 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 반환할 배열의 합니다. 합니다 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체가 제공 된 경우이 `CEnumPropertyInfo` 클래스 인스턴스화 되었습니다.  
+2. 반환 될 배열에 반환 된 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 를 저장 하 여 각 로컬에 대해 [다음](../../extensibility/debugger/reference/ienumdebugfields-next.md) 을 호출 합니다. 이 클래스가 인스턴스화될 때 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체가 제공 되었습니다 `CEnumPropertyInfo` .  
   
 ## <a name="managed-code"></a>관리 코드  
- 이 예제에서는 구현을 보여 줍니다. `IEnumDebugPropertyInfo2::EnumChildren` 관리 코드에서 메서드의 지역에 대 한 합니다.  
+ 이 예제에서는 `IEnumDebugPropertyInfo2::EnumChildren` 관리 코드에서 메서드의 지역에 대 한의 구현을 보여 줍니다.  
   
 ```csharp  
 namespace EEMC  
@@ -97,7 +97,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>비관리 코드  
- 이 예제에서는 구현을 보여 줍니다. `IEnumDebugPropertyInfo2::EnumChildren` 비관리 코드에서 메서드의 지역에 대 한 합니다.  
+ 이 예제에서는 `IEnumDebugPropertyInfo2::EnumChildren` 비관리 코드에서 메서드의 지역에 대 한의 구현을 보여 줍니다.  
   
 ```cpp#  
 STDMETHODIMP CEnumPropertyInfo::Next(  
@@ -159,5 +159,5 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [지역 변수의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [로컬 항목 열거](../../extensibility/debugger/enumerating-locals.md)
