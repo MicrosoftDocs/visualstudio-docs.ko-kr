@@ -1,5 +1,5 @@
 ---
-title: '연습: 계측을 사용 하 여 명령줄 프로 파일링 | Microsoft Docs'
+title: '연습: 계측을 사용하여 명령줄 프로파일링 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439694"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841982"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>연습: 계측을 사용 하 여 프로 파일링 명령줄
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>연습: 계측을 사용하여 명령줄 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 프로파일링 도구의 계측 방법을 사용하여 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 독립 실행형 애플리케이션을 프로파일링해 자세한 타이밍 및 호출 수 데이터를 수집하는 과정을 안내합니다. 이 연습에서는 다음 작업을 수행합니다.  
@@ -41,9 +41,9 @@ ms.locfileid: "63439694"
   
 - 명령줄 도구 사용법에 대한 중간 정도의 이해도  
   
-- [PeopleTrax 샘플](../profiling/peopletrax-sample-profiling-tools.md)의 복사본  
+- [PeopleTrax 샘플](../profiling/peopletrax-sample-profiling-tools.md) 의 복사본  
   
-- 프로파일링을 통해 제공되는 정보를 사용하려면 디버깅 기호 정보를 준비해 두는 것이 가장 좋습니다. 자세한 내용은 [방법: 참조 Windows 기호 정보](../profiling/how-to-reference-windows-symbol-information.md)합니다.  
+- 프로파일링을 통해 제공되는 정보를 사용하려면 디버깅 기호 정보를 준비해 두는 것이 가장 좋습니다. 자세한 내용은 [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)를 참조 하세요.  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>계측 방법을 사용하여 명령줄 프로파일링  
  계측은 계측된 모듈의 함수에 대한 진입 및 종료 시 타이밍 정보를 수집하는 프로브 함수를 특수하게 작성된 버전의 프로파일링된 이진 파일에 포함할 수 있는 프로파일링 방법입니다. 이 프로파일링 방법은 샘플링보다 침입성이 높으므로오버헤드가 더 많이 발생합니다. 계측된 이진 파일도 디버그 또는 릴리스 이진 파일보다 더 크므로 배포할 수 없습니다.  
@@ -91,7 +91,7 @@ ms.locfileid: "63439694"
   
 8. 프로파일러를 추적 모드에서 시작한 후 PeopleTrax.exe 프로세스의 계측된 버전을 실행하여 데이터를 수집합니다.  
   
-     **PeopleTrax** 응용 프로그램 창이 나타납니다.  
+     **PeopleTrax** 애플리케이션 창이 나타납니다.  
   
 9. **사용자 가져오기**를 클릭합니다.  
   
@@ -125,7 +125,7 @@ ms.locfileid: "63439694"
   
 ## <a name="see-also"></a>참고 항목  
  [성능 세션 개요](../profiling/performance-session-overview.md)   
- [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [명령줄에서 프로 파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)   
  [성능 보고서 뷰](../profiling/performance-report-views.md)

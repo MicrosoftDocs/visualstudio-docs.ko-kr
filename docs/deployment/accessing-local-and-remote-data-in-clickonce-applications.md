@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 응용 프로그램의 로컬 및 원격 데이터 액세스 | Microsoft Docs
+title: 로컬 & 원격 데이터에 액세스 (ClickOnce 앱)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746078"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810473"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스
 대부분 애플리케이션에서는 데이터를 사용하거나 생성합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 로컬에서 또는 원격으로 데이터를 읽고 쓰는 다양한 옵션을 제공합니다.

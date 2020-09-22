@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec9e6fa7262fd389be7f1bb66ed2ed7005d6811
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115280"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810798"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 정의 다이어그램 작업
 정의의 다이어그램은 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 도메인별 언어를 정의 하는 데 중요 한 도구입니다. 도메인 모델에 요소를 추가하고 다이어그램에 대해 관계를 정의할 수 있으며 보다 읽기 쉽도록 다이어그램의 레이아웃을 수정할 수 있습니다.
@@ -72,4 +72,4 @@ ms.locfileid: "76115280"
 
 ## <a name="see-also"></a>추가 정보
 
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

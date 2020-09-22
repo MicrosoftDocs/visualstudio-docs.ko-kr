@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433076"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841919"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>방법: Visual Studio의 특정 릴리스 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63433076"
 |Visual Studio Enterprise(업데이트 2세대의 추가 업데이트를 포함하지 않는 원래 업데이트 2)|Visual Studio Enterprise RTM( [MSDN 구독자 다운로드 페이지](https://msdn.microsoft.com/subscriptions/downloads/)에서 이용 가능)|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Visual Studio 설치 프로그램에서 업데이트 2가 릴리스될 때 제공된 feed.xml을 사용합니다.|
 |Visual Studio Enterprise 업데이트 1(원래 업데이트 1이지만 업데이트 2 이전의 업데이트 포함)|Visual Studio Enterprise RTM( [MSDN 구독자 다운로드 페이지](https://msdn.microsoft.com/subscriptions/downloads/)에서 이용 가능)|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|Visual Studio 설치 프로그램에서 업데이트 2 출시 전의 최신 feed.xml를 사용합니다.|
 |Visual Studio Enterprise 업데이트 1(업데이트 1 세대의 추가 업데이트를 포함하지 않는 원래 업데이트 1)|Visual Studio Enterprise RTM( [MSDN 구독자 다운로드 페이지](https://msdn.microsoft.com/subscriptions/downloads/)에서 이용 가능)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|Visual Studio 설치 프로그램에서 업데이트 1이 릴리스될 때 제공된 feed.xml을 사용합니다.|
-|Visual Studio Enterprise(원래 RTM이지만 업데이트 1 이전의 업데이트 포함)|Visual Studio Enterprise RTM(  [MSDN 구독자 다운로드 페이지](https://msdn.microsoft.com/subscriptions/downloads/)에서 이용 가능)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio 설치 프로그램에서 업데이트 1 출시 전의 최신 feed.xml를 사용합니다.|
+|Visual Studio Enterprise(원래 RTM이지만 업데이트 1 이전의 업데이트 포함)|Visual Studio Enterprise RTM (  [MSDN subscription 다운로드 페이지](https://msdn.microsoft.com/subscriptions/downloads/)에서 사용 가능)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio 설치 프로그램에서 업데이트 1 출시 전의 최신 feed.xml를 사용합니다.|
 |Visual Studio Enterprise(업데이트를 포함하지 않는 원래 RTM)|Visual Studio Enterprise RTM( [MSDN 구독자 다운로드 페이지](https://msdn.microsoft.com/subscriptions/downloads/)에서 이용 가능)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Visual Studio 설치 프로그램에서 RTM이 릴리스될 때 제공된 feed.xml을 사용합니다.|
 
 > [!IMPORTANT]

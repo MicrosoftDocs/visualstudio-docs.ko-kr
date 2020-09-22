@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce 응용 프로그램에 데이터 파일 포함 | Microsoft Docs
+title: ClickOnce 앱에 데이터 파일 포함
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7630d1b363afa7caeae361f607f4b73929fbba1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382408"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809148"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 데이터 파일 포함
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]설치 하는 각 응용 프로그램에는 응용 프로그램이 자체 데이터를 관리할 수 있는 대상 컴퓨터의 로컬 디스크에 데이터 디렉터리가 할당 됩니다. 데이터 파일에는 텍스트 파일, XML 파일 또는 Microsoft Access 데이터베이스 (*.mdb*) 파일 등 모든 형식의 파일이 포함 될 수 있습니다. 다음 절차에서는 모든 형식의 데이터 파일을 응용 프로그램에 추가 하는 방법을 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -82,5 +83,5 @@ ms.locfileid: "85382408"
 
      응용 프로그램 매니페스트의 해시가 변경 되었으므로 배포 매니페스트에 다시 서명 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

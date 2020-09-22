@@ -1,5 +1,5 @@
 ---
-title: '연습: 누락 된 꼭 짓 점 음영으로 인해 개체 | Microsoft Docs'
+title: '연습: 꼭 짓 점 음영으로 인해 누락 된 개체 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444276"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842091"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>연습: 꼭짓점 음영으로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63444276"
   
  이 시나리오에서는 테스트를 위해 앱을 실행할 때 배경은 예상대로 렌더링되지만 개체 중 하나가 나타나지 않습니다. 그래픽 진단을 사용하여 앱을 디버그할 수 있도록 그래픽 로그 문제를 포착합니다. 이 문제는 앱에서 다음과 같이 보입니다.  
   
- ![개체를 볼 수 있습니다. ](../debugger/media/gfx-diag-demo-missing-object-shader-problem.png "gfx_diag_demo_missing_object_shader_problem")  
+ ![개체를 볼 수 없습니다.](../debugger/media/gfx-diag-demo-missing-object-shader-problem.png "gfx_diag_demo_missing_object_shader_problem")  
   
 ## <a name="investigation"></a>조사  
  그래픽 진단 도구를 사용하면 그래픽 로그 파일을 로드하여 테스트 중에 캡처한 프레임을 검사할 수 있습니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "63444276"
   
 2. **프레임 목록**에서 개체가 표시되지 않는 것을 보여 주는 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 탭은 다음과 같습니다.  
   
-    ![Visual Studio에서 그래픽 로그 문서](../debugger/media/gfx-diag-demo-missing-object-shader-step-1.png "gfx_diag_demo_missing_object_shader_step_1")  
+    ![Visual Studio의 그래픽 로그 문서](../debugger/media/gfx-diag-demo-missing-object-shader-step-1.png "gfx_diag_demo_missing_object_shader_step_1")  
   
    문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록**을 사용하여 진단을 시작할 수 있습니다. **그래픽 이벤트 목록** 에는 활성 프레임을 렌더링하여 디바이스 상태를 설정하거나, 버퍼를 만들고 업데이트하거나, 프레임에 나타나는 개체를 그리는 등의 작업을 하기 위해 수행한 모든 Direct3D API 호출이 포함됩니다. 많은 유형의 호출은 앱이 예상대로 작동할 때 렌더링 대상에 항상은 아니지만 종종 해당 변경 사항이 생기므로 흥미롭습니다(예: 그리기, 디스패치, 복사 또는 지우기 호출). 그리기 호출은 각각 앱이 렌더링하는 기하 도형을 나타내므로 특히 흥미롭습니다(디스패치 호출도 기하 도형을 렌더링할 수 있음).  
   
@@ -61,14 +61,14 @@ ms.locfileid: "63444276"
   
 3. **그래픽 이벤트 목록** 창에서 각 그리기 호출을 진행할 때, 누락된 개체에 대한 **그래픽 파이프라인 단계** 창을 봅니다. 더 쉽게 확인하려면 **그래픽 이벤트 목록** 창의 오른쪽 위 모서리에 있는 **검색** 상자에 "그리기"를 입력합니다. 그러면 목록이 필터링되어 제목에 "그리기"가 포함된 이벤트만 나타납니다.  
   
-    **그래픽 파이프라인 단계** 창에서 **입력 어셈블러** 단계는 개체가 변환되기 전 개체의 기하 도형을 보여 주며, **꼭지점 셰이더** 단계는 변환된 후의 동일한 개체를 보여 줍니다. 이 시나리오에서는 누락된 개체가 **입력 어셈블러** 단계에서는 표시되지만 **꼭짓점 셰이더** 단계에서는 아무 것도 표시되지 않을 때 해당 개체를 찾았다는 것을 확인했습니다.  
+    **그래픽 파이프라인 단계** 창에서 **입력 어셈블러** 단계는 변환 전 개체의 기 하 도형을 표시 하 고, **꼭 짓 점 셰이더** 단계는 변환 된 후의 동일한 개체를 표시 합니다. 이 시나리오에서는 누락된 개체가 **입력 어셈블러** 단계에서는 표시되지만 **꼭짓점 셰이더** 단계에서는 아무 것도 표시되지 않을 때 해당 개체를 찾았다는 것을 확인했습니다.  
   
    > [!NOTE]
    > 헐 셰이더, 도메인 셰이더 또는 기하 도형 셰이더 단계와 같은 다른 기하 도형 단계에서 개체를 처리하는 경우, 이러한 단계가 문제의 원인이 될 수 있습니다. 일반적으로 문제는 결과가 표시되지 않거나 예기치 않은 방식으로 표시되는 최초의 단계와 관련이 있습니다.  
   
 4. 누락된 개체에 해당하는 그리기 호출에 도달하면 중지합니다. 이 시나리오에서 **그래픽 파이프라인 단계** 창은 기하 도형이 GPU에 만들어졌으나(입력 어셈블러 축소판 그림으로 표시) 꼭지점 셰이더 단계 동안에는 문제가 발생하여 렌더링 대상에 나타나지 않는다는 것(꼭지점 셰이더 축소판 그림으로 표시)을 보여 줍니다.  
   
-    ![DrawIndexed 이벤트 및 파이프라인에 미치는 영향](../debugger/media/gfx-diag-demo-missing-object-shader-step-2.png "gfx_diag_demo_missing_object_shader_step_2")  
+    ![DrawIndexed 이벤트 및 파이프라인에 대한 효과](../debugger/media/gfx-diag-demo-missing-object-shader-step-2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
    앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 실행했는지 확인하고 꼭지점 셰이더 단계 동안 해당 문제가 발생하는 것을 검색한 후에는 HLSL 디버거를 사용하여 꼭지점 셰이더를 검사하고 개체의 기하 도형에서 발생한 결과를 확인할 수 있습니다. 실행하는 동안 HLSL 디버거를 사용하여 HLSL 변수의 상태를 검사하고, HLSL 코드를 단계별로 진행하고, 문제 진단을 위한 중단점을 설정할 수 있습니다.  
   
@@ -80,19 +80,19 @@ ms.locfileid: "63444276"
   
 3. `output` 이 처음 수정되면 멤버 `worldPos` 가 기록됩니다.  
   
-    !["Output.worldpos" 값이 적절 한 나타납니다](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
+    !["output.worldPos" 값이 적절한 것으로 보임](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
     해당 값에 문제가 없어 보이므로 `output`을 수정하는 다음 줄까지 코드를 계속 단계별로 진행합니다.  
   
 4. `output` 이 수정되는 다음 번에 멤버 `pos` 가 기록됩니다.  
   
-    !["Output.pos" 값에 비중요](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
+    !["output.pos" 값이 0이 됨](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
     이번에는 `pos` 멤버의 값(모두 0)에 문제가 있어 보입니다. 다음으로 `output.pos` 가 어떻게 모두 0 값을 갖게 되었는지 확인하려 합니다.  
   
 5. `output.pos` 는 `temp`라는 변수에서 해당 값을 가져옵니다. 이전 줄에서 `temp` 값은 이전 값을 `projection`이라는 상수와 곱한 결과임을 알 수 있습니다. `temp`의 의심스러운 값이 이러한 곱하기의 결과인지 의심하게 됩니다. `projection`에 포인터를 두면 해당 값 역시 모두 0임을 알 수 있습니다.  
   
-    ![프로젝션 매트릭스에 잘못 된 변형이 포함](../debugger/media/gfx-diag-demo-missing-object-shader-step-6.png "gfx_diag_demo_missing_object_shader_step_6")  
+    ![프로젝션 매트릭스에 잘못된 변형이 포함되어 있음](../debugger/media/gfx-diag-demo-missing-object-shader-step-6.png "gfx_diag_demo_missing_object_shader_step_6")  
   
     이 시나리오에서는 검사를 진행하면 `temp`의 의심스러운 값이 `projection`에 의한 곱하기의 결과일 가능성이 크고, `projection` 이 투영 행렬을 포함해야 하는 상수이므로 모두 0이면 안 된다는 것을 알게 됩니다.  
   
@@ -104,7 +104,7 @@ ms.locfileid: "63444276"
   
 2. 호출 스택에서 앱의 소스 코드까지 이동합니다. **그래픽 이벤트 호출 스택** 창에서 최상위 호출을 선택하여 상수 버퍼가 채워지는지 확인합니다. 그러지 않으면 채워진 위치를 찾을 때까지 호출 스택 위로 이동합니다. 이 시나리오에서는 `UpdateSubresource` Direct3D API를 사용하여 `MarbleMaze::Render`라는 함수의 호출 스택까지 상수 버퍼가 채워지고 해당 값이 `m_marbleConstantBufferData`라는 상수 버퍼 개체에서 온 값이라는 것을 확인할 수 있습니다.  
   
-    ![개체의 상수 버퍼를 설정 하는 코드](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
+    ![개체의 상수 버퍼를 설정하는 코드](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
    > 앱을 동시에 디버깅하는 경우 이 위치에 중단점을 설정할 수 있으며 다음 프레임이 렌더링될 때 중단됩니다. `m_marbleConstantBufferData` 의 멤버를 검사하여 상수 버퍼가 채워질 때 `projection` 멤버의 값이 모두 0으로 설정되어 있는지 확인할 수 있습니다.  
@@ -119,12 +119,12 @@ ms.locfileid: "63444276"
   
    `m_marbleConstantBufferData.projection` 이 설정된 위치를 찾은 후에 주변 소스 코드를 검사하여 잘못된 값의 출처를 확인할 수 있습니다. 이 시나리오에서 `m_marbleConstantBufferData.projection` 값은 다음 줄에서 `projection` 코드가 제공하는 값으로 초기화되기 전에 `m_camera->GetProjection(&projection);` 이라는 로컬 변수로 설정되어 있음을 확인했습니다.  
   
-   ![구슬 프로젝션이 초기화 전에 설정 됨](../debugger/media/gfx-diag-demo-missing-object-shader-step-9.png "gfx_diag_demo_missing_object_shader_step_9")  
+   ![구슬 프로젝션이 초기화 전에 설정됨](../debugger/media/gfx-diag-demo-missing-object-shader-step-9.png "gfx_diag_demo_missing_object_shader_step_9")  
   
    이 문제를 해결하려면 `m_marbleConstantBufferData.projection` 값을 설정하는 코드 줄을 `projection`로컬 변수 값을 초기화하는 줄 다음으로 이동합니다.  
   
-   ![수정 된 C&#43; &#43; 소스 코드](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
+   ![수정 된 C&#43;&#43; 소스 코드입니다.](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
    .코드를 수정한 후 다시 빌드하고 앱을 다시 실행하여 렌더링 문제가 해결되었는지 확인할 수 있습니다.  
   
-   ![에 이제 개체가 표시 됩니다. ](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+   ![이제 개체가 표시됩니다.](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")

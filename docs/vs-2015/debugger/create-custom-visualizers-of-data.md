@@ -24,23 +24,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434905"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842043"
 ---
 # <a name="create-custom-visualizers-of-data"></a>데이터의 사용자 지정 시각화 도우미 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-시각화 도우미는 구성 요소는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거 사용자 인터페이스입니다. A *시각화 도우미* 대화 상자 또는 해당 데이터 형식에 적합 한 방식으로 변수나 개체를 표시할 다른 인터페이스를 만듭니다. 예를 들어 HTML 시각화 도우미는 HTML 문자열을 해석하고 브라우저 창에서와 마찬가지로 그 결과를 표시합니다. 비트맵 시각화 도우미는 비트맵 구조를 해석하고 그 구조가 표현하는 그래픽을 표시합니다. 일부 시각화 도우미에서는 데이터를 볼 수 있을 뿐만 아니라 수정할 수도 있습니다.  
+시각화 도우미는 디버거 사용자 인터페이스의 구성 요소입니다 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . *시각화 도우미* 는 해당 데이터 형식에 적합 한 방식으로 변수나 개체를 표시 하기 위한 대화 상자 또는 다른 인터페이스를 만듭니다. 예를 들어 HTML 시각화 도우미는 HTML 문자열을 해석하고 브라우저 창에서와 마찬가지로 그 결과를 표시합니다. 비트맵 시각화 도우미는 비트맵 구조를 해석하고 그 구조가 표현하는 그래픽을 표시합니다. 일부 시각화 도우미에서는 데이터를 볼 수 있을 뿐만 아니라 수정할 수도 있습니다.  
   
- [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거에는 6가지 표준 시각화 도우미가 포함되어 있습니다. 텍스트, HTML, XML 및 JSON 시각화 도우미, 문자열 개체에서 사용 되는 WPF 개체 시각적 트리의; 속성을 표시 하는 것에 대 한 WPF 트리 시각화 도우미 및 DataSet, DataView 및 DataTable 개체에 대해 작동 하는 데이터 집합 시각화 도우미입니다. 향후 Microsoft Corporation의 추가 시각화 도우미를 다운로드할 수 있으며 타사와 커뮤니티의 시각화 도우미도 사용 가능합니다. 또한 자신만의 시각화 도우미를 직접 작성하여 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거에 설치할 수 있습니다.  
+ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거에는 6가지 표준 시각화 도우미가 포함되어 있습니다. 이 6가지 표준 시각화 도우미는 문자열 개체에 사용되는 텍스트, HTML, XML 및 JSON 시각화 도우미와 WPF 개체 시각적 트리의 속성을 표시하는 WPF 트리 시각화 도우미, 그리고 DataSet, DataView 및 DataTable 개체에 사용되는 데이터 집합 시각화 도우미입니다. 향후 Microsoft Corporation의 추가 시각화 도우미를 다운로드할 수 있으며 타사와 커뮤니티의 시각화 도우미도 사용 가능합니다. 또한 자신만의 시각화 도우미를 직접 작성하여 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거에 설치할 수 있습니다.  
   
 > [!NOTE]
-> **Store** 앱에만 표준 텍스트, HTML, XML 및 JSON 시각화 도우미는 지원 합니다. 사용자가 만든 사용자 지정 시각화 도우미는 지원되지 않습니다.  
+> **스토어** 앱에서는 표준 텍스트, HTML, XML 및 JSON 시각화 도우미만 지원 됩니다. 사용자가 만든 사용자 지정 시각화 도우미는 지원되지 않습니다.  
   
- 시각화 도우미는 디버거에 돋보기 모양의 아이콘으로 표시됩니다. 에 돋보기 모양 아이콘이 표시 되 면을 **DataTip**, 디버거 변수 창에서 또는 합니다 **간략 한 조사식** 대화 상자를 클릭할 수 데이터 형식에 적합 한 시각화 도우미를 선택 하려면 돋보기 효과 만들기 해당 개체입니다.  
+ 시각화 도우미는 디버거에 돋보기 모양의 아이콘으로 표시됩니다. **DataTip**에 돋보기 아이콘이 표시 되 면 디버거 변수 창 또는 **간략 한 조사식** 대화 상자에서 돋보기를 클릭 하 여 해당 개체의 데이터 형식에 적합 한 시각화 도우미를 선택할 수 있습니다.  
   
  Compact Framework에서는 시각화 도우미가 지원되지 않습니다.  
   
