@@ -1,5 +1,5 @@
 ---
-title: 방법-제품 매니페스트 만들기 | Microsoft Docs
+title: 제품 매니페스트 만들기 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382512"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852220"
 ---
 # <a name="how-to-create-a-product-manifest"></a>방법: 제품 매니페스트 만들기
 응용 프로그램에 대 한 필수 구성 요소를 배포 하기 위해 부트스트래퍼 패키지를 만들 수 있습니다. 부트스트래퍼 패키지는 단일 제품 매니페스트 파일을 포함 하지만 각 로캘에 대 한 패키지 매니페스트를 포함 합니다. 패키지 매니페스트에는 패키지의 지역화 관련 측면이 포함 됩니다. 여기에는 문자열, 최종 사용자 사용권 계약 및 언어 팩이 포함 됩니다.
@@ -158,5 +158,5 @@ ms.locfileid: "85382512"
 </Product>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)
