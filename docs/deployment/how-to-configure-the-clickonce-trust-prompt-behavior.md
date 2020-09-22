@@ -1,5 +1,5 @@
 ---
-title: 방법-ClickOnce 신뢰 프롬프트 동작 구성 | Microsoft Docs
+title: ClickOnce 신뢰 프롬프트 동작 구성 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382551"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852233"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>방법: ClickOnce 신뢰 프롬프트 동작 구성
 Clickonce 신뢰 프롬프트를 구성 하 여 최종 사용자에 게 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, 콘솔 응용 프로그램, WPF 브라우저 응용 프로그램, Office 솔루션 등의 ClickOnce 응용 프로그램 설치 옵션을 제공할지 여부를 제어할 수 있습니다. 각 최종 사용자의 컴퓨터에서 레지스트리 키를 설정 하 여 신뢰 프롬프트를 구성 합니다.
 
  다음 표에서는 각각의 5 개 영역 (Internet, UnMyComputer Sites,, LocalIntranet 및 사이트)에 적용할 수 있는 구성 옵션을 보여 줍니다.
 
-|옵션|레지스트리 설정 값|설명|
+|옵션|레지스트리 설정 값|Description|
 |------------|----------------------------|-----------------|
 |신뢰 프롬프트를 사용 하도록 설정 합니다.|`Enabled`|최종 사용자가 ClickOnce 응용 프로그램에 신뢰를 부여할 수 있도록 ClickOnce 신뢰 프롬프트가 표시 됩니다.|
 |신뢰 프롬프트를 제한 합니다.|`AuthenticodeRequired`|Clickonce 신뢰 프롬프트는 ClickOnce 응용 프로그램이 게시자를 식별 하는 인증서로 서명 된 경우에만 표시 됩니다.|
@@ -222,11 +222,11 @@ Clickonce 신뢰 프롬프트를 구성 하 여 최종 사용자에 게 Windows 
 
 3. 애플리케이션을 빌드 및 실행합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)
-- [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)
+- [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)
 - [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

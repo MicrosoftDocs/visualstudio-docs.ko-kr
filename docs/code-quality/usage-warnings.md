@@ -1,29 +1,29 @@
 ---
-title: 사용법 경고
+title: 사용 규칙
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.usagerules
 helpviewer_keywords:
-- warnings, usage
-- managed code analysis warnings, usage warnings
-- usage warnings
+- rules, usage
+- managed code analysis rules, usage rules
+- usage rules
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd2f5919b0f48290ecc14cf71295e2af0bac4748
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 45dd58978bb37dd66023d8a28b9babf017bec262
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509720"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90806189"
 ---
-# <a name="usage-warnings"></a>사용법 경고
+# <a name="usage-rules"></a>사용 규칙
 
-사용 경고는 .NET의 적절 한 사용을 지원 합니다.
+사용 규칙은 .NET의 적절 한 사용을 지원 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

@@ -1,7 +1,7 @@
 ---
-title: Azure Cloud Services 및 Vm에 대 한 진단
-description: Visual Studio에서 Azure Cloud Services 및 VM(가상 머신) 디버깅을 위해 진단을 설정하는 방법을 설명합니다.
+title: 진단-Azure Cloud Services & Vm
 ms.custom: SEO-VS-2020
+description: Visual Studio에서 Azure Cloud Services 및 VM(가상 머신) 디버깅을 위해 진단을 설정하는 방법을 설명합니다.
 author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dd19ff2fd03304beccbb6f24fa6b5fe4e9e0106
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 55a0f96959d0e3e8bbc70c458ab99bbc06b06a62
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037096"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809848"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
 Azure 클라우드 서비스 또는 가상 머신 문제를 해결해야 하는 경우 Visual Studio를 사용하여 Azure Diagnostics를 보다 쉽게 설정할 수 있습니다. 진단은 클라우드 서비스를 실행하는 가상 머신 및 가상 머신 인스턴스에서 시스템 데이터와 로깅 데이터를 캡처합니다. 진단 데이터는 사용자가 선택한 스토리지 계정으로 전송됩니다. Azure의 진단 로깅에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대해 진단 로깅 사용](/azure/app-service/web-sites-enable-diagnostic-log)을 참조하세요.
@@ -217,7 +217,7 @@ ETW 프레임워크는 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics)
     클라우드 탐색기 또는 서버 탐색기에서 배포와 관련된 스토리지 계정을 엽니다.
 3. 테이블 뷰어에서 진단 테이블을 열고 수집한 데이터 검토 합니다. IIS 로그 및 사용자 지정 로그인 경우 BLOB 컨테이너를 열 수 있습니다. 다음 표에는 다른 로그 파일에 대한 데이터를 포함하는 테이블 또는 Blob 컨테이너가 나와 있습니다. 해당 로그 파일에 대한 데이터 외에도 테이블 항목에는 **EventTickCount**, **DeploymentId**, **Role** 및 **RoleInstance**가 포함되어 데이터가 생성된 가상 머신 및 역할과 데이터가 생성된 시기를 파악할 수 있습니다.
 
-   | 진단 데이터 | Description | 위치 |
+   | 진단 데이터 | 설명 | 위치 |
    | --- | --- | --- |
    | 애플리케이션 로그 전송 사용 |코드에서 **Diagnostics. Trace** 클래스의 메서드를 호출 하 여 생성 하는 로그입니다. |WADLogsTable |
    | 이벤트 로그 |가상 머신에서 Windows 이벤트 로그에서 가져온 데이터입니다. Windows에서는 이러한 로그에 정보를 저장하지만 애플리케이션 및 서비스에서는 로그를 사용하여 오류 또는 로그 정보를 보고합니다. |WADWindowsEventLogsTable |

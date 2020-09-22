@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114928"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808957"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일
 
@@ -579,6 +579,6 @@ Decorator 맵은 매핑된 클래스의 속성을 모양의 Decorator와 연결�
 
 ## <a name="see-also"></a>추가 정보
 
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)

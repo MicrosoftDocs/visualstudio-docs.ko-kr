@@ -1,5 +1,5 @@
 ---
-title: '방법: 편집을 사용 하 여 중단 모드에서 편집을 적용 하 고 계속 | Microsoft Docs'
+title: '방법: 편집 하며 계속 하기를 사용 하 여 중단 모드에서 편집 적용 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,13 +25,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437354"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841591"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>방법: 편집을 사용 하 여 중단 모드에서 편집을 적용 하 고 계속
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>방법: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 편집하며 계속하기를 사용하면 실행을 중지한 후에 다시 시작하지 않고도 중단 모드에서 코드를 편집한 다음 계속 진행할 수 있습니다.  
@@ -48,11 +48,11 @@ ms.locfileid: "63437354"
   
 - 포함된 런타임 애플리케이션 디버깅  
   
-- 응용 프로그램을 디버깅할 **연결할** 사용 하 여 응용 프로그램을 실행 하는 대신 **시작** 에서 합니다 **디버그** 메뉴.  
+- **디버그** 메뉴에서 **시작** 을 사용 하 여 응용 프로그램을 실행 하는 대신 **연결 대상을** 사용 하 여 응용 프로그램을 디버깅 합니다.  
   
 - 최적화된 코드 디버깅  
   
-- 대상이 64비트 애플리케이션인 경우 관리 코드 디버깅. 편집하며 계속하기를 사용하려면 대상을 x86으로 설정해야 합니다. (_프로젝트_**속성**합니다 **컴파일** 탭 **고급 컴파일러** 설정 합니다.).  
+- 대상이 64비트 애플리케이션인 경우 관리 코드 디버깅. 편집하며 계속하기를 사용하려면 대상을 x86으로 설정해야 합니다. (_프로젝트_**속성**, **컴파일** 탭, **고급 컴파일러** 설정).  
   
 - 빌드 오류가 발생하여 새 버전을 빌드하는데 실패한 후에 이전 버전의 코드 디버깅  
   
@@ -62,17 +62,17 @@ ms.locfileid: "63437354"
   
     - 코드에 중단점을 설정한 다음, **디버그** 메뉴에서 **디버깅 시작**을 선택하고 애플리케이션이 중단점에 도달할 때까지 기다립니다.  
   
-         – 또는 –  
+         -또는-  
   
     - 디버깅을 시작한 다음, **디버그** 메뉴에서 **모두 중단**을 선택합니다.  
   
-         – 또는 –  
+         -또는-  
   
-    - 예외가 발생 하는 경우 선택할 **편집 사용** 에**예외 도우미**합니다.  
+    - 예외가 발생 하면**예외 도우미**에서 **편집 사용** 을 선택 합니다.  
   
 2. 코드에 필요한 내용을 올바르게 변경합니다.  
   
-     자세한 내용은 [Visual Basic 편집 하며 계속 하기에서 지원 되지 않는 편집](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)합니다.  
+     자세한 내용은 [Visual Basic 편집 하며 계속 하기에서 지원 되지 않는 편집](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)을 참조 하세요.  
   
     > [!NOTE]
     > 편집하며 계속하기에서 허용되지 않는 코드 변경 작업을 수행하면 자주색 물결선이 편집 내용 아래에 밑줄로 표시되고 해당 작업이 작업 목록에 나타납니다. 잘못된 코드 변경 내용을 취소하지 않으면 코드 실행을 계속 진행할 수 없습니다.  
@@ -82,5 +82,5 @@ ms.locfileid: "63437354"
      적용한 편집 내용이 프로젝트에 통합된 상태로 코드가 실행됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Visual Basic에서 지원 되지 않는 편집 편집 하며 계속 하기](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
+ [편집 하며 계속 하기 Visual Basic에서 지원 되지 않는 편집](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [편집하며 계속하기(Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

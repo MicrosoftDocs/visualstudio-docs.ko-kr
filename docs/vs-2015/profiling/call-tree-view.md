@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439330"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841339"
 ---
 # <a name="call-tree-view"></a>호출 트리 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 애플리케이션 또는 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.  
+호출 트리 뷰는 프로파일링된 애플리케이션에서 트래버스된 함수 실행 경로를 표시합니다. 트리의 루트는 애플리케이션 또는 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.  
   
  호출 트리 뷰를 확장하여 시간을 가장 많이 사용했거나 가장 자주 샘플링된 함수의 실행 경로를 강조 표시할 수도 있습니다. 가장 성능 비용이 높은 경로를 표시하려면 함수를 마우스 오른쪽 단추로 클릭한 다음 **실행 부하 과다 경로 확장**을 클릭합니다.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "63439330"
   
  열을 추가하거나 제거하도록 호출 트리 뷰를 사용자 지정할 수 있습니다. **열 이름 제목 표시줄**을 마우스 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다.  
   
- 제공되는 데이터 양을 제한하여 노이즈 감소를 위한 호출 트리 뷰를 구성할 수 있습니다. 노이즈 감소를 사용하면 뷰에서 성능 문제가 더 두드러집니다. 성능 문제를 쉽게 구분할 수 있을 때 분석이 더 쉽습니다. 자세한 내용은 [방법: 보고서 뷰에서 노이즈 감소 구성](../profiling/how-to-configure-noise-reduction-in-report-views.md)합니다.  
+ 제공되는 데이터 양을 제한하여 노이즈 감소를 위한 호출 트리 뷰를 구성할 수 있습니다. 노이즈 감소를 사용하면 뷰에서 성능 문제가 더 두드러집니다. 성능 문제를 쉽게 구분할 수 있을 때 분석이 더 쉽습니다. 자세한 내용은 [방법: 보고서 뷰에서 노이즈 감소 구성](../profiling/how-to-configure-noise-reduction-in-report-views.md)을 참조 하세요.  
   
 > [!NOTE]
 > 노이즈 감소가 활성화된 경고를 표시하도록 구성된 경우 알림 표시줄이 보고서에 표시됩니다.  

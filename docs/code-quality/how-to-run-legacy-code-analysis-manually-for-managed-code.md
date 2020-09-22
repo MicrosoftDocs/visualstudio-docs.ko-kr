@@ -1,5 +1,6 @@
 ---
-title: 관리 코드에 대해 레거시 코드 분석을 수동으로 실행 하는 방법
+title: 수동으로 레거시 코드 분석 실행 (.NET)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8a6b52a09729cbc76f91eee76f23e652f07c934f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca865b33d59f87453cafc337e1595c9d772b17a2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250530"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808615"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>방법: 관리 코드에 대 한 레거시 코드 분석 수동으로 실행
 

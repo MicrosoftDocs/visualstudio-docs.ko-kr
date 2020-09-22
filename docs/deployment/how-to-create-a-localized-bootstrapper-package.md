@@ -1,5 +1,5 @@
 ---
-title: 방법-지역화 된 부트스트래퍼 패키지 만들기 | Microsoft Docs
+title: 지역화 된 부트스트래퍼 패키지 만들기 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382564"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852487"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>방법: 지역화된 부트스트래퍼 패키지 만들기
 부트스트래퍼 패키지를 만든 후에는 각 로캘에 대해 두 파일, 즉 *eula.rtf*와 같은 소프트웨어 사용 약관 파일과 패키지 매니페스트(*package.xml*)를 추가로 만들어 부트스트래퍼 패키지의 지역화된 버전을 만들 수 있습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "85382564"
 
      아래 테이블에는 로캘과 일치하도록 이름을 지정하는 데 사용할 수 있는 폴더 이름이 나와 있습니다.
 
-    |Locale|폴더 이름|
+    |로캘|폴더 이름|
     |------------|-----------------|
     |중국어(간체)|zh-Hans|
     |중국어(번체)|zh-Hant|
@@ -90,7 +90,7 @@ ms.locfileid: "85382564"
 
 6. *package.xml* 파일을 저장 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [부트스트래퍼 패키지 만들기](../deployment/creating-bootstrapper-packages.md)
 - [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)
 - [방법: 패키지 매니페스트 만들기](../deployment/how-to-create-a-package-manifest.md)

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436801"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842131"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436801"
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
 ## <a name="batching-one-item-at-a-time"></a>한 번에 하나씩 일괄 처리  
- 항목이 만들어질 때 모든 항목에 할당된 잘 알려진 항목 메타데이터에 대해서도 일괄 처리를 수행할 수 있습니다. 이를 통해 컬렉션에 있는 모든 항목이 일괄 처리에 사용할 메타데이터를 갖게 됩니다. `Identity` 메타데이터 값은 모든 항목에 대해 고유하므로 항목 목록에 있는 모든 항목을 별도 일괄 처리로 나누는 데 유용합니다. 잘 알려진 항목 메타데이터의 전체 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.  
+ 항목이 만들어질 때 모든 항목에 할당된 잘 알려진 항목 메타데이터에 대해서도 일괄 처리를 수행할 수 있습니다. 이를 통해 컬렉션에 있는 모든 항목이 일괄 처리에 사용할 메타데이터를 갖게 됩니다. `Identity` 메타데이터 값은 모든 항목에 대해 고유하므로 항목 목록에 있는 모든 항목을 별도 일괄 처리로 나누는 데 유용합니다. 잘 알려진 항목 메타 데이터의 전체 목록은 [잘 알려진 항목 메타 데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조 하세요.  
   
  다음 예제에서는 항목 목록의 각 항목을 한 번에 하나씩 일괄 처리로 지정하는 방법을 보여 줍니다. 모든 항목의 `Identity` 메타데이터 값은 고유하므로 `ExampColl` 항목 목록은 각각이 항목 목록의 항목 1개를 포함하는 6개의 일괄 처리로 나뉩니다. `Text` 특성에 `%(Identity)`가 있으면 일괄 처리가 수행되어야 한다는 알림이 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 제공됩니다.  
   
@@ -221,9 +221,9 @@ Items in ExampColl: Item2;Item5
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)   
- [Item 요소(MSBuild)](../msbuild/item-element-msbuild.md)   
- [ItemMetadata 요소(MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
- [일괄 처리](../msbuild/msbuild-batching.md)   
+ [잘 알려진 항목 메타 데이터](../msbuild/msbuild-well-known-item-metadata.md)   
+ [Item 요소 (MSBuild)](../msbuild/item-element-msbuild.md)   
+ [ItemMetadata 요소 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
+ [일괄](../msbuild/msbuild-batching.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)

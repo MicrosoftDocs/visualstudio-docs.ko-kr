@@ -1,5 +1,5 @@
 ---
-title: '연습: 메모리 누수 찾기 (JavaScript) | Microsoft Docs'
+title: '연습: 메모리 누수 찾기(JavaScript) | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439656"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841442"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>연습: 메모리 누수 찾기 (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>연습: 메모리 누수 찾기(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  이 연습에서는 JavaScript 메모리 분석기를 사용하여 간단한 메모리 문제를 식별하고 수정하는 과정을 안내합니다. JavaScript 메모리 분석기는 JavaScript를 사용하여 Windows용으로 작성된 Visual Studio for Windows 스토어 앱에서 사용할 수 있습니다. 이 시나리오에서는 DOM 요소를 만들어질 때와 같은 속도로 삭제하지 않고 메모리에 잘못 유지하는 앱을 만듭니다.  
   
@@ -34,7 +34,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>JavaScript 메모리 분석기 테스트 앱 실행  
   
-1. Visual Studio에서 **파일**, **새로 만들기**, **프로젝트**를 선택합니다.  
+1. Visual Studio에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
 2. 왼쪽 창에서 **JavaScript** 를 선택하고 **Windows**, **Windows 8**을 선택한 다음 **유니버설** 또는 **Windows Phone 앱**을 선택합니다.  
   
@@ -45,7 +45,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 4. **이름** 상자에 `JS_Mem_Tester`와 같은 이름을 지정한 다음 **확인**을 선택합니다.  
   
-5. **솔루션 탐색기**에서 default.html을 열고 \<body> 태그 사이에 다음 코드를 붙여 넣습니다.  
+5. **솔루션 탐색기**에서 default.html을 열고 태그 사이에 다음 코드를 붙여 넣습니다 \<body> .  
   
     ```html  
     <div class="wrapper">  
@@ -168,7 +168,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
     이 그림에서는 기본 스냅샷(#1)과 스냅샷 #2를 보여 줍니다.  
   
-    ![기준 스냅숏 및 스냅숏 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![기본 스냅숏 및 스냅숏 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
    > Windows Phone 에뮬레이터는 스냅샷이 만들어진 때의 앱 스냅샷을 보여 주지 않습니다.  
@@ -219,12 +219,12 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
     - 이 개체는 스냅샷 #2에서 남겨진 개체이고 잠재적인 메모리 누수를 나타냅니다.  
   
-      이 시점에서 앱의 일부 지식이 도움이 됩니다. 선택 된 **메모리 누수** 단추 DIV 요소가 제거 되 고 요소가 추가 되므로 제대로 작동 코드를 하지 않습니다 (즉, 메모리가 누수 됨). 다음 섹션에서는 이 문제를 해결하는 방법을 설명합니다.  
+      이 시점에서 앱에 대한 약간의 지식이 도움이 됩니다. **메모리 누수** 단추를 선택하면 DIV 요소가 제거되고 요소가 추가되므로 코드가 제대로 작동하지 않습니다(즉, 메모리가 누수됨). 다음 섹션에서는 이 문제를 해결하는 방법을 설명합니다.  
   
     > [!TIP]
     > 경우에 따라 `Global` 개체와 관련하여 개체를 찾으면 해당 개체를 쉽게 확인할 수 있습니다. 이렇게 하려면 식별자에 대한 바로 가기 메뉴를 열고 **루트 뷰에서 보기**를 선택합니다.  
   
-## <a name="FixingMemory"></a> 메모리 문제 수정  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> 메모리 문제 수정  
   
 1. 프로파일러에 의해 표시된 데이터를 사용하여 ID가 "item"인 DOM 요소 제거를 담당하는 코드를 검사합니다. 이 작업은 `initialize()` 함수에서 수행됩니다.  
   
@@ -266,7 +266,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 4. **사용 가능한 도구**에서 **JavaScript 메모리**를 선택한 다음 **시작**을 선택합니다.  
   
-5. 앞에서와 동일한 절차에 따라 세 개의 스냅샷을 만듭니다. 단계는 여기에 요약되어 있습니다.  
+5. 앞에서와 동일한 절차에 따라 세 개의 스냅샷을 만듭니다. 단계는 아래에 요약되어 있습니다.  
   
    1. 앱에서 **메모리 누수** 단추를 연속해서 네 번 선택합니다.  
   

@@ -17,53 +17,53 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440111"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841762"
 ---
 # <a name="developing-a-legacy-language-service"></a>레거시 언어 서비스 개발
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 섹션 항목의 링크를 도움이 되는 레거시 언어 서비스를 만듭니다.  
+이 섹션에서는 레거시 언어 서비스를 만드는 데 도움이 되는 항목에 대 한 링크를 제공 합니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 언어 서비스를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 언어 서비스를 구현 하는 새로운 방법에 대해 자세히 알아보려면 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)을 참조 하세요.  
   
 > [!NOTE]
-> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [레거시 언어 서비스 모델](../../extensibility/internals/model-of-a-legacy-language-service.md)  
- 에 대 한 최소 언어 서비스의 모델을 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 핵심 편집기입니다. 사용자 고유의 언어 서비스 만들기에 대 한 지침으로이 모델을 사용할 수 있습니다.  
+ 핵심 편집기에 대 한 최소 언어 서비스의 모델을 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . 사용자 고유의 언어 서비스를 만들기 위한 지침으로이 모델을 사용할 수 있습니다.  
   
  [레거시 언어 서비스 인터페이스](../../extensibility/internals/legacy-language-service-interfaces.md)  
- 구문 강조 표시, 메서드 데이터 및 기타 기능을 제공 하는 데 사용할 수 있는 추가 개체의 목록을 제공 하 고 언어 서비스를 구현 하는 데 필요한 개체를 설명 합니다.  
+ 언어 서비스를 구현 하는 데 필요한 개체에 대해 설명 하 고 구문 강조 표시, 메서드 데이터 및 기타 기능을 제공 하는 데 사용할 수 있는 추가 개체의 목록을 제공 합니다.  
   
  [레거시 언어 서비스 명령 가로채기](../../extensibility/internals/intercepting-legacy-language-service-commands.md)  
- 명령 필터 절편 명령 텍스트 보기 처리할 수 있는 언어 서비스에 삽입 하는 방법에 설명 합니다.  
+ 명령 필터를 언어 서비스에 삽입 하 여 텍스트 뷰에서 다른 방법으로 처리할 명령을 가로채는 방법에 대해 설명 합니다.  
   
  [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service2.md)  
- 사용 하 여 언어 서비스를 등록 하는 방법에 대 한 정보를 제공 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
+ 를 사용 하 여 언어 서비스를 등록 하는 방법에 대 한 정보를 제공 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 합니다.  
   
  [디버깅에 대한 언어 서비스 지원](../../extensibility/internals/language-service-support-for-debugging.md)  
- 언어 서비스 디버거 지원 기능을 제공할 수 있습니다 하는 방법을 설명 합니다.  
+ 언어 서비스에서 디버거를 지 원하는 기능을 제공 하는 방법을 설명 합니다.  
   
  [검사 목록: 레거시 언어 서비스 만들기](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
- 만들기 및 핵심 편집기에 대 한 언어 서비스를 통합 하기 위한 단계별 지침을 제공 합니다.  
+ 핵심 편집기에 대 한 언어 서비스를 만들고 통합 하는 방법에 대 한 단계별 지침을 제공 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- 언어 서비스에서 구문 강조를 구현 하는 방법에 설명 합니다.  
+ 언어 서비스에서 구문 강조 표시를 구현 하는 방법에 대해 설명 합니다.  
   
- [레거시 언어 서비스의 문 완성](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- 문 완성는 언어 서비스를 사용 하면 언어 키워드 또는 입력 시작 하는 요소를 완료 하는 프로세스를 설명 합니다.  
+ [레거시 언어 서비스의 명령문 완성](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
+ 언어 서비스에서 사용자가 입력을 시작한 언어 키워드나 요소를 완료 하는 데 도움이 되는 프로세스를 설명 합니다.  
   
  [레거시 언어 서비스의 매개 변수 정보](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
- 오버 로드 된 함수 및 메서드에 대 한 메서드 팁을 제공 하는 방법에 설명 합니다.  
+ 오버 로드 된 함수 및 메서드에 대 한 메서드 팁을 제공 하는 방법을 설명 합니다.  
   
  [방법: 레거시 언어 서비스에서 숨겨진 텍스트 지원 제공](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
- 숨겨진된 텍스트 영역의 용도 설명 하 고 숨겨진된 텍스트 영역을 구현 하는 방법에 대 한 지침을 제공 합니다.  
+ 숨겨진 텍스트 영역의 용도를 설명 하 고 숨겨진 텍스트 영역을 구현 하는 방법에 대 한 지침을 제공 합니다.  
   
  [방법: 레거시 언어 서비스에서 확장 개요 표시 지원 제공](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- 초과 지 원하는 언어에 대 한 개요 표시 지원 확장 하는 두 가지 옵션에 설명 합니다 *정의 부분만 보이기* 명령입니다.
+ *정의로 축소* 명령을 지 원하는 것 이상으로 언어에 대 한 개요 지원을 확장 하는 두 가지 옵션에 대해 설명 합니다.

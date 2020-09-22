@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544159"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810004"
 ---
 # <a name="properties-of-domain-relationships"></a>도메인 관계의 속성
 다음 표의 속성은 도메인 관계와 연결 되어 있습니다. 도메인 관계에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
@@ -38,4 +38,4 @@ ms.locfileid: "85544159"
 
 ## <a name="see-also"></a>추가 정보
 
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))
