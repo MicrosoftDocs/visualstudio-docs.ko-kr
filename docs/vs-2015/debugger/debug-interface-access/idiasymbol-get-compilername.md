@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6276247bb93e7482dda713c95b40a68809c0237
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64815006"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841927"
 ---
-# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
+# <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-생성 하는 데 사용 하는 컴파일러의 이름을 반환 합니다 [Compiland](../../debugger/debug-interface-access/compiland.md)합니다.  
+[Compiland](../../debugger/debug-interface-access/compiland.md)를 생성 하는 데 사용 되는 컴파일러의 이름을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,19 +35,19 @@ HRESULT get_compilerName (
   
 #### <a name="parameters"></a>매개 변수  
  `pName`  
- 컴파일러의 유니코드 이름이 포함 됩니다 하는 BSTR에 대 한 포인터입니다.  
+ 컴파일러의 유니코드 이름을 포함 하는 BSTR에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
   
 ## <a name="requirements"></a>요구 사항  
   
-|요구 사항|설명|  
+|요구 사항|Description|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
 |버전:|DIA SDK v8.0|  

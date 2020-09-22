@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425876"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841703"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ public interface INodeLogger: ILogger
   
   요구 사항에 맞게 ConfigurableForwardingLogger를 수정할 수 있습니다. 이렇게 하려면 MSBuild.exe를 사용하여 명령줄에서 로거를 호출하고 로거에서 중앙 노드로 전달하려는 빌드 이벤트를 나열합니다.  
   
-  대신 사용자 지정 전달 로거를 만들 수 있습니다. 사용자 지정 전달 로거를 만들어 로거의 동작을 미세 조정할 수 있습니다. 그러나 사용자 지정 전달 로거를 만드는 것은 ConfigurableForwardingLogger를 사용자 지정하는 것보다 더 복잡합니다. 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.  
+  대신 사용자 지정 전달 로거를 만들 수 있습니다. 사용자 지정 전달 로거를 만들어 로거의 동작을 미세 조정할 수 있습니다. 그러나 사용자 지정 전달 로거를 만드는 것은 ConfigurableForwardingLogger를 사용자 지정하는 것보다 더 복잡합니다. 자세한 내용은 [전달로 거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조 하세요.  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>단순 분산 로깅에 ConfigurableForwardingLogger 사용  
  ConfigurableForwardingLogger 또는 사용자 지정 전달 로거를 연결하려면 MSBuild.exe 명령줄 빌드에서 `/distributedlogger` 스위치(간단하게 `/dl`)를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산 로거가 항상 하나 대신 두 개의 로깅 클래스(전달 로거 및 중앙 로거)를 가진 것을 제외하고 `/logger` 스위치에 대한 것과 동일합니다. 다음은 XMLForwardingLogger라는 사용자 지정 전달 로거를 연결하는 방법의 예입니다.  
@@ -83,7 +83,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 > [!NOTE]
 > 별표(*)는 `/dl` 스위치에서 두 개의 로거 이름을 구분해야 합니다.  
   
- ConfigurableForwardingLogger를 사용하는 것은 일반 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 로거 대신 ConfigurableForwardingLogger 로거를 연결하고 매개 변수로 ConfigurableForwardingLogger에서 중앙 노드에 전달하려는 이벤트를 지정하는 것을 제외하고 다른 로거를 사용하는 것과 비슷합니다([빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)에 설명된 대로).  
+ ConfigurableForwardingLogger를 사용 하는 것은 일반적인로 거 대신 ConfigurableForwardingLogger로 [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)거를 연결 하 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 고 ConfigurableForwardingLogger가 중앙 노드에 전달 하도록 할 이벤트를 매개 변수로 지정 한다는 점을 제외 하 고 다른로 거를 사용 하는 것과 같습니다.  
   
  예를 들어 빌드가 시작하거나 끝날 때 및 오류가 발생할 때 알림을 받으려는 경우 매개 변수로 `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` 및 `ERROREVENT`를 전달합니다. 세미콜론으로 구분하여 여러 매개 변수를 전달할 수 있습니다. 다음은 ConfigurableForwardingLogger를 사용하여 `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` 및 `ERROREVENT` 이벤트만 전달하는 방법의 예입니다.  
   
@@ -115,4 +115,4 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |SHOWCOMMANDLINE|  
   
 ## <a name="see-also"></a>참고 항목  
- [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)
+ [전달로 거 만들기](../msbuild/creating-forwarding-loggers.md)

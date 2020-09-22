@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015641"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739995"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 서버 탐색기 확장 하 여 웹 파트 표시
   Visual Studio에서는 **서버 탐색기** 의 **sharepoint 연결** 노드를 사용 하 여 sharepoint 사이트의 구성 요소를 볼 수 있습니다. 그러나 **서버 탐색기** 는 기본적으로 일부 구성 요소를 표시 하지 않습니다. 이 연습에서는 연결 된 각 SharePoint 사이트에 웹 파트 갤러리를 표시 하도록 **서버 탐색기** 를 확장 합니다.
@@ -42,7 +42,7 @@ ms.locfileid: "86015641"
 > [!NOTE]
 > 서버 개체 모델 대신 SharePoint 용 클라이언트 개체 모델을 사용 하는이 연습에 대 한 대체 버전은 [연습: 서버 탐색기 확장에서 sharepoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -275,7 +275,7 @@ ms.locfileid: "86015641"
 
 1. **솔루션 탐색기**에서 webpartnode 프로젝트 아래의 매니페스트 편집기에서 **source.extension.vsixmanifest** 파일을 엽니다.
 
-     Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)를 참조 하세요.
+     Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
 2. **제품 이름** 상자에 **서버 탐색기에 대 한 웹 파트 갤러리 노드**를 입력 합니다.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015641"
 10. **유형** 상자에 **SharePoint. Commands**를 입력 합니다.
 
     > [!NOTE]
-    > 이 요소는 Visual Studio 확장에 포함 하려는 사용자 지정 확장 프로그램을 지정 합니다. 자세한 내용은 [Asset 요소 (VSX 스키마)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)를 참조 하세요.
+    > 이 요소는 Visual Studio 확장에 포함 하려는 사용자 지정 확장 프로그램을 지정 합니다. 자세한 내용은 [Asset 요소 (VSX 스키마)](/previous-versions/dd393737(v=vs.110))를 참조 하세요.
 
 11. **원본** 목록에서 현재 솔루션 목록 항목 **의 A 프로젝트** 를 선택 합니다.
 
@@ -370,7 +370,7 @@ ms.locfileid: "86015641"
 4. Visual Studio의 두 인스턴스를 모두 닫습니다 (이 경우에는 WebPartNode 솔루션이 열려 있는 Visual Studio의 인스턴스 및 실험적 인스턴스).
 
 ## <a name="see-also"></a>추가 정보
-- [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [아이콘에 대 한 이미지 편집기](/cpp/windows/image-editor-for-icons)
 - [아이콘 또는 다른 이미지 만들기 아이콘에 대 한 이미지 편집기 &#40;&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

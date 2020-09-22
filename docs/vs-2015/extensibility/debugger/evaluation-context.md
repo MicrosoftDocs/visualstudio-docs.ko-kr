@@ -1,5 +1,5 @@
 ---
-title: 평가 컨텍스트에 | Microsoft Docs
+title: 평가 컨텍스트 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,35 +12,35 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7dae6ddcb0c75f0dcbc2207465aed522a4210159
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444752"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842226"
 ---
 # <a name="evaluation-context"></a>평가 컨텍스트
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 방법은 더 이상 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 자세한 내용은 [Clr 식](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 계산기 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조 하세요.  
   
- 세 가지 인수를 전달할 디버그 엔진 (DE) 식 계산기 (EE)를 호출 하면 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 다음 표에 나와 있는 것 처럼 찾기 및 평가, 기호에 대 한 컨텍스트를 결정 합니다.  
+ DE (디버그 엔진)가 EE (식 계산기)를 호출할 때 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 에 전달 되는 세 개의 인수는 다음 표에 나와 있는 것 처럼 기호를 찾고 계산 하기 위한 컨텍스트를 결정 합니다.  
   
 ## <a name="arguments"></a>인수  
   
-|인수|설명|  
+|인수|Description|  
 |--------------|-----------------|  
-|`pSymbolProvider`|[IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) 기호를 식별 하는 데 사용할 기호 처리기 (SH)를 지정 하는 인터페이스입니다.|  
-|`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) 현재 실행 지점을 지정 하는 인터페이스입니다. 이 실행 중인 코드를 포함 하는 메서드를 찾을 수 있습니다.|  
-|`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) 값과 이름이 지정 된 기호의 형식을 찾는 데 사용할 수 있는 인터페이스입니다.|  
+|`pSymbolProvider`|기호를 식별 하는 데 사용할 기호 처리기 (SH)를 지정 하는 [Idebugsymbol 공급자](../../extensibility/debugger/reference/idebugsymbolprovider.md) 인터페이스입니다.|  
+|`pAddress`|현재 실행 지점을 지정 하는 [Idebugaddress](../../extensibility/debugger/reference/idebugaddress.md) 인터페이스입니다. 이를 사용 하 여 실행 중인 코드가 포함 된 메서드를 찾을 수 있습니다.|  
+|`pBinder`|이름이 지정 된 경우 기호의 값과 형식을 찾는 데 사용할 수 있는 [Idebugbinder](../../extensibility/debugger/reference/idebugbinder.md) 인터페이스입니다.|  
   
- `IDebugParsedExpression::EvaluateSync` 반환 합니다는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 결과 값 및 해당 형식을 나타내는 인터페이스입니다.  
+ `IDebugParsedExpression::EvaluateSync` 결과 값과 해당 형식을 나타내는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Key 식 계산기 인터페이스](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
- [로컬 항목 표시](../../extensibility/debugger/displaying-locals.md)   
+ [키 식 계산기 인터페이스](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
+ [지역 표시](../../extensibility/debugger/displaying-locals.md)   
  [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)   
- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)   
+ [Idebug기호 공급자](../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)

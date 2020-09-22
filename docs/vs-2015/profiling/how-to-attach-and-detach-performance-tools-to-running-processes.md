@@ -1,5 +1,5 @@
 ---
-title: '방법: 실행 중인 프로세스에 성능 도구 연결 및 분리 | Microsoft Docs'
+title: '방법: 실행 중인 프로세스에 성능 도구 연결 및 분리 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443715"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841759"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>방법: 실행 중인 프로세스에 성능 도구 연결 및 분리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "63443715"
   
 - 모든 사용자에게 프로파일링 액세스 거부.  
   
-  자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
+  자세한 내용은 [프로 파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조 하세요.  
   
 ### <a name="to-attach-to-a-running-process"></a>실행 중인 프로세스에 연결하려면  
   
@@ -74,5 +74,5 @@ ms.locfileid: "63443715"
  [데이터 수집 제어](../profiling/controlling-data-collection.md)   
  [성능 세션 개요](../profiling/performance-session-overview.md)   
  [방법: 성능 데이터 수집 시작 및 종료](../profiling/how-to-start-and-end-performance-data-collection.md)   
- [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)   
+ [프로 파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

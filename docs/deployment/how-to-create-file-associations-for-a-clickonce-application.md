@@ -1,5 +1,6 @@
 ---
-title: 방법-ClickOnce 응용 프로그램에 대 한 파일 연결 만들기 | Microsoft Docs
+title: 파일 연결 만들기 (ClickOnce 앱)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382499"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809783"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 대한 파일 연결 만들기
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 하나 이상의 파일 이름 확장명에 연결 될 수 있으므로 사용자가 이러한 형식의 파일을 열 때 응용 프로그램이 자동으로 시작 됩니다. 응용 프로그램에 파일 이름 확장명 지원을 추가 하 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 것은 간단 합니다.
@@ -53,7 +54,7 @@ ms.locfileid: "85382499"
 
     자세한 내용은 [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [\<fileAssociation> 요소인](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
 - [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

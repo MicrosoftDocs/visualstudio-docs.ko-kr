@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434297"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841842"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)�
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
-> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. Windows 스토어 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
+> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. Windows 스토어 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
   
 ## <a name="windows-counters"></a>Windows 카운터  
  Windows 카운터는 운영 체제, 애플리케이션, 서비스 또는 드라이버의 성능에 대한 정보를 제공하는 Windows 진단 인프라의 일부입니다. Windows 카운터는 현재 컴퓨터의 구성에 따라 다르며 다른 컴퓨터에서 사용하지 못할 수 있습니다. Windows 성능 카운터는 프로파일링 데이터 파일에 프로파일링 표시로 수집되므로 보기 및 보고서를 필터링하는 데 사용할 수 있습니다.  
@@ -123,14 +123,14 @@ Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)�
   
 2. 형식  
   
-     **\<Visual Studio 성능 도구 디렉터리>\VSPerfCmd /querycounters**  
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
-     여기서 **\<Visual Studio 성능 도구 디렉터리>** 는 Visual Studio 설치의 성능 도구 디렉터리 경로이며, 일반적으로 다음과 같습니다.  
+     여기서 **\<Visual Studio Performance Tools Directory>** 는 Visual Studio 설치의 성능 도구 디렉터리에 대 한 경로입니다 .이 경로는 일반적으로입니다.  
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
 ## <a name="see-also"></a>참고 항목  
- [개요](../profiling/overviews-performance-tools.md)   
+ [간단한](../profiling/overviews-performance-tools.md)   
  [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)   
  [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)   
  [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)

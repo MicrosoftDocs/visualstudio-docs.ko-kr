@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420153"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842119"
 ---
 # <a name="graphics-pipeline-stages"></a>그래픽 파이프라인 단계
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63420153"
   
  다음은 파이프라인 단계 창입니다.  
   
- ![3&#45;D 개체 파이프라인 단계를 거칩니다. ](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
+ ![3 개의&#45;D 개체가 파이프라인 단계를 거칩니다.](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
   
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>그래픽 파이프라인 단계 창 이해  
  파이프라인 단계 창에서는 각 그리기 호출에 대해 각 그래픽 파이프라인 단계의 결과를 별도로 시각화합니다. 일반적으로 파이프라인 중간 단계의 결과는 숨겨져 있어 렌더링 문제가 시작된 위치를 파악하기가 어렵습니다. 각 단계를 별도로 시각화하면 파이프라인 단계 창에서 문제가 시작되는 위치를 쉽게 확인할 수 있습니다. 예를 들어 꼭짓점 셰이더 단계에서 예기치 않게 개체를 화면 밖에 그리는 경우를 쉽게 확인할 수 있습니다.  
@@ -69,7 +69,7 @@ ms.locfileid: "63420153"
 > [!NOTE]
 > `POSITION` 의미 체계가 입력 어셈블러 출력에 없으면 **입력 어셈블러** 단계에서는 아무 정보도 표시되지 않습니다.  
   
- **꼭짓점 셰이더**  
+ **꼭 짓 점 셰이더**  
  꼭짓점 셰이더 단계에서는 일반적으로 변형, 스킨 적용, 조명 등의 작업을 수행하여 꼭짓점을 처리합니다. 꼭짓점 셰이더는 입력으로 사용하는 것과 동일한 수의 꼭짓점을 생성합니다.  
   
  파이프라인 단계 창에서 꼭짓점 셰이더 출력은 와이어프레임 래스터 이미지로 시각화됩니다. 결과를 좀 더 자세히 살펴보려면 **그래픽 파이프라인 단계** 창에서 **꼭짓점 셰이더**를 선택하여 처리된 꼭짓점을 이미지 편집기에 표시합니다.  
@@ -118,14 +118,14 @@ ms.locfileid: "63420153"
  파이프라인 단계 창에서 출력 병합기 출력은 완전 컬러의 래스터 이미지로 시각화됩니다. 결과를 좀 더 자세히 살펴보려면 **그래픽 파이프라인 단계** 창에서 **출력 병합기**를 선택하여 병합된 프레임 버퍼를 표시합니다.  
   
 ### <a name="vertex-shader-preview"></a>꼭짓점 셰이더 미리 보기  
- 꼭 짓 점 셰이더 단계를 선택 하는 경우는 **그래픽 파이프라인 단계** 창 합니다 **입력 버퍼** 패널이 표시 됩니다. 여기서는 입력 어셈블러 단계에서 어셈블된 후 꼭짓점 셰이더에 제공되는 꼭짓점 목록에 대한 정보를 찾을 수 있습니다.  
+ **그래픽 파이프라인 단계** 창에서 꼭 짓 점 셰이더 단계를 선택 하면 **입력 버퍼** 패널이 표시 됩니다. 여기서는 입력 어셈블러 단계에서 어셈블된 후 꼭짓점 셰이더에 제공되는 꼭짓점 목록에 대한 정보를 찾을 수 있습니다.  
   
- ![꼭 짓 점 셰이더 단계 입력된 버퍼 뷰어](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
+ ![꼭짓점 셰이더 단계 입력 버퍼 뷰어](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
   
  꼭짓점 셰이더 단계의 결과를 보려면 꼭짓점 셰이더 단계 미리 보기를 선택하여 꼭짓점 셰이더에서 변형된 후 메시의 래스터화된 전체 크기 와이어프레임을 표시합니다.  
   
- ![꼭 짓 점 셰이더 단계 결과 미리 보기](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
+ ![꼭짓점 셰이더 단계 결과 미리 보기](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
   
 ## <a name="see-also"></a>참고 항목  
- [연습: 꼭짓점 음영으로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [연습: 꼭 짓 점 음영으로 인해 누락 된 개체](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [연습: 음영으로 인한 렌더링 오류 디버그](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

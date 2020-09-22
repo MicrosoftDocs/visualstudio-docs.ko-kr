@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438309"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841886"
 ---
 # <a name="how-to-edit-a-register-value"></a>방법: 레지스터 값 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

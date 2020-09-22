@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015046"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740159"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint용 웹 파트 만들기
   웹 파트를 사용하면 브라우저를 통해 SharePoint 사이트 페이지의 콘텐츠, 모양, 동작을 수정할 수 있습니다. 웹 파트는 웹 파트 페이지 내에서 실행되는 서버 쪽 컨트롤이며, SharePoint 사이트에 표시되는 페이지의 구성 요소입니다. [구성 요소: 웹 파트](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))를 참조하세요.
@@ -85,7 +85,7 @@ ms.locfileid: "86015046"
 
 - 비주얼 웹 파트는 $SPUrl과 같은 SharePoint Server 토큰을 직접 지원하지 않습니다. 자세한 내용은 [SharePoint 솔루션 문제 해결](../sharepoint/troubleshooting-sharepoint-solutions.md) 항목에서 “샌드박스가 적용된 비주얼 웹 파트의 토큰 제한 사항”을 참조하세요.
 
-- 샌드박스 솔루션의 비주얼 웹 파트에 “샌드박스가 적용된 코드 호스트 서비스의 사용량이 너무 많아 요청을 처리할 수 없으므로 샌드박스가 적용된 코드 실행 요청이 거부되었습니다.” 오류가 표시되는 경우도 있습니다. 이 오류에 대한 자세한 내용은 [SharePoint 개발자 팀 블로그](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157)에서 관련 게시물을 참조하세요.
+- 샌드박스 솔루션의 비주얼 웹 파트에 “샌드박스가 적용된 코드 호스트 서비스의 사용량이 너무 많아 요청을 처리할 수 없으므로 샌드박스가 적용된 코드 실행 요청이 거부되었습니다.” 오류가 표시되는 경우도 있습니다. 이 오류에 대한 자세한 내용은 [SharePoint 개발자 팀 블로그](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157)에서 관련 게시물을 참조하세요.
 
 - 서버 쪽 JavaScript 디버깅은 Visual Studio에서 지원되지 않지만 클라이언트 쪽 JavaScript 디버깅은 지원됩니다.
 

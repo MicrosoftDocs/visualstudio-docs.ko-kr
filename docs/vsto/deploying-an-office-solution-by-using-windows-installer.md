@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986145"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807965"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer를 사용 하 여 Office 솔루션 배포
 
@@ -502,9 +502,9 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
    빌드가 완료 된 후에는 다음 위치에서 \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 **Addinsetup** 프로젝트의 *setup.exe* 파일을 찾을 수 있습니다. <em>S\addinsetupprojectroot</em>** \\ **
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
-- [배포를 위한 Office 솔루션 필수 조건](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [배포를 위한 Office 솔루션 필수 조건](/previous-versions/bb608617(v=vs.110))
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)
 - [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)
 - [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)

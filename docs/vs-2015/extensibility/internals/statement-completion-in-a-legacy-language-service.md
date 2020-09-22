@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스에서 문 완성 | Microsoft Docs
+title: 레거시 언어 서비스의 문 완성 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408473"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841695"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 명령문 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-문 완성 하는 언어 서비스는 언어 키워드 또는 핵심 편집기에 입력 시작 하는 요소를 완료 하는 사용자를 사용 하면 프로세스. 이 항목에는 문 완성 작동 원리 및 언어 서비스에서 구현 하는 방법을 설명 합니다.  
+문 완성은 언어 서비스에서 사용자가 핵심 편집기에서 입력을 시작한 언어 키워드나 요소를 완료 하는 데 도움이 되는 프로세스입니다. 이 항목에서는 문 완성이 작동 하는 방식과 언어 서비스에서이를 구현 하는 방법에 대해 설명 합니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 문 완성 기능을 구현 하는 새로운 방법에 대 한 자세한 참조 [연습: 문 완성 표시](../../extensibility/walkthrough-displaying-statement-completion.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 문 완성을 구현 하는 새로운 방법에 대해 자세히 알아보려면 [연습: 문 완성 표시](../../extensibility/walkthrough-displaying-statement-completion.md)를 참조 하세요.  
   
 > [!NOTE]
-> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="implementing-statement-completion"></a>문 완성 구현  
- 문 완성 코어 편집기에서 대화형으로 사용 하면 더 쉽게 하 고 신속 하 게 코드를 작성 하는 특별 한 UI를 활성화 합니다. 문 완성 표시 하 여 관련 개체 또는 클래스는 필요할 때 특정 요소를 기억할 필요가 도움말 참조 항목에서 조회 하거나이 방지 하는 기능입니다.  
+ 핵심 편집기에서 문 완성은 대화형으로 보다 쉽고 빠르게 코드를 작성할 수 있는 특수 한 UI를 활성화 합니다. 문 완성 기능을 사용 하면 필요에 따라 관련 개체 또는 클래스를 표시 하 여 특정 요소를 기억할 필요가 없도록 하거나 도움말 참조 항목에서 조회 해야 할 필요가 없습니다.  
   
- 문 완성 기능을 구현 하려면 언어 문을 완료 트리거를 구문 분석할 수 있어야 합니다. 예를 들어 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 점 (.) 연산자를 사용 하는 동안 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 화살표를 사용 하 여 (->) 연산자. 언어 서비스를 둘 이상의 트리거를 사용 하 여 문 완성을 시작할 수 있습니다. 이러한 트리거 명령 필터에서 프로그래밍 됩니다.  
+ 문 완성을 구현 하려면 언어에 구문 분석 될 수 있는 문 완성 트리거가 있어야 합니다. 예를 들어 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 는 점 (.) 연산자를 사용 하 고는 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 화살표 (->) 연산자를 사용 합니다. 언어 서비스에서는 둘 이상의 트리거를 사용 하 여 문 완성을 시작할 수 있습니다. 이러한 트리거는 명령 필터에서 프로그래밍 됩니다.  
   
 ## <a name="command-filters-and-triggers"></a>명령 필터 및 트리거  
- 명령을 필터 일치를 트리거 또는 트리거를 가로챕니다. 명령 필터에 뷰를 추가 하려면 구현 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 호출 하 여 보기에 연결 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 메서드. 동일한 명령 필터를 사용할 수 있습니다 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) 문 완성, 오류 표식 및 메서드 팁 같은 언어 서비스의 모든 측면에 대 한 합니다. 자세한 내용은 [레거시 언어 서비스 명령 가로채기](../../extensibility/internals/intercepting-legacy-language-service-commands.md)합니다.  
+ 명령 필터는 트리거 또는 트리거의 발생을 차단 합니다. 명령 필터를 뷰에 추가 하려면 인터페이스를 구현 하 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 고 메서드를 호출 하 여 뷰에 연결 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> . <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>문 완성, 오류 표식 및 메서드 팁과 같은 언어 서비스의 모든 측면에 동일한 명령 필터 ()를 사용할 수 있습니다. 자세한 내용은 [레거시 언어 서비스 명령 가로채기](../../extensibility/internals/intercepting-legacy-language-service-commands.md)를 참조 하세요.  
   
- 트리거를 편집기에 입력 되는 경우-텍스트 버퍼 특히-언어 서비스가 다음 호출을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 메서드. 이렇게 하면 편집기에는에서 문 완성 후보 사용자가 선택할 수 있도록 UI를 표시 합니다. 이 메서드를 구현 해야 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 하며 <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> 매개 변수로 플래그입니다. 완성 항목 목록을 스크롤 목록 상자에 나타납니다. 사용자가 입력을 계속, 목록 상자에서 선택한 가장 가까운 최신 자로 입력을 반영 하도록 업데이트 됩니다. 핵심 편집기의 문 완성, UI를 구현 하지만 언어 서비스를 구현 해야 합니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 문에 대 한 후보 완성 항목의 집합을 정의 하는 인터페이스입니다.  
+ 편집기에서 트리거를 입력 하는 경우 (특히 텍스트 버퍼) 언어 서비스는 메서드를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 합니다. 이렇게 하면 사용자가 문 완성 후보에서 선택할 수 있도록 편집기에서 UI를 표시 합니다. 이 메서드를 사용 하려면 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 및 플래그를 <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> 매개 변수로 구현 해야 합니다. 완료 항목 목록이 스크롤 목록 상자에 나타납니다. 사용자가 계속 해 서 입력 하면 목록 상자 내에서 선택한 항목이 가장 최근에 입력 한 문자와 가장 일치 하는 항목을 반영 하도록 업데이트 됩니다. 핵심 편집기는 문 완성을 위해 UI를 구현 하지만 언어 서비스는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 문에 대 한 후보 완료 항목 집합을 정의 하기 위해 인터페이스를 구현 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 명령 가로채기](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

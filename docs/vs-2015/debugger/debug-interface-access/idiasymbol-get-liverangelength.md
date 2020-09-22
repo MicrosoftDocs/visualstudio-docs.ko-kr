@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825237"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842126"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-로컬 기호 유효 주소 범위의 길이 반환 합니다.  
+로컬 기호가 유효한 주소 범위의 길이를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,20 +35,20 @@ HRESULT get_liveRangeLength ( 
   
 #### <a name="parameters"></a>매개 변수  
  `length`  
- [out] 주소 범위 길이 반환합니다.  
+ 제한이 주소 범위의 길이를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 된 오류 코드 기호 라이브 범위 정보가 없는 것을 의미 합니다.  
+> 반환 된 오류 코드는 기호에 라이브 범위 정보가 없음을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: Dia2  
   
- 라이브러리: diaguids.lib  
+ 라이브러리: diaguids  
   
  DLL: msdia100.dll  
   

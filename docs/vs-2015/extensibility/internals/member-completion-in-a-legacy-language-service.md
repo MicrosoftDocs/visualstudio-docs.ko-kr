@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스의 멤버 완성 | Microsoft Docs
+title: 레거시 언어 서비스의 멤버 완료 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,53 +13,53 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437919"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841794"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 멤버 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-IntelliSense 멤버 완성이 클래스, 구조체, 열거형 또는 네임 스페이스와 같은 특정 범위의 가능한 멤버 목록을 표시 하는 도구 설명 합니다. 예를 들어 C#에서는 사용자가 "this" 뒤에 마침표 또는 현재 범위에서 구조체는 클래스의 모든 멤버 목록을 표시 됩니다 선택할 수 있는 목록에서.  
+IntelliSense 멤버 완성은 클래스, 구조체, 열거형 또는 네임 스페이스와 같은 특정 범위의 가능한 멤버 목록을 표시 하는 도구 설명입니다. 예를 들어 c #에서 사용자가 "this"를 입력 하 고 마침표를 입력 하면 현재 범위에 있는 클래스 또는 구조체의 모든 멤버 목록이 사용자가 선택할 수 있는 목록에 표시 됩니다.  
   
- (MPF)에서 관리 되는 패키지 프레임 워크 도구 팁 및 도구 설명; 목록의 관리에 대 한 지원 제공 필요한 모든는 목록에 표시 되는 데이터를 제공 합니다.이 언어 구문 분석기에서는 협력입니다.  
+ MPF (관리 되는 패키지 프레임 워크)는 도구 설명에 대 한 지원을 제공 하 고 도구 설명의 목록 관리를 제공 합니다. 목록에 표시 되는 데이터를 제공 하는 데 필요한 모든 것이 파서에서 협력 됩니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/extending-the-editor-and-language-services.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 되지만 언어 서비스 기능을 구현 하는 최신 방법은 MEF 확장을 사용 하는 것입니다. 자세히 알아보려면 [편집기 및 언어 서비스 확장](../../extensibility/extending-the-editor-and-language-services.md)을 참조 하세요.  
   
 > [!NOTE]
-> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="how-it-works"></a>작동 방법  
- 다음은 두 가지 방법으로는 멤버 목록이 MPF 클래스를 사용 하 여 표시 됩니다.  
+ 다음은 MPF 클래스를 사용 하 여 멤버 목록을 표시 하는 두 가지 방법입니다.  
   
-- 멤버 완성 문자 이후로 식별자에 캐럿을 배치 하 고 선택 **멤버 목록** 에서 합니다 **IntelliSense** 메뉴.  
+- 식별자에 캐럿을 배치 하거나 멤버 완성 문자 뒤에 **IntelliSense** 메뉴에서 **멤버 나열** 을 선택 합니다.  
   
-- 합니다 <xref:Microsoft.VisualStudio.Package.IScanner> 스캐너 멤버 완성 문자를 검색 하 고 토큰 트리거 설정 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 해당 문자에 대 한 합니다.  
+- <xref:Microsoft.VisualStudio.Package.IScanner>스캐너는 구성원 완성 문자를 검색 하 고 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 해당 문자에 대 한 토큰 트리거를 설정 합니다.  
   
-  멤버 완료 문자 따라야 하는 클래스, 구조체 또는 열거형의 멤버 임을 나타냅니다. 예를 들어, C# 또는 Visual Basic 멤버 완성 문자가 `.`에서 C++ 문자는를 `.` 또는 `->`. 트리거 값에는 멤버 선택 문자를 검색할 때 설정 됩니다.  
+  멤버 완성 문자는 클래스, 구조체 또는 열거형의 멤버가 따라야 함을 나타냅니다. 예를 들어 c # 또는 Visual Basic 멤버 완성 문자는 이며 `.` c + +에서 문자는 `.` 또는 `->` 입니다. 트리거 값은 멤버 선택 문자를 검색할 때 설정 됩니다.  
   
-### <a name="the-intellisense-member-list-command"></a>IntelliSense 멤버 목록 표시 명령  
- <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 명령에 대 한 호출을 시작 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를를 <xref:Microsoft.VisualStudio.Package.Source> 클래스 및 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 호출 하는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드 파서를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다.  
+### <a name="the-intellisense-member-list-command"></a>IntelliSense 멤버 목록 명령  
+ <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>명령은 클래스의 메서드에 대 한 호출을 시작 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> <xref:Microsoft.VisualStudio.Package.Source> 하 고, <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 구문 분석 이유를 사용 하 여 메서드 파서를 호출 합니다 <xref:Microsoft.VisualStudio.Package.ParseReason> .  
   
- 파서에서 현재 위치 뿐만 아니라 토큰 또는 현재 위치 바로 앞의 컨텍스트를 결정합니다. 이 토큰에 따라 선언의 목록에 표시 됩니다. 예를 들어 C#에서 선택한 클래스 멤버에 캐럿을 배치 하는 경우 **멤버 목록**, 클래스의 모든 멤버 목록을 표시 합니다. 개체 변수 뒤에 오는 지나면 캐럿을 배치 하는 경우 개체가 나타내는 클래스의 모든 멤버 목록을 가져옵니다. 멤버 목록에 표시 되 면 멤버에 캐럿이 배치 되 면 멤버 캐럿에 목록에서 하나를 사용 하 여 대체 목록에서 구성원을 선택 하면 note 합니다.  
+ 파서는 현재 위치의 컨텍스트 및 현재 위치 바로 앞에 있는 토큰을 확인 합니다. 이 토큰을 기반으로 선언 목록이 표시 됩니다. 예를 들어 c #에서 캐럿을 클래스 멤버에 배치 하 고 **멤버 목록**을 선택 하는 경우 클래스의 모든 멤버 목록을 가져옵니다. 개체 변수 다음에 오는 마침표 뒤에 캐럿을 배치 하면 개체가 나타내는 클래스의 모든 멤버 목록이 표시 됩니다. 멤버 목록이 표시 될 때 캐럿이 멤버에 배치 되는 경우 목록에서 멤버를 선택 하면 캐럿이 있는 멤버가 목록에 있는 멤버로 바뀝니다.  
   
-### <a name="the-token-trigger"></a>트리거 토큰  
- <xref:Microsoft.VisualStudio.Package.TokenTriggers> 트리거에서 호출을 시작 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 합니다 <xref:Microsoft.VisualStudio.Package.Source> 클래스 및 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 호출 하는 파서를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason> (토큰 트리거가 포함 하는 경우를 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 플래그를 구문 분석 이유가 <xref:Microsoft.VisualStudio.Package.ParseReason> 멤버 선택 및 중괄호를 강조 표시를 결합).  
+### <a name="the-token-trigger"></a>토큰 트리거  
+ <xref:Microsoft.VisualStudio.Package.TokenTriggers>트리거는 클래스의 메서드에 대 한 호출을 시작 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> <xref:Microsoft.VisualStudio.Package.Source> 하 고 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드는 구문 분석 이유를 사용 하 여 파서를 호출 합니다 <xref:Microsoft.VisualStudio.Package.ParseReason> (토큰 트리거에서 플래그가 포함 된 경우 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 구문 분석 이유는 <xref:Microsoft.VisualStudio.Package.ParseReason> 멤버 선택 및 중괄호 강조 표시).  
   
- 현재 컨텍스트를 결정 하는 파서를 멤버 선택 문자 입력 된 내용을 뿐만 아니라 배치 합니다. 파서가이 정보를 요청 된 범위의 모든 멤버 목록을 만듭니다. 선언의이 목록에 저장 됩니다는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 에서 반환 되는 개체는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드. 다른 모든 선언에 반환 되는 경우 멤버 완성 도구 설명이 표시 됩니다. 도구 설명의 인스턴스에 의해 관리 되는 <xref:Microsoft.VisualStudio.Package.CompletionSet> 클래스입니다.  
+ 파서는 현재 위치의 컨텍스트와 멤버 선택 문자 앞에 입력 된 내용을 확인 합니다. 이 정보를 통해 파서는 요청 된 범위의 모든 멤버 목록을 만듭니다. 이 선언 목록은 메서드에서 반환 되는 개체에 저장 됩니다 <xref:Microsoft.VisualStudio.Package.AuthoringScope> <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> . 선언이 반환 되 면 멤버 완료 도구 설명이 표시 됩니다. 도구 설명은 클래스의 인스턴스에 의해 관리 됩니다 <xref:Microsoft.VisualStudio.Package.CompletionSet> .  
   
-## <a name="enabling-support-for-member-completion"></a>멤버 완성에 대 한 지원을 사용 하도록 설정  
- 있어야는 `CodeSense` 레지스트리 항목 모든 IntelliSense 작업을 지원 하려면 1로 설정 합니다. 이 레지스트리 항목에 전달 된 명명된 된 매개 변수를 사용 하 여 설정할 수는 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 언어 패키지와 관련 된 사용자 특성입니다. 언어 서비스 클래스에서이 레지스트리 항목의 값을 읽을 합니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> 속성에는 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다.  
+## <a name="enabling-support-for-member-completion"></a>멤버 완성 지원 사용  
+ `CodeSense`IntelliSense 작업을 지원 하려면 레지스트리 항목을 1로 설정 해야 합니다. 이 레지스트리 항목은 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 언어 패키지와 연결 된 사용자 특성에 전달 된 명명 된 매개 변수를 사용 하 여 설정할 수 있습니다. 언어 서비스 클래스는 클래스의 속성에서이 레지스트리 항목의 값을 읽습니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences> .  
   
- 스캐너의 트리거 토큰을 반환 하는 경우 <xref:Microsoft.VisualStudio.Package.TokenTriggers>, 프로그램 파서 선언 목록을 반환 하 고 멤버 완성 목록이 표시 됩니다.  
+ 스캐너가의 토큰 트리거를 반환 하 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 고 파서가 선언 목록을 반환 하면 멤버 완성 목록이 표시 됩니다.  
   
-## <a name="supporting-member-completion-in-the-scanner"></a>스캐너에서 지 원하는 멤버 완성  
- 스캐너 멤버 완성 문자를 검색 하 고 토큰의 트리거를 설정 하는 일을 할 수 있어야 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 문자가 구문 분석 합니다.  
+## <a name="supporting-member-completion-in-the-scanner"></a>스캐너에서 구성원 완료 지원  
+ 스캐너가 해당 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 문자를 구문 분석할 때 멤버 완성 문자를 검색 하 고 토큰 트리거를 설정할 수 있어야 합니다.  
   
 ### <a name="example"></a>예제  
- 다음은 간단한 예제 멤버 완성 문자를 검색 하 고 적절 한 설정 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 플래그입니다. 이 예제는 설명 목적 으로만 제공 됩니다. 스캐너는 메서드가 포함 되어 있는지 가정 `GetNextToken` 식별 하 고 텍스트 줄에서 토큰을 반환 합니다. 예제 코드는 올바른 종류의 문자가 발견 될 때마다 간단히 트리거를 설정 합니다.  
+ 다음은 멤버 완성 문자를 검색 하 고 적절 한 플래그를 설정 하는 간단한 예입니다 <xref:Microsoft.VisualStudio.Package.TokenTriggers> . 이 예는 설명을 위한 목적 으로만 사용 됩니다. 스캐너에는 `GetNextToken` 텍스트 줄에서 토큰을 식별 하 고 반환 하는 메서드가 포함 되어 있다고 가정 합니다. 예제 코드에서는 올바른 종류의 문자가 표시 될 때마다 트리거를 설정 하기만 하면 됩니다.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -92,15 +92,15 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="supporting-member-completion-in-the-parser"></a>파서에서 지 원하는 멤버 완성  
- 멤버 완료 합니다 <xref:Microsoft.VisualStudio.Package.Source> 클래스를 <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> 메서드. 목록에서 파생 된 클래스에서 구현 해야 합니다는 <xref:Microsoft.VisualStudio.Package.Declarations> 클래스입니다. 참조 된 <xref:Microsoft.VisualStudio.Package.Declarations> 구현 해야 하는 방법에 대 한 세부 정보에 대 한 클래스입니다.  
+## <a name="supporting-member-completion-in-the-parser"></a>파서에서 멤버 완료를 지원 합니다.  
+ 멤버 완성을 위해 <xref:Microsoft.VisualStudio.Package.Source> 클래스는 메서드를 호출 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> . 클래스에서 파생 된 클래스에서 목록을 구현 해야 합니다 <xref:Microsoft.VisualStudio.Package.Declarations> . <xref:Microsoft.VisualStudio.Package.Declarations>구현 해야 하는 메서드에 대 한 자세한 내용은 클래스를 참조 하세요.  
   
- 파서를 사용 하 여 이라고 <xref:Microsoft.VisualStudio.Package.ParseReason> 또는 <xref:Microsoft.VisualStudio.Package.ParseReason> 멤버 선택 문자를 입력 하는 경우. 지정 된 위치는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 개체는 멤버 선택 문자 직후입니다. 파서가 소스 코드에서 해당 특정 시점에서 멤버 목록에 나타날 수 있는 모든 멤버의 이름을 수집 해야 합니다. 그런 다음 파서가 사용자가 멤버 선택 문자를 사용 하 여 연결 된 범위를 확인 하려면 현재 줄을 구문 분석 해야 합니다.  
+ 파서는를 호출 <xref:Microsoft.VisualStudio.Package.ParseReason> 하거나 <xref:Microsoft.VisualStudio.Package.ParseReason> 멤버 선택 문자를 입력 하는 경우에 호출 됩니다. 개체에 지정 된 위치는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 멤버 선택 문자 바로 뒤에 있습니다. 파서는 소스 코드의 특정 지점에서 멤버 목록에 나타날 수 있는 모든 멤버의 이름을 수집 해야 합니다. 그런 다음 파서가 현재 줄을 구문 분석 하 여 사용자가 멤버 select 문자를 연결 하려는 범위를 확인 해야 합니다.  
   
- 멤버는 문자를 선택 하기 전에이 범위 식별자의 형식에 기반 합니다. 예를 들어 C#에서 멤버 변수를 지정 `languageService` 의 형식 포함 `LanguageService`입력, **languageService 합니다.** 모든 멤버 목록을 생성 합니다 `LanguageService` 클래스입니다. 또한 C#에서 입력 **이 있습니다.** 현재 범위에서 클래스의 모든 멤버 목록을 생성합니다.  
+ 이 범위는 멤버 선택 문자 앞의 식별자 형식을 기반으로 합니다. 예를 들어 c #에서 형식의 멤버 변수를 지정 하 고 `languageService` languageService을 `LanguageService` 입력 **합니다.** 클래스의 모든 멤버 목록을 생성 `LanguageService` 합니다. 또한 c #에서이를 입력 **합니다.** 현재 범위에 있는 클래스의 모든 멤버 목록을 생성 합니다.  
   
 ### <a name="example"></a>예제  
- 다음 예제에서는 채우는 방법 중 하나는 <xref:Microsoft.VisualStudio.Package.Declarations> 목록입니다. 이 코드에서는 파서는 선언을 생성 하 고 호출 하 여 목록에 추가 `AddDeclaration` 메서드는 `TestAuthoringScope` 클래스입니다.  
+ 다음 예에서는 목록을 채우는 한 가지 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.Declarations> . 이 코드에서는 파서가 선언을 생성 하 고 클래스에서 메서드를 호출 하 여 목록에 추가 한다고 가정 합니다 `AddDeclaration` `TestAuthoringScope` .  
   
 ```csharp  
 using System.Collections;  

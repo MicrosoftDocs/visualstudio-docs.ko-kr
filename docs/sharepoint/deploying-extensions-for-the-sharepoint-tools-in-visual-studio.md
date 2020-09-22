@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580646"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740146"
 ---
-# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구에 대 한 확장 배포
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에 SharePoint 도구 확장 배포
 
 SharePoint 도구 확장을 배포 하려면 확장 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 모든 파일을 포함 하는 확장 (VSIX) 패키지를 만듭니다. VSIX 패키지는 OPC (Open 패키징 규칙) 표준을 따르는 압축 파일입니다. VSIX 패키지에는 *.vsix* 확장명이 있습니다.
 
@@ -234,13 +234,13 @@ SharePoint 도구 확장에 대 한 VSIX 패키지를 수동으로 만들려면 
 
     - 요소 아래에 요소를 추가한 `Microsoft.VisualStudio.MefComponent` `Assets` 다음 새 요소의 값을 VSIX 패키지에서 확장을 구현 하는 어셈블리의 상대 경로로 설정 합니다. 자세한 내용은 [Mefcomponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))를 참조 하세요.
 
-    - 확장에 SharePoint 용 서버 개체 모델을 호출 하는 SharePoint 명령이 포함 된 경우 요소 아래에 `Microsoft.VisualStudio.Assembly` 요소를 추가 `Assets` 합니다. 새 요소의 값을 VSIX 패키지에서 SharePoint 명령을 구현 하는 어셈블리의 상대 경로로 설정 합니다. 자세한 내용은 [Asset 요소 (VSX 스키마)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)를 참조 하세요.
+    - 확장에 SharePoint 용 서버 개체 모델을 호출 하는 SharePoint 명령이 포함 된 경우 요소 아래에 `Microsoft.VisualStudio.Assembly` 요소를 추가 `Assets` 합니다. 새 요소의 값을 VSIX 패키지에서 SharePoint 명령을 구현 하는 어셈블리의 상대 경로로 설정 합니다. 자세한 내용은 [Asset 요소 (VSX 스키마)](/previous-versions/dd393737(v=vs.110))를 참조 하세요.
 
     - 확장에 프로젝트 템플릿 또는 항목 템플릿이 포함 된 경우 `ProjectTemplate` 요소 아래에 또는 `ItemTemplate` 요소를 추가 `Assets` 합니다. 새 요소의 값을 VSIX 패키지의 템플릿이 포함 된 폴더의 상대 경로로 설정 합니다. 자세한 내용은 [Projecttemplate 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) 및 [ITEMTEMPLATE 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))를 참조 하세요.
 
-    - 확장에 프로젝트 템플릿 또는 항목 템플릿에 대 한 사용자 지정 마법사가 포함 된 경우 요소 `Assembly` 아래에 요소를 추가 `Assets` 합니다. 새 요소의 값을 VSIX 패키지에 있는 어셈블리의 상대 경로로 설정 하 고 `AssemblyName` 특성을 전체 어셈블리 이름 (버전, culture 및 공개 키 토큰 포함)으로 설정 합니다. 자세한 내용은 [Dependency 요소 (VSX 스키마)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)를 참조 하세요.
+    - 확장에 프로젝트 템플릿 또는 항목 템플릿에 대 한 사용자 지정 마법사가 포함 된 경우 요소 `Assembly` 아래에 요소를 추가 `Assets` 합니다. 새 요소의 값을 VSIX 패키지에 있는 어셈블리의 상대 경로로 설정 하 고 `AssemblyName` 특성을 전체 어셈블리 이름 (버전, culture 및 공개 키 토큰 포함)으로 설정 합니다. 자세한 내용은 [Dependency 요소 (VSX 스키마)](/previous-versions/dd393682(v=vs.110))를 참조 하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 SharePoint 도구 확장에 대 한 source.extension.vsixmanifest 파일의 내용을 보여 줍니다. 확장은 Contoso.ProjectExtension.dll 이라는 어셈블리에 구현 됩니다. 확장에는 Contoso.ExtensionCommands.dll 이름이 지정 된 SharePoint 명령 어셈블리와 VSIX 패키지의 **itemtemplates** 이라는 폴더 아래에 항목 템플릿이 포함 되어 있습니다. 이 예에서는 두 어셈블리가 VSIX 패키지의 source.extension.vsixmanifest 파일과 동일한 폴더에 있는 것으로 가정 합니다.
 
@@ -267,6 +267,6 @@ SharePoint 도구 확장에 대 한 VSIX 패키지를 수동으로 만들려면 
 ## <a name="see-also"></a>추가 정보
 
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)
-- [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Visual Studio의 SharePoint 도구에 대 한 디버그 확장](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio에서 SharePoint 도구 확장 디버그](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

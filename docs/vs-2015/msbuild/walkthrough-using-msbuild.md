@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445587"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841610"
 ---
 # <a name="walkthrough-using-msbuild"></a>연습: MSBuild 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
 2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-3. **새 프로젝트** 대화 상자에서 Visual C# 프로젝트 형식을 선택하고 **Windows Forms 응용 프로그램** 템플릿을 선택합니다. **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 `D:\`와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(`BuildApp`)을 적용합니다.  
+3. **새 프로젝트** 대화 상자에서 Visual C# 프로젝트 형식을 선택하고 **Windows Forms 애플리케이션** 템플릿을 선택합니다. **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 `D:\`와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(`BuildApp`)을 적용합니다.  
   
      **확인**을 클릭하여 프로젝트 파일을 만듭니다.  
   
@@ -49,9 +49,9 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
 #### <a name="to-examine-the-project-file"></a>프로젝트 파일을 검사하려면  
   
-1. **솔루션 탐색기**에서 프로젝트 노드 BuildApp을 클릭합니다.  
+1. **솔루션 탐색기**에서 프로젝트 노드 buildapp을 클릭 합니다.  
   
-2. **속성** 브라우저에서 **프로젝트 파일** 속성이 BuildApp.csproj인지 확인합니다. 모든 프로젝트 파일 이름에는 접미사 "proj"가 추가됩니다. Visual Basic 프로젝트를 만든 경우 프로젝트 파일 이름은 BuildApp.vbproj가 됩니다.  
+2. **속성** 브라우저에서 **프로젝트 파일** 속성이 buildapp .csproj 인지 확인 합니다. 모든 프로젝트 파일 이름에는 접미사 "proj"가 추가됩니다. Visual Basic 프로젝트를 만든 경우 프로젝트 파일 이름은 BuildApp.vbproj가 됩니다.  
   
 3. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 클릭합니다.  
   
@@ -73,7 +73,7 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
 - 작업(task)은 작업(work)의 최소 단위(빌드의 "구성 요소")이며, 입력과 출력을 포함할 수 있는 독립적인 실행 가능 구성 요소입니다. 현재 프로젝트 파일에는 참조되거나 정의된 작업(task)이 없습니다. 아래 섹션에서 프로젝트 파일에 작업(task)을 추가합니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md) 항목을 참조하세요.  
   
-- 대상은 작업의 명명된 순서입니다. 현재 HTML 주석에 포함 된 프로젝트 파일의 끝에 두 대상을 가지가 있습니다. BeforeBuild 및 AfterBuild입니다.  
+- 대상은 작업의 명명된 순서입니다. 프로젝트 파일의 끝에는 현재 HTML 주석으로 묶인 두 개의 대상(BeforeBuild 및 AfterBuild)이 있습니다.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -124,7 +124,7 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
 3. 프로젝트 파일을 저장합니다.  
   
-   메시지 작업은 MSBuild와 함께 제공되는 여러 작업 중 하나입니다. 사용 가능한 작업 및 사용법 정보의 전체 목록은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.  
+   메시지 작업은 MSBuild와 함께 제공되는 여러 작업 중 하나입니다. 사용 가능한 작업 및 사용 정보에 대 한 전체 목록은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조 하세요.  
   
    메시지 작업에서는 Text 특성의 문자열 값을 입력으로 사용하며 출력 디바이스에 해당 값을 표시합니다. HelloWorld 대상은 메시지 작업을 "Hello"와 "World"를 표시하는 데 각각 한 번씩 두 번 실행합니다.  
   
@@ -175,7 +175,7 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
 </PropertyGroup>  
 ```  
   
- 모든 속성은 PropertyGroup 요소의 자식 요소입니다. 속성의 이름은 자식 요소의 이름이며 속성값은 자식 요소의 텍스트 요소입니다. 예를 들어 개체에 적용된  
+ 모든 속성은 PropertyGroup 요소의 자식 요소입니다. 속성의 이름은 자식 요소의 이름이며 속성값은 자식 요소의 텍스트 요소입니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
@@ -230,7 +230,7 @@ $(PropertyName)
 > 이 두 줄이 표시되지 않는 경우에는 코드 편집기에서 프로젝트 파일을 저장하지 않은 것일 수 있습니다. 파일을 저장하고 다시 시도합니다.  
   
 ### <a name="conditional-properties"></a>조건부 속성  
- Configuration 등의 대다수 속성은 조건부로 정의됩니다. 즉, 속성 요소에 Condition 특성이 나타납니다. 조건부 속성은 조건이 "true"로 확인되는 경우에만 정의되거나 다시 정의됩니다. 정의되지 않은 속성에는 기본값(빈 문자열)이 제공됩니다. 예를 들어 개체에 적용된  
+ Configuration 등의 대다수 속성은 조건부로 정의됩니다. 즉, 속성 요소에 Condition 특성이 나타납니다. 조건부 속성은 조건이 "true"로 확인되는 경우에만 정의되거나 다시 정의됩니다. 정의되지 않은 속성에는 기본값(빈 문자열)이 제공됩니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -241,10 +241,10 @@ $(PropertyName)
  거의 모든 MSBuild 요소는 Condition 특성을 포함할 수 있습니다. Condition 특성을 사용하는 방법에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.  
   
 ### <a name="reserved-properties"></a>예약된 속성  
- MSBuild는 몇 개의 속성 이름을 예약하여 프로젝트 파일과 MSBuild 이진 파일에 대한 정보를 저장합니다. MSBuildToolsPath는 예약된 속성의 한 예입니다. 예약된 속성은 다른 속성과 마찬가지로 $ 표기법을 사용하여 참조됩니다. 자세한 내용은 [방법: 이름 또는 프로젝트 파일의 위치 참조](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) 하 고 [MSBuild 예약 된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)합니다.  
+ MSBuild는 몇 개의 속성 이름을 예약하여 프로젝트 파일과 MSBuild 이진 파일에 대한 정보를 저장합니다. MSBuildToolsPath는 예약된 속성의 한 예입니다. 예약된 속성은 다른 속성과 마찬가지로 $ 표기법을 사용하여 참조됩니다. 자세한 내용은 [방법: 프로젝트 파일의 이름 또는 위치 참조](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) 및 [MSBuild 예약 된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 참조 하세요.  
   
 ### <a name="environment-variables"></a>환경 변수  
- 프로젝트 파일의 환경 변수는 빌드 속성과 같은 방식으로 참조할 수 있습니다. 예를 들어 프로젝트 파일에서 PATH 환경 변수를 사용하려면 $(Path)를 사용합니다. 프로젝트에 환경 변수와 이름이 같은 속성 정의가 포함되어 있으면 프로젝트의 속성이 환경 변수의 값을 재정의합니다. 자세한 내용은 [방법: 환경 변수를 사용 하 여 빌드에서](../msbuild/how-to-use-environment-variables-in-a-build.md)합니다.  
+ 프로젝트 파일의 환경 변수는 빌드 속성과 같은 방식으로 참조할 수 있습니다. 예를 들어 프로젝트 파일에서 PATH 환경 변수를 사용하려면 $(Path)를 사용합니다. 프로젝트에 환경 변수와 이름이 같은 속성 정의가 포함되어 있으면 프로젝트의 속성이 환경 변수의 값을 재정의합니다. 자세한 내용은 [방법: 빌드 시 환경 변수 사용](../msbuild/how-to-use-environment-variables-in-a-build.md)을 참조 하세요.  
   
 ## <a name="setting-properties-from-the-command-line"></a>명령줄에서 속성 설정  
  /property 또는 /p 명령줄 스위치를 사용하여 명령줄에서 속성을 정의할 수 있습니다. 명령줄에서 수신된 속성값은 프로젝트 파일 및 환경 변수에 설정되어 있는 속성값을 재정의합니다.  
@@ -292,12 +292,12 @@ $(PropertyName)
    $(Configuration) is "Debug"  
    ```  
   
-   자세한 내용은 [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md)를 참조하세요.  
+   자세한 내용은 [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md)를 참조 하세요.  
   
 ## <a name="build-items"></a>항목 빌드  
  항목은 빌드 시스템에 대한 입력으로 사용되는 정보 부분(일반적으로는 파일 이름)입니다. 예를 들어 소스 파일을 나타내는 항목 컬렉션을 Compile이라는 작업으로 전달하여 해당 항목을 어셈블리로 컴파일할 수 있습니다.  
   
- 모든 항목은 ItemGroup 요소의 자식 요소입니다. 항목 이름은 자식 요소의 이름이고 항목 값은 자식 요소의 Include 특성 값입니다. 이름이 같은 항목의 값은 해당 이름의 항목 종류로 수집됩니다.  예를 들어 개체에 적용된  
+ 모든 항목은 ItemGroup 요소의 자식 요소입니다. 항목 이름은 자식 요소의 이름이고 항목 값은 자식 요소의 Include 특성 값입니다. 이름이 같은 항목의 값은 해당 이름의 항목 종류로 수집됩니다.  예를 들면 다음과 같습니다.  
   
 ```  
 <ItemGroup>  
@@ -306,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 컴파일에는 다음 두 가지 값이 있습니다. "Program.cs" 및 "properties\ assemblyinfo.cs"입니다.  
+ 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 Compile에는 "Program.cs" 및 "Properties\AssemblyInfo.cs"의 두 값이 있습니다.  
   
  다음 코드는 이 두 파일을 모두 세미콜론으로 구분하여 Include 특성 하나에 선언하는 방식으로 같은 항목 종류를 만듭니다.  
   
@@ -390,7 +390,7 @@ $(PropertyName)
     ```  
   
 ### <a name="include-exclude-and-wildcards"></a>포함, 제외 및 와일드카드  
- Include 특성에서 와일드카드 "*", "\*\*" 및 "?"를 사용하여 항목 종류에 항목을 추가할 수 있습니다. 예를 들어 개체에 적용된  
+ Include 특성에서 와일드카드 "*", "\*\*" 및 "?"를 사용하여 항목 종류에 항목을 추가할 수 있습니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <Photos Include="images\*.jpeg" />  
@@ -402,9 +402,9 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- 위의 코드는 images 폴더 및 모든 하위 폴더에 있는 파일 확장명이 ".jpeg"인 모든 파일을 Photos 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)합니다.  
+ 위의 코드는 images 폴더 및 모든 하위 폴더에 있는 파일 확장명이 ".jpeg"인 모든 파일을 Photos 항목 종류에 추가합니다. 더 많은 예제 [는 방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조 하세요.  
   
- 선언하는 항목은 항목 종류에 추가됩니다. 예를 들어 개체에 적용된  
+ 선언하는 항목은 항목 종류에 추가됩니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <Photos Include="images\*.jpeg" />  
@@ -417,15 +417,15 @@ $(PropertyName)
 <Photos Include="images\*.jpeg;images\*.gif" />  
 ```  
   
- Exclude 특성을 사용하면 항목 종류에서 특정 항목을 제외할 수 있습니다. 예를 들어 개체에 적용된  
+ Exclude 특성을 사용하면 항목 종류에서 특정 항목을 제외할 수 있습니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- 위의 코드는 이름에 "Designer"라는 문자열이 포함된 파일을 제외하고 파일 확장명이 ".cs"인 모든 파일을 Compile 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)합니다.  
+ 위의 코드는 이름에 "Designer"라는 문자열이 포함된 파일을 제외하고 파일 확장명이 ".cs"인 모든 파일을 Compile 항목 종류에 추가합니다. 더 많은 예제 [는 방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조 하세요.  
   
- Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목 요소에서 Include 특성에 의해 추가된 항목에만 영향을 줍니다. 예를 들어 개체에 적용된  
+ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목 요소에서 Include 특성에 의해 추가된 항목에만 영향을 줍니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <Compile Include="*.cs" />  
@@ -511,7 +511,7 @@ $(PropertyName)
    위 코드에 나와 있는 것처럼 "Compile.DependentUpon" 구가 여러 번 나타납니다. 대상 내에서 이 구문이 포함된 메타데이터를 사용하면 "일괄 처리"가 수행됩니다. 일괄 처리란 대상 내의 작업이 각각의 고유 메타데이터 값에 대해 한 번씩 실행된다는 의미입니다. 이 코드는 일반적인 "for loop" 프로그래밍 구문과 동일한 MSBuild 스크립트입니다. 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
   
 ### <a name="well-known-metadata"></a>잘 알려진 메타데이터  
- 항목 목록에 항목을 추가할 때마다 해당 항목에는 몇 가지 잘 알려진 메타데이터가 할당됩니다. 예를 들어 %(Filename)은 모든 항목의 파일 이름을 반환합니다. 잘 알려진 메타데이터의 전체 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.  
+ 항목 목록에 항목을 추가할 때마다 해당 항목에는 몇 가지 잘 알려진 메타데이터가 할당됩니다. 예를 들어 %(Filename)은 모든 항목의 파일 이름을 반환합니다. 잘 알려진 메타 데이터의 전체 목록은 [잘 알려진 항목 메타 데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조 하세요.  
   
 ##### <a name="to-examine-well-known-metadata"></a>잘 알려진 메타데이터를 검사하려면  
   
@@ -575,8 +575,8 @@ $(PropertyName)
   
    이 구문으로 표현되는 메타데이터로 인해 일괄 처리가 수행되지는 않습니다.  
   
-## <a name="whats-next"></a>새로운 기능  
- 간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)합니다.  
+## <a name="whats-next"></a>다음 단계  
+ 간단한 프로젝트 파일을 한 번에 한 단계씩 만드는 방법을 알아보려면 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 시도 합니다.  
   
 ## <a name="see-also"></a>참고 항목
 [MSBuild 개요](msbuild.md)  

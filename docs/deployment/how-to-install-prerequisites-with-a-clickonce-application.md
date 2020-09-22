@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소를 설치 하는 방법 | Microsoft Docs
+title: ClickOnce 앱을 사용 하 여 필수 구성 요소 설치
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4ad97439d330a6fc51e741e9ea05ef53a5798a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382382"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809122"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>방법: ClickOnce 애플리케이션을 사용하여 필수 구성 요소 설치
 모든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 실행 하려면 컴퓨터에 올바른 버전의 .NET Framework가 설치 되어 있어야 합니다. 많은 응용 프로그램에는 다른 필수 구성 요소가 있습니다. 응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램과 함께 패키지할 필수 구성 요소 집합을 선택할 수 있습니다. 설치 시 각 필수 구성 요소가 이미 있는지 여부를 확인 하는 검사가 수행 됩니다. 그렇지 않으면 응용 프로그램을 설치 하기 전에 설치 됩니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -67,6 +68,6 @@ ms.locfileid: "85382382"
     > [!NOTE]
     > 지정 된 구성 요소의 설치 관리자가 지정 된 위치에 있는지 확인 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
 - [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

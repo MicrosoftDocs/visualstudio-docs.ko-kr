@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6821b6a6504fd82e0e6180149120b71bc2daf47c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444484"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841454"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-대상 프로세서를 지정합니다.  
+대상 프로세서를 지정 합니다.  
   
 > [!NOTE]
-> 프로세서를 앞의 열거형 요소에서 식별 된 `CV_CFL_*` 접두사입니다.  
+> 처리기는 접두사 뒤의 열거형 요소에서 식별 됩니다 `CV_CFL_*` .  
   
 ## <a name="syntax"></a>구문  
   
@@ -98,10 +98,10 @@ typedef enum CV_CPU_TYPE_e { 
 ```  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 메서드.  
+ 이 열거형의 값은 [IDiaSymbol:: get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 메서드를 호출 하 여 반환 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: cvconst.h  
+ 헤더: cvconst  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   

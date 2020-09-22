@@ -1,5 +1,5 @@
 ---
-title: Android 용 에뮬레이터에 대 한 시스템 요구 사항 | Microsoft Docs
+title: Android 용 에뮬레이터에 대 한 시스템 요구 사항 Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433909"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841526"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 
 - [Hyper-V에 압축 및 암호화되지 않은 파일 필요](#Files)
 
-## <a name="Checklist"></a> 빠른 검사 목록
+## <a name="quick-checklist"></a><a name="Checklist"></a> 빠른 검사 목록
  다음은 Android용 Visual Studio 에뮬레이터를 실행하기 위한 요구 사항의 빠른 검사 목록입니다. 자세한 내용은 이 항목의 후속 섹션을 참조하세요.
 
  시스템 요구 사항
@@ -64,7 +64,7 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 
   - 하드웨어 지원 가상화
 
-  - SLAT(두 번째 수준 주소 변환)
+  - SLAT(Second Level Address Translation)
 
   - 하드웨어 기반 DEP(데이터 실행 방지)
 
@@ -72,8 +72,8 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 
 - 로컬 Hyper-V Administrators 그룹의 구성원이어야 합니다.
 
-## <a name="System"></a> 시스템 요구 사항
- 컴퓨터는 다음 요구 사항을 충족해야 합니다.
+## <a name="system-requirements"></a><a name="System"></a> 시스템 요구 사항
+ 컴퓨터는 다음 요구 사항을 만족해야 합니다.
 
 - Hyper-V 지원( [Hyper-V 요구 사항](#HyperV)참조)
 
@@ -85,7 +85,7 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 
   ![시스템 요구 사항 확인](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-## <a name="Network"></a> 네트워크 요구 사항
+## <a name="network-requirements"></a><a name="Network"></a> 네트워크 요구 사항
  네트워크는 다음 요구 사항을 충족해야 합니다.
 
 - DHCP
@@ -98,16 +98,16 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 
   에뮬레이터의 네트워킹 문제를 해결하려면 다음 항목을 참조합니다.
 
-- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+- [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-## <a name="HyperV"></a> Hyper-V 요구 사항
+## <a name="hyper-v-requirements"></a><a name="HyperV"></a> Hyper-v 요구 사항
  BIOS의 Hyper-V 요구 사항
 
  컴퓨터의 BIOS는 다음 요구 사항을 지원해야 하며, 해당 기능이 사용하도록 설정되어야 합니다.
 
 - 하드웨어 지원 가상화
 
-- SLAT(두 번째 수준 주소 변환)
+- SLAT(Second Level Address Translation)
 
 - 하드웨어 기반 DEP(데이터 실행 방지)
 
@@ -129,16 +129,16 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 > [!IMPORTANT]
 > 그룹에 참여한 후에는 로그오프하거나 다시 부팅하여 변경 내용을 적용합니다.
 
- ![Hyper&#45;V 관리자 보안 그룹 가입](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")
+ ![Hyper&#45;V 관리자 보안 그룹에 가입](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")
 
  자신을 수동으로 그룹에 추가하려면 로컬 사용자 및 그룹 스냅인을 엽니다.
 
-## <a name="BootableVHD"></a> 부팅 가능한 VHD에서 에뮬레이터 실행은 지원되지 않음
- 부팅 가능한 VHD에서 Windows를 실행하는 동안 Android용 Visual Studio 에뮬레이터에서 앱을 실행하려는 경우 에뮬레이터는 일반적으로 시작되는 데 몇 분 정도 걸리거나 시작되지 않습니다. 에뮬레이터를 시작하지 못하면 다음 메시지가 나타납니다. 앱을 배포하지 못했습니다. 다시 시도하세요.
+## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a><a name="BootableVHD"></a> 부팅 가능한 VHD에서 에뮬레이터 실행은 지원 되지 않습니다.
+ 부팅 가능한 VHD에서 Windows를 실행하는 동안 Android용 Visual Studio 에뮬레이터에서 앱을 실행하려는 경우 에뮬레이터는 일반적으로 시작되는 데 몇 분 정도 걸리거나 시작되지 않습니다. 에뮬레이터가 시작되지 못하는 경우 다음과 같은 메시지가 표시됩니다. 앱을 배포하지 못했습니다. 다시 시도하세요.
 
  이 구성은 지원되지 않습니다. 관련된 문제에 대한 자세한 내용은 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요.
 
-## <a name="Files"></a> Hyper-V에 압축 및 암호화되지 않은 파일 필요
+## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a><a name="Files"></a> Hyper-v에 압축 및 암호화 되지 않은 파일 필요
  NTFS 파일 시스템으로 구성된 하드 드라이브에서는 Hyper-V에 사용되는 가상 하드 디스크는 압축되지 않고 암호화되지 않아야 합니다. 다음 디렉터리가 압축 또는 암호화되지 않았는지 확인합니다.
 
 - %localappdata%\Microsoft\XDE
