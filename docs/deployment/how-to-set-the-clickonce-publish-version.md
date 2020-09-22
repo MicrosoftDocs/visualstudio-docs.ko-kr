@@ -1,5 +1,5 @@
 ---
-title: 방법-ClickOnce 게시 버전 설정 Microsoft Docs
+title: ClickOnce 게시 버전을 설정 합니다. | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5e1d91de14e3da4f188c276ef7dd74943d8978
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf99590bb78c425f570128ff7fae03c61d644b47
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382122"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851777"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>방법: ClickOnce 게시 버전 설정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` 속성은 게시 중인 응용 프로그램을 업데이트로 처리할지 여부를 결정 합니다. 각 시간 버전이 증가 하면 응용 프로그램이 업데이트로 게시 됩니다.
@@ -42,7 +42,7 @@ ms.locfileid: "85382122"
     > [!NOTE]
     > 버전 번호는 감소 해서는 안 됩니다. 이렇게 하면 예기치 않은 업데이트 동작이 발생할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)
 - [방법: ClickOnce 게시 버전 자동 증가](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

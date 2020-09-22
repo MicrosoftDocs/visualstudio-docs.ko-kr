@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 및 배포 매니페스트에 다시 서명 하는 방법 | Microsoft Docs
+title: 응용 프로그램 및 배포 매니페스트 다시 서명 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641607"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851686"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 애플리케이션 및 배포 매니페스트 다시 서명
 Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 프로그램) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에서 배포 속성을 변경한 후에는 인증서를 사용 하 여 응용 프로그램 및 배포 매니페스트에 모두 다시 서명 해야 합니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.
@@ -112,11 +112,11 @@ Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 
 
 7. 필요에 따라 마스터 배포 매니페스트 (*publish \\ \<appname> . application*)를 버전 배포 디렉터리 (*publish\Application Files \\ \<appname> _ \<version> *)에 복사 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)
-- [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)
+- [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)
 - [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442333"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843395"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce 업데이트 전략 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63442333"
 > 애플리케이션 업데이트를 사용하려면 네트워크 연결이 필요합니다. 네트워크에 연결되어 있지 않으면 선택한 업데이트 전략에 관계없이 애플리케이션은 업데이트를 확인하지 않고 실행됩니다.  
   
 > [!NOTE]
-> .NET Framework 2.0 및 .NET Framework 3.0에서는 시작 전이나 후에 사용자 애플리케이션에서 업데이트를 확인하거나 <xref:System.Deployment.Application> API를 사용하여 배포 매니페스트의 `deploymentProvider`를 설정해야 합니다. Visual Studio에서 `deploymentProvider` 요소는 **게시** 탭의 **업데이트** 대화 상자에 있는 **업데이트 위치** 필드에 해당합니다. 이 규칙은 .NET Framework 3.5에서 완화되었습니다. 자세한 내용은 [배포 ClickOnce 응용 프로그램에 대 한 테스트 및 프로덕션 서버 Resigning 없이](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)합니다.  
+> .NET Framework 2.0 및 .NET Framework 3.0에서는 시작 전이나 후에 사용자 애플리케이션에서 업데이트를 확인하거나 <xref:System.Deployment.Application> API를 사용하여 배포 매니페스트의 `deploymentProvider`를 설정해야 합니다. `deploymentProvider`요소는 Visual Studio에서 **게시** 탭의 **업데이트** 대화 상자에 있는 **업데이트 위치** 필드에 해당 합니다. 이 규칙은 .NET Framework 3.5에서 완화 됩니다. 자세한 내용은 다시 서명를 사용 [하지 않고 테스트 및 프로덕션 서버용 ClickOnce 응용 프로그램 배포](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)를 참조 하세요.  
   
 ## <a name="checking-for-updates-after-application-startup"></a>애플리케이션 시작 후 업데이트 확인  
  이 전략을 사용하면 애플리케이션에서는 실행 중 백그라운드에서 배포 매니페스트 파일을 찾아 읽으려고 합니다. 사용 가능한 업데이트가 있을 경우 다음 번에 사용자가 애플리케이션을 실행하면 업데이트를 다운로드하여 설치할지 묻는 메시지가 표시됩니다.  
@@ -90,7 +90,7 @@ ms.locfileid: "63442333"
 ```  
   
 ## <a name="specifying-update-intervals"></a>업데이트 간격 지정  
- 애플리케이션이 업데이트를 확인하는 빈도를 지정할 수도 있습니다. 이렇게 하려면 이 항목의 앞부분에 나오는 "응용 프로그램 시작 후 업데이트 확인"에 설명된 대로 응용 프로그램 시작 후 업데이트를 확인하도록 지정합니다.  
+ 애플리케이션이 업데이트를 확인하는 빈도를 지정할 수도 있습니다. 이렇게 하려면 이 항목의 앞부분에 나오는 &quot;애플리케이션 시작 후 업데이트 확인&quot;에 설명된 대로 애플리케이션 시작 후 업데이트를 확인하도록 지정합니다.  
   
  업데이트 간격을 지정하려면 **애플리케이션 업데이트** 대화 상자에서 **애플리케이션이 업데이트를 확인해야 하는 빈도 지정**을 클릭합니다.  
   
@@ -101,14 +101,14 @@ ms.locfileid: "63442333"
 ## <a name="providing-a-user-interface-for-updates"></a>업데이트용 사용자 인터페이스 제공  
  이 전략을 사용하면 애플리케이션 개발자가 사용자가 애플리케이션에서 업데이트를 확인할 시간 및 빈도를 선택하는 데 사용할 수 있는 사용자 인터페이스를 제공합니다. 예를 들어, "지금 업데이트 확인" 명령 또는 다양한 업데이트 간격을 선택할 수 있는 "업데이트 설정" 대화 상자를 제공할 수 있습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 API는 고유한 업데이트 사용자 인터페이스를 프로그래밍할 수 있는 프레임워크를 제공합니다. 자세한 내용은 <xref:System.Deployment.Application> 네임스페이스를 참조하세요.  
   
- 응용 프로그램이 배포 API를 사용하여 고유 업데이트 논리를 제어하는 경우 다음 단원에 나오는 "업데이트 확인 차단"에서 설명하는 것처럼 업데이트 확인을 차단해야 합니다.  
+ 애플리케이션이 배포 API를 사용하여 고유 업데이트 논리를 제어하는 경우 다음 단원에 나오는 &quot;업데이트 확인 차단&quot;에서 설명하는 것처럼 업데이트 확인을 차단해야 합니다.  
   
  이 전략은 여러 사용자에 대해 서로 다른 업데이트 전략이 필요한 경우 가장 적합합니다.  
   
 ## <a name="blocking-update-checking"></a>업데이트 확인 차단  
  애플리케이션에서 업데이트를 확인하지 않도록 할 수도 있습니다. 예를 들어, 업데이트되지 않는 간단한 애플리케이션이 있을 수 있지만 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포를 사용하여 쉽게 설치하려고 합니다.  
   
- 응용 프로그램에서 배포 API를 사용하여 자신의 고유 업데이트를 수행할지 여부를 확인하는 업데이트를 차단해야 합니다. 자세한 내용은 이 항목의 앞부분에 나오는 "업데이트용 사용자 인터페이스 제공"을 참조하십시오.  
+ 애플리케이션에서 배포 API를 사용하여 자신의 고유 업데이트를 수행할지 여부를 확인하는 업데이트를 차단해야 합니다. 자세한 내용은 이 항목의 앞부분에 나오는 &quot;업데이트용 사용자 인터페이스 제공&quot;을 참조하십시오.  
   
  업데이트 확인을 차단하려면 애플리케이션 업데이트 대화 상자에서 **애플리케이션이 업데이트를 확인해야 함** 확인란의 선택을 취소합니다.  
   
@@ -124,5 +124,5 @@ ms.locfileid: "63442333"
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 응용 프로그램 업데이트를 수행 하는 방법](../deployment/how-clickonce-performs-application-updates.md)   
+ [ClickOnce에서 응용 프로그램 업데이트를 수행 하는 방법](../deployment/how-clickonce-performs-application-updates.md)   
  [방법: ClickOnce 애플리케이션에 대한 업데이트 관리](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

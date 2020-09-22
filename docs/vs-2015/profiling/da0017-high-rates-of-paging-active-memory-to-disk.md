@@ -1,5 +1,5 @@
 ---
-title: 'DA0017: 활성 메모리를 디스크에 페이징하는 비율이 높습니다. | Microsoft Docs'
+title: 'DA0017: 디스크에 대한 높은 활성 메모리 페이징 비율 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435860"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843341"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: 활성 메모리를 디스크에 페이징하는 비율이 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0017 |  
 | 범주 | 메모리 및 페이징 |  
-| 프로 파일링 방법을 | 모든 |  
+| 프로 파일링 방법 | 모두 |  
 | 메시지 | 활성 메모리를 디스크에 페이징 하는 비율이 높습니다. 애플리케이션이 메모리 바인딩될 수 있습니다.|  
 | 규칙 유형 | 정보 |  
   

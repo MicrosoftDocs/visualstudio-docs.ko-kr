@@ -14,20 +14,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440662"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843318"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>방법: 지역화 된 부트스트래퍼 패키지 만들기
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>방법: 지역화된 부트스트래퍼 패키지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 부트스트래퍼 패키지를 만든 후에는 각 로캘에 대해 두 파일, 즉 eula.rtf와 같은 소프트웨어 사용 약관 파일과 패키지 매니페스트(package.xml)를 추가로 만들어 부트스트래퍼 패키지의 지역화된 버전을 만들 수 있습니다.  
   
  Visual Studio 2010에는 기본적으로 .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 및 F# Runtime 4.0용 지역화된 부트스트래퍼 패키지만 포함되어 있습니다. 3개 단계를 완료하면 다른 부트스트래퍼용 지역화된 패키지를 만들 수 있습니다.  
   
-1. \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages에서에서 로캘 이름을 따서 명명 된 폴더를 만듭니다\\*BootstrapperPackageName*합니다.  
+1. Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages BootstrapperPackageName에서 로캘 이름 뒤에 이름이 지정 된 폴더를 만듭니다 \\ *BootstrapperPackageName*.  
   
 2. 부트스트래퍼 패키지용 소프트웨어 사용 약관이 포함된 파일을 만들어 새 폴더에 저장합니다.  
   
@@ -42,16 +42,16 @@ ms.locfileid: "63440662"
   
 1. 로캘 이름과 같은 이름을 지정하여 폴더를 만듭니다.  
   
-     32 비트 컴퓨터에서는 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages에서에서 폴더를 만듭니다\\*BootstrapperPackageName*\ 폴더입니다.  
+     32 비트 컴퓨터에서 Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\ 폴더에 폴더를 만듭니다.  
   
-     64 비트 컴퓨터의 \Program Files () \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 폴더를 만듭니다\\*BootstrapperPackageName*\ 폴더입니다.  
+     64 비트 컴퓨터에서 \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\ 폴더에 폴더를 만듭니다.  
   
      아래 테이블에는 로캘과 일치하도록 이름을 지정하는 데 사용할 수 있는 폴더 이름이 나와 있습니다.  
   
     |로캘|폴더 이름|  
     |------------|-----------------|  
-    |및|zh-Hans|  
-    |옵션 대신,|zh-Hant|  
+    |중국어(간체)|zh-Hans|  
+    |중국어(번체)|zh-Hant|  
     |체코어|cs|  
     |독일어|de|  
     |영어|en|  
@@ -67,7 +67,7 @@ ms.locfileid: "63440662"
   
 2. 부트스트래퍼 패키지용 소프트웨어 사용 약관이 포함된 파일을 만들어 새 폴더에 저장합니다.  
   
-3. package.xml 패키지 매니페스트를 만들어 새 폴더에 저장합니다. 자세한 내용은 [방법: 패키지 매니페스트 만들기](../deployment/how-to-create-a-package-manifest.md)합니다.  
+3. package.xml 패키지 매니페스트를 만들어 새 폴더에 저장합니다. 자세한 내용은 [방법: 패키지 매니페스트 만들기](../deployment/how-to-create-a-package-manifest.md)를 참조 하세요.  
   
 4. 문자열이 로캘에 맞는 언어로 설정되도록 패키지 매니페스트의 `<Strings>` 섹션을 업데이트합니다.  
   
