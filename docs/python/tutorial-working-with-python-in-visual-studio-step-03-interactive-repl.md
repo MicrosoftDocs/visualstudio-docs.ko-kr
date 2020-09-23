@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801570"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811047"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>3단계: 대화형 REPL 창 사용
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801570"
 Python용 Visual Studio **대화형** 창은 일반적인 편집-빌드-디버그 주기를 크게 단축하는 풍부한 REPL(읽기-평가-인쇄-루프) 환경을 제공합니다. **대화형** 창은 Python 명령줄에 대한 REPL 환경의 모든 기능을 제공합니다. 또한 Visual Studio 편집기에서 코드를 원본 파일과 쉽게 교환할 수 있습니다. 그렇지 않으면 명령줄을 사용하여 다루기 어렵습니다.
 
 > [!NOTE]
-> REPL에 문제가 있는 경우 `ipython` 및 `ipykernel` 패키지가 설치되어 있는지 확인하고, 패키지를 설치하는 데 도움이 필요한 경우 [Python 환경 패키지 탭](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab)을 참조하세요.
+> REPL에 문제가 있는 경우 `ipython` 및 `ipykernel` 패키지가 설치되어 있는지 확인하고, 패키지를 설치하는 데 도움이 필요한 경우 [Python 환경 패키지 탭](./python-environments-window-tab-reference.md#packages-tab)을 참조하세요.
 
 1. **솔루션 탐색기**에서 프로젝트의 Python 환경(예: 앞의 그림에 표시된 **Python 3.6(32비트)**)을 마우스 오른쪽 단추로 클릭하고 **대화형 창 열기**를 선택하여 **대화형** 창을 엽니다. Visual Studio 주 메뉴에서 **보기** > **다른 창** > **Python 대화형 창**을 선택할 수도 있습니다.
 

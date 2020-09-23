@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579716"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811216"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 
@@ -68,6 +68,6 @@ ms.locfileid: "77579716"
 
 ## <a name="see-also"></a>참조
 
-* [추가 C# 자습서](/visualstudio/get-started/csharp/)
-* [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
+* [추가 C# 자습서](../get-started/csharp/index.yml)
+* [Visual Basic 자습서](../get-started/visual-basic/index.yml)
 * [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

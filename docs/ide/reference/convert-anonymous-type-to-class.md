@@ -10,12 +10,13 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: 251a011695f6f5056e1fdf8e1a6be36b898b66f5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094290"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809213"
 ---
 # <a name="convert-anonymous-type-to-class"></a>익명 형식을 클래스로 변환
 

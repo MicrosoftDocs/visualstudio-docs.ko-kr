@@ -1,5 +1,5 @@
 ---
-title: 방법 - 기호 정보 직렬화 | Microsoft Docs
+title: 기호 정보 직렬화 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d28df6d36b1b91974483ae793e6e57f064974183
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d644960153a8e342f6442f3750420ea68a61b38f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328531"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851595"
 ---
 # <a name="how-to-serialize-symbol-information"></a>방법: 기호 정보 직렬화
 애플리케이션을 분석하기 위해 포함해야 하는 기호를 직렬화할 수 있습니다. 기호를 직렬화하면 기호가 .*vsp* 파일에 추가됩니다. 기호 정보를 .*vsp* 파일에 추가하면 다른 사용자가 원래 기호에 대한 액세스 권한이 없어도 성능 보고서를 분석할 수 있습니다. 기호가 직렬화되지 않은 경우 .*vsp* 파일을 분석하려면 원래 계측된 .*exe* 및 .*pdb* 파일이 있어야 합니다.

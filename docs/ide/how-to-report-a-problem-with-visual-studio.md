@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88584577"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810876"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 
@@ -87,7 +87,7 @@ Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있�
 
 ## <a name="see-also"></a>참조
 
-* [Developer Community 지침](https://docs.microsoft.com/visualstudio/ide/developer-community-guidelines)
+* [Developer Community 지침](./developer-community-guidelines.md)
 * [Visual Studio 피드백 옵션](../ide/feedback-options.md)
 * [Mac용 Visual Studio의 문제 보고](/visualstudio/mac/report-a-problem)
 * [C++를 사용하여 문제 보고](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)

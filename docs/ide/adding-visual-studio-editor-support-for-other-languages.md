@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533759"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809074"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 
@@ -73,7 +73,7 @@ Visual Studio는 현재 [TextMate 문법](https://manual.macromates.com/en/langu
 - TypeScript
 - YAML
 
-구문 색 지정 및 기본 문 완성 기능 외에도 Visual Studio에는 [탐색](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) 기능이 있습니다. 이 기능을 사용하면 코드 파일, 파일 경로 및 코드 기호를 빠르게 검색할 수 있습니다. Visual Studio는 다음 언어에 대해 탐색 기능을 지원합니다.
+구문 색 지정 및 기본 문 완성 기능 외에도 Visual Studio에는 [탐색](/archive/blogs/benwilli/visual-studio-tip-3-use-navigate-to) 기능이 있습니다. 이 기능을 사용하면 코드 파일, 파일 경로 및 코드 기호를 빠르게 검색할 수 있습니다. Visual Studio는 다음 언어에 대해 탐색 기능을 지원합니다.
 
 - C#
 

@@ -12,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036940"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809200"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기
 
@@ -60,6 +60,6 @@ ms.locfileid: "90036940"
 
 ## <a name="see-also"></a>참조
 
-* [추가 C# 자습서](/visualstudio/get-started/csharp/)
-* [추가 Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
+* [추가 C# 자습서](../get-started/csharp/index.yml)
+* [추가 Visual Basic 자습서](../get-started/visual-basic/index.yml)
 * [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

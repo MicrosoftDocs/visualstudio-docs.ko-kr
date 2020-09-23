@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 7ae4e0f865b35787663313277eb4df37169b72b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9c16f16a8c44b50fd7c637dbd921fd8cd3779dc4
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286065"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713977"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조
 
@@ -43,7 +43,7 @@ ms.locfileid: "85286065"
 
 다음 목록에서는 이전 버전에서 만든 프로젝트에 대한 Visual Studio 2017의 지원에 대해 설명합니다.
 
-여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)을 참조하고 이 페이지의 맨 아래에 **이 페이지에 대한** > **피드백 보내기** 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
+여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015)을 참조하고 이 페이지의 맨 아래에 **이 페이지에 대한** > **피드백 보내기** 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
 
 | 프로젝트 형식 | 고객 지원팀 |
 | --- | --- |
@@ -56,12 +56,12 @@ ms.locfileid: "85286065"
 | LightSwitch | LightSwitch는 Visual Studio 2017에서 더 이상 지원되지 않습니다. Visual Studio 2012 이전 버전에서 만들고 Visual Studio 2013 또는 Visual Studio 2015에서 연 프로젝트는 업그레이드되며 이후에는 Visual Studio 2013 또는 Visual Studio 2015에서만 열 수 있습니다. |
 | Visual Studio용 Microsoft Azure 도구 | 이러한 형식의 프로젝트를 열려면 먼저 [Azure SDK for.NET](https://azure.microsoft.com/downloads/)을 설치한 다음 프로젝트를 엽니다. 필요한 경우 프로젝트가 업데이트됩니다. |
 | 모델-뷰-컨트롤러 프레임워크(ASP.NET MVC) | MVC 버전 및 Visual Studio 지원:<ul><li>Visual Studio 2010 SP1은 MVC 2 및 MVC 3을 지원합니다. MVC 4 지원은 [Visual Studio 2010 SP1용 ASP.NET 4 MVC 4 다운로드](https://www.microsoft.com/download/details.aspx?id=30683)를 통해 추가됩니다.</li><li>Visual Studio 2012에서는 MVC 3 및 MVC 4만 지원합니다.</li><li>Visual Studio 2013에서는 MVC 4 및 MVC 5만 지원합니다.</li><li>Visual Studio 2017 및 Visual Studio 2015는 MVC 4(기존 프로젝트는 열 수 있지만 새 프로젝트는 만들 수 없음) 및 MVC 5를 지원합니다.</li></ul><br/>MVC 버전 업그레이드:<ul><li>MVC 2에서 MVC 3로 자동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 애플리케이션 업그레이더](https://archive.codeplex.com/?p=aspnet)를 참조하세요.</li><li>MVC 2에서 MVC 3로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 도구 업데이트로 ASP.NET MVC 2 프로젝트 업그레이드](https://archive.codeplex.com/?p=aspnet)를 참조하세요.</li><li>MVC 3에서 MVC 4로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 프로젝트를 ASP.NET MVC 4로 업그레이드](/aspnet/whitepapers/mvc4-release-notes)를 참조하세요. 프로젝트 대상이 .NET Framework 3.5 SP1일 경우 대상을 변경하여 .NET Framework 4를 사용해야 합니다.</li><li>MVC 4에서 MVC 5로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 4 및 Web API 프로젝트를 ASP.NET MVC 5 및 Web API 2로 업그레이드하는 방법](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2)을 참조하세요.</li></ul> |
-| 모델링 | Visual Studio에서 프로젝트를 자동으로 업데이트하도록 허용하면 Visual Studio 2015, Visual Studio 2013 또는 Visual Studio 2012에서 프로젝트를 열 수 있습니다.<br/><br/>모델링 프로젝트의 형식은 Visual Studio 2015 및 Visual Studio 2017 간에 변경되지 않으므로 어느 버전에서든 프로젝트를 열고 수정할 수 있습니다. 하지만 Visual Studio 2017의 동작에 차이가 있습니다.<ul><li>모델링 프로젝트를 메뉴 및 템플릿에서 “종속성 유효성 검사” 프로젝트라고 합니다.</li><li>UML 다이어그램은 Visual Studio 2017에서 더 이상 지원되지 않습니다. UML 파일은 솔루션 탐색기에 이전처럼 나열되지만 XML 파일로 열립니다. UML 다이어그램을 보거나, 만들거나, 편집하려면 Visual Studio 2015를 사용하세요.</li><li>Visual Studio 2017에서는 모델링 프로젝트를 빌드할 때 더 이상 아키텍처 종속성 유효성 검사가 수행되지 않습니다. 대신 각 코드 프로젝트를 빌드할 때 유효성 검사가 수행됩니다. 이 변경은 모델링 프로젝트에 영향을 주지 않지만 유효성을 검사할 코드 프로젝트를 변경해야 합니다. Visual Studio 2017에서는 필요한 경우 코드 프로젝트를 자동으로 변경할 수 있습니다([자세한 정보](/visualstudio/modeling/validate-code-with-layer-diagrams?view=vs-2017#live-dependency-validation)).</li></ul> |
+| 모델링 | Visual Studio에서 프로젝트를 자동으로 업데이트하도록 허용하면 Visual Studio 2015, Visual Studio 2013 또는 Visual Studio 2012에서 프로젝트를 열 수 있습니다.<br/><br/>모델링 프로젝트의 형식은 Visual Studio 2015 및 Visual Studio 2017 간에 변경되지 않으므로 어느 버전에서든 프로젝트를 열고 수정할 수 있습니다. 하지만 Visual Studio 2017의 동작에 차이가 있습니다.<ul><li>모델링 프로젝트를 메뉴 및 템플릿에서 “종속성 유효성 검사” 프로젝트라고 합니다.</li><li>UML 다이어그램은 Visual Studio 2017에서 더 이상 지원되지 않습니다. UML 파일은 솔루션 탐색기에 이전처럼 나열되지만 XML 파일로 열립니다. UML 다이어그램을 보거나, 만들거나, 편집하려면 Visual Studio 2015를 사용하세요.</li><li>Visual Studio 2017에서는 모델링 프로젝트를 빌드할 때 더 이상 아키텍처 종속성 유효성 검사가 수행되지 않습니다. 대신 각 코드 프로젝트를 빌드할 때 유효성 검사가 수행됩니다. 이 변경은 모델링 프로젝트에 영향을 주지 않지만 유효성을 검사할 코드 프로젝트를 변경해야 합니다. Visual Studio 2017에서는 필요한 경우 코드 프로젝트를 자동으로 변경할 수 있습니다([자세한 정보](../modeling/validate-code-with-layer-diagrams.md?view=vs-2017#live-dependency-validation)).</li></ul> |
 | MSI 설정(vdproj) | InstallShield 프로젝트를 참조하세요. |
 | Office 2007 VSTO | Visual Studio 2017에 단방향 업그레이드가 필요합니다. |
 | Office 2010 VSTO | 프로젝트 대상이 .NET Framework 4일 경우 Visual Studio 2010 SP1 이상에서 이 프로젝트를 열 수 있습니다. 다른 모든 프로젝트에는 단방향 업그레이드가 필요합니다. |
 | Service Fabric(sfproj) | Service Fabric 애플리케이션 프로젝트가 ASP.NET Core 서비스 프로젝트를 참조하지 않을 경우 Visual Studio 2015 또는 Visual Studio 2017에서 Service Fabric 애플리케이션 프로젝트를 열 수 있습니다. Visual Studio 2015의 Service Fabric 프로젝트를 Visual Studio 2017에서 여는 경우 xproj 형식에서 csproj 형식으로 단방향 마이그레이션됩니다. 이 표에서 앞부분에 있는 “.NET Core 프로젝트(xproj)”를 참조하세요. |
-| SharePoint 2010 | Visual Studio 2017을 사용하여 SharePoint 솔루션 프로젝트를 열면 SharePoint 2013 또는 SharePoint 2016으로 업그레이드됩니다. 업그레이드를 위해서는 “.NET 데스크톱 개발” 워크로드가 Visual Studio 2017에 설치되어 있어야 합니다.<br/><br/>SharePoint 프로젝트를 업그레이드하는 방법에 대한 자세한 내용은 [SharePoint 2013으로 업그레이드](https://technet.microsoft.com/library/cc303420.aspx), [SharePoint Server 2013에서 워크플로 업데이트](https://technet.microsoft.com/library/dn133867.aspx) 및 [데이터베이스 연결 업그레이드를 위해 SharePoint Server 2016 팜 만들기](https://technet.microsoft.com/library/cc263026(v=office.16).aspx)를 참조하세요. |
+| SharePoint 2010 | Visual Studio 2017을 사용하여 SharePoint 솔루션 프로젝트를 열면 SharePoint 2013 또는 SharePoint 2016으로 업그레이드됩니다. 업그레이드를 위해서는 “.NET 데스크톱 개발” 워크로드가 Visual Studio 2017에 설치되어 있어야 합니다.<br/><br/>SharePoint 프로젝트를 업그레이드하는 방법에 대한 자세한 내용은 [SharePoint 2013으로 업그레이드](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016), [SharePoint Server 2013에서 워크플로 업데이트](/SharePoint/governance/update-workflow-in-sharepoint-server) 및 [데이터베이스 연결 업그레이드를 위해 SharePoint Server 2016 팜 만들기](/SharePoint/upgrade-and-update/create-the-sharepoint-server-2016-farm-for-a-database-attach-upgrade)를 참조하세요. |
 | SharePoint 2016 | Office 개발자 도구 미리 보기 2에서 만든 SharePoint 추가 기능 프로젝트를 Visual Studio 2017에서 열 수 없습니다. 이 제한을 해결하려면 csproj 또는 vbproj 파일에 있는 `MinimumVisualStudioVersion`을 12.0으로, `MinimumOfficeToolsVersion`을 12.2로 업데이트합니다. |
 | Silverlight | Silverlight 프로젝트는 Visual Studio 2017에서 지원되지 않습니다. Silverlight 애플리케이션을 유지하려면 Visual Studio 2015를 계속 사용합니다. |
 | SQL Server Reporting Services 및 SQL Server Analysis Services(SSRS, SSDT, SSAS, MSAS) | 이러한 프로젝트 형식에 대한 지원은 Visual Studio 갤러리의 두 가지 확장 기능을 통해 제공됩니다.  [Microsoft Analysis Services 모델링 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) 및 [Microsoft Reporting Services 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT는 Visual Studio 2017에서 데이터 스토리지 및 처리 워크로드를 지원합니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지를 참조하세요.|
@@ -127,7 +127,7 @@ Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, V
 
 다음 목록에서는 이전 버전에서 만든 프로젝트에 대한 Visual Studio 2019의 지원에 대해 설명합니다.
 
-여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2017 버전](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)을 참조하세요. 이 페이지의 아래쪽에 있는 **다음에 대한 피드백 보내기** > **이 페이지** 단추를 사용하여 프로젝트 세부 정보를 제공할 수도 있습니다. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
+여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2017 버전](?view=vs-2017)을 참조하세요. 이 페이지의 아래쪽에 있는 **다음에 대한 피드백 보내기** > **이 페이지** 단추를 사용하여 프로젝트 세부 정보를 제공할 수도 있습니다. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
 
 | 프로젝트 형식 | 고객 지원팀 |
 | --- | --- |
@@ -151,7 +151,7 @@ Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, V
 | Python 워크로드 | Visual Studio 2019에서는 Python Windows IoT Core 앱에 대한 지원이 제거되었습니다. Visual Studio 2019 미리 보기에는 동등한 기능이 없으므로 이러한 프로젝트에 대한 자동 마이그레이션 경로는 없습니다.<br/><br/>Visual Studio 2017을 계속 사용할 수 있습니다. |
 | R Tools for Visual Studio | Visual Studio용 R 도구가 Visual Studio 2019의 데이터 과학 워크로드에서 제거되었습니다.<br/><br/>Visual Studio 2017 또는 RStudio와 같은 대안을 계속 사용할 수 있습니다. |
 | Service Fabric(sfproj) | Service Fabric 애플리케이션 프로젝트가 ASP.NET Core 서비스 프로젝트를 참조하지 않을 경우 Visual Studio 2015, Visual Studio 2017 및 Visual Studio 2019 미리 보기에서 Service Fabric 애플리케이션 프로젝트를 열 수 있습니다. Visual Studio 2017 또는 Visual Studio 2019 미리 보기에서 열리는 Visual Studio 2015의 Service Fabric 프로젝트는 xproj 형식에서 csproj 형식으로 단방향 마이그레이션됩니다. 이 표에서 앞부분에 있는 “.NET Core 프로젝트(xproj)”를 참조하세요. |
-| SharePoint 2010 | Visual Studio 2019를 사용하여 SharePoint 솔루션 프로젝트를 열면 SharePoint 2013 또는 SharePoint 2016으로 업그레이드됩니다. 업그레이드를 위해서는 ".NET 데스크톱 개발" 워크로드가 Visual Studio 2019에 설치되어 있어야 합니다.<br/><br/>SharePoint 프로젝트를 업그레이드하는 방법에 대한 자세한 내용은 [SharePoint 2013으로 업그레이드](https://technet.microsoft.com/library/cc303420.aspx), [SharePoint Server 2013에서 워크플로 업데이트](https://technet.microsoft.com/library/dn133867.aspx) 및 [데이터베이스 연결 업그레이드를 위해 SharePoint Server 2016 팜 만들기](https://technet.microsoft.com/library/cc263026(v=office.16).aspx)를 참조하세요. |
+| SharePoint 2010 | Visual Studio 2019를 사용하여 SharePoint 솔루션 프로젝트를 열면 SharePoint 2013 또는 SharePoint 2016으로 업그레이드됩니다. 업그레이드를 위해서는 ".NET 데스크톱 개발" 워크로드가 Visual Studio 2019에 설치되어 있어야 합니다.<br/><br/>SharePoint 프로젝트를 업그레이드하는 방법에 대한 자세한 내용은 [SharePoint 2013으로 업그레이드](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016), [SharePoint Server 2013에서 워크플로 업데이트](/SharePoint/governance/update-workflow-in-sharepoint-server) 및 [데이터베이스 연결 업그레이드를 위해 SharePoint Server 2016 팜 만들기](/SharePoint/upgrade-and-update/create-the-sharepoint-server-2016-farm-for-a-database-attach-upgrade)를 참조하세요. |
 | SharePoint 2016 | Office 개발자 도구 미리 보기 2에서 만든 SharePoint 추가 기능 프로젝트를 Visual Studio 2019에서 열 수 없습니다. 이 제한을 해결하려면 csproj 또는 vbproj 파일에 있는 `MinimumVisualStudioVersion`을 12.0으로, `MinimumOfficeToolsVersion`을 12.2로 업데이트합니다. |
 | Silverlight | Silverlight 프로젝트는 Visual Studio 2019에서 지원되지 않습니다. Silverlight 애플리케이션을 유지하려면 Visual Studio 2015를 계속 사용합니다. |
 | SQL - Redgate | Redgate의 SQL 변경 Automation Core(이전에는 ReadyRoll Core라고 함), SQL Prompt Core 및 SQL Search는 Visual Studio 설치 관리자에서 더 이상 제공되지 않습니다.<br/><br/>이러한 기능에 대해서는 Visual Studio 2017을 계속 사용할 수 있습니다. Visual Studio 2019에서 Redgate의 SQL Toolbelt에 사용할 수 있는 유료 SQL Change Automation 및 SQL Prompt 제품으로 업그레이드할 수 있습니다.|
@@ -200,7 +200,7 @@ Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, V
 
 ## <a name="see-also"></a>참조
 
-- [프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조](?view=vs-2017)
 - [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

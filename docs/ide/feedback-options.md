@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769992"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807887"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 피드백 옵션
 
@@ -71,7 +71,7 @@ Visual Studio를 개선하기 위한 아이디어나 제안이 있는 경우 **�
 설명서를 개선하는 데 도움이 되는 두 가지 방법이 있습니다.
 
 * 설명서 페이지의 오른쪽 위에 있는 **이 페이지가 도움이 되었나요?** 응답 도구를 사용합니다.
-* GitHub 계정을 사용하여 [docs.microsoft.com](/visualstudio/)에 있는 Visual Studio 페이지에 대한 피드백을 제공합니다. 이렇게 하려면 설명서 페이지 하단에 있는 **피드백 정보 보내기** > **이 페이지** 단추를 선택합니다.
+* GitHub 계정을 사용하여 [docs.microsoft.com](../index.yml)에 있는 Visual Studio 페이지에 대한 피드백을 제공합니다. 이렇게 하려면 설명서 페이지 하단에 있는 **피드백 정보 보내기** > **이 페이지** 단추를 선택합니다.
 
 ## <a name="contact-microsoft-support"></a>Microsoft 지원팀에 문의
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 018b9a6707ea46a9b1c46f820faf7bd47dac1ff9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315306"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809900"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
@@ -106,7 +106,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
 대답: 무엇보다도 처음부터 소스 제어를 사용하면 특히 원격 리포지토리를 사용하는 경우에도 정기적으로 프로젝트를 오프사이트에 백업할 수 있습니다. 로컬 파일 시스템에서만 프로젝트를 유지 관리하는 것과 달리 소스 제어는 단일 파일이나 전체 프로젝트를 이전 상태로 되돌릴 수 있는 간단한 기능과 전체 변경 기록도 제공합니다. 이 변경 기록은 회귀(테스트 실패)의 원인을 확인하는 데 도움이 됩니다. 또한 소스 제어는 여러 명의 사용자가 한 프로젝트에서 작업하는 경우 덮어쓰기를 관리하고 충돌 해결을 제공하기 때문에 꼭 필요합니다. 마지막으로, 기본적으로 자동화 형태인 소스 제어는 빌드, 테스트 및 릴리스 관리를 자동화하는 데 적합합니다. 실제로 프로젝트에 DevOps를 사용하는 첫 번째 단계이며, 진입 장벽이 매우 낮기 때문에 처음부터 소스 제어를 사용하지 않을 이유가 없습니다.
 
-자동화로서 소스 제어에 대한 자세한 내용은 모바일 앱용으로 작성되고 웹앱에도 적용되는 MSDN Magazine의 [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232)(정보의 출처: DevOps에서 리포지토리의 역할) 문서를 참조하세요.
+자동화로서 소스 제어에 대한 자세한 내용은 모바일 앱용으로 작성되고 웹앱에도 적용되는 MSDN Magazine의 [The Source of Truth: The Role of Repositories in DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops)(정보의 출처: DevOps에서 리포지토리의 역할) 문서를 참조하세요.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>질문: Visual Studio에서 새 프로젝트를 자동 커밋하지 않도록 할 수 있나요?
 

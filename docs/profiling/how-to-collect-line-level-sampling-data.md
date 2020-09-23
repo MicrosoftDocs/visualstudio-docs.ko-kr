@@ -1,5 +1,5 @@
 ---
-title: 방법 - 줄 수준 샘플링 데이터 수집 | Microsoft Docs
+title: 줄 수준 샘플링 데이터 수집 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 4653cf4b8c921a0c464dcb148963d3ab33506c25
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330892"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851257"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>방법: 줄 수준 샘플링 데이터 수집
 줄 수준 샘플링은 전용 샘플 수가 많은 함수와 같이 프로세서를 많이 사용하는 함수의 코드에서 프로세서가 대부분의 시간을 사용하는 위치를 확인하는 프로파일러 기능입니다.

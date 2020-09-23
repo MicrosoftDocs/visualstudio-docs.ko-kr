@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fb60f05d12b1105febc12a218b1f36ee498deb
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: a06a6885c3d0858f60c8de48dd61054534aad40f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248727"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809048"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Visual Studio에서 C\#을 사용하여 Windows Forms 앱 만들기
 
@@ -164,6 +164,6 @@ C# 프로젝트 템플릿을 선택하고 파일 이름을 지정한 후에 Visu
 
 ## <a name="see-also"></a>참조
 
-* [추가 C# 자습서](/visualstudio/get-started/csharp/)
-* [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
+* [추가 C# 자습서](../get-started/csharp/index.yml)
+* [Visual Basic 자습서](../get-started/visual-basic/index.yml)
 * [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

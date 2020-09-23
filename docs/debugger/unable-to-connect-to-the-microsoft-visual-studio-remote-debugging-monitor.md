@@ -1,5 +1,6 @@
 ---
-title: Microsoft Visual Studio 원격 디버깅 모니터에 연결할 수 없음 | Microsoft Docs
+title: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
+titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81397378"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852246"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 이 메시지는 원격 컴퓨터에 원격 디버깅 모니터가 올바르게 설치되지 않았거나, 네트워크 문제 또는 방화벽으로 인해 원격 컴퓨터에 액세스할 수 없는 경우에 나타날 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: 방법 - 현재 세션 설정 | Microsoft Docs
+title: 현재 세션 설정 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: c729a9e8de7a27da5f5c81260c505bc654c33344
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328354"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851738"
 ---
 # <a name="how-to-set-the-current-session"></a>방법: 현재 세션 설정
 

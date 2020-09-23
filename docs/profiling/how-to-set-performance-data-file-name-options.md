@@ -1,5 +1,5 @@
 ---
-title: 방법 - 성능 데이터 파일 이름 옵션 설정 | Microsoft Docs
+title: 성능 데이터 파일 이름 옵션 설정 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85548124"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851569"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>방법: 성능 데이터 파일 이름 옵션 설정
 

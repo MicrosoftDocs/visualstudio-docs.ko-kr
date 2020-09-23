@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290920"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810391"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 추가
 
@@ -20,9 +20,9 @@ ms.locfileid: "85290920"
 
 - C#
 
-**내용:** [DebuggerDisplay 특성](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute)은 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다.
+**내용:** [DebuggerDisplay 특성](../../debugger/using-the-debuggerdisplay-attribute.md)은 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다.
 
-**시기:** 코드에서 프로그래밍 방식으로 디버거 안에 [속성을 고정](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor#pin-properties-in-datatips)하려고 합니다.
+**시기:** 코드에서 프로그래밍 방식으로 디버거 안에 [속성을 고정](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips)하려고 합니다.
 
 **이유:** 속성을 고정하면 디버거에서 해당 속성을 개체의 속성 목록 맨 위로 버블링하여 개체를 신속하게 검사할 수 있습니다. 
 

@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579307"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810850"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 
@@ -58,6 +58,6 @@ ms.locfileid: "77579307"
 
 ## <a name="see-also"></a>참조
 
-* [추가 C# 자습서](/visualstudio/get-started/csharp/)
-* [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
+* [추가 C# 자습서](../get-started/csharp/index.yml)
+* [Visual Basic 자습서](../get-started/visual-basic/index.yml)
 * [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

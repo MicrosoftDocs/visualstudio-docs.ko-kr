@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290957"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810352"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>조건식 단순화 리팩터링
 
@@ -22,7 +22,7 @@ ms.locfileid: "85290957"
 
 - C#
 
-**내용:** [조건식](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator)을 단순화할 수 있습니다.
+**내용:** [조건식](/dotnet/csharp/language-reference/operators/conditional-operator)을 단순화할 수 있습니다.
 
 **시기:** 불필요한 코드를 제거하여 더 명확하게 지정하려고 합니다.
 

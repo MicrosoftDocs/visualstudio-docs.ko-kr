@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250176"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740034"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript 코드 컴파일(Node.js)
 
@@ -27,7 +27,7 @@ ASP.NET Core 프로젝트의 경우 [NuGet 패키지](../javascript/compile-type
 
 [TypeScript npm 패키지](https://www.npmjs.com/package/typescript)는 TypeScript 지원을 추가합니다. TypeScript 2.1 이상용 npm 패키지가 프로젝트에 설치되면 해당 버전의 TypeScript 언어 서비스가 편집기에 로드됩니다.
 
-1. [지침에 따라](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json) Node.js 개발 워크로드 및 Node.js 런타임을 설치합니다.
+1. [지침에 따라](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json) Node.js 개발 워크로드 및 Node.js 런타임을 설치합니다.
 
    가장 간단하게 Visual Studio와 통합하려면 Node.js TypeScript 템플릿(예: 빈 Node.js 웹 애플리케이션 템플릿) 중 하나를 사용하여 프로젝트를 만들면 됩니다. 또는 Visual Studio에 포함된 Node.js JavaScript 템플릿을 사용하고 여기에 설명된 지침을 따르거나 [오픈 폴더](../javascript/develop-javascript-code-without-solutions-projects.md) 프로젝트를 사용하세요.
 

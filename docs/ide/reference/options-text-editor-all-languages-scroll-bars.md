@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588800"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808092"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>옵션, 텍스트 편집기, 모든 언어, 스크롤 막대
 이 대화 상자에서는 코드 편집기 스크롤 막대의 기본 동작을 변경할 수 있습니다. 이러한 옵션을 표시하려면 **도구** 메뉴에서 **옵션**을 선택합니다. **텍스트 편집기** 폴더 내에서 **모든 언어** 하위 폴더를 확장한 다음, **스크롤 막대**를 선택합니다.
@@ -69,7 +69,7 @@ ms.locfileid: "75588800"
 
 큰 코드 파일을 열고 파일의 여러 위치에서 발생하는 일부 텍스트를 바꿔 보세요. 스크롤 막대에 바꾸기 결과가 표시되므로, 작업을 잘못 바꾼 경우 변경 내용을 취소할 수 있습니다.
 
-코드를 편집할 때 다양한 색 및 기호의 의미는 [향상된 스크롤 막대](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) 블로그 게시물을 참조하세요.
+코드를 편집할 때 다양한 색 및 기호의 의미는 [향상된 스크롤 막대](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar) 블로그 게시물을 참조하세요.
 
 ## <a name="behavior"></a>동작
 

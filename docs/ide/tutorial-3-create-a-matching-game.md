@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579712"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810837"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 맞추기 게임 만들기
 
@@ -61,6 +61,6 @@ ms.locfileid: "77579712"
 
 ## <a name="see-also"></a>참조
 
-* [추가 C# 자습서](/visualstudio/get-started/csharp/)
-* [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
+* [추가 C# 자습서](../get-started/csharp/index.yml)
+* [Visual Basic 자습서](../get-started/visual-basic/index.yml)
 * [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

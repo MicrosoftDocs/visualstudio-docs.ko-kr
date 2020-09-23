@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219766"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808144"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 생산성 가이드
 
@@ -32,9 +32,9 @@ ms.locfileid: "89219766"
 
 - **Visual Studio의 접근성 향상**. Visual Studio에는 화면 판독기 및 기타 보조 기술과 호환되는 내게 필요한 옵션 기능이 있습니다. 사용 가능한 기능의 전체 목록은 [Visual Studio의 접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)을 참조하세요. 
 
-- **Visual Studio 제품 수명 주기 및 서비스 확인**. Visual studio의 업데이트를 받는 방법, Enterprise 및 Professional 고객의 지원 옵션, 이전 버전 Visual Studio 지원 및 Visual Studio 서비스가 적용되지 않는 구성 요소에 대한 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](https://docs.microsoft.com/visualstudio/releases/2019/servicing)를 참조하세요. 
+- **Visual Studio 제품 수명 주기 및 서비스 확인**. Visual studio의 업데이트를 받는 방법, Enterprise 및 Professional 고객의 지원 옵션, 이전 버전 Visual Studio 지원 및 Visual Studio 서비스가 적용되지 않는 구성 요소에 대한 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing)를 참조하세요. 
 
-- **Visual Studio에서 NuGet 패키지 설치 및 관리**. Windows의 Visual Studio의 NuGet 패키지 관리자 UI를 사용하여 프로젝트 및 솔루션에서 NuGet 패키지를 쉽게 설치, 제거 및 업데이트할 수 있습니다. 자세한 내용은 [Visual Studio에서 NuGet 패키지 관리자를 사용하여 패키지 설치 및 관리](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)를 참조하세요.
+- **Visual Studio에서 NuGet 패키지 설치 및 관리**. Windows의 Visual Studio의 NuGet 패키지 관리자 UI를 사용하여 프로젝트 및 솔루션에서 NuGet 패키지를 쉽게 설치, 제거 및 업데이트할 수 있습니다. 자세한 내용은 [Visual Studio에서 NuGet 패키지 관리자를 사용하여 패키지 설치 및 관리](/nuget/consume-packages/install-use-packages-visual-studio)를 참조하세요.
 
 ## <a name="write-code"></a>코드 작성
 
@@ -60,7 +60,7 @@ ms.locfileid: "89219766"
 
 - **샘플 애플리케이션 사용** [Microsoft Developer Network](https://code.msdn.microsoft.com/)에서 애플리케이션 예제를 다운로드 및 설치하여 애플리케이션 개발 시간을 단축할 수 있습니다. 해당 영역의 샘플 팩을 다운로드 및 탐색하여 특정한 기술이나 프로그래밍 개념을 익힐 수도 있습니다.
 
-- **서식 지정/줄 추가를 사용하여 중괄호 서식 변경**. **서식 지정** 옵션 페이지를 사용하여 새 줄을 비롯해 코드 편집기의 코드를 서식 지정하기 위한 옵션을 설정합니다. C#에 이 설정을 사용하는 방법에 대한 자세한 내용은 [옵션 대화 상자: 텍스트 편집기 > C# > 코드 스타일 > 서식 지정](../ide/reference/options-text-editor-csharp-formatting.md)을 참조하세요. C++의 경우에는 [Visual Studio에서 C++ 코딩 기본 설정 지정](https://docs.microsoft.com/cpp/ide/how-to-set-preferences)을 참조하세요. Python의 경우 [Python 코드 서식 지정](../python/formatting-python-code.md)을 참조하세요.
+- **서식 지정/줄 추가를 사용하여 중괄호 서식 변경**. **서식 지정** 옵션 페이지를 사용하여 새 줄을 비롯해 코드 편집기의 코드를 서식 지정하기 위한 옵션을 설정합니다. C#에 이 설정을 사용하는 방법에 대한 자세한 내용은 [옵션 대화 상자: 텍스트 편집기 > C# > 코드 스타일 > 서식 지정](../ide/reference/options-text-editor-csharp-formatting.md)을 참조하세요. C++의 경우에는 [Visual Studio에서 C++ 코딩 기본 설정 지정](/cpp/ide/how-to-set-preferences)을 참조하세요. Python의 경우 [Python 코드 서식 지정](../python/formatting-python-code.md)을 참조하세요.
 
 - **탭으로 들여쓰기 변경**. 각 코드베이스에 맞는 사용자 지정 편집기 설정을 사용하여 여러 편집기와 IDE에서 동일한 프로젝트를 작업하는 여러 개발자를 대상으로 일관된 코딩 스타일을 적용합니다. 전체 팀이 동일한 언어 규칙, 명명 규칙 및 서식 지정 규칙을 따르도록 합니다. 이러한 사용자 지정 설정은 이식 가능하고 코드와 함께 이동하므로 Visual Studio 외부에서도 코딩 스타일을 적용할 수 있습니다. 자세한 내용은 [옵션, 텍스트 편집기, 모든 언어, 탭](../ide/reference/options-text-editor-all-languages-tabs.md#tabs)을 참조하세요.
 
@@ -118,7 +118,7 @@ ms.locfileid: "89219766"
 
 - **Visual Studio 디버거 도구 사용**. Visual Studio 컨텍스트에서 ‘앱을 디버그’하는 경우는 일반적으로 디버거 모드에서 애플리케이션이 실행되고 있음을 의미합니다. 디버거는 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법을 제공합니다. 시작하기 위한 가이드가 필요하면 [먼저 Visual Studio 디버거 살펴보기](../debugger/debugger-feature-tour.md)를 참조하세요. 
 
-- **여러 브라우저에서 같은 페이지, 애플리케이션 또는 사이트 테스트** 코드를 디버그할 때 **브라우저 선택** 대화 상자를 열지 않고도 [페이지 검사기(Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 등의 설치된 웹 브라우저 간에 쉽게 전환할 수 있습니다. **디버깅 시작** 단추 옆에 있는 **표준** 도구 모음에서 **디버그 대상** 목록을 사용하여 디버그 또는 보기 페이지로 사용 중인 브라우저를 빠르게 확인할 수 있습니다.
+- **여러 브라우저에서 같은 페이지, 애플리케이션 또는 사이트 테스트** 코드를 디버그할 때 **브라우저 선택** 대화 상자를 열지 않고도 [페이지 검사기(Visual Studio)](/previous-versions/hh974728(v=vs.140)) 등의 설치된 웹 브라우저 간에 쉽게 전환할 수 있습니다. **디버깅 시작** 단추 옆에 있는 **표준** 도구 모음에서 **디버그 대상** 목록을 사용하여 디버그 또는 보기 페이지로 사용 중인 브라우저를 빠르게 확인할 수 있습니다.
 
     ![웹 브라우저 디버그 옵션 선택](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "89219766"
 
 - **[CodeLens에서 코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)** . CodeLens를 통해 코드에 대한 정보를 찾는 동안 편집기에서 나가지 않고&mdash;계속 작업에 집중할 수 있습니다. 코드 조각 참조, 코드 변경 내용, 연결된 버그, 작업 항목, 코드 검토 및 단위 테스트를 확인할 수 있습니다.
 
-- **Live Share를 사용하여 다른 사용자와 실시간으로 디버그**. Live Share를 사용하면 사용 중인 프로그래밍 언어나 빌드 중인 앱 유형과 관계없이 다른 사람과 공동으로 실시간 편집 및 디버깅이 가능합니다. 자세한 내용은 [Visual Studio Live Share란?](https://docs.microsoft.com/visualstudio/liveshare/)을 참조하세요.
+- **Live Share를 사용하여 다른 사용자와 실시간으로 디버그**. Live Share를 사용하면 사용 중인 프로그래밍 언어나 빌드 중인 앱 유형과 관계없이 다른 사람과 공동으로 실시간 편집 및 디버깅이 가능합니다. 자세한 내용은 [Visual Studio Live Share란?](/visualstudio/liveshare/)을 참조하세요.
 
 - **대화형 창을 사용하여 작은 코드 작성 및 테스트**. Visual Studio에서는 임의의 코드를 입력하고 즉각 결과를 볼 수 있는 대화형 REPL(read–eval–print loop) 창을 제공합니다. 이러한 방식의 코딩은 API 및 라이브러리와 관련된 내용을 배우고 실험하는 데 도움이 되고, 프로젝트에 포함할 작업 코드를 대화형으로 개발하는 데에도 유용합니다. Python의 경우 [Python 대화형 창 작업](../python/python-interactive-repl-in-visual-studio.md)을 참조하세요. C#에서도 대화형 창 기능을 사용할 수 있습니다. 
 

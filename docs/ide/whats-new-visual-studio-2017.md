@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386851"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809520"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -131,7 +131,7 @@ Visual Studio Enterprise 2017에서 라이브 유닛 테스트는 코딩하는 �
 
 자동화된 테스트는 DevOps 파이프라인의 핵심 부분입니다. 자동화된 테스트를 통해 솔루션을 일관되고 안정적으로 테스트하고 더 짧은 주기로 릴리스할 수 있습니다. CI/CD(연속 통합 및 지속적인 업데이트) 흐름은 이 프로세스의 효율성을 더 높일 수 있습니다.
 
-자동화된 테스트에 대한 자세한 내용은 [CI/CD pipeline for automated tests in DevOps(DevOps에서 자동화된 테스트에 대한 CI/CD 파이프라인)](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) 블로그 게시물을 참조하세요.
+자동화된 테스트에 대한 자세한 내용은 [CI/CD pipeline for automated tests in DevOps(DevOps에서 자동화된 테스트에 대한 CI/CD 파이프라인)](/archive/blogs/visualstudioalmrangers/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently) 블로그 게시물을 참조하세요.
 
 또한 [Visual Studio의 지속적인 업데이트 도구](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 확장의 새로운 기능에 대한 자세한 내용은 [정확하게 커밋: 커밋 타임 코드 품질](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) 블로그 게시물을 참조하세요.
 

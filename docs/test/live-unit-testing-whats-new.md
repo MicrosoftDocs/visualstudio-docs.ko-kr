@@ -11,12 +11,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cc6a7a25ebd2f7d07dcb887952b82bda34aaad35
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114276"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851465"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 Live Unit Testing의 새로운 기능
 

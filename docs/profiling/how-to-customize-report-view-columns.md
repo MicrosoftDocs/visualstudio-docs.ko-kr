@@ -1,5 +1,5 @@
 ---
-title: 방법 - 보고서 뷰 열 사용자 지정 | Microsoft Docs
+title: 보고서 보기 열 사용자 지정 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329804"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851179"
 ---
 # <a name="how-to-customize-report-view-columns"></a>방법: 보고서 보기 열 사용자 지정
 Visual Studio Team System Development Edition의 성능 도구는 효율적인 사용자 환경을 제공할 수 있도록 IDE(통합 개발 환경)에 완전히 통합되어 있습니다. 다음 목록은 열을 추가, 제거 및 재정렬하여 사용자 지정할 수 있는 뷰를 나타냅니다.

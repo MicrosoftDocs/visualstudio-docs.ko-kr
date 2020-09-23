@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290904"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808118"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>구조체에 대한 Equals를 생성할 때 IEquatable 연산자를 생성합니다.
 
@@ -20,7 +20,7 @@ ms.locfileid: "85290904"
 
 - C#
 
-**내용:** [구조체](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/struct)에 대한 **Equals** 및 **IEquatable** 연산자를 생성할 수 있습니다.
+**내용:** [구조체](/dotnet/csharp/language-reference/builtin-types/struct)에 대한 **Equals** 및 **IEquatable** 연산자를 생성할 수 있습니다.
 
 **시기:** 구조체가 있으면 IEquatable뿐만 아니라 equals 및 not equals 연산자도 자동으로 추가됩니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 방법 - 성능 데이터 파일 비교 | Microsoft Docs
+title: 성능 데이터 파일 비교 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdb8057823732503a215fb4f2c12ebee33b34c4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330820"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851244"
 ---
 # <a name="how-to-compare-performance-data-files"></a>방법: 성능 데이터 파일 비교
 비교(“Diff”) 보고서 또는 뷰를 만들어 두 가지 프로파일러 데이터 파일(.*vsp* 또는 .*vsps*)의 결과를 비교할 수 있습니다. 이 비교는 프로파일링 세션 사이에 발생한 차이점, 성능 회귀 및 향상된 기능을 보여 줍니다.

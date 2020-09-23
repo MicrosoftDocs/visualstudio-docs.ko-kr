@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815021"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713544"
 ---
 # <a name="xml-editor"></a>XML 편집기
 
@@ -59,5 +59,5 @@ XML 편집기는 *.xml*, *.xsd*, *.xsl*, *.config* 등의 잘 알려진 파일 �
 - [XML 편집기 옵션 - 서식 지정](../ide/reference/options-text-editor-xml-formatting.md)
 - [XML 편집기 옵션 - 기타](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
-- [XML 표준 참조](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
+- [XML 표준 참조](/previous-versions/dotnet/netframework-4.0/ms256177(v=vs.100))
 - [Visual Studio의 XML 도구](../xml-tools/xml-tools-in-visual-studio.md)

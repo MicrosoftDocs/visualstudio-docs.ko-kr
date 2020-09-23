@@ -9,14 +9,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 042f01bcc53f12c240276374bdce5fb965c67be4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330122"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809611"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 통해 .NET Framework 서비스 계측 및 메모리 데이터 수집
+
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 .NET Framework 서비스를 계측하고 메모리 사용량 데이터를 수집하는 방법에 대해 설명합니다. 메모리 할당 데이터를 수집하거나 메모리 할당 및 개체 수명 데이터를 수집할 수 있습니다.
 
 > [!NOTE]

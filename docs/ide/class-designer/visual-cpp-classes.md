@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590737"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808131"
 ---
 # <a name="c-classes-in-class-designer"></a>클래스 디자이너의 C++ 클래스
 
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > C++ 코드에는 **파생 클래스 표시** 명령이 지원되지 않습니다. **클래스 뷰**로 이동하여 형식 노드를 확장하고 **파생 형식** 하위 폴더를 확장한 후 해당 형식을 클래스 다이어그램으로 끌어 파생 클래스를 표시할 수 있습니다.
 
-다중 클래스 상속에 대한 자세한 내용은 [다중 상속](https://msdn.microsoft.com/library/6td5yws2.aspx) 및 [다중 기본 클래스](/cpp/cpp/multiple-base-classes)를 참조하세요.
+다중 클래스 상속에 대한 자세한 내용은 [다중 상속](/previous-versions/6td5yws2(v=vs.140)) 및 [다중 기본 클래스](/cpp/cpp/multiple-base-classes)를 참조하세요.
 
 ## <a name="abstract-classes"></a>추상 클래스
 
@@ -177,6 +177,6 @@ typedef struct
 - [C++ 코드 사용](working-with-visual-cpp-code.md)
 - [클래스 및 구조체](/cpp/cpp/classes-and-structs-cpp)
 - [익명 클래스 형식](/cpp/cpp/anonymous-class-types)
-- [다중 상속](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [다중 상속](/previous-versions/6td5yws2(v=vs.140))
 - [다중 기본 클래스](/cpp/cpp/multiple-base-classes)
 - [템플릿](/cpp/cpp/templates-cpp)

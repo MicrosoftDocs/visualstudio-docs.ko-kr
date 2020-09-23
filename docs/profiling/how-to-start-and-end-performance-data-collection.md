@@ -1,5 +1,5 @@
 ---
-title: 방법 - 성능 데이터 수집 시작 및 종료 | Microsoft Docs
+title: 성능 데이터 수집 시작 및 종료 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eedc7f42f2372452fa2cb96279e8b936bdc15e27
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 4d1f22a09070aea8d2a63979c9d6d1bd267269cf
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331339"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851114"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>방법: 성능 데이터 수집 시작 및 종료
 프로파일링을 시작하기 전에 프로파일링할 대상 이진 파일을 성능 세션에 추가해야 합니다. 대상을 추가하려면 **성능 탐색기**에서 **대상**을 마우스 오른쪽 단추로 클릭하고 **대상 이진 파일 추가**를 클릭합니다. **대상 이진 파일 추가** 대화 상자에서 파일 이름을 선택하고 **열기**를 클릭합니다. 새 이진 파일이 추가됩니다.

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87972475"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810121"
 ---
 # <a name="developer-community-guidelines"></a>Developer Community 지침
 
@@ -57,7 +57,7 @@ Visual Studio Developer Community에서 이슈를 검색하여 이슈가 이미 
 
 이슈 심사는 기능 팀 내에서 협업으로 수행하는 다단계 프로세스입니다. 일반적으로 심사는 1주일이 걸리지만 더 오래 걸릴 수도 있습니다. 심사의 목표는 이슈가 어떻게 처리될지 버그 신고자가 명확하게 이해하도록 돕는 것입니다. 예를 들어 심사 완료 후 버그 신고자는 Microsoft가 문제를 해결할 계획인지, 아니면 더 많은 커뮤니티 피드백을 기다릴지 알 수 있습니다.
 
-문제를 보고한 후 상태는 제출의 해당 수명 주기를 나타냅니다. Visual Studio 제품 팀은 피드백을 검토할 때 해당 피드백을 적절한 상태로 설정합니다. [문제 상태 및 FAQ](https://docs.microsoft.com/visualstudio/ide/report-a-problem)를 참조하여 신고한 문제의 처리 상황을 추적합니다.
+문제를 보고한 후 상태는 제출의 해당 수명 주기를 나타냅니다. Visual Studio 제품 팀은 피드백을 검토할 때 해당 피드백을 적절한 상태로 설정합니다. [문제 상태 및 FAQ](./report-a-problem.md)를 참조하여 신고한 문제의 처리 상황을 추적합니다.
 
 이슈에 중요한 정보가 누락된 경우 ‘추가 정보 필요’ 상태가 할당됩니다. Microsoft는 필요한 특정 정보를 포함하여 이슈에 댓글을 추가하며 사용자는 전자 메일 알림을 받게 됩니다. 사용자가 7일 이내에 정보를 제공하지 않으면 미리 알림이 전송됩니다. 그 후에는 14일 동안 활동이 없을 경우 티켓을 닫습니다.
 
@@ -78,8 +78,8 @@ Microsoft는 비용과 혜택 간에 불균형이 발생하면 일부 버그를 
 
 #### <a name="additional-information"></a>추가 정보
 
-- [성능 이슈 해결 가능성을 높이는 방법](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [MSBuild의 문제 해결 및 로그 만들기](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [성능 이슈 해결 가능성을 높이는 방법](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [MSBuild의 문제 해결 및 로그 만들기](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>기능 제안 관리
 
@@ -91,7 +91,7 @@ Microsoft는 비용과 혜택 간에 불균형이 발생하면 일부 버그를 
 
 - 전반적인 제품 방향과 일치하나요?
 - 해당 제안을 빌드하고 유지 관리할 수 있습니까?
-- 전반적인 [로드맵](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) 전략에 부합합니까?
+- 전반적인 [로드맵](/visualstudio/productinfo/vs-roadmap) 전략에 부합합니까?
 - 투표 및 댓글로 표시된 커뮤니티 지원이 있습니까?
 - 커뮤니티 지원이 적더라도 만족합니까?
 
@@ -99,7 +99,7 @@ Microsoft는 비용과 혜택 간에 불균형이 발생하면 일부 버그를 
 
 전반적인 제품 방향과 일치하지 않는 제안은 범위 외로 종결 처리합니다. 예를 들어 Visual Studio 제품군의 다른 제품에서 유사한 투자가 진행 중일 수 있습니다. 또는 제안된 기능이 소수의 사용자만 관련이 있어 확장을 통해 해당 기능을 제공하는 것이 더 적합할 수 있습니다.
 
-[제안 상태 및 FAQ](https://docs.microsoft.com/visualstudio/ide/report-a-problem)를 참조하여 기능 제안의 진행 상황을 추적합니다.
+[제안 상태 및 FAQ](./report-a-problem.md)를 참조하여 기능 제안의 진행 상황을 추적합니다.
 
 ## <a name="discussion-etiquette"></a>토론 에티켓
 
@@ -111,7 +111,7 @@ Microsoft는 비용과 혜택 간에 불균형이 발생하면 일부 버그를 
 
 ## <a name="data-privacy"></a>데이터 개인 정보
 
-댓글과 응답은 공개적으로 표시되지만 모든 첨부 파일은 Microsoft에만 비공개적으로 공유됩니다. 이와 같은 표시 방식은 전체 커뮤니티에서 다른 사용자가 발견한 이슈와 솔루션을 볼 수 있으므로 유용합니다. 데이터 또는 ID의 개인 정보에 대한 우려가 있는 경우 관련 옵션이 있습니다. [Developer Community 데이터 개인 정보](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy)에 관해 자세히 알아보세요.
+댓글과 응답은 공개적으로 표시되지만 모든 첨부 파일은 Microsoft에만 비공개적으로 공유됩니다. 이와 같은 표시 방식은 전체 커뮤니티에서 다른 사용자가 발견한 이슈와 솔루션을 볼 수 있으므로 유용합니다. 데이터 또는 ID의 개인 정보에 대한 우려가 있는 경우 관련 옵션이 있습니다. [Developer Community 데이터 개인 정보](./developer-community-privacy.md)에 관해 자세히 알아보세요.
 
 ## <a name="next-steps"></a>다음 단계
 

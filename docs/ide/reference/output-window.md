@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567985"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810365"
 ---
 # <a name="output-window"></a>출력 창
 
@@ -76,7 +76,7 @@ C++에서 경고 및 오류가 **출력** 창에서 표시되고 계산되는 �
 ## <a name="see-also"></a>추가 정보
 
 - [출력 창의 진단 메시지](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [방법: 출력 창 제어](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [방법: 출력 창 제어](/previous-versions/ht6z4e28(v=vs.140))
 - [컴파일 및 빌드](../../ide/compiling-and-building-in-visual-studio.md)
 - [빌드 구성 이해](../../ide/understanding-build-configurations.md)
 - [클래스 라이브러리 개요](/dotnet/standard/class-library-overview)

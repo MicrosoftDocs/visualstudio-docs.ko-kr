@@ -1,5 +1,5 @@
 ---
-title: 방법 - 명령줄에서 보고서 필터링 | Microsoft Docs
+title: 명령줄에서 보고서 필터링 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3461965f0944200c44570cff5362aeeb143ed43c
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 1b6408975e8a3d7189db26913f3de75ad1c7c595
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332246"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851140"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>방법: 명령줄에서 보고서 필터링
 **VSPerfReport** 명령에 대한 옵션을 사용하여 프로파일링 데이터 파일의 특정 시간 세그먼트에 대한 보고서를 필터링하거나 데이터를 하나 이상의 프로세스 또는 스레드로 제한할 수 있습니다. 이 명령에 대한 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.

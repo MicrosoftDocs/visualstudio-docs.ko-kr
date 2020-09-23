@@ -1,5 +1,5 @@
 ---
-title: IA64 프로세스에 대해서는 혼합 모드 디버깅을 수행할 수 없습니다. | Microsoft 문서
+title: IA64 프로세스에 대해서는 혼합 모드 디버깅이 지원되지 않습니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 63a083bd9299570ba2b04a0879d5c9acde24ec4e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731099"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810681"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>IA64 프로세스에 대해서는 혼합 모드 디버깅을 수행할 수 없습니다.
 Visual Studio에서는 IA64 프로세스에서 관리 코드와 네이티브 코드의 혼합 모드 디버깅을 지원하지 않습니다. 따라서 디버깅하는 동안 네이티브 코드에서 관리 코드로 또는 그 반대로 실행할 수 없습니다.

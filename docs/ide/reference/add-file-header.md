@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801323"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810378"
 ---
 # <a name="add-file-header"></a>파일 헤더 추가
 
@@ -22,7 +22,7 @@ ms.locfileid: "88801323"
 
 - Visual Basic
 
-**내용:** [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project)를 사용하여 기존 파일, 프로젝트 및 솔루션에 파일 헤더를 추가합니다.
+**내용:** [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)를 사용하여 기존 파일, 프로젝트 및 솔루션에 파일 헤더를 추가합니다.
 
 **시기:** 파일, 프로젝트 및 솔루션에 파일 헤더를 쉽게 추가하려고 합니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "88801323"
 
 ## <a name="how-to"></a>방법
 
-1. 프로젝트 또는 솔루션에 [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project)를 추가합니다(아직 없는 경우).
+1. 프로젝트 또는 솔루션에 [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)를 추가합니다(아직 없는 경우).
 
 2. EditorConfig 파일에 다음 규칙을 추가합니다. *file_header_template*.
 

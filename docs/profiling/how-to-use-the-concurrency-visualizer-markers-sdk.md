@@ -1,5 +1,5 @@
 ---
-title: 방법 - 동시성 시각화 도우미 표식 SDK 사용 | Microsoft Docs
+title: 동시성 시각화 도우미 표식 SDK 사용 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331384"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851582"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>방법: 동시성 시각화 도우미 표식 SDK 사용
 이 항목에서는 동시성 시각화 SDK를 사용하여 범위를 만들고 플래그, 메시지 및 경고를 쓰는 방법을 보여 줍니다.

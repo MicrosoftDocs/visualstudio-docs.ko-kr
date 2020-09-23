@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2019의 JavaScript 및 TypeScript
+titleSuffix: ''
 ms.date: 03/16/2020
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -11,12 +12,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a4cdb685a11df8e013025fd91dd8869fe5851d93
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 6598f018147a025b93ea2e9dd81ae5eceacb4829
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453671"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852467"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019의 JavaScript 및 TypeScript
 

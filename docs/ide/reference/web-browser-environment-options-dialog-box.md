@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596504"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808680"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>옵션 대화 상자: 환경 \> 웹 브라우저
 
@@ -52,7 +52,7 @@ IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 
 - **소스 편집기**[편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
 
-- **HTML 편집기**[HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 다음 두 보기 중 하나에서 웹 페이지를 편집하려면 이 선택 영역을 사용합니다. 디자인 보기 또는 표준 텍스트 기반 원본 보기
+- **HTML 편집기**[HTML 디자이너](/previous-versions/ex0hkwbx(v=vs.140))에서 소스를 보려면 선택합니다. 다음 두 보기 중 하나에서 웹 페이지를 편집하려면 이 선택 영역을 사용합니다. 디자인 보기 또는 표준 텍스트 기반 원본 보기
 
 - **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.
 
@@ -66,4 +66,4 @@ IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 ## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML 디자이너](/previous-versions/ex0hkwbx(v=vs.140))

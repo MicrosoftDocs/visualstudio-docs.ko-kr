@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247642"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713440"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 엔터프라이즈 가이드
 Visual Studio에서 회사를 운영하는 동안 시간을 절약하려면 이 가이드를 참조하세요. 본 엔터프라이즈 가이드는 일반적인 엔터프라이즈 시나리오에서 Visual Studio를 설치 또는 업데이트하고, 문제 발생 시 차단을 해제하고, 추가 도움이 필요한 경우 문제를 보고하는 방법을 알아보는 데 도움이 되는 팁을 제공합니다. 
@@ -63,7 +63,7 @@ Visual Studio를 성공적으로 업데이트하고 업데이트 문제를 해�
 
 - **[Visual Studio를 복구](repair-visual-studio.md)하여 업데이트 문제 해결**. 경우에 따라 Visual Studio 설치가 손상되거나 훼손됩니다. 복구는 업데이트를 포함하여 모든 설치 작업에서 설치 시간 문제를 해결하는 데 유용합니다. 
 
-- **[Windows 보안 기준](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) 준수**. Microsoft는 고객에게 Windows 10 및 Windows Server와 같은 안전한 운영 체제와 Microsoft Edge와 같은 안전한 앱을 제공하기 위해 노력하고 있습니다. 해당 제품의 보안 보증 외에도, 환경을 세밀하게 관리할 수 있도록 다양한 구성 기능도 제공합니다. 
+- **[Windows 보안 기준](/windows/security/threat-protection/windows-security-baselines) 준수**. Microsoft는 고객에게 Windows 10 및 Windows Server와 같은 안전한 운영 체제와 Microsoft Edge와 같은 안전한 앱을 제공하기 위해 노력하고 있습니다. 해당 제품의 보안 보증 외에도, 환경을 세밀하게 관리할 수 있도록 다양한 구성 기능도 제공합니다. 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

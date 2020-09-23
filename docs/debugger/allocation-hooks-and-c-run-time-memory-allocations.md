@@ -1,5 +1,5 @@
 ---
-title: 할당 후크 및 C 런타임 메모리 할당 | Microsoft Docs
+title: 할당 후크 및 C 런타임 메모리 할당
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745793"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851621"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>할당 후크 및 C 런타임 메모리 할당
 할당 후크 함수에 대한 매우 중요한 제한 사항은 `_CRT_BLOCK` 블록을 명시적으로 무시해야 한다는 점입니다. 이러한 블록은 할당 후크 함수가 내부 메모리를 할당하는 C 런타임 라이브러리 함수를 호출하는 경우, C 런타임 라이브러리 함수를 통해 내부적으로 만든 메모리 할당입니다. 할당 후크 함수의 처음 부분에 다음과 같은 코드를 포함하여 `_CRT_BLOCK` 블록을 무시할 수 있습니다.

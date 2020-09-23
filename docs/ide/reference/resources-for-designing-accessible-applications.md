@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70107843"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808996"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>액세스 가능한 애플리케이션 설계를 위한 리소스
 
@@ -48,9 +48,9 @@ ms.locfileid: "70107843"
 
 ## <a name="websites"></a>Websites
 
-- [연습: 이미지 컨트롤, 메뉴 컨트롤 및 자동 포스트백을 사용하기 위한 내게 필요한 옵션 지침](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 이 문서에서는 샘플 웹 페이지에서 액세스 가능한 컨트롤을 포함하는 단계별 지침을 제공합니다. 또한 웹에서 일부 내게 필요한 옵션 디자인 팁을 제공합니다.
+- [연습: 이미지 컨트롤, 메뉴 컨트롤 및 자동 포스트백을 사용하기 위한 내게 필요한 옵션 지침](/previous-versions/3has1x30(v=vs.140)) 이 문서에서는 샘플 웹 페이지에서 액세스 가능한 컨트롤을 포함하는 단계별 지침을 제공합니다. 또한 웹에서 일부 내게 필요한 옵션 디자인 팁을 제공합니다.
 
-- **DHTML을 사용하여 내게 필요한 옵션이 있는 웹 페이지 만들기** 이 기술 문서에서는 내게 필요한 옵션을 지원하는 HTML 4.0 요소와 내게 필요한 옵션의 웹 설계 팁을 설명합니다. 자세한 내용은 [DHTML을 사용하여 액세스 가능한 웹 페이지 만들기](https://msdn.microsoft.com/library/ms528445.aspx)를 참조하세요.
+- **DHTML을 사용하여 내게 필요한 옵션이 있는 웹 페이지 만들기** 이 기술 문서에서는 내게 필요한 옵션을 지원하는 HTML 4.0 요소와 내게 필요한 옵션의 웹 설계 팁을 설명합니다. 자세한 내용은 [DHTML을 사용하여 액세스 가능한 웹 페이지 만들기](/previous-versions//ms528445(v=vs.85))를 참조하세요.
 
 ### <a name="third-party-resources"></a>타사 리소스
 

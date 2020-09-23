@@ -1,5 +1,6 @@
 ---
 title: 폴더, IIS, Azure 또는 다른 대상에 Visual Studio 앱을 배포합니다.
+titleSuffix: ''
 description: 게시 마법사를 사용하여 앱 게시 옵션 자세히 알아보기
 ms.custom: contperfq1
 ms.date: 08/21/2020
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f88f6c789afa112837fe67bc299915da85e42f3e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036696"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851725"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>폴더, IIS, Azure 또는 다른 대상에 앱 배포
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 246c23f2eb0cb92a2120db5071b6460ff0efb293
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315124"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809887"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
@@ -75,7 +75,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 소스 제어를 사용하는 경우 가상 환경은 *requirements.txt*만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치**를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 자습서 학습 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 및 [Flask 자습서 학습 - 1-2 및 1-3단계](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
 
-Microsoft Azure App Service에 배포할 때는 [사이트 확장](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로**[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
+Microsoft Azure App Service에 배포할 때는 [사이트 확장](./managing-python-on-azure-app-service.md?view=vs-2019)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로**[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
 
 Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*. 자세한 내용은 [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
 

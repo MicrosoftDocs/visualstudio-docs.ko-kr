@@ -6,16 +6,16 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038597"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810863"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>성능 문제가 해결될 가능성을 높이는 방법
 
-“[문제 보고](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)” 도구는 Visual Studio 사용자가 다양한 문제를 보고하는 데 널리 사용됩니다. Visual Studio 팀은 사용자 피드백에서 크래시 및 속도 저하 추세를 파악하고 광범위한 사용자에게 영향을 주는 문제를 해결합니다. 특정 피드백 티켓의 실행 가능성이 높을수록 제품 팀에서 진단하고 빠르게 해결할 가능성이 높습니다. 이 문서에서는 크래시 또는 속도 저하 문제를 보고하면서 모범 사례를 설명하여 모범 사례가 더 많이 실행될 수 있도록 합니다.
+“[문제 보고](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)” 도구는 Visual Studio 사용자가 다양한 문제를 보고하는 데 널리 사용됩니다. Visual Studio 팀은 사용자 피드백에서 크래시 및 속도 저하 추세를 파악하고 광범위한 사용자에게 영향을 주는 문제를 해결합니다. 특정 피드백 티켓의 실행 가능성이 높을수록 제품 팀에서 진단하고 빠르게 해결할 가능성이 높습니다. 이 문서에서는 크래시 또는 속도 저하 문제를 보고하면서 모범 사례를 설명하여 모범 사례가 더 많이 실행될 수 있도록 합니다.
 
 ## <a name="general-best-practices"></a>일반적인 유용한 정보
 
@@ -56,7 +56,7 @@ Visual Studio는 수많은 언어, 프로젝트 형식, 플랫폼 등을 지원�
 
 - 피드백의 일부로 제공하거나 연결할 수 있는 프로젝트 또는 샘플 코드에서 재현 가능(단계가 프로젝트 또는 문서 열기와 관련된 경우)
 
-이러한 문제에 대해서는 “[문제를 보고하는 방법](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)”의 단계를 수행하고 다음을 포함하세요.
+이러한 문제에 대해서는 “[문제를 보고하는 방법](./how-to-report-a-problem-with-visual-studio.md)”의 단계를 수행하고 다음을 포함하세요.
 
 - 문제 재현 단계
 
@@ -103,7 +103,7 @@ Visual Studio에서 크래시가 발생할 때마다 구성된 위치에 덤프 
 
 2. 가능한 경우, 피드백을 제출하기 전에 파일을 압축(\*.zip)하여 크기를 줄입니다.
 
-3. “[문제를 신고하는 방법](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)”의 단계를 수행하고 힙 덤프를 새 피드백 항목에 첨부합니다.
+3. “[문제를 신고하는 방법](./how-to-report-a-problem-with-visual-studio.md)”의 단계를 수행하고 힙 덤프를 새 피드백 항목에 첨부합니다.
 
 > [!NOTE] 
 > **가장 중요한 피드백:** 이 경우 가장 중요한 피드백은 크래시 발생 시 캡처된 힙 덤프입니다.
@@ -118,7 +118,7 @@ VS가 오랫동안 응답하지 않게 됩니다.
 **알 수 없는 무응답**
 
 무응답이 예측할 수 없는 방식으로 나타나는 경우, 다음번에 Visual Studio의 새 인스턴스를 시작하고 해당 인스턴스에서 문제를 보고합니다.
-[“레코드” 화면](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)에서 응답하지 않는 Visual Studio 세션을 선택해야 합니다.
+[“레코드” 화면](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro)에서 응답하지 않는 Visual Studio 세션을 선택해야 합니다.
 
 응답하지 않는 Visual Studio 인스턴스가 관리자 모드에서 시작된 경우, 두 번째 인스턴스도 관리자 모드에서 시작되어야 합니다.
 
@@ -145,7 +145,7 @@ VS가 오랫동안 응답하지 않게 됩니다.
 
 3. Visual Studio의 새 복사본에서 **문제 보고** 도구를 엽니다.
 
-4. “추적 및 힙 덤프 제공(선택 사항)” 단계에 도달할 때까지 [문제를 신고하는 방법](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)의 단계를 수행합니다.
+4. “추적 및 힙 덤프 제공(선택 사항)” 단계에 도달할 때까지 [문제를 신고하는 방법](./how-to-report-a-problem-with-visual-studio.md)의 단계를 수행합니다.
 
 5. Visual Studio의 첫 번째 복사본(성능 문제가 발생한 복사본)을 기록하도록 선택하고 기록을 시작합니다.
 
@@ -165,7 +165,7 @@ VS가 오랫동안 응답하지 않게 됩니다.
 
 성능 추적을 기록하는 동안 보고하는 느린 작업 또는 높은 CPU가 종료되면 즉시 기록을 중지합니다. 너무 많은 정보가 수집되면 가장 오래된 정보를 덮어쓰게 됩니다. 흥미로운 작업 후 바로(몇 초 내에) 추적을 중지하지 않으면 유용한 추적 데이터를 덮어쓰게 됩니다.
 
-Developer Community 웹 사이트의 기존 피드백 항목에 성능 추적을 바로 첨부하지 마세요. 추가 정보 요청/제공은 Visual Studio의 기본 제공 문제 보고 도구에서 지원되는 워크플로입니다. 이전 피드백 항목을 해결하기 위해 성능 추적이 필요한 경우 피드백 항목의 상태를 “추가 정보 필요”로 설정하여 새 문제를 보고하는 것과 같은 방식으로 응답할 수 있습니다. 자세한 지침은 문제 보고 도구 문서의 [“추가 정보 필요” 섹션](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)을 참조하세요.
+Developer Community 웹 사이트의 기존 피드백 항목에 성능 추적을 바로 첨부하지 마세요. 추가 정보 요청/제공은 Visual Studio의 기본 제공 문제 보고 도구에서 지원되는 워크플로입니다. 이전 피드백 항목을 해결하기 위해 성능 추적이 필요한 경우 피드백 항목의 상태를 “추가 정보 필요”로 설정하여 새 문제를 보고하는 것과 같은 방식으로 응답할 수 있습니다. 자세한 지침은 문제 보고 도구 문서의 [“추가 정보 필요” 섹션](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info)을 참조하세요.
 
 > [!NOTE] 
 > **가장 중요한 피드백:** 거의 모든 속도 저하/높은 CPU 문제의 경우, 가장 중요한 피드백은 해당 시간 동안 동작을 캡처하는 성능 추적(\*.etl.zip)과 함께 수행하려고 했던 작업에 대한 개략적인 설명입니다.
