@@ -260,9 +260,21 @@
         - name: 빌드 및 디버그 작업 사용자 지정
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Codespaces(미리 보기)를 사용하여 개발
+      items:
+        - name: 개요
+          href: ide/codespaces/codespaces-overview.md
+        - name: codespace와 함께 Visual Studio 사용
+          href: ide/codespaces/use-visual-studio-with-codespaces.md
+        - name: codespace 사용자 지정
+          href: ide/codespaces/customize-codespaces.md
+        - name: 지원되는 Visual Studio 기능
+          href: ide/codespaces/supported-features-codespaces.md
     - name: 프로젝트 또는 리포지토리에 연결
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
+    - name: Visual Studio의 새로운 Git 환경(미리 보기)
+      href: ide/git-with-visual-studio.md
     - name: 편집기
       items:
         - name: 편집기 사용
@@ -960,7 +972,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참조
+- name: 참고
   items:
     - name: 바로 가기 키
       items:
