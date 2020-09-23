@@ -1,5 +1,5 @@
 ---
-title: 방법 - 편집하며 계속하기 사용(C#) | Microsoft Docs
+title: 편집하며 계속하기 사용(C#) | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a88cff54679ac0deae32bfeeff1dd96526f19ea7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348862"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851855"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>방법: 편집하며 계속하기 사용(C#)
 편집하며 계속하기를 사용하면 디버그 세션을 중지한 후 다시 시작하지 않고도 디버깅 중에 중단 모드에서 코드 변경을 수행하고 변경 내용을 적용할 수 있습니다.

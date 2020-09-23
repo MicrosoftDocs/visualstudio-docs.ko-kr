@@ -1,5 +1,5 @@
 ---
-title: 방법 - 보기 새로 고침 | Microsoft Docs
+title: 뷰 새로 고침 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349395"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852037"
 ---
 # <a name="how-to-refresh-the-view"></a>방법: 보기 새로 고침
 Spy++는 시스템 테이블의 “스냅샷”을 사용하고 이 정보에 따라 뷰를 새로 고칩니다. 시스템 뷰를 주기적으로 새로 고치는 것이 중요합니다. Spy++ 뷰가 열려 있고 뷰를 새로 고치지 않은 경우에는 이후에 생성되는 프로세스, 스레드 및 창이 표시되지 않습니다. 또한 더 이상 존재하지 않는 항목이 표시될 수도 있습니다. **새로 고침** 명령은 메시지 뷰를 제외한 모든 뷰에서 사용할 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: 방법 - 레지스터 값 편집 | Microsoft Docs
+title: 레지스터 값 편집 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a0ccbfbc0ede95fe93974474f4917e1b141797e6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349824"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851647"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>방법: 레지스터 값 편집(C#, C++, Visual Basic, F#)
 

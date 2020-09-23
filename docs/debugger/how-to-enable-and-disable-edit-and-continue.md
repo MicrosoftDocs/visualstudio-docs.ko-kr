@@ -1,5 +1,5 @@
 ---
-title: 방법 - 편집하며 계속하기를 사용하거나 사용하지 않도록 설정 | Microsoft Docs
+title: 편집하며 계속하기 설정/해제 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: how-to
@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1907a67412a787148da7a6679e173383e2bb7423
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: ce531a0f7f9d6e26db38b5cf041f06d42209261a
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349668"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851400"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>방법: 편집하며 계속하기 설정/해제(C#, VB, C++)
 

@@ -1,5 +1,5 @@
 ---
-title: 방법 - 혼합 모드에서 디버그 | Microsoft Docs
+title: 혼합 모드에서 디버그 | Microsoft Docs
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350110"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852115"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>방법: 혼합 모드에서 디버그(C#, C++, Visual Basic)
 

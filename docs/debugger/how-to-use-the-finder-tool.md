@@ -1,5 +1,5 @@
 ---
-title: 방법 - 찾기 도구 사용 | Microsoft Docs
+title: 찾기 도구 사용 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348732"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851842"
 ---
 # <a name="how-to-use-the-finder-tool"></a>방법: 찾기 도구 사용
 **창 찾기**의 찾기 도구를 사용하여 창 속성 또는 메시지를 표시할 수 있습니다. 또한 찾기 도구는 사용할 수 없는 자식 창을 찾을 수 있으며 사용할 수 없는 자식 창이 겹치는 경우 강조 표시할 창을 파악할 수 있습니다.

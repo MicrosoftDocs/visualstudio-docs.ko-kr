@@ -1,5 +1,5 @@
 ---
-title: 방법 - 글꼴 변경 | Microsoft Docs
+title: 글꼴 변경 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5597d1f7c14e1c37c55751c85e0dc53092c3af1c
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 77789ed5d262be87076631e978fbc46e972158ae
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350266"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851491"
 ---
 # <a name="how-to-change-fonts"></a>방법: 글꼴 변경
 Spy++ 창에서 글꼴, 글꼴 스타일 및 글꼴 크기를 변경할 수 있습니다.

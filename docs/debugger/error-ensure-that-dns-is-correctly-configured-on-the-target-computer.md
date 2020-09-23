@@ -1,5 +1,5 @@
 ---
-title: 오류 - 대상 컴퓨터에서 DNS가 올바르게 구성되었는지 확인 | Microsoft Docs
+title: 대상 컴퓨터에서 DNS가 올바르게 구성되었는지 확인 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e374e75caca3dec28800a2eac86d921c861888ab
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: a6848363b3afa5c3216c242136c7909980f0ed60
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460827"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852760"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>오류: 대상 컴퓨터에서 DNS가 올바르게 구성되었는지 확인
 원격으로 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: 방법 - 창 찾기에서 메시지 뷰 열기 | Microsoft Docs
+title: 창 찾기에서 메시지 뷰 열기 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349486"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852272"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>방법: 창 찾기에서 메시지 뷰 열기
 **창 찾기** 대화 상자를 사용하여 대상 창을 선택한 다음, 해당 창의 메시지 뷰를 여는 것이 편리할 수 있습니다.

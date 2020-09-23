@@ -1,5 +1,5 @@
 ---
-title: 방법 - Spy++ 시작 | Microsoft Docs
+title: Spy++ 시작 | Microsoft Docs
 ms.date: 12/16/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b659350adc39fd1088964976b8bcdef629bad44b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 7743d36671e1c651b9bcfa89b315399c0696e26d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349006"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851907"
 ---
 # <a name="how-to-start-spy"></a>방법: Spy++ 시작
 

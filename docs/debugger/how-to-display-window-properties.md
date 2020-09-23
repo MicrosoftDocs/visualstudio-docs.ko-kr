@@ -1,5 +1,5 @@
 ---
-title: 방법 - 창 속성 표시 | Microsoft Docs
+title: 창 속성 표시 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c2eed4d85d01711fedd6235a45f5e8ea3a3340ca
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349772"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852285"
 ---
 # <a name="how-to-display-window-properties"></a>방법: 창 속성 표시
 [창 뷰](../debugger/windows-view.md)에 나열된 창에 대해 자세히 알아보려면 [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 참조하세요.

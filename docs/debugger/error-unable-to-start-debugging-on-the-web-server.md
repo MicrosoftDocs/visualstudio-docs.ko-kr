@@ -1,5 +1,5 @@
 ---
-title: 오류 - 웹 서버에서 디버깅을 시작할 수 없음 | Microsoft Docs
+title: 웹 서버에서 디버깅을 시작할 수 없습니다. | Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: error-reference
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d27dafd5e44b058cff05b3c478322e45242b3c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 5a0aa657abefa0638e62039cae8b6d15a33fdf51
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460041"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851426"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>오류: 웹 서버에서 디버깅을 시작할 수 없습니다.
 

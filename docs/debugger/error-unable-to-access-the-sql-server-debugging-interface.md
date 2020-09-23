@@ -1,5 +1,5 @@
 ---
-title: 오류 - SQL Server 디버깅 인터페이스에 액세스할 수 없음 | Microsoft Docs
+title: SQL Server 디버깅 인터페이스에 액세스할 수 없음 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c0c61fce7f20ea49547bc63a6e70eed284b016
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: ae2d0ba3abf66aefe56921c51669787186d49f12
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460210"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851517"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>오류: SQL Server 디버깅 인터페이스에 액세스할 수 없음
 이 메시지는 SQL 디버깅이 활성화되어 있지 않은 컴퓨터에서 SQL 디버깅을 시도하는 경우에 발생합니다.

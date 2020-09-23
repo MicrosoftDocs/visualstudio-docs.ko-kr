@@ -1,5 +1,5 @@
 ---
-title: 오류 - 웹 서버가 제대로 구성되어 있지 않음 | Microsoft Docs
+title: 웹 서버가 제대로 구성되어 있지 않습니다. | Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 711297ef00c064c482ed3a86b896566b6e019534
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 9dc8253896bfdcf818e0848482a6c637350f590f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460327"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851543"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>오류: 웹 서버가 제대로 구성되어 있지 않습니다.
 

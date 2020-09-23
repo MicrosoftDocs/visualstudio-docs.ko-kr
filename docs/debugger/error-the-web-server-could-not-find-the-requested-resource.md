@@ -1,5 +1,5 @@
 ---
-title: 오류 - 웹 서버에서 요청한 리소스를 찾을 수 없음 | Microsoft Docs
+title: 웹 서버에서 요청한 리소스를 찾을 수 없음 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cce9afe8f27b25a01c0f6276164522a78a2ed9a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 3eaa6b3e0cc609c382e8f94383a6bdb6041a2288
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460353"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850958"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>오류: 웹 서버에서 요청한 리소스를 찾을 수 없습니다
 보안 고려 사항 때문에 IIS에서 일반 오류를 반환했습니다.

@@ -1,5 +1,5 @@
 ---
-title: 오류 - Kerberos 인증 실패 | Microsoft Docs
+title: Kerberos 인증 실패 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460679"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852695"
 ---
 # <a name="error-kerberos-authentication-failed"></a>오류: Kerberos 인증 실패
 원격 디버깅을 시작할 때 다음 오류 메시지가 나타날 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: 방법 - 시각화 도우미 테스트 및 디버그 | Microsoft Docs
+title: 시각화 도우미 테스트 및 디버그 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a81a8d094999585620ab6ab412c3b0610caf517
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: df45b1f81430e733d6116768bf7c8823911ead59
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348901"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851868"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>방법: 시각화 도우미 테스트 및 디버그
 시각화 도우미를 작성한 후에는 이를 디버깅하고 테스트해야 합니다.

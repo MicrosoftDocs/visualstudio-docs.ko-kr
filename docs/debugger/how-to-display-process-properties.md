@@ -1,5 +1,5 @@
 ---
-title: 방법 - 프로세스 속성 표시 | Microsoft Docs
+title: 프로세스 속성 표시 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e36baf8d44aab6904362e25ba4706fc7fb1417
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6dee3bf419470a41ce31b1f1a1ea9164acdbe5bd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349837"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852337"
 ---
 # <a name="how-to-display-process-properties"></a>방법: 프로세스 속성 표시
 [프로세스 뷰](../debugger/processes-view.md)에 나열된 프로세스에 대해 자세히 알아보려면 [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 사용합니다.
