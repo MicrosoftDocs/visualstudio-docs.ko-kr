@@ -1,7 +1,8 @@
 ---
 title: 도형 및 패스 그리기
+description: Blend for Visual Studio를 사용 하 여 도형 및 경로에 세부 정보 추가
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350825"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022512"
 ---
 # <a name="draw-shapes-and-paths"></a>도형 및 패스 그리기
 
@@ -26,7 +27,7 @@ XAML 디자이너에서 *도형은* 정확히 필요한 것입니다. (예: 사�
 
 **자산** 창에서 도형을 찾습니다.
 
-![자산 창의 도형 범주](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Blend for Visual Studio 자산 창의 셰이프 범주 스크린샷":::
 
 아트보드에 원하는 모든 도형을 끕니다. 그런 다음 도형에서 핸들을 사용하여 비율 크기를 조정하고 셰이프를 회전, 이동하거나 기울일 수 있습니다.
 
@@ -99,7 +100,7 @@ XAML 디자이너에서 *도형은* 정확히 필요한 것입니다. (예: 사�
 
 ![패스 결합](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|작업|
+|번호|작업|
 |-|-|
 |![결합하기 전의 두 도형](../designers/media/b1_1.png)|결합하기 전의 두 도형|
 |![통합](../designers/media/b1_2.png)|통합|
